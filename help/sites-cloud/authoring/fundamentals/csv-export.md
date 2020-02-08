@@ -1,0 +1,59 @@
+---
+title: 导出到 CSV
+description: 将页面的相关信息导出到本地系统上的 CSV 文件
+translation-type: tm+mt
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+
+---
+
+
+# 导出到 CSV {#export-to-csv}
+
+**创建 CSV 报表**&#x200B;允许您将页面的相关信息导出到本地系统上的 CSV 文件。
+
+* 所下载的文件名为 `export.csv`
+* 其内容取决于您选择的属性。
+* 您可以定义导出的路径以及深度。
+
+>[!NOTE]
+>
+>系统将使用您浏览器的下载功能及默认目标位置。
+
+**创建 CSV 导出**&#x200B;向导允许您选择以下内容：
+
+* 要导出的属性
+   * 元数据
+      * 名称
+      * 修改时间
+      * 发布时间
+      * 模板
+      * 工作流
+   * 翻译
+      * 已翻译
+   * 分析
+      * 页面查看次数
+      * 独特访客
+      * 页面停留时间
+* 深度
+   * 父级路径
+   * 仅直接子项
+   * 其他级别的子项
+   * 级别
+
+生成的 `export.csv` 文件可以用 Excel 或任何其他兼容的应用程序打开。
+
+要创建 CSV 导出，请执行以下操作：
+
+1. 必要时，打开&#x200B;**站点**&#x200B;控制台并导航到所需的位置。
+   * 在浏览“ **站点** ”控制台（在“列表”视图中）时，可 **** 以使用创建CSV报告选项
+   * 它是“创建”下拉菜 **单的** 一个选项：
+
+      ![创建CSV选项](/help/sites-cloud/authoring/assets/csv-create.png)
+
+1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+
+   ![CSV导出选项](/help/sites-cloud/authoring/assets/csv-options.png)
+
+1. 选择需要导出的属性。
+1. 选择&#x200B;**创建**。
+   ![在Excel中生成CSV导出](/help/sites-cloud/authoring/assets/csv-example.png)
