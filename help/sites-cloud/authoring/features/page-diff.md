@@ -1,0 +1,105 @@
+---
+title: 页面差异
+description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
+translation-type: tm+mt
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+
+---
+
+
+# 页面差异 {#page-diff}
+
+## 简介 {#introduction}
+
+内容创建是一个迭代过程。要进行高效创作，需要能够发现从一次迭代到另一次迭代所发生的更改。逐个查看页面版本的方式效率低下且容易出错。作者希望能够方便地将当前页面与另一个版本并排比较。
+
+通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
+
+>[!CAUTION]
+>
+>The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>
+>请参阅开发和页面差异，以了解有关此功能的更多技术详细信息。<!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+
+## 用法 {#use}
+
+可以并排比较以下内容：
+
+* [版本](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) -页面的早期版本及其当前状态
+* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [启动项](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) -启动项及其源
+* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+
+请参阅有关如何在这些情况下启动差异比较的相关主题。
+
+### 差异表示形式 {#presentation-of-differences}
+
+无论比较何种内容，差异的表示形式都保持相同。
+
+* 启动差异比较时选择的内容显示在左侧（差异入口点）。
+* 要与之比较的内容则显示在右侧（要将所选内容与之比较的内容）。
+
+例如，如果要比较版本，则当前版本显示在左侧，以前的版本显示在右侧。
+
+两个页面的源会清楚地显示在浏览器窗口顶部的标题栏中。
+
+![版本并排视图](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
+
+差异比较会检测在组件和 HTML 级别发生的更改。发生更改的项目会以不同的颜色突出显示。
+
+**组件更改**
+
+* 浅绿色 - 添加了组件
+* 粉红色 - 删除了组件
+* 蓝色 - 更改了组件
+* 蓝色 - 移动了组件
+
+请注意，发生更改和发生移动的颜色是相同的。
+
+**HTML 更改**
+
+* 深绿色 - 添加了 HTML
+* 红色——删除了HTML
+
+>[!NOTE]
+>
+>在比较语言副本时，会取消激活突出显示功能，因为在翻译中，所有内容都会发生更改，突出显示没有任何用处。
+
+### 全屏和退出 {#fullscreen-and-exiting}
+
+为了集中查看特定内容，您可以单击并排差异比较任何一侧的全屏图标，以将其放大到整个浏览器窗口。
+
+![全屏按钮](/help/sites-cloud/authoring/assets/versions-full-screen.png)
+
+选定的一侧将填满整个窗口，但标题栏仍将保留在顶部，允许您在两个页面之间切换。
+
+![全屏模式](/help/sites-cloud/authoring/assets/versions-full-screen-mode.png)
+
+>[!NOTE]
+>
+>如果浏览器宽度不能同时容纳全屏视图中的两个页面名称，则只显示所显示页面的名称，而其他名称将显示在省略号后面。
+
+您也可以选择单击退出全屏图标来关闭全屏视图。
+
+![退出全屏模式](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
+
+您可以通过单击标题中的“关闭”按钮，随时退出并排差异比较。
+
+## 限制 {#limitations}
+
+在某些情况下，页面差异功能可能检测不到预期的差异。
+
+* 在比较版本和启动项时，差异不会考虑动态组件，如痕迹导航、菜单、产品列表或徽标（依赖站点结构呈现其内容的组件）。
+* 对于版本，差异不会重新创建访问控制策略和 Live Copy 关系。
+* 如果对图像进行了任何更改（如修改alt、title或src属性），则更改后的图像将以蓝色突出显示。 但是，在某些情况下，图像的src属性为Base64表示形式，即使两个图像看起来相同，它们也会因src属性不同而被差异标记为不同。
+* 差异无法检测图像旋转。
+* 如果页面发生移动，将无法再使用移动前制作的任何版本执行差异。
+   * 如果您遇到差异问题，请检查页面的[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)以查看页面是否已被移动。
+
+>[!NOTE]
+>
+>各版本之间不能相互进行比较。只能将当前版本与页面的其他版本进行比较。 当前版本始终是突出显示更改的版本。
+
+>[!NOTE]
+>
+>For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the developer documentation of this feature. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
