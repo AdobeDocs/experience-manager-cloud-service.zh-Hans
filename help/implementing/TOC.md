@@ -1,8 +1,8 @@
 ---
-sub-product: Implementing AEM as a Cloud Service
-user-guide-title: Implementing AEM as a Cloud Service
+sub-product: Implementing for AEM as a Cloud Service
+user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 0a12db0d58203c8313638106c0e2dc658a2607d4
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
    + [配置CI/CD管道](cloud-manager/configure-pipeline.md)
    + [部署代码](cloud-manager/deploy-code.md)
    + [了解测试结果](cloud-manager/understand-test-results.md)
-   + [了解自定义代码质量规则](cloud-manager/custom-code-quality-rules.md)
+   + [Understanding Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)
    + [访问和管理日志](cloud-manager/manage-logs.md)
    + [了解通知](cloud-manager/notifications.md)
 + 管理代码 {#managing-code}
