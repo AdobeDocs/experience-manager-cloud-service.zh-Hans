@@ -2,7 +2,7 @@
 title: AEM作为云服务开发准则
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
 
 ---
 
@@ -38,7 +38,7 @@ Adobe建议使用提供的 [Apache httpComponents Client 4.x库进行HTTP连接]
 * 对于本地开发，日志条目将写入本地文件
    * `./crx-quickstart/logs`
 * 在云环境中，开发人员可以通过Cloud manager下载日志，或使用命令行工具跟踪日志。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* 要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后完全重新部署。 由于这不是即时的，因此请务必小心在收到大量流量的生产环境中启用详细日志。 将来，可能会有一些机制来更快速地更改日志级别。
+* 要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后完全重新部署。 由于这不是即时的，因此请务必小心在生产环境中启用冗余日志，这些生产环境会收到大量流量。 将来，可能会有一些机制来更快速地更改日志级别。
 
 ### 线程转储 {#thread-dumps}
 
@@ -58,7 +58,7 @@ Adobe建议使用提供的 [Apache httpComponents Client 4.x库进行HTTP连接]
 
 开发人员控制台中提供了一组工具，用于将AEM作为云服务开发人员环境进行调试，以用于开发、暂存和生产环境。 可以通过按如下方式调整作者或发布服务URL来确定URL:
 
-`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 作为快捷方式，可以使用以下Cloud Manager CLI命令根据下面描述的环境参数启动开发人员控制台：
 
