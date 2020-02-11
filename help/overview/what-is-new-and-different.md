@@ -2,7 +2,7 @@
 title: 不同之处和新增功能- Adobe Experience Manager即云服务
 description: '不同之处和新增功能- Adobe Experience Manager(AEM)即云服务。 '
 translation-type: tm+mt
-source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
+source-git-commit: 27a16045ff0c22d65e61468036e6ee0b9ab1d826
 
 ---
 
@@ -121,7 +121,6 @@ Adobe会主动将服务的所有操作实例更新到最新版本的AEM代码库
 >有关更多详细信息，请 [参阅部署架构](/help/core-concepts/architecture.md#deployment-architecture)。
 
 ## Cloud Manager {#cloud-manager}
-
 
 Adobe Cloud manager是AEM作为云服务的持续升级方法的一部分，因为它控制了对您实例的所有更新——这是必需的。
 
@@ -347,36 +346,4 @@ Adobe Experience Manager Assets作为云服务，为企业提供云本机SaaS解
 
 有关详细信息，请 [参阅概述和Assets as a Cloud service简介](/help/assets/overview.md)。
 
-<!--
 
-#### Previous Versions {#previous-versions-aem-sites}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-sites}
-
-tbc
-
--->
-
-<!--
-
-#### Previous Versions* {#previous-versions-aem-assets}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-assets}
-
-tbc 
-
--->
-
-<!--
-
-### Miscellaneous {#miscellaneous}
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-miscellaneous}
-
-Additionally???
-
--->
