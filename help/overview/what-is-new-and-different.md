@@ -2,7 +2,7 @@
 title: 不同之处和新增功能- Adobe Experience Manager即云服务
 description: '不同之处和新增功能- Adobe Experience Manager(AEM)即云服务。 '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ Adobe会主动将服务的所有操作实例更新到最新版本的AEM代码库
 
 >[!NOTE]
 >
->这是使用 [Cloud Manager实现的](#cloud-manager)。
+>有关更多详细信息，请 [参阅部署架构](/help/core-concepts/architecture.md#deployment-architecture)。
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->有关更多详细信息，请 [参阅部署架构](/help/core-concepts/architecture.md#deployment-architecture)。
-
-### 先前版本 {#previous-versions-cloud-manager}
-
-Cloud manager用作AEM的Managed services实例的部署工具。
-
-Cloud Manager for AMS与Cloud services的主要区别在于，在创建租户时，将根据客户购买的SKU填充积分。
-
->[!NOTE]
->虽然从运营角度看，积分的概念 *并不直接* 显示在Cloud Manager UI中。
-
-创建常规程序不会使用任何信用，但必须存在核心信用才能创建一个。
-要详细了解如何创建不同的程序，请参阅 [创建程序](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
-
-### AEM作为云服务 {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud manager是AEM作为云服务的持续升级方法的一部分，因为它控制了对您实例的所有更新——这是必需的。
 
