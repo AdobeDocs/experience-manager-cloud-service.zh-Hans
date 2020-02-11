@@ -2,7 +2,7 @@
 title: IMS支持将Adobe Experience manager作为云服务
 description: 'IMS支持将Adobe Experience manager作为云服务 '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ AEM作为云服务仅为作者、管理员和开发人员用户提供IMS身份�
 
 ## 架构 {#architecture}
 
-IMS身份验证在AEM和Adobe IMS端点之间使用OAuth协议。 将用户添加到IMS并拥有Adobe Identity后，他们便可以使用IMS凭据登录到AEM Managed services实例。
+IMS身份验证在AEM和Adobe IMS端点之间使用OAuth协议。 将用户添加到IMS并拥有Adobe Identity后，他们便可以使用IMS凭据登录到AEM作者服务。
 
 用户登录流程如下所示，用户将被重定向到IMS，并（可选）重定向到SSO的客户IDP，然后重定向回AEM。
 
