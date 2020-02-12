@@ -2,7 +2,7 @@
 title: 作为云服务的Adobe Experience manager的运行和维护
 description: Adobe Experience manager作为云服务操作和维护自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
 * [内容复制](replication.md)
 * [维护任务](maintenance.md)
 * [备份和恢复](backup.md)
-* [索引](indexing.md)
 
 ## Experience Manager作为云服务指南 {#aem-guides}
 
