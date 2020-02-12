@@ -1,13 +1,13 @@
 ---
-title: 索引
-description: '索引 '
+title: 内容搜索和索引
+description: '内容搜索和索引 '
 translation-type: tm+mt
-source-git-commit: 83d2abd5b75e644be97de1d5420e7bca6b13e0d9
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
 
-# 索引 {#indexing}
+# 内容搜索和索引 {#indexing}
 
 ## AEM作为云服务的更改 {#changes-in-aem-as-a-cloud-service}
 
@@ -107,7 +107,7 @@ AS NOTE: the above is internal for now.
 
 在开发过程中，或在使用内部部署安装时，可以在运行时添加、删除或更改索引。 索引一旦可用，即可使用。 如果应用程序的旧版本中尚未使用索引，则通常在计划停机期间构建索引。 删除索引或更改现有索引时也会出现同样的情况。 删除索引时，一旦删除索引，该索引就变得不可用。
 
-### 采用蓝绿色部署的索引管理 {#index-management-with-blue-green-deployment}
+### 蓝绿部署的索引管理 {#index-management-with-blue-green-deployment}
 
 使用蓝绿色部署，不会停机。 但是，对于索引管理，这要求索引仅由某些版本的应用程序使用。 例如，在应用程序版本2中添加索引时，您还不希望应用程序版本1使用该索引。 相反，删除索引时的情况是：版本1中仍需要在版本2中删除的索引。 更改索引定义时，我们希望旧版本的索引仅用于版本1，新版本的索引仅用于版本2。
 
