@@ -2,7 +2,7 @@
 title: 作为云服务部署到AEM
 description: '作为云服务部署到AEM '
 translation-type: tm+mt
-source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
+source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
 
 ---
 
@@ -48,7 +48,7 @@ AEM版本的更新始终是一个单独的部署事件，与推送自定义代�
 > [!注意}
 >与Adobe cloud相比，应用程序在本地计算机上的行为方式与Adobe cloud有细微的操作差异。 在本地开发过程中，这些架构差异必须得到尊重，并可能导致在云基础架构上部署时出现不同的行为。 由于这些差异，在生产中推出新的自定义代码之前，必须对开发环境和舞台环境执行完全测试。
 
-以下是开发人员访问AEM对象相关版本的过程，我们将其称为AEM（即云服务SDK），这是为内部版本开发自定义代码所需的过程。 有关调度程序的信息，请 [参阅此页](/help/implementing/dispatcher/overview.md)。
+为了为内部版本开发自定义代码，应下载并安装 [AEM作为云服务SDK的相关版本](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 。 有关将Adobe cloud服务调度程序工具用作Cloud Service Dispatcher工具的其他信息，请参 [阅此页](/help/implementing/dispatcher/overview.md)。
 
 ## 通过Cloud manager和Package Manager部署内容包 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
