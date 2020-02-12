@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
    + [AEM项目包结构](developing/introduction/aem-project-content-package-structure.md)
    + [开发存储库结构包](developing/introduction/repository-structure-package.md)
    + [AEM作为云服务SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [内容搜索和索引](/help/operations/indexing.md)
    + [AEM作为云服务开发准则](developing/introduction/development-guidelines.md)
    + [AEM站点开发入门- WKND教程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM作为云服务API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
