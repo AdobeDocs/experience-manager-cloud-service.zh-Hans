@@ -2,7 +2,7 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: b7f3122db5b55d515965b638c2b4aa4bc2a67fe6
+source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
 
 ---
 
@@ -142,7 +142,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/dispatcher_vhost.conf`
 
-基本框架的一部分，用于说明如何包含虚拟主机和全局变量。
+基本框架的一部分，用于说明如何包括虚拟主机和全局变量。
 
 * `conf.d/rewrites/default_rewrite.rules`
 
@@ -806,9 +806,9 @@ AEM提供三个选项：
 AEM作为云服务，在服务级别运行，而不是在单个节点级别运行，因此 [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher帮助文档中的失效说明不再准确。
 而应使用复制刷新代理。这可以使用复制API完成。 此处提供复制API文档 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有关刷新缓存的示例，请参阅 [API示例页，具体是向所有可用代理发出ACTIVATE类型复制操作的](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)`CustomStep` 示例。 刷新代理端点不可配置，但是预配置为指向调度程序，与运行刷新代理的发布服务匹配。 刷新代理通常可由OSGi事件或工作流触发。
 
-下图说明了这一点。
+<!--The diagram below illustrates this.
 
-![](assets/cdn.png "CDNCDN")
+![CDN](assets/cdn.png "CDN")-->
 
 如果担心调度程序缓存未清除，请与可根据需要刷新调度程序缓存的客户支持联系。
 
