@@ -2,14 +2,15 @@
 sub-product: Release Notes for AEM as a Cloud Service
 user-guide-title: Release Notes for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
 
 ---
 
 
 # 发行说明 {#release-notes}
 
-+ [发行说明](/help/release-notes/home.md)
++ 发行说明 {#release-notes}
+   + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
 + [新增功能](what-is-new.md)
 + [AEM cloud服务中的显着更改](aem-cloud-changes.md)
 + [已知问题](known-issues.md)
