@@ -2,7 +2,7 @@
 title: 不同之处和新增功能- Adobe Experience Manager即云服务
 description: '不同之处和新增功能- Adobe Experience Manager(AEM)即云服务。 '
 translation-type: tm+mt
-source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
+source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 
 ---
 
@@ -37,8 +37,6 @@ source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
 >[!NOTE]
 >
 >有关内部部署和托管服务版本的更多详细信息，请参阅 [AEM 6.5文档集](https://helpx.adobe.com/support/experience-manager/6-5.html)。
-
-<!-- * [Miscellaneous](#miscellaneous) -->
 
 ## 架构 {#architecture}
 
@@ -88,11 +86,9 @@ AEM作为云服务现在具有：
 
 ## 升级次数 {#upgrades}
 
-<!--
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
--->
+>有关更多详细信息，请参 [阅部署简介](/help/implementing/deploying/overview.md)。
 
 <!--
 ### Previous Versions {#previous-versions-upgrades}
@@ -166,11 +162,9 @@ Cloud manager已发展为自助服务门户，可在该门户中创建和配置A
 
 ## 入职 {#onboarding}
 
-<!--
 >[!NOTE]
 >
->For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
--->
+>有关更多详细信息，请 [参阅入门](/help/onboarding/home.md)。
 
 <!--
 ### Previous Versions {#previous-versions-onboarding}
@@ -208,13 +202,7 @@ Starting and managing an AEM project is significantly easier when using AEM as a
 
 >[!NOTE]
 >
->有关更多详细信息，请首先阅读开 [发指南文档](/help/implementing/developing/introduction/development-guidelines.md) 。
-
-<!--
->[!NOTE]
->
->For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
--->
+>有关更多详细信息，您可以从开 [发指南和](/help/implementing/developing/introduction/development-guidelines.md) 开 [发- WKND教程开始](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
 <!--
 ### Previous Versions {#previous-versions-developing}
@@ -303,11 +291,9 @@ AEM云服务操作还支持新的监视、报告和警报基础结构。 这使A
 
 ## 身份管理 {#identity-management}
 
-<!--
 >[!NOTE]
 >
->For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
--->
+>有关更多详细信息， [请参阅安全- IMS支持](/help/security/ims-support.md)。
 
 <!--
 ### Previous Versions {#previous-versions-identity-management}
@@ -336,11 +322,9 @@ By default, identity management was internal to AEM.
 
 ## 创作用户界面 {#authoring-user-interface}
 
-<!--
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
--->
+>有关更多详细信息， [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) (Basic Handling)是一个不错的起点。
 
 <!--
 ### Previous Versions {#previous-versions-authoring}
