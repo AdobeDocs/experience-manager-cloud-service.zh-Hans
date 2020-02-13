@@ -2,7 +2,7 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: ddc1b21dd14dcded72465e727ce740d481520170
+source-git-commit: b7f3122db5b55d515965b638c2b4aa4bc2a67fe6
 
 ---
 
@@ -142,7 +142,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/dispatcher_vhost.conf`
 
-基本框架的一部分，用于说明如何包括虚拟主机和全局变量。
+基本框架的一部分，用于说明如何包含虚拟主机和全局变量。
 
 * `conf.d/rewrites/default_rewrite.rules`
 
@@ -170,7 +170,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-适用于标准项目的默认过滤器。 如果需要自定义，请修改 `filters.any`。 在自定义中，如果默认过滤器符合您的需求，您仍可以先包含这些过滤器。
+适用于标准项目的默认过滤器。 如果需要自定义，请修改 `filters.any`。 在自定义中，如果默认过滤器符合您的需要，您仍可以先包含这些过滤器。
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
@@ -560,7 +560,7 @@ Enter directory `conf.dispatcher.d/cache`.
 
 将Cloud调度程 `conf.dispatcher.d/cache/default_invalidate_any` 序配置中的默认AEM文件复制到该位置。
 
-在每个农场文件中，删除该部分中的所 `cache/allowedClients` 有内容，并将其替换为：
+在每个农场文件中，删除该部分中的所 `cache/allowedClients` 有内容并将其替换为：
 
 ```
 $include "../cache/default_invalidate.any"
