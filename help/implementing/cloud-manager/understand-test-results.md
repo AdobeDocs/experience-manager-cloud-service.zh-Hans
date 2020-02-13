@@ -2,7 +2,7 @@
 title: 了解测试结果——云服务
 description: 了解测试结果——云服务
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager for Cloud services管道执行将支持执行针对舞台环境运
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-然后，SonarQube将引发一个阻止程序漏洞。 查看代码后，您会发现这不是一个漏洞，并可以使用相应的规则ID对此进行注释。
+然后，SonarQube将引发阻止程序漏洞。 查看代码后，您会发现这不是一个漏洞，并可以使用相应的规则ID对此进行注释。
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -117,7 +117,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 例如，将执行名 `com.myco.tests.aem.ExampleIT` 为的类，但名为的类 `com.myco.tests.aem.ExampleTest` 不执行。
 
-测试类必须是常规JUnit测试。 测试基础架构的设计和配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳做法。
+测试类必须是常规JUnit测试。 测试基础架构的设计和配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳做法。 有关更多 [详细信息](https://github.com/adobe/aem-testing-clients) ，请参阅Git链接。
 
 ## 自定义功能测试 {#custom-functional-test}
 
@@ -126,7 +126,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 但是，如果构建未生成测试JAR，则默认情况下测试通过。 此步骤是在阶段部署后立即执行的。
 
 > 注意:
->“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包括实际AEM运行时进程的日志——可以使用上述常规下载或尾日志功能访问这些日志。
+>“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包括实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关更多 [详细信息，请参阅访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 。
 
 ## 本地测试执行 {#local-test-execution}
 
