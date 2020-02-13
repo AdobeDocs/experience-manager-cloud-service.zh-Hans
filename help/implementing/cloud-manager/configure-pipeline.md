@@ -2,7 +2,7 @@
 title: 配置CI/CD管道——云服务
 description: 配置CI/CD管道——云服务
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
    此外，您还可以从“管道选项”中设置部署触发器和重要失败行为。
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. 单 **击** “保存”(Save)，管道将显示在主屏幕的卡片上，并有三个操作，如下所示：
 
@@ -97,8 +97,6 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
    * **编辑** -允许编辑管道设置
    * **构建** -导航到执行页面，可从中执行管道
    * **管理Git** —— 允许用户获取访问Cloud Manager Git存储库所需的信息
-
-
 
 ## 后续步骤 {#the-next-steps}
 
