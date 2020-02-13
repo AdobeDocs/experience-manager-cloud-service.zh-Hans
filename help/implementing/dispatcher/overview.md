@@ -2,7 +2,7 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 64475ec492863f713a7cefaedc4c0782014682ae
+source-git-commit: ddc1b21dd14dcded72465e727ce740d481520170
 
 ---
 
@@ -170,7 +170,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-适用于标准项目的默认过滤器。 如果需要自定义，请修改 `filters.any`。 在自定义中，如果默认过滤器符合您的需要，您仍可以先包含这些过滤器。
+适用于标准项目的默认过滤器。 如果需要自定义，请修改 `filters.any`。 在自定义中，如果默认过滤器符合您的需求，您仍可以先包含这些过滤器。
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
@@ -697,45 +697,89 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ## Dispatcher和CDN {#dispatcher-cdn}
 
+发布服务内容交付包括：
+
+* CDN（通常由Adobe管理）
+* AEM调度程序
+* AEM发布
+
 数据流如下：
 
-1. 放入浏览器的URL
-2. 向DNS中映射到该域的CDN发出请求
-3. 如果内容已在CDN上完全缓存，则CDN会将其提供给浏览器
-4. 如果内容未完全缓存，CDN将向调度程序发出（反向代理）
-5. 如果内容已完全缓存在调度程序上，则调度程序会将其提供给CDN
-6. 如果内容未完全缓存，调度程序将调用（反向代理）到AEM发布
-7. 浏览器呈现的内容
+1. URL将添加到浏览器中
+1. 向DNS中映射到该域的CDN发出请求
+1. 如果内容已在CDN上完全缓存，则CDN会将其提供给浏览器
+1. 如果内容未完全缓存，CDN将向调度程序发出（反向代理）
+1. 如果内容已完全缓存在调度程序上，则调度程序会将其提供给CDN
+1. 如果内容未完全缓存，调度程序将调用（反向代理）到AEM发布
+1. 内容由浏览器呈现，浏览器也可缓存它，具体取决于标题
+
+大多数内容设置为在五分钟后过期，这一阈值是调度程序缓存和CDN所遵循的。 在发布服务的重新部署期间，在新发布节点接受通信之前清除调度程序缓存并随后预热。
+
+以下各节提供有关内容交付的更详细信息，包括CDN配置和调度程序缓存。
+
+有关从作者服务复制到发布服务的信息，请在此 [处获取](/help/operations/replication.md)。
+
+>[!NOTE]
+>通信通过apache web服务器，该服务器支持包括调度程序的模块。 调度程序主要用作缓存来限制对发布节点的处理以提高性能。
 
 ### CDN {#cdn}
 
-AEM提供两个选项：
+AEM提供三个选项：
 
-1. 受管CDN - AEM现成的CDN。
-2. 非托管CDN —— 客户自带CDN并完全负责管理它。
+1. Adobe Managed CDN - AEM现成的CDN。 这是建议的选项，因为它已完全集成。
+1. 客户管理的CDN —— 客户将自己的CDN带来并完全负责管理它。
+1. 指向Adobe Managed CDN —— 客户将CDN指向AEM现成的CDN。
 
-强烈建议使用第一个选项，Adobe不对使用第二个选项时任何配置错误的结果负责。
+>[!CAUTION]
+>强烈建议使用第一个选项。 如果您选择第二个选项，则不能对任何错误配置的结果负责。
 
-#### 受管CDN {#managed-cdn}
+第二和第三种选择将按具体情况允许。 这涉及满足某些先决条件，包括但不限于客户与其CDN供应商进行了旧版集成，这很难撤消。
 
-在Adobe配置CDN后，您应创建CNAME，将应用程序的域映射到托管的CDN域上托管的Adobe控制域。
+#### Adobe Managed CDN {#adobe-managed-cdn}
 
-CDN充当第7层Web应用程序防火墙，它需要SSL终止，因此它需要经过客户签名的SSL证书。 在预发布阶段，您必须通过手动流程向Adobe提供证书。
+使用Adobe现成的CDN为内容交付做准备很简单，如下所述：
 
-在GA时，您应将证书上传到Cloud Manager，然后Cloud Manager再将其上传到CDN。 当SSL证书即将过期时，您将收到通知，以便在Cloud manager中刷新证书。
+1. 您将通过共享指向包含此信息的安全表单的链接，向Adobe提供已签名的SSL证书和密钥。 请就此任务与客户支持协作。
+注意：Aem作为云服务不支持域验证(DV)证书。
+1. 然后，客户支持将与您协调CNAME DNS记录的时间，并将其FQDN指向 `adobe-aem.map.fastly.net`。
+1. 当SSL证书即将过期时，您会收到通知，因此您可以重新提交新的SSL证书。
 
-#### 非托管CDN {#unmanaged-cdn}
+默认情况下，对于Adobe Managed CDN设置，所有公共流量都可用于生产和非生产（开发和阶段）环境的发布服务。 如果您希望限制特定环境的发布服务的流量（例如，限制按IP地址范围的分阶段），您应与客户支持合作配置这些限制。
+
+#### 客户管理的CDN {#customer-managed-cdn}
 
 您可以管理您自己的CDN，前提是：
 
 1. 您已有CDN。
-2. 你会管的。
-3. 您的应用程序不会向CDN发出AEM架构中尚未包含的大量API调用。
-4. AEM作为云服务能够确保端到端系统正常工作。
-5. 您需要向Adobe提供要允许的CDN URL白名单。
+1. 它必须是受支持的CDN。 目前，支持Akamai。 如果您的组织希望管理当前不支持的CDN，请联系客户支持。
+1. 你会管的。
+1. 您必须能够配置CDN才能将Aem作为云服务使用——请参阅下面的配置说明。
+1. 您的工程CDN专家随时可以通知您，以防出现相关问题。
+1. 必须按配置说明中的说明将CDN节点的白名单提供到Cloud Manager。
+1. 在开始生产之前，必须执行并成功通过负载测试。
 
-Adobe将提供一个AEM cloudURL，用作您的CDN源。
+配置说明：
 
+1. 通过调用环境create/update API向白名单中的CIDR列表，将CDN供应商的白名单提供给Adobe。
+1. 使用 `X-Forwarded-Host` 域名设置标题。
+1. 将主机头与源域（即Aem）设置为云服务入口。 价值应来自Adobe。
+1. 将SNI头发送到源。 sni头必须是源域。
+1. 设置 `X-Edge-Key` 将流量正确路由到AEM服务器所需的路径。 价值应来自Adobe。
+
+在接受实时流量之前，您应向Adobe客户支持部门验证端到端流量路由是否正常工作。
+
+#### 指向Adobe Managed CDN {#point-to-point-CDN}
+
+如果您希望使用现有CDN，但无法满足客户管理的CDN的要求，则支持此功能。 在这种情况下，您可以管理自己的CDN，但可以指向Adobe的受管CDN。
+
+客户必须执行并成功通过负载测试，然后才能开始生产。
+
+配置说明：
+
+1. 使用 `X-Forwarded-Host` 域名设置标题。
+1. 使用源域（即Adobe CDN的入口）设置主机头。 价值应来自Adobe。
+1. 将SNI头发送到源。 与主机头一样， sni头必须是源域。
+1. 设置 `X-Edge-Key`将流量正确路由到AEM服务器所需的路径。 价值应来自Adobe。
 
 #### CDN缓存失效 {#CDN-cache-invalidation}
 
@@ -745,26 +789,36 @@ Adobe将提供一个AEM cloudURL，用作您的CDN源。
 * 对于不尊重不可变值的旧版浏览器，使用设置为不可变或30天的缓存控件可无限期地缓存客户端库（JavaScript和CSS）。 请注意，客户端库以唯一路径提供，如果客户端库发生更改，则该路径会发生更改。 换句话说，将根据需要生成引用客户端库的HTML，以便在发布新内容时体验新内容。
 * 默认情况下，不缓存图像。
 
+在接受实时流量之前，客户应向Adobe客户支持进行验证，确保端到端流量路由正常工作。
+
 ## 显式调度程序缓存失效 {#explicit-invalidation}
+
+如前所述，流量通过apache web服务器，该服务器支持包括调度程序的模块。 调度程序主要用作缓存来限制对发布节点的处理以提高性能。
+
+通常，不必手动使调度程序中的内容无效，但可能会根据需要，如下所述。
 
 在将AEM作为云服务之前，有两种方法可以使调度程序缓存失效。
 
-1. 调用复制API，指定发布调度程序刷新代理
+1. 调用复制代理，指定发布调度程序刷新代理
 2. 直接调用 `invalidate.cache` API(例如，POST /dispatcher/invalidate.cache)
 
 此方 `invalidate.cache` 法将不再受支持，因为它只针对特定的调度程序节点。
 AEM作为云服务，在服务级别运行，而不是在单个节点级别运行，因此 [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher帮助文档中的失效说明不再准确。
-而应使用复制API方法。 [API文档可用](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有关刷新缓存的示例，请参阅 [API示例页](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) ，特别是向所有可用代理发出ACTIVATE类型的复制操作的CustomStep示例。
+而应使用复制刷新代理。这可以使用复制API完成。 此处提供复制API文档 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有关刷新缓存的示例，请参阅 [API示例页，具体是向所有可用代理发出ACTIVATE类型复制操作的](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)`CustomStep` 示例。 刷新代理端点不可配置，但是预配置为指向调度程序，与运行刷新代理的发布服务匹配。 刷新代理通常可由OSGi事件或工作流触发。
 
 下图说明了这一点。
 
-<!-- [CDN](assets/cdn.png "CDN") -->
+![](assets/cdn.png "CDNCDN")
 
-<!-- See [Apache and Dispatcher Configuration and Testing](../developing/introduction/developer-experience.md#apache-and-dispatcher-configuration-and-testing) for instructions on how a developer can configure apache and the dispatcher module. -->
+如果担心调度程序缓存未清除，请与可根据需要刷新调度程序缓存的客户支持联系。
+
+由Adobe管理的CDN会遵循TTL，因此无需刷新它。 如果怀疑存在问题，请与可以根据需要刷新Adobe管理的CDN缓存的客户支持联系。
 
 ### 激活／取消激活期间调度程序缓存失效 {#cache-activation-deactivation}
 
-此发布触发的失效与快速启动相同：当发布实例从作者处（通过复制和管道队列）收到页面或资产的新版本时，它使用刷新代理使其调度程序上的相应路径无效。 更新的路径将从调度程序缓存及其父缓存中删除，最高可以使用statfilelevel配置 [的级别](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)。
+与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面。
+
+当发布实例从作者处收到页面或资产的新版本时，它使用刷新代理使其调度程序上的相应路径无效。 更新的路径将从调度程序缓存及其父缓存中删除，最高可达到一个级别(您可以使用statfilelevel配置 [该级别](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
 ### 内容新鲜度和版本一致性 {#content-consistency}
 
