@@ -2,7 +2,7 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -142,7 +142,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/dispatcher_vhost.conf`
 
-基本框架的一部分，用于说明如何包括虚拟主机和全局变量。
+基本框架的一部分，用于说明如何包含虚拟主机和全局变量。
 
 * `conf.d/rewrites/default_rewrite.rules`
 
@@ -560,7 +560,7 @@ Enter directory `conf.dispatcher.d/cache`.
 
 将Cloud调度程 `conf.dispatcher.d/cache/default_invalidate_any` 序配置中的默认AEM文件复制到该位置。
 
-在每个农场文件中，删除该部分中的所 `cache/allowedClients` 有内容并将其替换为：
+在每个农场文件中，删除该部分中的所 `cache/allowedClients` 有内容，并将其替换为：
 
 ```
 $include "../cache/default_invalidate.any"
@@ -623,7 +623,7 @@ Enter directory `conf.dispatcher.d/renders`.
 
 将文件从默 `conf.dispatcher.d/renders/default_renders.any` 认AEM复制为Cloud service调度程序配置，复制到该位置。
 
-在每个农场文件中，删除该部分中的所 `renders` 有内容并将其替换为：
+在每个农场文件中，删除该部分中的所 `renders` 有内容，并将其替换为：
 
 ```
 $include "../renders/default_renders.any"
@@ -793,7 +793,7 @@ AEM提供三个选项：
 
 ## 显式调度程序缓存失效 {#explicit-invalidation}
 
-如前所述，流量通过apache web服务器，该服务器支持包括调度程序的模块。 调度程序主要用作缓存来限制对发布节点的处理以提高性能。
+如前所述，流量通过apache web服务器，该服务器支持包括调度程序的模块。 调度程序主要用作缓存来限制对发布节点的处理，以提高性能。
 
 通常，不必手动使调度程序中的内容无效，但可能会根据需要，如下所述。
 
@@ -806,9 +806,9 @@ AEM提供三个选项：
 AEM作为云服务，在服务级别运行，而不是在单个节点级别运行，因此 [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher帮助文档中的失效说明不再准确。
 而应使用复制刷新代理。这可以使用复制API完成。 此处提供复制API文档 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有关刷新缓存的示例，请参阅 [API示例页，具体是向所有可用代理发出ACTIVATE类型复制操作的](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)`CustomStep` 示例。 刷新代理端点不可配置，但是预配置为指向调度程序，与运行刷新代理的发布服务匹配。 刷新代理通常可由OSGi事件或工作流触发。
 
-<!--The diagram below illustrates this.
+下图说明了这一点。
 
-![CDN](assets/cdn.png "CDN")-->
+![](assets/cdnb.png "CDNCDN")
 
 如果担心调度程序缓存未清除，请与可根据需要刷新调度程序缓存的客户支持联系。
 
