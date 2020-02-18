@@ -2,7 +2,7 @@
 title: 了解测试结果——云服务
 description: 了解测试结果——云服务
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 但是，如果构建未生成测试JAR，则默认情况下测试通过。 此步骤是在阶段部署后立即执行的。
 
-> 注意:
+>[!NOTE]
 >“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包括实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关更多 [详细信息，请参阅访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 。
 
 ## 本地测试执行 {#local-test-execution}
