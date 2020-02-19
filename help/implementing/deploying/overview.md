@@ -2,7 +2,7 @@
 title: 作为云服务部署到AEM
 description: '作为云服务部署到AEM '
 translation-type: tm+mt
-source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
@@ -14,6 +14,10 @@ source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 与AEM内部部署和托管服务解决方案相比，AEM中代码开发的基础知识与云服务类似。 开发人员编写代码并在本地测试它，然后将其作为云服务环境推送到远程AEM。 Cloud manager是Managed services的可选内容交付工具，是必需的。 现在，这是将代码作为云服务环境部署到AEM的唯一机制。
 
 AEM版本的更新始终是一个单独的部署事件，与推送自定义代码无关。 另一种方式是，自定义代码版本应针对生产上的AEM版本进行测试，因为它将部署在顶部。 随后发生的AEM版本更新（与当前的Managed services相比，该更新会很频繁）会自动应用。 它们旨在向后兼容已部署的客户代码。
+
+以下视频提供有关如何将代码作为云服务部署到AEM的高级概述：
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 本文档的其余部分将介绍开发人员如何调整其实践，以便将AEM作为云服务的版本更新和客户更新与之结合使用。
 
@@ -45,7 +49,7 @@ AEM版本的更新始终是一个单独的部署事件，与推送自定义代�
 
 与现有非云AEM版本一样，将支持基于特定快速入门的本地脱机开发，并且在大多数情况下，预计该开发工具是进行调试的首选工具。
 
-> [!注意}
+>[!NOTE]
 >与Adobe cloud相比，应用程序在本地计算机上的行为方式与Adobe cloud有细微的操作差异。 在本地开发过程中，这些架构差异必须得到尊重，并可能导致在云基础架构上部署时出现不同的行为。 由于这些差异，在生产中推出新的自定义代码之前，必须对开发环境和舞台环境执行完全测试。
 
 为了为内部版本开发自定义代码，应下载并安装 [AEM作为云服务SDK的相关版本](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 。 有关将AEM用作云服务调度程序工具的其他信息，请参 [阅此页](/help/implementing/dispatcher/overview.md)。
@@ -107,7 +111,8 @@ AEM版本的更新始终是一个单独的部署事件，与推送自定义代�
 
 通过将包嵌入install.author或install.publish文件夹，可以将可变内容安装限制为创作或发布 `/apps`。 有关建议的项目重组的 [AEM文档](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) ，请参阅详细信息。
 
->[!NOTE] 内容包部署到所有环境类型(dev、stage、prod)。 无法将部署限制到特定环境。 此限制旨在确保自动执行测试运行的选项。 特定于环境的内容需要通过包管理器手动安装。
+>[!NOTE]
+>内容包部署到所有环境类型(dev、stage、prod)。 无法将部署限制到特定环境。 此限制旨在确保自动执行测试运行的选项。 特定于环境的内容需要通过包管理器手动安装。
 
 此外，在应用可变内容包更改后，也没有回滚这些更改的机制。 如果客户检测到问题，他们可以选择在下一个代码版本中修复它，或者作为最后手段，在部署之前将整个系统恢复到某个时间点。
 
@@ -123,7 +128,8 @@ AEM版本的更新始终是一个单独的部署事件，与推送自定义代�
 * 创建／删除用户组
 * 创建／删除用户
 * 添加ACL
-   > [!NOTE] 定义ACL要求节点结构已存在。 因此，可能需要在创建路径语句之前执行。
+   > [!NOTE]
+   >定义ACL要求节点结构已存在。 因此，可能需要在创建路径语句之前执行。
 * 添加路径（例如，根文件夹结构）
 * 添加CND（nodetype定义）
 
