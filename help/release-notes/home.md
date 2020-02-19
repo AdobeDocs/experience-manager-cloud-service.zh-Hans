@@ -2,7 +2,7 @@
 title: Adobe Experience Manager(AEM)云服务的发行说明。
 description: 'Adobe Experience Manager(AEM)云服务的发行说明。 '
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
@@ -17,6 +17,7 @@ source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
 
 ## 关键发行信息 {#key-articles}
 
+* [当前发行说明](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
 * [新增功能](what-is-new.md)
 * [显着更改](aem-cloud-changes.md)
 * [已知问题](known-issues.md)
