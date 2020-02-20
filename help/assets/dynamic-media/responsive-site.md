@@ -2,7 +2,7 @@
 title: 为响应式网站传送优化的图像
 description: 如何使用响应式代码功能传送优化的图像
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -44,4 +44,4 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 HTTP/2是新的、更新的Web协议，它改进了浏览器和服务器通信的方式。 它提供了更快的信息传输，并减少了所需的处理能力。 支持使用HTTP/2交付Dynamic Media资产，它提供更好的响应和加载时间。
 
-有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](http2.md) HTTP2内容交付。
+有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](http2faq.md) HTTP2内容交付。
