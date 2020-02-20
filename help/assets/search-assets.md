@@ -4,7 +4,7 @@ description: 了解如何使用“筛选器”面板在AEM中查找所需的资�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -221,7 +221,7 @@ AEM搜索功能支持搜索集合和搜索集合中的资产。 请参阅 [搜�
 
 资产选择器允许您以特殊方式搜索、筛选和浏览DAM资产。 资产选择器在上可用 `https://[aem_server]:[port]/aem/assetpicker.html`。 您可以使用资产选择器提取您选择的资产的元数据。 您可以使用支持的请求参数启动它，例如资产类型（图像、视频、文本）和选择模式（单选或多选）。 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
 
-资产选择器使用HTML5 Window.postMessage消息将选定资产的数据发送给收件人。 资产选择器基于Granite的基础选取器词汇。 默认情况下，资产选择器在浏览模式下操作。
+资产选择器使用HTML5消 `Window.postMessage` 息将选定资产的数据发送给收件人。 资产选择器基于Granite的基础选取器词汇。 默认情况下，资产选择器在浏览模式下操作。
 
 您可以在URL中传递以下请求参数，以在特定上下文中启动资产选择器：
 
