@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -78,7 +78,6 @@ source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
    + [Dynamic Media视频配置文件](dynamic-media/video-profiles.md)
    + [Dynamic media图像配置文件](dynamic-media/image-profiles.md)
    + [智能成像](dynamic-media/imaging-faq.md)
-   + [内容的HTTP2交付](dynamic-media/http2.md)
    + [交付Dynamic media资产](dynamic-media/delivering-dynamic-media-assets.md)
    + [在Dynamic Media中激活热链接保护](dynamic-media/hotlink-protection.md)
    + [图像集](dynamic-media/image-sets.md)
@@ -103,4 +102,4 @@ source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
    + [使用选择器](dynamic-media/working-with-selectors.md)
    + [DHTML查看器生命周期结束常见问题解答](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 查看器生命周期终止通知](dynamic-media/flash-viewers-eol.md)
-   + [HTTP2内容交付常见问题解答](dynamic-media/scene7-http2faq.md)
+   + [HTTP2内容交付常见问题解答](dynamic-media/http2faq.md)
