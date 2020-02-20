@@ -2,7 +2,7 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何在AEM中将Dynamic media组件添加到页面
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -301,7 +301,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 HTTP/2是新的、更新的Web协议，它改进了浏览器和服务器通信的方式。 它提供了更快的信息传输，并减少了所需的处理能力。 Dynamic media资产的交付现在可以通过HTTP/2进行，从而提供更好的响应和加载时间。
 
-有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](/help/assets/dynamic-media/http2.md) HTTP2内容交付。
+有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](/help/assets/dynamic-media/http2faq.md) HTTP2内容交付。
 
 >[!MORELIKETHIS]
 >
