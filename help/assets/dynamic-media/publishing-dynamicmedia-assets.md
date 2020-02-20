@@ -2,7 +2,7 @@
 title: 发布 Dynamic Media 资产
 description: 如何发布Dynamic Media资产
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -39,5 +39,5 @@ You publish your Dynamic Media assets by selecting the assets and tapping **[!UI
 
 AEM现在支持通过HTTP/2交付所有Dynamic media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，通过HTTP/2协议传送已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，使所有Dynamic media资产的响应和加载时间都更好。
 
-请参 [阅HTTP/2交付内容常见问题解答](/help/assets/dynamic-media/scene7-http2faq.md) ，以了解更多信息。
+请参 [阅HTTP/2交付内容常见问题解答](/help/assets/dynamic-media/http2faq.md) ，以了解更多信息。
 <!--this md file used to reside under sites-administering-->
