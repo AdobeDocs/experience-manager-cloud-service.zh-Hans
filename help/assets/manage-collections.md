@@ -4,7 +4,7 @@ description: 了解AEM资产中的集合概念。 了解如何与其他用户一
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -102,7 +102,7 @@ You can create a collection either with [static references](#create-a-collection
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. 在资产用户界面中，点按／单击工 **[!UICONTROL 具栏中]** 的搜索图标。
-1. 在“Omnisearch”框中显示光标，按Return键。
+1. 在“Omnisearch”（全局搜索）框中，按Enter键。
 1. 点按／单击GlobalNav图标以显示“滤镜”面板。
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
 1. 从“文件 **[!UICONTROL 和文件夹”列表]** ，选择“ **[!UICONTROL 文件”]**。
@@ -225,7 +225,7 @@ Adobe Enterprise Manager(AEM)资产允许您批量编辑许多集合的元数据
 
 在“资产”用户界面中，您可以根据某些规则、搜索条件或自定义搜索彩块化来搜索或筛选资产。 If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. 创建保存的搜索也会创建智能收藏集。
 
-保存的搜索在您创建智能收藏集时创建。智能收藏集会自动添加到“保存的 **[!UICONTROL 搜索]** ”列表。 The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+保存的搜索在您创建智能收藏集时创建。智能收藏集会自动添加到“保存的 **[!UICONTROL 搜索]** ”列表。 The Saved Searches query for the collection is saved in the `dam:query` property in CRX at the relative location `/content/dam/collections/`.
 
 >[!NOTE]
 >
