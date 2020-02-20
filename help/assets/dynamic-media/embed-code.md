@@ -2,7 +2,7 @@
 title: 在网页上嵌入Dynamic Media视频查看器或图像查看器
 description: 了解如何将Dynamic media视频或图像嵌入网页
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -49,4 +49,4 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 HTTP/2是新的、更新的Web协议，它改进了浏览器和服务器通信的方式。 它提供了更快的信息传输，并减少了所需的处理能力。 Dynamic media资产的交付现在可以通过HTTP/2进行，从而提供更好的响应和加载时间。
 
-有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](http2.md) HTTP2内容交付。
+有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](http2faq.md) HTTP2内容交付。
