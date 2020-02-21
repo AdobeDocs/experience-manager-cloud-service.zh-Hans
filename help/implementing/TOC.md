@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
 
@@ -30,8 +30,8 @@ source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
    + [AEM站点开发入门- WKND教程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM作为云服务API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [理解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
-+ 将AEM扩展为云服务 {#extending}
-   + [体验片段](developing/extending/experience-fragments.md)
++ 将AEM配置和扩展为云服务 {#configuring-and-extending}
+   + [扩展体验片段](developing/extending/experience-fragments.md)
 + 作为云服务部署到AEM {#deploying}
    + [作为云服务部署到AEM](deploying/overview.md)
 + 云中的调度程序 {#dispatcher}
