@@ -2,14 +2,14 @@
 title: 将Adobe Experience manager作为云服务实施
 description: Adobe Experience manager作为云服务实施自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
 
 
 # 将AEM应用程序作为云服务实施 {#aem-implementation-guide}
 
-本页列出了有关将Experience manager作为云服务实施的自助资源。
+本页列出了有关Experience Manager作为云服务实施的自助资源。 了解如何将Experience manager自定义为云服务部署。
 
 ## 主要实施文章 {#key-articles}
 
