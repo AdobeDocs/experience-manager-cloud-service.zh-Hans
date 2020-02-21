@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -36,7 +36,6 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
    + [元数据架构](metadata-schemas.md)
    + [管理视频资产](manage-video-assets.md)
    + [从AEM下载资产](download-assets-from-aem.md)
-   + [向资产添加水印](add-watermark-to-assets.md)
    + [要编辑的登记和注销资产](check-out-and-submit-assets.md)
    + [资产的数字版权管理](drm.md)
 + 配置、管理和扩展资产 {#admin}
