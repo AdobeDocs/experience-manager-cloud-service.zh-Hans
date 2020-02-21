@@ -3,14 +3,14 @@ title: 将工作流应用于资产
 description: 了解如何将工作流应用于Adobe Experience Manager资产中的资产、文件夹和收藏集。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # 将工作流应用于资产 {#applying-workflows-to-assets}
 
-您可以在数字资产中使用工作流来激活资产或创建水印。 资产的某些工作流会配置为根据某些条件自动执行。 例如，自动创建再现的工作流会在编辑图像后自动执行。
+您可以在数字资产中使用工作流来激活资产。 资产的某些工作流会配置为根据某些条件自动执行。 例如，自动创建再现的工作流会在编辑图像后自动执行。
 
 ## 将工作流应用于AEM资产 {#apply-a-workflow-to-an-aem-asset}
 
