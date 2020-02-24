@@ -2,7 +2,7 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何在AEM中将Dynamic media组件添加到页面
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -199,6 +199,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
    如果您查看的是图像集、旋转集或混合媒体集，则此选项不可用。
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL 启用长宽比匹配]**-在选择智能裁剪再现时匹配原始图像的长宽比。
 
 * **[!UICONTROL 标题]**-更改智能裁剪图像的标题。
 
