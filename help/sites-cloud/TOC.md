@@ -1,7 +1,7 @@
 ---
 sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Authoring Content in AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,8 +9,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 站点 {#sites}
 
-+ [AEM Sites作为云服务](/help/sites-cloud/home.md)
-+ [对AEM cloud服务中的AEM站点的显着更改](sites-cloud-changes.md)
++ [AEM Sites 云服务](/help/sites-cloud/home.md)
++ [对 AEM 云服务中 AEM Sites 的显著更改](sites-cloud-changes.md)
 + 创作 {#authoring}
    + 入门 {#getting-started}
       + [页面创作快速入门指南](authoring/getting-started/quick-start.md)
@@ -33,7 +33,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [导出到 CSV](authoring/fundamentals/csv-export.md)
       + [组件](authoring/fundamentals/components.md)
       + [为移动设备创作](authoring/fundamentals/mobile.md)
-      + [可访问内容（WCAG 2.0符合性）](authoring/fundamentals/accessible-content.md)
+      + [辅助内容（WCAG 2.0 符合性）](authoring/fundamentals/accessible-content.md)
       + [疑难解答](authoring/fundamentals/troubleshooting.md)
       + [键盘快捷键](authoring/fundamentals/keyboard-shortcuts.md)
    + 创作功能 {#features}
@@ -68,6 +68,6 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [管理受众](authoring/personalization/audiences.md)
       + [创建和管理选件](authoring/personalization/offers.md)
       + [了解分段](authoring/personalization/segmentation.md)
-+ 将AEM作为云服务集成 {#integrations}
-   + [与Adobe Analytics集成](integrating/adobe-analytics.md)
++ 与 AEM 云服务集成 {#integrations}
+   + [与 Adobe Analytics 集成](integrating/adobe-analytics.md)
    + [与 Adobe Target 集成](integrating/adobe-target.md)
