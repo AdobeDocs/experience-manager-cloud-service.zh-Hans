@@ -2,7 +2,7 @@
 title: 了解计划和计划类型
 description: 了解计划和计划类型——云服务
 translation-type: tm+mt
-source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
+source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 # 了解程序和程序类型 {#understanding-programs}
 
 在Cloud manager中，租户实体位于最顶部，其中可包含多个程序。  每个计划最多只能包含一个生产环境和多个非生产环境。
+
+下图显示了Cloud manager中的实体层次结构。
+
+![图像](assets/program-types1.png)
 
 ## 计划类型 {#program-types}
 
