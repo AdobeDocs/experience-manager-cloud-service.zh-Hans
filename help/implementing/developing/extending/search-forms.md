@@ -2,18 +2,32 @@
 title: 配置搜索表单
 description: 将Adobe Experience Manager的搜索表单配置为云服务。
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # 配置搜索表单 {#configuring-search-forms}
 
-使用 **搜索表单** ，可自定义在创作环境中各种搜索面板中可用的搜索彩块化和筛选器。 自定义这些面板可让搜索功能根据您的特定需求进行多样化。
+Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-cloud/authoring/getting-started/search.md) 机制。
 
-一 [系列谓](#predicates-and-their-settings)词现成可用。
+此外，还有一组预定义的选项可帮助您筛选内容。 这些方面包含预定义的彩块化， **如“修改日期**”、“发布状态 ******** ”或“Live Copy状态”，以帮助您快速向下展开到所需的资源。
 
-您可以配 [置在各种控制台和资产浏览器](#configuring-your-search-forms) （编辑页面时）中使用的搜索表单。 用 [于配置这些表单的对话框](#configuring-your-search-forms) ，可通过以下方式访问：
+![搜索和过滤使用](assets/csf-usage.png)
+
+这些目标旨在帮助您快速轻松地从以下位置定位内容：
+
+* [搜索和筛选](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* 资产 [浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （编辑页面时）
+
+>[!NOTE]
+>
+>您可以配置基础内 [容搜索和索引服务](/help/operations/indexing.md) 。
+
+使用 **搜索表单**，您可以根据您的特定需求自定义和扩展这些面板。
+
+“搜 **索表单** ”提供现成的谓词选择， [您可](#predicates-and-their-settings) 以组合和定义。 用 [于配置这些表单的对话框](#configuring-your-search-forms) ，可通过以下方式访问：
 
 * **工具**
 
@@ -21,73 +35,48 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
 
       * **搜索表单**
 
-首次访问此控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置——并且无法删除。 自定义配置后，锁将消失——除非您删 [除自定义配置](#deleting-a-configuration-to-reinstate-the-default)，否则将恢复默认配置（和挂锁指示符）。
+## 默认表单 {#default-forms}
+
+首次访问“搜索表 **单** ”控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置——并且无法删除。 自定义并保存后，锁定将消失。 当您删除自定义配 [置时，它将重新出现](#deleting-a-configuration-to-reinstate-the-default)，在这种情况下，将恢复默认配置（和挂锁指示符）。
 
 ![配置搜索表单概述](assets/csf-overview.png)
-
-## 配置 {#configurations}
 
 可用的默认配置（按字母顺序列出）包括：
 
 * **资产管理员搜索边栏:**
 
-   此配置定义了在使用资产控制台时用户可用的搜索选项。
-
 * **页面编辑器（文档搜索）:**
-
-   此配置定义在资产浏览器（编辑页面时）中搜索文档时可用的选项。
 
 * **页面编辑器（体验片段搜索）:**
 
-   此配置定义在资产浏览器（编辑页面时）中搜索体验片段时可用的选项。
-
 * **页面编辑器（图像搜索）:**
-
-   此配置定义在资产浏览器（编辑页面时）中搜索图像时可用的选项。
 
 * **页面编辑器（手稿搜索）:**
 
-   此配置定义在资产浏览器（编辑页面时）中搜索手稿时可用的选项。
-
 * **页面编辑器（页面搜索）:**
-
-   此配置定义在资产浏览器（编辑页面时）中搜索页面时可用的选项。
 
 * **页面编辑器（段落搜索）:**
 
-   此配置定义在资产浏览器（编辑页面时）中搜索段落时可用的选项。
-
 * **页面编辑器（产品搜索）:**
-
-   此配置定义在资产浏览器（编辑页面时）中搜索产品时可用的选项。
 
 * **页面编辑器（Scene7搜索）**:
 
-   此配置定义在资产浏览器（编辑页面时）中搜索Scene7资源时可用的选项。
-
 * **页面编辑器（视频搜索）**:
-
-   此配置定义在资产浏览器（编辑页面时）中搜索视频时可用的选项。
 
 * **项目管理员搜索边栏:**
 
-   此配置定义搜索项目时用户可用的搜索选项。
-
 * **项目翻译搜索边栏:**
-
-   此配置定义搜索项目翻译时用户可用的搜索选项。
 
 * **站点管理员搜索边栏**:
 
-   此配置定义在使用站点控制台的搜索边栏时用户可用的搜索选项。
-
 * **代码片段管理员搜索边栏**:
-
-   此配置定义用户在搜索片段时可用的搜索选项。
 
 * **Stock 管理员搜索边栏**:
 
-   此配置定义搜索Stock时用户可用的搜索选项。
+>[!NOTE]
+>
+> 有关资产相关搜索表单的更多详细信息，请参 [阅资产——搜索彩块化](/help/assets/search-facets.md)
+
 
 ## 谓词及其设置 {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>日期范围</td>
-   <td>搜索在日期属性的指定范围内创建的资产。 在“搜索”面板中，可以指定开始日期和结束日期。</td>
+   <td>搜索在日期属性的指定范围内创建的资源。 在“搜索”面板中，可以指定开始日期和结束日期。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -181,7 +170,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>到期状态</td>
-   <td>根据到期状态搜索资产。</td>
+   <td>根据到期状态搜索资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -191,7 +180,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>文件大小</td>
-   <td>根据资产大小搜索资产。</td>
+   <td>根据资源的大小筛选资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -205,7 +194,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
    <td>根据文件/MIME类型搜索资产。</td>
    <td>
     <ul>
-     <li>字段标签</li>
+     <li>字段标签</li> 
      <li>属性名称*</li>
      <li>Mime 类型路径</li>
      <li>描述</li>
@@ -214,7 +203,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>全文</td>
-   <td>此搜索谓词用于进行全文搜索.</td>
+   <td>此搜索谓词用于进行全文搜索. 它被映射为“jcr:contains´”运算符。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -304,7 +293,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>页面 状态</td>
-   <td>根据页面的状态搜索页面。</td>
+   <td>根据页面状态筛选页面。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -315,7 +304,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>路径</td>
-   <td>搜索位于特定路径下的资产。</td>
+   <td>根据特定路径进行筛选。 可以指定多个路径作为选项。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -325,7 +314,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>路径浏览器</td>
-   <td>提供要搜索的路径浏览器。</td>
+   <td>提供一个路径浏览器以在预定义的根路径下进行搜索。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -360,7 +349,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>发布状态</td>
-   <td>根据资产的发布状态搜索资产</td>
+   <td>根据资源的发布状态筛选资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -380,7 +369,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>评级</td>
-   <td>根据资产的评级搜索资产。<br /> </td>
+   <td>根据资源的平均等级搜索资源。<br /> </td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -391,7 +380,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>相对日期</td>
-   <td>Search assets based on the relative date of their creation<br /> </td>
+   <td>根据资源创建的相对日期筛选资源。 例如，1周前，1个月前。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -497,23 +486,24 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* 常用搜索谓词在以下位置进行定义：
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+此信息仅供参考，您不得对进行更改 `/libs`。
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### 谓词设置 {#predicate-settings}
 
-根据谓词，可以选择以下设置进行配置：
+根据谓词，可以选择一系列用于配置的设置，包括：
 
 * **字段标签**
 
@@ -659,22 +649,19 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
 
    * `jcr:title` -要在搜索边栏中显示的字段标签
    * `value` -要搜索的属性值
+   ![谓词定义](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->您 ***不得*** 更改路径中的任 `/libs` 何内容。
->
->这是因为下次升级实 `/libs` 例时，将覆盖其内容（而应用修补程序或功能包时，很可能会覆盖该内容）。
->
->建议的配置和其他更改方法是：
->
->1. 在下重新创建所需项目(该项目存在 `/libs`于中) `/apps`。 在本例中，请从：
->1. `/libs/cq/gui/content/common/options/predicates`
->1. 在 `/apps.`
+   >[!NOTE]
+   >
+   >您 ***不得*** 更改路径中的任 `/libs` 何内容。
+   >
+   >这是因为下次升级实 `/libs` 例时，将覆盖其内容（而应用修补程序或功能包时，很可能会覆盖该内容）。
+   >
+   >建议的配置和其他更改方法是：
+   >
+   >1. 在下重新创建所需项目(该项目存在 `/libs`于中) `/apps`。 在本例中，请从：
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. 在 `/apps.`
 
 
 1. 打开“ **搜索表单** ”控制台，然后选择要更新的配置。 例如，“站 **点管理搜索边栏”**。
@@ -695,16 +682,13 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
       选择保留选项的路径。 例如：
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![选项谓词](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. 导航到相应的控制台(在本例中， **为站点**)，然后打开 **搜索边栏** 。 新定义的搜索表单以及各种选项将可见。 选择所需选项可查看搜索结果：
+1. 导航到相应的控制台(在本例中， **为站点**)，然后打开 **搜索边栏** 。 新定义的搜索表单以及各种选项将可见。 选择所需选项可查看搜索结果。
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## 用户权限 {#user-permissions}
