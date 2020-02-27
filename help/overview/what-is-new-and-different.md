@@ -2,7 +2,7 @@
 title: 不同之处和新增功能- Adobe Experience Manager即云服务
 description: '不同之处和新增功能- Adobe Experience Manager(AEM)即云服务。 '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
 * [架构](#architecture)
 * [升级次数](#upgrades)
 * [Cloud Manager](#cloud-manager)
-* [入职](#onboarding)
+* [入门](#onboarding)
 * [开发](#developing)
 * [操作和性能](#operations-and-performance)
 * [身份管理](#identity-management)
@@ -129,7 +129,7 @@ Cloud manager已发展为自助服务门户，可在该门户中创建和配置A
 
 * APAC（澳大利亚）
 
-## 入职 {#onboarding}
+## 入门 {#onboarding}
 
 >[!NOTE]
 >
@@ -179,6 +179,10 @@ Cloud manager已发展为自助服务门户，可在该门户中创建和配置A
 
 Web控制台（其中管理OSGI捆绑包及其关联配置，并且之前是AEM quickStart的一部分）不再作为云服务环境直接供AEM用户访问。 此界面仍可通过使用新的开发人员控制台以只读模式访问。 使用此控制台，开发人员可以选择创作或发布服务的任何特定节点并直接登录，然后访问默认阻止的区域。
 
+>[!NOTE]
+>
+>另请参阅 [OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration)
+
 开发人员的另一个常见要求是快速访问各种环境的日志文件。 将AEM作为云服务，创作和发布节点中不同节点的日志文件可通过云管理器（以可下载的文件形式或通过API）使用。
 
 由于代码和内容的明确分离，开发人员可以使用特定流程在部署过程中更新内容。 可变内容的典型用例有：
@@ -207,7 +211,7 @@ Web控制台（其中管理OSGI捆绑包及其关联配置，并且之前是AEM 
 
 >[!NOTE]
 >
->有关更多详细信息， [请从备份](/help/operations/backup.md)、索 [引和其](/help/operations/indexing.md)他维护任务开始 [](/help/operations/maintenance.md)。
+>有关更多详细信息，请参阅[备份](/help/operations/backup.md)、[索引](/help/operations/indexing.md)和[其他维护任务](/help/operations/maintenance.md)。
 
 将AEM作为云服务，这些操作将实现自动化，因此不再需要任何服务中断。
 
