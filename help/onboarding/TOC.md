@@ -1,8 +1,8 @@
 ---
 sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+translation-type: tm+mt
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
@@ -13,6 +13,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 + 先决条件 {#what-is-required}
    + [已授予的访问权限](what-is-required/access-rights-granted.md)
    + [添加用户和角色](what-is-required/add-users-roles.md)
+   + [基于角色的权限](what-is-required/role-based-permissions.md)
    + [源代码存储库](what-is-required/source-code-repository.md)
 + 在云中获取 AEM 的访问权限 {#getting-access}
    + [访问 Experience Manager 云服务](getting-access-to-aem-in-cloud/navigation.md)
@@ -24,3 +25,4 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
    + [用于数据保护和数据隐私法规的 AEM 已准备就绪](data-privacy-and-protection-readiness/aem-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM Sites 已准备就绪](data-privacy-and-protection-readiness/sites-readiness.md)
++ [工具控制台概述](tools-consoles.md)
