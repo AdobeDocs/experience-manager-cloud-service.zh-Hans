@@ -2,12 +2,12 @@
 title: 添加用户和角色——必需内容
 description: 添加用户和角色——必需内容
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# 添加用户和角色——必需内容 {#add-users-roles}
+# 添加用户和角色 {#add-users-roles}
 
 
 Cloud manager中的许多功 [!UICONTROL 能需要特定权限] 才能运行。 例如，仅允许某些用户为程序设置关键绩效指标(KPI)。 这些权限按逻辑分组为角色。
