@@ -664,9 +664,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
    >1. 在 `/apps.`
 
 
-1. 打开“ **搜索表单** ”控制台，然后选择要更新的配置。 例如，“站 **点管理搜索边栏”**。
-
-   然后，单击／点按编 **辑搜索表单图** 标。
+1. 打开“ **搜索表单** ”控制台，然后选择要更新的配置。 例如，“站 **点管理搜索边栏”**。 然后选择 **编辑**。
 
 1. 根据配置的不同，向配 **置中添加** “选 **项”或“选项** ”属性。
 1. 更新字段，尤其是：
@@ -685,11 +683,10 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
    ![选项谓词](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. 导航到相应的控制台(在本例中， **为站点**)，然后打开 **搜索边栏** 。 新定义的搜索表单以及各种选项将可见。 选择所需选项可查看搜索结果。
+1. 导航到相应的控制台(在本例中， **为站点**)，然后打开“搜 **索——筛选器** ”边栏。 新定义的搜索表单以及各种选项将可见。 选择所需选项可查看搜索结果。
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![使用的选项](assets/csf-options-usage.png)
+
 
 ## 用户权限 {#user-permissions}
 
