@@ -4,7 +4,7 @@ description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -61,7 +61,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
    >
    >“属性”页面的布 [!UICONTROL 局] ，以及可用的元数据属性取决于基础元数据架构。 要了解如何修改“属性”页的布 [!UICONTROL 局] ，请参阅元 [数据架构](/help/assets/metadata-schemas.md)。
 
-1. 要计划资产激活的特定日期／时间，请使用“开始时间”字段旁边的日 **[!UICONTROL 期选取器]** 。
+1. 要计划资产激活的特定日期/时间，请使用&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段旁边的日期选取器。
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -96,7 +96,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 资产特定副本的一些属性不会结转。 例如：
 
-* 相对路径、资产ID、创建日期和时间以及版本和版本历史记录。 其中一些属性由属性、 `dam:relativePath`、 `jcr:uuid`和 `jcr:created`表示 `cq:name`。
+* 资产ID、创建日期和时间以及版本和版本历史记录。 其中一些属性由属性、 `jcr:uuid`和 `jcr:created`表示 `cq:name`。
 
 * 每个资产及其每个演绎版的创建时间和引用路径都是唯一的。
 
@@ -187,13 +187,13 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
    **上传新再现**
 
-   Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
+   导航到资产的资产详细信息页面，然后点按／单击工具栏中的 **[!UICONTROL 添加演绎版]** ，以上传资产的新演绎版。
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. 不显示“上传演绎版”图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
+   >如果您从演绎版面板中选 **[!UICONTROL 择了演绎版]** ，工具栏会更改上下文并仅显示与演绎版相关的那些操作。 不显示“上传演绎版”图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
    您可以配置要在图像或视频资产的详细信息页面中显示的再现的尺寸。 根据您指定的维，AEM资产会显示具有精确或最接近的维度的再现。
 
@@ -241,7 +241,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ## 下载资产 {#download-assets}
 
-请参 [阅从AEM下载资产](/help/assets/download-assets-from-aem.md)。
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publish-assets}
 
@@ -253,7 +253,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 1. 导航到要发布的资产／文件夹所在的位置。
 
-1. 从资产卡 **[!UICONTROL 中选择发布]** ，或选择资产，然后点按／单击工具栏中的 **** 快速发布图标。
+1. 从资产卡中选择&#x200B;**[!UICONTROL 发布]**&#x200B;以进行快速操作，或选择资产，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 快速发布]**&#x200B;图标。
 1. 如果资产引用了其他资产，向导中便会列出这些引用。只显示自上次发布／取消发布以来未发布或已修改的引用。 选择要发布的引用。
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -313,7 +313,7 @@ CUG是限制对资产访问的额外方式。 您还可以为文件夹配置登�
 1. 发布文件夹，然后尝试从发布实例访问它。 将显示登录屏幕。
 1. 如果您是CUG成员，请输入您的安全凭据。 AEM对您进行身份验证后，将显示该文件夹。
 
-## Search assets {#search-assets}
+## 搜索资产 {#search-assets}
 
 搜索资产是数字资产管理系统使用的核心——无论是供创意人员进一步使用、供商业用户和营销人员对资产进行可靠管理还是供DAM管理员管理。
 
@@ -345,7 +345,7 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. 从列表中选择所需的选项。图像上会根据您选择的选项出现相应的裁剪区域。The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
+1. 从列表中选择所需的选项。图像上会根据您选择的选项显示裁剪区域。利用&#x200B;**手绘**&#x200B;选项，您可以不受纵横比限制裁剪图像。
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -354,7 +354,7 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
-1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
+1. 使用右 **上角的** “撤消”和 **** “重做”图标分别恢复到未裁剪的图像或保留裁剪的图像。
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -411,7 +411,7 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
    * 在选择资产或导航到资产页面后，从工具栏中
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. 在时间轴底部的“ **[!UICONTROL 注释]** ”框中添加注释。 或者，在图像上标出一个区域，然后在“添加注释”(Add Annotation **** )对话框中添加注释。
+1. 在时间轴底部的&#x200B;**[!UICONTROL 注释]**&#x200B;框中添加注释。或者，在图像上标出一个区域，然后在&#x200B;**[!UICONTROL 添加批注]**&#x200B;对话框中添加批注。
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -442,7 +442,7 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   在“注释颜色”框中指 **[!UICONTROL 定所需颜色]** ，然后单击／点按 **[!UICONTROL 接受]**。
+   在&#x200B;**[!UICONTROL 批注颜色]**&#x200B;框中指定所需颜色，然后单击/点按&#x200B;**[!UICONTROL 接受]**。
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -458,7 +458,7 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. 从时间轴 **[!UICONTROL 的“显示全部]** ”列表中，选择“ **[!UICONTROL 注释]** ”以根据注释筛选结果。
+1. 从时间线的&#x200B;**[!UICONTROL 显示全部]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 注释]**&#x200B;以根据注释过滤结果。
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -498,13 +498,13 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   您可以根据希望批注／状态显示在打印的PDF中的位置选择其他设置。 如果希望批注／状态显示在与打印资产不同的页面中，请选择“下 **[!UICONTROL 一页”]**。
+   您可以根据希望在打印的 PDF 中显示批注/状态的位置选择其他设置。如果希望批注/状态显示在与打印资产不同的页面中，请选择&#x200B;**[!UICONTROL 下一页]**。
 
    >[!NOTE]
    >
    >冗长的批注可能无法在PDF文件中正确呈现。 为获得最佳渲染效果，Adobe建议您将注释限制为50个字。
 
-1. 点按／单击 **[!UICONTROL 打印]**。 根据您在步骤2中选择的选项，生成的PDF会在指定位置显示注释／状态。 例如，如果您选择使用左上角设置打印批注和审阅状态 **** ，则生成的输出将类似于此处描述的PDF文件。
+1. 点按/单击&#x200B;**[!UICONTROL 打印]**。根据您在步骤 2 中选择的选项，生成的 PDF 会在指定位置显示批注/状态。例如，如果您选择使用&#x200B;**左上角**&#x200B;设置打印批注和审阅状态，则生成的输出将类似于此处描述的 PDF 文件。
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -566,7 +566,7 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
+1. 要为版本生成预览，请点按/单击&#x200B;**[!UICONTROL 预览版本]**。
 1. 要在资产UI中显示此版本，请选择还 **[!UICONTROL 原到此版本]**。
 1. 要比较两个版本，请转到资产的资产页面，然后点按／单击要与当前版本进行比较的版本。
 
@@ -591,7 +591,7 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. 在“开始 **[!UICONTROL 工作流]** ”对话框中，从列表中选择工作流模型。
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
