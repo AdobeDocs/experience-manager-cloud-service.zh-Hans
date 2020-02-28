@@ -3,7 +3,7 @@ title: 在Adobe Experience Manager Sites创作工作流程中使用连接的资�
 description: 在另一个Experience Manager Site部署中创建网页时，使用远程Adobe Experience Manager Assets部署中可用的资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
+source-git-commit: 8b638539dcaee3df8676176c22e1dd0c900b9b65
 
 ---
 
@@ -18,7 +18,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 
 在页面编辑器中编辑页面时，作者可以从其他AEM资产部署中无缝搜索、浏览和嵌入资产。 要执行AEM管理员操作，请将AEM Sites的本地部署与AEM Assets的其他（远程）部署进行一次性集成。
 
-对于站点作者，远程资源可以作为只读本地资源。 该功能支持一次无缝搜索和使用几个远程资产。 要使许多远程资产可以一次性用于本地部署，请考虑批量迁移这些资产。 请参阅 [资产迁移指南](/help/assets/assets-migration-guide.md)。
+对于站点作者，远程资源可以作为只读本地资源。 该功能支持一次无缝搜索和使用几个远程资产。 要使许多远程资源可以一次性部署到本地，请考虑批量迁移这些资源。 请参阅 [资产迁移指南](/help/assets/assets-migration-guide.md)。
 
 ### 先决条件和支持的部署 {#prerequisites}
 
@@ -35,9 +35,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 
 ### 支持的文件格式 {#mimetypes}
 
-作者可以在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索到的资产。 文档可以添加到组件 `Download` 中，图像可以添加到组件 `Image` 中。 作者还可以在扩展默认或组件的任何自定义AEM组件中添加远 `Download` 程资 `Image` 产。
-
-支持的格式列表包括：
+作者可以在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索到的资产。 文档可以添加到组件 `Download` 中，图像可以添加到组件 `Image` 中。 作者还可以在扩展默认或组件的任何自定义AEM组件中添加远 `Download` 程资 `Image` 产。 支持的格式列表包括：
 
 * **图像格式**:支持图像组件支持的 [图像格式](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) 。 不支持Dynamic Media组件。
 * **文档格式**:请参阅 [连接的资产支持的文档格式](file-format-support.md#supported-document-formats)。
