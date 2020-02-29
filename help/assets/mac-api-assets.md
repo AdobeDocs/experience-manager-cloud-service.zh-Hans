@@ -1,14 +1,14 @@
 ---
-title: 资产HTTP API
+title: 资产 HTTP API
 description: 了解Assets HTTP API的实施、数据模型和功能。 使用资产HTTP API可以围绕资产执行各种任务。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# 资产HTTP API {#assets-http-api}
+# 资产 HTTP API {#assets-http-api}
 
 ## 概述 {#overview}
 
@@ -19,7 +19,7 @@ source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
 1. 打开位于的API服务文档 `https://[hostname]:[port]/api.json`。
 1. 请按照以下链接的“资产”服务链 `https://[hostname]:[server]/api/assets.json`接：
 
-API响应是某些MIME类型的JSON文件，是所有MIME类型的响应代码。 JSON响应是可选的，可能不可用，例如PDF文件。 依赖响应代码进行进一步分析或操作。
+API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 JSON响应是可选的，可能不可用，例如PDF文件。 依赖响应代码进行进一步分析或操作。
 
 结束 [!UICONTROL 时间后]，资产及其演绎版不能通过资产Web界面或通过HTTP API使用。 如果开始时间是将来的， [!UICONTROL 或结束时间是过去的] ，则API会返回404 [!UICONTROL 错误消息] 。
 
