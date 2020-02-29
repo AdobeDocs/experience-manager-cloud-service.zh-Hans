@@ -3,7 +3,7 @@ title: 使用媒体处理程序和工作流处理资源
 description: 了解各种媒体处理程序以及如何在工作流中使用这些处理程序对资产执行任务。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ AEM具有一些用于处理资产的默认工作流。 要查看这些模型，�
 
 可以扩展现有工作流，并可以创建新工作流，以根据特定要求处理资产。
 
-以下示例演示如何增强 **[!UICONTROL AEM资产同步工作流]** ，以便为除PDF文档之外的所有资产生成子资产。
+以下示例演示如何增强 **[!UICONTROL AEM Assets 同步工作流]**，以便为除 PDF 文档外的所有资产生成子资产。
 
 ### 禁用／启用媒体处理程序 {#disabling-enabling-a-media-handler}
 
@@ -151,9 +151,9 @@ AEM具有一些用于处理资产的默认工作流。 要查看这些模型，�
 
 接口和类包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述了添加对特定MIME类型的支持的服务。 添加新的mime类型需要实现此接口。 该界面包含用于导入和导出特定文档、创建缩略图和提取元数据的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述添加对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、创建缩略图和提取元数据的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` class:此类用作所有其他资产处理函数实现的基础，并提供常用功能。
-* `com.day.cq.dam.core.AbstractSubAssetHandler` 类:
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class:
    * 该类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能以及常用功能。
    * 开始实施的最佳方式是从提供的抽象实现继承，该实现能够处理大多数事务并提供合理的默认行为：com.day.cq.dam.core.AbstractAssetHandler类。
    * 该类已经提供抽象服务描述符。 因此，如果您从此类继承并使用maven-sling-plugin，请确保将inherit标志设置为true。
@@ -162,7 +162,7 @@ AEM具有一些用于处理资产的默认工作流。 要查看这些模型，�
 
 * `extractMetadata()`:此方法提取所有可用的元数据。
 * `getThumbnailImage()`:此方法会从传递的资产中创建缩略图。
-* `getMimeTypes()`:此方法返回资产mime类型。
+* `getMimeTypes()`:此方法返回资产MIME类型。
 
 以下是示例模板：
 
@@ -170,7 +170,7 @@ AEM具有一些用于处理资产的默认工作流。 要查看这些模型，�
 
 接口和类包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述了添加对特定MIME类型的支持的服务。 添加新的mime类型需要实现此接口。 该界面包含用于导入和导出特定文档、创建缩略图和提取元数据的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述添加对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、创建缩略图和提取元数据的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` class:此类用作所有其他资产处理函数实现的基础，并提供常用功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:该类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能以及常用功能。
 
@@ -391,7 +391,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 该流 `CommandLineProcess` 程按列出顺序执行以下操作：
 
-* 根据特定的mime类型（如果指定）筛选文件。
+* 根据特定的MIME类型（如果指定）筛选文件。
 * 在承载AEM服务器的磁盘上创建一个临时目录。
 * 将原始文件流化到临时目录。
 * 执行由步骤的参数定义的命令。 该命令将在具有运行AEM的用户权限的临时目录中执行。
@@ -421,7 +421,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
    翻转后的图像会添加到目录中。
 
-然后，将命令行流程步骤添加到 **[!UICONTROL DAM更新资产工作流]** :
+然后，将命令行流程步骤添加到 **[!UICONTROL DAM 更新资产]**&#x200B;工作流：
 
 1. 转到“工作 **[!UICONTROL 流]** ”控制台。
 1. 在“模 **[!UICONTROL 型]** ”选项卡中，编辑 **[!UICONTROL DAM更新资产模型]** 。
@@ -441,7 +441,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 #### 配置CommandLineProcess进程步骤 {#configuring-the-commandlineprocess-process-step}
 
-本节介绍如何设置 **CommandLineProcess的Process** Arguments **（进程参数）**。
+本节介绍如何设置 **CommandLineProcess** 的&#x200B;**进程参数**。
 
 “进程参 **数** ”的值必须以逗号分隔，且不能以空格开头。
 
@@ -453,7 +453,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
   </tr>
   <tr>
    <td> mime:&lt;mime类型&gt;</td>
-   <td><p>可选参数。 如果资产的mime类型与其中一个参数相同，则会应用该进程。</p> <p>可以定义多种MIME类型。</p> </td>
+   <td><p>可选参数。 如果资产的MIME类型与其中一个参数的MIME类型相同，则会应用该过程。</p> <p>可以定义多种MIME类型。</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -461,7 +461,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
   </tr>
   <tr>
    <td> cmd:&lt;命令&gt;</td>
-   <td><p>定义将执行的命令。 语法取决于命令行工具。</p> <p>只能定义一个命令。</p> <p>以下变量可用于创建命令：<br/></p> <p><code>${filename}</code>:输入文件的名称，如original.jpg<br/><code>${file}</code>:输入文件的完整路径名，例如/tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>:输入文件的目录，例如/tmp/cqdam0816.tmp。<br/> <code>${basename}</code>:不带扩展名的输入文件的名称，例如原始文件<br/><code>${extension}</code>:输入文件的扩展名，例如jpg<br/></p></td>
+   <td><p>定义将执行的命令。 语法取决于命令行工具。</p> <p>只能定义一个命令。</p> <p>以下变量可用于创建命令：<br/></p> <p><code>${filename}</code>:输入文件的名称，例如“original.jpg”<br/><code>${file}</code>:输入文件的完整路径名，例如“/tmp/cqdam0816.tmp/original.jpg”<br/><code>${directory}</code>:目录，例如“/tmp/cqdam0816.tmp”。<br/> <code>${basename}</code>:不带扩展名的输入文件的名称，例如原始文件<br/><code>${extension}</code>:输入文件的扩展名，例如JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
