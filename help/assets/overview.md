@@ -1,14 +1,14 @@
 ---
-title: Assets as a Cloud service简介
+title: Assets 云服务简介
 description: 作为云服务的资产的新增功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# 将资产作为云服务引入 {#assets-cloud-service-introduction}
+# Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ Adobe Experience Manager Assets作为云服务，为企业提供云本机PaaS解
 
 企业需要为多设备、跨地理位置和多语言使用案例支持各种文件格式和内容分辨率。 资产处理和存储需求需要资源和功能，这些资源和功能可能会超出传统解决方案的负担。 有时，资产处理的技术限制无法产生预期的结果，有时存储成本会阻碍利润率。
 
-首先，了解云本 [机服务的优势](#solution-benefits)。 查看对AEM作为云服 [务进行的显着更改](/help/release-notes/aem-cloud-changes.md) ，这些更改也会影响资产，随后会对资产进行显 [着更改](/help/assets/assets-cloud-changes.md)。
+首先，了解云本 [机服务的优势](#solution-benefits)。 查看对AEM作为云服 [务进行的显着更改](/help/release-notes/aem-cloud-changes.md) ，这些更改也会影响Experience Manager资产，随后会对资产进行显 [着更改](/help/assets/assets-cloud-changes.md)。
 
 阅读以了解新 [资产功能的详细信息](#whats-new-assets) ，以及 [已知问题](/help/release-notes/known-issues.md)。 查看已弃用 [或已删除功能的列表](/help/release-notes/deprecated-removed-features.md) ，了解此版本中已删除的功能，并查看此即将 [推出的功能列表](/help/release-notes/known-issues.md#upcoming-assets-capabilities) ，以了解即将推出的功能。 最后，借助此词汇表了解AEM术 [语](/help/overview/terminology.md)。
 
