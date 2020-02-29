@@ -3,7 +3,7 @@ title: 元数据架构参考
 description: '了解用于描述资产元数据的标准惯例，包括都柏林核心、IPTC和其他元数据架构。 '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -48,7 +48,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
   </tr>
   <tr>
    <td>format</td> 
-   <td>资产的文件格式、物理介质或尺寸。AEM uses <code>dc:format</code> to denote the mime-type of the asset.<br /> </td> 
+   <td>资产的文件格式、物理介质或尺寸。AEM用 <code>dc:format</code> 于表示资产的MIME类型。<br /> </td> 
   </tr>
   <tr>
    <td>标识符</td> 
@@ -79,7 +79,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
    <td>资产的主题。<br /> </td> 
   </tr>
   <tr>
-   <td>职位</td> 
+   <td>页面</td> 
    <td>资产的名称。</td> 
   </tr>
   <tr>
