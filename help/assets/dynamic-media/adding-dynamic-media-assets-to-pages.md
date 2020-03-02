@@ -2,16 +2,16 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何在AEM中将Dynamic media组件添加到页面
 translation-type: tm+mt
-source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
+source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ---
 
 
 # 将 Dynamic Media 资产添加到页面{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. 为此，可进入布局模式并启用Dynamic Media组件。 然后，您可以将这些组件添加到页面，并在这些组件中添加资产。Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
+要将Dynamic Media功能添加到您在网站上使用的资产中，您可以直接在页面上添加 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360 Media全景组件。 为此，可进入布局模式并启用Dynamic Media组件。 然后，您可以将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
 
-如果您使用AEM作为WCM，则可以直接将Dynamic media资产添加到页面。 如果您为WCM使用第三方，请链接 [或嵌](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[入资产](/help/assets/dynamic-media/embed-code.md) 。 有关响应式第三方网站，请参阅将 [优化的图像交付到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用 AEM 作为 WCM，则可以直接将 Dynamic Media 资产添加到页面。如果您为 WCM 使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[嵌入](/help/assets/dynamic-media/embed-code.md)资产。有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ To add the Dynamic Media functionality to assets you use on your websites, you c
 
 可用的Dynamic media组件包括：
 
-* **[!UICONTROL Dynamic Media]** —— 用于图像、视频、电子目录和旋转集等资产。
+* **[!UICONTROL Dynamic Media]** - 用于图像、视频、电子目录和旋转集等资产。
 * **[!UICONTROL 交互式媒体]** -用于任何交互式资产，如交互式视频、交互式图像或传送集。
 * **[!UICONTROL 全景媒体]** -用于全景图像或全景VR图像资源。
 * **[!UICONTROL 视频360媒体]** -用于360视频和360 VR视频资源。
@@ -113,7 +113,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 >[!NOTE]
 >
->默认情况下，Dynamic Media 图像组件为自适应组件。如果您希望该组件具有固定大小，请在该组件的&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中使用&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;进行设置。
+>默认情况下，Dynamic media图像组件是自适应的。 如果要使其变为固定大小，请在“高级”选项卡的组件中设置 **[!UICONTROL 它]** ，并使用“宽度”和“高 **** 度” ****。
 
 * **[!UICONTROL 查看器预设]**-从下拉菜单中选择现有的查看器预设。 如果未显示您要查找的查看器预设，则可能需要将其显示出来。请参阅管理查看器预设。如果您正在使用图像预设，则无法选择查看器预设，反之亦然。
 
@@ -192,7 +192,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 >[!NOTE]
 >
->默认情况下，Dynamic Media 图像组件为自适应组件。如果您希望该组件具有固定大小，请在该组件的&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中使用&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;进行设置。
+>默认情况下，Dynamic media图像组件是自适应的。 如果要使其变为固定大小，请在“高级”选项卡的组件中设置 **[!UICONTROL 它]** ，并使用“宽度”和“高 **** 度” ****。
 
 * **[!UICONTROL 图像修饰符]**-可以通过提供其他图像命令来应用图像效果。 图像预设和图像服务命令参考中介绍了这些设置。
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL 启用长宽比匹配]**-在选择智能裁剪再现时匹配原始图像的长宽比。
+* **[!UICONTROL 启用长宽比匹配]**-选择此选项可让Dynamic Media挑选长宽比与原始图像的长宽比最匹配的智能裁剪再现。
 
 * **[!UICONTROL 标题]**-更改智能裁剪图像的标题。
 
@@ -261,7 +261,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 * 宽高比为2:1。
 * 使用关键字 `equirectangular` 或(`spherical` + `panorama`)或(`spherical` + `panoramic`)标记。 请参阅 [使用标记](/help/sites-cloud/authoring/features/tags.md)。
 
-长宽比和关键字条件都适用于资产详细信息页面和全景媒体 **** WCM组件的全景资产。
+纵横比和关键字条件都适用于资产详细信息页面和&#x200B;**[!UICONTROL 全景媒体]** WCM 组件的全景资产。
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 >* 每个实例都使用相同的资产类型。
 >
 >
-请注意，不支持为该页面上的每个 **[!UICONTROL Panoramic Media]** 组件分配不同的查看器预设。
+请注意，不支持为该页面上的每个&#x200B;**[!UICONTROL 全景媒体]**&#x200B;组件分配不同的查看器预设。
 >
 >但是，对于在页面中使用相同类型资产的所有全景媒体组件，您可以使用相同的查看器预设。
 
