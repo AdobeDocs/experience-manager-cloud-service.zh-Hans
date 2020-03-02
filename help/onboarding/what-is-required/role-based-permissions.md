@@ -2,7 +2,7 @@
 title: 基于角色的权限
 description: 基于角色的权限
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 | 权限 | 描述 | 企业所有者 | 部署管理器 | 计划经理 | 开发人员 |
 |--- |--- |--- |--- |--- |--- |
-| 创建租户 | 创建新租户。 |  |  |  |  |
-| 更新租户 | 更新租户。 |  |  |  |  |
 | 添加计划 | 添加新程序。 | x |  |  |  |
 | 创建环境 | 创建Prod+Stage、Dev、Playground环境。 | x | x |  |  |
-| 配置环境变量 | 配置环境变量和机密。 |  | x |  | x |
-| 添加或删除自定义域名、上传或更新SSL证书 | 添加／删除自定义域名、上传／更新SSL证书。 | x | x |  |  |
 | 更新环境 | 更新Prod+Stage、Dev、Playground环境。 | x | x |  |  |
 | 删除环境 | 删除非生产、开发、运动场环境。 | x | x |  |  |
 | 删除环境 | 删除Prod+Stage环境。 |  |  |  |  |
