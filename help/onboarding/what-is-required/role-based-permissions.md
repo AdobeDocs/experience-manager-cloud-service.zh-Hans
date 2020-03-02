@@ -2,7 +2,7 @@
 title: 基于角色的权限
 description: 基于角色的权限
 translation-type: tm+mt
-source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
+source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 ---
 
@@ -26,9 +26,7 @@ source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 | 更新环境 | 更新Prod+Stage、Dev、Playground环境。 | x | x |  |  |
 | 删除环境 | 删除非生产、开发、运动场环境。 | x | x |  |  |
 | 删除环境 | 删除Prod+Stage环境。 |  |  |  |  |
-| Hibernate环境 | Hibernate Non-prod、Dev、Playground Environments。 | x | x |  |  |
 | 计划设置 | 配置计划（包括KPI）。 | x |  |  |  |
-| 计划设置 | 配置缩放策略(常规：配置最大层数和按需水平扩展：选择加入)。 | x |  |  |  |
 | 计划设置 | Git提交访问。 |  | x |  | x |
 | 管线设置 | 设置或编辑管道。 |  | x |  |  |
 | 管道执行 | 启动管道。 | x | x |  |  |
@@ -36,10 +34,7 @@ source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 | 管道执行 | 提供GoLive Approval。 | x | x | x |  |
 | 管道执行 | 计划生产部署。 | x | x | x |  |
 | 管道执行 | 恢复制作管道。 |  |  |  |  |
-| 选择加入（或退出）供应 | 从“计划设置”屏幕选择加入按需水平供应。 配置可在PROD和非PROD环境上水平缩小的最大“允许”P-D段。 | x |  |  |  |
 | 管理环境 | 从“管理环境”屏幕添加Publish-Dispatcher区段。 | x | x |  |  |  |
-| 产品更新 | AEM更新卡可见，并带用户进入更新向导。 | x | x | x | x |
-| 产品更新 | 产品更新向导可在上执行操作。 | x | x |  |  |
 | 推送更新 | 启动推送更新管道。 |  |  |  |  |
 | 生成个人访问令牌 | 生成个人访问令牌。 |  | x |  | x |
 
