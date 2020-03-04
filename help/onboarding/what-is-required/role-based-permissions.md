@@ -2,7 +2,7 @@
 title: 基于角色的权限
 description: 基于角色的权限
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 | 管道执行 | 恢复制作管道。 |  |  |  |  |
 | 管理环境 | 从“管理环境”屏幕添加Publish-Dispatcher区段。 | x | x |  |  |  |
 | 推送更新 | 启动推送更新管道。 |  |  |  |  |
-| 生成个人访问令牌 | 生成个人访问令牌。 |  | x |  | x |
+| 生成个人访问令牌 | 访问Git。 |  | x |  | x |
 
