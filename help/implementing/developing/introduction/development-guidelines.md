@@ -1,13 +1,39 @@
 ---
-title: AEM作为云服务开发准则
+title: AEM 云服务开发准则
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
+source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
 
 ---
 
 
-# AEM作为云服务开发准则 {#aem-as-a-cloud-service-development-guidelines}
+# AEM 云服务开发准则 {#aem-as-a-cloud-service-development-guidelines}
+
+作为云服务在AEM中运行的代码必须知道它始终在群集中运行。 这意味着始终有多个实例在运行。 该代码必须具有弹性，特别是当实例可能在任何时间点停止时。
+
+在将AEM作为云服务进行更新期间，将会有新旧代码并行运行的实例。 因此，旧代码不能与新代码创建的内容断开，而新代码必须能够处理旧内容。
+<!--
+
+>[!NOTE]
+> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
+
+-->
+
+如果需要在群集中识别主设备，则可以使用Apache Sling Discovery API检测主设备。
+
+## 内存中的状态 {#state-in-memory}
+
+状态不得保留在内存中，而应保留在存储库中。 否则，如果实例停止，则此状态可能会丢失。
+
+## 文件系统状态 {#state-on-the-filesystem}
+
+在AEM中，实例的文件系统不应用作云服务。 盘片是短暂的，当实例被循环使用时，盘片将被丢弃。 对与处理单个请求相关的临时存储使用文件系统是可能的，但不应滥用于大文件。 这是因为它可能会对资源使用配额产生负面影响，并且会遇到磁盘限制。
+
+例如，不支持文件系统使用，发布层应确保需要持续保留的任何数据都被发送到外部服务以用于长期存储。
+
+## 观察 {#observation}
+
+类似地，由于异步发生的一切都像在观测事件上行动一样，它无法保证在本地执行，因此必须谨慎使用。 对于JCR事件和Sling资源事件，情况均是如此。 在发生变化时，该实例可被取下并由另一实例替换。 拓扑中当时处于活动状态的其他实例将能够对该事件做出响应。 但是，在这种情况下，这将不是一个地方性事件，如果领导人选举在进行中，甚至可能没有活跃的领导人。
 
 ## 后台任务和长时间运行的作业 {#background-tasks-and-long-running-jobs}
 
@@ -23,13 +49,35 @@ Sling Commons Scheduler不应用于调度，因为执行无法保证。 只是�
 
 强烈建议任何传出HTTP连接设置合理的连接和读取超时。 对于不应用这些超时的代码，在AEM上作为云服务运行的AEM实例将强制执行全局超时。 这些超时值对于连接调用为10秒，对于下列常用Java库使用的连接为60秒：
 
-Adobe建议使用提供的 [Apache httpComponents Client 4.x库进行HTTP连接](https://hc.apache.org/httpcomponents-client-ga/) 。
+Adobe建议使用提供的 [Apache HttpComponents Client 4.x库进行HTTP连接](https://hc.apache.org/httpcomponents-client-ga/) 。
 
 已知有效但可能需要自行提供依赖性的替代方案包括：
 
 * [java.net.URL和](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) /或java.net.UR [LConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) （由AEM提供）
-* [Apache Commons httpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建议使用，因为它已过时并由4.x版取代）
-* [OK Http](OK Http（AEM未提供）)（AEM未提供）
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建议使用，因为它已过时并由4.x版取代）
+* [确定Http](https://square.github.io/okhttp/) （AEM未提供）
+
+## 无经典UI自定义 {#no-classic-ui-customizations}
+
+AEM作为云服务，仅支持第三方客户代码的触屏UI。 经典UI不可用于自定义。
+
+## 避免本机二进制文件 {#avoid-native-binaries}
+
+代码在运行时无法下载二进制文件，也无法修改它们。 例如，它将无法解压缩或解压 `jar` 缩文 `tar` 件。
+
+## AEM作为云服务无流二进制文件 {#no-streaming-binaries}
+
+应通过CDN访问二进制文件，CDN将在核心AEM服务之外提供二进制文件。
+
+例如，请勿使用，这 `asset.getOriginal().getStream()`会触发将二进制文件下载到AEM服务的短暂磁盘上。
+
+## 无反向复制代理 {#no-reverse-replication-agents}
+
+AEM中不支持将“发布到作者”反向复制为云服务。 如果需要此类策略，您可以使用在Publish实例群（可能还有作者群集）之间共享的外部持久存储。
+
+## 可能需要移植转发复制代理 {#forward-replication-agents}
+
+内容通过pub-sub机制从“作者”复制到“发布”。 不支持自定义复制代理。
 
 ## 监视和调试 {#monitoring-and-debugging}
 
@@ -37,22 +85,22 @@ Adobe建议使用提供的 [Apache httpComponents Client 4.x库进行HTTP连接]
 
 * 对于本地开发，日志条目将写入本地文件
    * `./crx-quickstart/logs`
-* 在云环境中，开发人员可以通过Cloud manager下载日志，或使用命令行工具跟踪日志。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* 要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后完全重新部署。 由于这不是即时的，因此请务必小心在生产环境中启用冗余日志，这些生产环境会收到大量流量。 将来，可能会有一些机制来更快速地更改日志级别。
+* 在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+* 要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后完全重新部署。 由于这不是即时的，因此请务必小心在收到大量流量的生产环境中启用详细日志。 将来，可能会有一些机制来更快速地更改日志级别。
 
 ### 线程转储 {#thread-dumps}
 
 云环境中的线程转储会持续收集，但此时无法以自助方式下载。 同时，如果调试问题时需要线程转储，请与AEM支持部门联系，指定确切的时间窗口。
 
-### CRX/DE Lite和系统控制台 {#crxde-lite-and-system-console}
+## CRX/DE Lite和系统控制台 {#crxde-lite-and-system-console}
 
-## 本地开发 {#local-development}
+### 本地开发 {#local-development}
 
-对于本地开发，开发人员可以完全访问CRXDE Lite(`/crx/de`)和AEM web控制台(`/system/console`)。
+对于本地开发，开发人员可以完全访问CRXDE Lite(`/crx/de`)和AEM Web控制台(`/system/console`)。
 
 请注意，在本地开发（使用云就绪快速入门）中， `/apps``/libs` 可以直接写入，这与那些顶级文件夹不可变的云环境不同。
 
-## AEM作为云服务开发工具 {#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
 客户可以在开发环境中访问CRXDE lite，但不能在舞台或生产环境中访问。 不可变的存储库(`/libs`, `/apps`)无法在运行时写入，因此尝试写入将导致错误。
 
@@ -82,10 +130,10 @@ Adobe建议使用提供的 [Apache httpComponents Client 4.x库进行HTTP连接]
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-**AEM Staging和Production Service**
+### AEM Staging和Production Service {#aem-staging-and-production-service}
 
 客户将无权访问用于暂存和生产环境的开发人员工具集。
 
-### 诊断 {#diagnostics}
+### 性能监控 {#performance-monitoring}
 
-系统控制台可用于开发环境。 但是，暂存和生产的诊断转储不可用。
+Adobe监控应用程序性能并采取措施在出现恶化时予以解决。 目前，无法查看应用程序指标。
