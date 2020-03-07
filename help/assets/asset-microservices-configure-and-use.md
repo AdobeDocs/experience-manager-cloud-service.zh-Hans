@@ -155,7 +155,7 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 
 应根据需要添加处理步骤。 您可以使用任何支持的现成步骤以及任何自定义实现的工作流步骤。
 
-每个后处理工作流的最后一步必须是 `DAM Update Asset Workflow Completed Process`。 这可确保资产正确标记为“已完成处理”。
+每个后处理工作流程的最后一步必须是 `DAM Update Asset Workflow Completed Process`。 这可确保资产正确标记为“已完成处理”。
 
 ### 配置后处理工作流执行
 
