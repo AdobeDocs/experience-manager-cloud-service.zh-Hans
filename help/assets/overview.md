@@ -24,7 +24,7 @@ Adobe Experience Manager Assets作为云服务，为企业提供云本机PaaS解
 
 ## 解决方案优势 {#solution-benefits}
 
-以下是作为云服务的资产的主要优势。 要了解更多信息，请 [参阅Experience manager的云服务概述](/help/overview/introduction.md)。
+以下是作为云服务的资产的主要优势。 要了解更多信息，请 [参阅Experience Manager的云服务概述](/help/overview/introduction.md)。
 
 * **用于资产处理的现代云服务**:新的资产微型服务是一项基于云、可伸缩、可靠且无障碍的资产处理服务。
 * **高度可扩展**:跨所有类型的部署实现灵活的可伸缩性。 按需随时可用的几乎不受限制的资源。 与传统系统相比，节省了过度设计的成本。
