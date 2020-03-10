@@ -1,7 +1,7 @@
 ---
 title: 创建和组织页面
-description: 如何使用AEM创建和组织页面
-translation-type: tm+mt
+description: 如何使用 AEM 创建和组织页面
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 创建和组织页面 {#creating-and-organizing-pages}
 
-This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/fundamentals/editing-content.md) on those pages.
+本文档介绍如何使用 Adobe Experience Manager 云服务创建和管理页面，以便您随后能够在这些页面上[创建内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
 
 >[!NOTE]
 >
->您的帐户需要相应的访问权限]和权限才能对页面执行操作，如创建、复制、移动、编辑和删除。
+>要在页面上执行创建、复制、移动、编辑和删除等操作，您的帐户需要拥有适当的访问权利和权限。
 >
 >如果您遇到任何问题，我们建议您与系统管理员联系。
 
@@ -34,9 +34,9 @@ This document describes how to create and manage pages with Adobe Experience Man
 
 您还可以使用[文件夹](#creating-a-new-folder)来帮助组织内容。
 
-可以将网站的结构视为包含内容页面的树。 这些内容页面的名称用于构成URL，而查看页面内容时会显示标题。
+网站的结构可被认为是保留您的内容页面的树。这些内容页面的名称用于组成 URL，而标题则会在查看页面内容时显示出来。
 
-下面显示了 [WKND Tutorial站点的示例](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，其中访问了一篇关于滑板( `la-skateparks`)的文章：
+以下显示了 [WKND 教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)网站上的一个示例，该网站上有一篇介绍滑板场 (`la-skateparks`) 的文章：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -57,7 +57,7 @@ This document describes how to create and manage pages with Adobe Experience Man
    /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and perform actions on the pages. 您还可以创建新站点和[新页面](#creating-a-new-page)。
+此结构可以从&#x200B;**站点**&#x200B;控制台中查看，您可以在此控制台中[导航浏览网站的各个页面](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)，并对页面执行一些操作。您还可以创建新站点和[新页面](#creating-a-new-page)。
 
 无论在什么位置，您都可以在标题栏的痕迹导航中看到上级分支：
 
@@ -67,7 +67,7 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 
 在创建新页面时，需填写以下两个关键字段：
 
-* **[标题](#title)**:
+* **[标题](#title)**：
 
    * 它会在控制台中向用户显示并在编辑中的页面内容顶部显示。
    * 此字段为必填字段。
@@ -86,31 +86,31 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 
 >[!TIP]
 >
->在定义页面名称时，一个好的经验法则是保持页面名称简短，但尽可能表达到位且容易记忆，使读者容易理解。See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
+>在定义页面名称时，一个好的经验法则是保持页面名称简短，但尽可能表达到位且容易记忆，使读者容易理解。请参阅针对 `title` 元素的 [W3C 风格指南](https://www.w3.org/Provider/Style/TITLE.html)，以获取更多信息。
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-When creating a new page, AEM will validate the page name according to the conventions imposed by AEM and the JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+创建新页面时，AEM 将依据 AEM 和 JCR 实行的惯例来验证页面名称。<!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
 
 允许使用的字符最少包括：
 
-* `a` 穿透 `z`
-* `A` 穿透 `Z`
-* `0` 穿透 `9`
-* `_` （下划线）
-* `-` （连字符／减号）
+* `a` 至 `z`
+* `A` 至 `Z`
+* `0` 至 `9`
+* `_`（下划线）
+* `-`（连字符/减号）
 
-Full details of all characters allowed can be found in the naming conventions. <!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+有关允许使用的所有字符的完整详细信息可以在命名惯例中找到。<!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
 
 >[!NOTE]
 >
->页面名称限制为150个字符。
+>页面名称长度限制为 150 个字符。
 
 #### 标题 {#title}
 
 如果您在创建新页面时只提供一个页面&#x200B;**标题**，AEM 将从此字符串派生页面&#x200B;**名称**，并依据 AEM 和 JCR 实行的惯例验证此名称。<!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
 
-A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. 例如：
+虽然将接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称会将无效的字符替换掉。例如：
 
 | 标题 | 派生的名称 |
 |---|---|
@@ -119,7 +119,7 @@ A **Title** field containing invalid characters will be accepted, but the name d
 
 #### 名称 {#name}
 
-如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。当AEM检测到无效字符时，该字段将高亮显示。 <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。当 AEM 检测到无效字符时，该字段将突出显示。<!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
 
 ![输入无效页面名称的示例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -155,7 +155,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 ### 组件 {#components}
 
-组件是AEM提供的元素，以便您能够添加特定类型的内容。AEM附带一系列现成组件，它们提供了全面的功能。这些包括：
+组件是 AEM 提供的元素，旨在使您可以添加特定类型的内容。AEM 附带一系列功能完备的现成组件。这些组件包括：
 
 * 文本
 * 图像
@@ -175,7 +175,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 除非提前为您创建了所有页面，否则必须先创建页面，然后才能开始创建内容：
 
-1. Open the Sites console (for example, `https://<host>:<port>/sites.html/content`.
+1. 打开“站点”控制台（例如，`https://<host>:<port>/sites.html/content`）。
 1. 导航到要创建新页面的位置。
 1. 使用工具栏中的&#x200B;**创建**&#x200B;打开下拉选择器，然后从列表中选择&#x200B;**页**：
 
@@ -183,7 +183,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 1. 在向导的第一步中，您可以执行以下操作之一：
 
-   * 选择要用于创建新页面的模板，然后单击/点按“**下一步**”以继续。
+   * 选择要用于创建新页面的模板，然后单击/点按&#x200B;**下一步**&#x200B;以继续。
 
    * 单击/点按&#x200B;**取消**&#x200B;可中止该过程。
    ![为新页面选择模板](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
@@ -195,13 +195,13 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    * 使用&#x200B;**返回**&#x200B;以返回到模板选择步骤。
    关键字段为：
 
-   * **标题**:
+   * **标题**：
 
       * 此字段将显示给用户，是必填字段。
    * **名称**：
 
       * 用于生成 URI。如果未指定，名称会从标题派生。
-      * If you supply a page **Name** when creating a new page, AEM will validate the name according to the conventions imposed by AEM and JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * 如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。<!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。当 AEM 检测到无效字符时，此字段将会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
    >[!TIP]
    >
@@ -225,11 +225,11 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 >[!CAUTION]
 >
->Once a page has been created its template cannot be changed - unless you [create a launch with a new template](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), though this will lose any existing content.
+>创建页面后，无法更改其模板 - 除非[使用新模板创建启动项](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template)，不过这样会丢失任何现有的内容。
 
 ### 打开页面进行编辑 {#opening-a-page-for-editing}
 
-在创建页面或导航到现有页面（在控制台中）后，可以打开该页面进行编辑：
+创建页面或（在控制台中）导航到现有页面后，可以打开页面以对其进行编辑：
 
 1. 打开&#x200B;**站点**&#x200B;控制台。
 1. 导航直到您找到要编辑的页面为止。
@@ -237,7 +237,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
    * [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)和工具栏
-   And then select the **Edit** icon:
+   然后，选择&#x200B;**编辑**&#x200B;图标：
 
    ![编辑按钮](/help/sites-cloud/authoring/assets/edit.png)
 
@@ -249,7 +249,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 ### 复制和粘贴页面 {#copying-and-pasting-a-page}
 
-您可以将页面及其所有子页面复制到新位置：
+您可以将页面及其所有子页面复制到一个新位置：
 
 1. 在&#x200B;**站点**&#x200B;控制台中，导航直到您找到要复制的页面为止。
 1. 通过以下方式选择您的页面：
@@ -267,21 +267,21 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 1. 导航到页面的新副本所在的位置。
 1. 使用&#x200B;**粘贴**&#x200B;页面图标：
 
-   ![粘贴按钮](/help/sites-cloud/authoring/assets/paste.png)
+   ![“粘贴”按钮](/help/sites-cloud/authoring/assets/paste.png)
 
-   将在此位置创建原始页面和任何子页面的副本。
+   将在此位置创建原始页面及其所有子页面的副本。
 
    >[!NOTE]
    >
-   >如果您将页面复制到某个位置，而该位置已经存在名称与原始名称相同的页面，则系统将通过附加一个编号来自动生成该名称的变体。例如，如 `beach` 果已存在名称为新页 `beach` 面，则将变 `beach1`为
+   >如果您将页面复制到某个位置，而该位置已经存在名称与原始名称相同的页面，则系统将通过附加一个编号来自动生成该名称的变体。例如，如果 `beach` 已存在，则名称为 `beach` 的新页面将变为 `beach1`。
 
 ### 移动或重命名页面 {#moving-or-renaming-a-page}
 
 移动或重命名页面的过程基本相同，都由同一个向导来处理。通过此向导，您可以：
 
-* 重命名页面而不移动它
-* 移动页面但不重命名页面
-* 同时移动和重命名
+* 重命名页面而不移动页面
+* 移动页面而不重命名页面
+* 同时移动和重命名页面
 
 AEM 还有一项功能是允许您对引用被重命名页面或被移动页面的所有内部链接进行更新。此操作非常灵活，可以一个页面一个页面地执行。
 
@@ -292,13 +292,13 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)和工具栏
    然后，选择&#x200B;**移动**&#x200B;页面图标：
 
-   ![移动按钮](/help/sites-cloud/authoring/assets/move.png)
+   ![“移动”按钮](/help/sites-cloud/authoring/assets/move.png)
 
    此操作将打开移动页面向导。
 
 1. 在向导的&#x200B;**重命名**&#x200B;阶段，您可以执行以下任一操作：
 
-   * 指定移动页面后您希望页面使用的名称，然后单击/点按“**下一步**”以继续。
+   * 指定移动页面后您希望页面使用的名称，然后单击/点按&#x200B;**下一步**&#x200B;以继续。
    * 单击/点按&#x200B;**取消**&#x200B;可中止该过程。
    ![移动和重命名页面](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
@@ -306,7 +306,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
    >[!NOTE]
    >
-   >如果您将页面移动到某个位置，而该位置已经存在具有相同名称的页面，则系统将通过附加一个编号来自动生成该名称的变体。例如，如 `beach` 果已存在名称为新页 `beach` 面，则将变 `beach1`为
+   >如果您将页面移动到某个位置，而该位置已经存在具有相同名称的页面，则系统将通过附加一个编号来自动生成该名称的变体。例如，如果 `beach` 已存在，则名称为 `beach` 的新页面将变为 `beach1`。
 
 1. 在向导的&#x200B;**选择目标**&#x200B;阶段，您可以执行以下任一操作：
 
@@ -323,7 +323,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
    >[!NOTE]
    >
-   >如果您将页面移动到某个位置，而该位置已经存在具有相同名称的页面，则系统将通过附加一个编号来自动生成该名称的变体。例如，如果 `winter` 已存在， `winter` 则将变为 `winter1`。
+   >如果您将页面移动到某个位置，而该位置已经存在具有相同名称的页面，则系统将通过附加一个编号来自动生成该名称的变体。例如，如果 `winter` 已存在，则 `winter` 将变为 `winter1`。
 
 1. 如果页面已链接、已引用或者已发布，则详细信息将列出在&#x200B;**调整/重新发布**&#x200B;步骤中。
 
@@ -339,7 +339,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 >[!NOTE]
 >
->如果页面已经发布，则移动页面会自动将其取消发布。By default, it will be republished when the move is complete, but this can changed by un-checking the **Republish** field in the **Adjust/Republish** step.
+>如果页面已经发布，则移动页面会自动将其取消发布。默认情况下，页面将在移动完成后重新发布，但通过取消选中&#x200B;**调整/重新发布**&#x200B;步骤中的&#x200B;**重新发布**&#x200B;字段，可以更改这一行为。
 
 >[!NOTE]
 >
@@ -351,7 +351,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 >[!NOTE]
 >
->页面只能移动到允许使用该页面所基于的模板的位置。有关详细信息，请参阅模板可用性。
+>页面只能移动到允许使用该页面所基于的模板的位置。请参阅“模板可用性”以了解更多信息。
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
@@ -377,13 +377,14 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 >[!NOTE]
 >
->如果页面已发布，则在删除之前会自动取消发布该页面。
+>如果页面已经发布，则在删除前会自动将其取消发布。
 
 ### 锁定页面 {#locking-a-page}
 
 您可以在控制台中或者在编辑单个页面时[锁定/解锁页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)。关于页面是否已被锁定的信息也会显示在这两个位置。
 
-![“锁定”按钮](/help/sites-cloud/authoring/assets/lock.png)![“解锁”按钮](/help/sites-cloud/authoring/assets/unlock.png)
+![“锁定”按钮](/help/sites-cloud/authoring/assets/lock.png)
+![“解锁”按钮](/help/sites-cloud/authoring/assets/unlock.png)
 
 ### 创建新文件夹 {#creating-a-new-folder}
 
@@ -404,6 +405,6 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 >[!CAUTION]
 >
 >* 只有在&#x200B;**站点**&#x200B;下或其他文件夹下才能直接创建文件夹。不能在页面下创建文件夹。
->* 可以对文件夹执行移动、复制、粘贴、删除、发布、取消发布和查看／编辑属性的标准操作。
+>* 可以对文件夹执行移动、复制、粘贴、删除、发布、取消发布和查看/编辑属性等标准操作。
 >* 无法在 Live Copy 中选择文件夹。
 
