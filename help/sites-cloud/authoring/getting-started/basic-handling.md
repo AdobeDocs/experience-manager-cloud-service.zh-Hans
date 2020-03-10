@@ -1,7 +1,7 @@
 ---
 title: 基本操作
 description: 轻松自如地导航 AEM 及其基本用法
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 基本操作 {#basic-handling}
 
-本文档旨在概述使用AEM创作环境时的基本操作。 它使用&#x200B;**站点**&#x200B;控制台作为基础。
+此文档旨在概述使用 AEM 创作环境时的基本操作。它使用&#x200B;**站点**&#x200B;控制台作为基础。
 
 >[!NOTE]
 >
@@ -19,13 +19,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 触屏优化 UI {#a-touch-enabled-ui}
 
-AEM的用户界面已启用触控功能。 触屏界面允许您使用触屏，通过点按、触摸并按住及轻扫之类的手势与软件进行交互。由于AEM UI是触屏优化，因此您可以在手机或平板电脑等触控设备上使用触控手势。 但是，传统桌面设备上的鼠标操作也可用，让您可以灵活地选择如何创作内容。
+AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，通过点按、触摸并按住及轻扫之类的手势与软件进行交互。由于 AEM UI 支持触控，因此您可以在手机或平板电脑等触控设备上使用触控手势。但是，您也可以使用传统桌面设备上的鼠标操作，灵活地选择创作内容的方式。
 
 ## 首要步骤 {#first-steps}
 
 登录后，您将立即转到[“导航”面板](#navigation-panel)。选择其中一个选项会打开相应的控制台。
 
-![导航面板](/help/sites-cloud/authoring/assets/navigation.png)
+![“导航”面板](/help/sites-cloud/authoring/assets/navigation.png)
 
 为了使您更好地了解 AEM 的基本用法，本文档基于&#x200B;**站点**&#x200B;控制台进行了介绍。请单击或点按&#x200B;**站点**&#x200B;以开始操作。
 
@@ -35,21 +35,21 @@ AEM的用户界面已启用触控功能。 触屏界面允许您使用触屏，�
 
 ![导航教程](/help/sites-cloud/authoring/assets/tutorial.png)
 
-单击或点按&#x200B;**下一步**&#x200B;以前进至概述的下一个页面。Click or tap **Close** or click or tap outside of the overview dialog to close.
+单击或点按&#x200B;**下一步**&#x200B;以前进至概述的下一个页面。单击或点按&#x200B;**关闭**，或者单击或点按概述对话框外部可将其关闭。
 
-The overview will restart the next time you access a console unless you either view all slides or check the option **Don&#39;t show this again**.
+该概述将在您下次访问控制台时重新启动，除非您查看所有幻灯片或者选中&#x200B;**不再显示此对话框**&#x200B;选项。
 
 ## 全局导航 {#global-navigation}
 
 您可以使用全局导航面板在控制台之间导航。单击或点按屏幕左上角的 Adobe Experience Manager 链接，将显示一个全屏下拉菜单以供全局导航。
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+通过单击或点按&#x200B;**关闭**&#x200B;可关闭全局导航面板，以返回到您之前所在的位置。
 
 ![导航面板顶栏](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
 全局导航有两个面板，它们由屏幕左侧的图标来表示：
 
-* **[导航](#navigation-panel)**- 由一个指南针图标来表示 和默认面板
+* **[导航](#navigation-panel)**- 登录到 AEM 时由一个指南针图标和默认面板来表示
 * **[工具](#tools-panel)**- 由一个锤子图标来表示
 
 这些面板中的可用选项如下所述。
@@ -58,23 +58,23 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 “导航”面板：
 
-![导航面板](/help/sites-cloud/authoring/assets/navigation.png)
+![“导航”面板](/help/sites-cloud/authoring/assets/navigation.png)
 
-在导航中，可用的控制台包括：
+在“导航”中，可用的控制台有：
 
 | 控制台 | 用途 |
 |---|---|
-| 项目 | 通过“项目”控制台，您可以直接访问您的项目。 [项目是可用于构建团队的虚拟仪表板](/help/sites-cloud/authoring/projects/overview.md) 。 然后，您可以让该团队访问资源、工作流和任务，从而允许人们朝着一个共同目标工作。 |
-| 站点 | The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. 通过此控制台，您可以创建、编辑、复制、移动和删除页面、启动工作流和发布页面。 |
-| 体验片段 | An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences. |
-| 资产 | 通过“资产”控制台，您可以导入和管理数字资产，如图像、视频、文档和音频文件。 These assets can then be used by any site running on the same AEM instance.<!--add some kind of assets link--> |
-| 个性化 | This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md) |
+| 项目 | 通过“项目”控制台，您可以直接访问您的项目。[项目是虚拟功能板](/help/sites-cloud/authoring/projects/overview.md)，可用于组建团队。然后，您可以为该团队提供对资源、工作流和任务的访问权限，从而让人们朝着一个共同目标努力。 |
+| 站点 | “站点”控制台让您可以[创建、查看和管理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)在 AEM 实例中运行的站点。通过此控制台，您可以创建、编辑、复制、移动和删除页面、启动工作流以及发布页面。 |
+| 体验片段 | [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)是独立的体验，可以跨渠道重复使用，也可以具有变量，从而避免反复地复制和粘贴体验或体验的部分内容。 |
+| 资产 | 通过“资产”控制台，您可以导入和管理数字资产，如图像、视频、文档和音频文件。随后，这些资产便可由同一 AEM 实例上运行的任何站点使用。<!--add some kind of assets link--> |
+| 个性化 | 此控制台为[创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md)提供了一个工具框架。 |
 
 ## “工具”面板{#tools-panel}
 
-在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。 The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。“工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
-![工具面板](/help/sites-cloud/authoring/assets/tools-panel.png)
+![“工具”面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
 ## 标题 {#the-header}
 
@@ -84,23 +84,23 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * [全局导航](#global-navigation)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   选择 **Adobe Experience Manager** 链接可在各控制台之间进行导航。
 
    ![全局导航](/help/sites-cloud/authoring/assets/global-navigation.png)
 
 * [搜索](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![搜索按钮](/help/sites-cloud/authoring/assets/search-button.png)
+   ![“搜索”按钮](/help/sites-cloud/authoring/assets/search-button.png)
 
-   You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   您还可以使用[快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`（正斜杠）从任何控制台中调用搜索。
 
-* [解决方案](https://www.adobe.com/experience-cloud.html)
+* [解决方案](https://www.adobe.com/cn/experience-cloud.html)
 
    ![“解决方案”按钮](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [帮助](#accessing-help)
 
-   ![帮助按钮](/help/sites-cloud/authoring/assets/help.png)
+   ![“帮助”按钮](/help/sites-cloud/authoring/assets/help.png)
 
 * [通知](/help/sites-cloud/authoring/getting-started/inbox.md)
 
@@ -114,9 +114,9 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * [边栏选择器](#rail-selector)
 
-   ![边栏选择器按钮](/help/sites-cloud/authoring/assets/rail-selector.png)
+   ![“边栏选择器”按钮](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   显示的选项取决于您当前所在的控制台。For example, in **Sites** you can select content only (the default), the timeline, references, or filter side panel.
+   显示的选项取决于您当前所在的控制台。例如，在&#x200B;**站点**&#x200B;中，您可以选择仅限内容（默认）、时间轴、引用或筛选器侧面板。
 
    ![边栏选择器示例](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
@@ -124,13 +124,13 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![导航栏中的痕迹导航](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   痕迹导航位于边栏中间，且始终显示当前选定项的描述，它允许您在特定控制台内导航。In the **Sites** console, you can navigate through the levels of your website.
+   痕迹导航位于边栏中间，且始终显示当前选定项的描述，它允许您在特定控制台内导航。在&#x200B;**站点**&#x200B;控制台中，您可以导航浏览网站的各个级别。
 
    只需单击痕迹导航文本，即会显示一个下拉列表，其中列出了当前选定项的结构层级。单击某个条目可跳转到该位置。
 
    ![扩展的痕迹导航示例](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
-* **“创建** ”按钮
+* **创建**&#x200B;按钮
 
    ![“创建”按钮](/help/sites-cloud/authoring/assets/create.png)
 
@@ -142,13 +142,13 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![“视图”按钮](/help/sites-cloud/authoring/assets/views-button.png)
 
-   可以在列视图、卡片视图和列表视图之间切换。在列表视图中，它还显示视图设置。
+   您可以在列视图、卡片视图和列表视图之间切换。在列表视图中，还会显示视图设置。
 
    ![视图](/help/sites-cloud/authoring/assets/view.png)
 
    >[!NOTE]
    >
-   >“查 **看设置** ”选项仅在“列表视图”模式 **下可用** 。
+   >**查看设置**&#x200B;选项仅在&#x200B;**列表视图**&#x200B;模式下可用。
 
 ## 访问帮助 {#accessing-help}
 
@@ -158,7 +158,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    **帮助**&#x200B;图标将根据您所在的位置打开相应的资源：
 
-   ![帮助图标](/help/sites-cloud/authoring/assets/help-console.png)
+   ![“帮助”图标](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **导航**
 
@@ -180,11 +180,13 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    通过&#x200B;**工具**&#x200B;控制台，还可以访问外部&#x200B;**资源**：
 
-   * **文档** -查看Web Experience Management文档
-   * **开发人员资源** -开发人员资源和下载
+   * **文档** - 
+查看 Web Experience Management 文档
+   * **开发人员资源** - 
+开发人员资源和下载
    >[!NOTE]
    >
-   >在控制台中时，您可以随时使用热键(问 `?` 号)访问可用快捷键的概述。
+   >在控制台中，您可以随时使用热键 `?`（问号)访问提供的快捷键概述。
    >
    >有关所有键盘快捷键的概述，请参阅以下文档：
    >
@@ -198,11 +200,11 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * 当前控制台
 * 当前上下文
-* Whether you are in [selection mode](#viewing-and-selecting-resources)
+* 是否处于[选择模式](#viewing-and-selecting-resources)
 
 工具栏中可用的操作会发生更改，以反映您可对特定的选定项目执行的操作。
 
-How you [select a resource](#viewing-and-selecting-resources) depends on the view.
+[选择资源](#viewing-and-selecting-resources)的方式依视图而定。
 
 由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。如果发生此情况，将会显示额外的选项。单击或点按省略号（三个点或 **...**）会打开一个下拉选择器，其中包含所有其余的操作。例如，在&#x200B;**站点**&#x200B;控制台中选择了一个页面之后：
 
@@ -238,10 +240,10 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 选择特定的资源取决于视图和设备的组合：
 
-| 查看 | 选择触控 | 选择桌面 | 取消选择“触控” | 取消选择桌面 |
+| 查看 | 选择触控 | 选择桌面 | 取消选择触控 | 取消选择桌面 |
 |---|---|---|---|---|
 | 列 | 点按缩略图 | 单击缩略图 | 点按缩略图 | 单击缩略图 |
-| 卡片 | 点按并按住卡 | 将鼠标悬停在上面，然后使用复选标记快速操作 | 点击卡 | 单击卡 |
+| 卡片 | 点按并按住卡片 | 将鼠标悬停在上方，然后使用勾号快速操作 | 点按卡片 | 单击卡片 |
 | 列表 | 点按缩略图 | 单击缩略图 | 点按缩略图 | 单击缩略图 |
 
 #### 全选 {#select-all}
@@ -249,7 +251,7 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 您可以通过单击控制台右上角的&#x200B;**全选**&#x200B;选项来选择任何视图中的所有项目。
 
 * 在&#x200B;**卡片视图**&#x200B;中，选择所有卡片。
-* In **List View** all items in the list are selected.
+* 在&#x200B;**列表视图**&#x200B;中，选择列表中的所有项目。
 * 在&#x200B;**列视图**&#x200B;中，选择最左侧列中的所有项目。
 
 ![全选](/help/sites-cloud/authoring/assets/select-all.png)
@@ -258,14 +260,14 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 在任何情况下，当您选择项目时，即会在工具栏的右上角显示选定项目的计数。
 
-您可以通过以下方式取消选择所有项目并退出选择模式：
+您可以通过以下方式取消选择所有项并退出选择模式：
 
-* Clicking or tapping the **X** next to the count
-* 使用转 **义键**
+* 单击或点按计数旁边的 **X**
+* 使用 **ESC** 键
 
 ![取消全选](/help/sites-cloud/authoring/assets/deselect-all.png)
 
-在所有视图中，如果您使用桌面设备，则通过点击键盘上的转义可取消选择所有项目。
+在所有视图中，点按键盘上的 Esc 键，均可取消选择所有项目（如果您使用的是桌面设备）。
 
 #### 选择示例 {#selecting-example}
 
@@ -275,7 +277,7 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 1. 在选择了某个资源后，顶部标题被[操作工具栏](#actions-toolbar)覆盖，通过该工具栏可访问当前适用于选定资源的操作。
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   要退出选择模式，请选择右上角的 **X**，或者使用 **Esc** 键。
 
 ### 列视图 {#column-view}
 
@@ -293,7 +295,7 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 * 点按或单击缩略图会选择该资源。
 
-   * 选中后，缩略图上将覆盖一个复选标记，资源名称也将高亮显示。
+   * 选择后，缩略图上将叠加一个勾号，并且资源名称也会突出显示。
    * 最后的列中将显示选定资源的详细信息。
    * 操作工具栏将变得可用。
    在列视图中选择页面后，选定的页面将与以下详细信息一起显示在最后的列中：
@@ -312,11 +314,11 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 * 卡片视图显示各个项目在当前级别的信息卡片。它们提供如下信息：
 
-   * 页面内容的可视表示
+   * 页面内容的可视表示形式
    * 页面标题
    * 重要日期（如上次编辑时间、上次发布时间）
-   * 如果页面被锁定、隐藏或是Live copy的一部分
-   * 如果适用，您需要在工作流中采取操作时
+   * 该页面是否被锁定、隐藏或是 Live Copy 的一部分
+   * （在适当时）您何时需要在工作流中采取相应的操作
       * 指示必需操作的标记可能与您的[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中的条目相关。
 
 * 此视图中还提供了[快速操作](#quick-actions)，例如选择以及编辑之类的常用操作。
@@ -356,13 +358,13 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
    * **页面停留时间**
 
       ![选择列](/help/sites-cloud/authoring/assets/select-columns.png)
-   By default the **Name** column is shown, which makes up part of the URL for the page. 在某些情况下，作者可能需要访问使用不同语言的页面，如果作者不知道页面的语言，查看页面名称（通常不会更改）会大有帮助。
+   默认将显示&#x200B;**名称**&#x200B;列，它构成了页面 URL 的一部分。在某些情况下，作者可能需要访问采用不同语言的页面，在作者不知道页面语言的情况下，查看页面的名称（通常不会更改）会非常有用。
 
 * 可使用列表中每个项目最右侧的点状垂直栏更改项目的顺序。
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >只有在 `jcr:primaryType` 值为 `sling:OrderedFolder` 的已排序文件夹内才能更改顺序。
 
    ![列顺序](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -372,11 +374,11 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 ## 边栏选择器 {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+**边栏选择器**&#x200B;位于窗口的左上角，会根据您当前的控制台显示相应的选项。
 
-![边栏选择器已扩展](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
+![扩展的边栏选择器](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-For example, in **Sites** you can select content only (the default), content tree, the timeline, references, or filter side panel.
+例如，在&#x200B;**站点**&#x200B;中，您可以选择“仅限内容”（默认）、“内容树”、“时间轴”、“引用”或“筛选器”侧面板。
 
 如果选择“仅限内容”，则只会显示边栏图标。如果选择其他任何选项，则边栏图标旁边会显示选项名称。
 
@@ -400,7 +402,7 @@ For example, in **Sites** you can select content only (the default), content tre
 
 ### 时间轴 {#timeline}
 
-时间轴可用于查看和／或启动在选定资源上发生的事件。 要打开时间轴列，请使用边栏选择器：
+时间轴可用于查看和/或启动所选资源上已发生的事件。要打开时间轴列，请使用边栏选择器：
 
 ![时间轴树](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -416,7 +418,7 @@ For example, in **Sites** you can select content only (the default), content tre
       * [启动项](/help/sites-cloud/authoring/launches/overview.md)
       * [版本](/help/sites-cloud/authoring/features/page-versions.md)
       * [工作流](/help/sites-cloud/authoring/workflows/overview.md)
-         * With the exception of transient workflows as no history information is saved for these <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+         * 临时工作流除外，因为不会保存它们的历史记录信息 <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * 显示全部
 
 * 添加/查看有关选定项目的评论。**评论**&#x200B;框显示在事件列表的底部。键入评论后按回车键将记录该评论。在选择&#x200B;**评论**&#x200B;或&#x200B;**显示全部**&#x200B;时，将显示该评论。
@@ -426,7 +428,7 @@ For example, in **Sites** you can select content only (the default), content tre
    * [保存版本](/help/sites-cloud/authoring/features/page-versions.md)
    * [建立工作流](/help/sites-cloud/authoring/workflows/applying.md)
 
-These options accessible via the chevron next to the **Comment** field.
+这些选项可通过&#x200B;**评论**&#x200B;字段旁边的 V 形标记访问。
 
 ![评论字段](/help/sites-cloud/authoring/assets/comments.png)
 
@@ -439,8 +441,8 @@ These options accessible via the chevron next to the **Comment** field.
 * 语言副本<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
 * 内容引用：
 
-   * 从其他页面到选定页面的链接
-   * 引用组件从选定页面借阅和／或借阅的内容
+   * 从其他页面到所选页面的链接
+   * 引用组件在所选页面中借用的内容和/或借出的内容
 
 ![引用示例](/help/sites-cloud/authoring/assets/references-example.png)
 
@@ -448,4 +450,4 @@ These options accessible via the chevron next to the **Comment** field.
 
 这将打开一个与[搜索](/help/sites-cloud/authoring/getting-started/search.md)类似的面板，其中已设置相应的位置筛选器，允许您进一步筛选希望查看的内容。
 
-![过滤器示例](/help/sites-cloud/authoring/assets/filter.png)
+![筛选器示例](/help/sites-cloud/authoring/assets/filter.png)
