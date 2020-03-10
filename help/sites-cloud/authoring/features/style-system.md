@@ -1,7 +1,7 @@
 ---
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -32,10 +32,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. Web 设计人员创建组件的不同可视化变量。
 1. 向 HTML 开发人员提供组件的 HTML 输出以及要实施的所需可视化变量。
-1. HTML开发人员定义与每个可视变量相对应的CSS类，这些类将插入到封装组件的元素上。
-1. HTML开发人员为每个可视变量实施相应的CSS代码（和可选的JS代码），以便它们看起来如所定义。
+1. HTML 开发人员定义与每个可视化变量对应的 CSS 类，该类将插入到组件的包装元素中。
+1. HTML 开发人员为每个可视化变量实施相应的 CSS 代码（和可选 JS 代码），以使它们按照定义的方式显示。
 1. AEM 开发人员将提供的 CSS（和可选 JS）放置在客户端库中并对其进行部署。<!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
-1. AEM开发人员或模板作者配置页面模板并编辑每个已设置样式的组件的策略，添加定义的CSS类，为每个样式提供用户友好名称，并指示可组合的样式。
+1. AEM 开发人员或模板作者配置页面模板并编辑每个已设置样式的组件的策略，从而添加定义的 CSS 类、为每种样式提供用户友好名称，并指示可组合的样式。
 1. 之后，AEM 页面作者可以在页面编辑器中通过组件工具栏的样式菜单选择设计的样式。
 
 请注意，实际上只有最后三个步骤在 AEM 中执行。这意味着，必需的 CSS 和 Javascript 的所有开发工作都可以在没有 AEM 的情况下完成。
@@ -48,7 +48,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 用法 {#use}
 
-要演示该功能，需要为组件创建样式。以下几节 [作为内容作者](#as-a-content-author) 和 [](#as-a-template-author) 作为模板作者介绍了如何使用样式系统的功能（假定组件已配置样式）。
+要演示该功能，需要为组件创建样式。以下[作为内容作者](#as-a-content-author)和[作为模板作者](#as-a-template-author)两个部分介绍了如何使用样式系统的功能（假定组件已配置样式）。
 
 如果您希望为自己的组件使用样式系统，请执行以下操作：
 
@@ -59,25 +59,25 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 ### 作为内容作者 {#as-a-content-author}
 
 1. 编辑包含已配置样式的组件的页面。
-1. 选择已配置样式的组件，例如 **List** 组件（此处为示例）。
+1. 选择已配置样式的组件，例如以下示例中的&#x200B;**列表**&#x200B;组件。
 
    ![创作样式](/help/sites-cloud/authoring/assets/style-system-author.png)
 
 1. 点按或单击&#x200B;**列表**&#x200B;组件工具栏上的&#x200B;**样式**&#x200B;按钮以打开样式菜单，然后更改该组件的外观。
 
-   ![通过选择](/help/sites-cloud/authoring/assets/style-system-author-select.png)
+   ![通过选择创作样式](/help/sites-cloud/authoring/assets/style-system-author-select.png)
 
    >[!NOTE]
    >
-   >In this example, the **Layout** styles (**Block** and **Grid**) are mutually exclusive, while the **Display** options (**Image** or **Date**) can be combined. 这可以[在模板中由模板作者进行配置](#as-a-template-author)。
+   >在此示例中，**布局**&#x200B;样式（**基块**&#x200B;和&#x200B;**网格**）是互斥的，而&#x200B;**显示**&#x200B;选项（**图像**&#x200B;或&#x200B;**日期**）可以合并。这可以[在模板中由模板作者进行配置](#as-a-template-author)。
 
 ### 作为模板作者 {#as-a-template-author}
 
-1. 编辑要为其配置样式的内容页面时，请通过“页面信息”->“编辑模板” **编辑页面的模板**。
+1. 编辑要为其配置样式的内容页面时，请通过&#x200B;**页面信息 -> 编辑模板**&#x200B;编辑页面的模板。
 
    ![编辑模板](/help/sites-cloud/authoring/assets/style-system-template.png)
 
-1. 通过点按或单击组件的“策略”按钮，编辑要为其配置样式(如 **List** 组件)的组件 **的策略** 。
+1. 通过点按或单击组件的&#x200B;**策略**&#x200B;按钮，编辑要为其配置样式的组件（如&#x200B;**列表**&#x200B;组件）。
 
    ![模板组件策略](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
 
@@ -93,7 +93,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as Client Libraries in order to work. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>配置为组件策略的样式属性的 CSS 类（以及任何必需的 Javascript）必须部署为客户端库才能正常工作。<!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## 设置 {#setup}
 
@@ -114,7 +114,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 开发人员还可以使用 `cq:styleElements` 字符串数组属性为组件上的样式配置允许的元素名称列表。然后，在设计对话框内策略的“样式”选项卡中，模板作者也可以为每个样式选择一个要设置的元素名称。这将设置包装器元素的元素名称。
 
-This property is set on the `cq:Component` node. 例如：
+此属性在 `cq:Component` 节点上设置。例如：
 
 * `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
 
@@ -122,13 +122,13 @@ This property is set on the `cq:Component` node. 例如：
 >
 >避免为可以合并的样式定义元素名称。当定义多个元素名称时，其优先级顺序为：
 >
->1. HTL优先于所有内容： `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+>1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
->1. Finally, the component&#39;s `cq:htmlTag`/ `cq:tagName` will be considered as a fallback value.
+>1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
 >
 
 
 
 这种定义样式名称的功能对于极其通用的组件（如布局容器或内容片段组件）非常有用，可为它们提供更多含义。
 
-For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.
+例如，使用该功能可以为布局容器提供 `<main>`、`<aside>`、`<nav>` 等语义。
