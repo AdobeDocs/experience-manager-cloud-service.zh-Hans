@@ -1,7 +1,7 @@
 ---
 title: 使用标记
 description: 标记是用于对网站中的内容进行分类的简单快捷方法
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -11,35 +11,35 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 标记是用于对网站中的内容进行分类的简单快捷方法。可以将标记视为可附加到页面、资产或其他内容，以便在进行搜索时能够找到该内容及相关内容的关键字或标签。
 
-* See Administering Tags for information about creating and managing tags, as well as to which content tags have been applied. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* See Tagging for Developers for information about the tagging framework as well as including and extending tags in custom applications. <!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
+* 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅“管理标记”。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
+* 有关标记框架以及在自定义应用程序中包括和扩展标记的信息，请参阅“针对开发人员的标记”。<!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
 
 ## 使用标记的十大理由 {#ten-reasons-to-use-tagging}
 
-1. **组织内容** - Tagging使作者的生活更轻松，因为他们可以轻松快速地组织内容。
-1. **组织标记** -在标记组织内容时，分层分类／命名空间会组织标记。
-1. **深度组织的标记** -借助创建标记和子标记的能力，可以表达整个分类系统，包括术语、子术语及其关系。 这允许您创建与正式内容层次结构平行的第二个（或第三个）内容层次结构。
-1. **受控标记** -可以通过对标记和／或命名空间应用权限来控制标记创建和应用程序来控制标记。
-1. **灵活的标记** -标记有许多名称和面孔：标记、分类术语、类别、标签等。 标记的内容模型和使用方式很灵活；例如，在概括目标人口统计、对内容进行分类或评级，或者创建辅助内容层次结构时，均可使用标记。
-1. **改进的搜索** - AEM中的默认搜索组件广泛包括已创建的标记和已应用的标记，过滤器可应用到这些标记，以将结果缩小为相关的标记。
-1. **启用SEO** —— 作为页面属性应用的标记将自动显示在页面的元标记中，使其对搜索引擎可见。
-1. **简单复杂** -只需通过单词和按钮的触摸即可创建标记。 之后，可以添加标题、描述和无限数量的标签以向标记提供更多语义。
-1. **核心一致性** -标记系统是AEM的核心组件，供所有AEM功能用于对内容分类。 此外，开发人员可以使用标记 API 来创建支持标记的应用程序，以便访问相同的分类。
-1. **结合了结构和灵活性** -由于页面和路径的嵌套，AEM是处理结构化信息的理想工具。 凭借内置的全文搜索功能，它在处理非结构化信息时也非常强大。标记兼具结构化和灵活性的强大优势。
+1. **组织内容** - 标记使作者的工作更轻松，因为他们可以轻而易举地快速组织内容。
+1. **组织标记** - 使用标记组织内容时，层次分类/命名空间会组织标记。
+1. **深度组织标记** - 有了创建标记和子标记的功能，就可以表示整个分类系统，其中涵盖术语、子术语及其关系。这允许您创建与正式内容层次结构平行的第二个（或第三个）内容层次结构。
+1. **控制标记** - 可以通过对标记和/或命名空间应用权限来控制标记创建和应用，从而控制标记。
+1. **灵活标记** - 标记有许多名称和面孔：标记、分类术语、类别、标签等等。标记的内容模型和使用方式很灵活；例如，在概括目标人口统计、对内容进行分类或评级，或者创建辅助内容层次结构时，均可使用标记。
+1. **改进搜索** - AEM 中的默认搜索组件包含大量已创建的标记和已应用的标记，可以对其应用筛选器以将结果缩小到相关范围。
+1. **启用 SEO** - 作为页面属性应用的标记将自动显示在页面的元标记中，以对搜索引擎可见。
+1. **化繁为简** - 可以简单地通过一个词语和触摸按钮来创建标记。之后，可以添加标题、描述和无限数量的标签以向标记提供更多语义。
+1. **核心一致性** - 标记系统是 AEM 的核心组件，可供所有 AEM 功能用来对内容分类。此外，开发人员可以使用标记 API 来创建支持标记的应用程序，以便访问相同的分类。
+1. **结构化与灵活性相结合** - 鉴于对页面和路径的嵌套，AEM 非常适合处理结构化信息。凭借内置的全文搜索功能，它在处理非结构化信息时也非常强大。标记兼具结构化和灵活性的强大优势。
 
 在设计站点的内容结构和资产的元数据架构时，请考虑使用标记提供的轻量级可行方法。
 
 ## 应用标记 {#applying-tags}
 
-In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
+在创作环境中，作者可以通过访问页面属性并在&#x200B;**标记/关键字**&#x200B;字段中输入一个或多个标记来应用标记。
 
-To apply pre-defined tags, in the **Page Properties** window use the **Tags** field and the **Select Tags** window. The **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy. <!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
+要应用预定义标记，请在&#x200B;**页面属性**&#x200B;窗口中使用&#x200B;**标记**&#x200B;字段和&#x200B;**选择标记**&#x200B;窗口。**标准标记**&#x200B;选项卡是默认的命名空间，这意味着分类前面没有 `namespace-string:` 前缀。<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
 ![选择多个标记](/help/sites-cloud/authoring/assets/tags-select.png)
 
 ## 发布标记 {#publishing-tags}
 
-与发布和取消发布页面页面的方式类似，您可以对标记和命名空间执行以下操作：
+与发布和取消发布页面的方式类似，您可以对标记和命名空间执行以下操作：
 
 ### 激活 {#activate}
 
@@ -49,7 +49,7 @@ To apply pre-defined tags, in the **Page Properties** window use the **Tags** fi
 
 >[!NOTE]
 >
->激活页面时，会自动打开一个对话框，并允许您激活属于该页面的未激活标记。
+>在激活页面时，会自动打开一个对话框，通过该对话框可以激活属于该页面的未激活标记。
 
 ### 取消激活 {#deactivate}
 
