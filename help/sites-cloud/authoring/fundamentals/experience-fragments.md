@@ -1,7 +1,7 @@
 ---
 title: 体验片段
-description: 将Adobe Experience manager用作云服务体验片段，让您的体验可重用、灵活。
-translation-type: tm+mt
+description: 使用 Adobe Experience Manager 云服务体验片段，让您的体验可重复使用且更加灵活。
+translation-type: ht
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 
 # 体验片段 {#experience-fragments}
 
-在Adobe Experience manager中，作为云服务，包括体验片段：
-* 是一个或多个组件的组
+在 Adobe Experience Manager 云服务中，体验片段：
+* 是包含一个或多个组件的组
 * 包括内容和布局
 * 可以在页面中引用
-* 可以包含任何组件
+* 可包含任意组件。
 
 体验片段：
 
@@ -28,10 +28,9 @@ source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 
 您可以使用体验片段：
 
-* 如果作者希望重复使用页面的各个部分（体验的片段）。
-如果没有体验片段，作者需要复制并粘贴该片段。 创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。体验片段无需复制/粘贴。
-* 支持无外设CMS用例。
-作者希望仅将AEM用于创作，但不希望将其交付给客户。 第三方系统/触点会使用该体验，然后将其提供给最终用户。
+* 满足作者希望重复使用页面各个部分（体验的片段）的需求。
+如果没有体验片段，作者需要复制并粘贴该片段。创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。体验片段无需复制/粘贴。
+* 支持无头 CMS 用例。作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/触点会使用该体验，然后将其提供给最终用户。
 
 >[!NOTE]
 >
@@ -47,31 +46,31 @@ source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 体验片段应在以下时候使用：
 
 * 当您需要重复使用体验时。
-   * 将重复使用内容相同或相似的体验.
+   * 将重复使用内容相同或相似的体验。
 * 当您使用 AEM 作为第三方的内容交付平台时。
-   * 任何需要使用 AEM 作为内容交付平台的解决方案.
-   * 将内容嵌入第三方触点.
+   * 任何需要使用 AEM 作为内容交付平台的解决方案。
+   * 将内容嵌入第三方触点。
 * 当您有一个具有不同变体或呈现版本的体验时。
-   * 特定于渠道或上下文的变体.
-   * 对群体有意义的体验；例如，跨渠道具有不同体验的营销活动。
+   * 特定于渠道或上下文的变体。
+   * 一些对组有意义的体验（例如，在各渠道间具有不同体验的营销活动）。
 * 当您使用全渠道商业时。
-   * 在[社交媒体](/help/implementing/developing/extending/experience-fragments.md#social-variations)渠道中大规模共享商业相关内容.
-   * 使触点具有事务性.
+   * 在[社交媒体](/help/implementing/developing/extending/experience-fragments.md#social-variations)渠道中大规模共享商业相关内容。
+   * 使触点具有事务性。
 
 ## 组织您的体验片段 {#organizing-your-experience-fragments}
 
-建议：
-* 使用文件夹组织您的体验片段，
+建议执行以下操作：
+* 使用文件夹组织您的体验片段；
 
 * [在这些文件夹中配置允许的模板](#configure-allowed-templates-folder)。
 
 创建文件夹允许您：
 
-* 为您的体验片段创建有意义的结构；例如，根据
+* 为您的体验片段创建有意义的结构；例如，根据分类
 
    >[!NOTE]
    >
-   >无需将体验片段的结构与站点的页面结构相协调。
+   >无需将体验片段的结构与站点的页面结构保持一致。
 
 * [在文件夹级别分配允许的模板](#configure-allowed-templates-folder)
 
@@ -79,7 +78,7 @@ source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
    >
    >您可以使用[模板编辑器](/help/sites-cloud/authoring/features/templates.md)创建自己的模板。
 
-WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用的结构还说明了如何使用其他功能，如多站点管理（包括语言副本）。
+WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构还说明了如何使用其他功能，如多站点管理（包括语言副本）。
 
 请参阅：
 
@@ -97,19 +96,19 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
 
 >[!NOTE]
 >
->也可以为实例配置允 [许的模板](#configure-allowed-templates-instance)，但不建议使用此方 **法** ，因为升级时可以覆盖这些值。
+>也可以[为实例配置允许的模板](#configure-allowed-templates-instance)，但&#x200B;**不**&#x200B;建议使用此方法，因为升级时会覆盖这些值。
 
 ### 为文件夹配置允许的模板 {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
->这是指定允许的模板的 **推荐方法**，因为升级时不会覆盖这些值。
+>这是指定&#x200B;**允许的模板**&#x200B;的推荐方法，因为升级时不会覆盖这些值。
 
 1. 导航到所需的&#x200B;**体验片段**&#x200B;文件夹。
 
-1. 选择文件夹，然后选择属 **性**。
+1. 选择文件夹，然后选择&#x200B;**属性**。
 
-1. 在“允许的模板”字段中指定用于检索所需模板 **的正则表达式** 。
+1. 在&#x200B;**允许的模板**&#x200B;字段中指定用于检索所需模板的正则表达式。
 
    例如：
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
@@ -117,23 +116,23 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
    请参阅：
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
-   ![体验片段属性——允许的模板](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
+   ![体验片段属性 - 允许的模板](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
    >
    >请参阅[体验片段的模板](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments)，以进一步了解详细信息。
 
-1. 选择 **保存并关闭**。
+1. 选择&#x200B;**保存并关闭**。
 
 ### 为实例配置允许的模板 {#configure-allowed-templates-instance}
 
 >[!CAUTION]
 >
->不建议使用此方法更改允 **许的模板** ，因为指定的模板可以在升级时被覆盖。
+>不建议使用此方法更改&#x200B;**允许的模板**，因为指定的模板在升级时会被覆盖。
 >
->请仅出于信息目的使用此对话框。
+>此对话框仅供参考之用。
 
-1. Navigate to the required **Experience Fragments** console.
+1. 导航到所需的&#x200B;**体验片段**&#x200B;控制台。
 
 1. 选择&#x200B;**配置选项**：
 
@@ -154,15 +153,15 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
 
 要创建体验片段，请执行以下操作：
 
-1. Select **Experience Fragments** from the Global Navigation.
+1. 从全局导航中选择&#x200B;**体验片段**。
 
    ![导航面板中的体验片段](/help/sites-cloud/authoring/assets/xf-01.png)
 
-1. 导览至所需的文件夹，然后选择 **创建**:
+1. 导航至所需的文件夹，然后选择&#x200B;**创建**：
 
    ![为体验片段创建文件夹](/help/sites-cloud/authoring/assets/xf-02.png)
 
-1. 选择 **体验片段** ，以打开创 **建体验片段向导** 。
+1. 选择&#x200B;**体验片段**，以打开&#x200B;**创建体验片段**&#x200B;向导。
 
    选择所需的&#x200B;**模板**，然后选择&#x200B;**下一步**：
 
@@ -192,10 +191,10 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
 
 以下示例过程说明了如何为产品创建 Teaser：
 
-1. 从组件浏览器中拖放所需的 [组件](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。
+1. 从[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)中拖放所需的组件。
 
 1. 具体取决于组件：
-   * 根据需要添加任何内容和／或资产。
+   * 根据需要添加任何内容和/或资产。
    * 根据需要配置属性。
 
 1. 根据需要添加更多组件。
@@ -222,14 +221,14 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
 
    * **模板**
    * **标题**
-   * **名称** -如果留空，它将从标题派生
+   * **名称** - 如果留空，将从“标题”派生名称
    * **描述**
    * **变体标记**
    例如：
 
    ![变量属性](/help/sites-cloud/authoring/assets/xf-07.png)
 
-1. Confirm with **Done**, the new variation will be shown in the panel.
+1. 使用&#x200B;**完成**&#x200B;确认，新的变量将显示在面板中。
 
 ## 使用您的体验片段 {#using-your-experience-fragment}
 
@@ -241,8 +240,8 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
 
 1. 向组件实例添加实际的体验片段；通过：
 
-   * 将所需片段从资产浏览器拖放到该组件上.
-   * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done**.
+   * 将所需片段从资产浏览器拖放到该组件上。
+   * 从组件工具栏中选择&#x200B;**配置**，指定要使用的片段，然后使用&#x200B;**完成**&#x200B;确认。
    >[!NOTE]
    >
    >组件工具栏中的“编辑”将用作在片段编辑器中打开片段的快捷方式。
@@ -261,19 +260,19 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
 
 1. 在体验片段编辑器中，选择要重复使用的组件：
 
-   ![为构建块选择组件](/help/sites-cloud/authoring/assets/xf-09.png)
+   ![为构建基块选择组件](/help/sites-cloud/authoring/assets/xf-09.png)
 
 1. 从组件工具栏中选择&#x200B;**转换为构建基块**：
 
-   ![“构建块”按钮](/help/sites-cloud/authoring/assets/xf-10.png)
+   ![“构建基块”按钮](/help/sites-cloud/authoring/assets/xf-10.png)
 
 1. 输入&#x200B;**构建基块**&#x200B;的名称，然后使用&#x200B;**转换**&#x200B;进行确认：
 
-   ![名称构建块](/help/sites-cloud/authoring/assets/xf-11.png)
+   ![为构建基块命名](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. “构 **建块** ”将显示在左侧选项卡(**本地**)中，并可以选择该构件以执行进一步操作：
+1. **构建基块**&#x200B;将显示在左侧选项卡（**本地**）中，并可以选择该基块以执行进一步操作：
 
-   ![边栏中的构建块](/help/sites-cloud/authoring/assets/xf-12.png)
+   ![边栏中的构建基块](/help/sites-cloud/authoring/assets/xf-12.png)
 
 #### 管理构建基块 {#managing-a-building-block}
 
@@ -283,25 +282,25 @@ WKND项目根据WKND项目构建了一些体验片段 `Contributors`。 使用�
 * **重命名**
 * **删除**
 
-![管理构建块](/help/sites-cloud/authoring/assets/xf-13.png)
+![管理构建基块](/help/sites-cloud/authoring/assets/xf-13.png)
 
 #### 使用构建基块 {#using-a-building-block}
 
 您可以将构建基块拖动到任何片段的段落系统，就像对任何组件一样。
 
-编辑体验片段时，可用的构建块显示在左侧选项卡中。 您可以根据以下条件进行筛选：
+编辑体验片段时，可用的构建基块会显示在左侧选项卡中。您可以根据以下条件进行筛选：
 
-* **本地** -距当前体验片段的构建块
-* **全部** -所有片段的构建块
+* **本地** - 当前体验片中段的构建基块
+* **全部** - 所有片段中的构建基块
 
-![选择构建块](/help/sites-cloud/authoring/assets/xf-14.png)
+![选择构建基块](/help/sites-cloud/authoring/assets/xf-14.png)
 
 ## 您的体验片段的详细信息 {#details-of-your-experience-fragment}
 
 可以查看片段的详细信息：
 
-1. 导航到体验片段的位置（请勿进一步导航到片段中的变量）。
-Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an export to Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+1. 导航到体验片段的位置（请勿进一步导航到片段中的变体）。
+详细信息将显示在**体验片段**&#x200B;控制台的所有视图中，其中&#x200B;**列表视图**&#x200B;包含导出到 Target 的详细信息：<!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
 
    ![体验片段详细信息](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -313,9 +312,9 @@ Details are shown in all views of the **Experience Fragments** console, with the
 
    >[!CAUTION]
    >
-   >当您从体验片段控制台中打开 **属性** 时，会显示这些选项卡。
+   >当您从体验片段控制台中打开&#x200B;**属性**&#x200B;时，会显示这些选项卡。
    >
-   >如果在编 **辑体验片段时打开属性** ，则会显示相 [应的页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 。
+   >如果在编辑体验片段时&#x200B;**打开属性**，则会显示相应的[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。
 
    ![体验片段属性](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -325,7 +324,7 @@ Details are shown in all views of the **Experience Fragments** console, with the
       * **标记**
       * **变体总数** - 仅供参考
       * **Web 变体的数量** - 仅供参考
-      * **非Web变体的数量** -仅信息
+      * **非 Web 变体的数量** - 仅供参考
       * **使用此片段的页数** - 仅供参考
    * **云服务**
       * **云配置**
@@ -339,7 +338,7 @@ Details are shown in all views of the **Experience Fragments** console, with the
 
 ## 纯 HTML 呈现版本 {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition from the browser.
+使用 URL 中的 `.plain.` 选择器，您可以从浏览器中访问纯 HTML 呈现版本。
 
 >[!NOTE]
 >
