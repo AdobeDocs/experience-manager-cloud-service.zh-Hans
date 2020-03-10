@@ -1,7 +1,7 @@
 ---
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -26,7 +26,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
 
-For detailed information about how editable templates work at a technical level, please see the developer document Page Templates - Editable for more information. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档页面模板 - 可编辑以了解更多信息。<!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
 
 >[!NOTE]
 >
@@ -38,21 +38,21 @@ For detailed information about how editable templates work at a technical level,
 >
 >管理员必须在&#x200B;**配置浏览器**&#x200B;中配置一个模板文件夹，并应用适当的权限，之后模板作者才能在该文件夹中创建模板。
 
-在开始之前，请务必考虑创建新模板需要协作。 因此，为每项任务指明了对应的[角色](#roles)。这不会影响您实际使用模板创建页面的方式，但会影响页面与其模板的关联方式。
+在开始之前，请务必考虑到创建新模板需要多方协作。因此，为每项任务指明了对应的[角色](#roles)。这并不会影响您使用模板来创建页面的实际操作方式，但却会影响页面与模板之间的关系。
 
 ### 角色 {#roles}
 
 使用&#x200B;**“模板”控制台**&#x200B;和&#x200B;**模板编辑器**&#x200B;创建新模板时，需要以下角色之间的相互协作：
 
 * **管理员**：
-   * Creates a new folder for templates requires `admin` rights.
+   * 创建新的模板文件夹需要 `admin` 权限。
    * 此类任务通常可由开发人员完成。
 * **开发人员**：
    * 专注于技术/内部细节。
    * 需要具有开发环境方面的经验。
    * 为模板作者提供必要信息。
 * **模板作者**：
-   * This is a specific author who is member of the group `template-authors`
+   * 特定的作者，`template-authors` 组中的一个成员。
       * 可分配所需的权限和许可。
    * 可配置组件的使用及其他高级详细信息，因而需要掌握以下内容：
       * 一些技术知识。
@@ -68,14 +68,14 @@ For detailed information about how editable templates work at a technical level,
 创建新的可编辑模板时，您需要执行以下步骤：
 
 * 使用&#x200B;**模板**&#x200B;控制台。此控制台可从&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分访问。
-   * 或直接在： `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
+   * 或直接从以下网站进行访问：`https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
+* 如有必要，可以[创建模板文件夹](#creating-a-template-folder-admin)
 * [创建新模板](#creating-a-new-template-template-author)，新模板最初是空的
 * 如有必要，为该模板[定义其他属性](#defining-template-properties-template-author)
 * [编辑该模板](#editing-templates-template-authors)，以定义以下各项：
-   * [结构](#editing-a-template-structure-template-author) -在使用模板创建的页面上无法更改的预定义内容。
-   * [初始内容](#editing-a-template-initial-content-author) -可在使用模板创建的页面上更改的预定义内容。
-   * [布局](#editing-a-template-layout-template-author) -适用于各种设备。
+   * [结构](#editing-a-template-structure-template-author) - 不能在使用该模板创建的页面上更改的预定义内容。
+   * [初始内容](#editing-a-template-initial-content-author) - 能够在使用该模板创建的页面上更改的预定义内容。
+   * [布局](#editing-a-template-layout-template-author) - 针对各种设备。
    * [样式](/help/sites-cloud/authoring/features/style-system.md) - 定义要用于该模板及其组件的样式。
 * [启用该模板](#enabling-a-template-template-author)，以在创建页面时使用
 * [允许该模板](#allowing-a-template-author)用于您网站的所需页面或分支
@@ -87,23 +87,23 @@ For detailed information about how editable templates work at a technical level,
 
 >[!CAUTION]
 >
->Never enter any information that needs to be internationalized into a template. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>切勿在模板中输入任何需要国际化的信息。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->对于必须本地化的模板元素（如页眉和页脚），请利用核 [心组件的本地化功能。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)
+>对于必须本地化的模板元素（如页眉和页脚），请利用[核心组件的本地化功能。](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/get-started/localization.html)
 
 ### 创建模板文件夹 - 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。This is an admin task and is described in the document Page Templates - Editable. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在“页面模板 - 可编辑”文档中有相关说明。<!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
 
 ### 创建新模板 - 模板作者 {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools ->** **General**) then navigate to the required folder.
+1. 打开&#x200B;**“模板”控制台**（通过&#x200B;**工具** -> **常规**），然后导航到所需的文件夹。
 
    >[!NOTE]
    >
-   >In a standard AEM instance the **global** folder already exists in the template console. 此文件夹会保存默认模板，如果在当前文件夹中没有找到策略和/或模板类型，则此文件夹可以充当备用。
+   >在标准 AEM 实例中，“模板”控制台中已存在&#x200B;**全局**&#x200B;文件夹。此文件夹会保存默认模板，如果在当前文件夹中没有找到策略和/或模板类型，则此文件夹可以充当备用。
    >
-   >It is recommended best practice to use a template folder created for your project. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >建议最好使用为您的项目创建的模板文件夹。<!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
 
 1. 选择&#x200B;**创建**，然后选择&#x200B;**创建模板**&#x200B;以打开向导。
 
@@ -111,7 +111,7 @@ For detailed information about how editable templates work at a technical level,
 
    >[!NOTE]
    >
-   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。More information can be found in the developer document Page Templates - Editable. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。要获取更多信息，请参阅开发人员文档“页面模板 - 可编辑”。<!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
 
 1. 填写&#x200B;**模板详细信息**：
 
@@ -135,11 +135,11 @@ For detailed information about how editable templates work at a technical level,
 * 标题
    * 用于标识模板的标题，例如&#x200B;**创建页面**&#x200B;向导中的标题。
 * 描述
-   * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
+   * 可选描述，用于提供更多有关模板及其用法的信息，例如&#x200B;**创建页面**&#x200B;向导中显示的描述。
 
 要查看和/或编辑属性，请执行以下操作：
 
-1. In the **Templates Console**, select the template.
+1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
 1. 从工具栏或快速选项中选择&#x200B;**查看属性**&#x200B;以打开对话框。
 1. 此时您可以查看或编辑模板属性。
 
@@ -163,8 +163,8 @@ For detailed information about how editable templates work at a technical level,
 
 为了能够在创建页面时使用模板，您需要执行以下操作：
 
-* [启用模板](#enabling-a-template-template-author) ，以使其在创建页面时可用。
-* [允许模板](#allowing-a-template-author) ，以指定可以使用模板的内容分支。
+* [启用模板](#enabling-a-template-template-author)以使其可在创建页面时使用。
+* [允许模板](#allowing-a-template-author)以指定可以使用模板的内容分支。
 
 #### 启用模板 - 模板作者 {#enabling-a-template-template-author}
 
@@ -174,8 +174,8 @@ For detailed information about how editable templates work at a technical level,
 >
 >启用模板后，当模板作者开始进一步更新模板时，系统会显示一条警告消息。此消息用于告知用户，该模板可能已被引用，因此所做的任何更改可能会影响引用该模板的页面。
 
-1. In the **Templates Console**, select the template.
-1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
+1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
+1. 从工具栏中选择&#x200B;**启用**&#x200B;或&#x200B;**禁用**，然后在确认对话框中再次选择“启用”或“禁用”。
 1. 现在，您便能够在[创建新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时使用模板，不过您可能想要根据自己的需求[编辑模板](#editing-templates-template-authors)。
 
 >[!NOTE]
@@ -188,7 +188,7 @@ For detailed information about how editable templates work at a technical level,
 
 1. 对于希望可在其中使用模板的分支，打开其根页面的[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。
 1. 打开&#x200B;**高级**&#x200B;选项卡。
-1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
+1. 在&#x200B;**模板设置**&#x200B;下方，使用&#x200B;**添加字段**&#x200B;指定模板的路径。
 
    路径可以是显式的，也可以使用模式。例如：
 
@@ -201,7 +201,7 @@ For detailed information about how editable templates work at a technical level,
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
    >
-   >See Template Availability - the principles for allowed templates remain the same. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >请参阅模板可用性 - 对允许的模板适用的原则与此相同。<!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
@@ -213,8 +213,8 @@ For detailed information about how editable templates work at a technical level,
 
 由于渲染页面时会引用模板，因此模板在完全配置后需要进行发布，才能用于发布环境。
 
-1. In the **Templates Console**, select the template.
-1. Select **Publish** from the toolbar to open the wizard.
+1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
+1. 从工具栏中选择&#x200B;**发布**&#x200B;以打开向导。
 1. 选择要一同发布的&#x200B;**内容策略**。
 1. 从工具栏中选择&#x200B;**发布**&#x200B;以完成操作。
 
@@ -244,7 +244,7 @@ For detailed information about how editable templates work at a technical level,
 
 #### 结构 {#template-structure}
 
-Components added to the [structure](#editing-a-template-structure-template-author) cannot be moved/removed from resultant pages by the page authors. 如果要使页面作者能够在生成页面中添加和删除组件，则需要在模板中添加段落系统。
+页面作者不能从生成页面中移动/删除添加到[结构](#editing-a-template-structure-template-author)的组件。如果要使页面作者能够在生成页面中添加和删除组件，则需要在模板中添加段落系统。
 
 将组件锁定后，您可以添加页面作者无法编辑的内容。您可以解锁组件，以便能够定义[初始内容](#editing-a-template-initial-content-author)。
 
@@ -254,7 +254,7 @@ Components added to the [structure](#editing-a-template-structure-template-autho
 
 #### 初始内容 {#template-initial-content}
 
-When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content-author) that will be copied to the resultant page(s), created from the template. 可以在生成页面上编辑这些已解锁的组件。
+解锁组件后，您可以定义要复制到生成页面（使用模板创建）的[初始内容](#editing-a-template-initial-content-author)。可以在生成页面上编辑这些已解锁的组件。
 
 >[!NOTE]
 >
@@ -262,21 +262,21 @@ When a component has been unlocked you can define the [initial content](#editing
 
 #### 布局 {#template-layout}
 
-With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. 模板创作的&#x200B;**布局**&#x200B;模式与[**页面创作的布局&#x200B;**模式](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)具有相同的功能。
+通过[布局](#editing-a-template-layout-template-author)，您可以预定义所需设备格式的模板布局。模板创作的&#x200B;**布局**&#x200B;模式与[**页面创作的布局&#x200B;**模式](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)具有相同的功能。
 
 #### 页面策略 {#template-page-policies}
 
-[页面策略](#page-policies) ，可将预定义的页面策略连接到页面。 这些页面策略可定义各种设计配置。
+[页面策略](#page-policies)可以将预定义的页面策略关联到页面。这些页面策略可定义各种设计配置。
 
 #### 样式 {#template-styles}
 
-The [Style System](/help/sites-cloud/authoring/features/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. 这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
+[样式系统](/help/sites-cloud/authoring/features/style-system.md)允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 
 有关更多信息，请参阅[样式系统文档](/help/sites-cloud/authoring/features/style-system.md)。
 
 ### 编辑模板 - 结构 - 模板作者 {#editing-a-template-structure-template-author}
 
-In **Structure** mode you define components and content for your template and define policy for the template and its components.
+在&#x200B;**结构**&#x200B;模式下，您可以为模板定义组件和内容，并为模板及其组件定义策略。
 
 * 不能在生成页面上移动在模板结构中定义的组件，也不能从任何生成页面中删除这些组件。
 * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
@@ -285,14 +285,14 @@ In **Structure** mode you define components and content for your template and de
 
 ![模板编辑器页面结构](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-在模板编辑器的“结构”模式中 **** ，可以执行许多操作，并提供许多功能来帮助您：
+您可以在模板编辑器的&#x200B;**结构**&#x200B;模式中执行许多操作，并且有许多功能可协助您执行操作：
 
-#### Add Components {#add-components}
+#### 添加组件 {#add-components}
 
 可使用以下几种方法将组件添加到模板：
 
 * 从侧面板中的&#x200B;**组件**&#x200B;浏览器添加。
-* By using the **Insert Component** option available on the toolbar of components already on the template or the **Drag components here** box.
+* 使用模板中现有组件的工具栏上的&#x200B;**插入组件**&#x200B;选项，或使用&#x200B;**将组件拖动到此处**&#x200B;框。
 * 将资产（从侧面板中的&#x200B;**资产**&#x200B;浏览器）直接拖动到模板，以就地生成相应的组件。
 
 添加后，每个组件会带有以下标记：
@@ -303,7 +303,7 @@ In **Structure** mode you define components and content for your template and de
 
 >[!NOTE]
 >
->When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
+>将现成的&#x200B;**标题**&#x200B;组件添加到模板后，该组件会包含默认的文本&#x200B;**结构**。
 >
 >如果更改此文本，并添加自己的文本，则在使用该模板创建页面时，将会使用更新的文本。
 >
@@ -311,7 +311,7 @@ In **Structure** mode you define components and content for your template and de
 
 >[!NOTE]
 >
->Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+>将组件和资产添加到模板的操作与在[页面创作](/help/sites-cloud/authoring/fundamentals/editing-content.md)时执行的类似操作虽然并不完全相同，但也存在许多相似之处。
 
 #### 组件操作 {#component-actions}
 
@@ -325,11 +325,11 @@ In **Structure** mode you define components and content for your template and de
 
 通过这两项操作，您可以在组件中添加内容。
 
-#### Border to Indicate Structure {#border-to-indicate-structure}
+#### 指示结构的边框 {#border-to-indicate-structure}
 
 在&#x200B;**结构**&#x200B;模式下工作时，橙色边框指示当前选定的组件。虚线指示父组件。
 
-#### 策略和属性（常规） {#policy-and-properties-general}
+#### 策略和属性（常规）{#policy-and-properties-general}
 
 内容（或设计）策略可定义组件的设计属性。例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。
 
@@ -343,8 +343,8 @@ In **Structure** mode you define components and content for your template and de
 
 配置窗口分为两个部分。
 
-* In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-* In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+* 在对话框左侧的&#x200B;**策略**&#x200B;下方，您能够创建新策略或选择现有策略。
+* 在对话框右侧的&#x200B;**属性**&#x200B;下方，您可以设置特定于组件类型的属性。
 
 可用的属性取决于选定的组件。例如，对于文本组件，属性定义的是复制和粘贴选项、格式选项以及段落样式，等等。
 
@@ -352,21 +352,21 @@ In **Structure** mode you define components and content for your template and de
 
 内容（或设计）策略可定义组件的设计属性。例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。
 
-Under **Policy** you can select an existing policy to apply to the component via the drop-down.
+在&#x200B;**策略**&#x200B;下方，您可以通过下拉列表选择要应用于组件的现有策略。
 
 ![选择策略](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。A new title should then be given in the **Policy Title** field.
+此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。
 
 ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。默认情况下，复制的策略的标题将为 **X 的副本**，其中 X 是被复制的策略的标题。
 
 ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 **策略说明**&#x200B;字段中的策略说明是可选的。
 
-In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+在&#x200B;**同时使用该选定策略的其他模板**&#x200B;部分中，您可以轻松地查看同时也使用了&#x200B;**选择策略**&#x200B;下拉列表中的选定策略的其他模板。
 
 ![使用现有策略](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -403,17 +403,17 @@ In the **Other templates also using the selected policy** section, you can easil
 
 例如，对于图像组件，您可以定义裁剪比例、允许的图像方向，以及是否允许上传。
 
-![功能选项卡](/help/sites-cloud/authoring/assets/templates-features-tab.png)
+![“功能”选项卡](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 
 >[!CAUTION]
 >
->Note that in AEM crop ratios are defined as **height/width**. 这与传统的宽度／高度定义不同，这是出于传统兼容性的考虑。 只要您清楚地定义&#x200B;**名称**，页面创作用户便不会察觉到任何差异，因为您定义的名称才是 UI 中显示的内容。
+>请注意，在 AEM 中，裁剪比例被定义为&#x200B;**高宽比**。这与常见的宽高比的定义不同，这样做是出于对旧版兼容性的考虑。只要您清楚地定义&#x200B;**名称**，页面创作用户便不会察觉到任何差异，因为您定义的名称才是 UI 中显示的内容。
 
 >[!NOTE]
 >
 >只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。<!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
 
-#### Policy and Properties (Layout Container) {#policy-and-properties-layout-container}
+#### 策略和属性（布局容器）{#policy-and-properties-layout-container}
 
 布局容器的策略和属性设置与常规用法类似，只存在些许不同之处。
 
@@ -427,7 +427,7 @@ In the **Other templates also using the selected policy** section, you can easil
 
 内容（或设计）策略可定义组件的设计属性。例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。
 
-Under **Policy** you can select an existing policy to apply to the component via the drop-down. 此操作方式与该窗口的常规用法相同。
+在&#x200B;**策略**&#x200B;下方，您可以通过下拉列表选择要应用于组件的现有策略。此操作方式与该窗口的常规用法相同。
 
 ##### 属性 {#properties-layout}
 
@@ -455,9 +455,9 @@ Under **Policy** you can select an existing policy to apply to the component via
 
 单击或点按&#x200B;**添加映射**，可添加全新的组件和 MIME 类型映射。
 
-在列表中选择组件，然后单击或点按&#x200B;**添加类型**，可将其他 MIME 类型添加到已映射的组件。Click the **Delete** icon to remove a MIME type.
+在列表中选择组件，然后单击或点按&#x200B;**添加类型**，可将其他 MIME 类型添加到已映射的组件。单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
 
-![默认组件选项卡](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
+![“默认组件”选项卡](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
 ###### 响应设置 {#responsive-settings}
 
@@ -472,20 +472,20 @@ Under **Policy** you can select an existing policy to apply to the component via
 * 边框中会显示一个打开的挂锁指示符。
 * 组件工具栏会相应地做出调整。
 * **结构**&#x200B;模式将不再显示任何已输入的内容。
-   * Already entered content is considered initial content and is only visible in **Initial Content** mode.
+   * 已输入的内容会被视为初始内容，因此仅在&#x200B;**初始内容**&#x200B;模式下可见。
 * 无法移动、剪切或删除已解锁组件的父组件。
 
-![锁定组件按钮](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
+![“锁定组件”按钮](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
 这包括解锁容器组件，以便能够在&#x200B;**初始内容**&#x200B;模式下或生成页面上添加其他组件。如果您在解锁容器前已经将组件/内容添加到了容器，则添加的这些组件/内容在&#x200B;**结构**&#x200B;模式下将不再显示，但是会在&#x200B;**初始内容**&#x200B;模式下显示。在&#x200B;**“结构”模式**&#x200B;下，只会显示容器组件本身，及其&#x200B;**允许的组件**&#x200B;列表。
 
 ![允许的组件](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
-为节省空间，布局容器不会扩大以容纳允许的组件列表。 容器而是会变为一个可滚动的列表。
+为了节省空间，布局容器不会扩大来容纳允许的组件列表。容器而是会变为一个可滚动的列表。
 
 可配置的组件显示有一个&#x200B;**策略**&#x200B;图标，点按或单击此图标可编辑该组件的策略和属性。
 
-![可配置组件图标](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
+![“可配置组件”图标](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
 #### 与现有页面的关系 {#relationship-to-existing-pages}
 
@@ -511,7 +511,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 
    ![已解锁的组件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
-* 如果已将某个容器组件解锁（在&#x200B;**结构**&#x200B;模式下），则您可以将新组件添加到该容器（在&#x200B;**初始内容**&#x200B;模式下）。Components added in **Initial Content** mode can be moved on or deleted from resulting pages.
+* 如果已将某个容器组件解锁（在&#x200B;**结构**&#x200B;模式下），则您可以将新组件添加到该容器（在&#x200B;**初始内容**&#x200B;模式下）。可以在生成页面上移动或删除在&#x200B;**初始内容**&#x200B;模式下添加的组件。
 
    您可以通过以下两种方式添加组件：使用&#x200B;**将组件拖动到此处**&#x200B;区域，或使用相应容器工具栏中的&#x200B;**插入新组件**&#x200B;选项。
 
@@ -524,11 +524,11 @@ Under **Policy** you can select an existing policy to apply to the component via
 >
 >初始内容用于准备组件和页面布局，这将作为创建内容的起点。初始内容不能作为保持原样的实际内容。因此，无法翻译初始内容。
 >
->如果需要在模板中包括可翻译的文本（如在页眉或页脚中），则可以使用核 [心组件的本地化功能](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)。
+>如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 编辑模板 - 布局 - 模板作者 {#editing-a-template-layout-template-author}
 
-您可以为各种设备定义模板布局。[模板的响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md) ，与页面创作的响应式布局一样。
+您可以为各种设备定义模板布局。模板的[响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)与页面创作时的响应式布局功能相同。
 
 >[!NOTE]
 >
@@ -536,14 +536,14 @@ Under **Policy** you can select an existing policy to apply to the component via
 
 ![编辑模板布局](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
-### Editing a Template - Page Policy - Template Author/Developer {#editing-a-template-page-policy-template-author-developer}
+### 编辑模板 - 页面策略 - 模板作者/开发人员 {#editing-a-template-page-policy-template-author-developer}
 
-“页面信息”菜单的“页面策略”选项下将维护包含所 **需客户端库的页** 面策略 **** 。
+将在&#x200B;**页面信息**&#x200B;菜单的&#x200B;**页面策略**&#x200B;选项下维护包含所需客户端库的页面策略。
 
-To access the **Page Policy** dialog:
+要访问&#x200B;**页面策略**&#x200B;对话框，请执行以下操作：
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Policy** to open the dialog.
-1. The **Page Policy** dialog opens and is divided into two sections:
+1. 在&#x200B;**模板编辑器**&#x200B;中，从工具栏中选择&#x200B;**页面信息**，然后选择&#x200B;**页面策略**&#x200B;以打开相应的对话框。
+1. 随即会打开&#x200B;**页面策略**&#x200B;对话框，该对话框分成两个部分：
 
    * 左半部分定义了[页面策略](#page-policies)
    * 右半部分定义了[页面属性](#page-properties)
@@ -559,11 +559,11 @@ To access the **Page Policy** dialog:
 
    ![策略选择器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。A new title should then be given in the **Policy Title** field.
+   此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。
 
    ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+   使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。默认情况下，复制的策略的标题将为 **X 的副本**，其中 X 是被复制的策略的标题。
 
    ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -572,13 +572,13 @@ To access the **Page Policy** dialog:
    ![策略标题](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * **策略说明**&#x200B;字段中的策略说明是可选的。
-* In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+* 在&#x200B;**同时使用该选定策略的其他模板**&#x200B;部分中，您可以轻松地查看同时也使用了&#x200B;**选择策略**&#x200B;下拉列表中的选定策略的其他模板。
 
-   ![策略使用](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+   ![策略使用情况](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### 页面属性 {#page-properties}
 
-Using page properties, you can define the required client-side libraries by using the **Page Design** dialog. 这些客户端库包含要与模板以及使用该模板创建的页面一起加载的样式表和 JavaScript。
+使用&#x200B;**页面设计**&#x200B;对话框中的页面属性，您可以定义所需的客户端库。这些客户端库包含要与模板以及使用该模板创建的页面一起加载的样式表和 JavaScript。
 
 ![页面属性](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
