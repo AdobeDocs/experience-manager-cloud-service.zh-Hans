@@ -1,7 +1,7 @@
 ---
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) when editing.
+>如果您的页面和/或模板进行了适当设置，那么您可以在编辑时使用[响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)。
 
 >[!TIP]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+>在&#x200B;**编辑**&#x200B;模式下，内容中的链接是可见的，但是&#x200B;**不可访问**。如果您要使用内容中的链接进行导航，请使用[预览模式](#previewing-pages)。
 
 ## 页面工具栏 {#page-toolbar}
 
@@ -54,13 +54,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    切换[模拟器工具栏](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)，它用于在其他设备上模拟页面的外观。它在布局模式下会自动切换。
 
-   ![模拟器按钮](/help/sites-cloud/authoring/assets/emulator.png)
+   ![“模拟器”按钮](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   打开 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)。 仅在预览模式下可用。
+   打开 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)。仅在预览模式下可用。
 
-   ![Context Hub按钮](/help/sites-cloud/authoring/assets/context-hub.png)
+   ![ContextHub 按钮](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **页面标题**
 
@@ -84,11 +84,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    允许您在审核页面时向页面中添加[注释](/help/sites-cloud/authoring/fundamentals/annotations.md)。添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
 
-   ![注释按钮](/help/sites-cloud/authoring/assets/annotations.png)
+   ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### 状态通知 {#status-notification}
 
-If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+如果页面是一个[工作流](/help/sites-cloud/authoring/workflows/overview.md)或多个工作流的一部分，则在编辑该页面时，将在屏幕顶部的通知栏中显示此信息。
 
 ![工作流通知](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
 
@@ -98,11 +98,11 @@ If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview
 
 通知会列出正在针对页面运行的工作流。如果用户参与了当前工作流步骤，还可以使用[影响工作流状态](/help/sites-cloud/authoring/workflows/participating.md)和获取更多工作流相关信息的选项，例如：
 
-* **完成** -打开“完 **成工作项”对话框**
-* **委派** -打开“完 **成工作项”对话框**
-* **查看详细信息** -打开工作流 **的** “详细信息”窗口
+* **完成** - 打开&#x200B;**完成工作项目**&#x200B;对话框
+* **委派** - 打开&#x200B;**完成工作项目**&#x200B;对话框
+* **查看详细信息** - 打开工作流的&#x200B;**详细信息**&#x200B;窗口
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-cloud/authoring/workflows/participating.md) from the Notification inbox.
+通过通知栏完成和委派工作流步骤，与从“通知”收件箱中[参与工作流](/help/sites-cloud/authoring/workflows/participating.md)的操作方式相同。
 
 如果页面从属于多个工作流，则在通知的右侧端将显示工作流的数量，并且还提供有箭头按钮以允许您滚动浏览工作流。
 
@@ -146,11 +146,11 @@ Completing and delegating workflow steps via the notification bar works as it do
 
       ![插入组件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * 如果您使用的是桌面设备，则可以双击&#x200B;**将组件拖动到此处**&#x200B;框。
 
    * **插入新组件**&#x200B;对话框将打开以允许您选择需要的组件：
 
-      ![插入新组件对话框](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+      ![“插入新组件”对话框](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
 1. 选定的组件将添加到页面底部。根据需要[编辑](#edit-content)组件。
 
@@ -158,7 +158,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 您还可以通过从[资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)拖动资产来向页面添加新组件。这将自动创建相应类型的新组件（并且包含资产）。
 
-可针对您的安装配置此行为。See Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance for further details. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
+可针对您的安装配置此行为。有关更多详细信息，请参阅配置段落系统以便可通过拖动资产创建组件实例。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
 要通过拖动以上某一资产类型创建组件，请执行以下操作：
 
@@ -174,7 +174,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 >
 >在移动设备上，资产浏览器将填满整个屏幕。在开始拖动资产后，浏览器将关闭以再次显示页面，以便您能够放置资产。
 
-If when browsing the assets you find that you need to make a quick change to an asset, you can start the asset editor directly from the browser by clicking the edit icon next to the asset&#39;s name. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+如果您在浏览资产时发现需要对某个资产进行快速更改，则可以直接从浏览器中单击该资产名称旁边的编辑图标，以启动资产编辑器。<!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
 
 ![资产编辑按钮](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -188,13 +188,13 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 * **编辑**
 
-   [根据组件类型](/help/sites-cloud/authoring/fundamentals/components.md) ，此操作将允许您 [编辑组件的内容](#edit-content)。 通常会提供一个工具栏。
+   [根据组件类型](/help/sites-cloud/authoring/fundamentals/components.md)，此操作将允许您[编辑组件的内容](#edit-content)。通常会提供一个工具栏。
 
    ![编辑按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **配置**
 
-   [根据组件类型](/help/sites-cloud/authoring/fundamentals/components.md) ，此操作将允许您编辑和配置组件的属性。 通常会打开一个对话框。
+   [根据组件类型](/help/sites-cloud/authoring/fundamentals/components.md)，此操作将允许您编辑和配置组件的属性。通常会打开一个对话框。
 
    ![“配置”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
@@ -229,7 +229,7 @@ If when browsing the assets you find that you need to make a quick change to an 
    * 您可以粘贴到同一页面或其他页面。
    * 粘贴的项目将被粘贴到选择粘贴操作时所在的项目上方。
    * 仅当剪贴板中含有内容时，才会显示“粘贴”操作。
-   ![粘贴按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+   ![“粘贴”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
    >
@@ -243,15 +243,15 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 * **父项**
 
-   这允许您选择所选组件的父组件。
+   此项允许您选择选定组件的父组件。
 
-   ![父按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+   ![“父项”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **布局**
 
    允许您修改选定组件的[布局](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)。此操作仅适用于选定组件，而不会激活整个页面的[布局模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 
-   ![布局按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **转换为体验片段变量**
 
@@ -284,7 +284,7 @@ If when browsing the assets you find that you need to make a quick change to an 
    >
    >无法对空的图像组件执行编辑操作。
    >
-   >必须先将图像拖动或上传到组件，然后才能开始编辑它。
+   >您必须先将图像拖动或上传到组件，然后才能开始编辑。
 
 * 图像组件 - 全屏
 
@@ -292,13 +292,13 @@ If when browsing the assets you find that you need to make a quick change to an 
 
    ![图像组件的全屏模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
-* 使用多个基本组件构建的组件首先要求您确认所需的编辑选项集：
+* 使用多个基本组件构建的组件首先将要求您确认所需的编辑选项集：
 
 ### 将资产拖放到组件中 {#drag-and-drop-assets-into-component}
 
-对于特定的组件类型（如图像），您可以将资产从资产浏览器直接拖放到组件中以更新内容。
+对于特定的组件类型（例如图像），您可以直接从资产浏览器中将资产拖放到组件中，从而更新内容。
 
-## Edit Content in Full Screen Mode {#edit-content-full-screen-mode}
+## 以全屏模式编辑内容 {#edit-content-full-screen-mode}
 
 对于所有组件，都可以通过以下图标进入（和退出）全屏模式：
 
@@ -306,11 +306,11 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 例如，**文本**&#x200B;组件：
 
-![全屏文本组件](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
+![全屏模式下的文本组件](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
 
 >[!NOTE]
 >
->对于某些组件，全屏模式将具有比基本就地编辑器更多的可用选项。
+>对于某些组件，全屏模式比基本的就地编辑器具有更多的可用选项。
 
 ## 移动组件 {#moving-a-component}
 
@@ -331,13 +331,13 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 您无需为了调整组件而反复不停地从编辑模式切换到[布局模式](/help/sites-cloud/authoring/features/responsive-layout.md)，而是可以为组件选择&#x200B;**布局**&#x200B;操作来更改该组件的布局，在此过程中，由于不必离开编辑模式，从而节省了大量时间。
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. 在站点控制台的&#x200B;**编辑**&#x200B;模式下，选择某个组件会显示该组件的工具栏。
 
    ![页面组件的组件工具栏](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   单击或点按&#x200B;**布局**&#x200B;操作可调整组件的布局。
 
-   ![组件工具栏的布局按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![组件工具栏的“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 1. 在选择“布局”操作后：
 
@@ -346,26 +346,26 @@ If when browsing the assets you find that you need to make a quick change to an 
    * 在组件工具栏中将显示布局操作而不是标准编辑操作。
    ![布局模式下的组件](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+   此时，您便可以像在[布局模式](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)中一样修改组件布局。
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. 组件的工具栏会返回到其正常的编辑状态。
+1. 在进行必要的布局更改后，单击组件操作菜单中的&#x200B;**关闭**&#x200B;按钮以停止修改组件的布局。组件的工具栏会返回到其正常的编辑状态。
 
    ![页面组件的组件工具栏](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
 
 >[!TIP]
 >
->“布局”操作仅限用于选定的组件。例如，如果编辑一个组件的布局，然后单击另一个组件，则新选择的组件将显示标准编辑工具栏（而非布局工具栏），并且大小调整手柄和模拟器工具栏将消失。
+>“布局”操作仅限用于选定的组件。例如，如果您正在编辑一个组件的布局，然后又单击另一个组件，则将为新选择的组件显示标准编辑工具栏（而不是布局工具栏），而大小调整手柄以及模拟器工具栏将会消失。
 >
 >如果您需要编辑影响到多个组件的总体页面布局，请切换到[布局模式](/help/sites-cloud/authoring/features/responsive-layout.md)。
 
 ## 继承组件 {#inherited-components}
 
-继承是一种机制，内容可以从一个组件自动推送到另一个组件。 继承组件可能是多种情况的产物，包括：
+继承是一种机制，通过该机制，可以将内容从一个组件自动推送到另一个组件。继承组件可能是多种情况的产物，包括：
 
 * 多站点管理 <!--[Multi site management](/help/sites-administering/msm.md)-->
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)（当基于 Live Copy 时）。
 
-您可以取消（随后也可以重新启用）继承。根据组件的不同，如果组件位于Live copy或启动项的一个页面（基于Live Copy）中，则可以从组件工具栏中执行此操作。
+您可以取消（随后也可以重新启用）继承。根据组件的不同，如果组件位于 Live Copy 或启动项的一个页面（基于 Live Copy）中，则可以从组件工具栏中执行此操作。
 
 ![显示继承关系的组件工具栏](/help/sites-cloud/authoring/assets/editing-component-toolbar-inheritance.png)
 
@@ -379,13 +379,13 @@ If when browsing the assets you find that you need to make a quick change to an 
 
    ![“重新启用继承”按钮](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
-* 转出操作在Blueprint或Live copy源中也可用
+* “转出”操作也在 Blueprint 或 Live Copy 源中可用
 
-   ![转出按钮](/help/sites-cloud/authoring/assets/editing-rollout.png)
+   ![“转出”按钮](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## 编辑页面模板 {#editing-the-page-template}
 
-通过选择“页面信息”菜单 [中的“编辑模板](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) ”，可以轻松切换 **到模** 板编辑器 [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)。
+您可以通过在[“页面信息”菜单](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)中选择&#x200B;**编辑模板**&#x200B;来轻松切换到[模板编辑器](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors)。
 
 您在[列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)或[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)中选择页面时，可以轻松地查看该页面所基于的模板。
 
@@ -398,7 +398,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 例如：
 
-![显示的Live copy状态示例](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
+![显示的 Live Copy 状态示例](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
 
 ## 添加注释 {#adding-annotations}
 
@@ -420,7 +420,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 >[!NOTE]
 >
->WCM模式Cookie已为这两个预览选项设置。
+>这两个预览选项均可设置 WCM 模式 Cookie。
 
 ### 预览模式 {#preview-mode}
 
@@ -471,11 +471,11 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 
 ## 解锁页面 {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+解锁页面的方法与[锁定页面](#locking-a-page)非常相似。在锁定页面后，锁定选项就会被替换为解锁操作选项。
 
 “页面信息”菜单会将&#x200B;**解锁**&#x200B;列为一个选项，并且站点控制台中的“锁定”图标会被替换为&#x200B;**解锁**&#x200B;图标。
 
-![解锁按钮](/help/sites-cloud/authoring/assets/unlock.png)
+![“解锁”按钮](/help/sites-cloud/authoring/assets/unlock.png)
 
 >[!CAUTION]
 >
@@ -494,8 +494,8 @@ Unlocking a page is very similar to [locking the page](#locking-a-page). Once th
 
 >[!TIP]
 >
->* The [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` is also available to undo page edit actions.
->* The keyboard shortcut `Ctrl-Y` is also available to redo page edit actions.
+>* 也可使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` 撤消页面编辑操作。
+>* 也可使用键盘快捷键 `Ctrl-Y` 重做页面编辑操作。
 
 
 >[!NOTE]
@@ -508,7 +508,7 @@ AEM 会按照您执行操作的顺序来存储这些操作的历史记录，这�
 
 如果选择了内容页面上的某个元素（例如文本组件），则撤消和重做命令将适用于选定的项目。
 
-撤消和重做命令的行为与其他软件中的类似。在您对内容做出决策时，使用这些命令恢复网页的最近状态。 例如，如果您将文本段落移至页面上的其他位置，可以使用撤消命令移回该段落。如果您稍后又认定之前的位置更好，可使用重做命令“撤消之前的撤消操作”。
+撤消和重做命令的行为与其他软件中的类似。在您对内容做出决策时，可使用这些命令恢复网页的最近状态。例如，如果您将文本段落移至页面上的其他位置，可以使用撤消命令移回该段落。如果您稍后又认定之前的位置更好，可使用重做命令“撤消之前的撤消操作”。
 
 例如，您可以：
 
