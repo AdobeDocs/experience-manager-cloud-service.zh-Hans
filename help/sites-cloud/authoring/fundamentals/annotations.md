@@ -1,7 +1,7 @@
 ---
 title: 添加页面注释
 description: 许多与内容直接相关的组件允许您添加注释
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 向网站的页面中添加内容时，通常需要先经过一系列讨论，然后才实际发布网站页面。为了对此有所帮助，与内容有直接关系（举例来说，并非与布局直接相关）的许多组件都允许添加注释。
 
-注释会在页面上放置彩色草图或便签。 您（或其他用户）可以通过注释给其他作者/审阅人留下意见和/或问题。
+页面上的注释以彩色草图/便签显示。您（或其他用户）可以通过注释给其他作者/审阅人留下意见和/或问题。
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!CAUTION]
 >
->删除资源（例如，组件）将删除附加到该资源的所有注释和草图，而不管它们在整个页面上的位置如何。
+>删除资源（例如，组件）会删除附加到该资源的所有注释和草图，无论这些注释和草图处于整个页面的什么位置，均将如此。
 
 >[!NOTE]
 >
->根据您的要求，您还可以开发在添加、更新或删除注释时发送通知的工作流。
+>根据您的要求，您还可以开发一个工作流，用于在添加、更新或删除注释时发送通知。
 
 ### 对组件添加注释 {#annotating-a-component}
 
@@ -35,7 +35,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 编辑页面时，可以使用工具栏（右上方）中的图标进入“注释”模式：
 
-   ![注释按钮](/help/sites-cloud/authoring/assets/annotations.png)
+   ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
 
    此时，您可以查看任何现有的注释。
 
@@ -61,7 +61,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       ![“注释草图”按钮](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      创建草图时，光标将变为十字线。 您可以绘制多条不同的线。草图线反映注释颜色，可以是箭头、圆或椭圆。
+      创建草图时，光标将变成十字线。您可以绘制多条不同的线。草图线反映注释颜色，可为箭头、圆环或椭圆环。
 
    * 选择/更改颜色：
 
@@ -91,7 +91,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->无法将注释添加到已由其他用户锁定的页面。
+>无法将注释添加到其他用户已锁定的页面。
 
 >[!NOTE]
 >
@@ -101,11 +101,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 在“编辑”模式下不会显示注释，但工具栏右上方的徽章会显示当前页面存在的注释数。该徽章取代了默认的“注释”图标，但还可用作打开/关闭“注释”模式的快速链接：
 
-![注释指示符](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+![注释指示器](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
 ## 对其他资源添加注释 {#annotating-other-resources}
 
 除了组件之外，您还可以对各种资源添加注释：
 
-* 注释资产 [注释资产](/help/assets/manage-digital-assets.md#annotating)
-* 对视频资产添加注释 [对视频资产添加注释](/help/assets/manage-video-assets.md#annotate-video-assets)
+* 对资产添加注释[对资产添加注释](/help/assets/manage-digital-assets.md#annotating)
+* 对视频资产添加注释[对视频资产添加注释](/help/assets/manage-video-assets.md#annotate-video-assets)
