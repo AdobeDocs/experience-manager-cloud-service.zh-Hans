@@ -1,7 +1,7 @@
 ---
 title: 您的收件箱
 description: 使用收件箱管理您的任务
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,15 +9,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 您的收件箱 {#your-inbox}
 
-您可以接收来自AEM各个区域（包括工作流和项目）的通知。 例如，您可能会收到有关以下内容的通知：
+您可以接收来自 AEM 各个区域的通知，包括工作流和项目。例如，您可能会收到有关以下内容的通知：
 
 * 任务：
-   * These can also be created at various points within the AEM UI, for example, under **Projects**.
-   * These can be the product of a workflow **Create Task** or **Create Project Task** step.
+   * 这些任务也可以在 AEM UI 的不同位置创建，例如在&#x200B;**项目**&#x200B;下创建。
+   * 这些任务可以是&#x200B;**创建任务**&#x200B;工作流或&#x200B;**创建项目任务**&#x200B;步骤的产物。
 * 工作流：
    * 表示您需要对页面内容执行的操作的工作项
-      * These are the product of workflow **Participant** steps.
-   * 失败项，允许管理员重试失败的步骤
+      * 这些项目是工作流&#x200B;**参与者**&#x200B;步骤的产物。
+   * 失败项目，允许管理员重试失败的步骤
 
 您可以在自己的收件箱中接收这些通知，以便查看并采取相应操作。
 
@@ -49,17 +49,17 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 选择&#x200B;**查看全部**。此时将打开 **AEM 收件箱**。收件箱会显示工作流、项目和任务中的项目。
 1. 默认视图为[列表视图](#inbox-list-view)，但您也可以切换到[日历视图](#inbox-calendar-view)。可通过视图选择器（工具栏，右上角）执行此操作。
 
-   For both views you can also define [View Settings](#inbox-view-settings). The options available are dependent on the current view.
+   对于这两个视图，您还可以定义[视图设置](#inbox-view-settings)。可用选项取决于当前视图。
 
    ![收件箱视图设置](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) or [Search](/help/sites-cloud/authoring/getting-started/search.md) to navigate to another location when you are finished.
+>收件箱作为控制台运行，因此当您完成操作后，可使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)或[搜索](/help/sites-cloud/authoring/getting-started/search.md)导航到其他位置。
 
 ### 收件箱 - 列表视图 {#inbox-list-view}
 
-此视图列出所有项目以及相关信息：
+该视图可列出所有项目以及相关信息：
 
 ![收件箱列表视图](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
@@ -71,10 +71,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 您可以：
 
-* Select a specific view: **Timeline**, **Column**, **List**
-* Specify the tasks to display according to **Schedule**: **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
-* 向下展开以了解有关项目的更多详细信息
-* 选择日期范围以集中查看：
+* 选择一个具体视图：**时间轴**、**列**、**列表**
+* 根据&#x200B;**计划**&#x200B;指定要显示的任务：**全部**、**已计划**、**进行中**、**即将到期**、**已过期**
+* 向下展开以深入了解项目的更多详细信息
+* 选择日期范围以集中显示视图：
 
 ![收件箱日历视图日期范围](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
@@ -99,7 +99,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **排序顺序**
    ![收件箱列表视图设置](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   您还可以将日历委派给其他用户，并请求其他用户委派和管理您的委托。
+   您还可以将日历委派给其他用户，向其他用户请求委派以及管理您的委派。
 
    ![收件箱列表视图委派设置](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -111,16 +111,16 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    这些操作适用于该项目，具体包括：
 
-   * **完整操作** (Complete action)
-   * **委派** （项目）
-   * **打开项** ，根据项的类型，此操作可以：
+   * **完成**&#x200B;操作
+   * **委派**&#x200B;项目
+   * **打开**&#x200B;项目，根据项目类型，此操作可以：
 
       * 显示项目属性
-      * 打开相应的功能板或向导以执行进一步操作
+      * 打开相应的功能板或向导以进一步执行操作
       * 打开相关文档
-   * **回退** 到上一步
+   * **回退**&#x200B;到上一步
    * 查看工作流的有效负荷
-   * 从项目创建项目
+   * 从该项目创建一个项目
    >[!NOTE]
    >
    >有关更多信息，请参阅：
@@ -128,12 +128,12 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >* 工作流项目 - [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. 根据所选项目，将启动一个操作，例如：
+1. 根据所选项目，将会启动相应的操作；例如：
 
    * 将打开与操作对应的对话框
    * 将启动操作向导
    * 将打开文档页面
-   For example, **Delegate** will open a dialog:
+   例如，**委派**&#x200B;操作将打开一个对话框：
 
    ![委派收件箱任务](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
@@ -141,7 +141,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    * 确认相应的操作，例如重新分配。
    * 取消操作
-   * 选择返回箭头可返回到收件箱，例如，如果操作向导或文档页面已打开，则可返回收件箱。
+   * 选择“上一步”箭头可返回到收件箱，例如，如果操作向导或文档页面已打开，则可返回收件箱。
 
 
 ## 创建任务 {#creating-a-task}
@@ -149,14 +149,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 您可以从收件箱中创建任务：
 
 1. 选择&#x200B;**创建**，然后选择&#x200B;**任务**。
-1. Complete the necessary fields in the **Basic** and **Advanced** tabs (only the **Title** is mandatory, all others are optional):
+1. 填写&#x200B;**基本**&#x200B;和&#x200B;**高级**&#x200B;选项卡中的必需字段（只有&#x200B;**标题**&#x200B;是必填项，所有其他字段都是选填项）：
 
    * **基本**：
 
       * **标题**
       * **项目**
       * **被分派人**
-      * **内容**（与“有效负荷”类似）是任务对存储库中某个位置的引用
+      * **内容**，与“有效负荷”类似，这是从任务到存储库中的位置的引用
       * **描述**
       * **任务优先级**
       * **开始日期**
@@ -165,7 +165,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    * **高级**
 
-      * **名称**：此选项将用于形成URL，如果为空，则将基于标 **题**。
+      * **名称**：这将用于组建 URL，如果留空，URL 将会基于&#x200B;**标题**。
    ![收件箱添加任务高级选项](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. 选择&#x200B;**提交**。
@@ -178,9 +178,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >只有使用&#x200B;**收件箱**&#x200B;的&#x200B;**创建**&#x200B;选项创建的任务才能用于创建项目。
    >
-   >工作项（来自工作流）不能用于创建项目。
+   >不能使用工作项（来自工作流）创建项目。
 
 1. 从工具栏中选择&#x200B;**创建项目**&#x200B;以打开向导。
 1. 选择相应的模板，然后选择&#x200B;**下一步**。
@@ -212,7 +212,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![收件箱搜索](/help/sites-cloud/authoring/assets/inbox-search.png)
 
-1. 您可以根据一系列条件筛选列出的项目，其中许多条件可以细化。例如：
+1. 您可以根据一系列条件筛选所列项目，其中许多条件可以进行细化；例如：
 
    ![收件箱搜索筛选器](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
