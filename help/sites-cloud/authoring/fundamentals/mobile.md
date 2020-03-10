@@ -1,7 +1,7 @@
 ---
 title: 创作适用于移动设备的页面
 description: 在为移动设备进行创作时，您可以在多个模拟器之间切换，以查看最终用户看到的内容
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 创作适用于移动设备的页面 {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager页面基于响应式布局。 响应式布局可自动调整内容以适合目标设备，无需为特定设备创作内容。
+Adobe Experience Manager 页面基于响应式布局。响应式布局可自动调整内容以适合目标设备，而无需为特定设备创作内容。
 
 在创作移动页面时，页面会以模拟移动设备的方式显示。在创作页面时，您可以在多个模拟器之间切换，以查看最终用户在访问页面时看到的内容。
 
@@ -17,9 +17,9 @@ Adobe Experience Manager页面基于响应式布局。 响应式布局可自动�
 
 >[!NOTE]
 >
->要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。请参阅为不同渠道创建Live Copy。
+>要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。请参阅“为不同的渠道创建 Live Copy”。
 >
->AEM开发人员可以创建新设备组。 请参阅创建设备组过滤器。
+>AEM 开发人员可以创建新设备组。请参阅“创建设备组筛选器”。
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
@@ -28,18 +28,18 @@ Adobe Experience Manager页面基于响应式布局。 响应式布局可自动�
 
 请使用以下过程来创作移动页面：
 
-1. From global navigation open the **Sites** console.
+1. 从全局导航中打开&#x200B;**站点**&#x200B;控制台。
 1. 编辑内容页面。
-1. Switch to the desired emulator by clicking the **Emulator** icon at the top of the page.
+1. 单击页面顶部的&#x200B;**模拟器**&#x200B;图标以切换到所需的模拟器。
 
-   ![模拟器图标](/help/sites-cloud/authoring/assets/emulator.png)
+   ![“模拟器”图标](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. 将组件浏览器或资产浏览器中的组件拖放到页面上。
-1. [根据所选设备](/help/sites-cloud/authoring/features/responsive-layout.md) ，修改页面及其组件的响应式布局。
+1. 根据所选设备[修改页面及其组件的响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)。
 
-该页面的外观将类似于以下内容：
+该页面将与下图所示类似：
 
-![移动示例](/help/sites-cloud/authoring/assets/mobile.png)
+![移动设备示例](/help/sites-cloud/authoring/assets/mobile.png)
 
 >[!NOTE]
 >
