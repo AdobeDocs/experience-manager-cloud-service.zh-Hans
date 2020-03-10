@@ -1,18 +1,18 @@
 ---
 title: 页面创作快速入门指南
-description: 快速、高级的指南，帮助您开始创作页面内容
-translation-type: tm+mt
+description: 这是一个概要性快速指南，可帮助您开始创作页面内容
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Quick Start Guide to Authoring Pages {#quick-guide-to-authoring-pages}
+# 页面创作快速入门指南 {#quick-guide-to-authoring-pages}
 
-本文档旨在作为AEM中关键页面创作操作的高级快速入门指南。 本文档：
+本文档旨在作为 AEM 中关键页面创作操作的概要性快速入门指南。本文档：
 
-* 并非全面覆盖。
-* 提供指向详细文档的链接。
+* 并不提供全面的介绍。
+* 但提供了详细文档的链接。
 
 有关使用 AEM 进行创作的完整详细信息，请参阅：
 
@@ -21,7 +21,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 一些快速提示 {#a-few-quick-hints}
 
-在开始快速入门指南之前，下面是一小组一般提示和提示，您应牢记这些提示，它们分为创作系统的各个区域。
+在开始使用快速入门指南之前，请查看下面列出的一些常规提示，您应牢记这些提示，并根据创作系统的各个区域分别使用它们。
 
 ### 在站点控制台中 {#sites-console}
 
@@ -31,7 +31,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * 重新排序页面
 
-   * This can be done in [List View](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+   * 此操作可在[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)中完成。更改将在其他视图中应用并可见。
 
 ### 页面创作 {#page-authoring}
 
@@ -42,7 +42,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [查看已发布的项目](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* Versions are not started/created from the page editor. This is now done from the **Sites** console (via either **Create** or [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) for a selected resource).
+* 无法从页面编辑器启动/创建版本。现在，可以从&#x200B;**站点**&#x200B;控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)）。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![查看选择下拉列表](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which allows you to return to the selected location:
+1. 使用[标头中的痕迹导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)对树进行向上导航，这允许您返回到选定的位置：
 
    ![痕迹导航下拉列表](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -87,7 +87,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 选择页面的方式取决于您在控制台中所使用的视图：
 
-1. 列视图:
+1. 列视图：
 
    * 点按/单击所需资源的缩略图 - 缩略图上将覆盖一个勾号，表示已选择该页面。
 
@@ -97,21 +97,21 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 卡片视图：
 
-   * Enter selection mode by [selecting the required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). 具体操作方式取决于您的设备：
+   * 通过[选择所需的资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)进入选择模式。具体操作方式取决于您的设备：
 
-      * 在移动设备上：点击并按住卡
-      * 在桌面设备上：使用勾 [号图标表示的](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) “快速操作”:
+      * 在移动设备上：点按并按住卡片
+      * 在桌面设备上：使用勾号图标表示的[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)：
    * 卡片上将覆盖一个勾号，表示已选择该页面。
-   ![示例卡](/help/sites-cloud/authoring/assets/card.png)
+   ![示例卡片](/help/sites-cloud/authoring/assets/card.png)
 
-### Quick Actions (Card View/Desktop Only) {#quick-actions-card-view-desktop-only}
+### 快速操作（仅限卡片视图/桌面）{#quick-actions-card-view-desktop-only}
 
 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)可用：
 
 1. [导航](#finding-your-page)到要执行操作的页面。
-1. 将鼠标指针悬停在表示所需资源的卡上。此时将显示快速操作：
+1. 将鼠标指针悬停在代表所需资源的卡片上方。将会显示快速操作：
 
-   ![卡操作](/help/sites-cloud/authoring/assets/card-actions.png)
+   ![卡片操作](/help/sites-cloud/authoring/assets/card-actions.png)
 
 ### 编辑页面内容 {#editing-your-page-content}
 
@@ -124,16 +124,16 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    可以从以下位置访问该图标：
 
-   * [相应资源的快速操作（仅限卡片视图／桌面）](#quick-actions-card-view-desktop-only) 。
+   * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
    * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 
 1. 编辑器打开后，您可以：
 
-   * [通过以下方式将新组件添加到页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component) :
+   * 通过以下方式[向页面中添加新组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component)：
 
       * 打开侧面板
-      * Selecting the components tab (the [components browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser))
-      * 将所需的组件拖动到页面上。
+      * 选择组件选项卡（[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)）
+      * 将所需组件拖放到页面中。
       可以通过以下图标打开（或关闭）侧面板：
 
       ![侧面板切换按钮](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -151,17 +151,17 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 通过以下任一方式[移动组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)：
 
       * 将所需组件拖动到新位置。
-      * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+      * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
    * [复制（并粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
-      * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
+      * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
    >[!NOTE]
    >
    >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
 
    * [删除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
-      * Open the component toolbar with either tap or click, then use the **Delete** icon.
+      * 通过点按或单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
    * 向页面[添加注释](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations)：
 
       * 选择&#x200B;**注释**&#x200B;模式（对话气泡图标）。使用&#x200B;**添加注释**（加号）图标添加注释。使用右上方的 X 退出注释模式。
@@ -184,11 +184,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    1. [导航](#finding-your-page)到要发布的页面。
    1. 从以下任一位置选择&#x200B;**属性**&#x200B;图标：
 
-      * [相应资源的快速操作（仅限卡片视图／桌面）](#quick-actions-card-view-desktop-only) 。
+      * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
       * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
       ![“属性”按钮](/help/sites-cloud/authoring/assets/properties.png)
 
-   1. 此时将显示页面属性。 您可以进行需要的更新，然后使用“保存”保留这些更改
+   1. 将会显示页面属性。您可以进行需要的更新，然后使用“保存”保留这些更改
 
 
 * 在[编辑页面](#editing-your-page-content)时：
@@ -198,16 +198,16 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       ![“页面信息”按钮](/help/sites-cloud/authoring/assets/page-information.png)
 
-### Publishing Your Page (or Unpublishing) {#publishing-your-page-or-unpublishing}
+### 发布页面（或取消发布）{#publishing-your-page-or-unpublishing}
 
 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)（和取消发布）的方法主要有两种：
 
 * 从&#x200B;**站点**&#x200B;控制台中：
 
    1. [导航](#finding-your-page)到要发布的页面。
-   1. Select the **Quick Publish** icon from either:
+   1. 从以下任一位置选择&#x200B;**快速发布**&#x200B;图标：
 
-      * [相应资源的快速操作（仅限卡片视图／桌面）](#quick-actions-card-view-desktop-only) 。
+      * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
       * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏（还可以访问[稍后发布](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)）。
       ![“快速发布”按钮](/help/sites-cloud/authoring/assets/quick-publish.png)
 
@@ -236,20 +236,20 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
    然后，取决于您的操作：
 
-   * 复制:
+   * 复制：
 
-      * 复制后，您将需要导航到新位置并进行粘贴：
-   * 移动:
+      * 复制后，您将需要导航到新位置并进行粘贴。
+   * 移动：
 
       * 将打开相应的向导来收集移动页面时所需的信息。按照屏幕上的说明操作。
-   * 删除:
+   * 删除：
 
       * 系统将要求您确认该操作。
    >[!NOTE]
    >
    >快速操作中并未提供“删除”操作。
 
-### Locking Your Page (then Unlocking) {#locking-your-page-then-unlocking}
+### 锁定页面（然后解锁）{#locking-your-page-then-unlocking}
 
 [锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)可防止其他作者在您处理页面的同时也对其进行编辑。可以在下列位置找到“锁定”（和“解锁”）图标/按钮：
 
@@ -283,7 +283,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![时间轴视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tap/click on the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
+1. 点按/单击“时间轴”列右下方的省略号以显示其他按钮，包括&#x200B;**另存为版本**。
 
    ![时间轴视图](/help/sites-cloud/authoring/assets/timeline-view.png)
 
