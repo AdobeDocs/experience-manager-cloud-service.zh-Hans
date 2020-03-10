@@ -1,7 +1,7 @@
 ---
 title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 | 位置 | 快捷键 | 描述 |
 |---|---|---|
 | 常规 | `Ctrl+Click` | 多选 |
-| 控制台——列视图和内容视图 | `Right Arrow` | 向下导航您的网站结构/展开树节点 |
+| 控制台 - 列视图和内容视图 | `Right Arrow` | 向下导航您的网站结构/展开树节点 |
 |  | `Left Arrow` | 向上导航树结构/折叠树节点 |
 |  | `Down Arrow` | 在同一级别的页面列表中向下移动 |
 |  | `Up Arrow` | 在同一级别的页面列表中向上移动 |
@@ -22,7 +22,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 |  | `Esc` | 在同一级别的页面列表中向上移动 |
 | 控制台 | `?` | 键盘快捷键帮助 |
 |  | `/` | 调用[搜索](/help/sites-cloud/authoring/getting-started/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | 切换要查看的[边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)选项 |
 |  | ` | 隐藏边栏 |
 |  | `e` | 编辑 |
 |  | `p` | 属性 |
@@ -36,7 +36,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 特定于操作系统的修饰符键 {#os-specific-modifier-keys}
 
-用于键盘快捷键的修饰符键因客户端所使用的操作系统而异。
+用于键盘快捷键的修饰符键因客户端使用的操作系统而有所不同。
 
 | Windows/Linux | macOS |
 |---|---|
