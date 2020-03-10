@@ -1,7 +1,7 @@
 ---
 title: 组件
-description: 组件是AEM中内容页面的基本创作构建块
-translation-type: tm+mt
+description: 组件是 AEM 中内容页面的基本创作构建基块
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 组件 {#components}
 
-组件是Adobe Experience Manager(AEM)中内容页面的基本创作构件。 图像、文本、标题等组件 可轻松拖放以构建内容。
+组件是 Adobe Experience Manager (AEM) 中内容页面的基本创作构建基块。可轻松拖放图像、文本、标题等组件以构建内容。
 
 AEM 附带多种现成的组件，这些组件为网站作者提供了全面功能。在[编辑页面](/help/sites-cloud/authoring/fundamentals/editing-content.md)时，这些组件可供使用，并且为便于筛选，这些组件按主要功能区域（称为组件组）进行分组。
 
@@ -33,14 +33,14 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ## 全部组件概述 {#overview-of-all-components}
 
-The [Components Console](/help/sites-cloud/authoring/features/components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. 您可以查看有关单个组件及其用途的关键信息。
+[组件控制台](/help/sites-cloud/authoring/features/components-console.md)对 AEM 安装提供的组件组和组件进行了概述。您可以查看有关单个组件及其用途的关键信息。
 
 ## 核心组件 {#core-components}
 
-The [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
-它们是使用AEM最佳实践构建的，是AEM创作体验的基础。 开发人员可以轻松扩展核心组件，以满足特定项目需求。
+它们是使用 AEM 最佳实践构建的，是 AEM 创作体验的基础。开发人员可以轻松扩展核心组件，以满足特定项目需求。
 
 ### 配置模板 {#configuring-templates}
 
-If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/features/templates.md) enable/disable these and edit parameters for specific components.
+如果您的页面基于建议的现代化可编辑的模板，则可以通过[编辑模板](/help/sites-cloud/authoring/features/templates.md)来启用/禁用这些组件及编辑特定组件的参数。
