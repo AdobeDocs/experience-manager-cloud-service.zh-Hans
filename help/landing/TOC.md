@@ -2,7 +2,7 @@
 sub-product: Adobe Experience Manager as a Cloud Service Help
 user-guide-title: Adobe Experience Manager as a Cloud Service Help
 translation-type: tm+mt
-source-git-commit: 90f9bf1484d8a886c3309ccc8b01752934255906
+source-git-commit: b4147948c28a7aad277eda24f9c80f99b9f39d32
 
 ---
 
@@ -20,4 +20,3 @@ source-git-commit: 90f9bf1484d8a886c3309ccc8b01752934255906
 + [实施 AEM 云服务的应用程序](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/home.html)
 + [实施 AEM 云服务的连接器 ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/connectors/home.html)
 + [AEM 云服务的操作和维护](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/operations/home.html)
-+ [以云服务的形式转到AEM](/help/move-to-cloud-service/home.md)
