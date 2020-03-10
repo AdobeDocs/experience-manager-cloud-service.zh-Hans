@@ -1,7 +1,7 @@
 ---
 title: 配置帐户环境
 description: AEM 提供了用于配置帐户和创作环境的某些方面的功能
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -13,16 +13,16 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 通过使用[标题](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)和关联的[我的首选项](#my-preferences)对话框中的[用户](#user-settings)选项，您可以修改用户选项。
 
-Begin by accessing the [User](#user-settings) option in the header.
+首先，访问标题中的[用户](#user-settings)选项。
 
 ## 用户设置 {#user-settings}
 
 在&#x200B;**用户**&#x200B;设置对话框中，您可以访问：
 
 * 模拟为
-   * With the Impersonate as functionality, a user can work on behalf of another user. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+   * 借助“模拟为”功能，用户可以代表其他用户工作。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * 个人资料
-   * Offers a convenient link to your user settings <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * 提供一个指向您的用户设置的便捷链接 <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [我的首选项](#my-preferences)
    * 指定用户特有的各种首选项设置
 
@@ -90,4 +90,4 @@ Begin by accessing the [User](#user-settings) option in the header.
 
 * **Stock 配置**
 
-   This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled Adobe Stock integration. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   此选项允许指定首选的 Adobe Stock 配置，并且仅在系统管理员已启用 Adobe Stock 集成时才可用。<!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
