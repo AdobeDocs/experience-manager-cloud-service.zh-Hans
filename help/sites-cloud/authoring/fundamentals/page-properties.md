@@ -1,7 +1,7 @@
 ---
 title: 编辑页面属性
 description: 为页面定义所需的属性
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **标记**
 
-   * 在此，您可以通过更新选择框中的列表在页面中添加或删除标记。
+   * 在此，可以通过更新选择框中的列表在页面中添加或删除标记。
    * 选择标记后，它会列在选择框下。您可以使用“x”从此列表中删除标记。
    * 可通过在空白选择框中键入名称输入全新标记。
       * 按 Enter 将创建新标记。
@@ -61,12 +61,12 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **结束时间**
 
    * 将取消激活已发布页面的时间。
-   * 将这些字段留空以立即执行操作。
+   * 将这些字段留空以便立即执行操作。
 
 * **虚 URL**
 
    * 允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
-   * 例如，如果虚URL设置为 `welcome` 由网站路径标识的页 `/v1.0/startpage` 面，则 `http://example.com`该URL `http://example.com/welcome` 应该是 `http://example.com/content/v1.0/startpage`
+   * 例如，如果将网站 `http://example.com` 的虚 URL 设置为由路径 `/v1.0/startpage` 标识的 `welcome` 页面，则 `http://example.com/welcome` 将成为 `http://example.com/content/v1.0/startpage` 的虚 URL
    >[!CAUTION]
    >
    >虚 URL：
@@ -99,11 +99,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 指定要用于此页面的别名。
    >[!NOTE]
    >
-   >Alias设置属 `sling:alias` 性以定义资源的别名（这仅影响资源，不影响路径）。
+   >别名会设置 `sling:alias` 属性以定义资源的别名（这仅会影响资源，不会影响路径）。
    >
-   >例如：如果为节点定义 `latin-lang` 别名，则 `/content/we-retail/spanish` 可通过 `/content/we-retail/latin-language`
+   >例如：如果您为节点 `/content/we-retail/spanish` 定义别名 `latin-lang`，则可以通过 `/content/we-retail/latin-language` 访问此页面。
    >
-   >有关详细信息，请参阅SEO和URL管理最佳实践下的本地化页面名称。
+   >有关详细信息，请参阅“SEO 和 URL 管理最佳实践”下的“本地化的页面名称”。
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -159,7 +159,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **社交媒体共享**
 
-   定义页面上可用的共享选项。显示可用于[共享核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)的选项。
+   定义页面上可用的共享选项。显示可用于[共享核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/sharing.html)的选项。
 
    * **为 Facebook 启用用户共享**
    * **为 Pinterest 启用用户共享**
@@ -170,13 +170,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **云服务**
 
-   * Define properties for cloud services. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * 为云服务定义属性。<!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
 ### 个性化 {#personalization}
 
 * **ContextHub 配置**
 
-   * Select the ContextHub Configuration and Segments Path. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * 选择 ContextHub 配置和区段路径。<!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
 
 * **定位配置**
 
@@ -194,14 +194,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **Blueprint**
 
-   * Define properties for a Blueprint page within multi-site management. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 在多站点管理中为 Blueprint 页面定义属性。<!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * 控制将修改传播到 Live Copy 的情况。
 
 ### Live Copy {#live-copy}
 
 * **Live Copy**
 
-   * Define properties for a Live Copy page within multi-site management. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 在多站点管理中为 Live Copy 页面定义属性。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * 控制将从 Blueprint 中传播修改的情况。
 
 ### 站点结构 {#site-structure}
@@ -212,18 +212,18 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * 从&#x200B;**站点**&#x200B;控制台中：
    * [创建一个新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)（一部分属性）
-   * Clicking or tapping **Properties**
+   * 单击或点按&#x200B;**属性**
       * 单个页面
       * 多个页面（只有一部分属性可用于整体编辑）
 * 从页面编辑器中：
-   * Using **Page Information** (then **Open Properties**)
+   * 使用&#x200B;**页面信息**（然后&#x200B;**打开属性**）
 
 ### 从“站点”控制台中 - 单个页面 {#from-the-sites-console-single-page}
 
 单击或点按&#x200B;**属性**&#x200B;以定义页面属性：
 
-1. 使用“**站点**”控制台，导航到要查看和编辑属性的页面位置。
-1. Select the **Properties** option for the required page using either:
+1. 使用&#x200B;**站点**&#x200B;控制台，导航到要查看和编辑属性的页面位置。
+1. 使用以下任一方式为所需的页面选择&#x200B;**属性**&#x200B;选项：
    * [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * 此时将使用相应的选项卡显示页面属性。
@@ -236,7 +236,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 打开要编辑属性的页面。
 1. 选择&#x200B;**页面信息**&#x200B;图标以打开选择菜单：
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. 工具栏右侧还有以下按钮：
+1. 选择&#x200B;**打开属性**，此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。工具栏右侧还有以下按钮：
    * **取消**
    * **保存并关闭**
 1. 使用&#x200B;**保存并关闭**&#x200B;按钮以保存更改。
@@ -261,7 +261,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * 在浏览&#x200B;**站点**&#x200B;控制台时
 * 在使用&#x200B;**搜索**&#x200B;找到一组页面后
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+选择页面后，单击或点按&#x200B;**属性选项**，此时将会显示批量属性：
 
 ![批量编辑页面属性](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -292,7 +292,7 @@ After selecting the pages and then clicking or tapping the **Properties option**
    * 您可以更新可用字段中的值。
       * 当您选择&#x200B;**完成**&#x200B;时，新值将会应用于所有选定页面。
       * 当字段有多个值时（例如“标记”），您可以附加一个新值，也可以删除相同的值。
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 编辑此类字段时应格外小心，以防数据丢失。
+   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。编辑此类字段时应格外小心，以防数据丢失。
 
 >[!NOTE]
 >
