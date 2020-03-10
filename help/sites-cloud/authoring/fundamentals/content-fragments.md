@@ -1,7 +1,7 @@
 ---
 title: 内容片段
-description: Adobe Experience manager作为云服务内容片段，允许您设计、创建、管理和使用独立于页面的内容
-translation-type: tm+mt
+description: Adobe Experience Manager 云服务内容片段允许您设计、创建、策划和使用独立于页面的内容
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -20,14 +20,14 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**是 AEM 中的两个不同功能：
 >
 >* **内容片段**&#x200B;是可编辑的内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
->* **体验片段** ，内容布局完全，因此网页的片段。
+>* **体验片段**&#x200B;是经过充分布局的内容，网页即属于此类片段。
 >
 >
 体验片段可以包含内容片段形式的内容，反之则不行。
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>本页必须结合[使用内容片段](/help/assets/content-fragments/content-fragments.md)（及相关页面）一起阅读，因为它不仅介绍了基本术语和概念，还介绍了如何创建和管理片段。
 
 内容片段允许：
 
@@ -53,13 +53,13 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
 1. 打开您的页面进行编辑。
 2. 添加&#x200B;**内容片段**&#x200B;组件；通过&#x200B;**组件**&#x200B;浏览器或&#x200B;**插入新组件**。
 3. 您可以：
-   * Open the **Assets** browser and filter for **Content Fragments** (the default is Images). 然后，将所需的片段拖到组件实例上。
+   * 打开&#x200B;**资产**&#x200B;浏览器并筛选&#x200B;**内容片段**（默认为图像）。然后，将所需的片段拖到组件实例上。
    * 选择内容片段组件，然后从工具栏中选择&#x200B;**配置**。在对话框中，您可以打开选择对话框以浏览并选择所需的&#x200B;**内容片段**。
    >[!NOTE]
    >
    >备选方法是将特定的内容片段直接拖到页面上。这将自动创建关联的组件（内容片段）。
 
-4. Initially the content from the **Main** Element and **Master** (variation) will be shown. 您可以根据需要[选择其他元素和/或变量](#selecting-the-element-or-variation)。
+4. 最初，将显示&#x200B;**主**&#x200B;元素和&#x200B;**母版**（变量）中的内容。您可以根据需要[选择其他元素和/或变量](#selecting-the-element-or-variation)。
 
    ![资产浏览器中的内容片段](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -94,7 +94,7 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
    * 如果变量是为片段而创建的，将有可选择的变量可用。
 * **段落**：指定要包含的段落范围：
    * **全部**
-   * **范围**:例如， `1`, `3-5``9-*`
+   * **范围**：例如 `1`、`3-5`、`9-*`
       * **将标题处理为它们自己的段落**
 * **将标题处理为它们自己的段落**
 
@@ -116,7 +116,7 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
 
 * 从[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)添加组件。
 * 从[资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)添加资产。
-* Use [Associated Content](#using-associated-content) as a source for in-between content.
+* 使用[关联内容](#using-associated-content)作为中间内容的源。
 
 >[!CAUTION]
 >
@@ -134,10 +134,10 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
 >
 >在将中间内容添加到页面上的内容片段之后，更改基础内容片段的结构（例如在内容片段编辑器中）可能会导致错误/意外的结果。
 >
->发生这种情况时，中间内容会按原样保留：
+>在发生此问题时，中间内容会按原样保留：
 >
 >* 中间组件在片段流的组件序列中具有一个绝对位置。即使片段中段落的内容发生更改，此位置也不会变化。
-   >  这可能使其看起来好像相对位置已更改，因为中间段落与它们旁边的（片段）段落没有上下文关系。
+   >  这可能使其看起来像是相对位置发生了更改一样，因为中间段落与它们旁边的（片段）段落之间没有上下文关系。
 >* 除非两个段落结构产生冲突；在这种情况下，将不会显示中间内容（尽管它在内部依然存在）。
 
 
@@ -163,7 +163,7 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
 
 如果已在片段本身中插入资产（例如图像），则页面编辑器中用于编辑这些资产的选项会受到限制。
 
-例如，对于图像，您可以
+例如，您可以对图像执行以下操作
 
 * 裁剪、旋转或翻转图像。
 * 添加标题或替换文本。
