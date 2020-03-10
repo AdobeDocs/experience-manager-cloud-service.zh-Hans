@@ -1,7 +1,7 @@
 ---
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 创作环境和工具 {#authoring-the-environment-and-tools}
 
-AEM的创作环境提供了各种用于组织和编辑内容的机制。可以从各种控制台和页面编辑器访问提供的工具。
+AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可以从各种控制台和页面编辑器访问提供的工具。
 
 ## 管理您的网站 {#managing-your-site}
 
-The **Sites** console allows you to navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs, and, when selected, secondary rails (for example, timeline and references).
+**站点**&#x200B;控制台允许您使用标题栏、工具栏、操作图标（适用于所选资源）和痕迹导航来导航和管理您的网站，选择后还可使用辅助边栏（例如时间轴和引用）。
 
 例如，列视图：
 
@@ -37,18 +37,18 @@ The **Sites** console allows you to navigate and manage your website, using the 
 
 在编辑页面时，**帮助**&#x200B;可从以下位置访问：
 
-* The [**Page Information **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)selector which shows the introductory slides (as shown the first time you access the editor)
-* The [configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) dialog for specific components (using the ? 图标)，其中显示上下文相关帮助
+* [**页面信息&#x200B;**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)选择器，这将显示幻灯片介绍（在您第一次访问编辑器时显示）
+* 适用于特定组件的[配置](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)对话框（使用对话工具栏中的 ? 图标），其中将显示上下文相关帮助
 
 其他[与帮助相关的资源可以从控制台中访问](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)。
 
 ## 组件浏览器 {#components-browser}
 
-组件是AEM内容的构建块。 您将多个组件放在一个页面上并配置其选项，以便使用AEM构建内容页面。
+组件是 AEM 内容的构建基块。您可以将多个组件放在一个页面上并配置其选项，以便使用 AEM 构建内容页面。
 
 组件浏览器会显示当前页面上可用的所有组件。这些组件可拖动至相应的位置，然后进行编辑以添加您的内容。
 
-The components browser is a tab within the side panel (together with the [assets browser](#assets-browser) and [content tree](#content-tree)). 要打开（或关闭）侧面板，请使用工具栏左上方的图标：
+组件浏览器是侧面板中的一个选项卡（侧面板中还有[资产浏览器](#assets-browser)和[内容树](#content-tree)）。要打开（或关闭）侧面板，请使用工具栏左上方的图标：
 
 ![侧面板切换](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
@@ -70,7 +70,7 @@ The components browser is a tab within the side panel (together with the [assets
 
    要向页面添加组件，请单击所需的组件，然后将其拖动到所需的位置。
 
-   ![桌面上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+   ![桌面设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
    组件通过以下形式来表示
 
@@ -78,12 +78,12 @@ The components browser is a tab within the side panel (together with the [assets
    * 组件组（灰色）
    * 图标或缩写
       * 标准组件的图标是单色的。
-      * 缩写始终是组件名称的前两个字符。
+      * 缩写始终由组件名称的前两个字符组成。
    从&#x200B;**组件**&#x200B;浏览器顶部的工具栏可以：
 
    * 按名称筛选组件。
    * 使用下拉选择框将显示内容限定为特定组。
-   有关组件的更详细说明，可以单击或点按&#x200B;**组件**&#x200B;浏览器中组件旁边的信息图标（如果有）。例如，对于内容 **片段**:
+   有关组件的更详细说明，可以单击或点按&#x200B;**组件**&#x200B;浏览器中组件旁边的信息图标（如果有）。例如，对于&#x200B;**内容片段**：
 
    ![组件浏览器信息](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -95,9 +95,9 @@ The components browser is a tab within the side panel (together with the [assets
 
 ## 资产浏览器 {#assets-browser}
 
-The assets browser shows all assets that are available for direct use on your current page. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+资产浏览器会显示当前页面上可直接使用的所有资产。<!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
 
-The assets browser is a tab within the side panel along with the [components browser](#components-browser) and [content tree](#content-tree). 要打开或关闭侧面板，请使用工具栏左上角的图标：
+资产浏览器是侧面板中的一个选项卡，侧面板中还有[组件浏览器](#components-browser)和[内容树](#content-tree)。要打开或关闭侧面板，请使用工具栏左上角的图标：
 
 ![侧面板切换](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
@@ -114,7 +114,7 @@ The assets browser is a tab within the side panel along with the [components bro
 * 相应类型的现有组件。
    * 例如，可以将图像类型的资产拖动到图像组件上。
 * 段落系统中用于创建相应类型新组件的[占位符](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder)。
-   * 例如，您可以将图像类型的资产拖动到段落系统上以创建图像组件。
+   * 例如，可以将图像类型的资产拖动到段落系统中，以创建图像组件。
 
 >[!NOTE]
 >
@@ -144,13 +144,13 @@ The assets browser is a tab within the side panel along with the [components bro
 
    要向页面添加资产，请单击所需的资产，然后将其拖动到所需的组件或位置。
 
-   ![桌面上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+   ![桌面设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
 >在宽度小于 1024 像素时将视为检测到移动设备，这种情况也可能出现在较小的桌面窗口中。
 
-If you need to quickly make a change to an asset, you can start the asset editor directly from the asset browser by clicking the edit icon shown next to the asset&#39;s name. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+如果您需要快速更改资产，可以直接从资产浏览器启动资产编辑器，方法是单击资产名称旁边显示的编辑图标。<!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
 
 ![资产编辑按钮](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -162,35 +162,35 @@ If you need to quickly make a change to an asset, you can start the asset editor
 
 ![“内容树”按钮](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-打开侧面板时，它将（从左侧）滑开。Select the **Content Tree** tab if necessary. 打开该选项卡后，您会看到页面或模板的树视图表现形式，以便您更方便地了解其内容的层次构成方式。此外，您还可以更轻松地在复杂页面上的组件之间进行跳转。
+打开侧面板时，它将（从左侧）滑开。根据需要选择&#x200B;**内容树**&#x200B;选项卡。打开该选项卡后，您会看到页面或模板的树视图表现形式，以便您更方便地了解其内容的层次构成方式。此外，您还可以更轻松地在复杂页面上的组件之间进行跳转。
 
 ![内容树](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
-页面可以由许多相同类型的组件轻松组成，因此内容（组件）树在组件类型名称（黑色）后显示描述性文本（灰色）。 描述性文本来自组件的常见属性，例如标题或文本。
+页面可以由许多相同类型的组件轻松组成，因此内容（组件）树会在组件类型名称（黑色）之后显示描述性文本（灰色）。描述性文本来自组件的常见属性，例如标题或文本。
 
 组件类型将以用户语言显示，而组件描述文本将来自页面语言。
 
 单击组件旁边的 V 形图标将折叠或展开该级别。
 
-![内容树V形扩展](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
+![内容树 V 形扩展](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
 
 单击组件将在页面编辑器中突出显示组件。可用的操作将取决于页面状态：
 
 * 例如，基本页面：
 
-   ![内容树高亮显示](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+   ![突出显示的内容树](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
    基本页面的组件将具有常用选项。
 
    如果在树中单击的组件是可编辑的，则会在其名称右侧显示一个扳手图标。单击此图标将直接启动组件的编辑对话框。
 
-   ![“内容树编辑”按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+   ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 作为Live copy的一部分的页面（其中组件从其他页面继承）将减少选择的选项，包括继承选项。 <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* 对于属于 Live Copy 的一部分且组件继承自其他页面的页面，可供选择的选项将会有所减少，包括继承选项。<!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
 
 >[!NOTE]
 >
->如果您正在移动设备上编辑页面（如果浏览器宽度小于1024px），则内容树不可用。
+>如果您正在浏览器宽度小于 1024 像素的移动设备上编辑页面，则内容树将不可用。
 
 ## 片段 - 关联的内容浏览器 {#fragments-associated-content-browser}
 
@@ -207,7 +207,7 @@ If you need to quickly make a change to an asset, you can start the asset editor
 * 传入链接
 * 对引用组件的使用：借入和借出的内容
 
-Open the required console, then navigate to the required resource and open **References** using:
+打开所需的控制台，然后导航到所需资源并使用以下方法打开&#x200B;**引用**：
 
 ![引用选项](/help/sites-cloud/authoring/assets/references.png)
 
@@ -219,16 +219,16 @@ Open the required console, then navigate to the required resource and open **Ref
 
 * **传入链接**，在选择特定链接后提供引用页面的页面列表，并可直接访问以&#x200B;**编辑**&#x200B;这些页面之一
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
-* [启动项](/help/sites-cloud/authoring/launches/overview.md)，允许访问相关启动项
-* Live Copies displays the paths of all live copies that are based on the selected resource. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Blueprint provides details and various actions <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Languages Copies provides details and various actions <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [启动项](/help/sites-cloud/authoring/launches/overview.md)，提供对相关启动项的访问权
+* Live Copy 显示基于选定资源的所有 Live Copy 的路径。<!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
+* Blueprint 提供详细信息和各种操作 <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
+* 语言副本提供详细信息和各种操作 <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
 
 ## 事件 - 时间轴 {#events-timeline}
 
 对于相应的资源（例如&#x200B;**站点**&#x200B;控制台中的页面或&#x200B;**资产**&#x200B;控制台中的资产），[可使用时间轴显示任何选定项目上的近期活动](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)。
 
-Open the required console, then navigate to the required resource and open **Timeline**, using:
+打开所需的控制台，然后导航到需要的资源并使用以下方法打开&#x200B;**时间轴**：
 
 ![时间轴选项](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -238,7 +238,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 ## 页面信息 {#page-information}
 
-页面信息（均衡器图标）会打开一个菜单，其中还提供有关上次编辑和上次发布的详细信息。 根据页面、其站点和您的实例的特性，可用的选项可能会更多，也可能会更少：
+“页面信息”（均衡器图标）会打开一个菜单，其中也会提供有关上次编辑和上次发布的详细信息。根据页面、其站点和您的实例的特性，可用的选项可能会更多，也可能会更少：
 
 ![页面信息选项](/help/sites-cloud/authoring/assets/page-information.png)
 
@@ -252,7 +252,7 @@ Open the required console, then navigate to the required resource and open **Tim
 * [查看已发布的项目](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [以管理员身份查看](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [帮助](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
-* [提升启动项](/help/sites-cloud/authoring/launches/promoting.md) （仅当页面是启动项时）
+* [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)（如果该页面是启动项）
 
 另外，在适当时，**页面信息**&#x200B;还允许访问分析和建议。
 
@@ -261,7 +261,7 @@ Open the required console, then navigate to the required resource and open **Tim
 编辑页面时可以使用多种模式来执行不同的操作：
 
 * [编辑](/help/sites-cloud/authoring/fundamentals/editing-content.md) - 编辑页面内容时使用的模式。
-* [布局](/help/sites-cloud/authoring/features/responsive-layout.md) -允许您根据设备创建和编辑响应式布局（如果页面基于布局容器）
+* [布局](/help/sites-cloud/authoring/features/responsive-layout.md) - 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
 * [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) - 通过在所有渠道中进行定位和衡量来提高内容相关性。
 * [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 允许您查看页面在特定时间点的状态。
 * [Live Copy 状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - 允许快速查看 Live Copy 状态以及继承/未继承的组件。
@@ -290,7 +290,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 此处所用的说明示例是图像组件。有关使用和编辑组件的更多信息，请参阅[页面创作组件](/help/sites-cloud/authoring/fundamentals/components.md)。
 
-路径字段现在具有自动完成和前瞻功能，可更轻松地查找资源。
+路径字段现在具有自动完成和先行智能功能，可更方便地查找资源。
 
 单击路径字段中的&#x200B;**打开选择对话框**&#x200B;按钮可打开[路径浏览器](#path-browser)对话框，以查看更多详细选择选项。
 
@@ -312,7 +312,7 @@ Open the required console, then navigate to the required resource and open **Tim
 * 您随时都可以使用对话框顶部的搜索字段。单击搜索字段中的 **X** 可清除搜索。
 * 要缩小搜索范围，您可以显示筛选器选项并按特定路径筛选结果。
 
-   ![滤镜选项](/help/sites-cloud/authoring/assets/filters-option.png)
+   ![筛选器选项](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## 键盘快捷键 {#keyboard-shortcuts}
 
