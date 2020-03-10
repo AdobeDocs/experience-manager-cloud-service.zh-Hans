@@ -1,7 +1,7 @@
 ---
 title: 导出到 CSV
 description: 将页面的相关信息导出到本地系统上的 CSV 文件
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -45,15 +45,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 要创建 CSV 导出，请执行以下操作：
 
 1. 必要时，打开&#x200B;**站点**&#x200B;控制台并导航到所需的位置。
-   * 在浏览“ **站点** ”控制台（在“列表”视图中）时，可 **** 以使用创建CSV报告选项
-   * 它是“创建”下拉菜 **单的** 一个选项：
+   * 在浏览&#x200B;**站点**&#x200B;控制台（在“列表”视图中）时，可以使用创建 **CSV 报表**&#x200B;选项
+   * 它是&#x200B;**创建**&#x200B;下拉菜单的一个选项：
 
-      ![创建CSV选项](/help/sites-cloud/authoring/assets/csv-create.png)
+      ![创建 CSV 选项](/help/sites-cloud/authoring/assets/csv-create.png)
 
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. 从工具栏中，选择&#x200B;**创建**，然后选择 **CSV 报表**，以打开向导：
 
-   ![CSV导出选项](/help/sites-cloud/authoring/assets/csv-options.png)
+   ![CSV 导出选项](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. 选择需要导出的属性。
 1. 选择&#x200B;**创建**。
-   ![在Excel中生成CSV导出](/help/sites-cloud/authoring/assets/csv-example.png)
+   ![在 Excel 中生成 CSV 导出](/help/sites-cloud/authoring/assets/csv-example.png)
