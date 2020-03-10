@@ -1,19 +1,19 @@
 ---
 title: 创建辅助内容（WCAG 2.0 符合性）
 description: 确保残障人士能够访问并使用 Web 内容
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Creating Accessible Content (WCAG 2.0 Conformance) {#creating-accessible-content-wcag-conformance}
+# 创建辅助内容（WCAG 2.0 符合性）{#creating-accessible-content-wcag-conformance}
 
 WCAG 2.0 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。
 
 >[!NOTE]
 >
->另请参阅:
+>另请参阅：
 >
 >* 我们的 WCAG 2.0 快速指南，以进一步了解详细信息
 >* 配置富文本编辑器以创建辅助内容
@@ -25,7 +25,7 @@ WCAG 2.0 包含一系列非技术层面的准则及成功标准，旨在确保�
 Web 内容通常依据三个符合性级别进行分级：A 级（最低）、AA 级以及 AAA 级（最高）。以下是各个级别的简要定义：
 
 * **A 级：**&#x200B;站点在辅助功能方面达到基本的最低等级。要达到这一等级，站点必须满足所有 A 级成功标准。
-* **** AA级：这是您努力实现的理想辅助功能级别，站点的辅助功能级别更高，因此大多数情况下大多数人都可以使用大多数技术访问站点。要达到此级别，将满足所有A级和AA级成功标准。
+* **AA 级：**&#x200B;这是一个理想的辅助功能等级目标，站点达到这一等级即意味着提供了更高级别的辅助功能，以便大部分人在大多数情况下均可使用大部分技术访问站点内容。要达到这一等级，站点必须满足所有 A 级和 AA 级成功标准。
 * **AAA 级：**&#x200B;站点在辅助功能方面达到非常高的等级。要达到这一等级，站点必须符合所有 A 级、AA 级和 AAA 级成功标准。
 
 在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
@@ -72,7 +72,7 @@ Web 内容通常依据三个符合性级别进行分级：A 级（最低）、AA
 
 >[!NOTE]
 >
->一些现成的组件（例如&#x200B;**传送**&#x200B;和&#x200B;**幻灯片放映**）不提供为图像添加替换文本描述的方法。When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
+>一些现成的组件（例如&#x200B;**传送**&#x200B;和&#x200B;**幻灯片放映**）不提供为图像添加替换文本描述的方法。因此，在为 AEM 实例实施这些版本时，开发团队需要将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
 <!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -90,25 +90,21 @@ Web 内容通常依据三个符合性级别进行分级：A 级（最低）、AA
 * 替换文本不应复制同一页面邻近位置以文本形式提供的内容。请切记，许多图像的作用是解释说明页面文本中已涵盖的要点，因此详尽的替换文本可能已经存在。
 * 如果非文本内容是指向另一页面或文档的链接，而且该链接没有任何其他的文本形式部分，则图像的替换文本必须指明链接的目标位置，而不是对图像进行描述。
 * 如果按钮元素中包含非文本内容，而且该按钮没有任何文本形式部分，则图像的替换文本必须指明按钮的功能，而不是对图像进行描述。
-* 为图像指定空(null)替代文本是完全可接受的，但前提是图像没有替代文本（例如，它是纯装饰性图形），或者页面文本中已存在对等文本。
+* 图像的替代文本指定为空 (null) 是完全可以接受的，但是这仅限于图像没有替代文本的情况（例如，图形仅起装饰作用），或者页面文本中已存在对等的文本。
 
 [W3C 草案：用于提供实用替换文本的 HTML5 技术](https://dev.w3.org/html5/alt-techniques/)包含更多详细信息，以及为不同类型的图像提供相应的替换文本的示例。
 
 以下特定类型的非文本内容可能需要替换文本：
 
-* 说明性照片：
-指人物、对象或地点的图像。Think about the role of the photo in the page; an appropriate text equivalent is likely to be `Photo of [object]`, but may be dependent on the surrounding text.
-* 图标：
-指传递特定信息的小图形符号（图形）。页面和站点上使用的图标必须保持一致。图标在页面或站点上出现的所有实例都应使用相同的简短替代文本，除非这样做会与相邻的文本产生不必要的重复情况。
-* Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
-* Maps, diagrams, flowcharts: For graphics providing spatial data (for example. to support describing relationships between objects or a process), ensure that the key message is provided in text format. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
-* CAPTCHA：
-CAPTCHA 是 *Completely Automated Public Turing test to tell Computers and Humans Apart*（全自动区分计算机和人类的图灵测试）的缩写。这是一项在网页中用于区分人类和恶意软件的安全检查，但同时也会妨碍网页的辅助功能。用户要想通过安全测试，必须按照要求描述自己所看到的这些图像。为这些图像提供替代文本显然是不可能的，因此需要思考出非图形的替代解决方案。
-W3C 提供了许多建议，例如：（这些方法各有优缺点。）
+* 说明性照片：指人物、对象或地点的图像。想一想照片在页面中的作用；相应的对等文本可以为 `Photo of [object]`，但是这可能取决于周围的文本。
+* 图标：指传递特定信息的小图形符号（图形）。页面和站点上使用的图标必须保持一致。图标在页面或站点上出现的所有实例都应使用相同的简短替代文本，除非这样做会与相邻的文本产生不必要的重复情况。
+* 图表和图形：通常用于表示数值数据。因此，替代文本的选择之一就是简要地总结图表或图形中表现出来的主要趋势。如有必要，还可以在&#x200B;**高级**&#x200B;图像属性选项卡中的&#x200B;**描述**&#x200B;字段中以文本形式提供更加详尽的描述。此外，还可以在页面或站点的其他位置以表形式提供源数据。
+* 地图、示意图和流程图：对于提供空间数据的图形（例如，用于说明各对象之间关系或某个流程的图形），应确保以文本格式提供关键信息。对于地图，提供完全对等的文本似乎不太现实，但是如果提供地图的目的是帮助人们找到前往特定地点的路线，则地图图像的替代文本可以简要指明 *X 的地图*，然后在页面的其他位置或在&#x200B;**图像**&#x200B;组件&#x200B;**高级**&#x200B;选项卡的&#x200B;**描述**&#x200B;字段中以文本形式提供前往该地点的路线。
+* CAPTCHA：CAPTCHA 是 *Completely Automated Public Turing test to tell Computers and Humans Apart*（全自动区分计算机和人类的图灵测试）的缩写。这是一项在网页中用于区分人类和恶意软件的安全检查，但同时也会妨碍网页的辅助功能。用户要想通过安全测试，必须按照要求描述自己所看到的这些图像。为这些图像提供替代文本显然是不可能的，因此需要思考出非图形的替代解决方案。W3C 提供了许多建议，例如：这些方法各有优缺点。
    * 逻辑谜题
    * 使用声音输出替代图像
    * 限制使用帐户和垃圾邮件筛选器。
-* 背景图像：这些是使用层叠样式表(CSS)而不是HTML实现的。这意味着无法指定替代文本值。因此，背景图像不应提供重要的文本信息——如果提供，则这些信息还必须在页面的文本中提供。但是，当无法显示图像时，必须显示替代背景。
+* 背景图像：背景图像是使用层叠样式表 (CSS) 而不是 HTML 实现的。这就意味着无法指定替代文本值。因此，背景图像不应提供重要的文本信息 - 即便提供，这些信息必须也要在页面的文本中有所提及。尽管如此，当图像无法显示时，也应务必显示替代背景。
 
 >[!NOTE]
 >
@@ -150,8 +146,7 @@ W3C 提供了许多建议，例如：（这些方法各有优缺点。）
 #### 如何达到标准 - 纯音频和纯视频（预先录制）(1.2.1) {#how-to-meet-audio-only-and-video-only-pre-recorded}
 
 * 如果内容是预先录制的不含视频的音频（如播客）：
-   * 在紧靠内容之前或之后的位置提供一个链接，指向音频内容的文本记录。
-这份记录应采用 HTML 页面的形式，其中包含所有讲话内容以及重要的非讲话内容的对等文本，还指出讲话者并描述讲话背景、声音表情及其他任何重要的音频。
+   * 在紧靠内容之前或之后的位置提供一个链接，指向音频内容的文本记录。这份记录应采用 HTML 页面的形式，其中包含所有讲话内容以及重要的非讲话内容的对等文本，还指出讲话者并描述讲话背景、声音表情及其他任何重要的音频。
 * 如果内容是不含音频的动画或预先录制的不含音频的视频：
    * 在紧靠内容之前或之后的位置提供一个链接，指向与视频提供的信息对等的文本描述。
    * 或者，指向以常用的音频格式（如 MP3）呈现的对等音频描述。
@@ -164,7 +159,7 @@ W3C 提供了许多建议，例如：（这些方法各有优缺点。）
 
 >[!NOTE]
 >
->在将多媒体与信息内容结合使用时，您还必须创建替代内容的链接。例如，要包含文本记录，请创建一个HTML页面以显示记录，然后在音频内容旁边或下方添加一个链接。
+>如果将多媒体与信息性内容结合使用，则也必须创建替代内容的链接。例如，要加入文本记录，应创建一个用于显示记录的 HTML 页面，然后在音频内容旁边或下方添加一个链接。
 
 #### 更多信息 - 纯音频和纯视频（预先录制）(1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
@@ -190,7 +185,7 @@ W3C 提供了许多建议，例如：（这些方法各有优缺点。）
 字幕有以下两种形式：
 
 * 开放式：字幕在视频播放过程中始终可见
-* 隐藏式：* *字幕可由用户打开或关闭
+* 隐藏式：* *字幕可以由用户打开或关闭
 
 尽量使用隐藏式字幕，因为这样用户可以选择是否观看字幕。
 
@@ -200,7 +195,7 @@ W3C 提供了许多建议，例如：（这些方法各有优缺点。）
 
 #### 更多信息 - 字幕（预先录制）(1.2.2) {#more-information-captions-pre-recorded}
 
-* [了解成功标准 1.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html)
+* [了解成功标准 1.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html)：
 * [如何达到成功标准 1.2.2](https://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
 * [W3C：同步的多媒体](https://www.w3.org/AudioVideo/)
 * [字幕、记录和音频描述 - WebAIM 文章](https://webaim.org/techniques/captions/)
@@ -227,13 +222,13 @@ W3C 提供了许多建议，例如：（这些方法各有优缺点。）
    * 为视频内容创建第二个版本，以便提供延长的音频描述。这样，通过在合适的时间点暂停音频和视频，便可降低在现有对话的间隙提供详细音频描述的难度。最终，在重新开始播放视频之前，便可以提供一个更长的音频描述。与上一种方式中所提到的一样，为了避免妨碍到不需要附加描述的用户，最好将此类音频描述作为可选的额外音轨来提供。
 1. 为视频或动画中的音频和视觉元素提供适当的对等文本记录。文本中应当相应地指出讲话者，并描述讲话背景和声音表情。根据文本长度的不同，既可以将记录放置在视频或动画所在的页面上，也可以将其放置在单独的页面上；如果选择后者，则需要在视频或动画旁边提供记录的链接。
 
-至于如何创建带有音频描述的视频，具体细节不在本指南的范围之内。创建视频和音频描述非常耗时，但是 Adobe 的其他产品可以帮助您完成这些任务。If you create content in Adobe Flash Professional, you should also create a script to prompt the user to download the appropriate plug-in, and provide a text alternative through the `<noscript>` element.
+至于如何创建带有音频描述的视频，具体细节不在本指南的范围之内。创建视频和音频描述非常耗时，但是 Adobe 的其他产品可以帮助您完成这些任务。如果在 Adobe Flash Professional 中创建内容，则还应当创建一个脚本来提示用户下载合适的插件，并通过 `<noscript>` 元素提供替换文本。
 
 #### 更多信息 - 音频描述或替代媒体（预先录制）(1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
-* [了解成功标准 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)
+* [了解成功标准 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)：
 * [如何达到成功标准 1.2.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
+* [Adobe Encore CS5](https://www.adobe.com/cn/products/premiere/encore/)
 
 ### 字幕（实时）(1.2.4)  {#captions-live}
 
@@ -243,11 +238,11 @@ W3C 提供了许多建议，例如：（这些方法各有优缺点。）
 
 #### 用途 - 字幕（实时）(1.2.4) {#purpose-captions-live}
 
-This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-recorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
+该成功标准与[字幕（预先录制）](#captions-pre-recorded)的标准完全相同，因为其用途在于解决耳聋或听力欠佳的用户遇到的辅助功能问题，两者的不同之处在于该成功标准需要处理网络直播等实时演示。
 
 #### 如何达到标准 - 字幕（实时）(1.2.4) {#how-to-meet-captions-live}
 
-Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
+遵循上面[字幕（预先录制）](#captions-pre-recorded)所提供的指南。但鉴于媒体的实时性质，必须尽可能以最快的速度提供字幕并对正在发生的情况做出回应。因此，应当考虑使用实时字幕工具或语音转文本工具。
 
 与此相关的详细说明不在本指南的范围之内，但是以下资源提供了有用的信息：
 
@@ -284,7 +279,7 @@ Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorde
 
 该准则包含为支持以下用户而必须满足的要求：
 
-* 可能无法访问作者在*标准*二维、多列、彩色网页布局中显示的信息
+* 可能无法访问作者在 *标准* 二维、多列和彩色网页布局中展示的信息的用户
 
 * 可能要使用纯音频内容或可视替代显示方式（如大文本或高对比度）的用户。
 
@@ -306,10 +301,10 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 可以通过以下方式确保网页指定了合适的结构：
 
-* **使用标题：** 只要您启用了RTE的辅助功能，AEM就提供3级页面标题。 您可以使用这些级别的标题来标识内容的章节和小节。“标题 1”是最高级别的标题，“标题 3”是最低级别的标题。系统管理员可以将系统配置为允许使用更多标题级别。
-* **强调文本**:使用或 `<strong>` 元素 `<em>` 指示重点。 切勿在段落中使用标题突出显示文本。
+* **使用标题：**&#x200B;只要启用了 RTE 的辅助功能，AEM 便会提供 3 种级别的页面标题。您可以使用这些级别的标题来标识内容的章节和小节。“标题 1”是最高级别的标题，“标题 3”是最低级别的标题。系统管理员可以将系统配置为允许使用更多标题级别。
+* **强调文本**：使用 `<strong>` 或 `<em>` 元素指示重点。切勿在段落中使用标题突出显示文本。
    * 突出显示要强调的文本；
-   * Click on the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
+   * 单击&#x200B;**属性**&#x200B;面板中显示的 **B** 图标（表示 `<strong>`）或 **I** 图标（表示 `<em>`）（确保已选择 HTML）。
 
       >[!NOTE]
       >
@@ -318,28 +313,29 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
       >* `<b>`对象`<strong>`
       >* `<i>`对象`<em>`
       >
-      >They are effectively the same, but `<strong>` and `<em>` are preferable as they are semantically correct html. Your development team can configure the RTE to use `<strong>` and `<em>` (instead of `<b>` and `<i>`) when developing your project instance.
+      >尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
 
 
 * **使用列表**：可以使用 HTML 指定三种不同类型的列表：
-   * The `<ul>` element is used for *unordered* (bulleted) lists. Individual list items are identified using the `<li>` element.In the RTE, use the **Bullet List** icon.
-   * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element. 在 RTE 中，使用&#x200B;**编号列表**&#x200B;图标。
+   * `<ul>` 元素用于表示&#x200B;*无序*（项目符号）列表。单个列表项使用 `<li>` 元素进行标识。在 RTE 中，使用&#x200B;**项目符号列表**&#x200B;图标。
+   * `<ol>` 元素用于表示&#x200B;*编号*&#x200B;列表。单个列表项使用 `<li>` 元素进行标识。
+在 RTE 中，使用**编号列表**&#x200B;图标。
    如果您希望将现有内容更改为特定列表类型，可以突出显示相应的文本，然后选择相应的列表类型。正如上述示例中显示的段落文本输入方式一样，相应的列表元素会自动添加到 HTML。
 
    在全屏模式下，会显示单个&#x200B;**项目符号列表**&#x200B;和&#x200B;**编号列表**&#x200B;图标。如果不处于全屏模式，则这两个选项显示在单个&#x200B;**列表**&#x200B;图标的后面。
-* **使用表**:必须使用HTML表元素标识数据表：
-   * one `<table>` element
-   * a `<tr>` element for each row of the table
-   * a `<th>` element for each row and column heading
-   * a `<td>` element for every data cell
+* **使用表**：数据表必须使用 HTML 表元素进行标识：
+   * 一个 `<table>` 元素
+   * 每个表行均使用 `<tr>` 元素进行标识
+   * 每个行标题和列标题均使用 `<th>` 元素进行标识
+   * 每个数据单元格均使用 `<td>` 元素进行标识
    此外，辅助表会使用以下元素和属性：
 
-   * The `<caption>` element is used to provide a visible caption for the table. 默认情况下，描述显示在表上方居中的位置，但是可以使用 CSS 相应地调整位置。描述采用编程方式与表相关联，因此这是一种提供内容简介的有用方法。
-   * The `<summary>` element assists non-sighted users to more easily understand the information presented within a table, by providing a synopsis of what a sighted user can see. 当使用了复杂或非常规的表布局时，这种方法尤其有用（该属性不会显示在浏览器中，只会由辅助型技术读取）。
-   * The `scope` attribute of the `<th>` element is used to indicate whether a cell represents a header for a particular row, or for a particular column. 在复杂的表中，即数据单元格可能与一个或多个标题相关联的情况下，类似的方法是使用标题和 id 属性。
+   * `<caption>` 元素用于为表提供可视描述。默认情况下，描述显示在表上方居中的位置，但是可以使用 CSS 相应地调整位置。描述采用编程方式与表相关联，因此这是一种提供内容简介的有用方法。
+   * `<summary>` 元素通过总结视力正常的用户可以看到的内容，帮助失明的用户更加轻松地了解表中提供的信息。当使用了复杂或非常规的表布局时，这种方法尤其有用（该属性不会显示在浏览器中，只会由辅助型技术读取）。
+   * `<th>` 元素的 `scope` 属性用于指示某个单元格表示特定行的标题，还是特定列的标题。在复杂的表中，即数据单元格可能与一个或多个标题相关联的情况下，类似的方法是使用标题和 id 属性。
    >[!NOTE]
    >
-   >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes).
+   >默认情况下，这些元素和属性并非直接可用，不过系统管理员可以在&#x200B;**表属性**&#x200B;对话框中添加对这些值的支持（请参阅添加对其他 HTML 元素和属性的支持）。
 <!--
 >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -351,7 +347,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 然后，您可以使用&#x200B;**单元格属性**&#x200B;来选择单元格是数据单元格还是标题单元格：
 
-* **复杂数据表**:在某些情况下，如果有具有两个或多个标题级别的复杂表，则基本的表属性可能不足以提供所有必要的结构信息。 For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. 例如，在下表中，标题和 id 是相匹配的，以便为辅助型技术用户建立程序式关联。
+* **复杂数据表**：在某些情况下，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。例如，在下表中，标题和 id 是相匹配的，以便为辅助型技术用户建立程序式关联。
 
    >[!NOTE]
    >
@@ -455,7 +451,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 例如，确保通过颜色传递的信息也明确地提供在文本中。
 
-如果使用颜色作为提供信息的提示，则应提供其他可视提示，如更改样式（如粗体、斜体）或字体。这有助于视力不佳或颜色视力不佳的人识别信息。 但是，它不能完全依赖，因为它不会帮助根本看不到页面的用户。
+如果使用颜色作为提供信息的提示，则应提供其他可视提示，如更改样式（如粗体、斜体）或字体。这有助于视力不佳或具有色觉辨认障碍的人识别信息。但是，不能完全依赖这种方法，因为这对于根本无法看到页面的用户而言并无助益。
 
 #### 更多信息 - 使用颜色 (1.4.1) {#more-information-use-of-color}
 
@@ -520,7 +516,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 #### 如何达到标准 - 文本的图像 (1.4.5) {#how-to-meet-images-of-text}
 
-如果必须使用文本的图像，请使用CSS将文本的图像替换为HTML中的对等文本，以便以可自定义的方式提供文本。 有关如何实现这一操作的示例，请参阅 [C30：使用 CSS 将文本替换为文本的图像并提供用于切换的用户界面控件](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)。
+如果必须使用文本的图像，应使用 CSS 将文本的图像替换为 HTML 形式的对等文本，这样就可以对文本进行自定义。有关如何实现这一操作的示例，请参阅 [C30：使用 CSS 将文本替换为文本的图像并提供用于切换的用户界面控件](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)。
 
 #### 更多信息 - 文本的图像 (1.4.5) {#more-information-images-of-text}
 
@@ -588,7 +584,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 应采取措施确保应用以下技术：
 
 * 确保组件在任何一秒内的闪光次数均不超过三次；
-* If the above condition cannot be met, then display flashing content within a *small safe area* in pixels on the screen. This area is calculated using a complex formula, covered in [G176: Keeping the flashing area small enough](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), so this technique should only be followed if flashing content is *absolutely* necessary.
+* 如果无法满足上述条件，则应在屏幕上以像素为单位将闪光的内容显示在&#x200B;*小块安全区域*&#x200B;内。这块区域的面积通过一个复杂的公式来计算（详见 [G176：尽量缩小闪光区域的面积](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176)），因此，仅当闪光的内容&#x200B;*绝对*&#x200B;有必要时，才应使用这种技术。
 
 #### 更多信息 - 闪光三次或低于阈值 (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
@@ -609,7 +605,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 在 AEM 中创建新 HTML 页面时，可以指定页面标题。应确保标题能够充分描述页面内容，以便访客能够快速识别该页面的内容是否与自己的需求切实相关。
 
-You can also edit the page title when editing a page, which is accessible by **Page Information** - **Properties.**
+您也可以在编辑页面时编辑页面标题，通过&#x200B;**页面信息** - **属性**&#x200B;可访问该设置。
 
 #### 更多信息 - 页面带有标题 (2.4.2) {#more-information-page-titled}
 
@@ -634,10 +630,10 @@ You can also edit the page title when editing a page, which is accessible by **P
    * 文本内容：有关 2010 年秋季晚间课程的详细信息，请单击此处。
    * 原因分析：没有清晰明确地指明链接目标位置。
 * 正确示例：
-   * 文本：2010年秋季的晚间课程——详细信息。
+   * 文本内容：2010 年秋季晚间课程 - 详细信息。
    * 原因分析：通过稍微调整链接元素的文本和位置，可以改进链接文本。
 
-Links should be phrased consistently across pages, especially for navigation bars. For example, if a link to a specific page is named **Publications** on one page, use that text on other pages to ensure consistency.
+链接用词在各个页面中应保持一致，尤其是导航栏的链接。例如，如果特定页面的链接在某个页面中被命名为&#x200B;**出版物**，则在其他页面中也应使用该文本，以确保一致性。
 
 但是，在编写时，仍然有一些与标题的使用相关的问题：
 
@@ -647,7 +643,7 @@ Links should be phrased consistently across pages, especially for navigation bar
 
 因此，尽管标题属性可用于为链接提供额外的上下文，但是应务必注意其限制，而且不要将其用作相应链接文本的替代内容。
 
-Where the link is made up of an image, make sure that the alternative text for the image describes the destination of the link. For example, if an image of a bookshelf is set as a link to a person’s publications, the alternative text should read **John Smith’s publications** and not **Bookshelf**.
+如果链接是由图像构成的，则应确保该图像的替代文本描述了链接的目标位置。例如，如果将一个书架的图像设置为某人出版物的链接，则替代文本应该写成&#x200B;**张三的出版物**，而不是&#x200B;**书架**。
 
 或者，如果链接锚包含的文本不仅描述了链接的目的，而且还说明了图像元素（这样文本就会显示在图像旁边），则可将图像的 alt 属性设置为空：
 
@@ -662,17 +658,17 @@ John Smith’s publications
 >
 >以上代码片段仅用于说明目的，建议使用&#x200B;**图像**&#x200B;组件。
 
-虽然提供无需附加上下文即可标识链接目的的链接文本是一种可取的方法，但该方法并不认为始终可行。Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
+虽然提供无需附加上下文即可标识链接目的的链接文本是一种可取的方法，但该方法并不认为始终可行。与上下文无关的链接可用于以下情况，其 HTML 示例详见：[如何达到成功标准 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)。
 
 * 当链接文本是由紧密相关的链接组成的列表的一部分时，以及当链接周围的列表项提供了足够的上下文时。
-* Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.
+* 当可以通过&#x200B;*之前*（而非之后）的段落文本清晰识别链接目的时。
 * 当链接包含于数据表内，从而可以通过关联的标题清晰识别链接目的时。
 * 当链接列表包含于一系列标题内且标题本身提供了合适的上下文时。
 * 当链接列表包含于嵌套的链接内且嵌套链接上面的父列表项提供了合适的上下文时。
 
 在某些情况下，一个页面上会有多个链接（其中每个链接都提供了复杂而又必要的链接方向详情），此时可以为该网页提供一个替代版本，使其显示完全相同的内容，只是其中的链接文本较为简洁。
 
-Alternatively, scripts can be used so that a minimal amount of text is provided within the link itself, but on activating an appropriate control positioned towards the top of the page, the link text is *expanded* into further detail. A similar approach is to use CSS to *hide* the full link from sighted users, but still output it in full to screen reader users. This falls outside the scope of this document, but more information on how this can be achieved can be found in the [More Information - Link Purpose (In Context) (2.4.4)](#more-information-link-purpose-in-context) section.
+或者，也可以使用脚本，这样就能够最大限度地减少链接本身中提供的文本；但是，在将位于页面顶部的相应控件激活后，链接文本就会&#x200B;*扩展*&#x200B;成更多的详细信息。类似的方法还有使用 CSS 为视力正常的用户&#x200B;*隐藏*&#x200B;完整的链接，但是仍然将完整的链接呈现给屏幕阅读器用户。与此相关的说明不在本文档的范围之内，但是可以在[更多信息 - 链接目的（在上下文中）(2.4.4)](#more-information-link-purpose-in-context) 部分获取有关如何实现此操作的更多信息。
 
 #### 更多信息 - 链接目的（在上下文中）(2.4.4) {#more-information-link-purpose-in-context}
 
@@ -700,15 +696,15 @@ Alternatively, scripts can be used so that a minimal amount of text is provided 
 
 #### 如何达到标准 - 页面语言 (3.1.1) {#how-to-meet-language-of-page}
 
-To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. 例如：
+要达到此成功标准，可以使用页面顶部 `<html>` 元素中的 `lang` 属性来识别网页的默认语言。例如：
 
-* If a page is written in British English, the `<html>` element should read:
+* 如果页面采用英式英语编写，则 `<html>` 元素应该写成：
    `<html lang = “en-gb”>`
 
-* 而要呈现为美国英语的页面应采用以下标准：
+* 而要以美式英语呈现的页面应该采用以下标准：
    `<html lang = “en-us”>`
 
-**在AEM中，页面的默认语言是在创建页面时设置的，但在编辑页面时也可以更改，** Sidekick **-** Page **选项卡——页面**&#x200B;属性……-高级 **选项卡** 。
+在 AEM 中，创建页面时会设置页面的默认语言，但是也可以在编辑页面时更改该语言，通过 **Sidekick** - **页面**&#x200B;选项卡 - **页面属性...** - **高级**&#x200B;选项卡可访问该设置。
 
 #### 更多信息 - 页面语言 (3.1.1) {#more-information-language-of-page}
 
@@ -756,7 +752,7 @@ To meet this success criterion, the default language of a web page can be identi
 >
 >如果包含使用不同语言的人名或城市，或者使用默认语言中常用的外来词或短语（如英语中的 *schadenfreude*），则不必遵循此成功标准。
 
-要添加包含相应语言的 span 元素，可以在 RTE 的源代码编辑模式下手动编辑 HTML 标记，以将其写成如上显示的方式。Alternatively the `lang` attribute can be included in the RTE by a system administrator (see Adding Support for Additional HTML Elements and Attributes).
+要添加包含相应语言的 span 元素，可以在 RTE 的源代码编辑模式下手动编辑 HTML 标记，以将其写成如上显示的方式。或者，也可以由系统管理员将 `lang` 属性添加到 RTE 中（请参阅添加对其他 HTML 元素和属性的支持）。
 <!--
 To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -784,11 +780,11 @@ To add the span element, with an appropriate language, you can manually edit you
 
 此&#x200B;**标题**&#x200B;字段必须用于字段元素，因为该字段提供了适用于辅助型技术的标签。只在字段旁边用文本编写一个标签是不够的。
 
-For some form components it is also possible to visually hide labels using the **Hide Title** checkbox. Labels hidden in this way are still available to assistive technology, but not displayed on the screen. While this can be a good approach in some situations it is usually best to include a visual label wherever possible, as some users may be looking at a very small section of the screen (one field at a time) and need the labels to identify the field correctly.
+对于某些形式的组件而言，还可以使用&#x200B;**隐藏标题**&#x200B;复选框来隐藏显示的标签。通过这种方式隐藏的标签仍可用于辅助型技术，但不会显示在屏幕上。尽管在某些情况下这不失为一种好方法，但是通常最好尽可能保留可视的标签，因为有些用户可能只查看屏幕上很小的一部分（每次一个字段），并且需要借助标签来准确地识别字段。
 
 #### 图像按钮 {#image-buttons}
 
-使用了图像按钮（如&#x200B;**图像按钮**&#x200B;组件）后，编辑对话框&#x200B;**标题与文本**&#x200B;选项卡中的&#x200B;**标题**&#x200B;字段实际上会为图像提供替换文本，而不是提供标签。So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
+使用了图像按钮（如&#x200B;**图像按钮**&#x200B;组件）后，编辑对话框&#x200B;**标题与文本**&#x200B;选项卡中的&#x200B;**标题**&#x200B;字段实际上会为图像提供替换文本，而不是提供标签。因此，在以下示例中，包含文本 `Submit` 的图像，其替代文本就是 `Submit`，该文本是使用编辑对话框中的&#x200B;**标题**&#x200B;字段添加的。
 
 #### 表单字段组 {#groups-of-form-fields}
 
@@ -803,7 +799,7 @@ However, there is no programmatic association between the group title and the ra
 
 如果必须按照特定的格式输入数据，应在标签文本中予以清楚说明。例如，如果必须以 `DD-MM-YYYY` 格式输入日期，应在标签中特别指明这一点。这意味着当屏幕阅读器用户遇到此类字段时，阅读器会自动将标签以及与格式相关的其他信息一并读出。
 
-如果某个表单字段是强制输入内容的字段，则应在标签中使用“必填”一词予以清楚说明。AEM adds an asterisk when a field is required, but it would be ideal to include the word `required`in the label itself (in the **Title** field in the edit dialog).
+如果某个表单字段是强制输入内容的字段，则应在标签中使用“必填”一词予以清楚说明。AEM 会为必填字段添加一个星号，但是最好在标签本身中也包含 `required` 一词（在编辑对话框的&#x200B;**标题**&#x200B;字段中）。
 
 标签的位置也非常重要，因为它有助于用户找到对应的字段。当用户面对复杂的表单时，这显得尤为重要。应遵循以下约定：
 
@@ -812,7 +808,7 @@ However, there is no programmatic association between the group title and the ra
 * 所有其他表单组件（例如，文本框和组合框）：
 标签放在紧靠字段上方或左侧的位置。
 
-In simple forms with very limited functionality, appropriately labelling a `Submit` button can act as a label for the adjacent field (for example `Search`). 当很难找到用于提供标签文本的空间时，这种方法非常有用。
+在功能非常有限的简单表单中，可以相应地标记 `Submit` 按钮，以将其用作相邻字段的标签（如 `Search`）。当很难找到用于提供标签文本的空间时，这种方法非常有用。
 
 #### 更多信息 - 标签或说明 (3.3.2) {#more-information-labels-or-instructions}
 
