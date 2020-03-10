@@ -1,7 +1,7 @@
 ---
 title: 搜索
 description: 使用完备的搜索功能更快速地查找您的内容
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -15,17 +15,17 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 搜索在顶部工具栏中可用：
 
-![搜索按钮](/help/sites-cloud/authoring/assets/search-button.png)
+![“搜索”按钮](/help/sites-cloud/authoring/assets/search-button.png)
 
 使用搜索边栏可以：
 
-* 搜索特定关键字、路径或标记
+* 搜索特定的关键字、路径或标记
 * 按照特定于资源的条件进行筛选，例如修改日期、页面状态和文件大小等。
-* Define and use a [saved search](#saved-searches) - based on the above criteria
+* 定义和使用[保存的搜索](#saved-searches) - 均基于以上条件
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>显示搜索边栏时，还可以使用热键 `/`（正斜杠）调用搜索。
 
 ## 搜索和筛选 {#search-and-filter}
 
@@ -50,14 +50,14 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
    ![边栏按钮](/help/sites-cloud/authoring/assets/rail-button.png)
 
-   根据资源类型搜索将显示预定义的搜索／筛选条件选择。
+   根据资源类型，搜索将显示预定义的搜索/筛选条件选项。
 
    侧面板允许您选择以下内容：
 
    * 保存的搜索
    * 搜索目录
    * 标记
-   * 搜索条件，例如修改日期、发布状态、LiveCopy状态
+   * 搜索条件，例如修改日期、发布状态、LiveCopy 状态
    >[!NOTE]
    >
    >搜索条件可能会视情况而异：
@@ -91,7 +91,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 1. 指定名称，然后使用&#x200B;**保存**&#x200B;进行确认。
 
-   ![保存名称为](/help/sites-cloud/authoring/assets/search-save-name.png)
+   ![使用名称保存搜索](/help/sites-cloud/authoring/assets/search-save-name.png)
 
 1. 在下次访问搜索面板时，您可以从选择器中选择保存的搜索：
 
