@@ -2,7 +2,7 @@
 title: 内容搜索和索引
 description: '内容搜索和索引 '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ## AEM作为云服务的更改 {#changes-in-aem-as-a-cloud-service}
 
-将AEM作为云服务，Adobe将从以AEM实例为中心的模型转变为基于服务的视图，该视图由Cloud manager中的CI/CD管道驱动，并带有n-x个AEM容器。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果未指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
+将AEM作为云服务，Adobe将从以AEM实例为中心的模型转变为基于服务的视图，该视图由Cloud Manager中的CI/CD管道驱动，并带有n-x个AEM容器。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果未指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
 
 以下是与AEM 6.5及更早版本相比的主要更改列表：
 
@@ -33,7 +33,7 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 使用的索引版本通过标志使用索引定义中的标志进行配 `useIfExist` 置。 索引只能用于应用程序的一个版本（例如，仅蓝色或绿色），或同时用于两个版本。 使用蓝绿部署的索 [引管理中提供了详细文档](#index-management-using-blue-green-deployments)。
 
-1. 客户可以在Cloud manager构建页面上查看索引构建作业是否完成，并在新版本可以接收流量时收到通知。
+1. 客户可以在Cloud Manager构建页面上查看索引构建作业是否完成，并在新版本可以接收流量时收到通知。
 
 1. 限制：目前，AEM作为云服务的索引管理仅支持lucene类型的索引。
 
@@ -53,7 +53,7 @@ AS NOTE: the above is internal for now.
 1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本
 1. 删除冗余或过时的现有索引。
 
-对于以上第1点和第2点，您需要在相应的Cloud manager发布计划中作为自定义代码库的一部分创建新索引定义。 有关详细信息，请参 [阅将Cloud service部署到AEM文档](/help/implementing/deploying/overview.md)。
+对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中作为自定义代码库的一部分创建新索引定义。 有关详细信息，请参 [阅将Cloud Service部署到AEM文档](/help/implementing/deploying/overview.md)。
 
 ### 准备新的索引定义 {#preparing-the-new-index-definition}
 
@@ -61,7 +61,7 @@ AS NOTE: the above is internal for now.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-那就得下去 `ui.content/src/main/content/jcr_root`。 目前不支持子根文件夹。
+那就得下去 `ui.apps/src/main/content/jcr_root`。 目前不支持子根文件夹。
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -71,11 +71,11 @@ AS NOTE: the above is internal for now.
 
 索引定义现在标记为自定义和版本化：
 
-* 索引定义本身(例如 `/oak:index/ntBaseLucene-custom-1`)是MUTABLE内容
+* 索引定义本身(例如 `/oak:index/ntBaseLucene-custom-1`)
 
-因此，为了部署索引，索引定义(`/oak:index/definitionname`)应通过可变包提 **交**，通常通 `ui.content` 过Git和Cloud manager部署过程。
+因此，要部署索引，需要通过Git和Cloud Manager部署流程`/oak:index/definitionname``ui.apps` 提供索引定义()。
 
-添加新索引定义后，需要通过Cloud manager部署新应用程序。 在部署时，将启动两个作业，负责将索引定义分别添加（并根据需要合并）到MongoDB和Azure区段存储，以供创作和发布。 在“蓝绿”切换开始之前，正在使用新索引定义重新索引基础存储库。
+添加新索引定义后，需要通过Cloud Manager部署新应用程序。 在部署时，将启动两个作业，负责将索引定义分别添加（并根据需要合并）到MongoDB和Azure区段存储，以供创作和发布。 在“蓝绿”切换开始之前，正在使用新索引定义重新索引基础存储库。
 
 ## 使用蓝绿色部署的索引管理 {#index-management-using-blue-green-deployments}
 
