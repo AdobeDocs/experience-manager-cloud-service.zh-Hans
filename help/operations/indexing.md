@@ -2,7 +2,7 @@
 title: 内容搜索和索引
 description: '内容搜索和索引 '
 translation-type: tm+mt
-source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
+source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 ---
 
@@ -68,6 +68,10 @@ AS NOTE: the above is internal for now.
 上述示例中的包构建为 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`。
 
 ### 部署索引定义 {#deploying-index-definitions}
+
+> [!NOTE]
+>
+> Jackrabbit Filevault Maven包插件版本 **1.1.0存在一个已知问题** ，它不允许您添加 `oak:index` 到的模块 `<packageType>application</packageType>`。 要解决此问题，请使 **用版本1.0.4**。
 
 索引定义现在标记为自定义和版本化：
 
