@@ -3,7 +3,7 @@ title: 异步操作
 description: AEM资产通过异步完成某些资源密集型任务来优化性能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,11 +29,11 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ## 监视异步操作的状态 {#monitoring-the-status-of-asynchronous-operations}
 
-每当AEM资产异步处理操作时，您都会在您的收件箱中和通过电子邮件收到通知。
+每当AEM资产异步处理操作时，您都会在您的收件箱中收到通知 <!-- and through email -->。
 
 要详细查看异步操作的状态，请导航到“异步作业状 **[!UICONTROL 态”页]** 。
 
-1. 点按／单击AEM徽标，然后转到“ **[!UICONTROL 资产]** ”>“ **[!UICONTROL 作业”]**。
+1. 点按/单击 AEM 徽标，然后转到 **[!UICONTROL Assets]** > **[!UICONTROL 作业]**。
 1. 在“异 **[!UICONTROL 步作业状态]** ”页中，查看操作的详细信息。
 
    ![job_status](assets/job_status.png)
@@ -44,7 +44,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
    **[!UICONTROL 成功]**:操作完成
 
-   **[!UICONTROL 失败]** 或 **[!UICONTROL 错误]**:无法处理操作
+   **[!UICONTROL 失败]**&#x200B;或&#x200B;**[!UICONTROL 错误]**：无法处理该操作
 
    **[!UICONTROL 计划]**:此操作计划稍后处理
 
@@ -72,7 +72,7 @@ AEM资产每天凌晨1:00运行清除作业，以删除已完成且已超过一�
 
 您可以修改清除作业的计划以及在删除之前保留已完成作业的详细信息的持续时间。 您还可以配置在任何时间点保留详细信息的已完成作业的最大数量。
 
-1. 点按／单击AEM徽标，然后转到“工 **[!UICONTROL 具]** ”>“ **[!UICONTROL 操作]** ” **[!UICONTROL >“]** Web控制台”。
+1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web Cosole]**。
 1. 打开 **[!UICONTROL Adobe CQ DAM异步作业清除计划作业]** 。
 1. 指定删除已完成作业的天数阈值，以及保留历史记录中详细信息的作业的最大天数。
 
@@ -89,7 +89,7 @@ AEM资产每天凌晨1:00运行清除作业，以删除已完成且已超过一�
 
 如果要删除的资产或文件夹数量超过阈值数，则异步执行删除操作。
 
-1. 点按／单击AEM徽标，然后转到“工 **[!UICONTROL 具]** ”>“ **[!UICONTROL 操作]** ” **[!UICONTROL >“]** Web控制台”。
+1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web Cosole]**。
 1. 从Web控制台中，打开异步删 **[!UICONTROL 除操作作业处理配置]** 。
 1. 在“资 **[!UICONTROL 产阈值数”框中]** ，指定用于异步处理删除操作的资产／文件夹的阈值数。
 
@@ -101,7 +101,7 @@ AEM资产每天凌晨1:00运行清除作业，以删除已完成且已超过一�
 
 如果要移动的资产／文件夹或引用数超过阈值数，则异步执行移动操作。
 
-1. 点按／单击AEM徽标，然后转到“工 **[!UICONTROL 具]** ”>“ **[!UICONTROL 操作]** ” **[!UICONTROL >“]** Web控制台”。
+1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web Cosole]**。
 1. 从Web控制台中，打开异步移 **[!UICONTROL 动操作作业处理配置]** 。
 1. 在“资 **[!UICONTROL 产／引用的阈值数”框中]** ，指定用于异步处理移动操作的资产／文件夹或引用的阈值数。
 
