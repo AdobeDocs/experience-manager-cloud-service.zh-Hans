@@ -3,7 +3,7 @@ title: Adobe Experience Manager资产中的数字版权管理
 description: 了解如何在AEM中管理授权资产的资产到期状态和信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 1. 单击GlobalNav图标以显示“搜索”面板。
 
-1. 单击／点按到 **[!UICONTROL 期状态]** ，以展开它。
+1. 单击/点按&#x200B;**[!UICONTROL 到期状态]**&#x200B;选项以展开。
 
 1. 选择 **[!UICONTROL 过期]**。 过期的资产会显示在搜索结果中。
 
@@ -48,17 +48,19 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 此外，如果故障或错误导致调度程序无法检测当前周期中已过期的资产，则调度程序将在下一个周期中重新检查这些资产并检测其过期状态。
 
-要启用“资产”控制台以显示引用的复合资产以及过期的子资产，请在AEM配置管理器中配置 **[!UICONTROL Adobe CQ DAM Expiry Notification]** （AEM CQ DAM到期通知）工作流。
+要启用 Assets 控制台以显示引用的复合资产以及过期的子资产，请在 AEM Configuration Manager 中配置 **[!UICONTROL Adobe CQ DAM 到期通知]**&#x200B;工作流。
 
 1. 打开AEM配置管理器。
 1. 选择 **[!UICONTROL Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择“基于时间的计划程序]** ”，该计划程序会安排作业以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为已过期。
 
-1. 要定期运行作业，请清除“基于时 **[!UICONTROL 间的调度程序规则]** ”字段，并在“周期性调度程序”字段中修改 **[!UICONTROL 时间（以秒为单位）]** 。 例如，示例表达式&#39;0 0 0 &amp;ast;&amp;ast;?&#39; 会在00小时开始工作。
-1. 选择 **[!UICONTROL 发送电子邮件]** ，以在资产过期时接收电子邮件。
+1. 要定期运行该作业，请清除&#x200B;**[!UICONTROL 基于时间的计划程序规则]**&#x200B;字段，并在&#x200B;**[!UICONTROL 周期性计划程序]**&#x200B;字段中修改时间（以秒为单位）。例如，示例表达式“0 0 0 &amp;ast; &amp;ast; ?”会在 00 小时开始作业。
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >只有资产创建者（将特定资产上传到AEM资产的人员）在资产过期时才会收到电子邮件。 有关在整个AEM级别配置电子邮件通知的其他详细信息，请参阅如何配置电子邮件通知。
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. 在“先 **[!UICONTROL 前通知(以秒为单位]** )”字段中，指定您要接收到有关到期的通知时，资产到期前的时间（以秒为单位）。 如果您是管理员或资产创建者，您会在资产到期前收到一条消息，通知您该资产将在指定时间后过期。
 
@@ -72,7 +74,7 @@ Adobe Experience Manager(AEM)资产的“资产”控制台可显示资产的各
 
 1. 在“资产”用户界面中，选择一个资产。
 
-1. Tap/click the **[!UICONTROL Publish]** icon from the toolbar. 如果工具栏中看不到 **发布** ，请点按／单击工具栏中的 **[!UICONTROL 更多]** ，然后找到发布 **** 图标。
+1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 发布]**&#x200B;图标。如果工具栏中看不到&#x200B;**发布**，请点按/单击工具栏中的&#x200B;**[!UICONTROL 更多]**，然后找到&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
 
 1. 从菜 **[!UICONTROL 单中选择]** “发布”，然后关闭确认对话框。
 1. 退出选择模式。 资产的发布状态显示在卡片视图中资产缩略图的底部。 在列表视图中，已发布列显示资产发布的时间。
@@ -91,11 +93,11 @@ Adobe Experience Manager(AEM)资产的“资产”控制台可显示资产的各
 1. 要根据资产的状态搜索资产，请单击／点按搜 **[!UICONTROL 索图标]** ，以显示Omnisearch栏。
 
 1. 按Enter键，然后单击／点按AEM图标以显示“搜索”面板。
-1. 在“搜索”面板中，点按／单 **[!UICONTROL 击发布状态]** ，然后选择 **[!UICONTROL 已发布]** ，以在AEM资产中搜索已发布的资产。
+1. 在“搜索”面板中，点按/单击&#x200B;**[!UICONTROL 发布状态]**，然后选择&#x200B;**[!UICONTROL 已发布]**，以在 AEM Assets 中搜索已发布的资产。
 
-1. 点按／单击 **[!UICONTROL 批准状态]** ，然后单击相应的选项以搜索已批准或已拒绝的资产。
+1. 点按/单击&#x200B;**[!UICONTROL 批准状态]**，然后单击相应的选项以搜索已批准或已拒绝的资产。
 
-1. 要根据资产的到期状态搜索资产，请在“搜索” **[!UICONTROL 面板中选择“到期状态]** ”，然后选择相应的选项。
+1. 要根据资产的到期状态搜索资产，请在“搜索”面板中选择&#x200B;**[!UICONTROL 到期状态]**，然后选择相应的选项。
 
 1. 您还可以根据各种搜索彩块化下的状态组合来搜索资产。 例如，您可以通过在搜索彩块化中选择相应的选项，搜索已在审核任务中批准但尚未过期的已发布资产。
 
@@ -121,7 +123,7 @@ Adobe Experience Manager(AEM)资产的“资产”控制台可显示资产的各
 ### 下载DRM资源 {#downloading-drm-assets}
 
 1. 在卡片视图中，选择要下载的资产，然后单击下载 **[!UICONTROL 图标]** 。
-1. 在版 **[!UICONTROL 权管理页面]** ，从列表中选择要下载的资产。
+1. 在&#x200B;**[!UICONTROL 版权管理]**&#x200B;页面，从列表中选择要下载的资产。
 1. 在“许可”窗格中，选择“ **[!UICONTROL 同意”]**。 您接受其许可协议的资产旁边会显示一个勾号。 点按／单击“下 **[!UICONTROL 载]** ”按钮。
 
    >[!NOTE]
