@@ -3,16 +3,14 @@ title: 资产分析
 description: 了解资产分析功能如何让您跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计数据。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
-# 资产分析{#asset-insights}
+# 资产分析 {#asset-insights}
 
-<!-- TBD: Add uicontrol tags  -->
-
-通过资产分析功能，您可以跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计数据。 它有助于获得有关其性能和受欢迎程度的洞察。
+Asset Insights跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计数据。 它有助于提供有关图像性能和受欢迎程度的洞察。
 
 Assets Insights可捕获用户活动详细信息，例如对图像进行评级、点击和展示的次数（图像在网站上加载的次数）。 它会根据这些统计信息为图像分配分数。 您可以使用分数和绩效统计信息选择要包含在目录、营销活动等中的流行图像。 您甚至可以根据这些统计数据制定存档和许可证续订策略。
 
@@ -38,17 +36,17 @@ Assets Insights可捕获用户活动详细信息，例如对图像进行评级�
 
 1. 查看“使 **[!UICONTROL 用统计数据]** ”部分，了解资产所属的实体以及最近使用的创意解决方案。 使用率越高，资产在用户中受欢迎的可能性就越大。 使用数据显示在以下标题下：
 
-   * **资产**:资产加入集合或复合资产的次数
-   * **Web和移动**:资产加入网站和应用程序的次数
-   * **社交**:在Adobe Social和Adobe Campaign等解决方案中使用资产的次数
-   * **电子邮件**:资产在电子邮件营销活动中的使用次数
+   * **[!UICONTROL 资产]**:资产加入集合或复合资产的次数。
+   * **[!UICONTROL Web和移动]**:资产加入网站和应用程序的次数。
+   * **[!UICONTROL 社交]**:资产在解决方案（如Adobe Social和Adobe Campaign）中使用的次数。
+   * **[!UICONTROL 电子邮件]**:资产在电子邮件营销活动中的使用次数。
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
    >由于资产分析功能通常会定期从Adobe Analytics获取解决方案数据，因此“解决方案”部分可能不显示最新数据。 显示数据的时间段取决于资产分析运行以检索分析数据的提取操作的计划。
 
-1. 要以图形方式查看一段时间内资产的性能统计信息，请在“性能统计信息”部分中选 **[!UICONTROL 择期间]** 。 包括点击次数和印象在内的详细信息显示为图形的趋势线。
+1. 要以图形方式查看一段时间内资产的性能统计信息，请在&#x200B;**[!UICONTROL 性能统计信息]**&#x200B;部分中选择时间段。包括点击次数和印象在内的详细信息将显示为图形的趋势线。
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -62,7 +60,7 @@ Assets Insights可捕获用户活动详细信息，例如对图像进行评级�
 
 ## 查看图像的汇总统计信息 {#viewing-aggregate-statistics-for-images}
 
-您可以使用“分析视图”同时查看文件夹中所有资产 **[!UICONTROL 的分数]**。
+您可以使用&#x200B;**[!UICONTROL 分析视图]**&#x200B;同时查看文件夹中所有资产的分数。
 
 1. 在资产UI中，导航到包含要查看其分析的资产的文件夹。
 1. 点按／单击工具栏中的布局图标，然后选择“分 **[!UICONTROL 析视图”]**。
@@ -72,7 +70,7 @@ Assets Insights可捕获用户活动详细信息，例如对图像进行评级�
 
 资产分析会定期从Adobe Analytics报表包获取资产的使用数据。 默认情况下，Asset Insights在凌晨2点每24小时运行一个后台作业以获取数据。 但是，您可以通过从Web控制台配置 **[!UICONTROL Adobe CQ DAM资产性能报告同步作业服务来修改频率和时间]** 。
 
-1. 点按AEM徽标，然后转到工 **[!UICONTROL 具]** >操 **[!UICONTROL 作]** > **[!UICONTROL Web控制台]**。
+1. 点按 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web Console]**。
 1. 打开 **[!UICONTROL Adobe CQ DAM资产性能报告同步作业服务配置]** 。
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -87,28 +85,29 @@ Adobe Experience Manager(AEM)资产可从Adobe Analytics获取第三方网站使
 >
 >仅支持和提供图像洞察。
 
-1. 在AEM中，单击工 **[!UICONTROL 具]** >资 **[!UICONTROL 产]**。
+1. 在 AEM 中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]**。
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. 单击“ **[!UICONTROL Insights Configuration]** ”卡。
+1. 单击&#x200B;**[!UICONTROL 分析配置]**&#x200B;卡。
 1. 在向导中，选择一个数据中心并提供您的凭据，包括您的单位名称、用户名和共享机密。
 
    ![在AEM中为资产分析配置Adobe Analytics](assets/insights_config2.png)
+
    *图：在AEM中为资产分析配置Adobe Analytics*
 
-1. 单击／点按 **[!UICONTROL 身份验证]**。 在AEM验证您的凭据后，从报 **[!UICONTROL 表包列表中]** ，选择Adobe Analytics报表包，您希望从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
+1. 单击／点按 **[!UICONTROL 身份验证]**。在AEM验证您的凭据后，从报 **[!UICONTROL 表包列表中]** ，选择Adobe Analytics报表包，您希望从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
 1. 在AEM设置您的报表包后，点按完 **[!UICONTROL 成]**。
 
 ### 页面跟踪器 {#page-tracker}
 
 配置Adobe Analytics帐户后，将为您生成页面跟踪器代码。 要使资产分析能够跟踪第三方网站中使用的AEM资产，请在网站代码中包含页面跟踪器代码。 在AEM资产中使用页面跟踪器实用程序生成页面跟踪器代码。 <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. 在AEM中，单击工 **[!UICONTROL 具]** >资 **[!UICONTROL 产]**。
+1. 在 AEM 中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]**。
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. 在导航页 **[!UICONTROL 面中]** ，单击“ **[!UICONTROL 分析页面跟踪器]** ”卡。
+1. 从&#x200B;**[!UICONTROL 导航]**&#x200B;页面中，单击&#x200B;**[!UICONTROL 分析页面跟踪器]**&#x200B;卡。
 1. 单击 **[!UICONTROL 下载]** ，下载页面跟踪器代码。
 
 <!--
