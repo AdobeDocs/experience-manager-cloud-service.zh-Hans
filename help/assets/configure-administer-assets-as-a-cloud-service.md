@@ -3,7 +3,7 @@ title: 将Adobe Experience Manager资产配置为云服务并进行管理
 description: 了解作为云服务的资产所需的配置和管理任务
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -12,7 +12,8 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 文章列出了开始将Adobe Experience Manager资产用作云服务所需的顶级配置或管理任务。
 
-<!-- 
+<!-- SCOPE 
+
 Top-level page for all administrative tasks specific to Assets as a Cloud Service.
 Backlink to Sites administering content where required.
 Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/assets.html though not complete and not so accurate.
@@ -25,7 +26,9 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
 * Steps to integrate with Adobe and third-party solutions. Analytics, Launch, Creative Cloud, etc.
+-->
 
+<!-- 
 ## Work with search indices {#search-index-for-assets-cloud-service}
 
 * Link to this topic for information about Experience Manager's common index https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service-prerelease.en/blob/master/help/sites/operations/indexing.html
