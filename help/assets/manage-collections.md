@@ -1,10 +1,10 @@
 ---
 title: 管理数字资产集合
-description: 了解Adobe Experience Manager资产中的收集概念。 了解如何与其他用户一起收藏、管理、编辑和收藏集。
+description: 了解Adobe Experience Manager资产中的集合概念。 了解如何与其他用户一起收藏、管理、编辑和收藏集。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 要打开“收藏集”控 **[!UICONTROL 制台]** ，请执行以下操作：
 
-要打开收藏 **[!UICONTROL 集]**，请点按或单击Experience manager徽标。 From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+要打开收藏 **[!UICONTROL 集]**，请点按或单击Experience Manager徽标。 From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## 创建集合 {#create-a-collection}
 
@@ -151,7 +151,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 您可以编辑集合设置（如标题和说明），或向集合添加成员。
 
-1. 选择一个集合，然后点按／单击工 **[!UICONTROL 具栏中的]** “设置”图标。 或者，也可以使 **[!UICONTROL 用集合缩览图]** 中的“设置”快速操作。
+1. 选择一个集合，然后点按／单击工 **[!UICONTROL 具栏中的]** “设置”图标。 或者，也可以使 **[!UICONTROL 用集合缩览图]** 中的设置快速操作。
 1. 在&#x200B;**[!UICONTROL 收藏集设置]**&#x200B;页面中修改收藏集设置。例如，按照[添加收藏集](#create-a-collection)中所述修改收藏集标题、描述、成员和权限。
 1. Tap/click **[!UICONTROL Save]** to save the changes.
 
@@ -170,7 +170,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 1. 从收藏集控制台中，选择一个或多个要下载的收藏集。
 1. 在工具栏中，点按／单击下载图标。
-1. 在“下 **[!UICONTROL 载]** ”对话框中，点按／单 **[!UICONTROL 击下载]**。 如果要下载集合中资产的演绎版，请选择演 **[!UICONTROL 绎版]**。 选择“电 **[!UICONTROL 子邮件]** ”选项，向集合所有者发送电子邮件通知。
+1. 在“下 **[!UICONTROL 载]** ”对话框中，点按／单 **[!UICONTROL 击下载]**。 如果要下载集合中资产的演绎版，请选择演 **[!UICONTROL 绎版]**。 <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    当您选择要下载的集合时，将下载集合下的完整文件夹层次结构。 要将您下载的每个集合（包括嵌套在父集合下的子集合中的资产）包含在单个文件夹中，请为每个资 **[!UICONTROL 产选择创建单独的文件夹]**。
 
@@ -211,7 +211,7 @@ Adobe Enterprise Manager(AEM)资产允许您批量编辑许多集合的元数据
 
    >[!NOTE]
    >
-   >默认情况下，最近更新的集合会在“添加到集合” **[!UICONTROL 页面中处于选中状态]** 。
+   >默认情况下，最近更新的集合会在“添加到集合 **[!UICONTROL ”页面中处于选中]** 。
 
 1. 点按／单击 **[!UICONTROL 添加]**。 系统会显示一条消息，确认该集合已添加到“选择目标”页面中 **[!UICONTROL 的目标集合]** 。 关闭消息以完成该过程。
 
@@ -219,7 +219,7 @@ Adobe Enterprise Manager(AEM)资产允许您批量编辑许多集合的元数据
 >
 >无法嵌套智能收藏集。也就是说，智能收藏集不能包含其他任何收藏集。
 
-## Saved searches {#saved-searches}
+## 保存的搜索 {#saved-searches}
 
 在“资产”用户界面中，您可以根据某些规则、搜索条件或自定义搜索彩块化来搜索或筛选资产。 如果将这些搜索另存为“保 **[!UICONTROL 存的搜索]**”，则以后可以从“筛选器”面板的“保存的 **[!UICONTROL 搜索]** ”列表中访问它们。 创建保存的搜索也会创建智能收藏集。
 
