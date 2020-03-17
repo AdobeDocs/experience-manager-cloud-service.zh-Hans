@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
@@ -22,8 +22,8 @@ source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
    + [访问 Git](cloud-manager/accessing-git.md)
    + [将 Git 与 Adobe Cloud Manager 集成](cloud-manager/integrating-with-git.md)
 + 部署 AEM 云服务 {#developing}
-   + [AEM 项目包结构](developing/introduction/aem-project-content-package-structure.md)
-   + [开发存储库结构包](developing/introduction/repository-structure-package.md)
+   + [AEM项目结构](developing/introduction/aem-project-content-package-structure.md)
+   + [AEM项目存储库结构包](developing/introduction/repository-structure-package.md)
    + [AEM作为云服务SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [内容搜索和索引](/help/operations/indexing.md)
    + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
