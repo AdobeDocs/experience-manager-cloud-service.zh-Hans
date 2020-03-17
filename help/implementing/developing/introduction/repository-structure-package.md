@@ -1,17 +1,17 @@
 ---
-title: '开发存储库结构包   '
-description: Adobe Experience manager作为云服务Maven项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。
+title: 'AEM项目存储库结构包  '
+description: Adobe Experience Manager作为云服务Maven项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# 开发存储库结构包
+# AEM项目存储库结构包
 
-使用Adobe Experience manager作为云服务的项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。 这可确保在Experience manager中作为云服务安装包时，JCR资源依赖关系会自动进行排序。 缺少依赖关系可能会导致子结构安装在其父结构之前，因此意外删除，从而中断部署的情况。
+使用Adobe Experience Manager作为云服务的项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。 这可确保在Experience Manager中作为云服务安装包时，JCR资源依赖关系会自动进行排序。 缺少依赖关系可能会导致子结构安装在其父结构之前，因此意外删除，从而中断部署的情况。
 
-如果您的代码包部署到代码包未 **涵盖的位置** ，则必须在存储库结构包中枚举任何上级资源（靠近JCR根的JCR资源），以建立这些依赖关系。
+如果您的代码包部署到代码包&#x200B;**未涵盖**&#x200B;的位置，则必须在存储库结构包中枚举任何上级资源（比较靠近 JCR 根的 JCR 资源），以建立这些依赖关系。
 
 ![存储库结构包](./assets/repository-structure-packages.png)
 
