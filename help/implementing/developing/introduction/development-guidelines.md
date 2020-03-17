@@ -2,7 +2,7 @@
 title: AEM 云服务开发准则
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
+source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
 
 ---
 
@@ -91,10 +91,14 @@ AEM中不支持将“发布到作者”反向复制为云服务。 如果需要�
 
 要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后完全重新部署。 由于这不是即时的，因此请务必小心在收到大量流量的生产环境中启用详细日志。 将来，可能会有一些机制来更快速地更改日志级别。
 
+> [!NOTE]
+> 
+> 要执行下列配置更改，您需要在本地开发环境中创建这些更改，然后将其作为云服务实例推送到AEM。 有关如何执行此操作的详细信息，请参 [阅将AEM部署为云服务](/help/implementing/deploying/overview.md)。
+
 **激活调试日志级别**
 
 默认日志级别为INFO，即DEBUG消息未记录。
-要激活调试日志级别，请使用CRX资源管理器设置
+要激活调试日志级别，请设置
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
