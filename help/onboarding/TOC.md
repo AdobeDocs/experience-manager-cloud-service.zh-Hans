@@ -1,7 +1,7 @@
 ---
 sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
