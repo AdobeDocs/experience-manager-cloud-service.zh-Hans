@@ -1,7 +1,7 @@
 ---
 title: 工具控制台
-description: 了解整个AEM中的不同工具控制台。
-translation-type: tm+mt
+description: 了解整个 AEM 中的不同工具控制台。
+translation-type: ht
 source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 ---
@@ -9,19 +9,19 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 # 工具控制台{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository.
+**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。
 
-可以从全局导航的“工 [具面板”访问这些控制台](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)。
+可以从[“全局导航”的“工具”面板](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)访问这些控制台。
 
 >[!NOTE]
 >
->由于UI中的卡提供了有关每个选项用途的详细信息，因此此表只提供了有关“工具”面板中功能位置的快速参考。
+>由于 UI 中的卡片会详细说明每个选项的用途，因此，此表只提供关于“工具”面板中各项功能位置的快速参考。
 
 <table>
  <tbody>
   <tr>
    <td>区域</td>
-   <td>Option</td>
+   <td>选项</td>
   </tr>
   <tr>
    <td>常规</td>
@@ -240,7 +240,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>BrightEdge Content Optimizer</td>
   </tr>
   <tr>
-   <td>操作</td>
+   <td>运营</td>
    <td> </td>
   </tr>
   <tr>
