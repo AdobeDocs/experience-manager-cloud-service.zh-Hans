@@ -2,8 +2,8 @@
 title: 在 Adobe Experience Manager Sites 创作工作流程中，使用连接的资产共享 DAM 资产
 description: 在另一个 Experience Manager Site 部署中创建网页时，使用远程 Adobe Experience Manager Assets 部署中的可用资产。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 188917fe677a88142c702b9637600db872853974
+translation-type: tm+mt
+source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
 
 ---
 
@@ -18,7 +18,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 
 在“页面编辑器”中编辑页面时，作者可以从其他 AEM Assets 部署中无缝搜索、浏览和嵌入资产。为此，AEM 管理员需要将 AEM Sites 的本地部署与 AEM Assets 的其他（远程）部署进行一次性集成。
 
-对于 Sites 作者，远程资产将以只读本地资产方式提供。该功能可支持一次无缝搜索和使用多个远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。请参阅 [Assets 迁移指南](/help/assets/assets-migration-guide.md)。
+对于 Sites 作者，远程资产将以只读本地资产方式提供。该功能可支持一次无缝搜索和使用多个远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。
 
 ### 先决条件与支持的部署 {#prerequisites}
 
@@ -37,7 +37,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 
 作者可以在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索到的资产。文档可添加到 `Download` 组件中，图像可添加到 `Image` 组件中。此外，作者还可以在任何自定义 AEM 组件（对默认 `Download` 或 `Image` 组件的扩展）中添加远程资产。支持的格式列表如下：
 
-* **图像格式**：可支持[图像组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html)支持的图像格式。不支持 Dynamic Media 图像。
+* **图像格式**：可支持[图像组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)支持的图像格式。不支持 Dynamic Media 图像。
 * **文档格式**：请参阅[连接的资产支持的文档格式](file-format-support.md#doc-formats)。
 
 ### 涉及的用户和组 {#users-and-groups-involved}
