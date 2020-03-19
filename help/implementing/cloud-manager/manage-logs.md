@@ -2,7 +2,7 @@
 title: 管理日志——云服务
 description: 管理日志——云服务
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
 
 ---
 
@@ -66,3 +66,10 @@ Environment Id Service    Name
 
 >[!Note]
 >虽然 **日志下载** (Log Downloads **)可通过UI和API使用，但** Log Tailing（日志跟踪）是仅限API/CLI的。
+
+### 其他资源 {#resources}
+
+请参阅以下其他资源，进一步了解Cloud Manager API和Adobe I/O CLI:
+
+* [Cloud Manager API文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
