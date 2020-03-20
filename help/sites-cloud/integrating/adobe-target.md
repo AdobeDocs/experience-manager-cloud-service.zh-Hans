@@ -2,7 +2,7 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
+source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
 
 >[!CAUTION]
 >
->“在AEM中，将选件和活动从AEM同步到Adobe Target的复制代理在默认情况下处于禁用状态。 如果需要 [重新启用复制代理](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) ，请与Adobe支持部门联系。”
+>在AEM中，将选件和活动从AEM同步到Adobe Target的复制代理在默认情况下处于禁用状态。 如果需要 [重新启用复制代理](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) ，请与Adobe支持部门联系。
 
 >[!NOTE]
 >
