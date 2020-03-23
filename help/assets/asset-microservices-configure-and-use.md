@@ -3,7 +3,7 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 
 ---
 
@@ -22,11 +22,11 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 -->
 
-Asset Microservices使用云服务为资产提供可伸缩的弹性处理，这些服务由Adobe管理，以优化处理不同的资产类型和处理选项。
+资产微型服务使用云服务提供可伸缩的、具有弹性的资产处理，这些服务由Adobe管理，以优化处理不同的资产类型和处理选项。
 
 资产处理是根据处理配置文件中的配 **[!UICONTROL 置进行的]**，处理配置文件提供了默认设置，并允许管理员添加更具体的资产处理配置。 为了实现可扩展性和完全自定义，资产处理允许对后处理工作流进行可选配置，然后由管理员创建和维护这些工作流。
 
-以下为Experience manager中的云服务资产处理流程概述。
+以下为Experience Manager中的云服务资产处理流程概述。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -56,9 +56,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 默认配置 {#default-config}
 
-使用默认配置时，只配置 [!UICONTROL 了标准] 处理配置文件。 它是内置的，无法修改。 它始终执行，以确保应用程序所需的所有处理都正在进行。
+使用默认配置时，只配置标准处理配置文件。 标准处理配置文件在用户界面上不可见，您无法对其进行修改。 它始终执行以处理上传的资产。 标准处理配置文件可确保Experience Manager所需的所有基本处理均已完成。
 
-![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 标准处理配置文件提供以下处理配置：
 
@@ -103,13 +103,13 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 
 #### 特殊FPO再现 {#special-fpo-rendition}
 
-处理配置文件可以包含特殊的“FPO再现”，当 [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 与Adobe inDesign一起使用时，该再现用于将Experience manager中的资产直接链接放入InDesign文档。
+将AEM中的大型资产放入Adobe InDesign文档时，创意专业人士在放置资产后必须等待很 [长时间](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同时，用户无法使用InDesign。 这会中断创作流程，并对用户体验造成负面影响。 Adobe允许将小型再现临时置入InDesign文档中，以后可以用全分辨率资产按需替换。 Experience Manager提供仅用于放置(FPO)的再现。 这些FPO再现的文件大小较小，但长宽比相同。
 
-请参阅Adobe Asset link文档 [](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) ，了解您是否需要为处理配置文件打开它。
+处理配置文件可以包括FPO（仅用于放置）再现。 请参阅Adobe Asset Link [文档](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) ，了解您是否需要为处理配置文件打开它。 有关详细信息，请参 [阅Adobe Asset Link完整文档](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)。
 
 ## 使用资产微服务处理资产 {#use-asset-microservices}
 
-创建其他处理配置文件后，需要将其应用到特定文件夹，Experience Manager才能将这些配置文件用于对这些文件夹中上传或更新的资产进行资产处理。 始终执行内置的标准处理配置文件。
+为Experience Manager创建附加的自定义处理配置文件并将其应用到特定文件夹，以便处理上传到这些文件夹或更新到这些文件夹的资产。 默认的内置标准处理配置文件始终执行，但在用户界面上不可见。 如果您添加自定义配置文件，则这两个配置文件将用于处理上传的资产。
 
 有两种方法可将处理配置文件应用到文件夹：
 
@@ -124,7 +124,7 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 
 >[!NOTE]
 >
->将资产上传到文件夹后，Experience Manager会检查包含文件夹的属性以查找处理配置文件。 如果未应用任何配置文件，则它会在文件夹树中向上移动，直到找到已应用的处理配置文件，并将其用于资产。 这意味着应用于文件夹的处理配置文件适用于整个树，但可能与应用于子文件夹的其他配置文件重叠。
+>将资产上传到文件夹后，Experience Manager会检查包含文件夹的属性以查找处理配置文件。 如果未应用任何配置文件，则会在文件夹树中向上移动，直到找到已应用的处理配置文件并将其用于资产。 这意味着应用于文件夹的处理配置文件适用于整个树，但可能与应用于子文件夹的其他配置文件重叠。
 
 用户可以通过打开处理已完成的新上传资产、打开资产预览并单击左边栏的演绎版视图来检查处理是否实际 **[!UICONTROL 进行]** 。 处理配置文件中特定的演绎版（其特定资产的类型与MIME类型包含规则匹配）应可见且可访问。
 
@@ -149,15 +149,15 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 * 这种模型的最后一步必须是这 `DAM Update Asset Workflow Completed Process` 一步。 这是确保AEM知道处理已结束且资产可以标记为已处理（“新”）所必需的
 * 为自定义工作流运行器服务创建配置，该配置允许按路径（文件夹位置）或正则表达式配置后处理工作流模型的执行
 
-### 创建后处理工作流模型
+### 创建后处理工作流模型 {#create-post-processing-workflow-models}
 
-后处理工作流模型是常规的AEM工作流模型。 如果您需要对不同存储库位置或资产类型进行不同的处理，请创建不同的存储库。
+后处理工作流模型是常规的AEM工作流模型。 如果您需要对不同存储库位置或资产类型进行不同的处理，请创建不同的模型。
 
-应根据需要添加处理步骤。 您可以使用任何支持的现成步骤以及任何自定义实现的工作流步骤。
+应根据需要添加处理步骤。 您可以使用任何支持的步骤以及任何自定义实现的工作流步骤。
 
-每个后处理工作流程的最后一步必须是 `DAM Update Asset Workflow Completed Process`。 这可确保资产正确标记为“已完成处理”。
+确保每个后处理工作流程的最后一步是 `DAM Update Asset Workflow Completed Process`。 最后一步有助于确保Experience Manager了解资产处理何时完成。
 
-### 配置后处理工作流执行
+### 配置后处理工作流执行 {#configure-post-processing-workflow-execution}
 
 要配置在资产微型服务处理完成后为系统中上传或更新的资产执行的后处理工作流模型，需要配置自定义工作流运行器服务。
 
@@ -169,6 +169,6 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 >[!NOTE]
 >
 >自定义工作流运行器的配置是OSGi服务的配置。 有关 [如何部署OSGi配置的信息，请参阅部署到Experience Manager](/help/implementing/deploying/overview.md) 。
-> 与AEM的内部部署和托管服务部署不同，OSGi web控制台不直接在云服务部署中可用。
+> 与AEM的内部部署和托管服务部署不同，OSGi Web控制台不直接在云服务部署中可用。
 
-有关详细信息，请参阅开发人员参考中的后处理工作流中的工作流步骤 [](developer-reference-material-apis.md#post-processing-workflows-steps) ，以了解在后处理工作流中可以使用哪些标准工作流步骤。
+有关在后处理工作流中可以使用哪个标准工作流步骤的详细信息，请参阅开发 [人员参考中的后处理工作流中的工作流步骤](developer-reference-material-apis.md#post-processing-workflows-steps) 。
