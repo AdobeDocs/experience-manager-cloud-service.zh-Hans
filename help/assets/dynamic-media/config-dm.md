@@ -2,7 +2,7 @@
 title: 配置Dynamic Media Cloud服务
 description: 有关如何在Adobe Experience Manager Cloud Service中配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 91f1a7c89b3c3122a0d1cd3fde4a45c16bcff317
+source-git-commit: 4b9630dfdc8dfc3a621f307f53c48dec415618e5
 
 ---
 
@@ -65,28 +65,32 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * **[!UICONTROL 公司根文件夹路径]**
 
-   * **[!UICONTROL 发布资产]** -此选项 **[!UICONTROL 表示]** ，上传资产后，系统会收录资产并立即提供URL/嵌入。 发布资产不需要用户干预。 激活 **[!UICONTROL 后]** （默认）选项表示您需要先显式发布资产，然后才能提供URL/嵌入链接。
+   * **[!UICONTROL 发布资产]** -您可以从以下三个选项中进行选择：
+      * **[!UICONTROL 立即]** ，表示上传资产时，系统会立即摄取资产并提供URL/Embed。 发布资产不需要用户干预。
+      * **[!UICONTROL 激活后]** ，意味着您需要先显式发布资产，然后再提供URL/嵌入链接。
+<!--       * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain. -->
 
-   * **[!UICONTROL 安全预览服务器]** -允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全地访问和预览远程Dynamic Media再现（不会将二进制文件发回到AEM实例）。
-除非您有使用自己公司的服务器或特殊服务器的特殊安排，否则Adobe Systems建议您保留指定的此设置。
+    ***安[!UICONTROL 全预览服务器]** —— 允许您指定安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全地访问和预览远程Dynamic Media再现（不会将二进制文件发回到AEM实例）。
+    除非您有使用自己公司的服务器或特殊服务器的特殊安排，否则Adobe Systems建议您保留指定的此设置。
+    
+    * **同[!UICONTROL 步所有内容]** —— 默认选中。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项可让您从以下两种Dynamic Media同步模式中进行选择：
+    
+    * **[!UICONTROL Dynamic Media同步模式]**
+    **[!UICONTROL Enabled by default]** —— 默认情况下，该配置将应用于所有文件夹，除非您专门为排除而标记文件夹。 &lt;!—然后，您可以取消选择不希望将配置应用到的文件夹。—>
+    * **[!UICONTROL 默认禁用]** —— 在明确标记选定文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。
+    要将选定的文件夹标记为同步到 Dynamic Media，请打开资产文件夹的“属性”页面。点按 **[!UICONTROL 详细信息]** 选项卡，然后从 **[!UICONTROL Dynamic Media 同步模式]** 下拉列表中选择以下三个选项，然后点按 **[!UICONTROL 保存]**。
+    * **已继[!UICONTROL 承]** —— 文件夹上没有明确的同步值；相反，该文件夹会从其某个上级文件夹或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。
+    * **[!UICONTROL 为子文件夹启用]** —— 在此子树中包含所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。
+    * **对子[!UICONTROL 文件夹禁用]** —— 将此子树中的所有内容从同步到Dynamic Media中排除。
 
-   * **[!UICONTROL 同步所有内容]** -默认情况下处于选中状态。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项可让您从以下两种Dynamic Media同步模式中进行选择：
+>[!NOTE]
+>
+>Dynamic Media 不支持版本控制。此外，仅当“编辑 Dynamic Media 配置”页面中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;设置为&#x200B;**[!UICONTROL 激活时]**&#x200B;时，并且直到首次激活资产时延迟激活才适用。
+>
+>
+>在激活资产后，所有更新都会立即实时发布到S7交付。
 
-   * **[!UICONTROL Dynamic Media 同步模式]**
-      * **[!UICONTROL 默认启用]** -默认情况下，该配置将应用于所有文件夹，除非您专门为排除标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL 默认禁用]** -在明确标记选定文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。
-要将选定的文件夹标记为同步到 Dynamic Media，请打开资产文件夹的“属性”页面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-         * **[!UICONTROL 继承]** -文件夹上没有明确的同步值；相反，该文件夹会从其某个上级文件夹或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。
-         * **[!UICONTROL 为子文件夹启用]** -在此子树中包含所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。
-         * **[!UICONTROL 对子文件夹禁用]** -将此子树中的所有内容从同步到Dynamic Media中排除。
-   >[!NOTE]
-   >
-   >Dynamic Media 不支持版本控制。此外，仅当“编辑 Dynamic Media 配置”页面中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;设置为&#x200B;**[!UICONTROL 激活时]**&#x200B;时，并且直到首次激活资产时延迟激活才适用。
-   >
-   >
-   >在激活资产后，所有更新都会立即实时发布到S7交付。
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
 1. 要在发布Dynamic Media内容之前安全地预览它，您需要将AEM作者实例“列入白名单”以连接到Dynamic Media:
@@ -223,7 +227,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在mimeTypes文件夹下，选择MIME类型。
 1. 在CRXDE Lite页面的右侧，位于下半部分：
 
-   * 双击启用 **[!UICONTROL 字段]** 。 默认情况下，所有资产MIME类型均处于启用状态( **[!UICONTROL 设置为]** true)，这意味着资产将同步到Dynamic Media进行处理。 如果您希望从处理中排除此资产MIME类型，请将此设置更改为 **[!UICONTROL false]**。
+   * 双击启用 **[!UICONTROL 字段]** 。 默认情况下，所有资产MIME类型均处于启用状态( **[!UICONTROL 设置为]** true)，这意味着资产将同步到Dynamic Media以进行处理。 如果您希望从处理中排除此资产MIME类型，请将此设置更改为 **[!UICONTROL false]**。
 
    * 双击 **[!UICONTROL jobParam]** ，打开其关联的文本字段。 有关 [允许的处理参数值列表](/help/assets/file-format-support.md) ，请参阅支持的Mime类型，这些参数值可用于给定的mime类型。
 
@@ -306,7 +310,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 **配置默认命名**
 
-1. 登录Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登录到Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的凭据和登录是在配置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
@@ -340,7 +344,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 **要创建批集预设，请执行以下操作：**
 
-1. 登录Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登录到Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的凭据和登录是在配置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
@@ -396,7 +400,7 @@ spin-01-01
 
 **要创建批集预设以自动生成2D旋转集，请执行以下操作：**
 
-1. 登录Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登录到Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的凭据和登录是在配置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
