@@ -2,18 +2,18 @@
 title: 发布 Dynamic Media 资产
 description: 如何发布Dynamic Media资产
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
 
 ---
 
 
 # 发布 Dynamic Media 资产 {#publishing-dynamic-media-assets}
 
-You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. 在发布Dynamic media资产后，您可以通过URL或通过嵌入方式将其包含在网页中。
+You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. 在发布Dynamic Media资产后，您可以通过URL或通过嵌入方式将其包含在网页中。
 
-您还可以立即发布上传的资产，无需任何用户干预。 See [Configuring Dynamic Media](config-dm.md).
+您还可以立即发布上传的资产，无需任何用户干预。 或者，您也可以选择性发布这些资产。 See [Configuring Dynamic Media](config-dm.md).
 
-在卡片 **[!UICONTROL 视图中]**，资产名称的正下方会显示一个小地球图标，指示资产已发布。 在列 **[!UICONTROL 表视图中]**,“已发 **** 布”列指示已发布或未发布的资产。
+在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，资产名称的正下方会显示一个小地球图标，指示资产已发布。在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
 >[!NOTE]
 >
@@ -35,9 +35,9 @@ You publish your Dynamic Media assets by selecting the assets and tapping **[!UI
 
 有关发布集或资产的详细信息，请参阅发 [布资产。](/help/assets/manage-digital-assets.md)
 
-## HTTP/2 Dynamic media资产的交付 {#http-delivery-of-dynamic-media-assets}
+## HTTP/2 Dynamic Media资产的交付 {#http-delivery-of-dynamic-media-assets}
 
-AEM现在支持通过HTTP/2交付所有Dynamic media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，通过HTTP/2协议传送已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，使所有Dynamic media资产的响应和加载时间都更好。
+AEM现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，通过HTTP/2协议传送已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，使所有Dynamic Media资产的响应和加载时间都更好。
 
 请参 [阅HTTP/2交付内容常见问题解答](/help/assets/dynamic-media/http2faq.md) ，以了解更多信息。
 <!--this md file used to reside under sites-administering-->
