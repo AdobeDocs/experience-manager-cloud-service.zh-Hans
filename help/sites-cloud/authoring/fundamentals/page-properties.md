@@ -1,8 +1,8 @@
 ---
 title: 编辑页面属性
 description: 为页面定义所需的属性
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -159,7 +159,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **社交媒体共享**
 
-   定义页面上可用的共享选项。显示可用于[共享核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/sharing.html)的选项。
+   定义页面上可用的共享选项。显示可用于[共享核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)的选项。
 
    * **为 Facebook 启用用户共享**
    * **为 Pinterest 启用用户共享**
@@ -181,6 +181,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **定位配置**
 
    * 选择一个[品牌以指定定位的范围](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+   >[!NOTE]
+   >此选项要求用户帐户位于组 `Target Adminstrators`中。
 
 ### 权限 {#permissions}
 
@@ -215,7 +217,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 单击或点按&#x200B;**属性**
       * 单个页面
       * 多个页面（只有一部分属性可用于整体编辑）
-* 从页面编辑器中：
+* 在页面编辑器中：
    * 使用&#x200B;**页面信息**（然后&#x200B;**打开属性**）
 
 ### 从“站点”控制台中 - 单个页面 {#from-the-sites-console-single-page}
@@ -236,14 +238,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 打开要编辑属性的页面。
 1. 选择&#x200B;**页面信息**&#x200B;图标以打开选择菜单：
-1. 选择&#x200B;**打开属性**，此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。工具栏右侧还有以下按钮：
+1. 选择&#x200B;**打开属性**，此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。工具栏右侧还提供以下按钮：
    * **取消**
    * **保存并关闭**
 1. 使用&#x200B;**保存并关闭**&#x200B;按钮以保存更改。
 
 ### 从“站点”控制台中 - 多个页面 {#from-the-sites-console-multiple-pages}
 
-从&#x200B;**站点**&#x200B;控制台中，您可以选择多个页面，然后使用&#x200B;**查看属性**&#x200B;来查看和/或编辑页面属性。这称为批量编辑页面属性。
+从“站 **点** ”控制台中，您可以选择多个页面，然后使用 **查看属性** ，以查看和／或编辑页面属性。 这称为批量编辑页面属性。
 
 >[!NOTE]
 >
