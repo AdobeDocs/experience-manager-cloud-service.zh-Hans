@@ -2,14 +2,14 @@
 title: 配置Dynamic Media Cloud服务
 description: 有关如何在Adobe Experience Manager Cloud Service中配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 4b9630dfdc8dfc3a621f307f53c48dec415618e5
+source-git-commit: 50ebc2187cff4d35c93e25da9d2f62f6a86f12ad
 
 ---
 
 
 # 配置 Dynamic Media {#configuring-dynamic-media-scene-mode}
 
-如果您使用为不同环境（如开发环境、暂存环境和实时生产环境）设置的Adobe Experience Manager，则需要为其中每个环境配置Dynamic Media Cloud Services。
+如果您将Adobe Experience Manager设置用于不同的环境（如用于开发、用于暂存和用于实时生产），则需要为每个这些环境配置Dynamic Media Cloud Services。
 
 ## Dynamic Media的架构图 {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -18,8 +18,8 @@ source-git-commit: 4b9630dfdc8dfc3a621f307f53c48dec415618e5
 使用新架构，AEM负责主资产并与Dynamic Media同步以处理和发布资产：
 
 1. 主资产上传到AEM后，将复制到Dynamic Media。 此时，Dynamic Media将处理所有资产处理和再现生成，如图像的视频编码和动态变体。
-1. 生成演绎版后，AEM可以安全地访问和预览远程Dynamic Media演绎版（不会将二进制文件发送回AEM实例）。
-1. 在内容可以发布和批准后，它会触发Dynamic Media服务，将内容推出到交付服务器并在CDN中缓存内容。
+1. 生成演绎版后，AEM可以安全地访问和预览远程Dynamic Media演绎版（不会将二进制文件发回到AEM实例）。
+1. 在内容可以发布和批准后，它会触发Dynamic Media服务，将内容推出到投放服务器并在CDN中缓存内容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -67,33 +67,31 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * **[!UICONTROL 发布资产]** -您可以从以下三个选项中进行选择：
       * **[!UICONTROL 立即]** ，表示上传资产时，系统会立即摄取资产并提供URL/Embed。 发布资产不需要用户干预。
-      * **[!UICONTROL 激活后]** ，意味着您需要先显式发布资产，然后再提供URL/嵌入链接。
-<!--       * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain. -->
+      * **[!UICONTROL 激活后]** ，表示您需要先显式发布资产，然后再提供URL/嵌入链接。
+      * **[!UICONTROL 选择性发布]** ：指资产自动发布仅用于安全预览，并且可以明确发布到AEM，而不发布到DMS7以用于公共域中的投放。 将来，Adobe将增强此选项，以将资产发布到AEM并将资产发布到Dynamic Media，这两个选项相互排斥。 即，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您可以在AEM中仅发布资产以进行预览；这些相同的资源不会发布在DMS7中以便在公共域中投放。
+   * **[!UICONTROL 安全预览服务器]** -允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全地访问和预览远程Dynamic Media再现（不会将二进制文件发回到AEM实例）。
+除非您有特殊安排来使用自己的公司服务器或特殊服务器，否则Adobe Systems建议您保留指定的此设置。
 
-    ***安[!UICONTROL 全预览服务器]** —— 允许您指定安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全地访问和预览远程Dynamic Media再现（不会将二进制文件发回到AEM实例）。
-    除非您有使用自己公司的服务器或特殊服务器的特殊安排，否则Adobe Systems建议您保留指定的此设置。
-    
-    * **同[!UICONTROL 步所有内容]** —— 默认选中。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项可让您从以下两种Dynamic Media同步模式中进行选择：
-    
-    * **[!UICONTROL Dynamic Media同步模式]**
-    **[!UICONTROL Enabled by default]** —— 默认情况下，该配置将应用于所有文件夹，除非您专门为排除而标记文件夹。 &lt;!—然后，您可以取消选择不希望将配置应用到的文件夹。—>
-    * **[!UICONTROL 默认禁用]** —— 在明确标记选定文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。
-    要将选定的文件夹标记为同步到 Dynamic Media，请打开资产文件夹的“属性”页面。点按 **[!UICONTROL 详细信息]** 选项卡，然后从 **[!UICONTROL Dynamic Media 同步模式]** 下拉列表中选择以下三个选项，然后点按 **[!UICONTROL 保存]**。
-    * **已继[!UICONTROL 承]** —— 文件夹上没有明确的同步值；相反，该文件夹会从其某个上级文件夹或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。
-    * **[!UICONTROL 为子文件夹启用]** —— 在此子树中包含所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。
-    * **对子[!UICONTROL 文件夹禁用]** —— 将此子树中的所有内容从同步到Dynamic Media中排除。
+   * **[!UICONTROL 同步所有内容]** -默认情况下处于选中状态。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项可让您从以下两种Dynamic Media同步模式中进行选择：
 
->[!NOTE]
->
->Dynamic Media 不支持版本控制。此外，仅当“编辑 Dynamic Media 配置”页面中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;设置为&#x200B;**[!UICONTROL 激活时]**&#x200B;时，并且直到首次激活资产时延迟激活才适用。
->
->
->在激活资产后，所有更新都会立即实时发布到S7交付。
+   * **[!UICONTROL Dynamic Media 同步模式]**
+      * **[!UICONTROL 默认启用]** -默认情况下，该配置将应用于所有文件夹，除非您专门为排除标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 默认禁用]** -在明确标记选定文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。
+要将选定的文件夹标记为同步到 Dynamic Media，请打开资产文件夹的“属性”页面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
+         * **[!UICONTROL 继承]** -文件夹上没有明确的同步值；相反，该文件夹会从其某个上级文件夹或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。
+         * **[!UICONTROL 为子文件夹启用]** -在此子树中包含所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。
+         * **[!UICONTROL 对子文件夹禁用]** -将此子树中的所有内容从同步到Dynamic Media中排除。
+   >[!NOTE]
+   >
+   >Dynamic Media 不支持版本控制。此外，仅当“编辑 Dynamic Media 配置”页面中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;设置为&#x200B;**[!UICONTROL 激活时]**&#x200B;时，并且直到首次激活资产时延迟激活才适用。
+   >
+   >
+   >在激活资产后，所有更新都会立即实时发布到S7投放。
 
-![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
-1. 要在发布Dynamic Media内容之前安全地预览它，您需要将AEM作者实例“列入白名单”以连接到Dynamic Media:
+1. 要在发布Dynamic Media内容之前安全预览该内容，您需要将AEM作者实例“列入白名单”以连接到Dynamic Media:
 
    * 登录Dynamic Media Classic帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的凭据和登录是在配置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
    * 在页面右上角附近的导航栏上，单击“设置”>“应用程 **[!UICONTROL 序设置”>“发布设置”>“图像服务器”]**。
@@ -109,7 +107,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## （可选）在Dynamic Media中配置高级设置{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-如果要进一步自定义Dynamic Media的配置和设置，或优化其性能，您可以完成以下一个或多个可选任 *务* :
+如果要进一步自定义Dynamic Media的配置和设置，或优化其性能，您可以完成以下一个或多个可选 *任务* :
 
 * [Dynamic Media设置的设置和配置](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（可选）调整Dynamic Media的性能](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
@@ -124,7 +122,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 使用Dynamic Media Classic(Scene7)用户界面更改Dynamic Media设置。
 
-以上某些任务要求您在以下位置登录Dynamic Media Classic(Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+以上某些任务要求您登录Dynamic Media Classic(Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 设置和配置任务包括：
 
@@ -147,9 +145,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 * **[!UICONTROL 默认请求属性]** -这些设置与图像的默认外观有关。
 * **[!UICONTROL 常见缩略图属性]** -这些设置与缩略图图像的默认外观有关。
 * **[!UICONTROL 目录字段的默认值]**-这些设置与图像的分辨率和默认缩略图类型有关。
-* **[!UICONTROL 颜色管理属性]** -这些设置决定使用哪些ICC颜色配置文件。
+* **[!UICONTROL 颜色管理属性]** -这些设置决定使用哪些ICC颜色用户档案。
 * **[!UICONTROL 兼容性属性]** -此设置允许将文本图层中的前导和尾部段落视为版本3.6中的段落，以实现向后兼容性。
-* **[!UICONTROL 本地化支持]** -这些设置允许您管理多个区域设置属性。 它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置本地化支持的更 **多信息]**，请参 [阅设置资产本地化时的注意事项](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)。
+* **[!UICONTROL 本地化支持]** -这些设置允许您管理多个区域设置属性。 它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置本地化支持的更 **多信息]**，请参 [阅设置本地化资产时的注意事项](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)。
 
 #### 配置应用程序常规设置 {#configuring-application-general-settings}
 
@@ -157,9 +155,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 * **[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则请勿更改任何服务器名称。
 
-* **[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定如何上传替换资产：是替换原件还是复制。 重复的资源使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
+* **[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定如何上传替换资产：是取代原版还是成为重复。 重复资源使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
 
-* **[!UICONTROL 在当前文件夹中覆盖，基本图像名称／扩展名相同]** -此选项是最严格的替换规则。 它要求将替换图像上传到与原始图像相同的文件夹，并且替换图像的文件扩展名与原始图像的扩展名相同。 如果不满足这些要求，则会创建副本。
+* **[!UICONTROL 在当前文件夹中覆盖，基本图像名称／扩展名相同]** -此选项是最严格的替换规则。 它要求将替换图像上传到与原始图像相同的文件夹，并且替换图像的文件扩展名与原始图像的扩展名相同。 如果不满足这些要求，则会创建重复。
 
    >[!NOTE]
    >
@@ -168,7 +166,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 * **[!UICONTROL 在任何文件夹中覆盖相同的基本资源名称／扩展名]** -要求替换图像的文件扩展名与原始图像相同（例如，chair.jpg必须替换chair.jpg，而不是chair.tif）。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新后的图像位于新文件夹中；文件在其原始位置不再可找到
 * **[!UICONTROL 覆盖任意文件夹中相同的基本资产名称，而不考虑扩展名]** -此选项是最包含内容的替换规则。 您可以将替换图像上传到不同于原始文件夹的文件夹，以其他文件扩展名上传文件，然后替换原始文件。 如果原始文件位于其他文件夹中，则替换图像将驻留在其上传到的新文件夹中。
 
-* **[!UICONTROL 默认颜色配置文件]** -有关其 [他信息，请参阅配置颜色管理](#configuring-color-management) 。
+* **[!UICONTROL 默认颜色用户档案]** -有关其 [他信息，请参阅配](#configuring-color-management) 置颜色管理。
 
 >[!NOTE]
 >
@@ -177,7 +175,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 配置颜色管理 {#configuring-color-management}
 
-通过Dynamic Media颜色管理，您可以对资产进行颜色校正。 通过颜色校正，摄取的资源可保留其色彩空间（RGB、CMYK、灰色）和嵌入的颜色配置文件。 当您请求动态再现时，图像颜色会使用CMYK、RGB或灰度输出校正到目标色彩空间。 See [Configuring Image Presets](/help/assets/dynamic-media/managing-image-presets.md).
+通过Dynamic Media颜色管理，您可以对资产进行颜色校正。 通过颜色校正，摄取的资源将保留其色彩空间（RGB、CMYK、灰色）和嵌入的颜色用户档案。 当您请求动态再现时，图像颜色会使用CMYK、RGB或“灰色”输出校正到目标色彩空间。 See [Configuring Image Presets](/help/assets/dynamic-media/managing-image-presets.md).
 
 配置默认颜色属性以在请求图像时启用颜色校正：
 
@@ -187,9 +185,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    可以设置以下颜色校正属性：
 
-   * **[!UICONTROL CMYK默认色彩空间]** -默认CMYK颜色配置文件的名称
-   * **[!UICONTROL 灰度默认色彩空间]** -默认灰色配置文件的名称
-   * **[!UICONTROL RGB默认色彩空间]** -默认RGB色彩配置文件的名称
+   * **[!UICONTROL CMYK默认色彩空间]** -默认CMYK色彩用户档案的名称
+   * **[!UICONTROL 灰度默认色彩空间]** -默认灰色用户档案的名称
+   * **[!UICONTROL RGB默认色彩空间]** -默认RGB色彩用户档案的名称
    * **[!UICONTROL 颜色转换渲染方法]** -指定渲染方法。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]]**as the default.
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
@@ -199,8 +197,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 这样做可以执行以下操作：
 
 * 启用RGB和CMYK图像的颜色校正。
-* 没有颜色配置文件的RGB图像将假定在 *sRGB色彩空间中* 。
-* 没有颜色配置文件的CMYK图像将假定在 *WebCoated色彩空间中* 。
+* 没有颜色用户档案的RGB图像将假定在 *sRGB色彩空间中* 。
+* 将假定没有颜色用户档案的CMYK图像位于 *WebCoated色彩空间* 。
 * 返回RGB输出的动态演绎版将在*sRGB *色彩空间中返回它。
 * 返回CMYK输出的动态演绎版将在 *WebCoated色彩空间中返回* 。
 
@@ -211,7 +209,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 * 将Adobe PDF转换为电子目录资产。
 * 将Adobe Photoshop文档(.PSD)转换为横幅模板资源以实现个性化。
 * 栅格化Adobe Illustrator文件(.AI)或Adobe Photoshop封装的Postscript文件(.EPS)。
-* 注意：视频配置文件和图像配置文件可分别用于定义视频和图像的处理。
+* 注意：视频用户档案和成像用户档案可分别用于定义视频和图像的处理。
 
 请参阅[上传资产](/help/assets/add-assets.md)。
 
@@ -227,9 +225,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在mimeTypes文件夹下，选择MIME类型。
 1. 在CRXDE Lite页面的右侧，位于下半部分：
 
-   * 双击启用 **[!UICONTROL 字段]** 。 默认情况下，所有资产MIME类型均处于启用状态( **[!UICONTROL 设置为]** true)，这意味着资产将同步到Dynamic Media以进行处理。 如果您希望从处理中排除此资产MIME类型，请将此设置更改为 **[!UICONTROL false]**。
+   * 多次-单击 **[!UICONTROL 启用]** 字段。 默认情况下，所有资产MIME类型均处于启用状态( **[!UICONTROL 设置为]** true)，这意味着资产将同步到Dynamic Media进行处理。 如果您希望从处理中排除此资产MIME类型，请将此设置更改为 **[!UICONTROL false]**。
 
-   * 双击 **[!UICONTROL jobParam]** ，打开其关联的文本字段。 有关 [允许的处理参数值列表](/help/assets/file-format-support.md) ，请参阅支持的Mime类型，这些参数值可用于给定的mime类型。
+   * 多次-单击 **[!UICONTROL jobParam]** ，打开其关联的文本字段。 有关 [允许的处理参数值的列表](/help/assets/file-format-support.md) ，请参阅支持的Mime类型，您可以将这些值用于给定的mime类型。
 
 1. 执行下列操作之一：
 
@@ -284,7 +282,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
 1. 保持 mime 类型 `image_vnd.dwg` 仍被选中，在&#x200B;**[!UICONTROL 属性]**&#x200B;选项卡的&#x200B;**[!UICONTROL 已启用]**&#x200B;行中，双击&#x200B;**[!UICONTROL 值]**&#x200B;列标题下的值，以打开&#x200B;**[!UICONTROL 值]**&#x200B;下拉列表。
-1. 在字 `false` 段中键入(或从下 **[!UICONTROL 拉列表中选择]** false)。
+1. 在字 `false` 段中键入(或从 **[!UICONTROL 下拉列表中选择false]** )。
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
@@ -300,13 +298,13 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 **配置默认命名**
 
-创建用于任何批集预设菜谱的默认命名约定。 在批量集预设定义中选择的默认命名约定可能是您的公司批量生成集所需的全部。 将创建批集预设，以使用您定义的默认命名约定。 如果公司定义的默认命名存在例外情况，您可以创建任意数量的批量集预设，其中包含特定内容集所需的替代自定义命名约定。
+创建用于任何批集预设菜谱的默认命名约定。 批量集预设定义中选择的默认命名约定可能是批量生成集所需的所有公司。 将创建批集预设，以使用您定义的默认命名约定。 在公司定义的默认命名存在例外的情况下，您可以创建任意数量的批量集预设，其中包含特定内容集所需的替代自定义命名约定。
 
 虽然使用批量集预设功能不需要设置默认的命名约定，但最佳实践是建议您使用默认的命名约定来定义要在集中分组的命名约定的任意多个元素，以便简化批量集创建。
 
-作为替代方法，请注意，您可以使用 **[!UICONTROL “查看代码]** ”（没有可用的表单字段）。 在此视图中，您可以完全使用正则表达式来创建命名约定定义。
+作为替代方法，请注意，您可以使用 **[!UICONTROL 视图代码]** ，但不提供表单字段。 在此视图中，您可以完全使用常规表达式创建命名约定定义。
 
-两个元素可用于定义：“匹配”和“基本名称”。 这些字段允许您定义命名约定的所有元素，并标识用于命名包含这些元素的集合的约定部分。 公司的个人命名惯例可能针对这些元素使用一行或多行定义。 您可以为您的唯一定义使用多行，并将它们分组为不同的元素，如主图像、颜色元素、替代视图元素和色板元素。
+两个元素可用于定义：“匹配”和“基本名称”。 这些字段允许您定义命名约定的所有元素，并标识用于命名包含这些元素的集合的约定部分。 公司的单个命名约定可针对这些元素使用一行或多行定义。 您可以为您的唯一定义使用多行，并将它们分组为不同的元素，如主图像、颜色元素、替代视图元素和色板元素。
 
 **配置默认命名**
 
@@ -317,11 +315,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在页面顶部附近的导航栏上，点按设置>应 **[!UICONTROL 用程序设置>批量集预设>默认命名]**。
 1. 选择&#x200B;**[!UICONTROL 查看表单]**&#x200B;或&#x200B;**[!UICONTROL 查看代码]**，以指定要查看的方式并输入有关每个元素的信息。
 
-   您可以选中“查 **[!UICONTROL 看代码]** ”复选框，查看在表单选择旁边构建的正则表达式值。 如果表单视图因任何原因限制您，您可以输入或更改这些值以帮助定义命名约定的元素。 如果无法在表单视图中分析您的值，则表单字段将变为非活动状态。
+   您可以选中“ **[!UICONTROL 视图代码]** ”复选框，将构建的常规表达式值与表单选择项一起视图。 如果表单视图因任何原因限制您，您可以输入或更改这些值以帮助定义命名约定的元素。 如果无法在表单视图中分析您的值，则表单字段将变为非活动状态。
 
    >[!NOTE]
    >
-   >取消激活的表单字段不执行正则表达式正确性验证。 您将看到在结果行之后为每个元素构建的正则表达式的结果。 完整的正则表达式显示在页面底部。
+   >取消激活的表单字段不会执行任何验证，确认您的常规表达式正确。 您会看到在“结果”行之后为每个元素构建的常规表达式的结果。 完整的常规表达式显示在页面底部。
 
 1. 根据需要展开每个元素并输入要使用的命名约定。
 1. 根据需要，执行以下任一操作：
@@ -340,7 +338,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 您可以创建、编辑和管理批集预设。 有两种形式的批集预设定义：一个用于您可能已设置的默认命名约定，另一个用于您动态创建的自定义命名约定。
 
-您可以使用表单字段方法来定义批量集预设，也可以使用代码方法来使用正则表达式。 与默认命名一样，您可以在表单视图中定义的同时选择查看代码，并使用正则表达式来构建定义。 或者，您也可以取消选中任一视图以仅使用一个视图或另一个视图。
+您可以使用表单字段方法来定义批集预设，也可以使用代码方法来使用常规表达式。 与默认命名一样，您可以在表单视图中定义的同时选择视图代码，并使用常规表达式来构建定义。 或者，您也可以取消选中视图以使用其中一个或另一个专用。
 
 **要创建批集预设，请执行以下操作：**
 
@@ -350,9 +348,9 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 1. 在页面顶部附近的导航栏上，点按设置>应 **[!UICONTROL 用程序设置>批集预设>批集预设]**。
 
-   请注 **[!UICONTROL 意]**，查看表单（如“详细信息”页面右上角所设置）是默认视图。
+   请注 **[!UICONTROL 意，视图表单]**（如“详细信息”页面的右上角所设置）是默认视图。
 
-1. 在“预设列表”面板中，点 **[!UICONTROL 按添加]** ，以激活屏幕右侧“详细信息”面板中的定义字段。
+1. 在预设列表面板中，点 **[!UICONTROL 按添加]** ，以激活屏幕右侧“详细信息”面板中的定义字段。
 1. 在“详细信息”面板的“预设名称”字段中，键入预设的名称。
 1. 在批集类型下拉菜单中，选择预设类型。
 1. 执行下列操作之一：
@@ -363,7 +361,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 1. 对于“序列”顺序，定义在Dynamic Media中将图像集组合在一起后图像的显示顺序。
 
-   默认情况下，资产按字母数字顺序排序。 但是，您可以使用逗号分隔的正则表达式列表来定义顺序。
+   默认情况下，资产按字母数字顺序排序。 但是，您可以使用逗号分隔的常规列表来定义顺序。
 
 1. 对于“设置命名和创建约定”，请指定您在“资产命名约定”中定义的基本名称的后缀或前缀。 此外，定义在Dynamic Media文件夹结构中创建集的位置。
 
@@ -376,7 +374,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 **创建批集预设以自动生成2D旋转集**
 
-您可以使用批集类型 **[!UICONTROL 多轴旋转集]** ，创建可自动生成2D旋转集的菜谱。 图像分组使用行和列正则表达式，以便图像资产在多维数组中的相应位置正确对齐。 在多轴旋转集中，不存在必须具有的最小或最大行数或列数。
+您可以使用批集类型 **[!UICONTROL 多轴旋转集]** ，创建可自动生成2D旋转集的菜谱。 图像分组使用行和列规则表达式，以便图像资产在多维数组中的相应位置正确对齐。 在多轴旋转集中，不存在必须具有的最小或最大行数或列数。
 
 例如，假定要创建一个名为的多轴旋转集 `spin-2dspin`。 您有一组包含三行的旋转集图像，每行12个图像。 图像的名称如下：
 
@@ -406,16 +404,16 @@ spin-01-01
 
 1. 在页面顶部附近的导航栏上，单击“ **[!UICONTROL设置”>“应用程序设置”>“批量集预设”>“批量集预设”**。
 
-   请注 **[!UICONTROL 意]**，查看表单（如“详细信息”页面右上角所设置）是默认视图。
+   请注 **[!UICONTROL 意，视图表单]**（如“详细信息”页面的右上角所设置）是默认视图。
 
-1. 在“预设列表”面板中，单 **[!UICONTROL 击]** “添加”以激活屏幕右侧“详细信息”面板中的定义字段。
+1. 在“预设列表”面板中， **[!UICONTROL 单击]** “添加”以激活屏幕右侧“详细信息”面板中的定义字段。
 1. 在“详细信息”面板的“预设名称”字段中，键入预设的名称。
 1. 在“批集类型”下拉菜单中，选择&#x200B;**[!UICONTROL 资产集]**。
-1. 在“子类型”(Sub Type)下拉列表中，选择“ **[!UICONTROL 多轴旋转集”(Multi-Axis Spin Set)]**。
+1. 在子类型下拉列表中，选择 **[!UICONTROL 多轴旋转集]**。
 1. 展开 **[!UICONTROL 资产命名约定]**，然后在文件命名下拉列表中，单击自定 **[!UICONTROL 义]**。
 1. 使用&#x200B;**[!UICONTROL 匹配]**&#x200B;和（可选）**[!UICONTROL 基本名称]**&#x200B;属性定义组成分组的图像资产命名的正则表达式。
 
-   例如，您的字面“匹配”正则表达式可能如下所示：
+   例如，您的字面“匹配”常规表达式可能如下所示：
 
    `(w+)-w+-w+`
 
@@ -423,7 +421,7 @@ spin-01-01
 
    使用括号将文件名中的行或列位置括起来。
 
-   例如，对于行正则表达式，它可能如下所示：
+   例如，对于行常规表达式，它可能如下所示：
 
    `\w+-R([0-9]+)-\w+`
 
@@ -431,7 +429,7 @@ spin-01-01
 
    `\w+-(\d+)-\w+`
 
-   对于列正则表达式，它可能如下所示：
+   对于列常规表达式，可能如下所示：
 
    `\w+-\w+-C([0-9]+)`
 
@@ -439,11 +437,11 @@ spin-01-01
 
    `\w+-\w+-C(\d+)`
 
-   请记住，这些只是示例。 您可以创建正则表达式，但可以根据需要创建正则表达式。
+   请记住，这些只是示例。 您可以创建常规表达式，但是您希望创建的内容能够满足您的需求。
 
    >[!NOTE]
    >
-   >如果行和列正则表达式的组合无法确定资产在多维旋转集数组中的位置，则该资产不会添加到该集中，并会记录错误。
+   >如果行和列的常规表达式组合无法确定多维旋转集数组中资产的位置，则不会将该资产添加到该集，并记录错误。
 
 1. 对于“设置命名和创建约定”，请指定您在“资产命名约定”中定义的基本名称的后缀或前缀。
 
@@ -519,7 +517,7 @@ Scene7上传连接设置可将AEM资产同步到Dynamic Media Classic服务器�
 
    “连 **[!UICONTROL 接数”设置控制]** AEM到Dynamic Media上传所允许的HTTP连接的最大数量；通常，10个连接的预定义值就足够了。
 
-   活动 **[!UICONTROL 作业超时设置]** ，可确定要在交付服务器中发布的已上载Dynamic Media资产的等待时间。 默认情况下，此值为2100秒或35分钟。
+   活动 **[!UICONTROL 作业超时设置]** ，可确定在投放服务器中发布已上载Dynamic Media资产的等待时间。 默认情况下，此值为2100秒或35分钟。
 
    对于大多数用例，设置2100就足够了。
 
