@@ -1,13 +1,13 @@
 ---
-title: AEM项目结构
+title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
 
 ---
 
 
-# AEM项目结构
+# AEM 项目结构
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
 建议的应用程序部署结构如下：
 
-+ 该 `ui.apps` 包或内容包包含要部署的所有代码，并且仅部署到 `/apps`。 包的常见元 `ui.apps` 素包括但不限于：
++ 该包 `ui.apps` 或代码包包含要部署的所有代码，并且仅部署到 `/apps`。 包的常见元 `ui.apps` 素包括但不限于：
    + OSGi捆绑
       + `/apps/my-app/install`
    + OSGi配置
@@ -69,7 +69,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
          + 组
          + ACL（权限）
             + 任何 `rep:policy` 路径（可变或不可变）的任意
-+ 该包 `ui.content` 或代码包包含所有内容和配置。 包的常见元 `ui.content` 素包括但不限于：
++ 该包 `ui.content` 或内容包包含所有内容和配置。 包的常见元 `ui.content` 素包括但不限于：
    + 上下文感知配置
       + `/conf`
    + 必需的、复杂的内容结构(即 内容构建以回购初始化中定义的基线内容结构为基础，并扩展该结构。
@@ -84,7 +84,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
    包现在使用Maven [FileVault Package Maven插件的嵌入式配置](#embeddeds)，而不是配置 `<subPackages>` 包含。
 
-   对于复杂的Experience Manager部署，可能需要在AEM中创建多个 `ui.apps` 和项 `ui.content` 目／包，它们代表特定站点或租户。 如果这样做，则确保保留可变内容和不可变内容之间的拆分，并将所需的内容包添加为容器内容包中的 `all` 子包。
+   对于复杂的Experience Manager部署，可能需要在AEM中创建多个 `ui.apps` 和项 `ui.content` 目／包，它们代表特定站点或租户。 如果这样做，则确保在可变内容和不可变内容之间进行拆分，并将所需的内容包作为子包添加到 `all` 容器内容包中。
 
    例如，复杂的部署内容包结构可能如下：
 
@@ -99,7 +99,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
 包将用其声明的包类型进行标记。
 
-+ 容器包不能有 `packageType` 集。
++ 容器包不得具有集 `packageType` 合。
 + 代码（不可变）包必须将其 `packageType` 设置为 `application`。
 + 内容（可变）包必须将其设 `packageType` 置为 `content`。
 
@@ -172,7 +172,7 @@ Apache Sling Repo Init文档中提供了回购初始化脚本的 [完整词汇�
 
 ![嵌入包](assets/embeddeds.png)
 
-要定位AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置，格式如下： `all`
+要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置，格式如下： `all`
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -210,7 +210,7 @@ Apache Sling Repo Init文档中提供了回购初始化脚本的 [完整词汇�
 
 ### 容器包的过滤器定义 {#container-package-filter-definition}
 
-由于在容器包中嵌入了代码和内容子包，因此必须将嵌入的目标路径添加到容器项目，以确保在构建时将嵌入的包包含在容器包中。 `filter.xml`
+由于容器包中嵌入了代码和内容子包，嵌入的目标路径必须添加到容器项目中，以确保在构建时嵌入的容器包包含在包中。 `filter.xml`
 
 只需为包 `<filter root="/apps/<my-app>-packages"/>` 含要部署的子包的任何2级文件夹添加条目。
 
@@ -277,7 +277,7 @@ Apache Sling Repo Init文档中提供了回购初始化脚本的 [完整词汇�
 
 #### 容器包类型 {#container-package-types}
 
-容器项 `all/pom.xml` 目 **不声明** (a) `<packageType>`。
+容器 `all/pom.xml` 项 **目不声明** a. `<packageType>`.
 
 #### 代码（不可变）包类型 {#immutable-package-types}
 
@@ -482,7 +482,7 @@ OSGi属 `scripts` 性包含由 [Apache Sling的Repo Init语言定义的指令](h
 <filter root="/apps/my-app-packages"/>
 ```
 
-如果在嵌 `/apps/*-packages` 入目标中使用多个，则必须在此处枚举所有这些目标。
+如果在嵌 `/apps/*-packages` 入目标中使用多个，则必须在此处枚举所有这些字段。
 
 ### 第三方Maven存储库 {#xml-3rd-party-maven-repositories}
 
