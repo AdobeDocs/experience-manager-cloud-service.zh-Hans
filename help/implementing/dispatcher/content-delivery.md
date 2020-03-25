@@ -1,15 +1,15 @@
 ---
-title: 内容交付
-description: '内容交付 '
+title: 内容投放
+description: '内容投放 '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
-# 在AEM中以云服务的形式交付内容 {#content-delivery}
+# AEM中的内容投放为云服务 {#content-delivery}
 
-发布服务内容交付包括：
+当前页面详细信息将发布AEM中的服务内容投放作为云服务。 发布服务内容投放包括：
 
 * CDN（通常由Adobe管理）
 * AEM调度程序
@@ -27,7 +27,7 @@ source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
 
 内容类型HTML/文本设置为在调度程序层300秒（5分钟）后过期，调度程序缓存和CDN均遵循此阈值。 在发布服务的重新部署期间，在新发布节点接受通信之前清除调度程序缓存并随后预热。
 
-以下各节提供有关内容交付的更详细信息，包括CDN配置和调度程序缓存。
+以下各节提供了有关内容投放的更详细信息，包括CDN配置和调度程序缓存。
 
 有关从作者服务复制到发布服务的信息，请在此 [处获取](/help/operations/replication.md)。
 
@@ -36,7 +36,7 @@ source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
 
 ## CDN {#cdn}
 
-AEM提供三个选项：
+AEM优惠了三个选项：
 
 1. Adobe Managed CDN - AEM现成的CDN。 这是建议的选项，因为它已完全集成。
 1. 客户CDN指向Adobe Managed CDN —— 客户将自己的CDN指向AEM现成的CDN。 如果第一个选项不可行，则这是下一个首选选项，因为它仍利用AEM与其默认CDN的集成。 客户仍将负责管理自己的CDN。
@@ -49,9 +49,9 @@ AEM提供三个选项：
 
 ### Adobe Managed CDN {#adobe-managed-cdn}
 
-使用Adobe现成的CDN为内容交付做准备很简单，如下所述：
+使用Adobe现成的CDN准备内容投放很简单，如下所述：
 
-1. 您将通过共享指向包含此信息的安全表单的链接，向Adobe提供已签名的SSL证书和密钥。 请就此任务与客户支持协作。
+1. 您将通过共享指向包含此信息的安全表单的链接，向Adobe提供已签名的SSL证书和密钥。 请就本任务与客户支持协作。
 注意：Aem作为云服务不支持域验证(DV)证书。
 1. 然后，客户支持将与您协调CNAME DNS记录的时间，并将其FQDN指向 `adobe-aem.map.fastly.net`。
 1. 当SSL证书即将过期时，您会收到通知，因此您可以重新提交新的SSL证书。
@@ -73,8 +73,8 @@ AEM提供三个选项：
 配置说明：
 
 1. 使用 `X-Forwarded-Host` 域名设置标题。
-1. 使用源域（即Adobe CDN的入口）设置主机头。 价值应来自Adobe。
-1. 将SNI头发送到源。 与主机头一样， sni头必须是源域。
+1. 使用来源域（即Adobe CDN的入口）设置主机头。 价值应来自Adobe。
+1. 将SNI头发送到来源。 与主机头一样， sni头必须是来源域。
 1. 设置 `X-Edge-Key`将流量正确路由到AEM服务器所需的路径。 价值应来自Adobe。
 
 ### 客户管理的CDN {#customer-managed-cdn}
@@ -93,10 +93,10 @@ AEM提供三个选项：
 
 配置说明：
 
-1. 通过调用环境create/update API向白名单中的CIDR列表，将CDN供应商的白名单提供给Adobe。
+1. 通过调用环境创建／更新API(将CIDR列表到白名单)，将CDN供应商的白名单提供给Adobe。
 1. 使用 `X-Forwarded-Host` 域名设置标题。
-1. 将主机头与源域（即Aem）设置为云服务入口。 价值应来自Adobe。
-1. 将SNI头发送到源。 SNI头必须是源域。
+1. 将Host头与来源域（即Aem）设置为云服务入口。 价值应来自Adobe。
+1. 将SNI头发送到来源。 SNI头必须是来源域。
 1. 设置 `X-Edge-Key` 将流量正确路由到AEM服务器所需的路径。 价值应来自Adobe。
 
 在接受实时流量之前，您应向Adobe客户支持部门验证端到端流量路由是否正常工作。
@@ -156,7 +156,7 @@ AEM提供三个选项：
 
 *其他设置缓存头的方法也可能有效
 
-在接受实时流量之前，客户应向Adobe客户支持部门验证端到端流量路由是否正常工作。
+在接受实时流量之前，客户应向Adobe客户支持进行验证，确保端到端流量路由正常工作。
 
 ## Dispatcher {#disp}
 
@@ -166,7 +166,7 @@ HTML/文本类型的内容设置有与300秒（5分钟）到期对应的缓存�
 
 本节的其余部分介绍了与调度程序缓存失效相关的注意事项。
 
-### 激活／取消激活期间调度程序缓存失效 {#cache-activation-deactivation}
+### 激活/取消激活期间调度程序缓存失效 {#cache-activation-deactivation}
 
 与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面。
 
@@ -183,7 +183,7 @@ HTML/文本类型的内容设置有与300秒（5分钟）到期对应的缓存�
 
 此方 `invalidate.cache` 法将不再受支持，因为它只针对特定的调度程序节点。
 AEM作为云服务在服务级别运行，而不是在单个节点级别运行，因此“从AEM [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) 中使缓存页面失效”页面中的失效说明对于AEM作为云服务无效。
-而应使用复制刷新代理。 这可以使用复制API完成。 此处提供复制API文档 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有关刷新缓存的示例，请参阅 [API示例页，具体是向所有可用代理发出ACTIVATE类型复制操作的](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)`CustomStep` 示例。 刷新代理端点不可配置，但是预配置为指向调度程序，与运行刷新代理的发布服务匹配。 刷新代理通常可由OSGi事件或工作流触发。
+而应使用复制刷新代理。 这可以使用复制API完成。 此处提供复制API文档 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有关刷新缓存的示例，请参阅 [API示例页，具体是向所有可用代理发出ACTIVATE类型复制操作的](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)`CustomStep` 示例。 刷新代理端点不可配置，但是预配置为指向调度程序，与运行刷新代理的发布服务匹配。 冲洗剂通常可由OSGi事件或工作流触发。
 
 下图说明了这一点。
 
