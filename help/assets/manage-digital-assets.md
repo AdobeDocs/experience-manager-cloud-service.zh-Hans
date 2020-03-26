@@ -4,7 +4,7 @@ description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
+source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
 1. 在“标 **[!UICONTROL 题]** ”字段中，提供文件夹名称。 默认情况下，DAM使用您提供的标题作为文件夹名称。 创建文件夹后，您可以覆盖默认文件夹并指定其他文件夹名称。
 1. 单击&#x200B;**[!UICONTROL 创建]**。您的文件夹会显示在数字资产文件夹中。
 
-不支持以下（以空格分隔的）字符列表：
+不支持以下(以空格分隔的列表)字符：
 
 * 资产文件名中不能包含以下任意字符： `* / : [ \\ ] | # % { } ? &`
 * 资产文件夹名称不能包含以下任意字符： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -38,14 +38,14 @@ source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
 
 ## 预览资产 {#previewing-assets}
 
-要预览资产，请按照以下步骤操作。
+要预览资产，请执行以下步骤。
 
 1. 在资产用户界面中，导航到要预览的资产所在的位置。
 1. 点按所需的资产以将其打开。
 
 1. 在预览模式中，缩放选项可用于支持的图 [像类型](/help/assets/file-format-support.md) （通过交互式编辑）。
 
-   要放大资产，请点按／单 `+` 击（或点按／单击资产上的放大镜）。 要缩小，请点按／单击 `-`。 放大时，可以通过平移来仔细查看图像上的任意区域。重置缩放箭头可返回原始视图。
+   要放大资产，请点按／单 `+` 击（或点按／单击资产上的放大镜）。 要缩小，请点按／单击 `-`。 放大时，可以通过平移来仔细查看图像上的任意区域。重置缩放箭头将您带回到原始视图。
 
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
@@ -53,7 +53,7 @@ source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
 
 1. 导航到要编辑元数据的资产所在的位置。
 
-1. 选择资产，然后点按／单击工 **[!UICONTROL 具栏中]** 的属性以查看资产属性。 或者，选择资产 **[!UICONTROL 卡上的]** “属性”快速操作。
+1. 选择资产，然后点按／单击工 **[!UICONTROL 具栏中的]** “属性”以视图资产属性。 或者，选择资产 **[!UICONTROL 卡上的]** “属性”快速操作。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -61,7 +61,7 @@ source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
 
    >[!NOTE]
    >
-   >“属性”页面的布 [!UICONTROL 局] ，以及可用的元数据属性取决于基础元数据架构。 要了解如何修改“属性”页的布 [!UICONTROL 局] ，请参阅元 [数据架构](/help/assets/metadata-schemas.md)。
+   >属性页面的布 [!UICONTROL 局] ，以及可用的元数据属性取决于基础元数据模式。 要了解如何修改“属性”页面的布 [!UICONTROL 局] ，请参阅元 [数据模式](/help/assets/metadata-schemas.md)。
 
 1. 要计划资产激活的特定日期/时间，请使用&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段旁边的日期选取器。
 
@@ -79,18 +79,18 @@ source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
    >
    >要创建标记，您必须在CRX存储库的路 `/content/cq:tags/default` 径上具有写入权限。
 
-1. 要查看资产的使用情况统计信息，请单击／点按 **[!UICONTROL 分析]** 选项卡。
+1. 要视图资产的使用情况统计信息，请单击／点按 **[!UICONTROL Insights]** 选项卡。
 
    使用情况统计信息包括：
 
    * 查看或下载资产的次数
-   * 使用资产的渠道／设备
+   * 渠道/设备，通过这些设备使用资产
    * 最近使用该资产的创意解决方案
    有关详细信息，请参阅 [资产分析](assets-insights.md)。
 
 1. 点按／单击保 **[!UICONTROL 存并关闭]**。
 
-1. 导航到资产用户界面。 编辑的元数据属性（包括标题、说明和标记）显示在“卡片”视图的资产卡片上以及“列表”视图的相关列下。
+1. 导航到资产用户界面。 已编辑的元数据属性（包括标题、说明和标记）显示在卡片视图中的资产卡片上以及列表视图中的相关列下。
 
 ## 复制资产 {#copying-assets}
 
@@ -167,7 +167,7 @@ source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. 点按／单击GlobalNav图标，然后从列 **[!UICONTROL 表中选择]** “演绎版”。
+1. 点按／单击GlobalNav图标，然后从列表中 **[!UICONTROL 选择]** “演绎版”。
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -272,7 +272,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## 取消发布资产 {#unpublishing-assets}
 
-1. 导航到要从发布环境中删除的资产／资产文件夹的位置（取消发布）。
+1. 导航到要从发布环境（取消发布）中删除的资产／资产文件夹的位置。
 
 1. 选择要取消发布的资产／文件夹，然后点按／单击工 **[!UICONTROL 具栏中的管理发布]** 图标。
 
@@ -288,7 +288,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. 在确认对话框中，点按／单击：
 
    * **[!UICONTROL 取消]** ，停止操作
-   * **[!UICONTROL 取消发布]** ，以确认在指定日期已取消发布资产（在发布环境中不再可用）。
+   * **[!UICONTROL 取消发布]** ，以确认在指定日期已取消发布资产(在发布环境中不再可用)。
    >[!NOTE]
    >
    >取消发布复杂资产时，仅取消发布资产。 请避免取消发布引用，因为其他已发布的资产可能会引用这些引用。
@@ -384,13 +384,13 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
 ## 时间轴 {#timeline}
 
-时间轴允许您查看选定项目的各种事件，如资产的活动工作流、注释／注释、活动日志和版本。
+时间轴允许您视图选定项目的各种事件，如资产的活动工作流、注释／注释、活动日志和版本。
 
 ![对资产的时间轴条目排序](assets/sort_timeline.gif)*图：对资产的时间轴条目进行排序*
 
 >[!NOTE]
 >
->在“收藏 [集”控制台中](/help/assets/manage-collections.md#navigate-the-collections-console),“显 **[!UICONTROL 示全部]** ”列表提供了仅查看注释和工作流的选项。 此外，时间轴仅对控制台中列出的顶级集合显示。 如果您在任何集合中导航，则不会显示该集合。
+>在“收 [藏集”控制台](/help/assets/manage-collections.md#navigate-the-collections-console),“显示全 **** 部”列表提供了仅用于视图注释和工作流的选项。 此外，时间轴仅对控制台中列出的顶级集合显示。 如果您在任何集合中导航，则不会显示该集合。
 
 >[!NOTE]
 >
@@ -419,12 +419,13 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
+-->
 
-   >[!NOTE]
-   >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+>[!NOTE]
+>
+>对于非管理员用户，仅当用户在CRXDE中具有“读取”权限时，才显示 `/home` 建议。
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
@@ -432,64 +433,64 @@ AEM资产界面中的编辑工具可让您对图像资产执行小型编辑作�
 
    >[!NOTE]
    >
-   >You can add multiple annotations, before you save them.
+   >在保存注释之前，可以添加多个注释。
 
 1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
-1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. To view the notification, log in to AEM Assets with Aaron MacDonald&#39;s credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
-   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
+   >您也可以对视频资产添加注释。在对视频添加注释时，播放器会暂停，让您在帧上添加注释。 有关详细信息，请参 [阅管理视频资产](manage-video-assets.md)。
 
-1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
+1. 要选择不同的颜色以便您能够区分不同的用户，请单击／点按用户档案图标，然后单击／点按我的 **[!UICONTROL 首选项]**。
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
+   在&#x200B;**[!UICONTROL 批注颜色]**&#x200B;框中指定所需颜色，然后单击/点按&#x200B;**[!UICONTROL 接受]**。
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
 >[!NOTE]
 >
->You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
+>您还可以向集合添加注释。 但是，如果集合包含子集合，则只能向父集合添加注释／注释。 “注释”选项对子集合不可用。
 
-### View saved annotations {#viewing-saved-annotations}
+### 视图保存的注释 {#viewing-saved-annotations}
 
-1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
+1. 要视图已保存的资产注释，请导航到资产所在的位置，然后打开资产的资产页面。
 
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. 点按／单击GlobalNav图标，然后从列表中 **[!UICONTROL 选择]** “时间轴”。
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
+1. 从时间线的&#x200B;**[!UICONTROL 显示全部]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 注释]**&#x200B;以根据注释过滤结果。
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
+   点按／单击“时间轴”面板中 **[!UICONTROL 的注释]** ，以视图图像上的相应注释。
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
+   点按／单击 **[!UICONTROL 删除]**，以删除特定注释。
 
-### Print annotations {#printing-annotations}
+### 打印批注 {#printing-annotations}
 
-If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
+如果资产有注释或已受到审阅工作流程的影响，您可以将资产连同注释和审阅状态打印为PDF文件，以便脱机审阅。
 
-You can also choose to print only the annotations or review status.
+您还可以选择仅打印注释或审阅状态。
 
-To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
+要打印注释和审阅状态，请点按／单击“打 **[!UICONTROL 印]** ”图标，然后按照向导中的说明操作。 仅当 **[!UICONTROL 资产至少分配了一个注释或审核状态时]** ,“打印”图标才会显示在工具栏中。
 
-1. From the Assets UI, open the preview page for an asset.
-1. Do one of the following:
+1. 从资产UI中，打开资产的预览页面。
+1. 执行下列操作之一：
 
-    * To print all the annotations and the review status, skip step 3 and directly go to step 4.
-    * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
+   * 要打印所有注释和审阅状态，请跳过步骤3并直接转到步骤4。
+   * 要打印特定注释和审阅状态，请打开时 [间轴](/help/assets/manage-digital-assets.md#timeline) ，然后转到步骤3。
 
-1. To print specific annotations, select the annotations from the timeline.
+1. 要打印特定注释，请从时间轴中选择注释。
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   To print the review status only, select it from the timeline.
+   要仅打印审阅状态，请从时间轴中选择它。
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -497,55 +498,55 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
+1. 从“打印”对话框中，选择您希望批注／审阅状态在PDF上显示的位置。 例如，如果希望在包含打印图像的页面的右上方打印注释／状态，请使用左 **上角设置** 。 默认情况下，它处于选中状态。
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
+   您可以根据希望在打印的 PDF 中显示批注/状态的位置选择其他设置。如果希望批注/状态显示在与打印资产不同的页面中，请选择&#x200B;**[!UICONTROL 下一页]**。
 
    >[!NOTE]
    >
-   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
+   >冗长的批注可能无法在PDF文件中正确呈现。 为获得最佳渲染效果，Adobe建议您将注释限制为50个字。
 
-1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. 点按/单击&#x200B;**[!UICONTROL 打印]**。根据您在步骤 2 中选择的选项，生成的 PDF 会在指定位置显示批注/状态。例如，如果您选择使用&#x200B;**左上角**&#x200B;设置打印批注和审阅状态，则生成的输出将类似于此处描述的 PDF 文件。
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Download or print the PDF using the options at the top-right.
+1. 使用右上角的选项下载或打印PDF。
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
+   要修改渲染后的PDF文件的外观（例如，注释和状态的字体颜色、大小和样式、背景颜色），请从“配置管理器”中打开“注释 **[!UICONTROL PDF]** ”配置，并修改所需的选项。 例如，要更改批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改注释的字体颜色的信息，请参阅 [注释](/help/assets/manage-digital-assets.md#annotating)。
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
+   返回渲染的PDF文件并刷新它。 刷新的PDF反映了您所做的更改。
 
-## Asset versioning {#asset-versioning}
+## 资产版本控制 {#asset-versioning}
 
-Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
+版本控制创建数字资产在某个特定时间点的快照。版本控制有助于在以后将资产恢复到以前的状态。 例如，如果要撤消对资产所做的更改，请恢复该资产的未编辑版本。
 
-The following are scenarios where you create versions:
+以下是创建版本的方案：
 
-* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
-* You edit the metadata of an asset.
-* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
+* 您可以在其他应用程序中修改图像并上传到AEM资产。 将创建图像的某个版本，因此不会覆盖原始图像。
+* 您可以编辑资产的元数据。
+* 您可以使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建新版本。
 
-You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
+您还可以通过工作流启用自动版本控制。 为资产创建版本时，元数据和演绎版会与版本一起保存。 演绎版是相同图像的替代格式，例如，已上载JPEG文件的PNG演绎版。
 
-The versioning functionality lets you do the following:
+通过版本控制功能，您可以执行以下操作：
 
-* Create a version of an asset.
-* View the current revision for an asset.
-* Restore the asset to a previous version.
+* 创建资产的版本。
+* 视图资产的当前版本。
+* 将资产恢复到先前版本。
 
-1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
+1. 导航到您要为其创建版本的资产所在的位置，然后点按／单击该资产以打开其资产页面。
 
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
+1. 点按／单击GlobalNav图标，然后从菜单中 **[!UICONTROL 选择]** “时间轴”。
 
-   ![timeline](assets/timeline.png)
+   ![时间轴](assets/timeline.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
+1. 点按／单击底 **[!UICONTROL 部的操作]** （箭头）图标，以视图您可以对资产执行的可用操作。
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -553,44 +554,44 @@ The versioning functionality lets you do the following:
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+1. 添加标签和注释，然后单击“ **[!UICONTROL 创建]** ”以创建版本。 或者，点按／单 **击取消** ，以退出操作。
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+1. 要查看新版本，请从资产详细信 **[!UICONTROL 息页面或资产UI中打开时间轴中的显示全部]** ，然后选择版 **[!UICONTROL 本]**。 为资产创建的所有版本都列在时间轴选项卡下。 您可以通过单击下拉箭头并从列表中选择版本，来过滤列 **[!UICONTROL 表以显示]** “版本”。
 
    ![versions_option](assets/versions_option.png)
 
-1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
+1. 为资产选择特定版本，以对其进行预览，或启用该版本使其显示在资产UI中。
 
    ![select_version](assets/select_version.png)
 
-1. Add a label and comment for the version to revert to the particular version in the Assets UI.
+1. 为版本添加标签和注释以在资产UI中还原到特定版本。
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
-1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
-1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
+1. 要为版本生成预览，请点按/单击&#x200B;**[!UICONTROL 预览版本]**。
+1. 要在资产UI中显示此版本，请选择还 **[!UICONTROL 原到此版本]**。
+1. 要比较两个版本，请转到资产的资产页面，然后点按／单击要与当前版本进行比较的版本。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
+1. 从时间轴中，选择要比较的版本，并将滑块向左拖动，以将此版本叠加在当前版本上并进行比较。
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
+### 在资产上启动工作流 {#starting-a-workflow-on-an-asset}
 
-1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. 导航到您要为其开始工作流的资产所在的位置，然后点按／单击资产以打开资产页面。
+1. 点按／单击GlobalNav图标，然后从菜单中选择“ **[!UICONTROL 时间轴]** ”以显示时间轴。
 
-   ![timeline-1](assets/timeline-1.png)
+   ![时间轴-1](assets/timeline-1.png)
 
 1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Tap/click **[!UICONTROL Start Workflow]** from the list.
+1. 从开始中点 **[!UICONTROL 按／单击列表工作流]** 。
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
@@ -598,19 +599,19 @@ The versioning functionality lets you do the following:
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
+1. （可选）指定工作流的标题，该标题可用于引用工作流实例。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
+1. 点按／单击 **[!UICONTROL 开始]** ，然后点按／单 **[!UICONTROL 击对话框中的继]** 续，以进行确认。 工作流的每个步骤都会作为事件显示在时间轴中。
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-## Collections {#collections}
+## 收藏集 {#collections}
 
-A collection is an ordered set of assets. Use collections to share assets between users.
+集合是一组有序的资产。使用集合在用户之间共享资产。
 
-* A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
-* You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
+* 收藏集可以包含来自不同位置的资产，因为这些资产只包含对这些资产的引用。 每个集合都保持资产的引用完整性。
+* 您可以与具有不同权限级别（包括编辑、查看等）的多个用户共享集合。
 
-See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
+有关集 [合管理的详细信息](/help/assets/manage-collections.md) ，请参阅管理集合。
