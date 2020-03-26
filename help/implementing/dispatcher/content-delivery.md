@@ -2,7 +2,7 @@
 title: 内容投放
 description: '内容投放 '
 translation-type: tm+mt
-source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
+source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
 
 ---
 
@@ -31,43 +31,54 @@ source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 有关从作者服务复制到发布服务的信息，请在此 [处获取](/help/operations/replication.md)。
 
->[!NOTE]
->通信通过apache Web服务器，该服务器支持包括调度程序的模块。 调度程序主要用作缓存来限制对发布节点的处理，以提高性能。
-
 ## CDN {#cdn}
 
-AEM优惠了三个选项：
+AEM作为云服务随默认CDN一起提供。 其主要目的是通过从位于边缘、靠近浏览器的CDN节点交付可缓存内容来减少延迟。 它完全受管并配置为实现AEM应用程序的最佳性能。
 
-1. Adobe Managed CDN - AEM现成的CDN。 这是建议的选项，因为它已完全集成。
-1. 客户CDN指向Adobe Managed CDN —— 客户将自己的CDN指向AEM现成的CDN。 如果第一个选项不可行，则这是下一个首选选项，因为它仍利用AEM与其默认CDN的集成。 客户仍将负责管理自己的CDN。
-1. 客户管理的CDN —— 客户将自己的CDN带来并完全负责管理它。
+总而言之，AEM优惠了两个选项：
 
->[!CAUTION]
->强烈建议使用第一个选项。 如果您选择第二个选项，则不能对任何错误配置的结果负责。
+1. AEM Managed CDN - AEM现成的CDN。 它是一个紧密集成的选项，不需要客户在支持CDN与AEM集成方面投入大量资金。
+1. 客户管理的CDN指向AEM Managed CDN —— 客户将自己的CDN指向AEM现成的CDN。 客户仍需要管理自己的CDN，但与AEM集成的投资是适度的。
 
-第二和第三种选择将按具体情况允许。 这涉及满足某些先决条件，包括但不限于客户与其CDN供应商进行了旧版集成，这很难撤消。
+第一个选项应满足大多数客户性能和安全性要求。 此外，它需要最少的客户投资和持续维护。
 
-### Adobe Managed CDN {#adobe-managed-cdn}
+第二个选项将逐个允许。 此决定基于满足某些先决条件，包括但不限于客户与其CDN供应商进行了难以放弃的传统集成。
+
+以下是比较两个选项的决策矩阵。 有关更多详细信息，请参阅以下各节。
+
+| 详细信息 | AEM Managed CDN | 客户管理的CDN指向AEM CDN |
+|---|---|---|
+| **客户努力** | 没有，完全集成。 只需将CNAME指向AEM Managed CDN。 | 适度的客户投资。 客户必须管理自己的CDN。 |
+| **先决条件** | 无 | 现有的CDN需要更换，但是这些CDN的更换繁琐。 上线前必须演示成功的负载测试。 |
+| **CDN专业知识** | 无 | 需要至少一个兼职的工程资源以及能够配置客户CDN的详细CDN知识。 |
+| **安全** | 由 Adobe 管理. | 由Adobe（或由客户在其自己的CDN上选择）管理。 |
+| **演出** | 由Adobe优化。 | 将从某些AEM CDN功能中受益，但由于额外的跳数，性能可能会受到很小的影响。 **注意**:从客户CDN到快速CDN的跃点可能会很有效)。 |
+| **缓存** | 支持在调度程序级别应用的缓存头。 | 支持在调度程序级别应用的缓存头。 |
+| **图像和视频压缩功能** | 可以与Adobe Dynamic Media一起使用。 | 可以与Adobe Dynamic Media或客户管理的CDN图像／视频解决方案结合使用。 |
+
+### AEM Managed CDN {#aem-managed-cdn}
 
 使用Adobe现成的CDN准备内容投放很简单，如下所述：
 
 1. 您将通过共享指向包含此信息的安全表单的链接，向Adobe提供已签名的SSL证书和密钥。 请就本任务与客户支持协作。
-注意：Aem作为云服务不支持域验证(DV)证书。
+   **注意：** Aem作为云服务不支持域验证(DV)证书。
 1. 然后，客户支持将与您协调CNAME DNS记录的时间，并将其FQDN指向 `adobe-aem.map.fastly.net`。
 1. 当SSL证书即将过期时，您会收到通知，因此您可以重新提交新的SSL证书。
 
+**限制流量**
+
 默认情况下，对于Adobe Managed CDN设置，所有公共流量都可用于生产和非生产（开发和阶段）环境的发布服务。 如果您希望限制特定环境的发布服务的通信量（例如，限制按IP地址范围的分阶段），您应与客户支持合作配置这些限制。
 
-### 客户CDN指向Adobe Managed CDN {#point-to-point-CDN}
+### 客户CDN指向AEM Managed CDN {#point-to-point-CDN}
 
 如果您希望使用现有CDN，但无法满足客户管理的CDN的要求，则支持此功能。 在这种情况下，您可以管理自己的CDN，但可以指向Adobe的受管CDN。
 
-请注意，您必须：
+请注意：
 
 1. 您必须拥有现有CDN。
-1. 你会管的。
+1. 您必须管理它。
 1. 您必须能够配置CDN才能将Aem作为云服务使用——请参阅下面的配置说明。
-1. 您的工程CDN专家随时可以通知您，以防出现相关问题。
+1. 如果出现相关问题，您必须拥有随时待命的工程CDN专家。
 1. 在开始生产之前，必须执行并成功通过负载测试。
 
 配置说明：
@@ -77,28 +88,6 @@ AEM优惠了三个选项：
 1. 将SNI头发送到来源。 与主机头一样， sni头必须是来源域。
 1. 设置 `X-Edge-Key`将流量正确路由到AEM服务器所需的路径。 价值应来自Adobe。
 
-### 客户管理的CDN {#customer-managed-cdn}
-
-如果您需要使用现有CDN，则支持此功能。  在这种情况下，您可以管理自己的CDN，并将其指向AEM。
-
-您可以管理您自己的CDN，前提是：
-
-1. 您已有CDN。
-1. 它必须是受支持的CDN。 目前，支持Akamai。 如果您的组织希望管理当前不支持的CDN，请联系客户支持。
-1. 你会管的。
-1. 您必须能够配置CDN才能将Aem作为云服务使用——请参阅下面的配置说明。
-1. 您的工程CDN专家随时可以通知您，以防出现相关问题。
-1. 必须按配置说明中的说明将CDN节点的白名单提供到Cloud Manager。
-1. 在开始生产之前，必须执行并成功通过负载测试。
-
-配置说明：
-
-1. 通过调用环境创建／更新API(将CIDR列表到白名单)，将CDN供应商的白名单提供给Adobe。
-1. 使用 `X-Forwarded-Host` 域名设置标题。
-1. 将Host头与来源域（即Aem）设置为云服务入口。 价值应来自Adobe。
-1. 将SNI头发送到来源。 SNI头必须是来源域。
-1. 设置 `X-Edge-Key` 将流量正确路由到AEM服务器所需的路径。 价值应来自Adobe。
-
 在接受实时流量之前，您应向Adobe客户支持部门验证端到端流量路由是否正常工作。
 
 ### 缓存 {#caching}
@@ -107,7 +96,7 @@ AEM优惠了三个选项：
 
 ### HTML/文本 {#html-text}
 
-* 默认情况下，根据apache层发出的缓存控制头，由浏览器缓存5分钟。 CDN还尊重此值。
+* 默认情况下，根据apache层发出的缓存控制头，由浏览器缓存五分钟。 CDN还尊重此值。
 * 通过在将AEM用作Cloud Service SDK Dispatcher工具中定义 `EXPIRATION_TIME` 变量， `global.vars` 可覆盖所有HTML/Text内容的变量。
 
 您必须确保文件符合 `src/conf.dispatcher.d/cache` 以下规则：
@@ -170,7 +159,7 @@ HTML/文本类型的内容设置有与300秒（5分钟）到期对应的缓存�
 
 与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面。
 
-当发布实例从作者处收到页面或资产的新版本时，它使用刷新代理使其调度程序上的相应路径无效。 更新的路径将从调度程序缓存及其父缓存中删除，最高可达到一个级别(您可以使用statfilelevel配置 [该级别](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)。
+当发布实例从作者处收到页面或资产的新版本时，它使用刷新代理使其调度程序上的相应路径无效。 更新的路径将从调度程序缓存及其父缓存中删除，最高可达到一个级别(您可以使用statfilelevel配置 [它](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)。
 
 ### 显式调度程序缓存失效 {#explicit-invalidation}
 
@@ -181,21 +170,20 @@ HTML/文本类型的内容设置有与300秒（5分钟）到期对应的缓存�
 1. 调用复制代理，指定发布调度程序刷新代理
 2. 直接调 `invalidate.cache` 用API(例如 `POST /dispatcher/invalidate.cache`)
 
-此方 `invalidate.cache` 法将不再受支持，因为它只针对特定的调度程序节点。
-AEM作为云服务在服务级别运行，而不是在单个节点级别运行，因此“从AEM [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) 中使缓存页面失效”页面中的失效说明对于AEM作为云服务无效。
+不再支持调度程序的 `invalidate.cache` API方法，因为它只针对特定的调度程序节点。 AEM作为云服务在服务级别运行，而不是在单个节点级别运行，因此“从AEM [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) 中使缓存页面失效”页面中的失效说明对于AEM作为云服务不再有效。
 而应使用复制刷新代理。 这可以使用复制API完成。 此处提供复制API文档 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有关刷新缓存的示例，请参阅 [API示例页，具体是向所有可用代理发出ACTIVATE类型复制操作的](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)`CustomStep` 示例。 刷新代理端点不可配置，但是预配置为指向调度程序，与运行刷新代理的发布服务匹配。 冲洗剂通常可由OSGi事件或工作流触发。
 
 下图说明了这一点。
 
 ![](assets/cdnc.png "CDNCDN")
 
-如果担心调度程序缓存未清除，请与可根据需要刷新调度程序缓存的客户支持联系。
+如果担心调度程序缓存未清除，请与客户支持联系 [](https://helpx.adobe.com/support.ec.html) ，如果需要，可以刷新调度程序缓存。
 
-由Adobe管理的CDN会遵循TTL，因此无需刷新它。 如果怀疑存在问题，请与可以根据需要刷新Adobe管理的CDN缓存的客户支持联系。
+由Adobe管理的CDN会遵循TTL，因此无需刷新它。 如果怀疑存在问题，请联 [](https://helpx.adobe.com/support.ec.html) 系可以根据需要刷新Adobe管理的CDN缓存的客户支持支持部门。
 
 ## 客户端库和版本一致性 {#content-consistency}
 
-页面当然由HTML、Javascript、CSS和图像组成。 鼓励客户利用客户端库(clientlibs)框架将Javascript和CSS资源导入HTML页面，同时考虑到JS库之间的依赖关系。
+页面由HTML、Javascript、CSS和图像组成。 鼓励客户利用客户端库(clientlibs)框架将Javascript和CSS资源导入HTML页面，同时考虑到JS库之间的依赖关系。
 
 clientlibs框架提供自动版本管理，这意味着开发人员可以在源代码控制中登记对JS库的更改，并且当客户推送其版本时，将提供最新版本。 如果没有此选项，开发人员需要手动更改对新版本库的引用的HTML，如果许多HTML模板共享同一库，这尤其繁琐。
 
