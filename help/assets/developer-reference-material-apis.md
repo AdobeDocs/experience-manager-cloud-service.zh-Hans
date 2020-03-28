@@ -3,12 +3,12 @@ title: 'Adobe Experience Manager作为云服务中用于数字资产管理的资
 description: 资产API允许执行基本的创建——读取——更新——删除(CRUD)操作，以管理资产，包括二进制、元数据、演绎版、注释和内容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# 作为云服务API的资产 {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -34,8 +34,8 @@ Experience Manager作为云服务，提供了将资产上传到存储库的新�
 
 与AEM的早期版本相比，重要的区别包括：
 
-* 二进制文件不会通过AEM,AEM现在只是将上传过程与为部署配置的二进制云存储相协调
-* 二进制云存储由内容交付网络(CDN, Edge Network)作为前端，该网络使上传端点更接近客户端，从而有助于提高上传性能和用户体验，尤其是对于分布式团队上传资产
+* 二进制文件不会通过AEM,AEM现在只是将上传过程与为部署配置的二进制云存储进行协调
+* 二进制云存储由内容投放网络(CDN, Edge Network)提供，该网络使上传端点更接近客户端，从而有助于提高上传性能和用户体验，尤其是对于分布式团队上传资产
 
 此方法应提供对资产上传的可扩展性和性能更高的处理。
 
@@ -78,11 +78,11 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 * `(string) completeURI`:在二进制文件完成上传后应调用的URI。 这可以是绝对URI或相对URI，客户端应能够处理其中任何一个。 例如，该值可能是或 `"https://author.acme.com/content/dam.completeUpload.json"` (请参 `"/content/dam.completeUpload.json"` 阅完 [成上传](#complete-upload))。
 * `(string) folderPath`:上传二进制文件的文件夹的完整路径。
-* `(array) (files)`:其长度和顺序将与初始化请求中提供的二进制信息列表的长度和顺序相匹配的元素列表。
+* `(array) (files)`:元素列表，其长度和顺序将与初始化请求中提供的二进制信息列表的长度和顺序相匹配。
 * `(string) fileName`:相应二进制的名称，在启动请求中提供。 此值应包括在完整请求中。
 * `(string) mimeType`:相应二进制的MIME类型，如initiate请求中提供。 此值应包括在完整请求中。
 * `(string) uploadToken`:相应二进制文件的上传令牌。 此值应包括在完整请求中。
-* `(array) uploadURIs`:其值为应将二进制内容上载到的完整URI的字符串列表(请参阅上 [传二进制](#upload-binary))。
+* `(array) uploadURIs`:字符串的列表，其值为应将二进制内容上传到的完整URI(请参阅上 [传二进制](#upload-binary))。
 * `(number) minPartSize`:如果存在多个URI，则可能提供给uploadURI中任何一个的数据的最小长度（以字节为单位）。
 * `(number) maxPartSize`:如果存在多个URI，则可能提供给uploadURI中任何一个的数据的最大长度（以字节为单位）。
 
@@ -93,8 +93,8 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 实现此目的的一种潜在方法是根据API提供的上传URI数计算部件大小。 示例假定二进制文件的总大小为20,000字节，上传URI的数量为2:
 
 * 通过将总大小除以URI的数量来计算部件大小：20,000 / 2 = 10,000
-* POST字节范围0-9,999到上传URI列表中第一个URI的二进制文件
-* POST字节范围为10,000-19,999，二进制文件到上传URI列表中的第二个URI
+* 上传URI列表中二进制到第一个URI的POST字节范围0-9,999
+* 在上传URI的列表中，二进制到第二个URI的POST字节范围为10,000-19,999
 
 如果成功，服务器将使用状态代码对每个请求做出 `201` 响应。
 
@@ -129,7 +129,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### 已弃用的资产上传API {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 对于Experience Manager作为云服务，仅支持新的上传API。 已弃用Experience Manager 6.5中的API。
@@ -144,20 +144,20 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 * [开放源代码命令行工具](https://github.com/adobe/aio-cli-plugin-aem)
 
 
-## 资产处理和后期处理工作流程 {#post-processing-workflows}
+## 资产处理和后期处理工作流 {#post-processing-workflows}
 
-大多数资产处理都基于资产微服务 **[!UICONTROL 的处理配置文件]**[配置执行](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)，并且不需要开发人员扩展。
+大多数资产处理都基于资产微服务 **[!UICONTROL 的处理用户档案]**[配置执行](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)，并且不需要开发人员扩展。
 
-对于后处理工作流配置，请使用扩展的标准AEM工作流（例如，可以使用自定义步骤）。 查看以下子节以了解可在资产后处理工作流中使用的工作流步骤。
+对于后处理工作流配置，请使用扩展的标准AEM工作流（例如，可以使用自定义步骤）。 查看以下子节以了解可在资产后期处理工作流中使用的工作流步骤。
 
 ### 后处理工作流中的工作流步骤 {#post-processing-workflows-steps}
 
 >[!NOTE]
-本节主要适用于从先前版本的AEM以云服务的形式更新到AEM的客户。
+本条主要适用于从先前版本的AEM以云服务的形式更新到AEM的客户。
 
-由于Experience manager作为云服务引入了新的部署模型，因此在引入资产微服务之前在工作流中使用的某些工作流步骤可能不再支持后处理工作流。 `DAM Update Asset` 请注意，大多数服务被更简单的资产微服务配置和使用所取代。
+由于Experience Manager作为云服务引入了新的部署模型，因此在引入资产微服务之前在工作流中使用的某些工作流步骤可能不再支持后处理工作流。 `DAM Update Asset` 请注意，大多数服务被更简单的资产微服务配置和使用所取代。
 
-以下是AEM中作为云服务的技术工作流模型及其支持级别的列表：
+以下是AEM中作为云服务的技术工作流模型及其支持级别的列表:
 
 ### 支持的工作流步骤 {#supported-workflow-steps}
 
