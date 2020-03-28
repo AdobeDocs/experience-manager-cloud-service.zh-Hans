@@ -1,13 +1,13 @@
 ---
-title: AEM作为云服务SDK
+title: AEM 云服务 SDK
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
 
 ---
 
 
-# AEM作为云服务SDK {#aem-as-a-cloud-service-sdk}
+# The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 AEM作为云服务SDK由以下对象组成：
 
@@ -24,8 +24,8 @@ AEM作为云服务SDK由以下对象组成：
 ## 以云服务SDK形式访问AEM {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * 您可以检查AEM Admin Console的“关于 **Adobe Experience Manager** ”图标，以了解您正在生产中运行的AEM版本。
-* 快速启动jar和调度程序工具可从软件分发门户下载为 [zip文件](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)。 请注意，对SDK列表的访问权限仅限于将AEM Managed services或AEM作为云服务环境的用户。
-* Java API jar和Javadoc Jar可以通过各种工具（命令行或首选IDE）进行下载。
+* 快速启动jar和调度程序工具可从软件分发门户下载为 [zip文件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。 请注意，对SDK列表的访问权限仅限于那些将AEM Managed Services或AEM作为云服务环境的用户。
+* Java API Jar和Javadoc Jar可以通过各种工具（命令行或首选IDE）进行下载。
 * 主项目窗格应引用以下API Jar包。 此依赖关系也应在任何子包中引用。
 
 ```
@@ -67,13 +67,13 @@ AEM作为云服务SDK由以下对象组成：
 下面是刷新本地环境的建议过程：
 
 1. 确保任何有用的内容已提交到源控件中的项目，或在可变内容包中提供以供以后导入
-1. 本地开发测试内容需要单独存储，以便不作为Cloud manager管道构建的一部分进行部署。 因为只要用于地方开发
+1. 本地开发测试内容需要单独存储，以便不作为Cloud Manager管道构建的一部分进行部署。 因为只要用于地方开发
 1. 停止当前正在运行的快速启动
 1. 将文件夹移 `crx-quickstart` 至其他文件夹以保持安全
-1. 请注意Cloud manager中介绍的新AEM版本（此版本将用于标识要进一步下载的新QuickStart Jar版本）
+1. 请注意Cloud Manager中介绍的新AEM版本（此版本将用于标识要进一步下载的新QuickStart Jar版本）
 1. 从软件分发门户下载其版本与生产AEM版本匹配的QuickStart JAR
 1. 创建全新文件夹并放入新的QuickStart Jar
-1. 使用所需的运行模式（重命名文件或通过在运行模式中传递）启动新的快速 `-r`启动。
+1. 开始新的QuickStart和所需的运行模式(重命名文件或通过在运行模式中传 `-r`递)。
    * 确保文件夹中没有旧快速入门的其余部分。
 1. 构建AEM应用程序
 1. 通过PackageManager将AEM应用程序部署到本地AEM
@@ -84,13 +84,13 @@ AEM作为云服务SDK由以下对象组成：
 
 建议经常更新SDK（例如，每周两次），并每天处理完整的本地状态，以免意外依赖于应用程序中的状态数据。
 
-如果您依赖CryptoSupport(通过[在AEM中配置Cloudservices的凭据或SMTP邮件服务，或通过在应用程序中使用CryptoSupport API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，加密的属性将由在AEM环境的第一次启动时自动生成的密钥进行加密。 虽然云设置负责自动重用特定于环境的CryptoKey，但是必须将密钥注入到本地开发环境中。
+如果您依赖CryptoSupport(通过[在AEM中配置Cloudservices的凭据或SMTP邮件服务，或通过在应用程序中使用CryptoSupport API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，加密的属性将由AEM环境的第一个开始上自动生成的密钥进行加密。 当云设置负责自动重用特定于环境的CryptoKey时，必须将密钥注入到本地开发环境中。
 
 默认情况下，AEM配置为将关键数据存储在文件夹的数据文件夹中，但为了便于在开发中重用，AEM进程可在首次启动时使用“`-Dcom.adobe.granite.crypto.file.disable=true`”初始化。 这将在“”处生成加密数`/etc/key`据。
 
 要能够重复使用包含加密值的内容包，您需要执行以下步骤：
 
-* 最初启动本地quickstart.jar时，请确保添加以下参数：“`-Dcom.adobe.granite.crypto.file.disable=true`”。 建议始终添加它（但是可选）。
-* 第一次启动实例时，会创建一个包，其中包含根“”的过滤`/etc/key`器。 这将保留机密，以便在您希望重复使用它们的所有环境中重复使用
+* 最初开始本地quickstart.jar时，请确保添加以下参数：“`-Dcom.adobe.granite.crypto.file.disable=true`”。 建议始终添加它（但是可选）。
+* 第一次启动实例时，会创建一个包，其中包含根“”的过滤`/etc/key`器。 这将保留机密，以便在您希望重用它们的所有环境中重用
 * 导出包含机密的任何可变内容，或通过查找加密值，将 `/crx/de` 其添加到将在安装过程中重用的包中
-* 每当您启动新实例（要替换为新版本或多个开发环境应共享用于测试的凭据）时，请安装在步骤2和3中生成的包，以便无需手动重新配置即可重复使用内容。 这是因为，现在密钥保持同步。
+* 每当您启动新实例(要替换为新版本或多个开发环境应共享用于测试的凭据)时，请安装步骤2和3中生成的包，以便无需手动重新配置即可重复使用内容。 这是因为，现在密钥保持同步。
