@@ -1,24 +1,24 @@
 ---
-title: 使用媒体处理程序和工作流处理资源
-description: 了解各种媒体处理程序以及如何在工作流中使用这些处理程序对资产执行任务。
+title: 使用媒体处理函数和工作流处理资源
+description: 了解各种媒体处理程序以及如何在工作流中使用它们对资产执行任务。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
 
-# 使用媒体处理程序和工作流处理资源 {#processing-assets-using-media-handlers-and-workflows}
+# 使用媒体处理函数和工作流处理资源 {#processing-assets-using-media-handlers-and-workflows}
 
-Adobe Experience Manager(AEM)资产附带一组用于处理资产的默认工作流程和媒体处理程序。 该工作流定义要对资产执行的常规任务，然后将特定任务委派给媒体处理程序，例如缩略图生成或元数据提取。
+Adobe Experience Manager(AEM)资产附带一组用于处理资产的默认工作流和媒体处理程序。 该工作流定义要对资产执行的常规任务，然后将特定任务委派给媒体处理程序，例如缩略图生成或元数据提取。
 
 可以定义一个工作流，该工作流将在特定类型的资产上传到服务器时自动执行。 这些处理步骤是根据一系列AEM Assets媒体处理程序定义的。 AEM提供一些 [内置的处理函数](#default-media-handlers) ，其他处理函数可以是自定义 [开发的](#creating-a-new-media-handler) ，也可以通过将进程委派到命令行工具来 [定义](#command-line-based-media-handler)。
 
-媒体处理程序是AEM资产中对资产执行特定操作的服务。 例如，当MP3音频文件上传到AEM时，工作流会触发一个MP3处理程序，该处理程序提取元数据并生成缩略图。 媒体处理程序通常与工作流结合使用。 AEM中支持大多数常见的MIME类型。 可通过扩展／创建工作流、扩展／创建媒体处理函数或禁用／启用媒体处理函数，对资产执行特定任务。
+媒体处理程序是AEM资产中对资产执行特定操作的服务。 例如，当MP3音频文件上传到AEM时，工作流会触发一个MP3处理程序，该处理程序提取元数据并生成缩略图。 媒体处理程序通常与工作流结合使用。 AEM中支持大多数常见的MIME类型。 通过扩展／创建任务、扩展／创建媒体处理函数或禁用／启用媒体处理函数，可以对资产执行特定工作流。
 
 >[!NOTE]
 >
->有关AEM Assets支持的 [](file-format-support.md) 所有格式以及每种格式支持的功能的说明，请参阅资产支持的格式页面。
+>有关AEM [资产支持的所有格式](file-format-support.md) ，以及每种格式支持的功能的说明，请参阅资产支持的文件格式文章。
 
 ## 默认媒体处理函数 {#default-media-handlers}
 
@@ -82,7 +82,7 @@ AEM资产中提供以下媒体处理函数，并处理最常见的MIME类型：
   <tr>
    <td>OpenOfficeHandler</td>
    <td>com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler</td>
-   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.presentation<br /><br /> </td>
+   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.文档application/vnd.openxmlformats<br /> -officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.presentation<br /><br /> </td>
   </tr>
   <tr>
    <td>EPubHandler</td>
@@ -97,30 +97,30 @@ AEM资产中提供以下媒体处理函数，并处理最常见的MIME类型：
  </tbody>
 </table>
 
-所有处理函数都执行以下任务：
+所有处理函数都执行以下任务:
 
 * 从资产中提取所有可用元数据。
 * 从资产中创建缩略图。
 
-可以查看活动媒体处理程序：
+可以视图活动媒体处理程序：
 
 1. In your browser, navigate to `http://localhost:4502/system/console/components`.
 1. 单击链接 `com.day.cq.dam.core.impl.store.AssetStoreImpl`。
-1. 将显示包含所有活动媒体处理程序的列表。
+1. 将显示包含所有活动媒体处理函数的列表。
 
-## 在工作流中使用媒体处理程序对资产执行任务 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## 使用工作流中的媒体处理程序对资产执行任务 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 媒体处理程序是通常与工作流结合使用的服务。
 
-AEM具有一些用于处理资产的默认工作流。 要查看这些模型，请打开工作流控制台，然后单击“模 **[!UICONTROL 型]** ”选项卡：以AEM资产开头的工作流标题是特定于资产的标题。
+AEM具有一些用于处理资产的默认工作流。 要视图这些模型，请打开工作流控制台，然后单击“模 **[!UICONTROL 型]** ”选项卡：与AEM资产开始的工作流标题是特定于资产的标题。
 
-可以扩展现有工作流，并可以创建新工作流，以根据特定要求处理资产。
+现有工作流可以扩展，也可以创建新的，以根据特定要求处理资产。
 
 以下示例演示如何增强 **[!UICONTROL AEM Assets 同步工作流]**，以便为除 PDF 文档外的所有资产生成子资产。
 
 ### 禁用／启用媒体处理程序 {#disabling-enabling-a-media-handler}
 
-媒体处理程序可以通过Apache Felix web管理控制台禁用或启用。 禁用媒体处理程序后，不会对资产执行其任务。
+媒体处理程序可以通过Apache Felix Web管理控制台禁用或启用。 禁用媒体处理程序后，不会对资产执行其任务。
 
 要启用／禁用媒体处理程序，请执行以下操作：
 
@@ -135,7 +135,7 @@ AEM具有一些用于处理资产的默认工作流。 要查看这些模型，�
 
 #### 重要类和接口 {#important-classes-and-interfaces}
 
-开始实施的最佳方式是从提供的抽象实现继承，该实现能够处理大多数事务并提供合理的默认行为：课 `com.day.cq.dam.core.AbstractAssetHandler` 程。
+开始实现的最佳方法是继承所提供的抽象实现，该实现能够处理大多数事务并提供合理的默认行为：课 `com.day.cq.dam.core.AbstractAssetHandler` 程。
 
 该类已经提供抽象服务描述符。 因此，如果您从此类继承并使用maven-sling-plugin，请确保将inherit标志设置为 `true`。
 
@@ -151,11 +151,11 @@ AEM具有一些用于处理资产的默认工作流。 要查看这些模型，�
 
 接口和类包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述添加对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、创建缩略图和提取元数据的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述添加对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含导入和导出特定文档、创建缩略图和提取元数据的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` class:此类用作所有其他资产处理函数实现的基础，并提供常用功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:
    * 该类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能以及常用功能。
-   * 开始实施的最佳方式是从提供的抽象实现继承，该实现能够处理大多数事务并提供合理的默认行为：com.day.cq.dam.core.AbstractAssetHandler类。
+   * 开始实现的最佳方法是继承所提供的抽象实现，该实现能够处理大多数事务并提供合理的默认行为：com.day.cq.dam.core.AbstractAssetHandler类。
    * 该类已经提供抽象服务描述符。 因此，如果您从此类继承并使用maven-sling-plugin，请确保将inherit标志设置为true。
 
 需要实现以下方法：
@@ -170,9 +170,9 @@ AEM具有一些用于处理资产的默认工作流。 要查看这些模型，�
 
 接口和类包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述添加对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、创建缩略图和提取元数据的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 接口：此界面描述添加对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含导入和导出特定文档、创建缩略图和提取元数据的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` class:此类用作所有其他资产处理函数实现的基础，并提供常用功能。
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class:该类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能以及常用功能。
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class:该类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能和常用功能。
 
 <!--
 #### Example: create a specific Text Handler {#example-create-a-specific-text-handler}
@@ -391,7 +391,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 该流 `CommandLineProcess` 程按列出顺序执行以下操作：
 
-* 根据特定的MIME类型（如果指定）筛选文件。
+* 过滤器文件，如果指定，则根据特定MIME类型。
 * 在承载AEM服务器的磁盘上创建一个临时目录。
 * 将原始文件流化到临时目录。
 * 执行由步骤的参数定义的命令。 该命令将在具有运行AEM的用户权限的临时目录中执行。
@@ -407,7 +407,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 首先在承载AEM服务器的磁盘上安装ImageMagick:
 
-1. 安装ImageMagick:请参阅ImageMagick [文档](https://www.imagemagick.org/script/download.php)。
+1. 安装ImageMagick:请参 [阅ImageMagick文档](https://www.imagemagick.org/script/download.php)。
 1. 设置该工具，以便在命令行上运行转换。
 1. 要查看该工具是否正确安装，请在命令行中 `convert -h` 运行以下命令。
 
@@ -437,13 +437,13 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 1. 在文件系统中，获取您选择的。tiff图像。 将其重命名 `myImage.tiff` 为并复制到 `/content/dam`其中，例如使用WebDAV。
 1. 例如，转 **[!UICONTROL 到CQ5 DAM]** 控制台 `http://localhost:4502/libs/wcm/core/content/damadmin.html`。
-1. 打开资 **[!UICONTROL 源myImage.tiff]** ，并验证已翻转的图像和三个缩略图是否已创建。
+1. 打开资 **[!UICONTROL 源myImage.tiff]** ，并验证翻转后的图像和三个缩略图是否已创建。
 
 #### 配置CommandLineProcess进程步骤 {#configuring-the-commandlineprocess-process-step}
 
 本节介绍如何设置 **CommandLineProcess** 的&#x200B;**进程参数**。
 
-“进程参 **数** ”的值必须以逗号分隔，且不能以空格开头。
+“进程参 **数** ”的值必须用逗号分隔，不得与空格开始。
 
 <table>
  <tbody>
