@@ -2,7 +2,7 @@
 title: 将您的数字资产添加到Adobe Experience Manager
 description: 将您的数字资产作为云服务添加到Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -11,13 +11,13 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 将数字文件上传到Adobe Experience Manager后，将富元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了文件的二进制内容。 您可以将各种类型的文件（包括图像、PDF文件、原始文件等）从本地文件夹或网络驱动器上传到Experience Manager资产。
 
-提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience manager存储库的其他方法，包括桌面客户端（如Adobe Asset link或Experience Manager桌面应用程序）、上传和摄取客户将创建的脚本以及作为AEM扩展添加的自动化摄取集成。
+提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager存储库的其他方法，包括桌面客户端（如Adobe Asset Link或Experience Manager桌面应用程序）、上传和摄取客户将创建的脚本以及作为AEM扩展添加的自动化摄取集成。
 
 我们将重点介绍在此为最终用户上传方法，并提供指向文章的链接，这些文章描述了使用Experience Manager API和SDK进行资产上传和获取的技术方面。
 
-虽然您可以在Experience Manager中上传和管理任何二进制文件，但大多数常用文件格式都支持其他服务，如元数据提取或预览／再现生成。 有关详细信息， [请参阅支持的文件格式](file-format-support.md) 。
+虽然您可以在Experience Manager中上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息， [请参阅支持的文件格式](file-format-support.md) 。
 
-您还可以选择对上传的资产执行其他处理。 您可以在上传资产的文件夹中配置多个资产处理配置文件，以添加特定元数据、演绎版或图像处理服务。 有关更 [多信息，请参阅](#additional-processing) 下面的其他处理。
+您还可以选择对上传的资产执行其他处理。 可在上传资产的文件夹上配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 有关更 [多信息，请参阅](#additional-processing) 下面的其他处理。
 
 > [!NOTE]
 >
@@ -64,20 +64,20 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
 
-1. AEM资产中的上传进度对话框显示成功上传的文件和无法上传的文件计数。
+1. AEM资产中的上传进度对话框显示成功上传的文件的计数以及无法上传的文件。
 
 此外，资产用户界面还会显示您上传的最近的资产或您首先创建的文件夹。
 
 > [!NOTE]
 >
-> 如果您需要将嵌套文件夹层次结构上传到AEM，请参阅批量 [上传资产](#bulk-upload)
+> 要将嵌套文件夹层次结构上传到AEM，请参 [阅批量上传资产](#bulk-upload)。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -110,7 +110,7 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 >
 >如果启用资产分析功能来跟踪Adobe Analytics的展示次数／点击次数，则重新生成的资产ID将使在Analytics上为资产捕获的数据无效。
 
-要在AEM资产中保留重复的资产，请点按／单击 **[!UICONTROL 保留]**。 要删除您上传的重复资产，请点按／单击 **[!UICONTROL 删除]**。
+要在AEM资产中保留重复资产，请点按／单击保 **[!UICONTROL 留]**。 要删除您上传的重复资产，请点按／单击删 **[!UICONTROL 除]**。
 
 ### 文件名处理和禁止字符 {#filename-handling}
 
@@ -118,7 +118,7 @@ AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您�
 
 为了适合您组织的特定文件命名约定，您可以在“上 [!UICONTROL 传资产] ”对话框中为上传的文件指定长名。
 
-但是，不支持以下（以空格分隔的）字符列表：
+但是，不支持以下(以空格分隔的列表)字符：
 
 * 资产文件名不得包含 `* / : [ \\ ] | # % { } ? &`
 * 资产文件夹名称不能包含 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -128,44 +128,44 @@ AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您�
 要上传更多文件，尤其是当这些文件存在于磁盘上的嵌套文件夹层次结构中时，可以使用以下方法：
 
 * 使用利用资产上传API的自定义上 [传脚本或工具](developer-reference-material-apis.md#asset-upload-technical)。 此类自定义工具可以根据需要添加对资产的其他处理（例如，翻译元数据或重命名文件）。
-* 使用 [Experience manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套的文件夹层次结构。
+* 使用 [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套的文件夹层次结构。
 
 > [!NOTE]
 >
-> 在设置和部署到Experience manager时，从其他系统进行内容迁移时，需要仔细规划、考虑和选择工具，才能进行批量上传。 有关内容迁 [移方法的指导](/help/implementing/deploying/overview.md) ，请参阅部署指南。
+> 在设置和部署到Experience Manager时，从其他系统进行内容迁移时，需要仔细规划、考虑和选择工具，才能进行批量上传。 有关内容迁 [移方法的指导](/help/implementing/deploying/overview.md) ，请参阅部署指南。
 
 ## 使用桌面客户端上传资产 {#upload-assets-desktop-clients}
 
-除了Web浏览器用户界面之外，Experience manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
+除了Web浏览器用户界面之外，Experience Manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
 
-* [通过Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) ，您可以从Adobe Photoshop、Adobe Illustrator和Adobe inDesign桌面应用程序中的AEM访问资源。 您可以从这些桌面应用程序中直接从Adobe Asset link用户界面将当前打开的文档上传到AEM。
-* [Experience manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，可简化在桌面上处理资产的工作，而这与资产的文件类型或处理资产的本机应用程序无关。 从本地文件系统上载嵌套文件夹层次结构中的文件尤为有用，因为浏览器上载仅支持上载平面文件列表。
+* [通过Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) ，您可以从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的AEM访问资源。 您可以从这些桌面应用程序中的Adobe Asset Link用户界面将当前打开的文档直接上传到AEM。
+* [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，可简化在桌面上处理资产的工作，而这与资产的文件类型或处理资产的本机应用程序无关。 从本地文件系统上载嵌套文件夹层次结构中的文件尤为有用，因为浏览器上载仅支持上传平面文件列表。
 
 ## 其他处理 {#additional-processing}
 
-要对已上传的资产进行其他处理，您可以在资产上传到的文件夹中使用资产处理配置文件。 这些属性位于文件夹“属 **[!UICONTROL 性]** ”对话框中。
+要对已上传的资产进行其他处理，您可以对上传资产的文件夹使用资产处理用户档案用户档案。 这些属性位于文件夹“属 **[!UICONTROL 性]** ”对话框中。
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-以下配置文件可用：
+有以下用户档案:
 
-* [元数据配置文件](metadata-profiles.md) ，允许您将默认元数据属性应用到上传到该文件夹的资产
-* [处理配置文件](asset-microservices-configure-and-use.md#processing-profiles) ，除了默认的再现处理之外，您还可以应用再现处理并生成再现
+* [元数据用户档案](metadata-profiles.md) 允许您将默认元数据属性应用到上传到该文件夹的资产
+* [处理用户档案](asset-microservices-configure-and-use.md#processing-profiles) ，除了默认的演绎版处理之外，还允许您应用演绎版处理并生成演绎版
 
 此外，如果您的环境中启用了Dynamic Media:
 
-* [图像配置文件](dynamic-media/image-profiles.md) ，允许您将特定裁剪(智能裁&#x200B;**[!UICONTROL 剪和像素裁剪]** )和锐化配置应用于上传的资产
-* [视频配置文件](dynamic-media/video-profiles.md) ，允许您应用特定的视频编码配置文件（分辨率、格式、参数）
+* [图像配置文件](dynamic-media/image-profiles.md)允许您将特定裁剪（**[!UICONTROL 智能裁剪]**&#x200B;和像素裁剪）和锐化配置应用于上传的资产
+* [视频用户档案](dynamic-media/video-profiles.md) ，允许您应用特定的视频编码用户档案（分辨率、格式、参数）
 
 > [!NOTE]
 >
-> Dynamic media裁剪和资产的其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行的裁剪或媒体转换的参数
+> Dynamic Media裁剪和资产的其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行的裁剪或媒体转换的参数
 
-对于分配了处理配置文件的文件夹，配置文件名称会显示在卡片视图的缩略图上。 在列表视图中，配置文件名称显示在“处理配置 **[!UICONTROL 文件]** ”列中。
+对于分配了处理用户档案的文件夹，用户档案名称显示在卡视图的缩略图上。 在列表视图中，用户档案名称显示在“处理 **[!UICONTROL 用户档案]** ”列中。
 
 ## 使用API上传或摄取资产 {#upload-using-apis}
 
-开发人员参考的资产上传部分提供了上传API和协议的技术详细信息，以及指向开源SDK和示例客 [户端的链接](developer-reference-material-apis.md#asset-upload-technical) 。
+开发人员参考的资产上传部分提供了上传API和协议的技术详细信息，以及指向开放源SDK和示例客 [户端的链接](developer-reference-material-apis.md#asset-upload-technical) 。
 
 >[!MORELIKETHIS]
 >
