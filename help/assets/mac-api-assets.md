@@ -1,9 +1,9 @@
 ---
 title: 资产 HTTP API
-description: 了解Assets HTTP API的实施、数据模型和功能。 使用资产HTTP API可以围绕资产执行各种任务。
+description: 了解Assets HTTP API的实施、数据模型和功能。 使用资产HTTP API可以对资产执行各种任务。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -16,20 +16,20 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 访问API:
 
-1. 打开位于的API服务文档 `https://[hostname]:[port]/api.json`。
-1. 请按照以下链接的“资产”服务链 `https://[hostname]:[server]/api/assets.json`接：
+1. 在打开API服务文档 `https://[hostname]:[port]/api.json`。
+1. 按照以下链接的“资产”服务进行操 `https://[hostname]:[server]/api/assets.json`作。
 
-API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 JSON响应是可选的，可能不可用，例如PDF文件。 依赖响应代码进行进一步分析或操作。
+API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 JSON响应是可选的，可能不可用，例如PDF文件。 依赖响应代码进行进一步的分析或操作。
 
 结束 [!UICONTROL 时间后]，资产及其演绎版不能通过资产Web界面或通过HTTP API使用。 如果开始时间是将来的， [!UICONTROL 或结束时间是过去的] ，则API会返回404 [!UICONTROL 错误消息] 。
 
 >[!NOTE]
 >
->与上传或更新资产或二进制文件（例如演绎版）相关的所有API调用都会作为云服务部署为AEM进行预配置。 要上传二进制文件，请改 [用直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical) 。
+>与上传或更新资产或二进制文件（例如演绎版）相关的所有API调用都会作为云服务部署为AEM进行预配置。 对于上传二进制文件，请 [改用直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical) 。
 
 ## 内容片段 {#content-fragments}
 
-内 [容片段](content-fragments/content-fragments.md) ，是一种特殊类型的资产。 它可用于访问结构化数据，例如文本、数字、日期等。 由于资产(如图像或文 `standard` 档)存在若干差异，因此某些其他规则适用于处理内容片段。
+内 [容片段](content-fragments/content-fragments.md) ，是一种特殊类型的资产。 它可用于访问结构化数据，例如文本、数字、日期等。 由于资产(如图像或文档) `standard` 存在若干差异，因此某些其他规则适用于处理内容片段。
 
 有关详细信息， [请参阅AEM Assets HTTP API中的内容片段支持](content-fragments/content-fragments.md)。
 
@@ -125,7 +125,7 @@ GET /api/assets/myFolder.json
 
 包含实体的属性是每个实体的全部属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接指向的URL的内容，其中 `rel` 包含 `self`:
 
-## 创建文件夹 {#create-a-folder}
+## Create a folder {#create-a-folder}
 
 创建新 `sling`:在给 `OrderedFolder` 定路径。 如果给定*而不是节点名，则servlet将使用参数名作为节点名。 作为请求数据接受是新文件夹的Siren表示形式或一组名称——值对，编码为或 `application/www-form-urlencoded` / `multipart``form``data`- ，对于直接从HTML表单创建文件夹很有用。 此外，文件夹的属性可以指定为URL查询参数。
 
