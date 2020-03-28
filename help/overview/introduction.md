@@ -1,15 +1,15 @@
 ---
 title: Adobe Experience Manager 云服务简介
 description: 'Adobe Experience Manager (AEM) 云服务简介。 '
-translation-type: ht
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+translation-type: tm+mt
+source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
 
 ---
 
 
 # Adobe Experience Manager 云服务简介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/cn/marketing/experience-manager.html) (AEM) 现已作为云服务提供。
+[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) 现已作为云服务提供。
 
 Adobe Experience Manager 云服务：
 
@@ -18,6 +18,8 @@ Adobe Experience Manager 云服务：
 * 通过将 AEM 内容管理系统的强大功能与 AEM 数字资产管理相结合，使您能够为客户提供以内容为导向的个性化体验。
 
 * 提供持续交付和持续集成，无需停机即可进行更新。
+
+* 利用内置的内容投放网络(CDN)和其他网络层最佳实践，快速、高效地交付内容。
 
 * 基于可自动扩展的动态架构，从而消除基础架构考虑因素。
 
