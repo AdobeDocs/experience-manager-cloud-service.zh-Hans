@@ -3,22 +3,22 @@ title: Experience Manager资产作为云服务支持的文件格式和MIME类型
 description: Experience Manager资产作为云服务支持的文件格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
-# 资产支持的文件格式 {#supported-file-formats}
+# Assets supported file formats {#supported-file-formats}
 
-Adobe Experience manager作为云服务，支持基本的内容管理功能— 存储、在线管理元数据、版本控制、上传和下载等— 对于任何二进制文件，与其格式无关。 Adobe Experience Manager Assets支持各种文件格式，每种产品功能都支持各种不同格式。
+Adobe Experience Manager作为云服务，支持基本的内容管理功能— 存储、在线管理元数据、版本控制、上传和下载等- 对于任何二进制文件，与其格式无关。 Adobe Experience Manager Assets支持各种文件格式，每种产品功能都支持各种不同格式。
 
-此外，Experience Manager Assets还提供扩展支持，可生成预览和再现以及提取元数据和文本以实现全文索引。 此扩展支持使用资产 [微服务](asset-microservices-configure-and-use.md)。
+此外，Experience Manager资产还提供扩展支持，可生成预览和演绎版并提取元数据和文本以实现全文索引。 此扩展支持使用资产 [微服务](asset-microservices-configure-and-use.md)。
 
 以下图例描述了支持级别。
 
 | 支持级别 | 描述 |
 | ------------------------------------------------------------ | --------------------------- |
-| ✓ | 受支持 |
+| ✓ | 支持 |
 | * | 查看表下的注释 |
 | - | 不适用 |
 
@@ -29,7 +29,7 @@ Adobe Experience manager作为云服务，支持基本的内容管理功能— �
 * 由Adobe应用程序和服务(包括Adobe Photoshop [](#adobe-formats) 、InDesign、Illustrator、XD、Dimension和Acrobat / PDF)生成的主要Adobe文件格式。
 * 关键 [成像文件格式](#image-formats)。
 * [Camera Raw文件格式](#camera-raw-formats) ，适用于各种相机，包括Canon、Nikon、Fujifilm、Olympus和其他制造商（由Adobe Camera Raw提供支持）。
-* 常见 [文档格式](#document-formats)，包括 [Microsoft Office](#microsoft-office-formats) (Word、Excel、PowerPoint)和 [Open Document](#opendocument-formats) （打开文档）格式。
+* 常见 [文档格式](#document-formats)，包括 [Microsoft Office](#microsoft-office-formats) (Word、Excel、PowerPoint)和 [Open文档格式](#opendocument-formats) 。
 * 各种[视频](#video-formats)和[音频](#audio-formats)格式.
 
 下表的列提供以下信息：
@@ -40,8 +40,8 @@ Adobe Experience manager作为云服务，支持基本的内容管理功能— �
 | GIF | 用于生成再现的GIF格式 |
 | JPEG | 用于生成再现的JPEG格式 |
 | PNG | 生成再现的PNG格式 |
-| XMP | 从原始二进制中提取元数据 |
-| TXT | 从文档提取文本以进行索引 |
+| XMP | 提取原始二进制文件中的元数据 |
+| TXT | 提取文本以从文档中索引 |
 | 宽度／高度 | 支持定义再现的宽度和高度（像素） |
 
 ### Adobe格式 {#adobe-formats}
@@ -60,7 +60,7 @@ Adobe Experience manager作为云服务，支持基本的内容管理功能— �
 | PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | XD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 
-\*对于INDD（InDesign文件），再现的大小由嵌入在INDD文件中的预览决定。 在InDesign中配置首选项(“首&#x200B;**[!UICONTROL 选项”>“文件处理”>“始终保存带有文档的预览图像和预览大小]**”)以嵌入较大的再现。
+\*对于INDD（InDesign文件），再现的大小由嵌入在INDD文件中的预览决定。 在InDesign中配置首选项(“首&#x200B;**[!UICONTROL 选项”>“文件处理”>“始终保存带有预览的预览图像”、“文档大小”]**)以嵌入较大的再现。
 
 ### 图像格式 {#image-formats}
 
@@ -117,7 +117,7 @@ Adobe Experience manager作为云服务，支持基本的内容管理功能— �
 | 文本 | ✓ | - |
 | XML | ✓ | - |
 
-### Microsoft office格式 {#microsoft-office-formats}
+### Microsoft Office格式 {#microsoft-office-formats}
 
 | 文件格式 | GIF | JPEG | PNG | 文本 | 宽度／高度 |
 | ----------- | --- | ---- | --- | ---- | ------------ |
