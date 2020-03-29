@@ -3,24 +3,24 @@ title: 将资产、文件夹和收藏集共享为链接
 description: 本文介绍如何在Experience Manager资产中以超链接的形式共享资产、文件夹和收藏集。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # 共享和分发Experience Manager中管理的资产 {#share-assets-from-aem}
 
-Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 您可以使用以下方法将Experience Manager资产共享为云服务：
+Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法将Experience Manager资产共享为云服务：
 
-* 作为链接共享
-* 下载资产
-* 通过AEM桌面应用程序共享
-* 通过Adobe Asset Link共享
-* （即将推出的功能）使用Brand Portal进行共享
+* 作为链接共享。
+* 下载资产并单独共享。
+* 通过AEM桌面应用程序共享。
+* 通过Adobe Asset Link共享。
+* （即将推出的功能）使用Brand Portal进行共享。
 
 ## 以链接方式共享资产 {#sharelink}
 
-要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户可以查看与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
+要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户可以视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
 
 >[!NOTE]
 >
@@ -110,17 +110,19 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 营销人员和业务线用户可以使用、
 
-* **AEM桌面应用程序**:该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权的桌面用户如何轻松访问共享资产，请参 [阅浏览、搜索和预览资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建新资产并与AEM用户的对应人员共享，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM桌面应用程序**:该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参 [阅浏览、搜索和预览资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其共享回作为AEM用户的对手，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
 * **Adobe Asset Link**:创意专业人士可以直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜索和使用资源。
 
 ## 配置资产共享 {#configure-sharing}
 
+共享资产的不同选项需要特定配置，并具有特定的先决条件。
+
 ### 配置资产链接共享 {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户可以查看与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
+要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户可以视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
 
 >[!NOTE]
 >
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 使桌面操作能够与桌面应用程序一起使用 {#desktop-actions}
 
-从浏览器的“资产”用户界面中，您可以浏览资产位置或注销并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为“桌面操作”，如果未启用这些选项，请参阅 [在AEM Web界面中启用桌面操作](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
+从浏览器的“资产”用户界面中，您可以浏览资产位置或注销并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参阅 [在AEM Web界面中启用桌面操作](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 ![使桌面操作能够在使用桌面应用程序时用作快捷键](assets/enable_desktop_actions.png)
 
