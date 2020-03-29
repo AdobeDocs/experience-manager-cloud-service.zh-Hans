@@ -2,14 +2,14 @@
 title: 将您的数字资产添加到Adobe Experience Manager
 description: 将您的数字资产作为云服务添加到Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # 将数字资产添加到Adobe Experience Manager {#add-assets-to-experience-manager}
 
-将数字文件上传到Adobe Experience Manager后，将富元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了文件的二进制内容。 您可以将各种类型的文件（包括图像、PDF文件、原始文件等）从本地文件夹或网络驱动器上传到Experience Manager资产。
+Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了上传的数字文件的二进制内容。 您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到Experience Manager资产。
 
 提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager存储库的其他方法，包括桌面客户端（如Adobe Asset Link或Experience Manager桌面应用程序）、上传和摄取客户将创建的脚本以及作为AEM扩展添加的自动化摄取集成。
 
