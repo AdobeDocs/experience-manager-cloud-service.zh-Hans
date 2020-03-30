@@ -2,7 +2,7 @@
 title: 内容投放
 description: '内容投放 '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ AEM作为云服务随内置CDN一起提供。 其主要目的是通过从位于�
 
 下图说明了这一点。
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 如果担心调度程序缓存未清除，请与客户支持联系 [](https://helpx.adobe.com/support.ec.html) ，如果需要，可以刷新调度程序缓存。
 
