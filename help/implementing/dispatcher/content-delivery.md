@@ -2,7 +2,7 @@
 title: 内容投放
 description: '内容投放 '
 translation-type: tm+mt
-source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -27,20 +27,20 @@ source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
 
 内容类型HTML/文本设置为在调度程序层300秒（5分钟）后过期，调度程序缓存和CDN均遵循此阈值。 在发布服务的重新部署期间，在新发布节点接受通信之前清除调度程序缓存并随后预热。
 
-以下各节提供了有关内容投放的更详细信息，包括CDN配置和调度程序缓存。
+以下各节提供了有关内容投放（包括CDN配置和缓存）的更详细信息。
 
 有关从作者服务复制到发布服务的信息，请在此 [处获取](/help/operations/replication.md)。
 
 ## CDN {#cdn}
 
-AEM作为云服务随默认CDN一起提供。 其主要目的是通过从位于边缘、靠近浏览器的CDN节点交付可缓存内容来减少延迟。 它完全受管并配置为实现AEM应用程序的最佳性能。
+AEM作为云服务随内置CDN一起提供。 其主要目的是通过从位于边缘、靠近浏览器的CDN节点交付可缓存内容来减少延迟。 它完全受管并配置为实现AEM应用程序的最佳性能。
 
 总而言之，AEM优惠了两个选项：
 
 1. AEM Managed CDN - AEM现成的CDN。 它是一个紧密集成的选项，不需要客户在支持CDN与AEM集成方面投入大量资金。
 1. 客户管理的CDN指向AEM Managed CDN —— 客户将自己的CDN指向AEM现成的CDN。 客户仍需要管理自己的CDN，但与AEM集成的投资是适度的。
 
-第一个选项应满足大多数客户性能和安全性要求。 此外，它需要最少的客户投资和持续维护。
+第一个选项应满足大多数客户性能和安全性要求。 此外，它需要最少的客户工作。
 
 第二个选项将逐个允许。 此决定基于满足某些先决条件，包括但不限于客户与其CDN供应商进行了难以放弃的传统集成。
 
@@ -53,7 +53,7 @@ AEM作为云服务随默认CDN一起提供。 其主要目的是通过从位于�
 | **CDN专业知识** | 无 | 需要至少一个兼职的工程资源以及能够配置客户CDN的详细CDN知识。 |
 | **安全** | 由 Adobe 管理. | 由Adobe（或由客户在其自己的CDN上选择）管理。 |
 | **演出** | 由Adobe优化。 | 将从某些AEM CDN功能中受益，但由于额外的跳数，性能可能会受到很小的影响。 **注意**:从客户CDN到快速CDN的跃点可能会很有效)。 |
-| **缓存** | 支持在调度程序级别应用的缓存头。 | 支持在调度程序级别应用的缓存头。 |
+| **缓存** | 支持在调度程序上应用的缓存头。 | 支持在调度程序上应用的缓存头。 |
 | **图像和视频压缩功能** | 可以与Adobe Dynamic Media一起使用。 | 可以与Adobe Dynamic Media或客户管理的CDN图像／视频解决方案结合使用。 |
 
 ### AEM Managed CDN {#aem-managed-cdn}
@@ -62,6 +62,9 @@ AEM作为云服务随默认CDN一起提供。 其主要目的是通过从位于�
 
 1. 您将通过共享指向包含此信息的安全表单的链接，向Adobe提供已签名的SSL证书和密钥。 请就本任务与客户支持协作。
    **注意：** Aem作为云服务不支持域验证(DV)证书。
+1. 您应通知客户支持：
+   * 哪个自定义域应与给定环境关联，如项目id和环境id所定义。
+   * 如果需要任何IP白名单来限制到给定环境的通信。
 1. 然后，客户支持将与您协调CNAME DNS记录的时间，并将其FQDN指向 `adobe-aem.map.fastly.net`。
 1. 当SSL证书即将过期时，您会收到通知，因此您可以重新提交新的SSL证书。
 
@@ -90,9 +93,9 @@ AEM作为云服务随默认CDN一起提供。 其主要目的是通过从位于�
 
 在接受实时流量之前，您应向Adobe客户支持部门验证端到端流量路由是否正常工作。
 
-### 缓存 {#caching}
+## 缓存 {#caching}
 
-缓存过程遵循以下规则。
+可以使用调度程序规则配置CDN上的缓存。 请注意，如果在调度程序配置中启用了缓存到期标题，则调度程序还会考虑生成的缓存到期标题，这意味着即使在重新发布的内容之外，它也会刷新特定内容。 `enableTTL`
 
 ### HTML/文本 {#html-text}
 
@@ -106,15 +109,15 @@ AEM作为云服务随默认CDN一起提供。 其主要目的是通过从位于�
 { /glob "*" /type "allow" }
 ```
 
-* 可以由apache mod_headers指令在更细粒度级别上覆盖。 例如：
+* 可以由以下apache mod_headers指令在更细粒度的级别上覆盖：
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 ```
 
-您必须确保文件符合 `src/conf.dispatcher.d/cache` 以下规则：
+必须确保文件下 `src/conf.dispatcher.d/cache` 有以下规则（默认配置中）:
 
 ```
 /0000
@@ -128,32 +131,41 @@ AEM作为云服务随默认CDN一起提供。 其主要目的是通过从位于�
 * 通过使用AEM的客户端库框架，生成JavaScript和CSS代码的方式使浏览器可以无限期地缓存它，因为任何更改都显示为具有唯一路径的新文件。  换句话说，将根据需要生成引用客户端库的HTML，以便客户在发布新内容时体验新内容。 对于不尊重“不可变”值的旧版浏览器，缓存控件设置为“不可变”或30天。
 * 有关更多详细 [信息，请参阅客户端库和版本一致性](#content-consistency) 一节。
 
-### 图像 {#images}
+### 图像和任何大到足以存储在斑点存储中的内容 {#images}
 
-* 未缓存
-
-### 其他内容类型 {#other-content}
-
-* 无默认缓存
-* 可以由apache覆盖 `mod_headers`。 例如：
+* 默认情况下，未缓存
+* 可以通过以下apache指令在更精细的级别上进 `mod_headers` 行设置：
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 ```
 
-*其他设置缓存头的方法也可能有效
+必须确保src/conf.dispatcher.d/cache下的文件具有以下规则（默认配置中）:
 
-在接受实时流量之前，客户应向Adobe客户支持进行验证，确保端到端流量路由正常工作。
+```
+/0000
+{ /glob "*" /type "allow" }
+```
+
+确保要保持私有而非缓存的资源不是LocationMatch指令过滤器的一部分。
+
+* 请注意，其他方法(包括 [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons项目)将不会成功覆盖值。
+
+### 节点存储中的其他内容文件类型 {#other-content}
+
+* 无默认缓存
+* 默认值不能用用于html/ `EXPIRATION_TIME` 文本文件类型的变量设置
+* 通过指定适当的正则表达式，可以使用html/文本部分中描述的相同LocationMatch策略设置缓存过期时间
 
 ## Dispatcher {#disp}
 
 通信通过apache Web服务器，该服务器支持包括调度程序的模块。 调度程序主要用作缓存来限制对发布节点的处理，以提高性能。
 
-HTML/文本类型的内容设置有与300秒（5分钟）到期对应的缓存标题。
+如CDN的缓存部分所述，可以将规则应用于调度程序配置以修改任何默认缓存到期设置。
 
-本节的其余部分介绍了与调度程序缓存失效相关的注意事项。
+本节的其余部分介绍了与调度程序缓存失效相关的注意事项。 对于大多数客户，不必使调度程序缓存失效，而是依赖于在内容被重新发布时刷新其缓存的调度程序以及与缓存到期标题相关的CDN。
 
 ### 激活/取消激活期间调度程序缓存失效 {#cache-activation-deactivation}
 
