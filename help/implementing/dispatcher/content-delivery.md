@@ -2,7 +2,7 @@
 title: 内容投放
 description: '内容投放 '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ AEM作为云服务随内置CDN一起提供。 其主要目的是通过从位于�
 
 * 默认情况下，根据apache层发出的缓存控制头，由浏览器缓存五分钟。 CDN还尊重此值。
 * 通过在将AEM用作Cloud Service SDK Dispatcher工具中定义 `EXPIRATION_TIME` 变量， `global.vars` 可覆盖所有HTML/Text内容的变量。
-
-您必须确保文件符合 `src/conf.dispatcher.d/cache` 以下规则：
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * 可以由以下apache mod_headers指令在更细粒度的级别上覆盖：
 
 ```
