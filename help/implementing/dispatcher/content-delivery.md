@@ -2,7 +2,7 @@
 title: 内容投放
 description: '内容投放 '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ HTML页面上的默认clientlib包括如下示例：
 
 要在本地SDK快速启动中启用严格的clientlib版本控制，请执行以下操作：
 
-1. 导航到OSGi配置管理器 <host>/system/console/configMgr
+1. 导航到OSGi配置管理器 `<host>/system/console/configMgr`
 1. 查找Adobe Granite HTML Library Manager的OSGi配置：
    * 选中此复选框可启用严格版本控制
    * 在标记为“长期客户端缓存密钥”的字段中，输入值/。*；哈希
