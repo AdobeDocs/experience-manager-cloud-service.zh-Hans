@@ -1,19 +1,19 @@
 ---
-title: 内容搜索和索引
-description: '内容搜索和索引 '
+title: 内容搜索与索引
+description: '内容搜索与索引 '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
 
-# 内容搜索和索引 {#indexing}
+# 内容搜索与索引 {#indexing}
 
 ## AEM作为云服务的更改 {#changes-in-aem-as-a-cloud-service}
 
-将AEM作为云服务，Adobe将从以AEM实例为中心的模型转变为基于服务的视图，该视图由Cloud Manager中的CI/CD管道驱动，并带有n-x个AEM容器。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果未指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
+将AEM作为云服务，Adobe将从以AEM实例为中心的模型转变为基于服务的视图，该容器由Cloud Manager中的CI/CD管道驱动，具有n-x AEM。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果未指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
 
-以下是与AEM 6.5及更早版本相比的主要更改列表：
+以下是与AEM 6.5及更早版本相比的主要更改的列表:
 
 1. 用户将无法再访问单个AEM实例的索引管理器来调试、配置或维护索引。 它仅用于本地开发和预先部署。
 
@@ -31,7 +31,7 @@ source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 1. 在AEM作为云服务的高层，引入 [Blue-Green部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引：一组用于旧版本（蓝色），另一组用于新版本（绿色）。
 
-使用的索引版本通过标志使用索引定义中的标志进行配 `useIfExist` 置。 索引只能用于应用程序的一个版本（例如，仅蓝色或绿色），或同时用于两个版本。 使用蓝绿部署的索 [引管理中提供了详细文档](#index-management-using-blue-green-deployments)。
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. 客户可以在Cloud Manager构建页面上查看索引构建作业是否完成，并在新版本可以接收流量时收到通知。
 
@@ -53,7 +53,7 @@ AS NOTE: the above is internal for now.
 1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本
 1. 删除冗余或过时的现有索引。
 
-对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中作为自定义代码库的一部分创建新索引定义。 有关详细信息，请参 [阅将Cloud Service部署到AEM文档](/help/implementing/deploying/overview.md)。
+对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新的索引定义作为自定义代码库的一部分。 有关详细信息，请参 [阅将Cloud Service部署到AEM文档](/help/implementing/deploying/overview.md)。
 
 ### 准备新的索引定义 {#preparing-the-new-index-definition}
 
