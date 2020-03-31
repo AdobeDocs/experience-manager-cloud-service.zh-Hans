@@ -1,7 +1,7 @@
 ---
 title: 编辑页面属性
 description: 为页面定义所需的属性
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
@@ -159,7 +159,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 * **社交媒体共享**
 
-   定义页面上可用的共享选项。显示可用于[共享核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)的选项。
+   定义页面上可用的共享选项。显示可用于[共享核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/sharing.html)的选项。
 
    * **为 Facebook 启用用户共享**
    * **为 Pinterest 启用用户共享**
@@ -182,7 +182,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
    * 选择一个[品牌以指定定位的范围](/help/sites-cloud/authoring/personalization/targeted-content.md)。
    >[!NOTE]
-   >此选项要求用户帐户位于组 `Target Adminstrators`中。
+   >此选项要求用户帐户属于 `Target Adminstrators` 组。
 
 ### 权限 {#permissions}
 
@@ -245,7 +245,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ### 从“站点”控制台中 - 多个页面 {#from-the-sites-console-multiple-pages}
 
-从“站 **点** ”控制台中，您可以选择多个页面，然后使用 **查看属性** ，以查看和／或编辑页面属性。 这称为批量编辑页面属性。
+从“站 **点** ”控制台中，您可以选择多个页面，然后使用&#x200B;**查看属性** ，以查看和／或编辑页面属性。 这称为批量编辑页面属性。
 
 >[!NOTE]
 >
