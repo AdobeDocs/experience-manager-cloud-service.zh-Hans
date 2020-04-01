@@ -2,15 +2,15 @@
 title: 在 Adobe Experience Manager Sites 创作工作流程中，使用连接的资产共享 DAM 资产
 description: 在另一个 Experience Manager Site 部署中创建网页时，使用远程 Adobe Experience Manager Assets 部署中的可用资产。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
+translation-type: tm+mt
+source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
 
 ---
 
 
 # 在 AEM Sites 中，使用连接的资产共享 DAM 资产 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。其中一些原因可能是：地理上分散的部署需要协同工作；母公司希望整合因并购而导致的不同的基础环境；导致产生多层次的异构基础环境；企业的发展要求必须有专门的实例进行资产管理。
+在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。以下几个原因可能是地理上分散的现有部署，这些部署需要协同工作，或进行收购，从而导致父公司希望共同使用的异构基础结构。
 
 AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需资产的数字资产管理 (DAM) 系统。AEM 现在可通过集成 AEM Sites 和 AEM Assets 来支持上述用例。
 
@@ -37,7 +37,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 
 作者可以在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索到的资产。文档可添加到 `Download` 组件中，图像可添加到 `Image` 组件中。此外，作者还可以在任何自定义 AEM 组件（对默认 `Download` 或 `Image` 组件的扩展）中添加远程资产。支持的格式列表如下：
 
-* **图像格式**：可支持[图像组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html)支持的图像格式。不支持 Dynamic Media 图像。
+* **图像格式**：可支持[图像组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)支持的图像格式。不支持 Dynamic Media 图像。
 * **文档格式**：请参阅[连接的资产支持的文档格式](file-format-support.md#doc-formats)。
 
 ### 涉及的用户和组 {#users-and-groups-involved}
