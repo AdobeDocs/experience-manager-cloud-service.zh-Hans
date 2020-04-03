@@ -1,7 +1,7 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
 
 ---
@@ -37,4 +37,4 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [部署到 AEM 云服务](deploying/overview.md)
 + 云中的调度程序 {#dispatcher}
    + [云中的调度程序](dispatcher/overview.md)
-   + [AEM中的内容投放为云服务](dispatcher/content-delivery.md)
+   + [AEM 云服务中的内容交付](dispatcher/content-delivery.md)
