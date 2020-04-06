@@ -3,7 +3,7 @@ title: 资产 HTTP API
 description: 了解Assets HTTP API的实施、数据模型和功能。 使用资产HTTP API可以对资产执行各种任务。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -25,7 +25,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 >[!NOTE]
 >
->与上传或更新资产或二进制文件（例如演绎版）相关的所有API调用都会作为云服务部署为AEM进行预配置。 对于上传二进制文件，请 [改用直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical) 。
+>与上传或更新资产或二进制文件（例如演绎版）相关的所有API调用都会作为云服务部署为AEM进行预配置。 要上传二进制文件，请改 [用直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical) 。
 
 ## 内容片段 {#content-fragments}
 
