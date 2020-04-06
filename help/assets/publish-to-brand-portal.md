@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# 将资产、文件夹和收藏集发布到Brand Portal {#publish-aem-assets-to-brand-portal}
 
 作为Adobe Experience Manager(AEM)资产管理员，您可以将资产、文件夹和收藏集发布到AEM Assets Brand Portal实例。 此外，您还可以将资产或文件夹的发布工作流计划到以后的日期或时间。 发布后，Brand Portal用户可以访问资产、文件夹和集合并将其进一步分发给其他用户。
 
@@ -45,9 +45,9 @@ source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
    * [立即发布](#publish-to-bp-now) （立即发布资产）
    * [稍后发布](#publish-to-bp-now) (计划发布资产)
 
-### 立即发布资产 {#publish-to-bp-now}
+### Publish assets now {#publish-to-bp-now}
 
-要将选定资产发布到Brand Portal，请执行以下任一操作：
+To publish the selected assets to Brand Portal, do either of the following:
 
 * 从工具栏中，选择“快 **[!UICONTROL 速发布”]**。 在菜单中，单击“ **[!UICONTROL 发布到Brand Portal”]**。
 
@@ -57,13 +57,13 @@ source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
 
    2. 在范围中确认您的 **[!UICONTROL 选择]**，然后单 **[!UICONTROL 击发布到Brand Portal]**。
 
-将显示一条消息，指明资产已排队等候发布到Brand Portal。 登录到Brand Portal界面，查看已发布的资产。
+A message appears stating that the assets have been queued up for publishing to Brand Portal. 登录到Brand Portal界面，查看已发布的资产。
 
 ### 稍后发布资产 {#publish-to-bp-later}
 
 要计划将资产发布到Brand Portal以后的日期或时间，请执行以下操作：
 
-1. 选择要计划发布的资产，从顶部的工具栏中 **[!UICONTROL 选择]** “管理发布”。
+1. Select the assets that you want to schedule for publishing, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
 
 1. 在“管 **[!UICONTROL 理出版物]** ”页面上，从Action **[!UICONTROL ，选择发布到Brand Portal]** ，然后从Scheduling Scheduling ************&#x200B;中选择Publish to Brand Portal。
 
