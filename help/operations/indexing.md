@@ -2,7 +2,7 @@
 title: 内容搜索与索引
 description: '内容搜索与索引 '
 translation-type: tm+mt
-source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 1. 在AEM作为云服务的高层，引入 [Blue-Green部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引：一组用于旧版本（蓝色），另一组用于新版本（绿色）。
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+使用的索引版本通过标志使用索引定义中的标志进行配 `useIfExist` 置。 索引只能用于应用程序的一个版本（例如，仅蓝色或绿色），或同时用于两个版本。 使用蓝绿部署的索 [引管理中提供了详细文档](#index-management-using-blue-green-deployments)。
 
 1. 客户可以在Cloud Manager构建页面上查看索引构建作业是否完成，并在新版本可以接收流量时收到通知。
 
@@ -61,7 +61,7 @@ AS NOTE: the above is internal for now.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-那就得下去 `ui.apps/src/main/content/jcr_root`。 目前不支持子根文件夹。
+那就得下去 `ui.content/src/main/content/jcr_root`。 目前不支持子根文件夹。
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,15 +69,11 @@ AS NOTE: the above is internal for now.
 
 ### 部署索引定义 {#deploying-index-definitions}
 
-> [!NOTE]
->
-> Jackrabbit Filevault Maven包插件版本 **1.1.0存在一个已知问题** ，它不允许您添加 `oak:index` 到的模块 `<packageType>application</packageType>`。 要解决此问题，请使 **用版本1.0.4**。
-
 索引定义现在标记为自定义和版本化：
 
-* 索引定义本身(例如 `/oak:index/ntBaseLucene-custom-1`)
+* 索引定义本身(例如 `/oak:index/ntBaseLucene-custom-1`)是MUTABLE内容
 
-因此，要部署索引，需要通过Git和Cloud Manager部署流程`/oak:index/definitionname``ui.apps` 提供索引定义()。
+因此，为了部署索引，索引定义(`/oak:index/definitionname`)应通过可变包提 **交**，通常通 `ui.content` 过Git和Cloud Manager部署过程。
 
 添加新索引定义后，需要通过Cloud Manager部署新应用程序。 在部署时，将启动两个作业，负责将索引定义分别添加（并根据需要合并）到MongoDB和Azure区段存储，以供创作和发布。 在“蓝绿”切换开始之前，正在使用新索引定义重新索引基础存储库。
 
