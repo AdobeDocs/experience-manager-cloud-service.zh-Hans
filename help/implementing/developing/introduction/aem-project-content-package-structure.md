@@ -1,17 +1,17 @@
 ---
-title: AEM 项目结构
-description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
+title: 了解项目的内容包结构
+description: 了解如何正确定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
+source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 
 ---
 
 
-# AEM 项目结构
+# 了解Adobe Experience Manager云服务中项目内容包的结构 {#understand-cloud-service-package-structure}
 
 >[!TIP]
 >
->熟悉基本的 [AEM Project Archetype使用](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven插件，因为本文构建于这些学习和概念之上。
+>熟悉基本的 [AEM Project Archetype使用](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven插件，因为本文构建于这些学习和概念之上。
 
 本文概述了Adobe Experience Manager Maven项目为兼容AEM Cloud Service所需的更改，具体方法是确保它们遵守可变内容和不可变内容的拆分；建立必要的依赖关系以创建不冲突的确定性部署；它们被装在一个可展开的结构里。
 
@@ -29,7 +29,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
 `/apps` 和 `/libs` 被视为 AEM 中的&#x200B;**不可变**&#x200B;区域，因为 AEM 启动后（例如，运行时），无法对其进行更改（创建、更新、删除）。运行时对不可改变区域所做的任何更改尝试都将失败。
 
-存储库中的其 `/content`他所 `/conf`有内容， `/var`如、、 `/etc`、 `/oak:index`、 `/system`、 `/tmp`、等。 都是可 **变的** ，这意味着它们可以在运行时更改。
+存储库中的其他所 `/content`有内 `/conf`容， `/var``/home`、 `/etc`、 `/oak:index`、 `/system`、 `/tmp`、等等。 都是可 **变的** ，这意味着它们可以在运行时更改。
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
 建议的应用程序部署结构如下：
 
-+ 该包 `ui.apps` 或代码包包含要部署的所有代码，并且仅部署到 `/apps`。 包的常见元 `ui.apps` 素包括但不限于：
++ 该 `ui.apps` 包或内容包包含要部署的所有代码，并且仅部署到 `/apps`。 包的常见元 `ui.apps` 素包括但不限于：
    + OSGi捆绑
       + `/apps/my-app/install`
    + OSGi配置
@@ -58,28 +58,23 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
       + `/apps/settings`
    + ACL（权限）
       + 任意 `rep:policy` 路径位于 `/apps`
-   + 回购初始化OSGi配置指令（及随附的脚本）
-      + [回购初始化](#repo-init) ，是部署（可变）内容（逻辑上属于AEM应用程序的一部分）的推荐方式。 回购初始化应用于定义：
-         + 基线内容结构
-            + `/conf/my-app`
-            + `/content/my-app`
-            + `/content/dam/my-app`
-         + 用户
-         + 服务用户
-         + 组
-         + ACL（权限）
-            + 任何 `rep:policy` 路径（可变或不可变）的任意
-+ 该包 `ui.content` 或内容包包含所有内容和配置。 包的常见元 `ui.content` 素包括但不限于：
++ 该包 `ui.content` 或代码包包含所有内容和配置。 包的常见元 `ui.content` 素包括但不限于：
    + 上下文感知配置
       + `/conf`
-   + 必需的、复杂的内容结构(即 内容构建以回购初始化中定义的基线内容结构为基础，并扩展该结构。
+   + 基线内容结构（资产文件夹、站点根页面）
       + `/content`, `/content/dam`, 等.
    + 受管制的标记分类
       + `/content/cq:tags`
+   + 服务用户
+      + `/home/users`
+   + 用户组
+      + `/home/groups`
    + Oak索引
-      + `/oak:index`
+      + `/oak:indexes`
    + 等等传统节点
       + `/etc`
+   + ACL（权限）
+      + 任何 `rep:policy` 路径的任何 **路径**`/apps`
 + `all` 包是一个“仅”包含 `ui.apps` 和 `ui.content` 包作为嵌入内容的容器包。`all` 包不得具有&#x200B;**任何自己的内容**，而是将所有部署委派到存储库的子包。
 
    包现在使用Maven [FileVault Package Maven插件的嵌入式配置](#embeddeds)，而不是配置 `<subPackages>` 包含。
@@ -116,35 +111,6 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 >[!TIP]
 >
 >有关完整 [的代码片断，请参见下面的](#pom-xml-snippets) POM XML代码片断部分。
-
-## 存储库初始化{#repo-init}
-
-回购初始化提供定义JCR结构的指令或脚本，这些结构从文件夹树等常见节点结构到用户、服务用户、组和ACL定义。
-
-回购初始化的主要好处是它们具有执行其脚本定义的所有操作的隐式权限，并且在部署生命周期的早期被调用，以确保执行时间代码时存在所有必需的JCR结构。
-
-虽然回购初始化脚本本身作为脚本 `ui.apps` 在项目中生活，但它们可以而且应该用于定义以下可变结构：
-
-+ 基线内容结构
-   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
-+ 服务用户
-+ 用户
-+ 组
-+ ACL
-
-存储库初始化脚本存储为 `scripts``RepositoryInitializer` OSGi工厂配置的条目，因此，可以通过运行模式隐式定位，从而允许AEM作者和AEM Publish Services的存储库初始化脚本之间或甚至Env（开发、舞台和Prod）之间的差异。
-
-请注意，在定义“用户”和“组”时，只有组被视为应用程序的一部分，并且应在此处定义其功能的组成部分。 组织用户和用户组在AEM中的运行时仍应进行定义；例如，如果自定义工作流将工作分配给指定的组，则该组应通过AEM应用程序中的回购初始化来定义，但是，如果该组只是组织性的，如“Wendy&#39;s Team”和“Sean&#39;s Team”，则这些组最好定义，并在AEM的运行时进行管理。
-
->[!TIP]
->
->回购初始 *化脚本必须在内联字* 段中定义，且配 `scripts``references` 置将无法工作。
-
-Apache Sling Repo Init文档中提供了回购初始化脚本的 [完整词汇表](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
-
->[!TIP]
->
->有关完整 [的代码片断，请参见下面的](#snippet-repo-init) “存储库初始化代码片断”部分。
 
 ## 存储库结构包 {#repository-structure-package}
 
@@ -355,28 +321,6 @@ Apache Sling Repo Init文档中提供了回购初始化脚本的 [完整词汇�
     ...
 ```
 
-### 存储库初始化{#snippet-repo-init}
-
-包含回购初始化脚本的回购初始化脚本在OSGi工厂配置中通过 `RepositoryInitializer` 该属性进行 `scripts` 定义。 请注意，由于这些脚本是在OSGi配置中定义的，因此，运行时可以使用通常的文件夹语义轻松地确定这些脚本 `../config.<runmode>` 的作用范围。
-
-请注意，由于脚本通常是多行声明，因此在文件中定义脚本比在XML `.config` 基础格式更容 `sling:OsgiConfig` 易。
-
-`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
-
-```plain
-scripts=["
-    create service user my-data-reader-service
-
-    set ACL on /var/my-data
-        allow jcr:read for my-data-reader-service
-    end
-
-    create path (sling:Folder) /conf/my-app/settings
-"]
-```
-
-OSGi属 `scripts` 性包含由 [Apache Sling的Repo Init语言定义的指令](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
-
 ### 存储库结构包 {#xml-repository-structure-package}
 
 在声明 `ui.apps/pom.xml` 代码包()的 `pom.xml``<packageType>application</packageType>`和任何其他代码包中，将以下存储库结构包配置添加到FileVault Maven插件。 您可以 [为项目创建自己的存储库结构包](repository-structure-package.md)。
@@ -394,7 +338,7 @@ OSGi属 `scripts` 性包含由 [Apache Sling的Repo Init语言定义的指令](h
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>repository-structure-pkg</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -485,9 +429,6 @@ OSGi属 `scripts` 性包含由 [Apache Sling的Repo Init语言定义的指令](h
 如果在嵌 `/apps/*-packages` 入目标中使用多个，则必须在此处枚举所有这些字段。
 
 ### 第三方Maven存储库 {#xml-3rd-party-maven-repositories}
-
->[!WARNING]
-> 添加更多Maven存储库可能会延长Maven构建时间，因为将检查其他Maven存储库是否具有依赖关系。
 
 在反应堆项目中，添 `pom.xml`加任何必需的第三方公共Maven存储库指令。 完整配 `<repository>` 置应可从第三方存储库提供程序中访问。
 
