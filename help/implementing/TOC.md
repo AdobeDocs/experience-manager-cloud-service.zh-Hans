@@ -1,15 +1,14 @@
 ---
-sub-product: Implementing for AEM as a Cloud Service
-user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
+sub-product: 将AEM作为云服务实施
+user-guide-title: 将AEM作为云服务实施
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # 实施 {#implementing}
 
-+ [实施 AEM 云服务的应用程序](/help/implementing/home.md)
 + 使用 Cloud Manager {#using-cloud-manager}
    + [管理环境](cloud-manager/manage-environments.md)
    + [配置 CI/CD 管线](cloud-manager/configure-pipeline.md)
@@ -22,11 +21,12 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [访问 Git](cloud-manager/accessing-git.md)
    + [将 Git 与 Adobe Cloud Manager 集成](cloud-manager/integrating-with-git.md)
 + 部署 AEM 云服务 {#developing}
-   + [AEM 项目结构](developing/introduction/aem-project-content-package-structure.md)
-   + [AEM 项目存储库结构包](developing/introduction/repository-structure-package.md)
+   + [AEM 项目包结构](developing/introduction/aem-project-content-package-structure.md)
+   + [开发存储库结构包](developing/introduction/repository-structure-package.md)
    + [AEM 云服务 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [内容搜索与索引](/help/operations/indexing.md)
    + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
+   + [记录](/help/implementing/developing/introduction/logging.md)
    + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [理解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
@@ -37,4 +37,3 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [部署到 AEM 云服务](deploying/overview.md)
 + 云中的调度程序 {#dispatcher}
    + [云中的调度程序](dispatcher/overview.md)
-   + [AEM 云服务中的内容交付](dispatcher/content-delivery.md)
