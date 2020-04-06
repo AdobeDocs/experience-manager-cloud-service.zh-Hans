@@ -2,7 +2,7 @@
 title: 配置Dynamic Media Cloud服务
 description: 有关如何在Adobe Experience Manager Cloud Service中配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 50ebc2187cff4d35c93e25da9d2f62f6a86f12ad
+source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
 
 ---
 
@@ -65,17 +65,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * **[!UICONTROL 公司根文件夹路径]**
 
-   * **[!UICONTROL 发布资产]** -您可以从以下三个选项中进行选择：
-      * **[!UICONTROL 立即]** ，表示上传资产时，系统会立即摄取资产并提供URL/Embed。 发布资产不需要用户干预。
-      * **[!UICONTROL 激活后]** ，表示您需要先显式发布资产，然后再提供URL/嵌入链接。
-      * **[!UICONTROL 选择性发布]** ：指资产自动发布仅用于安全预览，并且可以明确发布到AEM，而不发布到DMS7以用于公共域中的投放。 将来，Adobe将增强此选项，以将资产发布到AEM并将资产发布到Dynamic Media，这两个选项相互排斥。 即，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您可以在AEM中仅发布资产以进行预览；这些相同的资源不会发布在DMS7中以便在公共域中投放。
+   * **[!UICONTROL 发布资产]** -此选项 **[!UICONTROL 表示]** ，上传资产后，系统会收录资产并立即提供URL/嵌入。 发布资产不需要用户干预。 激活 **[!UICONTROL 时]** （默认）选项表示您需要先显式发布资产，然后才能提供URL/嵌入链接。
+
    * **[!UICONTROL 安全预览服务器]** -允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全地访问和预览远程Dynamic Media再现（不会将二进制文件发回到AEM实例）。
 除非您有特殊安排来使用自己的公司服务器或特殊服务器，否则Adobe Systems建议您保留指定的此设置。
 
    * **[!UICONTROL 同步所有内容]** -默认情况下处于选中状态。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项可让您从以下两种Dynamic Media同步模式中进行选择：
 
    * **[!UICONTROL Dynamic Media 同步模式]**
-      * **[!UICONTROL 默认启用]** -默认情况下，该配置将应用于所有文件夹，除非您专门为排除标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 默认启用]** -默认情况下，该配置将应用于所有文件夹，除非您专门标记要导出的文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 默认禁用]** -在明确标记选定文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。
 要将选定的文件夹标记为同步到 Dynamic Media，请打开资产文件夹的“属性”页面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
          * **[!UICONTROL 继承]** -文件夹上没有明确的同步值；相反，该文件夹会从其某个上级文件夹或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。
