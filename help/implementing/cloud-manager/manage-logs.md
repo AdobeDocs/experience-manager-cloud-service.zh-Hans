@@ -2,20 +2,20 @@
 title: 管理日志——云服务
 description: 管理日志——云服务
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
 
 # 访问和管理日志 {#manage-logs}
 
-用户可以使用环境卡访问选定环境的可用日志文件列表。  用户可以访问选定环境的可用日志文件列表。
+用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定列表的可用日志文件环境。
 
 这些文件可以通过UI从“概述”页面 **下载** 。
 
 ![](assets/manage-logs1.png)
 
-或者，“环 **境** ”页：
+或者， **环境** :
 
 ![](assets/manage-logs2.png)
 
@@ -41,7 +41,7 @@ $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-为了获得环境Id（本例中为1884）以及可用的服务或日志名称选项，您可以使用：
+为了获得环境ID（本例中为1884）以及可用的服务或日志名称选项，您可以使用：
 
 ```java
 $ aio cloudmanager:list-environments
@@ -66,10 +66,3 @@ Environment Id Service    Name
 
 >[!Note]
 >虽然 **日志下载** (Log Downloads **)可通过UI和API使用，但** Log Tailing（日志跟踪）是仅限API/CLI的。
-
-### 其他资源 {#resources}
-
-请参阅以下其他资源，进一步了解Cloud Manager API和Adobe I/O CLI:
-
-* [Cloud Manager API文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
