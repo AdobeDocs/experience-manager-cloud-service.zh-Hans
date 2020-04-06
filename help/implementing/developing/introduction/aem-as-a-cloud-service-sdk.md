@@ -2,7 +2,7 @@
 title: AEM 云服务 SDK
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
+source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
 
 ---
 
@@ -24,7 +24,7 @@ AEM作为云服务SDK由以下对象组成：
 ## 以云服务SDK形式访问AEM {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * 您可以检查AEM Admin Console的“关于 **Adobe Experience Manager** ”图标，以了解您正在生产中运行的AEM版本。
-* 快速启动jar和调度程序工具可从软件分发门户下载为 [zip文件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。 请注意，对SDK列表的访问权限仅限于那些将AEM Managed Services或AEM作为云服务环境的用户。
+* 快速启动jar和调度程序工具可从软件分发门户下载为 [zip文件](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)。 请注意，对SDK列表的访问权限仅限于那些将AEM Managed Services或AEM作为云服务环境的用户。
 * Java API Jar和Javadoc Jar可以通过各种工具（命令行或首选IDE）进行下载。
 * 主项目窗格应引用以下API Jar包。 此依赖关系也应在任何子包中引用。
 
@@ -62,7 +62,7 @@ AEM作为云服务SDK由以下对象组成：
 
 建议至 *少在月度维护版* 本发布后对其进行刷新。
 
-在任何日 *常维护版本发布* 后，都可以对其进行刷新。 客户的生产实例成功升级到新AEM版本后，将通知他们。 对于日常维护版本，新SDK预计不会发生重大更改（如果有）。 但是，建议偶尔使用最新的SDK刷新本地AEM开发人员环境，然后重新构建并测试自定义应用程序。 月度维护版本通常包含更多有影响的更改，因此开发人员应立即刷新、重新构建和测试。
+在任何日 *常维护版本发布* 后，都可以对其进行刷新。 客户的生产实例成功升级到新AEM版本后，将通知他们。 对于日常维护版本，新SDK预计不会发生重大更改（如果有）。 但是，建议偶尔使用最新的SDK刷新本地AEM开发人员环境，然后重新构建并测试自定义应用程序。 月度维护版本通常包含更多有影响的更改，因此开发人员应立即刷新、重建和测试。
 
 下面是刷新本地环境的建议过程：
 
