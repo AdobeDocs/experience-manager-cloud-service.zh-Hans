@@ -2,7 +2,7 @@
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 translation-type: tm+mt
-source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
+source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
    + [导入和导出资产元数据](metadata-import-export.md)
 + 共享和分发资产 {#brandportal}
    + [使用Brand Portal配置AEM资产](configure-aem-assets-with-brand-portal.md)
-   + [将AEM资产发布到Brand Portal](publish-to-brand-portal.md)
+   + [将资产发布到Brand Portal](publish-to-brand-portal.md)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
    + [管理内容片段](content-fragments/content-fragments-managing.md)
