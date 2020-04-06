@@ -4,7 +4,7 @@ description: 了解Adobe Experience Manager资产中的集合概念。 了解如
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 根据资产的整理方式，收藏集有以下类型：
 
-* 包含资产、文件夹和其他收藏集的静态引用列表的收藏集。
+* 包含资产、文件夹和其他集合的静态引用列表的集合。
 
 * 基于搜索条件动态包含资产的智能收藏集。
 
@@ -44,7 +44,7 @@ You can create a collection either with [static references](#create-a-collection
 
    >[!NOTE]
    >
-   >要使成员能够与其他用户共享集合，请在路径 `dam-users` 中提供组读取权限 `home/users`。 为位置的用户授予权 `/content/dam/collections` 限，以允许用户在弹出列表中查看集合。 或者，也可以让用户成为用户组的一 `dam-users` 部分。
+   >要使成员能够与其他用户共享集合，请在路径 `dam-users` 中提供组读取权限 `home/users`。 为位置的用户授予权 `/content/dam/collections` 限，以允许用户在弹出列表中视图集合。 或者，也可以让用户成为用户组的一 `dam-users` 部分。
 
 1. （可选）为集合添加缩略图。
 1. 点按／单 **[!UICONTROL 击创建]**，然后点按／单 **[!UICONTROL 击确定]** ，关闭对话框。 具有指定标题和属性的集合将在“收藏集”控制台中打开。
@@ -70,7 +70,7 @@ You can create a collection either with [static references](#create-a-collection
 智能收藏集使用搜索条件动态填充资产。 您只能使用文件而不使用文件夹或文件和文件夹来创建智能收藏集。
 
 1. 导航到资产UI，然后点按／单击搜 **[!UICONTROL 索图]** 标。
-1. 在“全方位搜索”框中输入搜索关键字，然后按Enter。 点按／单击GlobalNav图标以显示“筛选器”面板，并从“搜索”面板应用搜索筛选器。
+1. 在“全方位搜索”框中输入搜索关键字，然后按Enter。 点按／单击GlobalNav图标以显示“过滤器”面板，并从“搜索”面板应用搜索筛选器。
 1. 从“文件 **[!UICONTROL 和文件夹”列表]** ，选择“ **[!UICONTROL 文件”]**。
 1. 点按／单击 **[!UICONTROL 保存智能收藏集]**。
 1. 指定集合的名称。 Select **[!UICONTROL Public]** to add the DAM Users group with the Viewer role to the smart collection.
@@ -101,7 +101,7 @@ Smart collections are built by saving a search so you can alter their content by
 
 1. 在资产用户界面中，点按／单击工 **[!UICONTROL 具栏中]** 的搜索图标。
 1. 在“Omnisearch”（全局搜索）框中，按Enter键。
-1. 点按／单击GlobalNav图标以显示“滤镜”面板。
+1. 点按／单击GlobalNav图标以显示过滤器面板。
 1. 从&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表中，选择要修改的智能收藏集。“搜索”面板显示为保存的搜索配置的过滤器。
 1. 从“文件 **[!UICONTROL 和文件夹”列表]** ，选择“ **[!UICONTROL 文件”]**。
 1. 根据需要修改一个或多个过滤器。 点按／单击 **[!UICONTROL 编辑智能收藏集]**。 您还可以编辑智能收藏集的名称。
@@ -109,7 +109,7 @@ Smart collections are built by saving a search so you can alter their content by
 1. 点按／单 **[!UICONTROL 击覆盖]** ，将原始智能收藏集替换为已编辑的收藏集。 或者，选择另 **[!UICONTROL 存为]** ，以单独保存编辑的集合。
 1. In the confirmation dialog, tap/click **[!UICONTROL Save]** to complete the process.
 
-## 查看和编辑集合元数据 {#view-and-edit-collection-metadata}
+## 视图和编辑集合元数据 {#view-and-edit-collection-metadata}
 
 收藏集元数据由与收藏集相关的数据组成，其中包括添加的任何标记。
 
@@ -170,7 +170,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 1. 从收藏集控制台中，选择一个或多个要下载的收藏集。
 1. 在工具栏中，点按／单击下载图标。
-1. 在“下 **[!UICONTROL 载]** ”对话框中，点按／单 **[!UICONTROL 击下载]**。 如果要下载集合中资产的演绎版，请选择演 **[!UICONTROL 绎版]**。 <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
+1. 在“下 **[!UICONTROL 载]** ”对话框中，点按／单 **[!UICONTROL 击下载]**。 如果要下载集合中资产的演绎版，请选择演 **[!UICONTROL 绎版]**。 选择“电 **[!UICONTROL 子邮件]** ”选项，向集合所有者发送电子邮件通知。
 
    当您选择要下载的集合时，将下载集合下的完整文件夹层次结构。 要将您下载的每个集合（包括嵌套在父集合下的子集合中的资产）包含在单个文件夹中，请为每个资 **[!UICONTROL 产选择创建单独的文件夹]**。
 
@@ -178,7 +178,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 Adobe Enterprise Manager(AEM)资产允许您批量编辑许多集合的元数据。 使用“ [!UICONTROL 属性] ”页可对多个集合执行元数据更改，例如，将元数据属性更改为通用值或添加或修改标记。
 
-要自定义元数据 [!UICONTROL 属性页] ，包括添加、修改和删除元数据属性，请使用架构编辑器。
+要自定义元数据 [!UICONTROL 属性页] ，包括添加、修改和删除元数据属性，请使用模式编辑器。
 
 >[!NOTE]
 >
@@ -190,13 +190,13 @@ Adobe Enterprise Manager(AEM)资产允许您批量编辑许多集合的元数据
 
    >[!NOTE]
    >
-   >您为所选集合添加的元数据将覆盖这些集合的以前元数据，但标记除外。 您在“标记”字段中添 **[!UICONTROL 加的任何标记]** ，都会附加到元数据中的现有标记列表中。
+   >您为所选集合添加的元数据将覆盖这些集合的以前元数据，但标记除外。 您在“标记”字段中添 **[!UICONTROL 加的任何标记]** ，都会附加到元数据中标记的现有列表中。
 
-1. 要查看特定集合的元数据属性，请取消选择集合列表中的其余集合。 元数据编辑器字段会填充特定集合的元数据。
+1. 要视图特定集合的元数据属性，请在集合列表中取消选择其余的集合。 元数据编辑器字段会填充特定集合的元数据。
 
    >[!NOTE]
    >
-   >* 在收藏集属性页面中，可以通过取消选择收藏集从收藏集列表中删除收藏集。 集合列表默认选中所有集合。 您删除的集合的元数据不会更新。
+   >* 在集合属性页面中，可以通过取消选择集合来从集合列表中删除集合。 集合列表默认选中所有集合。 您删除的集合的元数据不会更新。
    >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
 
 
@@ -207,13 +207,13 @@ Adobe Enterprise Manager(AEM)资产允许您批量编辑许多集合的元数据
 您可以将一个收藏集添加到另一个收藏集中，从而创建嵌套式收藏集。
 
 1. 从收藏集控制台中，选择所需的收藏集或收藏集组，然后点按或单击工具 **[!UICONTROL 栏中的至收藏]** 。
-1. 从“添 **[!UICONTROL 加到收藏集]** ”页面中，选择要在其中添加收藏集的收藏集。
+1. 从“添 **[!UICONTROL 加到收藏集]** ”页面，选择要在其中添加收藏集的收藏集。
 
    >[!NOTE]
    >
    >默认情况下，最近更新的集合会在“添加到集合 **[!UICONTROL ”页面中处于选中]** 。
 
-1. 点按／单击 **[!UICONTROL 添加]**。 系统会显示一条消息，确认该集合已添加到“选择目标”页面中 **[!UICONTROL 的目标集合]** 。 关闭消息以完成该过程。
+1. 点按／单击 **[!UICONTROL 添加]**。 系统会显示一条消息，确认该集合已添加到“选择目标”页面中的 **[!UICONTROL 目标集合]** 。 关闭消息以完成该过程。
 
 >[!NOTE]
 >
@@ -236,22 +236,22 @@ Adobe Enterprise Manager(AEM)资产允许您批量编辑许多集合的元数据
 1. 在资产用户界面中，点按／单击工具栏中的搜索图标。
 
 1. 在“Omnisearch”（全搜索）字段中，按Enter键。
-1. 单击或点按GlobalNav图标以显示“滤镜”面板。
+1. 单击或点按GlobalNav图标以显示过滤器面板。
 1. 从保存 **[!UICONTROL 的搜索列表]** ，点按／单 **** 击要删除的智能收藏集旁边的删除。
 1. In the dialog, tap/click **[!UICONTROL Delete]** to delete the saved search.
 
 ## 对集合执行工作流 {#run-a-workflow-on-a-collection}
 
-您可以为集合中的资产运行工作流。 如果集合包含嵌套集合，则该工作流也会在嵌套集合中的资产上运行。 但是，如果集合和嵌套集合包含重复的资产，则此类资产只运行一次工作流。
+您可以为集合中的资产运行工作流。 如果集合包含嵌套集合，则该工作流也会在嵌套集合中的资产上运行。 但是，如果集合和嵌套集合包含重复资产，则此类资产只运行一次工作流。
 
 1. 从“收藏集”控制台中，选择要运行工作流的收藏集。
-1. 点按／单击GlobalNav图标，然后从列 **[!UICONTROL 表中选择]** “时间轴”。
+1. 点按／单击GlobalNav图标，然后从列表中 **[!UICONTROL 选择]** “时间轴”。
 1. 在时间轴中，单击或点按底部的尖角图标，然后点按／单击开始工 **[!UICONTROL 作流]**。
 1. 在&#x200B;**[!UICONTROL 启动工作流]**&#x200B;部分，从列表中选择工作流模型。例如，选择 **[!UICONTROL DAM 更新资产]**&#x200B;模型。
-1. 输入工作流的标题，然后点按／单击开 **[!UICONTROL 始]**。
+1. 输入工作流的标题，然后点按／单击 **[!UICONTROL 开始]**。
 1. 在对话框中，点按／单击继 **[!UICONTROL 续]**。 该工作流将在集合中的所有资产上运行。
 
 >[!MORELIKETHIS]
 >
->* [为集合创建审核任务](/help/assets/bulk-approval.md)
+>* [为集合创建审阅任务](/help/assets/bulk-approval.md)
 
