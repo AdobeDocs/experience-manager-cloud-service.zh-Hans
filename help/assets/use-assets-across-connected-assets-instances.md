@@ -3,14 +3,14 @@ title: 在 Adobe Experience Manager Sites 创作工作流程中，使用连接�
 description: 在另一个 Experience Manager Site 部署中创建网页时，使用远程 Adobe Experience Manager Assets 部署中的可用资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
 
 # 在 AEM Sites 中，使用连接的资产共享 DAM 资产 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。以下几个原因可能是地理上分散的现有部署，这些部署需要协同工作，或进行收购，从而导致父公司希望共同使用的异构基础结构。
+在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。其中一些原因可能是：地理上分散的部署需要协同工作；母公司希望整合因并购而导致的不同的基础环境；导致产生多层次的异构基础环境；企业的发展要求必须有专门的实例进行资产管理。
 
 AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需资产的数字资产管理 (DAM) 系统。AEM 现在可通过集成 AEM Sites 和 AEM Assets 来支持上述用例。
 
@@ -18,7 +18,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 
 在“页面编辑器”中编辑页面时，作者可以从其他 AEM Assets 部署中无缝搜索、浏览和嵌入资产。为此，AEM 管理员需要将 AEM Sites 的本地部署与 AEM Assets 的其他（远程）部署进行一次性集成。
 
-对于 Sites 作者，远程资产将以只读本地资产方式提供。该功能可支持一次无缝搜索和使用多个远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。
+对于 Sites 作者，远程资产将以只读本地资产方式提供。该功能可支持一次无缝搜索和使用多个远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。请参阅 [Assets 迁移指南](/help/assets/assets-migration-guide.md)。
 
 ### 先决条件与支持的部署 {#prerequisites}
 
@@ -37,7 +37,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 
 作者可以在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索到的资产。文档可添加到 `Download` 组件中，图像可添加到 `Image` 组件中。此外，作者还可以在任何自定义 AEM 组件（对默认 `Download` 或 `Image` 组件的扩展）中添加远程资产。支持的格式列表如下：
 
-* **图像格式**：可支持[图像组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)支持的图像格式。不支持 Dynamic Media 图像。
+* **图像格式**：可支持[图像组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html)支持的图像格式。不支持 Dynamic Media 图像。
 * **文档格式**：请参阅[连接的资产支持的文档格式](file-format-support.md#doc-formats)。
 
 ### 涉及的用户和组 {#users-and-groups-involved}
@@ -164,7 +164,7 @@ AEM 管理员可以创建此集成。创建后，使用该集成所需的权限�
 * 不获取元数据架构。
 * 所有 Sites 作者都拥有对获取的副本的读取权限，即便他们无权访问远程 DAM 部署。
 * 没有支持自定义集成的 API。
-* 该功能支持无缝搜索和使用远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。
+* 该功能支持无缝搜索和使用远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。请参阅 [Assets 迁移指南](assets-migration-guide.md)。
 * 单击[!UICONTROL 选择图像]，在[!UICONTROL 页面属性]的[!UICONTROL 缩略图]选项卡中，不能将远程资产用作网页的缩略图。
 
 **设置和许可**
