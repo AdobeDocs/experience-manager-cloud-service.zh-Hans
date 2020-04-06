@@ -1,15 +1,14 @@
 ---
-sub-product: AEM Assets as a Cloud Service
-user-guide-title: AEM Assets as a Cloud Service
-translation-type: ht
-source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
+sub-product: AEM Assets 云服务
+user-guide-title: AEM Assets 云服务
+translation-type: tm+mt
+source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
 
 ---
 
 
 # 资产 {#assets}
 
-+ [AEM Assets 云服务](/help/assets/home.md)
 + [概述和新增功能](overview.md)
 + [对 AEM Assets 云服务的显著更改](assets-cloud-changes.md)
 + [架构](architecture.md)
@@ -40,8 +39,8 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [资产的数字版权管理](drm.md)
 + 配置、管理和扩展资产 {#admin}
    + [API 和参考资料](developer-reference-material-apis.md)
+   + [配置资产共享](configure-asset-sharing.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
-   + [处理配置文件](/help/assets/dynamic-media/processing-profiles.md)
    + [多语言资产和资产翻译](translate-assets.md)
    + [搜索 Facet](search-facets.md)
    + [扩展资产编辑器](extend-asset-editor.md)
@@ -52,6 +51,9 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [XMP 元数据](xmp-metadata.md)
    + [媒体库功能](medialibrary.md)
    + [导入和导出资产元数据](metadata-import-export.md)
++ 共享和分发资产 {#brandportal}
+   + [使用Brand Portal配置AEM资产](configure-aem-assets-with-brand-portal.md)
+   + [将AEM资产发布到Brand Portal](publish-to-brand-portal.md)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
    + [管理内容片段](content-fragments/content-fragments-managing.md)
