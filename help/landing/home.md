@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager 云服务用户指南
 description: Adobe Experience Manager 云服务自助资源和文档链接
-translation-type: ht
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+translation-type: tm+mt
+source-git-commit: 587e60678bf92e2a0124da13d3c7fb492a5a7d4e
 
 ---
 
@@ -24,6 +24,8 @@ source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
 | [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager 云服务部署，包括开发部署主题。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将解决方案集成到 Experience Manager 云服务中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager 云服务的后端操作，如添加索引和维护任务。 |
+| [作为云服务移到AEM](/help/move-to-cloud-service/home.md) | 了解有助于将AEM作为云服务迁移到AEM的自助资源和工具。 |
+
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
