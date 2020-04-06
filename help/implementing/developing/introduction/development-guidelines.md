@@ -2,7 +2,7 @@
 title: AEM 云服务开发准则
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
+source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
 
 ---
 
@@ -27,23 +27,23 @@ source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
 
 ## 文件系统状态 {#state-on-the-filesystem}
 
-在AEM中，实例的文件系统不应用作云服务。 盘片是短暂的，当实例被循环使用时，盘片将被丢弃。 对与处理单个请求相关的临时存储使用文件系统是可能的，但不应滥用于大文件。 这是因为它可能会对资源使用配额产生负面影响，并且会遇到磁盘限制。
+在AEM中，实例的文件系统不应用作云服务。 盘片是短暂的，当实例被循环使用时，盘片将被丢弃。 对与处理单个请求相关的临时存储使用文件系统是可能的，但不应滥用于大型文件。 这是因为它可能会对资源使用配额产生负面影响，并且会遇到磁盘限制。
 
-例如，不支持文件系统使用，发布层应确保需要持续保留的任何数据都被发送到外部服务以用于长期存储。
+例如，不支持文件系统使用，发布层应确保需要持续保留的任何数据将发送到外部服务以进行长期存储。
 
 ## 观察 {#observation}
 
-类似地，由于异步发生的一切都像在观测事件上行动一样，它无法保证在本地执行，因此必须谨慎使用。 对于JCR事件和Sling资源事件，情况均是如此。 在发生变化时，该实例可被取下并由另一实例替换。 拓扑中当时处于活动状态的其他实例将能够对该事件做出响应。 但是，在这种情况下，这将不是一个地方性事件，如果领导人选举在进行中，甚至可能没有活跃的领导人。
+类似地，由于异步发生的一切都像在观测事件上行动一样，它无法保证在本地执行，因此必须谨慎使用。 JCR事件和Sling资源事件均是如此。 在发生变化时，该实例可被取下并由另一实例替换。 拓扑中当时处于活动状态的其他实例将能够对该事件做出响应。 但在这种情况下，这将不是地方事件，在事件颁布后，如果领导人选举正在进行，甚至可能没有积极的领导人。
 
 ## 后台任务和长时间运行的作业 {#background-tasks-and-long-running-jobs}
 
-作为后台任务执行的代码必须假设它正在运行的实例可以随时关闭。 因此，代码必须具有弹性，且大多数导入都可恢复。 这意味着，如果重新执行代码，它不应从头开始，而应从离开位置更近。 虽然这不是此类代码的新要求，但在AEM中，作为云服务，更有可能发生实例撤消。
+作为后台任务执行的代码必须假设它正在运行的实例可以随时关闭。 因此，代码必须具有弹性，且大多数导入都可恢复。 这意味着，如果代码重新执行，它不应从头开始再次开始，而是从离开位置更近。 虽然这不是此类代码的新要求，但在AEM中，作为云服务，更有可能发生实例撤消。
 
-为了尽可能减少麻烦，应尽可能避免长时间的工作，而且至少应该恢复这些工作。 要执行此类作业，请使用Sling Jobs,Sling Jobs具有至少一次保证，因此如果它们中断，将尽快重新执行。 但它们可能不应该从头开始。 为了调度此类作业，最好使用 [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) （作业调度程序），这样至少执行一次。
+为了尽可能减少麻烦，应尽可能避免长时间的工作，而且至少应该恢复这些工作。 要执行此类作业，请使用Sling Jobs,Sling Jobs具有至少一次保证，因此如果它们中断，将尽快重新执行。 但他们可能不应该从头开始再次开始。 为了安排此类作业，最好使用 [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 调度程序，这再次作为至少一次执行。
 
-Sling Commons Scheduler不应用于调度，因为执行无法保证。 只是，它更有可能被安排好。
+Sling Commons调度程序不应用于计划，因为无法保证执行。 只是，它更有可能被安排好。
 
-同样，由于异步发生的一切，如对观测事件（即JCR事件或Sling资源事件）采取行动，无法保证执行，因此必须谨慎使用。 目前的AEM部署已经如此。
+同样，由于异步发生的一切，如根据观察事件(即JCR事件或Sling资源事件)，无法保证执行，因此必须谨慎使用。 目前的AEM部署已经如此。
 
 ## 传出HTTP连接 {#outgoing-http-connections}
 
@@ -83,41 +83,11 @@ AEM中不支持将“发布到作者”反向复制为云服务。 如果需要�
 
 ### 日志 {#logs}
 
-对于本地开发，日志条目将写入文件夹中的本地 `/crx-quickstart/logs` 文件。
-
-在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-
-**设置日志级别**
-
-要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后完全重新部署。 由于这不是即时的，因此请务必小心在收到大量流量的生产环境中启用详细日志。 将来，可能会有一些机制来更快速地更改日志级别。
-
-> [!NOTE]
-> 
-> 要执行下列配置更改，您需要在本地开发环境中创建这些更改，然后将其作为云服务实例推送到AEM。 有关如何执行此操作的详细信息，请参 [阅将AEM部署为云服务](/help/implementing/deploying/overview.md)。
-
-**激活调试日志级别**
-
-默认日志级别为INFO，即DEBUG消息未记录。
-要激活调试日志级别，请设置
-
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
-
-要调试的属性。 不要将DEBUG日志级别的日志保留得比必需的时间长，因为它会生成大量日志。
-调试文件中的一行通常以DEBUG开头，然后提供日志级别、安装程序操作和日志消息。 例如：
-
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
-
-日志级别如下：
-
-| 0 | 致命错误 | 操作失败，安装程序无法继续。 |
-|---|---|---|
-| 1 | 错误 | 操作已失败。 安装将继续进行，但CRX的某部分安装不正确，将无法正常工作。 |
-| 2 | 警告 | 该操作已成功，但遇到问题。 CRX可能正常工作，也可能无法正常工作。 |
-| 3 | 信息 | 该操作已成功。 |
+有关如何使用日志的详细信息，请参阅日 [志记录文档](/help/implementing/developing/introduction/logging.md)。
 
 ### 线程转储 {#thread-dumps}
 
-云环境中的线程转储会持续收集，但此时无法以自助方式下载。 同时，如果调试问题时需要线程转储，请与AEM支持部门联系，指定确切的时间窗口。
+云环境上的线程转储会持续收集，但此时无法以自助方式下载。 同时，如果调试问题时需要线程转储，请与AEM支持部门联系，指定确切的时间窗口。
 
 ## CRX/DE Lite和系统控制台 {#crxde-lite-and-system-console}
 
@@ -129,7 +99,7 @@ AEM中不支持将“发布到作者”反向复制为云服务。 如果需要�
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-客户可以在开发环境中访问CRXDE lite，但不能在舞台或生产环境中访问。 不可变的存储库(`/libs`, `/apps`)无法在运行时写入，因此尝试写入将导致错误。
+客户可以在开发环境上访问CRXDE lite，但不能在舞台或生产上访问。 不可变的存储库(`/libs`, `/apps`)无法在运行时写入，因此尝试写入将导致错误。
 
 开发人员控制台中提供了一组工具，用于将AEM作为云服务开发人员环境进行调试，以用于开发、暂存和生产环境。 可以通过按如下方式调整作者或发布服务URL来确定URL:
 
@@ -159,7 +129,7 @@ AEM中不支持将“发布到作者”反向复制为云服务。 如果需要�
 
 ### AEM Staging和Production Service {#aem-staging-and-production-service}
 
-客户将无权访问用于暂存和生产环境的开发人员工具集。
+客户将无权访问用于分阶段和生产环境的开发人员工具。
 
 ### 性能监控 {#performance-monitoring}
 
