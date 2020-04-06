@@ -1,13 +1,13 @@
 ---
-title: 'AEM项目存储库结构包  '
+title: '开发存储库结构包   '
 description: Adobe Experience Manager作为云服务Maven项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
 
 ---
 
 
-# AEM项目存储库结构包
+# 开发存储库结构包
 
 使用Adobe Experience Manager作为云服务的项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。 这可确保在Experience Manager中作为云服务安装包时，JCR资源依赖关系会自动进行排序。 缺少依赖关系可能会导致子结构安装在其父结构之前，因此意外删除，从而中断部署的情况。
 
@@ -31,7 +31,7 @@ source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 
 更新该 `<filters>` 更新，以包含您的代码包部署到的所有JCR存储库路径根。
 
-确保将此新的Maven子项目添加到父项目列 `<modules>` 表。
+确保将此新的Maven子项目添加到父项目 `<modules>` 列表。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -51,9 +51,9 @@ source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>ui.apps.structure</artifactId>
+    <artifactId>my-app.repository-structure</artifactId>
     <packaging>content-package</packaging>
-    <name>UI Apps Structure - Repository Structure Package for /apps</name>
+    <name>My App - Adobe Experience Manager Repository Structure Package</name>
 
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the code packages in this project deploy into.
@@ -66,10 +66,6 @@ source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
-                <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
-                    <cloudManagerTarget>none</cloudManagerTarget>
-                </properties>
                 <configuration>
                     <properties>
                         <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
@@ -80,29 +76,14 @@ source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
 
-                        <!--
-                        Examples of complex roots
-
-
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
-
-                        For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
-
+                        <!-- Common overlay roots -->
+                        <filter><root>/apps/sling</root></filter>
                         <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/cq/core</root></filter>
-                        <filter><root>/apps/cq/core/content</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/tools</root></filter>
+                        <filter><root>/apps/dam</root></filter>
+                        <filter><root>/apps/wcm</root></filter>
 
-
-                        Any /apps level Context-aware configurations need to enumerated here. 
-                        
-                        For example, providing email templates under `/apps/settings/notification-templates/com.day.cq.replication` necessitates the following rules:
-
+                        <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>
-                        <filter><root>/apps/settings/notification-templates</root></filter>
-                        <filter><root>/apps/settings/notification-templates/com.day.cq.replication</root></filter>
-                        -->
 
                     </filters>
                 </configuration>
@@ -131,7 +112,7 @@ source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>my-app.repository-structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -143,7 +124,7 @@ source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
     <!-- Add the dependency for the repository structure package so it resolves -->
     <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>ui.apps.structure</artifactId>
+        <artifactId>my-app.repository-structure</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
     </dependency>
@@ -176,7 +157,7 @@ source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-这表示分段代码包的过滤器列 `<repositoryStructurePackage>` 表中没 `/apps/some/path` 有列表。
+这表示分段代码包的过滤器列表 `<repositoryStructurePackage>` 中没 `/apps/some/path` 有此列表。
 
 ## 其他资源
 
