@@ -437,7 +437,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 1. 在文件系统中，获取您选择的。tiff图像。 将其重命名 `myImage.tiff` 为并复制到 `/content/dam`其中，例如使用WebDAV。
 1. 例如，转 **[!UICONTROL 到CQ5 DAM]** 控制台 `http://localhost:4502/libs/wcm/core/content/damadmin.html`。
-1. 打开资 **[!UICONTROL 源myImage.tiff]** ，并验证已翻转的图像和三个缩略图是否已创建。
+1. 打开资 **[!UICONTROL 源myImage.tiff]** ，并验证翻转后的图像和三个缩略图是否已创建。
 
 #### 配置CommandLineProcess进程步骤 {#configuring-the-commandlineprocess-process-step}
 
@@ -457,7 +457,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
-   <td><p>可选参数。 该过程创建一个缩略图，其尺寸在参数中定义。</p> <p>可以定义多个缩略图。<br /> </p> </td>
+   <td><p>可选参数。 该过程创建一个缩略图，其尺寸在参数中定义。</p> <p>Several thumbnails can be defined.<br /> </p> </td>
   </tr>
   <tr>
    <td> cmd:&lt;命令&gt;</td>
@@ -470,7 +470,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-然后，在工作流运行时，该步骤仅应用于具有image/gif或mime:image/tiff作为mime类型的资产，它将创建翻转后的原始图像，将其转换为。jpg并创建具有尺寸的三个缩略图：140x100、48x48和10x250。
+then, when the workflow runs, the step only applies to assets that have image/gif or mime:image/tiff as mime-types, it creates a flipped image of the original, converts it into .jpg and creates three thumbnails that have the dimensions: 140x100, 48x48 and 10x250.
 
 使用以下 **进程参数** ，使用ImageMagick创建三个标准缩略图：
 
