@@ -3,7 +3,7 @@ title: 使用媒体处理函数和工作流处理资源
 description: 了解各种媒体处理程序以及如何在工作流中使用它们对资产执行任务。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager(AEM)资产附带一组用于处理资产的默认工作
 
 >[!NOTE]
 >
->有关AEM Assets支持的 [](file-format-support.md) 所有格式以及每种格式支持的功能的说明，请参阅资产支持的格式页面。
+>有关AEM [资产支持的所有格式](file-format-support.md) ，以及每种格式支持的功能的说明，请参阅资产支持的文件格式文章。
 
 ## 默认媒体处理函数 {#default-media-handlers}
 
@@ -407,7 +407,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 首先在承载AEM服务器的磁盘上安装ImageMagick:
 
-1. 安装ImageMagick:请参阅ImageMagick [文档](https://www.imagemagick.org/script/download.php)。
+1. 安装ImageMagick:请参 [阅ImageMagick文档](https://www.imagemagick.org/script/download.php)。
 1. 设置该工具，以便在命令行上运行转换。
 1. 要查看该工具是否正确安装，请在命令行中 `convert -h` 运行以下命令。
 
@@ -437,7 +437,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 1. 在文件系统中，获取您选择的。tiff图像。 将其重命名 `myImage.tiff` 为并复制到 `/content/dam`其中，例如使用WebDAV。
 1. 例如，转 **[!UICONTROL 到CQ5 DAM]** 控制台 `http://localhost:4502/libs/wcm/core/content/damadmin.html`。
-1. 打开资 **[!UICONTROL 源myImage.tiff]** ，并验证翻转后的图像和三个缩略图是否已创建。
+1. 打开资 **[!UICONTROL 源myImage.tiff]** ，并验证已翻转的图像和三个缩略图是否已创建。
 
 #### 配置CommandLineProcess进程步骤 {#configuring-the-commandlineprocess-process-step}
 
