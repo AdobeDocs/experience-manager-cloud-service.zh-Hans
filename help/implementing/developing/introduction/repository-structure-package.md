@@ -1,13 +1,13 @@
 ---
-title: '开发存储库结构包   '
+title: 'AEM 项目存储库结构包  '
 description: Adobe Experience Manager作为云服务Maven项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# 开发存储库结构包
+# AEM 项目存储库结构包
 
 使用Adobe Experience Manager作为云服务的项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根（项目的代码子包在其中部署）。 这可确保在Experience Manager中作为云服务安装包时，JCR资源依赖关系会自动进行排序。 缺少依赖关系可能会导致子结构安装在其父结构之前，因此意外删除，从而中断部署的情况。
 
@@ -51,9 +51,9 @@ source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>my-app.repository-structure</artifactId>
+    <artifactId>ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>My App - Adobe Experience Manager Repository Structure Package</name>
+    <name>UI Apps Structure - Repository Structure Package for /apps</name>
 
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the code packages in this project deploy into.
@@ -66,6 +66,10 @@ source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
+                <properties>
+                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
                 <configuration>
                     <properties>
                         <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
@@ -76,14 +80,29 @@ source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
 
-                        <!-- Common overlay roots -->
-                        <filter><root>/apps/sling</root></filter>
-                        <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/dam</root></filter>
-                        <filter><root>/apps/wcm</root></filter>
+                        <!--
+                        Examples of complex roots
 
-                        <!-- Immutable context-aware configurations -->
+
+                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+
+                        For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
+
+                        <filter><root>/apps/cq</root></filter>
+                        <filter><root>/apps/cq/core</root></filter>
+                        <filter><root>/apps/cq/core/content</root></filter>
+                        <filter><root>/apps/cq/core/content/nav/</root></filter>
+                        <filter><root>/apps/cq/core/content/nav/tools</root></filter>
+
+
+                        Any /apps level Context-aware configurations need to enumerated here. 
+                        
+                        For example, providing email templates under `/apps/settings/notification-templates/com.day.cq.replication` necessitates the following rules:
+
                         <filter><root>/apps/settings</root></filter>
+                        <filter><root>/apps/settings/notification-templates</root></filter>
+                        <filter><root>/apps/settings/notification-templates/com.day.cq.replication</root></filter>
+                        -->
 
                     </filters>
                 </configuration>
@@ -112,7 +131,7 @@ source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>my-app.repository-structure</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -124,7 +143,7 @@ source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
     <!-- Add the dependency for the repository structure package so it resolves -->
     <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>my-app.repository-structure</artifactId>
+        <artifactId>ui.apps.structure</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
     </dependency>
