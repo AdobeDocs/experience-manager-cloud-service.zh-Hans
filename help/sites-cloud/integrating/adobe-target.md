@@ -2,7 +2,7 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -34,11 +34,15 @@ source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
    * [通过Adobe I/O将AEM与Adobe Launch集成](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [了解AEM与Launch By Adobe的集成、分析和目标](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [配置活动](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):将您的活动与目标云配置关联。
-
 >[!NOTE]
 >
 >Launch by Adobe的IMS配置（技术帐户）在AEM中预配置为云服务。 用户不必创建此配置。
+
+1. [配置活动](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):将您的活动与目标云配置关联。
+
+>[!CAUTION]
+>
+>在AEM中，将优惠和活动从AEM同步到Adobe目标的复制代理在默认情况下处于禁用状态。 如果需要重 [新启用复制代理](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) ，请与Adobe支持团队联系。
 
 >[!NOTE]
 >
