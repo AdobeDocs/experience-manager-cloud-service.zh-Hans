@@ -2,14 +2,14 @@
 title: 将您的数字资产添加到Adobe Experience Manager
 description: 将您的数字资产作为云服务添加到Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 将数字资产添加到Adobe Experience Manager {#add-assets-to-experience-manager}
 
-将数字文件上传到Adobe Experience Manager后，将富元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了文件的二进制内容。 您可以将各种类型的文件（包括图像、PDF文件、原始文件等）从本地文件夹或网络驱动器上传到Experience Manager资产。
+Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了上传的数字文件的二进制内容。 您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到Experience Manager资产。
 
 提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager存储库的其他方法，包括桌面客户端（如Adobe Asset Link或Experience Manager桌面应用程序）、上传和摄取客户将创建的脚本以及作为AEM扩展添加的自动化摄取集成。
 
@@ -64,7 +64,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 > [!NOTE]
 >
-> 如果您需要将嵌套文件夹层次结构上传到AEM，请参阅批量 [上传资产](#bulk-upload)
+> 要将嵌套文件夹层次结构上传到AEM，请参 [阅批量上传资产](#bulk-upload)。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
