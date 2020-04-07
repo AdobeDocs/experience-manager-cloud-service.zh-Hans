@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: b0abce7f1d911123da37ba279a565c7608e5a4c5
 translation-type: tm+mt
 
 ---
@@ -19,25 +19,7 @@ translation-type: tm+mt
 
 ## 如何使用Contribute
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;HEADe希望尽可能轻松地提交您的稿件。 您可以通过两种方式进行贡献：
-=======
-=======
->>>>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======f6e5291的父项中……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======190577c的父项中……将分支“master”合并到分阶段您的贡献方式取决于您是谁以及要贡献的更改类型：
-
-
-
-
-
-> 
-
-### 创建期刊
->>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
-
-
-
-
-
-
+我们希望尽可能轻松地提交您的贡献。 您可以通过两种方式进行贡献：
 
 * [创建期刊](#create-an-issue)
 * [创建拉取请求](#create-a-pull-request)
@@ -45,7 +27,8 @@ translation-type: tm+mt
 您选择的方法取决于您自己在GitHub中编辑文档的舒适程度。
 
 >[!NOTE]
-您提交的稿件受 [Adobe使用条款的约束。](https://www.adobe.com/legal/terms.html)
+>
+>您提交的稿件受 [Adobe使用条款的约束。](https://www.adobe.com/legal/terms.html)
 
 ### 创建期刊 {#create-an-issue}
 
@@ -55,24 +38,7 @@ translation-type: tm+mt
 
 ### 创建拉取请求 {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD如果您发现问题并且知道如何解决它，请考虑创建拉请求。 拉取请求允许您对文档进行自己的编辑，文档随后将由AEM Docs团队成员进行审阅以包含在内。 只需单击任 **何页面右侧导航面板顶部的** “编辑此页面”链接，即可进行建议的更改并创建拉取请求。
-=======
->=======>
->>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======f6e5291的父项中……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======190577c的父项中……将分支“master”合并到分阶段
-
-
-
-
->> 
-
-### Adobe Employees的主要变化
->>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
-
-
-
-
-
-
+如果您发现问题并且确切了解如何解决它，请考虑创建拉取请求。 拉取请求允许您对文档进行自己的编辑，文档随后将由AEM Docs团队成员进行审阅以包含在内。 只需单击任 **何页面右侧导航面板顶部的** “编辑此页面”链接，即可进行建议的更改并创建拉取请求。
 
 所有拉取请求都必须随附已签名的 [参与者许可协议或CLA。](https://opensource.adobe.com/cla.html)这将允许 Adobe 在项目中再次分发您的贡献。您只需提交一次Adobe CLA，因此，如果您之前已提交过一个CLA，您就可以了！
 
@@ -82,42 +48,11 @@ translation-type: tm+mt
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;头
 ### Adobe员工的贡献
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD>您>您>您>您>您>您有关Adobead> `AdobeDocs`
+如果您是Adobe员工并且希望提出拉取请求，请使用上的专用存储库 `https://git.corp.adobe.com/AdobeDocs`。
 
-我们当然对您的任何贡献感到高兴，如果您的贡献是在公共存储库中提供的，我们将审查您的贡献，但是，从Adobe员工那里提取的请求更容易处理，并且可以在公司回购协议中更快地获得批准。 请确保只在公司回购协议中讨论任何专有信息。
-=======
->=======>
->>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======f6e5291的父项中……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======190577c的父项中……将分支“master”合并到分阶段
-
-
-
-
->> 
-
-## 工具和设置
-
-社区参与者可以使用GitHub UI进行基本编辑或将回购区分类为主要贡献。
-
-有关如 [何使用GitHub创作平台的概述，请参阅Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) 。
-
-## 如何使用标记设置主题的格式
-
-此存储库中的所有文章都使用GitHub调味的标记。 如果您不熟悉标记，请参阅：
-
-* [标记基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [可打印的标记下拉式清单](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## 标签
->>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
-
-
-
-
-
-
+有关问题，请随时使用公共存储库。
 
 ## 更多信息
 
