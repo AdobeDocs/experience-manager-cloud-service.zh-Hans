@@ -3,7 +3,7 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 # 开始使用资产微服务 {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-资产微型服务使用云服务提供可伸缩的、具有弹性的资产处理，这些服务由Adobe管理，以优化处理不同的资产类型和处理选项。
+资产微型服务使用云服务提供资产的可伸缩、弹性处理。 Adobe管理这些服务，以优化不同资产类型和处理选项。
 
-资产处理是根据处理用户档案中的配 **[!UICONTROL 置进行的]**，处理提供了默认设置，并允许管理员添加更具体的资产处理配置。 为了实现可扩展性和完全自定义，资产处理允许对后处理工作流进行可选配置，然后由管理员创建和维护这些配置。
+资产处理取决于处理用户档案中 **[!UICONTROL 的配置]**，后者提供了默认设置，并允许管理员添加更具体的资产处理配置。 管理员可以创建和维护后处理工作流的配置，包括可选自定义。 自定义工作流允许可扩展性和完全自定义。
 
-以下为Experience Manager中的云服务资产处理流程概述。
+资产处理的高级流程如下。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> 对于从Experience Manager的先前版本更新的客户——本节中介绍的资产处理将取代之前用于资产获取处理的“DAM更新资产”工作流模型。 大多数标准再现生成和元数据相关步骤都由资产Microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
+> 此处介绍的资产处理将替 `DAM Update Asset` 换Experience Manager先前版本中存在的工作流模型。 大多数标准再现生成和元数据相关步骤都由资产Microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
 
 ## 资产处理入门 {#get-started}
 
@@ -56,9 +54,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 默认配置 {#default-config}
 
-使用默认配置时，仅配 [!UICONTROL 置标准] 处理用户档案。 它是内置的，无法修改。 它始终执行，以确保应用程序所需的所有处理都正在进行。
+使用默认配置时，只配置标准处理用户档案。 标准处理用户档案在用户界面上不可见，您无法对其进行修改。 它始终执行以处理上传的资产。 标准处理用户档案可确保Experience Manager所需的所有基本处理均已完成。
 
-![processing-用户档案-标准](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 标准处理用户档案提供以下处理配置：
 
@@ -77,17 +75,18 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 
 每个处理用户档案配置都包括再现列表。 对于每个再现，您可以指定以下内容：
 
-* 演绎名
-* 再现格式（支持JPEG、PNG或GIF）
-* 再现宽度和高度（以像素为单位）（如果未指定，则假定原始图像的完全像素大小）
-* 以百分比表示的再现质量（对于JPEG）
-* 包含和排除的MIME类型定义了处理用户档案应用于的资产类型
+* 再现名称。
+* 支持的再现格式，如JPEG、PNG或GIF。
+* 再现宽度和高度（以像素为单位）。 如果未指定，则使用原始图像的全像素大小。
+* JPEG的再现质量（以百分比表示）。
+* 包含和排除的MIME类型用于定义用户档案的适用性。
 
 ![处理用户档案-添加](assets/processing-profiles-adding.png)
 
-当保存新的处理用户档案时，它会添加到已配置的处理列表中。 然后，这些处理用户档案可以应用到文件夹层次结构中的文件夹，以使它们对上传资产和在此处完成的资产有效。
+创建并保存新的处理用户档案时，该列表会添加到已配置的处理用户档案中。 您可以将这些处理用户档案应用到文件夹层次结构中的文件夹，以使它们对资产上传和资产处理有效。
 
-![处理用户档案-列表](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### 再现宽度和高度 {#rendition-width-height}
 
@@ -103,13 +102,13 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 
 #### 特殊FPO再现 {#special-fpo-rendition}
 
-处理用户档案可以包含特殊的“FPO再现”，当 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) （与Adobe InDesign一起使用）将指向资产的直接链接从Experience Manager放置到InDesign文档中时，会使用该再现。
+将AEM中的大型资产放入Adobe InDesign文档时，创意专业人士在放置资产后必须等待很 [长时间](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同时，用户无法使用InDesign。 这会中断创作流程，并对用户体验造成负面影响。 Adobe允许将小型再现临时放入InDesign文档中，以后可以用全分辨率资产按需替换。 Experience Manager提供仅用于放置(FPO)的再现。 这些FPO再现的文件大小较小，但长宽比相同。
 
-请参阅Adobe Asset Link文 [档](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) ，了解您是否需要为处理用户档案打开它。
+处理用户档案可以包括FPO（仅用于放置）再现。 请参阅Adobe Asset Link [文档](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) ，了解您是否需要为处理用户档案打开它。 有关详细信息，请参 [阅Adobe Asset Link完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
 
 ## 使用资产微服务处理资产 {#use-asset-microservices}
 
-创建其他处理用户档案后，需要将其应用到特定文件夹，Experience Manager才能在资产处理中使用这些处理区域，以处理在这些文件夹中上传或更新的资产。 始终执行内置的标准处理用户档案。
+为Experience Manager创建附加的自定义处理用户档案并将其应用到特定文件夹，以便处理上传到这些文件夹或更新到这些文件夹的资产。 默认的内置标准处理用户档案始终执行，但在用户界面上不可见。 如果添加自定义用户档案，则两个用户档案都用于处理上传的资产。
 
 有两种方法可将处理用户档案应用于文件夹：
 
@@ -149,15 +148,15 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 * 这种模型的最后一步必须是这 `DAM Update Asset Workflow Completed Process` 一步。 这是确保AEM知道处理已结束且资产可以标记为已处理（“新”）所必需的
 * 为自定义工作流运行器服务创建配置，该配置允许按路径（文件夹位置）或常规表达式配置后处理工作流模型的执行
 
-### 创建后处理工作流模型
+### 创建后处理工作流模型 {#create-post-processing-workflow-models}
 
-后处理工作流模型是常规的AEM工作流模型。 如果您需要对不同存储库位置或资产类型进行不同的处理，请创建不同的存储库。
+后处理工作流模型是常规的AEM工作流模型。 如果您需要对不同存储库位置或资产类型进行不同的处理，请创建不同的模型。
 
-应根据需要添加处理步骤。 您可以使用任何支持的现成步骤以及任何自定义实现的工作流步骤。
+应根据需要添加处理步骤。 您可以使用任何支持的步骤以及任何自定义实现的工作流步骤。
 
-每个后处理工作流的最后一步必须是 `DAM Update Asset Workflow Completed Process`。 这可确保资产正确标记为“已完成处理”。
+确保每个后处理工作流的最后一步是 `DAM Update Asset Workflow Completed Process`。 最后一步有助于确保Experience Manager了解资产处理何时完成。
 
-### 配置后处理工作流执行
+### 配置后处理工作流执行 {#configure-post-processing-workflow-execution}
 
 要配置在资产微型服务处理完成后为系统中上传或更新的资产执行的后处理工作流模型，需要配置自定义工作流运行器服务。
 
@@ -171,4 +170,4 @@ Asset Microservices在生成演绎版或提取元数据的能力方面支持各�
 >自定义工作流运行器的配置是OSGi服务的配置。 有关 [如何部署OSGi配置的信息，请参阅部署到Experience Manager](/help/implementing/deploying/overview.md) 。
 > 与AEM的内部部署和托管服务部署不同，OSGi Web控制台不直接在云服务部署中可用。
 
-有关详细信息，请参阅开发人员参考中的后处理工作流中的工作流步骤 [](developer-reference-material-apis.md#post-processing-workflows-steps) ，以了解在后处理工作流中可以使用哪些标准工作流步骤。
+有关在后处理工作流中可以使用哪个标准工作流步骤的详细信息，请参阅开发 [人员参考中的后处理工作流中的工作流步骤](developer-reference-material-apis.md#post-processing-workflows-steps) 。
