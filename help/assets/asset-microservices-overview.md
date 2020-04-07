@@ -48,11 +48,11 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * Experience Manager会向资产微型服务发送处理请求。 请求内容取决于Experience Manager中的处理用户档案配置，该配置指定了应生成哪些再现
 * Assets microservices后端接收该请求，并基于该请求将其调度到一个或多个MicroServices。 每个微服务都直接从二进制云存储中访问原始二进制。
 * 处理结果（如演绎版）存储在二进制云存储中。
-* Experience Manager会收到通知，该处理已完成，并有指向生成的二进制文件（演绎版）的直接指针，然后Experience Manager中会为上传的资产提供这些二进制文件
+* Experience Manager is notified that the processing is complete along with direct pointers to the generated binaries (renditions), which are then available in Experience Manager for the uploaded asset
 
 这是资产获取和处理的基本流程。 如果已配置，Experience Manager还可以开始客户的工作流模型以对资产进行后处理，例如，执行特定于客户环境的某些自定义步骤，如从客户的企业系统获取信息以添加到资产属性。
 
-摄取和处理流程是Experience Manager的资产微服务架构的主要概念。
+The ingestion and processing flow are key concepts of the asset microservices architecture for Experience Manager.
 
 * **直接二进制访问**:为Experience Manager环境配置后，资产会被传输（并上传）到Cloud Binary Store，然后AEM、资产微型服务，最后客户可以直接访问这些资产来执行工作。 这将网络负载和存储二进制文件的复制降至最低
 * **外部化处理**:资产处理在AEM环境之外完成，并保存其资源（CPU、内存），以便为最终用户提供关键数字资产管理功能并支持与系统进行交互式工作
