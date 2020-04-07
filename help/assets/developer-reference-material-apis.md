@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager作为云服务中用于数字资产管理的资
 description: 资产API允许执行基本的创建——读取——更新——删除(CRUD)操作，以管理资产，包括二进制、元数据、演绎版、注释和内容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -55,9 +55,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 * `(string) fileName`: 必填. 资产在实例中显示的名称。
 * `(number) fileSize`: 必填. 要上传的二进制文件的总长度（以字节为单位）。
 
-请注意，只要每个二进制文件都包含必填字段，单个请求就可以用于启动多个二进制文件的上载。
-
-如果成功，请求将以201状态代码和包含JSON数据的正文作为响应，格式如下：
+只要每个二进制文件都包含必填字段，单个请求就可用于启动多个二进制文件的上载。 如果请求成功，则请求会以状态 `201` 代码和包含以下格式JSON数据的正文作出响应：
 
 ```
 {
@@ -74,17 +72,17 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`:在二进制文件完成上传后应调用的URI。 这可以是绝对URI或相对URI，客户端应能够处理其中任何一个。 例如，该值可能是或 `"https://author.acme.com/content/dam.completeUpload.json"` (请参 `"/content/dam.completeUpload.json"` 阅完 [成上传](#complete-upload))。
-* `(string) folderPath`:上传二进制文件的文件夹的完整路径。
-* `(array) (files)`:元素列表，其长度和顺序将与初始化请求中提供的二进制信息列表的长度和顺序相匹配。
-* `(string) fileName`:相应二进制的名称，在启动请求中提供。 此值应包括在完整请求中。
-* `(string) mimeType`:相应二进制的MIME类型，如initiate请求中提供。 此值应包括在完整请求中。
-* `(string) uploadToken`:相应二进制文件的上传令牌。 此值应包括在完整请求中。
-* `(array) uploadURIs`:字符串的列表，其值为应将二进制内容上传到的完整URI(请参阅上 [传二进制](#upload-binary))。
-* `(number) minPartSize`:如果存在多个URI，则可能提供给uploadURI中任何一个的数据的最小长度（以字节为单位）。
-* `(number) maxPartSize`:如果存在多个URI，则可能提供给uploadURI中任何一个的数据的最大长度（以字节为单位）。
+* `completeURI` （字符串）:在二进制完成上传时调用此URI。 URI可以是绝对URI或相对URI，客户端应能够处理其中任何一个。 即，该值可以是或查 `"https://author.acme.com/content/dam.completeUpload.json"` 看完 `"/content/dam.completeUpload.json"` 成 [上传](#complete-upload)。
+* `folderPath` （字符串）:上传二进制文件的文件夹的完整路径。
+* `(files)` （阵列）:元素列表，其长度和顺序将与初始化请求中提供的二进制信息列表的长度和顺序相匹配。
+* `fileName` （字符串）:相应二进制的名称，在启动请求中提供。 此值应包括在完整请求中。
+* `mimeType` （字符串）:相应二进制的MIME类型，如initiate请求中提供。 此值应包括在完整请求中。
+* `uploadToken` （字符串）:相应二进制文件的上传令牌。 此值应包括在完整请求中。
+* `uploadURIs` （阵列）:字符串的列表，其值为应将二进制内容上传到的完整URI(请参阅上 [传二进制](#upload-binary))。
+* `minPartSize` （数字）:如果存在多个URI，则可能提供给uploadURI中任何一个的数据的最小长度（以字节为单位）。
+* `maxPartSize` （数字）:如果存在多个URI，则可能提供给uploadURI中任何一个的数据的最大长度（以字节为单位）。
 
 ### 上传二进制文件 {#upload-binary}
 
@@ -129,7 +127,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### 已弃用的资产上传API {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 对于Experience Manager作为云服务，仅支持新的上传API。 已弃用Experience Manager 6.5中的API。
