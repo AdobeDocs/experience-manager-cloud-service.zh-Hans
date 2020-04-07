@@ -79,7 +79,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    >
    >要创建标记，您必须在CRX存储库的路 `/content/cq:tags/default` 径上具有写入权限。
 
-1. 要视图资产的使用情况统计信息，请单击／点按“ **[!UICONTROL 分析]** ”选项卡。
+1. 要视图资产的使用情况统计信息，请单击／点按 **[!UICONTROL Insights]** 选项卡。
 
    使用情况统计信息包括：
 
