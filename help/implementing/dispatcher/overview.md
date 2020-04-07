@@ -9,7 +9,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # 云中的调度程序 {#Dispatcher-in-the-cloud}
 
-## Apache和Dispatcher配置和测试 {#apache-and-dispatcher-configuration-and-testing}
+## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
 本节介绍如何将AEM构建为Cloud Service Apache和Dispatcher配置，以及如何在部署到云环境之前在本地验证并运行它。 它还描述了在Cloud环境中进行调试。 有关Dispatcher的其他信息，请参阅 [AEM Dispatcher文档](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)。
 
@@ -18,11 +18,11 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 调度程序工具 {#dispatcher-sdk}
 
-调度程序工具作为云服务SDK是整个AEM的一部分，它提供：
+The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and provide:
 
 * 包含要包含在调度程序的主项目中的配置文件的vanila文件结构；
-* 客户在本地验证调度程序配置的工具；
-* 在本地调度程序启动的Docker映像。
+* Tooling for customers to validate a dispatcher configuration locally;
+* A Docker image that brings up the dispatcher locally.
 
 ## 下载和提取工具 {#extracting-the-sdk}
 
@@ -94,7 +94,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/rewrites/rewrite.rules`
 
-此文件包含在文件 `.vhost` 中。 它有一套重写规则 `mod_rewrite`。
+此文件包含在文件 `.vhost` 中。 It has a set of rewrite rules for `mod_rewrite`.
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-您可以拥有一个或多个这些文件，它们包含的群与主机名匹配并允许调度程序模块使用不同的规则处理每个群。 文件在目录中创建， `available_farms` 并在目录中启用符号链 `enabled_farms` 接。 从文件 `.farm` 中，将包括过滤器、缓存规则等其他文件。
+您可以拥有一个或多个这些文件，它们包含的群与主机名匹配并允许调度程序模块使用不同的规则处理每个群。 文件在目录中创建， `available_farms` 并在目录中启用符号链 `enabled_farms` 接。 From the `.farm` files, other files like filters, cache rules and others will be included.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -162,7 +162,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
-默认请求标头可转发到后端，适用于标准项目。 如果需要自定义，请修改 `clientheaders.any`。 在自定义中，您仍可以首先包含默认的请求标头（如果它们符合您的需求）。
+默认请求标头可转发到后端，适用于标准项目。 如果需要自定义，请修改 `clientheaders.any`。 In your customization, you can still include the default request headers first, if they suit your needs.
 
 * `conf.dispatcher.d/dispatcher.any`
 
@@ -234,9 +234,9 @@ Whitelisted directives:
 
 白名单中包含一列表客户配置中允许的Apache指令。 如果指令未列入白名单，则该工具将记录一个错误并返回非零的退出代码。 如果命令行上没有提供白名单（这是应调用该白名单的方式），则该工具会使用默认白名单，Cloud Manager将在部署到云环境之前使用该白名单进行验证。
 
-此外，它还使用模式扫描所有文 `conf.dispatcher.d/enabled_farms/*.farm` 件并检查：
+Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
 
-* 不存在允许通过的过滤器规 `/glob` 则(请参 [阅CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) )
+* No filter rule exists that uses allows via `/glob` (see [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) for more details)
 * 不公开任何管理功能。 例如，访问路径，如 `/crx/de or /system/console`。
 
 当针对主对象或子目录运行时， `dispatcher/src` 它将报告验证失败：
@@ -550,7 +550,7 @@ Enter directory `conf.dispatcher.d/cache`.
 
 删除任何前缀的文件 `ams_`。
 
-如果 `conf.dispatcher.d/cache` 现在为空，请将文件从标 `conf.dispatcher.d/cache/rules.any`准调度程序配置复制到此文件夹。 此SDK的文件夹中可找到标准调度 `src` 程序配置。 不要忘记也要调整引用`$include` 农场文件中 `ams_*_cache.any` 的规则文件的语句。
+如果 `conf.dispatcher.d/cache` 现在为空，请将文件从标准调 `conf.dispatcher.d/cache/rules.any`度程序配置复制到此文件夹。 此SDK的文件夹中可找到标准调度 `src` 程序配置。 不要忘记也要调整引用`$include` 农场文件中 `ams_*_cache.any` 的规则文件的语句。
 
 如果现 `conf.dispatcher.d/cache` 在包含带后缀的单个文件，则应将其重命名为 `_cache.any`，并且不要忘记在农场文件中改编 `rules.any``$include` 引用该文件的语句。
 
