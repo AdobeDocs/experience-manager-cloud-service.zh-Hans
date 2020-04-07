@@ -3,7 +3,7 @@ title: Experience Manager资产作为云服务支持的文件格式和MIME类型
 description: Experience Manager资产作为云服务支持的文件格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
