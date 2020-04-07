@@ -2,7 +2,7 @@
 title: 发布 Dynamic Media 资产
 description: 如何发布Dynamic Media资产
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. 在发布Dynamic Media资产后，您可以通过URL或通过嵌入方式将其包含在网页中。
 
-您还可以立即发布上传的资产，无需任何用户干预。 See [Configuring Dynamic Media](config-dm.md).
+您还可以立即发布上传的资产，无需任何用户干预。 或者，您也可以选择性发布这些资产。 See [Configuring Dynamic Media](config-dm.md).
 
 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，资产名称的正下方会显示一个小地球图标，指示资产已发布。在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
