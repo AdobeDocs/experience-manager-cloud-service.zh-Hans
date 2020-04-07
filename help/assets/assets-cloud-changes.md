@@ -1,15 +1,15 @@
 ---
 title: Adobe Experience Manager资产作为云服务的显着变化
-description: 与Experience Manager 6.5相比，AEM Cloud服务中对Adobe Experience Manager资产的显着更改
+description: 与Adobe Experience Manager 6.5相比，AEM Cloud服务中对Adobe Experience Manager Assets的显着更改。
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager作为云服务，为管理AEM项目提供了许多新功能和可能性。 但是，与作为云服务的Experience Manager相比，Experience Manager资产在预置或Adobe Managed Service中存在许多差异。 本文档重点介绍了这些重要差异。
+Adobe Experience Manager作为云服务，为管理AEM项目提供了许多新功能和可能性。 但是，与作为云服务的Experience Manager相比，Experience Manager资产在内部部署或在Adobe Managed Service中存在许多差异。 本文档重点介绍了这些重要差异。
 
 >[!NOTE]
 >
@@ -22,15 +22,15 @@ Adobe Experience Manager作为云服务，为管理AEM项目提供了许多新�
 
 ## 资产摄取 {#asset-ingestion}
 
-资产上传已经过优化，可提高效率，从而更好地扩展资产摄取和更快地上传。 产品功能（Web用户界面、桌面客户端）已更新。 但是，这可能会影响一些现有的自定义代码。
+资产上传已经过优化，通过更好地扩展资产摄取和更快的上传，提高了效率。 产品功能（Web用户界面、桌面客户端）已更新。 但是，这可能会影响一些现有的自定义。
 
-* Experience Manager使用直接二进制访问原则上传和下载资产，并使用资产微服务进行资产处理。 请参阅 [资产摄取概述](/help/assets/asset-microservices-overview.md)
-   * 通过直接二进制 [访问上传资产](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)
-   * 有关技术详细信息，请参 [阅直接二进制上传协议和API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)
-* AEM 早期版本中的默认工作流程 **[!UICONTROL DAM 资产更新]**&#x200B;不再可用。相反，资产微型服务提供了可扩展的、随时可用的服务，涵盖大多数默认资产处理(演绎版、元数据提取、文本提取)
+* Experience Manager使用直接二进制访问原则上传和下载资产，并使用资产微服务进行资产处理。 请参阅 [资产摄取概述](/help/assets/asset-microservices-overview.md)。
+   * 通过直接 [二进制访问上传资产](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
+   * 有关技术详细信息，请参 [阅直接二进制上传协议和API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)。
+* AEM 早期版本中的默认工作流程 **[!UICONTROL DAM 资产更新]**&#x200B;不再可用。相反，资产微型服务提供了可扩展的、随时可用的服务，涵盖大多数默认资产处理(演绎版、元数据提取、用于索引的文本提取)。
    * 请参阅 [配置和使用资产微服务](/help/assets/asset-microservices-configure-and-use.md)
-   * 要在处理中实现自定义的工作流步骤， [可使用后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 。
-* 通过包管理器输入的资产需要使用“资产”界面中的&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作执行手动重新处理。
+   * 要在处理中具有自定义的工作流步骤， [可以使用后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 。
+* Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
 
 使用资产微服务生成的标准演绎版以向后兼容的方式存储在资产存储库节点中（相同的命名约定）。
 
