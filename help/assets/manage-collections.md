@@ -4,7 +4,7 @@ description: 了解Adobe Experience Manager资产中的集合概念。 了解如
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -170,7 +170,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 1. 从收藏集控制台中，选择一个或多个要下载的收藏集。
 1. 在工具栏中，点按／单击下载图标。
-1. 在“下 **[!UICONTROL 载]** ”对话框中，点按／单 **[!UICONTROL 击下载]**。 如果要下载集合中资产的演绎版，请选择演 **[!UICONTROL 绎版]**。 选择“电 **[!UICONTROL 子邮件]** ”选项，向集合所有者发送电子邮件通知。
+1. 在“下 **[!UICONTROL 载]** ”对话框中，点按／单 **[!UICONTROL 击下载]**。 如果要下载集合中资产的演绎版，请选择演 **[!UICONTROL 绎版]**。 <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    当您选择要下载的集合时，将下载集合下的完整文件夹层次结构。 要将您下载的每个集合（包括嵌套在父集合下的子集合中的资产）包含在单个文件夹中，请为每个资 **[!UICONTROL 产选择创建单独的文件夹]**。
 
