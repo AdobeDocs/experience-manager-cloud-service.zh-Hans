@@ -55,7 +55,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
    See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
 
-1. （可选）查 [看使用批集预设](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) 创建的图像集。
+1. (Optional) [Viewing Image Sets](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) that were created using batch set presets.
 1. [预览图像集。](/help/assets/dynamic-media/previewing-assets.md)
 
    选择图像集后，您便可以预览该图像集。单击缩略图图标可在选定的查看器中检查图像集。您可以从左边栏下拉菜单中 **[!UICONTROL 的]** “查看器”菜单中选择不同的查看器。
