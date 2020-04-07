@@ -24,7 +24,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 资产处理取决于处理用户档案中 **[!UICONTROL 的配置]**，后者提供了默认设置，并允许管理员添加更具体的资产处理配置。 管理员可以创建和维护后处理工作流的配置，包括可选自定义。 自定义工作流允许可扩展性和完全自定义。
 
-资产处理的高级流程如下。
+资产处理的高层流程如下。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
