@@ -266,7 +266,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. In the lower-right corner of the page, tap **[!UICONTROL Save]**.
 
-   此时，您可以关闭打开Adobe Experience Manager Web Console配置页面的浏览器选项卡。
+   此时，您可以关闭打开Adobe Experience Manager Web Console“配置”页面的浏览器选项卡。
 
 1. 返回至打开AEM控制台的浏览器选项卡。
 1. From AEM, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
