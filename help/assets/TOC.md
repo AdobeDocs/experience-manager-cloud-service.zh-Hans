@@ -2,7 +2,7 @@
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 translation-type: tm+mt
-source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
+source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
 
 ---
 
@@ -52,11 +52,11 @@ source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
    + [XMP 元数据](xmp-metadata.md)
    + [媒体库功能](medialibrary.md)
    + [导入和导出资产元数据](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;头&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;头=======
+&lt;&lt;&lt;&lt;&lt;&lt;头&lt;&lt;&lt;&lt;&lt;&lt;&lt;头&lt;&lt;&lt;&lt;&lt;&lt;头&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;头=======
 + 共享和分发资产 {#brandportal}
    + [使用Brand Portal配置AEM资产](configure-aem-assets-with-brand-portal.md)
    + [将AEM资产发布到Brand Portal](publish-to-brand-portal.md)
->>>>>>>>>>733b637的母公司……更新目录=======da6a8ae的父项……在云中配置Brand Portal与AEM资产
+>>>>>>>>>>733b637的母公司……更新目录=======da6a8ae的父项……在云上为AEM资产配置Brand Portal======da6a8ae的父项……在云中配置Brand Portal与AEM资产
 
 
 
