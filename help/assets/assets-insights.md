@@ -3,16 +3,14 @@ title: 资产分析
 description: 了解资产分析功能如何让您跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用统计信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# 资产分析{#asset-insights}
+# 资产分析 {#asset-insights}
 
-<!-- TBD: Add uicontrol tags  -->
-
-通过资产分析功能，您可以跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用统计信息。 它有助于获得有关其性能和受欢迎程度的洞察。
+Asset Insights跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用统计信息。 它有助于提供有关图像性能和受欢迎程度的洞察。
 
 Assets Insights可捕获用户活动详细信息，如对图像进行评级、点击次数和展示次数（在网站上加载图像的次数）。 它会根据这些统计信息为图像分配分数。 您可以使用分数和性能统计信息来选择要包含在目录、营销活动等中的流行图像。 您甚至可以根据这些统计数据制定存档和许可证续订策略。
 
@@ -38,10 +36,10 @@ Assets Insights可捕获用户活动详细信息，如对图像进行评级、�
 
 1. 查看“使 **[!UICONTROL 用统计数据]** ”部分，了解资产所属的实体以及最近使用的创意解决方案。 使用率越高，资产在用户中受欢迎的可能性就越大。 使用数据显示在以下标题下：
 
-   * **资产**:资产加入集合或复合资产的次数
-   * **Web和移动**:资产加入网站和应用程序的次数
-   * **社交**:在解决方案(如Adobe Social和Adobe Campaign)中使用资产的次数
-   * **电子邮件**:资产在电子邮件活动中的使用次数
+   * **[!UICONTROL 资产]**:资产加入集合或复合资产的次数。
+   * **[!UICONTROL Web和移动]**:资产加入网站和应用程序的次数。
+   * **[!UICONTROL 社交]**:在解决方案(如Adobe Social和Adobe Campaign)中使用资产的次数。
+   * **[!UICONTROL 电子邮件]**:资产在电子邮件活动中的使用次数。
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
@@ -95,6 +93,7 @@ Adobe Experience Manager(AEM)资产可从Adobe Analytics获取第三方网站使
 1. 在向导中，选择一个数据中心并提供您的凭据，包括您的单位名称、用户名和共享机密。
 
    ![在AEM中为资产分析配置Adobe Analytics](assets/insights_config2.png)
+
    *图：在AEM中为资产分析配置Adobe Analytics*
 
 1. 单击／点按 **[!UICONTROL 身份验证]**。在AEM验证您的凭据后，从报 **[!UICONTROL 表包列表中]** ，选择Adobe Analytics报表包，您希望资产分析从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
