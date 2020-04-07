@@ -2,13 +2,14 @@
 sub-product: AEM 云服务入门
 user-guide-title: AEM 云服务入门
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 入门 {#onboarding}
 
++ [AEM 云服务入门](/help/onboarding/home.md)
 + 先决条件 {#what-is-required}
    + [已授予的访问权限](what-is-required/access-rights-granted.md)
    + [添加用户和角色](what-is-required/add-users-roles.md)
