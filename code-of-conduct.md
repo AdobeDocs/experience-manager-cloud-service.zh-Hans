@@ -1,5 +1,5 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
 translation-type: tm+mt
 
 ---
@@ -45,5 +45,13 @@ translation-type: tm+mt
 
 ## 归因
 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD此行为准则适用于《投稿人公约》第1.4版( [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org))的 [规定](https://contributor-covenant.org/version/1/4/)。
+=======
 本行为准则根据《投稿人公约》第1.4版( [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org))进行修 [订](https://contributor-covenant.org/version/1/4/)
+>>>>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
 
+
+
+
+
+> 
