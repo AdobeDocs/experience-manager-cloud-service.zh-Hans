@@ -1,9 +1,9 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 translation-type: tm+mt
 
 ---
-# Adobe Experience Manager文档贡献指南
+# AEM文档贡献准则
 
 ## AEM文档理念
 
@@ -17,7 +17,7 @@ AEM文档的目标是尽快将文档交给AEM用户。 因此，我们优先考�
 
 ## 文档标准
 
-虽然我们欢迎对我们的文档做出贡献，但对AEM文档的任何贡献（以拉取请求或问题的形式）必须符合我们的贡献和文档标准。
+虽然我们欢迎对我们的文档做出贡献，但对AEM文档的任何贡献（以拉取请求或问题的形式）应符合我们的贡献和文档标准。
 
 不符合这些标准的捐款可以被拒绝。
 
@@ -33,23 +33,23 @@ AEM文档涵盖标准用例。 因此，通常不会记录bug、bug引起的效�
 
 ### 文档贡献不用于回答技术问题。
 
-您可能必须改进AEM文档的任何想法均欢迎作为贡献。 但是，评论、问题和拉取请求仅用于 *稿件* 。 它们不用于回答您有关如何使用AEM或解决技术问题的问题。
+您可能必须改进AEM文档的任何想法均欢迎作为贡献。 但是，评论、问题和拉取请求仅用于 *稿件* 。 它们不用于回答您有关如何使用AEM、实施AEM项目或解决技术问题的问题。
 
-如果您对AEM的使用或技术错误有任何疑问，应通过 [Experience Cloud Enterprise Support门户通过常规支持流程报告](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) ，或在 [Experience Manager社区中讨论](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)。
+如果您对AEM使用或技术错误有任何疑问，应通过 [Experience Manager支持门户通过常规支持流程报告](https://daycare.day.com/home.html) ，或在 [Experience Manager社区中讨论](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)。
 
-***AEM文档稿件不是Adobe客户关怀的替代品*** ，任何此类稿件将被拒绝，以寻求与支持相关的问题的答案。
+***AEM 文档稿件不是 Adobe 支持的替代品***，此类寻求支持相关问题答案的任何稿件都将被拒绝。
 
 ### 稿件必须明确引用受影响的文档页面。
 
 如果创建问题以建议对文档进行改进，则必须包含指向受影响页面的链接。 如果使用文档页面上的“编 **辑此页面** ”链接创建期刊，则会自动创建该期刊并包含指向该页面的链接。
 
-这不适用于拉取请求，因为拉取请求按定义包括受影响的页面。
+这不适用于拉取请求，因为按其性质引用受影响页面的拉取请求。
 
 ## 文档准则
 
 我们要求对我们的文档所做的任何贡献都遵循某些风格准则。
 
-遵循这些准则可以更轻松地审阅您的贡献，因此可以更快地集成到我们的文档中。 然而，不遵守或未完全遵守这些准则并不意味着将拒绝这些贡献。
+遵循这些准则可以更轻松地审阅您的贡献，因此可以更快地集成到我们的文档中。
 
 ### 语言和样式
 
