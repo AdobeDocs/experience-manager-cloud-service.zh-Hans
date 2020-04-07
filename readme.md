@@ -1,11 +1,11 @@
 ---
-source-git-commit: 06351c5fa81d9841f47c086cdbc66c0c1d1cb5cc
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 translation-type: tm+mt
 
 ---
 # Adobe Experience Manager Cloud服务文档
 
-这是 [!UICONTROL Adobe Experience Manager] Cloud Service文档的存储库。 本文档涵盖安装、管理、创作使用以及如何使用云服务自定义AEM。
+这是Adobe Experience Manager云服务文档的存储库。 本文档涵盖安装、管理、创作使用以及如何使用云服务自定义AEM。
 
 欢迎您对文档做出贡献。 请参阅以下资源：
 
