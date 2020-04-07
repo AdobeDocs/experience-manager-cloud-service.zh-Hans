@@ -2,7 +2,7 @@
 title: 管理环境-云服务
 description: 管理环境-云服务
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -37,9 +37,6 @@ source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 
 1. 用户单击“添 **加环境** ”按钮可添加环境。
-
-   >[!NOTE]
-   >此按钮也可从环境页面或环境卡访问。 作为用户，您将仅在拥有必要权限时看到此选项。 如果您有任何疑问，请与Adobe代表联系。
 
    ![](assets/add-environment.png)
 
