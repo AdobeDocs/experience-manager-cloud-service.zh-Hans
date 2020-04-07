@@ -3,7 +3,7 @@ title: 资产报表
 description: 本文介绍有关AEM资产中资产的各种报表，以及如何生成报表。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ AEM资产报告框架利用Sling作业以有序方式异步处理报表请求。
 
 报表管理界面直观，包括用于访问存档报表和视图报表运行状态（成功、失败和已排队）的细粒度选项和控件。
 
-生成报告后，您会通过电子邮件（可选）和收件箱通知收到通知。 您可以从报告列表页面视图、下载或删除报告，其中显示所有以前生成的报告。
+生成报告后，您会收到收件箱通 <!-- through an email (optional) and --> 知的通知。 您可以从报告列表页面视图、下载或删除报告，其中显示所有以前生成的报告。
 
 ## 生成报告 {#generate-reports}
 
@@ -79,7 +79,7 @@ AEM管理员可以轻松生成和自定义这些报告以用于您的实施。 �
 
    ![files_report](assets/files_report.png)
 
-   **[!UICONTROL 链接共享]**&#x200B;报表显示 AEM Assets 中与外部用户共享的资产的 URL。其中包括共享资产的用户的电子邮件 ID、接受共享资产的用户的电子邮件 ID、链接的共享日期和到期日期。列不可自定义。
+   **[!UICONTROL 链接共享]**&#x200B;报表显示 AEM Assets 中与外部用户共享的资产的 URL。<!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->列不可自定义。
 
    **[!UICONTROL 链接共享]**&#x200B;报表不包括子文件夹和呈现形式的选项，因为它仅发布显示在 */var/dam/share* 下的共享 URL。
 
