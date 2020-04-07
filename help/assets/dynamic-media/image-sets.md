@@ -2,7 +2,7 @@
 title: 图像集
 description: 了解如何在Dynamic Media中使用图像集
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -78,7 +78,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ## 上传图像集中的资产 {#uploading-assets-in-image-sets}
 
-首先为图像集上传图像。由于用户可以在图像集查看器中缩放图像，因此在选择图像时，请考虑缩放因素。确保图像的最大尺寸至少为2000像素。图像集支持很多种图像文件格式，但建议使用无损的 TIFF、PNG 和 EPS 图像。
+首先为图像集上传图像。由于用户可以在图像集查看器中缩放图像，因此在选择图像时，请考虑缩放因素。确保图像的最大尺寸至少为2000像素，以获得最佳缩放细节。 Dynamic Media可渲染每幅高达2500万像素的图像。 例如，您可以使用5000 x 5000兆像素图像或任何其他最高2500万像素的大小组合。
+
+图像集支持很多种图像文件格式，但建议使用无损的 TIFF、PNG 和 EPS 图像。
 
 You can upload images for Image Sets as you would [upload any other asset in Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
