@@ -19,10 +19,10 @@ translation-type: tm+mt
 
 ## 如何使用Contribute
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEADe希望尽可能轻松地提交您的稿件。 您可以通过两种方式进行贡献：
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;HEADe希望尽可能轻松地提交您的稿件。 您可以通过两种方式进行贡献：
 =======
 =======
->>>>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中您的贡献方式取决于您是谁以及要贡献的更改类型：
+>>>>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======f6e5291的父项中……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中您的贡献方式取决于您是谁以及要贡献的更改类型：
 
 
 
@@ -55,15 +55,15 @@ translation-type: tm+mt
 
 ### 创建拉取请求 {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD如果您发现问题并且确切了解如何解决它，请考虑创建拉请求。 拉取请求允许您对文档进行自己的编辑，文档随后将由AEM Docs团队成员进行审阅以包含在内。 只需单击任 **何页面右侧导航面板顶部的** “编辑此页面”链接，即可进行建议的更改并创建拉取请求。
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEADHEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;:HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 拉取请求允许您对文档进行自己的编辑，文档随后将由AEM Docs团队成员进行审阅以包含在内。 只需单击任 **何页面右侧导航面板顶部的** “编辑此页面”链接，即可进行建议的更改并创建拉取请求。
 =======
-=======
->>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
+>=======>
+>>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======f6e5291的父项中……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
 
 
 
 
-
+>> 
 
 ### Adobe Employees的主要变化
 >>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
@@ -85,12 +85,12 @@ translation-type: tm+mt
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;头
 ### Adobe员工的贡献
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;如果您是Adobe员工并有贡献，请在公司git中 `AdobeDocs` 使用组织。
+&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD如果您是Adobe员工并且有贡献，请在公司git中使用 `AdobeDocs` 组织。
 
 我们当然对您的任何贡献感到高兴，如果您的贡献是在公共存储库中提供的，我们将审查您的贡献，但是，从Adobe员工那里提取的请求更容易处理，并且可以在公司回购协议中更快地获得批准。 请确保只在公司回购协议中讨论任何专有信息。
 =======
 =======
->>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
+>>>>>>>f6e5291的父代……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“staging”合并到staging=======f6e5291的父项中……将https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支“暂存”合并到暂存中
 
 
 
