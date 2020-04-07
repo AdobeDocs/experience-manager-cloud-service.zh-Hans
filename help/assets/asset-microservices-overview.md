@@ -3,7 +3,7 @@ title: 了解资产微型服务如何处理云中的数字资产
 description: 使用云本机、可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -13,10 +13,9 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
-Adobe Experience Manager作为云服务，提供了利用Experience Manager应用程序和功能的云本机方式。 此新架构的关键元素之一是资产摄取和处理，由资产微服务提供支持。
+Adobe Experience Manager作为云服务，提供了一种利用Experience Manager应用程序和功能的云本机方式。 此新架构的关键元素之一是资产摄取和处理，由资产微服务提供支持。
 
 资产微型服务使用云服务提供可伸缩的、具有弹性的资产处理，这些服务由Adobe管理，以优化处理不同的资产类型和处理选项。 主要优势包括：
 
@@ -51,12 +50,12 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * 处理结果（如演绎版）存储在二进制云存储中。
 * Experience Manager会收到通知，该处理已完成，并有指向生成的二进制文件（演绎版）的直接指针，然后Experience Manager中会为上传的资产提供这些二进制文件
 
-这是资产获取和处理的基本流程。 如果已配置，Experience Manager还可以开始客户的工作流模型以对资产进行后处理——例如，执行特定于客户环境的某些自定义步骤，如从客户的企业系统中获取信息以添加到资产属性。
+这是资产获取和处理的基本流程。 如果已配置，Experience Manager还可以开始客户的工作流模型以对资产进行后处理，例如，执行特定于客户环境的某些自定义步骤，如从客户的企业系统获取信息以添加到资产属性。
 
-摄取和处理流程显示了Experience Manager的资产微服务架构所利用的几个关键概念：
+摄取和处理流程是Experience Manager的资产微服务架构的主要概念。
 
-* **直接二进制访问** -在为Experience Manager环境配置后，资产会被传输（并上传）到Cloud Binary Store，然后AEM、资产微型服务和客户端可以直接访问它们来执行工作。 这将网络负载和存储二进制文件的复制降至最低
-* **外部化处理** -在AEM环境之外完成资产处理，并节省其资源（CPU、内存），以便为最终用户提供关键数字资产管理功能并支持与系统的交互式工作
+* **直接二进制访问**:为Experience Manager环境配置后，资产会被传输（并上传）到Cloud Binary Store，然后AEM、资产微型服务，最后客户可以直接访问这些资产来执行工作。 这将网络负载和存储二进制文件的复制降至最低
+* **外部化处理**:资产处理在AEM环境之外完成，并保存其资源（CPU、内存），以便为最终用户提供关键数字资产管理功能并支持与系统进行交互式工作
 
 ## 通过直接二进制访问上传资产 {#asset-upload-with-direct-binary-access}
 
@@ -64,8 +63,8 @@ Experience Manager客户端是产品提供的一部分，默认情况下，所�
 
 您可以使用自定义上传工具，这些工具可直接与AEM HTTP API一起使用。 您可以直接使用这些API，或者使用和扩展以下实现上传协议的开放源项目：
 
-* [开放源上传库](https://github.com/adobe/aem-upload)
-* [开放源代码命令行工具](https://github.com/adobe/aio-cli-plugin-aem)
+* [开放源码上传库](https://github.com/adobe/aem-upload)
+* [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)
 
 有关详细信息，请参阅 [上传资产](add-assets.md)。
 
