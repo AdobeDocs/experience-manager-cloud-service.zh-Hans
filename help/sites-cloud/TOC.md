@@ -2,13 +2,14 @@
 sub-product: 在AEM中以云服务的形式创作内容
 user-guide-title: 在AEM中以云服务的形式创作内容
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 站点 {#sites}
 
++ [AEM Sites 云服务](/help/sites-cloud/home.md)
 + [对 AEM 云服务中 AEM Sites 的显著更改](sites-cloud-changes.md)
 + 创作 {#authoring}
    + 入门 {#getting-started}
