@@ -2,7 +2,7 @@
 title: AEM 云服务开发准则
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -83,7 +83,37 @@ AEM中不支持将“发布到作者”反向复制为云服务。 如果需要�
 
 ### 日志 {#logs}
 
-有关如何使用日志的详细信息，请参阅日 [志记录文档](/help/implementing/developing/introduction/logging.md)。
+对于本地开发，日志条目将写入文件夹中的本地 `/crx-quickstart/logs` 文件。
+
+在Cloud环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**设置日志级别**
+
+要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后进行完全重新部署。 由于这不是即时的，因此请务必小心为收到大量流量的生产环境启用详细日志。 将来，可能会有一些机制来更快速地更改日志级别。
+
+> [!NOTE]
+> 
+> 要执行下面列出的配置更改，您需要在本地开发环境上创建这些更改，然后将其作为云服务实例推送到AEM。 有关如何执行此操作的详细信息，请参 [阅将AEM部署为云服务](/help/implementing/deploying/overview.md)。
+
+**激活调试日志级别**
+
+默认日志级别为INFO，即DEBUG消息未记录。
+要激活调试日志级别，请设置
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+要调试的属性。 不要将DEBUG日志级别的日志保留得比必需的时间长，因为它会生成大量日志。
+调试文件中的一行通常与DEBUG开始，然后提供日志级别、安装程序操作和日志消息。 例如：
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+日志级别如下：
+
+| 0 | 致命错误 | 操作失败，安装程序无法继续。 |
+|---|---|---|
+| 1 | 错误 | 操作已失败。 安装将继续进行，但CRX的某部分安装不正确，将无法正常工作。 |
+| 2 | 警告 | 该操作已成功，但遇到问题。 CRX可能正常工作，也可能无法正常工作。 |
+| 3 | 信息 | 该操作已成功。 |
 
 ### 线程转储 {#thread-dumps}
 
