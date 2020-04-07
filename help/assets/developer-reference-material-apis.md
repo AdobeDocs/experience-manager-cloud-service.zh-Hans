@@ -151,7 +151,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 ### 后处理工作流中的工作流步骤 {#post-processing-workflows-steps}
 
 >[!NOTE]
-本节主要适用于从先前版本的AEM以云服务的形式更新到AEM的客户。
+本条主要适用于从先前版本的AEM以云服务的形式更新到AEM的客户。
 
 由于Experience Manager作为云服务引入了新的部署模型，因此在引入资产微服务之前在工作流中使用的某些工作流步骤可能不再支持后处理工作流。 `DAM Update Asset` 请注意，大多数服务被更简单的资产微服务配置和使用所取代。
 
