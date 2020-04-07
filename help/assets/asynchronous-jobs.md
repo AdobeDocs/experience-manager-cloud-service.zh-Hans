@@ -3,7 +3,7 @@ title: 异步操作
 description: AEM资产通过异步完成某些资源密集型任务来优化性能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ## 监视异步操作的状态 {#monitoring-the-status-of-asynchronous-operations}
 
-每当AEM资产异步处理操作时，您都会在您的收件箱中和通过电子邮件收到通知。
+每当AEM资产异步处理操作时，您都会在您的收件箱中收到通知 <!-- and through email -->。
 
 要详细视图异步操作的状态，请导航到“异步作业状 **[!UICONTROL 态”页]** 。
 
