@@ -2,7 +2,7 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,6 +181,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **定位配置**
 
    * 选择一个[品牌以指定定位的范围](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+   >[!NOTE]
+   >此选项要求用户帐户属于 `Target Adminstrators` 组。
 
 ### 权限 {#permissions}
 
