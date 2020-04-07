@@ -3,7 +3,7 @@ title: Adobe Experience Manager资产中的数字版权管理
 description: 了解如何在AEM中管理授权资产的资产到期状态和信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -54,11 +54,13 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 1. 选择 **[!UICONTROL Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 将选择基于时间的调度程序]** ，这将计划作业以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为已过期。
 
 1. 要定期运行该作业，请清除&#x200B;**[!UICONTROL 基于时间的计划程序规则]**&#x200B;字段，并在&#x200B;**[!UICONTROL 周期性计划程序]**&#x200B;字段中修改时间（以秒为单位）。例如，示例表达式“0 0 0 &amp;ast; &amp;ast; ?”会在 00 小时开始作业。
-1. 选择 **[!UICONTROL 发送电子邮件]** ，以在资产过期时接收电子邮件。
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >只有资产创建者（将特定资产上传到AEM资产的人员）在资产过期时才会收到电子邮件。 有关在整个AEM级别配置电子邮件通知的其他详细信息，请参阅如何配置电子邮件通知。
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. 在“先 **[!UICONTROL 前通知(以秒为单位]** )”字段中，指定您要接收到有关到期的通知时，资产到期前的时间（以秒为单位）。 如果您是管理员或资产创建者，您会在资产到期前收到一条消息，通知您该资产将在指定时间后过期。
 
