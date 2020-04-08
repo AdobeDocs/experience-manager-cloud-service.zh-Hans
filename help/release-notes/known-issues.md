@@ -1,8 +1,8 @@
 ---
 title: 已知问题
 description: 特定于 Adobe Experience Manager 云服务已知问题的发行说明
-translation-type: ht
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+translation-type: tm+mt
+source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
 
@@ -25,17 +25,12 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 一些已知问题包括：
 
-* **元数据架构**：资产评级小部件可能导致 JSP 编译错误。解决方法是从元数据架构中删除资产评级组件。<!-- CQ-4282865 -->
-
-资产功能的一些限制包括：
-
-* 通过 AEM Assets 云服务，当在 AMS 上部署 AEM 6.5 站点时，“连接的资产”功能可正常工作。
+* **元数据模式**:用于导致JSP编译错误的资产评级构件。 它已从元数据模式中删除。 <!-- CQ-4282865, CQ-4284633 -->
 
 ### 即将推出的资产功能 {#upcoming-assets-capabilities}
 
 Adobe Experience Manager Assets 中有一些依赖于基础功能的功能在 Experience Manager 云服务部署架构尚不可用，这些功能预计将在稍后的阶段中启用：
 
-* 当前未启用发布到 Brand Portal。您可以针对资产分发用例扩展和部署[资产共享共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)实施。
 * 利用 Adobe I/O 的 AI 服务的增强型智能标记功能暂时不可用。
 * 由于依赖于商务集成框架 API，当前未启用以下功能：
    * 照片拍摄工作流模型。
