@@ -1,8 +1,8 @@
 ---
 title: 2020.2.0 版发行说明
 description: 2020.2.0 版发行说明
-translation-type: ht
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+translation-type: tm+mt
+source-git-commit: 8796d4bcbfc4089e1e78bd18bdb253386a5f5b6d
 
 ---
 
@@ -11,11 +11,13 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 以下部分概述了 Experience Manager 云服务 2020.2.0 版的常规发行说明。
 
+## Release Date {#release-date}
+
+Experience Manager作为云服务2020.2.0的发布日期为2020年2月13日。
+
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager 2020.2.0 版的发布日期是 2020 年 2 月 13 日。
-
-请阅读本章内容，了解 Cloud Manager 2020.2.0 版的新增功能和更新。
+请按照本节的说明，了解AEM中Cloud Manager的新增功能以及2020.2.0版云服务的更新。
 
 ### 新增功能 {#what-is-new}
 
