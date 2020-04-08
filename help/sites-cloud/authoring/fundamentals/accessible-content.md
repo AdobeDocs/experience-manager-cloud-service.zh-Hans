@@ -1,8 +1,8 @@
 ---
 title: 创建辅助内容（WCAG 2.0 符合性）
 description: 确保残障人士能够访问并使用 Web 内容
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -18,15 +18,17 @@ WCAG 2.0 包含一系列非技术层面的准则及成功标准，旨在确保�
 >* 我们的 WCAG 2.0 快速指南，以进一步了解详细信息
 >* 配置富文本编辑器以创建辅助内容
 
-<!--
->* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
+
+<!-- 
+>* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
+>* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
+
 Web 内容通常依据三个符合性级别进行分级：A 级（最低）、AA 级以及 AAA 级（最高）。以下是各个级别的简要定义：
 
-* **A 级：**&#x200B;站点在辅助功能方面达到基本的最低等级。要达到这一等级，站点必须满足所有 A 级成功标准。
+* **级别 A：**&#x200B;您的站点符合基本的、最低级别的辅助功能。要达到此级别，需满足所有级别 A 成功标准。
 * **AA 级：**&#x200B;这是一个理想的辅助功能等级目标，站点达到这一等级即意味着提供了更高级别的辅助功能，以便大部分人在大多数情况下均可使用大部分技术访问站点内容。要达到这一等级，站点必须满足所有 A 级和 AA 级成功标准。
-* **AAA 级：**&#x200B;站点在辅助功能方面达到非常高的等级。要达到这一等级，站点必须符合所有 A 级、AA 级和 AAA 级成功标准。
+* **级别 AAA：**&#x200B;您的站点在辅助功能方面达到了非常高的级别。要达到此级别，需满足所有级别 A、级别 AA 和级别 AAA 成功标准。
 
 在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
 
@@ -72,7 +74,8 @@ Web 内容通常依据三个符合性级别进行分级：A 级（最低）、AA
 
 >[!NOTE]
 >
->一些现成的组件（例如&#x200B;**传送**&#x200B;和&#x200B;**幻灯片放映**）不提供为图像添加替换文本描述的方法。因此，在为 AEM 实例实施这些版本时，开发团队需要将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
+>一些现成的组件（如&#x200B;**轮播**&#x200B;和&#x200B;**幻灯片**&#x200B;放映）不提供向图像添加替代文本描述的方法。因此，在为 AEM 实例实施这些版本时，开发团队需要将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
+
 <!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -301,7 +304,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 可以通过以下方式确保网页指定了合适的结构：
 
-* **使用标题：**&#x200B;只要启用了 RTE 的辅助功能，AEM 便会提供 3 种级别的页面标题。您可以使用这些级别的标题来标识内容的章节和小节。“标题 1”是最高级别的标题，“标题 3”是最低级别的标题。系统管理员可以将系统配置为允许使用更多标题级别。
+* **使用标题：**&#x200B;只要您启用了 RTE 辅助功能，AEM 就会提供 3 个级别的页面标题。您可以使用这些标题标识内容的章节和子章节。标题 1 是最高级别的标题，标题 3 是最低级别的标题。系统管理员可以配置系统以允许使用更多标题级别。
 * **强调文本**：使用 `<strong>` 或 `<em>` 元素指示重点。切勿在段落中使用标题突出显示文本。
    * 突出显示要强调的文本；
    * 单击&#x200B;**属性**&#x200B;面板中显示的 **B** 图标（表示 `<strong>`）或 **I** 图标（表示 `<em>`）（确保已选择 HTML）。
@@ -322,7 +325,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 在 RTE 中，使用**编号列表**&#x200B;图标。
    如果您希望将现有内容更改为特定列表类型，可以突出显示相应的文本，然后选择相应的列表类型。正如上述示例中显示的段落文本输入方式一样，相应的列表元素会自动添加到 HTML。
 
-   在全屏模式下，会显示单个&#x200B;**项目符号列表**&#x200B;和&#x200B;**编号列表**&#x200B;图标。如果不处于全屏模式，则这两个选项显示在单个&#x200B;**列表**&#x200B;图标的后面。
+   在全屏模式下，单个“项目符号列 **表”和** “编 **号列表** ”图标可见。 当不处于全屏模式时，这两个选项在单个列表图标的后 **面可** 用。
 * **使用表**：数据表必须使用 HTML 表元素进行标识：
    * 一个 `<table>` 元素
    * 每个表行均使用 `<tr>` 元素进行标识
@@ -336,18 +339,19 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
    >[!NOTE]
    >
    >默认情况下，这些元素和属性并非直接可用，不过系统管理员可以在&#x200B;**表属性**&#x200B;对话框中添加对这些值的支持（请参阅添加对其他 HTML 元素和属性的支持）。
-<!--
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+
+<!-- removed link syntax for ExL
+>By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
 -->
 
 要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
 
 * 定义相应的&#x200B;**描述**。
-* 最好将&#x200B;**宽度**、**高度**、**边框**、**单元格边距**&#x200B;和&#x200B;**单元格间距**&#x200B;的默认值全部删除，因为这些属性可以在全局样式表中设置。
+* 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
 
 然后，您可以使用&#x200B;**单元格属性**&#x200B;来选择单元格是数据单元格还是标题单元格：
 
-* **复杂数据表**：在某些情况下，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。例如，在下表中，标题和 id 是相匹配的，以便为辅助型技术用户建立程序式关联。
+* **复杂数据表**：在某些情况下，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。例如，在下表中，标题和 ID 是相匹配的，以便为辅助型技术用户建立程序化关联。
 
    >[!NOTE]
    >
@@ -788,9 +792,10 @@ To add the span element, with an appropriate language, you can manually edit you
 
 #### 表单字段组 {#groups-of-form-fields}
 
-如果有一组相关的控件，例如&#x200B;**单选按钮组**，则可能需要为该组以及单个控件设置标题。当在 AEM 中添加一组单选按钮时，**标题**&#x200B;字段会为该组提供标题，而单个控件的标题则会在创建单选按钮（**项目**）时指定。
+如果存在一组相关控件(如 **Radio Group**)，则可能需要该组以及单个控件的标题。 在AEM中添加一组单选按钮时，“标题 **** ”字段会提供此组标题，而单个标题会在创建单选按钮(项目&#x200B;****)时指定。
 
 但是，组标题和单选按钮本身之间并没有编程关联。模板编辑器需要将标题包装在必需的 `fieldset` 和 `legend` 标记中，以便创建此关联，而且该操作只能通过编辑页面源代码来完成。或者，系统管理员也可以添加对这些元素的支持，以使它们显示在&#x200B;**字段属性**&#x200B;对话框中（请参阅添加对其他 HTML 元素和属性的支持）。
+
 <!--
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -799,7 +804,7 @@ However, there is no programmatic association between the group title and the ra
 
 如果必须按照特定的格式输入数据，应在标签文本中予以清楚说明。例如，如果必须以 `DD-MM-YYYY` 格式输入日期，应在标签中特别指明这一点。这意味着当屏幕阅读器用户遇到此类字段时，阅读器会自动将标签以及与格式相关的其他信息一并读出。
 
-如果某个表单字段是强制输入内容的字段，则应在标签中使用“必填”一词予以清楚说明。AEM 会为必填字段添加一个星号，但是最好在标签本身中也包含 `required` 一词（在编辑对话框的&#x200B;**标题**&#x200B;字段中）。
+如果必须输入表单字段，请在标签中使用“必填”一词来说明。AEM 会为必填字段添加一个星号，但是最好在标签本身中也包含 `required` 一词（在编辑对话框的&#x200B;**标题**&#x200B;字段中）。
 
 标签的位置也非常重要，因为它有助于用户找到对应的字段。当用户面对复杂的表单时，这显得尤为重要。应遵循以下约定：
 
