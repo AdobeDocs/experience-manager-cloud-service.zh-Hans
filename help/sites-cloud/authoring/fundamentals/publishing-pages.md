@@ -1,8 +1,8 @@
 ---
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
-translation-type: ht
-source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -43,6 +43,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 >* 将触发一个工作流，向相应的人员通知您的发布请求。
 >* 您的开发团队可能已自定义此工作流。
 >* 将显示一条简短的消息，通知您工作流已经触发。
+
 
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
@@ -182,7 +183,10 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
    资源将按触发的工作流分组，并且每组都提供了用于执行以下操作的选项：
 
    * 定义工作流的标题。
-   * 保留工作流包，前提是工作流具有多资源支持。<!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+   * 保留工作流包，前提是工作流具有多资源支持。
+   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+
    * 在选择保留工作流包的选项时，定义工作流包的标题。
    单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
 
