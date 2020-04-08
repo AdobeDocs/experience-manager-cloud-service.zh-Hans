@@ -2,7 +2,7 @@
 title: 将您的数字资产添加到Adobe Experience Manager
 description: 将您的数字资产作为云服务添加到Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
 您还可以选择对上传的资产执行其他处理。 可在上传资产的文件夹上配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 有关更 [多信息，请参阅](#additional-processing) 下面的其他处理。
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager作为云服务，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端（如AEM用户界面、Adobe Asset Link、AEM桌面应用程序）都支持它，因此对最终用户是透明的。
 >
@@ -75,7 +75,7 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
 此外，资产用户界面还会显示您上传的最近的资产或您首先创建的文件夹。
 
-> [!NOTE]
+>[!NOTE]
 >
 > 要将嵌套文件夹层次结构上传到AEM，请参 [阅批量上传资产](#bulk-upload)。
 
@@ -130,7 +130,7 @@ AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您�
 * 使用利用资产上传API的自定义上 [传脚本或工具](developer-reference-material-apis.md#asset-upload-technical)。 此类自定义工具可以根据需要添加对资产的其他处理（例如，翻译元数据或重命名文件）。
 * 使用 [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套的文件夹层次结构。
 
-> [!NOTE]
+>[!NOTE]
 >
 > 在设置和部署到Experience Manager时，从其他系统进行内容迁移时，需要仔细规划、考虑和选择工具，才能进行批量上传。 有关内容迁 [移方法的指导](/help/implementing/deploying/overview.md) ，请参阅部署指南。
 
@@ -157,7 +157,7 @@ AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您�
 * [图像配置文件](dynamic-media/image-profiles.md)允许您将特定裁剪（**[!UICONTROL 智能裁剪]**&#x200B;和像素裁剪）和锐化配置应用于上传的资产
 * [视频用户档案](dynamic-media/video-profiles.md) ，允许您应用特定的视频编码用户档案（分辨率、格式、参数）
 
-> [!NOTE]
+>[!NOTE]
 >
 > Dynamic Media裁剪和资产的其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行的裁剪或媒体转换的参数
 
