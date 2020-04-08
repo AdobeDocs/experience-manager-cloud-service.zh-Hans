@@ -1,8 +1,8 @@
 ---
 title: 内容搜索与索引
-description: '内容搜索与索引 '
+description: 内容搜索与索引
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -69,7 +69,7 @@ AS NOTE: the above is internal for now.
 
 ### 部署索引定义 {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > Jackrabbit Filevault Maven包插件版本 **1.1.0存在一个已知问题** ，它不允许您添加 `oak:index` 到的模块 `<packageType>application</packageType>`。 要解决此问题，请使 **用版本1.0.4**。
 
@@ -118,7 +118,8 @@ AS NOTE: the above is internal for now.
 下表显示了5个索引定义：索引 `cqPageLucene` 在两个版本中都使用，而索引 `damAssetLucene-custom-1` 仅在版本2中使用。
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` aem作为云服务需要将其标记为现有索引的替换项。
 
 | 索引 | 现成的索引 | 在版本1中使用 | 在版本2中使用 |
