@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager (AEM) 云服务的发行说明。
 description: 'Adobe Experience Manager (AEM) 云服务的发行说明。 '
-translation-type: ht
-source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
+translation-type: tm+mt
+source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 | 产品 | Adobe Experience Manager 云服务 |
 |---|---|
-| 版本 | 2020.01.0 |
+| 版本 | 2020.04.0 |
 | 类型 | 持续更新 |
 | 发行日期 | 持续更新 |
 
