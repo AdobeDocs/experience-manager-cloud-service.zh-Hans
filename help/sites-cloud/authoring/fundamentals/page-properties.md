@@ -2,7 +2,7 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    >例如：如果您为节点 `/content/we-retail/spanish` 定义别名 `latin-lang`，则可以通过 `/content/we-retail/latin-language` 访问此页面。
    >
    >有关详细信息，请参阅“SEO 和 URL 管理最佳实践”下的“本地化的页面名称”。
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **云服务**
 
-   * 为云服务定义属性。<!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * 为云服务定义属性。
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### 个性化 {#personalization}
 
 * **ContextHub 配置**
 
-   * 选择 ContextHub 配置和区段路径。<!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * 选择 ContextHub 配置和区段路径。
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **定位配置**
 
@@ -188,16 +193,24 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **权限**
 
-   * 添加权限 <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * 编辑已关闭的用户组 <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * 查看有效权限 <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * 添加权限
+   * 编辑已关闭的用户组
+   * 查看有效权限
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   * 在多站点管理中为 Blueprint 页面定义属性。<!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 在多站点管理中为 Blueprint 页面定义属性。
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * 控制将修改传播到 Live Copy 的情况。
+
 
 ### Live Copy {#live-copy}
 
@@ -252,6 +265,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >也可以对资产使用批量编辑属性功能。其操作大体相同，只有少数几点差别。有关详细信息，请参阅编辑多个资产的属性。
 >
 >还有一个批量编辑器，通过该编辑器，您可以使用 GQL（Google 查询语言）从多个页面中搜索内容，接着直接在批量编辑器中编辑内容，然后将更改保存到原始页面中。
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >[!NOTE]
 >
 >可以对页面组件进行配置，以指定可批量编辑的字段。请参阅配置页面以批量编辑页面属性。
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
