@@ -1,8 +1,8 @@
 ---
 title: 创作适用于移动设备的页面
 description: 在为移动设备进行创作时，您可以在多个模拟器之间切换，以查看最终用户看到的内容
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -20,6 +20,7 @@ Adobe Experience Manager 页面基于响应式布局。响应式布局可自动�
 >要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。请参阅“为不同的渠道创建 Live Copy”。
 >
 >AEM 开发人员可以创建新设备组。请参阅“创建设备组筛选器”。
+
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
