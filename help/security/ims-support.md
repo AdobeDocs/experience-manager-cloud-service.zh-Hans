@@ -1,8 +1,8 @@
 ---
 title: 对 Adobe Experience Manager 云服务的 IMS 支持
-description: '对 Adobe Experience Manager 云服务的 IMS 支持 '
-translation-type: ht
-source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
+description: 对 Adobe Experience Manager 云服务的 IMS 支持
+translation-type: tm+mt
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -106,7 +106,7 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 ## Adobe Experience 云服务配置 {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >在配置 AEM 环境和实例时，将自动配置所需的 AEM IMS 配置。但是，管理员可以根据自己的需求使用[此处](/help/implementing/deploying/overview.md)描述的方法进行修改。
 
