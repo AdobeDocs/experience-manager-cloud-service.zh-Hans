@@ -3,7 +3,7 @@ title: 将资产、文件夹和收藏集发布到Brand Portal
 description: 将资产、文件夹和收藏集发布到Brand Portal。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,7 +21,9 @@ source-git-commit: 4194f089f87deeb62095703614947a295235edbf
 * [将集合发布到Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>Adobe建议交错发布，最好在非高峰时段发布，这样AEM作者就不会占用过多的资源。>
+>
+>Adobe建议交错发布，最好在非高峰时段发布，这样AEM作者就不会占用过多的资源。
+
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
