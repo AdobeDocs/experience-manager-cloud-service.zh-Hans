@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作为2020.4.0云服务发行说明
 description: Experience Manager 2020.4.0发行说明
 translation-type: tm+mt
-source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
+source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 
 ---
 
@@ -32,7 +32,7 @@ The following section outlines the general release notes for [!DNL Experience Ma
    * 资产重新处理对话框允许选择特定的处理用户档案并决定在子文件夹中重新处理。
    * [!DNL Dynamic Media]:添加了选择性发布配置，以便资产自动发布仅用于安全预览。 此外，资产可以显式发布到Experience Manager，而不发布到DMS7以在公共域中投放。
 
-* 已解决以下问题：
+* 解决了以下问题：
    * 修复了资产处理问题。
    * 对配置和 [!DNL Dynamic Media] 将资产发布到投放服务的 [!DNL Dynamic Media] 修复。
 
