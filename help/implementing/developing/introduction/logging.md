@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
 
 要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后进行完全重新部署。 由于这不是即时的，因此请务必小心为收到大量流量的生产环境启用详细日志。 将来，可能会有一些机制来更快速地更改日志级别。
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > 要执行下面列出的配置更改，您需要在本地开发环境上创建这些更改，然后将其作为云服务实例推送到AEM。 有关如何执行此操作的详细信息，请参 [阅将AEM部署为云服务](/help/implementing/deploying/overview.md)。
 
 ### 激活调试日志级别 {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > 全局激活DEBUG日志级别将生成大量难以筛选的信息。 建议仅为需要调试的服务启用它。 有关详细信息，请参 [阅Loggers和Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services)。
 
