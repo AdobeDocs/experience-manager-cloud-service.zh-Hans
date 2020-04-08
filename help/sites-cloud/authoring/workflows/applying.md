@@ -2,19 +2,19 @@
 title: 将工作流应用于页面
 description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
 # 将工作流应用于页面 {#applying-workflows-to-pages}
 
-在创作时，您可以调用工作流以对页面执行操作；还可以应用多个工作流。
+创作时，您可以调用工作流来对页面执行操作；还可以应用多个工作流。
 
 在应用工作流时，您需要指定以下信息：
 
 * 要应用的工作流。
-   * 您可以应用任何工作流（由 AEM 管理员分配且您有权访问的工作流）。
+   * 您可以应用任何工作流（您有权访问，由 AEM 管理员分配）。
 * （可选）有助于在用户收件箱中识别工作流实例的标题。
 * 工作流有效负荷；这可以是一个或多个页面。
 
@@ -25,12 +25,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->另请参阅:
+>另请参阅：
 >
 >* 如何将工作流应用于 DAM 资产。
 >* [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)。
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >[!NOTE]
 >
 >AEM 管理员可以使用其他几种方法来启动工作流。
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -101,7 +103,8 @@ You can start a workflow from the toolbar of the **Sites** console:
       * 您可以指定包标题以便进行识别。
    >[!NOTE]
    >
-   >为工作流配置了多资源支持并且选择了多个资源时，可以使用&#x200B;**保留工作流包**&#x200B;选项。
+   >为“ **多资源支持”配置了工作流并选择了多个资源时** ,“保留工作流包”选项可用。
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
@@ -128,7 +131,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
    >[!NOTE]
    >
-   >如果您添加其他资源，则可以使用&#x200B;**返回**&#x200B;来调整&#x200B;**属性**&#x200B;步骤中&#x200B;**保留工作流包**&#x200B;的设置。
+   >如果添加其他资源，则可以使用“返回 **”** ，在“属性”步骤中调整“ **保留工作流包** ”的 **设置** 。
 
 1. Use **Create** to close the wizard and create the workflow instance. “站点”控制台中随即会显示一则通知。
 
