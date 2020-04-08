@@ -1,8 +1,8 @@
 ---
 title: 搜索
 description: 使用完备的搜索功能更快速地查找您的内容
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -65,6 +65,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    >* 具体视您选择的资源类型而定；例如，资产和社区条件理所当然是专用的；
    >* 您可以自定义搜索表单实例（对应于在 AEM 中的位置）。
 
+
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
@@ -73,7 +74,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 1. 您还可以添加其他搜索词。
 
-1. 通过右上方的 **X** 关闭&#x200B;**搜索**。
+1. 使 **用** X **（右上方）关闭** 搜索。
 
 >[!NOTE]
 >
@@ -102,6 +103,6 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    * 使用 **x**（针对保存的搜索的名称）以开始新的查询（保存的搜索本身将不会被删除）。
    * **编辑保存的搜索**，更改搜索条件，然后再次&#x200B;**保存**。
 
-通过选择保存的搜索并单击搜索面板底部的&#x200B;**编辑保存的搜索**，可以修改保存的搜索。
+通过选择保存的搜索并单击搜索面板底部的“编 **辑保存的搜索** ”，可以修改保存的搜索。
 
 ![修改保存的搜索](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
