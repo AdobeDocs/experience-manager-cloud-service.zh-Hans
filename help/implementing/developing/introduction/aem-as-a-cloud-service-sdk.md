@@ -1,8 +1,8 @@
 ---
 title: AEM 云服务 SDK
-description: '待完成 '
+description: 待完成
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -32,12 +32,12 @@ AEM作为云服务SDK由以下对象组成：
 <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>aem-sdk-api</artifactId>
-  <version>2019.11.3006.20191108T223635Z-191201</version> 
+  <version>2019.11.3006.20191108T223635Z-191201</version>
   <scope>provided</scope>
 </dependency>
 ```
 
-> [!NOTE] SDK的版本条目应与AEM作为云服务的版本匹配。 登录AEM后，转到屏幕右上角的问号，然后选择“关于Adobe Experience Manager”，即可查看您使用的 **[!UICONTROL 版本。]**
+>[!NOTE] SDK的版本条目应与AEM作为云服务的版本匹配。 登录AEM后，转到屏幕右上角的问号，然后选择“关于Adobe Experience Manager”，即可查看您使用的 **[!UICONTROL 版本。]**
 
 * 托管包的主存储库的远程坐标应包含在pom文件中。
 
