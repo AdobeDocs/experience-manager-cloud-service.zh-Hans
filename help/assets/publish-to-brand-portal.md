@@ -3,7 +3,7 @@ title: 将资产、文件夹和收藏集发布到Brand Portal
 description: 将资产、文件夹和收藏集发布到Brand Portal。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 1. 在对话框中，单击“取 **[!UICONTROL 消发布]**”。
 1. 关闭确认消息。 集合将从Brand Portal界面中删除。
 
-有关向 [最终用户分发资产、文件夹和集合的更多信息](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) ，请参阅Brand Portal文档。
+除了上述功能，您还可以将元数据模式、图像预设、搜索彩块化和标记从AEM资产发布到Brand Portal。
 
+* [将预设、模式和彩块化发布到Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [将标记发布到 Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+有关详细 [信息，请参阅Brand Portal文档](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 。
 
 
 <!--
