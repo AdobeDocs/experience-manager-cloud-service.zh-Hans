@@ -2,7 +2,7 @@
 title: AEM 云服务 SDK
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ AEM作为云服务SDK由以下对象组成：
 </repository>
 ```
 
-## 使用新的SDK版本刷新本地项目 {#refreshing-a-local-prokect-with-a-new-skd-version}
+## 使用新的SDK版本刷新本地项目 {#refreshing-a-local-project-with-a-new-skd-version}
 
 何时建议使用新SDK刷新本地项目？
 
@@ -92,5 +92,5 @@ AEM作为云服务SDK由以下对象组成：
 
 * 最初开始本地quickstart.jar时，请确保添加以下参数：“`-Dcom.adobe.granite.crypto.file.disable=true`”。 建议始终添加它（但是可选）。
 * 第一次启动实例时，会创建一个包，其中包含根“”的过滤`/etc/key`器。 这将保留机密，以便在您希望重用它们的所有环境中重用
-* 导出包含机密的任何可变内容，或通过查找加密值，将 `/crx/de` 其添加到将在安装过程中重用的包中
+* 导出包含机密的任何可变内容，或通过查找加密值，将 `/crx/de` 其添加到将在安装过程中重复使用的包中
 * 每当您启动新实例(要替换为新版本或多个开发环境应共享用于测试的凭据)时，请安装步骤2和3中生成的包，以便无需手动重新配置即可重复使用内容。 这是因为，现在密钥保持同步。
