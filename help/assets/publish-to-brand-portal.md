@@ -3,7 +3,7 @@ title: 将资产、文件夹和收藏集发布到Brand Portal
 description: 将资产、文件夹和收藏集发布到Brand Portal。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 1. 从AEM **资产实例的** “收藏集”控制台中，选择要取消发布的收藏集。
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. 在工具栏中，单击“从 **[!UICONTROL Brand Portal中删除]** ”图标。
 1. 在对话框中，单击“取 **[!UICONTROL 消发布]**”。
