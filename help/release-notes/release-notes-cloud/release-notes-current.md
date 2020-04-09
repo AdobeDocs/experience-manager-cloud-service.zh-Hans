@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作为2020.4.0云服务发行说明
 description: Experience Manager 2020.4.0发行说明
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ The following section outlines the general release notes for [!DNL Experience Ma
 >* [在Experience Manager中使用资产微服务创建工作流](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Cloud Manager更新 {#cloud-manager}
-
 ## Cloud Manager的新增功能 {#whats-new-cloud-manager}
 
 * 发布者URL现在可从云管理器UI的环境页面访问。
@@ -57,7 +55,7 @@ The following section outlines the general release notes for [!DNL Experience Ma
 * 现在可通过UI和API删除失败的环境。
 * 用于生成Git密码的过程对底层服务层中的问题具有更强的适应性。
 
-## 错误修复 {#bug-fixes-cloud-manager}
+### 错误修复 {#bug-fixes-cloud-manager}
 
 * 管道执行详细信息页面上指向舞台环境的链接未始终导航到正确的位置。
 * 环境创建进程中的各个步骤将比必要时提前超时，从而导致进程失败。
