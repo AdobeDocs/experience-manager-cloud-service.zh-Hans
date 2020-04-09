@@ -1,50 +1,50 @@
 ---
-title: 创建计划——云服务
-description: 创建计划——云服务
+title: 创建项目-云服务
+description: 创建项目-云服务
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
 
 ---
 
 
 # 创建程序 {#create-a-program}
 
-云本机解决方案为用户提供了必要的权限，并能够在自助服务模型上创建程序。
+云本机解决方案为用户提供了必要的权限，并能够在自助服务模型上创建项目。
 
-程序创建向导将要求用户提交详细信息，具体取决于用户在特定客户或组织可用的范围内创建程序的目标。
+项目创建向导将要求用户提交详细信息，具体取决于用户在特定客户或组织可用内容范围内创建项目的目标。
 
-如果首次访问Cloud manager或租户中不存在程序，用户将看到创建您的第 **一个程序屏幕** 。 如果用户选 *择* Esc或者单击出对话框，将显示以下屏幕：
+在首次访问Cloud Manager的事件中，或如果租户中不存在项目，用户将看到创建您的第 **一个项目屏幕** 。 如果用户选 *择* Esc或者单击出对话框，将显示以下屏幕：
 
 ![](assets/create-program1.png)
 
 
-## 使用创建程序向导 {#using-create-program-wizard}
+## 使用创建项目向导 {#using-create-program-wizard}
 
-根据用户在特定客户／组织可用的范围内创建程序的目标，程序创建向导将要求用户提交一个或多个详细信息。
+根据用户在特定客户／组织可用内容范围内创建项目的目标，项目创建向导将要求用户提交一个或多个详细信息。
 
 ![](assets/create-program-2.png)
 
 >[!NOTE]
->如果某个程序已存在，您将在登录页面的右 **上方看到** “添加程序”，如下图所示。
+>If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
 
 ![](assets/create-program-add.png)
 
-## 创建演示程序 {#create-demo-program}
+## 创建演示项目 {#create-demo-program}
 
 >[!NOTE]
->演示程序类似于Cloud Manager UI中的沙箱程序。
+>演示项目类似于Cloud Manager UI中的沙箱项目。
 
-请按照以下步骤创建沙箱程序：
+请按照以下步骤创建沙箱项目:
 
-1. 从创建程序向导中，选择 **设置演示**。 用户在选择创建之前提交程序 **名称**。
+1. 从创建项目向导中，选择 **设置演示**。 用户在选择创建之前提交项目 **名称**。
 
    ![](assets/create-program-setupdemo.png)
 
-1. 用户将在登陆页面上看到新的沙箱程序卡，并可以将鼠标悬停在该卡上以选择云管理器图标以导航到云管理器概述页面。 卡将通知用户新创建的沙箱程序的自动设置状态。 用户将看到进度。
+1. 用户将在登陆页上看到新的沙箱项目卡，并可以将鼠标悬停在沙箱卡上以选择云管理器图标，以导航到云管理器概述页面。 卡将通知用户新创建的沙箱项目的自动设置状态。 用户将看到进度。
 
    ![](assets/program-create-setupdemo2.png)
 
-1. 在程序设置和项目创建步骤完成后，用户可以访问“ **Manage Git** ”链接，如下图所示：
+1. 在项目设置和项目创建步骤完成后，用户可以访问 **Manage Git** （管理Git）链接，如下图所示：
 
    ![](assets/create-program4.png)
 
@@ -57,22 +57,28 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
    ![](assets/create-program-5.png)
 
-1. 完成部署到开发的非生产渠道部署后，向导会指导用户访问AEM（在开发中）或将代码部署到开发环境：
+1. 完成部署到开发的非生产渠道部署后，向导会指导用户访问AEM（在开发中）或将代码部署到开发环境:
 
    ![](assets/create-program-setup-deploy.png)
 
+   >[!NOTE]
+   >您还可以从Cloud Manager概述页面编辑、切换或添加项目，如下所示：
 
-## 创建常规程序 {#create-regular-program}
+   ![](assets/create-program-a1.png)
 
-常规 ** 程序适用于熟悉AEM和Cloud manager的用户，他们准备开始编写、构建和测试代码，以将其部署到生产。
 
-请按照以下步骤创建常规计划：
 
-1. 在创 **建程序向导中选择** “为生产设置”以创建常规程序。 用户可以接受默认的程序名称，或在选择“继续”之前对其进行 **编辑**。
+## 创建常规项目 {#create-regular-program}
+
+常规 ** 项目适用于熟悉AEM和Cloud Manager的用户，他们准备好开始编写、构建和测试代码，以将其部署到生产。
+
+请按照以下步骤创建常规项目:
+
+1. 在创 **建项目向导中** ，选择为生产设置以创建常规项目。 用户可以接受默认的项目名称，或在选择继续之前对其进行 **编辑**。
 
    ![](assets/set-up-prod1.png)
 
-1. 用户将在屏幕上选择要包含在程序中的解决方案，该屏幕将在上面的屏幕后显示。
+1. 用户将选择要包含在项目中的解决方案，该解决方案将显示在上述屏幕后面。
 
 
 
@@ -86,17 +92,17 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
    ![](assets/set-up-prod3.png)
 
-1. 在登录页面上看到您的计划卡后，将指针悬停在该卡片上以选择Cloud Manager图标，以导航到Cloud Manager概 **述页** 。
+1. 在项目上看到登陆页卡后，将鼠标悬停在该卡上以选择云管理器图标，以导航到云管理器概 **述页** 。
 
    ![](assets/set-up-prod4.png)
 
-1. 主行动动员卡将引导用户创建环境，创建非生产管道，最后创建生产管道。
+1. 主行动动员卡将引导用户创建环境、创建非生产管道，最后创建生产管道。
    ![](assets/set-up-prod5.png)
 
 
    >[!NOTE]
    >
-   >常规程序没有“自 **动设置** ”功能。
+   >A regular program does not have **Auto-setup** feature.
 
 
 
