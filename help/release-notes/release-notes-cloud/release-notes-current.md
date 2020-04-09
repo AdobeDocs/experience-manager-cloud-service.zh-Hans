@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作为2020.4.0云服务发行说明
 description: Experience Manager 2020.4.0发行说明
 translation-type: tm+mt
-source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
+source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 
 ---
 
@@ -21,7 +21,7 @@ The following section outlines the general release notes for [!DNL Experience Ma
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 支持Experience Manager Assets的资产分发用例。 [!DNL Brand Portal] 可以将获得批准的品牌和产品资产安全地分发给外部代理、合作伙伴、内部团队和经销商进行下载，从而帮助组织满足其营销需求。
    * [!DNL Brand Portal] 配置通过控制台 [!DNL Adobe I/O] 完成。
-   * Experience Manager作为云服 [!DNL Brand Portal] 务尚不支持 [!DNLE中的资产采购] 。
+   * 云服务尚 [!DNL Brand Portal] 不支持中的资 [!DNL Experience Manager] 产来源补充。
 
 * [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) v2.0可以作为云服 [!DNL Experience Manager] 务使用。 [!DNL Adobe Asset Link] 通过与桌面应用程序连接，以及通过应用程序内面板，简化 [!DNL Experience Manager Assets] 了创意人 [!DNL Creative Cloud] 员和营销人员在内 [!DNL Adobe Photoshop]容创建过程 [!DNL Adobe Illustrator]中的协 [!DNL Adobe InDesign][!DNL Asset Link] 作。
    * [!DNL Experience Manager] 为预配置，这 [!DNL Adobe Asset Link]样便于配 [置](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) ，并可更快地向创意专业人士推广。
