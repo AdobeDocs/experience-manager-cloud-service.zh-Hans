@@ -3,7 +3,7 @@ title: 使用Brand Portal配置AEM Assets云服务
 description: 使用Brand Portal配置AEM Assets云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
    分发代理包含两个队列：
    * 用于将资产分发到Brand Portal的处理队列。
    * 分发失败的资产的错误队列。
-   您可以测试单个队列或整个配置。
-
    ![](assets/test-bpconfig3.png)
 
 1. 要验证AEM资产与Brand Portal之间的连接，请单击“测 **[!UICONTROL 试连接”]**。
@@ -218,11 +216,20 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
    >
    >请避免禁用分发代理，因为这可能导致资产分发（在队列中运行）失败。
 
-Brand Portal已成功配置AEM Assets云实例。 您现在可以：
+
+成功配置Brand Portal的AEM Assets云实例后，您可以：
 
 * [将资产从AEM资产发布到Brand Portal](publish-to-brand-portal.md)
 * [将文件夹从AEM资产发布到Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [将集合从AEM资产发布到Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+除了上述功能，您还可以将元数据模式、图像预设、搜索彩块化和标记从AEM资产发布到Brand Portal。
+
+* [将预设、模式和彩块化发布到Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [将标记发布到 Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+有关详细 [信息，请参阅Brand Portal文档](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 。
 
 
 ## 分发日志 {#distribution-logs}
@@ -233,7 +240,7 @@ Brand Portal已成功配置AEM Assets云实例。 您现在可以：
 
 1. 按照测试连接中所示的步骤（第1步到第4步） **[!UICONTROL 操作]** ，然后导航到分发代理页面。
 
-1. 选择分发队列 **[!UICONTROL -bpdistributionagent0]** ，然后单击 **[!UICONTROL 日志]** ，以视图分发日志。
+1. 单击 **[!UICONTROL 日志]** ，以视图分发日志。 您可以在此处查看处理和错误日志。
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,8 @@ Brand Portal已成功配置AEM Assets云实例。 您现在可以：
 
 在上例中，将触发其他请求和响应。 系统无法在Brand Portal中找到父文件夹（例如，添加路径），因为资产是首次发布的，因此，系统会触发其他请求，在发布资产的Brand Portal中创建同名的父文件夹。
 
-如果存在同名的父文件夹(例如，添加路径)，不会触发其他请求。
-
 >[!NOTE]
->
->要视图错误日志，请选择分发队列 **[!UICONTROL error-queue-bpdistributionagent0]** ，然后单击 **[!UICONTROL 日志]**。
-
+>>如果父级文件夹在Brand Portal中不存在（在上例中），或父级文件夹在AEM资产中已被修改，则会生成其他请求。>
 
 ## 附加信息 {#additional-information}
 
@@ -274,6 +277,7 @@ Brand Portal已成功配置AEM Assets云实例。 您现在可以：
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
