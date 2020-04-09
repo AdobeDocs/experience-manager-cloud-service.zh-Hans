@@ -2,7 +2,7 @@
 title: WCAG 2.1快速指南
 seo-title: WCAG 2.1快速指南
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -87,7 +87,7 @@ WCAG 2.1包含有四个用于辅助设计的关键原则，有时由首字母缩
 
 [WCAG 2.1中的新增功能提供了有关WCAG和2.0以及WCAG 2.1之间的增量的有价值信息](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 。
 
-[WCAG 2.0和2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 进一步阐明其关系状况。
+第 [WCAG 2.0和2.1节进一步阐明](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 其关系的状况。
 
 ### WCAG 2.1的技术 {#techniques-for-wcag}
 
