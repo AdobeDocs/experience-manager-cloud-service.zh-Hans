@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作为2020.4.0云服务发行说明
 description: Experience Manager 2020.4.0发行说明
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ The following section outlines the general release notes for [!DNL Experience Ma
 >* [将Experience Manager配置为使用资产链接](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [在Experience Manager中使用资产微服务创建工作流](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Cloud Manager更新 {#cloud-manager}
+
+## Cloud Manager的新增功能 {#whats-new-cloud-manager}
+
+* 发布者URL现在可从云管理器UI的环境页面访问。
+* 对导航进行更改，以允许用户从Cloud Manager概述页面编辑、切换或添加项目。
+* 允许用户从Cloud Manager项目上的项目卡编辑登陆页的更改。
+* 新管线状 **态管线运行** ，显示与其关联的环境。
+* 改进了管道执行页面的可理解性。 这包括管道名称（仅限非生产管道）和类型的显示，以及指示管道状态是否为“进行中／已取消／失败”的标记。
+* 用于改善用户体验并了解为何禁用“添加项目/环境”按钮的工具提示。
+* 现在可通过UI和API删除失败的环境。
+* 用于生成Git密码的过程对底层服务层中的问题具有更强的适应性。
+
+## 错误修复 {#bug-fixes-cloud-manager}
+
+* 管道执行详细信息页面上指向舞台环境的链接未始终导航到正确的位置。
+* 环境创建进程中的各个步骤将比必要时提前超时，从而导致进程失败。
+* 更新了构建容器中使用的Maven配置，以避免在下载对象元数据时出现死锁。
+* 在某些情况下，构建映像步骤将无法成功下载客户包。
+* 某些不常发生的情况会阻止环境被删除。
+* Experience Cloud通知未得到一致接收。
