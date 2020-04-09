@@ -3,7 +3,7 @@ title: 使用Brand Portal配置AEM Assets云服务
 description: 使用Brand Portal配置AEM Assets云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -48,7 +48,7 @@ IMS配置包括两个步骤：
 
 1. 登录AEM Assets云实例
 
-1. 从“工 **具**![”面板中，导航至“安全](assets/tools.png) ” **[!UICONTROL >]** >“ **** Adobe IMS配置”。
+1. 从“ **Security**![](assets/tools.png) Tools **[!UICONTROL ”面板中，导航到“]** Security **[!UICONTROL ”>“]** Adobe IMS配置”。
 
    ![Adobe IMS帐户配置UI](assets/ims-configuration1.png)
 
@@ -163,7 +163,7 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
 1. 登录AEM Assets云实例
 
-1. 从工 **具** 面板 ![，导航至](assets/tools.png) 云服务>> AEM Brand Portal ****。
+1. 从“工 **具**![”面板中，导航至“云服务”](assets/tools.png) >“AEM Brand **[!UICONTROL Portal工具]******”。
 
    Brand Portal配置页面打开。
 
@@ -217,7 +217,7 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
    >请避免禁用分发代理，因为这可能导致资产分发（在队列中运行）失败。
 
 
-成功配置Brand Portal的AEM Assets云实例后，您可以：
+您的AEM Assets云实例已成功配置Brand Portal，您现在可以：
 
 * [将资产从AEM资产发布到Brand Portal](publish-to-brand-portal.md)
 * [将文件夹从AEM资产发布到Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,7 +262,9 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 在上例中，将触发其他请求和响应。 系统无法在Brand Portal中找到父文件夹（例如，添加路径），因为资产是首次发布的，因此，系统会触发其他请求，在发布资产的Brand Portal中创建同名的父文件夹。
 
 >[!NOTE]
->>如果父级文件夹在Brand Portal中不存在（在上例中），或父级文件夹在AEM资产中已被修改，则会生成其他请求。>
+>
+>如果父级文件夹在Brand Portal中不存在（在上例中），或父级文件夹在AEM资产中已被修改，则会生成其他请求。
+
 
 ## 附加信息 {#additional-information}
 
