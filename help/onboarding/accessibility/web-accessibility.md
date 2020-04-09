@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作为云服务和Web辅助功能指南
 seo-title: Adobe Experience Manager作为云服务和Web辅助功能指南
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Experience Manager作为云服务，符合 [World Wide Web Consortium](#wc
 
 World [Wide Web Consortium(W3C)](https://www.w3.org/) 是一个致力于开发Web标准的国际社会。 他们 [的Web辅助功能倡议(WAI)发布](https://www.w3.org/WAI/) Web内容辅 [助功能准则](#wcag-accessibility-guidelines)。
 
-## WCAG 2.1 Web内容辅助功能指南 {#wcag-accessibility-guideslines}
+## Web内容辅助功能指南(WCAG)2.1 {#wcag-accessibility-guideslines}
 
 为帮助Web设计人员和开发人员制作可访问的网站， [Web辅助功能计划(WAI)](https://www.w3.org/WAI/) 于2018年6月发布了 [Web内容辅助功能准则(WCAG)2.1](https://www.w3.org/TR/WCAG/) 。
 
@@ -37,7 +37,7 @@ World [Wide Web Consortium(W3C)](https://www.w3.org/) 是一个致力于开发We
 
 >[!NOTE]
 > 
->目 [前正在开发WCAG 2.2的更新版本](https://www.w3.org/TR/WCAG22/) ，但此时将不予考虑。
+>目 [前正在开发WCAG 2.2的更新版本](https://www.w3.org/TR/WCAG22/) ，但此时不会考虑。
 
 
 WCAG 2.1提供了 [涵盖辅助功能级别和如何符合这些级别的准则（包括相关成功标准）](https://www.w3.org/TR/WCAG/#conformance)。
