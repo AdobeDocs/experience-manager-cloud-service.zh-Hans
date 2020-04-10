@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
 
 ---
 
@@ -23,25 +23,22 @@ AEM作为云服务优惠，您可以配置：
 >
 >以云服务身份登录AEM基于Sling原则。 有关更 [多信息，请参阅](https://sling.apache.org/site/logging.html) Sling日志记录。
 
-## 全局日志记录 {#global-logging}
+<!-- ## Global Logging {#global-logging}
 
-[Apache Sling日志记录配置](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) (Apache Sling Logging Configuration)用于配置根记录器。 这为以云服务身份登录AEM定义了全局设置：
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
 
-* 记录级别
-* 中央日志文件的位置
-* 要保存的版本数
-* 版本旋转；最大大小或时间间隔
-* 编写日志消息时使用的格式
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
 
 ## 记事员与个人服务作者 {#loggers-and-writers-for-individual-services}
 
 除了全局日志记录设置之外，AEM作为云服务还允许您为单个服务配置特定设置：
 
 * 特定日志记录级别
-* 单个日志文件的位置
-* 要保存的版本数
-* 版本旋转；最大大小或时间间隔
-* 编写日志消息时使用的格式
 * 记录器（提供日志消息的OSGi服务）
 
 这允许您将单个服务的日志消息渠道到单独的文件中。 这在开发或测试过程中特别有用；例如，当您需要特定服务的更高日志级别时。
@@ -158,14 +155,13 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
 
    1. 指定日志文件。
    1. 指定记录器。
-   1. 根据需要配置其他参数。
 
-1. 创建工厂配置Apache Sling日志记录编写 [器配置的新实例](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based)。
+<!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-   1. 指定日志文件——该文件必须与为记录器指定的文件匹配。
-   1. 根据需要配置其他参数。
+    1. Specify the Log File - this must match that specified for the Logger.
+    1. Configure the other parameters as required. -->
 
-### 创建自定义日志文件 {#create-a-custom-log-file}
+### 配置日志记录 {#configure-logging}
 
 >[!NOTE]
 >
@@ -187,130 +183,172 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
    >
    >虽然不是技术要求，但最好是使其与众不同 `<*identifier*>` 。
 
-1. 在此节点上设置以下属性：
+<!-- 1. Set the following properties on this node:
 
-   * 名称: `org.apache.sling.commons.log.file`
+    * Name: `org.apache.sling.commons.log.file`
 
-      类型：字符串
+      Type: String
 
-      值：指定日志文件；例如， `logs/myLogFile.log`
+      Value: specify the Log File; for example, `logs/myLogFile.log`
 
-   * 名称: `org.apache.sling.commons.log.names`
+    * Name: `org.apache.sling.commons.log.names`
 
-      类型：字符串[] （字符串+多个）
+      Type: String[] (String + Multi)
 
-      值：指定记录器要为其记录消息的OSGi服务；例如，以下所有内容：
+      Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
-   * 名称: `org.apache.sling.commons.log.level`
+        * `org.apache.sling`
+        * `org.apache.felix`
+        * `com.day`
 
-      类型：字符串
+    * Name: `org.apache.sling.commons.log.level`
 
-      值：指定所需的日志级 `debug`别( `info`、 `warn` 或 `error`);示例 `debug`
+      Type: String
 
-   * 根据需要配置其他参数：
+      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`
 
-      * 名称: `org.apache.sling.commons.log.pattern`
+    * Configure the other parameters as required:
 
-         类型: `String`
+        * Name: `org.apache.sling.commons.log.pattern`
 
-         值：根据需要指定日志消息的模式；例如，
+          Type: `String`
 
-         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+          Value: specify the pattern of the log message as required; for example,
+
+          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+
    >[!NOTE]
    >
-   >`org.apache.sling.commons.log.pattern` 最多支持六个参数。
+   >`org.apache.sling.commons.log.pattern` supports up to six arguments.
 
-   >{0}类型的时间戳 `java.util.Date`
    >
-   >{1} log marker{2} the name of current thread{3} the logger{4} the log level{5} the log message
+   >
+   >{0} The timestamp of type `java.util.Date`
+   >{1} the log marker
+   >{2} the name of the current thread
+   >{3} the name of the logger
+   >{4} the log level
+   >{5} the log message
 
-   >如果日志调用包括堆栈 `Throwable` 跟踪，则该堆栈跟踪将附加到消息。
-
-   >[!CAUTION]
-   org.apache.sling.commons.log.names必须具有值。
-
-   >[!NOTE]
-   日志写入程序路径是相对于位置 `crx-quickstart` 的。
-   因此，日志文件指定为：
-   `logs/thelog.log`
-
-   >写入：
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log。
-   以及指定为：
-   `../logs/thelog.log`
-
-   >写入到目录：
-   ` <*cq-installation-dir*>/logs/`
-&quot;(即，在 ` `&lt;*cq-installation-dir*`crx-quickstart/`>/旁)
-
-1. 仅当需要新的Writer时（即，配置与默认Writer不同），才需要执行此步骤。
+   >
+   >
+   >If the log call includes a `Throwable` the stacktrace is appended to the message.
 
    >[!CAUTION]
-   仅当现有默认值不适合时，才需要新的日志记录写入程序配置。
+   >
+   >org.apache.sling.commons.log.names must have a value.
 
-   >如果未配置显式编写器，则系统将根据默认值自动生成隐式编写器。
-
-   在 `/apps/<*project-name*>/config`下，为新配置创建一个 `Apache Sling Logging Writer` 节点：
-
-   * 名称：( `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` 作者为作者)
-
-      与记录器一样， `<*identifier*>` 将替换为您（必须）输入用来标识实例的自由文本（您不能忽略此信息）。 例如，`org.apache.sling.commons.log.LogManager.factory.writer-MINE`
-
-   * 类型: `sling:OsgiConfig`
    >[!NOTE]
-   虽然不是技术要求，但最好是使其与众不同 `<*identifier*>` 。
+   >
+   >Log writer paths are relative to the `crx-quickstart` location.
+   >
+   >
+   >Therefore, a log file specified as:
+   >
+   >
+   >`logs/thelog.log`
 
-   在此节点上设置以下属性：
+   >
+   >
+   >writes to:
+   >
+   >
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
+   >
+   >
+   >And a log file specified as:
+   >
+   >
+   >`../logs/thelog.log`
 
-   * 名称: `org.apache.sling.commons.log.file`
+   >
+   >
+   >writes to a directory:
+   >
+   >
+   >` <*cq-installation-dir*>/logs/`
+   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
+ -->
 
-      类型: `String`
+<!-- open question: see if we need to leave the above warning note in place, but adjust it so that it doesn't mention filenames -->
 
-      值：指定日志文件，使其与记录器中指定的文件匹配；
+<!-- 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
 
-      例如， `../logs/myLogFile.log`
+   >[!CAUTION]
+   >
+   >A new Logging Writer Configuration is only required when the existing default is not suitable.
 
-   * 根据需要配置其他参数：
+   >
+   >
+   >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
-      * 名称: `org.apache.sling.commons.log.file.number`
+   Under `/apps/<*project-name*>/config`, create a node for the new `Apache Sling Logging Writer` Configuration:
 
-         类型: `Long`
+    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
 
-         值：指定要保留的日志文件数；例如， `5`
+      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
-      * 名称: `org.apache.sling.commons.log.file.size`
+    * Type: `sling:OsgiConfig`
 
-         类型: `String`
-
-         值：根据大小／日期指定控制文件旋转的要求；例如， `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` 通过设置以下任一项来控制日志文件的旋转：
-   * 最大文件大小
-   * 时间／日期计划
-   以指示何时创建新文件（以及根据名称模式重命名的现有文件）。
-   * 可以用数字指定大小限制。 如果未提供大小指示符，则将其视为字节数，或者您可以添加大小指示符 `KB`- `MB`、 `GB` 或（忽略大小写）。
-   * 时间／日期计划可以指定为模 `java.util.SimpleDateFormat` 式。 这定义了文件旋转的时间段；还有附加到旋转文件（用于标识）的后缀。
-   默认为 &#39;.&#39;yyyy-MM-dd（用于日志旋转）。
-   例如，在2010年1月20日午夜（或者，当这之后的第一条日志消息准确无误时）,../logs/error.log将更名为../logs/error.log.2010-01-20。 1月21日的日志记录将输出到../logs/error.log（新的和空的），直到在下一天的更改时滚过。
-       | `&#39;.&#39;yyyy-MM`|每月初的轮换|
-    |—|—|
-    |“”yyyy-ww`|每周第一天的旋转（取决于区域设置）。 |
-       | `&#39;.&#39;yyyy-MM-dd`每天午夜时分旋转。 |
-       | `&#39;.&#39;yyyy-MM-dd-a每天午夜和中午的轮换。 |
-       | `&#39;.&#39;yyyy-MM-dd-HH`每小时的顶部旋转。 |
-       | `&#39;.&#39;yyyy-MM-dd-HH-mm`每分钟开始时的旋转。 |
- 注     
-    意：指定时间／日期时：
-      1. 您应该在单引号(&#39; &#39;)中“转义”文本；
-  这     是为了避免某些字符被解释为模式字母。
-       1. 在选项中的任意位置仅使用允许用于有效文件名的字符。
-   
+   >
+   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
 
-1. 使用所选工具阅读新的日志文件。
+   Set the following properties on this node:
 
-   此示例创建的日志文件将为 `../crx-quickstart/logs/myLogFile.log`。
+    * Name: `org.apache.sling.commons.log.file`
+
+      Type: `String`
+
+      Value: specify the Log File so that it matches the file specified in the Logger;
+
+      for this example, `../logs/myLogFile.log`.
+
+    * Configure the other parameters as required:
+
+        * Name: `org.apache.sling.commons.log.file.number`
+
+          Type: `Long`
+
+          Value: specify the number of log files you want kept; for example, `5`
+
+        * Name: `org.apache.sling.commons.log.file.size`
+
+          Type: `String`
+
+          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
+
+   >[!NOTE]
+   >
+   >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
+   >
+   >* a maximum file size
+   >* a time/date schedule
+   >
+   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).
+   >
+   >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
+   >
+   >The default is '.'yyyy-MM-dd (for daily log rotation).
+   >
+   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
+   >
+   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >      |---|---|
+   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >
+   >      Note: When specifying a time/date:
+   >      1. You should "escape" literal text within a pair of single quotes (' ');
+   >      this is to avoid certain characters being interpreted as pattern letters.
+   >      1. Only use characters allowed for a valid file name anywhere in the option.
+
+1. Read your new log file with your chosen tool.
+
+   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 Felix Console还提供有关Sling Log支持的信息，网址为 `../system/console/slinglog`;例 `https://localhost:4502/system/console/slinglog`如。draf
