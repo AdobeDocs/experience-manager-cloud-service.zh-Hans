@@ -3,14 +3,14 @@ title: 在 Adobe Experience Manager Sites 创作工作流程中，使用连接�
 description: 在另一个 Experience Manager Site 部署中创建网页时，使用远程 Adobe Experience Manager Assets 部署中的可用资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7524f6146c33932677b6c8af49d5fe2638a5c02a
 
 ---
 
 
 # 在 AEM Sites 中，使用连接的资产共享 DAM 资产 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。以下几个原因可能是地理上分散的现有部署，这些部署需要协同工作，或进行收购，从而导致父公司希望共同使用的异构基础结构。
+在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。部分原因可能是在地理上分散但需要相互协同工作的现有部署，或是因并购而导致的需要由父公司统一管理的异构基础架构。
 
 AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需资产的数字资产管理 (DAM) 系统。AEM 现在可通过集成 AEM Sites 和 AEM Assets 来支持上述用例。
 
@@ -91,9 +91,9 @@ AEM 管理员可以创建此集成。创建后，使用该集成所需的权限�
    1. 在“属性”向导中，将&#x200B;**[!UICONTROL 路径]**&#x200B;字段更改为以下映射来更新其正则表达式，以便排除 **[!UICONTROL connectedassets]** 装入点。
    | 之前 | 之后 |
    |---|---|
-   | /content/dam(/((?!/subassets).)*/)renditions/original | /content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*/)renditions/original | /content/dam(/((?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*)/jcr:content/metadata | /content/dam(/((?!connectedassets).)*/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
