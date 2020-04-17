@@ -3,7 +3,7 @@ title: 使用Brand Portal配置AEM Assets云服务
 description: 使用Brand Portal配置AEM Assets云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
+source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)资产通过Adobe I/O配置了Brand Portal,Adobe I/
 
 ## Create configuration {#create-new-configuration}
 
-您可以在Adobe I/O上创建新配置，以通过Brand Portal配置AEM Assets云实例。
+您可以在Adobe I/O上创建配置，以通过Brand Portal配置AEM Assets云实例。
 
 在列出的序列中执行以下步骤：
 1. [获取公共证书](#public-certificate)
@@ -46,9 +46,9 @@ IMS配置包括两个步骤：
 
 公共证书允许您在Adobe I/O上验证用户档案。
 
-1. 登录AEM Assets云实例
+1. 登录AEM Assets云实例。
 
-1. 从“ **Security**![](assets/tools.png) Tools **[!UICONTROL ”面板中，导航到“]** Security **[!UICONTROL ”>“]** Adobe IMS配置”。
+1. 从“工 **具**![”面板中，导航至“安全](assets/tools.png) ” **[!UICONTROL >“]****** Adobe IMS配置”。
 
    ![Adobe IMS帐户配置UI](assets/ims-configuration1.png)
 
@@ -56,13 +56,13 @@ IMS配置包括两个步骤：
 
    单击&#x200B;**[!UICONTROL 创建]**。
 
-   此操作将转到 **[!UICONTROL Adobe IMS技术帐户配置页]** 。
+   您将转到 **[!UICONTROL Adobe IMS技术帐户配置页]** 。
 
 1. 默认情况下，“证 **书** ”选项卡打开。
 
    在 **Cloud Solution**，选择 **[!UICONTROL Adobe Brand Portal]**。
 
-1. 标记复选 **[!UICONTROL 框创建新证书]** ，并指定证 **书的别名** 。 别名用作对话框的名称。
+1. 标记复选框“ **[!UICONTROL 创建新证书]** ”并指定证 **书的别名** 。 别名用作对话框的名称。
 
 1. 单击“ **[!UICONTROL 创建证书]**”。 将显示一个对话框。 单击 **[!UICONTROL 确定]** ，以生成公共证书。
 
@@ -152,18 +152,19 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
 >[!CAUTION]
 >
->仅创建一个有效的IMS配置。
+>只有一个通过运行状况检查的IMS配置。 请勿创建多个IMS配置。
 >
-> 确保配置正常。 如果配置不健康，请删除该配置并创建一个新的健康配置。
+>如果配置未通过运行状况检查，则无效。 您必须删除它并创建一个新的有效配置。
+
 
 
 ### 配置云服务 {#configure-the-cloud-service}
 
 执行以下步骤以创建Brand Portal云服务配置：
 
-1. 登录AEM Assets云实例
+1. 登录AEM Assets云实例。
 
-1. 从“工 **具**![”面板中，导航至“云服务”](assets/tools.png) >“AEM Brand **[!UICONTROL Portal工具]******”。
+1. 从工 **具**![面板中](assets/tools.png) ，导航到“云服务” **[!UICONTROL >]** “AEM Brand **** Portal”工具。
 
    Brand Portal配置页面打开。
 
@@ -183,7 +184,7 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
 1. 登录AEM Assets云实例。
 
-1. 从“工 **具**![”面板中，导航至“部署工](assets/tools.png) 具” **[!UICONTROL >“分]******&#x200B;发工具”。
+1. 从“工 **具** ” ![面板中，导航](assets/tools.png) 到“部署 **[!UICONTROL ”]** >“分 ****&#x200B;发”。
 
    ![](assets/test-bpconfig1.png)
 
@@ -202,8 +203,13 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 1. 此时将打开分发代理页面。 默认情况下，“状 **[!UICONTROL 态]** ”选项卡会打开，其中填充了分发队列。
 
    分发代理包含两个队列：
-   * 用于将资产分发到Brand Portal的处理队列。
-   * 分发失败的资产的错误队列。
+   * **processing-queue**:用于将资产分发到Brand Portal。
+
+   * **error-queue**:对于分发失败的资产。
+   >[!NOTE]
+   >
+   >建议查看故障并定期清 **除错误队列** 。
+
    ![](assets/test-bpconfig3.png)
 
 1. 要验证AEM资产与Brand Portal之间的连接，请单击“测 **[!UICONTROL 试连接”]**。
@@ -238,7 +244,7 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
 例如，我们已将资产从AEM资产发布到Brand Portal以验证配置。
 
-1. 按照测试连接中所示的步骤（第1步到第4步） **[!UICONTROL 操作]** ，然后导航到分发代理页面。
+1. 按照测试连接中所示的步骤（步骤1 - 4） **[!UICONTROL 操作]** ，然后导航到分发代理页面。
 
 1. 单击 **[!UICONTROL 日志]** ，以视图分发日志。 您可以在此处查看处理和错误日志。
 
@@ -246,8 +252,8 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
 分发代理生成以下日志：
 
-* 信息：这是系统生成的日志，在成功配置时触发，用于启用分发代理。
-* DSTRQ1（请求1）:在测试连接时触发。
+* 信息：这是系统生成的日志，在成功配置时触发，从而启用分发代理。
+* DSTRQ1（请求1）:测试连接时触发器。
 
 发布资产时，会生成以下请求和响应日志：
 
@@ -259,28 +265,31 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 * queue-bpdistributionagent0(DSTRQ2):资产将发布到Brand Portal。
 * queue-bpdistributionagent0(DSTRQ3):系统会在Brand Portal中复制包含资产的文件夹。
 
-在上例中，将触发其他请求和响应。 系统无法在Brand Portal中找到父文件夹（例如，添加路径），因为资产是首次发布的，因此，系统会触发其他请求，在发布资产的Brand Portal中创建同名的父文件夹。
+在上例中，将触发其他请求和响应。 系统无法在Brand Portal中找到父文件夹（例如，添加路径），因为资产是第一次发布的，因此，系统会触发另一个请求，在发布资产的Brand Portal中创建同名的父文件夹。
 
 >[!NOTE]
 >
 >如果父级文件夹在Brand Portal中不存在（在上例中），或父级文件夹在AEM资产中已被修改，则会生成其他请求。
 
 
-## 附加信息 {#additional-information}
 
-转到以 `/system/console/slingmetrics` 了解与已分发内容相关的统计信息：
+<!--
 
-1. **计数器指标**
+## Additional information {#additional-information}
+
+Go to `/system/console/slingmetrics` for statistics related to the distributed content:
+
+1. **Counter metrics**
    * sling: `mac_sync_request_failure`
    * sling: `mac_sync_request_received`
    * sling: `mac_sync_request_success`
 
-1. **时间指标**
+1. **Time metrics**
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
 
-
+-->
 
 <!--
    Comment Type: draft
