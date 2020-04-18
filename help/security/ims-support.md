@@ -2,7 +2,7 @@
 title: 对 Adobe Experience Manager 云服务的 IMS 支持
 description: 对 Adobe Experience Manager 云服务的 IMS 支持
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
 
 ---
 
@@ -138,7 +138,7 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 ![产品配置文件](/help/security/assets/ims8.png)
 
-### 登录 Adobe Experience Manager 云服务 (#logging-in-to-aem)
+### 登录 Adobe Experience Manager 云服务 {#logging-in-to-aem}
 
 **本地管理员登录**
 
@@ -153,6 +153,10 @@ AEM 可继续支持管理员用户在本地登录。登录屏幕具有本地登�
 对于其他用户，只需在实例上配置 IMS 即可使用基于 IMS 的登录。用户将先需要单击“使用 Adobe 登录”按钮，如下所示：
 
 ![IMS 登录](/help/security/assets/ims10.png)
+
+
+>[!NOTE]
+> 在IMS中创建的任何用户都可以使用Adobe ID或Federated ID进行创建。 如果用户是使用Adobe ID设置的，则会使用其公司的标识提供者对其进行身份验证以登录。
 
 然后，他们将被重定向到 IMS 登录屏幕，并需要输入其凭证：
 
@@ -189,3 +193,54 @@ ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组
 如下所示，组 **AEM-GRP_008** 继承了 **DAM 用户**&#x200B;的权限，这是管理已同步组权限的有效方式，通常也会在基于 LDAP 的身份验证方法中使用。
 
 ![ACL3](/help/security/assets/ims18.png)
+
+
+### 访问Cloud Manager {#accessing-cloud-manager}
+
+要能够访问Cloud Manager或作为云服务环境访问AEM，您必须分配给Cloud Manager产品的用户档案。
+
+Cloud Manager产品具有以下用户档案:
+
+* 企业所有者
+* 部署管理器
+* 项目经理
+* 开发人员
+* 集成
+
+>[!NOTE]
+>Cloud Manager具有预配置的角色，并具有相应的权限。 要了解每个角色的相关信息，这些角色具有与每个角色关联的特定权限、预配置的任务或权限，请参阅基 [于角色的权限](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
+
+**添加用户的步骤**
+
+1. 从现有用户屏幕或从新用户屏幕将用户添加到特定用户档案。
+
+1. 或者，您也可以从“概述”屏幕 **添加用户** ，如下图所示。
+
+   ![ACL3](/help/security/assets/ims23.png)
+
+   >[!NOTE]
+   >您可以向用户分配多个用户档案，如下图所示。
+
+   ![ACL3](/help/security/assets/ims22.png)
+
+
+1. 将您添加到相应的用户档案后，您应能够通过 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) （从用户界面的右上角）访问Cloud Manager中各自的租户。
+
+
+### 在AEM中以云服务的形式访问实例 {#accessing-instance-cloud-service}
+
+>[!IMPORTANT]
+>在授予您作为云服务访问AEM中的实例的权限之前，上一节中提到的步骤必须已经完成。
+
+要访问 **Admin Console中的AEM实例**，您应在 **Admin Console的产品项目中看到Cloud Manager环境和该项目中的**&#x200B;列表。
+
+例如，在下面的屏幕截图中，您将看到两个可用的环境，即 *开发作者* 和发 *布*。
+
+![ACL3](/help/security/assets/ims19.png)
+
+要访问AEM实例，用户需要添加到相应云服务产品的组中。
+
+每个作者实例都将具有AEM管理员和AEM用户用户档案，每个发布实例都将具有AEM用户用户档案。 您可以根据需要添加其他用户档案。
+
+要获取对AEM实例的管理员级别访问权限，请将用户添加到该特定产品的AEM管理员用户档案。
+
