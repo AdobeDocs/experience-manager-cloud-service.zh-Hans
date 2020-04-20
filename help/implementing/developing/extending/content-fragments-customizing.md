@@ -2,7 +2,7 @@
 title: 自定义和扩展内容片段
 description: 内容片段可扩展标准资产。
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
    * 用于添加新变量等的函数必须相应地更新片段。
    >[!NOTE]
    >
-   >要显示／渲染内容片段，您的帐户必须具有模型的读取权限。
+   >要显示／渲染内容片段，您的帐户必须对模 `read` 型具有权限。
 
    >[!CAUTION]
    >
@@ -233,7 +233,7 @@ source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
       * 添加集合
       * 删除集合
    * 访问片段的模型或模板
-   表示片段主要元素的接口包括：
+   表示片段主元素的接口包括：
 
    * **内容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
