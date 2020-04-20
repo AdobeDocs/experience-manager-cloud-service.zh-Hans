@@ -2,7 +2,7 @@
 title: 对 Adobe Experience Manager 云服务的 IMS 支持
 description: 对 Adobe Experience Manager 云服务的 IMS 支持
 translation-type: tm+mt
-source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
+source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
 
@@ -199,13 +199,7 @@ ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组
 
 要能够访问Cloud Manager或作为云服务环境访问AEM，您必须分配给Cloud Manager产品的用户档案。
 
-Cloud Manager产品具有以下用户档案:
-
-* 企业所有者
-* 部署管理器
-* 项目经理
-* 开发人员
-* 集成
+请参阅角 [色定义](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) ，进一步了解用户的角色，这些角色控制了Cloud Manager中特定功能的可用性。
 
 >[!NOTE]
 >Cloud Manager具有预配置的角色，并具有相应的权限。 要了解每个角色的相关信息，这些角色具有与每个角色关联的特定权限、预配置的任务或权限，请参阅基 [于角色的权限](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
