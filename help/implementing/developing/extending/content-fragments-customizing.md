@@ -2,7 +2,7 @@
 title: 自定义和扩展内容片段
 description: 内容片段可扩展标准资产。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -233,7 +233,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
       * 添加集合
       * 删除集合
    * 访问片段的模型或模板
-   表示片段主元素的接口包括：
+   表示片段主要元素的接口包括：
 
    * **内容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -290,11 +290,9 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * 可能需要付出额外努力的任务:
 
-   * 创建／删除新元素不会更新简单片段的数据结构(基于简 **单片段模板** )。
-
    * 从创建新的变 `ContentFragment` 体以更新数据结构。
 
-   * 删除现有变量不会更新数据结构。
+   * 使用元素删除现有变量不会 `ContentElement.removeVariation()`更新分配给该变量的全局数据结构。 要确保这些数据结构保持同步，请改 `ContentFragment.removeVariation()` 用它，全局删除变量。
 
 ## 内容片段管理API —— 客户端 {#the-content-fragment-management-api-client-side}
 
@@ -312,84 +310,18 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 编辑会话 {#edit-sessions}
 
-当用户在其中一个编辑器页面中打开内容片段时，将启动编辑会话。 当用户通过选择“保存”或“取消”离开编辑器时，编辑会 **话即** 完 **成**。
+>[!CAUTION]
+>
+>请考虑此背景信息。 您不应在此处更改任何内容(因为它在存储库中标记为 *私人区域* )，但在某些情况下，它可能有助于您了解内幕下的工作方式。
 
-### 要求 {#requirements}
+编辑内容片段(可以跨多个视图（= HTML页）)是原子的。 由于这种原子多视图编辑功能不是典型的AEM概念，内容片段使用所谓的编辑 *会话*。
 
-控制编辑会话的要求有：
+当用户在编辑器中打开内容片段时，将启动编辑会话。 当用户通过选择“保存”或“取消”离开编辑器时，编辑会 **话即** 完 **成**。
 
-* 编辑内容片段(可以跨多个视图（= HTML页面）)应该是原子的。
+从技术上讲，所有编辑操 *作都是对实时* 内容进行的，就像所有其他AEM编辑一样。 启动编辑会话后，将创建当前未编辑状态的一个版本。 如果用户取消编辑，则恢复该版本。 如果用户单击“保 **存**”，则不会执行任何特定操作，因为所有编辑操作都对实时内容执行 ** ，因此所有更改都已被保留。 此外，单击“保 **存** ”将触发一些后台处理（例如创建全文搜索信息和／或处理混合媒体资产）。
 
-* 编辑也应是交易 *的*;在编辑会话结束时，必须提交（保存）或回滚（取消）更改。
-
-* 边缘案件应妥善处理；这些情况包括用户通过手动输入URL或使用全局导航离开页面时的情况。
-
-* 应提供定期自动保存（每x分钟），以防止数据丢失。
-
-* 如果内容片段由两个用户同时编辑，则他们不应覆盖彼此的更改。
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* 离开页面
-
-   * 如果存在编辑会话且更改尚未持续，则会显示模态确认对话框，以通知用户可能丢失的内容并允许他们保留在页面上。
+边缘案件有一些安全措施，例如，如果用户尝试离开编辑器而不保存或取消编辑会话。 此外，定期自动保存可防止数据丢失。
+请注意，两个用户可以同时编辑同一内容片段，因此可能会覆盖彼此的更改。 为防止出现这种情况，内容片段需要通过对片段应用DAM管理的 *Checkout* （结帐）操作来锁定。
 
 ## 示例 {#examples}
 
