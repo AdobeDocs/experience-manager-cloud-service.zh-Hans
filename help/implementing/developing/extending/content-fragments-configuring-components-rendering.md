@@ -2,7 +2,7 @@
 title: 内容片段配置要渲染的组件
 description: 内容片段配置要渲染的组件
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 * 您需要实现您自己的基于内容片段的组件，
 * 需要利用先进的服务。
 
-但是，建议使用核心组件。
+建议使用核心组件。
 
 >[!CAUTION]
 >
