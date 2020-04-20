@@ -2,7 +2,7 @@
 sub-product: 将AEM作为云服务实施
 user-guide-title: 将AEM作为云服务实施
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
 
 ---
 
@@ -32,6 +32,8 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [理解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
 + 配置和扩展 AEM 云服务 {#configuring-and-extending}
    + [扩展体验片段](developing/extending/experience-fragments.md)
+   + [自定义和扩展内容片段](developing/extending/content-fragments-customizing.md)
+   + [内容片段配置要渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [配置搜索表单](developing/extending/search-forms.md)
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
