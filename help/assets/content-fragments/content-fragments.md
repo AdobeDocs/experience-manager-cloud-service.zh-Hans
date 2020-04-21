@@ -2,21 +2,21 @@
 title: 使用内容片段
 description: 了解内容片段如何允许您设计、创建、策划和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
 # 使用内容片段{#working-with-content-fragments}
 
-Adobe Experience Manager(AEM)内容片段允许您设计、创建、策划和发 [布独立于页面的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它们允许您准备内容，准备好在多个位置／通过多个渠道使用。
+Adobe Experience Manager(AEM)内容片段允许您设计、创建、策划和发 [布独立于页面的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它们允许您准备内容，准备好在多个位置／多个渠道中使用。
 
-使用AEM核心组件的Sling Model(JSON)导出功能，内容片段也可以以JSON格式交付。 这种交付形式：
+使用AEM核心组件的Sling Model(JSON)导出功能，内容片段也可以以JSON格式交付。 这种投放:
 
 * 允许您使用组件管理片段中要传送的元素
-* 允许批量交付，方法是在用于API交付的页面上添加多个内容片段核心组件
+* 允许批量投放，方法是在用于API投放的页面上添加多个内容片段核心组件
 
-本页和以下页面涵盖创建、配置和维护内容片段的任务：
+本页和以下各页涵盖创建、配置和维护内容片段的任务:
 
 * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md) -创建您的内容片段；然后编辑、发布和引用
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md) -启用、创建和定义模型
@@ -29,38 +29,38 @@ Adobe Experience Manager(AEM)内容片段允许您设计、创建、策划和发
 >
 >这些页面应结合使用内容片段 [进行页面创作来读取](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 
-通信渠道的数量每年都在增加。 通常，渠道指的是交付机制，如：
+通信渠道的数量每年都在增加。 通常，渠道指投放机制，如下所示：
 
-* 物理渠道；例如，桌面、移动设备。
-* 实体渠道中的交付形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动Web”（适用于移动设备的移动应用程序）。
+* 身体渠道;例如，桌面、移动设备。
+* 投放形式；例如，“产品详细信息页”、“产品类别页”（适用于桌面）或“移动Web”（适用于移动设备的移动应用程序）。
 
 但是，您（可能）不希望对所有渠道使用完全相同的内容——您需要根据特定渠道优化您的内容。
 
 内容片段允许您：
 
 * 考虑如何跨渠道有效地触及目标受众。
-* 创建和管理渠道中立的编辑内容。
+* 创建和管理不含渠道的编辑内容。
 * 为各种渠道构建内容池。
 * 为特定渠道设计内容变体。
 * 通过插入资产（混合媒体片段）将图像添加到文本中。
 
-然后，可以组合这些内容片段，以提供跨各种渠道的体验。
+然后，可以组合这些内容片段，以便在各种渠道上提供体验。
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
-AEM Content services旨在将AEM中／来自AEM的内容的描述和交付概括到网页之外。
+AEM Content Services旨在将AEM中／来自AEM的内容的描述和投放概括为超出对网页的关注范围。
 
-它们使用可供任何客户使用的标准化方法，向非传统AEM网页的渠道提供内容交付。 这些渠道可以包括：
+它们使用可供任何客户使用的标准化方法，向非传统AEM网页的渠道提供内容投放。 这些渠道包括：
 
 * 单页应用程序
 * 本机移动应用程序
 * AEM外部的其他渠道和触点
 
-交付采用JSON格式。
+投放采用JSON格式。
 
 AEM内容片段可用于描述和管理结构化内容。 结构化内容在可包含各种内容类型的模型中进行定义；包括文本、数字数据、布尔值、日期和时间等。
 
-此结构化内容与AEM核心组件的JSON导出功能一起可用于将AEM内容交付到AEM页面以外的渠道。
+此结构化内容与AEM核心组件的JSON导出功能一起可用于将AEM内容交付给AEM页面以外的渠道。
 
 >[!NOTE]
 >
@@ -114,12 +114,12 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 内容片段是一种内容结构，它：
 
-* 没有布局或设计（在富文本模式下，可以设置一些文本格式）。
+* 没有布局或设计（在富文本模式下可以设置一些文本格式）。
 * 包含一个或多个组成 [部分](#constituent-parts-of-a-content-fragment)。
 * 可 [以包含或连接到图像](#fragments-with-visual-assets)。
 * 在页面 [上引用时](#in-between-content-when-page-authoring-with-content-fragments) ，可以使用中间内容。
 
-* 独立于交付机制（即页面、渠道）。
+* 独立于投放机制(即页面、渠道)。
 
 ### 带有可视资产的片段 {#fragments-with-visual-assets}
 
@@ -143,7 +143,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 在页面上使用片段时，可轻松地使用（作为中间内容）。
    * 有关详 [细信息](/help/assets/content-fragments/content-fragments-assoc-content.md) ，请参阅关联内容。
 
-* 从页面编辑器的“ **资产** ”浏览器中可用的资产
+* 页面编辑器的&#x200B;**资产浏览器**&#x200B;中的可用资产
 
    * 允许完全灵活地选择资产。
    * 为定位提供了一定的灵活性。
@@ -161,7 +161,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 对于简单的片段：
 
       * 内容保存在一个或多个多行文本字段或元素中。
-      * 元素在片段模板中定义（创作片段时无法定义，请参阅内容片段模板）。 <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * 元素在片段模板中定义（创作片段时无法定义）。
 
 * **片段段落**
 
@@ -189,12 +189,12 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
    >[!NOTE]
    >
-   >在页面上使用片 [段时，还可以将资产添加为其他](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) （中间）内容；使用关联内容或资产浏览器中的资产。
+   >在页面上使用片 [段时](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ，还可以将资产添加为附加（中间）内容；使用关联内容或资产浏览器中的资产。
 
 * **关联的内容**
 
    * 这是片段外部的内容，但与片段的编辑相关。 通常是图像、视频或其他片段。
-   * 将集合中的单个资产添加到页面时，这些资产可用于页面编辑器中的片段。 这意味着，这些渠道是可选的，具体取决于特定渠道的要求。
+   * 将集合中的单个资产添加到页面时，这些资产可用于页面编辑器中的片段。 这意味着，根据特定渠道的要求，这些选项是可选的。
    * 资产通过集 [合与片段关联](/help/assets/content-fragments/content-fragments-assoc-content.md);关联的集合允许作者决定在创作页面时要使用哪些资产。
 
       * 集合可以通过模板、默认内容或作者在片段创作过程中与片段关联。
@@ -203,7 +203,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 * **片段元数据**
 
-   * 使用资产 [元数据架构](/help/assets/metadata-schemas.md)。
+   * 使用资产 [元数据模式](/help/assets/metadata-schemas.md)。
    * 在以下情况下可以创建标记：
 
       * 创建和创作片段
@@ -213,7 +213,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
          * 通过在片段编 **辑器中** ，编辑元数据
    >[!CAUTION]
    >
-   >元数据处理配置文件不适用于内容片段。
+   >元数据处理用户档案不适用于内容片段。
 
 * **母版**
 
@@ -227,7 +227,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 * **变量**
 
-   * 特定于编辑目的的片段文本的再现；可以与频道相关，但不是强制的，也可以是临时本地修改。
+   * 特定于编辑目的的片段文本的再现；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
    * 创建为主页的副 **本**，但可以根据需要进行编辑；这些变体之间通常存在内容重叠。
    * 可以在片段创作过程中定义，也可以在片段模板中预定义。
    * 存储在片段中，以帮助避免内容副本的散布。
@@ -263,7 +263,8 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 * **片段模板**
 
    * 创建简 [单片段所需](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
-   * 通常在项目实施过程中开发；创作时无法创建。 <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * 通常在项目实施过程中开发；无法在创作时创建。
+
    * 定义简单片段的基本属性（标题、文本元素数量、标记定义）。
    * 模板定义需要一个标题和一个文本元素；其他一切都是可选的。 模板定义片段和默认内容的最小范围（如果适用）。 作者稍后可以将片段扩展到模板中定义的范围之外。
 
@@ -271,7 +272,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
    * 有助于以HTML和／或JSON格式传送片段。
    * 在页面 [上引用片段时必需](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
-   * 负责片段的布局和交付；即渠道。
+   * 负责片段的布局和投放;即渠道。
    * 片段需要一个或多个专用组件来定义布局并交付部分或全部元素／变量和相关内容。
    * 在创作过程中将片段拖动到页面上将自动关联所需的组件。
 
