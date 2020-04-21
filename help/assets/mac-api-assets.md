@@ -3,7 +3,7 @@ title: 资产 HTTP API
 description: 了解Assets HTTP API的实施、数据模型和功能。 使用资产HTTP API可以对资产执行各种任务。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 概述 {#overview}
 
-资产HTTP API允许对资产执行创建——读取——更新——删除(CRUD)操作，包括二进制、元数据、演绎版和注释，以及使用AEM内容片段的结构化内容。 它在上公开， `/api/assets` 并作为REST API实现。 它包含 [对内容片段的支持](content-fragments/content-fragments.md)。
+资产HTTP API允许对资产执行创建——读取——更新——删除(CRUD)操作，包括二进制、元数据、演绎版和注释，以及使用AEM内容片段的结构化内容。 它在上公开， `/api/assets` 并作为REST API实现。 它包含 [对内容片段的支持](assets-api-content-fragments.md)。
 
 访问API:
 
@@ -31,13 +31,13 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 内 [容片段](content-fragments/content-fragments.md) ，是一种特殊类型的资产。 它可用于访问结构化数据，例如文本、数字、日期等。 由于资产(如图像或文档) `standard` 存在若干差异，因此某些其他规则适用于处理内容片段。
 
-有关详细信息， [请参阅AEM Assets HTTP API中的内容片段支持](content-fragments/content-fragments.md)。
+有关详细信息， [请参阅AEM Assets HTTP API中的内容片段支持](assets-api-content-fragments.md)。
 
 ## Data model {#data-model}
 
 资产HTTP API公开两个主要元素、文件夹和资产（对于标准资产）。
 
-此外，它还为描述内容片段中结构化内容的自定义数据模型提供更详细的元素。 有关更 [多信息，请参阅内容片段数据模型](content-fragments/content-fragments.md) 。
+此外，它还为描述内容片段中结构化内容的自定义数据模型提供更详细的元素。 有关更 [多信息，请参阅内容片段数据模型](assets-api-content-fragments.md#content-models-and-content-fragments) 。
 
 ### 文件夹 {#folders}
 
@@ -66,7 +66,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * 多个演绎版，如原始演绎版（最初上传的资产）、缩略图和各种其他演绎版。 其他再现可能是不同大小的图像、不同的视频编码或从PDF或InDesign中提取的页面。
 * 可选注释
 
-有关内容片段中元素的信息，请参 [阅AEM Assets HTTP API中的内容片段支持](content-fragments/content-fragments.md)。
+有关内容片段中元素的信息，请参 [阅AEM Assets HTTP API中的内容片段支持](assets-api-content-fragments.md)。
 
 在AEM中，文件夹包含以下组件：
 
