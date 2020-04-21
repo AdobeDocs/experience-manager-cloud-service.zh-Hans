@@ -2,7 +2,7 @@
 title: 管理内容片段
 description: 内容片段存储为资产，因此主要通过“资产”控制台进行管理。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 ---
 
@@ -24,13 +24,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->有关模板的更多信息，请参阅开发内容片段；用于简单内容片段。
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
+>有关模 [板的更多信息](/help/implementing/developing/extending/content-fragments-customizing.md) ，请参阅开发内容片段；用于简单内容片段。
 
 ### 创建内容片段 {#creating-a-content-fragment}
 
@@ -42,7 +36,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    * 这可以是：
 
-      * 模板——例如 **简单片段**<!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * Template - for example **Simple Fragment**
 
       * [模型](/help/assets/content-fragments/content-fragments-models.md) -用于创建需要结构化内容的片段；例如机 **场模型**
    * 将显示所有可用的模板和模型。
@@ -93,7 +87,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 * **签出**
 * **属性**
 
-   * 允许您查看和／或编辑片段的元数据。
+   * 允许您视图和／或编辑片段的元数据。
 
 * **编辑**
 
@@ -120,11 +114,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 要打开片段进行编辑，请执行以下操作：
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>要编辑内容片段，您需要 [相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
 
 >[!CAUTION]
 >
@@ -133,7 +125,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 1. 使用“ **资产** ”控制台导航到内容片段的位置。
 2. 通过以下任一方式打开片段进行编辑：
 
-   * 单击／点按片段或片段链接（这取决于控制台视图）。
+   * 单击／点按片段或片段链接(这取决于控制台视图)。
    * 选择片段，然后从工 **具栏中** “编辑”。
    片段编辑器将打开：
 
@@ -142,9 +134,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >[!NOTE]
    >
    >1. 当内容页面上已引用片段时，将显示一条消息。
-   >
-   >
-   >2. 可使用“切换侧面板”图标隐藏／显 **示侧面板** 。
+      >
+      >
+      >
+
+   2. 可使用“切换侧面板”图标隐藏／显 **示侧面板** 。
 
 
 3. 使用侧面板中的图标在三种模式之间导航：
@@ -176,13 +170,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    >[!CAUTION]
    >
-   >要编辑内容片段，您需要相应的权限。 如果您遇到问题，请联系您的系统管理员。
-
-   <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+   >要编辑内容片段，您需要 [相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
 
    >[!NOTE]
    >
@@ -204,7 +192,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 1. 打开内容片段进行编辑时，AEM会检查是否存在基于cookie的令牌，该令牌指示编辑会 *话是否存在* :
 
    1. 如果找到令牌，则片段被视为现有编辑会话的一部分。
-   2. 如果令牌不可 *用* ，并且用户开始编辑内容，则会创建一个版本，并将此新编辑会话的令牌发送到客户端，并将其保存在Cookie中。
+   2. 如果令牌不可用 ** ，且用户开始编辑内容，则会创建一个版本，并将此新编辑会话的令牌发送到客户端，在客户端中，该令牌保存在cookie中。
 
 2. 当存在活动的编 *辑会话* ，所编辑的内容会每600秒（默认）自动保存一次。
 
@@ -215,7 +203,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >默认值，请参阅：
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. 如果用户选择取 **消编辑** ，则恢复在编辑会话开始时创建的版本，并删除令牌以结束编辑会话。
+3. 如果用户选择取 **消编辑** ，则恢复在编辑会话的开始中创建的版本，并删除令牌以结束编辑会话。
 4. 如果用户选择“保 **存** ”编辑，则更新的元素／变量将被保留，并删除令牌以结束编辑会话。
 
 ## 编辑片段内容 {#editing-the-content-of-your-fragment}
@@ -232,13 +220,13 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-您可以使用元数据选项卡查看和编辑片段的 [属性](/help/assets/content-fragments/content-fragments-metadata.md) 。
+您可以使用“元数据”选项卡视图和编辑片段 [的属](/help/assets/content-fragments/content-fragments-metadata.md) 性。
 
 ## 内容片段的时间轴 {#timeline-for-content-fragments}
 
 除了标准选项之外，时间轴还 [提供特定于内容片段的信息](/help/assets/manage-digital-assets.md#timeline) 和操作：
 
-* 查看有关版本、注释和注释的信息
+* 视图有关版本、注释和注释的信息
 * 版本操作
 
    * **[还原到此版本](#reverting-to-a-version)**（选择现有片段，然后选择特定版本）
@@ -310,7 +298,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!CAUTION]
 如果您的片段基于模型，则应确保该 [模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
-如果发布的内容片段尚未发布模型，则会显示一个选择列表以指示此情况，并且该模型将随片段一起发布。
+如果发布的内容片段尚未发布模型，则会显示一个选择列表，指示此情况，并且模型将随片段一起发布。
 
 必须发布内容片段才能在发布环境中使用。 可以发布它们：
 
@@ -334,4 +322,4 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 4. 确认删 **除** 。
 
    >[!CAUTION]
-   如果片段已在页面中被引用，您将看到一条警告消息，并需要确认要继续强制删 **除**。 片段及其内容片段组件将从任何内容页面中删除。
+   如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。
