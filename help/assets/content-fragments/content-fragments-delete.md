@@ -1,13 +1,13 @@
 ---
-title: 内容片段——删除注意事项
-description: 内容片段——删除注意事项
+title: 内容片段 - 删除注意事项
+description: 内容片段 - 删除注意事项
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# 内容片段——删除注意事项{#content-fragments-delete-considerations}
+# 内容片段 - 删除注意事项{#content-fragments-delete-considerations}
 
 ## 权限——删除或不删除 {#permissions-delete-or-not-delete}
 
@@ -25,11 +25,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    内容片段编辑器的基本操作要求可以删除这种临时子元素。 例如，在操作变量时；编辑元数据或管理关联内容时。
 
    * **用例**:需要编辑／更新内容片段的用户- **不允许删除整个片段**。
-   * **权限**:请参阅仅编辑器功能所需的权限。 <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **权限**:请参阅 [仅编辑器功能所需的权限](#permissions-required-for-editor-functionality-only)。
 
 >[!NOTE]
 >
->当用户没有任何“删除”权限时，内容片段编辑器将以只 *读模式运行* 。 <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
