@@ -2,7 +2,7 @@
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 translation-type: tm+mt
-source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -40,13 +40,13 @@ source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
    + [资产的数字版权管理](drm.md)
 + 配置、管理和扩展资产 {#admin}
    + [API 和参考资料](developer-reference-material-apis.md)
-   + [AEM Assets HTTP API中的内容片段支持](assets-api-content-fragments.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
    + [处理配置文件](/help/assets/dynamic-media/processing-profiles.md)
    + [多语言资产和资产翻译](translate-assets.md)
    + [搜索 Facet](search-facets.md)
    + [扩展资产编辑器](extend-asset-editor.md)
    + [资产 HTTP API](mac-api-assets.md)
+   + [AEM Assets HTTP API中的内容片段支持](assets-api-content-fragments.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
    + [资产报表](asset-reports.md)
    + [串联元数据](cascading-metadata.md)
