@@ -2,7 +2,7 @@
 title: 管理内容片段
 description: 内容片段存储为资产，因此主要通过“资产”控制台进行管理。
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 [在创建包含结构化内容的内容片段之前](/help/assets/content-fragments/content-fragments-models.md) ，可以启用和创建内容片段模型。
 
->[!NOTE]
->
->有关模 [板的更多信息](/help/implementing/developing/extending/content-fragments-customizing.md) ，请参阅开发内容片段；用于简单内容片段。
-
 ### 创建内容片段 {#creating-a-content-fragment}
 
 创建内容片段的方法（基本上）对于简单片段和结构化片段都是相同的：
@@ -36,10 +32,11 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
    * 这可以是：
 
-      * Template - for example **Simple Fragment**
+      * 简单 **片段模板**
 
       * [模型](/help/assets/content-fragments/content-fragments-models.md) -用于创建需要结构化内容的片段；例如机 **场模型**
-   * 将显示所有可用的模板和模型。
+
+         * 将显示所有可用型号。
    选择后，使用“下 **一步** ”继续。
 
    ![片段基础](assets/cfm-managing-01.png)
