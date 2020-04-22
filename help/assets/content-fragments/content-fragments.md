@@ -2,7 +2,7 @@
 title: 使用内容片段
 description: 了解内容片段如何允许您设计、创建、策划和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -94,7 +94,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 内容片段可以是：
 
 * 简单片段这些片段没有预定义的结构。 它们仅包含文本和图像。
-这些模板基于简单片段模板。
+这些模板基于简 **单片段模板** 。
 
 * 包含结构化内容的片段这些片段基于内 [容片段模型](/help/assets/content-fragments/content-fragments-models.md)，该模型为生成的片段预定义了结构。
 这些组件还可用于使用JSON导出器实现内容服务。
@@ -161,7 +161,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 对于简单的片段：
 
       * 内容保存在一个或多个多行文本字段或元素中。
-      * 元素在片段模板中定义（创作片段时无法定义）。
+      * 元素在简单片段模 **板中定义** 。
 
 * **片段段落**
 
@@ -197,7 +197,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 将集合中的单个资产添加到页面时，这些资产可用于页面编辑器中的片段。 这意味着，根据特定渠道的要求，这些选项是可选的。
    * 资产通过集 [合与片段关联](/help/assets/content-fragments/content-fragments-assoc-content.md);关联的集合允许作者决定在创作页面时要使用哪些资产。
 
-      * 集合可以通过模板、默认内容或作者在片段创作过程中与片段关联。
+      * 集合可以作为默认内容与片段相关联，也可以由作者在片段创作过程中关联。
       * [资产(DAM)集合](/help/assets/manage-collections.md) 是片段关联内容的基础。
    * （可选）您还可以将片段本身添加到集合以帮助跟踪。
 
@@ -229,7 +229,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
    * 特定于编辑目的的片段文本的再现；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
    * 创建为主页的副 **本**，但可以根据需要进行编辑；这些变体之间通常存在内容重叠。
-   * 可以在片段创作过程中定义，也可以在片段模板中预定义。
+   * 可以在片段创作过程中定义。
    * 存储在片段中，以帮助避免内容副本的散布。
    * 如果主内容 [已更新](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) ，则可以与主内容同步变量。
    * 可以进行 [汇总](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) ，以将文本快速截断到预定义的长度。
@@ -262,11 +262,8 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 * **片段模板**
 
-   * 创建简 [单片段所需](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
-   * 通常在项目实施过程中开发；无法在创作时创建。
-
+   * 需 **要简单片段** 模板才能 [创建简单片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
    * 定义简单片段的基本属性（标题、文本元素数量、标记定义）。
-   * 模板定义需要一个标题和一个文本元素；其他一切都是可选的。 模板定义片段和默认内容的最小范围（如果适用）。 作者稍后可以将片段扩展到模板中定义的范围之外。
 
 * **内容片段组件**
 
