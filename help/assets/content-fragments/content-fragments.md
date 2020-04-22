@@ -2,7 +2,7 @@
 title: 使用内容片段
 description: 了解内容片段如何允许您设计、创建、策划和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,11 +93,19 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 内容片段可以是：
 
-* 简单片段这些片段没有预定义的结构。 它们仅包含文本和图像。
-这些模板基于简 **单片段模板** 。
+* 简单片段
 
-* 包含结构化内容的片段这些片段基于内 [容片段模型](/help/assets/content-fragments/content-fragments-models.md)，该模型为生成的片段预定义了结构。
-这些组件还可用于使用JSON导出器实现内容服务。
+   * 它们没有预定义的结构。
+
+   * 它们仅包含文本和图像。
+
+   * 这些模板基于简 **单片段模板** 。
+
+* 包含结构化内容的片段
+
+   * 这些代码基于内容 [片段模型](/help/assets/content-fragments/content-fragments-models.md)，该模型为生成的片段预定义了结构。
+
+   * 这些组件还可用于使用JSON导出器实现内容服务。
 
 ## 内容类型 {#content-type}
 
