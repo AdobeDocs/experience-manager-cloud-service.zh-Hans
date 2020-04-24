@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
@@ -96,7 +96,7 @@ AEM作为云服务优惠，您可以配置：
 
 输出示例：
 
-**AEM HTTP请求／响应访问记录**
+**AEM HTTP请求／响应访问日志**
 
 每个访问请求都在此处注册，并随响应一起注册。
 
