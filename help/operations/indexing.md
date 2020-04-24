@@ -2,7 +2,7 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
 
 ---
 
@@ -116,7 +116,6 @@ AS NOTE: the above is internal for now.
 使用蓝绿色部署，不会停机。 但是，对于索引管理，这要求索引仅由某些版本的应用程序使用。 例如，在应用程序版本2中添加索引时，您还不希望应用程序版本1使用该索引。 相反，删除索引时的情况是：版本1中仍需要在版本2中删除的索引。 更改索引定义时，我们希望旧版本的索引仅用于版本1，新版本的索引仅用于版本2。
 
 下表显示了5个索引定义：索引 `cqPageLucene` 在两个版本中都使用，而索引 `damAssetLucene-custom-1` 仅在版本2中使用。
-
 
 >[!NOTE]
 >
