@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ AEM作为云服务优惠，您可以配置：
 
 * 不链接到特定的Writer，因此将创建并使用具有默认配置（每日日志旋转）的隐式Writer。
 
-### AEM作为云服务HTTP请求日志记录 {#request-logging}
+**AEM作为云服务HTTP请求日志记录**
 
 此处将注册对AEM WCM和存储库的所有访问请求。
 
 输出示例：
 
-### AEM HTTP请求／响应访问记录 {#access-logging}
+**AEM HTTP请求／响应访问记录**
 
 每个访问请求都在此处注册，并随响应一起注册。
 
 输出示例：
 
-### Apache Web Server/调度程序日志记录 {#dispatcher-logging}
+**Apache Web Server/调度程序日志记录**
 
 这是用于调试Dispatcher问题的日志。 有关详细信息，请参 [阅调试Apache和Dispatcher配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/)。
 
