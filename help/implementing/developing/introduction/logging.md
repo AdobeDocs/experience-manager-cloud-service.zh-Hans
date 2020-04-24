@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ AEM作为云服务优惠，您可以配置：
 
    * 为服 `Warning` 务将消 `../logs/error.log` 息写入 `org.apache.pdfbox`。
 
-* 不链接到特定的Writer，因此将创建并使用具有默认配置（每日日志旋转）的隐式Writer。
+* 不链接到特定的Writer，因此将创建并使用具有默认配置的隐式Writer。
 
 **AEM作为云服务HTTP请求日志记录**
 
@@ -96,7 +96,7 @@ AEM作为云服务优惠，您可以配置：
 
 输出示例：
 
-**AEM HTTP请求／响应访问日志**
+**AEM作为云服务HTTP请求／响应访问日志**
 
 每个访问请求都在此处注册，并随响应一起注册。
 
@@ -183,7 +183,7 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## 设置日志级别 {#setting-the-log-level}
+### 设置日志级别 {#setting-the-log-level}
 
 要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后进行完全重新部署。 由于这不是即时的，因此请务必小心为收到大量流量的生产环境启用详细日志。 将来，可能会有一些机制来更快速地更改日志级别。
 
@@ -191,7 +191,7 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
 >
 > 要执行下面列出的配置更改，您需要在本地开发环境上创建这些更改，然后将其作为云服务实例推送到AEM。 有关如何执行此操作的详细信息，请参 [阅将AEM部署为云服务](/help/implementing/deploying/overview.md)。
 
-### 激活调试日志级别 {#activating-the-debug-log-level}
+**激活调试日志级别**
 
 >[!WARNING]
 >
