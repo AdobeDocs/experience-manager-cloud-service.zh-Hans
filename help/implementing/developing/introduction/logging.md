@@ -2,12 +2,28 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
+source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
 
 ---
 
 
 # 记录{#logging}
+
+AEM作为云服务，是客户包含自定义代码以为其客户群创建独特体验的平台。 考虑到这一点，在云环境上调试自定义代码(尤其是本地开发环境)时，日志记录是一个关键功能。
+
+
+<!-- ## Global Logging {#global-logging}
+
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
+
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
+
+## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
 
 AEM作为云服务优惠，您可以配置：
 
@@ -23,50 +39,7 @@ AEM作为云服务优惠，您可以配置：
 >
 >以云服务身份登录AEM基于Sling原则。 有关更 [多信息，请参阅](https://sling.apache.org/site/logging.html) Sling日志记录。
 
-<!-- ## Global Logging {#global-logging}
-
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
-
-* the logging level
-* the location of the central log file
-* the number of versions to be kept
-* version rotation; either maximum size or a time interval
-* the format to be used when writing the log messages
--->
-
-## 记事员与个人服务作者 {#loggers-and-writers-for-individual-services}
-
-除了全局日志记录设置之外，AEM作为云服务还允许您为单个服务配置特定设置：
-
-* 特定日志记录级别
-* 记录器（提供日志消息的OSGi服务）
-
-这允许您将单个服务的日志消息渠道到单独的文件中。 这在开发或测试过程中特别有用；例如，当您需要特定服务的更高日志级别时。
-
-AEM作为云服务，使用以下方法将日志消息写入文件：
-
-1. OSGi服 **务** （记录器）写入日志消息。
-1. 记 **录器会采用此消息** ，并根据您的规范设置其格式。
-1. 记 **录编写器** ，将所有这些消息写入您定义的物理文件。
-
-这些元素通过相应元素的以下参数进行链接：
-
-* **记录器（记录器）**
-
-   定义生成消息的服务。
-
-<!-- * **Log File (Logging Logger)**
-
-  Define the physical file for storing the log messages.
-
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
-
-* **Log File (Logging Writer)**
-
-  Define the physical file that the log messages will be written to.
-
-  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
--->
+## AEM作为云服务Java日志记录 {#aem-as-a-cloud-service-java-logging}
 
 ### 标准记事员和作者 {#standard-loggers-and-writers}
 
@@ -117,7 +90,25 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
 
 * 不链接到特定的Writer，因此将创建并使用具有默认配置（每日日志旋转）的隐式Writer。
 
-除了AEM上作为云服务实例(`request`、 `access` 和日 `error` 志)存在的三种日志，还有另一种用于调试Dispatcher问题的日志。 有关详细信息，请参 [阅调试Apache和Dispatcher配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)。
+### AEM作为云服务HTTP请求日志记录 {#request-logging}
+
+此处将注册对AEM WCM和存储库的所有访问请求。
+
+输出示例：
+
+### AEM HTTP请求／响应访问记录 {#access-logging}
+
+每个访问请求都在此处注册，并随响应一起注册。
+
+输出示例：
+
+### Apache Web Server/调度程序日志记录 {#dispatcher-logging}
+
+这是用于调试Dispatcher问题的日志。 有关详细信息，请参 [阅调试Apache和Dispatcher配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/)。
+
+<!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
+
+leftover text from the last breakaway chunk (re dispatcher) -->
 
 就最新实践而言，建议您与AEM中当前存在的配置（作为Cloud Service Maven原型）保持一致。 这些设置为特定环境类型设置不同的日志设置和级别：
 
@@ -133,11 +124,8 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="debug"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 
@@ -147,11 +135,8 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="warn"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 * `prod` 环境:
@@ -160,12 +145,43 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="error"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
+
+### 记事员与个人服务作者 {#loggers-and-writers-for-individual-services}
+
+除了全局日志记录设置之外，AEM作为云服务还允许您为单个服务配置特定设置：
+
+* 特定日志记录级别
+* 记录器（提供日志消息的OSGi服务）
+
+这允许您将单个服务的日志消息渠道到单独的文件中。 这在开发或测试过程中特别有用；例如，当您需要特定服务的更高日志级别时。
+
+AEM作为云服务，使用以下方法将日志消息写入文件：
+
+1. OSGi服 **务** （记录器）写入日志消息。
+1. 记 **录器会采用此消息** ，并根据您的规范设置其格式。
+1. 记 **录编写器** ，将所有这些消息写入您定义的物理文件。
+
+这些元素通过相应元素的以下参数进行链接：
+
+* **记录器（记录器）**
+
+   定义生成消息的服务。
+
+<!-- * **Log File (Logging Logger)**
+
+  Define the physical file for storing the log messages.
+
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
+
+* **Log File (Logging Writer)**
+
+  Define the physical file that the log messages will be written to.
+
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ## 设置日志级别 {#setting-the-log-level}
 
@@ -403,3 +419,70 @@ AEM作为云服务，使用以下方法将日志消息写入文件：
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 Felix Console还提供有关Sling Log支持的信息，网址为 `../system/console/slinglog`;例 `https://localhost:4502/system/console/slinglog`如。draf
+
+## 访问和管理日志 {#manage-logs}
+
+用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定列表的可用日志文件环境。
+
+这些文件可以通过UI从“概述”页面 **下载** 。
+
+![](assets/manage-logs1.png)
+
+或者， **环境** :
+
+![](assets/manage-logs2.png)
+
+>[!Note]
+>无论打开位置如何，都会显示相同的对话框，允许下载单个日志文件。
+
+![](assets/manage-logs3.png)
+
+
+### 通过API记录 {#logs-thorugh-api}
+
+除了通过UI下载日志外，日志还可通过API和命令行界面使用。
+
+例如，要下载特定环境的日志文件，该命令将是
+
+```java
+$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
+```
+
+以下命令允许跟踪日志：
+
+```java
+$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
+```
+
+为了获得环境ID（本例中为1884）以及可用的服务或日志名称选项，您可以使用：
+
+```java
+$ aio cloudmanager:list-environments
+Environment Id Name                     Type  Description                          
+1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
+1884           FoundationInternal_stage stage Foundation Internal STAGE environment
+1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
+ 
+ 
+$ aio cloudmanager:list-available-log-options 1884
+Environment Id Service    Name         
+1884           author     aemerror     
+1884           author     aemrequest   
+1884           author     aemaccess    
+1884           publish    aemerror     
+1884           publish    aemrequest   
+1884           publish    aemaccess    
+1884           dispatcher httpderror   
+1884           dispatcher aemdispatcher
+1884           dispatcher httpdaccess
+```
+
+>[!Note]
+>虽然 **日志下载** (Log Downloads **)可通过UI和API使用，但** Log Tailing（日志跟踪）是仅限API/CLI的。
+
+### 其他资源 {#resources}
+
+请参阅以下其他资源，进一步了解Cloud Manager API和Adobe I/O CLI:
+
+* [Cloud Manager API文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
