@@ -1,42 +1,44 @@
 ---
-title: WCAG 2.1快速指南
-seo-title: WCAG 2.1快速指南
-translation-type: tm+mt
+title: WCAG 2.1 快速指南
+seo-title: WCAG 2.1 快速指南
+translation-type: ht
 source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
 
-# WCAG 2.1快速指南{#quick-guide-to-wcag}
+# WCAG 2.1 快速指南{#quick-guide-to-wcag}
 
-Adobe Experience Manager(AEM)作为云服务的开发旨在最大限度地遵守Web内容辅助功能准则。
+Adobe Experience Manager (AEM) 云服务的开发旨在最大限度地符合 Web 内容辅助功能准则。
 
-Web内 [容辅助功能准则2.1版(WCAG)](https://www.w3.org/TR/WCAG/) ，是由 [World Wide Web Consortium(W3C)](https://www.w3.org/) (Web Accessibility Initiative(WAI))根据其 [Web辅助功能计划(WAI)制定的一组国际公认准则](https://www.w3.org/WAI/)。
+[Web 辅助功能准则版本 2.1 (WCAG)](https://www.w3.org/TR/WCAG/) 是由[万维网联盟 (W3C)](https://www.w3.org/) 根据其 [Web 辅助功能计划 (WAI)](https://www.w3.org/WAI/) 制定的国际公认准则。
 
-WCAG 2.1 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。他们向Web内容作者、设计人员和开发人员提供建议，确保他们制作的资源尽可能多地可供尽可能多的人访问，而不管他们有任何残疾；例如，视觉障碍、听力损失、学习困难、年龄限制等。
+WCAG 2.1 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些准则和成功标准向 Web 内容作者、设计人员和开发人员提供建议，确保他们创作的资源可尽可能多地供更多人访问，而无论他们具有任何缺陷；例如，视觉障碍、听力损失、学习困难、年龄限制等。
 
-例如，使用HTML中的属性描述图像（或任何其他非文本内容） `alt` 会使失明或部分视力受损的人受益匪浅。 属性中的文本描 `alt` 述可以转换为语音输出或传输到电子可刷新的盲文显示。
+例如，使用 HTML 中的 `alt` 属性描述图像（或任何其他非文本内容）会使失明或部分视力受损的人受益匪浅。`alt` 属性中的文本描述内容可以转换为语音输出或传输为可刷新的电子盲文显示屏。
 
-此外，WCAG 2.1还可为其他受益人带来好处，包括可能被认为处于残疾状态 *的人*。 由于浏览技术、网络连接速度或浏览环境等情况，可能会遇到与残疾人类似的障碍的人。
+此外，WCAG 2.1 还可为其他受益人带来好处，包括那些在某种情况下可能被认为&#x200B;*存在身心障碍*&#x200B;的人员。由于浏览技术、网络连接速度或浏览环境等情况，他们可能会遇到与残障人士类似的障碍。
 
-使用Adobe Experience Manager，内容作者和／或网站所有者可以创建满足相关WCAG 2.1 A级和AA级成功标准的Web内容。
+使用 Adobe Experience Manager，内容作者和/或网站所有者可以创建符合 WCAG 2.1 A 级和 AA 级相关成功标准的 Web 内容。
 
-因此，了解WCAG 2.1的目标以及指南的结构是理解Web辅助功能以及指南如何有助于创建可访问的Web内容的重要部分。
+因此，要了解 Web 辅助功能以及这些准则如何帮助创建易访问 Web 内容，务必要了解 WCAG 2.1 的目标以及准则的结构方式。
 
-WCAG 2.1的目的是提供以下准则：
+WCAG 2.1 的目的是提供以下准则：
 
-* 与技 **术无关：**&#x200B;换句话说，可以应用于各种Web内容格式的准则，而不仅仅是HTML。 因此，WCAG 2.1可以涵盖由PDF、Flash、JavaScript和其他当前和未来Web技术生成或提供的内容。 <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+* **与技术无关：**
+换句话说，准则可以应用于各种 Web 内容格式，而不仅仅是 HTML。因此，WCAG 2.1 可以涵盖由 PDF、Flash、JavaScript 和其他当前和未来 Web 技术生成或提供的内容。<!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
 
-* 可测 **试：**&#x200B;每个准则的编写方式都是这样的，即可以客观地测试，以确保一组辅助功能专家一般都同意该准则已经得到满足。 辅助功能准则的一个挑战是，虽然一些准则在技术上可以测试，但另一些准则则需要人为判断来确定准则是否成功地得到了满足。 <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+* **可测试：**
+每个准则均以一种可进行客观测试的方式编写，以确保一组辅助功能专家都同意同容符合该准则要求。辅助功能准则的一个挑战是，虽然一些准则在技术上可以测试，但另一些准则需要人为判断来确定是否成功达到了准则要求。<!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
 
-* 支持优 **先化和情境式实施：**
+* 支持&#x200B;**优先级和情境式实施：**
    <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
 
-这些目标对WCAG 2.1的结构有显着的影响。
+这些目标对 WCAG 2.1 的结构有显著的影响。
 
 >[!NOTE]
 >
->不可能创建满足各种可能残疾或人类型的网站。 WCAG 2.1旨在帮助Web作者创建在特定条件和合理范围内尽可能可访问的站点。
+>创建出满足各种残障人士或各种类型人员的网站几乎是不可能的。WCAG 2.1 旨在帮助 Web 作者尽可能创建能够在特定条件和合理范围内能进行访问的站点。
 
 <!--
 >[!NOTE]
@@ -46,102 +48,102 @@ WCAG 2.1的目的是提供以下准则：
 
 ## 结构 {#structure}
 
-WCAG 2.1的结构形式是以渐进详细的方式引入可访问Web内容创建的概念。 这可能给人以一种印象，即WCAG 2.1是一组非常复杂的相互关联的文档，但其目标是（逐步）在作者需要时提供更详细的信息，而不是在一个非常大的文档中提供所有信息。
+在构建 WCAG 2.1 时引入了以逐步细化的方式引创建易访问 Web 内容的概念。这可能给人们留下这样的印象，即 WCAG 2.1 是一组非常复杂的相互关联的文档，但其目标是，在作者需要时（逐步）提供更详细的信息，而不是在一个非常大的文档中提供所有信息。
 
-WCAG 2.1包含有四个用于辅助设计的关键原则，有时由首字母缩写 **POUR提及**。 这些是：
+WCAG 2.1 包含有四个用于辅助设计的关键原则，有时由首字母缩写 **POUR** 表示。这四个关键原则分别是：
 
-1. **可感知**:用户能否感知到问题的Web内容？
-1. **可操作**:用户能否导航、输入数据或与Web内容进行交互？
-1. **可以理解**:用户能否处理和理解呈现给他们的Web内容？
-1. **强大**:Web内容是否以预期方式在各种浏览环境(包括旧版和新兴的浏览环境)中可用？
+1. **可感知**：用户能否感知到相关 Web 内容？
+1. **可操作**：用户能否导航、输入数据或与 Web 内容进行交互？
+1. **可理解**：用户能否处理并理解呈现给他们的 Web 内容？
+1. **强健**：Web 内容是否可以按预期方式在各种浏览环境（包括旧版和新兴的浏览环境）中可用？
 
 详细说明：
-* 每个 **原则** ，都包括一个或多个 **准则**。
+* 每个&#x200B;**原则**&#x200B;都包括一个或多个&#x200B;**准则**。
 
-* 准则的措辞为说明，说明为正面的(Do this...)或负面的(Do not this...)。
-* 准则编号为1.1至4.1，其中第一个编号与父准则相对应。
-* 每个准则都包含一个或多个成 **功标准**。
-* 成功标准将编写为语句，这些语句是任何给 `True` 定网 `False` 页的语句或语句。
-* 成功标准可能包括／或选择，或可能包括例外；不满足成功标准的情况。
-* 成功标准按照父准则和原则编号，从1.1.1到4.1.1。它们还有一个简短的名称，用于总结标准的意图，以便于参考。 例如，成功标准1.1.1是非文本替代内容。
-* 成功标准包括相关技 **术列表** （详见下文）。
+* 准则的措辞为说明性文字，内容分为正面（请...）或负面（请不要...）。
+* 准则编号为 1.1 - 4.1，其中第一个编号与父准则相对应。
+* 每个准则都包含一个或多个&#x200B;**成功标准**。
+* 成功标准将编写为语句，任何给定网页的结果都为 `True` 或 `False`。
+* 成功标准可能包括其中一项/或多种选项，也可能包括例外，即不符合成功标准的情况。
+* 成功标准按照父准则和原则编号，从 1.1.1 - 4.1.1。它们还有一个简短的名称，用于总结标准的目的，以便于参考。例如，成功标准 1.1.1 是非文本替代内容。
+* 成功标准包括一系列相关的&#x200B;**技术**（详见下文）。
 
 ## 支持资源 {#supporting-resources}
 
-除了原则、准则和成功标准的核心WCAG 2.1组件外，还有一系列支持文档。 其中一些人就如何满足指南的某些方面提供具体建议，而另一些人则是更一般的参考资料，帮助所有能力的Web作者、设计人员和开发人员尽可能有效地理解和使用WCAG 2.1。
+除了原则、准则和成功标准的核心 WCAG 2.1 组成部分外，还有一系列支持文档。其中一些文档就如何符合准则的某些方面提供了具体建议，而另一些文档则是一般性参考资料，可帮助拥有各种能力的 Web 作者、设计人员和开发人员尽可能有效地理解和使用 WCAG 2.1。
 
-虽然WCAG 2.1是一个稳定的文档，不会改变，但这些支持资源大多是动态文档;随着新技术的出现，它们会随着时间的推移而改变和增长，并会发现如何实现Web辅助功能的新示例。
+尽管 WCAG 2.1 是一份稳定的文档，不会发生更改，但大多数支持资源是动态文档；它们会随着新兴技术的出现而进行更改和增加，您可以从中发现一些关于如何实现 Web 辅助功能的新示例。
 
-### WCAG 2.1资源 {#wcag-resources}
+### WCAG 2.1 资源 {#wcag-resources}
 
-本列表并非详尽无遗，它介绍了可用的资源：
-* [WCAG所有相关文档的概要](https://www.w3.org/WAI/standards-guidelines/wcag/)
-* [不同文档的摘要](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
-* [Web内容辅助功能指南(WCAG)2.1](https://www.w3.org/TR/WCAG21/)
-* [WCAG 2.1的新增功能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
-* [如何满足WCAG 2.1的快速参考指南](https://www.w3.org/WAI/WCAG21/quickref/)
-* [WCAG 2常见问题解答](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
+本列表并非详尽内容，它介绍了一些可用资源：
+* [所有 WCAG 相关文档的概要](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [不同文档的概要](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+* [Web 内容辅助功能准则 (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+* [WCAG 2.1 的新增内容](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
+* [如何满足 WCAG 2.1 的快速参考指南](https://www.w3.org/WAI/WCAG21/quickref/)
+* [WCAG 2 常见问题解答](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
 
 
-### WCAG 2.1的新增功能 {#what-is-new}
+### WCAG 2.1 的新增内容 {#what-is-new}
 
-[WCAG 2.1中的新增功能提供了有关WCAG和2.0以及WCAG 2.1之间的增量的有价值信息](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 。
+[WCAG 2.1 的新增内容](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)提供了有关 WCAG 2.0 与 WCAG 2.1 之间新增内容的重要信息。
 
-第 [WCAG 2.0和2.1节进一步阐明](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 其关系的状况。
+[WCAG 2.0 和 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 节进一步阐明了两者的关系状况。
 
-### WCAG 2.1的技术 {#techniques-for-wcag}
+### 用于 WCAG 2.1 的技术 {#techniques-for-wcag}
 
-WCAG 2.1的技术可在WCAG 2.1 [的技术页上找到](https://www.w3.org/WAI/WCAG21/Techniques/) 。
+用于 WCAG 2.1 的技术可在[用于 WCAG 2.1 的技术](https://www.w3.org/WAI/WCAG21/Techniques/)页面上找到。
 
-**在** WCAG 2.1层次结构中，技术构成成功标准以下的级别。 它们被WAI列为信息量，而非规范性的。 换句话说，资源符合WCAG 2.1不需要遵循特定技术。
+**技术**&#x200B;构成了 WCAG 2.1 层次结构中成功标准以下的级别。WAI 将这些技术划分信息类，而非规范类。换句话说，为了使资源符合 WCAG 2.1，不必拘泥于使用某些特定技术。
 
-由于技术比成功标准具体得多，它们通常指特定的技术或内容类型（例如HTML或视频）或情况（例如电子商务或电子教学应用程序）。 您可以将技巧视为如何满足特定准则和成功标准的经验证示例，因此这些技巧对于特定上下文的作者和开发人员有帮助。
+由于技术比成功标准更具体，它们通常指特定的技术或内容类型（例如 HTML 或视频）或情况（例如电子商务或电子教学应用程序）。您可以将技术视为如何满足特定准则和成功标准的已验证示例，因此这些技术对于在特定环境工作的作者和开发人员很有帮助。
 
-可以访问以下技术：
+技术的访问方式可包括：
 
-* 按集合（技术可能是通用的，或与特定技术或格式相关——例如HTML、CSS或客户端脚本），或
-* 根据相关成功标准。 技术可应用于多个成功标准。
+* 通过收藏集（技术可能是一般性内容，也可能与特定技术或格式相关 - 例如 HTML、CSS 或客户端脚本），或
+* 通过相关的成功标准。技术可应用于多个成功标准。
 
-每种技术都有一个与其集合相关的唯一编号。 例如，ARIA技术之一是 *Technique ARIA2:使用“required”属性标识必填字段*。
+每种技术都有一个与其收藏集相关的唯一编号。例如，ARIA 技术之一是&#x200B;*技术 ARIA2：使用“required”属性标识必填字段*。
 
-技术可能足够、建议或失败：
+技术可分为“充分”、“建议”或“失败”：
 
-* 充分 *技术是* “充分技术”，如果遵循，就足以满足特定成功标准。
-* 建议 *技术* （如果遵循该技术）对辅助功能具有积极影响，但可能仅仅仅不足以确保满足特定成功标准)。
-* “ *失败* ”是一种技术，用于描述不满足成功标准的具体示例。
+* 对于&#x200B;*充分技术*，如果遵循，则足以满足特定的成功标准。
+* 对于&#x200B;*建议技术*，如果遵循，则将对辅助功能产生积极影响，但它自己可能不足以确保满足特定成功标准。
+* *失败*&#x200B;技术用于描述不满足成功标准的具体示例。
 
-技术的详细信息包括说明、适用性、示例、资源，以获取更多信息以及作者如何测试该技术是否成功应用的详细信息。
+技术的详细信息包括说明、适用性、示例、获取更多信息的资源以及作者如何测试该技术是否成功应用的详细信息。
 
-技术列表不完善，WAI不断用新的示例更新列表，反映了Web技术、设计方法和研究成果的发展。 因此，定期检查新增功能的列表是值得的。
+技术列表并不完善，WAI 正不断用新的示例更新列表，以体现 Web 技术、设计方法和研究成果的发展。因此，请务必定期查看技术列表以了解新增内容。
 
-### 了解WCAG 2.1 {#understanding-wcag}
+### 了解 WCAG 2.1 {#understanding-wcag}
 
-这是指一系列文档，它们为读者理解具体准则和成功标准的目的提供了建议。 您可以下 [载简介，以及指向更详细信息的链接](https://www.w3.org/WAI/WCAG21/Understanding/)。
+WCAG 2.1 是指一系列文档，它提供了一些建议可帮助读者理解具体准则和成功标准的目的。您可以[下载简介，以及指向更详细信息的链接](https://www.w3.org/WAI/WCAG21/Understanding/)。
 
-每个单独的准则和成功标准都有自己的“了解”页面，提供以下信息：
+每一个准则和成功标准都有其自己的“了解”页面，其中提供有关以下项的信息：
 
-* 准则的意图；
+* 准则的目的；
 * 具体成功标准；
-* 建议技术，有助于满足准则的要求，但不属于任何特定成功标准。
+* 建议技术，可帮助满足准则的要求，但不属于任何特定成功标准。
 
-每个成功标准的单个“了解”页面都提供以下信息：
+每个成功标准的单独“了解”页面提供有关以下项的信息：
 
-* 成功标准的意图；
-* 成功标准如何达到的一般示例；
-* 相关（非W3C）资源，介绍如何达到成功标准；
-* 技巧与失败：如何达到成功标准的具体和详细示例（详细说明如下）
-* 关键术语——对理解成功标准重要的术语表。
+* 成功标准的目的；
+* 如何满足成功标准的一般示例；
+* 有关如何满足成功标准的相关（非 W3C）资源；
+* 技术与失败：如何满足成功标准的具体详细示例（详见下文）
+* 关键术语 - 理解成功标准的重要术语的术语表。
 
-例如：了 [解成功标准1.1.1（“非文本内容”）](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content)。
+示例可在[了解成功标准 1.1.1（“非文本内容”）](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content)中找到。
 
-### 如何达到WCAG 2.1 {#how-to-meet-wcag}
+### 如何满足 WCAG 2.1 {#how-to-meet-wcag}
 
-有关如何达到WCAG 2.1页面上 [提供了“如何达到”部分](https://www.w3.org/WAI/WCAG21/quickref/) 。 本节提供了WCAG的替代演示，允许根据与读者自身兴趣或情况最相关的准则内容进行优化。 读者可以通过指定特定Web内容技术（如层叠样式表或脚本）或指定特定优先级来筛选他们希望视图的成功标准技术。
+“如何满足”部分显示在[如何满足 WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) 页面上。本节提供了 WCAG 的替代形式，允许根据与读者自身兴趣或情况最相关的准则优化内容。读者可以通过指定特定 Web 内容技术（如层叠样式表或脚本）或指定特定优先级来筛选他们希望查看的成功标准技术。
 
-如果不进行筛选，此资源将提供按指南分组的所有成功标准。 对于每个成功标准，提供以下内容：
+如果不进行筛选，此资源将提供按准则分组的所有成功标准。对于每个成功标准，提供以下内容：
 
 * 成功标准的文本；
-* 链接到相应的“理解”文档;
-* 列表相关的充分技术，链接到每项技术的细节；
-* 列表相关的建议技术，链接到每种技术的详细信息（如果存在）;
-* 相关故障的列表，链接到每个故障的详细信息。
+* 指向相应“了解”文档的链接；
+* 链接到每种技术详细信息的“充分技术”相关列表；
+* 链接到每种技术详细信息（如果存在）的“建议技术”相关列表；
+* 链接到每种失败详细信息的失败相关列表。
