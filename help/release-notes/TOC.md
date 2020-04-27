@@ -1,7 +1,7 @@
 ---
 sub-product: AEM 云服务 发行说明
 user-guide-title: AEM 云服务 发行说明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 ---
