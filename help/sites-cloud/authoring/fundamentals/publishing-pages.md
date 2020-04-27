@@ -1,7 +1,7 @@
 ---
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
