@@ -1,7 +1,7 @@
 ---
 title: 创建辅助内容（WCAG 2.0 符合性）
 description: 确保残障人士能够访问并使用 Web 内容
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
