@@ -1,60 +1,60 @@
 ---
-title: Adobe Experience Manager作为云服务和Web辅助功能指南
-seo-title: Adobe Experience Manager作为云服务和Web辅助功能指南
-translation-type: tm+mt
+title: Adobe Experience Manager 云服务和 Web 辅助功能准则
+seo-title: Adobe Experience Manager 云服务和 Web 辅助功能准则
+translation-type: ht
 source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
 
-# Adobe Experience Manager作为云服务和Web辅助功能指南{#aem-and-the-web-accessibility-guidelines}
+# Adobe Experience Manager 作为云服务和网页易读性准则{#aem-and-the-web-accessibility-guidelines}
 
-确保Web内容设计为尽可能方便目标受众访问，无论其是否有残疾或限制，都有许多社会、经济和法律动机。 因此，Web辅助功能是良好Web设计中一个日益重要的方面。
+出于许多社会、经济和法律动因，需要确保 Web 内容尽可能设计地能够让任何目标受众访问，而无论他们具有任何缺陷或限制。因此，Web 辅助功能在良好的 Web 设计中越来越重要。
 
-将AEM作为云服务创建可访问的网站和内容会产生影响：
+使用 AEM 云服务创建易访问网站和内容会产生以下影响：
 
-* 负责配置Adobe Experience Manager(AEM)以确保正确启用辅助功能的管理员。
+* 管理员负责配置 Adobe Experience Manager (AEM) 以确保正确启用辅助功能。
 
-* 使用这些功能创建可访问网站的作者。
+* 作者使用这些功能创建易访问网站。
 
-   * 创建可访问内容是一个过程。 AEM提供了这些功能，但内容作者需要确保他们遵循创建可访问内容所需的技术。
+   * 创建易访问内容是一个过程。虽然 AEM 提供了一些功能，但内容作者需要确保遵循创建易访问内容所需的技术。
 
 * 在实施网站设计时，模板开发人员还应注意到此类问题。
 
-Adobe Experience Manager作为云服务，符合 [World Wide Web Consortium](#wcag-accessibility-guideslines)[提供的准则](#world-wide-web-consortium)。
+Adobe Experience Manager 云服务符合[万维网联盟](#world-wide-web-consortium)提供的[准则](#wcag-accessibility-guideslines)。
 
 ## 万维网联盟 {#world-wide-web-consortium}
 
-World [Wide Web Consortium(W3C)](https://www.w3.org/) 是一个致力于开发Web标准的国际社会。 他们 [的Web辅助功能倡议(WAI)发布](https://www.w3.org/WAI/) Web内容辅 [助功能准则](#wcag-accessibility-guidelines)。
+[万维网联盟 (W3C)](https://www.w3.org/) 是一个致力于开发 Web 标准的国际社区。他们的 [Web 辅助功能计划 (WAI)](https://www.w3.org/WAI/) 发布了 [Web 内容辅助功能准则](#wcag-accessibility-guidelines)。
 
-## Web内容辅助功能指南(WCAG)2.1 {#wcag-accessibility-guideslines}
+## Web 内容辅助功能准则 (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
-为帮助Web设计人员和开发人员制作可访问的网站， [Web辅助功能计划(WAI)](https://www.w3.org/WAI/) 于2018年6月发布了 [Web内容辅助功能准则(WCAG)2.1](https://www.w3.org/TR/WCAG/) 。
-
->[!NOTE]
-> 
-> WCAG 2.1从2008年起更新了先前版本WCAG 2.0。 请参 [阅WCAG 2.1 —— 与WCAG 2.0的比较](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+为帮助 Web 设计人员和开发人员制作易访问网站，[Web 辅助功能计划 (WAI)](https://www.w3.org/WAI/) 于 2018 年 6 月发布了 [Web 内容辅助功能准则 (WCAG) 2.1](https://www.w3.org/TR/WCAG/)。
 
 >[!NOTE]
 > 
->目 [前正在开发WCAG 2.2的更新版本](https://www.w3.org/TR/WCAG22/) ，但此时不会考虑。
+> WCAG 2.1 从 2008 年起更新了先前版本 WCAG 2.0。请参阅 [WCAG 2.1 - 与 WCAG 2.0 的比较](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+
+>[!NOTE]
+> 
+>目前正在开发[该指南的更新版本 - WCAG 2.2](https://www.w3.org/TR/WCAG22/)，但此时不予考虑更新事宜。
 
 
-WCAG 2.1提供了 [涵盖辅助功能级别和如何符合这些级别的准则（包括相关成功标准）](https://www.w3.org/TR/WCAG/#conformance)。
+WCAG 2.1 提供了[涵盖辅助功能级别和如何符合这些级别的准则（包括相关成功标准）](https://www.w3.org/TR/WCAG/#conformance)。
 
-## WCAG 2.1和AEM作为云服务 {#wcag-aem-cloud-service}
+## WCAG 2.1 和 AEM 云服务 {#wcag-aem-cloud-service}
 
-使用Adobe Experience Manager，内容作者和／或网站所有者可以创建满足WCAG 2.1 A级和AA级成功标准的Web内容：
+使用 Adobe Experience Manager，内容作者和/或网站所有者可以创建符合 WCAG 2.1 A 级和 AA 级成功标准的 Web 内容：
 
-* WCAG 2.1的特定方面在WCAG 2.1 [快速指南中重点介绍](/help/onboarding/accessibility/quick-guide-wcag.md)。
+* [WCAG 2.1 快速入门指南](/help/onboarding/accessibility/quick-guide-wcag.md)中重点介绍了 WCAG 2.1 的特定方面。
 
-* [创建可访问内容](/help/sites-cloud/authoring/fundamentals/accessible-content.md) ，详细了解它们与AEM的关系。
+* [创建易访问内容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)详细介绍了这些内容与 AEM 的关系。
 
 >[!NOTE]
 > 
 >在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
 >
->由于某些类型的内容无法满足所有AAA级成功标准，因此不建议将其作为必需的符合级别。
+>由于某些类型的内容无法满足所有 AAA 级成功标准，因此不建议将其作为必需的符合级别。
 
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)
@@ -66,8 +66,8 @@ WCAG 2.1提供了 [涵盖辅助功能级别和如何符合这些级别的准则�
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
 
-## Adobe的辅助功能 {#accessibility-at-adobe}
+## Adobe 辅助功能 {#accessibility-at-adobe}
 
-有关其他信息，请访问 [Adobe辅助功能资源中心](https://www.adobe.com/accessibility/)。
+有关其他信息，请访问 [Adobe 辅助功能资源中心](https://www.adobe.com/accessibility/)。
 
 
