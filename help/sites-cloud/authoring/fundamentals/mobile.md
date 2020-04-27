@@ -1,7 +1,7 @@
 ---
 title: 创作适用于移动设备的页面
 description: 在为移动设备进行创作时，您可以在多个模拟器之间切换，以查看最终用户看到的内容
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
