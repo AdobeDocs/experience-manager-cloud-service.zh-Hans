@@ -1,7 +1,7 @@
 ---
 title: 已知问题
 description: 特定于 Adobe Experience Manager 云服务已知问题的发行说明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 一些已知问题包括：
 
-* **元数据模式**:用于导致JSP编译错误的资产评级构件。 它已从元数据模式中删除。 <!-- CQ-4282865, CQ-4284633 -->
+* **元数据架构**：资产评级小部件曾导致 JSP 编译错误。已从元数据架构将其删除。<!-- CQ-4282865, CQ-4284633 -->
 
 ### 即将推出的资产功能 {#upcoming-assets-capabilities}
 
