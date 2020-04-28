@@ -2,7 +2,7 @@
 sub-product: 将AEM作为云服务实施
 user-guide-title: 将AEM作为云服务实施
 translation-type: tm+mt
-source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
+source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
 
 ---
 
@@ -25,7 +25,6 @@ source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
    + [AEM 项目结构](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 项目存储库结构包](developing/introduction/repository-structure-package.md)
    + [AEM 云服务 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
-   + [内容搜索与索引](/help/operations/indexing.md)
    + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
    + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
