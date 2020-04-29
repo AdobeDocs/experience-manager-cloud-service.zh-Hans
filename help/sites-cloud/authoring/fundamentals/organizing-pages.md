@@ -2,7 +2,7 @@
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -369,8 +369,13 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
    >
    >为安全起见，删 **除页面图标** 不可用作快速操作。
 
-1. 将出现一个对话框要求进行确认，使用：
+1. 将显示一个对话框要求确认。
 
+   ![删除对话框](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **是否要在删除前存档页面？** -如果选中此项，则删除后将创建选定删除的页面版本。
+      * [版本可以在以后的日期恢复。](/help/sites-cloud/authoring/features/page-versions.md)
+      * 无法恢复删除的页面（未包含先前版本）。
    * **取消**&#x200B;可中止操作
    * **删除**&#x200B;可确认操作：
 
