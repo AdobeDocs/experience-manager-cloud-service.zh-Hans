@@ -1,15 +1,15 @@
 ---
 title: 使用内容片段
-description: 了解内容片段如何允许您设计、创建、策划和使用独立于页面的内容。
+description: 了解Adobe Experience Manager(AEM)中的内容片段如何作为云服务允许您设计、创建、管理和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # 使用内容片段{#working-with-content-fragments}
 
-Adobe Experience Manager(AEM)内容片段允许您设计、创建、策划和发 [布独立于页面的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它们允许您准备内容，准备好在多个位置／多个渠道中使用。
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 它们允许您准备内容，准备好在多个位置／多个渠道中使用。
 
 使用AEM核心组件的Sling Model(JSON)导出功能，内容片段也可以以JSON格式交付。 这种投放:
 
