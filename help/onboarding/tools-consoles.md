@@ -1,8 +1,8 @@
 ---
 title: 工具控制台
 description: 了解整个 AEM 中的不同工具控制台。
-translation-type: ht
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+translation-type: tm+mt
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 >由于 UI 中的卡片会详细说明每个选项的用途，因此，此表只提供关于“工具”面板中各项功能位置的快速参考。
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>区域</td>
    <td>选项</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>常规</td>
    <td> </td>
