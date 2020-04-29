@@ -1,15 +1,15 @@
 ---
 title: 内容片段
 description: Adobe Experience Manager 云服务内容片段允许您设计、创建、策划和使用独立于页面的内容
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # 内容片段 {#content-fragments}
 
-Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来创建和管理的](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager(AEM)中作为云服务的内容片段是作为独立于页 [面的资产进行创建和管理的](/help/assets/content-fragments/content-fragments.md)。
 
 这允许您创建渠道中性内容，以及各种（特定于渠道的）变量。您随后可以在创作内容页面时使用这些片段及其变量。
 
@@ -90,7 +90,7 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
    >有哪些元素可用取决于所使用的模板。
 
 * **变量**
-   * 默认的&#x200B;**主变量**&#x200B;将始终可用。
+   * 默认主 **视图** 将始终可用。
    * 如果变量是为片段而创建的，将有可选择的变量可用。
 * **段落**：指定要包含的段落范围：
    * **全部**
@@ -143,7 +143,7 @@ Adobe Experience Manager (AEM) 内容片段是[作为独立于页面的资产来
 
 ### 使用关联内容 {#using-associated-content}
 
-如果[内容片段](/help/assets/content-fragments/content-fragments.md)具有[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，那么可以从侧面板中使用这些资产（在您将片段置于内容页面中之后）。对于[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)，关联内容实际上是一个特殊的内容源。
+如果您有与 [内容片段关联的](/help/assets/content-fragments/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的 [特殊内容源](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)。
 
 >[!NOTE]
 >
