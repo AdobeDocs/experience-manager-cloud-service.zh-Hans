@@ -2,7 +2,7 @@
 title: 配置搜索表单
 description: 将Adobe Experience Manager的搜索表单配置为云服务。
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
 
 * **资产管理员搜索边栏:**
 
-* **页面编辑器（文档搜索）:**
+* **页面编辑器(文档搜索):**
 
 * **页面编辑器（体验片段搜索）:**
 
@@ -93,7 +93,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
   </tr>
   <tr>
    <td>分析</td>
-   <td>显示以分析为后盾的数据时，站点浏览器中的搜索／过滤功能。 分析搜索筛选器可加载以匹配映射的自定义分析列。</td>
+   <td>显示以分析为后盾的数据时，站点浏览器中的搜索／过滤功能。 分析搜索过滤器可加载以匹配映射的自定义分析列。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -112,7 +112,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
    </td>
   </tr>
   <tr>
-   <td>创作</td>
+   <td>作者</td>
    <td>根据作者进行搜索。</td>
    <td>
     <ul>
@@ -203,7 +203,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
   </tr>
   <tr>
    <td>全文</td>
-   <td>此搜索谓词用于进行全文搜索. 它被映射为“jcr:contains´”运算符。</td>
+   <td>此搜索谓词用于进行全文搜索. 它映射为“jcr:contains´”运算符。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -531,7 +531,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
 
    属性值作为绝对字符串或表达式语言；例如， `cq:Page` 或
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **范围文本**
 
@@ -539,7 +539,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
 
 * **选项路径**
 
-   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择+图 **标后** ，将选择添加到有效选项列表(然后 **-** icon to remove if required)。
+   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择+图 **标后** ，将选择添加到有效选项的列表中(然后 **** -图标（如果需要，可删除）。
 
    这些选项是用户创建的内容节点，其结构如下：
 
@@ -547,9 +547,9 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
 
 * **选项节点路**&#x200B;径与选项路径的 **效果相同**，仅此谓词字段位于公用谓词字段中，而另一个谓词字段特定于资产。
 
-* **单选**&#x200B;如果选中此选项，则这些选项将呈现为仅允许单选的复选框。 如果错误地选择了复选框，则可取消选中该复选框。
+* **单选**&#x200B;如果选中此选项，则这些选项将呈现为仅允许单选的复选框。 如果错误地选中了复选框，则可取消选中该复选框。
 
-* **发布和Live copy属性名称特定**&#x200B;站点谓词的发布和Live copy复选框的标签。
+* **发布和Live Copy属性名称特定**&#x200B;站点谓词的发布和Live Copy复选框的标签。
 
 * &amp;ast;在“设置”选项卡的字 **段标签上** ，表示字段是必填字段，如果留空，则将显示错误消息。
 
@@ -606,7 +606,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
 
    ![预览表单](assets/csf-preview-form.png)
 
-1. **关闭** “预览”以返回并完成配置。
+1. **关闭预览** ，返回并完成配置。
 
 ### 删除谓词字段 {#deleting-a-predicate-field}
 
@@ -633,7 +633,7 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
 
    ![恢复默认值](assets/csf-restore-default.png)
 
-1. 将删除自定义配置并恢复默认配置（在控制台中重新显示挂锁符号表示）。
+1. 将删除自定义配置并恢复默认配置（此配置通过在控制台中重新显示挂锁符号来指示）。
 
 ### 添加选项谓词 {#adding-options-predicates}
 
@@ -683,21 +683,23 @@ Adobe Experience Manager作为云服务，提供强大的 [Search](/help/sites-c
    ![选项谓词](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. 导航到相应的控制台(在本例中， **为站点**)，然后打开“搜 **索——筛选器** ”边栏。 新定义的搜索表单以及各种选项将可见。 选择所需选项可查看搜索结果。
+1. 导航到相应的控制台(在本例中，为 **Sites**)，然后打开“搜 **索-过滤器”边栏** 。 新定义的搜索表单以及各种选项将可见。 选择所需选项可查看搜索结果。
 
    ![使用的选项](assets/csf-options-usage.png)
 
 
 ## 用户权限 {#user-permissions}
 
-下表列出了对搜索表单执行编辑、删除和预览操作所需的权限。
+下表列表了对搜索表单执行编辑、删除和预览操作所需的权限。
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>操作</strong></td>
    <td><strong>权限</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>编辑 </td>
    <td>对节点的读取、写入 <code>/apps </code>权限。</td>
