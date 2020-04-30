@@ -1,19 +1,19 @@
 ---
 title: Adobe Experience Manager 云服务和 Web 辅助功能准则
 seo-title: Adobe Experience Manager 云服务和 Web 辅助功能准则
-translation-type: ht
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+translation-type: tm+mt
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
 # Adobe Experience Manager 作为云服务和网页易读性准则{#aem-and-the-web-accessibility-guidelines}
 
-出于许多社会、经济和法律动因，需要确保 Web 内容尽可能设计地能够让任何目标受众访问，而无论他们具有任何缺陷或限制。因此，Web 辅助功能在良好的 Web 设计中越来越重要。
+出于许多社会、经济和法律动因，需要确保 Web 内容尽可能设计地能够让任何目标受众访问，而无论他们具有任何缺陷或限制。因此，将Adobe Experience Manager(AEM)作为云服务实现Web辅助功能是良好Web设计中一个日益重要的方面。
 
 使用 AEM 云服务创建易访问网站和内容会产生以下影响：
 
-* 管理员负责配置 Adobe Experience Manager (AEM) 以确保正确启用辅助功能。
+* 负责配置AEM以确保正确启用辅助功能的管理员。
 
 * 作者使用这些功能创建易访问网站。
 
