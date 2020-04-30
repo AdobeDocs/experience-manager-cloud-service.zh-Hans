@@ -1,8 +1,8 @@
 ---
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
-translation-type: ht
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+translation-type: tm+mt
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 Adobe Experience Manager (AEM) 云服务的开发旨在最大限度地符合 Web 内容辅助功能准则。
 
-[Web 辅助功能准则版本 2.1 (WCAG)](https://www.w3.org/TR/WCAG/) 是由[万维网联盟 (W3C)](https://www.w3.org/) 根据其 [Web 辅助功能计划 (WAI)](https://www.w3.org/WAI/) 制定的国际公认准则。
+The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.1 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些准则和成功标准向 Web 内容作者、设计人员和开发人员提供建议，确保他们创作的资源可尽可能多地供更多人访问，而无论他们具有任何缺陷；例如，视觉障碍、听力损失、学习困难、年龄限制等。
 
