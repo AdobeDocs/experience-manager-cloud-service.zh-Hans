@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,15 +69,13 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
          + 组
          + ACL（权限）
             + 任何 `rep:policy` 路径（可变或不可变）的任意
-+ 该包 `ui.content` 或内容包包含所有内容和配置。 包的常见元 `ui.content` 素包括但不限于：
++ 该包 `ui.content` 或内容包包含所有内容和配置。 “内容包”包含包中未包含的 `ui.apps` 所有内容，换言之，不包含或中的任 `/apps` 何内容 `/oak:index`。 包的常见元 `ui.content` 素包括但不限于：
    + 上下文感知配置
       + `/conf`
    + 必需的、复杂的内容结构(即 内容构建以回购初始化中定义的基线内容结构为基础，并扩展该结构。
       + `/content`, `/content/dam`, 等.
    + 受管制的标记分类
       + `/content/cq:tags`
-   + Oak索引
-      + `/oak:index`
    + 等等传统节点
       + `/etc`
 + `all` 包是一个“仅”包含 `ui.apps` 和 `ui.content` 包作为嵌入内容的容器包。`all` 包不得具有&#x200B;**任何自己的内容**，而是将所有部署委派到存储库的子包。
