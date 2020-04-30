@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -69,7 +69,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
          + 组
          + ACL（权限）
             + 任何 `rep:policy` 路径（可变或不可变）的任意
-+ 该包 `ui.content` 或内容包包含所有内容和配置。 包的常见元 `ui.content` 素包括但不限于：
++ 该包 `ui.apps` 或代码包包含要部署的所有代码，并且仅部署到 `/apps`。 包的常见元 `ui.apps` 素包括但不限于： <!-- GRANITE-29128 -->
    + 上下文感知配置
       + `/conf`
    + 必需的、复杂的内容结构(即 内容构建以回购初始化中定义的基线内容结构为基础，并扩展该结构。
