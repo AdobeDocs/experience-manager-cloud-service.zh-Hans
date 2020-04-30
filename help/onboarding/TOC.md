@@ -2,7 +2,7 @@
 sub-product: AEM 云服务入门
 user-guide-title: AEM 云服务入门
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
 
@@ -25,4 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [用于数据保护和数据隐私法规的 AEM 已准备就绪](data-privacy-and-protection-readiness/aem-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM Sites 已准备就绪](data-privacy-and-protection-readiness/sites-readiness.md)
++ 辅助功能 {#accessibility}
+   + [AEM作为云服务和Web辅助功能准则](accessibility/web-accessibility.md)
+   + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
 + [工具控制台概述](tools-consoles.md)
