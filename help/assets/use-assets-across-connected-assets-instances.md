@@ -3,7 +3,7 @@ title: 在 Adobe Experience Manager Sites 创作工作流程中，使用连接�
 description: 在另一个 Experience Manager Site 部署中创建网页时，使用远程 Adobe Experience Manager Assets 部署中的可用资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7524f6146c33932677b6c8af49d5fe2638a5c02a
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -38,7 +38,7 @@ AEM Sites 提供了创建网页的功能，AEM Assets 是为网站提供所需�
 作者可以在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索到的资产。文档可添加到 `Download` 组件中，图像可添加到 `Image` 组件中。此外，作者还可以在任何自定义 AEM 组件（对默认 `Download` 或 `Image` 组件的扩展）中添加远程资产。支持的格式列表如下：
 
 * **图像格式**：可支持[图像组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html)支持的图像格式。不支持 Dynamic Media 图像。
-* **文档格式**：请参阅[连接的资产支持的文档格式](file-format-support.md#doc-formats)。
+* **文档格式**：请参阅[连接的资产支持的文档格式](file-format-support.md#document-formats)。
 
 ### 涉及的用户和组 {#users-and-groups-involved}
 
