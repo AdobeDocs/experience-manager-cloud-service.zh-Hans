@@ -1,8 +1,8 @@
 ---
 title: 已弃用和已删除的功能
 description: 以下发行说明特定于 Adobe Experience Manager 云服务中已弃用和已删除的功能。
-translation-type: ht
-source-git-commit: b31ae32285080075d2531edd2c4976cf801d1c89
+translation-type: tm+mt
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,11 +24,12 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 建议客户检查其当前部署中是否使用了此类特性/功能，然后制定相应的计划以将其实施更改为使用提供的备选方案。
 
-| 区域 | 功能 | 替换 |
+| 功能 | 已弃用功能 | 替换 |
 | ------------ | ------------------ | ----------- |
-| 资产 | 资产摄取和处理不再使用 `DAM Asset Update` 工作流程 | 资产摄取现在使用[资产微服务](/help/assets/asset-microservices-overview.md)。 |
-| 资产 | 将资产直接上传到 AEM —— 请参阅[已弃用的资产上传 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) | Experience Manager 云服务中使用[直接二进制上传](/help/assets/add-assets.md)。有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)。 |
-| 资产 | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括如 ImageMagick 这类调用命令行工具 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| 资产 | `DAM Asset Update` 处理摄取的图像的工作流。 | 资产摄取现在使用[资产微服务](/help/assets/asset-microservices-overview.md)。 |
+| 资产 | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | 使用 [直接二进制上传](/help/assets/add-assets.md)。 有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)。 |
+| 资产 | 不支持 [ 工作流中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流步骤`DAM Asset Update`，包括如 ImageMagick 这类调用命令行工具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| 资产 | 视频的FFmpeg转码。 | 对于FFmpeg缩略图生成，请使 [用Asset microservices](/help/assets/asset-microservices-overview.md)。 对于FFmpeg转码，请 [使用Dynamic Media](/help/assets/manage-video-assets.md)。 |
 
 ## 已删除功能 {#removed-features}
 
