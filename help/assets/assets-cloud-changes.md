@@ -2,7 +2,7 @@
 title: Adobe Experience Manager资产作为云服务的显着变化
 description: 与Adobe Experience Manager 6.5相比，AEM Cloud服务中对Adobe Experience Manager资产的显着更改。
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager作为一种云服务，为管理AEM项目带来许多�
 
 ## 开发和测试资产微服务 {#asset-microservices}
 
-资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 Asset microservices有助于避免对第三方渲染工具和方法（如ImageMagick和FFmpeg转码）的需求，并简化配置，同时为常见文件类型提供开箱即用功能。 目前，云服务中不提供ImageMagick集成和FFMmpeg转码。
+资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 资产微服务有助于避免对第三方渲染工具和方法（如ImageMagick）的需求并简化配置，同时为常见文件类型提供现成功能。 您现在可以处 [理各种文件类型](/help/assets/file-format-support.md) ，这些类型的现成格式比先前版本的Experience Manager所能处理的格式更多。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。 不能将ImageMagick的复杂配置用于处 [!UICONTROL 理用户档案配] 置。 此外，还可 [!DNL Dynamic Media] 用于视频的FFmpeg转码。
 
 Asset microservices是一种云本机服务，可自动配置并连接到Experience Manager中在Cloud Manager中管理的客户项目和环境。 要扩展或自定义Experience Manager，开发人员可以将现有内容或资产与在云环境中生成的演绎版结合使用，以使用、显示、下载资产来测试和验证其代码。
 
