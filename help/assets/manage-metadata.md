@@ -4,7 +4,7 @@ description: 了解元数据的类型以及[!DNL Adobe Experience Manager资产]
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
 
 ---
 
@@ -161,7 +161,7 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
 
 ### Standard metadata {#standard-metadata}
 
-* dc - [!DNL Dublin Core] is the most important and widely used set of metadata.
+* DC - [!DNL Dublin Core] 是一组重要且广泛使用的元数据。
 * DICOM - 医学数字成像和通信.
 * Iptc4xmpCore和iptc4xmpExt - International Press Communications Standard包含许多特定于主题的元数据。
 * rdf - 资源描述框架 - 适用于通用语义 Web 元数据.
@@ -173,45 +173,45 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
 特定于应用程序的元数据包括技术性元数据和描述性元数据。 如果您使用这类元数据，其他应用程序将无法使用这些元数据。For example, if you have an asset with [!DNL Adobe Photoshop] metadata and another image-rendering application tries to access the metadata, it may not be able to access the metadata. 如果您发现资产中有许多特定于应用程序的元数据，则可以创建一个工作流步骤，将特定于应用程序的属性更改为标准属性。
 
 * ACDSee —— 由项目管理的元 [!DNL ACDSee] 数据。 请参 [阅www.acdsee.com/](https://www.acdsee.com/)。
-* album - [!DNL Adobe Photoshop Album]。
-* cq - Used by [!DNL Experience Manager Assets].
-* dam —— 使用方 [!DNL Experience Manager Assets]。
-* dex - Optima SC Description Explorer.
-* crs - Adobe Photoshop Camera Raw.
-* lr - [!DNL Adobe Lightroom]
-* mediapro - IView MediaPro.
+* 相册- [!DNL Adobe Photoshop Album].
+* CQ - Used by [!DNL Experience Manager Assets].
+* DAM —— 使用方 [!DNL Experience Manager Assets]。
+* DEX - [Optima SC Description](http://www.optimasc.com/products/dex/index.html) explorer是用于Windows操作系统元数据和文件管理的工具集合。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto 和 MP - Microsoft Photo.
-* pdf 和 pdfx.
-* photoshop和psAux - [!DNL Adobe Photoshop]。
+* PDF和PDF/X。
+* Photoshop和psAux - [!DNL Adobe Photoshop]。
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights]。
-* plus - [Picture Licensing Universal System](https://www.useplus.com).
-* prism - https://www.idealliance.org/prism-metadata行业标准元数据的发布要求。
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM权限语言。
 * PUR - PRISM使用权。
-* xmpPlus - PLUS与XMP集成。
+* `xmpPlus` - PLUS与XMP集成。
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
 * Exif —— 相机技术信息，包括GPS定位。
 * CRS - [!DNL Camera Raw] 模式
-* Iptc4xmpCore和iptc4xmpExt。
+* `iptc4xmpCore` 和 `iptc4xmpExt`.
 * TIFF —— 图像元数据（不仅适用于TIFF图像）。
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf和pdfx - Adobe PDF和第三方应用程序。
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* PDF和PDF/X - Adobe PDF和第三方应用程序。
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
 * XMP.
-* xmpPG —— 针对分页文本的XMP元数据。
+* `xmpPG` -分页文本的XMP元数据。
 
 ### Multimedia-specific metadata {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM - 媒体管理.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` -媒体管理。
 
 ## Metadata-driven workflows {#metadata-driven-workflows}
 
