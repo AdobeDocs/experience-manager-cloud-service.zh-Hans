@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager中用作云服务的数字资产管理的资产
 description: 资产API允许执行基本的创建——读取——更新——删除(CRUD)操作，以管理资产，包括二进制、元数据、演绎版、注释和内容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
 
 ---
 
@@ -48,7 +48,7 @@ Experience Manager作为云服务，提供了一种将资产上传到存储库�
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 请求主体的内容类型应为表 `application/x-www-form-urlencoded` 单数据，其中包含以下字段：
 
