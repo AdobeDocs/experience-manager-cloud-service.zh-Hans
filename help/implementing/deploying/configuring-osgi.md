@@ -2,9 +2,9 @@
 title: 将OSGi配置为AEM云服务
 description: '具有机密值和环境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
+source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2311'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ OSGi配置文件在以下位置进行定义：
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-遵循 [cfg.json OSGi配置格式]（遵循cfg.json OSGi配置格式）。
+遵循cfg.json OSGi配置格式。
 
 > [!NOTE]
 >
