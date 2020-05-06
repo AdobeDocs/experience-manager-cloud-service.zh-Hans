@@ -2,12 +2,15 @@
 title: 将OSGi配置为AEM云服务
 description: '具有机密值和环境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
+workflow-type: tm+mt
+source-wordcount: '2214'
+ht-degree: 0%
 
 ---
 
 
-# OSGi配置 {#osgi-configurations}
+# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi是](https://www.osgi.org/) Adobe Experience Manager(AEM)技术堆栈中的一个基本元素。 它用于控制AEM及其配置的复合捆绑包。
 
@@ -95,7 +98,7 @@ OSGi配置文件在以下位置进行定义：
 
 OSGi的常见情况使用内联OSGi配置值。 环境特定配置仅用于开发环境之间值不同的特定用例。
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 环境特定配置扩展了包含内联值的传统静态定义OSGi配置，从而提供了通过Cloud Manager API在外部管理OSGi配置值的能力。 必须了解何时应使用通用的传统方法来定义内联值并将其存储在Git中，而不是将这些值抽象为特定于环境的配置。
 
@@ -124,95 +127,66 @@ AEM作为云服务，需要对任何机密OSGi配置值(`$[secret:SECRET_VAR_NAM
 
 使用特定于机密环境的配置将机密值作为云服务环境（包括舞台和生产）存储在所有AEM上。
 
-### 将新配置添加到存储库 {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### 您需要了解的内容 {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-要向存储库添加新配置，您需要了解以下内容：
+To add a new configuration to the repository you need to know the following:
 
-1. 服 **务的永久** 标识(PID)。
+1. The **Persistent Identity** (PID) of the service.
 
-   引用Web **控制台** 中的“配置”字段。 该名称在捆绑名称后面的括号中显示(或 **在页面底部** 的“配置信息”中显示)。
+   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   例如，创建一个节点 `com.day.cq.wcm.core.impl.VersionManagerImpl.` 以配置 **AEM WCM版本管理器**。
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. 是否需要特定运行模式。 创建文件夹：
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` -适用于所有运行模式
-   * `config.author` -对于作者环境
-   * `config.publish` -对于发布环境
-   * `config.<run-mode>` -视情况
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
-1. 是否需要 **配置** 或 **工厂配置** 。
-1. 要配置的各个参数； 包括需要重新创建的任何现有参数定义。
+1. Whether a **Configuration** or **Factory Configuration** is necessary.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   在Web控制台中引用单个参数字段。 每个参数的名称将显示在括号中。
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   例如，创建属性
-   `versionmanager.createVersionOnActivation` 在激活 **上配置创建版本**。
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. 中是否已存在配置 `/libs`? 要列表实例中的所有配置，请使 **用** CRXDE Lite中的查询工具提交以下SQL查询:
+1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
-   如果是，则可以将此配置复制到 ` /apps/<yourProject>/`新位置，然后在新位置进行自定义。
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## 在存储库中创建配置 {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-要将新配置实际添加到存储库，请执行以下操作：
+To actually add the new configuration to the repository:
 
-1. 使用CRXDE Lite导航到：
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-   ` /apps/<yourProject>`
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
-1. 如果文件夹尚未存在，请 `config` 创建文 `sling:Folder`件夹():
 
-   * `config` -适用于所有运行模式
-   * `config.<run-mode>` -特定于特定运行模式
+1. Populate the JSON file with the OSGi configuration key value pairs
 
-1. 在此文件夹下，创建一个节点：
-
-   * 类型: `sling:OsgiConfig`
-   * 名称： 持久身份(PID);
-
-      例如，AEM WCM Version Manager使用 `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >在名称后附加工厂 `-<identifier>` 配置时。
-   >
-   >如下所示： `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >如果 `<identifier>` 替换为您（必须）输入用来标识实例的自由文本（您不能忽略此信息）; 例如：
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
-1. 对于要配置的每个参数，在此节点上创建一个属性：
 
-   * 名称： Web控制台中显示的参数名称； 该名称显示在字段描述末尾的括号中。 例如，供 `Create Version on Activation` 使用 `versionmanager.createVersionOnActivation`
-   * 类型： 酌情。
-   * 值： 。
-   您只需为要配置的参数创建属性，其他人仍将采用AEM设置的默认值。
-
-1. 保存所有更改。
-
-   通过重新启动服务更新节点后，更改会立即应用（与在Web控制台中所做的更改一样）。
-
->[!CAUTION]
->
->您不得更改路径中的任 `/libs` 何内容。
-
->[!CAUTION]
->
->配置的完整路径必须正确，才能在启动时读取。
-
+1. Save the JSON file to your project. -->
 
 ## Source Control中的配置属性格式 {#configuration-property-format-in-source-control}
 
-在上面向存储库添加新配置一节中 [介绍了如何创建新的OSGI配置](#creating-the-configuration-in-the-repository) 属性。 按照以下步骤操作并修改以下子部分中概述的语法：
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+按照以下步骤操作并修改以下子部分中概述的语法：
 
 ### 内联值 {#inline-values}
 
