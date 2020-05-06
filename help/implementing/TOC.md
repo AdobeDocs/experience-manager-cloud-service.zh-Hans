@@ -2,7 +2,10 @@
 sub-product: 将AEM作为云服务实施
 user-guide-title: 将AEM作为云服务实施
 translation-type: tm+mt
-source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 81%
 
 ---
 
@@ -36,6 +39,7 @@ source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
    + [配置搜索表单](developing/extending/search-forms.md)
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
+   + [将OSGi配置为AEM云服务](deploying/configuring-osgi.md)
 + 云中的调度程序 {#dispatcher}
    + [云中的调度程序](dispatcher/overview.md)
    + [AEM 云服务中的内容交付](dispatcher/content-delivery.md)
