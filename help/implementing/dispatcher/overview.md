@@ -2,33 +2,39 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b7bb84b026c9187cb633e9ccfdc17aa5ec930aff
+workflow-type: tm+mt
+source-wordcount: '3916'
+ht-degree: 1%
 
 ---
 
 
 # 云中的调度程序 {#Dispatcher-in-the-cloud}
 
-## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
+## Apache和Dispatcher配置和测试 {#apache-and-dispatcher-configuration-and-testing}
 
-本节介绍如何将AEM构建为Cloud Service Apache和Dispatcher配置，以及如何在部署到云环境之前在本地验证并运行它。 它还描述了在Cloud环境中进行调试。 有关Dispatcher的其他信息，请参阅 [AEM Dispatcher文档](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)。
+本节介绍如何将AEM构建为云服务Apache和调度程序配置，以及如何在部署到云环境之前在本地验证和运行它。 还描述了在云环境中进行调试。 有关Dispatcher的其他信息，请参 [阅AEM Dispatcher文档](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)。
 
 >[!NOTE]
->Windows用户需要使用Windows 10 Professional或支持Docker的其他分发版本。 这是在本地计算机上运行和调试Dispatcher的先决条件。 以下各节包括使用Mac或Linux版本的SDK的命令，但Windows SDK也可以以类似方式使用。
+>Windows用户需要使用Windows 10 Professional或支持Docker的其他分发版。 这是在本地计算机上运行和调试Dispatcher的先决条件。 以下各节包括使用Mac或Linux版本的SDK的命令，但Windows SDK也可以采用类似的方式使用。
+
+>[!WARNING]
+> Windows用户： 当前版本的AEM作为云服务本地调度程序工具(v2.0.20)与Windows不兼容。 请联系 [Adobe支持](https://daycare.day.com/home.html) ，获取Windows兼容性更新。
 
 ## 调度程序工具 {#dispatcher-sdk}
 
-The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and provide:
+调度程序工具作为云服务SDK是整个AEM的一部分，它提供：
 
-* 包含要包含在调度程序的主项目中的配置文件的vanila文件结构；
-* Tooling for customers to validate a dispatcher configuration locally;
-* A Docker image that brings up the dispatcher locally.
+* 一种香草文件结构，包含要包含在调度程序的主项目中的配置文件；
+* 客户在本地验证调度程序配置的工具；
+* 在本地调度程序启动的Docker映像。
 
 ## 下载和提取工具 {#extracting-the-sdk}
 
-Dispatcher Tools可从软件分发门户的zip文件 [下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 请注意，对SDK列表的访问权限仅限于那些将AEM Managed Services或AEM作为云服务环境的用户。 该新调度程序工具版本中可用的任何新配置均可用于部署到在Cloud或更高版本中运行该版本AEM的Cloud环境。
+调度程序工具可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 请注意，对SDK列表的访问权限仅限于那些将AEM Managed Services或AEM作为云服务环境访问的SDK列表。 该新调度程序工具版本中提供的任何新配置均可用于部署到云环境，在云或更高版本中运行该版本的AEM。
 
-**对于macOS和Linux**，将shell脚本下载到计算机上的文件夹，使其可执行并运行它。 它将自解压缩存储在其目录下的Dispatcher Tools文件(其中 `version` 是Dispatcher Tools的版本)。
+**对于macOS和Linux**，请将shell脚本下载到计算机上的文件夹，使其可执行并运行它。 它将自解压存储到的目录下的调度程序工具文件(其 `version` 中是调度程序工具的版本)。
 
 ```bash
 $ chmod +x DispatcherSDKv<version>.sh
@@ -37,7 +43,7 @@ Verifying archive integrity...  100%   All good.
 Uncompressing DispatcherSDKv<version>  100% 
 ```
 
-**对于Windows**，请下载zip存档并解压缩它。
+**对于Windows**，请下载zip存档并解压。
 
 ## 文件结构 {#file-structure}
 
@@ -82,7 +88,7 @@ Uncompressing DispatcherSDKv<version>  100%
         └── virtualhosts.any
 ```
 
-以下是可修改的显着文件说明：
+以下是可修改的值得注意的文件的说明：
 
 **可自定义的文件**
 
@@ -90,11 +96,11 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-您可以拥有一个或多个这些文件。 它们包 `<VirtualHost>` 含与主机名匹配的条目，并允许Apache使用不同的规则处理每个域流量。 文件在目录中创建， `available_vhosts` 并在目录中启用符号链 `enabled_vhosts` 接。 从文件 `.vhost` 中，将包括重写和变量等其他文件。
+您可以拥有一个或多个这些文件。 它们包 `<VirtualHost>` 含与主机名匹配的条目，并允许Apache使用不同的规则处理每个域通信。 文件在目录中创 `available_vhosts` 建，并在目录中启用符号链 `enabled_vhosts` 接。 从文件 `.vhost` 中，将包括重写和变量等其他文件。
 
 * `conf.d/rewrites/rewrite.rules`
 
-此文件包含在文件 `.vhost` 中。 It has a set of rewrite rules for `mod_rewrite`.
+此文件包含在您的文 `.vhost` 件中。 它有一套重写规则 `mod_rewrite`。
 
 >[!NOTE]
 >
@@ -102,43 +108,43 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/variables/custom.vars`
 
-此文件包含在文件 `.vhost` 中。 您可以在此位置为Apache变量添加定义。
+此文件包含在您的文 `.vhost` 件中。 您可以在此位置放入Apache变量的定义。
 
 * `conf.d/variables/global.vars`
 
-此文件包含在文件 `dispatcher_vhost.conf` 中。 您可以更改调度程序并重写此文件中的日志级别。
+此文件包含在文件 `dispatcher_vhost.conf` 中。 您可以更改此文件中的调度程序和重写日志级别。
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-您可以拥有一个或多个这些文件，它们包含的群与主机名匹配并允许调度程序模块使用不同的规则处理每个群。 文件在目录中创建， `available_farms` 并在目录中启用符号链 `enabled_farms` 接。 From the `.farm` files, other files like filters, cache rules and others will be included.
+您可以有一个或多个这些文件，它们包含与主机名匹配的场，并允许调度程序模块使用不同的规则处理每个场。 文件在目录中创 `available_farms` 建，并在目录中启用符号链 `enabled_farms` 接。 从文件 `.farm` 中，将包括过滤器、缓存规则等其他文件。
 
 * `conf.dispatcher.d/cache/rules.any`
 
-此文件包含在文件 `.farm` 中。 它指定缓存首选项。
+此文件包含在您的文 `.farm` 件中。 它指定缓存首选项。
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-此文件包含在文件 `.farm` 中。 它指定应将哪些请求标头转发到后端。
+此文件包含在您的文 `.farm` 件中。 它指定应将哪些请求标头转发到后端。
 
 * `conf.dispatcher.d/filters/filters.any`
 
-此文件包含在文件 `.farm` 中。 它有一组规则，这些规则更改了应过滤掉的流量，而不是将流量发送到后端。
+此文件包含在您的文 `.farm` 件中。 它有一组规则，这些规则会更改应过滤掉的流量，而不会将流量发送到后端。
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-此文件包含在文件 `.farm` 中。 它具有一列表主机名或URI路径，要通过全局匹配进行匹配。 这决定了用于提供请求的后端。
+此文件包含在您的文 `.farm` 件中。 它具有列表主机名或URI路径，要通过全局匹配进行匹配。 这决定了使用什么后端来服务请求。
 
-上述文件引用下面列出的不可改变的配置文件。 对不可变文件所做的更改不会由云环境中的调度程序进行处理。
+上述文件引用下面列出的不可改变的配置文件。 云环境中的调度程序将不会处理对不可变文件所做的更改。
 
 **不可变的配置文件**
 
-这些文件是基本框架的一部分，并实施标准和最佳做法。 这些文件被视为不可变的，因为在本地修改或删除它们不会影响您的部署，因为它们不会被传输到您的云实例。
+这些文件是基本框架的一部分，并实施标准和最佳实践。 这些文件被视为不可变，因为在本地修改或删除它们不会影响您的部署，因为它们不会被传输到您的云实例。
 
-建议上述文件引用下面列出的不可改变的文件，后面跟有任何其他语句或覆盖。 将调度程序配置部署到云环境时，将使用不可变文件的最新版本，而不管本地开发中使用的是哪个版本。
+建议上述文件引用下面列出的不可改变文件，后跟任何附加语句或覆盖。 将调度程序配置部署到云环境时，将使用不可变文件的最新版本，而不管本地开发中使用的版本如何。
 
 * `conf.d/available_vhosts/default.vhost`
 
-包含示例虚拟主机。 对于您自己的虚拟主机，请创建此文件的副本，对其进行自定义，转到并创 `conf.d/enabled_vhosts` 建指向自定义副本的符号链接。
+包含示例虚拟主机。 对于您自己的虚拟主机，请创建此文件的副本，对其进行自定义，转 `conf.d/enabled_vhosts` 到并创建指向自定义副本的符号链接。
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -150,11 +156,11 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-包含一个调度程序群示例。 对于您自己的农场，请创建此文件的副本，对其进行自定义，转到并创 `conf.d/enabled_farms` 建到自定义副本的符号链接。
+包含一个调度程序群示例。 对于您自己的场，请创建此文件的副本，对其进行自定义，转 `conf.d/enabled_farms` 到并创建到自定义副本的符号链接。
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
-基本框架的一部分，在启动时生成。 您必须 **在** “部分”中定义的每个农场中包含此 `cache/allowedClients` 文件。
+作为基本框架的一部分，在启动时生成。 您必 **须在** “ ”部分中定义的每个场中包含此 `cache/allowedClients` 文件。
 
 * `conf.dispatcher.d/cache/default_rules.any`
 
@@ -162,11 +168,11 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
-默认请求标头可转发到后端，适用于标准项目。 如果需要自定义，请修改 `clientheaders.any`。 In your customization, you can still include the default request headers first, if they suit your needs.
+默认请求标头可转发到后端，适用于标准项目。 如果需要自定义，请修改 `clientheaders.any`。 在自定义中，您仍可以首先包含默认请求标头（如果它们符合您的需求）。
 
 * `conf.dispatcher.d/dispatcher.any`
 
-基本框架的一部分，用于说明如何包括调度程序群。
+基本框架的一部分，用于说明如何包含调度程序群。
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
@@ -174,24 +180,24 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
-作为基本框架的一部分，此文件在启动时生成。 您必须 **在** “部分”中定义的每个农场中包含此 `renders` 文件。
+作为基本框架的一部分，此文件在启动时生成。 您必 **须在** “ ”部分中定义的每个场中包含此 `renders` 文件。
 
 * `conf.dispatcher.d/virtualhosts/default_virtualhosts.any`
 
-适用于标准项目的默认主机回声。 如果需要自定义，请修改 `virtualhosts.any`。 在自定义中，您不应包括默认主机globbing，因为它匹配每个传入 **的请** 求。
+适用于标准项目的默认主机全局匹配。 如果需要自定义，请修改 `virtualhosts.any`。 在自定义中，您不应包括默认主机全局覆盖，因为它匹配每 **个传** 入请求。
 
 >[!NOTE]
 >AEM作为云服务主原型将生成相同的调度程序配置文件结构。
 
-以下各节介绍如何在本地验证配置，以便在部署内部版本时在Cloud Manager中传递关联的质量门。
+以下各节介绍如何在本地验证配置，以便在部署内部版本时在Cloud Manager中通过相关的质量门。
 
 ## 调度程序配置的本地验证 {#local-validation-of-dispatcher-configuration}
 
-验证工具在SDK中以Mac OS、Linux或 `bin/validator` Windows二进制形式提供，允许客户运行与Cloud Manager在构建和部署发行版时执行的验证相同的验证。
+验证工具在SDK中以Mac OS、 `bin/validator` Linux或Windows二进制形式提供，允许客户运行与Cloud Manager在构建和部署版本时将执行的验证相同的验证。
 
 它被调用为： `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-该工具可验证Apache和调度程序配置。 它使用模式扫描所有文 `conf.d/enabled_vhosts/*.vhost` 件，并检查是否只使用列入白名单的指令。 通过运行validator的whitelist命令，可以列出Apache配置文件中允许的指令：
+该工具可验证Apache和调度程序配置。 它使用模式扫描所 `conf.d/enabled_vhosts/*.vhost` 有文件，并检查是否只使用白名单指令。 通过运行validator的whitelist命令，可以列出Apache配置文件中允许的指令：
 
 ```
 $ validator whitelist
@@ -230,16 +236,16 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-客户无法添加任意模块，但将来可能会考虑将其他模块包含在产品中。 如调度程序工具文档中所述，客户可以通过在SDK中执行“validator白名单”来查找指令的列表，以用于给定的调度程序版本。
+客户无法添加任意模块，但将来可能会考虑将其他模块包含在产品中。 如调度程序工具文档中所述，客户可以通过在SDK中执行“validator白名单”来查找指令的列表，该指令可用于给定的调度程序版本。
 
-白名单中包含一列表客户配置中允许的Apache指令。 如果指令未列入白名单，则该工具将记录一个错误并返回非零的退出代码。 如果命令行上没有提供白名单（这是应调用该白名单的方式），则该工具会使用默认白名单，Cloud Manager将在部署到云环境之前使用该白名单进行验证。
+白名单包含列表客户配置中允许的Apache指令。 如果指令未列入白名单，该工具将记录错误并返回非零的退出代码。 如果命令行上没有提供白名单（这是应调用白名单的方式），则该工具会使用默认白名单，Cloud Manager将在部署到云环境之前使用该白名单进行验证。
 
-Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
+此外，它还使用模式扫描所有文 `conf.dispatcher.d/enabled_farms/*.farm` 件并检查：
 
-* No filter rule exists that uses allows via `/glob` (see [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) for more details)
-* 不公开任何管理功能。 例如，访问路径，如 `/crx/de or /system/console`。
+* 不存在使用允许的筛选 `/glob` 规则( [有关详细信息，请参阅](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) CVE-2016-0957)
+* 不公开管理功能。 例如，对路径的访问 `/crx/de or /system/console`。
 
-当针对主对象或子目录运行时， `dispatcher/src` 它将报告验证失败：
+当针对主对象或子目录运 `dispatcher/src` 行时，将报告验证失败：
 
 ```
 $ validator full dispatcher/src
@@ -250,23 +256,23 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-请注意，验证工具仅报告未列入白名单的禁止使用Apache指令。 它不会报告Apache配置的语法或语义问题，因为此信息仅对运行中的Apache模块可用。
+请注意，验证工具仅报告未列入白名单的禁止使用Apache指令。 它不会报告Apache配置的语法或语义问题，因为此信息仅对正在运行的环境中的Apache模块可用。
 
 未报告验证失败时，您的配置已准备好进行部署。
 
-以下是调试工具输出的常见验证错误的疑难解答技巧：
+以下是调试工具输出的常见验证错误的疑难解答技术：
 
 **在存档中找`conf.dispatcher.d`不到子文件夹**
 
 您的存档应包含文件夹 `conf.d` 和 `conf.dispatcher.d`。 请注意，您不应 **在**&#x200B;存档 `etc/httpd` 中使用前缀。
 
-**找不到`conf.dispatcher.d/enabled_farms`**
+**在`conf.dispatcher.d/enabled_farms`**
 
-已启用的农场应位于提及的子文件夹中。
+启用的场应位于所述子文件夹中。
 
-**包含的文件(...)必须命名：...**
+**包含的文件(...)必须命名： ...**
 
-您的农场配置中有两个部分必须 **包含** 特定文件： `/renders` 和 `/allowedClients` 部分 `/cache` 中。 这些部分必须如下：
+您的场配置中有两个部分必须 **包含** 特定文件： `/renders` 和 `/allowedClients` 部分 `/cache` 中。 这些部分必须如下：
 
 ```
 /renders {
@@ -282,11 +288,11 @@ Cloud manager validator 1.0.4
 }
 ```
 
-**文件包含在未知位置：...**
+**文件包含在未知位置： ...**
 
-您的农场配置中有四个部分，允许您在其中包含您自己的文件： `/clientheaders`, `filters`在部 `/rules` 分和 `/cache``/virtualhosts`中 所包含的文件需要命名如下：
+您的场配置中有四个部分，允许您包含您自己的文件： `/clientheaders`、 `filters`, `/rules` 章节 `/cache` 和 `/virtualhosts`。 所包含的文件需要命名如下：
 
-| 区域 | 包括文件名 |
+| 区域 | 包含文件名 |
 |------------------|--------------------------------------|
 | `/clientheaders` | `../clientheaders/clientheaders.any` |
 | `/filters` | `../filters/filters.any` |
@@ -295,9 +301,9 @@ Cloud manager validator 1.0.4
 
 或者，您也可以包 **含这些文件的默认版本** ，其名称前面加有单词 `default_`，如 `../filters/default_filters.any`.
 
-**包含位于(...)的语句，位于任何已知位置之外：...**
+**包含位于(...)的语句，位于任何已知位置之外： ...**
 
-除了上述段落中提到的六个部分之外，您不得使用该 `$include` 语句，例如，以下内容将生成此错误：
+除了上述段落中提到的六个部分之外，您不允许使 `$include` 用该语句，例如，以下内容会生成此错误：
 
 ```
 /invalidate {
@@ -305,13 +311,13 @@ Cloud manager validator 1.0.4
 }
 ```
 
-**允许的客户端／渲染器不包括自：...**
+**允许的客户端／渲染不包括自： ...**
 
-当您未在部分中为和指定包含时，会 `/renders` 生 `/allowedClients` 成此错误 `/cache` 。 请参阅&#x200B;**包含的文件(...)必须命名：...** 的下界。
+当您未在部分中为和指定包含时， `/renders` 会 `/allowedClients` 生成此 `/cache` 错误。 请参阅&#x200B;**包含的文件(...)必须命名： ...部分** ，以了解更多信息。
 
-**过滤器不得使用全局模式允许请求**
+**过滤器不能使用glob模式允许请求**
 
-不安全地允许具有样式规则的请 `/glob` 求，该样式规则与完整的请求行匹配，例如，
+允许使用样式规则的请求是不安 `/glob` 全的，该规则与完整的请求行匹配，例如，
 
 ```
 /0100 {
@@ -319,28 +325,28 @@ Cloud manager validator 1.0.4
 }
 ```
 
-此语句旨在允许对文件的请 `css` 求，但也允许对任何资源的请 **求** ，后跟查询字符串 `?a=.css`。 因此，禁止使用此类过滤器（另请参阅CVE-2016-0957）。
+此语句用于允许对文件 `css` 进行请求，但也允许对任何资 **源** (后跟查询字符串)发出请求 `?a=.css`。 因此，禁止使用此类过滤器（另请参阅CVE-2016-0957）。
 
-**包含的文件(...)与任何已知文件均不匹配**
+**包含的文件(...)与任何已知文件不匹配**
 
-Apache虚拟主机配置中有两种类型的文件可指定为包括：重写和变量。
+Apache虚拟主机配置中有两种类型的文件可指定为包括： 重写和变量。
 所包含的文件需要命名如下：
 
-| 类型 | 包括文件名 |
+| 类型 | 包含文件名 |
 |-----------|---------------------------------|
 | 重写 | `conf.d/rewrites/rewrite.rules` |
 | 变量 | `conf.d/variables/custom.vars` |
 
-或者，您也可以包含 **重写规则** （名称为）的默认版本 `conf.d/rewrites/default_rewrite.rules`。
-请注意，变量文件没有默认版本。
+或者，您也可以包 **含** rewrite规则的默认版本，其名称为 `conf.d/rewrites/default_rewrite.rules`。
+请注意，不存在变量文件的默认版本。
 
 **检测到已弃用的配置布局，启用兼容性模式**
 
-此消息表示您的配置具有已弃用的版本1布局，其中包含完整的Apache配置和带前缀的 `ams_` 文件。 虽然后向兼容性仍支持此功能，但您应切换到新布局。
+此消息表示您的配置具有已弃用的版本1布局，包含完整的Apache配置和带有前缀的 `ams_` 文件。 虽然后向兼容性仍支持此功能，但您应切换到新布局。
 
 ## 在本地测试Apache和Dispatcher配置 {#testing-apache-and-dispatcher-configuration-locally}
 
-还可以在本地测试Apache和Dispatcher配置。 它要求本地安装Docker，并且您的配置要通过上述验证。
+还可以在本地测试Apache和调度程序配置。 它需要在本地安装Docker，并且您的配置要通过验证，如上所述。
 
 通过使用“`-d`”参数，验证程序输出一个文件夹，其中包含调度程序所需的所有配置文件。
 
@@ -359,13 +365,13 @@ Starting httpd server
 ...
 ```
 
-这将在容器中开始调度程序，其后端指向本地Mac OS计算机上运行的AEM实例（端口4503）。
+这将在容器中开始调度程序，其后端指向在本地Mac OS计算机上运行的AEM实例（端口4503）。
 
 ## 调试Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
 以下策略可用于增加调度程序模块的日志输出并查看本地和云环境 `RewriteRule` 中评估结果。
 
-这些模块的日志级别由变量和定 `DISP_LOG_LEVEL` 义 `REWRITE_LOG_LEVEL`。 可在文件中设置它们 `conf.d/variables/global.vars`。 其相关部分如下：
+这些模块的日志级别由变量和 `DISP_LOG_LEVEL` 定义 `REWRITE_LOG_LEVEL`。 可在文件中设置它们 `conf.d/variables/global.vars`。 其相关部分如下：
 
 ```
 # Log level for the dispatcher
@@ -389,15 +395,15 @@ Starting httpd server
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-在本地运行调度程序时，日志也直接打印到终端输出。 大多数情况下，这些日志应位于DEBUG中，这可以通过在运行Docker时作为参数传入调试级别来实现。 例如：
+在本地运行调度程序时，日志也会直接打印到终端输出。 大多数时间，这些日志应位于DEBUG中，这可以通过在运行Docker时以参数的形式传递到调试级别来完成。 例如：
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-云环境的日志将通过Cloud Manager中提供的日志记录服务公开。
+云环境的日志将通过云管理器中提供的日志记录服务公开。
 
 ## 每个环境的不同调度程序配置 {#different-dispatcher-configurations-per-environment}
 
-此时，同一调度程序配置将作为云服务环境应用于所有AEM。 运行时将有一个环境变 `ENVIRONMENT_TYPE` 量，其中包含当前运行模式（dev、stage或prod）以及定义。 定义可以 `ENVIRONMENT_DEV`是 `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，可以使用定义构建逻辑：
+此时，同一调度程序配置将作为云服务环境应用于所有AEM。 运行时将具有一个环境 `ENVIRONMENT_TYPE` 变量，该变量包含当前运行模式（开发、舞台或生产）以及定义。 定义可以 `ENVIRONMENT_DEV`是 `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，可以使用定义来构建逻辑：
 
 ```
 # Simple usage of the environment variable
@@ -414,7 +420,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 </IfDefine>
 ```
 
-在调度程序配置中，可以使用相同的环境变量。 如果需要更多逻辑，请如上例所示定义变量，然后在调度程序配置部分中使用这些变量：
+在调度程序配置中，可以使用相同的环境变量。 如果需要更多逻辑，请定义上例中所示的变量，然后在调度程序配置部分中使用它们：
 
 ```
 /virtualhosts {
@@ -422,18 +428,18 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 }
 ```
 
-在本地测试配置时，您可以通过将变量直接传递给脚本来模拟不 `DISP_RUN_MODE` 同的环境 `docker_run.sh` 类型：
+在本地测试配置时，可以通过将变量直接传递到脚本来模拟 `DISP_RUN_MODE` 不同的 `docker_run.sh` 环境类型：
 
 ```
 $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
 
-未传递DISP_RUN_MODE值时的默认运行模式为“dev”。
-要获得一列表完整的可用选项和变量，请运行不带参数 `docker_run.sh` 的脚本。
+不传递DISP_RUN_MODE值时的默认运行模式为“dev”。
+要获得可用选项和变量的完整列表，请运行不带参 `docker_run.sh` 数的脚本。
 
 ## 查看Docker容器正在使用的调度程序配置 {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-使用环境特定配置，可能很难确定实际的调度程序配置的外观。 在启动您的码头容器后， `docker_run.sh` 可以按如下方式丢弃它：
+使用环境特定配置，可能难以确定实际的调度程序配置。 在启动您的码头容器之后， `docker_run.sh` 可以按如下方式丢弃它：
 
 * 确定正在使用的Docker容器ID:
 
@@ -456,31 +462,31 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## AMS Dispatcher与AEM作为云服务的主要区别 {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-如上所述，AEM中作为云服务的Apache和Dispatcher配置与AMS配置非常相似。 主要区别是：
+如上文参考页所述，AEM中作为云服务的Apache和Dispatcher配置与AMS配置非常相似。 主要区别是：
 
-* 在AEM中，某些Apache指令不能被使用(例如 `Listen` 或 `LogLevel`)
-* 在AEM中，作为云服务，只能将部分调度程序配置放入包含文件中，其命名很重要。 例如，要在不同主机之间重复使用的过滤器规则必须放入一个名为的文件中 `filters/filters.any`。 有关详细信息，请参阅参考页面。
-* 在AEM云服务中，存在额外的验证以禁止使用编写的过滤器规则以防 `/glob` 止安全问题。 由于 `deny *` 将使用而不是 `allow *` （无法使用），客户将从本地运行Dispatcher以及执行试用和错误中受益，查看日志以准确了解Dispatcher过滤器为了添加这些路径而阻止的路径。
+* 在AEM中，某些Apache指令不能使用(例如 `Listen` 或 `LogLevel`)
+* 在AEM中，作为云服务，只能将部分调度程序配置放入包含文件，其命名很重要。 例如，要在不同主机之间重复使用的筛选器规则必须放入一个名为的文件中 `filters/filters.any`。 有关详细信息，请参阅参考页面。
+* 在AEM作为云服务中，存在额外的验证以禁止使用编写的筛选器规则来 `/glob` 防止安全问题。 由于 `deny *` 将使用而非(不 `allow *` 能使用)，客户将从本地运行调度程序并执行试用和错误中受益，查看日志以准确了解调度程序过滤器为了添加这些路径而阻止的路径。
 
 ## 将调度程序配置从AMS迁移到AEM作为云服务的准则
 
-调度程序配置结构在Managed Services和AEM（作为云服务）之间存在差异。 下面是有关如何将AMS Dispatcher配置版本2作为云服务迁移到AEM的分步指南。
+调度程序配置结构在Managed Services和AEM（作为云服务）之间存在差异。 下面是有关如何将AMS Dispatcher配置版本2迁移到AEM作为云服务的分步指南。
 
 ## 如何将AMS转换为AEM作为云服务调度程序配置
 
-下节提供有关如何转换AMS配置的分步说明。 假定您有一个存档，其结构与 [Cloud Manager调度程序配置中描述的类似](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+下节提供有关如何转换AMS配置的分步说明。 假定您的存档的结构与Cloud Manager调度程序配置中描述的 [结构类似](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
-### 提取存档并删除最终的前缀
+### 提取存档并删除最终前缀
 
-将存档解压缩到文件夹，并确保立即将子文件夹开始 `conf`、 `conf.d`和`conf.dispatcher.d``conf.modules.d`。 如果不这样做，就在层次中上移。
+将存档解压到文件夹中，并确保包含、和的直接子文 `conf`件夹 `conf.d`开始`conf.dispatcher.d``conf.modules.d`。 如果他们不这样做，就在层级中向上移动。
 
-### 删除未取消使用的子文件夹和文件
+### 删除未使用的子文件夹和文件
 
-删除子 `conf` 文件夹 `conf.modules.d`和，以及匹配的文件 `conf.d/*.conf`。
+删除子文 `conf` 件夹 `conf.modules.d`和，以及匹配的文件 `conf.d/*.conf`。
 
 ### 删除所有非发布虚拟主机
 
-删除名称中包 `conf.d/enabled_vhosts` 含、 `author`、 `unhealthy``health``lc` 或 `flush` 的任何虚拟主机文件。 中未链接的所 `conf.d/available_vhosts` 有虚拟主机文件也可以删除。
+删除名称中 `conf.d/enabled_vhosts` 、 `author`、或 `unhealthy`名 `health`称中`lc` 的任何虚 `flush` 拟主机文件。 所有未链接到 `conf.d/available_vhosts` 的虚拟主机文件也可以被删除。
 
 ### 删除或注释不引用端口80的虚拟主机部分
 
@@ -492,27 +498,27 @@ $ docker exec d75fbd23b29 httpd-test
 </VirtualHost>
 ```
 
-删除或添加注释。 这些部分中的语句将不会得到处理，但是，如果保留这些语句，您最终可能仍然会编辑它们，而不会产生任何效果，这令人混淆。
+删除或添加注释。 这些部分中的语句将不会得到处理，但是，如果保留这些语句，您最终可能仍会编辑它们，而无效，这令人混淆。
 
 ### 检查重写
 
 Enter directory `conf.d/rewrites`.
 
-删除名为和的任 `base_rewrite.rules` 何文 `xforwarded_forcessl_rewrite.rules` 件，并记住删除 `Include` 虚拟主机文件中引用它们的语句。
+删除任何名为 `base_rewrite.rules` 和 `xforwarded_forcessl_rewrite.rules` 并记住删除虚拟主机 `Include` 文件中引用它们的语句。
 
-如果 `conf.d/rewrites` 现在包含单个文件，则应将其重命名为 `rewrite.rules` ，并且不要忘记在虚拟主机文件 `Include` 中调整引用该文件的语句。
+如 `conf.d/rewrites` 果现在包含单个文件，则应将其重命名 `rewrite.rules` ，并不要忘记在虚拟主 `Include` 机文件中调整引用该文件的语句。
 
-但是，如果文件夹包含多个特定于虚拟主机的文件，则其内容应当被添加到虚拟主 `Include` 机文件中引用这些文件的语句中。
+但是，如果文件夹包含多个特定于虚拟主机的文件，则其内容应包含在虚拟主 `Include` 机文件中引用这些文件的语句中。
 
 ### 检查变量
 
 Enter directory `conf.d/variables`.
 
-删除任何名为的文 `ams_default.vars` 件，并记住删除虚拟 `Include` 主机文件中引用它们的语句。
+删除任何名为的文 `ams_default.vars` 件，并记住删 `Include` 除虚拟主机文件中引用它们的语句。
 
-如果 `conf.d/variables` 现在包含单个文件，则应将其重命名为 `custom.vars` ，并且不要忘记在虚拟主机文件 `Include` 中调整引用该文件的语句。
+如 `conf.d/variables` 果现在包含单个文件，则应将其重命名 `custom.vars` ，并不要忘记在虚拟主 `Include` 机文件中调整引用该文件的语句。
 
-但是，如果文件夹包含多个特定于虚拟主机的文件，则其内容应当被添加到虚拟主 `Include` 机文件中引用这些文件的语句中。
+但是，如果文件夹包含多个特定于虚拟主机的文件，则其内容应包含在虚拟主 `Include` 机文件中引用这些文件的语句中。
 
 ### 删除白名单
 
@@ -522,94 +528,94 @@ Enter directory `conf.d/variables`.
 
 在所有虚拟主机文件中：
 
-重命名 `PUBLISH_DOCROOT` 为删 `DOCROOT`除引用名为、或 `DISP_ID``PUBLISH_FORCE_SSL` 者 `PUBLISH_WHITELIST_ENABLED`
+重命 `PUBLISH_DOCROOT` 名为 `DOCROOT`删除引用名为或名为的变量 `DISP_ID`的节 `PUBLISH_FORCE_SSL` 。 `PUBLISH_WHITELIST_ENABLED`
 
 ### 通过运行验证程序检查您的状态
 
-使用子命令在目录中运行调度程序 `httpd` 验证程序：
+使用子命令在目录中运行调度程序 `httpd` validator:
 
 ```
 $ validator httpd .
 ```
 
-如果您看到有关缺少包含文件的错误，请检查您是否正确重命名了这些文件。
+如果看到缺少包含文件的错误，请检查是否正确重命名了这些文件。
 
 如果看到未列入白名单的Apache指令，请删除它们。
 
-### 删除所有非发布农场
+### 删除所有非发布场
 
-删除名称中 `conf.dispatcher.d/enabled_farms` 包含、 `author`、 `unhealthy``health``lc` 或 `flush` 的任何农场文件。 也可以删除 `conf.dispatcher.d/available_farms` 所有未链接的农场文件。
+删除名称中 `conf.dispatcher.d/enabled_farms` 包含 `author`、、 `unhealthy`或包含 `health`的任何场文件`lc``flush` 。 也可以删除 `conf.dispatcher.d/available_farms` 未链接的所有场文件。
 
-### 重命名农场文件
+### 重命名场文件
 
-必须重命名 `conf.d/enabled_farms` 中的所有农场以匹配该模 `*.farm`式，因此应重命名名为afarm `customerX_farm.any` 的文件 `customerX.farm`。
+必须重命名 `conf.d/enabled_farms` 中的所有农场以匹配该 `*.farm`模式，因此应重命名名为afarm `customerX_farm.any` 的文件 `customerX.farm`。
 
 ### 检查缓存
 
 Enter directory `conf.dispatcher.d/cache`.
 
-删除任何前缀的文件 `ams_`。
+删除任何预先修复的文件 `ams_`。
 
-如果 `conf.dispatcher.d/cache` 现在为空，请将文件从标准调 `conf.dispatcher.d/cache/rules.any`度程序配置复制到此文件夹。 此SDK的文件夹中可找到标准调度 `src` 程序配置。 不要忘记也要调整引用`$include` 农场文件中 `ams_*_cache.any` 的规则文件的语句。
+如果 `conf.dispatcher.d/cache` 现在为空，则将文件从 `conf.dispatcher.d/cache/rules.any`标准调度程序配置复制到此文件夹。 标准调度程序配置可在此SDK的文 `src` 件夹中找到。 不要忘记也调整引用`$include` 农场文件 `ams_*_cache.any` 中规则文件的语句。
 
-如果现 `conf.dispatcher.d/cache` 在包含带后缀的单个文件，则应将其重命名为 `_cache.any`，并且不要忘记在农场文件中改编 `rules.any``$include` 引用该文件的语句。
+如果现 `conf.dispatcher.d/cache` 在包含带后缀的单个文 `_cache.any`件，则应将其重命名 `rules.any` ，并且不要忘记在场文件中调整引 `$include` 用该文件的语句。
 
-但是，如果文件夹包含多个具有该模式的特定农场文件，则应将其内容复制到引用该群 `$include` 体文件中这些文件的语句中。
+但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到场文 `$include` 件中引用这些文件的语句中。
 
 删除任何具有后缀的文件 `_invalidate_allowed.any`。
 
-将Cloud调度程 `conf.dispatcher.d/cache/default_invalidate_any` 序配置中的默认AEM文件复制到该位置。
+将文件从 `conf.dispatcher.d/cache/default_invalidate_any` 云调度程序配置中的默认AEM复制到该位置。
 
-在每个农场文件中，删除该部分中的所 `cache/allowedClients` 有内容，并将其替换为：
+在每个场文件中，删除该部分中的所 `cache/allowedClients` 有内容，并将其替换为：
 
 ```
 $include "../cache/default_invalidate.any"
 ```
 
-### 检查客户端标题
+### 检查客户端标头
 
 Enter directory `conf.dispatcher.d/clientheaders`.
 
-删除任何前缀的文件 `ams_`。
+删除任何预先修复的文件 `ams_`。
 
-如果 `conf.dispatcher.d/clientheaders` 现在包含带后缀的单个文件 `_clientheaders.any`，则应将其重命名为 `clientheaders.any` ，并且不要忘记在农场文件中改编 `$include` 引用该文件的语句。
+如 `conf.dispatcher.d/clientheaders` 果现在包含带后缀的单个文 `_clientheaders.any`件，则应将其重命名 `clientheaders.any` ，并且不要忘记在场文件中也改编 `$include` 引用该文件的语句。
 
-但是，如果文件夹包含多个具有该模式的特定农场文件，则应将其内容复制到引用该群 `$include` 体文件中这些文件的语句中。
+但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到场文 `$include` 件中引用这些文件的语句中。
 
-将文件从默 `conf.dispatcher/clientheaders/default_clientheaders.any` 认AEM复制为Cloud Service调度程序配置，复制到该位置。
+将文件从默 `conf.dispatcher/clientheaders/default_clientheaders.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
 
-在每个农场文件中，替换任何clientheader包含如下所示的语句：
+在每个场文件中，替换任何clientheader包含如下语句：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"
 ```
 
-和语句：
+with语句：
 
 ```
 $include "../clientheaders/default_clientheaders.any"
 ```
 
-### 检查过滤器
+### 检查筛选器
 
 Enter directory `conf.dispatcher.d/filters`.
 
-删除任何前缀的文件 `ams_`。
+删除任何预先修复的文件 `ams_`。
 
-如果 `conf.dispatcher.d/filters` 现在包含单个文件，则应将其重命名为`filters.any` ，并且不要忘记在农场文件 `$include` 中改编引用该文件的语句。
+如 `conf.dispatcher.d/filters` 果现在包含单个文件，则应将其重命名`filters.any` ，并且不要忘记在场 `$include` 文件中也改编引用该文件的语句。
 
-但是，如果文件夹包含多个具有该模式的特定农场文件，则应将其内容复制到引用该群 `$include` 体文件中这些文件的语句中。
+但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到场文 `$include` 件中引用这些文件的语句中。
 
-将文件从默 `conf.dispatcher/filters/default_filters.any` 认AEM复制为Cloud Service调度程序配置，复制到该位置。
+将文件从默 `conf.dispatcher/filters/default_filters.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
 
-在每个农场文件中，替换任何过滤器包含如下所示的语句：
+在每个场文件中，替换任何筛选器都包含如下语句：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
 ```
 
-和语句：
+with语句：
 
 ```
 $include "../filters/default_filters.any"
@@ -621,9 +627,9 @@ Enter directory `conf.dispatcher.d/renders`.
 
 删除该文件夹中的所有文件。
 
-将文件从默 `conf.dispatcher.d/renders/default_renders.any` 认AEM复制为Cloud Service调度程序配置，复制到该位置。
+将文件从默 `conf.dispatcher.d/renders/default_renders.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
 
-在每个农场文件中，删除该部分中的所 `renders` 有内容，并将其替换为：
+在每个场文件中，删除该部分中的所 `renders` 有内容，并将其替换为：
 
 ```
 $include "../renders/default_renders.any"
@@ -631,23 +637,23 @@ $include "../renders/default_renders.any"
 
 ### 检查虚拟主机
 
-将目录重命 `conf.dispatcher.d/vhosts` 名为 `conf.dispatcher.d/virtualhosts` 并输入它。
+将目录重 `conf.dispatcher.d/vhosts` 命名 `conf.dispatcher.d/virtualhosts` 并输入它。
 
-删除任何前缀的文件 `ams_`。
+删除任何预先修复的文件 `ams_`。
 
-如果 `conf.dispatcher.d/virtualhosts` 现在包含单个文件，则应将其重命名为`virtualhosts.any` ，并且不要忘记在农场文件 `$include` 中改编引用该文件的语句。
+如 `conf.dispatcher.d/virtualhosts` 果现在包含单个文件，则应将其重命名`virtualhosts.any` ，并且不要忘记在场 `$include` 文件中也改编引用该文件的语句。
 
-但是，如果文件夹包含多个具有该模式的特定农场文件，则应将其内容复制到引用该群 `$include` 体文件中这些文件的语句中。
+但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到场文 `$include` 件中引用这些文件的语句中。
 
-将文件从默 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 认AEM复制为Cloud Service调度程序配置，复制到该位置。
+将文件从默 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
 
-在每个农场文件中，替换任何过滤器包含如下所示的语句：
+在每个场文件中，替换任何筛选器都包含如下语句：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
 ```
 
-和语句：
+with语句：
 
 ```
 $include "../virtualhosts/default_virtualhosts.any"
@@ -655,23 +661,23 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### 通过运行验证程序检查您的状态
 
-使用子命令将AEM作为Cloud Service Dispatcher validator运行在您的目录 `dispatcher` 中：
+使用子命令将AEM作为Cloud Service调度程序验证程序运行在您的目 `dispatcher` 录中：
 
 ```
 $ validator dispatcher .
 ```
 
-如果您看到有关缺少包含文件的错误，请检查您是否正确重命名了这些文件。
+如果看到缺少包含文件的错误，请检查是否正确重命名了这些文件。
 
-如果您看到与未定义变量相关的 `PUBLISH_DOCROOT`错误，请将其重命名为 `DOCROOT`。
+如果看到有关未定义变量的 `PUBLISH_DOCROOT`错误，请将其重命名 `DOCROOT`为。
 
-有关所有其他错误，请参阅验证程序工具文档的“疑难解答”部分。
+有关所有其他错误，请参阅验证程序工具文档的疑难解答部分。
 
 ### 使用本地部署测试配置（需要安装Docker）
 
-使用AEM中 `docker_run.sh` 的脚本作为云服务调度程序工具，您可以测试您的配置是否不包含任何只会显示部署的其他错误：
+将AEM中 `docker_run.sh` 的脚本用作Cloud Service Dispatcher工具，您可以测试配置是否不包含任何只显示部署的其他错误：
 
-### 第1步：使用验证程序生成部署信息
+### 第1步： 使用验证程序生成部署信息
 
 ```
 validator full -d out .
@@ -679,9 +685,9 @@ validator full -d out .
 
 这将验证完整配置并在 `out`
 
-### 第2步：将调度程序与该部署信息开始到文档处理器映像中
+### 第2步： 将调度程序与该部署信息开始到docker映像中
 
-在macOS计算机上运行AEM发布服务器，监听端口4503时，您可以按如下方式在该服务器前运行开始调度程序：
+在macOS计算机上运行AEM发布服务器时，监听端口4503，您可以按如下方式在该服务器前运行开始程序：
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -691,6 +697,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 使用新的调度程序配置
 
-恭喜！ 如果验证程序不再报告任何问题，且Docker容器开始未出现任何故障或警告，则您已准备好将配置移到git存储库的 `dispatcher/src` 子目录。
+恭喜！ 如果验证程序不再报告任何问题，且Docker容器开始未出现任何故障或警告，您已准备好将配置移至git存储库 `dispatcher/src` 的子目录。
 
-**使用AMS Dispatcher配置版本1的客户应联系客户支持以帮助他们从版本1迁移到版本2，以便遵循上述说明。**
+**使用AMS Dispatcher配置版本1的客户应联系客户支持，帮助他们从版本1迁移到版本2，以便遵循上述说明。**
