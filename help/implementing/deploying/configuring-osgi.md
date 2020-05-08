@@ -2,9 +2,9 @@
 title: 将OSGi配置为AEM云服务
 description: '具有机密值和环境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## 在存储库中创建配置 {#creating-the-configuration-in-the-repository}
+## 创建OSGi配置
 
-要将新配置实际添加到存储库，请执行以下操作：
+有两种方法可创建新OSGi配置，如下所述。 前一种方法通常用于配置自定义OSGi组件，这些组件具有开发人员所熟知的OSGi属性和值，后一种方法用于AEM提供的OSGi组件。
 
-1. 在ui.apps项目中，根据您 `/apps/…/config.xxx` 使用的运行模式根据需要创建文件夹
+### 编写OSGi配置
 
-1. 使用PID名称新建JSON文件并添加扩 `.cfg.json` 展
+JSON格式的OSGi配置文件可以直接手工写入AEM项目。 这通常是为知名OSGi组件创建OSGi配置的最快方法，尤其是由定义这些配置的同一开发人员设计和开发的自定义OSGi组件。 此方法还可用于跨不同运行模式文件夹复制／粘贴和更新同一OSGi组件的配置。
+
+1. 在IDE中，打开项 `ui.apps` 目，找到或创建配置文件夹(`/apps/.../config.<runmode>`)，新OSGi配置应当生效的运行模式目标
+1. 在此配置文件夹中，创建新 `<PID>.cfg.json` 文件。 PID是OSGi组件的永久标识通常是OSGi组件实现的全类名称。 例如：
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+请注意，OSGi配置工厂文件名使用命 `<PID>-<factory-name>.cfg.json` 名约定
+1. 打开新 `.cfg.json` 文件，按照JSON OSGi配置格式定义OSGi属性和值对的键/ [值组合](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)。
+1. 保存对新文件的更 `.cfg.json` 改
+1. 向Git添加并提交新的OSGi配置文件
+
+### 使用AEM SDK快速启动生成OSGi配置
+
+AEM SDK Quickstart Jar的AEM Web Console可用于配置OSGi组件，以及将OSGi配置导出为JSON。 这对于配置AEM提供的OSGi组件很有用，这些组件的OSGi属性及其值格式可能无法被在AEM项目中定义OSGi配置的开发人员很好地理解。 请注意，使用AEM Web Console的配置UI会将文件写入存储库，因此请注意，当AEM项目定义的OSGi配置可能与生成的配置不同时， `.cfg.json` 为了避免在本地开发过程中出现潜在的意外行为，请注意。
+
+1. 以管理员用户身份登录到AEM SDK Quickstart Jar的AEM Web控制台
+1. 导航到OSGi >配置
+1. 找到要配置的OSGi组件，然后点按其标题进行编辑
+   ![OSGi配置](./assets/configuring-osgi/configuration.png)
+1. 根据需要通过Web UI编辑OSGi配置属性值
+1. 将永久标识(PID)记录到安全位置，稍后将使用它生成OSGi配置JSON
+1. 点按保存
+1. 导航到OSGi > OSGi Installer Configuration Printer
+1. 粘贴到步骤5中复制的PID中，确保序列化格式设置为“OSGi Configurator JSON”
+1. 点按打印，
+1. JSON格式的OSGi配置将显示在序列化配置属性部分
+   ![OSGi安装程序配置打印机](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. 在IDE中，打开项 `ui.apps` 目，找到或创建配置文件夹(`/apps/.../config.<runmode>`)，新OSGi配置应当生效的运行模式目标该文件夹。
+1. 在此配置文件夹中，创建新 `<PID>.cfg.json` 文件。 PID与步骤5中的值相同。
+1. 将序列化配置属性从步骤10粘贴到文 `.cfg.json` 件中。
+1. 保存对新文件的 `.cfg.json` 更改。
+1. 向Git添加并提交新的OSGi配置文件。
 
 
-1. 使用OSGi配置密钥值对填充JSON文件
-
-   >[!NOTE]
-   >
-   >如果要配置开箱即用的OSGi服务，则可以通过 `/system/console/configMgr`
-
-
-1. 将JSON文件保存到您的项目。 -->
-
-## Source Control中的配置属性格式 {#configuration-property-format-in-source-control}
-
-在上面向存储库添加新配置一节中 [介绍了如何创建新的OSGI配置](#creating-the-configuration-in-the-repository) 属性。
-
-按照以下步骤操作并修改以下子部分中概述的语法：
+## OSGi配置属性格式
 
 ### 内联值 {#inline-values}
 
 正如人们所期望的，内联值按照标准JSON语法格式化为标准名称——值对。 例如：
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
