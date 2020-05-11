@@ -1,7 +1,7 @@
 ---
 title: 对 Adobe Experience Manager 云服务的 IMS 支持
 description: 对 Adobe Experience Manager 云服务的 IMS 支持
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
@@ -156,7 +156,7 @@ AEM 可继续支持管理员用户在本地登录。登录屏幕具有本地登�
 
 
 >[!NOTE]
-> 在IMS中创建的任何用户都可以使用Adobe ID或Federated ID进行创建。 如果用户是使用Adobe ID设置的，则会使用其公司的标识提供者对其进行身份验证以登录。
+> 在 IMS 中创建任何用户时，都可以使用 Adobe ID 或 Federated ID 进行创建。如果用户是使用 Adobe ID 设置的，则会使用其公司的身份提供程序对其进行身份验证以登录。
 
 然后，他们将被重定向到 IMS 登录屏幕，并需要输入其凭证：
 
@@ -195,46 +195,46 @@ ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组
 ![ACL3](/help/security/assets/ims18.png)
 
 
-### 访问Cloud Manager {#accessing-cloud-manager}
+### 访问 Cloud Manager {#accessing-cloud-manager}
 
-要能够访问Cloud Manager或作为云服务环境访问AEM，您必须分配给Cloud Manager产品的用户档案。
+要访问 Cloud Manager 或 AEM 云服务环境，必须将您分配到 Cloud Manager 产品的配置文件。
 
-请参阅角 [色定义](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) ，进一步了解用户的角色，这些角色控制了Cloud Manager中特定功能的可用性。
+请参阅[角色定义](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)，了解有关用于控制 Cloud Manager 中特定功能可用性的用户角色的更多信息。
 
 >[!NOTE]
->Cloud Manager具有预配置的角色，并具有相应的权限。 要了解每个角色的相关信息，这些角色具有与每个角色关联的特定权限、预配置的任务或权限，请参阅基 [于角色的权限](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
+>Cloud Manager 预配置了一些具有适当权限的角色。要了解有关每个角色及与其关联的特定权限、预配置任务或权限的信息，请参阅[基于角色的权限](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
 
 **添加用户的步骤**
 
-1. 从现有用户屏幕或从新用户屏幕将用户添加到特定用户档案。
+1. 从现有用户屏幕或从新用户屏幕将用户添加到特定配置文件。
 
-1. 或者，您也可以从“概述”屏幕 **添加用户** ，如下图所示。
+1. 或者，您也可以从&#x200B;**概述**&#x200B;屏幕添加用户，如下图所示。
 
    ![ACL3](/help/security/assets/ims23.png)
 
    >[!NOTE]
-   >您可以向用户分配多个用户档案，如下图所示。
+   >您可以向用户分配多个配置文件，如下图所示。
 
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 将您添加到相应的用户档案后，您应能够通过 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) （从用户界面的右上角）访问Cloud Manager中各自的租户。
+1. 将您添加到相应的配置文件后，您应能够在 Cloud Manager 中通过用户界面的右上角的 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 访问各自的租户。
 
 
-### 在AEM中以云服务的形式访问实例 {#accessing-instance-cloud-service}
+### 访问 AEM 云服务中的实例 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->在授予您作为云服务访问AEM中的实例的权限之前，上一节中提到的步骤必须已经完成。
+>授予您访问 AEM 云服务中的实例权限之前，必须完成上一节中提到的步骤。
 
-要访问 **Admin Console中的AEM实例**，您应在 **Admin Console的产品项目中看到Cloud Manager环境和该项目中的**&#x200B;列表。
+要在 **Admin Console** 中访问 AEM 实例，您应在 **Admin Console** 的产品列表中看到 Cloud Manager 计划和该计划中的环境。
 
-例如，在下面的屏幕截图中，您将看到两个可用的环境，即 *开发作者* 和发 *布*。
+例如，在下面的屏幕截图中，您将看到两个可用的环境，即&#x200B;*开发作者*&#x200B;和&#x200B;*发布*。
 
 ![ACL3](/help/security/assets/ims19.png)
 
-要访问AEM实例，用户需要添加到相应云服务产品的组中。
+要访问 AEM 实例，需要将用户添加到相应云服务产品的组中。
 
-每个作者实例都将具有AEM管理员和AEM用户用户档案，每个发布实例都将具有AEM用户用户档案。 您可以根据需要添加其他用户档案。
+每个作者实例都将具有 AEM 管理员和 AEM 用户配置文件，每个发布实例也都将具有 AEM 用户配置文件。您可以根据需要添加其他配置文件。
 
-要获取对AEM实例的管理员级别访问权限，请将用户添加到该特定产品的AEM管理员用户档案。
+要获取对 AEM 实例的管理员级别访问权限，请将用户添加到该特定产品的 AEM 管理员配置文件。
 
