@@ -1,72 +1,72 @@
 ---
-title: Adobe Experience Manager作为2020.4.0云服务发行说明
-description: Experience Manager 2020.4.0发行说明
-translation-type: tm+mt
+title: Adobe Experience Manager 云服务 2020.4.0 发行说明
+description: Experience Manager 2020.4.0 发行说明
+translation-type: ht
 source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
 
-# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
+# Adobe Experience Manager 云服务 2020.4.0 发行说明{#release-notes}
 
-The following section outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+以下部分概述了 [!DNL Experience Manager] 云服务 2020.4.0 的常规发行说明。
 
-## Release Date {#release-date}
+## 发布日期 {#release-date}
 
-作为云服务2020.4.0 [!DNL Experience Manager] 的发布日期为2020年4月9日。
+[!DNL Experience Manager] 云服务 2020.4.0 的发布日期是 2020 年 4 月 9 日。
 
-## What&#39;s New in Assets {#assets}
+## Assets 的新增功能 {#assets}
 
-了解当前版本和版本中的新增功 [!DNL Experience Manager Assets] 能、 [!DNL Dynamic Media] 增强和错误修复。
+了解当前版本中 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 的新增功能、增强功能和错误修复。
 
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 支持Experience Manager Assets的资产分发用例。 [!DNL Brand Portal] 可以将获得批准的品牌和产品资产安全地分发给外部代理、合作伙伴、内部团队和经销商进行下载，从而帮助组织满足其营销需求。
-   * [!DNL Brand Portal] 配置通过控制台 [!DNL Adobe I/O] 完成。 请参 [阅配置Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
-   * 云服务尚 [!DNL Brand Portal] 不支持中的资 [!DNL Experience Manager] 产来源补充。
+* [Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/home.html) 支持 Experience Manager Assets 的资产分发用例。[!DNL Brand Portal] 可以将获得批准的品牌和产品资产安全地分发给外部代理、合作伙伴、内部团队和经销商进行下载，从而帮助组织满足其营销需求。
+   * [!DNL Brand Portal] 配置可通过 [!DNL Adobe I/O] 控制台完成。请参阅[配置 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
+   * [!DNL Experience Manager] 云服务尚不支持 [!DNL Brand Portal] 中的资产采购。
 
-* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) v2.0可以作为云服 [!DNL Experience Manager] 务使用。 [!DNL Adobe Asset Link] 通过与桌面应用程序连接，以及通过应用程序内面板，简化 [!DNL Experience Manager Assets] 了创意人 [!DNL Creative Cloud] 员和营销人员在内 [!DNL Adobe Photoshop]容创建过程 [!DNL Adobe Illustrator]中的协 [!DNL Adobe InDesign][!DNL Asset Link] 作。
-   * [!DNL Experience Manager] 为预配置，这 [!DNL Adobe Asset Link]样便于配 [置](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) ，并可更快地向创意专业人士推广。
-   * [!DNL Asset Link] 现在支持 [Experience Manager环境切换程序](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) ，该切换程序允许创意用户轻松连接到其他 [!DNL Experience Manager] 环境。 此功能非常有用的示例是，对于使用不同部署的多个客户端工作的代理设计 [!DNL Experience Manager Assets] 人员。
+* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) v2.0 可与 [!DNL Experience Manager] 云服务搭配使用。[!DNL Adobe Asset Link] 可通过应用程序内 [!DNL Asset Link] 面板将 [!DNL Experience Manager Assets] 与 [!DNL Creative Cloud] 桌面应用程序 [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] 和 [!DNL Adobe InDesign] 连接，从而简化内容创建过程中创意专业人士与营销人员之间的协作。
+   * 已为 [!DNL Adobe Asset Link] 预配置了 [!DNL Experience Manager]，这样可以[轻松配置](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)并更快速地向创意专业人士推广。
+   * 现在，[!DNL Asset Link] 支持 [Experience Manager 环境切换器](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)，该切换器让创意用户能够轻松连接到其他 [!DNL Experience Manager] 环境。例如，对于使用不同 [!DNL Experience Manager Assets] 部署来与多个客户开展合作的广告公司设计师而言，这项功能非常有用。
 
-* 用户可以在 [文件夹属性用户界面中](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) ，将后处理工作流配置为自  动开始特定文件夹层次结构。
-   * 文件夹“ [!UICONTROL 属性] ”用户界面得到简化，新的“资产处理”选项卡包含元数据用户档案、处理用户档案和新的自动开始工作流配置。
+* 用户可以将[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)配置为在特定文件夹层次结构的文件夹[!UICONTROL 属性]用户界面中自动启动。
+   * 文件夹[!UICONTROL 属性]用户界面得到简化，新的[!UICONTROL 资产处理]选项卡包含元数据配置文件、处理配置文件以及新的自动启动工作流配置。
 
-      ![处理用户档案可以轻松应用于文件夹，并且上传到文件夹的所有资产都使用这些用户档案进行处理](/help/assets/assets/asset-processing-folder-properties.png)
+      ![处理配置文件可以轻松应用于文件夹，并且上传到文件夹的所有资产都可以使用这些配置文件进行处理](/help/assets/assets/asset-processing-folder-properties.png)
 
-   * 资产重新处理选项允许选择特定的处理用户档案以重新处理子文件夹中用户选择的资产。
+   * 资产重新处理选项允许选择特定的处理配置文件来重新处理子文件夹中用户选择的资产。
 
-      ![使用特定处理用户档案重新处理选定的资产](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+      ![使用特定处理配置文件重新处理选定的资产](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
-   * [!DNL Dynamic Media]:添加了选择性发布配置，以便资产自动发布仅用于安全预览。 此外，资产可以显式发布到Experience Manager，而不发布到DMS7以在公共域中投放。
+   * [!DNL Dynamic Media]：添加了选择性发布配置，以便仅出于安全预览目的自动发布资产。此外，还可以将资产明确发布到 Experience Manager（不发布到 DMS7）以便在公共域中交付。
 
 ### 错误修复 {#assets-bug-fixes}
 
 * 修复了资产处理问题。
-* 对配置和 [!DNL Dynamic Media] 将资产发布到投放服务的 [!DNL Dynamic Media] 修复。
+* 修复了 [!DNL Dynamic Media] 配置，并将资产发布到 [!DNL Dynamic Media] 交付服务。
 
 >[!MORELIKETHIS]
 >
->* [关于Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [配置Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [将Experience Manager配置为使用资产链接](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [在Experience Manager中使用资产微服务创建工作流](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [关于 Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [配置 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [配置 Experience Manager 以搭配使用 Asset Link](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [使用资产微服务在 Experience Manager 中创建工作流](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Cloud Manager的新增功能 {#whats-new-cloud-manager}
+## Cloud Manager 的新增功能 {#whats-new-cloud-manager}
 
-* 发布者URL现在可从云管理器UI的环境页面访问。
-* 对导航进行更改，以允许用户从Cloud Manager概述页面编辑、切换或添加项目。
-* 允许用户从Cloud Manager项目上的项目卡编辑登陆页的更改。
-* 新管线状 **态管线运行** ，显示与其关联的环境。
-* 改进了管道执行页面的可理解性。 这包括管道名称（仅限非生产管道）和类型的显示，以及指示管道状态是否为“进行中／已取消／失败”的标记。
-* 用于改善用户体验并了解为何禁用“添加项目/环境”按钮的工具提示。
-* 现在可通过UI和API删除失败的环境。
-* 用于生成Git密码的过程对底层服务层中的问题具有更强的适应性。
+* 现在，可以从 Cloud Manager UI 的环境页面访问发布者 URL。
+* 导航更改让用户能够从 Cloud Manager 概述页面编辑、切换或添加项目。
+* 更改让用户能够从 Cloud Manager 登陆页面上的项目卡片编辑项目。
+* 根据与管道关联的环境，会显示新的管道状态&#x200B;**管道正在运行**。
+* 改进了管道执行页面的可理解性。这包括显示管道名称（仅限非生产管道）和类型，以及指示管道状态是否为“进行中/已取消/失败”的徽章。
+* 添加了用于改善用户体验和增进了解为何禁用“添加项目/环境”按钮的工具提示。
+* 现在，可以通过 UI 和 API 删除失败的环境。
+* 提高了用于生成 Git 密码的进程弹性，以应对基础服务层中的问题。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
-* 管道执行详细信息页面上指向舞台环境的链接未始终导航到正确的位置。
-* 环境创建进程中的各个步骤将比必要时提前超时，从而导致进程失败。
-* 更新了构建容器中使用的Maven配置，以避免在下载对象元数据时出现死锁。
-* 在某些情况下，构建映像步骤将无法成功下载客户包。
-* 某些不常发生的情况会阻止环境被删除。
-* Experience Cloud通知未得到一致接收。
+* 管道执行详细信息页面上指向暂存环境的链接不是总能导航到正确的位置。
+* 环境创建进程中的各个步骤超时时间提前，从而导致进程失败。
+* 更新了生成容器中使用的 Maven 配置，以避免下载伪像元数据时出现死锁。
+* 在某些情况下，生成图像步骤可能无法成功下载客户包。
+* 某些偶然发生的情况可能会阻止删除环境。
+* 不能终如收到 Experience Cloud 通知。
