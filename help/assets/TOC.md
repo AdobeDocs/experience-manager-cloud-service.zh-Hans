@@ -1,7 +1,7 @@
 ---
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
@@ -46,7 +46,7 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [搜索 Facet](search-facets.md)
    + [扩展资产编辑器](extend-asset-editor.md)
    + [资产 HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API中的内容片段支持](assets-api-content-fragments.md)
+   + [AEM Assets HTTP API 中的内容片段支持](assets-api-content-fragments.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
    + [资产报表](asset-reports.md)
    + [串联元数据](cascading-metadata.md)
@@ -54,8 +54,8 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [媒体库功能](medialibrary.md)
    + [导入和导出资产元数据](metadata-import-export.md)
 + 共享和分发资产 {#brand-portal}
-   + [使用Brand Portal配置AEM资产](configure-aem-assets-with-brand-portal.md)
-   + [将资产发布到Brand Portal](publish-to-brand-portal.md)
+   + [使用 Brand Portal 配置 AEM Assets](configure-aem-assets-with-brand-portal.md)
+   + [将资产发布到 Brand Portal](publish-to-brand-portal.md)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
    + [管理内容片段](content-fragments/content-fragments-managing.md)
