@@ -3,9 +3,9 @@ title: Digital Rights Management [!DNL Adobe Experience Manager Assets] 即云�
 description: 了解如何在云服务中管理授权资产的资产到期状态 [!DNL Experience Manager] 和信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 7%
 
 ---
@@ -47,14 +47,14 @@ ht-degree: 7%
 
 当您选择过期 **[!UICONTROL 选项]** ，控制台将仅 [!DNL Assets] 显示复合资产引用的过期资产和子资产。 在子资产过期后，不会立即显示引用已过期子资产的复合资产。 相反，在下次运行调度程序时 [!DNL Experience Manager] 检测到它们引用了过期的子资产后，会显示这些子资产。
 
-如果您将已发布资产的过期日期修改为早于当前调度程序周期的日期，计划仍会在下次运行时将此资产检测为过期资产，并相应地反映其状态。
+如果您将已发布资产的过期日期修改为早于当前调度程序周期的日期，计划仍会在下次运行时将此资产检测为过期资产，并相应地反映其状态。 资产的到期日期对不同时区的用户显示不同。
 
 此外，如果故障或错误导致调度程序无法在当前周期中检测过期的资产，调度程序会在下一个周期重新检查这些资产并检测其过期状态。
 
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. 打开 [!DNL Experience Manager] Configuration Manager。
-1. 选 **[!UICONTROL 择Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
+1. 选择 **[!UICONTROL Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
 
 1. 要定期运行该作业，请清除&#x200B;**[!UICONTROL 基于时间的计划程序规则]**&#x200B;字段，并在&#x200B;**[!UICONTROL 周期性计划程序]**&#x200B;字段中修改时间（以秒为单位）。例如，示例表达式“0 0 0 &amp;ast; &amp;ast; ?”会在 00 小时开始作业。
 
