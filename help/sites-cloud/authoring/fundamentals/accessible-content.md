@@ -1,17 +1,20 @@
 ---
-title: 为Adobe Experience Manager创建可访问的云服务内容（WCAG 2.1符合性）
+title: 为Adobe Experience Manager创建可访问的云服务内容（符合WCAG 2.1规范）
 description: 确保残障人士能够访问并使用 Web 内容
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+workflow-type: tm+mt
+source-wordcount: '13874'
+ht-degree: 52%
 
 ---
 
 
 # 创建辅助内容（WCAG 2.1 符合性）{#creating-accessible-content-wcag-conformance}
 
-Web内容 [辅助功能准则(WCAG)2.1](https://www.w3.org/TR/WCAG/)[](https://www.w3.org/联合集团/活动#Accessibility_Guidelines_Working_Group)，由World Wide Wec Consortium的一个工作组制定，由一套与技术无关的准则和成功标准组成，以帮助残疾人访问和使用Web内容。
+Web [内容辅助功能指](https://www.w3.org/TR/WCAG/)南(WCAG)2.1由World Wide Wec Consortium的一个工作组制定 [](https://www.w3.org/联合集团/活动#Accessibility_Guidelines_Working_Group)，由一组与技术无关的指南和成功标准组成，以帮助残疾人访问和使用Web内容。
 
-作为介绍，该联合集团提供了一系列章节和支持文档:
+作为介绍，联合集团提供了一系列章节和支持文档:
 
 * [WCAG 2.1的新增功能](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
 * [如何满足 WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
@@ -20,16 +23,17 @@ Web内容 [辅助功能准则(WCAG)2.1](https://www.w3.org/TR/WCAG/)[](https://w
 * [WCAG文档](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 此外，请参阅：
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md) for further details
+* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Adobe解 [决方案的“辅助功能符合性”报告](https://www.adobe.com/accessibility/compliance.html)。
 
 <!-- 
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
 
-准则根据三个符合性级别进行分级：A级（最低）、AA级和AAA级（最高）。 以下是各个级别的简要定义：
+准则根据三个符合性级别进行分级： A级（最低）、AA级和AAA级（最高）。 以下是各个级别的简要定义：
 
 * **级别 A：**&#x200B;您的站点符合基本的、最低级别的辅助功能。要达到此级别，需满足所有级别 A 成功标准。
-* **AA 级：**&#x200B;这是一个理想的辅助功能等级目标，站点达到这一等级即意味着提供了更高级别的辅助功能，以便大部分人在大多数情况下均可使用大部分技术访问站点内容。要达到这一等级，站点必须满足所有 A 级和 AA 级成功标准。
+* **AA级：** 这是理想的辅助功能级别，站点达到辅助功能的基本级别，因此大多数人在大多数情况下都可以使用大多数技术访问站点。 要达到此级别，需满足所有级别 A 和级别 AA 成功标准。
 * **级别 AAA：**&#x200B;您的站点在辅助功能方面达到了非常高的级别。要达到此级别，需满足所有级别 A、级别 AA 和级别 AAA 成功标准。
 
 在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
@@ -38,16 +42,10 @@ Web内容 [辅助功能准则(WCAG)2.1](https://www.w3.org/TR/WCAG/)[](https://w
 
 >[!NOTE]
 >
->鉴于某些类型的内容无法满足所有的 AAA 级成功标准，因此不建议将该级别作为整体策略目标。
-
->[!NOTE]
->
 >在此文档中，我们将使用：
 >
 >* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
->
-
 
 
 ## 准则 1：可感知 {#principle-perceivable}
@@ -82,7 +80,7 @@ Web内容 [辅助功能准则(WCAG)2.1](https://www.w3.org/TR/WCAG/)[](https://w
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-默认情况下，AEM 要求填写&#x200B;**替换文本**&#x200B;字段。如果图像是纯粹的装饰并且替换文本没有实际意义，则可以选中&#x200B;**图像具有装饰性**&#x200B;选项。
+默认情况下，AEM 要求填写&#x200B;**替换文本**&#x200B;字段。If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
 
 #### 创建有效的替换文本 {#creating-good-text-alternatives}
 
@@ -95,7 +93,7 @@ Web内容 [辅助功能准则(WCAG)2.1](https://www.w3.org/TR/WCAG/)[](https://w
 * 替换文本不应复制同一页面邻近位置以文本形式提供的内容。请切记，许多图像的作用是解释说明页面文本中已涵盖的要点，因此详尽的替换文本可能已经存在。
 * 如果非文本内容是指向另一页面或文档的链接，而且该链接没有任何其他的文本形式部分，则图像的替换文本必须指明链接的目标位置，而不是对图像进行描述。
 * 如果按钮元素中包含非文本内容，而且该按钮没有任何文本形式部分，则图像的替换文本必须指明按钮的功能，而不是对图像进行描述。
-* 图像的替代文本指定为空 (null) 是完全可以接受的，但是这仅限于图像没有替代文本的情况（例如，图形仅起装饰作用），或者页面文本中已存在对等的文本。
+* 为图像指定空(null)替代文本是完全可以接受的，但前提是图像不需要替代文本（例如，它是纯粹的装饰性图形），或者页面文本中已存在对等文本。
 
 <!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
@@ -103,10 +101,10 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 以下特定类型的非文本内容可能需要替换文本：
 
-* 说明性照片：指人物、对象或地点的图像。想一想照片在页面中的作用；相应的对等文本可以为 `Photo of [object]`，但是这可能取决于周围的文本。
+* 说明性照片：指人物、对象或地点的图像。考虑照片在页面中的作用很重要，通常建议您描述图像内容，因为辅助型技术会宣布元素类型(例如， `graphic` 或 `image`); 它可以提高替代文 `screenshot` 本描 `illustration` 述的使用清晰度，但这取决于上下文。 一致性是一个重要因素，应该为整个创作团队做出决策，并在整个用户体验中应用该决策。
 * 图标：指传递特定信息的小图形符号（图形）。页面和站点上使用的图标必须保持一致。图标在页面或站点上出现的所有实例都应使用相同的简短替代文本，除非这样做会与相邻的文本产生不必要的重复情况。
 * 图表和图形：通常用于表示数值数据。因此，替代文本的选择之一就是简要地总结图表或图形中表现出来的主要趋势。如有必要，还可以在&#x200B;**高级**&#x200B;图像属性选项卡中的&#x200B;**描述**&#x200B;字段中以文本形式提供更加详尽的描述。此外，还可以在页面或站点的其他位置以表形式提供源数据。
-* 地图、示意图和流程图：对于提供空间数据的图形（例如，用于说明各对象之间关系或某个流程的图形），应确保以文本格式提供关键信息。对于地图，提供完全对等的文本似乎不太现实，但是如果提供地图的目的是帮助人们找到前往特定地点的路线，则地图图像的替代文本可以简要指明 *X 的地图*，然后在页面的其他位置或在&#x200B;**图像**&#x200B;组件&#x200B;**高级**&#x200B;选项卡的&#x200B;**描述**&#x200B;字段中以文本形式提供前往该地点的路线。
+* 地图、图表、流程图： 对于提供空间数据的图形（例如，支持描述对象或进程之间的关系），请确保以文本格式提供关键消息，并且该文本信息位于每个关联数据点附近。 对于映射，提供等效完整文本可能不太现实，但如果提供映射来作为帮助相关人员找到特定位置的一种方法，则映射图像的替代文本可以简短地指示为 *X 映射*，然后在页面其他位置的文本中或者通过&#x200B;**图像**&#x200B;组件&#x200B;**高级**&#x200B;选项卡中的&#x200B;**描述**&#x200B;字段提供该特定位置的说明。
 * CAPTCHA：CAPTCHA 是 *Completely Automated Public Turing test to tell Computers and Humans Apart*（全自动区分计算机和人类的图灵测试）的缩写。这是一项在网页中用于区分人类和恶意软件的安全检查，但同时也会妨碍网页的辅助功能。用户要想通过安全测试，必须按照要求描述自己所看到的这些图像。为这些图像提供替代文本显然是不可能的，因此需要思考出非图形的替代解决方案。W3C 提供了许多建议，例如：这些方法各有优缺点。
    * 逻辑谜题
    * 使用声音输出替代图像
@@ -163,9 +161,11 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 >[!NOTE]
 >
->如果音频或视频内容是作为替代内容提供的，且被它们替代的内容已经以其他格式存在于网页上，则无需遵循上述要求。例如，如果某段视频是用来介绍一系列文本说明的，那么就无需为这段视频提供替代内容，因为文本说明已经起到了替代视频的作用。
+>如果音频或视频内容是作为同一网页上已存在的其他格式的内容的替代内容提供的，则可能不需要其他替代内容。
+>
+>本准则《 [理解WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)》提供了进一步的信息。
 
-在 AEM 网页中插入多媒体（尤其是 Flash 内容）的方式与插入图像类似。但是，多媒体内容与静态图像相比还是更为复杂，而且在控制多媒体的播放方式时有各种不同的设置和选项。
+在AEM网页中插入多媒体与插入图像类似。 但是，多媒体内容与静态图像相比还是更为复杂，而且在控制多媒体的播放方式时有各种不同的设置和选项。
 
 >[!NOTE]
 >
@@ -184,22 +184,18 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 用途——字幕（预先录制）(1.2.2) {#purpose-captions-prerecorded}
 
-耳聋或听力欠佳的用户无法或很难获取音频内容。字幕是讲话和非讲话音频的对等文本，在视频播放过程中会在相应的时间显示在屏幕上。这让无法听到音频的用户可以了解正在播放的内容。
-
->[!NOTE]
->
->如果视频或动画所在的页面包含合适的对等文本或非文本内容（提供直接对等的信息），则不需要字幕。
+耳聋或听力欠佳的用户无法或很难访问音频内容。 字幕是讲话和非讲话音频的对等文本，在视频播放过程中在适当的时间显示在屏幕上。 它们允许无法听到音频的用户了解正在播放的内容。
 
 #### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
 字幕有以下两种形式：
 
-* 打开：播放视频时始终可见
+* 打开： 播放视频时始终可见
 * 隐藏式：字幕可以由用户打开或关闭 
 
 尽量使用隐藏式字幕，因为这样用户可以选择是否观看字幕。
 
-对于隐藏式字幕，需要以适当的格式（如 [SMIL](https://www.w3.org/AudioVideo/)）为对应的视频文件创建并提供同步字幕文件（与此相关的详细操作说明不在本指南的范围之内，但是我们在[更多信息 - 字幕（预先录制）(1.2.2)](#more-information-captions-pre-recorded) 中提供了一些教程的链接）。应确保提供说明，让用户知晓视频提供有字幕。
+对于隐藏式字幕，需要以适当的格式（如 [SMIL](https://www.w3.org/AudioVideo/)）为对应的视频文件创建并提供同步字幕文件（与此相关的详细操作说明不在本指南的范围之内，但是我们在[更多信息 - 字幕（预先录制）(1.2.2)](#more-information-captions-pre-recorded) 中提供了一些教程的链接）。确保在视频播放器中提供备注或启用字幕功能，以便让用户知道视频中提供了字幕。
 
 如果必须使用开放式字幕，应将文本嵌入到视频轨道中。可以使用能够将字幕覆盖到视频上的视频编辑应用程序来完成嵌入。
 
@@ -233,9 +229,9 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
       * 这允许用户在现有音轨（*不含*&#x200B;音频描述）和新音轨（*含有*&#x200B;音频描述）之间进行切换。
       * 这可以避免妨碍到不需要附加描述的用户。
    * 为视频内容创建第二个版本，以便提供延长的音频描述。这样，通过在合适的时间点暂停音频和视频，便可降低在现有对话的间隙提供详细音频描述的难度。最终，在重新开始播放视频之前，便可以提供一个更长的音频描述。与上一种方式中所提到的一样，为了避免妨碍到不需要附加描述的用户，最好将此类音频描述作为可选的额外音轨来提供。
-1. 为视频或动画中的音频和视觉元素提供适当的对等文本记录。文本中应当相应地指出讲话者，并描述讲话背景和声音表情。根据文本长度的不同，既可以将记录放置在视频或动画所在的页面上，也可以将其放置在单独的页面上；如果选择后者，则需要在视频或动画旁边提供记录的链接。
+1. 为视频或动画中的音频和视觉元素提供适当的对等文本记录。这应当包括，在适当情况下，指示讲话者，描述情况，以可视方式呈现的任何事件或信息，以及声音表达式。 根据文本长度的不同，既可以将记录放置在视频或动画所在的页面上，也可以将其放置在单独的页面上；如果选择后者，则需要在视频或动画旁边提供记录的链接。
 
-至于如何创建带有音频描述的视频，具体细节不在本指南的范围之内。创建视频和音频描述非常耗时，但是 Adobe 的其他产品可以帮助您完成这些任务。如果在 Adobe Flash Professional 中创建内容，则还应当创建一个脚本来提示用户下载合适的插件，并通过 `<noscript>` 元素提供替换文本。
+至于如何创建带有音频描述的视频，具体细节不在本指南的范围之内。创建视频和音频描述非常耗时，但是 Adobe 的其他产品可以帮助您完成这些任务。
 
 #### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
@@ -261,16 +257,14 @@ Follow the guidance provided for [Captions (Prerecorded)](#captions-prerecorded)
 
 * [WebAIM：实时字幕](https://www.webaim.org/techniques/captions/realtime.php)
 
-<!--
-* [AccessIT (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accessit/articles?1209)
--->
+* [AccessComputing项目（华盛顿大学）: 能否使用语音识别自动生成字幕？](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
 #### 更多信息 - 字幕（实时）(1.2.4) {#more-information-captions-live}
 
 * [了解成功标准 1.2.4](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [如何达到成功标准 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### 音频描述（预先录制）(1.2.5) {#audio-description-prerecorded}
+### 音频描述（预先录制）(1.2.5)  {#audio-description-prerecorded}
 
 * 成功标准 1.2.5
 * AA 级
@@ -295,9 +289,9 @@ Follow the guidance provided for [Audio Description or Media Alternative (Prerec
 
 该准则包含为支持以下用户而必须满足的要求：
 
-* 可能无法访问作者在 *标准* 二维、多列和彩色网页布局中展示的信息的用户
+* 可能无法访问作者在该内容的默认演示中显示的信息（例如，多列布局或大量使用颜色和／或图像的页面）。
 
-* 可能要使用纯音频内容或可视替代显示方式（如大文本或高对比度）的用户。
+* 可以使用纯音频或替代可视显示，如大文本或高对比度。
 
 ### 信息和关系 (1.3.1)  {#info-and-relationships}
 
@@ -307,39 +301,27 @@ Follow the guidance provided for [Audio Description or Media Alternative (Prerec
 
 #### 用途 - 信息和关系 (1.3.1) {#purpose-info-and-relationships}
 
-残障人士使用的许多辅助型技术都依赖结构性信息才能有效地显示或输出内容。此类结构性信息有多种形式，如页面标题、表行标题和列标题以及列表类型。举例来说，屏幕阅读器可以让用户从页面的一个标题导航到另一个标题。但是，如果页面内容仅仅在可视样式而非基本 HTML 中具有结构，则辅助型技术便无法获取结构性信息，从而限制它们辅助用户轻松浏览的能力。
+Many assistive technologies used by people with disabilities rely on structural information in order to effectively display or *understand* content. 此类结构性信息有多种形式，如页面标题、表行标题和列标题以及列表类型。举例来说，屏幕阅读器可以让用户从页面的一个标题导航到另一个标题。但是，如果页面内容仅仅在可视样式而非基本 HTML 中具有结构，则辅助型技术便无法获取结构性信息，从而限制它们辅助用户轻松浏览的能力。
 
-该成功标准旨在确保此类结构性信息通过 HTML 提供，这样浏览器和辅助型技术便可以访问并利用这些信息。
+此成功标准旨在确保通过HTML或其他编码技术以编程方式提供此类结构性信息，以便浏览器和辅助技术能够访问和利用这些信息。
 
 #### 如何达到标准 - 信息和关系 (1.3.1) {#how-to-meet-info-and-relationships}
 
-AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种文本组件）中打开页面内容，然后使用&#x200B;**段落格式**&#x200B;菜单（段落符号）指定相应的结构元素（例如，段落、标题等）。
+AEM使用适当的HTML元素可轻松构建语义上有意义的Web内容。 可在 RTE（一种文本组件）中打开页面内容，然后使用&#x200B;**段落格式**&#x200B;菜单（段落符号）指定相应的结构元素（例如，段落、标题等）。
 
-可以通过以下方式确保网页指定了合适的结构：
+您可以在适用的情况下使用以下元素，确保网页具有适当的结构：
 
-* **使用标题：**&#x200B;只要您启用了 RTE 辅助功能，AEM 就会提供 3 个级别的页面标题。您可以使用这些标题标识内容的章节和子章节。标题 1 是最高级别的标题，标题 3 是最低级别的标题。系统管理员可以配置系统以允许使用更多标题级别。
-* **强调文本**：使用 `<strong>` 或 `<em>` 元素指示重点。切勿在段落中使用标题突出显示文本。
-   * 突出显示要强调的文本；
-   * 单击&#x200B;**属性**&#x200B;面板中显示的 **B** 图标（表示 `<strong>`）或 **I** 图标（表示 `<em>`）（确保已选择 HTML）。
+* **标题：** 只要您启用了RTE的辅助功能，AEM就会优惠3级页面标题。 您可以使用这些标题标识内容的章节和子章节。标题 1 是最高级别的标题，标题 3 是最低级别的标题。系统管理员可以配置系统以允许使用更多标题级别。
 
-      >[!NOTE]
-      >
-      >标准 AEM 安装中的 RTE（富文本编辑器）设置为：
-      >
-      >* `<b>`对象`<strong>`
-      >* `<i>`对象`<em>`
-      >
-      >尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
-
-
-* **使用列表**：可以使用 HTML 指定三种不同类型的列表：
+* **列表**: 可以使用HTML指定三种不同类型的列表:
    * `<ul>` 元素用于表示&#x200B;*无序*（项目符号）列表。单个列表项使用 `<li>` 元素进行标识。在 RTE 中，使用&#x200B;**项目符号列表**&#x200B;图标。
    * `<ol>` 元素用于表示&#x200B;*编号*&#x200B;列表。单个列表项使用 `<li>` 元素进行标识。
 在 RTE 中，使用**编号列表**&#x200B;图标。
    如果您希望将现有内容更改为特定列表类型，可以突出显示相应的文本，然后选择相应的列表类型。正如上述示例中显示的段落文本输入方式一样，相应的列表元素会自动添加到 HTML。
 
    在全屏模式下，单个“项目符号列 **表”和** “编 **号列表** ”图标可见。 当不处于全屏模式时，这两个选项在单个列表图标的后 **面可** 用。
-* **使用表**：数据表必须使用 HTML 表元素进行标识：
+
+* **表**: 数据表必须使用HTML表元素进行标识：
    * 一个 `<table>` 元素
    * 每个表行均使用 `<tr>` 元素进行标识
    * 每个行标题和列标题均使用 `<th>` 元素进行标识
@@ -353,16 +335,29 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
    >
    >默认情况下，这些元素和属性并非直接可用，不过系统管理员可以在&#x200B;**表属性**&#x200B;对话框中添加对这些值的支持（请参阅添加对其他 HTML 元素和属性的支持）。
 
-<!-- removed link syntax for ExL - Bob Bringhurst
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
--->
+   <!-- removed link syntax for ExL - Bob Bringhurst
+  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
+  -->
 
-要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
+   要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
 
-* 定义相应的&#x200B;**描述**。
-* 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
+   * 定义相应的&#x200B;**描述**。
+   * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
+   然后，您可以使用&#x200B;**单元格属性**&#x200B;来选择单元格是数据单元格还是标题单元格：
 
-然后，您可以使用&#x200B;**单元格属性**&#x200B;来选择单元格是数据单元格还是标题单元格：
+* **重点**: 使用或 `<strong>` 元素 `<em>` 表示强调。 切勿在段落中使用标题突出显示文本。
+   * 突出显示要强调的文本；
+   * 单击&#x200B;**属性**&#x200B;面板中显示的 **B** 图标（表示 `<strong>`）或 **I** 图标（表示 `<em>`）（确保已选择 HTML）。
+
+      >[!NOTE]
+      >
+      >标准 AEM 安装中的 RTE（富文本编辑器）设置为：
+      >
+      >* `<b>`对象`<strong>`
+      >* `<i>`对象`<em>`
+      >
+      >尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
+
 
 * **复杂数据表**：在某些情况下，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。例如，在下表中，标题和 ID 是相匹配的，以便为辅助型技术用户建立程序化关联。
 
@@ -408,19 +403,19 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 * [了解成功标准 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * [如何达到成功标准 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
-### 有意义的序列(1.3.2) {#meaningful-sequence}
+### 有意义的序列(1.3.2)  {#meaningful-sequence}
 
 * 成功标准 1.3.2
 * A 级
-* 有意义的序列：当呈现内容的序列影响其含义时，可以通过编程方式确定正确的阅读序列。
+* 有意义的序列： 当呈现内容的顺序影响其含义时，可以通过编程方式确定正确的阅读顺序。
 
 #### 用途——有意义的序列(1.3.2) {#purpose-meaningful-sequence}
 
-此成功标准旨在使用户代理能够提供内容的替代演示，同时保留理解其含义所需的阅读顺序。 必须能够以编程方式确定至少一个有意义的内容序列。 当辅助型技术以错误的顺序读取内容，或者当应用替代样式表或其他格式更改时，不符合此成功标准的内容可能会迷惑或使用户不确定。
+此成功标准旨在使用户代理能够提供内容的替代演示，同时保留理解其含义所需的阅读顺序。 必须能够以编程方式确定至少一个有意义的内容序列。 当辅助型技术以错误的顺序阅读内容，或者应用替代样式表或其他格式更改时，不符合此成功标准的内容可能会迷惑用户或使用户迷失方向。
 
 #### 如何达到标准——有意义的序列(1.3.2) {#how-to-meet-meaningful-sequence}
 
-遵循“如何达 [到成功标准1.3.2”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)。
+遵循“如何达 [到成功标准1.3.2”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)。
 
 #### 更多信息——有意义的序列(1.3.2) {#more-information-meaningful-sequence}
 
@@ -435,7 +430,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 #### 用途 - 感官特性 (1.3.3) {#purpose-sensory-characteristics}
 
-设计者往往关注可视设计特征，如颜色、形状、文本样式，或者内容在展示信息时所在的绝对或相对位置。这些是在传递信息时采用的非常有效的设计技术，但是对于失明或患有视觉障碍的用户而言，可能无法获取此类信息，因为用户必须以可视方式来识别位置、颜色或形状等属性。
+设计者往往关注可视设计特征，如颜色、形状、文本样式，或者内容在展示信息时所在的绝对或相对位置。这些设计技术在传递信息时可能是非常强大的设计技术（并且可以改善视力正常的用户对认知可访问性的需求），但是失明或视力受损的用户可能无法访问需要位置、颜色或形状等属性的视觉识别的信息。
 
 同样，如果用户在获取信息时必须辨认不同的声音（例如，男性或女性讲话的内容），而且音频内容没有反映在任何替换文本中，则患有听觉障碍的用户就会遇到辅助功能问题。
 
@@ -481,13 +476,15 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 此外，如果用户使用仅支持文本的浏览器、单色显示设备或查看黑白打印的页面，他们也无法感知到颜色。
 
+还需考虑 *的是* ，接口元素（例如，选项卡、切换按钮等）的选定状态，它需要以某种方式传达，而不是仅仅用颜色，而不仅仅是可视演示。 对于这些元素，在创建不依赖特定意义的完全包容的用户体验时，额外使用模式、形状和程序化信息很有帮助。
+
 #### 如何达到标准 - 使用颜色 (1.4.1) {#how-to-meet-use-of-color}
 
 无论在何处使用颜色传递信息，都应确保无需看到颜色即可获取相应的信息。
 
 例如，确保通过颜色传递的信息也明确地提供在文本中。
 
-如果使用颜色作为提供信息的提示，则应提供其他可视提示，如更改样式（如粗体、斜体）或字体。这有助于视力不佳或具有色觉辨认障碍的人识别信息。但是，不能完全依赖这种方法，因为这对于根本无法看到页面的用户而言并无助益。
+如果使用颜色作为提供信息的提示，则应提供其他可视提示，如更改样式（如粗体、斜体）或字体。这有助于视力不佳或具有色觉辨认障碍的人识别信息。但是，不能完全依赖这种方法，因为这对于根本无法看到页面的用户而言并无助益。因此，（有时）提供隐藏文本或使用程序化解决方案(如Accessible [Rich Internet Applications(ARIA)Web标准套件](https://www.w3.org/WAI/standards-guidelines/aria/))，向失明的用户传达这些信息是有用的。
 
 #### 更多信息 - 使用颜色 (1.4.1) {#more-information-use-of-color}
 
@@ -497,19 +494,25 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 <!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 -->
 
-### 音频控制(1.4.2) {#audio-control}
+### 音频控制(1.4.2)  {#audio-control}
 
 * 成功标准 1.4.2
 * A 级
-* 音频控制：如果网页上的任何音频自动播放超过3秒，则可以使用一种机制暂停或停止音频，或者可以使用一种机制独立于整个系统音量级别控制音频音量。
+* 音频控件： 如果网页上的任何音频自动播放超过3秒，则可以使用机制暂停或停止音频，或使用机制独立于整个系统音量控制音频音量。
 
 #### 用途——音频控制(1.4.2) {#purpose-audio-control}
 
-如果同时播放其他音频，使用屏幕阅读软件的用户会发现很难听到语音输出。 当屏幕阅读器的语音输出基于软件（就像现在大多数人一样）并且通过与声音相同的音量控制来控制时，这一困难会加剧。 因此，用户必须能够关闭背景音效。 注意：控制音量包括能够将其音量减小到零。
+如果同时播放其他音频，使用屏幕阅读软件的用户将很难听到语音输出。 当屏幕阅读器的语音输出是基于软件的（如今大多数），并且通过与声音相同的音量控制来控制时，这一困难就会加剧。 此外，一些认知残障人士和神经发散者可能具有声音敏感性。 这些用户会发现无法更改音频内容的音量会造成很大干扰。
+
+因此，用户能够关闭背景声音是很重要的。
+
+>[!NOTE]
+>
+>控制音量包括能够将其音量减小到零。
 
 #### 如何达到标准——音频控制(1.4.2) {#how-to-meet-audio-control}
 
-遵循“如何达 [到成功标准1.4.2”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)。
+遵循“如何达 [到成功标准1.4.2”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)。
 
 #### 更多信息——音频控制(1.4.2) {#more-information-audio-control}
 
@@ -522,8 +525,11 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 * AA 级
 * 对比度（最小）：文本的可视呈现以及文本的图像至少要有 4.5:1 的对比度，以下内容除外：
    * 大文本：大号文本及其图像至少要有 3:1 的对比度。
-   * 附属内容：文本或文本的图像是未激活的用户界面组件的一部分，只是纯粹的装饰，对任何人都不可见，或者只是包含其他重要可视内容的图片的一部分，对于此类文本或文本的图像，没有对比度要求。
+   * Incidental: Text or images of text that are part of an inactive user interface component, that are [pure decoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
    * 商标标志：文本是徽标或品牌名称的一部分，对于此类文本，没有最低对比度要求。
+   >[!NOTE]
+   >
+   >请参 [阅了解非文本对比度](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) ，以进一步确保读者了解非文本元素（包括图标、界面元素等）的附加要求。
 
 #### 用途 - 对比度（最小）(1.4.3) {#purpose-contrast-minimum}
 
@@ -544,6 +550,21 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 * 对于大小至少为 18 点（或粗体至少为 14 点）的文本，对比度至少应为 3:1。
 * 如果背景带有图案，则应将任何文本周围的背景变浅，以便将对比度维持在 4.5:1 或 3:1。
 
+>[!NOTE]
+>
+>请记住，字体在呈现等效的PT/PX/EM大小时的方式可能有所不同。
+>
+>建议在为Web内容选择适当的字体和大小时，使用良好的判断并保持可读性和可用性。
+
+>[!NOTE]
+>
+>要帮助转换到其他设备：
+>
+>* [Px到Em计算器- Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* [字体大小转换： pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
+>* [PMtoEM.com: PX到EM的转换如此简单](http://pxtoem.com)
+
+
 要检查对比度，可使用颜色对比度工具，例如 [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) 或 [WebAIM Color Contrast Checker](https://www.webaim.org/resources/contrastchecker/)。这些工具可以用来检查颜色对，并报告任何对比度问题。
 
 或者，如果您不太在意页面外观的指定，则可以选择不指定背景和前景文本颜色。在这种情况下，无需检查对比度，因为用户的浏览器将确定文本和背景的颜色。
@@ -555,19 +576,19 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 * [了解成功标准 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [如何达到成功标准 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
-### 调整文本大小(1.4.4) {#resize-text}
+### 调整文本大小(1.4.4)  {#resize-text}
 
 * 成功标准 1.4.4
 * A 级
-* 调整文本大小：除了文本的字幕和图像之外，文本大小可在无辅助技术的情况下调整到200%，而不会丢失内容或功能。
+* 调整文本大小： 除了文本的字幕和图像之外，无需使用高达200%的辅助技术即可调整文本大小，同时不会丢失内容或功能。
 
 #### 用途——调整文本大小(1.4.4) {#purpose-resize-text}
 
-此成功标准旨在确保成功缩放可视呈现的文本，包括基于文本的控件(显示以便能够看到的文本字符与仍以数据形式(如ASCII [)的文本字符])，以便视觉残障程度较轻的人可以直接阅读它，而无需使用屏幕放大镜等辅助技术。 用户可以从缩放网页上的所有内容中受益，但文本是最关键的。
+此成功标准旨在确保成功缩放可视呈现的文本，包括基于文本的控件(已显示以便能够看到的文本字符与仍以数据形式( [如ASCII])的文本字符)，以便具有轻微视觉障碍的用户可以直接阅读它，而无需使用屏幕放大镜等辅助技术。 用户可以从缩放网页上的所有内容中受益，但文本是最关键的。
 
 #### 如何达到标准——调整文本大小(1.4.4) {#how-to-meet-resize-text}
 
-遵循“如何达 [到成功标准1.4.4”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)。
+除了遵循如何达到成 [功标准1.4.4下的准则](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) ，您还可以鼓励内容作者在其页面设计和字体大小（例如，响应式Web设计）中使用流畅、灵活的宽度和高度，使读者能够调整文本大小。
 
 #### 更多信息——调整文本大小(1.4.4) {#more-information-resize-text}
 
@@ -603,46 +624,46 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 [准则 2：可操作 - 用户界面组件和导航必须可以操作。](https://www.w3.org/TR/WCAG/#operable)
 
-### 可使用键盘(2.1) {#keyboard-accessible}
+### 可访问的键盘(2.1) {#keyboard-accessible}
 
-[准则2.1可使用键盘：使所有功能都可通过键盘使用。](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+[准则2.1可使用键盘： 使所有功能都可通过键盘使用。](https://www.w3.org/TR/WCAG/#keyboard-accessible)
 
 这涉及确保用户可以使用键盘访问所有功能。
 
-### 键盘(2.1.1) {#keyboard}
+### 键盘(2.1.1)  {#keyboard}
 
 * 成功标准 2.1.1
 * A 级
-* 键盘：内容的所有功能通过键盘界面可操作而不需要个别按键的特定定时，除非基础功能需要取决于用户移动的路径而不是仅仅是端点的输入。
+* 键盘： 该内容的所有功能通过键盘界面可操作，而不需要个别按键的特定定时，除非基础功能需要取决于用户移动的路径的输入，而不仅仅是端点的输入。
 
 #### 用途——键盘(2.1.1) {#purpose-keyboard}
 
-此成功标准旨在确保内容可在任何可能的情况下通过键盘或键盘界面操作（以便使用替代键盘）。 当内容可以通过键盘或替代键盘操作时，它可由没有视觉的人（无法使用需要手形协调的鼠标等设备）以及必须使用替代键盘或输入设备作为键盘模拟器的人员操作。 键盘模拟器包括语音输入软件、轻松软件、屏幕键盘、扫描软件以及各种辅助技术和备用键盘。 视力不佳的个人也可能难以跟踪指针，并且如果能够通过键盘控制，使用软件会更加容易（或者只有可能）。
+此成功标准旨在确保在可能的情况下通过键盘或键盘界面操作内容（以便使用备用键盘）。 当内容可以通过键盘或替代键盘操作时，它可由没有视觉的人（不能使用需要手形协调的鼠标等设备）以及必须使用替代键盘或作为键盘模拟器的输入设备的人操作。 键盘模拟器包括语音输入软件、吸音软件、屏幕键盘、扫描软件以及各种辅助技术和备用键盘。 视力不佳的个人也可能难以跟踪指针，如果能够通过键盘控制指针，则发现使用软件会容易得多（或只有可能）。
 
 #### 如何达到标准——键盘(2.1.1) {#how-to-meet-keyboard}
 
-遵循“如何达 [到成功标准2.1.1”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)。
+遵循“如何达 [到成功标准2.1.1”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)。
 
 #### 更多信息——键盘(2.1.1) {#more-information-keyboard}
 
 * [了解成功标准 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [如何达到成功标准 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
 
-### 无键盘陷印(2.1.2) {#no-keyboard-trap}
+### 无键盘陷印(2.1.2)  {#no-keyboard-trap}
 
 * 成功标准 2.1.2
 * A 级
-* 无键盘陷印：如果键盘焦点可以使用键盘界面移动到页面的某个组件，则焦点可以仅使用键盘界面从该组件移开；如果它需要的箭头键、制表符键或其他标准退出方法以上，则建议用户将焦点移开的方法。
+* 无键盘陷印： 如果键盘焦点可以使用键盘界面移动到页面的某个组件，则焦点可以仅使用键盘界面从该组件移开；如果它需要不经过修改的箭头、制表符键或其他标准退出方法，则建议用户使用将焦点移开的方法。
 
 #### 用途——无键盘陷印(2.1.2) {#purpose-no-keyboard-trap}
 
-此成功标准旨在确保内容不会陷入网 *页内容* 子部分中的键盘焦点。 当多个格式组合在一个页面中并使用插件或嵌入式应用程序呈现时，这是一个常见问题。
+此成功标准旨在确保内容不会陷 *入网* 页内容子部分中的键盘焦点。 在页面中合并多种格式并使用插件或嵌入式应用程序呈现时，这是一个常见问题。
 
-有时，只要用户知道如何离开该状态并取消陷印焦点，网页的功能就会将焦点限制在内容的子节 *段* 。
+有时，网页的功能将焦点限制到内容的子节（例如，模态对话框）。 在这种情况下，您应提供一种方法，让用户能够退出该内容子节（例如，ESC键关闭模态对话框，或“关闭”按钮关闭模态对话框）。
 
 #### 如何达到标准——无键盘陷印(2.1.2) {#how-to-meet-no-keyboard-trap}
 
-遵循“如何达 [到成功标准2.1.2”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)。
+遵循“如何达 [到成功标准2.1.2”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)。
 
 #### 更多信息——无键盘陷印(2.1.2) {#more-information-no-keyboard-trap}
 
@@ -651,25 +672,25 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 ### 足够的时间(2.2) {#enough-time}
 
-[准则2.2足够的时间：为用户提供足够的时间阅读和使用内容。](https://www.w3.org/TR/WCAG/#enough-time)
+[准则2.2足够的时间： 为用户提供足够的时间阅读和使用内容。](https://www.w3.org/TR/WCAG/#enough-time)
 
-这涉及确保用户有足够时间阅读并采取行动。
+这涉及确保用户有足够的时间阅读并采取行动。
 
-### 可调整时间(2.2.1) {#timing-adjustable}
+### 可调时(2.2.1)  {#timing-adjustable}
 
 * 成功标准 2.2.1
 * A 级
-* 键盘：为用户提供足够的时间阅读和使用内容。
+* 键盘： 为用户提供足够的时间阅读和使用内容。
 
-#### 用途——可调整时间(2.2.1) {#purpose-timing-adjustable}
+#### 用途——可调整计时(2.2.1) {#purpose-timing-adjustable}
 
-本成功标准旨在确保残障用户有充足时间尽可能与Web内容交互。 失明、视力欠佳、灵活障碍和认知限制等残障人士可能需要更多时间阅读内容或执行填写在线表单等功能。 如果Web功能与时间相关，则某些用户在时间限制出现之前将很难执行所需的操作。 这可能导致服务无法访问给他们。 设计不依赖于时间的功能将帮助残障人士成功完成这些功能。 提供禁用时间限制、自定义时间限制长度或在时间限制出现之前请求更多时间的选项，可帮助那些需要超过预期时间的用户成功完成任务。 这些选项按对用户最有帮助的顺序列出。 禁用时间限制比自定义时间限制的长度要好，这比在时间限制出现之前请求更多时间要好。
+此成功标准旨在确保残障用户有充足时间尽可能与Web内容交互。 失明、视力欠佳、灵巧障碍和认知限制等残障人士可能需要更多时间阅读内容或执行填写在线表单等功能。 如果Web功能与时间相关，则某些用户在出现时间限制之前将很难执行所需的操作。 这可能导致服务无法访问给他们。 设计不依赖时间的功能将帮助残障人士成功完成这些功能。 提供用于禁用时间限制、自定义时间限制长度或在时间限制出现之前请求更多时间的选项，可帮助那些需要超过预期时间的用户成功完成任务。 这些选项按对用户最有帮助的顺序列出。 禁用时间限制比自定义时间限制长度好，这比在出现时间限制之前请求更多时间要好。
 
-#### 如何达到标准——可调整时间(2.2.1) {#how-to-meet-timing-adjustable}
+#### 如何达到标准——可调整计时(2.2.1) {#how-to-meet-timing-adjustable}
 
-遵循“如何达 [到成功标准2.2.1”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)。
+遵循“如何达 [到成功标准2.2.1”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)。
 
-#### 更多信息——可调整时间(2.2.1) {#more-information-timing-adjustable}
+#### 更多信息——可调整计时(2.2.1) {#more-information-timing-adjustable}
 
 * [了解成功标准 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [如何达到成功标准 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
@@ -691,17 +712,17 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 #### 用途 - 暂停、停止、隐藏 (2.2.2) {#purpose-pause-stop-hide}
 
-某些用户可能会认为移动的内容会让人分心，而且难以将注意力集中在页面的其他部分。此外，如果用户无法跟上移动的文本，他们可能就很难阅读此类内容。
+某些用户可能会发现移动的内容会让人分心，甚至会令人痛苦，因此很难将注意力集中在页面的其他部分。 此外，如果用户无法跟上移动的文本，他们可能就很难阅读此类内容。
 
 #### 如何达到标准 - 暂停、停止、隐藏 (2.2.2) {#how-to-meet-pause-stop-hide}
 
 如果创建的网页包含移动、闪光或闪烁的内容，则可以采纳以下一项或多项建议，具体视内容的性质而定。
 
-* 提供一种可使滚动的内容暂停的方法，以便让用户有充足的时间进行阅读。例如，新闻滚动条或自动更新文本。
+* 提供一种可使滚动的内容暂停的方法，以便让用户有充足的时间进行阅读。例如，新闻滚动条、自动更新的文本以及自动前进的图像轮盘。
 * 确保闪烁的内容会在 5 秒钟后停止闪烁。
-* 使用适当的技术来显示可由浏览器禁用的闪烁内容。例如，Graphics Interchange Format (GIF) 或 Animated Portable Network Graphics (APNG) 文件。
-* 在网页上提供一个表单控件，让用户能够禁用页面上的所有闪烁内容。
-* 如果以上建议均不可行，则可以提供一个链接，以指向包含所有内容但不含任何闪烁内容的页面。
+* 使用适当的技术显示可由浏览器禁用的移动或闪烁内容。 例如，Graphics Interchange Format (GIF) 或 Animated Portable Network Graphics (APNG) 文件。
+* 在网页上提供表单控件，以允许用户禁用页面上的所有移动或闪烁内容。
+* 如果以上任何一项都不可能，请提供一个链接，指向包含所有内容但不移动或闪烁的页面。
 
 #### 更多信息 - 暂停、停止、隐藏 (2.2.2) {#more-information-pause-stop-hide}
 
@@ -710,7 +731,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 ### 癫痫发作和生理反应(2.3) {#seizures-and-physcial-reactions}
 
-[准则2.3缉获：切勿以已知会导致癫痫发作或身体反应的方式设计内容。](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
+[准则2.3缉获量： 切勿以已知会导致癫痫发作或身体反应的方式设计内容。](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
 ### 闪光三次或低于阈值 (2.3.1) {#three-flashes-or-below-threshold}
 
@@ -740,25 +761,25 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 ### 可导航(2.4) {#navigable}
 
-[准则2.4可导航：提供帮助用户导航、查找内容和确定其位置的方式。](https://www.w3.org/TR/WCAG/#navigable)
+[准则2.4可导航： 提供帮助用户导航、查找内容并确定其位置的方法。](https://www.w3.org/TR/WCAG/#navigable)
 
 这涉及确保内容易于用户导航且简单明了。
 
-### 绕过块(2.4.1) {#bypass-blocks}
+### 旁路块(2.4.1)  {#bypass-blocks}
 
 * 成功标准 2.4.1
 * A 级
-* 绕过块：一种机制可用于绕过在多个网页上重复的内容块。
+* 旁路块： 一种机制可用于绕过在多个网页上重复的内容块。
 
-#### 用途——绕过块(2.4.1) {#purpose-bypass-blocks}
+#### 用途——旁路块(2.4.1) {#purpose-bypass-blocks}
 
-此成功标准旨在允许在内容中按顺序导航的人员更直接地访问网页的主要内容。 网页和应用程序通常具有在其他页面或屏幕上显示的内容。 重复内容块的示例包括但不限于导航链接、标题图形和广告框架。 就本规定而言，单个单词、短语或单个链接等重复的小节不被视为块。
+此成功标准旨在允许在内容中按顺序导航的人员更直接地访问网页的主要内容。 网页和应用程序通常包含在其他页面或屏幕上显示的内容。 重复内容块的示例包括但不限于导航链接、标题图形、菜单和广告框架。 就本规定而言，单个单词、短语或单个链接等重复的小部分不被视为块。
 
 #### 如何达到标准——绕过块(2.4.1) {#how-to-meet-bypass-blocks}
 
-遵循“如何达 [到成功标准2.4.1”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)。
+遵循“如何达 [到成功标准2.4.1”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)。
 
-#### 更多信息——绕过块(2.4.1) {#more-information-bypass-blocks}
+#### 更多信息——旁路块(2.4.1) {#more-information-bypass-blocks}
 
 * [了解成功标准 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [如何达到成功标准 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
@@ -775,7 +796,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 #### 如何达到标准 - 页面带有标题 (2.4.2) {#how-to-meet-page-titled}
 
-在 AEM 中创建新 HTML 页面时，可以指定页面标题。应确保标题能够充分描述页面内容，以便访客能够快速识别该页面的内容是否与自己的需求切实相关。
+在 AEM 中创建新 HTML 页面时，可以指定页面标题。确保标题能够充分描述页面的内容和用途，特别是任何独特方面，以便访客能够快速确定内容是否与其需求实际相关。
 
 您也可以在编辑页面时编辑页面标题，通过&#x200B;**页面信息** - **属性**&#x200B;可访问该设置。
 
@@ -784,19 +805,19 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 * [了解成功标准 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
 * [如何达到成功标准 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
-### 焦点顺序(2.4.3) {#focus-order}
+### 焦点顺序(2.4.3)  {#focus-order}
 
 * 成功标准 2.4.3
 * A 级
-* 焦点顺序：如果网页可以按顺序导航并且导航序列影响含义或操作，则可聚焦的组件将按保留含义和可操作性的顺序接收焦点。
+* 焦点顺序： 如果网页可以按顺序导航并且导航序列影响意义或操作，则可聚焦组件以保留意义和可操作性的顺序接收焦点。
 
 #### 用途——焦点顺序(2.4.3) {#purpose-focus-order}
 
-本成功标准旨在确保用户在内容中按顺序导航时，会按与内容含义一致的顺序看到信息，并可通过键盘操作。 这通过让用户形成一致的内容心理模型来减少混淆。 可能有不同的顺序反映内容中的逻辑关系。 例如，在表中逐行移动组件或逐列移动组件都反映了内容中的逻辑关系。 任一订单均可满足此成功标准。
+此成功标准旨在确保用户在内容中按顺序导航时，会按与内容含义一致的顺序看到信息，并可通过键盘操作。 这通过让用户形成内容的一致心理模型来减少混淆。 内容中可能有反映逻辑关系的不同顺序。 例如，在由多个字段和／或步骤组成的联机表单中移动组件反映了内容中的逻辑关系。
 
 #### 如何达到标准——焦点顺序(2.4.3) {#how-to-meet-focus-order}
 
-遵循“如何达 [到成功标准2.4.3”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)。
+遵循“如何达 [到成功标准2.4.3”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)。
 
 #### 更多信息——焦点顺序(2.4.3) {#more-information-focus-order}
 
@@ -811,7 +832,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 #### 用途 - 链接目的（在上下文中）(2.4.4) {#purpose-link-purpose-in-context}
 
-对于所有用户（无论是否患有某方面的缺陷）而言，通过适当的链接文本清晰地指明链接方向至关重要。这有助于用户决定自己是否切实希望追踪某个链接。对于视力正常的用户而言，当页面上有多个链接时，有意义的链接文本极其有用（尤其当页面包含大量文本时），因为有意义的链接文本能够更加清晰地说明目标页面的功能。而对于使用辅助型技术的用户而言，由于此类技术能够在单个页面上生成包含所有链接的列表，因此这些用户可以更加轻松地在上下文中了解链接文本。
+对于所有用户（无论是否患有某方面的缺陷）而言，通过适当的链接文本清晰地指明链接方向至关重要。这有助于用户决定自己是否切实希望追踪某个链接。对于视力正常的用户而言，当页面上有多个链接时，有意义的链接文本极其有用（尤其当页面包含大量文本时），因为有意义的链接文本能够更加清晰地说明目标页面的功能。一些辅助型技术的用户可以在单个页面上生成所有链接的列表，如果链接文本既独特又信息丰富，则这些技术的用户可以更轻松地从上下文中理解链接文本。 然而，如果一个链接无法提供足够的信息来准确描述链接将带给他们的位置，则视力受损的个体可能会陷入困惑。
 
 #### 如何达到标准 - 链接目的（在上下文中）(2.4.4) {#how-to-meet-link-purpose-in-context}
 
@@ -826,9 +847,9 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。可在 RTE（一种
 
 链接用词在各个页面中应保持一致，尤其是导航栏的链接。例如，如果特定页面的链接在某个页面中被命名为&#x200B;**出版物**，则在其他页面中也应使用该文本，以确保一致性。
 
-但是，在编写时，仍然有一些与标题的使用相关的问题：
+在编写时，标题属性的使用存在一些问题，以确保页面上显示的类似链接提供有关目标的唯一信息（例如，“阅读更多信息”通常指一系列不同的目标）:
 
-* 通常情况下，只有使用鼠标的用户才可以在工具提示弹出框中看到标题属性中包含的文本，而无法使用键盘获取该文本。
+* 标题属性中包含的文本通常仅作为工具提示弹出窗口对鼠标用户可用，并且无法通过键盘或移动用户一致地访问。
 * 屏幕阅读器可以朗读标题属性，但是这项功能可能默认未启用；因此用户可能意识不到标题属性的存在。
 * 标题文本的外观很难更改，这就意味着一些用户可能很难或无法阅读该文本。
 
@@ -870,63 +891,63 @@ John Smith’s publications
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 -->
 
-### 多种方式(2.4.5) {#multiple-ways}
+### 多种方式(2.4.5)  {#multiple-ways}
 
 * 成功标准 2.4.5
 * AA 级
-* 多种方式：除了网页是某个进程的结果或步骤之外，还有多种方法可用于在一组网页中查找网页。
+* 多种方式： 除了网页是流程的结果或步骤之外，还有多种方法可用于在一组网页内查找网页。
 
 #### 用途——多种方式(2.4.5) {#purpose-multiple-ways}
 
-此成功标准旨在使用户能够以最符合其需求的方式定位内容。 用户可能发现一种技术比另一种技术更容易或更容易理解。
+此成功标准旨在使用户能够以最符合其需求的方式查找内容。 用户可能发现一种技术比另一种技术更容易或更容易理解。
 
-即使是小型网站也应该为用户提供一些定位手段。 对于三、四个页面站点，当所有页面都从主页链接时，可能只提供来自主页的链接和到该主页的链接，该链接也可用作站点地图。
+即使是小型网站也应为用户提供一些定位方式。 对于三、四个页面的站点，如果所有页面都从主页链接，则只提供来自主页的链接，而主页上的链接也可用作站点地图。
 
-#### 如何达到标准——多种途径(2.4.5) {#how-to-meet-multiple-ways}
+#### 如何达到标准——多种方式(2.4.5) {#how-to-meet-multiple-ways}
 
-遵循“如何达 [到成功标准2.4.5”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)。
+遵循“如何达 [到成功标准2.4.5”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)。
 
-#### 更多信息——多种途径(2.4.5) {#more-information-multiple-ways}
+#### 更多信息——多种方式(2.4.5) {#more-information-multiple-ways}
 
 * [了解成功标准 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
 * [如何达到成功标准 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
-### 标题和标签(2.4.6) {#headings-and-labels}
+### 标题和标签(2.4.6)  {#headings-and-labels}
 
 * 成功标准 2.4.6
 * AA 级
-* 标题和标签：标题和标签描述主题或用途。
+* 标题和标签： 标题和标签描述主题或用途。
 
 #### 用途——标题和标签(2.4.6) {#purpose-headings-and-labels}
 
-此成功标准旨在帮助用户了解网页中包含哪些信息以及这些信息的组织方式。 当标题清晰且具有描述性时，用户可以更轻松地找到他们所寻找的信息，并更轻松地了解内容不同部分之间的关系。 描述性标签可帮助用户识别内容中的特定组件。
+此成功标准旨在帮助用户了解网页中包含哪些信息以及该信息的组织方式。 当标题清晰且具有描述性时，用户可以更轻松地找到所寻找的信息，并更轻松地了解内容不同部分之间的关系。 描述性标签可帮助用户识别内容中的特定组件。
 
 #### 如何达到标准——标题和标签(2.4.6) {#how-to-meet-headings-and-labels}
 
-遵循“如何达 [到成功标准2.4.6”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)。
+遵循“如何达 [到成功标准2.4.6”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)。
 
 #### 更多信息——标题和标签(2.4.6) {#more-information-headings-and-labels}
 
 * [了解成功标准 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 * [如何达到成功标准 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
 
-### 焦点可见(2.4.7) {#focus-visible}
+### 焦点可见(2.4.7)  {#focus-visible}
 
 * 成功标准 2.4.7
 * AA 级
-* 焦点可见：任何可操作键盘的用户界面都具有操作模式，在该模式下键盘焦点指示器可见。
+* 焦点可见： 任何键盘可操作的用户界面都具有操作模式，其中键盘焦点指示器可见。
 
 #### 用途——焦点可见(2.4.7) {#purpose-focus-visible}
 
 此成功标准旨在帮助用户了解哪个元素具有键盘焦点。
 
-人必须能够知道多个元素中的哪个元素具有键盘焦点。 如果屏幕上只有一个可操作键盘的控件，则成功标准将满足，因为可视设计仅显示一个可操作键盘的项目。
+人必须能够知道多个元素中的哪个元素具有键盘焦点。 如果屏幕上只有一个键盘可操作的控件，则会达到成功标准，因为可视设计只显示一个键盘可操作的项目。
 
-如果成功标准是“操作模式”，则说明不一定总是显示焦点指示符的平台。 在大多数情况下，只有一种操作模式，因此此成功标准适用。
+如果成功标准是“操作模式”，则说明平台可能并不总是显示焦点指示符。 在大多数情况下，只有一种操作模式，因此此成功标准适用。
 
 #### 如何达到标准——焦点可见(2.4.7) {#how-to-meet-focus-visible}
 
-遵循“如何达 [到成功标准2.4.7”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)。
+遵循“如何达 [到成功标准2.4.7”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)。
 
 #### 更多信息——可见焦点(2.4.7) {#more-information-focus-visible}
 
@@ -955,13 +976,17 @@ John Smith’s publications
 
 要达到此成功标准，可以使用页面顶部 `<html>` 元素中的 `lang` 属性来识别网页的默认语言。例如：
 
-* 如果页面采用英式英语编写，则 `<html>` 元素应该写成：
-   `<html lang = “en-gb”>`
+* If a page is written in English, the `<html>` element should read:
+   `<html lang = “en”>`
 
-* 而要以美式英语呈现的页面应该采用以下标准：
-   `<html lang = “en-us”>`
+* 而要以西班牙语呈现的页面应采用以下标准：
+   `<html lang = “es”>`
 
-在 AEM 中，创建页面时会设置页面的默认语言，但是也可以在编辑页面时更改该语言，通过 **Sidekick** - **页面**&#x200B;选项卡 - **页面属性...** - **高级**&#x200B;选项卡可访问该设置。
+In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+
+>[!NOTE]
+>
+>AEM针对根语言的变体提供进一步微调； 例如，美国英语- en-us、英国英语- en-gb和加拿大英语- en-ca。 对于辅助型技术来说，这一级别的详细信息往往是多余的，但可用于页面内容的区域变化。
 
 #### 更多信息 - 页面语言 (3.1.1) {#more-information-language-of-page}
 
@@ -982,7 +1007,7 @@ John Smith’s publications
 应用此成功标准的页面允许：
 
 * 盲文转换软件插入重音字符。
-* 屏幕阅读器准确地朗读不属于默认语言的词语。
+* 屏幕阅读器可朗读那些具有特殊字符或不使用在页面级别识别的默认语言的单词。
 * Google Translate 等翻译工具准确地将内容从一种语言翻译成另外一种语言。
 
 #### 如何达到标准 - 局部语言 (3.1.2) {#how-to-meet-language-of-parts}
@@ -1021,129 +1046,129 @@ To add the span element, with an appropriate language, you can manually edit you
 
 ### 可预测(3.2) {#predictable}
 
-[准则3.2可预测：使网页以可预测的方式显示和运行。](https://www.w3.org/TR/WCAG/#predictable)
+[准则3.2可预测： 使网页以可预测的方式显示和运行。](https://www.w3.org/TR/WCAG/#predictable)
 
 这涉及确保网页的外观和操作方式保持一致。
 
-### 聚焦(3.2.1) {#on-focus}
+### 聚焦(3.2.1)  {#on-focus}
 
 * 成功标准 3.2.1
 * A 级
-* 聚焦：当任何用户界面组件收到焦点时，它不会启动上下文的更改。
+* 聚焦： 当任何用户界面组件收到焦点时，它不会启动上下文的更改。
 
-#### 用途——关注(3.2.1) {#purpose-on-focus}
+#### 用途——聚焦(3.2.1) {#purpose-on-focus}
 
 此成功标准旨在确保在访客在文档中导航时功能可预测。 任何能够在收到焦点时触发事件的组件都不得更改上下文。 组件接收焦点时更改上下文的示例包括但不限于：
 
 * 组件获得焦点时自动提交的表单；
 * 组件获得焦点时启动的新窗口；
-* 当该组件获得焦点时，焦点会更改为其他组件；
+* 当该组件获得焦点时，焦点将更改为另一个组件；
 
-焦点可以通过键盘（例如，Tab键切换到控件）或鼠标（例如，单击文本字段）移到控件。 将鼠标移到控件上不会移动焦点，除非脚本实现此行为。 请注意，对于某些类型的控件，单击控件也可能会激活控件（例如按钮），这反过来又可能启动上下文中的更改。
+焦点可以通过键盘（例如，切换到控件）或鼠标（例如，单击文本字段）移到控件。 将鼠标移到控件上不会移动焦点，除非脚本实现此行为。 请注意，对于某些类型的控件，单击控件也可能会激活控件（例如按钮），这反过来又会启动上下文中的更改。
 
 #### 如何达到标准——聚焦(3.2.1) {#how-to-meet-on-focus}
 
-遵循“如何达 [到成功标准3.2.1”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)。
+遵循“如何达 [到成功标准3.2.1”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)。
 
 #### 更多信息——聚焦(3.2.1) {#more-information-on-focus}
 
 * [了解成功标准 3.2.1](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
 * [如何达到成功标准 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
 
-### 输入时(3.2.2) {#on-input}
+### 输入时(3.2.2)  {#on-input}
 
 * 成功标准 3.2.2
 * A 级
-* 输入时：更改任何用户界面组件的设置不会自动导致上下文更改，除非在使用组件之前已告知用户该行为。
+* 输入时： 更改任何用户界面组件的设置不会自动导致上下文更改，除非在使用组件之前已告知用户该行为。
 
-#### 用途——输入(3.2.2) {#purpose-on-input}
+#### 用途——输入内容(3.2.2) {#purpose-on-input}
 
-此成功标准旨在确保输入数据或选择表单控件具有可预测的效果。 更改任何用户界面组件的设置都会更改控件中某些方面，当用户不再与控件交互时，这些方面会一直存在。 因此，选中复选框、在文本字段中输入文本或更改列表控件中的选定选项会更改其设置，但激活链接或按钮则不会更改。 上下文中的更改可能会迷惑那些不容易察觉更改或容易被更改分心的用户。 只有当明确表示将响应用户的操作而发生此类更改时，上下文的更改才适用。
+此成功标准旨在确保输入数据或选择表单控件具有可预测的效果。 更改任何用户界面组件的设置都会更改控件中的某些方面，当用户不再与其交互时，这些方面会一直存在。 因此，选中复选框、在文本字段中输入文本或更改列表控件中的选定选项会更改其设置，但激活链接或按钮则不会更改。 上下文中的更改会迷惑那些不容易感知更改或容易被更改分心的用户。 只有当明确表示将响应用户的操作而发生此类更改时，上下文的更改才适用。
 
-#### 如何达到标准——输入(3.2.2) {#how-to-meet-on-input}
+#### 如何达到标准——输入时(3.2.2) {#how-to-meet-on-input}
 
-遵循“如何达 [到成功标准3.2.2”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#on-input)。
+遵循“如何达 [到成功标准3.2.2”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#on-input)。
 
 #### 更多信息——输入时(3.2.2) {#more-information-on-input}
 
 * [了解成功标准 3.2.2](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 * [如何达到成功标准 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
-### 一致的导航(3.2.3) {#consistent-navigation}
+### 一致的导航(3.2.3)  {#consistent-navigation}
 
 * 成功标准 3.2.3
 * AA 级
-* 一致的导航：在一组网页内的多个网页上重复的导航机制在每次重复时都以相同的相对顺序发生，除非用户发起更改。
+* 一致的导航： 在一组网页内的多个网页上重复的导航机制在每次重复时都以相同的相对顺序发生，除非用户发起更改。
 
 #### 用途——一致导航(3.2.3) {#purpose-consistent-navigation}
 
-此成功标准旨在鼓励用户使用一致的演示和布局，以便与一组网页中的重复内容交互并且需要多次查找特定信息或功能。 使用屏幕放大率一次显示屏幕一小部分的低视觉者通常使用视觉提示和页面边界快速定位重复的内容。 对于在设计中使用空间内存或视觉提示来定位重复内容的视觉用户来说，以相同顺序呈现重复内容也很重要。
+此成功标准旨在鼓励用户使用一致的演示和布局，这些用户与一组网页中的重复内容进行交互，并且需要多次找到特定信息或功能。 低视觉的个人使用屏幕放大率一次显示屏幕的一小部分，通常使用视觉提示和页面边界快速定位重复的内容。 对于在设计中使用空间内存或视觉提示来定位重复内容的视觉用户来说，按相同顺序展示重复内容也很重要。
 
-请务必注意，本节中使用短语“同一顺序”并不意味着不能使用子导航菜单或无法使用辅助导航块或页面结构。 相反，此成功标准旨在帮助跨网页与重复内容交互的用户预测其所寻找内容的位置，并在再次遇到内容时更快速地找到它。
+请务必注意，本节中使用短语“同一顺序”并不意味着不能使用子导航菜单，或者不能使用次导航块或页面结构。 相反，此成功标准旨在帮助与网页中重复内容进行交互的用户预测其所寻找内容的位置，并在再次遇到内容时更快地找到它。
 
 用户可以通过使用自适应用户代理或通过设置首选项来启动顺序的更改，以便以对他们最有用的方式显示信息。
 
 #### 如何达到标准——一致的导航(3.2.3) {#how-to-meet-consistent-navigation}
 
-遵循“如何达 [到成功标准3.2.3”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)。
+遵循“如何达 [到成功标准3.2.3”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)。
 
 #### 更多信息——一致导航(3.2.3) {#more-information-consistent-navigation}
 
 * [了解成功标准 3.2.3](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
 * [如何达到成功标准 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
 
-### 一致标识(3.2.4) {#consistent-identification}
+### 一致标识(3.2.4)  {#consistent-identification}
 
 * 成功标准 3.2.4
 * A 级
-* 一致的标识：在一组网页中具有相同功能的组件可以一致地识别。
+* 一致的标识： 在一组网页中具有相同功能的组件可以一致地进行标识。
 
 #### 用途——一致标识(3.2.4) {#purpose-consistent-identification}
 
-此成功标准旨在确保一致地识别在一组网页中重复出现的功能组件。 使用屏幕阅读器的用户在操作网站时所使用的策略是严重依赖于他们对可能出现在不同网页上的功能的熟悉。 如果相同的功能在不同网页上具有不同的标签（或更一般地说，不同的可访问名称），则网站将更难使用。 这也可能会令具有认知限制的人感到困惑并增加认知负荷。 因此，一致的标签将有所帮助。
+此成功标准旨在确保一致地识别在一组网页中重复出现的功能组件。 使用屏幕阅读器的用户在操作网站时所使用的策略是严重依赖于他们对可能出现在不同网页上的功能的熟悉。 如果相同的功能在不同网页上具有不同的标签（或更一般地说，不同的可访问名称），则网站的使用难度会大得多。 这也可能会令人困惑，并增加认知受限者的认知负荷。 因此，一致的标签将有所帮助。
 
 此一致性扩展到替代文本。 如果图标或其他非文本项目具有相同的功能，则其替代文本也应保持一致。
 
-如果网页上的两个组件与一组网页中另一个页面上的组件具有相同的功能，则这三个组件必须保持一致。 因此，同一页面上的两个内容将保持一致。
+如果网页上有两个组件的功能与一组网页中另一个页面上的组件功能相同，则所有3个组件必须保持一致。 因此，同一页面上的两个内容将保持一致。
 
-尽管在单个网页内始终保持一致是理想的，但3.2.4只解决一组网页内的一致性问题，在这组网页中，某些内容在多个网页上重复。
+尽管在单个网页内始终保持一致是理想的，但3.2.4仅解决一组网页内的一致性问题，该组网页中的多个网页重复某些内容。
 
-#### 如何达到标准——一致的标识(3.2.4) {#how-to-meet-consistent-identification}
+#### 如何达到标准——一致标识(3.2.4) {#how-to-meet-consistent-identification}
 
-遵循“如何达 [到成功标准3.2.4”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)。
+遵循“如何达 [到成功标准3.2.4”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)。
 
 #### 更多信息——一致标识(3.2.4) {#more-information-consistent-identification}
 
 * [了解成功标准 3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
 * [如何达到成功标准 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)
 
-### 输入帮助(3.3) {#input-assistance}
+### 输入协助(3.3) {#input-assistance}
 
 [准则 3.3 辅助输入：帮助用户避免和更正错误。](https://www.w3.org/TR/WCAG/#input-assistance)
 
-### 错误标识(3.3.1) {#error-identification}
+### 错误标识(3.3.1)  {#error-identification}
 
 * 成功标准 3.3.1
 * A 级
-* 错误标识：如果自动检测到输入错误，则识别出错误的项，并以文本形式向用户描述错误。
+* 错误标识： 如果自动检测到输入错误，则识别出错的项目，并以文本形式向用户描述该错误。
 
 #### 用途——错误标识(3.3.1) {#purpose-error-identification}
 
-此成功标准旨在确保用户知道发生了错误，并可确定错误的原因。 错误消息应尽可能具体。 如果表单提交失败，则重新显示表单并指示错误中的字段不足以让某些用户感知错误已发生。 例如，屏幕阅读器用户在遇到某个指示器之前不会发现错误。 他们可能会在遇到错误指示符之前完全放弃表单，因为他们认为页面根本无法正常工作。 根据WCAG 2.0中的定义，“输入错误”是用户提供的不接受的信息。 这包括：
+此成功标准旨在确保用户知道发生了错误，并可确定错误原因。 错误消息应尽可能具体。 如果表单提交失败，则重新显示表单并指示错误中的字段不足以让某些用户感知错误已发生。 例如，屏幕阅读器用户在遇到某个指示器之前不会知道存在错误。 他们可能会在遇到错误指示器之前完全放弃表单，认为页面根本无法正常工作。 根据WCAG 2.0中的定义，“输入错误”是用户提供的不接受的信息。 这包括：
 
-网页要求但用户忽略的信息，或用户提供但不属于所需数据格式或允许值的信息。
+网页要求但用户忽略的信息，或者用户提供但不属于所需数据格式或允许值的信息。
 例如：
 
-* 用户未能在州、省、地区等地输入相应的缩写。 字段;
-* 用户进入状态缩写，该状态不是有效状态；
+* 用户未能在州、省、地区等输入正确的缩写。 字段;
+* 用户输入非有效状态的状态缩写；
 * 用户输入不存在的邮政编码；
-* 用户在将来2年内输入出生日期；
-* 用户在只接受数字的电话号码字段中输入字母字符或括号；
-* 用户输入的竞价低于上一个竞价或最低竞价增量。
+* 用户将来输入出生日期2年；
+* 用户在其电话号码字段中输入只接受数字的字母字符或括号；
+* 用户输入的投标低于上一个投标或最低投标增量。
 
 #### 如何达到标准——错误标识(3.3.1) {#how-to-meet-error-identification}
 
-遵循“如何达 [到成功标准3.3.1”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)。
+遵循“如何达 [到成功标准3.3.1”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)。
 
 #### 更多信息——错误标识(3.3.1) {#more-information-error-identification}
 
@@ -1200,106 +1225,106 @@ However, there is no programmatic association between the group title and the ra
 * [了解成功标准 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [如何达到成功标准 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
 
-### 错误建议(3.3.3) {#error-suggestion}
+### 错误建议(3.3.3)  {#error-suggestion}
 
 * 成功标准 3.3.3
 * AA 级
-* 键盘：如果自动检测到输入错误并且已知有关更正的建议，则向用户提供建议，除非这会危及内容的安全或用途。
+* 键盘： 如果自动检测到输入错误并且知道有关更正的建议，则向用户提供建议，除非这会危及内容的安全性或目的。
 
 #### 用途——错误建议(3.3.3) {#purpose-error-suggestion}
 
-此成功标准旨在确保用户在可能的情况下收到纠正输入错误的适当建议。 “输入错误”的WCAG 2.0定义表示系统“不接受用户提供的信息”。 未被接受的信息的一些示例包括用户需要但遗漏的信息和用户提供但不属于所需数据格式或允许值的信息。
+此成功标准旨在确保用户在可能的情况下收到更正输入错误的适当建议。 “输入错误”的WCAG 2.0定义表示系统“不接受用户提供的信息”。 未被接受的信息的一些示例包括用户需要但省略的信息以及用户提供但不属于所需数据格式或允许值的信息。
 
-成功标准3.3.1提供错误通知。 然而，认知有限的人可能发现很难理解如何纠正错误。 患有视觉障碍的人可能无法准确地找出如何纠正错误。 如果提交表单失败，用户可能会放弃表单，因为他们可能不确定如何更正错误，即使他们知道错误已发生。
+成功标准3.3.1提供错误通知。 然而，认知有限的人可能很难理解如何纠正错误。 患有视觉障碍的人可能无法准确地找到纠正错误的方法。 如果表单提交失败，用户可能会放弃表单，因为他们可能不确定如何更正错误，即使他们知道错误已发生。
 
 内容作者可以提供错误的描述，或者用户代理可以基于技术特定的、以编程方式确定的信息提供错误的描述。
 
 #### 如何达到标准——错误建议(3.3.3) {#how-to-meet-error-suggestion}
 
-遵循“如何达 [到成功标准3.3.3”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)。
+遵循“如何达 [到成功标准3.3.3”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)。
 
 #### 更多信息——错误建议(3.3.3) {#more-information-error-suggestion}
 
 * [了解成功标准 3.3.3](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
 * [如何达到成功标准 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
 
-### 错误预防（法律、财务、数据）(3.3.4) {#error-prevention-legal-financial-data}
+### 错误预防（法律、财务、数据）(3.3.4)  {#error-prevention-legal-financial-data}
 
 * 成功标准 3.3.4
 * AA 级
-* 错误预防（法律、财务、数据）:对于导致用户发生法律承诺或财务交易、修改或删除数据存储系统中用户可控数据或提交用户测试响应的网页，至少以下情况之一是正确的：
+* 错误预防（法律、财务、数据）: 对于导致用户发生法律承诺或财务交易、修改或删除数据存储系统中用户可控数据或提交用户测试响应的网页，至少以下情况之一是正确的：
 
    * 可撤消提交是可撤消的。
-   * 检查用户输入的数据是否有输入错误，并向用户提供纠正错误的机会。
-   * 确认在最终完成提交之前，有一种机制可用于查看、确认和更正信息。
+   * 检查用户输入的CheckedData是否有输入错误，并为用户提供纠正错误的机会。
+   * 已确认在完成提交之前，有一种机制可用于审核、确认和更正信息。
 
 #### 用途——错误预防（法律、财务、数据）(3.3.4) {#purpose-error-prevention-legal-financial-data}
 
-本成功标准旨在帮助残障用户在执行无法撤消的操作时避免由于错误而造成的严重后果。 例如，购买不可退款的机票或提交订单在经纪账户购买股票是严重后果的财务交易。 如果用户在航空旅行日期犯了错误，他／她最终可能会得到一张无法交换的错误日期的机票。 如果用户在要购买的股票数量上出错，他／她最终可能购买的股票数量会超出预期。 这两种错误都涉及立即发生且以后无法更改的交易，并且代价很高。 同样，如果用户无意中修改或删除存储在数据库中的数据（这些数据后来需要访问），例如他们在旅游服务网站中的整个旅行用户档案，则可能是不可恢复的错误。 当涉及修改或删除“用户可控”数据时，其目的是防止大量丢失数据，如删除文件或记录。 不是希望对每个save命令进行确认，也不希望对文档、记录或其他数据进行简单的创建或编辑。
+此成功标准旨在帮助残障用户在执行无法撤消的操作时避免由于错误而造成的严重后果。 例如，购买不可退款的机票或提交订单在经纪帐户中购买股票是严重后果的金融交易。 如果用户在航空旅行日期犯了错误，他／她最终可能会拿到一张无法交换的错日票。 如果用户在要购买的股票数量上出错，他／她最终可能购买的股票数量会超出预期。 这两种错误都涉及立即发生且以后无法更改的事务，并且代价很高。 同样，如果用户无意中修改或删除存储在数据库中的数据(如旅行服务网站中的整个旅行用户档案)，则可能是一个不可恢复的错误。 当涉及修改或删除“用户可控”数据时，其目的是防止大量丢失数据，如删除文件或记录。 不是为每个保存命令要求确认，也不是为文档、记录或其他数据进行简单的创建或编辑。
 
-残障用户可能更容易犯错。 阅读障碍者可以转换数字和字母，而汽车障碍者可以误按键。 提供撤消操作的能力使用户能够纠正可能导致严重后果的错误。 提供审阅和更正信息的能力使用户有机会在采取具有严重后果的行动之前检测错误。
+残障用户可能更容易犯错。 阅读障碍者可以转换数字和字母，而汽车障碍者可能误按键。 提供反向操作的能力使用户能够纠正可能导致严重后果的错误。 提供审阅和更正信息的能力使用户有机会在采取具有严重后果的行动之前发现错误。
 
-用户可控数据是用户可查看的数据，用户可以通过有意的操作来更改和／或删除。 控制此类数据的用户的例子是更新用户帐户的电话号码和地址，或从网站删除过去发票的记录。 它不指用户无法直接视图或与之交互的因特网日志和搜索引擎监视数据等内容。
+用户可控数据是用户可观看的数据，用户可以通过有意的操作来改变和／或删除。 控制此类数据的用户的例子是更新用户帐户的电话号码和地址，或者从网站删除过去发票的记录。 它不指用户无法直接视图或与之交互的因特网日志和搜索引擎监视数据。
 
 #### 如何达到标准——错误预防（法律、财务、数据）(3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 
-遵循“如何达 [到成功标准3.3.4”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)。
+遵循“如何达 [到成功标准3.3.4”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)。
 
 #### 更多信息——错误预防（法律、财务、数据）(3.3.4) {#more-information-error-prevention-legal-financial-data}
 
 * [了解成功标准 3.3.4](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
 * [如何达到成功标准 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
 
-## 原则4:强大 {#principle-robust}
+## 原则4: 强大 {#principle-robust}
 
-[原则4:强大——内容必须足够强大，以便由各种用户代理进行解释，包括辅助技术。](https://www.w3.org/TR/WCAG/#robust)
+[原则4: 可靠——内容必须足够可靠，以便由各种用户代理进行解释，包括辅助技术。](https://www.w3.org/TR/WCAG/#robust)
 
 ### Compatible (4.1) {#compatible}
 
-[准则4.1兼容：最大程度地兼容当前和未来的用户代理，包括辅助型技术。](https://www.w3.org/TR/WCAG/#compatible)
+[准则4.1兼容： 与当前和未来用户代理（包括辅助技术）的最大兼容性。](https://www.w3.org/TR/WCAG/#compatible)
 
-最大程度地兼容当前和未来的用户代理，包括辅助型技术。
+与当前和未来用户代理（包括辅助技术）的最大兼容性。
 
-### 解析(4.1.1) {#parsing}
+### 解析(4.1.1)  {#parsing}
 
 * 成功标准 4.1.1
 * A 级
-* 解析：在使用标记语言实现的内容中，元素具有完整的开始和结束标签，元素根据其规范进行嵌套，元素不包含重复属性，并且任何ID都是唯一的，除非规范允许这些功能。
+* 解析： 在使用标记语言实现的内容中，元素具有完整的开始和结束标签，元素根据其规范进行嵌套，元素不包含重复属性，除非规范允许这些功能，否则任何ID都是唯一的。
 
 #### 用途——解析(4.1.1) {#purpose-parsing}
 
-本成功标准旨在确保用户代理（包括辅助技术）能够准确地解释和解析内容。 如果无法将内容解析为数据结构，则不同的用户代理可能以不同方式呈现内容或完全无法解析内容。 一些用户代理使用“修复技术”来渲染编码欠佳的内容。
+此成功标准旨在确保用户代理（包括辅助型技术）能够准确地解释和分析内容。 如果无法将内容解析为数据结构，则不同的用户代理可能会以不同的方式呈现内容或完全无法解析内容。 一些用户代理使用“修复技术”来呈现编码欠佳的内容。
 
-由于修复技术因用户代理而异，因此作者不能假设内容将被准确地解析为数据结构，或者内容将由包括辅助技术在内的专用用户代理正确呈现，除非内容是根据该技术的正式语法中定义的规则创建的。 在标记语言中，元素和属性语法中的错误以及未提供正确嵌套的开始/结束标签会导致错误，从而阻止用户代理可靠地解析内容。 因此，成功标准要求只能使用正式语法的规则分析内容。
+由于修复技术因用户代理而异，因此作者不能假设内容将被准确地解析为数据结构，或者内容将被包括辅助技术在内的专用用户代理正确呈现，除非内容是根据该技术的正式语法中定义的规则创建的。 在标记语言中，元素和属性语法中的错误以及无法提供正确嵌套的开始/结束标签会导致错误，从而阻止用户代理可靠地分析内容。 因此，成功标准要求只能使用正式语法的规则来分析内容。
 
 #### 如何达到标准——解析(4.1.1) {#how-to-meet-parsing}
 
-遵循“如何达 [到成功标准4.1.1”下的准则](https://www.w3.org/WAI/WCAG21/quickref/#parsing)。
+遵循“如何达 [到成功标准4.1.1”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#parsing)。
 
 #### 更多信息——解析(4.1.1) {#more-information-parsing}
 
 * [了解成功标准 4.1.1](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
 * [如何达到成功标准 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
 
-### 名称、角色、值(4.1.2) {#name-role-value}
+### 名称、角色、值(4.1.2)  {#name-role-value}
 
 * 成功标准 4.1.2
 * A 级
-* 名称、角色、值：对于所有用户界面组件(包括但不限于：表单元素、链接和脚本生成的组件)，可以通过编程方式确定名称和角色；用户可以通过编程方式设置状态、属性和值；用户代理可以获得对这些项目的更改通知，包括辅助型技术。
+* 名称、角色、值： 对于所有用户界面组件(包括但不限于： 表单元素、链接和脚本生成的组件)，可以通过编程方式确定名称和角色； 用户可以通过编程方式设置的状态、属性和值； 用户代理可以收到更改这些项目的通知，包括辅助型技术。
 
 #### 用途——名称、角色、值(4.1.2) {#purpose-ame-role-value}
 
-本成功标准旨在确保辅助技术(AT)可收集有关内容、激活（或设置）的信息并及时更新内容中用户界面控件的状态。
+此成功标准旨在确保辅助型技术(AT)可以收集有关、激活（或设置）内容中用户界面控件状态的信息并保持最新。
 
-当使用可访问技术的标准控件时，该过程非常简单。 如果根据规范使用用户界面元素，则满足此规定的条件。 （请参阅下面的成功标准4.1.2示例）
+当使用可访问技术的标准控件时，此过程非常简单。 如果用户界面元素根据规范使用，则符合此规定的条件。 （请参阅下面的成功标准4.1.2示例）
 
-但是，如果创建了自定义控件，或者将界面元素编程（在代码或脚本中）以具有与通常不同的角色和／或功能，则需要采取其他措施，以确保这些控件向辅助技术提供重要信息并允许它们由辅助技术控制。
+但是，如果创建了自定义控件，或者将界面元素编程（在代码或脚本中）以具有与通常不同的角色和／或功能，则需要采取其他措施，以确保控件向辅助技术提供重要信息并允许辅助技术控制它们自己。
 
-用户界面控件的一个特别重要的状态是它是否具有焦点。 控件的焦点状态可以通过编程方式确定，并且有关焦点变化的通知被发送给用户代理和辅助技术。 用户界面控制状态的其他示例包括是否已选择复选框或单选按钮，或者是否展开或折叠可折叠的树或列表节点。
+用户界面控件的一个特别重要的状态是它是否具有焦点。 控件的焦点状态可以通过编程方式确定，并且有关焦点改变的通知被发送给用户代理和辅助技术。 用户界面控制状态的其他示例包括是否已选择复选框或单选按钮，或者是否展开或折叠可折叠的树或列表节点。
 
 #### 如何达到标准——名称、角色、值(4.1.2) {#how-to-meet-ame-role-value}
 
-遵循“如何达 [到成功标准4.1.2”中的准则](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)。
+遵循“如何达 [到成功标准4.1.2”中的指南](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)。
 
 #### 更多信息——名称、角色、值(4.1.2) {#more-information-ame-role-value}
 
