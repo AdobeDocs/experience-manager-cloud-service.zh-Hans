@@ -2,7 +2,10 @@
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 91%
 
 ---
 
@@ -13,11 +16,19 @@ Adobe Experience Manager (AEM) 云服务的开发旨在最大限度地符合 Web
 
 The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
+>[!NOTE]
+> 
+> WCAG 2.1 从 2008 年起更新了先前版本 WCAG 2.0。请参阅 [WCAG 2.1 - 与 WCAG 2.0 的比较](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+
+>[!NOTE]
+> 
+>目前正在开发[该指南的更新版本 - WCAG 2.2](https://www.w3.org/TR/WCAG22/)，但此时不予考虑更新事宜。
+
 WCAG 2.1 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些准则和成功标准向 Web 内容作者、设计人员和开发人员提供建议，确保他们创作的资源可尽可能多地供更多人访问，而无论他们具有任何缺陷；例如，视觉障碍、听力损失、学习困难、年龄限制等。
 
 例如，使用 HTML 中的 `alt` 属性描述图像（或任何其他非文本内容）会使失明或部分视力受损的人受益匪浅。`alt` 属性中的文本描述内容可以转换为语音输出或传输为可刷新的电子盲文显示屏。
 
-此外，WCAG 2.1 还可为其他受益人带来好处，包括那些在某种情况下可能被认为&#x200B;*存在身心障碍*&#x200B;的人员。由于浏览技术、网络连接速度或浏览环境等情况，他们可能会遇到与残障人士类似的障碍。
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. 由于浏览技术、网络连接速度或浏览环境等情况，他们可能会遇到与残障人士类似的障碍。
 
 使用 Adobe Experience Manager，内容作者和/或网站所有者可以创建符合 WCAG 2.1 A 级和 AA 级相关成功标准的 Web 内容。
 
@@ -65,14 +76,14 @@ WCAG 2.1 包含有四个用于辅助设计的关键原则，有时由首字母�
 * 每个准则都包含一个或多个&#x200B;**成功标准**。
 * 成功标准将编写为语句，任何给定网页的结果都为 `True` 或 `False`。
 * 成功标准可能包括其中一项/或多种选项，也可能包括例外，即不符合成功标准的情况。
-* 成功标准按照父准则和原则编号，从 1.1.1 - 4.1.1。它们还有一个简短的名称，用于总结标准的目的，以便于参考。例如，成功标准 1.1.1 是非文本替代内容。
+* 成功标准按照父准则和原则编号，从 1.1.1 - 4.1.1。它们还有一个简短的名称，用于总结标准的目的，以便于参考。例如，成功标准1.1.1是非文本内容。
 * 成功标准包括一系列相关的&#x200B;**技术**（详见下文）。
 
 ## 支持资源 {#supporting-resources}
 
 除了原则、准则和成功标准的核心 WCAG 2.1 组成部分外，还有一系列支持文档。其中一些文档就如何符合准则的某些方面提供了具体建议，而另一些文档则是一般性参考资料，可帮助拥有各种能力的 Web 作者、设计人员和开发人员尽可能有效地理解和使用 WCAG 2.1。
 
-尽管 WCAG 2.1 是一份稳定的文档，不会发生更改，但大多数支持资源是动态文档；它们会随着新兴技术的出现而进行更改和增加，您可以从中发现一些关于如何实现 Web 辅助功能的新示例。
+虽然WCAG 2.1本身是稳定的文档，不会改变，但这些支持资源大多是动态文档; 随着新技术的出现，它们会随着时间的推移而改变和增长，并会发现如何实现web辅助功能的新示例。
 
 ### WCAG 2.1 资源 {#wcag-resources}
 
@@ -87,7 +98,7 @@ WCAG 2.1 包含有四个用于辅助设计的关键原则，有时由首字母�
 
 ### WCAG 2.1 的新增内容 {#what-is-new}
 
-[WCAG 2.1 的新增内容](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)提供了有关 WCAG 2.0 与 WCAG 2.1 之间新增内容的重要信息。
+[WCAG 2.1中的新增功能提供](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 有关WCAG 2.0和WCAG 2.1之间增量的重要信息。
 
 [WCAG 2.0 和 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 节进一步阐明了两者的关系状况。
 
@@ -138,7 +149,7 @@ WCAG 2.1 是指一系列文档，它提供了一些建议可帮助读者理解�
 
 ### 如何满足 WCAG 2.1 {#how-to-meet-wcag}
 
-“如何满足”部分显示在[如何满足 WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) 页面上。本节提供了 WCAG 的替代形式，允许根据与读者自身兴趣或情况最相关的准则优化内容。读者可以通过指定特定 Web 内容技术（如层叠样式表或脚本）或指定特定优先级来筛选他们希望查看的成功标准技术。
+“如何满足”部分显示在[如何满足 WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) 页面上。本节提供WCAG的替代演示，使读者能够将指南的内容调整为与他们自己的兴趣和／或情况最相关的内容。 读者可以通过指定特定 Web 内容技术（如层叠样式表或脚本）或指定特定优先级来筛选他们希望查看的成功标准技术。
 
 如果不进行筛选，此资源将提供按准则分组的所有成功标准。对于每个成功标准，提供以下内容：
 
