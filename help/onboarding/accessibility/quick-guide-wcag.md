@@ -2,10 +2,10 @@
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
 translation-type: tm+mt
-source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 91%
+source-wordcount: '1758'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 > 
-> WCAG 2.1 从 2008 年起更新了先前版本 WCAG 2.0。请参阅 [WCAG 2.1 - 与 WCAG 2.0 的比较](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+> WCAG 2.1从2008年起更新了先前版本WCAG 2.0。 请参阅 [WCAG 2.1 - 与 WCAG 2.0 的比较](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
 
 >[!NOTE]
 > 
@@ -37,25 +37,19 @@ Additionally, WCAG 2.1 can result in advantages for other beneficiaries, includi
 WCAG 2.1 的目的是提供以下准则：
 
 * **与技术无关：**
-换句话说，准则可以应用于各种 Web 内容格式，而不仅仅是 HTML。因此，WCAG 2.1 可以涵盖由 PDF、Flash、JavaScript 和其他当前和未来 Web 技术生成或提供的内容。<!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+换句话说，准则可以应用于各种 Web 内容格式，而不仅仅是 HTML。因此，WCAG 2.1 可以涵盖由 PDF、Flash、JavaScript 和其他当前和未来 Web 技术生成或提供的内容。
 
 * **可测试：**
-每个准则均以一种可进行客观测试的方式编写，以确保一组辅助功能专家都同意同容符合该准则要求。辅助功能准则的一个挑战是，虽然一些准则在技术上可以测试，但另一些准则需要人为判断来确定是否成功达到了准则要求。<!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+每个准则均以一种可进行客观测试的方式编写，以确保一组辅助功能专家都同意同容符合该准则要求。辅助功能准则的一个挑战是，虽然一些准则在技术上可以测试，但另一些准则需要人为判断来确定是否成功达到了准则要求。
 
-* 支持&#x200B;**优先级和情境式实施：**
-   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+* 支持 **按优先顺序和情境实施：**
+WCAG 2.1准则被赋予优先权，与不遵守关于特定残疾用户群的准则可能产生的影响有关。 这使作者能够就其特殊情况最重要的准则作出知情决定。 此外，还引入了支持 *的辅助功* 能的概念。 这允许作者决定如何最好地使用可能没有完全辅助功能支持的Web技术，或者可能需要用户具有特定的辅助技术和／或浏览器才能从辅助功能中受益。
 
 这些目标对 WCAG 2.1 的结构有显著的影响。
 
 >[!NOTE]
 >
 >创建出满足各种残障人士或各种类型人员的网站几乎是不可能的。WCAG 2.1 旨在帮助 Web 作者尽可能创建能够在特定条件和合理范围内能进行访问的站点。
-
-<!--
->[!NOTE]
->
->If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
--->
 
 ## 结构 {#structure}
 
@@ -115,7 +109,7 @@ WCAG 2.1 包含有四个用于辅助设计的关键原则，有时由首字母�
 * 通过收藏集（技术可能是一般性内容，也可能与特定技术或格式相关 - 例如 HTML、CSS 或客户端脚本），或
 * 通过相关的成功标准。技术可应用于多个成功标准。
 
-每种技术都有一个与其收藏集相关的唯一编号。例如，ARIA 技术之一是&#x200B;*技术 ARIA2：使用“required”属性标识必填字段*。
+每种技术都有一个与其收藏集相关的唯一编号。For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 技术可分为“充分”、“建议”或“失败”：
 
