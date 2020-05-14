@@ -2,9 +2,9 @@
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
 translation-type: tm+mt
-source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1774'
 ht-degree: 84%
 
 ---
@@ -70,7 +70,7 @@ WCAG 2.1 包含有四个用于辅助设计的关键原则，有时由首字母�
 * 每个准则都包含一个或多个&#x200B;**成功标准**。
 * 成功标准将编写为语句，任何给定网页的结果都为 `True` 或 `False`。
 * 成功标准可能包括其中一项/或多种选项，也可能包括例外，即不符合成功标准的情况。
-* 成功标准按照父准则和原则编号，从 1.1.1 - 4.1.1。它们还有一个简短的名称，用于总结标准的目的，以便于参考。例如，成功标准1.1.1是非文本内容。
+* 成功标准按照父准则和原则编号，从 1.1.1 - 4.1.1。它们还有一个简短的名称，用于总结标准的目的，以便于参考。For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * 成功标准包括一系列相关的&#x200B;**技术**（详见下文）。
 
 ## 支持资源 {#supporting-resources}
@@ -92,9 +92,11 @@ WCAG 2.1 包含有四个用于辅助设计的关键原则，有时由首字母�
 
 ### WCAG 2.1 的新增内容 {#what-is-new}
 
-[WCAG 2.1中的新增功能提供](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 有关WCAG 2.0和WCAG 2.1之间增量的重要信息。
+这些准则提供了有关WCAG 2.1中新增功能的信息：
 
-[WCAG 2.0 和 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 节进一步阐明了两者的关系状况。
+* [WCAG 2.1中的新增功能提供](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 有关WCAG 2.0和WCAG 2.1之间增量的重要信息。
+
+* [WCAG 2.0 和 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 节进一步阐明了两者的关系状况。
 
 ### 用于 WCAG 2.1 的技术 {#techniques-for-wcag}
 
