@@ -1,15 +1,18 @@
 ---
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 70%
 
 ---
 
 
-# 样式系统 {#style-system}
+# 样式系统{#style-system}
 
-样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
+样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以是组件的替代可视变体，使组件更灵活。
 
 使用样式系统，您无需为每种样式开发自定义组件，也无需自定义组件对话框来启用此类样式功能。样式系统允许使用更多可重用组件，可以快速轻松地调整这些组件以满足内容作者的需求，而无需进行任何 AEM 后端开发。
 
@@ -19,7 +22,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 同样，内容作者不仅需要能够构建和布置他们的内容，还需要能够选择内容的可视呈现方式。
 
-样式系统针对模板作者和内容作者的要求提供了统一的解决方案：
+样式系统为模板作者和内容作者的要求提供了统一的解决方案：
 
 * 模板作者可以在组件的内容策略中定义样式类。
 * 之后，内容作者在页面上编辑组件时，可以从下拉列表中选择这些类，以便应用相应的样式。
@@ -28,14 +31,20 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 概述 {#overview}
 
-通常，可通过以下形式来使用样式系统。
+使用样式系统通常采用以下形式。
 
 1. Web 设计人员创建组件的不同可视化变量。
+
 1. 向 HTML 开发人员提供组件的 HTML 输出以及要实施的所需可视化变量。
+
 1. HTML 开发人员定义与每个可视化变量对应的 CSS 类，该类将插入到组件的包装元素中。
+
 1. HTML 开发人员为每个可视化变量实施相应的 CSS 代码（和可选 JS 代码），以使它们按照定义的方式显示。
+
 1. AEM 开发人员将提供的 CSS（和可选 JS）放置在客户端库中并对其进行部署。<!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+
 1. AEM 开发人员或模板作者配置页面模板并编辑每个已设置样式的组件的策略，从而添加定义的 CSS 类、为每种样式提供用户友好名称，并指示可组合的样式。
+
 1. 之后，AEM 页面作者可以在页面编辑器中通过组件工具栏的样式菜单选择设计的样式。
 
 请注意，实际上只有最后三个步骤在 AEM 中执行。这意味着，必需的 CSS 和 Javascript 的所有开发工作都可以在没有 AEM 的情况下完成。
@@ -44,13 +53,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 下图说明了样式系统的架构。
 
-![样式系统架构](/help/sites-cloud/authoring/assets/style-system-architecture.png)
+![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
 ## 用法 {#use}
 
-要演示该功能，需要为组件创建样式。以下[作为内容作者](#as-a-content-author)和[作为模板作者](#as-a-template-author)两个部分介绍了如何使用样式系统的功能（假定组件已配置样式）。
+为了演示该功能，我们 [将以](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)WKND对核心组件的 [标题组件](https://www.adobe.com/go/aem_cmp_title_v2) 的实现为例。
 
-如果您希望为自己的组件使用样式系统，请执行以下操作：
+The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+
+如果您希望将样式系统用于您自己的组件，请执行以下操作：
 
 1. 按照[概述](#overview)部分中的所述，将 CSS 作为客户端库进行安装。
 1. 按照[作为模板作者](#as-a-template-author)部分中的所述，配置您要向内容作者提供的 CSS 类。
@@ -58,32 +69,32 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 作为内容作者 {#as-a-content-author}
 
-1. 编辑包含已配置样式的组件的页面。
-1. 选择已配置样式的组件，例如以下示例中的&#x200B;**列表**&#x200B;组件。
+1. 安装WKND项目后，在上导航至WKND的英语母版主页并 `http://<host>:<port>/sites.html/content/wknd/language-masters/en` 编辑页面。
+1. 在页面的 **下方** ，选择一个标题组件
 
-   ![创作样式](/help/sites-cloud/authoring/assets/style-system-author.png)
+   ![作者的样式系统](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
 1. 点按或单击&#x200B;**列表**&#x200B;组件工具栏上的&#x200B;**样式**&#x200B;按钮以打开样式菜单，然后更改该组件的外观。
 
-   ![通过选择创作样式](/help/sites-cloud/authoring/assets/style-system-author-select.png)
+   ![选择样式](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
    >[!NOTE]
    >
-   >在此示例中，**布局**&#x200B;样式（**基块**&#x200B;和&#x200B;**网格**）是互斥的，而&#x200B;**显示**&#x200B;选项（**图像**&#x200B;或&#x200B;**日期**）可以合并。这可以[在模板中由模板作者进行配置](#as-a-template-author)。
+   >在此示例中，Colors **样式** (Black **、Gray** Styles **和GrayStyle**********************)是专用的，而Adobe StyleOptions(、RightJight、、和()可以合并为白色。 这可以[在模板中由模板作者进行配置](#as-a-template-author)。
 
 ### 作为模板作者 {#as-a-template-author}
 
-1. 编辑要为其配置样式的内容页面时，请通过&#x200B;**页面信息 -> 编辑模板**&#x200B;编辑页面的模板。
+1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
 
-   ![编辑模板](/help/sites-cloud/authoring/assets/style-system-template.png)
+   ![编辑模板](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
-1. 通过点按或单击组件的&#x200B;**策略**&#x200B;按钮，编辑要为其配置样式的组件（如&#x200B;**列表**&#x200B;组件）。
+1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
 
-   ![模板组件策略](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
+   ![编辑策略](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
 
 1. 在属性的“样式”选项卡中，您可以看到样式的配置方式。
 
-   ![属性窗口的样式选项卡](/help/sites-cloud/authoring/assets/style-system-template-styles.png)
+   ![编辑属性](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
    * **组名称：**&#x200B;样式可以在样式菜单中分组到一起，内容作者在配置组件样式时将看到该样式菜单。
    * **样式可以合并：**&#x200B;允许一次选择该组中的多个样式。
@@ -93,22 +104,37 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的 CSS 类（以及任何必需的 Javascript）必须部署为客户端库才能正常工作。<!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>配置为组件策略的样式属性的 CSS 类（以及任何必需的 Javascript）必须部署为客户端库才能正常工作。
+
+<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## 设置 {#setup}
 
->[!NOTE]
->
->已完全启用核心组件版本 2 来充分利用样式系统，无需其他配置。
->
->请按照以下步骤来为您自己的自定义组件启用样式系统，或者扩展核心组件版本 1 来使用该功能。
+核心组件版本2及更高版本已完全启用，可充分利用样式系统，无需额外配置。
 
-为了使组件能够与 AEM 的样式系统结合使用并在其设计对话框中显示样式选项卡，组件开发人员必须在产品中通过对组件进行以下设置来包含该选项卡：
+只需执行以下步骤，即为您自己的自定义组件启用样式系统，或在“编 [辑”对话框中启用可选的样式选项卡。](#enable-styles-tab-edit)
+
+### 在“设计”对话框中启用“样式”选项卡 {#enable-styles-tab-design}
+
+要使组件能够与AEM的样式系统一起使用并在其设计对话框中显示样式选项卡，组件开发人员必须在组件中包含具有以下设置的样式选项卡：
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 配置组件后，由页面作者配置的样式将由 AEM 自动插入到装饰元素，AEM 会自动在每个可编辑的组件周围包裹该装饰元素。组件本身不需要执行任何操作即可实现这一点。
+
+### 在“编辑”对话框中启用“样式”选项卡 {#enable-styles-tab-edit}
+
+“编辑”对话框中的可选样式选项卡也可用。 与“设计对话框”选项卡不同，“编辑对话框”中的选项卡对于样式系统的功能而言并非必不可少，但对于内容作者来说，它是设置样式的可选替代界面。
+
+编辑对话框选项卡可以采用与设计对话框选项卡类似的方式：
+
+* `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
+* `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>
+>默认情况下，“编辑”对话框上的“样式”选项卡未启用。
 
 ### 具有元素名称的样式 {#styles-with-element-names}
 
@@ -116,7 +142,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 此属性在 `cq:Component` 节点上设置。例如：
 
-* `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
+* `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
 >[!CAUTION]
 >
