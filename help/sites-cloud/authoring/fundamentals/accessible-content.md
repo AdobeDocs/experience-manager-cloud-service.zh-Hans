@@ -2,10 +2,10 @@
 title: 为Adobe Experience Manager创建可访问的云服务内容（符合WCAG 2.1规范）
 description: 确保残障人士能够访问并使用 Web 内容
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
-ht-degree: 52%
+source-wordcount: '13873'
+ht-degree: 50%
 
 ---
 
@@ -38,14 +38,14 @@ Web [内容辅助功能指](https://www.w3.org/TR/WCAG/)南(WCAG)2.1由World Wid
 
 在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
 
-以下部分介绍 [WCAG 2.1 准则](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)以及[符合](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) A 级和 AA 级的相关成功标准。
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
 >在此文档中，我们将使用：
 >
->* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 
 ## 准则 1：可感知 {#principle-perceivable}
@@ -129,7 +129,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 [准则 1.2 基于时间的媒体：为基于时间的媒体提供替代内容。](https://www.w3.org/TR/WCAG/#time-based-media)
 
-此准则涉及&#x200B;*基于时间*&#x200B;的 Web 内容。这包括用户可以播放的内容（例如，视频、音频和动画内容），这些内容可以是预先录制的，也可以是实时流传输的。
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
 ### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -153,9 +153,9 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* 如果内容是预先录制的不含视频的音频（如播客）：
+* 如果内容是预先录制的音频且没有视频（如播客）:
    * 在紧靠内容之前或之后的位置提供一个链接，指向音频内容的文本记录。这份记录应采用 HTML 页面的形式，其中包含所有讲话内容以及重要的非讲话内容的对等文本，还指出讲话者并描述讲话背景、声音表情及其他任何重要的音频。
-* 如果内容是不含音频的动画或预先录制的不含音频的视频：
+* 如果内容是动画或预先录制的不含音频的视频：
    * 在紧靠内容之前或之后的位置提供一个链接，指向与视频提供的信息对等的文本描述。
    * 或者，指向以常用的音频格式（如 MP3）呈现的对等音频描述。
 
@@ -195,13 +195,13 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 尽量使用隐藏式字幕，因为这样用户可以选择是否观看字幕。
 
-对于隐藏式字幕，需要以适当的格式（如 [SMIL](https://www.w3.org/AudioVideo/)）为对应的视频文件创建并提供同步字幕文件（与此相关的详细操作说明不在本指南的范围之内，但是我们在[更多信息 - 字幕（预先录制）(1.2.2)](#more-information-captions-pre-recorded) 中提供了一些教程的链接）。确保在视频播放器中提供备注或启用字幕功能，以便让用户知道视频中提供了字幕。
+For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Prerecorded) (1.2.2)](#more-information-captions-prerecorded). 确保在视频播放器中提供备注或启用字幕功能，以便让用户知道视频中提供了字幕。
 
 如果必须使用开放式字幕，应将文本嵌入到视频轨道中。可以使用能够将字幕覆盖到视频上的视频编辑应用程序来完成嵌入。
 
-#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [了解成功标准 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)：
+* [了解成功标准 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [如何达到成功标准 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -235,9 +235,12 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [了解成功标准 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)：
+* [了解成功标准 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [如何达到成功标准 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### 字幕（实时）(1.2.4)  {#captions-live}
 
@@ -247,7 +250,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 用途 - 字幕（实时）(1.2.4) {#purpose-captions-live}
 
-该成功标准与[字幕（预先录制）](#captions-pre-recorded)的标准完全相同，因为其用途在于解决耳聋或听力欠佳的用户遇到的辅助功能问题，两者的不同之处在于该成功标准需要处理网络直播等实时演示。
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### 如何达到标准 - 字幕（实时）(1.2.4) {#how-to-meet-captions-live}
 
@@ -359,44 +362,46 @@ AEM使用适当的HTML元素可轻松构建语义上有意义的Web内容。 可
       >尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
 
 
-* **复杂数据表**：在某些情况下，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。例如，在下表中，标题和 ID 是相匹配的，以便为辅助型技术用户建立程序化关联。
+* **复杂数据表**：在某些情况下，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。
 
    >[!NOTE]
    >
    >现成的安装中没有 id 属性。可以通过在 RTE 中配置 HTML 规则和序列化器来启用该属性。
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   例如，在下表中，标题和 ID 是相匹配的，以便为辅助型技术用户建立程序化关联。
 
-要在 AEM 中实现此操作，必须使用源代码编辑模式直接添加标记。
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->该功能并非在标准安装中直接可用。它需要配置 RTE、HTML 规则和序列化器。
+   要在 AEM 中实现此操作，必须使用源代码编辑模式直接添加标记。
+
+   >[!NOTE]
+   >
+   >该功能并非在标准安装中直接可用。它需要配置 RTE、HTML 规则和序列化器。
 
 #### 更多信息 - 信息和关系 (1.3.1) {#more-information-info-and-relationships}
 
@@ -491,9 +496,6 @@ AEM使用适当的HTML元素可轻松构建语义上有意义的Web内容。 可
 * [了解成功标准 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [如何达到成功标准 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### 音频控制(1.4.2)  {#audio-control}
 
 * 成功标准 1.4.2
@@ -558,7 +560,7 @@ AEM使用适当的HTML元素可轻松构建语义上有意义的Web内容。 可
 
 >[!NOTE]
 >
->要帮助转换到其他设备：
+>以下站点可以帮助您转换到其他单位：
 >
 >* [Px到Em计算器- Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [字体大小转换： pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -870,7 +872,7 @@ John Smith’s publications
 >
 >以上代码片段仅用于说明目的，建议使用&#x200B;**图像**&#x200B;组件。
 
-虽然提供无需附加上下文即可标识链接目的的链接文本是一种可取的方法，但该方法并不认为始终可行。与上下文无关的链接可用于以下情况，其 HTML 示例详见：[如何达到成功标准 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)。
+虽然提供无需附加上下文即可标识链接目的的链接文本是可取的，但是，这并不总是可行的。 与上下文无关的链接可用于以下情况，其 HTML 示例详见：[如何达到成功标准 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)。
 
 * 当链接文本是由紧密相关的链接组成的列表的一部分时，以及当链接周围的列表项提供了足够的上下文时。
 * 当可以通过&#x200B;*之前*（而非之后）的段落文本清晰识别链接目的时。
