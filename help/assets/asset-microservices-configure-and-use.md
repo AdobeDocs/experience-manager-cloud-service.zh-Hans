@@ -3,7 +3,10 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 3%
 
 ---
 
@@ -96,7 +99,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 #### MIME类型包含规则 {#mime-type-inclusion-rules}
 
-处理具有特定MIME类型的资产时，首先会根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产生成此特定再现（“黑名单”）。
+当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产生成此特定再现（“黑名单”）。
 
 否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版（“白名单”）。
 
@@ -171,3 +174,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 > 与AEM的内部部署和托管服务部署不同，OSGi Web控制台在云服务部署中不直接可用。
 
 有关在后处理工作流中可以使用哪个标准工作流步骤的详细信息，请参 [阅开发人员参考中的后处理工作流中](developer-reference-material-apis.md#post-processing-workflows-steps) 的工作流步骤。
+
+## 最佳实践和限制 {#best-practices-limitations-tips}
+
+* 设计工作流时，请考虑您对所有类型再现的需求。 如果您不认为将来需要再现，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 长期使用后，不需要的再现可能占用大量存储空间 [!DNL Experience Manager]。 对于单个资产，您可以从用户界面手动删除演绎版。 对于多个资产，您可以自定 [!DNL Experience Manager] 义删除特定演绎版，也可以删除资产，然后再次上传这些资产。
