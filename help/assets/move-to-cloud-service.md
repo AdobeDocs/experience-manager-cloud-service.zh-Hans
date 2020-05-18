@@ -3,19 +3,21 @@ title: 从Adobe Experience Manager 6.x迁移到云服务
 description: 从Adobe Experience Manager 6.x迁移到云服务
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+workflow-type: tm+mt
+source-wordcount: '28'
+ht-degree: 0%
 
 ---
 
 
-# 将Adobe Experience Manager资产作为云服务移至 {#move-to-assets-cloud-service}
+# Move to Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}
 
 <!-- About the need to move from previous AEM deployment to a cloud service deployment. And how does Adobe help do it OOTB?
--->
 
-## 关于迁移工具 {#migration-tool}
 
-<!-- 
+## About the migration tool {#migration-tool}
+
 Link back to information about the tool in the Experience Manager as a Cloud Service docs if the tool works the same for Sites and Assets. Document the Assets-specific information here.
 
 * What is the migration tool called? Is there a branding term for it?
@@ -23,23 +25,21 @@ Link back to information about the tool in the Experience Manager as a Cloud Ser
 * Before migrating using the tool, is any prepping required?
 * See CQ-4271901
 
--->
 
-迁移工具可帮助您实现以下目标：
+The migration tool helps you achieve the following:
 
-* 将现有的工作流模型转换为可与Assets Compute service一起使用的处理配置文件。
-* 从工作流模型中删除不支持的步骤。
-* 禁用工作流启动程序。
-* 在用户确认／验证后，在现有源代码中合并配置。
+* Convert the existing workflow models to processing profiles that work with the Assets Compute Service.
+* Remove unsupported steps from the workflow models.
+* Disable workflow launchers.
+* Merge the configurations, after user confirmation/validation, in the existing source code.
 
-迁移工具在Maven模块中创建处理配置文件，用户可以通过以下两种方式使用这些配置文件：
+The migration tool creates processing profiles in a Maven module that users can use in the following two ways:
 
-* 合并到其现有项目之一。
-* 将模块添加为新的子模块。
+* Merge into one of their existing projects.
+* Add the module as new sub-module.
 
-迁移工具提供其所做更改的报告以及有关更改的信息。
+The migration tool provides a report of the changes it made and information about the changes.
 
-<!--  
 
 What is the output of the tool, besides migrated content.
 
@@ -50,6 +50,7 @@ Give details about reports and logs of the tool.
 * Location of logs. How to read the logs.
 * What common errors to look for. Troubleshooting for these errors.
 
--->
 
-## 将内容迁移到新部署 {#content-migration-across-deployments}
+## Migrate content to a new deployment {#content-migration-across-deployments}
+
+-->
