@@ -2,10 +2,10 @@
 title: 为Adobe Experience Manager创建可访问的云服务内容（符合WCAG 2.1规范）
 description: 确保残障人士能够访问并使用 Web 内容
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
 workflow-type: tm+mt
-source-wordcount: '13873'
-ht-degree: 50%
+source-wordcount: '13935'
+ht-degree: 49%
 
 ---
 
@@ -70,14 +70,18 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 #### 如何达到标准 - 非文本内容 (1.1.1) {#how-to-meet-non-text-content}
 
-对于静态图形，基本的要求是为图形提供对等的替换文本。这可以在&#x200B;**替换文本**&#x200B;字段中完成：
+对于静态图形，基本的要求是为图形提供对等的替换文本。这可以在替代文本 **字段中完成** ; 例如，核心组件 **[图像](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html)**。
 
 >[!NOTE]
 >
->一些现成的组件（如&#x200B;**轮播**&#x200B;和&#x200B;**幻灯片**&#x200B;放映）不提供向图像添加替代文本描述的方法。因此，在为 AEM 实例实施这些版本时，开发团队需要将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
+>某些现成的核心组件(如传送 **[)不提供替代文本](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**字段**，以向单个图像添加替代文本说明，但整个组件有“标&#x200B;**签**”字段(****[](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** “辅助功能”选项卡)。
+>
+>因此，在为 AEM 实例实施这些版本时，开发团队需要将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
 
 <!--
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
 默认情况下，AEM 要求填写&#x200B;**替换文本**&#x200B;字段。If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
@@ -1187,19 +1191,21 @@ To add the span element, with an appropriate language, you can manually edit you
 
 在提升界面易用性的最佳实践中，一种基本的做法是提供说明来帮助用户完成表单。这种做法对于患有视觉障碍或认知障碍的用户而言特别有用，否则这类用户可能难以理解表单的布局以及要在特定的表单字段中提供的数据种类。
 
-在 AEM 中，当向页面添加表单组件（如&#x200B;**文本字段**）时，也会添加默认标签。此默认标题视组件类型而定，您也可以在该字段编辑对话框的&#x200B;**标题与文本**&#x200B;选项卡中添加自己的标题。应务必确保标签能够帮助用户理解与每个表单组件相关的数据。
+##### 表单
+
+In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. 此默认标题视组件类型而定，您也可以在该字段编辑对话框的&#x200B;**标题与文本**&#x200B;选项卡中添加自己的标题。应务必确保标签能够帮助用户理解与每个表单组件相关的数据。
 
 此&#x200B;**标题**&#x200B;字段必须用于字段元素，因为该字段提供了适用于辅助型技术的标签。只在字段旁边用文本编写一个标签是不够的。
 
 对于某些形式的组件而言，还可以使用&#x200B;**隐藏标题**&#x200B;复选框来隐藏显示的标签。通过这种方式隐藏的标签仍可用于辅助型技术，但不会显示在屏幕上。尽管在某些情况下这不失为一种好方法，但是通常最好尽可能保留可视的标签，因为有些用户可能只查看屏幕上很小的一部分（每次一个字段），并且需要借助标签来准确地识别字段。
 
-#### 图像按钮 {#image-buttons}
+###### 图像按钮 {#image-buttons}
 
-使用了图像按钮（如&#x200B;**图像按钮**&#x200B;组件）后，编辑对话框&#x200B;**标题与文本**&#x200B;选项卡中的&#x200B;**标题**&#x200B;字段实际上会为图像提供替换文本，而不是提供标签。因此，在以下示例中，包含文本 `Submit` 的图像，其替代文本就是 `Submit`，该文本是使用编辑对话框中的&#x200B;**标题**&#x200B;字段添加的。
+Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. 因此，在以下示例中，包含文本 `Submit` 的图像，其替代文本就是 `Submit`，该文本是使用编辑对话框中的&#x200B;**标题**&#x200B;字段添加的。
 
-#### 表单字段组 {#groups-of-form-fields}
+###### 表单字段组 {#groups-of-form-fields}
 
-如果存在一组相关控件(如 **Radio Group**)，则可能需要该组以及单个控件的标题。 在AEM中添加一组单选按钮时，“标题 **** ”字段会提供此组标题，而单个标题会在创建单选按钮(项目&#x200B;****)时指定。
+In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. 在AEM中添加一组单选按钮时，“标题 **** ”字段会提供此组标题，而单个标题会在创建单选按钮(项目&#x200B;****)时指定。
 
 但是，组标题和单选按钮本身之间并没有编程关联。模板编辑器需要将标题包装在必需的 `fieldset` 和 `legend` 标记中，以便创建此关联，而且该操作只能通过编辑页面源代码来完成。或者，系统管理员也可以添加对这些元素的支持，以使它们显示在&#x200B;**字段属性**&#x200B;对话框中（请参阅添加对其他 HTML 元素和属性的支持）。
 
@@ -1207,7 +1213,7 @@ To add the span element, with an appropriate language, you can manually edit you
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-#### 有关表单的其他考虑事项 {#additional-considerations-for-forms}
+###### 有关表单的其他考虑事项 {#additional-considerations-for-forms}
 
 如果必须按照特定的格式输入数据，应在标签文本中予以清楚说明。例如，如果必须以 `DD-MM-YYYY` 格式输入日期，应在标签中特别指明这一点。这意味着当屏幕阅读器用户遇到此类字段时，阅读器会自动将标签以及与格式相关的其他信息一并读出。
 
