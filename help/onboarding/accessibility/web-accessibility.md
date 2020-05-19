@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务和 Web 辅助功能准则
-seo-title: Adobe Experience Manager 云服务和 Web 辅助功能准则
+description: Adobe Experience Manager云服务简介和Web辅助功能指南
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 87%
+source-wordcount: '385'
+ht-degree: 83%
 
 ---
 
