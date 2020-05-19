@@ -2,9 +2,9 @@
 title: 为Adobe Experience Manager创建可访问的云服务内容（符合WCAG 2.1规范）
 description: 确保残障人士能够访问并使用 Web 内容
 translation-type: tm+mt
-source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
+source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
 workflow-type: tm+mt
-source-wordcount: '13935'
+source-wordcount: '13936'
 ht-degree: 49%
 
 ---
@@ -535,7 +535,7 @@ AEM使用适当的HTML元素可轻松构建语义上有意义的Web内容。 可
    * 商标标志：文本是徽标或品牌名称的一部分，对于此类文本，没有最低对比度要求。
    >[!NOTE]
    >
-   >请参 [阅了解非文本对比度](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) ，以进一步确保读者了解非文本元素（包括图标、界面元素等）的附加要求。
+   >请参 [阅了解非文本对比度](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) ，以进一步确保内容作者了解非文本元素（包括图标、界面元素等）的附加要求。
 
 #### 用途 - 对比度（最小）(1.4.3) {#purpose-contrast-minimum}
 
