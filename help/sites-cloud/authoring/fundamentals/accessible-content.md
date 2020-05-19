@@ -1,10 +1,10 @@
 ---
 title: 为Adobe Experience Manager创建可访问的云服务内容（符合WCAG 2.1规范）
-description: 确保残障人士能够访问并使用 Web 内容
+description: 将AEM用作云服务，帮助残障人士访问和使用Web内容
 translation-type: tm+mt
-source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '13936'
+source-wordcount: '13943'
 ht-degree: 49%
 
 ---
