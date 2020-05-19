@@ -2,9 +2,9 @@
 title: 为Adobe Experience Manager创建可访问的云服务内容（符合WCAG 2.1规范）
 description: 将AEM用作云服务，帮助残障人士访问和使用Web内容
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
 workflow-type: tm+mt
-source-wordcount: '13943'
+source-wordcount: '13955'
 ht-degree: 49%
 
 ---
@@ -1160,7 +1160,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 #### 用途——错误标识(3.3.1) {#purpose-error-identification}
 
-此成功标准旨在确保用户知道发生了错误，并可确定错误原因。 错误消息应尽可能具体。 如果表单提交失败，则重新显示表单并指示错误中的字段不足以让某些用户感知错误已发生。 例如，屏幕阅读器用户在遇到某个指示器之前不会知道存在错误。 他们可能会在遇到错误指示器之前完全放弃表单，认为页面根本无法正常工作。 根据WCAG 2.0中的定义，“输入错误”是用户提供的不接受的信息。 这包括：
+此成功标准旨在确保用户知道发生了错误，并可确定错误原因。 错误消息应尽可能具体。 如果表单提交失败，则重新显示表单并指示错误中的字段不足以让某些用户感知错误已发生。 例如，屏幕阅读器用户在遇到某个指示器之前不会知道存在错误。 他们可能会在遇到错误指示器之前完全放弃表单，认为页面根本无法正常工作。 根据WCAG中的定义，输 [入错误](https://www.w3.org/TR/WCAG/#dfn-input-error) 是用户提供的不接受的信息。 这包括：
 
 网页要求但用户忽略的信息，或者用户提供但不属于所需数据格式或允许值的信息。
 例如：
@@ -1241,7 +1241,7 @@ However, there is no programmatic association between the group title and the ra
 
 #### 用途——错误建议(3.3.3) {#purpose-error-suggestion}
 
-此成功标准旨在确保用户在可能的情况下收到更正输入错误的适当建议。 “输入错误”的WCAG 2.0定义表示系统“不接受用户提供的信息”。 未被接受的信息的一些示例包括用户需要但省略的信息以及用户提供但不属于所需数据格式或允许值的信息。
+此成功标准旨在确保用户在可能的情况下收到更正输入错误的适当建议。 输入错误的 [WCAG定义](https://www.w3.org/TR/WCAG/#dfn-input-error) 说，它是系统“不接受用户提供的信息”。 未被接受的信息的一些示例包括用户需要但省略的信息以及用户提供但不属于所需数据格式或允许值的信息。
 
 成功标准3.3.1提供错误通知。 然而，认知有限的人可能很难理解如何纠正错误。 患有视觉障碍的人可能无法准确地找到纠正错误的方法。 如果表单提交失败，用户可能会放弃表单，因为他们可能不确定如何更正错误，即使他们知道错误已发生。
 
