@@ -2,10 +2,10 @@
 title: 管理环境-云服务
 description: 管理环境-云服务
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 15%
+source-wordcount: '629'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 15%
    ![](assets/no-environment-2.png)
 
 
-   当 **环境** 中有零环境时 **,“添加项目”选** 项也将在环境卡上可用。
+   当 **环境** 中有零个项目时， **环境卡** 上也提供“添加环境”选项。
 
    ![](assets/no-environments.png)
 
@@ -65,7 +65,6 @@ ht-degree: 15%
    >[!NOTE]
    >如果尚未设置非生产管道，“概述”屏 *幕将显示* 卡，您可以从中创建非生产管道的位置。
 
-
 ## 更新环境 {#updating-dev-environment}
 
 舞台和生产环境的更新由Adobe自动管理。
@@ -73,11 +72,12 @@ ht-degree: 15%
 开发环境的更新由项目的用户管理。 当环境未运行最新的公开可用AEM版本时，主屏幕上的环境卡状态将显示“可 **用更新”**。
 
 ![](assets/manage-environments2.png)
-)
 
-显示此状态时，如果单 **击“环境卡** ”和“管理”菜单中的“详细信息” **，则“更新** ”选项将从下拉菜单中 ******** 可用。
 
-![](assets/add-environment4.png)
+更 **新选** 项可从环境卡的下拉菜 **单中获** 得。
+如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
+
+![](assets/update-environment2.png)
 
 从下拉菜单中选择此选项将允许部署管理器将与此环境关联的管道更新到最新版本，然后执行该管道。
 
@@ -87,10 +87,19 @@ ht-degree: 15%
 
 具有必要权限的用户将能够删除开发环境。
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+“ **删除** ”选项可从环境卡的下拉菜 **单中** 使用。
+如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 此功能不适用于为生产目的而设置的常规环境中的生产／阶段项目集。 但是，该功能可用于沙箱环境中的生产／阶段项目。
+
+## 访问开发人员控制台 {#accessing-developer-console}
+
+从 **环境** 卡的下拉菜单中选择开 **发人员** 控制台。
+
+![](assets/dev-console1.png)
+
+如果单击环境卡中的“详细 **信息** ”，还可以从“管理”按钮中选 **择** 此选项 **** 。
 
