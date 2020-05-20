@@ -2,9 +2,9 @@
 title: 管理环境-云服务
 description: 管理环境-云服务
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 15%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 15%
 
    ![](assets/no-environments.png)
 
-   >[!注意)
+   >[!NOTE]
    >将 **基于缺少权** 限或合同中可能包含的内容禁用“添加环境”选项。
 
 1. 出现 **“添加环境** ”对话框。用户需要提交详细信息，如“环境类型 **”和“环境名称********** ”和“环境描述”（具体取决于用户在特定租户可用的范围内创建环境时的目标）。
