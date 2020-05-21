@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 沙箱项目包括站点和资产，并自动填充Git分支，该分支包括示例代码、开发环境和非生产渠道。
 
-有关项目类型的详细信息，请参 [阅了解项目和项目类型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)。
+请参阅了 [解项目和项目类型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) ，进一步了解项目类型。
 
 ### 沙箱项目的属性 {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ ht-degree: 0%
 
 1. 导航到开发 **人员控制台**。
 请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
-1. 单击“休眠”，如下图所示：
-1. 单击 **Hibernate** 以确认该步骤
-1. 休眠成功后，您将看到以下屏幕。
+
+1. 单击“休眠”，如下图所示
+
+   ![](assets/hibernate-1.png)
+1. 单击 **Hibernate** 以确认该步骤。
+
+   ![](assets/hibernate-2.png)
+
+1. 休眠成功后，您将在“开发人员控制台”屏幕中看到环境的休眠过 **程完成通知** 。
+
+   ![](assets/hibernate-4.png)
 
 #### 访问休眠环境 {#accessing-hibernated-environment}
 
@@ -134,7 +142,7 @@ ht-degree: 0%
 更新选项可从环境卡上的下拉菜 **单** 。 如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
 
 >[!NOTE]
->必须 *配置部署到所关注开发环境* 的非生产管道，以便启动手动更新管道。
+>必 *须配置部署到所关注开发环境* 的非生产管道，以便启动手动更新管道。
 
 >[!NOTE]
 >必 *须配置生* 产管道，以便启动手动更新管道至“生产+阶段”环境集。
