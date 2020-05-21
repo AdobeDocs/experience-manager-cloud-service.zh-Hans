@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: eb874176c71d7f3d03d953f7bae4cb3db2ffb3b9
+source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 沙箱项目是AEM Cloud Service中可用的两种项目类型之一，另一种是常规项目。
 
-通常，创建沙箱是为了满足培训、运行演示、启用或POC的目的。 它们不能载着实时交通。
+通常，创建沙箱是为了满足培训、运行演示、启用或概念验证(POC)的目的。 它们不能载着实时交通。
 
-沙箱项目包括站点和资产，将自动填充包含示例代码、开发环境和非生产渠道的Git分支。
+沙箱项目包括站点和资产，并自动填充Git分支，该分支包括示例代码、开发环境和非生产渠道。
 
 有关项目类型的详细信息，请参 [阅了解项目和项目类型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)。
 
@@ -31,94 +31,116 @@ ht-degree: 0%
    * 开发环境的创造
    * 创建非生产管道部署到开发环境(主分支部署到开发环境)
 
-1. **解决方案包括：** 沙箱项目包括站点和资源。
+1. **解决方案：** 沙箱项目包括AEM Sites和资产。
 
 1. **AEM更新：** AEM更新可手动应用于沙箱项目中的环境，且不会自动推送。
 
-1. **休眠：** 如果在某段时间内未检测到环境，沙箱项目中的活动将自动休眠。 冬眠环境可以手动解除冬眠。
+1. **休眠：** 如果在某段时间内未检测到环境，沙箱项目中的活动会自动休眠。 冬眠环境可以手动解除冬眠。
 
 ### 创建沙箱项目 {#creating-sandbox-program}
 
-项目创建向导将要求用户提交详细信息。
+项目创建向导允许您创建沙箱项目。
 
-有关如何创建沙箱项目的信息，请参 [阅创建沙箱项目](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)。
+要了解如何创建沙箱项目，请参 [阅创建沙箱项目](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)。
 
 ### 创建沙箱环境 {#creating-sandbox-environments}
 
-在创建项目时，沙箱项目将以自动创建的方式交付开发环境。 默认情况下，开发环境包含作者层和发布层。
+沙箱项目在创建项目时以自动创建的方式交付开发环境。 默认情况下，开发环境包括作者层和发布层。
 
 当用户准备好设置生产管道时，可以手动将生产级环境集添加到沙箱项目。
 
-有关如何手动创建环境的信息，请参阅添 [加环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)。
+要了解如何手动创建环境，请参阅添 [加环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) ，了解详细信息。
 
 ### 删除沙箱环境  {#deleting-sandbox-environments}
 
-具有必要权限的用户将能够删除开发或生产／阶段环境/集。
+具有必要权限的用户可以删除开发或生产／阶段环境或集。
 
-有关如何删除环境的信息，请参阅删 [除环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment)。
+要删除环境，请参阅删 [除环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) ，了解详细信息。
 
 
 ## 冬眠和冬眠沙箱环境 {#hibernating-introduction}
 
-沙箱项目 *环境在一段时* 间不活动后将进入休眠模式。
+如果在某一时间段内 *未检测到项目* ，沙箱活动环境将进入休眠模式。
 
 >[!NOTE]
->休眠是沙箱项目环境特有的。 普通项目环境不会冬眠。
+>休眠是沙箱项目环境特有的。 常规项目环境不休眠。
 
 ### 冬眠 {#hibernation-introduction}
 
-休眠可以自动或手动进行。 环境可能需要几分钟才能冬眠。 数据在休眠期间保留。
+休眠可以自动或手动进行。 沙箱项目环境进入休眠模式可能需要几分钟 *时间*。 数据在休眠期间保留。
 
 冬眠分为：
 
-* **自动沙箱** 项目环境在8小时不活动后自动休眠，这意味着作者或发布服务都不会收到请求。
+* **自动沙箱** 项目环境在8小时不活动后自动休眠，这意味着作者和发布服务都不会收到请求。
 
-* **手动**: 客户可以手动为沙箱项目环境休眠，但无需这样做，因为休眠将在一段不活动期后自动发生。
+* **手动**: 作为用户，您可以手动为沙箱项目环境休眠，但无需这样做，因为休眠将在特定时间段（8小时）不活动后自动发生。
 
 #### 使用手动休眠 {#using-manual-hibernation}
 
+您可以通过以下两种不同方式从开发人员控制台手动休眠沙箱项目:
 
-手动休眠可以从开发人员控制台中的两个屏幕中的任何一个完成。
+* 环境详细信息屏幕
+* 环境列表屏幕
 
-请按照以下步骤手动为项目环境休眠：
+请按照以下步骤手动为沙箱项目环境休眠：
 
-1. 导航到开发人员控制台。
-1. 单击“休眠”
-1. 单击“休眠”进行确认。
+1. 导航到开发 **人员控制台**。
+请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
+1. 单击“休眠”，如下图所示：
+1. 单击 **Hibernate** 以确认该步骤
 1. 休眠成功后，您将看到以下屏幕。
-1. 在环境列表屏幕（如下图所示）上，单击环境详细信息屏幕中的环境链接即可访问该屏幕)，可以在预期环境的行中单击Hibernate按钮。 随后将显示确认屏幕。
 
-### 解除休眠 {#de-hibernation-introduction}
-
->[!IMPORTANT]
->对开发人员控制台的访问权限由管理控制台中的“云管理者——开发人员角色”定义。 通过该权限，用户可以解除环境的休眠。
-
-### 访问休眠环境 {#accessing-hibernated-environment}
+#### 访问休眠环境 {#accessing-hibernated-environment}
 
 当针对休眠环境的作者层或发布层发出任何浏览器请求时，用户将遇到描述该环境的休眠状态的登陆页，如下所示：
 
-具有“云管理器——开发人员角色”的用户可以单击“开发人员控制台”按钮以访问开发人员控制台并解除环境。 有关设置角色的信息，请参阅云管理器文档。
+具有云管理 **器——开发人员角色的用户** ，可单击“开发人员控制台”按钮以访问开发人员控制台并解除环境。 有关设置角色的信息，请参阅云管理器文档。
 
 如果组织中的用户无法单击“开发人员控制台”按钮以进入开发人员控制台，则可能需要为他们提供“云管理器——开发人员角色”。
 
 
+### 解除休眠 {#de-hibernation-introduction}
+
+1. 导航到开发 **人员控制台**。
+请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
+
+   >[!IMPORTANT]
+   >对开发人员控制台的访问权限由 **Admin Console中的云管理器** -开发人 **员角色定义**。 具有开发人员角色权限的用户可以解除沙箱项目环境的休眠。
+
+1. 单击“ **取消休眠**”，如下图所示：
+
+   ![](assets/de-hibernation-img1.png)
+
+1. 单击 **“取消** Hibernate”以确认该步骤。
+
+   ![](assets/de-hibernation-img2.png)
+
+1. 您将收到解除休眠进程已启动的通知，并将使用进度进行更新。
+
+   ![](assets/de-hibernation-img3.png)
+
+1. 进程完成后，沙箱项目环境将再次处于活动状态。
+
+   ![](assets/de-hibernation-img4.png)
 
 
 ## 对沙箱环境的AEM更新 {#aem-updates-sandbox}
 
 
-请参阅 [AEM版本更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates)。
+有关更多 [详细信息，请参](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) 阅AEM版本更新。
 
-用户可以在沙箱项目中手动将AEM更新应用到环境（请参阅下图）。 当显示的状态为“可用更新”时，可以执行此操作。 “更新”选项将从环境卡的下拉菜单中可用。 也可以从环境屏幕的“管理”菜单中选择它。
+用户可以在沙箱项目中手动将AEM更新应用到环境（请参阅下图）。 当显示的状态为“可用更新”时， **可以执行此操作**。
 
->[!NOTE]
->必须配置部署到所关注开发环境的非生产管线，以便启动手动更新管线。
-
->[!NOTE]
->必须配置生产管线，以便启动手动更新管线至“生产+阶段”环境集。
+更新选项可从环境卡上的下拉菜 **单** 。 如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
 
 >[!NOTE]
->手动更新生产或阶段环境将自动更新另一个。 生产+阶段环境集必须位于同一AEM版本中。
+>必须 *配置部署到所关注开发环境* 的非生产管道，以便启动手动更新管道。
+
+>[!NOTE]
+>必 *须配置生* 产管道，以便启动手动更新管道至“生产+阶段”环境集。
+
+>[!NOTE]
+>手动更新生产 *环境* 或 *阶段* 将自动更新其他产品。 生产+阶段环境集必须位于同一AEM版本中。
 
 
 
