@@ -2,7 +2,7 @@
 title: 创建项目-云服务
 description: 创建项目-云服务
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,13 +32,13 @@ ht-degree: 0%
 
 ![](assets/create-program-add.png)
 
-## 创建沙箱项目 {#create-demo-program}
+## 创建沙箱项目 {#create-sandbox-program}
 
 请按照以下步骤创建沙箱项目:
 
 1. 从创建项目向导中，选 **择设置演示**。 用户在选择创建之前提交项目 **名称**。
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. 用户将在登陆页上看到新的沙箱项目卡，并可以将鼠标悬停在沙箱卡上，选择云管理器图标，以导航到云管理器概述页面。 卡将通知用户新创建的沙箱项目的自动设置状态。 用户将看到进度。
 
