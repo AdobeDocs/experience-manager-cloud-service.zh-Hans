@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 项目创建向导允许您创建沙箱项目。
 
-要了解如何创建沙箱项目，请参 [阅创建沙箱项目](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)。
+要了解如何创建沙箱项目，请参阅。
 
 ### 创建沙箱环境 {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 要了解如何手动创建环境，请参阅添 [加环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) ，了解详细信息。
 
-### 删除沙箱环境  {#deleting-sandbox-environments}
+### 删除沙箱环境 {#deleting-sandbox-environments}
 
 具有必要权限的用户可以删除开发或生产／阶段环境或集。
 
@@ -87,9 +87,16 @@ ht-degree: 0%
 1. 导航到开发 **人员控制台**。
 请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
 
-1. 单击“休眠”，如下图所示
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   或者，
+
+   从 **环境** 列表中单击Hibernate，如下图所示：
+
+   ![](assets/hibernate-1b.png)
+
 1. 单击 **Hibernate** 以确认该步骤。
 
    ![](assets/hibernate-2.png)
@@ -97,14 +104,6 @@ ht-degree: 0%
 1. 休眠成功后，您将在“开发人员控制台”屏幕中看到环境的休眠过 **程完成通知** 。
 
    ![](assets/hibernate-4.png)
-
-#### 访问休眠环境 {#accessing-hibernated-environment}
-
-当针对休眠环境的作者层或发布层发出任何浏览器请求时，用户将遇到描述该环境的休眠状态的登陆页，如下所示：
-
-具有云管理 **器——开发人员角色的用户** ，可单击“开发人员控制台”按钮以访问开发人员控制台并解除环境。 有关设置角色的信息，请参阅云管理器文档。
-
-如果组织中的用户无法单击“开发人员控制台”按钮以进入开发人员控制台，则可能需要为他们提供“云管理器——开发人员角色”。
 
 
 ### 解除休眠 {#de-hibernation-introduction}
@@ -119,6 +118,13 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img1.png)
 
+   或者，
+
+   单击 **环境** 列 **表中的** De-hibernate，如下图所示：
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. 单击 **“取消** Hibernate”以确认该步骤。
 
    ![](assets/de-hibernation-img2.png)
@@ -131,18 +137,28 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img4.png)
 
+#### 访问休眠环境 {#accessing-hibernated-environment}
+
+当针对休眠环境的作者层或发布层发出任何浏览器请求时，用户将遇到一个描述该环境的休眠状态的登陆页，如下图所示：
+
+![](assets/de-hibernation-img5.png)
+
+
+具有云管理 **器——开发人员角色的用户** ，可以单 **击开发人员控制台** 以访问开发人员控制台，并解除环境的休眠。
+
+>[!NOTE]
+> Cloud Manager中的许多功能需要特定权限才能运行。 要进一步了解控制特定功能可用性的用户的角色，请参阅添[加用户和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)。
 
 ## 对沙箱环境的AEM更新 {#aem-updates-sandbox}
 
-
 有关更多 [详细信息，请参](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) 阅AEM版本更新。
 
-用户可以在沙箱项目中手动将AEM更新应用到环境（请参阅下图）。 当显示的状态为“可用更新”时， **可以执行此操作**。
+用户可以在沙箱项目中手动将AEM更新应用到环境。
 
-更新选项可从环境卡上的下拉菜 **单** 。 如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
+请参阅 [更新环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) ，了解如何更新环境。
 
 >[!NOTE]
->必 *须配置部署到所关注开发环境* 的非生产管道，以便启动手动更新管道。
+>必须 *配置部署到所关注开发环境* 的非生产管道，以便启动手动更新管道。
 
 >[!NOTE]
 >必 *须配置生* 产管道，以便启动手动更新管道至“生产+阶段”环境集。
