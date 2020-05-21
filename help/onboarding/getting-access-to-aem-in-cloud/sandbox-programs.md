@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 通常，创建沙箱是为了满足培训、运行演示、启用或概念验证(POC)的目的。 它们不能载着实时交通。
 
-沙箱项目包括站点和资产，并自动填充Git分支，该分支包括示例代码、开发环境和非生产渠道。
+沙箱项目包括站点和资产，并自动填充Git存储库、开发环境和非生产渠道。  Git存储库会填充基于AEM Project原型的示例项目。
 
 请参阅了 [解项目和项目类型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) ，进一步了解项目类型。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 项目创建向导允许您创建沙箱项目。
 
-要了解如何创建沙箱项目，请参阅。
+要了解如何创建沙箱项目，请参阅创 [建沙箱项目以获取更](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) 多详细信息。
 
 ### 创建沙箱环境 {#creating-sandbox-environments}
 
@@ -74,6 +74,9 @@ ht-degree: 0%
 * **自动沙箱** 项目环境在8小时不活动后自动休眠，这意味着作者和发布服务都不会收到请求。
 
 * **手动**: 作为用户，您可以手动为沙箱项目环境休眠，但无需这样做，因为休眠将在特定时间段（8小时）不活动后自动发生。
+
+>[!CAUTION]
+>在最新版本中，链接到Cloud Manager的开发人员控制台将不允许您休眠沙箱项目环境。
 
 #### 使用手动休眠 {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ ht-degree: 0%
 >[!NOTE]
 > Cloud Manager中的许多功能需要特定权限才能运行。 要进一步了解控制特定功能可用性的用户的角色，请参阅添[加用户和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)。
 
+#### 重要注意事项 {#important-considerations}
+
+与冬眠和脱冬眠环境相关的主要考虑事项很少：
+
+* 用户可以使用管道将自定义代码部署到休眠环境。 环境将保持休眠状态，新代码在解除休眠后将显示在环境中。
+
+* AEM升级可应用于冬眠环境，客户可以从Cloud Manager手动触发。 环境将保持冬眠状态，新版本在冬眠解除后将显示在环境中。
+
+>[!NOTE]
+>目前，云管理器不指示环境是否已休眠。
+
 ## 对沙箱环境的AEM更新 {#aem-updates-sandbox}
 
 有关更多 [详细信息，请参](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) 阅AEM版本更新。
@@ -158,13 +172,9 @@ ht-degree: 0%
 请参阅 [更新环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) ，了解如何更新环境。
 
 >[!NOTE]
->必须 *配置部署到所关注开发环境* 的非生产管道，以便启动手动更新管道。
+>* 手动更新只能在目标环境具有正确配置的管道时运行。
+>* 手动更新生产 *环境* 或 *阶段* 将自动更新其它更新。 生产+阶段环境集必须位于同一AEM版本中。
 
->[!NOTE]
->必 *须配置生* 产管道，以便启动手动更新管道至“生产+阶段”环境集。
-
->[!NOTE]
->手动更新生产 *环境* 或 *阶段* 将自动更新其他产品。 生产+阶段环境集必须位于同一AEM版本中。
 
 
 
