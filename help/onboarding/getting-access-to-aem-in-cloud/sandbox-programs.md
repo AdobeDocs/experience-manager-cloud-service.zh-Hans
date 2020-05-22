@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
+source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 0%
 
 沙箱项目是AEM Cloud Service中可用的两种项目类型之一，另一种是常规项目。
 
-通常，创建沙箱是为了满足培训、运行演示、启用或概念验证(POC)的目的。 它们不能载着实时交通。
+通常，创建沙箱是为了满足培训、运行演示、启用或概念验证(POC)的目的。 它们不能载着实时交通。 他们不受AEM作 [为云服务承诺的约束](https://www.adobe.com/legal/service-commitments.html)。
+
+在沙箱中创建的环境未配置为自动缩放。 因此，它们不适合用于性能或负载测试。
 
 沙箱项目包括站点和资产，并自动填充Git存储库、开发环境和非生产渠道。  Git存储库会填充基于AEM Project原型的示例项目。
 
