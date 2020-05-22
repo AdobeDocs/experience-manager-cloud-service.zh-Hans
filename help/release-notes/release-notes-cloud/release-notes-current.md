@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 云服务 2020.5.0 发行说明
 description: Experience Manager 2020.5.0 发行说明
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 29%
+source-wordcount: '374'
+ht-degree: 18%
 
 ---
 
@@ -14,7 +14,22 @@ ht-degree: 29%
 
 以下部分概述了 Experience Manager 云服务 2020.5.0 的常规发行说明。
 
-## Cloud Manager {#cloud-manager}
+## 发布日期 {#release-date}
+
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+
+## What&#39;s New in AEM Sites {#aem-sites}
+
+可查看本节以了解AEM中AEM Sites作为云服务版本2020.5.0的新增功能和更新。
+
+* 现在，在处理批量页面移动和作为异步作业进行转出后，可以获得详细的作业信息。
+* 复制／粘贴页面树时，现在提供选择仅粘贴根页面或粘贴树的子页面。
+* 导出到Adobe目标工作区的AEM体验片段现在显示为目标中唯一的优惠类型和优惠源。
+* MSM —— 使 *用* publish触发器现在可成功为Live Copy源中的组件删除事件，即删除Live Copy源中已删除的组件。
+* MSM - Live Copy组件现在从Live Copy源转 *出同一组件后* ，将重命名为_msm_moved。
+
+
+## Cloud Manager 的新增功能 {#cloud-manager}
 
 阅读本节内容，了解 AEM 云服务版本 2020.5.0 中 Cloud Manager 的新增功能和更新。
 
