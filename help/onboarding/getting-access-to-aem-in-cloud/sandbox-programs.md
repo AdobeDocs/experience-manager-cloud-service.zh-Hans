@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 创建沙箱环境 {#creating-sandbox-environments}
 
-沙箱项目在创建项目时以自动创建的方式交付开发环境。 默认情况下，开发环境包括作者层和发布层。
+沙箱项目在创建项目时以自动创建的方式交付给开发环境。 默认情况下，开发环境包括作者层和发布层。
 
 当用户准备好设置生产管道时，可以手动将生产级环境集添加到沙箱项目。
 
@@ -73,10 +73,10 @@ ht-degree: 0%
 
 * **自动沙箱** 项目环境在8小时不活动后自动休眠，这意味着作者和发布服务都不会收到请求。
 
-* **手动**: 作为用户，您可以手动为沙箱项目环境休眠，但无需这样做，因为休眠将在特定时间段（8小时）不活动后自动发生。
+* **手动**: 作为用户，您可以手动为沙箱项目环境休眠，但无需这样做，因为休眠将在某段时间（8小时）不活动后自动发生。
 
 >[!CAUTION]
->在最新版本中，链接到Cloud Manager的开发人员控制台将不允许您休眠沙箱项目环境。
+>在最新版本中，直接从云管理器链接到开发人员控制台将不允许您选择休眠沙箱项目环境。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
 
 #### 使用手动休眠 {#using-manual-hibernation}
 
@@ -89,6 +89,8 @@ ht-degree: 0%
 
 1. 导航到开发 **人员控制台**。
 请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
+   >[!NOTE]
+   >直接从云管理器链接到开发人员控制台将不允许您选择休眠沙箱项目环境。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -96,7 +98,7 @@ ht-degree: 0%
 
    或者，
 
-   从 **环境** 列表中单击Hibernate，如下图所示：
+   单击左 **上方** 的环境链接以视图环境列表，然后 **单击Hibernate**，如下图所示：
 
    ![](assets/hibernate-1b.png)
 
@@ -114,6 +116,9 @@ ht-degree: 0%
 1. 导航到开发 **人员控制台**。
 请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
 
+   >[!NOTE]
+   >或者，您也可以通过尝试访 **问已休眠环境的作者或发布服务** ，导航到开发人员控制台以解除休眠； 在这种情况下，将显示一个登陆页，其中包含指向“开发人员控制台”的链接。 请参阅下面的访问休眠环境部分。
+
    >[!IMPORTANT]
    >对开发人员控制台的访问权限由 **Admin Console中的云管理器** -开发人 **员角色定义**。 具有开发人员角色权限的用户可以解除沙箱项目环境的休眠。
 
@@ -123,7 +128,7 @@ ht-degree: 0%
 
    或者，
 
-   单击 **环境** 列 **表中的** De-hibernate，如下图所示：
+   单击左 **上方** 的环境链接以视图环境列表，然后 **单击“取消休眠**”，如下图所示
 
    ![](assets/de-hibernate-1b.png)
 
@@ -152,7 +157,7 @@ ht-degree: 0%
 >[!NOTE]
 > Cloud Manager中的许多功能需要特定权限才能运行。 要进一步了解控制特定功能可用性的用户的角色，请参阅添[加用户和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)。
 
-#### 重要注意事项 {#important-considerations}
+### 重要注意事项 {#important-considerations}
 
 与冬眠和脱冬眠环境相关的主要考虑事项很少：
 
