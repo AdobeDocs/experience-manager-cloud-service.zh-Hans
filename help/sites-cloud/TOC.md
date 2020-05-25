@@ -1,8 +1,11 @@
 ---
-sub-product: 在AEM中以云服务的形式创作内容
-user-guide-title: 在AEM中以云服务的形式创作内容
-translation-type: tm+mt
+sub-product: 在 AEM 云服务中创作内容
+user-guide-title: 在 AEM 云服务中创作内容
+translation-type: ht
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
+workflow-type: ht
+source-wordcount: '200'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
       + [导出到 CSV](authoring/fundamentals/csv-export.md)
       + [组件](authoring/fundamentals/components.md)
       + [为移动设备创作](authoring/fundamentals/mobile.md)
-      + [创建辅助内容（WCAG 2.1 符合性）](authoring/fundamentals/accessible-content.md)
+      + [创建无障碍内容（WCAG 2.1 合规性）](authoring/fundamentals/accessible-content.md)
       + [疑难解答](authoring/fundamentals/troubleshooting.md)
       + [键盘快捷键](authoring/fundamentals/keyboard-shortcuts.md)
    + 创作功能 {#features}
