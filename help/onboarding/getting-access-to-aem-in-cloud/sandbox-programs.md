@@ -4,7 +4,7 @@ description: 沙箱项目-云服务
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ ht-degree: 0%
 
 1. 导航到开发 **人员控制台**。
 请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
-   >[!NOTE]
-   >直接从云管理器链接到开发人员控制台将不允许您选择休眠沙箱项目环境。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
+   >[!IMPORTANT]
+   >直接从云管 **理器链接到** “开发人员控制台”时，您不能选择让沙箱环境休眠。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ ht-degree: 0%
 
 1. 导航到开发 **人员控制台**。
 请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
+
+   >[!IMPORTANT]
+   >直接从云管 **理器链接到** “开发人员控制台”时，您不能选择解除沙箱项目环境的休眠。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
 
    >[!NOTE]
    >或者，您也可以通过尝试访 **问已休眠环境的作者或发布服务** ，导航到开发人员控制台以解除休眠； 在这种情况下，将显示一个登陆页，其中包含指向“开发人员控制台”的链接。 请参阅下面的访问休眠环境部分。
