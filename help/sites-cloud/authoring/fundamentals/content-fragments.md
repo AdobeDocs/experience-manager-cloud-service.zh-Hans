@@ -1,15 +1,18 @@
 ---
 title: 内容片段
 description: Adobe Experience Manager 云服务内容片段允许您设计、创建、策划和使用独立于页面的内容
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: ht
+source-wordcount: '1154'
+ht-degree: 100%
 
 ---
 
 
 # 内容片段 {#content-fragments}
 
-Adobe Experience Manager(AEM)中作为云服务的内容片段是作为独立于页 [面的资产进行创建和管理的](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页面的资产创建和管理的](/help/assets/content-fragments/content-fragments.md)。
 
 这允许您创建渠道中性内容，以及各种（特定于渠道的）变量。您随后可以在创作内容页面时使用这些片段及其变量。
 
