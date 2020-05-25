@@ -1,11 +1,11 @@
 ---
-sub-product: 将AEM作为云服务实施
-user-guide-title: 将AEM作为云服务实施
-translation-type: tm+mt
+sub-product: 实施 AEM 云服务
+user-guide-title: 实施 AEM 云服务
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ ht-degree: 81%
 + 配置和扩展 AEM 云服务 {#configuring-and-extending}
    + [扩展体验片段](developing/extending/experience-fragments.md)
    + [自定义和扩展内容片段](developing/extending/content-fragments-customizing.md)
-   + [内容片段配置要渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)
+   + [内容片段配置用于渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [配置搜索表单](developing/extending/search-forms.md)
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
-   + [将OSGi配置为AEM云服务](deploying/configuring-osgi.md)
+   + [为 AEM 云服务配置 OSGi](deploying/configuring-osgi.md)
 + 云中的调度程序 {#dispatcher}
    + [云中的调度程序](dispatcher/overview.md)
    + [AEM 云服务中的内容交付](dispatcher/content-delivery.md)
