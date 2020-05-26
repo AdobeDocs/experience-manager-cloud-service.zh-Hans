@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -150,17 +150,17 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img4.png)
 
+#### 解除休眠的权限 {#permissions-de-hibernate}
+
+任何拥有产品用户档案并将AEM作为云服务进行访问的用户都应能够访问开 **发人员控制台**，从而允许他们解除环境的休眠。
+
+有关设置 [用户权限的信息，请参](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 阅云管理器中的添加用户和角色。
+
 #### 访问休眠环境 {#accessing-hibernated-environment}
 
 当针对休眠环境的作者层或发布层发出任何浏览器请求时，用户将遇到一个描述该环境的休眠状态的登陆页，如下图所示：
 
 ![](assets/de-hibernation-img5.png)
-
-
-具有云管理 **器——开发人员角色的用户** ，可以单 **击开发人员控制台** 以访问开发人员控制台，并解除环境的休眠。
-
->[!NOTE]
-> Cloud Manager中的许多功能需要特定权限才能运行。 要进一步了解控制特定功能可用性的用户的角色，请参阅添[加用户和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)。
 
 ### 重要注意事项 {#important-considerations}
 
