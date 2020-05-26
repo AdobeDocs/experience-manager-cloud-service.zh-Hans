@@ -1,8 +1,11 @@
 ---
 title: 基本操作
 description: 轻松自如地导航 AEM 及其基本用法
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +62,8 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 “导航”面板：
 
 ![“导航”面板](/help/sites-cloud/authoring/assets/navigation.png)
+
+浏览器选项卡的标题将更新，以反映您在控制台和内容中导航时的位置。
 
 在“导航”中，可用的控制台有：
 
@@ -149,6 +154,14 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
    >[!NOTE]
    >
    >**查看设置**&#x200B;选项仅在&#x200B;**列表视图**&#x200B;模式下可用。
+
+* 键盘导航
+
+   只能使用键盘导航网站。 它使用TAB键(或OPT+ **TAB** )的标准浏 **览器功能**，在页面上可聚焦的元素之间移动您。
+
+   在“站 **点** ”控制台中，添加了跳到 **主内容的选项**。 当您在标题选项中切换时，它会变得可见，并且允许您跳过（产品）工具栏中的标准元素并直接转到主内容，从而加快导航。
+
+   ![跳到主内容](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## 访问帮助 {#accessing-help}
 
