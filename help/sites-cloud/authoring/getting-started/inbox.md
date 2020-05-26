@@ -1,8 +1,11 @@
 ---
 title: 您的收件箱
 description: 使用收件箱管理您的任务
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +50,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 单击/点按工具栏中的指示器。
 
 1. 选择&#x200B;**查看全部**。此时将打开 **AEM 收件箱**。收件箱会显示工作流、项目和任务中的项目。
-1. 默认视图为[列表视图](#inbox-list-view)，但您也可以切换到[日历视图](#inbox-calendar-view)。可通过视图选择器（工具栏，右上角）执行此操作。
+1. 默认视图为“列 [表视图](#inbox-list-view)”，但您也可以切换到“日历 [视图”](#inbox-calendar-view)。 这是通过视图选择器（工具栏，右上方）完成的。
 
    对于这两个视图，您还可以定义[视图设置](#inbox-view-settings)。可用选项取决于当前视图。
 
@@ -105,6 +108,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 对某个项目执行操作 {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>尽管可以选择多个项目，但一次只能对一个项目执行操作。
+
 1. 要对某个项目执行操作，请选择相应项目的缩略图。工具栏中将显示适用于该项目的操作图标：
 
    ![选择收件箱项目](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -128,7 +135,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >* 工作流项目 - [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. 根据所选项目，将会启动相应的操作；例如：
+2. 根据所选项目，将会启动相应的操作；例如：
 
    * 将打开与操作对应的对话框
    * 将启动操作向导
@@ -151,7 +158,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 选择&#x200B;**创建**，然后选择&#x200B;**任务**。
 1. 填写&#x200B;**基本**&#x200B;和&#x200B;**高级**&#x200B;选项卡中的必需字段（只有&#x200B;**标题**&#x200B;是必填项，所有其他字段都是选填项）：
 
-   * **基本**：
+   * **基本**:
 
       * **标题**
       * **项目**
@@ -182,7 +189,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >
    >不能使用工作项（来自工作流）创建项目。
 
-1. 从工具栏中选择&#x200B;**创建项目**&#x200B;以打开向导。
+1. 从工 **具栏中选择** “创建项目”以打开向导。
 1. 选择相应的模板，然后选择&#x200B;**下一步**。
 1. 指定所需属性：
 
