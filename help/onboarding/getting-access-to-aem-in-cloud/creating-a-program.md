@@ -2,7 +2,7 @@
 title: 创建项目-云服务
 description: 创建项目-云服务
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 根据用户在特定客户／组织可用内容范围内创建项目的目标，项目创建向导将要求用户提交一个或多个详细信息。
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 请按照以下步骤创建沙箱项目:
 
-1. 从创建项目向导中，选 **择设置演示**。 用户在选择创建之前提交项目 **名称**。
+1. 在创建项目向导中，选 **择设置沙箱**。 用户在选择创建之前提交项目 **名称**。
 
    ![](assets/create-sandbox.png)
 
