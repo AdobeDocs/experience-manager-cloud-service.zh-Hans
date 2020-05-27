@@ -3,17 +3,34 @@ title: 使用 Brand Portal 配置 AEM Assets 云服务
 description: 使用 Brand Portal 配置 AEM Assets 云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 00e37e9493bc3dde8a4d83c562a889a67587ada0
+source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 80%
+source-wordcount: '1811'
+ht-degree: 26%
 
 ---
 
 
 # 使用 Brand Portal 配置 AEM Assets {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进行了配置，从而可获取 IMS 令牌以授权您的 Brand Portal 租户。
+Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品牌门户，该控制台为品牌门户租户购买IMS令牌以进行授权。
+
+**配置如何工作？**
+
+使用您的Brand Portal租户（组织）配置AEM Assets云实例是一个多步骤过程，它需要在AEM Assets云实例和Adobe Developer Console中进行配置。
+
+1. 在AEM Assets云实例中，创建IMS帐户并生成公共证书（公钥）。
+1. 在Adobe开发人员控制台中，为您的Brand Portal租户（组织）创建一个项目。
+1. 在项目下，使用公钥配置API以创建服务帐户(JWT)连接。
+1. 获取服务帐户凭据和JWT有效负荷信息。
+1. 在AEM Assets云实例中，使用服务帐户凭据和JWT有效负荷配置IMS帐户。
+1. 在AEM Assets云实例中，使用IMS帐户和Brand Portal端点（组织URL）配置Brand Portal云服务。
+1. 通过将资产从AEM Assets云实例发布到Brand Portal来测试配置。
+
+>[!NOTE]
+>>Brand Portal租户只应配置一个AEM Assets云实例。
+>>请勿配置具有多个AEM Assets云实例的Brand Portal租户。
+>
 
 ## 前提条件 {#prerequisites}
 
@@ -27,12 +44,11 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 
 ## 创建配置 {#create-new-configuration}
 
-您可以在Adobe I/O上创建配置，以通过Brand Portal配置AEM Assets云实例。
+按指定顺序执行以下步骤，在Brand Portal中配置AEM Assets云实例。
 
-按照列出的顺序执行以下步骤：
 1. [获取公共证书](#public-certificate)
-1. [创建 Adobe I/O 集成](#createnewintegration)
-1. [创建 IMS 帐户配置](#create-ims-account-configuration)
+1. [创建服务帐户(JWT)连接](#createnewintegration)
+1. [配置IMS帐户](#create-ims-account-configuration)
 1. [配置云服务](#configure-the-cloud-service)
 1. [测试配置](#test-configuration)
 
@@ -43,113 +59,165 @@ IMS 配置通过 AEM Assets 作者实例对您的 Brand Portal 租户进行身�
 IMS 配置包括两个步骤：
 
 * [获取公共证书](#public-certificate)
-* [创建 IMS 帐户配置](#create-ims-account-configuration)
+* [配置IMS帐户](#create-ims-account-configuration)
 
 ### 获取公共证书 {#public-certificate}
 
-公共证书允许您在 Adobe I/O 上验证配置文件。
+公共证书允许您在Adobe开发人员控制台上验证用户档案。
 
-1. 登录 AEM Assets 云实例。
+1. 登录AEM Assets云实例。
 
 1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS 帐户配置 UI](assets/ims-configuration1.png)
 
-1. 打开 Adobe IMS 配置页面。
+1. 在Adobe IMS配置页面中，单击创 **[!UICONTROL 建]**。
 
-   单击&#x200B;**[!UICONTROL 创建]**。
+1. 您将被重定向到“ **[!UICONTROL Adobe IMS技术帐户配置”页]** 。 By default, the **Certificate** tab opens.
 
-   It will take you to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page.
-
-1. 默认情况下，将打开&#x200B;**证书**&#x200B;选项卡。
-
-   在&#x200B;**云解决方案**&#x200B;中，选择 **[!UICONTROL Adobe Brand Portal]**。
+   选择云解决方 **[!UICONTROL 案Adobe Brand Portal]**。
 
 1. Mark the check box **[!UICONTROL Create new certificate]** and specify an **alias** for the certificate. 别名将用作对话框的名称。
 
-1. 单击&#x200B;**[!UICONTROL 创建证书]**。将显示一个对话框。单击&#x200B;**[!UICONTROL 确定]**&#x200B;以生成公共证书。
+1. 单击&#x200B;**[!UICONTROL 创建证书]**。然后，在对 **[!UICONTROL 话框]** 中单击“确定”以生成公共证书。
 
    ![创建证书](assets/ims-config2.png)
 
-1. 单击&#x200B;**[!UICONTROL 下载公钥]**，然后将 *AEM-Adobe-IMS.crt* 证书文件保存到您的计算机上。该证书文件将用于[创建 Adobe I/O 集成](#createnewintegration)。
+1. Click **[!UICONTROL Download Public Key]** and save the certificate (.crt) file on your machine.
+
+   该证书文件将用于后续步骤，以在Adobe开发人员控制台中为Brand Portal租户配置API并生成服务帐户凭据。
 
    ![下载证书](assets/ims-config3.png)
 
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 
-   在&#x200B;**帐户**&#x200B;选项卡中，您可以创建 Adobe IMS 帐户，但您需要集成详细信息。暂时保持此页面打开。
+   在“帐 **户** ”选项卡中，您创建Adobe IMS帐户，但为此，您需要在Adobe开发人员控制台中生成服务帐户凭据。 暂时保持此页面打开。
 
-   打开新选项卡并[创建 Adobe I/O 集成](#createnewintegration)，以获取 IMS 帐户配置的集成详细信息。
+   在Adobe Developer Console中打开一 [个新选项卡并创建一个服务帐户(JWT)连接](#createnewintegration) ，以获取用于配置IMS帐户的凭据和JWT有效负荷。
 
-### 创建 Adobe I/O 集成 {#createnewintegration}
+### 创建服务帐户(JWT)连接 {#createnewintegration}
 
-Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，这是设置 IMS 帐户配置所必需的。
+在Adobe开发人员控制台中，项目和API在组织（Brand Portal租户）级别进行配置。 配置API可在Adobe开发人员控制台中创建服务帐户(JWT)连接。 可通过生成密钥对（私钥和公钥）或上传公钥来配置API的方法有两种。 要在Brand Portal中配置AEM Assets云实例，您必须在AEM Assets云实例中生成公共证书（公钥），并通过上传公钥在Adobe Developer Console中创建凭据。 此公钥用于为所选Brand Portal组织配置API，并为服务帐户生成凭据和JWT有效负荷。 这些凭据还用于在AEM Assets云实例中配置IMS帐户。 配置IMS帐户后，您可以在AEM Assets云实例中配置Brand Portal云服务。
 
-1. 使用 Brand Portal 租户的 IMS 组织的系统管理员权限登录到 Adobe I/O 控制台。
+执行以下步骤以生成服务帐户凭据和JWT有效负荷：
 
-   默认 URL：[https://console.adobe.io/](https://console.adobe.io/)
+1. 以IMS组织（Brand Portal租户）的系统管理员权限登录到Adobe Developer Console。 默认URL为
 
-1. 单击&#x200B;**[!UICONTROL 创建集成]**。
+   [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)
 
-1. 选择&#x200B;**[!UICONTROL 访问 API]**，然后单击&#x200B;**[!UICONTROL 继续]**。
 
-   ![创建新集成](assets/create-new-integration1.png)
+   >[!NOTE]
+   >
+   >确保您从右上角的下拉菜单(组织列表)中选择了正确的IMS组织（Brand Portal租户）。
 
-1. 此时将打开新的集成页面。
+1. Click **[!UICONTROL Create new project]**. 将为您的组织创建一个空白项目。
 
-   从下拉列表中选择您的组织。
+   单击 **[!UICONTROL “编辑]** ”项目以更新 **[!UICONTROL 项目标题]** 和 **[!UICONTROL 说明]**，然 **[!UICONTROL 后单击“]**&#x200B;保存”。
 
-   在 **[!UICONTROL Experience Cloud]** 中，选择 **[!UICONTROL AEM Brand Portal]**，然后单击&#x200B;**[!UICONTROL 继续]**。
+   ![创建项目](assets/service-account1.png)
 
-   如果您禁用了 Brand Portal 选项，请确保您从 **[!UICONTROL Adobe Services]** 选项上方的下拉框中选择了正确的组织。如果您不了解您的组织，请与管理员联系。
+1. 在“项目概述”选项卡中，单 **[!UICONTROL 击“添加API]**”。
 
-   ![创建集成](assets/create-new-integration2.png)
+   ![添加API](assets/service-account2.png)
 
-1. 指定集成的名称和描述。单击&#x200B;**[!UICONTROL 从计算机中选择文件]**，然后上传在[获取公共证书](#public-certificate)部分下载的 `AEM-Adobe-IMS.crt` 文件。
+1. 在添加API窗口中，选择 **[!UICONTROL AEM Brand Portal]** ，然后单击 **[!UICONTROL 下一步]**。
 
-1. 选择您的组织的配置文件。
+   确保您有权访问AEM Brand Portal服务。
 
-   或者，选择默认的配置文件 **[!UICONTROL Brand Portal]**，然后单击&#x200B;**[!UICONTROL 创建集成]**。将创建集成。
+1. 在“配置API”窗口中，单 **[!UICONTROL 击“上传公钥”]**。 然后，单 **[!UICONTROL 击“Select a File]** （选择文件）”并上传您在“Obtain public certificate（获取公共证书）”部分下 [载的公共证书](#public-certificate) （.crt文件）。
 
-1. 单击&#x200B;**[!UICONTROL 继续查看集成详细信息]**，以查看集成信息。
+   单击&#x200B;**[!UICONTROL 下一步]**。
 
-   复制 **[!UICONTROL API 密钥]**
+   ![上传公钥](assets/service-account3.png)
 
-   单击&#x200B;**[!UICONTROL 检索客户端密钥]**，并复制客户端密钥。
+1. 验证公共证书，然后单击“ **[!UICONTROL 下一步]**”。
 
-   ![集成的 API 密钥、客户端密钥和有效负荷信息](assets/create-new-integration3.png)
+1. 在Brand Portal中，会为每个组织创建默认用户档案。 产品用户档案在管理控制台中创建，用于将用户分配到组（根据角色和权限）。 对于Brand Portal的配置，将在组织级别创建OAuth令牌。 因此，您必须为组织配置默认的产品用户档案。
 
-1. 导航到 **[!UICONTROL JWT]** 选项卡，并复制 **[!UICONTROL JWT 有效负荷]**。
+   选择默认产品用户档案 **[!UICONTROL 资产品牌门户]**。
 
-   API 密钥、客户端密钥和 JWT 有效负荷信息将用于创建 IMS 帐户配置。
+   ![选择产品用户档案](assets/service-account4.png)
 
-### 创建 IMS 帐户配置 {#create-ims-account-configuration}
+1. 配置API后，您将被重定向到API概述。 在左侧导航的“凭据 **[!UICONTROL ”下]**，单 **[!UICONTROL 击“服务帐户(JWT)]**”。
+
+   >[!NOTE]
+   >
+   >您可以根据需要视图凭据并执行其他操作（生成JWT令牌、复制凭据详细信息、检索客户端机密等）。
+
+1. 从“客 **[!UICONTROL 户端凭据]** ”选项卡中，复 **[!UICONTROL 制客户端ID]**。
+
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![服务帐户凭据](assets/service-account5.png)
+
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]**.
+
+您现在可以使用客户端ID（API密钥）、客户端机密和JWT负载 [在AEM资产云实例中](#create-ims-account-configuration) 配置IMS帐户。
+
+<!--
+1. Click **[!UICONTROL Create Integration]**.
+
+1. Select **[!UICONTROL Access an API]**, and click **[!UICONTROL Continue]**.
+
+   ![Create New Integration](assets/create-new-integration1.png)
+
+1. Create a new integration page opens. 
+   
+   Select your organization from the drop-down list.
+
+   In **[!UICONTROL Experience Cloud]**, Select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Continue]**. 
+
+   If the Brand Portal option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. If you do not know your organization, contact your administrator.
+
+   ![Create Integration](assets/create-new-integration2.png)
+
+1. Specify a name and description for the integration. Click **[!UICONTROL Select a File from your computer]** and upload the `AEM-Adobe-IMS.crt` file downloaded in the [obtain public certificates](#public-certificate) section.
+
+1. Select the profile of your organization. 
+
+   Or, select the default profile **[!UICONTROL Assets Brand Portal]** and click **[!UICONTROL Create Integration]**. The integration is created.
+
+1. Click **[!UICONTROL Continue to integration details]** to view the integration information. 
+
+   Copy the **[!UICONTROL API Key]** 
+   
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the Client Secret key.
+
+   ![API Key, Client Secret, and payload information of an integration](assets/create-new-integration3.png)
+
+1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
+
+   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+
+-->
+
+### 配置IMS帐户 {#create-ims-account-configuration}
 
 确保您已执行以下步骤：
 
 * [获取公共证书](#public-certificate)
-* [创建 Adobe I/O 集成](#createnewintegration)
+* [创建服务帐户(JWT)连接](#createnewintegration)
 
-**创建 IMS 帐户配置的步骤：**
+请执行以下步骤来配置您在获取公共证书时创建 [的IMS帐户](#public-certificate)。
 
-1. 打开“IMS 配置”页面的&#x200B;**[!UICONTROL 帐户]**&#x200B;选项卡。保持打开该页面[获取公共证书](#public-certificate)的结尾部分。
+1. 打开IMS配置并导航到帐 **[!UICONTROL 户选]** 项卡。 您在获取公共证书时 [使页面保持打开状态](#public-certificate)。
 
 1. 为 IMS 帐户指定&#x200B;**[!UICONTROL 标题]**。
 
    在&#x200B;**[!UICONTROL 授权服务器]**&#x200B;中，输入 URL：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   粘贴您在[创建 Adobe I/O 集成](#createnewintegration)结束时复制的 API 密钥、客户端密钥和 JWT 有效负荷。
+   将客户端ID粘贴到您在创建服务帐户(JWT)连接时复制的API密钥、 [客户端机密和JWT有效负荷中](#createnewintegration)。
 
    单击&#x200B;**[!UICONTROL 创建]**。
 
-   将创建集成。
+   已配置IMS帐户。
 
    ![IMS 帐户配置](assets/create-new-integration6.png)
 
 
-1. 选择 IMS 配置，然后单击&#x200B;**[!UICONTROL 检查运行状况]**。将显示一个对话框。
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-   单击&#x200B;**[!UICONTROL 检查]**。成功连接时，将显示&#x200B;*已成功检索令牌*&#x200B;消息。
+   在对 **[!UICONTROL 话框]** 中单击“检查”。 成功配置时，将显示一条消息，告 *示标记已成功检索*。
 
    ![](assets/create-new-integration5.png)
 
@@ -163,21 +231,19 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 
 ### 配置云服务 {#configure-the-cloud-service}
 
-执行以下步骤以创建 Brand Portal 云服务配置：
+请执行以下步骤来配置Brand Portal云服务：
 
-1. 登录 AEM Assets 云实例。
+1. 登录AEM Assets云实例。
 
 1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
-   此时将打开 Brand Portal 的“配置”页面。
-
-1. 单击&#x200B;**[!UICONTROL 创建]**。
+1. 在Brand Portal的“配置”页中，单击“ **[!UICONTROL 创建]**”。
 
 1. 指定配置的&#x200B;**[!UICONTROL 标题]**。
 
-   选择您在[创建 IMS 帐户配置](#create-ims-account-configuration)步骤中创建的“IMS 配置”。
+   选择配置IMS帐户时已 [创建的IMS配置](#create-ims-account-configuration)。
 
-   在&#x200B;**[!UICONTROL 服务 URL]** 中，输入您的 Brand Portal 租户 URL。
+   In the **[!UICONTROL Service URL]**, enter your Brand Portal tenant (organization URL).
 
    ![](assets/create-cloud-service.png)
 
@@ -185,15 +251,15 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 
 ### 测试配置{#test-configuration}
 
-1. 登录 AEM Assets 云实例。
+请执行以下步骤以验证配置：
+
+1. 登录AEM Assets云实例。
 
 1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
-1. 此时将打开“分发”页面。
-
-   将在&#x200B;**[!UICONTROL 发布到 Brand Portal]** 下创建 Brand Portal 分发代理 `bpdistributionagent0`。
+1. 在“分发”页面中，您可以看到已为发布到品牌门 `bpdistributionagent0` 户创建一 **[!UICONTROL 个品牌门户分发代理]**。
 
    单击&#x200B;**[!UICONTROL 发布到 Brand Portal]**。
 
@@ -203,7 +269,7 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
    >
    >默认情况下，将为 Brand Portal 租户创建一个分发代理。
 
-1. 此时将打开分发代理页面。默认情况下，会打开填充了分发队列的&#x200B;**[!UICONTROL 状态]**&#x200B;选项卡。
+1. 在分发代理页面中，您可以在状态选项卡下看到分 **[!UICONTROL 发队列]** 。
 
    分发代理包含两个队列：
    * **processing-queue**: 用于将资产分发到Brand Portal。
@@ -243,11 +309,11 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 
 ## 分发日志 {#distribution-logs}
 
-您可以检查日志，以了解有关对分发代理执行的操作的详细信息。
+您可以检查日志，以了解有关分发代理执行的操作的详细信息。
 
-例如，我们已将资产从 AEM Assets 发布到 Brand Portal 以验证配置。
+例如，我们已将资产从AEM资产发布到Brand Portal以验证配置。
 
-1. Follow the steps (Step 1 - 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
 
 1. 单击&#x200B;**[!UICONTROL 日志]**&#x200B;以查看分发日志。您可以在此处查看处理日志和错误日志。
 
