@@ -2,9 +2,9 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2417'
 ht-degree: 18%
 
 ---
@@ -173,7 +173,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 ![嵌入包](assets/embeddeds.png)
 
-要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置，格式如下： `all`
+要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置 `all` ，格式如下：
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -237,7 +237,9 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 为了确保正确安装软件包，建议建立软件包间依赖关系。
 
-一般规则是包含可变内容(`ui.content`)的包，该可变内容()应取决于`ui.apps`支持可变内容的呈现和使用的不可变内容()。
+一般规则是包含可变内容(`ui.content`)的包，该可变内容()应取决于`ui.apps`支持可变内容的呈现和使用的不可变代码()。
+
+此一般规则的一个显着例外是不可变的代码包(或`ui.apps` 任何其他代码包)仅 __包含__ OSGi包。 如果是，则任何AEM包都不应声明对它的依赖关系。 这是因为仅包含OSGi __包的不可__ 变代码包未在AEM包管理器中注册，因此，任何依赖于它的AEM包都将具有不满足的依赖关系，并且无法安装。
 
 >[!TIP]
 >
