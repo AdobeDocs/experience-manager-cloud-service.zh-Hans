@@ -2,10 +2,10 @@
 title: 管理环境-云服务
 description: 管理环境-云服务
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 9%
+source-wordcount: '702'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,12 @@ ht-degree: 9%
 
 ## 访问开发人员控制台 {#accessing-developer-console}
 
-从 **环境** 卡的下拉菜单中选择开 **发人员** 控制台。
+从 **环境** 卡的下拉菜单中选择开 **发人员** 控制台。 这将在您的浏览器中打开一个新选项卡，其中包含开发人员控制 **台的登录页**。
+
+只有具有“开发人员”角色的用户才有权访问“开 **发人员控制台**”。 沙箱项目例外，在沙箱项目中，有权访问云管理器沙箱的任何用户都有权访问开发 **人员控制台**。
+
+有关更 [多详细信息，请参阅“冬眠”和“脱冬](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) ”沙箱环境。
+
 
 ![](assets/dev-console1.png)
 
