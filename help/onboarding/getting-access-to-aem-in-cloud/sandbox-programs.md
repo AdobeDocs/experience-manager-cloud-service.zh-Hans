@@ -2,9 +2,9 @@
 title: 沙箱项目-云服务
 description: 沙箱项目-云服务
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,9 @@ ht-degree: 0%
 
 * 环境详细信息屏幕
 * 环境列表屏幕
+
+>[!NOTE]
+>对沙箱项目的开发人员控制台的访问权限适用于Cloud Manager的任何用户。
 
 请按照以下步骤手动为沙箱项目环境休眠：
 
