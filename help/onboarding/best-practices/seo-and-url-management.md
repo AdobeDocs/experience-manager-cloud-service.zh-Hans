@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务的 SEO 和 URL 管理最佳实践
 seo-title: Adobe Experience Manager 云服务的 SEO 和 URL 管理最佳实践
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
 
 在 AEM 项目中评估 URL 时，请问自己以下问题：
 
-“如果用户要查看此 URL 而页面上没有内容，他们会怎样描述此页面？”
+*“如果用户要查看此 URL 而页面上没有内容，他们会怎样描述此页面？”*
 
 如果答案是“是”，则很可能此 URL 非常适用于搜索引擎。
 
