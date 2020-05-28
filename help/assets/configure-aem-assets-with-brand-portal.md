@@ -3,10 +3,10 @@ title: 使用 Brand Portal 配置 AEM Assets 云服务
 description: 使用 Brand Portal 配置 AEM Assets 云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
+source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 26%
+source-wordcount: '1762'
+ht-degree: 27%
 
 ---
 
@@ -69,7 +69,7 @@ IMS 配置包括两个步骤：
 
 1. 登录AEM Assets云实例。
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS 帐户配置 UI](assets/ims-configuration1.png)
 
@@ -134,9 +134,11 @@ IMS 配置包括两个步骤：
 
 1. 验证公共证书，然后单击“ **[!UICONTROL 下一步]**”。
 
-1. 在Brand Portal中，会为每个组织创建默认用户档案。 产品用户档案在管理控制台中创建，用于将用户分配到组（根据角色和权限）。 对于Brand Portal的配置，将在组织级别创建OAuth令牌。 因此，您必须为组织配置默认的产品用户档案。
+1. 选择默认的产品用户档案 **[!UICONTROL 资产品牌门户]** ，然后单 **[!UICONTROL 击保存配置]**。
 
-   选择默认产品用户档案 **[!UICONTROL 资产品牌门户]**。
+   <!-- 
+   In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+   -->
 
    ![选择产品用户档案](assets/service-account4.png)
 
@@ -237,7 +239,7 @@ IMS 配置包括两个步骤：
 
 1. 登录AEM Assets云实例。
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. 在Brand Portal的“配置”页中，单击“ **[!UICONTROL 创建]**”。
 
@@ -257,7 +259,7 @@ IMS 配置包括两个步骤：
 
 1. 登录AEM Assets云实例。
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -315,7 +317,7 @@ IMS 配置包括两个步骤：
 
 例如，我们已将资产从AEM资产发布到Brand Portal以验证配置。
 
-1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
 
 1. 单击&#x200B;**[!UICONTROL 日志]**&#x200B;以查看分发日志。您可以在此处查看处理日志和错误日志。
 
