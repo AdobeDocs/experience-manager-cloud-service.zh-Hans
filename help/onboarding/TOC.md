@@ -2,10 +2,10 @@
 sub-product: AEM 云服务入门
 user-guide-title: AEM 云服务入门
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 88%
+source-wordcount: '133'
+ht-degree: 93%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 88%
    + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM Sites 已准备就绪](data-privacy-and-protection-readiness/sites-readiness.md)
 + 辅助功能 {#accessibility}
-   + [AEM as a Cloud Service和Web辅助功能指南](accessibility/web-accessibility.md)
+   + [AEM 云服务和 Web 无障碍准则](accessibility/web-accessibility.md)
    + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
++ 最佳实践 {#best-practices}
+   + [SEO和URL管理](best-practices/seo-and-url-management.md)
 + [工具控制台概述](tools-consoles.md)
