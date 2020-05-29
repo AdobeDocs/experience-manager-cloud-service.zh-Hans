@@ -2,7 +2,7 @@
 sub-product: 以云服务的形式移到AEM
 user-guide-title: 以云服务的形式移到AEM
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 作为云服务指南移动到AEM {#moving}
+# 作为云服务指南转到AEM {#moving}
 
 + [以云服务的形式移到AEM](/help/move-to-cloud-service/home.md)
 + 过渡旅程阶段 {#phases}
