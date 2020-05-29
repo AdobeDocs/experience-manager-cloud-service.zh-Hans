@@ -2,7 +2,7 @@
 title: 创建项目-云服务
 description: 创建项目-云服务
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 1. 在创 **建项目向导中** ，选择“为生产设置”以创建常规项目。 用户可以接受默认项目名称，或在选择“继续”之 **前编辑**。
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. 用户将选择要包含在屏幕上的项目中的解决方案，这些解决方案将在上面的屏幕后显示。
 
