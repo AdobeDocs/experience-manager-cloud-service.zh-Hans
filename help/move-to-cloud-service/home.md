@@ -2,7 +2,7 @@
 title: 以云服务的形式移到AEM
 description: Adobe Experience Manager作为云服务，以云服务自助资源和文档链接的形式移至AEM
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 43c5af886ccddea73b68008a372f192ff8c1f26f
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -10,7 +10,7 @@ ht-degree: 57%
 ---
 
 
-# Move to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 ## 作为云服务迁移到AEM的优势 {#benefits-aem-moving-to-aem-guide}
 
