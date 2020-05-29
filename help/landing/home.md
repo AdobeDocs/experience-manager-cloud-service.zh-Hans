@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 云服务用户指南
 description: Adobe Experience Manager 云服务自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: 2d6c91dac4fec04cb5f1a6d050f0464bc724a09b
+source-git-commit: 45e17deb7a08deaaf2af07ca6ab3b8ee80bcb21f
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 94%
@@ -24,7 +24,7 @@ ht-degree: 94%
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何管理 Experience Manager Sites 云服务。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何管理 Experience Manager Assets 云服务。 |
-| [《作为云服务用户指南移动到AEM》](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的旅程。 |
+| [《 Moving to AEM a Cloud Service User Guide》（作为云服务用户指南转到AEM）](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的旅程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager 云服务部署，包括开发部署主题。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将解决方案集成到 Experience Manager 云服务中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager 云服务的后端操作，如添加索引和维护任务。 |
