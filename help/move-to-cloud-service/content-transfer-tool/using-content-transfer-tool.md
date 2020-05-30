@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 2%
+source-wordcount: '1527'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 2%
 
 * 如果您使用沙 *箱环境*，请确保环境已升级到2020年5月29日版本或更高版本。 如果您使用的是 *生产环境*，它会自动更新。
 
+* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的云服务实例中的管理组。 无权限用户将无法检索访问令牌以使用内容传输工具。
+
 * 在提取阶段，内容传输工具将在活动AEM源实例上执行。
 
 * 作 *者的摄取阶段* ，将缩小整个作者部署。 这意味着作者AEM在整个摄取过程中将不可用。
@@ -29,7 +31,7 @@ ht-degree: 2%
 内容传输工具可从软件分发门户下载为zip文件。 您可以通过源Adobe Experience Manager(AEM)实例上的包管理器安装该包。
 
 >[!NOTE]
->有关更 [多详细信息，请参阅将AEM作为云服务](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) SDK访问。
+>从Adobe Experience Cloud下载内 [容传输工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
 
 ## 运行内容传输工具 {#running-tool}
 
@@ -120,7 +122,8 @@ ht-degree: 2%
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > 您必须刷新页面才能视图更新的状态。
+   >您必须刷新页面才能视图更新的状态。
+   >提取阶段启动后，将创建写锁定并在60秒后 *释放*。 因此，如果提取停止，您需要等待一分钟才能释放锁定，然后再次开始提取。
 
 #### 向上提取 {#top-up-extraction-process}
 
@@ -250,10 +253,12 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 
 作为用户，您可能会在内容传输工具的用户界面(UI)中看到以下行为更改：
 
-1. 用户为作者URL（开发／阶段／生产）创建迁移集，并成功执行提取和摄取。
+* 用户为作者URL（开发／阶段／生产）创建迁移集，并成功执行提取和摄取。
 
-1. 然后，用户为同一作者URL创建新的迁移集，并对新迁移集执行提取和摄取。 UI显示第一个迁移集的摄取状态变为“失败 **”** ，并且没有可用日志。
+* 然后，用户为同一作者URL创建新的迁移集，并对新迁移集执行提取和摄取。 UI显示第一个迁移集的摄取状态变为“失败 **”** ，并且没有可用日志。
 
-1. 这并不意味着第一个迁移集的摄取失败。 出现此行为是因为启动新的摄取作业时，它会删除以前的摄取作业。 因此，应忽略第一个迁移集上的更改状态。
+* 这并不意味着第一个迁移集的摄取失败。 出现此行为是因为启动新的摄取作业时，它会删除以前的摄取作业。 因此，应忽略第一个迁移集上的更改状态。
+
+* 内容传输工具UI中的图标可能与本指南中显示的屏幕截图有所不同，或者根本不会显示，具体取决于源AEM实例的版本。
 
 
