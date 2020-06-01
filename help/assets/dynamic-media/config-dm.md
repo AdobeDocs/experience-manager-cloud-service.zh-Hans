@@ -2,15 +2,15 @@
 title: 配置Dynamic Media Cloud服务
 description: 有关如何在Adobe Experience Manager Cloud Service中配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+source-git-commit: bc0852120580065a93923e7fe730485012afba6e
 workflow-type: tm+mt
-source-wordcount: '5120'
+source-wordcount: '5123'
 ht-degree: 9%
 
 ---
 
 
-# 配置 Dynamic Media {#configuring-dynamic-media-scene-mode}
+# 关于配置Dynamic Media Cloud服务 {#configuring-dynamic-media-scene-mode}
 
 如果您使用为不同环境（如用于开发的Adobe Experience Manager、用于暂存的Adobe Experience Manager和用于实时生产的Adobe Experience Manager）进行设置，则需要为每个环境配置Dynamic Media Cloud Services。
 
