@@ -3,10 +3,10 @@ title: 使用 Brand Portal 配置 AEM Assets 云服务
 description: 使用 Brand Portal 配置 AEM Assets 云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
+source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品�
 
 ### 创建 IMS 配置 {#create-ims-configuration}
 
-IMS 配置通过 AEM Assets 作者实例对您的 Brand Portal 租户进行身份验证。
+IMS配置使用AEM Assets云实例对您的Brand Portal租户进行身份验证。
 
 IMS 配置包括两个步骤：
 
