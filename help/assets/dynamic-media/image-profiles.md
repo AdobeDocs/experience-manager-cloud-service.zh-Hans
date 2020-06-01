@@ -2,9 +2,9 @@
 title: Dynamic Media 图像配置文件
 description: 创建包含USM锐化设置、智能裁剪设置、智能色板设置、智能色板设置和／或智能色板设置的图像用户档案，然后将该用户档案应用到图像资产的文件夹。
 translation-type: tm+mt
-source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
+source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2663'
 ht-degree: 23%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 23%
 # Dynamic Media 图像配置文件 {#image-profiles}
 
 上传图像时，您可以通过将图像用户档案应用到文件夹，在上传时自动裁剪图像。
+
+>[!IMPORTANT]
+>
+>图像用户档案不适用于PDF文件。
 
 ## Crop options {#crop-options}
 
