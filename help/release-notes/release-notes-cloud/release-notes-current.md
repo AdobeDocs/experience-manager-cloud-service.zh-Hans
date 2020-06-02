@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务 2020.5.0 发行说明
 description: Experience Manager 2020.5.0 发行说明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 18%
 
 ## 发布日期 {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+[!DNL Experience Manager] 云服务 2020.5.0 的发布日期是 2020 年 5 月 7 日。
 
-## What&#39;s New in AEM Sites {#aem-sites}
+## AEM Sites 的新增功能 {#aem-sites}
 
-可查看本节以了解AEM中AEM Sites作为云服务版本2020.5.0的新增功能和更新。
+阅读本节内容，了解 AEM 云服务版本 2020.5.0 中 AEM Sites 的新增功能和更新。
 
-* 现在，在处理批量页面移动和作为异步作业进行转出后，可以获得详细的作业信息。
-* 复制／粘贴页面树时，现在提供选择仅粘贴根页面或粘贴树的子页面。
-* 导出到Adobe目标工作区的AEM体验片段现在显示为目标中唯一的优惠类型和优惠源。
-* MSM —— 使 *用* publish触发器现在可成功为Live Copy源中的组件删除事件，即删除Live Copy源中已删除的组件。
-* MSM - Live Copy组件现在从Live Copy源转 *出同一组件后* ，将重命名为_msm_moved。
+* 现在，将批量页面移动和转出作为异步作业处理后，可以获得详细的作业信息。
+* 复制/粘贴页面树时，现在可以选择仅粘贴树的根页面，或者同时粘贴树的子页面。
+* 现在，导出到 Adobe Target 工作区的 AEM 体验片段在 Target 中显示为唯一的选件类型和选件源。
+* MSM - 现在，使用“发布”**&#x200B;触发器可成功转出 Live Copy 源中组件的删除事件，即在 Live Copy 中删除 Live Copy 源中已删除的组件。
+* MSM - 现在，从 Live Copy 源中转出组件后，Live Copy 中的相同组件会重命名为 *_msm_moved*。
 
 
 ## Cloud Manager 的新增功能 {#cloud-manager}
@@ -35,18 +35,18 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is Ma
 
 ### 新增功能 {#what-is-new}
 
-* 新增了六条代码质量规则，帮助客户在规划迁移到云服务时发现潜在问题。
-* 新增了一 *个度量云服务兼容性* ，以总结与兼容性相关的问题数。
-* 未能创建的环境现在将在创建失败后约24小时自动删除，除非已删除它们。
-* 活动页面和管道执行列表API的性能已得到改进。
-* 代码质量日志现在包含完整的堆栈跟踪以发现异常。
+* 添加了六个其他代码质量规则，以帮助客户在计划迁移到云服务时发现潜在问题。
+* 添加了一个新量度“云服务兼容性”**，以汇总与兼容性相关的问题数量。
+* 现在，创建失败的环境将在创建失败后大约 24 小时自动删除，除非已删除这些环境。
+* “活动”页面和管道执行列表 API 的性能已得到改进。
+* 代码质量日志现在包含完整的异常堆栈追踪。
 
 ### 错误修复 {#bug-fixes}
 
-* 在生产管道运行时，概述页面上会显示误导性信息卡。
-* DontImplementOrExtendProviderTypesPomCheck代码质量 *规则有时可能* 会产生空指针异常。
-* 概述页面中的某些文档链接无法正常工作。
-* 创建环境对话框在Safari中无法正确呈现。
-* 概述页面上的某些卡未正确显示实体名称。
-* 在某些情况下，构建映像无法成功下载客户包。
+* 生产管道运行时，概述页面上显示误导性信息卡。
+* *DontImplementOrExtendProviderTypesPomCheck* 代码质量规则有时可能会产生“空指针异常”。
+* 概述页面中的某些文档链接无法正常使用。
+* “创建环境”对话框在 Safari 中无法正确呈现。
+* 概述页面上的某些信息卡无法正确显示实体名称。
+* 在某些情况下，“生成图像”可能无法成功下载客户包。
 
