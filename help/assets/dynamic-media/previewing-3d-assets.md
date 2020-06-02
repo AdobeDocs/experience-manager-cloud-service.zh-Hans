@@ -2,25 +2,25 @@
 title: 预览3D资产
 description: 了解如何预览3D资源
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 16%
+source-wordcount: '566'
+ht-degree: 15%
 
 ---
 
 
-# 预览3D资产{#previewing-3d-assets}
+# 在AEM中预览3D资产{#previewing-3d-assets}
 
-Experience Manager支持3D资产的上传、投放和交互式预览，作为创作流程的一部分。
+Adobe Experience Manager支持3D资产的上传、投放和交互式预览，作为创作流程的一部分。
 
 AEM 中的资产详细信息页面提供了交互式 3D 查看器。该查看器提供了各种控件，其中包括一组交互式相机控件，可让您对 3D 资产执行绕行、缩放和平移操作。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 支持的3D预览格式{#supported-3d-previewing-assets}
+## AEM中支持的3D预览格式{#supported-3d-previewing-assets}
 
-交互式3D预览支持以下文件格式：
+AEM中的交互式3D预览支持以下文件格式：
 
 | 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
 |---|---|---|---|
@@ -40,13 +40,13 @@ AEM 中的资产详细信息页面提供了交互式 3D 查看器。该查看器
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
+## 在AEM中预览3D资产时的性能注意事项{#performance-3d-previewing-assets}
 
 在资产详细信息视图页中打开3D资产所花费的时间取决于若干因素，如带宽、图像复杂性和服务器延迟。
 
 此外，在以交互方式操作相机时，客户端计算机（如工作站、笔记本或移动触控设备）的功能也很重要。 具备良好图形功能的相当强大的系统可以使交互式 3D 查看体验更流畅、更舒适。
 
-**预览3D资源**
+**在AEM中预览3D资产**
 
 1. 确保您已将 3D 资产上传到 AEM。See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
 1. 从AEM的导航页 **[!UICONTROL 面]** ，点按 **[!UICONTROL 资产>文件]**。
