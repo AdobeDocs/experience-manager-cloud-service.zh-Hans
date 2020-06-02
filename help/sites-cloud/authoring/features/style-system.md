@@ -1,18 +1,18 @@
 ---
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1310'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 
 # 样式系统{#style-system}
 
-样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以是组件的替代可视变体，使组件更灵活。
+样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 
 使用样式系统，您无需为每种样式开发自定义组件，也无需自定义组件对话框来启用此类样式功能。样式系统允许使用更多可重用组件，可以快速轻松地调整这些组件以满足内容作者的需求，而无需进行任何 AEM 后端开发。
 
@@ -22,7 +22,7 @@ ht-degree: 70%
 
 同样，内容作者不仅需要能够构建和布置他们的内容，还需要能够选择内容的可视呈现方式。
 
-样式系统为模板作者和内容作者的要求提供了统一的解决方案：
+样式系统针对模板作者和内容作者的要求提供了统一的解决方案：
 
 * 模板作者可以在组件的内容策略中定义样式类。
 * 之后，内容作者在页面上编辑组件时，可以从下拉列表中选择这些类，以便应用相应的样式。
@@ -31,7 +31,7 @@ ht-degree: 70%
 
 ## 概述 {#overview}
 
-使用样式系统通常采用以下形式。
+通常，可通过以下形式来使用样式系统。
 
 1. Web 设计人员创建组件的不同可视化变量。
 
@@ -57,11 +57,11 @@ ht-degree: 70%
 
 ## 用法 {#use}
 
-为了演示该功能，我们 [将以](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)WKND对核心组件的 [标题组件](https://www.adobe.com/go/aem_cmp_title_v2) 的实现为例。
+为了演示该功能，我们将使用核心组件的[标题组件](https://www.adobe.com/go/aem_cmp_title_v2_cn)的 [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 实施作为示例。
 
-The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+下面的[作为内容作者](#as-a-content-author)和[作为模板作者](#as-a-template-author)部分介绍了如何使用 WKND 样式系统来测试样式系统的功能。
 
-如果您希望将样式系统用于您自己的组件，请执行以下操作：
+如果您希望为自己的组件使用样式系统，请执行以下操作：
 
 1. 按照[概述](#overview)部分中的所述，将 CSS 作为客户端库进行安装。
 1. 按照[作为模板作者](#as-a-template-author)部分中的所述，配置您要向内容作者提供的 CSS 类。
@@ -69,8 +69,8 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 
 ### 作为内容作者 {#as-a-content-author}
 
-1. 安装WKND项目后，在上导航至WKND的英语母版主页并 `http://<host>:<port>/sites.html/content/wknd/language-masters/en` 编辑页面。
-1. 在页面的 **下方** ，选择一个标题组件
+1. 安装 WKND 项目后，导航到 WKND 的英语母版主页 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`，然后编辑该页面。
+1. 选择该页面下方的&#x200B;**标题**&#x200B;组件
 
    ![作者的样式系统](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
@@ -80,15 +80,15 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 
    >[!NOTE]
    >
-   >在此示例中，Colors **样式** (Black **、Gray** Styles **和GrayStyle**********************)是专用的，而Adobe StyleOptions(、RightJight、、和()可以合并为白色。 这可以[在模板中由模板作者进行配置](#as-a-template-author)。
+   >在此示例中，**颜色**&#x200B;样式（**黑色**、**白色**&#x200B;和&#x200B;**灰色**）是互斥的，而&#x200B;**样式**&#x200B;选项（**下划线**、**右对齐**&#x200B;和&#x200B;**最小间距**）则可以组合使用。这可以[在模板中由模板作者进行配置](#as-a-template-author)。
 
 ### 作为模板作者 {#as-a-template-author}
 
-1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
+1. 编辑 WKND 的英语母版主页 `http://<host>:<port>/sites.html/content/wknd/language-masters/en` 时，通过&#x200B;**页面信息 > 编辑模板**&#x200B;来编辑该页面的模板。
 
    ![编辑模板](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
-1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
+1. 通过点按或单击&#x200B;**标题**&#x200B;组件的&#x200B;**策略**&#x200B;按钮，编辑该组件的策略。
 
    ![编辑策略](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
 
@@ -110,13 +110,13 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 
 ## 设置 {#setup}
 
-核心组件版本2及更高版本已完全启用，可充分利用样式系统，无需额外配置。
+核心组件版本 2 及更高版本完全支持使用样式系统，并且无需进行额外配置。
 
-只需执行以下步骤，即为您自己的自定义组件启用样式系统，或在“编 [辑”对话框中启用可选的样式选项卡。](#enable-styles-tab-edit)
+只有为您自己的自定义组件启用样式系统，或者[在“编辑”对话框中启用可选的“样式”选项卡](#enable-styles-tab-edit)时，才需执行以下步骤。
 
 ### 在“设计”对话框中启用“样式”选项卡 {#enable-styles-tab-design}
 
-要使组件能够与AEM的样式系统一起使用并在其设计对话框中显示样式选项卡，组件开发人员必须在组件中包含具有以下设置的样式选项卡：
+为了使组件能够与 AEM 的样式系统结合使用并在其“设计”对话框中显示“样式”选项卡，组件开发人员必须通过对组件进行以下设置来包含“样式”选项卡：
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
@@ -125,16 +125,16 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 
 ### 在“编辑”对话框中启用“样式”选项卡 {#enable-styles-tab-edit}
 
-“编辑”对话框中的可选样式选项卡也可用。 与“设计对话框”选项卡不同，“编辑对话框”中的选项卡对于样式系统的功能而言并非必不可少，但对于内容作者来说，它是设置样式的可选替代界面。
+“编辑”对话框中的可选“样式”选项卡也可以使用。与“设计”对话框选项卡不同，“编辑”对话框中的选项卡对于样式系统的正常运行来说并不是必需的，但它是内容作者设置样式的可选替代界面。
 
-编辑对话框选项卡可以采用与设计对话框选项卡类似的方式：
+可以采用与“设计”对话框选项卡类似的方式包括“编辑”对话框选项卡：
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
 >
->默认情况下，“编辑”对话框上的“样式”选项卡未启用。
+>默认情况下，“编辑”对话框中的“样式”选项卡处于未启用状态。
 
 ### 具有元素名称的样式 {#styles-with-element-names}
 
