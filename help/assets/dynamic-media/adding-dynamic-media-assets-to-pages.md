@@ -2,9 +2,9 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何在AEM中将Dynamic Media组件添加到页面
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
+source-wordcount: '3137'
 ht-degree: 32%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 32%
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-向页面添加Dynamic Media、交互式媒体、全景媒体或视频360媒体组件与向任何页面添加组件相同。 以下部分介绍了Dynamic Media组件。
+向页面添加3D媒体、动态媒体、交互式媒体、全景媒体、智能裁剪视频或视频360媒体组件与向任何页面添加组件相同。 以下部分介绍了Dynamic Media组件。
 
 **将Dynamic Media组件添加到页面**
 
@@ -51,7 +51,7 @@ ht-degree: 32%
 
    Dynamic Media Video 360媒体组件。
 
-1. 完成后，在对话框的右上角附近，点按复选标记以保存更改。
+1. 完成后，在对话框的右上角，点按复选标记以保存更改。
 
 ### 启用Dynamic Media组件 {#enabling-dynamic-media-components}
 
@@ -264,7 +264,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 >
 >但是，您可以对页面中使用相同类型资产的所有交互式媒体组件使用相同的查看器预设。
 
-![chlimage_1-175](assets/chlimage_1-541.png)
+![chlimage_1-174](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
