@@ -1,11 +1,11 @@
 ---
 sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
-translation-type: ht
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: ht
-source-wordcount: '181'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,6 +40,8 @@ ht-degree: 100%
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
    + [为 AEM 云服务配置 OSGi](deploying/configuring-osgi.md)
-+ 云中的调度程序 {#dispatcher}
-   + [云中的调度程序](dispatcher/overview.md)
-   + [AEM 云服务中的内容交付](dispatcher/content-delivery.md)
++ 内容投放概述 {#content-delivery}
+   + [内容投放流](dispatcher/overview.md)
+   + [云中的调度程序](dispatcher/disp-overview.md)
+   + [AEM中的CDN即云服务](dispatcher/cdn.md)
+   + [在AEM中缓存为云服务](dispatcher/caching.md)
