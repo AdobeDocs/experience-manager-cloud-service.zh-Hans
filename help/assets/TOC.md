@@ -2,7 +2,7 @@
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 translation-type: tm+mt
-source-git-commit: c34250c84cc3eaed56e1369cadd948ba9a1cc483
+source-git-commit: a6731a1a5476b1d6697bb01e5311e9acfc5016df
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 99%
@@ -86,7 +86,7 @@ ht-degree: 99%
    + [智能图像处理](dynamic-media/imaging-faq.md)
    + [传送 Dynamic Media 资产](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](dynamic-media/hotlink-protection.md)
-   + [3D图像](dynamic-media/assets-3d.md)
+   + [3D图像](/help/assets/dynamic-media/assets-3d.md)
    + [图像集](dynamic-media/image-sets.md)
    + [全景图像](dynamic-media/panoramic-images.md)
    + [混合媒体集](dynamic-media/mixed-media-sets.md)
