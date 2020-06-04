@@ -2,10 +2,10 @@
 title: 导航
 description: 导航——云服务
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -18,20 +18,44 @@ ht-degree: 2%
 
 ![](assets/first_timelogin1.png)
 
-## SysAdmin访问 {#sysadmin-access}
+## SysAdmin任务 {#sysadmin-tasks}
 
-具有SysAdmin角色的用户可以通过单击访问Admin Console中的位置，管理Cloud Manager的用户角色或权限。
+具有SysAdmin角色的用户现在可以直接访问Admin Console来管理角色和权限以及访问AEM实例。
 
 ### 管理角色 {#manage-roles}
 
-作为SysAdmin中的用户，“添 **加登陆页** ”旁的项目上提供 **“管理角色”**&#x200B;选项。 这样，您只需单击一次，即可在Admin Console中访问可管理用户角色或云管理器权限的位置。
+作为SysAdmin角色的用户，您可以通过一键访问Admin Console中的 **位置** ，管理Cloud Manager的用户角色或权限。
 
-有关如何 [将用户添加到用户档案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，请参阅访问云管理器以获取更多信息，请参阅访问云管理器
+有关如何 [将用户添加到用户档案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，请参阅访问云管理器。
 
-### 管理对AEM的访问 {#manage-access-aem}
+>[!NOTE]
+>对于在2020年1月之前获得AEM云服务访问权限的某些组织，这些组织将转至Adobe Admin Console，并且必须选择产品和环境产品用户档案。
 
-作为SysAdmin中的用户，您可以直接从云管理器单击访问作者实例。
+1. 导航到云管理器的登陆页，然后单击管 **理访问**。
+
+   ![](assets/sys-admin1.png)
+
+1. 单击管 **理访问** ，将导航 **到Admin Console** ，从中管理用户角色或云管理器权限。
+
+   ![](assets/sys-admin2.png)
+
+### 管理对作者实例的访问 {#manage-access-aem}
+
+作为SysAdmin角色的用户，您只需单击一下即可访问Admin **Console** ，从中可以直接导航到作者实例并管理访问权限。
+
+>[!NOTE]
+>对于在2020年1月之前获得AEM云服务访问权限的某些组织，这些组织将转至Adobe Admin Console，并且必须选择产品和环境产品用户档案。
+
 有关更 [多详细信息，请参阅将AEM中的实例作为云服务访问](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 。
+
+1. 导航 **至** “概述”页面 *的环境卡* ，或导航至 **“环境”页面** ，以使用“管 **** 理访问”选项，如下图所示。
+
+   ![](assets/manage-access1.png)
+
+1. 单击 **管理访** 问会导 **航到Admin Console** ，您可以从中访问环境的作者实例。
+
+   ![](assets/sys-admin3.png)
+
 
 ## 针对现有AMS客户 {#existing-aem}
 
