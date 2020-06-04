@@ -2,9 +2,9 @@
 title: 创建项目-云服务
 description: 创建项目-云服务
 translation-type: tm+mt
-source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
+source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,11 @@ ht-degree: 0%
 
    ![](assets/create-program-a1.png)
 
+## 删除沙箱项目 {#delete-sandbox-program}
 
+业务所有者或云管 *理器中**的部署管理器角色的沙箱项目* ，可以通过云管理器UI删除其生产环境集和阶段集。
+
+删除选项可从“概述”页面上的 *环境* 卡和环境页 **面使用** 。 在生产或舞台上选择删除选项也会删除集合中的另一个。
 
 ## 创建常规项目 {#create-regular-program}
 
