@@ -2,9 +2,9 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何在AEM中将Dynamic Media组件添加到页面
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3124'
 ht-degree: 32%
 
 ---
@@ -34,10 +34,6 @@ ht-degree: 32%
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. 拖动 **[!UICONTROL Dynamic Media]** 组件，将其放到页面上的所需位置。
-
-   在以下示例中， **[!UICONTROL 正在使用Video]** 360 Media组件。
-
-   ![6_5_360video_wcmcomponent拖动](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. 将鼠标指针直接悬停在组件上。 当组件被蓝色框包围时，点按一次以显示组件的工具栏。 点按配 **[!UICONTROL 置（扳手）图]** 标。
 
@@ -121,6 +117,7 @@ Dynamic Media组件是智能的。 根据您添加的是图像还是视频，您
 >
 >* 在同一页面上使用的Dynamic Media组件的多个实例。
 >* 每个实例都使用相同的资产类型。
+
 >
 >
 请注意，不支持为该页面上的每个Dynamic Media组件分配不同的查看器预设。
@@ -200,6 +197,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    * 将题注文件与视频关联： [字幕](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * 将导航文件与视频关联： [导航](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Title**—— 更改视频的标题。
@@ -258,6 +256,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 >
 >* 在同一页面上使用的交互式媒体组件的多个实例。
 >* 每个实例都使用相同的资产类型。
+
 >
 >
 请注意，不支持为该页面上的每个交互式媒体组件分配不同的查看器预设。
@@ -299,6 +298,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 >
 >* 在同一页 **[!UICONTROL 面上使用]** Panoramic Media组件的多个实例。
 >* 每个实例都使用相同的资产类型。
+
 >
 >
 请注意，不支持为该页面上的每个&#x200B;**[!UICONTROL 全景媒体]**&#x200B;组件分配不同的查看器预设。
