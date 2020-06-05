@@ -1,8 +1,11 @@
 ---
 title: 已知问题
 description: 特定于 Adobe Experience Manager 云服务已知问题的发行说明
-translation-type: ht
-source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 96%
 
 ---
 
@@ -31,13 +34,12 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 Adobe Experience Manager Assets 中有一些依赖于基础功能的功能在 Experience Manager 云服务部署架构尚不可用，这些功能预计将在稍后的阶段中启用：
 
-* 利用 Adobe I/O 的 AI 服务的增强型智能标记功能暂时不可用。
 * 由于依赖于商务集成框架 API，当前未启用以下功能：
    * 照片拍摄工作流模型。
    * 未填充资产属性用户界面中的“产品信息”选项卡。
 * 由于依赖于 InDesign 服务器集成，当前未启用以下功能：
    * 资产模板和资产目录。
-   * InDesign 文件的多页预览。
+   * 多页预览Adobe InDesign文件。
 
 >[!MORELIKETHIS]
 >
