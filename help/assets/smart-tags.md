@@ -3,15 +3,15 @@ title: 使用人工智能服务标记图像。
 description: 使用人为智能服务标记图像，这些服务使用Adobe Sensei服务应用上下文和描述性商业标签。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 5%
 
 ---
 
 
-# 使用智能服务标记图像 {#smart-tag-assets}
+# 培训智能标签服务并标记图像 {#train-service-tag-assets}
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 本质上，它包含一列表关键字，员工、合作伙伴和客户通常使用这些关键字来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保通过基于标签的搜索轻松识别和检索资产。
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 要使用智能标记，请完成以下任务:
 
-* [将Experience Manager与Adobe I/O集成](#integrate-aem-with-aio)。
+* [将Experience Manager与Adobe Developer Console集成](#integrate-aem-with-aio)。
 * [了解标签模型和准则](#understand-tag-models-guidelines)。
 * [训练模型](#train-model)。
 * [标记您的数字资产](#tag-assets)。
@@ -35,11 +35,11 @@ ht-degree: 5%
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## 与 [!DNL Experience Manager] Adobe I/O集成 {#integrate-aem-with-aio}
+## 与Adobe [!DNL Experience Manager] Developer Console集成 {#integrate-aem-with-aio}
 
-您可以使 [!DNL Adobe Experience Manager] 用Adobe I/O与智能标记集成。 使用此配置从中访问智能标记服务 [!DNL Experience Manager]。
+您可以使 [!DNL Adobe Experience Manager] 用Adobe开发人员控制台与智能标记集成。 使用此配置从中访问智能标记服务 [!DNL Experience Manager]。
 
-请参 [阅配置Experience Manager以智能标记资产](smart-tags-configuration.md) ，以便任务配置智能标记。 在后端，服务器 [!DNL Experience Manager] 在将请求转发到智能标记服务之前，使用Adobe I/O网关验证您的服务凭据。
+请参 [阅配置Experience Manager以智能标记资产](smart-tags-configuration.md) ，以便任务配置智能标记。 在后端，服务器在将 [!DNL Experience Manager] 您的请求转发到智能标记服务之前，使用Adobe开发人员控制台网关验证您的服务凭据。
 
 ## 了解标签模型和准则 {#understand-tag-models-guidelines}
 
@@ -103,18 +103,18 @@ ht-degree: 5%
 1. 单击&#x200B;**[!UICONTROL 创建]**。提供标 **[!UICONTROL 题]**、 **[!UICONTROL 说明]**。
 1. 浏览并选择要培训模型的 `cq:tags` 现有标记中的标记。 单击&#x200B;**[!UICONTROL 下一步]**。
 1. 在选择 **[!UICONTROL 资产对话框中]** ，单击每 **[!UICONTROL 个标记]** 对应的“添加资产”。 在DAM存储库中搜索或浏览存储库以选择至少10张和最多50张图像。 选择资产，而不是文件夹。 选择图像后，单击“选 **[!UICONTROL 择]**”。
-1. 要预览选定图像的缩览图，请单击标记前面的折叠面板。 您可以通过单击添加资产来修 **[!UICONTROL 改您的选择]**。 对选择满意后，单击“提 **[!UICONTROL 交”]**。 用户界面在页面底部显示通知，指示已开始培训。
-1. 检查每个标记模型的“状 **[!UICONTROL 态]** ”列中培训的状态。 可能的状态 [!UICONTROL 有]“待 [!UICONTROL 定”]、“已 [!UICONTROL 培训”]。
+1. 要预览选定图像的缩览图，请单击标记前面的折叠面板。 您可以通过单击添加资产来修 **[!UICONTROL 改您的选择]**。 对选择满意后，单击“提 **[!UICONTROL 交”]**。 The user interface displays a notification at the bottom of the page indicating that the training is initiated.
+1. Check the status of the training in the **[!UICONTROL Status]** column for each tag model. 可能的状态 [!UICONTROL 有]“待 [!UICONTROL 定”]、“已 [!UICONTROL 培训”]。
 
 ![为智能标记培训标记模型的工作流](assets/smart-tag-model-training-flow.png)
 
-*图： 培训工作流中用于培训标记模型的步骤。*
+*Figure: Steps of the training workflow to train tagging model.*
 
 ### 视图培训状态和报告 {#training-status}
 
 要检查是否已针对资产培训集中的标记对智能标记服务进行了培训，请从“报告”控制台查看培训工作流报告。
 
-1. 在界 [!DNL Experience Manager] 面中，转到工 **[!UICONTROL 具>资产>报表]**。
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools > Assets > Reports]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. 指定报表的标题和描述。在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。Then, click **[!UICONTROL Create]** from the toolbar.
