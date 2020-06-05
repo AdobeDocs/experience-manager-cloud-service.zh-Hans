@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 云服务 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 7%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## AEM Sites 的新增功能 {#aem-sites}
 
 阅读本节内容，了解 AEM 云服务版本 2020.6.0 中 AEM Sites 的新增功能和更新。
+
+### 新增功能 {#whats-new-2020.6.0}
+
+核心组件版本2.9.0 [现已作](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 为AEM Sites的一部分提供，包括：
+
+* Adobe Client [数据层与核心组件](https://github.com/adobe/adobe-client-data-layer) 之间的集成
+* 所有组件的可配置HTML ID属性
+* 新的进度栏组件
+* 许多错误修复
 
 ### 错误修复 {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ AEM作为云服务SDK API Jar（以前在该位置托管）现在位于Maven Cen
 
 * 在云管理器中 *具有* “业务所有者”角色的用户现在可以从登陆页(通过项目卡上的快速操作按钮)或项目中删除沙箱项目。
 
-* 现在，在云管理器 *中，业务* 所 *有者或部署管理器角色中的沙箱项目* ，可以通过云管理器UI删除其生产环境集和阶段集。 现在，可从概述页面和环境页面上的环境卡中使用删除选项。 在生产或舞台上选择删除选项也会删除集合中的另一个。
+   有关更多 [详细信息，请参阅](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) “删除沙箱”项目。
+
+* 现在，在云管理器 *中，业务* 所 *有者或部署管理器角色中的沙箱项目* ，可以通过云管理器UI删除其生产环境集和阶段集。 删除选项现在可从环境概述页面和 **项目页面** 上的环境卡 **中使用** 。 在生产或舞台上选择删除选项也会删除集合中的另一个。
+
+   有关更多 [详细信息，请参阅](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) “删除沙箱”项目。
 
 * 指导登陆页上的标记，以告知和指导用户基本导航。
 
-* 指导“概述 ** ”页面上的标记，以通知并指导用户在云管理器中进行基本导航，以开始这些导航。
+* 指导项目概 **述页面上** 的标记，以通知并指导用户在云管理器中进行基本导航，以开始这些导航。
 
 * “ **学习** ”页面现在在云管理器中可用，可通过顶部导航访问。 本页包含可帮助用户了解与他们在云管理器中分配的角色相关、最常使用的工作流的资源。
 
-* 沙箱项目现在通过沙箱 **徽章** 进行标识，该徽章将显示在登陆页卡上的项目卡上以及“概述”页中的项目名 *称旁* 。
+* 沙箱项目现在通过沙箱 **徽章** 进行标识，该徽章将显示在项目卡上的项目 **，以及登陆页概述页中的项目名** 称旁边。
 
-* 具有SysAdmin角 *色的用户* ，现在只需单击一下即可访问Admin Console中的位置，从中可以管理用户角色或云管理器权限。 在 **“添加** 项目”按钮旁的登陆页上将显示“ **管理角色** ”按钮。
+* 具有SysAdmin角色的用户现在可通过单击访问Admin Console中的位置，从中管理用户角色或云管理器权限。 现 **在，“** Add Access(添加登陆页) **”按钮旁边的项目上** 有“Manage Access（管理访问）”按钮。
 
-* 具有SysAdmin角色的用户现在可以通过CM单击一次访问创作实例。
+   有关更多 [详细信息](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) ，请参阅SysAdmin任务。
+
+* 具有SysAdmin角色的用户现在可以通过单击访问直接从云管理器创建实例。
+
+   有关更多 [详细信息，请参阅管理对作者实例的访问](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) 。
 
 * 生成日志现在包含已发现对象的列表，包括跳过的内容包。
 
@@ -77,7 +94,7 @@ AEM作为云服务SDK API Jar（以前在该位置托管）现在位于Maven Cen
 
 * 在某些情况下，“创建项目”对 **话框中的图** 标未对齐。
 
-* AEM版本标识符在概述页面上显示 *不一* 致。
+* AEM版本标识符在“项目概述”页面 **上显示不** 一致。
 
 * 配置生产管道时，某些 **客户看不到** “计划部署”选项。
 
