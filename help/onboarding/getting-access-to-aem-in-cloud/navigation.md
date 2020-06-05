@@ -2,9 +2,9 @@
 title: 导航
 description: 导航——云服务
 translation-type: tm+mt
-source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
+source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,9 @@ ht-degree: 1%
 
    ![](assets/sys-admin5.png)
 
-1. 单击管 **理访问** ，将导航 **到Admin Console** ，从中管理用户角色或云管理器权限。
+1. 单击管理访 **问权**，即可导航到Admin Console **** ，从中可以管理Cloud Manager的用户角色或权限。
+
+   ![](assets/sys-admin1.png)
 
 ### 管理对作者实例的访问 {#manage-access-aem}
 
@@ -46,17 +48,17 @@ ht-degree: 1%
 
 有关更 [多详细信息，请参阅将AEM中的实例作为云服务访问](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 。
 
-1. 从“环境 **概述** ”页面 **导航到** “项目卡”。
+1. 从“环境 **概述** ”页面导 **航到项目卡** ，然后单击“管 **理访问权限**”。
 
    ![](assets/sys-admin6.png)
 
    或者，
 
-   单击 **环境** 卡中的 **详细信** 息，以打开环境页面。 单击 **管理** ->管 **理访问**。
+   **如果单击** 环境卡中的“详细信 **息”，则也可** 以从“管理 **”按钮访问** “管理 **访问** ”。
 
    ![](assets/sys-admin4.png)
 
-1. 单击 **管理访** 问会导 **航到Admin Console** ，您可以从中访问环境的作者实例。
+1. 单击“管 **理访问**”后，您将从您有权 **访问该环境的作者实例的Admin Console** 。
 
 ## 针对现有AMS客户 {#existing-aem}
 
