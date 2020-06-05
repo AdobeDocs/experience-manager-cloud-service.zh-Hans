@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 云服务 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 7%
 
 ---
@@ -120,17 +120,12 @@ PM/EM review required before publishing.
 
 **支持3D内容的摄取、预览和投放**
 
-组织现在可以在AEM资产中存储和使用3D文件。 用户可以上传、预览和利用各种核心3D文件，包括。obj、.stl、.gltf和。glb文件。 此外，还可 [!DNL Dynamic Media]以通过不可知的URL或查看器配置和提供3D体验。 这包括3 [!DNL Dynamic Media] D Experience Viewer、Sites 3D Viewer组件，以及通过(AR/VR)交付3D [!DNL Dynamic Media] 文件的功能。
-
-<!-- TBD: Add link to the DM help article, if any. -->
+组织现在可以在AEM资产中存储和使用3D文件。 用户可以上传、预览和利用各种核心3D文件，包括。obj、.stl、.gltf和。glb文件。 此外，还可 [!DNL Dynamic Media]以通过不可知的URL或查看器配置和提供3D体验。 这包括3 [!DNL Dynamic Media] D Experience Viewer、Sites 3D Viewer组件，以及通过(AR/VR)交付3D [!DNL Dynamic Media] 文件的功能。 See [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **辅助功能增强**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * 用户界面元素、控件和输入表单字段可使用键盘访问。
 * 更改某些界面元素的颜色或对比度，使视觉受限且无颜色感知的用户能够更清楚地识别这些元素。 例如，资产现在在“属性”页面和卡视图的星 [!UICONTROL 级] 图标中具有适当的对比度。
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **其他增强功能**
 
 该版本提供了以下附加增强功能：
 
-* 资产用户界面的辅助功能改进。
 * 能够使用资产处理用户档案重新处理资产，让用户完全控制该流程(运行完全资产处理，只需应用特定处理用户档案，并决定是否应运行后期处理工作流)。
 * 当基础群集实例在后台重新启动时，搜索查询返回结果的速度会更快（在以前的情况下，初始搜索运行可能会持续更长时间）。
-* 在资产界面的列表视图和搜索结果中查看资产时，按“名称”排序。
-* 在“资产”界面的列表视图和搜索结果中查看资产时，按“创建日期”进行排序。
-* 支持将EPS文件转换为图像。
+* 在资产界面的列表视图和搜索结果中查看资产时，按“名称”排序。 请参阅 [搜索资产](/help/assets/search-assets.md#sort)。
+* 在“资产”界面的列表视图和搜索结果中查看资产时，按“创建日期”进行排序。 请参阅 [搜索资产](/help/assets/search-assets.md#sort)。
+* 支持使用资源microservices将EPS文件转换为图像。
 
 ### 错误修复 {#assets-bug-fixes}
 
