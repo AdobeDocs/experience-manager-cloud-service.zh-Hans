@@ -2,9 +2,9 @@
 title: 创建项目-云服务
 description: 创建项目-云服务
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 或者，
 
-从“ **概述** ”页中选 *择“删* 除项目”以删除沙箱项目。
+从“ **项目** ”概 **述页中选** 择“删除项目”以删除沙箱项目。
 
 ![](assets/delete-sandbox2.png)
 
