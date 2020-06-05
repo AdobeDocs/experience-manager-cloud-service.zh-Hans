@@ -1,13 +1,16 @@
 ---
-title: Adobe Experience Manager作为Assets HTTP API中的云服务内容片段支持
-description: 了解Adobe Experience Manager作为Assets HTTP API中的云服务内容片段支持。
+title: Adobe Experience Manager作为资产HTTP API中的云服务内容片段支持
+description: 了解Adobe Experience Manager作为资产HTTP API中的云服务内容片段支持。
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 2%
 
 ---
 
 
-# AEM Assets HTTP API中的内容片段支持{#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API 中的内容片段支持{#content-fragments-support-in-aem-assets-http-api}
 
 ## 概述 {#overview}
 
@@ -17,19 +20,20 @@ source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 >
 >* 资产REST API
 >* 包括对内容片段的支持
+
 >
 >
-Assets HTTP API的当前实现基于 [REST体系结](https://en.wikipedia.org/wiki/Representational_state_transfer) 构样式。
+当前的Assets HTTP API实现基于REST体系 [结构](https://en.wikipedia.org/wiki/Representational_state_transfer) 样式。
 
-Assets [](/help/assets/mac-api-assets.md) REST API允许Adobe Experience Manager作为云服务的开发人员通过CRUD操作（创建、读取、更新、删除）直接通过HTTP API访问内容（存储在AEM中）。
+Assets [REST API](/help/assets/mac-api-assets.md) （Adobe Experience Manager的Cloud Service）允许开发人员通过CRUD操作（创建、读取、更新、删除）直接通过HTTP API访问内容（存储在AEM中）。
 
-该API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为无外设CMS(内容管理系统)的云服务进行操作。 或可以执行HTTP请求和处理JSON响应的任何其他应用程序。
+API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为无外设CMS(内容管理系统)运行为云服务。 或可以执行HTTP请求和处理JSON响应的任何其他应用程序。
 
 例如，单页应用程序(SPA)、基于框架或自定义，需要通过HTTP API提供的内容，通常采用JSON格式。
 
-虽然 [AEM核心组件提供了一个非常全面、灵活且可自定义的API](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) ，它可以为此目的提供所需的读取操作，并且其JSON输出可以自定义，但它们的确需要AEM WCM(Web内容管理)专门技术来实现，因为它们必须在基于专用AEM模板的页面中托管。 并非每个SPA开发组织都能直接获得此类知识。
+虽然 [AEM核心组件提供非常全面](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 、灵活且可自定义的API，可为此目的提供所需的读取操作，并且可以自定义其JSON输出，但它们确实需要AEM WCM(Web内容管理)专门技术才能实现，因为它们必须托管在基于专用AEM模板的页面中。 并非每个SPA开发组织都可以直接获得此类知识。
 
-此时，可以使用资产REST API。 它允许开发人员直接访问资产（例如，图像和内容片段），无需先将资产嵌入到页面中，然后以序列化JSON格式交付其内容。
+此时可以使用资产REST API。 它允许开发人员直接访问资产（例如图像和内容片段），无需先将资产嵌入页面，然后以序列化JSON格式提供其内容。
 
 >[!NOTE]
 >
@@ -39,21 +43,21 @@ Assets REST API还允许开发人员通过创建新资产、更新或删除现�
 
 资产REST API:
 
-* 遵循 [HATEOAS原则](https://en.wikipedia.org/wiki/HATEOAS)
+* 遵循HATEOAS [原则](https://en.wikipedia.org/wiki/HATEOAS)
 
 * 实现 [SIREN格式](https://github.com/kevinswiber/siren)
 
 ## 前提条件 {#prerequisites}
 
-Assets REST API可用于近期Adobe Experience Manager作为云服务版本的每次开箱即用安装。
+Assets REST API可用于最近安装的Adobe Experience Manager（作为云服务版本）的每个现成安装。
 
 ## 重要概念 {#key-concepts}
 
-资产REST API可优惠 [对AEM实例中存储的资](https://en.wikipedia.org/wiki/Representational_state_transfer)产的REST样式访问。
+资产REST API可优惠 [对](https://en.wikipedia.org/wiki/Representational_state_transfer)AEM实例中存储的资产进行REST样式访问。
 
-它使用端 `/api/assets` 点并需要资产的路径才能访问它(不带前导 `/content/dam`)。
+它使用端 `/api/assets` 点，并需要资产的路径才能访问它(不带前导 `/content/dam`)。
 
-* 这意味着要访问资产，请访问：
+* 这意味着要在以下位置访问资产：
    * `/content/dam/path/to/asset`
 * 您需要申请：
    * `/api/assets/path/to/asset`
@@ -62,8 +66,8 @@ Assets REST API可用于近期Adobe Experience Manager作为云服务版本的�
 
 >[!NOTE]
 >访问：
->* `/api/assets` 不 **需要** ，请使用选择 `.model` 器。
->* `/content/assets` 确 **实** 需要使用选择 `.model` 器。
+>* `/api/assets` **不需要** “选择器”的 `.model` 使用。
+>* `/content/assets` **需要** 使用选择 `.model` 器。
 
 
 HTTP方法确定要执行的操作：
@@ -75,7 +79,7 @@ HTTP方法确定要执行的操作：
 
 >[!NOTE]
 >
->请求体和／或URL参数可用于配置其中的一些操作；例如，定义文件夹或资产应由 **POST请求创建** 。
+>请求主体和／或URL参数可用于配置其中的一些操作； 例如，定义文件夹或资产应由POST请求 **创建** 。
 
 <!--
 The exact format of supported requests is defined in the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference) documentation.
@@ -85,14 +89,14 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 所有请求都是原子的。
 
-这意味着，后续(`write`)请求不能合并到单个实体可能成功或失败的单个事务中。
+这意味着后续(`write`)请求不能合并为单个实体可能成功或失败的单个事务。
 
 ### AEM(Assets)REST API与AEM组件 {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
   <tr>
-   <td>长宽比</td>
+   <td>长宽</td>
    <td>资产REST API<br/> </td>
    <td>AEM组件<br/> （使用Sling Models的组件）</td>
   </tr>
@@ -101,24 +105,24 @@ The exact format of supported requests is defined in the [API Reference](/help/a
   <tr>
    <td>支持的用例</td>
    <td>一般用途。</td>
-   <td><p>针对单页应用程序(SPA)或任何其他（内容消耗）上下文中的使用情况进行了优化。</p> <p>还可以包含布局信息。</p> </td>
+   <td><p>针对单页应用程序(SPA)或任何其他（内容使用）上下文中的使用情况进行了优化。</p> <p>还可以包含布局信息。</p> </td>
   </tr>
   <tr>
    <td>支持的操作</td>
-   <td><p>创建、读取、更新、删除。</p> <p>根据实体类型使用其他操作。</p> </td>
+   <td><p>创建、读取、更新、删除。</p> <p>根据实体类型，使用其他操作。</p> </td>
    <td>只读.</td>
   </tr>
   <tr>
    <td>访问</td>
-   <td><p>可以直接访问。</p> <p>使用映射 <code>/api/assets </code>到（在存储库中） <code>/content/dam</code> 的端点。</p> 
+   <td><p>可以直接访问。</p> <p>使用映 <code>/api/assets </code>射到(在 <code>/content/dam</code> 存储库中)的端点。</p> 
    <p>示例路径如下： <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>需要通过AEM页面上的AEM组件引用。</p> <p>使用选 <code>.model</code> 择器创建JSON表示。</p> <p>示例路径如下：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>需要通过AEM页面上的AEM组件进行引用。</p> <p>使用选 <code>.model</code> 择器创建JSON表示。</p> <p>示例路径如下：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
    <td>安全</td>
-   <td><p>可能有多个选项。</p> <p>OAuth被提出；可以与标准设置分开配置。</p> </td>
+   <td><p>可以使用多个选项。</p> <p>OAuth被提出； 可以与标准设置分开配置。</p> </td>
    <td>使用AEM的标准设置。</td>
   </tr>
   <tr>
@@ -128,22 +132,23 @@ The exact format of supported requests is defined in the [API Reference](/help/a
   </tr>
   <tr>
    <td>输出</td>
-   <td>基于JSON的SIREN输出：冗长，但功能强大。 允许在内容中导航。</td>
-   <td>基于JSON的专有输出；可通过Sling Models进行配置。 导航内容结构很难实现（但不一定不可能）。</td>
+   <td>基于JSON的SIREN输出： 详细，但功能强大。 允许在内容中导航。</td>
+   <td>基于JSON的专有输出； 可通过Sling Models进行配置。 导航内容结构很难实现（但不一定不可能）。</td>
   </tr>
  </tbody>
 </table>
 
 ### 安全 {#security}
 
-如果在环境中使用资产REST API时没有特定的身份验证要求，则需要正确配置AEM的CORS过滤器。
+如果在环境中使用资产REST API时没有特定的身份验证要求，则需要正确配置AEM的CORS筛选器。
 
 >[!NOTE]
 >
 >有关更多信息，请参阅：
 >
->* [CORS/AEM说明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+>* [CORS/AEM已说明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [视频——使用AEM为CORS进行开发](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -152,27 +157,27 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 ## 可用功能 {#available-features}
 
-内容片段是资产的一种特定类型，请参阅 [使用内容片段](/help/assets/content-fragments/content-fragments.md)。
+内容片段是特定类型的资产，请参 [阅使用内容片段](/help/assets/content-fragments/content-fragments.md)。
 
 有关通过API提供的功能的更多信息，请参阅：
 
 * 资 [产REST API](/help/assets/mac-api-assets.md)
-* [实体类型](/help/assets/assets-api-content-fragments.md#entity-types)，其中说明了特定于每个支持类型的功能（与内容片段相关）
+* [实体类型](/help/assets/assets-api-content-fragments.md#entity-types)，其中说明了特定于每种支持类型的功能（与内容片段相关）
 
 ### 分页 {#paging}
 
 资产REST API支持通过URL参数进行分页（对于GET请求）:
 
-* `offset` -要检索的第一个（子）实体的数量
+* `offset` -要检索的第一个（子）实体的编号
 * `limit` -返回的最大实体数
 
-响应将包含作为SIREN输出部分的一 `properties` 部分的寻呼信息。 此属 `srn:paging` 性包含请求中指定的（子）实体( `total`)总数、偏移量和限制( `offset`, `limit`)。
+该响应将包含作为SIREN输出部分的 `properties` 分页信息。 此 `srn:paging` 属性包含请求中指定的（子）实 `total`体()总数、偏移和 `offset`限制( `limit`,)。
 
 >[!NOTE]
 >
->分页通常应用于容器实体（即，与所请求实体的子实体相关的文件夹或具有演绎版的资产）。
+>分页通常应用于容器实体（即，具有演绎版的文件夹或资产），因为它与所请求实体的子项相关。
 
-#### 示例：分页 {#example-paging}
+#### 示例： 分页 {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -196,23 +201,23 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 文件夹用作资产和其他文件夹的容器。 它们反映了AEM内容存储库的结构。
 
-资产REST API公开了对文件夹属性的访问权；例如，其名称、标题等。 资产会作为文件夹的子实体和子文件夹公开。
+资产REST API公开对文件夹属性的访问权限； 例如，其名称、标题等。 资产会作为文件夹和子文件夹的子实体进行公开。
 
 >[!NOTE]
 >
->根据子资产和文件夹的资产类型，子实体的列表可能已包含定义相应子实体的完整属性集。 或者，在子实体的这一列表中，只能为实体公开缩减的属性集。
+>根据子资产和文件夹的资产类型，子实体的列表可能已包含定义相应子实体的完整属性集。 或者，在子实体的此列表中，只能为实体公开缩减的属性集。
 
 ### 资产 {#assets}
 
-如果请求资产，响应将返回其元数据；如标题、名称和由相关资产模式定义的其他信息。
+如果请求资产，响应将返回其元数据； 如标题、名称和由相关资产模式定义的其他信息。
 
-资产的二进制数据会作为类型(也称为 `content` SIREN)的SIREN链接公 `rel attribute`开。
+资产的二进制数据会作为类型(也称 `content` 为)的SIREN链 `rel attribute`接公开。
 
-资产可以有多个演绎版。 这些属性通常作为子实体公开，一个例外是缩略图再现，它作为类型()的链接公 `thumbnail` 开 `rel="thumbnail"`。
+资产可以有多个演绎版。 它们通常作为子实体公开，一个例外是缩略图再现，它作为类型()的链 `thumbnail` 接公 `rel="thumbnail"`开。
 
 ### 内容片段 {#content-fragments}
 
-内 [容片段](/help/assets/content-fragments/content-fragments.md) ，是一种特殊类型的资产。 它们可用于访问结构化数据，例如文本、数字、日期等。
+内 [容片段](/help/assets/content-fragments/content-fragments.md) 是一种特殊类型的资产。 它们可用于访问结构化数据，如文本、数字、日期等。
 
 由于标准资产(如图 *像* 或音频)存在若干差异，因此处理这些资产时会应用一些其他规则。
 
@@ -220,14 +225,14 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 内容片段：
 
-* 请勿公开任何二进制数据。
+* 不要公开任何二进制数据。
 * 完全包含在JSON输出中(在属 `properties` 性中)。
 
-* 也被视为原子，即元素和变量作为片段属性的一部分而暴露，而作为链接或子实体。 这允许有效访问片段的有效负荷。
+* 也被视为原子，即元素和变量作为片段属性的一部分而暴露，而不是作为链接或子实体。 这允许有效访问片段的有效负荷。
 
 #### 内容模型和内容片段 {#content-models-and-content-fragments}
 
-目前，定义内容片段结构的模型不会通过HTTP API公开。 因此， *消费者需要* 了解片段的模型（至少是最小值）—尽管大多数信息可以从有效负荷推断出来；数据类型等。 是定义的一部分。
+目前，定义内容片段结构的模型不会通过HTTP API公开。 因此， *消费者* 需要了解片段的模型（至少是最小值）—尽管大多数信息都可以从负载中推断出来； 数据类型等。 是定义的一部分。
 
 要创建新内容片段，必须提供模型的（内部存储库）路径。
 
@@ -237,12 +242,12 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 ## 使用 {#using}
 
-使用情况可能因您使用的是AEM作者环境还是发布环境以及特定用例而异。
+使用情况可能因您使用的是AEM作者环境还是发布以及特定用例而异。
 
-* 创建严格绑定到作者实例([目前没有方法使用此API将片段复制到发布](/help/assets/assets-api-content-fragments.md#limitations))。
+* 创建严格绑定到作者实[例(目前没有方法使用此API复制要发布的片段](/help/assets/assets-api-content-fragments.md#limitations))。
 * 投放可以同时从两者进行，因为AEM仅以JSON格式提供请求的内容。
 
-   * AEM作者实例的存储和投放应足以支持防火墙后的媒体库应用程序。
+   * AEM作者实例的存储和投放应足以用于防火墙后的媒体库应用程序。
 
    * 对于实时Web投放，建议使用AEM发布实例。
 
@@ -266,12 +271,12 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-响应是序列化JSON，其内容结构如内容片段中所示。 引用作为引用URL提供。
+响应采用内容片段中的结构化内容进行序列化JSON。 引用作为引用URL提供。
 
-可以执行两种类型的读取操作：
+可以执行两种读操作：
 
 * 按路径读取特定内容片段，这将返回内容片段的JSON表示形式。
-* 按路径读取内容片段的文件夹：这将返回文件夹内所有内容片段的JSON表示形式。
+* 按路径读取内容片段的文件夹： 这将返回文件夹中所有内容片段的JSON表示形式。
 
 ### 创建 {#create}
 
@@ -279,7 +284,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 `POST /{cfParentPath}/{cfName}`
 
-主体必须包含要创建的内容片段的JSON表示形式，包括应在内容片段元素上设置的任何初始内容。 必须设置属性， `cq:model` 并且必须指向有效的内容片段模型。 否则将导致错误。 还必须添加设置为 `Content-Type` 的标题 `application/json`。
+主体必须包含要创建的内容片段的JSON表示形式，包括应在内容片段元素上设置的任何初始内容。 必须设置属性 `cq:model` ，并且必须指向有效的内容片段模型。 否则将导致错误。 还必须添加设置为 `Content-Type` 的标题 `application/json`。
 
 ### 更新 {#update}
 
@@ -287,9 +292,9 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 `PUT /{cfParentPath}/{cfName}`
 
-主体必须包含要为给定内容片段更新的内容的JSON表示形式。
+主体必须包含要为给定内容片段更新内容的JSON表示形式。
 
-这可以只是内容片段的标题或描述，或单个元素，或所有元素值和／或元数据。
+这可以只是内容片段的标题或描述、单个元素或所有元素值和／或元数据。
 
 ### 删除 {#delete}
 
@@ -299,18 +304,18 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 ## 限制 {#limitations}
 
-存在一些限制：
+有一些限制：
 
-* **无法编写和更新变体。** 如果将这些变量添加到有效负荷（例如，对于更新），则忽略它们。 但是，变体将通过投放( `GET`)提供。
+* **无法编写和更新变量。** 如果将这些变量添加到有效负荷（例如，用于更新），则将忽略它们。 但是，变体将通过投放( `GET`)提供。
 
-* **当前不支持内容片段模型**:无法读取或创建它们。 要能够创建新内容片段或更新现有内容片段，开发人员必须知道内容片段模型的正确路径。 目前，只有通过管理UI才能获得这些内容的概述。
-* **将忽略引用**。 当前不检查是否引用了现有内容片段。 因此，例如，删除内容片段可能会导致页面上出现包含对已删除内容片段的引用的问题。
+* **当前不支持内容片段模型**: 无法读取或创建。 为了能够创建新内容片段或更新现有内容片段，开发人员必须知道内容片段模型的正确路径。 目前，获取这些概述的唯一方法是通过管理UI。
+* **引用将被忽略**。 当前不检查是否引用了现有内容片段。 因此，例如，删除内容片段可能会导致页面上出现包含对已删除内容片段的引用的问题。
 
 ## 状态代码和错误消息 {#status-codes-and-error-messages}
 
 在相关情况下可以看到以下状态代码：
 
-1. 200（确定）
+* **200** （确定）
 
    返回时间：
 
@@ -318,29 +323,29 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
    * 通过 `PUT`
 
-1. 2010年（创建）
+* **201** （创建）
 
    返回时间：
 
    * 通过 `POST`
 
-1. 404（未找到）
+* **404** （未找到）
 
    返回时间：
 
    * 请求的内容片段不存在
 
-1. 500（内部服务器错误）
+* **500** （内部服务器错误）
 
    >[!NOTE]
    >
-   >此错误返回：
+   >返回此错误：
    >
-   >    * 当发生了无法用特定代码识别的错误时
+   >    * 发生无法用特定代码识别的错误时
    >    * 当给定的有效负荷无效时
 
 
-   以下列表了返回此错误状态时的常见情况以及生成的错误消息（等宽）:
+   以下列表返回此错误状态时的常见情形以及生成的错误消息（等宽）:
 
    * 父文件夹不存在(通过创建内容片段时 `POST`)
    * 未提供内容片段模型（cq:model缺失），无法读取（由于路径无效或权限问题），或者没有有效的片段模型／模板：
@@ -357,10 +362,11 @@ The exact format of supported requests is defined in the [API Reference](/help/a
    * 无法设置元数据：
 
       * `Could not set metadata on content fragment`
-   * 找不到内容元素或无法更新内容元素
+   * 找不到或无法更新内容元素
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    详细的错误消息通常按以下方式返回：
 
    ```xml
@@ -392,5 +398,5 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 有关更多信息，请参阅：
 
 * [资产HTTP API文档](/help/assets/mac-api-assets.md)
-* [AEM Gem会话：OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem会话： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
 
