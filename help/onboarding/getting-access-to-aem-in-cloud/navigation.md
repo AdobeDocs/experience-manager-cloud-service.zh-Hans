@@ -2,7 +2,7 @@
 title: 导航
 description: 导航——云服务
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
@@ -59,6 +59,8 @@ ht-degree: 1%
    ![](assets/sys-admin4.png)
 
 1. 单击“管 **理访问**”后，您将从您有权 **访问该环境的作者实例的Admin Console** 。
+
+   ![](assets/sys-admin-2.png)
 
 ## 针对现有AMS客户 {#existing-aem}
 
