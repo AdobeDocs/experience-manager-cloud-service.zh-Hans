@@ -3,10 +3,10 @@ title: 增强的智能标记
 description: 使用Adobe Sensei的AI和ML服务应用情境式和描述性商业标签，以提高资产发现和内容速度。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 12%
+source-wordcount: '1005'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 使用分类控制的词汇标记资产可确保通过基于标签的搜索轻松识别和检索资产。 Adobe提供智能标签，它使用人工智能和机器学习算法来培训图像。 Smart Tags使用Adobe Sensei的人工智能 [框架](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) ，根据您的标签结构和业务分类培训其图像识别算法。
 
-智能标记功能可作为加载项购买 [!DNL Experience Manager]。 购买后，系统会向组织的管理员发送一封电子邮件，其中包含指向Adobe I/O的链接。 管理员访问链接，以使用Adobe I/O将 [!DNL Experience Manager] 智能标记与集成。
+智能标记功能可作为加载项购买 [!DNL Experience Manager]。 购买后，系统会向组织的管理员发送一封电子邮件，其中包含指向Adobe开发人员控制台的链接。 管理员使用Adobe开发人员控制台访问链接以将智 [!DNL Experience Manager] 能标记与集成。
 
 <!-- TBD: 
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
@@ -24,45 +24,35 @@ ht-degree: 12%
 4. Post-GA, if time permits, create a video.
 -->
 
-## 与Adobe I/O集成 {#aio-integration}
+## 与Adobe Developer Console集成 {#aio-integration}
 
-在使用SCS标记图像之前，请 [!DNL Adobe Experience Manager] 使用Adobe I/O与智能标记服务集成。 在后端，服务器 [!DNL Experience Manager] 在将请求转发到服务之前，使用Adobe I/O网关验证您的服务凭据。
+在使用SCS标记图像之前，请使用Adobe [!DNL Adobe Experience Manager] 开发人员控制台与智能标记服务集成。 在后端，服务器在将 [!DNL Experience Manager] 您的请求转发到服务之前，使用Adobe Developer Console网关验证您的服务凭据。
 
 * 在中创建配 [!DNL Experience Manager] 置以生成公钥。 获取用于OAuth集成的公共证书。
-* 在Adobe I/O中创建集成并上传生成的公钥。
-* 使用 [!DNL Experience Manager] Adobe I/O的API密钥和其他凭据配置实例。
+* 在Adobe开发人员控制台中创建集成并上传生成的公钥。
+* 使用Adobe [!DNL Experience Manager] 开发人员控制台中的API密钥和其他凭据配置您的实例。
 * （可选）在资产上传时启用自动标记。
 
-### Adobe I/O集成的先决条件 {#prerequisite-for-aio-integration}
+### Adobe Developer Console集成的先决条件 {#prerequisite-for-aio-integration}
 
-在使用智能标记之前，请确保在Adobe I/O上创建集成：
+在使用智能标记之前，请确保在Adobe开发人员控制台上创建集成：
 
 * 具有组织管理员权限的Adobe ID帐户。
 * 您的组织启用了智能标记。
 
 ### Obtain a public certificate {#obtain-public-certificate}
 
-公共证书允许您在Adobe I/O上验证用户档案。
+公共证书允许您在Adobe开发人员控制台上验证用户档案。 可从中创建证书 [!DNL Experience Manager]。
 
-1. 在用户 [!DNL Experience Manager] 界面中，访 **[!UICONTROL 问工具]** > **[!UICONTROL 云服务]** >旧 **[!UICONTROL 版云服务]**。
+1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**。
 
-1. On the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. 在“Adobe [!UICONTROL IMS配置”页面上] ，单击 **[!UICONTROL 创建]**。 从云解 **[!UICONTROL 决方案]** 菜单中，选 **[!UICONTROL 择智能标记]**。
 
-1. 在创 **[!UICONTROL 建配置]** 对话框中，指定智能标记配置的标题和名称。 单击&#x200B;**[!UICONTROL 创建]**。
+1. 选择 **[!UICONTROL 创建新证书]**。 提供名称，然后单击“ **[!UICONTROL 创建证书]**”。 单击&#x200B;**[!UICONTROL 确定]**。
 
-1. 在AEM **[!UICONTROL 智能内容服务]** 对话框中，使用以下值：
+1. 单击“ **[!UICONTROL 下载公钥]**”。
 
-   **[!UICONTROL 服务 URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
-
-   **[!UICONTROL 授权服务器]**: `https://ims-na1.adobelogin.com`
-
-   现在将其他字段留空（稍后提供）。 单击&#x200B;**[!UICONTROL 确定]**。
-
-   ![Experience Manager智能内容服务对话框，用于提供内容服务URL](assets/aem_scs.png)
-
-1. 单击 **[!UICONTROL “下载用于OAuth集成的公共证书]**”，然后下载公共证书文件 `AEM-SmartTags.crt`。
-
-   ![为智能标记服务创建的设置](assets/download_link.png)
+   ![Experience Manager智能标记创建公钥](assets/aem_smarttags-config1.png)
 
 ### 在证书过期时重新配置 {#certrenew}
 
@@ -77,47 +67,43 @@ ht-degree: 12%
 
    *图： 删除密钥库`similaritysearch`中的现有条目以添加新的安全证书。*
 
-1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL 旧版云服务]**。单击 **[!UICONTROL 资产智能标记]** >显 **[!UICONTROL 示配置]** >可 **[!UICONTROL 用配置]**。 单击所需的配置。
+1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**。 打开可用的智能标记配置。 要下载公共证书，请单击“下 **[!UICONTROL 载公共证书”]**。
 
-1. 要下载公共证书，请单击“ **[!UICONTROL 下载用于OAuth集成的公共证书”]**。
-
-1. 访 [问https://console.adobe.io](https://console.adobe.io) ，然后导航到项目中的现有服务。 上传新证书。 有关详细信息，请参阅创 [建Adobe I/O集成中的说明](#create-aio-integration)。
+1. 访 [问https://console.adobe.io](https://console.adobe.io) ，然后导航到项目中的现有服务。 上传新证书并进行配置。 有关配置的详细信息，请参阅创建Adobe开 [发人员控制台集成中的说明](#create-aio-integration)。
 
 ### 创建集成 {#create-aio-integration}
 
-要使用智能标记API，请在Adobe I/O中创建集成，以生成API密钥、技术帐户ID、组织ID和客户端机密。
+要使用智能标记，请在Adobe开发人员控制台中创建集成，以生成API密钥、技术帐户ID、组织ID和客户端机密。
 
-1. 访 [问https://console.adobe.io](https://console.adobe.io/)。
-1. 选择相应的帐户并验证关联的组织角色是系统管理员。 创建项目或打开现有项目。 在项目页面上，单击 **[!UICONTROL 添加API]**。
-1. 在添加 **[!UICONTROL API页面]** ，选择 **[!UICONTROL Experience Cloud]** ，然后选 **[!UICONTROL 择智能内容]**。 单击 **[!UICONTROL 继续]**。
-1. 在下一页中，选择“ **[!UICONTROL 新建集成]**”。 单击 **[!UICONTROL 继续]**。
-1. 在“集 **[!UICONTROL 成详细信息]** ”页面上，指定集成网关的名称并添加说明。
-1. 在公 **[!UICONTROL 钥证书中]**，上 `AEM-SmartTags.crt` 传您在上面下载的文件。
-1. 单击&#x200B;**[!UICONTROL 创建集成]**。
-1. 要视图集成信息，请单击“继 **[!UICONTROL 续”以查看集成详细信息]**。
+1. 在浏 [览器](https://console.adobe.io/) 中访问https://console.adobe.io。 选择相应的帐户并验证关联的组织角色是系统管理员。
+1. 创建具有任何所需名称的项目。 单击 **[!UICONTROL 添加API]**。
+1. 在添加 **[!UICONTROL API页面]** ，选择 **[!UICONTROL Experience Cloud]** ，然后选 **[!UICONTROL 择智能内容]**。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 选择 **[!UICONTROL 上传您的公钥]**。 提供从下载的证书文件 [!DNL Experience Manager]。 将显 [!UICONTROL 示一条消息，成功上传] 公钥。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. [!UICONTROL 创建新的服务帐户(JWT)凭据页] ，将显示刚刚配置的服务帐户的公钥。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在“选 **[!UICONTROL 择产品用户档案]** ”页面上，选 **[!UICONTROL 择智能内容服务]**。 单击 **[!UICONTROL 保存配置的API]**。 页面会显示有关配置的更多信息。 在中进一步配置智能标记时，请打开此页以复制这些值并在Experience Manager中添加这些值 [!DNL Experience Manager]。
 
    ![在“概述”选项卡中，您可以查看为集成提供的信息。](assets/integration_details.png)
 
 ### 配置智能标记 {#configure-smart-content-service}
 
-要配置集成，请使用Adobe I/O集成中的“技术帐户ID”、“组织ID”、“客户端机密”、“授权服务器”和“API密钥”字段的值。 创建智能标记云配置允许验证来自实例的API [!DNL Experience Manager] 请求。
+要配置集成，请使用Adobe开发人员控制台集成中的有效负荷、客户端机密、授权服务器和API密钥字段的值。
 
-1. 在中 [!DNL Experience Manager]，导航到 **[!UICONTROL 工具>云服务>旧版云服务]** ，以打 [!UICONTROL 开云服务控制台] 。
-1. 在资产 **[!UICONTROL 智能标记下]**，打开以上创建的配置。 在服务设置页面上，单击 **[!UICONTROL 编辑]**。
-1. 在 **[!UICONTROL AEM 智能内容服务]**&#x200B;对话框中，为&#x200B;**[!UICONTROL 服务 URL]** 和&#x200B;**[!UICONTROL 授权服务器]**&#x200B;字段使用预填充的值。
-1. 对于字段 **[!UICONTROL API 密钥]**、**[!UICONTROL 技术帐户 ID]**、**[!UICONTROL 组织 ID]** 和&#x200B;**[!UICONTROL 客户端密钥]**，请使用上面生成的值。
+1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**。
+1. 访问 **[!UICONTROL Adobe IMS技术帐户配置页]** ，提供所需的 **[!UICONTROL 标题]**。
+1. 在“ **[!UICONTROL 授权服务器]** ”字段中，提 `https://ims-na1.adobelogin.com` 供URL。
+1. 在“ **[!UICONTROL API密钥]** ”字段 **[!UICONTROL 中]** ，提 [!DNL Adobe Developer Console]供客户端ID。
+1. 在“ **[!UICONTROL 客户端]** 机密”字段中， **[!UICONTROL 从中提]** 供“客户端机密 [!DNL Adobe Developer Console]”。 单击“ **[!UICONTROL 检索客户端机密]** ”选项可查看它。
+1. 在您 [!DNL Adobe Developer Console]的项目中，单击 **[!UICONTROL 左边距中的“服务帐户]** (JWT)”。 单击“ **[!UICONTROL 生成JWT]** ”选项卡。 单击 **[!UICONTROL 复制]** ，以复制显示 **[!UICONTROL 的JWT有效负荷]**。 在中的“有效负荷” **[!UICONTROL 字段中]** 提供此值 [!DNL Experience Manager]。 单击&#x200B;**[!UICONTROL 创建]**。
 
 ### 验证配置 {#validate-the-configuration}
 
-完成配置后，可使用JMX MBean验证配置。 要验证，请按照以下步骤操作。
+完成配置后，请按照以下步骤验证配置。
 
-1. 访问您 [!DNL Experience Manager] 的服务器 `https://[aem_server]:[port]`。
+1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**。
 
-1. 转到“ **[!UICONTROL 工具”>“操作”>“Web控制台]** ”以打开OSGi控制台。 单击 **[!UICONTROL “主> JMX]**”。
-1. 单 **[!UICONTROL 击com.day.cq.dam.similaritysearch.internal.impl]**。 它打开“ **[!UICONTROL 相似性搜索”杂项任务]**。
-1. 单 **[!UICONTROL 击validateConfigs()]**。 在验证 **[!UICONTROL 配置对话框中]** ，单击调 **[!UICONTROL 用]**。
+1. 选择智能标记配置。 单击工 **[!UICONTROL 具栏中的]** “检查运行状况”。 单击&#x200B;**[!UICONTROL 检查]**。显示“正常 [!UICONTROL 配置] ”消息的对话框确认配置正在工作。
 
-   验证结果将显示在同一对话框中。
+![验证智能标记配置](assets/smart-tag-config-validation.png)
 
 ## 为新上传的资产启用智能标记（可选） {#enable-smart-tagging-for-uploaded-assets}
 
