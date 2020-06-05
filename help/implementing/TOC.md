@@ -2,10 +2,10 @@
 sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '203'
+ht-degree: 85%
 
 ---
 
@@ -37,6 +37,9 @@ ht-degree: 0%
    + [自定义和扩展内容片段](developing/extending/content-fragments-customizing.md)
    + [内容片段配置用于渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [配置搜索表单](developing/extending/search-forms.md)
+   + [配置富文本编辑器](/help/implementing/developing/extending/rich-text-editor.md)
+   + [配置RTE插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [配置RTE以创建可访问站点](/help/implementing/developing/extending/rte-accessible-content.md)
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
    + [为 AEM 云服务配置 OSGi](deploying/configuring-osgi.md)
