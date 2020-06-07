@@ -120,7 +120,7 @@ PM/EM review required before publishing.
 
 **支持3D内容的摄取、预览和投放**
 
-组织现在可以在AEM资产中存储和使用3D文件。 用户可以上传、预览和利用各种核心3D文件，包括。obj、.stl、.gltf和。glb文件。 此外，还可 [!DNL Dynamic Media]以通过不可知的URL或查看器配置和提供3D体验。 这包括3 [!DNL Dynamic Media] D Experience Viewer、Sites 3D Viewer组件，以及通过(AR/VR)交付3D [!DNL Dynamic Media] 文件的功能。 See [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+组织现在可以在AEM资产中存储和使用3D文件。 用户可以上传、预览和利用各种核心3D文件，包括。obj、.stl、.gltf和。glb文件。 此外，还可 [!DNL Dynamic Media]以通过不可知的URL或查看器配置和提供3D体验。 这包括3 [!DNL Dynamic Media] D Experience Viewer、Sites 3D Viewer组件，以及通过(AR/VR)交付3D [!DNL Dynamic Media] 文件的功能。 请参 [阅在Dynamic Media中使用3D资产](/help/assets/dynamic-media/assets-3d.md)。
 
 <!-- Hiding this as the GA is at a later date. 
 **Adobe Asset Link support for Adobe XD**
