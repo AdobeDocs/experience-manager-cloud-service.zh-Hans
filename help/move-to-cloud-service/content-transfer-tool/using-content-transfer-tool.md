@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 1%
    1. **访问令牌**: 输入访问令牌。
 
       >[!NOTE]
-      >您可以通过导航到，从创作实例检索访问令牌 `/libs/granite/migration/token.json`。
+      >您可以通过导航到，从创作实例检索访问令牌 `/libs/granite/migration/token.json`。 从云服务作者实例检索访问令牌。
 
    1. **参数**: 选择以下参数以创建迁移集：
 
