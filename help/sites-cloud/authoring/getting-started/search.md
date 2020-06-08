@@ -1,8 +1,11 @@
 ---
 title: 搜索
 description: 使用完备的搜索功能更快速地查找您的内容
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -58,6 +61,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    * 搜索目录
    * 标记
    * 搜索条件，例如修改日期、发布状态、LiveCopy 状态
+
    >[!NOTE]
    >
    >搜索条件可能会视情况而异：
