@@ -3,9 +3,9 @@ title: 使用人工智能服务标记图像。
 description: 使用人为智能服务标记图像，这些服务使用Adobe Sensei服务应用上下文和描述性商业标签。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 5%
 
 ---
@@ -96,10 +96,10 @@ ht-degree: 5%
 
 ## 为自定义标记培训模型 {#train-model}
 
-要创建并培训业务特定标签的模型，请遵循以下步骤：
+要创建并培训业务特定标签的模型，请执行以下步骤：
 
 1. 创建必要的标记和相应的标记结构。 在DAM存储库中上传相关图像。
-1. 在用 [!DNL Experience Manager] 户界面中，访问“ **[!UICONTROL 资产]** ”>“ **[!UICONTROL 培训模型]**”。
+1. 在用 [!DNL Experience Manager] 户界面中，访问 **[!UICONTROL “资产]** ”>“ **[!UICONTROL 智能标记培训]**”。
 1. 单击&#x200B;**[!UICONTROL 创建]**。提供标 **[!UICONTROL 题]**、 **[!UICONTROL 说明]**。
 1. 浏览并选择要培训模型的 `cq:tags` 现有标记中的标记。 单击&#x200B;**[!UICONTROL 下一步]**。
 1. 在选择 **[!UICONTROL 资产对话框中]** ，单击每 **[!UICONTROL 个标记]** 对应的“添加资产”。 在DAM存储库中搜索或浏览存储库以选择至少10张和最多50张图像。 选择资产，而不是文件夹。 选择图像后，单击“选 **[!UICONTROL 择]**”。
