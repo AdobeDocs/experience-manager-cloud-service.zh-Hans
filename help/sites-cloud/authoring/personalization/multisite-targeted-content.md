@@ -3,6 +3,9 @@ title: 在多个站点中使用目标内容
 description: 如果您需要在多个站点间管理目标内容（例如活动、体验和选件），则可以利用 AEM 中内置的目标内容多站点支持功能
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 83%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->对目标内容提供多站点支持是一项高级功能。要使用此功能，您应熟悉多站点管理器以及Adobe Target与AEM的集成。
+>对目标内容提供多站点支持是一项高级功能。要使用此功能，您应熟悉多站点管理器以及Adobe目标与AEM的集成。
 <!--
 >Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
 -->
@@ -41,7 +44,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 在某个区域中，只有链接到该区域的活动才会被推送到 Live Copy。默认情况下，主区域将处于选定状态。创建其他区域后，您可以将这些区域链接到站点或页面，以指示要推送的目标内容。
 
-站点或 Live Copy 链接到的区域包含需要在该站点或 Live Copy 上提供的活动。默认情况下，站点或Live copy链接到主区域，但您可以很好地链接除主区域之外的其他区域。
+站点或 Live Copy 链接到的区域包含需要在该站点或 Live Copy 上提供的活动。默认情况下，站点或Live Copy链接到主区域，但您可以很好地链接除主区域之外的其他区域。
 
 >[!NOTE]
 >
@@ -49,6 +52,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 >
 >* 使用转出或 Live Copy 时，需要获得 MSM 许可。
 >* 使用同步到 Adobe Target 的功能时，需要获得 Adobe Target 许可。
+
 >
 
 
@@ -61,7 +65,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 例如，通过目标内容的多站点支持功能，您的&#x200B;**一个**&#x200B;品牌可以拥有两个（或更多）站点，这些站点具有以下某种内容：
 
-* 完全“不同”**&#x200B;的目标内容集 - 在一个站点中编辑目标内容不会影响其他站点。链接到不同区域的站点将读写到其自己配置的区域。 例如：
+* 完全“不同”**&#x200B;的目标内容集 - 在一个站点中编辑目标内容不会影响其他站点。链接到不同区域的站点会读取并写入其自己配置的区域。 例如：
    * 站点 A 链接到区域 X
    * 站点 B 链接到区域 Y
 * “共享”**&#x200B;的目标内容集 - 在一个站点中编辑会直接影响两个站点；通过让两个站点引用同一区域，可以实现此设置。链接到同一区域的站点共享此区域内的目标内容。 例如：
@@ -93,7 +97,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 每个站点均共享地理区域中的个性化内容：
 
 * 加拿大站点与美国站点共享主区域。
-* 大不列颠与欧洲区域链接，并从主区域继承。
+* 大不列颠与欧洲地区相连，从主区域继承。
 * 澳大利亚站点由于位于南半球，季节性产品不适用，因此会有自己的个性化内容。
 
 ![多站点图](/help/sites-cloud/authoring/assets/multisite-diagram.png)
@@ -102,7 +106,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 ![美国版本](/help/sites-cloud/authoring/assets/multisite-us.png)
 
-刷新选项卡后，我们无需执行任何操作，加拿大站点即会变更为新的图像。之所以会这样，是因为加拿大站点与美国站点共享主区域。在大不列颠和澳大利亚的站点中，图像没有改变。
+刷新选项卡后，我们无需执行任何操作，加拿大站点即会变更为新的图像。之所以会这样，是因为加拿大站点与美国站点共享主区域。在英国和澳大利亚的网站中，图像没有改变。
 
 ![更改版本](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
@@ -128,7 +132,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->当页面是链接到某个区域的Live Copy，而该区域本身是链接到页面Blueprint的区域的Live Copy时，默认转出将触发目标内容的后续转出。
+>当页面是链接到区域的Live Copy，而该区域本身是链接到页面蓝图的区域的Live Copy时，默认转出会触发目标内容的后续转出。
 
 例如，下图中有四个站点，其中两个站点共享主区域（以及该区域中的所有活动）；还有一个站点的区域是其他区域的 Live Copy，因此会在转出后共享活动；最后一个站点完全独立（因此其活动需要一个单独的区域）。
 
@@ -147,11 +151,11 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->默认区域称为主区域，点按或单击品牌名称时，此区域默认处于折叠状态，**直到**&#x200B;您创建其他区域。Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
+>默认情况下，当您点按或单击品牌名称时，名为“主区域”的默认区域会折叠，直到您创 **建** 其他区域为止。 然后，在“活动”或“选件”控制台中选 **择品牌****时，您会看到“区** 域 **** ”控制台。
 
 要创建新区域，请执行以下操作：
 
-1. Navigate to **Personalization** > **Activities** or **Offers** or and then to your brand.
+1. 导航到 **个性化** >活 **动** 或 **选件** ，然后导航到您的品牌。
 1. 点按或单击&#x200B;**创建区域**。
 
    ![创建区域](/help/sites-cloud/authoring/assets/multisite-create-area.png)
@@ -170,7 +174,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 要创建区域作为 Live Copy，请执行以下操作：
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then to your brand.
+1. 导航到 **个性化** >活 **动** 或 **选件** ，然后导航到您的品牌。
 1. 点按或单击&#x200B;**创建区域作为 Live Copy**。
 
    ![创建Live Copy区域](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
@@ -179,7 +183,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
    ![创建Live Copy](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. 在&#x200B;**名称**&#x200B;字段中，输入 Live Copy 的名称。默认情况下，会包括子页面；通过选中&#x200B;**不包括子页面**&#x200B;复选框，可将子页面排除。
+1. 在“名 **称** ”字段中，输入Live copy的名称。 默认情况下，包含子页面；通过选中“排除子页 **面”复选框** ，排除它们。
 
    ![创建Live Copy](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -207,7 +211,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. 编辑由多个站点共享的活动、体验或选件会影响所有站点。
+>Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. 编辑由多个站点共享的活动、体验或优惠会影响所有站点。
 
 要将站点链接到区域，请执行以下操作：
 
@@ -228,7 +232,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 暂停 Live Copy 会暂时中断继承，但之后可以恢复继承。而分离 Live Copy 则会永久中断继承。
 
-要暂停或分离目标内容的继承，需要先在活动中恢复继承。如果页面或站点链接到的区域是Live Copy，则可以查看活动的继承状态。
+要暂停或分离目标内容的继承，需要先在活动中恢复继承。如果页面或站点链接到的是Live Copy区域，则可以视图活动的继承状态。
 
 从其他站点继承的活动的名称旁边显示有绿色标记。暂停的继承标记为红色，本地创建的活动没有图标。
 
@@ -236,6 +240,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 >
 >* 您只能在活动中暂停或分离 Live Copy。
 >* 要扩展继承的活动，无需暂停或分离 Live Copy。您始终可以为该活动创建&#x200B;**新的**&#x200B;本地体验和选件。如果您想要修改现有活动，则需要暂停继承。
+
 >
 
 
@@ -250,11 +255,12 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
    1. 选择活动的某个元素，例如受众。AEM 随即会自动显示“暂停 Live Copy”确认对话框。（在整个定位过程中，您都可以通过点按或单击任何元素来暂停 Live Copy。）
    1. 从工具栏的下拉菜单中选择&#x200B;**暂停 Live Copy**。
+
    ![暂停Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Tap or click **Suspend** to suspend the activity. 暂停继承的活动会标记为红色。
 
-   ![暂停的Live Copy](/help/sites-cloud/authoring/assets/multisite-suspended.png)
+   ![挂起的Live Copy](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
 ### 中断继承 {#breaking-inheritance}
 
@@ -262,7 +268,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 1. 导航到要在其中将 Live Copy 从主区域中分离出来的页面，然后点按或单击“模式”下拉菜单中的&#x200B;**定位**。
 1. 如果您的页面链接到的区域是 Live Copy，则可以看到继承状态。点按或单击&#x200B;**开始定位**。
-1. 从工具栏的下拉菜单中选择&#x200B;**分离 Live Copy**。AEM 会向您确认是否要分离 Live Copy。
+1. 从工 **具栏的下拉菜单中选择** “分离Live Copy”。 AEM会确认您是否要分离Live Copy。
 1. 点按或单击&#x200B;**分离**，以在活动中将 Live Copy 分离出来。分离之后，与继承有关的下拉菜单将不再显示。此时活动会变成本地活动。
 
    ![本地活动](/help/sites-cloud/authoring/assets/multisite-winter.png)
@@ -275,7 +281,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
 1. 点按或单击&#x200B;**开始定位**。
-1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
+1. 从工 **具栏的下拉菜单中选择** “恢复Live Copy”。
 
    ![恢复Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
@@ -283,7 +289,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 ## 删除区域 {#deleting-areas}
 
-删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了站点所链接的区域，则此品牌的映射将自动重新映射到主区域。
+删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了网站所链接的区域，则此品牌的映射将自动重新映射到主区域。
 
 要删除区域，请执行以下操作：
 
