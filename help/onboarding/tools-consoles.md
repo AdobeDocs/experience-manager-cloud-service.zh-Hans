@@ -1,9 +1,9 @@
 ---
 title: 工具控制台
 description: 了解整个 AEM 中的不同工具控制台。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 100%
 
