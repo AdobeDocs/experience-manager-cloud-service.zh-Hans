@@ -1,9 +1,9 @@
 ---
 title: 内容片段
 description: Adobe Experience Manager 云服务内容片段允许您设计、创建、策划和使用独立于页面的内容
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 100%
 
@@ -24,6 +24,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 >
 >* **内容片段**&#x200B;是可编辑的内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容，网页即属于此类片段。
+
 >
 >
 体验片段可以包含内容片段形式的内容，反之则不行。
@@ -58,6 +59,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 3. 您可以：
    * 打开&#x200B;**资产**&#x200B;浏览器并筛选&#x200B;**内容片段**（默认为图像）。然后，将所需的片段拖到组件实例上。
    * 选择内容片段组件，然后从工具栏中选择&#x200B;**配置**。在对话框中，您可以打开选择对话框以浏览并选择所需的&#x200B;**内容片段**。
+
    >[!NOTE]
    >
    >备选方法是将特定的内容片段直接拖到页面上。这将自动创建关联的组件（内容片段）。
@@ -88,6 +90,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 * **元素**
    * 默认的&#x200B;**主元素**&#x200B;将始终可用。
    * 如果片段是通过适当的模板创建的，将有可选择的元素可用。
+
    >[!NOTE]
    >
    >有哪些元素可用取决于所使用的模板。
