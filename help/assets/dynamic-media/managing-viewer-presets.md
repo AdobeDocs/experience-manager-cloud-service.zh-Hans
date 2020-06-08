@@ -152,7 +152,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 另请参阅[查看器参考库示例](https://marketing.adobe.com/resources/help/zh_CN/s7/vlist/vlist.html)和[实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)。
 
-有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
+有关查看器支持的Web浏览器和操作系统版本的信息，可以查看查看器发行说明。
 
 请参阅《查看器参考指南》的目录中的“查看器发 [行说明”](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
 
