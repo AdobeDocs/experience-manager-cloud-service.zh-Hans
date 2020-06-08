@@ -150,7 +150,6 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    * **名称** `underline`
    * **名称** ( `anchor` 适用于链接和命名锚点)
    * **名称** `image`
-
    所有属性均为 **Type** ，因此 `Boolean`在相应的 **Value中** ，您可以选择或删除复选标记以启用或禁用该功能。
 
    >[!NOTE]
@@ -272,7 +271,6 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    * **名称** `externalStyleSheets`
    * **类型**`String[]` (多字符串； 在CRXDE **中单** 击“多”)
    * **值要包括的** 每个样式表的路径和文件名。 使用存储库路径。
-
    >[!NOTE]
    >
    >以后可以随时添加对其他样式表的引用。
@@ -350,10 +348,9 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 1. 将属性文本添加到同一节点。 该值是作者在选择样式时看到的样式的名称。
    * 名称： `text`
 *类型： `String`
-值: `Japanese word-wrap`
-   * 创建样式表并指定其路径。 请参 [阅指定样式表的位置](#locationofstylesheet)。 将以下内容添加到样式表。 根据需要更改背景颜色。
+   * 值: `Japanese word-wrap`
 
-1. ![使作者可使用日文换行功能的样式表](assets/rte_jpwordwrap_stylesheet.jpg)
+1. 创建样式表并指定其路径。 请参 [阅指定样式表的位置](#locationofstylesheet)。 将以下内容添加到样式表。 根据需要更改背景颜色。
 
    ```css
    .text span.jpn-word-wrap {
@@ -364,151 +361,154 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    }
    ```
 
-   配置段落格式 {#paraformats}](assets/rte_jpwordwrap_stylesheet.jpg)
+   ![使作者可使用日文换行功能的样式表](assets/rte_jpwordwrap_stylesheet.jpg)
 
-## 在RTE中创作的任何文本都放置在块标记中，这是默认设置 `<p>`。 通过启 `paraformat` 用插件，您可以使用下拉选择列表指定可分配给段落的其他块标记。 段落格式通过指定正确的块标记来确定段落类型。 作者可以使用“格式”选择器选择并分配它们。 示例块标记包括标准段落&lt;p>和标题&lt;h1>、&lt;h2>等。
+## 配置段落格式 {#paraformats}
 
-[!CAUTION]`paraformat`
+在RTE中创作的任何文本都放置在块标记中，这是默认设置 `<p>`。 通过启 `paraformat` 用插件，您可以使用下拉选择列表指定可分配给段落的其他块标记。 段落格式通过指定正确的块标记来确定段落类型。 作者可以使用“格式”选择器选择并分配它们。 示例块标记包括标准段落&lt;p>和标题&lt;h1>、&lt;h2>等。
 
->[!CAUTION]此插件不适用于结构复杂的内容，如列表或表。
+>[!CAUTION]
 >
+>此插件不适用于结构复杂的内容，如列表或表。
+
 >[!NOTE]
-
->[!NOTE]如果无法将块标记（例如&lt;hr>标记）分配给段落，则它不是段落格式插件的有效用例。
 >
->首次启用段落格式插件时，不提供默认的段落格式。 弹出列表为空。 要为作者提供段落格式，请执行以下操作：
+>如果无法将块标记（例如&lt;hr>标记）分配给段落，则它不是段落格式插件的有效用例。
 
-启用“格式”下拉选择器列表。
+首次启用段落格式插件时，不提供默认的段落格式。 弹出列表为空。 要为作者提供段落格式，请执行以下操作：
 
+* 启用“格式”下拉选择器列表。
 * 指定可从下拉列表中选择的段落格式块标记。
-* 对于以后（重新）的配置，例如要添加更多格式，请仅按照说明的相关部分操作。
 
-启用格式下拉选择器 {#formatselectorlist}
+对于以后（重新）的配置，例如要添加更多格式，请仅按照说明的相关部分操作。
 
-### 首先启用参数格式插件：{#formatselectorlist}
+### 启用格式下拉选择器 {#formatselectorlist}
 
-在您的组件中，导航到节点 `<rtePlugins-node>/paraformat`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+首先启用参数格式插件：
 
-1. 在节 `features` 点上创建 `paraformat` 属性：](#activateplugin)
-1. **名称** `features`
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/paraformat`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在节 `features` 点上创建 `paraformat` 属性：
 
+   * **名称** `features`
    * **类型** `String`
    * **值**`*` （星号）
-   * [!NOTE]**`*`
 
->[!NOTE]如果插件未进一步配置，则启用以下默认格式：
-段落 ( `<p>`)
+>[!NOTE]
+如果插件未进一步配置，则启用以下默认格式：
+* 段落 ( `<p>`)
 * 标题 1 ( `<h1>`)
 * 标题 2 ( `<h2>`)
 * 标题 3 ( `<h3>`)
-* [!CAUTION]
 
 
 
->配置RTE的段落格式时，请勿删除段落标记&lt;p>作为格式选项。 如果删 `<p>` 除标记，则内容作者无法选择“段落格 **式** ”选项，即使配置了其他格式。
-指定可用的段落格式 {#paraformatsindropdown}****
+>[!CAUTION]
+配置RTE的段落格式时，请勿删除段落标记&lt;p>作为格式选项。 如果删 `<p>` 除标记，则内容作者无法选择“段落格 **式** ”选项，即使配置了其他格式。
 
-### 段落格式可通过以下方式进行选择：{#paraformatsindropdown}
+### 指定可用的段落格式 {#paraformatsindropdown}
 
-在组件定义中，导航到节 `<rtePlugins-node>/paraformat`点，如启 [用格式下拉选择器中所创建](#styleselectorlist)。
+段落格式可通过以下方式进行选择：
 
-1. 在节 `paraformat` 点下创建新节点，以保存格式列表:[](#styleselectorlist)
-1. **名称** `formats`
+1. 在组件定义中，导航到节 `<rtePlugins-node>/paraformat`点，如启 [用格式下拉选择器中所创建](#styleselectorlist)。
+1. 在节 `paraformat` 点下创建新节点，以保存格式列表:
 
+   * **名称** `formats`
    * **类型** `cq:WidgetCollection`
-   * 在节点下创建新节 `formats` 点，它保留单个格式的详细信息：**`cq:WidgetCollection`
 
-1. **名称**，您可以指定名称，但该名称应适合格式（例如，myparagraph、myheading1）。
+1. 在节点下创建新节 `formats` 点，它保留单个格式的详细信息：
 
+   * **名称**，您可以指定名称，但该名称应适合格式（例如，myparagraph、myheading1）。
    * **类型** `nt:unstructured`
-   * **对于此节点，添加属性以定义使用的块标记：**`nt:unstructured`
 
-1. **名称** `tag`
+1. 对于此节点，添加属性以定义使用的块标记：
 
+   * **名称** `tag`
    * **类型** `String`
-   * **值** ：格式的块标记； 例如： p、h1、h2等。`String`
-   * **您无需输入分界角括号。**
+   * **值** ：格式的块标记； 例如： p、h1、h2等。
 
-      对于同一节点，添加另一个属性，以便说明性文本显示在下拉列表中：
+      您无需输入分界角括号。
 
-1. **名称** `description`
+1. 对于同一节点，添加另一个属性，以便说明性文本显示在下拉列表中：
 
+   * **名称** `description`
    * **类型** `String`
-   * **值** ：此格式的描述性文本； 例如，“段落”、“标题1”、“标题2”等。 此文本将显示在“格式”选择列表中。`String`
-   * **保存更改。**
+   * **值** ：此格式的描述性文本； 例如，“段落”、“标题1”、“标题2”等。 此文本将显示在“格式”选择列表中。
 
-1. 为每种所需格式重复这些步骤。
+1. 保存更改。
 
-   [!CAUTION]
+   为每种所需格式重复这些步骤。
 
->如果定义自定义格式，则会删`<p>`除默 `<h1>`认格 `<h2>`式( `<h3>`、和)。 重新创 `<p>` 建格式，因为它是默认格式。
-配置特殊字符 {#spchar}`<h1>``<h2>``<h3>``<p>`
+>[!CAUTION]
+如果定义自定义格式，则会删`<p>`除默 `<h1>`认格 `<h2>`式( `<h3>`、和)。 重新创 `<p>` 建格式，因为它是默认格式。
 
-## 在标准AEM安装中，当 `misctools` 为特殊字符启用插件时()`specialchars`默认选择会立即可用； 例如，版权和商标符号。
+## 配置特殊字符 {#spchar}
 
-您可以配置RTE，使您自己选择的字符可用； 通过定义不同的字符或整个序列。`misctools``specialchars`
+在标准AEM安装中，当 `misctools` 为特殊字符启用插件时()`specialchars`默认选择会立即可用； 例如，版权和商标符号。
 
-[!CAUTION]
+您可以配置RTE，使您自己选择的字符可用； 通过定义不同的字符或整个序列。
 
->[!CAUTION]添加自己的特殊字符将覆盖默认选择。 如果需要，（重新）在您自己的选择中定义这些字符。
-定义单个字符 {#definesinglechar}
+>[!CAUTION]
+添加自己的特殊字符将覆盖默认选择。 如果需要，（重新）在您自己的选择中定义这些字符。
 
-### 在您的组件中，导航到节点 `<rtePlugins-node>/misctools`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+### 定义单个字符 {#definesinglechar}
 
-1. 在节 `features` 点上创建 `misctools` 属性：](#activateplugin)
-1. **名称** `features`
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/misctools`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在节 `features` 点上创建 `misctools` 属性：
 
+   * **名称** `features`
    * **类型** `String[]`
    * **值** `specialchars`
-   *     (或 `String / *` 者，如果应用此插件的所有功能)**`specialchars`
 
-      在“ `misctools` 创建节点”下，可保存特殊字符配置：
+          (或 `String / *` 者，如果应用此插件的所有功能)
 
-1. **名称** `specialCharsConfig`
+1. 在“ `misctools` 创建节点”下，可保存特殊字符配置：
 
+   * **名称** `specialCharsConfig`
    * **类型** `nt:unstructured`
-   * 在“ `specialCharsConfig` 创建其他节点”下，保存字符列表:**`nt:unstructured`
 
-1. **名称** `chars`
+1. 在“ `specialCharsConfig` 创建其他节点”下，保存字符列表:
 
+   * **名称** `chars`
    * **类型** `nt:unstructured`
-   * 在“ `chars` 添加新节点”下，可保存单个字符定义：**`nt:unstructured`
 
-1. **名称** ，您可以指定名称，但应反映字符； 例如，一半。
+1. 在“ `chars` 添加新节点”下，可保存单个字符定义：
 
+   * **名称** ，您可以指定名称，但应反映字符； 例如，一半。
    * **类型** `nt:unstructured`
-   * **要添加此节点，请添加以下属性：**`nt:unstructured`
 
-1. **名称** `entity`
+1. 要添加此节点，请添加以下属性：
 
+   * **名称** `entity`
    * **类型** `String`
    * **评估** 所需字符的HTML表示形式； 例如， `&189;` 对于分数半。
-   * **保存更改。**`&189;`
 
-1. 在CRXDE中，保存属性后，将显示所表示的字符。 请参见下面的“一半”示例。 重复上述步骤，使作者能够使用更多特殊字符。
+1. 保存更改。
+
+在CRXDE中，保存属性后，将显示所表示的字符。 请参见下面的“一半”示例。 重复上述步骤，使作者能够使用更多特殊字符。
 
 ![在CRXDE中，添加要在RTE工具栏中可用的单](assets/chlimage_1-106.png "个字符在CRXDE中，添加要在RTE工具栏中可用的单个字符")
 
-定义字符范围 {#definerangechar}](assets/chlimage_1-106.png "")
+### 定义字符范围 {#definerangechar}
 
-### 使用定义单个字符 [中的步骤1到3](#definingasinglecharacter)。
+1. 使用定义单个字符 [中的步骤1到3](#definingasinglecharacter)。
+1. 在“ `chars` 添加新节点”下，可保存字符范围的定义：
 
-1. 在“ `chars` 添加新节点”下，可保存字符范围的定义：](#definingasinglecharacter)
-1. **名称** ，您可以指定名称，但应反映字符范围； 比如铅笔。
-
+   * **名称** ，您可以指定名称，但应反映字符范围； 比如铅笔。
    * **类型** `nt:unstructured`
-   * **在此节点下（根据特殊字符范围命名）添加以下两个属性：**`nt:unstructured`
 
-1. **名称** `rangeStart`
+1. 在此节点下（根据特殊字符范围命名）添加以下两个属性：
 
+   * **名称** `rangeStart`
+      **类型** `Long`
+      **值**[范围内第](https://unicode.org/) 一个字符的Unicode表示法（十进制）
 
-   * **类型** `Long`
-      **值**[范围内第[#$tu253] 一个字符的Unicode表示法（十进制）      
+   * **名称** `rangeEnd`
+      **类型** `Long`
+      **值**[范围内](https://unicode.org/) 最后一个字符的Unicode表示法（小数）
 
-   * **类型** `Long`
-      **值**[范围内[#$tu257] 最后一个字符的Unicode表示法（小数）      
+1. 保存更改。
 
-1. 例如，定义9998 - 10000范围可提供以下字符。
+   例如，定义9998 - 10000范围可提供以下字符。
 
    ![在CRXDE中，定义要在RTE中可用的字符范围](assets/chlimage_1-107.png)
 
@@ -516,261 +516,254 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
    ![RTE中的可用特殊字符在弹出窗口中显示给作](assets/rtepencil.png "者RTE中的可用特殊字符在弹出窗口中向作者显示")
 
-   配置表样式 {#tablestyles}](assets/rtepencil.png "")
+## 配置表样式 {#tablestyles}
 
-## 样式通常应用于文本，但也可以对表或几个表单元格应用一组单独的样式。 从“单元格属性”或“表属性”对话框的“样式”选择器框中，作者可以使用这种样式。 当在文本组件（或衍生组件）中编辑表时，样式可用，而在标准表组件中则不可用。{#tablestyles}
+样式通常应用于文本，但也可以对表或几个表单元格应用一组单独的样式。 从“单元格属性”或“表属性”对话框的“样式”选择器框中，作者可以使用这种样式。 当在文本组件（或衍生组件）中编辑表时，样式可用，而在标准表组件中则不可用。
 
-[!NOTE]
+>[!NOTE]
+您只能为经典UI定义表和单元格的样式。
 
->[!NOTE]您只能为经典UI定义表和单元格的样式。
-[!NOTE]
+>[!NOTE]
+在RTE组件中或从RTE组件中复制和粘贴表取决于浏览器。 并非所有浏览器都支持开箱即用。 根据表结构和浏览器，您可能会获得不同的结果。 例如，当您在经典UI和触屏UI中复制和粘贴Mozilla Firefox中RTE组件中的表时，不会保留表的布局。
 
->[!NOTE]在RTE组件中或从RTE组件中复制和粘贴表取决于浏览器。 并非所有浏览器都支持开箱即用。 根据表结构和浏览器，您可能会获得不同的结果。 例如，当您在经典UI和触屏UI中复制和粘贴Mozilla Firefox中RTE组件中的表时，不会保留表的布局。
-在组件中，导航到节点 `<rtePlugins-node>/table`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在组件中，导航到节点 `<rtePlugins-node>/table`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在节 `features` 点上创建 `table` 属性：
 
-1. 在节 `features` 点上创建 `table` 属性：](#activateplugin)
-1. **名称** `features`
-
+   * **名称** `features`
    * **类型** `String`
    * **值** `*`
-   * [!NOTE]**`*`
+   >[!NOTE]
+   如果不想启用所有表功能，可以创建属 `features` 性：
+   * **类型** `String[]`
 
-   >如果不想启用所有表功能，可以创建属 `features` 性：
-   **类型** `String[]`
-   * **根据**&#x200B;需要，以下各项的值之一或两者：`String[]`
-
-   * `table` 允许编辑表属性； 包括样式。**
+   * **根据**&#x200B;需要，以下各项的值之一或两者：
+      * `table` 允许编辑表属性； 包括样式。
       * `cellprops` 以允许编辑单元格属性，包括样式。
-      * 定义CSS样式表的位置以引用这些样式表。 请参 [阅指定样式表的位置](#locationofstylesheet) ，因为这与定义文本样 [式时相同](#textstyles)。 如果您定义了其他样式，则可以定义位置。
 
 
-1. 在节点 `table` 下，创建以下新节点（根据需要）:](#locationofstylesheet)[](#textstyles)
-1. 定义整个表的样式(可在“表属性” **下找到**):
+1. 定义CSS样式表的位置以引用这些样式表。 请参 [阅指定样式表的位置](#locationofstylesheet) ，因为这与定义文本样 [式时相同](#textstyles)。 如果您定义了其他样式，则可以定义位置。
+1. 在节点 `table` 下，创建以下新节点（根据需要）:
 
-   * **名称** `tableStyles`
+   * 定义整个表的样式(可在“表属性” **下找到**):
 
+      * **名称** `tableStyles`
       * **类型** `cq:WidgetCollection`
-      * 定义单个单元格的样式(在“单元格属性” **下可用**):`cq:WidgetCollection`
-   * **名称** `cellStyles`
+   * 定义单个单元格的样式(在“单元格属性” **下可用**):
 
+      * **名称** `cellStyles`
       * **类型** `cq:WidgetCollection`
-      * 创建一个新节点(在相应 `tableStyles` 的节 `cellStyles` 点下)以表示单个样式：`cq:WidgetCollection`
 
 
-1. **名称** ，您可以指定名称，但应反映样式。
+1. 创建一个新节点(在相应 `tableStyles` 的节 `cellStyles` 点下)以表示单个样式：
 
+   * **名称** ，您可以指定名称，但应反映样式。
    * **类型** `nt:unstructured`
-   * **在此节点上创建属性：**`nt:unstructured`
 
-1. 定义要引用的CSS样式
+1. 在此节点上创建属性：
 
-   * **名称** `cssName`
+   * 定义要引用的CSS样式
 
+      * **名称** `cssName`
       * **类型** `String`
       * **值** CSS类的名称(例如，不 `.`带前面 `cssClass` 的名 `.cssClass`称)
-      * **定义要在下拉选择器中显示的描述性文本**`.``cssClass``.cssClass`
-   * **名称** `text`
+   * 定义要在下拉选择器中显示的描述性文本
 
+      * **名称** `text`
       * **类型** `String`
-      * **设置要** 在选择列表中显示的文本的值`String`
-      * **保存所有更改。**
+      * **设置要** 在选择列表中显示的文本的值
 
 
-1. 对每个所需样式重复上述步骤。
+1. 保存所有更改。
 
-在表中配置隐藏的标题，以便进行辅助功能 {#hiddenheader}
+对每个所需样式重复上述步骤。
 
-### 有时，您可能会在列标题中创建不带可视文本的数据表，假定该标题的用途由列与其他列的可视关系所隐含。 在这种情况下，必须在标题单元格的单元格中提供隐藏的内部文本，以允许屏幕阅读器和其他辅助技术帮助有各种需求的读者了解该列的用途。{#hiddenheader}
+### 在表中配置隐藏的标题，以便进行辅助功能 {#hiddenheader}
+
+有时，您可能会在列标题中创建不带可视文本的数据表，假定该标题的用途由列与其他列的可视关系所隐含。 在这种情况下，必须在标题单元格的单元格中提供隐藏的内部文本，以允许屏幕阅读器和其他辅助技术帮助有各种需求的读者了解该列的用途。
 
 为了增强此类情况下的辅助功能，RTE支持隐藏的标题单元格。 此外，它还提供与表中隐藏的标题相关的配置设置。 这些设置允许您在编辑和预览模式下对隐藏的标题应用CSS样式。 要帮助作者在编辑模式下识别隐藏的标题，请在代码中包含以下参数：
 
-`hiddenHeaderEditingCSS`: 指定在编辑RTE时应用于隐藏标题单元格的CSS类的名称。
-
+* `hiddenHeaderEditingCSS`: 指定在编辑RTE时应用于隐藏标题单元格的CSS类的名称。
 * `hiddenHeaderEditingStyle`: 指定在编辑RTE时应用于隐藏标题单元格的样式字符串。
-* `hiddenHeaderEditingStyle`如果在代码中指定CSS和样式字符串，则CSS类优先于样式字符串，并可能覆盖样式字符串所做的任何配置更改。
+
+如果在代码中指定CSS和样式字符串，则CSS类优先于样式字符串，并可能覆盖样式字符串所做的任何配置更改。
 
 要帮助作者在预览模式中对隐藏的标题应用CSS，您可以在代码中包含以下参数：
 
-`hiddenHeaderClassName`: 指定在预览模式下应用于隐藏标题单元格的CSS类的名称。
-
+* `hiddenHeaderClassName`: 指定在预览模式下应用于隐藏标题单元格的CSS类的名称。
 * `hiddenHeaderStyle`: 指定在预览模式下应用于隐藏标题单元格的样式字符串。
-* `hiddenHeaderStyle`如果在代码中指定CSS和样式字符串，则CSS类优先于样式字符串，并可能覆盖样式字符串所做的任何配置更改。
 
-为拼写检查器添加词典 {#adddict}
+如果在代码中指定CSS和样式字符串，则CSS类优先于样式字符串，并可能覆盖样式字符串所做的任何配置更改。
 
-## 激活拼写检查插件后，RTE会为每种相应的语言使用词典。 然后根据网站的语言选择，采用子树的语言属性或从URL中提取语言； 例如。 分支 `/en/` 被选为英语，分支被选 `/de/` 为德语。
+## 为拼写检查器添加词典 {#adddict}
 
-[!NOTE]`/de/`
+激活拼写检查插件后，RTE会为每种相应的语言使用词典。 然后根据网站的语言选择，采用子树的语言属性或从URL中提取语言； 例如。 分支 `/en/` 被选为英语，分支被选 `/de/` 为德语。
 
->[!NOTE]消息“拼写检查失败。” 已查看是否尝试检查未安装的语言。
+>[!NOTE]
+消息“拼写检查失败。” 已查看是否尝试检查未安装的语言。
+
 标准AEM安装包括下列字典：
 
-美国英语(en_us)
-
+* 美国英语(en_us)
 * 英国英语(en_gb)
-* [!NOTE]
 
->标准词典与相应的自 `/libs/cq/spellchecker/dictionaries`述文件一起位于。 请勿修改文件。
-如需添加更多词典，请按照以下步骤操作。`/libs/cq/spellchecker/dictionaries`
+>[!NOTE]
+标准词典与相应的自 `/libs/cq/spellchecker/dictionaries`述文件一起位于。 请勿修改文件。
 
-导航到页面 [https://extensions.openoffice.org/[#$tu323]。
+如需添加更多词典，请按照以下步骤操作。
 
-1. 
-1. [!CAUTION]
+1. 导航到页面 [https://extensions.openoffice.org/](https://extensions.openoffice.org/)。
+1. 选择所需的语言并下载包含拼写定义的ZIP文件。 解压文件系统上的存档内容。
 
-   >仅支持OpenOffice. `MySpell` org v2.0.1或更早版本格式的词典。 由于词典现在是存档文件，建议您在下载后验证存档文件。
-   找到。aff和。dic文件。 将文件名保留为小写。 例如， `de_de.aff` 和 `de_de.dic`。
+   >[!CAUTION]
+   仅支持OpenOffice. `MySpell` org v2.0.1或更早版本格式的词典。 由于词典现在是存档文件，建议您在下载后验证存档文件。
 
-1. 加载存储库中的。aff和。dic文件 `/apps/cq/spellchecker/dictionaries`。`de_de.dic`
-1. [!NOTE]
+1. 找到。aff和。dic文件。 将文件名保留为小写。 例如， `de_de.aff` 和 `de_de.dic`。
+1. 加载存储库中的。aff和。dic文件 `/apps/cq/spellchecker/dictionaries`。
 
->[!NOTE]RTE拼写检查器可按需使用。 它不会在您开始键入文本时自动运行。
+>[!NOTE]
+RTE拼写检查器可按需使用。 它不会在您开始键入文本时自动运行。
 要运行拼写检查器，请点按／单击工具栏中的拼写检查器按钮。 RTE检查单词拼写并突出显示拼写错误的单词。
 如果包含拼写检查器建议的任何更改，则文本更改和拼写错误的单词的状态不再突出显示。 要运行拼写检查器，请再次点按／单击“拼写检查器”按钮。
-为撤消和重做操作配置历史记录大小 {#undohistory}
 
-## RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，50个编辑存储在历史记录中。 您可以根据需要配置此值。{#undohistory}
+## 为撤消和重做操作配置历史记录大小 {#undohistory}
 
-在组件中，导航到节点 `<rtePlugins-node>/undo`。 如果这些节点不存在，请创建它们。 有关详细信息， [请参阅激活插件](#activateplugin)。
+RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，50个编辑存储在历史记录中。 您可以根据需要配置此值。
 
-1. 在节 `undo` 点上创建属性：[](#activateplugin)
-1. **名称** `maxUndoSteps`
+1. 在组件中，导航到节点 `<rtePlugins-node>/undo`。 如果这些节点不存在，请创建它们。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在节 `undo` 点上创建属性：
 
+   * **名称** `maxUndoSteps`
    * **类型** `Long`
    * **值** ，您希望在历史记录中保存的撤消步骤数。 默认为 50。使 `0` 用完全禁用撤消／重做。
-   * **保存更改。**`0`
 
-1. 配置选项卡大小 {#tabsize}
+1. 保存更改。
 
-## 当在任何文本中按下制表符字符时，会插入预定义的空格数； 默认情况下，这是三个不间断空格和一个空格。{#tabsize}
+## 配置选项卡大小 {#tabsize}
+
+当在任何文本中按下制表符字符时，会插入预定义的空格数； 默认情况下，这是三个不间断空格和一个空格。
 
 要定义选项卡大小，请执行以下操作：
 
-在您的组件中，导航到节点 `<rtePlugins-node>/keys`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/keys`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在节 `keys` 点上创建属性：
 
-1. 在节 `keys` 点上创建属性：[](#activateplugin)
-1. **名称** `tabSize`
-
+   * **名称** `tabSize`
    * **类型** `String`
-   * **值** ，要用于制表符的空格字符数。`String`
-   * **保存更改。**
+   * **值** ，要用于制表符的空格字符数。
 
-1. 设置缩进边距 {#indentmargin}
+1. 保存更改。
 
-## 启用缩进（默认）后，您可以定义缩进大小：{#indentmargin}
+## 设置缩进边距 {#indentmargin}
 
-[!NOTE]
+启用缩进（默认）后，您可以定义缩进大小：
 
->[!NOTE]此缩进大小仅应用于文本的段落（块）; 它不影响实际列表的缩进。
-在组件中，导航到节点 `<rtePlugins-node>/lists`。 如果这些节点不存在，请创建它们。 有关详细信息， [请参阅激活插件](#activateplugin)。
+>[!NOTE]
+此缩进大小仅应用于文本的段落（块）; 它不影响实际列表的缩进。
 
-1. 在节 `lists` 点上创建 `identSize` 参数：](#activateplugin)
-1. **名称**: `identSize`
+1. 在组件中，导航到节点 `<rtePlugins-node>/lists`。 如果这些节点不存在，请创建它们。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在节 `lists` 点上创建 `identSize` 参数：
 
+   * **名称**: `identSize`
    * **类型**: `Long`
-   * **值**: 缩进边距所需的像素数。`Long`
-   * 配置可编辑空间的高度 {#editablespace}**
+   * **值**: 缩进边距所需的像素数。
 
-## [!NOTE]
+## 配置可编辑空间的高度 {#editablespace}
 
->[!NOTE]仅当在对话框中使用RTE时（在经典UI中不是就地编辑），才适用。
+>[!NOTE]
+仅当在对话框中使用RTE时（在经典UI中不是就地编辑），才适用。
+
 您可以定义组件对话框中显示的可编辑空间的高度：
 
-在组件 `../items/text` 对话框定义的节点上，创建新属性：
+1. 在组件 `../items/text` 对话框定义的节点上，创建新属性：
 
-1. **名称** `height`
-
+   * **名称** `height`
    * **类型** `Long`
-   * **以像素** 为单位对编辑画布的高度进行值。`Long`
-   * [!NOTE]**
+   * **以像素** 为单位对编辑画布的高度进行值。
+   >[!NOTE]
+   这不会更改对话框窗口的高度。
 
-   >[!NOTE]这不会更改对话框窗口的高度。
-   保存更改。
+1. 保存更改。
 
-1. 为链接配置样式和协议 {#linkstyles}
+## 为链接配置样式和协议 {#linkstyles}
 
-## 在AEM中添加链接时，您可以定义：{#linkstyles}
+在AEM中添加链接时，您可以定义：
 
-要使用的CSS样式
-
+* 要使用的CSS样式
 * 协议自动接受
-* 要配置如何从其他项目在AEM中添加链接，请定义HTML规则。
 
-使用CRXDE Lite找到项目的文本组件。
+要配置如何从其他项目在AEM中添加链接，请定义HTML规则。
 
+1. 使用CRXDE Lite找到项目的文本组件。
 1. 在与创建节点相同的级别 `<rtePlugins-node>`创建新节点，即在以下节点的父节点下创建节点 `<rtePlugins-node>`:
-1. **名称** `htmlRules`
 
+   * **名称** `htmlRules`
    * **类型** `nt:unstructured`
-   * [!NOTE]**`nt:unstructured`
-
-   >该 `../items/text` 节点具有以下属性：
-   **名称** `xtype`
+   >[!NOTE]
+   该 `../items/text` 节点具有以下属性：
+   * **名称** `xtype`
    * **类型** `String`
    * **值** `richtext`
-   * 节点的位置 `../items/text` 可能因对话框的结构而异； 两个示例包括：**`richtext`
-
-   `/apps/myProject>/components/text/dialog/items/text`
+   节点的位置 `../items/text` 可能因对话框的结构而异； 两个示例包括：
+   * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-   * 在 `htmlRules`下，创建新节点。
 
 
-1. **名称** `links`
+1. 在 `htmlRules`下，创建新节点。
 
+   * **名称** `links`
    * **类型** `nt:unstructured`
-   * 在节点 `links` 下，根据需要定义属性：**`nt:unstructured`
 
-1. 内部链接的CSS样式：`links`
+1. 在节点 `links` 下，根据需要定义属性：
 
-   * **名称** `cssInternal`
+   * 内部链接的CSS样式：
 
+      * **名称** `cssInternal`
       * **类型** `String`
       * **值** CSS类的名称（没有前面的“.”）; for example, `cssClass` instead of `.cssClass`)
-      * **外部链接的CSS样式**`cssClass``.cssClass`
-   * **名称** `cssExternal`
+   * 外部链接的CSS样式
 
+      * **名称** `cssExternal`
       * **类型** `String`
       * **值** CSS类的名称（没有前面的“.”）; for example, `cssClass` instead of `.cssClass`)
-      * 有效协议 **的阵列** (包括https://、https:// file://、mailto：等)`cssClass``.cssClass`
-   * **名称** `protocols`
+   * 有效协议 **的阵列** (包括https://、https:// file://、mailto：等)
 
+      * **名称** `protocols`
       * **类型** `String[]`
-      * **值**（一个或多个）协议`String[]`
-      * **defaultProtocol** (String类型的 **属性**): 在用户未明确指定协议时使用的协议。
-   * **名称** `defaultProtocol`**
+      * **值**（一个或多个）协议
+   * **defaultProtocol** (String类型的 **属性**): 在用户未明确指定协议时使用的协议。
 
+      * **名称** `defaultProtocol`
       * **类型** `String`
-      * **值**（一个或多个）默认协议`String`
-      * **如何处理链接的目标属性的定义。 创建新节点：**
-   * **名称** `targetConfig`
+      * **值**（一个或多个）默认协议
+   * 如何处理链接的目标属性的定义。 创建新节点：
 
+      * **名称** `targetConfig`
       * **类型** `nt:unstructured`
-      * 在节点上 `targetConfig`: 定义所需的属性：**`nt:unstructured`
+      在节点上 `targetConfig`: 定义所需的属性：
 
-      指定目标模式：`targetConfig`
+      * 指定目标模式：
 
-      * **名称** `mode`
-
+         * **名称** `mode`
          * **类型** `String`)
-         * **值**:`String`
-         * `auto`: 表示已选择自动目标**
+         * **值**:
 
-            * (由外部链 `targetExternal` 接或内部链接的 `targetInternal` 属性指定)。
+            * `auto`: 表示已选择自动目标
 
-               `manual`: 不适用于此上下文`targetInternal`
+               (由外部链 `targetExternal` 接或内部链接的 `targetInternal` 属性指定)。
 
+            * `manual`: 不适用于此上下文
             * `blank`: 不适用于此上下文
-            * `blank`内部链接的目标:
-      * **名称** `targetInternal`
+      * 内部链接的目标:
 
+         * **名称** `targetInternal`
          * **类型** `String`
          * **为内部** 链接的目标值(仅在“”模式为时使 `auto`用)
-         * **外部链接的目标:**`auto`
-      * **名称** `targetExternal`
+      * 外部链接的目标:
 
+         * **名称** `targetExternal`
          * **类型** `String`
          * **为外部** 链接设置目标(仅当模式为时使用 `auto`)。
-         * **保存所有更改。**`auto`
 
 
 
@@ -779,4 +772,4 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 
 
-1. Save all changes.
+1. 保存所有更改。
