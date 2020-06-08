@@ -4,13 +4,16 @@ description: 本文介绍如何在时间轴上显示资产的活动日志。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 46%
 
 ---
 
 
-# 查看活动流中的资产操作日志 {#activity-stream-in-timeline}
+# 视图资产操作日志在活动流中 {#activity-stream-in-timeline}
 
-这项功能可将资产的活动日志显示在时间轴上。如果您在Adobe Experience Manager(AEM)资产中执行下列任何与资产相关的操作，“活动流”功能会更新时间轴以反映该活动。
+这项功能可将资产的活动日志显示在时间轴上。如果您在Adobe Experience Manager(AEM)资产中执行下列任何与资产相关的操作，活动流功能会更新时间轴以反映活动。
 
 以下操作记录在活动流中：
 
@@ -23,13 +26,13 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 * 拒绝
 * 移动
 
-将从存储日志文件的CRX位置获取要显示在时间轴 `/var/audit/com.day.cq.dam/content/dam` 中的活动日志。  此外，当新资产上传或现有资产通过 [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM桌面应用程序修改并签入AEM时，将记录时间轴活动](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)。
+时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。此外，当上传新资产或通过 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM 桌面应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/release-notes.html)修改现有资产并签入 AEM 时，会记录时间轴活动。
 
 >[!NOTE]
 >
->临时工作流不会显示在时间轴中，因为不会保存这些工作流的历史记录信息。
+>临时工作流不会显示在时间轴中，因为没有为这些工作流保存历史记录信息。
 
-要查看活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表中选 **[!UICONTROL 择Timeline]** 。
+要视图活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表 **[!UICONTROL 中]** 选择时间轴。
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
@@ -39,4 +42,4 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 >[!NOTE]
 >
->“发布”和“取消发布”任 **[!UICONTROL 务的默认]****[!UICONTROL 日志存储位置为]** “ `/var/audit/com.day.cq.replication/content`”。 对于 **[!UICONTROL 移动任务]** ，默认位置为 `/var/audit/com.day.cq.wcm.core.page`。
+>**[!UICONTROL 发布]**&#x200B;和&#x200B;**[!UICONTROL 取消发布]**&#x200B;任务的默认日志存储位置为 `/var/audit/com.day.cq.replication/content`。对于&#x200B;**[!UICONTROL 移动]**&#x200B;任务，默认位置为 `/var/audit/com.day.cq.wcm.core.page`。
