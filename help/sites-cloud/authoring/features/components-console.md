@@ -1,8 +1,11 @@
 ---
 title: 组件控制台
 description: 组件控制台允许您浏览针对实例定义的所有组件
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * 单击图标的源将转到该组件。
    * 查看组件的&#x200B;**资源类型**&#x200B;和&#x200B;**资源超级类型**（如果定义）。
       * 单击“资源超级类型”将转到该组件。
+
    >[!NOTE]
    >
    >由于 `/apps` 在运行时不可编辑，因此组件控制台为只读。
