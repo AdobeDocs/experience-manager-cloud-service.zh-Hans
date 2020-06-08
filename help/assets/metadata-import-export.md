@@ -4,6 +4,9 @@ description: 本文介绍如何批量导入和导出元数据。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 10%
 
 ---
 
