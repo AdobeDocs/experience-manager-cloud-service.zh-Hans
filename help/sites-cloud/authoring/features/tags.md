@@ -1,8 +1,11 @@
 ---
 title: 使用标记
 description: 标记是用于对网站中的内容进行分类的简单快捷方法
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 100%
 
 ---
 
