@@ -1,8 +1,11 @@
 ---
 title: 对 Adobe Experience Manager (AEM) 云服务的显著更改
 description: 对 Adobe Experience Manager (AEM) 云服务的显著更改
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 100%
 
 ---
 
