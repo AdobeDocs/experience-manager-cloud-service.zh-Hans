@@ -3,6 +3,9 @@ title: Flash 查看器生命周期终止通知
 description: 自 2017 年 1 月 31 日起，Adobe Scene7 将正式停止对 Flash 查看器平台的支持。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 61%
 
 ---
 
