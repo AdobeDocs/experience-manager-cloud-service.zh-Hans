@@ -3,6 +3,9 @@ title: 参与工作流
 description: 工作流通常包括需要人员对页面或资产执行活动的步骤。
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 70%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 可用工作流操作的通知 {#notifications-of-available-workflow-actions}
 
-如果向您分配了某个工作项（例如&#x200B;**批准内容**），则会显示各种警报和/或通知：
+为您分配了工作项(例如批准内 **容**)后，将显示各种警报和／或通知：
 
 * 您的[通知](/help/sites-cloud/authoring/getting-started/inbox.md)指示符（工具栏）上的数字将会递增：
 
@@ -36,7 +39,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 页面需执行的工作流数量。您可以：
       * 使用向左/向右箭头浏览各种工作流的状态信息。
       * 单击/点按实际数字以打开所有适用工作流的下拉列表，然后选择您希望在状态栏中显示的工作流。
-   ![包含多个工作流的页面](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+
+   ![具有多个工作流的页面](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
    >
@@ -214,9 +218,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 工作流详细信息会以选项卡的形式显示，并且工具栏中会提供相应的操作：
 
-* **工作项** (WORKITEM)选项卡：
+* **“工作项** ”选项卡：
 
-   ![“工作项”选项卡](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+   ![工作项选项卡](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * **“工作流信息** ”选项卡：
 
