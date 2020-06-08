@@ -1,8 +1,11 @@
 ---
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 100%
 
 ---
 
@@ -229,6 +232,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 您可以粘贴到同一页面或其他页面。
    * 粘贴的项目将被粘贴到选择粘贴操作时所在的项目上方。
    * 仅当剪贴板中含有内容时，才会显示“粘贴”操作。
+
    ![“粘贴”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -288,7 +292,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * 图像组件 - 全屏
 
-   [进入图像组件的全屏模式](#edit-content-full-screen-mode)可提供更多空间来编辑图像，并显示额外的编辑选项，例如&#x200B;**启动地图**&#x200B;和&#x200B;**重置缩放**。另外，全屏模式还允许您选择裁剪预设。
+   [进入图像组件的全屏模式](#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”******。 此外，全屏模式还允许选择裁剪预设。
 
    ![图像组件的全屏模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -344,6 +348,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 将显示用于调整组件大小的手柄。
    * 在屏幕的顶部将显示模拟器工具栏。
    * 在组件工具栏中将显示布局操作而不是标准编辑操作。
+
    ![布局模式下的组件](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    此时，您便可以像在[布局模式](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)中一样修改组件布局。
