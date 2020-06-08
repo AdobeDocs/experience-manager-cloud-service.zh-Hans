@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务站点
 description: Adobe Experience Manager 云服务站点自助资源和文档链接
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 100%
 
 ---
 
