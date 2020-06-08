@@ -1,8 +1,11 @@
 ---
 title: 体验片段
 description: 使用 Adobe Experience Manager 云服务体验片段，让您的体验可重复使用且更加灵活。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -214,7 +217,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 1. **创建**&#x200B;使您能够创建：
 
-   * **变体**
+   * **变量**
    * **live-copy 形式的变体**。
 
 1. 定义所需属性：
@@ -224,6 +227,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
    * **名称** - 如果留空，将从“标题”派生名称
    * **描述**
    * **变体标记**
+
    例如：
 
    ![变量属性](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -242,6 +246,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
    * 将所需片段从资产浏览器拖放到该组件上。
    * 从组件工具栏中选择&#x200B;**配置**，指定要使用的片段，然后使用&#x200B;**完成**&#x200B;确认。
+
    >[!NOTE]
    >
    >组件工具栏中的“编辑”将用作在片段编辑器中打开片段的快捷方式。
