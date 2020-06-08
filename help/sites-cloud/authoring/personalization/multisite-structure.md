@@ -3,6 +3,9 @@ title: 如何构建目标内容的多站点管理
 description: 图表显示了如何构建目标内容的多站点支持
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 86%
 
 ---
 
