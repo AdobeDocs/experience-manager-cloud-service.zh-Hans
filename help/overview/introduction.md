@@ -3,6 +3,9 @@ title: Adobe Experience Manager 云服务简介
 description: 'Adobe Experience Manager (AEM) 云服务简介。 '
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 100%
 
 ---
 
