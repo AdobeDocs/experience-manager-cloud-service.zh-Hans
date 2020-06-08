@@ -3,6 +3,9 @@ title: 使用 ContextHub 数据预览页面
 description: ContextHub 工具栏显示 ContextHub 存储区中的数据，并允许您更改存储区数据，该工具栏可用于预览内容
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +29,7 @@ ContextHub 工具栏在“预览”模式下可用。该工具栏仅在创作实
 
 1. 在打开页面以进行编辑时，在工具栏上单击或点按“预览”。
 
-   ![“预览”按钮](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
+   ![预览按钮](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
 1. 要显示工具栏，请单击或点按 ContextHub 图标。
 
@@ -46,7 +49,7 @@ UI 模块可以在工具栏中显示一个或多个 ContextHub 存储区中的�
 
 某些UI模块在单击或点击时显示弹出式叠加。 通常，弹出窗口包含的信息比工具栏上显示的信息要多。
 
-![ContextHub配置文件信息](/help/sites-cloud/authoring/assets/contexthub-profile.png)
+![ContextHub用户档案信息](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### 弹出窗口表单 {#popup-forms}
 
