@@ -1,8 +1,11 @@
 ---
 title: 处理页面版本
 description: 创建、比较和恢复页面版本
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
@@ -71,7 +74,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 导航以显示要还原到之前版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 打开“**时间轴**”列，然后选择“**显示全部**”或“**版本**”。将列出所选页面的所有版本。
+1. 打开“ **时间轴** ”列，然后选择“ **显示全部** ”或“ **版本**”。 将列出所选页面的页面版本。
 1. 选择要还原到的版本。将显示可能的选项：
 
    ![还原版本](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -84,7 +87,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 导航以显示要进行比较的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 打开&#x200B;**时间轴**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
+1. 打开“ **时间轴** ”列，然后选择“ **显示全部** ”或“ **版本**”。
 1. 将列出页面版本。选择要预览的版本：
 
    ![预览版本](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -103,7 +106,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 导航以显示要进行比较的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 打开&#x200B;**时间轴**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
+1. 打开“ **时间轴** ”列，然后选择“ **显示全部** ”或“ **版本**”。
 1. 将列出页面版本。选择要进行比较的版本：
 
    ![比较版本](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -131,7 +134,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![时间扭曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. 在出现的对话框中，设置目标日期和时间，然后单击或点按&#x200B;**设置日期**。如果未选择时间，则默认将使用当前时间。
+1. 在对话框中设置目标日期和时间，然后单击或点按设 **置日期**。 如果不选择时间，则当前时间将默认。
 
    ![时间扭曲目标日期](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
