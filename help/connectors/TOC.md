@@ -1,8 +1,11 @@
 ---
-sub-product: AEM作为云服务的连接器
-user-guide-title: AEM作为云服务的连接器
+sub-product: 将AEM作为云服务的连接器
+user-guide-title: 将AEM作为云服务的连接器
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '35'
+ht-degree: 60%
 
 ---
 
