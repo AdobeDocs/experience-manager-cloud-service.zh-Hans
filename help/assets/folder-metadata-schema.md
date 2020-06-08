@@ -47,7 +47,7 @@ Adobe Experience Manager(AEM)资产允许您为资产文件夹创建元数据模
 
 1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
-   如果需要，请从“设置”选项卡中 **[!UICONTROL 删除组]** 件。
+   如果需要，请从“设置”选项卡中 **[!UICONTROL 删除]** 组件。
 
    ![configure_properties](assets/configure_properties.png)
 
