@@ -4,8 +4,8 @@ description: '部署到 AEM 云服务 '
 translation-type: tm+mt
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3512'
+ht-degree: 1%
 
 ---
 
