@@ -3,6 +3,9 @@ title: Adobe Experience Manager资产作为云服务的显着变化
 description: 与Adobe Experience Manager 6.5相比，AEM Cloud服务中对Adobe Experience Manager资产的显着更改。
 translation-type: tm+mt
 source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 4%
 
 ---
 
