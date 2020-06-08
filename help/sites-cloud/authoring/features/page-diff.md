@@ -1,8 +1,11 @@
 ---
 title: 页面差异
 description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
 
