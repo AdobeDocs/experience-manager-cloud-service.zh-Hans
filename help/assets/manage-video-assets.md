@@ -4,6 +4,9 @@ description: 了解如何上传、预览、批注和发布视频资产。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 16%
 
 ---
 
