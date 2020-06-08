@@ -1,8 +1,11 @@
 ---
 title: 创作概念
 description: 在 AEM 中进行创作的概念
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 AEM 安装通常至少包含两个环境：
 
-* 创作
+* 作者
 * 发布
 
 通过这些交互可以将内容放到您的网站上，以便您的访客可以访问该内容。
