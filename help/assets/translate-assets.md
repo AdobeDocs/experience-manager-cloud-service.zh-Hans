@@ -184,7 +184,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
    单击／点 **[!UICONTROL 按拒绝翻译]** ，以在目标区域设置根目录中保留资产的最初翻译版本并拒绝编辑的版本。
 
-1. 导航到“资产”控制台，然后打开每个已翻译资产的“属性”页面以视图已翻译的元数据。
+1. 导航到“资产”控制台，然后打开每个已翻译资产的“属性”页面，以视图已翻译的元数据。
 
 有关有效翻译资产元数据的提示，请参 [阅有效翻译元数据的5个步骤](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)。
 
