@@ -1,8 +1,11 @@
 ---
 title: 导出到 CSV
 description: 将页面的相关信息导出到本地系统上的 CSV 文件
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 100%
 
 ---
 
