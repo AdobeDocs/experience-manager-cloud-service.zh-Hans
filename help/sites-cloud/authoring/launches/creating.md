@@ -3,6 +3,9 @@ title: 创建启动项
 description: 您可以创建启动项，以允许更新现有网页的新版本，以便将来激活。
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，Live Copy 会在源页面发生更改时自动更新启动页面。You can specify that a static copy is created to prevent automatic changes. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
-或者，您可以选择指定&#x200B;**启动日期**（和时间），以便定义何时提升和激活启动页面。However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
+（可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**[](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
 
 ## 创建启动项 {#creating-a-launch}
 
@@ -28,20 +31,20 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >使用&#x200B;**站点**&#x200B;控制台时，通常要导航到源页面的位置，但这不并是强制性的，因为您可以在向导中选择&#x200B;**启动源**&#x200B;时进行导航。
 
 1. 根据您所使用的控制台，执行相应的操作：
-   * **启动项**：
+   * **启动项**:
       1. 从工具栏中选择&#x200B;**创建启动项**&#x200B;以打开向导。
-   * **站点**：
+   * **站点**:
       1. 从工具栏中选择&#x200B;**创建**&#x200B;以打开选择框。
       1. 从该选择框中，选择&#x200B;**创建启动项**&#x200B;以打开向导。
    >[!NOTE]
    >
-   >在&#x200B;**站点**&#x200B;控制台中，您还可以在选择&#x200B;**创建**&#x200B;之前使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)选择一个页面。
+   >在“站 **点** ”控制台中，您还可以使用选 [择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) ，在选择创建之前选择 **页面**。
    >
    >这将使用选定的页面作为初始源页面。
 
 1. 在&#x200B;**选择源**&#x200B;步骤中，您需要&#x200B;**添加页面**。您可以通过指定每个页面的路径来选择多个页面：
    * 导航到所需的位置。
-   * 选择源页面并确认（复选标记）。
+   * 选择源页面并进行确认（复选标记）。
    根据需要重复执行上述步骤。
 
    ![选择启动源](/help/sites-cloud/authoring/assets/launches-select-source.png)
@@ -68,7 +71,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **使用新模板替换页面**：有关更多详细信息，请参阅[使用新模板创建启动项](#create-launch-with-new-template)。
    * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过使启动项成为Live Copy来实现这一点。 默认情况下，此选项处于选中状态。<!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **启动日期**：激活启动副本的日期和时间（取决于&#x200B;**生产就绪**&#x200B;标记；请参阅[启动项 - 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)）。
-   ![启动项属性](/help/sites-cloud/authoring/assets/launches-properties.png)
+   ![启动属性](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. 使用&#x200B;**创建**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：
 
@@ -90,7 +93,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 如果选中此选项，则将会：
 
 * 更新其他可用选项，
-* 包括一个新步骤，您可以在其中选择所需的模板。
+* 加入新步骤，在该步骤中，您可以选择所需的模板。
 
 ![选择新模板](/help/sites-cloud/authoring/assets/launches-select-template.png)
 
@@ -113,7 +116,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
 
 1. 在&#x200B;**启动项**&#x200B;控制台中，选择&#x200B;**创建**。
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. 选择所需的启动项并单击&#x200B;**选择**&#x200B;进行确认：
+1. 选择 **添加页面**，然后通过在筛选器中指定来导航到启动 `/content/launches` 项分支。 选择所需的启动项，并通过选择进 **行确认**:
 
    ![创建嵌套启动项](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
@@ -126,11 +129,11 @@ Creating a nested launch from the **Launches** console is basically the same as 
 要从&#x200B;**站点**&#x200B;控制台中基于现有的启动项创建嵌套启动项，请执行以下操作：
 
 1. [从“引用”（“站点”控制台）中访问启动项](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)以显示可用的操作。
-1. 选择&#x200B;**创建启动项**&#x200B;以打开向导（由于已选择源，因此将跳过&#x200B;**选择源**&#x200B;步骤）。
+1. 选择 **创建启动项** ，以打开向导(由于已选择源，因此它将跳过选择源 **步骤** )。
 1. 输入&#x200B;**启动项标题**&#x200B;和任何其他所需的详细信息（与常规启动项一样）。
 1. 使用&#x200B;**创建**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：
 
-If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
+如果选择 **完成**，您将返回到站点控制台的引 **用边栏****** ，如果您选择了相应的页面，则会显示新的启动项。
 
 ### 删除启动项 {#deleting-a-launch}
 
