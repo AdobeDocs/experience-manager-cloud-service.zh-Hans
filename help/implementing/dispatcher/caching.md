@@ -4,7 +4,7 @@ description: '在AEM中缓存为云服务 '
 translation-type: tm+mt
 source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
