@@ -1,8 +1,11 @@
 ---
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 100%
 
 ---
 
@@ -74,7 +77,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 要[创建新的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，请执行以下操作：
 
-1. [导航](#finding-your-page)到要创建新页面的位置。
+1. [导航到要创建新页面的位置。](#finding-your-page)
 1. 使用&#x200B;**创建**&#x200B;图标，然后从列表中选择&#x200B;**页面**：
 
    ![“创建”按钮](/help/sites-cloud/authoring/assets/create.png)
@@ -102,6 +105,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * 在移动设备上：点按并按住卡片
       * 在桌面设备上：使用勾号图标表示的[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)：
    * 卡片上将覆盖一个勾号，表示已选择该页面。
+
    ![示例卡片](/help/sites-cloud/authoring/assets/card.png)
 
 ### 快速操作（仅限卡片视图/桌面）{#quick-actions-card-view-desktop-only}
@@ -134,6 +138,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * 打开侧面板
       * 选择组件选项卡（[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)）
       * 将所需组件拖放到页面中。
+
       可以通过以下图标打开（或关闭）侧面板：
 
       ![侧面板切换按钮](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -171,6 +176,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 从工具栏中选择&#x200B;**预览**。
    * 使用&#x200B;**编辑**&#x200B;下拉选择器返回编辑模式（或选择其他模式）。
+
    >[!NOTE]
    >
    >要使用内容中的链接导航，您必须使用[预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
@@ -186,6 +192,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
       * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
+
       ![“属性”按钮](/help/sites-cloud/authoring/assets/properties.png)
 
    1. 将会显示页面属性。您可以进行需要的更新，然后使用“保存”保留这些更改
@@ -209,6 +216,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
       * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏（还可以访问[稍后发布](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)）。
+
       ![“快速发布”按钮](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -217,7 +225,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    1. 打开&#x200B;**页面信息**&#x200B;菜单。
    1. 选择&#x200B;**发布页面**。
 
-* 从控制台取消发布页面只能通过&#x200B;**管理发布**&#x200B;选项来完成，此选项只在工具栏上可用（不能通过快速操作使用）。
+* 从控制台取消发布页面只能通过“管理发布 **** ”选项完成，该选项仅在工具栏上可用（不能通过快速操作）。
 
    ![“管理发布”按钮](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -230,10 +238,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 这些操作全部可以通过以下项触发：
 
 1. [导航](#finding-your-page)到要移动、复制并粘贴或删除的页面。
-1. 通过以下任一方式，根据需要选择复制（然后再选择粘贴）、移动或删除图标：
+1. 使用以下任一方式根据需要选择复制（然后粘贴）、移动或删除图标：
 
    * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
    * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
+
    然后，取决于您的操作：
 
    * 复制：
@@ -251,7 +260,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 锁定页面（然后解锁）{#locking-your-page-then-unlocking}
 
-[锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)可防止其他作者在您处理页面的同时也对其进行编辑。可以在下列位置找到“锁定”（和“解锁”）图标/按钮：
+[锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。 可以找到“锁定”（和“解锁”）图标／按钮：
 
 * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 * 编辑页面时显示的[“页面信息”下拉菜单](#editing-the-page-properties)。
