@@ -4,6 +4,9 @@ description: 使用云本机、可扩展的资产处理微服务处理您的数�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 3%
 
 ---
 
@@ -52,7 +55,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 摄取和处理流是Experience Manager的资产微服务体系结构的主要概念。
 
-* **直接二进制访问**: 一旦为Experience Manager环境配置了资产，资产便会被传输（并上传）到Cloud Binary Store，然后AEM、资产微型服务以及客户可以直接访问这些资产来执行工作。 这样可最大限度地减少网络负载和存储二进制文件的复制
+* **直接二进制访问**: 一旦为Experience Manager环境配置了资产，资产便会被传输（并上传）到Cloud Binary Store，然后AEM、资产微型服务以及客户最终可以直接访问这些资产来执行工作。 这样可最大限度地减少网络负载和存储二进制文件的复制
 * **外部化处理**: 资产处理在AEM环境之外完成，并保存其资源（CPU、内存），以便为最终用户提供关键的数字资产管理功能并支持与系统进行交互式工作
 
 ## 通过直接二进制访问上传资产 {#asset-upload-with-direct-binary-access}
