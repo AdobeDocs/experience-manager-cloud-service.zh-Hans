@@ -1,31 +1,34 @@
 ---
 title: 将资产、文件夹和收藏集共享为链接
-description: 本文介绍如何在Experience Manager资产中以超链接的形式共享资产、文件夹和收藏集。
+description: 本文将介绍如何在Experience Manager资产中以超链接的形式共享资产、文件夹和收藏集。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '906'
+ht-degree: 5%
 
 ---
 
 
-# 共享和分发Experience Manager中管理的资产 {#share-assets-from-aem}
+# 共享和分发在Experience Manager中管理的资产 {#share-assets-from-aem}
 
-Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法将Experience Manager资产共享为云服务：
+通过Adobe Experience Manager(AEM)资产，您可以与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法将Experience Manager资产作为云服务进行共享：
 
-* 作为链接共享。
+* 以链接形式共享。
 * 下载资产并单独共享。
 * 通过AEM桌面应用程序共享。
-* 通过Adobe Asset Link共享。
+* 通过Adobe Asset Link进行共享。
 * （即将推出的功能）使用Brand Portal进行共享。
 
 ## 以链接方式共享资产 {#sharelink}
 
-要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户可以视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
+要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户能够视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
 
 >[!NOTE]
 >
 >* 您需要对要作为链接共享的文件夹或资产具有编辑ACL权限。
->* 在与用户共享链接之前，请确保已配置Day CQ Mail服务。 否则，将发生错误。
+>* 在与用户共享链接之前，请确保已配置Day CQ邮件服务。 否则，将发生错误。
 
 
 1. 在“资产”用户界面中，选择要作为链接共享的资产。
@@ -33,7 +36,7 @@ Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包
 
    >[!NOTE]
    >
-   >如果共享资产被移到其他位置，其链接将停止工作。 重新创建链接并与用户重新共享。
+   >如果共享资产被移动到其他位置，其链接将停止工作。 重新创建链接并与用户重新共享。
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -104,29 +107,29 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## 下载和共享资产 {#download-and-share-assets}
 
-用户可以在Experience manager之外下载并共享某些资产。 有关详细信息，请 [参阅如何搜索资产](/help/assets/search-assets.md)[、如何下载资产](/help/assets/download-assets-from-aem.md)，以 [及如何下载集合](manage-collections.md#download-a-collection)
+用户可以在Experience manager之外下载并共享某些资产。 有关详细信息，请 [参阅如何搜索资产](/help/assets/search-assets.md)[、如何下载资产](/help/assets/download-assets-from-aem.md)以及如 [何下载集合](manage-collections.md#download-a-collection)
 
 ## 与创意专业人士共享资源 {#share-with-creatives}
 
 营销人员和业务线用户可以使用、
 
-* **AEM桌面应用程序**:该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参 [阅浏览、搜索和预览资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其共享回作为AEM用户的对手，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM桌面应用程序**: 该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参 [阅浏览、搜索和预览资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其与AEM用户的对应人员共享，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
-* **Adobe Asset Link**:创意专业人士可以直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜索和使用资源。
+* **Adobe资产链接**: 创意专业人士可以直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜索和使用资源。
 
 ## 配置资产共享 {#configure-sharing}
 
-共享资产的不同选项需要特定配置，并具有特定的先决条件。
+共享资产的不同选项需要特定配置，并且具有特定的先决条件。
 
 ### 配置资产链接共享 {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户可以视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
+要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户能够视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
 
 >[!NOTE]
 >
->如果要将AEM作者实例中的链接共享到外部实体，请确保仅提供以下请求URL `GET` 。 阻止其他URL以确保AEM作者实例的安全。
+>如果要将AEM作者实例中的链接共享给外部实体，请确保仅提供以下请求 `GET` URL。 阻止其他URL以确保您的AEM作者实例安全。
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -151,33 +154,33 @@ Before you can share assets as links, configure the email service.
 
 ### 配置最大数据大小 {#maxdatasize}
 
-当您使用“链接共享”功能从共享的链接下载资产时，AEM会从存储库压缩资产层次结构，然后以ZIP文件格式返回资产。 但是，在ZIP文件中压缩的数据量没有限制的情况下，大量数据会受到压缩，这会导致JVM中内存不足错误。 要防止由于这种情况而导致系统受到潜在的拒绝服务攻击，您可以配置下载文件的最大大小。 如果资产的未压缩大小超出配置值，则会拒绝资产下载请求。 默认值为100 MB。
+当您使用链接共享功能从共享的链接下载资产时，AEM会从存储库中压缩资产层次结构，然后以ZIP文件形式返回资产。 但是，在ZIP文件中压缩的数据量没有限制的情况下，大量数据会受到压缩，这会导致JVM中内存不足错误。 要保护系统免受由于这种情况而可能发生的拒绝服务攻击，您可以配置下载文件的最大大小。 如果资产的未压缩大小超出配置值，则会拒绝资产下载请求。 默认值为100 MB。
 
 1. 单击/点按 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web Console]**。
-1. 从Web控制台中，找到 **[!UICONTROL Day CQ DAM临时资产共享代理Servlet配置]** 。
-1. 在编辑模式下打开配置，并修改“最大内容大小(未压 **[!UICONTROL 缩)”参数的值]** 。
+1. 在Web控制台中，找到 **[!UICONTROL Day CQ DAM临时资产共享代理Servlet配置]** 。
+1. 在编辑模式下打开配置，并修改“最大内容大小(未 **[!UICONTROL 压缩)”参数的]** 值。
 1. 保存更改。
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### 使桌面操作能够与桌面应用程序一起使用 {#desktop-actions}
+### 启用桌面操作以与桌面应用程序一起使用 {#desktop-actions}
 
-从浏览器的“资产”用户界面中，您可以浏览资产位置或注销并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参阅 [在AEM Web界面中启用桌面操作](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
+从浏览器的“资产”用户界面中，您可以浏览资产位置或签出并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参阅 [在AEM Web界面中启用桌面操作](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
-![使桌面操作能够在使用桌面应用程序时用作快捷键](assets/enable_desktop_actions.png)
+![使用桌面应用程序时启用桌面操作以用作快捷方式](assets/enable_desktop_actions.png)
 
 ### 使用Adobe Asset Link的配置 {#configure-asset-link}
 
-Adobe Asset Link简化了创意人员和营销人员在内容创建过程中的协作。 它将Adobe Experience Manager(AEM)资产与Creative Cloud桌面应用程序Adobe InDesign、Adobe Photoshop和Adobe Illustrator相连。 通过Adobe Asset Link面板，创意人员可以访问和修改AEM资产中存储的内容，而无需离开他们最熟悉的创意应用程序。
+Adobe Asset Link简化了创意人员和营销人员在内容创建过程中的协作。 它将Adobe Experience Manager(AEM)资产与Creative Cloud桌面应用程序Adobe InDesign、Adobe Photoshop和Adobe Illustrator连接在一起。 通过Adobe Asset Link面板，创意人员可以访问和修改AEM资产中存储的内容，而无需离开他们最熟悉的创意应用程序。
 
-了 [解如何配置AEM以与Adobe Asset Link一起使用](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)。
+了 [解如何配置AEM以与Adobe Asset Link一起使用](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)。
 
 ## Best practices and troubleshooting {#bestpractices}
 
 * 名称中包含空白的资产文件夹或收藏集可能无法共享。
-* 如果用户无法下载共享资产，请向AEM管理员检查下载限 [制](#maxdatasize) 。
+* 如果用户无法下载共享资产，请向AEM管理员咨询下载限 [制](#maxdatasize) 。
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
