@@ -3,13 +3,16 @@ title: 基于角色的权限
 description: 基于角色的权限
 translation-type: tm+mt
 source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 21%
 
 ---
 
 
 # 基于角色的权限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager具有] 预配置的具有适当权限的角色。 例如，开发人员开发代码并具有将代码推送到Git存储库 **的权限**。 或者，业务所有者具有不同的权限，允许他们定义关键绩效指标(KPI)并批准部署。
+[!UICONTROL Cloud Manager 预配置了一些具有适当权限的角色。]例如，开发人员开发代码并具有将代码推送到Git存储库 **的权限**。 或者，业务所有者具有不同的权限，允许他们定义关键绩效指标(KPI)并批准部署。
 
 ## 用户权限 {#user-permissions}
 
