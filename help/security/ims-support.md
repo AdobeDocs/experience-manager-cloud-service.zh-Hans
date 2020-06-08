@@ -1,8 +1,11 @@
 ---
 title: 对 Adobe Experience Manager 云服务的 IMS 支持
 description: 对 Adobe Experience Manager 云服务的 IMS 支持
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+workflow-type: tm+mt
+source-wordcount: '1926'
+ht-degree: 100%
 
 ---
 
