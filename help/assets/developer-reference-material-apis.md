@@ -4,6 +4,9 @@ description: 资产API允许执行基本的创建——读取——更新——�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+workflow-type: tm+mt
+source-wordcount: '1249'
+ht-degree: 1%
 
 ---
 
