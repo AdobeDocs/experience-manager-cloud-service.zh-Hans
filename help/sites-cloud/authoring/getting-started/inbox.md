@@ -92,6 +92,7 @@ ht-degree: 97%
    * **分组依据**
    * **计划**&#x200B;或&#x200B;**无**
    * **卡片大小**
+
    ![收件箱日历视图设置](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **列表视图**
@@ -100,6 +101,7 @@ ht-degree: 97%
 
    * **排序方式**
    * **排序顺序**
+
    ![收件箱列表视图设置](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    您还可以将日历委派给其他用户，向其他用户请求委派以及管理您的委派。
@@ -128,6 +130,7 @@ ht-degree: 97%
    * **回退**&#x200B;到上一步
    * 查看工作流的有效负荷
    * 从该项目创建一个项目
+
    >[!NOTE]
    >
    >有关更多信息，请参阅：
@@ -140,6 +143,7 @@ ht-degree: 97%
    * 将打开与操作对应的对话框
    * 将启动操作向导
    * 将打开文档页面
+
    例如，**委派**&#x200B;操作将打开一个对话框：
 
    ![委派收件箱任务](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ ht-degree: 97%
       * **任务优先级**
       * **开始日期**
       * **到期日期**
+
    ![收件箱添加任务](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **高级**
 
       * **名称**：这将用于组建 URL，如果留空，URL 将会基于&#x200B;**标题**。
+
    ![收件箱添加任务高级选项](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. 选择&#x200B;**提交**。
