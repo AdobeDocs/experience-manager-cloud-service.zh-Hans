@@ -1,9 +1,12 @@
 ---
-title: 使用连接的资产在[!DNL Adobe Experience Manager Sites]创作工作流程中共享DAM资产。
-description: 在另一个[!DNL Adobe Experience Manager Sites]部署上创建网页时，使用远程[!DNL Adobe Experience Manager Assets]部署上的可用资产。
+title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+description: 使用远程部署中可 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 用的资源。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+workflow-type: tm+mt
+source-wordcount: '2049'
+ht-degree: 54%
 
 ---
 
@@ -89,6 +92,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. 选择工作流启动器，然后单击操作栏上的&#x200B;**[!UICONTROL 属性]**。
 
    1. In the [!UICONTROL Properties] wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
+
    | 之前 | 之后 |
    | ------------------------------------------------------- | -------------------------------------------------------------------------- |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
