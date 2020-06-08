@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务的操作和维护
 description: Adobe Experience Manager 云服务操作和维护自助资源和文档链接
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
