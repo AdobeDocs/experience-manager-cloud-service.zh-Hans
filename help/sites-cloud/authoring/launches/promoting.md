@@ -3,6 +3,9 @@ title: 提升启动项
 description: '您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。 '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 81%
 
 ---
 
@@ -69,7 +72,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 选择&#x200B;**下一步**&#x200B;以继续。
 1. 您可以查看要提升的页面，具体页面取决于您选择的页面范围：
 
-   ![查看促销](/help/sites-cloud/authoring/assets/launches-promote-review.png)
+   ![审查促销](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
 1. 选择&#x200B;**提升**。
 
@@ -94,7 +97,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 输入所需的详细信息：
    * **目标**
       * **提升目标** -您可以提升到任何源。
-      * **提升后删除启动项** -提升后，将删除选定的启动项及其中嵌套的所有启动项。
+      * **提升后删除启动项** -提升后，将删除选定启动项及其中嵌套的所有启动项。
    * **范围** -您可以在此选择是提升整个启动项，还是仅提升实际已编辑的页面。 如果选择后者，则还可以选择包括/排除子页面。默认配置是仅提升当前页面的页面更改：
       * **提升整个启动项**
       * **提升已修改的页面**
@@ -105,7 +108,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 选择&#x200B;**下一步**。
 1. 在选择&#x200B;**提升**&#x200B;之前查看提升详细信息：
 
-   ![查看促销设置](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)
+   ![查看升级设置](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)
 
    >[!NOTE]
    >
@@ -127,4 +130,4 @@ To start a workflow automatically when pages are promoted, configure a workflow 
 
 例如，您可以在作者提升启动页面时自动生成页面激活请求。配置工作流启动器，以在包节点被修改时启动请求激活工作流。
 
-![促销工作流程](/help/sites-cloud/authoring/assets/launches-create-workflow.png)
+![促销工作流](/help/sites-cloud/authoring/assets/launches-create-workflow.png)
