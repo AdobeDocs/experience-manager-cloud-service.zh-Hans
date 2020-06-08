@@ -1,10 +1,13 @@
 ---
-title: 在[!DNL Adobe Experience Manager]中管理数字资产的元数据。
-description: 了解元数据的类型以及[!DNL Adobe Experience Manager资产]如何帮助管理资产的元数据，从而更轻松地对资产进行分类和组织。 [!DNL Experience Manager]允许根据资产的元数据自动组织和处理资产。
+title: 在中管理数字资产的元数据 [!DNL Adobe Experience Manager]。
+description: 了解元数据的类型， [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 以及如何根据资产的元数据自动组织和处理资产。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+workflow-type: tm+mt
+source-wordcount: '1830'
+ht-degree: 17%
 
 ---
 
@@ -105,7 +108,7 @@ Exif的一个主要限制是一些常用的图像文件格式（如BMP、GIF或P
 
 #### Other metadata {#other-metadata}
 
-可以从文件中嵌入的其他元 [!DNL Microsoft Word]数据 [!DNL PowerPoint]包括 [!DNL Excel]、、等等。
+可以从文件中嵌入的其 [!DNL Microsoft Word]他元 [!DNL PowerPoint]数据 [!DNL Excel]包括、等等。
 
 ## 管理数字资产的元数据 {#manage-assets-metadata}
 
