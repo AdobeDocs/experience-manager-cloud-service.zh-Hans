@@ -173,7 +173,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 ![嵌入包](assets/embeddeds.png)
 
-要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置 `all` ，格式如下：
+要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置，格式如下： `all`
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -184,6 +184,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
+
    >[!WARNING]
    >
    >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
