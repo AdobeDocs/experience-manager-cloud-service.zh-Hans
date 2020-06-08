@@ -1,9 +1,9 @@
 ---
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 100%
 
@@ -189,6 +189,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    * 选择要用于创建新页面的模板，然后单击/点按&#x200B;**下一步**&#x200B;以继续。
 
    * 单击/点按&#x200B;**取消**&#x200B;可中止该过程。
+
    ![为新页面选择模板](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. 在向导的最后一步中，您可以执行以下操作之一：
@@ -196,6 +197,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    * 使用三个选项卡输入您希望对新页面指定的[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)，然后单击/点按&#x200B;**创建**&#x200B;以实际创建页面。
 
    * 使用&#x200B;**返回**&#x200B;以返回到模板选择步骤。
+
    关键字段为：
 
    * **标题**：
@@ -206,6 +208,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
       * 用于生成 URI。如果未指定，名称会从标题派生。
       * 如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。<!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。当 AEM 检测到无效字符时，此字段将会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
+
    >[!TIP]
    >
    >请参阅[页面命名惯例](#page-naming-conventions)。
@@ -240,6 +243,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
    * [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)和工具栏
+
    然后，选择&#x200B;**编辑**&#x200B;图标：
 
    ![编辑按钮](/help/sites-cloud/authoring/assets/edit.png)
@@ -259,6 +263,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
    * [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)和工具栏
+
    然后，选择&#x200B;**复制**&#x200B;页面图标：
 
    ![复制](/help/sites-cloud/authoring/assets/copy.png)
@@ -276,6 +281,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
    1. 选择&#x200B;**粘贴**&#x200B;页面图标本身：将在此位置创建原始页面和任何子页面的副本。
    1. 选择下拉箭头以显示&#x200B;**粘贴（不含子项）**&#x200B;选项。将在此位置创建原始页面的副本；不会复制子页面。
+
    >[!NOTE]
    >
    >如果您将页面复制到某个位置，而该位置已经存在名称与原始名称相同的页面，则系统将通过附加一个编号来自动生成该名称的变体。例如，如果 `beach` 已存在，则名称为 `beach` 的新页面将变为 `beach1`。
@@ -295,6 +301,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
    * [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)和工具栏
+
    然后，选择&#x200B;**移动**&#x200B;页面图标：
 
    ![“移动”按钮](/help/sites-cloud/authoring/assets/move.png)
@@ -305,6 +312,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
    * 指定移动页面后您希望页面使用的名称，然后单击/点按&#x200B;**下一步**&#x200B;以继续。
    * 单击/点按&#x200B;**取消**&#x200B;可中止该过程。
+
    ![移动和重命名页面](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    如果仅移动页面，则页面名称可以保持不变。
@@ -320,6 +328,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
       * 通过单击目标的缩略图选择目标。
       * 单击&#x200B;**下一步**&#x200B;以继续。
    * 使用&#x200B;**返回**&#x200B;以返回到页面名称指定步骤。
+
    >[!NOTE]
    >
    >默认情况下，将选择您正在移动/重命名的页面的父页面作为目标。
