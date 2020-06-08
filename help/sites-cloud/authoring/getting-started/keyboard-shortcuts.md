@@ -1,8 +1,11 @@
 ---
 title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
