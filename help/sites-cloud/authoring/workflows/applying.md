@@ -3,13 +3,16 @@ title: 将工作流应用于页面
 description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 81%
 
 ---
 
 
 # 将工作流应用于页面 {#applying-workflows-to-pages}
 
-创作时，您可以调用工作流来对页面执行操作；还可以应用多个工作流。
+创作时，您可以调用工作流以在页面上执行操作； 还可以应用多个工作流。
 
 在应用工作流时，您需要指定以下信息：
 
@@ -71,7 +74,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 您可以从&#x200B;**时间轴**&#x200B;中启动要应用于所选资源的工作流。
 
-1. [选择资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) ，然后打 [开时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) （或打开时间轴，然后选择资源）。
+1. [选择资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) ，然后打 [开时间](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 轴（或打开时间轴，然后选择资源）。
 1. 可以使用评论字段中的箭头显示&#x200B;**启动工作流**：
 
    ![从时间轴创建工作流](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -115,7 +118,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加内容** ，打开路径浏 [览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) ，并选择其他资源；在浏览器中时，单击／点按 **选择** ，以将内容添加到工作流实例。
+   * **添加内容** ，打开路 [径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) ，并选择其他资源； 在浏览器中时，单击／点按 **选择** ，以将内容添加到工作流实例。
 
    * 现有资源以查看其他操作：
 
