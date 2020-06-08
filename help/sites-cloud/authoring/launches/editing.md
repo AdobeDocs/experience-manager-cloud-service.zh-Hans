@@ -3,6 +3,9 @@ title: 编辑启动项
 description: '在为您的一个页面（或一组页面）创建启动项后，您可以编辑页面启动副本中的内容。 '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 89%
 
 ---
 
@@ -23,18 +26,18 @@ If your launch is based upon a live copy then you will: <!--If your launch is ba
 * 编辑组件（内容和／或属性）时，请参阅锁符号（小挂锁）。
 * See the **Live Copy** tab in **Page Properties**
 
-Live Copy 用于将源分支&#x200B;**&#x200B;的内容&#x200B;**&#x200B;同步到启动项分支（以便在源中做出更改时随之也更新启动项）。
+Live copy用于将源分 *支中的**内容同步到启动分支* （以使启动项与源中所做的更改保持最新）。
 
 您可以按照编辑标准 Live Copy 的方式进行更改；例如：
 
 * 单击已闭合的挂锁将会中断此同步，并允许您对启动项中的内容做出新的更新。解除锁定（打开挂锁）后，您的更改将不会被源分支中的相同位置所做的任何更改所覆盖。
-* **暂停** (和继 **续**)特定页面的继承。
+* 特定页面的&#x200B;**暂停**（和&#x200B;**继续**）继承。
 
 See Changing Live Copy Content for further information. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
 
 ## 比较启动页面与其源页面 {#comparing-a-launch-page-to-its-source-page}
 
-要跟踪您所做的更改，您可以在&#x200B;**引用**&#x200B;中查看启动项并将启动页面与其源页面进行比较：
+要跟踪您所做的更改，您可以在引用中查看启动项 **** ，并将启动项页面与其源页面进行比较：
 
 1. 在&#x200B;**站点**&#x200B;控制台中，[导航到启动项的源页面并将其选中](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**面板，然后选择&#x200B;**启动项**。
@@ -56,7 +59,7 @@ See Changing Live Copy Content for further information. <!--See [Changing Live C
    * [“引用”（“站点”控制台）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，以显示可用的操作：
       * 选择&#x200B;**编辑启动项**。
       * 此时将显示源页面。
-1. 进行所需的更改，然后单击&#x200B;**保存**&#x200B;进行确认。
+1. 进行所需的更改，然后使用保存进行 **确认**。
 
 >[!NOTE]
 >
@@ -72,7 +75,7 @@ See Changing Live Copy Content for further information. <!--See [Changing Live C
    * [“引用”（“站点”控制台）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，以显示可用的操作：
       * 选择&#x200B;**编辑属性**。
       * 此时将显示详细信息。
-1. 进行所需的更改，然后单击&#x200B;**保存**&#x200B;进行确认。
+1. 进行所需的更改，然后使用保存进行 **确认**。
    * 有关&#x200B;**启动日期**&#x200B;和&#x200B;**生产就绪**&#x200B;字段的用途和交互的信息，请参阅[启动项 - 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)。
 
 ## 发现页面的启动状态 {#discovering-the-launch-status-of-a-page}
