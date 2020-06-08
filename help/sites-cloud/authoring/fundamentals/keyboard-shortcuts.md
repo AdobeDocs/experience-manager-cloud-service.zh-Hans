@@ -1,8 +1,11 @@
 ---
 title: 用于页面编辑的键盘快捷键
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 100%
 
 ---
 
