@@ -3,33 +3,36 @@ title: 将您的数字资产添加到Adobe Experience Manager
 description: 将您的数字资产作为云服务添加到Adobe Experience Manager
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 5%
 
 ---
 
 
 # 将数字资产添加到Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了上传的数字文件的二进制内容。 您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到Experience Manager资产。
+Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了已上传数字文件的二进制内容。 您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到Experience Manager资产。
 
-提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager存储库的其他方法，包括桌面客户端（如Adobe Asset Link或Experience Manager桌面应用程序）、上传和摄取客户将创建的脚本以及作为AEM扩展添加的自动化摄取集成。
+提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager存储库的其他方法，包括桌面客户端（如Adobe Asset Link或Experience Manager桌面应用程序）、上传和摄取客户将创建的脚本以及自动摄取作为AEM扩展添加的集成。
 
-我们将重点介绍在此为最终用户上传方法，并提供指向文章的链接，这些文章描述了使用Experience Manager API和SDK进行资产上传和获取的技术方面。
+我们将重点介绍此处为最终用户上传的方法，并提供指向文章的链接，这些文章描述了使用Experience Manager API和SDK进行资产上传和获取的技术方面。
 
-虽然您可以在Experience Manager中上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息， [请参阅支持的文件格式](file-format-support.md) 。
+虽然您可以在Experience Manager中上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息， [请参阅支持的](file-format-support.md) 文件格式。
 
-您还可以选择对上传的资产执行其他处理。 可在上传资产的文件夹上配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 有关更 [多信息，请参阅](#additional-processing) 下面的其他处理。
+您还可以选择对上传的资产进行其他处理。 您可以在上传资产的文件夹中配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 请参 [阅下面的](#additional-processing) “其他处理”以了解更多信息。
 
 >[!NOTE]
 >
-> Experience Manager作为云服务，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端（如AEM用户界面、Adobe Asset Link、AEM桌面应用程序）都支持它，因此对最终用户是透明的。
+> Experience Manager作为云服务，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端（如AEM用户界面、Adobe Asset Link、AEM桌面应用程序）都支持此功能，因此对最终用户是透明的。
 >
 > 上传由技术团队需要使用新上传API和协议的客户自定义或扩展的代码。
 
 ## Upload assets {#upload-assets}
 
-要上传文件（或多个文件），您可以在桌面上选择它们，然后拖放到用户界面（Web浏览器）到目标文件夹。 或者，您也可以从用户界面启动上传。
+要上传文件（或多个文件），您可以在桌面上选择它们，然后拖放到用户界面（Web浏览器）到目标文件夹。 或者，也可以从用户界面启动上传。
 
-1. 在“资产”用户界面中，导航到要添加数字资产的位置。
+1. 在资产用户界面中，导航到要添加数字资产的位置。
 1. 要上传资产，请执行以下操作之一：
 
    * On the toolbar, tap the **[!UICONTROL Create]** icon. 然后，在菜单上，点按文 **[!UICONTROL 件]**。 如果需要，可以重命名显示的对话框中的文件。
@@ -57,7 +60,7 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
 1. To cancel an ongoing upload, click close (`X`) next to the progress bar. 当您取消上传操作时，AEM资产会删除部分上传的资产。
 
-   如果在上传文件之前取消上传操作，AEM资产将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
+   如果您在上传文件之前取消上传操作，AEM资产将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -71,9 +74,9 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 -->
 
 
-1. AEM资产中的上传进度对话框显示成功上传的文件的计数以及无法上传的文件。
+1. AEM资产中的上传进度对话框显示成功上传的文件和无法上传的文件的计数。
 
-此外，资产用户界面还会显示您上传的最近的资产或您首先创建的文件夹。
+此外，资产用户界面还会显示您上传的最新资产或您首先创建的文件夹。
 
 >[!NOTE]
 >
@@ -100,77 +103,77 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 
 ### 在资产已存在时处理上传 {#handling-upload-existing-file}
 
-如果上传的资产名称与上传资产时所在位置已可用的资产名称相同，则会显示一个警告对话框。
+如果您上传的资产名称与您上传资产的位置中已有资产的名称相同，则会显示一个警告对话框。
 
-您可以选择替换现有资产，创建另一个版本，或者重命名上传的新资产以同时保留两个资产。如果您替换现有资产，则资产的元数据以及您对现有资产所做的任何先前修改（例如注释、裁剪等）都将被删除。 如果选择保留这两个资产，则新资产将重命名，并在其名称 `1` 中附加数字。
+您可以选择替换现有资产，创建另一个版本，或者重命名上传的新资产以同时保留两个资产。如果您替换现有资产，则资产的元数据以及您对现有资产所做的任何先前修改（例如注释、裁剪等）都将被删除。 如果您选择保留这两个资产，则会重命名新资产，并在其名称 `1` 中附加数字。
 
 >[!NOTE]
 >
->在“名称冲 **[!UICONTROL 突]** ”对话框中选择  “替换”时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
+>在名称冲 **[!UICONTROL 突]** 对话框 [!UICONTROL 中选择替] 换时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
 >
->如果启用资产分析功能来跟踪Adobe Analytics的展示次数／点击次数，则重新生成的资产ID将使在Analytics上为资产捕获的数据无效。
+>如果启用资产分析功能来跟踪Adobe Analytics的展示次数／点击次数，则重新生成的资产ID将使在Analytics上为资产捕获的数据失效。
 
-要在AEM资产中保留重复资产，请点按／单击保 **[!UICONTROL 留]**。 要删除您上传的重复资产，请点按／单击删 **[!UICONTROL 除]**。
+要在AEM资产中保留重复资产，请点按／单击 **[!UICONTROL 保留]**。 要删除您上传的重复资产，请点按／单击 **[!UICONTROL 删除]**。
 
 ### 文件名处理和禁止字符 {#filename-handling}
 
-AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您尝试上传的资产的文件名中包含不允许的字符或更多字符，则AEM资产会显示一条警告消息并停止上传，直到您删除这些字符或上传时使用允许的名称。
+AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您尝试上传包含不允许的字符或更多字符的资产，AEM资产会显示一条警告消息并停止上传，直到您删除这些字符或上传包含允许的名称为止。
 
-为了适合您组织的特定文件命名约定，您可以在“上 [!UICONTROL 传资产] ”对话框中为上传的文件指定长名。
+为了符合组织的特定文件命名约定，您 [!UICONTROL 可以在“上传资产] ”对话框中为上传的文件指定长名。
 
 但是，不支持以下(以空格分隔的列表)字符：
 
-* 资产文件名不得包含 `* / : [ \\ ] | # % { } ? &`
+* 资产文件名不能包含 `* / : [ \\ ] | # % { } ? &`
 * 资产文件夹名称不能包含 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## 批量上传资产 {#bulk-upload}
 
-要上传更多文件，尤其是当这些文件存在于磁盘上的嵌套文件夹层次结构中时，可以使用以下方法：
+要上传更多文件，特别是如果这些文件存在于磁盘上的嵌套文件夹层次结构中，可以使用以下方法：
 
 * 使用利用资产上传API的自定义上 [传脚本或工具](developer-reference-material-apis.md#asset-upload-technical)。 此类自定义工具可以根据需要添加对资产的其他处理（例如，翻译元数据或重命名文件）。
-* 使用 [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套的文件夹层次结构。
+* 使用 [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套文件夹层次结构。
 
 >[!NOTE]
 >
-> 在设置和部署到Experience Manager时，从其他系统进行内容迁移时，需要仔细规划、考虑和选择工具，才能进行批量上传。 有关内容迁 [移方法的指导](/help/implementing/deploying/overview.md) ，请参阅部署指南。
+> 在设置和部署到Experience Manager时，要将批量上传作为从其他系统迁移内容的一部分，需要仔细规划、考虑和选择工具。 有关内容迁 [移方法的指](/help/implementing/deploying/overview.md) 导，请参阅部署指南。
 
 ## 使用桌面客户端上传资产 {#upload-assets-desktop-clients}
 
 除了Web浏览器用户界面之外，Experience Manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
 
-* [通过Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) ，您可以从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的AEM访问资源。 您可以从这些桌面应用程序中的Adobe Asset Link用户界面将当前打开的文档直接上传到AEM。
-* [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，可简化在桌面上处理资产的工作，而这与资产的文件类型或处理资产的本机应用程序无关。 从本地文件系统上载嵌套文件夹层次结构中的文件尤为有用，因为浏览器上载仅支持上传平面文件列表。
+* [Adobe Asset](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) Link提供从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的AEM访问资源的功能。 您可以从这些桌面应用程序中的Adobe Asset Link用户界面直接将当前打开的文档上传到AEM。
+* [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 可简化在桌面上处理资源的工作，这取决于资产的文件类型或处理资产的本机应用程序。 从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
 
-## 其他处理 {#additional-processing}
+## 附加处理 {#additional-processing}
 
-要对已上传的资产进行其他处理，您可以对上传资产的文件夹使用资产处理用户档案用户档案。 这些属性位于文件夹“属 **[!UICONTROL 性]** ”对话框中。
+为了对上传的资产进行其他处理，您可以对上传资产的文件夹使用资产处理用户档案用户档案。 这些属性位于文件夹属 **[!UICONTROL 性对话框中]** 。
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-有以下用户档案:
+提供以下用户档案:
 
 * [元数据用户档案](metadata-profiles.md) 允许您将默认元数据属性应用到上传到该文件夹的资产
-* [处理用户档案](asset-microservices-configure-and-use.md#processing-profiles) ，除了默认的演绎版处理之外，还允许您应用演绎版处理并生成演绎版
+* [处理用户档案](asset-microservices-configure-and-use.md#processing-profiles) 允许您应用再现处理，除默认的再现外，还可以生成再现
 
 此外，如果您的环境中启用了Dynamic Media:
 
 * [图像配置文件](dynamic-media/image-profiles.md)允许您将特定裁剪（**[!UICONTROL 智能裁剪]**&#x200B;和像素裁剪）和锐化配置应用于上传的资产
-* [视频用户档案](dynamic-media/video-profiles.md) ，允许您应用特定的视频编码用户档案（分辨率、格式、参数）
+* [视频用户档案](dynamic-media/video-profiles.md) 允许您应用特定的视频编码用户档案（分辨率、格式、参数）
 
 >[!NOTE]
 >
-> Dynamic Media裁剪和资产的其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行的裁剪或媒体转换的参数
+> Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行裁剪或媒体转换的参数
 
-对于分配了处理用户档案的文件夹，用户档案名称显示在卡视图的缩略图上。 在列表视图中，用户档案名称显示在“处理 **[!UICONTROL 用户档案]** ”列中。
+对于分配了处理用户档案的文件夹，用户档案名显示在卡视图的缩略图上。 在列表视图中，用户档案名称显示在处理 **[!UICONTROL 用户档案列]** 。
 
 ## 使用API上传或摄取资产 {#upload-using-apis}
 
-开发人员参考的资产上传部分提供了上传API和协议的技术详细信息，以及指向开源SDK和示例客 [户端的链接](developer-reference-material-apis.md#asset-upload-technical) 。
+开发人员参考的“资产上传”部分提供了上传API和协议的技术详细信息，以及指向开放源码SDK [和示例客户](developer-reference-material-apis.md#asset-upload-technical) 端的链接。
 
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager 桌面应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 >* [资产上传的技术参考](developer-reference-material-apis.md#asset-upload-technical)
 
