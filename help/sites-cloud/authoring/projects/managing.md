@@ -1,8 +1,11 @@
 ---
 title: 管理项目
-description: 通过“项目”，您可以将资源分组到一个实体中以便在“项目”控制台中访问和管理，从而组织项目
+description: 通过“项目”，您可以将资源分组到一个实体中，然后在“项目”控制台中访问和管理该实体，从而组织项目
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 78%
 
 ---
 
@@ -26,10 +29,10 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 * 产品照片拍摄项目
 * 翻译项目
 
-各种项目的创建过程都是相同的。各项目类型之间的不同之处在于可用的[用户角色](/help/sites-cloud/authoring/projects/overview.md)和[工作流](/help/sites-cloud/authoring/projects/workflows.md)。要创建新项目，请执行以下操作：
+从项目到项目，创建项目的过程相同。 项目类型之间的差异包括可用的用户角 [色](/help/sites-cloud/authoring/projects/overview.md) 和工 [作流](/help/sites-cloud/authoring/projects/workflows.md)。  要创建新项目，请执行以下操作：
 
-1. 在&#x200B;**项目**&#x200B;中，点按/单击&#x200B;**创建**&#x200B;以打开&#x200B;**创建项目**&#x200B;向导：
-1. 选择模板，然后单击“下 **一步”**。
+1. 在“ **项目**”中，点按／单 **击创建** ，以打开创 **建项目向导** :
+1. 选择一个模板，然后单击“ **下一步**”。
 
    ![创建项目](/help/sites-cloud/authoring/assets/projects-create.png)
 
@@ -54,7 +57,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
    >
    >有关可与项目关联的项目拼贴的详细说明，请参阅[项目拼贴](/help/sites-cloud/authoring/projects/overview.md#project-tiles)。
 
-1. 点按/单击&#x200B;**创建**。您的资源已链接到您的项目，从现在开始，您可以从您的项目访问该资源。
+1. 点按/单击&#x200B;**创建**。您的资源已链接到您的项目，从现在开始，您可以从您的项目访问它。
 
 ### 删除项目或资源链接 {#deleting-a-project-or-resource-link}
 
@@ -72,7 +75,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 >[!NOTE]
 >
->在创建项目并将用户添加到各种角色时，将会自动创建与项目关联的组以管理关联的权限。例如，一个名为 Myproject 的项目将包含三个组，分别为 **Myproject 所有者**、**Myproject 编辑者**、**Myproject 观察者**。但是，如果删除该项目，这些组不会自动删除。管理员需要在&#x200B;**工具** > **安全** > **组**&#x200B;中手动删除这些组。
+>在创建项目并将用户添加各种角色时，将自动创建与项目关联的组以管理关联的权限。例如，名为 Myproject 的项目将有三个组，分别为 **Myproject 所有者**、**Myproject 编辑者**、**Myproject 观察者**。但是，如果删除了项目，这些组不会自动删除。管理员需要在&#x200B;**工具** > **安全** > **组**&#x200B;中手动删除这些组。
 
 ### 向拼贴中添加一些项 {#adding-items-to-a-tile}
 
@@ -82,11 +85,11 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
 
-   ![向拼贴中添加项](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![向拼贴添加项](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
 1. 像创建新拼贴时一样，向拼贴中添加项。项目拼贴在[此处](/help/sites-cloud/authoring/projects/overview.md#project-tiles)进行了介绍。在此示例中，添加了其他工作流。
 
-   ![添加到拼贴的其他项](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
+   ![添加到拼贴的另一个项](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### 打开拼贴 {#opening-a-tile}
 
@@ -116,13 +119,13 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 ### 查看活动/不活动的项目 {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. 如果图标旁边有复选标记，则显示的是活动项目。
+To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. 如果图标旁边有一个复选标记，则显示的是活动项目。
 
 ![切换活动项目按钮](/help/sites-cloud/authoring/assets/projects-active.png)
 
 如果该图标旁边显示有一个 x，则显示的是不活动的项目。
 
-![“切换非活动项目”按钮](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![切换不活动的项目按钮](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## 将项目设为不活动或活动 {#making-projects-inactive-or-active}
 
