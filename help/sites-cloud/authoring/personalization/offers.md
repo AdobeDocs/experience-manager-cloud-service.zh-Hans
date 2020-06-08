@@ -3,6 +3,9 @@ title: 创建和管理选件
 description: 使用“选件”控制台，可创建您可以在活动体验中使用的选件
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 90%
 
 ---
 
@@ -11,10 +14,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 使用“选件”控制台，可创建您可以[在活动体验中使用](/help/sites-cloud/authoring/personalization/targeted-content.md)的选件。当多个体验需要使用相同的选件时，在“选件”控制台中创建选件可节省时间：
 
-* 在库中创建选件一次，然后将其用于品牌活动的多个体验。
+* 在库中创建一次优惠，并将其用于品牌活动的多种体验。
 * 在库中更改选件，所做的更改会影响使用该选件的所有体验。
 
-“选件”控制台按品牌组织选件。每个品牌都包含一个可在品牌的体验中使用的选件库。使用文件夹定义用于组织每个库中的选件的分层结构。 作者可以通过在逻辑文件夹结构中进行浏览来轻松查找选件。作者还可以通过标记和搜索工具查找选件。
+“选件”控制台按品牌组织选件。每个品牌都包含一个可在品牌的体验中使用的选件库。使用文件夹定义用于组织每个库中优惠的分层结构。 作者可以通过在逻辑文件夹结构中进行浏览来轻松查找选件。作者还可以通过标记和搜索工具查找选件。
 
 ## 使用“选件”控制台添加品牌 {#add-a-brand-using-the-offers-console}
 
@@ -22,9 +25,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 使用“选件”控制台创建品牌时，该品牌也会显示在您可以添加和管理品牌活动的[“活动”控制台](/help/sites-cloud/authoring/personalization/activities.md)中。
 
-1. 在“导航”控制台中，单击或点按&#x200B;**个性化** > **选件**。
+1. 在导航控制台中，单击或点按&#x200B;**个性化** > **选件**。
 
-   ![导航到“选件”控制台](/help/sites-cloud/authoring/assets/offers-navigation.png)
+   ![导航到优惠控制台](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
 1. Click or tap **Create** and then **Create** **Brand**.
 1. 选择品牌模板，然后单击或点按&#x200B;**下一步**。
@@ -38,7 +41,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 在“选件”控制台中，打开您想要创建文件夹的位置。例如，打开品牌以创建顶级文件夹，或打开库中的其他文件夹。
 1. 单击或点按&#x200B;**创建** > **创建文件夹或选件**。
 
-   ![创建选件文件夹](/help/sites-cloud/authoring/assets/offers-create-folder.png)
+   ![创建优惠文件夹](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
 1. Select **Folder** and click **Next**.
 1. 键入您希望文件夹在选件库中显示的标题，然后键入或选择标记。
@@ -56,7 +59,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 在“选件”控制台中，打开您想要创建选件的位置。例如，打开品牌以创建顶级选件，或打开库中的某个文件夹。
 1. 单击或点按&#x200B;**创建** > **创建文件夹或选件**。
 
-   ![创建选件文件夹](/help/sites-cloud/authoring/assets/offers-create-folder.png)
+   ![创建优惠文件夹](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
 1. 选择&#x200B;**选件页面**&#x200B;模板，然后单击或点按&#x200B;**下一步**。
 1. 键入选件的标题，（可选）选择或键入要与该选件关联的一个或多个标记，然后单击或点按&#x200B;**创建**。
@@ -91,11 +94,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 通过使用与标题匹配的关键字搜索任何品牌的选件。
 
-![搜索选件](/help/sites-cloud/authoring/assets/offers-search.png)
+![搜索优惠](/help/sites-cloud/authoring/assets/offers-search.png)
 
 当前搜索条件会显示在搜索结果旁边。您还可以按列以升序或降序方式排列结果。您可以从任何选件库中的任意文件夹中执行搜索。无论当前文件夹如何，搜索结果都是相同的。
 
 要搜索选件，请执行以下操作：
 
-1. 在“选件”控制台顶部，单击或点按放大镜图标。默认情况下，搜索仅限于选件。
+1. 在“选件”控制台顶部，单击或点按放大镜图标。默认情况下，搜索仅限于优惠。
 1. 输入关键字以搜索选件。从结果中进行选择。
