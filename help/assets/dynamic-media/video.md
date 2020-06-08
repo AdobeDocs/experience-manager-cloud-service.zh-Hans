@@ -3,6 +3,9 @@ title: 视频
 description: 了解如何在Dynamic Media中处理视频
 translation-type: tm+mt
 source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
+workflow-type: tm+mt
+source-wordcount: '10160'
+ht-degree: 31%
 
 ---
 
@@ -20,6 +23,7 @@ source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
 >在Dynamic Media中处理视频之前，请确保AEM管理员已启用并配置Dynamic Media云服务。
 >
 >* 请参 [阅配置Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) 和Dynamic Media疑难排 [解中的配置Dynamic Media Cloud Services](/help/assets/dynamic-media/troubleshoot-dm.md)。
+
 >
 
 
@@ -470,6 +474,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 
    * 在项目仪表板的入门卡中，点按浏览 **[!UICONTROL 并启用API]**。
    * 在项目仪表板的API卡中，点按转 **[!UICONTROL 到API概述]**。
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. 在“API和服务”页面顶部附近，点 **[!UICONTROL 按启用API和服务]**。
@@ -489,6 +494,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
    * 从 **[!UICONTROL Where will the API?]** 下拉列表，选 **[!UICONTROL 择Web服务器（例如node.js、Tomcat）]**
 
    * From the **[!UICONTROL What data will you be accessing?]** 下拉列表，点 **[!UICONTROL 按用户]**。
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. 点击 **[!UICONTROL 我需要哪些凭据？]**
@@ -834,9 +840,11 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 1. 视图资产文件夹中的视频编码进度：
 
    * 在卡视图中，视频编码进度按百分比显示在资产上。 如果出现错误，此信息也会显示在资产上。
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. 如果出现错误，则同一列中将显示此消息。
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    默认情况下，此列不显示。要启用该列，请从视图下拉菜单中选择&#x200B;**[!UICONTROL 查看设置]**，然后添加&#x200B;**[!UICONTROL 处理状态]**&#x200B;列，然后点按或单击&#x200B;**[!UICONTROL 更新]**。
@@ -856,6 +864,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
    >    * Apache Sling作业队列配置
    >    * Adobe Granite Workflow External Process Job Handler
    >    * Granite工作流超时队列
+
    >
    >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
 
@@ -877,7 +886,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 
    >[!NOTE]
    >
-   >您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
+   >您可能需要管理权限才能访问“工 **[!UICONTROL 具]** ”菜单。
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
@@ -890,6 +899,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
    >    * Apache Sling作业队列配置
    >    * Adobe Granite Workflow External Process Job Handler
    >    * Granite工作流超时队列
+
    >
    >
    >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
@@ -988,6 +998,7 @@ For video reports to work correctly, a Report Suite ID is automatically created 
 
    * Near the upper-right corner, tap the **[UICONTROL Date Picker]** icon.
 指定您要查看的视频数据的开始日期和结束日期范围，然后点按**[!UICONTROL 运行报表]**。
+
    “顶级指标”组框标识您网站上所有*已发布*视频的各种聚合指标。
 
 1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
