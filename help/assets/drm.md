@@ -54,7 +54,7 @@ ht-degree: 7%
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. 打开 [!DNL Experience Manager] Configuration Manager。
-1. 选择 **[!UICONTROL Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
+1. 选 **[!UICONTROL 择Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
 
 1. 要定期运行该作业，请清除&#x200B;**[!UICONTROL 基于时间的计划程序规则]**&#x200B;字段，并在&#x200B;**[!UICONTROL 周期性计划程序]**&#x200B;字段中修改时间（以秒为单位）。例如，示例表达式“0 0 0 &amp;ast; &amp;ast; ?”会在 00 小时开始作业。
 
