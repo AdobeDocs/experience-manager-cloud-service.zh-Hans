@@ -1,9 +1,9 @@
 ---
 title: 已弃用和已删除的功能
 description: 以下发行说明特定于 Adobe Experience Manager 云服务中已弃用和已删除的功能。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 
