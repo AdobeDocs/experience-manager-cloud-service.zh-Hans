@@ -3,6 +3,9 @@ title: 管理日志——云服务
 description: 管理日志——云服务
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
@@ -11,11 +14,11 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定列表的可用日志文件环境。
 
-这些文件可以通过UI从“概述”页面 **下载** 。
+这些文件可通过UI下载，也可以从概述 **页面** 。
 
 ![](assets/manage-logs1.png)
 
-或者， **环境** :
+或者，环境 **页面** :
 
 ![](assets/manage-logs2.png)
 
@@ -25,7 +28,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 ![](assets/manage-logs3.png)
 
 
-## 通过API记录 {#logs-thorugh-api}
+## 通过API进行日志 {#logs-thorugh-api}
 
 除了通过UI下载日志外，日志还可通过API和命令行界面使用。
 
