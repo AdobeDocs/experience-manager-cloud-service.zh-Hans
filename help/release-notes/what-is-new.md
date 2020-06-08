@@ -1,8 +1,11 @@
 ---
 title: 新增功能
 description: 'Adobe Experience Manager (AEM) 云服务的新增功能。 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 100%
 
 ---
 
