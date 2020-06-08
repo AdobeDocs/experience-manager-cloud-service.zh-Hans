@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务的核心概念
 description: Adobe Experience Manager 云服务核心概念自助资源和文档链接
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7f0896adbfad31597ea8224f1daaa12a2f40180
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
