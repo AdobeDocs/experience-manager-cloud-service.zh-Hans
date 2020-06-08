@@ -101,7 +101,6 @@ ht-degree: 18%
    * 资产的查看或下载次数
    * 渠道/设备，资产通过这些设备
    * 最近使用该资产的创意解决方案
-
    有关详细信息，请参阅 [资产分析](assets-insights.md)。
 
 1. 点按／单击 **[!UICONTROL 保存并关闭]**。
@@ -173,7 +172,6 @@ ht-degree: 18%
    * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
 
    * 点按／单击 **[!UICONTROL 取消]** ，以停止移动操作。
-
    如果您不更新引用，则它们会继续指向资产的上一路径。 如果您调整引用，它们将更新为新的资产路径。
 
 ### 管理再现 {#managing-renditions}
@@ -247,7 +245,6 @@ ht-degree: 18%
 
       * 如果资产没有引用，则资产会被删除。
       * 如果资产具有引用，则会出现一条错误消息，通知您&#x200B;**一个或多个资产被引用**。您可以选择&#x200B;**[!UICONTROL 强制删除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
-
    >[!NOTE]
    >
    >您需要对dam/asset具有删除权限才能删除资产。 如果您只具有修改权限，则只能编辑资产元数据并向资产添加注释。 但是，您无法删除资产或其元数据。
@@ -307,7 +304,6 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL 取消]** ，停止操作
    * **[!UICONTROL 取消发布]** ，以确认在指定日期已取消发布资产(在发布环境中不再可用)。
-
    >[!NOTE]
    >
    >取消发布复杂资产时，仅取消发布资产。 请避免取消发布引用，因为其他已发布的资产可能会引用这些引用。
@@ -360,7 +356,6 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
    * 选择资产，然后单击／点按工 **[!UICONTROL 具栏]** 中的编辑图标。
    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
    * 在资产页面中，点按／单击工 **[!UICONTROL 具栏]** 中的编辑图标。
-
    ![edit_icon](assets/edit_icon.png)
 
 1. To crop the image, tap/click the **Crop** icon.
@@ -431,7 +426,6 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
 
    * [快速操作](#quick-actions)
    * 在选择资产或导航到资产页面后，从工具栏中
-
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. 在时间轴底部的&#x200B;**[!UICONTROL 注释]**&#x200B;框中添加注释。或者，在图像上标出一个区域，然后在&#x200B;**[!UICONTROL 添加批注]**&#x200B;对话框中添加批注。
@@ -604,7 +598,7 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
 ### 在资产上启动工作流 {#starting-a-workflow-on-an-asset}
 
 1. 导航到您要为其开始工作流的资产所在的位置，然后点按／单击资产以打开资产页面。
-1. 点按／单击GlobalNav图标，然后从菜单中 **[!UICONTROL 选择]** “时间轴”以显示时间轴。
+1. 点按／单击GlobalNav图标，然后从菜单 **[!UICONTROL 中选择]** “时间轴”以显示时间轴。
 
    ![时间线-1](assets/timeline-1.png)
 
