@@ -1,9 +1,9 @@
 ---
 sub-product: 在 AEM 云服务中创作内容
 user-guide-title: 在 AEM 云服务中创作内容
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
 
