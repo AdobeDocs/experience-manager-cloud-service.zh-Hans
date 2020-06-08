@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务连接器
 description: Adobe Experience Manager 云服务连接器自助资源和文档链接
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
 |---|---|
 | [Experience Manager 云服务主页](/help/landing/home.md) | 有关 Experience Manager 云服务文档的概述，请单击此处开始。 |
 | [概述](/help/overview/home.md) | 本指南提供了 Experience Manager 云服务的介绍性概述，包括简介、术语等。 |
-| [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager 云服务的重要信息，包括新增功能、已弃用和已删除的功能及已知问题。 |
+| [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager 云服务的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [核心概念](/help/core-concepts/home.md) | 本指南简要介绍 Experience Manager 云服务核心概念，包括新服务的架构。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager 云服务的重要安全主题。 |
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。 |
