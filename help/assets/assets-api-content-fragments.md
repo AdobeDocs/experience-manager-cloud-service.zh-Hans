@@ -247,7 +247,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 * 创建严格绑定到作者实[例(目前没有方法使用此API复制要发布的片段](/help/assets/assets-api-content-fragments.md#limitations))。
 * 投放可以同时从两者进行，因为AEM仅以JSON格式提供请求的内容。
 
-   * AEM作者实例的存储和投放应足以用于防火墙后的媒体库应用程序。
+   * 来自AEM作者实例的存储和投放应足以用于防火墙后的媒体库应用程序。
 
    * 对于实时Web投放，建议使用AEM发布实例。
 
