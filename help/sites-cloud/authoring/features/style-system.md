@@ -1,9 +1,9 @@
 ---
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 100%
 
@@ -100,6 +100,7 @@ ht-degree: 100%
    * **样式可以合并：**&#x200B;允许一次选择该组中的多个样式。
    * **样式名称：**&#x200B;在配置组件样式时将向内容作者显示的样式描述。
    * **CSS 类：**&#x200B;与样式关联的 CSS 类的实际名称。
+
    使用拖动手柄可调整组以及组中样式的顺序。使用添加或删除图标可添加或者删除组或组中的样式。
 
 >[!CAUTION]
@@ -151,6 +152,7 @@ ht-degree: 100%
 >1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
 >1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
+
 >
 
 
