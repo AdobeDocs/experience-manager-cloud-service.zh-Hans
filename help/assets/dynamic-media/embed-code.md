@@ -2,15 +2,15 @@
 title: 在网页上嵌入Dynamic Media视频查看器或图像查看器
 description: 了解如何将Dynamic Media视频或图像嵌入网页
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 30%
 
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# 在网页上嵌入Dynamic Media视频、图像查看器或维查看器 {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 当您想 **[!UICONTROL 要播放视频或查看嵌入到网页中的资产时]** ，请使用嵌入代码功能。 将嵌入代码复制到剪贴板，以便将其粘贴到网页中。 不允许在“嵌入代码”对 **[!UICONTROL 话框中编辑代码]** 。
 
