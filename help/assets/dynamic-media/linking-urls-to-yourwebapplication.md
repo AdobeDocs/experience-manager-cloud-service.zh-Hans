@@ -2,10 +2,10 @@
 title: 将 URL 关联到您的 Web 应用程序
 description: 如何在Dynamic Media中将URL关联到您的Web应用程序
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 28%
+source-wordcount: '1272'
+ht-degree: 27%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 28%
 >
 >URL 字符串仅适用于资产的动态演绎版。对于存放在 DAM 中（而非 Dynamic Media 服务器中）的静态资产，目前 URL 字符串不适用。对于静态的演绎版，不会显示 URL 按钮。
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-另请参阅[将 YouTube URL 关联到您的 Web 应用程序。](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
+See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## Obtaining a URL for an asset {#obtaining-a-url-for-an-asset}
 
@@ -84,6 +84,7 @@ See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-ass
 
 Dynamic Media支持静态资产的投放，静态资产是除图像和视频之外的其他资产。 支持的静态资产投放格式包括：
 
+* 3D文件
 * 动画GIF
 * 音频文件
 * CSS
@@ -108,7 +109,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          For example, `https://aem.com/is/content/adobe/image.gif`.
-   * 单击 **[!UICONTROL 资产>动态演绎版]**，然后点按静态资产的动态演绎版并复制URL。
+   * 点按 **[!UICONTROL 资产>动态演绎版]**，然后点按静态资产的动态演绎版，并复制该URL。
 
       更改复制的URL，以 `is/content` 便在路径中使用 `is/image/`。
 
