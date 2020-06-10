@@ -2,9 +2,9 @@
 title: 在AEM中缓存为云服务
 description: '在AEM中缓存为云服务 '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,10 @@ ht-degree: 0%
 
 # 简介 {#intro}
 
-可以使用调度程序规则配置CDN上的缓存。 请注意，如果在调度程序配置中启用，调度程序 `enableTTL` 还会考虑生成的缓存过期标头，这意味着即使在重新发布的内容之外，它也会刷新特定内容。
+流量通过CDN传递到apache Web服务器层，该层支持包括调度程序的模块。 为了提高性能，调度程序主要用作缓存以限制发布节点上的处理。
+规则可应用于调度程序配置以修改任何默认缓存过期设置，从而在CDN上缓存。 请注意，如果在调度程序配置中启用，调 `enableTTL` 度程序还会考虑生成的缓存过期标头，这意味着即使在重新发布的内容之外，它也会刷新特定内容。
+
+本页还描述了调度程序缓存失效的方式，以及在浏览器级别上对客户端库的缓存工作方式。
 
 ## 缓存 {#caching}
 
@@ -33,6 +36,14 @@ ht-degree: 0%
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* 要阻止对特定内容进行缓存，请将Cache-Control头设置为“private”。 例如，以下操作将阻止缓存名为“myfolder”的目录下的html内容：
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * 请注意，其他方法( [包括dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
@@ -70,13 +81,9 @@ ht-degree: 0%
 * 默认值不能用用于html/ `EXPIRATION_TIME` 文本文件类型的变量设置
 * 通过指定适当的正则表达式，可使用html/text部分中描述的相同LocationMatch策略设置缓存过期
 
-## Dispatcher {#disp}
+## 调度程序缓存失效 {#disp}
 
-流量通过apache Web服务器，它支持包括调度程序的模块。 调度程序主要用作缓存，以限制对发布节点的处理，以提高性能。
-
-如CDN的缓存部分所述，可以将规则应用于调度程序配置以修改任何默认缓存过期设置。
-
-本节的其余部分介绍了与调度程序缓存失效相关的注意事项。 对于大多数客户而言，不必使调度程序缓存失效，而是依赖调度程序在内容被重新发布时刷新其缓存，以及与缓存过期头相关的CDN。
+通常，不必使调度程序缓存失效。 相反，在内容重新发布时，您应依赖调度程序刷新其缓存，并依赖于缓存过期头的CDN。
 
 ### 激活/取消激活期间调度程序缓存失效 {#cache-activation-deactivation}
 
@@ -108,7 +115,7 @@ ht-degree: 0%
 
 页面由HTML、Javascript、CSS和图像组成。 鼓励客户利用客户端库(clientlibs)框架将Javascript和CSS资源导入HTML页面，同时考虑JS库之间的相关性。
 
-clientlibs框架提供自动版本管理，这意味着开发人员可以通过源代码控制检入对JS库的更改，并且当客户推送其版本时，将提供最新版本。 如果没有这一功能，开发人员需要手动更改引用了新版本库的HTML，如果许多HTML模板共享同一库，这尤其困难。
+clientlibs框架提供自动版本管理，这意味着开发人员可以通过源代码控制检入对JS库的更改，并且当客户推送其版本时，将提供最新版本。 如果没有这一功能，开发人员将需要手动更改引用了新版本库的HTML，如果许多HTML模板共享同一库，这将特别困难。
 
 将新版库发布到生产版时，引用HTML页面会更新，其中包含指向这些已更新库版本的新链接。 在给定HTML页面的浏览器缓存过期后，不会担心旧库将从浏览器缓存中加载，因为现在保证刷新的页面（从AEM）引用新版本的库。 换言之，刷新的HTML页面将包括所有最新的库版本。
 
