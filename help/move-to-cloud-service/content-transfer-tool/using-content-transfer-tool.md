@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
+source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 * 内容传输工具的最低系统要求是AEM 6.3 +和JAVA 8。 如果您使用的是较低版本的AEM，则需要将内容存储库升级到AEM 6.5，才能使用内容传输工具。
 
-* 如果您使用沙 *箱环境*，请确保环境已升级到2020年5月29日版本或更高版本。 如果您使用的是 *生产环境*，它会自动更新。
+* 如果您使用沙 *箱环境* ，请确保环境已升级到2020年6月10日版本或更高版本。 如果您使用的是 *生产环境*，它会自动更新。
 
-* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的云服务实例中的管理组。 无权限用户将无法检索访问令牌以使用内容传输工具。
+* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的云服务实例中的AEM管理员组。 无权限用户将无法检索访问令牌以使用内容传输工具。
 
 * 在提取阶段，内容传输工具将在活动AEM源实例上执行。
 
@@ -28,10 +28,10 @@ ht-degree: 1%
 
 ## 可用性 {#availability}
 
-内容传输工具可从软件分发门户下载为zip文件。 您可以通过源Adobe Experience Manager(AEM)实例上的包管理器安装该包。
+内容传输工具可从软件分发门户下载为zip文件（内容传输工具v1.0.0）。 您可以通过源Adobe Experience Manager(AEM)实例上的包管理器安装该包。
 
 >[!NOTE]
->从Adobe Experience Cloud下载内 [容传输工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
+>从软件分发门户下载内 [容传输工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
 
 ## 运行内容传输工具 {#running-tool}
 
