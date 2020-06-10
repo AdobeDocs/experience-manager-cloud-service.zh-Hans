@@ -2,9 +2,9 @@
 description: '按体验联盟列出的动态媒体新闻快讯是每月新闻快讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您能够立即开始实现价值。 此一站式商店时事通讯中提供宝贵的知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些主要功能，如图像预设、查看器预设、视频用户档案等。 '
 title: Dynamic Media新闻快讯
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,21 @@ Experience League的每月Dynamic Media Newsletter旨在帮助您快速掌握Dyn
 [注册](https://www.adobe.com/subscription/dynamic-media-newsletter.html) ，即可在您的收件箱中按月接收Dynamic Media Newsletter。
 
 ## 是否错过了Dynamic Media新闻快讯期刊？
+
+* **[2020年5月，第4期](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   在此问题中：
+
+   * 在不确定的时代，业务连续性意味着什么。
+   * 首次全数字Adobe峰会的重要收获。
+   * 必须观看Experience Manager分组讨论会话。
+   * 峰会客户聚焦： 在装甲之下。
+   * 绝不错过Experience Insider网络研讨会。
+   * 公共部门重点： 数字注册的迫切需求。
+   * 了解Experience Manager Innovation的新增功能。
+   * 实时培养Experience Manager *技能* ，让Adobe专业人员掌握。
+   * 与Adobe Experience Manager社区建立联系。
+   * 利用Adobe Experience League快速追踪您的Adobe专业知识。
 
 * **[2020年4月，第3期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
@@ -117,7 +132,7 @@ Experience League的每月Dynamic Media Newsletter旨在帮助您快速掌握Dyn
 
    在此问题中：
 
-   * 尽享在AEM资产中突出升级到Dynamic Media的绝佳体验的视频。
+   * 尽享在AEM资产中升级到Dynamic Media的精彩视频。
    * 在Experience League中观看关键操作方法视频。
    * 进一步了解即将到来的Adobe Insider Tour。
    * 了解如何保护数字资产免受盗版侵害。
