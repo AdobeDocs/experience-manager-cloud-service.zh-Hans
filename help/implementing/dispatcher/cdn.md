@@ -2,9 +2,9 @@
 title: AEM中的CDN即云服务
 description: AEM中的CDN即云服务
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,16 @@ AEM as Cloud Service随内置CDN提供。 其主要目的是通过从位于边�
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
-使用Adobe现成的CDN准备内容投放很简单，如下所述：
+按照以下步骤，使用Adobe现成的CDN准备内容投放:
 
 1. 您将通过共享指向包含此信息的安全表单的链接，向Adobe提供已签名的SSL证书和密钥。 请在此任务与客户支持协作。
    **注意：** Aem作为云服务不支持域验证(DV)证书。
 1. 您应通知客户支持：
-   * 哪个自定义域应与给定环境关联，如项目id和环境id所定义。
+   * 哪个自定义域应与给定环境关联，如项目id和环境id所定义。 请注意，作者端不支持自定义域。
    * 如果需要任何IP白名单来限制到给定环境的通信。
-1. 然后，客户支持将与您协调CNAME DNS记录的时间，并将其FQDN指向 `cdn.adobeaemcloud.com`。
+1. 您应与客户支持协作，确定对DNS记录进行必要更改的时间。 根据是否需要顶点记录，说明有所不同：
+   * 如果不需要apex记录，客户应将CNAME DNS记录设置为将其FQDN指向 `cdn.adobeaemcloud.com`。
+   * 如果需要apex记录，请创建指向以下IP的A记录： 151.101.3.10、151.101.67.10、151.101.131.10、151.101.195.10。如果所需的FQDN与DNS匹配，客户需要一个顶点记录。 可以使用Unix dig命令测试此值，以查看输出的SOA值是否与域匹配。 例如，该命令 `dig anything.dev.adobeaemcloud.com` 返回SOA(权限开始，即区域), `dev.adobeaemcloud.com` 因此它不是APEX记录，而 `dig dev.adobeaemcloud.com` 返回SOA, `dev.adobeaemcloud.com` 因此它是顶点记录。
 1. 当SSL证书过期时，将通知您，这样您就可以重新提交新的SSL证书。
 
 **限制流量**
