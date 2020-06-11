@@ -4,9 +4,9 @@ description: 将AEM实例与Adobe Creative Cloud集成的最佳实践，可简�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3302'
 ht-degree: 18%
 
 ---
@@ -173,7 +173,7 @@ AEM资产根据用户对AEM资产部署的访问权限支持两种类型的用�
 
 #### 直接访问DAM的创意用户 {#creative-users-with-direct-access-to-dam}
 
-通常，已加载到内部网络的内部创意团队或代理／创意专业人士有权访问DAM实例，包括AEM登录名。 可以设置AEM和网络基础架构，以允许直接访问外部方（通常是受信任的组织，如为客户端工作的机构），从而通过网络（例如，通过VPN或IP白名单）访问AEM。
+通常，已加载到内部网络的内部创意团队或代理／创意专业人士有权访问DAM实例，包括AEM登录名。 可以设置AEM和网络基础架构，以允许直接访问外部方（通常是受信任的组织，如为客户工作的代理），从而通过网络访问AEM，例如，通过VPN或IP允许的列表。
 
 在这种情况下，Adobe Asset Link或AEM桌面应用程序可让您轻松访问最终／批准的资产，并允许您将创意就绪型资产保存到DAM。
 
@@ -186,7 +186,7 @@ AEM资产根据用户对AEM资产部署的访问权限支持两种类型的用�
 * 如果资产链接不起作用，请使用桌面应用程序。
 * 使用 [AEM Assets Brand](https://helpx.adobe.com/cn/experience-manager/brand-portal/user-guide.html) Portal将资产安全分发给外部合作伙伴
 * 使用基于资源共享的分发和采购门户的自 [定义实现](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* 使用在AEM中设置的访问控制和必要的网络基础架构（例如，VPN和IP白名单），使外部方能够访问DAM中的专用内容区域。 他们可以使用AEM Web UI获取资产并将新内容上传到您的DAM。
+* 使用在AEM中设置的访问控制和必要的网络基础架构（例如，允许VPN和IP列表），使外部方能够访问DAM中的专用内容区域。 他们可以使用AEM Web UI获取资产并将新内容上传到您的DAM。
 
 #### 正在从AEM处理资产 {#work-in-progress-on-assets-from-aem}
 
