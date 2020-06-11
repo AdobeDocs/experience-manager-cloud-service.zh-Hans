@@ -3,9 +3,9 @@ title: 创建和管理多语言的数字资产并运行翻译工作流
 description: 了解如何自动将资产（包括二进制文件、元数据和标记）翻译成多种语言的工作流。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2612'
 ht-degree: 23%
 
 ---
@@ -55,7 +55,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 每个语言文件夹都称为语言副本。 语言副本的根文件夹（称为语言根）标识语言副本中内容的语言。 例如， `/content/dam/it` 意大利语语言副本的意大利语根。 语言副本必须使用 [正确配置的语言根](#create-a-language-root) ，以在执行源资产翻译时锁定正确的语言。
 
-您最初为其添加资产的语言副本是语言母版。 语言母版是翻译成其他语言的源。 示例文件夹层次结构包括几个语言根：
+您最初为其添加资产的语言副本是主要语言。 主语言是翻译成其他语言的源。 示例文件夹层次结构包括几个语言根：
 
 ```shell
 /content
@@ -71,9 +71,9 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 请执行以下步骤来准备要翻译的资产：
 
-1. 创建语言母版的语言根。 例如，示例文件夹层次结构中英语副本的语言根目 *录为/content/dam/en*。 确保根据创建语言根目录中的信息正确 [配置语言根目录](#create-a-language-root)。
+1. 创建主语言的语言根。 例如，示例文件夹层次结构中英语副本的语言根目录为 `/content/dam/en`。 确保根据创建语言根目录中的信息正确 [配置语言根目录](#create-a-language-root)。
 
-1. 将资源添加到语言母版。
+1. 将资产添加到主语言。
 1. 创建您需要语言副本的每种目标语言的语言根。
 
 ### 创建语言根 {#create-a-language-root}
@@ -90,7 +90,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 触屏优化UI提供了一个“引用”面板，其中显示在AEM资产中创建的语言根列表。
 
-1. 在“资产”控制台中，选择要为其创建语言副本的语言母版。
+1. 在“资产”控制台中，选择要为其创建语言副本的语言主要版本。
 1. 单击或点按GlobalNav图标，然后选择“ **[!UICONTROL 引用]** ”以打开“引用”窗格。
 1. 在“引用”窗格中，单击或点按 **[!UICONTROL 语言副本]**。 “语言副本”面板显示资产的语言副本。
 
@@ -184,7 +184,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
    单击／点 **[!UICONTROL 按拒绝翻译]** ，以在目标区域设置根目录中保留资产的最初翻译版本并拒绝编辑的版本。
 
-1. 导航到“资产”控制台，然后打开每个已翻译资产的“属性”页面，以视图已翻译的元数据。
+1. 导航到“资产”控制台，然后打开每个已翻译资产的“属性”页面以视图已翻译的元数据。
 
 有关有效翻译资产元数据的提示，请参 [阅有效翻译元数据的5个步骤](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)。
 
