@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 资产处理取决于处理用户档案 **[!UICONTROL 中的配置]**，该配置提供了默认设置，并允许管理员添加更具体的资产处理配置。 管理员可以创建和维护后处理工作流的配置，包括可选自定义。 自定义工作流允许可扩展性和完全自定义。
 
-Asset microservices允许您处 [理各种文件类型](/help/assets/file-format-support.md) ，这些类型的现成格式比先前版本的Experience Manager更多。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。
+Asset microservices允许您处 [理各种文件类型](/help/assets/file-format-support.md) ，这些类型的现成格式比先前版本的Experience Manager所能处理的格式更多。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -99,9 +99,9 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 #### MIME类型包含规则 {#mime-type-inclusion-rules}
 
-处理具有特定MIME类型的资产时，首先会根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产生成此特定再现（“黑名单”）。
+当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产生成此特定再现(阻止列表)。
 
-否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版（“白名单”）。
+否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
 
 #### 特殊FPO再现 {#special-fpo-rendition}
 
@@ -148,7 +148,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 * 创建一个或多个工作流模型。 我们将它们称为“后处理工作流模型”，但它们是常规AEM工作流模型。
 * 为这些模型添加特定的工作流步骤。 这些步骤将基于工作流模型配置对资产执行。
-* 这种模型的最后一步必须是 `DAM Update Asset Workflow Completed Process` 步骤。 这是必需的，以确保AEM知道处理已结束，并且资产可以标记为已处理（“新”）
+* 这种模型的最后一步必须是 `DAM Update Asset Workflow Completed Process` 步骤。 这是必需的，以确保AEM知道处理已结束，并且可以将资产标记为已处理（“新”）
 * 为自定义工作流运行服务创建配置，该配置允许按路径（文件夹位置）或常规表达式配置后处理工作流模型的执行
 
 ### 创建后处理工作流模型 {#create-post-processing-workflow-models}
