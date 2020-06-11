@@ -2,7 +2,7 @@
 title: 在AEM中缓存为云服务
 description: '在AEM中缓存为云服务 '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 0%
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 调度程序缓存失效 {#disp}
 
-通常，不必使调度程序缓存失效。 相反，在内容重新发布时，您应依赖调度程序刷新其缓存，并依赖于缓存过期头的CDN。
+通常，不必使调度程序缓存失效。 相反，当内容重新发布时，您应依赖调度程序刷新其缓存，而CDN则依赖于缓存过期标头。
 
 ### 激活/取消激活期间调度程序缓存失效 {#cache-activation-deactivation}
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 页面由HTML、Javascript、CSS和图像组成。 鼓励客户利用客户端库(clientlibs)框架将Javascript和CSS资源导入HTML页面，同时考虑JS库之间的相关性。
 
-clientlibs框架提供自动版本管理，这意味着开发人员可以通过源代码控制检入对JS库的更改，并且当客户推送其版本时，将提供最新版本。 如果没有这一功能，开发人员将需要手动更改引用了新版本库的HTML，如果许多HTML模板共享同一库，这将特别困难。
+clientlibs框架提供自动版本管理，这意味着开发人员可以通过源代码控制检入对JS库的更改，并且当客户推送其版本时，将提供最新版本。 如果没有这一功能，开发人员需要手动更改引用了新版本库的HTML，如果许多HTML模板共享同一库，这尤其困难。
 
 将新版库发布到生产版时，引用HTML页面会更新，其中包含指向这些已更新库版本的新链接。 在给定HTML页面的浏览器缓存过期后，不会担心旧库将从浏览器缓存中加载，因为现在保证刷新的页面（从AEM）引用新版本的库。 换言之，刷新的HTML页面将包括所有最新的库版本。
 
