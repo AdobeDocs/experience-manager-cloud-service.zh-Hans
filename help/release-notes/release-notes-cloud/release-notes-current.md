@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 云服务 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: 972e6322a313c9e6afcf09262290992272406491
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1922'
 ht-degree: 7%
 
 ---
@@ -122,11 +122,11 @@ PM/EM review required before publishing.
 
 组织现在可以在AEM资产中存储和使用3D文件。 用户可以上传、预览和利用各种核心3D文件，包括。obj、.stl、.gltf和。glb文件。 此外，还可 [!DNL Dynamic Media]以通过不可知的URL或查看器配置和提供3D体验。 这包括3 [!DNL Dynamic Media] D Experience Viewer、Sites 3D Viewer组件，以及通过(AR/VR)交付3D [!DNL Dynamic Media] 文件的功能。 请参 [阅在Dynamic Media中使用3D资产](/help/assets/dynamic-media/assets-3d.md)。
 
-<!-- Hiding this as the GA is at a later date. 
-**Adobe Asset Link support for Adobe XD**
+**针对Adobe XD的Adobe Asset Link支持**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
--->
+在最新版本中 [!DNL Experience Manager Assets] ，为随v29.3 [!DNL Adobe Asset Link] 一起发布的新插件提供支持。该集成使设计人员能够访问和使用设计中的 [!DNL Adobe XD] 资源，而无需离开应 [!DNL Experience Manager][!DNL Adobe XD] 用程序。 请参 [阅Adobe XD文档的Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)。
+
+在此版本中，创意用户和设计人员现在可以使用 [!DNL AEM Assets] 各种Creative [!DNL Adobe Asset Link] Cloud桌面应用程序（包括、和）管理 [!DNL Adobe XD]的资 [!DNL Photoshop]源， [!DNL Illustrator]包括 [!DNL InDesign]、和。
 
 **辅助功能增强**
 
