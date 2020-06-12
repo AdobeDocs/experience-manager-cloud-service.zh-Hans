@@ -2,10 +2,10 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 单击“云就绪 **性分析器**”后，生成报告的工具开始将显示生成的报告。几分钟后，您将看到生成的报告。
+1. 单击“云就绪 **性分析器**”后，生成报告的工具开始在几分钟后AEM实例中会显示摘要报告。
 
    >[!NOTE]
    >您必须向下滚动页面以视图完整报告。
@@ -77,12 +77,21 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 1. 
    1. 选择Adobe Experience Manager并导航到工具->操 **作** -> **云就绪性分析器**。
 
-1. 生成报告后，单击 **CSV** ，以逗号分隔值(CSV)格式下载完整的摘要报告，如下图所示。
+1. 报告可用后，单击 **CSV** ，以逗号分隔值(CSV)格式下载完整的摘要报告，如下图所示。
 
 ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### 在AEM 6.1实例中查看报表 {#aem-instances-report}
 
-您可以下载AEM 6.1的csv报告。此报告处于挂起状态。
+请按照以下步骤下载Adobe Experience Manager(AEM)6.1的CSV报告：
+
+1.使用导 **航到Adobe Experience Manager Web Console配置**`https://serveraddress:serverport/system/console/configMgr`。
+
+1. 选择 **状态** 选项卡，并从下 **拉列表中** 搜索模式检测器，如下图所示。
+
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. 您可以以zip文件夹或JSON格式下载摘要报告。
+
 
