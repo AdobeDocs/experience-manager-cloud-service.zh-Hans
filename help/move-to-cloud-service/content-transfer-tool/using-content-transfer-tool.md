@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,15 @@ ht-degree: 1%
 
 * 内容传输工具的最低系统要求是AEM 6.3 +和JAVA 8。 如果您使用的是较低版本的AEM，则需要将内容存储库升级到AEM 6.5，才能使用内容传输工具。
 
-* 如果您使用沙 *箱环境* ，请确保环境已升级到2020年6月10日版本或更高版本。 如果您使用的是 *生产环境*，它会自动更新。
+* 如果您使用沙 *箱环境*，请确保环境已升级到2020年6月10日版本或更高版本。 如果您使用的是 *生产环境*，它会自动更新。
 
 * 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的云服务实例中的AEM管理员组。 无权限用户将无法检索访问令牌以使用内容传输工具。
 
 * 在提取阶段，内容传输工具将在活动AEM源实例上执行。
 
 * 作 *者的摄取阶段* ，将缩小整个作者部署。 这意味着作者AEM在整个摄取过程中将不可用。
+
+* 内容传输工具一次支持的存储库大小的建议上限为20GB。
 
 ## 可用性 {#availability}
 
@@ -207,6 +209,8 @@ ht-degree: 1%
    您还可以从概述屏幕视图迁移集 *的日* 志。 选择迁移集，然后单击“提取”字 **段下** 的状态。 在这种情况下，单击 **“完成** ”以在新选项卡中视图日志。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. 要跟踪日志而不使用用户界面，您可以将SSH添加到源AEM环境中并跟踪 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
 ### 删除迁移集 {#deleting-migration-set}
 
