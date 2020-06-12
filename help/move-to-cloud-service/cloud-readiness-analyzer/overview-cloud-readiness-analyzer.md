@@ -2,9 +2,9 @@
 title: 云就绪性分析器概述
 description: 云就绪性分析器概述
 translation-type: tm+mt
-source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 >[!NOTE]
 >云就绪性分析器报告通过提供其他必须手动收集和评估的信息，加快了估计将AEM作为云服务过渡所需的时间和成本的过程。
 
-摘要报告可在AEM用户界面中找到。 有一个选项可下载以逗号分隔值(CSV)格式的完整报告，该选项在重构过程中很有用。
+您还可以从AEM用户界面下载摘要报告。 有关待处 **理的更多详细信息，请参阅** “以CSV格式查看结果”。
