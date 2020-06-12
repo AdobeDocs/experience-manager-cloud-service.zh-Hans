@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -35,42 +35,54 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
 1. 选择Adobe Experience Manager并导航到工具->操 **作** -> **云就绪性分析器**。
 
-### 查看结果 {#viewing-the-results}
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. 单击“云就绪 **性分析器**”后，生成报告的工具开始将显示生成的报告。几分钟后，您将看到生成的报告。
+
+   >[!NOTE]
+   >您必须向下滚动页面以视图完整报告。
+
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### 查看摘要报告中的结果 {#viewing-the-results}
 
 >[!IMPORTANT]
 >从云就绪性分析器生成的报告基于模式检测器。 有关更多 [详细信息](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) ，请参阅图案检测器。
 
-有两种方法可视图来自云就绪性分析器的输出：
+向下滚动页面以视图完整的摘要报告后，您可以看到报告中突出显示的每个类别的以下信息：
 
-1. **使用有组织的报表**
+1. **重要性级别**
 
-   >[!NOTE]
-   >AEM版本6.3及更高版本提供有组织的报告。
+   下表描述了各种模式检测器和云就绪性分析器重要性级别的含义。
 
-   或者，
+   | 重要性级别 | 描述 |
+   |--- |--- |
+   | INFO/0 | 此查找结果仅供参考。 |
+   | 建议/1 | 此发现可能是升级问题。 建议进一步调查。 |
+   | MAJOR/2 | 这一发现可能是一个应解决的升级问题。 |
+   | 关键/3 | 这一发现很可能是一个必须解决的升级问题，以防止功能或性能丢失。 |
 
-1. **查看CRA的输出**
+1. **说明**&#x200B;说明提供有关报告类别的信息。
 
-   请按照以下步骤视图来自云就绪性分析器的输出：
+1. **文档URL**&#x200B;文档URL允许您视图关联类型的技术文档。
 
-   >[!NOTE]
-   >以下步骤适用于AEM 6.1及更高版本。
+1. **消息**&#x200B;单个消息中查找结果的描述。
 
-   1. 使用导 **航到AEM Web** Console `https://serveraddress:serverport/system/console/configMgr`。
+### 以CSV格式查看结果 {#viewing-the-results-csv}
 
-   1. 选择 **状态——图案检测器** ，如下图所示。
+摘要报告可在AEM用户界面中找到。 您可以以逗号分隔值(CSV)格式下载完整报告，这在重构过程中非常有用。
+
+请按照以下步骤生成摘要报告的CSV格式：
+
+1. 
+   1. 选择Adobe Experience Manager并导航到工具->操 **作** -> **云就绪性分析器**。
+
+1. 生成报告后，单击 **CSV** ，以逗号分隔值(CSV)格式下载完整的摘要报告，如下图所示。
+
+![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### 在AEM 6.1实例中查看报表 {#aem-instances-report}
 
 您可以下载AEM 6.1的csv报告。此报告处于挂起状态。
 
-#### 了解报表中的重要性级别 {#importance-levels}
-
-下表描述了各种模式检测器和云就绪性分析器重要性级别的含义。
-
-| 重要性级别 | 描述 |
-|--- |--- |
-| INFO/0 | 此查找结果仅供参考。 |
-| 建议/1 | 此发现可能是升级问题。 建议进一步调查。 |
-| MAJOR/2 | 这一发现可能是一个应解决的升级问题。 |
-| 关键/3 | 这一发现很可能是一个必须解决的升级问题，以防止功能或性能丢失。 |
