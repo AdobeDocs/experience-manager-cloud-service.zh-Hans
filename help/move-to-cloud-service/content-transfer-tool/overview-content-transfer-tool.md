@@ -2,9 +2,9 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -57,8 +57,8 @@ ht-degree: 0%
 
 * 运行内容传输工具之前，必须确保源AEM实例的子目录中 `crx-quickstart` 有足够的磁盘空间。 这是因为内容传输工具创建了存储库的本地副本，稍后将其上传到迁移集。
 计算所需可用磁盘空间的一般公式如下：
-   *数据存储大小+节点存储大小* 1.5*
+   `data store size + node store size * 1.5`
 
-   * 对于数 *据存储大小*，内容传输工具使用64 GB，即使实际数据存储空间更大。
-   * 节 *点存储大小* ，是段存储目录大小或MongoDB数据库大小。
+   * *数据存储大小*: 内容传输工具使用64 GB，即使实际数据存储空间更大。
+   * *节点存储大小*: 区段存储目录大小或MongoDB数据库大小。
 因此，对于20GB的区段存储大小，所需的可用磁盘空间将为94GB。
