@@ -3,9 +3,9 @@ title: 将富文本编辑器配置为在Adobe Experience Manager中将内容作�
 description: 将富文本编辑器配置为在Adobe Experience Manager中将内容作为云服务进行创作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -56,13 +56,13 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 *图： 使用工具栏中的基本选项进行内联编辑。*
 
-### Full screen editing {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
 Experience Manager组件可以全屏视图打开，从而隐藏页面内容并占据可用屏幕。 考虑对内联编辑的详细版本进行全屏编辑，因为它优惠的编辑选项最多。 在使用内联编辑模 ![式时，可以从紧凑](assets/rte_fullscreen.png)工具栏中单击rte_fullscreen来打开它。
 
-在对话框全屏模式下，以及详细的RTE工具栏中，对话框中的可用选项和组件也可用。 它仅适用于包含RTE和其他组件的对话框。
+在对话框全屏模式和详细的RTE工具栏中，对话框中的可用选项和组件也可用。 它仅适用于包含RTE和其他组件的对话框。
 
-![在全屏模式下编辑时的详细RTE工具栏](assets/rte-toolbar-full-screen-mode.png)
+![以全屏模式进行编辑时的详细RTE工具栏](assets/rte-toolbar-full-screen-mode.png)
 
 *图： 在全屏模式下进行编辑时显示的详细RTE工具栏。*
 
@@ -213,13 +213,13 @@ Experience Manager允许您针对不同的编辑模式以不同方式配置富�
 </uiSettings>
 ```
 
-内联模式和全屏模式使用不同的UI设置。 工具栏属性用于指定工具栏的按钮。
+内联模式和全屏模式使用不同的用户界面设置。 工具栏属性指定工具栏的选项。
 
-例如，如果按钮本身是一个功能(例如， `Bold`)，则它被指 `PluginName#FeatureName` 定为(例如 `links#modifylink`)。
+例如，如果选项本身是功能(例如， `Bold`)，则它被指 `PluginName#FeatureName` 定为(例如 `links#modifylink`)。
 
-如果按钮是跨距（包含插件的某些功能），则它指定 `#PluginName` 为(例如 `#format`)。
+如果选项是跨距（包含插件的某些功能），则将其指 `#PluginName` 定为(例如 `#format`)。
 
-可以`|`使用指定一组按钮之间的分隔符 `-`。
+可以`|`使用指定一组选项之间的分隔符() `-`。
 
 内嵌模式或全屏模式下的弹出节点包含正在使用的浏览器的列表。 “povers”节点下的每个子节点都以插件命名（例如，格式）。 它有一个属性“items”，其中包含插件功能的列表（例如，format#bold）。
 
