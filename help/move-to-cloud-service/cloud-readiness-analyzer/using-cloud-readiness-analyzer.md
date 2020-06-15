@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -46,14 +46,14 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 单击“云就绪 **性分析器**”后，生成报告的工具开始在几分钟后AEM实例中会显示摘要报告。
+1. 单击“云就绪 **性分析器**”后，生成报告的工具开始会在几分钟后在AEM实例上显示CRA报告。
 
    >[!NOTE]
    >您必须向下滚动页面以视图完整报告。
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## 解释云就绪性分析器组织报告 {#organized-report}
+## 解释云就绪性分析器报告 {#cra-report}
 
 在AEM实例中运行云就绪性分析器时，报告将作为结果显示在工具窗口中。
 
@@ -83,7 +83,7 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
    >[!NOTE]
    >CRA将在工具打开后立即开始生成报告的后台过程。 它显示一个指示，表示报表生成在报表准备就绪之前正在进行。 您可以关闭浏览器选项卡，稍后返回以在报告完成时视图报告。
 
-1. 生成并显示CRA报告后，您可以选择以逗号分隔值(CSV)下载报告。 单击 **CSV** 以下载以逗号分隔值(CSV)格式的完整摘要报告，如下图所示。
+1. 生成并显示CRA报告后，您可以选择以逗号分隔值(CSV)下载报告。 单击 **CSV** 以下载以逗号分隔值(CSV)格式的完整CRA报告，如下图所示。
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,29 +92,18 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
 ### Adobe Experience Manager6.2和6.1 {#aem-specific-versions}
 
-云就绪性分析器在Adobe Experience Manager(AEM)6.2中仅限用于生成和下载CSV报告的链接。
+Cloud Readiness Analyzer在Adobe Experience Manager6.2中仅限于生成和下载CSV报告的链接。
+
+对于Adobe Experience Manager6.1，工具无法正常工作，只能使用HTTP接口。
 
 >[!NOTE]
->
->* 对于Adobe Experience Manager6.1，工具无法正常工作，只能使用HTTP接口。
-   >
-   >
-* 在所有版本中，包含的图案检测器可以独立运行。
+>在所有版本中，包含的图案检测器可以独立运行。
 
+## 解释云就绪性分析器CSV报告 {#cra-csv-report}
 
-请按照以下步骤下载Adobe Experience Manager(AEM)6.1和6.2的CSV报告：
+当您从AEM实 **例中单** 击CSV选项时，云就绪性分析器报告的CSV格式将从结果缓存中构建并返回到您的浏览器。 根据您的浏览器设置，此报告将自动下载为默认名称为的文件 `results.csv`。
 
-1.使用导航 **到Adobe Experience ManagerWeb控制台** 配置 `https://serveraddress:serverport/system/console/configMgr`。
-
-1. 选择 **状态** 选项卡，并从下 **拉列表中** 搜索模式检测器，如下图所示。
-
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. 您可以以zip文件夹或JSON格式下载摘要报告。
-
-## 解释云就绪性分析器CSV报告 {#crs-csv-report}
-
-当您从AEM实 **例中单** 击CSV选项时，云就绪性分析器报告的CSV格式将从结果缓存中构建并返回到您的浏览器。 根据您的浏览器设置，此报告将自动下载为默认名称为的文件 `results.csv`。 如果缓存已过期，则在构建和下载CSV文件之前将重新生成报告。
+如果缓存已过期，则在构建和下载CSV文件之前将重新生成报告。
 
 报告的CSV格式包括从“模式检测器”输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。 其格式适合在Microsoft Excel等应用程序中查看和编辑。 它旨在以可重复的格式提供所有查找信息，在比较报告以衡量进度时，这些信息会很有帮助。
 
@@ -189,7 +178,7 @@ HTTP接口可用于多种方法。
 缓存生命周期值作为以下存储库 `maxCacheAge` 节点上的属性进行存储：
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-此属性的值是缓存生命周期（以秒为单位）。 管理员可以使用CRX/DE Lite调整缓存生命周期。
+此属性的值是缓存生命周期（以秒为单位）。 管理员可以使用CRXDE Lite调整缓 **存寿命**。
 
 
 
