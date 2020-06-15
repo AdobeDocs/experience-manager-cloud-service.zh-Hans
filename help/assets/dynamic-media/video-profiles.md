@@ -2,21 +2,21 @@
 title: 视频配置文件
 description: Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 您还可以向视频添加智能裁剪。
 translation-type: tm+mt
-source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '3676'
-ht-degree: 37%
+source-wordcount: '3678'
+ht-degree: 36%
 
 ---
 
 
 # 视频配置文件{#video-profiles}
 
-Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 如果您使用自适应视频编码配置文件对主视频进行编码，则在播放视频时，视频播放器会根据客户的 Internet 连接速度，自动调整视频流的质量。这称为自适应流。
+Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 当您使用自适应视频编码用户档案对主源视频进行编码时，在播放视频时，视频播放器会根据客户的Internet连接速度自动调整视频流的质量。 这称为自适应流。
 
 以下是决定视频质量的其他因素：
 
-* **已上传主视频的分辨率**
+* **已上载主源视频的分辨率**
 
    如果以较低的分辨率（如240p或360p）录制MP4视频，则无法以高清晰度进行流处理。
 
@@ -123,7 +123,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 ## Creating a video profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media已附带预定义的自适应视频编码用户档案-一组针对MP4 H.264的视频上传设置，该设置为获得最佳观看体验而优化。 您可以在上传视频时使用此用户档案。
+Dynamic Media已附带预定义的自适应视频编码用户档案-一组针对MP4 H.264的视频上传设置，该设置为获得最佳的观看体验而优化。 您可以在上传视频时使用此用户档案。
 
 但是，如果该预定义的配置文件不符合您的需求，您也可以选择自行创建自适应视频编码配置文件。When you use the setting **[!UICONTROL Encode for adaptive streaming]**–as a best practice–all encoding presets that you add to the profile are validated to ensure that all videos have the same aspect ratio. 此外，编码的视频会被视为流播放的多比特率集。
 
@@ -336,7 +336,7 @@ By default, you cannot edit the predefined, out-of-the-box **[!UICONTROL Adaptiv
 1. 在“视频编码用户档案”页面上，输入用户档案的新名称。
 1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 点按信息图标以获取自适应流播放的说明。 （如果要复制渐进式视频配置文件，请勿选中此复选框。）
 
-   在Dynamic Media —— 混合模式中，如果WebM视频预设是视频用户档案的一部分，则无法进 **[!UICONTROL 行自适应流播放的编码]** ，因为所有预设都必须是MP4。
+   在Dynamic Media-混合模式中，如果WebM视频预设是视频用户档案的一部分，则无法进 **[!UICONTROL 行自适应流播放的编码]** ，因为所有预设都必须是MP4。
 1. 在“视频编码预设”标题下，添加、编辑或删除构成该配置文件的视频编码预设。
 
    点按“基本”和“高级”选项卡上每个选项旁边的信息图标，查看推荐的设置和说明。
