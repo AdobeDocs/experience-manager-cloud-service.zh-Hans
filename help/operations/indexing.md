@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 3%
+source-wordcount: '1450'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +56,7 @@ AS NOTE: the above is internal for now.
 1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本
 1. 删除冗余或过时的现有索引。
 
-对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新的索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为云服务部署到AEM文档](/help/implementing/deploying/overview.md)。
+对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为云服务部署到AEM文档](/help/implementing/deploying/overview.md)。
 
 ### 准备新的索引定义 {#preparing-the-new-index-definition}
 
@@ -83,6 +83,10 @@ AS NOTE: the above is internal for now.
 因此，要部署索引，需要通过Git和`/oak:index/definitionname`Cloud Manager部署流 `ui.apps` 程提供索引定义()。
 
 添加新索引定义后，需要通过云管理器部署新应用程序。 部署时，将启动两个作业，负责将索引定义分别添加（并根据需要合并）到MongoDB和Azure区段存储，以便进行创作和发布。 在“蓝绿”切换开始之前，正在使用新索引定义重新索引基础存储库。
+
+>[!TIP]
+>
+>有关AEM作为云服务所需的包结构的更多详细信息，请参阅文档 [AEM项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 使用蓝绿部署的索引管理 {#index-management-using-blue-green-deployments}
 
