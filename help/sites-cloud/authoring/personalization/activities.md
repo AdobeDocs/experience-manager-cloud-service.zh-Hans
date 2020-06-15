@@ -2,10 +2,10 @@
 title: 管理活动
 description: 通过“活动”控制台，您可以创建、组织和管理品牌的营销活动
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 85%
+source-wordcount: '2002'
+ht-degree: 84%
 
 ---
 
@@ -50,7 +50,7 @@ Activities are available in Targeting mode for [authoring targeted content](/hel
 >
 >You must secure the activity settings node `cq:ActivitySettings` on the publish instance so that it is inaccessible to normal users. 该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
 >
->有关详细信息，请参阅与Adobe目标集成的先决条件。
+>有关详细信息，请参阅与Adobe Target集成的先决条件。
 <!--
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 -->
@@ -129,7 +129,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
 >[!NOTE]
 >
->取消发布活动时，
+>取消发布活动时，除非刷新页面，否则活动的状态不会更改。
 
 要发布或取消发布活动，请执行以下操作：
 
@@ -186,7 +186,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 * 发布实例中的活动与其对应的 Adobe Target 营销活动具有相同的名称。
 * Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
 
-![与Adobe目标同步](/help/sites-cloud/authoring/assets/activities-synch.png)
+![与Adobe Target同步](/help/sites-cloud/authoring/assets/activities-synch.png)
 
 创作活动在修改活动时立即同步。 立即同步允许活动与ContextHub模拟。
 
