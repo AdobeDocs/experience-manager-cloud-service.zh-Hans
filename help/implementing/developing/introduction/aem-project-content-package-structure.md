@@ -2,10 +2,10 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 18%
+source-wordcount: '2522'
+ht-degree: 17%
 
 ---
 
@@ -37,6 +37,16 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 >[!WARNING]
 >
 > 与以前版本的AEM一样， `/libs` 不应进行修改。 只有AEM产品代码可部署到 `/libs`。
+
+### Oak索引 {#oak-indexes}
+
+Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新插入后才能切换到新代码映像。
+
+因此，尽管Oak索引在运行时是可变的，但必须将其部署为代码，以便在安装任何可变包之前安装它们。 因 `/oak:index` 此，配置是代码包的一部分，而不是下面所述的内 [容包的一部分。](#recommended-package-structure)
+
+>[!TIP]
+>
+>有关在AEM中作为云服务进行索引的更多详细信息，请参阅文档 [内容搜索和索引。](/help/operations/indexing.md)
 
 ## 推荐的包结构 {#recommended-package-structure}
 
@@ -200,7 +210,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 例如，包含AEM作者和发布特定包的部署可能如下所示：
 
-+ `all` 容器包嵌入以下包，以创建单一部署伪像
++ `all` 容器包嵌入以下包，以创建单个部署伪像
    + `ui.apps` 已嵌入 `/apps/my-app-packages/application/install` 到部署代码中，同时发布到AEM作者和AEM发布
    + `ui.apps.author` 嵌入到 `/apps/my-app-packages/application/install.author` 仅部署代码到AEM作者
    + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 将内容和配置同时部署到AEM作者和AEM发布
