@@ -2,10 +2,10 @@
 sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
 translation-type: tm+mt
-source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
+source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 85%
+source-wordcount: '213'
+ht-degree: 81%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 85%
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
    + [为 AEM 云服务配置 OSGi](deploying/configuring-osgi.md)
++ Author Tier {#author-tier}
+   + [访问作者层](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [保护作者层](/help/implementing/author-tier/securing-the-author-tier.md)
 + 内容投放概述 {#content-delivery}
    + [内容投放流](dispatcher/overview.md)
    + [云中的调度程序](dispatcher/disp-overview.md)
