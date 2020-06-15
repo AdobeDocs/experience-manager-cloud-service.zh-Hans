@@ -2,17 +2,17 @@
 title: 设置Dynamic Media
 description: 要设置Dynamic Media，您需要配置Dynamic Media并管理图像预设和查看器预设
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 37%
+source-wordcount: '173'
+ht-degree: 23%
 
 ---
 
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media 可按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况，是您资产管理工作的得力助手。Dynamic Media 依托大量重要资产，能够通过其收放自如、效能卓越的全球网络，实时地生成并传送各式各样的丰富内容。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)
+[Dynamic Media 可按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况，是您资产管理工作的得力助手。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)Dynamic Media使用一组主源资源，通过其全球、可扩展、性能优化的网络实时生成和交付多种形式的丰富内容。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -24,7 +24,7 @@ ht-degree: 37%
 
 -->
 
-如果您管理Dynamic Media，则以下主题会受到关注：
+如果您管理Dynamic Media，则以下主题很受关注：
 
 * [配置 Dynamic Media](config-dm.md)
 * [管理图像预设](managing-image-presets.md)
@@ -40,4 +40,4 @@ ht-degree: 37%
 >
 >**如果要升级：**
 >
->* 在您设置并运行AEM后，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员明确禁用它）。 如果您是AEM的升级实例并且是Dynamic Media的新用户，则可能需要重新处理资产以启用Dynamic Media。
+>* 在您设置并运行AEM后，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员已明确禁用它）。 如果您是AEM的升级实例并且是新Dynamic Media，则可能需要重新处理资产以启用Dynamic Media。
