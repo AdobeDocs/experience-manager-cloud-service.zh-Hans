@@ -2,9 +2,9 @@
 title: 云就绪性分析器概述
 description: 云就绪性分析器概述
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 概述 {#overview-cloud-readiness-analyzer}
 
-云就绪性分析器有助于加快评估就绪性的流程，以便将现有Adobe Experience Manager(AEM)部署作为云服务移植到AEM。
+云就绪性分析器有助于加快评估就绪性的流程，以便将现有Adobe Experience Manager(AEM)部署作为Cloud Service移至AEM。
 
-此工具会生成一个报告，用于标识可能重构的区域，这是作为云服务过渡AEM旅程的第一步。
+此工具生成一个报告，用于标识潜在重构的区域，这是过渡到AEM作为Cloud Service的旅程中的第一步。
 
 ## 云就绪性分析器中的摘要报告 {#summary-report}
 
-云就绪性分析器摘要报告用于深入了解一般升级就绪性。 该报告包含一类别问题中的发现，在成功部署到AEM作为云服务之前，必须解决这些问题。
+云就绪性分析器摘要报告用于深入了解一般升级就绪性。 该报告包含一类别问题中的发现，在成功部署到AEM作为Cloud Service之前，必须解决这些问题。
 
 摘要报告包括以下类别:
 
@@ -26,11 +26,11 @@ ht-degree: 0%
 * 必须移动到支持位置的存储库项目
 * 旧式用户界面对话框和组件必须现代化
 * 部署和配置问题
-* 已被新功能替换或AEM当前不支持的AEM 6.x云服务功能
+* 已被新功能替换或AEM当前不支持的AEM 6.x功能(作为Cloud Service)
 
 有关类别以及与这些类别相关的可能影响和解决方案的更多信息，可从摘要报告内的链接提供。
 
 >[!NOTE]
->云就绪性分析器报告通过提供其他必须手动收集和评估的信息，加快了估计将AEM作为云服务过渡所需的时间和成本的过程。
+>云就绪性分析器报告通过提供其他必须手动收集和评估的信息，加快了估计将AEM作为过渡Cloud Service所需的时间和成本的过程。
 
-您还可以从AEM用户界面下载摘要报告。 有关待处 **理的更多详细信息，请参阅** “以CSV格式查看结果”。
+您还可以从AEM实例下载云就绪性分析器报告。 有关待处 **理的更多详细信息，请参阅** “以CSV格式查看结果”。
