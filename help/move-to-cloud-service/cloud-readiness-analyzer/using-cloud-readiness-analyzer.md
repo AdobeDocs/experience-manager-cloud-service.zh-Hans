@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ HTTP接口可用于多种方法。
 通过HTTP接口启动生成报告的简单方法是使用以下命令：
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-发出请求后，客户端无需保持活动状态即可生成报告。 报表生成可以使用一个客户端使用HTTP GET请求启动，生成报表后，可通过另一个客户端的缓存或AEM实例中的CSV工具查看。
+发出请求后，客户端无需保持活动状态即可生成报告。 报表生成可以使用一个客户端使用HTTP GET请求启动，生成报表后，可通过另一个客户端的缓存或AEM用户界面中的CSV工具查看。
 
 ### 响应(#http-responses)
 
