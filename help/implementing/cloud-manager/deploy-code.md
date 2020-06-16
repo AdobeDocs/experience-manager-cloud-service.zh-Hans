@@ -1,10 +1,10 @@
 ---
-title: 部署代码——云服务
-description: 部署代码——云服务
+title: 部署代码-Cloud Service
+description: 部署代码-Cloud Service
 translation-type: tm+mt
-source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 3%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 3%
    1. 阶段部署
    1. Stage Testing
    1. 生产部署
+
    >[!NOTE]
    >
    >此外，您还可以查看日志或查看测试标准的结果，来查看各个部署流程中的步骤。
@@ -58,8 +59,8 @@ ht-degree: 3%
 
 
 
->注意:
->需要为AEM Cloud Services的Cloud Manager更新以下部分，并且正在进行中。
+>[!IMPORTANT]:
+>需要为AEM cloud services更新Cloud Manager的以下部分，并且正在更新中。
 
 ## 部署流程 {#deployment-process}
 
@@ -89,10 +90,11 @@ Cloud Manager将构建过程生成的所有目标/*.zip文件上传到存储位�
 1. 调度程序对象将按如下方式部署到每个调度程序：
 
    1. 当前配置被备份并复制到临时位置
-   1. 除不可变文件外，所有配置都将被删除。 有关更多详细信息，请参阅管理调度程序配置。 这将清除目录，以确保不留下任何孤立文件。
+   1. 除不可变文件外，所有配置都将被删除。 有关更多详细信息，请参阅管理Dispatcher配置。 这将清除目录，以确保不留下任何孤立文件。
    1. 该项目会解压缩到httpd目录。  不可改写的文件不会被覆盖。 在部署时，您对git存储库中不可变文件所做的任何更改都将被忽略。  这些文件是AMS调度程序框架的核心，无法更改。
    1. Apache执行配置测试。 如果未找到错误，则重新加载服务。 如果发生错误，则从备份中恢复配置，重新加载服务，并将错误报告回云管理器。
    1. 管道配置中指定的每个路径都无效或从调度程序缓存中刷新。
+
    >[!NOTE]
    >
    >Cloud Manager希望调度程序对象包含完整的文件集。  所有调度程序配置文件都必须在git存储库中。 缺少文件或文件夹将导致部署失败。
