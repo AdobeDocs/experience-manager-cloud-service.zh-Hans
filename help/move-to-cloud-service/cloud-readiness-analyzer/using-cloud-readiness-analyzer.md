@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
+source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -18,18 +18,18 @@ ht-degree: 0%
 
 * CRA报告是使用Adobe Experience Manager(AEM)模式检测器的输 [出构建的](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRA使用的图案检测器版本包含在CRA安装包中。
 
-* CRA只能由管理员用户 *或* “管理员”组中的 **用户运** 行。
+* CRA只能由管理员用 **户** 或管理员中的用 **户运行**。
 
 * 版本6.1及更高版本的AEM实例支持CRA。
 
 * CRA可以在任何环境上运行，但它更喜欢在舞台 *环境运行* 。
 
    >[!NOTE]
-   >为避免对业务关键型实例产生影响，建议在自定义、配置、内容和用户应用程序方面尽可能接近生产环境的作者分阶段环境上运行CRA。 或者，也可以在生产作者环境的克隆上运行它。
+   >为避免对业务关键型实例产生影响，建议在自定义、配置、内容和用户应 *用程序方面* ，在尽可能接近 *“生产* ”环境的创作环境上运行CRA。 或者，也可以在生产作者环境的克隆上 *运行* 。
 
-* CRA报告的生成可能需要相当长的时间，从几分钟到几小时。 所需的时间量高度取决于AEM存储库内容的大小和性质、AEM版本以及其他因素。
+* CRA报告内容的生成可能需要相当长的时间，从几分钟到几小时。 所需的时间量高度取决于AEM存储库内容的大小和性质、AEM版本以及其他因素。
 
-* 由于生成报告所需的时间很长，因此结果会保留在缓存中，并可供后续查看和下载，直到缓存过期或显式刷新报告为止。
+* 由于生成报告内容可能需要花费大量时间，这些内容由后台进程生成并保存在缓存中。 查看和下载报告的速度应该相对较快，因为它会利用内容缓存，直到报告过期或报告被显式刷新。 在生成报告内容的过程中，您可以关闭浏览器选项卡并在以后返回以视图报告，一旦其内容在缓存中可用。
 
 ## 可用性 {#availability}
 
@@ -46,7 +46,7 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 单击“云就绪 **性分析器**”后，生成报告的工具开始会在几分钟后在AEM实例上显示CRA报告。
+1. 单击“云就绪 **性分析器**”后，工具开始将生成报告并在报告可用时显示它。
 
    >[!NOTE]
    >您必须向下滚动页面以视图完整报告。
@@ -88,20 +88,20 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
    >[!NOTE]
-   >您可以通过单击左上角的“刷新报告”按钮，强制CRA清 **除其缓存** 并重新生成报告。
+   >您可以通过单击“刷新报告”强制CRA清除其缓存并重 **新生成报告**。
 
 ### Adobe Experience Manager6.2和6.1 {#aem-specific-versions}
 
 Cloud Readiness Analyzer在Adobe Experience Manager6.2中仅限于生成和下载CSV报告的链接。
 
-对于Adobe Experience Manager6.1，工具无法正常工作，只能使用HTTP接口。
+对于Adobe Experience Manager6.1，该工具不起作用，只能使用HTTP接口。
 
 >[!NOTE]
 >在所有版本中，包含的图案检测器可以独立运行。
 
 ## 解释云就绪性分析器CSV报告 {#cra-csv-report}
 
-当您从AEM实 **例中单** 击CSV选项时，云就绪性分析器报告的CSV格式将从结果缓存中构建并返回到您的浏览器。 根据您的浏览器设置，此报告将自动下载为默认名称为的文件 `results.csv`。
+当您从AEM实 **例单击** CSV选项时，云就绪性分析器报告的CSV格式将从内容缓存构建并返回到您的浏览器。 根据您的浏览器设置，此报告将自动下载为默认名称为的文件 `results.csv`。
 
 如果缓存已过期，则在构建和下载CSV文件之前将重新生成报告。
 
@@ -123,7 +123,7 @@ CSV格式报告的列有：
 
 ## HTTP接口 {#http-interface}
 
-CRA提供可用作AEM实例的替代项的HTTP接口。 该接口支持HEAD和GET命令。 它可用于生成CRA报告并以三种格式之一返回： JSON、CSV和制表符分隔值(TSV)。
+CRA提供HTTP界面，可用作AEM中用户界面的替代界面。 该接口支持HEAD和GET命令。 它可用于生成CRA报告并以三种格式之一返回： JSON、CSV和制表符分隔值(TSV)。
 
 以下URL可用于HTTP访问，其 `<host>` 中是安装CRA的服务器的主机名和端口（如果需要）:
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` for JSON format
@@ -178,7 +178,7 @@ HTTP接口可用于多种方法。
 缓存生命周期值作为以下存储库 `maxCacheAge` 节点上的属性进行存储：
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-此属性的值是缓存生命周期（以秒为单位）。 管理员可以使用CRXDE Lite调整缓 **存寿命**。
+此属性的值是缓存生命周期（以秒为单位）。 管理员可以使用CRXDE Lite调整缓存生命周期。
 
 
 
