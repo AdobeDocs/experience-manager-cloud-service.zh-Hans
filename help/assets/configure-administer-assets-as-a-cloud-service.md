@@ -1,9 +1,9 @@
 ---
-title: 将Adobe Experience Manager资产配置为云服务并进行管理
-description: 了解作为云服务的资产所需的配置和管理任务
+title: 将Adobe Experience Manager资产配置和管理为Cloud Service
+description: 了解资产作为任务所需的配置和管理Cloud Service
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# 将资产配置为云服务并进行管理 {#config-administer-assets-cloud-service}
+# 将资产配置为Cloud Service {#config-administer-assets-cloud-service}
 
-本文列表了开始将Adobe Experience Manager资产用作云服务所需的顶级配置或管理任务。
+文章列表开始使用Adobe Experience Manager资产作为Cloud Service所需的顶级配置或管理任务。
 
 <!-- SCOPE 
 
@@ -24,7 +24,7 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * How to monitor health of services
 * How to see the running statuses
 * How to get service-level reports like usage, performance, uptime, etc.
-* Enable asset download by configuring the download servlet. It is disbaled to prevent DDOS kind of situations.
+* Enable asset download by configuring the download servlet. It is disabled to prevent DDOS kind of situations.
 * Configure SMTP to enable email notifications.
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
