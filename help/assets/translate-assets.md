@@ -3,7 +3,7 @@ title: 创建和管理多语言的数字资产并运行翻译工作流
 description: 了解如何自动将资产（包括二进制文件、元数据和标记）翻译成多种语言的工作流。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '2612'
 ht-degree: 23%
@@ -13,7 +13,7 @@ ht-degree: 23%
 
 # 多语言资源 {#multilingual-assets}
 
-多语言资产是指具有多语言二进制、元数据和标记的资产。 通常，资产的二进制文件、元数据和标记存在于一种语言中，然后将它们翻译为其他语言，以用于多语言项目。 Adobe Experience Manager(AEM)资产可让您自动翻译资产工作流（包括二进制文件、元数据和标记），以生成其他语言的资产，以便在多语言项目中使用。
+多语言资产是指具有多语言二进制、元数据和标记的资产。 通常，资产的二进制文件、元数据和标记存在于一种语言中，然后将它们翻译为其他语言，以用于多语言项目。 Adobe Experience Manager(AEM)资产可让您自动翻译资产（包括二进制文件、元数据和标记）上的工作流，以生成其他语言的资产，以便在多语言项目中使用。
 
 要实现翻译工作流的自动化，您可以将翻译服务提供商与AEM集成，并创建将资产翻译为多种语言的项目。 AEM支持人和机器翻译工作流。
 
@@ -22,7 +22,7 @@ ht-degree: 23%
 机器翻译： 机器翻译服务会立即转换资产的元数据和标记。
 
 <!--
-We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only 1 master article.
+We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/translation-projects.html
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/preparing-assets-for-translation.html
@@ -51,7 +51,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 多语言资产是指具有多语言二进制、元数据和标记的资产。 通常，资产的二进制文件、元数据和标记存在于一种语言中，然后将它们翻译为其他语言，以用于多语言项目。
 
-在Adobe Experience Manager(AEM)资产中，多语言资产包含在文件夹中，其中每个文件夹都包含不同语言的资产。
+在Adobe Experience Manager(AEM)资产中，多语言资产包含在文件夹中，其中每个文件夹都包含使用不同语言的资产。
 
 每个语言文件夹都称为语言副本。 语言副本的根文件夹（称为语言根）标识语言副本中内容的语言。 例如， `/content/dam/it` 意大利语语言副本的意大利语根。 语言副本必须使用 [正确配置的语言根](#create-a-language-root) ，以在执行源资产翻译时锁定正确的语言。
 
@@ -88,7 +88,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 视图语根 {#view-language-roots}
 
-触屏优化UI提供了一个“引用”面板，其中显示在AEM资产中创建的语言根列表。
+触屏优化UI提供了一个“引用”面板，其中显示了在列表中创建的语言根的AEM Assets。
 
 1. 在“资产”控制台中，选择要为其创建语言副本的语言主要版本。
 1. 单击或点按GlobalNav图标，然后选择“ **[!UICONTROL 引用]** ”以打开“引用”窗格。
@@ -118,7 +118,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### Add to an existing translation project {#add-to-existing-translation-project}
 
-如果您使用此选项，则在运行以前的翻译工作流后，将为添加到源文件夹的资产运行翻译工作流。 只有新添加的资产才会复制到包含以前翻译过的资产的目标文件夹中。 在这种情况下，不会创建新的翻译项目。
+如果您使用此选项，则在运行以前的翻译工作流后，将为添加到源文件夹的资产运行翻译工作流。 只有新添加的资产才会复制到包含以前已翻译资产的目标文件夹中。 在这种情况下，不会创建新的翻译项目。
 
 1. 在资产UI中，导航到包含未翻译资产的源文件夹。
 1. 选择要翻译的资产，然后打开&#x200B;**[!UICONTROL “引用”窗格]**。**[!UICONTROL 语言副本]**&#x200B;部分显示当前可用的翻译副本数。
@@ -168,7 +168,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 创建临时语言副本 {#creating-temporary-language-copies}
 
-当您运行翻译工作流以使用已编辑版本的原始资产更新语言副本时，将保留现有语言副本，直到您批准已翻译的资产。 AEM资产会将新翻译的资产存储在临时位置，并在您明确批准资产后更新现有语言副本。 如果您拒绝资产，则语言副本将保持不变。
+当您运行翻译工作流以使用已编辑版本的原始资产更新语言副本时，将保留现有语言副本，直到您批准已翻译的资产。 AEM Assets将新翻译的资产存储在临时位置，并在您明确批准资产后更新现有语言副本。 如果您拒绝资产，则语言副本将保持不变。
 
 1. 单击／点按您已为其创建语言副本的 **[!UICONTROL 语言副本下的源根文件夹]** ，然后单击／点按资产中的 **[!UICONTROL 显示]** ，以在AEM资产中打开该文件夹。
 1. 在资产UI中，选择已翻译的资产，然后单击／点按工 **[!UICONTROL 具栏]** 中的编辑图标，以在编辑模式下打开资产。
@@ -230,7 +230,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ## 将翻译云服务应用到文件夹 {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager(AEM)允许您从您选择的翻译提供商那里获得基于云的翻译服务，以确保根据您的要求对您的资产进行翻译。
+Adobe Experience Manager(AEM)允许您从您选择的翻译提供商那里获得基于云的翻译服务，以确保根据您的要求翻译您的资产。
 
 您可以将翻译云服务直接应用到您的资产文件夹，以便在翻译工作流中使用。
 
@@ -244,7 +244,7 @@ Adobe Experience Manager(AEM)允许您从您选择的翻译提供商那里获得
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. 导航到&#x200B;**[!UICONTROL 云服务]**&#x200B;选项卡。
-1. 从云服务配置列表中，选择所需的翻译提供商。 例如，如果要使用Microsoft的翻译服务，请选择“ **[!UICONTROL Microsoft Translator]**”。
+1. 从“Cloud Service配置”列表中，选择所需的翻译提供程序。 例如，如果要使用Microsoft的翻译服务，请选择“ **[!UICONTROL Microsoft Translator]**”。
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -259,7 +259,7 @@ Adobe Experience Manager(AEM)允许您从您选择的翻译提供商那里获得
 如果要为要在翻译工作流程中使用的翻译服务应用自定义连接器。要应用自定义连接器，请首先从“包管理器”安装连接器。然后，从云服务控制台配置连接器。配置连接器后，该连接器会显示在[应用翻译服务](#applying-the-translation-services)中所述的“云服务”选项卡的连接器列表中。应用自定义连接器并运行翻译工作流后，翻译项目的&#x200B;**[!UICONTROL 翻译摘要]**&#x200B;拼贴会在&#x200B;**[!UICONTROL 提供程序]**&#x200B;和&#x200B;**[!UICONTROL 方法]**&#x200B;标题下显示连接器详细信息。
 
 1. 从包管理器安装连接器。
-1. 单击／点按AEM徽标，然后导航到 **[!UICONTROL 工具>部署>云服务]**。
+1. 单击／点按AEM徽标，然后导航到工 **[!UICONTROL 具>部署>Cloud Service]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面的&#x200B;**[!UICONTROL 第三方服务]**&#x200B;下找到安装的连接器。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
