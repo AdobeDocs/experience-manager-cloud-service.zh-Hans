@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,13 @@ ht-degree: 0%
 Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 您可以通过源Adobe Experience Manager(AEM)实例上的包管理器安装该包。
 
 >[!NOTE]
->正在从软件分发门户下载云就绪性分析 *器*。
+>从软件分发门户下载云就绪性分析器。
 
-## 运行云就绪性分析器 {#running-tool}
+## 查看云就绪性分析器报告 {#viewing-report}
 
-请按照本节学习如何运行云就绪性分析器：
+### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+
+可查看本节以了解如何视图云就绪性分析器报告：
 
 1. 选择Adobe Experience Manager并导航到工具-> **操作** -> **云就绪性分析器**。
 
@@ -51,41 +53,11 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
    >[!NOTE]
    >您必须向下滚动页面以视图完整报告。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## 解释云就绪性分析器报告 {#cra-report}
-
-在AEM实例中运行云就绪性分析器时，报告将作为结果显示在工具窗口中。
-
-报告的格式为：
-
-* *报告概述*: 有关报告本身的信息，包括报告的生成时间。
-* *系统概述*: 关于运行CRA的AEM系统的信息。
-* *查找类别*: 多个部分，每个部分都处理同一类别的一个或多个发现。 每个部分包括： 类别名称、子类型、查找计数和重要性、摘要、指向类别文档的链接以及单个查找信息。
-
-每个查找结果都分配一个重要性级别，以指示粗略的操作优先级。
-
-请按照下表了解重要性级别：
-
-| 重要性 | 描述 |
-|--- |--- |
-| 信息 | 此查找结果仅供参考。 |
-| 建议 | 此发现可能是升级问题。 建议进一步调查。 |
-| MAJOR | 这一发现可能是一个应解决的升级问题。 |
-| 关键 | 这一发现很可能是一个必须解决的升级问题，以防止功能或性能丢失。 |
-
-### Adobe Experience Manager 6.3 and later {#aem-older-version}
-
-对于AEM 6.3及更高版本，运行云就绪性分析器的主要方式是：
-
-1. 选择Adobe Experience Manager实例并导航到工具-> **操作** -> **云就绪性分析器**。
-
-   >[!NOTE]
-   >CRA将在工具打开后立即开始生成报告的后台过程。 它显示一个指示，表示报表生成在报表准备就绪之前正在进行。 您可以关闭浏览器选项卡，稍后返回以在报告完成时视图报告。
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. 生成并显示CRA报告后，您可以选择以逗号分隔值(CSV)下载报告。 单击 **CSV** 以下载以逗号分隔值(CSV)格式的完整CRA报告，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >您可以通过单击“刷新报告”强制CRA清除其缓存并重 **新生成报告**。
@@ -98,6 +70,32 @@ Cloud Readiness Analyzer在Adobe Experience Manager6.2中仅限于生成和下�
 
 >[!NOTE]
 >在所有版本中，包含的图案检测器可以独立运行。
+
+## 解释云就绪性分析器报告 {#cra-report}
+
+在AEM实例中运行云就绪性分析器工具时，报告将作为结果显示在工具窗口中。
+
+报告的格式为：
+
+* **报告概述**: 有关报告本身的信息和以下信息：
+   * *报告时间*: 生成报告内容并首次提供时。
+   * *到期时间*: 报告内容缓存将过期的时间。
+   * *生成时段*: 报表内容生成过程所花费的时间。
+   * *查找计数*: 报告所载调查结果总数。
+* **系统概述**: 关于运行CRA的AEM系统的信息。
+* **查找类别**: 多个部分，每个部分都处理同一类别的一个或多个发现。 每个部分包括： 类别名称、子类型、查找计数和重要性、摘要、指向类别文档的链接以及单个查找信息。
+
+每个查找结果都分配一个重要性级别，以指示粗略的操作优先级。
+
+请按照下表了解重要性级别：
+
+| 重要性 | 描述 |
+|--- |--- |
+| 信息 | 此查找结果仅供参考。 |
+| 建议 | 此发现可能是升级问题。 建议进一步调查。 |
+| MAJOR | 这一发现可能是一个应解决的升级问题。 |
+| 关键 | 这一发现很可能是一个必须解决的升级问题，以防止功能或性能丢失。 |
+
 
 ## 解释云就绪性分析器CSV报告 {#cra-csv-report}
 
