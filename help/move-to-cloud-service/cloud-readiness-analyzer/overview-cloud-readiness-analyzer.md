@@ -2,9 +2,9 @@
 title: 云就绪性分析器概述
 description: 云就绪性分析器概述
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 >[!NOTE]
 >云就绪性分析器报告通过提供其他必须手动收集和评估的信息，加快了估计将AEM作为过渡Cloud Service所需的时间和成本的过程。
 
-您还可以从AEM实例下载云就绪性分析器报告。 有关待处 **理的更多详细信息，请参阅** “以CSV格式查看结果”。
+您还可以从AEM实例下载云就绪性分析器报告。 有关更多 [详细信息，请参阅查看云就绪性分析器报](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) 告。
