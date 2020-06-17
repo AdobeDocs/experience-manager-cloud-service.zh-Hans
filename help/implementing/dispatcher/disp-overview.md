@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 1%
 
 ---
@@ -236,7 +236,7 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-客户无法添加任意模块，但将来可能会考虑将其他模块包含在产品中。 如上所述，客户可以通过在SDK中执行“validator白名单”来查找指令的列表，该指令可用于给定Dispatcher版本。
+客户无法添加任意模块，但将来可能会考虑将其他模块包含在产品中。 如上所述，客户可以通过在SDK中执行validator的allowlist命令来查找指令的列表，该指令可用于给定Dispatcher版本。
 
 allowlist包含列表Apache指令，客户配置中允许这些指令。 如果不允许列出指令，该工具将记录一个错误并返回非零的退出代码。 如果命令行上未提供允许列表（应调用该列表的方式），则该工具会使用默认允许列表，Cloud Manager将在部署到云环境之前使用该列表进行验证。
 
