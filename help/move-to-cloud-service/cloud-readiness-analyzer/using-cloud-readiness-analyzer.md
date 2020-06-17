@@ -2,7 +2,7 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
+source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 0%
@@ -167,7 +167,7 @@ HTTP接口可用于多种方法。
 * `400 Bad Request`: 指示请求出错。 “问题详细信息”格式的消息( [请参阅RFC 7807](https://tools.ietf.org/html/rfc7807))提供了更多详细信息。
 * `401 Unauthorized`: 请求未获得授权。
 * `500 Internal Server Error`: 指示发生内部服务器错误。 “问题详细信息”格式的消息提供更多详细信息。
-* `503 Service Unavailable`: 表示服务器正忙于其他响应，无法及时为此请求提供服务。 这只适用于发出同步请求时。 “问题详细信息”格式的消息提供更多详细信息。
+* `503 Service Unavailable`: 表示服务器正忙于其他响应，无法及时为此请求提供服务。 仅当发出同步请求时，才会发生这种情况。 “问题详细信息”格式的消息提供更多详细信息。
 
 ## 缓存生命周期调整 {#cache-adjustment}
 
