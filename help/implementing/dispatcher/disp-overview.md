@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
-source-wordcount: '3916'
+source-wordcount: '3913'
 ht-degree: 1%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 ## Apache和Dispatcher配置和测试 {#apache-and-dispatcher-configuration-and-testing}
 
-本节介绍如何将AEM构建为云服务Apache和调度程序配置，以及如何在部署到云环境之前在本地验证和运行它。 还描述了在云环境中进行调试。 有关Dispatcher的其他信息，请参 [阅AEM Dispatcher文档](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)。
+本节介绍如何将AEM构建为Cloud ServiceApache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行它。 还描述了在云环境中进行调试。 有关Dispatcher的其他信息，请参阅 [AEMDispatcher文档](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)。
 
 >[!NOTE]
 >Windows用户需要使用Windows 10 Professional或支持Docker的其他分发版。 这是在本地计算机上运行和调试Dispatcher的先决条件。 以下各节包括使用Mac或Linux版本的SDK的命令，但Windows SDK也可以采用类似的方式使用。
 
 >[!WARNING]
-> Windows用户： 当前版本的AEM作为云服务本地调度程序工具(v2.0.20)与Windows不兼容。 请联系 [Adobe支持](https://daycare.day.com/home.html) ，获取Windows兼容性更新。
+> Windows用户： 当前版本的AEM作为Cloud Service本地Dispatcher工具(v2.0.20)与Windows不兼容。 请联系 [Adobe支持](https://daycare.day.com/home.html) ，获取Windows兼容性更新。
 
-## 调度程序工具 {#dispatcher-sdk}
+## Dispatcher工具 {#dispatcher-sdk}
 
-调度程序工具作为云服务SDK是整个AEM的一部分，它提供：
+Dispatcher工具作为Cloud ServiceSDK是整个AEM的一部分，它提供：
 
 * 一种香草文件结构，包含要包含在调度程序的主项目中的配置文件；
 * 客户在本地验证调度程序配置的工具；
@@ -32,9 +32,9 @@ ht-degree: 1%
 
 ## 下载和提取工具 {#extracting-the-sdk}
 
-调度程序工具可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 请注意，对SDK列表的访问权限仅限于那些将AEM Managed Services或AEM作为云服务环境访问的SDK列表。 该新调度程序工具版本中提供的任何新配置均可用于部署到云环境，在云或更高版本中运行该版本的AEM。
+Dispatcher工具可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 请注意，对SDK列表的访问权限仅限于将AEM Managed Services或AEM作为Cloud Service环境的用户。 该新调度程序工具版本中提供的任何新配置均可用于部署到云环境，在云或更高版本中运行该版本的AEM。
 
-**对于macOS和Linux**，请将shell脚本下载到计算机上的文件夹，使其可执行并运行它。 它将自解压存储到的目录下的调度程序工具文件(其 `version` 中是调度程序工具的版本)。
+**对于macOS和Linux**，请将shell脚本下载到计算机上的文件夹，使其可执行并运行它。 它将自解压存储到的目录下的Dispatcher工具文件(其中 `version` 是调度程序工具的版本)。
 
 ```bash
 $ chmod +x DispatcherSDKv<version>.sh
@@ -187,17 +187,17 @@ Uncompressing DispatcherSDKv<version>  100%
 适用于标准项目的默认主机全局匹配。 如果需要自定义，请修改 `virtualhosts.any`。 在自定义中，您不应包括默认主机全局覆盖，因为它匹配每 **个传** 入请求。
 
 >[!NOTE]
->AEM作为云服务主原型将生成相同的调度程序配置文件结构。
+>AEM作为Cloud Service主原型将生成相同的调度程序配置文件结构。
 
 以下各节介绍如何在本地验证配置，以便在部署内部版本时在Cloud Manager中通过相关的质量门。
 
-## 调度程序配置的本地验证 {#local-validation-of-dispatcher-configuration}
+## Dispatcher配置的本地验证 {#local-validation-of-dispatcher-configuration}
 
 验证工具在SDK中以Mac OS、 `bin/validator` Linux或Windows二进制形式提供，允许客户运行与Cloud Manager在构建和部署版本时将执行的验证相同的验证。
 
 它被调用为： `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-该工具可验证Apache和调度程序配置。 它使用模式扫描所 `conf.d/enabled_vhosts/*.vhost` 有文件，并检查是否只使用白名单指令。 通过运行validator的whitelist命令，可以列出Apache配置文件中允许的指令：
+该工具可验证Apache和调度程序配置。 它使用模式扫描所 `conf.d/enabled_vhosts/*.vhost` 有文件，并检查是否只使用允许列出的指令。 通过运行validator的allowlist命令可以列出Apache配置文件中允许的指令：
 
 ```
 $ validator whitelist
@@ -236,9 +236,9 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-客户无法添加任意模块，但将来可能会考虑将其他模块包含在产品中。 如调度程序工具文档中所述，客户可以通过在SDK中执行“validator白名单”来查找指令的列表，该指令可用于给定的调度程序版本。
+客户无法添加任意模块，但将来可能会考虑将其他模块包含在产品中。 如上所述，客户可以通过在SDK中执行“validator白名单”来查找指令的列表，该指令可用于给定Dispatcher版本。
 
-白名单包含列表客户配置中允许的Apache指令。 如果指令未列入白名单，该工具将记录错误并返回非零的退出代码。 如果命令行上没有提供白名单（这是应调用白名单的方式），则该工具会使用默认白名单，Cloud Manager将在部署到云环境之前使用该白名单进行验证。
+allowlist包含列表Apache指令，客户配置中允许这些指令。 如果不允许列出指令，该工具将记录一个错误并返回非零的退出代码。 如果命令行上未提供允许列表（应调用该列表的方式），则该工具会使用默认允许列表，Cloud Manager将在部署到云环境之前使用该列表进行验证。
 
 此外，它还使用模式扫描所有文 `conf.dispatcher.d/enabled_farms/*.farm` 件并检查：
 
@@ -256,7 +256,7 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-请注意，验证工具仅报告未列入白名单的禁止使用Apache指令。 它不会报告Apache配置的语法或语义问题，因为此信息仅对正在运行的环境中的Apache模块可用。
+请注意，验证工具仅报告未允许列出的禁止使用Apache指令。 它不会报告Apache配置的语法或语义问题，因为此信息仅对正在运行的环境中的Apache模块可用。
 
 未报告验证失败时，您的配置已准备好进行部署。
 
@@ -346,7 +346,7 @@ Apache虚拟主机配置中有两种类型的文件可指定为包括： 重写�
 
 ## 在本地测试Apache和Dispatcher配置 {#testing-apache-and-dispatcher-configuration-locally}
 
-还可以在本地测试Apache和调度程序配置。 它需要在本地安装Docker，并且您的配置要通过验证，如上所述。
+还可以在本地测试Apache和Dispatcher配置。 它需要在本地安装Docker，并且您的配置要通过验证，如上所述。
 
 通过使用“`-d`”参数，验证程序输出一个文件夹，其中包含调度程序所需的所有配置文件。
 
@@ -395,15 +395,15 @@ Starting httpd server
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-在本地运行调度程序时，日志也会直接打印到终端输出。 大多数时间，这些日志应位于DEBUG中，这可以通过在运行Docker时以参数的形式传递到调试级别来完成。 例如：
+在本地运行Dispatcher时，日志也直接打印到终端输出。 大多数时间，这些日志应位于DEBUG中，这可以通过在运行Docker时以参数的形式传递到调试级别来完成。 例如：
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
 云环境的日志将通过云管理器中提供的日志记录服务公开。
 
-## 每个环境的不同调度程序配置 {#different-dispatcher-configurations-per-environment}
+## 每个Dispatcher的不同环境配置 {#different-dispatcher-configurations-per-environment}
 
-此时，同一调度程序配置将作为云服务环境应用于所有AEM。 运行时将具有一个环境 `ENVIRONMENT_TYPE` 变量，该变量包含当前运行模式（开发、舞台或生产）以及定义。 定义可以 `ENVIRONMENT_DEV`是 `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，可以使用定义来构建逻辑：
+此时，同一调度程序配置将作为Cloud Service环境应用于所有AEM。 运行时将具有一个环境 `ENVIRONMENT_TYPE` 变量，该变量包含当前运行模式（开发、舞台或生产）以及定义。 定义可以 `ENVIRONMENT_DEV`是 `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，可以使用定义来构建逻辑：
 
 ```
 # Simple usage of the environment variable
@@ -420,7 +420,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 </IfDefine>
 ```
 
-在调度程序配置中，可以使用相同的环境变量。 如果需要更多逻辑，请如上例所示定义变量，然后在调度程序配置部分使用它们：
+在Dispatcher配置中，可以使用相同的环境变量。 如果需要更多逻辑，请如上例所示定义变量，然后在Dispatcher配置部分使用它们：
 
 ```
 /virtualhosts {
@@ -437,9 +437,9 @@ $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 不传递DISP_RUN_MODE值时的默认运行模式为“dev”。
 要获得可用选项和变量的完整列表，请运行不带参 `docker_run.sh` 数的脚本。
 
-## 查看Docker容器正在使用的调度程序配置 {#viewing-dispatcher-configuration-in-use-by-docker-container}
+## 查看DockerDispatcher容器正在使用的配置 {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-使用环境特定配置，可能难以确定实际的调度程序配置。 在启动您的码头容器之后， `docker_run.sh` 可以按如下方式丢弃它：
+对于环境特定配置，可能很难确定实际Dispatcher配置的外观。 在启动您的码头容器之后， `docker_run.sh` 可以按如下方式丢弃它：
 
 * 确定正在使用的Docker容器ID:
 
@@ -460,17 +460,17 @@ $ docker exec d75fbd23b29 httpd-test
 ...
 ```
 
-## AMS Dispatcher与AEM作为云服务的主要区别 {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
+## AMSDispatcher与AEM作为Cloud Service的主要区别 {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-如上文参考页所述，AEM中作为云服务的Apache和Dispatcher配置与AMS配置非常相似。 主要区别是：
+如以上参考页所述，AEM中作为Dispatcher的Apache和Cloud Service配置与AMS配置非常相似。 主要区别是：
 
-* 在AEM中，某些Apache指令不能使用(例如 `Listen` 或 `LogLevel`)
-* 在AEM中，作为云服务，只能将部分调度程序配置放入包含文件，其命名很重要。 例如，要在不同主机之间重复使用的筛选器规则必须放入一个名为的文件中 `filters/filters.any`。 有关详细信息，请参阅参考页面。
-* 在AEM作为云服务中，存在额外的验证以禁止使用编写的筛选器规则来 `/glob` 防止安全问题。 由于 `deny *` 将使用而非(不 `allow *` 能使用)，客户将从本地运行调度程序并执行试用和错误中受益，查看日志以准确了解调度程序过滤器为了添加这些路径而阻止的路径。
+* 在AEM中，某些Apache指令不能被使用(例如 `Listen` 或 `LogLevel`)
+* 在AEM中，作为Cloud Service，只能将部分Dispatcher配置放入包含文件中，其命名很重要。 例如，要在不同主机之间重复使用的筛选器规则必须放入一个名为的文件中 `filters/filters.any`。 有关详细信息，请参阅参考页面。
+* 在AEM中，作为Cloud Service，存在额外的验证以禁止使用编写的筛选器规则 `/glob` 来防止安全问题。 由于 `deny *` 将使用Dispatcher，而 `allow *` 非（不能使用）Dispatcher，因此客户将从本地运行以及执行试用和错误中受益，查看日志以准确了解过滤器为了添加这些路径而阻止的路径。
 
-## 将调度程序配置从AMS迁移到AEM作为云服务的准则
+## 将调度程序配置从AMS迁移到AEM作为Cloud Service的准则
 
-调度程序配置结构在Managed Services和AEM（作为云服务）之间存在差异。 下面是有关如何将AMS Dispatcher配置版本2迁移到AEM作为云服务的分步指南。
+作为Cloud Service，调度程序配置结构在Managed Services和AEM之间有差异。 下面是一个分步指南，介绍如何将AMSDispatcher配置版本2作为Cloud Service迁移到AEM。
 
 ## 如何将AMS转换为AEM作为云服务调度程序配置
 
@@ -520,7 +520,7 @@ Enter directory `conf.d/variables`.
 
 但是，如果文件夹包含多个特定于虚拟主机的文件，则其内容应包含在虚拟主 `Include` 机文件中引用这些文件的语句中。
 
-### 删除白名单
+### 删除允许列表
 
 删除文件夹 `conf.d/whitelists` 并删除 `Include` 虚拟主机文件中引用该子文件夹中某个文件的语句。
 
@@ -540,7 +540,7 @@ $ validator httpd .
 
 如果看到缺少包含文件的错误，请检查是否正确重命名了这些文件。
 
-如果看到未列入白名单的Apache指令，请删除它们。
+如果看到未允许列出的Apache指令，请删除它们。
 
 ### 删除所有非发布场
 
@@ -582,7 +582,7 @@ Enter directory `conf.dispatcher.d/clientheaders`.
 
 但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到场文 `$include` 件中引用这些文件的语句中。
 
-将文件从默 `conf.dispatcher/clientheaders/default_clientheaders.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
+将文件从 `conf.dispatcher/clientheaders/default_clientheaders.any` 默认AEM复制为Cloud Service调度程序配置到该位置。
 
 在每个场文件中，替换任何clientheader包含如下语句：
 
@@ -607,7 +607,7 @@ Enter directory `conf.dispatcher.d/filters`.
 
 但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到场文 `$include` 件中引用这些文件的语句中。
 
-将文件从默 `conf.dispatcher/filters/default_filters.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
+将文件从 `conf.dispatcher/filters/default_filters.any` 默认AEM复制为Cloud Service调度程序配置到该位置。
 
 在每个场文件中，替换任何筛选器都包含如下语句：
 
@@ -627,7 +627,7 @@ Enter directory `conf.dispatcher.d/renders`.
 
 删除该文件夹中的所有文件。
 
-将文件从默 `conf.dispatcher.d/renders/default_renders.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
+将文件从 `conf.dispatcher.d/renders/default_renders.any` 默认AEM复制为Cloud Service调度程序配置到该位置。
 
 在每个场文件中，删除该部分中的所 `renders` 有内容，并将其替换为：
 
@@ -645,7 +645,7 @@ $include "../renders/default_renders.any"
 
 但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到场文 `$include` 件中引用这些文件的语句中。
 
-将文件从默 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 认AEM复制为云服务调度程序配置，并复制到该位置。
+将文件从 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 默认AEM复制为Cloud Service调度程序配置到该位置。
 
 在每个场文件中，替换任何筛选器都包含如下语句：
 
@@ -661,7 +661,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### 通过运行验证程序检查您的状态
 
-使用子命令将AEM作为Cloud Service调度程序验证程序运行在您的目 `dispatcher` 录中：
+使用子命令将AEM作为Cloud Service调度程序validator运行在您的目 `dispatcher` 录中：
 
 ```
 $ validator dispatcher .
@@ -675,7 +675,7 @@ $ validator dispatcher .
 
 ### 使用本地部署测试配置（需要安装Docker）
 
-将AEM中 `docker_run.sh` 的脚本用作Cloud Service Dispatcher工具，您可以测试配置是否不包含任何只显示部署的其他错误：
+使用AEM中 `docker_run.sh` 的脚本作为Cloud ServiceDispatcher工具，您可以测试配置是否不包含任何只会显示部署的其他错误：
 
 ### 第1步： 使用验证程序生成部署信息
 
@@ -699,4 +699,4 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 恭喜！ 如果验证程序不再报告任何问题，且Docker容器开始未出现任何故障或警告，您已准备好将配置移至git存储库 `dispatcher/src` 的子目录。
 
-**使用AMS Dispatcher配置版本1的客户应联系客户支持，帮助他们从版本1迁移到版本2，以便遵循上述说明。**
+**使用AMSDispatcher配置版本1的客户应联系客户支持，帮助他们从版本1迁移到版本2，以便遵循上述说明。**
