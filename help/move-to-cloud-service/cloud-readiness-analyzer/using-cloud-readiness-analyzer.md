@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 0%
 
 ## 使用云就绪性分析器的重要注意事项 {#imp-considerations}
 
-请按照以下部分了解运行云就绪性分析器(CRA)时的重要注意事项：
+请按照以下部分了解运行云就绪性分析器(CRA)的重要注意事项：
 
 * CRA报告是使用Adobe Experience Manager(AEM)模式检测器的输 [出构建的](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRA使用的图案检测器版本包含在CRA安装包中。
 
-* CRA只能由管理员用 **户** 或管理员中的用 **户运行**。
+* CRA只能由管理员用户 **或** “管理员”组中的 **用户运** 行。
 
 * 版本6.1及更高版本的AEM实例支持CRA。
 
 * CRA可以在任何环境上运行，但它更喜欢在舞台 *环境运行* 。
 
    >[!NOTE]
-   >为避免对业务关键型实例产生影响，建议在自定义、配置、内容和用户应 *用程序方面* ，在尽可能接近 *“生产* ”环境的创作环境上运行CRA。 或者，也可以在生产作者环境的克隆上 *运行* 。
+   >为避免对业务关键型实例产生影响，建议您在自定义、配置、内容和用户应用程序 *方面* ，在与生产 *环境尽可能接近的创作环境上运行* CRA。 或者，也可以在生产作者环境的克隆上 *运行* 。
 
 * CRA报告内容的生成可能需要相当长的时间，从几分钟到几小时。 所需的时间量高度取决于AEM存储库内容的大小和性质、AEM版本以及其他因素。
 
@@ -55,7 +55,7 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. 生成并显示CRA报告后，您可以选择以逗号分隔值(CSV)下载报告。 单击 **CSV** 以下载以逗号分隔值(CSV)格式的完整CRA报告，如下图所示。
+1. 生成并显示CRA报告后，您可以选择通过单击CSV以逗号分隔值(CSV)格式下载 **报**&#x200B;告，如下图所示。
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -176,7 +176,7 @@ HTTP接口可用于多种方法。
 缓存生命周期值作为以下存储库 `maxCacheAge` 节点上的属性进行存储：
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-此属性的值是缓存生命周期（以秒为单位）。 管理员可以使用CRXDE Lite调整缓存生命周期。
+此属性的值是缓存生命周期（以秒为单位）。 管理员可以使用CRX/DE Lite调整缓存生命周期。
 
 
 
