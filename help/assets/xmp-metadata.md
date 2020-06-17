@@ -1,12 +1,12 @@
 ---
 title: XMP 元数据
-description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 AEM将其用作元数据的创建、处理和交换的标准格式。
+description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by AEM as a standardized format for creation, processing, and interchange of metadata.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 42%
+source-wordcount: '1143'
+ht-degree: 54%
 
 ---
 
@@ -17,9 +17,9 @@ XMP（可扩展元数据平台）是 AEM 资产用来进行所有元数据管理
 
 Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
 
-## XMP概述和生态系统 {#xmp-ecosystem}
+## XMP overview and ecosystem {#xmp-ecosystem}
 
-AEM资产本身支持XMP元数据标准。 XMP是处理和存储数字资产中标准化的专有元数据的标准。 XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
+AEM Assets本机支持XMP元数据标准。 XMP是处理和存储数字资产中标准化的专有元数据的标准。 XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
 
 例如，专业生产人士可以使用 Adobe 应用程序中内置的 XMP 支持，在多种文件格式之间传递信息。AEM 资产存储库会提取 XMP 元数据，用它来管理内容生命周期，并提供创建自动化工作流的能力。
 
@@ -72,9 +72,9 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
-此XMP回写功能可在Adobe Experience Manager(AEM)资产中将资产元数据更改复制到资产的演绎版。
+此Adobe Experience Manager(AEM)资产中的XMP回写功能可将资产元数据更改复制到资产的演绎版。
 
-当您从AEM资产中更改资产的元数据或在上传资产时，更改最初存储在CRXDE的资产节点中。
+当您从AEM Assets内或在上传资产时更改资产的元数据时，更改最初存储在CRXDE的资产节点内。
 
 XMP回写功能会将元数据更改传播到资产的所有或特定演绎版。
 
@@ -86,7 +86,7 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 
 ![metadata_stored](assets/metadata_stored.png)
 
-但是，AEM资产不会自动将任何元数据更改传播到资产的演绎版。
+但是，AEM Assets不会自动将任何元数据更改传播到资产的演绎版。
 
 利用XMP回写功能，您可以将元数据更改传播到资产的所有演绎版或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
 
@@ -103,7 +103,7 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 
 ### 为特定再现启用XMP回写 {#enable-xmp-writeback-for-specific-renditions}
 
-要让XMP回写功能将元数据更改传播到选定的演绎版，请将这些演绎版指定到DAM元数据回写工作流 [!UICONTROL 的“XMP回写流程] ”工作流步骤。 默认情况下，此步骤配置为原始再现。
+To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. 默认情况下，此步骤配置为原始再现。
 
 要使用XMP回写功能将元数据传播到再现缩略图140.100.png和319.319.png，请执行这些步骤。
 
@@ -130,29 +130,33 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 >For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 -->
 
-### 筛选XMP元数据 {#filtering-xmp-metadata}
+<!--
+TBD: The method has changed in AEMaaCS. Find the new ones.
 
-AEM资产支持筛选从资产二进制文件读取并在摄取资产时存储在JCR中的XMP元数据的属性／节点。 可以通过阻止的列表和允许的列表进行过滤。
+### Filter XMP metadata {#filtering-xmp-metadata}
 
-使用阻止的列表进行筛选可导入除为排除指定的属性外的所有XMP元数据属性。 但是，对于具有大量XMP元数据（例如，1000个节点具有10,000个属性）的资产类型（如INDD文件），要筛选的节点名称并不总是预先知道的。 如果使用阻止的列表进行筛选允许导入大量具有大量XMP元数据的资产，则AEM实例／群集可能会遇到稳定性问题，例如阻塞的观察队列。
+AEM Assets supports filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested. Filtering is possible via a blocked list and an allowed list.
 
-通过允许的列表筛选XMP元数据可通过允许您定义要导入的XMP属性来解决此问题。 这样，将忽略其他／未知的XMP属性。 为了向后兼容，您可以向使用被阻止列表的过滤器添加一些这些属性。
+Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the AEM instance/cluster can encounter stability issues, for example clogged observation queues.
+
+Filtering of XMP metadata via allowed list resolves this issue by letting you define the XMP properties to be imported. This way, other/unknown XMP properties are ignored. For backward compatibility, you can add some of these properties to the filter that uses a blocked list.
 
 >[!NOTE]
 >
->筛选仅适用于资产二进制文件中从XMP源派生的属性。 对于从非XMP源（如EXIF和IPTC格式）派生的属性，过滤不起作用。 例如，资产创建日期存储在以EXIF TIFF命名 `CreateDate` 的属性中。 AEM在名为的元数据字段中讲述此值 `exif:DateTimeOriginal`。 由于源是非XMP源，因此过滤不适用于此属性。
+>Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. AEM stories this value in the metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
 
-1. 要打开Configuration Manager，请访 `https://[aem_server]:[port]/system/console/configMgr`问。
-1. 打开 **[!UICONTROL Adobe CQ DAM XmpFilter配置]** 。
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
 1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
 1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >默认 **[!UICONTROL 情况下，将黑名单应用]** 到XMP属性选项处于选中状态。 换言之，默认情况下启用使用阻止的列表进行筛选。 要禁用此类过滤，请取消选 **[!UICONTROL 择“将黑名单应用到XMP属性]** ”选项。
+   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
-1. 保存更改。
+1. Save the changes.
+-->
 
 >[!MORELIKETHIS]
 >
