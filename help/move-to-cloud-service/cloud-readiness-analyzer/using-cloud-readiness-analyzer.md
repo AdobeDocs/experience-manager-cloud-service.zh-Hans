@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
 ## 查看云就绪性分析器报告 {#viewing-report}
 
-### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
 可查看本节以了解如何视图云就绪性分析器报告：
 
@@ -64,7 +64,7 @@ Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 �
 
 ### Adobe Experience Manager6.2和6.1 {#aem-specific-versions}
 
-Cloud Readiness Analyzer在Adobe Experience Manager6.2中仅限于生成和下载CSV报告的链接。
+云就绪性分析器工具在Adobe Experience Manager6.2中仅限于生成和下载CSV报告的链接。
 
 对于Adobe Experience Manager6.1，该工具不起作用，只能使用HTTP接口。
 
@@ -77,11 +77,11 @@ Cloud Readiness Analyzer在Adobe Experience Manager6.2中仅限于生成和下�
 
 报告的格式为：
 
-* **报告概述**: 有关报告本身的信息和以下信息：
-   * *报告时间*: 生成报告内容并首次提供时。
-   * *到期时间*: 报告内容缓存将过期的时间。
-   * *生成时段*: 报表内容生成过程所花费的时间。
-   * *查找计数*: 报告所载调查结果总数。
+* **报告概述**: 有关报告本身的信息，包括以下信息：
+   * **报告时间**: 生成报告内容并首次提供时。
+   * **到期时间**: 报告内容缓存将过期的时间。
+   * **生成时段**: 报表内容生成过程所花费的时间。
+   * **查找计数**: 报告所载调查结果总数。
 * **系统概述**: 关于运行CRA的AEM系统的信息。
 * **查找类别**: 多个部分，每个部分都处理同一类别的一个或多个发现。 每个部分包括： 类别名称、子类型、查找计数和重要性、摘要、指向类别文档的链接以及单个查找信息。
 
