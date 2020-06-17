@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ HTTP接口可用于多种方法。
 
 发出请求后，客户端无需保持活动状态即可生成报告。 报表生成可以使用一个客户端使用HTTP GET请求启动，生成报表后，可通过另一个客户端的缓存或AEM用户界面中的CSV工具查看。
 
-### 响应(#http-responses)
+### 答复 {#http-responses}
 
 可以使用以下响应值：
 
