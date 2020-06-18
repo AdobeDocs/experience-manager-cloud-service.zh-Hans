@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 Cloud Readiness Analyzer可从软件分发门户以zip文件的形式下载。 您可以通过源Adobe Experience Manager(AEM)实例上的包管理器安装该包。
 
 >[!NOTE]
->从软件分发门户下载云就绪性分析器。
+>从软件分发门户下载云就绪 [性分析器](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 。
 
 ## 查看云就绪性分析器报告 {#viewing-report}
 
