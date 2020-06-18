@@ -2,9 +2,9 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 请按照以下部分了解使用内容传输工具的指南和最佳实践：
 
-* 最好先在存储库上运行压缩、数据存储一致性检查，以发现潜在问题，并减少存储库中存在的垃圾。
+* 建议在源存储库 [上运行修订](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html)[清理和数据存储一致性检](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 查，以确 **定潜在问题** ，并减小存储库的大小。
 
 * 如果将AEM Cloud作者内容投放网络(CDN)配置配置为包含IP的白名单，则应确保将源环境IP也添加到allowlist中，以便源环境和AEM Cloud环境可以相互通信。
 
