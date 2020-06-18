@@ -2,9 +2,9 @@
 title: 部署到 AEM 云服务
 description: '部署到 AEM 云服务 '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
 workflow-type: tm+mt
-source-wordcount: '3512'
+source-wordcount: '3523'
 ht-degree: 1%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-与AEM On Premise和Managed Services解决方案相比，AEM中代码开发的基础与云服务相似。 开发人员编写代码并在本地测试它，然后将它作为云服务环境推送到远程AEM。 Cloud Manager是Managed Services的可选内容投放工具，是必需的。 现在，这是将代码作为云服务环境部署到AEM的唯一机制。
+与AEM On Premise和Managed Services解决方案相比，AEM中代码开发的基础与Cloud Service相似。 开发人员编写代码并在本地测试它，然后将它作为Cloud Service环境推送到远程AEM。 Cloud Manager是Managed Services的可选内容投放工具，是必需的。 现在，这是将代码作为Cloud Service环境部署到AEM的唯一机制。
 
 AEM版本的更新始终是一个单独的部署事件，而不是推送自定义代码。 以其他方式查看，自定义代码版本应针对生产中的AEM版本进行测试，因为它将部署在顶部。 此后发生的AEM版本更新（与现在的Managed Services相比将频繁发生）会自动应用。 它们旨在向后兼容已部署的客户代码。
 
-以下视频概括介绍了如何将代码作为云服务部署到AEM:
+以下视频概括介绍了如何将代码作为Cloud Service部署到AEM:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
-本文档的其余部分将介绍开发人员如何调整其实践，以便将AEM作为云服务的版本更新和客户更新来使用。
+本文档的其余部分将介绍开发人员如何调整其做法，以便将AEM作为Cloud Service的版本更新和客户更新来使用。
 
 >[!NOTE]
 >建议具有现有代码库的客户完成AEM文档中所述的存储库重 [组练习](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)。
@@ -38,7 +38,7 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 
 将定期发布功能，重点介绍功能添加和增强功能，与日常版本相比，这些功能添加和增强将对用户体验产生更大影响。 功能发布不是由部署大型更改集触发的，而是由翻转发布切换触发的，它激活了在日常更新中累积的代码。
 
-运行状况检查用于监视应用程序的运行状况。 如果在AEM作为云服务更新期间这些检查失败，则该环境的发行版将不会继续，Adobe将调查更新为何导致此意外行为。
+运行状况检查用于监视应用程序的运行状况。 如果在AEM作为Cloud Service更新期间这些检查失败，则该环境的发行版将不继续，Adobe将调查更新为何导致此意外行为。
 
 ### 复合节点存储 {#composite-node-store}
 
@@ -48,22 +48,22 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 
 ### 根据正确的AEM版本进行编码 {#coding-against-the-right-aem-version}
 
-对于以前的AEM解决方案，最新AEM版本更改频繁（大约每年每季度提供服务包），客户将自行将生产实例更新到最新的快速启动，并引用API Jar。 但是，AEM作为云服务应用程序会更频繁地自动更新至AEM的最新版本，因此内部发行版的自定义代码应该针对那些较新的AEM界面构建。
+对于以前的AEM解决方案，最新AEM版本更改频繁（大约每年每季度提供服务包），客户将自行将生产实例更新到最新的快速启动，并引用API Jar。 但是，AEM作为Cloud Service应用程序会更频繁地自动更新至AEM的最新版本，因此内部发行版的自定义代码应该针对那些较新的AEM界面构建。
 
 与现有非云AEM版本一样，将支持基于特定快速入门的本地脱机开发，并且在大多数情况下，它将是进行调试的首选工具。
 
 >[!NOTE]
 >与Adobe Cloud相比，应用程序在本地计算机上的行为方式有细微的操作差异。 在本地开发过程中，这些架构差异必须得到尊重，并可能导致在云基础架构上部署时出现不同的行为。 由于这些差异，在生产中推出新的自定义代码之前，必须对开发和阶段环境执行详尽的测试。
 
-为了为内部版本开发自定义代码，应下载并安 [装AEM作为云服务](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) SDK的相关版本。 有关将AEM用作云服务调度程序工具的其他信息，请参 [阅此页](/help/implementing/dispatcher/overview.md)。
+要为内部版本开发自定义代码，应下载并安 [装作为Cloud ServiceSDK的](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) AEM相关版本。 有关将AEM用作Cloud ServiceDispatcher工具的其他信息，请参 [阅此页](/help/implementing/dispatcher/overview.md)。
 
 ## 通过云管理器和包管理器部署内容包 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### 通过Cloud Manager进行部署 {#deployments-via-cloud-manager}
 
-客户通过Cloud Manager将自定义代码部署到云环境。 应该指出，Cloud Manager将本地组合的内容包转换为符合Sling功能模型的伪像，即在云环境中运行时，AEM作为云服务应用程序的描述。 因此，在查看云环境上的包管理器中的包时，名称将包括“cp2fm”，转换的包将删除所有元数据。 它们不能与之交互，这意味着它们不能下载、复制或打开。 有关转换器的详细文档可 [在此处找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
+客户通过Cloud Manager将自定义代码部署到云环境。 应该指出，Cloud Manager将本地组合的内容包转换为符合Sling特征模型的伪像，即在云环境中运行AEM时，将AEM描述为Cloud Service应用程序的方式。 因此，在查看云环境上的包管理器中的包时，名称将包括“cp2fm”，转换的包将删除所有元数据。 它们不能与之交互，这意味着它们不能下载、复制或打开。 有关转换器的详细文档可 [在此处找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
 
-为AEM作为云服务应用程序编写的内容包必须在不可变内容和可变内容之间保持清晰的隔离，云管理器将通过失败生成来强制执行该内容，并输出如下消息：
+为AEM作为Cloud Service应用程序编写的内容包必须在不可变内容和可变内容之间保持清晰的隔离，云管理器将通过失败生成来强制执行该内容，并输出如下消息：
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -84,7 +84,7 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 * 使用AEM Web控制台的配置管理器对开发人员的本地AEM环境进行必要的更改，然后将结果导出到本地文件系统上的AEM项目
 * 在本地文件系统的AEM项目中手动创建OSGI配置，该配置将引用AEM控制台的配置管理器以获取属性名称。
 
-有关OSGi配置的更多信息， [请参阅将OSGi配置为云服务](/help/implementing/deploying/configuring-osgi.md)。
+有关OSGi配置的更多信息，请 [参阅将OSGi配置为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
 
 ## 可变内容 {#mutable-content}
 
@@ -121,7 +121,7 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 
 此外，在应用可变内容包更改后，没有回滚这些更改的机制。 如果客户检测到问题，他们可以选择在下一个代码版本中修复它，或者作为最后手段，将整个系统恢复到部署前的某个时间点。
 
-必须验证包含的任何第三方包是否与AEM兼容，否则其包含将导致部署失败。
+必须验证包含的任何第三方包是否与AEM兼容，否则，其包含将导致部署失败。
 
 如上所述，具有现有代码库的客户应符合AEM文档中所述的存储库重 [组练习](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)。
 
@@ -150,7 +150,7 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 
 要创建重新指向语句，请按照以下过程操作：
 
-1. 在项目的配置文 `org.apache.sling.jcr.repoinit.RepositoryInitializer` 件夹中添加PID的OSGi配置
+1. 在项目的配置文件夹 `org.apache.sling.jcr.repoinit.RepositoryInitializer` 中添加工厂PID的OSGi配置。 为配置使用描述性名 **称，如org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**。
 1. 将重新指向语句添加到配置的脚本属性。 语法和选项在Sling文档中 [有说明](https://sling.apache.org/documentation/bundles/repository-initialization.html)。 请注意，应在父级文件夹的子文件夹之前显式创建父级文件夹。 例如，在之前、之 `/content` 前显 `/content/myfolder`式创建 `/content/myfolder/mysubfolder`。 对于在低级结构上设置的ACL，建议将其设置在更高级别上，并使用限制 `rep:glob` 条件。  For example `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. 在运行时在本地开发环境上验证。
 
@@ -172,7 +172,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 可变内容包的包管理器“一次性” {#package-manager-oneoffs-for-mutable-content-packages}
 
-在某些情况下，内容包应作为“一次性”安装。 例如，将特定内容从生产导入到暂存，以调试生产问题。 对于这些情形，包管理器可以在AEM中用作云服务环境。
+在某些情况下，内容包应作为“一次性”安装。 例如，将特定内容从生产导入到暂存，以调试生产问题。 对于这些情形，包管理器可以在AEM中用作Cloud Service环境。
 
 由于包管理器是一个运行时概念，因此无法将内容或代码安装到不可改变的存储库中，因此这些内容包只应由可变内容(主要或 `/content` 主要 `/conf`)组成。 如果内容包包含混合的内容（可变内容和不可变内容），则只会安装可变内容。
 
@@ -195,7 +195,7 @@ above appears to be internal, to confirm with Brian -->
 
 <!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
-任何包含的第三方包都必须作为本文所述的云服务编码和打包指导原则遵守AEM，否则，其包含将导致部署失败。
+任何包含的第三方包都必须作为本文所述的Cloud Service服务编码和打包准则遵守AEM，否则，其包含将导致部署失败。
 
 以下Maven POM XML代码片断展示了如何通过 **filevault-package-maven-plugin** Maven插件配置将第三方包嵌入项目的“容器”包中(通常名为 **** &#39;all&#39;)。
 
@@ -258,11 +258,11 @@ above appears to be internal, to confirm with Brian -->
 
 发布机制与AEM复制Java [API向后兼容](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)。
 
-要使用云就绪型AEM快速启动开发和测试复制，需要将经典复制功能与作者／发布设置结合使用。 如果已为云删除AEM作者的UI入口点，则用户将转到 `http://localhost:4502/etc/replication` 进行配置。
+要使用云就绪型AEM快速启动开发和测试复制，需要将经典复制功能与作者／发布设置结合使用。 如果已为云删除AEM Author上的UI入口点，则用户将转 `http://localhost:4502/etc/replication` 到配置。
 
 ## 滚动部署的向后兼容代码 {#backwards-compatible-code-for-rolling-deployments}
 
-如上所述，AEM作为云服务的滚动部署策略意味着旧版本和新版本可能同时运行。 因此，请注意代码更改，这些更改与仍在运行的旧AEM版本不向后兼容。
+如上所述，AEM作为Cloud Service的滚动部署策略意味着旧版本和新版本可能同时运行。 因此，请注意代码更改，这些更改与仍在运行的旧AEM版本不向后兼容。
 
 此外，应测试旧版本与回滚事件中新版本应用的任何新的可变内容结构的兼容性，因为不会删除可变内容。
 
@@ -282,9 +282,9 @@ above appears to be internal, to confirm with Brian -->
 
 在现有AEM解决方案中，客户可以选择以任意运行模式运行实例，并将OSGI配置或将OSGI捆绑包安装到这些特定实例。 通常定义的运行模式 *包括服务* （作者和发布）和环境(dev、stage、prod)。
 
-另一方面，AEM作为云服务，对于哪些运行模式可用以及如何将OSGI捆绑包和OSGI配置映射到这些模式，则更加有见地：
+另一方面，AEM作为Cloud Service，对于哪些运行模式可用以及如何将OSGI捆绑和OSGI配置映射到它们，则更加有见地：
 
-* OSGI配置运行模式必须引用dev、stage、prod for the环境或author, publish for the service。 支持组合 `<service>.<environment_type>` ，但必须按此特定顺序（例如或）使用这 `author.dev` 些组 `publish.prod`合。 OSGI令牌应直接从代码引用，而不 `getRunModes` 是使用方法，该方法在运行时不再 `environment_type` 包含。 有关详细信息，请 [参阅将OSGi配置为AEM云服务](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI配置运行模式必须引用dev、stage、prod for the环境或author, publish for the service。 支持组合 `<service>.<environment_type>` ，但必须按此特定顺序（例如或）使用这 `author.dev` 些组 `publish.prod`合。 OSGI令牌应直接从代码引用，而不 `getRunModes` 是使用方法，该方法在运行时不再 `environment_type` 包含。 有关详细信息，请 [参阅将OSGi配置为AEMCloud Service](/help/implementing/deploying/configuring-osgi.md)。
 * OSGI捆绑包运行模式仅限于服务（作者、发布）。 每运行模式OSGI包应安装在内容包中，位于或 `install/author` 下 `install/publish`。
 
 与现有AEM解决方案一样，无法使用运行模式仅为特定环境或服务安装内容。 如果希望为未在舞台或生产上的数据或HTML植入开发环境，可使用包管理器。
@@ -292,11 +292,11 @@ above appears to be internal, to confirm with Brian -->
 支持的运行模式配置有：
 
 * **config** (*默认值，适用于所有AEM服务*)
-* **config.author** (适&#x200B;*用于所有AEM作者服务*)
+* **config.author** (适&#x200B;*用于所有AEM Author服务*)
 * **config.author.dev** (适&#x200B;*用于AEM Dev作者服务*)
 * **config.author.stage** (适&#x200B;*用于AEM Staging Author服务*)
 * **config.author.prod** (*适用于AEM Production Author服务*)
-* **config.publish** (*适用于AEM发布服务*)
+* **config.publish** (适&#x200B;*用于AEM Publish服务*)
 * **config.publish.dev** (适&#x200B;*用于AEM Dev发布服务*)
 * **config.publish.stage** (*适用于AEM Staging Publish服务*)
 * **config.publish.prod** (*适用于AEM Production Publish服务*)
