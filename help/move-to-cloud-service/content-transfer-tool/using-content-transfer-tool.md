@@ -2,7 +2,7 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -36,6 +36,8 @@ ht-degree: 1%
 >从软件分发门户下载内 [容传输](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 工具。
 
 ## 运行内容传输工具 {#running-tool}
+
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 请按照本节的说明，了解如何使用内容传输工具将内容作为Cloud Service（作者／发布）迁移到AEM:
 
