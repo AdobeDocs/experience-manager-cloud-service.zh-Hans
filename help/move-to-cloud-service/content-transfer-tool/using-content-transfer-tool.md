@@ -2,7 +2,7 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 * 如果您使用沙 *箱环境*，请确保环境已升级到2020年6月10日版本或更高版本。 如果您使用的是 *生产环境*，它会自动更新。
 
-* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的云服务实例中的AEM管理员组。 无权限用户将无法检索访问令牌以使用内容传输工具。
+* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的Cloud Service实例中的AEM管理员组。 无权限用户将无法检索访问令牌以使用内容传输工具。
 
 * 在提取阶段，内容传输工具将在活动AEM源实例上执行。
 
@@ -33,13 +33,13 @@ ht-degree: 1%
 内容传输工具可从软件分发门户下载为zip文件（内容传输工具v1.0.0）。 您可以通过源Adobe Experience Manager(AEM)实例上的包管理器安装该包。
 
 >[!NOTE]
->从软件分发门户下载内 [容传输工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
+>从软件分发门户下载内 [容传输](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 工具。
 
 ## 运行内容传输工具 {#running-tool}
 
-可查看本节以了解如何使用内容传输工具将内容作为云服务（作者／发布）迁移到AEM:
+请按照本节的说明，了解如何使用内容传输工具将内容作为Cloud Service（作者／发布）迁移到AEM:
 
-1. 选择Adobe Experience Manager并导航到工具->操 **作** ->内 **容传输**。
+1. 选择Adobe Experience Manager并导航到工具-> **操作** -> **内容传输**。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
       >[!NOTE]
       >迁移集名称不允许使用特殊字符。
 
-   1. **云服务配置**: 输入目标AEM作为云服务作者URL。
+   1. **Cloud Service配置**: 输入目标AEM作为Cloud Service作者URL。
 
       >[!NOTE]
       >在内容传输活动，您最多一次可以创建和维护四个迁移集。
@@ -68,7 +68,7 @@ ht-degree: 1%
    1. **访问令牌**: 输入访问令牌。
 
       >[!NOTE]
-      >您可以通过导航到，从创作实例检索访问令牌 `/libs/granite/migration/token.json`。 从云服务作者实例检索访问令牌。
+      >您可以通过导航到，从创作实例检索访问令牌 `/libs/granite/migration/token.json`。 从访问令牌作者实例检索Cloud Service。
 
    1. **参数**: 选择以下参数以创建迁移集：
 
@@ -132,7 +132,7 @@ ht-degree: 1%
 内容传输工具具有支持不同内容的上调功能，在该功能中，仅传输自上一内容传输活动以来所做的更改。
 
 >[!NOTE]
->初始内容传输后，建议在云服务上线之前，对不同内容进行频繁的补充，以缩短最终差异内容传输的内容冻结时间。
+>在初始内容传输后，建议进行频繁的差异内容补充，以缩短最终差异内容传输的内容冻结期，然后再开始Cloud Service。
 
 完成提取过程后，您可以使用向上提取方法传输增量内容。 按照以下步骤操作：
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 内容传输工具具有支持不同内容 *的自上而下的功* 能，在该功能中，仅传输自上一内容传输活动以来所做的更改。
 
 >[!NOTE]
->初始内容传输后，建议在云服务上线之前，对不同内容进行频繁的补充，以缩短最终差异内容传输的内容冻结时间。
+>在初始内容传输后，建议进行频繁的差异内容补充，以缩短最终差异内容传输的内容冻结期，然后再开始Cloud Service。
 
 完成摄取过程后，您可以使用增量内容，方法为从上而上摄取。 按照以下步骤操作：
 
