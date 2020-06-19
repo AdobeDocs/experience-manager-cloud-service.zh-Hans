@@ -1,9 +1,9 @@
 ---
 title: XMP 元数据
-description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by AEM as a standardized format for creation, processing, and interchange of metadata.
+description: 了解用于元数据管理的XMP(可扩展元数据Platform)元数据标准。 AEM将其用作元数据的创建、处理和交换的标准格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 54%
@@ -17,7 +17,7 @@ XMP（可扩展元数据平台）是 AEM 资产用来进行所有元数据管理
 
 Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
 
-## XMP overview and ecosystem {#xmp-ecosystem}
+## XMP概述和生态系统 {#xmp-ecosystem}
 
 AEM Assets本机支持XMP元数据标准。 XMP是处理和存储数字资产中标准化的专有元数据的标准。 XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
 
@@ -103,7 +103,7 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 
 ### 为特定再现启用XMP回写 {#enable-xmp-writeback-for-specific-renditions}
 
-To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. 默认情况下，此步骤配置为原始再现。
+要让XMP回写功能将元数据更改传播到选定的演绎版，请将这些演绎版指定到DAM元数据回写工作流 [!UICONTROL 的“XMP回写流程] ”工作流步骤。 默认情况下，此步骤配置为原始再现。
 
 要使用XMP回写功能将元数据传播到再现缩略图140.100.png和319.319.png，请执行这些步骤。
 
@@ -121,42 +121,6 @@ To let the XMP write-back feature propagate metadata changes to select rendition
 1. 保存工作流。
 
 元数据更改将传播到资产的演绎版缩略图140.100.png和缩略图319.319.png，而不是其他演绎版。
-
-<!--
->[!NOTE]
->
->For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
->
->For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
--->
-
-<!--
-TBD: The method has changed in AEMaaCS. Find the new ones.
-
-### Filter XMP metadata {#filtering-xmp-metadata}
-
-AEM Assets supports filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested. Filtering is possible via a blocked list and an allowed list.
-
-Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the AEM instance/cluster can encounter stability issues, for example clogged observation queues.
-
-Filtering of XMP metadata via allowed list resolves this issue by letting you define the XMP properties to be imported. This way, other/unknown XMP properties are ignored. For backward compatibility, you can add some of these properties to the filter that uses a blocked list.
-
->[!NOTE]
->
->Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. AEM stories this value in the metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
-
-1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
-
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
-
-   >[!NOTE]
-   >
-   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
-
-1. Save the changes.
--->
 
 >[!MORELIKETHIS]
 >
