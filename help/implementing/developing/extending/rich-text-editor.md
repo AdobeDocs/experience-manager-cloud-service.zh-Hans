@@ -1,11 +1,11 @@
 ---
-title: 将富文本编辑器配置为在Adobe Experience Manager中将内容作为云服务进行创作。
-description: 将富文本编辑器配置为在Adobe Experience Manager中将内容作为云服务进行创作。
+title: 将富文本编辑器配置为将Adobe Experience Manager中的内容作为Cloud Service。
+description: 将富文本编辑器配置为将Adobe Experience Manager中的内容作为Cloud Service。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-富文本编辑器(RTE)为作者提供了各种功能来编辑文本内容。 提供图标、选择框、工具栏和菜单，实现所见即所得的文本编辑体验。 管理员配置RTE以启用、禁用和扩展创作组件中的可用功能。 要了解如何使用RTE功能进行创作，请参 [阅使用富文本编辑器进行创作](rich-text-editor.md)。 了解作者如 [何使用RTE创作](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) Web内容。
+富文本编辑器(RTE)为作者提供了各种功能来编辑文本内容。 提供图标、选择框、工具栏和菜单，实现所见即所得的文本编辑体验。 管理员配置RTE以启用、禁用和扩展创作组件中的可用功能。 了解作者如 [何使用RTE创作](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) Web内容。
 
 下面列出了RTE配置它所需的概念和步骤。
 
@@ -31,7 +31,7 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 *图： 富文本编辑器工具栏，并启用所有可用选项。*
 
-工具栏提供了“所见即所得”创作体验的选项。 Experience Manager管理员可以配置界面工具栏中的可用选项。 默认情况下，Experience Manager中提供一整套编辑选项。 开发人员可以自定义Experience Manager以添加更多编辑选项。
+工具栏提供了“所见即所得”创作体验的选项。 Experience Manager管理员可以配置界面工具栏中提供的选项。 默认情况下，Experience Manager中提供一整套编辑选项。 开发人员可以自定义Experience Manager以添加更多编辑选项。
 
 ## 各种编辑模式 {#editingmodes}
 
@@ -58,7 +58,7 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 ### Full-screen editing {#full-screen-editing}
 
-Experience Manager组件可以全屏视图打开，从而隐藏页面内容并占据可用屏幕。 考虑对内联编辑的详细版本进行全屏编辑，因为它优惠的编辑选项最多。 在使用内联编辑模 ![式时，可以从紧凑](assets/rte_fullscreen.png)工具栏中单击rte_fullscreen来打开它。
+Experience Manager组件可以以全屏视图打开，从而隐藏页面内容并占据可用屏幕。 考虑对内联编辑的详细版本进行全屏编辑，因为它优惠的编辑选项最多。 在使用内联编辑模 ![式时，可以从紧凑](assets/rte_fullscreen.png)工具栏中单击rte_fullscreen来打开它。
 
 在对话框全屏模式和详细的RTE工具栏中，对话框中的可用选项和组件也可用。 它仅适用于包含RTE和其他组件的对话框。
 
@@ -143,7 +143,7 @@ RTE的基本功能由特定于相应插件的节点上 `features` 的属性值�
 
    要防止出现这种情况，请 `customStart` 将属 `True`性设置为并将“rte-开始”事件触发为开始RTE编辑。 当此属性为“true”时，默认行为(单击时的rte开始)不起作用。
 
-* `customStart`: 将在RTE节点上定义的此布尔属 `True`性设置为，以通过触发开始来控制何时事件RTE `rte-start`。
+* `customStart`: 将在RTE节点上定义的此布尔属 `True`性设置为，通过触发开始控制何时事件RTE `rte-start`。
 
 * `rte-start`: 在RTE事件编 `contenteditable-div` 辑RTE时触发此开始。 仅当设置 `customStart` 为True时，才有效。
 
@@ -170,7 +170,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 ## 配置RTE工具栏 {#dialogfullscreen}
 
-Experience Manager允许您针对不同的编辑模式以不同方式配置富文本编辑器的界面。 默认设置如下所示。 您可以根据要求覆盖这些默认值。 您仅可自定义要提供给作者的工具栏功能。 您无需指定所有工具栏配置。
+Experience Manager允许您针对不同的编辑模式以不同方式为富文本编辑器配置界面。 默认设置如下所示。 您可以根据要求覆盖这些默认值。 您仅可自定义要提供给作者的工具栏功能。 您无需指定所有工具栏配置。
 
 要配置工具栏，请 `dialogFullScreen`使用以下示例配置。
 
@@ -268,7 +268,7 @@ RTE流中从用户界面配置到内容策略的下游的可用选项。
 
 ## 已知限制 {#known-limitations}
 
-Experience Manager RTE功能有以下限制：
+Experience ManagerRTE功能有以下限制：
 
 * RTE功能仅在Experience Manager组件对话框中受支持。 向导或基础表单不支持RTE。
 
