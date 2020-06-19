@@ -3,7 +3,7 @@ title: 了解资产微型服务如何处理云中的数字资产
 description: 使用云本机、可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 3%
@@ -13,16 +13,11 @@ ht-degree: 3%
 
 # 资产微型服务的资产摄取和处理概述 {#asset-microservices-overview}
 
-<!--
-First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
-TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
--->
-
-Adobe Experience Manager作为云服务，提供一种云本机方法来利用Experience Manager应用程序和功能。 此新架构的一个关键元素是资产摄取和处理，由资产微型服务提供支持。 资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 云本机资产微服务的主要优势包括：
+Adobe Experience Manager作为Cloud Service，提供了一种云本机方法来利用Experience Manager应用程序和功能。 此新架构的一个关键元素是资产摄取和处理，由资产微型服务提供支持。 资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 云本机资产微服务的主要优势包括：
 
 * 可扩展的体系结构允许对资源密集型操作进行无缝处理。
 * 高效的索引和文本提取不会影响Experience Manager环境的性能。
-* 最大限度地减少工作流在Experience Manager环境中处理资产处理的需求。 这可以释放资源，最大限度地减少Experience Manager的负载，并提供可扩展性。
+* 将工作流处理Experience Manager环境中资产处理的需求降至最低。 这将释放资源，最大限度地减少Experience Manager负载，并提供可伸缩性。
 * 提高了资产处理的恢复力。 处理非典型文件时的潜在问题（如损坏的文件或超大文件）不再影响部署的性能。
 * 简化了管理员的资产处理配置。
 * 资产处理设置由Adobe管理和维护，以提供最为人知的配置，用于处理各种文件类型的演绎版、元数据和文本提取
@@ -44,18 +39,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 使用资产微型服务获取和处理的关键步骤是：
 
-* 客户端（如Web浏览器或Adobe Asset Link）会向Experience Manager发送上传请求，并将二进制文件直接上传到二进制云开始。
-* 直接二进制上传完成后，客户端将通知Experience Manager。
-* Experience Manager会向资产微型服务发送处理请求。 请求内容取决于Experience Manager中指定的处理用户档案配置（要生成哪些再现）。
+* 客户端（如Web浏览器或Adobe Asset Link）会向Experience Manager和开始发送上传请求，将二进制文件直接上传到二进制云存储。
+* 直接二进制上传完成时，客户端将通知Experience Manager。
+* Experience Manager向资产微服务发送处理请求。 请求内容取决于指定的Experience Manager中的处理用户档案配置，该中要生成哪些再现。
 * Assets microservices后端接收请求，根据请求将其分派到一个或多个microservices。 每个微服务直接从二进制云存储中访问原始二进制。
 * 处理结果（如演绎版）存储在二进制云存储中。
-* Experience Manager会收到通知，该处理已完成，并有指向生成的二进制文件（演绎版）的直接指针。 Experience Manager中可以为上传的资产提供生成的演绎版。
+* Experience Manager会收到通知，指向生成的二进制文件（演绎版）的直接指针已完成处理。 生成的演绎版以Experience Manager形式提供给已上传的资产。
 
 这是资产获取和处理的基本流程。 如果已配置，Experience Manager还可以开始自定义工作流模型以对资产进行后处理。 例如，执行特定于您的环境的自定义步骤，如从企业系统获取信息并添加到资产属性。
 
-摄取和处理流是Experience Manager的资产微服务体系结构的主要概念。
+获取和处理流是资产微服务架构的关键概念，用于Experience Manager。
 
-* **直接二进制访问**: 一旦为Experience Manager环境配置了资产，资产便会被传输（并上传）到Cloud Binary Store，然后AEM、资产微型服务以及客户最终可以直接访问这些资产来执行工作。 这样可最大限度地减少网络负载和存储二进制文件的复制
+* **直接二进制访问**: 一旦为Experience Manager环境配置了资产，资产就会被传输（并上传）到云二进制存储，然后AEM、资产微型服务，最终客户可以直接访问这些资产以开展工作。 这样可最大限度地减少网络负载和存储二进制文件的复制
 * **外部化处理**: 资产处理在AEM环境之外完成，并保存其资源（CPU、内存），以便为最终用户提供关键的数字资产管理功能并支持与系统进行交互式工作
 
 ## 通过直接二进制访问上传资产 {#asset-upload-with-direct-binary-access}
