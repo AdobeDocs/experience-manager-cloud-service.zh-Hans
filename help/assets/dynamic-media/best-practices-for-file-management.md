@@ -1,22 +1,22 @@
 ---
-title: 组织数字资产以使用用户档案的最佳实践
-description: 有关命名、组织、管理数字资产文件元数据的提示和最佳实践。
+title: 组织数字资产以使用Dynamic Media图像用户档案或视频用户档案的最佳实践
+description: 命名、组织和管理Dynamic Media图像和视频资产文件的提示和最佳实践。
 translation-type: tm+mt
-source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 组织数字资产以使用用户档案的最佳实践 {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# 组织数字资产以使用图像用户档案或视频用户档案的最佳实践{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-在AEM Assets中使用用户档案的一个重要概念是将其分配到文件夹。 在用户档案中，有元数据用户档案形式的设置，以及视频用户档案或图像用户档案。 这些设置将处理文件夹及其任何子文件夹的内容。 因此，您如何命名文件和文件夹、如何排列子文件夹以及如何处理这些文件夹中的文件，都会对用户档案处理这些资产的方式产生重大影响。
+使用Dynamic Media图像用户档案或视频用户档案的一个重要概念是将它们分配到文件夹。 在用户档案中，设置图像或视频。 这些设置将处理文件夹及其任何子文件夹的内容。 因此，您如何命名文件和文件夹、如何排列子文件夹以及如何处理这些文件夹中的文件，都会对用户档案处理这些资产的方式产生重大影响。
 
 通过使用一致、适当的文件和文件夹命名策略，以及良好的元数据实践，您可以充分利用数字资产集合，并确保通过正确的配置文件处理正确的文件。
 
-查看 [用于处理视频、元数据和图像的用户档案](processing-profiles.md)。
+请参 [阅关于Dynamic Media图像用户档案和视频用户档案](about-image-video-profiles.md)。
 
 以下是组织数字资产文件的最佳实践提示。
 
