@@ -1,10 +1,10 @@
 ---
 title: 使用内容片段
-description: 了解Adobe Experience Manager(AEM)中的内容片段如何作为云服务允许您设计、创建、管理和使用独立于页面的内容。
+description: 了解Adobe Experience Manager(AEM)中的内容片段如何作为Cloud Service允许您设计、创建、策划和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1804'
 ht-degree: 7%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 7%
 # 使用内容片段{#working-with-content-fragments}
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 它们允许您准备内容，准备好在多个位置／多个渠道使用。
+
+内容片段包含结构化内容：
+
+* 它们基于内容 [片段模型](/help/assets/content-fragments/content-fragments-models.md)，该模型为生成片段预定义结构。
 
 使用AEM核心组件的Sling Model(JSON)导出功能，内容片段也可以以JSON格式交付。 这种投放:
 
@@ -59,7 +63,7 @@ AEM Content Services旨在将AEM中／来自内容的描述和投放概括到网
 * 本机移动应用程序
 * AEM外部的其他渠道和触点
 
-投放采用JSON格式。
+投放是使用JSON导出器以JSON格式生成的。
 
 AEM内容片段可用于描述和管理结构化内容。 结构化内容在可包含各种内容类型的模型中进行定义； 包括文本、数字数据、布尔值、日期和时间等。
 
@@ -77,12 +81,6 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 >
 >有关更多信息，另请 [参阅了解AEM中的内容片段和体验片段](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)。
 
->[!CAUTION]
->
->内容片段在经典UI中不可用。
->
->内容片段组件可在经典UI Sidekick中查看，但无法使用其他功能。
-
 >[!NOTE]
 >
 >AEM还支持片段内容的转换。 有关更多信息，请参阅创建内容片段的翻译项目。
@@ -92,24 +90,6 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## 内容片段的类型 {#types-of-content-fragment}
-
-内容片段可以是：
-
-* 简单片段
-
-   * 它们没有预定义的结构。
-
-   * 它们只包含文本和图像。
-
-   * 这些模板基于 **简单片段** 模板。
-
-* 包含结构化内容的片段
-
-   * 这些属性基于内 [容片段模型](/help/assets/content-fragments/content-fragments-models.md)，该模型为生成片段预定义结构。
-
-   * 这些组件还可用于使用JSON导出器实现内容服务。
 
 ## 内容类型 {#content-type}
 
@@ -170,18 +150,14 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 * **片段元素**
 
    * 元素与包含内容的数据字段关联。
-   * 对于具有结构化内容的片段，可使用内容模型创建内容片段。 模型中指定的元素（字段）定义片段的结构。 这些元素（字段）可以是多种数据类型。
-   * 对于简单片段：
-
-      * 内容保存在一个（或多个）多行文本字段或元素中。
-      * 元素在简单片段模 **板中定义** 。
+   * 您可以使用内容模型创建内容片段。 模型中指定的元素（字段）定义片段的结构。 这些元素（字段）可以是多种数据类型。
 
 * **片段段落**
 
    * 文本块，即：
 
       * 由垂直空格分隔（回车）
-      * 多行文本元素； 简单或结构化片段
+      * 多行文本元素
    * 在富文 [本](/help/assets/content-fragments/content-fragments-variations.md#rich-text) 、标记 [下拉模式中](/help/assets/content-fragments/content-fragments-variations.md#markdown) ，段落可以格式化为标题，在这种情况下，它和以下段落同属一个单位。
 
    * 在页面创作过程中启用内容控制。
@@ -275,11 +251,6 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 定义片段的结构（标题、内容元素、标记定义）。
    * 内容模型定义需要标题和一个数据元素； 其他一切都是可选的。 模型定义片段和默认内容的最小范围（如果适用）。 创作片段内容时，作者无法更改定义的结构。
 
-* **片段模板**
-
-   * 需 **要Simple** Fragment模板才能 [创建简单片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
-   * 定义简单片段的基本属性（标题、文本元素数量、标记定义）。
-
 * **内容片段组件**
 
    * 有助于以HTML和／或JSON格式传送片段。
@@ -294,6 +265,6 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 ### WKND示例 {#wknd-sample}
 
-WKND [站点示例](/help/implementing/developing/introduction/develop-wknd-tutorial.md) ，可帮助您了解AEM作为云服务的信息。 它包含示例片段，可在以下位置查看：
+WKND [站点示例](/help/implementing/developing/introduction/develop-wknd-tutorial.md) ，可帮助您了解AEM作为Cloud Service。 它包含示例片段，可在以下位置查看：
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
