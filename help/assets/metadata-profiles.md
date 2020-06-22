@@ -3,7 +3,7 @@ title: 元数据配置文件
 description: 了解资产的元数据用户档案。 了解如何创建元数据用户档案并将其应用到文件夹资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 38%
@@ -15,12 +15,6 @@ ht-degree: 38%
 
 通过元数据用户档案，您可以将默认元数据应用到文件夹内的资产。 创建元数据用户档案并将其应用到文件夹。 您随后上传到文件夹的任何资产都会继承您在元数据用户档案中配置的默认元数据。
 
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
-
 ## 添加元数据用户档案 {#adding-a-metadata-profile}
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 工具>资产>元数据用户档案]**，然后点按 **[!UICONTROL 创建]**。
@@ -31,7 +25,7 @@ Edit the following properties for the **[!UICONTROL Description]** component:
    * **[!UICONTROL 字段标签]** -元数据属性的显示名称。 仅供用户参考。
    * **[!UICONTROL 映射到属性]** -此属性的值提供资产节点在存储库中保存的相对路径／名称。 该值应始终与开始 `./` ，因为它指示该路径位于资产的节点下。
 
-      您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值会作为属性存储在资产的元数据节点下。例如，如果您指定`/jcr:content/metadata/dc:desc` 作为映射到属 **[!UICONTROL 性的名称]**,AEM资产会将该值存储 `dc:desc` 在资产的元数据节点。
+      您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值会作为属性存储在资产的元数据节点下。例如，如果您指定`/jcr:content/metadata/dc:desc` 作为映射到属 **[!UICONTROL 性的名称]**,AEM Assets会将值 `dc:desc` 存储在资产的元数据节点。
 
    * **[!UICONTROL 默认值]** -使用此属性为元数据组件添加默认值。 For example, if you specify &quot;My description&quot; then this value is assigned to the property `dc:desc` at the asset&#39;s metadata node.
 
