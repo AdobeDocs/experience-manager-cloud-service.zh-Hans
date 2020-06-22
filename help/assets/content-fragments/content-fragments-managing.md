@@ -2,9 +2,9 @@
 title: 管理内容片段
 description: 内容片段存储为资产，因此主要通过资产控制台进行管理。
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1454'
 ht-degree: 11%
 
 ---
@@ -22,24 +22,19 @@ ht-degree: 11%
 
 ### 创建内容模型 {#creating-a-content-model}
 
-
 [在创建包含结构化](/help/assets/content-fragments/content-fragments-models.md) 内容的内容片段之前，可以启用和创建内容片段模型。
 
 ### 创建内容片段 {#creating-a-content-fragment}
 
-创建内容片段的方法（对于简单片段和结构化片段）基本相同：
+创建内容片段的方法为：
 
 1. 导航到要 **创建片段** 的Assets文件夹。
 2. 选择 **创建**，然后选择 **内容片段** ，以打开向导。
 3. 向导的第一步要求您指定新片段的基础。
 
-   * 这可以是：
+   * [模型](/help/assets/content-fragments/content-fragments-models.md) -用于创建需要结构化内容的片段； 例如， **Adventure** model
 
-      * 简单 **片段模板**
-
-      * [模型](/help/assets/content-fragments/content-fragments-models.md) -用于创建需要结构化内容的片段； 例如机 **场模型**
-
-         * 将显示所有可用型号。
+      * 将显示所有可用型号。
 
    选择后，使用 **下一** 步继续。
 
