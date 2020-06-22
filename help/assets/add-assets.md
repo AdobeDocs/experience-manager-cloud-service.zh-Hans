@@ -1,11 +1,11 @@
 ---
-title: 将您的数字资产添加到Adobe Experience Manager
-description: 将您的数字资产作为云服务添加到Adobe Experience Manager
+title: 将数字资产添加到Adobe Experience Manager
+description: 将您的数字资产作为Adobe Experience Manager添加为Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,17 +14,17 @@ ht-degree: 5%
 
 Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了已上传数字文件的二进制内容。 您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到Experience Manager资产。
 
-提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager存储库的其他方法，包括桌面客户端（如Adobe Asset Link或Experience Manager桌面应用程序）、上传和摄取客户将创建的脚本以及自动摄取作为AEM扩展添加的集成。
+提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager库的其他方法，包括桌面客户端(如Adobe Asset Link或Experience Manager桌面应用程序)、上传和摄取客户将创建的脚本，以及自动摄取作为AEM扩展添加的集成。
 
-我们将重点介绍此处为最终用户上传的方法，并提供指向文章的链接，这些文章描述了使用Experience Manager API和SDK进行资产上传和获取的技术方面。
+我们将重点介绍此处为最终用户上传方法，并提供指向文章的链接，这些文章描述了使用Experience ManagerAPI和SDK进行资产上传和获取的技术方面。
 
-虽然您可以在Experience Manager中上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息， [请参阅支持的](file-format-support.md) 文件格式。
+虽然可以以Experience Manager方式上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息， [请参阅支持的](file-format-support.md) 文件格式。
 
 您还可以选择对上传的资产进行其他处理。 您可以在上传资产的文件夹中配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 请参 [阅下面的](#additional-processing) “其他处理”以了解更多信息。
 
 >[!NOTE]
 >
-> Experience Manager作为云服务，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端（如AEM用户界面、Adobe Asset Link、AEM桌面应用程序）都支持此功能，因此对最终用户是透明的。
+> Experience Manager作为Cloud Service，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端（如AEM用户界面、Adobe Asset Link、AEM桌面应用程序）都支持此功能，因此对最终用户是透明的。
 >
 > 上传由技术团队需要使用新上传API和协议的客户自定义或扩展的代码。
 
@@ -37,6 +37,7 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
    * On the toolbar, tap the **[!UICONTROL Create]** icon. 然后，在菜单上，点按文 **[!UICONTROL 件]**。 如果需要，可以重命名显示的对话框中的文件。
    * 在支持HTML5的浏览器中，直接将资产拖动到“资产”用户界面上。 不显示要重命名文件的对话框。
+
    ![create_menu](assets/create_menu.png)
 
    要选择多个文件，请按Ctrl或Command键，然后在文件选取器对话框中选择资产。 使用iPad时，一次只能选择一个文件。
@@ -58,9 +59,9 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. To cancel an ongoing upload, click close (`X`) next to the progress bar. 当您取消上传操作时，AEM资产会删除部分上传的资产。
+1. To cancel an ongoing upload, click close (`X`) next to the progress bar. 当您取消上传操作时，AEM Assets会删除资产部分上传的部分。
 
-   如果您在上传文件之前取消上传操作，AEM资产将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
+   如果在上传文件之前取消上传操作，AEM Assets将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -74,7 +75,7 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 -->
 
 
-1. AEM资产中的上传进度对话框显示成功上传的文件和无法上传的文件的计数。
+1. AEM Assets中的上传进度对话框显示成功上传的文件和无法上传的文件的计数。
 
 此外，资产用户界面还会显示您上传的最新资产或您首先创建的文件夹。
 
@@ -111,13 +112,13 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 >
 >在名称冲 **[!UICONTROL 突]** 对话框 [!UICONTROL 中选择替] 换时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
 >
->如果启用资产分析功能来跟踪Adobe Analytics的展示次数／点击次数，则重新生成的资产ID将使在Analytics上为资产捕获的数据失效。
+>如果启用“资产分析”以通过AdobeAnalytics跟踪展示次数／点击次数，则重新生成的资产ID将使Analytics上为资产捕获的数据无效。
 
-要在AEM资产中保留重复资产，请点按／单击 **[!UICONTROL 保留]**。 要删除您上传的重复资产，请点按／单击 **[!UICONTROL 删除]**。
+要将重复资产保留在AEM Assets中，请点按／单 **[!UICONTROL 击保留]**。 要删除您上传的重复资产，请点按／单击 **[!UICONTROL 删除]**。
 
 ### 文件名处理和禁止字符 {#filename-handling}
 
-AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您尝试上传包含不允许的字符或更多字符的资产，AEM资产会显示一条警告消息并停止上传，直到您删除这些字符或上传包含允许的名称为止。
+AEM Assets可防止您上传文件名中带有禁止字符的资产。 如果您尝试上传包含不允许的字符或更多字符的资产，AEM Assets会显示一条警告消息并停止上传，直到您删除这些字符或上传时使用允许的名称。
 
 为了符合组织的特定文件命名约定，您 [!UICONTROL 可以在“上传资产] ”对话框中为上传的文件指定长名。
 
@@ -131,18 +132,18 @@ AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您�
 要上传更多文件，特别是如果这些文件存在于磁盘上的嵌套文件夹层次结构中，可以使用以下方法：
 
 * 使用利用资产上传API的自定义上 [传脚本或工具](developer-reference-material-apis.md#asset-upload-technical)。 此类自定义工具可以根据需要添加对资产的其他处理（例如，翻译元数据或重命名文件）。
-* 使用 [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套文件夹层次结构。
+* 使用 [Experience Manager桌面应用](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套文件夹层次结构。
 
 >[!NOTE]
 >
-> 在设置和部署到Experience Manager时，要将批量上传作为从其他系统迁移内容的一部分，需要仔细规划、考虑和选择工具。 有关内容迁 [移方法的指](/help/implementing/deploying/overview.md) 导，请参阅部署指南。
+> 在设置内容并部署到Experience Manager时，需要仔细规划、考虑和选择工具，才能将批量上传作为从其他系统迁移内容的一部分。 有关内容迁 [移方法的指](/help/implementing/deploying/overview.md) 导，请参阅部署指南。
 
 ## 使用桌面客户端上传资产 {#upload-assets-desktop-clients}
 
-除了Web浏览器用户界面之外，Experience Manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
+除了Web浏览器用户界面外，Experience Manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
 
 * [Adobe Asset](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) Link提供从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的AEM访问资源的功能。 您可以从这些桌面应用程序中的Adobe Asset Link用户界面直接将当前打开的文档上传到AEM。
-* [Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 可简化在桌面上处理资源的工作，这取决于资产的文件类型或处理资产的本机应用程序。 从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
+* [Experience Manager桌面应用](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 程序简化了在桌面上处理资源的工作，它们与文件类型无关，也与处理资源的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
 
 ## 附加处理 {#additional-processing}
 
@@ -155,14 +156,14 @@ AEM资产可阻止您上传文件名中包含禁止字符的资产。 如果您�
 * [元数据用户档案](metadata-profiles.md) 允许您将默认元数据属性应用到上传到该文件夹的资产
 * [处理用户档案](asset-microservices-configure-and-use.md#processing-profiles) 允许您应用再现处理，除默认的再现外，还可以生成再现
 
-此外，如果您的环境中启用了Dynamic Media:
+此外，如果Dynamic Media在您的环境中处于启用状态：
 
-* [图像配置文件](dynamic-media/image-profiles.md)允许您将特定裁剪（**[!UICONTROL 智能裁剪]**&#x200B;和像素裁剪）和锐化配置应用于上传的资产
-* [视频用户档案](dynamic-media/video-profiles.md) 允许您应用特定的视频编码用户档案（分辨率、格式、参数）
+* [Dynamic Media图像用户档案](dynamic-media/image-profiles.md) 允许您对上传的资产应&#x200B;**[!UICONTROL 用特定裁剪]** （智能裁剪和像素裁剪）和锐化配置。
+* [Dynamic Media视频用户档案](dynamic-media/video-profiles.md) 允许您应用特定的视频编码用户档案（分辨率、格式、参数）。
 
 >[!NOTE]
 >
-> Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行裁剪或媒体转换的参数
+> Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原始内容，而是为传送资产时要进行的裁剪或媒体转换提供参数
 
 对于分配了处理用户档案的文件夹，用户档案名显示在卡视图的缩略图上。 在列表视图中，用户档案名称显示在处理 **[!UICONTROL 用户档案列]** 。
 
