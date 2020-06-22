@@ -2,10 +2,10 @@
 title: 变量 - 创作片段内容
 description: 变量允许您为片段创作内容，然后根据用途创建该内容的变量（如果需要）。
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 19%
+source-wordcount: '1686'
+ht-degree: 20%
 
 ---
 
@@ -50,12 +50,6 @@ ht-degree: 19%
    * 访问一系列操 [作](#actions)
 
 例如：
-
-* 编辑简单片段
-
-   一个简单的片段由一个多行文本字段组成（可以从全屏编辑器添加可视资产）。
-
-   ![简单片段](assets/cfm-variations-01.png)
 
 * 使用结构化内容编辑片段
 
