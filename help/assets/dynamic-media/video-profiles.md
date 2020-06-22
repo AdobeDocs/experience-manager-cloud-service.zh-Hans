@@ -1,16 +1,16 @@
 ---
-title: 视频配置文件
+title: Dynamic Media 视频配置文件
 description: Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 您还可以向视频添加智能裁剪。
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '3678'
-ht-degree: 36%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 视频配置文件{#video-profiles}
+# Dynamic Media 视频配置文件{#video-profiles}
 
 Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 当您使用自适应视频编码用户档案对主源视频进行编码时，在播放视频时，视频播放器会根据客户的Internet连接速度自动调整视频流的质量。 这称为自适应流。
 
@@ -34,11 +34,11 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 >
 >在搜索资产时，元数据很有用。 缩略图是编码过程中生成的静态视频图像。 AEM系统需要在用户界面中使用它们，以帮助您在“卡”视图、“搜索结果”视图和“资产”列表视图中直观地识别视频。 点按编码视频的演绎版图标（画板调色板）时，可以看到生成的缩略图。
 
-创建完视频用户档案后，可将其应用到一个或多个文件夹。 See [Applying a video profile to folders.](#applying-a-video-profile-to-folders)
+创建完视频用户档案后，可将其应用到一个或多个文件夹。 See [Applying a Video Profile to folders.](#applying-a-video-profile-to-folders)
 
 要为其他资产类型定义高级处理参数，请参 [阅配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-另请参 [阅处理元数据、图像和视频的用户档案](/help/assets/dynamic-media/processing-profiles.md)。
+另请参 [阅处理元数据、图像和视频的用户档案](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
 ## Adaptive video encoding presets {#adaptive-video-encoding-presets}
 
@@ -113,15 +113,15 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 ![使用智能裁剪编辑视频编码用户档案](assets/edit-smart-crop-video2.png)
 
-请注意，您可以使用用户界面中&#x200B;**[!UICONTROL 智能裁切比]**&#x200B;最右侧的滑块，打开或关闭视频配置文件中的视频智能裁切。
+Note that you can toggle video smart crop in the Video Profile to either on or off using the slider to the far right of **[!UICONTROL Smart Crop Ratio]** in the user interface.
 
-创建并保存视频用户档案后，可以将其应用到所需的文件夹。
+创建并保存视频用户档案后，您可以将其应用到所需的文件夹。
 
 请参 [阅将视频用户档案应用到特定文件夹](#applying-video-profiles-to-specific-folders) , [或全局应用视频用户档案](#applying-a-video-profile-globally)。
 
 另请参阅 [图像智能裁剪](image-profiles.md)。
 
-## Creating a video profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Creating a Video Profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media已附带预定义的自适应视频编码用户档案-一组针对MP4 H.264的视频上传设置，该设置为获得最佳的观看体验而优化。 您可以在上传视频时使用此用户档案。
 
@@ -151,7 +151,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案-一组针对
 **要创建自适应流播放的视频用户档案**,
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
-1. 单击或点按 **[!UICONTROL 创建]** ，以添加新视频用户档案。
+1. 单击或点按 **[!UICONTROL 创建]** ，以添加新的视频用户档案。
 
 1. 输入配置文件的名称和描述。
 1. 在“创建／编辑视频编码预设”页面，点按添 **[!UICONTROL 加视频编码预设]**。
@@ -186,7 +186,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案-一组针对
 
 您现在可以将用户档案应用到包含视频的文件夹。 请参 [阅将视频用户档案应用到文件夹](#applying-a-video-profile-to-folders) , [或全局应用视频用户档案](#applying-a-video-profile-globally)。
 
-## Creating a video profile for progressive streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
+## Creating a Video Profile for progressive streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 如果选择不使用自适应流播放的编码选项 ****，请注意，您添加到配置文件的所有编码预设都将被视为单个比特率流播放或渐进式视频交付的单个视频演绎版。 此外，不会进行验证，以确保所有视频呈现具有相同的纵横比。
 
@@ -201,7 +201,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案-一组针对
 **要为渐进式流播放创建视频用户档案，请执行以下操作：**
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
-1. 点按 **[!UICONTROL 创建]** ，以添加新视频用户档案。
+1. 点按 **[!UICONTROL 创建]** ，以添加新的视频用户档案。
 1. 输入配置文件的名称和描述。
 1. 在“创建／编辑视频编码预设”页面，点按添 **[!UICONTROL 加视频编码预设]**。
 1. 在&#x200B;**[!UICONTROL 基本]**选项卡中，设置视频和音频选项。
@@ -305,7 +305,7 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 
 1. 在CRXDE Lite页面的左上角，点按“返 **[!UICONTROL 回主页]** ”图标以返回AEM。
 
-### Editing a video profile {#editing-a-video-encoding-profile}
+### Editing a Video Profile {#editing-a-video-encoding-profile}
 
 您可以编辑已创建的任何视频用户档案，以在该用户档案中添加、编辑或删除视频预设。
 
@@ -315,10 +315,10 @@ By default, you cannot edit the predefined, out-of-the-box **[!UICONTROL Adaptiv
 
 要为其他资产类型定义高级处理参数，请参 [阅配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-**编辑视频用户档案**:
+**要编辑视频用户档案**:
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
-1. 在“视频配置文件”页面上，选中一个视频配置文件名称。
+1. 在“视频用户档案”页面上，选中一个视频用户档案名称。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
 1. 在“视频编码配置文件”页面上，根据需要编辑名称和描述。
 1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。点按信息图标以获取自适应流播放的说明。 (如果您正在编辑渐进式视频用户档案，请勿选中此复选框。)
@@ -331,30 +331,30 @@ By default, you cannot edit the predefined, out-of-the-box **[!UICONTROL Adaptiv
 ### 复制视频用户档案 {#copying-a-video-encoding-profile}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
-1. 在“视频配置文件”页面上，选中一个视频配置文件名称。
+1. 在“视频用户档案”页面上，选中一个视频用户档案名称。
 1. On the toolbar, tap **[!UICONTROL Copy]**.
 1. 在“视频编码用户档案”页面上，输入用户档案的新名称。
-1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 点按信息图标以获取自适应流播放的说明。 （如果要复制渐进式视频配置文件，请勿选中此复选框。）
+1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 点按信息图标以获取自适应流播放的说明。 (如果要复制渐进式视频用户档案，请勿选中该复选框。)
 
-   在Dynamic Media-混合模式中，如果WebM视频预设是视频用户档案的一部分，则无法进 **[!UICONTROL 行自适应流播放的编码]** ，因为所有预设都必须是MP4。
+   在Dynamic Media-混合模式下，如果WebM视频预设是视频用户档案的一部分，则无法进 **[!UICONTROL 行自适应流播放的编码]** ，因为所有预设都必须是MP4。
 1. 在“视频编码预设”标题下，添加、编辑或删除构成该配置文件的视频编码预设。
 
    点按“基本”和“高级”选项卡上每个选项旁边的信息图标，查看推荐的设置和说明。
 
 1. 在页面的右上角，点按保 **[!UICONTROL 存]**。
 
-### Deleting a video profile {#deleting-a-video-encoding-profile}
+### Deleting a Video Profile {#deleting-a-video-encoding-profile}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
-1. 在“视频配置文件”页面上，选中一个或多个视频配置文件名称。
+1. 在“视频用户档案”页面上，选中一个或多个视频用户档案名称。
 1. 在工具栏中，点按 **[!UICONTROL 删除]**。
 1. 点按 **[!UICONTROL 确定]**。
 
-## Applying a video profile to folders {#applying-a-video-profile-to-folders}
+## Applying a Video Profile to folders {#applying-a-video-profile-to-folders}
 
-当您将视频配置文件分配给文件夹之后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。这就意味着您只能为每个文件夹分配一个视频配置文件。因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
+将视频用户档案分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的用户档案。 这意味着您只能为一个文件夹分配一个视频用户档案。 因此，请仔细考虑资产的上传、存储、使用和存档位置的文件夹结构。
 
-如果您为文件夹分配了一个不同的视频配置文件，新配置文件就会取代之前的配置文件。此前存在的文件夹资产将保持不变。新用户档案将应用于稍后添加到该文件夹的资产。
+如果为文件夹分配了其他视频用户档案，则新用户档案将覆盖之前的用户档案。 以前存在的文件夹资产将保持不变。 新用户档案将应用于稍后添加到该文件夹的资产。
 
 在用户界面中，卡名称中显示的用户档案名称会指示已为其分配用户档案的文件夹。
 
@@ -362,35 +362,35 @@ By default, you cannot edit the predefined, out-of-the-box **[!UICONTROL Adaptiv
 
 您可以将视频用户档案应用到特定文件夹或全局应用于所有资产。
 
-您可以重新处理文件夹中的资产，该文件夹中已经有您稍后更改的现有视频用户档案。 请参 [阅重新处理文件夹中的资产](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+您可以重新处理已具有现有视频用户档案的文件夹中的资产，稍后您会更改该视频文件夹。 请参 [阅重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
-### Applying a video profile to specific folders {#applying-video-profiles-to-specific-folders}
+### Applying a Video Profile to specific folders {#applying-video-profiles-to-specific-folders}
 
-您可以从“工具”菜单中将视频配置文件应用到 **[!UICONTROL 文件夹]** ，或者如果您在文件夹中，也可以从“属 **[!UICONTROL 性”]**。 本节将介绍这两种将视频配置文件应用到文件夹的方法。
+You can apply a Video Profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. 本节将会介绍这两种将视频用户档案应用到文件夹的方法。
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 #### 通过用户档案用户界面将视频用户档案应用到文件夹 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
-1. 选择您要应用到一个或多个文件夹的视频配置文件。
+1. 选择要应用到一个或多个文件夹的视频用户档案。
 1. 点按&#x200B;**[!UICONTROL 将配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资产的文件夹，然后点按&#x200B;**[!UICONTROL 应用]**。在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，如果文件夹已经分配了配置文件，则文件夹名称的正下方会显示配置文件的名称。您可以 [监视视频用户档案处理作业的进度](#monitoring-the-progress-of-an-encoding-job)。
 
 #### 从“属性”将视频用户档案应用到文件夹 {#applying-video-profiles-to-folders-from-properties}
 
-1. 点按或单击AEM徽标，导航到 **[!UICONTROL 资产]** ，然后导航到您要对其应用视频用户档案的文件夹。
+1. 点按或单击AEM徽标，导航到 **[!UICONTROL 资产]** ，然后导航到要应用视频用户档案的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按 **[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后单击&#x200B;**[!UICONTROL 保存并关闭]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-   ![chlimage_1-518](assets/chlimage_1-518.png)您可 [以监视视频用户档案处理作业的进度](#monitoring-the-progress-of-an-encoding-job)。
+   ![chlimage_1-518您](assets/chlimage_1-518.png)可以 [监视视频用户档案处理作业的进度](#monitoring-the-progress-of-an-encoding-job)。
 
 ### 全局应用视频用户档案 {#applying-a-video-profile-globally}
 
 除了将用户档案应用到文件夹外，您还可以全局应用一个用户档案，以便上传到任何文件夹中的AEM资产的任何内容都已应用选定的。
 
-另请参阅 [重新处理文件夹中的资产](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+另请参阅 [重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 **要全局应用视频用户档案**,
 
@@ -401,20 +401,20 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 ## 监视视频用户档案处理作业的进度 {#monitoring-the-progress-of-an-encoding-job}
 
-将显示处理指示器（或进度栏），以便您可以以可视方式监视视频用户档案处理作业的进度。
+将显示处理指示器（或进度栏），以便您以可视方式监视视频用户档案处理作业的进度。
 
 您还可以视图文 `error.log` 件以监视编码作业的进度、查看编码是否完成或查看任何作业错误。 该文 `error.log` 件夹位于安 `logs` 装AEM实例的文件夹中。
 
-## Removing a video profile from folders {#removing-a-video-profile-from-folders}
+## Removing a Video Profile from folders {#removing-a-video-profile-from-folders}
 
-当您将视频配置文件从文件夹删除之后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，此前对文件夹中的文件所做的处理均予以保留。
+当您将视频用户档案从文件夹删除时，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的用户档案。 但是，对文件夹内的文件所做的任何处理都将保持不变。
 
-您可以从“工具”菜单中将视频配置文件从文件夹删除 **** ，如果您在文件夹中，也可以从“文件夹设 **[!UICONTROL 置”中删除]**。 本节将介绍这两种将视频配置文件从文件夹删除的方法。
+You can remove a Video Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. This section describes how to remove Video Profiles from folders both ways.
 
 ### 通过用户档案用户界面将视频用户档案从文件夹删除 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
-1. 选择您要从一个或多个文件夹删除的视频配置文件。
+1. 选择要从一个或多个文件夹删除的视频用户档案。
 1. 点按&#x200B;**[!UICONTROL 从文件夹删除配置文件]**，并选择一个或多个要从中删除配置文件的文件夹，然后点按&#x200B;**[!UICONTROL 删除]**。
 
    您可以确认视频用户档案不再应用于文件夹，因为该名称不再显示在文件夹名称的下方。
