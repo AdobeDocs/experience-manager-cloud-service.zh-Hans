@@ -3,7 +3,7 @@ title: 使用 Brand Portal 配置 AEM Assets 云服务
 description: 使用 Brand Portal 配置 AEM Assets 云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
+source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 26%
@@ -13,11 +13,11 @@ ht-degree: 26%
 
 # 使用 Brand Portal 配置 AEM Assets {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品牌门户，该控制台为品牌门户租户购买IMS令牌以进行授权。
+Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品牌门户，该控制台为您的品牌门户租户购买IMS令牌以进行授权。
 
 **配置如何工作？**
 
-使用Brand Portal租户（组织）配置AEM Assets云实例需要在AEM Assets云实例和Adobe Developer Console中进行配置。
+使用Brand Portal租户（组织）配置AEM Assets云实例需要在AEM Assets云实例和Adobe开发人员控制台中进行配置。
 
 1. 在AEM Assets云实例中，创建IMS帐户并生成公共证书（公钥）。
 1. 在Adobe开发人员控制台中，为您的Brand Portal租户（组织）创建一个项目。
@@ -31,7 +31,7 @@ Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品�
 >
 >Brand Portal租户只应配置一个AEM Assets云实例。
 >
->请勿配置具有多个AEM资产云实例的Brand Portal租户。
+>请勿配置具有多个AEM Assets云实例的Brand Portal租户。
 
 
 ## 前提条件 {#prerequisites}
@@ -46,7 +46,7 @@ Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品�
 
 ## 创建配置 {#create-new-configuration}
 
-按指定顺序执行以下步骤，在Brand Portal中配置AEM Assets云实例。
+在指定序列中执行以下步骤，以通过Brand Portal配置AEM Assets云实例。
 
 1. [获取公共证书](#public-certificate)
 1. [创建服务帐户(JWT)连接](#createnewintegration)
@@ -56,7 +56,7 @@ Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品�
 
 ### 创建 IMS 配置 {#create-ims-configuration}
 
-IMS配置使用AEM Assets云实例对您的Brand Portal租户进行身份验证。
+IMS配置使用AEM Assets云实例验证您的Brand Portal租户。
 
 IMS 配置包括两个步骤：
 
@@ -67,7 +67,7 @@ IMS 配置包括两个步骤：
 
 公共证书允许您在Adobe开发人员控制台上验证用户档案。
 
-1. 登录AEM Assets云实例。
+1. 登录您的AEM Assets云实例。
 
 1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
@@ -99,7 +99,7 @@ IMS 配置包括两个步骤：
 
 ### 创建服务帐户(JWT)连接 {#createnewintegration}
 
-在Adobe开发人员控制台中，项目和API在组织（Brand Portal租户）级别进行配置。 配置API可在Adobe开发人员控制台中创建服务帐户(JWT)连接。 可通过生成密钥对（私钥和公钥）或上传公钥来配置API的方法有两种。 要在Brand Portal中配置AEM Assets云实例，您必须在AEM Assets云实例中生成公共证书（公钥），并通过上传公钥在Adobe Developer Console中创建凭据。 此公钥用于为所选Brand Portal组织配置API，并为服务帐户生成凭据和JWT有效负荷。 这些凭据还用于在AEM Assets云实例中配置IMS帐户。 配置IMS帐户后，您可以在AEM Assets云实例中配置Brand Portal云服务。
+在Adobe开发人员控制台中，项目和API在组织（Brand Portal租户）级别进行配置。 配置API可在Adobe开发人员控制台中创建服务帐户(JWT)连接。 可通过生成密钥对（私钥和公钥）或上传公钥来配置API的方法有两种。 要在Brand Portal中配置AEM Assets云实例，您必须在AEM Assets云实例中生成公共证书（公钥），并通过上传公共密钥在Adobe开发人员控制台中创建凭据。 此公钥用于为所选Brand Portal组织配置API，并为服务帐户生成凭据和JWT有效负荷。 这些凭据还用于在AEM Assets云实例中配置IMS帐户。 配置IMS帐户后，您可以在AEM Assets云实例中配置Brand Portal云服务。
 
 执行以下步骤以生成服务帐户凭据和JWT有效负荷：
 
@@ -156,7 +156,7 @@ IMS 配置包括两个步骤：
 
 1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]**.
 
-您现在可以使用客户端ID（API密钥）、客户端机密和JWT负载 [在AEM资产云实例中](#create-ims-account-configuration) 配置IMS帐户。
+您现在可以使用客户端ID（API密钥）、客户端机密和JWT负载 [在AEM Assets云实例中配置](#create-ims-account-configuration) IMS帐户。
 
 <!--
 1. Click **[!UICONTROL Create Integration]**.
@@ -237,7 +237,7 @@ IMS 配置包括两个步骤：
 
 请执行以下步骤来配置Brand Portal云服务：
 
-1. 登录AEM Assets云实例。
+1. 登录您的AEM Assets云实例。
 
 1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
@@ -257,7 +257,7 @@ IMS 配置包括两个步骤：
 
 请执行以下步骤以验证配置：
 
-1. 登录AEM Assets云实例。
+1. 登录您的AEM Assets云实例。
 
 1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
@@ -315,9 +315,9 @@ IMS 配置包括两个步骤：
 
 您可以检查日志，以了解有关分发代理执行的操作的详细信息。
 
-例如，我们已将资产从AEM资产发布到Brand Portal以验证配置。
+例如，我们已将资产从AEM Assets发布到Brand Portal以验证配置。
 
-1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
 1. 单击&#x200B;**[!UICONTROL 日志]**&#x200B;以查看分发日志。您可以在此处查看处理日志和错误日志。
 
