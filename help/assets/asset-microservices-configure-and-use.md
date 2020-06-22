@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1875'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> 此处介绍的资产处理将替 `DAM Update Asset` 换Experience Manager先前版本中存在的工作流模型。 大多数标准演绎版生成和元数据相关步骤都由资产microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
+> 此处介绍的资产处理将替 `DAM Update Asset` 代先前版本的Experience Manager中存在的工作流模型。 大多数标准演绎版生成和元数据相关步骤都由资产microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
 
 ## 资产处理入门 {#get-started}
 
@@ -57,7 +57,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 默认配置 {#default-config}
 
-使用默认配置时，仅配置标准处理用户档案。 标准处理用户档案在用户界面上不可见，您无法修改它。 它始终执行以处理上传的资产。 标准的处理用户档案可确保Experience Manager所需的所有基本处理均已完成。
+使用默认配置时，仅配置标准处理用户档案。 标准处理用户档案在用户界面上不可见，您无法修改它。 它始终执行以处理上传的资产。 标准处理用户档案可确保所有资产都完成Experience Manager所需的所有基本处理。
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
@@ -99,9 +99,9 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 #### MIME类型包含规则 {#mime-type-inclusion-rules}
 
-当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产生成此特定再现(阻止列表)。
+当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产（阻止列表）生成此特定再现。
 
-否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
+否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版（允许列表）。
 
 #### 特殊FPO再现 {#special-fpo-rendition}
 
@@ -111,7 +111,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 ## 使用资产微服务处理资产 {#use-asset-microservices}
 
-为Experience Manager创建附加的自定义处理用户档案并将其应用到特定文件夹，以便处理上传到这些文件夹或在这些文件夹中更新的资产。 默认的内置标准处理用户档案始终执行，但在用户界面上不可见。 如果您添加自定义用户档案，则两个用户档案均用于处理上传的资产。
+创建附加的自定义处理用户档案并将其应用到特定文件夹，以便Experience Manager处理上传到这些文件夹或在这些文件夹中更新的资产。 默认的内置标准处理用户档案始终执行，但在用户界面上不可见。 如果您添加自定义用户档案，则两个用户档案均用于处理上传的资产。
 
 有两种方法可以获取应用于文件夹的处理用户档案:
 
@@ -136,20 +136,18 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 在需要对无法使用处理用户档案进行的资产进行额外处理的情况下，可以向配置中添加其他后处理工作流。 这允许在使用资产微服务的可配置处理的基础上添加完全自定义的处理。
 
-后处理工作流（如果已配置）由AEM在microservices处理完成后自动执行。 无需手动添加工作流启动器来触发它们。
+后处理工作流（如果已配置）由AEM在microservices处理完成后自动执行。 无需手动添加工作流启动器来触发它们。 示例包括：
 
-示例包括：
+* 处理资产的自定义工作流步骤。
+* 集成功能，可将元数据或属性从外部系统添加到资产，例如产品或流程信息。
+* 外部服务完成的附加处理。
 
-* 处理资产（例如，使用Java代码从专有文件格式生成演绎版）的自定义工作流程步骤。
-* 集成，将元数据或属性从外部系统添加到资产，例如产品或流程信息。
-* 外部服务完成的附加处理
+将后处理工作流配置添加到Experience Manager包含以下步骤：
 
-将后处理工作流配置添加到Experience Manager由以下步骤组成：
-
-* 创建一个或多个工作流模型。 我们将它们称为“后处理工作流模型”，但它们是常规AEM工作流模型。
+* 创建一个或多个工作流模型。 文档将其称为后 *处理工作流模型*，但这些是常规Experience Manager工作流模型。
 * 为这些模型添加特定的工作流步骤。 这些步骤将基于工作流模型配置对资产执行。
-* 这种模型的最后一步必须是 `DAM Update Asset Workflow Completed Process` 步骤。 这是必需的，以确保AEM知道处理已结束，并且可以将资产标记为已处理（“新”）
-* 为自定义工作流运行服务创建配置，该配置允许按路径（文件夹位置）或常规表达式配置后处理工作流模型的执行
+* 在最 [!UICONTROL 后添加DAM更新资产工作流完成] 的流程步骤。 添加此步骤可确保Experience Manager知道处理何时结束，并且资产可以标记为已处理，即 *新* （在资产上显示）。
+* 为自定义工作流运行服务创建配置，允许通过路径（文件夹位置）或常规表达式配置后处理工作流模型的执行。
 
 ### 创建后处理工作流模型 {#create-post-processing-workflow-models}
 
