@@ -2,10 +2,10 @@
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 98%
 + 配置、管理和扩展资产 {#admin}
    + [API 和参考资料](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
-   + [处理配置文件](/help/assets/dynamic-media/processing-profiles.md)
+   + [处理配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [配置智能标记](smart-tags-configuration.md)
    + [多语言资产和资产翻译](translate-assets.md)
    + [搜索 Facet](search-facets.md)
