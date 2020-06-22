@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager作为资产HTTP API中的云服务内容片段支持
-description: 了解Adobe Experience Manager作为资产HTTP API中的云服务内容片段支持。
+title: Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持
+description: 了解Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持。
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1891'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 2%
 >
 当前的Assets HTTP API实现基于REST体系 [结构](https://en.wikipedia.org/wiki/Representational_state_transfer) 样式。
 
-Assets [REST API](/help/assets/mac-api-assets.md) （Adobe Experience Manager的Cloud Service）允许开发人员通过CRUD操作（创建、读取、更新、删除）直接通过HTTP API访问内容（存储在AEM中）。
+Assets [REST API](/help/assets/mac-api-assets.md) 允许开发人员将Adobe Experience Manager作为Cloud Service，通过CRUD操作（创建、读取、更新、删除）直接通过HTTP API访问内容（存储在AEM中）。
 
-API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为无外设CMS(内容管理系统)运行为云服务。 或可以执行HTTP请求和处理JSON响应的任何其他应用程序。
+API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为无外设CMS(内容管理系统)进行操作。 或可以执行HTTP请求和处理JSON响应的任何其他应用程序。
 
 例如，单页应用程序(SPA)、基于框架或自定义，需要通过HTTP API提供的内容，通常采用JSON格式。
 
@@ -49,7 +49,7 @@ Assets REST API还允许开发人员通过创建新资产、更新或删除现�
 
 ## 前提条件 {#prerequisites}
 
-Assets REST API可用于最近安装的Adobe Experience Manager（作为云服务版本）的每个现成安装。
+Assets REST API可用于最近Adobe Experience Manager的每个现成安装，作为Cloud Service版本。
 
 ## 重要概念 {#key-concepts}
 
@@ -75,7 +75,7 @@ HTTP方法确定要执行的操作：
 * **GET** —— 检索资产或文件夹的JSON表示法
 * **POST** —— 创建新资产或文件夹
 * **PUT** —— 更新资产或文件夹的属性
-* **删除** -删除资产或文件夹
+* **DELETE** -删除资产或文件夹
 
 >[!NOTE]
 >
@@ -348,11 +348,10 @@ The exact format of supported requests is defined in the [API Reference](/help/a
    以下列表返回此错误状态时的常见情形以及生成的错误消息（等宽）:
 
    * 父文件夹不存在(通过创建内容片段时 `POST`)
-   * 未提供内容片段模型（cq:model缺失），无法读取（由于路径无效或权限问题），或者没有有效的片段模型／模板：
+   * 未提供内容片段模型（cq:model缺失），无法读取（由于路径无效或权限问题），或者没有有效的片段模型：
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * 无法创建内容片段（可能是权限问题）:
 
       * `Could not create content fragment`
