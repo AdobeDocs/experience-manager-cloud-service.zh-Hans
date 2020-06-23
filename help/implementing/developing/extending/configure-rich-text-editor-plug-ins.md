@@ -1,12 +1,12 @@
 ---
-title: 配置富文本编辑器插件
-description: 了解如何配置AEM富文本编辑器插件以启用各个功能。
+title: 在中配置富文本编辑器插件 [!DNL Adobe Experience Manager]。
+description: 了解如 [!DNL Adobe Experience Manager] 何配置富文本编辑器插件。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 78f1e6427d5918639e56a89ca1f94fc402e34fee
+source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4301'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 要激活插件，请按照以下步骤操作。 仅当您首次配置插件时，才需要执行一些步骤，因为相应的节点不存在。
 
-默认情况 `format`下， `link`、、 `list`、和 `justify`插件以及 `control` 其所有功能均在RTE中启用。
+默认情 `format`况下， `link`、 `list`、 `justify`和增 `control` 效工具及其所有功能都在RTE中启用。
 
 >[!NOTE]
 >
@@ -60,11 +60,11 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 激活插件后，请按照以下准则配置属 `features` 性。
 
-|  | 启用所有功能 | 启用一些特定功能 | 禁用所有功能 |
+|  | 启用所有功能 | 启用一些特定功能。 | 禁用所有功能。 |
 |---|---|---|---|
 | 名称 | 特征 | 特征 | 特征 |
-| 类型 | 字符串 | 字符串[] (多字符串； 在CRXDE Lite中，将类型设置为字符串并单击多) | 字符串 |
-| 值 | `*` （星号） | 设置为一个或多个功能值 | - |
+| 类型 | 字符串 | `String` (多字符串； 将类型设 `String` 置为并 `Multi` 在CRXDE Lite中单击) | 字符串 |
+| 值 | `*` （星号） | 设置为一个或多个功能值。 | - |
 
 ## 了解findreplace插件 {#findreplace}
 
@@ -72,7 +72,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 使用替换功能时，应与查找字符串同时输入要替换的替换字符串。 但是，在替换字符串之前，您仍可以单击“查找”以搜索该字符串。 如果在单击“查找”后输入替换字符串，则搜索将重置为文本的开头。
 
-单击“查找并替换”对话框时，该对话框变得透明，单击“替换”时变得不透明。 这允许作者查看作者将替换的文本。 如果用户单击“全部替换”，对话框将关闭并显示所做替换的数量。
+单击“查找并替换”对话框时，该对话框变得透明，单击“替换”时变得不透明。 该行为允许作者查看要替换的文本。 如果用户单击“全部替换”，对话框将关闭并显示所做替换的数量。
 
 ## 配置粘贴模式 {#pastemodes}
 
@@ -80,7 +80,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 * **浏览器模式**: 使用浏览器的默认粘贴实现粘贴文本。 它不是推荐的方法，因为它可能引入不需要的标记。
 
-* **纯文本模式**: 将剪贴板内容粘贴为纯文本。 在AEM组件中插入之前，它会去除复制内容中的所有样式和格式元素。
+* **纯文本模式**: 将剪贴板内容粘贴为纯文本。 在将内容插入组件之前，它会去除复制内容中的所有样式和格式 [!DNL Experience Manager] 元素。
 
 * **MS Word模式**: 从MS Word复制时，粘贴带有格式的文本（包括表）。 不支持从网页或MS Excel等其他源复制和粘贴文本，只保留部分格式。
 
@@ -108,31 +108,31 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 * 使用浏览器的默认粘贴实现粘贴文本。 它不是推荐的方法，因为它可能引入不需要的标记。 使用下面 `browser` 进行配置。
 
-* 将剪贴板内容粘贴为纯文本。 在AEM组件中插入之前，它会去除复制内容中的所有样式和格式元素。 使用下面 `plaintext` 进行配置。
+* 将剪贴板内容粘贴为纯文本。 在将内容插入组件之前，它会去除复制内容中的所有样式和格式 [!DNL Experience Manager] 元素。 使用下面 `plaintext` 进行配置。
 
 * 从MS Word复制时，粘贴带有格式的文本（包括表）。 不支持从网页或MS Excel等其他源复制和粘贴文本，只保留部分格式。 使用下面 `wordhtml` 进行配置。
 
-1. 在您的组件中，导航到 `<rtePlugins-node>/edit` 节点。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在您的组件中，导航到 `<rtePlugins-node>/edit` 节点。 如果节点不存在，则创建节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
 1. 在节点 `edit` 中，使用以下详细信息创建属性：
 
    * **名称** `defaultPasteMode`
    * **类型** `String`
-   * **值** ：所需的粘贴模式 `browser`之一 `plaintext`、或 `wordhtml`。
+   * **值是** 、或模式中所需的粘贴 `browser`模 `plaintext`式之 `wordhtml` 一。
 
 ### 配置粘贴内容时允许的格式 {#pasteformats}
 
-可以进一步配置粘贴为Microsoft-`paste-wordhtml`Word()模式，以便您能够明确定义在从其他项目（如Microsoft Word）在AEM中粘贴时允许使用的样式。
+可以进一步配置“粘贴为Microsoft-Word`paste-wordhtml`”()模式，以便在从其他项目（如）进行粘贴时显 [!DNL Experience Manager] 式允许一些样式 [!DNL Microsoft Word]。
 
-例如，如果在AEM中粘贴时仅允许使用粗体格式和列表，则可以过滤掉其他格式。 这称为可配置粘贴过滤，可针对以下两种情况执行此操作：
+例如，如果粘贴时只允许使用粗体格式和列表，则 [!DNL Experience Manager]可以过滤掉其他格式。 这称为可配置粘贴过滤，可针对以下两种情况执行此操作：
 
 * [文本](#pastemodes)
 * [链接](#linkstyles)
 
 对于链接，您还可以定义自动接受的协议。
 
-要配置将文本从其他项目粘贴到AEM时允许使用的格式，请执行以下操作：
+要配置将文本从其他项目粘贴到中时允许使 [!DNL Experience Manager] 用的格式：
 
-1. 在您的组件中，导航到节点 `<rtePlugins-node>/edit`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/edit`。 如果节点不存在，请创建节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
 1. 在节点下创建 `edit` 一个节点以保存HTML粘贴规则：
 
    * **名称** `htmlPasteRules`
@@ -159,51 +159,14 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 1. 还可以使用一系列其他属性或节点来定义其他格式，这些属性或节点也应用于 `htmlPasteRules` 节点：
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>属性</strong></td>
-   <td><strong>类型</strong></td>
-   <td><strong>描述</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>String[]</td>
-   <td><p>定义允许的块标记列表。</p> <p>几个可能的块标记包括：</p>
-    <ul>
-     <li>标题(h1、h2、h3)</li>
-     <li>(p)段</li>
-     <li>列表语(ol, ul)</li>
-     <li>表（表）</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>字符串</td>
-   <td><p>定义用于任何包含allowBlockTags中未包含的块标记的块标记。</p> <p> p在大多数情况下都足够。</p> </td>
-  </tr>
-  <tr>
-   <td>表</td>
-   <td>nt:unstructured</td>
-   <td><p>定义粘贴表时的行为。<br /> </p> <p>此节点必须具有属性( <code>allow</code> 类型) <code>Boolean</code>来定义是否允许粘贴表。</p> <p>如果 <code>allow</code> 设置为 <code>false</code>，则必须指定属性( <code>ignoreMode</code> 类型<code> String</code>)以定义如何处理粘贴的表内容。 有效值 <code>ignoreMode</code> 为：</p>
-    <ul>
-     <li><code>remove</code>: 删除表内容。</li>
-     <li><code>paragraph</code>: 将表单元格转换为段落。</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>列表</td>
-   <td>nt:unstructured</td>
-   <td><p>定义粘贴列表时的行为。<br /> </p> <p>必须具有属 <code>allow</code> 性(类 <code>Boolean</code>型)来定义是否允许粘贴列表。</p> <p>如果 <code>allow</code> 设置为 <code>false</code>，则必须指定属性( <code>ignoreMode</code> 类型)以 <code>String</code>定义如何处理粘贴的任何列表内容。 有效值 <code>ignoreMode</code> 为：</p>
-    <ul>
-     <li><code>remove</code>: 删除列表内容。</li>
-     <li><code>paragraph</code>: 将列表项转换为段落。</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+| 属性 | 类型 | 描述 |
+|--- |--- |--- |
+| `allowBlockTags` | `String` | 定义允许的块标记列表。 几个可能的块标签包括标题(h1、h2、h3)、段落(p)、列表(ol、ul)、表（表）。 |
+| `fallbackBlockTag` | `String` | 定义用于任何块的块标签，这些块标签中不包含块标签 `allowBlockTags`。 通常，就 `p` 够了。 |
+| `table` | `nt:unstructured` | 定义粘贴表时的行为。 此节点必须具有属性allow（类型Boolean）来定义是否允许粘贴表。 如果allow设置为false，则必须指定属性ignoreMode（类型字符串）以定义如何处理粘贴的表内容。 ignoreMode的有效值是 `remove` 删除表内容并将表单 `paragraph` 元格转换为段落。 |
+| `list` | `nt:unstructured` | 定义粘贴列表时的行为。 必须具有属性( `allow` 类型为布尔值)来定义是否允许粘贴列表。 如果 `allow` 设置为 `false`，则指定属性( `ignoreMode` 类型)以定 `String`义如何处理粘贴的任何列表内容。 ignoreMode的有效值是删 `remove` 除列表内容并将 `paragraph` 列表项转换为段落。 |
 
-有效结构的 `htmlPasteRules` 示例：
+有效结构的 `htmlPasteRules` 示例如下：
 
 ```xml
 "htmlPasteRules": {
@@ -236,10 +199,10 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 首次启用样式插件时，不提供默认样式。 弹出列表为空。 要为作者提供样式，请执行以下操作：
 
 * 启用样式下拉选择器。
-* 指定样式表的位置。
-* 指定可从“样式”下拉列表中选择的各个样式。
+* 指定样式表的一个或多个位置。
+* 指定可从样式弹出列表中选择的各个样式。
 
-对于以后（重新）的配置，例如要添加更多样式，请仅按照说明引用新样式表并指定其他样式。
+对于以后的重新配置，例如要添加更多样式，请仅按照说明引用新样式表并指定其他样式。
 
 >[!NOTE]
 >
@@ -249,7 +212,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 这是通过启用样式插件来完成的。
 
-1. 在您的组件中，导航到节点 `<rtePlugins-node>/styles`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/styles`。 如果节点不存在，则创建节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
 1. 在节 `features` 点上创建 `styles` 属性：
 
    * **名称** `features`
@@ -279,37 +242,33 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 1. 保存所有更改。
 
->[!NOTE]
->
->在对话框（经典UI）中使用RTE时，您可能需要指定为富文本编辑而优化的样式表。 由于技术限制，CSS上下文在编辑器中丢失，因此您可能希望模拟此上下文以改进WYSIWYG体验。
->
->富文本编辑器使用ID为的容器DOM元素，该 `CQrte` 元素可用于提供不同的样式以供查看和编辑：
->
->
+在对话框（经典UI）中使用RTE时，您可以指定为富文本编辑而优化的样式表。 由于技术限制，CSS上下文在编辑器中丢失，因此您可以模拟此上下文以改进WYSIWYG体验。
+
+富文本编辑器使用ID为容器和编辑提 `CQrte` 供不同样式的视图DOM元素：
+
+```css
+#CQ td {
+// defines the style for viewing
+ }
 ```
->#CQ td {
-> // defines the style for viewing
-> }
->```
->
->
+
+```css
+#CQrte td {
+ // defines the style for editing
+ }
 ```
->#CQrte td {
-> // defines the style for editing
-> }
->```
 
 ### 在弹出列表中指定可用的样式 {#stylesindropdown}
 
 1. 在组件定义中，导航到节 `<rtePlugins-node>/styles`点，如启 [用样式下拉选择器中所创建](#styleselectorlist)。
-1. 在该节 `styles`点下，创建一个新节点(也称 `styles`为)以保留列表可用：
+1. 在该节 `styles`点下，创建一个节点( `styles`也称为)以保留列表可用：
 
    * **名称** `styles`
    * **类型** `cq:WidgetCollection`
 
-1. 在节点下创建新节 `styles` 点以表示单个样式：
+1. 在节点下创建一 `styles` 个节点以表示单个样式：
 
-   * **名称**，您可以指定名称，但应适合样式
+   * **名称**，您可以指定名称，但应适合该样式
    * **类型** `nt:unstructured`
 
 1. 将属性添 `cssName` 加到此节点以引用CSS类：
@@ -330,17 +289,13 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 ### 配置RTE，以在日语中实现最佳换行 {#jpwordwrap}
 
-使用AEM创作日语内容的作者可以将样式应用于字符，以避免在不需要换行的情况下换行。 这允许作者让句子在所需位置断开。 此功能的样式基于CSS样式表中预定义的CSS类。
-
->[!NOTE]
->
->此功能至少需要AEM 6.5 Service Pack 1。
+使用日 [!DNL Experience Manager] 文内容创作的作者可以将样式应用于字符以避免在不需要分行的情况下换行。 这允许作者让句子在所需位置断开。 此功能的样式基于CSS样式表中预定义的CSS类。
 
 要创建作者可应用于日文文本的样式，请执行以下步骤：
 
-1. 在样式节点下创建新节点。 请参 [阅指定新样式](#stylesindropdown)。
+1. 在样式节点下创建一个节点。 请参 [阅指定样式](#stylesindropdown)。
    * 名称: `jpn-word-wrap`
-   * 类型： `nt&#39;:unstructure
+   * 类型: `nt:unstructure`
 
 1. 将属性添 `cssName` 加到节点以引用CSS类。 此类名称是日语换行功能的保留名称。
    * 名称: `cssName`
@@ -364,7 +319,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    }
    ```
 
-   ![使作者可使用日文换行功能的样式表](assets/rte_jpwordwrap_stylesheet.jpg)
+   ![使作者可使用日语换行功能的样式表](assets/rte_jpwordwrap_stylesheet.jpg)
 
 ## 配置段落格式 {#paraformats}
 
@@ -376,20 +331,20 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 >[!NOTE]
 >
->如果无法将块标记（例如&lt;hr>标记）分配给段落，则它不是段落格式插件的有效用例。
+>如果无法将块标记( `<hr>` 例如标记)分配给段落，则它不是插件的有 `paraformat` 效用例。
 
 首次启用段落格式插件时，不提供默认的段落格式。 弹出列表为空。 要为作者提供段落格式，请执行以下操作：
 
-* 启用“格式”下拉选择器列表。
-* 指定可从下拉列表中选择的段落格式块标记。
+* 启用“ [!UICONTROL 格式] ”弹出选择器列表。
+* 指定可从弹出菜单中选择为段落格式的块标记。
 
-对于以后（重新）的配置，例如要添加更多格式，请仅按照说明的相关部分操作。
+对于以后的重新配置，例如要添加更多格式，请仅按照说明的相关部分操作。
 
 ### 启用格式下拉选择器 {#formatselectorlist}
 
-首先启用参数格式插件：
+要启用插 `paraformat` 件，请执行以下步骤：
 
-1. 在您的组件中，导航到节点 `<rtePlugins-node>/paraformat`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/paraformat`。 如果节点不存在，则创建节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
 1. 在节 `features` 点上创建 `paraformat` 属性：
 
    * **名称** `features`
@@ -397,28 +352,24 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    * **值**`*` （星号）
 
 >[!NOTE]
-如果插件未进一步配置，则启用以下默认格式：
-* 段落 ( `<p>`)
-* 标题 1 ( `<h1>`)
-* 标题 2 ( `<h2>`)
-* 标题 3 ( `<h3>`)
-
-
+>
+>如果插件未进一步配置，则启用的默认格式为段落()、标 `<p>`题1()、标 `<h1>`题2()、标 `<h2>`题3( `<h3>`)。
 
 >[!CAUTION]
-配置RTE的段落格式时，请勿删除段落标记&lt;p>作为格式选项。 如果删 `<p>` 除标记，则内容作者无法选择“段落格 **式** ”选项，即使配置了其他格式。
+>
+>配置RTE的段落格式时，请勿删除段落标记&lt;p>作为格式选项。 如果删 `<p>` 除标记，则内容作者无法选择“段落格 [!UICONTROL 式] ”选项，即使配置了其他格式。
 
 ### 指定可用的段落格式 {#paraformatsindropdown}
 
 段落格式可通过以下方式进行选择：
 
 1. 在组件定义中，导航到节 `<rtePlugins-node>/paraformat`点，如启 [用格式下拉选择器中所创建](#styleselectorlist)。
-1. 在节 `paraformat` 点下创建新节点，以保存格式列表:
+1. 在节 `paraformat` 点下创建节点，以保存格式列表:
 
    * **名称** `formats`
    * **类型** `cq:WidgetCollection`
 
-1. 在节点下创建新节 `formats` 点，它保留单个格式的详细信息：
+1. 在节点下创建 `formats` 一个节点，它保存单个格式的详细信息：
 
    * **名称**，您可以指定名称，但该名称应适合格式（例如，myparagraph、myheading1）。
    * **类型** `nt:unstructured`
@@ -446,16 +397,16 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 ## 配置特殊字符 {#spchar}
 
-在标准AEM安装中，当 `misctools` 为特殊字符启用插件时()`specialchars`默认选择会立即可用； 例如，版权和商标符号。
+在标准安 [!DNL Experience Manager] 装中，当 `misctools` 插件启用特殊字符时(`specialchars`)默认选项可立即使用； 例如，版权和商标符号。
 
-您可以配置RTE，使您自己选择的字符可用； 通过定义不同的字符或整个序列。
+您可以配置RTE，使您选择的字符可用； 通过定义不同的字符或整个序列。
 
 >[!CAUTION]
-添加自己的特殊字符将覆盖默认选择。 如果需要，（重新）在您自己的选择中定义这些字符。
+添加特殊字符将覆盖默认选择。 如果需要，在您的选择中重新定义这些字符。
 
 ### 定义单个字符 {#definesinglechar}
 
-1. 在您的组件中，导航到节点 `<rtePlugins-node>/misctools`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/misctools`。 如果节点不存在，则创建节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
 1. 在节 `features` 点上创建 `misctools` 属性：
 
    * **名称** `features`
@@ -474,7 +425,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    * **名称** `chars`
    * **类型** `nt:unstructured`
 
-1. 在“ `chars` 添加新节点”下，可保存单个字符定义：
+1. 在“ `chars` 添加节点”下，可保存单个字符定义：
 
    * **名称** ，您可以指定名称，但应反映字符； 例如，一半。
    * **类型** `nt:unstructured`
@@ -494,7 +445,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 ### 定义字符范围 {#definerangechar}
 
 1. 使用定义单个字符 [中的步骤1到3](#definesinglechar)。
-1. 在“ `chars` 添加新节点”下，可保存字符范围的定义：
+1. 在“ `chars` 添加节点”下，保存字符范围的定义：
 
    * **名称** ，您可以指定名称，但应反映字符范围； 比如铅笔。
    * **类型** `nt:unstructured`
@@ -531,7 +482,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 >[!NOTE]
 在RTE组件中或从RTE组件中复制和粘贴表取决于浏览器。 并非所有浏览器都支持开箱即用。 根据表结构和浏览器，您可能会获得不同的结果。 例如，当您在经典UI和触屏UI中复制和粘贴Mozilla Firefox中RTE组件中的表时，不会保留表的布局。
 
-1. 在组件中，导航到节点 `<rtePlugins-node>/table`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在组件中，导航到节点 `<rtePlugins-node>/table`。 如果节点不存在，则创建节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
 1. 在节 `features` 点上创建 `table` 属性：
 
    * **名称** `features`
@@ -548,31 +499,31 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 
 1. 定义CSS样式表的位置以引用这些样式表。 请参 [阅指定样式表的位置](#locationofstylesheet) ，因为这与定义文本样 [式时相同](#textstyles)。 如果您定义了其他样式，则可以定义位置。
-1. 在节点 `table` 下，创建以下新节点（根据需要）:
+1. 在节点 `table` 下，根据需要创建以下节点：
 
-   * 定义整个表的样式(可在“表属性” **下找到**):
+   * 定义整个表的样式(可在“表属性” **[!UICONTROL 下找到]**):
 
       * **名称** `tableStyles`
       * **类型** `cq:WidgetCollection`
-   * 定义单个单元格的样式(在“单元格属性” **下可用**):
+   * 要定义单个单元格的样式(可在“单元格属性” **[!UICONTROL 下找到]**),
 
       * **名称** `cellStyles`
       * **类型** `cq:WidgetCollection`
 
 
-1. 创建一个新节点(在相应的 `tableStyles` 或节 `cellStyles` 点下)以表示单个样式：
+1. 创建一个节点(在 `tableStyles` 或节 `cellStyles` 点（视情况而定）以表示单个样式，
 
    * **名称** ，您可以指定名称，但应反映样式。
    * **类型** `nt:unstructured`
 
 1. 在此节点上创建属性：
 
-   * 定义要引用的CSS样式
+   * 要定义引用的CSS样式，
 
       * **名称** `cssName`
       * **类型** `String`
       * **值** CSS类的名称(例如，不 `.`带前面 `cssClass` 的名 `.cssClass`称)
-   * 定义要在下拉选择器中显示的描述性文本
+   * 要定义要在弹出选择器中显示的描述性文本，
 
       * **名称** `text`
       * **类型** `String`
@@ -608,13 +559,13 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 >[!NOTE]
 消息“拼写检查失败。” 已查看是否尝试检查未安装的语言。
 
-标准AEM安装包括下列字典：
+标准Experience Manager安装包括用于：
 
 * 美国英语(en_us)
 * 英国英语(en_gb)
 
 >[!NOTE]
-标准词典与相应的自 `/libs/cq/spellchecker/dictionaries`述文件一起位于。 请勿修改文件。
+标准词典与相应 `/libs/cq/spellchecker/dictionaries`的自述文件一起位于。 请勿修改文件。
 
 如需添加更多词典，请按照以下步骤操作。
 
@@ -651,7 +602,7 @@ RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，5
 
 要定义选项卡大小，请执行以下操作：
 
-1. 在您的组件中，导航到节点 `<rtePlugins-node>/keys`。 如果节点不存在，则创建这些节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
+1. 在您的组件中，导航到节点 `<rtePlugins-node>/keys`。 如果节点不存在，则创建节点。 有关详细信息， [请参阅激活插件](#activateplugin)。
 1. 在节 `keys` 点上创建属性：
 
    * **名称** `tabSize`
@@ -676,33 +627,22 @@ RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，5
 
 ## 配置可编辑空间的高度 {#editablespace}
 
->[!NOTE]
-仅当在对话框中使用RTE时（在经典UI中不是就地编辑），才适用。
+您可以定义组件对话框中显示的可编辑空间的高度。 仅当在对话框中使用RTE时，此配置才适用。 配置不会更改对话框窗口的高度。
 
-您可以定义组件对话框中显示的可编辑空间的高度：
-
-1. 在组件 `../items/text` 对话框定义的节点上，创建新属性：
+1. 在节 `../items/text` 点的对话框定义中，创建一个属性：
 
    * **名称** `height`
    * **类型** `Long`
    * **以像素** 为单位对编辑画布的高度进行值。
 
-   >[!NOTE]
-   这不会更改对话框窗口的高度。
-
 1. 保存更改。
 
 ## 为链接配置样式和协议 {#linkstyles}
 
-在AEM中添加链接时，您可以定义：
-
-* 要使用的CSS样式
-* 协议自动接受
-
-要配置如何从其他项目在AEM中添加链接，请定义HTML规则。
+在中添加链 [!DNL Experience Manager]接时，您可以定义要使用的CSS样式和自动接受的协议。 要配置如何从其他项目 [!DNL Experience Manager] 添加链接，请定义HTML规则。
 
 1. 使用CRXDE Lite找到项目的文本组件。
-1. 在与创建节点相同的级别 `<rtePlugins-node>`创建新节点，即在以下节点的父节点下创建节点 `<rtePlugins-node>`:
+1. 在与创建节点相同的级 `<rtePlugins-node>`别创建节点，即在以下节点的父节点下创建该节点 `<rtePlugins-node>`:
 
    * **名称** `htmlRules`
    * **类型** `nt:unstructured`
@@ -713,12 +653,9 @@ RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，5
    * **类型** `String`
    * **值** `richtext`
 
-   节点的位置 `../items/text` 可能因对话框的结构而异； 两个示例包括：
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
+   节点的位 `../items/text` 置可能因对话框的结构而异。 有两个 `/apps/myProject>/components/text/dialog/items/text` 例子 `/apps/<myProject>/components/text/dialog/items/panel/items/text`。
 
-
-1. 在 `htmlRules`下，创建新节点。
+1. 在 `htmlRules`下，创建节点。
 
    * **名称** `links`
    * **类型** `nt:unstructured`
@@ -735,7 +672,7 @@ RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，5
       * **名称** `cssExternal`
       * **类型** `String`
       * **值** CSS类的名称（没有前面的“.”）; for example, `cssClass` instead of `.cssClass`)
-   * 有效协议 **的阵列** (包括https://、https:// file://、mailto：等)
+   * 有效协 **[!UICONTROL 议的阵]** 列 `https://`，包 `https://`括、 `file://``mailto:`、和其他协议
 
       * **名称** `protocols`
       * **类型** `String[]`
@@ -745,7 +682,7 @@ RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，5
       * **名称** `defaultProtocol`
       * **类型** `String`
       * **值**（一个或多个）默认协议
-   * 如何处理链接的目标属性的定义。 创建新节点：
+   * 如何处理链接的目标属性的定义。 创建节点：
 
       * **名称** `targetConfig`
       * **类型** `nt:unstructured`
