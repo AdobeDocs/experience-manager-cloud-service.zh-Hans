@@ -2,10 +2,10 @@
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 + 配置、管理和扩展资产 {#admin}
    + [API 和参考资料](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
-   + [处理配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [关于使用图像用户档案和视频用户档案](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [配置智能标记](smart-tags-configuration.md)
    + [多语言资产和资产翻译](translate-assets.md)
    + [搜索 Facet](search-facets.md)
@@ -82,8 +82,8 @@ ht-degree: 0%
    + [应用 Dynamic Media 查看器预设](dynamic-media/viewer-presets.md)
    + [管理 Dynamic Media 图像预设](dynamic-media/managing-image-presets.md)
    + [应用 Dynamic Media 图像预设](dynamic-media/image-presets.md)
-   + [Dynamic Media 视频配置文件](dynamic-media/video-profiles.md)
-   + [Dynamic Media 图像配置文件](dynamic-media/image-profiles.md)
+   + [图像配置文件](dynamic-media/image-profiles.md)
+   + [视频配置文件](dynamic-media/video-profiles.md)
    + [智能图像处理](dynamic-media/imaging-faq.md)
    + [传送 Dynamic Media 资产](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](dynamic-media/hotlink-protection.md)
