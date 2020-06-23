@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1538'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 100%
 
    * 指示在生成的站点的页面导航中是显示还是隐藏页面。
 
+* **HTML ID**
+
+   * 要应用到组件的HTML ID。
+
 * **页面标题**
 
    * 要在页面中使用的标题。通常由标题组件使用。如果留空，则将使用&#x200B;**标题**。
@@ -70,6 +74,7 @@ ht-degree: 100%
 
    * 允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
    * 例如，如果将网站 `http://example.com` 的虚 URL 设置为由路径 `/v1.0/startpage` 标识的 `welcome` 页面，则 `http://example.com/welcome` 将成为 `http://example.com/content/v1.0/startpage` 的虚 URL
+
    >[!CAUTION]
    >
    >虚 URL：
@@ -97,6 +102,10 @@ ht-degree: 100%
 
    * 指示此页面应自动重定向到的页面。
 
+* **设计**
+
+   * 指示在生成的站点的页面导航中是显示还是隐藏页面。
+
 * **别名**
 
    * 指定要用于此页面的别名。
@@ -112,9 +121,11 @@ ht-degree: 100%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **继承自 &lt;*路径*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * 指示是否继承页面以及从何处继承。
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **云配置**
 
@@ -172,9 +183,10 @@ ht-degree: 100%
 
 ### 云服务 {#cloud-services}
 
-* **云服务**
+* **云服务配置**
 
    * 为云服务定义属性。
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -183,6 +195,7 @@ ht-degree: 100%
 * **ContextHub 配置**
 
    * 选择 ContextHub 配置和区段路径。
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -199,6 +212,7 @@ ht-degree: 100%
    * 添加权限
    * 编辑已关闭的用户组
    * 查看有效权限
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -210,6 +224,7 @@ ht-degree: 100%
 * **Blueprint**
 
    * 在多站点管理中为 Blueprint 页面定义属性。
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * 控制将修改传播到 Live Copy 的情况。
