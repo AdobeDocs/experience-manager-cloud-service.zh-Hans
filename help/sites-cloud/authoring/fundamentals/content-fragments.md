@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager 云服务内容片段允许您设计、创建、策划和使用独立于页面的内容
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 98%
 
 ---
 
@@ -72,8 +72,8 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
    >
    >有关其他编辑功能的更多信息，另请参阅：
    >
-   >    * [响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### 选择元素或变量 {#selecting-the-element-or-variation}
@@ -88,21 +88,19 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
    * **单个文本元素**
    * **多个元素**
 * **元素**
-   * 默认的&#x200B;**主元素**&#x200B;将始终可用。
-   * 如果片段是通过适当的模板创建的，将有可选择的元素可用。
+   * 根据所使用的模型，将可以选择。
 
    >[!NOTE]
    >
-   >有哪些元素可用取决于所使用的模板。
+   >可用元素取决于所使用的模型。
 
 * **变量**
    * 默认主 **视图** 将始终可用。
    * 如果变量是为片段而创建的，将有可选择的变量可用。
-* **段落**：指定要包含的段落范围：
-   * **全部**
-   * **范围**：例如 `1`、`3-5`、`9-*`
-      * **将标题处理为它们自己的段落**
-* **将标题处理为它们自己的段落**
+
+* **ID**
+
+   * **应用于组件的 HTML ID 属性。**
 
 ### 到片段编辑器的快速连接 {#quick-connection-to-fragment-editor}
 
