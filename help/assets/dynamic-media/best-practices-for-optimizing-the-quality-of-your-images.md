@@ -1,8 +1,8 @@
 ---
 title: 优化图像质量的最佳实践
-description: 了解在Dynamic Media中优化图像质量的最佳实践
+description: 了解优化Dynamic Media图像质量的最佳实践
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 54%
@@ -65,7 +65,7 @@ On Adobe TV, watch [Sharpening an image with unsharp mask](https://helpx.adobe.c
 
       有关锐化图像的AEM帮助主题。
 
-      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * AEM还允许您控制第四个参数： monochrome(0,1)。 此参数确定是使用值0分别将USM锐化应用于每个颜色组件，还是使用值1将USM锐化应用于图像亮度／强度。
 
