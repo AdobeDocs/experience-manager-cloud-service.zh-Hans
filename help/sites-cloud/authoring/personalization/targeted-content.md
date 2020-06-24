@@ -2,10 +2,10 @@
 title: 使用定位模式创作目标内容
 description: 通过定位模式和 Target 组件，可以创建体验的内容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '5351'
-ht-degree: 75%
+source-wordcount: '5348'
+ht-degree: 74%
 
 ---
 
@@ -337,12 +337,15 @@ Add an offer from the [offer library](/help/sites-cloud/authoring/personalizatio
    您可以使用选件选取器浏览或筛选选件。浏览或筛选选件时，您可能还希望对选件进行排序，并更改查看选件的方式。右上方的数字指示当前选件库中可用的选件数量。
 
    * Click or tap **Browse** to navigate to another folder. 导航窗格随即会打开，单击箭头可向下浏览文件夹。Click or tap **Browse** again to close the navigation pane.
+
    ![浏览内容](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * 单击或点按&#x200B;**筛选器**&#x200B;可按关键字或标记筛选选件。可输入关键字，并从下拉菜单中选择标记。再次单击或点按&#x200B;**筛选器**&#x200B;可关闭筛选窗格。
+
    ![筛选内容](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * 单击或点按&#x200B;**最新到最旧**&#x200B;旁边的箭头可更改选件排序方式。优惠可以按从最新到最旧或从最早到最新进行排序。
+
    ![筛选排序顺序](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    单击或点按&#x200B;**查看方式**&#x200B;旁边的图标可采用拼贴或列表方式查看选件。
@@ -437,7 +440,7 @@ The Goals &amp; Settings step of [the targeting process](#the-targeting-process-
 
 如果使用 Adobe Target 作为定位引擎：
 
-![Adobe目标作为目标引擎](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![Adobe Target作为目标引擎](/help/sites-cloud/authoring/assets/targeted-engine.png)
 
 如果使用Adobe target作为定位引擎，并且您为帐户配置了A4T分析，则您还有一个额外的“ **Reporting Source** ”下拉菜单：
 
@@ -461,7 +464,7 @@ The Goals &amp; Settings step of [the targeting process](#the-targeting-process-
 | 增量计数、释放用户并允许重新进入 | 选择访客是否重新进入活动时看到的体验： 相同的体验，随机的体验，不可见的体验 |
 | 增量计数、释放用户和重新进入条 | 确定用户看到的内容，而不是活动内容： 相同的体验，无跟踪、默认内容或其他活动内容 |
 
-有关成功量度的更多信息，请参阅 [Adobe Target 文档](https://marketing.adobe.com/resources/help/zh_CN/target/target/r_success_metrics.html)。
+有关成功量度的更多信息，请参阅 [Adobe Target 文档](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)。
 
 ### 配置设置（AEM 定位） {#configuring-settings-aem-targeting}
 
@@ -500,13 +503,13 @@ The Goals &amp; Settings step of [the targeting process](#the-targeting-process-
 
    ![报告源](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. 在“目 **标量度** ”区域的“我的主要目标 **** ”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。 请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://marketing.adobe.com/resources/help/zh_CN/target/target/r_success_metrics.html) 。
+1. 在“目 **标量度** ”区域的“我的主要目标 **** ”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。 请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以通过单击右上角的三个圆点，然后选择&#x200B;**重命名**&#x200B;来重命名目标。
 
    如果需要清除所有字段，请单击右上角的三个圆点，然后选择“清除所 **有字段”**。
 
-   您还可以定义所有量度的高级设置。选择&#x200B;**高级设置**&#x200B;可访问这些设置。See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/zh_CN/target/target/r_success_metrics.html).
+   您还可以定义所有量度的高级设置。选择&#x200B;**高级设置**&#x200B;可访问这些设置。See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
@@ -592,7 +595,7 @@ The Goals &amp; Settings step of [the targeting process](#the-targeting-process-
 | 选项 | 描述 |
 |---|---|
 | 位置 | 该位置是一个字符串，它为目标内容位置提供一个名称并将优惠与页面上应放置这些优惠的位置（或位置或组件）连接。 此字段是通用值。 如果将优惠放入组件，优惠会记住位置ID。 执行页面时，引擎会对用户区段进行评估，并据此解析应显示的活跃营销活动中的体验。然后，引擎会检查页面上的位置 ID，并尝试将选件与其对应的位置 ID 进行匹配。 |
-| 引擎 | 根据您要使用的引擎，在客户端规则（无跟踪）、Adobe目标、ContextHub和Adobe Campaign之间进行选择。 |
+| 引擎 | 根据要使用的引擎，在客户端规则（无跟踪）、Adobe Target、ContextHub和Adobe Campaign之间进行选择。 |
 
 如果选择 Adobe Target 作为引擎：
 
@@ -600,9 +603,9 @@ The Goals &amp; Settings step of [the targeting process](#the-targeting-process-
 
 | 选项 | 描述 |
 |---|---|
-| 准确定位 | 启用准确定位会告知组件在将请求发送到Adobe目标之前等待Client Context或Context Hub数据可用。 这可能会增加加载时间。在创作时，“准确定位”始终处于启用状态。如果选中“准确定位”复选框，mbox会先执行mboxDefine，稍后再执行mboxUpdate，在数据可用时生成Ajax请求。 如果未选中“准确定位”复选框，mbox将执行mboxCreate，从而立即生成同步请求（在这种情况下，并非所有上下文数据都可用）。 注意： 对特定组件启用或禁用精确定位不会影响您已全局设置的设置。 您始终可以通过在组件中选择“准确定位”来覆盖全局设置。 |
+| 准确定位 | 启用准确定位会告知组件在向Adobe Target发送请求之前等待Client Context或Context Hub数据可用。 这可能会增加加载时间。在创作时，“准确定位”始终处于启用状态。如果选中“准确定位”复选框，mbox会先执行mboxDefine，稍后再执行mboxUpdate，在数据可用时生成Ajax请求。 如果未选中“准确定位”复选框，mbox将执行mboxCreate，从而立即生成同步请求（在这种情况下，并非所有上下文数据都可用）。 注意： 对特定组件启用或禁用精确定位不会影响您已全局设置的设置。 您始终可以通过在组件中选择“准确定位”来覆盖全局设置。 |
 | 包含已解析的区段 | 选中此复选框后，mbox调用中的所有已解析段以及页面和框架中配置的任何参数。 这仅适用于同步AEM区段的XML API的情况。 如果您的 AEM 中存在不由 Adobe Target 处理的区段（如脚本区段），则此选项允许您在 AEM 中解析这些区段，并发送信息告知 Adobe Target 这些区段处于活动状态。 |
-| 继承的上下文参数 | 列表从Adobe目标框架继承的上下文参数（如果有），与选定页面关联。 |
+| 继承的上下文参数 | 列表从Adobe Target框架继承的上下文参数（如果有），与所选页面关联。 |
 | 上下文参数 | 单击或点按添加字段以配置其他上下文参数(与目标框架中提供的内容相同)。 添加到组件的上下文参数仅应用于组件，而不适用于其他组件，这与直接将上下文参数添加到框架的情况相同。 |
 | 静态参数 | 单击或点按添加字段以配置其他静态参数(与目标框架中的可用参数相同)。 添加到组件的静态参数仅应用于组件，而不适用于其他组件，这与直接将静态参数添加到框架的情况相同。 静态参数不是来自于上下文（Client Context 或 Context Hub）。 |
 
