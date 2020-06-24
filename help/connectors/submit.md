@@ -2,9 +2,9 @@
 title: 提交 AEM 连接器
 description: 提交 AEM 连接器
 translation-type: tm+mt
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '262'
 ht-degree: 12%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 12%
 
 下面提供了有关提交 AEM 连接器的有用信息，应结合有关[实施](implement.md)和[维护](maintain.md)连接器的文章阅读这些信息。
 
-AEM Connectors列在Adobe [Exchange上](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html)。
+AEM Connectors列在Adobe [Exchange上](https://partners.adobe.com/exchangeprogram/experiencecloud)。
 
-在以前的AEM解决方案中，包管理器用于在各种AEM实例上安装连接器。 但是，将AEM作为云服务，在云管理器的CI/CD过程中会部署连接器。 为了部署连接器，需要在主项目的pom.xml中引用连接器。
+在以前的AEM解决方案中，包管理器用于在各种AEM实例上安装连接器。 但是，在AEM作为Cloud Service时，在Cloud Manager中的CI/CD过程中会部署连接器。 为了部署连接器，需要在主项目的pom.xml中引用连接器。
 
 项目中如何包含包有多种选项：
 
