@@ -2,10 +2,10 @@
 title: 使用概览创建自定义弹出窗口
 description: 在电子商务体验中使用默认的概览，弹出窗口中显示产品信息以推动购买。 您可以触发要在弹出窗口中显示的自定义内容。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 2%
+source-wordcount: '1121'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 在电子商务体验中使用默认的概览，弹出窗口中显示产品信息以推动购买。 但是，您可以触发要在弹出窗口中显示的自定义内容。 根据您使用的查看器，此功能允许用户单击热点、缩略图或图像映射以查看信息或相关内容。
 
-Dynamic Media中的以下查看器支持快速查看：
+以下Dynamic Media查看器支持快速查看：
 
 * 交互式图像（可单击的热点）
 * 交互式视频（视频播放期间可单击的缩略图图像）
@@ -99,8 +99,8 @@ Dynamic Media中的以下查看器支持快速查看：
 
    请访问以下 `setHandlers()` 页面，进一步了解方法：
 
-   * 交互式图像查看器： [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html)
-   * 交互式视频查看器： [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html)
+   * 交互式图像查看器： [塞特兰](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * 交互式视频查看器： [塞特兰](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. 您现在需要配置处理 `quickViewActivate` 程序。
 
