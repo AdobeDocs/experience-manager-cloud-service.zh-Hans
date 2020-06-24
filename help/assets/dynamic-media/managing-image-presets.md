@@ -2,9 +2,9 @@
 title: 管理图像预设
 description: 了解图像预设并了解如何创建、修改和管理图像预设
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3651'
 ht-degree: 28%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 28%
 
 # 管理图像预设{#managing-image-presets}
 
-图像预设使AEM资产能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。 每个图像预设都代表一组预定义的大小调整和格式设置命令，以用于显示图像。在创建图像预设时，您需要选择图像传送的大小。此外，还需要选择格式设置命令，以确保传送供查看的图像时，显示优化的图像外观。
+图像预设使AEM Assets能够动态地传送不同大小、不同格式或具有动态生成的其他图像属性的图像。 每个图像预设都代表一组预定义的大小调整和格式设置命令，以用于显示图像。在创建图像预设时，您需要选择图像传送的大小。此外，还需要选择格式设置命令，以确保传送供查看的图像时，显示优化的图像外观。
 
 管理员可以创建用于导出资产的预设。 在导出图像时，用户可以选择预设，此操作也会根据管理员指定的规范重新设置图像的格式。
 
@@ -56,7 +56,7 @@ ht-degree: 28%
 
 如果您希望支持摄取AI、EPS和PDF文件，以便生成这些文件格式的动态演绎版，您可能需要在创建图像预设之前查看以下信息。
 
-Adobe Illustrator的文件格式是PDF的变体。 在AEM资产的上下文中，主要的区别是：
+Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets的背景下，主要区别是：
 
 * Adobe Illustrator文档由包含多个图层的单个页面组成。 每个图层都会作为PNG子资源提取到主Illustrator资源下。
 * PDF文档由一个或多个页面组成。 每页都会在主多页PDF文档下提取为单页PDF子资产。
@@ -67,7 +67,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM资产的上下文中�
 
 您可以在打开资产时视图子资产或页面，点按内容菜单，然后选择子 **[!UICONTROL 资产]** 或 **[!UICONTROL 页面]**。 子资产是真实资产。 即，PDF页面由工作流组件 `Create Sub Asset` 提取。 然后，它们会 `page1.pdf`作为 `page2.pdf`、等存储在主资产下。 存储它们后，工作流 `DAM Update Asset` 会处理它们。
 
-要使用Dynamic Media预览和生成AI、EPS或PDF文件的动态演绎版，需要执行以下处理步骤：
+要使用Dynamic Media预览AI、EPS或PDF文件并生成动态演绎版，需要执行以下处理步骤：
 
 1. 在工作 `DAM Update Asset` 流中，流 `Rasterize PDF/AI Image Preview Rendition` 程组件使用配置的分辨率将原始资产的第一页栅格化为演绎 `cqdam.preview.png` 版。
 
@@ -86,7 +86,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM资产的上下文中�
 
 您可以通过 `Rasterize PDF/AI Image Preview Rendition` 工作流访问流程组件 `DAM Update Asset` 选项。
 
-点按左上角的Adobe Experience Manager，导航到工具>工 **[!UICONTROL 作流>模型]**。 在“工作流模型”页面上，选 **[!UICONTROL 择DAM更新资产]**，然后点按工具栏 **[!UICONTROL 中的编辑]**。 在DAM更新资产工作流页面上，多次点按流 `Rasterize PDF/AI Image Preview Rendition` 程组件以打开其步骤属性对话框。
+点按左上角的Adobe Experience Manager，导航到工 **[!UICONTROL 具>工作流>模型]**。 在“工作流模型”页面上，选 **[!UICONTROL 择DAM更新资产]**，然后点按工具栏 **[!UICONTROL 中的编辑]**。 在DAM更新资产工作流页面上，多次点按流 `Rasterize PDF/AI Image Preview Rendition` 程组件以打开其步骤属性对话框。
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -144,7 +144,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM资产的上下文中�
 
 DAM更新资产工作流中媒体提取进程组件参数中的ExtendScript路径。
 
-Dynamic Media集成使用以下脚本：
+以下脚本供Dynamic Media集成使用：
 
 <table>
  <tbody>
@@ -173,7 +173,7 @@ Dynamic Media集成使用以下脚本：
 
 ### 配置图像缩略图大小 {#configuring-image-thumbnail-size}
 
-您可以通过在DAM更新资产工作流中配置这些设置来 **[!UICONTROL 配置缩略图的大小]** 。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图&#x200B;**[!UICONTROL 像资产使用一个(Dynamic Media Process Image]** Assets)，静态缩略图生成使用另一个(**[!UICONTROL Process Thumbnails]**)，或者当所有其他进程无法生成缩略图时，这两个进程 *应具有相同* 的设置。
+您可以通过在DAM更新资产工作流中配置这些设置来 **[!UICONTROL 配置缩略图的大小]** 。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图&#x200B;**[!UICONTROL 像资产使用一个(Dynamic Media流程图像资产]**)，静态缩略图生成使用另一个（流程缩略图），或者当所有其他进程无法生成缩略图时，这两个进程&#x200B;**[!UICONTROL 应具有相同]**** 的设置。
 
 在 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中，缩略图由图像服务器生成，此配置与应用于&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤的配置无关。通过&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤生成缩略图是创建缩览图最耗时、内存占用最多的方法。
 
@@ -185,6 +185,7 @@ Dynamic Media集成使用以下脚本：
    >
    >
 * 可在&#x200B;**[!UICONTROL 参数]**&#x200B;选项卡下的&#x200B;**[!UICONTROL 流程]**&#x200B;选项卡中，通过 **[!UICONTROL FFmpeg 缩略图]**&#x200B;步骤配置视频的缩略图大小。
+
 >
 
 
@@ -192,7 +193,7 @@ Dynamic Media集成使用以下脚本：
 **配置图像缩略图大小**
 
 1. 点按 **[!UICONTROL 工具>工作流>模型> DAM更新资产>编辑]**。
-1. 点按Dynamic **[!UICONTROL Media Process图像资产步骤]** ，然后点按缩 **[!UICONTROL 略图选]** 项卡。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
+1. 点按Dynamic Media **[!UICONTROL 处理图像资产]** ，然后点按缩略图 **[!UICONTROL 选项卡]** 。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -393,7 +394,7 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
-   <td><p>除了UI中提供的常见图像设置之外，Dynamic Media还支持许多可在图像修饰符字段中指定的高 <strong>级图像修</strong> 改。 这些参数在图像服务器协 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">议命令参考中定义</a>。</p> <p>重要： 不支持API中列出的以下功能：</p>
+   <td><p>除了UI中提供的常用图像设置之外，Dynamic Media还支持大量可在图像修饰符字段中指定的高 <strong>级图像修改</strong> 。 这些参数在图像服务器协 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">议命令参考中定义</a>。</p> <p>重要： 不支持API中列出的以下功能：</p>
     <ul>
      <li>基本模板和文本渲染命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code> 和 <code>req=xlate</code></li>
