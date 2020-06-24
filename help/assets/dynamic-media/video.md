@@ -2,9 +2,9 @@
 title: 视频
 description: 了解如何在Dynamic Media中使用视频
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '10169'
+source-wordcount: '10146'
 ht-degree: 30%
 
 ---
@@ -146,7 +146,7 @@ Dynamic Media中的视频是一种端到端的解决方案，它使得发布高�
 * 组织、浏览和搜索具有全面元数据支持的视频，以实现高效的视频资产管理。
 * 将自适应视频集交付到Web、桌面和移动设备，包括iPhone、iPad、Android、Blackberry和Windows手机。
 
-自适应视频流播放在多种 iOS 平台上受支持。请参阅《[Scene7 查看器参考指南](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html)》。
+自适应视频流播放在多种 iOS 平台上受支持。请参阅《[Scene7 查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)》。
 
 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find Blackberry devices that support this video format at the following: [Supported video formats on Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Dynamic Media supports mobile video playback for MP4 H.264 video. You can find B
 
 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) sample.
 
-另请参 [阅《Adobe Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) 查看器参考指南》 [,](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) 查看器可用于AEM和Scene7，查看器可用于AEM资产。
+另请参 [阅《Adobe Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) 查看器参考指南》 [,](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 查看器可用于AEM和Scene7，查看器可用于AEM资产。
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Dynamic MediaHTML5视频查看器预设是功能强大的视频播放器。 您�
 
 通过将使用 HTML5 和 CSS 设计播放组件的功能、支持嵌入式播放的功能，以及根据浏览器的容量使用自适应和渐进式流播放的功能整合到单一播放器中，您可以扩大富媒体内容可以传送到的桌面和移动用户的范围，并确保简化视频体验。
 
-另请参阅《Scene7 查看器参考指南》中的“[关于 HTML5 查看器](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html)”。
+另请参阅《Scene7 查看器参考指南》中的“[关于 HTML5 查看器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)”。
 
 ### 使用HTML5视频查看器在桌面计算机和移动设备上播放视频 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -459,7 +459,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 
    如有必要，您可能需要使 **[!UICONTROL 用Google]** 帐户凭据登录 **[!UICONTROL ，才能看到控制台]** 选项。
 
-1. 在仪表板页面的Google Cloud **[!UICONTROL Platform右侧]**，单击项目下拉列表以打开选择项目对话框。
+1. 在仪表板页面的Google Cloud Platform右 **[!UICONTROL 侧]**，单击项目下拉列表以打开选择项目对话框。
 1. 在选择项目对话框中，点按新 **[!UICONTROL 建项目]**。
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
@@ -872,7 +872,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 
    >[!NOTE]
    >
-   >您可能需要管理权限才能访问“工 **[!UICONTROL 具]** ”菜单。
+   >您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -1009,7 +1009,7 @@ For video reports to work correctly, a Report Suite ID is automatically created 
 
 使用 Scene7 查看器参考和 Scene7 HTML5 查看器 SDK 创建您自己的视频查看器。
 
-请参阅《[Scene7 查看器参考指南](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html)》。
+请参阅《[Scene7 查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)》。
 
 <!-- 
 
@@ -1082,7 +1082,7 @@ If `config2` is anything else, set the preset parameter the same as the `config2
 
 Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）格式。 此转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
 
-有 [关在URL中使用JSON函](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) 数的更多信息，请参 ** 阅Scene7图像服务API帮助中的Serving static（非图像）内容。
+有 [关在URL中使用JSON函](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) 数的更多信息，请参 ** 阅Scene7图像服务API帮助中的Serving static（非图像）内容。
 
 **向视频添加字幕或字幕**
 
