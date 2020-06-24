@@ -2,9 +2,9 @@
 title: 使用规则集转换URL
 description: 您可以在Dynamic Media中部署规则集以转换URL。 规则集是用脚本语言（如JavaScript）编写的指令集，用于评估XML数据，并在数据满足某些条件时采取某些操作。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '797'
 ht-degree: 5%
 
 ---
@@ -30,14 +30,14 @@ ht-degree: 5%
 
    请参 [阅从URL删除特殊字符](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)。
 
-在Dynamic Media的上下文中，使用基于XML的系统管理资产信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于提供Dynamic Media资产的预处理规则集文件。 此文件重新构建标准URL协议格式，以满足与Dynamic Media集成的系统的业务逻辑。 指定XML文件作为规则集定义文件路径。
+在Dynamic Media环境中，使用基于XML的系统管理资产信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于服务Dynamic Media资产的预处理规则集文件。 该文件重新构建标准URL协议格式，以满足与Dynamic Media集成的系统的业务逻辑。 指定XML文件作为规则集定义文件路径。
 
 >[!CAUTION]
 >
 >使用规则集时要小心； 它们可以阻止Dynamic Media内容显示在您的网站上。
 
 有一些可用的示例规则集可以帮助您创建自己的规则集。
-请参 [阅规则集引用](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)。
+请参 [阅规则集引用](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
 
 与创建所有规则集一样，在使用XML validator项目（如xmlvalid）上传XML文件之前，请确保XML文件有效。
 另请参 [阅规则集疑难解答](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)。
@@ -53,7 +53,7 @@ ht-degree: 5%
 
 **部署XML规则集：**
 
-1. 登录您的Dynamic Media Classic帐户：
+1. 登录您的Dynamic Media经典帐户：
 
    [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
