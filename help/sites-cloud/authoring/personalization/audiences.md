@@ -1,10 +1,10 @@
 ---
 title: 管理受众
-description: 受众控制台允许您为Adobe目标帐户创建、组织和管理受众，或管理ContextHub的区段
+description: 受众控制台使您能够创建、组织和管理Adobe Target帐户的受众，或管理ContextHub的区段
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '975'
 ht-degree: 57%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 57%
 
 # 管理受众{#managing-audiences}
 
-受众控制台允许您为Adobe目标帐户创建、组织和管理受众，或管理ContextHub的区段：
+受众控制台允许您为Adobe Target帐户创建、组织和管理受众，或管理ContextHub的区段：
 
 * 添加受众 - Adobe Target 受众或 ContextHub 区段。
 * 管理受众。
@@ -82,13 +82,13 @@ For further detail about creating segments using ContextHub, please see the Conf
 
 | **属性** | **描述** | **有关更多信息** |
 |---|---|---|
-| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数目标移动设备。 | 请参 [阅Adobe](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) 目标的移动文档。 |
-| **自定义** | 自定义参数是mbox参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参 [阅Adobe目标的](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) “自定义参数”文档。 |
+| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数目标移动设备。 | 请参 [阅移动文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) (Adobe Target)。 |
+| **自定义** | 自定义参数是mbox参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参 [阅自定义参数](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) (Adobe Target)。 |
 | **操作系统** | 您可以目标使用特定操作系统的访客。 | 目标使用Linux、Macintosh或Windows的用户。 |
-| **站点页面** | 目标访客，他们位于特定页面或具有特定mbox参数。 | 请参 [阅Adobe目标](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) 中的网站页面文档。 |
-| **浏览器** | 您可以目标在用户访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参 [阅Adobe目标](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)中的浏览器选项文档。 |
-| **访客配置文件** | 目标访客符合特定用户档案参数。 | 请参 [阅Adobe访客目标](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) 用户档案文档。 |
-| **流量源** | 目标访客基于搜索引擎或将其引用到您网站的登陆页。 | 请参 [阅Adobe目标](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) 的流量源文档。 |
+| **站点页面** | 目标访客，他们位于特定页面或具有特定mbox参数。 | 请参 [阅站点页面文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) (Adobe Target)。 |
+| **浏览器** | 您可以目标在用户访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参 [阅浏览器选项文档](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html) (Adobe Target)。 |
+| **访客配置文件** | 目标访客符合特定用户档案参数。 | 请参阅 [访客用户档案文档](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) (位于Adobe Target)。 |
+| **流量源** | 目标访客基于搜索引擎或将其引用到您网站的登陆页。 | 请参 [阅Adobe Target的](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) “流量源”文档。 |
 
 ## 在“受众”控制台中修改受众 {#modifying-an-audience-in-the-audiences-console}
 
@@ -96,7 +96,7 @@ For further detail about creating segments using ContextHub, please see the Conf
 >
 >您只能编辑在当前所编辑的相同 AEM 实例中创建的 Adobe Target 受众。无法编辑在不同的 AEM 环境中创建的目标受众。
 
-您可以从“受众”控制台编辑任何ContextHub受众。 您还可以编辑Adobe目标受众，但只能编辑在AEM中创建的：
+您可以从“受众”控制台编辑任何ContextHub受众。 您还可以编辑Adobe Target受众，但只能编辑在AEM中创建的：
 
 1. 在“导航”控制台中，单击或点按&#x200B;**个性化**。Click or tap **Audiences**.
 1. Tap or click the icon next to the ContextHub segment you want to edit, and tap or click **Edit**.
