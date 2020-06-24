@@ -2,10 +2,10 @@
 title: Dynamic Media 图像配置文件
 description: 创建Dynamic Media图像用户档案，其中包含USM锐化设置、智能裁剪设置、智能色板设置，或同时创建这两个设置，然后将用户档案应用于图像资产的文件夹。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2732'
+ht-degree: 14%
 
 ---
 
@@ -93,7 +93,7 @@ In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
  </tbody>
 </table>
 
-锐化在锐化图像 [中有介绍](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)。
+Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
