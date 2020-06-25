@@ -1,9 +1,9 @@
 ---
-title: File formats and MIME types supported by Experience Manager Assets as a Cloud Service
-description: File formats and MIME types supported by Experience Manager Assets as a Cloud Service.
+title: Experience Manager资产作为Cloud Service支持的文件格式和MIME类型
+description: Experience Manager资产作为Cloud Service支持的文件格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
+source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 34%
@@ -33,9 +33,9 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | * | 查看表下的注释 |
 | - | 不适用 |
 
-## Adobe formats {#adobe-formats}
+## Adobe格式 {#adobe-formats}
 
-| File format | 缩略图生成 | 全文提取 | 元数据提取 | Width/Height |
+| 文件格式 | 缩略图生成 | 全文提取 | 元数据提取 | 宽度／高度 |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
@@ -49,11 +49,11 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* For [!DNL Adobe InDesign] files (INDD), the size of rendition is determined by the preview embedded in the INDD file. 在(“首选项”>“ [!DNL InDesign] 文&#x200B;**[!UICONTROL 件处理”>“始终使用预览保存文档图像、预览大小]**”)中配置首选项以嵌入较大的再现。
+\*对于 [!DNL Adobe InDesign] 文件(INDD)，再现的大小由嵌入在INDD文件中的预览决定。 在(“首选项”>“ [!DNL InDesign] 文&#x200B;**[!UICONTROL 件处理”>“始终使用预览保存文档图像、预览大小]**”)中配置首选项以嵌入较大的再现。
 
 ## 图像格式 {#image-formats}
 
-| File format | 缩略图生成 | 元数据提取 | Width/Height | 裁剪 |
+| 文件格式 | 缩略图生成 | 元数据提取 | 宽度／高度 | 裁剪 |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
 | EPS | - | ✓ | - | - |
@@ -87,11 +87,11 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 * 具有浮点数据的TIFF文件。
 * 具有Lab色彩空间的TIFF文件。
 
-## 支持3D格式 {#support-3d-formats}
+## 3D格式 {#support-3d-formats}
 
 支持以下3D格式列表。
 
-请参 [阅在Dynamic Media中使用3D资产。](/help/assets/dynamic-media/assets-3d.md)
+另请参阅 [在Dynamic Media中使用3D资产。](/help/assets/dynamic-media/assets-3d.md)
 
 | 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -160,7 +160,7 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## Document formats in [!DNL Dynamic Media] {#document-support-dynamic-media}
+## 文档格式 [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -168,9 +168,9 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | INDD | ✓ | - | - | - | - |
 
-## Video formats {#video-formats}
+## 视频格式 {#video-formats}
 
-| File format | 缩略图生成 | 元数据提取 | 宽度／高度 |
+| 文件格式 | 缩略图生成 | 元数据提取 | 宽度／高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3G2 | - | ✓ | - |
 | 3GP | - | ✓ | - |
@@ -195,7 +195,7 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | WEBM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## Video formats in [!DNL Dynamic Media] for transcoding {#video-dynamic-media-transcoding}
+## 用于转码的 [!DNL Dynamic Media] 视频格式 {#video-dynamic-media-transcoding}
 
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 |------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -218,7 +218,7 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 
 ## 音频格式 {#audio-formats}
 
-Assets as a Cloud Service provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
+资源作为Cloud Service提供AIF、ASF、M4A、MP3、WAV和WMA音频格式的XMP元数据提取支持。
 
 >[!MORELIKETHIS]
 >
