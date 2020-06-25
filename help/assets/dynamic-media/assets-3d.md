@@ -1,6 +1,6 @@
 ---
-title: 在Dynamic Media中使用3D资源
-seo-title: 在Dynamic Media中使用3D资源
+title: Working with 3D assets in Dynamic Media
+seo-title: Working with 3D assets in Dynamic Media
 description: 了解如何在Dynamic Media中使用3D资源
 seo-description: 了解如何在Dynamic Media中使用3D资源
 contentOwner: Rick Brough
@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 76cd37ae35360e68cca676de8eda53dff4819b41
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2276'
 ht-degree: 4%
 
 ---
@@ -24,22 +24,24 @@ Dynamic Media可让您将3D资产上传、管理、视图和投放为沉浸式�
 * 借助以Adobe Dimension为后盾的高质量交互式维查看器预设，优化了对查看3D资产的支持。
 * 3D Media WCM组件可让您轻松地将3D资产添加到AEM Sites页面。
 
-在Dynamic Media中使用3D资产无需进行额外安装。
+There is no additional installation required to use 3D assets in Dynamic Media.
 
-![3d鞋](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
+![shoe in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
 <!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
-## 支持的Dynamic Media3D文件格式 {#supported-three-d-file-formats-in-dm}
+## Dynamic Media支持3D格式 {#supported-three-d-file-formats-in-dm}
 
-Dynamic Media支持以下3D文件格式：
+Dynamic Media支持以下3D文件格式。
 
-| 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
+另请参阅 [支持的3D格式](/help/assets/file-format-support.md#supported-3d-formats)
+
+| 3D文件扩展名 | File format | MIME type | 注释 |
 |---|---|---|---|
 | GLB | 二进制GL传输 | 模型/gltf二进制 | 将材料和纹理作为单个资源提供。 |
 | OBJ | WaveFront 3D对象文件 | application/x-tgif |  |
 | STL | 光固化成形 | application/vnd.ms-pki.stl |  |
-| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | *仅支持摄取； 不提供查看或交互。* USDZ是专有的3D格式，Safari或iOS可以本机查看。 |
+| USDZ | Universal Scene Description Zip archive | model/vnd.usdz+zip | *仅支持摄取； 不提供查看或交互。* USDZ is a proprietary 3D format that can be viewed natively by Safari or iOS. |
 
 ## 快速开始: Dynamic Media中的3D资源 {#quick-start-three-d}
 
@@ -52,7 +54,7 @@ Dynamic Media支持以下3D文件格式：
 1. **上传3D资产**
 
    * [上传3D资产以供Dynamic Media使用](/help/assets/add-assets.md#upload-assets)
-   * [支持的3D文件格式，可上传为Dynamic Media](#supported-three-d-file-formats-in-dm)
+   * [Supported 3D file formats for upload in Dynamic Media](#supported-three-d-file-formats-in-dm)
 
 1. **管理3D资产**
 
@@ -84,7 +86,7 @@ Dynamic Media支持以下3D文件格式：
 
 请注意，在“资产详细信息”页面视图打开3D资产所花费的时间取决于多个因素。 这些因素包括如下几项：
 
-* 服务器带宽。
+* Bandwidth to the server.
 * 服务器延迟
 * 图像的复杂性。
 
@@ -92,7 +94,7 @@ Dynamic Media支持以下3D文件格式：
 
 >[!TIP]
 >
->您可以在查看器预设编辑器中打开维查看器预设，以练习在3D资产上导航，而无需先上传任何3D文件。 维查看器预设包含一个内置的3D资源，供您进行交互。
+>You can open the Dimensional viewer preset in the Viewer Preset Editor to practice navigating a 3D asset without the need to first upload any 3D files. 维查看器预设包含一个内置的3D资源，供您进行交互。
 >
 >See [Managing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
@@ -106,13 +108,13 @@ Dynamic Media支持以下3D文件格式：
 
    请参 [阅上传3D资产以供Dynamic Media使用。](/help/assets/add-assets.md#upload-assets)
 
-1. 从AEM的导航页 **[!UICONTROL 面]** ，点按 **[!UICONTROL 资产>文件]**。
+1. From AEM, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. 导航到要查看的 3D 资产。
 1. 点按3D资产的卡片，以在资产详细信息页面中将其打开。
-1. 在3D资产的详细信息视图页面上，执行下列任一操作：
+1. On the details view page for the 3D asset, do any of the following:
 
-   * **旋转相机** -围绕3D场景和对象绕行视图。
+   * **Turn your camera** – Orbit your view around the 3D scene and objects.
       * _鼠标_: 左键单击+拖动。
       * _触摸屏_: 单指按+拖动。
    * **平移相机** -向左、向右、向上或向下平移视图。
@@ -135,7 +137,7 @@ Dynamic Media支持以下3D文件格式：
 
 >[!IMPORTANT]
 >
->只有在将3D媒体组件添加到网页并将3D资产分配给该组件后，您才能完成此任务。 请 [参阅将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)[和将3D资产分配到3D媒体组件。](#assigning-a-three-d-asset-to-the-component)
+>You can accomplish this task only after you have added a 3D Media component to a web page and assigned a 3D asset to the component. 请 [参阅将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)[和将3D资产分配到3D媒体组件。](#assigning-a-three-d-asset-to-the-component)
 
 另请参阅 [使用软件界面预览资产。](/help/assets/dynamic-media/previewing-assets.md)
 
@@ -148,10 +150,10 @@ Dynamic Media支持以下3D文件格式：
 
 完全交互的3D资产，如    ![3D资产显示在3D媒体组件内部](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)在预览模式下显示的完全交互 **[!UICONTROL 式3D资]** 产。
 
-1. 在预览 **[!UICONTROL 模式下]** ，请执行下列任一操作：
+1. While in **[!UICONTROL Preview]** mode, do any of the following:
 
    * **旋转相机** -围绕3D场景和对象绕行视图。
-      * _鼠标_: 左键单击+拖动。
+      * _Mouse_: Left click + drag.
       * _触摸屏_: 单指按+拖动。
    * **平移相机** -向左、向右、向上或向下平移视图。
       * _鼠标_: 右键单击并拖动。
@@ -162,7 +164,7 @@ Dynamic Media支持以下3D文件格式：
    * **重新输入相机** -将相机重新输入到3D场景中对象上的某个点。
       * _鼠标_: 多次单击。
       * _触摸屏_: 多次点击。
-   * **重置** -在页面的右下角附近，点按重置图标以将视图目标点恢复到3D资产的中心。 重置还会使相机更近或更远地移动，以便以合理的查看大小完整显示资产。
+   * **重置** -在页面的右下角附近，点按重置图标以将视图目标点恢复到3D资产的中心。 Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
    * **全屏模式** -要进入全屏模式，请点按页面右下角的全屏图标。
 
 ## 关于使用3D媒体组件 {#working-with-three-d-media-component}
@@ -177,15 +179,15 @@ Dynamic Media包含一个Dynamic Media3D媒体组件，您可以在AEM Sites中�
 
 ## 将3D媒体组件添加到页面模板 {#adding-three-d-media-component-to-page-template}
 
-1. 导航到 **[!UICONTROL 工具>常规>模板]**。
-1. 导航到要在其中启用3D组件的页面模板，然后选择该模板。
+1. Navigate to **[!UICONTROL Tools > General > Templates]**.
+1. Navigate to the page template that you want to enable the 3D component in and select the template.
 1. 点按 **[!UICONTROL 编辑]** ，打开模板。
 1. 在页面右上角的下拉菜单中，选择“结构 **[!UICONTROL 模式]** ”（如果它尚未处于活动状态）。
 
    ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
-1. 点按布局容器区域 **[!UICONTROL 中的空]** ，以选择该区域并打开其关联的工具栏。
-1. 在工具栏中，点按 **[!UICONTROL 策略]** 图标以打开策 **[!UICONTROL 略编辑器]**。
+1. Tap an empty area in the **[!UICONTROL Layout Container]** region to select it and open its associated toolbar.
+1. On the toolbar, tap the **[!UICONTROL Policy]** icon to open the **[!UICONTROL Policy Editor]**.
 1. 在“属 **[!UICONTROL 性]** ”部分的“允许的组 **[!UICONTROL 件]** ”选项卡下，滚动至 **[!UICONTROL Dynamic Media]**，然后展开列表并检 ****&#x200B;查3D媒体。
 1. 点按 **[!UICONTROL 完成]** ，以保存更改并关闭策 **[!UICONTROL 略编辑器]**。
 
@@ -202,7 +204,7 @@ See also [Adding Dynamic Media assets to pages.](/help/assets/dynamic-media/addi
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
-1. 在工具栏中，点按侧面板图标以切换或“打开”面板的显示。
+1. On the toolbar, tap the Side Panel icon to toggle or &quot;turn on&quot; the display of the panel.
 
 1. 在侧面板中，点按加号图标以打开组 **[!UICONTROL 件]** 列表。
 
@@ -246,9 +248,9 @@ See also [Adding Dynamic Media assets to pages.](/help/assets/dynamic-media/addi
 
 ## 发布静态Dynamic Media3D资源 {#publishing-three-d-assets}
 
-Dynamic Media接受Dynamic Media中支持的各种3D文件格 *式作为静态内容* 。 静态内容意味着您可以上传和发布3D资产，但不支持与 *3D资产* 相关的动态成像或图像重新编排。 原因是Dynamic Media成像服务器无法识别3D格式。 因此，在以Dynamic Media形式发布3D资产后，您可以复制一个即时URL。 3D资产的URL遵循通常的Dynamic MediaURL结构。 但是，与Dynamic Media中的传统图像资产不同，您无法编辑资产URL中的任何参数。
+Dynamic Media accepts a variety of 3D file formats that are supported as *static content* in Dynamic Media. 静态内容意味着您可以上传和发布3D资产，但不支持与 *3D资产* 相关的动态成像或图像重新编排。 原因是Dynamic Media成像服务器无法识别3D格式。 因此，在以Dynamic Media形式发布3D资产后，您可以复制一个即时URL。 3D资产的URL遵循通常的Dynamic MediaURL结构。 但是，与Dynamic Media中的传统图像资产不同，您无法编辑资产URL中的任何参数。
 
-另请参 [阅获取静态资产的URL。](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
+See also [Obtaining a URL for a static asset.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 在卡 **[!UICONTROL 片视图]**&#x200B;中，资产名称的正下方以及日期和时间的左侧会显示一个小地球图标，以指示资产已发布。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
@@ -273,11 +275,11 @@ See also [Publishing Dynamic Media assets.](/help/assets/dynamic-media/publishin
 1. 点按 **[!UICONTROL 原始]**。 发布（或“激活”）3D资产后，如 **[!UICONTROL 果]** 满足以下所有3D资产条件，则URL按钮将显示在页面左下角附近：
    * 3D资产是受支持的格式（GLB、OBJ、STL和USDZ）。
    * 3D资源已被引入Dynamic Media图像生产系统(IPS)。
-   * 将发布3D资产。
+   * The 3D asset is published.
 
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
-1. 点 **[!UICONTROL 按]** URL以显示3D资产的直接生产URL，您可以复制并在网页上使用它。
+1. Tap **[!UICONTROL URL]** to display the 3D asset&#39;s direct production URL which you can copy and use on web pages.
 
 ### 使用Dimensional Viewer发布Dynamic Media3D资产的替代方法 {#alternate-publish-methods}
 
