@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展标准资产。
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '1786'
 ht-degree: 3%
 
 ---
@@ -26,21 +26,12 @@ ht-degree: 3%
 * 包含一个或多个 *内容元素*,
 * 和可以具有一个或多个内 *容变量*。
 
-根据片段类型，还使用模型 **或简单片段** 模板：
+单个内容片段基于内容片段模型：
 
->[!CAUTION]
->
->[现在建议使用](/help/assets/content-fragments/content-fragments-models.md) “内容片段模型”来创建您的所有片段。
->
->内容片段模型用于WKND中的所有示例。
-
-* 内容片段模型:
-
-   * 用于定义包含结构化内容的内容片段。
-   * 内容片段模型定义内容片段在创建时的结构。
-   * 片段引用模型； 因此，对模型所做的更改可能会／会影响任何从属片段。
-   * 模型是数据类型的构建。
-   * 添加新变量等的函数必须相应更新片段。
+* 内容片段模型定义内容片段在创建时的结构。
+* 片段引用模型； 因此，对模型所做的更改可能会／会影响任何从属片段。
+* 模型是数据类型的构建。
+* 添加新变量等的函数必须相应更新片段。
 
    >[!NOTE]
    >
@@ -49,20 +40,6 @@ ht-degree: 3%
    >[!CAUTION]
    >
    >对现有内容片段模型的任何更改都可能影响相关片段； 这会导致这些片段中的孤立属性。
-
-* 内容片段模板- **简单片段**:
-
-   * 用于定义简单内容片段。
-
-   * 此模板定义内容片段在创建时的（基本、仅文本）结构。
-
-   * 创建模板时，模板将复制到片段。
-
-   * 添加新变量等的函数必须相应更新片段。
-
-   * 内容片段模板(**简单片段**)的操作方式与AEM生态系统中其他模板机制（如页面模板等）的操作方式不同。 因此，应单独考虑。
-
-   * 当基于简单 **片段模板** ，内容的MIME类型将根据实际内容进行管理； 这意味着每个元素和变量都可以具有不同的MIME类型。
 
 ### 将站点与资产集成 {#integration-of-sites-with-assets}
 
@@ -76,11 +53,11 @@ ht-degree: 3%
 
 * 在创作页面时，会使用它们。
 
-#### 将结构化内容片段映射到资产 {#mapping-structured-content-fragments-to-assets}
+#### 将内容片段映射到资产 {#mapping-content-fragments-to-assets}
 
-![内容片段至结构化资产](assets/content-fragment-to-assets-structured.png)
+![内容片段至资产](assets/content-fragment-to-assets.png)
 
-具有结构化内容（即基于内容片段模型）的内容片段将映射到单个资产：
+内容片段会基于内容片段模型映射到单个资产：
 
 * 所有内容都存储在资 `jcr:content/data` 产的节点下：
 
@@ -95,22 +72,6 @@ ht-degree: 3%
 
 * 元数据和关联内容存储在 `jcr:content/metadata`下面，但标题和说明除外，它们不被视为传统元数据，并存储在 
 `jcr:content`
-
-#### 将简单内容片段映射到资产 {#mapping-simple-content-fragments-to-assets}
-
-![内容片段到资产的简单操作](assets/content-fragment-to-assets-simple.png)
-
-简单内容片段(基于 **简单片段** 模板)映射到由主资产和（可选）子资产组成的组合：
-
-* 片段的所有非内容信息（如标题、描述、元数据、结构）均专门在主资产上进行管理。
-* 片段的第一个元素的内容将映射到主资产的原始演绎版。
-
-   * 第一个元素的变量（如果有）会映射到主资产的其他演绎版。
-
-* 其他元素（如果现有）会映射到主资产的子资产。
-
-   * 这些附加元素的主要内容会映射到相应子资产的原始演绎版。
-   * 任何其他元素的其他变体（如果适用）会映射到相应子资产的其他演绎版。
 
 #### 资产位置 {#asset-location}
 
@@ -160,11 +121,9 @@ ht-degree: 3%
 >
 >**内容片段模型:**
 >
->当使用基于页面上的内容片段模型的内容片段时，将引用该模型。 这意味着，如果发布页面时尚未发布模型，则会标记该模型并将该模型添加到要随页面一起发布的资源。
+>在页面上使用内容片段时，将引用其基于的内容片段模型。
 >
->**内容片段模板——简单片段：**
->
->在使用基于页面上的内容片段模板简 **单片段** 的内容片段时，没有引用，因为创建片段时复制了模板。
+>这意味着，如果发布页面时尚未发布模型，则会标记该模型并将该模型添加到要随页面一起发布的资源。
 
 ### 与其他框架集成 {#integration-with-other-frameworks}
 
@@ -239,7 +198,7 @@ ht-degree: 3%
       * 列表集合
       * 添加集合
       * 删除集合
-   * 访问片段的模型或模板
+   * 访问片段的模型
 
    表示片段主元素的接口包括：
 
@@ -354,13 +313,13 @@ if (fragmentResource != null) {
 
 ### 示例： 创建新内容片段 {#example-creating-a-new-content-fragment}
 
-要以编程方式创建新内容片段，您需要使用根据模型`FragmentTemplate` 或模板资源调整的内容片段。
+要以编程方式创建新内容片段，您需要使用从模型`FragmentTemplate` 资源调整的内容片段。
 
 例如：
 
 ```java
-Resource templateOrModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
+Resource ModelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
