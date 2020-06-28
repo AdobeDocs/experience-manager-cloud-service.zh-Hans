@@ -2,9 +2,9 @@
 title: 使用云就绪性分析器
 description: 使用云就绪性分析器
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,12 @@ ht-degree: 0%
 
 * CRA报告是使用Adobe Experience Manager(AEM)模式检测器的输 [出构建的](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRA使用的图案检测器版本包含在CRA安装包中。
 
-* CRA只能由管理员用户 **或** “管理员”组中的 **用户运** 行。
+* CRA只能由管理员 **用户** 或管理员组中的 **用户** 。
 
 * 版本6.1及更高版本的AEM实例支持CRA。
+
+   >[!NOTE]
+   > 有关在 [AEM 6.1上安装CRA的特殊要求](#installing-on-aem61) ，请参阅在AEM 6.1上安装CRA。
 
 * CRA可以在任何环境上运行，但它更喜欢在舞台 *环境运行* 。
 
@@ -169,7 +172,9 @@ HTTP接口可用于多种方法。
 * `500 Internal Server Error`: 指示发生内部服务器错误。 “问题详细信息”格式的消息提供更多详细信息。
 * `503 Service Unavailable`: 表示服务器正忙于其他响应，无法及时为此请求提供服务。 仅当发出同步请求时，才会发生这种情况。 “问题详细信息”格式的消息提供更多详细信息。
 
-## 缓存生命周期调整 {#cache-adjustment}
+## 管理员信息
+
+### 缓存生命周期调整 {#cache-adjustment}
 
 默认的CRA缓存生命周期为24小时。 在AEM实例和HTTP接口中，使用刷新报告和重新生成缓存的选项，此默认值可能适用于大多数CRA使用。 如果AEM实例的报表生成时间特别长，您可能希望调整缓存生命周期以最大限度地减少报表的再生。
 
@@ -178,7 +183,12 @@ HTTP接口可用于多种方法。
 
 此属性的值是缓存生命周期（以秒为单位）。 管理员可以使用CRX/DE Lite调整缓存生命周期。
 
+### 在AEM 6.1上安装 {#installing-on-aem61}
 
+CRA利用名为的系统服务用户帐户 `repository-reader-service` 来执行模式检测器。 此帐户在AEM 6.2和更高版本上可用。 在AEM 6.1上，必须先通过以下步骤 *在安装* CRA之前创建此帐户：
 
+1. 请按照“创建新 [服务用户”中的说明](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) ，创建用户。 将UserID设置为 `repository-reader-service` 并将中间路径留空，然后单击绿色复选标记。
 
+2. 按照“管理用 [户和用户组](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups)”中的说明操作 `repository-reader-service` ，特别是“将用户添加到用户组以将用户添加 `administrators` 到用户组”的说明。
 
+3. 通过包管理器在源AEM实例上安装CRA包。 (这将为系统服务用户向ServiceUserMapper配置添加必 `repository-reader-service` 要的配置修改。)
