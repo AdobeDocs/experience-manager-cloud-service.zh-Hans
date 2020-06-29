@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager (AEM) 云服务的显著更改
 description: 对 Adobe Experience Manager (AEM) 云服务的显著更改
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -15,21 +15,31 @@ ht-degree: 100%
 AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是，与 AEM 云服务相比，On-Premise 版或 Adobe Managed Service 中的 AEM Sites 存在很大差异。本文档重点介绍了这些重要差异。
 
 >[!NOTE]
->本文档重点介绍了对 AEM 整体的显著更改。有关特定于解决方案的更改，请参阅：
+>本文档重点介绍了对 AEM 整体的显著更改。有关更多信息和特定于解决方案的更改，请参阅：
 >
->* [对 AEM 云服务中的 AEM Sites 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
->* [对 AEM 云服务中的 AEM Assets 的显著更改](/help/assets/assets-cloud-changes.md)
+>* [Adobe Experience Manager 云服务简介](/help/overview/introduction.md)
+>* 与先前版本相比，Adobe Experience Manager 云服务具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager 云服务[架构](/help/core-concepts/architecture.md)
+>* [对 Sites 作为 AEM 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+>* [对 AEM Assets 云服务的显著更改](/help/assets/assets-cloud-changes.md)
 
 
 主要区别包括以下方面：
 
 * [/apps 和 /libs 在运行时不可更改](#apps-libs-immutable)
+
 * [OSGi 包和设置必须基于存储库](#osgi)
+
 * [不允许更改发布存储库](#changes-to-publish-repo)
+
 * [不允许自定义运行模式](#custom-runmodes)
+
 * [删除了复制代理](#replication-agents)
+
 * [删除了经典 UI](#classic-ui)
+
 * [发布端交付](#publish-side-delivery)
+
 * [资产处理和交付](#asset-handling)
 
 ## /apps 和 /libs 在运行时不可更改 {#apps-libs-immutable}
