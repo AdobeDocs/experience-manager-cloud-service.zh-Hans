@@ -2,9 +2,9 @@
 title: Adobe Experience Manager为Cloud Service的叠加
 description: AEM作为Cloud Service使用叠加原则允许您扩展和自定义控制台和其他功能
 translation-type: tm+mt
-source-git-commit: e9fa89753289563edd59e3d75413c90efe3ff0b2
+source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
       * 在下重建相 `/libs` 应的结 `/apps`构。
 
-         这不需要1:1副本，Sling Resource Mergare [将用](/help/implementing/developing/introduction/sling-resource-merger.md) “Sling Resource Mergare”来交叉引用所需的原始定义。 Sling Resource Merager通过差异（差异）机制提供访问和合并资源的服务。
+         这不需要1:1副本，因为Sling Resource Mergare [用于交叉引用](/help/implementing/developing/introduction/sling-resource-merger.md) 所需的原始定义。 Sling Resource Merager通过差异（差异）机制提供访问和合并资源的服务。
 
       * 在下进行任何更改 `/apps`。
    * 优势
