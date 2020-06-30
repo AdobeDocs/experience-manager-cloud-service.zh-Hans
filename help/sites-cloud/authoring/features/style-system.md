@@ -2,10 +2,10 @@
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 translation-type: tm+mt
-source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 100%
+source-wordcount: '1329'
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,6 @@ ht-degree: 100%
    * **样式可以合并：**&#x200B;允许一次选择该组中的多个样式。
    * **样式名称：**&#x200B;在配置组件样式时将向内容作者显示的样式描述。
    * **CSS 类：**&#x200B;与样式关联的 CSS 类的实际名称。
-
    使用拖动手柄可调整组以及组中样式的顺序。使用添加或删除图标可添加或者删除组或组中的样式。
 
 >[!CAUTION]
@@ -117,21 +116,27 @@ ht-degree: 100%
 
 ### 在“设计”对话框中启用“样式”选项卡 {#enable-styles-tab-design}
 
-为了使组件能够与 AEM 的样式系统结合使用并在其“设计”对话框中显示“样式”选项卡，组件开发人员必须通过对组件进行以下设置来包含“样式”选项卡：
+要使组件能够与AEM的样式系统一起使用并在其设计对话框中显示样式选项卡，组件开发人员必须在组件上包含具有以下设置的样式选项卡：
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>这通过 [Sling](/help/implementing/developing/introduction/overlays.md)Resource Merabier使用 [叠加](/help/implementing/developing/introduction/sling-resource-merger.md)。
 
 配置组件后，由页面作者配置的样式将由 AEM 自动插入到装饰元素，AEM 会自动在每个可编辑的组件周围包裹该装饰元素。组件本身不需要执行任何操作即可实现这一点。
 
 ### 在“编辑”对话框中启用“样式”选项卡 {#enable-styles-tab-edit}
 
-“编辑”对话框中的可选“样式”选项卡也可以使用。与“设计”对话框选项卡不同，“编辑”对话框中的选项卡对于样式系统的正常运行来说并不是必需的，但它是内容作者设置样式的可选替代界面。
+“编辑”对话框中的可选“样式”选项卡也可以使用。与“设计对话框”选项卡不同，“编辑对话框”中的选项卡对于样式系统的功能而言并非必不可少，但是对于内容作者来说，它是设置样式的可选替代界面。
 
 可以采用与“设计”对话框选项卡类似的方式包括“编辑”对话框选项卡：
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>这通过 [Sling](/help/implementing/developing/introduction/overlays.md)Resource Merabier使用 [叠加](/help/implementing/developing/introduction/sling-resource-merger.md)。
 
 >[!NOTE]
 >
@@ -152,7 +157,6 @@ ht-degree: 100%
 >1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
 >1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
-
 >
 
 
