@@ -2,9 +2,9 @@
 title: 以Adobe Experience Manager中的Sling资源合并为Cloud Service
 description: Sling Resource Merager提供访问和合并资源的服务
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 >
 >Sling Resource Merage及相关方法只能与Granite一 [起使用](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)。 这也意味着它仅适用于标准的触屏优化UI; 尤其是，以这种方式定义的重写仅适用于组件的触屏启用对话框。
 >
->其他区域（包括触屏优化组件或经典UI的其他方面）的叠加／覆盖涉及将相应的节点和结构从原始节点复制到定义自定义的位置。
+>其他区域（包括触屏支持组件的其他方面）的叠加／覆盖涉及将相应的节点和结构从原始节点复制到定义自定义的位置。
 
 ### AEM目标 {#goals-for-aem}
 
@@ -61,7 +61,6 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
    >
    >
 1. 在 `/apps`
-
 >
 
 
@@ -210,7 +209,6 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 
       * 类型: `String[]`
       * value: 要隐藏／忽略的子节点的列表( `/libs`如中定义)
-
       通配符&amp;ast; 可用于隐藏／忽略所有子节点。
 
 
