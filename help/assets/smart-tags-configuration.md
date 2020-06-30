@@ -3,9 +3,9 @@ title: 增强的智能标记
 description: 使用Adobe Sensei的AI和ML服务应用情境式和描述性商业标签，以提高资产发现和内容速度。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1009'
 ht-degree: 7%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 7%
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
-4. Post-GA, if time permits, create a video.
 -->
 
 ## 与Adobe Developer Console集成 {#aio-integration}
 
 在使用SCS标记图像之前，请使用Adobe [!DNL Adobe Experience Manager] 开发人员控制台与智能标记服务集成。 在后端，服务器在将 [!DNL Experience Manager] 您的请求转发到服务之前，使用Adobe Developer Console网关验证您的服务凭据。
 
-* 在中创建配 [!DNL Experience Manager] 置以生成公钥。 获取用于OAuth集成的公共证书。
-* 在Adobe开发人员控制台中创建集成并上传生成的公钥。
-* 使用Adobe [!DNL Experience Manager] 开发人员控制台中的API密钥和其他凭据配置您的实例。
-* （可选）在资产上传时启用自动标记。
+* 在中创建配 [!DNL Experience Manager] 置以生成公钥。 [获取用于OAuth集成](#obtain-public-certificate) 的公共证书。
+* [在Adobe Developer Console中创建集成](#create-aio-integration) ，并上传生成的公钥。
+* [使用Adobe](#configure-smart-content-service) Developer Console中 [!DNL Experience Manager] 的API密钥和其他凭据在实例中配置智能标记。
+* [测试配置](#validate-the-configuration)。
+* [证书过期后重新配置](#certrenew)。
 
 ### Adobe Developer Console集成的先决条件 {#prerequisite-for-aio-integration}
 
@@ -54,33 +54,16 @@ ht-degree: 7%
 
    ![Experience Manager智能标记创建公钥](assets/aem_smarttags-config1.png)
 
-### 在证书过期时重新配置 {#certrenew}
-
-证书到期后，它不再受信任。 要添加新证书，请执行以下步骤。 无法续订过期的证书。
-
-1. Log in your [!DNL Experience Manager] deployment as an administrator. 单击“ **[!UICONTROL 工具]** ”>“安 **[!UICONTROL 全]** ” **[!UICONTROL >“]**&#x200B;用户”。
-
-1. 找到并单 **[!UICONTROL 击dam-update-service用户]** 。 单击“密 **[!UICONTROL 钥库]** ”选项卡。
-1. 删除已过期 **[!UICONTROL 证书的]** 现有相似性搜索密钥库。 Click **[!UICONTROL Save &amp; Close]**.
-
-   ![删除密钥库中现有的相似性搜索条目以添加新的安全证书](assets/smarttags_delete_similaritysearch_keystore.png)
-
-   *图： 删除密钥库`similaritysearch`中的现有条目以添加新的安全证书。*
-
-1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**。 打开可用的智能标记配置。 要下载公共证书，请单击“下 **[!UICONTROL 载公共证书”]**。
-
-1. 访 [问https://console.adobe.io](https://console.adobe.io) ，然后导航到项目中的现有服务。 上传新证书并进行配置。 有关配置的详细信息，请参阅创建Adobe开 [发人员控制台集成中的说明](#create-aio-integration)。
-
 ### 创建集成 {#create-aio-integration}
 
 要使用智能标记，请在Adobe开发人员控制台中创建集成，以生成API密钥、技术帐户ID、组织ID和客户端机密。
 
 1. 在浏 [览器](https://console.adobe.io/) 中访问https://console.adobe.io。 选择相应的帐户并验证关联的组织角色是系统管理员。
 1. 创建具有任何所需名称的项目。 单击 **[!UICONTROL 添加API]**。
-1. 在添加 **[!UICONTROL API页面]** ，选择 **[!UICONTROL Experience Cloud]** ，然后选 **[!UICONTROL 择智能内容]**。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在“添 **[!UICONTROL 加API”页]** ，选择 **[!UICONTROL Experience Cloud]** ，然 **[!UICONTROL 后选择智能内容]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 1. 选择 **[!UICONTROL 上传您的公钥]**。 提供从下载的证书文件 [!DNL Experience Manager]。 将显 [!UICONTROL 示一条消息，成功上传] 公钥。 单击&#x200B;**[!UICONTROL 下一步]**。
 1. [!UICONTROL 创建新的服务帐户(JWT)凭据页] ，将显示刚刚配置的服务帐户的公钥。 单击&#x200B;**[!UICONTROL 下一步]**。
-1. 在“选 **[!UICONTROL 择产品用户档案]** ”页面上，选 **[!UICONTROL 择智能内容服务]**。 单击 **[!UICONTROL 保存配置的API]**。 页面会显示有关配置的更多信息。 在中进一步配置智能标记时，请打开此页以复制这些值并在Experience Manager中添加这些值 [!DNL Experience Manager]。
+1. 在“选 **[!UICONTROL 择产品用户档案]** ”页面上，选 **[!UICONTROL 择智能内容服务]**。 单击 **[!UICONTROL 保存配置的API]**。 页面会显示有关配置的更多信息。 在中进一步配置智能标记时，请保持此页面处于打开状态，以复制这些值并在Experience Manager中添加 [!DNL Experience Manager]这些。
 
    ![在“概述”选项卡中，您可以查看为集成提供的信息。](assets/integration_details.png)
 
@@ -104,6 +87,23 @@ ht-degree: 7%
 1. 选择智能标记配置。 单击工 **[!UICONTROL 具栏中的]** “检查运行状况”。 单击&#x200B;**[!UICONTROL 检查]**。显示“正常 [!UICONTROL 配置] ”消息的对话框确认配置正在工作。
 
 ![验证智能标记配置](assets/smart-tag-config-validation.png)
+
+### 在证书过期时重新配置 {#certrenew}
+
+证书到期后，它不再受信任。 要添加新证书，请执行以下步骤。 无法续订过期的证书。
+
+1. Log in your [!DNL Experience Manager] deployment as an administrator. 单击“ **[!UICONTROL 工具]** ”>“安 **[!UICONTROL 全]** ” **[!UICONTROL >“]**&#x200B;用户”。
+
+1. 找到并单 **[!UICONTROL 击dam-update-service用户]** 。 单击“密 **[!UICONTROL 钥库]** ”选项卡。
+1. 删除已过期 **[!UICONTROL 证书的]** 现有相似性搜索密钥库。 Click **[!UICONTROL Save &amp; Close]**.
+
+   ![删除密钥库中现有的相似性搜索条目以添加新的安全证书](assets/smarttags_delete_similaritysearch_keystore.png)
+
+   *图： 删除密钥库`similaritysearch`中的现有条目以添加新的安全证书。*
+
+1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**。 打开可用的智能标记配置。 要下载公共证书，请单击“下 **[!UICONTROL 载公共证书”]**。
+
+1. 访 [问https://console.adobe.io](https://console.adobe.io) ，然后导航到项目中的现有服务。 上传新证书并进行配置。 有关配置的详细信息，请参阅创建Adobe开 [发人员控制台集成中的说明](#create-aio-integration)。
 
 ## 为新上传的资产启用智能标记（可选） {#enable-smart-tagging-for-uploaded-assets}
 
