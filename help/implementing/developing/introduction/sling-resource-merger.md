@@ -2,9 +2,9 @@
 title: 以Adobe Experience Manager中的Sling资源合并为Cloud Service
 description: Sling Resource Merager提供访问和合并资源的服务
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Sling Resource Merager提供访问和合并资源的服务。 它为以下两者提供差异（差异）机制：
 
-* **[使用](/help/implementing/developing/introduction/overlays.md)**已配置的搜索路[径覆盖资源](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths)。
+* **[使用](/help/implementing/developing/introduction/overlays.md)**搜索路径的资[源叠加](/help/implementing/developing/introduction/overlays.md#search-paths)。
 
 * **使用** 资源类型层次结构(通过属性`cq:dialog`)覆盖触屏优化UI()的组件对话框 `sling:resourceSuperType`。
 
@@ -30,9 +30,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 
 >[!CAUTION]
 >
->Sling Resource Merage及相关方法只能与Granite一 [起使用](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)。 这也意味着它仅适用于标准的触屏优化UI; 尤其是，以这种方式定义的重写仅适用于组件的触屏启用对话框。
->
->其他区域（包括触屏支持组件的其他方面）的叠加／覆盖涉及将相应的节点和结构从原始节点复制到定义自定义的位置。
+>Sling资源合并和相关方法只能用于触屏优化UI(这是AEM作为Cloud Service可用的唯一UI)。
 
 ### AEM目标 {#goals-for-aem}
 
@@ -43,26 +41,17 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 
    使用Sling Resource Merage时，不建议从中复制整个结构， `/libs` 因为这会导致在自定义中保留过多信息(通常 `/apps`)。 在以任何方式升级系统时，重复信息会不必要地增加出现问题的可能性。
 
->[!NOTE]
->
->覆盖不取决于搜索路径，它们使用属性 `sling:resourceSuperType` 建立连接。
->
->但是，重写通常在下 `/apps`定义，因为AEM的最佳实践是在下定义自定义 `/apps`; 这是因为你不能改变下面的任何 `/libs`。
-
 >[!CAUTION]
 >
 >您 ***不得*** 更改路径中的任 `/libs` 何内容。
 >
->这是因为下次升级实 `/libs` 例时，内容会被覆盖（而应用修补程序或功能包时，内容很可能会被覆盖）。
+>这是因为，只要对实例 `/libs` 应用升级，其内容就会被覆盖。
 >
->建议的配置和其他更改方法是：
->
->1. 在下面重新创建所需的项(即，当它存在 `/libs`时) `/apps`
+>* 叠加取决于 [搜索路径](/help/implementing/developing/introduction/overlays.md#search-paths)。
    >
    >
-1. 在 `/apps`
->
-
+* 覆盖不取决于搜索路径，它们使用属性 `sling:resourceSuperType` 建立连接。
+   >  但是，重写通常在下定 `/apps`义，因为AEM的最佳实践是在下定义自定义 `/apps`; 这是因为你不能改变下面的任何 `/libs`。
 
 
 ### 属性 {#properties}
