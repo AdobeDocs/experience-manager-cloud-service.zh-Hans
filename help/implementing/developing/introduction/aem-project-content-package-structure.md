@@ -1,10 +1,10 @@
 ---
 title: AEM 项目结构
-description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
+description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2530'
 ht-degree: 17%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 17%
 >
 >熟悉基本的 [AEM Project Archetype使用](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [FileVault Content Maven插件，因为本文是在这些学习和概念的基础上构建的](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) 。
 
-本文概述了Adobe Experience Manager Maven项目为AEM Cloud Service兼容所需的更改，确保它们遵守可变内容和不可变内容的拆分； 建立必要的依赖关系以创建不冲突的确定性部署； 它们被装在一个可展开的结构里。
+本文概述了将Maven项目Adobe Experience Manager为AEMCloud Service兼容所需的更改，具体方法是确保它们遵守可变内容和不可变内容的拆分； 建立必要的依赖关系以创建不冲突的确定性部署； 它们被装在一个可展开的结构里。
 
 AEM应用程序部署必须由单个AEM包组成。 此包应包含子包，子包包含应用程序运行所需的一切，包括代码、配置和任何支持的基线内容。
 
@@ -46,7 +46,7 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
 
 >[!TIP]
 >
->有关在AEM中作为云服务进行索引的更多详细信息，请参阅文档 [内容搜索和索引。](/help/operations/indexing.md)
+>有关在AEM中作为Cloud Service建立索引的更多详细信息，请参阅 [文档内容搜索和索引。](/help/operations/indexing.md)
 
 ## 推荐的包结构 {#recommended-package-structure}
 
@@ -59,13 +59,13 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
 + 该 `ui.apps` 包或代码包包含要部署且仅部署到的所有代码 `/apps`。 软件包的常 `ui.apps` 见元素包括但不限于：
    + OSGi捆绑
       + `/apps/my-app/install`
-   + OSGi配置
+   + [OSGi配置](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + HTL脚本
+   + [HTL脚本](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript和CSS（通过客户端库）
       + `/apps/my-app/clientlibs`
-   + /libs的叠加
+   + [/libs的](/help/implementing/developing/introduction/overlays.md) 叠加
       + `/apps/cq`, `/apps/dam/`, 等.
    + 回退上下文感知配置
       + `/apps/settings`
@@ -95,7 +95,7 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
 
    现在，包是使用Maven FileVault包 [Maven插件的嵌入式配置](#embeddeds)，而不是使用配置 `<subPackages>` 提供的。
 
-   对于复杂的Experience Manager部署，可能需要在AEM中创建 `ui.apps` 多个 `ui.content` 和项目／包，它们代表特定的站点或租户。 如果这样做，则确保可变内容和不可变内容之间的拆分得到遵守，并将所需的内容包添加为容器内容包 `all` 中的子包。
+   对于复杂的Experience Manager部署，可能希望在AEM中创 `ui.apps` 建多 `ui.content` 个代表特定站点或租户的项目／包。 如果这样做，则确保可变内容和不可变内容之间的拆分得到遵守，并将所需的内容包添加为容器内容包 `all` 中的子包。
 
    例如，复杂的部署内容包结构可能如下：
 
@@ -143,7 +143,7 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
 + 组
 + ACL
 
-回购初始化脚本存储 `scripts` 为OSGi工厂 `RepositoryInitializer` 配置的条目，因此，可以通过运行模式隐式定位，从而允许AEM作者和AEM发布服务的回购初始化脚本之间，甚至Env（开发、舞台和产品）之间的差异。
+回购初始化脚本存储 `scripts` 为OSGi工厂 `RepositoryInitializer` 配置的条目，因此，可以通过运行模式隐式定位，允许AEM Author和AEM Publish服务的回购初始化脚本之间，甚至Env（开发、舞台和产品）之间的差异。
 
 请注意，在定义“用户”和“组”时，只有组被视为应用程序的一部分，并且应在此处定义其功能的组成部分。 在AEM中，组织用户和用户组仍应在运行时进行定义； 例如，如果自定义工作流将工作分配给指定的组，则该组应通过AEM应用程序中的回购初始化进行定义，但是，如果分组只是组织形式（如“Wendy&#39;s Team”和“Sean&#39;s Team”），则这些工作流是在AEM中最佳定义并在运行时进行管理的。
 
@@ -210,7 +210,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 例如，包含AEM作者和发布特定包的部署可能如下所示：
 
-+ `all` 容器包嵌入以下包，以创建单个部署伪像
++ `all` 容器包嵌入以下包，以创建单一部署伪像
    + `ui.apps` 已嵌入 `/apps/my-app-packages/application/install` 到部署代码中，同时发布到AEM作者和AEM发布
    + `ui.apps.author` 嵌入到 `/apps/my-app-packages/application/install.author` 仅部署代码到AEM作者
    + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 将内容和配置同时部署到AEM作者和AEM发布
