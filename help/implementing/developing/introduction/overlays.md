@@ -2,9 +2,9 @@
 title: Adobe Experience Manager为Cloud Service的叠加
 description: AEM作为Cloud Service使用叠加原则允许您扩展和自定义控制台和其他功能
 translation-type: tm+mt
-source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
 叠加是可用于许多上下文的术语。 在此上下文(将AEM扩展为Cloud Service)中，叠加意味着采用预定义的功能并将您自己的定义强加到该之上（以自定义标准功能）。
 
-在标准实例中，预定义的功 `/libs` 能保留在分支下，建议在分支下定义叠加(自定义 `/apps` )。 AEM使用搜索路径来查找资源，首先搜索 `/apps` 分支，然后 `/libs` 搜索分支( [可以配置搜索路径](#configuring-the-search-paths))。 此机制意味着您的叠加（以及在此处定义的自定义）将具有优先级。
+在标准实例中，预定义的功 `/libs` 能保留在下面，建议在分支下定义叠加(自定义 `/apps` )(使用 [搜索路径解析资](#search-paths) 源)。
 
 * 触屏优化UI使用与 [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)相关的叠加：
 
@@ -49,38 +49,15 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* 您 ***不得在分支&#x200B;*中进行更改。您`/libs`**所做的任何更改都可能丢失，因为只要您：
-
-   * 实例升级
-   * 应用修补程序
-   * 安装功能包
+* 您不 ***得在分支&#x200B;*中进行更改。您`/libs`**所做的任何更改都可能丢失，因为只要对实例应用升级，该分支就会承担更改的责任。
 
 * 他们将您所做的更改集中在一个位置； 使您能根据需要更轻松地跟踪、迁移、备份和／或调试更改。
 
-## 配置搜索路径 {#configuring-the-search-paths}
+## 搜索路径 {#search-paths}
 
-对于叠加，交付的资源是检索到的资源和属性的聚合，具体取决于可定义的搜索路径：
+AEM使用搜索路径来查找资源，首先搜索（默认情况下）分支， `/apps` 然后搜索分 `/libs` 支。 此机制意味着您的叠加(以 `/apps` 及在其中定义的自定义)将具有优先级。
 
-* 在Apache Sling **Resource Resolver Factory的OSGi配** 置中定义的资 [源解析器搜索路径](/help/implementing/deploying/configuring-osgi.md)****。
-
-   * 搜索路径的自上而下的顺序表示它们各自的优先级。
-   * 在标准安装中，主 `/apps`默认 `/libs` 值为，因此 `/apps` 其内容的优先级高于 `/libs` 其(即它 *叠加* )。
-
-* 两个服务用户需要对存储脚本的位置进行JCR:READ访问。 这些用户是： components-search-service(由com.day.cq.wcm.coreto访问／缓存组件使用)和sling-scripting（由org.apache.sling.servlets.resolver用于查找servlet）。
-* 还必须根据您放置脚本的位置配置以下配置（在本例中，位于/etc、/libs或/apps下）。
-
-   ```
-   PID = org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
-   resource.resolver.searchpath=["/etc","/apps","/libs"]
-   resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
-   ```
-
-* 最后，还必须配置Servlet解析程序（在本例中，还要添加/etc）
-
-   ```
-   PID = org.apache.sling.servlets.resolver.SlingServletResolver
-   servletresolver.paths=["/bin/","/libs/","/apps/","/etc/","/system/","/index.servlet","/login.servlet","/services/"]
-   ```
+对于叠加，交付的资源是检索到的资源和属性的聚合，具体取决于OSGi配置中定义的搜索路径。
 
 <!--
 ## Example of Usage {#example-of-usage}
