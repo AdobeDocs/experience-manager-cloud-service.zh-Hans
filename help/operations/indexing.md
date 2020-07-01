@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1475'
 ht-degree: 2%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # 内容搜索与索引 {#indexing}
 
-## AEM作为云服务的更改 {#changes-in-aem-as-a-cloud-service}
+## AEM中作为Cloud Service的更改 {#changes-in-aem-as-a-cloud-service}
 
-将AEM作为云服务，Adobe将从以AEM实例为中心的模型转变为基于服务的视图，该容器由云管理器中的CI/CD管道驱动，具有n-x AEM。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果不指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
+以AEM为Cloud Service,Adobe正从以AEM实例为中心的模型转变为基于服务的视图，其中n-x AEM容器由云管理器中的CI/CD管道驱动。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果不指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
 
 以下是与AEM 6.5及更早版本相比的主要更改的列表:
 
@@ -32,13 +32,11 @@ ht-degree: 2%
 
 1. 索引配置通过部署进行更改。 索引定义更改的配置方式与其他内容更改类似。
 
-1. 在AEM作为云服务的高级别上，引入蓝绿 [部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引： 一个用于旧版本（蓝色），另一个用于新版本（绿色）。
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+1. 在AEM作为Cloud Service的高层，引入蓝绿 [部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引： 一个用于旧版本（蓝色），另一个用于新版本（绿色）。
 
 1. 客户可以在Cloud Manager构建页面上查看索引编制作业是否完成，并在新版本准备就绪后收到通知。
 
-1. 限制： 目前，仅lucene类型的索引支持AEM云服务形式的索引管理。
+1. 限制： 目前，仅lucene类型的索引支持将AEM作为Cloud Service进行索引管理。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -56,7 +54,7 @@ AS NOTE: the above is internal for now.
 1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本
 1. 删除冗余或过时的现有索引。
 
-对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为云服务部署到AEM文档](/help/implementing/deploying/overview.md)。
+对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新的索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为Cloud Service文档部署到AEM](/help/implementing/deploying/overview.md)。
 
 ### 准备新的索引定义 {#preparing-the-new-index-definition}
 
@@ -86,7 +84,7 @@ AS NOTE: the above is internal for now.
 
 >[!TIP]
 >
->有关AEM作为云服务所需的包结构的更多详细信息，请参阅文档 [AEM项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>有关AEM作为Cloud Service所需的包结构的更多详细信息，请参 [阅文档AEM项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 使用蓝绿部署的索引管理 {#index-management-using-blue-green-deployments}
 
@@ -126,7 +124,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` 需要AEM作为云服务来将其标记为现有索引的替换。
+> `<indexName>-custom-<customerVersionNumber>` 需要AEM作为Cloud Service来将其标记为现有索引的替换。
 
 | 索引 | 现成索引 | 在版本1中使用 | 在版本2中使用 |
 |---|---|---|---|
@@ -161,7 +159,9 @@ AS NOTE: the above is internal for now.
 
 要添加名为“/oak:index/acmeProduct-custom-1”的索引以用于应用程序的新版本和更高版本，需要按照以下方式配置该索引：
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+这通过在索引名称前预定自定义标识符，后跟点(**)。**). 标识符长度必须介于1到4个字符之间。
 
 如上所述，这确保索引只被新版本的应用程序使用。
 
