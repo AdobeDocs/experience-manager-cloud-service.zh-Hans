@@ -1,53 +1,53 @@
 ---
-title: AEMDispatcher转换工具
-description: AEMDispatcher转换工具
+title: AEM Dispatcher Converter 工具
+description: AEM Dispatcher Converter 工具
 translation-type: tm+mt
 source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 12%
+ht-degree: 94%
 
 ---
 
 
-# AEMDispatcher转换器 {#introduction}
+# AEM Dispatcher Converter {#introduction}
 
-Adobe Experience ManagerDispatcher转换器将现有AMSDispatcher配置转换为AEM作为Cloud ServiceDispatcher配置。
+Adobe Experience Manager Dispatcher Converter 可以将现有 AMS Dispatcher 配置转换为 AEM 云服务 Dispatcher 配置。
 
-## Dispatcher简介 {#introduction-dispatcher}
+## Dispatcher 简介 {#introduction-dispatcher}
 
 Dispatcher 是 Adobe Experience Manager 的缓存和/或负载平衡工具。使用 AEM 的 Dispatcher 还有助于保护 AEM 服务器免受攻击。因此，您可以通过将 Dispatcher 与企业级 Web 服务器结合使用来提高 AEM 实例的安全性。
 
 >[!NOTE]
->The most common use of Dispatcher is to cache responses from an **AEM publish instance**, to increase the responsiveness and security of your externally facing published website.
+>Dispatcher 最常见的用法是缓存来自 **AEM 发布实例**&#x200B;的响应，从而提高面向外部发布的网站的响应速度和安全性。
 
-请参阅 [Dispatcher概述](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) ，了解调度程序如何执行缓存、返回文档和执行负载平衡。
+请参阅 [Dispatcher 概述](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)，了解有关 Dispatcher 如何执行缓存，返回文档和执行负载平衡的信息。
 
-### Apache和Dispatcher配置与测试 {#dispatcher-configurations-cloud}
+### Apache 和 Dispatcher 配置和测试{#dispatcher-configurations-cloud}
 
-您必须了解如何将AEM构建为Cloud ServiceApache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行它。
+您必须了解如何构建 AEM 云服务 Apache 和 Dispatcher 配置，以及在部署到云环境之前，如何在本地验证和运行该配置。
 
-有关详 [细信息，请参阅](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) “云”中的Dispatcher。
+有关更多信息，请参阅[云中的 Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
-## AEMDispatcher转换器 {#aem-dispatcher-converter}
+## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
-AEMDispatcher转换器是用于将现有AMSDispatcher配置转换为AEM的实用程序，作为Cloud ServiceDispatcher配置。 此实用程序用于AMS实例。
+AEM Dispatcher Converter 是一个实用程序，可用于将现有 AMS Dispatcher 配置转换为 AEM 云服务 Dispatcher 配置。此实用程序适用于 AMS 实例。
 
-实现的转换器 **是AEMDispatcherConfigConverter** ，它遵循转换准则。
+实施的转换器是 **AEMDispatcherConfigConverter**，它遵循转换准则。
 
-请参 [阅将AMS转换为Adobe Experience Manager作为Cloud ServiceDispatcher配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration) ，以将AMS转换为Adobe Experience Manager作为Cloud ServiceDispatcher配置。
+请参阅[将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration)，了解如何将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher。
 
-## 使用AEMDispatcher转换器 {#using-dispatcher-converter}
+## 使用 AEM Dispatcher Converter {#using-dispatcher-converter}
 
-以下部分介绍使用AEMDispatcher转换器工具所需的资源和信息。
+以下部分介绍了使用 AEM Dispatcher Converter 工具所需的资源和信息。
 
-请参阅 **[Git资源： AEMCloud ServiceDispatcher转换器](https://github.com/adobe/aem-cloud-service-dispatcher-converter)**，了解此工具的用法、限制和疑难解答。
+请参阅 **[Git 资源：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-dispatcher-converter)**，了解有关此工具的使用方法、限制和疑难解答的信息。
 
 >[!IMPORTANT]
->AEMDispatcher转换器是使用Python 3.7.3开发的。建议安装Python 3.5或更高版本。
+>AEM Dispatcher Converter 是使用 Python 3.7.3 开发的。建议安装 Python 3.5 或更高版本。
 
 ## 限制 {#limitations}
 
-AEMDispatcher转换器工作的假设条件是提供的调度程序配置文件夹的结构与Cloud Manager调度程序配置中描述的结构相似。
+AEM Dispatcher Converter 的工作原理是假定提供的 Dispatcher 配置文件夹的结构与 Cloud Manager Dispatcher 配置中描述的结构相似。
 
 
