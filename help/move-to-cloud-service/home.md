@@ -2,10 +2,10 @@
 title: 移动到 AEM 云服务
 description: 有关将 Adobe Experience Manager 云服务作为云服务移动到 AEM 的自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 76%
+source-wordcount: '510'
+ht-degree: 75%
 
 ---
 
@@ -47,7 +47,6 @@ AEM 云服务为 Experience Manager Sites 和 Assets 提供了可扩展、安全
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何以Experience Manager为Cloud Service创作和管理站点。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何将Experience Manager资产用作Cloud Service并加以管理。 |
-| [移动到 AEM 云服务用户指南](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何将Experience Manager自定义为Cloud Service部署，包括开发和部署主题。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将Connectors作为Experience Manager集成到Cloud Service中。 |
 | [操作用户指南](/help/operations/home.md) | 了解Experience Manager作为Cloud Service的后端操作，如索引和维护任务。 |
