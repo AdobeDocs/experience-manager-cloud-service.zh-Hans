@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 云服务连接器
 description: Adobe Experience Manager 云服务连接器自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 68%
+source-wordcount: '379'
+ht-degree: 70%
 
 ---
 
@@ -34,7 +34,6 @@ ht-degree: 68%
 | [Assets 用户指南](/help/assets/home.md) | 了解如何将Experience Manager资产用作Cloud Service并加以管理。 |
 | [迁移到 AEM 云服务](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何将Experience Manager自定义为Cloud Service部署，包括开发和部署主题。 |
-| [连接器用户指南](/help/connectors/home.md) | 了解如何将Connectors作为Experience Manager集成到Cloud Service中。 |
 | [操作用户指南](/help/operations/home.md) | 了解Experience Manager作为Cloud Service的后端操作，如索引和维护任务。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
