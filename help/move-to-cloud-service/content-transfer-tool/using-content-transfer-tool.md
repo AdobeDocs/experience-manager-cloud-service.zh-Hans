@@ -2,7 +2,7 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 91%
@@ -236,7 +236,8 @@ ht-degree: 91%
 执行以下命令
 
 >[!NOTE]
-> `--verbose` 标记在报告从中引用 Blob 的节点路径时需要使用。
+>
+>`--verbose`标记在报告从中引用 Blob 的节点路径时需要使用。
 
 **对于存储库 AEM 6.5（Oak 1.8 及更低版本）**
 
