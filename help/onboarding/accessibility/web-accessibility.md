@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 云服务和 Web 无障碍准则
 description: 介绍 Adobe Experience Manager 云服务和 Web 无障碍准则
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Adobe Experience Manager 云服务符合[万维网联盟](#world-wide-web-consor
 
 >[!NOTE]
 >
-> 有关更多详细信息，请参阅 [Adobe 解决方案的“无障碍合规性”报告](https://www.adobe.com/accessibility/compliance.html)。
+>有关更多详细信息，请参阅 [Adobe 解决方案的“无障碍合规性”报告](https://www.adobe.com/accessibility/compliance.html)。
 
 ## 万维网联盟 {#world-wide-web-consortium}
 
@@ -49,7 +49,7 @@ WCAG 2.1 提供了[涵盖无障碍级别和如何符合这些级别的准则（�
 * [创建无障碍内容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)详细介绍了这些内容与 AEM 的关系。
 
 >[!NOTE]
-> 
+>
 >在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
 
 <!--
