@@ -3,7 +3,7 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 3%
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> 此处介绍的资产处理将替 `DAM Update Asset` 代先前版本的Experience Manager中存在的工作流模型。 大多数标准演绎版生成和元数据相关步骤都由资产microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
+>此处介绍的资产处理将替 `DAM Update Asset` 代先前版本的Experience Manager中存在的工作流模型。 大多数标准演绎版生成和元数据相关步骤都由资产microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
 
 ## 资产处理入门 {#get-started}
 
@@ -99,9 +99,9 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 #### MIME类型包含规则 {#mime-type-inclusion-rules}
 
-当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产（阻止列表）生成此特定再现。
+当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。
 
-否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版（允许列表）。
+否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
 
 #### 特殊FPO再现 {#special-fpo-rendition}
 
@@ -169,7 +169,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 >[!NOTE]
 >
 >自定义工作流运行器的配置是OSGi服务的配置。 有 [关如何部署OSGi配置](/help/implementing/deploying/overview.md) ，请参阅部署到Experience Manager。
-> 与AEM的内部部署和托管服务部署不同，OSGi Web控制台在云服务部署中不直接可用。
+>与AEM的内部部署和托管服务部署不同，OSGi Web控制台在云服务部署中不直接可用。
 
 有关在后处理工作流中可以使用哪个标准工作流步骤的详细信息，请参 [阅开发人员参考中的后处理工作流中](developer-reference-material-apis.md#post-processing-workflows-steps) 的工作流步骤。
 
