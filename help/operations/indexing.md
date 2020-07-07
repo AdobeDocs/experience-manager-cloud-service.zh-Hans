@@ -2,7 +2,7 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 translation-type: tm+mt
-source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1475'
 ht-degree: 2%
@@ -54,7 +54,7 @@ AS NOTE: the above is internal for now.
 1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本
 1. 删除冗余或过时的现有索引。
 
-对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新的索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为Cloud Service文档部署到AEM](/help/implementing/deploying/overview.md)。
+对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为Cloud Service文档部署到AEM](/help/implementing/deploying/overview.md)。
 
 ### 准备新的索引定义 {#preparing-the-new-index-definition}
 
@@ -72,7 +72,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> Jackrabbit Filevault Maven包插件版本1.1.0 **存在一个已知问题** ，它不允许您添加 `oak:index` 到的模块 `<packageType>application</packageType>`。 要解决此问题，请使 **用版本1.0.4**。
+>Jackrabbit Filevault Maven包插件版本1.1.0 **存在一个已知问题** ，它不允许您添加 `oak:index` 到的模块 `<packageType>application</packageType>`。 要解决此问题，请使 **用版本1.0.4**。
 
 索引定义现在标记为自定义和版本化：
 
@@ -124,7 +124,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` 需要AEM作为Cloud Service来将其标记为现有索引的替换。
+>`<indexName>-custom-<customerVersionNumber>` 需要AEM作为Cloud Service来将其标记为现有索引的替换。
 
 | 索引 | 现成索引 | 在版本1中使用 | 在版本2中使用 |
 |---|---|---|---|
