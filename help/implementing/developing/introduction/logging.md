@@ -2,17 +2,17 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
 # 记录{#logging}
 
-AEM作为云服务，是客户包含自定义代码的平台，可为其客户群创建独特的体验。 考虑到这一点，日志记录是在云环境上调试自定义代码(尤其是本地开发环境)的关键功能。
+AEM作为Cloud Service，是客户包含自定义代码以为其客户群创建独特体验的平台。 考虑到这一点，日志记录是在云环境上调试自定义代码(尤其是本地开发环境)的关键功能。
 
 
 <!-- ## Global Logging {#global-logging}
@@ -26,9 +26,9 @@ AEM作为云服务，是客户包含自定义代码的平台，可为其客户�
 * the format to be used when writing the log messages
 -->
 
-## AEM作为云服务日志记录 {#aem-as-a-cloud-service-logging}
+## AEM作为Cloud Service记录 {#aem-as-a-cloud-service-logging}
 
-AEM作为云服务优惠，您可以配置：
+AEM作为Cloud Service优惠，您可以配置：
 
 * 中央日志记录服务的全局参数
 * 请求数据记录； 请求信息的专用日志记录配置
@@ -40,16 +40,17 @@ AEM作为云服务优惠，您可以配置：
 
 >[!NOTE]
 >
->以云服务身份登录AEM基于Sling原则。 请参 [阅Sling Logging](https://sling.apache.org/site/logging.html) ，了解更多信息。
+>以Cloud Service身份登录AEM基于Sling原则。 请参 [阅Sling Logging](https://sling.apache.org/site/logging.html) ，了解更多信息。
 
-## AEM as Cloud Service Java日志记录 {#aem-as-a-cloud-service-java-logging}
+## AEM作为Cloud ServiceJava日志记录 {#aem-as-a-cloud-service-java-logging}
 
 ### 标准记录者与作者 {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> 如果需要，可以自定义这些配置，但标准配置适用于大多数安装。 但是，如果您需要自定义标准日志记录配置，请确保仅对环境进行此 `dev` 操作。
+>[!IMPORTANT]
+>
+>如果需要，可以自定义这些配置，但标准配置适用于大多数安装。 但是，如果您需要自定义标准日志记录配置，请确保仅对环境进行此 `dev` 操作。
 
-标准AEM中包含某些记录程序和作者，作为云服务安装。
+标准AEM中包含某些记录者和作者，作为Cloud Service安装。
 
 第一种情况是特殊情况，因为它同时控制 `request` 和日 `access` 志：
 
@@ -93,27 +94,27 @@ AEM作为云服务优惠，您可以配置：
 
 * 不链接到特定的编写器，因此将创建并使用具有默认配置的隐式编写器。
 
-**AEM作为云服务HTTP请求日志记录**
+**AEM作为Cloud ServiceHTTP请求日志记录**
 
 此处将注册对AEM WCM和存储库的所有访问请求。
 
 输出示例：
 
-**AEM作为云服务HTTP请求／响应访问日志**
+**AEM作为Cloud ServiceHTTP请求／响应访问日志**
 
 每个访问请求都在此处注册，并随响应一起注册。
 
 输出示例：
 
-**Apache Web Server/调度程序日志记录**
+**Apache Web Server/Dispatcher记录**
 
-这是用于调试Dispatcher问题的日志。 有关详细信息，请参 [阅调试Apache和调度程序配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/)。
+这是用于调试Dispatcher问题的日志。 有关详细信息，请参 [阅调试Apache和Dispatcher配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)。
 
 <!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
 
 leftover text from the last breakaway chunk (re dispatcher) -->
 
-就最新实践而言，建议您与AEM中当前存在的配置（作为Cloud Service Maven原型）保持一致。 这些设置为特定环境类型设置不同的日志设置和级别：
+就最新实践而言，建议您与AEM中当前存在的配置保持一致，将其作为Cloud ServiceMaven原型。 这些设置为特定环境类型设置不同的日志设置和级别：
 
 * 对 `local dev` 于和 `dev` 环境，将记录器设置为 **DEBUG** 级别。 `error.log`
 * 对 `stage`于，将记录器设置为 **WARN** 级别设置为 `error.log`
@@ -154,14 +155,14 @@ leftover text from the last breakaway chunk (re dispatcher) -->
 
 ### 个人服务的记者和作者 {#loggers-and-writers-for-individual-services}
 
-除了全局日志记录设置之外，AEM作为云服务还允许您为单个服务配置特定设置：
+除了全局日志记录设置之外，AEM作为Cloud Service还允许您为单个服务配置特定设置：
 
 * 特定日志记录级别
 * 记录器（提供日志消息的OSGi服务）
 
 这允许您将单个服务的日志消息渠道到单独的文件中。 这在开发或测试时特别有用； 例如，当您需要为特定服务增加日志级别时。
 
-AEM作为云服务，使用以下方式将日志消息写入文件：
+AEM作为Cloud Service使用以下内容将日志消息写入文件：
 
 1. OSGi **服务** （记录器）写入日志消息。
 1. 记 **录程序会采** 取此消息，并根据您的规范设置其格式。
@@ -192,13 +193,13 @@ AEM作为云服务，使用以下方式将日志消息写入文件：
 
 >[!NOTE]
 >
-> 要执行下面列出的配置更改，您需要在本地开发环境创建这些更改，然后将它们作为云服务实例推送到AEM。 有关如何执行此操作的更多信息，请 [参阅将AEM部署为云服务](/help/implementing/deploying/overview.md)。
+>要执行下面列出的配置更改，您需要在本地开发环境创建这些更改，然后将其作为Cloud Service实例推送到AEM。 有关如何执行此操作的更多信息，请参 [阅将作为Cloud Service部署到AEM](/help/implementing/deploying/overview.md)。
 
 **激活DEBUG日志级别**
 
 >[!WARNING]
 >
-> 全局激活DEBUG日志级别将生成大量难以筛选的信息。 建议仅为需要调试的服务启用它。 有关详细信息，请参 [阅个人服务的记录程序和作者](logging.md#loggers-and-writers-for-individual-services)。
+>全局激活DEBUG日志级别将生成大量难以筛选的信息。 建议仅为需要调试的服务启用它。 有关详细信息，请参 [阅个人服务的记录程序和作者](logging.md#loggers-and-writers-for-individual-services)。
 
 默认日志级别为INFO，即不记录DEBUG消息。
 要激活DEBUG日志级别，请设置
@@ -235,7 +236,7 @@ AEM作为云服务，使用以下方式将日志消息写入文件：
 
 >[!NOTE]
 >
->使用Adobe Experience Manager时，可以通过多种方法管理此类服务的配置设置。
+>使用Adobe Experience Manager时，有多种方法管理此类服务的配置设置。
 
 在某些情况下，您可能希望创建具有不同日志级别的自定义日志。 您可以通过以下方式在存储库中执行此操作：
 
