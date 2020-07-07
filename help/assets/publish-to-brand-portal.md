@@ -3,7 +3,7 @@ title: 将资产、文件夹和收藏集发布到 Brand Portal
 description: 将资产、文件夹和收藏集发布到 Brand Portal。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ ht-degree: 100%
 >[!NOTE]
 >
 >Adobe 建议实施错峰发布，最好在非高峰时段发布，这样 AEM 作者就不会占用过多的资源。
-
 
 ## 将资产发布到 Brand Portal {#publish-assets-to-bp}
 
@@ -110,7 +109,6 @@ ht-degree: 100%
          单击&#x200B;**下一步**。
 
       1. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中确认您的选择，然后单击&#x200B;**[!UICONTROL 发布到 Brand Portal]**。
-
    此时将显示一条消息，表明文件夹已排队等候发布到 Brand Portal。登录到 Brand Portal 界面可查看已发布的文件夹。
 
 1. **稍后发布文件夹**
@@ -187,7 +185,6 @@ ht-degree: 100%
 >无法将内容片段发布到 Brand Portal。因此，如果您在 AEM Assets 中选择内容片段，则&#x200B;**[!UICONTROL 发布到 Brand Portal]** 操作将不可用。
 >
 >如果将包含内容片段的收藏集从 AEM Assets 发布到 Brand Portal，则文件夹中除内容片段外的所有内容将复制到 Brand Portal 界面。
-
 
 ### 发布收藏集 {#publish-collections}
 
