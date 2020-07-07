@@ -1,8 +1,8 @@
 ---
 title: 与Git集成
-description: 与Git集成——云服务
+description: 与Git集成-Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Cloud Manager附带一个git存储库，用于使用Cloud Manager的CI/CD�
 
 >[!NOTE]
 >
-> 此视频系列中概述的步骤和命名约定代表了使用客户管理的git存储库和云管理器的一些最佳实践。 预计所描述的公约和工作流将适用于个别发展小组。
+>此视频系列中概述的步骤和命名约定代表了使用客户管理的git存储库和云管理器的一些最佳实践。 预计所描述的公约和工作流将适用于个别发展小组。
 
 ## 初始同步 {#initial-sync}
 
