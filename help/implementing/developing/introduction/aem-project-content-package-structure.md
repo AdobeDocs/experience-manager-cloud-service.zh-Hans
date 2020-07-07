@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 17%
@@ -30,13 +30,13 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
 ## 存储库的可变区与不可变区 {#mutable-vs-immutable}
 
-`/apps` 和 `/libs` 被视为 AEM 中的&#x200B;**不可变**&#x200B;区域，因为 AEM 启动后（例如，运行时），无法对其进行更改（创建、更新、删除）。运行时对不可改变区域所做的任何更改尝试都将失败。
+`/apps` 和 `/libs`**被视为 AEM 中的不可变区域，因为 AEM 启动后（例如，运行时），无法对其进行更改（创建、更新、删除）。**&#x200B;运行时对不可改变区域所做的任何更改尝试都将失败。
 
-存储库中的其 `/content`他 `/conf`所有内容 `/var`, `/etc`如 `/oak:index`、、 `/system`、 `/tmp`、、等等。 都是可 **变区** ，这意味着它们可以在运行时更改。
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
-> 与以前版本的AEM一样， `/libs` 不应进行修改。 只有AEM产品代码可部署到 `/libs`。
+>与以前版本的AEM一样， `/libs` 不应进行修改。 只有AEM产品代码可部署到 `/libs`。
 
 ### Oak索引 {#oak-indexes}
 
@@ -183,7 +183,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 ![嵌入包](assets/embeddeds.png)
 
-要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置，格式如下： `all`
+要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置 `all` ，格式如下：
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -194,7 +194,6 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
-
    >[!WARNING]
    >
    >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
@@ -501,7 +500,8 @@ OSGi `scripts` 属性包含由Apache Sling的Repo [Init语言定义的指令](ht
 ### 第三方Maven存储库 {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> 添加更多Maven存储库可能会延长大量构建时间，因为将检查其他Maven存储库是否具有相关性。
+>
+>添加更多Maven存储库可能会延长大量构建时间，因为将检查其他Maven存储库是否具有相关性。
 
 在反应堆项目中，添 `pom.xml`加任何必要的第三方公共Maven存储库指令。 完整配 `<repository>` 置应可从第三方存储库提供程序中使用。
 
