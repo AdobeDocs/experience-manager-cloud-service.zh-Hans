@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 云服务的架构简介
 description: 'Adobe Experience Manager 云服务的架构简介。 '
 translation-type: tm+mt
-source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
@@ -60,7 +60,7 @@ AEM 云服务基于使用一个编排引擎，该引擎可以：
 
 >[!NOTE]
 >
-> 有关详细信息，请参阅[部署 - 运行模式](/help/implementing/deploying/overview.md#runmodes)
+>有关详细信息，请参阅[部署 - 运行模式](/help/implementing/deploying/overview.md#runmodes)
 
 AEM 云服务可用作单个实例，每个实例代表一个完整的 AEM 环境。AEM 云服务可提供四种类型的环境：
 
