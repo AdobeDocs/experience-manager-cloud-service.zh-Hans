@@ -2,10 +2,10 @@
 title: 将数字资产添加到Adobe Experience Manager
 description: 将您的数字资产作为Adobe Experience Manager添加为Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1358'
+ht-degree: 3%
 
 ---
 
@@ -24,9 +24,9 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
 >[!NOTE]
 >
-> Experience Manager作为Cloud Service，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端（如AEM用户界面、Adobe Asset Link、AEM桌面应用程序）都支持此功能，因此对最终用户是透明的。
+>Experience Manager作为Cloud Service，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端（如AEM用户界面、Adobe Asset Link、AEM桌面应用程序）都支持此功能，因此对最终用户是透明的。
 >
-> 上传由技术团队需要使用新上传API和协议的客户自定义或扩展的代码。
+>上传由技术团队需要使用新上传API和协议的客户自定义或扩展的代码。
 
 ## Upload assets {#upload-assets}
 
@@ -37,7 +37,6 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
    * On the toolbar, tap the **[!UICONTROL Create]** icon. 然后，在菜单上，点按文 **[!UICONTROL 件]**。 如果需要，可以重命名显示的对话框中的文件。
    * 在支持HTML5的浏览器中，直接将资产拖动到“资产”用户界面上。 不显示要重命名文件的对话框。
-
    ![create_menu](assets/create_menu.png)
 
    要选择多个文件，请按Ctrl或Command键，然后在文件选取器对话框中选择资产。 使用iPad时，一次只能选择一个文件。
@@ -81,7 +80,7 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
 >[!NOTE]
 >
-> 要将嵌套文件夹层次结构上传到AEM，请参 [阅批量上传资产](#bulk-upload)。
+>要将嵌套文件夹层次结构上传到AEM，请参 [阅批量上传资产](#bulk-upload)。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -136,7 +135,7 @@ AEM Assets可防止您上传文件名中带有禁止字符的资产。 如果您
 
 >[!NOTE]
 >
-> 在设置内容并部署到Experience Manager时，需要仔细规划、考虑和选择工具，才能将批量上传作为从其他系统迁移内容的一部分。 有关内容迁 [移方法的指](/help/implementing/deploying/overview.md) 导，请参阅部署指南。
+>在设置内容并部署到Experience Manager时，需要仔细规划、考虑和选择工具，才能将批量上传作为从其他系统迁移内容的一部分。 有关内容迁 [移方法的指](/help/implementing/deploying/overview.md) 导，请参阅部署指南。
 
 ## 使用桌面客户端上传资产 {#upload-assets-desktop-clients}
 
@@ -163,7 +162,7 @@ AEM Assets可防止您上传文件名中带有禁止字符的资产。 如果您
 
 >[!NOTE]
 >
-> Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原始内容，而是为传送资产时要进行的裁剪或媒体转换提供参数
+>Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原始内容，而是为传送资产时要进行的裁剪或媒体转换提供参数
 
 对于分配了处理用户档案的文件夹，用户档案名显示在卡视图的缩略图上。 在列表视图中，用户档案名称显示在处理 **[!UICONTROL 用户档案列]** 。
 
