@@ -2,7 +2,7 @@
 title: 为 AEM 云服务配置 OSGi
 description: '具有机密值和环境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 为 AEM 云服务配置 OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi是](https://www.osgi.org/) Adobe Experience Manager(AEM)技术堆栈中的一个基本元素。 它用于控制AEM及其配置的复合捆绑包。
+[OSGi是](https://www.osgi.org/) Adobe Experience Manager技术堆栈(AEM)中的一个基本元素。 它用于控制AEM及其配置的复合捆绑包。
 
 OSGi提供标准化的基元，它允许应用程序由小的、可重用的和协作的组件构建。 这些组件可以组成应用程序并进行部署。 这允许轻松管理OSGi捆绑包，因为可以单独停止、安装和启动它们。 互依关系将自动处理。 每个OSGi组件都包含在各种包中的一个。 有关详细信息，请参阅 [OSGi规范](https://www.osgi.org/Specifications/HomePage)。
 
@@ -36,9 +36,9 @@ OSGi配置文件在以下位置进行定义：
 
 遵循cfg.json OSGi配置格式。
 
-> [!NOTE]
+>[!NOTE]
 >
-> 先前版本的AEM支持使用不同文件格式（如。cfg.、.config和XML sling:OsgiConfig资源定义）的OSGi配置文件。 这些格式由cfg.json OSGi配置格式取代。
+>先前版本的AEM支持使用不同文件格式（如。cfg.、.config和XML sling:OsgiConfig资源定义）的OSGi配置文件。 这些格式由cfg.json OSGi配置格式取代。
 
 ## 运行模式分辨率 {#runmode-resolution}
 
@@ -58,7 +58,7 @@ OSGi配置文件在以下位置进行定义：
 
 ## OSGi配置值的类型 {#types-of-osgi-configuration-values}
 
-有三种OSGi配置值可以与AEM一起用作云服务。
+有三种OSGi配置值可与AEM一起用作Cloud Service。
 
 1. **内联值**，即硬编码到OSGi配置并存储在Git中的值。 例如：
 
@@ -76,7 +76,7 @@ OSGi配置文件在以下位置进行定义：
    } 
    ```
 
-1. **环境特定值**，这些值是不同开发环境的值，因此无法按运行模式准确定位(因为AEM中作为云服务有 `dev` 单个运行模式)。 例如：
+1. **环境特定值**，这些值是不同开发环境的值，因此无法按运行模式准确定位(因为AEM中有一个 `dev` Cloud Service运行模式)。 例如：
 
    ```json
    {
@@ -116,16 +116,16 @@ OSGi的常见情况使用内联OSGi配置值。 环境特定配置仅用于开�
 
 ### 何时使用非机密环境特定配置值 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-当这些值在开发环境中`$[env:ENV_VAR_NAME]`不同时，仅对非机密配置值使用环境特定配置()。 这包括本地开发实例和任何AEM作为云服务开发环境。 避免将AEM的非机密环境特定配置用作云服务阶段或生产环境。
+当这些值在开发环境中`$[env:ENV_VAR_NAME]`不同时，仅对非机密配置值使用环境特定配置()。 这包括本地开发实例和任何作为Cloud Service开发环境的AEM。 避免将AEM的非机密环境特定配置用作Cloud Service阶段或生产环境。
 
 * 只对不同开发环境（包括本地开发实例）的配置值使用非机密环境特定配置。
 * 请改用OSGi配置中的标准内联值作为舞台和生产非机密值。  与此相关，不建议使用环境特定配置以便于在运行时对舞台和生产环境进行配置更改； 这些更改应通过源代码管理引入。
 
 ### 何时使用特定于环境的机密配置值 {#when-to-use-secret-environment-specific-configuration-values}
 
-AEM作为云服务，需要对任何机密OSGi配置值(`$[secret:SECRET_VAR_NAME]`如口令、专用API密钥，或出于安全原因无法存储在Git中的任何其他值)使用环境特定配置()。
+AEM作为Cloud Service，需要对任何机密OSGi配置值(`$[secret:SECRET_VAR_NAME]`如口令、专用API密钥)使用环境特定配置()，或出于安全原因无法存储在Git中的任何其他值。
 
-使用特定于机密环境的配置将机密值作为云服务环境（包括舞台和生产）存储在所有AEM上。
+使用特定于机密环境的配置将所有AEM上机密的值存储为Cloud Service环境，包括阶段和生产。
 
 <!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -503,9 +503,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> 有 [关如何使](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 用Adobe I/O CLI的Cloud Manager插件配置值的详细信息，请参阅此页。
+>有 [关如何使](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 用Adobe I/O CLI的Cloud Manager插件配置值的详细信息，请参阅此页。
 
 ### 变量数 {#number-of-variables}
 
@@ -513,7 +513,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## 机密和环境特定配置值的部署注意事项 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-由于特定于秘密和环境的配置值位于Git之外，因此不是正式AEM（作为云服务部署机制）的一部分，因此客户应当以云服务部署流程的形式管理、管理AEM并集成到AEM中。
+由于特定机密和环境配置值位于Git之外，因此不是正式AEM(作为Cloud Service部署机制)的一部分，因此客户应作为Cloud Service部署流程管理、管理并集成到AEM。
 
 如上所述，调用API会将新变量和值部署到云环境，类似于典型的客户代码部署渠道。 创作和发布服务将重新启动并引用新值，通常需要几分钟时间。 请注意，在定期代码部署过程中，Cloud Manager执行的质量门和测试不会在此过程中执行。
 
