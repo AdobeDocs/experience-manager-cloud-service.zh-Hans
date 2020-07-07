@@ -2,7 +2,7 @@
 title: Adobe Experience Manager资产作为Cloud Service的显着变化
 description: 与Adobe Experience Manager6.5相比，AEMCloud Service中的Adobe Experience Manager资产发生了显着变化。
 translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 10%
@@ -21,6 +21,7 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目带来了许多�
 * [删除了经典 UI](#classic-ui).
 
 >[!NOTE]
+>
 >此文档突出了对AEM Assets的显着变化。 有关AEM作为Cloud Service和其他模块的常规更改，请参阅：
 >
 >* [Adobe Experience Manager 云服务简介](/help/overview/introduction.md)
