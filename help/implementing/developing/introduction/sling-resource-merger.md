@@ -2,7 +2,7 @@
 title: 以Adobe Experience Manager中的Sling资源合并为Cloud Service
 description: Sling Resource Merager提供访问和合并资源的服务
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 1%
@@ -51,8 +51,9 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
    >
    >
 * 覆盖不取决于搜索路径，它们使用属性 `sling:resourceSuperType` 建立连接。
-   >  但是，重写通常在下定 `/apps`义，因为AEM的最佳实践是在下定义自定义 `/apps`; 这是因为你不能改变下面的任何 `/libs`。
-
+>
+>
+但是，重写通常在下定 `/apps`义，因为AEM的最佳实践是在下定义自定义 `/apps`; 这是因为你不能改变下面的任何 `/libs`。
 
 ### 属性 {#properties}
 
@@ -198,6 +199,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 
       * 类型: `String[]`
       * value: 要隐藏／忽略的子节点的列表( `/libs`如中定义)
+
       通配符&amp;ast; 可用于隐藏／忽略所有子节点。
 
 
