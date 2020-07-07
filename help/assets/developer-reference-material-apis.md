@@ -1,9 +1,9 @@
 ---
-title: 'Adobe Experience Manager中用作云服务的数字资产管理的资产API '
+title: '以Adobe Experience Manager形式进行数字资产管理的资产API(作为Cloud Service) '
 description: 资产API允许执行基本的创建——读取——更新——删除(CRUD)操作，以管理资产，包括二进制、元数据、演绎版、注释和内容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Give a list of and overview of all reference information available.
 
 ## 资产上传 {#asset-upload-technical}
 
-Experience Manager作为云服务，提供了一种将资产上传到存储库的新方法——将二进制上传到二进制云存储。 本节提供其技术概述。
+Experience Manager作为云服务提供了一种将资产上传到存储库的新方法——将二进制上传到二进制云存储。 本节提供其技术概述。
 
 ### 直接二进制上传概述 {#overview-binary-upload}
 
@@ -42,8 +42,9 @@ Experience Manager作为云服务，提供了一种将资产上传到存储库�
 
 此方法应提供对资产上传的更具可扩展性和更高性能的处理。
 
-> !![NOTE]
-要查看实现此方法的客户端代码，请参阅开放源 [码aem-upload库](https://github.com/adobe/aem-upload)
+>[!NOTE]
+>
+>要查看实现此方法的客户端代码，请参阅开放源 [码aem-upload库](https://github.com/adobe/aem-upload)
 
 ### 启动上传 {#initiate-upload}
 
@@ -114,8 +115,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 | `replace` | 布尔型 | 可选 | 如 `True` 果具有指定名称的资产已存在，Experience Manager会删除该资产，然后重新创建它。 |
 
 >!![NOTE]
->
-> 如果资产已存在且未 `createVersion` 指 `replace` 定，则Experience Manager会使用新的二进制文件更新资产的当前版本。
+如果资产已存在且未指 `createVersion` 定或 `replace` 未指定，则Experience Manager会使用新的二进制文件更新资产的当前版本。
 
 与启动过程一样，完整请求数据可能包含多个文件的信息。
 
@@ -134,9 +134,9 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-对于Adobe Experience Manager作为云服务，仅支持新上传API。 Adobe Experience Manager 6.5中的API已弃用。 与上传或更新资产或演绎版（任何二进制上传）相关的方法在以下API中已弃用：
+对于Adobe Experience Manager，仅支持新上传API。 不建议使用Adobe Experience Manager6.5中的API。 与上传或更新资产或演绎版（任何二进制上传）相关的方法在以下API中已弃用：
 
-* [AEM Assets HTTP API](mac-api-assets.md)
+* [AEM AssetsHTTP API](mac-api-assets.md)
 * `AssetManager` Java API，如 `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
@@ -146,15 +146,15 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ## 资产处理和后处理工作流 {#post-processing-workflows}
 
-在Experience Manager中，资产处理基于使用资产 **[!UICONTROL 微服务的]** “处理 [用户档案](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)”配置进行。 处理不需要开发人员扩展。
+在Experience Manager中，资产处理基于使用资产 **[!UICONTROL 微服务的]** “处理” [用户档案配置](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)。 处理不需要开发人员扩展。
 
 对于后处理工作流配置，请使用带有自定义步骤的扩展的标准工作流。
 
 ## 后处理工作流中的工作流步骤支持 {#post-processing-workflows-steps}
 
-从先前版本的Experience Manager升级为Experience Manager作为云服务的客户可以使用资产微服务处理资产。 云本机资产微服务的配置和使用更简单。 不支持在先前版本的DAM [!UICONTROL 更新资产工作流中使用] 的几个工作流步骤。
+从旧版Experience Manager升级为Cloud Service的客户可以使用资产微服务处理资产。 云本机资产微服务的配置和使用更简单。 不支持在先前版本的DAM [!UICONTROL 更新资产工作流中使用] 的几个工作流步骤。
 
-Experience Manager作为云服务支持以下工作流步骤。
+Experience Manager作为Cloud Service支持以下工作流步骤。
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
