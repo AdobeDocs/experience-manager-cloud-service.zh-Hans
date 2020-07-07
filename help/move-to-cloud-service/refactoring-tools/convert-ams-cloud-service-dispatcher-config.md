@@ -1,220 +1,223 @@
 ---
-title: 将AMS转换为Adobe Experience Manager作为云服务调度程序配置
-description: 将AMS转换为Adobe Experience Manager作为云服务调度程序配置
+title: 将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置
+description: 将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 将AMS转换为Adobe Experience Manager(AEM)作为云服务调度程序配置
+# 将 AMS 转换为 Adobe Experience Manager (AEM) 云服务 Dispatcher 配置
 
 ## 简介 {#introduction}
 
-本节提供有关如何转换AMS配置的分步说明。
+本节提供了有关如何转换 AMS 配置的分步说明。
 
 >[!NOTE]
->它假定您有一个与管理调度程序配置中所述结构相 [似的存档](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)。
+>本文假定您有一个存档，其结构与[管理 Dispatcher 配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述的结构相似。
 
-## 将AMS转换为AEM作为云服务调度程序配置的步骤
+## 将 AMS 转换为 AEM 云服务 Dispatcher 配置的步骤
 
-1. **提取存档并删除最终前缀**
+1. **提取存档并删除最后的前缀**
 
-   将存档解压到文件夹，并确保使用conf、conf.d、conf.dispatcher.d和conf.modules.d开始的即时子文件夹。 如果他们不这样做，就在层级中向上移动。
+   将存档解压缩到一个文件夹，并确保下面一层子文件夹以 conf、conf.d、conf.dispatcher.d 和 conf.modules.d 开头。如果不是，请在层次结构中将其向上移动。
 
 1. **删除未使用的子文件夹和文件**
 
-   删除子文件夹conf和conf.modules.d以及与conf.d/*.conf匹配的文件。
+   移除子文件夹 conf 和 conf.modules.d，以及与 conf.d/*.conf 匹配的文件。
 
-1. **删除所有非发布虚拟主机**
+1. **删除所有未发布的虚拟主机**
 
-1. **删除任何虚拟主机文件**
+1. **移除所有虚拟主机文件**
 
-   在conf.d/enabled_vhosts中，名称中含有作者、不健康、健康、lc或刷新。 conf.d/available_vhosts中未链接的所有虚拟主机文件也可以删除。
+   conf.d/enabled_vhosts 中名称含有 author、unhealthy、health、lc 或 flush 的文件。也可以移除 conf.d/available_vhosts 中未链接到的所有虚拟主机文件。
 
-1. 删除或注释不引用端口80的虚拟主机部分
+1. 移除或注释未引用端口 80 的虚拟主机部分
 
-   如果您的虚拟主机文件中仍有部分专门引用端口80以外的其他端口，例如
+   如果您的虚拟主机文件中仍然有部分内容专门引用端口 80 以外的其他端口，例如
 
    `<VirtualHost *:443>`
    `...`
-   `</VirtualHost>`
-删除或添加注释。 这些部分中的语句将不会得到处理，但是，如果保留这些语句，您最终可能仍会编辑它们而无效，这会令人混淆。
+   `</VirtualHost>`，
+则请移除或注释该部分。这些部分中的语句将不会得到处理，但是如果保留它们，您可能最终仍会对其进行编辑，并且不会有任何效果，这可能会造成混淆。
 
-1. **检查重写**
+1. **检查 rewrites**
 
-   * 输入目录conf.d/rewrites。
+   * 进入目录 conf.d/rewrites。
 
-   * 删除名为base_rewrite.rules和xforwarded_forcessl_rewrite.rules的任何文件，并记住删除引用它们的虚拟主机文件中的“包括”语句。
+   * 移除任何名为 base_rewrite.rules 和 xforwarded_forcessl_rewrite.rules 的文件，并记得移除虚拟主机文件中引用这些文件的 Include 语句。
 
-   * 如果conf.d/rewrites现在包含单个文件，则应将其重命名为rewrite.rules，不要忘记在虚拟主机文件中也改编引用该文件的“包括”语句。
+   * 如果 conf.d/rewrites 现在包含单个文件，则应将其重命名为 rewrite.rules，并且不要忘记修改虚拟主机文件中引用该文件的 Include 语句。
 
-   * 但是，如果文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到虚拟主机文件中引用这些文件的“包含”语句。
+   * 但是，如果文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到虚拟主机文件中引用这些文件的 Include 语句中。
 
-1. **检查变量**
+1. **检查 variables**
 
-   1. 输入目录conf.d/variables。
+   1. 进入目录 conf.d/variables。
 
-   1. 删除名为ams_default.vars的任何文件，并记住删除引用这些文件的虚拟主机文件中的“包括”语句。
+   1. 移除任何名为 ams_default.vars 的文件，并记得移除虚拟主机文件中引用这些文件的 Include 语句。
 
-   1. 如果conf.d/variables现在包含单个文件，则应将其重命名为custom.vars，不要忘记在虚拟主机文件中也改编引用该文件的“包括”语句。
+   1. 如果 conf.d/variables 现在包含单个文件，则应将其重命名为 custom.vars，并且不要忘记修改虚拟主机文件中引用该文件的 Include 语句。
 
-   1. 但是，如果文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到虚拟主机文件中引用这些文件的“包含”语句。
+   1. 但是，如果文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到虚拟主机文件中引用这些文件的 Include 语句中。
 
-1. **删除白名单**
+1. **移除白名单**
 
-   删除文件夹conf.d/whitelists，并删除虚拟主机文件中引用该子文件夹中某个文件的“包括”语句。
+   移除文件夹 conf.d/whitelists，并移除虚拟主机文件中引用该子文件夹中某些文件的 Include 语句。
 
 1. **替换任何不再可用的变量**
 
    在所有虚拟主机文件中：
 
-   将PUBLISH_DOCROOT重命名为DISP_ID、PUBLISH_FORCE_SSL或PUBLISH_WHITELIST_ENABLED变量的节
+   将 PUBLISH_DOCROOT 重命名为 DOCROOT
+移除引用名称为 DISP_ID、PUBLISH_FORCE_SSL 或 PUBLISH_WHITELIST_ENABLED 的变量的部分
 
-1. **通过运行验证程序检查您的状态**
+1. **通过运行验证器检查状态**
 
-   使用httpd子命令在您的目录中运行调度程序validator:
+   使用 httpd 子命令在目录中运行 Dispatcher 验证器：
 
    `$ validator httpd`
-如果看到缺少包含文件的错误，请检查是否正确重命名了这些文件。
+如果看到有关缺少包含文件的错误，请检查是否正确重命名了这些文件。
 
-   如果看到未列入白名单的Apache指令，请删除它们。
+   如果看到未列入白名单的 Apache 指令，请将其删除。
 
-1. **删除所有非发布场**
+1. **删除所有未发布的场**
 
-   删除conf.dispatcher.d/enabled_farms中名称中含有作者、不健康、健康、lc或刷新的任何场文件。 conf.dispatcher.d/available_farms中未链接的所有场文件也可以删除。
+   移除 conf.dispatcher.d/enabled_farms 中名称含有 author、unhealthy、health、lc 或 flush 的所有场文件。也可以移除 conf.dispatcher.d/available_farms 中未链接到的所有场文件。
 
 1. **重命名场文件**
 
-   conf.dispatcher.d/enabled_farms中的所有场都必须重命名为与模式*.farm匹配，因此，例如，名为customerX_farm.any的场文件应重命名为customerX.farm。
+   必须重命名 conf.dispatcher.d/enabled_farms 中的所有场文件，使其名称匹配 *.farm 模式，例如，将名为 customerX_farm.any 的场文件重命名为 customerX.farm。
 
-1. **检查缓存**
+1. **检查 cache**
 
-   输入目录conf.dispatcher.d/cache。
+   进入目录 conf.dispatcher.d/cache。
 
-   删除任何前缀ams_。
+   移除所有前缀为 ams_ 的文件。
 
-   如果conf.dispatcher.d/cache现在为空，请将文件conf.dispatcher.d/cache/rules.any从标准调度程序配置复制到此文件夹。 标准调度程序配置可在此SDK的文件夹src中找到。 不要忘记也改编引用农场文件中ams_*_cache.any规则文件的$include语句。
+   如果 conf.dispatcher.d/cache 现在为空，请将文件 conf.dispatcher.d/cache/rules.any 从标准 Dispatcher 配置复制到此文件夹。标准 Dispatcher 配置可以在此 SDK 的 src 文件夹中找到。同时不要忘记修改场文件中引用 ams_*_cache.any 规则文件的 $include 语句。
 
-   如果conf.dispatcher.d/cache现在包含带后缀_cache.any的单个文件，则应将其重命名为rules.any，并且不要忘记在场文件中也改编引用该文件的$include语句。
+   相反，如果 conf.d/variables 现在包含名为 suffix _cache.any 的单个文件，则应将其重命名为 rules.any，并且不要忘记修改场文件中引用该文件的 $include 语句。
 
-   但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到$include语句中，该语句在场文件中引用这些文件。
+   但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的 $include 语句中。
 
-   删除任何具有_invalidate_allowed.any后缀的文件。
+   移除任何含有 suffix _invalidate_allowed.any 的文件。
 
-   将文件conf.dispatcher.d/cache/default_invalidate_any从默认调度程序配置复制到该位置。
+   将文件 conf.dispatcher.d/cache/default_invalidate_any 从默认 Dispatcher 配置复制到该位置。
 
-   在每个场文件中，删除cache/allowedClients部分中的任何内容，并将其替换为：
+   在每个场文件中，移除 cache/allowedClients 部分中的所有内容，并将其替换为：
 
    $include &quot;../cache/default_invalidate.any&quot;
 
-1. **检查客户端标头**
+1. **检查 client headers**
 
-   输入目录conf.dispatcher.d/clientheaders。
+   进入目录 conf.dispatcher.d/clientheaders。
 
-   删除任何前缀ams_。
+   移除所有前缀为 ams_ 的文件。
 
-   如果conf.dispatcher.d/clientheaders现在包含一个带后缀_clientheaders.any的文件，则应将其重命名为clientheaders.any，并且不要忘记在场文件中也改编引用该文件的$include语句。
+   如果 conf.dispatcher.d/clientheaders 现在包含名为 suffix _clientheaders.any 的单个文件，则应将其重命名为 clientheaders.any，并且不要忘记修改场文件中引用该文件的 $include 语句。
 
-   但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到$include语句中，该语句在场文件中引用这些文件。
+   但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的 $include 语句中。
 
-   将文件conf.dispatcher/clientheaders/default_clientheaders.any从默认调度程序配置复制到该位置。
+   将文件 conf.dispatcher/clientheaders/default_clientheaders.any 从默认 Dispatcher 配置复制到该位置。
 
-   在每个场文件中，替换任何clientheader包含如下语句：
+   在每个场文件中，将如下所示的所有 clientheader include 语句：
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"`
 
-   with语句：
+   替换为语句：
 
    `$include "../clientheaders/default_clientheaders.any"`
 
-1. **检查筛选器**
+1. **检查 filter**
 
-   * 输入目录conf.dispatcher.d/过滤器。
+   * 进入目录 conf.dispatcher.d/filters。
 
-   * 删除任何前缀ams_。
+   * 移除所有前缀为 ams_ 的文件。
 
-   * 如果conf.dispatcher.d/过滤器现在包含单个文件，则应将其重命名为过滤器.any，并且不要忘记在场文件中改编引用该文件的$include语句。
+   * 如果 conf.dispatcher.d/filters 现在包含单个文件，则应将其重命名为 filters.any，并且不要忘记修改场文件中引用该文件的 $include 语句。
 
-   * 但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到$include语句中，该语句在场文件中引用这些文件。
+   * 但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的 $include 语句中。
 
-   * 将文件conf.dispatcher/filters/default_filters.any从默认调度程序配置复制到该位置。
+   * 将文件 conf.dispatcher/filters/default_filters.any 从默认 Dispatcher 配置复制到该位置。
 
-   * 在每个场文件中，替换任何筛选器都包含如下语句：
+   * 在每个场文件中，将如下所示的所有 filter include 语句：
 
-   * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`with语句：
+   * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`
+替换为语句：
 
       `$include "../filters/default_filters.any"`
 
-1. **检查渲染**
+1. **检查 renders**
 
-   * 输入目录conf.dispatcher.d/renders。
+   * 进入目录 conf.dispatcher.d/renders。
 
-   * 删除该文件夹中的所有文件。
+   * 移除该文件夹中的所有文件。
 
-   * 将文件conf.dispatcher.d/renders/default_renders.any从默认调度程序配置复制到该位置。
+   * 将文件 conf.dispatcher.d/renders/default_renders.any 从默认 Dispatcher 配置复制到该位置。
 
-   * 在每个场文件中，删除渲染部分中的任何内容，并将其替换为：
+   * 在每个场文件中，移除 renders 部分中的所有内容，并将其替换为：
 
       `$include "../renders/default_renders.any"`
 
-1. **检查虚拟主机**
+1. **检查 virtualhosts**
 
-   * 重命名该目 `conf.dispatcher.d/vhosts to conf.dispatcher.d/virtualhosts` 录并输入它。
+   * 重命名目录 `conf.dispatcher.d/vhosts to conf.dispatcher.d/virtualhosts`，并进入该目录。
 
-   * 删除任何预先修复的文件 `ams_`。
+   * 移除所有前缀为 `ams_` 的文件。
 
-   * 如果conf.dispatcher.d/virtualhosts现在包含单个文件，则应将其重命名为virtualhosts.any，并且不要忘记在场文件中也改编引用该文件的$include语句。
+   * 如果 conf.dispatcher.d/virtualhosts 现在包含单个文件，则应将其重命名为 virtualhosts.any，并且不要忘记修改场文件中引用该文件的 $include 语句。
 
-   * 但是，如果文件夹包含多个具有该模式的特定场文件，则应将其内容复制到$include语句中，该语句在场文件中引用这些文件。
+   * 但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的 $include 语句中。
 
-   * 将文件conf.dispatcher/virtualhosts/default_virtualhosts.any从默认调度程序配置复制到该位置。
+   * 将文件 conf.dispatcher/virtualhosts/default_virtualhosts.any 从默认 Dispatcher 配置复制到该位置。
 
-   * 在每个场文件中，替换任何筛选器都包含如下语句：
+   * 在每个场文件中，将如下所示的所有 filter include 语句：
 
       `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
-with语句：
+替换为语句：
 
       `$include "../virtualhosts/default_virtualhosts.any"`
 
 
-1. **通过运行验证程序检查您的状态**
+1. **通过运行验证器检查状态**
 
-   * 使用调度程序子命令在您的目录中运行调度程序validator:
+   * 使用 Dispatcher 子命令在目录中运行 Dispatcher 验证器：
 
       `$ validator dispatcher`
 
-   * 如果看到缺少包含文件的错误，请检查是否正确重命名了这些文件。
+   * 如果看到有关缺少包含文件的错误，请检查是否正确重命名了这些文件。
 
-   * 如果看到有关未定义变量的 `PUBLISH_DOCROOT`错误，请将其重命名 `DOCROOT`为。
+   * 如果看到有关未定义变量 `PUBLISH_DOCROOT` 的错误，请将该变量重命名为 `DOCROOT`。
 
-   * 有关所有其他错误，请参阅验证程序工具文档的“疑难解答”部分。
+   * 有关其他每个错误，请参阅验证器工具文档的“疑难解答”部分。
 
-## 使用本地部署测试配置 {#testing-config-local-deployment}
+## 在本地部署中测试您的配置 {#testing-config-local-deployment}
 
 >[!IMPORTANT]
-> 使用本地部署测试配置需要安装Docker。
+>
+>在本地部署中测试您的配置需要安装 Docker。
 
-使用Dispatcher `docker_run.sh` SDK中的脚本，您可以测试配置是否不包含任何只会在部署中显示的其他错误：
+使用 Dispatcher SDK 中的脚本 `docker_run.sh`，您可以测试配置不包含只会在部署中显示的任何其他错误：
 
 1. 使用验证程序生成部署信息
 
    `validator full -d out`
-这将验证完整配置并生成外部部署信息
+这将验证完整配置并在 out 中生成部署信息
 
-1. 将调度程序与该部署信息开始到docker映像中
+1. 使用该部署信息在 Docker 映像中启动 Dispatcher
 
-   在macOS计算机上运行AEM发布服务器时，监听端口4503，您可以按如下方式在该服务器前运行开始程序：
+   在 macOS 计算机上运行 AEM 发布服务器，并监听端口 4503 时，您可以在该服务器前面运行启动 Dispatcher，如下所示：
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-   这将开始容器并暴露本地端口8080上的Apache。
+   这将启动容器并在本地端口 8080 上公开 Apache。
 
-## 使用新的调度程序配置 {#using-dispatcher-config}
+## 使用新的 Dispatcher 配置 {#using-dispatcher-config}
 
-如果验证程序不再报告任何问题，且Docker容器开始未出现任何故障或警告，您就可以将配置移动到git存储库的`ispatcher/src` d子目录。
+如果验证器不再报告任何问题，并且 Docker 容器启动时没有出现任何故障或警告，则可以将配置移动到 Git 存储库的 d`ispatcher/src` 子目录中。
