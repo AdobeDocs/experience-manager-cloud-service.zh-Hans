@@ -2,7 +2,7 @@
 title: 部署到 AEM 云服务
 description: '部署到 AEM 云服务 '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 
 >[!NOTE]
 >
-> 如果自定义代码被推送到暂存，然后被您拒绝，则下一次AEM更新将删除这些更改，以反映上次成功发布客户版本的git标签到生产。
+>如果自定义代码被推送到暂存，然后被您拒绝，则下一次AEM更新将删除这些更改，以反映上次成功发布客户版本的git标签到生产。
 
 将定期发布功能，重点介绍功能添加和增强功能，与日常版本相比，这些功能添加和增强将对用户体验产生更大影响。 功能发布不是由部署大型更改集触发的，而是由翻转发布切换触发的，它激活了在日常更新中累积的代码。
 
@@ -61,7 +61,7 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 
 ### 通过Cloud Manager进行部署 {#deployments-via-cloud-manager}
 
-客户通过Cloud Manager将自定义代码部署到云环境。 应该指出，Cloud Manager将本地组合的内容包转换为符合Sling特征模型的伪像，即在云环境中运行AEM时，将AEM描述为Cloud Service应用程序的方式。 因此，在查看云环境上的包管理器中的包时，名称将包括“cp2fm”，转换的包将删除所有元数据。 它们不能与之交互，这意味着它们不能下载、复制或打开。 有关转换器的详细文档可 [在此处找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
+客户通过Cloud Manager将自定义代码部署到云环境。 应该指出，Cloud Manager将本地组合的内容包转换为符合Sling特征模型的伪像，即在云环境中运行时，AEM作为Cloud Service应用程序的描述。 因此，在查看云环境上的包管理器中的包时，名称将包括“cp2fm”，转换的包将删除所有元数据。 它们不能与之交互，这意味着它们不能下载、复制或打开。 有关转换器的详细文档可 [在此处找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
 
 为AEM作为Cloud Service应用程序编写的内容包必须在不可变内容和可变内容之间保持清晰的隔离，云管理器将通过失败生成来强制执行该内容，并输出如下消息：
 
@@ -133,8 +133,11 @@ AEM版本的更新始终是一个单独的部署事件，而不是推送自定�
 * 创建／删除用户组
 * 创建／删除用户
 * 添加ACL
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >定义ACL要求节点结构已存在。 因此，可能需要在创建路径语句之前执行。
+
 * 添加路径（例如根文件夹结构）
 * 添加CND（nodetype定义）
 
