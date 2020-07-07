@@ -1,8 +1,8 @@
 ---
-title: 源代码存储库——云服务
-description: 源代码存储库——云服务
+title: 源代码存储库-Cloud Service
+description: 源代码存储库-Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 1%
@@ -26,4 +26,4 @@ $ git clone {URL}
 
 >[!NOTE]
 >
-> 用户可以签出其代码的副本，并在本地代码存储库中进行更改。 准备就绪后，用户可将其代码更改提交回云管理器中的远程代码存储库。
+>用户可以签出其代码的副本，并在本地代码存储库中进行更改。 准备就绪后，用户可将其代码更改提交回云管理器中的远程代码存储库。
