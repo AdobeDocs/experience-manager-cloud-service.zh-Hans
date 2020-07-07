@@ -1,8 +1,8 @@
 ---
-title: 数据保护和数据隐私法规- Adobe Experience Manager作为云服务基础就绪性
-description: '了解Adobe Experience Manager作为各种数据保护和数据隐私法规的云服务基础支持； 包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法以及在将新AEM作为云服务项目实施时如何遵守这些规定。 '
+title: Adobe Experience Manager保护和数据隐私法规——作为Cloud Service基础就绪
+description: '了解Adobe Experience Manager作为Cloud Service基础对各种数据保护和数据隐私法规的支持； 包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及在将新AEM作为Cloud Service项目实施时如何遵守这些规定。 '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 5%
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager作为云服务基础，为数据保护和数据隐私法规做好准备 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作为Cloud Service基础，为数据保护和数据隐私法规做好准备 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> 对于AEM作为云服务，在UI中没有可用于删除用户用户档案的手动过程，因为CRXDE不可访问。
+>对于AEM作为Cloud Service,UI中没有可用于删除用户用户档案的手动过程，因为CRXDE不可访问。
 
 ### HTTP API {#http-api-1}
 
