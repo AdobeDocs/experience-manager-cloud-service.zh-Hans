@@ -2,7 +2,7 @@
 title: 配置搜索表单
 description: 将搜索表单配置为Adobe Experience Manager作为Cloud Service。
 translation-type: tm+mt
-source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 15%
@@ -78,7 +78,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
 >[!NOTE]
 >
-> 有关与资产相关的搜索表单的更多详细信息，请 [参阅资产——搜索彩块化](/help/assets/search-facets.md)
+>有关与资产相关的搜索表单的更多详细信息，请 [参阅资产——搜索彩块化](/help/assets/search-facets.md)
 
 
 ## 谓词及其设置 {#predicates-and-their-settings}
@@ -491,11 +491,10 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
 >[!NOTE]
 >
->* 常用搜索谓词在以下位置进行定义：
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>常用搜索谓词在以下位置进行定义：
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
-此信息仅供参考，您不得对进行更改 `/libs`。
+>此信息仅供参考，您不得对进行更改 `/libs`。
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -548,172 +547,172 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **选项节点路**&#x200B;径与 ****
-
-* **选项路径**，只有此路径位于通用谓词字段中，而另一个路径则特定于资产。
+* **选项节点**&#x200B;路径与选项路径 **有效地相同**，只有此路径在通用谓词字段中，而另一个谓词字段特定于资产。
 
 * **单选**&#x200B;如果选中，选项将呈现为复选框，仅允许单选。 如果错误地选中了复选框，则可取消选中该复选框。
 
 * **发布和Live Copy属性名称特**&#x200B;定站点谓词的发布和Live Copy复选框的标签。
 
-## &amp;ast; 在“设置”选项卡的 **字段** 标签中，表示字段为必填字段，如果留空，则将显示错误消息。
+* &amp;ast; 在“设置”选项卡的 **字段** 标签中，表示字段为必填字段，如果留空，则将显示错误消息。
 
-### 配置搜索表单 {#configuring-your-search-forms}
+## 配置搜索表单 {#configuring-your-search-forms}
 
-1. 创建／打开自定义配置 {#creating-opening-a-customized-configuration}**********
+### 创建／打开自定义配置 {#creating-opening-a-customized-configuration}
 
 1. 导航到 **工具**、常 **规**、 **搜索表单**。
-1. 选择要自定义的配置。****
-1. 使用编 **辑** 图标打开要更新的配置。[](#add-edit-a-predicate-field-and-define-field-settings)
-1. 如果是新的自定义，您可能想要 [添加新的谓词字段并根据需要](#add-edit-a-predicate-field-and-define-field-settings) 定义设置。 如果是现有自定义，则可以选择现有字段并 [更新设置](#add-edit-a-predicate-field-and-define-field-settings)。
 
-   >Select **Done** to save the configuration. 您的更改可以在下次使用配置时看到。
-   >
+1. 选择要自定义的配置。
+1. 使用编 **辑** 图标打开要更新的配置。
+1. 如果是新的自定义，您可能想要 [添加新的谓词字段并根据需要定义](#add-edit-a-predicate-field-and-define-field-settings) 设置。 如果是现有自定义，则可以选择现有字段并 [更新设置](#add-edit-a-predicate-field-and-define-field-settings)。
+1. Select **Done** to save the configuration. 您的更改可以在下次使用配置时看到。
+
    >[!NOTE]
    >
-   >* `/apps/cq/gui/content/facets/<option>`自定义配置存储在（视情况而定）下：
+   >自定义配置存储在（视情况而定）下：
+   >
    >* `/apps/cq/gui/content/facets/<option>`
+   >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### `/apps/commerce/gui/content/facets/<option>`
+### 添加／编辑谓词字段和定义字段设置 {#add-edit-a-predicate-field-and-define-field-settings}
 
-添加／编辑谓词字段和定义字段设置 {#add-edit-a-predicate-field-and-define-field-settings}
+您可以添加或编辑字段，并定义／更新其设置：
 
-1. [您可以添加或编辑字段，并定义／更新其设置：](#creating-opening-a-customized-configuration)
-1. [打开要更新的自定](#creating-opening-a-customized-configuration) 义配置。****
+1. [打开要更新的自定](#creating-opening-a-customized-configuration) 义配置。
+1. 如果要添加新字段，请打开“选 **择谓词** ”选项卡，并将所需的谓词拖动到所需位置。 例如，日期 **范围谓词**:
 
-   如果要添加新字段，请打开“选 **择谓词** ”选项卡，并将所需的谓词拖动到所需位置。 例如，日期 **范围谓词**:
+   ![添加谓词](assets/csf-add-predicate.png)
 
-1. ![添加谓词](assets/csf-add-predicate.png)
+1. 取决于：
 
-   * 取决于：
+   * 您正在添加新字段：
 
-      您正在添加新字段：****
+      添加谓词后，将 **打开** “设置”选项卡并显示可定义的属性。
 
-   * 添加谓词后，将 **打开** “设置”选项卡并显示可定义的属性。
+   * 您要更新现有谓词：
 
-      您要更新现有谓词：****
-   选择谓词字段（在右侧），然后打开“设 **置** ”选项卡。
-
+      选择谓词字段（在右侧），然后打开“设 **置** ”选项卡。
    例如，日期范围谓词 **的设置**:
 
-1. ![修改谓词](assets/csf-modify-predicate.png)
+   ![修改谓词](assets/csf-modify-predicate.png)
 
-### 根据需要进行更改，然后单击“完 **成”**。 您的更改可以在下次使用配置时看到。
+1. 根据需要进行更改，然后单击“完 **成”**。 您的更改可以在下次使用配置时看到。
 
-1. 预览搜索配置 {#previewing-the-search-configuration}
+### 预览搜索配置 {#previewing-the-search-configuration}
 
-   ![选择预览图标：](assets/csf-preview-icon.png)
+1. 选择预览图标：
 
-1. ![预览图标](assets/csf-preview-icon.png)
+   ![预览图标](assets/csf-preview-icon.png)
 
-   ![这将显示搜索表单，就像在相应控制台的“搜索”列中显示（完全展开）这些表单一样。](assets/csf-preview-form.png)
+1. 这将显示搜索表单，就像在相应控制台的“搜索”列中显示（完全展开）这些表单一样。
 
-1. ![预览表单](assets/csf-preview-form.png)
+   ![预览表单](assets/csf-preview-form.png)
 
-### **关闭** 预览以返回并完成配置。
+1. **关闭** 预览以返回并完成配置。
 
-1. 删除谓词字段 {#deleting-a-predicate-field}](#creating-opening-a-customized-configuration)
-1. [打开要更新的自定](#creating-opening-a-customized-configuration) 义配置。****
+### 删除谓词字段 {#deleting-a-predicate-field}
 
-   选择谓词字段（在右侧），打开“设 **置** ”选项卡，然后选择 **删除** 图标（左下方）。
+1. [打开要更新的自定](#creating-opening-a-customized-configuration) 义配置。
+1. 选择谓词字段（在右侧），打开“设 **置** ”选项卡，然后选择 **删除** 图标（左下方）。
 
-1. ![删除图标](assets/csf-delete-icon.png)
+   ![删除图标](assets/csf-delete-icon.png)
 
-1. 对话框将请求确认删除操作。****
+1. 对话框将请求确认删除操作。
 
-### 使用完成确认此更改和任何其他 **更改**。
+1. 使用完成确认此更改和任何其他 **更改**。
 
-删除配置（恢复默认配置） {#deleting-a-configuration-to-reinstate-the-default}
+### 删除配置（恢复默认配置） {#deleting-a-configuration-to-reinstate-the-default}
 
->[!NOTE]自定义配置后，这将覆盖默认值。 您可以通过删除自定义配置来重新声明默认配置。
->
+自定义配置后，这将覆盖默认值。 您可以通过删除自定义配置来重新声明默认配置。
+
 >[!NOTE]
+>
+>无法删除默认配置。
 
-无法删除默认配置。
+从控制台中删除自定义配置：
 
-1. 从控制台中删除自定义配置：********
+1. 选择所需的配置(例如，页 **面编辑器(段落搜索**))，然后 **在工具栏中** 选择“删除”图标：
 
-   选择所需的配置(例如，页 **面编辑器(段落搜索**))，然后 **在工具栏中** 选择“删除”图标：
+   ![恢复默认](assets/csf-restore-default.png)
 
-1. ![恢复默认](assets/csf-restore-default.png)
+1. 将删除自定义配置并恢复默认配置（在控制台中重新显示挂锁符号表示）。
 
-### 将删除自定义配置并恢复默认配置（在控制台中重新显示挂锁符号表示）。{#adding-options-predicates}
-
-添加选项谓词 {#adding-options-predicates}
+### 添加选项谓词 {#adding-options-predicates}
 
 选项谓词（选项、选项属性）允许您配置要搜索的项目。 它们通常用于直接搜索页面下的内容； 例如，页面节点上的属性。
 
-1. 以下示例（根据用于创建页面的模板进行搜索）说明了所涉及的步骤：
+以下示例（根据用于创建页面的模板进行搜索）说明了所涉及的步骤：
 
-   创建定义要搜索的属性的节点。
+1. 创建定义要搜索的属性的节点。
 
    您需要一个根节点，其中包含单个选项的定义才能提供给用户。
 
-   * `jcr:title`单个选项的节点需要属性：
-   * `jcr:title` -要在搜索边栏中显示的字段标签
-   `value` -要搜索的属性值](assets/csf-options-predicate-01.png)
+   单个选项的节点需要属性：
 
-   >![谓词定义](assets/csf-options-predicate-01.png)
-   >
-   >[!NOTE]***`/libs`
+   * `jcr:title` -要在搜索边栏中显示的字段标签
+   * `value` -要搜索的属性值
+   ![谓词定义](assets/csf-options-predicate-01.png)
+
+   >[!NOTE]
    >
    >您 ***不得*** 更改路径中的任 `/libs` 何内容。
    >
    >这是因为下次升级实 `/libs` 例时，内容会被覆盖（而应用修补程序或功能包时，内容很可能会被覆盖）。
    >
-   >1. 建议的配置和其他更改方法是：`/libs``/apps`
+   >建议的配置和其他更改方法是：
+   >
    >1. 在下重新创建所需的项(它 `/libs`存在于 `/apps`)。 在本例中，来源：
    >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. 在 `/apps.`
 
-
-1. 在 `/apps.`**********
 
 1. 打开搜 **索表单** “控制台”，然后选择要更新的配置。 例如，“站 **点管理员搜索边栏**”。 然后选择 **编辑**。
+
 1. 根据配置，向配 **置添加****“选项** ”或“选项”属性。
+1. 更新字段，特别是：
 
-   * **更新字段，特别是：**
+   * **属性名称**
 
-      **属性名称**
+      在目标节点上指定要搜索的节点属性。 例如：
 
-      `jcr:content/cq:template`在目标节点上指定要搜索的节点属性。 例如：
+      `jcr:content/cq:template`
 
-   * `jcr:content/cq:template`**
+   * **选项节点路径**
 
-      **选项节点路径**
+      选择保留选项的路径。 例如：
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`选择保留选项的路径。 例如：
-   `/apps/cq/gui/content/common/options/predicates/templatetype`](assets/csf-options-predicate-02.png)
+      `/apps/cq/gui/content/common/options/predicates/templatetype`
+   ![选项谓词](assets/csf-options-predicate-02.png)
 
-1. ![选项谓词](assets/csf-options-predicate-02.png)
-1. Select **Done** to save your configuration.****
+1. Select **Done** to save your configuration.
+1. 导航到相应的控制台(在本例中 **为站点**)并打开“ **搜索-过滤器** ”边栏。 新定义的搜索表单以及各种选项将可见。 选择所需的选项可查看搜索结果。
 
-   导航到相应的控制台(在本例中 **为站点**)并打开“ **搜索-过滤器** ”边栏。 新定义的搜索表单以及各种选项将可见。 选择所需的选项可查看搜索结果。
+   ![使用的选项](assets/csf-options-usage.png)
 
 
-## ![使用的选项](assets/csf-options-usage.png)
+## 用户权限 {#user-permissions}
 
-用户权限 {#user-permissions}
+下表列表了对搜索表单执行编辑、删除和预览操作所需的权限。
 
 <table>
  <thead>
   <tr>
-   </td>
-   </td>
+   <td><strong>操作</strong></td>
+   <td><strong>权限</strong></td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   </td>
-   </td>
+   <td>编辑 </td>
+   <td>节点的读取、写入 <code>/apps </code>权限。</td>
   </tr>
   <tr>
-   </td>
-   </td>
+   <td>删除</td>
+   <td>节点上的读取、写入和删除权 <code>/apps</code> 限</td>
   </tr>
   <tr>
-   </td>
-   </td>
+   <td>预览</td>
+   <td>节点上的读取、写入和删除 <code>/var/dam/content</code> 权限。<br /> 节点上的读取、写入 <code>/apps</code> 权限。</td>
   </tr>
  </tbody>
 </table>
