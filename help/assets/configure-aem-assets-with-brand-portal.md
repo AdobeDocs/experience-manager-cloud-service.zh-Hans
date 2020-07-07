@@ -3,7 +3,7 @@ title: 使用 Brand Portal 配置 AEM Assets 云服务
 description: 使用 Brand Portal 配置 AEM Assets 云服务。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 26%
@@ -32,7 +32,6 @@ Adobe Experience Manager(AEM)资产通过Adobe开发人员控制台配置为品�
 >Brand Portal租户只应配置一个AEM Assets云实例。
 >
 >请勿配置具有多个AEM Assets云实例的Brand Portal租户。
-
 
 ## 前提条件 {#prerequisites}
 
@@ -231,8 +230,6 @@ IMS 配置包括两个步骤：
 >
 >确保IMS配置通过运行状况检查。 如果配置未通过运行状况检查，则无效。 您必须删除它并创建新的有效配置。
 
-
-
 ### 配置云服务 {#configure-the-cloud-service}
 
 请执行以下步骤来配置Brand Portal云服务：
@@ -343,8 +340,6 @@ IMS 配置包括两个步骤：
 >[!NOTE]
 >
 >如果 Brand Portal 中（上述示例中）不存在父文件夹，或父文件夹在 AEM Assets 中已被修改，则会生成其他请求。
-
-
 
 <!--
 
