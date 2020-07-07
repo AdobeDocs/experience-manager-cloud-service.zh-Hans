@@ -2,32 +2,32 @@
 title: AEM 云服务 SDK
 description: 待完成
 translation-type: tm+mt
-source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
-AEM作为云服务SDK由以下对象组成：
+作为Cloud ServiceSDK的AEM包含以下对象：
 
 * **快速启动** Jar —— 用于本地开发的AEM运行时
-* **Java API Jar** - Java Jar/Maven依赖关系，它显示所有允许的Java API，这些API可用作云服务针对AEM进行开发。 以前称为Uberjar
+* **Java API Jar** - Java Jar/Maven依赖关系，它显示所有允许的Java API，这些API可用于针对AEM进行开发，作为Cloud Service。 以前称为Uberjar
 * **Javadoc Jar** - Java API Jar的javadocs
-* **Dispatcher Tools** —— 用于针对本地Dispatcher进行开发的工具集。 针对unix和windows的单独对象
+* **Dispatcher工具** -用于针对本地Dispatcher进行开发的工具集。 针对unix和windows的单独对象
 
-此外，某些以前使用AEM 6.5或更早版本部署的客户将使用以下对象。 如果本地编译不能与快速启动程序jar一起使用，并且您怀疑是由于从作为云服务部署的AEM中删除的接口造成的，请联系客户支持以确定您是否需要访问。 这将需要在后端进行更改。
+此外，某些以前使用AEM 6.5或更早版本部署的客户将使用以下对象。 如果本地编译不能与快速启动程序jar一起使用，并且您怀疑是由于从AEM中作为Cloud Service部署的接口被删除所致，请联系客户支持以确定您是否需要访问。 这将需要在后端进行更改。
 
 * **6.5已弃用的Java** API Jar —— 自AEM 6.5以来已删除的另一组接口
 * **6.5已弃用的Javadoc** Jar —— 用于附加的接口集的Javadoc
 
-## 以云服务SDK的形式访问AEM {#accessing-the-aem-as-a-cloud-service-sdk}
+## 将AEM作为Cloud ServiceSDK访问 {#accessing-the-aem-as-a-cloud-service-sdk}
 
-* 您可以检查AEM Admin Console的“关 **于Adobe Experience Manager** ”图标，以了解您正在生产上运行的AEM版本。
-* 快速启动程序jar和调度程序工具可以从软件分发门户下载 [为zip文件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。 请注意，对SDK列表的访问权限仅限于那些将AEM Managed Services或AEM作为云服务环境访问的SDK列表。
+* 您可以检查AEMAdmin Console的“ **关于Adobe Experience Manager** ”图标，以了解您正在生产中运行的AEM的版本。
+* 快速入门jar和Dispatcher工具可以从软件分发门户下载为 [zip文件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。 请注意，对SDK列表的访问权限仅限于将AEM Managed Services或AEM作为Cloud Service环境的用户。
 * Java API Jar和Javadoc Jar可通过各种工具（命令行或首选IDE）进行下载。
 * 主项目窗体应引用以下API Jar包。 此依赖关系也应在任何子包表单中引用。
 
@@ -40,7 +40,9 @@ AEM作为云服务SDK由以下对象组成：
 </dependency>
 ```
 
->[!NOTE] SDK的版本条目应与AEM作为云服务的版本匹配。 您可以登录到AEM，然后转到屏幕右上角的问号并选择“关于Adobe Experience Manager”，以了解您使用的 **[!UICONTROL 版本。]**
+>[!NOTE]
+>
+>SDK的版本条目应与AEM的版本匹配，作为Cloud Service。 您可以登录到AEM，然后转到屏幕右上角的问号并选择“关于Adobe Experience Manager”，以查看您使用的 **[!UICONTROL 版本]**
 
 
 ## 使用新的SDK版本刷新本地项目 {#refreshing-a-local-project-with-a-new-skd-version}
