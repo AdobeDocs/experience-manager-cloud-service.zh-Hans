@@ -3,7 +3,7 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: 使用远程部署中可 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 54%
@@ -139,13 +139,13 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
    *图：在远程 DAM 上搜索资产时，筛选文档类型和图像的选项.*
 
-1. 如果异步获取资产且获取任务失败，会通知站点作者。在创作过程中甚至是创作后，作者可以在[异步作业](/help/assets/asynchronous-jobs.md)用户界面中，查看关于获取任务和错误的详细信息。
+1. 如果异步获取资产且获取任务失败，会通知站点作者。在创作过程中甚至是创作后，作者可以在[异步作业](/help/operations/asynchronous-jobs.md)用户界面中，查看关于获取任务和错误的详细信息。
 
    ![关于在后台进行的异步获取资产的通知。](assets/assets_async_transfer_fails.png)
 
    *图：关于在后台进行的异步获取资产的通知。*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请查看[异步作业](/help/assets/asynchronous-jobs.md)用户界面。
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请查看[异步作业](/help/operations/asynchronous-jobs.md)用户界面。
 
    >[!NOTE]
    >
@@ -189,4 +189,4 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 对于常见错误情景，请按照以下步骤进行故障诊断：
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* 从远程 DAM 获取的资产，可能会因为以下原因无法发布到网页上：该资产不存在于远程 DAM 上；缺乏相应的获取该资产的权限；网络故障。确保资产未从远程DAM中删除或权限未更改。 确保满足适当的先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/assets/asynchronous-jobs.md)，查看是否发生了资产获取错误。
+* 从远程 DAM 获取的资产，可能会因为以下原因无法发布到网页上：该资产不存在于远程 DAM 上；缺乏相应的获取该资产的权限；网络故障。确保资产未从远程DAM中删除或权限未更改。 确保满足适当的先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/operations/asynchronous-jobs.md)，查看是否发生了资产获取错误。
