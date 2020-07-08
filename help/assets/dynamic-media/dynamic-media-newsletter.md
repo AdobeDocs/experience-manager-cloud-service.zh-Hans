@@ -2,9 +2,9 @@
 description: '按体验联盟列出的Dynamic Media新闻快讯是每月的新闻快讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media经典，以便您能够立即开始实现价值。 此一站式商店时事通讯中提供宝贵的知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些主要功能，如图像预设、查看器预设、视频用户档案等。 '
 title: Dynamic Media新闻稿
 translation-type: tm+mt
-source-git-commit: 26cc4778052ebcc520dc3ddeeca30c043eadf695
+source-git-commit: 167214d332825fb75b513d316eefa38a2eae097d
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Experience League的每月Dynamic Media新闻快讯旨在帮助您快速了解Dy
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
 
-* **[2020年4月，第3期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
+* **[2020年4月，第3期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2020_April.html)**
 
    在此问题中：
 
@@ -51,7 +51,7 @@ Experience League的每月Dynamic Media新闻快讯旨在帮助您快速了解Dy
    >
    >我们希望确保只向希望接收Dynamic Media时事通讯的用户发送该新闻稿。 要在此期刊后继续接收新闻稿，请在此处注 [册](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)。
 
-* **[2020年2月，第二期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**
+* **[2020年2月，第二期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    在此问题中：
 
@@ -62,7 +62,7 @@ Experience League的每月Dynamic Media新闻快讯旨在帮助您快速了解Dy
    * 了解Dynamic Media经典的新用户界面。
    * 会见Adobe Experience Cloud客户成功经理Georgia Myers。
 
-* **[2020年1月，第1期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**
+* **[2020年1月，第1期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
    在此问题中：
 
