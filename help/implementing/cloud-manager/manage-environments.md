@@ -1,10 +1,10 @@
 ---
-title: 管理环境-云服务
-description: 管理环境-云服务
+title: 管理环境-Cloud Service
+description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '695'
 ht-degree: 8%
 
 ---
@@ -41,8 +41,7 @@ ht-degree: 8%
 
 
 1. 单击“ **添加环境** ”以添加环境。 此按钮可从环境屏 **幕访** 问。
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    当 **环境** 中有零个项目时， **环境卡** 上也提供“添加环境”选项。
 
@@ -74,12 +73,12 @@ ht-degree: 8%
 ![](assets/manage-environments2.png)
 
 
-更 **新选** 项可从环境卡的下拉菜 **单中获** 得。
+更 **新** 选项可从环境 **卡中获** 得。
 如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-从下拉菜单中选择此选项将允许部署管理器将与此环境关联的管道更新到最新版本，然后执行该管道。
+选择此选项将允许部署管理器将与此环境关联的管道更新到最新版本，然后执行该管道。
 
 如果管道已更新，则提示用户执行管道。
 
