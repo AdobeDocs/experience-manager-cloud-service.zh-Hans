@@ -2,10 +2,10 @@
 title: AEM应用程序项目-Cloud Service
 description: AEM应用程序项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: 3979cad8f9e51756113971c81a601e8cba21c8a2
+source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 10%
+source-wordcount: '1120'
+ht-degree: 11%
 
 ---
 
@@ -125,31 +125,6 @@ Cloud Manager现在支持使用Java 8和Java 11构建客户项目。 默认情�
 | CM_项目_NAME | 项目名称 |
 | AFTRACTS_VERSION | 对于舞台或生产管道，由Cloud Manager生成的合成版本 |
 | CM_AEM_PRODUCT_VERSION | 版本名称 |
-
-
-### 自定义环境变量 {#custom-environ-variables}
-
-在某些情况下，客户的构建过程可能取决于特定配置变量，这些变量不适合放置在git存储库中。 Cloud Manager允许Adobe代表按客户配置这些变量。 这些变量存储在安全存储位置，并且仅在特定客户的构建容器中可见。 希望使用此功能的客户需要联系其Adobe代表来配置其变量。
-
-配置后，这些变量将作为环境变量可用。 为了将它们用作Maven属性，您可以在pom.xml文件中引用它们，可能在上述用户档案中引用它们：
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
-            </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
-        </profile>
-```
-
->[!NOTE]
->
->环境变量名称只能包含字母数字和下划线(_)字符。 按照惯例，这些名称应全部为大写。
 
 ## 在Cloud Manager中激活Maven用户档案 {#activating-maven-profiles-in-cloud-manager}
 
