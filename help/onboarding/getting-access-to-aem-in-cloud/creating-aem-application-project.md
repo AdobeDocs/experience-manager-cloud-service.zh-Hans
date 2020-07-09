@@ -1,11 +1,11 @@
 ---
-title: AEM应用程序项目——云服务
-description: AEM应用程序项目——云服务
+title: AEM应用程序项目-Cloud Service
+description: AEM应用程序项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 11%
+source-wordcount: '1255'
+ht-degree: 10%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 11%
 * 您可以在pom.xml文件中添加对其他Maven *项目存储库的引* 用。 但是，不支持访问受密码保护或受网络保护的对象存储库。
 * 可部署的内容包是通过扫描内容包 *zip* 文件来发现的，这些文件包含在名为 *目标的目录中*。 任何数量的子模块都可以生成内容包。
 
-* 通过扫描zip文件(同样，包含在名为 *目标的目录中* )发现可部署的调度程序对象，该目录具有名 *为conf**和conf.d***&#x200B;的目录。
+* 通过扫描zip文件(同样，包含在名为 *Dispatcher的目录中* )发现可部署的目标对象，该目录具有名 *为conf**和conf.d***&#x200B;的目录。
 
 * 如果有多个内容包，则无法保证包部署的顺序。 如果需要特定的订单，可以使用内容包依赖关系定义订单。 可以从部署 [中跳](#skipping-content-packages) 过包。
 
@@ -59,7 +59,7 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 
 * 构建环境基于Linux，源自Ubuntu 18.04。
 * Apache Maven 3.6.0已安装。
-* 安装的Java版本为Oracle JDK 8u202。
+* Java版本已安装Oracle JDK 8u202和11.0.2。
 * 还安装了一些其他系统包，这是必需的：
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 * Maven始终使用以下命令运行： *mvn —batch-mode clean org.jacoco:jaco-maven-plugin:prepare-agent包*
 * Maven在系统级别上配置了一个settings.xml文件，该文件自动包括公共Adobe Artifact **存储库** 。 (有关更多详 [细信息，请参阅Adobe](https://repo.adobe.com/) Public Maven Repository)。
 
+### 使用Java 11 {#using-java-11}
+
+Cloud Manager现在支持使用Java 8和Java 11构建客户项目。 默认情况下，项目是使用Java 8构建的。 计划在其项目中使用Java 11的客户可以使用Apache Maven Toolchains [插件进行此操作](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
+
+为此，请在pom.xml文件中添加一个 `<plugin>` 如下的条目：
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>支持的供应商是Oracle和Sun Microsystems，支持的版本是1.8、1.11和11。
 
 ## 环境变量 {#environment-variables}
 
