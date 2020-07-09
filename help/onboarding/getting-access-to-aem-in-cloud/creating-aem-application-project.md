@@ -2,9 +2,9 @@
 title: AEM应用程序项目-Cloud Service
 description: AEM应用程序项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: e3370b7a7f543ae93b25ead8c174796fd27067f2
+source-git-commit: 3979cad8f9e51756113971c81a601e8cba21c8a2
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1252'
 ht-degree: 10%
 
 ---
@@ -99,12 +99,11 @@ Cloud Manager现在支持使用Java 8和Java 11构建客户项目。 默认情�
                     </jdk>
                 </toolchains>
             </configuration>
+        </plugin>
 ```
 
 >[!NOTE]
->* 支持的供应商 `oracle` 是 `sun`和。
->* 支持的版本 `1.8`有 `1.11`、和 `11`。
-
+>支持 `vendor` 的值 `oracle` 为，支 `sun` 持的值为 `version` 、 `1.8`和 `1.11``11`。
 
 ## 环境变量 {#environment-variables}
 
