@@ -2,9 +2,9 @@
 title: Adobe Experience Manager保护和数据隐私法规——作为Cloud Service站点就绪性
 description: '了解Adobe Experience Manager作为Cloud Service站点对各种数据保护和数据隐私法规的支持； 包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及在将新AEM作为Cloud Service项目实施时如何遵守这些规定。 '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,9 @@ Adobe Experience Manager受用于管理用户选择加入／选择退出的cooki
       选择加入——将我包括在访客会话聚合和分析中(不安 `amcglobal.sc.omtrdc.net` 装选择退出cookie)-单击此处。
    请按照上述步骤访问实际链接。
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > 使用条款的隐私政策 **部分中** ，还有 [进一步说明](https://marketing.adobe.com/resources/help/zh_CN/terms.html)。
+   > 2中有进一步的 **说明。 隐私.** 部分 [中](https://www.adobe.com/legal/terms.html)。
 
 ## Analytics基金会 {#analytics-foundation}
 
