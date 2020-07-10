@@ -2,10 +2,10 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 8%
+source-wordcount: '753'
+ht-degree: 7%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 8%
 
 
 更 **新** 选项可从环境 **卡中获** 得。
-如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
+如果单击环境卡中的“详细信 **息** ”，则 **此选项可用** 。 环境 **页面** 将打开，选择开发环境后，单击 **...并选择** 更新 ****，如下图所示：
 
 ![](assets/environments-screen-update.png)
 
@@ -90,7 +90,7 @@ ht-degree: 8%
 
 ![](assets/environ-delete.png)
 
-如果单击环境卡中的“详细信息”, **则** 也可 **以删除** 环境。
+如果单击环境卡中的“详细信息” **** ，则也可 **以使用** 删除选项。 环境 **页面** 将打开，选择开发环境后，单击 **...并选** 择删 **除**，如下图所示：
 
 ![](assets/environ-delete-2.png)
 
@@ -109,5 +109,5 @@ ht-degree: 8%
 
 ![](assets/environ-dev-console.png)
 
-如果单击环境卡中的“详细 **信息** ”，还可以从“管理”按钮中选 **择** 此选项 **** 。
+如果单击环境卡中的“详细信 **息** ”，则 **此选项可用** 。 环境 **页面打** 开，选择环境后，单击……并选 **择开发人** 员控 **制台**。
 
