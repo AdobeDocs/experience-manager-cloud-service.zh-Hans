@@ -1,18 +1,18 @@
 ---
-title: 管理日志——云服务
-description: 管理日志——云服务
+title: 管理日志-Cloud Service
+description: 管理日志-Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 11%
+ht-degree: 17%
 
 ---
 
 
 # 访问和管理日志 {#manage-logs}
 
-用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定列表的可用日志文件环境。
+用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定环境的可用日志文件列表。
 
 这些文件可通过UI下载，也可以从概述 **页面** 。
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 
 或者，环境 **页面** :
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Note]
 >无论打开位置如何，都会显示相同的对话框，允许下载单个日志文件。
