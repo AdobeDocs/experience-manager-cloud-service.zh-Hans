@@ -2,7 +2,7 @@
 title: 管理查看器预设
 description: 如何创建和管理查看器预设
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
 source-wordcount: '4263'
 ht-degree: 27%
@@ -150,9 +150,9 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 下表列出了Dynamic Media附带的所有预定义现成查看器预设。
 
-另请参阅 <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)。
+另请参 [阅实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)。
 
-有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
+有关查看器支持的Web浏览器和操作系统版本的信息，可以查看查看器发行说明。
 
 请参阅《查看器参考指南》的目录中的“查看器发 [行说明”](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
 
