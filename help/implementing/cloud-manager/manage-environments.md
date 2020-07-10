@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '702'
 ht-degree: 8%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 8%
 
 开发环境的更新由项目的用户管理。 当环境未运行最新的公开可用AEM版本时，主屏幕上的环境卡状态将显示“可 **用更新”**。
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 更 **新** 选项可从环境 **卡中获** 得。
@@ -86,10 +86,14 @@ ht-degree: 8%
 
 具有必要权限的用户将能够删除开发环境。
 
-“ **删除** ”选项可从环境卡的下拉菜 **单中** 使用。
-如果单击环境卡中的“ **详细信息** ”，也可以从“管理”按 **钮** 访问此选项 **** 。
+“ **删除** ”选项可从环境卡的下拉菜 **单中** 使用。 单击 **...** 以获取要删除的开发环境。
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+如果单击环境卡中的“详细信息”, **则** 也可 **以删除** 环境。
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 此功能不适用于为生产目的而设置的常规环境中的生产／阶段项目集。 但是，该功能可用于沙箱环境中的生产／阶段项目。
@@ -103,7 +107,7 @@ ht-degree: 8%
 有关更 [多详细信息，请参阅“冬眠”和“脱冬](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) ”沙箱环境。
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 如果单击环境卡中的“详细 **信息** ”，还可以从“管理”按钮中选 **择** 此选项 **** 。
 
