@@ -2,9 +2,9 @@
 title: 视频
 description: 了解如何在Dynamic Media中使用视频
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
 workflow-type: tm+mt
-source-wordcount: '10146'
+source-wordcount: '10058'
 ht-degree: 30%
 
 ---
@@ -426,7 +426,6 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 1. [配置Google Cloud设置](#configuring-google-cloud-settings)
 1. [创建YouTube渠道](#creating-a-youtube-channel)
 1. [添加用于发布的标记](#adding-tags-for-publishing)
-1. [启用YouTube发布复制代理](#enabling-the-youtube-publish-replication-agent)
 1. [在AEM中设置YouTube](#setting-up-youtube-in-aem)
 1. [（可选）自动设置已上传视频的默认YouTube属性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [将视频发布到您的 YouTube 频道](#publishing-videos-to-your-youtube-channel)
@@ -565,19 +564,21 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 
 要将视频发布到YouTube,AEM会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅 [管理标记](/help/sites-cloud/authoring/features/tags.md)。
 
-或者，如果您打算在AEM中使用默认标记，则可以跳过此任务，转 [至启用YouTube发布复制代理](#enabling-the-youtube-publish-replication-agent)。
+或者，如果您打算在AEM中使用默认标记，则可以跳过此任务，转 [到AEM中的设置YouTube](#setting-up-youtube-in-aem)。
 
-### 启用YouTube发布复制代理 {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>配置云服务后，无需进行其他配置即可启用YouTube发布复制代理。 原因是在保存云服务配置时启用了它。
 
-启用YouTube发布复制代理后，如果要测试与Google Cloud帐户的连接，请点按测 **[!UICONTROL 试连接]**。 浏览器选项卡显示连接结果。 如果已添加YouTube渠道，则测试中将显示这些的列表。
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-1. 点按 AEM 左上角的 AEM 徽标，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 复制]** > **[!UICONTROL 作者代理]**。
-1. 在“作者代理”页面上，单 **[!UICONTROL 击“YouTube发布”(youTube)]**。
-1. 在工具栏的“设置”右侧，单击“编 **[!UICONTROL 辑”]**。
-1. 选中“ **[!UICONTROL 启用]** ”复选框以打开复制代理。
-1. 单击&#x200B;**[!UICONTROL 确定]**。
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-   现在，您将在AEM中设置YouTube。
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
+1. Click **[!UICONTROL OK]**. -->
 
 ### Setting up YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -750,17 +751,14 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 >
 >请注意，立即发布不会自动发布到 YouTube。设置 Dynamic Media 时，有两种发布选项可供选择：**[!UICONTROL 立即]**&#x200B;或&#x200B;**[!UICONTROL 激活时]**。
 >
->**[!UICONTROL 立即发布]** ，意味着上传的资产在与IPS同步后会自动发布到投放系统。 尽管这对Dynamic Media来说是正确的，但对YouTube来说则并非如此。 要发布到YouTube，您必须通过AEM Author进行发布。
+>**[!UICONTROL “立即发布]** ”意味着上传的资产在与IPS同步后会自动发布到投放系统。 尽管这对Dynamic Media来说是正确的，但对YouTube来说则并非如此。 要发布到YouTube，您必须通过AEM Author进行发布。
 
 >[!NOTE]
->
->要从YouTube发布内容，AEM使用“发 **[!UICONTROL 布到YouTube]** ”工作流程，它允许您监视进度并视图任何故障信息。
->
->请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
->
->有关更详细的进度信息，您可以监视复制下的YouTube日志。 但是，请注意，此类监视需要管理员访问权限。
+要从YouTube发布内容，AEM使用“发 **[!UICONTROL 布到YouTube]** ”工作流程，它允许您监视进度并视图任何故障信息。
+请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+有关更详细的进度信息，您可以监视复制下的YouTube日志。 但是，请注意，此类监视需要管理员访问权限。
 
-要将视频发布到您的 YouTube 频道，请执行以下操作：
+**要将视频发布到您的YouTube渠道**:
 
 1. 在AEM中，导航到要发布到YouTube渠道的视频资产。
 1. 选择视频资产（自适应视频集）。
@@ -793,8 +791,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 您可以在发布视频后获得由Dynamic Media生成的YouTube URL字符串。 在复制该 YouTube URL 时，它会进入“剪贴板”，以便您能够视需要将其粘贴到网站或应用程序中的页面。
 
 >[!NOTE]
->
->只有在将视频资产发布到 YouTube 后，才可复制其 YouTube URL。
+只有在将视频资产发布到 YouTube 后，才可复制其 YouTube URL。
 
 要将 YouTube URL 关联到您的 Web 应用程序，请执行以下操作：
 
@@ -811,14 +808,11 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 在AEM中取消发布视频资产时，该视频会从YouTube中删除。
 
 >[!CAUTION]
->
->如果您直接从YouTube中删除视频，AEM不会察觉，并继续表现为视频仍发布到YouTube。 始终通过AEM从YouTube取消发布视频资产。
+如果您直接从YouTube中删除视频，AEM不会察觉，并继续表现为视频仍发布到YouTube。 始终通过AEM从YouTube取消发布视频资产。
 
 >[!NOTE]
->
->要从YouTube中删除内容，AEM使用“从YouTube **[!UICONTROL 中取消发布]** ”工作流，它允许您监视进度并视图任何故障信息。
->
->请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+要从YouTube中删除内容，AEM使用“从YouTube **[!UICONTROL 中取消发布]** ”工作流，它允许您监视进度并视图任何故障信息。
+请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
 要取消发布视频以将其从 YouTube 中删除，请执行以下操作：
 
@@ -858,21 +852,17 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
    任何工作流信息（如编码）都会显示在时间轴中。 对于YouTube发布，工作流时间轴还包括YouTube渠道和YouTube视频URL的名称。 此外，在发布完成后，您会在工作流时间轴中看到任何失败通知。
 
    >[!NOTE]
-   >
-   >由于 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 中存在多个关于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的工作流配置，最终记录失败/错误会花费较长时间，例如：
-   >
-   >    * Apache Sling作业队列配置
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite工作流超时队列
+   由于 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 中存在多个关于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的工作流配置，最终记录失败/错误会花费较长时间，例如：
+   * Apache Sling作业队列配置
+   * Adobe Granite Workflow External Process Job Handler
+   * Granite工作流超时队列
 
-   >
-   >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
+   在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
 
 1. 有关进行中的工作流，请参阅“工具”>“工作流” **[!UICONTROL >“实例”中提供的“工作流实例]** ” **[!UICONTROL (Workflow]** ) **[!UICONTROL >“]**&#x200B;实例”。
 
    >[!NOTE]
-   >
-   >您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
+   您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -885,30 +875,22 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 1. 有关失败的作业，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 失败]**&#x200B;中显示的“工作流失败”。**[!UICONTROL 工作流失败]**&#x200B;列出所有失败的工作流活动。
 
    >[!NOTE]
-   >
-   >您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
+   您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >由于 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 中存在多个关于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的多个工作流配置，最终记录错误消息会花费较长时间，例如：
-   >
-   >
-   >
-   >    * Apache Sling作业队列配置
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite工作流超时队列
+   由于 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 中存在多个关于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的多个工作流配置，最终记录错误消息会花费较长时间，例如：
+   * Apache Sling作业队列配置
+   * Adobe Granite Workflow External Process Job Handler
+   * Granite工作流超时队列
 
-   >
-   >
-   >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
+   在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
 
 1. 有关已完成的工作流，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 存档]**&#x200B;中的可用工作流存档。**[!UICONTROL 工作流存档]**&#x200B;列出了所有已完成的工作流活动。
 
    >[!NOTE]
-   >
-   >您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
+   您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -963,8 +945,7 @@ For YouTube publishing jobs, do the following:
 ## 查看视频报表 {#viewing-video-reports}
 
 >[!NOTE]
->
->视频报表仅在运行Dynamic Media-混合模式时可用。
+视频报表仅在运行Dynamic Media-混合模式时可用。
 
 视频报表显示指定时间段内的多个聚合量度，帮助您监控*已发布*单个和聚合视频是否按预期效果呈现。 以下顶级指标数据是整个网站中所有已发布视频的汇总数据：
 
@@ -981,8 +962,7 @@ For YouTube publishing jobs, do the following:
 如果视频是在 Adobe Experience Manager Dynamic Media 外部编码的，就不会提供受众保留（流失）图表和表中的播放比例数据。
 
 >[!NOTE]
->
->只有在使用 Dynamic Media 自带的视频播放器及关联的视频播放器预设时，才可跟踪并报告数据。因此，对于通过其他视频播放器播放的视频，您无法进行跟踪和报告。
+只有在使用 Dynamic Media 自带的视频播放器及关联的视频播放器预设时，才可跟踪并报告数据。因此，对于通过其他视频播放器播放的视频，您无法进行跟踪和报告。
 
 默认情况下，在您首次进入视频报表时，报表会显示从当月的第一个开始到当月的当日结束的视频数据。 但是，您可以通过指定您自己的日期范围来覆盖默认日期范围。 下次输入视频报表时，将使用您指定的日期范围。
 
@@ -1077,8 +1057,7 @@ If `config2` is anything else, set the preset parameter the same as the `config2
 字幕功能还允许对耳聋或听力欠佳的用户使用隐藏式字幕，从而提高辅助功能。
 
 >[!NOTE]
->
->您使用的视频播放器必须支持字幕的显示。
+您使用的视频播放器必须支持字幕的显示。
 
 Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）格式。 此转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
 
@@ -1103,8 +1082,7 @@ Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）�
    现在，请按照站点屏幕上的说明创作和保存WebVTT文件。 完成后，复制题注文件内容并将其粘贴到纯文本编辑器中，并以。vtt文件扩展名保存它。
 
    >[!NOTE]
-   >
-   >要全局支持多语言视频字幕，请注意，WebVTT标准要求您为要支持的每种语言创建单独的。vtt文件和调用。
+   要全局支持多语言视频字幕，请注意，WebVTT标准要求您为要支持的每种语言创建单独的。vtt文件和调用。
 
    通常，您希望将字幕VTT文件命名为与视频文件同名，并附加语言区域设置，如-EN、-FR或-DE等。 通过这样做，它可以帮助您使用现有Web内容管理系统自动生成视频URL。
 
@@ -1134,8 +1112,7 @@ Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）�
 您可以通过向单个视频或自适应视频集添加章节标记，使长形视频更易于观看和导航。 当用户播放视频时，他们可以单击视频时间线上的章节标记（也称为视频浏览条），轻松导航到自己感兴趣的位置，或立即跳到新内容、演示、教程等。
 
 >[!NOTE]
->
->使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器确实支持章节标记，但使用第三方视频播放器则不支持。
+使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器确实支持章节标记，但使用第三方视频播放器则不支持。
 
 如果需要，您可以使用章节而不是使用视频查看器预设创建自定义视频查看器并为其添加品牌。 有关使用章节导航创建您自己的HTML5查看器的说明，请参阅Adobe Scene7 Viewer SDK for HTML5指南中的类和下方的标题“使用修饰符自定义行为” `s7sdk.video.VideoPlayer` 和 `s7sdk.video.VideoScrubber`。 Adobe Scene7 Viewer SDK可从Adobe Developer Connection下 [载](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)。
 
