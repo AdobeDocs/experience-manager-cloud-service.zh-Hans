@@ -1,11 +1,11 @@
 ---
 sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 74%
    + [AEM 云服务 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
    + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM中的叠加作为Cloud Service](developing/introduction/overlays.md)
-   + [在AEM中将Sling资源合并作为Cloud Service](developing/introduction/sling-resource-merger.md)
+   + [AEM 云服务中的叠加](developing/introduction/overlays.md)
+   + [在 AEM 云服务中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
    + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [理解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
 + 配置和扩展 AEM 云服务 {#configuring-and-extending}
@@ -40,16 +40,16 @@ ht-degree: 74%
    + [内容片段配置用于渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [配置搜索表单](developing/extending/search-forms.md)
    + [配置富文本编辑器](/help/implementing/developing/extending/rich-text-editor.md)
-   + [配置RTE插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [配置RTE以创建可访问站点](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [配置 RTE 插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [配置 RTE 以创建可访问的站点](/help/implementing/developing/extending/rte-accessible-content.md)
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
    + [为 AEM 云服务配置 OSGi](deploying/configuring-osgi.md)
-+ Author Tier {#author-tier}
-   + [访问作者层](/help/implementing/author-tier/accessing-the-author-tier.md)
-   + [保护作者层](/help/implementing/author-tier/securing-the-author-tier.md)
-+ 内容投放概述 {#content-delivery}
-   + [内容投放流](dispatcher/overview.md)
++ 创作层 {#author-tier}
+   + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [保护创作层](/help/implementing/author-tier/securing-the-author-tier.md)
++ 内容交付概述 {#content-delivery}
+   + [内容交付流程](dispatcher/overview.md)
    + [云中的调度程序](dispatcher/disp-overview.md)
-   + [AEM中的CDN作为Cloud Service](dispatcher/cdn.md)
-   + [在AEM中缓存为Cloud Service](dispatcher/caching.md)
+   + [AEM 云服务中的 CDN](dispatcher/cdn.md)
+   + [AEM 云服务中的缓存](dispatcher/caching.md)
