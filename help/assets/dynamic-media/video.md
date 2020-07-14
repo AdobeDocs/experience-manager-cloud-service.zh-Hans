@@ -2,7 +2,7 @@
 title: 视频
 description: 了解如何在Dynamic Media中使用视频
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 30%
@@ -568,7 +568,7 @@ YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到You
 
 >[!NOTE]
 >
->配置云服务后，无需进行其他配置即可启用YouTube发布复制代理。 原因是在保存云服务配置时启用了它。
+>配置云服务后，此时无需进行其他配置即可启用YouTube发布复制代理。 原因是在保存云服务配置时启用了它。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -890,7 +890,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 有关已完成的工作流，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 存档]**&#x200B;中的可用工作流存档。**[!UICONTROL 工作流存档]**&#x200B;列出了所有已完成的工作流活动。
 
    >[!NOTE]
-   您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
+   您可能需要管理权限才能访问“工 **[!UICONTROL 具]** ”菜单。
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
