@@ -1,11 +1,11 @@
 ---
 title: AEM Dispatcher Converter 工具
 description: AEM Dispatcher Converter 工具
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Dispatcher 是 Adobe Experience Manager 的缓存和/或负载平衡工具。使
 
 您必须了解如何构建 AEM 云服务 Apache 和 Dispatcher 配置，以及在部署到云环境之前，如何在本地验证和运行该配置。
 
-有关更多信息，请参阅[云中的 Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
+有关更多信息，请参阅[云中的 Dispatcher](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
@@ -35,7 +35,7 @@ AEM Dispatcher Converter 是一个实用程序，可用于将现有 AMS Dispatch
 
 实施的转换器是 **AEMDispatcherConfigConverter**，它遵循转换准则。
 
-请参阅[将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration)，了解如何将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher。
+请参阅[将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configur)，了解如何将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher。
 
 ## 使用 AEM Dispatcher Converter {#using-dispatcher-converter}
 
