@@ -1,11 +1,11 @@
 ---
 title: 已知问题
 description: 特定于 Adobe Experience Manager 云服务已知问题的发行说明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager Assets 中有一些依赖于基础功能的功能在 Ex
    * 未填充资产属性用户界面中的“产品信息”选项卡。
 * 由于依赖于 InDesign 服务器集成，当前未启用以下功能：
    * 资产模板和资产目录。
-   * 多页预览Adobe InDesign文件。
+   * Adobe InDesign 文件的多页预览。
 
 >[!MORELIKETHIS]
 >
