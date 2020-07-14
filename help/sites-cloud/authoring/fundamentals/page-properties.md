@@ -1,11 +1,11 @@
 ---
 title: 编辑页面属性
 description: 为页面定义所需的属性
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1538'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 99%
 
 * **HTML ID**
 
-   * 要应用到组件的HTML ID。
+   * 应用于组件的 HTML ID。
 
 * **页面标题**
 
