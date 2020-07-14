@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,6 +24,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 >
 >* **内容片段**&#x200B;是可编辑的内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容，网页即属于此类片段。
+
 >
 >
 体验片段可以包含内容片段形式的内容，反之则不行。
@@ -58,6 +59,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 3. 您可以：
    * 打开&#x200B;**资产**&#x200B;浏览器并筛选&#x200B;**内容片段**（默认为图像）。然后，将所需的片段拖到组件实例上。
    * 选择内容片段组件，然后从工具栏中选择&#x200B;**配置**。在对话框中，您可以打开选择对话框以浏览并选择所需的&#x200B;**内容片段**。
+
    >[!NOTE]
    >
    >备选方法是将特定的内容片段直接拖到页面上。这将自动创建关联的组件（内容片段）。
@@ -86,10 +88,11 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
    * **单个文本元素**
    * **多个元素**
 * **元素**
-   * 根据所使用的模型，将可以选择。
+   * 可用的选项取决于所使用的模型。
+
    >[!NOTE]
    >
-   >可用元素取决于所使用的模型。
+   >可用的元素取决于所使用的模型。
 
 * **变量**
    * 默认主 **视图** 将始终可用。
@@ -97,7 +100,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 * **ID**
 
-   * **应用于组件的 HTML ID 属性。**
+   * 应用于组件的 **HTML ID** 属性。
 
 ### 到片段编辑器的快速连接 {#quick-connection-to-fragment-editor}
 
@@ -146,7 +149,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您有与 [内容片段关联的](/help/assets/content-fragments/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的 [特殊内容源](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)。
+如果您有与[内容片段关联的](/help/assets/content-fragments/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的[特殊内容源](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)。
 
 >[!NOTE]
 >
