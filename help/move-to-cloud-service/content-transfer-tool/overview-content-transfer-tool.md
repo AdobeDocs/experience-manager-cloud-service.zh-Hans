@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -48,18 +48,16 @@ ht-degree: 69%
 
 请阅读以下章节，以了解有关使用内容传输工具的准则和最佳实践。
 
-* 建议在源存储库 [上运行修订](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html)[清理和数据存储一致性检](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 查，以确 **定潜在问题** ，并减小存储库的大小。
+* 建议对&#x200B;**源**&#x200B;存储库运行[修订清理](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/deploying/revision-cleanup.html)和[数据存储一致性检查](https://helpx.adobe.com/cn/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以确定潜在问题，并减小存储库的大小。
 
-* 如果将AEM Cloud作者内容投放网络(CDN)配置配置为包含IP的白名单，则应确保将源环境IP也添加到允许列表中，以便源环境和AEM Cloud环境可以相互通信。
+* 如果将 AEM 云创作内容分发网络 (CDN) 配置为包含 IP 白名单，则应确保将源环境 IP 也添加到白名单中，以便源环境和 AEM 云环境可以相互通信。
 
 * 在摄取阶段，建议在启用&#x200B;*划出*&#x200B;模式的情况下来运行摄取，在该模式下，目标 AEM 云服务环境中的现有存储库（创作或发布）将被完全删除，并且之后会使用迁移集数据对存储库进行更新。应用此模式的摄取速度比非划出模式快得多，在非划出模式下，迁移集将应用在当前内容至上。
 
 * 内容传输活动完成后，需要在云服务环境中使用正确的项目结构，才能确保内容在云服务环境中成功呈现。
 
-* 运行内容传输工具之前，必须确保源AEM实例的子目录中 `crx-quickstart` 有足够的磁盘空间。 这是因为内容传输工具创建了存储库的本地副本，稍后将其上传到迁移集。
-计算所需可用磁盘空间的一般公式如下：
+* 运行内容传输工具之前，必须确保源 AEM 实例的 `crx-quickstart` 子目录中有足够的磁盘空间。这是因为内容传输工具会创建存储库的本地副本，以便稍后将其上传到迁移集。计算所需可用磁盘空间的一般公式如下：
    `data store size + node store size * 1.5`
 
-   * *数据存储大小*: 内容传输工具使用64 GB，即使实际数据存储空间更大。
-   * *节点存储大小*: 区段存储目录大小或MongoDB数据库大小。
-因此，对于20GB的区段存储大小，所需的可用磁盘空间将为94GB。
+   * *数据存储大小*：内容传输工具使用 64 GB，即使实际数据存储更大也是如此。
+   * *节点存储大小*：区段存储目录大小或 MongoDB 数据库大小。因此，对于 20 GB 的区段存储大小，所需的可用磁盘空间将为 94 GB。
