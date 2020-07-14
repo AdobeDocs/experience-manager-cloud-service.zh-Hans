@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 云服务 2020.5.0 发行说明
 description: Experience Manager 2020.5.0 发行说明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
 ht-degree: 100%
 
