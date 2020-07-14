@@ -1,11 +1,11 @@
 ---
 sub-product: 移动到 AEM 云服务
 user-guide-title: 移动到 AEM 云服务
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe2c098b55bf501dc0ae68d01139b828d92d90f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 89%
    + [执行](/help/move-to-cloud-service/execution.md)
    + [上线后](/help/move-to-cloud-service/post-go-live.md)
 + 云过渡工具{#cloud-migration}
-   + 云就绪性分析器 {#cloud-readiness-analyzer}
+   + 云就绪分析器 {#cloud-readiness-analyzer}
       + [概述](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [使用云就绪性分析器](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+      + [使用云就绪分析器](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
    + 内容传输工具 {#content-transfer-tool}
       + [概述](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
