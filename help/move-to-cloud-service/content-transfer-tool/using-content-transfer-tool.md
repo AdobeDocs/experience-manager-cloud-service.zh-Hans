@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,22 +18,22 @@ ht-degree: 91%
 
 * 内容传输工具的最低系统要求为 AEM 6.3 + 和 JAVA 8。如果您使用的是较低版本的 AEM，则需要将内容存储库升级到 AEM 6.5，才能使用内容传输工具。
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. 如果您使用的是&#x200B;*生产环境*，则会自动更新。
+* 如果您使用的是“沙盒环境”**，请确保将您的环境升级到 2020 年 6 月 10 日版本或更高版本。如果您使用的是“生产环境”**，则会自动更新。
 
-* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的Cloud Service实例中的AEM管理员组。 无特权的用户将无法检索访问令牌，进而无法使用内容传输工具。
+* 要使用内容传输工具，您需要成为源实例上的管理员用户，并且属于要将内容传输到的云服务实例中的 AEM 管理员组。无特权的用户将无法检索访问令牌，进而无法使用内容传输工具。
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
 * 作者的&#x200B;*摄取阶段*&#x200B;将会按比例缩小整个作者部署。这意味着作者 AEM 在整个摄取过程中将不可用。
 
-* 内容传输工具一次支持的存储库大小的建议上限为20GB。
+* 内容传输工具一次支持的存储库大小的建议上限为 20 GB。
 
 ## 可用性 {#availability}
 
-内容传输工具可从软件分发门户下载为zip文件（内容传输工具v1.0.0）。 您可以通过源 Adobe Experience Manager (AEM) 实例上的包管理器安装该包。
+可以从软件分发门户以 zip 文件的形式下载内容传输工具（内容传输工具 v1.0.0）。您可以通过源 Adobe Experience Manager (AEM) 实例上的包管理器安装该包。
 
 >[!NOTE]
->从软件分发门户下载内 [容传输](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 工具。
+>从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载内容传输工具。
 
 ## 运行内容传输工具 {#running-tool}
 
@@ -70,7 +70,7 @@ ht-degree: 91%
    1. **访问令牌**：输入访问令牌。
 
       >[!NOTE]
-      >您可以通过导航到 `/libs/granite/migration/token.json`，从创作实例检索访问令牌。从访问令牌作者实例检索Cloud Service。
+      >您可以通过导航到 `/libs/granite/migration/token.json`，从创作实例检索访问令牌。访问令牌将从云服务创作示例中进行检索。
 
    1. **参数**：选择以下参数以创建迁移集：
 
@@ -212,7 +212,7 @@ ht-degree: 91%
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. 要跟踪日志而不使用用户界面，您可以将SSH添加到源AEM环境中并跟踪 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
+1. 要在不使用用户界面的情况下跟踪日志，您可以通过 SSH 连接到源 AEM 环境并跟踪 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
 ### 删除迁移集 {#deleting-migration-set}
 
