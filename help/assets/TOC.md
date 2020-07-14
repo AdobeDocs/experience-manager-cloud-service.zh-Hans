@@ -1,11 +1,11 @@
 ---
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 96%
 + 配置、管理和扩展资产 {#admin}
    + [API 和参考资料](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
-   + [关于使用图像用户档案和视频用户档案](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [关于使用图像配置文件和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [配置智能标记](smart-tags-configuration.md)
    + [多语言资产和资产翻译](translate-assets.md)
    + [搜索 Facet](search-facets.md)
@@ -87,7 +87,7 @@ ht-degree: 96%
    + [智能图像处理](dynamic-media/imaging-faq.md)
    + [传送 Dynamic Media 资产](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](dynamic-media/hotlink-protection.md)
-   + [3D支持](dynamic-media/assets-3d.md)
+   + [3D 支持](dynamic-media/assets-3d.md)
    + [图像集](dynamic-media/image-sets.md)
    + [全景图像](dynamic-media/panoramic-images.md)
    + [混合媒体集](dynamic-media/mixed-media-sets.md)
