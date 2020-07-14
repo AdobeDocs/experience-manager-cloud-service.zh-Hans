@@ -1,11 +1,11 @@
 ---
 title: 对 Adobe Experience Manager (AEM) 云服务的显著更改
 description: 对 Adobe Experience Manager (AEM) 云服务的显著更改
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 >* [Adobe Experience Manager 云服务简介](/help/overview/introduction.md)
 >* 与先前版本相比，Adobe Experience Manager 云服务具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
 >* Adobe Experience Manager 云服务[架构](/help/core-concepts/architecture.md)
->* [对 Sites 作为 AEM 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+>* [对 AEM Sites 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
 >* [对 AEM Assets 云服务的显著更改](/help/assets/assets-cloud-changes.md)
 
 
