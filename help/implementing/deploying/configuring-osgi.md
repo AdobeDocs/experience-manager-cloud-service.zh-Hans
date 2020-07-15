@@ -2,9 +2,9 @@
 title: 为 AEM 云服务配置 OSGi
 description: '具有机密值和环境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2691'
 ht-degree: 1%
 
 ---
@@ -509,7 +509,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ### 变量数 {#number-of-variables}
 
-最多可声明20个变量。
+每个环境最多可声明200个变量。
 
 ## 机密和环境特定配置值的部署注意事项 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
