@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 云服务 2020.7.0 发行说明
 description: Experience Manager 2020.7.0 发行说明
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d800ffd57826251031206290405ec1dd5febede8
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 29%
+source-wordcount: '248'
+ht-degree: 28%
 
 ---
 
@@ -27,6 +27,8 @@ Cloud Manager Version 2020  .7.0的发布日期为2020年7月9日。
 * 环境页面已重新设计。
 
 * 冬眠环境在冬眠后，现在在Cloud Manager中显示离散状态。
+
+* 每个环境的环境变量数已增加到200个。
 
 * Cloud Manager构建容器现在支持Java 8和Java 11。
 
