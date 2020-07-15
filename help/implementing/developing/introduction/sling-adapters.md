@@ -2,7 +2,7 @@
 title: 使用Sling适配器
 description: Sling优惠适配器模式以方便地翻译实现适应性接口的对象
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 使用Sling适配器{#using-sling-adapters}
+# 使用Sling适配器 {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) 优惠 [Adapter模式](https://sling.apache.org/site/adapters.html) ，以便轻松转换实现Adaptible界 [面的对](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 象。 此接口提供通 [用的adaptTo(](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) )方法，它将对象转换为作为参数传递的类类型。
 
