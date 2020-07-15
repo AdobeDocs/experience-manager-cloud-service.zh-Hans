@@ -1,11 +1,11 @@
 ---
 sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
-translation-type: ht
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,8 +30,10 @@ ht-degree: 100%
    + [AEM 云服务 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
    + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM 云服务中的叠加](developing/introduction/overlays.md)
+   + [Sling Cheatsheet](developing/introduction/sling-cheatsheet.md)
+   + [使用Sling适配器](developing/introduction/sling-adapters.md)
    + [在 AEM 云服务中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
+   + [AEM 云服务中的叠加](developing/introduction/overlays.md)
    + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [理解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
 + 配置和扩展 AEM 云服务 {#configuring-and-extending}
