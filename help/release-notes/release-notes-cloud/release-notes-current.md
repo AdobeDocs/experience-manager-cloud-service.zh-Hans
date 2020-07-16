@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 云服务 2020.7.0 发行说明
 description: Experience Manager 2020.7.0 发行说明
 translation-type: tm+mt
-source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 20%
+source-wordcount: '404'
+ht-degree: 18%
 
 ---
 
@@ -49,6 +49,10 @@ Cloud Manager Version 2020  .7.0的发布日期为2020年7月9日。
 * 验证环境名称时出现非按一错误。
 
 * 环境页有时会显示发布和调度程序段（当不存在时）。
+
+### 已知问题 {#known-issues}
+
+* 由于代码覆盖率的计算方式发生 _更改_ ,Jacoco插件的最低版本现在为0.7.5.201505241946（发布于2015年5月）。 明确引用旧版本的客户将在代码质量过程中收到错误消息。
 
 ## 云就绪性分析器的新增功能 {#cloud-readiness-analyzer}
 
