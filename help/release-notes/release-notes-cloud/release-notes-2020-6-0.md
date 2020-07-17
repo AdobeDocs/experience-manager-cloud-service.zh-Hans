@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 云服务 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 100%
+source-wordcount: '1949'
+ht-degree: 99%
 
 ---
 
@@ -181,11 +181,6 @@ AEM 云服务 SDK API Jar（以前在该位置托管）现在位于 Maven Centra
 
 ### 错误修复 {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
 除上述新增功能以外，当前版本还根据客户对 [!DNL Assets] 的反馈提供了以下错误修复。
 
 * 对于 MP3 音乐文件，在 DAM 预览的缩略图上显示的播放按钮不起作用。(CQ-4294731)
@@ -194,3 +189,4 @@ Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/t
 * 下载资产时，如果选择了电子邮件选项，即使提供了有效的电子邮件 ID，下载选项也不可用。(CQ-4296535)
 * 另存为智能收藏集的自定义筛选器无法正确应用于资产。(CQ-4294942)
 * 多项搜索和索引增强功能与错误修复使性能得以提高。(CQ-4286373)
+* 文件夹属性显示500个内部服务器错误。 (CQ-4295701)
