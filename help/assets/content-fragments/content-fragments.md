@@ -2,7 +2,7 @@
 title: 使用内容片段
 description: 了解Adobe Experience Manager(AEM)中的内容片段如何作为Cloud Service允许您设计、创建、策划和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 6%
@@ -168,7 +168,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 只能使用片段编辑器添加到片段、从片段中删除片段或在片段中移动片段。 无法在页面编辑器中执行这些操作。
    * 只能在片段编辑器中使用富文本格式添加到片段、从片段 [中删除片段或在片段中移动](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
    * 只能添加到多行文本元素（任何片段类型）。
-   * 附加到前一文本（段落）。
+   * 附加到前面的文本（段落）。
 
    >[!CAUTION]
    >
@@ -249,7 +249,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 内容模型定义需要标题和一个数据元素； 其他一切都是可选的。
    * 模型可以定义默认内容（如果适用）。
    * 创作片段内容时，作者无法更改定义的结构。
-   * 创建从属内容片段后对模型所做的更改将影响这些内容片段。
+   * 创建从属内容片段后对模型所做的更改可能会影响这些内容片段。
 
 * **内容片段组件**
 
