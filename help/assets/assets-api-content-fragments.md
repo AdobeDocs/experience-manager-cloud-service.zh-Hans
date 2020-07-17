@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持
 description: 了解Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持。
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -211,7 +211,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 如果请求资产，响应将返回其元数据； 如标题、名称和由相关资产模式定义的其他信息。
 
-资产的二进制数据会作为类型(也称 `content` 为)的SIREN链 `rel attribute`接公开。
+资产的二进制数据会作为类型的SIREN链接公开 `content`。
 
 资产可以有多个演绎版。 它们通常作为子实体公开，一个例外是缩略图再现，它作为类型()的链 `thumbnail` 接公 `rel="thumbnail"`开。
 
@@ -244,10 +244,10 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 使用情况可能因您使用的是AEM作者环境还是发布以及特定用例而异。
 
-* 创建严格绑定到作者实[例(目前没有方法使用此API复制要发布的片段](/help/assets/assets-api-content-fragments.md#limitations))。
+* 强烈建议创建绑定到作者实例([目前没有方法使用此API复制要发布的片段](/help/assets/assets-api-content-fragments.md#limitations))。
 * 投放可以同时从两者进行，因为AEM仅以JSON格式提供请求的内容。
 
-   * AEM作者实例的存储和投放应足以用于防火墙后的媒体库应用程序。
+   * 来自AEM作者实例的存储和投放应足以用于防火墙后的媒体库应用程序。
 
    * 对于实时Web投放，建议使用AEM发布实例。
 
