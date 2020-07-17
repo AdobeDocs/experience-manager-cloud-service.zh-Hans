@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager 云服务内容片段允许您设计、创建、策划和使用独立于页面的内容
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 94%
 
 ---
 
@@ -80,6 +80,10 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 打开片段的&#x200B;**配置**&#x200B;对话框以配置片段在当前页面上使用。该对话框取决于所使用的组件。
 
+>[!NOTE]
+>
+>另请参 [阅核心组件、内容片段组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+
 在相应的配置对话框中，您可以选择可用的参数，包括：
 
 * **内容片段**
@@ -132,7 +136,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 >
 >您还可以[在片段本身中插入可视资产（图像）](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
 >
->在片段本身中插入的可视资产会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。
+>在片段本身中插入的可视资产会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。如果需要此级别的连接，可以将图像添加到片段(作 [为混合媒体片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))。
 
 >[!CAUTION]
 >
@@ -149,7 +153,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您有与[内容片段关联的](/help/assets/content-fragments/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的[特殊内容源](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)。
+如果您有与[内容片段关联的](/help/assets/content-fragments/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -167,7 +171,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 ### 插入到片段中的资产 {#assets-inserted-into-the-fragment}
 
-如果已在片段本身中插入资产（例如图像），则页面编辑器中用于编辑这些资产的选项会受到限制。
+If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
 例如，您可以对图像执行以下操作
 
