@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持
 description: 了解Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持。
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Assets REST API可用于最近Adobe Experience Manager的每个现成安装，�
 >[!NOTE]
 >访问：
 >* `/api/assets` **不需要** “选择器”的 `.model` 使用。
->* `/content/assets` **需要** 使用选择 `.model` 器。
+>* `/content/path/to/page` **需要** 使用选择 `.model` 器。
 
 
 HTTP方法确定要执行的操作：
@@ -247,7 +247,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 * 创建严格绑定到作者实[例(目前没有方法使用此API复制要发布的片段](/help/assets/assets-api-content-fragments.md#limitations))。
 * 投放可以同时从两者进行，因为AEM仅以JSON格式提供请求的内容。
 
-   * 来自AEM作者实例的存储和投放应足以用于防火墙后的媒体库应用程序。
+   * AEM作者实例的存储和投放应足以用于防火墙后的媒体库应用程序。
 
    * 对于实时Web投放，建议使用AEM发布实例。
 
