@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展标准资产。
 translation-type: tm+mt
-source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
+source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1849'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 * 所有内容都存储在资 `jcr:content/data` 产的节点下：
 
-   * 元素数据存储在主子节点下：
+   * 元素数据存储在主控子节点下：
       `jcr:content/data/master`
 
    * 变体存储在子节点下，子节点带有变体的名称：
@@ -166,7 +166,7 @@ ht-degree: 3%
 
 您可以使用服务器端API访问您的内容片段； 请参阅：
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -244,7 +244,9 @@ ht-degree: 3%
 
 * `ContentElement` 可适用于：
 
-   * `ElementTemplate` -用于访问元素的结构信息。
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) -用于访问元素的结构信息。
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 可适用于：
 
@@ -258,7 +260,7 @@ ht-degree: 3%
 
 * 可能需要付出额外努力的任务:
 
-   * 从中创建新变 `ContentFragment` 量以更新数据结构。
+   * 强烈建议从中创建新的变体 `ContentFragment`。 这可确保所有元素共享此变体，并确保根据需要更新相应的全局数据结构以反映内容结构中新创建的变体。
 
    * 使用元素删除现有变量 `ContentElement.removeVariation()`不会更新分配给该变量的全局数据结构。 要确保这些数据结构保持同步，请改 `ContentFragment.removeVariation()` 用它，从全局上删除变量。
 
@@ -318,8 +320,8 @@ if (fragmentResource != null) {
 例如：
 
 ```java
-Resource ModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
