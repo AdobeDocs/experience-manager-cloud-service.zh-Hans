@@ -4,17 +4,17 @@ description: 了解Adobe Experience Manager资产中的收集概念。 了解如
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 27%
+source-wordcount: '2401'
+ht-degree: 26%
 
 ---
 
 
 # 管理收藏集 {#manage-collections}
 
-收藏集是Adobe Experience Manager资产中的一组资产。 使用收藏集可在用户之间共享资产。该集合可以是静态集合或基于搜索结果的动态集合。
+集合是Adobe Experience Manager资产中的一组资产。 使用收藏集可在用户之间共享资产。该集合可以是静态集合或基于搜索结果的动态集合。
 
 与文件夹不同，收藏集可以包含来自不同位置的资产。 您可以与分配了不同权限级别（包括查看、编辑等）的不同用户共享集合。
 
@@ -30,7 +30,7 @@ ht-degree: 27%
 
 要打开“收藏集 **[!UICONTROL ”控制台]** ，请执行以下操作：
 
-要打开收 **[!UICONTROL 藏集]**，请点按或单击Experience Manager徽标。 From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+要打开集 **[!UICONTROL 合]**，请点按或单击Experience Manager标志。 From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## 创建集合 {#create-a-collection}
 
@@ -140,7 +140,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 ### 搜索集合 {#search-collections}
 
-您可以从“收藏集”控制台中搜索收藏集。当您在“搜索组件”框中使用关键字进行搜索时，AEM资产会搜索集合名称、元数据以及添加到集合的标记。
+您可以从“收藏集”控制台中搜索收藏集。当您在“全搜索”框中使用关键字进行搜索时，AEM Assets会搜索集合名称、元数据以及添加到集合的标记。
 
 如果您从顶级搜索集合，则搜索结果中只返回单个集合。 收藏集中的资产或文件夹将被排除。 在所有其他情况下（例如，在单个收藏集或文件夹层次结构中），都会返回所有相关资产、文件夹和收藏集。
 
@@ -226,7 +226,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 在“资产”用户界面中，您可以根据某些规则、搜索条件或自定义搜索彩块化来搜索或筛选资产。 如果将这些搜索另存为“保 **[!UICONTROL 存的搜索]**”，则以后可以从“筛选器”面板的“保存的 **[!UICONTROL 搜索]** ”列表中访问它们。 创建保存的搜索也会创建智能收藏集。
 
-创建智能收藏集时将创建保存的搜索。智能收藏集会自动添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。收藏集的“保存的搜索”查询将保存在 `dam:query` CRXDE 的属性中的相对位置`/content/dam/collections/`。
+创建智能收藏集时将创建保存的搜索。智能收藏集会自动添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。收藏集的“保存的搜索”查询将保存在 `dam:query` CRXDE 的属性中的相对位置`/content/dam/collections/`。您可以保存的搜索以及列表中显示的保存的搜索没有限制。
 
 >[!NOTE]
 >
