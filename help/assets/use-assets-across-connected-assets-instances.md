@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: 使用远程部署中可 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 54%
+source-wordcount: '2082'
+ht-degree: 44%
 
 ---
 
@@ -38,10 +38,10 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 ### 支持的文件格式 {#mimetypes}
 
-作者可以在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索到的资产。文档可添加到 `Download` 组件中，图像可添加到 `Image` 组件中。Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 支持的格式有：
+作者在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索的资产。 文档会添加到组 `Download` 件，图像会添加到组 `Image` 件。 Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 支持的格式有：
 
 * **图像格式**: 图像组件支 [持的格式](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html) 。 [!DNL Dynamic Media] 不支持图像。
-* **文档格式**：请参阅[连接的资产支持的文档格式](file-format-support.md#document-formats)。
+* **文档格式**: 查看支 [持的文档格式](file-format-support.md#document-formats)。
 
 ### 涉及的用户和组 {#users-and-groups-involved}
 
@@ -58,9 +58,9 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
-An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions required to use it are established via user groups that are defined on the [!DNL Sites] deployment and on the DAM deployment.
+An [!DNL Experience Manager] administrator can create this integration. 创建后，用户组将建立使用该应用程序所需的权限。 用户组在部署和 [!DNL Sites] DAM部署中定义。
 
-To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps.
+To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps:
 
 1. Access an existing [!DNL Sites] deployment or create a deployment using the following command:
 
@@ -75,13 +75,14 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. [!DNL Assets] 位置为 `https://[assets_servername_ams]:[port]`。
    1. DAM 分发人员（技术用户）的凭据。
-   1. 在&#x200B;**[!UICONTROL 装入点]**&#x200B;字段中，输入 获取资产的本地 路径。[!DNL Experience Manager][!DNL Experience Manager]例如，`remoteassets` 文件夹。
+   1. In the **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. 例如，`remoteassets` 文件夹。
 
    1. 根据您的网络，调整&#x200B;**[!UICONTROL 原始二进制传输优化阈值]**&#x200B;的值。大于此阈值的资产演绎版，将异步传输。
    1. 如果您使用数据存储来存储您的资产，且数据存储是两个 部署之间的公用存储，请选择&#x200B;**[!UICONTROL 与连接的资产共享数据存储]**。在这种情况下，阈值限制并不重要，因为实际的资产二进制文件驻留在数据存储上并且不会传输。
-      ![连接的资产的典型配置](assets/connected-assets-typical-config.png)
 
-      *图：连接的资产的典型配置.*
+   ![连接的资产的典型配置](assets/connected-assets-typical-config.png)
+
+   *图：连接的资产的典型配置.*
 
 1. 由于已经处理资产且已获取资产演绎版，因此请禁用工作流程启动器。Adjust the launcher configurations on the local ([!DNL Sites]) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.
 
@@ -103,28 +104,28 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    >
    >在作者获取资产时，将会获取该资产在远程 部署中可用的所有演绎版。如果要为获取的资产创建更多演绎版，请跳过此配置步骤。The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
-1. Add the [!DNL Sites] instance as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
+1. Add the [!DNL Sites] deployment as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
 
    1. 使用管理员凭据登录。 搜索 `Cross-Origin`. 访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 运营]** > **[!UICONTROL Web 控制台]**。
 
-   1. To create a CORS configuration for [!DNL Sites] instance, click ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. 保存配置。
 
 ## 使用远程资产 {#use-remote-assets}
 
-网站作者使用内容查找器来连接到 DAM 实例。作者可以浏览、搜索以及拖动组件中的远程资产。要验证远程 DAM，请准备好管理员提供的 DAM 用户凭据。
+网站作者使用内容查找器连接到DAM部署。 作者可以浏览、搜索以及拖动组件中的远程资产。要验证远程 DAM，请准备好管理员提供的 DAM 用户凭据。
 
-作者可以在单个网页中使用本地DAM和远程DAM实例上的可用资产。 使用内容查找器，可在搜索本地 DAM 与搜索远程 DAM 之间切换。
+作者可以在单个网页中使用本地DAM和远程DAM部署上的可用资产。 使用内容查找器，可在搜索本地 DAM 与搜索远程 DAM 之间切换。
 
-Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] instance. 任何其他标记都将被丢弃。Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
+只会获取远程资产的那些标记，这些标记具有与同一分类层次结构完全相同的对应标记，该分类层次结构在本地部署中 [!DNL Sites] 可用。 任何其他标记都将被丢弃。Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
 
 ### 使用说明演示 {#walk-through-of-usage}
 
 使用上述设置尝试创作体验，以了解该功能是如何运作的。使用您在远程 DAM 部署中选择的文档或图像。
 
 1. Navigate to the [!DNL Assets] interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上传您选择的资产。
-1. On the [!DNL Sites] instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. 提供 `ksaner` 作为用户名，选择提供的选项，然后单击&#x200B;**[!UICONTROL 确定]**。
+1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. 提供 `ksaner` 作为用户名，选择提供的选项，然后单击&#x200B;**[!UICONTROL 确定]**。
 1. 打开 We.Retail 网页：**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**。编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` 以编辑页面。
 
    单击页面左上角的&#x200B;**[!UICONTROL 切换侧面板]**。
@@ -145,7 +146,7 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
    *图：关于在后台进行的异步获取资产的通知。*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请查看[异步作业](/help/operations/asynchronous-jobs.md)用户界面。
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used on the page. 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请查看[异步作业](/help/operations/asynchronous-jobs.md)用户界面。
 
    >[!NOTE]
    >
@@ -153,20 +154,20 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
 >[!CAUTION]
 >
->获取的远程资产一经在网页中使用后，有权访问存储所获取资产的本地文件夹的任何人都可以搜索和使用这些已获取的资产（上述演示中的 `connectedassets`）。此外，还可通过[!UICONTROL 内容查找器]，搜索和查看本地存储库中的资产。
+>Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). 此外，还可通过[!UICONTROL 内容查找器]，搜索和查看本地存储库中的资产。
 
 获取的资产可用作任何其他本地资产，但关联的元数据无法编辑。
 
 ## 限制 {#limitations}
 
-### 权限与资产管理 {#permissions-and-managing-assets}
+### 权限和资产管理 {#permissions-and-managing-assets}
 
 * 本地资产与远程部署中的原始资产不同步。在 DAM 部署上所具有的任何编辑、删除或撤销权限均不会传播到下游。
 * 本地资产是只读副本。[!DNL Experience Manager] 组件对资产进行无损编辑。不允许进行其他编辑。
 * 本地获取的资产只能用于创作。不能应用资产更新工作流，也不能编辑元数据。
 * 仅支持图像和列出的文档格式。[!DNL Dynamic Media]不支持 资产、内容片段和体验片段。
 * 不获取元数据架构。
-* All [!DNL Sites] authors have read permissions on the fetched copies, even if authors do not have access to the remote DAM deployment.
+* 所有 [!DNL Sites] 作者都对获取的副本具有读取权限，即使作者无法访问远程DAM部署。
 * 没有支持自定义集成的 API。
 * 该功能支持无缝搜索和使用远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。
 * 无法在页面属性用户界面上将远程资产用作 [!UICONTROL 页面缩略图] 。 您可以通过单击选择图像，在缩略图的 [!UICONTROL 页面属性] 用户界面 [!UICONTROL 中设] 置网页的 [!UICONTROL 缩]略图。
@@ -180,13 +181,14 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
 ### 使用 {#usage}
 
-* 唯一支持的功能是：在本地页面上搜索并拖动远程资产，来创作内容。
+* 创作时，用户可以搜索远程资产并在本地页面上拖动这些资产。 不支持任何其他功能。
 * 获取操作会在 5 秒后超时。作者在获取资产时可能会遇到问题，比如，网络问题。Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * 可以对获取的资产执行无损的简单编辑以及 `Image` 组件支持的编辑。资产是只读的。
+* 重新提取资产的唯一方法是将其拖动到页面上。 没有API支持或其他方法可重新获取资产以进行更新。
 
 ## 故障诊断问题 {#troubleshoot}
 
-对于常见错误情景，请按照以下步骤进行故障诊断：
+要排除常见错误方案的故障，请执行以下步骤：
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* 从远程 DAM 获取的资产，可能会因为以下原因无法发布到网页上：该资产不存在于远程 DAM 上；缺乏相应的获取该资产的权限；网络故障。确保资产未从远程DAM中删除或权限未更改。 确保满足适当的先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/operations/asynchronous-jobs.md)，查看是否发生了资产获取错误。
+* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* 由于一个或多个原因，从远程dam获取的资产可能无法发布到网页上。 它在远程服务器上不存在，缺少相应的权限来获取它，或者网络故障可能是原因。 确保资产未从远程DAM中删除。 确保拥有适当的权限，并满足先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/operations/asynchronous-jobs.md)，查看是否发生了资产获取错误。
