@@ -117,7 +117,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
    * **名称** `defaultPasteMode`
    * **类型** `String`
-   * **值是** 、或模式中所需的粘贴 `browser`模 `plaintext`式之 `wordhtml` 一。
+   * **值是** 、或模式中所需的粘贴 `browser`模 `plaintext`式之一 `wordhtml` 。
 
 ### 配置粘贴内容时允许的格式 {#pasteformats}
 
@@ -268,7 +268,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 1. 在节点下创建一 `styles` 个节点以表示单个样式：
 
-   * **名称**，您可以指定名称，但应适合该样式
+   * **名称**，您可以指定名称，但应适合样式
    * **类型** `nt:unstructured`
 
 1. 将属性添 `cssName` 加到此节点以引用CSS类：
