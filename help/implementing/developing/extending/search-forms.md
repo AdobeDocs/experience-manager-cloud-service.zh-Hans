@@ -547,7 +547,8 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **选项节点**&#x200B;路径与选项路径 **有效地相同**，只有此路径在通用谓词字段中，而另一个谓词字段特定于资产。
+* **选项节点路**&#x200B;径与 
+**选项路径**，只有此路径位于通用谓词字段中，而另一个路径则特定于资产。
 
 * **单选**&#x200B;如果选中，选项将呈现为复选框，仅允许单选。 如果错误地选中了复选框，则可取消选中该复选框。
 
@@ -563,7 +564,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
 1. 选择要自定义的配置。
 1. 使用编 **辑** 图标打开要更新的配置。
-1. 如果是新的自定义，您可能想要 [添加新的谓词字段并根据需要定义](#add-edit-a-predicate-field-and-define-field-settings) 设置。 如果是现有自定义，则可以选择现有字段并 [更新设置](#add-edit-a-predicate-field-and-define-field-settings)。
+1. 如果是新的自定义，您可能想要 [添加新的谓词字段并根据需要](#add-edit-a-predicate-field-and-define-field-settings) 定义设置。 如果是现有自定义，则可以选择现有字段并 [更新设置](#add-edit-a-predicate-field-and-define-field-settings)。
 1. Select **Done** to save the configuration. 您的更改可以在下次使用配置时看到。
 
    >[!NOTE]
@@ -651,6 +652,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
    * `jcr:title` -要在搜索边栏中显示的字段标签
    * `value` -要搜索的属性值
+
    ![谓词定义](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
