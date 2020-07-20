@@ -16,7 +16,7 @@ ht-degree: 2%
 
 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)是由一个或多个组件构成的组件组，包括可在页面内引用的内容和布局。
 
-体验片段主和／或变体使用：
+体验片段主控和／或变体使用：
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
@@ -112,7 +112,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 ## 体验片段组件 {#components-for-experience-fragments}
 
-开发组件以与Experience Fragments一起使用／与Experience Fragments一起使用遵循标准惯例。
+开发组件以与Experience Fragments一起使用／与其结合使用，遵循标准实践。
 
 唯一的附加配置是确保模板上允许使用组件，这是通过内容策略实现的。
 
@@ -136,7 +136,7 @@ The only additional configuration is to ensure that the components are [allowed 
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
-使用“导出到Target”功能，您可以：
+使用“导出到目标”功能，您可以：
 
 * 创建体验片段，
 * 添加组件，
@@ -148,15 +148,15 @@ The only additional configuration is to ensure that the components are [allowed 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-链接外部化器用于确定创建Target优惠的HTML版本时需要的正确URL，该版本随后将发送到Adobe Target。 这是必要的，因为Adobe Target要求TargetHTML优惠内的所有链接都可以公开访问； 这意味着必须先发布链接引用的任何资源以及体验片段本身，然后才能使用这些资源。
+链接外部化器用于确定创建目标优惠的HTML版本时需要的正确URL，该版本随后将发送到Adobe Target。 这是必要的，因为Adobe Target要求目标HTML优惠内的所有链接都可以公开访问； 这意味着必须先发布链接引用的任何资源以及体验片段本身，然后才能使用这些资源。
 
-默认情况下，当您构建TargetHTML优惠时，会向AEM中的自定义Sling选择器发送请求。 此选择器被调用 `.nocloudconfigs.html`。 正如其名称所暗示的，它会创建体验片段的纯HTML渲染，但不包括云配置（这将是多余的信息）。
+默认情况下，当您构建目标HTML优惠时，会向AEM中的自定义Sling选择器发送请求。 此选择器被调用 `.nocloudconfigs.html`。 正如其名称所暗示的，它会创建体验片段的纯HTML渲染，但不包括云配置（这将是多余的信息）。
 
 生成HTML页面后，Sling Rewriter管道会修改输出：
 
 1. 元 `html`素将 `head`替换 `body` 为元素、元 `div` 素。 元素 `meta`和 `noscript` 元素被删除 `title` (它们是原始元素的子元素，并且当它被元素替换时 `head` 不会考虑 `div` 这些元素)。
 
-   这样做是为了确保HTMLTarget优惠可以包含在Target活动中。
+   这样做是为了确保HTML目标优惠可以包含在目标活动中。
 
 2. AEM会修改HTML中存在的任何内部链接，以便它们指向已发布的资源。
 
@@ -173,7 +173,7 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
 
    这些属性中的链接通过AEM Link Externalizer `publishLink()` 运行，以便重新创建URL，就像它在已发布实例上一样，也同样可公开使用。
 
-在使用现成的实施时，上述过程应足以从体验片段生成Target优惠，然后将其导出到Adobe Target。 但是，有些使用案例在此过程中没有说明； 包括：
+在使用现成的实施时，上述过程应足以从体验片段生成目标优惠，然后将其导出到Adobe Target。 但是，有些使用案例在此过程中没有说明； 包括：
 
 * Sling Mapping仅适用于发布实例
 * Dispatcher重定向
@@ -192,7 +192,7 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
 
 >[!NOTE]
 >
->此界面仅处理生成的Target优惠中的内部HTML链接。
+>此界面仅处理生成的目标优惠中的内部HTML链接。
 
 链接重写器提供程序 `ExperienceFragmentLinkRewriterProvider`接口()如下所示：
 
@@ -212,7 +212,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 要使用该接口，您首先需要创建一个包，其中包含实现链接重写器提供程序接口的新服务组件。
 
-此服务将用于插入体验片段导出以进行Target重写，以便能够访问各种链接。
+此服务将用于插入体验片段导出以进行目标重写，以便能够访问各种链接。
 
 For example, `ComponentService`:
 
@@ -255,7 +255,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 #### shouldRewrite {#shouldrewrite}
 
-您需要向系统指示，当对某个体验片段变体发出“导出到Target”调用时，系统是否需要重写链接。 通过实现以下方法实现：
+您需要向系统指示，当对某个体验片段变体发出“导出到目标”调用时，系统是否需要重写链接。 通过实现以下方法实现：
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -268,7 +268,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-此方法作为参数接收“导出到Target”系统当前正在重写的体验片段变量。
+此方法作为参数接收“导出到目标”系统当前正在重写的体验片段变量。
 
 在上面的示例中，我们要重写：
 
@@ -279,7 +279,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * 对于特定体验片段：
    `/content/experience-fragment/master`
 
-通过导出到Target系统的任何其他体验片段将被忽略，不受此服务中实施的更改的影响。
+通过导出到目标系统的任何其他体验片段将被忽略，不受此服务中实施的更改的影响。
 
 #### rewriteLink {#rewritelink}
 
@@ -298,7 +298,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * `attribute`
 确切的属性名称。
 
-例如，如果“导出到Target”系统当前正在处理此元素，则可以定义 `CSSInclude` 为：
+例如，如果“导出到目标”系统当前正在处理此元素，则可以定义 `CSSInclude` 为：
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -349,7 +349,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->如果上述方法返 `null`回，则“导出到Target”系统将保留该链接，该链接是指向资源的相对链接。
+>如果上述方法返 `null`回，则“导出到目标”系统将保留该链接，该链接是指向资源的相对链接。
 
 #### 优先级- getPriority {#priorities-getpriority}
 
