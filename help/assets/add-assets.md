@@ -2,9 +2,9 @@
 title: 将数字资产添加到Adobe Experience Manager
 description: 将您的数字资产作为Adobe Experience Manager添加为Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1356'
 ht-degree: 3%
 
 ---
@@ -37,6 +37,7 @@ Adobe Experience Manager通过丰富的元数据、智能标记、演绎版和�
 
    * On the toolbar, tap the **[!UICONTROL Create]** icon. 然后，在菜单上，点按文 **[!UICONTROL 件]**。 如果需要，可以重命名显示的对话框中的文件。
    * 在支持HTML5的浏览器中，直接将资产拖动到“资产”用户界面上。 不显示要重命名文件的对话框。
+
    ![create_menu](assets/create_menu.png)
 
    要选择多个文件，请按Ctrl或Command键，然后在文件选取器对话框中选择资产。 使用iPad时，一次只能选择一个文件。
@@ -111,7 +112,7 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 >
 >在名称冲 **[!UICONTROL 突]** 对话框 [!UICONTROL 中选择替] 换时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
 >
->如果启用“资产分析”以通过AdobeAnalytics跟踪展示次数／点击次数，则重新生成的资产ID将使Analytics上为资产捕获的数据无效。
+>如果启用资产分析以跟踪AdobeAnalytics的展示次数／点击次数，则重新生成的资产ID将使Analytics上为资产捕获的数据无效。
 
 要将重复资产保留在AEM Assets中，请点按／单 **[!UICONTROL 击保留]**。 要删除您上传的重复资产，请点按／单击 **[!UICONTROL 删除]**。
 
