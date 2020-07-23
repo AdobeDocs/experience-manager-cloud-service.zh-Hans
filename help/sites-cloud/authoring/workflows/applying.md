@@ -2,7 +2,7 @@
 title: 将工作流应用于页面
 description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 81%
@@ -23,8 +23,8 @@ ht-degree: 81%
 
 可以从以下位置启动工作流：
 
-* [**站点**&#x200B;控制台](#starting-a-workflow-from-the-sites-console)。
-* [编辑页面时，从&#x200B;**页面信息&#x200B;**](#starting-a-workflow-from-the-page-editor)启动。
+* [站点控制台](#starting-a-workflow-from-the-sites-console)。
+* [编辑页面时，从页面信息](#starting-a-workflow-from-the-page-editor)启动。
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ ht-degree: 81%
 
 您可以从以下任一项中启动工作流：
 
-* [“站点”工具栏的&#x200B;**创建**&#x200B;选项](#starting-a-workflow-from-the-sites-toolbar)。
-* [“站点”控制台的&#x200B;**时间轴**&#x200B;边栏](#starting-a-workflow-from-the-timeline)。
+* [“站点”工具栏的创建选项](#starting-a-workflow-from-the-sites-toolbar)。
+* [“站点”控制台的时间轴边栏](#starting-a-workflow-from-the-timeline)。
 
 在这两种情况下，您都将需要：
 
@@ -87,8 +87,8 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 从以下任一项中打开&#x200B;**创建工作流**&#x200B;向导后：
 
-* [“站点”工具栏的&#x200B;**创建**&#x200B;选项](#starting-a-workflow-from-the-sites-toolbar)。
-* [“站点”控制台的&#x200B;**时间轴**&#x200B;边栏](#starting-a-workflow-from-the-timeline)。
+* [“站点”工具栏的创建选项](#starting-a-workflow-from-the-sites-toolbar)。
+* [“站点”控制台的时间轴边栏](#starting-a-workflow-from-the-timeline)。
 
 您可以指定详细信息：
 
@@ -98,6 +98,7 @@ You can start a workflow from the toolbar of the **Sites** console:
    * **工作流标题**
 
       * 您可以指定此实例的标题，以帮助您在以后对其进行识别。
+
    根据工作流模型，还可以使用以下选项。这些选项允许在工作流完成后保留创建为有效负荷的包。
 
    * **保留工作流包**
@@ -127,9 +128,11 @@ You can start a workflow from the toolbar of the **Sites** console:
          * 仅包括下级子项。
          * 仅包括已修改的页面。
          * 仅包括已发布的页面。
+
          指定的任何子项都会添加到将应用工作流的资源列表中。
 
       * **删除选择**，从工作流中删除该资源。
+
    ![定义工作流范围](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
