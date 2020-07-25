@@ -1,9 +1,10 @@
 ---
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
-translation-type: ht
-source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
-workflow-type: ht
+user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
+translation-type: tm+mt
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
 
