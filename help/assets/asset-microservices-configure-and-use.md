@@ -3,10 +3,10 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 3%
+source-wordcount: '1861'
+ht-degree: 1%
 
 ---
 
@@ -113,24 +113,26 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 创建附加的自定义处理用户档案并将其应用到特定文件夹，以便Experience Manager处理上传到这些文件夹或在这些文件夹中更新的资产。 默认的内置标准处理用户档案始终执行，但在用户界面上不可见。 如果您添加自定义用户档案，则两个用户档案均用于处理上传的资产。
 
-有两种方法可以获取应用于文件夹的处理用户档案:
+使用以下方法之一将处理用户档案应用到文件夹：
 
 * 管理员可以在工具>资产>处 **[!UICONTROL 理用户档案中选择处理用户档案定义]**，然后使 **[!UICONTROL 用将用户档案应用到文件夹操作]** 。 它会打开一个内容浏览器，允许您导航到特定文件夹，选择这些文件夹并确认该用户档案的应用程序。
-* 用户可以在 Assets 用户界面中选择文件夹，使用&#x200B;**[!UICONTROL 属性]**&#x200B;操作打开文件夹属性屏幕，单击&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;选项卡，然后在下拉菜单中，选择该文件夹的正确处理配置文件。在“保存并关闭”操作 **[!UICONTROL 后，将保存选择]** 。
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 要保存更改，请单击“保 **[!UICONTROL 存并关闭”]**。
 
 >[!NOTE]
 >
->只能将一个处理用户档案应用于特定文件夹。 如果需要生成更多再现，则可以向处理用户档案添加更多再现定义。
+>只能将一个处理用户档案应用于特定文件夹。 要生成更多再现，请向现有处理用户档案添加更多再现定义。
 
-在将处理用户档案应用到文件夹后，会使用配置的附加处理用户档案处理此文件夹或其任何子文件夹中上传（或更新）的所有新资产。 此附加处理是在标准默认用户档案之外添加的。 如果您对一个文件夹应用多个用户档案，则系统会使用其中每个用户档案处理已上传或更新的资产。
+在将处理用户档案应用到文件夹后，会使用配置的附加处理用户档案处理此文件夹或其任何子文件夹中上传（或更新）的所有新资产。 此处理是在标准默认用户档案之外添加的。 如果您对一个文件夹应用多个用户档案，则系统会使用其中每个用户档案处理已上传或更新的资产。
 
 >[!NOTE]
 >
->资产上传到文件夹后，Experience Manager会检查包含文件夹的属性以查找处理用户档案。 如果未应用任何用户档案，则它会在文件夹树中向上移动，直到找到已应用的处理数据，并将其用于资产。 这意味着应用于文件夹的处理用户档案适用于整个树，但可能与应用于子文件夹的其他用户档案重叠。
+>应用于文件夹的处理用户档案适用于整个树，但可能与应用于子文件夹的其他用户档案重叠。 资产上传到文件夹后，Experience Manager会检查包含文件夹的属性以查找处理用户档案。 如果未应用任何文件夹，则会检查层次结构中的父文件夹以查找要应用的处理用户档案。
 
 用户可以通过打开处理已完成的新上传资产、打开资产预览并单击左边栏的演绎版视图，检查处理是否实际 **[!UICONTROL 进行]** 。 处理用户档案中的特定演绎版（其特定资产的类型与MIME类型包含规则匹配）应可见且可访问。
 
-![附加再现](assets/renditions-additional-renditions.png)*图： 由应用于父文件夹的处理用户档案生成的两个其他演绎版的示例*
+![其他演绎版](assets/renditions-additional-renditions.png)
+
+*图： 由应用于父文件夹的处理用户档案生成的两个其他演绎版的示例。*
 
 ## 后处理工作流 {#post-processing-workflows}
 
