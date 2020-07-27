@@ -1,11 +1,11 @@
 ---
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -372,24 +372,24 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 #### 异步操作 {#asynchronous-actions}
 
-通常，页面移动或重命名操作会立即执行。 这被视为同步处理，在操作完成之前，会阻止UI中的进一步操作。
+通常，页面移动或重命名操作会立即执行。此过程被视为同步处理，在操作完成之前，会阻止 UI 中的进一步操作。
 
-但是，如果受影响的页数超过定义的限制，则将异步处理操作，使用户能够不受页面移动或重命名操作的阻碍地在UI中继续创作。
+但是，如果受影响的页数超过定义的限制，将异步处理操作，从而使用户能够不受页面移动或重命名操作的阻碍，在 UI 中继续创作。
 
-* 在上面 **的最后** 一步中单击“移动”时，AEM会检查配置的限制。
-* 如果受影响的页数低于限制，则执行同步操作。
-* 如果受影响的页数超过限制，则执行异步操作。
+* 在上面的最后一步中单击&#x200B;**移动**&#x200B;时，AEM 会检查配置的限制。
+* 如果受影响的页数低于限制，将执行同步操作。
+* 如果受影响的页数超过限制，将执行异步操作。
    * 用户必须定义何时应执行异步操作
-      * **现在** ，立即开始执行异步作业。
-      * **以后** ，用户可以定义异步作业何时开始。
+      * **现在**：立即开始执行异步作业。
+      * **稍后**：允许用户定义何时开始异步作业。
 
          ![异步页面移动](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-异步作业的状态可在Async Jobs Status [**仪表板中在&#x200B;**Global Navigation -](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)> Tools**-**Asynchronous** Operations **-> Asynchronous Jobs中检查******。**
+可在[**异步作业状态&#x200B;**功能板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)（位于**&#x200B;全局导航&#x200B;**->**&#x200B;工具&#x200B;**->**&#x200B;操作&#x200B;**->**&#x200B;作业&#x200B;**）中查看异步作业的状态
 
 >[!NOTE]
 >
->有关异步作业处理以及如何配置页面移动／重命名操作限制的更多信息，请参 [阅“操作](/help/operations/asynchronous-jobs.md) ”用户指南中的“异步作业”文档。
+>有关异步作业处理，以及如何配置页面移动/重命名操作限制的更多信息，请参阅“操作”用户指南中的[异步作业](/help/operations/asynchronous-jobs.md)文档。
 
 ### 删除页面 {#deleting-a-page}
 
