@@ -1,18 +1,16 @@
 ---
-title: 搜索 Facet
+title: 搜索 Facet.
 description: 本文介绍如何在AEM中创建、修改和使用搜索彩块化。
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 33%
+source-wordcount: '2371'
+ht-degree: 34%
 
 ---
 
 
 # 搜索 Facet {#search-facets}
-
-了解如何在AEM中创建、修改和使用搜索彩块化。
 
 Adobe Experience Manager(AEM)资产在企业范围内进行部署，能够存储许多资产。 有时，如果您仅使用AEM的通用搜索功能，则查找正确的资产可能既困难又耗时。
 
@@ -35,34 +33,30 @@ Adobe Experience Manager(AEM)资产在企业范围内进行部署，能够存储
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
 
-   ![拖放谓词以自定义搜索过滤器](assets/drag_predicate.png)
+   ![按并移动谓词以自定义搜索过滤器](assets/drag_predicate.png)
 
-   拖放谓词以自定义搜索过滤器
+   *图： 按并移动谓词以自定义搜索过滤器。*
 
-1. 在设置选项卡中，输入谓词的字段标签、占位符文本和说明。 为要与谓词关联的元数据属性指定有效名称。
-
-   设置选项卡中的标题标签标识所选谓词的类型。
+1. 在设置选项卡中，输入谓词的字段标签、占位符文本和说明。 为要与谓词关联的元数据属性指定有效名称。 设置选项卡中的标题标签标识所选谓词的类型。
 
    ![使用设置选项卡提供谓词的所需选项](assets/settings.png)
 
-   使用设置选项卡提供谓词的所需选项
+   *图： 使用设置选项卡提供谓词的所需选项。*
 
-1. 在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，为要与谓词关联的元数据属性指定有效名称。该名称是执行搜索时所依据的名称。例如，输入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。
-
-   也可以从选择对话框中选择现有节点。
+1. 在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，为要与谓词关联的元数据属性指定有效名称。该名称是执行搜索时所依据的名称。例如，输入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。也可以从选择对话框中选择现有节点。
 
    ![将元数据属性与属性名称字段中的谓词关联](assets/property_settings.png)
 
-   将元数据属性与属性名称字段中的谓词关联
+   *图： 将元数据属性与属性名称字段中的谓词关联。*
 
-1. Tap/click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
+1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
 1. 在“预览”模式下查看谓词的布局。
 
    ![预览搜索表单，然后提交更改](assets/preview-1.png)
 
    预览搜索表单，然后提交更改
 
-1. To close the preview, tap/click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
+1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
 1. Tap **[!UICONTROL Done]** to save the settings.
 1. 导航到资产用户界面中的搜索面板。 属性谓词已添加到该面板。
 1. 在文本框中输入对要搜索的资产的描述。例如，输入“Adobe”。执行搜索时，其描述与“Adobe”匹配的资产便会列在搜索结果中。
@@ -121,7 +115,7 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
 
 ## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
-此谓 `Multi Value Property` 词允许您搜索多个值的资产。 请考虑在AEM资产中有多个产品的图像，并且每个图像的元数据包括与产品关联的SKU编号的情况。 您可以使用此谓词根据多个SKU编号搜索产品图像。
+此谓 `Multi Value Property` 词允许您搜索多个值的资产。 请考虑一种情况，即您在AEM Assets中拥有多个产品的图像，并且每个图像的元数据包括与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
 1. 单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索表单]**。
 1. 在“搜索表单”页面上，选 **[!UICONTROL 择资产管理搜索边栏]**，然后点 **按** 编 ![辑aemassets_edit](assets/aemassets_edit.png)。
@@ -134,18 +128,16 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
 
 ## 添加“标记”谓词 {#adding-a-tags-predicate}
 
-此谓 `Tags` 词允许您对资产执行基于标记的搜索。 默认情况下，AEM资产会根据您指定的标记搜索资产中一个或多个标记匹配项。 换言之，搜索查询使用指定标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
+此谓 `Tags` 词允许您对资产执行基于标记的搜索。 默认情况下，AEM Assets会根据您指定的标记搜索资产中的一个或多个标记匹配项。 换言之，搜索查询使用指定标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
 
 1. 单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索表单]**。
 1. 在“搜索表单”页面中，选 **[!UICONTROL 择资产管理搜索边栏]** ，然后点 **按** 编 ![辑aemassets_edit](assets/aemassets_edit.png)。
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
-1. 在设置选项卡中，输入谓词的占位符文本。 Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. 或者，也可以从选择对话框中选择CRXDE中的节点。
+1. 在设置选项卡中，输入谓词的占位符文本。 Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. 或者，也可以从选择对话框中选择CRXDE中的节点。
 1. 配置此谓词的根标记路径属性，以在标记列表中填充各种标记。
 1. 选择&#x200B;**[!UICONTROL 显示“匹配所有标记”选项]**，以搜索包含您指定的所有标记的资产。
 
    ![“标记”谓词的典型设置](assets/tags_predicate.png)
-
-   “标记”谓词的典型设置
 
 1. In the **[!UICONTROL Description]** field, enter an optional description and then click/tap **[!UICONTROL Done]**.
 1. 导航到“搜索”面板。 The **[!UICONTROL Tags]** predicate is added to the Search panel.
@@ -330,28 +322,13 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
 
 如果您没有分配管理员角色，则您需要执行编辑、删除和预览操作（涉及搜索彩块化）的列表权限。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>操作</strong></td>
-   <td><strong>权限</strong></td>
-  </tr>
-  <tr>
-   <td>编辑 </td>
-   <td>Read and Write permissions on the <code>/apps</code> node in CRX<br /> </td>
-  </tr>
-  <tr>
-   <td>删除</td>
-   <td>Read, Write, and Delete permissions on the <code>/apps</code> node in CRX</td>
-  </tr>
-  <tr>
-   <td>预览</td>
-   <td>Read, Write, and Delete permissions on the <code>/var/dam/content</code> node in CRX. Also, Read and Write permissions on <code>/apps</code> node.</td>
-  </tr>
- </tbody>
-</table>
+| 操作 | 权限 |
+|---|---|
+| 编辑 | Read and write permissions on the `/apps` node in CRX. |
+| 删除 | Read, write, and delete permissions on the `/apps` node in CRX. |
+| 预览 | Read, write, and delete permissions on the `/var/dam/content` node in CRX. Also, Read and write permissions on `/apps` node. |
 
 >[!MORELIKETHIS]
 >
->* [搜索数字资产](search-assets.md)
+>* [搜索数字资产](search-assets.md)。
 
