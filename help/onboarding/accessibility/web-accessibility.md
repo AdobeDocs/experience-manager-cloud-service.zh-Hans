@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 云服务和 Web 无障碍准则
 description: 介绍 Adobe Experience Manager 云服务和 Web 无障碍准则
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
 ht-degree: 100%
 
