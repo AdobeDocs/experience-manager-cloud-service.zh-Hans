@@ -1,9 +1,9 @@
 ---
 title: 将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置
 description: 将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1342'
 ht-degree: 100%
 
