@@ -2,7 +2,7 @@
 title: AEM 云服务开发准则
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -171,21 +171,21 @@ AEM作为Cloud Service不支持从发布到作者的反向复制。 如果需要
 
 Adobe监视应用程序性能并采取措施在出现恶化时加以解决。 目前，无法观察应用程序指标。
 
-## 专用出口IP地址
+## 专用出口IP地址 {#dedicated-egress-ip-address}
 
 应请求，AEM作为Cloud Service将为HTTP（端口80）和HTTPS（端口443）以Java代码编程的出站通信提供静态的专用IP地址。
 
-### 优势
+### 优势 {#benefits}
 
 当与SaaS供应商（如CRM供应商）集成或AEM外的其他集成作为优惠IP地址的Cloud Service时，此专用IP地址可允许列表以增强安全性。 通过向添加专用IP地允许列表址，它确保只允许来自客户AEMCloud Service的流量流入外部服务。 这是除了允许的来自任何其他IP的流量之外。
 
 如果没有启用专用IP地址功能，AEM作为Cloud Service发出的流量将流经与其他客户共享的一组IP。
 
-### 配置
+### 配置 {#configuration}
 
 要启用专用IP地址，请向客户支持部门提交请求，客户支持部门将提供IP地址信息。 请求应指定每个环境，如果新环境在初始请求后需要该功能，则应另外提出请求。 不支持沙箱项目环境。
 
-### 功能使用
+### 功能使用 {#feature-usage}
 
 该功能与导致出站流量的Java代码或库兼容，前提是它们使用标准Java系统属性进行代理配置。 实际上，这应包括大多数常用的库。
 
@@ -209,6 +209,6 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 仅支持HTTP和HTTPS端口。 加密时，这包括HTTP/1.1和HTTP/2。
 
-### 调试注意事项
+### 调试注意事项 {#debugging-considerations}
 
 为了验证流量是否确实在预期的专用IP地址上传出，请检查目标服务中的日志（如果可用）。 否则，调用调试服务(如https://ifconfig.me/ip)可能会很有 [用](https://ifconfig.me/ip)，该服务将返回呼叫IP地址。
