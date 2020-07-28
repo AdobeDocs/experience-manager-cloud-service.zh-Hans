@@ -2,7 +2,7 @@
 title: 部署代码-Cloud Service
 description: 部署代码-Cloud Service
 translation-type: tm+mt
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -59,7 +59,8 @@ ht-degree: 3%
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >需要为AEM cloud services更新Cloud Manager的以下部分，并且正在更新中。
 
 ## 部署流程 {#deployment-process}
