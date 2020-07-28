@@ -3,9 +3,9 @@ sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '237'
 ht-degree: 97%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 97%
    + [使用Sling适配器](developing/introduction/sling-adapters.md)
    + [在 AEM 云服务中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
    + [AEM 云服务中的叠加](developing/introduction/overlays.md)
+   + [记录](developing/introduction/logging.md)
    + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [理解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
 + 配置和扩展 AEM 云服务 {#configuring-and-extending}
