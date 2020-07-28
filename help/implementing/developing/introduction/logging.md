@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
+source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -34,48 +34,62 @@ AEM日志记录和日志级别在配置文件中进行管理，这些配置文�
 AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的开发人员应按照常规的Java日志记录最佳实践，在以下日志级别记录有关自定义代码执行的相关语句：
 
 <table>
-<tbody>
 <tr>
-<td> <b>AEM环境</b></td>
-<td> <b>日志级别</b></td>
-<td> <b>描述</b></td>
-<td> <b>日志语句可用性</b></td>
+<td>
+<b>AEM环境</b></td>
+<td>
+<b>日志级别</b></td>
+<td>
+<b>描述</b></td>
+<td>
+<b>日志语句可用性</b></td>
 </tr>
 <tr>
-<td> 开发</td>
-<td> 调试</td>
-<td> 描述应用程序中正在发生的情况。
+<td>
+开发</td>
+<td>
+调试</td>
+<td>
+描述应用程序中正在发生的情况。<br>
 
 当DEBUG日志记录处于活动状态时，将记录提供发生活动的清晰画面的语句以及影响处理的任何关键参数。</td>
-<td> <ul>
+<td>
+<ul>
 <li> 本地开发</li>
 <li>开发</li>
 </ul></td>
 </tr>
 <tr>
-<td> 暂存</td>
-<td> 警告</td>
-<td> 描述可能成为错误的条件。
+<td>
+暂存</td>
+<td>
+警告</td>
+<td>
+描述可能成为错误的条件。<br>
 
 当WARN日志记录处于活动状态时，只记录指示正在接近次优性的条件语句。</td>
-<td> <ul>
+<td>
+<ul>
 <li> 本地开发</li>
 <li>开发</li>
 <li>暂存</li>
 </ul></td>
 </tr>
 <tr>
-<td> 生产</td>
-<td> 错误</td>
-<td> 描述指示故障并需要解决的条件。
+<td>
+生产</td>
+<td>
+错误</td>
+<td>
+描述指示故障并需要解决的条件。<br>
 
 当ERROR日志记录处于活动状态时，只记录指示失败的语句。 ERROR日志语句表示出现严重问题，应尽快解决。</td>
-<td> <ul>
+<td>
+<ul>
 <li> 本地开发</li>
 <li>开发</li>
 <li>暂存</li>
 <li>生产</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
