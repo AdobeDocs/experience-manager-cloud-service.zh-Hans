@@ -2,10 +2,10 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
+source-git-commit: c7100f53ce38cb8120074ec4eb9677fb7303d007
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 3%
+source-wordcount: '873'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ AEM日志记录和日志级别在配置文件中进行管理，这些配置文�
 
 请注意，从发布层的Dispatcher缓存或上游CDN提供的HTTP请求不会反映在这些日志中。
 
-### AEM Java日志记录 {#aem-java-logging}
+## AEM Java日志记录 {#aem-java-logging}
 
 AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的开发人员应按照常规的Java日志记录最佳实践，在以下日志级别记录有关自定义代码执行的相关语句：
 
@@ -91,3 +91,105 @@ AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的�
 </ul></td>
 </tr>
 </table>
+
+虽然Java日志记录支持其他几个级别的日志记录粒度，但AEM作为Cloud Service建议使用上述三个级别。
+
+AEM日志级别通过OSGi配置按环境类型设置，OSGi配置又提交到Git，并通过云管理器部署到AEM作为Cloud Service。 因此，最好保持日志语句的一致性并保持环境类型的知名度，以确保通过AEM作为Cloud Service提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
+
+### 日志格式 {#log-format}
+
+| 日期和时间 | AEM作为Cloud ServiceID | 日志级别 | 线程 | Java类 | 日志消息 |
+|---|---|---|---|---|---|
+| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | 没有指定的批准者，默认使用 [ Creative Approvers用户组 ] |
+
+**日志输出示例**
+
+`22.06.2020 18:33:30.120 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *ERROR* [qtp501076283-1809] io.prometheus.client.dropwizard.DropwizardExports Failed to get value from Gauge`
+`22.06.2020 18:33:30.229 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [qtp501076283-1805] org.apache.sling.auth.core.impl.SlingAuthenticator getAnonymousResolver: Anonymous access not allowed by configuration - requesting credentials`
+`22.06.2020 18:33:30.370 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] org.apache.sling.i18n.impl.JcrResourceBundle Finished loading 0 entries for 'en_US' (basename: <none>) in 4ms`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring`
+
+### 配置记录器 {#configuration-loggers}
+
+AEM Java日志定义为OSGi配置，因此将特定AEM目标为使用运行模式文件夹的Cloud Service环境。
+
+通过Sling LogManager工厂的OSGi配置为自定义Java包配置Java日志记录。 支持两种配置属性：
+
+| OSGi配置属性 | 描述 |
+|---|---|
+| org.apache.sling.commons.log.names | 要为其收集日志语句的Java包。 |
+| org.apache.sling.commons.log.level | 记录Java包的日志级别，由org.apache.sling.commons.log.names指定 |
+
+更改其他LogManager OSGi配置属性可能会导致AEM作为Cloud Service的可用性问题。
+
+以下是三个AEM的推荐日志记录配置(使用占位符Java包 `com.example`)的示例，它们作为Cloud Service环境类型。
+
+### 开发 {#development}
+
+/apps/my-app/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "debug"
+}
+```
+
+### 暂存 {#stage}
+
+/apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "warn"
+}
+```
+
+### 生产 {#productiomn}
+
+/apps/my-app/config.prod/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "error"
+}
+```
+
+## AEM HTTP请求记录 {#aem-http-request-logging}
+
+AEM作为Cloud Service的HTTP请求日志记录，可以按时间顺序对发送给AEM的HTTP请求及其HTTP响应进行深入的了解。 此日志有助于了解对AEM发出的HTTP请求以及它们的处理和响应顺序。
+
+理解此日志的关键是用ID映射HTTP请求和响应对，用括号中的数值表示。 请注意，通常请求及其相应响应会在日志中插入其他HTTP请求和响应。
+
+### 日志格式 {#http-request-logging-format}
+
+| 日期和时间 | 请求／响应对ID |  | HTTP 方法 | URL | 协议 | AEM作为Cloud Service节点ID |
+|---|---|---|---|---|---|---|
+| 2020年4月29日：19:14:21 +000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
+
+**示例日志**
+
+```
+29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+```
+
+### 配置日志 {#configuring-the-log}
+
+在AEM中，AEM HTTP请求日志不能配置为Cloud Service。
+
+## AEM HTTP访问记录 {#aem-http-access-logging}
+
+AEM asCloud ServiceHTTP访问记录按时间顺序显示HTTP请求。 每个日志条目表示访问AEM的HTTP请求。
+
+如果AEM通过查看随附的HTTP响应状态代码获得成功，以及HTTP请求完成所用的时间，此日志有助于快速了解向发出的HTTP请求。 此日志还有助于通过按用户筛选日志条目来调试特定用户的活动。
+
+### 日志格式 {#access-log-format}
