@@ -2,10 +2,10 @@
 title: AEM应用程序项目-Cloud Service
 description: AEM应用程序项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: 38be3237eb3245516d3ccf51d0718505ee5102f0
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 ## 使用向导创建AEM应用程序项目 {#using-wizard-to-create-an-aem-application-project}
 
-为了帮助新客户入门，Cloud Manger现在可以创建最少的AEM项目作为起点。 此过程基于AEM项 [**目原型&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
+为了帮助新客户入门，Cloud Manger现在能够创建最少的AEM项目作为起点。 此过程基于AEM Project [**Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 
 请按照以下步骤在Cloud Manager中创建AEM应用程序项目：
@@ -71,42 +71,11 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 * 其他软件包可以在构建时安装，如 [下所述](#installing-additional-system-packages)。
 * 每栋建筑都建在原始环境上； 构建容器不会在执行之间保持任何状态。
 * Maven始终使用以下命令运行： *mvn —batch-mode clean org.jacoco:jaco-maven-plugin:prepare-agent包*
-* Maven在系统级别上配置了一个settings.xml文件，该文件自动包括公共Adobe Artifact **存储库** 。 (有关更多详 [细信息，请参阅Adobe](https://repo.adobe.com/) Public Maven Repository)。
+* Maven在系统级别上配置了settings.xml文件，该文件自动包括公共Adobe **项库** 。 (有关更多详 [细信息，请参阅Adobe](https://repo.adobe.com/) 公共Maven存储库。)
 
 >[!NOTE]
 >尽管Cloud Manager未定义特定版本，但 `jacoco-maven-plugin`使用的版本至少必须为 `0.7.5.201505241946`。
 
-### 使用Java 11 {#using-java-11}
-
-Cloud Manager现在支持使用Java 8和Java 11构建客户项目。 默认情况下，项目是使用Java 8构建的。 计划在其项目中使用Java 11的客户可以使用Apache Maven Toolchains [插件进行此操作](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
-
-为此，请在pom.xml文件中添加一个 `<plugin>` 如下的条目：
-
-```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-toolchains-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>toolchain</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <toolchains>
-                    <jdk>
-                        <version>11</version>
-                        <vendor>oracle</vendor>
-                    </jdk>
-                </toolchains>
-            </configuration>
-        </plugin>
-```
-
->[!NOTE]
->支持 `vendor` 的值 `oracle` 为，支 `sun` 持的值为 `version` 、 `1.8`和 `1.11``11`。
 
 ## 环境变量 {#environment-variables}
 
@@ -242,7 +211,7 @@ Cloud Manager允许通过Cloud Manager API或Cloud Manager CLI按管道配置这
 
 ## 受密码保护的Maven存储库支持 {#password-protected-maven-repositories}
 
-要从Cloud Manager中使用受密码保护的Maven存储库，请将密码（以及用户名）指定为机密管 [线变量](#pipeline-variables) ，然后在git存储库中名为的文件中引 `.cloudmanager/maven/settings.xml` 用该机密。 此文件遵循“主设 [置文件”模式](https://maven.apache.org/settings.html) 。 当Cloud Manager构建流程开始时，此 `<servers>` 文件中的元素将合并到Cloud Manager提 `settings.xml` 供的默认文件中。 在此文件就位后，服务器ID将从文件内的 `<repository>` 和／或 `<pluginRepository>` 元素中引 `pom.xml` 用。 通常，这 `<repository>` 些和/ `<pluginRepository>` 或元素将包含在特 [定于Cloud Manager的用户档案中]{#activating-maven-profiles-in-cloud-manager}，尽管这并非严格必要。
+要从Cloud Manager中使用受密码保护的Maven存储库，请将密码（以及用户名）指定为机密管 [线变量](#pipeline-variables) ，然后在git存储库中名为的文件中引 `.cloudmanager/maven/settings.xml` 用该机密。 此文件遵循“主设 [置文件”模式](https://maven.apache.org/settings.html) 。 当Cloud Manager构建流程开始时， `<servers>` 此文件中的元素将合并到Cloud Manager提 `settings.xml` 供的默认文件中。 在此文件就位后，服务器ID将从文件内的 `<repository>` 和／或 `<pluginRepository>` 元素中引 `pom.xml` 用。 通常，这 `<repository>` 些和/ `<pluginRepository>` 或元素将包含在特 [定于Cloud Manager的用户档案中]{#activating-maven-profiles-in-cloud-manager}，尽管这并非严格必要。
 
 例如，假设存储库位于https://repository.myco.com/maven2，则Cloud Manager应使用的用户名为， `cloudmanager` 密码为 `secretword`。
 
@@ -368,7 +337,7 @@ Cloud Manager允许通过Cloud Manager API或Cloud Manager CLI按管道配置这
 
 >[!NOTE]
 >
->以这种方式安装系统包不 **会将** 它安装在用于运行Adobe Experience Manager的运行时环境中。 如果您需要在AEM环境上安装系统包，请与Adobe代表联系。
+>以这种方式安装系统包不 **会将** 它安装在用于运行Adobe Experience Manager的运行时环境中。 如果需要在AEM环境上安装系统包，请与Adobe代表联系。
 
 ## 跳过内容包 {#skipping-content-packages}
 
