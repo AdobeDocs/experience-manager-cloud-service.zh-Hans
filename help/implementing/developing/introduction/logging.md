@@ -2,10 +2,10 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
+source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 2%
+source-wordcount: '2212'
+ht-degree: 3%
 
 ---
 
@@ -97,8 +97,6 @@ AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的�
 
 AEM日志级别通过OSGi配置按环境类型设置，OSGi配置又提交到Git，并通过云管理器部署到AEM作为Cloud Service。 因此，最好保持日志语句的一致性并保持环境类型的知名度，以确保通过AEM作为Cloud Service提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
 
-### 日志格式 {#log-format}
-
 **日志输出示例**
 
 ```
@@ -108,6 +106,8 @@ AEM日志级别通过OSGi配置按环境类型设置，OSGi配置又提交到Git
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+**日志格式**
 
 <table>
 <tbody>
@@ -192,8 +192,6 @@ AEM作为Cloud Service的HTTP请求日志记录，可以按时间顺序对发送
 
 理解此日志的关键是用ID映射HTTP请求和响应对，用括号中的数值表示。 请注意，通常请求及其相应响应会在日志中插入其他HTTP请求和响应。
 
-### 日志格式 {#http-request-logging-format}
-
 **示例日志**
 
 ```
@@ -205,6 +203,8 @@ AEM作为Cloud Service的HTTP请求日志记录，可以按时间顺序对发送
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+**日志格式**
 
 <table>
 <tbody>
@@ -246,15 +246,15 @@ AEM asCloud ServiceHTTP访问记录按时间顺序显示HTTP请求。 每个日�
 
 如果AEM通过查看随附的HTTP响应状态代码获得成功，以及HTTP请求完成所用的时间，此日志有助于快速了解向发出的HTTP请求。 此日志还有助于通过按用户筛选日志条目来调试特定用户的活动。
 
-### 日志格式 {#access-log-format}
-
-**示例**
+**日志输出示例**
 
 ```
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css HTTP/1.1" 200 1141 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+**日志格式**
 
 <table>
 <tbody>
@@ -327,17 +327,64 @@ Apache HTTP Web Server访问日志为到达发布层的Web服务器/Dispatcher�
 
 请参阅官方apache文档中的错误日志 [格式的相关信息](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
 
-**日志格式**
-
-<!--blank until prod build finishes-->
-
-**示例**
+**日志输出示例**
 
 ```
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 ```
+
+**日志格式**
+
+<table>
+<tbody>
+<tr>
+<td>AEM作为云服务节点ID</td>
+<td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
+</tr>
+<tr>
+<td>客户端的IP地址</td>
+<td>-</td>
+</tr>
+<tr>
+<td>用户</td>
+<td>-</td>
+</tr>
+<tr>
+<td>日期和时间</td>
+<td>2020年5月01日：00:09:46 +0000</td>
+</tr>
+<tr>
+<td>HTTP 方法</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/example.html</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>HTTP响应状态</td>
+<td>200</td>
+</tr>
+<tr>
+<td>大小</td>
+<td>310</td>
+</tr>
+<tr>
+<td>Referer</td>
+<td>-</td>
+</tr>
+<tr>
+<td>用户代理</td>
+<td>“Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
 
 ### 配置Apache HTTPD Web Server访问日志 {#configuring-the-apache-httpd-webs-server-access-log}
 
@@ -349,17 +396,40 @@ Apache HTTP Web Server错误日志为发布层的Web服务器/Dispatcher中的�
 
 请参阅官方apache文档中的错误日志 [格式的相关信息](https://httpd.apache.org/docs/2.4/logs.html#errorlog)。
 
-**日志格式**
-
-<!--placeholder-->
-
-**示例**
+**日志输出示例**
 
 ```
 Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
 Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
 Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
 ```
+
+**日志格式**
+
+<table>
+<tbody>
+<tr>
+<td>日期和时间</td>
+<td>周五7月17日02:16:42.608913 2020</td>
+</tr>
+<tr>
+<td>事件级别</td>
+<td>[mpm_worker:notice]</td>
+</tr>
+<tr>
+<td>进程ID</td>
+<td>[pid 1:tid 140715149343624]</td>
+</tr>
+<tr>
+<td>窗格名称</td>
+<td>[cm-p1234-e56789-aem-publish-b86c6b466-qpfvp]</td>
+</tr>
+<tr>
+<td>消息</td>
+<td>AH00094: 命令行： 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+</tr>
+</tbody>
+</table>
 
 ### 配置Apache HTTPD Web Server错误日志 {#configuring-the-apache-httpd-web-server-error-log}
 
@@ -388,8 +458,6 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher日志 {#dispatcher-log}
 
-<!--de completat-->
-
 **示例**
 
 ```
@@ -398,7 +466,48 @@ Define REWRITE_LOG_LEVEL Debug
 [17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
 ```
 
-### 日志格式 {#dispatcher-log-format}
+**日志格式**
+
+<table>
+<tbody>
+<tr>
+<td>日期和时间</td>
+<td>[2020年7月17日：23:48:16 +000]</td>
+</tr>
+<tr>
+<td>窗格名称</td>
+<td>[cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr]</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Dispatcher响应状态代码</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>持续时间</td>
+<td>1949ms</td>
+</tr>
+<tr>
+<td>农场</td>
+<td>[publishfarm/0]</td>
+</tr>
+<tr>
+<td>缓存状态</td>
+<td>[未决行动]</td>
+</tr>
+<tr>
+<td>主机</td>
+<td>"publish-p12904-e25628.adobeemcloud.com"</td>
+</tr>
+</tbody>
+</table>
 
 ### 配置Dispatcher错误日志 {#configuring-the-dispatcher-error-log}
 
@@ -473,7 +582,7 @@ Apache层日志（包括调度程序）位于保存Dispatcher的Docker容器中�
 
 拥有Splunk帐户的客户可以通过客户支持票证请求将其AEMCloud Service日志转发到相应的索引。 日志记录数据等同于Cloud Manager日志下载中可用的数据，但客户可能会发现利用Splunk产品中提供的查询功能非常方便。
 
-与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
+与发送到Splunk的日志关联的网络带宽被视为客户的网络I/O使用的一部分。
 
 ### 启用跳转转发 {#enabling-splunk-forwarding}
 
