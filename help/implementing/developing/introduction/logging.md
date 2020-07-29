@@ -2,9 +2,9 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
+source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1081'
 ht-degree: 3%
 
 ---
@@ -195,9 +195,41 @@ AEM asCloud ServiceHTTP访问记录按时间顺序显示HTTP请求。 每个日�
 
 ### 日志格式 {#access-log-format}
 
-| AEM作为Cloud Service节点ID | 客户端的IP地址 | 用户 |  | 日期和时间 |  | HTTP方法 | URL | 协议 |  | HTTP响应 | HTTP请求时间（以毫秒为单位） | 引用 | 用户代理 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| cm-p1235-e2644-aem-author-5955cb5b8-8kgr2 | - | `myuser@adobe.com` | 2020年4月30日：17:37:14 +0000 | &quot; | GET | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |  | HTTP/1.1 | &quot; | 200 | 1141 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` | “Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36&quot; |
+<table>
+<tbody>
+<tr>
+<td><b>AEM作为Cloud Service节点ID</b></td>
+<td><b>客户端的IP地址</b></td>
+<td><b>用户</b></td>
+<td><b>日期和时间</b></td>
+<td><b>空白</b></td>
+<td><b>HTTP方法</b></td>
+<td><b>URL</b></td>
+<td><b>协议</b></td>
+<td><b>空白</b></td>
+<td><b>HTTP响应状态</b></td>
+<td><b>HTTP响应时间（毫秒）</b></td>
+<td><b>引用</b></td>
+<td><b>用户代理</b></td>
+</tr>
+<tr>
+<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
+<td>-</td>
+<td>myuser@adobe.com</td>
+<td>2020年4月30日：17:37:14 +0000</td>
+<td>"</td>
+<td>GET</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+<td>HTTP/1.1</td>
+<td>"</td>
+<td>200</td>
+<td>1141</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+<td>“Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
+
 
 **示例**
 
