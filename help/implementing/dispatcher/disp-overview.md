@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3824'
 ht-degree: 9%
 
 ---
@@ -189,6 +189,7 @@ Uncompressing DispatcherSDKv<version>  100%
 适用于标准项目的默认主机全局匹配。 如果需要自定义，请修改 `virtualhosts.any`。 在自定义中，您不应包括默认主机全局覆盖，因为它匹配每 **个传** 入请求。
 
 >[!NOTE]
+>
 >AEM作为Cloud Service主原型将生成相同的调度程序配置文件结构。
 
 以下各节介绍如何在本地验证配置，以便在部署内部版本时在Cloud Manager中通过相关的质量门。
@@ -371,37 +372,7 @@ Starting httpd server
 
 ## 调试Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
-以下策略可用于增加调度程序模块的日志输出并查看本地和云环境 `RewriteRule` 中评估结果。
-
-这些模块的日志级别由变量和 `DISP_LOG_LEVEL` 定义 `REWRITE_LOG_LEVEL`。 可在文件中设置它们 `conf.d/variables/global.vars`。 其相关部分如下：
-
-```
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-```
-
-在本地运行Dispatcher时，日志也直接打印到终端输出。 大多数时间，这些日志应位于DEBUG中，这可以通过在运行Docker时以参数的形式传递到调试级别来完成。 例如：
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-云环境的日志将通过云管理器中提供的日志记录服务公开。
+日志级别由变量 `DISP_LOG_LEVEL` 定义 `REWRITE_LOG_LEVEL` , `conf.d/variables/global.var`并在s中。 See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
 
 ## 每个Dispatcher的不同环境配置 {#different-dispatcher-configurations-per-environment}
 
