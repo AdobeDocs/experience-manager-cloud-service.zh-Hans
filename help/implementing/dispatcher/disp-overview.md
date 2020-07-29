@@ -2,7 +2,7 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 9%
@@ -372,7 +372,7 @@ Starting httpd server
 
 ## 调试Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
-日志级别由变量 `DISP_LOG_LEVEL` 定义 `REWRITE_LOG_LEVEL` , `conf.d/variables/global.var`并在s中。 See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
+日志级别由变量 `DISP_LOG_LEVEL` 定义 `REWRITE_LOG_LEVEL` , `conf.d/variables/global.var`并在s中。 See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## 每个Dispatcher的不同环境配置 {#different-dispatcher-configurations-per-environment}
 
