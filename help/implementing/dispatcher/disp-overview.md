@@ -2,7 +2,7 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-本节介绍如何将AEM构建为Cloud ServiceApache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行它。 还描述了在云环境中进行调试。 有关Dispatcher的其他信息，请参阅 [AEMDispatcher文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)。
+本节介绍如何将AEM构造为Cloud ServiceApache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行。 还描述了在云环境中进行调试。 有关Dispatcher的其他信息，请参阅AEM [Dispatcher文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)。
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 >[!WARNING]
 >
->Windows用户： 当前版本的AEM作为Cloud Service本地Dispatcher工具(v2.0.20)与Windows不兼容。 请联系 [Adobe支持](https://daycare.day.com/home.html) ，获取Windows兼容性更新。
+>Windows用户： 当前版本的AEM作为Cloud Service本地Dispatcher工具(v2.0.20)与Windows不兼容。 请联系 [Adobe支持](https://daycare.day.com/home.html) ，以接收Windows兼容性的更新。
 
 ## Dispatcher工具 {#dispatcher-sdk}
 
@@ -34,7 +34,7 @@ Dispatcher工具作为Cloud ServiceSDK是整个AEM的一部分，它提供：
 
 ## 下载和提取工具 {#extracting-the-sdk}
 
-Dispatcher工具可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 请注意，对SDK列表的访问权限仅限于将AEM Managed Services或AEM作为Cloud Service环境的用户。 该新调度程序工具版本中提供的任何新配置均可用于部署到云环境，在云或更高版本中运行该版本的AEM。
+Dispatcher工具可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 请注意，访问SDK列表仅限于AEMManaged Services或AEM作为Cloud Service环境的。 该新调度程序工具版本中提供的任何新配置都可用于部署到云环境中运行该版本的AEM或更高版本。
 
 **对于macOS和Linux**，请将shell脚本下载到计算机上的文件夹，使其可执行并运行它。 它将自解压存储到的目录下的Dispatcher工具文件(其中 `version` 是调度程序工具的版本)。
 
@@ -253,9 +253,9 @@ Whitelisted directives:
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
- conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
+  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
- conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
+  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
 请注意，验证工具仅报告未已列入允许列表的禁止使用Apache指令。 它不会报告Apache配置的语法或语义问题，因为此信息仅对正在运行的环境中的Apache模块可用。
@@ -367,7 +367,7 @@ Starting httpd server
 ...
 ```
 
-这将在容器中开始调度程序，其后端指向在本地Mac OS计算机上运行的AEM实例（端口4503）。
+这将开始容器中的调度程序，其后端指向本地Mac OS计算机上运行的AEM实例（端口4503）。
 
 ## 调试Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
@@ -405,7 +405,7 @@ Starting httpd server
 
 ## 每个Dispatcher的不同环境配置 {#different-dispatcher-configurations-per-environment}
 
-此时，同一调度程序配置将作为Cloud Service环境应用于所有AEM。 运行时将具有一个环境 `ENVIRONMENT_TYPE` 变量，该变量包含当前运行模式（开发、舞台或生产）以及定义。 定义可以 `ENVIRONMENT_DEV`是 `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，可以使用定义来构建逻辑：
+此时，同一调度程序配置作为Cloud Service环境应用于所有AEM。 运行时将具有一个环境 `ENVIRONMENT_TYPE` 变量，该变量包含当前运行模式（开发、舞台或生产）以及定义。 定义可以 `ENVIRONMENT_DEV`是 `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，可以使用定义来构建逻辑：
 
 ```
 # Simple usage of the environment variable
@@ -464,15 +464,15 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## AMSDispatcher与AEM作为Cloud Service的主要区别 {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-如以上参考页所述，AEM中作为Dispatcher的Apache和Cloud Service配置与AMS配置非常相似。 主要区别是：
+如以上参考页所述，AEM中作为Cloud Service的Apache和Dispatcher配置与AMS 1非常相似。 主要区别是：
 
 * 在AEM中，某些Apache指令不能被使用(例如 `Listen` 或 `LogLevel`)
-* 在AEM中，作为Cloud Service，只能将部分Dispatcher配置放入包含文件中，其命名很重要。 例如，要在不同主机之间重复使用的筛选器规则必须放入一个名为的文件中 `filters/filters.any`。 有关详细信息，请参阅参考页面。
-* 在AEM中，作为Cloud Service，存在额外的验证以禁止使用编写的筛选器规则 `/glob` 来防止安全问题。 由于 `deny *` 将使用Dispatcher，而 `allow *` 非（不能使用）Dispatcher，因此客户将从本地运行以及执行试用和错误中受益，查看日志以准确了解过滤器为了添加这些路径而阻止的路径。
+* 在AEM中，作为Cloud Service，只能将某些Dispatcher配置放入包含文件，其命名很重要。 例如，要在不同主机之间重复使用的筛选器规则必须放入一个名为的文件中 `filters/filters.any`。 有关详细信息，请参阅参考页面。
+* 在AEM作为Cloud Service中，存在额外的验证以禁止使用编写的筛选器规则 `/glob` 来防止安全问题。 由于 `deny *` 将使用Dispatcher，而 `allow *` 非（不能使用）Dispatcher，因此客户将从本地运行以及执行试用和错误中受益，查看日志以准确了解过滤器为了添加这些路径而阻止的路径。
 
 ## 将调度程序配置从AMS迁移到AEM作为Cloud Service的准则
 
-作为Cloud Service，调度程序配置结构在Managed Services和AEM之间有差异。 下面是一个分步指南，介绍如何将AMSDispatcher配置版本2作为Cloud Service迁移到AEM。
+调度程序配置结构与AEM作为Cloud Service存在差异。 下面是如何从AMSDispatcher配置版本2迁移到AEM作为Cloud Service的分步指南。
 
 ## 如何将AMS转换为AEM作为云服务调度程序配置
 
