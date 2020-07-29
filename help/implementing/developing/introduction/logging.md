@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -66,7 +66,6 @@ AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的�
 警告</td>
 <td>
 描述可能成为错误的条件。<br>
-
 当WARN日志记录处于活动状态时，只记录指示正在接近次优性的条件语句。</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的�
 错误</td>
 <td>
 描述指示故障并需要解决的条件。<br>
-
 当ERROR日志记录处于活动状态时，只记录指示失败的语句。 ERROR日志语句表示出现严重问题，应尽快解决。</td>
 <td>
 <ul>
