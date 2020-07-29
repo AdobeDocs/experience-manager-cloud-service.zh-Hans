@@ -2,9 +2,9 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
+source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1305'
 ht-degree: 2%
 
 ---
@@ -195,19 +195,6 @@ AEM asCloud ServiceHTTP访问记录按时间顺序显示HTTP请求。 每个日�
 
 ### 日志格式 {#access-log-format}
 
-| AEM作为Cloud Service节点ID | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
-|---|---|
-| 客户端的IP地址 | - |
-| 用户 | myuser@adobe.com |
-| 日期和时间 | 2020年4月30日：17:37:14 +0000 |
-| HTTP方法 | GET |
-| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
-| 协议 | HTTP/1.1 |
-| HTTP响应状态 | 200 |
-| HTTP请求时间（以毫秒为单位） | 1141 |
-| 引用 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
-| 用户代理 | “Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36&quot; |
-
 **示例**
 
 ```
@@ -215,6 +202,55 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+<table>
+<tbody>
+<tr>
+<td>AEM作为Cloud Service节点ID</td>
+<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
+</tr>
+<tr>
+<td>客户端的IP地址</td>
+<td>-</td>
+</tr>
+<tr>
+<td>用户</td>
+<td>myuser@adobe.com</td>
+</tr>
+<tr>
+<td>日期和时间</td>
+<td>2020年4月30日：17:37:14 +0000</td>
+</tr>
+<tr>
+<td>HTTP方法</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>HTTP响应状态</td>
+<td>200</td>
+</tr>
+<tr>
+<td>HTTP请求时间（以毫秒为单位）</td>
+<td>1141</td>
+</tr>
+<tr>
+<td>引用</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+</tr>
+<tr>
+<td>用户代理</td>
+<td>“Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
 
 ### 配置HTTP访问日志 {#configuring-the-http-access-log}
 
