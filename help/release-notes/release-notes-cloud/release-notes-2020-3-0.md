@@ -2,18 +2,17 @@
 title: 2020.3.0 版发行说明
 description: 2020.3.0 版发行说明
 translation-type: tm+mt
-source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '245'
+ht-degree: 94%
 
 ---
 
 
 # AEM 云服务 2020.3.0 发行说明 {#release-notes}
 
-以下部分概述了 Experience Manager 云服务 2020.3.0 的常规发行说明。
-
+本页概述了作为Cloud Service2020.3.0的Experience Manager的一般发行说明。
 
 ## 发布日期 {#release-date}
 
