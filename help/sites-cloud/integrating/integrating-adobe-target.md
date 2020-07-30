@@ -2,9 +2,9 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -17,18 +17,18 @@ ht-degree: 2%
 * 使用触屏UI在AEM中创建Analytics配置作为Cloud Service（需要IMS配置）。
 * 在Adobe Analytics启动中添加和配置Adobe [作为扩展](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
-“体验定位”需要与Launch集成。 对于导出到目标的体验片段，您只需要Adobe Target配置和IMS。
+Adobe启动是管理AEM页面中Analytics和目标的客户端属性（JS库／标记）所必需的。 尽管如此，“体验定位”需要与Launch集成。 对于导出到目标的体验片段，您只需要Adobe Target配置和IMS。
 
 >[!NOTE]
 >
->Adobe Experience Manager作为没有现有目标帐户的Cloud Service客户，可以请求访问目标基础包以进行Experience Cloud。  Foundation Pack提供对目标的批量限制使用。
+>Adobe Experience Manager作为没有现有目标帐户的Cloud Service客户，可以请求访问目标基础包以进行Experience Cloud。 Foundation Pack提供对目标的批量限制使用。
 
 ## 创建Adobe Target配置 {#create-configuration}
 
 1. 导航到 **工具** → **Cloud Service**。
    ![导](assets/cloudservice.png "航")
 2. 选择 **Adobe Target**。
-3. 单击“创 **建** ”按钮。
+3. 选择“创 **建** ”按钮。
    ![创](assets/tenant.png "建")
 4. 填写详细信息（请参阅下面的内容），然后选 **择Connect**。
    ![ConnectConnect](assets/open_screen.png "")
@@ -59,10 +59,6 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 >
 >现有（旧版）框架仍然有效，但无法在触屏UI中配置。 建议在启动中重新构建变量映射配置。
 
->[!NOTE]
->
->现有（旧版）框架仍然有效，但无法在触屏UI中配置。 建议在启动中重新构建变量映射配置。
-
 作为一般概述，集成步骤包括：
 
 1. 创建启动项属性
@@ -83,7 +79,7 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 ### 添加所需的扩展 {#add-extension}
 
-扩展是管理核心库设置的容器。 Adobe Target扩展支持使用目标JavaScript SDK进行现代Web的客户端实现，at.js。 您需要添加 **Adobe Target****和AdobeContextHub** 扩展。
+**扩展** 是管理核心库设置的容器。 Adobe Target扩展通过使用目标JavaScript SDK用于现代Web,at.js，支持客户端实现。 您需要添加 **Adobe Target****和AdobeContextHub** 扩展。
 
 1. 选择“扩展目录”选项，并在筛选器中搜索目标。
 2. 选择 **Adobe Target** at.js，然后单击“安装”选项。
@@ -95,7 +91,7 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 ### 创建数据元素 {#data-element}
 
-数据元素是可以将上下文中心参数映射到的占位符。
+**数据元素** 是可以将上下文中心参数映射到的占位符。
 
 1. 选择 **数据元素**。
 2. 选择 **添加数据元素**。
@@ -105,7 +101,7 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 ### 创建页面规则 {#page-rule}
 
-在“规则”中，我们定义一系列将在现场执行的操作并对其进行排序，以实现定位。
+在规 **则中** ，我们定义一系列将在现场执行的操作并对其进行排序，以实现定位。
 
 1. 添加一组操作，如屏幕截图所示。
    ![操](assets/rules.png "作")
