@@ -3,15 +3,15 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
 
 
-# 开始使用资产微服务 {#get-started-using-asset-microservices}
+# 使用资产微服务和处理用户档案 {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -23,7 +23,7 @@ ht-degree: 1%
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
 -->
 
-资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理这些服务，以优化不同资产类型和处理选项。
+资产微型服务为使用云服务的资产提供可扩展且具有弹性的处理。 Adobe管理服务以优化处理不同的资产类型和处理选项。
 
 资产处理取决于处理用户档案 **[!UICONTROL 中的配置]**，该配置提供了默认设置，并允许管理员添加更具体的资产处理配置。 管理员可以创建和维护后处理工作流的配置，包括可选自定义。 自定义工作流允许可扩展性和完全自定义。
 
@@ -38,78 +38,116 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->此处介绍的资产处理将替 `DAM Update Asset` 代先前版本的Experience Manager中存在的工作流模型。 大多数标准演绎版生成和元数据相关步骤都由资产microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
+>此处介绍的资产处理将替 `DAM Update Asset` 换先前版本中存在的工作流模型 [!DNL Experience Manager]。 大多数标准演绎版生成和元数据相关步骤都由资产microservices处理取代，其余步骤（如果有）可由后处理工作流配置替换。
 
-## 资产处理入门 {#get-started}
+## 了解资产处理选项 {#get-started}
 
-资产微型服务的资产处理已通过默认配置进行预配置，确保系统所需的默认演绎版可用。 它还确保元数据提取和文本提取操作可用。 用户可以立即开始上传或更新资产，并且基本处理默认可用。
+Experience Manager允许以下级别的处理。
 
-对于特定的演绎版生成或资产处理要求，AEM管理员可以创建其他处 [!UICONTROL 理用户档案]。 用户可以将一个或多个可用用户档案分配给特定文件夹以完成其他处理。 例如，生成Web、移动设备和平板电脑特定的再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
+| 配置 | 描述 | 涵盖的使用案例 |
+|---|---|---|
+| [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | 用户界面使 [!DNL Assets] 用的标准缩略图（48、140和319 px）; 大预览（Web再现- 1280 px）; 元数据和文本提取。 |
+| [标准配置](#standard-config) | 仅由管理员通过用户界面进行配置。 提供的再现生成选项比上述默认配置更多。 | 更改图像的格式和分辨率； 生成FPO再现。 |
+| [自定义配置](#custom-config) | 由管理员通过用户界面进行配置，以调用支持更复杂要求的自定义Worker。 利用云本机 [!DNL Asset Compute Service]。 | 请参阅 [允许的使用案例](#custom-config)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
-
-要更改现有用户档案，请参 [阅资产microservices的配置](#configure-asset-microservices)。
 要创建特定于您的自定义要求的自定义处理用户档案，例如与其他系统集成，请参 [阅后处理工作流](#post-processing-workflows)。
 
-## 资产微服务配置 {#configure-asset-microservices}
-
-要配置资产微服务，管理员可以在工具>资产>处理 **[!UICONTROL 用户档案下使用配置用户界面]**。
-
-### 默认配置 {#default-config}
-
-使用默认配置时，仅配置标准处理用户档案。 标准处理用户档案在用户界面上不可见，您无法修改它。 它始终执行以处理上传的资产。 标准处理用户档案可确保所有资产都完成Experience Manager所需的所有基本处理。
-
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
-
-标准处理用户档案提供以下处理配置：
-
-* 资产用户界面使用的标准缩略图（48、140和319像素）
-* 大预览（Web再现- 1280 px）
-* 元数据提取
-* 文本提取
-
-### 支持的文件格式 {#supported-file-formats}
+## 支持的文件格式 {#supported-file-formats}
 
 Asset microservices在生成演绎版或提取元数据方面支持各种文件格式。 有关 [完整列表](file-format-support.md) ，请参阅支持的文件格式。
 
-### 添加其他处理用户档案 {#processing-profiles}
+## 默认配置 {#default-config}
 
-可以使用“创建”操作添加其 **[!UICONTROL 他处理]** 用户档案。
+已预配置一些默认设置，以确保Experience Manager中所需的默认演绎版可用。 默认配置还确保元数据提取和文本提取操作可用。 用户可以立即开始上传或更新资产，并且基本处理默认可用。
 
-每个处理用户档案配置都包括列表再现。 对于每个再现，您可以指定以下内容：
+使用默认配置，只配置最基本的处理用户档案。 此类处理用户档案在用户界面上不可见，您无法修改它。 它始终执行以处理上传的资产。 此默认处理用户档案可确保对所有资产完成所 [!DNL Experience Manager] 需的基本处理。
 
-* 再现名称。
-* 支持的再现格式，如JPEG、PNG或GIF。
-* 再现宽度和高度（以像素为单位）。 如果未指定，则使用原始图像的完整像素大小。
-* JPEG的再现质量（百分比）。
-* 包含和排除的MIME类型，用于定义用户档案的适用性。
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+-->
+
+## 标准用户档案 {#standard-config}
+
+[!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹以完成附加处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
+
+* **演绎版宽度和高度**: 演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成最大可能的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
+
+* **MIME类型包含规则**: 当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。 否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
+
+* **特殊FPO再现**: 当将大型资产从文档 [!DNL Experience Manager] 置入 [!DNL Adobe InDesign] 时，创意专业人士在置入资产后会等 [待相当长时间](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同时，用户被阻止使用 [!DNL InDesign]。 这会中断创意流程，并对用户体验造成负面影响。 Adobe允许将小型演绎版临时放 [!DNL InDesign] 置到文档中，以后可以用全分辨率资产按需替换。 [!DNL Experience Manager] 提供仅用于放置(FPO)的再现。 这些FPO再现文件大小较小，但长宽比相同。
+
+处理用户档案可以包括FPO（仅用于放置）再现。 查看 [!DNL Adobe Asset Link] 文 [档](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) ，了解您是否需要为处理用户档案打开它。 有关详细信息，请参阅 [Adobe资产链接完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
+
+### 创建标准用户档案 {#create-standard-profile}
+
+要创建标准处理用户档案，请执行以下步骤：
+
+1. 管理员访 **[!UICONTROL 问工具]** >资 **[!UICONTROL 产]** >处 **[!UICONTROL 理用户档案]**。 单击&#x200B;**[!UICONTROL 创建]**。
+1. 提供一个名称，帮助您在应用到文件夹时唯一标识用户档案。
+1. 要生成FPO演绎版，请在“标 **[!UICONTROL 准]** ”选项卡上 **[!UICONTROL 启用创建FPO演绎版]**。 输入一个 **[!UICONTROL 介于]** 1和100之间的“质量”值。
+1. 要生成其他演绎版，请单 **[!UICONTROL 击“添加新]** ”并提供以下信息：
+
+   * 每个再现的文件名。
+   * 每个再现的文件格式（PNG、JPEG或GIF）。
+   * 每个演绎版的宽度和高度（以像素为单位）。 如果未指定这些值，则使用原始图像的完整像素大小。
+   * 质量（以每个JPEG再现的百分比表示）。
+   * 包含和排除的MIME类型，用于定义用户档案的适用性。
 
 ![处理用户档案-添加](assets/processing-profiles-adding.png)
 
-创建并保存新的处理用户档案时，它会添加到已配置的处理用户档案的列表中。 您可以将这些处理用户档案应用到文件夹层次结构中的文件夹，以使它们对资产上传和资产处理有效。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
+
+以下视频演示了标准用户档案的有用性和用法。
+
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
 <!-- Removed per cqdoc-15624 request by engineering.
- ![processing-profiles-list](assets/processing-profiles-list.png) -->
+ ![processing-profiles-list](assets/processing-profiles-list.png) 
+ -->
 
-#### 再现宽度和高度 {#rendition-width-height}
+## 自定义用户档案和用例 {#custom-config}
 
-演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成最大可能的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。
+**待定项目**:
 
-空值表示资产处理采用原始图像的像素尺寸。
+* 与可扩展性内容的整体交叉链接。
+* 提及如何获取工作人员的URL。 开发、舞台和产品环境的工作URL。
+* 提及服务参数的映射。 指向计算服务文章的链接。
+* 从Jira票证中共享的流透视进行审阅。
 
-#### MIME类型包含规则 {#mime-type-inclusion-rules}
+由于组织的需求各不相同，因此无法使用默认配置完成某些复杂的资产处理用例。 Adobe [!DNL Asset Compute Service] 优惠。 它是一种可扩展的可扩展服务，用于处理数字资产。 它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
 
-当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。
+开发人员可以使用资产计算服务来创建专门的自定义工作程序，它们适合预定义、复杂的用例。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下用例：
 
-否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
+* 使用Adobe Sensei为数字资产生成自定义增强的智能标签。
+* 使用Adobe Sensei生成主题的裁剪面具。
+* 从PIM系统检索产品元数据信息，并在获取资产期间将元数据部分用于资产的二进制。
+* 使用API更改透明图像的背景 [!DNL Adobe Photoshop] 颜色。
+* 使用API润饰 [!DNL Photoshop] 图像。
+* 使用API拉直 [!DNL Adobe Lightroom] 图像。
 
-#### 特殊FPO再现 {#special-fpo-rendition}
+>[!NOTE]
+>
+>不能使用自定义Worker编辑标准元数据。 您只能修改自定义元数据。
 
-将大型资产从AEM置入Adobe InDesign文档时，创意专业人士在置入资产后必须等 [待相当长时间](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同时，用户无法使用InDesign。 这会中断创意流程，并对用户体验造成负面影响。 Adobe允许将小型再现临时置入InDesign文档，以后可以用全分辨率资产按需替换。 Experience Manager提供仅用于放置(FPO)的再现。 这些FPO再现文件大小较小，但长宽比相同。
+### 创建自定义用户档案 {#create-custom-profile}
 
-处理用户档案可以包括FPO（仅用于放置）再现。 请参阅Adobe Asset Link [文档](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) ，了解您是否需要为处理用户档案打开它。 有关详细信息，请参 [阅Adobe资产链接完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
+要创建自定义用户档案，请执行以下步骤：
 
-## 使用资产微服务处理资产 {#use-asset-microservices}
+1. 管理员可 **[!UICONTROL 以访问工具>资产>处理用户档案]**。 单击&#x200B;**[!UICONTROL 创建]**。
+1. Click on **[!UICONTROL Custom]** tab. 单击 **[!UICONTROL 添加新]**。 提供再现所需的文件名。
+1. 提供以下信息，然后单击“ **[!UICONTROL 保存]**”。
+
+   * 每个再现的文件名和支持的文件扩展名。
+   * Firefly自定义应用程序的端点URL。 应用程序必须与Experience Manager帐户来自同一组织。
+   * 根据需要添加服务参数。
+   * 包含和排除的MIME类型，用于定义用户档案的适用性。
+
+![自定义处理用户档案](assets/custom-processing-profile.png)
+
+>[!CAUTION]
+>
+>如果Firefly应用程序 [!DNL Experience Manager] 和帐户不来自同一组织，则集成将不起作用。
+
+## 使用处理用户档案处理资产 {#use-profiles}
 
 创建附加的自定义处理用户档案并将其应用到特定文件夹，以便Experience Manager处理上传到这些文件夹或在这些文件夹中更新的资产。 默认的内置标准处理用户档案始终执行，但在用户界面上不可见。 如果您添加自定义用户档案，则两个用户档案均用于处理上传的资产。
 
@@ -138,7 +176,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 在需要对无法使用处理用户档案进行的资产进行额外处理的情况下，可以向配置中添加其他后处理工作流。 这允许在使用资产微服务的可配置处理的基础上添加完全自定义的处理。
 
-后处理工作流（如果已配置）由AEM在microservices处理完成后自动执行。 无需手动添加工作流启动器来触发它们。 示例包括：
+后处理工作流（如果配置）由AEM在微服务处理完成后自动执行。 无需手动添加工作流启动器来触发它们。 示例包括：
 
 * 处理资产的自定义工作流步骤。
 * 集成功能，可将元数据或属性从外部系统添加到资产，例如产品或流程信息。
