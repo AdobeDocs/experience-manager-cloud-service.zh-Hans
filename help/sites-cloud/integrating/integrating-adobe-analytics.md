@@ -2,7 +2,7 @@
 title: 与 Adobe Analytics 集成
 description: '与 Adobe Analytics 集成 '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 4%
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 1. 导航到 **工具** → **Cloud Service**。
 2. 选择 **Adobe Analytics配置**。
-   ![Analytics](assets/analytics_screen.png "窗口分析窗口")
+   ![Analytics](assets/analytics_screen1.png "窗口分析窗口")
 3. 选择“创 **建** ”按钮。
 4. 填写详细信息（请参阅下面的内容），然后单击“ **连接**”。
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 “Adobe Analytics配置”窗口中的配置字段包括：
 
-![配置参](assets/properties_field.png "数配置参数")
+![配置参](assets/properties_field1.png "数配置参数")
 
 | 属性 | 描述 |
 |---|---|
