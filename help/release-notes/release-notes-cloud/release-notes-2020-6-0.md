@@ -2,17 +2,17 @@
 title: Adobe Experience Manager 云服务 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 translation-type: tm+mt
-source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1948'
+ht-degree: 98%
 
 ---
 
 
 # AEM 云服务 2020.6.0 发行说明 {#release-notes}
 
-以下部分概述了 Experience Manager 云服务 2020.6.0 的常规发行说明。
+本页概述了作为Cloud Service2020.6.0的Experience Manager的一般发行说明。
 
 ## 发布日期 {#release-date}
 
