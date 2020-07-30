@@ -2,9 +2,9 @@
 title: 与 Adobe Analytics 集成
 description: '与 Adobe Analytics 集成 '
 translation-type: tm+mt
-source-git-commit: e5e199c4a457935119e3a02b87ced72d2f2de6cf
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 4%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 4%
 将Adobe Analytics和AEM集成为Cloud Service，使您能够跟踪网页活动。 集成需要：
 
 * 使用触屏UI在AEM中创建Analytics配置作为Cloud Service。
-* 在Adobe Analytics启动中添加和配置Adobe [作为扩展](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 在Adobe Analytics启动中添加和配置Adobe [作为扩展]。(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 与AEM的先前版本相比，在AEM的Analytics配置中不作为Cloud Service提供框架支持。 现在，它通过Adobe启动来完成，该工具是检验具有Analytics功能的AEM站点（JS库）的实际工具。 在Adobe启动中，将创建一个属性，在该属性中可以配置Adobe Analytics扩展，并创建规则以将数据发送到Adobe Analytics。 Adobe启动已取代sitecatalyst提供的分析任务。
 
 >[!NOTE]
 >
->Adobe Experience Manager作为没有现有Analytics帐户的Cloud Service客户，可以请求访问Analytics基础包以进行Experience Cloud。  此Foundation Pack提供对Analytics的批量限制使用。
+>Adobe Experience Manager作为没有现有Analytics帐户的Cloud Service客户，可以请求访问Analytics基础包以进行Experience Cloud。 此Foundation Pack提供对Analytics的批量限制使用。
 
 ## 创建Analytics配置 {#analytics-configuration}
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 ### 配置参数 {#configuration-parameters}
 
-“Adobe Analytics配置”窗口中的配置字段如下所示：
+“Adobe Analytics配置”窗口中的配置字段包括：
 
 ![配置参](assets/properties_field.png "数配置参数")
 
@@ -52,7 +52,7 @@ ht-degree: 4%
 
 ## 通过使用Adobe启动将Adobe Analytics整合到AEM站点
 
-Adobe Analytics可以作为扩展添加到启动属性中。 可以定义规则以执行映射和向Adobe Analytics发出帖子。
+Adobe Analytics可以作为扩展添加到启动属性中。 可以定义规则以执行映射和向Adobe Analytics发出帖子：
 
 * 观 [看此视频](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) ，了解如何在Launch中为基本站点配置Analytics扩展。
 
@@ -60,7 +60,7 @@ Adobe Analytics可以作为扩展添加到启动属性中。 可以定义规则�
 
 >[!NOTE]
 >
->现有框架仍然有效，但无法在触屏UI中配置。 建议在启动中重新构建变量映射配置。
+>现有（旧版）框架仍然有效，但无法在触屏UI中配置。 建议在启动中重新构建变量映射配置。
 
 >[!NOTE]
 >
