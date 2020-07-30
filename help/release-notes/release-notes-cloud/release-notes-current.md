@@ -2,9 +2,9 @@
 title: 作为Cloud Service的2020.7.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.7.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '942'
 ht-degree: 6%
 
 ---
@@ -55,7 +55,8 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * 新PDF查看器 [组件简介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
 
-* 核心组件的加速移动页面(AMP)支持通过在从Google移动搜索结果进入网站时使页面过渡即时，从而帮助您提高客户体验，从而提高用户参与度和SEO。
+* 核心组件的加速移动页面(AMP)支持现已可用。 通过在从Google移动搜索结果进入网站时即时创建页面过渡，有助于提高用户参与度和SEO，从而提高客户体验。
+有关更 [多详细信息，请参阅](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) “AMP Support for the Core Components”。
 
 * 与Adobe客户端数据层1.0.2 [版的兼容性](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)。
 
@@ -110,7 +111,7 @@ Cloud Manager Version 2020  .7.0的发布日期为2020年7月9日。
 
 * [可为以Java代码编程的出站流量](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) （这对于某些集成可能非常有用）分配静态的专用出站IP地址。
 
-* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将AEM存储库中Analytics云服务的位置从移 `/etc` 动 `/conf`到移动，以与其他AEM cloud services保持一致。
+* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将Analytics云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
 
 * 已移植AEM目标云服务UI从经典UI到新的AEM UI。 还将目标云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
 
