@@ -2,9 +2,9 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产 [!DNL Adobe Experience Manager] 添加为Cloud Service。
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1324'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 [!DNL Adobe Experience Manager] 通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务，丰富已上传数字文件的二进制内容。 您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到 [!DNL Experience Manager Assets]。
 
-提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager库的其他方法，包括桌面客户端(如Adobe Asset Link或Experience Manager桌面应用程序)、上传和摄取客户将创建的脚本以及作为Experience Manager扩展添加的自动摄取集成。
+提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager库的其他方法，包括桌面客户端(如Adobe资产链接或Experience Manager桌面应用程序)、上传和摄取客户将创建的脚本以及作为Experience Manager扩展添加的自动摄取集成。
 
 我们将重点介绍此处为最终用户上传方法，并提供指向文章的链接，这些文章描述了使用Experience ManagerAPI和SDK进行资产上传和获取的技术方面。
 
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Experience Manager作为Cloud Service，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端都支持它，如Experience Manager用户界面、Adobe Asset Link、Experience Manager桌面应用程序，因此对最终用户透明。
+>Experience Manager作为Cloud Service，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端都支持它，如Experience Manager用户界面、Adobe资产链接、Experience Manager桌面应用程序，因此对最终用户是透明的。
 >
 >上传由技术团队需要使用新上传API和协议的客户自定义或扩展的代码。
 
@@ -63,7 +63,6 @@ ht-degree: 4%
 
    如果在上传文件之前取消上传操作，则停 [!DNL Assets] 止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
 
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,7 +72,6 @@ ht-degree: 4%
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
-
 
 1. 中的上传进度 [!DNL Assets] 对话框显示成功上传的文件和无法上传的文件计数。
 
@@ -112,7 +110,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >在名称冲 **[!UICONTROL 突]** 对话框 [!UICONTROL 中选择替] 换时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
 >
->如果启用资产分析以跟踪AdobeAnalytics的展示次数／点击次数，则重新生成的资产ID将使Analytics上为资产捕获的数据无效。
+>如果启用“资产分析”以通过Adobe Analytics跟踪展示次数／点击次数，则重新生成的资产ID将使Analytics上为资产捕获的数据无效。
 
 要在中保留重复资 [!DNL Assets]产，请单 **[!UICONTROL 击保留]**。 要删除您上传的重复资产，请点按／单击 **[!UICONTROL 删除]**。
 
@@ -142,7 +140,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 除了Web浏览器用户界面外，Experience Manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
 
-* [Adobe Asset](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) Link提供从Adobe Photoshop、Adobe [!DNL Experience Manager] Illustrator和Adobe InDesign桌面应用程序中访问资源的功能。 您可以从这些桌面应用程 [!DNL Experience Manager] 序内的Adobe Asset Link用户界面直接将当前打开的文档上传到中。
+* [Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) ，可从Adobe Photoshop、Adobe Illustrator [!DNL Experience Manager] 和Adobe InDesign桌面应用程序访问资产。 您可以从这些桌面应用程序内的 [!DNL Experience Manager] 文档资产链接用户界面直接将当前打开的Adobe上传到该界面。
 * [Experience Manager桌面应用](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 程序简化了在桌面上处理资源的工作，它们与文件类型无关，也与处理资源的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
 
 ## 附加处理 {#additional-processing}
@@ -154,7 +152,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 提供以下用户档案:
 
 * [元数据用户档案](metadata-profiles.md) 允许您将默认元数据属性应用到上传到该文件夹的资产
-* [处理用户档案](asset-microservices-configure-and-use.md#processing-profiles) 允许您应用再现处理，除默认的再现外，还可以生成再现
+* [处理用户档案](asset-microservices-configure-and-use.md) 允许您生成默认情况下可能的更多再现。
 
 此外，如果Dynamic Media在您的环境中处于启用状态：
 
@@ -175,6 +173,6 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >* [Adobe Experience Manager 桌面应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe Asset Link文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
+>* [Adobe资产链接文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 >* [资产上传的技术参考](developer-reference-material-apis.md#asset-upload-technical)
 
