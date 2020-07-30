@@ -2,7 +2,7 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 3%
@@ -27,9 +27,9 @@ AEM日志记录和日志级别在配置文件中进行管理，这些配置文�
 1. HTTP请求日志，它记录AEM提供的有关HTTP请求及其响应的信息
 1. HTTP访问日志，它记录AEM提供的信息和HTTP请求的摘要
 
-> [!NOTE]
-> 
-> 从发布层的Dispatcher缓存或上游CDN提供的HTTP请求不会反映在这些日志中。
+>[!NOTE]
+>
+>从发布层的Dispatcher缓存或上游CDN提供的HTTP请求不会反映在这些日志中。
 
 ## AEM Java日志记录 {#aem-java-logging}
 
@@ -595,9 +595,9 @@ Apache层日志（包括调度程序）位于保存Dispatcher的Docker容器中�
 
 应为每个相关项目/环境类型组合指定上述属性。  例如，如果客户需要开发、升级和生产环境，他们应提供三组信息，如下所示。
 
-> [!NOTE]
+>[!NOTE]
 >
-> 不支持沙箱项目环境的跳转转发。
+>不支持沙箱项目环境的跳转转发。
 
 您将在下面找到客户支持请求示例：
 
