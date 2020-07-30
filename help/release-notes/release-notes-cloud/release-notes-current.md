@@ -2,10 +2,10 @@
 title: 作为Cloud Service的2020.7.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.7.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 7%
+source-wordcount: '918'
+ht-degree: 6%
 
 ---
 
@@ -51,15 +51,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### 新增功能 {#what-is-new-core-components}
 
-[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)版本 2.11.0 现已作为 AEM Sites 的一部分提供，包括：
+Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* 新PDF查看器 [组件简介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+* 新PDF查看器 [组件简介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
 
-* [核心组件的加速移动页面(AMP)支持](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) ，通过在从Google移动搜索结果进入网站时即时创建页面过渡，有助于提高用户参与度和SEO，从而加快客户体验。
+* 核心组件的加速移动页面(AMP)支持通过在从Google移动搜索结果进入网站时使页面过渡即时，从而帮助您提高客户体验，从而提高用户参与度和SEO。
 
-* 与Adobe客户端数据层1.0.2 [版的兼容性](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* 与Adobe客户端数据层1.0.2 [版的兼容性](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)。
 
-* 错误修复和代码质量改进
+* 错误修复和代码质量改进。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -110,7 +110,7 @@ Cloud Manager Version 2020  .7.0的发布日期为2020年7月9日。
 
 * [可为以Java代码编程的出站流量](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) （这对于某些集成可能非常有用）分配静态的专用出站IP地址。
 
-* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将Analytics云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
+* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将AEM存储库中Analytics云服务的位置从移 `/etc` 动 `/conf`到移动，以与其他AEM cloud services保持一致。
 
 * 已移植AEM目标云服务UI从经典UI到新的AEM UI。 还将目标云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
 
