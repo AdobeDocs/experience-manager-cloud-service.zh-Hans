@@ -3,7 +3,7 @@ sub-product: 在 AEM 云服务中创作内容
 user-guide-title: 在 AEM 云服务中创作内容
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
@@ -73,5 +73,5 @@ ht-degree: 100%
       + [创建和管理选件](authoring/personalization/offers.md)
       + [了解分段](authoring/personalization/segmentation.md)
 + 与 AEM 云服务集成 {#integrations}
-   + [与 Adobe Analytics 集成](integrating/adobe-analytics.md)
-   + [与 Adobe Target 集成](integrating/adobe-target.md)
+   + [与 Adobe Analytics 集成](integrating/integrating-adobe-analytics.md)
+   + [与 Adobe Target 集成](integrating/integrating-adobe-target.md)
