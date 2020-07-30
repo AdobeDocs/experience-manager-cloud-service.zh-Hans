@@ -2,10 +2,10 @@
 title: 作为Cloud Service的2020.7.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.7.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
+source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 6%
+source-wordcount: '968'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * 新的用户界面实现取代了基于经典UI的实现。
 
-* 简化的用户界面对话框，将创建框架留给变量映射和其他配置 [!DNL Adobe Launch]。
+* 简化的用户界面对话框，将创建框架留给变量映射和其他配置 [!DNL Adobe Launch]。 请参 [阅集成Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和 [集成Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
 * 配置现在存储在Experience Manager `/conf` 存储库中 `/etc/cloudsettings` ，而不是存储在数据库中。
 
@@ -111,7 +111,7 @@ Cloud Manager Version 2020  .7.0的发布日期为2020年7月9日。
 
 * [可为以Java代码编程的出站流量](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) （这对于某些集成可能非常有用）分配静态的专用出站IP地址。
 
-* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将Analytics云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
+* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将AEM存储库中Analytics云服务的位置从移 `/etc` 动 `/conf`到移动，以与其他AEM cloud services保持一致。
 
 * 已移植AEM目标云服务UI从经典UI到新的AEM UI。 还将目标云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
 
