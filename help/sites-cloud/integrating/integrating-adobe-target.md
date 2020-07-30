@@ -2,7 +2,7 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -26,12 +26,12 @@ Adobe启动是管理AEM页面中Analytics和目标的客户端属性（JS库／�
 ## 创建Adobe Target配置 {#create-configuration}
 
 1. 导航到 **工具** → **Cloud Service**。
-   ![导](assets/cloudservice.png "航")
+   ![导](assets/cloudservice1.png "航")
 2. 选择 **Adobe Target**。
 3. 选择“创 **建** ”按钮。
-   ![创](assets/tenant.png "建")
+   ![创](assets/tenant1.png "建")
 4. 填写详细信息（请参阅下面的内容），然后选 **择Connect**。
-   ![ConnectConnect](assets/open_screen.png "")
+   ![ConnectConnect](assets/open_screen1.png "")
 
 ### IMS 配置
 
@@ -44,7 +44,7 @@ Adobe启动是管理AEM页面中Analytics和目标的客户端属性（JS库／�
 1. 选择现有配置，然后单击 **属性**。
 2. 编辑属性。
 3. 选 **择“重新连接到Adobe Target**”。
-   ![重新连](assets/edit_config_page.png "接重新连接")
+   ![重新连](assets/edit_config_page1.png "接重新连接")
 4. 选择&#x200B;**保存并关闭**。
 
 ### 向站点添加配置 {#add-configuration}
@@ -75,7 +75,7 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 2. 为您的属性提供名称。
 3. 在域中输入要加载启动库的IP/主机。
 4. 选择“保 **存** ”按钮。
-   ![LaunchpropertyLaunchproperty](assets/properties_newproperty.png "")
+   ![LaunchpropertyLaunchproperty](assets/properties_newproperty1.png "")
 
 ### 添加所需的扩展 {#add-extension}
 
@@ -83,10 +83,10 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 1. 选择“扩展目录”选项，并在筛选器中搜索目标。
 2. 选择 **Adobe Target** at.js，然后单击“安装”选项。
-   ![目标](assets/search_ext.png "搜索目标搜索")
+   ![目标](assets/search_ext1.png "搜索目标搜索")
 3. Select the **Configure** button. 请注意导入了目标帐户凭据的配置窗口以及此扩展的at.js版本。
 4. 选择 **保存** ，以将目标扩展添加到您的启动项属性。 您应该能够看到“已安装的扩展”目标扩展 **下列出的列表** 。
-   ![保存扩](assets/configure_extension.png "展保存扩展")
+   ![保存扩](assets/configure_extension1.png "展保存扩展")
 5. 重复上述步骤以搜索 **AdobeContextHub** extension并安装它（这是与contexthub参数集成时必需的，根据要完成的定位）。
 
 ### 创建数据元素 {#data-element}
@@ -97,16 +97,16 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 2. 选择 **添加数据元素**。
 3. 提供数据元素的名称并将其映射到Context Hub参数。
 4. select **Save**.
-   ![数据元](assets/data_elem.png "素数据元素")
+   ![数据元](assets/data_elem1.png "素数据元素")
 
 ### 创建页面规则 {#page-rule}
 
 在规 **则中** ，我们定义一系列将在现场执行的操作并对其进行排序，以实现定位。
 
 1. 添加一组操作，如屏幕截图所示。
-   ![操](assets/rules.png "作")
+   ![操](assets/rules1.png "作")
 2. 在“将参数添加到所有mbox”中，将之前配置的数据元素（请参阅上面的数据元素）添加到将在mbox调用中发送的参数。
-   ![MboxActions](assets/map_data.png "")
+   ![MboxActions](assets/map_data1.png "")
 
 ### 构建和发布 {#build-publish}
 
