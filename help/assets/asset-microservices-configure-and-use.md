@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2208'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 [!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹以完成附加处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
 
-* **演绎版宽度和高度**: 演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成最大可能的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
+* **演绎版宽度和高度**: 演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成尽可能大的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
 
 * **MIME类型包含规则**: 当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。 否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
 
@@ -92,7 +92,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
    * 质量（以每个JPEG再现的百分比表示）。
    * 包含和排除的MIME类型，用于定义用户档案的适用性。
 
-![处理用户档案-添加](assets/processing-profiles-adding.png)
+   ![处理用户档案-添加](assets/processing-profiles-adding.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -106,23 +106,22 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 ## 自定义用户档案和用例 {#custom-config}
 
-**待定项目**:
+<!-- **TBD items**:
 
-* 与可扩展性内容的整体交叉链接。
-* 提及如何获取工作人员的URL。 开发、舞台和产品环境的工作URL。
-* 提及服务参数的映射。 指向计算服务文章的链接。
-* 从Jira票证中共享的流透视进行审阅。
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
 由于组织的需求各不相同，因此无法使用默认配置完成某些复杂的资产处理用例。 Adobe [!DNL Asset Compute Service] 优惠。 它是一种可扩展的可扩展服务，用于处理数字资产。 它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
 
-开发人员可以使用资产计算服务来创建专门的自定义工作程序，它们适合预定义、复杂的用例。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下用例：
+开发人员可以使用资产计算服务来创建专门的自定义工作程序，它们适合预定义、复杂的用例。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
-* 使用Adobe Sensei为数字资产生成自定义增强的智能标签。
-* 使用Adobe Sensei生成主题的裁剪面具。
-* 从PIM系统检索产品元数据信息，并在获取资产期间将元数据部分用于资产的二进制。
-* 使用API更改透明图像的背景 [!DNL Adobe Photoshop] 颜色。
-* 使用API润饰 [!DNL Photoshop] 图像。
-* 使用API拉直 [!DNL Adobe Lightroom] 图像。
+* 调 [!DNL Adobe Photoshop] 用到图像剪切API并将结果另存为再现。
+* 调用第三方系统以更新数据，例如PIM系统。
+* 使用 [!DNL Photoshop] API根据Photoshop模板生成各种再现。
+* 使用 [!DNL Adobe Lightroom] API优化摄取的资产并将其另存为演绎版。
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 ## 最佳实践和限制 {#best-practices-limitations-tips}
 
 * 设计工作流时，请考虑您对所有类型再现的需求。 如果您不认为将来需要再现，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 长期使用后，不需要的再现可能占用大量存储空间 [!DNL Experience Manager]。 对于单个资产，您可以从用户界面手动删除演绎版。 对于多个资产，您可以自定 [!DNL Experience Manager] 义删除特定演绎版，也可以删除资产，然后再次上传这些资产。
+* 目前，支持仅限于生成再现。 不支持生成新资产。
