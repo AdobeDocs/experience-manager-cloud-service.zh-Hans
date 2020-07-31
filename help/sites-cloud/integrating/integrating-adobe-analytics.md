@@ -2,9 +2,9 @@
 title: 与 Adobe Analytics 集成
 description: '与 Adobe Analytics 集成 '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 将Adobe Analytics和AEM集成为Cloud Service，使您能够跟踪网页活动。 集成需要：
 
 * 使用触屏UI在AEM中创建Analytics配置作为Cloud Service。
-* 在Adobe Analytics启动中添加和配置Adobe [作为扩展]。(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 在Adobe Analytics启动中添加和配置Adobe [作为扩展](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 与AEM的先前版本相比，在AEM的Analytics配置中不作为Cloud Service提供框架支持。 现在，它通过Adobe启动来完成，该工具是检验具有Analytics功能的AEM站点（JS库）的实际工具。 在Adobe启动中，将创建一个属性，在该属性中可以配置Adobe Analytics扩展，并创建规则以将数据发送到Adobe Analytics。 Adobe启动已取代sitecatalyst提供的分析任务。
 
@@ -23,11 +23,11 @@ ht-degree: 4%
 >
 >Adobe Experience Manager作为没有现有Analytics帐户的Cloud Service客户，可以请求访问Analytics基础包以进行Experience Cloud。 此Foundation Pack提供对Analytics的批量限制使用。
 
-## 创建Analytics配置 {#analytics-configuration}
+## 创建Adobe Analytics配置 {#analytics-configuration}
 
 1. 导航到 **工具** → **Cloud Service**。
-2. 选择 **Adobe Analytics配置**。
-   ![Analytics](assets/analytics_screen1.png "窗口分析窗口")
+2. 选择 **Adobe Analytics**。
+   ![Adobe Analytics](assets/analytics_screen2.png "窗口AdobeAnalytics窗口")
 3. 选择“创 **建** ”按钮。
 4. 填写详细信息（请参阅下面的内容），然后单击“ **连接**”。
 
