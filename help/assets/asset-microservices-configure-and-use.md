@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
+source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2405'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 资产微型服务为使用云服务的资产提供可扩展且具有弹性的处理。 Adobe管理服务以优化处理不同的资产类型和处理选项。
 
-资产处理取决于处理用户档案 **[!UICONTROL 中的配置]**，该配置提供了默认设置，并允许管理员添加更具体的资产处理配置。 管理员可以创建和维护后处理工作流的配置，包括可选自定义。 自定义工作流允许可扩展性和完全自定义。
+资产处理取决于处理用户档案 **[!UICONTROL 中的配置]**，该配置提供了默认设置，并允许管理员添加更多特定的资产处理配置。 管理员可以创建和维护后处理工作流的配置，包括可选自定义。 自定义工作流允许可扩展性和完全自定义。
 
 Asset microservices允许您处 [理各种文件类型](/help/assets/file-format-support.md) ，这些类型的现成格式比先前版本的Experience Manager所能处理的格式更多。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。
 
@@ -44,17 +44,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Experience Manager允许以下级别的处理。
 
-| 配置 | 描述 | 涵盖的使用案例 |
+| 选项 | 描述 | 涵盖的使用案例 |
 |---|---|---|
-| [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | 用户界面使 [!DNL Assets] 用的标准缩略图（48、140和319 px）; 大预览（Web再现- 1280 px）; 元数据和文本提取。 |
-| [标准配置](#standard-config) | 仅由管理员通过用户界面进行配置。 提供的再现生成选项比上述默认配置更多。 | 更改图像的格式和分辨率； 生成FPO再现。 |
-| [自定义配置](#custom-config) | 由管理员通过用户界面进行配置，以调用支持更复杂要求的自定义Worker。 利用云本机 [!DNL Asset Compute Service]。 | 请参阅 [允许的使用案例](#custom-config)。 |
+| [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | <ul> <li>用户界面使 [!DNL Assets] 用的标准缩览图（48、140和319像素） </li> <li> 大预览（Web再现- 1280 px） </li><li> 元数据和文本提取。</li></ul> |
+| [自定义配置](#standard-config) | 由管理员通过用户界面进行配置。 通过扩展默认选项，为生成再现提供更多选项。 扩展开箱即用的工作程序，以提供不同的格式和再现。 | <ul><li>FPO再现。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于已配置的文件类型。 </li> </ul> |
+| [自定义用户档案](#custom-config) | 由管理员通过用户界面进行配置，以通过自定义Worker使用自定义代码来调用 [!DNL Asset Compute Service]。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
 
-要创建特定于您的自定义要求的自定义处理用户档案，例如与其他系统集成，请参 [阅后处理工作流](#post-processing-workflows)。
+<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+-->
 
 ## 支持的文件格式 {#supported-file-formats}
 
-Asset microservices在生成演绎版或提取元数据方面支持各种文件格式。 有关 [完整列表](file-format-support.md) ，请参阅支持的文件格式。
+资产微型服务支持各种文件格式，用于处理、生成演绎版或提取元数据。 请参 [阅支持的文件格式](file-format-support.md) ，了解MIME类型的完整列表以及每种类型支持的功能。
 
 ## 默认配置 {#default-config}
 
@@ -65,7 +66,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## 标准用户档案 {#standard-config}
+## 标准配置 {#standard-config}
 
 [!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹以完成附加处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
 
@@ -96,11 +97,14 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-以下视频演示了标准用户档案的有用性和用法。
+<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+
+The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+-->
 
-<!-- Removed per cqdoc-15624 request by engineering.
+<!-- This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -114,14 +118,20 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 * Review from flow perspective shared in Jira ticket.
 -->
 
-由于组织的需求各不相同，因此无法使用默认配置完成某些复杂的资产处理用例。 Adobe [!DNL Asset Compute Service] 优惠。 它是一种可扩展的可扩展服务，用于处理数字资产。 它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
+支 [!DNL Asset Compute Service] 持各种用例，如默认处理、处理特定于Adobe的格式(如Photoshop文件)以及实现自定义或组织特定处理。 过去需要的DAM更新资产工作流自定义，默认情况下处理，或通过UI上的处理用户档案配置进行处理。 如果此处理不能满足业务需求，Adobe建议开发和使用资产计算服务来扩展默认功能。
 
-开发人员可以使用资产计算服务来创建专门的自定义工作程序，它们适合预定义、复杂的用例。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
+>[!NOTE]
+>
+>Adobe建议仅在业务需要时使用自定义工作器，而不能使用默认配置或标准用户档案完成。
 
-* 调 [!DNL Adobe Photoshop] 用到图像剪切API并将结果另存为再现。
+它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
+
+开发人员可以使 [!DNL Asset Compute Service] 用它创建专门的自定义工作程序，以满足预定义的用例。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
+
+* 使用 [!DNL Adobe Photoshop]的ImageCutout [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，并将结果另存为再现。
 * 调用第三方系统以更新数据，例如PIM系统。
 * 使用 [!DNL Photoshop] API根据Photoshop模板生成各种再现。
-* 使用 [!DNL Adobe Lightroom] API优化摄取的资产并将其另存为演绎版。
+* 使用 [Adobe](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) LightroomAPI优化所摄取的资产并将其另存为演绎版。
 
 >[!NOTE]
 >
@@ -133,18 +143,30 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 1. 管理员可 **[!UICONTROL 以访问工具>资产>处理用户档案]**。 单击&#x200B;**[!UICONTROL 创建]**。
 1. Click on **[!UICONTROL Custom]** tab. 单击 **[!UICONTROL 添加新]**。 提供再现所需的文件名。
-1. 提供以下信息，然后单击“ **[!UICONTROL 保存]**”。
+1. 提供以下信息。
 
    * 每个再现的文件名和支持的文件扩展名。
    * Firefly自定义应用程序的端点URL。 应用程序必须与Experience Manager帐户来自同一组织。
-   * 根据需要添加服务参数。
+   * 添 [!UICONTROL 加服务参数] ，以向自定义工作器传递额外信息或参数。
    * 包含和排除的MIME类型，用于定义用户档案的适用性。
 
-![自定义处理用户档案](assets/custom-processing-profile.png)
+   单击&#x200B;**[!UICONTROL 保存]**。
 
 >[!CAUTION]
 >
 >如果Firefly应用程序 [!DNL Experience Manager] 和帐户不来自同一组织，则集成将不起作用。
+
+### 自定义用户档案的示例 {#custom-profile-example}
+
+为了说明自定义用户档案的用法，让我们考虑将一些自定义文本应用于活动图像的用例。 您可以创建利用PhotoshopAPI编辑图像的处理用户档案。
+
+资产计算服务集成允许Experience Manager使用服务参数字段将这些参数传递 [!UICONTROL 给自定义工] 作器。 然后，自定义工作者调用PhotoshopAPI并将这些值传递给API。 例如，您可以传递字体名称、文本颜色、文本权重和文本大小，将自定义文本添加到活动图像。
+
+![自定义处理用户档案](assets/custom-processing-profile.png)
+
+*图： 使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义工作器中的预定义参数。*
+
+当活动图像上传到应用此处理用户档案的文件夹时，图像会以字体文 `Jumanji` 本进行 `Arial-BoldMT` 更新。
 
 ## 使用处理用户档案处理资产 {#use-profiles}
 
@@ -152,7 +174,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 
 使用以下方法之一将处理用户档案应用到文件夹：
 
-* 管理员可以在工具>资产>处 **[!UICONTROL 理用户档案中选择处理用户档案定义]**，然后使 **[!UICONTROL 用将用户档案应用到文件夹操作]** 。 它会打开一个内容浏览器，允许您导航到特定文件夹，选择这些文件夹并确认该用户档案的应用程序。
+* 管理员可以在“工具”>“资 **[!UICONTROL 产”]** >“处理 **[!UICONTROL 用户档案”中选择处]** 理用户档案定义 **[!UICONTROL ，然后使]****** 用“将用户档案应用到文件夹”(Apply Adober to Folder,s)操作。 它会打开一个内容浏览器，允许您导航到特定文件夹，选择这些文件夹并确认该用户档案的应用程序。
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 要保存更改，请单击“保 **[!UICONTROL 存并关闭”]**。
 
 >[!NOTE]
@@ -165,7 +187,7 @@ Asset microservices在生成演绎版或提取元数据方面支持各种文件�
 >
 >应用于文件夹的处理用户档案适用于整个树，但可能与应用于子文件夹的其他用户档案重叠。 资产上传到文件夹后，Experience Manager会检查包含文件夹的属性以查找处理用户档案。 如果未应用任何文件夹，则会检查层次结构中的父文件夹以查找要应用的处理用户档案。
 
-用户可以通过打开处理已完成的新上传资产、打开资产预览并单击左边栏的演绎版视图，检查处理是否实际 **[!UICONTROL 进行]** 。 处理用户档案中的特定演绎版（其特定资产的类型与MIME类型包含规则匹配）应可见且可访问。
+所有生成的演绎版均可在左边 [!UICONTROL 栏的] “演绎版”视图中使用。 打开资产预览并打开左边栏以访问演绎 **[!UICONTROL 版]** 视图。 处理用户档案中的特定演绎版（其特定资产的类型与MIME类型包含规则匹配）应可见且可访问。
 
 ![其他演绎版](assets/renditions-additional-renditions.png)
 
