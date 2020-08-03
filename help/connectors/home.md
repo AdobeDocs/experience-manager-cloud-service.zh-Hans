@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务连接器
 description: Adobe Experience Manager 云服务连接器自助资源和文档链接
-translation-type: ht
-source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 96%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 100%
 | [迁移到 AEM 云服务](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager 云服务部署，包括开发和部署主题。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager 云服务的后端操作，如添加索引和维护任务。 |
+| [商务用户指南](/help/commerce-cloud/home.md) | 了解AEM作为Cloud Service的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
