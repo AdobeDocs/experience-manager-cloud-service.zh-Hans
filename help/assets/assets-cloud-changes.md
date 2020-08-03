@@ -2,22 +2,22 @@
 title: Adobe Experience Manager资产作为Cloud Service的显着变化
 description: 与Adobe Experience Manager6.5相比，AEMCloud Service中的Adobe Experience Manager资产发生了显着变化。
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60f11cd86ecfeb47a46f9809d8ae9f1c45a4a25f
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 10%
+ht-degree: 15%
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager作为Cloud Service，为管理AEM项目带来了许多新功能和可能性。 但是，与Experience Manager作为Cloud Service相比，内部部署或Adobe Managed Service中的Experience Manager资产有许多不同。 本文档强调了资产功能的重要差异。
+Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多新功能和可能性。 但是，与作为Experience Manager的Experience Manager相比，在内部部署或Adobe托管服务中，Cloud Service资产之间存在许多差异。 本文档强调了资产功能的重要差异。
 
 与Experience Manager6.5相比，主要区别在于：
 
 * [资产摄取和上传](#asset-ingestion)。
-* [用于云处理的资产微服务](#asset-microservices)。
+* [用于云本机处理的资产微服务](#asset-microservices)。
 * [删除了经典 UI](#classic-ui).
 
 >[!NOTE]
@@ -25,10 +25,10 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目带来了许多�
 >此文档突出了对AEM Assets的显着变化。 有关AEM作为Cloud Service和其他模块的常规更改，请参阅：
 >
 >* [Adobe Experience Manager 云服务简介](/help/overview/introduction.md)
->* 作 [为Cloud Service的AEM概述——新增功能和不同功能](/help/overview/what-is-new-and-different.md)
+>* [AEM 云服务概述 - 新增功能和改进功能](/help/overview/what-is-new-and-different.md)
 >* Adobe Experience Manager 云服务[架构](/help/core-concepts/architecture.md)
->* [对AEM作为Cloud Service的显着更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
->* [对 Sites 作为 AEM 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+>* [对 AEM 云服务的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
+>* [对 AEM Sites 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
 >* [Adobe Experience Manager 云服务教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 
 
