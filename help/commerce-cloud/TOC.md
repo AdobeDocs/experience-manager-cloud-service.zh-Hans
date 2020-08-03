@@ -1,0 +1,32 @@
+---
+sub-product: AEM商务作为Cloud Service
+user-guide-title: AEM商务作为Cloud Service
+user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
+translation-type: tm+mt
+source-git-commit: 8e7b2e2e0c5c23aa14bc4d302c417dcc27f70468
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 16%
+
+---
+
+
+# 商务 {#commerce}
+
++ [AEM商务作为Cloud Service](/help/commerce-cloud/home.md)
++ [简介](overview.md)
++ [显著更改](changes.md)
++ 架构 {#architecture}
+   + [Magento集成](architecture/magento.md)
+   + [第三方商务集成](architecture/third-party.md)
++ [入门](getting-started.md)
++ [使用AEMCloud Service SDK进行开发](develop.md)
++ 配置 {#configure}
+   + [多模板使用](configuring/multi-template-usage.md)
+   + [多商店设置](configuring/multi-store-setup.md)
+   + [为SEO配置URL](configuring/advanced-url-configuration.md)
+   + [缓存选项](configuring/caching.md)
++ 自定义 {#customize}
+   + [样式CIF组件](customizing/style-cif-component.md)
+   + [自定义CIF组件](customizing/customize-cif-components.md)
++ [常见问题解答](faq.md)
