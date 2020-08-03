@@ -2,10 +2,10 @@
 title: 作为Cloud Service的2020.7.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.7.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
+source-git-commit: 459843adff623395bcf7afb41f427d6ea0fb825c
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 38%
+source-wordcount: '985'
+ht-degree: 37%
 
 ---
 
@@ -28,7 +28,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * 简化的用户界面对话框，将创建框架留给变量映射和其他配置 [!DNL Adobe Launch]。 请参 [阅集成Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和 [集成Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
-* 配置现在存储在 `/conf` Experience Manager `/etc/cloudsettings` 存储库中，而不是存储。
+* 配置现在存储在Experience Manager `/conf` 存储库中 `/etc/cloudsettings` ，而不是存储在数据库中。
 
 ## Adobe Experience Manager Assets 云服务 {#assets}
 
@@ -43,6 +43,12 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * 与Cloud Service部署不兼容的工作流步骤现在在工作流模型编辑器中标 [!UICONTROL 有警告] 。 此外，在Cloud Service环境上执行现有工作流时，将跳过不兼容的工作流步骤。
 
 * 由部署到与云管理器中的环境关 `/conf/global` 联的Git项目中的关联的客户创建的工作流模型将自动部署到Experience Manager, `/var` 因此可在中使用。 客户更改的 `/libs` 产品工作流模型不会自动部署到 `/var`。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新增功能 {#what-is-new-commerce}
+
+* AEM Commerce现在在Cloud Service上可用。 有关详细信息，请参阅 [入门](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)。
 
 ## 核心组件 {#core-components}
 
