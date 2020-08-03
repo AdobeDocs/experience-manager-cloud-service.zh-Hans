@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -189,4 +189,4 @@ AEM 云服务 SDK API Jar（以前在该位置托管）现在位于 Maven Centra
 * 下载资产时，如果选择了电子邮件选项，即使提供了有效的电子邮件 ID，下载选项也不可用。(CQ-4296535)
 * 另存为智能收藏集的自定义筛选器无法正确应用于资产。(CQ-4294942)
 * 多项搜索和索引增强功能与错误修复使性能得以提高。(CQ-4286373)
-* 文件夹属性显示500个内部服务器错误。 (CQ-4295701)
+* 文件夹属性显示错误代码为 500 的内部服务器错误。(CQ-4295701)
