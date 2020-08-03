@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) 云服务的发行说明。
 description: 'Adobe Experience Manager (AEM) 云服务的发行说明。 '
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 73%
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -30,21 +30,22 @@ ht-degree: 73%
 
 | 用户指南 | 描述 |
 |---|---|
-| [Experience Manager 云服务主页](/help/landing/home.md) | 有关Experience Manager的概述，请在此处开始。 |
+| [Experience Manager 云服务主页](/help/landing/home.md) | 有关 Experience Manager 云服务文档的概述，请单击此处开始。 |
 | [概述](/help/overview/home.md) | 本指南提供了 Experience Manager 云服务的概述，包括简介、术语等。 |
 | [核心概念](/help/core-concepts/home.md) | 本指南简要介绍 Experience Manager 云服务核心概念，包括新服务的架构。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager 云服务的重要安全主题。 |
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。 |
-| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何以Experience Manager为Cloud Service创作和管理站点。 |
-| [Assets 用户指南](/help/assets/home.md) | 了解如何将Experience Manager资产用作Cloud Service并加以管理。 |
+| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites 云服务进行创作，以及如何管理 Experience Manager Sites 云服务。 |
+| [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets 云服务。 |
 | [迁移到 AEM 云服务](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
-| [实施用户指南](/help/implementing/home.md) | 了解如何将Experience Manager自定义为Cloud Service部署，包括开发和部署主题。 |
-| [连接器用户指南](/help/connectors/home.md) | 了解如何将Connectors作为Experience Manager集成到Cloud Service中。 |
-| [操作用户指南](/help/operations/home.md) | 了解Experience Manager作为Cloud Service的后端操作，如索引和维护任务。 |
+| [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager 云服务部署，包括开发和部署主题。 |
+| [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager 云服务中。 |
+| [操作用户指南](/help/operations/home.md) | 了解 Experience Manager 云服务的后端操作，如添加索引和维护任务。 |
+| [商务用户指南](/help/commerce-cloud/home.md) | 了解AEM作为Cloud Service的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
-* [近期文档更新](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [近期文档更新](https://helpx.adobe.com/cn/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
