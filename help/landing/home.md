@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager 云服务用户指南
 description: Adobe Experience Manager 云服务自助资源和文档链接
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 92%
 
 ---
 
@@ -25,10 +25,12 @@ ht-degree: 100%
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites 云服务进行创作，以及如何管理 Experience Manager Sites 云服务。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets 云服务。 |
+| [商务用户指南](/help/commerce-cloud/home.md) | 了解如何将Experience Manager商务用作Cloud Service。 |
 | [迁移到 AEM 云服务](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager 云服务部署，包括开发和部署主题。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager 云服务中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager 云服务的后端操作，如添加索引和维护任务。 |
+| [商务用户指南](/help/commerce-cloud/home.md) | 了解AEM作为Cloud Service的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
