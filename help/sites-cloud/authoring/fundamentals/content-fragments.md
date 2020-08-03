@@ -1,11 +1,11 @@
 ---
 title: 内容片段
 description: Adobe Experience Manager 云服务内容片段允许您设计、创建、策划和使用独立于页面的内容
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 >[!NOTE]
 >
->另请参 [阅核心组件、内容片段组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+>另请参阅[核心组件和内容片段组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)
 
 在相应的配置对话框中，您可以选择可用的参数，包括：
 
@@ -136,7 +136,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 >
 >您还可以[在片段本身中插入可视资产（图像）](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
 >
->在片段本身中插入的可视资产会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。如果需要此级别的连接，可以将图像添加到片段(作 [为混合媒体片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))。
+>在片段本身中插入的可视资产会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。如果需要达到此关联程度，可以将图像添加到片段（形成[混合媒体片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)）。
 
 >[!CAUTION]
 >
@@ -153,7 +153,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您有与[内容片段关联的](/help/assets/content-fragments/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+如果您有与[内容片段](/help/assets/content-fragments/content-fragments.md)[关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Adobe Experience Manager (AEM) 云服务中的内容片段是[作为独立于页
 
 ### 插入到片段中的资产 {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+如果已在片段本身中插入资产（形成](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)混合媒体片段[），则页面编辑器中用于编辑这些资产的选项会受到限制。
 
 例如，您可以对图像执行以下操作
 
