@@ -1,11 +1,11 @@
 ---
-sub-product: Adobe Experience Manager即云服务帮助
-user-guide-title: Adobe Experience Manager即云服务帮助
+sub-product: Adobe Experience Manager 云服务帮助
+user-guide-title: Adobe Experience Manager 云服务帮助
 translation-type: tm+mt
-source-git-commit: 2d6c91dac4fec04cb5f1a6d050f0464bc724a09b
+source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 83%
+source-wordcount: '200'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 83%
 + [AEM 云服务入门](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/onboarding/home.html)
 + [AEM Sites 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/sites/home.html)
 + [AEM Assets 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/assets/home.html)
-+ [以云服务的形式移到AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html)
++ [AEM商务作为Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
++ [迁移到 AEM 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/moving/home.html)
 + [实施 AEM 云服务的应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/home.html)
 + [实施 AEM 云服务的连接器 ](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/connectors/home.html)
 + [AEM 云服务的操作和维护](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/operations/home.html)
