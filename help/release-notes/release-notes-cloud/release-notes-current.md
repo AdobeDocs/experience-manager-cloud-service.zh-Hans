@@ -2,9 +2,9 @@
 title: 作为Cloud Service的2020.7.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.7.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: 459843adff623395bcf7afb41f427d6ea0fb825c
+source-git-commit: d0d51efbc9a904a5958e15544cff18fad9a20bfb
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '992'
 ht-degree: 37%
 
 ---
@@ -43,12 +43,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * 与Cloud Service部署不兼容的工作流步骤现在在工作流模型编辑器中标 [!UICONTROL 有警告] 。 此外，在Cloud Service环境上执行现有工作流时，将跳过不兼容的工作流步骤。
 
 * 由部署到与云管理器中的环境关 `/conf/global` 联的Git项目中的关联的客户创建的工作流模型将自动部署到Experience Manager, `/var` 因此可在中使用。 客户更改的 `/libs` 产品工作流模型不会自动部署到 `/var`。
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### 新增功能 {#what-is-new-commerce}
-
-* AEM Commerce现在在Cloud Service上可用。 有关详细信息，请参阅 [入门](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)。
 
 ## 核心组件 {#core-components}
 
@@ -106,7 +100,6 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * 由于代码覆盖率的计算方式发生了变化，Jacoco 插件的&#x200B;*最低*&#x200B;版本现在为 0.7.5.201505241946（于 2015 年 5 月发行）。明确引用旧版本的客户在代码质量过程中会收到错误消息。
 
-
 ## Adobe Experience Manager作为Cloud Service基础 {#cloud-foundation}
 
 ### 新增功能 {#what-is-new-foundations}
@@ -115,9 +108,17 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * [可为以Java代码编程的出站流量](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) （这对于某些集成可能非常有用）分配静态的专用出站IP地址。
 
-* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将Analytics云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
+* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将AEM存储库中Analytics云服务的位置从移 `/etc` 动 `/conf`到移动，以与其他AEM cloud services保持一致。
 
 * 已移植AEM目标云服务UI从经典UI到新的AEM UI。 还将目标云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新增功能 {#what-is-new-commerce}
+
+* AEM Commerce现在在Cloud Service上可用。
+
+   有关更 [多详细信息，请参阅AEM Commerce入门](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) (Cloud Service)。
 
 ## 云就绪分析器 {#cloud-readiness-analyzer}
 
