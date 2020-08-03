@@ -2,10 +2,10 @@
 title: 作为Cloud Service的2020.7.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.7.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
+source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 5%
+source-wordcount: '952'
+ht-degree: 38%
 
 ---
 
@@ -28,12 +28,9 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * 简化的用户界面对话框，将创建框架留给变量映射和其他配置 [!DNL Adobe Launch]。 请参 [阅集成Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和 [集成Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
-* 配置现在存储在Experience Manager `/conf` 存储库中 `/etc/cloudsettings` ，而不是存储在数据库中。
+* 配置现在存储在 `/conf` Experience Manager `/etc/cloudsettings` 存储库中，而不是存储。
 
 ## Adobe Experience Manager Assets 云服务 {#assets}
-
->[!NOTE]
->AEM Assets作为Cloud Service功能将在未来几天内推出。
 
 ### 新增功能 {#what-is-new-assets}
 
@@ -66,41 +63,42 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 ### 发布日期 {#release-date-cm}
 
-Cloud Manager Version 2020  .7.0的发布日期为2020年7月9日。
+[!UICONTROL Cloud Manager] 版本 2020.7.0 的发行日期为 2020 年 7 月 9 日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
-* 环境页面已重新设计。
+* “环境”页面已重新设计。
 
-* 冬眠环境在冬眠后，现在在Cloud Manager中显示离散状态。
+* 现在，进入休眠状态的环境在 Cloud Manager 中会显示离散状态。
 
-* 每个环境的环境变量数已增加到200个。
+* 每个环境的环境变量数量已增加至 200 个。
 
-* Cloud Manager管道现在支持客户集变量和秘密。
+* Cloud Manager 管道现在支持由客户设置的变量和密钥。
 
-   有关更多 [详细信息](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) ，请参阅管道变量。
+
+   有关更多详细信息，请参阅[管道变量](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)。
 
 ### 错误修复 {#bug-fixes-cm}
 
-* 在完全创建环境之前，从云管理器到开发人员控制台的链接未正确激活。
+* 在完全环境创建之前，从 Cloud Manager 到开发人员控制台的链接错误地处于活动状态。
 
-* 直接从云管理器链接到开发人员控制台时，未显示用于将沙箱项目的环境解除休眠／休眠的选项。
+* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒项目的环境解除休眠/休眠的选项。
 
-* “非 **生** 产管道 **** ”编辑页面上的“取消”和“保存”选项并不总是可见。
+* 非生产管道编辑页面上的&#x200B;**取消**&#x200B;和&#x200B;**保存**&#x200B;选项并非一直可见。
 
-* 代码质量过程中的某些失败可能导致日志文件无法正确生成。
+* 代码质量控制过程中出现的某些问题可能会导致日志文件无法正确生成。
 
-* 创建新项目时，建议的名称有时会返回现有项目名称的重复。
+* 创建新项目时，建议的名称有时会返回与现有项目名称重复的名称。
 
-* 无法通过用户界面一致地下载某些大型管道步骤日志。
+* 无法始终通过用户界面下载一些大型管道步骤日志文件。
 
-* 验证环境名称时出现非按一错误。
+* 验证环境名称时出现差一错误。
 
-* 环境页有时会显示发布和调度程序段（当不存在时）。
+* “环境”页有时会显示不存在的 Publish 和 Dispatcher 段。
 
 ### 已知问题 {#known-issues}
 
-* 由于代码覆盖率的计算方式发生 *更改* ,Jacoco插件的最低版本现在为0.7.5.201505241946（发布于2015年5月）。 明确引用旧版本的客户在代码质量过程中会收到错误消息。
+* 由于代码覆盖率的计算方式发生了变化，Jacoco 插件的&#x200B;*最低*&#x200B;版本现在为 0.7.5.201505241946（于 2015 年 5 月发行）。明确引用旧版本的客户在代码质量过程中会收到错误消息。
 
 
 ## Adobe Experience Manager作为Cloud Service基础 {#cloud-foundation}
@@ -111,22 +109,22 @@ Cloud Manager Version 2020  .7.0的发布日期为2020年7月9日。
 
 * [可为以Java代码编程的出站流量](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) （这对于某些集成可能非常有用）分配静态的专用出站IP地址。
 
-* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将AEM存储库中Analytics云服务的位置从移 `/etc` 动 `/conf`到移动，以与其他AEM cloud services保持一致。
+* 已移植AEMAnalytics云服务UI从经典UI到新的AEM UI。 还将Analytics云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
 
 * 已移植AEM目标云服务UI从经典UI到新的AEM UI。 还将目标云服务在AEM存储库中的位置从移 `/etc` 动到 `/conf`其他AEM cloud services，以与其他保持一致。
 
 ## 云就绪分析器 {#cloud-readiness-analyzer}
 
-可查看本节以了解新增功能以及Cloud Readiness Analyzer Release 1.0.2版的更新。
+请阅读本章内容，了解 Cloud Readiness Analyzer v1.0.2 版的新增功能和更新。
 
 ### 错误修复 {#cra-bug-fixes}
 
-* 无法在Adobe Experience Manager(AEM)6.1上运行CRA的早期版本。添加了允许管理员组中用户的明确支持。
+* 无法在 Adobe Experience Manager (AEM) 6.1 上运行早期版本的云就绪分析器 (CRA)。明确向管理员组中的用户增加了允许他们运行 CRA 的相关支持。
 
-   有关详 [细信息，请参阅在AEM 6.1上安装](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) CRA。
+   有关更多详细信息，请参阅[在 AEM 6.1 上安装 CRA](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
 
-* 摘要报告上显示的过期时间戳不正确。
+* 摘要报告上显示的到期时间戳不正确。
 
-* CRA正在检测重复的定制组件。
+* CRA 检测到重复的自定义组件。
 
-* 在AEM 6.1上，内容检查在完成完整检查之前已退出。 添加了异常处理，以允许检查员跳过并继续，直到完成完整检查。
+* 在 AEM 6.1 上，内容检查在完成全部检查之前退出。添加了异常处理功能，以允许检查员跳过并继续，直到完成全部检查。
