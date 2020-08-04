@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Experience Manager允许以下级别的处理。
 |---|---|---|
 | [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | <ul> <li>用户界面使 [!DNL Assets] 用的标准缩览图（48、140和319像素） </li> <li> 大预览（Web再现- 1280 px） </li><li> 元数据和文本提取。</li></ul> |
 | [自定义配置](#standard-config) | 由管理员通过用户界面进行配置。 通过扩展默认选项，为生成再现提供更多选项。 扩展开箱即用的工作程序，以提供不同的格式和再现。 | <ul><li>FPO再现。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于已配置的文件类型。 </li> </ul> |
-| [自定义用户档案](#custom-config) | 由管理员通过用户界面进行配置，以通过自定义Worker使用自定义代码来调用 [!DNL Asset Compute Service]。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
+| [自定义用户档案](#custom-config) | 由管理员通过用户界面进行配置，以通过自定义工作程序使用自定义代码来调 [用资产计算服务](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -70,7 +70,7 @@ Experience Manager允许以下级别的处理。
 
 [!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹以完成附加处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
 
-* **演绎版宽度和高度**: 演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成尽可能大的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
+* **演绎版宽度和高度**: 演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成最大可能的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
 
 * **MIME类型包含规则**: 当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。 否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
 
@@ -118,7 +118,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-支 [!DNL Asset Compute Service] 持各种用例，如默认处理、处理特定于Adobe的格式(如Photoshop文件)以及实现自定义或组织特定处理。 过去需要的DAM更新资产工作流自定义，默认情况下处理，或通过UI上的处理用户档案配置进行处理。 如果此处理不能满足业务需求，Adobe建议开发和使用资产计算服务来扩展默认功能。
+支 [!DNL Asset Compute Service] 持各种用例，如默认处理、处理特定于Adobe的格式(如Photoshop文件)以及实现自定义或组织特定处理。 过去需要的DAM更新资产工作流自定义可以自动处理，也可以通过处理用户档案配置。 如果这些处理选项不能满足业务需求，Adobe建议开发和使用 [!DNL Asset Compute Service] 扩展默认功能。 有关概述，请参 [阅了解可扩展性以及何时使用](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
 
-开发人员可以使 [!DNL Asset Compute Service] 用它创建专门的自定义工作程序，以满足预定义的用例。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
+开发人员可以使用 [!DNL Asset Compute Service] 创 [建符合受支持用例](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 的自定义Worker。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
 * 使用 [!DNL Adobe Photoshop]的ImageCutout [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，并将结果另存为再现。
 * 调用第三方系统以更新数据，例如PIM系统。
@@ -238,3 +238,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 * 设计工作流时，请考虑您对所有类型再现的需求。 如果您不认为将来需要再现，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 长期使用后，不需要的再现可能占用大量存储空间 [!DNL Experience Manager]。 对于单个资产，您可以从用户界面手动删除演绎版。 对于多个资产，您可以自定 [!DNL Experience Manager] 义删除特定演绎版，也可以删除资产，然后再次上传这些资产。
 * 目前，支持仅限于生成再现。 不支持生成新资产。
+
+>[!MORELIKETHIS]
+>
+>* [资产计算服务简介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
+>* [了解可扩展性以及何时使用它](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
+>* [如何创建自定义Worker](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)。
+
