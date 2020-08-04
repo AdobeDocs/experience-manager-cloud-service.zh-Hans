@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
@@ -146,8 +146,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 提供以下信息。
 
    * 每个再现的文件名和支持的文件扩展名。
-   * Firefly自定义应用程序的端点URL。 应用程序必须与Experience Manager帐户来自同一组织。
-   * 添 [!UICONTROL 加服务参数] ，以向自定义工作器传递额外信息或参数。
+   * [Firefly自定义应用程序的端点URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)。 应用程序必须与Experience Manager帐户来自同一组织。
+   * 添加服务参数 [以向自定义工作器传递额外信息或参数](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)。
    * 包含和排除的MIME类型，用于定义用户档案的适用性。
 
    单击&#x200B;**[!UICONTROL 保存]**。
