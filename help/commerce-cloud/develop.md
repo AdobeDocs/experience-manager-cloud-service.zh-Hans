@@ -2,7 +2,7 @@
 title: 开发AEM Commerce for AEM作为Cloud Service
 description: 开发AEM Commerce for AEM作为Cloud Service
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 10%
@@ -67,13 +67,13 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
 
    ```bash
    export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    示例Windows:
 
    ```bash
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    此变量也必须设置为AEM的Cloud Service环境。
 
