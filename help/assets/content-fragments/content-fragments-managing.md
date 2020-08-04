@@ -2,7 +2,7 @@
 title: 管理内容片段
 description: 内容片段存储为资产，因此主要通过资产控制台进行管理。
 translation-type: tm+mt
-source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
+source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -104,7 +104,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->其中许多是 [Assets和／或AEM桌面应](/help/assets/manage-digital-assets.md) 用程序 [的标准操作](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。
+>其中许多是 [资产和／或AEM桌面](/help/assets/manage-digital-assets.md) 应用程序 [的标准操作](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -133,8 +133,6 @@ ht-degree: 11%
    >1. 当内容页面上已引用片段时，将显示一条消息。
       >
       >
-      >
-
    2. 使用“切换侧面板”图标可隐藏/ **显示侧面** 板。
 
 
@@ -185,9 +183,9 @@ ht-degree: 11%
 
    将退出编辑器，而不保存最新更改。
 
-在编辑内容片段时，AEM会自动创建版本，以确保在取消更改时可以恢复以 **前的** 内容：
+编辑内容片段时，AEM会自动创建版本，以确保在取消更改时可以恢复以 **前的** 内容：
 
-1. 当打开内容片段以进行编辑时，AEM会检查是否存在基于cookie的令牌，该令牌指示编辑会 *话是否存* 在：
+1. 打开内容片段以编辑AEM时，会检查是否存在基于cookie的令牌，该令牌指示编辑会 *话是否存* 在：
 
    1. 如果找到令牌，则片段被视为现有编辑会话的一部分。
    2. 如果令牌不可 *用* ，且用户开始编辑内容，则会创建一个版本，并将此新编辑会话的令牌发送到客户端，在客户端将其保存在cookie中。
@@ -210,7 +208,7 @@ ht-degree: 11%
 
 ## 在片段中创建和管理变量 {#creating-and-managing-variations-within-your-fragment}
 
-创建主内容后，即可创建和管理该内容 [的](/help/assets/content-fragments/content-fragments-variations.md) 变体。
+创建主控内容后，即可创建和管理该内 [容](/help/assets/content-fragments/content-fragments-variations.md) 的变体。
 
 ## 将内容与片段关联 {#associating-content-with-your-fragment}
 
@@ -304,7 +302,7 @@ ht-degree: 11%
 * 当您发 [布使用片段的页面时](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 片段将列在页面引用中。
 
 >[!CAUTION]
-在发布和／或引用片段后，当作者打开片段以再次进行编辑时，AEM将显示警告。 这将警告对片段所做的更改也会影响引用的页面。
+在发布和／或引用片段后，当作者打开片段以再次进行编辑时，AEM将显示一条警告消息。 这将警告对片段所做的更改也会影响引用的页面。
 
 ## 删除片段 {#deleting-a-fragment}
 
