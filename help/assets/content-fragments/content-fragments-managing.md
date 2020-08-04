@@ -2,7 +2,7 @@
 title: 管理内容片段
 description: 内容片段存储为资产，因此主要通过资产控制台进行管理。
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -131,9 +131,7 @@ ht-degree: 11%
    >[!NOTE]
    >
    >1. 当内容页面上已引用片段时，将显示一条消息。
-      >
-      >
-   2. 使用“切换侧面板”图标可隐藏/ **显示侧面** 板。
+   >2. 使用“切换侧面板”图标可隐藏/ **显示侧面** 板。
 
 
 3. 使用侧面板中的图标在三种模式之间导航：
