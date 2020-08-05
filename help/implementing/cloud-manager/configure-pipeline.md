@@ -1,21 +1,21 @@
 ---
-title: 配置CI/CD管道——云服务
-description: 配置CI/CD管道——云服务
+title: 配置CI/CD管道-Cloud Services
+description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 3%
+source-wordcount: '578'
+ht-degree: 1%
 
 ---
 
 
-# 配置CI-CD管道 {#configure-ci-cd-pipeline}
+# 配置 CI-CD 管道 {#configure-ci-cd-pipeline}
 
 
 ## 了解流 {#understanding-the-flow}
 
-您可以在Cloud Manager UI中通过“管 **线设置** ”拼贴配 [!UICONTROL 置管道] 。
+You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 部署管理器负责设置管道。 执行此操作时，您首先从Git存储库中选 **择分支**。
 
