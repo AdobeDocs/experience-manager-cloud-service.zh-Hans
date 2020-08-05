@@ -2,7 +2,7 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -12,12 +12,12 @@ ht-degree: 2%
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为Adobe Marketing Cloud的一部分，Adobe Target允许您通过在所有渠道中进行定位和衡量来提高内容相关性。 将Adobe Target和AEM集成为Cloud Service需要：
+作为Adobe Marketing Cloud的一部分，Adobe Target允许您通过在所有渠道中定位和衡量来提高内容相关性。 将Adobe Target和AEM作为Cloud Service整合需要：
 
-* 使用触屏UI在AEM中创建Analytics配置作为Cloud Service（需要IMS配置）。
-* 在Adobe Target启动中添加和配置Adobe [为扩展](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 使用触屏UI在AEM中创建目标配置作为Cloud Service（需要IMS配置）。
+* 在Adobe Target启动中添加和配置Adobe [作为扩展](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
-Adobe启动是管理AEM页面中Analytics和目标的客户端属性（JS库／标记）所必需的。 尽管如此，“体验定位”需要与Launch集成。 对于导出到目标的体验片段，您只需要Adobe Target配置和IMS。
+Adobe启动是管理AEM页面中分析和目标的客户端属性（JS库／标记）所必需的。 尽管如此，“体验定位”需要与Launch集成。 对于导出到目标的体验片段，您只需要Adobe Target配置和IMS。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Adobe启动是管理AEM页面中Analytics和目标的客户端属性（JS库／�
 
 ## 创建Adobe Target配置 {#create-configuration}
 
-1. 导航到 **工具** → **Cloud Service**。
+1. 导航到 **工具** → **Cloud Services**。
    ![导](assets/cloudservice1.png "航")
 2. 选择 **Adobe Target**。
 3. 选择“创 **建** ”按钮。
@@ -51,9 +51,9 @@ Adobe启动是管理AEM页面中Analytics和目标的客户端属性（JS库／�
 
 要将触屏UI配置应用到站点，请转至： **站点** 选择任何站点页 **→属** 性 **→高级** →配置 **→****** →选择配置租户。
 
-## 使用Adobe Target启动在AEM站点上集成Adobe {#integrate-target-launch}
+## 通过使用Adobe启动将Adobe Target整合到AEM站点 {#integrate-target-launch}
 
-AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Target扩展添加到Experience Platform Launch，您可以使用AEM网页上Adobe Target的功能。目标库将仅使用启动来呈现。
+AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Target扩展添加到Experience Platform Launch，您可以在AEM网页上使用Adobe Target的功能。目标库将仅使用Launch呈现。
 
 >[!NOTE]
 >
@@ -79,10 +79,10 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 ### 添加所需的扩展 {#add-extension}
 
-**扩展** 是管理核心库设置的容器。 Adobe Target扩展通过使用目标JavaScript SDK用于现代Web,at.js，支持客户端实现。 您需要添加 **Adobe Target****和AdobeContextHub** 扩展。
+**扩展** 是管理核心库设置的容器。 Adobe Target扩展通过使用用于现代Web的目标JavaScript SDK,at.js支持客户端实现。 您需要添加 **Adobe Target** 和 **Adobe** ContextHub扩展。
 
 1. 选择“扩展目录”选项，并在筛选器中搜索目标。
-2. 选择 **Adobe Target** at.js，然后单击“安装”选项。
+2. 选 **择** Adobe Targetat.js并单击“安装”选项。
    ![目标](assets/search_ext1.png "搜索目标搜索")
 3. Select the **Configure** button. 请注意导入了目标帐户凭据的配置窗口以及此扩展的at.js版本。
 4. 选择 **保存** ，以将目标扩展添加到您的启动项属性。 您应该能够看到“已安装的扩展”目标扩展 **下列出的列表** 。
