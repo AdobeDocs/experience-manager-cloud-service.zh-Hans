@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 2%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 2%
 
 # 内容搜索与索引 {#indexing}
 
-## AEM中作为Cloud Service的更改 {#changes-in-aem-as-a-cloud-service}
+## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-以AEM为Cloud Service,Adobe正从以AEM实例为中心的模型转变为基于服务的视图，其中n-x AEM容器由云管理器中的CI/CD管道驱动。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果不指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
+以AEM为Cloud Service,Adobe正在从以AEM实例为中心的模型转变为基于服务的视图，其中n-x AEM容器由云管理器中的CI/CD管道驱动。 必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 生产中的配置更改明显违反了CI/CD策略。 索引更改也是如此，因为如果不指定测试并重新编制索引，则可能会影响系统稳定性和性能，然后再将其投入生产。
 
-以下是与AEM 6.5及更早版本相比的主要更改的列表:
+以下是与AEM 6.5及更早版本相比的主要更改列表:
 
 1. 用户将无权访问单个AEM实例的索引管理器来调试、配置或维护索引。 它仅用于本地开发和预先部署。
 
@@ -32,11 +32,11 @@ ht-degree: 2%
 
 1. 索引配置通过部署进行更改。 索引定义更改的配置方式与其他内容更改类似。
 
-1. 在AEM作为Cloud Service的高层，引入蓝绿 [部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引： 一个用于旧版本（蓝色），另一个用于新版本（绿色）。
+1. 在AEM作为Cloud Service的高度上，引入“蓝绿 [”部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引： 一个用于旧版本（蓝色），另一个用于新版本（绿色）。
 
 1. 客户可以在Cloud Manager构建页面上查看索引编制作业是否完成，并在新版本准备就绪后收到通知。
 
-1. 限制： 目前，仅lucene类型的索引支持将AEM作为Cloud Service进行索引管理。
+1. 限制： 目前，AEM asCloud Service上的索引管理仅支持lucene类型的索引。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -105,7 +105,7 @@ AS NOTE: the above is internal for now.
 * **/content**
 * */libs（只读）*
 * **/oak:index**
-* **/oak:index/acme**
+* **/oak:index/acme。**
 * **/jcr:system**
 * **/system**
 * **/var**
@@ -130,8 +130,8 @@ AS NOTE: the above is internal for now.
 |---|---|---|---|
 | /oak:index/damAssetLucene | 是 | 是 | 否 |
 | /oak:index/damAssetLucene-custom-1 | 是（自定义） | 否 | 是 |
-| /oak:index/acmeProduct-custom-1 | 否 | 是 | 否 |
-| /oak:index/acmeProduct-custom-2 | 否 | 否 | 是 |
+| /oak:index/acme.product-custom-1 | 否 | 是 | 否 |
+| /oak:index/acme.product-custom-2 | 否 | 否 | 是 |
 | /oak:index/cqPageLucene | 是 | 是 | 是 |
 
 每次更改索引时版本号都会递增。 为避免自定义索引名称与产品本身的索引名称发生冲突，自定义索引以及对开箱即用索引的更改需要以结尾 `-custom-<number>`。
@@ -153,26 +153,26 @@ AS NOTE: the above is internal for now.
 
 ### 删除索引 {#removing-an-index}
 
-如果要在应用程序的更高版本中删除索引，您可以定义一个空索引（一个没有要索引的数据的索引），并使用一个新名称。 例如，您可以为其命名 `/oak:index/acmeProduct-custom-3`。 这将替换索引 `/oak:index/acmeProduct-custom-2`。 系 `/oak:index/acmeProduct-custom-2` 统删除后，也可以删除 `/oak:index/acmeProduct-custom-3` 空索引。
+如果要在应用程序的更高版本中删除索引，您可以定义一个空索引（一个没有要索引的数据的索引），并使用一个新名称。 例如，您可以为其命名 `/oak:index/acme.product-custom-3`。 这将替换索引 `/oak:index/acme.product-custom-2`。 系 `/oak:index/acme.product-custom-2` 统删除后，也可以删除 `/oak:index/acme.product-custom-3` 空索引。
 
 ### 添加索引 {#adding-an-index}
 
-要添加名为“/oak:index/acmeProduct-custom-1”的索引以用于应用程序的新版本和更高版本，需要按照以下方式配置该索引：
+要添加名为“/oak:index/acme.product-custom-1”的索引以用于应用程序的新版本和更高版本，需要按照以下方式配置该索引：
 
-`*mk.*assetLuceneIndex-1-custom-1`
+`acme.product-1-custom-1`
 
-这通过在索引名称前预定自定义标识符，后跟点(**)。**). 标识符长度必须介于1到4个字符之间。
+这通过在索引名称前预定自定义标识符(后跟点(**`.`**))。 标识符长度应介于2到5个字符之间。
 
 如上所述，这确保索引只被新版本的应用程序使用。
 
 ### 更改索引 {#changing-an-index}
 
-更改现有索引时，需要使用更改的索引定义添加新索引。 例如，考虑现有索引“/oak:index/acmeProduct-custom-1”已更改。 旧索引存储在 `/oak:index/acmeProduct-custom-1`下，新索引存储在下 `/oak:index/acmeProduct-custom-2`。
+更改现有索引时，需要使用更改的索引定义添加新索引。 例如，考虑现有索引“/oak:index/acme.product-custom-1”已更改。 旧索引存储在 `/oak:index/acme.product-custom-1`下，新索引存储在下 `/oak:index/acme.product-custom-2`。
 
 应用程序的旧版本使用以下配置：
 
-`/oak:index/acmeProduct-custom-1`
+`/oak:index/acme.product-custom-1`
 
 新版本的应用程序使用以下（已更改）配置：
 
-`/oak:index/acmeProduct-custom-2`
+`/oak:index/acme.product-custom-2`
