@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 # 使用资产微服务和处理用户档案 {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Experience Manager允许以下级别的处理。
 | 选项 | 描述 | 涵盖的使用案例 |
 |---|---|---|
 | [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | <ul> <li>用户界面使 [!DNL Assets] 用的标准缩览图（48、140和319像素） </li> <li> 大预览（Web再现- 1280 px） </li><li> 元数据和文本提取。</li></ul> |
-| [自定义配置](#standard-config) | 由管理员通过用户界面进行配置。 通过扩展默认选项，为生成再现提供更多选项。 扩展开箱即用的工作程序，以提供不同的格式和再现。 | <ul><li>FPO再现。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于已配置的文件类型。 </li> </ul> |
-| [自定义用户档案](#custom-config) | 由管理员通过用户界面进行配置，以通过自定义工作程序使用自定义代码来调 [用资产计算服务](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
+| [自定义配置](#standard-config) | 由管理员通过用户界面进行配置。 通过扩展默认选项，为生成再现提供更多选项。 扩展现成选项，以提供不同的格式和再现。 | <ul><li>FPO再现。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于已配置的文件类型。 </li> </ul> |
+| [自定义用户档案](#custom-config) | 管理员通过用户界面配置为通过自定义应用程序使用自定义代码来调 [用资产计算服务](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->Adobe建议仅在业务需要时使用自定义工作器，而不能使用默认配置或标准用户档案完成。
+>Adobe建议仅在无法使用默认配置或标准用户档案完成业务需求时使用自定义应用程序。
 
 它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
 
-开发人员可以使用 [!DNL Asset Compute Service] 创 [建符合受支持用例](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 的自定义Worker。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义Worker。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
+开发人员可以使用 [!DNL Asset Compute Service] 创建 [符合受支持用例](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 的自定义应用程序。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义应用程序。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
 * 使用 [!DNL Adobe Photoshop]的ImageCutout [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，并将结果另存为再现。
 * 调用第三方系统以更新数据，例如PIM系统。
@@ -135,22 +135,24 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->不能使用自定义Worker编辑标准元数据。 您只能修改自定义元数据。
+>无法使用自定义应用程序编辑标准元数据。 您只能修改自定义元数据。
 
 ### 创建自定义用户档案 {#create-custom-profile}
 
 要创建自定义用户档案，请执行以下步骤：
 
 1. 管理员可 **[!UICONTROL 以访问工具>资产>处理用户档案]**。 单击&#x200B;**[!UICONTROL 创建]**。
-1. Click on **[!UICONTROL Custom]** tab. 单击 **[!UICONTROL 添加新]**。 提供再现所需的文件名。
+1. 单击“ **[!UICONTROL 自定义]** ”选项卡。 单击 **[!UICONTROL 添加新]**。 提供再现所需的文件名。
 1. 提供以下信息。
 
    * 每个再现的文件名和支持的文件扩展名。
-   * [Firefly自定义应用程序的端点URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)。 应用程序必须与Experience Manager帐户来自同一组织。
-   * 添加服务参数 [以向自定义工作器传递额外信息或参数](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)。
+   * [Firefly自定义应用程序的端点URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 应用程序必须与Experience Manager帐户来自同一组织。
+   * 添加服务参数， [将额外信息或参数传递到自定义应用程序](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
    * 包含和排除的MIME类型，用于定义用户档案的适用性。
 
    单击&#x200B;**[!UICONTROL 保存]**。
+
+如果自定义应用程序设置了处理用户档案，则它们将获取所有提供的文件。 应用程序必须过滤文件。
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 为了说明自定义用户档案的用法，让我们考虑将一些自定义文本应用于活动图像的用例。 您可以创建利用PhotoshopAPI编辑图像的处理用户档案。
 
-资产计算服务集成允许Experience Manager使用服务参数字段将这些参数传递 [!UICONTROL 给自定义工] 作器。 然后，自定义工作者调用PhotoshopAPI并将这些值传递给API。 例如，您可以传递字体名称、文本颜色、文本权重和文本大小，将自定义文本添加到活动图像。
+资产计算服务集成允许Experience Manager使用服务参数字段将这些参数传递到自 [!UICONTROL 定义应用] 。 然后，自定义应用程序调用PhotoshopAPI并将这些值传递给API。 例如，您可以传递字体名称、文本颜色、文本权重和文本大小，将自定义文本添加到活动图像。
 
 ![自定义处理用户档案](assets/custom-processing-profile.png)
 
-*图： 使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义工作器中的预定义参数。*
+*图： 使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义应用程序中的预定义参数。*
 
 当活动图像上传到应用此处理用户档案的文件夹时，图像会以字体文 `Jumanji` 本进行 `Arial-BoldMT` 更新。
 
@@ -243,5 +245,5 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >* [资产计算服务简介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
 >* [了解可扩展性以及何时使用它](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
->* [如何创建自定义Worker](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)。
+>* [如何创建自定义应用程序](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
 
