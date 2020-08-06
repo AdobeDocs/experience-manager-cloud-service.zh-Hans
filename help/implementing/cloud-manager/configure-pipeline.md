@@ -2,20 +2,28 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 2%
 
 ---
 
 
 # 配置 CI-CD 管道 {#configure-ci-cd-pipeline}
 
+在Cloud Manager中，有两种类型的管道：
+
+* **生产管道**:
+只有创建生产和阶段环境后，才能添加生产管道。 有关更 [多详细信息，请参阅](configure-pipeline.md#setting-up-the-pipeline) “设置管道”(Setting up the Pipeline)部分。
+
+* **非生产管道**:
+
+   非生产管道可从云管理器的 **用户** 界面的概述页面添加。 有关详 [细信息，请参阅非生产和代码质量专用管道](configure-pipeline.md#non-production-pipelines) 。
 
 ## 了解流 {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+您可以在Cloud Manager UI中通过“管 **线设置** ”拼贴配 [!UICONTROL 置管道] 。
 
 部署管理器负责设置管道。 执行此操作时，您首先从Git存储库中选 **择分支**。
 
@@ -69,16 +77,27 @@ You can configure your production pipeline from the **Pipeline Settings** tile i
    * **立即继续** -如果选中此项，则在出现重要故障时管道将自动继续。 这实际上是模拟用户手动批准每个失败。
 
 
-1. 单击 **下一** 步以访问“ **测试** ”选项卡，为项目定义测试条件。
+1. 生产管道设置包括第三个标签为“内容审 **核”的选项卡**。
 
-   ![](assets/set-up-pipeline4.png)
+   此选项提供应始终包含在内容审核中的URL路径的表。 用户可以手动输入要包括的URL路径。 最多可包含25行。 如果用户在此部分中未提交任何页面，则默认情况下，网站的主页将包括在内容审核中。
 
-1. 单击&#x200B;**保存**。“概 *述* ”页现在显 **示“部署项目** ”卡。 单击 **“部署** ”按钮以部署项目。
+   >[!NOTE]
+   > 已配置的页面将提交到服务并根据性能、辅助功能、SEO（搜索引擎优化）、最佳实践和PWA（渐进式Web应用程序）测试进行评估。
+
+   有关更多 [详细信息，请参阅](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) “了解内容审核结果”。
+
+   ![](assets/content-audit-1.png)
+
+   单击“ **添加新页面覆盖** ”以提供要包含在内容审核中的URL路径。 添加路径后，单击“保 **存”**。
+
+   ![](assets/content-audit-2.png)
+
+1. 从“编 **辑管道** ”屏 **幕中单击“** 保存”。 “概 **述** ”页现在显 **示“部署项目** ”卡。 单击 **“部署** ”按钮以部署项目。
 
    ![](assets/configure-pipeline5.png)
 
 
-## 仅限非生产和代码质量的管道
+## 仅限非生产和代码质量的管道 {#non-production-pipelines}
 
 除了部署到舞台和生产的主要管道外，客户还能够建立额外的管道，称 **为非生产管道**。 这些管线始终执行构建和代码质量步骤。 它们还可以选择部署到Adobe Managed Services环境。
 
