@@ -2,10 +2,10 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 2%
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
@@ -16,33 +16,29 @@ ht-degree: 2%
 
 * **生产管道**:
 
-   只有创建生产和阶段环境后，才能添加生产管道。
+   只有创建生产和阶段环境集后，才能添加生产管道。
 
-   有关更 [多详细信息，请参阅](configure-pipeline.md#setting-up-the-pipeline) “设置管道”。
+   有关更多 [详细信息，请参阅](configure-pipeline.md#setting-up-the-pipeline) “设置生产管道”。
 
-* **非生产管道**:
+* **非生产渠道**:
 
    非生产管道可从云管理器的 **用户** 界面的概述页面添加。
 
    有关详 [细信息，请参阅非生产和代码质量专用管道](configure-pipeline.md#non-production-pipelines) 。
 
-## 了解流 {#understanding-the-flow}
+>[!NOTE]
+>要配置管道，您必须：
+> * 定义将开始管线的触发器。
+> * 定义控制生产部署的参数。
+> * 配置性能测试参数。
 
-您可以在Cloud Manager UI中通过“管 **线设置** ”拼贴配 [!UICONTROL 置管道] 。
 
-部署管理器负责设置管道。 执行此操作时，您首先从Git存储库中选 **择分支**。
+## 设置生产管道 {#setting-up-production-pipeline}
 
-要配置管道，用户必须：
+部署管理器负责设置生产管道。
 
-* 定义将开始管线的触发器。
-* 定义控制生产部署的参数。
-* 配置性能测试参数。
-
-## 设置管道 {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->在一个项目创建完成且Git存储库至少有一个分支之前，无法设置管道。
+>[!NOTE]
+>在项目创建完成、Git存储库至少具有一个分支并且创建了生产和阶段环境集之前，无法设置生产管道。
 
 在开始部署代码之前，您必须从云管理器配置渠 [!UICONTROL 道设置]。
 
