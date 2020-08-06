@@ -1,10 +1,10 @@
 ---
-title: 了解测试结果——云服务
-description: 了解测试结果——云服务
+title: 了解测试结果-Cloud Services
+description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1486'
 ht-degree: 3%
 
 ---
@@ -12,17 +12,19 @@ ht-degree: 3%
 
 # 了解测试结果 {#understand-test-results}
 
-Cloud Manager for Cloud Services管道执行将支持执行针对舞台环境运行的测试。 这与在构建和单元测试步骤中运行的测试相反，这些测试在脱机状态下运行，无法访问任何正在运行的AEM环境。
+云服务的 Cloud Manager 管道执行将支持执行针对暂存环境运行的测试。这与在构建和单元测试步骤中运行的测试相反，这些测试在脱机状态下运行，无法访问任何正在运行的AEM环境。
 在此上下文中运行测试有两种类型：
 * 客户编写的测试
 * Adobe编写的测试
+* 由Google的Lighthouse支持的开放源代码工具
 
-这两种测试都在为运行这些测试而设计的容器化基础架构中运行。
+   >[!NOTE]
+   > 客户编写的测试和Adobe编写的测试都在为运行这些类型的测试而设计的容器化基础架构中运行。
 
 
 ## 代码质量测试 {#code-quality-testing}
 
-作为管道的一部分，将扫描源代码，以确保部署符合特定质量标准。 目前，这是通过SonarQube和使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则组合了通用Java规则和特定于AEM的规则。 下表总结了测试标准的等级：
+作为管道的一部分，将扫描源代码，以确保部署符合特定质量标准。 目前，这是通过SonarQube和使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则结合了通用Java规则和AEM特定规则。 下表总结了测试标准的等级：
 
 | 名称 | 定义 | 类别 | 失败阈值 |
 |--- |--- |--- |--- |
@@ -33,7 +35,7 @@ Cloud Manager for Cloud Services管道执行将支持执行针对舞台环境运
 | 跳过的单元测试 | 跳过的单元测试数。 | 信息 | > 1 |
 | 未解决问题 | 总体问题类型——漏洞、错误和代码气味 | 信息 | > 0 |
 | 复制行 | 重复块中涉及的行数。 <br/>对于要视为重复的代码块： <br/><ul><li>**非Java项目：**</li><li>至少应有100个连续令牌和重复令牌。</li><li>这些令牌至少应在以下位置传播： </li><li>COBOL的30行代码 </li><li>ABAP的20行代码 </li><li>10行代码，适用于其他语言</li><li>**Java项目：**</li><li> 无论令牌和行的数量如何，都至少应有10个连续和重复的语句。</li></ul> <br/>在检测重复时，会忽略缩进和字符串文本中的差异。 | 信息 | > 1% |
-| 云服务兼容性 | 已识别的云服务兼容性问题数。 | 信息 | > 0 |
+| Cloud Service兼容性 | 已识别的Cloud Service兼容性问题数。 | 信息 | > 0 |
 
 
 >[!NOTE]
@@ -50,9 +52,9 @@ Cloud Manager for Cloud Services管道执行将支持执行针对舞台环境运
 
 质量扫描过程并不完美，有时会错误地识别实际上没有问题的问题。 这称为“假阳性”。
 
-在这些情况下，可以使用标准Java注释对源代码进 `@SuppressWarnings` 行注释，该标准Java注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
+在这些情况下，可以使用标准Java注释对源代 `@SuppressWarnings` 码进行注释，该注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
 
-要查看特定示例，此代码在AEM项目中很常见，该项目中包含连接到某些外部服务的代码：
+要查看特定示例，此代码在AEM项目中很常见，该项目具有连接到某些外部服务的代码：
 
 ```java
 @Property(label = "Service Password")
@@ -82,7 +84,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## 编写功能测试 {#writing-functional-tests}
 
-客户编写的功能测试必须打包为由与要部署到AEM的对象相同的Maven版本生成的单独JAR文件。 通常，这将是一个单独的Maven模块。 生成的JAR文件必须包含所有必需的依赖关系，并且通常使用maven-assembly-plugin使用jar-with-dependencies描述符创建。
+必须将客户编写的功能测试打包为由与要部署到AEM的对象相同的Maven版本生成的单独JAR文件。 通常，这将是一个单独的Maven模块。 生成的JAR文件必须包含所有必需的依赖关系，并且通常使用maven-assembly-plugin使用jar-with-dependencies描述符创建。
 
 此外，JAR必须将Cloud-Manager-TestType清单头设置为integration-test。 将来，预计会支持其他标题值。 maven-assembly-plugin的示例配置是：
 
@@ -130,7 +132,52 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 但是，如果生成未生成测试JAR，则默认情况下测试通过。 此步骤在阶段部署后立即完成。
 
 >[!NOTE]
->“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾部日志功能访问这些日志。 有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/manage-logs.md) “访问和管理日志”。
+>“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/manage-logs.md) “访问和管理日志”。
+
+## 内容审核测试 {#content-audit-testing}
+
+内容审核是Cloud Manager Sites Production管道中的一项功能，该管道由Google的开放源代码工具Lighthouse提供支持。 此功能在所有Cloud Manager Production管道中都启用。
+
+它可验证部署过程并有助于确保部署了更改：
+
+1. 满足性能、辅助功能、最佳实践、SEO（搜索引擎优化）和PWA（渐进式Web应用程序）的基准标准。
+
+1. 不要在这些维度中包含回归。
+
+Cloud Manager中的内容审核可确保站点上的最终用户数字体验保持为最高标准。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
+
+### 了解内容审核结果 {#understanding-content-audit-results}
+
+内容审核通过“生产管道”执行页面提供聚合和详细的页面级测试结果。
+
+* 聚合级别指标衡量已审核页面的平均得分。
+* 还可以通过向下展开来获取各个页面级别的分数。
+* 可以详细查看各个测试的结果，以及如何修正在内容审核过程中确定的任何问题的指导。
+* 测试结果的历史记录将保留在Cloud Manager中，这样客户就可以查看在管道运行中引入的更改是否包含先前运行的任何回归。
+
+#### 聚合分数 {#aggregate-scores}
+
+每种测试类型(性能、辅助功能、SEO、最佳实践和聚合)都有PWA级别得分。
+
+聚合级别得分取得运行中包含的页面的平均得分。 聚合级别的更改表示当前运行中页面的平均分数与上次运行的平均分数相比，即使配置为包含的页面集合在两次运行之间发生更改也是如此。
+
+“更改”量度的值可以是以下值之一：
+
+* **正值** -自上次生产管道运行以来，在所选测试中页面已得到改进
+
+* **负值** -自上次生产管道运行以来，页面在所选测试上出现倒退
+
+* **无更改** -自上次运行生产管道以来，页面的得分相同
+
+* **N/A** —— 没有可供比较的先前得分
+
+   ![](assets/content-audit-test1.png)
+
+#### 页面级别得分 {#page-level-scores}
+
+通过钻取任何测试，可以查看更详细的页面级别评分。 用户将能够查看特定测试的各个页面的得分情况以及与上次运行测试时的更改情况。
+单击任何单个页面的“详细信息”将提供有关已评估页面元素的信息，并指导您在检测到改进机会时修复问题。 测试的细节和相关指导由Google Lighthouse提供。
+![](assets/page-level-scores.png)
 
 ## 本地测试执行 {#local-test-execution}
 
@@ -149,3 +196,4 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
