@@ -4,8 +4,8 @@ description: '[!DNLAdobe Experience Manager]作为2020.8.0的Cloud Service发行
 translation-type: tm+mt
 source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '370'
+ht-degree: 6%
 
 ---
 
