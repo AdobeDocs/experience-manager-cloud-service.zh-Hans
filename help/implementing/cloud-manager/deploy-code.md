@@ -2,9 +2,9 @@
 title: 部署代码-Cloud Services
 description: 部署代码-Cloud Services
 translation-type: tm+mt
-source-git-commit: ebab226b7d45994cc00c1abe42d84dab47391f5d
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '994'
 ht-degree: 3%
 
 ---
@@ -50,8 +50,14 @@ ht-degree: 3%
       ![](assets/stage-deployment.png)
    舞 **台测试**，涉及以下步骤：
 
-   * 产品功能测试： Cloud Manager管道执行将支持执行针对舞台环境运行的测试。 有关 [测试过程的详细信息](/help/implementing/developing/introduction/understand-test-results.md) ，请参阅了解测试结果。
-   * 自定义功能测试： 管道中的此步骤始终存在，无法跳过。 但是，如果生成未生成测试JAR，则默认情况下测试通过。 有关 [测试过程的详细信息](/help/implementing/developing/introduction/understand-test-results.md) ，请参阅了解测试结果。
+   * 产品功能测试： Cloud Manager管道执行将支持执行针对舞台环境运行的测试。
+有关测试 [过程的详细信息](/help/implementing/developing/introduction/understand-test-results.md) ，请参阅了解测试结果。
+
+   * 自定义功能测试： 管道中的此步骤始终存在，无法跳过。 但是，如果生成未生成测试JAR，则默认情况下测试通过。\
+      有关测试 [过程的详细信息](/help/implementing/developing/introduction/understand-test-results.md) ，请参阅了解测试结果。
+
+   * 内容审核： 管道中的此步骤始终存在，无法跳过。 在执行生产管道时，在将运行检查的自定义功能测试之后包括内容审核步骤。 配置的页面将提交到服务并进行评估。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
+有关更多 [详细信息，请参阅](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) “了解内容审核结果”。
 
       ![](assets/stage-testing.png)
 
