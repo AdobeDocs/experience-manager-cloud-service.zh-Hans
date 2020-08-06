@@ -2,7 +2,7 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -15,11 +15,15 @@ ht-degree: 2%
 在Cloud Manager中，有两种类型的管道：
 
 * **生产管道**:
-只有创建生产和阶段环境后，才能添加生产管道。 有关更 [多详细信息，请参阅](configure-pipeline.md#setting-up-the-pipeline) “设置管道”(Setting up the Pipeline)部分。
+只有创建生产和阶段环境后，才能添加生产管道。
+
+   有关更 [多详细信息，请参阅](configure-pipeline.md#setting-up-the-pipeline) “设置管道”(Setting up the Pipeline)部分。
 
 * **非生产管道**:
 
-   非生产管道可从云管理器的 **用户** 界面的概述页面添加。 有关详 [细信息，请参阅非生产和代码质量专用管道](configure-pipeline.md#non-production-pipelines) 。
+   非生产管道可从云管理器的 **用户** 界面的概述页面添加。
+
+   有关详 [细信息，请参阅非生产和代码质量专用管道](configure-pipeline.md#non-production-pipelines) 。
 
 ## 了解流 {#understanding-the-flow}
 
@@ -90,7 +94,7 @@ ht-degree: 2%
 
    单击“ **添加新页面覆盖** ”以提供要包含在内容审核中的URL路径。 添加路径后，单击“保 **存”**。
 
-   ![](assets/content-audit-2.png)
+   ![](assets/content-audit2.png)
 
 1. 从“编 **辑管道** ”屏 **幕中单击“** 保存”。 “概 **述** ”页现在显 **示“部署项目** ”卡。 单击 **“部署** ”按钮以部署项目。
 
