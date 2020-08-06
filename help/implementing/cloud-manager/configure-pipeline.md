@@ -2,7 +2,7 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -57,11 +57,11 @@ ht-degree: 2%
 
 1. 将显 **示“设置管道** ”屏幕。 Select the branch and click **Next**.
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. 配置部署选项。
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    可以定义触发器以开始管线：
 
