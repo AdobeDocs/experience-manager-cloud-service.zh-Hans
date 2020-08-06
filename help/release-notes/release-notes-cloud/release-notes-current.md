@@ -2,7 +2,7 @@
 title: 作为Cloud Service的2020.8.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.8.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 6%
@@ -28,7 +28,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 现在，资产项目中新创建的环境将自动配置智能内容服务。
 
-* 休眠环境可以从云管理器概述页面中解除休眠。
+* 冬眠环境可以从云管理器的概述页面 **解除** 。
 
 * 现在支持身份验证绑定的私有Maven存储库。
 
@@ -52,7 +52,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 概述页面上的颜色不匹配。
 
-### 已知问题 {#known-issues}
+### 已知问题 {#known-issues-cm}
 
 * 包含无效页面，使内容审核平均分数低于应有分数。
 
