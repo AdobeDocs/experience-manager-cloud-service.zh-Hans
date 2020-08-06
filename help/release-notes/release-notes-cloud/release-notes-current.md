@@ -2,7 +2,7 @@
 title: 作为Cloud Service的2020.8.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.8.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: b4a0cbd29991f8c418ab7b3305f5e9e99e62cc4a
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 6%
