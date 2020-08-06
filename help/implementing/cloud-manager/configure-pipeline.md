@@ -2,9 +2,9 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -15,9 +15,10 @@ ht-degree: 2%
 在Cloud Manager中，有两种类型的管道：
 
 * **生产管道**:
-只有创建生产和阶段环境后，才能添加生产管道。
 
-   有关更 [多详细信息，请参阅](configure-pipeline.md#setting-up-the-pipeline) “设置管道”(Setting up the Pipeline)部分。
+   只有创建生产和阶段环境后，才能添加生产管道。
+
+   有关更 [多详细信息，请参阅](configure-pipeline.md#setting-up-the-pipeline) “设置管道”。
 
 * **非生产管道**:
 
@@ -83,6 +84,8 @@ ht-degree: 2%
 
 1. 生产管道设置包括第三个标签为“内容审 **核”的选项卡**。
 
+   ![](assets/content-audit-1.png)
+
    此选项提供应始终包含在内容审核中的URL路径的表。 用户可以手动输入要包括的URL路径。 最多可包含25行。 如果用户在此部分中未提交任何页面，则默认情况下，网站的主页将包括在内容审核中。
 
    >[!NOTE]
@@ -90,9 +93,10 @@ ht-degree: 2%
 
    有关更多 [详细信息，请参阅](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) “了解内容审核结果”。
 
-   ![](assets/content-audit-1.png)
-
    单击“ **添加新页面覆盖** ”以提供要包含在内容审核中的URL路径。 添加路径后，单击“保 **存”**。
+
+   >[!NOTE]
+   >要激活“内容审核”步骤，用户必须编辑管道，（可选）添加页面。 有关更多 [详细信息](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) ，请参阅“已知问题”。
 
    ![](assets/content-audit2.png)
 
