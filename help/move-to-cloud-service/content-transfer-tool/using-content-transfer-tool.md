@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
+source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 97%
+source-wordcount: '1640'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 * 内容传输工具的最低系统要求为 AEM 6.3 + 和 JAVA 8。如果您使用的是较低版本的 AEM，则需要将内容存储库升级到 AEM 6.5，才能使用内容传输工具。
 
-* 内容传输工具可用于以下类型的数据存储： 文件数据存储、S3数据存储和共享的S3数据存储。 它当前不支持Azure Blob Store Data Store。
+* 内容传输工具可用于以下类型的数据存储：文件数据存储、S3数据存储和共享的S3数据存储。 它当前不支持Azure Blob Store Data Store。
 
 * 如果您使用的是“沙盒环境”**，请确保将您的环境升级到 2020 年 6 月 10 日版本或更高版本。如果您使用的是“生产环境”**，则会自动更新。
 
@@ -32,7 +32,7 @@ ht-degree: 97%
 
 ## 可用性 {#availability}
 
-可以从软件分发门户以 zip 文件的形式下载内容传输工具（内容传输工具 v1.0.0）。您可以通过源 Adobe Experience Manager (AEM) 实例上的包管理器安装该包。
+内容传输工具可从软件分发门户下载为zip文件。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。确保下载最新版本。 有关最新版本的更多详细信息，请参 [阅发行说明](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
 
 >[!NOTE]
 >从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载内容传输工具。
