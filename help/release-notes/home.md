@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) 云服务的发行说明。
 description: 'Adobe Experience Manager (AEM) 云服务的发行说明。 '
 translation-type: tm+mt
-source-git-commit: 4c5e49e1bba5b936958a7bb4edb493b5e06902c5
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 96%
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager 文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager 文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 就绪](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager 云服务教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
