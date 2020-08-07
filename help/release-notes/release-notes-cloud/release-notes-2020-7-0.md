@@ -2,7 +2,7 @@
 title: 作为Cloud Service的2020.7.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.7.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -43,6 +43,14 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * 与Cloud Service部署不兼容的工作流步骤现在在工作流模型编辑器中标 [!UICONTROL 有警告] 。 此外，在Cloud Service环境上执行现有工作流时，将跳过不兼容的工作流步骤。
 
 * 由部署到与云管理器中的环境关 `/conf/global` 联的Git项目中的关联的客户创建的工作流模型将自动部署到Experience Manager, `/var` 因此可在中使用。 客户更改的 `/libs` 产品工作流模型不会自动部署到 `/var`。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新增功能 {#what-is-new-commerce}
+
+AEM Commerce现在在Cloud Service上可用。
+
+有关更 [多详细信息，请参阅AEM Commerce入门](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) (Cloud Service)。
 
 ## 核心组件 {#core-components}
 
@@ -111,14 +119,6 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 * 将AEM Analytics云服务UI从经典UI移植到新的AEM UI。 还将AEM存储库中Analytics云服务的位置从移动 `/etc` 到 `/conf`，以与其他AEM云服务保持一致。
 
 * 已移植AEM目标云服务UI从经典UI到新的AEM UI。 还将目标云服务在AEM存储库中的位置 `/etc` 从移 `/conf`动到其他AEM云服务的位置。
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### 新增功能 {#what-is-new-commerce}
-
-AEM Commerce现在在Cloud Service上可用。
-
-有关更 [多详细信息，请参阅AEM Commerce入门](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) (Cloud Service)。
 
 ## 云就绪分析器 {#cloud-readiness-analyzer}
 
