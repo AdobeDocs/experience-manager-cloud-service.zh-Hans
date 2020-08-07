@@ -2,9 +2,9 @@
 title: 作为Cloud Service的2020.8.0版本 [!DNL Adobe Experience Manager] 的发行说明。
 description: '[!DNLAdobe Experience Manager]作为2020.8.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '438'
 ht-degree: 6%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 6%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 以下部分概述了 Experience Manager 云服务 2020.8.0 的常规发行说明。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新增功能 {#what-is-new-commerce}
+
+* 产品控制台功能现已可用。 这使AEM中的营销人员／作者能够视图和浏览存储在商务后端中的类别和产品。 还提供了产品控制台中目录和产品属性支持。
+
+* 产品和类别选择器经过改进，可让营销人员通过SKU选择产品或通过类别ID选择类别。
 
 ## Cloud Manager {#cloud-manager}
 
