@@ -2,10 +2,10 @@
 title: 实施 Adobe Experience Manager 云服务
 description: Adobe Experience Manager 云服务实施自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 96%
+source-wordcount: '414'
+ht-degree: 94%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 96%
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager 文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager 文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 就绪](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager 云服务教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
