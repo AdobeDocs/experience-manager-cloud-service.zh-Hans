@@ -3,9 +3,9 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2537'
 ht-degree: 1%
 
 ---
@@ -70,11 +70,11 @@ Experience Manager允许以下级别的处理。
 
 [!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹以完成附加处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
 
-* **演绎版宽度和高度**: 演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成最大可能的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
+* **演绎版宽度和高度**:演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成最大可能的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
 
-* **MIME类型包含规则**: 当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。 否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
+* **MIME类型包含规则**:当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。 否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
 
-* **特殊FPO再现**: 当将大型资产从文档 [!DNL Experience Manager] 置入 [!DNL Adobe InDesign] 时，创意专业人士在置入资产后会等 [待相当长时间](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同时，用户被阻止使用 [!DNL InDesign]。 这会中断创意流程，并对用户体验造成负面影响。 Adobe允许将小型演绎版临时放 [!DNL InDesign] 置到文档中，以后可以用全分辨率资产按需替换。 [!DNL Experience Manager] 提供仅用于放置(FPO)的再现。 这些FPO再现文件大小较小，但长宽比相同。
+* **特殊FPO再现**:当将大型资产从文档 [!DNL Experience Manager] 置入 [!DNL Adobe InDesign] 时，创意专业人士在置入资产后会等 [待相当长时间](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同时，用户被阻止使用 [!DNL InDesign]。 这会中断创意流程，并对用户体验造成负面影响。 Adobe允许将小型演绎版临时放 [!DNL InDesign] 置到文档中，以后可以用全分辨率资产按需替换。 [!DNL Experience Manager] 提供仅用于放置(FPO)的再现。 这些FPO再现文件大小较小，但长宽比相同。
 
 处理用户档案可以包括FPO（仅用于放置）再现。 查看 [!DNL Adobe Asset Link] 文 [档](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) ，了解您是否需要为处理用户档案打开它。 有关详细信息，请参阅 [Adobe资产链接完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
 
@@ -110,14 +110,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自定义用户档案和用例 {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 支 [!DNL Asset Compute Service] 持各种用例，如默认处理、处理特定于Adobe的格式(如Photoshop文件)以及实现自定义或组织特定处理。 过去需要的DAM更新资产工作流自定义可以自动处理，也可以通过处理用户档案配置。 如果这些处理选项不能满足业务需求，Adobe建议开发和使用 [!DNL Asset Compute Service] 扩展默认功能。 有关概述，请参 [阅了解可扩展性以及何时使用](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
@@ -148,11 +140,11 @@ The following video demonstrates the usefulness and usage of standard profile.
    * 每个再现的文件名和支持的文件扩展名。
    * [Firefly自定义应用程序的端点URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 应用程序必须与Experience Manager帐户来自同一组织。
    * 添加服务参数， [将额外信息或参数传递到自定义应用程序](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
-   * 包含和排除的MIME类型，用于定义用户档案的适用性。
+   * 包含和排除的MIME类型可将处理限制为若干特定文件格式。
 
    单击&#x200B;**[!UICONTROL 保存]**。
 
-如果自定义应用程序设置了处理用户档案，则它们将获取所有提供的文件。 应用程序必须过滤文件。
+自定义应用程序是无头 [项目Firefly应用](https://github.com/AdobeDocs/project-firefly) 程序。 如果自定义应用程序设置了处理用户档案，则它们将获取所有提供的文件。 应用程序必须过滤文件。
 
 >[!CAUTION]
 >
@@ -166,7 +158,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![自定义处理用户档案](assets/custom-processing-profile.png)
 
-*图： 使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义应用程序中的预定义参数。*
+*图：使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义应用程序中的预定义参数。*
 
 当活动图像上传到应用此处理用户档案的文件夹时，图像会以字体文 `Jumanji` 本进行 `Arial-BoldMT` 更新。
 
@@ -193,7 +185,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![其他演绎版](assets/renditions-additional-renditions.png)
 
-*图： 由应用于父文件夹的处理用户档案生成的两个其他演绎版的示例。*
+*图：由应用于父文件夹的处理用户档案生成的两个其他演绎版的示例。*
 
 ## 后处理工作流 {#post-processing-workflows}
 
@@ -226,8 +218,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 自定义工作流运行`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`器服务()是OSGi服务，提供两个配置选项：
 
-* 按路径()分类的后处理工作流`postProcWorkflowsByPath`: 可以根据不同的存储库路径列出多个工作流模型。 路径和模型应以冒号分隔。 支持简单的存储库路径，并应映射到路径中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 后处理工作流(按表达式`postProcWorkflowsByExpression`): 可以根据不同的常规表达式列出多个工作流模型。 表达式和模型应用冒号分隔。 常规表达式应直接指向“资产”节点，而不是指向某个演绎版或文件。 For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 按路径()分类的后处理工作流`postProcWorkflowsByPath`:可以根据不同的存储库路径列出多个工作流模型。 路径和模型应以冒号分隔。 支持简单的存储库路径，并应映射到路径中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 后处理工作流(按表达式`postProcWorkflowsByExpression`):可以根据不同的常规表达式列出多个工作流模型。 表达式和模型应用冒号分隔。 常规表达式应直接指向“资产”节点，而不是指向某个演绎版或文件。 For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
