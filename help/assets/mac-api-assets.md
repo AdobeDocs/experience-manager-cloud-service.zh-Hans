@@ -3,9 +3,9 @@ title: 中的资源HTTP API [!DNL Adobe Experience Manager]。
 description: 使用中的HTTP API创建、读取、更新、删除和管理数字资产 [!DNL Adobe Experience Manager Assets]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1476'
 ht-degree: 1%
 
 ---
@@ -28,13 +28,13 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 >[!NOTE]
 >
->与上传或更新资产或二进制文件（如演绎版）相关的所有API调用将作为云服务部署预留在AEM中。 对于上传二进制文件，请 [改用直接二进制上传](developer-reference-material-apis.md#asset-upload-technical) API。
+>所有与上传或更新资产或二进制文件（如演绎版）相关的API调用都作为Cloud Service部署进行预配。 对于上传二进制文件，请 [改用直接二进制上传](developer-reference-material-apis.md#asset-upload-technical) API。
 
 ## 内容片段 {#content-fragments}
 
 内 [容片段](/help/assets/content-fragments/content-fragments.md) 是一种特殊类型的资产。 它可用于访问结构化数据，如文本、数字、日期等。 由于资产(如图像或文档 `standard` )存在多种差异，因此一些其他规则适用于处理内容片段。
 
-有关详细信息， [请参阅Experience Manager Assets HTTP API中的内容片段支持](/help/assets/assets-api-content-fragments.md)。
+有关详细信息， [请参阅Experience Manager资产HTTP API中的内容片段支持](/help/assets/assets-api-content-fragments.md)。
 
 ## Data model {#data-model}
 
@@ -46,7 +46,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 文件夹类似于传统文件系统中的目录。 它们是其他文件夹或声明的容器。 文件夹具有以下组件：
 
-**实体**: 文件夹的实体是其子元素，可以是文件夹和资产。
+**实体**:文件夹的实体是其子元素，可以是文件夹和资产。
 
 **属性**:
 
@@ -59,25 +59,27 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **链接** “文件夹”显示三个链接：
 
-* `self`: 链接到自身。
-* `parent`: 链接到父文件夹。
-* `thumbnail`: （可选）指向文件夹缩略图图像的链接。
+* `self`:链接到自身。
+* `parent`:链接到父文件夹。
+* `thumbnail`:（可选）指向文件夹缩略图图像的链接。
 
 ### 资产 {#assets}
 
 在资 [!DNL Experience Manager] 产中，包含以下元素：
 
 * 资产的属性和元数据。
-* 多个演绎版，如原始演绎版（最初上传的资产）、缩略图和各种其他演绎版。 其他再现可能是不同大小的图像、不同的视频编码，或从PDF或Adobe InDesign文件提取的页面。
+* 多个演绎版，如原始演绎版（最初上传的资产）、缩略图和各种其他演绎版。 其他再现可能是不同大小、不同视频编码的图像，或从PDF或Adobe InDesign文件提取的页面。
 * 可选注释。
 
-有关内容片段中元素的信息，请 [参阅Experience Manager Assets HTTP API中的内容片段支持](/help/assets/assets-api-content-fragments.md)。
+有关内容片段中元素的信息，请参 [阅Experience Manager资产HTTP API中的内容片段支持](/help/assets/assets-api-content-fragments.md)。
 
 在文 [!DNL Experience Manager] 件夹中，具有以下组件：
 
-* 实体： 资产的子项是其演绎版。
+* 实体：资产的子项是其演绎版。
 * 属性.
 * 链接.
+
+## 可用功能 {#available-features}
 
 资产HTTP API包括以下功能：
 
@@ -112,13 +114,13 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `GET /api/assets/myFolder.json`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 好——成功。
 * 404 —— 未找到——文件夹不存在或无法访问。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
-**响应**: 返回的实体类是资产或文件夹。 包含的实体的属性是每个实体的全部属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接指向的URL的内容，其中 `rel` 包含 `self`:
+**响应**:返回的实体类是资产或文件夹。 包含的实体的属性是每个实体的全部属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接指向的URL的内容，其中 `rel` 包含 `self`:
 
 ## Create a folder {#create-a-folder}
 
@@ -133,7 +135,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 创建——成功创建时。
 * 409 —— 冲突——如果文件夹已存在。
@@ -154,10 +156,10 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 确定——如果资产已成功更新。
-* 404 —— 未找到——如果在提供的URI中找不到或访问资产，请执行此操作。
+* 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
@@ -165,7 +167,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 为资产创建新资产演绎版。 如果未提供请求参数名称，则文件名将用作再现名称。
 
-**参数**: 这些参数 `name` 用于再现的名称 `file` 和文件引用。
+**参数**:这些参数 `name` 用于再现的名称 `file` 和文件引用。
 
 **请求**
 
@@ -185,7 +187,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 确定——如果再现已成功更新。
 * 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
@@ -196,14 +198,14 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 创建新资产注释。
 
-**参数**: 参数用 `message` 于注释的消息正文和 `annotationData` JSON格式的注释数据。
+**参数**:参数用 `message` 于注释的消息正文和 `annotationData` JSON格式的注释数据。
 
 **请求**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果注释已成功创建。
-* 404 —— 未找到——如果在提供的URI中找不到或访问资产，请执行此操作。
+* 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
@@ -211,7 +213,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 复制提供的路径中提供到新目标的文件夹或资产。
 
-**请求标题**: 参数包括：
+**请求标题**:参数包括：
 
 * `X-Destination` - API解决方案范围中要将资源复制到的新目标URI。
 * `X-Depth` - `infinity` 或 `0`。 仅使 `0` 用会复制资源及其属性，而不复制其子项。
@@ -219,7 +221,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果文件夹／资产已复制到非现有目标。
 * 204 —— 无内容——如果文件夹／资产已复制到现有目标。
@@ -230,7 +232,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 将给定路径上的文件夹或资产移动到新目标。
 
-**请求标题**: 参数包括：
+**请求标题**:参数包括：
 
 * `X-Destination` - API解决方案范围中要将资源复制到的新目标URI。
 * `X-Depth` - `infinity` 或 `0`。 仅使 `0` 用会复制资源及其属性，而不复制其子项。
@@ -238,7 +240,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果文件夹／资产已复制到非现有目标。
 * 204 —— 无内容——如果文件夹／资产已复制到现有目标。
@@ -255,7 +257,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * `DELETE /api/assets/myFolder/myAsset.png`
 * `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 确定——如果文件夹已成功删除。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
