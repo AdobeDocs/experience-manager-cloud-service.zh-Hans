@@ -2,11 +2,11 @@
 sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 97%
    + [AEM 云服务 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
    + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
-   + [Sling Cheatsheet](developing/introduction/sling-cheatsheet.md)
-   + [使用Sling适配器](developing/introduction/sling-adapters.md)
+   + [Sling 备忘单](developing/introduction/sling-cheatsheet.md)
+   + [使用 Sling 适配器](developing/introduction/sling-adapters.md)
    + [在 AEM 云服务中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
    + [AEM 云服务中的叠加](developing/introduction/overlays.md)
    + [记录](developing/introduction/logging.md)
