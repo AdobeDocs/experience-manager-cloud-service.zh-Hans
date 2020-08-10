@@ -2,9 +2,9 @@
 title: AEM应用程序项目-Cloud Service
 description: AEM应用程序项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1406'
 ht-degree: 9%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 9%
 * 您可以在pom.xml文件中添加对其他Maven *项目存储库的引* 用。 配置时 [支持访问受密码保护](#password-protected-maven-repositories) 的对象存储库。 但是，不支持访问受网络保护的对象存储库。
 * 可部署的内容包是通过扫描内容包 *zip* 文件来发现的，这些文件包含在名为 *目标的目录中*。 任何数量的子模块都可以生成内容包。
 
-* 通过扫描zip文件(同样，包含在名为 *Dispatcher的目录中* )发现可部署的目标对象，该目录具有名 *为conf**和conf.d***&#x200B;的目录。
+* 通过扫描zip文件(同样，包含在名为 *目标的目录中* )发现可部署的调度程序对象，该目录具有名 *为conf**和conf.d***&#x200B;的目录。
 
 * 如果有多个内容包，则无法保证包部署的顺序。 如果需要特定的订单，可以使用内容包依赖关系定义订单。 可以从部署 [中跳](#skipping-content-packages) 过包。
 
@@ -59,7 +59,6 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 
 * 构建环境基于Linux，源自Ubuntu 18.04。
 * Apache Maven 3.6.0已安装。
-* Java版本已安装Oracle JDK 8u202和11.0.2。
 * 还安装了一些其他系统包，这是必需的：
 
    * bzip2
@@ -69,7 +68,7 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
    * graphicsmagick
 
 * 其他软件包可以在构建时安装，如 [下所述](#installing-additional-system-packages)。
-* 每栋建筑都建在原始环境上； 构建容器不会在执行之间保持任何状态。
+* 每栋建筑都建在原始环境上；构建容器不会在执行之间保持任何状态。
 * Maven始终使用以下命令运行： *mvn —batch-mode clean org.jacoco:jaco-maven-plugin:prepare-agent包*
 * Maven在系统级别上配置了settings.xml文件，该文件自动包括公共Adobe **项库** 。 (有关更多详 [细信息，请参阅Adobe](https://repo.adobe.com/) 公共Maven存储库。)
 
@@ -85,7 +84,7 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 
 例如，如果正在通过gulp等工具完成构建时间JavaScript微型化，则在为开发环境构建时可能希望使用不同的微型化级别，而不是为舞台和生产构建。
 
-为了支持此功能，Cloud Manager会将这些标准环境变量添加到每次执行的构建容器中。
+为支持此功能，Cloud Manager会将这些标准环境变量添加到每次执行的构建容器中。
 
 | **变量名称** | **定义** |
 |---|---|
@@ -211,7 +210,7 @@ Cloud Manager允许通过Cloud Manager API或Cloud Manager CLI按管道配置这
 
 ## 受密码保护的Maven存储库支持 {#password-protected-maven-repositories}
 
-要从Cloud Manager中使用受密码保护的Maven存储库，请将密码（以及用户名）指定为机密管 [线变量](#pipeline-variables) ，然后在git存储库中名为的文件中引 `.cloudmanager/maven/settings.xml` 用该机密。 此文件遵循“主设 [置文件”模式](https://maven.apache.org/settings.html) 。 当Cloud Manager构建流程开始时， `<servers>` 此文件中的元素将合并到Cloud Manager提 `settings.xml` 供的默认文件中。 在此文件就位后，服务器ID将从文件内的 `<repository>` 和／或 `<pluginRepository>` 元素中引 `pom.xml` 用。 通常，这 `<repository>` 些和/ `<pluginRepository>` 或元素将包含在特 [定于Cloud Manager的用户档案中]{#activating-maven-profiles-in-cloud-manager}，尽管这并非严格必要。
+要从Cloud Manager中使用受密码保护的Maven存储库，请将密码（以及用户名）指定为机密管 [线变量](#pipeline-variables) ，然后在git存储库中名为的文件中引 `.cloudmanager/maven/settings.xml` 用该机密。 此文件遵循“主设 [置文件”模式](https://maven.apache.org/settings.html) 。 当Cloud Manager构建流程开始时，此 `<servers>` 文件中的元素将合并到Cloud Manager提 `settings.xml` 供的默认文件中。 在此文件就位后，服务器ID将从文件内的 `<repository>` 和／或 `<pluginRepository>` 元素中引 `pom.xml` 用。 通常，这 `<repository>` 些和/ `<pluginRepository>` 或元素将包含在特 [定于Cloud Manager的用户档案中]{#activating-maven-profiles-in-cloud-manager}，尽管这并非严格必要。
 
 例如，假设存储库位于https://repository.myco.com/maven2，则Cloud Manager应使用的用户名为， `cloudmanager` 密码为 `secretword`。
 
