@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager 云服务 2020.5.0 发行说明
 description: Experience Manager 2020.5.0 发行说明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # AEM 云服务 2020.5.0 发行说明 {#release-notes}
 
-本页概述了作为Cloud Service2020.5.0的Experience Manager的一般发行说明。
+本页面概述了 Experience Manager 云服务 2020.5.0 版的常规发行说明。
 
 ## 发布日期 {#release-date}
 
