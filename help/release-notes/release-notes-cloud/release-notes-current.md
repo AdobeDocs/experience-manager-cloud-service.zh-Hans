@@ -1,18 +1,18 @@
 ---
-title: 作为Cloud Service的2020.8.0版本 [!DNL Adobe Experience Manager] 的发行说明。
-description: '[!DNLAdobe Experience Manager]作为2020.8.0的Cloud Service发行说明。'
+title: ' [!DNL Adobe Experience Manager]  云服务 2020.8.0 版的发行说明。'
+description: '[!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明。'
 translation-type: tm+mt
 source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# [!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明 {#release-notes}
 
-以下部分概述了 Experience Manager 云服务 2020.8.0 的常规发行说明。
+以下部分概述了 Experience Manager 云服务 2020.8.0 版的常规发行说明。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
