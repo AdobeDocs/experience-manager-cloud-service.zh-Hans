@@ -1,9 +1,9 @@
 ---
 title: 执行阶段
 description: 执行阶段
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -77,11 +77,11 @@ AEM Maven 项目需要进行某些更改才能与 AEM 云服务兼容。AEM 云�
 
 * 观看安装 Dispatcher SDK 视频，了解如何安装 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=chi_hans)
 
 * 观看配置 Dispatcher SDK 视频，了解如何配置 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=chi_hans)
 
 * 查看[本地开发设置](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)文档以设置本地开发环境
 
