@@ -2,10 +2,10 @@
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1717'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 术语 {#terminology}
 
-在使用 AEM 时，您可能会遇到与发布相关的不同术语。
+在与Adobe Experience Manager(AEM)合作作为Cloud Service时，您可能会遇到与发布相关的不同术语。
 
 * **发布/取消发布**
    * 这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
@@ -53,6 +53,10 @@ ht-degree: 100%
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
 
+>[!NOTE]
+>
+> 有关其他可能性 **，请参阅** “页 **面属性”的“基** 本”选项卡 [中的“开始时间”和“结束时间”](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+
 ### 从编辑器中发布 {#publishing-from-the-editor}
 
 如果您在编辑页面，则可以直接从编辑器中发布该页面。
@@ -67,6 +71,7 @@ ht-degree: 100%
    * 如果页面包含需要发布的引用，则将在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
       * 指定要与页面一起发布的资产/标记/等，然后使用&#x200B;**发布**&#x200B;完成该过程。
       * 使用&#x200B;**取消**&#x200B;中止操作。
+
    ![使用页面发布引用](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. 选择&#x200B;**发布**&#x200B;会将页面复制到发布环境。在页面编辑器中，将显示一个确认发布操作的信息横幅。
@@ -122,6 +127,7 @@ ht-degree: 100%
 
    * 选择发布或取消发布选定的页面。
    * 选择立即还是在以后的日期执行该操作。
+
    稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流。
 
    如果您要稍后撤消发布/取消发布页面，请转到“工作流”控制台以终止相应的工作流。<!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -138,13 +144,14 @@ ht-degree: 100%
 
    单击“添加内容”按钮会启动[路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)以供选择内容。
 
-   选择所需的页面，然后单击&#x200B;**选择**&#x200B;以将该内容添加到向导，或单击 **取消** 以取消所做的选择并返回到向导。
+   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
    返回到向导后，您可以选择列表中的项目以进一步配置其选项，例如：
 
    * 包括其子项。
    * 将其从选择中删除。
    * 管理其已发布的引用。
+
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    单击&#x200B;**包括子项**&#x200B;会打开一个对话框，它允许您：
@@ -152,6 +159,7 @@ ht-degree: 100%
    * 仅包括下级子项。
    * 仅包括已修改的页面。
    * 仅包括已发布的页面。
+
    单击&#x200B;**添加**&#x200B;可根据选择的选项将子页面添加到要发布或取消发布的页面列表中。单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
 
    ![管理发布（包括子项）](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -187,10 +195,12 @@ ht-degree: 100%
 
    * 定义工作流的标题。
    * 保留工作流包，前提是工作流具有多资源支持。
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * 在选择保留工作流包的选项时，定义工作流包的标题。
+
    单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
 
 ## 取消发布页面 {#unpublishing-pages}
@@ -237,6 +247,7 @@ ht-degree: 100%
 
    * 仅包括下级子项
    * 仅包括已发布的页面
+
    这些选项默认处于选中状态，因此您必须记得取消选择它们。单击&#x200B;**添加**&#x200B;以确认并将内容添加到发布/取消发布。
 
    ![取消发布时包含子项](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
