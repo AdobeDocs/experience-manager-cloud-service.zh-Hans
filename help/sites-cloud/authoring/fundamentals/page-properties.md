@@ -1,11 +1,11 @@
 ---
 title: 编辑页面属性
 description: 为页面定义所需的属性
-translation-type: ht
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: ht
-source-wordcount: '1538'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 88%
 
 ---
 
@@ -62,13 +62,21 @@ ht-degree: 100%
 
 * **开始时间**
 
-   * 将激活已发布页面的日期和时间。发布后，此页面在指定时间之前将一直保持休眠。
-   * 对于要立即发布的页面，将这些字段保留为空（正常情况）。
+   * 发布环境上显示（呈现）已发布页面的日期和时间。 必须手动或通过预配置的自动复制来发布页面。
+
+      >[!NOTE]
+      >
+      > 有关 [如何配置相关自动复制的详细信息](/help/operations/replication.md#on-and-off-times-trigger-configuration) ，请参阅开启和关闭时间——触发器配置。
+
+      * 如果已 [经发布(手动](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) )，则在指定时间呈现之前，此页面将保持休眠（隐藏）。
+      * 如果页面未发布并配置为自动复制，则页面将在指定的时间自动发布并呈现。
+      * 如果未发布，且未配置为自动复制，则页面将不会自动发布，因此当尝试访问页面时，将显示404。
+   * 对于要立即发布&#x200B;**的页面** ，请将这 **些字段(开始**、结束时间)保留为空，并在发布环境中保留这些字段，直到取消激活它们（正常情况）。
 
 * **结束时间**
 
-   * 将取消激活已发布页面的时间。
-   * 将这些字段留空以便立即执行操作。
+   * 与“开始时 **间** ”并行，它定义发布页面在发布环境上隐藏的时间。
+   * 对于要立即发布&#x200B;**的页面** ，请将这 **些字段(开始**、结束时间)保留为空，并在发布环境中保留这些字段，直到取消激活它们（正常情况）。
 
 * **虚 URL**
 
