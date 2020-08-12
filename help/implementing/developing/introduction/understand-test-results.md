@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1578'
 ht-degree: 3%
 
 ---
@@ -13,9 +13,17 @@ ht-degree: 3%
 # 了解测试结果 {#understand-test-results}
 
 云服务的 Cloud Manager 管道执行将支持执行针对暂存环境运行的测试。这与在构建和单元测试步骤中运行的测试相反，这些测试在脱机状态下运行，无法访问任何正在运行的AEM环境。
-在此上下文中运行有三种类型的测试：
-* 客户编写的测试
-* Adobe编写的测试
+
+Cloud Manager为Cloud Services管道支持三类别测试：
+
+1. [代码质量测试](#code-quality-testing)
+1. [功能测试](#functional-testing)
+1. [内容审核测试](#content-audit-testing)
+
+这些测试可以是：
+
+* 客户写作
+* Adobe编写
 * 由Google的Lighthouse支持的开放源代码工具
 
    >[!NOTE]
@@ -82,7 +90,31 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >尽管最好尽量使注释具 `@SuppressWarnings` 体，即仅注释导致问题的特定语句或块，但也可以在类级别添加注释。
 
-## 编写功能测试 {#writing-functional-tests}
+## 功能测试 {#functional-testing}
+
+功能测试分为两类：
+
+* 产品功能测试
+* 自定义功能测试
+
+### 产品功能测试 {#product-functional-testing}
+
+产品功能测试是围绕创作和复制的一组稳定的HTTP集成测试(IT)，可防止客户在AEM中中断核心功能时对其应用程序代码所做的更改被部署。
+只要客户将新代码部署到Cloud Manager，它们就会自动运行。
+
+管道中的产品功能测试步骤始终存在，无法跳过。此步骤是在阶段部署后立即完成的。
+
+### 自定义功能测试 {#custom-functional-testing}
+
+管道中的“自定义功能”测试步骤始终存在，无法跳过。
+
+但是，如果生成未生成测试JAR，则默认情况下测试通过。
+
+>[!NOTE]
+>“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/manage-logs.md) “访问和管理日志”。
+
+
+#### 编写功能测试 {#writing-functional-tests}
 
 必须将客户编写的功能测试打包为由与要部署到AEM的对象相同的Maven版本生成的单独JAR文件。 通常，这将是一个单独的Maven模块。 生成的JAR文件必须包含所有必需的依赖关系，并且通常使用maven-assembly-plugin使用jar-with-dependencies描述符创建。
 
@@ -124,15 +156,6 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 例如，将执行名 `com.myco.tests.aem.ExampleIT` 为的类，但名为的类 `com.myco.tests.aem.ExampleTest` 不会执行。
 
 测试类必须是普通JUnit测试。 测试基础架构设计并配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳实践。 有关更多 [详细信息](https://github.com/adobe/aem-testing-clients) ，请参阅Git链接。
-
-## 自定义功能测试 {#custom-functional-test}
-
-管道中的“自定义功能”测试步骤始终存在，无法跳过。
-
-但是，如果生成未生成测试JAR，则默认情况下测试通过。 此步骤在阶段部署后立即完成。
-
->[!NOTE]
->“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/manage-logs.md) “访问和管理日志”。
 
 ## 内容审核测试 {#content-audit-testing}
 
