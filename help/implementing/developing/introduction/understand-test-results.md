@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1614'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
 * 客户写作
 * Adobe编写
-* 由Google的Lighthouse支持的开放源代码工具
+* Powered by Lighthouse from Google作为开放源码工具
 
    >[!NOTE]
    > 客户编写的测试和Adobe编写的测试都在为运行这些类型的测试而设计的容器化基础架构中运行。
@@ -60,7 +60,7 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
 质量扫描过程并不完美，有时会错误地识别实际上没有问题的问题。 这称为“假阳性”。
 
-在这些情况下，可以使用标准Java注释对源代 `@SuppressWarnings` 码进行注释，该注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
+在这些情况下，可以使用标准Java注释对源代码进 `@SuppressWarnings` 行注释，该标准Java注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
 
 要查看特定示例，此代码在AEM项目中很常见，该项目具有连接到某些外部服务的代码：
 
@@ -89,6 +89,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >[!NOTE]
 >
 >尽管最好尽量使注释具 `@SuppressWarnings` 体，即仅注释导致问题的特定语句或块，但也可以在类级别添加注释。
+
+>[!NOTE]
+>虽然没有明确的安全测试步骤，但在代码质量步骤中仍会评估与安全相关的代码质量规则。 有关更 [多详细信息，请参阅AEM的安全概述](/help/security/cloud-service-security-overview.md) (Cloud Service)。
 
 ## 功能测试 {#functional-testing}
 
