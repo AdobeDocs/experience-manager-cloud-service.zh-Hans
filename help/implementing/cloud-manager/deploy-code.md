@@ -2,9 +2,9 @@
 title: 部署代码-Cloud Services
 description: 部署代码-Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -42,8 +42,8 @@ ht-degree: 3%
    Stage **Deployment**，涉及以下步骤：
 
    * 验证：此步骤确保管道配置为使用当前可用的资源，例如，已配置的分支存在，环境可用。
-   * 构建和单元测试：此步骤运行容器化构建过程。 有关 [构建环境的详细信息](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) ，请参阅创建AEM应用程序项目。
-   * 代码扫描：此步骤将评估应用程序代码的质量。 有关 [测试过程的详细信息](/help/implementing/developing/introduction/understand-test-results.md) ，请参阅了解测试结果。
+   * 构建和单元测试：此步骤运行容器化构建过程。 有关 [构建环境的详细信](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) 息，请参阅构建环境详细信息。
+   * 代码扫描：此步骤将评估应用程序代码的质量。 有关 [测试过程的详细信](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) 息，请参阅代码质量测试。
    * 构建图像：此步骤包含用于构建图像的进程中的日志文件。 此过程负责将构建步骤生成的内容和调度程序包转换为Docker图像和Kubernetes配置。
    * 部署到舞台
 
