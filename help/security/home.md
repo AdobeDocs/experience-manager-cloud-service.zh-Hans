@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 云服务安全性
 description: Adobe Experience Manager 云服务安全性自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: c0a66239e949ee4b460142e392d61e22938896bc
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 93%
 
 ## 关键安全性文章 {#key-articles}
 
+* [AEM作为Cloud Service的安全概述](/help/security/cloud-service-security-overview.md)
 * [AEM 云服务的 IMS 支持](ims-support.md)
 
 ## Experience Manager 云服务指南 {#aem-guides}
