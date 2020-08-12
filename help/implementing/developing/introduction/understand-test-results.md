@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1620'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >尽管最好尽量使注释具 `@SuppressWarnings` 体，即仅注释导致问题的特定语句或块，但也可以在类级别添加注释。
 
 >[!NOTE]
->虽然没有明确的安全测试步骤，但在代码质量步骤中仍会评估与安全相关的代码质量规则。 有关更 [多详细信息，请参阅AEM的安全概述](/help/security/cloud-service-security-overview.md) (Cloud Service)。
+>虽然没有明确的安全测试步骤，但在代码质量步骤中仍会评估与安全相关的代码质量规则。 请参阅AEM [的安全概述作为Cloud Service](/help/security/cloud-service-security-overview.md) ，进一步了解Cloud Service中的安全性。
 
 ## 功能测试 {#functional-testing}
 
@@ -104,7 +104,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 产品功能测试是围绕AEM中核心功能（例如，创作和复制）的一组稳定的HTTP集成测试(IT)，可防止客户在中断此核心功能时部署对其应用程序代码所做的更改。
 
-只要客户将新代码部署到Cloud Manager，产品功能测试就会自动运行。
+只要客户将新代码部署到Cloud Manager且无法跳过，产品功能测试就会自动运行。
+
+有关示例 [测试，请参阅](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) “Product Functionality tests（产品功能测试）”。
 
 ### 自定义功能测试 {#custom-functional-testing}
 
@@ -169,7 +171,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. 不要在这些维度中包含回归。
 
-Cloud Manager中的内容审核可确保站点上的最终用户数字体验保持为最高标准。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
+Cloud Manager中的内容审核可确保站点上的最终用户数字体验能够保持为最高标准。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
 
 ### 了解内容审核结果 {#understanding-content-audit-results}
 
