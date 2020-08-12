@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1596'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
 质量扫描过程并不完美，有时会错误地识别实际上没有问题的问题。 这称为“假阳性”。
 
-在这些情况下，可以使用标准Java注释对源代码进 `@SuppressWarnings` 行注释，该标准Java注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
+在这些情况下，可以使用标准Java注释对源代 `@SuppressWarnings` 码进行注释，该注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
 
 要查看特定示例，此代码在AEM项目中很常见，该项目具有连接到某些外部服务的代码：
 
@@ -102,10 +102,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ### 产品功能测试 {#product-functional-testing}
 
-产品功能测试是围绕创作和复制的一组稳定的HTTP集成测试(IT)，可防止客户在AEM中中断核心功能时对其应用程序代码所做的更改被部署。
-只要客户将新代码部署到Cloud Manager，它们就会自动运行。
+产品功能测试是围绕AEM中核心功能（例如，创作和复制）的一组稳定的HTTP集成测试(IT)，可防止客户在中断此核心功能时部署对其应用程序代码所做的更改。
 
-管道中的产品功能测试步骤始终存在，无法跳过。此步骤是在阶段部署后立即完成的。
+只要客户将新代码部署到Cloud Manager，它们就会自动运行。
 
 ### 自定义功能测试 {#custom-functional-testing}
 
@@ -170,7 +169,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. 不要在这些维度中包含回归。
 
-Cloud Manager中的内容审核可确保站点上的最终用户数字体验保持为最高标准。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
+Cloud Manager中的内容审核可确保站点上的最终用户数字体验能够保持为最高标准。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
 
 ### 了解内容审核结果 {#understanding-content-audit-results}
 
