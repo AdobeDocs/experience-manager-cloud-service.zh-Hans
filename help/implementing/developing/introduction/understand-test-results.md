@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
+source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1596'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
 * 客户写作
 * Adobe编写
-* Powered by Lighthouse from Google作为开放源码工具
+* 开放源码工具（由Google的Lighthouse提供支持）
 
    >[!NOTE]
    > 客户编写的测试和Adobe编写的测试都在为运行这些类型的测试而设计的容器化基础架构中运行。
