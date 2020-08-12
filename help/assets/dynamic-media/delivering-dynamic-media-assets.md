@@ -2,10 +2,10 @@
 title: 传送 Dynamic Media 资产
 description: 了解如何交付动态媒体资产
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: ea6a1bddaab6819d1f89268ceba3c4d4981729a2
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 25%
+source-wordcount: '315'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 25%
 * 如果您的网站不在AEM上，您可以选择：
 
    * 将视频或图像嵌入您的网站。
-   * 将URL关联到您的Web应用程序。 当您希望以弹出窗口或模态窗口的形式传送视频播放器时，可使用链接。
+   * 将URL关联到您的Web应用程序。当您希望以弹出窗口或模态窗口的形式传送视频播放器时，可使用链接。
    * 如果您的网站是响应式的，您可以投 [递优化的图像。](/help/assets/dynamic-media/responsive-site.md)
 
 >[!NOTE]
@@ -35,7 +35,8 @@ ht-degree: 25%
 * [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [为响应式网站传送优化的图像](/help/assets/dynamic-media/responsive-site.md)
 * [内容的HTTP2投放](/help/assets/dynamic-media/http2faq.md)
-* [使 CDN 缓存内容无效](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [通过Dynamic Media使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [通过Dynamic Media Classic使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用规则集转换URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2投放Dynamic Media资产 {#http-delivery-of-dynamic-media-assets}
