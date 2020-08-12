@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
 workflow-type: tm+mt
-source-wordcount: '4419'
+source-wordcount: '4435'
 ht-degree: 18%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 18%
 
 ## 创建文件夹 {#creating-folders}
 
-在组织资产集合（例如，所有图像）时，您 `Nature` 可以创建文件夹来将它们放在一起。 您可以使用文件夹对资产进行分类和组织。 AEM资产不要求您组织文件夹中的资产以更好地工作。
+在组织资产集合（例如，所有图像）时，您 `Nature` 可以创建文件夹来将它们放在一起。 您可以使用文件夹对资产进行分类和组织。 AEM Assets不要求您组织文件夹中的资源以更好地工作。
 
 >[!NOTE]
 >
->* 在共享到Marketing Cloud时，不 `sling:OrderedFolder`支持共享类型为“资产”的文件夹。 如果要共享文件夹，请不要在创建文 [!UICONTROL 件夹时] 选择“已排序”。
->* Experience Manager不允许将 `subassets` word用作文件夹的名称。 它是为包含复合资产子资产的节点保留的关键字
+>* 共享到Marketing Cloud时，不 `sling:OrderedFolder`支持共享类型的“资产”文件夹。 如果要共享文件夹，请不要在创建文 [!UICONTROL 件夹时] 选择“已排序”。
+>* Experience Manager不允许 `subassets` 将单词用作文件夹的名称。 它是为包含复合资产子资产的节点保留的关键字
 
 
 1. 导航到数字资产文件夹中要创建新文件夹的位置。 在菜单中，单击“ **[!UICONTROL 创建]**”。 选择 **[!UICONTROL 新建文件夹]**。
@@ -43,9 +43,18 @@ ht-degree: 18%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM用户上传存储库中已存在的一个或多个资产， [!DNL Experience Manager] 则会检测重复项并通知用户。 重复检测默认处于禁用状态，因为它可能会影响性能，具体取决于存储库的大小和上传的资产数量。 要启用该功能，请 [!UICONTROL 配置Adobe AEM Cloud Asset Detector]。 了 [解如何进行OSGi配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 重复项检测基于存储在的 `dam:sha1` 唯一值 `jcr:content/metadata/dam:sha1`。 这意味着即使文件名不同，也会检测重复资源。
+如果DAM用户上传存储库中已存在的一个或多个资产， [!DNL Experience Manager] 则会检测重复项并通知用户。 重复检测默认处于禁用状态，因为它可能会影响性能，具体取决于存储库的大小和上传的资产数量。 要启用该功能，请配 [!UICONTROL 置AdobeAEM Cloud Asset Duplication Detector]。 了 [解如何进行OSGi配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 重复项检测基于存储在的 `dam:sha1` 唯一值 `jcr:content/metadata/dam:sha1`。 这意味着即使文件名不同，也会检测重复资源。
 
 ![检测重复资产OSGi配置](assets/duplicate-detection.png)
+
+您可以在自定义代码中 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 添加配置文件，该文件可以包含以下内容：
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
 
 启用后，Experience Manager会将重复资产的通知发送到收件箱。 它是多个重复的汇总结果。 用户可以根据结果选择删除资产。
 
@@ -86,7 +95,7 @@ ht-degree: 18%
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 在“标 **[!UICONTROL 记]** ”字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记名称，然后按Enter键。 新标记将保存在AEM中。
+1. 在“标 **[!UICONTROL 记]** ”字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记名称，然后按Enter键。 新标记保存在AEM中。
 
    YouTube需要“标记”才能发布，并有一个指向YouTube的链接（如果可以找到合适的链接）。
 
@@ -101,9 +110,10 @@ ht-degree: 18%
    * 资产的查看或下载次数
    * 渠道/设备，资产通过这些设备
    * 最近使用该资产的创意解决方案
+
    有关详细信息，请参阅 [资产分析](assets-insights.md)。
 
-1. 点按／单击 **[!UICONTROL 保存并关闭]**。
+1. Tap/click **[!UICONTROL Save &amp; Close]**.
 
 1. 导航到资产用户界面。 已编辑的元数据属性（包括标题、描述和标记）显示在资产卡上的卡片视图中以及列表视图的相关列下。
 
@@ -172,6 +182,7 @@ ht-degree: 18%
    * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
 
    * 点按／单击 **[!UICONTROL 取消]** ，以停止移动操作。
+
    如果您不更新引用，则它们会继续指向资产的上一路径。 如果您调整引用，它们将更新为新的资产路径。
 
 ### 管理再现 {#managing-renditions}
@@ -192,7 +203,7 @@ ht-degree: 18%
 
    >[!NOTE]
    >
-   >默认情况下，AEM资产不会在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加来配置AEM资产，以在预览模式下显示原始演绎版。
+   >默认情况下，AEM Assets不在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加将AEM Assets配置为在预览模式下显示原始演绎版。
 
 1. 选择一个演绎版以进行查看或删除。
 
@@ -212,7 +223,7 @@ ht-degree: 18%
    >
    >如果您从演绎版面板中选 **[!UICONTROL 择了演绎版]** ，工具栏会更改上下文并仅显示与演绎版相关的那些操作。 不显示“上传演绎版”图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
-   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的维，AEM资产会显示具有精确或最接近的维度的演绎版。
+   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的尺寸，AEM Assets显示具有精确或最接近尺寸的再现。
 
    要在资产详细信息级别配置图像的演绎版尺寸，请叠 `renditionpicker` 加节点(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)并配置width属性的值。 配置属性大 **[!UICONTROL 小（长）(以KB]** )代替宽度，以根据图像大小在资产详细信息页面上自定义再现。 对于基于大小的自定义，如果匹 `preferOriginal` 配的再现的大小大于原始再现，则属性会为原始再现分配首选项。
 
@@ -245,6 +256,7 @@ ht-degree: 18%
 
       * 如果资产没有引用，则资产会被删除。
       * 如果资产具有引用，则会出现一条错误消息，通知您&#x200B;**一个或多个资产被引用**。您可以选择&#x200B;**[!UICONTROL 强制删除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
+
    >[!NOTE]
    >
    >您需要对dam/asset具有删除权限才能删除资产。 如果您只具有修改权限，则只能编辑资产元数据并向资产添加注释。 但是，您无法删除资产或其元数据。
@@ -304,13 +316,14 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL 取消]** ，停止操作
    * **[!UICONTROL 取消发布]** ，以确认在指定日期已取消发布资产(在发布环境中不再可用)。
+
    >[!NOTE]
    >
    >取消发布复杂资产时，仅取消发布资产。 请避免取消发布引用，因为其他已发布的资产可能会引用这些引用。
 
 ## Closed user group {#closed-user-group}
 
-已关闭的用户组(CUG)用于限制对从AEM发布的特定资产文件夹的访问权限。 如果为文件夹创建CUG，则仅对分配的成员或组具有对文件夹（包括文件夹资产和子文件夹）的访问权限。 要访问文件夹，他们必须使用其安全凭据登录。
+已关闭的用户组(CUG)用于限制对从AEM发布的特定资产文件夹的访问。 如果为文件夹创建CUG，则仅对分配的成员或组具有对文件夹（包括文件夹资产和子文件夹）的访问权限。 要访问文件夹，他们必须使用其安全凭据登录。
 
 CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置登录页面。
 
@@ -319,33 +332,33 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
    ![add_user](assets/add_user.png)
 
-1. 要在用户访问文件夹时显示登录屏幕，请选择“启 **[!UICONTROL 用]** ”选项。 然后，在AEM中选择登录页面的路径，并保存更改。
+1. 要在用户访问文件夹时显示登录屏幕，请选择“启 **[!UICONTROL 用]** ”选项。 然后，选择AEM中登录页面的路径，并保存更改。
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >如果未指定登录页面的路径，AEM将在发布实例中显示默认登录页面。
+   >如果不指定登录页面的路径，AEM将在发布实例中显示默认登录页面。
 
 1. 发布文件夹，然后尝试从发布实例访问它。 将显示登录屏幕。
-1. 如果您是CUG成员，请输入您的安全凭据。 AEM对您进行身份验证后，将显示该文件夹。
+1. 如果您是CUG成员，请输入您的安全凭据。 在AEM对您进行身份验证后，将显示文件夹。
 
 ## 搜索资产 {#search-assets}
 
 搜索资产对于数字资产管理系统的使用至关重要——无论是供创意人员进一步使用、供业务用户和营销人员对资产进行可靠管理，还是供DAM管理员管理。
 
-要进行简单、高级和自定义搜索以发现和使用最合适的资产，请参阅 [在AEM中搜索资产](/help/assets/search-assets.md)。
+要进行简单、高级和自定义搜索以发现和使用最合适的资产，请参 [阅在AEM中搜索资产](/help/assets/search-assets.md)。
 
 ## 快速操作 {#quick-actions}
 
 快速操作图标一次只能用于单个资产。根据设备，执行以下操作以显示快速操作图标：
 
-* 触控设备： 触摸并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
-* 非触控设备： 悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，则会显示快速操作栏。
+* 触控设备：触摸并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
+* 非触控设备：悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，则会显示快速操作栏。
 
 ## 编辑图像 {#editing-images}
 
-AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作业。 您可以对图像进行裁剪、旋转、翻转和执行其他编辑作业。 您还可以向资产添加图像映射。
+AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作业。 您可以对图像进行裁剪、旋转、翻转和执行其他编辑作业。 您还可以向资产添加图像映射。
 
 >[!NOTE]
 >
@@ -356,6 +369,7 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
    * 选择资产，然后单击／点按工 **[!UICONTROL 具栏]** 中的编辑图标。
    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
    * 在资产页面中，点按／单击工 **[!UICONTROL 具栏]** 中的编辑图标。
+
    ![edit_icon](assets/edit_icon.png)
 
 1. To crop the image, tap/click the **Crop** icon.
@@ -401,7 +415,7 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
 
 通过时间轴，您可以视图选定项目的各种事件，如资产的活动工作流、注释／注释、活动日志和版本。
 
-![对资产的时间轴条目排序](assets/sort_timeline.gif)*图： 对资产的时间轴条目进行排序*
+![对资产的时间轴条目排序](assets/sort_timeline.gif)*图：对资产的时间轴条目进行排序*
 
 >[!NOTE]
 >
@@ -415,7 +429,7 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
 
 注释是指添加到图像或视频的评论或解释性说明。注释使营销人员能够协作并留下资产反馈。
 
-视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。AEM资产支持的视频格式取决于浏览器。
+视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。AEM Assets支持的视频格式取决于浏览器。
 
 >[!NOTE]
 >
@@ -426,6 +440,7 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
 
    * [快速操作](#quick-actions)
    * 在选择资产或导航到资产页面后，从工具栏中
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. 在时间轴底部的&#x200B;**[!UICONTROL 注释]**&#x200B;框中添加注释。或者，在图像上标出一个区域，然后在&#x200B;**[!UICONTROL 添加批注]**&#x200B;对话框中添加批注。
@@ -543,9 +558,9 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
 
 以下是创建版本的方案：
 
-* 您可以在其他应用程序中修改图像并上传到AEM资产。 将创建图像的某个版本，这样原始图像不会被覆盖。
+* 在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，这样原始图像不会被覆盖。
 * 您可以编辑资产的元数据。
-* 您可以使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建新版本。
+* 您使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建新版本。
 
 您还可以通过工作流启用自动版本控制。 为资产创建版本时，元数据和演绎版会与该版本一起保存。 演绎版是相同图像的替代内容，例如，已上传JPEG文件的PNG演绎版。
 
@@ -624,7 +639,7 @@ AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作�
 
 ## 收藏集 {#collections}
 
-集合是一组有序的资产。 使用集合在用户之间共享资产。
+集合是一组有序的资产。使用集合在用户之间共享资产。
 
 * 收藏集可以包含来自不同位置的资产，因为它们只包含对这些资产的引用。 每个收藏集都保持资产的引用完整性。
 * 您可以与具有不同权限级别的多个用户共享集合，包括编辑、查看等。
