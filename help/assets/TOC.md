@@ -2,11 +2,11 @@
 sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '406'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 5fa5dbd664d4b1e1c93ca03037b8c8340ba6e96f
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 100%
    + [将 URL 关联到您的 Web 应用程序](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [使用规则集转换 URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [发布 Dynamic Media 资产](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [使 CDN 缓存内容无效](dynamic-media/invalidate-cdn-cached-content.md)
+   + [通过Dynamic Media Classic使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [使用选择器](dynamic-media/working-with-selectors.md)
    + [DHTML 查看器生命周期结束常见问题解答](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 查看器生命周期终止通知](dynamic-media/flash-viewers-eol.md)
