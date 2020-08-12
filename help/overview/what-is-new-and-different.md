@@ -2,10 +2,10 @@
 title: Adobe Experience Manager是Cloud Service
 description: '不同和新—Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 11%
+source-wordcount: '1856'
+ht-degree: 10%
 
 ---
 
@@ -116,11 +116,11 @@ Adobe云管理器是AEM作为Cloud Service的持续升级方法的一个组成�
 
 Cloud Manager已演变为自助门户，可在此创建和配置AEM作为Cloud Service的主要组件：
 
-* 在这些项目中创建和管理AEM环境。
+* 创建和管理新项目。 有关更多 [详细信息，请参阅了解项目](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 和项目类型。
 
-* 在这些项目中创建和管理AEM环境。
+* 在这些项目中创建和管理AEM环境。 有关更多 [详细信息](/help/implementing/cloud-manager/manage-environments.md) ，请参阅管理环境。
 
-* 创建并管理将客户代码和相关配置部署到特定环境的管道。
+* 创建并管理将客户代码和相关配置部署到特定环境的管道。 有关更 [多详细信息，请参阅配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md) 。
 
 * 收到这些组件的重要生命周期事件的通知（例如，产品更新）。
 
