@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.8.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 12%
+source-wordcount: '525'
+ht-degree: 11%
 
 ---
 
@@ -13,6 +13,10 @@ ht-degree: 12%
 # [!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明 {#release-notes}
 
 以下部分概述了 Experience Manager 云服务 2020.8.0 版的常规发行说明。
+
+## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
+
+* 默认情 [!DNL Experience Manager Assets] 况下，新部署 [!DNL Adobe Developer Console] 与集成。 它有助于更快地配置智能标记功能。 在现有部署中，管理员 [会像以前一样配置智能](/help/assets/smart-tags-configuration.md#aio-integration) 标记集成。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
