@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.8.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 13%
+source-wordcount: '518'
+ht-degree: 11%
 
 ---
 
@@ -42,9 +42,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 冬眠环境可以从云管理器的概述页面 **解除** 。
 
-* 现在支持身份验证绑定的私有Maven存储库。
-
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多 [详细信息，请参阅](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) “使用Java 11支持”。
 
 ### 错误修复 {#bug-fixes-cm}
 
