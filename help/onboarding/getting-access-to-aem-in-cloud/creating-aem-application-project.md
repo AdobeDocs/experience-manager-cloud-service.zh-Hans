@@ -2,9 +2,9 @@
 title: AEM应用程序项目-Cloud Service
 description: AEM应用程序项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1543'
 ht-degree: 9%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 ## 使用向导创建AEM应用程序项目 {#using-wizard-to-create-an-aem-application-project}
 
-为了帮助新客户入门，Cloud Manger现在能够创建最少的AEM项目作为起点。 此过程基于AEM Project [**Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
+为了帮助新客户入门，Cloud Manger现在能够创建最少的AEM项目作为起点。 此过程基于AEM Project [**Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 
 请按照以下步骤在Cloud Manager中创建AEM应用程序项目：
@@ -59,6 +59,7 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 
 * 构建环境基于Linux，源自Ubuntu 18.04。
 * Apache Maven 3.6.0已安装。
+* 安装的Java版本为Oracle JDK 8u202和11.0.2。
 * 还安装了一些其他系统包，这是必需的：
 
    * bzip2
@@ -75,6 +76,38 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 >[!NOTE]
 >尽管Cloud Manager未定义特定版本，但 `jacoco-maven-plugin`使用的版本至少必须为 `0.7.5.201505241946`。
 
+### 使用Java 11支持 {#using-java-support}
+
+Cloud Manager现在支持使用Java 8和Java 11构建客户项目。 默认情况下，项目是使用Java 8构建的。 希望在其项目中使用Java 11的客户可以使用Maven Toolchains插件进行此操作。
+
+为此，请在pom.xml文件中添加一个 `<plugin>` 如下的条目：
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+
+>[!NOTE]
+>支持的供应商值 `oracle` 是和 `sun`。
+>支持的版本 `1.8`值 `1.11`有、和 `11`。
 
 ## 环境变量 {#environment-variables}
 
@@ -210,7 +243,7 @@ Cloud Manager允许通过Cloud Manager API或Cloud Manager CLI按管道配置这
 
 ## 受密码保护的Maven存储库支持 {#password-protected-maven-repositories}
 
-要从Cloud Manager中使用受密码保护的Maven存储库，请将密码（以及用户名）指定为机密管 [线变量](#pipeline-variables) ，然后在git存储库中名为的文件中引 `.cloudmanager/maven/settings.xml` 用该机密。 此文件遵循“主设 [置文件”模式](https://maven.apache.org/settings.html) 。 当Cloud Manager构建流程开始时，此 `<servers>` 文件中的元素将合并到Cloud Manager提 `settings.xml` 供的默认文件中。 服务器ID从开 `adobe` 始 `cloud-manager` ，被视为保留ID，不应由自定义服务器使用。 Cloud Manager **将** 永远不会镜像与这些前缀之 `central` 一不匹配的服务器ID或默认ID。 在此文件就位后，服务器ID将从文件内的 `<repository>` 和／或 `<pluginRepository>` 元素中引 `pom.xml` 用。 通常，这 `<repository>` 些和/ `<pluginRepository>` 或元素将包含在特 [定于Cloud Manager的用户档案中](#activating-maven-profiles-in-cloud-manager)，尽管这并不是严格必需的。
+要从Cloud Manager中使用受密码保护的Maven存储库，请将密码（以及用户名）指定为机密管 [线变量](#pipeline-variables) ，然后在git存储库中名为的文件中引 `.cloudmanager/maven/settings.xml` 用该机密。 此文件遵循“主设 [置文件”模式](https://maven.apache.org/settings.html) 。 当Cloud Manager构建流程开始时， `<servers>` 此文件中的元素将合并到Cloud Manager提 `settings.xml` 供的默认文件中。 服务器ID从开 `adobe` 始 `cloud-manager` ，被视为保留ID，不应由自定义服务器使用。 Cloud Manager **将** 永远不会镜像与这些前缀之 `central` 一不匹配的服务器ID或默认ID。 在此文件就位后，服务器ID将从文件内的 `<repository>` 和／或 `<pluginRepository>` 元素中引 `pom.xml` 用。 通常，这 `<repository>` 些和/ `<pluginRepository>` 或元素将包含在特 [定于Cloud Manager的用户档案中](#activating-maven-profiles-in-cloud-manager)，尽管这并不是严格必需的。
 
 例如，假设存储库位于https://repository.myco.com/maven2，则Cloud Manager应使用的用户名为， `cloudmanager` 密码为 `secretword`。
 
