@@ -2,10 +2,10 @@
 title: 管理图像预设
 description: 了解图像预设并了解如何创建、修改和管理图像预设
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '3651'
-ht-degree: 28%
+source-wordcount: '3649'
+ht-degree: 26%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 28%
 
 图像预设使AEM Assets能够动态地传送不同大小、不同格式或具有动态生成的其他图像属性的图像。 每个图像预设都代表一组预定义的大小调整和格式设置命令，以用于显示图像。在创建图像预设时，您需要选择图像传送的大小。此外，还需要选择格式设置命令，以确保传送供查看的图像时，显示优化的图像外观。
 
-管理员可以创建用于导出资产的预设。 在导出图像时，用户可以选择预设，此操作也会根据管理员指定的规范重新设置图像的格式。
+管理员可以创建用于导出资产的预设。在导出图像时，用户可以选择预设，此操作也会根据管理员指定的规范重新设置图像的格式。
 
 您还可以创建响应式图像预设。如果对资产应用响应式图像预设，则资产会根据查看资产时所使用的设备或屏幕大小而相应发生更改。除了RGB或灰色外，您还可以将图像预设配置为在色彩空间中使用CMYK。
 
@@ -36,7 +36,7 @@ ht-degree: 28%
 
 ## 管理图像预设 {#managing-image-presets-1}
 
-要在AEM中管理图像预设，请点按或单击AEM徽标以访问全局导航控制台，然后点按或单击工具图标，然后导航到资产>图 **[!UICONTROL 像预设]**。
+要管理AEM中的图像预设，请点按或单击AEM徽标以访问全局导航控制台，然后点按或单击工具图标，然后导航到资产>图 **[!UICONTROL 像预设]**。
 
 ![6_5-tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -56,9 +56,9 @@ ht-degree: 28%
 
 如果您希望支持摄取AI、EPS和PDF文件，以便生成这些文件格式的动态演绎版，您可能需要在创建图像预设之前查看以下信息。
 
-Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets的背景下，主要区别是：
+Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要区别是：
 
-* Adobe Illustrator文档由包含多个图层的单个页面组成。 每个图层都会作为PNG子资源提取到主Illustrator资源下。
+* Adobe Illustrator文档由一页多层组成。 每个层都被提取为主Illustrator资源下的PNG子资产。
 * PDF文档由一个或多个页面组成。 每页都会在主多页PDF文档下提取为单页PDF子资产。
 
 子资产由整个工作流 `Create Sub Asset process` 中的组件创 `DAM Update Asset` 建。 要在工作流中查看此流程组件，请点 **[!UICONTROL 按工具>工作流>模型> DAM更新资产>编辑]**。
@@ -67,7 +67,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets的背景下，�
 
 您可以在打开资产时视图子资产或页面，点按内容菜单，然后选择子 **[!UICONTROL 资产]** 或 **[!UICONTROL 页面]**。 子资产是真实资产。 即，PDF页面由工作流组件 `Create Sub Asset` 提取。 然后，它们会 `page1.pdf`作为 `page2.pdf`、等存储在主资产下。 存储它们后，工作流 `DAM Update Asset` 会处理它们。
 
-要使用Dynamic Media预览AI、EPS或PDF文件并生成动态演绎版，需要执行以下处理步骤：
+要使用Dynamic Media预览和生成AI、EPS或PDF文件的动态演绎版，需要执行以下处理步骤：
 
 1. 在工作 `DAM Update Asset` 流中，流 `Rasterize PDF/AI Image Preview Rendition` 程组件使用配置的分辨率将原始资产的第一页栅格化为演绎 `cqdam.preview.png` 版。
 
@@ -134,17 +134,17 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets的背景下，�
 
 如果要支持摄取INDD文件，以便生成此文件格式的动态演绎版，您可能需要在创建图像预设之前查看以下信息。
 
-对于InDesign文件，仅当Adobe InDesign服务器与AEM集成时，才会提取子资源。 引用的资产会根据其元数据进行链接。 链接不需要InDesign Server。 但是，在处理InDesign文件以获取要在InDesign文件和引用的资产之间创建的链接之前，AEM中必须存在引用的资产。
+对于InDesign文件，仅当Adobe InDesign服务器与AEM集成时，才会提取子资源。 引用的资产会根据其元数据进行链接。 InDesign Server不是链接必需的。 但是，在处理InDesign文件之前，AEM中必须存在引用的资产，才能在InDesign文件和引用的资产之间创建链接。
 
 <!-- See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md). -->
 
 工作流中的媒体提取进程组 `DAM Update Asset` 件运行多个预配置的扩展脚本以处理InDesign文件。
 
-![媒体提取过程参数中的ExtendScript路径](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![媒体提取过程论据中的ExtendScript路径](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-DAM更新资产工作流中媒体提取进程组件参数中的ExtendScript路径。
+DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路径。
 
-以下脚本供Dynamic Media集成使用：
+Dynamic Media集成使用以下脚本：
 
 <table>
  <tbody>
@@ -161,7 +161,7 @@ DAM更新资产工作流中媒体提取进程组件参数中的ExtendScript路�
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>是</td>
-   <td>为每页生成一个300 ppi的JPEG子资产。 JPEG子资产是存储在InDesign资产下的真实资产。 它还经过优化，并通过工作流转换为 <code>DAM Update Asset</code> PTIFF。<br /> </td>
+   <td>为每页生成一个300 ppi的JPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 它还经过优化，并通过工作流转换为 <code>DAM Update Asset</code> PTIFF。<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -173,11 +173,11 @@ DAM更新资产工作流中媒体提取进程组件参数中的ExtendScript路�
 
 ### 配置图像缩略图大小 {#configuring-image-thumbnail-size}
 
-您可以通过在DAM更新资产工作流中配置这些设置来 **[!UICONTROL 配置缩略图的大小]** 。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图&#x200B;**[!UICONTROL 像资产使用一个(Dynamic Media流程图像资产]**)，静态缩略图生成使用另一个（流程缩略图），或者当所有其他进程无法生成缩略图时，这两个进程&#x200B;**[!UICONTROL 应具有相同]**** 的设置。
+您可以通过在DAM更新资产工作流中配置这些设置来 **[!UICONTROL 配置缩略图的大小]** 。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图&#x200B;**[!UICONTROL 像资产使用一个(Dynamic Media Process Image]** Assets)，静态缩略图生成使用另一个(**[!UICONTROL Process Thumbnails]**)，或者当所有其他进程无法生成缩略图时，这两个进程 *应具有相同* 的设置。
 
 在 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中，缩略图由图像服务器生成，此配置与应用于&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤的配置无关。通过&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤生成缩略图是创建缩览图最耗时、内存占用最多的方法。
 
-缩览图大小按以下格式定义： **[!UICONTROL width:height:center]**，例如 *80:80:false*。 宽度和高度决定缩略图的大小（以像素为单位）; 中心值为false或true，如果设置为true，则表示缩略图的大小与配置中指定的大小完全相同。 如果调整大小的图像较小，则图像将居中在缩略图中。
+缩览图大小按以下格式定义： **[!UICONTROL width:height:center]**，例如 *80:80:false*。 宽度和高度决定缩略图的大小（以像素为单位）;中心值为false或true，如果设置为true，则表示缩略图的大小与配置中指定的大小完全相同。 如果调整大小的图像较小，则图像将居中在缩略图中。
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ DAM更新资产工作流中媒体提取进程组件参数中的ExtendScript路�
 **配置图像缩略图大小**
 
 1. 点按 **[!UICONTROL 工具>工作流>模型> DAM更新资产>编辑]**。
-1. 点按Dynamic Media **[!UICONTROL 处理图像资产]** ，然后点按缩略图 **[!UICONTROL 选项卡]** 。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
+1. 点按Dynamic **[!UICONTROL Media Process图像资产步骤]** ，然后点按缩 **[!UICONTROL 略图选]** 项卡。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -207,11 +207,11 @@ DAM更新资产工作流中媒体提取进程组件参数中的ExtendScript路�
 
 ### 增加或减少显示的图像预设数 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-在预览资产时，您创建的图像预设可以作为动态演绎版使用。 从“详细信息”视图>“演绎版”查看资产时，AEM会显 **[!UICONTROL 示各种动态演绎版]**。 您可以增加或减少显示的演绎版限制。
+在预览资产时，您创建的图像预设可以作为动态演绎版使用。 AEM在从详细信息视图>演绎版查看资产时显示 **[!UICONTROL 各种动态演绎版]**。 您可以增加或减少显示的演绎版限制。
 
 **增加或减少显示的图像预设数**
 
-1. 导航到CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
+1. 导航到CRXDE Lite[(](https://localhost:4502/crx/de)https://localhost:4502/crx/de)。
 1. 导航到位于的图像预设列表节点 `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![increase_deximenteumberofimages显示](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -259,7 +259,7 @@ DAM更新资产工作流中媒体提取进程组件参数中的ExtendScript路�
 
 To create a responsive image preset, perform the steps in [Creating Image Presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
 
-将它们留空会告知AEM此图像预设是响应式预设。 您可以根据需要调整其他值。
+将它们留空会告知AEM此图像预设是响应式的。您可以根据需要调整其他值。
 
 >[!NOTE]
 >
@@ -271,13 +271,13 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
 
 ### Image Preset options {#image-preset-options}
 
-在创建或编辑图像预设时，您可以使用本节介绍的几种选项。此外，Adobe建议开始选择以下“最佳实践”选项：
+在创建或编辑图像预设时，您可以使用本节介绍的几种选项。此外，Adobe还建议开始选择以下“最佳实践”选项：
 
-* **[!UICONTROL 格式**（**[!UICONTROL 基本]**&#x200B;选项卡）- 选择 **[!UICONTROL JPEG]** 或其他符合您要求的格式。所有 Web 浏览器都支持 JPEG 图像格式；它可以在小文件大小和图像质量之间实现良好的平衡。但是，JPEG 格式图像使用有损压缩方案，如果压缩设置太低，则会引入不需要的图像伪影。因此，Adobe 建议将压缩质量设置为 75。此设置在图像质量和小文件大小之间提供了良好的平衡。
+* **[!UICONTROL 格式]** (**[!UICONTROL 基本]** 选项卡)-选 **[!UICONTROL 择JPEG]** 或其他符合要求的格式。所有Web浏览器都支持JPEG图像格式；它可以在小文件大小和图像质量之间实现良好的平衡。但是，JPEG格式图像使用有损压缩方案，如果压缩设置太低，会引入不需要的图像伪影。 因此，Adobe 建议将压缩质量设置为 75。此设置在图像质量和小文件大小之间提供了良好的平衡。
 
 * **[!UICONTROL 启用简单锐化]** - 请勿选择&#x200B;**[!UICONTROL 启用简单锐化]**（此锐化滤镜提供的控制度低于“钝化蒙版”设置）。
 
-* **[!UICONTROL 锐化： 重新取样模]** 式——选 **[!UICONTROL 择“双三次”]**。
+* **[!UICONTROL 锐化：重新取样模]** 式——选 **[!UICONTROL 择“双三次”]**。
 
 #### “基本”选项卡选项{#basic-tab-options}
 
@@ -299,14 +299,14 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
    <td><strong>格式</strong></td>
    <td><p>从菜单中选择一个格式。</p> <p>选择 <strong>JPEG</strong> 可提供以下更多选项。</p>
     <ul>
-     <li><strong>质量</strong> -控制JPEG压缩级别。 此设置会影响文件大小和图像质量。 JPEG质量比例为1-100。拖动滑块时，比例可见。</li>
-     <li><strong>启用JPG色度缩减采样</strong> -由于眼睛对高频颜色信息的敏感程度低于高频亮度，因此JPEG图像将图像信息分为明亮度和颜色分量。 当压缩JPEG图像时，明亮度分量将保留为全分辨率，而颜色分量则通过平均一组像素进行缩减采样。 缩减像素采样可将数据量减少一半或三分之一，几乎不会影响感知质量。 缩减像素采样不适用于灰度图像。 此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。</li>
+     <li><strong>质量</strong> -控制JPEG压缩级别。此设置会影响文件大小和图像质量。JPEG质量比例为1-100。拖动滑块时，比例可见。</li>
+     <li><strong>启用JPG色度缩减采样</strong> -由于眼睛对高频颜色信息的敏感程度低于高频亮度，因此JPEG图像将图像信息分为明亮度和颜色分量。当压缩JPEG图像时，明亮度分量将保留为全分辨率，而颜色分量则通过平均一组像素进行缩减采样。缩减像素采样可将数据量减少一半或三分之一，几乎不会影响感知质量。缩减像素采样不适用于灰度图像。此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。</li>
     </ul>
     <div>
       选择 <strong>GIF</strong> 或<strong>带有 Alpha 的 GIF</strong> 可提供以下更多 <strong>GIF 颜色量化</strong>选项：
     </div>
     <ul>
-     <li><strong>类 </strong>型——选 <strong>择</strong> Adaptive <strong>（默认）、</strong>Web <strong>或</strong>Macintosh。 如果您选 <strong>择带有Alpha的GIF</strong>，则Macintosh选项不可用。</li>
+     <li><strong>类 </strong>型——选 <strong>择</strong> Adaptive <strong>（默认）、</strong>Web <strong>或</strong>Macintosh。如果您选 <strong>择带有Alpha的GIF</strong>，则Macintosh选项不可用。</li>
      <li><strong>仿色</strong> -选 <strong>择扩</strong> 散或 <strong>关闭</strong>。</li>
      <li><strong>颜色数目</strong> - 输入介于 2 到 256 之间的一个数字。</li>
      <li><strong>颜色列表</strong> - 输入一个以逗号分隔的列表。例如，对于白色、灰色和黑色，输入 000000,888888,ffffff。</li>
@@ -369,8 +369,8 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
     </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p>
     <ul>
      <li><strong>数量</strong> -控制应用于边缘像素的对比度数量。 默认的实数值为1.0。对于高分辨率图像，最高可将其增加到5.0。可以考虑使用“数量”来衡量滤镜强度。</li>
-     <li><strong>半径</strong> -确定边缘像素周围影响锐化的像素数。 对于高分辨率图像，输入1到2的实数。 低值仅锐化边缘像素； 高值锐化较宽范围的像素。 正确的值取决于图像大小。</li>
-     <li><strong>阈值</strong> -确定应用USM锐化滤镜时要忽略的对比度范围。 换句话说，此选项确定锐化的像素与周围区域必须存在多大的不同，才能被视为边缘像素并进行锐化。 为避免引入杂色，请尝试2到20之间的整数值。 </li>
+     <li><strong>半径</strong> -确定边缘像素周围影响锐化的像素数。 对于高分辨率图像，输入1到2的实数。 低值仅锐化边缘像素；高值锐化较宽范围的像素。 正确的值取决于图像大小。</li>
+     <li><strong>阈值</strong> -确定应用USM锐化滤镜时要忽略的对比度范围。换句话说，此选项确定锐化的像素与周围区域必须存在多大的不同，才能被视为边缘像素并进行锐化。 为避免引入杂色，请尝试2到20之间的整数值。 </li>
      <li><strong>应用于</strong> -确定是否将取消锐化应用于每种颜色或亮度。</li>
     </ul>
     <div>
@@ -381,10 +381,10 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
    <td><strong>重新取样模式</strong></td>
    <td>选择一个<strong>重新取样模式</strong>选项。在缩减像素采样时，这些选项会锐化图像：
     <ul>
-     <li><strong>双线性</strong> -最快速的重新取样方法。 会出现一些锯齿伪像。</li>
+     <li><strong>双线性</strong> -最快速的重新取样方法。会出现一些锯齿伪像。</li>
      <li><strong>两次立方</strong> -提高CPU使用率，但生成较锐利的图像，出现的锯齿伪像较少。</li>
      <li><strong>锐化2</strong> —— 可以生成比两次立方效果更锐利的结果，但CPU成本更高。</li>
-     <li><strong>Bi-Sharp</strong> —— 选择Photoshop默认重新取样器以减小图像大小，在Adobe Photoshop <strong>中称为</strong> “双立方（更锐利）”。</li>
+     <li><strong>Bi-Sharp</strong> —— 选择Photoshop默认重新取样器以减小图像大小，在Adobe Photoshop <strong>称为</strong> “双立方”。</li>
      <li><strong>每种颜色</strong>和<strong>亮度</strong> - 每种方法均可基于颜色或亮度。默认情况下将选择<strong>每种颜色</strong>。</li>
     </ul> </td>
   </tr>
@@ -394,7 +394,7 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
-   <td><p>除了UI中提供的常用图像设置之外，Dynamic Media还支持大量可在图像修饰符字段中指定的高 <strong>级图像修改</strong> 。 这些参数在图像服务器协 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">议命令参考中定义</a>。</p> <p>重要： 不支持API中列出的以下功能：</p>
+   <td><p>除了UI中提供的常见图像设置之外，Dynamic Media还支持许多可在图像修饰符字段中指定的高 <strong>级图像修</strong> 改。 这些参数在图像服务器协 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">议命令参考中定义</a>。</p> <p>重要：不支持API中列出的以下功能：</p>
     <ul>
      <li>基本模板和文本渲染命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code> 和 <code>req=xlate</code></li>
@@ -403,7 +403,7 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>非核心Dynamic Media服务： SVG、图像渲染和Web到打印</li>
+     <li>非核心Dynamic Media服务：SVG、图像渲染和Web到打印</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -417,7 +417,7 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
 
 >[!NOTE]
 >
->某些图像修 [饰符无法在AEM中使用](#advanced-tab-options)。
+>某些图像修 [饰符不能用于AEM](#advanced-tab-options)。
 
 * [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html) —— 反转每个颜色分量以获得负片图像效果。
 
@@ -475,4 +475,4 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
 ### 删除图像预设 {#deleting-image-presets}
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按或单击工具图标，然后导航到 **[!UICONTROL 资产>图像预设]**。
-1. Select a preset, and then click **[!UICONTROL Delete**. Dynamic Media会确认您是否要删除它。 点按 **[!UICONTROL 删除]** ，或点按取 **[!UICONTROL 消]** 以中止。
+1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media会确认您是否要删除它。 点按 **[!UICONTROL 删除]** ，或点按取 **[!UICONTROL 消]** 以中止。
