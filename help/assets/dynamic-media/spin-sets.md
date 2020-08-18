@@ -2,9 +2,9 @@
 title: 旋转集
 description: 了解如何在Dynamic Media中使用旋转集
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1804'
 ht-degree: 37%
 
 ---
@@ -24,13 +24,13 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >有关资产用户界面的信息，请参 [阅使用触屏UI管理资产](/help/assets/manage-digital-assets.md)。
 
-## 快速开始: 旋转集 {#quick-start-spin-sets}
+## 快速开始:旋转集 {#quick-start-spin-sets}
 
 要快速设置并运行旋转集，请执行以下步骤：
 
 1. [上传多个视图的图像。](#uploading-assets-for-spin-sets)
 
-   对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。 拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。 例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
+   对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
 
 1. [创建旋转集。](#creating-spin-sets)
 
@@ -72,7 +72,7 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
 ## 上传旋转集的资产 {#uploading-assets-for-spin-sets}
 
-对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。 拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。 例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
+对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
 
 You can upload images for the Spin Sets as you would [upload any other asset in AEM Assets](/help/assets/manage-digital-assets.md).
 
@@ -80,7 +80,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
 
 以下是关于旋转集图像的一些最佳实践。一般而言，旋转集中的图像越多，图像的旋转效果越好。但是，在旋转集中包含很多图像也会使加载图像所需的时间变长。在拍摄用于旋转集的图像时，AEM 建议遵循以下准则：
 
-* 在一维旋转集中至少使用8-12幅图像，在二维旋转集中至少使用16-24幅图像。 必须至少使用8张图像才能进行360度旋转。 一维旋转集比较常见，因为创建二维旋转集非常繁琐。
+* 在一维旋转集中至少使用8-12幅图像，在二维旋转集中至少使用16-24幅图像。必须至少使用8张图像才能进行360度旋转。一维旋转集比较常见，因为创建二维旋转集非常繁琐。
 * 使用无损格式；建议使用 TIFF 和 PNG。
 * 对所有图像使用蒙版，以使项目显示在纯白或其他高对比度的背景中。或者，也可以添加阴影。
 * 确保充分突出产品细节，使其成为焦点。
@@ -121,7 +121,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
    * 在“旋转集编辑器”页面的中间附近，点按 **[!UICONTROL 以打开资产选择器]**。
    点按以选择要包含在旋转集中的资产。 选定资产上有一个复选标记图标。When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   借助资产选择器，您可以通过键入关键字并点按 **[!UICONTROL 返回**&#x200B;来搜索资产。您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后点按工具栏上的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。点按“视图”图标并选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;可更改视图。
+   借助资产选择器，您可以通过键入关键字并点按&#x200B;**[!UICONTROL 返回]**&#x200B;来搜索资产。您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后点按工具栏上的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。点按“视图”图标并选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;可更改视图。
 
    See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -163,7 +163,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
 
 1. 从搜索中，您可以选择&#x200B;**[!UICONTROL 过滤器]**，然后展开 **[!UICONTROL Dynamic Media]**，并选择&#x200B;**[!UICONTROL 集]**。
 
-   搜索会返回在UI中手动创建或通过批集预设自动创建的匹配集。 对于自动化集，搜索查询使用与AEM `Starts with` 搜索不同的搜索条件(基于使用搜索条件 `Contains` )执行。 将过滤器设 **[!UICONTROL 置为]** “集”是搜索自动集的唯一方法。
+   搜索会返回在UI中手动创建或通过批集预设自动创建的匹配集。 对于自动集，搜索查询使用与AEM搜索 `Starts with` 不同的搜索条件进行，后者基于使用搜索 `Contains` 条件进行。 将过滤器设 **[!UICONTROL 置为]** “集”是搜索自动集的唯一方法。
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -191,7 +191,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
    * 要对图像重新排序，请将图像拖到新位置（选择重新排序图标以移动项目）。
    * 要按升序或降序对项目排序，请单击列标题。
    * To add an asset or update an existing asset, click **[!UICONTROL Add Asset]**. 导航到资产，选择它，然 **[!UICONTROL 后点]** 按右上角附近的选择。
-如果通过将AEM用作缩略图的图像替换为其他图像来删除该图像，则仍会显示原始资产。
+如果通过将缩略图替换为其他图像来删除AEM用的缩略图图像，则仍会显示原始资产。
    * 要删除资产，请选择该资产，然后单击或点按删 **[!UICONTROL 除资产]**。
    * 要应用预设，请点按或单击预设图标，然后选择预设。
    * To delete an entire Spin Set, navigate to the Spin Set, select it, and select **[!UICONTROL Delete]**
