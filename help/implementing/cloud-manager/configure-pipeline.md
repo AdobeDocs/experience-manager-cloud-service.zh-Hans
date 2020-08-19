@@ -2,7 +2,7 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -87,7 +87,7 @@ ht-degree: 0%
    >[!NOTE]
    > 已配置的页面将提交到服务并根据性能、辅助功能、SEO（搜索引擎优化）、最佳实践和PWA（渐进式Web应用程序）测试进行评估。
 
-   有关更多 [详细信息，请参阅](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) “了解内容审核结果”。
+   有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/content-audit-testing.md) “了解内容审核结果”。
 
    单击“ **添加新页面覆盖** ”以提供要包含在内容审核中的URL路径。 添加路径后，单击“保 **存”**。
 
