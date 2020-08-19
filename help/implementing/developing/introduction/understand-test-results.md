@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 3%
 
 ---
@@ -169,6 +169,25 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 测试类必须是普通JUnit测试。 测试基础架构设计并配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳实践。 有关更多 [详细信息](https://github.com/adobe/aem-testing-clients) ，请参阅Git链接。
 
+#### 本地测试执行 {#local-test-execution}
+
+由于测试类是JUnit测试，它们可以从主流Java IDE（如Eclipse、IntelliJ、NetBeans等）运行。
+
+但是，在运行这些测试时，需要设置aem-testing-clients（和基础Sling Testing Clients）预期的各种系统属性。
+
+系统属性如下：
+
+* `sling.it.instances - should be set to 2`
+* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
+* `sling.it.instance.runmode.1 - should be set to author`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
+* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.runmode.2 - should be set to publish`
+* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
+* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+
 ## 内容审核测试 {#content-audit-testing}
 
 内容审核是Cloud Manager Sites Production管道中的一项功能，该管道由Google的开放源代码工具Lighthouse提供支持。 此功能在所有Cloud Manager Production管道中都启用。
@@ -215,22 +234,4 @@ Cloud Manager中的内容审核可确保站点上的最终用户数字体验保�
 单击任何单个页面的详细信息将提供有关已评估页面元素的信息，并指导您在检测到改进机会时修复问题。 测试的细节和相关指导由Google Lighthouse提供。
 
 ![](assets/page-level-scores.png)
-
-## 本地测试执行 {#local-test-execution}
-
-由于测试类是JUnit测试，它们可以从主流Java IDE（如Eclipse、IntelliJ、NetBeans等）运行。
-
-但是，当必须运行这些测试时，必须设置aem测试客户端（和基础Sling测试客户端）预期的各种系统属性。
-
-系统属性如下：
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 
