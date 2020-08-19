@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1703'
 ht-degree: 3%
 
 ---
@@ -36,9 +36,13 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
 请参阅 [配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md) ，进一步了解不同类型的管道。
 
+### 了解自定义代码质量规则 {#understanding-code-quality-rules}
+
 在代码质量测试中，将扫描源代码以确保其部署符合特定质量标准。 目前，这是通过SonarQube和使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则结合了通用Java规则和AEM特定规则。 某些AEM特定规则是根据AEM工程部门的最佳实践创建的，称为“自定 [义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)”。
 
-此步骤的结果将作为评 *级*。 下表总结了各种测试标准的评级：
+您可以在此处下载规则 [列表](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)。
+
+此步骤的结果将作为评 *级*。 下表总结了测试标准的等级：
 
 | 名称 | 定义 | 类别 | 失败阈值 |
 |--- |--- |--- |--- |
@@ -50,9 +54,6 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 | 未解决问题 | 总体问题类型——漏洞、错误和代码气味 | 信息 | > 0 |
 | 复制行 | 重复块中涉及的行数。 <br/>对于要视为重复的代码块： <br/><ul><li>**非Java项目：**</li><li>至少应有100个连续令牌和重复令牌。</li><li>这些令牌至少应在以下位置传播： </li><li>COBOL的30行代码 </li><li>ABAP的20行代码 </li><li>10行代码，适用于其他语言</li><li>**Java项目：**</li><li> 无论令牌和行的数量如何，都至少应有10个连续和重复的语句。</li></ul> <br/>在检测重复时，会忽略缩进和字符串文本中的差异。 | 信息 | > 1% |
 | Cloud Service兼容性 | 已识别的Cloud Service兼容性问题数。 | 信息 | > 0 |
-
-
-您可以在此处下载规 [则列表code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
