@@ -2,7 +2,7 @@
 title: 部署代码-Cloud Services
 description: 部署代码-Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Once you have configured your Production **Pipeline** (repository, environment, 
 
    * 验证：此步骤确保管道配置为使用当前可用的资源，例如，已配置的分支存在，环境可用。
    * 构建和单元测试：此步骤运行容器化构建过程。 有关 [构建环境的详细信](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) 息，请参阅构建环境详细信息。
-   * 代码扫描：此步骤将评估应用程序代码的质量。 有关 [测试过程的详细信](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) 息，请参阅代码质量测试。
+   * 代码扫描：此步骤将评估应用程序代码的质量。 有关 [测试过程的详细信](/help/implementing/cloud-manager/code-quality-testing.md) 息，请参阅代码质量测试。
    * 构建图像：此步骤包含用于构建图像的进程中的日志文件。 此过程负责将构建步骤生成的内容和调度程序包转换为Docker图像和Kubernetes配置。
    * 部署到舞台
 
@@ -51,13 +51,13 @@ Once you have configured your Production **Pipeline** (repository, environment, 
    舞 **台测试**，涉及以下步骤：
 
    * 产品功能测试：Cloud Manager管道执行将支持执行针对舞台环境运行的测试。
-有关更多 [详细信息，请参](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) 阅产品功能测试。
+有关更多 [详细信息，请参](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 阅产品功能测试。
 
    * 自定义功能测试：管道中的此步骤始终存在，无法跳过。 但是，如果生成未生成测试JAR，则默认情况下测试通过。\
-      有关更多 [详细信息，请参](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) 阅自定义功能测试。
+      有关更多 [详细信息，请参](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 阅自定义功能测试。
 
    * 内容审核：管道中的此步骤始终存在，无法跳过。 在执行生产管道时，在将运行检查的自定义功能测试之后包括内容审核步骤。 配置的页面将提交到服务并进行评估。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
-有关更多 [详细信息，请参阅](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) “了解内容审核结果”。
+有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/content-audit-testing.md) “了解内容审核结果”。
 
       ![](assets/testing-tab.png)
 
