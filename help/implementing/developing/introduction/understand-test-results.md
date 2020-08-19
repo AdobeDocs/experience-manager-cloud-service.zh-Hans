@@ -2,9 +2,9 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1700'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,13 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
 ## 代码质量测试 {#code-quality-testing}
 
-作为管道的一部分，将扫描源代码，以确保部署符合特定质量标准。 目前，这是通过SonarQube和使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则结合了通用Java规则和AEM特定规则。 下表总结了测试标准的等级：
+此步骤将评估应用程序代码的质量。 它是仅代码质量管道的核心目标，在所有非生产和生产管道中立即执行构建步骤。
+
+请参阅 [配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md) ，进一步了解不同类型的管道。
+
+在代码质量测试中，将扫描源代码以确保其部署符合特定质量标准。 目前，这是通过SonarQube和使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则结合了通用Java规则和AEM特定规则。 某些AEM特定规则是根据AEM工程部门的最佳实践创建的，称为“自定 [义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)”。
+
+此步骤的结果将作为评 *级*。 下表总结了各种测试标准的评级：
 
 | 名称 | 定义 | 类别 | 失败阈值 |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 | Cloud Service兼容性 | 已识别的Cloud Service兼容性问题数。 | 信息 | > 0 |
 
 
+您可以在此处下载规 [则列表code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
+
 >[!NOTE]
 >
 >有关更 [详细的定义](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，请参阅度量定义。
 
-您可以在此处下载规 [则列表code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -60,7 +67,7 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
 质量扫描过程并不完美，有时会错误地识别实际上没有问题的问题。 这称为“假阳性”。
 
-在这些情况下，可以使用标准Java注释对源代码进 `@SuppressWarnings` 行注释，该标准Java注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
+在这些情况下，可以使用标准Java注释对源代 `@SuppressWarnings` 码进行注释，该注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
 
 要查看特定示例，此代码在AEM项目中很常见，该项目具有连接到某些外部服务的代码：
 
@@ -171,7 +178,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. 不要在这些维度中包含回归。
 
-Cloud Manager中的内容审核可确保站点上的最终用户数字体验能够保持为最高标准。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
+Cloud Manager中的内容审核可确保站点上的最终用户数字体验保持为最高标准。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
 
 ### 了解内容审核结果 {#understanding-content-audit-results}
 
