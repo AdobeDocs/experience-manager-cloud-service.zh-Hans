@@ -2,7 +2,7 @@
 title: AEM应用程序项目-Cloud Service
 description: AEM应用程序项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 9%
@@ -418,4 +418,4 @@ Cloud Manager允许通过Cloud Manager API或Cloud Manager CLI按管道配置这
 * [管理环境](/help/implementing/cloud-manager/manage-environments.md)
 * [配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md)
 * [部署代码](/help/implementing/cloud-manager/deploy-code.md)
-* [了解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
+* [了解测试结果](/help/implementing/cloud-manager/overview-test-results.md)
