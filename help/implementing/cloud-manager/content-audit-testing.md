@@ -2,9 +2,9 @@
 title: 内容审核测试-Cloud Services
 description: 内容审核测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 内容审核测试 {#content-audit-testing}
 
-内容审核是Cloud Manager Sites Production管道中的一项功能，该管道由Google的开放源代码工具Lighthouse提供支持。 此功能在所有Cloud Manager Production管道中都启用。
+内容审核是Cloud Manager Sites Production管道中的一项功能，该管道是Google提供的一个开放源码工具。 此功能在所有Cloud Manager Production管道中都启用。
 
 它可验证部署过程并有助于确保部署了更改：
 
