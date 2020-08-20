@@ -2,7 +2,7 @@
 title: 部署代码-Cloud Services
 description: 部署代码-Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 使用Cloud Manager部署代码 {#deploying-code-with-cloud-manager}
 
-Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+配置Production Pipeline(存储库、环境和测试环境)后，即可部署代码。
 
 1. 单 **击** “从云管理器部署”以开始部署过程。
 
