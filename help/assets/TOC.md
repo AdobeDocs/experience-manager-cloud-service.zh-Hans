@@ -3,10 +3,10 @@ sub-product: AEM Assets 云服务
 user-guide-title: AEM Assets 云服务
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: f7e61c6544920ea38ceb4b455412e5e3ac32e476
+source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 97%
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
    + [签入和签出要编辑的资产](check-out-and-submit-assets.md)
    + [资产的数字版权管理](drm.md)
 + 配置、管理和扩展资产 {#admin}
-   + [API 和参考资料](developer-reference-material-apis.md)
+   + [开发人员文档和API参考](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
    + [关于使用图像配置文件和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [配置智能标记](smart-tags-configuration.md)
