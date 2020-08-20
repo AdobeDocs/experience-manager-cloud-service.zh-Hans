@@ -1,11 +1,11 @@
 ---
-title: 从 AEM 下载资产
-description: 了解如何从AEM下载资产以及启用或禁用下载功能。
+title: Download assets from [!DNL Adobe Experience Manager Assets].
+description: 下载资 [!DNL Adobe Experience Manager Assets] 源以启用或禁用下载功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
+source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '747'
 ht-degree: 7%
 
 ---
@@ -21,17 +21,14 @@ ht-degree: 7%
 
 无法下载图像集、旋转集、混合媒体集和传送集等资产类型。
 
-**要下载资源，**
+要下载资产，请按照以下步骤操作：
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. 在导航页面上，点按资 **[!UICONTROL 产>文件]**。
-1. 导航到包含要下载的资产的文件夹。
-1. 选择文件夹，或在文件夹中选择一个或多个资产。
-1. On the toolbar, tap **[!UICONTROL Download]**.
+1. 在Experience Manager用户界面中，单击 **[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
+1. 导航到要下载的资产。 选择文件夹，或在文件夹中选择一个或多个资产。 在工具栏中，单击“ **[!UICONTROL 下载]**”。
 
-   ![从Experience Manager资产下载资产时可用的选项](/help/assets/assets/asset-download1.png)
+   ![从下载资产时可用的选项 [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-   *下载对话框选项。*
+   *图：下载对话框选项。*
 
 1. 在“下载”对话框中，选择所需的下载选项。
 
@@ -44,14 +41,13 @@ ht-degree: 7%
    | **[!UICONTROL 智能裁剪]** | 选择此选项可从AEM中下载选定资产的所有智能裁剪演绎版。 系统会创建包含智能裁剪演绎版的zip文件，并将其下载到您的本地计算机。 |
    | **[!UICONTROL 动态演绎版]** | 选择此选项可实时生成一系列替代再现。 When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](/help/assets/dynamic-media/image-presets.md) list. <br>此外，您还可以选择大小和度量单位、格式、色彩空间、分辨率以及任何可选的图像修饰符（如反转图像）。 此选项仅在您已启用的情况下才 [!DNL Dynamic Media] 可用。 |
 
-1. 在对话框中，点按下 **[!UICONTROL 载]**。
-
+1. 在对话框中，单击“ **[!UICONTROL 下载]**”。
 
 ## 启用资产下载servlet {#enable-asset-download-servlet}
 
 AEM中的默认servlet允许经过身份验证的用户发出任意大的并发下载请求，以创建对他们可见的资产的ZIP文件，这些文件可能会使服务器和网络过载。 为了减轻由此功能引起的潜在DoS风险， `AssetDownloadServlet` 默认情况下，发布实例会禁用OSGi组件。
 
-要允许从DAM下载资产，例如，在使用诸如资产共享共享共享资源或其他类似门户的实施时，请通过OSGi配置手动启用servlet。 Adobe建议尽可能将允许的下载大小设置为最小，而不影响日常下载要求。 高价值可能会影响性能。
+要允许从DAM下载资产，例如，在使用诸如资产共享共享共享资源或其他类似门户的实施时，请通过OSGi配置手动启用servlet。 Adobe建议尽可能低地设置允许的下载大小，而不影响日常下载要求。 高价值可能会影响性能。
 
 1. 创建一个具有命名约定的文件夹，该命名约定目标发布运行模式，即 `config.publish`:
 
@@ -67,7 +63,7 @@ AEM中的默认servlet允许经过身份验证的用户发出任意大的并发�
 
 ## 禁用资产下载servlet {#disable-asset-download-servlet}
 
-通过 `Asset Download Servlet` 更新调度程序配置以阻止任何资产下载请求，可以在AEM Publish实例上禁用该功能。 也可以直接通过OSGi控制台手动禁用servlet。
+通过 `Asset Download Servlet` 更新调度程序配置来阻止任何资产下载请求，可以在AEM发布实例上禁用该功能。 也可以直接通过OSGi控制台手动禁用servlet。
 
 1. 要通过调度程序配置阻止资产下载请求，请 `dispatcher.any` 编辑配置，并向过滤器部分添加 [新规则](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。
 
@@ -76,6 +72,6 @@ AEM中的默认servlet允许经过身份验证的用户发出任意大的并发�
 >[!MORELIKETHIS]
 >
 >* [下载受DRM保护的资源](drm.md)
->* [在Win或Mac桌面上使用AEM桌面应用程序下载资源](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [从支持的Adobe Creative Cloud应用程序中使用Adobe Assets Link下载资产](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+>* [从支持的Adobe应用程序中使用Adobe Creative Cloud资产链接下载资产](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
