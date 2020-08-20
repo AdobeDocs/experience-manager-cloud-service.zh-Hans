@@ -2,10 +2,10 @@
 title: 代码质量测试-Cloud Services
 description: 代码质量测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 2%
+source-wordcount: '831'
+ht-degree: 1%
 
 ---
 
@@ -16,14 +16,26 @@ ht-degree: 2%
 
 请参阅 [配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md) ，进一步了解不同类型的管道。
 
-## 了解自定义代码质量规则 {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 在“代码质量测试”中，将扫描源代码，确保它满足某些质量标准。 目前，这是通过SonarQube和使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则结合了通用Java规则和AEM特定规则。 某些AEM特定规则是根据AEM工程部门的最佳实践创建的，称为“自定 [义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)”。
 
 >[!NOTE]
 >您可以在此处下载规则的完整 [列表](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)。
 
-此步骤的结果将作为评 *级*。 下表总结了测试标准的等级：
+**三层门**
+
+此代码质量测试步骤中有三层结构，用于解决已发现的问题：
+
+* **关键**:这些问题由门确定，导致管道立即失效。
+
+* **重要说明**:这些是由门标识的问题，导致管道进入暂停状态。 部署经理、项目经理或业务所有者可以改写问题，在这种情况下，管道将继续，或者他们可以接受问题，在这种情况下，管道会因故障而停止。
+
+* **信息**:这些问题由网关确定，它们仅用于提供信息，对管道执行没有影响
+
+此步骤的结果将作为评 *级提供*。
+
+下表总结了每个“严重”、“重要”和“信息”类别的等级和故障阈值：
 
 | 名称 | 定义 | 类别 | 失败阈值 |
 |--- |--- |--- |--- |
