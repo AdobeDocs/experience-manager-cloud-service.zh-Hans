@@ -2,9 +2,9 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产 [!DNL Adobe Experience Manager] 添加为Cloud Service。
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1320'
 ht-degree: 4%
 
 ---
@@ -110,7 +110,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >在名称冲 **[!UICONTROL 突]** 对话框 [!UICONTROL 中选择替] 换时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
 >
->如果启用“资产分析”以通过Adobe Analytics跟踪展示次数／点击次数，则重新生成的资产ID将使Analytics上为资产捕获的数据无效。
+>如果启用“资产分析”以通过Adobe Analytics跟踪展示次数／点击次数，则重新生成的资产ID将使在Analytics上为资产捕获的数据失效。
 
 要在中保留重复资 [!DNL Assets]产，请单 **[!UICONTROL 击保留]**。 要删除您上传的重复资产，请点按／单击 **[!UICONTROL 删除]**。
 
@@ -154,14 +154,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [元数据用户档案](metadata-profiles.md) 允许您将默认元数据属性应用到上传到该文件夹的资产
 * [处理用户档案](asset-microservices-configure-and-use.md) 允许您生成默认情况下可能的更多再现。
 
-此外，如果Dynamic Media在您的环境中处于启用状态：
+此外，如果您的环境中启用了Dynamic Media:
 
-* [Dynamic Media图像用户档案](dynamic-media/image-profiles.md) 允许您对上传的资产应&#x200B;**[!UICONTROL 用特定裁剪]** （智能裁剪和像素裁剪）和锐化配置。
+* [Dynamic Media图像用户档案](dynamic-media/image-profiles.md) 允许您将特定裁剪(**[!UICONTROL 智能裁剪]** 和像素裁剪)和锐化配置应用于上传的资产。
 * [Dynamic Media视频用户档案](dynamic-media/video-profiles.md) 允许您应用特定的视频编码用户档案（分辨率、格式、参数）。
 
 >[!NOTE]
 >
->Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原始内容，而是为传送资产时要进行的裁剪或媒体转换提供参数
+>Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行裁剪或媒体转换的参数
 
 对于分配了处理用户档案的文件夹，用户档案名显示在卡视图的缩略图上。 在列表视图中，用户档案名称显示在处理 **[!UICONTROL 用户档案列]** 。
 
