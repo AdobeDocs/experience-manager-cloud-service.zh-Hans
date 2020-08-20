@@ -3,7 +3,7 @@ title: 配置和使用资产微服务进行资产处理
 description: 了解如何配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
+source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# 使用资产微服务和处理用户档案 {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -70,7 +70,7 @@ Experience Manager允许以下级别的处理。
 
 [!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹以完成附加处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
 
-* **演绎版宽度和高度**:演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成最大可能的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
+* **演绎版宽度和高度**:演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成尽可能大的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
 
 * **MIME类型包含规则**:当处理具有特定MIME类型的资产时，会首先根据演绎版规范的已排除MIME类型值检查MIME类型。 如果它与该列表匹配，则不会为资产(阻止列表)生成此特定再现。 否则，将根据包含的MIME类型检查MIME类型，如果它与列表匹配，则会生成演绎版(允许列表)。
 
@@ -121,7 +121,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 开发人员可以使用 [!DNL Asset Compute Service] 创建 [符合受支持用例](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 的自定义应用程序。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义应用程序。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
 * 使用 [!DNL Adobe Photoshop]的ImageCutout [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，并将结果另存为再现。
-* 调用第三方系统以更新数据，例如PIM系统。
+* 呼叫第三方系统以更新数据，例如PIM系统。
 * 使用 [!DNL Photoshop] API根据Photoshop模板生成各种再现。
 * 使用 [Adobe](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) LightroomAPI优化所摄取的资产并将其另存为演绎版。
 
