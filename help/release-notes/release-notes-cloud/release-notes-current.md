@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.8.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 27f9f4441a95964a4ae0db798577510c726133c5
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 11%
@@ -36,7 +36,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 内容审核是在Cloud Manager Sites Production Pipelines中启用的一项功能。 具有站点的项目的生产管道配置现在包括名为内容审核的第三 **个选项卡**。 每当运行生产管道时，在进行自定义功能测试后，管道中将包括新的内容审核步骤，该测试将根据包括性能、SEO（搜索引擎优化）、辅助功能、最佳实践和PWA（渐进式Web应用程序）在内的多个维度评估站点。
 
-   Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
+   Refer to [Content Audit Testing](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
 
 * 现在，资产项目中新创建的环境将自动配置智能内容服务。
 
