@@ -2,9 +2,9 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何在AEM中将Dynamic Media组件添加到页面
 translation-type: tm+mt
-source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3121'
 ht-degree: 32%
 
 ---
@@ -107,9 +107,9 @@ ht-degree: 32%
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
-### 组件： Dynamic Media {#dynamic-media-component}
+### 组件：Dynamic Media {#dynamic-media-component}
 
-Dynamic Media组件是智能的。 根据您添加的是图像还是视频，您有各种选项。 该组件支持图像预设、基于图像的查看器（例如图像集、旋转集、混合媒体集）和视频。此外，查看器是响应式的——屏幕大小会根据屏幕大小自动更改。 所有查看器都是 HTML5 查看器。
+Dynamic Media组件是智能的。根据您添加的是图像还是视频，您有各种选项。 该组件支持图像预设、基于图像的查看器（例如图像集、旋转集、混合媒体集）和视频。此外，查看器是响应式的——屏幕大小会根据屏幕大小自动更改。 所有查看器都是 HTML5 查看器。
 
 >[!NOTE]
 >
@@ -189,9 +189,9 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 >
 >默认情况下，Dynamic Media 视频组件为自适应组件。If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-* **[!UICONTROL查看器预设**-从下拉菜单中选择现有的视频查看器预设。 如果未显示您要查找的查看器预设，则可能需要将其显示出来。请参阅管理查看器预设。
+* **[!UICONTROL 查看器预设]**-从下拉菜单中选择现有的视频查看器预设。 如果未显示您要查找的查看器预设，则可能需要将其显示出来。请参阅管理查看器预设。
 
-* **[!UICONTROL查看器修饰符**-查看器修饰符采用名称=值对和分隔符的形式，允许您根据《Adobe查看器参考指南》中的概述更改查看器。 查看器修饰符的示例为 `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL 查看器修饰符]**-查看器修饰符采用名称=值对和分隔符的形式，允许您根据《Adobe查看器参考指南》中的概述更改查看器。 查看器修饰符的示例为 `posterimage=img.jpg&caption=text.vtt,1`
 
    例如，通过查看器修饰符，可以执行以下操作：
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Title**—— 更改视频的标题。
+* **[!UICONTROL 标题]**-更改视频的标题。
 
 * **[!UICONTROL 宽度]**-如果希望图像具有固定大小，请输入以像素为单位的值。 将此值留空可使资产具有自适应性。
 
@@ -210,7 +210,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
 使用Dynamic Media组件将智能裁剪图像资产添加到您的网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
 
-请参 [阅将智能裁剪与AEM资产动态媒体结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+请参 [阅将智能裁剪与AEM Assets动态媒体结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 另请参阅 [图像用户档案](/help/assets/dynamic-media/image-profiles.md)。
 
@@ -244,11 +244,11 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL 高度]**-如果希望图像具有固定大小，请以像素为单位输入值。 将此值留空可使资产具有自适应性。
 
-### 组件： 交互式媒体 {#interactive-media-component}
+### 组件：交互式媒体 {#interactive-media-component}
 
 交互式媒体组件适用于具有交互功能的资产，例如热点或图像映射。如果您具有交互式图像、交互式视频或传送横幅，请使用&#x200B;**[!UICONTROL 交互式媒体]**&#x200B;组件。
 
-交互式媒体组件是智能的。 根据您添加的是图像还是视频，您有各种选项。 此外，查看器是响应式的——屏幕大小会根据屏幕大小自动更改。 所有查看器都是 HTML5 查看器。
+交互式媒体组件是智能的。根据您添加的是图像还是视频，您有各种选项。 此外，查看器是响应式的——屏幕大小会根据屏幕大小自动更改。 所有查看器都是 HTML5 查看器。
 
 >[!NOTE]
 >
@@ -283,7 +283,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 * **[!UICONTROL 显示产品表单]**-默认情况下，此值未选中。 产品表单包含所有产品变量，例如大小和颜色。清除复选标记不会显示产品变量。
 
-### 组件： 全景媒体 {#panoramic-media-component}
+### 组件：全景媒体 {#panoramic-media-component}
 
 全景媒体组件适用于那些球面全景图像的资源。 这些图像提供房间、房产、位置或风景的360°查看体验。 要使图像成为球面全景图，它必须具有以下任一或两项：
 
@@ -313,11 +313,11 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 如果未显示您要查找的查看器预设，请检查以确保其已发布。 您必须先发布查看器预设，然后才能使用它们。 请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-### 组件： 视频360媒体 {#video-media-component}
+### 组件：视频360媒体 {#video-media-component}
 
 使用视 **[!UICONTROL 频360媒体组件]** ，在您的网页上渲染等长形视频，让您能够沉浸式地观看房间、房产、位置、风景或医疗过程。
 
-在平面显示器上播放时，用户可以控制观看角度； 在移动设备上播放通常利用其内置的陀螺仪控件。
+在平面显示器上播放时，用户可以控制观看角度；在移动设备上播放通常利用其内置的陀螺仪控件。
 
 查看器包含对360个视频资源投放的本机支持。 默认情况下，查看或回放不需要任何其他配置。 您可以使用标准视频扩展（如。mp4、.mkv和。mov）交付360视频。 最常见的编解码器是H.264。
 
@@ -339,8 +339,8 @@ HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器�
 >
 >* [在AEM Dynamic Media中使用视频播放器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
 >* [将交互式视频与AEM Dynamic Media结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [了解使用AEM Dynamic Media的资产查看器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [使用AEM Dynamic Media了解资产查看器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
 >* [将自定义视频缩略图与AEM Dynamic Media结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [了解使用AEM Dynamic Media进行颜色管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [使用AEM Dynamic Media了解颜色管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
 >* [将图像锐化与AEM Dynamic Media结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
