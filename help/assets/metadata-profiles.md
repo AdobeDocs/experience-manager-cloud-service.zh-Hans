@@ -3,17 +3,17 @@ title: 元数据配置文件
 description: 了解资产的元数据用户档案。 了解如何创建元数据用户档案并将其应用到文件夹资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1246'
-ht-degree: 38%
+ht-degree: 37%
 
 ---
 
 
 # 元数据配置文件 {#metadata-profiles}
 
-通过元数据用户档案，您可以将默认元数据应用到文件夹内的资产。 创建元数据用户档案并将其应用到文件夹。 您随后上传到文件夹的任何资产都会继承您在元数据用户档案中配置的默认元数据。
+通过元数据用户档案，您可以将默认元数据应用到文件夹内的资产。创建元数据用户档案并将其应用到文件夹。您随后上传到文件夹的任何资产都会继承您在元数据用户档案中配置的默认元数据。
 
 ## 添加元数据用户档案 {#adding-a-metadata-profile}
 
@@ -23,9 +23,9 @@ ht-degree: 38%
 Edit the following properties for the **[!UICONTROL Description]** component:
 
    * **[!UICONTROL 字段标签]** -元数据属性的显示名称。 仅供用户参考。
-   * **[!UICONTROL 映射到属性]** -此属性的值提供资产节点在存储库中保存的相对路径／名称。 该值应始终与开始 `./` ，因为它指示该路径位于资产的节点下。
+   * **[!UICONTROL 映射到属性]** -此属性的值提供资产节点在存储库中保存的相对路径／名称。该值应始终与开始 `./` ，因为它指示该路径位于资产的节点下。
 
-      您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值会作为属性存储在资产的元数据节点下。例如，如果您指定`/jcr:content/metadata/dc:desc` 作为映射到属 **[!UICONTROL 性的名称]**,AEM Assets会将值 `dc:desc` 存储在资产的元数据节点。
+      您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值会作为属性存储在资产的元数据节点下。例如，如果您指定`/jcr:content/metadata/dc:desc` 作为映射到属 **[!UICONTROL 性的名称]**,AEM Assets将值 `dc:desc` 存储在资产的元数据节点。
 
    * **[!UICONTROL 默认值]** -使用此属性为元数据组件添加默认值。 For example, if you specify &quot;My description&quot; then this value is assigned to the property `dc:desc` at the asset&#39;s metadata node.
 
@@ -89,11 +89,11 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. In the left rail, tap **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
 1. 在文件夹中，点按或单击复选标记以将其选中，然后点按或单击 **属性**。
-1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后点按&#x200B;**保存]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[Save]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 ### 全局应用元数据用户档案 {#applying-a-metadata-profile-globally}
 
-除了将用户档案应用到文件夹外，您还可以全局应用一个用户档案，以便上传到任何文件夹中的AEM资产的任何内容都已应用选定的。
+除了将用户档案应用到文件夹之外，您还可以全局应用一个用户档案，以便上传到任何文件夹中的AEM资产的任何内容都应用了选定的。
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
@@ -119,6 +119,6 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
 ### 通过属性从文件夹删除元数据用户档案 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 点按AEM徽标，导 **[!UICONTROL 航资产]** ，然后导航到您要从中删除元数据用户档案的文件夹。
+1. 点按AEM徽标并导 **[!UICONTROL 航]** “资产”，然后导航到您要从中删除元数据用户档案的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按 **[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
