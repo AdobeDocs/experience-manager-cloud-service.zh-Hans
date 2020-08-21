@@ -2,9 +2,9 @@
 title: 将 URL 关联到您的 Web 应用程序
 description: 如何在Dynamic Media中将URL关联到您的Web应用程序
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1271'
 ht-degree: 27%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 27%
 
 您的网站和应用程序通过URL调用访问Dynamic Media服务。 在您发布资产后，Dynamic Media 会激活引用该资产的 URL 字符串。您可以将这些 URL 粘贴到 Web 浏览器中以进行测试。
 
-仅当您未将AEM用作WCM *时* ，才链接到URL。 链接与嵌入——用于以弹出窗口或模态窗口的形式传送视频播放器。 如果您将AEM用作WCM, [则可以直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
+仅当您未将AEM用作 *WCM* 时，才链接到URL。 链接与嵌入——用于以弹出窗口或模态窗口的形式传送视频播放器。 如果您使用AEM作为WCM, [则直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
 
 要将这些URL字符串放置到网页和应用程序中，请从Dynamic Media复制它们。
 
@@ -116,7 +116,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 
 ## 获取已发布视频演绎版的视频URL {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. 在AEM中，导航到 **[!UICONTROL 工具>部署>云>云服务]**。
+1. 在AEM中，导航到 **[!UICONTROL 工具>部署>云>Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
 1. 在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下，点按所需配置的名称。
 
@@ -126,20 +126,20 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (以上路径仅供说明； 它不是您复制的实际路径。)
+   (以上路径仅供说明；它不是您复制的实际路径。)
 
 1. 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。
 
    例如，如果注册ID为 `87654321|MyCompany`，则客户名称为 `MyCompany`。
 
-1. 在页面的左上角附近，点 **按[!UICONTROL Cloud Services**，然后点按AEM图标并导航 **[!UICONTROL 到常规> CRXDE Lite]**。
+1. 在页面的左上角附近，点按 **[!UICONTROL Cloud Services]**，然后点按AEM图标并导航 **[!UICONTROL 到常规>CRXDE Lite]**。
 1. 从JCR（Java内容存储库）中向下复制整个视频再现路径。
 
    例如，视频的再现路径可能与以下内容类似：
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (以上路径仅供说明； 它不是您复制的实际路径。)
+   (以上路径仅供说明；它不是您复制的实际路径。)
 
 1. 按照以下顺序排列复制的信息，以形成完整的URL路径：
 
@@ -153,15 +153,16 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 
 ## 获取自适应流播放(HLS)的视频URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. 在AEM中，导航到 **[!UICONTROL 工具>部署>云>云服务]**。
+1. 在AEM中，导航到 **[!UICONTROL 工具>部署>云>Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
 1. 在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下，点按所需配置的名称。
-1. 在Dynamic Media **[!UICONTROL Cloud服务设置页]** ，执行以下操作：
+1. 在Dynamic Media **[!UICONTROL Cloud Services设置页]** ，执行以下操作：
 
    * 在“ **[!UICONTROL 视频服务]** URL”下，复制整个URL路径。 在这些步骤之后，您将需要复制的URL路径。 例如，URL路径可能与以下内容类似：
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (以上路径仅供说明； 它不是您复制的实际路径。)
+   (以上路径仅供说明；它不是您复制的实际路径。)
 
    * 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。在稍后这些步骤中，您将需要复制的客户名称。
 
@@ -187,7 +188,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
     </tbody>
    </table>
 
-1. 在AEM中复制Dynamic Media处理的完整视频资产路径。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
+1. 在AEM中复制完整的视频资产路径，由Dynamic Media处理。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
 
    例如：
 
