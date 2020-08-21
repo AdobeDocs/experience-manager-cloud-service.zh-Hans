@@ -2,9 +2,9 @@
 title: 使用选择器
 description: 为交互式图像、交互式视频和旋转横幅选择资源
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 在创建传送集、添加热点和图像映射、创建交互式视频和图像时，您可以访问选择器。
 
-例如，在此传送横幅中，如果要将热点或图像映射链接到概览页面，则使用产品选择器； 如果要将热点或图像映射链接到超链接，请使用站点选择器； 创建新幻灯片时，请使用资产选择器。
+例如，在此传送横幅中，如果要将热点或图像映射链接到概览页面，则使用产品选择器；如果要将热点或图像映射链接到超链接，请使用站点选择器；创建新幻灯片时，请使用资产选择器。
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
@@ -30,7 +30,7 @@ ht-degree: 18%
 
 1. 导航到传送集、交互式图像或交互式视频，然后点按“ **[!UICONTROL Actions]** ”（操作）选项卡（仅当您定义了热点或图像映射时可用）。
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -42,11 +42,11 @@ ht-degree: 18%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以通过点按浏览并导航到其他文件夹来更改AEM浏 **[!UICONTROL 览产]** 品数据的位置。
+   通过点按浏览并导航到其他文件夹，可以更 **[!UICONTROL 改AEM]** 浏览产品数据的位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   点按 **[!UICONTROL 排序]** ，以更改AEM按从新到旧还是从旧到最新的排序方式。
+   点按 **[!UICONTROL 排序]** ，以更改AEM按最新到最旧还是最旧到最新排序。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ ht-degree: 18%
 
 ## 在Dynamic Media中选择站点 {#selecting-sites}
 
-当您希望热点或图像映射链接到在AEM站点中管理的网页时，请使用站点选择器选择网页。
+当您希望热点或图像映射链接到AEM站点内管理的网页时，请使用站点选择器选择网页。
 
 1. 导航到传送集、交互式图像或交互式视频，然后点按“ **[!UICONTROL Actions]** ”（操作）选项卡（仅当您定义了热点或图像映射时可用）。
 
@@ -80,7 +80,7 @@ ht-degree: 18%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 在预览 **[!UICONTROL 模式]** 中，如果点按热点或图像映射，则导航到您指定的AEM站点页面。
+1. 在预览 **[!UICONTROL 模式]** 下，如果点按热点或图像映射，则导航到您指定的AEM站点页面。
 
 ## 在Dynamic Media中选择资产 {#selecting-assets}
 
