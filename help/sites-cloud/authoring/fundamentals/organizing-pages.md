@@ -1,9 +1,9 @@
 ---
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
-translation-type: ht
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -385,7 +385,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
          ![异步页面移动](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-可在[**异步作业状态&#x200B;**功能板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)（位于**&#x200B;全局导航&#x200B;**->**&#x200B;工具&#x200B;**->**&#x200B;操作&#x200B;**->**&#x200B;作业&#x200B;**）中查看异步作业的状态
+可在&#x200B;[**异步作业状态**&#x200B;功能板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)（位于&#x200B;**全局导航** -> **工具** -> **操作** -> **作业**）中查看异步作业的状态
 
 >[!NOTE]
 >
