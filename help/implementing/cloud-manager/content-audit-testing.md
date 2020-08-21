@@ -2,7 +2,7 @@
 title: 内容审核测试-Cloud Services
 description: 内容审核测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
+source-git-commit: 27f9f4441a95964a4ae0db798577510c726133c5
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
