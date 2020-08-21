@@ -2,9 +2,9 @@
 title: 视频
 description: 了解如何在Dynamic Media中处理视频
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '10057'
+source-wordcount: '10056'
 ht-degree: 29%
 
 ---
@@ -690,7 +690,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 点按 AEM 左上角的 AEM 徽标，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。
 1. 单击 **[!UICONTROL 默认]**。 （请勿在“default”左侧的选择框中添加复选标记。）
-1. 在&#x200B;**[!UICONTROL 默认]**&#x200B;页面，选中&#x200B;**[!UICONTROL 视频]**&#x200B;左侧的框，然后单击&#x200B;**编辑]**。
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[Edit]**.
 1. 在元数据模式编辑器页面上，单击高 **[!UICONTROL 级选]** 项卡。
 1. 在“YouTube 发布”标题下，单击 **[!UICONTROL YouTube 类别]**。
 1. 在页面右侧的设置选项卡 **[!UICONTROL 下]** ，执行以下操作：
@@ -724,7 +724,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * （可选）在页面右侧的“设置”选项卡下，在“字段标签”文本字段中输入 `YouTube Publishing`。
    * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you just created.
 
-   * Click **[!UICONTROL Field Label** to select the component.
+   * Click **[!UICONTROL Field Label]** to select the component.
    * 在页面右侧的“设置”选项卡下，将您之前复制的YouTube发布值（字段标签值和映射到属性值）粘贴到表单的各自字段中。 将选择值粘贴到默认值字段中。
 
 1. 通过执行以下操作，将复制的YouTube隐私值添加到用户档案:
@@ -862,7 +862,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 有关进行中的工作流，请参阅“工具”>“工作流” **[!UICONTROL >“实例”中提供的“工作流实例]** ” **[!UICONTROL (Workflow]** ) **[!UICONTROL >“]**&#x200B;实例”。
 
    >[!NOTE]
-   您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
+   您可能需要管理权限才能访问“工 **[!UICONTROL 具]** ”菜单。
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -875,7 +875,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 有关失败的作业，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 失败]**&#x200B;中显示的“工作流失败”。**[!UICONTROL 工作流失败]**&#x200B;列出所有失败的工作流活动。
 
    >[!NOTE]
-   您可能需要管理权限才能访问“ **[!UICONTROL 工具]** ”菜单。
+   您可能需要管理权限才能访问“工 **[!UICONTROL 具]** ”菜单。
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
@@ -1148,7 +1148,7 @@ Cost-efficient access to rapidly evolving technology.
 
 1. 以UTF8编码保存。vtt文件，以避免章节标题文本中的字符再现问题。
 
-   通常，您希望将章节VTT文件命名为与视频文件同名，并在其后添加章节。 通过这样做，它可以帮助您使用现有Web内容管理系统自动生成视频URL。
+   通常，您希望将章节VTT文件命名为与视频文件相同的名称，并在其后附加章节。 通过这样做，它可以帮助您使用现有Web内容管理系统自动生成视频URL。
 1. 在AEM中，上传您的WebVTT章节文件。
 
    请参阅[上传资产](/help/assets/manage-digital-assets.md#uploading-assets)。
