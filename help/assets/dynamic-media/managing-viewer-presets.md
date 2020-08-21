@@ -2,17 +2,17 @@
 title: 管理查看器预设
 description: 如何创建和管理查看器预设
 translation-type: tm+mt
-source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '4263'
-ht-degree: 27%
+source-wordcount: '4255'
+ht-degree: 26%
 
 ---
 
 
 # 管理查看器预设{#managing-viewer-presets}
 
-查看器预设是一组设置，用于确定用户如何在其计算机屏幕和移动设备上视图富媒体资产。 如果您是管理员，则可以创建查看器预设。 可对一组查看器配置选项进行设置。 例如，可更改查看器显示大小或缩放行为。
+查看器预设是一组设置，用于确定用户如何在其计算机屏幕和移动设备上视图富媒体资产。如果您是管理员，则可以创建查看器预设。可对一组查看器配置选项进行设置。例如，可更改查看器显示大小或缩放行为。
 
 <!-- SDK withdrawn from public view. Available internally only at `http://staging.scene7.com/s7sdk/3.8/docs/jsdoc/symbols/_s7sdk.html` 
 
@@ -39,7 +39,7 @@ See also the [Adobe Viewers Reference Guide](https://docs.adobe.com/content/help
 
 ## 管理查看器预设 {#managing-viewer-presets-1}
 
-您可以通过点按 **[!UICONTROL工具** （锤子图标） **[!UICONTROL >资产>查看器预设，在AEM中添加、编辑、删除、发布、取消发布和预览查看器预设]**。
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -51,7 +51,7 @@ See also the [Adobe Viewers Reference Guide](https://docs.adobe.com/content/help
 
 不同的网页有不同的需求。 例如，有时您希望网页提供链接，在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要将HTML5查看器直接嵌入到托管页面。 在后一种情况下，网页可能具有静态布局。 或者，它可能是“响应式”的，并在不同设备或不同浏览器窗口大小下以不同方式显示。 为了满足这些需求，Dynamic Media附带的所有预定义现成HTML5查看器都支持静态网页和响应式设计网页。
 
-有关 [如何将响应](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) 式查看器嵌 ** 入到网页上的详细信息，请参阅Scene7图像服务API帮助中的响应式图像库。
+有关 [如何将响应式](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) 查看器嵌 *入到您的网页上的更多信息，请参* 阅Scene7图像服务API帮助中的响应式图像库。
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
   </tr>
   <tr>
    <td><strong>360视频</strong></td>
-   <td><p>使用360/VR视频查看器渲染等长形视频，实现房间、财产、位置、景观或医疗过程的沉浸式观看体验。</p> <p>在平面显示器上播放时，用户可以控制观看角度； 在移动设备上播放通常利用其内置的陀螺仪控件。</p> <p>查看器包含对360个视频资源投放的本机支持。 默认情况下，查看或回放不需要任何其他配置。 您可以使用标准视频扩展（如。mp4、.mkv和。mov）交付360视频。 最常见的编解码器是H.264。</p> </td>
+   <td><p>使用360/VR视频查看器渲染等长形视频，实现房间、财产、位置、景观或医疗过程的沉浸式观看体验。</p> <p>在平面显示器上播放时，用户可以控制观看角度；在移动设备上播放通常利用其内置的陀螺仪控件。</p> <p>查看器包含对360个视频资源投放的本机支持。 默认情况下，查看或回放不需要任何其他配置。 您可以使用标准视频扩展（如。mp4、.mkv和。mov）交付360视频。 最常见的编解码器是H.264。</p> </td>
   </tr>
   <tr>
    <td><strong>视频</strong></td>
@@ -158,7 +158,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 >[!NOTE]
 >
->Dynamic Media中的所有现成查看器预设都已激活（开启），但您必须发布它们。
+>Dynamic Media中的所有现成查看器预设均已激活（开启），但您必须发布它们。
 >See [Publishing Viewer Presets](#publishing-viewer-presets).
 >
 >您创建和添加的任何新查看器预设都必须同时激活*和*已发布。
@@ -368,11 +368,11 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 ## Increasing the number of Viewer Presets that display {#increasing-the-number-of-viewer-presets-that-display}
 
-从“详细信息视图”>“查看器”查看资产时，AEM会显 **[!UICONTROL 示各种查看器预设]**。 您可以增加或减少显示的查看器数量。
+AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICONTROL 各种查看器预设]**。 您可以增加或减少显示的查看器数量。
 
 **要增加显示的查看器预设数量，请执行以下操作：**
 
-1. 导航到CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
+1. 导航到CRXDE Lite[(](https://localhost:4502/crx/de)https://localhost:4502/crx/de)。
 1. 导航到位于的查看器预设列表节点 `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
    ![chlimage_1-221](/help/assets/dynamic-media/assets/chlimage_1-221.png)
@@ -399,12 +399,12 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 **创建查看器预设**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
    ![6_5查看器预设](assets/6_5_viewerpresets.png)
 
 1. 在“查看器预设”页面的工具栏中，点按创 **[!UICONTROL 建]**。
-1. 在 **[!UICONTROL 新建查看器预设**&#x200B;对话框的&#x200B;**[!UICONTROL 预设名称]**&#x200B;字段中，输入新预设的名称。请仔细选择名称 - 在您点按&#x200B;**[!UICONTROL 创建]**&#x200B;后，这些名称将不可编辑。
+1. 在&#x200B;**[!UICONTROL 新查看器预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 预设名称]**&#x200B;字段中，输入新预设的名称。请仔细选择名称 - 在您点按&#x200B;**[!UICONTROL 创建]**&#x200B;后，这些名称将不可编辑。
 
    稍后在这些步骤中保存预设时，该名称会显示在“查看器预设”页面的“预设标题”列标题下。
 
@@ -501,7 +501,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 查看器根据可用位置数量，在面板中显示缩略图的数量逻辑如下：
 
 * 子段数=舍入到下一个子段（缩略图数／缩略图面板中可见的插槽数，视浏览器窗口大小而定）。
-使用上表中的示例，9个缩略图/ 4个插槽= 2.25; 查看器逻辑将其舍入为3个子段。
+使用上表中的示例，9个缩略图/ 4个插槽= 2.25;查看器逻辑将其舍入为3个子段。
 
 * 缩略图数量=舍入到下一个缩略图（缩略图数量／视频子区段数量）。
 使用上表中的示例，9个缩略图/ 3个视频子区段= 3个缩略图。
@@ -523,14 +523,14 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 **激活或取消激活查看器预设**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 在“查看器预设”页面的“状 **[!UICONTROL 态]** ”列标题下，点按切换以激活或取消激活查看器预设。
 
-   已激活的查看器预设可在右侧的蓝色框中进行切换； 停用的查看器预设可在灰色浅框内左侧显示切换。
+   已激活的查看器预设可在右侧的蓝色框中进行切换；停用的查看器预设可在灰色浅框内左侧显示切换。
 
 ## 发布查看器预设 {#publishing-viewer-presets}
 
-激活（或打开“打开”）查看器预设的状态意味着查看器预设可在Dynamic Media组件、交互式媒体组件以及视图资产时显示。
+激活（或打开“打开”）查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中以及每次视图资产时都可见。
 
 但是，要传送* *包含查看器预设的资产，还必须发布查看器预设。 必须激活*和*已发布所有查看器预设，才能获取资产的URL或嵌入代码。 您必须激活并发布Dynamic media附带的所有现成查看器预设。 您创建和添加的自定义查看器预设将自动激活，但也必须发布。
 
@@ -540,13 +540,13 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 **要发布查看器预设，请执行以下操作：**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 选择一个或多个要发布的查看器预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
 
 ## 为查看器预设排序 {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 单击&#x200B;**[!UICONTROL 预设标题]**、**[!UICONTROL 类型]**、**[!UICONTROL 已发布]**&#x200B;或&#x200B;**[!UICONTROL 状态]**&#x200B;来按列标题进行排序。例如，单击&#x200B;**[!UICONTROL 类型]**&#x200B;按字母顺序或反向字母顺序对查看器预设类型进行排序。
 
 ## 编辑查看器预设 {#editing-viewer-presets}
@@ -555,7 +555,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 **编辑查看器预设**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
 1. 选中查看器预设标题左侧的框，以选择预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
 1. 在&#x200B;**[!UICONTROL 查看器预设编辑器]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 外观]**&#x200B;和&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡上的选项对查看器预设进行所需的更改。
@@ -573,7 +573,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 **删除自定义查看器预设**
 
-1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）**[!UICONTROL > Assets > 查看器预设]**。
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 在“查看器预设”页面上，选中预设标题，然后点按废纸篓 **[!UICONTROL 图]** 标。
 1. 点按 **[!UICONTROL 删除]**。
 
