@@ -2,9 +2,9 @@
 title: AEM Commerce作为Cloud Service入门
 description: AEM Commerce作为Cloud Service入门
 translation-type: tm+mt
-source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # AEM Commerce作为Cloud Service入门 {#start}
 
-要开始将AEM Commerce作为Cloud Service，您的Experience Manager Cloud Service需要配置商务集成框架(CIF)加载项。 CIF附加模块是AEM Sites顶部的另 [一个模块](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/sites/home.html)。
+要开始将AEM Commerce作为Cloud Service，您的Experience Manager Cloud Service需要配置商务集成框架(CIF)加载项。 CIF附加组件是AEM Sites上的一个额外模块， [作为Cloud Service](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/sites/home.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ AEM Commerce as a saCloud Service的入门过程分为两步：
 >
 >您可以使用以下命令列表所有Cloud Manager变量，以进行多次检查： `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!Note]
+>[!NOTE]
 >
 >您也可以使 [用Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) API配置Cloud Manager变量。
 
