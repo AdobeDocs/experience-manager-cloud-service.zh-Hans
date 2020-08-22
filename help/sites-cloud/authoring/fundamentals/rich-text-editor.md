@@ -1,10 +1,10 @@
 ---
 title: 在  [!DNL Adobe Experience Manager]  中使用富文本编辑器创作内容。
 description: 使用  [!DNL Experience Manager]  富文本编辑器创作内容。
-translation-type: ht
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
-workflow-type: ht
-source-wordcount: '287'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '286'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 单击“最小化”以关闭全屏模式。
 
->[!T提示]
+>[!TIP]
 >
 >将嵌套列表从 [!DNL Microsoft Word] 复制到 RTE 中可能会产生不一致的结果。因此，请粘贴为文本并进行手动调整。
 
