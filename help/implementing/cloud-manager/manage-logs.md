@@ -2,9 +2,9 @@
 title: 管理日志-Cloud Service
 description: 管理日志-Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 17%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 17%
 
 ![](assets/download-logs.png)
 
->[!Note]
+>[!NOTE]
 >无论打开位置如何，都会显示相同的对话框，允许下载单个日志文件。
 
 ![](assets/manage-logs3.png)
@@ -67,12 +67,12 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
+>[!NOTE]
 >虽然 **日志下载** (Log Downloads **)可通过UI和API使用，但** Log Tailing（日志跟踪）是仅限API/CLI的。
 
 ### 其他资源 {#resources}
 
-请参阅以下其他资源，进一步了解Cloud Manager API和Adobe I/O CLI:
+请参阅以下其他资源，进一步了解Cloud Manager API和AdobeI/O CLI:
 
 * [Cloud Manager API文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [AdobeI/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
