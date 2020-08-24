@@ -2,9 +2,9 @@
 title: 开发AEM Commerce for AEM作为Cloud Service
 description: 开发AEM Commerce for AEM作为Cloud Service
 translation-type: tm+mt
-source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
+source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '809'
 ht-degree: 10%
 
 ---
@@ -20,11 +20,13 @@ ht-degree: 10%
 
 ## 以AEM作为Cloud ServiceSDK的本地开发 {#local}
 
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+
 建议建立一个地方发展环境，与CIF项目合作。 CIF Add-On作为Cloud Service环境提供给AEM，也可用于本地开发。 可从软件分发门 [户下载](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
 
 CIF Add-On作为Sling功能存档提供。 软件分发门户上提供的zip文件包括两个Sling Feature存档文件，一个用于AEM作者，一个用于AEM发布实例。
 
-**刚从AEM当Cloud Service?** 查看以 [下指南，使用AEM作为环境SDK设置本地开发Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
+**刚从AEM当Cloud Service?** 查看更 [详细的指南，使用AEM作为环境SDK设置本地开发Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
 
 ### 所需软件
 
@@ -39,7 +41,7 @@ CIF Add-On作为Sling功能存档提供。 软件分发门户上提供的zip文�
 
 ### 访问CIF加载项
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip文件包含CIF加载项作为Sling Feature存档，它不是AEM包。 请注意，对SDK列表的访问仅限于AEM作为Cloud Service许可证的用户。
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip文件包含CIF加载项作为Sling功 **能存档**，它不是AEM包。 请注意，对SDK列表的访问仅限于AEM作为Cloud Service许可证的用户。
 
 >[!TIP]
 >
@@ -59,7 +61,7 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
 3. Create a `crx-quickstart/install` folder
 4. 将CIF加载项的正确Sling功能存档文件复制到文 `crx-quickstart/install` 件夹。
 
-   CIF加载项zip文件包含两个Sling Feature存档 `.far` 文件。 确保将正确的AEM Author或AEM Publish使用，具体取决于您计划如何将本地AEM作为Cloud ServiceSDK运行。
+   CIF加载项zip文件包含两个Sling Feature存档 `.far` 文件。 请确保为AEM作者或AEM发布使用正确的版本，具体取决于您计划如何将本地AEM作为Cloud ServiceSDK运行。
 
 5. 创建一个名为保存环境GraphQL端点 `COMMERCE_ENDPOINT` 的本地OSMagento变量。
 
