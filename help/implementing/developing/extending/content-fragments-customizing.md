@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展标准资产。
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 3%
 
 ---
@@ -12,11 +12,15 @@ ht-degree: 3%
 
 # 自定义和扩展内容片段{#customizing-and-extending-content-fragments}
 
-在Adobe Experience Manager中，内容片段作为Cloud Service扩展标准资产； 请参阅：
+在Adobe Experience Manager作为Cloud Service，内容片段扩展了标准资产；请参阅：
 
 * [有关内容片段的更多信息](/help/assets/content-fragments/content-fragments.md) ，请 [使用内容片段创建和管理内容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md) ，以及使用页面创作。
 
-* [管理资产](/help/assets/manage-digital-assets.md) 、 [自定义和扩展资产编辑器](/help/assets/extend-asset-editor.md) ，以了解有关标准资产的更多信息。
+* [管理资产](/help/assets/manage-digital-assets.md) ，以进一步了解标准资产。
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## 架构 {#architecture}
 
@@ -29,7 +33,7 @@ ht-degree: 3%
 单个内容片段基于内容片段模型：
 
 * 内容片段模型定义内容片段在创建时的结构。
-* 片段引用模型； 因此，对模型所做的更改可能会／会影响任何从属片段。
+* 片段引用模型；因此，对模型所做的更改可能会／会影响任何从属片段。
 * 模型是数据类型的构建。
 * 添加新变量等的函数必须相应更新片段。
 
@@ -39,11 +43,11 @@ ht-degree: 3%
 
    >[!CAUTION]
    >
-   >对现有内容片段模型的任何更改都可能影响相关片段； 这会导致这些片段中的孤立属性。
+   >对现有内容片段模型的任何更改都可能影响相关片段；这会导致这些片段中的孤立属性。
 
 ### 将站点与资产集成 {#integration-of-sites-with-assets}
 
-内容片段管理(CFM)是以下AEM Assets的一部分：
+内容片段管理(CFM)是AEM Assets的一部分，作为：
 
 * 内容片段是资产。
 * 他们使用现有资产功能。
@@ -64,11 +68,9 @@ ht-degree: 3%
    * 元素数据存储在主控子节点下：
       `jcr:content/data/master`
 
-   * 变体存储在子节点下，子节点带有变体的名称：
-例如， `jcr:content/data/myvariation`
+   * 变体存储在子节点下，子节点带有变体的名称：例如， `jcr:content/data/myvariation`
 
-   * 每个元素的数据作为具有元素名称的属性存储在相应的子节点中：
-例如，元素的内容 `text` 作为属性存储在 `text` `jcr:content/data/master`
+   * 每个元素的数据作为具有元素名称的属性存储在相应的子节点中：例如，元素的内容 `text` 作为属性存储在 `text` `jcr:content/data/master`
 
 * 元数据和关联内容存储在 `jcr:content/metadata`下面，但标题和说明除外，它们不被视为传统元数据，并存储在 
 `jcr:content`
@@ -89,7 +91,7 @@ ht-degree: 3%
 
 * 内容片段管理(CFM)功能构建于资产核心之上。
 
-* CFM为卡／列/列表视图中的项目提供其自己的实现； 这些插件可插入现有资产内容呈现实施。
+* CFM为卡／列/列表视图中的项目提供其自己的实现；这些插件可插入现有资产内容呈现实施。
 
 * 已扩展多个资产组件，以满足内容片段的需要。
 
@@ -97,15 +99,15 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->内 [容片段组件是核心组件的一部分](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)。 有关更 [多详细信息](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) ，请参阅开发核心组件。
+>内 [容片段组件是核心组件的一部分](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)。 有关更 [多详细信息](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) ，请参阅开发核心组件。
 
-内容片段可以从AEM页面中引用，就像任何其他资产类型一样。 AEM提供内 **[容片段核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)**-一[个允许您在页面上包含内容片段的组件](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此内**[容片段](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** 核心组件。
+内容片段可以从AEM页面进行引用，就像任何其他资产类型一样。 AEM提供 **[内容片段核心组](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)** 件- [允许您在页面中包含内容片段的组件](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此内 **[容片段](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** 核心组件。
 
-* 组件使用属 `fragmentPath` 性引用实际内容片段。 该 `fragmentPath` 财产的处理方式与其他资产类型的类似财产相同； 例如，当内容片段被移动到其他位置时。
+* 组件使用属 `fragmentPath` 性引用实际内容片段。 该 `fragmentPath` 财产的处理方式与其他资产类型的类似财产相同；例如，当内容片段被移动到其他位置时。
 
 * 组件允许您选择要显示的变量。
 
-* 此外，还可以选择一系列段落来限制输出； 例如，这可用于多列输出。
+* 此外，还可以选择一系列段落来限制输出；例如，这可用于多列输出。
 
 * 组件允许中间内容：
 
@@ -113,7 +115,7 @@ ht-degree: 3%
 
    * 对于中间内容，您需要：
 
-      * 注意不稳定的参考资料的可能性； 中间内容（在创作页面时添加）与它位于旁边的段落没有固定关系，在中间内容的位置之前插入新段落（在内容片段编辑器中）可能会丢失相对位置
+      * 注意不稳定的参考资料的可能性；中间内容（在创作页面时添加）与它位于旁边的段落没有固定关系，在中间内容的位置之前插入新段落（在内容片段编辑器中）可能会丢失相对位置
 
       * 考虑其他参数(如变体和段落过滤器)，以配置页面上呈现的内容
 
@@ -133,19 +135,19 @@ ht-degree: 3%
 
    内容片段与AEM翻译工作流程完全集成。 在建筑层面，这意味着：
 
-   * 内容片段的个别翻译实际上是单独的片段； 例如：
+   * 内容片段的个别翻译实际上是单独的片段；例如：
 
-      * 它们位于不同的语言根系下； 但在相关语言根目录下共享完全相同的相对路径：
+      * 它们位于不同的语言根系下；但在相关语言根目录下共享完全相同的相对路径：
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
          与
 
          `/content/dam/<path>/de/<to>/<fragment>`
-   * 除了基于规则的路径之外，内容片段的不同语言版本之间没有进一步的联系； 它们作为两个单独的片段处理，但UI提供了在语言变体之间导航的方法。
+   * 除了基于规则的路径之外，内容片段的不同语言版本之间没有进一步的联系；它们作为两个单独的片段处理，但UI提供了在语言变体之间导航的方法。
    >[!NOTE]
    >
-   >AEM翻译工作流程可用于 `/content`:
+   >AEM翻译工作流可用于 `/content`:
    >
    >* 由于内容片段模型位于 `/conf`其中，因此此类转换中不包含这些模型。 可以将UI字符串国际化。
 
@@ -164,7 +166,7 @@ ht-degree: 3%
 
 ## 内容片段管理API —— 服务器端 {#the-content-fragment-management-api-server-side}
 
-您可以使用服务器端API访问您的内容片段； 请参阅：
+您可以使用服务器端API访问您的内容片段；请参阅：
 
 [com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
@@ -182,7 +184,7 @@ ht-degree: 3%
 
    该界面为您提供了以下方法：
 
-   * 管理基本数据(例如，获取名称； get/set title/description)
+   * 管理基本数据(例如，获取名称；get/set title/description)
    * 访问元数据
    * 访问元素：
 
@@ -238,9 +240,9 @@ ht-degree: 3%
 
 * `ContentFragment` 可适用于：
 
-   * `Resource` -基础Sling资源； 直接更新基础 `Resource` 需要重建对 `ContentFragment` 象。
+   * `Resource` -基础Sling资源；直接更新基础 `Resource` 需要重建对 `ContentFragment` 象。
 
-   * `Asset` -表示内 `Asset` 容片段的DAM抽象； 直接更 `Asset` 新需要重建对 `ContentFragment` 象。
+   * `Asset` -表示内 `Asset` 容片段的DAM抽象；直接更 `Asset` 新需要重建对 `ContentFragment` 象。
 
 * `ContentElement` 可适用于：
 
@@ -284,18 +286,18 @@ ht-degree: 3%
 >
 >请考虑此背景信息。 您不应在此处更改任何内容(因为在存储库中 *标记为* “专用区域”)，但在某些情况下，它可能有助于您了解内部的工作方式。
 
-编辑内容片段(可以跨多个视图（= HTML页面）)是原子的。 由于这种原子多视图编辑功能不是典型的AEM概念，内容片段使用所谓的编辑 *会话*。
+编辑内容片段(可以跨多个视图（= HTML页面）)是原子的。 由于原子多视图编辑功能不是典型的AEM概念，因此内容片段使用所谓的编辑 *会话*。
 
 当用户在编辑器中打开内容片段时，将启动编辑会话。 当用户通过选择“保存”或“取消”离开编辑器时，编 **辑会** 话即 **结束**。
 
-从技术上讲，所有编辑操 *作都是* 对实时内容进行的，就像所有其他AEM编辑一样。 启动编辑会话时，将创建当前未编辑状态的某个版本。 如果用户取消编辑，则恢复该版本。 如果用户单击“保 **存**”，则不会执行任何特定操作，因为所有编辑都对实 *时内容执* 行，因此所有更改都已保留。 此外，单击保 **存** 将触发一些后台处理（例如创建全文搜索信息和／或处理混合媒体资产）。
+从技术上讲，所有编辑操 *作都对* 实时内容进行，就像所有其他AEM编辑操作一样。 启动编辑会话时，将创建当前未编辑状态的某个版本。 如果用户取消编辑，则恢复该版本。 如果用户单击“保 **存**”，则不会执行任何特定操作，因为所有编辑都对实 *时内容执* 行，因此所有更改都已保留。 此外，单击保 **存** 将触发一些后台处理（例如创建全文搜索信息和／或处理混合媒体资产）。
 
-边缘案件有安全措施； 例如，如果用户尝试离开编辑器而不保存或取消编辑会话。 此外，还可定期自动保存以防止数据丢失。
+边缘案件有安全措施；例如，如果用户尝试离开编辑器而不保存或取消编辑会话。 此外，还可定期自动保存以防止数据丢失。
 请注意，两个用户可以同时编辑同一内容片段，因此可能会覆盖彼此的更改。 要防止出现这种情况，需要通过对片段应用DAM管理的“结帐” *操作* ，来锁定内容片段。
 
 ## 示例 {#examples}
 
-### 示例： 访问现有内容片段 {#example-accessing-an-existing-content-fragment}
+### 示例：访问现有内容片段 {#example-accessing-an-existing-content-fragment}
 
 要实现此目标，您可以调整表示API的资源以：
 
@@ -313,7 +315,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### 示例： 创建新内容片段 {#example-creating-a-new-content-fragment}
+### 示例：创建新内容片段 {#example-creating-a-new-content-fragment}
 
 要以编程方式创建新内容片段，您需要使用从模型`FragmentTemplate` 资源调整的内容片段。
 
@@ -325,7 +327,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### 示例： 指定自动保存间隔 {#example-specifying-the-auto-save-interval}
+### 示例：指定自动保存间隔 {#example-specifying-the-auto-save-interval}
 
 自动 [保存间隔](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) （以秒为单位）可以使用配置管理器(ConfMgr)进行定义：
 
@@ -333,9 +335,9 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 * 属性名称: `autoSaveInterval`
 * 类型: `Long`
 
-* 默认： `600` （10分钟）; 定义于 `/libs/settings/dam/cfm/jcr:content`
+* 默认： `600` （10分钟）;定义于 `/libs/settings/dam/cfm/jcr:content`
 
-如果要设置5分钟的自动保存间隔，您需要定义节点上的属性； 例如：
+如果要设置5分钟的自动保存间隔，您需要定义节点上的属性；例如：
 
 * 节点： `/conf/global/settings/dam/cfm/jcr:content`
 * 属性名称: `autoSaveInterval`
@@ -348,4 +350,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 有关更多信息，请参阅
 
-* [核心组件——内容片段组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) （推荐）
+* [核心组件——内容片段组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html) （推荐）
