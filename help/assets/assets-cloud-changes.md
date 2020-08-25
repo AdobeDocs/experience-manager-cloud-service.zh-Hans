@@ -1,8 +1,8 @@
 ---
-title: Adobe Experience Manager资产作为Cloud Service的显着变化
-description: 与Adobe Experience Manager6.5相比，AEMCloud Service中的Adobe Experience Manager资产发生了显着变化。
+title: Adobe Experience Manager资产作为Cloud Service
+description: 与Adobe Experience Manager6.5相比，AEMCloud ServiceAdobe Experience Manager资产发生了显着变化。
 translation-type: tm+mt
-source-git-commit: 60f11cd86ecfeb47a46f9809d8ae9f1c45a4a25f
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 15%
@@ -22,7 +22,7 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 
 >[!NOTE]
 >
->此文档突出了对AEM Assets的显着变化。 有关AEM作为Cloud Service和其他模块的常规更改，请参阅：
+>这一文档突显了AEM Assets的显着变化。 有关AEM作为Cloud Service和其他模块的常规更改，请参阅：
 >
 >* [Adobe Experience Manager 云服务简介](/help/overview/introduction.md)
 >* [AEM 云服务概述 - 新增功能和改进功能](/help/overview/what-is-new-and-different.md)
@@ -38,7 +38,7 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 
 * Experience Manager使用直接二进制访问原则进行上传和下载，资产微服务用于资产处理。 请参 [阅资产摄取概述](/help/assets/asset-microservices-overview.md)。
    * 通过直接二 [进制访问上传资产](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
-   * 有关技术详细信息，请参 [阅直接二进制上传协议和API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)。
+   * 有关技术详细信息，请参 [阅直接二进制上传协议和API](/help/assets/developer-reference-material-apis.md#upload-binary)。
 * AEM 早期版本中的默认工作流程 **[!UICONTROL DAM 资产更新]**&#x200B;不再可用。相反，资产微服务提供了可扩展的、随时可用的服务，涵盖大多数默认资产处理(演绎版、元数据提取、用于索引的文本提取)。
    * 请参 [阅配置和使用资产微服务](/help/assets/asset-microservices-configure-and-use.md)
    * 要在处理中具有自定义的工作流 [步骤，可以使用后](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 处理工作流。
