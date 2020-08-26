@@ -2,7 +2,7 @@
 title: 代码重构工具的统一体验
 description: 代码重构工具的统一体验
 translation-type: tm+mt
-source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
+source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 此工具降低了使用代码重构工具的复杂性，每个工具在安装、设置和执行方面具有不同的执行要求。
 
-![图像](/help/move-to-cloud-service/assets/unified-1.png)
+![图像](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## 优势 {#benefits}
 
