@@ -2,11 +2,11 @@
 sub-product: 移动到 AEM 云服务
 user-guide-title: 移动到 AEM 云服务
 user-guide-description: Understand the transition journey to Cloud Service.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '68'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0d5d227905089fea969831c0de2896aef4d24589
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 97%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 100%
       + [概述](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 代码重构工具 {#refactoring-tools}
+   + [统一的体验](/help/move-to-cloud-service/unified-experience.md)
    + [资产工作流迁移](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM 现代化工具](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
