@@ -52,8 +52,7 @@ ht-degree: 29%
 
    * 组织、浏览和搜索视频资产
 
-      * [组织数字资产
-](/help/assets/organize-assets.md)了解有关[组织数字资产以使用处理配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)的更多信息
+      * [组织数字资产](/help/assets/organize-assets.md)了解有关[组织数字资产以使用处理配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)的更多信息
 
       * [搜索视频资产](/help/assets/search-assets.md#custompredicates) 或搜 [索资产](/help/assets/manage-digital-assets.md#search-assets)
    * 预览和发布视频资产
