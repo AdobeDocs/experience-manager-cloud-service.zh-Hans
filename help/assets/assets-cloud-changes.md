@@ -2,10 +2,10 @@
 title: Adobe Experience Manager资产作为Cloud Service
 description: 与Adobe Experience Manager6.5相比，AEMCloud ServiceAdobe Experience Manager资产发生了显着变化。
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 15%
+source-wordcount: '628'
+ht-degree: 14%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 
 ## 开发和测试资产微服务 {#asset-microservices}
 
-资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 资产微服务有助于避免对第三方渲染工具和方法（如ImageMagick）的需求并简化配置，同时为常见文件类型提供现成功能。 您现在可以处 [理各种现成格式的文件](/help/assets/file-format-support.md) ，这些格式比以前版本的Experience Manager所能处理的格式更多。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。 不能将ImageMagick的复杂配置用于处 [!UICONTROL 理用户档案配] 置。 此外，还可 [!DNL Dynamic Media] 用于视频的FFmpeg转码。
+资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 资产微服务有助于避免对第三方渲染工具和方法（如ImageMagick）的需求并简化配置，同时为常见文件类型提供现成功能。 您现在可以处 [理各种现成格式的文件](/help/assets/file-format-support.md) ，这些格式比以前版本的Experience Manager所能处理的格式更多。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。 不能将ImageMagick的复杂配置用于处 [!UICONTROL 理用户档案配] 置。 使用 [!DNL Dynamic Media] 视频的FFmpeg转码，使用处理用户档案 [进行MP4视频的基本转码](/help/assets/manage-video-assets.md#transcode-video)。
 
 资产微服务是一种云本机服务，可自动配置并连接到Cloud Manager中管理的Experience Manager项目和环境中的。 要扩展或自定义Experience Manager，开发人员可以将现有内容或资产与在云环境中生成的演绎版结合使用，以使用、显示、下载资产测试和验证其代码。
 
