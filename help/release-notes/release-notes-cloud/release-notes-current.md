@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.8.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1037'
 ht-degree: 6%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 * 本机和高保真PDF文档预览现在在Brand Portal中可用。 请参阅 [文档查看器概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
-* 使缓存失效的用户界面现在在中可 [!DNL Dynamic Media]用。
+* 您现在可以将AEM中的CDN(内容投放网络)缓存作为Cloud Service( [!DNL Dynamic Media] 而不是使用)直接失效， [!DNL Dynamic Media Classic]以确保在几分钟内而不是几小时内提供最新的资源。 请参 [阅通过Dynamic Media使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * 在中的用户界面控件、导航、浏览和搜索体验中添加了增强的辅助功能支持 [!DNL Assets]。
 
