@@ -1,11 +1,11 @@
 ---
-title: 从Adobe Experience Manager 6.x迁移到云服务
-description: 从Adobe Experience Manager 6.x迁移到云服务
+title: 将Experience Manager从Adobe Experience Manager6.x迁移到Cloud Service。
+description: 将Experience Manager从Adobe Experience Manager6.x迁移到Cloud Service。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
 workflow-type: tm+mt
-source-wordcount: '28'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
