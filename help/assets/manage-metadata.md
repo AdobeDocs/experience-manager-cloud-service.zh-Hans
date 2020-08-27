@@ -4,10 +4,10 @@ description: 了解元数据的类型， [!DNL Adobe Experience Manager Assets] 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 17%
+source-wordcount: '1933'
+ht-degree: 16%
 
 ---
 
@@ -65,7 +65,7 @@ For these reasons, [!DNL Assets] provides you with the right means of creating, 
 技术性元数据对于处理数字资产的软件应用程序而言非常有用，因此不应该手动维护。[!DNL Experience Manager Assets] 而其他软件会自动确定技术性元数据，并且修改资产时，元数据可能会发生更改。 资产的可用技术性元数据主要取决于资产的文件类型。技术元数据的一些示例包括：
 
 * 文件的大小。
-* 图像的尺寸（高度和宽度）。
+* Dimension（高度和宽度）。
 * 音频或视频文件的比特率。
 * 图像的分辨率（详细程度）。
 
@@ -79,12 +79,12 @@ For these reasons, [!DNL Assets] provides you with the right means of creating, 
 
 * XMP: used by [!DNL Assets] to store the extracted metadata within the repository.
 * ID3：适用于音频和视频文件。
-* Exif: 。
-* 其他／旧版： 从 [!DNL Microsoft Word]、 [!DNL PowerPoint][!DNL Excel]等等。
+* Exif:。
+* 其他／旧版：从 [!DNL Microsoft Word]、 [!DNL PowerPoint][!DNL Excel]等等。
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是一个开放标准，用于所 [!DNL Experience Manager Assets] 有元数据管理。 标准优惠可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司支持XMP标准，因为它提供丰富的内容模型。 XMP标准和的用户 [!DNL Experience Manager Assets] 拥有强大的基础平台。 有关详细信息，请参 [阅XMP](https://www.adobe.com/products/xmp.html)。
+[!DNL Extensible Metadata Platform] (XMP)是一个开放标准，用于所 [!DNL Experience Manager Assets] 有元数据管理。 标准优惠可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司支持XMP标准，因为它提供丰富的内容模型。 XMP标准和的用户拥 [!DNL Experience Manager Assets] 有强大的基础平台。 有关详细信息，请参 [阅XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 
@@ -104,7 +104,7 @@ ID3 标记是专为 MP3 文件格式而设计。有关各种格式的其他信�
 
 Exif的一个主要限制是一些常用的图像文件格式（如BMP、GIF或PNG）不支持它。
 
-由Exif定义的元数据字段通常是技术性的，在描述性元数据管理中的用途有限。 因此，将Exif属 [!DNL Experience Manager Assets] 性映射到通用元数 [据架构和](metadata-schemas.md) XMP中的优惠。
+由Exif定义的元数据字段通常是技术性的，在描述性元数据管理中的用途有限。 因此，将Exif属 [!DNL Experience Manager Assets] 性映射到通用元数 [据架构和](metadata-schemas.md) XMP中。
 
 #### Other metadata {#other-metadata}
 
@@ -142,9 +142,19 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
    >
    >对于单值字段，即使选择&#x200B;**[!UICONTROL 追加模式]**，新元数据也不会追加到字段中的现有值中。
 
+## 使用处理用户档案的自定义元数据 {#metadata-compute-service}
+
+作为Cloud Service的资产可以使用云本机服务为资产生成自定义元数据。 配置处理用户档案以生成自定义元数据。 了解 [如何使用处理用户档案](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
+
+![处理用户档案中的元数据再现](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>只能将一个处理用户档案应用于文件夹。 要对文件夹中的资产应用多个处理，请向单个处理用户档案添加更多选项。 例如，单个用户档案可以生成演绎版、转码资产、生成自定义元数据等。 您可以对每个任务应用MIME类型过滤器，以便针对所需的文件格式触发相应的任务。
+
 ## 配置元数据批量更新限制 {#configlimit}
 
-为防止出现类似DOS的情况，AEM限制了Sling请求中支持的参数数。 在一次性更新多个资产的元数据时，您可能会达到限制，并且不会更新更多资产的元数据。 AEM会在日志中生成以下警告：
+为防止出现类似DOS的情况，AEM限制了Sling请求中支持的参数数。 在一次性更新多个资产的元数据时，您可能会达到限制，并且不会更新更多资产的元数据。 AEM在日志中生成以下警告：
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
@@ -175,13 +185,13 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
 * 相册- [!DNL Adobe Photoshop Album].
 * CQ - Used by [!DNL Experience Manager Assets].
 * DAM —— 使用方 [!DNL Experience Manager Assets]。
-* DEX - [Optima SC Description](http://www.optimasc.com/products/dex/index.html) explorer是用于Windows操作系统元数据和文件管理的工具集合。
+* DEX - [Optima SC Description explorer是用于Windows操作系统](http://www.optimasc.com/products/dex/index.html) （Windows操作系统）元数据和文件管理的工具集合。
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto和MP - Microsoft Photo。
 * PDF和PDF/X。
-* Photoshop和psAux - [!DNL Adobe Photoshop]。
+* Photoshop和帕奥 [!DNL Adobe Photoshop]。
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
@@ -202,7 +212,7 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* PDF和PDF/X - Adobe PDF和第三方应用程序。
+* PDF和PDF/X -Adobe PDF和第三方应用程序。
 * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` -分页文本的XMP元数据。
