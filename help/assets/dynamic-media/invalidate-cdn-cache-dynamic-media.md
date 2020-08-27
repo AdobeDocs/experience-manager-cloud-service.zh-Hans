@@ -2,9 +2,9 @@
 title: 通过Dynamic Media使CDN缓存失效
 description: 使CDN(内容投放网络)缓存内容失效后，您可以快速更新Dynamic Media交付的资源，而无需等待缓存过期。
 translation-type: tm+mt
-source-git-commit: 5549f7ea40f13b9fa47abb81ddb0b9a1175b041d
+source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ CDN(内容投放网络)会缓存Dynamic Media资源，以便快速投放给客�
 
 >[!IMPORTANT]
 >
->以下步骤仅适用于AEM上作为Cloud Service的Dynamic Media。 您还必须使用与AEM Dynamic Media捆绑的现成CDN。 此功能不支持任何其他自定义CDN。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>以下步骤仅适用于AEM上作为Cloud Service的Dynamic Media。 此功能还要求您使用与AEM Dynamic Media捆绑的现成CDN;不支持任何其他自定义CDN。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 另请参 [阅Dynamic Media中的缓存概述](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)。
 
