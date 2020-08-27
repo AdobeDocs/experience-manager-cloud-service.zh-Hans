@@ -1,11 +1,11 @@
 ---
-title: 配置和使用资产微服务进行资产处理
-description: 了解如何配置和使用云本机资产微服务大规模处理资产。
+title: 配置和使用资产微服务进行资产处理。
+description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -13,21 +13,11 @@ ht-degree: 1%
 
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+资产微型服务提供使用云本机应用程序（也称为worker）的资产的可伸缩、可恢复的处理。 Adobe管理服务以优化处理不同的资产类型和处理选项。
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Asset microservices允许您处 [理各种文件类型](/help/assets/file-format-support.md) ，这些类型的现成格式比先前版本的更多 [!DNL Experience Manager]。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。
 
-资产微型服务为使用云服务的资产提供可扩展且具有弹性的处理。 Adobe管理服务以优化处理不同的资产类型和处理选项。
-
-资产处理取决于处理用户档案 **[!UICONTROL 中的配置]**，该配置提供了默认设置，并允许管理员添加更多特定的资产处理配置。 管理员可以创建和维护后处理工作流的配置，包括可选自定义。 自定义工作流允许可扩展性和完全自定义。
-
-Asset microservices允许您处 [理各种文件类型](/help/assets/file-format-support.md) ，这些类型的现成格式比先前版本的Experience Manager所能处理的格式更多。 例如，PSD和PSB格式的缩览图提取现在可能是之前需要的第三方解决方案，如ImageMagick。
+资产处理取决于处理用户档案 **[!UICONTROL 中的配置]**。 Experience Manager提供了基本的默认设置，并允许管理员添加更多特定的资产处理配置。 管理员创建、维护和修改后处理工作流的配置，包括可选自定义。 自定义工作流允许开发人员扩展默认产品。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -68,7 +58,7 @@ Experience Manager允许以下级别的处理。
 
 ## 标准配置 {#standard-config}
 
-[!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹以完成附加处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
+[!DNL Experience Manager] 根据用户的需要，提供为通用格式生成更多特定再现的功能。 管理员可以创建其 [!UICONTROL 他处理用户档案] ，以便创建此类再现。 然后，用户将一个或多个可用用户档案分配给特定文件夹，以完成其他处理。 例如，附加处理可以为Web、移动设备和平板电脑生成再现。 以下视频说明了如何创建和应用处 [!UICONTROL 理用户档案] ，以及如何访问创建的演绎版。
 
 * **演绎版宽度和高度**:演绎版宽度和高度规范提供了生成的输出图像的最大大小。 资产微型服务会尝试生成尽可能大的再现，其宽度和高度分别不大于指定的宽度和高度。 将保留宽高比，即与原始宽高比相同。 空值表示资产处理采用原始图像的像素尺寸。
 
@@ -93,7 +83,7 @@ Experience Manager允许以下级别的处理。
    * 质量（以每个JPEG再现的百分比表示）。
    * 包含和排除的MIME类型，用于定义用户档案的适用性。
 
-   ![处理用户档案-添加](assets/processing-profiles-adding.png)
+   ![处理用户档案-添加](assets/processing-profiles-image.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -158,9 +148,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![自定义处理用户档案](assets/custom-processing-profile.png)
 
-*图：使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义应用程序中的预定义参数。*
-
-当活动图像上传到应用此处理用户档案的文件夹时，图像会以字体文 `Jumanji` 本进行 `Arial-BoldMT` 更新。
+*图：使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义应用程序中的预定义参数。 在此示例中，上传活动图像时，图像会用字体`Jumanji`中的文本`Arial-BoldMT`更新。*
 
 ## 使用处理用户档案处理资产 {#use-profiles}
 
@@ -169,19 +157,20 @@ The following video demonstrates the usefulness and usage of standard profile.
 使用以下方法之一将处理用户档案应用到文件夹：
 
 * 管理员可以在“工具”>“资 **[!UICONTROL 产”]** >“处理 **[!UICONTROL 用户档案”中选择处]** 理用户档案定义 **[!UICONTROL ，然后使]****** 用“将用户档案应用到文件夹”(Apply Adober to Folder,s)操作。 它会打开一个内容浏览器，允许您导航到特定文件夹，选择这些文件夹并确认该用户档案的应用程序。
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 要保存更改，请单击“保 **[!UICONTROL 存并关闭”]**。
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. 要保存更改，请单击“保 **[!UICONTROL 存并关闭”]**。
+   ![从资产属性选项卡将处理用户档案应用到文件夹](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->只能将一个处理用户档案应用于特定文件夹。 要生成更多再现，请向现有处理用户档案添加更多再现定义。
+>只能将一个处理用户档案应用于文件夹。 要生成更多再现，请向现有处理用户档案添加更多再现定义。
 
-在将处理用户档案应用到文件夹后，会使用配置的附加处理用户档案处理此文件夹或其任何子文件夹中上传（或更新）的所有新资产。 此处理是在标准默认用户档案之外添加的。 如果您对一个文件夹应用多个用户档案，则系统会使用其中每个用户档案处理已上传或更新的资产。
+在将处理用户档案应用到文件夹后，会使用配置的附加处理用户档案处理此文件夹或其任何子文件夹中上传（或更新）的所有新资产。 此处理是在标准默认用户档案之外添加的。
 
 >[!NOTE]
 >
 >应用于文件夹的处理用户档案适用于整个树，但可能与应用于子文件夹的其他用户档案重叠。 资产上传到文件夹后，Experience Manager会检查包含文件夹的属性以查找处理用户档案。 如果未应用任何文件夹，则会检查层次结构中的父文件夹以查找要应用的处理用户档案。
 
-所有生成的演绎版均可在左边 [!UICONTROL 栏的] “演绎版”视图中使用。 打开资产预览并打开左边栏以访问演绎 **[!UICONTROL 版]** 视图。 处理用户档案中的特定演绎版（其特定资产的类型与MIME类型包含规则匹配）应可见且可访问。
+要验证资产是否已处理，请在左边栏的演绎版预览 [!UICONTROL 中] ,视图生成的演绎版。 打开资产预览并打开左边栏以访问演绎 **[!UICONTROL 版]** 视图。 处理用户档案中的特定演绎版（其特定资产的类型与MIME类型包含规则匹配）应可见且可访问。
 
 ![其他演绎版](assets/renditions-additional-renditions.png)
 
@@ -218,7 +207,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 自定义工作流运行`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`器服务()是OSGi服务，提供两个配置选项：
 
-* 按路径()分类的后处理工作流`postProcWorkflowsByPath`:可以根据不同的存储库路径列出多个工作流模型。 路径和模型应以冒号分隔。 支持简单的存储库路径，并应映射到路径中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 按路径()分类的后处理工作流`postProcWorkflowsByPath`:可以根据不同的存储库路径列出多个工作流模型。 路径和模型应以冒号分隔。 支持简单的存储库路径，并且应该映射到路径中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * 后处理工作流(按表达式`postProcWorkflowsByExpression`):可以根据不同的常规表达式列出多个工作流模型。 表达式和模型应用冒号分隔。 常规表达式应直接指向“资产”节点，而不是指向某个演绎版或文件。 For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
@@ -238,4 +227,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 >* [资产计算服务简介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
 >* [了解可扩展性以及何时使用它](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 >* [如何创建自定义应用程序](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
+>* [支持各种用例的MIME类型](/help/assets/file-format-support.md)。
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
