@@ -2,10 +2,10 @@
 title: 传送 Dynamic Media 资产
 description: 了解如何交付动态媒体资产
 translation-type: tm+mt
-source-git-commit: a09e82278df1adfb225a01e60ae7ef188375b800
+source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 23%
+source-wordcount: '315'
+ht-degree: 22%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 23%
 * [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [为响应式网站传送优化的图像](/help/assets/dynamic-media/responsive-site.md)
 * [内容的HTTP2投放](/help/assets/dynamic-media/http2faq.md)
+* [通过Dynamic Media使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [通过Dynamic Media Classic使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用规则集转换URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
