@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
@@ -32,11 +32,11 @@ ht-degree: 2%
 
 1. 索引配置通过部署进行更改。 索引定义更改的配置方式与其他内容更改类似。
 
-1. 在AEM作为Cloud Service的高度上，引入“蓝绿 [”部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引： 一个用于旧版本（蓝色），另一个用于新版本（绿色）。
+1. 在AEM作为Cloud Service的高度上，引入“蓝绿 [”部署模型后](#index-management-using-blue-green-deployments) ，将存在两组索引：一个用于旧版本（蓝色），另一个用于新版本（绿色）。
 
 1. 客户可以在Cloud Manager构建页面上查看索引编制作业是否完成，并在新版本准备就绪后收到通知。
 
-1. 限制： 目前，AEM asCloud Service上的索引管理仅支持lucene类型的索引。
+1. 限制：目前，AEM asCloud Service上的索引管理仅支持lucene类型的索引。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -54,7 +54,7 @@ AS NOTE: the above is internal for now.
 1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本
 1. 删除冗余或过时的现有索引。
 
-对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为Cloud Service文档部署到AEM](/help/implementing/deploying/overview.md)。
+对于以上第1点和第2点，您需要在相应的Cloud Manager发布计划中创建新的索引定义，作为自定义代码库的一部分。 有关详细信息，请参 [阅作为Cloud Service文档部署到AEM](/help/implementing/deploying/overview.md)。
 
 ### 准备新的索引定义 {#preparing-the-new-index-definition}
 
@@ -90,7 +90,7 @@ AS NOTE: the above is internal for now.
 
 ### 什么是索引管理 {#what-is-index-management}
 
-索引管理是关于添加、删除和更改索引。 更改索 *引的定义* 很快，但应用更改（通常称为“构建索引”，或者对于现有索引，“重新索引”）需要时间。 它不是瞬间发生的： 必须扫描存储库，才能索引数据。
+索引管理是关于添加、删除和更改索引。 更改索 *引的定义* 很快，但应用更改（通常称为“构建索引”，或者对于现有索引，“重新索引”）需要时间。 它不是瞬间发生的：必须扫描存储库，才能索引数据。
 
 ### 什么是蓝绿部署 {#what-is-blue-green-deployment}
 
@@ -118,9 +118,9 @@ AS NOTE: the above is internal for now.
 
 ### 蓝绿部署的索引管理 {#index-management-with-blue-green-deployment}
 
-蓝绿部署不会停机。 但是，对于索引管理，这要求索引仅用于某些版本的应用程序。 例如，在应用程序版本2中添加索引时，您还不希望该索引被应用程序版本1使用。 相反，删除索引时的情况是： 版本1中仍需要在版本2中删除的索引。 更改索引定义时，我们希望旧版本的索引仅用于版本1，新版本的索引仅用于版本2。
+蓝绿部署不会停机。 但是，对于索引管理，这要求索引仅用于某些版本的应用程序。 例如，在应用程序版本2中添加索引时，您还不希望该索引被应用程序版本1使用。 相反，删除索引时的情况是：版本1中仍需要在版本2中删除的索引。 更改索引定义时，我们希望旧版本的索引仅用于版本1，新版本的索引仅用于版本2。
 
-下表显示了5个索引定义： 索引 `cqPageLucene` 在两个版本中都使用，而索 `damAssetLucene-custom-1` 引仅在版本2中使用。
+下表显示了5个索引定义：索引 `cqPageLucene` 在两个版本中都使用，而索 `damAssetLucene-custom-1` 引仅在版本2中使用。
 
 >[!NOTE]
 >
@@ -176,3 +176,7 @@ AS NOTE: the above is internal for now.
 新版本的应用程序使用以下（已更改）配置：
 
 `/oak:index/acme.product-custom-2`
+
+### 索引可用性／容错 {#index-availability}
+
+建议为极其重要的功能创建重复索引（请注意上述索引的命名规范），因此，在索引损坏或任何此类无法预见的事件下，有一个回退索引可用于响应查询。
