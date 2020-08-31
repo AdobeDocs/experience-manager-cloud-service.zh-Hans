@@ -2,7 +2,7 @@
 title: 通过Dynamic Media使CDN缓存失效
 description: 使CDN(内容投放网络)缓存内容失效后，您可以快速更新Dynamic Media交付的资源，而无需等待缓存过期。
 translation-type: tm+mt
-source-git-commit: 262867ff19c373905b71b9099d1062705cfbf9cf
+source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 1%
@@ -58,7 +58,7 @@ CDN(内容投放网络)会缓存Dynamic Media资源，以便快速投放给客�
    | **[!UICONTROL 使 CDN 中与资产关联的图像预设失效]** | （可选）选中此选项后，选定的资产及其所有关联的图像预设URL将自动生成，以便缓存失效。<br>资产及其关联的预定义预设URL会因失效而自动生成。 此选项仅适用于图像资产。 |
    | **[!UICONTROL 基于模板的失效]** | （可选）选中此选项，仅使用定义的模板来形成URL。 |
    | **[!UICONTROL 添加资产]** | 使用资产选取器选择要失效的资产。 您可以选择已发布或已取消发布的资产。<br>CDN的缓存基于URL，而非基于资产。 因此，您必须了解网站上的完整URL。 确定这些URL后，可以将其添加到模板。 然后，您可以选择并添加这些资产，并使URL失效。 <br>将此选项与CDN中与资 **[!UICONTROL 源关联的图像预设失效]**、基于 **[!UICONTROL 模板的失效或两者结合使用]**。 |
-   | **[!UICONTROL 添加 URL]** | 手动添加或粘贴要使其CDN缓存失效的Dynamic Media资产的完整URL路径。 如果未在第1部分中创建CDN失效模板，请使 ***用此选项：使用CDN失效模板***，并且只有少数资源可使其失效。<br>**重要：** 您添加的每个URL都必须位于其自己的行中。<br>在指定时间最多可使1000个URL失效。 如果“添加URL”文 **[!UICONTROL 本字段]** 中的URL数大于1000，则无法点按“下 **[!UICONTROL 一步”]**。 在这种情况下，您必须点 **[!UICONTROL 按选定]** 资产或手动添加的URL右侧的X，以将其从失效列表中删除。<br>请注意，您必须在CDN失效模板或此添加URL文本字段中为图像智 **[!UICONTROL 能裁剪指定]** URL。 |
+   | **[!UICONTROL 添加 URL]** | 手动添加或粘贴要使其CDN缓存失效的Dynamic Media资产的完整URL路径。 如果未在第1部分（共2部分）中创建CDN失 ***效模板，请使用此选项：创建CDN失效模板***，并且只有少数资源可以失效。<br>**重要：** 您添加的每个URL都必须位于其自己的行中。<br>在指定时间最多可使1000个URL失效。 如果“添加URL”文 **[!UICONTROL 本字段]** 中的URL数大于1000，则无法点按“下 **[!UICONTROL 一步”]**。 在这种情况下，您必须点 **[!UICONTROL 按选定]** 资产或手动添加的URL右侧的X，以将其从失效列表中删除。<br>请注意，您必须在CDN失效模板或此添加URL文本字段中为图像智 **[!UICONTROL 能裁剪指定]** URL。 |
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Next.]**
 1. 在“CDN **[!UICONTROL 失效]** -确认 **[!UICONTROL ”页面的“URL]****** 列表”框中，您将看到一个或多个URL的列表，这些URL是从您之前创建的CDN失效模板以及您刚刚添加的资源生成的。
