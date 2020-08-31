@@ -3,10 +3,10 @@ title: 将AEM Assets配置为品牌门户Cloud Service
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 830fd3a61d479a47b03cffc117f7192dd2c740cc
+source-git-commit: 96a084dd0e8f250b343b616573aeedb2b83682e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 16%
+source-wordcount: '1653'
+ht-degree: 15%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 16%
 
 **配置工作流**
 
-AEM Assets作为Cloud Service通过Adobe开发者控制台配置了品牌门户，该控制台为品牌门户租户采购IMS令牌以进行授权。 它要求在AEM Assets和Adobe开发者控制台中进行配置。
+AEM Assets作为Cloud Service，通过Adobe开发者控制台配置了品牌门户，该控制台为品牌门户租户购买AdobeIdentity Management服务(IMS)帐户令牌以进行授权。 它要求在AEM Assets和Adobe开发者控制台中进行配置。
 
-1. 在AEM Assets，创建AdobeIdentity Management服务(IMS)帐户并生成公钥（证书）。
+1. 在AEM Assets，创建IMS帐户并生成公钥（证书）。
 1. 在Adobe开发人员控制台中，为您的Brand Portal租户（组织）创建一个项目。
 1. 在项目下，使用公钥配置API以创建服务帐户连接。
 1. 获取服务帐户凭据和JSON Web Token(JWT)有效负荷信息。
@@ -29,7 +29,7 @@ AEM Assets作为Cloud Service通过Adobe开发者控制台配置了品牌门户�
 
 >[!NOTE]
 >
->AEM Assets实例只应配置一个Brand Portal租户。
+>作为Cloud Service实例的AEM Assets仅应配置一个Brand Portal租户。
 
 
 ## 前提条件 {#prerequisites}
@@ -52,7 +52,7 @@ AEM Assets作为Cloud Service通过Adobe开发者控制台配置了品牌门户�
 
 ### 创建 IMS 配置 {#create-ims-configuration}
 
-IMS配置对您的Brand Portal租户与AEM Assets进行身份验证。
+IMS配置将您的AEM Assets作为Cloud Service实例与Brand Portal租户进行身份验证。
 
 IMS 配置包括两个步骤：
 
@@ -61,7 +61,7 @@ IMS 配置包括两个步骤：
 
 ### 获取公共证书 {#public-certificate}
 
-公共证书允许您在Adobe开发者控制台上验证用户档案。
+公钥（证书）在Adobe开发者控制台上验证您的用户档案。
 
 1. 登录 AEM 资产。
 
@@ -70,17 +70,17 @@ IMS 配置包括两个步骤：
 
 1. 在“AdobeIMS配置”页中，单击 **[!UICONTROL 创建]**。 It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
 
-1. 选择云解决方案 **[!UICONTROL Adobe品牌门户]**。
+1. 在“ **[!UICONTROL 云解决方案]** ”下拉 **[!UICONTROL 列表中选]** 择AdobeBrand Portal。
 
-1. 启用“ **[!UICONTROL 创建新证书]** ”复选框，并 **指定公钥** 的别名。 别名用作公钥的名称。
+1. 选中“ **[!UICONTROL 创建新证书]** ”复选框，并指 **定公钥的** 别名。 别名用作公钥的名称。
 
 1. 单击&#x200B;**[!UICONTROL 创建证书]**。Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![创建证书](assets/ims-config2.png)
 
-1. Click **[!UICONTROL Download Public Key]** and save the certificate (.crt) file on your machine.
+1. 单击“ **[!UICONTROL 下载公钥]** ”图标，并将公钥(.crt)文件保存到您的计算机上。
 
-   证书文件稍后将用于为您的Brand Portal租户配置API并在Adobe开发人员控制台中生成服务帐户凭据。
+   公钥稍后将用于为您的Brand Portal租户配置API并在Adobe开发人员控制台中生成服务帐户凭据。
 
    ![下载证书](assets/ims-config3.png)
 
@@ -92,7 +92,7 @@ IMS 配置包括两个步骤：
 
 ### 创建服务帐户(JWT)连接 {#createnewintegration}
 
-在Adobe开发人员控制台中，项目和API在Brand Portal租户（组织）级别进行配置。 配置API可创建服务帐户(JWT)连接。 可通过生成密钥对（私钥和公钥）或上传公钥来配置API的方法有两种。 要通过Brand Portal配置AEM Assets，您必须在AEM Assets生成公共证书（公钥），并通过上传公钥在Adobe开发人员控制台中创建凭据。 此公钥用于为所选Brand Portal租户配置API，并为服务帐户生成凭据和JWT有效负荷。 在AEM Assets配置IMS帐户时需要这些凭据。 配置IMS帐户后，即可在AEM Assets配置Brand Portal云服务。
+在Adobe开发人员控制台中，项目和API在Brand Portal租户（组织）级别进行配置。 配置API可创建服务帐户(JWT)连接。 可通过生成密钥对（私钥和公钥）或上传公钥来配置API的方法有两种。 要通过Brand Portal配置AEM Assets，您必须在AEM Assets生成公钥（证书），并通过上传公钥在Adobe开发者控制台中创建凭据。 在AEM Assets配置IMS帐户时需要这些凭据。 配置IMS帐户后，即可在AEM Assets配置Brand Portal云服务。
 
 执行以下步骤以生成服务帐户凭据和JWT有效负荷：
 
@@ -103,7 +103,7 @@ IMS 配置包括两个步骤：
    >
    >确保您已从右上角的下拉（组织）列表中选择了正确的IMS组织（Brand Portal租户）。
 
-1. Click **[!UICONTROL Create new project]**. 将为您的组织创建一个空白项目。
+1. Click **[!UICONTROL Create new project]**. 将为您的组织创建一个空白项目，其名称由系统生成。
 
    单击 **[!UICONTROL “编辑]** ”项目以更新 **[!UICONTROL 项目标题]** 和 **[!UICONTROL 说明]**，然 **[!UICONTROL 后单击“]**&#x200B;保存”。
 
@@ -113,15 +113,15 @@ IMS 配置包括两个步骤：
 
    确保您有权访问AEM Brand Portal服务。
 
-1. 在“配 **[!UICONTROL 置API]** ”窗口中， **[!UICONTROL 单击“上传公钥”]**。 然后，单 **[!UICONTROL 击“Select a File]** （选择文件）”并上传您在“Obtain public certificate（获取公共证书）”部分下 [载的公共证书](#public-certificate) （.crt文件）。
+1. 在“配 **[!UICONTROL 置API]** ”窗口中， **[!UICONTROL 单击“上传公钥”]**。 然后，单 **[!UICONTROL 击“Select a File]** （选择文件）”并上传您在“Obtain public certificate（获取公共证书）”部分下 [载的公钥(.crt](#public-certificate) 文件)。
 
    单击&#x200B;**[!UICONTROL 下一步]**。
 
    ![上传公钥](assets/service-account3.png)
 
-1. 验证公共证书，然后单击“ **[!UICONTROL 下一步]**”。
+1. 验证公钥，然后单击“下 **[!UICONTROL 一步]**”。
 
-1. 选择默认的产品用户档案 **[!UICONTROL 资产品牌门户]** ，然后单 **[!UICONTROL 击保存配置的API]**。
+1. 选择 **[!UICONTROL Assets Brand Portal]** 作为默认产品用户档案，然后单 **[!UICONTROL 击保存配置的API]**。
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
@@ -129,7 +129,7 @@ IMS 配置包括两个步骤：
 
    ![选择产品用户档案](assets/service-account4.png)
 
-1. 配置API后，您将被重定向到API概述页面。 在左侧导航的“凭据 **[!UICONTROL ”下]**，单 **[!UICONTROL 击“服务帐户(JWT)]**”。
+1. 配置API后，您将被重定向到API概述页面。 在左侧导航的“凭 **[!UICONTROL 据]**”下，单 **[!UICONTROL 击“服务帐户(JWT)]** ”选项。
 
    >[!NOTE]
    >
@@ -141,7 +141,7 @@ IMS 配置包括两个步骤：
 
    ![服务帐户凭据](assets/service-account5.png)
 
-1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]**.
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information.
 
 您现在可以使用客户端ID（API密钥）、客户端机密和JWT负载 [配置AEM Assets的IMS帐户](#create-ims-account-configuration) 。
 
@@ -226,7 +226,7 @@ IMS 配置包括两个步骤：
 
 1. 登录 AEM 资产。
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. 在Brand Portal的“配置”页中，单击“ **[!UICONTROL 创建]**”。
 
@@ -256,9 +256,6 @@ IMS 配置包括两个步骤：
 
    ![](assets/test-bpconfig2.png)
 
-   >[!NOTE]
-   >
-   >默认情况下，将为 Brand Portal 租户创建一个分发代理。
 
 1. 单击 **[!UICONTROL 发布到品牌门户]** ，以打开分发代理。
 
@@ -310,7 +307,7 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hans/exp
 
    ![](assets/test-bpconfig5.png)
 
-分发代理生成日志如下：
+分发代理已生成以下日志：
 
 * 信息：这是系统生成的日志，在成功配置分发代理时触发。
 * DSTRQ1（请求1）:测试连接时的触发器。
