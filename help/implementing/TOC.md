@@ -3,10 +3,10 @@ sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 96%
+source-wordcount: '365'
+ht-degree: 70%
 
 ---
 
@@ -36,12 +36,42 @@ ht-degree: 96%
    + [AEM 云服务 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
    + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
+   + [AEM UI的结构](developing/introduction/ui-structure.md)
    + [Sling 备忘单](developing/introduction/sling-cheatsheet.md)
    + [使用 Sling 适配器](developing/introduction/sling-adapters.md)
    + [在 AEM 云服务中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
    + [AEM 云服务中的叠加](developing/introduction/overlays.md)
    + [记录](developing/introduction/logging.md)
    + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [理解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
++ 组件和模板 {#components-templates}
+   + [组件概述](developing/components/overview.md)
+   + [模板](developing/components/templates.md)
+   + [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
+   + [样式系统](/help/sites-cloud/authoring/features/style-system.md)
+   + [内容服务的JSON导出程序](developing/components/json-exporter.md)
+   + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
+   + [图像编辑器](developing/components/image-editor.md)
+   + [装饰标签](developing/components/decoration-tag.md)
+   + [使用隐藏条件](developing/components/hide-conditions.md)
++ 无外设体验管理 {#headless}
+   + [具有AEM的无头和混合](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
+   + 单页应用程序 {#spa}
+      + [SPA简介和演练](developing/spa/introduction.md)
+      + [SPA WKND教程](developing/spa/wknd-tutorial.md)
+      + [使用React快速入门](developing/spa/getting-started-react.md)
+      + [角度式入门](developing/spa/getting-started-angular.md)
+      + [SPA深海潜水](developing/spa/deep-dives.md)
+      + [为AEM开发SPA](developing/spa/developing.md)
+      + [SPA编辑器概述](developing/spa/editor-overview.md)
+      + [SPA Blueprint](developing/spa/blueprint.md)
+      + [SPA页面组件](developing/spa/page-component.md)
+      + [动态模型到组件映射](developing/spa/model-to-component-mapping.md)
+      + [模型路由](developing/spa/routing.md)
+      + [启动集成](developing/spa/launch-integration.md)
+      + [服务器端渲染](developing/spa/ssr.md)
+      + [Javascript API参考](developing/spa/reference-materials.md)
 + 配置和扩展 AEM 云服务 {#configuring-and-extending}
    + [扩展体验片段](developing/extending/experience-fragments.md)
    + [自定义和扩展内容片段](developing/extending/content-fragments-customizing.md)
