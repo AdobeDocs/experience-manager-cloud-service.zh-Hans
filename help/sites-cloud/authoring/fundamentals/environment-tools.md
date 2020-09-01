@@ -2,7 +2,7 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -40,7 +40,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 在编辑页面时，**帮助**&#x200B;可从以下位置访问：
 
-* [**页面信息&#x200B;**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)选择器，这将显示幻灯片介绍（在您第一次访问编辑器时显示）
+* [**页面信息**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)&#x200B;选择器，这将显示幻灯片介绍（在您第一次访问编辑器时显示）
 * 适用于特定组件的[配置](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)对话框（使用对话工具栏中的 ? 图标），其中将显示上下文相关帮助
 
 其他[与帮助相关的资源可以从控制台中访问](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)。
@@ -82,10 +82,12 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
    * 图标或缩写
       * 标准组件的图标是单色的。
       * 缩写始终由组件名称的前两个字符组成。
+
    从&#x200B;**组件**&#x200B;浏览器顶部的工具栏可以：
 
    * 按名称筛选组件。
    * 使用下拉选择框将显示内容限定为特定组。
+
    有关组件的更多详细说明，您可以单击或点按&#x200B;**组件**&#x200B;浏览器（如果可用）中组件旁边的信息图标。例如，对于&#x200B;**内容片段**：
 
    ![组件浏览器信息](/help/sites-cloud/authoring/assets/component-browser-information.png)
@@ -98,7 +100,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 资产浏览器 {#assets-browser}
 
-资产浏览器会显示当前页面上可直接使用的所有资产。<!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+资产浏览器会显示当前页面上可直接使用的所有[资产](/help/assets/home.md)。
 
 资产浏览器是侧面板中的一个选项卡，侧面板中还有[组件浏览器](#components-browser)和[内容树](#content-tree)。要打开或关闭侧面板，请使用工具栏左上角的图标：
 
@@ -153,7 +155,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >
 >在宽度小于 1024 像素时将视为检测到移动设备，这种情况也可能出现在较小的桌面窗口中。
 
-如果您需要快速更改资产，可以直接从资产浏览器启动资产编辑器，方法是单击资产名称旁边显示的编辑图标。<!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+如果您需要快速更改资产，可以直接从资产浏览器启动[资产编辑器](/help/assets/manage-digital-assets.md)，方法是单击资产名称旁边显示的编辑图标。
 
 ![资产编辑按钮](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -281,6 +283,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >* 某些模式需要相应的许可/权限才能访问。
 >* 由于空间限制，“开发人员”模式在移动设备上不可用。
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) 可以在&#x200B;**预览**&#x200B;模式和当前选定的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
+
 >
 
 
