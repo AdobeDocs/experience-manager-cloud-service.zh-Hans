@@ -2,9 +2,9 @@
 title: 为AEM开发SPA
 description: 本文介绍了在使前端开发者为AEM开发SPA时应考虑的重要问题，并概述了AEM在AEM上部署已开发SPA时应牢记的SPA架构。
 translation-type: tm+mt
-source-git-commit: d0685af8b05d5491debf7bad99b5c8f111808f26
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2078'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ SPA应仅依赖内容的动态呈现。 这是AEM获取和呈现内容结构的�
    <th><strong>缺点</strong></th>
   </tr>
   <tr>
-   <td>AEM用作无外设CMS，而不使用 <a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-reference-materials.html">SPA Editor SDK框架。</a></td>
+   <td>AEM用作无外设CMS，而不使用 <a href="/help/implementing/developing/spa/reference-materials.md">SPA Editor SDK框架。</a></td>
    <td>前端开发人员完全控制应用程序。</td>
    <td><p>内容作者无法利用AEM内容创作体验。</p> <p>如果代码包含静态引用或路由，则它既不可移植，也不可重用。</p> <p>不允许使用模板编辑器，因此前端开发人员必须通过JCR维护可编辑的模板。</p> </td>
   </tr>
