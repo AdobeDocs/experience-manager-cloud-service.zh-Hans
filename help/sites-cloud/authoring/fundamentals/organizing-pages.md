@@ -2,10 +2,10 @@
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-创建新页面时，AEM 将依据 AEM 和 JCR 实行的惯例来验证页面名称。<!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
 
 允许使用的字符最少包括：
 
@@ -103,7 +103,7 @@ ht-degree: 100%
 * `_`（下划线）
 * `-`（连字符/减号）
 
-有关允许使用的所有字符的完整详细信息可以在命名惯例中找到。<!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+有关允许使用的所有字符的完整详细信息可以在[命名惯例](/help/implementing/developing/introduction/naming-conventions.md)中找到。
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ ht-degree: 100%
 
 #### 标题 {#title}
 
-如果您在创建新页面时只提供一个页面&#x200B;**标题**，AEM 将从此字符串派生页面&#x200B;**名称**，并依据 AEM 和 JCR 实行的惯例验证此名称。<!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+如果您在创建新页面时只提供一个页面&#x200B;**标题**，AEM 将从此字符串派生页面&#x200B;**名称**[，并依据 AEM 和 JCR 实行的惯例验证此名称。](/help/implementing/developing/introduction/naming-conventions.md)
 
 虽然将接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称会将无效的字符替换掉。例如：
 
@@ -122,7 +122,7 @@ ht-degree: 100%
 
 #### 名称 {#name}
 
-如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。当 AEM 检测到无效字符时，该字段将突出显示。<!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。[](/help/implementing/developing/introduction/naming-conventions.md)您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。AEM 检测到无效字符时，该字段将突出显示，并提供有说明性消息。
 
 ![输入无效页面名称的示例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -206,7 +206,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    * **名称**：
 
       * 用于生成 URI。如果未指定，名称会从标题派生。
-      * 如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。<!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * 如果您在创建新页面时提供页面&#x200B;**名称**[，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。](/help/implementing/developing/introduction/naming-conventions.md)
       * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。当 AEM 检测到无效字符时，此字段将会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
 
    >[!TIP]
@@ -365,9 +365,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 >[!NOTE]
 >
->页面只能移动到允许使用该页面所基于的模板的位置。请参阅“模板可用性”以了解更多信息。
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>页面只能移动到允许使用该页面所基于的模板的位置。See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
 -->
 
 #### 异步操作 {#asynchronous-actions}
