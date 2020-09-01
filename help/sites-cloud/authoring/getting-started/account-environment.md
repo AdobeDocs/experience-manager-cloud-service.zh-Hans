@@ -2,7 +2,7 @@
 title: 配置帐户环境
 description: AEM 提供了用于配置帐户和创作环境的某些方面的功能
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
@@ -94,4 +94,4 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 * **Stock 配置**
 
-   此选项允许指定首选的 Adobe Stock 配置，并且仅在系统管理员已启用 Adobe Stock 集成时才可用。<!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   此选项允许指定首选的 Adobe Stock 配置，并且仅在系统管理员已启用 [Adobe Stock 集成](/help/assets/aem-assets-adobe-stock.md)时才可用。
