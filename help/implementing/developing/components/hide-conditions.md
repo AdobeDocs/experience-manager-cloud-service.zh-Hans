@@ -2,7 +2,7 @@
 title: 使用隐藏条件
 description: 隐藏条件可用于确定是否渲染组件资源。
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 4%
@@ -58,22 +58,22 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 1. 默认情况下，页面作者可以使用列表核心组件通过选择子页面选项来构建使用子页面 **的列表**。
 
-   ![列表组件设置](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![列表组件设置](assets/hide-conditions-list-settings.png)
 
 1. 在列表核心组件的设计对话框中，模板作者可以选择“禁 **用子项** ”选项，以阻止将基于子页面生成列表的选项显示给页面作者。
 
-   ![列表组件设计对话框](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![列表组件设计对话框](assets/hide-conditions-list-design.png)
 
 1. 在下创建策略节 `/conf/wknd/settings/wcm/policies/wknd/components/list` 点，其属性 `disableChildren` 设置为 `true`。
 
-   ![隐藏条件的节点结构](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![隐藏条件的节点结构](assets/hide-conditions-node-structure.png)
 
 1. 隐藏条件定义为对话框属性节 `granite:hide` 点上的属性值 `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![隐藏条件的评估](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![隐藏条件的评估](assets/hide-conditions-evaluation.png)
 
 1. 从设计配 `disableChildren` 置中提取该值，表达式的 `${cdDesign.disableChildren}` 计算结果 `false`为，这意味着该选项不会作为组件的一部分呈现。
 
 1. 使用列表 **组件时** ，页面作者不再呈现子页面选项。
 
-   ![列表组件（已禁用子选项）](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![列表组件（已禁用子选项）](assets/hide-conditions-child-disabled.png)
