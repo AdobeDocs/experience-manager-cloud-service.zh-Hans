@@ -2,7 +2,7 @@
 title: 页面模板
 description: 页面模板用于创建将用作新页面基础的页面
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 7%
@@ -512,7 +512,7 @@ GITHUB上的代码
 
    * `cq:templateType` -提供对模板类型的引用。
 
-![模板、内容和组件如何相互关联](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![模板、内容和组件如何相互关联](assets/templates-content-components.png)
 
 上图显示了模板、内容和组件之间如何相互关联：
 
@@ -565,7 +565,7 @@ GITHUB上的代码
 
 下图描述了模板评估流程：
 
-![模板评估流程](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![模板评估流程](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
