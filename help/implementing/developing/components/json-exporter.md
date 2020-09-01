@@ -2,7 +2,7 @@
 title: 内容服务的JSON导出程序
 description: AEM Content Services设计为在AEM关注网页之外对内容进行投放和描述。 它们使用标准化方法向非传统AEM网页的渠道提供内容投放，这些方法可供任何客户使用。
 translation-type: tm+mt
-source-git-commit: 02d95b7c45cb4d6d2fbfd9699690ecc1b80e1202
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 7%
@@ -38,7 +38,7 @@ AEM Content Services设计为将内容的描述和投放从AEM扩展到网页焦
 
 1. 将提供以下内容：
 
-   ![WKND内容的JSON模型](/help/implementing/developing/introduction/assets/json-model-wknd.png)
+   ![WKND内容的JSON模型](assets/json-model-wknd.png)
 
 您也可以通过专门定位结构化内容片段来提供其内容。
 
@@ -56,7 +56,7 @@ AEM Content Services设计为将内容的描述和投放从AEM扩展到网页焦
 
 * 将提供以下内容：
 
-   ![WKND内容片段的JSON模型](/help/implementing/developing/introduction/assets/json-model-wknd-content-fragment.png)
+   ![WKND内容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
 
    >[!NOTE]
    >
