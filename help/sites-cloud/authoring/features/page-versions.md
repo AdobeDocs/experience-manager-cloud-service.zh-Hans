@@ -2,7 +2,7 @@
 title: 处理页面版本
 description: 创建、比较和恢复页面版本
 translation-type: tm+mt
-source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -132,7 +132,7 @@ ht-degree: 67%
 
    ![恢复版本——选择页](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. 为选 **定页** 面的选定版本选择恢复，将其恢复为当前 *版本* 。
+1. 为选 **定页** 面的选定版本选择恢复，以恢复为当前版本。
 
 >[!NOTE]
 >
