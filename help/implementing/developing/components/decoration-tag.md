@@ -2,7 +2,7 @@
 title: 装饰标签
 description: 呈现网页中的组件时，可以生成HTML元素，将呈现的组件包装在它自身中。 对于开发人员，AEM优惠清晰而简单的逻辑控制包含组件的装饰标签。
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 此决策树汇总确定包装器标签行为的逻辑。
 
-![决策树](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![决策树](assets/decoration-tag-decision-tree.png)
 
 ### Use Cases {#use-cases}
 
