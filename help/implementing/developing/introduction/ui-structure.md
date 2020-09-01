@@ -2,9 +2,9 @@
 title: AEM UI的结构
 description: AEM UI具有几个基本原则，由几个关键元素组成
 translation-type: tm+mt
-source-git-commit: 0ae4a4695f3d869b9372694396711ca8626e1df1
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,4 @@ AEM附带有已用于页面创作的多个层；例如，编辑、预览和注�
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-有关更多技术信息，请 [参阅触屏优化页面](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) 编辑器的JS文档集。
+有关更多技术信息，请 [参阅为页面编辑器设](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) 置的JS文档集。
