@@ -2,10 +2,10 @@
 title: 创建 Adobe Experience Manager 云服务的无障碍内容（WCAG 2.1 合规性）
 description: 使用 AEM 云服务帮助残障人士访问和使用 Web 内容
 translation-type: tm+mt
-source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
+source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
 workflow-type: tm+mt
-source-wordcount: '13955'
-ht-degree: 100%
+source-wordcount: '14057'
+ht-degree: 99%
 
 ---
 
@@ -23,12 +23,10 @@ ht-degree: 100%
 * [WCAG 文档](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 此外，请参阅：
+
 * [WCAG 2.1 快速指南](/help/onboarding/accessibility/quick-guide-wcag.md)。
 * [Adobe 解决方案的“无障碍合规性”报告](https://www.adobe.com/accessibility/compliance.html)。
-
-<!-- 
->* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
--->
+* [配置富文本编辑器以创建辅助内容](/help/implementing/developing/extending/rte-accessible-content.md)
 
 准则依据三个合规性级别进行分级：A 级（最低）、AA 级以及 AAA 级（最高）。以下是各个级别的简要定义：
 
@@ -74,15 +72,13 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->某些开箱即用的核心组件（例如&#x200B;**[轮播](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的**替换文本&#x200B;**字段，尽管存在适用于整个组件的**标签&#x200B;**字段（**[辅助功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
+>某些开箱即用的核心组件（例如&#x200B;**[轮播](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
 >因此，在为 AEM 实例实施这些版本时，开发团队需要将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
-
-<!--
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+>某些开箱即用的核心组件（例如&#x200B;**[轮播](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 默认情况下，AEM 要求填写&#x200B;**替换文本**&#x200B;字段。如果图像是纯粹的装饰并且不需要替换文本，则可以选中&#x200B;**图像具有装饰性**&#x200B;选项。
 
@@ -343,11 +339,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
    >[!NOTE]
    >
-   >默认情况下，这些元素和属性并非直接可用，不过系统管理员可以在&#x200B;**表属性**&#x200B;对话框中添加对这些值的支持（请参阅添加对其他 HTML 元素和属性的支持）。
-
-   <!-- removed link syntax for ExL - Bob Bringhurst
-  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
-  -->
+   >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
 
@@ -1046,10 +1038,7 @@ John Smith’s publications
 >
 >如果包含使用不同语言的人名或城市，或者使用默认语言中常用的外来词或短语（如英语中的 *schadenfreude*），则不必遵循此成功标准。
 
-要添加包含相应语言的 span 元素，可以在 RTE 的源代码编辑模式下手动编辑 HTML 标记，以将其写成如上显示的方式。或者，也可以由系统管理员将 `lang` 属性添加到 RTE 中（请参阅添加对其他 HTML 元素和属性的支持）。
-<!--
-To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+要添加包含相应语言的 span 元素，可以在 RTE 的源代码编辑模式下手动编辑 HTML 标记，以将其写成如上显示的方式。Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### 更多信息 - 局部语言 (3.1.2) {#more-information-language-of-parts}
 
@@ -1212,11 +1201,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 在 WKND 项目中，如果存在一组相关控件（如&#x200B;**单选按钮组**），则可能需要该组以及单个控件的标题。在 AEM 中添加一组单选按钮时，**标题**&#x200B;字段会提供此组标题，而单个标题会在创建单选按钮（**项目**）时指定。
 
-但是，组标题和单选按钮本身之间并没有编程关联。模板编辑器需要将标题包装在必需的 `fieldset` 和 `legend` 标记中，以便创建此关联，而且该操作只能通过编辑页面源代码来完成。或者，系统管理员也可以添加对这些元素的支持，以使它们显示在&#x200B;**字段属性**&#x200B;对话框中（请参阅添加对其他 HTML 元素和属性的支持）。
-
-<!--
-However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+但是，组标题和单选按钮本身之间并没有编程关联。模板编辑器需要将标题包装在必需的 `fieldset` 和 `legend` 标记中，以便创建此关联，而且该操作只能通过编辑页面源代码来完成。或者，系统管理员也可以添加对这些元素的支持，以使它们显示在&#x200B;**字段属性**&#x200B;对话框中（请参阅[添加对其他 HTML 元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md)）。
 
 ###### 有关表单的其他考虑事项 {#additional-considerations-for-forms}
 
