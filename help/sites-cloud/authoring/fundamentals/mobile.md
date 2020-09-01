@@ -2,7 +2,7 @@
 title: 创作适用于移动设备的页面
 description: 在为移动设备进行创作时，您可以在多个模拟器之间切换，以查看最终用户看到的内容
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 创作适用于移动设备的页面 {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager 页面基于响应式布局。响应式布局可自动调整内容以适合目标设备，而无需为特定设备创作内容。
+Adobe Experience Manager 页面基于响应式布局。[响应式布局可自动调整内容以适合目标设备，而无需为特定设备创作内容。](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 在创作移动页面时，页面会以模拟移动设备的方式显示。在创作页面时，您可以在多个模拟器之间切换，以查看最终用户在访问页面时看到的内容。
 
