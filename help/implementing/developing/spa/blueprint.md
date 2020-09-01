@@ -2,7 +2,7 @@
 title: SPA Blueprint
 description: 本文档描述了任何SPA框架在AEM内实施可编辑的SPA组件时应履行的与框架无关的一般合同。
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 要使作者能够使用AEM SPA编辑器编辑SPA的内容，SPA必须满足以下要求。
 
-## 简介 {#introdcution}
+## 简介 {#introduction}
 
 本文档描述了任何SPA框架(即AEM支持层)为在AEM内实施可编辑的SPA组件应履行的一般合同。
 
@@ -283,4 +283,3 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 有关AEM中SPA的详细信息，请参阅以下文档:
 
 * [SPA编辑器概述](editor-overview.md) ，了解AEM中SPA和通信模型的概述
-
