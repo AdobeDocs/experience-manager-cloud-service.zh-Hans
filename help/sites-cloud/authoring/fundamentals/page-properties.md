@@ -2,9 +2,9 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 88%
 
 ---
@@ -129,11 +129,9 @@ ht-degree: 88%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **继承自 &lt;路径>**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * 指示是否继承页面以及从何处继承。
 
 * **云配置**
 
@@ -148,7 +146,7 @@ ht-degree: 88%
    * 启用（或禁用）身份验证来访问页面。
    >[!NOTE]
    >
-   >已关闭的用户组在&#x200B;**[权限](#permissions)**选项卡上定义。
+   >已关闭的用户组在&#x200B;**[权限](#permissions)**&#x200B;选项卡上定义。
 
 * **登录页面**
 
