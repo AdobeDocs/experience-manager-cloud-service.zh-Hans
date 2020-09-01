@@ -2,7 +2,7 @@
 title: 页面差异
 description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 100%
@@ -22,7 +22,7 @@ ht-degree: 100%
 >
 >用户必须具有针对节点 `/content/versionhistory` 的&#x200B;**修改/创建/删除**&#x200B;权限，才能使用此功能。
 >
->请参阅开发和页面差异，以了解有关此功能的更多技术详细信息。<!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>请参阅[开发和页面差异](/help/implementing/developing/introduction/page-diff.md#operation-details)，以了解有关此功能的更多技术详细信息。
 
 ## 用法 {#use}
 
@@ -105,4 +105,4 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->有关页面差异机制的操作以及可能影响页面差异的限制的更多详细信息，请参阅此功能的开发人员文档。<!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>有关页面差异机制的操作以及可能影响页面差异的限制的更多详细信息，请参阅此功能的[开发人员文档](/help/implementing/developing/introduction/page-diff.md)。
