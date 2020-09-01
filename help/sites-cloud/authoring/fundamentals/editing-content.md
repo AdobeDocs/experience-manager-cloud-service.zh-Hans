@@ -2,7 +2,7 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -129,7 +129,7 @@ ht-degree: 100%
 
 您可以使用[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)添加新组件。[组件占位符](#component-placeholder)显示组件在放置时将占据的位置：
 
-1. 确保页面处于[**编辑&#x200B;**模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 打开[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。
 1. 将所需的组件拖动到[所需位置](#component-placeholder)。
 1. [编辑](#edit-content)组件。
@@ -142,7 +142,7 @@ ht-degree: 100%
 
 您可以使用段落系统的&#x200B;**将组件拖动到此处**&#x200B;框添加新组件：
 
-1. 确保页面处于[**编辑&#x200B;**模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 可通过以下两种方式在段落系统中选择和添加新组件：
 
    * 从现有组件的工具栏或&#x200B;**将组件拖动到此处**&#x200B;框中选择&#x200B;**插入组件**&#x200B;选项 (+)。
@@ -165,7 +165,7 @@ ht-degree: 100%
 
 要通过拖动以上某一资产类型创建组件，请执行以下操作：
 
-1. 确保页面处于[**编辑&#x200B;**模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 打开[资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)。
 1. 将所需的资产拖动到所需位置。[组件占位符](#component-placeholder)显示组件在放置时将占据的位置。
 
@@ -177,7 +177,7 @@ ht-degree: 100%
 >
 >在移动设备上，资产浏览器将填满整个屏幕。在开始拖动资产后，浏览器将关闭以再次显示页面，以便您能够放置资产。
 
-如果您在浏览资产时发现需要对某个资产进行快速更改，则可以直接从浏览器中单击该资产名称旁边的编辑图标，以启动资产编辑器。<!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+如果您在浏览资产时发现需要对某个资产进行快速更改，则可以直接从浏览器中单击该资产名称旁边的编辑图标，以启动[资产编辑器](/help/assets/manage-digital-assets.md)。
 
 ![资产编辑按钮](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
