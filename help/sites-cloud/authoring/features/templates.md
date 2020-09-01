@@ -2,10 +2,10 @@
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
 
-有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档页面模板 - 可编辑以了解更多信息。<!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 100%
 
 ### 创建模板文件夹 - 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在“页面模板 - 可编辑”文档中有相关说明。<!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+您应该为项目创建模板文件夹，以保存特定于项目的模板。This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### 创建新模板 - 模板作者 {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ ht-degree: 100%
    >
    >在标准 AEM 实例中，“模板”控制台中已存在&#x200B;**全局**&#x200B;文件夹。此文件夹会保存默认模板，如果在当前文件夹中没有找到策略和/或模板类型，则此文件夹可以充当备用。
    >
-   >建议最好使用为您的项目创建的模板文件夹。<!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >建议最好使用[为您的项目创建的模板文件夹](/help/implementing/developing/components/templates.md#template-folders)。
 
 1. 选择&#x200B;**创建**，然后选择&#x200B;**创建模板**&#x200B;以打开向导。
 
@@ -114,7 +114,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。要获取更多信息，请参阅开发人员文档“页面模板 - 可编辑”。<!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. 填写&#x200B;**模板详细信息**：
 
@@ -204,7 +204,7 @@ ht-degree: 100%
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
    >
-   >请参阅模板可用性 - 对允许的模板适用的原则与此相同。<!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
@@ -265,7 +265,7 @@ ht-degree: 100%
 
 #### 布局 {#template-layout}
 
-通过[布局](#editing-a-template-layout-template-author)，您可以预定义所需设备格式的模板布局。模板创作的&#x200B;**布局**&#x200B;模式与[**页面创作的布局&#x200B;**模式](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)具有相同的功能。
+通过[布局](#editing-a-template-layout-template-author)，您可以预定义所需设备格式的模板布局。模板创作的&#x200B;**布局**&#x200B;模式与&#x200B;[**页面创作的布局**&#x200B;模式](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)具有相同的功能。
 
 #### 页面策略 {#template-page-policies}
 
@@ -414,7 +414,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。<!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
 
 #### 策略和属性（布局容器）{#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->可以将&#x200B;**初始内容**&#x200B;模式视为使用模板创建的页面的编辑模式。因此，策略不是在&#x200B;**初始内容**&#x200B;模式下定义的，而是在[**结构&#x200B;**模式](#editing-a-template-structure-template-author)下定义的。
+>可以将&#x200B;**初始内容**&#x200B;模式视为使用模板创建的页面的编辑模式。因此，策略不是在&#x200B;**初始内容**&#x200B;模式下定义的，而是在&#x200B;[**结构**&#x200B;模式](#editing-a-template-structure-template-author)下定义的。
 
 * 可编辑的已解锁组件带有标记。选定此类组件后，它们会显示一个蓝色边框：
 
