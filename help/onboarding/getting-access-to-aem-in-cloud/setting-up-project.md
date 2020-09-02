@@ -2,7 +2,7 @@
 title: 项目设置详细信息
 description: 项目设置详细信息-Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 7%
@@ -17,7 +17,7 @@ ht-degree: 7%
 为了成功构建和部署Cloud Manager，现有AEM项目需要遵守一些基本规则：
 
 * 项目必须使用Apache Maven构建。
-* 在Git存储 *库的根目录中* ，必须有pom.xml文件。 此 *pom.xml* 文件可以引用多个子模块（这些子模块又可能具有其他子模块等） 必要时。
+* 在Git存储 *库的根目录中* ，必须有pom.xml文件。 此 *pom.xml* 文件可以引用许多子模块（这些子模块又可能具有其他子模块等） 必要时。
 
 * 您可以在pom.xml文件中添加对其他Maven *项目存储库的引* 用。 配置时 [支持访问受密码保护](#password-protected-maven-repositories) 的对象存储库。 但是，不支持访问受网络保护的对象存储库。
 * 可部署的内容包是通过扫描内容包 *zip* 文件来发现的，这些文件包含在名为 *目标的目录中*。 任何数量的子模块都可以生成内容包。
@@ -31,7 +31,7 @@ ht-degree: 7%
 
 在某些有限情况下，在Cloud Manager中运行时，您可能需要稍微改变构建过程，而不是在开发人员工作站上运行。 对于这些情 [况，Maven用户档案](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 可用于定义不同环境（包括Cloud Manager）中构建内容的不同方式。
 
-在Cloud Manager构建激活中环境Maven用户档案，应通过查找上述CM_BUILD环境变量来完成。 相反，只有在Cloud Manager构建用户档案之外才能使用的环境应通过查找此变量的基本含义来完成。
+在Cloud Manager构建激活中环境Maven用户档案，应通过查找上述CM_BUILD环境变量来完成。 相反，应通过查找此变量的缺失来完成仅在Cloud Manager构建用户档案外使用的环境。
 
 例如，如果您希望仅在构建在云管理器中运行时输出简单消息，您可以执行以下操作：
 
