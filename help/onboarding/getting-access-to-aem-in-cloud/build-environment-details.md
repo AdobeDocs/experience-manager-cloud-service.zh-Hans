@@ -2,7 +2,7 @@
 title: 构建环境详细信息
 description: 构建环境详细信息-Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 了解构建环境详细信息 {#understanding-build-environment}
+# 了解构建环境 {#understanding-build-environment}
 
 ## 构建环境详细信息 {#build-environment-details}
 
