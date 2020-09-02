@@ -2,20 +2,20 @@
 title: 使用向导
 description: 使用向导-Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 40%
+source-wordcount: '146'
+ht-degree: 41%
 
 ---
 
 
-# 使用向导创建AEM应用程序项目 {#using-wizard-to-create-an-aem-application-project}
+# 使用向导 {#using-wizard-to-create-an-aem-application-project}
 
 为了帮助新客户入门，Cloud Manger现在能够创建最少的AEM项目作为起点。 此过程基于AEM Project [**Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 
-请按照以下步骤在Cloud Manager中创建AEM应用程序项目：
+请按照以下步骤使用向导在云管理器中创建AEM应用程序项目：
 
 1. 登录到Cloud Manager并完成基本程序设置后，如果存储库为空，“ **Overview** ”屏幕上将显示一张特殊的行动动员卡。
 
