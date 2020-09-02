@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
+source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
 workflow-type: tm+mt
-source-wordcount: '2604'
+source-wordcount: '2620'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ CIF Venia [项目是](https://github.com/adobe/aem-cif-guides-venia) CIF核心�
 
 ## 您将构建的内容
 
-将为类似于卡的产品Teaser组件实施新样式。
+在本教程中，将为类似卡的产品Teaser组件实现新样式。 本教程中学到的经验教训可应用于其他CIF核心组件。
 
 ![您将构建的内容](../assets/style-cif-component/what-you-will-build.png)
 
