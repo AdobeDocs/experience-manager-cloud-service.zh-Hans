@@ -2,11 +2,11 @@
 sub-product: AEM 云服务入门
 user-guide-title: AEM 云服务入门
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '133'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,10 @@ ht-degree: 100%
       + [了解程序和程序类型](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [创建程序](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [沙盒程序](getting-access-to-aem-in-cloud/sandbox-programs.md)
-   + [创建 AEM 应用程序项目](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
+   + 创建 AEM 应用程序项目 {#create-application-project}
+      + [使用向导](getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [设置项目](getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [了解构建环境详细信息](getting-access-to-aem-in-cloud/build-environment-details.md)
 + 数据隐私和保护已准备就绪 {#data-privacy}
    + [用于数据保护和数据隐私法规的 AEM 已准备就绪](data-privacy-and-protection-readiness/aem-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
