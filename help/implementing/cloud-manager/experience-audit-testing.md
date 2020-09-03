@@ -2,7 +2,7 @@
 title: 体验审核测试-Cloud Services
 description: 体验审核测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ Cloud Manager中的Experience Audit可确保站点上的最终用户数字体验
 
 * **N/A** —— 没有可供比较的先前得分
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### 页面级别得分 {#page-level-scores}
 
@@ -59,5 +60,5 @@ Cloud Manager中的Experience Audit可确保站点上的最终用户数字体验
 
 单击任何单个页面的详细信息将提供有关已评估页面元素的信息，并指导您在检测到改进机会时修复问题。 测试的细节和相关指导由Google Lighthouse提供。
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
