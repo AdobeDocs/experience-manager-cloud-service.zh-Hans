@@ -2,7 +2,7 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -71,28 +71,28 @@ ht-degree: 0%
 
    在管线设置或编辑过程中，当在任何质量门中遇到重要故障时，部署管理器可以定义管线的行为。
 
-   这对于希望实现更自动化流程的客户非常有用。 可用选项有：
+   这对于希望获得更自动化流程的客户非常有用。 可用选项有：
 
    * **每次询问** -这是默认设置，需要手动干预任何重要故障。
    * **立即失败** -如果选中此项，则在出现重要故障时将取消管道。 这实质上是模拟用户手动拒绝每个失败。
    * **立即继续** -如果选中此项，则在出现重要故障时管道将自动继续。 这实际上是模拟用户手动批准每个失败。
 
 
-1. 生产管道设置包括第三个标签为“内容审 **核”的选项卡**。
+1. 生产管道设置包括第三个标签为“体验审 **核”的选项卡**。
 
    ![](assets/content-audit-1.png)
 
-   此选项提供应始终包含在内容审核中的URL路径的表。 用户可以手动输入要包括的URL路径。 最多可包含25行。 如果用户在此部分中未提交任何页面，则默认情况下，网站的主页将包括在内容审核中。
+   此选项提供应始终包含在体验审计中的URL路径的表。 用户可以手动输入要包括的URL路径。 最多可包含25行。 如果用户在此部分中未提交任何页面，则默认情况下，网站的主页将包括在体验审核中。
 
    >[!NOTE]
    > 已配置的页面将提交到服务并根据性能、辅助功能、SEO（搜索引擎优化）、最佳实践和PWA（渐进式Web应用程序）测试进行评估。
 
-   有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/content-audit-testing.md) “了解内容审核结果”。
+   有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/experience-audit-testing.md) “了解体验审核结果”。
 
-   单击“ **添加新页面覆盖** ”以提供要包含在内容审核中的URL路径。 添加路径后，单击“保 **存”**。
+   单击添 **加新页面覆盖** ，以提供要包含在体验审核中的URL路径。 添加路径后，单击“保 **存”**。
 
    >[!NOTE]
-   >要激活“内容审核”步骤，用户必须编辑管道，（可选）添加页面。 有关更多 [详细信息](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) ，请参阅“已知问题”。
+   >要激活体验审核步骤，用户必须编辑管道，（可选）添加页面。 有关更多 [详细信息](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) ，请参阅“已知问题”。
 
    ![](assets/content-audit2.png)
 
@@ -122,7 +122,7 @@ ht-degree: 0%
    ![](assets/configure-pipeline8.png)
 
    * **编辑** -允许编辑管道设置
-   * **构建** -导航到执行页面，可从中执行管道
+   * **构建** -导航到执行页面，可从该页面执行管道
    * **管理Git** —— 允许用户获取访问Cloud Manager Git存储库所需的信息
 
 ## 后续步骤 {#the-next-steps}
