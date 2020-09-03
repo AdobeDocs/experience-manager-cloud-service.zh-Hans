@@ -2,7 +2,7 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 1. 将显 **示“设置管道** ”屏幕。 Select the branch and click **Next**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. 配置部署选项。
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    可以定义触发器以开始管线：
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 1. 生产管道设置包括第三个标签为“体验审 **核”的选项卡**。
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    此选项提供应始终包含在体验审计中的URL路径的表。 用户可以手动输入要包括的URL路径。 最多可包含25行。 如果用户在此部分中未提交任何页面，则默认情况下，网站的主页将包括在体验审核中。
 
@@ -94,7 +94,7 @@ ht-degree: 0%
    >[!NOTE]
    >要激活体验审核步骤，用户必须编辑管道，（可选）添加页面。 有关更多 [详细信息](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) ，请参阅“已知问题”。
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. 从“编 **辑管道** ”屏 **幕中单击“** 保存”。 “概 **述** ”页现在显 **示“部署项目** ”卡。 单击 **“部署** ”按钮以部署项目。
 
