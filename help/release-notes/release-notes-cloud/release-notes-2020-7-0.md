@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.7.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.7.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
+source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 80%
@@ -90,11 +90,11 @@ AEM Commerce现在在Cloud Service上可用。
 * Cloud Manager 管道现在支持由客户设置的变量和密钥。
 
 
-   有关更多详细信息，请参阅[管道变量](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)。
+   有关更多详细信息，请参阅[管道变量](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)。
 
 * 现在支持身份验证绑定的私有Maven存储库。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多 [详细信息，请参阅](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) “使用Java 11支持”。
+* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多 [详细信息，请参阅](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) “使用Java 11支持”。
 
 ### 错误修复 {#bug-fixes-cm}
 
