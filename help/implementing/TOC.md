@@ -3,7 +3,7 @@ sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 69%
@@ -23,7 +23,7 @@ ht-degree: 69%
       + [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)
       + [自定义代码质量规则](cloud-manager/custom-code-quality-rules.md)
       + [功能测试](/help/implementing/cloud-manager/functional-testing.md)
-      + [内容审核测试](/help/implementing/cloud-manager/content-audit-testing.md)
+      + [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
    + [访问和管理日志](cloud-manager/manage-logs.md)
    + [了解通知](cloud-manager/notifications.md)
 + 管理代码 {#managing-code}
