@@ -2,7 +2,7 @@
 title: 部署到 AEM 云服务
 description: '部署到 AEM 云服务 '
 translation-type: tm+mt
-source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '3537'
 ht-degree: 1%
@@ -183,7 +183,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 包括第三方包 {#including-third-party}
 
-客户通常会包含来自第三方来源(如Adobe的翻译合作伙伴)的预建包。 建议将这些包托管在远程存储库中，并在中引用它们 `pom.xml`。 这适用于公共存储库，也适用于具有密码保护的专用存储库，如受密码保护的 [主存储库中所述](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories)。
+客户通常会包含来自第三方来源(如Adobe的翻译合作伙伴)的预建包。 建议将这些包托管在远程存储库中，并在中引用它们 `pom.xml`。 这适用于公共存储库，也适用于具有密码保护的专用存储库，如受密码保护的 [主存储库中所述](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)。
 
 如果无法将包存储在远程存储库中，客户可以将包放置在基于Maven的本地文件系统存储库中，该存储库作为项目的一部分提交到SCM，并由依赖它的任何对象引用。 存储库将在以下项目提示中声明：
 
