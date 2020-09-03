@@ -2,9 +2,9 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -89,10 +89,7 @@ ht-degree: 0%
 
    有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/experience-audit-testing.md) “了解体验审核结果”。
 
-   单击添 **加新页面覆盖** ，以提供要包含在体验审核中的URL路径。 添加路径后，单击“保 **存”**。
-
-   >[!NOTE]
-   >要激活体验审核步骤，用户必须编辑管道，（可选）添加页面。 有关更多 [详细信息](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) ，请参阅“已知问题”。
+   单击 **添加新页面覆盖** ，以提供要包含在体验审核中的URL路径。 添加路径后，单击“保 **存”**。
 
    ![](assets/exp-audit2.png)
 
