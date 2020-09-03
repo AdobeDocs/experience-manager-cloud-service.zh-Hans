@@ -2,9 +2,9 @@
 title: 体验审核测试-Cloud Services
 description: 体验审核测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,18 @@ Cloud Manager中的Experience Audit可确保站点上的最终用户数字体验
 
 体验审核通过生产管道执行页面提供聚合和详细的页面级测试结果。
 
-* 聚合级别指标衡量已审核页面的平均得分。
+* 聚合级别指标衡量已审核的页面中的平均分数，包括性能、辅助功能、最佳实践、SEO（搜索引擎优化）。
+   >[!NOTE]
+   >“Progressive Web App(PWA)”得分不包括在摘要得分中，只会显示在页面级报告详细信息屏幕中。
 * 还可以通过向下展开来获取各个页面级别的分数。
 * 可以详细查看各个测试的结果，以及如何修正在内容审核过程中确定的任何问题的指导。
 * 测试结果的历史记录将保留在Cloud Manager中，这样客户就可以查看在管道运行中引入的更改是否包含先前运行的任何回归。
 
 ### 聚合分数 {#aggregate-scores}
 
-每种测试类型(性能、辅助功能、SEO、最佳实践和聚合)都有PWA级别得分。
+每个测试类型（如性能、辅助功能、SEO和最佳实践）都有聚合级别得分。
+>[!NOTE]
+>“Progressive Web App(PWA)”得分不包括在摘要得分中，只会显示在页面级报告详细信息屏幕中。
 
 聚合级别得分取得运行中包含的页面的平均得分。 聚合级别的更改表示当前运行中页面的平均分数与上次运行的平均分数相比，即使配置为包含的页面集合在两次运行之间发生更改也是如此。
 
