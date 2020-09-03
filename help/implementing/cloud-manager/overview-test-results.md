@@ -2,7 +2,7 @@
 title: 测试结果概述-Cloud Services
 description: 测试结果概述-Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
    功能测试是生产管道的阶段测试阶段的一部分。
 
-1. [内容审核测试](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   内容审核测试在所有Cloud Manager生产管道中都处于启用状态，无法跳过。
+   Experience Audit Testing已在所有Cloud Manager Production Pipeline中启用，无法跳过。
 
 这些测试可以是：
 
