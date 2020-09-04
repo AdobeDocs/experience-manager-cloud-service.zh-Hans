@@ -2,7 +2,7 @@
 title: 了解测试结果-Cloud Services
 description: 了解测试结果-Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 736a7c8d56a957e511451b0ba06affd9643f75e5
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 3%
@@ -225,7 +225,7 @@ Cloud Manager中的内容审核可确保站点上的最终用户数字体验保�
 
 * **N/A** —— 没有可供比较的先前得分
 
-   ![](assets/content-audit-test1.png)
+   <!-- ![](assets/content-audit-test1.png) -->
 
 #### 页面级别得分 {#page-level-scores}
 
@@ -233,5 +233,5 @@ Cloud Manager中的内容审核可确保站点上的最终用户数字体验保�
 
 单击任何单个页面的详细信息将提供有关已评估页面元素的信息，并指导您在检测到改进机会时修复问题。 测试的细节和相关指导由Google Lighthouse提供。
 
-![](assets/page-level-scores.png)
+<!-- ![](assets/page-level-scores.png) -->
 
