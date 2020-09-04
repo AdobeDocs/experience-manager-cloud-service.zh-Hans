@@ -3,10 +3,10 @@ sub-product: 实施 AEM 云服务
 user-guide-title: 实施 AEM 云服务
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
+source-git-commit: 5eeecedae463f0d3308b0edd5bb3487def885666
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 69%
+source-wordcount: '367'
+ht-degree: 70%
 
 ---
 
@@ -43,7 +43,6 @@ ht-degree: 69%
    + [AEM 云服务中的叠加](developing/introduction/overlays.md)
    + [记录](developing/introduction/logging.md)
    + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [了解测试结果](/help/implementing/developing/introduction/understand-test-results.md)
    + [页面差异](/help/implementing/developing/introduction/page-diff.md)
    + [编辑器限制](/help/implementing/developing/introduction/editor-limitations.md)
    + [命名约定](/help/implementing/developing/introduction/naming-conventions.md)
