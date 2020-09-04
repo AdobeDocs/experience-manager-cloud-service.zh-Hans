@@ -1,10 +1,10 @@
 ---
-title: 沙箱项目-云服务
-description: 沙箱项目-云服务
+title: 沙箱项目-Cloud Service
+description: 沙箱项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-沙箱项目是AEM Cloud Service中可用的两种项目类型之一，另一种是常规项目。
+沙箱项目是AEMCloud Service中可用的两种项目类型之一，另一种是常规项目。
 
-通常，创建沙箱是为了满足培训、运行演示、启用或概念验证(POC)的目的。 它们不能载着实时交通。 他们不受AEM作 [为云服务承诺的约束](https://www.adobe.com/legal/service-commitments.html)。
+通常，创建沙箱是为了满足培训、运行演示、启用或概念验证(POC)的目的。它们不能载着实时交通。 它们不受AEM作为 [Cloud Service承诺的约束](https://www.adobe.com/legal/service-commitments.html)。
 
 在沙箱中创建的环境未配置为自动缩放。 因此，它们不适合用于性能或负载测试。
 
@@ -31,11 +31,11 @@ ht-degree: 0%
 1. **项目创建：** 沙箱项目创建包括自动：
    * 使用示例代码和内容设置项目
    * 开发环境的创造
-   * 创建非生产管道部署到开发环境(主分支部署到开发环境)
+   * 创建非生产管道部署到开发环境(主控分支部署到开发环境)
 
 1. **解决方案：** 沙箱项目包括AEM Sites和资产。
 
-1. **AEM更新：** AEM更新可手动应用于沙箱项目中的环境，且不会自动推送。
+1. **AEM更新：** AEM更新可以手动应用于沙箱项目中的环境，且不会自动推送。
 
 1. **休眠：** 如果在某段时间内未检测到环境，沙箱项目中的活动会自动休眠。 冬眠环境可以手动解除冬眠。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 * **自动沙箱** 项目环境在8小时不活动后自动休眠，这意味着作者和发布服务都不会收到请求。
 
-* **手动**: 作为用户，您可以手动为沙箱项目环境休眠，但无需这样做，因为休眠将在某段时间（8小时）不活动后自动发生。
+* **手动**:作为用户，您可以手动为沙箱项目环境休眠，但无需这样做，因为休眠将在某段时间（8小时）不活动后自动发生。
 
 >[!CAUTION]
 >在最新版本中，直接从云管理器链接到开发人员控制台将不允许您选择休眠沙箱项目环境。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
@@ -125,10 +125,10 @@ ht-degree: 0%
    >直接从云管 **理器链接到** “开发人员控制台”时，您不能选择解除沙箱项目环境的休眠。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
 
    >[!NOTE]
-   >或者，您也可以通过尝试访 **问已休眠环境的作者或发布服务** ，导航到开发人员控制台以解除休眠； 在这种情况下，将显示一个登陆页，其中包含指向“开发人员控制台”的链接。 请参阅下面的访问休眠环境部分。
+   >或者，您也可以通过尝试访 **问已休眠环境的作者或发布服务** ，导航到开发人员控制台以解除休眠；在这种情况下，将显示一个登陆页，其中包含指向“开发人员控制台”的链接。 请参阅下面的访问休眠环境部分。
 
    >[!IMPORTANT]
-   >对开发人员控制台的访问权限由 **Admin Console中的云管理器** -开发人 **员角色定义**。 具有开发人员角色权限的用户可以解除沙箱项目环境的休眠。
+   >对开发人员控制台的访问权限由 **Admin Console中的云管理器** -开发人员 **角色定义**。 具有开发人员角色权限的用户可以解除沙箱项目环境的休眠。
 
 1. 单击“ **取消休眠**”，如下图所示：
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 #### 解除休眠的权限 {#permissions-de-hibernate}
 
-任何拥有产品用户档案并将AEM作为云服务进行访问的用户都应能够访问开 **发人员控制台**，从而允许他们解除环境的休眠。
+任何拥有产品用户档案的用户都应能作为Cloud Service访问AEM，从而访 **问开发者控制台**，允许他们解除环境的休眠。
 
 有关设置 [用户权限的信息，请参](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 阅云管理器中的添加用户和角色。
 
@@ -171,14 +171,14 @@ ht-degree: 0%
 
 * 用户可以使用管道将自定义代码部署到休眠环境。 环境将保持休眠状态，新代码在解除休眠后将显示在环境中。
 
-* AEM升级可应用于冬眠环境，客户可以从Cloud Manager手动触发。 环境将保持冬眠状态，新版本在冬眠解除后将显示在环境中。
+* AEM升级可以应用于休眠环境，客户可以从Cloud Manager手动触发这些客户。 环境将保持冬眠状态，新版本在冬眠解除后将显示在环境中。
 
 >[!NOTE]
 >目前，云管理器不指示环境是否已休眠。
 
-## 对沙箱环境的AEM更新 {#aem-updates-sandbox}
+## AEM沙箱环境更新 {#aem-updates-sandbox}
 
-有关更多 [详细信息，请参](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) 阅AEM版本更新。
+有关更多 [详细信息](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) ，请参阅AEM版本更新。
 
 用户可以在沙箱项目中手动将AEM更新应用到环境。
 
@@ -186,7 +186,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >* 手动更新只能在目标环境具有正确配置的管道时运行。
->* 手动更新生产 *环境* 或 *阶段* 将自动更新其它更新。 生产+阶段环境集必须位于同一AEM版本中。
+>* 手动更新生产 *环境* 或 *阶段* 将自动更新其它更新。 生产+阶段环境集必须位于同一AEM版本上。
 
 
 
