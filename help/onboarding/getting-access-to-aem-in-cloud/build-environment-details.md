@@ -2,7 +2,7 @@
 title: 构建环境详细信息
 description: 构建环境详细信息-Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -30,6 +30,7 @@ Cloud Manager使用专用构建环境构建和测试您的代码。 此环境具
 * 其他软件包可以在构建时安装，如 [下所述](#installing-additional-system-packages)。
 * 每栋建筑都建在原始环境上；构建容器不会在执行之间保持任何状态。
 * Maven始终使用以下三个命令运行：
+
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
