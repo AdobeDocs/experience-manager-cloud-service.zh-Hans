@@ -2,7 +2,7 @@
 title: 代码质量测试-Cloud Services
 description: 代码质量测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 处理误报 {#dealing-with-false-positives}
 
-质量扫描过程并不完美，有时会错误地识别实际上没有问题的问题。 这称为“假阳性”。
+质量扫描过程并不完美，有时会错误地识别实际上没有问题的问题。 这被称为假 *阳性*。
 
 在这些情况下，可以使用标准Java注释对源代 `@SuppressWarnings` 码进行注释，该注释将规则ID指定为注释属性。 例如，一个常见问题是，用于检测硬编码密码的SonarQube规则在如何识别硬编码密码方面可能具有攻击性。
 
