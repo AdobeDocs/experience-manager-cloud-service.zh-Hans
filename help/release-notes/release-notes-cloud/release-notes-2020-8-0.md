@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.8.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.8.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: 5a3a8638bbb9fc8c0b28929bcc9c91c404d608d3
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 6%
@@ -24,7 +24,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 
 * 能将页 [面和子页面（页面树）恢复到较早版本](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
 
-* 可在AEM SPA编辑器中创建启动项。
+* 可在AEM [SPA Editor中](/help/sites-cloud/authoring/launches/overview.md) 创建 [启动项。](/help/implementing/developing/spa/introduction.md)
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
 
