@@ -2,9 +2,9 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -82,16 +82,26 @@ ht-degree: 0%
 
    ![](assets/setup-3.png)
 
-   此选项提供应始终包含在体验审计中的URL路径的表。 用户可以手动输入要包括的URL路径。 最多可包含25行。 如果用户在此部分中未提交任何页面，则默认情况下，网站的主页将包括在体验审核中。
+   此选项提供应始终包含在体验审计中的URL路径的表。 用户必须填写输入字段以定义自己的自定义链接。
 
-   >[!NOTE]
-   > 已配置的页面将提交到服务并根据性能、辅助功能、SEO（搜索引擎优化）、最佳实践和PWA（渐进式Web应用程序）测试进行评估。
+   例如，如果要在体验审 `https://wknd.site/us/en/about-us.html` 核中包含，请在此字 `us/en/about-us.html` 段中输入路径。
+
+   ![](assets/set-up-5.png)
+
+   表中显示的URL将为 `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`。
+
+   ![](assets/set-up-4.png)
+
+   最多可包含25行。 如果用户在此部分中未提交任何页面，则默认情况下，网站的主页将包含在体验审核中。
 
    有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/experience-audit-testing.md) “了解体验审核结果”。
 
    单击 **添加新页面覆盖** ，以提供要包含在体验审核中的URL路径。 添加路径后，单击“保 **存”**。
 
    ![](assets/exp-audit2.png)
+
+   >[!NOTE]
+   > 已配置的页面将提交到服务并根据性能、辅助功能、SEO（搜索引擎优化）、最佳实践和PWA（渐进式Web应用程序）测试进行评估。
 
 1. 从“编 **辑管道** ”屏 **幕中单击“** 保存”。 “概 **述** ”页现在显 **示“部署项目** ”卡。 单击 **“部署** ”按钮以部署项目。
 
