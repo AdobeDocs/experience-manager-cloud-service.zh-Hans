@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '791'
 ht-degree: 7%
 
 ---
@@ -18,17 +18,16 @@ ht-degree: 7%
 
 具有必需权限的用户可以创建以下环境类型（在特定租户可用的范围内）。
 
-* **生产和阶段环境**:
-生产和阶段可作为两个对象提供，用于测试和生产目的。
+* **生产和阶段环境**:生产和阶段可作为两个对象提供，用于测试和生产目的。
 
-* **开发**: 开发环境可以创建用于开发和测试目的，并且仅与非生产管道相关。
+* **开发**:开发环境可以创建用于开发和测试目的，并且仅与非生产管道相关。
 
    >[!NOTE]
    >在沙箱项目中自动创建的开发环境将配置为包括站点和资产解决方案。
 
    下表汇总了环境类型及其属性：
 
-   | 名称 | 作者层 | 发布层 | 用户可以创建 | 用户可以删除 | 可与环境关联的管道 |
+   | 名称 | 创作层 | 发布层 | 用户可以创建 | 用户可以删除 | 可与环境关联的管道 |
    |--- |--- |--- |--- |---|---|
    | 生产 | 是 | 是 如果包含站点 | 是 | 否 | 生产管道 |
    | 暂存 | 是 | 是 如果包含站点 | 是 | 否 | 生产管道 |
@@ -55,7 +54,7 @@ ht-degree: 7%
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >创建环境时，在Adobe I/ *O中* 创建一个或多个集成。 对于有权访问Adobe I/O控制台的客户用户，这些控制台是可见的，不得删除。 Adobe I/O控制台的说明中不提供此说明。
+   >创建环境时，在AdobeI/ *O中* 创建一个或多个集成。对于有权访问AdobeI/O控制台的客户用户，这些控制台是可见的，不得删除。 在AdobeI/O控制台的说明中不会声明此问题。
 
    ![](assets/add-environment-image1.png)
 
@@ -68,7 +67,7 @@ ht-degree: 7%
 
 舞台和生产环境的更新由Adobe自动管理。
 
-开发环境的更新由项目的用户管理。 当环境未运行最新的公开可用AEM版本时，主屏幕上的环境卡状态将显示“可 **用更新”**。
+开发环境的更新由项目的用户管理。 当环境未运行最新的公开发行的AEM版本时，主屏幕上的环境卡状态将显示“可 **用更新”**。
 
 ![](assets/update-environ-1.png)
 
@@ -97,6 +96,15 @@ ht-degree: 7%
 
 >[!NOTE]
 此功能不适用于为生产目的而设置的常规环境中的生产／阶段项目集。 但是，该功能可用于沙箱环境中的生产／阶段项目。
+
+## 管理访问 {#managing-access}
+
+从 **环境** 卡的下拉菜单中选择 **管理访问** 。 您可以直接导航到作者实例并管理环境的访问权限。
+
+请参阅 [管理对作者实例的访问](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) ，了解更多。
+
+![](assets/environ-manage-access.png)
+
 
 ## 访问开发人员控制台 {#accessing-developer-console}
 
