@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 7%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 7%
 
 ## 管理访问 {#managing-access}
 
-从 **环境** 卡的下拉菜单中选择 **管理访问** 。 您可以直接导航到作者实例并管理环境的访问权限。
+从 **环境** 卡的下拉菜单中选择 **管理访** 问。 您可以直接导航到作者实例并管理环境的访问权限。
 
 请参阅 [管理对作者实例的访问](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) ，了解更多。
 
