@@ -2,7 +2,7 @@
 title: 通知-Cloud Service
 description: 通知-Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -37,5 +37,4 @@ ht-degree: 1%
 用户可以打开电子邮件通知并（可选）选择要通过电子邮件接收的通知类型。
 
 >[!NOTE]
->
 >你还可以从AdobeExperience Cloud中消化 [!UICONTROL 消化]。
