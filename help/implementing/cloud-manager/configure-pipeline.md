@@ -2,9 +2,9 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -82,9 +82,9 @@ ht-degree: 0%
 
    ![](assets/setup-3.png)
 
-   单击 **添加新页面覆盖** ，以提供要包含在体验审核中的URL路径。
+   单击 **添加新页面** ，以提供要包含在体验审核中的URL路径。
 
-   例如，如果要在体验审 `https://wknd.site/us/en/about-us.html` 核中包含，请在此字 `us/en/about-us.html` 段中输入路径。
+   例如，如果要包含在体验审 `https://wknd.site/us/en/about-us.html` 核中，请在此字段中输 `us/en/about-us.html` 入路径，然后单击 **保存**。
 
    ![](assets/exp-audit4.png)
 
