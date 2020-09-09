@@ -2,9 +2,9 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 0%
    * **立即继续** -如果选中此项，则在出现重要故障时管道将自动继续。 这实际上是模拟用户手动批准每个失败。
 
 
-1. 生产管道设置包括第三个标签为“体验审 **核”的选项卡**。 此选项提供应始终包含在体验审计中的URL路径的表。 用户必须填写输入字段以定义自己的自定义链接。
+1. 生产管道设置包括第三个标签为“体验审 **核”的选项卡**。 此选项提供应始终包含在体验审计中的URL路径的表。 用户必须单击“添 **加新页面** ”来定义自己的自定义链接。
 
    ![](assets/setup-3.png)
 
