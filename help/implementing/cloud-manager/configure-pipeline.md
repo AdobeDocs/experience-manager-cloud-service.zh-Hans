@@ -2,7 +2,7 @@
 title: 配置CI/CD管道-Cloud Services
 description: 配置CI/CD管道-Cloud Services
 translation-type: tm+mt
-source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
+source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -88,7 +88,9 @@ ht-degree: 0%
 
    ![](assets/exp-audit4.png)
 
-   表中显示的URL将为 `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`。
+   表中显示的URL将为：
+
+   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
    ![](assets/exp-audit5.png)
 
