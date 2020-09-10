@@ -2,9 +2,9 @@
 title: 示例ContextHub存储候选项
 description: ContextHub提供了几个可在解决方案中使用的样本存储候选项
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](cont
 
 存储有关当前客户端环境的信息，如设备、窗口、浏览器、日期和时间。
 
-### 源位置{#source-location-surferinfo
+### 源位置 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
