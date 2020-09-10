@@ -3,7 +3,7 @@ title: 中的资源HTTP API [!DNL Adobe Experience Manager]。
 description: 使用中的HTTP API创建、读取、更新、删除和管理数字资产 [!DNL Adobe Experience Manager Assets]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-资产HTTP API允许对数字资产（包括元数据、演绎版和注释）以及使用内容片段的结构化内容执行创建读取更新删除(CRUD) [!DNL Experience Manager] 操作。 它在上公 `/api/assets` 开，并作为REST API实施。 它包含 [对内容片段的支持](/help/assets/assets-api-content-fragments.md)。
+资产HTTP API允许对数字资产（包括元数据、演绎版和注释）以及使用内容片段的结构化内容执行创建读取更新删除(CRUD) [!DNL Experience Manager] 操作。 它在上公 `/api/assets` 开，并作为REST API实施。 它包含 [对内容片段的支持](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 访问API:
 
@@ -34,13 +34,13 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 内 [容片段](/help/assets/content-fragments/content-fragments.md) 是一种特殊类型的资产。 它可用于访问结构化数据，如文本、数字、日期等。 由于资产(如图像或文档 `standard` )存在多种差异，因此一些其他规则适用于处理内容片段。
 
-有关详细信息， [请参阅Experience Manager资产HTTP API中的内容片段支持](/help/assets/assets-api-content-fragments.md)。
+有关详细信息， [请参阅Experience Manager资产HTTP API中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 ## Data model {#data-model}
 
 资产HTTP API公开两个主要元素、文件夹和资产（对于标准资产）。
 
-此外，它还针对描述内容片段中结构化内容的自定义数据模型显示更详细的元素。 有关更 [多信息，请参阅](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments) “内容片段数据模型”。
+此外，它还针对描述内容片段中结构化内容的自定义数据模型显示更详细的元素。 有关更 [多信息，请参阅](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) “内容片段数据模型”。
 
 ### 文件夹 {#folders}
 
@@ -71,7 +71,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * 多个演绎版，如原始演绎版（最初上传的资产）、缩略图和各种其他演绎版。 其他再现可能是不同大小、不同视频编码的图像，或从PDF或Adobe InDesign文件提取的页面。
 * 可选注释。
 
-有关内容片段中元素的信息，请参 [阅Experience Manager资产HTTP API中的内容片段支持](/help/assets/assets-api-content-fragments.md)。
+有关内容片段中元素的信息，请参 [阅Experience Manager资产HTTP API中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 在文 [!DNL Experience Manager] 件夹中，具有以下组件：
 
