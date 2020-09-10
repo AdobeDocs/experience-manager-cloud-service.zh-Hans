@@ -2,7 +2,7 @@
 title: 使用 ContextHub 数据预览页面
 description: ContextHub 工具栏显示 ContextHub 存储区中的数据，并允许您更改存储区数据，该工具栏可用于预览内容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 89%
@@ -12,14 +12,14 @@ ht-degree: 89%
 
 # 使用 ContextHub 数据预览页面  {#previewing-pages-using-contexthub-data}
 
-ContextHub 工具栏显示 ContextHub 存储区中的数据，并允许您更改存储区数据。ContextHub 工具栏可用于预览由 ContextHub 存储区中的数据决定的内容。<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
+ContextHub 工具栏显示 ContextHub 存储区中的数据，并允许您更改存储区数据。ContextHub 工具栏可用于预览由 ContextHub 存储区中的数据决定的内容。
 
 该工具栏由一系列包含一个或多个 UI 模块的 UI 模式组成。
 
 * UI 模式是显示在工具栏左侧的图标。当您单击或点按某个图标时，工具栏会显示该模式包含的 UI 模块。
 * UI 模块显示一个或多个 ContextHub 存储区中的数据。某些 UI 模块还允许您处理存储区数据。
 
-ContextHub 安装了多个 UI 模式和 UI 模块。您的管理员可能已配置 ContextHub，使其显示不同的内容。<!--ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.-->
+ContextHub 安装了多个 UI 模式和 UI 模块。您的管理员可能已[配置 ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)，使其显示不同的内容。
 
 ## 显示 ContextHub 工具栏 {#revealing-the-contexthub-toolbar}
 
