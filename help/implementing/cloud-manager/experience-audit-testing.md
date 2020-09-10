@@ -2,9 +2,9 @@
 title: 体验审核测试-Cloud Services
 description: 体验审核测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 体验审核测试 {#experience-audit-testing}
 
-Experience Audit是Cloud Manager Sites Production管道中的一项功能，该管道是Google提供的一个开放源码工具。 此功能在所有Cloud Manager Production管道中都启用。
+Experience Audit是Cloud Manager Sites Production管道中的一项功能，由Google Lighthouse提供支持，Google是一款开放源代码工具。 此功能在所有Cloud Manager Production管道中都启用。
 
 它可验证部署过程并有助于确保部署了更改：
 
