@@ -2,7 +2,7 @@
 title: SPA Blueprint
 description: 本文档描述了任何SPA框架在AEM内实施可编辑的SPA组件时应履行的与框架无关的一般合同。
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 库 `PageModelManager` 作为NPM包提供，供SPA项目使用。 它随SPA提供，并充当数据模型管理器。
 
-它代表SPA抽象了表示实际内容结构的JSON结构的检索和管理。 它还负责与SPA同步，以告知它何时必须重新呈现其组件。
+它代表SPA抽象出表示实际内容结构的JSON结构的检索和管理。 它还负责与SPA同步，以告知它何时必须重新呈现其组件。
 
 请参阅NPM [包@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
@@ -97,7 +97,7 @@ npm模块： [@adobe/aem-react-editable-components](https://www.npmjs.com/packag
 
 #### 角度 {#angular}
 
-npm模块： [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+npm模块： [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## 主要服务和组件 {#main-services-and-components}
 
