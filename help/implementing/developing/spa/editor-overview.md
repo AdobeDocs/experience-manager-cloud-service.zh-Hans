@@ -2,7 +2,7 @@
 title: SPA编辑器概述
 description: 本文全面概述了SPA编辑器及其工作方式，包括AEM中SPA编辑器交互的详细工作流。
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -36,7 +36,7 @@ SPA的页面组件不会通过JSP或HTL文件提供其子组件的HTML元素。 
 
 ### 页面模型管理 {#page-model-management}
 
-页面模型的解析和管理被委托给提供的 `PageModel` 库。 SPA必须使用页面模型库才能进行初始化并由SPA编辑器创作。 页面模型库通过npm间接提供给AEM页面 `cq-react-editable-components` 组件。 页面模型是AEM和SPA之间的解释器，因此始终必须存在。 创作页面时，必须添加其 `cq.authoring.pagemodel.messaging` 他库才能启用与页面编辑器的通信。
+页面模型的解析和管理被委托给提供的 `PageModel` 库。 SPA必须使用页面模型库才能进行初始化并由SPA编辑器创作。 页面模型库通过npm间接提供给AEM页面 `aem-react-editable-components` 组件。 页面模型是AEM和SPA之间的解释器，因此始终必须存在。 创作页面时，必须添加其 `cq.authoring.pagemodel.messaging` 他库才能启用与页面编辑器的通信。
 
 如果SPA页面组件从页面核心组件继承内容，则有两个选项可使客户端库 `cq.authoring.pagemodel.messaging` 类别可用：
 
