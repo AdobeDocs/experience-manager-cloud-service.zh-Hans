@@ -2,9 +2,9 @@
 title: 对AEM Commerce作为Cloud Service的显着变化
 description: 与Adobe Experience Manager6.5相比，AEM Commerce作为Cloud Service的变化显着。
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '624'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 
 ## 支持CIF经典／快速启动Experience Manager作为Cloud Service {#cif-classic}
 
-在Experience Manager中，不再以Cloud Service形式提供包含产品导入程序以导入和存储产品目录的经典商务集成框架。 在Experience Manager中不支持使用经典CIF作为Cloud Service，使用经典CIF的项目必须用支持的版本取代经典CIF实施，如在Experience Manager上 [CIF作为Cloud Service所述](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
+在Experience Manager中，不再以Cloud Service形式提供包含产品导入程序以导入和存储产品目录的经典商务集成框架。 在Experience Manager中不支持使用经典CIF作为Cloud Service，使用经典CIF的项目必须用支持的版本取代经典CIF实施，如在Experience Manager上 [CIF作为Cloud Service所述](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/architecture/magento.html#overview)
 
 ## 部署CIF {#deployment}
 
@@ -33,6 +33,10 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 | 如何部署 [CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia) | AEM包安装 | 通过Cloud Manager完 [成部署](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | 项目已移 [入Cloud Manager Git存储库](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) ，并通过Cloud Manager [完成部署](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
 >[!NOTE]
+>
+>有关如何将CIF与AEM Managed Service或AEM内部部署一起使用的其他文档，请参 [阅Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+
+>[!Note]
 >
 >CIF Classic/Quickstart版本的商务集成框架可用于AEM内部部署产品，但用例非常有限。 但是，这不是推荐的解决方案。
 
