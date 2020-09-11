@@ -1,11 +1,11 @@
 ---
 title: AEM 云服务开发准则
-description: 待完成
+description: AEM 云服务开发准则
 translation-type: tm+mt
-source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
+source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 1%
+source-wordcount: '1953'
+ht-degree: 2%
 
 ---
 
@@ -160,7 +160,7 @@ AEM作为Cloud Service不支持从发布到作者的反向复制。 如果需要
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于常规项目，对开发人员控制台的访问由Admin Console中的“云管理器——开发人员角色”定义，而对于沙箱项目，开发人员控制台对于具有产品用户档案的任何用户都可用，允许他们以Cloud Service的身份访问AEM。 对于所有项目，状态转储需要“云管理器——开发人员角色”，并且用户还必须在AEM用户或AEM管理员产品用户档案中为创作和发布服务定义，才能从两个服务视图状态转储数据。 有关设置用户权限的详细信息，请参 [阅云管理器文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+对于常规项目，对开发人员控制台的访问由Admin Console中的“云管理者——开发人员角色”定义，而对于沙箱项目，开发人员控制台对于具有产品用户档案的任何用户都可用，允许他们以Cloud Service的身份访问AEM。 对于所有项目，状态转储需要“云管理器——开发人员角色”，并且用户还必须在AEM用户或AEM管理员产品用户档案中为创作和发布服务定义，才能从两个服务视图状态转储数据。 有关设置用户权限的详细信息，请参 [阅云管理器文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 
 ### AEM Staging和Production Service {#aem-staging-and-production-service}
