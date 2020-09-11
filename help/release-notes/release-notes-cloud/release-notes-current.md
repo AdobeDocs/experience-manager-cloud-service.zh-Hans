@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
+source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 22%
+source-wordcount: '255'
+ht-degree: 21%
 
 ---
 
@@ -13,6 +13,12 @@ ht-degree: 22%
 # [!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明 {#release-notes}
 
 以下部分概述了 Experience Manager 云服务 2020.9.0 版的常规发行说明。
+
+## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* 单页应用程序(SPA)编辑器Javascript SDK现 [在是开放源码。](/help/implementing/developing/spa/reference-materials.md)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -31,7 +37,6 @@ ht-degree: 22%
 ### 错误修复 {#bug-fixes-commerce}
 
 * Commerce Cloud配置不尊重继承。 已对此进行修复，以确保配置继承值。
-
 
 ## Cloud Manager {#cloud-manager}
 
