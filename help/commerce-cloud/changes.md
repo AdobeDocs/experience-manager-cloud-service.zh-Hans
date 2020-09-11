@@ -2,9 +2,9 @@
 title: 对AEM Commerce作为Cloud Service的显着变化
 description: 与Adobe Experience Manager6.5相比，AEM Commerce作为Cloud Service的变化显着。
 translation-type: tm+mt
-source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
+source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 >
 >有关如何将CIF与AEM Managed Service或AEM内部部署一起使用的其他文档，请参 [阅Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!Note]
+>[!NOTE]
 >
 >CIF Classic/Quickstart版本的商务集成框架可用于AEM内部部署产品，但用例非常有限。 但是，这不是推荐的解决方案。
 
