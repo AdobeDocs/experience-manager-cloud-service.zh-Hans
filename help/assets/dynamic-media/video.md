@@ -2,9 +2,9 @@
 title: 视频
 description: 了解如何在Dynamic Media中处理视频
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
+source-wordcount: '10056'
 ht-degree: 29%
 
 ---
@@ -413,9 +413,9 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 ## 将视频发布到 YouTube {#publishing-videos-to-youtube}
 
-您可以将内部部署AEM视频资产直接发布到您之前创建的YouTube渠道。
+您可以将在AEM Assets管理的视频资产直接发布到您之前创建的YouTube渠道。
 
-要将视频资产发布到YouTube，您需要设置带有标记的AEM Assets。 将这些标记与YouTube渠道关联。 如果视频资产的标签与YouTube渠道的标签匹配，则视频将发布到YouTube。 只要使用关联标记，发布到YouTube就会与视频的正常发布一起发生。
+要将视频资产发布到YouTube，您需要在AEM Assets为视频资产添加标签。 将这些标记与YouTube渠道关联。 如果视频资产的标签与YouTube渠道的标签匹配，则视频将发布到YouTube。 只要使用关联标记，发布到YouTube就会与视频的正常发布一起发生。
 
 YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到YouTube，而不是Dynamic Media编码创建的任何视频再现。 虽然不需要使用Dynamic Media处理视频，但在回放时需要查看器预设时，视频会处理。
 
