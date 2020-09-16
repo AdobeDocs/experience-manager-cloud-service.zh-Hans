@@ -2,10 +2,10 @@
 title: 使用云就绪分析器
 description: 使用云就绪分析器
 translation-type: tm+mt
-source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
 workflow-type: tm+mt
-source-wordcount: '2091'
-ht-degree: 77%
+source-wordcount: '2189'
+ht-degree: 71%
 
 ---
 
@@ -51,19 +51,37 @@ ht-degree: 77%
 
    ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 单击&#x200B;**云就绪分析器**&#x200B;后，该工具将开始生成报告并在报告可用时显示报告。
+1. 单击“ **生成报告** ”以执行云就绪性分析器。
 
-   >[!NOTE]
-   >您必须向下滚动页面才能查看完整报告。
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+1. 当CRA生成报告时，您可以在屏幕上看到该工具取得的进展。 它显示分析的项目数，还显示找到的查找结果数。
 
-1. 生成并显示 CRA 报告后，您可以通过单击 **CSV**，选择下载逗号分隔值 (CSV) 格式的报告，如下图所示。
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+
+1. 生成CRA报告后，它会以表格形式显示摘要和结果数，按查找类型和重要性级别进行组织。 要获取有关特定查找结果的更多详细信息，您可以单击表中与查找结果类型对应的编号。
+
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+
+上述操作将自动滚动到报告中该查找结果的位置。
+
+![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
 
    >[!NOTE]
    >您可以通过单击&#x200B;**刷新报告**，强制 CRA 清除其缓存并重新生成报告。
+
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+
+   >[!NOTE]
+   >在重新生成报表时，它按完成百分比显示进度，如下图所示。
+
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+
 
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
 
