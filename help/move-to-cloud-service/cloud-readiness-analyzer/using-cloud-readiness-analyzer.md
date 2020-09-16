@@ -1,11 +1,11 @@
 ---
 title: 使用云就绪分析器
 description: 使用云就绪分析器
-translation-type: ht
-source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: ht
-source-wordcount: '1871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+workflow-type: tm+mt
+source-wordcount: '2091'
+ht-degree: 77%
 
 ---
 
@@ -146,29 +146,33 @@ HTTP 接口可用于多种方法。
 
 此接口使用以下 HTTP 标头：
 
-* `Cache-Control: max-age=<seconds>`：以秒为单位指定缓存刷新生命周期。（请参阅 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。）
-* `Prefer: respond-async`：指示服务器应异步响应。（请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。）
+* `Cache-Control: max-age=<seconds>`:以秒为单位指定缓存刷新时间。 （请参阅 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。）
+* `Prefer: respond-async`:指定服务器应异步响应。 （请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。）
+* `Prefer: return=minimal`:指定服务器应返回最小响应。 （请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。）
 
 当不能轻松使用 HTTP 标头时，可以方便地使用以下 HTTP 查询参数：
 
-* `max-age`（数字，可选）：以秒为单位指定缓存刷新生命周期。此数字必须为 0 或更大。默认的刷新生命周期为 86400 秒，这意味着如果没有此参数或相应的标头，新的缓存将用于在必须重新生成报告之前 24 小时内为请求提供服务。使用 `max-age=0` 将强制清除缓存并开始重新生成报告。在此请求后，刷新生命周期将立即重置为上一个非零值。
-* `respond-async`（布尔，可选）：指定应异步提供响应。当缓存失效时，使用 `respond-async=true` 将导致服务器返回 `202 Accepted, processing cache` 响应，而无需等待生成报告和刷新缓存。如果缓存是新的，则此参数不起作用。默认值是 `false`，这意味着如果没有此参数或相应的标头，服务器将同步响应，这可能需要大量时间，并且需要调整 HTTP 客户端的最大响应时间。
+* `max-age` （数字，可选）:以秒为单位指定缓存刷新时间。 此数字必须为 0 或更大。默认新鲜度寿命为86400秒。 如果没有此参数或相应的标头，将使用新缓存在24小时内服务请求，此时必须重新生成缓存。 使用 `max-age=0` 将强制清除缓存并启动报表的重新生成，同时使用新生成的缓存以前的非零新鲜寿命。
+* `respond-async` （布尔、可选）:指定应异步提供响应。 Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 如果缓存是新的，则此参数不起作用。The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` （布尔、可选）:指定当当前缓存为空、过时或即将过时时，服务器可以响应请求刷新缓存。 如 `may-refresh-cache=true`果或未指定，则服务器可启动背景任务，该后台将调用模式检测器并刷新缓存。 如 `may-refresh-cache=false` 果缓存为空或过时，服务器将不启动任何刷新任务，否则，如果缓存为空或过期，则报表将为空。 任何已处理的刷新任务都不会受此参数影响。
+* `return-minimal` （布尔、可选）:指定来自服务器的响应应仅包含JSON格式的进度指示和缓存状态的状态。 如 `return-minimal=true`果是，则响应主体将限于状态对象。 如 `return-minimal=false`果或未指定，则将提供完整的响应。
+* `log-findings` （布尔、可选）:指定服务器在首次构建或刷新缓存时应记录其内容。 缓存中的每个查找结果都将记录为JSON字符串。 仅当请求生成新缓 `log-findings=true` 存时，才会发生此记录。
 
 当同时存在 HTTP 标头和相应的查询参数时，将优先采用查询参数。
 
 通过 HTTP 接口开始生成报告的简单方法是使用以下命令：
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`。
 
-发出请求后，客户端无需保持活动状态即可生成报告。可以在一个客户端中使用 HTTP GET 请求启动报告生成操作；生成报告后，可在另一个客户端中从缓存查看报告，或在 AEM 用户界面的 CSV 工具中进行查看。
+发出请求后，客户端无需保持活动状态即可生成报告。报表生成可以由一个客户端使用HTTPGET请求启动，生成报表后，可以使用另一个客户端或AEM用户界面中的CRA工具从缓存中查看。
 
 ### 响应 {#http-responses}
 
 可以使用以下响应值：
 
-* `200 OK`：响应包含来自模式检测器的发现结果，这些发现结果在缓存的刷新生命周期内生成。
-* `202 Accepted, processing cache`：为异步响应提供，指示缓存已失效且正在刷新。
-* `400 Bad Request`：指示请求出错。以“问题详细信息”格式显示的消息（请参阅 [RFC 7807](https://tools.ietf.org/html/rfc7807)）提供了更多详细信息。
-* `401 Unauthorized`：请求未获得授权。
+* `200 OK`:指示响应包含来自模式检测器的发现，这些发现是在高速缓存的新鲜寿命内生成的。
+* `202 Accepted`:用于指示缓存过时。 当和 `respond-async=true` 此 `may-refresh-cache=true` 响应指示正在进行刷新任务。 当此 `may-refresh-cache=false` 响应仅指示缓存过时。
+* `400 Bad Request`：指示请求出错。A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `401 Unauthorized`:表示请求未获得授权。
 * `500 Internal Server Error`：指示发生内部服务器错误。以“问题详细信息”格式显示的消息提供了更多详细信息。
 * `503 Service Unavailable`：指示服务器正忙于其他响应，无法及时为此请求提供服务。仅当发出同步请求时，才可能出现此响应。以“问题详细信息”格式显示的消息提供了更多详细信息。
 
