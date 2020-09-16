@@ -3,9 +3,9 @@ title: 将AEM Assets配置为品牌门户Cloud Service
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 96a084dd0e8f250b343b616573aeedb2b83682e4
+source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1647'
 ht-degree: 15%
 
 ---
@@ -275,7 +275,7 @@ IMS 配置包括两个步骤：
 
    ![](assets/test-bpconfig4.png)
 
-   A message appears at the bottom of the page that your *test package is successfully delivered*.
+   将显示一条消息， *表明测试包已成功交付*。
 
    >[!NOTE]
    >
