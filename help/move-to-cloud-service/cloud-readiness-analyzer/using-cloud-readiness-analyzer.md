@@ -2,7 +2,7 @@
 title: 使用云就绪分析器
 description: 使用云就绪分析器
 translation-type: tm+mt
-source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
+source-git-commit: 99e721e373f34d72f75393b0771a069b9c1f8631
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -106,7 +106,7 @@ ht-degree: 70%
 * **系统概述**：关于运行 CRA 的 AEM 系统的信息。
 * **发现结果类别**：多个部分，每个部分提供同一类别的一个或多个发现结果。每个部分包括：类别名称、子类型、发现结果计数和重要性、摘要、指向类别文档的链接以及单个发现结果信息。
 
-每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。要进一步了解每个“查找”类别，请参 [阅Pattern Detector类别](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
+每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。要进一步了解每个“查找”类别，请参 [阅“图案检测器”类别](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)。
 
 请参阅下表，了解重要性级别：
 
