@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
+source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 20%
 
 ---
@@ -60,7 +60,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-cra}
 
-* 云就绪性分析器(CRA)具有开始状态控制台，该控制台显示用户单击以执行CRA的显式“生成报告”按钮。
+* 云就绪性分析器(CRA)具有开始状态控制台，该控制台显 **示用户单击** “生成报告”按钮以执行CRA。
 
 * CRA UI在运行时显示进度。 它显示正在分析的项目和在执行过程中找到的结果。
 
