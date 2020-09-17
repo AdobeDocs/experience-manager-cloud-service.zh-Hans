@@ -2,7 +2,7 @@
 title: 使用云就绪分析器
 description: 使用云就绪分析器
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -62,20 +62,20 @@ ht-degree: 70%
 
 1. 生成CRA报告后，它会以表格形式显示摘要和结果数，按查找类型和重要性级别进行组织。 要获取有关特定查找结果的更多详细信息，您可以单击表中与查找结果类型对应的编号。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    上述操作将自动滚动到报告中该查找结果的位置。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >您可以通过单击&#x200B;**刷新报告**，强制 CRA 清除其缓存并重新生成报告。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >在重新生成报表时，它按完成百分比显示进度，如下图所示。
