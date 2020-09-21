@@ -10,7 +10,7 @@ audience: developer
 kt: 4279
 thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: 34b4dc697d3fb8c3f81e16ee3cab5d768e42b99c
+source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 1%
@@ -176,7 +176,7 @@ AEM中显示的产品和产品数据以Magento存储。 接下来，使用Magent
    }
    ```
 
-   ![示例GraphlQL响应](../assets/customize-cif-components/sample-graphql-query.png)
+   ![示例GraphQL响应](../assets/customize-cif-components/sample-graphql-query.png)
 
    请注意，“是 **”的** 值是整数 **1**。 当我们使用Java编写GraphQL查询时，这将很有用。
 
