@@ -2,9 +2,9 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: d0e63184d229e52b949d0f24660121e3417912be
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2542'
 ht-degree: 17%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 17%
 
 >[!TIP]
 >
->熟悉基本的 [AEM Project Archetype使用](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [FileVault Content Maven插件，因为本文是在这些学习和概念的基础上构建的](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) 。
+>熟悉基本的 [AEM Project Archetype使用](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [FileVault Content Maven插件，因为本文以这些学习和概念为基础](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) 。
 
-本文概述了将Maven项目Adobe Experience Manager为AEMCloud Service兼容所需的更改，具体方法是确保它们遵守可变内容和不可变内容的拆分； 建立必要的依赖关系以创建不冲突的确定性部署； 它们被装在一个可展开的结构里。
+本文概述了Adobe Experience Manager马文项目为与AEMCloud Service兼容而必须做出的更改，即确保它们遵守可变内容和不可变内容的分割；建立必要的依赖关系以创建不冲突的确定性部署；它们被装在一个可展开的结构里。
 
 AEM应用程序部署必须由单个AEM包组成。 此包应包含子包，子包包含应用程序运行所需的一切，包括代码、配置和任何支持的基线内容。
 
@@ -36,17 +36,17 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 >[!WARNING]
 >
->与以前版本的AEM一样， `/libs` 不应进行修改。 只有AEM产品代码可部署到 `/libs`。
+>与先前版本的AEM一样， `/libs` 不应修改。 只有AEM产品代码可部署到 `/libs`。
 
 ### Oak索引 {#oak-indexes}
 
-Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新插入后才能切换到新代码映像。
+Oak索引(`/oak:index`)由AEM Cloud服务部署流程专门管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新插入后才能切换到新代码映像。
 
 因此，尽管Oak索引在运行时是可变的，但必须将其部署为代码，以便在安装任何可变包之前安装它们。 因 `/oak:index` 此，配置是代码包的一部分，而不是下面所述的内 [容包的一部分。](#recommended-package-structure)
 
 >[!TIP]
 >
->有关在AEM中作为Cloud Service建立索引的更多详细信息，请参阅 [文档内容搜索和索引。](/help/operations/indexing.md)
+>有关在AEM中作为Cloud Service建立索引的更多详细信息，请参 [阅文档内容搜索和索引。](/help/operations/indexing.md)
 
 ## 推荐的包结构 {#recommended-package-structure}
 
@@ -72,7 +72,7 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
    + ACL（权限）
       + 任何 `rep:policy` 路径下的 `/apps`
    + 回购初始化OSGi配置指令（及随附的脚本）
-      + [回购初始](#repo-init) (Repo Init)是部署（可变）内容（逻辑上属于AEM应用程序的一部分）的推荐方式。 回购初始化应用于定义：
+      + [回购初始](#repo-init) (Repo Init)是部署（可变）逻辑上属于AEM应用程序的内容的推荐方式。 回购初始化应用于定义：
          + 基线内容结构
             + `/conf/my-app`
             + `/content/my-app`
@@ -95,15 +95,17 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
 
    现在，包是使用Maven FileVault包 [Maven插件的嵌入式配置](#embeddeds)，而不是使用配置 `<subPackages>` 提供的。
 
-   对于复杂的Experience Manager部署，可能希望在AEM中创 `ui.apps` 建多 `ui.content` 个代表特定站点或租户的项目／包。 如果这样做，则确保可变内容和不可变内容之间的拆分得到遵守，并将所需的内容包添加为容器内容包 `all` 中的子包。
+   对于复杂的Experience Manager部署，可能需要创建多个项目 `ui.apps` /包， `ui.content` 它们代表AEM中的特定站点或租户。 如果这样做，则确保可变内容和不可变内容之间的拆分得到遵守，并将所需的内容包添加为容器内容包 `all` 中的子包。
 
    例如，复杂的部署内容包结构可能如下：
 
    + `all` 内容包嵌入以下包，以创建单个部署对象
       + `ui.apps.common` 部署站点A **和站点** B所需的代码
       + `ui.apps.site-a` 部署站点A所需的代码
+         + `core.site-a` OSGi bundle Jar嵌入在 `ui.apps.site-a`
       + `ui.content.site-a` 部署站点A所需的内容和配置
       + `ui.apps.site-b` 部署站点B所需的代码
+         + `core.site-b` OSGi bundle Jar嵌入在 `ui.apps.site-b`
       + `ui.content.site-b` 部署站点B所需的内容和配置
 
 ## 包类型 {#package-types}
@@ -120,7 +122,7 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
 >
 >有关完整 [的代码片断](#xml-package-types) ，请参见下面的POM XML代码片断部分。
 
-## 标记要由Adobe Cloud Manager部署的包 {#marking-packages-for-deployment-by-adoube-cloud-manager}
+## 通过Adobe云管理器标记要部署的包 {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
 默认情况下，Adobe Cloud Manager 会收集由 Maven 内部版本生成的所有包，但是，由于容器 (`all`) 包是包含所有代码和内容包的单个部署对象，因此我们必须确保&#x200B;**仅**&#x200B;部署容器 (`all`) 包。要确保这一点，Maven 内部版本生成的其他包必须使用 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` 的 FileVault Content Package Maven Plug-In 配置进行标记。
 
@@ -143,9 +145,9 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程进行专门管理。 这�
 + 组
 + ACL
 
-回购初始化脚本存储 `scripts` 为OSGi工厂 `RepositoryInitializer` 配置的条目，因此，可以通过运行模式隐式定位，允许AEM Author和AEM Publish服务的回购初始化脚本之间，甚至Env（开发、舞台和产品）之间的差异。
+回购初始化脚本存储 `scripts` 为OSGi工厂 `RepositoryInitializer` 配置的条目，因此，可以通过运行模式隐式定位，从而允许AEM作者和AEM发布服务的回购初始化脚本之间，甚至Env（开发、舞台和产品）之间的差异。
 
-请注意，在定义“用户”和“组”时，只有组被视为应用程序的一部分，并且应在此处定义其功能的组成部分。 在AEM中，组织用户和用户组仍应在运行时进行定义； 例如，如果自定义工作流将工作分配给指定的组，则该组应通过AEM应用程序中的回购初始化进行定义，但是，如果分组只是组织形式（如“Wendy&#39;s Team”和“Sean&#39;s Team”），则这些工作流是在AEM中最佳定义并在运行时进行管理的。
+请注意，在定义“用户”和“组”时，只有组被视为应用程序的一部分，并且应在此处定义其功能的组成部分。 组织用户和组在运行时仍应在AEM中进行定义；例如，如果自定义工作流将工作分配给指定的组，则应在AEM应用程序中通过回购初始化定义该组，但是，如果该组只是组织，如“Wendy&#39;s Team”和“Sean&#39;s Team”，则这些工作流是在运行时在AEM中最佳定义和管理的。
 
 >[!TIP]
 >
@@ -173,17 +175,17 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 ## 在容器包中嵌入子包{#embeddeds}
 
-内容或代码包放在特殊的“侧车”文件夹中，并且可以定位为使用FileVault Maven插件配置在AEM作者或AEM发布上进行安 `<embeddeds>` 装。 请注意， `<subPackages>` 不应使用该配置。
+内容或代码包放在特殊的“侧车”文件夹中，可以定位在AEM author、AEM publish上，或同时安装在二者上(使用FileVault Maven插件的配 `<embeddeds>` 置)。 请注意， `<subPackages>` 不应使用该配置。
 
 常见用例包括：
 
 + AEM作者用户和AEM发布用户之间的ACL/权限不同
-+ 仅用于支持AEM作者上的活动的配置
-+ 代码（如与后台系统集成），仅在AEM作者上运行
++ 仅用于支持AEM作者活动的配置
++ 代码（如与后台系统集成），只需在AEM author上运行
 
 ![嵌入包](assets/embeddeds.png)
 
-要目标AEM作者、AEM发布或两者，该包将嵌入到容器包中的一个特殊文件夹位置 `all` ，格式如下：
+要目标AEM作者、AEM发布，或者同时发布，该包将以下格式嵌入到 `all` 容器包中的一个特殊文件夹位置：
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -194,6 +196,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
+
    >[!WARNING]
    >
    >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
@@ -205,15 +208,15 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 + 第 4 级文件夹包含子包，且必须是以下包之一：
    + `install`，以在 AEM 作者&#x200B;**和** AEM 发布上安装
    + `install.author`，以&#x200B;**仅**&#x200B;在 AEM 作者上安装
-   + `install.publish` to **only** install on AEM publish注意 `install.author` , only and is supported `install.publish` 目标. 不支持其 **他运行模式** 。
+   + `install.publish` to **only** install on AEM publish注意 `install.author` , only `install.publish` and are supported目标. 不支持其 **他运行模式** 。
 
 例如，包含AEM作者和发布特定包的部署可能如下所示：
 
-+ `all` 容器包嵌入以下包，以创建单一部署伪像
-   + `ui.apps` 已嵌入 `/apps/my-app-packages/application/install` 到部署代码中，同时发布到AEM作者和AEM发布
-   + `ui.apps.author` 嵌入到 `/apps/my-app-packages/application/install.author` 仅部署代码到AEM作者
-   + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 将内容和配置同时部署到AEM作者和AEM发布
-   + `ui.content.publish` 嵌入到 `/apps/my-app-packages/content/install.publish` 仅向AEM发布部署内容和配置
++ `all` 容器包嵌入以下包，以创建单个部署伪像
+   + `ui.apps` 嵌入到部 `/apps/my-app-packages/application/install` 署代码中，AEM author和AEM publish都可以
+   + `ui.apps.author` 嵌入到部 `/apps/my-app-packages/application/install.author` 署代码中，仅允许AEM作者
+   + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 部署内容和配置中，AEM author和AEM publish
+   + `ui.content.publish` 嵌入到部 `/apps/my-app-packages/content/install.publish` 署内容和配置中，仅发布到AEM
 
 >[!TIP]
 >
@@ -231,7 +234,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 ## 嵌入第三方包 {#embedding-3rd-party-packages}
 
-所有包都必须通过Adobe的 [公共Maven对象存储库或可访问的公共](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) 、可引用的第三方Maven对象存储库可用。
+所有包必须通过Adobe的公 [共Maven对象存储库或可访问的](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) 、可引用的第三方Maven对象存储库可用。
 
 如果第三方包位于 **Adobe 的公共 Maven 对象存储库**，则 Adobe Cloud Manager 无需进一步配置即可解析对象。
 
@@ -249,7 +252,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 一般规则是包含可变内容(`ui.content`)的包，该可变内容()应取决于`ui.apps`支持可变内容的呈现和使用的不可变代码()。
 
-此一般规则的一个显着例外是不可变的代码包(或`ui.apps` 任何其他代码包)仅 __包含__ OSGi包。 如果是，则任何AEM包都不应声明对它的依赖关系。 这是因为仅包含OSGi __包的不可__ 变代码包未在AEM包管理器中注册，因此，任何依赖于它的AEM包都将具有不满足的依赖关系，并且无法安装。
+此一般规则的一个显着例外是不可变的代码包(或`ui.apps` 任何其他代码包)仅 __包含__ OSGi包。 如果是，则AEM包不应声明对它的依赖关系。 这是因为仅包含OSGi __包的不可__ 变代码包未在AEM Package Manager中注册，因此，任何依赖于它的AEM包都将具有不满足的依赖关系并且无法安装。
 
 >[!TIP]
 >
@@ -278,7 +281,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 ## 本地开发和部署 {#local-development-and-deployment}
 
-本文中概述的项目结构和组织完全兼 **容本地** 开发AEM实例。
+本文概述的项目结构和组织完全兼 **容本地** 开发AEM实例。
 
 ## POM XML片段 {#pom-xml-snippets}
 
@@ -346,7 +349,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
     ...
 ```
 
-### 标记Adobe Cloud Manager部署的包 {#cloud-manager-target}
+### 标记Adobe云管理器部署的包 {#cloud-manager-target}
 
 在生成包的每个项目中，**除**&#x200B;容器 (`all`) 项目外，将 `<cloudManagerTarget>none</cloudManagerTarget>` 添加到 `filevault-package-maven-plugin` 插件声明的 `<properties>` 配置中，以确保 Adobe Cloud Manager **不**&#x200B;部署这些它们。The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
