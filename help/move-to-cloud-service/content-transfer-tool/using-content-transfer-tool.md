@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
+source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 95%
+source-wordcount: '1667'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 * 内容传输工具的最低系统要求为 AEM 6.3 + 和 JAVA 8。如果您使用的是较低版本的 AEM，则需要将内容存储库升级到 AEM 6.5，才能使用内容传输工具。
 
-* 内容传输工具可用于以下类型的数据存储：文件数据存储、S3数据存储和共享的S3数据存储。 它当前不支持Azure Blob Store Data Store。
+* 内容传输工具可用于以下类型的数据存储：文件数据存储、S3数据存储、共享的S3数据存储和Azure Blob存储数据存储。
 
 * 如果您使用的是“沙盒环境”**，请确保将您的环境升级到 2020 年 6 月 10 日版本或更高版本。如果您使用的是“生产环境”**，则会自动更新。
 
@@ -47,16 +47,16 @@ ht-degree: 95%
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. 单击&#x200B;**创建迁移集**&#x200B;以创建新的迁移集。此时将显示&#x200B;**内容迁移集详细信息**。
+1. 创建第一个迁移集时，将显示以下控制台。 单击&#x200B;**创建迁移集**&#x200B;以创建新的迁移集。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >您将在此屏幕上查看现有迁移集及其当前状态。
-
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >如果您有现有迁移集，控制台将显示现有迁移集的列表及其当前状态。
 
 1. 按如下所述填充&#x200B;**内容迁移集详细信息**&#x200B;屏幕中的字段。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
 
 
    1. **名称**：输入迁移集的名称。
@@ -72,13 +72,13 @@ ht-degree: 95%
    1. **访问令牌**：输入访问令牌。
 
       >[!NOTE]
-      >您可以通过导航到 `/libs/granite/migration/token.json`，从创作实例检索访问令牌。访问令牌将从云服务创作示例中进行检索。
+      >您可以使用“打开访问令牌”按 **钮检索访问令牌** 。 您需要确保属于目标Cloud Service实例中的AEM管理员组。
 
    1. **参数**：选择以下参数以创建迁移集：
 
       1. **包含版本**：根据需要选择。
 
-      1. **要包含的路径**：使用路径浏览器选择需要迁移的路径。
+      1. **要包含的路径**：使用路径浏览器选择需要迁移的路径。路径选取器通过键入或选择接受输入。
 
          >[!IMPORTANT]
          >创建迁移集时，以下路径受到限制：
@@ -92,43 +92,40 @@ ht-degree: 95%
 
 1. 您将在&#x200B;*概述*&#x200B;页面中查看迁移集。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   此屏幕中的所有现有迁移集及其当前状态和状态信息都会显示在&#x200B;*概述*&#x200B;页面上。
+   此屏幕中的所有现有迁移集及其当前状态和状态信息都会显示在&#x200B;*概述*&#x200B;页面上。您可能会看到下面介绍的一些图标。
 
    * *红色云*&#x200B;表示您无法完成提取流程。
    * *绿色云*&#x200B;表示您可以完成完整的提取流程。
    * *黄色图标*&#x200B;表示您没有创建现有迁移集，而特定迁移集是由同一实例中的其他用户创建的。
 
-1. 从“概述”页面中选择一个迁移集，然后单击&#x200B;**属性**&#x200B;以查看或编辑迁移集属性。
+1. 从“概述”页面中选择一个迁移集，然后单击&#x200B;**属性**&#x200B;以查看或编辑迁移集属性。编辑属性时，无法更改容器名称或服务URL。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+
 
 ### 内容传输中的提取流程 {#extraction-process}
 
 请按照以下步骤从内容传输工具中提取迁移集：
 
-1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**提取**&#x200B;以开始提取。
+1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**提取**&#x200B;以开始提取。The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. 此时将显示&#x200B;**迁移集提取**&#x200B;对话框，然后单击&#x200B;**提取**&#x200B;以完成提取阶段。
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >您可以选择在提取阶段覆盖暂存容器。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. 对于正在进行的提取流程，**提取**&#x200B;字段现在显示&#x200B;**正在运行**&#x200B;状态。
+1. 提取 **字段** 现在显示“ **正在运行** ”状态，以指示提取正在进行中。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    提取完成后，迁移集的状态将更新为&#x200B;**已完成**，而且&#x200B;**信息**&#x200B;字段下会显示一个&#x200B;*纯绿色*&#x200B;的云朵图标。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >您必须刷新页面才能查看更新后的状态。
+   >UI具有自动重新加载功能，每30秒重新加载一次概述页面。
    >提取阶段启动后，将创建写锁定并在 *60* 秒后将其释放。因此，如果停止提取，则需要等待一分钟以便释放锁定，之后才能再次开始提取。
 
 #### 增补提取 {#top-up-extraction-process}
@@ -140,41 +137,25 @@ ht-degree: 95%
 
 完成提取流程后，可以使用增补提取方法传输增量内容。应遵循以下步骤：
 
-1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补提取的迁移集。
-
-1. 单击&#x200B;**提取**&#x200B;以开始增补提取。
-
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. 此时将显示&#x200B;**迁移集提取**&#x200B;对话框。
+1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补提取的迁移集。单击&#x200B;**提取**&#x200B;以开始增补提取。此时将显示&#x200B;**迁移集提取**&#x200B;对话框。
 
    >[!IMPORTANT]
    >您应该禁用&#x200B;**在提取期间覆盖暂存容器**选项。
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### 内容传输中的摄取流程{#ingestion-process}
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 
-1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。
+1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。Click on **Ingest** to start the ingestion phase. 出于演示目的，禁用了&#x200B;**将内容摄取到创作实例**&#x200B;选项。否则其会将内容同时摄取到“创作”和“发布”。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. 完成摄取后，PUBLISH INGESTION字段中的 **状态将更** 新为 **FINISHED**。
 
-   出于演示目的，禁用了&#x200B;**将内容摄取到创作实例**&#x200B;选项。否则其会将内容同时摄取到“创作”和“发布”。
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   单击&#x200B;**摄取**&#x200B;以完成摄取阶段。
-
-1. 完成摄取后，**创作摄取**&#x200B;字段中的状态将更新为&#x200B;**已完成**，而且&#x200B;**信息**下将显示一个纯绿色的云朵图标。
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > 您必须刷新页面才能查看更新后的状态。
 
 #### 增补摄取 {#top-up-ingestion-process}
 
@@ -185,17 +166,11 @@ ht-degree: 95%
 
 完成摄取流程后，可以使用增补摄取方法传输增量内容。应遵循以下步骤：
 
-1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补摄取的迁移集。
+1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补摄取的迁移集。单击&#x200B;**摄取**&#x200B;以开始增补提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
 
-1. 单击&#x200B;**摄取**&#x200B;以开始增补提取。
-
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
-
-   >[!NOTE]
-   >您应该禁用&#x200B;*划出*选项，以防止从上一个摄取活动中删除现有内容。
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >您应禁用“在摄 **取之前擦除云实例上的现有内容** ”选项，以防止从以前的摄取活动中删除现有内容。
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### 查看迁移集的日志 {#viewing-logs-migration-set}
 
