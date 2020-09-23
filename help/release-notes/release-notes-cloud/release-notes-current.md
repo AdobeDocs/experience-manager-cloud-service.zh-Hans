@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
+source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 20%
+source-wordcount: '462'
+ht-degree: 18%
 
 ---
 
@@ -70,3 +70,16 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 * 在某些情况下，强制更新后，CRA报告没有得到更新。 此版本中已修复此问题。
 
+## 内容传输工具 {#content-transfer-tool}
+
+可查看本节以了解新增功能以及内容传输工具版本1.1.10的更新。
+
+### 新增功能 {#what-is-new-ctt}
+
+* 内容传输工具(CTT)支持Azure Blob存储数据存储。
+
+* CTT用户界面具有自动重新加载功能，每30秒重新加载一次概述页面。
+
+* 添加到CTT用户界面的按钮可轻松 *检索访问令牌* 。
+
+* 为URL和迁移集名称 *添加**了描述性验证消息*。
