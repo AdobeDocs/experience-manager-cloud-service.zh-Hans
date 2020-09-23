@@ -4,10 +4,10 @@ user-guide-title: 在 AEM 云服务中创作内容
 breadcrumb-title: Authoring Guide
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
+source-git-commit: d5b92dda6b79407988eea3126f10fe875a0176ea
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 98%
+source-wordcount: '207'
+ht-degree: 97%
 
 ---
 
@@ -74,6 +74,8 @@ ht-degree: 98%
       + [创建和管理选件](authoring/personalization/offers.md)
       + [了解分段](authoring/personalization/segmentation.md)
       + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
++ 管理 {#administering}
+   + [管理工作流](administering/workflows-administering.md)
 + 与 AEM 云服务集成 {#integrations}
    + [与 Adobe Analytics 集成](integrating/integrating-adobe-analytics.md)
    + [与 Adobe Target 集成](integrating/integrating-adobe-target.md)
