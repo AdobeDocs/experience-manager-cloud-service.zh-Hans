@@ -2,7 +2,7 @@
 title: 体验审核测试-Cloud Services
 description: 体验审核测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Cloud Manager中的Experience Audit可确保站点上的最终用户数字体验
    >[!NOTE]
    >“Progressive Web App(PWA)”得分不包括在摘要得分中，只会显示在页面级报告详细信息屏幕中。
 * 还可以通过向下展开来获取各个页面级别的分数。
-* 可以详细查看各个测试的结果，以及如何修正在内容审核过程中确定的任何问题的指导。
+* 可以查看各个测试的结果，并详细了解如何修正在体验审核过程中发现的任何问题。
 * 测试结果的历史记录将保留在Cloud Manager中，这样客户就可以查看在管道运行中引入的更改是否包含先前运行的任何回归。
 
 ### 聚合分数 {#aggregate-scores}
