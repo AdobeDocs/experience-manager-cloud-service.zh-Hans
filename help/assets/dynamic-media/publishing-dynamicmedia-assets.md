@@ -3,7 +3,7 @@ title: 发布 Dynamic Media 资产
 description: 如何发布Dynamic Media资产
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
+source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 12%
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 通过选择已上传的资产并点按发布或快速发布，可 **[!UICONTROL 以发]** 布 **[!UICONTROL Dynamic Media资产]**。 在发布Dynamic Media资产后，您可以通过URL或通过在页面上嵌入代码的方式将资产包含在网页中。
 
-您还可以立即发布上传的资产，无需任何用户干预。 或者，您也可以选择性发布这些资产。 See [Configuring Dynamic Media](config-dm.md). 或者，您也可以在文件夹级别使用选择性发布，将资产有选择地发布到Dynamic Media **[!UICONTROL 或AEM(彼此互斥]** )。 请参 [阅在Dynamic Media中使用选择性发布。](/help/assets/dynamic-media/selective-publishing.md)
+您还可以立即发布上传的资产，无需任何用户干预。 或者，您也可以选择性发布这些资产。 See [Configuring Dynamic Media.](config-dm.md) 或者，您也可以在文件夹级别使用选择性发布，将资产有选择地发布到Dynamic Media **[!UICONTROL 或AEM(彼此互斥]** )。 请参 [阅在Dynamic Media中使用选择性发布。](/help/assets/dynamic-media/selective-publishing.md)
 
 在卡 **[!UICONTROL 片视图]**&#x200B;中，资产名称的正下方以及日期和时间的左侧会显示一个小地球图标，以指示资产已发布。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
@@ -25,7 +25,7 @@ ht-degree: 12%
 
 如果您打算在对视频资产进行编码后立即发布这些资产，请确保编码已完成。当视频仍在编码时，系统会告知您视频处理工作流正在进行中。完成视频编码后，您应该能够预览视频演绎版。此时，您可以安全地发布视频，而不会出现任何发布错误。
 
-另请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。
+另请参阅[将 URL 关联到您的 Web 应用程序。](linking-urls-to-yourwebapplication.md)
 
 另请参 [阅在网页上嵌入Dynamic Media视频查看器或图像查看器。](embed-code.md)
 
