@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
+source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 15%
+source-wordcount: '714'
+ht-degree: 14%
 
 ---
 
@@ -110,3 +110,18 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 * 添加到CTT用户界面的按钮可轻松 *检索访问令牌* 。
 
 * 为URL和迁移集名称 *添加**了描述性验证消息*。
+
+## 代码重构工具 {#code-refactoring}
+
+可查看本节以了解新增功能和代码重构工具的更新。
+
+### 新增功能 {#what-is-new-refactoring}
+
+* AIO-CLI插件支持Repository Modernizer并允许用户使用插件执行该工具。
+
+   请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* 存储库Modernizer实用程序可用于将现有项目包重构为与为AEM定义为Cloud Service的项目结构兼容的包。
+
+   请参阅 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) （存储库现代化器）。
+
