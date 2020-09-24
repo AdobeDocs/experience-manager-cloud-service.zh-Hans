@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 使用资产微服务生成的演绎版支持为PNG图像添加水印。 它可以配置为处理用户档案。 &lt;!—待定：链接到帮助文章。>
+* 使用资产微服务生成的演绎版支持为PNG图像添加水印。 它可以配置为处理用户档案。
 
 * 中的增强功能 [!DNL Dynamic Media]
 
