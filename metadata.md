@@ -1,5 +1,5 @@
 ---
-product: Adobe Experience Manager
+product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hans
 index: y
 solution-title: Adobe Experience Manager 云服务
@@ -9,7 +9,7 @@ getting-started-url: https://docs.adobe.com/content/help/zh-Hans/experience-mana
 tutorials-title: 教程
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: 967d0993ba2114d0dd081724cf5e7754899b5c8e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 20%
