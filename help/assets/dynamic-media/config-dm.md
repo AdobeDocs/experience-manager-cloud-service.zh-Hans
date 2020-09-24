@@ -2,9 +2,9 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 98b9d4a33d688d206e534a7ae5f91baa165a8fc9
+source-git-commit: 5ee57323e65ccde22e545d1e14cf9bf552ec3d46
 workflow-type: tm+mt
-source-wordcount: '4701'
+source-wordcount: '5122'
 ht-degree: 9%
 
 ---
@@ -152,6 +152,26 @@ To migrate any custom viewer presets and configurations that you have created fr
 * **[!UICONTROL 颜色管理属性]** -这些设置决定使用哪些ICC颜色用户档案。
 * **[!UICONTROL 兼容性属性]** -通过此设置，文本图层中的前导和尾部段落可以像在版本3.6中一样处理，以实现向后兼容性。
 * **[!UICONTROL 本地化支持]** -这些设置允许您管理多个区域设置属性。 它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置本地化支持的 **[!UICONTROL 详细信息]**，请参 [阅设置资产本地化时的注意事项](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)。
+
+#### 配置应用程序常规设置 {#configuring-application-general-settings}
+
+要打开“应用程序常规设置”页面，请在Dynamic Media Classic全局导航栏中，单 **[!UICONTROL 击“设置”>“应用程序设置”>“常规设置”。]**
+
+* **[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
+* **[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产：是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
+* **[!UICONTROL 在当前文件夹中覆盖，基本图像名称／扩展名相同]** -此选项是最严格的替换规则。 它要求您将替换图像上传到与原始图像相同的文件夹，并且替换图像的文件扩展名与原始图像的扩展名相同。 如果这些要求不满足，则会创建重复。
+
+   >[!NOTE]
+   >
+   >要保持与AEM的一致性，请始终选 **择“覆盖当前文件夹中的基本图像名称／扩展名”**。
+
+* **[!UICONTROL 在任何文件夹中覆盖相同的基本资源名称／扩展名]** -要求替换图像的文件扩展名与原始图像相同（例如，chair.jpg必须替换chair.jpg，而不是chair.tif）。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新后的图像驻留在新文件夹中；在文件的原始位置找不到该文件。
+* **[!UICONTROL 在任意文件夹中覆盖相同的基本资产名称，而不考虑扩展名]** -此选项是最包含内容的替换规则。 您可以将替换图像上传到与原始图像不同的文件夹，以其他文件扩展名上传文件，然后替换原始文件。 如果原始文件位于其他文件夹中，则替换图像将驻留在其上传到的新文件夹中。
+* **[!UICONTROL 默认颜色用户档案]** -有 [关详细信息](#configuring-color-management) ，请参阅配置颜色管理。
+
+   >[!NOTE]
+   >
+   >默认情况下，当您选择&#x200B;**[!UICONTROL 呈现]**&#x200B;时，系统会显示 15 种呈现形式，当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 查看器]**&#x200B;时，系统会显示 15 个查看器预设。您可以提高此限制。请参阅[增加或减少显示的图像预设数](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)或[增加或减少显示的查看器预设数](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
 
 #### 配置颜色管理 {#configuring-color-management}
 
