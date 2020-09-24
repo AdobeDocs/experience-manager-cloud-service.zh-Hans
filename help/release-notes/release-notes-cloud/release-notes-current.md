@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
+source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 18%
+source-wordcount: '629'
+ht-degree: 15%
 
 ---
 
@@ -14,11 +14,38 @@ ht-degree: 18%
 
 以下部分概述了 Experience Manager 云服务 2020.9.0 版的常规发行说明。
 
+## 发布日期 {#release-date}
+
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+
 ## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* 单页应用程序(SPA)编辑器Javascript SDK现 [在是开放源码。](/help/implementing/developing/spa/reference-materials.md)
+* 单页应用程序(SPA)编辑器JavaScript SDK现 [在是开放源码。](/help/implementing/developing/spa/reference-materials.md)
+
+## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* 使用资产微服务生成的演绎版支持为PNG图像添加水印。 它可以配置为处理用户档案。 &lt;!—待定：链接到帮助文章。>
+
+* 中的增强功能 [!DNL Dynamic Media]
+
+   * 选择性发布——营销团队现在可以访问同步到的 [!DNL Dynamic Media] 智能裁剪图像和动态演绎版，以便 [!DNL Dynamic Media] 创建促销资料，而无需将这些资产发布到全局 [!DNL Dynamic Media] 投放。 AEM和 [!DNL Dynamic Media] 发布是相互分离的，可单独执行，以实现这一点。
+   * 管理员可以 [!DNL Dynamic Media] 直接在AEM UI中重置设置时收到的Cloud Service口令，而无需使用桌面 [!DNL Dynamic Media Classic] 应用程序。
+
+* 要了解以下增强功能，请 [参阅Brand Portal的新增功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)。
+
+   * 集成Adobe Document Cloud视图SDK，增强PDF预览。
+   * 单击下载功能。
+   * 下载体验的新管理配置。
+
+<!--
+### Bugs Fixed {#bugs-fixed-assets}
+
+TBD: list of Assets aaCS bugs that are fixed.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
