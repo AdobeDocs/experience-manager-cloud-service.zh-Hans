@@ -2,7 +2,7 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 4b967e8b738171f0997df7cd433e1d7a418751e8
+source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -155,7 +155,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 配置应用程序常规设置 {#configuring-application-general-settings}
 
-要打开“应用程序常规设置”页面，请在Dynamic Media Classic全局导航栏中，单 **[!UICONTROL 击“设置”>“应用程序设置”>“常规设置]**”。
+要打开“应用程序常规设置”页面，请在Dynamic Media Classic全局导航栏中，单 **[!UICONTROL 击“设置”>“应用程序设置”>“常规设置”。]**
 
 * **[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
 * **[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产：是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
@@ -232,7 +232,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 1. 执行下列操作之一：
 
    * 重复步骤3-4以编辑其他MIME类型。
-   * 在CRXDE Lite页面的菜单栏上，单击“全部 **[!UICONTROL 保存”]**。
+   * 在CRXDE Lite页面的菜单栏上，单击“全部 **[!UICONTROL 保存”。]**
 
 1. 在页面的左上角，点按 **[!UICONTROL CRXDE Lite]** ，返回AEM。
 
@@ -242,7 +242,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 **为不支持的格式添加自定义MIME类型**
 
-1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console]**.
+1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
