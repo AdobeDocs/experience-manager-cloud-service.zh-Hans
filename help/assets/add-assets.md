@@ -2,9 +2,9 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产 [!DNL Adobe Experience Manager] 添加为Cloud Service。
 translation-type: tm+mt
-source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
+source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1318'
 ht-degree: 4%
 
 ---
@@ -30,18 +30,6 @@ ht-degree: 4%
 
 ## Upload assets {#upload-assets}
 
-要上传文件（或多个文件），您可以在桌面上选择它们，然后在用户界面（Web浏览器）上拖动到目标文件夹。 或者，也可以从用户界面启动上传。
-
-1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
-1. 要上传资产，请执行以下操作之一：
-
-   * On the toolbar, tap the **[!UICONTROL Create]** icon. 然后，在菜单上，点按文 **[!UICONTROL 件]**。 如果需要，可以重命名显示的对话框中的文件。
-   * 在支持HTML5的浏览器中，直接将资源拖动到用户 [!DNL Assets] 界面上。 不显示要重命名文件的对话框。
-
-   ![create_menu](assets/create_menu.png)
-
-   要选择多个文件，请按Ctrl或Command键，然后在文件选取器对话框中选择资产。 使用iPad时，一次只能选择一个文件。
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
@@ -59,10 +47,6 @@ ht-degree: 4%
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. To cancel an ongoing upload, click close (`X`) next to the progress bar. 取消上传操作时，将删 [!DNL Assets] 除资产部分上传的部分。
-
-   如果在上传文件之前取消上传操作，则停 [!DNL Assets] 止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,13 +57,29 @@ ht-degree: 4%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
+要上传文件（或多个文件），您可以在桌面上选择它们，然后在用户界面（Web浏览器）上拖动到目标文件夹。 或者，也可以从用户界面启动上传。
+
+1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
+1. 要上传资产，请执行以下操作之一：
+
+   * On the toolbar, tap the **[!UICONTROL Create]** icon. 然后，在菜单上，点按文 **[!UICONTROL 件]**。 如果需要，可以重命名显示的对话框中的文件。
+   * 在支持HTML5的浏览器中，直接将资源拖动到用户 [!DNL Assets] 界面上。 不显示要重命名文件的对话框。
+
+   ![create_menu](assets/create_menu.png)
+
+   要选择多个文件，请按Ctrl或Command键，然后在文件选取器对话框中选择资产。 使用iPad时，一次只能选择一个文件。
+
+1. To cancel an ongoing upload, click close (`X`) next to the progress bar. 取消上传操作时，将删 [!DNL Assets] 除资产部分上传的部分。
+
+   如果在上传文件之前取消上传操作，则停 [!DNL Assets] 止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
+
 1. 中的上传进度 [!DNL Assets] 对话框显示成功上传的文件和无法上传的文件计数。
 
-此外，资产用户界面还会显示您上传的最新资产或您首先创建的文件夹。
+   此外，资产用户界面还会显示您上传的最新资产或您首先创建的文件夹。
 
 >[!NOTE]
 >
->要将嵌套文件夹层次结构上传到AEM，请参 [阅批量上传资产](#bulk-upload)。
+>要上传嵌套文件夹层次结构，请参 [阅批量上传资产](#bulk-upload)。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
