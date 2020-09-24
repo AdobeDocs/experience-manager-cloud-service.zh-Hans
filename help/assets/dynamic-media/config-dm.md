@@ -2,7 +2,7 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 9b2095594432dbf8479c7b3ac482a62fc6672cab
+source-git-commit: 4b967e8b738171f0997df7cd433e1d7a418751e8
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -167,7 +167,6 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 * **[!UICONTROL 在任何文件夹中覆盖相同的基本资源名称／扩展名]** -要求替换图像的文件扩展名与原始图像相同（例如，chair.jpg必须替换chair.jpg，而不是chair.tif）。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新后的图像驻留在新文件夹中；在文件的原始位置找不到该文件。
 * **[!UICONTROL 在任意文件夹中覆盖相同的基本资产名称，而不考虑扩展名]** -此选项是最包含内容的替换规则。 您可以将替换图像上传到与原始图像不同的文件夹，以其他文件扩展名上传文件，然后替换原始文件。 如果原始文件位于其他文件夹中，则替换图像将驻留在其上传到的新文件夹中。
-
 * **[!UICONTROL 默认颜色用户档案]** -有 [关详细信息](#configuring-color-management) ，请参阅配置颜色管理。
 
    >[!NOTE]
