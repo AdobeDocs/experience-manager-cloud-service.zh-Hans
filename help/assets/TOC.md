@@ -4,10 +4,10 @@ user-guide-title: AEM Assets 云服务
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 62cb875355691ebfde6ce1240011782fb59f77ab
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 94%
+source-wordcount: '425'
+ht-degree: 92%
 
 ---
 
@@ -107,6 +107,7 @@ ht-degree: 94%
    + [将 URL 关联到您的 Web 应用程序](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [使用规则集转换 URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [发布 Dynamic Media 资产](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [在Dynamic Media中使用选择性发布](dynamic-media/selective-publishing.md)
    + [通过Dynamic Media使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [通过Dynamic Media Classic使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [使用选择器](dynamic-media/working-with-selectors.md)
