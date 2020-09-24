@@ -3,7 +3,7 @@ title: 为资产设置水印
 description: 将水印添加到您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. [创建处理用户档案](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) ，以利用资产微服务应用水印。
 
-![用于创建水印的资产处理用户档案](assets/watermark-processing-profile.png)
+   ![用于创建水印的资产处理用户档案](assets/watermark-processing-profile.png)
 
 1. [将处理用户档案应用到文件夹](/help/assets/asset-microservices-configure-and-use.md#use-profiles) ，以创建带水印的资产。
 
