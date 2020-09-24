@@ -2,7 +2,7 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 97b4d8bba29ddaea959b41c2690b8ff11860413d
+source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
 workflow-type: tm+mt
 source-wordcount: '5122'
 ht-degree: 9%
@@ -64,26 +64,35 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 连接成功后，可以设置以下内容：
 
-   * **[!UICONTROL 公司]** - Dynamic Media帐户的名称。 您可能为不同的子品牌、部门或不同的分阶段／生产环境拥有多个Dynamic Media帐户。
+* **[!UICONTROL 公司]** - Dynamic Media帐户的名称。 您可能为不同的子品牌、部门或不同的分阶段／生产环境拥有多个Dynamic Media帐户。
 
-   * **[!UICONTROL 公司根文件夹路径]**
+* **[!UICONTROL 公司根文件夹路径]**
 
-   * **[!UICONTROL 发布资产]** -您可以从以下三个选项中进行选择：
-      * **[!UICONTROL 立即]** ，意味着上传资产时，系统会立即收录资产并提供URL/Embed。 发布资产不需要用户干预。
-      * **[!UICONTROL 激活]** ，即您需要在提供URL/嵌入链接之前先显式发布资产。
-      * **[!UICONTROL 选择性发布]** 意味着资产仅为安全预览而自动发布，并且可以明确发布到AEM，而不发布到DMS7以在公共域中投放。 将来，Adobe将增强此选项，将资产发布到AEM，并将资产发布到Dynamic Media，相互排斥。 即，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您也可以仅发布AEM中的资产以进行预览；这些相同的资源不会发布在DMS7中以便在公共域中投放。
-   * **[!UICONTROL 安全预览服务器]** -允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全访问和预览远程Dynamic Media再现(不会将二进制文件发回AEM实例)。
+* **[!UICONTROL 发布资产]** -您可以从以下三个选项中进行选择：
+
+* **[!UICONTROL 立即]** ，意味着上传资产时，系统会立即收录资产并提供URL/Embed。 发布资产不需要用户干预。
+
+* **[!UICONTROL 激活]** ，即您需要在提供URL/嵌入链接之前先显式发布资产。
+
+* **[!UICONTROL 选择性发布]** 意味着资产仅为安全预览而自动发布，并且可以明确发布到AEM，而不发布到DMS7以在公共域中投放。 将来，Adobe将增强此选项，将资产发布到AEM，并将资产发布到Dynamic Media，相互排斥。 即，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您也可以仅发布AEM中的资产以进行预览；这些相同的资源不会发布在DMS7中以便在公共域中投放。
+
+* **[!UICONTROL 安全预览服务器]** -允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全访问和预览远程Dynamic Media再现(不会将二进制文件发回AEM实例)。
 除非您有特殊安排来使用自己的公司服务器或特殊服务器，否则Adobe Systems建议您按照指定的方式保留此设置。
 
-   * **[!UICONTROL 同步所有内容]** -默认情况下为选中状态。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项后，您可以从以下两种Dynamic Media同步模式中进行选择：
+* **[!UICONTROL 同步所有内容]** -默认情况下为选中状态。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项后，您可以从以下两种Dynamic Media同步模式中进行选择：
 
-   * **[!UICONTROL Dynamic Media 同步模式]**
-      * **[!UICONTROL 默认为启用]** -默认情况下，该配置将应用于所有文件夹，除非您专门为排除标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL 默认禁用]** -在明确标记选定文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。
+* **[!UICONTROL Dynamic Media 同步模式]**
+
+* **[!UICONTROL 默认为启用]** -默认情况下，该配置将应用于所有文件夹，除非您专门为排除标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+
+* **[!UICONTROL 默认禁用]** -在明确标记选定文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。
 要将选定的文件夹标记为同步到 Dynamic Media，请打开资产文件夹的“属性”页面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-         * **[!UICONTROL 继承]** -文件夹上没有显式同步值；相反，文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。
-         * **[!UICONTROL 为子文件夹启用]** -在此子树中包含所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。
-         * **[!UICONTROL 对子文件夹禁用]** -排除此子树中的所有内容，使其无法同步到Dynamic Media。
+
+* **[!UICONTROL 继承]** -文件夹上没有显式同步值；相反，文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。
+
+* **[!UICONTROL 为子文件夹启用]** -在此子树中包含所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。
+
+* **[!UICONTROL 对子文件夹禁用]** -排除此子树中的所有内容，使其无法同步到Dynamic Media。
 
    >[!NOTE]
    >
@@ -176,10 +185,10 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
    可以设置以下颜色校正属性：
 
-   * **[!UICONTROL CMYK默认色彩空间]** -默认CMYK颜色用户档案的名称。
-   * **[!UICONTROL 灰阶默认色彩空间]** -默认灰色用户档案的名称。
-   * **[!UICONTROL RGB默认色彩空间]** -默认RGB色彩用户档案的名称。
-   * **[!UICONTROL 颜色转换渲染方法]** -指定渲染方法。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe建 **[!UICONTROL 议]** “相对”作为默认值。
+   **[!UICONTROL CMYK默认色彩空间]** -默认CMYK颜色用户档案的名称。
+   **[!UICONTROL 灰阶默认色彩空间]** -默认灰色用户档案的名称。
+   **[!UICONTROL RGB默认色彩空间]** -默认RGB色彩用户档案的名称。
+   **[!UICONTROL 颜色转换渲染方法]** -指定渲染方法。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe建 **[!UICONTROL 议]** “相对”作为默认值。
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
 
@@ -190,7 +199,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 * 启用RGB和CMYK图像的颜色校正。
 * 将假定没有颜色用户档案的RGB图像在sRGB *颜色空* 间中。
 * 将假定没有颜色用户档案的CMYK图像在WebCoated颜色 *空间中* 。
-* 返回RGB输出的动态演绎版将在*sRGB *色彩空间中返回它。
+* 返回RGB输出的动态演绎版将在sRGB *色彩空* 间中返回它。
 * 返回CMYK输出的动态演绎版将在WebCoated颜色空 *间中* 返回它。
 
 #### 配置资产处理 {#configuring-asset-processing}
