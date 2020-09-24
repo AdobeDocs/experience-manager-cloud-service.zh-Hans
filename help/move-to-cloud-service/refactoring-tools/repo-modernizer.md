@@ -2,10 +2,10 @@
 title: 存储库Modernizer
 description: 存储库Modernizer
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 3%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,9 @@ Adobe Experience Manager作为Cloud Service，为您的AEM项目带来许多新�
 
 * `all` 包是包含子包和的容器 `ui.apps` 包 `ui.content`。
 
+>[!NOTE]
+>项目结构基于包 *装及其* Archetype 24 `pom.xml/filter.xml files`。 有关更多 [详细信息](https://github.com/adobe/aem-project-archetype) ，请参阅Archetype 24。
+
 ## 使用存储库Modernizer {#using-repo-modernizer}
 
 * 通过AdobeI/O CLI :建议通过(AEM作为AdobeI/O `aio-cli-plugin-aem-cloud-service-migration` CLI的Cloud Service代码重构插件)使用存储库Modernizer。
@@ -36,5 +39,5 @@ Adobe Experience Manager作为Cloud Service，为您的AEM项目带来许多新�
 
    请参阅 **[Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** ，了解如何使用此工具。
 
->[!NOTE]
->存储库Modernizer是使用NodeJS开发的。 建议安装NodeJS 10.0+。
+   >[!NOTE]
+   >存储库现代化器是使用NodeJS开发的。 建议安装NodeJS 10.0+。
