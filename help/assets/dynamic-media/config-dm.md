@@ -2,7 +2,7 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -158,7 +158,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 要打开“应用程序常规设置”页面，请在Dynamic Media Classic全局导航栏中，单 **[!UICONTROL 击“设置”>“应用程序设置”>“常规设置”。]**
 
 * **[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
+
 * **[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产：是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
+
 * **[!UICONTROL 在当前文件夹中覆盖，基本图像名称／扩展名相同]** -此选项是最严格的替换规则。 它要求您将替换图像上传到与原始图像相同的文件夹，并且替换图像的文件扩展名与原始图像的扩展名相同。 如果这些要求不满足，则会创建重复。
 
    >[!NOTE]
@@ -166,7 +168,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    >要保持与AEM的一致性，请始终选择以下设置： **在当前文件夹中覆盖，基本图像名称／扩展名相同**
 
 * **[!UICONTROL 在任何文件夹中覆盖相同的基本资源名称／扩展名]** -要求替换图像的文件扩展名与原始图像相同（例如，chair.jpg必须替换chair.jpg，而不是chair.tif）。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新后的图像驻留在新文件夹中；在文件的原始位置找不到该文件。
+
 * **[!UICONTROL 在任意文件夹中覆盖相同的基本资产名称，而不考虑扩展名]** -此选项是最包含内容的替换规则。 您可以将替换图像上传到与原始图像不同的文件夹，以其他文件扩展名上传文件，然后替换原始文件。 如果原始文件位于其他文件夹中，则替换图像将驻留在其上传到的新文件夹中。
+
 * **[!UICONTROL 默认颜色用户档案]** -有 [关详细信息](#configuring-color-management) ，请参阅配置颜色管理。
 
    >[!NOTE]
@@ -213,7 +217,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 请参阅[上传资产](/help/assets/add-assets.md)。
 
-**配置资产处理**
+要配置资产处理，请执行以下操作：
 
 1. 在AEM中，单击AEM徽标以访问全局导航控制台，然后单击“常规”>“ **[!UICONTROL CRXDE Lite”]**。
 1. 在左边栏中，导航到以下内容：
@@ -230,7 +234,6 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
    * 多次单 **[!UICONTROL 击]** jobParam以打开其关联的文本字段。 请参 [阅支持的Mime类型](/help/assets/file-format-support.md) ，以了解可用于给定MIME类型的允许处理参数值的列表。
 
 1. 执行下列操作之一：
-
    * 重复步骤3-4以编辑其他MIME类型。
    * 在CRXDE Lite页面的菜单栏上，单击“全部 **[!UICONTROL 保存”。]**
 
@@ -240,7 +243,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 您可以为 AEM Assets 中不支持的格式添加自定义 MIME 类型。要确保 AEM 不会删除您在 CRXDE Lite 中添加的任何新节点，务必确保将 MIME 类型移动到 `image_` 之前，并将其值设置为 **[!UICONTROL false]**。
 
-**为不支持的格式添加自定义MIME类型**
+要为不支持的格式添加自定义MIME类型：
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -306,7 +309,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 两个元素可用于定义：“匹配”和“基名”。 这些字段允许您定义命名约定的所有元素，并标识用于命名包含这些元素的集合的约定部分。 公司的单个命名约定可对这些元素使用一行或多行定义。 您可以为您的唯一定义使用多行，并将它们分组为不同的元素，如主图像、颜色元素、替代视图元素和色板元素。
 
-**配置默认命名**
+配置默认命名：
 
 1. 登录您的Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -340,7 +343,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 您可以使用表单字段方法来定义批集预设或代码方法，它允许您使用常规表达式。 与默认命名一样，您可以在表单视图中定义的同时选择视图代码，并使用常规表达式来构建定义。 或者，您也可以取消选中视图以使用其中一种或只使用另一种。
 
-**要创建批集预设，请执行以下操作：**
+要创建批集预设，请执行以下操作：
 
 1. 登录您的Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -503,7 +506,7 @@ Granite传输工作流队列用于DAM更 **[!UICONTROL 新资产工作流]** 。
 
 Granite工作流队列用于非临时工作流。 在Dynamic Media中，它用于使用Dynamic Media编码视频工 **[!UICONTROL 作流处理视频]** 。
 
-**更新Granite Workflow队列**
+要更新Granite工作流队列，请执行以下操作：
 
 1. 导航到 `https://<server>/system/console/configMgr` 并搜索队 **列：Granite工作流队列**。
 
@@ -525,7 +528,7 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它用�
 
 Scene7上传连接设置将AEM资产同步到Dynamic Media Classic服务器。
 
-**更新Scene7上传连接**
+要更新Scene7上传连接，请执行以下操作：
 
 1. 导航至 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在连接 **[!UICONTROL 数字字段]** 和／或活动作 **[!UICONTROL 业超时字段中]** ，根据需要更改该数字。
@@ -538,7 +541,7 @@ Scene7上传连接设置将AEM资产同步到Dynamic Media Classic服务器。
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. Tap **[!UICONTROL Save.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
