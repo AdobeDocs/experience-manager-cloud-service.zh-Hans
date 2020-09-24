@@ -2,9 +2,9 @@
 title: 代码重构工具的统一体验
 description: 代码重构工具的统一体验
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 1%
 请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ，了解用法以及如何对此插件代码进行贡献（该插件在GitHub中是开放源码）。
 
 >[!NOTE]
->目前，只有Dispatcher Converter与插件集成。
+>目前，该插件已与AEM Dispatcher Converter和Repository Modernizer集成。
