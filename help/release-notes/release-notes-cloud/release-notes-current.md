@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
 translation-type: tm+mt
-source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 14%
+source-wordcount: '730'
+ht-degree: 12%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明 {#release-notes}
 
-以下部分概述了 Experience Manager 云服务 2020.9.0 版的常规发行说明。
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## 发布日期 {#release-date}
 
@@ -28,12 +28,12 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 使用资产微服务生成的演绎版支持为PNG图像添加水印。 它可以配置为处理用户档案。
+* 使用资产微服务生成的演绎版支持添加水印图像文件。 它可以配置为处理用户档案，并使用PNG文件作为水印。 请参 [阅为资产设置水印](/help/assets/watermark-assets.md)。
 
 * 中的增强功能 [!DNL Dynamic Media]
 
-   * 选择性发布——营销团队现在可以访问同步到的 [!DNL Dynamic Media] 智能裁剪图像和动态演绎版，以便 [!DNL Dynamic Media] 创建促销资料，而无需将这些资产发布到全局 [!DNL Dynamic Media] 投放。 AEM和 [!DNL Dynamic Media] 发布是相互分离的，可单独执行，以实现这一点。
-   * 管理员可以 [!DNL Dynamic Media] 直接在AEM UI中重置设置时收到的Cloud Service口令，而无需使用桌面 [!DNL Dynamic Media Classic] 应用程序。
+   * 选择性发布——营销团队现在可以访问同步到的 [!DNL Dynamic Media] 智能裁剪图像和动态演绎版，以便 [!DNL Dynamic Media] 创建促销资料，而无需将这些资产发布到全局 [!DNL Dynamic Media] 投放。 [!DNL Experience Manager] 而发 [!DNL Dynamic Media] 布是相互分离的，可单独进行，以实现这一点。 请参阅 [选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
+   * 管理员现在可以重 [!DNL Dynamic Media] 置在设置时收到的Cloud Service密码。 可在用户界面中完 [!DNL Experience Manager] 成重置，无需使用桌面应 [!DNL Dynamic Media Classic] 用程序。
 
 * 要了解以下增强功能，请 [参阅Brand Portal的新增功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
@@ -117,7 +117,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-refactoring}
 
-* AIO-CLI插件支持Repository Modernizer并允许用户使用插件执行该工具。
+* AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
 
    请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
 
