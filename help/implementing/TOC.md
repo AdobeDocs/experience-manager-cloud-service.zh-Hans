@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM 云服务
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 67%
+source-wordcount: '395'
+ht-degree: 66%
 
 ---
 
@@ -78,6 +78,7 @@ ht-degree: 67%
 + 个性化 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [配置ContextHub](developing/personalization/configuring-contexthub.md)
+   + [将ContextHub添加到页面](developing/personalization/adding-contexthub.md)
    + [样例存储候选项](developing/personalization/sample-stores.md)
    + [示例存储模块](developing/personalization/sample-modules.md)
    + [ContextHub诊断](developing/personalization/contexthub-diagnostics.md)
