@@ -2,9 +2,9 @@
 title: 页面模板
 description: 页面模板用于创建将用作新页面基础的页面
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 7%
 
 ---
@@ -292,7 +292,7 @@ WKND教程的模 [板文件夹](/help/implementing/developing/introduction/devel
 
    * 页面组件的资源类型。
    * 根节点的策略，它定义模板编辑器中允许的组件。
-   * 建议在模板类型上为响应式网格和移动模拟器的设置定义断点。 这是可选的，因为配置也可以在单个模板上定义(请参阅模 [板类型和移动设备组](#p-template-type-and-mobile-device-groups-br-p))。
+   * 建议在模板类型上为响应式网格和移动模拟器的设置定义断点。
 
 * AEM提供一些现成的模板类型选项，如HTML5页面和自适应表单页面。
 
@@ -476,7 +476,7 @@ GITHUB上的代码
 
    必须通过以下任一方式启用模板才能使用模板：
 
-   * [从“模板](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) ”控制台 **启用模** 板。
+   * [从“模板](/help/sites-cloud/authoring/features/templates.md) ”控制台 **启用模** 板。
 
    * 设置节点上的状态 `jcr:content` 属性。
 
