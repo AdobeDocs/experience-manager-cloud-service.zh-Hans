@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) 云服务的发行说明。
 description: 'Adobe Experience Manager (AEM) 云服务的发行说明。 '
 translation-type: tm+mt
-source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
+source-git-commit: 0fa6d88b4df97b17256f42ad2eb1752c141e02a2
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
