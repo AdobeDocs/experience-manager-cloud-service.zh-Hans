@@ -2,9 +2,9 @@
 title: 配置ContextHub
 description: 了解如何配置Context Hub。
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,6 @@ UI模块属性包括详细信息配置，您可以在其中提供模块特定属
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | 通用UI模块类型 | 在UI模块属性中配置 |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | 显示有关浏览器的信息 | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | 显示日期和时间信息 | `datetime` |
-| [contexthub.device](sample-modules.md#contexthub-device-ui-module-type) | 显示客户端设备 | `emulators` |
 | [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | 显示客户端的经度和纬度，以及地图上的位置。 允许您更改位置。 | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | 显示设备的屏幕方向（横向或纵向） | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 显示有关页面标记的统计信息 | `tagcloud` |
@@ -112,14 +111,10 @@ AEM提供以下可作为商店基础的样本商店候选。
 | 存储类型 | 描述 |
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 存储已解析和未解析的ContextHub区段。 自动从ContextHub SegmentManager检索区段 |
-| [aem.resolved区段](sample-stores.md#aem-resolvedsegments-sample-store-candidate) | 存储当前解析的区段。 监听ContextHub SegmentManager服务以自动更新存储 |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | 存储浏览器位置的经度和纬度。 |
-| [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) | 存储浏览器位置的当前日期、时间和季节 |
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 定义多个设备的属性和功能，并检测当前客户端设备 |
-| [contexthub.generic-jsonp](sample-stores.md#contexthub-generic-jsonp-sample-store-candidate) | 从JSONP服务检索和存储数据 |
 | [granite.用户档案](sample-stores.md#granite-profile-sample-store-candidate) | 存储当前用户的用户档案数据 |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | 存储有关客户端的信息，如设备信息、浏览器类型和窗口方向 |
-| [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) | 存储页面标记和标记计数 |
 
 1. 在Experience Manager边栏上，单击或点按工具>站点> ContextHub。
 1. 单击或点按默认配置容器。
@@ -144,7 +139,7 @@ AEM提供以下可作为商店基础的样本商店候选。
 
 配置contexthub.generic-jsonp存储，以便它存储服务调用的数据 `https://md5.jsontest.com/?text=%22text%20to%20md5%22`。 服务返回UI模块中显示的以下数据：
 
-```xml
+```javascript
 {
    "md5": "919a56ab62b6d5e1219fe1d95248a2c5",
    "original": "\"text to md5\""
@@ -165,7 +160,7 @@ Javascript [类的](contexthub-api.md#init-name-config) init函数定义一个�
 * **已启用：** 选择
 * **详细配置 (JSON):**
 
-   ```xml
+   ```javascript
    {
     "service": {
     "jsonp": false,
@@ -193,7 +188,7 @@ Javascript [类的](contexthub-api.md#init-name-config) init函数定义一个�
 * **模块类型：** contexthub.base
 * **详细配置 (JSON):**
 
-   ```xml
+   ```javascript
    {
     "icon": "coral-Icon--data",
     "title": "MD5 Conversion",
@@ -222,6 +217,15 @@ Javascript [类的](contexthub-api.md#init-name-config) init函数定义一个�
 
 * `/conf/global/settings/cloudsettings` 或
 * `/conf/<site>/settings/cloudsettings`
+
+### 记录ContextHub的调试消息 {#logging-debug-messages-for-contexthub}
+
+配置AdobeGranite ContextHub OSGi服务(PID =) `com.adobe.granite.contexthub.impl.ContextHubImpl`以记录详细的调试消息，这些消息在开发时很有用。
+
+要配置服务，您可以使用Web [控制台](/help/implementing/deploying/configuring-osgi.md) ，或在存储库中使用JCR节点：
+
+* Web控制台：要记录调试消息，请选择调试属性。
+* JCR节点：要记录调试消息，请将布尔 `com.adobe.granite.contexthub.debug` 属性设 `true`置为。
 
 ### 静默模式 {#silent-mode}
 
