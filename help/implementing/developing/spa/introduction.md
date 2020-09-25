@@ -2,7 +2,7 @@
 title: SPA简介和演练
 description: 本文介绍SPA的概念，并逐步介绍如何使用基本的SPA应用程序进行创作，并说明它与底层AEM SPA编辑器的关系。
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -151,7 +151,7 @@ SPA的主要思想是减少对服务器的调用和对服务器的依赖，以�
 
 下一节加 [载SPA应用程序](#loading-a-spa-application)，深入探讨加载SPA的机制以及如何同步和异步加载内容。
 
-### 加载SPA应用程序 {#loading-an-spa-application}
+### 加载SPA应用程序 {#loading-a-spa-application}
 
 1. 如果尚未加载，请在发布服务器上加载We.Retail日志应用程序，或从页面编辑器的“页面信息” **菜单中使用** “ **视图为已发布** ”选项。
 
