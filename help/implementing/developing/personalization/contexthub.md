@@ -2,7 +2,7 @@
 title: ContextHub
 description: ContextHub是存储、处理和呈现上下文数据的框架
 translation-type: tm+mt
-source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 1%
@@ -43,8 +43,8 @@ ContextHub在客户端上存储持续的上下文数据。 ContextHub Javascript
 * ContextHub提供多 [种示例存储类型](sample-stores.md)。
 * 使用AEM控制台 [创建商店](configuring-contexthub.md#creating-a-contexthub-store)。
 * 开发人员可 [以创建自定义存储类型](extending-contexthub.md#creating-custom-store-candidates)。
-* 开发人员可 [以通过Javascript访问](configuring-contexthub.md#interacting-with-contexthub-stores) 存储数据。
+* 开发人员可 [以通过Javascript访问](adding-contexthub.md#interacting-with-contexthub-stores) 存储数据。
 
 ## 分段 {#segmentation}
 
-ContextHub包含一个分段引擎，它管理区段并确定为当前上下文解析哪些区段。 定义了多个区段。 您可以使用Javascript API确定已 [解析的区段](configuring-contexthub.md#determining-resolved-contexthub-segments)。
+ContextHub包含一个分段引擎，它管理区段并确定为当前上下文解析哪些区段。 定义了多个区段。 您可以使用Javascript API确定已 [解析的区段](adding-contexthub.md#determining-resolved-contexthub-segments)。
