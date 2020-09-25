@@ -2,9 +2,9 @@
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ SSR通常在以下任一问题有明确的“是”时提供一些值：
 >
 >Adobe建议每个AEM环境（作者、发布、舞台等）使用一个单独的Adobe I/O Runtime实例。
 
-## 远程渲染器配置 {#remote-renderer-configuration}
+## 远程渲染器配置 {#remote-content-renderer-configuration}
 
 AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SSR实现哪种模式](#adobe-i-o-runtime) ，您都需要指定AEM如何访问此远程渲染服务。
 
@@ -67,8 +67,6 @@ AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SS
 >[!NOTE]
 >
 >无论您选择实施AEM驱动 [的通信流](#aem-driven-communication-flow) 或 [Adobe I/O Runtime驱动的流，您都必须定义远程内容呈现器](#adobe-i-o-runtime-driven-communication-flow) 配置。
->
->如果您选择使用自定义Node.js服 [务器，则必须定义此配置。](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SS
 
 ## AEM驱动的通信流 {#aem-driven-communication-flow}
 
-使用SSR时，AEM [中SPA的组件交互](introduction.md#workflow) 工作流程包括在Adobe I/O Runtime生成应用程序初始内容的阶段。
+使用SSR时，AEM [中SPA的组件交互](introduction.md#interaction-with-the-spa-editor) 工作流程包括在Adobe I/O Runtime生成应用程序初始内容的阶段。
 
 1. 浏览器从AEM请求SSR内容。
 1. AEM把模特发给Adobe I/O Runtime。
@@ -164,7 +162,7 @@ AEM中SPA的SSR要求使用Adobe I/O Runtime，这用于渲染应用程序内容
 
 要添加自定义请求处理程序，请实现 `RemoteContentRendererRequestHandler` 接口。 请务必将组 `Constants.SERVICE_RANKING` 件属性设置为大于100的整数，该整数是的排名 `DefaultRemoteContentRendererRequestHandlerImpl`。
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 通常，页面组件的HTL模板是此类功能的主要收件人。
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
