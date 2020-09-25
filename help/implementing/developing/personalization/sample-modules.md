@@ -2,9 +2,9 @@
 title: 示例ContextHub UI模块类型
 description: ContextHub提供了几个可在解决方案中使用的示例UI模块
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ contexthub.browserinfo UI模块的实例不需要详细信息配置的值。 以
 
 ## contexthub.datetime UI模块类型 {#contexthub-datetime-ui-module-type}
 
-UI `contexthub.datetime` 模块显示存储在名为datetime的存储中的日期和时间，该存储基于 [contexthub.datetime存储候选](sample-stores.md#contexthub-datetime-sample-store-candidate) 。
+UI `contexthub.datetime` 模块显示存储在基于存储候选项的名为datetime的存储中的日期和 `contexthub.datetime` 时间。
 
 ![contexthub.datetime模块](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ UI模块 `contexthub.screen-orientation` 的实例不需要详细信息配置值
 
 ## contexthub.tagcloud UI模块类型 {#contexthub-tagcloud-ui-module-type}
 
-UI `contexthub.tagcloud` 模块显示有关标记的信息。 在工具栏中，UI模块显示标记数。 弹出窗口会显示用于添加新标记的标记云和文本框。 UI模块从名为tagcloud的ContextHub存储中获取基于contexthub.tagcloud存储候 [选项的信息](sample-stores.md#contexthub-tagcloud-sample-data-store) 。
+UI `contexthub.tagcloud` 模块显示有关标记的信息。 在工具栏中，UI模块显示标记数。 弹出窗口会显示用于添加新标记的标记云和文本框。 UI模块从名为tagcloud的ContextHub存储中获取基于存储候选项的 `contexthub.tagcloud` 信息。
 
 ![contexthub.tagcloud模块](assets/tagcloud-module.png)
 
