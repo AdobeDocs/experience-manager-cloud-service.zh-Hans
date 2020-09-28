@@ -2,10 +2,10 @@
 title: Adobe Experience Manager是Cloud Service
 description: '不同和新—Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 338f4b8d291bd0dca1c2f0de7bd6f721156d8df9
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 9%
+source-wordcount: '1899'
+ht-degree: 10%
 
 ---
 
@@ -69,15 +69,12 @@ AEM 云服务现在具有：
 ## 更新 {#upgrades}
 
 >[!NOTE]
->
->有关更多详细信息，请参 [阅部署简介](/help/implementing/deploying/overview.md)。
+>有关更多详细信息，请 [参阅AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
 
-AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您的项目处于最新的AEM版本。 这意味着所有升级操作都是完全自动化的，因此不需要用户中断任何服务。
+AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您的项目处于最新的AEM版本。
 
->[!NOTE]
->如果对生产环境的更新失败，Cloud Manager将自动回滚阶段环境。 这会自动完成，以确保更新完成后，阶段和生产环境都使用相同的AEM版本。
-
-AEM版本更新有两种类型：
+这意味着所有升级操作都是完全自动化的，因此，用户无需中断任何服务。
+Adobe主动负责将服务的所有操作实例更新到最新版AEM代码库：AEM版本更新有两种类型：
 
 * **推送更新**
 
@@ -93,19 +90,8 @@ AEM版本更新有两种类型：
 
    * 通过可预测的月度计划发布。
 
-AEM更新通过一个密集且完全自动化的产品验证管道，涉及多个步骤，确保不中断生产中任何系统的服务。 运行状况检查用于监视应用程序的运行状况。 如果这些检查在AEM作为Cloud Service更新期间失败，则发行版将不继续，Adobe将调查更新为何导致此意外行为。
-
-[产品测试和客户功能测试](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) （防止产品升级和客户代码推送中断生产）也在AEM版本更新期间进行验证。
-
->[注意]
->如果自定义代码被推送到暂存，然后被您拒绝，则下一个AEM更新将删除这些更改，以反映上次成功发布客户的git标签到生产。
-
-
-### 复合节点存储 {#composite-node-structure}
-
-如上所述，在大多数情况下，更新将导致零停机，对于作者而言，这是一个节点群集。
-
-由于Oak中的复合节点存储功 *能，可以进行* 滚动更新。 此功能允许AEM同时引用多个存储库。 在滚动部署中，新的绿色AEM版本包含其自己的(即基于TarMK的不可变 `/libs`存储库)，与旧的蓝色AEM版本不同，但两者都引用了一个共享的基于DocumentMK的可变存储库，其中包含 `/content` 、 `/conf` 、 `/etc` 等区域。 由于蓝色和绿色都有其自己的版本，因此在滚动更新期间 `/libs`，它们都可以处于活动状态，在蓝色被绿色完全替换之前，它们都会保持流量。
+>[!NOTE]
+>有关更多详细信息，请 [参阅部署架构](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) 。
 
 ## Cloud Manager {#cloud-manager}
 
