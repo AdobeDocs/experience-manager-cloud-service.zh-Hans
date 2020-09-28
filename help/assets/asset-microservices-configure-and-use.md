@@ -1,11 +1,11 @@
 ---
-title: 配置和使用资产微服务进行资产处理。
+title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2527'
 ht-degree: 1%
 
 ---
