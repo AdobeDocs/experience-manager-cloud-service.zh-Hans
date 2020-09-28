@@ -1,12 +1,12 @@
 ---
-title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程部署中可 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 44%
+source-wordcount: '2080'
+ht-degree: 45%
 
 ---
 
@@ -32,16 +32,16 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
    |  | [!DNL Sites] 作为Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5内 [!DNL Sites] 部部署 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]作为Cloud Service ** | 支持 | 支持 | 支持 |
+   | **[!DNL Experience Manager Assets]作为Cloud Service** | 支持 | 支持 | 支持 |
    | **[!DNL Experience Manager]6.5[!DNL Assets]on AMS.** | 支持 | 支持 | 支持 |
-   | **[!DNL Experience Manager]6.5内[!DNL Assets]部部署&#x200B;** | 不支持 | 不支持 | 不支持 |
+   | **[!DNL Experience Manager]6.5内[!DNL Assets]部部署** | 不支持 | 不支持 | 不支持 |
 
 ### 支持的文件格式 {#mimetypes}
 
 作者在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索的资产。 文档会添加到组 `Download` 件，图像会添加到组 `Image` 件。 Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 支持的格式有：
 
-* **图像格式**: 图像组件支 [持的格式](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html) 。 [!DNL Dynamic Media] 不支持图像。
-* **文档格式**: 查看支 [持的文档格式](file-format-support.md#document-formats)。
+* **图像格式**:图像组件支 [持的格式](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html) 。 [!DNL Dynamic Media] 不支持图像。
+* **文档格式**:查看支 [持的文档格式](file-format-support.md#document-formats)。
 
 ### 涉及的用户和组 {#users-and-groups-involved}
 
@@ -170,7 +170,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 * 所有 [!DNL Sites] 作者都对获取的副本具有读取权限，即使作者无法访问远程DAM部署。
 * 没有支持自定义集成的 API。
 * 该功能支持无缝搜索和使用远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。
-* 无法在页面属性用户界面上将远程资产用作 [!UICONTROL 页面缩略图] 。 您可以通过单击选择图像，在缩略图的 [!UICONTROL 页面属性] 用户界面 [!UICONTROL 中设] 置网页的 [!UICONTROL 缩]略图。
+* 无法在页面属性用户界面上将远程资产用作 [!UICONTROL 页面缩略图] 。 您可以通过单击选择图像，在缩略图的 [!UICONTROL 页面属性] 用户界面 [!UICONTROL 中设] 置网 [!UICONTROL 页的]缩略图。
 
 ### 设置和许可 {#setup-licensing}
 
