@@ -1,12 +1,12 @@
 ---
-title: 在AEM中搜索数字资产和图像
+title: 搜索数字资产
 description: 了解如何使用“过滤器”面板在AEM中查找所需的资产，以及如何使用在搜索中显示的资产。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4521'
 ht-degree: 8%
 
 ---
