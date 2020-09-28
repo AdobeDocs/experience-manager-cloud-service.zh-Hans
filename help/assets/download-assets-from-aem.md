@@ -1,11 +1,11 @@
 ---
-title: Download assets from [!DNL Adobe Experience Manager Assets].
+title: 下载资产
 description: 下载资 [!DNL Adobe Experience Manager Assets] 源以启用或禁用下载功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c4a642541a3c8f69c0efff0dbbe036374a1d6f6b
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '893'
 ht-degree: 6%
 
 ---
