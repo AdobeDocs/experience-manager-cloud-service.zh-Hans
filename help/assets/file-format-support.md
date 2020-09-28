@@ -1,11 +1,11 @@
 ---
-title: Experience Manager资产作为Cloud Service支持的文件格式和MIME类型
+title: 支持的文件格式和MIME类型
 description: Experience Manager资产作为Cloud Service支持的文件格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '813'
 ht-degree: 34%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 34%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基本内容管理功能-存储、在线管理元数据、版本控制、上传和下载等，而与其格式无关。 Adobe Experience Manager资产支持各种文件格式，每种产品功能都支持不同格式。
+Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基本内容管理功能-存储、在线管理元数据、版本控制、上传和下载等，而不受其格式的限制。 Adobe Experience Manager资产支持各种文件格式，每种产品功能都支持不同格式。
 
 此外，Experience Manager资产还提供扩展支持，用于生成预览和演绎版以及提取元数据和文本以进行全文索引。 此扩展支持是使用资产微 [型服务提供的](asset-microservices-configure-and-use.md)。
 
 使用资产微型服务进行资产转换的亮点包括：
 
-* 由Adobe [应用程序](#adobe-formats) 和服务（包括Adobe Photoshop、Adobe InDesign、Adobe Illustrator、Adobe XD、Adobe Dimension和Adobe Acrobat或PDF）生成的主要Adobe文件格式。
+* 由Adobe [应用程序和服务](#adobe-formats) (包括Adobe Photoshop、Adobe InDesign、Adobe Illustrator、Adobe XD、Adobe Dimension和Adobe Acrobat或PDF)生成的主要Adobe文件格式。
 * 关键 [成像文件格式](#image-formats)。
-* [Camera Raw文件格式](#camera-raw-formats) ，适用于各种相机，包括Canon、Nikon、Fujifilm、Olympus和其他制造商（由Adobe Camera Raw提供支持）。
+* [Camera Raw的文件格式](#camera-raw-formats) ，适用于各种相机，包括Canon、Nikon、Fujifilm、Olympus和其他制造商(由Adobe Camera Raw提供支持)。
 * 常见 [文档格式](#document-formats)，包括Microsoft Office和Open文档格式。
 * 各种[视频](#video-formats)和[音频](#audio-formats)格式.
 
@@ -91,9 +91,9 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 
 支持以下3D格式列表。
 
-另请参阅 [在Dynamic Media中使用3D资产。](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
+| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | 动态媒体投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -218,7 +218,7 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 
 ## 音频格式 {#audio-formats}
 
-资源作为Cloud Service提供AIF、ASF、M4A、MP3、WAV和WMA音频格式的XMP元数据提取支持。
+资源作为Cloud Service提供XMP元数据提取支持，支持AIF、ASF、M4A、MP3、WAV和WMA音频格式。
 
 >[!MORELIKETHIS]
 >
