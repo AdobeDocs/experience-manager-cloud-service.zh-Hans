@@ -1,12 +1,12 @@
 ---
-title: 在Experience Manager中管理您的数字资产
+title: 管理数字资产
 description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4431'
 ht-degree: 18%
 
 ---
@@ -162,7 +162,7 @@ ht-degree: 18%
    * 点按／单击 **[!UICONTROL 取消]** ，以停止该过程。
    >[!NOTE]
    >
-   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
+   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果您使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
    >* 重命名时，文件名中不允许有空格。
 
 
@@ -413,7 +413,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 ## 时间轴 {#timeline}
 
-通过时间轴，您可以视图选定项目的各种事件，如资产的活动工作流、注释／注释、活动日志和版本。
+通过时间轴，您可以视图选定项目的各种事件，如资产的活动工作流、注释／批注、活动日志和版本。
 
 ![对资产的时间轴条目排序](assets/sort_timeline.gif)*图：对资产的时间轴条目进行排序*
 
@@ -544,7 +544,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 1. 使用右上方的选项下载或打印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager **[!UICONTROL 中打开]** “注释PDF”配置，并修改所需的选项。 例如，要更改批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注的字体颜色的信息，请参阅 [批注](/help/assets/manage-digital-assets.md#annotating)。
 
@@ -558,7 +558,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 以下是创建版本的方案：
 
-* 在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，这样原始图像不会被覆盖。
+* 您可以在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，这样原始图像不会被覆盖。
 * 您可以编辑资产的元数据。
 * 您使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建新版本。
 
@@ -613,7 +613,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 ### 在资产上启动工作流 {#starting-a-workflow-on-an-asset}
 
 1. 导航到您要为其开始工作流的资产所在的位置，然后点按／单击资产以打开资产页面。
-1. 点按／单击GlobalNav图标，然后从菜单 **[!UICONTROL 中选择]** “时间轴”以显示时间轴。
+1. 点按／单击GlobalNav图标，然后从菜单中 **[!UICONTROL 选择]** “时间轴”以显示时间轴。
 
    ![时间线-1](assets/timeline-1.png)
 
