@@ -1,11 +1,11 @@
 ---
-title: 资产中的签入和签出文件
+title: 签入和签出文件 [!DNL Assets]
 description: 了解如何签出资产进行编辑，并在更改完成后将其签回。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 资产中的签入和签出文件 {#check-in-and-check-out-files-in-assets}
 
-通过Adobe Experience Manager(AEM)资产，您可以签出资产进行编辑，并在完成更改后重新签入。 注销资产后，只有您才能编辑、批注、发布、移动或删除资产。 签出资产会锁定资产。 其他用户无法对资产执行任何这些操作，除非您将资产签回AEM资产。 但是，他们仍可以更改锁定资产的元数据。
+Adobe Experience Manager(AEM)资产允许您签出要编辑的资产，并在完成更改后将其签回。 注销资产后，只有您才能编辑、批注、发布、移动或删除资产。 签出资产会锁定资产。 其他用户不能对资产执行任何这些操作，除非您将资产签回AEM Assets。 但是，他们仍可以更改锁定资产的元数据。
 
 要能够签出／登录资产，您需要对资产具有写入权限。
 
@@ -57,13 +57,13 @@ ht-degree: 4%
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   修改后的资产会检入到AEM资产，可供其他用户编辑。
+   修改后的资产将签入AEM Assets，可供其他用户编辑。
 
 ## 强制签入 {#forced-check-in}
 
 管理员可以签入其他用户签出的资产。
 
-1. 以管理员身份登录到AEM资产。
+1. 以管理员身份登录AEM Assets。
 1. 在资产UI中，选择已由其他用户签出的一个或多个资产。
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
