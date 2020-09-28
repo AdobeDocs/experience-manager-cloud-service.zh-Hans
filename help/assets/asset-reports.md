@@ -1,11 +1,11 @@
 ---
-title: 有关数字资产使用情况和共享的报告。
+title: 有关使用和共享的报告
 description: 有关您的资产的 [!DNL Adobe Experience Manager Assets] 报告，有助于您了解数字资产的使用、活动和共享。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab9a3bfa3536e25243e9752f9f034e31a57e136c
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 10%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 [!DNL Adobe Experience Manager] 管理员可以轻松地为您的实施生成和自定义这些报告。 管理员可以按照以下步骤生成报告：
 
-1. 在界 [!DNL Experience Manager] 面中，单击 **[!UICONTROL 工具]** >资 **[!UICONTROL 产]** > **[!UICONTROL 报]**&#x200B;告。
+1. 在界 [!DNL Experience Manager] 面中，单击 **[!UICONTROL 工具]** >资 **[!UICONTROL 产]** >报 **[!UICONTROL 告]**。
 
    ![“工具”页面以导航资产报表](assets/navigation.png)
 
