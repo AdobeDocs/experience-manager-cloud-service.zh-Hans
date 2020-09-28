@@ -1,12 +1,12 @@
 ---
-title: 在中管理数字资产的元数据 [!DNL Adobe Experience Manager]。
+title: 管理数字资产的元数据
 description: 了解元数据的类型， [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 以及如何根据资产的元数据自动组织和处理资产。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1931'
 ht-degree: 16%
 
 ---
