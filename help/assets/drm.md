@@ -1,11 +1,11 @@
 ---
-title: Digital Rights Management [!DNL Adobe Experience Manager Assets] 即云服务。
-description: 了解如何在云服务中管理授权资产的资产到期状态 [!DNL Experience Manager] 和信息。
+title: Digital Rights Management [!DNL Assets]
+description: 了解如何在Cloud Service中管理已授权资产的资产到期状态 [!DNL Experience Manager] 和信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1347'
 ht-degree: 7%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 7%
 
 您可以在以下位置视图资产的过期状态：
 
-* **卡视图**: 对于过期的资产，卡上会显示一个标志，指示其已过期。
-* **列表视图**: 对于过期的资产， **[!UICONTROL 状态]** 列显示 **[!UICONTROL 过期横幅]** 。
-* **时间轴**: 您可以视图时间轴中资产的过期状态。 选择资产，然后选择时间轴。
-* **引用边栏**: 您还可以在引用边栏中视图资产的 **[!UICONTROL 过期]** 状态。 它管理资产到期状态以及复合资产与引用的子资产、集合和项目之间的关系。
+* **卡视图**:对于过期的资产，卡上会显示一个标志，指示其已过期。
+* **列表视图**:对于过期的资产， **[!UICONTROL 状态]** 列显示 **[!UICONTROL 过期横幅]** 。
+* **时间轴**:您可以视图时间轴中资产的过期状态。 选择资产，然后选择时间轴。
+* **引用边栏**:您还可以在引用边栏中视图资产的 **[!UICONTROL 过期]** 状态。 它管理资产到期状态以及复合资产与引用的子资产、集合和项目之间的关系。
 
 1. 导航到要视图其引用网页和复合资产的资产。
 1. 选择资产，然后单击 [!DNL Experience Manager] 徽标。
@@ -54,7 +54,7 @@ ht-degree: 7%
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. 打开 [!DNL Experience Manager] Configuration Manager。
-1. 选 **[!UICONTROL 择Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
+1. 选择 **[!UICONTROL Adobe CQDAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
 
 1. 要定期运行该作业，请清除&#x200B;**[!UICONTROL 基于时间的计划程序规则]**&#x200B;字段，并在&#x200B;**[!UICONTROL 周期性计划程序]**&#x200B;字段中修改时间（以秒为单位）。例如，示例表达式“0 0 0 &amp;ast; &amp;ast; ?”会在 00 小时开始作业。
 
@@ -77,7 +77,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
 1. 在用户 [!DNL Assets] 界面中，选择一个资产。
 
-1. 单击 **[!UICONTROL 工具栏]** 中的发布。 如果工具栏上未显示 **发布** ，请单击工 **[!UICONTROL 具栏上的]** 更多 **[!UICONTROL ，然后找到]** 发布选项。
+1. Click **[!UICONTROL Publish]** from the toolbar. 如果工具栏上未显示 **发布** ，请单击工 **[!UICONTROL 具栏上的]** 更多 **[!UICONTROL ，然后找到]** 发布选项。
 
 1. 从菜 **[!UICONTROL 单中选择]** “发布”，然后关闭确认对话框。
 1. 退出选择模式。 资产的发布状态会显示在卡片视图中资产缩略图的底部。 在列表视图中，已发布列显示资产发布的时间。
@@ -104,7 +104,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
 1. 您还可以根据各种搜索彩块化下的状态组合来搜索资产。 例如，您可以通过在搜索彩块化中选择相应的选项，来搜索在审核任务中已批准但尚未过期的已发布资产。
 
-## Adobe Cloud中的数字版权管理 [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Digital Rights Management [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 此功能强制您接受许可协议，然后您才能从下载许可资产 [!DNL Adobe Experience Manager Assets]。
 
@@ -121,7 +121,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 >
 >已弃用 `/etc/dam/drm/licences` 用于在早期版本中存储许可证 [!DNL Experience Manager] 的位置。
 >
->如果您创建或修改许可证页面，或从以前的版本移植 [!DNL Experience Manager] 这些页面，Adobe建议您将它们存储在或 `/apps/settings/dam/drm/licenses` 下面 `/conf/*/settings/dam/drm/licenses`。
+>如果您创建或修改许可证页面，或从以前的版本移 [!DNL Experience Manager] 植这些页面，Adobe建议您将它们存储在或 `/apps/settings/dam/drm/licenses` 下面 `/conf/*/settings/dam/drm/licenses`。
 
 ### 下载受DRM保护的资源 {#downloading-drm-assets}
 
