@@ -4,9 +4,9 @@ user-guide-title: 实施 AEM 云服务
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: fa7d271a047277afe0a4bad709d1223224c92fb8
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '398'
 ht-degree: 66%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 66%
    + [配置 RTE 以创建可访问的站点](/help/implementing/developing/extending/rte-accessible-content.md)
 + 部署到 AEM 云服务 {#deploying}
    + [部署到 AEM 云服务](deploying/overview.md)
+   + [AEM版本更新](deploying/aem-version-updates.md)
    + [为 AEM 云服务配置 OSGi](deploying/configuring-osgi.md)
 + 创作层 {#author-tier}
    + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
