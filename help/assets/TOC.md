@@ -4,15 +4,15 @@ user-guide-title: 资产作为Cloud Service指南
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
+source-git-commit: 0f3f34d8871462bf94f596d04c04c99db6488fa5
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 89%
+source-wordcount: '430'
+ht-degree: 90%
 
 ---
 
 
-# 资产作为Cloud Service指南 {#assets}
+# 资产指南 {#assets}
 
 + [AEM Assets 云服务](/help/assets/home.md)
 + [概述和新增功能](overview.md)
