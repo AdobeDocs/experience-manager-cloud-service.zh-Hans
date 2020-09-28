@@ -2,9 +2,9 @@
 title: AEM版本更新
 description: 'AEM版本更新 '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,12 @@ AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您
 
 AEM版本更新有两种类型：
 
-* **推送更新**
+* **AEM推送更新**
 
    * 可以每天发布。
    * 主要是维护，包括最新的错误修复和安全更新。
 
-   由于更改会定期应用，因此影响会逐渐增加，从而减少对服务的影响。
-
->[!NOTE]
->要进一步了解AEM推送更新，请参阅关于Adobe Experience Manager作 [为Cloud Service连续投放模型的白皮书](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      由于更改会定期应用，因此影响会逐渐增加，从而减少对服务的影响。
 
 * **新增功能更新**
 
