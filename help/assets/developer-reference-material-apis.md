@@ -1,11 +1,11 @@
 ---
-title: 数字资产管理的开发人 [!DNL Adobe Experience Manager] 员参考是Cloud Service。
+title: 开发人员参考 [!DNL Assets]
 description: '[!DNL资产] API和开发人员参考内容可让您管理资产，包括二进制文件、元数据、演绎版、注释 [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1236'
 ht-degree: 1%
 
 ---
