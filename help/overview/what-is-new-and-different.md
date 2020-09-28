@@ -2,9 +2,9 @@
 title: Adobe Experience Manager是Cloud Service
 description: '不同和新—Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 58f9023519a98ae28dc2b0986d6e25e8804e6e72
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1884'
 ht-degree: 10%
 
 ---
@@ -81,17 +81,14 @@ Adobe主动负责将服务的所有操作实例更新到最新版AEM代码库：
    * 可以每天发布。
    * 主要是维护，包括最新的错误修复和安全更新。
 
-   由于更改会定期应用，因此影响会逐渐增加，从而减少对服务的影响。
+      由于更改会定期应用，因此影响会逐渐增加，从而减少对服务的影响。
 
->[!NOTE]
->要进一步了解AEM推送更新，请参阅关于Adobe Experience Manager作 [为Cloud Service连续投放模型的白皮书](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      >[!NOTE]
+      >要进一步了解AEM推送更新，请参阅关于 [Adobe Experience Manager作为Cloud Service连续投放模型的白皮书。](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **新增功能更新**
 
    * 通过可预测的月度计划发布。
-
->[!NOTE]
->有关更多详细信息，请 [参阅部署架构](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) 。
 
 ## Cloud Manager {#cloud-manager}
 
