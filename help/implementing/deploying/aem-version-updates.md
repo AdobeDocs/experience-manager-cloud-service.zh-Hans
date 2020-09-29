@@ -2,9 +2,9 @@
 title: AEM版本更新
 description: 'AEM版本更新 '
 translation-type: tm+mt
-source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
+source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您的项目处于最新的AEM版本。 这意味着所有升级操作都是完全自动化的，因此不需要用户中断任何服务。
+AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您的项目处于最新的AEM版本。 这意味着生产实例和舞台实例将更新为最新的AEM版本，不会中断用户的服务。
 
 >[!NOTE]
 >如果对生产环境的更新失败，Cloud Manager将自动回滚阶段环境。 这会自动完成，以确保更新完成后，阶段和生产环境都使用相同的AEM版本。
