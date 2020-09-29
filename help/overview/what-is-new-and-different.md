@@ -2,9 +2,9 @@
 title: Adobe Experience Manager是Cloud Service
 description: '不同和新—Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
+source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1876'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ AEM 云服务现在具有：
 ![针对不同使用模式的自动缩放](assets/introduction-04.png "针对不同使用模式的自动缩放")
 
 
-## AEM更新 {#upgrades}
+## AEM更新 {#aem-updates}
 
 >[!NOTE]
 >有关更多详细信息，请 [参阅AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
@@ -78,7 +78,7 @@ AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您
 
 AEM版本更新有两种类型：
 
-* **推送更新**
+* **AEM推送更新**
 
    * 可以每天发布。
    * 主要是维护，包括最新的错误修复和安全更新。
