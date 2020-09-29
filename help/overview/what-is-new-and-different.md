@@ -2,7 +2,7 @@
 title: Adobe Experience Manager是Cloud Service
 description: '不同和新—Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 98514867fba8c998cb653abea059e15a99cbd007
+source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 10%
@@ -71,9 +71,7 @@ AEM 云服务现在具有：
 >[!NOTE]
 >有关更多详细信息，请 [参阅AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
 
-AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您的项目处于最新的AEM版本。
-
-这意味着生产实例和舞台实例将更新为最新的AEM版本，不会中断用户的服务。
+AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您的项目处于最新的AEM版本。 这意味着生产实例和舞台实例将更新为最新的AEM版本，不会中断用户的服务。
 
 >[!NOTE]
 > 如果对生产环境的更新失败，Cloud Manager将自动回滚阶段环境。 这会自动完成，以确保更新完成后，阶段和生产环境都使用相同的AEM版本。
