@@ -2,9 +2,9 @@
 title: 部署到 AEM 云服务
 description: '部署到 AEM 云服务 '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3210'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 1%
 
 与AEM内部部署和Managed Services解决方案相比，AEM的代码开发基础与Cloud Service相似。 开发人员编写代码并在本地测试它，然后将它作为Cloud Service环境推送到远程AEM。 Cloud Manager是Managed Services的可选内容投放工具，是必需的。 现在，这是将代码作为Cloud Service环境部署到AEM的唯一机制。
 
-AEM版本的更 [新始终是](/help/implementing/deploying/aem-version-updates.md) 一个单独的部署事件，而不是推 [送自定义代码](#customer-releases)。 以另一种方式查看，应针对生产上的AEM版本测试自定义代码版本，因为它将部署在顶部。 AEM版本更新之后发生的，它将频繁发生并自动应用。 它们旨在向后兼容已部署的客户代码。
-
+AEM版本的更 [新始终是](/help/implementing/deploying/aem-version-updates.md) 一个单独的部署事件，而不是推 [送自定义代码](#customer-releases)。 换种方式来看，自定义代码版本应针对生产上的AEM版本进行测试，因为它将部署在顶部。 AEM版本更新之后发生的，它将频繁发生并自动应用。 它们旨在向后兼容已部署的客户代码。
 
 本文档的其余部分将介绍开发人员如何调整其做法，以便他们与AEM作为Cloud Service的版本更新和客户更新一起工作。
 
@@ -236,19 +235,19 @@ above appears to be internal, to confirm with Brian -->
 
 ## 索引 {#indexes}
 
-新的或修改的索引将导致在新的（绿色）版本开始通信之前执行额外的索引或重新索引步骤。 本文详细介绍了Skyline中的索引 [管理](/help/operations/indexing.md)。 您可以在Cloud Manager构建页面上检查索引编制作业的状态，并在新版本可以接收流量时收到通知。
+新的或修改的索引将导致在新的（绿色）版本开始通信之前执行额外的索引或重新索引步骤。 有关AEM作为Cloud Service中的索引管理的详细信息，请参 [阅本文](/help/operations/indexing.md)。 您可以在Cloud Manager构建页面上检查索引编制作业的状态，并在新版本可以接收流量时收到通知。
 
 >[!NOTE]
 >
 >滚动部署所需的时间会因索引的大小而异，因为生成新索引之前，绿色版本无法接受通信。
 
-目前，Skyline无法使用索引管理工具，如ACS Commons Ensure Oak Index工具。
+目前，AEM作为Cloud Service无法使用索引管理工具，如ACS Commons Ensure Oak Index工具。
 
 ## 复制 {#replication}
 
 发布机制与AEM Replication Java API [向后兼容](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)。
 
-要使用云就绪型AEM快速启动开发和测试复制，需要将经典复制功能与作者／发布设置结合使用。 如果已为云删除AEM作者的UI入口点，则用户将转到 `http://localhost:4502/etc/replication` 进行配置。
+要使用云就绪的AEM快速启动开发和测试复制，需要将经典复制功能与作者／发布设置结合使用。 如果已为云删除AEM作者的UI入口点，则用户将转到 `http://localhost:4502/etc/replication` 进行配置。
 
 ## 滚动部署的向后兼容代码 {#backwards-compatible-code-for-rolling-deployments}
 
