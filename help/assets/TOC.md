@@ -4,9 +4,9 @@ user-guide-title: 资产作为Cloud Service指南
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0f3f34d8871462bf94f596d04c04c99db6488fa5
+source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 90%
    + [如何添加或编辑元数据](meta-edit.md)
    + [审核文件夹资产和收藏集](bulk-approval.md)
    + [使用和配置资产分析](assets-insights.md)
-   + [异步作业](asynchronous-jobs.md)
    + [元数据配置文件](metadata-profiles.md)
    + [元数据架构](metadata-schemas.md)
    + [管理视频资产](manage-video-assets.md)
