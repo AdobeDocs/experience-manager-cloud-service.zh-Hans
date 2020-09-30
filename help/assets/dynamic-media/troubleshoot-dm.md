@@ -2,17 +2,21 @@
 title: Dynamic Media 疑难解答
 description: Dynamic Media 疑难解答.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 1%
+source-wordcount: '995'
+ht-degree: 2%
 
 ---
 
 
 # Dynamic Media 疑难解答 {#troubleshooting-dynamic-media-scene-mode}
 
-以下文档介绍了Dynamic Media的疑难解答。
+以下主题介绍Dynamic Media的疑难解答。
+
+## 新的Dynamic Media配置 {#new-dm-config}
+
+请参 [阅对新的Dynamic Media配置进行疑难解答。](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## 常规（所有资产） {#general-all-assets}
 
@@ -31,15 +35,7 @@ ht-degree: 1%
 
 ### 同步记录 {#synchronization-logging}
 
-同步错误和问题已记录 `error.log` 在(AEM服务器目 `/crx-quickstart/logs/`录)中。 可以使用足够的日志记录来确定大多数问题的根本原因，但是您可以通过Sling Console( `com.adobe.cq.dam.ips` https://localhost:4502/system/console/slinglog)将日志记录增加[到](https://localhost:4502/system/console/slinglog)DEBUG以收集更多信息。
-
-### 移动、复制、删除 {#move-copy-delete}
-
-在执行移动、复制或删除操作之前，请执行以下操作：
-
-* 对于图像和视频，在执行移 `<object_node>/jcr:content/metadata/dam:scene7ID` 动、复制或删除操作之前，请先确认存在一个值。
-* 对于图像预设和查看器预设，在执 `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` 行移动、复制或删除操作之前，请先确认某个值存在。
-* 如果缺少上述元数据值，您需要在移动、复制或删除操作之前重新上传资产。
+同步错误和问题记录在 `error.log` AEM服务器目 `/crx-quickstart/logs/`录中。 可以使用足够的日志记录来确定大多数问题的根本原因，但是您可以通过Sling Console( `com.adobe.cq.dam.ips` https://localhost:4502/system/console/slinglog)将日志记录增加[到](https://localhost:4502/system/console/slinglog)DEBUG以收集更多信息。
 
 ### 版本控制 {#version-control}
 
@@ -77,23 +73,13 @@ ht-degree: 1%
     </ul> </td>
   </tr>
   <tr>
-   <td>在永久加载时，集编辑器中的资产选择器卡住</td>
-   <td><p>6.4中要修复的已知问题</p> </td>
-   <td><p>关闭选择器并重新打开它。</p> </td>
-  </tr>
-  <tr>
-   <td><strong>选择</strong> “选择”按钮在选择资产作为编辑集的一部分后不处于活动状态</td>
-   <td><p> </p> <p>6.4中要修复的已知问题</p> <p> </p> </td>
-   <td><p>首先在资产选择器中单击另一个文件夹，然后返回以选择资产。</p> </td>
-  </tr>
-  <tr>
    <td>在幻灯片之间切换后，旋转热点移动</td>
    <td><p>检查所有幻灯片的大小是否相同。</p> </td>
    <td><p>仅对传送使用大小相同的图像。</p> </td>
   </tr>
   <tr>
    <td>图像与Dynamic Media查看器不预览</td>
-   <td><p>检查资产是否包含 <code>dam:scene7File</code> 在元数据属性(CRXDE Lite)中</p> </td>
+   <td><p>检查资产是否包含 <code>dam:scene7File</code> 在元数据属性(CRXDE Lite)</p> </td>
    <td><p>检查所有资产是否已完成处理。</p> </td>
   </tr>
   <tr>
@@ -130,7 +116,7 @@ ht-degree: 1%
    <td>
     <ul>
      <li>检查文件夹是否分配了视频用户档案（如果不支持文件格式）。 如果不支持，则仅显示图像。</li>
-     <li>视频用户档案必须包含多个编码预设才能生成AVS集(单个编码被视为MP4文件的视频内容； 对于不支持的文件，与未处理文件一样处理)。</li>
+     <li>视频用户档案必须包含多个编码预设才能生成AVS集(单个编码被视为MP4文件的视频内容；对于不支持的文件，与未处理文件一样处理)。</li>
      <li>确认元数据中的视频，检查该视频 <code>dam:scene7FileAvs</code> 是否已 <code>dam:scene7File</code> 完成处理。</li>
     </ul> </td>
    <td>
@@ -151,7 +137,7 @@ ht-degree: 1%
     </ul> </td>
    <td>
     <ol>
-     <li>检查云服务下的Dynamic Media配置是否正确设置。</li>
+     <li>检查Cloud Services下的Dynamic Media配置是否正确设置。</li>
      <li>检查文件夹是否包含视频用户档案。 另外，检查视频用户档案。</li>
     </ol> </td>
   </tr>
@@ -160,7 +146,6 @@ ht-degree: 1%
    <td><p>要确定视频编码是否仍在进行中或是否已进入失败状态：</p>
     <ul>
      <li>检查视频状态 <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>从“工作流”控制台&gt;“实例”、“存 <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> 档”、“失败”选项卡监视视频。</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -194,17 +179,17 @@ ht-degree: 1%
   <tr>
    <td>查看器预设未发布</td>
    <td><p>继续执行示例管理器诊断页面： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>观察计算值。 正确运行时，您应当看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>: 配置Dynamic Media云设置后，查看器资源可能需要大约10分钟才能同步。</p> <p>如果未激活的资产仍保留，请单击“列表所有 <strong>未激活的资产</strong> ”按钮之一以查看详细信息。</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置Dynamic Media云设置后，查看器资源可能需要大约10分钟才能同步。</p> <p>如果未激活的资产仍保留，请单击“列表所有 <strong>未激活的资产</strong> ”按钮之一以查看详细信息。</p> </td>
    <td>
     <ol>
      <li>在管理工具中导航到查看器预设列表: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>选择所有查看器预设，然后单击“ <strong>发布</strong>”。</li>
+     <li>选择所有查看器预设，然后单击 <strong>发布</strong>。</li>
      <li>导航回示例管理器，并观察未激活的资产计数现在为零。</li>
     </ol> </td>
   </tr>
   <tr>
    <td>查看器预设图稿会从资产详细信息中的预览或复制URL/嵌入代码返回404</td>
-   <td><p>在CRXDE Lite中，执行以下操作：</p>
+   <td><p>在CRXDE Lite中，请执行以下操作：</p>
     <ol>
      <li>导航到 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> Dynamic Media sync文件夹中的文件夹(例如 <code>/content/dam/_CSS/_OOTB</code>,),</li>
      <li>查找有问题的资产的元数据节点(例如 <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>)。</li>
@@ -220,19 +205,16 @@ ht-degree: 1%
     </ol> </td>
    <td><p>如果示例资产或查看器预设图稿尚未同步或发布，则重新启动整个复制／同步过程：</p>
     <ol>
-     <li>导航到CRXDE Lite。
-      <ul>
-       <li>删除 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>导航到CRX包管理器： <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>导航至 <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>按顺序选择以下操作：
       <ol>
-       <li>在列表中搜索查看器包(它开始 <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>单击“ <strong>重新安装</strong>”。</li>
+       <li>删除同步文件夹。</li>
+       <li>删除预设文件夹( <code>/conf</code>下)。
+       <li>触发DM设置异步作业。</li>
       </ol> </li>
-     <li>在云服务下，导航到Dynamic Media配置页面，然后打开Dynamic Media - S7配置的配置对话框。
-      <ul>
-       <li>不进行更改，请单击“ <strong>保存</strong>”。 这会再次触发创建和同步示例资产、查看器预设CSS和图稿的逻辑。<br />  </li>
-      </ul> </li>
+     <li>在AEM收件箱中等待同步成功的通知。
+     </li>
     </ol> </td>
   </tr>
  </tbody>
