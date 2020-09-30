@@ -3,7 +3,7 @@ title: 中的辅助功能 [!DNL Experience Manager Assets]。
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
 source-wordcount: '1823'
 ht-degree: 2%
@@ -172,7 +172,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 在屏幕阅读器的浏览模式下，使用键盘的拖动功能在元数据模式编辑器中正确工作。
 * 用户可以使用键盘将焦点移动到文件夹属性权限选项卡的关闭的用户组下的添加用户或用户组字段。
 
-## 搜索数字资产 {#search}
+## 搜索数字资产 {#search-assets}
 
 快速、无缝的资产搜索体验提高了内容速度。 内容速度使用案例是核心功能的一 [!DNL Assets] 部分。 要从搜索栏开始搜索，用户可以使用键盘快捷键或 `/` 与屏 `Tab` 幕阅读器一起使用以快速找到搜索选项。 当焦点在搜索选项搜索选项上时，屏幕阅读器将选 [!UICONTROL 项的名称] 解说为“搜索 ![按钮”](assets/do-not-localize/search_icon.png)。 用户可以 `Return` 按打开Omnisearch框。 屏幕阅读器不仅会讲述在搜索框中键入的关键字，还会讲述由提供的自动完成建议 [!DNL Experience Manager Assets]。 用户可以使用箭头键组合 `Return`，并 `Tab` 访问各种选项以触发搜索。
 
