@@ -2,10 +2,10 @@
 title: 开发AEM Commerce for AEM作为Cloud Service
 description: 开发AEM Commerce for AEM作为Cloud Service
 translation-type: tm+mt
-source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
+source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 10%
+source-wordcount: '962'
+ht-degree: 9%
 
 ---
 
@@ -80,6 +80,34 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
    此变量也必须设置为AEM的Cloud Service环境。
 
 6. 开始AEM作为Cloud ServiceSDK
+
+7. 开始本地GraphQL代理服务器
+
+   要使MagentoGraphQL端点在本地可用于CIF加载项和CIF组件，请使用以下命令。 GraphQL端点随后将在上可用 `http://localhost:3002/graphql`。
+Mac OSX示例：
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
+   ```
+
+   示例Windows:
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
+   ```
+   该参 `--proxyPartial` 数需要接收空字符串。
+
+   可以通过指向GraphQL查询工具测试本地GraphQL代理，并 `http://localhost:3002/graphql` 测试几个查询。
+
+8. 登录AEM SDK并配置CIF以使用本地GraphQL代理服务器
+
+   导航到CIFCloud Service配置(“工具”>“Cloud Services”>“CIF配置”)。 打开项目所使用的配置的属性视图符。
+
+   对于该 `GraphQL Proxy Path` 属性，请使用本地代理服务器端点 `http://localhost:3002/graphql`。 保存配置。
+
+>[!NOTE]
+>
+>请勿将步骤8的配置推入项目回购。 仅本地开发设置需要此配置。 AEM作为Cloud Service环境已在入门过程中使用GraphQL代理设置。
 
 通过OSGI控制台验证设置：`http://localhost:4502/system/console/osgi-installer`。 列表应包括特征模型文件中定义的CIF附加捆绑包、内容包和OSGI配置。
 
