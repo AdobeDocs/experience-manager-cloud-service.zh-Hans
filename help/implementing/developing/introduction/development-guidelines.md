@@ -2,7 +2,7 @@
 title: AEM 云服务开发准则
 description: AEM 云服务开发准则
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -232,9 +232,9 @@ AEM作为Cloud Service，要求对出站邮件进行加密。 以下各节介绍
 
 AEM CS要求通过端口465发送邮件。 如果邮件服务器不支持端口465，则只要启用TLS选项，就可以使用端口587。
 
-> [!NOTE]
+>[!NOTE]
 >
-> 请注意，Adobe不支持通过唯一专用IP地址进行SMTP签名。
+>请注意，Adobe不支持通过唯一专用IP地址进行SMTP签名。
 
 ### 配置 {#email-configuration}
 
