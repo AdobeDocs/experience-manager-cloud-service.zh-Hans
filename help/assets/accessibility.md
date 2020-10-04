@@ -3,9 +3,9 @@ title: 中的辅助功能 [!DNL Experience Manager Assets]
 description: 了解Cloud Service提供的辅 [!DNL Adobe Experience Manager] 助功能如何帮助残障用户。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 使用键从 `Esc` 缩略图视图删除快速操作图标不会从最后一个聚焦的项目删除键盘焦点。
 * 选中某个资产后，按Alt + 4键盘快捷键可打开引用列表。 使 `Tab` 用键，用户可以浏览无零引用条目。
 * 资产时间轴中提供对资产的评论。 可通过键盘访问。
-* 视图设置Experience Manager可通过键盘访问。 用户可以使用箭头键浏览可用的卡大小，然后选择并跳转以浏览和设置现有视图设置视图中的其他元素。
+* 视图设置Experience Manager可通过键盘访问。 用户可以使用箭头键在可用的卡大小之间导航，并选择和跳转以在现有视图设置视图中导航和设置其他元素。
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -175,7 +175,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 ## 搜索数字资产 {#search-assets}
 
-快速、无缝的资产搜索体验提高了内容速度。 内容速度使用案例是核心功能的一 [!DNL Assets] 部分。 要从搜索栏开始搜索，用户可以使用键盘快捷键或 `/` 与屏 `Tab` 幕阅读器一起使用以快速找到搜索选项。 当焦点在搜索选项搜索选项上时，屏幕阅读器将选 [!UICONTROL 项的名称] 解说为“搜索 ![按钮”](assets/do-not-localize/search_icon.png)。 用户可以 `Return` 按打开Omnisearch框。 屏幕阅读器不仅会讲述在搜索框中键入的关键字，还会讲述由提供的自动完成建议 [!DNL Experience Manager Assets]。 用户可以使用箭头键组合 `Return`，并 `Tab` 访问各种选项以触发搜索。
+快速、无缝的资产搜索体验提高了内容速度。 内容速度使用案例是核心功能的一 [!DNL Assets] 部分。 要从搜索栏开始搜索，用户可以使用键盘快捷键或 `/` 与屏 `Tab` 幕阅读器一起使用以快速找到搜索选项。 当焦点在搜索选项搜索选项上时，屏幕阅读器将选 [!UICONTROL 项的名称] 解说为“搜索 ![按钮”](assets/do-not-localize/search_icon.png)。 用户可以 `Return` 按打开Omnisearch框。 屏幕阅读器不仅会讲述在搜索框中键入的关键字，还会讲述由提供的建议 [!DNL Experience Manager Assets]。 用户可以使用箭头键组合 `Return`，并 `Tab` 访问各种选项以触发搜索。
 
 搜索功能可通过以下功能进一步访问：
 
@@ -187,7 +187,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 筛选搜索结果时：
 
-* 搜索结果页面包含丰富的标题，以更好地了解屏幕阅读器用户。
+* 搜索结果页面包含信息性标题，可更好地了解屏幕阅读器用户。
 * 屏幕阅读器将搜索筛选器中的选项作为可扩展的折叠宣布。
 * 具有混合状态按钮的谓词由屏幕阅读器宣布。
 
@@ -203,8 +203,8 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 在链接共享对话框中，在浏览模式下导航时，屏幕阅读器、
 
    * 加载对话框后，不要立即对表信息进行解说。
-   * 可导航到所有列出的自动建议。
-   * 为“添加电子邮件地址”和“搜索”字段解说显示的自动建议。
+   * 可导航到所有列出的建议。
+   * 解说显示的“添加电子邮件地址”和“搜索”字段的建议。
 
 ## 中的辅助功能 [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
