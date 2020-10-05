@@ -1,11 +1,11 @@
 ---
 title: 对 Adobe Experience Manager (AEM) 云服务的显著更改
 description: 对 Adobe Experience Manager (AEM) 云服务的显著更改
-translation-type: ht
-source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: ht
-source-wordcount: '861'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ AEM 云服务中不能使用其他运行模式或自定义运行模式。
 
 ## 资产处理和交付 {#asset-handling}
 
-AEM 云服务中的资产上传、处理和下载操作已进行优化以提高效率，从而实现缩放自如，并加快上传和下载速度。但是，这可能会影响一些现有的自定义代码。
+资产上传、处理和下载已作为一种Cloud Service在Assets中进行了优化，以提高效率，从而实现更好的扩展和更快的上传和下载。 但是，这可能会影响一些现有的自定义代码。
 
 * AEM 早期版本中的默认工作流程 **DAM 资产更新**&#x200B;不再可用。
 * **不进行转换**&#x200B;直接交付二进制文件的网站组件应使用直接下载。
