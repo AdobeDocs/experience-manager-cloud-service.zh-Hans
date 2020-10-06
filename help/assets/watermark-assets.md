@@ -3,9 +3,9 @@ title: 设置资产水印
 description: 将水印添加到您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] 允许您向图像添加数字水印。 [!DNL Assets] 支持将图像作为水印应用于其他图像文件。 水印可帮助用户验证资产的真实性和版权所有权。 此外，水印可用于指示文档的状态，如机密、草稿、有效性等。
 
-要将Experience Manager配置为水印资产，请执行以下步骤：
+要配置为 [!DNL Experience Manager] 水印资产，请执行以下步骤：
 
 1. PNG文件将作为水印应用。 将此文件上传到DAM存储库中。
 
-1. 访问与您的环境关联的Cloud Manager Git存储库。 提交其Cloud Manager `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` Git存储库中名为的文件，其内容如下。 有关详细信息，请 [参阅如何将OSGi配置作为Experience Manager](/help/implementing/deploying/configuring-osgi.md)。
+1. 访问与 [!DNL Cloud Manager] 您的环境关联的Git存储库。 提交其Git存储 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` 库中 [!DNL Cloud Manager] 名为的文件，并包含以下内容。 有关详细信息，请 [参阅如何将OSGi配 [!DNL Experience Manager] 置作为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
 
    ```json
    {
