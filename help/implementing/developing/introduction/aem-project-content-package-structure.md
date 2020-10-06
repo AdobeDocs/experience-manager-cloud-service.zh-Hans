@@ -2,10 +2,10 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: d0e63184d229e52b949d0f24660121e3417912be
+source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 17%
+source-wordcount: '2828'
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 >
 >熟悉基本的 [AEM Project Archetype使用](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [FileVault Content Maven插件，因为本文以这些学习和概念为基础](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) 。
 
-本文概述了Adobe Experience Manager马文项目为与AEMCloud Service兼容而必须做出的更改，即确保它们遵守可变内容和不可变内容的分割；建立必要的依赖关系以创建不冲突的确定性部署；它们被装在一个可展开的结构里。
+本文概述了Adobe Experience ManagerMaven项目需要作为Cloud Service兼容的变化，确保它们遵守可变内容和不可变内容的分割，建立依赖关系以创建不冲突的确定性部署，并将其打包成可部署结构。
 
 AEM应用程序部署必须由单个AEM包组成。 此包应包含子包，子包包含应用程序运行所需的一切，包括代码、配置和任何支持的基线内容。
 
@@ -26,7 +26,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
 >[!TIP]
 >
->本文档中概述的配置由AEM Project [Maven Archetype 21或更高版本提供](https://github.com/adobe/aem-project-archetype/releases)。
+>本文档中概述的配置由AEM Project [Maven Archetype 24或更高版本提供](https://github.com/adobe/aem-project-archetype/releases)。
 
 ## 存储库的可变区与不可变区 {#mutable-vs-immutable}
 
@@ -40,13 +40,13 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 ### Oak索引 {#oak-indexes}
 
-Oak索引(`/oak:index`)由AEM Cloud服务部署流程专门管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新插入后才能切换到新代码映像。
+Oak索引(`/oak:index`)由AEM作为Cloud Service部署流程专门管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新编制索引后才能切换到新代码映像。
 
-因此，尽管Oak索引在运行时是可变的，但必须将其部署为代码，以便在安装任何可变包之前安装它们。 因 `/oak:index` 此，配置是代码包的一部分，而不是下面所述的内 [容包的一部分。](#recommended-package-structure)
+因此，尽管Oak索引在运行时是可变的，但必须将其部署为代码，以便在安装任何可变包之前安装它们。 因 `/oak:index` 此，配置是代码包的一部分，而不是下面所述的内 [容包的一部分](#recommended-package-structure)。
 
 >[!TIP]
 >
->有关在AEM中作为Cloud Service建立索引的更多详细信息，请参 [阅文档内容搜索和索引。](/help/operations/indexing.md)
+>有关在AEM中作为Cloud Service建立索引的更多详细信息，请参 [阅文档内容搜索和索引](/help/operations/indexing.md)。
 
 ## 推荐的包结构 {#recommended-package-structure}
 
@@ -56,63 +56,89 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程专门管理。 这是因�
 
 建议的应用程序部署结构如下：
 
-+ 该 `ui.apps` 包或代码包包含要部署且仅部署到的所有代码 `/apps`。 软件包的常 `ui.apps` 见元素包括但不限于：
-   + OSGi捆绑
-      + `/apps/my-app/install`
-   + [OSGi配置](/help/implementing/deploying/configuring-osgi.md)
-      + `/apps/my-app/config`
-   + [HTL脚本](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
+### 代码包/OSGi捆绑包
+
++ 将生成OSGi bundle Jar文件，并直接嵌入到所有项目中。
+
++ 该 `ui.apps` 包包含要部署且仅部署到的所有代码 `/apps`。 软件包的常 `ui.apps` 见元素包括但不限于：
+   + [组件定义和HTL脚本](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript和CSS（通过客户端库）
       + `/apps/my-app/clientlibs`
-   + [/libs的](/help/implementing/developing/introduction/overlays.md) 叠加
+   + [叠加](/help/implementing/developing/introduction/overlays.md) : `/libs`
       + `/apps/cq`, `/apps/dam/`, 等.
    + 回退上下文感知配置
       + `/apps/settings`
    + ACL（权限）
       + 任何 `rep:policy` 路径下的 `/apps`
-   + 回购初始化OSGi配置指令（及随附的脚本）
-      + [回购初始](#repo-init) (Repo Init)是部署（可变）逻辑上属于AEM应用程序的内容的推荐方式。 回购初始化应用于定义：
+
++ 包 `ui.config` 含所有OSGi [配置](/help/implementing/deploying/configuring-osgi.md):
+   + 包含运行模式特定OSGi配置定义的组织文件夹
+      + `/apps/my-app/osgiconfig`
+   + 包含默认OSGi配置的公用OSGi配置文件夹，这些配置作为Cloud Service部署目标应用于所有目标AEM
+      + `/apps/my-app/osgiconfig/config`
+   + 运行特定于模式的OSGi配置文件夹，其中包含应用于所有目标AEM的默认OSGi配置，作为Cloud Service部署目标
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + 回购初始化OSGi配置脚本
+      + [回购初始](#repo-init) (Repo Init)是部署（可变）逻辑上属于AEM应用程序的内容的推荐方式。 回购初始化OSGi配置应位于上述 `config.<runmode>` 的相应文件夹中，并用于定义：
          + 基线内容结构
-            + `/conf/my-app`
-            + `/content/my-app`
-            + `/content/dam/my-app`
          + 用户
          + 服务用户
          + 组
          + ACL（权限）
-            + 任何 `rep:policy` 路径（可变或不可变）的任意
-+ 该包 `ui.content` 或内容包包含所有内容和配置。 内容包包含包中不包含的 `ui.apps` 所有内容，换言之，不包含在或 `/apps` 中的任 `/oak:index`何 软件包的常 `ui.content` 见元素包括但不限于：
+
+### 内容包
+
++ 该包 `ui.content` 包含所有内容和配置。 内容包包含所有节点定义，这些定义不在 `ui.apps` 或 `ui.config` 包中，换言之，不在或中 `/apps` 的任何 `/oak:index`。 软件包的常 `ui.content` 见元素包括但不限于：
    + 上下文感知配置
       + `/conf`
-   + 必需的、复杂的内容结构(即 在回购初始化中定义的基线内容结构的基础上构建并扩展的内容外部。
+   + 必需的、复杂的内容结构(即 在回购初始化中定义的基线内容结构的基础上构建并扩展的内容外部。)
       + `/content`, `/content/dam`, 等.
    + 受管制的标记分类
       + `/content/cq:tags`
-   + 等传统节点
+   + 旧式等节点（理想情况下，将这些节点迁移到非／等位置）
       + `/etc`
-+ `all` 包是一个“仅”包含 `ui.apps` 和 `ui.content` 包作为嵌入内容的容器包。`all` 包不得具有&#x200B;**任何自己的内容**，而是将所有部署委派到存储库的子包。
+
+### 容器包
+
++ 该 `all` 包是一个容器包，它只包括可部署的对象、OSGI bundle Jar文件 `ui.apps``ui.config` 和作为嵌 `ui.content` 入的包。 The `all` package must not have **any content or code** of its own, but rather delegate all deployment to the repository to its sub-packages or OSGi bundle Jar files.
 
    现在，包是使用Maven FileVault包 [Maven插件的嵌入式配置](#embeddeds)，而不是使用配置 `<subPackages>` 提供的。
 
-   对于复杂的Experience Manager部署，可能需要创建多个项目 `ui.apps` /包， `ui.content` 它们代表AEM中的特定站点或租户。 如果这样做，则确保可变内容和不可变内容之间的拆分得到遵守，并将所需的内容包添加为容器内容包 `all` 中的子包。
+   对于复杂的Experience Manager部署，可能需要创建多 `ui.apps`个 `ui.config` 项目 `ui.content` /包，它们代表AEM中的特定站点或租户。 如果这样做，则确保可变内容和不可变内容之间的拆分得到遵守，并将所需的内容包和OSGi bundle Jar文件作为子包嵌入到容器内容 `all` 包中。
 
    例如，复杂的部署内容包结构可能如下：
 
    + `all` 内容包嵌入以下包，以创建单个部署对象
-      + `ui.apps.common` 部署站点A **和站点** B所需的代码
-      + `ui.apps.site-a` 部署站点A所需的代码
-         + `core.site-a` OSGi bundle Jar嵌入在 `ui.apps.site-a`
-      + `ui.content.site-a` 部署站点A所需的内容和配置
-      + `ui.apps.site-b` 部署站点B所需的代码
-         + `core.site-b` OSGi bundle Jar嵌入在 `ui.apps.site-b`
-      + `ui.content.site-b` 部署站点B所需的内容和配置
+      + `common.ui.apps` 部署站点A **和站点** B所需的代码
+      + `site-a.core` 站点A需要OSGi bundle Jar
+      + `site-a.ui.apps` 部署站点A所需的代码
+      + `site-a.ui.config` 部署站点A所需的OSGi配置
+      + `site-a.ui.content` 部署站点A所需的内容和配置
+      + `site-b.core` 站点B需要的OSGi bundle Jar
+      + `site-b.ui.apps` 部署站点B所需的代码
+      + `site-b.ui.config` 部署站点B所需的OSGi配置
+      + `site-b.ui.content` 部署站点B所需的内容和配置
+
+### 其他应用程序包{#extra-application-packages}
+
+如果AEM部署使用其他AEM项目（它们本身由自己的代码和内容包组成），则其容器包应嵌入项目包 `all` 中。
+
+例如，包含2个供应商AEM应用程序的AEM项目可能如下：
+
++ `all` 内容包嵌入以下包，以创建单个部署对象
+   + `core` AEM应用程序需要的OSGi bundle Jar
+   + `ui.apps` 部署AEM应用程序所需的代码
+   + `ui.config` 部署AEM应用程序所需的OSGi配置
+   + `ui.content` 部署AEM应用程序所需的内容和配置
+   + `vendor-x.all` 部署供应商X应用程序所需的一切（代码和内容）
+   + `vendor-y.all` 部署供应商Y应用程序所需的一切（代码和内容）
 
 ## 包类型 {#package-types}
 
 将用声明的包类型标记包。
 
-+ 容器包不得具有 `packageType` 集。
++ 容器包必须将其 `packageType` 设置为 `container`。
 + 代码（不可变）包必须将其 `packageType` 设置为 `application`。
 + 内容（可变）包必须将其 `packageType` 设置为 `content`。
 
@@ -136,16 +162,17 @@ Oak索引(`/oak:index`)由AEM Cloud服务部署流程专门管理。 这是因�
 
 回购初始化的主要好处是它们具有执行其脚本定义的所有操作的隐式权限，并且在部署生命周期的早期被调用，确保执行时间代码时存在所有必需的JCR结构。
 
-虽然回购初始化脚本本身作为 `ui.apps` 脚本存放在项目中，但它们可以而且应该用于定义以下可变结构：
+虽然回购初始化脚本本身作为 `ui.config` 脚本存放在项目中，但它们可以而且应该用于定义以下可变结构：
 
 + 基线内容结构
-   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
 + 服务用户
 + 用户
 + 组
 + ACL
 
-回购初始化脚本存储 `scripts` 为OSGi工厂 `RepositoryInitializer` 配置的条目，因此，可以通过运行模式隐式定位，从而允许AEM作者和AEM发布服务的回购初始化脚本之间，甚至Env（开发、舞台和产品）之间的差异。
+回购初始化脚本存储 `scripts` 为OSGi工厂 `RepositoryInitializer` 配置的条目，因此可以通过运行模式隐式定位，从而允许AEM作者和AEM发布服务的回购初始化脚本之间，甚至环境（开发、舞台和产品）之间的差异。
+
+回购初始化OSGi配置以OSGi配置 [`.config` 格式编写得最好](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) ，因为它们支持多行，这是使用定义OSGi配置的最佳实践 [`.cfg.json` 的例外](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)。
 
 请注意，在定义“用户”和“组”时，只有组被视为应用程序的一部分，并且应在此处定义其功能的组成部分。 组织用户和组在运行时仍应在AEM中进行定义；例如，如果自定义工作流将工作分配给指定的组，则应在AEM应用程序中通过回购初始化定义该组，但是，如果该组只是组织，如“Wendy&#39;s Team”和“Sean&#39;s Team”，则这些工作流是在运行时在AEM中最佳定义和管理的。
 
@@ -187,7 +214,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 要目标AEM作者、AEM发布，或者同时发布，该包将以下格式嵌入到 `all` 容器包中的一个特殊文件夹位置：
 
-`/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
+`/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
 将此文件夹结构细分：
 
@@ -202,9 +229,11 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
    >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
 
 + 3级文件夹必须是
-   `application` 或 `content`
+   `application`, `content` or `container`
    + 文件 `application` 夹包含代码包
-   + 文件 `content` 夹包含内容包此文件夹名称必须与 [其包含](#package-types) 的包的包类型相对应。
+   + 文件 `content` 夹包含内容包
+   + 该文 `container` 件夹包含 [AEM应用程序可能包](#extra-application-packages) 含的任何其他应用程序包。
+此文件夹名称与 [其包含](#package-types) 的包的包类型相对应。
 + 第 4 级文件夹包含子包，且必须是以下包之一：
    + `install`，以在 AEM 作者&#x200B;**和** AEM 发布上安装
    + `install.author`，以&#x200B;**仅**&#x200B;在 AEM 作者上安装
@@ -238,7 +267,9 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 如果第三方包位于 **Adobe 的公共 Maven 对象存储库**，则 Adobe Cloud Manager 无需进一步配置即可解析对象。
 
-如果第三方包位于&#x200B;**公共的第三方 Maven 对象存储库**，则必须在项目的 `pom.xml` 中注册此存储库，并将其嵌入到[以上所述](#embeddeds)的以下方法中。如果第三方应用程序/连接器同时需要代码和内容包，则必须将每个第三方应用程序/连接器嵌入到容器 (`all`) 包中的正确位置。
+如果第三方包位于&#x200B;**公共的第三方 Maven 对象存储库**，则必须在项目的 `pom.xml` 中注册此存储库，并将其嵌入到[以上所述](#embeddeds)的以下方法中。
+
+第三方应用程序／连接器应使用其 `all` 包作为容器嵌入到项目的容器()`all`包中。
 
 添加Maven依赖项遵循标准Maven惯例，并嵌入第三方对象（代码和内容包） [如上所述](#embedding-3rd-party-packages)。
 
@@ -273,11 +304,11 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 复杂的部署会根据简单情况进行扩展，并设置相应可变内容和不可变代码包之间的相关性。 根据需要，还可以在不可变的代码包之间建立依赖关系。
 
 + `all` 没有依赖关系
-   + `ui.apps.common` 没有依赖关系
-   + `ui.apps.site-a` 取决于 `ui.apps.common`
-   + `ui.content.site-a` 取决于 `ui.apps.site-a`
-   + `ui.apps.site-b` 取决于 `ui.apps.common`
-   + `ui.content.site-b` 取决于 `ui.apps.site-b`
+   + `common.ui.apps.common` 没有依赖关系
+   + `site-a.ui.apps` 取决于 `common.ui.apps`
+   + `site-a.ui.content` 取决于 `site-a.ui.apps`
+   + `site-b.ui.apps` 取决于 `common.ui.apps`
+   + `site-b.ui.content` 取决于 `site-b.ui.apps`
 
 ## 本地开发和部署 {#local-development-and-deployment}
 
@@ -311,7 +342,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
       <extensions>true</extensions>
       <configuration>
         <group>${project.groupId}</group>
-        <name>${my-app.ui.apps}</name>
+        <name>my-app.ui.apps</name>
         <packageType>application</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
@@ -338,7 +369,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
       <extensions>true</extensions>
       <configuration>
         <group>${project.groupId}</group>
-        <name>${my-app.ui.content}</name>
+        <name>my-app.ui.content</name>
         <packageType>content</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
@@ -373,9 +404,9 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 
 ### 回购初始化{#snippet-repo-init}
 
-包含回购初始化脚本的回购初始化脚本在OSGi工厂配 `RepositoryInitializer` 置中通过属性进行 `scripts` 定义。 请注意，由于这些脚本是在OSGi配置中定义的，因此运行模式可以使用通常的文件夹语义轻松 `../config.<runmode>` 地确定其范围。
+包含回购初始化脚本的回购初始化脚本在OSGi工厂配 `RepositoryInitializer` 置中通过属性进行 `scripts` 定义。 请注意，由于这些脚本是在OSGi配置中定义的，因此可以使用通常的文件夹语义通过运行模式轻松 `../config.<runmode>` 地确定范围。
 
-请注意，由于脚本通常是多行声明，因此在文件中定义脚本比 `.config` 基于XML的格式更容 `sling:OsgiConfig` 易。
+请注意，由于脚本通常是多行声明，因此在文件中定义脚本比 `.config` 基于JSON的格式更容 `.cfg.json` 易。
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -421,7 +452,7 @@ OSGi `scripts` 属性包含由Apache Sling的Repo [Init语言定义的指令](ht
 
 ### 在容器包中嵌入子包 {#xml-embeddeds}
 
-在中， `all/pom.xml`将以下指令 `<embeddeds>` 添加到插件 `filevault-package-maven-plugin` 声明中。 请记 **住** ，不 `<subPackages>` 要使用配置，因为这将包括子包 `/etc/packages` 而不是 `/apps/my-app-packages/<application|content>/install(.author|.publish)?`。
+在中， `all/pom.xml`将以下指令 `<embeddeds>` 添加到插件 `filevault-package-maven-plugin` 声明中。 请记 **住** ，不 `<subPackages>` 要使用配置，因为这将包括子包 `/etc/packages` 而不是 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`。
 
 ```xml
 ...
@@ -436,10 +467,26 @@ OSGi `scripts` 属性包含由Apache Sling的Repo [Init语言定义的指令](ht
           <!-- Include the application's ui.apps and ui.content packages -->
           <!-- Ensure the artifactIds are correct -->
 
+          <!-- OSGi Bundle Jar file that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.core</artifactId>
+              <type>jar</type>
+              <target>/apps/my-app-packages/application/install</target>
+          </embedded>
+
           <!-- Code package that deploys to BOTH AEM Author and AEM Publish -->
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps</artifactId>
+              <type>zip</type>
+              <target>/apps/my-app-packages/application/install</target>
+          </embedded>
+
+           <!-- OSGi configuration code package that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.config</artifactId>
               <type>zip</type>
               <target>/apps/my-app-packages/application/install</target>
           </embedded>
@@ -468,21 +515,12 @@ OSGi `scripts` 属性包含由Apache Sling的Repo [Init语言定义的指令](ht
               <target>/apps/my-app-packages/content/install.publish</target>
           </embedded>
 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
+          <!-- Include any other extra packages  -->
           <embedded>
-              <groupId>com.adobe.cq</groupId>
-              <!-- Not to be confused; WCM Core Components' Code package's artifact is named `.content` -->
-              <artifactId>core.wcm.components.content</artifactId>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
               <type>zip</type>
-              <target>/apps/vendor-packages/application/install</target>
-          </embedded>
-
-          <embedded>
-              <groupId>com.adobe.cq</groupId>
-              <!-- Not to be confused; WCM Core Components' Content package's artifact is named `.conf` -->
-              <artifactId>core.wcm.components.conf</artifactId>
-              <type>zip</type>
-              <target>/apps/vendor-packages/content/install</target>
+              <target>/apps/vendor-packages/container/install</target>
           </embedded>
       <embeddeds>
   </configuration>
