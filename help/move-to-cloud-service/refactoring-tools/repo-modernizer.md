@@ -2,7 +2,7 @@
 title: 存储库Modernizer
 description: 存储库Modernizer
 translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 4%
@@ -40,4 +40,5 @@ Adobe Experience Manager作为Cloud Service，为您的AEM项目带来许多新�
    请参阅 **[Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** ，了解如何使用此工具。
 
    >[!NOTE]
+   >
    >存储库现代化器是使用NodeJS开发的。 建议安装NodeJS 10.0+。
