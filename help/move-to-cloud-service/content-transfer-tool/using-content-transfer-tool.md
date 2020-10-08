@@ -2,7 +2,7 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ ht-degree: 79%
 1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补提取的迁移集。单击&#x200B;**提取**&#x200B;以开始增补提取。此时将显示&#x200B;**迁移集提取**&#x200B;对话框。
 
    >[!IMPORTANT]
-   >您应该禁用&#x200B;**在提取期间覆盖暂存容器**选项。
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >您应该禁用&#x200B;**在提取期间覆盖暂存容器**&#x200B;选项。
+   >
+   >![图像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### 内容传输中的摄取流程{#ingestion-process}
 
@@ -151,17 +153,16 @@ ht-degree: 79%
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. 完成摄取后，PUBLISH INGESTION字段中的 **状态将更** 新为 **FINISHED**。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### 增补摄取 {#top-up-ingestion-process}
 
 内容传输工具具备支持差异内容&#x200B;*增补*&#x200B;的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
 
 >[!NOTE]
+>
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
 
 完成摄取流程后，可以使用增补摄取方法传输增量内容。应遵循以下步骤：
@@ -169,8 +170,10 @@ ht-degree: 79%
 1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补摄取的迁移集。单击&#x200B;**摄取**&#x200B;以开始增补提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
 
    >[!IMPORTANT]
+   >
    >您应禁用“在摄 **取之前擦除云实例上的现有内容** ”选项，以防止从以前的摄取活动中删除现有内容。
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![图像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### 查看迁移集的日志 {#viewing-logs-migration-set}
 
