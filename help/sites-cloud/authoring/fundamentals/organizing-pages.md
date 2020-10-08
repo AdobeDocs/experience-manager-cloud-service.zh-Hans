@@ -2,7 +2,7 @@
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -366,7 +366,6 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 >[!NOTE]
 >
 >页面只能移动到允许使用该页面所基于的模板的位置。See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
--->
 
 #### 异步操作 {#asynchronous-actions}
 
