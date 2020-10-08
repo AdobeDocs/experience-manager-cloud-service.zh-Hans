@@ -1,20 +1,20 @@
 ---
 title: 关于Dynamic Media图像用户档案和视频用户档案
-description: 图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用于Dynamic Media图像资产的图像用户档案，以正确裁剪图像资产。
+description: 图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用到Dynamic Media图像资产的图像用户档案，以正确裁剪这些资产。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 3%
 
 ---
 
 
 # 关于Dynamic Media图像用户档案和视频用户档案{#about-dm-image-video-profiles}
 
-图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用于Dynamic Media图像资产的图像用户档案，以正确裁剪图像资产。
+图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用到Dynamic Media图像资产的图像用户档案，以正确裁剪这些资产。
 
-在Dynamic Media中，您可以创建两种类型的用户档案，这些在以下链接中有详细介绍：
+在Dynamic Media中，您可以创建两种类型的用户档案，这些类型在以下链接中有详细介绍：
 
 * [Dynamic Media图像用户档案](/help/assets/dynamic-media/image-profiles.md)
 * [Dynamic Media视频用户档案](/help/assets/dynamic-media/video-profiles.md)
@@ -37,18 +37,19 @@ See also [Best Practices for Organizing your Digital Assets for using Image Prof
 
 您可以重新处理已有Dynamic Media图像用户档案或稍后更改的Dynamic Media视频用户档案的文件夹中的资产。
 
-例如，假定您创建了Dynamic Media图像用户档案并将其分配给文件夹。 您上传到该文件夹的任何图像资产都会自动将图像用户档案应用到资产。 但是，稍后您决定向图像用户档案添加新的智能裁剪比率。 现在，您只需运行Scene7，而不是再次选择资产并将其重新上传到 *文件夹： 重新处理资产* 工作流。
+例如，假定您创建了Dynamic Media图像用户档案并将其分配给文件夹。 您上传到该文件夹的任何图像资产都会自动将图像用户档案应用到资产。 但是，稍后您决定向图像用户档案添加新的智能裁剪比率。 现在，您只需运行 *Scene7:重新处理资产* 工作流。
 
 您可以对首次处理失败的资产运行重新处理工作流。 因此，即使您尚未编辑图像用户档案或视频用户档案，或者您已经应用了图像用户档案或视频用户档案，您仍然可以随时对资产文件夹运行重新处理工作流。
 
-您可以选择调整重新处理工作流的批大小，默认值为50个资产，最多为1000个资产。 运行Scene7 _时： 在文件夹_ 上重新处理资产工作流时，资产会分批进行分组，然后发送到Dynamic Media服务器进行处理。 处理后，整个批集中每个资产的元数据都将在AEM上更新。 如果批量很大，您可能会遇到处理延迟。 或者，如果批量太小，可能导致到Dynamic Media服务器的往返次数过多。
+您可以选择调整重新处理工作流的批大小，默认值为50个资产，最多为1000个资产。 当你管理 _Scene7:在文件夹_ 上重新处理资产工作流时，资产会分批分组在一起，然后发送到Dynamic Media服务器进行处理。 处理后，整个批集中每个资产的元数据会在AEM上更新。 如果批量很大，您可能会遇到处理延迟。 或者，如果批量太小，可能会导致往返到Dynamic Media服务器的次数过多。
 
 请参 [阅调整重新处理工作流的批大小](#adjusting-load)。
 
 >[!NOTE]
 >
->如果要将资产从Dynamic Media经典批量迁移到AEM，则必须在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
-必须在Dynamic Media服务器上禁用迁移发布代理，以便重新处理工作流按预期工作。
+>如果要将资产从Dynamic Media Classic批量迁移到AEM，则必须在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
+>
+>迁移发布代理必须在Dynamic Media服务器上禁用，这样重新处理工作流就可以按预期工作。
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -57,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **要重新处理文件夹中的Dynamic Media资产，请执行以下操作**:
-1. 在AEM中，从“资产”页面导航到一个Dynamic Media资产文件夹，该文件夹中分配了图像用户档案或视频用户档案，并且您要为其应用 **Scene7: 重新处理资产** 工作流，
+1. 在AEM中，从“资产”页面，导航至分配了图像用户档案或视频用户档案且要应用Scene7的Dynamic Media资产文 **件夹：重新处理资产** 工作流，
 
    如果文件夹已经分配了图像用户档案或视频用户档案，则卡视图中的文件夹名称正下方会显示用户档案的名称。
 
@@ -73,33 +74,33 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![重新处理资产工作流1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. 单击 **[!UICONTROL 开始工作流]**。
-1. 从“ **[!UICONTROL 开始工作流]** ”下拉列表中，选 **[!UICONTROL 择Scene7: 重新处理资产]**。
+1. 从“开始 **[!UICONTROL 工作流]** ”下拉列表中，选择 **[!UICONTROL “Scene7”:重新处理资产]**。
 1. （可选）在输 **入工作流标题文本** 字段中，输入工作流的名称。 如有必要，您可以使用该名称引用工作流实例。
 
    ![重新处理资产2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
 1. 单击 **[!UICONTROL 开始]**，然后单 **[!UICONTROL 击确认]**。
 
-   要监视工作流或检查其进度，请在AEM主控制台页面中，单击工具> **[!UICONTROL 工作流]**。 在“工作流实例”页面上，选择一个工作流。 在菜单栏上，单击“打 **[!UICONTROL 开历史记录]**”。 您还可以从同一“工作流实例”页面终止、暂停或重命名选定的工作流。
+   要监视工作流或检查其进度，请从AEM主控制台页面，单击“工具”>“ **[!UICONTROL 工作流”]**。 在“工作流实例”页面上，选择一个工作流。 在菜单栏上，单击“打 **[!UICONTROL 开历史记录]**”。 您还可以从同一“工作流实例”页面终止、暂停或重命名选定的工作流。
 
 ### 调整重新处理工作流的批大小 {#adjusting-load}
 
-（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受平均资产大小和运行重新处理的资产的MIME类型的约束。 值越高，意味着您在一个重新处理作业中将拥有许多文件。 因此，处理横幅在AEM资产上停留的时间会更长。 但是，如果平均文件大小为1 MB或更小，Adobe建议您将该值增加到几百，但不要超过1000。 如果文件的平均大小是大到数百兆字节，Adobe建议您将批处理大小减小到10。
+（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受平均资产大小和运行重新处理的资产的MIME类型的约束。 值越高，意味着您在一个重新处理作业中将拥有许多文件。 因此，处理横幅在AEM资产上停留的时间更长。 但是，如果平均文件大小为小-1 MB或小Adobe，则建议将该值增加到几百，但不要超过1000。 如果文件的平均大小为数百MB，则Adobe建议您将批处理大小减小到10。
 
 **（可选）要调整重新处理工作流的批大小**
 
 1. 在 Experience Manager 中，点按 **[!UICONTROL Adobe Experience Manager]**，以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]**（锤子）图标 > **[!UICONTROL 工作流 > 模型]**。
-1. 在“工作流模型”页面的卡片视图或列表视图中，选 **[!UICONTROL 择Scene7: 重新处理资产]**。
+1. 在“工作流模型”页面的卡片视图或列表视图中，选择 **[!UICONTROL Scene7:重新处理资产]**。
 
-   ![“工作流模型”页（带有Scene7）: 在卡视图中重新处理选定的资产工作流](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![工作流模型页面，带有Scene7:在卡视图中重新处理选定的资产工作流](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. 在工具栏上，单击“编 **[!UICONTROL 辑”]**。 新的浏览器选项卡会打开Scene7: 重新处理资产工作流模型页面。
-1. 在Scene7上： 重新处理资产工作流页面，在右上角附近，点 **[!UICONTROL 按编辑]** ，以“解锁”工作流。
-1. 在工作流中，选择Scene7批量上传组件以打开工具栏，然后点按工 **[!UICONTROL 具栏]** 上的配置。
+1. 在工具栏上，单击“编 **[!UICONTROL 辑”]**。 新的浏览器选项卡打开Scene7:重新处理资产工作流模型页面。
+1. Scene7:重新处理资产工作流页面，在右上角附近，点 **[!UICONTROL 按编辑]** ，以“解锁”工作流。
+1. 在工作流中，选择Scene7批上传组件以打开工具栏，然后点按工 **[!UICONTROL 具栏]** 上的配置。
 
-   ![Scene7批量上传组件](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Scene7批上传组件](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
-1. 在“批 **[!UICONTROL 量上传到Scene7 —— 步骤属性]** ”对话框中，设置以下内容：
+1. 在“批 **[!UICONTROL 量上传到Scene7-步骤属性]** ”对话框中，设置以下内容：
    * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
    * 如果处 **[!UICONTROL 理程序将进]** 入下一步，请选择“处理程序前进”。
    * 在超时 **[!UICONTROL 字段中]** ，输入外部进程超时（秒）。
@@ -109,13 +110,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![属性对话框](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. 在“批量上传到Scene7 —— 步 **[!UICONTROL 骤属性”对话框的右上角]** ，点按 **[!UICONTROL 完成]**。
+1. 在“批量上传到Scene7-步 **[!UICONTROL 骤属性”对话框的右上角]** ，点按 **[!UICONTROL 完成]**。
 
-1. 在Scene7的右上角： 重新处理资产工作流模型页，点按 **[!UICONTROL 同步]**。 当您看到已 **[!UICONTROL 同步]**，工作流运行时模型将成功同步并准备好重新处理文件夹中的资产。
+1. 在Scene7的右上角：重新处理资产工作流模型页，点按 **[!UICONTROL 同步]**。 当您看到已 **[!UICONTROL 同步]**，工作流运行时模型将成功同步并准备好重新处理文件夹中的资产。
 
    ![同步工作流模型](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. 关闭显示Scene7的浏览器选项卡： 重新处理资产工作流模型。
+1. 关闭显示Scene7的浏览器选项卡：重新处理资产工作流模型。
 
 <!-- MAY BE NEEDED IN THE FUTURE
 
