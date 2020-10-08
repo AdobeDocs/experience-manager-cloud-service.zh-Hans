@@ -2,7 +2,7 @@
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 21%
@@ -212,10 +212,10 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
    * 要删除图像，请选择图像，然后点按工 **[!UICONTROL 具栏上的]** “删除幻灯片”。
 
    * 要应用预设，请点按页面右上角附近的预设下拉列表，然后选择要一次应用到该预设集的预设。
-   要删除幻灯片，请点按或单击幻灯片，然后点按或单击工 **[!UICONTROL 具栏中的]** “删除幻灯片”。 要移动幻灯片，请点按重排器图标，按住并移至所需位置。
+   要删除幻灯片，请点按或单击幻灯片，然后点按或单 **[!UICONTROL 击工具栏中]** 的删除幻灯片。 要移动幻灯片，请点按重排器图标，按住并移至所需位置。
 
 1. 在幻灯片中添加图像后，您可以向图像添加热点和／或图像映射。 请参 [阅添加热点或图像地图](#adding-hotspots-or-image-maps-to-an-image-banner)。
-1. 通过点按或单击“行为和外观”选项卡，并调整传送横幅的外观或特定组件的行为，可以更改传送集的可视设计和行为。 有关 [如何使用查看器编辑器](/help/assets/dynamic-media/viewer-presets.md) ，请参阅管理查看器预设。
+1. 通过点按或单击“行为和外观”选项卡，并调整传送横幅的外观或特定组件的行为，可以更改传送集的可视设计和行为。 有关 [如何使用查看器编辑](/help/assets/dynamic-media/viewer-presets.md) 器的更多信息，请参阅管理查看器预设。
 
    >[!NOTE]
    >
@@ -242,7 +242,8 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 >[!NOTE]
 >
 >请注意，在体验片段中嵌入查看器时，轮盘横幅中不支持社交媒体共享工具。
-要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
+>
+>要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
 
 在向图像添加热点或图像映射时，切记保存您的工作。 在当前创建／编辑会话中，页面右上角附近支持撤消和重做选项。
 
@@ -285,13 +286,14 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
       * 如果你不是AEM Sites <!-- or Ecommerce customer -->
 
          * 请参 [阅识别热点](#identifying-hotspot-and-image-map-variables) 变量，就像您想要定义这些变量一样。
-         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），即您优惠的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充快速视图模板的变量部分，以便系统能够将点按的热点与特定SKU的快速视图相关联。
+         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），即您优惠的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充快速视图模板的变量部分，以便系统能够将点按的热点与特定SKU的快速视图关联。
          * (Optional) If there are other variables within the quick view that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an additional variable. 例如，类别=Mens是添加的变量。
 
          * 有关更 [多信息，请参](/help/assets/dynamic-media/working-with-selectors.md) 阅使用选择器。
    * 点按&#x200B;**[!UICONTROL 超链接]**。
 
       * 如果您是AEM Sites客户，请点按站点选择器图标（文件夹）以导航到URL。
+
          >[!NOTE]
          如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
 
@@ -310,7 +312,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 
          >[!NOTE]
          请注意，在体验片段中嵌入查看器时，轮盘横幅中不支持社交媒体共享工具。
-要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
+         要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    您还可以预览传送横幅的外观。 请参 [阅（可选）预览传送横幅](#optional-previewing-carousel-banners)。
