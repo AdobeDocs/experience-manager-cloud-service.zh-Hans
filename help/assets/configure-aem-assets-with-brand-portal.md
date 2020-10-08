@@ -3,7 +3,7 @@ title: 将AEM Assets配置为品牌门户Cloud Service
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 15%
@@ -30,7 +30,6 @@ AEM Assets作为Cloud Service，通过Adobe开发者控制台配置了品牌门�
 >[!NOTE]
 >
 >作为Cloud Service实例的AEM Assets仅应配置一个Brand Portal租户。
-
 
 ## 前提条件 {#prerequisites}
 
@@ -64,16 +63,10 @@ IMS 配置包括两个步骤：
 公钥（证书）在Adobe开发者控制台上验证您的用户档案。
 
 1. 登录 AEM 资产。
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. 在“AdobeIMS配置”页中，单击 **[!UICONTROL 创建]**。 It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
-
 1. 在“ **[!UICONTROL 云解决方案]** ”下拉 **[!UICONTROL 列表中选]** 择AdobeBrand Portal。
-
 1. 选中“ **[!UICONTROL 创建新证书]** ”复选框，并指 **定公钥的** 别名。 别名用作公钥的名称。
-
 1. 单击&#x200B;**[!UICONTROL 创建证书]**。Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![创建证书](assets/ims-config2.png)
@@ -218,8 +211,6 @@ IMS 配置包括两个步骤：
 >
 >确保IMS配置通过运行状况检查。 如果配置未通过运行状况检查，则无效。 您必须删除它并创建新的有效配置。
 
-
-
 ### 配置云服务 {#configure-the-cloud-service}
 
 请执行以下步骤来配置Brand Portal云服务：
@@ -281,19 +272,15 @@ IMS 配置包括两个步骤：
    >
    >请避免禁用分发代理，因为这可能导致资产分发（在队列中运行）失败。
 
-
 您现在可以：
 
 * [将资产从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md)
 * [将文件夹从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [将收藏集从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [将预设、架构和 Facet 发布到 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [将标记发布到 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## 分发日志 {#distribution-logs}
 
@@ -302,7 +289,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hans/exp
 例如，我们已将资产从AEM Assets发布到Brand Portal以验证配置。
 
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
-
 1. 单击 **[!UICONTROL “日志]** ”以视图处理日志和错误日志。
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hans/exp
 发布资产时，会生成以下请求和响应日志：
 
 **分发代理请求**：
+
 * DSTRQ2（请求 2）：触发资产发布请求。
 * DSTRQ3（请求3）:系统会触发另一个请求，以发布AEM Assets文件夹（该资产存在），并在Brand Portal中复制该文件夹。
 
 **分发代理响应**：
+
 * queue-bpdistributionagent0(DSTRQ2)：将资产发布到 Brand Portal。
 * queue-bpdistributionagent0(DSTRQ3):系统将复制Brand Portal中的AEM Assets文件夹（包含资产）。
 
@@ -327,8 +315,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hans/exp
 >[!NOTE]
 >
 >如果父级文件夹在Brand Portal中不存在或在AEM Assets修改过，则会生成其他请求。
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
