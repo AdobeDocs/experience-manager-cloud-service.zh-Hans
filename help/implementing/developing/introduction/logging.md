@@ -2,9 +2,9 @@
 title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2219'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ AEM作为Cloud Service，是客户包含自定义代码的平台，可为客户�
 AEM日志记录和日志级别在配置文件中进行管理，这些配置文件作为AEM项目的一部分存储在Git中，并通过云管理器部署为AEM项目的一部分。 以Cloud Service身份登录AEM可以分为两个逻辑集：
 
 * AEM日志记录，在AEM应用程序级别执行日志记录
-* Apache HTTPD Web Server/Dispatcher记录，执行Web服务器的记录并在发布层Dispatcher。
+* Apache HTTPD Web Server/Dispatcher日志记录，它在发布层执行Web服务器和Dispatcher的日志记录。
 
 ## AEM日志记录 {#aem-loggin}
 
@@ -300,7 +300,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>用户代理</td>
-<td>“Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>“Mozilla/5.0(Macintosh;Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
@@ -309,21 +309,21 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 在AEM中，HTTP访问日志不能配置为Cloud Service。
 
-## Apache Web Server和Dispatcher记录 {#apache-web-server-and-dispatcher-logging}
+## Apache Web Server和调度程序日志记录 {#apache-web-server-and-dispatcher-logging}
 
 AEM as aCloud Service在发布中为Apache Web Server和调度程序层提供三个日志：
 
 * Apache HTTPD Web Server访问日志
 * Apache HTTPD Web Server错误日志
-* Dispatcher日志
+* 调度程序日志
 
 请注意，这些日志仅对发布层可用。
 
-此日志集提供对AEM的HTTP请求的洞察，在这些请求到达AEM应用程序之前，将其作为Cloud Service发布层。 这很重要，因为对发布层服务器的大多数HTTP请求都由Apache HTTPD Web Server和AEMDispatcher缓存的内容提供，并且永远不能到达AEM应用程序本身。 因此，AEM Java、请求或访问日志中没有这些请求的日志语句。
+此日志集提供对AEM的HTTP请求的洞察，在这些请求到达AEM应用程序之前，将其作为Cloud Service发布层。 理想情况下，大多数发布层服务器的HTTP请求都由Apache HTTPD Web Server和AEM Dispatcher缓存的内容提供，并且永远无法到达AEM应用程序本身，这一点很重要。 因此，AEM Java、请求或访问日志中没有这些请求的日志语句。
 
 ### Apache HTTPD Web Server访问日志 {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server访问日志为到达发布层的Web服务器/Dispatcher的每个HTTP请求提供语句。 请注意，从上游CDN提供的请求不会反映在这些日志中。
+Apache HTTP Web Server访问日志为到达发布层的Web服务器／调度程序的每个HTTP请求提供语句。 请注意，从上游CDN提供的请求不会反映在这些日志中。
 
 请参阅官方apache文档中的错误日志 [格式的相关信息](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
 
@@ -381,7 +381,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>用户代理</td>
-<td>“Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>“Mozilla/5.0(Macintosh;Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
@@ -392,7 +392,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ## Apache HTTPD Web Server错误日志 {#apache-httpd-web-server-error-log}
 
-Apache HTTP Web Server错误日志为发布层的Web服务器/Dispatcher中的每个错误提供语句。
+Apache HTTP Web Server错误日志为发布层的Web服务器／调度程序中的每个错误提供语句。
 
 请参阅官方apache文档中的错误日志 [格式的相关信息](https://httpd.apache.org/docs/2.4/logs.html#errorlog)。
 
@@ -426,7 +426,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tr>
 <tr>
 <td>消息</td>
-<td>AH00094: 命令行： 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+<td>AH00094:命令行：'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
 </tr>
 </tbody>
 </table>
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Dispatcher日志 {#dispatcher-log}
+## 调度程序日志 {#dispatcher-log}
 
 **示例**
 
@@ -487,7 +487,7 @@ Define REWRITE_LOG_LEVEL Debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>Dispatcher响应状态代码</td>
+<td>调度程序响应状态代码</td>
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
@@ -509,13 +509,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### 配置Dispatcher错误日志 {#configuring-the-dispatcher-error-log}
+### 配置调度程序错误日志 {#configuring-the-dispatcher-error-log}
 
 调度程序日志级别由文件中的变量DISP_LOG_LEVEL定义 `conf.d/variables/global.var`。
 
 它可以设置为“错误”、“警告”、“信息”、“调试”和“跟踪1”，默认值为“警告”。
 
-虽然Dispatcher日志记录支持其他几个级别的日志记录粒度，但AEM作为Cloud Service建议使用下面描述的级别。
+虽然调度程序日志记录支持其他几个级别的日志记录粒度，但AEM作为Cloud Service建议使用下面描述的级别。
 
 要设置每个环境的日志级别，请在文件中使用相应的条 `global.var` 件分支，如下所述：
 
@@ -550,7 +550,7 @@ AEM日志位于文件夹 `crx-quickstart/logs`中，可在该文件夹中查看�
 * AEM HTTP请求日志： `request.log`
 * AEM HTTP访问日志： `access.log`
 
-Apache层日志（包括调度程序）位于保存Dispatcher的Docker容器中。 有关如 [何Dispatcher](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) ，请参阅开始文档。
+Apache层日志（包括调度程序）位于保存调度程序的Docker容器中。 有关如 [何开始](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher的信息，请参阅Dispatcher文档。
 
 要检索日志，请执行以下操作：
 
@@ -558,10 +558,10 @@ Apache层日志（包括调度程序）位于保存Dispatcher的Docker容器中�
 1. 要登录容器，请键入“`docker exec -it <container> /bin/sh`”，其 `<container>` 中是上一步的调度程序容器ID
 1. 导航到下面的缓存根 `/mnt/var/www/html`
 1. 日志在 `/etc/httpd/logs`
-1. Inspect: 可以在文件夹XYZ下访问这些日志，在该文件夹中可以查看以下日志：
+1. Inspect:可以在文件夹XYZ下访问这些日志，在该文件夹中可以查看以下日志：
    * Apache HTTPD Web服务器访问日志- `httpd_access.log`
    * Apache HTTPD Web服务器错误日志- `httpd_error.log`
-   * Dispatcher日志- `dispatcher.log`
+   * 调度程序日志- `dispatcher.log`
 
 日志也直接打印到终端输出。 大多数情况下，这些日志应为DEBUG，这可以通过在运行Docker时以参数的形式传入调试级别来完成。 例如：
 
@@ -582,13 +582,13 @@ Apache层日志（包括调度程序）位于保存Dispatcher的Docker容器中�
 
 拥有Splunk帐户的客户可以通过客户支持票证请求将其AEMCloud Service日志转发到相应的索引。 日志记录数据等同于Cloud Manager日志下载中可用的数据，但客户可能会发现利用Splunk产品中提供的查询功能非常方便。
 
-与发送到Splunk的日志关联的网络带宽被视为客户的网络I/O使用的一部分。
+与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
 
 ### 启用跳转转发 {#enabling-splunk-forwarding}
 
 在支持请求中，客户应指明：
 
-* 宿主斯普隆克
+* Splunk HEC端点地址
 * Splunk指数
 * 斯普隆克港
 * Splunk HEC代号。 请参 [阅本页](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) ，了解详细信息。
@@ -603,24 +603,24 @@ Apache层日志（包括调度程序）位于保存Dispatcher的Docker容器中�
 
 项目123，生产环境
 
-* Splunk主机： `splunk-hec-ext.acme.com`
-* Splunk指数： acme_123prod（客户可以选择其希望的任何命名规范）
-* Splunk端口： 443
-* Splunk HEC代号： ABC123
+* Splunk HEC端点地址： `splunk-hec-ext.acme.com`
+* Splunk指数：acme_123prod（客户可以选择其希望的任何命名规范）
+* Splunk端口：443
+* Splunk HEC代号：ABC123
 
 项目123，舞台环境
 
-* Splunk主机： `splunk-hec-ext.acme.com`
-* Splunk指数： acme_123stage
-* Splunk端口： 443
-* Splunk HEC代号： ABC123
+* Splunk HEC端点地址： `splunk-hec-ext.acme.com`
+* Splunk指数：acme_123stage
+* Splunk端口：443
+* Splunk HEC代号：ABC123
 
 项目123，开发人员
 
-* Splunk主机： `splunk-hec-ext.acme.com`
-* Splunk指数： acme_123dev
-* Splunk端口： 443
-* Splunk HEC代号： ABC123
+* Splunk HEC端点地址： `splunk-hec-ext.acme.com`
+* Splunk指数：acme_123dev
+* Splunk端口：443
+* Splunk HEC代号：ABC123
 
 对于每个环境都使用同一个Splunk索引可能已足够，在这种情况下，可以 `aem_env_type` 使用任一字段根据dev、stage和prod值进行区分。 如果有多个开发环境, `aem_env_id` 也可以使用该字段。 如果关联的索引限制对精简的Splunk用户集的访问，某些组织可能会为生产环境的日志选择单独的索引。
 
