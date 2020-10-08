@@ -1,8 +1,8 @@
 ---
-title: 首次登录——云服务
-description: 首次登录——云服务
+title: 首次登录-Cloud Service
+description: 首次登录-Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->云服务中的项目由Experience Manager Cloud的子标 **题来表示** ，而AMS **项目中** 的Experience Manager则会如下所示。
+>项目上的Cloud Service由子标题 **Experience Manager** Cloud **(与AMS项目** 的Experience Manager相反)表示，如下所示。
 
 ![](assets/first_timelogin1.png)
 
@@ -35,25 +35,25 @@ ht-degree: 0%
 
 * **项目已存在于云管理器中**
 
-## 在无现有项目的云服务中添加新项目 {#no-program}
+## 在Cloud Service中添加新项目，而无现有项目 {#no-program}
 
 
 登陆页指示您创建第一个项目，如下图所示。
 ![](assets/first_timelogin0.png)
 
 
-## 使用现有项目在云服务中添加新项目 {#existing-program}
+## 使用现有项目添加新Cloud Service {#existing-program}
 
 
-1. 登录到 **Adobe[!UICONTROL Experience Cloud ]**，您将看到**项目和产品列表&#x200B;**。
+1. 登录到 **Adobe[!UICONTROL Experience Cloud]** ，您将看到 **项目和产品列表**。
 
    ![](assets/first_timelogin1.png)
 
-   云服务中的项目由子标题Experience Manager Cloud **表示** (而AMS的 **Experience Manager** 项目则不是)。
+   项目上的Cloud Service由子标题 **Experience Manager云** (与AMS项目 **的** Experience Manager相反)表示。
 
    >[!NOTE]
    >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
-1. 要了解如何从“项目和产 **品”屏幕添加项目** ，以在云服务中创建新项目，请参 [阅创建项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
+1. 要了解如何从“项目和产品”屏 **幕添加项目** ，以在Cloud Service中创建新项目，请 [参阅创建项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
 
 
