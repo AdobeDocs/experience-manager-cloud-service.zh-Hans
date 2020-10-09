@@ -4,9 +4,9 @@ description: 了解元数据的类型， [!DNL Adobe Experience Manager Assets] 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1932'
 ht-degree: 16%
 
 ---
@@ -213,7 +213,7 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF和PDF/X -Adobe PDF和第三方应用程序。
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` -分页文本的XMP元数据。
 
