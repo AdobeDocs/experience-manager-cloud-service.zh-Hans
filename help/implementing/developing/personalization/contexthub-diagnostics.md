@@ -2,7 +2,7 @@
 title: ContextHub诊断
 description: ContextHub提供诊断页面，您可以在其中看到ContextHub框架的概述
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ContextHub诊断页面提供有关已创建的商店和UI模块、已加载的�
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs部分列表ContextHub已加载的所有客户端库文件夹。 客户端库分为以下几类：
+Clientlibs部分列表ContextHub已加 [载的所有客户](/help/implementing/developing/introduction/clientlibs.md) 端库文件夹。 客户端库分为以下几类：
 
 * **kernel.js:** 实现ContextHub框架、区段引擎和存储类型的客户端库。
 * **ui.js:** 实现ContextHub UI和UI模块类型的客户端库。
