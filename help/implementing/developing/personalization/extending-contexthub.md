@@ -2,7 +2,7 @@
 title: 扩展ContextHub
 description: 当提供的ContextHub存储和模块不符合您的解决方案要求时，定义新的ContextHub存储和模块类型
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -18,9 +18,7 @@ ht-degree: 0%
 
 ContextHub存储区是从注册的存储候选区创建的。 要创建自定义商店，您需要创建和注册商店候选。
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-包含创建和注册存储候选项的代码的javascript文件必须包含在客户端库文件夹中。 文件夹的类别必须与以下模式匹配：
+包含创建和注册存储候选项的代码的javascript文件必须包含在客户端 [库文件夹中](/help/implementing/developing/introduction/clientlibs.md)。 文件夹的类别必须与以下模式匹配：
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-包含创建和注册呈现器的代码的javascript文件必须包含在客户端库文件夹中。 文件夹的类别必须与以下模式匹配：
+包含创建和注册呈现器的代码的javascript文件必须包含在客户端库 [文件夹中](/help/implementing/developing/introduction/clientlibs.md)。 文件夹的类别必须与以下模式匹配：
 
 ```javascript
 contexthub.module.[moduleType]
