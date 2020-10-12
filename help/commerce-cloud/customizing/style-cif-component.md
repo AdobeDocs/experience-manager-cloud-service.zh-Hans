@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2592'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ CIF Venia [项目是](https://github.com/adobe/aem-cif-guides-venia) CIF核心�
 
 ## 客户端库和ui.frontend模块 {#introduction-to-client-libraries}
 
-负责呈现店面主题／样式的CSS和JavaScript在AEM中由客户端库 [或clientlibs](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) 管理。 客户端库提供一种机制，用于在项目代码中组织CSS和Javascript，然后交付到页面上。
+负责呈现店面主题／样式的CSS和JavaScript在AEM中由客户端库 [或clientlibs](/help/implementing/developing/introduction/clientlibs.md) 管理。 客户端库提供一种机制，用于在项目代码中组织CSS和Javascript，然后交付到页面上。
 
 通过添加和覆盖由这些客户端库管理的CSS，品牌特定样式可应用于AEM CIF核心组件。 了解客户端库的结构和包含在页面上的方式至关重要。
 
@@ -77,7 +77,7 @@ ui. [frontend](https://docs.adobe.com/content/help/zh-Hans/experience-manager-co
 
 ![ui.frontend ui.apps架构](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*在Maven构建过程中，编译的CSS`ui.frontend`和Javascript`ui.apps`将作为客户端库从模块复制到模块中*
+*在Maven构建过程中，编译的CSS `ui.frontend` 和Javascript `ui.apps` 将作为客户端库从模块复制到模块中*
 
 ## 更新Teaser样式 {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ ui. [frontend](https://docs.adobe.com/content/help/zh-Hans/experience-manager-co
    </html>
    ```
 
-   客户端库在传送到页面时带有前缀 `/etc.clientlibs` ，并通过代理提 [供](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) ，以避免暴露或中的任 `/apps` 何敏感 `/libs`内容。
+   客户端库在传送到页面时带有前缀 `/etc.clientlibs` ，并通过代理提 [供](/help/implementing/developing/introduction/clientlibs.md) ，以避免暴露或中的任 `/apps` 何敏感 `/libs`内容。
 
    通知 `venia/clientlibs/clientlib-site.min.css` 和 `venia/clientlibs/clientlib-site.min.js`。 这些是从模块派生的编译的CSS和Javascript `ui.frontend` 文件。
 
@@ -482,6 +482,6 @@ AEM还尝试缓存客户端库以提高性能。 偶尔，在代码部署之后�
 * [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
 * [设置本地AEM开发环境](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [客户端库](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+* [客户端库](/help/implementing/developing/introduction/clientlibs.md)
 * [AEM Sites入门](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [以风格体系发展](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
