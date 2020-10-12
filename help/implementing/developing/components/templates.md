@@ -2,9 +2,9 @@
 title: 页面模板
 description: 页面模板用于创建将用作新页面基础的页面
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3228'
 ht-degree: 7%
 
 ---
@@ -115,8 +115,8 @@ ht-degree: 7%
 >编辑器客户端库假定内容页 `cq.shared` 面中存在命名空间，如果不存在，则将 `Uncaught TypeError: Cannot read property 'shared' of undefined` 导致JavaScript错误。
 >
 >所有示例内容页面都 `cq.shared`包含，因此基于这些页面的任何内容都会自动 `cq.shared`包含。 但是，如果您决定从头开始创建自己的内容页面，而不是基于示例内容，则必须确保包含 `cq.shared` 命名空间。
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>有关 [更多信息，请参阅](/help/implementing/developing/introduction/clientlibs.md) “使用客户端库”。
 
 >[!CAUTION]
 >
