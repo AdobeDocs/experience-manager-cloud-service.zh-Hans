@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
 ht-degree: 13%
@@ -63,7 +63,7 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署流程专门管理。 这�
 + 该 `ui.apps` 包包含要部署且仅部署到的所有代码 `/apps`。 软件包的常 `ui.apps` 见元素包括但不限于：
    + [组件定义和HTL脚本](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
-   + JavaScript和CSS（通过客户端库）
+   + JavaScript和CSS(通过客 [户端库](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [叠加](/help/implementing/developing/introduction/overlays.md) : `/libs`
       + `/apps/cq`, `/apps/dam/`, 等.
@@ -244,7 +244,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 + `all` 容器包嵌入以下包，以创建单个部署伪像
    + `ui.apps` 嵌入到部 `/apps/my-app-packages/application/install` 署代码中，AEM author和AEM publish都可以
    + `ui.apps.author` 嵌入到部 `/apps/my-app-packages/application/install.author` 署代码中，仅允许AEM作者
-   + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 部署内容和配置中，AEM author和AEM publish
+   + `ui.content` 嵌入到部 `/apps/my-app-packages/content/install` 署内容和配置中，AEM author和AEM publish
    + `ui.content.publish` 嵌入到部 `/apps/my-app-packages/content/install.publish` 署内容和配置中，仅发布到AEM
 
 >[!TIP]
