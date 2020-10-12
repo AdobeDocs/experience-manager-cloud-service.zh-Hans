@@ -48,12 +48,11 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 >这是因为，只要对实例 `/libs` 应用升级，其内容就会被覆盖。
 >
 >* 叠加取决于 [搜索路径](/help/implementing/developing/introduction/overlays.md#search-paths)。
-   >
-   >
-* 覆盖不取决于搜索路径，它们使用属性 `sling:resourceSuperType` 建立连接。
+>
+>* 覆盖不取决于搜索路径，它们使用属性 `sling:resourceSuperType` 建立连接。
 >
 >
-但是，重写通常在下定 `/apps`义，因为AEM的最佳实践是在下定义自定义 `/apps`; 这是因为你不能改变下面的任何 `/libs`。
+>但是，重写通常在下定 `/apps`义，因为AEM的最佳实践是在下定义自定义 `/apps`; 这是因为你不能改变下面的任何 `/libs`。
 
 ### 属性 {#properties}
 

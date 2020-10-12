@@ -182,12 +182,13 @@ ht-degree: 20%
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-现成提供英语。
-包共享中的语言模型包提供其他语言：
-* [法语(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [德语(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [意大利语(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [西班牙语(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
+>现成提供英语。
+>包共享中的语言模型包提供其他语言：
+>* [法语(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [德语(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [意大利语(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [西班牙语(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -230,7 +231,8 @@ ht-degree: 20%
 * 在编辑器的全屏和正常模式下，都由文本上的突出显示指示。 然后，可通过单击高亮显示的文本来查看、编辑和／或删除注释的完整详细信息，该文本将重新打开对话框。
 
    >[!NOTE]
-   如果对一个文本应用了多个注释，则会提供一个下拉选择器。
+   >
+   >如果对一个文本应用了多个注释，则会提供一个下拉选择器。
 
 * 删除应用了注释的整个文本时，注释也会被删除。
 
@@ -247,11 +249,13 @@ ht-degree: 20%
 它们将被添加到片段的段落序列中，并且没有任何格式； 在页面上使用／引 [用片段时，可以执行格式设置](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 
 >[!CAUTION]
-不能在引用页面上移动或删除这些资产，这必须在片段编辑器中完成。
-但是，必须在页面编辑器中完成资产的格式设置(例如 [大小)](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 资产在片段编辑器中的表示形式仅用于创作内容流。
+>
+>不能在引用页面上移动或删除这些资产，这必须在片段编辑器中完成。
+>但是，必须在页面编辑器中完成资产的格式设置(例如 [大小)](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 资产在片段编辑器中的表示形式仅用于创作内容流。
 
 >[!NOTE]
-There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>
+>There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. 将光标定位到要添加图像的位置。
 2. 使用插入 **资产图标** ，打开搜索对话框。
@@ -268,9 +272,10 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 4. 使用&#x200B;**选择**&#x200B;将资产添加到当前位置的内容片段的段落系统中。
 
    >[!CAUTION]
-   如果在添加资产后，您将格式更改为：
-   * **纯文本**：资产将从片段中完全丢失。
-   * **标记**：资产将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
+   >
+   >如果在添加资产后，您将格式更改为：
+   >* **纯文本**：资产将从片段中完全丢失。
+   >* **标记**：资产将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
 
 
 ## 管理变量 {#managing-variations}
@@ -288,7 +293,8 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 1. 选择 **添加**;片段 **主** (Master)将被复制到新变体中，该变体现在打开进行 [编辑](#editing-a-variation)。
 
    >[!NOTE]
-   创建新变体时，始终 **是** “主”被复制，而不是当前打开的变体。
+   >
+   >创建新变体时，始终 **是** “主”被复制，而不是当前打开的变体。
 
 ### 编辑变体 {#editing-a-variation}
 
@@ -312,7 +318,8 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 1. 确认重 **命名** 操作。
 
 >[!NOTE]
-这仅影响变体 **标题**。
+>
+>这仅影响变体 **标题**。
 
 ### 删除变量 {#deleting-a-variation}
 
@@ -325,7 +332,8 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 1. 确认对 **话框** 中的删除操作。
 
 >[!NOTE]
-无法删除主 **视图**。
+>
+>无法删除主 **视图**。
 
 ### 与主同步 {#synchronizing-with-master}
 
@@ -334,10 +342,11 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 编辑变体时，您有权访问用于将变体的当前元素与主元素同步的操作。 这允许您自动将对Master所做的更改复制到所需的变体。
 
 >[!CAUTION]
-同步仅可将更改从&#x200B;***主**复制到变体*。
-将只同步变量的当前元素。
-同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
-不提供将更改&#x200B;*从变体传输到&#x200B;**母版&#x200B;***选项。
+>
+>同步仅可将更改从&#x200B;***主**复制到变体*。
+>将只同步变量的当前元素。
+>同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
+>不提供将更改&#x200B;*从变体传输到&#x200B;**母版&#x200B;***选项。
 
 1. 在片段编辑器中打开您的内容片段。 确保主 **页** 已编辑。
 1. 从以下任一位置选择特定变体，然后选择相应的同步操作：

@@ -236,10 +236,11 @@ ht-degree: 11%
    * **删除**
 
 >[!NOTE]
-评论包括：
-* 适用于所有资产的标准功能
-* 在时间轴中制作
-* 与片段资产相关
+>
+>评论包括：
+>* 适用于所有资产的标准功能
+>* 在时间轴中制作
+>* 与片段资产相关
 
 注释（针对内容片段）包括：
 * 在片段编辑器中输入
@@ -274,7 +275,8 @@ ht-degree: 11%
 * **完成** ，将返回控制台
 
 >[!NOTE]
-在比较片段时，无法编辑片段内容。
+>
+>在比较片段时，无法编辑片段内容。
 
 ![比较](assets/cfm-managing-06.png)
 
@@ -291,8 +293,9 @@ ht-degree: 11%
 ## 发布和引用片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-如果您的片段基于模型，则应确保该 [模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
-如果发布的内容片段尚未发布模型，则将显示一个选择列表来指示此情况，并且该模型将随片段一起发布。
+>
+>如果您的片段基于模型，则应确保该 [模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+>如果发布的内容片段尚未发布模型，则将显示一个选择列表来指示此情况，并且该模型将随片段一起发布。
 
 必须发布内容片段才能在发布环境中使用。 可以发布它们：
 
@@ -300,7 +303,8 @@ ht-degree: 11%
 * 当您发 [布使用片段的页面时](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 片段将列在页面引用中。
 
 >[!CAUTION]
-在发布和／或引用片段后，当作者打开片段以再次进行编辑时，AEM将显示一条警告消息。 这将警告对片段所做的更改也会影响引用的页面。
+>
+>在发布和／或引用片段后，当作者打开片段以再次进行编辑时，AEM将显示一条警告消息。 这将警告对片段所做的更改也会影响引用的页面。
 
 ## 删除片段 {#deleting-a-fragment}
 
@@ -310,10 +314,12 @@ ht-degree: 11%
 2. 选择片段。
 
    >[!NOTE]
-   The **Delete** action is not available as a quick action.
+   >
+   >The **Delete** action is not available as a quick action.
 
 3. Select **Delete** from the toolbar.
 4. 确认删 **除** 。
 
    >[!CAUTION]
-   如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。
+   >
+   >如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。
