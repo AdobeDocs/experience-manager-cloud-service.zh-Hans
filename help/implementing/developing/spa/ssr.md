@@ -2,7 +2,7 @@
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SS
     </ul> </td>
    <td>
     <ul>
-     <li>AEM开发人员需要通过属性提供应用程序所需的Clientlib资源(如CSS和JavaScript <code>allowProxy</code> )<br /> </li>
+     <li>AEM开发人员需要通过属性提供应用程序所需的Clientlib资源(如CSS和JavaScript <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> )<br /> </li>
      <li>资源必须在AEM和Adobe I/O Runtime之间同步<br /> </li>
      <li>要启用SPA创作，可能需要Adobe I/O Runtime的代理服务器</li>
     </ul> </td>
