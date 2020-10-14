@@ -2,9 +2,9 @@
 title: Dynamic Media 图像配置文件
 description: 创建包含USM锐化设置、智能裁剪设置、智能用户档案、智能色板设置（或同时创建两者设置）的Dynamic Media图像用户档案，然后将该图像应用到图像资产的文件夹。
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2738'
 ht-degree: 14%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 14%
 
 >[!IMPORTANT]
 >
->图像用户档案不适用于PDF、GIF或INDD(Adobe InDesign)文件。
+>图像用户档案不适用于PDF、动画GIF或INDD(Adobe InDesign)文件。
 
 ## Crop options {#crop-options}
 
