@@ -1,20 +1,20 @@
 ---
-sub-product: AEM商务作为Cloud Service
-user-guide-title: AEM商务作为Cloud Service
-breadcrumb-title: Commerce Guide
-user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
+sub-product: AEM Commerce 即 Cloud Service
+user-guide-title: AEM Commerce 即 Cloud Service
+breadcrumb-title: Commerce 指南
+user-guide-description: 了解如何使用和管理 Experience Manager Commerce 即 Cloud Service。
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 16%
+source-wordcount: '71'
+ht-degree: 59%
 
 ---
 
 
 # 商务 {#commerce}
 
-+ [AEM商务作为Cloud Service](/help/commerce-cloud/home.md)
++ [AEM Commerce 即 Cloud Service](/help/commerce-cloud/home.md)
 + [简介](overview.md)
 + [显著更改](changes.md)
 + 架构 {#architecture}
