@@ -1,12 +1,12 @@
 ---
 sub-product: AEM 云服务的操作和维护
 user-guide-title: AEM 云服务的操作和维护
-breadcrumb-title: Operations Guide
-user-guide-description: Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.
+breadcrumb-title: Operations 指南
+user-guide-description: 了解 Experience Manager 云服务的后端操作，如添加索引和维护任务。
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '62'
 ht-degree: 100%
 
 ---
