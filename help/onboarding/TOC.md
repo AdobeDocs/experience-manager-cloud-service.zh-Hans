@@ -1,13 +1,13 @@
 ---
 sub-product: AEM 云服务入门
 user-guide-title: AEM 云服务入门
-breadcrumb-title: Onboarding Guide
-user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
+breadcrumb-title: 入门指南
+user-guide-description: 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 92%
+source-wordcount: '173'
+ht-degree: 93%
 
 ---
 
