@@ -1,13 +1,13 @@
 ---
 sub-product: 移动到 AEM 云服务
 user-guide-title: 移动到 AEM 云服务
-breadcrumb-title: Move Guide
-user-guide-description: Understand the transition journey to Cloud Service.
+breadcrumb-title: Move 指南
+user-guide-description: 了解过渡到云服务的历程。
 translation-type: tm+mt
 source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 94%
+source-wordcount: '81'
+ht-degree: 95%
 
 ---
 
