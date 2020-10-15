@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 79%
+source-wordcount: '1710'
+ht-degree: 78%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 79%
 请阅读以下章节，以了解运行内容传输工具时的重要注意事项：
 
 * 内容传输工具的最低系统要求为 AEM 6.3 + 和 JAVA 8。如果您使用的是较低版本的 AEM，则需要将内容存储库升级到 AEM 6.5，才能使用内容传输工具。
+
+* 需要在AEM环境上配置Java，以便 `java` 命令可由开始AEM的用户执行。
 
 * 内容传输工具可用于以下类型的数据存储：文件数据存储、S3数据存储、共享的S3数据存储和Azure Blob存储数据存储。
 
