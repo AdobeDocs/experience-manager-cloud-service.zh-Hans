@@ -3,10 +3,10 @@ title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程部署中可 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5a21785883d652508b9fc12c14ff1884e358115f
+source-git-commit: 2ef262dc8ac3b1c0ae2ac9e77d18664eb83270f7
 workflow-type: tm+mt
-source-wordcount: '2136'
-ht-degree: 43%
+source-wordcount: '2201'
+ht-degree: 42%
 
 ---
 
@@ -33,8 +33,8 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
    |  | [!DNL Sites] 作为Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5内 [!DNL Sites] 部部署 |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]作为Cloud Service** | 支持 | 支持 | 支持 |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]on AMS.** | 支持 | 支持 | 支持 |
-   | **[!DNL Experience Manager]6.5内[!DNL Assets]部部署** | 不支持 | 不支持 | 不支持 |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] on AMS.** | 支持 | 支持 | 支持 |
+   | **[!DNL Experience Manager]6.5内 [!DNL Assets] 部部署** | 不支持 | 不支持 | 不支持 |
 
 ### 支持的文件格式 {#mimetypes}
 
@@ -195,3 +195,4 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * 由于一个或多个原因，从远程dam获取的资产可能无法发布到网页上。 它在远程服务器上不存在，缺少相应的权限来获取它，或者网络故障可能是原因。 确保资产未从远程DAM中删除。 确保拥有适当的权限，并满足先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/operations/asynchronous-jobs.md)，查看是否发生了资产获取错误。
+* 如果您无法从本地部署访问远程DAM [!DNL Sites] 部署，请确保允许跨站点Cookie。 如果跨站点Cookie被阻止，则两个部署 [!DNL Experience Manager] 可能无法验证。 例如，在 [!DNL Google Chrome] Incognito模式下，可能会阻止第三方cookie。 在 [!DNL Chrome]中，单击地址栏中的“眼睛”图标以允许使用cookie，或查看有关如 [何启用第三方cookie的帮助](https://support.google.com/chrome/answer/95647)。
