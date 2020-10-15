@@ -1,12 +1,12 @@
 ---
 sub-product: 在 AEM 云服务中创作内容
 user-guide-title: 在 AEM 云服务中创作内容
-breadcrumb-title: Authoring Guide
-user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
+breadcrumb-title: Authoring 指南
+user-guide-description: 了解如何使用 Experience Manager Sites 云服务进行创作，以及如何管理 Experience Manager Sites 云服务。
 translation-type: tm+mt
 source-git-commit: d5b92dda6b79407988eea3126f10fe875a0176ea
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '223'
 ht-degree: 97%
 
 ---
