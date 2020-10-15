@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 + [AEM 云服务入门](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/onboarding/home.html)
 + [AEM Sites 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/sites/home.html)
 + [AEM Assets 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/assets/home.html)
-+ [AEM商务作为Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
++ [AEM Commerce 即 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
 + [迁移到 AEM 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/moving/home.html)
 + [实施 AEM 云服务的应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/home.html)
 + [实施 AEM 云服务的连接器 ](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/connectors/home.html)
