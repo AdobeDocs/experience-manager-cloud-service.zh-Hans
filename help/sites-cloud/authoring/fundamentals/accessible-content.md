@@ -2,9 +2,9 @@
 title: 创建 Adobe Experience Manager 云服务的无障碍内容（WCAG 2.1 合规性）
 description: 使用 AEM 云服务帮助残障人士访问和使用 Web 内容
 translation-type: tm+mt
-source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '14057'
+source-wordcount: '14060'
 ht-degree: 99%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 99%
 
 * [WCAG 2.1 快速指南](/help/onboarding/accessibility/quick-guide-wcag.md)。
 * [Adobe 解决方案的“无障碍合规性”报告](https://www.adobe.com/accessibility/compliance.html)。
+* [资源中的辅助功能](/help/assets/accessibility.md)
 * [配置富文本编辑器以创建辅助内容](/help/implementing/developing/extending/rte-accessible-content.md)
 
 准则依据三个合规性级别进行分级：A 级（最低）、AA 级以及 AAA 级（最高）。以下是各个级别的简要定义：
