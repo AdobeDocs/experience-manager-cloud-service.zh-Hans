@@ -3,10 +3,10 @@ title: 中的辅助功能 [!DNL Experience Manager Assets]
 description: 了解Cloud Service提供的辅 [!DNL Adobe Experience Manager] 助功能如何帮助残障用户。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 
 ---
 
@@ -30,22 +30,24 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 # Accessibility in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
-Adobe致力于为所有用户（包括残疾人）制作产品。 [!DNL Adobe Experience Manager] 不断的增强，以满足所有类型用户的需求。 [!DNL Experience Manager] 发布符合性信息，详细了解它所遵循的标准，概述产品中的辅助功能，并描述合规性级别。 它帮助用户了解遵守情况的程度。
+[!DNL Adobe Experience Manager] 使内容创建者和发布者能够在Web上提供出色的体验。 Adobe致力于通过改进辅助工具来使残疾创造者参与进来 [!DNL Experience Manager]。 该软件不断得到增强，以满足所有类型用户的需求，并遵守包括具有视觉、听觉、移动或其他障碍的个人在内的全球标准。
 
-[!DNL Adobe Experience Manager] 为以下标准提供不同级别的支持：
+[!DNL Experience Manager] 发布符合性信息，描述其所遵循的标准，概述产品中的辅助功能，并描述符合性级别。 这些辅助功能符合性报 [!DNL Experience Manager] 告有助于用户了解遵守程度。 中完成的增强功 [!DNL Assets] 能使所有用户都能通过键盘、屏幕阅读器、放大器和其他辅助技术轻松使用界面。
+
+[!DNL Experience Manager] 为以下标准提供不同级别的支持：
 
 * [Web 内容无障碍准则 (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-* [修订第508条](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
-* [韦——艾瑞亚](https://www.w3.org/WAI/standards-guidelines/aria/)。
+* [修订了《康复法》第508条](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
+* [辅助功能计划- W3C提供的可访问的富Internet应用程序(WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/)。
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)。
 
-要访问详细说明合规性级别的报告，请参阅所 [有Adobe解决方案的辅 ](https://www.adobe.com/accessibility/compliance.html) 助功能符合性报告(ACR)页。
+要访问详细说明合规性级别的报告，请参阅所 [有Adobe解决方案的辅](https://www.adobe.com/accessibility/compliance.html) 助功能符合性报告(ACR)页。
 
 ## 辅助技术 {#at-support}
 
-残障用户经常依赖硬件和软件来访问Web内容。 这些工具被称为辅助型技术。 [!DNL Adobe Experience Manager Assets] 使用下列辅助技术为用户提供使用软件核心功能时的支持：
+残障用户经常依赖硬件和软件来访问Web内容。 这些工具被称为辅助型技术。 [!DNL Experience Manager Assets] 在使用软件的核心功能时，可以使用下列类型的辅助技术(AT):
 
-* 屏幕阅读器。
+* 屏幕阅读器和屏幕放大镜。
 * 语音识别软件。
 * 键盘使用——导航和快捷键。
 * 辅助硬件，包括开关控件、可刷新的盲文显示和其他计算机输入设备。
@@ -75,8 +77,7 @@ Adobe致力于为所有用户（包括残疾人）制作产品。 [!DNL Adobe Ex
 
 ### 资产中的键盘快捷键 {#keyboard-shortcuts}
 
-<!-- TBD: Add here only those keyboard shortcuts that work for/with Assets. Do with Oct release.
--->
+资产中的以下操作可使用列出的键盘快捷键。 大多数应用于控制台的键 [!DNL Experience Manager] 盘快捷键也应用于资产。 See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). 了解如何 [启用或禁用键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|
@@ -84,38 +85,37 @@ Adobe致力于为所有用户（包括残疾人）制作产品。 [!DNL Adobe Ex
 | 资产用户界面中的列视图 | 向左和向右箭头键 | 导航到当前文件夹上方或下方的文件和文件夹。 |
 | 在资产中浏览文件夹 | `/` | 通过打开Omnisearch框调用搜索。 |
 | 资产控制台 | ` | 切换侧边栏 |
-| 资产控制台 | Alt + 1 | 打开内容树。 |
-| 资产控制台 | Alt + 2 | 打开 [!UICONTROL 导航] 脱轨。 |
-| 资产控制台 | Alt + 3 | 显示 [!UICONTROL 选定] 资产的时间轴。 |
-| 资产控制台 | Alt + 4 | 打开选定资产的Live Copy引用。 |
-| 资产控制台 | Alt + 5 | 调用选定文件夹中的搜索和搜索。 |
+| 资产控制台 | `Alt + 1` | 打开内容树。 |
+| 资产控制台 | `Alt + 2` | 打开 [!UICONTROL 导航] 左边栏。 |
+| 资产控制台 | `Alt + 3` | 显示 [!UICONTROL 选定] 资产的时间轴。 |
+| 资产控制台 | `Alt + 4` | 打开选定资产的Live Copy引用。 |
+| 资产控制台 | `Alt + 5` | 调用选定文件夹中的搜索和搜索。 |
 | 已选择资产或文件夹 | Backspace | 删除选定的资产或文件夹。 |
 | 已选择资产或文件夹 | `p` | 打开选定资产的“属性”页面。 |
 | 已选择资产或文件夹 | `e` | 编辑选定的资产。 |
 | 已选择资产或文件夹 | `m` | 移动选定的资产。 |
-| 已选择资产或文件夹 | Ctrl+c | 复制选定的资产。 |
-| 已选择资产或文件夹 | Esc | 取消选择选择。 |
-| 对话框打开并处于焦点中 | Esc | 关闭对话框。 |
-| 在DAM中的文件夹中 | Ctrl+v | 粘贴复制的资产。 |
-| 资产控制台 | Ctrl + A | 选择所有资产。 |
-| 资产属性页 | Ctrl + S | 保存更改。 |
+| 已选择资产或文件夹 | `Ctrl + c` | 复制选定的资产。 |
+| 已选择资产或文件夹 | `Esc` | 取消选择选择。 |
+| 对话框打开并处于焦点中 | `Esc` | 关闭对话框。 |
+| 在DAM中的文件夹中 | `Ctrl + v` | 粘贴复制的资产。 |
+| 资产控制台 | `Ctrl + A` | 选择所有资产。 |
+| 资产属性页 | `Ctrl + S` | 保存更改。 |
 | 资产控制台 | `?` | 请参阅一列表键盘快捷键。 |
-
-大多数应用于控制台的键 [!DNL Experience Manager] 盘快捷键也应用于资产。 See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). 了解如何 [启用或禁用键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 ## 登录并导航用 [!DNL Assets] 户界面 {#login}
 
 用户可以使用键盘导航并填写登录字段以登录。 每次出现错误时，屏幕阅读器会发出由登录页面上的用户名和密码组合不正确引起的错误消息。
 
-登录后，DAM用户可以使用键盘导航 [!DNL Assets] 到用户界面。 键盘导航顺序为从左到右和从上到下。 使用键盘导航时，将突出显示任何具有较好颜色对比度的可操作选项，并由屏幕阅读器进行解说。 屏幕阅读器会宣布菜单中重点选项的状态（已展开或已折叠）。
+登录后，DAM用户可以使用键盘在 [!DNL Assets] 用户界面中导航。 用户界面元素(如左边栏、菜单、用户用户档案、搜索栏、文件和文件夹)以及管理和配置设置都可以使用键盘进行导航。 键盘导航顺序为从左到右和从上到下。 使用键盘导航时，焦点时可执行的选项会以更好的颜色对比度高亮显示，并由屏幕阅读器解说。 如果适用，屏幕阅读器会宣布菜单中重点选项的状态，例如展开、折叠和混合状态。 此外，可操作选项的目的由屏幕阅读器来宣布，而不是说外观或UI位置。
 
-如果用户从菜单中展开帮助或用户用户档案选项，屏幕阅读器会宣布相应的选项或状态。 如果用户展开用户用户档案选项，则可以使用键盘选择可用选项。 例如，用户可以模拟其他用户。 用户界面选项和错误消息
+如果用户从菜单中展开帮助或用户用户档案选项，屏幕阅读器会宣布相应的选项或状态。 如果用户展开用户用户档案选项，则可以使用键盘选择可用选项。 例如，管理员可以模拟其他用户。 如果用户从“帮助”选项中搜 [!UICONTROL 索] 字符串，则解说员将宣布“搜索帮助”以指示正在进行搜索。
 
-![Experience Manager用户界面中顶部选项的键盘导航](assets/keyboard-navigation-in-aem.gif)
+<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
-*图：使用键在Experience Manager用户界面顶部的选项中导`Tab`航。*
+![Keyboard navigation of top options in Experience Manager user interface](assets/keyboard-navigation-in-aem.gif)
 
-如果用户从“帮助”选项中搜 [!UICONTROL 索] 字符串，则解说员将宣布“搜索帮助”以指示正在进行搜索。
+*Figure: Navigating through the options at the top of Experience Manager user interface using `Tab` key.*
+-->
 
 ## 浏览现有资产和视图相关信息 {#browse}
 
@@ -143,9 +143,9 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 使用键导航时的 `Tab` 用户焦点可移至版本预览中的关闭选项。
 * 使用键盘进行浏览时，突出显示的可操作用户界面选项具有更突出的视觉焦点和增强的对比度。 它使聚焦区域对用户更加可识别。
 * 使用键从 `Esc` 缩略图视图删除快速操作图标不会从最后一个聚焦的项目删除键盘焦点。
-* 选中某个资产后，按Alt + 4键盘快捷键可打开引用列表。 使 `Tab` 用键，用户可以浏览无零引用条目。
-* 资产时间轴中提供对资产的评论。 可通过键盘访问。
-* 视图设置Experience Manager可通过键盘访问。 用户可以使用箭头键在可用的卡大小之间导航，并选择和跳转以在现有视图设置视图中导航和设置其他元素。
+* 选中资产后，按键 `Alt + 4` 盘快捷键将打 [!UICONTROL 开左边栏] 中的引用列表。 使 `Tab` 用键，用户可以浏览非零引用条目。 仅浏览非零引用条目也省去了工作和按键。
+* 资产时间轴中提供对资产的评论。 如果使用键盘或键盘快捷键访问左边栏，则可访问该边栏。
+* [!UICONTROL 视图] “ [!DNL Experience Manager] 设置”可通过键盘访问。 用户可以使用箭头键浏览可用的卡大小，然后选择并跳转，以在现有视图设置视图中导航和设置其他元素。
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -156,7 +156,6 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * List the a11y fixes in workflows to configure and administer [!DNL Experience Manager Assets]?
 * Some enhancements in Processing profiles creation or application to a folder?
 * Some enhancements to metadata properties UI?
-
 -->
 
 ## Manage digital assets {#manage-assets}
@@ -169,7 +168,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 * [!UICONTROL 现在可以使用] 键盘访问资产属性页面上的“保存并关闭”选项。
 * 屏幕阅读器会通知一些选项，用于删除资产属性按钮的“基本”选项卡中的选定标记，以删除选定标记。
-* 日期选取器弹出对话框可使用键盘。 日期选取器用于设置开启时间和结束时间。
+* 日期选取器弹出对话框可使用键盘。 Datepicker用户界面元素用于设置开启时间和结束时间。
 * 在屏幕阅读器的浏览模式下，使用键盘的拖动功能在元数据模式编辑器中正确工作。
 * 用户可以使用键盘将焦点移动到文件夹属性权限选项卡的关闭的用户组下的添加用户或用户组字段。
 
@@ -206,11 +205,14 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
    * 可导航到所有列出的建议。
    * 解说显示的“添加电子邮件地址”和“搜索”字段的建议。
 
-## 中的辅助功能 [!DNL Dynamic Media] {#dynamic-media-accessibility}
+<!-- TBD: With more info from the DM team. A few Sev1 issues are fixed and if those are shipped, then mention those here.
 
-使用Dynamic Media时，以下功能有助于使其可访问：
+## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
-* 用户可以使用查看 `Flyout`者所 `InlineZoom`在的资产详细信 `Shoppable_Banner`息中的关键 `Zoom_dark`信息来集中查看、 `Zoom_light``ZoomVertical_dark``ZoomVertical_light``Tab`[!DNL Dynamic Media]、、、、和选项。
+When using Dynamic Media, the following functionality helps make it accessible:
+
+* A user can focus to `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`, `ZoomVertical_dark`, and `ZoomVertical_light` options using `Tab` key in asset details Viewers in [!DNL Dynamic Media].
+-->
 
 ## 可访问的文档 {#accessible-docs}
 
@@ -224,15 +226,12 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 <!-- 
 ## More resources for accessibility {#a11y-resources}
 
-TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share or leave a link here.
+TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share a reference with asgupta@adobe.com.
 -->
-
-## 版本中的增 [!DNL Experience Manager Assets] 强 {#rn-fixes}
-
-有关各个版本中完成的特定增强的列表，请参 [阅各个](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/home.html) 版本的发行说明。
 
 >[!MORELIKETHIS]
 >
->* [AEM辅助功能指导](/help/onboarding/accessibility/web-accessibility.md)
->* [Adobe解决方案符合性报告](https://www.adobe.com/accessibility/compliance.html)
+>* [每个版本中所做特定增强功能的发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>* [AEM辅助功能指南](/help/onboarding/accessibility/web-accessibility.md)。
+>* [Adobe解决方案的符合性报告](https://www.adobe.com/accessibility/compliance.html)。
 
