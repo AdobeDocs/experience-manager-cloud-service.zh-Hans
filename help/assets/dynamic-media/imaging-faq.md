@@ -2,9 +2,9 @@
 title: 智能成像
 description: 智能图像处理利用每个用户独特的查看特性自动提供为其体验优化的正确图像，从而获得更好的性能和参与度。
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1730'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 ## 什么是“智能成像”? {#what-is-smart-imaging}
 
-智能成像技术利用Adobe Sensei人工智能功能并与现有的“图像预设”配合使用，通过基于客户端浏览器功能自动优化图像格式、大小和质量来增强图像投放性能。
+智能成像技术利用Adobe Sensei人工智能功能并与现有的“图像预设”配合，通过基于客户浏览器功能自动优化图像格式、大小和质量来增强图像投放性能。
 
 Smart Imaging还可以与Adobe一流的高级CDN服务完全集成，从而增强性能。 此服务在服务器、网络和对等点之间找到最佳的因特网路由，这些点的延迟和／或数据包丢失率低于因特网上的默认路由。
 
@@ -28,7 +28,7 @@ Smart Imaging还可以与Adobe一流的高级CDN服务完全集成，从而增�
 | [图像4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | 平均= 51% |
 
-与上面所述相似，Adobe还通过来自实时客户站点的7009个URL运行测试，并且由于具备智能成像功能，JPEG文件大小优化和WebP格式PNG文件大小优化平均提高了38%,PNG文件大小优化幅度提高了31%。
+与上面所示相似，Adobe还通过来自实时客户站点的7009个URL运行测试，并且由于具备智能成像功能，平均可对JPEG进行38%的文件大小优化，对WebP格式的PNG进行31%的文件大小进一步优化。
 
 ## 最新的智能成像有哪些主要优势？ {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -45,7 +45,7 @@ Smart Imaging还可以与Adobe一流的高级CDN服务完全集成，从而增�
 
 ## 是否存在与智能成像相关的许可成本？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-否. 您的现有Dynamic Media Classic(Scene7)或AEM Dynamic Media（在Prem、AMS和AEM上，作为云服务）许可包含智能成像。
+否. 您现有的Dynamic Media Classic(Scene7)或AEM Dynamic Media(作为Cloud Service，在Prem、AMS和AEM上)许可证中包含智能成像。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Smart Imaging可与您现有的“图像预设”配合使用，如果请求的�
 
 ## 我是否有资格使用智能成像？ {#am-i-eligible-to-use-smart-imaging}
 
-要使用智能成像，您的公司在AEM帐户上的Dynamic Media Classic或Dynamic Media必须满足以下要求：
+要使用智能成像，您的公司的AEM帐户上的Dynamic Media Classic或Dynamic Media必须满足以下要求：
 
 * 将Adobe捆绑的CDN(内容投放网络)作为许可的一部分。
 * 使用专用域(例如， `images.company.com` 或 `mycompany.scene7.com`)，而不是通用域(例如， `s7d1.scene7.com`、 `s7d2.scene7.com`或 `s7d13.scene7.com`)。
@@ -105,14 +105,14 @@ Smart Imaging可与您现有的“图像预设”配合使用，如果请求的�
 
 Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 查找标有“已发布服 **[!UICONTROL 务器名称”的字段]**。 如果您当前使用的是通用域，则在提交技术支持票证时，可以请求移至您自己的自定义域作为本过渡的一部分。
 
-Dynamic Media许可证不需要支付任何额外费用。
+Dynamic Media许可证不需要支付任何额外费用即可获得您的第一个自定义域。
 
 ## 为我的帐户启用智能成像的过程是什么？ {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-您必须启动使用智能成像的请求； 它不会自动启用。
+您必须启动使用智能成像的请求；它不会自动启用。
 
-1. 发起技术支持请求(电子邮件： `s7support@adobe.com`)。
-1. 在您的支持请求中提供以下信息：
+1. [使用Admin Console创建支持案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. 在您的支持案例中提供以下信息：
 
    1. 主要联系人姓名、电子邮件、电话。
    1. 要启用智能成像的所有域(即 `images.company.com` 或 `mycompany.scene7.com`)。
@@ -122,7 +122,7 @@ Dynamic Media许可证不需要支付任何额外费用。
       单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。
 
       查找标有“已发布服 **[!UICONTROL 务器名称”的字段]**。
-   1. 验证您是否正通过Adobe使用CDN，而不是通过直接关系进行管理。
+   1. 验证您是否通过Adobe使用CDN，而不是直接管理。
    1. 验证您使用的是专用域(如 `images.company.com` 或 `mycompany.scene7.com`)，而不是通用域(如 `s7d1.scene7.com`、 `s7d2.scene7.com``s7d13.scene7.com`)。
 
       要查找您的域，请登录您的公司帐户或帐户。
@@ -134,7 +134,7 @@ Dynamic Media许可证不需要支付任何额外费用。
 
 1. 技术支持将根据请求的提交顺序将您添加到智能图像处理客户等待列表。
 1. 当Adobe准备好处理您的请求时，支持人员将与您联系以协调和设置目标日期。
-1. **可选**: 在Adobe将新功能推向生产之前，您可以选择在暂存中测试智能成像。
+1. **可选**:在Adobe将新功能推向生产之前，您可以选择在暂存中测试智能成像。
 1. 完成后，支持会通知您。
 1. 为最大限度地提高智能成像的性能，Adobe建议将生存时间(TTL)设置为24小时或更长。 TTL定义CDN缓存资源的时长。 要更改此设置：
 
@@ -146,14 +146,13 @@ Dynamic Media许可证不需要支付任何额外费用。
 请求将按技术支持人员接收请求的顺序进行处理，并根据等待列表。
 
 >[!NOTE]
->
->启用智能成像需要Adobe清除缓存，因此可能需要较长的准备时间。 因此，在任何给定时间都只能处理少数客户过渡。
+启用智能成像需要Adobe清除缓存，因此可能需要较长的准备时间。 因此，在任何给定时间都只能处理少数客户过渡。
 
 ## 改用智能成像有哪些风险？ {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-客户网页不存在风险。 但是，您应该注意，智能成像过渡会清除CDN中的缓存，因为它涉及在AEM上切换到Dynamic Media Classic或Dynamic Media的新配置。
+客户网页不存在风险。 但是，您应该注意到，智能成像过渡会清除CDN中的缓存，因为它涉及到在AEM上切换到新的Dynamic Media Classic或Dynamic Media配置。
 
-在初始过渡期间，非缓存图像会直接点击Adobe的来源服务器，直到重新构建缓存。 因此，Adobe计划一次处理几个客户过渡，以便在从我们的来源处理请求时保持可接受的性能。 对于大多数客户，在1到2天内在CDN重新完全建立缓存。
+在初始过渡期间，非缓存图像直接点击Adobe的来源服务器，直到重新构建缓存。 因此，Adobe计划一次处理几个客户过渡，以便在从来源处理请求时保持可接受的性能。 对于大多数客户，在1到2天内在CDN重新完全建立缓存。
 
 ## 如何验证智能成像是否按预期工作？  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
@@ -169,8 +168,7 @@ Dynamic Media许可证不需要支付任何额外费用。
 1. 在不同的浏览器和用户条件上重复此测试。
 
 >[!NOTE]
->
->并非所有图像都经过转换。 智能成像决定是否需要转换才能提高性能。 在某些情况下，如果没有预期的性能增益，或者格式不是JPEG或PNG，则不会转换图像。
+并非所有图像都经过转换。 智能成像决定是否需要转换才能提高性能。 在某些情况下，如果没有预期的性能增益，或者格式不是JPEG或PNG，则不会转换图像。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
