@@ -3,9 +3,9 @@ title: 中的辅助功能 [!DNL Experience Manager Assets]
 description: 了解Cloud Service提供的辅 [!DNL Adobe Experience Manager] 助功能如何帮助残障用户。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ### 资产中的键盘快捷键 {#keyboard-shortcuts}
 
-资产中的以下操作可使用列出的键盘快捷键。 大多数应用于控制台的键 [!DNL Experience Manager] 盘快捷键也应用于资产。 See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). 了解如何 [启用或禁用键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+资产中的以下操作可使用列出的键盘快捷键。 大多数应用于控制台的键 [!DNL Experience Manager] 盘快捷键也应用于资产。 See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). 了解如何 [启用或禁用键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|
@@ -192,7 +192,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 ## 共享资产 {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 共享资源时，以下功能可改进辅助功能：
