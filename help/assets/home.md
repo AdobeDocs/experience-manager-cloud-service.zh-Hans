@@ -1,16 +1,16 @@
 ---
-title: 资产作为Cloud Service指南
+title: Assets 即 Cloud Service 指南
 description: Adobe Experience Manager Assets 云服务自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '352'
 ht-degree: 85%
 
 ---
 
 
-# 资产作为Cloud Service指南 {#aem-assets-guide}
+# Assets 即 Cloud Service 指南 {#aem-assets-guide}
 
 以下是 Experience Manager Assets 云服务的自助资源。
 
@@ -40,7 +40,7 @@ ht-degree: 85%
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
-* [近期文档更新](https://helpx.adobe.com/cn/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [近期文档更新](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
