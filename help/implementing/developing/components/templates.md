@@ -2,7 +2,7 @@
 title: 页面模板
 description: 页面模板用于创建将用作新页面基础的页面
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 7%
@@ -156,7 +156,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 要创建新文件夹，您可以执行以下操作之一：
 
 * 以编程方式或通过CRXDE Lite
-* 使用配置浏览器
+* 使用配 [置浏览器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## 使用CRXDE Lite {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 
 ### 使用配置浏览器 {#using-the-configuration-browser}
 
-1. 转到“全 **局导航** ”-> **“工具** ” **>“配**&#x200B;置浏览器”。
+1. 转到“全 **局导航** ”-> **“工具** ” [**>“配**&#x200B;置浏览器”。](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    现有文件夹将列在左侧，包括该文 `global` 件夹。
 
@@ -203,7 +203,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 
 >[!NOTE]
 >
->在配置浏览器中，如果您希望在该文件夹内创建模板，可以编辑 **全局文件夹** ，并激活“可编辑模板”选项，但建议不要这样做。
+>在配置 [浏览器中](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) ，如果您希望在此文件夹中创建模板，则可以编辑全局文件夹并激活 **可编辑模板选项** ，但建议不要这样做。
 
 ### ACL和组 {#acls-and-groups}
 
