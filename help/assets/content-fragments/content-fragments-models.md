@@ -2,7 +2,7 @@
 title: 内容片段模型
 description: 内容片段模型用于创建包含结构化内容的内容片段。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 22%
@@ -22,12 +22,12 @@ ht-degree: 22%
 
 要启用内容片段模型，您需要：
 
-* 在配置管理器中启用内容片段模型
+* 在配置浏览器中启用内容片段模型
 * 将配置应用到您的资产文件夹
 
-### 在Configuration Manager中启用内容片段模型 {#enable-content-fragment-models-in-configuration-manager}
+### 在配置浏览器中启用内容片段模型 {#enable-content-fragment-models-in-configuration-browser}
 
-要创 [建新的内容片段模型](#creating-a-content-fragment-model) , **您必须首先** 使用配置管理器启用它们：
+要创 [建新的内容片段模型](#creating-a-content-fragment-model) , **您必须首** 先使用配置浏 [览器启用它们：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. 导航到&#x200B;**工具**、**常规**，然后打开&#x200B;**配置浏览器**。
 2. 选择适合您的网站的位置。
@@ -73,11 +73,11 @@ ht-degree: 22%
 1. 导航到 **工具**、资 **产**，然后打 **开内容片段模型**。
 
 1. 导航到包含内容片段模型的文件夹。
-1. 打开编辑所需的 **模型**; 使用快速操作，或先选择模型，然后从工具栏中选择操作。
+1. 打开编辑所需的 **模型**;使用快速操作，或先选择模型，然后从工具栏中选择操作。
 
    打开模型编辑器后，将显示：
 
-   * 左： 字段已定义
+   * 左：字段已定义
    * 右侧：可用于创建字段的&#x200B;**数据类型**（可在创建字段后使用的&#x200B;**属性**）
 
    >[!NOTE]
@@ -97,11 +97,10 @@ ht-degree: 22%
    ![字段属性](assets/cfm-models-05.png)
 
    >[!NOTE]
-   >
-   >对于数据类型&#x200B;**多行文本**，可将&#x200B;**默认类型**&#x200B;定义为以下任一类型：
-   >* **富文本**
-   >* **Markdown**
-   >* **纯文本**
+   对于数据类型&#x200B;**多行文本**，可将&#x200B;**默认类型**&#x200B;定义为以下任一类型：
+   * **富文本**
+   * **Markdown**
+   * **纯文本**
 
    如果未指定，则此字 **段使用** 默认值富文本。
    更改内容片段模型中的&#x200B;**默认类型**&#x200B;仅会对在编辑器中打开并保存的现有相关内容片段生效。
@@ -119,8 +118,7 @@ ht-degree: 22%
 ## 删除内容片段模型 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->删除内容片段模型可能会影响相关片段。
+删除内容片段模型可能会影响相关片段。
 
 要删除内容片段模型，请执行以下操作：
 
@@ -130,8 +128,7 @@ ht-degree: 22%
 1. 选择模型，然后从工 **具栏** 中选择删除。
 
    >[!NOTE]
-   >
-   >如果模型被引用，则会发出警告。 采取适当措施。
+   如果模型被引用，则会发出警告。 采取适当措施。
 
 ## 发布内容片段模型 {#publishing-a-content-fragment-model}
 
@@ -145,5 +142,4 @@ ht-degree: 22%
 1. 选择您的模型，然后从工 **具栏** 中选择发布。
 
    >[!NOTE]
-   >
-   >如果发布的内容片段尚未发布模型，则将显示一个选择列表来指示此情况，并且该模型将随片段一起发布。
+   如果发布的内容片段尚未发布模型，则将显示一个选择列表来指示此情况，并且该模型将随片段一起发布。
