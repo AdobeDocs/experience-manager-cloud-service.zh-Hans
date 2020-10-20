@@ -2,7 +2,7 @@
 title: 多商店设置
 description: 多商店设置
 translation-type: tm+mt
-source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -32,7 +32,7 @@ AEM Live Copy和Language Copy的多站点管理功能与Commerce Integration Fra
 
 3. 按照以下步骤创建CIFCloud Service配置的子配置：
 
-   * 在AEM中，转到工具->常规->配置浏览器
+   * 在AEM中，转到工具->常规->配 [置浏览器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 选择您创建的基本配置
    * 使用上面第2点所述的步骤创建新配置
 
@@ -41,7 +41,7 @@ AEM Live Copy和Language Copy的多站点管理功能与Commerce Integration Fra
 4. 将子配置分配给AEM站点
 
    * 转到AEM Sites控制台
-   * 导航到站点结构的区域或语言根，例如 /content/venia/us _或_ /content/venia/us/en，用于Venia示例页面
+   * 导航到站点结构的区域或语言根，例如/content/venia/us _或_ /content/venia/us/en，用于Venia示例页面
    * 选择页面并打开页面属性
    * 选择高级选项卡
    * 在部分 `Configuration` 中，选择您在步骤中创建的配置
@@ -51,4 +51,4 @@ AEM Live Copy和Language Copy的多站点管理功能与Commerce Integration Fra
 * [Magento网站、商店和视图](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF核心组件——多商店／站点配置](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [使用多站点管理器](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [重用内容： 多站点管理器和Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [重用内容：多站点管理器和Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
