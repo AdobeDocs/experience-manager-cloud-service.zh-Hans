@@ -2,7 +2,7 @@
 title: 部署到 AEM 云服务
 description: '部署到 AEM 云服务 '
 translation-type: tm+mt
-source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
+source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AEM版本的更 [新始终是](/help/implementing/deploying/aem-version-updates.
 >[!NOTE]
 >应用程序在本地机器上的行为与Adobe云之间存在微妙的操作差异。 在本地开发过程中，这些架构差异必须得到尊重，并可能导致在云基础架构上部署时出现不同的行为。 由于这些差异，在生产中推出新的自定义代码之前，必须对开发和阶段环境执行详尽的测试。
 
-为了为内部版本开发自定义代码，应下载并安 [装AEM作为Cloud ServiceSDK的相](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 关版本。 有关将AEM用作Cloud Service调度程序工具的其他信息，请参 [阅此页](/help/implementing/dispatcher/overview.md)。
+为了为内部版本开发自定义代码，应下载并安 [装AEM作为Cloud ServiceSDK的相](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 关版本。 有关将AEM用作Cloud Service调度程序工具的其他信息，请参 [阅此页](/help/implementing/dispatcher/disp-overview.md)。
 
 以下视频概括介绍了如何将代码部署到AEM作为Cloud Service:
 
