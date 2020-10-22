@@ -4,10 +4,10 @@ user-guide-title: AEM 云服务入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 61fa965f14e566976db8ac6475553b9a9d3ed43a
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 93%
+source-wordcount: '209'
+ht-degree: 90%
 
 ---
 
@@ -27,6 +27,18 @@ ht-degree: 93%
       + [了解程序和程序类型](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [创建程序](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [沙盒程序](getting-access-to-aem-in-cloud/sandbox-programs.md)
+   + 使用 Cloud Manager {#using-cloud-manager}
+      + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
+      + [配置 CI/CD 管线](/help/implementing/cloud-manager/configure-pipeline.md)
+      + [部署代码](/help/implementing/cloud-manager/deploy-code.md)
+   + 了解测试结果 {#test-results}
+      + [概述](/help/implementing/cloud-manager/overview-test-results.md)
+      + [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+      + [功能测试](/help/implementing/cloud-manager/functional-testing.md)
+      + [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
+   + [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)
+   + [了解通知](/help/implementing/cloud-manager/notifications.md)
    + 创建 AEM 应用程序项目 {#create-application-project}
       + [使用向导](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [设置项目](getting-access-to-aem-in-cloud/setting-up-project.md)
