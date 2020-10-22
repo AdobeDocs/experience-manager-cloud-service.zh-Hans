@@ -2,9 +2,9 @@
 title: 自定义代码质量规则-Cloud Services
 description: 自定义代码质量规则-Cloud Services
 translation-type: tm+mt
-source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
+source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2267'
 ht-degree: 6%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 6%
 本页介绍由Cloud Manager根据AEM Engineering的最佳实践创建的自定义代码质量规则。
 
 >[!NOTE]
->
->此处提供的代码示例仅供说明性用途。
+>此处提供的代码示例仅供说明性用途。 请参 [阅概念](https://docs.sonarqube.org/7.4/user-guide/concepts/) ，了解SonarQube概念和质量规则。
 
 ## SonarQube Rules {#sonarqube-rules}
 
