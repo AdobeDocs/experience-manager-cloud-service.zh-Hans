@@ -2,9 +2,9 @@
 title: 创作概念
 description: 在 AEM 中进行创作的概念
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
@@ -27,10 +27,6 @@ AEM 安装通常至少包含两个环境：
 ![作者、发布者和调度程序示意图](/help/sites-cloud/authoring/assets/author-publish.png)
 
 在创作环境中，AEM 的功能通过 AEM 创作 UI 来提供。对于发布环境，可以设计提供给用户使用的界面的整体外观。
-
->[!NOTE]
->
->AEM 本身被用于发布 AEM 文档。
 
 ## 创作环境 {#author-environment}
 
@@ -65,4 +61,4 @@ AEM 安装通常至少包含两个环境：
 
 ## Dispatcher {#dispatcher}
 
-为优化网站访问性能，**[调度程序](/help/implementing/dispatcher/overview.md)**实施了负载平衡和缓存。
+为优化网站访问性能，**[调度程序](/help/implementing/dispatcher/overview.md)**&#x200B;实施了负载平衡和缓存。
