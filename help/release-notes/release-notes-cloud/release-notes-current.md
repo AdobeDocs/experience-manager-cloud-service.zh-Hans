@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
-description: '[!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明。'
+description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
+source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 11%
+source-wordcount: '781'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* 单页应用程序(SPA)编辑器JavaScript SDK现 [在是开放源码。](/help/implementing/developing/spa/reference-materials.md)
+* 单页应用程序(SPA)编辑器JavaScript SDK现 [在是开放源代码。](/help/implementing/developing/spa/reference-materials.md)
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
 
@@ -87,7 +87,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-cra}
 
-* 云就绪性分析器(CRA)具有开始状态控制台，该控制台显 **示用户单击** “生成报告”按钮以执行CRA。
+* 云 [就绪性分析器](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) (CRA)具有开始状态控制台，该控制台显示一个明确的“ **生成报告** ”按钮，供用户单击以执行CRA。
 
 * CRA UI在运行时显示进度。 它显示正在分析的项目和在执行过程中找到的结果。
 
@@ -103,7 +103,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容传输工具(CTT)支持Azure Blob存储数据存储。
+* 内 [容传输工具(CTT)支持](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Azure Blob存储数据存储。
 
 * CTT用户界面具有自动重新加载功能，每30秒重新加载一次概述页面。
 
