@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
+source-wordcount: '4082'
 ht-degree: 9%
 
 ---
@@ -34,18 +34,19 @@ ht-degree: 9%
 
 ## 下载和提取工具 {#extracting-the-sdk}
 
-调度程序工具可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 请注意，访问SDK列表仅限于AEMManaged Services或AEM作为Cloud Service环境的。 该新调度程序工具版本中提供的任何新配置都可用于部署到云环境中运行该版本的AEM或更高版本。
+作为Cloud ServiceSDK的AEM的一 [部分](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), Dispatcher Tools可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 该新调度程序工具版本中提供的任何新配置均可用于部署到云环境，在云或更高版本中运行该版本的AEM。
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md解压缩SDK，该SDK捆绑了适用于macOS/Linux和Windows的Dispatcher Tools。
 
-**对于macOS和Linux**，请将shell脚本下载到计算机上的文件夹，使其可执行并运行它。 它将自解压存储到的目录下的调度程序工具文件(其 `version` 中是调度程序工具的版本)。
+**对于macOS/Linux**，使调度程序工具对象可执行并运行它。 它将自解压存储到的目录下的调度程序工具文件(其 `version` 中是调度程序工具的版本)。
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**对于Windows**，请下载zip存档并解压。
+**对于Windows**，解压Dispatcher Toolbingzip存档。
 
 ## 文件结构 {#file-structure}
 
@@ -379,7 +380,7 @@ Phase 2 finished
 
 还可以在本地测试Apache和调度程序配置。 它要求在本地安装文档程序，并且您的配置要通过验证，如上所述。
 
-使用“”参数执行验证程序工具，该`-d`参数输出一个文件夹，其中包含调度程序所需的所有配置文件。 然后，脚 `docker_run.sh` 本可以指向该文件夹。 通过提供端口号（在以下示例中，为8080）来公开调度程序端点，它将容器与您的配置开始。
+使用输出包含所有调度程序配置文件的文件夹 `validator.sh` 的参数，执行验证程序工具(注 `-d` 意它与前面提到的不同)。 然后执行 `docker_run.sh` 脚本，将该文件夹作为参数进行传递。 通过提供端口号(此处：8080)，启动一个Docker容器，使用您的配置运行调度程序。
 
 ```
 $ validator full -d out src/dispatcher
