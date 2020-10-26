@@ -2,7 +2,7 @@
 title: 开发和页面差异
 description: 了解页面差异功能的工作原理以及它如何影响开发人员
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 11%
@@ -30,7 +30,7 @@ ht-degree: 11%
 
 自动运行清除任务以清除此临时内容。
 
-## 权限 {#permissions}
+## 限制 {#limitations}
 
 差异通过DOM比较在客户端发生，使差异处理变得简单，但开发人员需要考虑许多限制。
 
