@@ -2,10 +2,10 @@
 title: 配置和配置浏览器
 description: 了解AEM配置以及它们如何管理AEM中的工作区设置。
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 1%
+source-wordcount: '1496'
+ht-degree: 2%
 
 ---
 
@@ -19,13 +19,13 @@ AEM配置用于管理AEM中的设置并用作工作区。
 配置可以从两个不同的角度来考虑。
 
 * [管理员将配置](#configurations-administrator) 用作AEM中的工作区来定义和管理设置组。
-* [开发人员](#configurations-developer) 使用实施Sling上下文感知配置的基础配置机制来保留并查找AEM中的设置。
+* [开发人员](#configurations-developer) 使用底层配置机制，该机制实现配置以在AEM中保留和查找设置。
 
-只需从管理员的视图点出发，配置即是您创建工作区以管理AEM中的设置的方式，而开发人员应了解AEM如何持续存在并在存储库中查找这些配置。
+总结：从管理员的视图角度，配置是您创建工作区以管理AEM中的设置的方式，而开发人员应了解AEM如何使用和管理存储库中的这些配置。
 
 无论从您的角度如何，配置在AEM中起着两个主要作用：
 
-* 配置为用户组启用某些功能。
+* 配置为特定用户组启用某些功能。
 * 配置定义了这些功能的访问权限。
 
 ## 管理员配置 {#configurations-administrator}
@@ -38,6 +38,8 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 * [Context Hub区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [可编辑的模板](/help/sites-cloud/authoring/features/templates.md)
+
+### 示例 {#administrator-example}
 
 例如，管理员可以为可编辑模板创建两种配置。
 
@@ -122,7 +124,7 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 
 内容通过属性引用其关联 `cq:conf` 配置。 AEM会根据内容和上下文属性执行查找，以 `cq:conf` 找到相应的配置。
 
-### 简单示例 {#example}
+### 示例 {#developer-example}
 
 在本例中，假设您有一些对DAM设置感兴趣的应用程序代码。
 
@@ -193,7 +195,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用配置 {#using-configurations}
 
-AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上 [一个示例中所述。](#example)
+AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上 [一个示例中所述。](#developer-example)
 
 有关上下文感知配置、示例以及如何使用这些配置的更多详细信 [息，请参阅Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
