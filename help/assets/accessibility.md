@@ -3,9 +3,9 @@ title: 中的辅助功能 [!DNL Experience Manager Assets]
 description: 了解Cloud Service提供的辅 [!DNL Adobe Experience Manager] 助功能如何帮助残障用户。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ## 支持使用键盘 {#keyboard-use}
 
-许多可单击或可操作指针的用户界面元素也可以使用键盘。 使用键盘，用户可以专注于UI元素并采取适当的操作。 用户无需关注UI元素并使用键盘触发命令或操作，即可直接使用键盘快捷键触发命令或操作。 例如，用户可以使用键盘、按回车键和按键盘快捷键浏览至UI控件，从而在左侧打开资产的时 `alt + 2` 间轴。
+许多可单击或可操作指针的用户界面元素也可以使用键盘。 使用键盘，用户可以专注于UI元素并采取适当的操作。 用户无需关注UI元素并使用键盘触发命令或操作，即可直接使用键盘快捷键触发命令或操作。 例如，用户可以使用键盘并按下键盘快捷键浏览至UI控件，从而在左侧打开资 `Return` 产的时 `Alt + 2` 间轴。
 
 <!-- TBD items:
 
