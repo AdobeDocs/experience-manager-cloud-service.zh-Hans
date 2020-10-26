@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
+source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4073'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,8 @@ ht-degree: 9%
 ## 下载和提取工具 {#extracting-the-sdk}
 
 作为Cloud ServiceSDK的AEM的一 [部分](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), Dispatcher Tools可从软件分发门户的zip文 [件下载](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 。 该新调度程序工具版本中提供的任何新配置均可用于部署到云环境，在云或更高版本中运行该版本的AEM。
-/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md解压缩SDK，该SDK捆绑了适用于macOS/Linux和Windows的Dispatcher Tools。
+
+解压缩SDK，它捆绑适用于macOS/Linux和Windows的Dispatcher Tools。
 
 **对于macOS/Linux**，使调度程序工具对象可执行并运行它。 它将自解压存储到的目录下的调度程序工具文件(其 `version` 中是调度程序工具的版本)。
 
