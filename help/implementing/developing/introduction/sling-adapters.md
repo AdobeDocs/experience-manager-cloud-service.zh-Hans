@@ -2,9 +2,9 @@
 title: 使用 Sling 适配器
 description: Sling优惠适配器模式以方便地翻译实现适应性接口的对象
 translation-type: tm+mt
-source-git-commit: 4201207acb48ab61892f4dd5de05d7f5f9f7ba83
+source-git-commit: 8826fde91a2ab0be0fe7850ae20f46ba023cdf55
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -358,4 +358,4 @@ Node node = resource.adaptTo(Node.class);
 
 #### 其他 {#other}
 
-此外，Sling/JCR/OCM还为自定 ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` 义OCM(对象内[容映射)对象提](https://jackrabbit.apache.org/object-content-mapping.html)供了一个。
+此外，Sling/JCR/OCM还为自定 [`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory) 义OCM(对象内[容映射)对象提](https://jackrabbit.apache.org/object-content-mapping.html)供了一个。
