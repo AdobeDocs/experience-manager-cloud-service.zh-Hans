@@ -4,10 +4,10 @@ user-guide-title: AEM 云服务入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager 云服务，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: 61fa965f14e566976db8ac6475553b9a9d3ed43a
+source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 90%
+source-wordcount: '220'
+ht-degree: 89%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 90%
       + [使用向导](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [设置项目](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [了解构建环境](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + Cloud Manager发行说明 {#release-notes-cloud-manager}
+      + [2020.10.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [2020.2.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + 数据隐私和保护已准备就绪 {#data-privacy}
    + [用于数据保护和数据隐私法规的 AEM 已准备就绪](data-privacy-and-protection-readiness/aem-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
