@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '850'
 ht-degree: 7%
 
 ---
@@ -67,9 +67,17 @@ ht-degree: 7%
 
 概 **述页** 上的环境卡最多列表三个环境。
 
-用户可以选择“显 **示全部** ”按钮，导航 **到环境摘要页面** 以视图具有完整列表的表。
+1. 选择“ **显示全** 部”按钮，导 **航到“** 环境”摘要页，视图具有完整环境的表。
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. 环境 **页面** 显示所有现有环境的列表。
+
+   ![](assets/environment-view-2.png)
+
+1. 从环境中选择任一列表以视图环境详细信息。
+
+   ![](assets/environment-view-3.png)
 
 
 ## 更新环境 {#updating-dev-environment}
