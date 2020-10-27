@@ -1,10 +1,11 @@
 ---
 sub-product: Adobe Experience Manager Assets 云服务
-user-guide-title: Assets 即 Cloud Service 指南
+user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets 云服务。
+solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 98f914fbae9fa6291a8330fe0fe6ebbf51984de1
+source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 79%
