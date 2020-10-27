@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 7%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 7%
 
 ## 添加环境 {#adding-environments}
 
-
 1. 单击“ **添加环境** ”以添加环境。 此按钮可从环境屏 **幕访** 问。
    ![](assets/environments-tab.png)
 
@@ -64,7 +63,7 @@ ht-degree: 7%
    >如果尚未设置非生产管道，“概述”屏 *幕将显示* 卡，您可以从中创建非生产管道的位置。
 
 
-### 查看环境 {#viewing-environment}
+## 查看环境 {#viewing-environment}
 
 概 **述页** 上的环境卡最多列表三个环境。
 
