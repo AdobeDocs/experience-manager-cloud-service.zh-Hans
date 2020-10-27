@@ -2,9 +2,9 @@
 title: 自定义代码质量规则-Cloud Services
 description: 自定义代码质量规则-Cloud Services
 translation-type: tm+mt
-source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2285'
 ht-degree: 6%
 
 ---
@@ -555,7 +555,7 @@ public void doThis(Resource resource) {
 
 **密钥**:CQRules:AMSCORE-554
 
-**类型**:代码气味
+**类型**:代码气味/Cloud Service兼容性
 
 **严重性**:次要
 
@@ -569,7 +569,7 @@ Sling调度程序不得用于需要有保证执行的任务。 Sling Scheduled J
 
 **密钥**:AMSCORE-553
 
-**类型**:代码气味
+**类型**:代码气味/Cloud Service兼容性
 
 **严重性**:次要
 
@@ -680,7 +680,7 @@ AEM内容存储库中的/libs内容树应被客户视为只读，这是一种长
 
 **密钥**:ClassicUIAuthoringMode
 
-**类型**:代码气味
+**类型**:代码气味/Cloud Service兼容性
 
 **严重性**:次要
 
@@ -692,7 +692,7 @@ OSGi配置定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 义AEM中的
 
 **密钥**:ComponentWithOnlyClassicUIDialog
 
-**类型**:代码气味
+**类型**:代码气味/Cloud Service兼容性
 
 **严重性**:次要
 
@@ -710,7 +710,7 @@ AEM现代化工具文档提供了如何将组件从经典UI转换为触屏UI的�
 
 **密钥**:ImmutableMutableMixedPackage
 
-**类型**:代码气味
+**类型**:代码气味/Cloud Service兼容性
 
 **严重性**:次要
 
@@ -724,7 +724,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/zh-Hans/exp
 
 **密钥**:反向复制
 
-**类型**:代码气味
+**类型**:代码气味/Cloud Service兼容性
 
 **严重性**:次要
 
