@@ -1,11 +1,11 @@
 ---
-title: 2020.2.0 版发行说明
-description: 2020.2.0 版发行说明
+title: AEM中Cloud Manager作为Cloud Service版本2020.2.0的发行说明
+description: AEM中Cloud Manager作为Cloud Service版本2020.2.0的发行说明
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 77%
+source-wordcount: '199'
+ht-degree: 66%
 
 ---
 
