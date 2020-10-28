@@ -1,129 +1,117 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager]  云服务 2020.10.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
+source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 9%
+source-wordcount: '848'
+ht-degree: 22%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] 云服务 2020.10.0 版的发行说明 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## 发布日期 {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
+以下版本(2020.11.0)将于11月26日发布。
 
-## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sitess}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* 单页应用程序(SPA)编辑器JavaScript SDK现 [在是开放源代码。](/help/implementing/developing/spa/reference-materials.md)
+<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+
+* **原型24工程**:开始新AEM项目的推荐基础更好，现在包括新的Adobe客户端数据层、以AMP形式传送站点的选项以及添加项目CSS/JS的新扩展点。
+
+* **ContextHub文件夹**:能够创建受众文件夹，以便轻松组织、查找和选择受众区段，以用于ContextHub优惠定位功能。
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 使用资产微服务生成的演绎版支持添加水印图像文件。 它可以配置为处理用户档案，并使用PNG文件作为水印。 请参 [阅为资产设置水印](/help/assets/watermark-assets.md)。
+* **[!DNL Adobe Sensei]强大的视频智能标记**:通过利用AI模型分析针对对象和特定操作标记的视频内容，DAM用户可以花费更少的时间添加标记，并将更多时间用于利用暴露的丰富信息向客户提供正确的体验。 请参 [阅智能标记视频资源](/help/assets/smart-tags-video-assets.md)。
 
-* 中的增强功能 [!DNL Dynamic Media]
+* **Brand Portal增强功能**:中提供了以下新增功能等 [!DNL Brand Portal]。 For details, see [[!DNL Brand Portal] release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * 选择性发布——营销团队现在可以访问同步到的 [!DNL Dynamic Media] 智能裁剪图像和动态演绎版，以便 [!DNL Dynamic Media] 创建促销资料，而无需将这些资产发布到全局 [!DNL Dynamic Media] 投放。 [!DNL Experience Manager] 而发 [!DNL Dynamic Media] 布是相互分离的，可单独进行，以实现这一点。 请参阅 [选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
-   * 管理员现在可以重 [!DNL Dynamic Media] 置在设置时收到的Cloud Service密码。 可在用户界面中完 [!DNL Experience Manager] 成重置，无需使用桌面应 [!DNL Dynamic Media Classic] 用程序。
+   * [增强的下载体验](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) ，简化、快速下载。 管理员可以配置其他下载配置，以优惠适合用户和企业需求的体验。
+   * 现在，可以从任何页面一键 [导航](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)到文件、集合和共享链接。
+   * 用户现 [在可以选择和下载特定](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 再现。 新的演绎版下载选项位于资产详细信息页面的演绎版面板中。
+   * 来宾用户会话超时15分钟可确保为所有并发用户提供更好的体验。
 
-* 要了解以下增强功能，请 [参阅Brand Portal的新增功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* **[!DNL Adobe Asset Link]2.1版**:有新版本的 [Adobe资产](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)[!DNL Adobe Photoshop]链接扩展， [!DNL Adobe Illustrator]并提 [!DNL Adobe InDesign] 供了该扩展。 它增加了与2020年10月发 [!DNL Adobe Creative Cloud] 布的2021版最新应用程序的兼容性。
 
-   * 集成Adobe Document Cloud视图SDK，增强PDF预览。
-   * 单击下载功能。
-   * 下载体验的新管理配置。
+* **[!DNL Assets]WebP文件支持**: [!DNL Assets] 作为Cloud Service，现在支持WebP图像格式。 WebP是由谷歌创建的一种新兴的图像格式。 WebP文件格式的图像在视觉上与JPG或PNG文件无明显区别，并且文件要小得多。 降低资产的文件大小可缩短页面加载时间，并帮助内容创建者交付更快的Web体验。
 
 <!--
 ### Bugs Fixed {#bugs-fixed-assets}
 
-TBD: list of Assets aaCS bugs that are fixed.
+Content to come
 -->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已发布CIF核心组件v1.3.0。有关更多详 [细信息，请参阅](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) CIF核心组件。
+* 已发布CIF Venia参考站点- 2020.10.2，其中包括最新CIF核心组件版本v1.4.0。有关更多详 [细信息，请参阅CIF Venia参考站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 。
 
-* 产品/预览模板的类别功能和类别模板现已可用。 这使AEM的商业用户／营销人员能够视图产品/类别模板和真实数据。
-
-* 属性页面已添加到产品和类别中，以允许业务用户视图与产品SKU/类别id关联的详细信息。
-
-* 添加到产品控制台的排序功能允许按名称或价格属性对产品/类别进行排序。
-
-* 产品搜索功能已添加到产品控制台。
+* 已发布CIF核心组件v1.4.0。有关更多详 [细信息，请参阅](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) CIF核心组件。
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* Commerce Cloud配置不尊重继承。 已对此进行修复，以确保配置继承值。
+* 产品控制台中的GraphQL请求和选择器是通过HTTPPOST完成的。 此问题已得到修复，以确保Apollo GraphQL客户端遵循GraphQL客户端OSGi配置中的设置，以在配置后支持GET请求。
 
-## Cloud Manager {#cloud-manager}
+* CIF云配置UI为/lib和/apps/中的配置显示“保存并关闭”按钮。 但这些是只读的，因此UI被修复为仅显示“关闭”按钮。
 
-### 发布日期 {#release-date-cm}
+### Cloud Manager {#cloud-manager}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+* 环境页面已重新设计。
 
-### 新增功能 {#what-is-new-cloud-manager}
+* 现在，进入休眠状态的环境在 Cloud Manager 中会显示离散状态。
 
-* 内容审核已重新标记为体验审核。
-* 构建过程已分为三个单独的Maven命令。
-* 如果无法克隆Git存储库，则最多将重新尝试三次。
+* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。
 
-### 错误修复 {#bug-fixes-cm}
+* 每个环境的环境变量数量已增加至 200 个。
 
-* “内容审核”选项卡使用作者域而非发布域错误地显示了基本URL。
+* “概述”页面上的环境卡现在最多可列表三个环境。 用户可以选择 **显示全** 部按钮，导航到环境摘要页面，以视图具有完整环境列表的表。
 
-## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-请阅读本章内容，了解 Cloud Readiness Analyzer v1.1.0 版的新增功能和更新。
+### 错误修复 {#bug-fixes-cloud-manager}
 
-### 新增功能 {#what-is-new-cra}
+* 在完全环境创建之前，从 Cloud Manager 到开发人员控制台的链接错误地处于活动状态。
 
-* 云 [就绪性分析器](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) (CRA)具有开始状态控制台，该控制台显示一个明确的“ **生成报告** ”按钮，供用户单击以执行CRA。
+* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒项目的环境解除休眠/休眠的选项。
 
-* CRA UI在运行时显示进度。 它显示正在分析的项目和在执行过程中找到的结果。
+* “非生产管道编辑”页面上的“取消”和“保存”按钮并不总是可见。
 
-* CRA报告以表格形式显示了调查结果的摘要和数量，按调查结果类型和重要性级别进行组织。 单击该查找结果的数量将自动滚动到该查找结果在报告中的位置。
+* 代码质量控制过程中出现的某些问题可能会导致日志文件无法正确生成。
 
-### 错误修复 {#cra-bug-fixes}
+* 创建新项目时，建议的名称有时会返回与现有项目名称重复的名称。
 
-* 在某些情况下，强制更新后，CRA报告没有得到更新。 此版本中已修复此问题。
+* 无法始终通过用户界面下载一些大型管道步骤日志文件。
+
+* 验证环境名称时出现差一错误。
+
+* “环境”页有时会显示不存在的 Publish 和 Dispatcher 段。
+
+
+## Adobe Experience Manager 云服务基础 {#cloud-service-foundation}
+
+### 工作流 {#workflows}
+
+* 增加了根据工作流标题、工作流模型、状态、发起者、有效负荷路径和开始日期搜索工作流实例的支持。
 
 ## 内容传输工具 {#content-transfer-tool}
 
-可查看本节以了解新增功能以及内容传输工具版本1.1.10的更新。
+Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内 [容传输工具(CTT)支持](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Azure Blob存储数据存储。
+* 改进了日志的用户体验。 添加到提取和摄取日志的时间戳。 添加的消息，指示日志是否为空。
 
-* CTT用户界面具有自动重新加载功能，每30秒重新加载一次概述页面。
+### 错误修复 {#ctt-bug-fixes}
 
-* 添加到CTT用户界面的按钮可轻松 *检索访问令牌* 。
-
-* 为URL和迁移集名称 *添加**了描述性验证消息*。
-
-## 代码重构工具 {#code-refactoring}
-
-可查看本节以了解新增功能和代码重构工具的更新。
-
-### 新增功能 {#what-is-new-refactoring}
-
-[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) 是一个实用程序，它通过将内容和代码分离成离散的包来重组现有项目包，以与为Adobe Experience Manager定义的项目结构(作为Cloud Service)兼容。
-
-* AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
-
-   请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
-
-* 存储库Modernizer实用程序可用于将现有项目包重构为与为AEM定义为Cloud Service的项目结构兼容的包。
-
-   请参阅 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) （存储库现代化器）。
-
+* 如果迁移集包含的路径与文件名部分相似，则内容传输工具将跳过内容文件。 已修复。
