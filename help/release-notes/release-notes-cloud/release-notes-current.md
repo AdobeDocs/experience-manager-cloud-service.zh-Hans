@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.10.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
+source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '855'
 ht-degree: 22%
 
 ---
@@ -66,7 +66,7 @@ Content to come
 
 * CIF云配置UI为/lib和/apps/中的配置显示“保存并关闭”按钮。 但这些是只读的，因此UI被修复为仅显示“关闭”按钮。
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * 环境页面已重新设计。
 
@@ -76,8 +76,8 @@ Content to come
 
 * 每个环境的环境变量数量已增加至 200 个。
 
-* “概述”页面上的环境卡现在最多可列表三个环境。 用户可以选择 **显示全** 部按钮，导航到环境摘要页面，以视图具有完整环境列表的表。
-
+* “概述”页面上的环境卡现在最多可列表三个环境。 用户可以选择 **显示全部** 按钮，导航到环境摘要页面以视图具有完整环境列表的表。
+有关更多 [详细信息](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) ，请参阅查看环境。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
