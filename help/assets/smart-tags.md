@@ -1,17 +1,17 @@
 ---
-title: 使用智能服务标记图像
-description: 使用人为智能服务标记图像，这些服务使用Adobe Sensei服务应用上下文和描述性商业标签。
+title: 使用AI生成的标记自动标记图像
+description: 使用人工智能服务标记图像，这些服务使用服务应用上下文和描述性 [!DNL Adobe Sensei] 商业标签。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2433'
 ht-degree: 6%
 
 ---
 
 
-# 培训智能标签服务并标记图像 {#train-service-tag-assets}
+# 培训智能内容服务并自动标记图像 {#train-service-tag-assets}
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 本质上，它包含一列表关键字，员工、合作伙伴和客户通常使用这些关键字来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保通过基于标记的搜索轻松识别和检索资产。
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. 然后，此内容智能用于对另一组资产应用相关标记。
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -33,13 +33,13 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 智能标记仅适用于 [!DNL Adobe Experience Manager Assets] 客户。 The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->默认情 [!DNL Experience Manager Assets] 况下，新部署 [!DNL Adobe Developer Console] 与集成。 它有助于更快地配置智能标记功能。 在现有部署中，管理员可以手 [动配置智能标记集成](/help/assets/smart-tags-configuration.md#aio-integration)。
+>默认情 [!DNL Experience Manager Assets] 况下，新部署 [!DNL Adobe Developer Console] 与集成。 它有助于更快地配置智能标记功能。 在旧版部署中，管理员可以手 [动配置智能标记集成](/help/assets/smart-tags-configuration.md#aio-integration)。
 
 您可以使 [!DNL Adobe Experience Manager] 用与智能标记集成 [!DNL Adobe Developer Console]。 使用此配置从中访问智能标记服务 [!DNL Experience Manager]。 请参 [阅配置资产智能标记的Experience Manager](smart-tags-configuration.md) ，以便任务配置智能标记。 At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
@@ -154,28 +154,36 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 1. 单击 **[!UICONTROL 开始]**。 该工作流会对资产应用您的标记。 导航到资产文件夹并检查标记，以验证您的资产是否已正确标记。 有关详细信息，请参 [阅管理智能标记](#manage-smart-tags-and-searches)。
 
 >[!NOTE]
->
+
 >在随后的标记周期中，只有修改后的资产会再次使用经过新培训的标记进行标记。但是，如果标记工作流的上一个标记周期与当前标记周期之间的间隔超过24小时，即使资产未更改也会进行标记。 对于定期标记工作流，当时间间隔超过6个月时，将标记未更改的资产。
 
 ### 标记已上传的资产 {#tag-uploaded-assets}
 
 Experience Manager可以自动标记用户上传到DAM的资产。 为此，管理员配置工作流，以向智能标记资产添加可用步骤。 了解 [如何为已上传的资产启用智能标记](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
 
-## 管理智能标记和图像搜索 {#manage-smart-tags-and-searches}
+## 管理智能标记和资产搜索 {#manage-smart-tags-and-searches}
 
-您可以创建智能标记以删除可能分配给您的品牌图像的任何不准确标记，以便只显示最相关的标记。
+您可以创建智能标记以删除可能分配给您的品牌资产的任何不准确标记，以便只显示最相关的标记。
 
-调节智能标签还可确保图像显示在最相关标签的搜索结果中，从而帮助优化基于标签的图像搜索。 从根本上说，它有助于消除不相关图像在搜索结果中出现的可能性。
+调节智能标记还可确保您的资产显示在最相关标记的搜索结果中，从而帮助优化基于标记的资产搜索。 本质上，这有助于消除不相关资产出现在搜索结果中的可能性。
 
-您还可以为标记分配更高的等级，以提高其与图像的相关性。 提升图像的标记可提高当基于特定标记执行搜索时在搜索结果中出现图像的可能性。
+您还可以为标记分配更高的等级，以提高其与资产的相关性。 提升资产的标记会增加在根据特定标记执行搜索时资产在搜索结果中显示的可能性。
 
-1. 在“全局搜索”框中，根据标记搜索资产。
-1. Inspect搜索结果，以识别与搜索不相关的图像。
-1. 选择图像，然后单击工 **[!UICONTROL 具栏中的]** “管理标记”图标。
-1. 从“管 **[!UICONTROL 理标记]** ”页面检查标记。 如果不希望根据特定标记搜索图像，请选择该标记，然后单击工具栏中的删除图标。 或者，单 `X` 击标签旁边显示的符号。
-1. 要为标记分配更高的等级，请选择标记，然后单击工具栏中的提升图标。 您提升的标记将移到“标记 **[!UICONTROL ”部]** 分。
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
-1. 导航到图像的属性页面。 请注意，您提升的标记具有较高的相关性，因此在搜索结果中显示得更高。
+要审核资产的智能标记，请执行以下操作：
+
+1. 在Omnisearch字段中，根据标记搜索资产。
+
+1. Inspect搜索结果，以识别您找不到与搜索相关的资产。
+
+1. 选择资产，然后从工具栏 ![中选择管理标](assets/do-not-localize/manage-tags-icon.png) 记图标。
+
+1. 从“管 **[!UICONTROL 理标记]** ”页面检查标记。 如果您不希望根据特定标记搜索资产，请选择该标记，然后从工具栏 ![中选择](assets/do-not-localize/delete-icon.png) “删除”图标。 或者，选 `X` 择标签旁的符号。
+
+1. 要为标记分配更高的等级，请选择标记，然后从工 ![具栏中选](assets/do-not-localize/promote-icon.png) 择提升图标。 您提升的标记将移到“标记 **[!UICONTROL ”部]** 分。
+
+1. 选择 **[!UICONTROL 保存]** ，然后选择 **[!UICONTROL 确定]** ，以关闭 [!UICONTROL 成功对话] 框。
+
+1. 导航到资 [!UICONTROL 产的] “属性”页面。 请注意，您提升的标记具有较高的相关性，因此在搜索结果中显示得更高。
 
 ### 使用智能标签了解AEM搜索结果 {#understandsearch}
 
@@ -210,4 +218,5 @@ Experience Manager可以自动标记用户上传到DAM的资产。 为此，管�
 >
 >* [为智能标记配置Experience Manager](smart-tags-configuration.md)
 >* [了解智能标记如何帮助管理资产](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [智能标记视频资产](smart-tags-video-assets.md)
 
