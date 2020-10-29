@@ -1,10 +1,10 @@
 ---
 title: 缓存和性能
-description: 缓存和性能
+description: 了解可启用GraphQL和内容缓存以优化商务实施性能的不同配置。
 translation-type: tm+mt
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -44,15 +44,15 @@ venia/components/structure/navigation:true:10:600
 
 当考虑使 [用Venia Reference](https://github.com/adobe/aem-cif-guides-venia) store时。 请注意组件代理名 `venia/components/structure/navigation`称的使 **用** ，而不是CIF导航组件(`core/cif/components/structure/navigation/v1/navigation`)的名称。
 
-其他组件的缓存应根据项目定义，通常与在Dispatcher级别配置的缓存相协调。 请记住，这些缓存没有任何活动失效，因此应谨慎设置缓存持续时间。 没有任何“一刀切”的值能与所有可能的项目和使用案例相匹配。 确保在项目级别定义最适合项目要求的缓存策略。
+其他组件的缓存应根据项目定义，通常与在调度程序级别配置的缓存相协调。 请记住，这些缓存没有任何活动失效，因此应谨慎设置缓存持续时间。 没有任何“一刀切”的值能与所有可能的项目和使用案例相匹配。 确保在项目级别定义最适合项目要求的缓存策略。
 
-## Dispatcher缓存 {#dispatcher}
+## 调度程序缓存 {#dispatcher}
 
-在AEMDispatcher中缓存AEM页 [或片段](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html) ，是任何AEM项目的最佳做法。 通常，它依赖于失效技术，以确保AEM中更改的任何内容在Dispatcher中正确更新。 这是AEMDispatcher缓存策略的核心功能。
+在AEM Dispatcher中缓存AEM页 [或片段](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html) ，是任何AEM项目的最佳做法。 通常，它依赖于失效技术，以确保AEM中更改的任何内容在调度程序中正确更新。 这是AEM Dispatcher缓存策略的核心功能。
 
 除了纯AEM托管内容CIF外，页面通常还可以显示通过GraphQL从Magento动态获取的商务数据。 虽然页面结构本身可能永远不会更改，但商务内容可能会更改，例如，如果某些产品数据（名称、价格等）在Magento中发生更改。
 
-为确保在AEM调度程序中缓存CIF页面的时间有限，因此建议在AEMDispatcher中缓存 [CIF页面时使用基于时间的缓存失效](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) （也称为基于TTL的缓存）。 此功能可在AEM中使用额外的ACS AEM公 [域包进行配](https://adobe-consulting-services.github.io/acs-aem-commons/) 置。
+为确保在AEM调度程序中缓存CIF页面的时间有限，因此建议在AEM Dispatcher中缓存 [CIF页面时使用基于时间的缓存失效](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) （也称为基于TTL的缓存）。 此功能可在AEM中使用额外的ACS AEM公 [域包进行配](https://adobe-consulting-services.github.io/acs-aem-commons/) 置。
 
 使用基于TTL的缓存，开发者通常为选定的AEM页面定义一个或多个缓存持续时间。 这确保CIF页面仅在配置持续时间之前缓存在AEM调度程序中，并且内容将频繁更新。
 
@@ -64,4 +64,4 @@ venia/components/structure/navigation:true:10:600
 
 - [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL缓存配置](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEMDispatcher](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM调度程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)
