@@ -2,10 +2,10 @@
 title: AEM中Cloud Manager作为Cloud Service版本2020.10.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2020.10.0的发行说明
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: d992646fd89a4e502d74533f5fa2bbe994a9ab97
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 54%
+source-wordcount: '300'
+ht-degree: 48%
 
 ---
 
@@ -26,7 +26,7 @@ AEM中Cloud Manager作为Cloud Service2020.10.0的发布日期为2020年10月1�
 
 * 现在，进入休眠状态的环境在 Cloud Manager 中会显示离散状态。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。
+* Cloud Manager构建容器现在支持使用Java 8或Java 11编译项目。 Maven工具链系统提供对Java 11的支持。
 
 * 每个环境的环境变量数量已增加至 200 个。
 
