@@ -1,10 +1,18 @@
 ---
 title: 创建多个类别和产品页面
-description: 创建多个类别和产品页面
+description: 了解如何通过有针对性的营销内容丰富类别登录和产品详细信息页面。
+sub-product: 商务
+version: cloud-service
+doc-type: feature-video
+activity: use
+audience: marketer
+feature: Commerce Integration Framework
+kt: 3455
+thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d79ac17a2282f2c08b69fae24e672bf17ddf8dc4
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
