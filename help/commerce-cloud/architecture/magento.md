@@ -1,18 +1,19 @@
 ---
 title: AEM和Magento集成（使用Commerce Integration Framework）
-description: AEM和Magento集成（使用Commerce Integration Framework）
+description: AEM和Magento通过商务集成框架(CIF)无缝集成。 CIF使AEM能够访问Magento实例并通过GraphQL与Magento通信。 它还允许AEM作者使用产品和类别选择器以及产品控制台浏览从Magento按需获取的产品和类别数据。 此外，CIF还提供开箱即用的店面，可以加快商业项目。
+thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
 
 # AEM and Magento Integration using Commerce Integration Framework {#aem-magento-framework}
 
-AEM和Magento通过商务集成框架(CIF)无缝集成。 CIF使AEM能够访问Magento实例并通过GraphQL与Magento通信。 它还允许AEM Author使用产品和类别选择器以及产品控制台浏览从Magento按需获取的产品和类别数据。 此外，CIF还提供开箱即用的店面，可以加快商业项目。
+AEM和Magento通过商务集成框架(CIF)无缝集成。 CIF使AEM能够访问Magento实例并通过GraphQL与Magento通信。 它还允许AEM作者使用产品和类别选择器以及产品控制台浏览从Magento按需获取的产品和类别数据。 此外，CIF还提供开箱即用的店面，可以加快商业项目。
 
 ## 架构概述 {#overview}
 
