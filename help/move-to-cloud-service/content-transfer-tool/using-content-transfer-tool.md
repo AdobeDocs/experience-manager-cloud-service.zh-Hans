@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ ht-degree: 78%
 
 * 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的Cloud Service实例中的本地AEM管理员组。 无特权的用户将无法检索访问令牌，进而无法使用内容传输工具。
 
+* 当前，AEM作为Cloud Service作者实例的默认MongoDB大小为32GB。 建议对于大于20GB的区段存储大小，您应提交支持票证以增加MongoDB大小。
+
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
-* 作者的&#x200B;*摄取阶段*&#x200B;将会按比例缩小整个作者部署。这意味着作者 AEM 在整个摄取过程中将不可用。
+* 在完成内 *容转* 移过程的提取阶段 ********** ，并在开始将内容作为Cloud Service阶段或生产实例引入AEM之前，您需要记录支持以通知Adobe您运行IngestionIngestion，以便Adobe可以确保在引入过程中不发生中断的情况，来确保在引入过程中不发生中断。 您需要在计划的摄取日期前1周记录支持 *票* 证。 一旦您提交了支持票证，支持团队将提供后续步骤的指导。
+   * 使用以下详细信息记录支持票证：
+   1. 计划开始摄取阶段时的确切日期和估计时间(与时区 *一起* )。
+   2. 环境类型（阶段或生产），您计划将数据引入。
+   3. 项目ID
 
-* 当前，AEM作为Cloud Service作者实例的默认MongoDB大小为32GB。 建议对于大于20GB的区段存储大小，您应提交支持票证以增加MongoDB大小。
+* 作者的&#x200B;*摄取阶段*&#x200B;将会按比例缩小整个作者部署。这意味着作者 AEM 在整个摄取过程中将不可用。另外，请确保在运行摄取阶段时不执行Cloud Manager *管道* 。
+
 
 ## 可用性 {#availability}
 
