@@ -1,10 +1,16 @@
 ---
 title: AEM Commerce作为Cloud Service入门
-description: AEM Commerce作为Cloud Service入门
+description: 了解如何将支持商务的AEM项目部署到作为云服务环境运行的AEM。 使用Adobe云管理器和CI/CD管道的功能，为正在运行的环境构建Venia参考店面。
+topics: Commerce
+feature: Commerce Integration Framework, Cloud Manager
+version: cloud-service
+doc-type: tutorial
+kt: 4947
+thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '600'
 ht-degree: 2%
 
 ---
