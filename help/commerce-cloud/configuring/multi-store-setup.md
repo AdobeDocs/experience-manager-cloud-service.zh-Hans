@@ -1,11 +1,19 @@
 ---
 title: 多商店设置
-description: 多商店设置
+description: 了解如何映射从Magento到AEM的多个商店视图。 这允许项目支持多租户和多语言使用案例。
+sub-product: 商务
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 3046
+thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
+source-wordcount: '354'
+ht-degree: 1%
 
 ---
 
