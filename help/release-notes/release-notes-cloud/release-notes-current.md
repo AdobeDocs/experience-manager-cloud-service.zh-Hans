@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.10.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: 95a5c9ad098a3670221847b9c45cdf6c6e22192f
+source-git-commit: a544acab6f79fa60990bfc3915a5a664befb8b09
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 21%
+source-wordcount: '882'
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
 以下版本(2020.11.0)将于2020年12月1日发布。
 
-## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sitess}
+## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
@@ -72,7 +72,7 @@ Content to come
 
 * 现在，进入休眠状态的环境在 Cloud Manager 中会显示离散状态。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。
+* Cloud Manager构建容器现在支持使用Java 8或Java 11编译项目。 Maven工具链系统提供对Java 11的支持。
 
 * 每个环境的环境变量数量已增加至 200 个。
 
