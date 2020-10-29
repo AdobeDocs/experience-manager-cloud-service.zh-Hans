@@ -2,15 +2,16 @@
 title: 样式AEM CIF核心组件
 description: 了解如何设计AEM CIF核心组件的样式。 本教程介绍如何使用客户端库或客户端库为Adobe Experience Manager(AEM)商务实施部署和管理CSS和Javascript。 本教程还将介绍如何将ui.frontend模块和Webpack项目集成到端到端构建过程中。
 sub-product: 商务
-topics: front-end-development
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 2%
