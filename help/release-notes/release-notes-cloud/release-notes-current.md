@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  云服务 2020.10.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
+source-git-commit: 95a5c9ad098a3670221847b9c45cdf6c6e22192f
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 21%
@@ -17,7 +17,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 ## 发布日期 {#release-date}
 
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
-以下版本(2020.11.0)将于11月26日发布。
+以下版本(2020.11.0)将于2020年12月1日发布。
 
 ## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sitess}
 
