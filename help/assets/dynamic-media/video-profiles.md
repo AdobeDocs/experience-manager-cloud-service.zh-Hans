@@ -2,9 +2,9 @@
 title: Dynamic Media 视频配置文件
 description: Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 您还可以向视频添加智能裁剪。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3680'
 ht-degree: 29%
 
 ---
@@ -315,7 +315,7 @@ By default, you cannot edit the predefined, out-of-the-box **[!UICONTROL Adaptiv
 
 要为其他资产类型定义高级处理参数，请参 [阅配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-**要编辑视频用户档案**:
+**编辑视频用户档案**:
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
 1. 在“视频用户档案”页面上，选中一个视频用户档案名称。
@@ -422,6 +422,6 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 ### 通过属性将视频用户档案从文件夹删除 {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. 点按或单击AEM徽标，导航到 **[!UICONTROL 资产]** ，然后导航到您要从中删除视频用户档案的文件夹。
-1. 在文件夹中，点按或单击复选标记以将其选中，然后点按或单击 **[属性]**。
+1. 在文件夹中，点按或单击复选标记以将其选中，然后点按 **[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存并关闭]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
