@@ -3,7 +3,7 @@ title: 元数据配置文件
 description: 了解资产的元数据用户档案。 了解如何创建元数据用户档案并将其应用到文件夹资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 37%
@@ -89,7 +89,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. In the left rail, tap **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
 1. 在文件夹中，点按或单击复选标记以将其选中，然后点按或单击 **属性**。
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[Save]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 ### 全局应用元数据用户档案 {#applying-a-metadata-profile-globally}
 
