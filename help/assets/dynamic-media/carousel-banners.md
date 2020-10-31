@@ -2,7 +2,7 @@
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 21%
@@ -258,8 +258,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 >但是，请注意，传送横幅支持图像上的图像地图，这些图像上也可能包含热点；交互式图像则不会。 如果要创建使用同一图像的交互式图像或传送横幅，请牢记这一点。 您可能希望改为使用同一图像的单独副本创建交互式图像和传送横幅。
 
 >[!NOTE]
->
->如果您正在使用热点编辑交互式图像并裁剪图像，则您的热点将被删除。
+如果您正在使用热点编辑交互式图像并裁剪图像，则您的热点将被删除。
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
@@ -296,8 +295,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
       * 如果您是AEM Sites客户，请点按站点选择器图标（文件夹）以导航到URL。
 
          >[!NOTE]
-         >
-         >如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
+         如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
 
       * 如果您是独立客户，请在“HREF”文本字段中指定链接网页的完整URL路径。
 
@@ -313,10 +311,8 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
       * 指定体验片段在横幅上的显示方式，如同其宽度和高度一样。
 
          >[!NOTE]
-         >
-         >请注意，在体验片段中嵌入查看器时，轮盘横幅中不支持社交媒体共享工具。
-         >要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
-
+         请注意，在体验片段中嵌入查看器时，轮盘横幅中不支持社交媒体共享工具。
+         要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    您还可以预览传送横幅的外观。 请参 [阅（可选）预览传送横幅](#optional-previewing-carousel-banners)。
@@ -331,8 +327,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 ## 编辑传送集 {#editing-carousel-sets}
 
 >[!NOTE]
->
->必须将非管理用户添加到 **[!UICONTROL dam-users组]** ，才能创建或编辑传送横幅。 如果您在创建或编辑时遇到问题，请咨询系统管理员，他可以将您添 **[!UICONTROL 加到dam用户组]** 。
+必须将非管理用户添加到 **[!UICONTROL dam-users组]** ，才能创建或编辑传送横幅。 如果您在创建或编辑时遇到问题，请咨询系统管理员，他可以将您添 **[!UICONTROL 加到dam用户组]** 。
 
 您可以对传送集执行各种编辑任务，如：
 
@@ -364,8 +359,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
    * 要删除整个传送集，请导航到传送集，将其选中，然后点按删 **[!UICONTROL 除]**。
 
    >[!NOTE]
-   >
-   >如果您正在使用热点编辑交互式图像并裁剪图像，则您的热点将被删除。
+   如果您正在使用热点编辑交互式图像并裁剪图像，则您的热点将被删除。
 
 ## （可选）预览传送横幅 {#optional-previewing-carousel-banners}
 
@@ -385,7 +379,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. 点按 **[预览]**。
+1. 点按 **[!UICONTROL 预览]**。
 1. 点按图像上的热点或图像映射，以测试其关联的操作。
 
 **从“查看器”预览传送横幅列表**
@@ -400,9 +394,8 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 您需要发布传送才能使用它。 发布传送集时，将激活URL和嵌入代码。 它还将传送发布到Dynamic Media云，该云与CDN集成，可进行可扩展且高性能的投放。
 
 >[!NOTE]
->
->如果您将现有的带热点的交互式图像用于传送横幅，则必须在发布传送横幅后单独发布该交互式图像。
->此外，如果您修改了在传送横幅中使用的预先存在的已发布交互式图像，则必须先发布交互式图像，然后才能将这些更改反映到传送横幅中。
+如果您将现有的带热点的交互式图像用于传送横幅，则必须在发布传送横幅后单独发布该交互式图像。
+此外，如果您修改了在传送横幅中使用的预先存在的已发布交互式图像，则必须先发布交互式图像，然后才能将这些更改反映到传送横幅中。
 
 有关 [如何发布传送横幅](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) ，请参阅发布Dynamic Media资产。
 
@@ -411,8 +404,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 在上传横幅图像以创建传送、向横幅添加热点和／或图像映射并发布传送集后，您现在可以将其添加到现有网站页面。
 
 >[!NOTE]
->
->如果您是AEM Sites的客户，则可以通过将交互式媒体组件拖动到页面，将传送横幅直接添加到您的页面。 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites的客户，则可以通过将交互式媒体组件拖动到页面，将传送横幅直接添加到您的页面。 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 但是，如果您是独立的AEM assets客户，则可以按本节所述手动将传送横幅添加到您的网站登陆页。
 
