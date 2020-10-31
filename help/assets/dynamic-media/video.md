@@ -2,7 +2,7 @@
 title: 视频
 description: 了解如何在Dynamic Media中处理视频
 translation-type: tm+mt
-source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '10056'
 ht-degree: 29%
@@ -690,7 +690,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 点按 AEM 左上角的 AEM 徽标，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。
 1. 单击 **[!UICONTROL 默认]**。 （请勿在“default”左侧的选择框中添加复选标记。）
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[Edit]**.
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[!UICONTROL Edit]**.
 1. 在元数据模式编辑器页面上，单击高 **[!UICONTROL 级选]** 项卡。
 1. 在“YouTube 发布”标题下，单击 **[!UICONTROL YouTube 类别]**。
 1. 在页面右侧的设置选项卡 **[!UICONTROL 下]** ，执行以下操作：
