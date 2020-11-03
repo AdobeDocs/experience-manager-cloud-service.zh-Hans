@@ -3,9 +3,9 @@ title: 支持的文件格式和MIME类型
 description: Experience Manager资产作为Cloud Service支持的文件格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '812'
 ht-degree: 34%
 
 ---
@@ -60,7 +60,6 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## 在 [!DNL Dynamic Media] {#image-support-dynamic-media}
