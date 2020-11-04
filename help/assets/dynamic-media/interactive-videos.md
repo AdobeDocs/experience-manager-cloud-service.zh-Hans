@@ -2,9 +2,9 @@
 title: 交互式视频
 description: 了解如何在Dynamic Media中处理交互式视频和购物视频
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6016'
 ht-degree: 26%
 
 ---
@@ -82,13 +82,13 @@ Creating your own Interactive Video viewer preset is not required if you intend 
 
 1. **为视频添加交互性** -为视频添加一个或多个时间段。 然后，将这些时间段内的图像缩略图关联起来。 将每个图像缩略图分配给操作，如超链接、概览或体验片段。
 (请注意，如果您的交互式内容包含与相对URL(尤其是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。)
-最后，发布交互式视频资源。 Publishing creates the embed code or URL that you will eventually copy and apply to your website landing page.See [Adding interactivity to your video](#adding-interactivity-to-your-video).
+Publishing creates the embed code or URL that you will eventually copy and apply to your website landing page.See [Adding interactivity to your video](#adding-interactivity-to-your-video).
 请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 1. **将交互式视频添加到您的网站或AEM中的您的网站**&#x200B;如果您使用AEM Sites、AEM电子商务，或同时使用二者，则可以通过将交互式媒体组件拖动到页面上，将交互式视频直接添加到AEM的网页。 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 使用嵌入代码或URL将交互式视频与您的网站体验相集成。 See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
 如果您使用第三方WCM（Web内容管理器），则必须将新的交互式视频与网站上使用的现有Quickview实现相集成。 请参 [阅将交互式视频与现有Quickview集成](#integrating-an-interactive-video-with-an-existing-quickview)。
-   [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   [将 Dynamic Media 资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## （可选）识别概览变量 {#optional-identifying-quickview-variables}
 
@@ -476,7 +476,7 @@ If you have already uploaded your video and thumbnail assets, proceed to [Adding
       在时间轴上，点按要分成两半的区段，然后点按工 **[!UICONTROL 具栏上的]** “拆分区段”。
 
       选择两个或多个段将禁用“拆 **[!UICONTROL 分段]** ”功能。
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    将选定的10秒段分为两段，每段5秒。
 
