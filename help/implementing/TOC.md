@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM 云服务
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager 云服务部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 66%
+source-wordcount: '408'
+ht-degree: 64%
 
 ---
 
@@ -45,7 +45,6 @@ ht-degree: 66%
    + [使用客户端库](developing/introduction/clientlibs.md)
    + [配置和配置浏览器](developing/introduction/configurations.md)
    + [记录](developing/introduction/logging.md)
-   + [AEM 云服务 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [页面差异](/help/implementing/developing/introduction/page-diff.md)
    + [编辑器限制](/help/implementing/developing/introduction/editor-limitations.md)
    + [命名约定](/help/implementing/developing/introduction/naming-conventions.md)
