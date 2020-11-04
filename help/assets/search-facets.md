@@ -2,9 +2,9 @@
 title: 搜索 Facet.
 description: 本文介绍如何在AEM中创建、修改和使用搜索彩块化。
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2377'
 ht-degree: 34%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 34%
 
 # 搜索 Facet {#search-facets}
 
-Adobe Experience Manager(AEM)资产在企业范围内进行部署，能够存储许多资产。 有时，如果您仅使用AEM的通用搜索功能，则查找正确的资产可能既困难又耗时。
+Adobe Experience Manager(AEM)资产在整个企业范围内的部署能够存储许多资产。 有时，如果您仅使用AEM的通用搜索功能，则查找正确的资产可能既困难又耗时。
 
 使用“过滤器”面板中的搜索彩块化，为您的搜索体验添加更多粒度，并使搜索功能更高效、用途更广。 搜索彩块化可添加多个维度（谓词），使您能够执行更复杂的搜索。 过滤器面板包括一些标准彩块化。 您还可以添加自定义搜索彩块化。
 
 总之，搜索彩块化允许您以多种方式而非按单一、预先确定的分类顺序搜索资产。 您可以轻松地向下展开到所需的详细级别，以便进行更集中的搜索。
 
-例如，如果您要查找图像，则可以选择要位图还是矢量图像。 您可以通过为图像指定MIME类型进一步缩小搜索范围。 同样，在搜索文档时，可以指定格式，例如PDF或MS Word。
+例如，如果您要查找图像，则可以选择是要位图还是矢量图像。 您可以通过为图像指定MIME类型进一步缩小搜索范围。 同样，在搜索文档时，可以指定格式，例如PDF或MS Word。
 
 ## 添加谓词 {#adding-a-predicate}
 
@@ -35,19 +35,19 @@ Adobe Experience Manager(AEM)资产在企业范围内进行部署，能够存储
 
    ![按并移动谓词以自定义搜索过滤器](assets/drag_predicate.png)
 
-   *图： 按并移动谓词以自定义搜索过滤器。*
+   *图：按并移动谓词以自定义搜索过滤器。*
 
 1. 在设置选项卡中，输入谓词的字段标签、占位符文本和说明。 为要与谓词关联的元数据属性指定有效名称。 设置选项卡中的标题标签标识所选谓词的类型。
 
    ![使用设置选项卡提供谓词的所需选项](assets/settings.png)
 
-   *图： 使用设置选项卡提供谓词的所需选项。*
+   *图：使用设置选项卡提供谓词的所需选项。*
 
 1. 在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，为要与谓词关联的元数据属性指定有效名称。该名称是执行搜索时所依据的名称。例如，输入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。也可以从选择对话框中选择现有节点。
 
    ![将元数据属性与属性名称字段中的谓词关联](assets/property_settings.png)
 
-   *图： 将元数据属性与属性名称字段中的谓词关联。*
+   *图：将元数据属性与属性名称字段中的谓词关联。*
 
 1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
 1. 在“预览”模式下查看谓词的布局。
@@ -58,7 +58,7 @@ Adobe Experience Manager(AEM)资产在企业范围内进行部署，能够存储
 
 1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
 1. Tap **[!UICONTROL Done]** to save the settings.
-1. 导航到资产用户界面中的搜索面板。 属性谓词已添加到该面板。
+1. 导航到资产用户界面中的搜索面板。属性谓词已添加到该面板。
 1. 在文本框中输入对要搜索的资产的描述。例如，输入“Adobe”。执行搜索时，其描述与“Adobe”匹配的资产便会列在搜索结果中。
 
 ## 添加“选项”谓词 {#adding-an-options-predicate}
@@ -102,7 +102,7 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
 1. 执行下列操作之一：
 
    * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-   * 点 ![](assets/do-not-localize/aem_assets_add_icon.png) 按“选项”字段旁的，以指定要在“过滤器”面板中提供的选项的显示文本和值。 要添加其他选项，请点按／单 ![](assets/do-not-localize/aem_assets_add_icon.png) 击并重复该步骤。
+   * 点 ![按“选项](assets/do-not-localize/aem_assets_add_icon.png) ”字段旁边的资产添加图标，以指定要在“过滤器”面板中提供的选项的显示文本和值。 要添加其他选项，请点按／单 ![击资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) ，然后重复该步骤。
 
 1. 确保取消选中&#x200B;**[!UICONTROL 单选]**，以允许用户一次为文件类型选择多个选项（例如，“图像”、“文档”、“多媒体”和“存档”）。如果选中&#x200B;**[!UICONTROL 单选]**，则用户一次只能为文件类型选择一个选项。
 
@@ -111,14 +111,14 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
    “选项”谓词中的可用字段
 
 1. 在&#x200B;**描述**&#x200B;字段中，输入可选描述，然后单击&#x200B;**[!UICONTROL 完成]**。
-1. 导航到“搜索”面板。 “选项”谓词已添加到“搜 **索** ”面板。 “文件类型 **[!UICONTROL ”的选项]** 将显示为复选框。
+1. 导航到“搜索”面板。“选项”谓词已添加到“搜 **索** ”面板。 “文件类型 **[!UICONTROL ”的选项]** 将显示为复选框。
 
 ## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
-此谓 `Multi Value Property` 词允许您搜索多个值的资产。 请考虑一种情况，即您在AEM Assets中拥有多个产品的图像，并且每个图像的元数据包括与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
+此谓 `Multi Value Property` 词允许您搜索多个值的资产。 请考虑一种情况，即您在AEM Assets拥有多个产品的图像，且每个图像的元数据包括与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
 1. 单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索表单]**。
-1. 在“搜索表单”页面上，选 **[!UICONTROL 择资产管理搜索边栏]**，然后点 **按** 编 ![辑aemassets_edit](assets/aemassets_edit.png)。
+1. 在“搜索Forms”页面上，选 **[!UICONTROL 择“资产管理员搜索边栏]**”，然后点 **按** 编 ![辑aemassets_edit](assets/aemassets_edit.png)。
 1. 在“编辑搜索表单”页中，将&#x200B;**[!UICONTROL 多值属性谓词]**&#x200B;从&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡拖到主窗格。
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. 您还可以使用选择对话框选择节点。
 1. 确保选中&#x200B;**[!UICONTROL 分隔符支持]**。在&#x200B;**[!UICONTROL 输入分隔符]**&#x200B;字段中，指定要用于分隔各个值的分隔符。默认情况下，指定逗号为分隔符。您可以指定其他分隔符。
@@ -128,10 +128,10 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
 
 ## 添加“标记”谓词 {#adding-a-tags-predicate}
 
-此谓 `Tags` 词允许您对资产执行基于标记的搜索。 默认情况下，AEM Assets会根据您指定的标记搜索资产中的一个或多个标记匹配项。 换言之，搜索查询使用指定标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
+此谓 `Tags` 词允许您对资产执行基于标记的搜索。 默认情况下，AEM Assets会根据您指定的标记搜索资产以找到一个或多个标记匹配项。 换言之，搜索查询使用指定标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
 
 1. 单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索表单]**。
-1. 在“搜索表单”页面中，选 **[!UICONTROL 择资产管理搜索边栏]** ，然后点 **按** 编 ![辑aemassets_edit](assets/aemassets_edit.png)。
+1. 在“搜索Forms”页面中，选 **[!UICONTROL 择“资产管理员搜索边栏]** ”，然 **后点** 击“编 ![辑](assets/aemassets_edit.png)Aemassets_edit”。
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. 在设置选项卡中，输入谓词的占位符文本。 Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. 或者，也可以从选择对话框中选择CRXDE中的节点。
 1. 配置此谓词的根标记路径属性，以在标记列表中填充各种标记。
@@ -306,13 +306,13 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
 
 ## 恢复默认搜索彩块化 {#restoring-default-search-facets}
 
-默认情况下，“搜索表单”页面的“资 **[!UICONTROL 产管理员搜索边栏]** ”前会 **[!UICONTROL 显示一个锁图标]** 。 如果您向该表单中添加搜索彩块化，该锁图标便会消失，以指示默认表单已被修改。
+默认情况下，在“搜索Forms”页 **[!UICONTROL 面的“资产管理员搜]** 索边栏 **[!UICONTROL ”前]** 面会显示锁定图标。 如果您向该表单中添加搜索彩块化，该锁图标便会消失，以指示默认表单已被修改。
 
-“搜索表单”页面上某个选项的锁图标表示默认设置保持不变且未进行自定义。
+“搜索Forms”页面上某个选项的锁图标表示默认设置保持不变且未自定义。
 
 要恢复默认搜索彩块化，请执行以下步骤：
 
-1. 在“搜 **[!UICONTROL 索表单”页面中]** ，选择 **[!UICONTROL “资产管理员]** ”。
+1. 在“ **[!UICONTROL 搜索”Forms页面]** ，选择“资 **[!UICONTROL 产管理员]** ”搜索边栏。
 1. 点按 **[!UICONTROL 工]** 具栏 ![](assets/do-not-localize/deleteoutline.png) 中的删除图标。
 1. 在确认对话框中，点按 **[!UICONTROL 删除]** ，以删除自定义更改。
 
