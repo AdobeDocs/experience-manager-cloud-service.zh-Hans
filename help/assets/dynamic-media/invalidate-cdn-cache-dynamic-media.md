@@ -2,9 +2,9 @@
 title: 通过Dynamic Media使CDN缓存失效
 description: 使CDN(内容投放网络)缓存内容失效后，您可以快速更新Dynamic Media交付的资源，而无需等待缓存过期。
 translation-type: tm+mt
-source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
+source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ CDN(内容投放网络)会缓存Dynamic Media资源，以便快速投放给客�
 
 >[!IMPORTANT]
 >
->以下步骤仅适用于AEM上作为Cloud Service的Dynamic Media。 此功能还要求您使用与AEM Dynamic Media捆绑的现成CDN;不支持任何其他自定义CDN。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>此功能要求您使用与AEM Dynamic Media捆绑的现成CDN;不支持任何其他自定义CDN。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 另请参 [阅Dynamic Media中的缓存概述](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)。
 
@@ -37,7 +37,9 @@ CDN(内容投放网络)会缓存Dynamic Media资源，以便快速投放给客�
 
    ![CDN失效模板——创建](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. 在CDN失效模板页面的 **[!UICONTROL 右上角]** ，点按 **[!UICONTROL 保存]**，然后点 **[!UICONTROL 按确定。]**<br>   *第2部分，共2部分：设置CDN失效选项*
+1. 在CDN失效模板页面的 **[!UICONTROL 右上角]** ，点按 **[!UICONTROL 保存]**，然后点 **[!UICONTROL 按确定。]**<br>
+
+   *第2部分，共2部分：设置CDN失效选项*
    <br>
 
 1. 在AEM中，点按工具>资 **[!UICONTROL 源> CDN失效Cloud Service。]**
