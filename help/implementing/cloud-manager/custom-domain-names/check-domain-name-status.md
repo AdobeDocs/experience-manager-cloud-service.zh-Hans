@@ -2,9 +2,9 @@
 title: 正在检查域名状态
 description: 正在检查域名状态
 translation-type: tm+mt
-source-git-commit: 91b06bcd96fe8a37c3fb20ef90e1684f6d19183f
+source-git-commit: 5cd22d8af20bb947e4cdab448cf8f20c6596bb2e
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,37 @@ Cloud Manager将通过TXT值验证域所有权并显示以下状态消息之一�
 | CNAME | 自定义域名指向目标 |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
+
+### APEX记录 {#apex-record}
+
+apex域是不包含子域（如example.com）的自定义域。 Apex域通过DNS提供 `A` 程序 `ALIAS` 配置 `ANAME` 了、或记录。 Apex域必须指向特定的IP地址。
+
+通过域提供程序将以下所有A记录添加到域的DNS设置中：
+
+* `A RECORD`
+
+* `A record for domain @ pointing to IP 151.101.3.10`
+
+* `A record for domain @ pointing to IP 151.101.67.10`
+
+* `A record for domain @ pointing to IP 151.101.131.10`
+
+* `A record for domain @ pointing to IP 151.101.195.10`
+
+## 正在检查DNS记录状态 {#check-status-dns-record}
+
+您可以通过从域设置页的Cloud Service表中单击DNS记录的状态图标，确定您的域名是否正确解析到AEM作为环境网站。 Cloud Manager会为您的域名执行DNS查找并显示以下状态消息之一：
+
+>[!NOTE]
+>在首次成功验证和部署自定义域名时，Cloud Manager将自动触发DNS查找。 对于后续尝试，您必须主动再次 **选择状态** 旁边的“解析”图标。 插入图像
+
+* **未检测到DNS状**&#x200B;态直到您的自定义域名成功验证和部署后，才会检测到DNS状态。 当您的自定义域名正在删除过程中时，也会观察到此状态。
+
+* **DNS解析错误**&#x200B;这表示DNS记录配置尚未解析／指向或错误。 将自动通知Adobe代表。
+
+   >[!NOTE]
+   >您必须按照相应的 `CNAME` 说明 `A-record` 配置或配置。 转到配置DNS设置插入链接，进一步了解主题。 准备就绪后，必须选择状态旁的“再次解析”图标。
+
+* **正在进行DNS解**&#x200B;析正在进行。 此状态通常在您选择状态旁的“再次解析”图标后显示。
+
+* **DNS解析正确**&#x200B;您的DNS设置已正确配置。 您的站点为访客提供服务。
