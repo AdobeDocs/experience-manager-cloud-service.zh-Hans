@@ -3,10 +3,10 @@ title: 支持的文件格式和MIME类型
 description: Experience Manager资产作为Cloud Service支持的文件格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
+source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 33%
+source-wordcount: '812'
+ht-degree: 34%
 
 ---
 
@@ -61,9 +61,6 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
-| WebP | ✓ | ✓ | - | - |
-
-* WebP支持当前用于有损压缩，并支持0-100值以更改图像质量。
 
 ## 在 [!DNL Dynamic Media] {#image-support-dynamic-media}
 
