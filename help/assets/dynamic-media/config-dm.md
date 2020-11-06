@@ -2,9 +2,9 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5598'
 ht-degree: 8%
 
 ---
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 公司根文件夹路径 | 您的公司的根文件夹路径。 |
    | 发布资产 | 您可以从以下三个选项中进行选<br>**[!UICONTROL 择：立即&#x200B;]**:上传资产后，系统会收录资产并立即提供URL/嵌入。 发布资产不需要用户干预。<br>**[!UICONTROL 激活]**:在提供URL/嵌入链接之前，您需要先显式发布资产。<br>**[!UICONTROL 选择性发布&#x200B;]**:资产仅为安全预览而自动发布，并且可以明确发布到AEM，而不发布到DMS7以在公共域中投放。 将来，Adobe将增强此选项，将资产发布到AEM，并将资产发布到Dynamic Media，相互排斥。 即，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您也可以仅发布AEM中的资产以进行预览；这些相同的资源不会发布在DMS7中以便在公共域中投放。 |
    | 安全预览服务器 | 允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全访问和预览远程Dynamic Media再现(不会将二进制文件发回AEM实例)。<br>除非您有特殊安排来使用自己的公司服务器或特殊服务器，否则Adobe Systems建议您按照指定的方式保留此设置。 |
-   | 同步所有内容 | 默认为已选中。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项后，您可以从以下两种Dynamic Media同步模式中进行选择：默<br>**[!UICONTROL 认情况下，]**<br>**[!UICONTROL Dynamic Media同步模式启用&#x200B;]**:默认情况下，该配置将应用于所有文件夹，除非您专门为排除标记文件夹。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 默认禁用]**:在您明确标记选定的文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。<br>要将选定的文件夹标记为同步到Dynamic Media，请选择资产文件夹，然后点按工具栏中的 **[!UICONTROL 属性]**。 在“详 **[!UICONTROL 细信息]** ”选项卡 **[!UICONTROL 的“Dynamic Media同步模式]** ”下拉列表中，从以下三个选项中进行选择。 完成后，点按保 **[!UICONTROL 存]**。 *记住：如果您之前选择了“同步所有内容”，则这&#x200B;**三个选项将不可**用。* 另请参 [阅在Dynamic Media的文件夹级别使用选择性发布。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 继承&#x200B;]**:文件夹上没有明确的同步值；相反，文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。<br>**[!UICONTROL 为子文件夹启用]**:包含此子树中的所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。<br>**[!UICONTROL 对子文件夹禁用&#x200B;]**:排除此子树中的所有内容，使其无法同步到Dynamic Media。 |
+   | 同步所有内容 | 默认为已选中。 如果要在同步到Dynamic Media时有选择地包括或排除资产，请取消选择此选项。 取消选择此选项后，您可以从以下两种Dynamic Media同步模式中进行选择：默<br>**[!UICONTROL 认情况下，]**<br>**[!UICONTROL Dynamic Media同步模式启用&#x200B;]**:默认情况下，该配置将应用于所有文件夹，除非您专门为排除标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 默认禁用]**:在您明确标记选定的文件夹以同步到Dynamic Media之前，该配置不会应用于任何文件夹。<br>要将选定的文件夹标记为同步到Dynamic Media，请选择资产文件夹，然后点按工具栏中的 **[!UICONTROL 属性]**。 在“详 **[!UICONTROL 细信息]** ”选项卡 **[!UICONTROL 的“Dynamic Media同步模式]** ”下拉列表中，从以下三个选项中进行选择。 完成后，点按保 **[!UICONTROL 存]**。 *记住：如果您之前选择了“同步所有内容”，则这&#x200B;**三个选项将不可**用。* 另请参 [阅在Dynamic Media的文件夹级别使用选择性发布。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 继承&#x200B;]**:文件夹上没有明确的同步值；相反，文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 通过工具提示显示继承的详细状态。<br>**[!UICONTROL 为子文件夹启用]**:包含此子树中的所有内容，以便同步到Dynamic Media。 特定于文件夹的设置将覆盖云配置中的默认模式。<br>**[!UICONTROL 对子文件夹禁用&#x200B;]**:排除此子树中的所有内容，使其无法同步到Dynamic Media。 |
 
    >[!NOTE]
    >
@@ -254,14 +254,14 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 * 返回RGB输出的动态演绎版将在sRGB *色彩空* 间中返回它。
 * 返回CMYK输出的动态演绎版将在WebCoated颜色空 *间中* 返回它。
 
-#### 配置资产处理 {#configuring-asset-processing}
+#### 编辑受支持格式的MIME类型 {#configuring-asset-processing}
 
-您可以定义Dynamic Media应处理的资产类型，并自定义高级资产处理参数。 例如，您可以指定资产处理参数以执行以下操作：
+您可以定义Dynamic Media要处理的资产类型，并自定义高级资产处理参数。 例如，您可以指定资产处理参数以执行以下操作：
 
 * 将Adobe PDF转换为电子目录资产。
 * 将Adobe Photoshop文档(.PSD)转换为横幅模板资产以进行个性化。
 * 栅格化Adobe Illustrator文件(.AI)或Adobe Photoshop封装的Postscript文件(.EPS)。
-* 注意：视频用户档案和成像用户档案可分别用于定义视频和图像的处理。
+* [视频用户档案](/help/assets/dynamic-media/video-profiles.md) 和 [成像用户档案](/help/assets/dynamic-media/image-profiles.md) ，可分别用于定义视频和图像的处理。
 
 请参阅[上传资产](/help/assets/add-assets.md)。
 
@@ -287,11 +287,11 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 在页面的左上角，点按 **[!UICONTROL CRXDE Lite]** ，返回AEM。
 
-#### 为不支持的格式添加自定义MIME类型 {#adding-custom-mime-types-for-unsupported-formats}
+#### 为不支持的格式添加MIME类型 {#adding-custom-mime-types-for-unsupported-formats}
 
 您可以为 AEM Assets 中不支持的格式添加自定义 MIME 类型。要确保 AEM 不会删除您在 CRXDE Lite 中添加的任何新节点，务必确保将 MIME 类型移动到 `image_` 之前，并将其值设置为 **[!UICONTROL false]**。
 
-要为不支持的格式添加自定义MIME类型：
+要为不支持的格式添加MIME类型，请执行以下操作：
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -453,7 +453,7 @@ spin-01-01
 
    您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
-1. 在页面顶部附近的导航栏上，单击“设置”>“ **[!UICONTROL 应用程序设置]”>“[!UICONTROL 批集预设”]>“[!UICONTROL 批集预设”]**。
+1. 在页面顶部附近的导航栏上，单击“设置”>“ **[!UICONTROL 应用程序设置] ”>“ [!UICONTROL 批集预设”] >“ [!UICONTROL 批集预设”]**。
 
    请注 **[!UICONTROL 意]**,视图表单（如“详细信息”页面右上角所设置）是默认视图。
 
