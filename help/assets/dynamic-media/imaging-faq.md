@@ -2,9 +2,9 @@
 title: 智能成像
 description: 智能图像处理利用每个用户独特的查看特性自动提供为其体验优化的正确图像，从而获得更好的性能和参与度。
 translation-type: tm+mt
-source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
+source-git-commit: e4d75f8bb783df57705bcaa6483bcb0ac6ec7ead
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2085'
 ht-degree: 1%
 
 ---
@@ -105,8 +105,6 @@ Smart Imaging可与您现有的“图像预设”配合使用，如果请求的�
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
-
-另外，请参 [阅我是否有资格使用智能成像？](#am-i-eligible-to-use-smart-imaging) 了解智能成像的先决条件。
 
 ## 智能成像是否可以与HTTPS一起使用？ HTTP/2如何？ {#does-smart-imaging-working-with-https-how-about-http}
 
