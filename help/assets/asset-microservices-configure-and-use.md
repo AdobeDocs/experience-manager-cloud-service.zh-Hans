@@ -3,9 +3,9 @@ title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Experience Manager允许以下级别的处理。
 
 | 选项 | 描述 | 涵盖的使用案例 |
 |---|---|---|
-| [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | <ul> <li>用户界面使 [!DNL Assets] 用的标准缩览图（48、140和319像素） </li> <li> 大预览（Web再现- 1280 px） </li><li> 元数据和文本提取。</li></ul> |
+| [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | <ul> <li>用户界面使 [!DNL Assets] 用的标准缩览图（48、140和319像素） </li> <li> 大预览（Web再现- 1280像素） </li><li> 元数据和文本提取。</li></ul> |
 | [自定义配置](#standard-config) | 由管理员通过用户界面进行配置。 通过扩展默认选项，为生成再现提供更多选项。 扩展现成选项，以提供不同的格式和再现。 | <ul><li>FPO再现。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于已配置的文件类型。 </li> </ul> |
 | [自定义用户档案](#custom-config) | 管理员通过用户界面配置为通过自定义应用程序使用自定义代码来调 [用资产计算服务](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
 
@@ -78,9 +78,9 @@ Experience Manager允许以下级别的处理。
 1. 要生成其他演绎版，请单 **[!UICONTROL 击“添加新]** ”并提供以下信息：
 
    * 每个再现的文件名。
-   * 每个再现的文件格式（PNG、JPEG或GIF）。
+   * 每个再现的文件格式（PNG、JPEG、GIF或WebP）。
    * 每个演绎版的宽度和高度（以像素为单位）。 如果未指定这些值，则使用原始图像的完整像素大小。
-   * 质量（以每个JPEG再现的百分比表示）。
+   * 每个JPEG和WebP再现的质量百分比。
    * 包含和排除的MIME类型，用于定义用户档案的适用性。
 
    ![处理用户档案-添加](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![自定义处理用户档案](assets/custom-processing-profile.png)
 
-*图：使用[!UICONTROL 服务参数]字段将添加的信息传递到自定义应用程序中的预定义参数。 在此示例中，上传活动图像时，图像会用字体`Jumanji`中的文本`Arial-BoldMT`更新。*
+*图：使用 [!UICONTROL 服务参数] 字段将添加的信息传递到自定义应用程序中的预定义参数。 在此示例中，上传活动图像时，图像会用字体 `Jumanji` 中的文本 `Arial-BoldMT` 更新。*
 
 ## 使用处理用户档案处理资产 {#use-profiles}
 
