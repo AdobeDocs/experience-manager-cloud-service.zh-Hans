@@ -2,9 +2,9 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
+source-git-commit: 9719a440a85b150599efa3eb9dc2bd443a917217
 workflow-type: tm+mt
-source-wordcount: '5598'
+source-wordcount: '5619'
 ht-degree: 8%
 
 ---
@@ -193,8 +193,8 @@ Dynamic Media中的密码过期时间设置为当前系统日期起的100年。
 * [图像服务器的发布设置](#publishing-setup-for-image-server)
 * [配置应用程序常规设置](#configuring-application-general-settings)
 * [配置颜色管理](#configuring-color-management)
-* [配置资产处理](#configuring-asset-processing)
-* [为不支持的格式添加自定义MIME类型](#adding-custom-mime-types-for-unsupported-formats)
+* [编辑受支持格式的MIME类型](#editing-mime-types-for-supported-formats)
+* [为不支持的格式添加MIME类型](#adding-mime-types-for-unsupported-formats)
 * [创建批集预设以自动生成图像集和旋转集](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### 图像服务器的发布设置 {#publishing-setup-for-image-server}
@@ -254,7 +254,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 * 返回RGB输出的动态演绎版将在sRGB *色彩空* 间中返回它。
 * 返回CMYK输出的动态演绎版将在WebCoated颜色空 *间中* 返回它。
 
-#### 编辑受支持格式的MIME类型 {#configuring-asset-processing}
+#### 编辑受支持格式的MIME类型 {#editing-mime-types-for-supported-formats}
 
 您可以定义Dynamic Media要处理的资产类型，并自定义高级资产处理参数。 例如，您可以指定资产处理参数以执行以下操作：
 
@@ -265,7 +265,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 请参阅[上传资产](/help/assets/add-assets.md)。
 
-要配置资产处理，请执行以下操作：
+**要编辑受支持格式的MIME类型，请执行以下操作：**
 
 1. 在AEM中，单击AEM徽标以访问全局导航控制台，然后单击“常规”>“ **[!UICONTROL CRXDE Lite”]**。
 1. 在左边栏中，导航到以下内容：
@@ -287,11 +287,11 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 在页面的左上角，点按 **[!UICONTROL CRXDE Lite]** ，返回AEM。
 
-#### 为不支持的格式添加MIME类型 {#adding-custom-mime-types-for-unsupported-formats}
+#### 为不支持的格式添加MIME类型 {#adding-mime-types-for-unsupported-formats}
 
 您可以为 AEM Assets 中不支持的格式添加自定义 MIME 类型。要确保 AEM 不会删除您在 CRXDE Lite 中添加的任何新节点，务必确保将 MIME 类型移动到 `image_` 之前，并将其值设置为 **[!UICONTROL false]**。
 
-要为不支持的格式添加MIME类型，请执行以下操作：
+**为不支持的格式添加MIME类型**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -357,7 +357,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 两个元素可用于定义：“匹配”和“基名”。 这些字段允许您定义命名约定的所有元素，并标识用于命名包含这些元素的集合的约定部分。 公司的单个命名约定可对这些元素使用一行或多行定义。 您可以为您的唯一定义使用多行，并将它们分组为不同的元素，如主图像、颜色元素、替代视图元素和色板元素。
 
-配置默认命名：
+**配置默认命名**
 
 1. 登录您的Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -391,7 +391,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 您可以使用表单字段方法来定义批集预设或代码方法，它允许您使用常规表达式。 与默认命名一样，您可以在表单视图中定义的同时选择视图代码，并使用常规表达式来构建定义。 或者，您也可以取消选中视图以使用其中一种或只使用另一种。
 
-要创建批集预设，请执行以下操作：
+**要创建批集预设，请执行以下操作：**
 
 1. 登录您的Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -447,7 +447,7 @@ spin-01-01
 
 上传和发布旋转集后，您可以激活&#x200B;**上传作业选项**&#x200B;对话框中&#x200B;**批集预设**&#x200B;下方 2D 旋转集方法的名称。
 
-要为自动生成2D旋转集创建批集预设，请执行以下操作：
+**要创建批量集预设以自动生成2D旋转集，请执行以下操作：**
 
 1. 登录您的Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -542,11 +542,13 @@ Granite传输工作流队列用于DAM更 **[!UICONTROL 新资产工作流]** 。
 
 1. 在“最 **[!UICONTROL 大并行作业]** ”字段中，将数字更改为所需值。
 
-   默认情况下，并行作业的最大数量取决于可用CPU核心的数量。 例如，在4核服务器上，它分配2个工作线程。 （介于0.0和1.0之间的值是基于比率的，或者任何大于1的数字将指定工作线程的数量。）
+   您可以增加 **[!UICONTROL 最大并行作业]** ，以充分支持将文件重量上传到Dynamic Media。 确切值取决于硬件容量。 在某些情况下（即初始迁移或一次性批量上传），您可以使用大值。 但是，请注意，使用大值（如内核数的2倍）可能会对其他并发活动产生负面影响。 因此，您应根据您的特定用例测试和调整值。
 
-   Adobe建议将32 **[!UICONTROL 个最大并行作业]** 配置为充分支持将文件重量上传到Dynamic Media Classic(Scene7)。
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
 
