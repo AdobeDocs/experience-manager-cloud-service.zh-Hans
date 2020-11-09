@@ -1,6 +1,6 @@
 ---
-title: Assets 即 Cloud Service 指南
-description: Adobe Experience Manager Assets 云服务自助资源和文档链接
+title: Assets as a Cloud Service 指南
+description: Adobe Experience Manager Assets as a Cloud Service 自助资源和文档链接
 translation-type: tm+mt
 source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
@@ -10,32 +10,32 @@ ht-degree: 85%
 ---
 
 
-# Assets 即 Cloud Service 指南 {#aem-assets-guide}
+# Assets as a Cloud Service 指南 {#aem-assets-guide}
 
-以下是 Experience Manager Assets 云服务的自助资源。
+以下是 Experience Manager Assets as a Cloud Service 的自助资源。
 
 ## 关键 Assets 文章 {#key-articles}
 
 * [概述和新增功能](overview.md)
 * [显着变化](/help/assets/assets-cloud-changes.md)
-* [Assets 云服务的架构](architecture.md)
+* [Assets as a Cloud Service 的架构](architecture.md)
 * [资产微服务概述](/help/assets/asset-microservices-overview.md)
 
 ## Experience Manager 指南 {#aem-guides}
 
 | 用户指南 | 描述 |
 |---|---|
-| [Experience Manager 云服务主页](/help/landing/home.md) | Experience Manager 云服务的完整文档。 |
-| [概述](/help/overview/home.md) | Experience Manager 云服务的介绍性概述和术语表。 |
+| [Experience Manager as a Cloud Service 主页](/help/landing/home.md) | Experience Manager as a Cloud Service 的完整文档。 |
+| [概述](/help/overview/home.md) | Experience Manager as a Cloud Service 的介绍性概述和术语表。 |
 | [发行说明](/help/release-notes/home.md) | 发行说明、新增功能、已弃用和已删除功能及已知问题。 |
-| [核心概念](/help/core-concepts/home.md) | 本指南简要介绍 Experience Manager 云服务核心概念，包括新服务的架构。 |
-| [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager 云服务的重要安全主题。 |
-| [入门](/help/onboarding/home.md) | Experience Manager 云服务入门 — 获取访问权限和保护重要数据。 |
-| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites 云服务进行创作，以及如何管理 Experience Manager Sites 云服务。 |
+| [核心概念](/help/core-concepts/home.md) | 本指南简要介绍 Experience Manager as a Cloud Service 核心概念，包括新服务的架构。 |
+| [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
+| [入门](/help/onboarding/home.md) | Experience Manager as a Cloud Service 入门 — 获取访问权限和保护重要数据。 |
+| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [转向Experience Manager作为Cloud Service](/help/move-to-cloud-service/home.md) | 以过渡的身份理解Experience Manager旅程。 |
-| [实施用户指南](/help/implementing/home.md) | 自定义、开发和部署 Experience Manager 云服务。 |
-| [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager 云服务中。 |
-| [操作用户指南](/help/operations/home.md) | 了解 Experience Manager 云服务的后端操作，如添加索引和维护任务。 |
+| [实施用户指南](/help/implementing/home.md) | 自定义、开发和部署 Experience Manager as a Cloud Service。 |
+| [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
+| [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
 | [商务用户指南](/help/commerce-cloud/home.md) | 了解AEM作为Cloud Service的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
@@ -46,6 +46,6 @@ ht-degree: 85%
 * [核心组件文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager 文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 就绪](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager 云服务教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社区论坛](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
