@@ -178,7 +178,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
       <td><strong>要使用的协议选择器</strong></td>
       </tr>
       <tr>
-      <td><p>HTTP</p> <p>如果您使用HTTP(非安全视频投放)，请确保您更 <code>https</code> 改为 <code>http</code> 之前复制的视频服务URL值。</p> </td>
+      <td><p>HTTP</p> <p>如果您使用HTTP(非安全视频投放)，请确保您在之前 <code>https</code> 复 <code>http</code> 制的视频服务URL值中更改为。</p> </td>
       <td><code>public/</code></td>
       </tr>
       <tr>
@@ -188,7 +188,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
     </tbody>
    </table>
 
-1. 在AEM中复制完整的视频资产路径，由Dynamic Media处理。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
+1. 在AEM中复制完整的视频资产路径（由Dynamic Media处理）。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
 
    例如：
 
