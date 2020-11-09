@@ -1,6 +1,6 @@
 ---
-title: AEM 云服务中的 CDN
-description: AEM 云服务中的 CDN
+title: AEM as a Cloud Service 中的 CDN
+description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
 source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# AEM 云服务中的 CDN {#cdn}
+# AEM as a Cloud Service 中的 CDN {#cdn}
 
 AEM asCloud Service随内置CDN一起提供。 其主要目的是通过从位于边缘、靠近浏览器的CDN节点传送可缓存内容来减少延迟。 它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。
 
