@@ -36,7 +36,7 @@ ht-degree: 12%
 
 ![创建处理用户档案，在Experience Manager中进行视频转码](assets/video-processing-profile-for-mp4.png)
 
-*图：中用于视频转码的处理用户档案[!DNL Experience Manager]。*
+*图：中用于视频转码的处理用户档案 [!DNL Experience Manager]。*
 
 如果您只提供宽度或仅提供高度，而将其他字段留空，则演绎版将保持宽高比。 目前，只有h264编解码器可用于转码。
 
