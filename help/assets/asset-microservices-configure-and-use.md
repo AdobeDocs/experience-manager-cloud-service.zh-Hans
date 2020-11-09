@@ -38,7 +38,7 @@ Experience Manager允许以下级别的处理。
 |---|---|---|
 | [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | <ul> <li>用户界面使 [!DNL Assets] 用的标准缩览图（48、140和319像素） </li> <li> 大预览（Web再现- 1280像素） </li><li> 元数据和文本提取。</li></ul> |
 | [自定义配置](#standard-config) | 由管理员通过用户界面进行配置。 通过扩展默认选项，为生成再现提供更多选项。 扩展现成选项，以提供不同的格式和再现。 | <ul><li>FPO再现。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于已配置的文件类型。 </li> </ul> |
-| [自定义用户档案](#custom-config) | 管理员通过用户界面配置为通过自定义应用程序使用自定义代码来调 [用资产计算服务](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
+| [自定义用户档案](#custom-config) | 由管理员通过用户界面配置为通过自定义应用程序使用自定义代码来调用 [Asset compute服务](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -144,7 +144,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 为了说明自定义用户档案的用法，让我们考虑将一些自定义文本应用于活动图像的用例。 您可以创建利用PhotoshopAPI编辑图像的处理用户档案。
 
-资产计算服务集成允许Experience Manager使用服务参数字段将这些参数传递到自 [!UICONTROL 定义应用] 。 然后，自定义应用程序调用PhotoshopAPI并将这些值传递给API。 例如，您可以传递字体名称、文本颜色、文本权重和文本大小，将自定义文本添加到活动图像。
+asset compute服务集成允许Experience Manager使用服务参数字段将这些参数传递到自 [!UICONTROL 定义应用] 。 然后，自定义应用程序调用PhotoshopAPI并将这些值传递给API。 例如，您可以传递字体名称、文本颜色、文本权重和文本大小，将自定义文本添加到活动图像。
 
 ![自定义处理用户档案](assets/custom-processing-profile.png)
 
@@ -224,7 +224,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!MORELIKETHIS]
 >
->* [资产计算服务简介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
+>* [asset compute服务简介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
 >* [了解可扩展性以及何时使用它](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 >* [如何创建自定义应用程序](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
 >* [支持各种用例的MIME类型](/help/assets/file-format-support.md)。
