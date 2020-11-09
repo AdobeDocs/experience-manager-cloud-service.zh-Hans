@@ -19,7 +19,7 @@ ht-degree: 12%
 1. 在“资 **产** ”控制台中，导航到内容片段的位置。
 2. 可以任选其一：
 
-   * 选择 [**视图&#x200B;**“属性”以打开对话框](/help/assets/manage-digital-assets.md#editing-properties)。 打开进行查看后，您还可以进行编辑。
+   * 选择 [**视图** “属性”以打开对话框](/help/assets/manage-digital-assets.md#editing-properties)。 打开进行查看后，您还可以进行编辑。
    * 打开要 [编辑的内容片段](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)，然后从侧 **面板中选** 择“元数据”。
 
    ![元数据](assets/cfm-metadata-01.png)
