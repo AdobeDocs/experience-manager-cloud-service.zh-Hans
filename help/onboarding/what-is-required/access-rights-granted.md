@@ -12,7 +12,7 @@ ht-degree: 33%
 
 # 已授予的访问权限 {#access-rights-granted}
 
-Adobe将在Adobe **身份管理** (IMS)中为公司创建组织标识符，在该系统中可以管理您的所有用户及其权限。 每个需要成为此组织成员并将获得任何Experience Cloud服务访问权限的 [!UICONTROL 用户] ，都需要拥有自己的 **Adobe ID**。
+Adobe将在 **AdobeIdentity Management** 系统(IMS)中为公司创建组织标识符，管理您的所有用户及其权限。 每个需要成为此组织成员并将获得访问任何Experience Cloud服务的 [!UICONTROL 用户] ，都需要拥有自己的 **Adobe ID**。
 
 ## 用户身份类型 {#user-identity-types}
 
@@ -22,4 +22,4 @@ Adobe将在Adobe **身份管理** (IMS)中为公司创建组织标识符，在�
 
 Adobe为您的公司创建了组织后，您指定的管理员将作为该组织的第一个成员添加。 默认情况下，管理员将获得管理员权限，并分配 [!UICONTROL AEM 托管服务]、**产品**&#x200B;以及一个或多个 [!UICONTROL Cloud Manager] **产品配置文件**。请访问 [添加用户和角色](add-users-roles.md) ，进一步了解如何使用Admin Console配置和管理团队用户。
 
-授予这些权限后，管理员现在可以通过单点登录（使用Adobe ID）访 [!UICONTROL 问Experience Cloud] Services、登录AEM Cloud环境并使用 [!UICONTROL Cloud Manager]。
+授予这些权限后，您的管理员现在可以通过单点登录(使用Adobe ID)访问 [!UICONTROL Experience Cloud服务] 、登录AEM云环境并使用 [!UICONTROL 云管理器]。
