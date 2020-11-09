@@ -1,6 +1,6 @@
 ---
 title: 了解项目和项目类型
-description: 了解项目和项目类型——云服务
+description: 了解项目和项目类型-Cloud Services
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 workflow-type: tm+mt
