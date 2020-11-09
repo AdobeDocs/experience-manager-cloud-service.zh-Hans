@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 架构 {#architecture}
 
-有关详细说明，请参 [阅SPA](blueprint.md#pagemodelmanager) Blueprint文档的PageModelManager部分。
+有关详细说明，请参阅SPA [Blueprint文档](blueprint.md#pagemodelmanager) 的PageModelManager部分。
 
 ## 模型路由器 {#modelrouter}
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 手动与自动模型路由 {#manual-vs-automatic-model-routing}
 
-模 `ModelRouter` 型片段自动获取。 但是，作为任何自动化工具集，它都有局限性。 需要时，可 `ModelRouter` 以禁用或配置为使用元属性忽略路径(请参阅SPA页面组件文档 [的元属性部分](page-component.md) )。 然后，前端开发者可以通过请求使用该函数加载任何给 `PageModelManager` 定的模型片段来实现自己的模型路由 `getData()` 层。
+模 `ModelRouter` 型片段自动获取。 但是，作为任何自动化工具集，它都有局限性。 需要时，可 `ModelRouter` 以禁用或配置为使用元属性忽略路径(请参阅SPA页面组件文档 [的元属](page-component.md) 性部分)。 然后，前端开发者可以通过请求使用该函数加载任何给 `PageModelManager` 定的模型片段来实现自己的模型路由 `getData()` 层。
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 路由合同 {#routing-contract}
 
-当前实施基于以下假设：SPA项目使用HTML5历史记录API路由到不同的应用程序页面。
+当前实施基于SPA项目使用HTML5 History API路由到不同应用程序页面的假设。
 
 ### 配置 {#configuration}
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-请注意，SPA的每条路由都应与AEM中的可访问资源(例如，“ `/content/mysite/mypage"`)相对应，因 `PageModelManager` 为一旦选择了路由，将自动尝试加载相应的页面模型。 但是，如果需要，SPA还可以定义路由的“阻止列表”，这些路由应被以下用户忽略 `PageModelManager`:
+请注意，SPA的每条路由都应与AEM中的可访问资源(例如，“ `/content/mysite/mypage"`”)相对应，因 `PageModelManager` 为一旦选择了路由，将自动尝试加载相应的页面模型。 但是，如果需要，SPA还可以定义路由的“阻止列表”，这些路由应被以下用户忽略 `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
