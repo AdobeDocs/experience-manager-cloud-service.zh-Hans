@@ -12,13 +12,13 @@ ht-degree: 91%
 
 # 规划 {#planning-phase}
 
-在开始过渡到云服务的历程之前，您应该熟悉 AEM 云服务，并查看已对它所做的显著更改以及已替换或已弃用的功能。
+在开始过渡到 Cloud Service 的历程之前，您应该熟悉 AEM as a Cloud Service，并查看已对它所做的显著更改以及已替换或已弃用的功能。
 
 ## 显著更改 {#notable-changes}
 
-AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。
+AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性。
 
-但是，与 AEM 云服务相比，内部部署版或 Adobe Managed Service 中的 AEM 存在很大差异。
+但是，与 AEM as a Cloud Service 相比，内部部署版或 Adobe Managed Service 中的 AEM 存在很大差异。
 
 请参阅 [对 AEM 云服务的显著更改](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)，以了解重要差异。
 
@@ -26,7 +26,7 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。
 
 Adobe 不断评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。
 
-请参阅[已弃用的功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)，以了解有关在 Experience Manager 云服务中标记为已弃用的特性和功能的更多信息。
+请参阅[已弃用的功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)，以了解有关在 Experience Manager as a Cloud Service 中标记为已弃用的特性和功能的更多信息。
 
 ## 了解规划阶段 {#introduction}
 
@@ -36,7 +36,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ### 评估云服务准备情况 {#access-cloud-readiness}
 
-规划阶段的第一步就是评估您对从现有 AEM 版本移动到云服务的准备情况，并确定需要重构才能与 AEM 云服务兼容的区域。
+规划阶段的第一步就是评估您对从现有 AEM 版本移动到 Cloud Service 的准备情况，并确定需要重构才能与 AEM as a Cloud Service 兼容的区域。
 
 您需要根据显著更改和已弃用功能对当前 AEM 源代码进行全面评估，以确定过渡历程中预期的工作量。
 
