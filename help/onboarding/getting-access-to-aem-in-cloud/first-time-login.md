@@ -45,7 +45,7 @@ ht-degree: 0%
 ## 使用现有项目添加新Cloud Service {#existing-program}
 
 
-1. 登录到 **Adobe[!UICONTROL Experience Cloud]** ，您将看到 **项目和产品列表**。
+1. 登录到 **Adobe [!UICONTROL Experience Cloud]** ，您将看到 **项目和产品列表**。
 
    ![](assets/first_timelogin1.png)
 
