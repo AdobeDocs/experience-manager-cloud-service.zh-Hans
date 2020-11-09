@@ -21,8 +21,8 @@ ht-degree: 8%
 根据AEM的商务集成框架(CIF)作为Cloud Service开发AEM商务项目，也遵循相同的规则和最佳做法，如其他AEM项目作为Cloud Service。 请首先查看以下内容：
 
 - [AEM 项目结构](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [AEM 云服务 SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM 云服务开发准则](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service 开发准则](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## 以AEM作为Cloud ServiceSDK的本地开发 {#local}
 
@@ -38,7 +38,7 @@ CIF Add-On作为Sling功能存档提供。 软件分发门户上提供的zip文�
 
 应在本地安装以下内容：
 
-- [AEM 云服务 SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) （3.3.9或更高版本）
 - [Node.js v10+](https://nodejs.org/en/)
