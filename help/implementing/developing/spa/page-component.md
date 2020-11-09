@@ -1,6 +1,6 @@
 ---
 title: SPA页面组件
-description: 在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派到SPA框架。 此文档说明这如何使SPA的页面组件独一无二。
+description: 在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派给SPA框架。 此文档说明如何使SPA的页面组件具有唯一性。
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # SPA页面组件 {#spa-page-component}
 
-SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件的HTML元素。 此操作被委派到SPA框架。 子组件的表示形式被提取为JSON数据结构（即模型）。 然后，SPA组件会根据提供的JSON模型添加到页面。 因此，页面组件初始主体合成与预先渲染的HTML相同。
+SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HTML元素。 此操作委托给SPA框架。 子组件的表示形式被提取为JSON数据结构（即模型）。 然后，SPA组件会根据提供的JSON模型添加到页面。 因此，页面组件初始主体合成与预先渲染的HTML相同。
 
 ## 页面模型管理 {#page-model-management}
 
-页面模型的解析和管理被委托给提供的 [`PageModelManager`](blueprint.md#pagemodelmanager) 模块。 SPA在初始化时必 `PageModelManager` 须与模块交互，以获取初始页面模型并注册模型更新——大多数情况下，当作者通过页面编辑器编辑页面时生成。 SPA `PageModelManager` 项目可以作为npm包访问。 作为AEM和SPA之间的解 `PageModelManager` 释员，SPA应随同提供。
+页面模型的解析和管理被委托给提供的 [`PageModelManager`](blueprint.md#pagemodelmanager) 模块。 SPA在初始化时 `PageModelManager` 必须与模块交互以获取初始页面模型并注册模型更新——大多数情况下，当作者通过页面编辑器编辑页面时生成。 SPA `PageModelManager` project可以作为npm包访问。 作为AEM和SPA之间的口译员，这 `PageModelManager` 个人应该与SPA一起。
 
-要允许创作页面，必须添加一个名为的客 `cq.authoring.pagemodel.messaging` 户端库，以在SPA和页面编辑器之间提供通信渠道。 如果SPA页面组件从页面wcm/core组件继承内容，则有以下选项可使客户端库 `cq.authoring.pagemodel.messaging` 类别可用：
+要允许创作页面，必须添加一个名为的客 `cq.authoring.pagemodel.messaging` 户端库，以在SPA和页面编辑器之间提供通信渠道。 如果SPA页面组件从页面wcm/core组件继承，则有以下选项可使客户端库 `cq.authoring.pagemodel.messaging` 类别可用：
 
 * 如果模板是可编辑的，请将客户端库类别添加到页面策略。
 * 使用页面组件添加客 `customfooterlibs.html` 户端库类别。
@@ -27,7 +27,7 @@ SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件�
 
 ## 通信数据类型 {#communication-data-type}
 
-通信数据类型使用属性在AEM页面组件中设置一个HTML元 `data-cq-datatype` 素。 当通信数据类型设置为JSON时，GET请求将点击组件的Sling Model端点。 在页面编辑器中进行更新后，已更新组件的JSON表示形式将发送到页面模型库。 然后，页面模型库会警告更新的SPA。
+通信数据类型使用属性在AEM页面组件中设置一个HTML元 `data-cq-datatype` 素。 当通信数据类型设置为JSON时，GET请求将点击组件的Sling Model端点。 在页面编辑器中进行更新后，已更新组件的JSON表示形式将发送到页面模型库。 页面模型库随后会警告SPA更新。
 
 **SPA页面组件-`body.html`**
 
@@ -35,7 +35,7 @@ SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件�
 <div id="page"></div>
 ```
 
-除了不延迟DOM生成的良好实践之外，SPA框架还要求在主体末尾添加脚本。
+除了不延迟DOM生成的良好做法外，SPA框架还要求在主体末尾添加脚本。
 
 **SPA页面组件-`customfooterlibs.html`**
 
@@ -77,7 +77,7 @@ SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件�
 
 ## Sling Model JSON导出结构配置 {#sling-model-json-exported-structure-configuration}
 
-启用路由功能后，假定SPA的JSON导出包含应用程序的不同路由，这要归功于AEM导航组件的JSON导出。 AEM导航组件的JSON输出可以通过以下两个属性在SPA的根页面内容策略中进行配置：
+启用路由功能后，假定SPA的JSON导出包含应用程序的不同路由，这要归功于AEM导航组件的JSON导出。 AEM导航组件的JSON输出可以通过以下两个属性在SPA根页面内容策略中进行配置：
 
 * `structureDepth`:与导出的树的深度对应的编号
 * `structurePatterns`:与要导出的页面对应的正则表达式数组的正则表达式
