@@ -1,6 +1,6 @@
 ---
 title: 配置搜索表单
-description: 将搜索表单配置为Adobe Experience Manager作为Cloud Service。
+description: 将搜索Forms作为Cloud Service。
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # 配置搜索表单 {#configuring-search-forms}
 
-Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 机制。
+Adobe Experience Manager作为Cloud Service，拥有强大的 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 机制。
 
 此外，还有一组预定义选项可帮助您筛选内容。 这些方面包含预定义 **的彩块化**，如 **修改日期**、发布状态 **或Live Copy状态** ，以帮助您快速细化到所需的资源。
 
@@ -28,9 +28,9 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 >
 >您可以配置基础内 [容搜索和索引服务](/help/operations/indexing.md) 。
 
-使用 **搜索表单**，您可以根据您的特定需求自定义和扩展这些面板。
+使用 **搜索Forms**，您可以根据您的特定需求自定义和扩展这些面板。
 
-搜 **索表单** ，提供可组合和定义的现 [成谓](#predicates-and-their-settings) 词选项。 配置 [这些表单的对话框](#configuring-your-search-forms) ，可通过以下方式访问：
+搜 **索Forms** (Search Section Medias [)提供现成的谓词选](#predicates-and-their-settings) 项，您可以组合和定义。 配置 [这些表单的对话框](#configuring-your-search-forms) ，可通过以下方式访问：
 
 * **工具**
 
@@ -38,9 +38,9 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
       * **搜索表单**
 
-## 默认表单 {#default-forms}
+## 默认Forms {#default-forms}
 
-首次访问“搜索 **表单** ”控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置——无法删除。 在您自定义并保存后，锁定将消失。 删除自定义配 [置时，它将重新](#deleting-a-configuration-to-reinstate-the-default)显示，此时将恢复默认配置（和挂锁指示符）。
+首次访问“搜索 **Forms** ”控制台时，您可以看到所有配置都有挂锁符号。 这表示相应的配置是默认（现成）配置——无法删除。 在您自定义并保存后，锁定将消失。 删除自定义配 [置时，它将重新](#deleting-a-configuration-to-reinstate-the-default)显示，此时将恢复默认配置（和挂锁指示符）。
 
 ![配置搜索表单概述](assets/csf-overview.png)
 
@@ -62,7 +62,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
 * **页面编辑器（产品搜索）:**
 
-* **页面编辑器（Scene7搜索）**:
+* **页面编辑器(Scene7搜索**):
 
 * **页面编辑器（视频搜索）**:
 
@@ -96,7 +96,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
   </tr>
   <tr>
    <td>分析</td>
-   <td>显示以分析为后盾的数据时，站点浏览器中的搜索／过滤功能。 Analytics搜索过滤器加载以匹配映射的自定义分析列。</td>
+   <td>显示以分析为后盾的数据时，站点浏览器中的搜索／过滤功能。 分析搜索过滤器加载以匹配映射的自定义分析列。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -523,7 +523,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
    要搜索的属性。 它使用相对路径，通配符 `*/*/*` 指定属性相对于节点的深度(每个星 `jcr:content` 号表示一个节点级别)。
 
-   如果只想在具有该节点上的属性的资源的一级子节点 `x` 上搜索， `jcr:content` 则使用 `*/jcr:content/x`
+   如果只想在具有该节点上的属性的资源的一级子节点 `x` 上进行搜 `jcr:content` 索，则 `*/jcr:content/x`
 
 * **属性深度**
 
@@ -531,13 +531,13 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
 * **属性值**
 
-   属性值作为绝对字符串或作为表达式语言； 例如， `cq:Page` 或
+   属性值作为绝对字符串或作为表达式语言；例如， `cq:Page` 或
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **范围文本**
 
-   “日期范围”谓词中范围字段 **的标签** 。
+   “日期范围”谓词中的范围字 **段的标签** 。
 
 * **选项路径**
 
@@ -554,13 +554,13 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
 * **发布和Live Copy属性名称特**&#x200B;定站点谓词的发布和Live Copy复选框的标签。
 
-* &amp;ast; 在“设置”选项卡的 **字段** 标签中，表示字段为必填字段，如果留空，则将显示错误消息。
+* &amp;ast;在“设置”选项卡的 **字段** 标签中，表示字段为必填字段，如果留空，则将显示错误消息。
 
-## 配置搜索表单 {#configuring-your-search-forms}
+## 配置搜索Forms {#configuring-your-search-forms}
 
 ### 创建／打开自定义配置 {#creating-opening-a-customized-configuration}
 
-1. 导航到 **工具**、常 **规**、 **搜索表单**。
+1. 导航到 **工具**、 **常规**、搜 **索Forms**。
 
 1. 选择要自定义的配置。
 1. 使用编 **辑** 图标打开要更新的配置。
@@ -640,7 +640,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
 
 ### 添加选项谓词 {#adding-options-predicates}
 
-选项谓词（选项、选项属性）允许您配置要搜索的项目。 它们通常用于直接搜索页面下的内容； 例如，页面节点上的属性。
+选项谓词（选项、选项属性）允许您配置要搜索的项目。 它们通常用于直接搜索页面下的内容；例如，页面节点上的属性。
 
 以下示例（根据用于创建页面的模板进行搜索）说明了所涉及的步骤：
 
@@ -668,7 +668,7 @@ Adobe Experience Manager作为Cloud Service，具有强大的 [搜索](/help/sit
    >1. 在 `/apps.`
 
 
-1. 打开搜 **索表单** “控制台”，然后选择要更新的配置。 例如，“站 **点管理员搜索边栏**”。 然后选择 **编辑**。
+1. 打开搜 **索Forms** (Search Segation)控制台，选择要更新的配置。 例如，“站 **点管理员搜索边栏**”。 然后选择 **编辑**。
 
 1. 根据配置，向配 **置添加****“选项** ”或“选项”属性。
 1. 更新字段，特别是：
