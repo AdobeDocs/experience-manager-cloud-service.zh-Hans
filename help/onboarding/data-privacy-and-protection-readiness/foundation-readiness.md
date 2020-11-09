@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager保护和数据隐私法规——作为Cloud Service基础就绪
-description: '了解Adobe Experience Manager作为Cloud Service基础对各种数据保护和数据隐私法规的支持； 包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及在将新AEM作为Cloud Service项目实施时如何遵守这些规定。 '
+title: 数据保护和数据隐私法规-Adobe Experience Manager作为Cloud Service基础准备
+description: '了解Adobe Experience Manager作为Cloud Service基金会对各种数据保护和数据隐私法规的支持；包括欧盟一般数据保护规定(GDPR)、加利福尼亚州消费者隐私法，以及在将新的AEM作为Cloud Service项目实施时如何遵守这些规定。 '
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager作为Cloud Service基础，为数据保护和数据隐私法规做好准备 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作为Cloud Service基金，为数据保护和数据隐私法规做好准备 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,11 +20,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->有关Adobe对隐私权问题的回应，以及这对您作为Adobe客户意味着什么的更多信息，请 [参阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
+>有关Adobe对隐私问题的回应以及这对Adobe客户意味着什么的更多信息，请参 [阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
 
-## AEM Foundation数据隐私和保护支持 {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation Data Privacy and Protection支持 {#aem-foundation-data-privacy-and-protection-support}
 
-在AEM Foundation级别，存储的个人数据保留在用户用户档案中。 因此，本文所介绍的信息主要是如何访问和删除用户用户档案，分别解决访问和删除请求。
+在AEM基础级别，存储的个人数据保留在用户用户档案中。 因此，本文所介绍的信息主要是如何访问和删除用户用户档案，分别解决访问和删除请求。
 
 ## 访问用户用户档案 {#accessing-a-user-profile}
 
@@ -46,7 +46,7 @@ ht-degree: 5%
 
 ### HTTP API {#http-api}
 
-如前所述，Adobe为访问用户数据提供API，以促进自动化。 您可以使用几种类型的API:
+如前所述，Adobe为访问用户数据提供API，以便于自动化。 您可以使用几种类型的API:
 
 **用户属性API**
 
