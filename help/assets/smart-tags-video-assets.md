@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 上传时智能标记视频 {#smart-tag-assets-on-ingestion}
 
-将视 [频资产上传](add-assets.md#upload-assets)[!DNL Adobe Experience Manager] 为Cloud Service时，视频会进行 ![处理](assets/do-not-localize/assetprocessing.png)。 处理完成后，请参阅资产 [!UICONTROL 属性] 页面的“基 [!UICONTROL 本”选] 项卡。 智能标记会自动添加到“智能标记” [!UICONTROL 下的视频]。 资产计算服务利用Adobe Sensei创建这些智能标签。
+将视 [频资产上传](add-assets.md#upload-assets)[!DNL Adobe Experience Manager] 为Cloud Service时，视频会进行 ![处理](assets/do-not-localize/assetprocessing.png)。 处理完成后，请参阅资产 [!UICONTROL 属性] 页面的“基 [!UICONTROL 本”选] 项卡。 智能标记会自动添加到“智能标记” [!UICONTROL 下的视频]。 asset compute服务利用Adobe Sensei创建这些智能标签。
 
 ![智能标记会添加到视频中，并会在资产属性的“基本”选项卡中显示](assets/smart-tags-added-to-videos.png)
 
