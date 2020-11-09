@@ -1,6 +1,6 @@
 ---
 title: 与Git集成
-description: 与Git集成-Cloud Service
+description: 与Git集成-Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 将 Git 与 Adobe Cloud Manager 集成 {#git-integration}
 
-Adobe Cloud Manager附带一个git存储库，用于使用Cloud Manager的CI/CD管道部署代码。 客户可以立即使用Cloud Manager的git存储库。 客户还可以选择将内部部署或客户管 **理的Git存储库** 与Cloud Manager相集成。
+Adobe云管理器附带一个git存储库，用于使用云管理器的CI/CD管道部署代码。 客户可以立即使用Cloud Manager的git存储库。 客户还可以选择将内部部署或客户管 **理的Git存储库** 与Cloud Manager相集成。
 
 ## Git集成概述 {#git-integration-overview}
 
@@ -65,5 +65,5 @@ Adobe Cloud Manager附带一个git存储库，用于使用Cloud Manager的CI/CD�
 ## 其他资源 {#additional-resources}
 
 * [GitHub资源](https://try.github.io)
-* [Atlassian Git教程](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Atlassian GitTutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git备忘单](https://education.github.com/git-cheat-sheet-education.pdf)
