@@ -50,7 +50,7 @@ ht-degree: 71%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
-请阅读以下章节，了解如何使用内容传输工具将内容迁移至 AEM 云服务（创作/发布）：
+请阅读以下章节，了解如何使用内容传输工具将内容迁移至 AEM as a Cloud Service （创作/发布）：
 
 1. 选择 Adobe Experience Manager 并导航到工具 -> **操作** -> **内容传输**。
 
@@ -72,7 +72,7 @@ ht-degree: 71%
       >[!NOTE]
       >迁移集名称不允许使用特殊字符。
 
-   1. **云服务配置**：输入目标 AEM 云服务作者 URL。
+   1. **Cloud Service 配置**：输入目标 AEM as a Cloud Service 作者 URL。
 
       >[!NOTE]
       >在内容传输活动期间，您一次最多可以创建和维护四个迁移集。
