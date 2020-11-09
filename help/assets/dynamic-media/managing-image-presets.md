@@ -58,7 +58,7 @@ ht-degree: 26%
 
 Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要区别是：
 
-* Adobe Illustrator文档由一页多层组成。 每个层都被提取为主Illustrator资源下的PNG子资产。
+* Adobe Illustrator文档由一页多层组成。 每个层都被提取为主Illustrator资源下的PNG子资源。
 * PDF文档由一个或多个页面组成。 每页都会在主多页PDF文档下提取为单页PDF子资产。
 
 子资产由整个工作流 `Create Sub Asset process` 中的组件创 `DAM Update Asset` 建。 要在工作流中查看此流程组件，请点 **[!UICONTROL 按工具>工作流>模型> DAM更新资产>编辑]**。
