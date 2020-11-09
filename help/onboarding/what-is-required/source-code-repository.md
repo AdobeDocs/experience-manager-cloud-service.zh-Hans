@@ -1,6 +1,6 @@
 ---
-title: 源代码存储库-Cloud Service
-description: 源代码存储库-Cloud Service
+title: 源代码存储库-Cloud Services
+description: 源代码存储库-Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ Cloud Manager项目将自动配置其自己的git存储库。
 
 设置Git客户端后，您可以从云管理器UI管理您的git存储库。 要了解如何使用云管理器UI管理Git，请参阅 [访问Git](/help/implementing/cloud-manager/accessing-git.md)。
 
-要开始开发AEM Cloud应用程序，必须将应用程序代码的本地副本从Cloud Manager存储库签出到其本地计算机上要创建存储库的位置。
+要开始开发AEM Cloud应用程序，必须将应用程序代码的本地副本从Cloud Manager存储库签出到其本地计算机上希望创建存储库的位置。
 
 ```java
 $ git clone {URL}
