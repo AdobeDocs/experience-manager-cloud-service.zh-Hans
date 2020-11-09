@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager 云服务 2020.6.0 发行说明
+title: Adobe Experience Manager as a Cloud Service 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 translation-type: tm+mt
 source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
@@ -10,17 +10,17 @@ ht-degree: 99%
 ---
 
 
-# AEM 云服务 2020.6.0 发行说明 {#release-notes}
+# AEM as a Cloud Service 2020.6.0 发行说明 {#release-notes}
 
-本页面概述了 Experience Manager 云服务 2020.6.0 版的常规发行说明。
+本页面概述了 Experience Manager as a Cloud Service 2020.6.0 版的常规发行说明。
 
 ## 发布日期 {#release-date}
 
-[!DNL Experience Manager] 云服务 2020.6.0 的发布日期是 2020 年 6 月 4 日。
+[!DNL Experience Manager] as a Cloud Service 2020.6.0 的发布日期是 2020 年 6 月 4 日。
 
 ## AEM Sites 的新增功能 {#aem-sites}
 
-阅读本节内容，了解 AEM 云服务版本 2020.6.0 中 AEM Sites 的新增功能和更新。
+阅读本节内容，了解 AEM as a Cloud Service 版本 2020.6.0 中 AEM Sites 的新增功能和更新。
 
 ### 新增功能 {#whats-new-2020.6.0}
 
@@ -47,15 +47,15 @@ ht-degree: 99%
 
 * 屏幕阅读器改进。
 
-## AEM 云服务的新增基础功能{#foundations}
+## AEM as a Cloud Service 的新增基础功能{#foundations}
 
 通过删除 AEM 项目的 pom.xml 中对远程存储库 `https://downloads.experiencecloud.adobe.com/content/maven/public` 的所有引用，AEM 项目构建时间将会缩短。
 
-AEM 云服务 SDK API Jar（以前在该位置托管）现在位于 Maven Central（即 Maven 的默认项目存储库）中。
+AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Maven Central（即 Maven 的默认项目存储库）中。
 
 ## Cloud Manager 的新增功能 {#cloud-manager}
 
-阅读本节内容，了解 AEM 云服务版本 2020.6.0 中 Cloud Manager 的新增功能和更新。
+阅读本节内容，了解 AEM as a Cloud Service 版本 2020.6.0 中 Cloud Manager 的新增功能和更新。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
