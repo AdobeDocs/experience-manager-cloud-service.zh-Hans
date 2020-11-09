@@ -1,6 +1,6 @@
 ---
-title: AEM 云服务中的缓存
-description: 'AEM 云服务中的缓存 '
+title: AEM as a Cloud Service 中的缓存
+description: 'AEM as a Cloud Service 中的缓存 '
 translation-type: tm+mt
 source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
