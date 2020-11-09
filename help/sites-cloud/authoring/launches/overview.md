@@ -44,6 +44,7 @@ This section describes how to create, edit and promote (and if necessary [delete
    * 副本是您的启动项。
    * 顶级源页面称为&#x200B;**生产**。
       * 源页面可以从多个（不同的）分支中获取。
+
    ![启动项的操作顺序](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * 编辑启动配置：
@@ -62,11 +63,13 @@ This section describes how to create, edit and promote (and if necessary [delete
 * 并行更新源页面和启动页面：
    * 对源页面所做的更改会自动体现在启动副本中（如果进行了继承设置，即设置为 Live Copy）。
    * 可以在不中断这些自动更新或源页面的情况下对启动副本进行更改。
+
    ![并行操作](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [创建嵌套启动项](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - 一个启动项嵌套在另一个启动项中：
    * 源是现有的启动项。
    * 您可以将[嵌套启动项提升](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch)到任何目标；该目标可以是父启动项或顶层源页面（生产）。
+
    ![嵌套启动项](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
