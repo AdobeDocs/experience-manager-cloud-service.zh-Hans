@@ -78,7 +78,7 @@ ht-degree: 5%
 
 ![以Experience Manager方式搜索过滤器，并在搜索结果中突出显示Adobe Stock资产](assets/aem-search-filters2.jpg)
 
-*图：在搜索结果中搜[!DNL Experience Manager]索过滤器[!DNL Adobe Stock]并突出显示资产。*
+*图：在搜索结果中搜 [!DNL Experience Manager] 索过滤器 [!DNL Adobe Stock] 并突出显示资产。*
 
 ### 保存和视图所需的资产 {#saveassets}
 
@@ -96,7 +96,7 @@ ht-degree: 5%
 
 ![对话框用于在Adobe Stock资产中许可和保存Experience Manager资产](assets/aem-stock_licenseandsave.jpg)
 
-*图：允许并保存资产的[!DNL Adobe Stock]对话框[!DNL Experience Manager Assets]。*
+*图：允许并保存资产的 [!DNL Adobe Stock] 对话框 [!DNL Experience Manager Assets]。*
 
 ### 访问元数据和资产属性 {#access-metadata-and-asset-properties}
 
