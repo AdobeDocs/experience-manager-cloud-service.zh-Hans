@@ -1,22 +1,22 @@
 ---
-title: Adobe Experience Manager 云服务的架构简介
-description: 'Adobe Experience Manager 云服务的架构简介。 '
-translation-type: ht
+title: Adobe Experience Manager as a Cloud Service 的架构简介
+description: 'Adobe Experience Manager as a Cloud Service 的架构简介。 '
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager 云服务的架构简介 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service 的架构简介 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
-Adobe Experience Manager (AEM) 云服务已对架构进行了更改。
+Adobe Experience Manager (AEM) as a Cloud Service 已对架构进行了更改。
 
 ## 缩放 {#scaling}
 
-AEM 云服务现在具有：
+AEM as a Cloud Service 现在具有：
 
 * 具有可变数量的 AEM 图像的动态架构。
 
@@ -36,9 +36,9 @@ AEM 云服务现在具有：
 
 ![针对不同使用模式的自动缩放](assets/concepts-02.png "针对不同使用模式的自动缩放")
 
-要实现此操作，为 AEM 云服务创建的所有实例都是相同的，每个实例在节点数、分配的内存和分配的计算容量方面都具有相同的默认大小调整特征。
+要实现此操作，为 AEM as a Cloud Service 创建的所有实例都是相同的，每个实例在节点数、分配的内存和分配的计算容量方面都具有相同的默认大小调整特征。
 
-AEM 云服务基于使用一个编排引擎，该引擎可以：
+AEM as a Cloud Service 基于使用一个编排引擎，该引擎可以：
 
 * 持续监测服务状态。
 
@@ -48,7 +48,7 @@ AEM 云服务基于使用一个编排引擎，该引擎可以：
 
 * 适用于每个节点的节点数、内存量和分配的 CPU 容量。
 
-* 允许 AEM 云服务随流量模式变化进行对其进行调整。
+* 允许 AEM as a Cloud Service 随流量模式变化进行对其进行调整。
 
 可以在两个坐标轴上自动或手动缩放服务的每个租户实例：
 
@@ -62,7 +62,7 @@ AEM 云服务基于使用一个编排引擎，该引擎可以：
 >
 >有关详细信息，请参阅[部署 - 运行模式](/help/implementing/deploying/overview.md#runmodes)
 
-AEM 云服务可用作单个实例，每个实例代表一个完整的 AEM 环境。AEM 云服务可提供四种类型的环境：
+AEM as a Cloud Service 可用作单个实例，每个实例代表一个完整的 AEM 环境。AEM as a Cloud Service 可提供四种类型的环境：
 
 * **生产环境**：为业务从业者托管应用程序。
 
@@ -88,7 +88,7 @@ AEM 程序是包含以下内容的容器：
 | 非生产环境（开发或演示） | 0 到 N |
 | 每个环境的管道 | 0 或 1 |
 
-AEM 云服务最初提供两种类型的程序：
+AEM as a Cloud Service 最初提供两种类型的程序：
 
 * AEM 云站点服务
 
@@ -102,9 +102,9 @@ AEM 云服务最初提供两种类型的程序：
 
 <!--- needs reworking -->
 
-![AEM 云服务 - 运行时架构](assets/concepts-03.png "AEM 云服务 - 运行时架构")
+![AEM as a Cloud Service - 运行时架构](assets/concepts-03.png "AEM as a Cloud Service - 运行时架构")
 
-* 对于 AEM Sites 云服务：
+* 对于 AEM Sites as a Cloud Service：
 
    * 每个环境（在高级别）仍存在创作层和发布层的概念。
 
@@ -120,7 +120,7 @@ AEM 云服务最初提供两种类型的程序：
       * 最终用户或站点访客可通过 AEM 发布服务访问网站。
 
 
-* 对于 AEM Assets 云服务：
+* 对于 AEM Assets as a Cloud Service：
 
    * 该架构仅包括创作环境。
 
@@ -138,29 +138,29 @@ AEM 云服务最初提供两种类型的程序：
       >
       >有关更多详细信息，请参阅[复制](/help/operations/replication.md)。
 
-   * 开发人员和管理员可使用 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 提供的连续集成/连续交付 (CI/CD) 服务管理 AEM 云服务应用程序。这包括代码和使用 Cloud Manager 的 CI/CD 管道进行的配置部署。与监测、维护和疑难解答相关的任何内容（例如，日志文件）都会向 Cloud Manager 中的客户显示。
+   * 开发人员和管理员可使用 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 提供的连续集成/连续交付 (CI/CD) 服务管理 AEM as a Cloud Service 应用程序。这包括代码和使用 Cloud Manager 的 CI/CD 管道进行的配置部署。与监测、维护和疑难解答相关的任何内容（例如，日志文件）都会向 Cloud Manager 中的客户显示。
 
    * 始终通过负载平衡器访问创作层和发布层。该程序始终与每个层中的活动节点保持同步。
 
    * 对于发布层，连续交付网络 (CDN) 服务也可用作第一个入口点。
 
-* 对于 AEM 云服务的演示实例，架构被简化为单个创作节点。因此，该架构并不具有标准开发、暂存或生产环境的所有特点。这也意味着系统可能会出现一段时间的停机，并且不支持备份/恢复操作。
+* 对于 AEM as a Cloud Service 的演示实例，架构被简化为单个创作节点。因此，该架构并不具有标准开发、暂存或生产环境的所有特点。这也意味着系统可能会出现一段时间的停机，并且不支持备份/恢复操作。
 
 ## 部署架构 {#deployment-architecture}
 
-Cloud Manager 将管理 AEM 云服务实例的所有更新。这是强制性的，且是构建、测试和部署客户应用程序的唯一方法，同时适用于创作层和发布层。这些更新可由 Adobe（当 AEM 云服务的新版本准备就绪时）或客户（当其应用程序的新版本准备就绪时）触发。
+Cloud Manager 将管理 AEM as a Cloud Service 实例的所有更新。这是强制性的，且是构建、测试和部署客户应用程序的唯一方法，同时适用于创作层和发布层。这些更新可由 Adobe（当 AEM 云服务的新版本准备就绪时）或客户（当其应用程序的新版本准备就绪时）触发。
 
 从技术上讲，之所有这样实施，主要出于与程序内每个环境耦合的部署管道的概念原因。当 Cloud Manager 管道运行时，它将为创作层和发布层创建客户应用程序的新版本。这可通过将最新的客户包与最新的基准 Adobe 图像相结合来实现。成功构建和测试新图像后，Cloud Manager 会通过使用滚动更新模式更新所有服务节点，从而完全自动转换为最新版本的图像。这不会导致创作或发布服务出现停机。
 
 <!--- needs reworking -->
 
-![AEM 云服务 - 部署架构](assets/concepts-04.png "AEM 云服务 - 部署架构")
+![AEM as a Cloud Service - 部署架构](assets/concepts-04.png "AEM as a Cloud Service - 部署架构")
 
 ## 内容分发 {#content-distribution}
 
-Adobe Experience Manager 云服务已修改内容的发布方式。对于 AEM 云服务，不再使用 AEM 以前版本中的复制框架来发布页面（将更改从创作实例移动到发布实例）。
+Adobe Experience Manager as a Cloud Service 已修改内容的发布方式。对于 AEM as a Cloud Service，不再使用 AEM 以前版本中的复制框架来发布页面（将更改从创作实例移动到发布实例）。
 
-AEM 云服务现在可使用 [Sling 内容分发](https://sling.apache.org/documentation/bundles/content-distribution.html)功能移动相应的内容。这会使用在 Adobe I/O 上运行的管道服务，此服务在 AEM 支行时之外支行。
+AEM as a Cloud Service 现在可使用 [Sling 内容分发](https://sling.apache.org/documentation/bundles/content-distribution.html)功能移动相应的内容。这会使用在 Adobe I/O 上运行的管道服务，此服务在 AEM 支行时之外支行。
 
 设置会自动完成，包括在运行时添加、删除或循环发布节点时自动进行的自配置。
 
@@ -172,7 +172,7 @@ AEM 云服务现在可使用 [Sling 内容分发](https://sling.apache.org/docum
 
 ## 关键演变情况 {#key-evolutions}
 
-与前几代产品相比，AEM 云服务的新架构引入了一些根本性的变化和创新：
+与前几代产品相比，AEM as a Cloud Service 的新架构引入了一些根本性的变化和创新：
 
 * 从云数据存储中直接上传和提供所有文件 (blob)。关联的位流永远无需经过 AEM 创作和发布服务的 JVM。因此，可以使 AEM 创作和发布服务的节点变得更小，并使其更符合快速自动缩放的需求。对于业务从业者而言，这可以加快上传和下载图像、视频等的速度，从而提供更佳的体验。
 
