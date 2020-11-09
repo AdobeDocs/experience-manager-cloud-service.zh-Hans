@@ -149,7 +149,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
 
 >[!NOTE]
 >
->您还可以通过用户界面视图集，如编辑旋 [转集所述](#editing-spin-sets)。
+>您还可以通过用户界面视图集，如编辑旋转 [集中所述](#editing-spin-sets)。
 
 **视图旋转集**
 
