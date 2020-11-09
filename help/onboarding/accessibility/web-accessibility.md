@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager 云服务和 Web 无障碍准则
-description: 介绍 Adobe Experience Manager 云服务和 Web 无障碍准则
+title: Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
+description: 介绍 Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 translation-type: tm+mt
 source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 100%
 ---
 
 
-# Adobe Experience Manager 云服务和 Web 无障碍准则{#aem-and-the-web-accessibility-guidelines}
+# Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则{#aem-and-the-web-accessibility-guidelines}
 
-出于许多社会、经济和法律动因，需要确保 Web 内容尽可能设计地能够让任何目标受众访问，而无论他们具有任何缺陷或限制。因此，通过 Adobe Experience Manager (AEM) 云服务实现 Web 无障碍，已成为优秀的 Web 设计一个日益重要的方面。
+出于许多社会、经济和法律动因，需要确保 Web 内容尽可能设计地能够让任何目标受众访问，而无论他们具有任何缺陷或限制。因此，通过 Adobe Experience Manager (AEM) as a Cloud Service 实现 Web 无障碍，已成为优秀的 Web 设计一个日益重要的方面。
 
-使用 AEM 云服务创建无障碍网站和内容会产生以下影响：
+使用 AEM as a Cloud Service 创建无障碍网站和内容会产生以下影响：
 
 * 管理员负责配置 AEM 以确保正确启用辅助功能（无障碍功能）。
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 * 在实施网站设计时，模板开发人员还应注意到此类问题。
 
-Adobe Experience Manager 云服务符合[万维网联盟](#world-wide-web-consortium)提供的[准则](#wcag-accessibility-guidelines)。
+Adobe Experience Manager as a Cloud Service 符合[万维网联盟](#world-wide-web-consortium)提供的[准则](#wcag-accessibility-guidelines)。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Adobe Experience Manager 云服务符合[万维网联盟](#world-wide-web-consor
 
 WCAG 2.1 提供了[涵盖无障碍级别和如何符合这些级别的准则（包括相关成功标准）](https://www.w3.org/TR/WCAG/#conformance)。
 
-## WCAG 2.1 和 AEM 云服务 {#wcag-aem-cloud-service}
+## WCAG 2.1 和 AEM as a Cloud Service {#wcag-aem-cloud-service}
 
 使用 Adobe Experience Manager，内容作者和/或网站所有者可以创建符合 WCAG 2.1 A 级和 AA 级成功标准的 Web 内容：
 
