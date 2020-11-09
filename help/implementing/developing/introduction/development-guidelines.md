@@ -1,6 +1,6 @@
 ---
-title: AEM 云服务开发准则
-description: AEM 云服务开发准则
+title: AEM as a Cloud Service 开发准则
+description: AEM as a Cloud Service 开发准则
 translation-type: tm+mt
 source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# AEM 云服务开发准则 {#aem-as-a-cloud-service-development-guidelines}
+# AEM as a Cloud Service 开发准则 {#aem-as-a-cloud-service-development-guidelines}
 
 作为Cloud Service在AEM中运行的代码必须知道它始终在群集中运行。 这意味着始终会有多个实例在运行。该代码必须具有弹性，尤其是当实例可能在任何时间点停止时。
 
