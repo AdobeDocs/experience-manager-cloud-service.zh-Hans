@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  云服务 2020.9.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
 source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
@@ -10,7 +10,7 @@ ht-degree: 10%
 ---
 
 
-# [!DNL Adobe Experience Manager] 云服务 2020.9.0 版的发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明 {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
