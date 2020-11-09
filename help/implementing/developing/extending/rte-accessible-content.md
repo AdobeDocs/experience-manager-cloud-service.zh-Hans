@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configure RTE to create accessible sites {#configure-rte-accessible-sites}
+# 配置 RTE 以创建可访问的站点 {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager] 支持标准的辅助功能，如图像的替代文本以及创建内容时可访问的其他功能。 内容作者将这些功能与使用富文本编辑器(RTE)的组件一起使用。 这些功能包括通过标题和段落元素添加替代文本和结构信息等。
 
@@ -34,9 +34,9 @@ RTE功能可在许多组件中使用。 主组件是组 `Text` 件。
 * [激活插件并配置features属性](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [配置RTE的其他功能](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-要激活插件的一些或所有功能，请在CRXDE Lite的相应子分支 `rtePlugins` 中配置插件。
+要激活插件的几项或所有功能，请在CRXDE Lite的相应子分支 `rtePlugins` 中配置插件。
 
-![显示示例rtePlugin的CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
+![CRXDE Lite显示示例rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
 ### 指定RTE选择字段中可用的段落格式的示例 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
