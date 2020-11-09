@@ -54,7 +54,7 @@ ht-degree: 4%
 
    | 同步模式 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 已继承]** | 文件夹上没有明确的同步值；相反，文件夹会从其父文件夹或Dynamic Media配置中设置的默认模式继承 **[!UICONTROL 同步值。]** “已继承 **[!UICONTROL ”]** (Inherited)的详细状态通过工具提示显示。 |
+   | **[!UICONTROL 已继承]** | 文件夹上没有明确的同步值；相反，该文件夹会从其父文件夹或Dynamic Media配置中设置的默认模式继承 **[!UICONTROL 同步值。]** “已继承 **[!UICONTROL ”]** (Inherited)的详细状态通过工具提示显示。 |
    | **[!UICONTROL 将该文件夹子树中的所有内容同步到 dynamicmedia]** | 要成功发布到Dynamic Media，资产必须同步到Dynamic Media。 选择此选项将包括此子树中用于同步到Dynamic Media的所有资产。 特定于文件夹的设置将覆盖Dynamic Media配置中的默 **[!UICONTROL 认设置。]** |
    | **[!UICONTROL 从dynamicmedia sync中排除此文件夹子树中的所有内容]** | 排除此子树中的所有资产，使其不能同步到Dynamic Media。 |
 
