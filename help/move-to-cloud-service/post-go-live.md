@@ -14,7 +14,7 @@ ht-degree: 100%
 
 在上线后阶段，您应确保清理临时文件，审查持续开发的最佳实践并管理日志。
 
-以下工具可用于对 AEM 云服务环境进行故障诊断：
+以下工具可用于对 AEM as a Cloud Service 环境进行故障诊断：
 
 * **开发人员控制台**
 * **CRX/DE Lite**
@@ -23,9 +23,9 @@ ht-degree: 100%
 
 ## 开发人员控制台 {#developer-console}
 
-开发人员控制台中提供了调试 AEM 云服务开发人员环境的功能，可用于开发、暂存和生产环境。
+开发人员控制台中提供了调试 AEM as a Cloud Service 开发人员环境的功能，可用于开发、暂存和生产环境。
 
-请参阅[实施 AEM 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，了解有关开发工具的更多信息。
+请参阅[实施 AEM as a Cloud Service](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，了解有关开发工具的更多信息。
 
 ## CRX/DE Lite {#crxde-lite}
 
