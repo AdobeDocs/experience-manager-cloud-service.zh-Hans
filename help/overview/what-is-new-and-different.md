@@ -45,7 +45,7 @@ ht-degree: 10%
 >
 >有关更多详细信息，请 [参阅架构](/help/core-concepts/architecture.md)。
 
-AEM 云服务现在具有：
+AEM as a Cloud Service 现在具有：
 
 * 具有可变数量的 AEM 图像的动态架构。
 
@@ -268,14 +268,14 @@ Adobe Experience Manager资产作为Cloud Service优惠，为企业提供云本�
 
 有关详细信息，请 [参阅概述和资产Cloud Service简介](/help/assets/overview.md)。
 
-## 了解 Adobe Experience Manager 云服务 {#getting-to-know-aem-as-cloud-service}
+## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
 有关更多信息，请参阅：
 
-* [Adobe Experience Manager 云服务简介](/help/overview/introduction.md)
-* Adobe Experience Manager 云服务[架构](/help/core-concepts/architecture.md)
-* [对 AEM 云服务的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
-* [对 AEM Sites 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
-* [对 AEM Assets 云服务的显著更改](/help/assets/assets-cloud-changes.md)
+* [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)
+* Adobe Experience Manager as a Cloud Service[架构](/help/core-concepts/architecture.md)
+* [对 AEM as a Cloud Service 的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
+* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
 * [将AEM Assets作为Cloud Service](/help/assets/overview.md)
-* [Adobe Experience Manager 云服务教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
