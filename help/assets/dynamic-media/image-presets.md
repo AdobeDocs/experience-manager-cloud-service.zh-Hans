@@ -12,7 +12,7 @@ ht-degree: 44%
 
 # 应用 Dynamic Media 图像预设 {#applying-image-presets}
 
-图像预设使资产能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。 在导出图像时，您可以选择预设，这也会根据管理员指定的规范重新设置图像的格式。
+图像预设使资产能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。在导出图像时，您可以选择预设，这也会根据管理员指定的规范重新设置图像的格式。
 
 此外，您可以选择响应式图像预设（选择图像预设后，通过 **[!UICONTROL RESS]** 按钮指定）。
 
@@ -31,8 +31,9 @@ ht-degree: 44%
    >[!NOTE]
    >
    >* 静态演绎版显示在窗格的上半部分。 动态演绎版显示在下半部分。您只能对动态演绎版使用 URL 来显示图像。**[!UICONTROL URL]** 按钮仅在选择动态演绎版的情况下才会显示。而 **[!UICONTROL RESS]** 按钮则仅在选择响应式图像预设的情况下才会显示。
-   >
-   >* The system shows numerous renditions when you select **[!UICONTROL Renditions]** in an asset&#39;s Detail view. 您可以增加可查看的预设数。See [Increasing the number of image presets that display](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+      >
+      >
+   * The system shows numerous renditions when you select **[!UICONTROL Renditions]** in an asset&#39;s Detail view. 您可以增加可查看的预设数。See [Increasing the number of image presets that display](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
