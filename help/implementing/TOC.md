@@ -1,8 +1,8 @@
 ---
-sub-product: 实施 AEM 云服务
-user-guide-title: 实施 AEM 云服务
+sub-product: 实施 AEM as a Cloud Service
+user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
-user-guide-description: 了解如何自定义 Experience Manager 云服务部署，包括开发和部署主题。
+user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
 source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 64%
 
 # 实施 {#implementing}
 
-+ [实施 AEM 云服务的应用程序](/help/implementing/home.md)
++ [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
 + 使用 Cloud Manager {#using-cloud-manager}
    + [管理环境](cloud-manager/manage-environments.md)
    + [配置 CI/CD 管线](cloud-manager/configure-pipeline.md)
@@ -31,17 +31,17 @@ ht-degree: 64%
    + [Maven 项目版本处理](cloud-manager/project-version-handling.md)
    + [访问 Git](cloud-manager/accessing-git.md)
    + [将 Git 与 Adobe Cloud Manager 集成](cloud-manager/integrating-with-git.md)
-+ 部署 AEM 云服务 {#developing}
++ 部署 AEM as a Cloud Service {#developing}
    + [AEM 项目结构](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 项目存储库结构包](developing/introduction/repository-structure-package.md)
-   + [AEM 云服务 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
-   + [AEM 云服务开发准则](developing/introduction/development-guidelines.md)
+   + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [AEM as a Cloud Service 开发准则](developing/introduction/development-guidelines.md)
    + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM UI的结构](developing/introduction/ui-structure.md)
    + [Sling 备忘单](developing/introduction/sling-cheatsheet.md)
    + [使用 Sling 适配器](developing/introduction/sling-adapters.md)
-   + [在 AEM 云服务中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
-   + [AEM 云服务中的叠加](developing/introduction/overlays.md)
+   + [在 AEM as a Cloud Service 中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
+   + [AEM as a Cloud Service 中的叠加](developing/introduction/overlays.md)
    + [使用客户端库](developing/introduction/clientlibs.md)
    + [配置和配置浏览器](developing/introduction/configurations.md)
    + [记录](developing/introduction/logging.md)
@@ -87,7 +87,7 @@ ht-degree: 64%
    + [ContextHub API](developing/personalization/contexthub-api.md)
    + [与 Adobe Target 集成](/help/sites-cloud/integrating/adobe-target.md)
    + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-+ 配置和扩展 AEM 云服务 {#configuring-and-extending}
++ 配置和扩展 AEM as a Cloud Service {#configuring-and-extending}
    + [扩展体验片段](developing/extending/experience-fragments.md)
    + [自定义和扩展内容片段](developing/extending/content-fragments-customizing.md)
    + [内容片段配置用于渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)
@@ -95,15 +95,15 @@ ht-degree: 64%
    + [配置富文本编辑器](/help/implementing/developing/extending/rich-text-editor.md)
    + [配置 RTE 插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [配置 RTE 以创建可访问的站点](/help/implementing/developing/extending/rte-accessible-content.md)
-+ 部署到 AEM 云服务 {#deploying}
-   + [部署到 AEM 云服务](deploying/overview.md)
++ 部署到 AEM as a Cloud Service {#deploying}
+   + [部署到 AEM as a Cloud Service](deploying/overview.md)
    + [AEM版本更新](deploying/aem-version-updates.md)
-   + [为 AEM 云服务配置 OSGi](deploying/configuring-osgi.md)
+   + [为 AEM as a Cloud Service 配置 OSGi](deploying/configuring-osgi.md)
 + 创作层 {#author-tier}
    + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [保护创作层](/help/implementing/author-tier/securing-the-author-tier.md)
 + 内容交付概述 {#content-delivery}
    + [内容交付流程](dispatcher/overview.md)
    + [云中的调度程序](dispatcher/disp-overview.md)
-   + [AEM 云服务中的 CDN](dispatcher/cdn.md)
-   + [AEM 云服务中的缓存](dispatcher/caching.md)
+   + [AEM as a Cloud Service 中的 CDN](dispatcher/cdn.md)
+   + [AEM as a Cloud Service 中的缓存](dispatcher/caching.md)
