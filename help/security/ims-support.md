@@ -1,26 +1,26 @@
 ---
-title: 对 Adobe Experience Manager 云服务的 IMS 支持
-description: 对 Adobe Experience Manager 云服务的 IMS 支持
-translation-type: ht
+title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
+description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
 
 ---
 
 
-# 对 Adobe Experience Manager 云服务的 IMS 支持 {#ims-support-for-aem-as-a-cloud-service}
+# 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持 {#ims-support-for-aem-as-a-cloud-service}
 
 ## 简介 {#introduction}
 
-* AEM 云服务包括对 AEM 实例和基于身份验证的 Adobe 身份管理系统（简称 IMS）的 Admin console 支持。
+* AEM as a Cloud Service 包括对 AEM 实例和基于身份验证的 Adobe 身份管理系统（简称 IMS）的 Admin console 支持。
 * 通过 Admin Console，管理员可以集中管理所有 Experience Cloud 用户。
-* 可以将用户和组分配到与 AEM 云服务实例相关联的产品配置文件，从而让他们可以登录到该实例。
+* 可以将用户和组分配到与 AEM as a Cloud Service 实例相关联的产品配置文件，从而让他们可以登录到该实例。
 
 ## 主要亮点 {#key-highlights}
 
-AEM 云服务仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。它不为客户站点（如站点访客）的外部最终用户提供支持。
+AEM as a Cloud Service 仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。它不为客户站点（如站点访客）的外部最终用户提供支持。
 
 * Admin Console 将客户表示为 IMS 组织，将环境中的作者实例和发布实例表示为产品上下文实例。这将允许系统和产品管理员管理对实例的访问。
 * Admin Console 中的产品配置文件将决定用户可以访问哪些实例。
@@ -107,7 +107,7 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 [此处](https://www.adobe.io/apis/cloudplatform/umapi-new.html)介绍了用户同步工具使用的用户管理 API。
 
-## Adobe Experience 云服务配置 {#aem-configuration}
+## Adobe Experience as a Cloud Service 配置 {#aem-configuration}
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 ![产品配置文件](/help/security/assets/ims8.png)
 
-### 登录 Adobe Experience Manager 云服务 {#logging-in-to-aem}
+### 登录 Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
 **本地管理员登录**
 
@@ -176,7 +176,7 @@ AEM 可继续支持管理员用户在本地登录。登录屏幕具有本地登�
 
 ![IMS 登录 5](/help/security/assets/ims14.png)
 
-### 在 Adobe Experience Manager 云服务中管理权限和 ACL {#managing-permissions-in-aem}
+### 在 Adobe Experience Manager as a Cloud Service 中管理权限和 ACL {#managing-permissions-in-aem}
 
 ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组分配给定义 ACL 和权限的本地组。
 
@@ -201,7 +201,7 @@ ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组
 
 ### 访问 Cloud Manager {#accessing-cloud-manager}
 
-要访问 Cloud Manager 或 AEM 云服务环境，必须将您分配到 Cloud Manager 产品的配置文件。
+要访问 Cloud Manager 或 AEM as a Cloud Service 环境，必须将您分配到 Cloud Manager 产品的配置文件。
 
 请参阅[角色定义](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)，了解有关用于控制 Cloud Manager 中特定功能可用性的用户角色的更多信息。
 
@@ -225,10 +225,10 @@ ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组
 1. 将您添加到相应的配置文件后，您应能够在 Cloud Manager 中通过用户界面的右上角的 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 访问各自的租户。
 
 
-### 访问 AEM 云服务中的实例 {#accessing-instance-cloud-service}
+### 访问 AEM as a Cloud Service 中的实例 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->授予您访问 AEM 云服务中的实例权限之前，必须完成上一节中提到的步骤。
+>授予您访问 AEM as a Cloud Service 中的实例权限之前，必须完成上一节中提到的步骤。
 
 要在 **Admin Console** 中访问 AEM 实例，您应在 **Admin Console** 的产品列表中看到 Cloud Manager 计划和该计划中的环境。
 
