@@ -1,26 +1,26 @@
 ---
-title: Adobe Experience Manager 云服务 2020.5.0 发行说明
+title: Adobe Experience Manager as a Cloud Service 2020.5.0 发行说明
 description: Experience Manager 2020.5.0 发行说明
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
 
 
-# AEM 云服务 2020.5.0 发行说明 {#release-notes}
+# AEM as a Cloud Service 2020.5.0 发行说明 {#release-notes}
 
-本页面概述了 Experience Manager 云服务 2020.5.0 版的常规发行说明。
+本页面概述了 Experience Manager as a Cloud Service 2020.5.0 版的常规发行说明。
 
 ## 发布日期 {#release-date}
 
-[!DNL Experience Manager] 云服务 2020.5.0 的发布日期是 2020 年 5 月 7 日。
+[!DNL Experience Manager] as a Cloud Service 2020.5.0 的发布日期是 2020 年 5 月 7 日。
 
 ## AEM Sites 的新增功能 {#aem-sites}
 
-阅读本节内容，了解 AEM 云服务版本 2020.5.0 中 AEM Sites 的新增功能和更新。
+阅读本节内容，了解 AEM as a Cloud Service 版本 2020.5.0 中 AEM Sites 的新增功能和更新。
 
 * 现在，将批量页面移动和转出作为异步作业处理后，可以获得详细的作业信息。
 * 复制/粘贴页面树时，现在可以选择仅粘贴树的根页面，或者同时粘贴树的子页面。
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## Cloud Manager 的新增功能 {#cloud-manager}
 
-阅读本节内容，了解 AEM 云服务版本 2020.5.0 中 Cloud Manager 的新增功能和更新。
+阅读本节内容，了解 AEM as a Cloud Service 版本 2020.5.0 中 Cloud Manager 的新增功能和更新。
 
 ### 新增功能 {#what-is-new}
 
