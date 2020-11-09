@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Manager 云服务简介
-description: 'Adobe Experience Manager (AEM) 云服务简介。 '
-translation-type: ht
+title: Adobe Experience Manager as a Cloud Service 简介
+description: 'Adobe Experience Manager (AEM) as a Cloud Service 简介。 '
+translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager 云服务简介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service 简介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/cn/marketing/experience-manager.html) (AEM) 现已作为云服务提供。
+[Adobe Experience Manager](https://www.adobe.com/cn/marketing/experience-manager.html) (AEM) 现已作为 Cloud Service 提供。
 
-Adobe Experience Manager 云服务：
+Adobe Experience Manager as a Cloud Service：
 
 * 以云原生方式利用 AEM 应用程序。
 
@@ -50,9 +50,9 @@ Adobe Experience Manager 云服务：
 
 >[!NOTE]
 >
->请参阅[术语](terminology.md)，了解 AEM 云服务引入的某些新术语。
+>请参阅[术语](terminology.md)，了解 AEM as a Cloud Service 引入的某些新术语。
 
-## 作为云服务的附加价值 {#value-added-as-a-cloud-service}
+## 作为 Cloud Service 的附加价值 {#value-added-as-a-cloud-service}
 
 AEM 通过采用现代云服务的主要特点来实现这些目标：
 
@@ -62,22 +62,22 @@ AEM 通过采用现代云服务的主要特点来实现这些目标：
 
 * 它始终可缩放自如：
 
-   * 创建的 AEM 云服务的所有实例均相同；因此，服务架构将根据您的需求自动进行缩放。
+   * 创建的 AEM as a Cloud Service 的所有实例均相同；因此，服务架构将根据您的需求自动进行缩放。
 
 * 它始终保持为最新：
 
-   * AEM 云服务为 AEM 代码库实施了新的持续交付管道，每月可自动更新数次。这通过使该程序保持为最新版本，从而解决 AEM 应用程序的一大难题。
+   * AEM as a Cloud Service 为 AEM 代码库实施了新的持续交付管道，每月可自动更新数次。这通过使该程序保持为最新版本，从而解决 AEM 应用程序的一大难题。
 
 * 它始终不断发展：
 
-   * 根据客户实施的项目，AEM 云服务每天都在不断发展。系统会根据最佳实践不断审核和审查内容、代码和配置，以便为如何实现业务目标向您提供指导。
+   * 根据客户实施的项目，AEM as a Cloud Service 每天都在不断发展。系统会根据最佳实践不断审核和审查内容、代码和配置，以便为如何实现业务目标向您提供指导。
 
-## 了解 Adobe Experience Manager 云服务 {#getting-to-know-aem-as-cloud-service}
+## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-* 与先前版本相比，Adobe Experience Manager 云服务具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
-* Adobe Experience Manager 云服务[架构](/help/core-concepts/architecture.md)
-* [对 AEM 云服务的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
-* [对 AEM Sites 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
-* [对 AEM Assets 云服务的显著更改](/help/assets/assets-cloud-changes.md)
-* [Assets 云服务简介](/help/assets/overview.md)
-* [Adobe Experience Manager 云服务教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* 与先前版本相比，Adobe Experience Manager as a Cloud Service 具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service[架构](/help/core-concepts/architecture.md)
+* [对 AEM as a Cloud Service 的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
+* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
+* [Assets as a Cloud Service 简介](/help/assets/overview.md)
+* [Adobe Experience Manager as a Cloud Service 教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
