@@ -25,14 +25,16 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->* **如果您不需要下面[描述的高级](#definition-of-advanced-services-that-need-configuration)**服务，可以忽略此配置。
+>* **如果您不需要下面 [描述的高级](#definition-of-advanced-services-that-need-configuration)** 服务，可以忽略此配置。
+   >
+   >
+* **当您扩展或使用现成组件时**，不建议更改OSGi配置。
+   >
+   >
+* **您可以从头开始编写一个仅使用内容片段API的组件，而无需高级服务**。 但是，在这种情况下，您必须开发组件，以便它处理相应的处理。
 >
->* **当您扩展或使用现成组件时**，不建议更改OSGi配置。
 >
->* **您可以从头开始编写一个仅使用内容片段API的组件，而无需高级服务**。 但是，在这种情况下，您必须开发组件，以便它处理相应的处理。
->
->
->因此，建议使用核心组件。
+因此，建议使用核心组件。
 
 ## 需要配置的高级服务的定义 {#definition-of-advanced-services-that-need-configuration}
 
@@ -75,22 +77,22 @@ OSGi配置为：
   <tr>
    <td><strong>资源类型</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>要注册的资源类型； 例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>要注册的资源类型；例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>引用属性</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>包含对片段的引用的属性的名称； 例如 <code>fragmentPath</code> <code>fileReference</code></td>
+   <td>包含对片段的引用的属性的名称；例如 <code>fragmentPath</code> <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>元素属性</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>包含要呈现的元素名称的属性的名称； 例如，<code>elementName</code></td>
+   <td>包含要呈现的元素名称的属性的名称；例如，<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>变量属性</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>包含要呈现的变体的名称的属性的名称； 例如，<code>variationName</code></td>
+   <td>包含要呈现的变体的名称的属性的名称；例如，<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -109,8 +111,8 @@ OSGi配置为：
    <td><code>paragraphScope</code></td>
    <td><p>一个字符串属性，它定义在单元素渲染模式下输 <em>出段落的方式</em>。</p> <p>值:</p>
     <ul>
-     <li><code>all</code> : 渲染所有段落</li>
-     <li><code>range</code> : 渲染提供的段落范围 <code>paragraphRange</code></li>
+     <li><code>all</code> :渲染所有段落</li>
+     <li><code>range</code> :渲染提供的段落范围 <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -136,7 +138,7 @@ OSGi配置为：
 
 ## 示例 {#example}
 
-例如，请参阅以下内容（现成的AEM实例）:
+例如，请参见(现成的AEM实例):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config
