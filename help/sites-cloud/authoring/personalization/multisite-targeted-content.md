@@ -16,7 +16,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->对目标内容提供多站点支持是一项高级功能。要使用此功能，您应熟悉多站点管理器以及Adobe目标与AEM的集成。
+>对目标内容提供多站点支持是一项高级功能。要使用此功能，您应熟悉多站点管理器以及Adobe Target与AEM的集成。
 <!--
 >Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
 -->
@@ -44,7 +44,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 在某个区域中，只有链接到该区域的活动才会被推送到 Live Copy。默认情况下，主区域将处于选定状态。创建其他区域后，您可以将这些区域链接到站点或页面，以指示要推送的目标内容。
 
-站点或 Live Copy 链接到的区域包含需要在该站点或 Live Copy 上提供的活动。默认情况下，站点或Live Copy链接到主区域，但您可以很好地链接除主区域之外的其他区域。
+站点或 Live Copy 链接到的区域包含需要在该站点或 Live Copy 上提供的活动。默认情况下，站点或Live Copy链接到主控区域，但您可以很好地链接除主控区域之外的其他区域。
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 每个站点均共享地理区域中的个性化内容：
 
 * 加拿大站点与美国站点共享主区域。
-* 大不列颠与欧洲地区相连，从主区域继承。
+* 英国与欧洲地区相连，从主控地区继承。
 * 澳大利亚站点由于位于南半球，季节性产品不适用，因此会有自己的个性化内容。
 
 ![多站点图](/help/sites-cloud/authoring/assets/multisite-diagram.png)
@@ -289,7 +289,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 ## 删除区域 {#deleting-areas}
 
-删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了网站所链接的区域，则此品牌的映射将自动重新映射到主区域。
+删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了网站所链接的区域，则此品牌的映射将自动重新映射到主控区域。
 
 要删除区域，请执行以下操作：
 
