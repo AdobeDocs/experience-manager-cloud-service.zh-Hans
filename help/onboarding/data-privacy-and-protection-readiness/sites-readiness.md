@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager保护和数据隐私法规——作为Cloud Service站点就绪性
-description: '了解Adobe Experience Manager作为Cloud Service站点对各种数据保护和数据隐私法规的支持； 包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及在将新AEM作为Cloud Service项目实施时如何遵守这些规定。 '
+title: 数据保护和数据隐私法规-Adobe Experience Manager作为Cloud Service站点就绪性
+description: '了解Adobe Experience Manager作为Cloud Service站点对各种数据保护和数据隐私法规的支持；包括欧盟一般数据保护规定(GDPR)、加利福尼亚州消费者隐私法，以及在将新的AEM作为Cloud Service项目实施时如何遵守这些规定。 '
 translation-type: tm+mt
 source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
@@ -20,25 +20,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关Adobe对隐私权问题的回应，以及这对您作为Adobe客户意味着什么的更多信息，请 [参阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
+>有关Adobe对隐私问题的回应以及这对Adobe客户意味着什么的更多信息，请参 [阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
 
-Adobe Experience Manager作为Cloud Service站点，可以帮助客户履行其数据隐私和保护合规义务。 本页将指导客户完成在AEM Sites中处理此类请求的过程。 它描述了存储的私有数据的位置，以及如何手动或使用代码删除这些数据。
+Adobe Experience Manager作为Cloud Service站点，随时准备帮助客户履行其数据隐私和保护合规义务。 本页将引导客户完成在AEM Sites处理此类请求的过程。 它描述了存储的私有数据的位置，以及如何手动或使用代码删除这些数据。
 
 有关详细信息，请参 [阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
 
 >[!NOTE]
 >
->有关 [更多详细信息，请参阅Adobe Experience Manager作为Cloud Service就绪性数据保护和数据隐私](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) 法规。
+>有关 [更多详细信息，请参阅Adobe Experience ManagerCloud Service数据保护和数据隐私法规的](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) “准备就绪性”。
 
 ## AEM 创作层 {#aem-author-tier}
 
-AEM Foundation文档中介绍了作者服务器上的用户帐 [户和UGC内容](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
+AEM Foundation文档中介绍了作者服务器上的用户帐户 [和UGC内容](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
 
 ## AEM 发布层 {#aem-publish-tier}
 
-AEM Foundation文档中介绍用于验证站点上访客和发布服务器上UGC内 [容的用户帐户](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
+AEM Foundation文档中介绍用于验证站点上访客和发布服务器上UGC内容的 [用户帐户](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
 
-默认情况下，AEM Sites组件不存储访客在发布服务器上输入的表单数据。 建议将数据转发给第三方系统或Adobe Campaign以进一步处理。
+默认情况下，AEM Sites组件不存储由访客在发布服务器上输入的表单数据。 建议将数据转发给第三方系统或Adobe Campaign以进一步处理。
 
 ## 选择加入／选择退出 {#opt-in-opt-out}
 
@@ -55,7 +55,7 @@ Adobe Experience Manager受用于管理用户选择加入／选择退出的cooki
 
 1. 向下滚动到 **服务** - **Experience Cloud服务使用数据**。
 
-1. 选择引用的链接； 当前的 **标题**。
+1. 选择引用的链接；当前的 **标题**。
 
 1. 您将获得以下详细信息，以及指向或选择退出在其中的选项：
 
@@ -70,13 +70,13 @@ Adobe Experience Manager受用于管理用户选择加入／选择退出的cooki
 
    >[!NOTE]
    >
-   > 2中有进一步的 **说明。 隐私.** 部分 [中](https://www.adobe.com/legal/terms.html)。
+   > 2中有进一步的 **说明。 隐私.** adobe一 [般使用条款部分](https://www.adobe.com/legal/terms.html)。
 
-## Analytics基金会 {#analytics-foundation}
+## Analytics Foundation {#analytics-foundation}
 
-AEM Sites包括与Analytics基金会的可选集成，后者使用AdobeAnalytics点播服务中的功能。
+AEM Sites包括与Analytics Foundation的可选集成，后者使用Adobe Analytics点播服务中的功能。
 
-有关管理与AdobeAnalytics相关的数据主体请求的更多信息，请 [参阅AdobeAnalytics和数据隐私](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)。
+有关管理与Adobe Analytics相关的数据主体请求的更多信息，请参 [阅Adobe Analytics和数据隐私](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)。
 
 ## 按目标划分的个性化基础 {#personalization-foundation-by-target}
 
@@ -92,7 +92,7 @@ AEM provides an optional data layer with [ContextHub](/help/sites-developing/con
 
 AEM为ContextHub提供可选数据层。 这会在浏览器中保留特定于访客的数据，以便用于基于规则的个性化。
 
-默认情况下，此访客数据不存储在AEM中； AEM将规则发送到数据层，以便在浏览器中做出个性化决策。
+默认情况下，此访客数据不存储在AEM中；AEM会向数据层发送规则，以便在浏览器中做出个性化决策。
 
 ### 实施加入／退出 {#implementing-opt-in-opt-out}
 
@@ -130,7 +130,7 @@ AEM为ContextHub提供可选数据层。 这会在浏览器中保留特定于访
 
 要预览使用的ContextHub的永久性，用户可以：
 
-* 使用浏览器的控制台； 例如：
+* 使用浏览器的控制台；例如：
 
    * 铬黄：
 
@@ -231,7 +231,7 @@ console.log(storage.getTree());
    ContextHub.resetAllStores();
    ```
 
-* 清除特定的持久性层； 例如，sessionStorage:
+* 清除特定的持久性层；例如，sessionStorage:
 
    ```
    var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
