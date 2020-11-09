@@ -1,6 +1,6 @@
 ---
-title: 部署到 AEM 云服务
-description: '部署到 AEM 云服务 '
+title: 部署到 AEM as a Cloud Service
+description: '部署到 AEM as a Cloud Service '
 translation-type: tm+mt
 source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 部署到 AEM 云服务 {#deploying-to-aem-as-a-cloud-service}
+# 部署到 AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## 简介 {#introduction}
 
