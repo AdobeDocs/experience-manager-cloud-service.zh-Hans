@@ -244,7 +244,7 @@ Apache Sling Repo Init文档提供回购初始化脚本 [的完整词汇](https:
 + `all` 容器包嵌入以下包，以创建单个部署伪像
    + `ui.apps` 嵌入到部 `/apps/my-app-packages/application/install` 署代码中，AEM author和AEM publish都可以
    + `ui.apps.author` 嵌入到部 `/apps/my-app-packages/application/install.author` 署代码中，仅允许AEM作者
-   + `ui.content` 嵌入到部 `/apps/my-app-packages/content/install` 署内容和配置中，AEM author和AEM publish
+   + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 部署内容和配置中，AEM author和AEM publish
    + `ui.content.publish` 嵌入到部 `/apps/my-app-packages/content/install.publish` 署内容和配置中，仅发布到AEM
 
 >[!TIP]
