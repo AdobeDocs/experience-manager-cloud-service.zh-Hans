@@ -5,17 +5,17 @@ translation-type: tm+mt
 source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 内容投放流 {#content-delivery}
+# 内容交付流程 {#content-delivery}
 
-当前页面详细信息将AEM中的服务内容投放作为云服务发布。 发布服务内容投放包括：
+当前页详细信息以Cloud Service形式发布AEM中的服务内容投放。 发布服务内容投放包括：
 
 * CDN
-* AEM调度程序
+* AEM dispatcher
 * AEM发布
 
 数据流如下：
