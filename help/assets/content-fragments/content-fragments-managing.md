@@ -16,7 +16,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->内容片段随后用于创作页面； 请参 [阅使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+>内容片段随后用于创作页面；请参 [阅使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -32,7 +32,7 @@ ht-degree: 11%
 2. 选择 **创建**，然后选择 **内容片段** ，以打开向导。
 3. 向导的第一步要求您指定新片段的基础。
 
-   * [模型](/help/assets/content-fragments/content-fragments-models.md) -用于创建需要结构化内容的片段； 例如， **Adventure** model
+   * [模型](/help/assets/content-fragments/content-fragments-models.md) -用于创建需要结构化内容的片段；例如， **Adventure** model
 
       * 将显示所有可用型号。
 
@@ -57,9 +57,9 @@ ht-degree: 11%
 
       * **名称**
 
-         名称； 将用于形成URL。
+         名称；将用于形成URL。
 
-         强制； 将自动从标题派生，但可以更新。
+         强制；将自动从标题派生，但可以更新。
 
 
 5. 选 **择创建** ，以完成操作，然后打开片段 **进行编辑** ，或返回控制台并执行完 **成**。
@@ -68,8 +68,8 @@ ht-degree: 11%
 
 在“资 **产** ”控制台中，您的内容片段可以执行一系列操作，其中一种操作为：
 
-* 工具栏； 选择片段后，所有适当的操作都可用。
-* 作为 [快速行动](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); 可用于单个片段卡的操作子集。
+* 工具栏；选择片段后，所有适当的操作都可用。
+* 作为 [快速行动](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions);可用于单个片段卡的操作子集。
 
 ![动作](assets/cfm-managing-02.png)
 
@@ -78,7 +78,7 @@ ht-degree: 11%
 * **创建**
 * **下载**
 
-   * 将片段另存为ZIP文件； 您可以定义是否包括元素、变量、元数据。
+   * 将片段另存为ZIP文件；您可以定义是否包括元素、变量、元数据。
 
 * **签出**
 * **属性**
@@ -223,9 +223,9 @@ ht-degree: 11%
 * 视图有关版本、注释和批注的信息
 * 版本操作
 
-   * **[还原到此版本](#reverting-to-a-version)**（选择现有片段，然后选择特定版本）
+   * **[还原到此版本](#reverting-to-a-version)** （选择现有片段，然后选择特定版本）
 
-   * **[与当前片段比较](#comparing-fragment-versions)**（先选择一个现有片段，然后选择一个特定版本）
+   * **[与当前片段比较](#comparing-fragment-versions)** （先选择一个现有片段，然后选择一个特定版本）
 
    * 添加标 **签** 和／或 **注释** （选择现有片段，然后选择特定版本）
 
@@ -236,11 +236,10 @@ ht-degree: 11%
    * **删除**
 
 >[!NOTE]
->
->评论包括：
->* 适用于所有资产的标准功能
->* 在时间轴中制作
->* 与片段资产相关
+评论包括：
+* 适用于所有资产的标准功能
+* 在时间轴中制作
+* 与片段资产相关
 
 注释（针对内容片段）包括：
 * 在片段编辑器中输入
@@ -270,13 +269,12 @@ ht-degree: 11%
    * 插入的文本——绿色
    * 替换文本——蓝色
 
-* 全屏图标允许您自行打开任一版本； 然后切换回并行视图
+* 全屏图标允许您自行打开任一版本；然后切换回并行视图
 * 您可以 **还原** 到特定版本
 * **完成** ，将返回控制台
 
 >[!NOTE]
->
->在比较片段时，无法编辑片段内容。
+在比较片段时，无法编辑片段内容。
 
 ![比较](assets/cfm-managing-06.png)
 
@@ -293,18 +291,16 @@ ht-degree: 11%
 ## 发布和引用片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->如果您的片段基于模型，则应确保该 [模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
->如果发布的内容片段尚未发布模型，则将显示一个选择列表来指示此情况，并且该模型将随片段一起发布。
+如果您的片段基于模型，则应确保该 [模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+如果发布的内容片段尚未发布模型，则将显示一个选择列表来指示此情况，并且该模型将随片段一起发布。
 
 必须发布内容片段才能在发布环境中使用。 可以发布它们：
 
-* 创建后； 从“资 **产** ”控制台。
-* 当您发 [布使用片段的页面时](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 片段将列在页面引用中。
+* 创建后；从“资 **产** ”控制台。
+* 当您发 [布使用片段的页面时](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing);片段将列在页面引用中。
 
 >[!CAUTION]
->
->在发布和／或引用片段后，当作者打开片段以再次进行编辑时，AEM将显示一条警告消息。 这将警告对片段所做的更改也会影响引用的页面。
+在发布和／或引用片段后，当作者打开片段以再次进行编辑时，AEM将显示一条警告消息。 这将警告对片段所做的更改也会影响引用的页面。
 
 ## 删除片段 {#deleting-a-fragment}
 
@@ -314,12 +310,10 @@ ht-degree: 11%
 2. 选择片段。
 
    >[!NOTE]
-   >
-   >The **Delete** action is not available as a quick action.
+   The **Delete** action is not available as a quick action.
 
 3. Select **Delete** from the toolbar.
 4. 确认删 **除** 。
 
    >[!CAUTION]
-   >
-   >如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。
+   如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。
