@@ -1,11 +1,11 @@
 ---
-title: 创建项目-云服务
-description: 创建项目-云服务
+title: 创建项目-Cloud Service
+description: 创建项目-Cloud Service
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
    ![](assets/program-create-setupdemo2.png)
 
-1. 在项目设置和项目创建步骤完成后，用户可以访 **问“管理** Git”链接，如下图所示：
+1. 在项目设置和项目创建步骤完成后，用户可以访 **问“管理Git** ”链接，如下图所示：
 
    ![](assets/create-program4.png)
 
@@ -53,11 +53,11 @@ ht-degree: 0%
    >要进一步了解如何通过云管理器用户界面使用自助Git帐户管理访问和管理您的Git存储库，请参阅 [访问Git](/help/implementing/cloud-manager/accessing-git.md)。
 
 
-1. 创建开发环境后，用户可 **以访问** AEM链接，如下图所示：
+1. 创建开发环境后，用户可 **以访** 问AEM链接，如下图所示：
 
    ![](assets/create-program-5.png)
 
-1. 完成部署到开发的非生产渠道部署后，该向导将指导用户访问AEM（在开发时）或将代码部署到开发环境:
+1. 完成部署到开发的非生产渠道后，向导将指导用户访问AEM（开发时）或将代码部署到开发环境:
 
    ![](assets/create-program-setup-deploy.png)
 
@@ -68,10 +68,10 @@ ht-degree: 0%
 
 ## 删除沙箱项目 {#delete-sandbox-program}
 
-业务所有者或云管 *理器中**的部署管理器角色的沙箱项目* ，可以通过云管理器UI删除其生产环境集和阶段集。
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->在生产或舞台上选择删除选项也会删除集合中的另一个。
+>在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
 
 登陆页中提供了删除选项，如下所示：
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## 创建常规项目 {#create-regular-program}
 
-常规 *项目* 适用于熟悉AEM和Cloud Manager并且准备好编写、构建和测试代码并将其部署到生产的用户。
+常规 *项目* 适用于熟悉AEM和云管理器并准备好开始编写、构建和测试代码，以将其部署到生产的用户。
 
 请按照以下步骤创建常规项目:
 
