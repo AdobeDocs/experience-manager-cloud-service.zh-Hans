@@ -109,6 +109,7 @@ ht-degree: 100%
          单击&#x200B;**下一步**。
 
       1. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中确认您的选择，然后单击&#x200B;**[!UICONTROL 发布到 Brand Portal]**。
+
    此时将显示一条消息，表明文件夹已排队等候发布到 Brand Portal。登录到 Brand Portal 界面可查看已发布的文件夹。
 
 1. **稍后发布文件夹**
