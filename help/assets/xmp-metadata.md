@@ -1,6 +1,6 @@
 ---
 title: XMP 元数据
-description: 了解用于元数据管理的XMP(可扩展元数据Platform)元数据标准。 AEM将其用作元数据的创建、处理和交换的标准格式。
+description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 AEM将其用作元数据的创建、处理和交换的标准格式。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
@@ -27,7 +27,7 @@ XMP 通过提供数据模型、存储模型和架构，使元数据的定义、�
 
 来自 EXIF、ID3 或 Microsoft Office 的所有旧版元数据都将自动转换为 XMP，而 XMP 可进行扩展，以支持特定于客户的元数据架构，例如产品目录。
 
-XMP 中的元数据包含一组属性。这些属性始终与称为资源的特定实体相关联； 即，属性是“关于”资源的。 对于 XMP，资源始终是指资产。
+XMP 中的元数据包含一组属性。这些属性始终与称为资源的特定实体相关联；即，属性是“关于”资源的。 对于 XMP，资源始终是指资产。
 
 XMP 定义了一个可与任何定义的元数据项集一起使用的[元数据](https://en.wikipedia.org/wiki/Metadata)模型。XMP 还为基本属性定义了一个特定的[架构[，这些基本属性可用于记录资源经过多个处理步骤的历史记录：从拍摄、](https://en.wikipedia.org/wiki/XML_schema)扫描](https://en.wikipedia.org/wiki/Image_scanner)或创作为文本，到照片编辑步骤（如[裁剪](https://en.wikipedia.org/wiki/Cropping_%28image%29)或颜色调整），再到组合到最终图像中。XMP 允许每个软件程序或设备向数字资源添加其自己的信息，该信息可保留在最终的数字文件中。
 
@@ -63,7 +63,7 @@ XMP 可以包含来自一个或多个架构的属性。例如，很多 Adobe 应
 
 * 都柏林核心模式: `dc:title`, `dc:creator`, `dc:subject`, `dc:format``dc:rights`
 * XMP基本模式: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate``xmp:metadataDate`
-* XMP权限管理模式: `xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP rights management模式: `xmpRights:WebStatement`, `xmpRights:Marked`
 * XMP media management schema: `xmpMM:DocumentID`
 
 **替代语言**
@@ -72,9 +72,9 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
-此Adobe Experience Manager(AEM)资产中的XMP回写功能可将资产元数据更改复制到资产的演绎版。
+Adobe Experience Manager(AEM)资产中的此XMP回写功能可将资产元数据更改复制到资产的演绎版。
 
-当您从AEM Assets内或在上传资产时更改资产的元数据时，更改最初存储在CRXDE的资产节点内。
+当您从AEM Assets内更改资产的元数据或在上传资产时，更改最初存储在CRXDE的资产节点内。
 
 XMP回写功能会将元数据更改传播到资产的所有或特定演绎版。
 
@@ -88,24 +88,24 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 
 但是，AEM Assets不会自动将任何元数据更改传播到资产的演绎版。
 
-利用XMP回写功能，您可以将元数据更改传播到资产的所有演绎版或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
+XMP回写功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
 
 ### 启用XMP回写 {#enable-xmp-writeback}
 
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
 
-要在上传元数据更改时将其传播到资产的演绎版，请在Configuration Manager中 **[!UICONTROL 修改Adobe CQ DAM Rendition]** Maker配置。
+要在上传元数据更改时将其传播到资产的演绎版，请在配置管理器中 **[!UICONTROL 修改Adobe CQDAM演绎版]** Maker配置。
 
 1. 要打开Configuration Manager，请访 `https://[aem_server]:[port]/system/console/configMgr`问。
-1. 打开 **[!UICONTROL Adobe CQ DAM Rendition Maker配置]** 。
+1. 打开 **[!UICONTROL Adobe CQDAM再现生成器]** 。
 1. 选择“ **[!UICONTROL 传播XMP]** ”选项，然后保存更改。
 
 ### 为特定再现启用XMP回写 {#enable-xmp-writeback-for-specific-renditions}
 
-要让XMP回写功能将元数据更改传播到选定的演绎版，请将这些演绎版指定到DAM元数据回写工作流 [!UICONTROL 的“XMP回写流程] ”工作流步骤。 默认情况下，此步骤配置为原始再现。
+要让XMP回写功能将元数据更改传播到选定的演绎版，请将这些演绎版指定到 [!UICONTROL DAM元数据回写工作流的] XMP回写回流程工作流步骤。 默认情况下，此步骤配置为原始再现。
 
-要使用XMP回写功能将元数据传播到再现缩略图140.100.png和319.319.png，请执行这些步骤。
+要使XMP回写功能将元数据传播到再现缩略图140.100.png和319.319.png，请执行这些步骤。
 
 1. 点按/单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模式]**。
 1. 在“模型”页中，打开DAM元 **[!UICONTROL 数据写回工作流]** 模型。
@@ -124,5 +124,5 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 
 >[!MORELIKETHIS]
 >
->* [Adobe的XMP规范](https://www.adobe.com/devnet/xmp.html)
+>* [XMP规范(按Adobe)](https://www.adobe.com/devnet/xmp.html)
 
