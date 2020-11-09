@@ -1,9 +1,9 @@
 ---
 title: 访问创作层
 description: 访问创作层
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e772687c4034a364912aa426a133134571246db9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 访问创作层 {#accessing-the-author-tier}
 
-通过标准且不可自定义的 URL，访问 AEM 云服务环境的创作层。
+通过标准且不可自定义的 URL，访问 AEM as a Cloud Service 环境的创作层。
 
 当前，URL 格式如下：
 
