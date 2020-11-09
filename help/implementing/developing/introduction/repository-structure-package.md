@@ -1,6 +1,6 @@
 ---
 title: 'AEM 项目存储库结构包  '
-description: Adobe Experience Manager作为Cloud ServiceMaven项目需要存储库结构子包定义，其唯一目的是定义JCR存储库根，在该JCR存储库根中部署项目的代码子包。
+description: Adobe Experience Manager作为Cloud ServiceMaven项目，需要一个存储库结构子包定义，其唯一目的是定义JCR存储库根，在该JCR存储库根中部署项目的代码子包。
 translation-type: tm+mt
 source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
@@ -167,7 +167,7 @@ ht-degree: 9%
 
 在本例中：
 
-+ 代码包A应在项 `<repositoryStructurePackage>` 目的存储库结构包上定义一个(它应具有筛选器 `/apps`)。
++ 代码包A应在项 `<repositoryStructurePackage>` 目的存储库结构包上定义一个(它应具有筛选 `/apps`器)。
 + 代码包B应在代码 `<repositoryStructurePackage>` 包A上定义一个，因为代码包B部署到由代码包A共享的空间中。
 
 ## 错误和调试
