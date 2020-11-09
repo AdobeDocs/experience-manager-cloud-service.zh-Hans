@@ -3,9 +3,9 @@ title: 设置资产水印
 description: 将水印添加到您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
+source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. PNG文件将作为水印应用。 将此文件上传到DAM存储库中。
 
-1. 访问与 [!DNL Cloud Manager] 您的环境关联的Git存储库。 提交其Git存储 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` 库中 [!DNL Cloud Manager] 名为的文件，并包含以下内容。 有关详细信息，请 [参阅如何将OSGi配 [!DNL Experience Manager] 置作为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
+1. 访问与 [!DNL Cloud Manager] 您的环境关联的Git存储库。 提交存储库中 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 名为的文件，其内容如下。 有关说明，请 [参阅如何将OSGi [!DNL Experience Manager] 配置作为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
 
    ```json
    {
