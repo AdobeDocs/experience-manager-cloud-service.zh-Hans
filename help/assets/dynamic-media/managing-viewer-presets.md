@@ -39,7 +39,7 @@ See also the [Adobe Viewers Reference Guide](https://docs.adobe.com/content/help
 
 ## 管理查看器预设 {#managing-viewer-presets-1}
 
-You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -399,7 +399,7 @@ AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICON
 
 **创建查看器预设**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 
    ![6_5查看器预设](assets/6_5_viewerpresets.png)
 
@@ -515,7 +515,7 @@ AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICON
 
 |  | **描述** | **操作** |
 |---|---|---|
-| **[!UICONTROL 热点图标]** | 更改用于热点的图标 | 要更改热点图标图像，请在“外观” **[!UICONTROL 选项卡]** 的“选 **[!UICONTROL 定组件”中]**，点 **[!UICONTROL 按ImageMapEffect]**。 Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
+| **[!UICONTROL 热点图标]** | 更改用于热点的图标 | 要更改热点图标图像，请在“外观” **[!UICONTROL 选项卡]** 的“选 **[!UICONTROL 定的组件”中]**，点 **[!UICONTROL 按ImageMapEffect]**。 Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
 
 ## 激活或取消激活查看器预设 {#activating-or-deactivating-viewer-presets}
 
@@ -523,7 +523,7 @@ AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICON
 
 **激活或取消激活查看器预设**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. 在“查看器预设”页面的“状 **[!UICONTROL 态]** ”列标题下，点按切换以激活或取消激活查看器预设。
 
    已激活的查看器预设可在右侧的蓝色框中进行切换；停用的查看器预设可在灰色浅框内左侧显示切换。
@@ -540,13 +540,13 @@ AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICON
 
 **要发布查看器预设，请执行以下操作：**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. 选择一个或多个要发布的查看器预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
 
 ## 为查看器预设排序 {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. 单击&#x200B;**[!UICONTROL 预设标题]**、**[!UICONTROL 类型]**、**[!UICONTROL 已发布]**&#x200B;或&#x200B;**[!UICONTROL 状态]**&#x200B;来按列标题进行排序。例如，单击&#x200B;**[!UICONTROL 类型]**&#x200B;按字母顺序或反向字母顺序对查看器预设类型进行排序。
 
 ## 编辑查看器预设 {#editing-viewer-presets}
@@ -555,7 +555,7 @@ AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICON
 
 **编辑查看器预设**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset] > [!UICONTROL Viewer Presets]**.
 1. 选中查看器预设标题左侧的框，以选择预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
 1. 在&#x200B;**[!UICONTROL 查看器预设编辑器]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 外观]**&#x200B;和&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡上的选项对查看器预设进行所需的更改。
@@ -573,7 +573,7 @@ AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICON
 
 **删除自定义查看器预设**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. 在“查看器预设”页面上，选中预设标题，然后点按废纸篓 **[!UICONTROL 图]** 标。
 1. 点按 **[!UICONTROL 删除]**。
 
