@@ -14,7 +14,7 @@ ht-degree: 30%
 
 当您想 **[!UICONTROL 要播放视频或查看嵌入到网页中的资产时]** ，请使用嵌入代码功能。 将嵌入代码复制到剪贴板，以便将其粘贴到网页中。 不允许在“嵌入代码”对 **[!UICONTROL 话框中编辑代码]** 。
 
-仅当您未将AEM用作 _WCM_ 时，才嵌入URL。 如果您将AEM用作WCM, [则可以直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
+仅当您不使用AEM作 _为_ WCM时，才嵌入URL。 如果您使用AEM作为WCM, [则直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
