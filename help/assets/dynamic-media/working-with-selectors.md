@@ -82,7 +82,7 @@ ht-degree: 18%
 
 1. 在预览 **[!UICONTROL 模式]** 下，如果点按热点或图像映射，则导航到您指定的AEM站点页面。
 
-## 在Dynamic Media中选择资产 {#selecting-assets}
+## Selecting assets in Dynamic Media {#selecting-assets}
 
 使用此选择器选择用于传送横幅、交互式视频、图像集、混合媒体集和旋转集的图像。 在交互式视频中，当您点按内容选项卡中的选 **[!UICONTROL 择资产时]** ，资产选 **[!UICONTROL 择器可]** 用。 在传送集中，创建新幻灯片时，资产选择器可用。 在图像集、混合媒体集和旋转集中，当您分别创建新的图像集、混合媒体集或旋转集时，资产选择器可用。
 
