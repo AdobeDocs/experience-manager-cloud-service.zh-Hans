@@ -35,7 +35,7 @@ ht-degree: 6%
 
 ![下载通知](assets/download-notification.png)
 
-*图：通过收件箱下[!DNL Experience Manager]载通知。*
+*图：通过收件箱下 [!DNL Experience Manager] 载通知。*
 
 异步下载会在以下任一情况下触发：
 
