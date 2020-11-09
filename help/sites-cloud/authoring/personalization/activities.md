@@ -30,7 +30,7 @@ Activities are available in Targeting mode for [authoring targeted content](/hel
 
 * XT - Adobe Target 体验定位
 * A/B - Adobe Target A/B 测试
-* AEM - Adobe Experience Manager定位（即ContextHub驱动型）
+* AEM -Adobe Experience Manager定位（即ContextHub驱动型）
 
 ![活动类型](/help/sites-cloud/authoring/assets/activities-types.png)
 
@@ -39,11 +39,12 @@ Activities are available in Targeting mode for [authoring targeted content](/hel
 >可用的活动类型由以下因素决定：
 >
 >* 如果 `xt_only` 在AEM端用于连接到Adobe Target的Adobe Target租户(clientcode)上启用了此选项，则您只能在AEM中创 **建** XT活动。
+   >
+   >
+* 如果Adobe `xt_only` Target租户 **(clientcode)上未启用这些选项，则您可以在** AEM中创建 **** XT和A/B活动。
 >
->* 如果Adobe `xt_only` Target租户 **(clientcode)上未启用这些选项，则您可以在** AEM中创建 **** XT和A/B活动。
 >
->
->**其他注意事项：**`xt_only` 选项是对特定 Target 租户 (clientcode) 应用的设置，只能在 Adobe Target 中直接进行修改。您无法在 AEM 中启用或禁用此选项。
+**其他注意事项：**`xt_only` 选项是对特定 Target 租户 (clientcode) 应用的设置，只能在 Adobe Target 中直接进行修改。您无法在 AEM 中启用或禁用此选项。
 
 >[!CAUTION]
 >
@@ -76,7 +77,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 * **名称：**&#x200B;活动的名称。
 * **定位引擎：**&#x200B;将 [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) 或 [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) 作为目标内容的引擎。
 * **选择 Target 配置：**（仅限 Adobe Target）此活动连接到 Adobe Target 的云配置。只有为定位引擎选择了 Adobe Target 时，才会显示此选项。
-* **活动类型**: 活动类型- A/B测试或体验定位
+* **活动类型**:活动类型- A/B测试或体验定位
 * **目标：**（可选）活动描述。
 * **体验：**&#x200B;受众名称和您定位的营销区段之间的映射。
 * **流量百分比：**&#x200B;如果选择 A/B 测试，则可以更改每个体验的流量（百分比）。
@@ -164,6 +165,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
    * 禁用当前活动
    * 修改所有页面，并将目标内容替换为入选体验的实际内容。The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![转换入选方](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    入选体验是在报表中生成较高提升度（基于转化率）的体验。
@@ -209,7 +211,7 @@ When AEM synchronizes an activity with Adobe Target, AEM includes a property of 
 
 >[!NOTE]
 >
->在 Adobe Target 中创建营销活动时，会为每个营销活动分配名为 `thirdPartyId` 的属性。在 Adobe Target 中删除营销活动时，不会删除 `thirdPartyId`。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。要避免此问题，请为每个活动命名一个唯一的名称； 因此，活动名称不能在不同的活动类型中重新使用。
+>在 Adobe Target 中创建营销活动时，会为每个营销活动分配名为 `thirdPartyId` 的属性。在 Adobe Target 中删除营销活动时，不会删除 `thirdPartyId`。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。要避免此问题，请为每个活动命名一个唯一的名称；因此，活动名称不能在不同的活动类型中重新使用。
 >
 >如果在同一种营销活动类型中使用相同的名称，则会覆盖现有的营销活动。
 >
