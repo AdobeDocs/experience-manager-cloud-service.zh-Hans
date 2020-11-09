@@ -39,6 +39,7 @@ ht-degree: 81%
 >
 >* [提升嵌套启动项](#promoting-a-nested-launch)，当结构中有多个启动项时。
 >* [启动项 - 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)，包含有关自动提升和发布的更多详细信息。
+
 >
 
 
@@ -62,6 +63,7 @@ ht-degree: 81%
       * **提升已修改的页面**
       * **提升当前页面**
       * **提升当前页面和子页面**
+
       例如，当选择仅提升已修改的页面时：
 
       ![启动促销](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -103,6 +105,7 @@ ht-degree: 81%
       * **提升已修改的页面**
       * **提升当前页面**
       * **提升当前页面和子页面**
+
    ![提升启动设置](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. 选择&#x200B;**下一步**。
