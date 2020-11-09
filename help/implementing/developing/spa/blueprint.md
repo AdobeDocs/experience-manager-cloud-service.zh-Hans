@@ -1,6 +1,6 @@
 ---
 title: SPA Blueprint
-description: 本文档描述了任何SPA框架在AEM内实施可编辑的SPA组件时应履行的与框架无关的一般合同。
+description: 本文档描述了任何SPA框架为在AEM内实施可编辑的SPA组件而应履行的与框架无关的一般合同。
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-本文档描述了任何SPA框架(即AEM支持层)为在AEM内实施可编辑的SPA组件应履行的一般合同。
+本文档描述了任何SPA框架(即AEM支持层)为在AEM中实施可编辑的SPA组件而应履行的一般合同。
 
 要使作者能够使用AEM页面编辑器编辑单页应用程序框架公开的数据，项目必须能够解释表示为AEM存储库内的应用程序存储的数据的语义的模型结构。 为实现这一目标，提供了两个不受框架限制的库：和 `PageModelManager` 那个 `ComponentMapping`。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## PageModelManager {#pagemodelmanager}
 
-库 `PageModelManager` 作为NPM包提供，供SPA项目使用。 它随SPA提供，并充当数据模型管理器。
+库 `PageModelManager` 作为要由SPA项目使用的NPM包提供。 它随SPA提供，并充当数据模型管理器。
 
 它代表SPA抽象了表示实际内容结构的JSON结构的检索和管理。 它还负责与SPA同步，以告知它何时必须重新呈现其组件。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 #### 动态模型到组件映射 {#dynamic-model-to-component-mapping}
 
-有关AEM的Javascript SPA SDK中如何进行动态模型到组件映射的详细信息，请参阅 [SPA的动态模型到组件映射文章](model-to-component-mapping.md)。
+有关动态模型到组件映射在AEM的Javascript SPA SDK中的发生方式的详细信息，请参阅SPA [的动态模型到组件映射文章](model-to-component-mapping.md)。
 
 ### 框架特定层 {#framework-specific-layer}
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 页面的内容结构存储在AEM中。 页面模型用于映射和实例化SPA组件。 SPA开发人员创建映射到AEM组件的SPA组件。 为此，他们使用资源类型(或AEM组件的路径)作为唯一键。
 
-SPA组件必须与页面模型同步，并随其内容的任何相应更改进行更新。 必须使用利用动态组件的模式来根据提供的页面模型结构动态实例化组件。
+SPA组件必须与页面模型保持同步，并随其内容的任何相应更改进行更新。 必须使用利用动态组件的模式来根据提供的页面模型结构动态实例化组件。
 
 ### 元字段 {#meta-fields}
 
@@ -160,7 +160,7 @@ npm模块： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 #### 响应式网格的占位符 {#placeholder-of-the-responsive-grid}
 
-SPA组件将映射到图形容器（如响应式网格），并且在创作内容时必须添加虚拟子占位符。 当页面编辑器创作SPA内容时，该内容会使用iframe嵌入到编辑器中，并且该属性会 `data-cq-editor` 添加到该内容的文档节点。 当属 `data-cq-editor` 性存在时，容器必须包含HTMLElement，以表示将新组件插入页面时作者与之交互的区域。
+SPA组件将映射到图形容器（如响应式网格），并且在创作内容时必须添加虚拟子占位符。 当页面编辑器创作SPA的内容时，该内容会使用iframe嵌入到编辑器中，并且该属性会 `data-cq-editor` 添加到该内容的文档节点。 当属 `data-cq-editor` 性存在时，容器必须包含HTMLElement，以表示将新组件插入页面时作者与之交互的区域。
 
 例如：
 
@@ -269,17 +269,17 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 这两个实体与路由概念相关，但 [`ModelRouter`](routing.md) 它只负责用与当前应用 [`PageModelManager`](#pagemodelmanager) 状态同步的数据模型来加载数据。
 
-有关详细信 [息，请参阅文章](routing.md) “SPA模型”路由。
+有关详细信 [息，请参阅](routing.md) SPA模型路由。
 
 ## SPA实际操作情况 {#spa-in-action}
 
-继续访问以下文档，了解简单的SPA如何工作并亲自体验SPA:
+继续访问以下文档，了解简单的SPA如何工作并亲自与SPA进行试验：
 
-* [AEM SPA快速入门(使用React](getting-started-react.md))。
-* [AEM SPA入门(使用角度](getting-started-angular.md))
+* [AEM中使用React的SPA入门](getting-started-react.md)。
+* [AEM中的SPA使用角度入门](getting-started-angular.md)。
 
 ## 进一步阅读 {#further-reading}
 
 有关AEM中SPA的详细信息，请参阅以下文档:
 
-* [SPA编辑器概述](editor-overview.md) ，了解AEM中SPA和通信模型的概述
+* [SPA Editor概述](editor-overview.md) ，了解SPA  AEM和通信模型的概述
