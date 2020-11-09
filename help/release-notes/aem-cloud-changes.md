@@ -1,6 +1,6 @@
 ---
-title: 对 Adobe Experience Manager (AEM) 云服务的显著更改
-description: 对 Adobe Experience Manager (AEM) 云服务的显著更改
+title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
+description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 translation-type: tm+mt
 source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
 workflow-type: tm+mt
@@ -10,18 +10,18 @@ ht-degree: 96%
 ---
 
 
-# 对 Adobe Experience Manager (AEM) 云服务的显著更改 {#notable-changes-aem-cloud}
+# 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改 {#notable-changes-aem-cloud}
 
 AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是，与 AEM 云服务相比，On-Premise 版或 Adobe Managed Service 中的 AEM Sites 存在很大差异。本文档重点介绍了这些重要差异。
 
 >[!NOTE]
 >本文档重点介绍了对 AEM 整体的显著更改。有关更多信息和特定于解决方案的更改，请参阅：
 >
->* [Adobe Experience Manager 云服务简介](/help/overview/introduction.md)
->* 与先前版本相比，Adobe Experience Manager 云服务具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager 云服务[架构](/help/core-concepts/architecture.md)
->* [对 AEM Sites 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
->* [对 AEM Assets 云服务的显著更改](/help/assets/assets-cloud-changes.md)
+>* [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)
+>* 与先前版本相比，Adobe Experience Manager as a Cloud Service 具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a Cloud Service[架构](/help/core-concepts/architecture.md)
+>* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+>* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
 
 
 主要区别包括以下方面：
