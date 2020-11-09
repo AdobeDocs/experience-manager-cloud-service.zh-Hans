@@ -23,9 +23,9 @@ AEM无需I/O Runtime层即可直接连接到Magento。 如果需要将非Magento
 
 I/O运行时平台还可用于扩展或自定义商务服务。 对于此用例，您将调用I/O Runtime端点，该端点随后将承载各个服务的自定义实现。 集成和扩展用例可以结合使用。
 
-## 3.产品资产（图像）是否可以通过Magento管理员从AEM进行存储和引用？ 如何使用Dynamic Media的资产？
+## 3.产品资产（图像）是否可以通过Magento管理员从AEM进行存储和引用？ 如何使用Dynamic Media中的资产？
 
-目前没有AEM Assets-Magento集成。 作为解决方法，您可以在AEM Assets中存储产品资产（图像），但您必须在Magento中手动存储资产URL。 Dynamic Media现在是AEM Assets的一部分，将以同样的方式工作。
+目前没有AEM Assets-Magento整合。 作为解决方法，您可以在AEM Assets存储产品资产（图像），但必须在Magento中手动存储资产URL。 Dynamic Media现在是AEM Assets的一部分，将以同样的方式工作。
 
 ## 4.在何处部署Magento是否重要？ （在云端或在云端）
 
@@ -35,13 +35,13 @@ I/O运行时平台还可用于扩展或自定义商务服务。 对于此用例�
 
 目录页面和产品页面是根据通用目录和产品页面模板在AEM中动态创建和缓存的。 不导入任何产品或目录数据并将其存储在AEM中。
 
-## 6.是否还通过Dispatcher缓存定价和其他数据。 这是否会带来频繁的缓存失效挑战？
+## 6.是否还可以通过Dispatcher缓存定价和其他数据。 这是否会带来频繁的缓存失效挑战？
 
-价格或库存等动态数据不会缓存在Dispatcher中。 动态数据是通过GraphQL API直接通过Web组件在客户端获取的。 只有静态数据(如产品或类别数据)才会缓存在Dispatcher上。 如果产品数据发生更改，则需要缓存失效。
+动态数据（如价格或库存）不会缓存在调度程序上。 动态数据是通过GraphQL API直接通过Web组件在客户端获取的。 只有静态数据(如产品或类别数据)会缓存在调度程序上。 如果产品数据发生更改，则需要缓存失效。
 
-## 7. AEMDispatcher的缓存失效如何与AEMMagento一起使用？
+## 7. AEM Dispatcher的缓存失效如何与AEM-Magento配合工作？
 
-我们建议为在Dispatcher上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议呈现日期客户端。 有关基于TTL的缓存失效的详细信息，请参阅 [AEMDispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+我们建议为在调度程序上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议呈现日期客户端。 有关基于TTL的缓存失效的详细信息，请参 [阅AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 8.为什么不使用We.Retail?
 
@@ -65,7 +65,7 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件会向Magento发送包
 
 ## 13. CIF公司如何与其他商业平台合作？
 
-通过I/O Runtime平台与第三方解决方案(如其他商务解决方案(非Magento))集成。  我们构建了一个参 [考实施](https://github.com/adobe/commerce-cif-graphql-integration-reference) ，以演示如何实现这一点。 这允许通过在任何第 [三方商务平台上](https://github.com/adobe/commerce-cif-connector)[公开MagentoGraphQL API，重用AEM CIF Cloud Connector和AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) 。 为了优惠最大的灵活性和可伸缩性，此集成层部署在无服务器的 [Adobe I/O Runtime平台上](https://www.adobe.io/apis/experienceplatform/runtime.html)。
+通过I/O Runtime平台与其他商务解决方案(非Magento)等第三方解决方案集成。  我们构建了一个参 [考实施](https://github.com/adobe/commerce-cif-graphql-integration-reference) ，以演示如何实现这一点。 这允许通过在任何第 [三方商务平台上](https://github.com/adobe/commerce-cif-connector)[公开MagentoGraphQL API，重用AEM CIF Cloud Connector和AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) 。 为了优惠最大的灵活性和可伸缩性，此集成层部署在无服务器的 [Adobe I/O Runtime平台上](https://www.adobe.io/apis/experienceplatform/runtime.html)。
 
 ## 14.是否有一种方法能够用商业文本增强产品数据？ 你从哪儿做的？ 在AEM还是在Magento?
 
@@ -79,7 +79,7 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件会向Magento发送包
 
 不再有JCR目录或产品页面。 见问题12。
 
-## 17. SPA商店前是否可与AEM SPA编辑合作？
+## 17. SPA会与AEM SPA编辑一起进行前期工作吗？
 
 AEM可用作任何类型的商店前的创作工具。 目前，混合渲染用于新店面。 将来，AEM将用于SPA和PWA的创作。
 
