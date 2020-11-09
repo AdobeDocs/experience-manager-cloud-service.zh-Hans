@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ ht-degree: 97%
    >
    >不能使用工作项（来自工作流）创建项目。
 
-1. 从工 **具栏中选择** “创建项目”以打开向导。
+1. 从工具栏中选择“**创建项目**”以打开向导。
 1. 选择相应的模板，然后选择&#x200B;**下一步**。
 1. 指定所需属性：
 
