@@ -31,7 +31,7 @@ Assets [REST API](/help/assets/mac-api-assets.md) ，使Adobe Experience Manager
 
 例如，单页应用程序(SPA)、基于框架或自定义，需要通过HTTP API提供的内容，通常采用JSON格式。
 
-AEM [核心组件提供非常全面](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 、灵活且可自定义的API，可为此目的提供所需的读取操作，其JSON输出可进行自定义，但它们确实需要AEM WCM(Web内容管理)技术来实施，因为它们必须托管在基于专用AEM模板的页面中。 并非每个SPA开发组织都可以直接获得此类知识。
+AEM [核心组件提供非常全面](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 、灵活且可自定义的API，可为此目的提供所需的读取操作，其JSON输出可进行自定义，但它们确实需要AEM WCM(Web内容管理)技术来实施，因为它们必须托管在基于专用AEM模板的页面中。 并非每个SPA开发组织都能直接获得这些知识。
 
 此时可以使用资产REST API。 它允许开发人员直接访问资产（例如图像和内容片段），无需先将资产嵌入页面，然后以序列化JSON格式提供其内容。
 
