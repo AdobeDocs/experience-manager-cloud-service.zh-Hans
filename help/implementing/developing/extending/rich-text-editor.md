@@ -29,7 +29,7 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 ![富文本编辑器工具栏](assets/rte-toolbar-full-screen-mode.png)
 
-*图： 富文本编辑器工具栏，并启用所有可用选项。*
+*图：富文本编辑器工具栏，并启用所有可用选项。*
 
 工具栏提供了“所见即所得”创作体验的选项。 [!DNL Experience Manager] 管理员可以配置界面工具栏中的可用选项。 默认情况下，在中提供一整套编辑选项 [!DNL Experience Manager]。 开发人员可以自 [!DNL Experience Manager] 定义以添加更多编辑选项。
 
@@ -39,10 +39,10 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 | 编辑模式 | 编辑区域 | 建议启用的功能 |
 |--- |--- |--- |
-| 内嵌 | 就地编辑，实现快速、细微的编辑； 无需打开对话框即可设置格式。 | 最低RTE功能。 |
+| 内嵌 | 就地编辑，实现快速、细微的编辑；无需打开对话框即可设置格式。 | 最低RTE功能。 |
 | RTE全屏 | 涵盖整个页面。 | 所有必需的RTE功能。 |
 | 对话框 | 对话框，但不涵盖整个页面。 | 明智地启用功能。 |
-| 全屏对话框 | 与全屏模式相同； 与RTE一起包含对话框的字段。 | 所有必需的RTE功能。 |
+| 全屏对话框 | 与全屏模式相同；包含对话框的RTE旁边的字段。 | 所有必需的RTE功能。 |
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 ![使用工具栏中的基本选项进行内联编辑](assets/inline-editing-mode-basic-options.png)
 
-*图： 使用工具栏中的基本选项进行内联编辑。*
+*图：使用工具栏中的基本选项进行内联编辑。*
 
-### Full-screen editing {#full-screen-editing}
+### 全屏编辑 {#full-screen-editing}
 
 [!DNL Experience Manager] 组件可以以全屏视图打开，从而隐藏页面内容并占据可用屏幕。 考虑对内联编辑的详细版本进行全屏编辑，因为它优惠的编辑选项最多。 在使用内联编辑模 ![式时，可以通过单击图标](assets/rte_fullscreen.png)，从压缩工具栏全屏打开RTE。
 
@@ -64,7 +64,7 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 ![以全屏模式进行编辑时的详细RTE工具栏](assets/rte-toolbar-full-screen-mode.png)
 
-*图： 在全屏模式下进行编辑时显示的详细RTE工具栏。*
+*图：在全屏模式下进行编辑时显示的详细RTE工具栏。*
 
 ### 对话框编辑 {#dialog-editing}
 
@@ -72,7 +72,7 @@ RTE界面优惠了响 [应式设计](/help/sites-cloud/authoring/features/respon
 
 ![对话框编辑模式](assets/dialog_editing_modetouchui.png)
 
-*图： 对话框编辑模式。*
+*图：对话框编辑模式。*
 
 ## 关于RTE插件和相关功能 {#aboutplugins}
 
@@ -102,7 +102,7 @@ RTE的基本功能由特定于相应插件的节点上 `features` 的属性值�
 | [按键](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | 要定义此值，请参阅 [选项卡大小](configure-rich-text-editor-plug-ins.md#tabsize)。 |
 | [证明](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | 段落对齐。 |
 | [链接](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [超链接和锚点](configure-rich-text-editor-plug-ins.md#linkstyles)。 |
-| [列表](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 此插件同时控制缩 [进和列表](configure-rich-text-editor-plug-ins.md#indentmargin); 包括嵌套列表。 |
+| [列表](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 此插件同时控制缩 [进和列表](configure-rich-text-editor-plug-ins.md#indentmargin);包括嵌套列表。 |
 | [错误工具](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | 其他工具允许作者输入 [特殊字符](configure-rich-text-editor-plug-ins.md#spchar) 或编辑HTML源。 此外，如果要定 [义自己的列表](configure-rich-text-editor-plug-ins.md#definerangechar) ，还可以添加一系列特殊字符。 |
 | 参数格式 | `paraformat` | 默认段落格式为段落、标题1、标题2和标`<p>`题3 `<h1>`(、 `<h2>`和 `<h3>`)。 您可以添 [加更多段落格式](configure-rich-text-editor-plug-ins.md#paraformats) 或扩展列表。 |
 | 拼写检查 | `checktext` | [语言识别拼写检查器](configure-rich-text-editor-plug-ins.md#adddict)。 |
@@ -130,7 +130,7 @@ RTE [编辑模式和您为作者提供的界面](#editingmodes) ，决定了激�
 >
 >* **名称**: `configPath`
 >* **类型**: `String`
->* **值**: 包含实际配置的节点的路径
+>* **值**:包含实际配置的节点的路径
 
 >
 >
@@ -138,11 +138,11 @@ RTE [编辑模式和您为作者提供的界面](#editingmodes) ，决定了激�
 
 配置在对话框编辑模式下应用的以下属性：
 
-* `useFixedInlineToolbar`: 您可以修复RTE工具栏而不是浮动工具栏。 将在RTE节点上定义的sling:resourceType=的布尔属性设 `cq/gui/components/authoring/dialog/richtext` 置为 `True`。 当此属性设置为 `True`时，将在事件上开始富文本编 `foundation-contentloaded` 辑。 要防止出现这种情况，请将属 `customStart` 性设 `True` 置为，并将 `rte-start` 事件触发为开始RTE编辑。 当此属性为 `true`时，RTE不开始单击，这是默认行为。
+* `useFixedInlineToolbar`:您可以修复RTE工具栏而不是浮动工具栏。 将在RTE节点上定义的sling:resourceType=的布尔属性设 `cq/gui/components/authoring/dialog/richtext` 置为 `True`。 当此属性设置为 `True`时，将在事件上开始富文本编 `foundation-contentloaded` 辑。 要防止出现这种情况，请将属 `customStart` 性设 `True` 置为，并将 `rte-start` 事件触发为开始RTE编辑。 当此属性为 `true`时，RTE不开始单击，这是默认行为。
 
-* `customStart`: 将在RTE节点上定义的此布尔属 `True`性设置为，通过触发开始控制何时事件RTE `rte-start`。
+* `customStart`:将在RTE节点上定义的此布尔属 `True`性设置为，通过触发开始控制何时事件RTE `rte-start`。
 
-* `rte-start`: 在RTE事件编 `contenteditable-div` 辑RTE时触发此开始。 仅当设置为 `customStart` 时，它才可 `true`用。
+* `rte-start`:在RTE事件编 `contenteditable-div` 辑RTE时触发此开始。 仅当设置为 `customStart` 时，它才可 `true`用。
 
 在触屏启用对话框中使用RTE时，设置属性以 `useFixedInlineToolbar` 避 `true` 免出现问题。
 
