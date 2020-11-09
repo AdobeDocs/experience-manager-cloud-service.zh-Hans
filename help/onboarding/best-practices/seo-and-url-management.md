@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager 云服务的 SEO 和 URL 管理最佳实践
-seo-title: Adobe Experience Manager 云服务的 SEO 和 URL 管理最佳实践
+title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
+seo-title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 translation-type: tm+mt
 source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 100%
 ---
 
 
-# Adobe Experience Manager 云服务的 SEO 和 URL 管理最佳实践{#seo-and-url-management-best-practices-for-aem}
+# Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践{#seo-and-url-management-best-practices-for-aem}
 
-搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，需要解决众多 Adobe Experience Manager (AEM) 云服务项目中的 SEO 问题。
+搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，需要解决众多 Adobe Experience Manager (AEM) as a Cloud Service 项目中的 SEO 问题。
 
-本文档首先介绍了一些 [SEO 最佳实践](#seo-best-practices)以及在 AEM 云服务实施上实现这些最佳实践的建议。然后，本文档更深入地介绍了第一节中提出的一些更加[复杂的实施步骤](#aem-configurations)。
+本文档首先介绍了一些 [SEO 最佳实践](#seo-best-practices)以及在 AEM as a Cloud Service 实施上实现这些最佳实践的建议。然后，本文档更深入地介绍了第一节中提出的一些更加[复杂的实施步骤](#aem-configurations)。
 
 ## SEO 最佳实践 {#seo-best-practices}
 
@@ -241,7 +241,7 @@ Resource myPage = req.getResource();
 
 1. 调度程序在 `/my-page.html` 处缓存响应并将响应返回给用户。
 1. 内容作者对此页面进行了更改并将其激活。
-1. 调度程序刷新代理发送 `/content/my-brand/my-page`** 的失效请求。**由于调度程序没有将页面缓存在此路径中，因此仍然会缓存旧内容且该内容会过时。
+1. 调度程序刷新代理发送 `/content/my-brand/my-page`**的失效请求。**&#x200B;由于调度程序没有将页面缓存在此路径中，因此仍然会缓存旧内容且该内容会过时。
 
 有多种方法可配置自定义调度程序刷新规则，这些规则会将较短的 URL 映射到较长的 URL，以便使缓存失效。
 
@@ -363,8 +363,8 @@ Disallow: /
 >
 >您可以注册一个 Sling Servlet 来侦听带有 `xml` 扩展名的选择器 `sitemap`。这会让 Servlet 随时处理以如下内容结尾的 URL 请求：
 >    `/<path-to>/page.sitemap.xml`
->然后，您可以从请求中获取所请求的资源，并通过使用 JCR API 从内容树中的该点生成站点地图。
->此类方法带来的好处是您可以从同一实例为多个网站提供提供。对 `/content/siteA.sitemap.xml` 的请求将生成 `siteA` 的站点地图，对 `/content/siteB.sitemap.xml` 的请求将生成 `siteB` 的站点地图，而无需编写额外的代码。
+然后，您可以从请求中获取所请求的资源，并通过使用 JCR API 从内容树中的该点生成站点地图。
+此类方法带来的好处是您可以从同一实例为多个网站提供提供。对 `/content/siteA.sitemap.xml` 的请求将生成 `siteA` 的站点地图，对 `/content/siteB.sitemap.xml` 的请求将生成 `siteB` 的站点地图，而无需编写额外的代码。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 
