@@ -1,9 +1,9 @@
 ---
 title: 执行阶段
 description: 执行阶段
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -18,11 +18,11 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 有关更多信息，请参阅以下资源：
 
-* [Experience Manager 云服务入门](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/onboarding/home.html)，了解有关 Experience Manager 云服务入门的自助资源。
+* [Experience Manager as a Cloud Service 入门](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/onboarding/home.html)，了解有关 Experience Manager as a Cloud Service 入门的自助资源。
 
 * [将 Git 与 Adobe Cloud Manager 集成](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)，了解使用 Single Git 存储库来部署代码的相关信息。
 
-* [Adobe Experience 云服务配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/security/ims-support.html#aem-configuration)，了解有关在 Admin Console 中管理产品和用户访问权限的信息。
+* [Adobe Experience as a Cloud Service 配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/security/ims-support.html#aem-configuration)，了解有关在 Admin Console 中管理产品和用户访问权限的信息。
 
 
 ## 简介 {#introduction}
@@ -49,9 +49,9 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 ## 代码重构 {#code-refactor}
 
-在 AEM 云服务中开发和运行代码时，需要改变思维定式。需要注意的是，代码必须是可复原的，尤其是在实例可能随时停止时。在云服务中运行的代码必须意识到它始终在群集中运行这一事实。这意味着始终会有多个实例在运行。
+在 AEM as a Cloud Service 中开发和运行代码时，需要改变思维定式。需要注意的是，代码必须是可复原的，尤其是在实例可能随时停止时。在云服务中运行的代码必须意识到它始终在群集中运行这一事实。这意味着始终会有多个实例在运行。
 
-AEM Maven 项目需要进行某些更改才能与 AEM 云服务兼容。AEM 云服务需要将&#x200B;*内容*&#x200B;和&#x200B;*代码*&#x200B;分离到单独的包中，才能将其部署到 AEM 中。
+AEM Maven 项目需要进行某些更改才能与 AEM as a Cloud Service 兼容。AEM as a Cloud Service 需要将&#x200B;*内容*&#x200B;和&#x200B;*代码*&#x200B;分离到单独的包中，才能将其部署到 AEM 中。
 
 * `/apps` 和 `/libs` 被视为 AEM 中的不可变区域，因为 AEM 启动后（例如，运行时），无法对其进行更改（创建、更新、删除）。运行时对不可改变区域所做的任何更改尝试都将失败。
 
@@ -59,7 +59,7 @@ AEM Maven 项目需要进行某些更改才能与 AEM 云服务兼容。AEM 云�
 
 有关更多信息，请参阅[推荐的包结构](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)。
 
-在 AEM 云服务上进行开发时，还需要了解一些其他开发准则。请参阅 [AEM 云服务开发准则](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html)，以了解详情。
+在 AEM as a Cloud Service 上进行开发时，还需要了解一些其他开发准则。请参阅 [AEM as a Cloud Service 开发准则](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html)，以了解详情。
 
 从规划阶段开始，您就应该确定一个需要进行重构才能与云服务兼容的区域列表。您还应该查看[开发准则](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html)，了解更多有关如何重构和优化代码以移动到云服务的详细信息。
 
@@ -77,16 +77,16 @@ AEM Maven 项目需要进行某些更改才能与 AEM 云服务兼容。AEM 云�
 
 * 观看安装 Dispatcher SDK 视频，了解如何安装 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=chi_hans)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * 观看配置 Dispatcher SDK 视频，了解如何配置 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=chi_hans)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 * 查看[本地开发设置](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)文档以设置本地开发环境
 
 
-要管理活动 AEM 上正在进行的代码开发以及过渡历程中的代码重构任务，建议在完成 Maven 项目重组以与 AEM 云服务兼容之前，设置一个代码冻结期。
+要管理活动 AEM 上正在进行的代码开发以及过渡历程中的代码重构任务，建议在完成 Maven 项目重组以与 AEM as a Cloud Service 兼容之前，设置一个代码冻结期。
 
 项目重组完成后，您可以基于这个新结构继续新的代码开发。这将减少在代码部署和测试期间出现的 Cloud Manager 管道故障。
 
@@ -113,7 +113,7 @@ AEM Maven 项目需要进行某些更改才能与 AEM 云服务兼容。AEM 云�
 
 ## 上线准备的最佳实践 {#go-live}
 
-要确保 AEM 云服务顺利、成功地上线，应考虑执行以下步骤：
+要确保 AEM as a Cloud Service 顺利、成功地上线，应考虑执行以下步骤：
 
 * 设定代码和内容冻结期
 * 执行最终内容增补
