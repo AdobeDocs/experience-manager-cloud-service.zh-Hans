@@ -14,7 +14,7 @@ ht-degree: 27%
 
 如果您希望与 Web 开发人员共享代码以实现响应式服务，可使用响应式代码功能。You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
-如果您的网站位于第三方WCM上，则使用此功能很合理。 但是，如果您的网站在AEM上，则非现场图像服务器会渲染该图像并将其提供到网页。
+如果您的网站位于第三方WCM上，则使用此功能很合理。 但是，如果您的网站位于AEM上，则非现场映像服务器会渲染该映像，并将其提供到网页。
 
 另请参阅[在网页上嵌入视频查看器。](embed-code.md)
 
@@ -41,7 +41,7 @@ ht-degree: 27%
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. 在“嵌 **[!UICONTROL 入响应式图像]** ”对话框中，选择并复制响应式代码文本，然后将其粘贴到您的网站中以访问响应式资产。
-1. 编辑嵌入代码中的默认断点，使其直接与响应式网站的代码断点相匹配。 此外，测试不同页面断点处使用的不同图像分辨率。
+1. 编辑嵌入代码中的默认断点，使其直接与响应式网站的代码断点相匹配。此外，测试不同页面断点处使用的不同图像分辨率。
 
 ## 使用HTTP/2投放Dynamic Media资产 {#using-http-to-delivery-your-dynamic-media-assets}
 
