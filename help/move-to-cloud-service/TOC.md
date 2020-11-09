@@ -1,6 +1,6 @@
 ---
-sub-product: 移动到 AEM 云服务
-user-guide-title: 移动到 AEM 云服务
+sub-product: 移动到 AEM as a Cloud Service
+user-guide-title: 移动到 AEM as a Cloud Service
 breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 translation-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 95%
 ---
 
 
-# 移动到 AEM 云服务指南{#moving}
+# 移动到 AEM as a Cloud Service 指南{#moving}
 
-+ [迁移到 AEM 云服务](/help/move-to-cloud-service/home.md)
++ [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + 过渡历程的阶段 {#phases}
    + [规划](/help/move-to-cloud-service/planning.md)
    + [执行](/help/move-to-cloud-service/execution.md)
