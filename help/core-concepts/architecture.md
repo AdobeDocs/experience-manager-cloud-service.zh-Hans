@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: 'Adobe Experience Manager as a Cloud Service 的架构简介。 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ AEM as a Cloud Service 基于使用一个编排引擎，该引擎可以：
 ## 环境 {#environments}
 
 >[!NOTE]
->
 >有关详细信息，请参阅[部署 - 运行模式](/help/implementing/deploying/overview.md#runmodes)
 
-AEM as a Cloud Service 可用作单个实例，每个实例代表一个完整的 AEM 环境。AEM as a Cloud Service 可提供四种类型的环境：
+AEM as a Cloud Service 可用作单个实例，每个实例代表一个完整的 AEM 环境。
+
+AEM作为Cloud Service提供三种环境:
 
 * **生产环境**：为业务从业者托管应用程序。
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service 可用作单个实例，每个实例代表一个完整的
 
 * **开发环境**：允许开发人员在与暂存环境和生产环境相同的运行时条件下实施 AEM 应用程序。
 
-* **演示环境**：可用于评估、演示、原型制作和培训。
-
-开发和演示环境通常称为&#x200B;*非生产*&#x200B;环境。
+   有关更多 [详细信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) ，请参阅管理环境。
 
 ## 程序 {#programs}
 
