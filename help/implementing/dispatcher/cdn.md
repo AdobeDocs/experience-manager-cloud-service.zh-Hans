@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
+source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,10 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 
 按照以下操作，使用Adobe开箱即用的CDN准备内容投放:
 
-1. 通过共享指向包含此信息的安全表单的链接，为Adobe提供已签名的SSL证书和密钥。 请在此任务与客户支持协作。
+1. 通过共享指向包含此信息的安全表单的链接，为Adobe提供已签名的SSL证书和密钥。 请在此任务与客户支持协作。 Adobe支持项目最多10个SSL证书。
    **注意：** Aem作为Cloud Service不支持域验证(DV)证书。 此外，它必须是来自受信任认证机构(CA)的具有匹配的2048位RSA私钥的X.509 TLS证书。
 1. 通知客户支持：
-   * 哪个自定义域应与给定环境关联，如项目id和环境id所定义。 请注意，作者端不支持自定义域。
+   * 哪些自定义域应与给定环境关联，如项目id和环境id所定义。 给定环境最多支持100个域，并且域不能包含通配符。 请注意，作者端不支持自定义域。
    * 如果需要任何列入允许列表IP来限制给定环境的通信。
 1. 与客户支持协作，确定对DNS记录进行必要更改的时间。 根据是否需要顶点记录，说明有所不同：
    * 如果不需要apex记录，客户应将CNAME DNS记录设置为将其FQDN指向 `cdn.adobeaemcloud.com`。
