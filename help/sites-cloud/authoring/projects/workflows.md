@@ -44,7 +44,7 @@ ht-degree: 76%
 
 您可以直接在项目中启动工作流（DAM 创建语言副本或 DAM 创建和翻译语言副本除外）。项目中任何未完成任务的信息会在&#x200B;**任务**&#x200B;拼贴中列出。用户图标旁边会显示需要完成的任务通知。
 
-有关在AEM中使用工作流的更多信息，请参阅以下内容：
+有关在AEM中使用工作流的详细信息，请参阅：
 
 * [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 * [将工作流应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
