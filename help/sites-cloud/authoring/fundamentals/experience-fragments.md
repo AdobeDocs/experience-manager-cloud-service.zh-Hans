@@ -1,6 +1,6 @@
 ---
 title: 体验片段
-description: 使用 Adobe Experience Manager 云服务体验片段，让您的体验可重复使用且更加灵活。
+description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 体验片段 {#experience-fragments}
 
-在 Adobe Experience Manager 云服务中，体验片段：
+在 Adobe Experience Manager as a Cloud Service 中，体验片段：
 * 是包含一个或多个组件的组
 * 包括内容和布局
 * 可以在页面中引用
