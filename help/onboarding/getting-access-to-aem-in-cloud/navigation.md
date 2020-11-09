@@ -1,6 +1,6 @@
 ---
 title: 导航
-description: 导航——云服务
+description: 导航-Cloud Service
 translation-type: tm+mt
 source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 1%
 ---
 
 
-# 访问 Experience Manager 云服务 {#navigation}
+# 访问 Experience Manager as a Cloud Service {#navigation}
 
-在系统管理员授予您访问Cloud Manager的权限后，您将收到一封电子邮件，将您带到Cloud Manager登录页面，也可通过Adobe Experience Cloud访 [问该页面](https://my.cloudmanager.adobe.com/)。
+在系统管理员授予您访问Cloud Manager的权限后，您将收到一封电子邮件，将您带到Cloud Manager登录页，也可通过Adobe Experience Cloud访 [问该页](https://my.cloudmanager.adobe.com/)。
 
 成功登录后，您将被定向到Cloud Manager的登陆页，如下所示。
 
@@ -24,29 +24,29 @@ ht-degree: 1%
 
 ### 管理角色 {#manage-roles}
 
-作为SysAdmin角色的用户，您可以通过一键访问Admin Console中的 **位置** ，管理Cloud Manager的用户角色或权限。
+As a user in the SysAdmin role, you have one-click access to the location in **Admin Console** from where user roles or permissions to Cloud Manager are managed.
 
 有关如何 [将用户添加到用户档案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，请参阅访问云管理器。
 
 >[!NOTE]
->对于在2020年1月之前获得AEM云服务访问权限的某些组织，这些组织将转至Adobe Admin Console，并且必须选择产品和环境产品用户档案。
+>对于在2020年1月之前获准以Cloud Service身份访问AEM的某些组织，这些组织将被带到Adobe Admin Console，并且必须选择产品和环境产品用户档案。
 
 1. 导航到云管理器的登陆页，然后单击管 **理访问**。
 
    ![](assets/sys-admin5.png)
 
-1. 单击管理访 **问权**，即可导航到Admin Console **** ，从中可以管理Cloud Manager的用户角色或权限。
+1. 单击“管理 **访问**”后，您将导航到 **Admin Console** ，从中可以管理Cloud Manager的用户角色或权限。
 
    ![](assets/sys-admin1.png)
 
 ### 管理对作者实例的访问 {#manage-access-aem}
 
-作为SysAdmin角色的用户，您只需单击一下即可访问Admin **Console** ，从中可以直接导航到作者实例并管理访问权限。
+作为SysAdmin角色的用户，您只需单击一下，即可访问 **Admin Console** ，从中可直接导航到作者实例并管理访问权限。
 
 >[!NOTE]
->对于在2020年1月之前获得AEM云服务访问权限的某些组织，这些组织将转至Adobe Admin Console，并且必须选择产品和环境产品用户档案。
+>对于在2020年1月之前获准以Cloud Service身份访问AEM的某些组织，这些组织将被带到Adobe Admin Console，并且必须选择产品和环境产品用户档案。
 
-有关更 [多详细信息，请参阅将AEM中的实例作为云服务访问](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 。
+有关更 [多详细信息，请参阅将AEM中的实例作为Cloud Service访问](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 。
 
 1. 从“环境 **概述** ”页面导 **航到项目卡** ，然后单击“管 **理访问权限**”。
 
@@ -58,21 +58,21 @@ ht-degree: 1%
 
    ![](assets/sys-admin4.png)
 
-1. 单击“管 **理访问**”后，您将从您有权 **访问该环境的作者实例的Admin Console** 。
+1. 单击“管 **理访问**”后，您将导航到 **Admin Console** ，您可以从中访问环境的作者实例。
 
    ![](assets/sys-admin-2.png)
 
 ## 针对现有AMS客户 {#existing-aem}
 
-如果您是现有AMS(Adobe Managed Services)客户并且有权访问云服务，您将看到现有项目，并在登陆页右上角 **显示** “添加项目”按钮。
+如果您是现有AMS(Adobe Managed Services)Cloud Service，并且您有权访问，您将看到现有项目，并在登陆页右上角 **显示** “添加项目”按钮。
 
-如果看不到“添加 **项目** ”按钮，并对访问云服务有疑问，请与Adobe代表联系。
+如果看不到“添加 **项目** ”按钮，并对访问Cloud Service有疑问，请与Adobe代表联系。
 
-有关更 [多详细信息，请参阅在云服务中使用现有项目添加新项目](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) 。
+有关更 [多详细信息，请参阅使用现有项目在Cloud Service中](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) 添加新项目。
 
-## 对于新的云服务客户 {#new-cloud-services}
+## 对于新Cloud Service客户 {#new-cloud-services}
 
-如果您是新的云服务客户，则您将在空 **项目** 右上角看到添加登陆页按钮。 您需要向云服务添加新项目。
+如果您是新Cloud Service客户，则您将在空登陆页 **的右上** 角看到“添加项目”按钮。 您将要向Cloud Service添加新项目。
 
-有关详 [细信息，请参阅在无现有项目的云服务中添加新项目](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) 。
+有关详 [细信息，请参阅在没有现有项目的Cloud Service中添加](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) 新项目。
 
