@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,8 +52,8 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 全局导航有两个面板，它们由屏幕左侧的图标来表示：
 
-* **[导航](#navigation-panel)**- 登录到 AEM 时由一个指南针图标和默认面板来表示
-* **[工具](#tools-panel)**- 由一个锤子图标来表示
+* **[导航](#navigation-panel)** - 登录到 AEM 时由一个指南针图标和默认面板来表示
+* **[工具](#tools-panel)** - 由一个锤子图标来表示
 
 这些面板中的可用选项如下所述。
 
@@ -63,7 +63,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![“导航”面板](/help/sites-cloud/authoring/assets/navigation.png)
 
-浏览器选项卡的标题将更新，以反映您在控制台和内容中导航时的位置。
+当您在控制台和内容中导航时，浏览器选项卡的标题将更新以反映您的位置。
 
 在“导航”中，可用的控制台有：
 
@@ -157,9 +157,9 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 * 键盘导航
 
-   只能使用键盘导航网站。 它使用TAB键(或OPT+ **TAB** )的标准浏 **览器功能**，在页面上可聚焦的元素之间移动您。
+   您可以只使用键盘导航网站。它使用 **TAB** 键（或 **OPT+TAB**）的标准浏览器功能，在页面上可聚焦的元素之间移动。
 
-   在“站 **点** ”控制台中，添加了跳到 **主内容的选项**。 当您在标题选项中切换时，它会变得可见，并且允许您跳过（产品）工具栏中的标准元素并直接转到主内容，从而加快导航。
+   在 **Sites** 控制台中，添加了&#x200B;**跳至主要内容**&#x200B;的选项。当您按 TAB 键浏览标题选项时，该选项将变得可见，并且它可以通过允许您跳过（产品）工具栏中的标准元素并直接进入主要内容来加快导航速度。
 
    ![跳至主要内容](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -187,7 +187,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
    与在首次访问任何控制台时浏览[产品导航概述](#product-navigation)一样，浏览此概述。
 
-   在[**页面信息&#x200B;**菜单中，可以随时通过选择**&#x200B;帮助&#x200B;**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)来再次显示这些幻灯片。
+   在&#x200B;[**页面信息**&#x200B;菜单中，可以随时通过选择&#x200B;**帮助**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)&#x200B;来再次显示这些幻灯片。
 
 * **“工具”控制台**
 
