@@ -40,7 +40,7 @@ See Changing Live Copy Content for further information. <!--See [Changing Live C
 要跟踪您所做的更改，您可以在引用中查看启动项 **** ，并将启动项页面与其源页面进行比较：
 
 1. 在&#x200B;**站点**&#x200B;控制台中，[导航到启动项的源页面并将其选中](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
-1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**面板，然后选择&#x200B;**启动项**。
+1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板，然后选择&#x200B;**启动项**。
 1. 选择您的特定启动项，然后选择&#x200B;**和源比较**：
 
    ![比较启动项与源](/help/sites-cloud/authoring/assets/launches-compare.png)
