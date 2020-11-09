@@ -20,15 +20,15 @@ ht-degree: 12%
 
 1. **内容片段作为单个实体。**
 
-   * **用例**: 需要编辑／更新内容片段——并删 **除整个片段的用户**。
-   * **权限**: 可以通过用户和／或组管理分配“删除”权限。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **用例**:需要编辑／更新内容片段——并删 **除整个片段的用户**。
+   * **权限**:可以通过用户和／或组管理分配“删除”权限。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-2. **构成内容片段的多个子实体； 例如，变量、子节点。**
+2. **构成内容片段的多个子实体；例如，变量、子节点。**
 
-   内容片段编辑器的基本操作要求可以删除此类临时子元素。 例如，在操作变量时； 编辑元数据或管理关联的内容时也是如此。
+   内容片段编辑器的基本操作要求可以删除此类临时子元素。 例如，在操作变量时；编辑元数据或管理关联的内容时也是如此。
 
-   * **用例**: 需要编辑／更新内容片段的用户， **不允许删除整个片段**。
-   * **权限**: 请参 [阅仅编辑器功能所需的权限](#permissions-required-for-editor-functionality-only)。
+   * **用例**:需要编辑／更新内容片段的用户， **不允许删除整个片段**。
+   * **权限**:请参 [阅仅编辑器功能所需的权限](#permissions-required-for-editor-functionality-only)。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 12%
 
 对于需要编辑／更新内容片段的用户， **不允许他们删除整个片段**，必须分配特定权限，因为内容片段编辑器的基本操作要求可以删除临时子元素。
 
-例如，在操作变量时； 编辑元数据或管理关联的内容时也是如此。
+例如，在操作变量时；编辑元数据或管理关联的内容时也是如此。
 
 >[!NOTE]
 >
