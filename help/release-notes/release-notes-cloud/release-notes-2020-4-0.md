@@ -1,22 +1,22 @@
 ---
-title: Adobe Experience Manager 云服务 2020.4.0 发行说明
+title: Adobe Experience Manager as a Cloud Service 2020.4.0 发行说明
 description: Experience Manager 2020.4.0 发行说明
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager 云服务 2020.4.0 发行说明{#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.4.0 发行说明{#release-notes}
 
-本页面概述了 [!DNL Experience Manager] 云服务 2020.4.0 版的常规发行说明。
+本页面概述了 [!DNL Experience Manager] as a Cloud Service 2020.4.0 版的常规发行说明。
 
 ## 发布日期 {#release-date}
 
-[!DNL Experience Manager] 云服务 2020.4.0 的发布日期是 2020 年 4 月 9 日。
+[!DNL Experience Manager] as a Cloud Service 2020.4.0 的发布日期是 2020 年 4 月 9 日。
 
 ## Assets 的新增功能 {#assets}
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 
 * [Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/home.html) 支持 Experience Manager Assets 的资产分发用例。[!DNL Brand Portal] 可以将获得批准的品牌和产品资产安全地分发给外部代理、合作伙伴、内部团队和经销商进行下载，从而帮助组织满足其营销需求。
    * [!DNL Brand Portal] 配置可通过 [!DNL Adobe I/O] 控制台完成。请参阅[配置 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
-   * [!DNL Experience Manager] 云服务尚不支持 [!DNL Brand Portal] 中的资产采购。
+   * [!DNL Experience Manager] as a Cloud Service 尚不支持 [!DNL Brand Portal] 中的资产采购。
 
-* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) v2.0 可与 [!DNL Experience Manager] 云服务搭配使用。[!DNL Adobe Asset Link] 可通过应用程序内 [!DNL Asset Link] 面板将 [!DNL Experience Manager Assets] 与 [!DNL Creative Cloud] 桌面应用程序 [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] 和 [!DNL Adobe InDesign] 连接，从而简化内容创建过程中创意专业人士与营销人员之间的协作。
+* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) v2.0 可与 [!DNL Experience Manager] as a Cloud Service 搭配使用。[!DNL Adobe Asset Link] 可通过应用程序内 [!DNL Asset Link] 面板将 [!DNL Experience Manager Assets] 与 [!DNL Creative Cloud] 桌面应用程序 [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] 和 [!DNL Adobe InDesign] 连接，从而简化内容创建过程中创意专业人士与营销人员之间的协作。
    * 已为 [!DNL Adobe Asset Link] 预配置了 [!DNL Experience Manager]，这样可以[轻松配置](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)并更快速地向创意专业人士推广。
    * 现在，[!DNL Asset Link] 支持 [Experience Manager 环境切换器](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)，该切换器让创意用户能够轻松连接到其他 [!DNL Experience Manager] 环境。例如，对于使用不同 [!DNL Experience Manager Assets] 部署来与多个客户开展合作的广告公司设计师而言，这项功能非常有用。
 
