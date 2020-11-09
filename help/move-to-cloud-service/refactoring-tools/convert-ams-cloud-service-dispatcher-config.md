@@ -1,16 +1,16 @@
 ---
-title: 将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置
-description: 将 AMS 转换为 Adobe Experience Manager 云服务 Dispatcher 配置
-translation-type: ht
+title: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 配置
+description: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 配置
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 100%
 
 ---
 
 
-# 将 AMS 转换为 Adobe Experience Manager (AEM) 云服务 Dispatcher 配置
+# 将 AMS 转换为 Adobe Experience Manager (AEM) as a Cloud Service Dispatcher 配置
 
 ## 简介 {#introduction}
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!NOTE]
 >本文假定您有一个存档，其结构与[管理 Dispatcher 配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述的结构相似。
 
-## 将 AMS 转换为 AEM 云服务 Dispatcher 配置的步骤
+## 将 AMS 转换为 AEM as a Cloud Service Dispatcher 配置的步骤
 
 1. **提取存档并删除最后的前缀**
 
