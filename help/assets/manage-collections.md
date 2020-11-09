@@ -14,7 +14,7 @@ ht-degree: 26%
 
 # 管理收藏集 {#manage-collections}
 
-集合是Adobe Experience Manager资产中的一组资产。 使用收藏集可在用户之间共享资产。该集合可以是静态集合或基于搜索结果的动态集合。
+集合是Adobe Experience Manager资产内的一组资产。 使用收藏集可在用户之间共享资产。该集合可以是静态集合或基于搜索结果的动态集合。
 
 与文件夹不同，收藏集可以包含来自不同位置的资产。 您可以与分配了不同权限级别（包括查看、编辑等）的不同用户共享集合。
 
@@ -140,7 +140,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 ### 搜索集合 {#search-collections}
 
-您可以从“收藏集”控制台中搜索收藏集。当您在“全搜索”框中使用关键字进行搜索时，AEM Assets会搜索集合名称、元数据以及添加到集合的标记。
+您可以从“收藏集”控制台中搜索收藏集。当您在“全搜索”框中使用关键字进行搜索时，AEM Assets会搜索集合名称、元数据和添加到集合的标记。
 
 如果您从顶级搜索集合，则搜索结果中只返回单个集合。 收藏集中的资产或文件夹将被排除。 在所有其他情况下（例如，在单个收藏集或文件夹层次结构中），都会返回所有相关资产、文件夹和收藏集。
 
@@ -179,7 +179,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 ## 编辑多个集合的元数据属性 {#editing-metadata-properties-of-multiple-collections}
 
-通过Adobe Enterprise Manager(AEM)资产，您可以批量编辑多个集合的元数据。 使用“ [!UICONTROL 属性] ”页可对多个集合执行元数据更改，例如，将元数据属性更改为通用值，或添加或修改标记。
+Adobe企业管理器(AEM)资产允许您批量编辑许多集合的元数据。 使用“ [!UICONTROL 属性] ”页可对多个集合执行元数据更改，例如，将元数据属性更改为通用值，或添加或修改标记。
 
 要自定义元数据 [!UICONTROL 属性] 页面，包括添加、修改和删除元数据属性，请使用模式编辑器。
 
