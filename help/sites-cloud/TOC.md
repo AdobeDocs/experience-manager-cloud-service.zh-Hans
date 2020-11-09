@@ -1,9 +1,9 @@
 ---
 solution: Experience Manager, Experience Manager Sites
-sub-product: 在 AEM 云服务中创作内容
-user-guide-title: 在 AEM 云服务中创作内容
+sub-product: 在 AEM as a Cloud Service 中创作内容
+user-guide-title: 在 AEM as a Cloud Service 中创作内容
 breadcrumb-title: Authoring 指南
-user-guide-description: 了解如何使用 Experience Manager Sites 云服务进行创作，以及如何管理 Experience Manager Sites 云服务。
+user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
 translation-type: tm+mt
 source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 # 站点 {#sites}
 
-+ [AEM Sites 云服务](/help/sites-cloud/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [对 AEM 云服务中 AEM Sites 的显著更改](sites-cloud-changes.md)
 + 创作 {#authoring}
    + 入门 {#getting-started}
@@ -77,6 +77,6 @@ ht-degree: 97%
       + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + 管理 {#administering}
    + [管理工作流](administering/workflows-administering.md)
-+ 与 AEM 云服务集成 {#integrations}
++ 与 AEM as a Cloud Service 集成 {#integrations}
    + [与 Adobe Analytics 集成](integrating/integrating-adobe-analytics.md)
    + [与 Adobe Target 集成](integrating/integrating-adobe-target.md)
