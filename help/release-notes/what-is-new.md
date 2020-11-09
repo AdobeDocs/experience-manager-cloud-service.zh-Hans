@@ -1,9 +1,9 @@
 ---
 title: 新增功能
-description: 'Adobe Experience Manager (AEM) 云服务的新增功能。 '
-translation-type: ht
+description: 'Adobe Experience Manager (AEM) as a Cloud Service 的新增功能。 '
+translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
@@ -14,19 +14,19 @@ ht-degree: 100%
 
 <!-- For the pre-release of Adobe Experience Manager (AEM) as a Cloud Service everything is new. -->
 
-Adobe Experience Manager (AEM) 云服务是一个云原生平台，在整个内容生命周期中优化营销人员和开发人员工作流程，包括 Web 内容和数字资产管理功能。作为云原生平台，它具有可扩展的性能和安全的基础架构，可进行灵活更新以保持最新状态，并且允许轻松进行部署和管理。
+Adobe Experience Manager (AEM) as a Cloud Service 是一个云原生平台，在整个内容生命周期中优化营销人员和开发人员工作流程，包括 Web 内容和数字资产管理功能。作为云原生平台，它具有可扩展的性能和安全的基础架构，可进行灵活更新以保持最新状态，并且允许轻松进行部署和管理。
 
-有关 Adobe Experience Manager 云服务的概述，请参阅：
-* [AEM 云服务简介](/help/overview/introduction.md)
-* Adobe Experience Manager 云服务[架构](/help/core-concepts/architecture.md)
-* [AEM 云服务概述 - 新增功能和改进功能](/help/overview/what-is-new-and-different.md)
+有关 Adobe Experience Manager as a Cloud Service 的概述，请参阅：
+* [AEM as a Cloud Service 简介](/help/overview/introduction.md)
+* Adobe Experience Manager as a Cloud Service[ 架构](/help/core-concepts/architecture.md)
+* [AEM as a Cloud Service 概述 - 新增功能和改进功能](/help/overview/what-is-new-and-different.md)
 
 <!-- Please link to introduction or what's new of Sites. -->
 
-有关资产的概述，请参阅 [Assets 云服务简介](/help/assets/overview.md)
+有关资产的概述，请参阅 [Assets as a Cloud Service 简介](/help/assets/overview.md)
 
-如果您熟悉 AEM 的先前版本，则请参阅以下内容，了解对 AEM 云服务做出的显著更改：
+如果您熟悉 AEM 的先前版本，则请参阅以下内容，了解对 AEM as a Cloud Service 做出的显著更改：
 
-* [对 AEM 云服务的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
-* [对 AEM Sites 云服务的显著更改](/help/sites-cloud/sites-cloud-changes.md)
-* [对 AEM Assets 云服务的显著更改](/help/assets/assets-cloud-changes.md)
+* [对 AEM as a Cloud Service 的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
+* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
