@@ -1,6 +1,6 @@
 ---
 title: 优化图像质量的最佳实践
-description: 了解优化Dynamic Media图像质量的最佳实践
+description: 了解在Dynamic Media中优化图像质量的最佳实践
 translation-type: tm+mt
 source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 54%
 
 优化图像质量可能会是一个很耗时的过程，因为渲染可接受的效果涉及到很多因素。在某种程度上，效果带有主观性，因为每个人对图像质量都会有不同的看法。结构化试验是关键所在。
 
-AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像以及渲染结果。 以下准则可以帮助您使用一些基本命令和最佳实践简化流程并快速实现良好效果。
+AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像以及渲染结果。以下准则可以帮助您使用一些基本命令和最佳实践简化流程并快速实现良好效果。
 
 ## 图像格式的最佳实践 (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -56,26 +56,26 @@ On Adobe TV, watch [Sharpening an image with unsharp mask](https://helpx.adobe.c
       * **[!UICONTROL amount]** （0-5，效果的强度。）
       * **[!UICONTROL radius]** （0-250，锐化对象周围绘制的“锐化线”宽度，以像素为单位。）
 
-         请记住，radius和amount参数相辅相成。 减少半径可以通过增加数量来补偿。 radius允许进行更精细的控制，低值仅锐化边缘像素，高值锐化较宽范围的像素。
+         请记住，radius和amount参数相辅相成。减少半径可以通过增加数量来补偿。radius允许进行更精细的控制，低值仅锐化边缘像素，高值锐化较宽范围的像素。
 
       * **[!UICONTROL threshold]** （0-255，效果的敏感度。）
 
          此参数确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素，而滤镜会锐化这些像素。 The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. 例如，阈值为12时，会忽略肤色亮度的细微变化，以避免添加“杂色”，同时仍会为高对比度区域添加边缘对比度，如睫毛与皮肤相遇的地方。
       有关如何设置这三个参数的更多信息，包括使用滤镜方面的最佳实践，请参阅以下资源：
 
-      有关锐化图像的AEM帮助主题。
+      AEM有关锐化图像的帮助主题。
 
       Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
-   * AEM还允许您控制第四个参数： monochrome(0,1)。 此参数确定是使用值0分别将USM锐化应用于每个颜色组件，还是使用值1将USM锐化应用于图像亮度／强度。
+   * AEM还允许您控制第四个参数：monochrome(0,1)。 此参数确定是使用值0分别将USM锐化应用于每个颜色组件，还是使用值1将USM锐化应用于图像亮度／强度。
 
 
 作为最佳实践，应首先开始设置 USM 锐化 radius 参数。您可以先使用以下 radius 设置：
 
-* **[!UICONTROL 网站]**: 0.2-0.3像素
-* **[!UICONTROL 照片打印(250-300 ppi)]**: 0.3-0.5像素
-* **[!UICONTROL 胶印(266-300 ppi)]**: 0.7-1.0像素
-* **[!UICONTROL 画布打印(150 ppi)]**: 1.5-2.0像素
+* **[!UICONTROL 网站]**:0.2-0.3像素
+* **[!UICONTROL 照片打印(250-300 ppi)]**:0.3-0.5像素
+* **[!UICONTROL 胶印(266-300 ppi)]**:0.7-1.0像素
+* **[!UICONTROL 画布打印(150 ppi)]**:1.5-2.0像素
 
 将 amount 从 1.75 逐渐增加至 4。如果锐化仍未达到您需要的效果，请将 radius 增加 0.1，然后再次将 amount 从 1.75 逐渐增加至 4。根据需要，重复上述步骤。
 
@@ -117,7 +117,7 @@ As a best practice, set `&jpegSize=` and add the parameter `&qlt=` if you are de
 
 在您试验的过程中，以下一般建议对于优化工作流也很有帮助：
 
-* 直接在URL上或使用Scene7 Publishing System的图像调整功能实时尝试和测试不同的参数，该功能为调整操作提供实时预览。
+* 实时尝试和测试不同的参数，可直接在URL上或使用Scene7出版系统的图像调整功能，该功能为调整操作提供实时预览。
 * 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. URL 路径中的自定义预设名称会调用这些预设。这类功能可帮助您针对网站中图像的不同使用模式来管理命令和质量设置，并缩短 URL 的整体长度。
 * AEM 还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。For advanced use cases where this may be an option to further tune and optimize rendering results, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) can help you with customized insight and best practices.
 
