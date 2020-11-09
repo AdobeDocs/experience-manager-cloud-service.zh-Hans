@@ -23,6 +23,7 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 要使上传的资产成为您要与全景图像查看器一起使用的球面全景图像，该资产必须具有以下一种或两种：
 
 * 宽高比为2。
+
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * 用关键字 `equirectangular`标记， `spherical`或和 `panorama`，或 `spherical` 和 `panoramic`。 请参 [阅使用标记](/help/sites-cloud/authoring/features/tags.md)。
