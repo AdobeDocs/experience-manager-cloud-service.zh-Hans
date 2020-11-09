@@ -1,28 +1,28 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  云服务 2020.7.0 版的发行说明。'
-description: '[!DNL Adobe Experience Manager] 云服务 2020.7.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
+description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
 source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 80%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] 云服务 2020.7.0 版的发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 版的发行说明 {#release-notes}
 
-以下部分概述了 Experience Manager 云服务 2020.7.0 版的常规发行说明。
+以下部分概述了 Experience Manager as a Cloud Service 2020.7.0 版的常规发行说明。
 
 ## 发布日期 {#release-date}
 
-[!DNL Experience Manager] 云服务 2020.7.0 版的发布日期是 2020 年 7 月 30 日。
+[!DNL Experience Manager] as a Cloud Service 2020.7.0 版的发布日期是 2020 年 7 月 30 日。
 
-## Adobe Experience Manager Sites 云服务 {#cloud-services-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
 ### 新增功能 {#what-is-new-sites}
 
-适用于 [!DNL Adobe Target] 和 [!DNL Adobe Analytics] 的 [!DNL Experience Manager] 云服务连接器在以下方面得到了增强：
+适用于 [!DNL Adobe Target] 和 [!DNL Adobe Analytics] 的 [!DNL Experience Manager] as a Cloud Service 连接器在以下方面得到了增强：
 
 * 新的用户界面实施取代了基于经典 UI 的实施。
 
@@ -36,7 +36,7 @@ ht-degree: 80%
 
 * [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. 开发人员可以使用该服务创建满足复杂用例的专用自定义应用程序。 This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 
-* 改进了 [!DNL Experience Manager] 云服务中 [!DNL Dynamic Media] 的初始配置，使其更加稳健。如今，它可以向管理员提供进程进度。
+* 改进了 [!DNL Experience Manager] as a Cloud Service 中 [!DNL Dynamic Media] 的初始配置，使其更加稳健。如今，它可以向管理员提供进程进度。
 
 * 通过使用资产微服务并改进批量处理发布后端，可以让资产发布成为整体资产处理管道必不可少的组成部分，从而简化资产发布到 [!DNL Dynamic Media] 的过程并使其更加稳健。
 
@@ -118,7 +118,7 @@ AEM Commerce现在在Cloud Service上可用。
 
 * 由于代码覆盖率的计算方式发生了变化，Jacoco 插件的&#x200B;*最低*&#x200B;版本现在为 0.7.5.201505241946（于 2015 年 5 月发行）。明确引用旧版本的客户将会在代码质量控制过程中收到一条错误消息。
 
-## Adobe Experience Manager 云服务基础 {#cloud-foundation}
+## Adobe Experience Manager as a Cloud Service 基础 {#cloud-foundation}
 
 ### 新增功能 {#what-is-new-foundations}
 
