@@ -1,35 +1,35 @@
 ---
-title: AEM Moderization Tools
-description: 'AEM Moderization Tools '
+title: AEM 现代化工具
+description: 'AEM 现代化工具 '
 translation-type: tm+mt
 source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# AEM Moderization Tools {#aem-moderization-tools}
+# AEM 现代化工具 {#aem-moderization-tools}
 
-AEM Moderization套件工具为AEM Development团队提供了将旧版AEM当前功能转换为当前受支持功能的工具。
+AEM 现代化工具套件为 AEM 开发团队提供了将当前的旧版 AEM 功能转换为当前受支持功能的工具。
 
 
 ## 简介 {#introduction}
 
-AEM现代化工具可轻松转换：
+AEM 现代化工具可轻松完成以下转换：
 
 * 静态模板到可编辑模板
-* 为策略设计配置
+* 设计配置到策略
 * 基础组件到核心组件
-* 经典UI到触屏优化UI
+* 经典 UI 到触控式 UI
 
 >[!NOTE]
->AEM现代化工具是社区工作，Adobe不支持或保证。
+>AEM 现代化工具是社区共同努力的结果，Adobe 不为其提供支持或保证。
 
-请参阅 **[介绍AEM现代化工具](https://opensource.adobe.com/aem-modernize-tools/)**，进一步了解AEM现代化工具套件的规划、配置和开发。
+请参阅 **[AEM 现代化工具简介](https://opensource.adobe.com/aem-modernize-tools/)**，了解有关 AEM 现代化工具套件的规划、配置和开发的更多信息。
 
-## 安装和实施AEM Moderization Tool Suite {#installing-implementing}
+## 安装和实施 AEM 现代化工具套件 {#installing-implementing}
 
-请参阅 **[Git资源： AEM Dimestronize Tools Suite](https://github.com/adobe/aem-modernize-tools)**，了解安装和实施。
+请参阅 **[Git 资源：AEM 现代化工具套件](https://github.com/adobe/aem-modernize-tools)**，了解有关安装和实施的信息。
 
