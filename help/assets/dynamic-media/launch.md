@@ -86,7 +86,7 @@ Adobe启动中的规则是一种不可知配置，它定义构成规则的三个
 
 在“操作”部分，需要执行“设置变 *量”操作* 。 此操作告诉Adobe Analytics如何用数据填充跟踪变量。 同时，“设置变 *量* ”动作不会向跟踪服务器发送任何内容。
 
-“设 *置变量* ”动作后面必须有“发送 *信标”动作* 。 “发 *送信标* ”操作实际会向分析跟踪服务器发送数据。 “设置变 *量* ”和“ *发送信标*”操作均来自Adobe Analytics扩展。
+“设 *置变量* ”操作后面必须有“发 *送信标* ”操作。 “发 *送信标* ”操作实际会向分析跟踪服务器发送数据。 “设置变 *量* ”和“ *发送信标*”操作均来自Adobe Analytics扩展。
 
 请参 [阅《Experience Platform Launch](https://docs.adobe.com/content/help/zh-Hans/launch/using/reference/manage-resources/rules.html) 用户指南》中的规则，了解更多信息。
 
@@ -116,7 +116,7 @@ Adobe启动中的以下示例配置演示了如何在加载查看器时跟踪资
 
    ![image2019-4](assets/image2019-4.png)
 
-### 关于Adobe Analytics音频和视频 {#about-adobe-analytics-for-audio-and-video}
+### About Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
 订阅Experience Cloud帐户以使用Adobe Analytics音频和视频时，就足以在Dynamic Media查看器扩展设置中启 *用视频* 跟踪。 视频指标在Adobe Analytics可用。 视频跟踪取决于是否存在用于音频和视频扩展的Adobe媒体分析。
 
@@ -156,7 +156,7 @@ Adobe启动中的以下示例配置演示了如何在加载查看器时跟踪资
 1. 提取与网页环境相关的环境级别。 然后，在“安 **[!UICONTROL 装]** ”列中，单击框图标。
 1. **[!UICONTROL 在“Web安装说明]** ”对话框中，复制完整的Adobe启动库嵌入代码以及周围的 `<script/>` 标记。
 
-## Dynamic Media查看器扩展的参考指南 {#reference-guide-for-the-dynamic-media-viewers-extension}
+## Dynamic Media Viewer扩展的参考指南 {#reference-guide-for-the-dynamic-media-viewers-extension}
 
 ### 关于Dynamic Media查看器配置 {#about-the-dynamic-media-viewers-configuration}
 
@@ -190,7 +190,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-有关按每 [种查看器类型列表受支持事件的信息](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) ，请参阅Dynamic Media查看器参考指南； 转到特定查看器部分，然后单击“支持Adobe Analytics跟踪”子部分。 目前，Dynamic Media查看器参考指南不文档事件参数。
+有关按每 [种查看器类型列表受支持事件的信息](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) ，请参阅Dynamic Media查看器参考指南；转到特定查看器部分，然后单击“支持Adobe Analytics跟踪”子部分。 目前，Dynamic Media查看器参考指南不文档事件参数。
 
 现在，我们来考虑Dynamic Media查看器数据元素的 *生命周期*。 在页面上发生相应的Dynamic Media查看器事件后，将填充此类数据元素的值。 例如，如果数据元素指向 **[!UICONTROL LOAD]** 事件及其“asset”参数，则此类数据元素的值将在查看器首次运行LOAD事件后接收有效数据。 如果数据元素指向 **[!UICONTROL ZOOM]** 事件及其“scale”参数，则此类数据元素的值将保持为空，直到查看器首次发送 **[!UICONTROL ZOOM]** 事件。
 
@@ -202,7 +202,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 **请考虑以下示例设置**:
 
-* 具有两个Dynamic Media缩放查看器的网页； 我们将它们称为 *viewer1* 和 *viewer2*。
+* 具有两个Dynamic Media缩放查看器的网页；我们将它们称为 *viewer1* 和 *viewer2*。
 
 * **[!UICONTROL ZoomScale]** Data Element指向 **[!UICONTROL ZOOM]** 事件及其“scale”参数。
 * **[!UICONTROL TrackPan]** 规则，包含以下项：
@@ -216,7 +216,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
    * 使用核心事件启动扩展的按键Adobe作为触发器。
    * 将ZoomScale数据元 **[!UICONTROL 素的值]** 发送到Adobe Analytics。
 
-现在，假定最终用户加载包含两个查看器的网页。 在 *viewer1*&#x200B;中，它们放大到50%; 然后，在 *viewer2中*，它们放大到25%缩放。 在 *viewer1*&#x200B;中，它们四处平移图像，最后按下键盘上的键。
+现在，假定最终用户加载包含两个查看器的网页。 在 *viewer1*&#x200B;中，它们放大到50%;然后，在 *viewer2中*，它们放大到25%缩放。 在 *viewer1*&#x200B;中，它们四处平移图像，最后按下键盘上的键。
 
 最终用户的活动导致向Adobe Analytics发出以下两个跟踪调用：
 
@@ -225,9 +225,9 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 上述设置的示例还影响“数据元素”值的寿命。 即使查看器本身已放置在网页上，Dynamic Media Viewer所管理的Adobe元素值也会存储在启动库代码中。 这意味着，如果存在由非Dynamic Media Viewer扩展触发并引用此类数据元素的规则，则数据元素将返回最后一个已知值，即使该查看器不再出现在网页上也是如此。
 
-无论如何，由Dynamic Media查看器驱动的数据元素值不会存储在本地存储或服务器上； 而是仅保留在客户端Adobe启动库中。 当网页重新加载时，此类数据元素的值会消失。
+无论如何，由Dynamic Media查看器驱动的数据元素值不会存储在本地存储或服务器上；而是仅保留在客户端Adobe启动库中。 当网页重新加载时，此类数据元素的值会消失。
 
-通常，数据元素编辑器支持 [存储持续时间选择](https://docs.adobe.com/content/help/zh-Hans/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)。 但是，使用Dynamic Media查看器扩展的存储元素仅支持“无”的数据持 **[!UICONTROL 续时间]**。 在用户界面中可以设置任何其他值，但在本例中未定义数据元素行为。 扩展自行管理数据元素的值： 在整个查看器生命周期中维护查看器事件参数值的数据元素。
+通常，数据元素编辑器支持 [存储持续时间选择](https://docs.adobe.com/content/help/zh-Hans/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)。 但是，使用Dynamic Media查看器扩展的存储元素仅支持“无”的数据持 **[!UICONTROL 续时间]**。 在用户界面中可以设置任何其他值，但在本例中未定义数据元素行为。 扩展自行管理数据元素的值：在整个查看器生命周期中维护查看器事件参数值的数据元素。
 
 ### 关于Dynamic Media Viewers扩展中的规则 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -435,7 +435,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 1. 在 Adobe Analytics 页面的右上角附近，在&#x200B;**[!UICONTROL 搜索报告]**&#x200B;字段的右侧，从下拉列表中选择正确的报表包。如果有多个可用报表包，并且您不确定要使用哪个报表包，请与 Adobe Analytics 管理员联系，帮助您选择要使用的报表包。
 
-   在下图中，用户创建了一个名为DynamicMediaViewersExtensionDoc *的报表包* ，并从下拉列表中将其选中。 报告套件名称仅供说明； 最终选择的报表包名称将有所不同。
+   在下图中，用户创建了一个名为DynamicMediaViewersExtensionDoc *的报表包* ，并从下拉列表中将其选中。 报告套件名称仅供说明；最终选择的报表包名称将有所不同。
 
    如果没有可用的报表包，则您或您的Adobe Analytics管理员必须创建一个报表包，然后才能继续进行配置。
 
