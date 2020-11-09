@@ -1,22 +1,22 @@
 ---
-title: 以Adobe Experience Manager中的Sling资源合并为Cloud Service
+title: 以Adobe Experience ManagerSling资源合并为Cloud Service
 description: Sling Resource Merager提供访问和合并资源的服务
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 在AEM中将Sling资源合并作为Cloud Service {#using-the-sling-resource-merger-in-aem}
+# 在 AEM as a Cloud Service 中使用 Sling 资源合并器 {#using-the-sling-resource-merger-in-aem}
 
 ## 用途 {#purpose}
 
 Sling Resource Merager提供访问和合并资源的服务。 它为以下两者提供差异（差异）机制：
 
-* **[使用](/help/implementing/developing/introduction/overlays.md)**搜索路径的资[源叠加](/help/implementing/developing/introduction/overlays.md#search-paths)。
+* **[使用](/help/implementing/developing/introduction/overlays.md)** 搜索路径的资 [源叠加](/help/implementing/developing/introduction/overlays.md#search-paths)。
 
 * **使用** 资源类型层次结构(通过属性`cq:dialog`)覆盖触屏优化UI()的组件对话框 `sling:resourceSuperType`。
 
@@ -24,13 +24,13 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 
 * 自定义定义的内容的优先级高于原始定义的内容(即，它 *叠加**或覆盖* 它)。
 
-* 在必要时 [](#properties) ，在自定义中定义属性，指示如何使用合并自原始内容的内容。
+* 在必要时 [](#properties) ，在自定义中定义属性，指示如何使用从原始内容合并的内容。
 
 <!-- Still links to reference material in 6.5 -->
 
 >[!CAUTION]
 >
->Sling资源合并和相关方法只能用于触屏优化UI(这是AEM作为Cloud Service可用的唯一UI)。
+>Sling Resource Merager和相关方法只能与触屏优化UI(这是AEM作为Cloud Service唯一可用的UI)一起使用。
 
 ### AEM目标 {#goals-for-aem}
 
@@ -48,11 +48,12 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 >这是因为，只要对实例 `/libs` 应用升级，其内容就会被覆盖。
 >
 >* 叠加取决于 [搜索路径](/help/implementing/developing/introduction/overlays.md#search-paths)。
+   >
+   >
+* 覆盖不取决于搜索路径，它们使用属性 `sling:resourceSuperType` 建立连接。
 >
->* 覆盖不取决于搜索路径，它们使用属性 `sling:resourceSuperType` 建立连接。
 >
->
->但是，重写通常在下定 `/apps`义，因为AEM的最佳实践是在下定义自定义 `/apps`; 这是因为你不能改变下面的任何 `/libs`。
+但是，覆盖通常在下定义， `/apps`因为AEM的最佳实践是Cloud Service在下定义自定义 `/apps`;这是因为你不能改变下面的任何 `/libs`。
 
 ### 属性 {#properties}
 
@@ -106,7 +107,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 
       `/apps/the-project/components/text/cq:dialog`
 
-要创建其中任何一个，您只需重新创建骨架结构。 为了简化结构的重建，所有中间节点都可以是 `nt:unstructured` 类型(它们不需要反映原始节点类型； 例如，在 `/libs`中。
+要创建其中任何一个，您只需重新创建骨架结构。 为了简化结构的重建，所有中间节点都可以是 `nt:unstructured` 类型(它们不需要反映原始节点类型；例如，在 `/libs`中。
 
 因此，在上面的叠加示例中，需要以下节点：
 
@@ -154,7 +155,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
    默认情况下，自动创建的属性( `jcr:primaryType`如)不受叠加／覆盖的约束，以确保尊重当前位于下的节 `/libs` 点类型。 要实施叠加／覆盖，您必须在中重新创建该节 `/apps`点，请显式隐藏该属性并重新定义它：
 
    1. 在下面创建相 `/apps` 应的节点 `jcr:primaryType`
-   1. 在该节 `sling:hideProperties` 点上创建属性，并将值设置为自动创建属性的属性； 例如， `jcr:primaryType`
+   1. 在该节 `sling:hideProperties` 点上创建属性，并将值设置为自动创建属性的属性；例如， `jcr:primaryType`
 
       此属性(定义 `/apps`于)现在将优先于 `/libs`
 
@@ -197,9 +198,9 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
    1. 创建属性 `sling:hideChildren`:
 
       * 类型: `String[]`
-      * value: 要隐藏／忽略的子节点的列表( `/libs`如中定义)
+      * value:要隐藏／忽略的子节点的列表( `/libs`如中定义)
 
-      通配符&amp;ast; 可用于隐藏／忽略所有子节点。
+      通配符&amp;ast;可用于隐藏／忽略所有子节点。
 
 
 * **对节点重新排序**
@@ -228,7 +229,7 @@ Sling Resource Merager包括两个自定义资源提供商——一个用于叠�
 
 * 叠加:
 
-   * 目的： 根据资源的搜索路径合并资源
+   * 目的：根据资源的搜索路径合并资源
    * 装载点： `/mnt/overlay`
    * usage: `mount point + relative path`
    * 示例：
@@ -237,7 +238,7 @@ Sling Resource Merager包括两个自定义资源提供商——一个用于叠�
 
 * 覆盖：
 
-   * 目的： 根据超类型合并资源
+   * 目的：根据超类型合并资源
    * 装载点： `/mnt/overide`
    * usage: `mount point + absolute path`
    * 示例：
