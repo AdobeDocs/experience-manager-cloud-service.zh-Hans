@@ -1,6 +1,6 @@
 ---
-title: AEM SPA快速入门（使用React）
-description: 本文展示了一个SPA应用程序示例，介绍了它的组合方式，并允许您使用React框架快速启动并运行自己的SPA。
+title: AEM中SPA使用React入门
+description: 本文展示了一个SPA应用程序示例，介绍了它是如何组合在一起的，并允许您使用React框架快速与自己的SPA联动手。
 translation-type: tm+mt
 source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
@@ -10,21 +10,21 @@ ht-degree: 1%
 ---
 
 
-# AEM SPA快速入门（使用React） {#getting-started-with-spas-in-aem-using-react}
+# AEM中SPA使用React入门 {#getting-started-with-spas-in-aem-using-react}
 
-单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，作者希望在AEM内无缝编辑内容，使用SPA框架构建站点。
+单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，使用SPA框架构建站点。
 
-SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文介绍React框架上简化的SPA应用程序，并说明它的组合方式，使您能快速启动并运行自己的SPA。
+SPA创作功能优惠了在AEM内支持SPA的一个全面的解决方案。 本文介绍React框架上简化的SPA应用程序，说明它是如何组合在一起的，使您能快速与自己的SPA联动手。
 
 >[!NOTE]
 >
->本文基于React框架。 有关角度框架的相应文档，请参 [阅AEM中SPA快速入门——角度](getting-started-angular.md)。
+>本文基于React框架。 有关角度框架的相应文档，请参 [阅SPA AEM —— 角](getting-started-angular.md)度框架入门。
 
 ## 简介 {#introduction}
 
-本文概括了简单SPA的基本功能，以及使您的SPA运行所需的最低要求。
+本文概括了简单的SPA的基本功能以及运行所需的最低要求。
 
-有关AEM中SPA的工作方式的详细信息，请参阅以下文档:
+有关SPA在AEM中的工作方式的详细信息，请参阅以下文档:
 
 * [SPA简介和演练](introduction.md)
 * [SPA编辑器概述](editor-overview.md)
@@ -32,15 +32,15 @@ SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文介�
 
 >[!NOTE]
 >
->为了能够在SPA中创作内容，内容必须存储在AEM中并由内容模型公开。
+>要在SPA中创作内容，内容必须存储在AEM中并由内容模型公开。
 >
->如果AEM之外开发的SPA不遵守内容模型合同，则该SPA将不可授权。
+>如果SPA不遵守内容模型合同，则在AEM之外开发的将不可授权。
 
-此文档将介绍使用React框架创建的简化SPA的结构并说明其工作方式，以便您将此理解应用于您自己的SPA。
+本文档将介绍使用React框架创建的简化SPA的结构并说明其工作方式，以便您能够将此理解应用于您自己的SPA。
 
 ## 依赖关系、配置和构建 {#dependencies-configuration-and-building}
 
-除了预期的React依赖关系外，示例SPA还可以利用其他库来提高SPA的创建效率。
+除了预期的React依赖关系外，示例SPA还可以利用其他库来提高SPA创建的效率。
 
 ### 依赖关系 {#dependencies}
 
@@ -106,13 +106,13 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何AEM项目都应利用 [AEM Project](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)Archetype，它支持使用React或Angular的SPA项目并利用SPA SDK。
+任何AEM项目都应利用AEM [项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，它支持SPA项目（使用React或Angular）并利用SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 
-如前所述，包括依赖项和构建应用程序将留给您一个可上传到AEM实例的工作SPA包。
+如前所述，包括依赖项和构建应用程序将留给您一个可上传到AEM实例的SPA工作包。
 
-本文档的下一节将介绍AEM中SPA的结构、驱动应用程序的重要文件以及它们如何协同工作。
+本文档的下一节将介绍AEM的构建方式、驱动应用程序的重要文件以及它们如何协同工作。
 
 以简化的图像组件为例，但应用程序的所有组件都基于相同的概念。
 
@@ -179,7 +179,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 在此示例中 `AppPage` ，类 `Page`扩展，它包含随后可以使用的内部内容方法。
 
-收 `Page` 集页面模型的JSON表示形式并处理内容以包装／装饰页面的每个元素。 有关此项的更 `Page` 多详细信息，请参 [阅文档SPA Blueprint。](blueprint.md)
+收 `Page` 集页面模型的JSON表示形式并处理内容以包装／装饰页面的每个元素。 有关该产品的更 `Page` 多详细信息，请参 [阅文档SPA Blueprint。](blueprint.md)
 
 ### Image.js {#image-js}
 
@@ -210,7 +210,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM中SPA的核心思想是将SPA组件映射到AEM组件，并在内容被修改时更新组件（反之亦然）。 有关此通 [信模型的摘要](editor-overview.md) ，请参阅文档SPA编辑器概述。
+SPA AEM的核心思想是将SPA组件映射到AEM组件，并在内容被修改时更新组件（反之亦然）。 有关此通信 [模型的摘要](editor-overview.md) ，请参阅文档SPA编辑器概述。
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -263,8 +263,8 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 ## 后续步骤 {#next-steps}
 
-* [AEM SPA使用角度入门](getting-started-angular.md) ，显示如何构建基本SPA以使用角度式与AEM的SPA编辑器配合使用。
-* [SPA编辑器概述](editor-overview.md) 深入介绍AEM与SPA之间的通信模型。
-* [WKND SPA项目](wknd-tutorial.md) 是在AEM中实施一个简单SPA项目的分步教程。
-* [SPA的动态模型到组件映射](model-to-component-mapping.md) (Dynamic Model to Component Mapping for SPAs)解释了动态模型到组件映射以及它在AEM的SPA中的工作方式。
-* [SPA Blueprint](blueprint.md) 优惠深入了解AEM的SPA SDK的工作方式，以防您希望在AEM中为非React或Angular框架实施SPA，或只是希望深入了解。
+* [SPA AEM使用角度式入门](getting-started-angular.md) ，显示如何构建基本SPA以使用SPA。
+* [SPA Editor概述](editor-overview.md) 深入介绍AEM与SPA之间的通信模型。
+* [WKND SPA Project](wknd-tutorial.md) （WKND项目）是一个分步教程，它在AEM中实施一个简单的SPA项目。
+* [SPA的动态模型到组件映射](model-to-component-mapping.md) ，解释动态模型到组件映射以及它在SPA中的工作方式。
+* [SPA](blueprint.md) Blueprint优惠深入了解SPA SDK for AEM如何工作，以防您希望在中实施除React或Angular之外的框架，或只是希望深入了解。
