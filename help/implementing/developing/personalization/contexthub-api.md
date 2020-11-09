@@ -146,7 +146,7 @@ ContextHub存储库的基类。
 
 对 [`ContextHub.Utils.Eventing`](#contexthub-utils-eventing) 象。 使用此对象绑定函数以存储事件。 有关默认值和初始化的信息，请参见 [`init(name,config)`](#init-name-config)。
 
-#### 名称 {#name}
+#### name {#name}
 
 商店的名称。
 
