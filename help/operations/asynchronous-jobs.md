@@ -1,9 +1,9 @@
 ---
 title: 异步作业
 description: Adobe Experience Manager 通过异步完成某些资源密集型任务来优化性能。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
