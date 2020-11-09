@@ -1,6 +1,6 @@
 ---
 title: SPA和服务器端渲染
-description: 在SPA中使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
+description: 在SPA中使用服务器端渲染(SSR)可以加速页面的初始加载，然后将进一步的渲染传递给客户端。
 translation-type: tm+mt
 source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # SPA和服务器端渲染{#spa-and-server-side-rendering}
 
-单页应用程序(SPA)可以优惠用户丰富的动态体验，它以熟悉的方式反应和行为，通常就像本机应用程序一样。 [这是通过依赖客户端预先加载内容，然后进行处理用户交互的繁重工作](introduction.md#how-does-a-spa-work) ，从而最小化客户端和服务器之间需要的通信量，使应用更加被动。
+单页应用程序(SPA)可以优惠用户丰富的动态体验，它们以熟悉的方式反应和行为，通常就像本机应用程序一样。 [这是通过依赖客户端预先加载内容，然后进行处理用户交互的繁重工作](introduction.md#how-does-a-spa-work) ，从而最小化客户端和服务器之间需要的通信量，使应用更加被动。
 
 但是，这会导致较长的初始加载时间，尤其是当SPA较大且内容丰富时。 为了优化加载时间，某些内容可在服务器端呈现。 使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
 
 ## 何时使用SSR {#when-to-use-ssr}
 
-SSR并非所有项目都必需。 尽管AEM完全支持SSR的SPA，但Adobe不建议对每个项目系统地实施SSR。
+SSR并非所有项目都必需。 虽然AEM完全支持SPA的联署材料安全法，但Adobe不建议对每个项目系统地实施。
 
 在决定实施SSR时，您首先必须估计项目的额外复杂性、工作量和增加成本，包括长期维护。 SSR体系结构只有在增加值明显超过估计成本时才能选择。
 
@@ -38,7 +38,7 @@ SSR通常在以下任一问题有明确的“是”时提供一些值：
 * [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) —— 有关服务的概述
 * [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) —— 有关该平台的详细文档
 
-以下各节详细介绍了如何使用Adobe I/O Runtime在两种不同的模型中为您的SPA实施SSR:
+以下各节详细介绍了如何使用Adobe I/O Runtime在两个不同的模型中为SPA实施SSR:
 
 * [AEM驱动的通信流](#aem-driven-communication-flow)
 * [Adobe I/O Runtime驱动的通信流](#adobe-i-o-runtime-driven-communication-flow)
@@ -74,7 +74,7 @@ AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SS
 
 ## AEM驱动的通信流 {#aem-driven-communication-flow}
 
-使用SSR时，AEM [中SPA的组件交互](introduction.md#interaction-with-the-spa-editor) 工作流程包括在Adobe I/O Runtime生成应用程序初始内容的阶段。
+使用SSR时，AEM [中的](introduction.md#interaction-with-the-spa-editor) SPA的组件交互工作流包括在Adobe I/O Runtime生成应用程序初始内容的阶段。
 
 1. 浏览器从AEM请求SSR内容。
 1. AEM把模特发给Adobe I/O Runtime。
@@ -85,7 +85,7 @@ AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SS
 
 ## Adobe I/O Runtime驱动的通信流 {#adobe-i-o-runtime-driven-communication-flow}
 
-上一节介绍与AEM中的SPA相关的服务器端渲染的标准和建议实施，其中AEM执行内容的引导和服务。
+上一节介绍与AEM中SPA相关的服务器端渲染的标准和建议实施，其中AEM执行内容的引导和服务。
 
 或者，SSR可以实现，使Adobe I/O Runtime负责引导，有效地逆转通信流。
 
@@ -107,20 +107,20 @@ AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SS
     </ul> </td>
    <td>
     <ul>
-     <li>SPA开发者可能不熟悉<br /> </li>
+     <li>SPA开发人员可能不熟悉<br /> </li>
     </ul> </td>
   </tr>
   <tr>
    <th><strong>adobe i/o runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>SPA开发人员更熟悉<br /> </li>
+     <li>更熟悉SPA开发人员<br /> </li>
     </ul> </td>
    <td>
     <ul>
      <li>AEM开发人员需要通过属性提供应用程序所需的Clientlib资源(如CSS和JavaScript <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> )<br /> </li>
      <li>资源必须在AEM和Adobe I/O Runtime之间同步<br /> </li>
-     <li>要启用SPA创作，可能需要Adobe I/O Runtime的代理服务器</li>
+     <li>要启用SPA的创作，可能需要为Adobe I/O Runtime提供代理服务器</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -128,25 +128,25 @@ AEM必须知道可在何处检索远程渲染的内容。 无论您 [选择为SS
 
 ## SSR规划 {#planning-for-ssr}
 
-通常，只需要在服务器端呈现应用程序的一部分。 常见示例是呈现在页面初始加载时折叠上方显示的内容。 这通过交付到客户端（已呈现的内容）来节省时间。 当用户与SPA交互时，客户端将呈现附加内容。
+通常，只需要在服务器端呈现应用程序的一部分。 常见示例是呈现在页面初始加载时折叠上方显示的内容。 这通过交付到客户端（已呈现的内容）来节省时间。 当用户与SPA交互时，客户端将呈现其他内容。
 
-当您考虑为SPA实施服务器端渲染时，您需要查看应用程序中需要哪些部分。
+在考虑为SPA实施服务器端渲染时，您需要查看应用程序中需要哪些部分。
 
-## 利用SSR开发SPA {#developing-an-spa-using-ssr}
+## 用SSR开发SPA {#developing-an-spa-using-ssr}
 
-SPA组件可由客户端（在浏览器中）或服务器端呈现。 呈现服务器端时，浏览器属性（如窗口大小和位置）不存在。 因此，SPA组件应是同构的，不要假设它们将呈现在何处。
+SPA组件可由客户端（在浏览器中）或服务器端呈现。 呈现服务器端时，浏览器属性（如窗口大小和位置）不存在。 因此，SPA组件应该是同构的，不要假设它们将呈现在何处。
 
 要利用SSR，您需要在AEM和Adobe I/O Runtime部署代码，后者负责服务器端渲染。 大多数代码将相同，但特定于服务器的任务会有所不同。
 
 ## AEM中SPA的SSR {#ssr-for-spas-in-aem}
 
-AEM中SPA的SSR要求使用Adobe I/O Runtime，这用于渲染应用程序内容服务器端。 在应用程序的HTL中，调用Adobe I/O Runtime上的资源来呈现内容。
+AEM中的SPA的SSR需要Adobe I/O Runtime，它用于呈现应用程序内容服务器端。 在应用程序的HTL中，调用Adobe I/O Runtime上的资源来呈现内容。
 
 正如AEM支持Angular和React SPA框架即装即用一样，Angular和React应用程序也支持服务器端渲染。 有关更多详细信息，请参阅两个框架的NPM文档。
 
 ## 远程内容渲染器 {#remote-content-renderer}
 
-在AEM [中将SSR与您的SPA一起使用时](#remote-content-renderer-configuration) ，需要的远程内容渲染器配置接入一个更广泛的渲染服务，该服务可以扩展和自定义以满足您的需求。
+在AEM [中将SSR与SPA一起使用](#remote-content-renderer-configuration) ，需要的远程内容渲染器配置，它可以引入更广泛的渲染服务，以便扩展和自定义以满足您的需求。
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
