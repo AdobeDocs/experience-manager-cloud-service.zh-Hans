@@ -103,7 +103,7 @@ ht-degree: 97%
 
    ![删除 Keystore 中的现有 similaritysearch 条目以添加新的安全证书](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *图：删除 Keystore 中的现有`similaritysearch`条目以添加新的安全证书。*
+   *图：删除 Keystore 中的现有 `similaritysearch` 条目以添加新的安全证书。*
 
 1. 在 [!DNL Experience Manager] 用户界面中，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全]** > **[!UICONTROL Adobe IMS 配置]**。打开可用的智能标记配置。要下载公共证书，请单击&#x200B;**[!UICONTROL 下载公共证书]**。
 
