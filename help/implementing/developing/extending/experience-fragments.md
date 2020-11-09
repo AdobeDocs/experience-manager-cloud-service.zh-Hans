@@ -34,7 +34,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 * 类型： `src`、 `href`或 `action`
 
-* 或结尾为： `-src`或 `-href`
+* 或结束于： `-src`或 `-href`
 
 例如：
 
@@ -46,13 +46,13 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 ![纯HTML再现](assets/xf-14.png)
 
-纯格式副本选择器使用变压器，而不是附加脚本； Sling [Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 是变压器。 此配置位于
+纯格式副本选择器使用变压器，而不是附加脚本；Sling [Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 是变压器。 此配置位于
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
 ## 社交变量 {#social-variations}
 
-社交变体可以发布到社交媒体（文本和图像）。 在AEM中，这些社交变体可以包含组件； 例如，文本组件、图像组件。
+社交变体可以发布到社交媒体（文本和图像）。 在AEM中，这些社交变体可以包含组件；例如，文本组件、图像组件。
 
 社交帖子的图像和文本可以从任何深度级别(在构建块或布局容器中)的任何图像资源类型或文本资源类型中获取。
 
@@ -94,7 +94,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
    1. 模板的资源类型（初始节点）必须继承自：
       `cq/experience-fragments/components/xfpage`
 
-   1. 并且模板的名称必须以下列内容开头：
+   1. 模板的名称必须以下列内容开头：
       `experience-fragments`
 这允许用户在/content/experience-fragments中创建体验片段， 
 `cq:allowedTemplates` 此文件夹的属性包括名称以开头的所有模板 `experience-fragment`。 客户可以更新此属性，以包含自己的命名方案或模板位置。
@@ -142,15 +142,15 @@ The only additional configuration is to ensure that the components are [allowed 
 * 添加组件，
 * 然后以HTML格式或JSON格式将其导出为Adobe Target优惠。
 
-此功能可在AEM的作者实例上启用。 它需要有效的Adobe Target配置以及链接外部器的配置。
+可以在AEM的作者实例上启用此功能。 它需要有效的Adobe Target配置和链接外部器的配置。
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-链接外部化器用于确定创建目标优惠的HTML版本时需要的正确URL，该版本随后将发送到Adobe Target。 这是必要的，因为Adobe Target要求目标HTML优惠内的所有链接都可以公开访问； 这意味着必须先发布链接引用的任何资源以及体验片段本身，然后才能使用这些资源。
+链接外部化器用于确定创建目标优惠的HTML版本时需要的正确URL，该版本随后将发送到Adobe Target。 这是必要的，因为Adobe Target要求目标HTML优惠内的所有链接都可以公开访问；这意味着必须先发布链接引用的任何资源以及体验片段本身，然后才能使用这些资源。
 
-默认情况下，当您构建目标HTML优惠时，会向AEM中的自定义Sling选择器发送请求。 此选择器被调用 `.nocloudconfigs.html`。 正如其名称所暗示的，它会创建体验片段的纯HTML渲染，但不包括云配置（这将是多余的信息）。
+默认情况下，当您构建目标HTML优惠时，请求将发送到AEM的自定义Sling选择器。 此选择器被调用 `.nocloudconfigs.html`。 正如其名称所暗示的，它会创建体验片段的纯HTML渲染，但不包括云配置（这将是多余的信息）。
 
 生成HTML页面后，Sling Rewriter管道会修改输出：
 
@@ -158,9 +158,9 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
 
    这样做是为了确保HTML目标优惠可以包含在目标活动中。
 
-2. AEM会修改HTML中存在的任何内部链接，以便它们指向已发布的资源。
+2. AEM将修改HTML中存在的所有内部链接，以便它们指向已发布的资源。
 
-   要确定要修改的链接，AEM对于HTML元素属性遵循以下模式：
+   要确定要修改的链接，AEM对HTML元素的属性遵循以下模式：
 
    1. `src` 属性
    2. `href` 属性
@@ -169,20 +169,20 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
 
    >[!NOTE]
    >
-   >在大多数情况下，HTML中的内部链接是相对链接，但有时自定义组件在HTML中提供完整URL。 默认情况下，AEM会忽略这些完全成熟的URL，并且不进行任何修改。
+   >在大多数情况下，HTML中的内部链接是相对链接，但有时自定义组件在HTML中提供完整URL。 默认情况下，AEM会忽略这些成熟的URL，并且不进行任何修改。
 
-   这些属性中的链接通过AEM Link Externalizer `publishLink()` 运行，以便重新创建URL，就像它在已发布实例上一样，也同样可公开使用。
+   这些属性中的链接通过AEM Link `publishLink()` Externalizer运行，以便重新创建URL，就像它在已发布实例上一样，公开可用。
 
-在使用现成的实施时，上述过程应足以从体验片段生成目标优惠，然后将其导出到Adobe Target。 但是，有些使用案例在此过程中没有说明； 包括：
+在使用现成的实施时，上述过程应足以从体验片段生成目标优惠，然后将其导出到Adobe Target。 但是，有些使用案例在此过程中没有说明；包括：
 
 * Sling Mapping仅适用于发布实例
-* Dispatcher重定向
+* 调度程序重定向
 
 对于这些用例，AEM提供链接重写器提供程序界面。
 
 ### 链接重写器提供程序界面 {#link-rewriter-provider-interface}
 
-对于更复杂的情况(默认不 [涵盖](#default-link-rewriting)),AEM会优惠链接重写器提供程序界面。 这是一个 `ConsumerType` 接口，您可以作为服务在包中实现。 它会绕过AEM在从体验片段呈现的HTML优惠的内部链接上执行的修改。 此界面允许您自定义重写内部HTML链接的过程，以符合您的业务需求。
+对于更复杂的情况，AEM会 [优惠链](#default-link-rewriting)接重写器提供程序界面。 这是一个 `ConsumerType` 接口，您可以作为服务在包中实现。 它绕过AEM在从体验片段呈现的HTML优惠的内部链接上执行的修改。 此界面允许您自定义重写内部HTML链接的过程，以符合您的业务需求。
 
 将此接口作为服务实现的用例包括：
 
@@ -353,7 +353,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### 优先级- getPriority {#priorities-getpriority}
 
-需要多种服务来满足不同类型的体验片段，甚至拥有通用服务来处理所有体验片段的外部化和映射，这种情况并不少见。 在这些情况下，可能会发生与要使用的服务相关的冲突，因此AEM提供了为不同服务定 **义优先** 级的可能性。 使用以下方法指定优先级：
+需要多种服务来满足不同类型的体验片段，甚至拥有通用服务来处理所有体验片段的外部化和映射，这种情况并不少见。 在这些情况下，可能会发生与要使用的服务相关的冲突，因此AEM提供了为不同服务定 **义优先级** 的可能性。 使用以下方法指定优先级：
 
 * `getPriority()`
 
