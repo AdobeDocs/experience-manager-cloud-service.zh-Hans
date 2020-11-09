@@ -36,6 +36,7 @@ ht-degree: 85%
    * **站点**:
       1. 从工具栏中选择&#x200B;**创建**&#x200B;以打开选择框。
       1. 从该选择框中，选择&#x200B;**创建启动项**&#x200B;以打开向导。
+
    >[!NOTE]
    >
    >在“站 **点** ”控制台中，您还可以使用选 [择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) ，在选择创建之前选择 **页面**。
@@ -45,6 +46,7 @@ ht-degree: 85%
 1. 在&#x200B;**选择源**&#x200B;步骤中，您需要&#x200B;**添加页面**。您可以通过指定每个页面的路径来选择多个页面：
    * 导航到所需的位置。
    * 选择源页面并进行确认（复选标记）。
+
    根据需要重复执行上述步骤。
 
    ![选择启动源](/help/sites-cloud/authoring/assets/launches-select-source.png)
@@ -60,6 +62,7 @@ ht-degree: 85%
    * **包括子页面**：
 
       * 指定您希望创建的启动项包括还是不包括子页面。默认情况下，将包括这些子页面。
+
    单击&#x200B;**下一步**&#x200B;以继续。
 
    ![选择启动源](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
@@ -71,14 +74,15 @@ ht-degree: 85%
    * **使用新模板替换页面**：有关更多详细信息，请参阅[使用新模板创建启动项](#create-launch-with-new-template)。
    * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过使启动项成为Live Copy来实现这一点。 默认情况下，此选项处于选中状态。<!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **启动日期**：激活启动副本的日期和时间（取决于&#x200B;**生产就绪**&#x200B;标记；请参阅[启动项 - 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)）。
+
    ![启动属性](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. 使用&#x200B;**创建**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：
 
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 
-   * The [**Launches **console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References **in the** Sites **console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### 使用新模板创建启动项 {#create-launch-with-new-template}
 
