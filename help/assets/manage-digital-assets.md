@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 18%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 18%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM用户上传存储库中已存在的一个或多个资产， [!DNL Experience Manager] 则会检测重复项并通知用户。 重复检测默认处于禁用状态，因为它可能会影响性能，具体取决于存储库的大小和上传的资产数量。 要启用该功能，请配 [!UICONTROL 置AdobeAEM Cloud Asset Duplication Detector]。 了 [解如何进行OSGi配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 重复项检测基于存储在的 `dam:sha1` 唯一值 `jcr:content/metadata/dam:sha1`。 这意味着即使文件名不同，也会检测重复资源。
+如果DAM用户上传存储库中已存在的一个或多个资产， [!DNL Experience Manager] 则会检测重复项并通知用户。 重复检测默认处于禁用状态，因为它可能会影响性能，具体取决于存储库的大小和上传的资产数量。 要启用该功能，请配 [!UICONTROL 置AdobeAEM Cloud Asset Duplication Detector]。 了 [解如何进行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 重复项检测基于存储在的 `dam:sha1` 唯一值 `jcr:content/metadata/dam:sha1`。 这意味着即使文件名不同，也会检测重复资源。
 
 ![检测重复资产OSGi配置](assets/duplicate-detection.png)
 
@@ -544,11 +544,11 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 1. 使用右上方的选项下载或打印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager **[!UICONTROL 中打开]** “注释PDF”配置，并修改所需的选项。 例如，要更改批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注的字体颜色的信息，请参阅 [批注](/help/assets/manage-digital-assets.md#annotating)。
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    返回渲染的PDF文件并刷新它。 刷新的PDF反映了您所做的更改。
 
