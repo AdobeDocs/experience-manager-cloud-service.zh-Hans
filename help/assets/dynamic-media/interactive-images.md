@@ -2,9 +2,9 @@
 title: 交互式图像
 description: 了解如何在Dynamic Media中处理交互式图像
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4253'
 ht-degree: 23%
 
 ---
@@ -255,10 +255,10 @@ If you have already uploaded the images that you want to use, advance to the nex
 1. 在页面的左上角附近，点按&#x200B;**[!UICONTROL 添加热点]**（手指点按图标）以打开热点管理页面。
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 
-1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
-1. 在图像上，点按您希望显示热点的位置。如有必要，可拖动热点以调整其位置。
-1. 重复步骤a和b，根据需要添加其他热点。
-1. （可选）要删除热点，请在图像上选择该热点，然后点按“热 **[!UICONTROL 点]** ”标题下的删除 **[!UICONTROL (垃圾桶图]** 标)。
+   1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
+   1. 在图像上，点按您希望显示热点的位置。如有必要，可拖动热点以调整其位置。或者，使用键盘箭头键控制选定热点的位置。
+   1. 重复步骤a和b，根据需要添加其他热点。
+   1. （可选）要删除热点，请在图像上选择该热点，然后点按“热 **[!UICONTROL 点]** ”标题下的删除 **[!UICONTROL (垃圾桶图]** 标)。
 
 1. 在“名称”文本字段中，键入热点的名称。此名称也会显示在“选定的热点”下拉列表中。
 1. 执行下列操作之一：
