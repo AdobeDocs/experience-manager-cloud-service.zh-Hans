@@ -2,9 +2,9 @@
 title: Dynamic Media 图像配置文件
 description: 创建包含USM锐化设置、智能裁剪设置、智能用户档案、智能色板设置（或同时创建两者设置）的Dynamic Media图像用户档案，然后将该图像应用到图像资产的文件夹。
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2754'
 ht-degree: 14%
 
 ---
@@ -195,7 +195,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 另请参 [阅编辑多个图像的智能裁剪或智能色板](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)。
 
-**要编辑单个图像的智能裁剪或智能色板，请执行以下操作**:
+**编辑单个图像的智能裁剪或智能色板**
 
 1. 点按AEM徽标并导航到 **[!UICONTROL 资产]**，然后导航到应用了智能裁剪或智能色板图像用户档案的文件夹。
 
@@ -209,6 +209,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
    * 在图像上，拖动角手柄以调整裁剪或色板的可查看区域的大小。
    * 在图像上，将框／色板拖动到新位置。 您只能编辑图像色板；色板是静态的。
    * 在图像上方，点按 **[!UICONTROL 还原]** ，以撤消所有编辑并恢复原始裁剪或色板。
+   * 使用键盘箭头键裁切帧大小，或重新定位图像，或同时裁切两者。
 
 1. 在页面的右上角附近，点按保 **[!UICONTROL 存]**，然 **[!UICONTROL 后点]** 按关闭，以返回到资产文件夹。
 
@@ -220,7 +221,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 如果需要，您可以重新运行智能裁剪以再次生成其他裁剪。
 
-**要编辑多个图像的智能裁剪或智能色板，请执行以下操作**:
+**编辑多个图像的智能裁剪或智能色板**
 
 1. 点按AEM徽标并导航到 **[!UICONTROL 资产]**，然后导航到应用了智能裁剪或智能色板图像用户档案的文件夹。
 1. 在文件夹中，点按 **[!UICONTROL 更多操作]** (...)图标，然后点按 **[!UICONTROL 智能裁剪]**。
