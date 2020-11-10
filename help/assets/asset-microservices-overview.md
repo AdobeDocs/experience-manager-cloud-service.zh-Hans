@@ -3,10 +3,10 @@ title: 使用资产微服务处理资产
 description: 使用云本机、可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 3%
+source-wordcount: '835'
+ht-degree: 1%
 
 ---
 
@@ -80,6 +80,6 @@ Adobe Experience Manager可以配置为在资产处理完成后自动触发后�
 >* [开始使用资产微服务](asset-microservices-configure-and-use.md)
 >* [支持的文件格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
->* [AEM 桌面应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [关于直接二进制访问的Apache Oak文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
