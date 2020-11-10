@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
+source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 71%
+source-wordcount: '1902'
+ht-degree: 70%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 71%
 
 * 当前，AEM作为Cloud Service作者实例的默认MongoDB大小为32GB。 建议对于大于20GB的区段存储大小，您应提交支持票证以增加MongoDB大小。
 
+* 内容传输工具传输的用户和用户组只是内容满足权限要求的用户和用户组。 提取 *过程* 将整个复制到迁移集中， `/home` 而Ingestion ** 过程将复制迁移内容ACL中引用的所有用户和组。
+
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
 * 在完成内 *容转* 移过程的提取阶段 ********** ，并在开始将内容作为Cloud Service阶段或生产实例引入AEM之前，您需要记录支持以通知Adobe您运行IngestionIngestion，以便Adobe可以确保在引入过程中不发生中断的情况，来确保在引入过程中不发生中断。 您需要在计划的摄取日期前1周记录支持 *票* 证。 一旦您提交了支持票证，支持团队将提供后续步骤的指导。
@@ -49,6 +51,7 @@ ht-degree: 71%
 ## 运行内容传输工具 {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 
 请阅读以下章节，了解如何使用内容传输工具将内容迁移至 AEM as a Cloud Service （创作/发布）：
 
