@@ -2,9 +2,9 @@
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4605'
+source-wordcount: '4620'
 ht-degree: 21%
 
 ---
@@ -135,7 +135,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 
 在最简单的情况下，产品 SKU 是概览 URL 中唯一的变量部分。在这种情况下，SKU值是您向横幅图像添加热点或图像映射时唯一需要的数据。
 
-但是，在复杂的情况下，概览 URL 除了 SKU 之外还有一些不同的可变元素，例如类别 ID、颜色代码、大小代码，等等。在这种情况下，每个元素都是热点或旋转横幅功能中图像映射数据定义中的一个单独变量。
+但是，在复杂的情况下，概览 URL 除了 SKU 之外还有一些不同的可变元素，例如类别 ID、颜色代码、大小代码，等等。在这种情况下，每个元素都是热点或旋转横幅功能中图像映射数据定义中的单独变量。
 
 请考虑以下快速视图URL及其生成的热点或图像映射变量示例：
 
@@ -273,7 +273,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
    * 对于热点：在图像上，点按您希望显示热点的位置。
    * 对于图像映射：在图像上，单击，然后从左上角拖动到右下角以创建图像映射区域。 您可以通过拖动角来调整图像映射的大小。
 
-   如有必要，请将热点或图像映射拖到新位置。 根据需要添加其他热点或图像地图。
+   如有必要，请将热点或图像映射拖到新位置。 或者，使用键盘箭头键控制选定热点的位置。 根据需要添加其他热点或图像地图。
 
    要删除热点或图像映射，请点按&#x200B;**[!UICONTROL 操作]**&#x200B;选项卡。在&#x200B;**[!UICONTROL 映射和热点]**&#x200B;标题下，从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要删除的热点或图像映射的名称。点按菜单旁边的&#x200B;**[!UICONTROL 废纸篓]**&#x200B;图标，然后点按&#x200B;**[!UICONTROL 删除]**。
 
