@@ -2,10 +2,10 @@
 title: Adobe Experience Manager资产作为Cloud Service
 description: 与Adobe Experience Manager6.5相比，AEMCloud ServiceAdobe Experience Manager资产发生了显着变化。
 translation-type: tm+mt
-source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 14%
+source-wordcount: '626'
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 >* Adobe Experience Manager as a Cloud Service[架构](/help/core-concepts/architecture.md)
 >* [对 AEM as a Cloud Service 的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
 >* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
->* [Adobe Experience Manager as a Cloud Service 教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## 资产摄取和上传 {#asset-ingestion}
