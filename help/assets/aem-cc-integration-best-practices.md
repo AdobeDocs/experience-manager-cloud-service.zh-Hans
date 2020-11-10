@@ -4,9 +4,9 @@ description: 最佳实践是与Adobe Creative Cloud整合Experience Manager部�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 18%
 
 ---
@@ -26,7 +26,6 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，帮
 
 ## 创意人员、营销人员和DAM用户的协作需求 {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | 要求 | 用例 | 涉及的表面 |
 |---|---|---|
 | 简化桌面创意人员的体验 | 简化创意专业人士（或更广泛地说，是使用桌面设备、使用本机资源创建应用程序的用户）从DAM(AEM Assets)访问资产的过程。 他们需要一种简单明了的方法来发现、使用（打开）、编辑和保存对AEM的更改，以及上传新文件。 | Win或Mac桌面；Creative Cloud应用程序 |
@@ -38,7 +37,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，帮
 | 相关角色的价值主张 | Adobe产品 | 涉及的表面 |
 |---|---|---|
 | 创意用户从AEM中发现资产、打开并使用资产、编辑更改并上传到AEM，以及将新文件上传到AEM，而无需离开Creative Cloud应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign |
-| 商业用户简化了资产的打开和使用、编辑更改并上传到AEM以及从桌面环境将新文件上传到AEM的过程。 他们使用通用集成在本机桌面应用程序中打开任何资产类型，包括非Adobe类型。 | [AEM 桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM桌面应用程序在Win和Mac桌面上 |
+| 商业用户简化了资产的打开和使用、编辑更改并上传到AEM以及从桌面环境将新文件上传到AEM的过程。 他们使用通用集成在本机桌面应用程序中打开任何资产类型，包括非Adobe类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | AEM桌面应用程序在Win和Mac桌面上 |
 | 营销人员和商业用户从AEM内部发现、预览、许可、保存和管理Adobe Stock资产。 授权和保存的资源提供精选的Adobe Stock元数据以更好地进行管理。 | [Experience Manager和Adobe Stock整合](aem-assets-adobe-stock.md) | AEM web界面 |
 
 本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。其他解决方案，如 [AEM Assets Brand Portal](https://helpx.adobe.com/cn/experience-manager/brand-portal/user-guide.html)，可基于 [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 组件构建的解决方案， [Link Share](share-assets.md)[](/help/assets/manage-digital-assets.md) ，使用AEM Assets Web UI，应根据特定要求审查这些解决方案。
