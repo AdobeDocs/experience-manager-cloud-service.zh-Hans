@@ -2,10 +2,10 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产 [!DNL Adobe Experience Manager] 添加为Cloud Service。
 translation-type: tm+mt
-source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 4%
+source-wordcount: '1312'
+ht-degree: 3%
 
 ---
 
@@ -130,7 +130,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 要上传更多文件，特别是如果这些文件存在于磁盘上的嵌套文件夹层次结构中，可以使用以下方法：
 
 * 使用利用资产上传API的自定义上 [传脚本或工具](developer-reference-material-apis.md#asset-upload-technical)。 此类自定义工具可以根据需要添加对资产的其他处理（例如，翻译元数据或重命名文件）。
-* 使用 [Experience Manager桌面应用](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上传嵌套文件夹层次结构。
+* 使用 [Experience Manager桌面应用](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) ，上传嵌套文件夹层次结构。
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 除了Web浏览器用户界面外，Experience Manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
 
 * [Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) ，可从Adobe Photoshop、Adobe Illustrator [!DNL Experience Manager] 和Adobe InDesign桌面应用程序访问资产。 您可以从这些桌面应用程序内的 [!DNL Experience Manager] 文档资产链接用户界面直接将当前打开的Adobe上传到该界面。
-* [Experience Manager桌面应用](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 程序简化了在桌面上处理资源的工作，它们与文件类型无关，也与处理资源的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
+* [Experience Manager桌面应用](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 程序简化了在桌面上处理资源的工作，它们与文件类型无关，也与处理资源的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
 
 ## 附加处理 {#additional-processing}
 
@@ -171,7 +171,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 桌面应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe资产链接文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 >* [资产上传的技术参考](developer-reference-material-apis.md#asset-upload-technical)
