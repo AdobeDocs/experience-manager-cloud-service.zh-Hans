@@ -3,10 +3,10 @@ title: 将资产、文件夹和收藏集共享为链接
 description: 本文将介绍如何在Experience Manager资产中以超链接的形式共享资产、文件夹和收藏集。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 4%
+source-wordcount: '898'
+ht-degree: 3%
 
 ---
 
@@ -113,7 +113,7 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 营销人员和业务线用户可以使用、
 
-* **AEM桌面应用程序**:该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参 [阅浏览、搜索和预览资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其共享回AEM用户对应的资产，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM桌面应用程序**:该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参 [阅浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其共享回AEM用户对应的资产，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
 * **Adobe资产链接**:创意专业人士可以直接从Adobe InDesign、Adobe Illustrator和Adobe Photoshop搜索和使用资源。
 
@@ -167,7 +167,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 启用桌面操作以与桌面应用程序一起使用 {#desktop-actions}
 
-从浏览器的“资产”用户界面中，您可以浏览资产位置或签出并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参 [阅在AEM web界面中启用桌面操作](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
+从浏览器的“资产”用户界面中，您可以浏览资产位置或签出并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参 [阅在AEM web界面中启用桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 ![使用桌面应用程序时启用桌面操作以用作快捷方式](assets/enable_desktop_actions.png)
 
