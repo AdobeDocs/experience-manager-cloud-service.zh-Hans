@@ -3,9 +3,9 @@ title: 下载资产
 description: 下载资 [!DNL Adobe Experience Manager Assets] 源以启用或禁用下载功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 6%
 
 ---
@@ -26,12 +26,12 @@ ht-degree: 6%
 * [Experience Manager用户界面](#download-in-aem)
 * 资产链接共享用户界面
 * [资产共享共享共享](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## 使用AEM界面下载资源 {#download-in-aem}
 
-异步下载服务为大型资源的无缝下载提供了一个框架。 从用户界面实时下载较小的文件。 大型文件以异步方式下载，并通过收件箱中的Experience Manager通知告知用户完成操作。 请参阅 [了解Experience Manager收件箱](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
+异步下载服务为大型资源的无缝下载提供了一个框架。 从用户界面实时下载较小的文件。 大型文件以异步方式下载，并通过收件箱中的Experience Manager通知告知用户完成操作。 请参阅 [了解Experience Manager收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
 
 ![下载通知](assets/download-notification.png)
 
@@ -86,7 +86,7 @@ ht-degree: 6%
 
 通过 `Asset Download Servlet` 更新调度程序配置以阻止任何资 [!DNL Experience Manager] 产下载请求，可以在Publish实例上禁用该功能。 也可以直接通过OSGi控制台手动禁用servlet。
 
-1. 要通过调度程序配置阻止资产下载请求，请 `dispatcher.any` 编辑配置，并向过滤器部分添加 [新规则](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。
+1. 要通过调度程序配置阻止资产下载请求，请 `dispatcher.any` 编辑配置，并向过滤器部分添加 [新规则](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
