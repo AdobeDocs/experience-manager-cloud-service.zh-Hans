@@ -3,9 +3,9 @@ title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2514'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Experience Manager允许以下级别的处理。
 |---|---|---|
 | [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供了非常基本的再现生成功能。 | <ul> <li>用户界面使 [!DNL Assets] 用的标准缩览图（48、140和319像素） </li> <li> 大预览（Web再现- 1280像素） </li><li> 元数据和文本提取。</li></ul> |
 | [自定义配置](#standard-config) | 由管理员通过用户界面进行配置。 通过扩展默认选项，为生成再现提供更多选项。 扩展现成选项，以提供不同的格式和再现。 | <ul><li>FPO再现。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于已配置的文件类型。 </li> </ul> |
-| [自定义用户档案](#custom-config) | 由管理员通过用户界面配置为通过自定义应用程序使用自定义代码来调用 [Asset compute服务](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
+| [自定义用户档案](#custom-config) | 由管理员通过用户界面配置为通过自定义应用程序使用自定义代码来调用 [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。 支持云本机和可扩展方法中更复杂的要求。 | 请参阅 [允许的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自定义用户档案和用例 {#custom-config}
 
-支 [!DNL Asset Compute Service] 持各种用例，如默认处理、处理特定于Adobe的格式(如Photoshop文件)以及实现自定义或组织特定处理。 过去需要的DAM更新资产工作流自定义可以自动处理，也可以通过处理用户档案配置。 如果这些处理选项不能满足业务需求，Adobe建议开发和使用 [!DNL Asset Compute Service] 扩展默认功能。 有关概述，请参 [阅了解可扩展性以及何时使用](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
+支 [!DNL Asset Compute Service] 持各种用例，如默认处理、处理特定于Adobe的格式(如Photoshop文件)以及实现自定义或组织特定处理。 过去需要的DAM更新资产工作流自定义可以自动处理，也可以通过处理用户档案配置。 如果这些处理选项不能满足业务需求，Adobe建议开发和使用 [!DNL Asset Compute Service] 扩展默认功能。 有关概述，请参 [阅了解可扩展性以及何时使用](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
 
-开发人员可以使用 [!DNL Asset Compute Service] 创建 [符合受支持用例](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 的自定义应用程序。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义应用程序。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
+开发人员可以使用 [!DNL Asset Compute Service] 创建 [符合受支持用例](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 的自定义应用程序。 [!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义应用程序。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
 * 使用 [!DNL Adobe Photoshop]的ImageCutout [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，并将结果另存为再现。
 * 呼叫第三方系统以更新数据，例如PIM系统。
@@ -128,8 +128,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 提供以下信息。
 
    * 每个再现的文件名和支持的文件扩展名。
-   * [Firefly自定义应用程序的端点URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 应用程序必须与Experience Manager帐户来自同一组织。
-   * 添加服务参数， [将额外信息或参数传递到自定义应用程序](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
+   * [Firefly自定义应用程序的端点URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html)。 应用程序必须与Experience Manager帐户来自同一组织。
+   * 添加服务参数， [将额外信息或参数传递到自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)。
    * 包含和排除的MIME类型可将处理限制为若干特定文件格式。
 
    单击&#x200B;**[!UICONTROL 保存]**。
@@ -224,9 +224,9 @@ asset compute服务集成允许Experience Manager使用服务参数字段将这�
 
 >[!MORELIKETHIS]
 >
->* [asset compute服务简介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
->* [了解可扩展性以及何时使用它](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
->* [如何创建自定义应用程序](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
+>* [asset compute服务简介](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。
+>* [了解可扩展性以及何时使用它](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
+>* [如何创建自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。
 >* [支持各种用例的MIME类型](/help/assets/file-format-support.md)。
 
 
