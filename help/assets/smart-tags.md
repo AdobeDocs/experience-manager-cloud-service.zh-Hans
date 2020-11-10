@@ -3,9 +3,9 @@ title: 使用AI生成的标记自动标记图像
 description: 使用人工智能服务标记图像，这些服务使用服务应用上下文和描述性 [!DNL Adobe Sensei] 商业标签。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 6%
 
 ---
@@ -205,7 +205,7 @@ Experience Manager可以自动标记用户上传到DAM的资产。 为此，管�
 
 * 无法识别图像中的细微差异。 比如，修身与普通衬衫。
 * 无法根据图像的微小图案／部分识别标记。 例如，T恤上的徽标。
-* 在支持AEM的语言环境中支持标记。 有关列表语言，请参阅 [智能标记发行说明](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)。
+* Experience Manager支持的语言支持标记。 有关列表语言，请参阅智 [能内容服务发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
 
 要使用智能标记（常规或增强）搜索资产，请使用资产搜索（全文搜索）。 智能标记没有单独的搜索谓词。
 
