@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 
 Dynamic Media支持跨创作用户界面的键盘控制和辅助技术，如JAWS和NVDA屏幕阅读器。
 
+
+
 ## Dynamic Media中的键盘辅助功能支持
 
 在大多数情况下，单个用户界面元素支持的按键显而易见，易于发现。 Dynamic Media中的键盘控制与以下内容相关：
@@ -25,8 +27,8 @@ Dynamic Media支持跨创作用户界面的键盘控制和辅助技术，如JAWS
 使用 `Tab` Tab键顺序将输入焦点提前到下一个用户界面元素；使用 `Shift+Tab` 可将输入焦点重新放回以前的用户界面元素。
 焦点遍历遵循屏幕上的自然用户界面元素位置，并按从左到右、从上到下的顺序移动。
 * 能够使用 `Spacebar` 和 `Enter` 键激活标准用户界面元素，如按钮、下拉列表等。
-* 能够使用一些自定义按键与复杂的UI元素进行交互，如热点编辑器中的箭头键。
 * 能够在活动元素上查看键盘焦点突出显示。 具有输入焦点的用户界面元素可以接收可视焦点指示作为呈现在用户界面元素周围的边框。
+* 能够使用一些自定义按键与复杂的UI元素进行交互，如热点编辑器中的箭头键。 在图像裁剪／智能裁剪编辑器中，您可以使用箭头键裁剪框架大小或重新定位图像，或者同时裁剪两者。
 
 由于Dynamic Media是AEM Assets的插件，因此大多数键盘控制行为与AEM Assets完全相同。 例如，Dynamic Media `Cancel` 中的按钮与AEM Assets中的焦点突出显示相同，并对键的反 `Spacebar` 应与AEM Assets中相同。 请参阅 [资产中的键盘快捷键](/help/assets/accessibility.md#keyboard-shortcuts)。 热点编辑器和图像裁剪／智能裁剪编辑器是例外。
 
