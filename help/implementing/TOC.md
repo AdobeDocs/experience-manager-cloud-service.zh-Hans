@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 64%
+source-wordcount: '425'
+ht-degree: 62%
 
 ---
 
@@ -48,6 +48,11 @@ ht-degree: 64%
    + [页面差异](/help/implementing/developing/introduction/page-diff.md)
    + [编辑器限制](/help/implementing/developing/introduction/editor-limitations.md)
    + [命名约定](/help/implementing/developing/introduction/naming-conventions.md)
++ Developer Tools {#developer-tools}
+   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+   + [内容包Maven插件](/help/implementing/developing/tools/maven-plugin.md)
+   + [AEM Repo工具](/help/implementing/developing/tools/repo-tool.md)
+   + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + 组件和模板 {#components-templates}
    + [组件概述](developing/components/overview.md)
    + [模板](developing/components/templates.md)
