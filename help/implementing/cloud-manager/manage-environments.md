@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '870'
 ht-degree: 7%
 
 ---
@@ -136,4 +136,10 @@ ht-degree: 7%
 ![](assets/environ-dev-console.png)
 
 如果单击环境卡中的“详细信 **息** ”，则 **此选项可用** 。 环境 **页面打** 开，选择环境后，单击……并选 **择开发人** 员控 **制台**。
+
+## 本地登录 {#login-locally}
+
+从 **环境** 卡的下拉菜单中选择本 **地登** 录，以本地登录Adobe Experience Manager
+
+![](assets/environ-login.png)
 
