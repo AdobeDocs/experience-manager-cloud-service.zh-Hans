@@ -2,7 +2,7 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -139,7 +139,7 @@ ht-degree: 6%
 
 ## 本地登录 {#login-locally}
 
-从 **环境** 卡的下拉菜单中选择本 **地登** 录，以本地登录Adobe Experience Manager
+从 **环境** 卡的下拉菜单中选择本 **地登** 录，以本地登录Adobe Experience Manager。
 
 ![](assets/environ-login-locally.png)
 
