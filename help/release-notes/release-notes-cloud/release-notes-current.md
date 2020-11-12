@@ -1,18 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版的发行说明。'
-description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: d8cb22a5597e95bf4c74233b48553bb67bca09cb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '785'
+ht-degree: 4%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 版的发行说明 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
 ## 发布日期 {#release-date}
 
@@ -60,37 +60,25 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * CIF云配置UI为/lib和/apps/中的配置显示“保存并关闭”按钮。 但这些是只读的，因此UI被修复为仅显示“关闭”按钮。
 
+
 ## Cloud Manager {#cloud-manager}
 
-* 环境页面已重新设计。
+### 发布日期 {#release-date-cm}
 
-* 现在，进入休眠状态的环境在 Cloud Manager 中会显示离散状态。
+AEM中Cloud Manager作为Cloud Service2020.11.0的发布日期为2020年11月12日。
 
-* Cloud Manager构建容器现在支持使用Java 8或Java 11编译项目。 Maven工具链系统提供对Java 11的支持。
+### 新增功能 {#what-is-new}
 
-* 每个环境的环境变量数量已增加至 200 个。
+* 现在，用户可 **以从环境卡** 和环境摘要页面上的环境菜单选项中使用新的菜单选项“本地登录”。
 
-* “概述”页面上的环境卡现在最多可列表三个环境。 用户可以选择 **显示全部** 按钮，导航到环境摘要页面以视图具有完整环境列表的表。
-有关更多 [详细信息](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) ，请参阅查看环境。
+* 云管 **理器** 中的“学习”选项卡已通过UI中的新图像刷新。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
-* 在完全环境创建之前，从 Cloud Manager 到开发人员控制台的链接错误地处于活动状态。
-
-* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒项目的环境解除休眠/休眠的选项。
-
-* “非生产管道编辑”页面上的“取消”和“保存”按钮并不总是可见。
-
-* 代码质量控制过程中出现的某些问题可能会导致日志文件无法正确生成。
-
-* 创建新项目时，建议的名称有时会返回与现有项目名称重复的名称。
-
-* 无法始终通过用户界面下载一些大型管道步骤日志文件。
-
-* 验证环境名称时出现差一错误。
-
-* “环境”页有时会显示不存在的 Publish 和 Dispatcher 段。
-
+* 需要下载Maven插件，才能加载执行构建之前完成的依赖项。
+* 现在，从Cloud Manager页脚中选择语言的链接将导航到正确的位置。
+* 有时，在代码扫描过程中，SonarQube进程不会开始。 现在将自动检测并尝试重新启动。
+* 所有现有的生产管道都将通过体验审核步骤自动启用。
 
 ## Adobe Experience Manager as a Cloud Service 基础 {#cloud-service-foundation}
 
