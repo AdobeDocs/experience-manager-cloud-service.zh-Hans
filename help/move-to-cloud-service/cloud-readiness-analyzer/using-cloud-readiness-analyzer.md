@@ -1,100 +1,100 @@
 ---
-title: 使用云就绪分析器
-description: 使用云就绪分析器
+title: 使用最佳实践分析器
+description: 使用最佳实践分析器
 translation-type: tm+mt
-source-git-commit: a1690ec94cf739d1b366f5ef99f3124162f35375
+source-git-commit: ca6ee9c820c67b68c7498f2b0bad8c650b00562e
 workflow-type: tm+mt
-source-wordcount: '2209'
-ht-degree: 70%
+source-wordcount: '2207'
+ht-degree: 47%
 
 ---
 
 
-# 使用云就绪分析器 {#using-cloud-readiness-analyzer}
+# 使用最佳实践分析器 {#using-best-practices-analyzer}
 
-## 使用云就绪分析器的重要注意事项 {#imp-considerations}
+## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
-请参阅以下部分，了解运行云就绪分析器 (CRA) 的重要注意事项：
+请按照以下部分了解运行最佳实践分析器(BPA)的重要注意事项：
 
-* CRA 报告是使用 Adobe Experience Manager (AEM) [模式检测器](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/upgrading/pattern-detector.html)的输出生成的。CRA 使用的模式检测器版本包含在 CRA 安装包中。
+* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA使用的图案检测器版本包含在BPA安装包中。
 
-* CRA 只能由&#x200B;**管理员**&#x200B;用户或&#x200B;**管理员**&#x200B;组中的用户运行。
+* BPA may only be run by the **admin** user or a user in the **administrators** group.
 
-* 版本 6.1 及更高版本的 AEM 实例支持 CRA。
-
-   >[!NOTE]
-   > 有关在 AEM 6.1 上安装 CRA 的特殊要求，请参阅[在 AEM 6.1 上安装](#installing-on-aem61)。
-
-* CRA 可以在任何环境中运行，但最好在“暂存”**&#x200B;环境中运行它。
+* BPA在版本6.1及更高版本的AEM实例上受支持。
 
    >[!NOTE]
-   >为避免对业务关键型实例产生影响，建议您在自定义、配置、内容和用户应用程序方面尽可能接近“生产”**&#x200B;环境的“创作”**&#x200B;环境中运行 CRA。或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
+   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
 
-* 生成 CRA 报告内容可能需要相当长的时间，从几分钟到几小时不等。具体所需的时间长短很大程度上取决于 AEM 存储库内容的大小和性质、AEM 版本以及其他因素。
+* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+
+   >[!NOTE]
+   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
+
+* 生成BPA报告内容可能需要花费大量时间，从几分钟到几小时。 具体所需的时间长短很大程度上取决于 AEM 存储库内容的大小和性质、AEM 版本以及其他因素。
 
 * 由于生成报告内容可能需要花费大量时间，这些内容将由后台进程生成并保存在缓存中。查看和下载报告的速度应该相对较快，因为该操作会利用内容缓存，直到报告过期或报告被明确刷新为止。在生成报告内容的过程中，您可以关闭浏览器选项卡，稍后在内容保存到缓存中后，再返回查看报告。
 
 ## 可用性 {#availability}
 
-可以从软件分发门户以 zip 文件的形式下载云就绪分析器。您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。
+最佳实践分析器可以从软件分发门户下载为zip文件。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。
 
 >[!NOTE]
->从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载云就绪分析器。
+>Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
-## 查看云就绪分析器报告 {#viewing-report}
+## 查看最佳实践分析器报告 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 和更高版本 {#aem-later-versions}
 
-请参阅此部分，了解如何查看云就绪分析器报告：
+请按照本节学习如何视图最佳实践分析器报告：
 
-1. 选择 Adobe Experience Manager 并导航到“工具”-> **操作** -> **云就绪分析器**。
+1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic1.png)
 
-1. 单击“ **生成报告** ”以执行云就绪性分析器。
+1. 单击“ **生成报告** ”以执行最佳实践分析器。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic2.png)
 
-1. 当CRA生成报告时，您可以在屏幕上看到该工具取得的进展。 它显示分析的项目数，还显示找到的查找结果数。
+1. 当BPA生成报表时，您可以在屏幕上看到该工具取得的进展。 它显示分析的项目数，还显示找到的查找结果数。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic3.png)
 
 
-1. 生成CRA报告后，它会以表格形式显示摘要和结果数，按查找类型和重要性级别进行组织。 要获取有关特定查找结果的更多详细信息，您可以单击表中与查找结果类型对应的编号。
+1. 生成BPA报告后，它以表格格式显示摘要和结果数，其格式按查找类型和重要性级别进行组织。 要获取有关特定查找结果的更多详细信息，您可以单击表中与查找结果类型对应的编号。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic4.png)
 
    上述操作将自动滚动到报告中该查找结果的位置。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >您可以通过单击&#x200B;**刷新报告**，强制 CRA 清除其缓存并重新生成报告。
+   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
    >在重新生成报表时，它按完成百分比显示进度，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+   ![图像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic8.png)
 
 
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
 
-云就绪分析器工具在 Adobe Experience Manager 6.2 中仅限于生成和下载 CSV 报告的链接。
+在Adobe Experience Manager6.2中，最佳实践分析器工具仅限于生成和下载CSV报告的链接。
 
 在 Adobe Experience Manager 6.1 中，该工具无法正常运行，只能使用 HTTP 接口。
 
 >[!NOTE]
 >在所有版本中，包含的模式检测器可以独立运行。
 
-## 解释云就绪分析器报告 {#cra-report}
+## 解释最佳实践分析器报告 {#cra-report}
 
-在 AEM 实例中运行云就绪分析器工具后，报告将作为结果显示在工具窗口中。
+在AEM实例中运行最佳实践分析器工具时，报告将作为结果显示在工具窗口中。
 
 报告的格式为：
 
@@ -103,13 +103,13 @@ ht-degree: 70%
    * **过期时间**：报告内容缓存过期的时间。
    * **生成时间段**：报告内容生成过程所花费的时间。
    * **发现结果计数**：报告中包含的发现结果总数。
-* **系统概述**：关于运行 CRA 的 AEM 系统的信息。
+* **系统概述**:关于运行BPA的AEM系统的信息。
 * **发现结果类别**：多个部分，每个部分提供同一类别的一个或多个发现结果。每个部分包括：类别名称、子类型、发现结果计数和重要性、摘要、指向类别文档的链接以及单个发现结果信息。
 
 每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。
 
 >[!NOTE]
->要进一步了解每个“查找”类别，请参 [阅“图案检测器”类别](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)。
+>要进一步了解每个“查找”类别，请参 [阅“图案检测器”类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
 
 请参阅下表，了解重要性级别：
 
@@ -121,9 +121,9 @@ ht-degree: 70%
 | 关键 | 此发现结果极有可能是一个必须解决的升级问题，以防止功能或性能丢失。 |
 
 
-## 解释云就绪分析器 CSV 报告 {#cra-csv-report}
+## 解释最佳实践分析器CSV报告 {#cra-csv-report}
 
-当您从 AEM 实例单击 **CSV** 选项时，将从内容缓存生成 CSV 格式的云就绪分析器报告，并将该报告返回到您的浏览器。根据您的浏览器设置，此报告将自动下载为默认名称为 `results.csv` 的文件。
+When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. 根据您的浏览器设置，此报告将自动下载为默认名称为 `results.csv` 的文件。
 
 如果缓存已过期，则将重新生成报告，然后再生成并下载 CSV 文件。
 
@@ -145,12 +145,12 @@ CSV 格式的报告包含以下列：
 
 ## HTTP 接口 {#http-interface}
 
-CRA 提供了 HTTP 接口，可用作 AEM 中的用户界面的替代方式。该接口支持 HEAD 和 GET 命令。它可用于生成 CRA 报告，并以三种格式（JSON、CSV 和制表符分隔值 (TSV)）之一返回报告。
+BPA提供HTTP接口，可用作AEM中用户界面的替代。 该接口支持 HEAD 和 GET 命令。它可用于生成BPA报表并以三种格式之一返回它：JSON、CSV和制表符分隔值(TSV)。
 
-以下 URL 可用于 HTTP 访问，其中 `<host>` 是安装 CRA 的服务器的主机名和端口（如果需要）：
-* `http://<host>/apps/readiness-analyzer/analysis/result.json`（对于 JSON 格式）
-* `http://<host>/apps/readiness-analyzer/analysis/result.csv`（对于 CSV 格式）
-* `http://<host>/apps/readiness-analyzer/analysis/result.tsv`（对于 TSV 格式）
+The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+* `http://<host>/apps/best-practices-analyzer/analysis/report.json`（对于 JSON 格式）
+* `http://<host>/apps/best-practices-analyzer/analysis/report.csv`（对于 CSV 格式）
+* `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`（对于 TSV 格式）
 
 ### 执行 HTTP 请求 {#executing-http-request}
 
@@ -161,7 +161,7 @@ HTTP 接口可用于多种方法。
 您还可以使用命令行工具，如 `curl` 或 `wget`，以及任何 HTTP 客户端应用程序。如果不将浏览器选项卡用于经过身份验证的会话，则必须在注释中提供管理用户名和密码。
 
 以下是如何实现此操作的示例：
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`。
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`。
 
 ### 标头和参数 {#http-headers-and-parameters}
 
@@ -182,9 +182,9 @@ HTTP 接口可用于多种方法。
 当同时存在 HTTP 标头和相应的查询参数时，将优先采用查询参数。
 
 通过 HTTP 接口开始生成报告的简单方法是使用以下命令：
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`。
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`。
 
-发出请求后，客户端无需保持活动状态即可生成报告。报表生成可以由一个客户端使用HTTPGET请求启动，生成报表后，可以使用另一个客户端或AEM用户界面中的CRA工具从缓存中查看。
+发出请求后，客户端无需保持活动状态即可生成报告。报表生成可以由一个客户端使用HTTPGET请求启动，生成报表后，可使用另一个客户端或AEM用户界面中的BPA工具从缓存中查看。
 
 ### 响应 {#http-responses}
 
@@ -201,19 +201,19 @@ HTTP 接口可用于多种方法。
 
 ### 缓存生命周期调整 {#cache-adjustment}
 
-默认的 CRA 缓存生命周期为 24 小时。在 AEM 实例和 HTTP 接口中都有用于刷新报告和重新生成缓存的选项，此默认值可能适用于 CRA 的大多数使用情况。如果 AEM 实例的报告生成时间特别长，您可能希望调整缓存生命周期以最大限度地减少报告的重新生成。
+默认的BPA缓存生命周期为24小时。 在AEM实例和HTTP接口中，使用刷新报告并重新生成缓存的选项，此默认值可能适用于大多数BPA的使用。 如果 AEM 实例的报告生成时间特别长，您可能希望调整缓存生命周期以最大限度地减少报告的重新生成。
 
 缓存生命周期值作为 `maxCacheAge` 属性存储在以下存储库节点上：
-`/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
+`/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 此属性的值便是缓存生命周期（以秒为单位）。管理员可以使用 CRX/DE Lite 调整缓存生命周期。
 
 ### 在 AEM 6.1 上安装 {#installing-on-aem61}
 
-CRA 利用名为 `repository-reader-service` 的系统服务用户帐户来执行模式检测器。此帐户在 AEM 6.2 和更高版本上可用。在 AEM 6.1 上安装 CRA *之前*，必须先通过执行以下步骤来创建此帐户：
+BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. 此帐户在 AEM 6.2 和更高版本上可用。On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
 
 1. 按照[创建新服务用户](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的说明创建用户。将用户 ID 设置为 `repository-reader-service`，并将“中间路径”留空，然后单击绿色复选标记。
 
 2. 按照[管理用户和组](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的说明（特别是有关将用户添加到组的说明），将 `repository-reader-service` 用户添加到 `administrators` 组。
 
-3. 通过包管理器在源 AEM 实例上安装 CRA 包。（这将为 `repository-reader-service` 系统服务用户的 ServiceUserMapper 配置添加必要的配置修正。）
+3. 在源AEM实例上通过包管理器安装BPA包。 （这将为 `repository-reader-service` 系统服务用户的 ServiceUserMapper 配置添加必要的配置修正。）
