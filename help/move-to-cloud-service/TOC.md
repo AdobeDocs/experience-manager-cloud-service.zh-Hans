@@ -4,10 +4,10 @@ user-guide-title: 移动到 AEM as a Cloud Service
 breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 95%
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 95%
    + [执行](/help/move-to-cloud-service/execution.md)
    + [上线后](/help/move-to-cloud-service/post-go-live.md)
 + 云过渡工具{#cloud-migration}
-   + 云就绪分析器 {#cloud-readiness-analyzer}
-      + [概述](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [使用云就绪分析器](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+   + 最佳实践分析器 {#best-practices-analyzer}
+      + [概述](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [使用最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 内容传输工具 {#content-transfer-tool}
       + [概述](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
