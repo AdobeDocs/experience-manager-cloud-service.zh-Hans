@@ -2,10 +2,10 @@
 title: 规划阶段
 description: 规划阶段
 translation-type: tm+mt
-source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 91%
+source-wordcount: '420'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 您需要根据显著更改和已弃用功能对当前 AEM 源代码进行全面评估，以确定过渡历程中预期的工作量。
 
-通过在您当前的AEM版本上运行云就绪性分析器(CRA)，您可以加快评估步骤。 有关详细信息，请参 [阅CRA概述](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html)。
+您可以通过在当前AEM版本上运行最佳实践分析器来加速评估步骤。 有关详细信息，请参阅 [最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
 
 >[!NOTE]
 >如果您已经有权访问 Cloud Manager 和云服务环境，则建议在 Cloud Manager 代码质量管道中运行当前代码，以评估与云服务兼容所需的代码更改。
