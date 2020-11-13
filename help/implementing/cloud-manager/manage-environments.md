@@ -2,7 +2,7 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -86,13 +86,13 @@ ht-degree: 6%
 
 开发环境的更新由项目的用户管理。 当环境未运行最新的公开发行的AEM版本时，主屏幕上的环境卡状态将显示“可 **用更新”**。
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 更 **新** 选项可从环境 **卡中获** 得。
 如果单击环境卡中的“详细信 **息** ”，则 **此选项可用** 。 环境 **页面** 将打开，选择开发环境后，单击 **...并选择** 更新 ****，如下图所示：
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 选择此选项将允许部署管理器将与此环境关联的管道更新到最新版本，然后执行该管道。
 
@@ -108,7 +108,7 @@ ht-degree: 6%
 
 如果单击环境卡中的“详细信息” **** ，则也可 **以使用** 删除选项。 环境 **页面** 将打开，选择开发环境后，单击 **...并选** 择删 **除**，如下图所示：
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -121,7 +121,7 @@ ht-degree: 6%
 
 请参阅 [管理对作者实例的访问](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) ，了解更多。
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## 访问开发人员控制台 {#accessing-developer-console}
@@ -133,7 +133,7 @@ ht-degree: 6%
 有关更 [多详细信息，请参阅“冬眠”和“脱冬](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) ”沙箱环境。
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 如果单击环境卡中的“详细信 **息** ”，则 **此选项可用** 。 环境 **页面打** 开，选择环境后，单击……并选 **择开发人** 员控 **制台**。
 
