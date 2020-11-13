@@ -2,7 +2,7 @@
 title: 管理日志-Cloud Service
 description: 管理日志-Cloud Service
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -28,7 +28,7 @@ ht-degree: 17%
 ![](assets/download-logs2.png)
 
 
-## 通过API进行日志 {#logs-thorugh-api}
+## 通过API进行日志 {#logs-through-api}
 
 除了通过UI下载日志外，日志还可通过API和命令行界面使用。
 
