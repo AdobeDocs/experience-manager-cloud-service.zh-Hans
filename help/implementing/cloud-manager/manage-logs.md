@@ -2,7 +2,7 @@
 title: 管理日志-Cloud Service
 description: 管理日志-Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -14,9 +14,9 @@ ht-degree: 17%
 
 用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定环境的可用日志文件列表。
 
-这些文件可通过UI下载，也可以从概述 **页面** 。
+这些文件可通过UI下载，可从“概述” **页面** :
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 或者，环境 **页面** :
 
@@ -25,7 +25,7 @@ ht-degree: 17%
 >[!NOTE]
 >无论打开位置如何，都会显示相同的对话框，允许下载单个日志文件。
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## 通过API进行日志 {#logs-thorugh-api}
