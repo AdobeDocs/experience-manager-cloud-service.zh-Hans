@@ -3,7 +3,7 @@ title: 使用AI生成的标记自动标记图像
 description: 使用人工智能服务标记图像，这些服务使用服务应用上下文和描述性 [!DNL Adobe Sensei] 商业标签。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 6%
@@ -154,7 +154,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 1. 单击 **[!UICONTROL 开始]**。 该工作流会对资产应用您的标记。 导航到资产文件夹并检查标记，以验证您的资产是否已正确标记。 有关详细信息，请参 [阅管理智能标记](#manage-smart-tags-and-searches)。
 
 >[!NOTE]
-
+>
 >在随后的标记周期中，只有修改后的资产会再次使用经过新培训的标记进行标记。但是，如果标记工作流的上一个标记周期与当前标记周期之间的间隔超过24小时，即使资产未更改也会进行标记。 对于定期标记工作流，当时间间隔超过6个月时，将标记未更改的资产。
 
 ### 标记已上传的资产 {#tag-uploaded-assets}
