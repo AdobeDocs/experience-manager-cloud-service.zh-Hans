@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 translation-type: tm+mt
-source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
+source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1479'
 ht-degree: 1%
 
 ---
@@ -32,21 +32,21 @@ ht-degree: 1%
    </LocationMatch>
    ```
 
-在设置全局高速缓存控制标头或与宽正则表达式匹配的标头时，请务必小心，这样它们不会应用于您可能希望保持私有的内容。 考虑使用多个指令来确保以细粒度方式应用规则。 如果AEM检测到缓存头已应用到调度程序检测到的无法使用的内容，则作为Cloud Service将删除缓存头，如调度程序文档中所述。 为了强制AEM始终应用缓存，可以添加“always”选项，如下所示：
+   在设置全局高速缓存控制标头或与宽正则表达式匹配的标头时，请务必小心，这样它们不会应用于您可能希望保持私有的内容。 考虑使用多个指令来确保以细粒度方式应用规则。 如果AEM检测到缓存头已应用到调度程序检测到的无法使用的内容，则作为Cloud Service将删除缓存头，如调度程序文档中所述。 为了强制AEM始终应用缓存，可以添加“always”选项，如下所示：
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
-必须确保文件下 `src/conf.dispatcher.d/cache` 有以下规则（默认配置中）:
+   必须确保文件下 `src/conf.dispatcher.d/cache` 有以下规则（默认配置中）:
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
 * 要防止对特定内容进行缓存，请将Cache-Control头设置为 *private*。 例如，以下操作会阻止缓存名为myfolder的目 **录下** 的html内容：
 
@@ -76,19 +76,19 @@ ht-degree: 1%
       </LocationMatch>
    ```
 
-请参阅上面html/text部分中的讨论，以注意不要过于广泛地缓存，以及如何强制AEM始终使用“always”选项应用缓存。
+   请参阅上面html/text部分中的讨论，以注意不要过于广泛地缓存，以及如何强制AEM始终使用“always”选项应用缓存。
 
-必须确保src/conf.dispatcher.d/cache下的文件具有以下规则（默认配置中）:
+   必须确保缓存下的文 `src/conf.dispatcher.d/`件具有以下规则（默认配置中）:
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
-确保要保持私有而非缓存的资源不是LocationMatch指令过滤器的一部分。
+   确保要保持私有而非缓存的资源不是LocationMatch指令过滤器的一部分。
 
->[!NOTE]
->其他方法(包括调 [度程序tl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
+   >[!NOTE]
+   >其他方法(包括调 [度程序tl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
 
 ### 节点存储中的其他内容文件类型 {#other-content}
 
