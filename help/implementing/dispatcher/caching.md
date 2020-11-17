@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 translation-type: tm+mt
-source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
+source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1481'
 ht-degree: 1%
 
 ---
@@ -25,12 +25,12 @@ ht-degree: 1%
 * 通过在将AEM用作Cloud ServiceSDK调度程序工具中定 `EXPIRATION_TIME` 义变量 `global.vars` 来覆盖所有HTML/Text内容。
 * 可以由以下apache mod_headers指令在更细的粒度级别上覆盖：
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
 在设置全局高速缓存控制标头或与宽正则表达式匹配的标头时，请务必小心，这样它们不会应用于您可能希望保持私有的内容。 考虑使用多个指令来确保以细粒度方式应用规则。 如果AEM检测到缓存头已应用到调度程序检测到的无法使用的内容，则作为Cloud Service将删除缓存头，如调度程序文档中所述。 为了强制AEM始终应用缓存，可以添加“always”选项，如下所示：
 
@@ -48,15 +48,16 @@ ht-degree: 1%
 { /glob "*" /type "allow" }
 ```
 
-* 要阻止对特定内容进行缓存，请将Cache-Control头设置为“private”。 例如，以下操作将阻止缓存名为“myfolder”的目录下的html内容：
+* 要防止对特定内容进行缓存，请将Cache-Control头设置为 *private*。 例如，以下操作会阻止缓存名为myfolder的目 **录下** 的html内容：
 
-```
-<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
-```
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+   ```
 
-* 请注意，其他方法(包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
+   >[!NOTE]
+   >其他方法(包括调 [度程序tl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
 
 ### 客户端库(js,css) {#client-side-libraries}
 
@@ -68,12 +69,12 @@ ht-degree: 1%
 * 默认情况下，未缓存
 * 可以通过以下apache指令在更细的粒度级别 `mod_headers` 上设置：
 
-```
-<LocationMatch "^\.*.(jpeg|jpg)$">
-    Header set Cache-Control "max-age=222"
-    Header set Age 0
-</LocationMatch>
-```
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
+   ```
 
 请参阅上面html/text部分中的讨论，以注意不要过于广泛地缓存，以及如何强制AEM始终使用“always”选项应用缓存。
 
@@ -86,7 +87,8 @@ ht-degree: 1%
 
 确保要保持私有而非缓存的资源不是LocationMatch指令过滤器的一部分。
 
-* 请注意，其他方法(包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
+>[!NOTE]
+>其他方法(包括调 [度程序tl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
 
 ### 节点存储中的其他内容文件类型 {#other-content}
 
