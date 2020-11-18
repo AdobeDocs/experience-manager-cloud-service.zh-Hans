@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: AEM作为Cloud Service软件开发工具包的概述
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1181'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,17 @@ AEM作为Cloud ServiceSDK由以下对象组成：
 
 * **6.5已弃用的Java** API Jar —— 自AEM 6.5以来已删除的另一组接口
 * **6.5已弃用的Javadoc** Jar —— 用于附加的接口集的Javadoc
+
+## 为SDK构建 {#building-for-the-sdk}
+
+AEM作为Cloud ServiceSDK用于构建和部署自定义代码。 有关更多详细信息，请参 [阅AEM Project Archetype文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)。 在高级别上，将执行以下步骤：
+
+* **编译代码**。 如预期，将编译源代码，生成生成内容包
+* **生成伪像**。 在此过程中会生成工件
+* **分析捆绑**。 使用Maven Analyzer插件分析捆绑包，它查找Maven项目中的问题，如缺少依赖项
+* **部署对象**。 对象将部署到本地服务器。
+
+部署到云环境时，Cloud Manager会执行相同的步骤。 在本地执行构建允许进行本地开发和测试，这样开发人员可以在承诺进行源代码控制和触发Cloud Manager部署之前，很早就高效地发现代码或结构问题，这可能需要更长的时间。
 
 ## 将AEM作为Cloud ServiceSDK访问 {#accessing-the-aem-as-a-cloud-service-sdk}
 
