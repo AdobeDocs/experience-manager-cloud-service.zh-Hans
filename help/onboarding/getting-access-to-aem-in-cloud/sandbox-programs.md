@@ -2,9 +2,9 @@
 title: 沙箱项目-Cloud Service
 description: 沙箱项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1184'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 沙箱项目包括站点和资产，并自动填充Git存储库、开发环境和非生产渠道。  Git存储库会填充基于AEM Project原型的示例项目。
 
-请参阅了 [解项目和项目类型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) ，进一步了解项目类型。
+请参阅了 [解项目和项目类型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) ，进一步了解项目类型。
 
 ### 沙箱项目的属性 {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 项目创建向导允许您创建沙箱项目。
 
-要了解如何创建沙箱项目，请参阅创 [建沙箱项目以获取更](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) 多详细信息。
+要了解如何创建沙箱项目，请参阅创 [建沙箱项目以获取更](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) 多详细信息。
 
 ### 创建沙箱环境 {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 当用户准备好设置生产管道时，可以手动将生产级环境集添加到沙箱项目。
 
-要了解如何手动创建环境，请参阅添 [加环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) ，了解详细信息。
+要了解如何手动创建环境，请参阅添 [加环境](/help/implementing/cloud-manager/manage-environments.md) ，了解详细信息。
 
 ### 删除沙箱环境 {#deleting-sandbox-environments}
 
 具有必要权限的用户可以删除开发或生产／阶段环境或集。
 
-要删除环境，请参阅删 [除环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) ，了解详细信息。
+要删除环境，请参阅删 [除环境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) ，了解详细信息。
 
 
 ## 冬眠和冬眠沙箱环境 {#hibernating-introduction}
@@ -93,7 +93,7 @@ ht-degree: 0%
 请按照以下步骤手动为沙箱项目环境休眠：
 
 1. 导航到开发 **人员控制台**。
-请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
+请参阅访 [问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
    >[!IMPORTANT]
    >直接从云管 **理器链接到** “开发人员控制台”时，您不能选择让沙箱环境休眠。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 ### 解除休眠 {#de-hibernation-introduction}
 
 1. 导航到开发 **人员控制台**。
-请参阅访 [问开发人员控制台](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
+请参阅访 [问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) ，了解如何从 **环境卡访** 问开发人 **员控制** 台。
 
    >[!IMPORTANT]
    >直接从云管 **理器链接到** “开发人员控制台”时，您不能选择解除沙箱项目环境的休眠。 解决方法是在“开发人员控制台”上添加以下模式，在url 1234的末尾添加 `#release-cm-p1234-e5678 where 1234` 以下模式：您的 *项目ID* ,5678是您 *的环境ID*。
@@ -157,8 +157,6 @@ ht-degree: 0%
 
 任何拥有产品用户档案的用户都应能作为Cloud Service访问AEM，从而访 **问开发者控制台**，允许他们解除环境的休眠。
 
-有关设置 [用户权限的信息，请参](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 阅云管理器中的添加用户和角色。
-
 #### 访问休眠环境 {#accessing-hibernated-environment}
 
 当针对休眠环境的作者层或发布层发出任何浏览器请求时，用户将遇到一个描述该环境的休眠状态的登陆页，如下图所示：
@@ -178,11 +176,11 @@ ht-degree: 0%
 
 ## AEM沙箱环境更新 {#aem-updates-sandbox}
 
-有关更多 [详细信息](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) ，请参阅AEM版本更新。
+有关更多 [详细信息](/help/implementing/deploying/overview.md#version-updates) ，请参阅AEM版本更新。
 
 用户可以在沙箱项目中手动将AEM更新应用到环境。
 
-请参阅 [更新环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) ，了解如何更新环境。
+请参阅 [更新环境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) ，了解如何更新环境。
 
 >[!NOTE]
 >* 手动更新只能在目标环境具有正确配置的管道时运行。
