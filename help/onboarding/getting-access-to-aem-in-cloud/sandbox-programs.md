@@ -2,7 +2,7 @@
 title: 沙箱项目-Cloud Service
 description: 沙箱项目-Cloud Service
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## AEM沙箱环境更新 {#aem-updates-sandbox}
 
-有关更多 [详细信息](/help/implementing/deploying/overview.md#version-updates) ，请参阅AEM版本更新。
+有关更多 [详细信息](/help/implementing/deploying/aem-version-updates.md) ，请参阅AEM版本更新。
 
 用户可以在沙箱项目中手动将AEM更新应用到环境。
 
