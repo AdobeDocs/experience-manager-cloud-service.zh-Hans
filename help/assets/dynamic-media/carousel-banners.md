@@ -2,7 +2,7 @@
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 21%
@@ -254,8 +254,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 >[!NOTE]
 >
 >当您在交互式图像或传送横幅 [中向图像](/help/assets/dynamic-media/interactive-images.md) 添加热点时，热点信息会存储在相同的元数据位置——相对于图像的位置和控制板，而不管该位置是交互式图像还是传送横幅。 此功能意味着您可以在任一查看器中轻松重复使用同一图像及其定义的热点数据。
-
->但是，请注意，传送横幅支持图像上的图像地图，这些图像上也可能包含热点；交互式图像则不会。 如果要创建使用同一图像的交互式图像或传送横幅，请牢记这一点。 您可能希望改为使用同一图像的单独副本创建交互式图像和传送横幅。
+但是，请注意，传送横幅支持图像上的图像地图，这些图像上也可能包含热点；交互式图像则不会。 如果要创建使用同一图像的交互式图像或传送横幅，请牢记这一点。 您可能希望改为使用同一图像的单独副本创建交互式图像和传送横幅。
 
 >[!NOTE]
 如果您正在使用热点编辑交互式图像并裁剪图像，则您的热点将被删除。
