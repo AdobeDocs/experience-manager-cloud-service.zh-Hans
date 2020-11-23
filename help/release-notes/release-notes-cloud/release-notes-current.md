@@ -2,9 +2,9 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4bce4fceab08a95fc2c1c8334f84fd54204228ba
+source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * **[!DNL Adobe Asset Link]2.1版**:有新版本的 [Adobe资产](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)[!DNL Adobe Photoshop]链接扩展， [!DNL Adobe Illustrator]并提 [!DNL Adobe InDesign] 供了该扩展。 它增加了与2020年10月发 [!DNL Adobe Creative Cloud] 布的2021版最新应用程序的兼容性。
 
-* **[!DNL Assets]WebP文件支持**: [!DNL Assets] 作为Cloud Service，现在支持WebP图像格式。 WebP是由谷歌创建的一种新兴的图像格式。 WebP文件格式的图像在视觉上与JPG或PNG文件无明显区别，并且文件要小得多。 降低资产的文件大小可缩短页面加载时间，并帮助内容创建者交付更快的Web体验。 请参 [阅创建标准处理用户档案](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)。
+* **[!DNL Assets]WebP文件支持**: [!DNL Assets] 作为Cloud Service，现在支持创建WebP图像格式的再现。 WebP是由谷歌创建的一种新兴的图像格式。 WebP文件格式的图像在视觉上与JPG或PNG文件无明显区别，并且文件要小得多。 降低资产的文件大小可缩短页面加载时间，并帮助内容创建者交付更快的Web体验。 请参 [阅创建标准处理用户档案](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
