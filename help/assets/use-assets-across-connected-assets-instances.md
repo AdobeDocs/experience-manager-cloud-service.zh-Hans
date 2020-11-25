@@ -3,9 +3,9 @@ title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程部署中可 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
+source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2244'
 ht-degree: 41%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 41%
 
 ## 连接的资产概述 {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. 管理员创建部署的一次性集成，其 [!DNL Sites] 他（远程）部署为 [!DNL Assets]。
+在页面编辑器 [!UICONTROL 中将页面编辑] (作为目标目标)时，作者可以从充当资产源的不同部署中无缝地 [!DNL Assets] 搜索、浏览和嵌入资产。 管理员创建具有功能的部署与具有功能的 [!DNL Experience Manager] 其 [!DNL Sites] 他部署的一次性 [!DNL Experience Manager] 集成 [!DNL Assets] 。
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. 该功能可支持一次无缝搜索和使用多个远程资产。To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
 
@@ -154,7 +154,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). 此外，还可通过[!UICONTROL 内容查找器]，搜索和查看本地存储库中的资产。
+>在网页中使用后，获取的远程资源便可以被具有访问本地文件夹权限的用户搜索和使用。 获取的资源存储在本地文件夹`connectedassets` 中（位于上面的遍历中）。 此外，还可通过[!UICONTROL 内容查找器]，搜索和查看本地存储库中的资产。
 
 获取的资产可用作任何其他本地资产，但关联的元数据无法编辑。
 
