@@ -1,25 +1,25 @@
 ---
 title: 支持的文件格式和MIME类型
-description: Experience Manager资产作为Cloud Service支持的文件格式和MIME类型。
+description: 作为Cloud Service支持的文件 [!DNL Experience Manager Assets] 格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
+source-git-commit: bafcf005a2264b96caa3d59c478aa57fb38b2a4c
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 34%
+source-wordcount: '785'
+ht-degree: 35%
 
 ---
 
 
-# Assets supported file formats {#supported-file-formats}
+# [!DNL Assets] 支持的文件格式 {#supported-file-formats}
 
-Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基本内容管理功能-存储、在线管理元数据、版本控制、上传和下载等，而不受其格式的限制。 Adobe Experience Manager资产支持各种文件格式，每种产品功能都支持不同格式。
+[!DNL Adobe Experience Manager] 作为Cloud Service，它支持任何二进制文件的基本内容管理功能-存储、在线管理元数据、版本控制、上传和下载等，而与其格式无关。 [!DNL Adobe Experience Manager Assets] 支持各种文件格式，每种产品功能都支持不同格式。
 
-此外，Experience Manager资产还提供扩展支持，用于生成预览和演绎版以及提取元数据和文本以进行全文索引。 此扩展支持是使用资产微 [型服务提供的](asset-microservices-configure-and-use.md)。
+此外，还提 [!DNL Experience Manager Assets] 供扩展支持，以生成预览和演绎版并提取元数据和文本以进行全文索引。 此扩展支持是使用资产微 [型服务提供的](asset-microservices-configure-and-use.md)。
 
 使用资产微型服务进行资产转换的亮点包括：
 
-* 由Adobe [应用程序和服务](#adobe-formats) (包括Adobe Photoshop、Adobe InDesign、Adobe Illustrator、Adobe XD、Adobe Dimension和Adobe Acrobat或PDF)生成的主要Adobe文件格式。
+* 由Adobe [应用程序和服务](#adobe-formats) (包括、、、、和AdobePDF)生成的关 [!DNL Adobe Photoshop]键文 [!DNL Adobe InDesign]件格式，包括、、、 [!DNL Adobe Illustrator]、 [!DNL Adobe XD][!DNL Adobe Dimension][!DNL Adobe Acrobat] 和或PDF。
 * 关键 [成像文件格式](#image-formats)。
 * [Camera Raw的文件格式](#camera-raw-formats) ，适用于各种相机，包括Canon、Nikon、Fujifilm、Olympus和其他制造商(由Adobe Camera Raw提供支持)。
 * 常见 [文档格式](#document-formats)，包括Microsoft Office和Open文档格式。
@@ -39,7 +39,7 @@ Adobe Experience Manager作为Cloud Service，支持任何二进制文件的基�
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
-| DN | ✓ |  | ✓ | ✓ |
+| DN | ✓ | - | ✓ | ✓ |
 | 创意 | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -94,12 +94,12 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 
 | 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | 动态媒体投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## [!DNL Camera RAW] 格式 {#camera-raw-formats}
 
@@ -174,7 +174,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 | 3G2 | - | ✓ | - |
 | 3GP | - | ✓ | - |
 | AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ |  | ✓ |
+| DIVX | ✓ | - | ✓ |
 | F4V | ✓ | ✓ | ✓ |
 | FLV | ✓ | ✓ | ✓ |
 | M2T | ✓ | - | ✓ |
@@ -197,27 +197,27 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 ## 用于转码的 [!DNL Dynamic Media] 视频格式 {#video-dynamic-media-transcoding}
 
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
-|------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| MP4 | MPEG-4 | H264/AVC（所有配置文件） |  |
+|------------------------|--------------------|--------|-------|
+| MP4 | MPEG-4 | H264/AVC（所有配置文件） | - |
 | MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
 | FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
 | WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen (MSS2)、Microsoft Photo Story (WVP2) |
-| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC |  |
+| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
+| M4V | Apple iTunes | H264/AVC | - |
 | AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
-| WebM | WebM | Google VP8 |  |
-| OGV, OGG | Ogg | Theora、VP3、Dirac |  |
-| MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC |  |
-| MKV | Matroska | H264/AVC |  |
-| R3D, RM | Red Raw Video | MJPEG 2000 |  |
+| WebM | WebM | Google VP8 | - |
+| OGV, OGG | Ogg | Theora、VP3、Dirac | - |
+| MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
+| MTS | AVCHD | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| R3D, RM | Red Raw Video | MJPEG 2000 | - |
 | RAM, RM | RealVideo | 不支持 | Real G2 (RV20)、Real 8 (RV30)、Real 10 (RV40) |
-| FLAC | Native Flac | 免费的无损音频编解码器 |  |
-| MJ2 | Motion JPEG2000 | Motion JPEG 2000编解码器 |  |
+| FLAC | Native Flac | 免费的无损音频编解码器 | - |
+| MJ2 | Motion JPEG2000 | Motion JPEG 2000编解码器 | - |
 
 ## 音频格式 {#audio-formats}
 
-资源作为Cloud Service提供XMP元数据提取支持，支持AIF、ASF、M4A、MP3、WAV和WMA音频格式。
+[!DNL Assets] 作为Cloud Service，它为AIF、ASF、M4A、MP3、WAV和WMA音频格式提供XMP元数据提取支持。
 
 >[!MORELIKETHIS]
 >
