@@ -3,17 +3,17 @@ product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hans
 index: y
 type: Documentation
-solution-title: Adobe Experience Manager 云服务
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
+solution-title: Adobe Experience Manager as a Cloud Service
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: 入门
-getting-started-url: https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/overview/home.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: 教程
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 20%
+source-wordcount: '110'
+ht-degree: 10%
 
 ---
 
@@ -52,5 +52,3 @@ ToCs
 * `title`
 * `description`
 * `contentOwner` (仅限核心资产内容下 `/help/assets`)
-
-有关元数据的其他信息，请参阅内 [部创作指南。](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
