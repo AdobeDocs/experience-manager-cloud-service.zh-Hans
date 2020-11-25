@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2ac87c5356579ea650cd3d34219e75eb1940f24b
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '221'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 | 生产 | 暂存 |
 |---|---|
 | [![生成状态](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/lastBuild) | [![生成状态](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/lastBuild) |
-| [输出产品](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) | [输出Stg](https://docs-stg.corp.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) |
+| [输出产品](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) | [输出Stg](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/landing/home.html) |
 
 这是Adobe Experience ManagerCloud Service文档的库。 本文档涵盖安装、管理、创作使用以及如何使用Cloud Service自定义AEM。
 
