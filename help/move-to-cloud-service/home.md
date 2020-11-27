@@ -2,15 +2,22 @@
 title: 移动到 AEM as a Cloud Service
 description: 有关将 Adobe Experience Manager as a Cloud Service 作为云服务移动到 AEM 的自助资源和文档链接
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 80aa4881bf3e6ee01e84eb4096d24fcb749419c6
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 95%
+source-wordcount: '578'
+ht-degree: 89%
 
 ---
 
 
 # 移动到 AEM as a Cloud Service {#aem-moving-to-aem-guide}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_overview"
+>title="关于Cloud Acceleration Manager"
+>abstract="Cloud Acceleration Manager是您自己的个人指南，贯穿整个移动到AEM作为Cloud Service的过程。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="对 AEM Sites as a Cloud Service 的显著更改"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="配置 CI/CD 管线"
 
 ## 移动到 AEM as a Cloud Service 的好处 {#benefits-aem-moving-to-aem-guide}
 
