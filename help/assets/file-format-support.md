@@ -3,7 +3,7 @@ title: 支持的文件格式和MIME类型
 description: 作为Cloud Service支持的文件 [!DNL Experience Manager Assets] 格式和MIME类型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2d858e1cddc67d07dd26dc40663cb4ed2197b02
+source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 35%
@@ -193,7 +193,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 | MTS | ✓ | - | ✓ |
 | OGV | ✓ | - | ✓ |
 | QT | ✓ | - | ✓ |
-| R3D | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
 | SWF | ✓ | - | ✓ |
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
