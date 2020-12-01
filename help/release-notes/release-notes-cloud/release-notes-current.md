@@ -1,64 +1,88 @@
 ---
-title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
+description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
+source-git-commit: 89f7e60205efc275bbeb97246ccc3add28810cfa
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 4%
+source-wordcount: '1329'
+ht-degree: 3%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 版的发行说明 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
+以下部分概述了作为Cloud Service的[!DNL Experience Manager]的一般发行说明。
 
 ## 发布日期 {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
-以下版本(2020.11.0)将于2020年12月1日发布。
+[!DNL Adobe Experience Manager]作为Cloud Service2020.11.0的发布日期为2020年12月1日。
+以下版本(2020.12.0)将于2020年12月17日发布
 
-## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### [!DNL Sites] {#what-is-new-sites}中的新增功能
 
-<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+* **[启动层次结构管理](/help/sites-cloud/authoring/launches/managing-pages.md) 和 [未来时间扭曲](/help/sites-cloud/authoring/launches/preview.md)**:用于在启动项内添加／删除页面以及使用时间扭曲浏览站点的新UI显示启动项中的未来状态。
 
-* **原型24工程**:开始新AEM项目的推荐基础更好，现在包括新的Adobe客户端数据层、以AMP形式传送站点的选项以及添加项目CSS/JS的新扩展点。
+* **[扩展内容片段模型和编辑器](/help/assets/content-fragments/content-fragments-models.md)**:新的选项可用于各种数据类型的输入验证，新的表单可视化功能改进了明细列表数据类型，内容片段模型名称在资产UI中显示并可搜索。
 
-* **ContextHub文件夹**:能够创建受众文件夹，以便轻松组织、查找和选择受众区段，以用于ContextHub优惠定位功能。
+* **使站点可安装**:用于配置Progressive Web Application(PWA)功能的新站点属性，将使站点可安装并可选脱机使用。这些功能需要核心组件。
 
-## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
+* **[核心组件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**:AEM作为Cloud Service，可从对最新版核心组件进行自动更新中受益。版本2.12.0包括社区提供的最新改进，如[新的POST表单处理程序；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data)通过上下文感知配置包含自定义CSS、Javascript和元数据[标签的能力；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)和[`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components)实用程序，以简化自定义组件中Adobe数据层的集成。 请参阅2.12.0中[更改列表](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)。
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
 
-* **[!DNL Adobe Sensei]强大的视频智能标记**:通过利用AI模型分析针对对象和特定操作标记的视频内容，DAM用户可以花费更少的时间添加标记，并将更多时间用于利用暴露的丰富信息向客户提供正确的体验。 请参 [阅智能标记视频资源](/help/assets/smart-tags-video-assets.md)。
+### [!DNL Assets]和[!DNL Dynamic Media] {#what-is-new-assets}的新增功能
 
-* **Brand Portal增强功能**:中提供了以下新增功能等 [!DNL Brand Portal]。 For details, see [[!DNL Brand Portal] release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
+* **批量资产摄取**:为客户提供可扩展的、云本地摄取服务，该服 [!DNL Experience Manager] 务利用Cloud Service架构（包括资产微服务）。主要用例包括通过监控、报告和计划进行大规模摄取，同时允许使用通用云上传工具将资产初始传输到云数据存储。 请参阅[批量导入工具](/help/assets/add-assets.md#bulk-ingestion-tool)。
+此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许进行大规模摄取，最好在初始摄取或偶尔进行大型摄取时使用。 对于较小的摄取作业，请使用资产用户界面](/help/assets/add-assets.md#upload-assets)上传[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en)或[。
 
-   * [增强的下载体验](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) ，简化、快速下载。 管理员可以配置其他下载配置，以优惠适合用户和企业需求的体验。
-   * 现在，可以从任何页面一键 [导航](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)到文件、集合和共享链接。
-   * 用户现 [在可以选择和下载特定](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 再现。 新的演绎版下载选项位于资产详细信息页面的演绎版面板中。
-   * 来宾用户会话超时15分钟可确保为所有并发用户提供更好的体验。
+   ![批量导入程序配置](/help/assets/assets/bulk-import-config-low-res.png)
 
-* **[!DNL Adobe Asset Link]2.1版**:有新版本的 [Adobe资产](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)[!DNL Adobe Photoshop]链接扩展， [!DNL Adobe Illustrator]并提 [!DNL Adobe InDesign] 供了该扩展。 它增加了与2020年10月发 [!DNL Adobe Creative Cloud] 布的2021版最新应用程序的兼容性。
+* 用户可以在卡片和列视图中对数字资产进行排序。
 
-* **[!DNL Assets]WebP文件支持**: [!DNL Assets] 作为Cloud Service，现在支持创建WebP图像格式的再现。 WebP是由谷歌创建的一种新兴的图像格式。 WebP文件格式的图像在视觉上与JPG或PNG文件无明显区别，并且文件要小得多。 降低资产的文件大小可缩短页面加载时间，并帮助内容创建者交付更快的Web体验。 请参 [阅创建标准处理用户档案](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)。
+   ![排序资产](/help/assets/assets/asset-sort-options.png)
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+* 对此版本中[Experience Manager资产]中的辅助功能进行了以下增强。 有关详细信息，请参阅 [!DNL Assets]](/help/assets/accessibility.md)中的[辅助功能。
+
+   * 使用键盘导航时间轴时，Esc键可以折叠“显示全部”选项而不失焦点。
+   * 使用键盘Tab键导航时，在从添加的标记中删除最后一个标记后，标记字段将保留焦点。
+   * [!DNL Experience Manager] 组件现在包含屏幕阅读器要使用的名称、角色和值的适当信息。
+   * 删除“类型／大小”组合框、“链接”组合框、“语言”组合框或“文本”编辑框后，键盘焦点将返回到下一个或上一个用户界面元素或更相关的用户界面元素。
+   * 将指针悬停在选项上时，将显示“选择”和“下载”等提示。 使用屏幕放大镜的用户可能看不到文件缩略图，因为这些提示。 现在，在使用`Escape`键删除选项后，可以保留焦点。
+   * 从页面中出现的网格中选择网格单元格后，焦点将转移到屏幕上显示的操作栏。
+   * 可视用户可以区分普通文本和链接，因为在[!DNL Experience Manager]主页中，将显示可视提示（下划线和V形图标），用于链接到所有解决方案。
+
+* **Dynamic Media中的批集预设**:现在，您可以在将资产文件单独或使用批量摄取上传到文件夹时，自动创建和组织图像集或旋转集中的多个资产。
+
+   请参阅[关于批集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)。
+
+* [!DNL Dynamic Media]中现在提供以下辅助功能增强功能：
+
+   * 屏幕阅读器(JAWS,Narrator)在“嵌入大小”菜单选项中对菜单项的名称、角色和状态进行解说。
+   * 用户可以使用`Tab`键导航“电子邮件链接”对话框。
+   * 考虑到屏幕阅读器的增强功能，创建视频编码用户档案的工作流程更为用户友好。
+   * 使用`Tab`键导航时，焦点将移至工作流中相应的用户界面元素，以创建交互式视频。
+   * “发布”页、“编辑资产”页、“编辑智能裁切”页和“图像集编辑器”页经过改进，符合Web标准。 辅助型技术(AT)用户现在可以轻松导航这些页面并执行裁剪图像等操作。
+   * 对查看器进行了改进，使用户能够使用键盘进行导航。
+   * 键盘和屏幕阅读器用户可以使用裁剪功能。
+   * 键盘用户可以更好地管理热点。
+
+   请参阅 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md)中的[辅助功能。
+
+## Adobe Experience Manager商务作为Cloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已发布CIF Venia参考站点- 2020.10.2，其中包括最新CIF核心组件版本v1.4.0。有关更多详 [细信息，请参阅CIF Venia参考站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 。
+* 已发布CIF Venia参考站点- 2020.11.05，其中包括最新的CIF核心组件版本v1.5.0。有关更多详细信息，请参阅[CIF Venia参考站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27)。
 
-* 已发布CIF核心组件v1.4.0。有关更多详 [细信息，请参阅](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) CIF核心组件。
+* 已发布CIF核心组件v1.5.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0)。
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* 产品控制台中的GraphQL请求和选择器是通过HTTPPOST完成的。 此问题已得到修复，以确保Apollo GraphQL客户端遵循GraphQL客户端OSGi配置中的设置，以在配置后支持GET请求。
+* 如果未直接在Sling CA配置中指定配置，但在父配置中指定配置，则GraphQL客户端配置无法读取正确。 已修复。
 
-* CIF云配置UI为/lib和/apps/中的配置显示“保存并关闭”按钮。 但这些是只读的，因此UI被修复为仅显示“关闭”按钮。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -67,12 +91,12 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 AEM中Cloud Manager作为Cloud Service2020.11.0的发布日期为2020年11月12日。
 
-### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+### [!DNL Cloud Manager] {#what-is-new-cm}中的新增功能
 
-* 现在，用户可 **以从环境卡** 和环境摘要页面上的环境菜单选项中使 **用新** 的菜 **单选项** “本地登录”。
-有关更多 [详细信息](/help/implementing/cloud-manager/manage-environments.md##login-locally) ，请参阅管理环境。
+* 现在，用户可从&#x200B;**环境**&#x200B;卡和&#x200B;**环境**&#x200B;摘要页上的环境菜单选项使用新的菜单选项&#x200B;**本地登录**。
+有关详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md##login-locally)。
 
-* 云管 **理器** 中的“学习”选项卡已通过UI中的新图像刷新。
+* Cloud Manager中的&#x200B;**Learn**&#x200B;选项卡已用UI中的新图像刷新。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
@@ -85,11 +109,19 @@ AEM中Cloud Manager作为Cloud Service2020.11.0的发布日期为2020年11月12�
 
 ### 工作流 {#workflows}
 
-* 增加了根据工作流标题、工作流模型、状态、发起者、有效负荷路径和开始日期搜索工作流实例的支持。 请参阅 [搜索工作流实例](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
+* 增加了根据工作流标题、工作流模型、状态、发起者、有效负荷路径和开始日期搜索工作流实例的支持。 请参阅[搜索工作流实例](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
+
+### 用户同步{#user-sync}
+
+* 用户数据(包括用户档案属性和组成员关系)可以保留在发布层上。 在[注册、登录和用户用户档案文档](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)中了解有关此功能的更多信息。
+
+### 分析器{#analyzers}
+
+AEM作为Cloud ServiceSDK构建分析器主插件可检测主项目中的问题，包括缺少依赖项。 它为开发人员提供了在本地开发过程中发现问题的机会，而且很早之后，您就可以使用Cloud Manager部署到云环境。 有关详细信息，请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)和[此处](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk)。
 
 ## 内容传输工具 {#content-transfer-tool}
 
-Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
+可查看本节以了解[内容传输工具](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)版本1.1.12的新增功能和更新。
 
 ### 新增功能 {#what-is-new-ctt}
 
@@ -99,18 +131,18 @@ Follow this section to learn about what is new and the updates for [Content Tran
 
 * 如果迁移集包含的路径与文件名部分相似，则内容传输工具将跳过内容文件。 已修复。
 
-## 最佳实践分析器 {#best-practices-analyzer}
+## 最佳实践分析器{#best-practices-analyzer}
 
 ### 发布日期 {#release-date-bpa}
 
 最佳实践分析器发布日期为2020年11月13日。
 
-### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### [!DNL Best Practices Analyzer] {#what-is-new-bpa}中的新增功能
 
 * 云就绪性分析器现在是最佳实践分析器(BPA)。 BPA为您当前的AEM实施提供最佳实践评估，并帮助评估从现有AEM实例迁移到AEM作为Cloud Service的准备情况。
 
-* 新增了一个检测器来检测使用，如果 `java.io.InputStream`在AEM中作为Cloud Service使用，可能会导致问题。
+* 添加了新的检测器以检测`java.io.InputStream`的使用，如果在AEM中作为Cloud Service使用，则会导致问题。
 
 ### 错误修复 {#bpa-bug-fixes}
 
-* 修复了导致与文本字段基础组 *件相关的* 正面错误。
+* 修复了导致与&#x200B;*textfield foundation*&#x200B;组件相关的正面错误。
