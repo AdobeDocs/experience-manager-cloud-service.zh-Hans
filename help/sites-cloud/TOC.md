@@ -5,10 +5,10 @@ user-guide-title: 在 AEM as a Cloud Service 中创作内容
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 97%
+source-wordcount: '236'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,9 @@ ht-degree: 97%
    + 启动项 {#launches}
       + [使用启动项](authoring/launches/overview.md)
       + [创建启动项](authoring/launches/creating.md)
+      + [管理启动项中的页面](authoring/launches/managing-pages.md)
       + [编辑启动项](authoring/launches/editing.md)
+      + [使用时间扭曲预览启动项](authoring/launches/preview.md)
       + [提升启动项](authoring/launches/promoting.md)
    + 工作流 {#workflows}
       + [使用工作流](authoring/workflows/overview.md)
@@ -75,6 +77,7 @@ ht-degree: 97%
       + [创建和管理选件](authoring/personalization/offers.md)
       + [了解分段](authoring/personalization/segmentation.md)
       + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+      + [注册、登录和用户用户档案](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [管理工作流](administering/workflows-administering.md)
 + 与 AEM as a Cloud Service 集成 {#integrations}
