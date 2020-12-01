@@ -5,10 +5,10 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
+source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 76%
+source-wordcount: '471'
+ht-degree: 71%
 
 ---
 
@@ -55,6 +55,8 @@ ht-degree: 76%
    + [搜索 Facet](search-facets.md)
    + [资产 HTTP API](mac-api-assets.md)
    + [资产HTTP API中的内容片段支持](content-fragments/assets-api-content-fragments.md)
+   + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+   + [AEM包含内容片段的GraphQL API —— 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
    + [资产报表](asset-reports.md)
    + [串联元数据](cascading-metadata.md)
@@ -66,13 +68,17 @@ ht-degree: 76%
    + [将资产发布到 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
+   + [无头投放，内容片段和GraphQL](content-fragments/content-fragments-graphql.md)
    + [管理内容片段](content-fragments/content-fragments-managing.md)
+   + [为实例启用内容片段功能](content-fragments/content-fragments-configuration-browser.md)
    + [内容片段模型](content-fragments/content-fragments-models.md)
    + [变量 - 创作片段内容](content-fragments/content-fragments-variations.md)
    + [内容片段关联内容](content-fragments/content-fragments-assoc-content.md)
    + [元数据 - 片段属性](content-fragments/content-fragments-metadata.md)
    + [内容片段 - 删除注意事项](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [预览- JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Experience League 发布的 Dynamic Media 新闻稿](dynamic-media/dynamic-media-newsletter.md)
    + [设置 Dynamic Media](dynamic-media/administering-dynamic-media.md)
