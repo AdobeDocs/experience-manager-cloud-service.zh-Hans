@@ -5,15 +5,15 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 77%
 
 ---
 
 
-# [!DNL Assets] 指南 {#assets}
+# [!DNL Assets] 指南  {#assets}
 
 + [[!DNL Assets] 作为Cloud Service](/help/assets/home.md)
 + [概述和新增功能](overview.md)
@@ -22,7 +22,7 @@ ht-degree: 77%
 + [支持的文件格式](file-format-support.md)
 + [资产微服务概述](asset-microservices-overview.md)
 + [中的辅助功能 [!DNL Assets]](accessibility.md)
-+ Manage digital assets {#manage}
++ 管理数字资产{#manage}
    + [共享资产](share-assets.md)
    + [监测活动和 DAM 任务](assets-activity-history.md)
    + [开始使用资产微服务](asset-microservices-configure-and-use.md)
@@ -46,7 +46,7 @@ ht-degree: 77%
    + [签入和签出要编辑的资产](check-out-and-submit-assets.md)
    + [资产的数字版权管理](drm.md)
    + [水印资产](watermark-assets.md)
-+ Configure, administer and extend [!DNL Assets] {#admin}
++ 配置、管理和扩展[!DNL Assets] {#admin}
    + [开发人员文档和API参考](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
    + [使用图像和视频用户档案](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -82,12 +82,15 @@ ht-degree: 77%
    + [管理 Dynamic Media 资产](dynamic-media/managing-assets.md)
    + [优化图像质量的最佳实践](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [文件管理最佳实践](dynamic-media/best-practices-for-file-management.md)
-   + [管理 Dynamic Media 查看器预设](dynamic-media/managing-viewer-presets.md)
-   + [应用 Dynamic Media 查看器预设](dynamic-media/viewer-presets.md)
-   + [管理 Dynamic Media 图像预设](dynamic-media/managing-image-presets.md)
-   + [应用 Dynamic Media 图像预设](dynamic-media/image-presets.md)
    + [图像配置文件](dynamic-media/image-profiles.md)
    + [视频配置文件](dynamic-media/video-profiles.md)
+   + [管理 Dynamic Media 图像预设](dynamic-media/managing-image-presets.md)
+   + [应用 Dynamic Media 图像预设](dynamic-media/image-presets.md)
+   + [管理 Dynamic Media 查看器预设](dynamic-media/managing-viewer-presets.md)
+   + [应用 Dynamic Media 查看器预设](dynamic-media/viewer-presets.md)
+   + [批次集预设](dynamic-media/batch-set-presets-dm.md)
+   + [通过Dynamic Media使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [通过Dynamic Media Classic使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [智能图像处理](dynamic-media/imaging-faq.md)
    + [传送 Dynamic Media 资产](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 77%
    + [使用规则集转换 URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [发布 Dynamic Media 资产](dynamic-media/publishing-dynamicmedia-assets.md)
    + [在Dynamic Media中使用选择性发布](dynamic-media/selective-publishing.md)
-   + [通过Dynamic Media使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [通过Dynamic Media Classic使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [使用选择器](dynamic-media/working-with-selectors.md)
    + [DHTML 查看器生命周期结束常见问题解答](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 查看器生命周期终止通知](dynamic-media/flash-viewers-eol.md)
