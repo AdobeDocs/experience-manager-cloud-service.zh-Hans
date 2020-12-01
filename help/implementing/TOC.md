@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
+source-git-commit: 09b23185663164ffa5a6066b67f8f1fb74872cde
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 61%
+source-wordcount: '546'
+ht-degree: 56%
 
 ---
 
@@ -36,54 +36,79 @@ ht-degree: 61%
    + [AEM 项目存储库结构包](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service 开发准则](developing/introduction/development-guidelines.md)
-   + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM UI的结构](developing/introduction/ui-structure.md)
-   + [Sling 备忘单](developing/introduction/sling-cheatsheet.md)
-   + [使用 Sling 适配器](developing/introduction/sling-adapters.md)
-   + [在 AEM as a Cloud Service 中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
-   + [AEM as a Cloud Service 中的叠加](developing/introduction/overlays.md)
-   + [使用客户端库](developing/introduction/clientlibs.md)
-   + [配置和配置浏览器](developing/introduction/configurations.md)
    + [记录](developing/introduction/logging.md)
-   + [页面差异](/help/implementing/developing/introduction/page-diff.md)
-   + [编辑器限制](/help/implementing/developing/introduction/editor-limitations.md)
-   + [命名约定](/help/implementing/developing/introduction/naming-conventions.md)
-   + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
-   + [将标记构建到AEM应用程序中](/help/implementing/developing/introduction/tagging-applications.md)
+   + [配置和配置浏览器](developing/introduction/configurations.md)
    + [AEM技术基础](/help/implementing/developing/introduction/aem-technologies.md)
+   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + 完整堆栈AEM开发{#full-stack}
+      + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
+      + [AEM UI的结构](developing/introduction/ui-structure.md)
+      + [Sling 备忘单](developing/introduction/sling-cheatsheet.md)
+      + [使用 Sling 适配器](developing/introduction/sling-adapters.md)
+      + [在 AEM as a Cloud Service 中使用 Sling 资源合并器](developing/introduction/sling-resource-merger.md)
+      + [AEM as a Cloud Service 中的叠加](developing/introduction/overlays.md)
+      + [使用客户端库](developing/introduction/clientlibs.md)
+      + [页面差异](/help/implementing/developing/introduction/page-diff.md)
+      + [编辑器限制](/help/implementing/developing/introduction/editor-limitations.md)
+      + [命名约定](/help/implementing/developing/introduction/naming-conventions.md)
+      + 组件和模板{#components-templates}
+         + [组件概述](developing/components/overview.md)
+         + [模板](developing/components/templates.md)
+         + [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
+         + [样式系统](/help/sites-cloud/authoring/features/style-system.md)
+         + [内容服务的JSON导出程序](developing/components/json-exporter.md)
+         + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
+         + [图像编辑器](developing/components/image-editor.md)
+         + [装饰标签](developing/components/decoration-tag.md)
+         + [使用隐藏条件](developing/components/hide-conditions.md)
+      + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
+      + [将标记构建到AEM应用程序中](/help/implementing/developing/introduction/tagging-applications.md)
+   + 混合AEM开发{#hybrid}
+      + [混合和SPA与AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
+      + [SPA简介和演练](developing/hybrid/introduction.md)
+      + [SPA WKND教程](developing/hybrid/wknd-tutorial.md)
+      + [使用React快速入门](developing/hybrid/getting-started-react.md)
+      + [角度式入门](developing/hybrid/getting-started-angular.md)
+      + [SPA深海潜水](developing/hybrid/deep-dives.md)
+      + [为AEM开发SPA](developing/hybrid/developing.md)
+      + [SPA编辑器概述](developing/hybrid/editor-overview.md)
+      + [SPA Blueprint](developing/hybrid/blueprint.md)
+      + [SPA页面组件](developing/hybrid/page-component.md)
+      + [动态模型到组件映射](developing/hybrid/model-to-component-mapping.md)
+      + [模型路由](developing/hybrid/routing.md)
+      + [启动集成](developing/hybrid/launch-integration.md)
+      + [服务器端渲染](developing/hybrid/ssr.md)
+      + [SPA参考文档](developing/hybrid/reference-materials.md)
+   + 无外设体验管理 {#headless}
+      + [无头和AEM](developing/headless/introduction.md)
+      + 入门指南{#getting-started}
+         + [创建配置](developing/headless/getting-started/create-configuration.md)
+         + [创建内容片段模型](developing/headless/getting-started/create-content-model.md)
+         + [创建资产文件夹](developing/headless/getting-started/create-assets-folder.md)
+         + [创建内容片段](developing/headless/getting-started/create-content-fragment.md)
+         + [访问和交付内容片段](developing/headless/getting-started/create-api-request.md)
+      + 内容片段 {#content-fragments}
+         + [无头投放，内容片段和GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
+         + [使用内容片段](/help/assets/content-fragments/content-fragments.md)
+         + [为实例启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+         + [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+         + [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
+         + [变量 - 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
+         + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+         + [使用关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)
+         + [元数据 - 片段属性](/help/assets/content-fragments/content-fragments-metadata.md)
+         + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
+         + [预览- JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + 投放API {#delivery-api}
+         + [内容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
+         + [内容片段图QL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [AEM包含内容片段的GraphQL API —— 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + Developer Tools {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [内容包Maven插件](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo工具](/help/implementing/developing/tools/repo-tool.md)
    + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
-+ 组件和模板 {#components-templates}
-   + [组件概述](developing/components/overview.md)
-   + [模板](developing/components/templates.md)
-   + [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
-   + [样式系统](/help/sites-cloud/authoring/features/style-system.md)
-   + [内容服务的JSON导出程序](developing/components/json-exporter.md)
-   + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
-   + [图像编辑器](developing/components/image-editor.md)
-   + [装饰标签](developing/components/decoration-tag.md)
-   + [使用隐藏条件](developing/components/hide-conditions.md)
-+ 无外设体验管理 {#headless}
-   + [具有AEM的无头和混合](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
-   + 单页应用程序 {#spa}
-      + [SPA简介和演练](developing/spa/introduction.md)
-      + [SPA WKND教程](developing/spa/wknd-tutorial.md)
-      + [使用React快速入门](developing/spa/getting-started-react.md)
-      + [角度式入门](developing/spa/getting-started-angular.md)
-      + [SPA深海潜水](developing/spa/deep-dives.md)
-      + [为AEM开发SPA](developing/spa/developing.md)
-      + [SPA编辑器概述](developing/spa/editor-overview.md)
-      + [SPA Blueprint](developing/spa/blueprint.md)
-      + [SPA页面组件](developing/spa/page-component.md)
-      + [动态模型到组件映射](developing/spa/model-to-component-mapping.md)
-      + [模型路由](developing/spa/routing.md)
-      + [启动集成](developing/spa/launch-integration.md)
-      + [服务器端渲染](developing/spa/ssr.md)
-      + [SPA参考文档](developing/spa/reference-materials.md)
 + 个性化 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [配置ContextHub](developing/personalization/configuring-contexthub.md)
