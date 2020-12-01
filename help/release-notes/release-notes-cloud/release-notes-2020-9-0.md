@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
+source-git-commit: 701d9ff3c9553c28bce0ef417487facedb22373f
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 10%
@@ -12,30 +12,30 @@ ht-degree: 10%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+以下部分概述了[!DNL Experience Manager]作为2020.9.0Cloud Service的一般发行说明。
 
 ## 发布日期 {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+[!DNL Adobe Experience Manager]作为Cloud Service2020.9.0的发布日期为2020年9月24日。
 
-## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### [!DNL Sites] {#what-is-new-sites}中的新增功能
 
-* 单页应用程序(SPA)编辑器JavaScript SDK现 [在是开放源代码。](/help/implementing/developing/spa/reference-materials.md)
+* 单页应用程序(SPA)编辑器JavaScript SDK [现在是开放源代码。](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### [!DNL Assets] {#what-is-new-assets}中的新增功能
 
-* 使用资产微服务生成的演绎版支持添加水印图像文件。 它可以配置为处理用户档案，并使用PNG文件作为水印。 请参 [阅为资产设置水印](/help/assets/watermark-assets.md)。
+* 使用资产微服务生成的演绎版支持添加水印图像文件。 它可以配置为处理用户档案，并使用PNG文件作为水印。 请参阅[为资产设置水印](/help/assets/watermark-assets.md)。
 
-* 中的增强功能 [!DNL Dynamic Media]
+* [!DNL Dynamic Media]中的增强功能
 
-   * 选择性发布——营销团队现在可以访问同步到的 [!DNL Dynamic Media] 智能裁剪图像和动态演绎版，以便 [!DNL Dynamic Media] 创建促销资料，而无需将这些资产发布到全局 [!DNL Dynamic Media] 投放。 [!DNL Experience Manager] 而发 [!DNL Dynamic Media] 布是相互分离的，可单独进行，以实现这一点。 请参阅 [选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
-   * 管理员现在可以重 [!DNL Dynamic Media] 置在设置时收到的Cloud Service密码。 可在用户界面中完 [!DNL Experience Manager] 成重置，无需使用桌面应 [!DNL Dynamic Media Classic] 用程序。
+   * 选择性发布——营销团队现在可以访问同步到[!DNL Dynamic Media]的[!DNL Dynamic Media]智能裁剪图像和动态演绎版，以便创建促销资料，而无需将这些资产发布到[!DNL Dynamic Media]进行全局投放。 [!DNL Experience Manager] 而发 [!DNL Dynamic Media] 布是相互分离的，可单独进行，以实现这一点。请参阅[选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
+   * 管理员现在可以重置在设置时收到的[!DNL Dynamic Media]Cloud Service密码。 可在[!DNL Experience Manager]用户界面中完成重置，无需使用[!DNL Dynamic Media Classic]桌面应用程序。
 
-* 要了解以下增强功能，请 [参阅Brand Portal的新增功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* 要了解以下增强功能，请参阅[ Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)中的新增功能。
 
    * 集成Adobe Document Cloud视图SDK，增强PDF预览。
    * 单击下载功能。
@@ -47,11 +47,11 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 TBD: list of Assets aaCS bugs that are fixed.
 -->
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager商务作为Cloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已发布CIF核心组件v1.3.0。有关更多详 [细信息，请参阅](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) CIF核心组件。
+* 已发布CIF核心组件v1.3.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0)。
 
 * 产品/预览模板的类别功能和类别模板现已可用。 这使AEM的商业用户／营销人员能够视图产品/类别模板和真实数据。
 
@@ -69,7 +69,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 发布日期 {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+[!UICONTROL Cloud Manager]版本2020.9.0的发布日期为2020年9月3日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
@@ -87,7 +87,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-cra}
 
-* 云就绪性分析器(CRA)具有开始状态控制台，该控制台显 **示用户单击** “生成报告”按钮以执行CRA。
+* 云就绪性分析器(CRA)具有开始状态控制台，该控制台显示一个显式&#x200B;**生成报告**&#x200B;按钮，供用户单击以执行CRA。
 
 * CRA UI在运行时显示进度。 它显示正在分析的项目和在执行过程中找到的结果。
 
@@ -107,9 +107,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 * CTT用户界面具有自动重新加载功能，每30秒重新加载一次概述页面。
 
-* 添加到CTT用户界面的按钮可轻松 *检索访问令牌* 。
+* 添加到CTT用户界面的按钮可轻松检索&#x200B;*访问令牌*。
 
-* 为URL和迁移集名称 *添加**了描述性验证消息*。
+* 为&#x200B;*URL*&#x200B;和&#x200B;*迁移集名称*&#x200B;添加了描述性验证消息。
 
 ## 代码重构工具 {#code-refactoring}
 
@@ -119,9 +119,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 * AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
 
-   请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+   请参阅[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)以获取更多详细信息。
 
 * 存储库Modernizer实用程序可用于将现有项目包重构为与为AEM定义为Cloud Service的项目结构兼容的包。
 
-   请参阅 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) （存储库现代化器）。
+   请参阅[Git资源：存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)以获取更多详细信息。
 
