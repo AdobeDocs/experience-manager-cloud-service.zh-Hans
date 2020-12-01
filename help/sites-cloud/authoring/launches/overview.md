@@ -2,10 +2,10 @@
 title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '819'
+ht-degree: 89%
 
 ---
 
@@ -28,13 +28,15 @@ ht-degree: 91%
 * 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
-This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
+本节介绍如何从站点控制台或启动项控制台](#the-launches-console)中创建、编辑和提升（如果需要[delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）启动页面：[
 
 * [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
 * [编辑启动项](/help/sites-cloud/authoring/launches/editing.md)
+* [在启动项中管理页面](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [使用时间扭曲根据启动项预览您的内容](/help/sites-cloud/authoring/launches/preview.md)
 * [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)
 
-## 启动项 - 事件的顺序 {#launches-the-order-of-events}
+## 启动项 - 事件的顺序  {#launches-the-order-of-events}
 
 启动项允许您有效地为将来发布的一个或多个激活网页开发内容。
 
@@ -78,7 +80,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>创建和编辑启动项需要对`/content/launches`的访问权限——与默认组`content-authors`的权限相同。
 >
 >如果您遇到任何问题，请联系您的系统管理员。
 
@@ -88,9 +90,9 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 * **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
 
-* 或直接使用 `https://<host>:<port>/libs/launches/content/launches.html`
+* 或直接使用`https://<host>:<port>/libs/launches/content/launches.html`
 
-## Launches in References (Sites Console) {#launches-in-references-sites-console}
+## 引用（站点控制台）中的启动项{#launches-in-references-sites-console}
 
 1. 在&#x200B;**站点**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
