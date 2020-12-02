@@ -71,7 +71,7 @@ AEM作为Cloud Service提供三种环境:
 
 * **开发环境**：允许开发人员在与暂存环境和生产环境相同的运行时条件下实施 AEM 应用程序。
 
-   有关更多 [详细信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) ，请参阅管理环境。
+   有关详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager)。
 
 ## 程序 {#programs}
 
