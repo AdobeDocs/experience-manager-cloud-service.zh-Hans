@@ -5,19 +5,19 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 71%
+source-wordcount: '467'
+ht-degree: 72%
 
 ---
 
 
 # [!DNL Assets] 指南  {#assets}
 
-+ [[!DNL Assets] 作为Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] 作为 [!DNL Cloud Service]](/help/assets/home.md)
 + [概述和新增功能](overview.md)
-+ [作为Cloud Service [!DNL Assets] 的显着变化](assets-cloud-changes.md)
++ [a的显 [!DNL Assets] 着变化 [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 体系结构](architecture.md)
 + [支持的文件格式](file-format-support.md)
 + [资产微服务概述](asset-microservices-overview.md)
