@@ -4,9 +4,9 @@ description: 了解元数据的类型，以及如何 [!DNL Adobe Experience Mana
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 16%
 
 ---
@@ -144,7 +144,7 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
 
 ## 使用处理用户档案{#metadata-compute-service}的自定义元数据
 
-作为Cloud Service的资产可以使用云本机服务为资产生成自定义元数据。 配置处理用户档案以生成自定义元数据。 请参阅[如何使用处理用户档案](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
+作为[!DNL Cloud Service]的资产可以使用云本机服务为资产生成自定义元数据。 配置处理用户档案以生成自定义元数据。 请参阅[如何使用处理用户档案](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
 ![处理用户档案中的元数据再现](assets/processing-profile-metadata.png)
 
