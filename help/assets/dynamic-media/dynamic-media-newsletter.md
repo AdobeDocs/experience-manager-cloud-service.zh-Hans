@@ -18,7 +18,7 @@ Experience League每月发布的Dynamic Media新闻快讯旨在帮助您快速�
 
 ## 获得灵感。 保持信息灵通。
 
-[注册](https://www.adobe.com/subscription/dynamic-media-newsletter.html) ，即可在您的收件箱中按月接收Dynamic Media Newsletter。
+[登](https://www.adobe.com/subscription/dynamic-media-newsletter.html) 录以在您的收件箱中每月接收Dynamic Media Newsletter。
 
 ## 是否错过了Dynamic Media新闻快讯期刊？
 
@@ -50,13 +50,13 @@ Experience League每月发布的Dynamic Media新闻快讯旨在帮助您快速�
 
    >[!IMPORTANT]
    >
-   >我们希望确保只向希望接收Dynamic Media新闻稿的用户发送Dynamic Media新闻稿。 要在此期刊后继续接收新闻稿，请在此处注 [册](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)。
+   >我们希望确保只向希望接收Dynamic Media新闻稿的用户发送Dynamic Media新闻稿。 要在此问题后继续接收新闻稿，请在[此处](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)注册。
 
 * **[2020年2月，第二期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    在此问题中：
 
-   * 参加新的Skill Builder网络研讨会，并转型为Dynamic Media Classic专家。
+   * 参加新的Skill Builder网络研讨会并转型为Dynamic Media Classic专家。
    * 了解在2020年Adobe峰会上Dynamic Media的位置。
    * 了解如何使用Dynamic Media的裁剪功能。
    * 充分利用免费审核，帮助您从Dynamic Media Classic获得更多价值。
