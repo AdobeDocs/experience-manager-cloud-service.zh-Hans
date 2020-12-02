@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 购物车和调度程序设置
 
-[AEM CIF Core](https://github.com/adobe/aem-core-cif-components) Components附带现成购物 [车](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) ，可呈现购物车和结帐表单。 购物车需要安装 [AEM Dispatcher和GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher) 路由设置。 以下视频使用Docker图像详细描述了本地配置和设置。
+[AEM CIF Core ](https://github.com/adobe/aem-core-cif-components) Components附带现成购物 [车](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) ，可呈现购物车和结帐表单。购物车需要安装[AEM Dispatcher(带有GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher)路由设置)。 以下视频使用Docker图像详细描述了本地配置和设置。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
 
