@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: 09b23185663164ffa5a6066b67f8f1fb74872cde
+source-git-commit: 4687054b049263c109591884a0368dfa76346298
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 56%
+source-wordcount: '552'
+ht-degree: 55%
 
 ---
 
@@ -31,6 +31,7 @@ ht-degree: 56%
    + [Maven 项目版本处理](cloud-manager/project-version-handling.md)
    + [访问 Git](cloud-manager/accessing-git.md)
    + [将 Git 与 Adobe Cloud Manager 集成](cloud-manager/integrating-with-git.md)
+   + [使用多源Git存储库](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + 部署 AEM as a Cloud Service {#developing}
    + [AEM 项目结构](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 项目存储库结构包](developing/introduction/repository-structure-package.md)
