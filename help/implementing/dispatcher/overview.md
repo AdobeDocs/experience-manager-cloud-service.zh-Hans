@@ -32,4 +32,4 @@ ht-degree: 1%
 
 以下各节提供有关内容投放（包括CDN配置和缓存）的更详细信息。
 
-有关从作者服务复制到发布服务的信息，请在此 [处获取](/help/operations/replication.md)。
+有关从作者服务复制到发布服务的信息，请在[此处](/help/operations/replication.md)获取。
