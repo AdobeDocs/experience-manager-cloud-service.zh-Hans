@@ -1,6 +1,6 @@
 ---
 title: 配置RTE以创建可访问的网页和站点。
-description: 了解如何配置富文本编辑器以在中创建可访问站点 [!DNL Adobe Experience Manager]。
+description: 了解如何在 [!DNL Adobe Experience Manager]中配置富文本编辑器以创建可访问站点。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
@@ -13,49 +13,49 @@ ht-degree: 1%
 
 # 配置 RTE 以创建可访问的站点 {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] 支持标准的辅助功能，如图像的替代文本以及创建内容时可访问的其他功能。 内容作者将这些功能与使用富文本编辑器(RTE)的组件一起使用。 这些功能包括通过标题和段落元素添加替代文本和结构信息等。
+[!DNL Adobe Experience Manager] 支持标准的辅助功能，如图像的替代文本以及创建内容时可访问的其他功能。内容作者将这些功能与使用富文本编辑器(RTE)的组件一起使用。 这些功能包括通过标题和段落元素添加替代文本和结构信息等。
 
-要了解RTE的典型配置，请参 [阅配置](rich-text-editor.md) RTE [和为特定功能配置RTE插件](configure-rich-text-editor-plug-ins.md)。
+要了解RTE的典型配置，请参阅[配置RTE](rich-text-editor.md)和[为特定功能配置RTE插件](configure-rich-text-editor-plug-ins.md)。
 
-使用RTE插件配置配置和自定义与辅助功能相关的功能。 例如，使用添 `paraformat` 加额外的块级语义元素，包括将支持的标题级数扩展到基本级别以 `H1`外 `H2` ，并 `H3` 默认提供。 使用创作用户界面中的许多组件，可以进行富文本编辑。 常用组件有文本、图像、下载等。
+使用RTE插件配置配置和自定义与辅助功能相关的功能。 例如，使用`paraformat`添加额外的块级语义元素，包括将支持的标题级数扩展到默认提供的基本`H1`、`H2`和`H3`之外。 使用创作用户界面中的许多组件，可以进行富文本编辑。 常用组件有文本、图像、下载等。
 
-RTE功能可在许多组件中使用。 主组件是组 `Text` 件。
+RTE功能可在许多组件中使用。 主组件是`Text`组件。
 
-对于中 `Text` 的组 [!DNL Experience Manager]件，以下屏幕截图显示启用了各种插件的富文本编辑器，包括 `paraformat`:
+对于[!DNL Experience Manager]中的`Text`组件，以下屏幕截图显示启用了各种插件的富文本编辑器，包括`paraformat`:
 
 ![RTE全屏模式下的文本组件](assets/rte-toolbar-full-screen-mode.png)
 
-## 配置插件功能 {#configuring-the-plugin-features}
+## 配置插件功能{#configuring-the-plugin-features}
 
-有关配置RTE的说明，请参 [阅配置富文本编辑器](rich-text-editor.md) 页。 本文涵盖：
+有关配置RTE的说明，请参阅[配置富文本编辑器](rich-text-editor.md)页。 本文涵盖：
 
 * [插件及其功能](rich-text-editor.md#aboutplugins)
 * [配置位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [激活插件并配置features属性](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [配置RTE的其他功能](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-要激活插件的几项或所有功能，请在CRXDE Lite的相应子分支 `rtePlugins` 中配置插件。
+要激活插件的几项或所有功能，请在CRXDE Lite的相应`rtePlugins`子分支中配置插件。
 
 ![CRXDE Lite显示示例rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
-### 指定RTE选择字段中可用的段落格式的示例 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### 指定RTE选择字段{#example-specifying-paragraph-formats-available-in-rte-selection-field}中可用的段落格式的示例
 
 新的语义块格式可供选择。
 
-1. 根据您的RTE，确定并导航到配 [置位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)。
-1. [通过激活插件](rich-text-editor.md)[启用段落选择字段](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
+1. 根据您的RTE，确定并导航到[配置位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)。
+1. [通过激活插](rich-text-editor.md) 件启 [用段落选择字段](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
 1. [在段落选择字段中指定要使用的格式](rich-text-editor.md)。
 1. 然后，RTE中的选择字段中的内容作者可以使用段落格式。
 
-在RTE中通过段落格式选项提供的结构元素 [!DNL Experience Manager] 中，可为开发辅助内容提供良好基础。 内容作者不能使用RTE设置字体大小或颜色或其他相关属性的格式，从而阻止创建内联格式。 相反，作者可以选择适当的结构元素，如标题，并使用从“样式”选项中选择的全局样式，以确保使用自己的样式表和正确结构化内容浏览的用户获得清晰的标记和更好的选项。
+通过RTE中通过段落格式选项提供的结构元素，[!DNL Experience Manager]为可访问内容的开发提供了良好的基础。 内容作者不能使用RTE设置字体大小或颜色或其他相关属性的格式，从而阻止创建内联格式。 相反，作者可以选择适当的结构元素，如标题，并使用从“样式”选项中选择的全局样式，以确保使用自己的样式表和正确结构化内容浏览的用户获得清晰的标记和更好的选项。
 
-## 使用源编辑功能 {#use-of-the-source-edit-feature}
+## 使用源编辑功能{#use-of-the-source-edit-feature}
 
-在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE中创建的某段内容可能需要更多标记，以确保符合WCAG 2.0。这可以通过RTE的源 [编辑](rich-text-editor.md#aboutplugins) 选项来完成。 可在插件 [`sourceedit` 上指定 `misctools` 该功能](rich-text-editor.md#aboutplugins)。
+在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE中创建的某段内容可能需要更多标记，以确保符合WCAG 2.0。这可以通过RTE的[源edit](rich-text-editor.md#aboutplugins)选项来完成。 可以在`misctools`插件](rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
 
 >[!CAUTION]
 >
->仔细使 `sourceedit` 用功能。 任何键入错误和不支持的功能都可能导致问题。
+>仔细使用`sourceedit`功能。 任何键入错误和不支持的功能都可能导致问题。
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
