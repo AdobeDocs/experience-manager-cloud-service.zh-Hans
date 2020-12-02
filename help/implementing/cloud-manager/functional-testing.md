@@ -10,32 +10,32 @@ ht-degree: 4%
 ---
 
 
-# 功能测试 {#functional-testing}
+# 功能测试{#functional-testing}
 
 功能测试分为两类：
 
 * 产品功能测试
 * 自定义功能测试
 
-## 产品功能测试 {#product-functional-testing}
+## 产品功能测试{#product-functional-testing}
 
 产品功能测试是围绕AEM中核心功能（例如，创作和复制）的一组稳定的HTTP集成测试(IT)，可防止客户在中断此核心功能时部署对其应用程序代码所做的更改。
 
 只要客户将新代码部署到Cloud Manager且无法跳过，产品功能测试就会自动运行。
 
-有关示例 [测试，请参阅](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) “Product Functionality tests（产品功能测试）”。
+有关示例测试，请参阅[产品功能测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)。
 
-## 自定义功能测试 {#custom-functional-testing}
+## 自定义功能测试{#custom-functional-testing}
 
 管道中的“自定义功能”测试步骤始终存在，无法跳过。
 
 但是，如果生成未生成测试JAR，则默认情况下测试通过。
 
 >[!NOTE]
->“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关更多 [详细信息，请参阅](/help/implementing/cloud-manager/manage-logs.md) “访问和管理日志”。
+>“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关详细信息，请参阅[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)。
 
 
-### 编写功能测试 {#writing-functional-tests}
+### 编写功能测试{#writing-functional-tests}
 
 必须将客户编写的功能测试打包为由与要部署到AEM的对象相同的Maven版本生成的单独JAR文件。 通常，这将是一个单独的Maven模块。 生成的JAR文件必须包含所有必需的依赖关系，并且通常使用maven-assembly-plugin使用jar-with-dependencies描述符创建。
 
@@ -74,11 +74,11 @@ ht-degree: 4%
 
 在此JAR文件中，要执行的实际测试的类名必须以IT结尾。
 
-例如，将执行名 `com.myco.tests.aem.ExampleIT` 为的类，但名为的类 `com.myco.tests.aem.ExampleTest` 不会执行。
+例如，将执行名为`com.myco.tests.aem.ExampleIT`的类，但名为`com.myco.tests.aem.ExampleTest`的类不会执行。
 
-测试类必须是普通JUnit测试。 测试基础架构设计并配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳实践。 有关更多 [详细信息](https://github.com/adobe/aem-testing-clients) ，请参阅Git链接。
+测试类必须是普通JUnit测试。 测试基础架构设计并配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳实践。 有关详细信息，请参阅[Git Link](https://github.com/adobe/aem-testing-clients)。
 
-### 本地测试执行 {#local-test-execution}
+### 本地测试执行{#local-test-execution}
 
 由于测试类是JUnit测试，它们可以从主流Java IDE（如Eclipse、IntelliJ、NetBeans等）运行。
 
