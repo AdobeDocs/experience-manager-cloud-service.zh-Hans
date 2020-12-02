@@ -3,9 +3,9 @@ title: 将资产、文件夹和收藏集共享为链接
 description: 本文将介绍如何在Experience Manager资产中以超链接的形式共享资产、文件夹和收藏集。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 共享和分发Experience Manager{#share-assets-from-aem}中管理的资产
 
-Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法将Experience Manager资产中的资产共享为Cloud Service:
+Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法将Experience Manager资产中的资产共享为[!DNL Cloud Service]:
 
 * 以链接形式共享。
 * 下载资产并单独共享。
@@ -187,6 +187,5 @@ Adobe资产链接简化了创意人员和营销人员在内容创建过程中的
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
