@@ -2,7 +2,7 @@
 title: Maven 项目版本处理
 description: Maven项目版本处理-Cloud Services
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 8e470ed1ea30fd2fa59617fdb6755abf9a0d74a2
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 6%
