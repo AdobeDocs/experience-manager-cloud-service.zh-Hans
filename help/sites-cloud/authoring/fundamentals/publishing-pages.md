@@ -55,7 +55,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
-> 有关其他可能性 **，请参阅** “页 **面属性”的“基** 本”选项卡 [中的“开始时间”和“结束时间”](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> 有关其他可能性，请参阅页面属性[“基本”选项卡中的&#x200B;**开始时间**&#x200B;和&#x200B;**结束时间**](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### 从编辑器中发布 {#publishing-from-the-editor}
 
@@ -93,7 +93,7 @@ ht-degree: 96%
 * [快速发布](#quick-publish)
 * [管理发布](#manage-publication)
 
-#### 快速发布 {#quick-publish}
+#### 快速发布  {#quick-publish}
 
 **快速发布**&#x200B;适用于一些简单的情况，可立即发布选定的页面，而无需进行任何进一步的交互。正因为这一点，任何未发布的引用也将被自动发布。
 
@@ -113,7 +113,7 @@ ht-degree: 96%
 >
 >“快速发布”是一种简单的发布方式，即只会发布选定的一个或多个页面，而不会发布任何子页面。
 
-#### 管理发布 {#manage-publication}
+#### 管理发布  {#manage-publication}
 
 与“快速发布”相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
 
@@ -144,7 +144,7 @@ ht-degree: 96%
 
    单击“添加内容”按钮会启动[路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)以供选择内容。
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
+   选择所需页面，然后单击&#x200B;**选择**&#x200B;将内容添加到向导，或单击&#x200B;**取消**&#x200B;取消选择并返回向导。
 
    返回到向导后，您可以选择列表中的项目以进一步配置其选项，例如：
 
@@ -212,11 +212,11 @@ ht-degree: 96%
 * [从页面编辑器中](#unpublishing-from-the-editor)
 * [从站点控制台中](#unpublishing-from-the-console)
 
-### 从编辑器中取消发布 {#unpublishing-from-the-editor}
+### 从编辑器中取消发布  {#unpublishing-from-the-editor}
 
 在编辑页面时，如果您希望取消发布该页面，请选择&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**取消发布页面**，这与[发布页面](#publishing-from-the-editor)非常类似。
 
-### 从控制台中取消发布 {#unpublishing-from-the-console}
+### 从控制台中取消发布  {#unpublishing-from-the-console}
 
 正如[使用“管理发布”选项发布页面](#manage-publication)一样，也可以使用它来取消发布页面。
 
