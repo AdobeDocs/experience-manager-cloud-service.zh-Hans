@@ -3,9 +3,9 @@ title: 使用资产微服务处理资产
 description: 使用云本机、可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 资产微服务资产摄取和处理概述{#asset-microservices-overview}
 
-Adobe Experience Manager作为Cloud Service，提供了一种云本地方法来利用Experience Manager应用程序和功能。 此新架构的一个关键元素是资产摄取和处理，由资产微型服务提供支持。 资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 云本机资产微服务的主要优势包括：
+Adobe Experience Manager作为[!DNL Cloud Service]提供了一种云本机方法来利用Experience Manager应用程序和功能。 此新架构的一个关键元素是资产摄取和处理，由资产微型服务提供支持。 资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 云本机资产微服务的主要优势包括：
 
 * 可扩展的体系结构允许对资源密集型操作进行无缝处理。
 * 高效的索引和文本提取不会影响Experience Manager环境的性能。
