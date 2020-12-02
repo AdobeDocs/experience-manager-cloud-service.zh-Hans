@@ -50,7 +50,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 示例 {#example}
 
-隐藏条件的示例可在AEM中找到，特别是[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)。 例如，请考虑[WKND教程中实现的[列表核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+隐藏条件的示例可在AEM中找到，尤其 [是核心](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 组件。 例如，考虑在 [WKND教程中实](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) 现的列表 [核心组件。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 [使用模板编辑器](/help/sites-cloud/authoring/features/templates.md)，模板作者可以在设计对话框中定义页面作者可以使用的列表组件选项。例如是否允许列表为静态列表、子页面列表、标记页面列表等。 可以启用或禁用。
 
