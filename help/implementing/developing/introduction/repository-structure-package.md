@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ![存储库结构包](./assets/repository-structure-packages.png)
 
-存储库结构包定义预期的公共状态，包验证 `/apps` 程序使用该状态确定区域“不受潜在冲突的影响”，因为它们是标准根。
+存储库结构包定义`/apps`的预期公共状态，包验证程序使用它确定区域“免受潜在冲突”，因为它们是标准根。
 
 存储库结构包中包含的最典型路径为：
 
@@ -26,15 +26,15 @@ ht-degree: 9%
 + `/apps/cq/...`、 `/apps/dam/...`、 `/apps/wcm/...`和， `/apps/sling/...` 它们为提供通用叠加 `/libs`。
 + `/apps/settings` 共享的上下文感知配置根路径
 
-请注意，此子包 **没有任何内** 容，仅由定义过滤 `pom.xml` 器根的一个组成。
+请注意，此子包&#x200B;**不包含任何内容，且仅由定义筛选器根的`pom.xml`组成。**
 
 ## 创建存储库结构包
 
-要为Maven项目创建存储库结构包，请新建一个空的Maven子项目，并使用以下项 `pom.xml`目更新项目元数据以符合您的父Maven项目。
+要为Maven项目创建存储库结构包，请使用以下`pom.xml`新建一个空Maven子项目，更新项目元数据以符合您的父Maven项目。
 
-更新该 `<filters>` 更新，以包含您的代码包部署到的所有JCR存储库路径根。
+更新`<filters>`以包含您的代码包部署到的所有JCR存储库路径根。
 
-确保将此新的Maven子项目添加到父项目 `<modules>` 列表。
+确保将此新的Maven子项目添加到父项目`<modules>`列表。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,9 +117,9 @@ ht-degree: 9%
 
 ## 引用存储库结构包
 
-要使用存储库结构包，请通过FileVault内容包Maven插件配置通过所有代码包（部署到的子包） `/apps`引用它来管理项 `<repositoryStructurePackage>` 目。
+要使用存储库结构包，请通过所有代码包（部署到`/apps`的子包）引用它，通过FileVault内容包Maven插件`<repositoryStructurePackage>`配置管理项目。
 
-在和 `ui.apps/pom.xml`任何其他代码包 `pom.xml`中，将对项目的存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件。
+在`ui.apps/pom.xml`和任何其他代码包`pom.xml`中，将对项目的存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件。
 
 ```xml
 ...
@@ -160,15 +160,15 @@ ht-degree: 9%
 
 例如：
 
-+ 代码包A部署到 `/apps/a`
-+ 代码包B部署到 `/apps/a/b`
++ 代码包A部署到`/apps/a`中
++ 代码包B部署到`/apps/a/b`中
 
-如果未从代码包A上的代码包B建立包级依赖关系，则代码包B可先部署到 `/apps/a`，然后部署到代码包B中， `/apps/a`从而删除先前安装的 `/apps/a/b`。
+如果未从代码包A上的代码包B建立包级别依赖关系，则代码包B可以先部署到`/apps/a`中，然后部署到`/apps/a`中的代码包B，从而删除先前安装的`/apps/a/b`。
 
 在本例中：
 
-+ 代码包A应在项 `<repositoryStructurePackage>` 目的存储库结构包上定义一个(它应具有筛选 `/apps`器)。
-+ 代码包B应在代码 `<repositoryStructurePackage>` 包A上定义一个，因为代码包B部署到由代码包A共享的空间中。
++ 代码包A应在项目的存储库结构包上定义`<repositoryStructurePackage>`（它应具有`/apps`的筛选器）。
++ 代码包B应在代码包A上定义`<repositoryStructurePackage>`，因为代码包B部署到由代码包A共享的空间中。
 
 ## 错误和调试
 
@@ -179,7 +179,7 @@ ht-degree: 9%
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-这表示中断代码包的筛选器 `<repositoryStructurePackage>` 列表中没 `/apps/some/path` 有列表。
+这表示中断代码包的筛选器列表中没有`<repositoryStructurePackage>`的列表。`/apps/some/path`
 
 ## 其他资源
 
