@@ -2,9 +2,9 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -178,10 +178,6 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 停止]:终止活动配置。
    * [!UICONTROL 作业状态]:视图配置在正在进行的导入作业中或用于已完成作业时的状态。
    * [!UICONTROL 视图资产]:视图目标文件夹（如果存在）。
-
->[!NOTE]
->
->在设置和部署到[!DNL Experience Manager]时，要将批量上传作为从其他系统迁移的内容的一部分，需要仔细规划、考虑和选择工具。 有关内容迁移方法的指南，请参阅[部署指南](/help/implementing/deploying/overview.md)。
 
 ## 使用桌面客户端{#upload-assets-desktop-clients}上传资产
 
