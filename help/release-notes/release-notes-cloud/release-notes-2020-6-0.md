@@ -65,7 +65,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒项目用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从&#x200B;**项目概述**&#x200B;页面和&#x200B;**环境**&#x200B;页面上的环境卡中使用。在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
 
-   有关更多详细信息，请参阅[删除沙盒项目](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+   有关更多详细信息，请参阅[删除沙盒项目](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 在登陆页面上显示引导标记，以告知和指示用户如何进行基本导航。
 
