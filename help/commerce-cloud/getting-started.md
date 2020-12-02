@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
+source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
@@ -64,9 +64,25 @@ AEM Commerce as a saCloud Service的入门过程分为两步：
 
 >[!NOTE]
 >
->您也可以使用[云管理器API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)配置云管理器变量。
+>或者，您也可以使用[云管理器API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)配置云管理器变量。
 
 有了这一功能，您就可以将AEM Commerce用作Cloud Service，并可以通过云管理器部署您的项目。
+
+## 启用分阶段目录功能（可选）{#staging}
+
+>[!NOTE]
+>
+>此功能仅在Magento企业版或Magento云中可用。
+
+1. 登录Magento并创建集成令牌。 有关详细信息，请参阅[基于令牌的身份验证](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)。 确保集成令牌仅具有对&#x200B;*资源的*&#x200B;访问权限。 `Content -> Staging`复制`Access Token`值。
+
+1. 在云管理器中设置`COMMERCE_AUTH_HEADER`机密变量：
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   ```
+
+   请参见[将AEM Commerce与Magento](#magento)连接，了解如何配置Adobe I/OCLI for Cloud Manager。
 
 ## 第三方商务集成{#integrations}
 
