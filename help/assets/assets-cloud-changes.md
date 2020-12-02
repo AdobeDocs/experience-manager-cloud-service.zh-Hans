@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager资产作为Cloud Service
-description: 与Adobe Experience Manager6.5相比，AEMCloud ServiceAdobe Experience Manager资产发生了显着变化。
+title: Adobe Experience Manager资产中a [!DNL Cloud Service]的显着变化
+description: 与Adobe Experience Manager6.5相比，AEM中Adobe Experience Manager资产的显着变化 [!DNL Cloud Service] 。
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 13%
+source-wordcount: '601'
+ht-degree: 6%
 
 ---
 
 
-# Experience Manager资产作为Cloud Service{#notable-changes}的显着变化
+# 对Experience Manager资产的显着更改为[!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多新功能和可能性。 但是，与作为Experience Manager的Experience Manager相比，在内部部署或Adobe托管服务中，Cloud Service资产之间存在许多差异。 本文档强调了资产功能的重要差异。
+Adobe Experience Manager公司[!DNL Cloud Service]为管理AEM项目带来了许多新功能和可能性。 但是，与[!DNL Cloud Service]Experience Manager相比，Adobe资产在内部部署或在Experience Manager托管服务中存在许多差异。 本文档强调了资产功能的重要差异。
 
 与Experience Manager6.5相比，主要区别在于：
 
@@ -22,14 +22,14 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 
 >[!NOTE]
 >
->这一文档突显了AEM Assets的显着变化。 有关AEM作为Cloud Service和其他模块的常规更改，请参阅：
+>这一文档突显了AEM Assets的显着变化。 有关[!DNL Cloud Service]和其他模块对Experience Manager的常规更改，请参阅：
 >
->* [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)
->* [AEM as a Cloud Service 概述 - 新增功能和改进功能](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service[架构](/help/core-concepts/architecture.md)
->* [对 AEM as a Cloud Service 的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
->* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
->* [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a 简介 [!DNL Cloud Service]](/help/overview/introduction.md)
+>* AEM a[概述a [!DNL Cloud Service] -新增功能和不同功能](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a [架构](/help/core-concepts/architecture.md)[!DNL Cloud Service]
+>* [AEM as a(发行说明 [!DNL Cloud Service] )的显着更改](/help/release-notes/aem-cloud-changes.md)
+>* [AEM Sites [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager [!DNL Cloud Service] 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## 资产摄取和上传{#asset-ingestion}
@@ -56,4 +56,4 @@ Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多�
 
 ## 删除了经典 UI {#classic-ui}
 
-经典UI不再作为Experience Manager提供。 标准界面是触屏优化UI。
+经典UI在Experience Manager中不再作为[!DNL Cloud Service]可用。 标准界面是触屏优化UI。
