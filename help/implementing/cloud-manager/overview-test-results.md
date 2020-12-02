@@ -18,7 +18,7 @@ Cloud Manager为Cloud Services管道支持三类别测试：
 
    代码质量测试会评估应用程序代码的质量。 代码质量管道在所有非生产和生产管道中紧接构建步骤后执行。
 
-   由云 [管理器执行的](/help/implementing/cloud-manager/custom-code-quality-rules.md) “自定义代码质量规则”是根据AEM Engineering的最佳实践创建的。
+   由云管理器执行的[自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)是根据AEM工程的最佳实践创建的。
 
 1. [功能测试](/help/implementing/cloud-manager/functional-testing.md)
 
