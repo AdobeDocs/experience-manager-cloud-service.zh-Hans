@@ -10,7 +10,7 @@ ht-degree: 73%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.3.0 {#release-notes}
+# 作为Cloud Service2020.3.0 {#release-notes}的Adobe Experience ManagerCloud Manager发行说明
 
 本页概述了AEM中作为Cloud Service2020.3.0的Cloud Manager发行说明。
 
