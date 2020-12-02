@@ -2,9 +2,9 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1930'
 ht-degree: 1%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] 通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务，丰富已上传数字文件的二进制内容。您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到[!DNL Experience Manager Assets]。
 
-提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到Experience Manager库的其他方法，包括桌面客户端(如Adobe资产链接或Experience Manager桌面应用程序)、上传和摄取客户将创建的脚本以及作为Experience Manager扩展添加的自动摄取集成。
+提供了许多上传方法。 除了最常用的浏览器上传外，还存在将资产添加到[!DNL Experience Manager]存储库的其他方法，包括桌面客户端(如Adobe资产链接或[!DNL Experience Manager]桌面应用程序)、上传和摄取客户将创建的脚本以及自动摄取集成（添加为[!DNL Experience Manager]扩展）。
 
-我们将重点介绍此处为最终用户上传方法，并提供指向文章的链接，这些文章描述了使用Experience ManagerAPI和SDK进行资产上传和获取的技术方面。
+我们将重点介绍此处为最终用户提供的上传方法，并提供指向文章的链接，这些文章描述了使用[!DNL Experience Manager] API和SDK进行资产上传和获取的技术方面。
 
-虽然可以以Experience Manager方式上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息，请参阅[支持的文件格式](file-format-support.md)。
+虽然您可以上传和管理[!DNL Experience Manager]中的任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息，请参阅[支持的文件格式](file-format-support.md)。
 
 您还可以选择对上传的资产进行其他处理。 您可以在上传资产的文件夹中配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 请参阅[上传时处理资产](#process-when-uploaded)。
 
 >[!NOTE]
 >
->Experience Manager作为[!DNL Cloud Service]利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端都支持它，如Experience Manager用户界面、Adobe资产链接、Experience Manager桌面应用程序，因此对最终用户是透明的。
+>[!DNL Experience Manager] 这样， [!DNL Cloud Service] 您就可以利用新的上传资产的方式——直接二进制上传。默认情况下，开箱即用的产品功能和客户端（如[!DNL Experience Manager]用户界面、[!DNL Adobe Asset Link]、[!DNL Experience Manager]桌面应用程序）都支持此功能，因此对最终用户是透明的。
 >
 >上传由技术团队需要使用新上传API和协议的客户自定义或扩展的代码。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 | [资产控制台用户界面](#upload-assets) | 偶尔上传、轻松下载、查找器上传。 请勿用于上传大量资产。 | 所有用户 |
 | [上传API](#upload-using-apis) | 用于上传过程中的动态决策。 | 开发人员 |
 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低容量资产摄取，但用于迁移。 | 管理员、营销人员 |
-| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | 创意、营销人员 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | 创意、营销人员 |
 | [资产批量摄取](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔进行批量迁移。 仅用于支持的数据存储。 | 管理员、开发人员 |
 
 ## 上传资产{#upload-assets}
@@ -144,7 +144,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 要上传更多文件，请使用以下方法之一。 另请参阅[用例和方法](#upload-methods-comparison)
 
 * [资产上传API](developer-reference-material-apis.md#asset-upload-technical):使用自定义上传脚本或工具，该脚本或工具根据需要利用API添加对资产的其他处理（例如，翻译元数据或重命名文件）。
-* [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):对于从本地文件系统上传资产的创意专业人士和营销人员非常有用。使用它上传可在本地使用的嵌套文件夹。
+* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):对于从本地文件系统上传资产的创意专业人士和营销人员非常有用。使用它上传可在本地使用的嵌套文件夹。
 * [批量摄取工具](#asset-bulk-ingestor):在部署时，可偶尔或最初用于获取大量资产 [!DNL Experience Manager]。
 
 ### 资产批量摄取工具{#asset-bulk-ingestor}
@@ -181,14 +181,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!NOTE]
 >
->在设置内容并部署到Experience Manager时，需要仔细规划、考虑和选择工具，才能将批量上传作为从其他系统迁移内容的一部分。 有关内容迁移方法的指南，请参阅[部署指南](/help/implementing/deploying/overview.md)。
+>在设置和部署到[!DNL Experience Manager]时，要将批量上传作为从其他系统迁移的内容的一部分，需要仔细规划、考虑和选择工具。 有关内容迁移方法的指南，请参阅[部署指南](/help/implementing/deploying/overview.md)。
 
 ## 使用桌面客户端{#upload-assets-desktop-clients}上传资产
 
-除了Web浏览器用户界面外，Experience Manager还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
+除了Web浏览器用户界面外，[!DNL Experience Manager]还支持桌面上的其他客户端。 它们还提供上传体验，无需转到Web浏览器。
 
-* [Adobe资](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 产链接可从Adobe Photoshop、Adobe Illustrator [!DNL Experience Manager] 和Adobe InDesign桌面应用程序访问资产。您可以从这些桌面应用程序内的文档资产链接用户界面直接将当前打开的Adobe上传到[!DNL Experience Manager]。
-* [Experience Manager桌](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 面应用程序简化了在桌面上处理资源的工作，它们与文件类型无关，也与处理资源的本机应用程序无关。从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 提供从Adobe Photoshop、Adobe Illustrator和 [!DNL Experience Manager] Adobe InDesign桌面应用程序访问资源的功能。您可以从这些桌面应用程序内的文档资产链接用户界面直接将当前打开的Adobe上传到[!DNL Experience Manager]。
+* [[!DNL Experience Manager] 桌面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 应用程序简化了在桌面上处理资源的工作，这些资源独立于其文件类型或处理它们的本机应用程序。从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
 
 ## 上传{#process-when-uploaded}时处理资产
 
@@ -218,8 +218,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [关于 Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe资产链接文档](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 文档](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [资产上传的技术参考](developer-reference-material-apis.md#asset-upload-technical)
 
