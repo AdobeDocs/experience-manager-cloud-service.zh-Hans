@@ -12,7 +12,7 @@ ht-degree: 21%
 
 # 基于角色的权限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager 预配置了一些具有适当权限的角色。]例如，开发人员开发代码并具有将代码推送到Git存储库 **的权限**。 或者，业务所有者具有不同的权限，允许他们定义关键绩效指标(KPI)并批准部署。
+[!UICONTROL Cloud Manager 预配置了一些具有适当权限的角色。]例如，开发人员开发代码并具有将代码推送到&#x200B;**Git存储库**&#x200B;的权限。 或者，业务所有者具有不同的权限，允许他们定义关键绩效指标(KPI)并批准部署。
 
 ## 用户权限 {#user-permissions}
 
