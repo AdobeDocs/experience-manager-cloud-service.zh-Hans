@@ -10,9 +10,9 @@ ht-degree: 41%
 ---
 
 
-# 使用向导 {#using-wizard-to-create-an-aem-application-project}
+# 使用向导{#using-wizard-to-create-an-aem-application-project}
 
-为了帮助新客户入门，Cloud Manger现在能够创建最少的AEM项目作为起点。 此过程基于AEM Project [**Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
+为了帮助新客户入门，Cloud Manger现在能够创建最少的AEM项目作为起点。 此过程基于&#x200B;[**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 
 请按照以下步骤使用向导在云管理器中创建AEM应用程序项目：
@@ -25,11 +25,11 @@ ht-degree: 41%
 
    ![](assets/create-wizard2.png)
 
-1. “正 **在创建的项目** ”拼贴显示在“ *项目概述* ”屏幕上。
+1. **正在创建的项目**&#x200B;拼贴显示在&#x200B;*项目概述*&#x200B;屏幕上。
 
    ![](assets/create-wizard3.png)
 
 1. 程序创建完成后，“程序概 **述”(Program Overview** )页面上会显 *示“添加环境* ”(Add Environment)拼贴。
    ![](assets/create-wizard4.png)
 
-   请参阅 [管理环境](/help/implementing/cloud-manager/manage-environments.md) ，了解如何添加或管理环境。
+   请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)以了解如何添加或管理环境。
