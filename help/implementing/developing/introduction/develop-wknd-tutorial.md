@@ -22,7 +22,7 @@ ht-degree: 20%
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[WKND开发人员教程可在此处获取](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，并指导您使用最新技术和最佳实践创建AEM项目。
+[此处提供WKND开发人员教](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 程，并指导您使用最新技术和最佳实践创建AEM项目。
 
 ## 核心概念 {#core-concepts}
 
