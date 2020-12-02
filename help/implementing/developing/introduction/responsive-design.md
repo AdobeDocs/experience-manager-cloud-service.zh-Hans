@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 响应式设计 {#responsive-design}
+# 响应式设计{#responsive-design}
 
 设计您的体验，使其能够适应显示体验的客户端视图。 通过响应式设计，可以在多种设备上以两种方向有效地显示相同的页面。 下图演示了页面对视图端口大小更改做出响应的一些方式：
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 * [流体网格](#developing-a-fluid-grid)
 * [自适应图像](#using-adaptive-images)
 
-在设计时，使用“模 **拟器** ”工具栏根据不同的屏幕大小预览页面。
+在进行设计时，请使用&#x200B;**模拟器**&#x200B;工具栏预览页面，使其适合各种屏幕大小。
 
-## 开发之前 {#before-you-develop}
+## 开发{#before-you-develop}之前
 
 在开发支持网页的AEM应用程序之前，应该做出一些设计决策。 例如，您需要具有以下信息：
 
@@ -46,29 +46,29 @@ ht-degree: 0%
 * 目标视区大小
 * 每个目标视区大小的页面布局
 
-### 应用程序结构 {#application-structure}
+### 应用程序结构{#application-structure}
 
 典型的AEM应用程序结构支持所有响应式设计实现：
 
-* 页面组件位于下方 `/apps/<application_name>/components`
-* 模板位于以下 `/apps/<application_name>/templates`
+* 页面组件位于`/apps/<application_name>/components`下
+* 模板位于`/apps/<application_name>/templates`下
 
-## 使用媒体查询 {#using-media-queries}
+## 使用媒体查询{#using-media-queries}
 
 媒体查询支持选择性地使用CSS样式进行页面渲染。 AEM开发工具和功能使您能在应用程序中有效、高效地实施媒体查询。
 
-W3C组提供介质 [查询建](https://www.w3.org/TR/css3-mediaqueries/) 议，用于描述此CSS3功能和语法。
+W3C组提供[媒体查询](https://www.w3.org/TR/css3-mediaqueries/)推荐，用于描述此CSS3功能和语法。
 
-### 创建CSS文件 {#creating-the-css-file}
+### 创建CSS文件{#creating-the-css-file}
 
 在CSS文件中，根据目标设备的属性定义媒体查询。 以下实施策略对于管理每个媒体查询的样式非常有效：
 
-* 使用“ [客户端库](clientlibs.md) ”文件夹定义呈现页面时组合的CSS。
+* 使用[客户端库文件夹](clientlibs.md)定义呈现页面时组合的CSS。
 * 在单独的CSS文件中定义每个媒体查询和相关的样式。 使用表示媒体查询设备功能的文件名很有用。
 * 在单独的CSS文件中定义所有设备通用的样式。
 * 在“客户端库”文件夹的css.txt文件中，按照组合的CSS文件中的要求对列表CSS文件进行排序。
 
-WKND [教程使用](develop-wknd-tutorial.md) 此策略在站点设计中定义样式。 WKND使用的CSS文件位于 `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`。
+[WKND教程](develop-wknd-tutorial.md)使用此策略定义站点设计中的样式。 WKND使用的CSS文件位于`/apps/wknd/clientlibs/clientlib-grid/less/grid.less`。
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
