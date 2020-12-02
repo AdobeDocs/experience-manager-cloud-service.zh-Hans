@@ -1,11 +1,11 @@
 ---
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
-description: 将您的数字资产作为Cloud Service添加到 [!DNL Adobe Experience Manager] 。
+description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: 9c42bd216edd0174c9a4c9b706c0e08ca36428f6
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 3%
+source-wordcount: '1972'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +20,23 @@ ht-degree: 3%
 
 虽然可以以Experience Manager方式上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息，请参阅[支持的文件格式](file-format-support.md)。
 
-您还可以选择对上传的资产进行其他处理。 您可以在上传资产的文件夹中配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 有关详细信息，请参阅下面的[附加处理](#additional-processing)。
+您还可以选择对上传的资产进行其他处理。 您可以在上传资产的文件夹中配置大量资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 请参阅[上传时处理资产](#process-when-uploaded)。
 
 >[!NOTE]
 >
->Experience Manager作为Cloud Service，利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端都支持它，如Experience Manager用户界面、Adobe资产链接、Experience Manager桌面应用程序，因此对最终用户是透明的。
+>Experience Manager作为[!DNL Cloud Service]利用一种新的资产上传方式——直接二进制上传。 默认情况下，开箱即用的产品功能和客户端都支持它，如Experience Manager用户界面、Adobe资产链接、Experience Manager桌面应用程序，因此对最终用户是透明的。
 >
 >上传由技术团队需要使用新上传API和协议的客户自定义或扩展的代码。
+
+资产([!DNL Cloud Service])提供以下上传方法。 Adobe建议您在使用上传选项之前了解其用例和适用性。
+
+| 上传方法 | 何时使用？ | 主要人物 |
+|---------------------|----------------|-----------------|
+| [资产控制台用户界面](#upload-assets) | 偶尔上传、轻松下载、查找器上传。 请勿用于上传大量资产。 | 所有用户 |
+| [上传API](#upload-using-apis) | 用于上传过程中的动态决策。 | 开发人员 |
+| [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低容量资产摄取，但用于迁移。 | 管理员、营销人员 |
+| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | 创意、营销人员 |
+| [资产批量摄取](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔进行批量迁移。 仅用于支持的数据存储。 | 管理员、开发人员 |
 
 ## 上传资产{#upload-assets}
 
@@ -100,54 +110,74 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 当资产已存在{#handling-upload-existing-file}时处理上传
 
-如果您上传的资产名称与您上传资产的位置中已有资产的名称相同，则会显示一个警告对话框。
+您可以上传与现有资产路径相同（名称相同，位置相同）的资产。 但是，将显示一个警告对话框，其中包含以下选项：
 
-您可以选择替换现有资产，创建另一个版本，或者重命名上传的新资产以同时保留两个资产。如果您替换现有资产，则资产的元数据以及您对现有资产所做的任何先前修改（例如注释、裁剪等）都将被删除。 如果您选择保留这两个资产，则会重命名新资产，并在其名称后附加数字`1`。
+* 替换现有资产：如果您替换现有资产，则资产的元数据以及您对现有资产所做的任何先前修改（例如注释、裁剪等）都将被删除。
+* 创建另一个版本：现有资产的新版本将在存储库中创建。 您可以视图[!UICONTROL 时间轴]中的两个版本，并可以根据需要还原到先前已有的版本。
+* 同时保留：如果您选择保留这两个资产，则会重命名新资产，并在其名称后附加数字`1`。
 
 >[!NOTE]
 >
 >在[!UICONTROL 名称冲突]对话框中选择&#x200B;**[!UICONTROL 替换]**&#x200B;时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
 >
->如果启用“资产分析”以通过Adobe Analytics跟踪展示次数／点击次数，则重新生成的资产ID将使在Analytics上为资产捕获的数据失效。
+>如果启用“资产分析”以跟踪观感或使用[!DNL Adobe Analytics]进行点击，则重新生成的资产ID将使在[!DNL Analytics]上为资产捕获的数据无效。
 
 要在[!DNL Assets]中保留重复资产，请单击&#x200B;**[!UICONTROL 保留]**。 要删除您上传的重复资产，请点按／单击&#x200B;**[!UICONTROL 删除]**。
 
 ### 文件名处理和禁止字符{#filename-handling}
 
-[!DNL Experience Manager Assets] 阻止您上传文件名中带有禁止字符的资产。如果您尝试上传包含不允许的字符或更多字符的资产，[!DNL Assets]会显示一条警告消息并停止上传，直到您删除这些字符或上传时使用允许的名称。
+[!DNL Experience Manager Assets] 尝试阻止您上传文件名中带有禁止字符的资产。如果您尝试上传包含不允许的字符或更多字符的资产，[!DNL Assets]会显示一条警告消息并停止上传，直到您删除这些字符或上传时使用允许的名称。 某些上传方法不会阻止您上传文件名中包含禁止字符的资产，但会用`-`替换这些字符。
 
-为了符合组织的特定文件命名约定，[!UICONTROL 上传资产]对话框允许您为上传的文件指定长名称。
+为了符合组织的特定文件命名约定，[!UICONTROL 上传资产]对话框允许您为上传的文件指定长名称。 不支持以下(以空格分隔的列表)字符：
 
-但是，不支持以下(以空格分隔的列表)字符：
-
-* 资产文件名中不能包含`* / : [ \\ ] | # % { } ? &`
-* 资产文件夹名称不能包含`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 资产文件名`* / : [ \\ ] | # % { } ? &`的字符无效
+* 资产文件夹名称`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`的字符无效
 
 ## 批量上传资产{#bulk-upload}
+
+批量资产摄取工具可以高效地处理数千个资产。 但是，大规模摄取不仅仅是广泛和大型的文件转储或盲迁移。 如果它是一个有意义的项目，并且符合您的业务目的，则规划和管理资产会带来效率更高的摄取。 所有的收入都不一样，要做概括，就必须考虑细致的存储库组成和业务需求。 以下是计划和执行批量摄取的总体建议：
+
+* 特选资产：删除DAM中不需要的资产。 考虑删除未使用、过时或重复资产。 这减少了数据传输和资产摄取量，从而加快了摄取速度。
+* 组织资产：考虑按照某种逻辑顺序组织内容，例如按文件大小、文件格式、用例或优先级。 通常，大型复杂文件需要更多处理。 您还可以考虑使用文件大小筛选选项（如下所述）单独引入大文件。
+* 错开收录：考虑将摄取分解为多个批量摄取项目。 这使您能够更快地查看内容并根据需要更新摄取。 例如，您可以在非高峰时间或以多个区块逐步摄取处理密集型资产。 但是，您可以一次性摄取较小且更简单的资产，而无需进行大量处理。
 
 要上传更多文件，请使用以下方法之一。 另请参阅[用例和方法](#upload-methods-comparison)
 
 * [资产上传API](developer-reference-material-apis.md#asset-upload-technical):使用自定义上传脚本或工具，该脚本或工具根据需要利用API添加对资产的其他处理（例如，翻译元数据或重命名文件）。
 * [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):对于从本地文件系统上传资产的创意专业人士和营销人员非常有用。使用它上传可在本地使用的嵌套文件夹。
-* [批量摄取工具](#bulk-ingestion-tool):在部署时，可偶尔或最初用于获取大量资产 [!DNL Experience Manager]。
+* [批量摄取工具](#asset-bulk-ingestor):在部署时，可偶尔或最初用于获取大量资产 [!DNL Experience Manager]。
 
-### 批量资产摄取工具{#bulk-ingestion-tool}
+### 资产批量摄取工具{#asset-bulk-ingestor}
 
-添加以下详细信息：
-
-* 此方法的使用案例。
-* 适用角色
-* 配置步骤
-* 如何管理摄取作业和查看状态。
-* 要记住的管理或策划要摄取的资产。
+该工具仅提供给管理员组，用于从Azure或S3数据存储中大规模获取资源。
 
 要配置此工具，请执行以下步骤：
 
-1. 创建批量导入配置。  导航到工具>资产>批量导入>选择创建按钮。
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]**。 选择&#x200B;**[!UICONTROL 创建]**&#x200B;选项。
 
 ![批量导入程序配置](assets/bulk-import-config.png)
 
-1. 提供适当的详细信息。
+1. 在[!UICONTROL 批量导入配置]页上，提供所需的值。
+
+   * [!UICONTROL 标题]:描述性标题。
+   * [!UICONTROL 导入源]:选择适用的数据源。
+   * [!UICONTROL 按最小大小筛选]:提供资源的最小文件大小(MB)。
+   * [!UICONTROL 按最大大小筛选]:提供资源的最大文件大小(MB)。
+   * [!UICONTROL 排除MIME类型]:要从摄取中排除的MIME类型的以逗号分隔的列表。例如，`image/jpeg, image/.*, video/mp4`。
+   * [!UICONTROL 包括Mime类型]:要包含在摄取中的MIME类型的逗号分隔列表。请参阅[所有支持的文件格式](/help/assets/file-format-support.md)。
+   * [!UICONTROL 导入模式]:选择跳过、替换或创建版本。“跳过”模式是默认模式，在此模式下，如果资产已存在，则会跳过以导入资产。 请参阅[替换和创建版本选项](#handling-upload-existing-file)的含义。
+   * [!UICONTROL 资产目标文件夹]:在要导入资产的DAM中导入文件夹。例如，`/content/dam/imported_assets`
+
+1. 您可以删除、修改、执行和执行您创建的登录配置，并执行更多操作。 选择批量导入引擎配置时，工具栏中提供以下选项。
+
+   * [!UICONTROL 编辑]:编辑所选配置。
+   * [!UICONTROL 删除]:删除所选配置。
+   * [!UICONTROL 检查]:验证与数据存储的连接。
+   * [!UICONTROL 练习]:调用批量摄取的测试运行。
+   * [!UICONTROL 运行]:执行所选配置。
+   * [!UICONTROL 停止]:终止活动配置。
+   * [!UICONTROL 作业状态]:视图配置在正在进行的导入作业中或用于已完成作业时的状态。
+   * [!UICONTROL 视图资产]:视图目标文件夹（如果存在）。
 
 >[!NOTE]
 >
@@ -160,18 +190,18 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [Adobe资](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 产链接可从Adobe Photoshop、Adobe Illustrator [!DNL Experience Manager] 和Adobe InDesign桌面应用程序访问资产。您可以从这些桌面应用程序内的文档资产链接用户界面直接将当前打开的Adobe上传到[!DNL Experience Manager]。
 * [Experience Manager桌](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 面应用程序简化了在桌面上处理资源的工作，它们与文件类型无关，也与处理资源的本机应用程序无关。从本地文件系统上传嵌套文件夹层次结构中的文件尤为有用，因为浏览器上传仅支持上传平面文件列表。
 
-## 附加处理{#additional-processing}
+## 上传{#process-when-uploaded}时处理资产
 
-为了对上传的资产进行其他处理，您可以对上传资产的文件夹使用资产处理用户档案用户档案。 文件夹&#x200B;**[!UICONTROL 属性]**&#x200B;对话框中提供这些属性。
+为了对已上传的资产进行其他处理，您可以对上传文件夹应用处理用户档案。 这些用户档案位于[!DNL Assets]文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;页面中。
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-提供以下用户档案:
+可以使用以下选项卡：
 
 * [元数据](metadata-profiles.md) 配置文件允许您将默认元数据属性应用到上传到该文件夹的资产
 * [处理](asset-microservices-configure-and-use.md) 配置文件允许您生成的演绎版数量超出默认值。
 
-此外，如果您的环境中启用了Dynamic Media:
+此外，如果部署中启用了[!DNL Dynamic Media]，则可以使用以下选项卡：
 
 * [Dynamic Media图像配](dynamic-media/image-profiles.md) 置文件允许您对上传的资&#x200B;**[!UICONTROL 产应]** 用特定裁剪（智能裁剪和像素裁剪）和锐化配置。
 * [Dynamic Media视频配置](dynamic-media/video-profiles.md) 文件允许您应用特定的视频编码用户档案（分辨率、格式、参数）。
@@ -186,22 +216,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 开发人员参考的[asset upload](developer-reference-material-apis.md#asset-upload-technical)部分提供了上传API和协议的技术详细信息，以及到开放源码SDK和示例客户端的链接。
 
-## 基于场景的上传方法{#upload-methods-comparison}
-
-| 上传方法 | 何时使用？ | 主要角色（管理员、开发人员、创意用户、营销人员） |
-|---------------------|-------------------------------------------------------------------------------------------|------------|
-| 资产控制台/UI | 偶尔上传、轻松下载、查找器上传。 不适用于大批量摄取。 | 所有 |
-| 上传API | 用于在上传期间动态决策资产 | 开发人员 |
-| 桌面应用程序 | 低容量资产摄取，但用于迁移 | 管理员、营销人员 |
-| 资产链接 | 供创意人员和营销人员从受支持的Creative Cloud桌面应用程序内协作处理资产。 | 创意、营销人员 |
-| 批量摄取工具 | 从数据存储中批量摄取资产。  建议迁移和偶尔批量摄取。 | 管理员、开发人员 |
-
-描述何时使用什么方法。
-
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [关于 Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe资产链接文档](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [资产上传的技术参考](developer-reference-material-apis.md#asset-upload-technical)
 
