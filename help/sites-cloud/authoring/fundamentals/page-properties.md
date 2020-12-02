@@ -66,17 +66,17 @@ ht-degree: 88%
 
       >[!NOTE]
       >
-      > 有关 [如何配置相关自动复制的详细信息](/help/operations/replication.md#on-and-off-times-trigger-configuration) ，请参阅开启和关闭时间——触发器配置。
+      > 有关如何配置相关自动复制的详细信息，请参见[开启和关闭时间——触发器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
 
-      * 如果已 [经发布(手动](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) )，则在指定时间呈现之前，此页面将保持休眠（隐藏）。
+      * 如果[已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，则在指定时间呈现之前，此页面将保持休眠（隐藏）。
       * 如果页面未发布并配置为自动复制，则页面将在指定的时间自动发布并呈现。
       * 如果未发布，且未配置为自动复制，则页面将不会自动发布，因此当尝试访问页面时，将显示404。
-   * 对于要立即发布&#x200B;**的页面** ，请将这 **些字段(开始**、结束时间)保留为空，并在发布环境中保留这些字段，直到取消激活它们（正常情况）。
+   * 对于要立即发布的页面，将这些字段（**开始时间**&#x200B;和&#x200B;**结束时间**）留空，并在发布环境中可用，直到取消激活它们（正常情况）。
 
 * **结束时间**
 
-   * 与“开始时 **间** ”并行，它定义发布页面在发布环境上隐藏的时间。
-   * 对于要立即发布&#x200B;**的页面** ，请将这 **些字段(开始**、结束时间)保留为空，并在发布环境中保留这些字段，直到取消激活它们（正常情况）。
+   * 与&#x200B;**On Time**&#x200B;并行，它定义发布环境上隐藏已发布页面的时间。
+   * 对于要立即发布的页面，将这些字段（**开始时间**&#x200B;和&#x200B;**结束时间**）留空，并在发布环境中可用，直到取消激活它们（正常情况）。
 
 * **虚 URL**
 
@@ -156,7 +156,7 @@ ht-degree: 88%
 
    * 指定导出配置。
 
-### 缩略图 {#thumbnail}
+### 缩略图  {#thumbnail}
 
 显示页面缩略图图像。您可以：
 
@@ -236,14 +236,14 @@ ht-degree: 88%
    * 控制将修改传播到 Live Copy 的情况。
 
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    * 在多站点管理中为 Live Copy 页面定义属性。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * 控制将从 Blueprint 中传播修改的情况。
 
-### 站点结构 {#site-structure}
+### 站点结构  {#site-structure}
 
 * 提供具有全站点功能的页面的链接，例如&#x200B;**注册页面**、**脱机页面**&#x200B;以及其他。
 
