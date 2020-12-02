@@ -11,7 +11,7 @@ ht-degree: 42%
 ---
 
 
-# 视图资产操作日志在活动流中 {#activity-stream-in-timeline}
+# 视图资产操作日志在活动流{#activity-stream-in-timeline}中
 
 这项功能可将资产的活动日志显示在时间轴上。如果您在Adobe Experience Manager(AEM)资产中执行下列任何与资产相关的操作，活动流功能会更新时间轴以反映活动。
 
@@ -32,7 +32,7 @@ ht-degree: 42%
 >
 >临时工作流不会显示在时间轴中，因为没有为这些工作流保存历史记录信息。
 
-要视图活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表 **[!UICONTROL 中]** 选择时间轴。
+要视图活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL 时间轴]**。
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
