@@ -117,7 +117,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新增功能 {#what-is-new-refactoring}
 
-* AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
+* AIO-CLI插件支持Repository Modernizer并允许用户使用插件执行该工具。
 
    请参阅[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)以获取更多详细信息。
 
