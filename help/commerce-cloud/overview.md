@@ -11,13 +11,13 @@ ht-degree: 1%
 ---
 
 
-# Introducing AEM Commerce as a Cloud Service {#commerce-intro}
+# 将AEM Commerce作为Cloud Service{#commerce-intro}
 
 Experience Manager商务作为Cloud Service，由商务集成框架(CIF)组成，该框架是Adobe推荐的模式，用于将Magento和其他第三方商务解决方案的商务服务与Experience Cloud集成和扩展。 这使Adobe客户能够基于最新技术提供出众的个性化全渠道购物体验。
 
 Commerce Integration Framework是一个附加模块，用于Experience Manager作为Cloud Service，并提供一组创作工具、组件和参考店面，以加速Experience Manager作为Cloud Service和商务解决方案之间的集成开发。
 
-## CIF优惠 {#cif-benefits}
+## CIF优势{#cif-benefits}
 
 主要益处是：
 
@@ -32,22 +32,22 @@ Commerce Integration Framework是一个附加模块，用于Experience Manager�
 
 * CIF提供与AEM和Magento等Adobe解决方案的即装即用集成
 
-## CIF Elements {#cif-elements}
+## CIF元素{#cif-elements}
 
 ![CIF Elements](/help/commerce-cloud/assets/cif-overview1.jpg)
 
 
-### 用于创作工具的CIF加载项 {#add-on-authoring-tools}
+### 用于创作工具的CIF加载项{#add-on-authoring-tools}
 
 CIF加载项提供对商务创作工具(如产品控制台、产品和类别选择器或针对作者的产品搜索)的访问，使其能够创建包含营销和商务内容的丰富体验。 该加载项还通过GraphQL管理到Magento（或替代商务系统）的后端连接。 设置加载项后，它将作为Cloud Service环境自动部署在AEM上。
 
-### AEM CIF核心组件 {#aem-cif-core}
+### AEM CIF核心组件{#aem-cif-core}
 
 AEM CIF核心组件是服务器端和客户端呈现的组件，支持MagentoGraphQL。 他们习惯于基于AEM技术创建静态、可缓存和SEO友好型商务商店。
 
 提供基本组件，这些组件在商务实施(如产品详细信息、产品列表、导航、搜索等)中很常见。 它们可以按原样使用或进行扩展。
 
-AEM [CIF核心组件与](https://github.com/adobe/aem-core-cif-components) “ [AEM Sites核心组件](https://github.com/adobe/aem-core-wcm-components) ”类似，但专门用于商务特定用例。
+[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)的工作方式与[AEM Sites核心组件](https://github.com/adobe/aem-core-wcm-components)类似，但专门用于商务特定用例。
 
 这些组件的主要优点是：
 
@@ -57,11 +57,11 @@ AEM [CIF核心组件与](https://github.com/adobe/aem-core-cif-components) “ [
 
 提供了产品Teaser和产品传送等组件，以使AEM作者能够在AEM中创建体验页面，并将营销和商务内容相结合。 这些组件可以轻松拖放到AEM中创建的内容页面，并使用CIF创作工具(如Cloud Service中的产品或类别选取器)链接到特定产品或类别。
 
-所有组件均在GitHub上开 [放源](https://github.com/adobe/aem-core-cif-components)。 这显示了将来所做的更改的完全透明度，并允许您非常轻松地获得最新版本。 您还可以提供可整合的提升请求和错误修复。
+所有组件均在[GitHub](https://github.com/adobe/aem-core-cif-components)上开放源。 这显示了将来所做的更改的完全透明度，并允许您非常轻松地获得最新版本。 您还可以提供可整合的提升请求和错误修复。
 
 ### AEM Venia Storefront {#aem-venia-storefront}
 
-AEM [Venia Storefront是](https://github.com/adobe/aem-cif-guides-venia) 一个现代化、可供生产使用的参考店面，展示B2C的基本商务旅程。 它可用于启动商务项目，并使用AEM、CIF和Magento加速项目。 它演示了集成AEM和Magento的最佳实践，并演示了如何使 [用AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)[和AEM Sites核心组件](https://github.com/adobe/aem-core-wcm-components) ，并支持Adobe商务GraphQL端点。 它还为售前人员提供一个参考站点，以演示AEM与Magento之间的集成。
+[AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia)是展示基本B2C商务旅程的现代生产就绪型参考店面。 它可用于启动商务项目，并使用AEM、CIF和Magento加速项目。 它演示了集成AEM和Magento的最佳实践，并演示了如何使用[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)和[AEM Sites核心组件](https://github.com/adobe/aem-core-wcm-components)并支持Adobe商务GraphQL端点。 它还为售前人员提供一个参考站点，以演示AEM与Magento之间的集成。
 
 AEM Venia Storefront是一个混合页面应用程序，AEM拥有玻璃，Magento以无头方式为商务后端提供支持。 店面中同时使用服务器端渲染和客户端渲染。 服务器端渲染用于交付静态内容，客户端渲染用于交付动态内容。
 
@@ -73,25 +73,25 @@ AEM Venia Storefront是一个混合页面应用程序，AEM拥有玻璃，Magent
 
 此参考店面使用客户端购物车组件来呈现购物车和结帐表单，以展示完整的体验集成模式，您可以通过Magento以完全无头的方式运行和AEM拥有玻璃来提供商务体验。 建议使用所提供的抽象支付方法。 这使得浏览器客户端与支付网关提供商直接通信，从而Adobe云和Magento云都不会保存或传递PCI敏感数据。
 
-#### 帐户管理 {#account-management}
+#### 帐户管理{#account-management}
 
 帐户管理由Magento处理，而参考店面利用基于客户端React的组件，使AEM能够为以下功能提供体验：创建帐户、登录和忘记密码。
 
-AEM Venia Storefront项目是开放源，有关详细信息，请参 [阅AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia)。
+AEM Venia Storefront项目是开放源，有关详细信息，请参阅[AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia)。
 
 ### AEM 项目原型 {#aem-project-archtype}
 
-The [AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. (可 [选)AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) ，可以包含在新生成的项目中。
+[AEM项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)可用于创建基于最佳实践的最小Adobe Experience Manager项目，作为您自己的AEM项目的起点。 可选地，[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)可以包含在新生成的项目中。
 
-### CIF扩展层 {#cif-extension}
+### CIF扩展层{#cif-extension}
 
 CIF扩展层是承载复杂业务逻辑的中间层。 它运行于Adobe I/O Runtime平台，该平台是Adobe的无服务器平台。 它允许您通过将业务和流程逻辑注入微服务级别来扩展端到端服务调用。 例如，业务逻辑将使用位置和渠道来确定库存策略。 例如，流程逻辑可以检索个性化信息。
 
-### CIF集成层 {#cif-integration-layer}
+### CIF集成层{#cif-integration-layer}
 
-CIF集成层用于与其他商务解决方案的集成标准化。 它运行于Adobe I/O Runtime平台(Adobe的无服务器平台)上，通过映射第三方API与Adobe商务API，支持微服务级别的集成。 为了帮助您开始构建与AEM的第三方集成，我们创建了一 [个参考实](https://github.com/adobe/commerce-cif-graphql-integration-reference) 施，以演示如何通过Adobe商务API(Magento图QL API)集成非Magento商务后端。
+CIF集成层用于与其他商务解决方案的集成标准化。 它运行于Adobe I/O Runtime平台(Adobe的无服务器平台)上，通过映射第三方API与Adobe商务API，支持微服务级别的集成。 为了帮助您开始构建与AEM的第三方集成，我们创建了[引用实现](https://github.com/adobe/commerce-cif-graphql-integration-reference)，以演示如何通过Adobe商务API(MagentoGraphQL API)集成非Magento商务后端。
 
-## AEM商务集成模式 {#aem-commerce-integration}
+## AEM Commerce Integration Patterns {#aem-commerce-integration}
 
 下面显示了一些常用的AEM Commerce集成模式。
 
