@@ -10,7 +10,7 @@ ht-degree: 81%
 ---
 
 
-# 将工作流应用于页面 {#applying-workflows-to-pages}
+# 将工作流应用于页面  {#applying-workflows-to-pages}
 
 创作时，您可以调用工作流以在页面上执行操作；还可以应用多个工作流。
 
@@ -58,30 +58,30 @@ ht-degree: 81%
 
 * [在“创建工作流”向导中指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 从“站点”工具栏启动工作流 {#starting-a-workflow-from-the-sites-toolbar}
+### 从“站点”工具栏启动工作流  {#starting-a-workflow-from-the-sites-toolbar}
 
-You can start a workflow from the toolbar of the **Sites** console:
+您可以从&#x200B;**站点**&#x200B;控制台的工具栏开始工作流：
 
 1. 导航到所需的页面并选择该页面。
 
-1. From the **Create** option in the toolbar you can now select **Workflow**.
+1. 现在，您可以从工具栏的&#x200B;**创建**&#x200B;选项中选择&#x200B;**工作流**。
 
    ![从工具栏创建工作流](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. **创建工作流**&#x200B;向导将帮助您[指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 从时间轴启动工作流 {#starting-a-workflow-from-the-timeline}
+### 从时间轴启动工作流  {#starting-a-workflow-from-the-timeline}
 
 您可以从&#x200B;**时间轴**&#x200B;中启动要应用于所选资源的工作流。
 
-1. [选择资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) ，然 [后打开](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) Timeline（或打开Timeline，然后选择资源）。
+1. [选择资](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 源并打 [开时](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 间轴（或打开时间轴，然后选择资源）。
 1. 可以使用评论字段中的箭头显示&#x200B;**启动工作流**：
 
    ![从时间轴创建工作流](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
 1. **创建工作流**&#x200B;向导将帮助您[指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 在“创建工作流”向导中指定工作流详细信息 {#specifying-workflow-details-in-the-create-workflow-wizard}
+### 在“创建工作流”向导中指定工作流详细信息  {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 **创建工作流**&#x200B;向导将帮助您选择工作流并指定所需的详细信息。
 
@@ -119,7 +119,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加内容** ，打开路 [径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) ，并选择其他资源；在浏览器中时，单击／点按 **选择** ，以将内容添加到工作流实例。
+   * **添加** 内容以打开路 [径浏](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 览器并选择其他资源；在浏览器中时，单击／点 **** 按选择以将内容添加到工作流实例。
 
    * 现有资源以查看其他操作：
 
@@ -139,9 +139,9 @@ You can start a workflow from the toolbar of the **Sites** console:
    >
    >如果添加其他资源，则可以使用“返回 **”** ，在“属性”步骤中调整“ **保留工作流包** ”的 **设置** 。
 
-1. Use **Create** to close the wizard and create the workflow instance. “站点”控制台中随即会显示一则通知。
+1. 使用&#x200B;**创建**&#x200B;关闭向导并创建工作流实例。 “站点”控制台中随即会显示一则通知。
 
-## 从页面编辑器启动工作流 {#starting-a-workflow-from-the-page-editor}
+## 从页面编辑器启动工作流  {#starting-a-workflow-from-the-page-editor}
 
 编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。此选项将打开一个对话框，您可以在其中指定所需的工作流，如果需要，还可以指定标题：
 
