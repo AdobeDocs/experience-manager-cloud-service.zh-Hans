@@ -10,7 +10,7 @@ ht-degree: 81%
 ---
 
 
-# 提升启动项 {#promoting-launches}
+# 提升启动项  {#promoting-launches}
 
 您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。提升启动页面时，源页面的对应页面会被替换为提升页面的内容。提升启动页面时可以做出以下选择：
 
@@ -25,7 +25,7 @@ ht-degree: 81%
 
 >[!CAUTION]
 >
->不能并行提升单个启动项。This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>不能并行提升单个启动项。这意味着，在同一次启动中同时执行两个提升操作可能会导致错误- `Launch could not be promoted`（以及日志中的冲突错误）。
 
 >[!CAUTION]
 >
@@ -47,12 +47,12 @@ ht-degree: 81%
 您可以从&#x200B;**站点**&#x200B;控制台或&#x200B;**启动项**&#x200B;控制台提升启动项：
 
 1. 打开：
-   * The **Sites** console:
-      1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). 此时将显示所有引用。
+   * **站点**&#x200B;控制台：
+      1. 打开[引用边栏](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)，然后使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)选择所需的源页面（或选择并打开引用边栏，顺序不重要）。 此时将显示所有引用。
       1. 选择&#x200B;**启动项**（例如“启动项 (1)”）以显示特定启动项的列表。
       1. 选择特定的启动项以显示可用的操作。
       1. 选择&#x200B;**提升启动项**&#x200B;以打开向导。
-   * The **Launches** console:
+   * **启动项**&#x200B;控制台：
       1. 选择您的启动项（点按/单击缩略图）。
       1. 选择&#x200B;**提升**。
 1. 在第一步中，您可以指定：
@@ -78,7 +78,7 @@ ht-degree: 81%
 
 1. 选择&#x200B;**提升**。
 
-## 编辑时提升启动页面 {#promoting-launch-pages-when-editing}
+## 编辑时提升启动页面  {#promoting-launch-pages-when-editing}
 
 在编辑启动页面时，也可以从&#x200B;**页面信息**&#x200B;中执行&#x200B;**提升启动项**&#x200B;操作。这将打开相应向导来收集所需的信息。
 
@@ -88,7 +88,7 @@ ht-degree: 81%
 >
 >此操作适用于单个启动项和[嵌套启动项](#promoting-a-nested-launch)。
 
-## 提升嵌套启动项 {#promoting-a-nested-launch}
+## 提升嵌套启动项  {#promoting-a-nested-launch}
 
 创建嵌套启动项后，您可以将其提升回任意源，包括根目录源（生产）。
 
@@ -99,8 +99,8 @@ ht-degree: 81%
 1. 输入所需的详细信息：
    * **目标**
       * **提升目标** -您可以提升到任何源。
-      * **提升后删除启动项** -提升后，将删除选定启动项及其中嵌套的所有启动项。
-   * **范围** -您可以在此选择是提升整个启动项，还是仅提升实际已编辑的页面。 如果选择后者，则还可以选择包括/排除子页面。默认配置是仅提升当前页面的页面更改：
+      * **提升后删除启动** -提升后，将删除选定启动项及其中嵌套的所有启动项。
+   * **范围** -您可以在此选择是提升整个启动项，还是只提升实际已编辑的页面。如果选择后者，则还可以选择包括/排除子页面。默认配置是仅提升当前页面的页面更改：
       * **提升整个启动项**
       * **提升已修改的页面**
       * **提升当前页面**
@@ -129,7 +129,7 @@ ht-degree: 81%
 1. 当作者提升启动页面时，他们会将其存储在工作流包中。
 1. 将包作为有效负荷，以启动工作流模型。
 
-To start a workflow automatically when pages are promoted, configure a workflow launcher for the package node. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
+要在提升页面时自动开始工作流，请为包节点配置工作流启动器。<!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
 例如，您可以在作者提升启动页面时自动生成页面激活请求。配置工作流启动器，以在包节点被修改时启动请求激活工作流。
 
