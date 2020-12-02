@@ -19,7 +19,7 @@ AEM日志记录和日志级别在配置文件中进行管理，这些配置文�
 * AEM日志记录，在AEM应用程序级别执行日志记录
 * Apache HTTPD Web Server/Dispatcher日志记录，它在发布层执行Web服务器和Dispatcher的日志记录。
 
-## AEM日志记录 {#aem-loggin}
+## AEM日志记录{#aem-loggin}
 
 在AEM应用程序级别进行日志记录，由三个日志处理：
 
@@ -31,7 +31,7 @@ AEM日志记录和日志级别在配置文件中进行管理，这些配置文�
 >
 >从发布层的Dispatcher缓存或上游CDN提供的HTTP请求不会反映在这些日志中。
 
-## AEM Java日志记录 {#aem-java-logging}
+## AEM Java日志记录{#aem-java-logging}
 
 AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的开发人员应按照常规的Java日志记录最佳实践，在以下日志级别记录有关自定义代码执行的相关语句：
 
@@ -82,7 +82,7 @@ AEM作为Cloud Service提供对Java日志语句的访问。 AEM应用程序的�
 错误</td>
 <td>
 描述指示故障并需要解决的条件。<br>
-当ERROR日志记录处于活动状态时，只记录指示失败的语句。 ERROR日志语句表示出现严重问题，应尽快解决。</td>
+当ERROR日志记录处于活动状态时，只记录指示失败的语句。ERROR日志语句表示出现严重问题，应尽快解决。</td>
 <td>
 <ul>
 <li> 本地开发</li>
@@ -138,7 +138,7 @@ AEM日志级别通过OSGi配置按环境类型设置，OSGi配置又提交到Git
 </tbody>
 </table>
 
-### 配置记录器 {#configuration-loggers}
+### 配置记录器{#configuration-loggers}
 
 AEM Java日志定义为OSGi配置，因此将特定AEM目标为使用运行模式文件夹的Cloud Service环境。
 
@@ -151,7 +151,7 @@ AEM Java日志定义为OSGi配置，因此将特定AEM目标为使用运行模�
 
 更改其他LogManager OSGi配置属性可能会导致AEM作为Cloud Service的可用性问题。
 
-以下是三个AEM的推荐日志记录配置(使用占位符Java包 `com.example`)的示例，它们作为Cloud Service环境类型。
+以下是建议将三个AEM作为Cloud Service环境类型进行日志记录配置（使用`com.example`的占位符Java包）的示例。
 
 ### 开发 {#development}
 
@@ -186,7 +186,7 @@ AEM Java日志定义为OSGi配置，因此将特定AEM目标为使用运行模�
 }
 ```
 
-## AEM HTTP请求记录 {#aem-http-request-logging}
+## AEM HTTP请求记录{#aem-http-request-logging}
 
 AEM作为Cloud Service的HTTP请求日志记录，可以按时间顺序对发送给AEM的HTTP请求及其HTTP响应进行深入的了解。 此日志有助于了解对AEM发出的HTTP请求以及它们的处理和响应顺序。
 
@@ -236,11 +236,11 @@ AEM作为Cloud Service的HTTP请求日志记录，可以按时间顺序对发送
 </tbody>
 </table>
 
-### 配置日志 {#configuring-the-log}
+### 配置日志{#configuring-the-log}
 
 在AEM中，AEM HTTP请求日志不能配置为Cloud Service。
 
-## AEM HTTP访问记录 {#aem-http-access-logging}
+## AEM HTTP访问日志{#aem-http-access-logging}
 
 AEM asCloud ServiceHTTP访问记录按时间顺序显示HTTP请求。 每个日志条目表示访问AEM的HTTP请求。
 
@@ -305,11 +305,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tbody>
 </table>
 
-### 配置HTTP访问日志 {#configuring-the-http-access-log}
+### 配置HTTP访问日志{#configuring-the-http-access-log}
 
 在AEM中，HTTP访问日志不能配置为Cloud Service。
 
-## Apache Web Server和调度程序日志记录 {#apache-web-server-and-dispatcher-logging}
+## Apache Web Server和调度程序日志{#apache-web-server-and-dispatcher-logging}
 
 AEM as aCloud Service在发布中为Apache Web Server和调度程序层提供三个日志：
 
@@ -321,11 +321,11 @@ AEM as aCloud Service在发布中为Apache Web Server和调度程序层提供三
 
 此日志集提供对AEM的HTTP请求的洞察，在这些请求到达AEM应用程序之前，将其作为Cloud Service发布层。 理想情况下，大多数发布层服务器的HTTP请求都由Apache HTTPD Web Server和AEM Dispatcher缓存的内容提供，并且永远无法到达AEM应用程序本身，这一点很重要。 因此，AEM Java、请求或访问日志中没有这些请求的日志语句。
 
-### Apache HTTPD Web Server访问日志 {#apache-httpd-web-server-access-log}
+### Apache HTTPD Web Server访问日志{#apache-httpd-web-server-access-log}
 
 Apache HTTP Web Server访问日志为到达发布层的Web服务器／调度程序的每个HTTP请求提供语句。 请注意，从上游CDN提供的请求不会反映在这些日志中。
 
-请参阅官方apache文档中的错误日志 [格式的相关信息](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
+请参阅[正式apache文档](https://httpd.apache.org/docs/2.4/logs.html#accesslog)中的错误日志格式信息。
 
 **日志输出示例**
 
@@ -386,15 +386,15 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tbody>
 </table>
 
-### 配置Apache HTTPD Web Server访问日志 {#configuring-the-apache-httpd-webs-server-access-log}
+### 配置Apache HTTPD Web Server访问日志{#configuring-the-apache-httpd-webs-server-access-log}
 
 此日志在AEM中不能配置为Cloud Service。
 
-## Apache HTTPD Web Server错误日志 {#apache-httpd-web-server-error-log}
+## Apache HTTPD Web Server错误日志{#apache-httpd-web-server-error-log}
 
 Apache HTTP Web Server错误日志为发布层的Web服务器／调度程序中的每个错误提供语句。
 
-请参阅官方apache文档中的错误日志 [格式的相关信息](https://httpd.apache.org/docs/2.4/logs.html#errorlog)。
+请参阅[正式apache文档](https://httpd.apache.org/docs/2.4/logs.html#errorlog)中的错误日志格式信息。
 
 **日志输出示例**
 
@@ -431,13 +431,13 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tbody>
 </table>
 
-### 配置Apache HTTPD Web Server错误日志 {#configuring-the-apache-httpd-web-server-error-log}
+### 配置Apache HTTPD Web Server错误日志{#configuring-the-apache-httpd-web-server-error-log}
 
-mod_rewrite日志级别由文件中的变量REWRITE_LOG_LEVEL定义 `conf.d/variables/global.var`。
+mod_rewrite日志级别由文件`conf.d/variables/global.var`中的变量REWRITE_LOG_LEVEL定义。
 
 它可以设置为“错误”、“警告”、“信息”、“调试”和“跟踪1”-“跟踪8”，默认值为“警告”。 要调试RewriteRules，建议将日志级别提升到Trace2。
 
-有关详 [细信息，请参阅mod_rewrite模块文档](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 。
+有关详细信息，请参阅[mod_rewrite模块文档](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging)。
 
 要设置每个环境的日志级别，请在global.var文件中使用相应的条件分支，如下所述：
 
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## 调度程序日志 {#dispatcher-log}
+## 调度程序日志{#dispatcher-log}
 
 **示例**
 
@@ -492,7 +492,7 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>持续时间</td>
-<td>1949ms</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>农场</td>
@@ -509,15 +509,15 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### 配置调度程序错误日志 {#configuring-the-dispatcher-error-log}
+### 配置调度程序错误日志{#configuring-the-dispatcher-error-log}
 
-调度程序日志级别由文件中的变量DISP_LOG_LEVEL定义 `conf.d/variables/global.var`。
+调度程序日志级别由文件`conf.d/variables/global.var`中的变量DISP_LOG_LEVEL定义。
 
 它可以设置为“错误”、“警告”、“信息”、“调试”和“跟踪1”，默认值为“警告”。
 
 虽然调度程序日志记录支持其他几个级别的日志记录粒度，但AEM作为Cloud Service建议使用下面描述的级别。
 
-要设置每个环境的日志级别，请在文件中使用相应的条 `global.var` 件分支，如下所述：
+要设置每个环境的日志级别，请在`global.var`文件中使用相应的条件分支，如下所述：
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -534,30 +534,30 @@ Define DISP_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## 如何访问日志 {#how-to-access-logs}
+## 如何访问日志{#how-to-access-logs}
 
-### 云环境 {#cloud-environments}
+### 云环境{#cloud-environments}
 
-AEM作为云服务的Cloud Service日志，可通过Cloud Manager界面下载或使用AdobeI/O命令行界面跟踪命令行日志来访问。 有关详细信息，请参 [阅Cloud Manager日志记录文档](/help/implementing/cloud-manager/manage-logs.md)。
+AEM作为云服务的Cloud Service日志，可以通过Cloud Manager界面下载或使用Adobe I/O命令行界面跟踪命令行日志来访问。 有关详细信息，请参阅[Cloud Manager日志记录文档](/help/implementing/cloud-manager/manage-logs.md)。
 
 ### 本地SDK {#local-sdk}
 
 AEM作为Cloud ServiceSDK提供日志文件以支持本地开发。
 
-AEM日志位于文件夹 `crx-quickstart/logs`中，可在该文件夹中查看以下日志：
+AEM logs位于文件夹`crx-quickstart/logs`中，可在该文件夹中查看以下日志：
 
-* AEM Java日志： `error.log`
-* AEM HTTP请求日志： `request.log`
-* AEM HTTP访问日志： `access.log`
+* AEM Java日志：`error.log`
+* AEM HTTP请求日志：`request.log`
+* AEM HTTP访问日志：`access.log`
 
-Apache层日志（包括调度程序）位于保存调度程序的Docker容器中。 有关如 [何开始](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher的信息，请参阅Dispatcher文档。
+Apache层日志（包括调度程序）位于保存调度程序的Docker容器中。 有关如何开始调度程序的信息，请参见[调度程序文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
 要检索日志，请执行以下操作：
 
-1. 在命令行中，键入 `docker ps` 以列表容器
-1. 要登录容器，请键入“`docker exec -it <container> /bin/sh`”，其 `<container>` 中是上一步的调度程序容器ID
-1. 导航到下面的缓存根 `/mnt/var/www/html`
-1. 日志在 `/etc/httpd/logs`
+1. 在命令行中，键入`docker ps`以列表容器
+1. 要登录容器，请键入“`docker exec -it <container> /bin/sh`”，其中`<container>`是上一步中的调度程序容器ID
+1. 导航到`/mnt/var/www/html`下的缓存根
+1. 日志位于`/etc/httpd/logs`下
 1. Inspect:可以在文件夹XYZ下访问这些日志，在该文件夹中可以查看以下日志：
    * Apache HTTPD Web服务器访问日志- `httpd_access.log`
    * Apache HTTPD Web服务器错误日志- `httpd_error.log`
@@ -567,7 +567,7 @@ Apache层日志（包括调度程序）位于保存调度程序的Docker容器�
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-## 调试生产和舞台 {#debugging-production-and-stage}
+## 调试生产和级{#debugging-production-and-stage}
 
 在特殊情况下，需要更改日志级别，以在Stage或Production环境中以更精细的粒度进行日志记录。
 
@@ -578,20 +578,20 @@ Apache层日志（包括调度程序）位于保存调度程序的Docker容器�
 * 谨慎行事，只有在绝对必要时
 * 还原到适当的级别并尽快重新部署
 
-## 拆分日志 {#splunk-logs}
+## 拆分日志{#splunk-logs}
 
 拥有Splunk帐户的客户可以通过客户支持票证请求将其AEMCloud Service日志转发到相应的索引。 日志记录数据等同于Cloud Manager日志下载中可用的数据，但客户可能会发现利用Splunk产品中提供的查询功能非常方便。
 
 与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
 
-### 启用跳转转发 {#enabling-splunk-forwarding}
+### 启用跳转转发{#enabling-splunk-forwarding}
 
 在支持请求中，客户应指明：
 
 * Splunk HEC端点地址
 * Splunk指数
 * 斯普隆克港
-* Splunk HEC代号。 请参 [阅本页](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) ，了解详细信息。
+* Splunk HEC代号。 有关详细信息，请参阅[此页](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)。
 
 应为每个相关项目/环境类型组合指定上述属性。  例如，如果客户需要开发、升级和生产环境，他们应提供三组信息，如下所示。
 
@@ -603,26 +603,26 @@ Apache层日志（包括调度程序）位于保存调度程序的Docker容器�
 
 项目123，生产环境
 
-* Splunk HEC端点地址： `splunk-hec-ext.acme.com`
+* Splunk HEC端点地址：`splunk-hec-ext.acme.com`
 * Splunk指数：acme_123prod（客户可以选择其希望的任何命名规范）
 * Splunk端口：443
 * Splunk HEC代号：ABC123
 
 项目123，舞台环境
 
-* Splunk HEC端点地址： `splunk-hec-ext.acme.com`
+* Splunk HEC端点地址：`splunk-hec-ext.acme.com`
 * Splunk指数：acme_123stage
 * Splunk端口：443
 * Splunk HEC代号：ABC123
 
 项目123，开发人员
 
-* Splunk HEC端点地址： `splunk-hec-ext.acme.com`
+* Splunk HEC端点地址：`splunk-hec-ext.acme.com`
 * Splunk指数：acme_123dev
 * Splunk端口：443
 * Splunk HEC代号：ABC123
 
-对于每个环境都使用同一个Splunk索引可能已足够，在这种情况下，可以 `aem_env_type` 使用任一字段根据dev、stage和prod值进行区分。 如果有多个开发环境, `aem_env_id` 也可以使用该字段。 如果关联的索引限制对精简的Splunk用户集的访问，某些组织可能会为生产环境的日志选择单独的索引。
+对于每个环境使用的同一Splunk索引可能已足够，在这种情况下，可以使用`aem_env_type`字段根据dev、stage和prod的值进行区分。 如果有多个开发环境，则还可以使用`aem_env_id`字段。 如果关联的索引限制对精简的Splunk用户集的访问，某些组织可能会为生产环境的日志选择单独的索引。
 
 以下是一个日志条目示例：
 
