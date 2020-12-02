@@ -3,9 +3,9 @@ title: 管理视频资产
 description: 在 [!DNL Adobe Experience Manager]中上传、预览、批注和发布视频资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 12%
 
 ## 使用处理用户档案{#transcode-video}转码
 
-[!DNL Experience Manager] 作为Cloud Service，您可以使用处理用户档案对MP4视频文件进行基本转码。该功能不仅允许您上传，还可以预览和缩放MP4视频文件。
+[!DNL Experience Manager] 这样， [!DNL Cloud Service] 您就可以使用处理用户档案对MP4视频文件进行基本转码。该功能不仅允许您上传，还可以预览和缩放MP4视频文件。
 
 ![创建处理用户档案，在Experience Manager中进行视频转码](assets/video-processing-profile-for-mp4.png)
 
