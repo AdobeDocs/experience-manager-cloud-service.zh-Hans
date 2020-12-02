@@ -2,9 +2,9 @@
 title: 智能标记视频资源
 description: 智能标记视频资产通过使用Adobe Sensei服务应用上下文和描述性标记，从而自动化资产标记。
 translation-type: tm+mt
-source-git-commit: 68fe67617f0d63872f13427b3fbc7b58f2497aca
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 智能标记视频资源{#video-smart-tags}
 
-对新内容的不断需求要求减少手动工作，以快速提供引人入胜的数字体验。 [!DNL Adobe Experience Manager] 作为Cloud Service，它支持在人工智能的帮助下自动标记视频资产。手动标记视频会非常耗时。 但是，Adobe Sensei支持的视频智能标记功能使用人工智能模型来分析视频内容并向视频资产添加标记。 从而缩短DAM用户向客户提供丰富体验的时间。 Adobe的机器学习服务为一个视频生成两组标签。 而一个集合则对应该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等动作有关。
+对新内容的不断需求要求减少手动工作，以快速提供引人入胜的数字体验。 [!DNL Adobe Experience Manager] 支持在 [!DNL Cloud Service] 人工智能的帮助下自动标记视频资产。手动标记视频会非常耗时。 但是，Adobe Sensei支持的视频智能标记功能使用人工智能模型来分析视频内容并向视频资产添加标记。 从而缩短DAM用户向客户提供丰富体验的时间。 Adobe的机器学习服务为一个视频生成两组标签。 而一个集合则对应该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等动作有关。
 
-支持智能标记的视频文件格式（及其编解码器）包括MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC、vp6f)和WMV(WMV2)。 此外，该功能还允许标记最大300 MB的视频。 在上传视频或触发重新处理后，视频资产的自动标记会作为标准资产处理(以及缩略图创建和元数据提取)进行。 智能标记按资产[!UICONTROL 属性]中[置信度得分](#confidence-score-video-tag)的降序显示。 默认情况下，在[!DNL Adobe Experience Manager]中，视频标记作为Cloud Service启用。 但是，您可以在文件夹上选择[退出视频智能标记](#opt-out-video-smart-tagging)。
+支持智能标记的视频文件格式（及其编解码器）包括MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC、vp6f)和WMV(WMV2)。 此外，该功能还允许标记最大300 MB的视频。 在上传视频或触发重新处理后，视频资产的自动标记会作为标准资产处理(以及缩略图创建和元数据提取)进行。 智能标记按资产[!UICONTROL 属性]中[置信度得分](#confidence-score-video-tag)的降序显示。 默认情况下，在[!DNL Adobe Experience Manager]中，视频标记为[!DNL Cloud Service]。 但是，您可以在文件夹上选择[退出视频智能标记](#opt-out-video-smart-tagging)。
 
 ## 上传时智能标记视频{#smart-tag-assets-on-ingestion}
 
-当您[将视频资产](add-assets.md#upload-assets)上传到[!DNL Adobe Experience Manager]作为Cloud Service时，视频将进行![处理](assets/do-not-localize/assetprocessing.png)。 完成处理后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的视频中。 asset compute服务利用Adobe Sensei创建这些智能标签。
+当您[将视频资产](add-assets.md#upload-assets)作为[!DNL Cloud Service]上传到[!DNL Adobe Experience Manager]时，视频将进行![处理](assets/do-not-localize/assetprocessing.png)。 完成处理后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的视频中。 asset compute服务利用Adobe Sensei创建这些智能标签。
 
 ![智能标记会添加到视频中，并会在资产属性的“基本”选项卡中显示](assets/smart-tags-added-to-videos.png)
 
@@ -106,7 +106,7 @@ DAM中已有的视频资产不会自动智能标记。 您需要手动[!UICONTRO
 
 [!DNL Adobe Experience Manager]中操作和对象标记的默认阈值为0.7（值应介于0和1之间）。 如果某些视频资产未被特定标记标记，则表明该算法对预测的标记信心不足70%。 默认阈值可能并非始终对所有用户是最佳的。 因此，您可以更改OSGI配置中的置信度得分值。
 
-要通过Cloud Manager将置信度得分OSGI配置添加到部署到[!DNL Adobe Experience Manager]的项目，作为Cloud Service:
+要向部署到[!DNL Adobe Experience Manager]的项目添加置信度得分OSGI配置（从[!DNL Cloud Service]到[!DNL Cloud Manager]）:
 
 * 在[!DNL Adobe Experience Manager]项目（自Arcype 24起或之前为`ui.apps`）中，`config.author` OSGi配置包含一个名为`com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json`的配置文件，其内容如下：`ui.config`
 
