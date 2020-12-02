@@ -16,7 +16,7 @@ Cloud Manager项目将自动配置其自己的git存储库。
 
 用户若要访问Cloud Manager Git存储库，需要将Git客户端与命令行工具、独立的可视Git客户端或用户的IDE（如Eclipse、IntelliJ、NetBeans）一起使用。
 
-设置Git客户端后，您可以从云管理器UI管理您的git存储库。 要了解如何使用云管理器UI管理Git，请参阅 [访问Git](/help/implementing/cloud-manager/accessing-git.md)。
+设置Git客户端后，您可以从云管理器UI管理您的git存储库。 要了解如何使用云管理器UI管理Git，请参阅[访问Git](/help/implementing/cloud-manager/accessing-git.md)。
 
 要开始开发AEM Cloud应用程序，必须将应用程序代码的本地副本从Cloud Manager存储库签出到其本地计算机上希望创建存储库的位置。
 
