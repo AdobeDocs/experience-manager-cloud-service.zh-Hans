@@ -4,13 +4,13 @@ description: AEM中Cloud Manager作为Cloud Service版本2020.10.0的发行说�
 translation-type: tm+mt
 source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '300'
+ht-degree: 48%
 
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
+# 作为Cloud Service2020.10.0 {#release-notes}的Adobe Experience ManagerCloud Manager发行说明
 
 本页概述了AEM中作为Cloud Service2020.10.0的Cloud Manager发行说明。
 
@@ -30,8 +30,8 @@ AEM中Cloud Manager作为Cloud Service2020.10.0的发布日期为2020年10月1�
 
 * 每个环境的环境变量数量已增加至 200 个。
 
-* “概述”页面上的环境卡现在最多可列表三个环境。 用户可以选择 **显示全部** 按钮，导航到环境摘要页面以视图具有完整环境列表的表。
-有关更多 [详细信息](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) ，请参阅查看环境。
+* “概述”页面上的环境卡现在最多可列表三个环境。 用户可以选择&#x200B;**显示全部**按钮，导航到环境摘要页面，以视图具有完整环境列表的表。
+有关详细信息，请参阅[查看环境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
 
 
 ### 错误修复 {#bug-fixes-cloud-manager}
