@@ -43,7 +43,7 @@ ht-degree: 100%
 >
 >某些操作也将显示在[相应资源的卡片视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)中。
 
-## 打开收件箱 {#opening-the-inbox}
+## 打开收件箱  {#opening-the-inbox}
 
 打开 AEM 通知收件箱：
 
@@ -183,7 +183,7 @@ ht-degree: 100%
 
 1. 选择&#x200B;**提交**。
 
-## 创建项目 {#creating-a-project}
+## 创建项目  {#creating-a-project}
 
 对于某些任务，您可以创建一个基于该任务的[项目](/help/sites-cloud/authoring/projects/overview.md)：
 
