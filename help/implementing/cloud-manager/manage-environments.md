@@ -14,7 +14,7 @@ ht-degree: 6%
 
 以下部分介绍用户可以创建的环境类型以及用户可以如何创建环境。
 
-## 环境类型 {#environment-types}
+## 环境类型{#environment-types}
 
 具有必需权限的用户可以创建以下环境类型（在特定租户可用的范围内）。
 
@@ -36,42 +36,42 @@ ht-degree: 6%
    >[!NOTE]
    >生产和阶段可作为两个对象提供，用于测试和生产目的。  用户将不能仅创建舞台或仅创建生产环境。
 
-## 添加环境 {#adding-environments}
+## 添加环境{#adding-environments}
 
-1. 单击“ **添加环境** ”以添加环境。 此按钮可从环境屏 **幕访** 问。
+1. 单击&#x200B;**添加环境**&#x200B;以添加环境。 此按钮可从&#x200B;**环境**屏幕访问。
    ![](assets/environments-tab.png)
 
-   当 **环境** 中有零个项目时， **环境卡** 上也提供“添加环境”选项。
+   **添加环境**&#x200B;选项也可用于&#x200B;**环境**&#x200B;卡，当项目中有零环境时。
 
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >将 **基于缺少权** 限或合同中可能包含的内容禁用“添加环境”选项。
+   >将根据缺少权限或合同内容禁用&#x200B;**添加环境**&#x200B;选项。
 
 1. 出现 **“添加环境** ”对话框。用户需要提交详细信息，如“环境类型 **”和“环境名称********** ”和“环境描述”（具体取决于用户在特定租户可用的范围内创建环境时的目标）。
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >创建环境时，在AdobeI/ *O中* 创建一个或多个集成。对于有权访问AdobeI/O控制台的客户用户，这些控制台是可见的，不得删除。 在AdobeI/O控制台的说明中不会声明此问题。
+   >创建环境时，在Adobe I/O创建一个或多个&#x200B;*集成*。对于有权访问Adobe I/O控制台的客户用户可见，且不得删除这些控制台。 在Adobe I/O控制台的说明中不会声明此问题。
 
    ![](assets/add-environment-image1.png)
 
-1. 单击 **保存** ，以添加具有已填充条件的环境。  现在， *“概述* ”屏幕会显示可从中设置管道的卡。
+1. 单击&#x200B;**保存**&#x200B;以添加具有已填充条件的环境。  现在，*概述*&#x200B;屏幕显示可从中设置管道的卡。
 
    >[!NOTE]
-   >如果尚未设置非生产管道，“概述”屏 *幕将显示* 卡，您可以从中创建非生产管道的位置。
+   >如果尚未设置非生产管道，*概述*&#x200B;屏幕将显示卡，您可以从中创建非生产管道。
 
 
-## 查看环境 {#viewing-environment}
+## 查看环境{#viewing-environment}
 
-概 **述页** 上的环境卡最多列表三个环境。
+“概述”页上的&#x200B;**环境**&#x200B;卡最多列表三个环境。
 
-1. 选择“ **显示全** 部”按钮，导 **航到“** 环境”摘要页，视图具有完整环境的表。
+1. 选择&#x200B;**显示全部**&#x200B;按钮，导航至&#x200B;**环境**&#x200B;摘要页，以视图具有完整环境列表的表。
 
    ![](assets/environment-view-1.png)
 
-1. 环境 **页面** 显示所有现有环境的列表。
+1. **环境**&#x200B;页显示所有现有环境的列表。
 
    ![](assets/environment-view-2.png)
 
@@ -80,17 +80,17 @@ ht-degree: 6%
    ![](assets/environment-view-3.png)
 
 
-## 更新环境 {#updating-dev-environment}
+## 更新环境{#updating-dev-environment}
 
 舞台和生产环境的更新由Adobe自动管理。
 
-开发环境的更新由项目的用户管理。 当环境未运行最新的公开发行的AEM版本时，主屏幕上的环境卡状态将显示“可 **用更新”**。
+开发环境的更新由项目的用户管理。 当环境未运行最新的公开发行的AEM版本时，主屏幕上的环境卡状态将显示&#x200B;**UPDATE AVAILABLE**。
 
 ![](assets/environ-update.png)
 
 
-更 **新** 选项可从环境 **卡中获** 得。
-如果单击环境卡中的“详细信 **息** ”，则 **此选项可用** 。 环境 **页面** 将打开，选择开发环境后，单击 **...并选择** 更新 ****，如下图所示：
+**更新**&#x200B;选项可从&#x200B;**环境**卡中访问。
+如果单击**环境卡**&#x200B;中的&#x200B;**详细信息**，则此选项也可用。 **环境**&#x200B;页面将打开，选择“开发”环境后，单击&#x200B;**...**&#x200B;并选择&#x200B;**更新**，如下图所示：
 
 ![](assets/environ-update2.png)
 
@@ -98,15 +98,15 @@ ht-degree: 6%
 
 如果管道已更新，则提示用户执行管道。
 
-## 删除环境 {#deleting-environment}
+## 删除环境{#deleting-environment}
 
 具有必要权限的用户将能够删除开发环境。
 
-“ **删除** ”选项可从环境卡的下拉菜 **单中** 使用。 单击 **...** 以获取要删除的开发环境。
+**删除**&#x200B;选项可从&#x200B;**环境卡**&#x200B;的下拉菜单中访问。 单击&#x200B;**...**，用于要删除的开发环境。
 
 ![](assets/environ-delete.png)
 
-如果单击环境卡中的“详细信息” **** ，则也可 **以使用** 删除选项。 环境 **页面** 将打开，选择开发环境后，单击 **...并选** 择删 **除**，如下图所示：
+如果单击&#x200B;**环境卡**&#x200B;中的&#x200B;**详细信息**，则删除选项也可用。 **环境**&#x200B;页面将打开，选择“开发”环境后，单击&#x200B;**...**&#x200B;并选择&#x200B;**删除**，如下图所示：
 
 ![](assets/environ-delete2.png)
 
@@ -115,35 +115,35 @@ ht-degree: 6%
 >
 >此功能不适用于为生产目的而设置的常规环境中的生产／阶段项目集。 但是，该功能可用于沙箱环境中的生产／阶段项目。
 
-## 管理访问 {#managing-access}
+## 管理访问{#managing-access}
 
-从 **环境** 卡的下拉菜单中选择 **管理访** 问。 您可以直接导航到作者实例并管理环境的访问权限。
+从&#x200B;**环境卡**&#x200B;的下拉菜单中选择&#x200B;**管理访问**。 您可以直接导航到作者实例并管理环境的访问权限。
 
-请参阅 [管理对作者实例的访问](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) ，了解更多。
+请参阅[管理对作者实例的访问权](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem)以了解更多。
 
 ![](assets/environ-access.png)
 
 
-## 访问开发人员控制台 {#accessing-developer-console}
+## 访问开发人员控制台{#accessing-developer-console}
 
-从 **环境** 卡的下拉菜单中选择开 **发人员** 控制台。 这将在您的浏览器中打开一个新选项卡，其中包含开发人员控制 **台的登录页**。
+从&#x200B;**环境卡**&#x200B;的下拉菜单中选择&#x200B;**开发人员控制台**。 这将在您的浏览器中打开一个新选项卡，登录页面指向&#x200B;**开发人员控制台**。
 
-只有具有“开发人员”角色的用户才有权访问“开 **发人员控制台**”。 沙箱项目例外，在沙箱项目中，有权访问云管理器沙箱的任何用户都有权访问开发 **人员控制台**。
+只有具有“开发人员”角色的用户才能访问&#x200B;**“开发人员控制台”**。 沙箱项目例外，在沙箱项目中，有权访问Cloud Manager Sandbox的任何用户都将有权访问&#x200B;**开发人员控制台**。
 
-有关更 [多详细信息，请参阅“冬眠”和“脱冬](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) ”沙箱环境。
+有关详细信息，请参阅[冬眠和脱冬眠沙箱环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)。
 
 
 ![](assets/environ-devconsole.png)
 
-如果单击环境卡中的“详细信 **息** ”，则 **此选项可用** 。 环境 **页面打** 开，选择环境后，单击……并选 **择开发人** 员控 **制台**。
+如果单击&#x200B;**环境卡**&#x200B;中的&#x200B;**详细信息**，则此选项也可用。 将打开&#x200B;**环境**&#x200B;页，选择环境后，单击&#x200B;**...**&#x200B;并选择&#x200B;**开发人员控制台**。
 
-## 本地登录 {#login-locally}
+## 本地登录{#login-locally}
 
-从 **环境** 卡的下拉菜单中选择本 **地登** 录，以本地登录Adobe Experience Manager。
+从&#x200B;**环境卡**&#x200B;的下拉菜单中选择&#x200B;**本地登录**&#x200B;以本地登录到Adobe Experience Manager。
 
 ![](assets/environ-login-locally.png)
 
-此外，您还可以从环境摘要页 **面本** 地登录。
+此外，您还可以从&#x200B;**环境**&#x200B;摘要页面本地登录。
 
 ![](assets/environ-login-locally-2.png)
 
