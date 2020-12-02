@@ -20,7 +20,7 @@ ht-degree: 86%
    + [执行](/help/move-to-cloud-service/execution.md)
    + [上线后](/help/move-to-cloud-service/post-go-live.md)
 + 云过渡工具{#cloud-migration}
-   + 最佳实践分析器 {#best-practices-analyzer}
+   + 最佳实践分析器{#best-practices-analyzer}
       + [概述](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [使用最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 内容传输工具 {#content-transfer-tool}
