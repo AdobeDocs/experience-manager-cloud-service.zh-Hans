@@ -10,7 +10,7 @@ ht-degree: 7%
 ---
 
 
-# 内容服务的JSON导出程序 {#json-exporter-for-content-services}
+# 内容服务的JSON导出器{#json-exporter-for-content-services}
 
 AEM Content Services设计为将内容的描述和投放从AEM扩展到网页焦点之外。
 
@@ -22,11 +22,11 @@ AEM Content Services设计为将内容的描述和投放从AEM扩展到网页焦
 
 对于使用结构化内容的内容片段，您可以通过使用JSON导出器以JSON数据模型格式交付AEM页的内容来提供内容服务。 然后，您自己的应用程序可以使用它。
 
-## 包含内容片段核心组件的JSON导出程序 {#json-exporter-with-content-fragment-core-components}
+## 包含内容片段核心组件{#json-exporter-with-content-fragment-core-components}的JSON导出器
 
 使用AEM JSON导出器，您可以以JSON数据模型格式提供(y)AEM页面的内容。 然后，您自己的应用程序可以使用它。
 
-在AEM中，投放是使用选择器和扩 `model` 展来 `.json` 实现的。
+在AEM中，投放是使用选择器`model`和`.json`扩展实现的。
 
 `.model.json`
 
@@ -42,7 +42,7 @@ AEM Content Services设计为将内容的描述和投放从AEM扩展到网页焦
 
 您也可以通过专门定位结构化内容片段来提供其内容。
 
-这是使用片段的整个路径(通过 `jcr:content`);例如，带有后缀（如）。
+这是使用片段的整个路径（通过`jcr:content`）完成的；例如，带有后缀（如）。
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -60,11 +60,11 @@ AEM Content Services设计为将内容的描述和投放从AEM扩展到网页焦
 
    >[!NOTE]
    >
-   >您可以 [调整自己的组件](enabling-json-exporter.md) ，以访问和使用这些数据。
+   >您可以[调整您自己的组件](enabling-json-exporter.md)以访问和使用此数据。
 
    >[!NOTE]
    >
-   >虽然不是标准实现， [但支持多个选择器](enabling-json-exporter.md#multiple-selectors) , `model` 但必须是第一个选择器。
+   >虽然不是标准实现，但支持[多个选择器，](enabling-json-exporter.md#multiple-selectors)但`model`必须是第一个选择器。
 
 ### 更多信息 {#further-information}
 
@@ -77,11 +77,11 @@ AEM Content Services设计为将内容的描述和投放从AEM扩展到网页焦
 * AEM with JSON:
    * [为组件启用JSON导出](enabling-json-exporter.md)
 
-## 相关文档 {#related-documentation}
+## 相关文档{#related-documentation}
 
 有关更多详细信息，请参阅：
 
 * [资产用户指南中的内容片段](/help/assets/content-fragments/content-fragments.md)
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用内容片段进行创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 和内容 [片段组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)
+* [核心](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 组件和内 [容片段组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)
