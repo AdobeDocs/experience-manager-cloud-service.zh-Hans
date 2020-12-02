@@ -16,7 +16,7 @@ ht-degree: 79%
 
 AEM 为创作目标内容和呈现个性化体验提供了一个工具框架。
 
-## 定位模式 {#targeting-mode}
+## 定位模式  {#targeting-mode}
 
 [可使用 AEM 的定位模式创作目标内容。](/help/sites-cloud/authoring/personalization/targeted-content.md)定位模式和 Target 组件提供了一些工具，用于为您的营销活动体验创建内容。
 
@@ -28,7 +28,7 @@ AEM 为创作目标内容和呈现个性化体验提供了一个工具框架。
 
 活动还标识您的页面使用的[定位引擎](#targeting-engine)。
 
-Use the [Activities console](/help/sites-cloud/authoring/personalization/activities.md) to create and manage the activities for your brands. You can also create activities as you [author targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
+使用[活动控制台](/help/sites-cloud/authoring/personalization/activities.md)创建和管理品牌活动。 您还可以在[创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)时创建活动。
 
 ## 体验 {#experiences}
 
@@ -40,7 +40,7 @@ Use the [Activities console](/help/sites-cloud/authoring/personalization/activit
 
 您可以为活动定义体验。您可以使用[“活动”控制台](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console)或[定位模式](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)将体验添加到活动中。
 
-## 选件 {#offers}
+## 选件  {#offers}
 
 选件是指显示在页面上的某个位置以提供体验的内容。可针对不同的体验使用不同的选件，以最大限度地提高受众内容的有效性。
 
@@ -48,7 +48,7 @@ Use the [Activities console](/help/sites-cloud/authoring/personalization/activit
 
 使用[“选件”控制台](/help/sites-cloud/authoring/personalization/offers.md)，可创建您可以在多个体验中使用的选件。[创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)时，可创建单次使用选件或添加选件库中的选件。
 
-## 定位引擎 {#targeting-engine}
+## 定位引擎  {#targeting-engine}
 
 定位引擎是驱动目标内容逻辑的机制。[活动](/help/sites-cloud/authoring/personalization/activities.md)会配置为使用以下两个可用的定位引擎之一：AEM 和 Adobe Target。
 
@@ -63,4 +63,4 @@ Adobe Target 定位引擎允许从 Adobe Target 中跟踪的页面访问收集�
 * 使用此定位引擎时，您可以使用从 Adobe Target 导入的区段来定义体验受众。
 * 使用 Adobe Target 引擎的活动会[同步到 Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)。
 
-You can use this engine when you have integrated with Adobe Target. <!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
+集成到Adobe Target后，可以使用此引擎。<!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
