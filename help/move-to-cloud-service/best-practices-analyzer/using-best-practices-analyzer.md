@@ -10,25 +10,25 @@ ht-degree: 47%
 ---
 
 
-# 使用最佳实践分析器 {#using-best-practices-analyzer}
+# 使用最佳实践分析器{#using-best-practices-analyzer}
 
-## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
+## 使用最佳实践分析器{#imp-considerations}的重要注意事项
 
 请按照以下部分了解运行最佳实践分析器(BPA)的重要注意事项：
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA使用的图案检测器版本包含在BPA安装包中。
+* BPA报告是使用Adobe Experience Manager(AEM)[模式检测器](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/upgrading/pattern-detector.html)的输出构建的。 BPA使用的图案检测器版本包含在BPA安装包中。
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* BPA只能由&#x200B;**admin**&#x200B;用户或&#x200B;**administrators**&#x200B;组中的用户运行。
 
 * BPA在版本6.1及更高版本的AEM实例上受支持。
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > 有关在AEM 6.1上安装BPA的特殊要求，请参见[在AEM 6.1上安装BPA。](#installing-on-aem61)
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA可以在任何环境上运行，但最好在&#x200B;*Stage*&#x200B;环境上运行。
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
+   >为避免对业务关键型实例产生影响，建议在&#x200B;*作者*&#x200B;环境上运行BPA，该环境在自定义、配置、内容和用户应用程序方面尽可能接近&#x200B;*生产*。 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
 
 * 生成BPA报告内容可能需要花费大量时间，从几分钟到几小时。 具体所需的时间长短很大程度上取决于 AEM 存储库内容的大小和性质、AEM 版本以及其他因素。
 
@@ -39,19 +39,19 @@ ht-degree: 47%
 最佳实践分析器可以从软件分发门户下载为zip文件。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载最佳实践分析器。
 
-## 查看最佳实践分析器报告 {#viewing-report}
+## 查看最佳实践分析器报告{#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 和更高版本 {#aem-later-versions}
 
 请按照本节学习如何视图最佳实践分析器报告：
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. 选择Adobe Experience Manager并导航到工具-> **操作** -> **最佳实践分析器**。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. 单击“ **生成报告** ”以执行最佳实践分析器。
+1. 单击&#x200B;**生成报告**&#x200B;以执行最佳实践分析器。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -68,12 +68,12 @@ ht-degree: 47%
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. 您可以选择通过单击&#x200B;**CSV**&#x200B;以逗号分隔值(CSV)格式下载报告，如下图所示。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >您可以通过单击&#x200B;**刷新报告**&#x200B;强制BPA清除其缓存并重新生成报告。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -92,7 +92,7 @@ ht-degree: 47%
 >[!NOTE]
 >在所有版本中，包含的模式检测器可以独立运行。
 
-## 解释最佳实践分析器报告 {#cra-report}
+## 解释最佳实践分析器报告{#cra-report}
 
 在AEM实例中运行最佳实践分析器工具时，报告将作为结果显示在工具窗口中。
 
@@ -109,7 +109,7 @@ ht-degree: 47%
 每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。
 
 >[!NOTE]
->要进一步了解每个“查找”类别，请参 [阅“图案检测器”类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
+>要详细了解每个“查找”类别，请参阅[“模式检测器”类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
 
 请参阅下表，了解重要性级别：
 
@@ -121,9 +121,9 @@ ht-degree: 47%
 | 关键 | 此发现结果极有可能是一个必须解决的升级问题，以防止功能或性能丢失。 |
 
 
-## 解释最佳实践分析器CSV报告 {#cra-csv-report}
+## 解释最佳实践分析器CSV报告{#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. 根据您的浏览器设置，此报告将自动下载为默认名称为 `results.csv` 的文件。
+当您单击AEM实例中的&#x200B;**CSV**&#x200B;选项时，最佳实践分析器报告的CSV格式将从内容缓存构建并返回到您的浏览器。 根据您的浏览器设置，此报告将自动下载为默认名称为 `results.csv` 的文件。
 
 如果缓存已过期，则将重新生成报告，然后再生成并下载 CSV 文件。
 
@@ -147,7 +147,7 @@ CSV 格式的报告包含以下列：
 
 BPA提供HTTP接口，可用作AEM中用户界面的替代。 该接口支持 HEAD 和 GET 命令。它可用于生成BPA报表并以三种格式之一返回它：JSON、CSV和制表符分隔值(TSV)。
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+以下URL可用于HTTP访问，其中`<host>`是安装BPA的服务器的主机名和端口（如果需要）:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json`（对于 JSON 格式）
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv`（对于 CSV 格式）
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`（对于 TSV 格式）
@@ -167,17 +167,17 @@ HTTP 接口可用于多种方法。
 
 此接口使用以下 HTTP 标头：
 
-* `Cache-Control: max-age=<seconds>`:以秒为单位指定缓存刷新时间。 （请参阅 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。）
-* `Prefer: respond-async`:指定服务器应异步响应。 （请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。）
-* `Prefer: return=minimal`:指定服务器应返回最小响应。 （请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。）
+* `Cache-Control: max-age=<seconds>`:以秒为单位指定缓存刷新时间。（请参阅 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。）
+* `Prefer: respond-async`:指定服务器应异步响应。（请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。）
+* `Prefer: return=minimal`:指定服务器应返回最小响应。（请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。）
 
 当不能轻松使用 HTTP 标头时，可以方便地使用以下 HTTP 查询参数：
 
-* `max-age` （数字，可选）:以秒为单位指定缓存刷新时间。 此数字必须为 0 或更大。默认新鲜度寿命为86400秒。 如果没有此参数或相应的标头，将使用新缓存在24小时内服务请求，此时必须重新生成缓存。 使用 `max-age=0` 将强制清除缓存并启动报表的重新生成，同时使用新生成的缓存以前的非零新鲜寿命。
-* `respond-async` （布尔、可选）:指定应异步提供响应。 Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 如果缓存是新的，则此参数不起作用。The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` （布尔、可选）:指定当当前缓存为空、过时或即将过时时，服务器可以响应请求刷新缓存。 如 `may-refresh-cache=true`果或未指定，则服务器可启动背景任务，该后台将调用模式检测器并刷新缓存。 如 `may-refresh-cache=false` 果缓存为空或过时，服务器将不启动任何刷新任务，否则，如果缓存为空或过期，则报表将为空。 任何已处理的刷新任务都不会受此参数影响。
-* `return-minimal` （布尔、可选）:指定来自服务器的响应应仅包含JSON格式的进度指示和缓存状态的状态。 如 `return-minimal=true`果是，则响应主体将限于状态对象。 如 `return-minimal=false`果或未指定，则将提供完整的响应。
-* `log-findings` （布尔、可选）:指定服务器在首次构建或刷新缓存时应记录其内容。 缓存中的每个查找结果都将记录为JSON字符串。 仅当请求生成新缓 `log-findings=true` 存时，才会发生此记录。
+* `max-age` （数字，可选）:以秒为单位指定缓存刷新时间。此数字必须为 0 或更大。默认新鲜度寿命为86400秒。 如果没有此参数或相应的标头，将使用新缓存在24小时内服务请求，此时必须重新生成缓存。 使用`max-age=0`将强制清除缓存并启动报表的重新生成，使用新生成的缓存以前的非零刷新寿命。
+* `respond-async` （布尔、可选）:指定应异步提供响应。当缓存失效时使用`respond-async=true`将导致服务器返回`202 Accepted`的响应，而无需等待缓存刷新和报告生成。 如果缓存是新的，则此参数不起作用。默认值为`false`。如果没有此参数或相应的标头，服务器将同步响应，这可能需要大量时间，并且需要调整HTTP客户端的最大响应时间。
+* `may-refresh-cache` （布尔、可选）:指定当当前缓存为空、过时或即将过时时，服务器可以响应请求刷新缓存。如果`may-refresh-cache=true`，或未指定，则服务器可以启动背景任务，该后台将调用模式检测器并刷新缓存。 如果`may-refresh-cache=false`，则服务器将不启动任何刷新任务，否则，如果缓存为空或过时，则会启动任何刷新，在这种情况下，报告将为空。 任何已处理的刷新任务都不会受此参数影响。
+* `return-minimal` （布尔、可选）:指定来自服务器的响应应仅包含JSON格式的进度指示和缓存状态的状态。如果`return-minimal=true`，则响应主体将限制为状态对象。 如果`return-minimal=false`或未指定，则将提供完整的响应。
+* `log-findings` （布尔、可选）:指定服务器在首次构建或刷新缓存时应记录其内容。缓存中的每个查找结果都将记录为JSON字符串。 仅当`log-findings=true`且请求生成新缓存时，才会发生此日志记录。
 
 当同时存在 HTTP 标头和相应的查询参数时，将优先采用查询参数。
 
@@ -191,8 +191,8 @@ HTTP 接口可用于多种方法。
 可以使用以下响应值：
 
 * `200 OK`:指示响应包含来自模式检测器的发现，这些发现是在高速缓存的新鲜寿命内生成的。
-* `202 Accepted`:用于指示缓存过时。 当和 `respond-async=true` 此 `may-refresh-cache=true` 响应指示正在进行刷新任务。 当此 `may-refresh-cache=false` 响应仅指示缓存过时。
-* `400 Bad Request`：指示请求出错。A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `202 Accepted`:用于指示缓存过时。当`respond-async=true`和`may-refresh-cache=true`时，此响应表示正在进行刷新任务。 当`may-refresh-cache=false`时，此响应只表示缓存过时。
+* `400 Bad Request`：指示请求出错。以“问题详细信息”格式显示的消息（请参阅[RFC 7807](https://tools.ietf.org/html/rfc7807)）提供了更多详细信息。
 * `401 Unauthorized`:表示请求未获得授权。
 * `500 Internal Server Error`：指示发生内部服务器错误。以“问题详细信息”格式显示的消息提供了更多详细信息。
 * `503 Service Unavailable`：指示服务器正忙于其他响应，无法及时为此请求提供服务。仅当发出同步请求时，才可能出现此响应。以“问题详细信息”格式显示的消息提供了更多详细信息。
@@ -210,7 +210,7 @@ HTTP 接口可用于多种方法。
 
 ### 在 AEM 6.1 上安装 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. 此帐户在 AEM 6.2 和更高版本上可用。On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA利用名为`repository-reader-service`的系统服务用户帐户执行模式检测器。 此帐户在 AEM 6.2 和更高版本上可用。在AEM 6.1上，必须在&#x200B;*安装BPA之前，通过以下步骤创建此帐户：*
 
 1. 按照[创建新服务用户](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的说明创建用户。将用户 ID 设置为 `repository-reader-service`，并将“中间路径”留空，然后单击绿色复选标记。
 
