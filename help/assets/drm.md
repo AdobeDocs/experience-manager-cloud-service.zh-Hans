@@ -1,11 +1,11 @@
 ---
 title: Digital Rights Management在 [!DNL Assets]
-description: 了解如何以 [!DNL Experience Manager] Cloud Service形式管理已许可资产的到期状态和信息。
+description: 了解如何以 [!DNL Experience Manager] as [!DNL Cloud Service]的形式管理授权资产的到期状态和信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1345'
 ht-degree: 7%
 
 ---
