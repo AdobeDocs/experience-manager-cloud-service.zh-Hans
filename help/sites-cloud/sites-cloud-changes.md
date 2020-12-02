@@ -31,28 +31,28 @@ AEM Sites作为Cloud Service的变动和增补如下：
 * [异步页面操作](#asynchronous-page-operations)
 * [新参考站点和教程](#new-reference-site-and-tutorial)
 
-## 异步页面操作 {#asynchronous-page-operations}
+## 异步页面操作{#asynchronous-page-operations}
 
 在AEM Cloud服务中，传统上阻止UI的操作已细分为在后台运行的较小任务。
 
 * 移动页面
 * 滚出页面
 
-此类操作的发起者可以在新的UI中检查其状态 `/mnt/overlay/dam/gui/content/asyncjobs.html`。
+此类操作的发起者可以在位于`/mnt/overlay/dam/gui/content/asyncjobs.html`的新UI中检查其状态。
 
 >[!NOTE]
 >
 >系统用户无需更改即可利用此新功能。 此处仅指出它与AEM的先前内部部署版本相比的行为发生了变化。
 
-## 新参考站点和教程 {#new-reference-site-and-tutorial}
+## 新参考站点和教程{#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/)是一个新的AEM参考站点，它已更新并发布，以反映构建包含AEM的网站以及AEM提供的一整套功能、组件和部署模型的最佳做法。 新的参考站点和随附 [的教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，涵盖基本主题，如项目设置、核心组件、可编辑模板、客户端库以及与Adobe Experience Manager Sites的组件开发。
+[WKND](https://wknd.site/)是一个新的AEM参考站点，它已更新并发布，以反映构建包含AEM的网站以及AEM提供的一整套功能、组件和部署模型的最佳做法。新的参考站点和随附的教程[涵盖基本主题，如项目设置、核心组件、可编辑模板、客户端库以及与Adobe Experience Manager Sites的组件开发。](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-以前，We.Retail默认安装在AEM中（在生产模式下启动时除外）。  现在，默认情况下，以后将不会安装引用站点。  而是提 [供了git](https://github.com/adobe/aem-guides-wknd/) repo [以及随附的教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，以及更新的WKND参考站点代码。
+以前，We.Retail默认安装在AEM中（在生产模式下启动时除外）。  现在，默认情况下，以后将不会安装引用站点。  相反，提供了随附教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)的[git repo](https://github.com/adobe/aem-guides-wknd/)和[，以及更新的WKND参考站点代码。
 
-## 运行时不提供的功能 {#capabilities-not-available-at-runtime}
+## 运行时{#capabilities-not-available-at-runtime}中不提供的功能
 
-AEM作为Cloud Service始终处于开启状态并始终保持最新状态。 要实现这一点，需要将AEM存储库分离在不可变和可变内容中，并在运行时禁止访问不可变内容。 有关可变内容与不可变内容的更多详细 [信息，请参阅存储库的可变区与不可变区域](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable)。
+AEM作为Cloud Service始终处于开启状态并始终保持最新状态。 要实现这一点，需要将AEM存储库分离在不可变和可变内容中，并在运行时禁止访问不可变内容。 有关可变内容与不可变内容的详细信息，请参阅[存储库的可变区与不可变区域](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable)。
 
 由于不可变的内容在运行时无法访问，以下AEM Sites操作在运行时不可用：
 
