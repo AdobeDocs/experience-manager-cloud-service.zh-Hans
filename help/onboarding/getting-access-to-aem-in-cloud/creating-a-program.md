@@ -16,27 +16,27 @@ ht-degree: 3%
 
 项目创建向导将要求用户提交详细信息，具体取决于用户在特定客户或组织可用内容范围内创建项目的目标。
 
-在首次访问云管理器的事件中，或者如果租户中不存在项目，用户将看到创 **建您的第一个项目屏幕** 。 如果用户选 *择* Esc或者单击出对话框，将显示以下屏幕：
+在首次访问云管理器的事件中，或者如果租户中不存在项目，用户将看到&#x200B;**创建您的第一个项目**&#x200B;屏幕。 如果用户选择&#x200B;*Esc*&#x200B;或者单击出对话框，将显示以下屏幕：
 
 ![](assets/create-program1.png)
 
 
-## 使用创建项目向导 {#using-create-program-wizard}
+## 使用创建项目向导{#using-create-program-wizard}
 
 根据用户在特定客户／组织可用内容范围内创建项目的目标，项目创建向导将要求用户提交一个或多个详细信息。
 
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>如果项目已存在，则您将在登陆页右上方看到&#x200B;**添加项目**，如下图所示。
 
 ![](assets/create-program-add.png)
 
-## 创建沙箱项目 {#create-sandbox-program}
+## 创建沙箱项目{#create-sandbox-program}
 
 请按照以下步骤创建沙箱项目:
 
-1. 在创建项目向导中，选 **择设置沙箱**。 用户在选择创建之前提交项目 **名称**。
+1. 在创建项目向导中，选择&#x200B;**设置沙箱**。 用户在选择&#x200B;**创建**&#x200B;之前提交项目名。
 
    ![](assets/create-sandbox.png)
 
@@ -44,16 +44,16 @@ ht-degree: 3%
 
    ![](assets/program-create-setupdemo2.png)
 
-1. 在项目设置和项目创建步骤完成后，用户可以访 **问“管理Git** ”链接，如下图所示：
+1. 项目设置和项目创建步骤完成后，用户可以访问&#x200B;**管理Git**&#x200B;链接，如下图所示：
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >要进一步了解如何通过云管理器用户界面使用自助Git帐户管理访问和管理您的Git存储库，请参阅 [访问Git](/help/implementing/cloud-manager/accessing-git.md)。
+   >要进一步了解如何通过Cloud Manager UI使用自助Git帐户管理访问和管理Git存储库，请参阅[访问Git](/help/implementing/cloud-manager/accessing-git.md)。
 
 
-1. 创建开发环境后，用户可 **以访** 问AEM链接，如下图所示：
+1. 创建开发环境后，用户可以&#x200B;**访问AEM**&#x200B;链接，如下图所示：
 
    ![](assets/create-program-5.png)
 
@@ -66,9 +66,9 @@ ht-degree: 3%
 
    ![](assets/create-program-a1.png)
 
-## 删除沙箱项目 {#delete-sandbox-program}
+## 删除沙箱项目{#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+在云管理器中，位于&#x200B;*业务所有者*&#x200B;或&#x200B;*部署管理器*&#x200B;角色的沙箱项目用户可以通过云管理器UI删除其生产和阶段环境集。
 
 >[!NOTE]
 >在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
@@ -79,18 +79,18 @@ A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud
 
 或者，
 
-从“ **项目** ”概 **述页中选** 择“删除项目”以删除沙箱项目。
+从&#x200B;**项目概述**&#x200B;页面选择&#x200B;**删除项目**&#x200B;以删除沙箱项目。
 
 ![](assets/delete-sandbox2.png)
 
 
-## 创建常规项目 {#create-regular-program}
+## 创建常规项目{#create-regular-program}
 
-常规 *项目* 适用于熟悉AEM和云管理器并准备好开始编写、构建和测试代码，以将其部署到生产的用户。
+*常规*&#x200B;项目适用于熟悉AEM和云管理器的用户，该用户可以编写、构建和测试代码，并将其部署到生产。
 
 请按照以下步骤创建常规项目:
 
-1. 在创 **建项目向导中** ，选择“为生产设置”以创建常规项目。 用户可以接受默认项目名称，或在选择“继续”之 **前编辑**。
+1. 在创建项目向导中选择&#x200B;**为生产设置**&#x200B;以创建常规项目。 用户可以接受默认项目名或在选择&#x200B;**继续**&#x200B;之前对其进行编辑。
 
    ![](assets/create-prod1.png)
 
@@ -104,11 +104,11 @@ A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud
 
    ![](assets/set-up-prod2.png)
 
-1. 选择解决方案后，单击“ **创建**”。
+1. 选择解决方案后，单击&#x200B;**创建**。
 
    ![](assets/set-up-prod3.png)
 
-1. 在项目上看到您的登陆页卡后，将鼠标悬停在该卡上，以选择云管理器图标，以导航至云管理器 **概述** 页。
+1. 在项目上看到您的登陆页卡后，将指针悬停在该卡上以选择云管理器图标，以导航至云管理器&#x200B;**概述**&#x200B;页面。
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >常规项目没有&#x200B;**自动设置**&#x200B;功能。
 
 
 
