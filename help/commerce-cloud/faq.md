@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Adobe已采用Magento的GraphQL API作为其官方商务API来处理所有与商务相关的数据。 因此，AEM使用GraphQL通过I/O Runtime与Magento和任何商务引擎交换商务数据。
 
-## 2.AdobeI/O是如何发挥作用的？ AEM是否直接与Magento沟通？
+## 2.Adobe I/O是如何发挥作用的？ AEM是否直接与Magento沟通？
 
-AEM无需I/O Runtime层即可直接连接到Magento。 如果需要将非Magento商务后端（第三方解决方案）与AEM集成，则I/O Runtime平台可用于托管映射层，以将MagentoGraphQL API连接到任何第三方解决方案API。 有关此的详细信息，请参阅此参 [考实施](https://github.com/adobe/commerce-cif-graphql-integration-reference)。 对于非Magento解决方案，AEM将配置为指向I/O Runtime端点。
+AEM无需I/O Runtime层即可直接连接到Magento。 如果需要将非Magento商务后端（第三方解决方案）与AEM集成，则I/O Runtime平台可用于托管映射层，以将MagentoGraphQL API连接到任何第三方解决方案API。 有关此的详细信息，请参阅此[引用实现](https://github.com/adobe/commerce-cif-graphql-integration-reference)。 对于非Magento解决方案，AEM将配置为指向I/O Runtime端点。
 
 I/O运行时平台还可用于扩展或自定义商务服务。 对于此用例，您将调用I/O Runtime端点，该端点随后将承载各个服务的自定义实现。 集成和扩展用例可以结合使用。
 
@@ -41,7 +41,7 @@ I/O运行时平台还可用于扩展或自定义商务服务。 对于此用例�
 
 ## 7. AEM Dispatcher的缓存失效如何与AEM-Magento配合工作？
 
-我们建议为在调度程序上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议呈现日期客户端。 有关基于TTL的缓存失效的详细信息，请参 [阅AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+我们建议为在调度程序上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议呈现日期客户端。 有关基于TTL的缓存失效的详细信息，请参阅[AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 8.为什么不使用We.Retail?
 
@@ -65,7 +65,7 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件会向Magento发送包
 
 ## 13. CIF公司如何与其他商业平台合作？
 
-通过I/O Runtime平台与其他商务解决方案(非Magento)等第三方解决方案集成。  我们构建了一个参 [考实施](https://github.com/adobe/commerce-cif-graphql-integration-reference) ，以演示如何实现这一点。 这允许通过在任何第 [三方商务平台上](https://github.com/adobe/commerce-cif-connector)[公开MagentoGraphQL API，重用AEM CIF Cloud Connector和AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) 。 为了优惠最大的灵活性和可伸缩性，此集成层部署在无服务器的 [Adobe I/O Runtime平台上](https://www.adobe.io/apis/experienceplatform/runtime.html)。
+通过I/O Runtime平台与其他商务解决方案(非Magento)等第三方解决方案集成。  我们构建了一个[参考实现](https://github.com/adobe/commerce-cif-graphql-integration-reference)来演示如何实现。 这允许通过在任何第三方商务平台上公开MagentoGraphQL API来重用[AEM CIF云连接器](https://github.com/adobe/commerce-cif-connector)和[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)。 为了优惠最大的灵活性和可伸缩性，此集成层部署在无服务器[Adobe I/O Runtime平台](https://www.adobe.io/apis/experienceplatform/runtime.html)上。
 
 ## 14.是否有一种方法能够用商业文本增强产品数据？ 你从哪儿做的？ 在AEM还是在Magento?
 
@@ -93,7 +93,7 @@ PIM数据通过GraphQL请求暴露给AEM和客户端。 我们的推荐是将PIM
 
 ## 20.如何申请I/O Runtime试用许可？
 
-您可以在此处申请试用许可证以使用I/O运 [行时](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md)。
+您可以在此处](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md)申请试用许可证以使用I/O运行时[。
 
 
 
