@@ -20,14 +20,14 @@ ht-degree: 46%
 
 借助此实用程序，AEM 开发人员可以将现有 AEM 资产处理工作流迁移到 AEM as a Cloud Service。
 
-## 支持的工作流 {#migration-support-for-workflows}
+## 支持的工作流{#migration-support-for-workflows}
 
-工作流的迁移支持级别各不相同。 查看特 [定工作流的列表](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)。 根据提供的支持，这些工作流分为以下类别。 Adobe支持迁移列在、或 `SUPPORTED`类别 `REQUIRED`中的 `OPTIONAL` 工作流。 不支持其他类别中提及的工作流步骤。
+工作流的迁移支持级别各不相同。 请参阅此[特定工作流的列表](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)。 根据提供的支持，这些工作流分为以下类别。 Adobe支持迁移`SUPPORTED`、`REQUIRED`或`OPTIONAL`类别中列出的工作流。 不支持其他类别中提及的工作流步骤。
 
 * `SUPPORTED`:支持的 [!DNL Experience Manager Assets] Cloud Service功能。
 * `OPTIONAL`:作为Cloud Service [!DNL Experience Manager Assets] 的可选功能。
 * `REQUIRED`:添加到工作流的必需步骤。
-* `UNNECESSARY`:功能在Cloud Service [!DNL Experience Manager Assets] 中不是必需的。
+* `UNNECESSARY`:功能在作为Cloud Service [!DNL Experience Manager Assets] 时不是必需的。
 * `NUI_OOTB`:asset compute服务 [提供的功能](/help/assets/asset-microservices-configure-and-use.md)。
 * `DMS7_OOTB`:默认连接器提供 [!DNL Dynamic Media] 的功能。
 * `NUI_MIGRATED`:已迁移到 [Asset compute服务的处理用户档案](/help/assets/asset-microservices-configure-and-use.md)。
