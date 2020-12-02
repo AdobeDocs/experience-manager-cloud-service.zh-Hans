@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 89f7e60205efc275bbeb97246ccc3add28810cfa
+source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1233'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为Cloud Service2020.11.0的发布日期为2020年12月1日。
+[!DNL Adobe Experience Manager]作为Cloud Service2020.11.0的发布日期为2020年12月2日。
 以下版本(2020.12.0)将于2020年12月17日发布
 
 ## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
@@ -25,11 +25,9 @@ ht-degree: 3%
 
 * **[启动层次结构管理](/help/sites-cloud/authoring/launches/managing-pages.md) 和 [未来时间扭曲](/help/sites-cloud/authoring/launches/preview.md)**:用于在启动项内添加／删除页面以及使用时间扭曲浏览站点的新UI显示启动项中的未来状态。
 
-* **[扩展内容片段模型和编辑器](/help/assets/content-fragments/content-fragments-models.md)**:新的选项可用于各种数据类型的输入验证，新的表单可视化功能改进了明细列表数据类型，内容片段模型名称在资产UI中显示并可搜索。
+* **对可用于转出的Live Copy页面进行排序**:使用“名称”、“上次修改日期”和“上次转出日期”属性对可 [!UICONTROL 用于转出]的Live Copy页 [!UICONTROL 面进行排序的新]  选项。页面的[!UICONTROL 上次转出日期]是引入的新属性。
 
-* **使站点可安装**:用于配置Progressive Web Application(PWA)功能的新站点属性，将使站点可安装并可选脱机使用。这些功能需要核心组件。
-
-* **[核心组件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**:AEM作为Cloud Service，可从对最新版核心组件进行自动更新中受益。版本2.12.0包括社区提供的最新改进，如[新的POST表单处理程序；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data)通过上下文感知配置包含自定义CSS、Javascript和元数据[标签的能力；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)和[`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components)实用程序，以简化自定义组件中Adobe数据层的集成。 请参阅2.12.0中[更改列表](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)。
+<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
 
@@ -40,11 +38,11 @@ ht-degree: 3%
 
    ![批量导入程序配置](/help/assets/assets/bulk-import-config-low-res.png)
 
-* 用户可以在卡片和列视图中对数字资产进行排序。
+* 用户现在可以在卡片和列视图中对数字资产进行排序。
 
    ![排序资产](/help/assets/assets/asset-sort-options.png)
 
-* 对此版本中[Experience Manager资产]中的辅助功能进行了以下增强。 有关详细信息，请参阅 [!DNL Assets]](/help/assets/accessibility.md)中的[辅助功能。
+* 对此版本中[!DNL Experience Manager Assets]的辅助功能进行了以下增强。 有关详细信息，请参阅 [!DNL Assets]](/help/assets/accessibility.md)中的[辅助功能。
 
    * 使用键盘导航时间轴时，Esc键可以折叠“显示全部”选项而不失焦点。
    * 使用键盘Tab键导航时，在从添加的标记中删除最后一个标记后，标记字段将保留焦点。
@@ -83,8 +81,6 @@ ht-degree: 3%
 
 * 如果未直接在Sling CA配置中指定配置，但在父配置中指定配置，则GraphQL客户端配置无法读取正确。 已修复。
 
-
-
 ## Cloud Manager {#cloud-manager}
 
 ### 发布日期 {#release-date-cm}
@@ -111,13 +107,17 @@ AEM中Cloud Manager作为Cloud Service2020.11.0的发布日期为2020年11月12�
 
 * 增加了根据工作流标题、工作流模型、状态、发起者、有效负荷路径和开始日期搜索工作流实例的支持。 请参阅[搜索工作流实例](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
 
-### 用户同步{#user-sync}
+### 发布层用户数据同步{#user-sync}
 
 * 用户数据(包括用户档案属性和组成员关系)可以保留在发布层上。 在[注册、登录和用户用户档案文档](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)中了解有关此功能的更多信息。
 
-### 分析器{#analyzers}
+### SDK Build Analyzers {#analyzers}
 
 AEM作为Cloud ServiceSDK构建分析器主插件可检测主项目中的问题，包括缺少依赖项。 它为开发人员提供了在本地开发过程中发现问题的机会，而且很早之后，您就可以使用Cloud Manager部署到云环境。 有关详细信息，请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)和[此处](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk)。
+
+### 其他 {#others-foundation}
+
+新的[&quot;httpd -t&quot;语法](/help/implementing/dispatcher/disp-overview.md#local-validation)检查在Cloud Manager构建过程中执行的apache和调度程序配置，也可以使用AEM作为Cloud ServiceSDK的调度程序工具运行该配置。
 
 ## 内容传输工具 {#content-transfer-tool}
 
