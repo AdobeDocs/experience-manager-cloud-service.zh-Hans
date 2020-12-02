@@ -3,9 +3,9 @@ title: 资产 HTTP API
 description: 使用 [!DNL Adobe Experience Manager Assets]中的HTTP API创建、读取、更新、删除和管理数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1473'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 >[!NOTE]
 >
->所有与上传或更新资产或二进制文件（如演绎版）相关的API调用都作为Cloud Service部署进行预配。 对于上传二进制文件，请改用[直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical)。
+>AEM的[!DNL Cloud Service]部署中已弃用与上传或更新资产或二进制文件（如演绎版）相关的所有API调用。 对于上传二进制文件，请改用[直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical)。
 
 ## 内容片段 {#content-fragments}
 
