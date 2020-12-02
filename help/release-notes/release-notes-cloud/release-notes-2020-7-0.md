@@ -30,11 +30,11 @@ ht-degree: 80%
 
 * 如今，配置是存储在 Experience Manager 存储库的 `/conf` 中，而不是 `/etc/cloudsettings` 中。
 
-## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### [!DNL Assets] {#what-is-new-assets}中的新增功能
 
-* [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. 开发人员可以使用该服务创建满足复杂用例的专用自定义应用程序。 This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。管理员可以配置[!DNL Experience Manager]以调用使用[!DNL Asset Compute Service]创建的自定义应用程序。 开发人员可以使用该服务创建满足复杂用例的专用自定义应用程序。 此Web服务可以为不同文件类型生成缩略图，从Adobe文件格式生成高质量图像渲染，对视频（将来）进行编码，提取元数据，提取全文作为索引的前奏，并通过所有可用的[!DNL Sensei]服务运行资产。 请参阅[使用资产微服务和处理用户档案](/help/assets/asset-microservices-configure-and-use.md)。
 
 * 改进了 [!DNL Experience Manager] as a Cloud Service 中 [!DNL Dynamic Media] 的初始配置，使其更加稳健。如今，它可以向管理员提供进程进度。
 
@@ -42,21 +42,21 @@ ht-degree: 80%
 
 * 如今在[!UICONTROL 工作流程模型]编辑器中，与云服务部署不兼容的工作流程步骤将会带有警告标记。此外，在云服务环境中执行现有的工作流程时，将会跳过不兼容的工作流程步骤。
 
-* Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in [!DNL Cloud Manager] are automatically deployed to `/var` and thus available in [!DNL Experience Manager]. 客户更改的 `/libs` 下的产品工作流程模型不会自动部署到 `/var`。
+* 由部署到与[!DNL Cloud Manager]中的环境关联的Git项目中的`/conf/global`的客户创建的工作流模型将自动部署到`/var`，因此在[!DNL Experience Manager]中可用。 客户更改的 `/libs` 下的产品工作流程模型不会自动部署到 `/var`。
 
-### 修复的错误 {#assets-bugs-fixed}
+### 已修复的错误{#assets-bugs-fixed}
 
 * 移动资产向导不会按预期方式加载收藏集中包含的资产。 (CQ-4296756)
-* XMP写回 `dam:size` 中 `dam:sha1` 不包括和的值。 (CQ-4237355)
-* 批量取消发布资 [!DNL Brand Portal] 产时，会生成一个错误，提示请求URI太长。 (CQ-4299474)
+* `dam:size`和`dam:sha1`的值从XMP写回中排除。 (CQ-4237355)
+* 批量取消发布资产时，[!DNL Brand Portal]会生成一个错误，提示请求URI太长。 (CQ-4299474)
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager商务作为Cloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
 AEM Commerce现在在Cloud Service上可用。
 
-有关更 [多详细信息，请参阅AEM Commerce入门](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) (Cloud Service)。
+有关更多详细信息，请参阅[AEM Commerce入门作为Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)。
 
 ## 核心组件 {#core-components}
 
@@ -94,7 +94,7 @@ AEM Commerce现在在Cloud Service上可用。
 
 * 现在支持身份验证绑定的私有Maven存储库。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多 [详细信息，请参阅](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) “使用Java 11支持”。
+* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅[使用Java 11支持](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
 
 ### 错误修复 {#bug-fixes-cm}
 
