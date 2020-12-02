@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.11.0 {#release-notes}
+# 作为Cloud Service2020.11.0 {#release-notes}的Adobe Experience ManagerCloud Manager发行说明
 
 本页概述了AEM中作为Cloud Service2020.11.0的Cloud Manager发行说明。
 
@@ -22,10 +22,10 @@ AEM中Cloud Manager作为Cloud Service2020.11.0的发布日期为2020年11月12�
 
 ### 新增功能 {#what-is-new}
 
-* 现在，用户可 **以从环境卡** 和环境摘要页面上的环境菜单选项中使用新的菜单选项“本地登录”。
-有关更多 [详细信息](/help/implementing/cloud-manager/manage-environments.md##login-locally) ，请参阅管理环境。
+* 现在，用户可从环境卡和环境摘要页上的环境菜单选项中使用新的菜单选项&#x200B;**本地登录**。
+有关详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md##login-locally)。
 
-* 云管 **理器** 中的“学习”选项卡已通过UI中的新图像刷新。
+* Cloud Manager中的&#x200B;**Learn**&#x200B;选项卡已用UI中的新图像刷新。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
