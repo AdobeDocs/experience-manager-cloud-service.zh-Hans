@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 6be2ed60f4e672b99a85b55f833b8ae2f1b952b0
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1070'
 ht-degree: 8%
 
 ---
@@ -58,18 +58,18 @@ CIF加载项可从[软件分发门户](https://experience.adobe.com/#/downloads/
 对于将AEM用作Cloud ServiceSDK的本地CIF Add-on开发，请执行以下步骤：
 
 1. 获取最新的AEM作为Cloud ServiceSDK
-2. 解压缩AEM .jar以创建`crx-quickstart`文件夹，运行：
+1. 解压缩AEM .jar以创建`crx-quickstart`文件夹，运行：
 
    ```bash
    java -jar <jar name> -unpack
    ```
 
-3. 创建`crx-quickstart/install`文件夹
-4. 将CIF加载项的正确Sling功能存档文件复制到`crx-quickstart/install`文件夹中。
+1. 创建`crx-quickstart/install`文件夹
+1. 将CIF加载项的正确Sling功能存档文件复制到`crx-quickstart/install`文件夹中。
 
    CIF加载项zip文件包含两个Sling功能存档文件`.far`。 请确保为AEM作者或AEM发布使用正确的版本，具体取决于您计划如何将本地AEM作为Cloud ServiceSDK运行。
 
-5. 创建一个名为`COMMERCE_ENDPOINT`的本地OS环境变量，其中包含MagentoGraphQL端点。
+1. 创建一个名为`COMMERCE_ENDPOINT`的本地OS环境变量，其中包含MagentoGraphQL端点。
 
    Mac OSX示例：
 
@@ -85,9 +85,21 @@ CIF加载项可从[软件分发门户](https://experience.adobe.com/#/downloads/
 
    此变量也必须设置为AEM的Cloud Service环境。
 
-6. 开始AEM作为Cloud ServiceSDK
+   有关变量的详细信息，请参阅[将AEM的OSGi配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
-7. 开始本地GraphQL代理服务器
+1. （可选）要启用分阶段目录功能，您需要为Magento实例创建集成令牌。 请按照[入门](./getting-started.md#staging)中的步骤创建令牌。
+
+   将名称为`COMMERCE_AUTH_HEADER`的OSGi机密设置为以下值：
+
+   ```xml
+   Authorization: Bearer <Access Token>
+   ```
+
+   有关机密的详细信息，请参阅[将AEM的OSGi配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
+
+1. 开始AEM作为Cloud ServiceSDK
+
+1. 开始本地GraphQL代理服务器
 
    要使MagentoGraphQL端点在本地可用于CIF加载项和CIF组件，请使用以下命令。 GraphQL端点随后将在`http://localhost:3002/graphql`上可用。
 Mac OSX示例：
@@ -101,11 +113,12 @@ Mac OSX示例：
    ```bash
    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
    ```
+
    参数`--proxyPartial`需要接收空字符串。
 
    可以通过将GraphQL查询工具指向`http://localhost:3002/graphql`并测试几个查询来测试本地GraphQL代理。
 
-8. 登录AEM SDK并配置CIF以使用本地GraphQL代理服务器
+1. 登录AEM SDK并配置CIF以使用本地GraphQL代理服务器。
 
    导航到CIFCloud Service配置(“工具”>“Cloud Services”>“CIF配置”)。 打开项目所使用的配置的属性视图符。
 
