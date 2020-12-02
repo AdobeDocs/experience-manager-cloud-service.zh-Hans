@@ -6,8 +6,8 @@ user-guide-description: 本指南概述了如何开始使用 Experience Manager 
 translation-type: tm+mt
 source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '244'
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 0%
       + [使用向导](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [设置项目](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [了解构建环境](getting-access-to-aem-in-cloud/build-environment-details.md)
-   + Cloud Manager发行说明 {#release-notes-cloud-manager}
+   + Cloud Manager的发行说明{#release-notes-cloud-manager}
       + [最新发行说明（2020.11.0 版）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [2020.10.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [2020.9.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
