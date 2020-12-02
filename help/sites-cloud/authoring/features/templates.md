@@ -10,7 +10,7 @@ ht-degree: 98%
 ---
 
 
-# 创建页面模板 {#creating-page-templates}
+# 创建页面模板  {#creating-page-templates}
 
 创建页面时，您必须选择一个模板，以用作创建新页面的基础。模板可定义生成页面的结构、任何初始内容以及可使用的组件。
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+有关可编辑模板在技术层面的工作方式的详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md)以了解更多信息。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ For detailed information about how editable templates work at a technical level,
 
 ### 创建模板文件夹 - 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
+您应该为项目创建模板文件夹，以保存特定于项目的模板。这是管理员任务，在文档[页面模板](/help/implementing/developing/components/templates.md#template-folders)中有说明。—>
 
 ### 创建新模板 - 模板作者 {#creating-a-new-template-template-author}
 
@@ -114,7 +114,7 @@ For detailed information about how editable templates work at a technical level,
 
    >[!NOTE]
    >
-   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
+   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md#template-type)。—>
 
 1. 填写&#x200B;**模板详细信息**：
 
@@ -127,7 +127,7 @@ For detailed information about how editable templates work at a technical level,
    >
    >创建新模板后，会在控制台中将其标记为&#x200B;**草稿**，这表示页面作者还不能使用此模板。
 
-### 定义模板属性 - 模板作者 {#defining-template-properties-template-author}
+### 定义模板属性 - 模板作者  {#defining-template-properties-template-author}
 
 模板可能具有以下属性：
 
@@ -162,7 +162,7 @@ For detailed information about how editable templates work at a technical level,
    * 如果对缩略图不满意，请单击或点按&#x200B;**清除**&#x200B;以上传其他图像，或重新生成缩略图。
 1. 如果对缩略图满意，请单击或点按&#x200B;**保存并关闭**。
 
-### 启用并允许模板 - 模板作者 {#enabling-and-allowing-a-template-template-author}
+### 启用并允许模板 - 模板作者  {#enabling-and-allowing-a-template-template-author}
 
 为了能够在创建页面时使用模板，您需要执行以下操作：
 
@@ -204,7 +204,7 @@ For detailed information about how editable templates work at a technical level,
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
    >
-   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability) —— 允许的模板原则保持不变。
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
@@ -221,7 +221,7 @@ For detailed information about how editable templates work at a technical level,
 1. 选择要一同发布的&#x200B;**内容策略**。
 1. 从工具栏中选择&#x200B;**发布**&#x200B;以完成操作。
 
-## 编辑模板 - 模板作者 {#editing-templates-template-authors}
+## 编辑模板 - 模板作者  {#editing-templates-template-authors}
 
 创建或编辑模板时，您可以定义模板的多个方面。编辑模板类似于页面创作。
 
@@ -527,7 +527,7 @@ For detailed information about how editable templates work at a technical level,
 >
 >初始内容用于准备组件和页面布局，这将作为创建内容的起点。初始内容不能作为保持原样的实际内容。因此，无法翻译初始内容。
 >
->如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/get-started/localization.html)。
+>如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 编辑模板 - 布局 - 模板作者 {#editing-a-template-layout-template-author}
 
