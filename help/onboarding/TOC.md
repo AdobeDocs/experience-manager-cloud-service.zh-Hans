@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: f97744f5fb5dec7e13f8600102b7f5aafe7dc343
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 90%
+source-wordcount: '255'
+ht-degree: 86%
 
 ---
 
@@ -61,6 +61,8 @@ ht-degree: 90%
 + 辅助功能 {#accessibility}
    + [AEM as a Cloud Service 和 Web 无障碍准则](accessibility/web-accessibility.md)
    + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
++ [迁移方法] {#migration-methodology}
+   + [作为Cloud Service迁入Adobe Experience Manager](migration-methodology/getting-started.md)
 + 最佳实践 {#best-practices}
    + [SEO 和 URL 管理](best-practices/seo-and-url-management.md)
 + [工具控制台概述](tools-consoles.md)
