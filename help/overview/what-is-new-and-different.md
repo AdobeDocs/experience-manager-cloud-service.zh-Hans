@@ -37,13 +37,13 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有关内部部署和托管服务版本的更多详细信息，请参阅AEM [6.5文档集](https://helpx.adobe.com/cn/support/experience-manager/6-5.html)。
+>有关内部部署和托管服务版本的更多详细信息，请参阅[AEM 6.5](https://helpx.adobe.com/cn/support/experience-manager/6-5.html)的文档集。
 
 ## 架构 {#architecture}
 
 >[!NOTE]
 >
->有关更多详细信息，请 [参阅架构](/help/core-concepts/architecture.md)。
+>有关详细信息，请参阅[架构](/help/core-concepts/architecture.md)。
 
 AEM as a Cloud Service 现在具有：
 
@@ -66,10 +66,10 @@ AEM as a Cloud Service 现在具有：
 ![针对不同使用模式的自动缩放](assets/introduction-04.png "针对不同使用模式的自动缩放")
 
 
-## AEM更新 {#aem-updates}
+## AEM更新{#aem-updates}
 
 >[!NOTE]
->有关更多详细信息，请 [参阅AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
+>有关详细信息，请参阅[AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
 
 AEM作为Cloud Service现在使用连续集成和连续投放(CI/CD)来确保您的项目处于最新的AEM版本。 这意味着生产实例和舞台实例将更新为最新的AEM版本，不会中断用户的服务。
 
@@ -113,11 +113,11 @@ Adobe云管理器是AEM作为Cloud Service的持续升级方法的一个组成�
 
 Cloud Manager已演变为自助门户，可在此创建和配置AEM作为Cloud Service的主要组件：
 
-* 创建和管理新项目。 有关更多 [详细信息，请参阅了解项目](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 和项目类型。
+* 创建和管理新项目。 有关详细信息，请参阅[了解项目和项目类型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)。
 
-* 在这些项目中创建和管理AEM环境。 有关更多 [详细信息](/help/implementing/cloud-manager/manage-environments.md) ，请参阅管理环境。
+* 在这些项目中创建和管理AEM环境。 有关详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)。
 
-* 创建并管理将客户代码和相关配置部署到特定环境的管道。 有关更 [多详细信息，请参阅配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md) 。
+* 创建并管理将客户代码和相关配置部署到特定环境的管道。 有关更多详细信息，请参阅[配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md)。
 
 * 收到这些组件的重要生命周期事件的通知（例如，产品更新）。
 
@@ -130,13 +130,13 @@ Cloud Manager已演变为自助门户，可在此创建和配置AEM作为Cloud S
 * APAC（澳大利亚）
 
 >[!NOTE]
->请参阅 [将Experience Manager作为Cloud Service访](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) 问，以便在AEM将Cloud管理器作为Cloud Service入门。
+>请参阅[以Cloud Service身份访问Experience Manager](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)，以开始将AEM中的云管理器作为Cloud Service。
 
 ## 入门 {#onboarding}
 
 >[!NOTE]
 >
->有关更多详细信息，请 [参阅入门](/help/onboarding/home.md)。
+>有关详细信息，请参阅[入门](/help/onboarding/home.md)。
 
 如果将AEM用作云服务作为Adobe负责许多方面，启动和管理AEM项目很简单：
 
@@ -164,11 +164,11 @@ Cloud Manager已演变为自助门户，可在此创建和配置AEM作为Cloud S
 
 >[!NOTE]
 >
->有关更多详细信息，您可以 [开始开发](/help/implementing/developing/introduction/development-guidelines.md) 指 [南和开发- WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
+>有关更多详细信息，您可以使用[开发指南](/help/implementing/developing/introduction/development-guidelines.md)和[开发- WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)进行开始。
 
 支持AEM作为Cloud Service的新体系结构涉及对整体开发人员体验的一些关键更改。 AEM作为Cloud Service的主要目标之一是允许经验丰富的客户(在事先或在Adobe Managed Services的上下文中使用AEM)尽快迁移到AEM作为Cloud Service，而无需重写其大量自定义代码。 但是，可能仍需要做出一些调整。
 
-### 云开发 {#aem-as-a-cloud-service-developing-cloud-development}
+### 云开发{#aem-as-a-cloud-service-developing-cloud-development}
 
 对于要在AEM上作为Cloud Service运行的现有AEM应用程序，需要执行以下步骤：
 
@@ -184,13 +184,13 @@ Web控制台(管理OSGI包及其关联配置，以前是AEM QuickStart的一部�
 
 >[!NOTE]
 >
->另请参阅 [OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration)
+>另请参阅[OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration)
 
 开发人员的另一个常见要求是快速访问各种环境的日志文件。 以AEM为Cloud Service，创作和发布节点中不同节点的日志文件可通过云管理器（可下载的文件形式或通过API）使用。
 
 由于代码和内容的清晰分离，开发人员可以使用特定流程来更新内容作为部署的一部分。 可变内容的典型用例有：
 
-* 属于 *客户* 项目的标准默认内容(例如，文件夹、模板、工作流等)
+* 作为客户项目一部分的标准&#x200B;*默认*&#x200B;内容(例如，文件夹、模板、工作流等)
 
 * 搜索索引定义
 
@@ -198,11 +198,11 @@ Web控制台(管理OSGI包及其关联配置，以前是AEM QuickStart的一部�
 
 * 服务用户和用户组
 
-### 本地开发 {#aem-as-a-cloud-service-developing-local-development}
+### 本地开发{#aem-as-a-cloud-service-developing-local-development}
 
 为了支持快速迭代和开发，还可以在AEM之外开发AEM应用程序作为Cloud Service上下文。 为此，开发人员可以使用以下对象：
 
-* AEM作为Cloud Service快速入门：最新 `.jar` AEM代码库的基于的独立安装程序，具有相同的功能和API界面。
+* AEM作为Cloud Service快速入门：基于`.jar`的最新AEM代码库的独立安装程序，具有相同的功能和API界面。
 
 * AEM作为Cloud Service调度程序SDK:在本地测试和验证调度程序配置的基于映像的过程
 
@@ -210,7 +210,7 @@ Web控制台(管理OSGI包及其关联配置，以前是AEM QuickStart的一部�
 >
 >应该指出，云快速入门不允许所有AEM Sites和AEM Assets功能。 它包含一个简单的创作环境，在该环境中可以开发和测试大多数扩展。
 
-## 操作和性能 {#operations-and-performance}
+## 操作和性能{#operations-and-performance}
 
 >[!NOTE]
 >
@@ -232,11 +232,11 @@ AEM作为Cloud Service的操作还支持新的监视、报告和警报基础结�
 
 >[!NOTE]
 >
->有关更多详细信息， [请参阅安全- IMS支持](/help/security/ims-support.md)。
+>有关详细信息，请参阅[安全- IMS支持](/help/security/ims-support.md)。
 
 对AEM作为Cloud Service的一个重大改变是完全集成地使用AdobeID访问创作层。
 
-这需要使用Adobe [管理控制台](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 来管理用户和用户组。 用户帐户使您的用户能够访问Adobe产品和服务，因为用户档案信息集中在AdobeIdentity Management系统(IMS)中，以便在所有云服务中共享。 一旦为AEM分配了访问权限，用户帐户就可以作为Cloud Service在AEM中引用（如之前）;例如，用于从AEM Security用户界面定义角色和权限。
+这需要使用[Adobe管理控制台](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)管理用户和用户组。 用户帐户使您的用户能够访问Adobe产品和服务，因为用户档案信息集中在AdobeIdentity Management系统(IMS)中，以便在所有云服务中共享。 一旦为AEM分配了访问权限，用户帐户就可以作为Cloud Service在AEM中引用（如之前）;例如，用于从AEM Security用户界面定义角色和权限。
 
 这综合了以下优点：
 
@@ -244,11 +244,11 @@ AEM作为Cloud Service的操作还支持新的监视、报告和警报基础结�
 
 * 作为Cloud Service,AEM的每个特定实例的用户首选项仍为本地。
 
-## 创作用户界面 {#authoring-user-interface}
+## 创作用户界面{#authoring-user-interface}
 
 >[!NOTE]
 >
->有关更多细节， [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) 是一个不错的起点。
+>有关更多详细信息，[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)是一个不错的起点。
 
 对于站点和资产，创作用户界面(UI)的基本原则对于过去使用AEM的任何人来说都很熟悉。
 
@@ -258,7 +258,7 @@ AEM作为Cloud Service的操作还支持新的监视、报告和警报基础结�
 
 Adobe Experience Manager Sites作为Cloud Service，通过将AEM内容管理系统的强大功能与AEM数字资产管理相结合，您可以为客户提供个性化、内容主导的体验。
 
-有关详细信息，请参阅对 [站点的更改概述](/help/sites-cloud/sites-cloud-changes.md)。
+有关详细信息，请参阅[对站点的更改](/help/sites-cloud/sites-cloud-changes.md)的概述。
 
 ## AEM Assets {#aem-assets}
 
@@ -266,7 +266,7 @@ Adobe Experience Manager资产作为Cloud Service优惠，为企业提供云本�
 
 资产产品包括云中的下一代资产处理以及高性能的资产获取和搜索。
 
-有关详细信息，请 [参阅概述和资产Cloud Service简介](/help/assets/overview.md)。
+有关详细信息，请参阅[概述和资产Cloud Service简介](/help/assets/overview.md)。
 
 ## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
