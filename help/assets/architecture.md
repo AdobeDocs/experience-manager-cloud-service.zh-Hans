@@ -1,19 +1,19 @@
 ---
 title: ' [!DNL Assets]的架构'
-description: Adobe Experience Manager资产Cloud Service建筑
+description: Adobe Experience Manager资产的架构 [!DNL Cloud Service]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 7%
+source-wordcount: '93'
+ht-degree: 8%
 
 ---
 
 
-# 作为Cloud Service解决方案的资产架构{#assets-architecture}
+# 作为[!DNL Cloud Service]解决方案{#assets-architecture}的资产架构
 
-AEM Assets作为一家Cloud Service基于Adobe Experience Manager，与最新的Experience Manager6.5做出了很好的比较。该Cloud Service产品具有经过调整的架构和功能，提供云本地服务。 基础架构中的更改不允许所有Experience Manager6.5功能都成为Cloud Service的一部分。
+AEM Assets公司[!DNL Cloud Service]以Adobe Experience Manager公司为基础，与最新的产品Experience Manager6.5做出了很好的比较。[!DNL Cloud Service]产品具有经过调整的架构和功能，提供云本地服务。 基础架构中的更改不允许所有Experience Manager6.5功能都是[!DNL Cloud Service]的一部分。
 
 要查看资产微服务的架构概述，请参阅此[资产微服务概述](asset-microservices-overview.md#asset-microservices-architecture)。
 
