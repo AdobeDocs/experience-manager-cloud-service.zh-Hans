@@ -11,7 +11,7 @@ ht-degree: 13%
 ---
 
 
-# Cascading Metadata {#cascading-metadata}
+# 层叠元数据{#cascading-metadata}
 
 在捕获资产的元数据信息时，用户会在各种可用字段中提供信息。 您可以显示特定元数据字段或字段值，这些字段或字段值取决于在其他字段中选择的选项。 此类元数据的条件显示称为级联元数据。 换言之，您可以在特定元数据字段／值与一个或多个字段和／或其值之间创建依赖关系。
 
@@ -26,7 +26,7 @@ ht-degree: 13%
 * 根据在另一个字段中指定的值更改特定字段显示的选项。
 * 根据在其他字段中指定的值，在特定字段中设置默认元数据值。
 
-## 在AEM中配置级联元数据 {#configure-cascading-metadata-in-aem}
+## 在AEM {#configure-cascading-metadata-in-aem}中配置级联元数据
 
 请考虑您希望根据所选资产类型显示级联元数据的方案。 一些示例
 
@@ -40,21 +40,21 @@ ht-degree: 13%
 
    ![select_form](assets/select_form.png)
 
-1. （可选）在元数据模式编辑器中，创建新字段以进行条件化。 在“设置”选项卡中指定名称和属 **[!UICONTROL 性路径]** 。
+1. （可选）在元数据模式编辑器中，创建新字段以进行条件化。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中指定名称和属性路径。
 
-   要创建新选项卡，请点按／单 `+` 击以添加选项卡，然后添加元数据字段。
+   要创建新选项卡，请点按／单击`+`以添加选项卡，然后添加元数据字段。
 
    ![add_tab](assets/add_tab.png)
 
-1. 为资产类型添加下拉列表字段。 在“设置”选项卡中指定名称和属 **[!UICONTROL 性路径]** 。 添加可选描述。
+1. 为资产类型添加下拉列表字段。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中指定名称和属性路径。 添加可选描述。
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. 键值对是提供给表单用户的选项。 您可以手动或从JSON文件提供键值对。
 
-   * 要手动指定值，请选 **[!UICONTROL 择手动添加]**，然后点按／单 **[!UICONTROL 击添加选项]** ，并指定选项文本和值。 例如，指定视频、PDF、Word和图像资产类型。
+   * 要手动指定值，请选择&#x200B;**[!UICONTROL 手动添加]**，然后点按／单击&#x200B;**[!UICONTROL 添加选择]**&#x200B;并指定选项文本和值。 例如，指定视频、PDF、Word和图像资产类型。
 
-   * 要动态从JSON文件中提取值，请选 **[!UICONTROL 择“通过JSON路径添加]** ”并提供JSON文件的路径。 AEM在向用户显示表单时实时获取键值对。
+   * 要动态从JSON文件中获取值，请选择&#x200B;**[!UICONTROL 通过JSON路径添加]**，并提供JSON文件的路径。 AEM在向用户显示表单时实时获取键值对。
 
    这两种选择是互斥的。 无法从JSON文件导入选项并手动编辑。
 
@@ -74,11 +74,11 @@ ht-degree: 13%
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. 要在资产类型字段和其他字段之间创建依赖关系，请选择相关字段并打开“规 **[!UICONTROL 则]** ”选项卡。
+1. 要在资产类型字段和其他字段之间创建依赖关系，请选择相关字段并打开&#x200B;**[!UICONTROL 规则]**&#x200B;选项卡。
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. 在&#x200B;**[!UICONTROL Requirement]**&#x200B;下，根据新规则&#x200B;]**选项选择**[!UICONTROL  Required。
 1. 点按／单 **[!UICONTROL 击添加规则]** ，然后选择“资 **[!UICONTROL 产类型]** ”字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 点按／单击 **[!UICONTROL 完成]** ，以保存更改。
 
    ![define_rule](assets/define_rule.png)
@@ -102,7 +102,7 @@ ht-degree: 13%
    >您可以应用&#x200B;**[!UICONTROL 要求]**&#x200B;条件和&#x200B;**[!UICONTROL 可见性]**&#x200B;条件，二者相互独立。
 
 1. 同样，在“资产类型”字段中的值“视频”与其他字段（如编解码器和持续时间）之间创建依赖关系。
-1. 重复这些步骤，在“资产类型”字段中的文档资产(PDF和Word [!UICONTROL )与“页面计数] ”和“作者”等字段之 [!UICONTROL 间创建] 依 [!UICONTROL 赖关系]。
+1. 重复上述步骤，在[!UICONTROL 资产类型]字段和[!UICONTROL 页面计数]和[!UICONTROL 作者]等字段之间创建文档资产（PDF和Word）的依赖关系。
 1. 单击&#x200B;**[!UICONTROL 保存]**。将元数据模式应用到文件夹。
 
 1. 导航到您应用元数据模式的文件夹，然后打开资产的属性页面。 根据您在资产类型字段中的选择，系统会显示相关的层叠元数据字段。
