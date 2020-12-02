@@ -10,7 +10,7 @@ ht-degree: 83%
 ---
 
 
-# 在多个站点中使用目标内容 {#working-with-targeted-content-in-multisites}
+# 在多个站点中使用目标内容  {#working-with-targeted-content-in-multisites}
 
 如果您需要在多个站点间管理目标内容（例如活动、体验和选件），则可以利用 AEM 中内置的目标内容多站点支持功能。
 
@@ -36,11 +36,11 @@ ht-degree: 83%
 
 您可以随时暂停或恢复继承。此外，如果您不希望暂停继承，则还可以创建本地体验。默认情况下，除非另有指定，否则所有页面都会使用主区域。
 
-## 目标内容的多站点支持功能简介 {#introduction-to-multisite-support-for-targeted-content}
+## 目标内容的多站点支持功能简介  {#introduction-to-multisite-support-for-targeted-content}
 
 目标内容的多站点支持功能是开箱即用式功能，利用此功能，您可以将目标内容从通过 MSM 管理的主页面推送到本地 Live Copy，还可以管理对此类内容的全局修改和本地修改。
 
-You manage this in an **Area**. 区域可将在不同站点中使用的目标内容（活动、体验和选件）分隔开来，并提供基于 MSM 的机制，以创建并管理目标内容的继承以及站点继承。如此一来，您就不必按照 6.2 之前的 AEM 版本中的要求，在继承的站点中重新创建目标内容。
+在&#x200B;**Area**&#x200B;中管理。 区域可将在不同站点中使用的目标内容（活动、体验和选件）分隔开来，并提供基于 MSM 的机制，以创建并管理目标内容的继承以及站点继承。如此一来，您就不必按照 6.2 之前的 AEM 版本中的要求，在继承的站点中重新创建目标内容。
 
 在某个区域中，只有链接到该区域的活动才会被推送到 Live Copy。默认情况下，主区域将处于选定状态。创建其他区域后，您可以将这些区域链接到站点或页面，以指示要推送的目标内容。
 
@@ -57,9 +57,9 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 
 
-## 用例 {#use-cases}
+## 用例  {#use-cases}
 
-您可以使用多种方式设置目标内容的多站点支持功能，具体使用哪种方式取决于您的用例。此部分从理论上介绍了如何在一个品牌中使用多种方式设置此功能。In addition, in [Example: Targeting Content Based on Geography](#example-targeting-content-based-on-geography), you can see a real-world application of targeting content in multiple sites.
+您可以使用多种方式设置目标内容的多站点支持功能，具体使用哪种方式取决于您的用例。此部分从理论上介绍了如何在一个品牌中使用多种方式设置此功能。此外，在[示例中：根据地理位置](#example-targeting-content-based-on-geography)定位内容，您可以看到在多个站点中定位内容的真实应用程序。
 
 目标内容打包在所谓的可定义站点或页面范围的区域中。这些区域在品牌级别进行定义。一个品牌可以包含多个区域。不同品牌的区域可以有所不同。一个品牌可能只包含主区域，从而在所有品牌之间共享；而另一个品牌可能包含多个品牌（例如，按地区划分的品牌）。因此，品牌之间不需要相互映射区域集。
 
@@ -71,7 +71,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 * “共享”**&#x200B;的目标内容集 - 在一个站点中编辑会直接影响两个站点；通过让两个站点引用同一区域，可以实现此设置。链接到同一区域的站点共享此区域内的目标内容。 例如：
    * 站点 A 链接到区域 X
    * 站点 B 也链接到区域 X
-* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. 例如：
+* 通过MSM从另一个站点继承的不同目标内容&#x200B;**&#x200B;集——内容可以从主控单向转出到Live Copy。 例如：
    * 站点 A 链接到区域 X
    * 站点 B 链接到区域 Y（该区域是区域 X 的 Live Copy）
 
@@ -81,7 +81,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md).
+>有关此功能的更多技术说明，请参阅[如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
 
 ## 示例：根据地域定位内容 {#example-targeting-content-based-on-geography}
 
@@ -110,7 +110,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 ![更改版本](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-营销人员希望将所做的这些更改转出到欧洲区域，因此通过点按或单击&#x200B;**转出页面**，转出了 Live Copy。After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout). <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+营销人员希望将所做的这些更改转出到欧洲区域，因此通过点按或单击&#x200B;**转出页面**，转出了 Live Copy。刷新选项卡后，英国站点具有新图像，因为欧洲区域从主控区域继承（转出后）。<!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
 
 ![转出Live Copy](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -122,7 +122,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md).
+>有关此功能的更多技术说明，请参阅[如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
 
 ### 创建新区域与创建新区域作为 Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -145,7 +145,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 * 站点 C 链接到继承的区域，该区域是主区域的 Live Copy - 创建区域作为 Live Copy，即创建基于主区域的 Live Copy。转出后，继承的区域会从主区域继承活动。
 * 站点 D 链接到其自身的独立区域 - 创建区域，即创建尚未定义任何活动的全新区域。独立区域不会与其他任何站点共享活动。
 
-## 创建新区域 {#creating-new-areas}
+## 创建新区域  {#creating-new-areas}
 
 区域可以跨活动和选件使用。在任何一种内容（如活动）中创建区域后，您也可以将该区域用于另一种内容（如选件）。
 
@@ -189,13 +189,13 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 1. 在&#x200B;**转出配置**&#x200B;下拉菜单中，选择相应的配置。
 
-   See Installed Rollout Configurations for descriptions of each option. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   有关每个选项的说明，请参阅安装的转出配置。<!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
 
-   See Creating and Synchronizing Live Copies for more information on live copies. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   有关Live Copy的详细信息，请参阅创建和同步Live Copy。<!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
 
    >[!NOTE]
    >
-   >When a page is rolled out to a Live Copy and the area configured for the Blueprint page is also the Blueprint for the area configured for the Pages Live Copy, the LiveAction **personalizationContentRollout** triggers a synchronous subRollout, which is part of the **Standard rollout config**.
+   >将页面转出到Live Copy且为Blueprint页面配置的区域也是为页面Live Copy配置的区域的Blueprint时，LiveAction **personalizationContentRollout**&#x200B;将触发同步子Rollout，它是&#x200B;**标准配置**&#x200B;转出的一部分。
 
 1. 点按或单击&#x200B;**创建**。
 
@@ -211,13 +211,13 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. 编辑由多个站点共享的活动、体验或优惠会影响所有站点。
+>引用同一区域的页面或站点使用&#x200B;*相同*&#x200B;的共享活动、体验和优惠集。 编辑由多个站点共享的活动、体验或优惠会影响所有站点。
 
 要将站点链接到区域，请执行以下操作：
 
 1. 导航到要将其链接到区域的站点（或页面）。
 1. 选择相应的站点或页面，然后点按或单击&#x200B;**查看属性**。
-1. Tap or click the **Personalization** tab.
+1. 点按或单击&#x200B;**个性化**&#x200B;选项卡。
 1. 在&#x200B;**品牌**&#x200B;菜单中，选择要将您的区域链接到的品牌。选择品牌后，可用区域会显示在&#x200B;**区域引用**&#x200B;菜单中。
 
    ![链接站点](/help/sites-cloud/authoring/assets/multisite-english.png)
@@ -245,7 +245,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 
 
-### 暂停继承 {#suspending-inheritance}
+### 暂停继承  {#suspending-inheritance}
 
 要在活动中暂停或分离目标内容的继承，请执行以下操作：
 
@@ -258,7 +258,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
    ![暂停Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Tap or click **Suspend** to suspend the activity. 暂停继承的活动会标记为红色。
+1. 点按或单击&#x200B;**暂停**&#x200B;以暂停活动。 暂停继承的活动会标记为红色。
 
    ![挂起的Live Copy](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -279,7 +279,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 要在活动中恢复目标内容的继承，请执行以下操作：
 
-1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
+1. 导航到要恢复继承的页面，然后点按或单击“模式”下拉菜单中的&#x200B;**定位**。
 1. 点按或单击&#x200B;**开始定位**。
 1. 从工 **具栏的下拉菜单中选择** “恢复Live Copy”。
 
@@ -287,12 +287,12 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 1. 点按或单击&#x200B;**继续**，以确认您想要恢复 Live Copy 继承。如果恢复继承，对当前活动所做的任何修改都会丢失。
 
-## 删除区域 {#deleting-areas}
+## 删除区域  {#deleting-areas}
 
 删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了网站所链接的区域，则此品牌的映射将自动重新映射到主控区域。
 
 要删除区域，请执行以下操作：
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then your brand.
+1. 导航到&#x200B;**个性化** > **活动**&#x200B;或&#x200B;**优惠**，然后导航到您的品牌。
 1. 点按或单击要删除的区域旁边的图标。
 1. 点按或单击&#x200B;**删除**，并确认要删除该区域。
