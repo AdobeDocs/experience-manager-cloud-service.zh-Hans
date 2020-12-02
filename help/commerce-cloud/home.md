@@ -14,7 +14,7 @@ ht-degree: 85%
 
 本页列表了将AEM Commerce作为Cloud Service的自助资源。
 
-## 关键商务文章 {#key-articles}
+## 关键商务文章{#key-articles}
 
 * [AEM商务作为Cloud Service的简介](overview.md)
 * [AEM商务的Cloud Service架构](architecture/magento.md)
