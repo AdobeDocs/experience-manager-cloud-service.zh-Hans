@@ -10,13 +10,13 @@ ht-degree: 2%
 ---
 
 
-# AEM UI的结构 {#structure-of-the-aem-ui}
+# AEM UI的结构{#structure-of-the-aem-ui}
 
 AEM UI具有几个基本原则，由几个关键元素组成：
 
 ## 控制台 {#consoles}
 
-### 基本布局和调整大小 {#basic-layout-and-resizing}
+### 基本布局和大小调整{#basic-layout-and-resizing}
 
 UI适合移动和桌面设备，但AEM使用一种适用于所有屏幕和设备的样式，而不是创建两种样式。
 
@@ -65,7 +65,7 @@ UI适合移动和桌面设备，但AEM使用一种适用于所有屏幕和设备
 * **引用**
 * **筛选器**
 
-默认为仅 **限内容** （边栏隐藏）。
+默认值为&#x200B;**仅限内容**（边栏隐藏）。
 
 ![左边栏](assets/ui-left-rail.png)
 
@@ -73,7 +73,7 @@ UI适合移动和桌面设备，但AEM使用一种适用于所有屏幕和设备
 
 创作页面时，结构区域如下所示。
 
-### 内容框架 {#content-frame}
+### 内容帧{#content-frame}
 
 页面内容会呈现在内容框架中。 内容框架完全独立于编辑器——确保不会因CSS或javascript而发生冲突。
 
@@ -81,7 +81,7 @@ UI适合移动和桌面设备，但AEM使用一种适用于所有屏幕和设备
 
 ![内容框架](assets/ui-content-frame.png)
 
-### 编辑器框架 {#editor-frame}
+### 编辑器帧{#editor-frame}
 
 编辑器框架支持编辑功能。
 
@@ -94,47 +94,47 @@ UI适合移动和桌面设备，但AEM使用一种适用于所有屏幕和设备
 
 ![编辑器框架](assets/ui-editor-frame.png)
 
-### 侧面板 {#side-panel}
+### 侧面板{#side-panel}
 
-它包含三个默认选项卡。 通过 **“资** 产 **”和“组件** ”选项卡，您可以选择这些元素，并将它们从面板拖放到页面上。 使用 **“内容树** ”选项卡可以检查页面上的内容层次结构。
+它包含三个默认选项卡。 **资产**&#x200B;和&#x200B;**组件**&#x200B;选项卡允许您选择这些元素，并将它们从面板拖放到页面上。 **内容树**&#x200B;选项卡允许您检查页面上的内容层次结构。
 
 侧面板默认为隐藏。 选择后，窗口将显示在左侧，或者当窗口大小低于1024px的宽度时，它将滑过以覆盖整个窗口；例如，在移动设备上。
 
 ![侧面板](assets/ui-side-panel.png)
 
-### 侧面板——资源 {#side-panel-assets}
+### 侧面板——资产{#side-panel-assets}
 
 在“资产”选项卡中，您可以从资产范围中进行选择。 您还可以过滤特定术语或选择组。
 
 ![“资产”选项卡](assets/ui-side-panel-assets.png)
 
-### 侧面板——资产组 {#side-panel-asset-groups}
+### 侧面板——资产组{#side-panel-asset-groups}
 
 在资产选项卡中，您可以使用下拉列表选择特定的资产组。
 
 ![资产组](assets/ui-side-panel-asset-groups.png)
 
-### 侧面板——组件 {#side-panel-components}
+### 侧面板——组件{#side-panel-components}
 
 在组件选项卡中，您可以从组件范围中进行选择。 您还可以过滤特定术语或选择组。
 
 ![组件选项卡](assets/ui-side-panel-components.png)
 
-### 侧面板——内容树 {#side-panel-content-tree}
+### 侧面板——内容树{#side-panel-content-tree}
 
 在内容树选项卡中，您可以视图页面上的内容层次结构。 单击选项卡中的条目将跳转至编辑器中页面上的项目并进行选择。
 
 ![内容树](assets/ui-side-panel-content-tree.png)
 
-### 叠加 {#overlays}
+### 叠加{#overlays}
 
-这些组件叠加在内容框架上，并被各层 [使用](#layer) ，以了解如何与组件及其内容进行完全透明的交互。
+这些组件覆盖内容框架，并由[层](#layer)使用，以了解如何与组件及其内容进行（完全透明）交互的机制。
 
 叠加位于编辑器框架中（与所有其他页面创作元素一起），但实际上它们叠加了内容框架中的相应组件。
 
 ![叠加](assets/ui-overlays.png)
 
-### 图层 {#layer}
+### 层{#layer}
 
 图层是可以激活的独立功能束，用于：
 
@@ -149,7 +149,7 @@ AEM附带有已用于页面创作的多个层；例如，编辑、预览和注�
 >
 >图层是一个强大的概念，它影响用户对页面内容的视图以及与页面内容的交互。 在开发您自己的图层时，您需要确保该图层在退出时清理干净。
 
-### 图层切换器 {#layer-switcher}
+### 层切换器{#layer-switcher}
 
 图层切换器允许您选择要使用的图层。 关闭时，它指示当前正在使用的层。
 
@@ -169,4 +169,4 @@ AEM附带有已用于页面创作的多个层；例如，编辑、预览和注�
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-有关更多技术信息，请 [参阅为页面编辑器设](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) 置的JS文档集。
+有关更多技术信息，请参阅页面编辑器的[JS文档集](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)。
