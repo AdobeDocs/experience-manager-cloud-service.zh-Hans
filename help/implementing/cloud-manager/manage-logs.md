@@ -14,11 +14,11 @@ ht-degree: 17%
 
 用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定环境的可用日志文件列表。
 
-这些文件可通过UI下载，可从“概述” **页面** :
+这些文件可通过UI下载，可从&#x200B;**概述**&#x200B;页面下载：
 
 ![](assets/download-logs1.png)
 
-或者，环境 **页面** :
+或者，**环境**&#x200B;页：
 
 ![](assets/download-logs.png)
 
@@ -28,7 +28,7 @@ ht-degree: 17%
 ![](assets/download-logs2.png)
 
 
-## 通过API进行日志 {#logs-through-api}
+## 通过API {#logs-through-api}进行日志
 
 除了通过UI下载日志外，日志还可通过API和命令行界面使用。
 
@@ -72,7 +72,7 @@ Environment Id Service    Name
 
 ### 其他资源 {#resources}
 
-请参阅以下其他资源，进一步了解Cloud Manager API和AdobeI/O CLI:
+请参阅以下其他资源，进一步了解Cloud Manager API和Adobe I/OCLI:
 
 * [Cloud Manager API文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [AdobeI/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
