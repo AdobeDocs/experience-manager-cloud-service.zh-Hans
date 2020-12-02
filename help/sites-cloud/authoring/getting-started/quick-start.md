@@ -84,7 +84,7 @@ ht-degree: 100%
 
 1. 这将打开向导，逐步指导您收集[创建新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时所需的信息。按照屏幕上的说明操作。
 
-### 选择页面以执行其他操作 {#selecting-your-page-for-further-action}
+### 选择页面以执行其他操作  {#selecting-your-page-for-further-action}
 
 您可以选择一个页面，以对其执行操作。选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
 
@@ -181,7 +181,7 @@ ht-degree: 100%
    >
    >要使用内容中的链接导航，您必须使用[预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
 
-### 编辑页面属性 {#editing-the-page-properties}
+### 编辑页面属性  {#editing-the-page-properties}
 
 [编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)的方法（主要）有两种：
 
@@ -233,7 +233,7 @@ ht-degree: 100%
 
    请参阅[发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)以了解更多信息。
 
-### 移动、复制并粘贴或删除页面 {#move-copy-and-paste-or-delete-your-page}
+### 移动、复制并粘贴或删除页面  {#move-copy-and-paste-or-delete-your-page}
 
 这些操作全部可以通过以下项触发：
 
@@ -284,7 +284,7 @@ ht-degree: 100%
 
 1. 点按/单击所需的引用类型，以显示更多详细信息并（视需要）执行进一步操作。
 
-### 创建页面版本 {#creating-a-version-of-your-page}
+### 创建页面版本  {#creating-a-version-of-your-page}
 
 要创建页面的[版本](/help/sites-cloud/authoring/features/page-versions.md)：
 
