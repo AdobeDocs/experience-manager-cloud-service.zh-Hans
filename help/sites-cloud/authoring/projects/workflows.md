@@ -35,7 +35,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. 请参阅为资产创建语言副本。
+>&amp;ast;这些工作流不是从项目中的&#x200B;**Workflow**&#x200B;拼贴中启动的。 请参阅为资产创建语言副本。
 <!--
 >&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
 -->
@@ -52,7 +52,7 @@ ht-degree: 76%
 
 此部分介绍了可用于项目的工作流。
 
-## 请求复制工作流 {#request-copy-workflow}
+## 请求复制工作流  {#request-copy-workflow}
 
 使用此工作流，您可以请求用户提供手稿，然后批准该手稿。要启动请求复制工作流，请执行以下操作：
 
@@ -69,7 +69,7 @@ ht-degree: 76%
 
 在项目批准工作流中，您可以将内容分配给用户进行审核，然后批准内容。
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. 在您的简单项目中，选择&#x200B;**工作流**&#x200B;拼贴中的&#x200B;**`+`**&#x200B;符号，然后选择&#x200B;**项目批准工作流**。
 1. 输入标题并从“团队”列表中选择要将其分配给的对象。在适用的情况下，输入描述、内容路径、任务优先级和到期日期。
 
    ![请求批准](/help/sites-cloud/authoring/assets/projects-approval.png)
@@ -87,7 +87,7 @@ ht-degree: 76%
 
    ![请求启动](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. 单击&#x200B;**创建**。该工作流随即会启动。The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
+1. 单击&#x200B;**创建**。该工作流随即会启动。该工作流将显示在&#x200B;**工作流**&#x200B;列表中(单击省略号&#x200B;**...**&#x200B;工作流&#x200B;**拼贴上的**&#x200B;可访问此列表)。
 
 ## 为资产创建（和翻译）语言副本工作流 {#create-and-translate-language-copy-workflow-for-assets}
 
