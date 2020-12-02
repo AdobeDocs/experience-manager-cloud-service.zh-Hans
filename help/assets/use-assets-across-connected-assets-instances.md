@@ -3,9 +3,9 @@ title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署中可用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '2244'
+source-wordcount: '2240'
 ht-degree: 41%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 41%
 * 用户是每个部署中相应用户组的一部分。
 * 对于[!DNL Adobe Experience Manager]部署类型，符合支持的标准之一。 有关此功能在[!DNL Experience Manager] 6.5中的工作方式的详细信息，请参阅Experience Manager6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的[连接资产。
 
-   |  | [!DNL Sites] 作为Cloud Service | [!DNL Experience Manager] 6.5  [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5内 [!DNL Sites] 部部署 |
+   |  | [!DNL Sites] 作为  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5内 [!DNL Sites] 部部署 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]作为Cloud Service** | 支持 | 支持 | 支持 |
+   | **[!DNL Experience Manager Assets]作为[!DNL Cloud Service]** | 支持 | 支持 | 支持 |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] on AMS.** | 支持 | 支持 | 支持 |
    | **[!DNL Experience Manager]6.5内 [!DNL Assets] 部部署** | 不支持 | 不支持 | 不支持 |
 
