@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 创建多个类别和产品页面
 
-[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) ，使内容作者能够创建更多类别和产品页面。 这些页面可以丰富其他营销内容，并配置为目标特定类别和产品。 以下视频将逐步介绍此功能的设置。
+[AEM CIF核心组](https://github.com/adobe/aem-core-cif-components) 件为内容作者提供了创建其他类别和产品页面的能力。这些页面可以丰富其他营销内容，并配置为目标特定类别和产品。 以下视频将逐步介绍此功能的设置。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
