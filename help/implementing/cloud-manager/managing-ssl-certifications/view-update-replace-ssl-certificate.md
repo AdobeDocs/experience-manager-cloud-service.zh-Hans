@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# 查看更新和替换SSL证书  {#view-update-replace-ssl-certificate}
+# 查看更新和替换SSL证书{#view-update-replace-ssl-certificate}
 
-## 查看和更新SSL证书 {#view-update}
+## 查看和更新SSL证书{#view-update}
 
 1. 使用“视图和更新”菜单，只需视图SSL证书详细信息。
 1. 或者，您也可以更改已用于从此屏幕引用证书的名称。 注意：只有具有相应权限的用户才能进行更新。
 1. 现有证书即将过期。 用户已用证书供应商续订证书，并希望替换即将过期的现有证书。 注意：只有具有相应权限的用户才能进行更新。
 
-## 替换SSL证书 {#replace-ssl-certificate}
+## 替换SSL证书{#replace-ssl-certificate}
 
 >[!NOTE]
 >用户必须处于业务所有者或部署管理者角色，才能更新或替换云管理器中的SSL证书。
