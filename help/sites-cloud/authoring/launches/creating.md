@@ -10,13 +10,13 @@ ht-degree: 85%
 ---
 
 
-# 创建启动项 {#creating-launches}
+# 创建启动项  {#creating-launches}
 
 可创建启动项，以允许更新现有网页的新版本，以便将来激活。创建启动项时，需要指定标题和源页面：
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* 标题显示在[引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)边栏中，作者可从中访问这些标题以对其进行处理。
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
-* 默认情况下，Live Copy 会在源页面发生更改时自动更新启动页面。You can specify that a static copy is created to prevent automatic changes. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* 默认情况下，Live Copy 会在源页面发生更改时自动更新启动页面。您可以指定创建静态副本以防止自动更改。<!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 （可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**[](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
 
@@ -81,8 +81,8 @@ ht-degree: 85%
 
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 
-   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * [**启动项**&#x200B;控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * **站点**&#x200B;控制台](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)中的&#x200B;[**引用**
 
 ### 使用新模板创建启动项 {#create-launch-with-new-template}
 
@@ -107,7 +107,7 @@ ht-degree: 85%
 >
 >此机制可用于更改[现有页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)的模板，但必须考虑到内容丢失情况。
 
-### 创建嵌套启动项 {#creating-a-nested-launch}
+### 创建嵌套启动项  {#creating-a-nested-launch}
 
 通过创建嵌套启动项（一个启动项嵌套在另一个启动项中），您能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
@@ -117,7 +117,7 @@ ht-degree: 85%
 
 #### 创建嵌套启动项 -“启动项”控制台 {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+从&#x200B;**启动项**&#x200B;控制台创建嵌套启动项与创建任何其他形式的启动项基本相同，但您需要导航到启动项分支`/content/launches`:
 
 1. 在&#x200B;**启动项**&#x200B;控制台中，选择&#x200B;**创建**。
 1. 选择 **添加页面**，然后通过在筛选器中指定来导航到启动 `/content/launches` 项分支。 选择所需的启动项，并通过选择进 **行确认**:
