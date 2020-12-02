@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager作为Cloud Service基金，为数据保护和数据隐私法规做好准备 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作为Cloud Service基础，为数据保护和数据隐私法规做好准备{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,17 +20,17 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->有关Adobe对隐私问题的回应以及这对Adobe客户意味着什么的更多信息，请参 [阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
+>有关Adobe对隐私问题的回应以及这对您作为Adobe客户意味着什么的详细信息，请参阅[Adobe隐私中心](https://www.adobe.com/privacy.html)。
 
-## AEM Foundation Data Privacy and Protection支持 {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation Data Privacy and Protection支持{#aem-foundation-data-privacy-and-protection-support}
 
 在AEM基础级别，存储的个人数据保留在用户用户档案中。 因此，本文所介绍的信息主要是如何访问和删除用户用户档案，分别解决访问和删除请求。
 
-## 访问用户用户档案 {#accessing-a-user-profile}
+## 访问用户用户档案{#accessing-a-user-profile}
 
-### 手动步骤 {#manual-steps}
+### 手动步骤{#manual-steps}
 
-1. 通过浏览至“工具”-“安全”-“ **[!UICONTROL 用户”，或直接浏览至]** “用户管理”控制台 `https://<serveraddress>:<serverport>/security/users.html`
+1. 通过浏览至&#x200B;**[!UICONTROL 工具——安全性——用户]**&#x200B;或直接浏览至`https://<serveraddress>:<serverport>/security/users.html`，打开用户管理控制台
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -40,7 +40,7 @@ ht-degree: 5%
 
    ![搜索帐户](assets/dpp-foundation-01.png)
 
-1. 最后，通过单击打开用户用户档案，然后查看“详细信息”选 **[!UICONTROL 项卡]** 。
+1. 最后，单击打开用户用户档案，然后查看&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡下。
 
    ![用户用户档案](assets/dpp-foundation-02.png)
 
@@ -75,14 +75,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## 禁用用户并删除关联的用户档案 {#disabling-a-user-and-deleting-the-associated-profiles}
+## 禁用用户并删除关联用户档案{#disabling-a-user-and-deleting-the-associated-profiles}
 
-### 禁用用户 {#disable-user}
+### 禁用用户{#disable-user}
 
 1. 打开“用户管理”控制台并搜索相关用户，如上所述。
 2. 将鼠标悬停在用户上并单击选择图标。 用户档案将变为灰色，表示已选择它。
 
-3. 按上 **方菜** 单中的“Disable（禁用）”按钮以禁用用户：
+3. 按上方菜单中的&#x200B;**禁用**&#x200B;按钮以禁用用户：
 
    ![禁用帐户](assets/dpp-foundation-03.png)
 
@@ -92,7 +92,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![已禁用](assets/dpp-foundation-04.png)
 
-### 删除用户用户档案信息 {#delete-user-profile-information}
+### 删除用户用户档案信息{#delete-user-profile-information}
 
 >[!NOTE]
 >
