@@ -32,17 +32,17 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 从项目到项目，创建项目的过程相同。 项目类型之间的差异包括可用的用户角 [色](/help/sites-cloud/authoring/projects/overview.md) 和工 [作流](/help/sites-cloud/authoring/projects/workflows.md)。  要创建新项目，请执行以下操作：
 
 1. 在“ **项目**”中，点按／单 **击创建** ，以打开创 **建项目向导** :
-1. 选择一个模板，然后单击“ **下一步**”。
+1. 选择模板，然后单击&#x200B;**下一步**。
 
    ![创建项目](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. 您还可以添加或删除用户以及他们所属的组。此外，也可单击&#x200B;**高级**&#x200B;以添加 URL 中使用的名称。
+1. 定义&#x200B;**标题**&#x200B;和&#x200B;**说明**，并根据需要添加&#x200B;**缩略图**&#x200B;图像。 您还可以添加或删除用户以及他们所属的组。此外，也可单击&#x200B;**高级**&#x200B;以添加 URL 中使用的名称。
 
    ![添加项目详细信息](/help/sites-cloud/authoring/assets/projects-title.png)
 
 1. 点按/单击&#x200B;**创建**。确认对话框会询问您是要打开新项目还是要返回到控制台。
 
-### 将资源与项目关联 {#associating-resources-with-your-project}
+### 将资源与项目关联  {#associating-resources-with-your-project}
 
 由于项目使您能够将资源分组到一个实体中，因此您需要将资源关联到项目。这些资源称为&#x200B;**拼贴**。有关可添加的资源类型的说明，请参阅[项目拼贴](/help/sites-cloud/authoring/projects/overview.md#project-tiles)。
 
@@ -83,7 +83,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 要向拼贴中添加一些项，请执行以下操作：
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. 在&#x200B;**项目**&#x200B;中，导航到项目并单击要向其添加项目的拼贴上的添加+图标。
 
    ![向拼贴添加项](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
@@ -107,19 +107,19 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 ## 查看项目统计信息 {#viewing-project-statistics}
 
-要查看项目统计信息，请在&#x200B;**项目**&#x200B;控制台中单击&#x200B;**显示统计信息视图**。随即会显示每个项目的完成程度。Click **Show Statistics View** again to go to the **Projects** console.
+要查看项目统计信息，请在&#x200B;**项目**&#x200B;控制台中单击&#x200B;**显示统计信息视图**。随即会显示每个项目的完成程度。再次单击&#x200B;**显示统计视图**&#x200B;以转到&#x200B;**项目**&#x200B;控制台。
 
 ![项目统计](/help/sites-cloud/authoring/assets/projects-stats.png)
 
 ### 查看项目时间轴 {#viewing-a-project-timeline}
 
-项目时间轴提供了项目中的资产上次使用时间的相关信息。To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. 资产会显示在左侧窗格中。Click/tap **Timeline** to return to the **Projects** console.
+项目时间轴提供了项目中的资产上次使用时间的相关信息。要视图项目时间轴，请单击／点按&#x200B;**时间轴**，然后进入选择模式并选择项目。 资产会显示在左侧窗格中。单击／点按&#x200B;**时间轴**&#x200B;以返回至&#x200B;**项目**&#x200B;控制台。
 
 ![项目时间轴](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### 查看活动/不活动的项目 {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. 如果图标旁边有一个复选标记，则显示的是活动项目。
+要在活动项目和非活动项目之间切换，请在&#x200B;**项目**&#x200B;控制台中，单击&#x200B;**切换活动项目**。 如果图标旁边有一个复选标记，则显示的是活动项目。
 
 ![切换活动项目按钮](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -138,7 +138,7 @@ To toggle between your active and inactive projects, in the **Projects** console
    >[!NOTE]
    如果该拼贴不在您的项目中，您可能需要添加它。请参阅[添加拼贴](#adding-items-to-a-tile)。
 
-1. Tap/click **Edit**.
+1. 点按／单击&#x200B;**编辑**。
 1. 将选择器从&#x200B;**活动**&#x200B;更改为&#x200B;**不活动**（反之亦然）。
 
    ![激活项目](/help/sites-cloud/authoring/assets/projects-activate.png)
