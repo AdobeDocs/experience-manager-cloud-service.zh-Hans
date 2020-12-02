@@ -11,7 +11,7 @@ ht-degree: 3%
 ---
 
 
-# 共享和分发以Experience Manager管理的资产 {#share-assets-from-aem}
+# 共享和分发Experience Manager{#share-assets-from-aem}中管理的资产
 
 Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法将Experience Manager资产中的资产共享为Cloud Service:
 
@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包
 
 ## 以链接方式共享资产 {#sharelink}
 
-要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户能够视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部各方无需先登录AEM Assets即可获得资源。
+要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在`/var/dam/share`位置具有读取权限的用户能够视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部各方无需先登录AEM Assets即可获得资源。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Adobe Experience Manager(AEM)资产允许您与组织成员和外部实体（包
 
 
 1. 在“资产”用户界面中，选择要作为链接共享的资产。
-1. 在工具栏中，单击／点按共 **[!UICONTROL 享链接]**。 资产链接会在共享链接字段中 **[!UICONTROL 自动创建]** 。 复制此链接并与用户共享。 链接的默认过期时间为一天。
+1. 在工具栏中，单击／点按&#x200B;**[!UICONTROL 共享链接]**。 资产链接会在&#x200B;**[!UICONTROL 共享链接]**&#x200B;字段中自动创建。 复制此链接并与用户共享。 链接的默认过期时间为一天。
 
    >[!NOTE]
    >
@@ -105,15 +105,15 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 下载和共享资产 {#download-and-share-assets}
+## 下载和共享资产{#download-and-share-assets}
 
-Users can download the required assets and share these outside of [!DNL Experience Manager]. 有关详细信息，请 [参阅如何搜索资产](/help/assets/search-assets.md)[、如何下载资产](/help/assets/download-assets-from-aem.md)以及如 [何下载集合](manage-collections.md#download-a-collection)
+用户可以下载所需的资源，并在[!DNL Experience Manager]之外共享这些资源。 有关详细信息，请参阅[如何搜索资产](/help/assets/search-assets.md)、[如何下载资产](/help/assets/download-assets-from-aem.md)和[如何下载集合](manage-collections.md#download-a-collection)
 
-## 与创意专业人士共享资源 {#share-with-creatives}
+## 与创意专业人士共享资源{#share-with-creatives}
 
 营销人员和业务线用户可以使用、
 
-* **AEM桌面应用程序**:该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参 [阅浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其共享回AEM用户对应的资产，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM桌面应用程序**:该应用程序在Windows和Mac上工作。请参阅[桌面应用程序概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参阅[浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其共享回AEM用户对应的资产，例如，通过上传新图像。 请参阅[使用桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)上传资产。
 
 * **Adobe资产链接**:创意专业人士可以直接从Adobe InDesign、Adobe Illustrator和Adobe Photoshop搜索和使用资源。
 
@@ -121,15 +121,15 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 共享资产的不同选项需要特定配置，并且具有特定的先决条件。
 
-### 配置资产链接共享 {#asset-link-sharing}
+### 配置资产链接共享{#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户能够视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部各方无需先登录AEM Assets即可获得资源。
+要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在`/var/dam/share`位置具有读取权限的用户能够视图与他们共享的链接。 通过链接共享资产是一种方便的方式，使外部各方无需先登录AEM Assets即可获得资源。
 
 >[!NOTE]
 >
->如果要将AEM作者实例中的链接共享给外部实体，请确保仅提供以下请求 `GET` URL。 阻止其他URL以确保您的AEM作者实例安全。
+>如果要将AEM作者实例中的链接共享到外部实体，请确保仅为`GET`请求提供以下URL。 阻止其他URL以确保您的AEM作者实例安全。
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -152,35 +152,35 @@ Before you can share assets as links, configure the email service.
 1. Click/tap **[!UICONTROL Save]**.
 -->
 
-### 配置最大数据大小 {#maxdatasize}
+### 配置最大数据大小{#maxdatasize}
 
 当您使用链接共享功能从共享的链接下载资产时，AEM会从存储库中压缩资产层次结构，然后以ZIP文件格式返回资产。 但是，在ZIP文件中压缩的数据量没有限制的情况下，大量数据会受到压缩，这会导致JVM中内存不足错误。 要保护系统免受由于这种情况而可能发生的拒绝服务攻击，您可以配置下载文件的最大大小。 如果资产的未压缩大小超出配置值，则会拒绝资产下载请求。 默认值为100 MB。
 
 1. 单击/点按 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web Console]**。
-1. 在Web控制台中，找到 **[!UICONTROL Day CQ DAM临时资产共享代理Servlet配置]** 。
-1. 在编辑模式下打开配置，并修改“最大内容大小(未 **[!UICONTROL 压缩)”参数的]** 值。
+1. 在Web控制台中，找到&#x200B;**[!UICONTROL Day CQ DAM临时资产共享代理Servlet]**&#x200B;配置。
+1. 在编辑模式下打开配置，并修改&#x200B;**[!UICONTROL 最大内容大小（未压缩）]**&#x200B;参数的值。
 1. 保存更改。
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### 启用桌面操作以与桌面应用程序一起使用 {#desktop-actions}
+### 启用桌面操作以与桌面应用程序{#desktop-actions}一起使用
 
-从浏览器的“资产”用户界面中，您可以浏览资产位置或签出并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参 [阅在AEM web界面中启用桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
+从浏览器的“资产”用户界面中，您可以浏览资产位置或签出并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参阅[在AEM Web界面中启用桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 ![使用桌面应用程序时启用桌面操作以用作快捷方式](assets/enable_desktop_actions.png)
 
-### 使用Adobe资产链接的配置 {#configure-asset-link}
+### 使用Adobe资产链接{#configure-asset-link}的配置
 
 Adobe资产链接简化了创意人员和营销人员在内容创建过程中的协作。 它将Adobe Experience Manager(AEM)资产与Creative Cloud桌面应用程序Adobe InDesign、Adobe Photoshop和Adobe Illustrator互联。 Adobe资源链接面板使创意人员能够访问和修改存储在AEM Assets的内容，而无需离开他们最熟悉的创意应用程序。
 
-了 [解如何配置AEM以与Adobe资产链接一起使用](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)。
+请参阅[如何配置AEM以与Adobe资产链接一起使用](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)。
 
-## Best practices and troubleshooting {#bestpractices}
+## 最佳实践和疑难解答{#bestpractices}
 
 * 名称中包含空白的资产文件夹或收藏集可能无法共享。
-* 如果用户无法下载共享的资产，请咨询AEM管理员，了解下载 [限制](#maxdatasize) 。
+* 如果用户无法下载共享资产，请与AEM管理员联系，检查[下载限制](#maxdatasize)是什么。
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
