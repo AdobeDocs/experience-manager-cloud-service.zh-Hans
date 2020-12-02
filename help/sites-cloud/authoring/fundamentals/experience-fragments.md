@@ -44,7 +44,7 @@ ht-degree: 100%
 >
 如果您遇到任何问题，请联系您的系统管理员。
 
-## 应在何时使用体验片段？ {#when-should-you-use-experience-fragments}
+## 应在何时使用体验片段？  {#when-should-you-use-experience-fragments}
 
 体验片段应在以下时候使用：
 
@@ -349,7 +349,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 >
 >虽然这可以直接从浏览器获得，[但主要目的是允许其他应用程序（例如，第三方 Web 应用程序、自定义移动实现）仅使用 URL 直接访问体验片段的内容](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)。
 
-## 导出体验片段 {#exporting-experience-fragments}
+## 导出体验片段  {#exporting-experience-fragments}
 
 默认情况下，将以 HTML 格式提供体验片段。这可以由 AEM 和相似的第三方渠道使用。
 
