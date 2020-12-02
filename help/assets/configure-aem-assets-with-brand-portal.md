@@ -1,23 +1,23 @@
 ---
-title: 将AEM Assets配置为品牌门户Cloud Service
+title: 将AEM Assets配置为 [!DNL Cloud Service] 品牌门户
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1629'
 ht-degree: 15%
 
 ---
 
 
-# 将AEM Assets配置为品牌门户{#configure-aem-assets-with-brand-portal}的Cloud Service
+# 将AEM Assets配置为[!DNL Cloud Service]（带有Brand Portal {#configure-aem-assets-with-brand-portal}）
 
-通过配置Adobe Experience Manager资产品牌门户，您可以将Adobe Experience Manager资产的已批准品牌资产作为Cloud Service实例发布到Brand Portal，并将其分发给Brand Portal用户。
+通过配置Adobe Experience Manager资产品牌门户，您可以将Adobe Experience Manager资产的已批准品牌资产作为[!DNL Cloud Service]实例发布到Brand Portal，并将其分发给Brand Portal用户。
 
 **配置工作流**
 
-AEM Assets作为Cloud Service，通过Adobe开发者控制台配置了品牌门户，该控制台为品牌门户租户购买AdobeIdentity Management服务(IMS)帐户令牌以进行授权。 它要求在AEM Assets和Adobe开发者控制台中进行配置。
+AEM Assets作为[!DNL Cloud Service]已通过Adobe开发者控制台配置品牌门户，该控制台为品牌门户租户购买AdobeIdentity Management服务(IMS)帐户令牌以进行授权。 它要求在AEM Assets和Adobe开发者控制台中进行配置。
 
 1. 在AEM Assets，创建IMS帐户并生成公钥（证书）。
 1. 在Adobe开发人员控制台中，为您的Brand Portal租户（组织）创建一个项目。
@@ -29,13 +29,13 @@ AEM Assets作为Cloud Service，通过Adobe开发者控制台配置了品牌门�
 
 >[!NOTE]
 >
->作为Cloud Service实例的AEM Assets仅应配置一个Brand Portal租户。
+>作为[!DNL Cloud Service]实例的AEM Assets只应配置一个Brand Portal租户。
 
 ## 前提条件 {#prerequisites}
 
 您需要以下各项才能使用 Brand Portal 配置 AEM Assets：
 
-* 以AEM Assets为Cloud Service实例
+* 作为[!DNL Cloud Service]实例运行的AEM Assets
 * 品牌门户租户URL
 * 对Brand Portal租户的IMS组织具有系统管理员权限的用户
 
@@ -51,7 +51,7 @@ AEM Assets作为Cloud Service，通过Adobe开发者控制台配置了品牌门�
 
 ### 创建 IMS 配置 {#create-ims-configuration}
 
-IMS配置将您的AEM Assets作为Cloud Service实例与Brand Portal租户进行身份验证。
+IMS配置以[!DNL Cloud Service]实例的身份验证您的AEM Assets，该实例使用Brand Portal租户。
 
 IMS 配置包括两个步骤：
 
@@ -231,7 +231,7 @@ IMS 配置包括两个步骤：
 
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。将创建云配置。
 
-   您的AEM Assets作为Cloud Service实例现在已配置Brand Portal租户。
+   您作为[!DNL Cloud Service]实例的AEM Assets现已配置为Brand Portal租户。
 
 ### 测试配置{#test-configuration}
 
@@ -262,7 +262,7 @@ IMS 配置包括两个步骤：
 
    ![](assets/test-bpconfig3.png)
 
-1. 要验证作为Cloud Service的AEM Assets与Brand Portal之间的连接，请单击&#x200B;**[!UICONTROL 测试连接]**&#x200B;图标。
+1. 要验证作为[!DNL Cloud Service]的AEM Assets与Brand Portal之间的连接，请单击&#x200B;**[!UICONTROL 测试连接]**&#x200B;图标。
 
    ![](assets/test-bpconfig4.png)
 
