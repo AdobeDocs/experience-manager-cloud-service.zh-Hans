@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# 资产微型服务的资产摄取和处理概述 {#asset-microservices-overview}
+# 资产微服务资产摄取和处理概述{#asset-microservices-overview}
 
 Adobe Experience Manager作为Cloud Service，提供了一种云本地方法来利用Experience Manager应用程序和功能。 此新架构的一个关键元素是资产摄取和处理，由资产微型服务提供支持。 资产微型服务使用云服务提供资产的可扩展且具有弹性的处理。 Adobe管理云服务以优化处理不同的资产类型和处理选项。 云本机资产微服务的主要优势包括：
 
@@ -21,12 +21,12 @@ Adobe Experience Manager作为Cloud Service，提供了一种云本地方法来�
 * 提高了资产处理的恢复力。 处理非典型文件时的潜在问题（如损坏的文件或超大文件）不再影响部署的性能。
 * 简化了管理员的资产处理配置。
 * 资产处理设置由Adobe管理和维护，以提供最为人知的配置，用于处理各种文件类型的演绎版、元数据和文本提取
-* 本机Adobe文件处理服务在适用情况下使用，提供高保真输出和 [高效处理Adobe专有格式](file-format-support.md)。
+* 在适用的情况下使用本机Adobe文件处理服务，提供高保真输出和[对Adobe专有格式的有效处理](file-format-support.md)。
 * 能够配置后处理工作流，以添加用户特定的操作和集成。
 
 Asset microservices有助于避免对第三方渲染工具和方法（如ImageMagick和FFmpeg转码）的需求，并简化配置，同时为常见文件类型提供现成功能。
 
-## 高级架构 {#asset-microservices-architecture}
+## 高级架构{#asset-microservices-architecture}
 
 高级架构图描述了整个系统中资产获取和处理以及资产流动的关键元素。
 
@@ -50,10 +50,10 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 获取和处理流是资产微服务架构的关键概念，用于Experience Manager。
 
-* **直接二进制访问**:一旦为Experience Manager环境配置了资产，资产就会被传输（并上传）到云二进制存储，然后AEM资产微型服务，最后客户可以直接访问这些资产以开展工作。 这样可最大限度地减少网络负载和存储二进制文件的复制
+* **直接二进制访问**:一旦为Experience Manager环境配置了资产，资产就会被传输（并上传）到云二进制存储，然后AEM资产微型服务，最后客户可以直接访问这些资产以开展工作。这样可最大限度地减少网络负载和存储二进制文件的复制
 * **外部化处理**:资产处理工作在AEM环境之外完成，并节省其资源（CPU、内存），以提供关键的数字资产管理功能，并支持与系统为最终用户进行的交互式工作
 
-## 通过直接二进制访问上传资产 {#asset-upload-with-direct-binary-access}
+## 通过直接二进制访问上传资产{#asset-upload-with-direct-binary-access}
 
 Experience Manager客户端是产品提供的一部分，默认情况下，所有支持都通过直接二进制访问进行上传。 这包括使用Web界面上传、Adobe资产链接和AEM桌面应用程序。
 
@@ -62,9 +62,9 @@ Experience Manager客户端是产品提供的一部分，默认情况下，所�
 * [开源上传库](https://github.com/adobe/aem-upload)
 * [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)
 
-有关详细信息，请参 [阅上传资产](add-assets.md)。
+有关详细信息，请参阅[上传资产](add-assets.md)。
 
-## 添加自定义资产后期处理 {#add-custom-asset-post-processing}
+## 添加自定义资产后期处理{#add-custom-asset-post-processing}
 
 虽然大多数客户应从可配置的资产微服务获得其所有资产处理需求，但有些客户可能需要额外的资产处理。 如果资产需要根据来自其他系统的集成信息进行处理，这一点尤为突出。 在这种情况下，可以使用自定义后处理工作流。
 
