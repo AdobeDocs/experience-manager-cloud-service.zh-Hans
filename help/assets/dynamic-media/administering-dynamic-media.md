@@ -10,7 +10,7 @@ ht-degree: 23%
 ---
 
 
-# Setting Up Dynamic Media {#setting-up-dynamic-media}
+# 设置Dynamic Media {#setting-up-dynamic-media}
 
 [Dynamic Media 可按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况，是您资产管理工作的得力助手。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)Dynamic Media使用一组主源资源，通过其全局、可扩展、性能优化的网络实时生成和交付多种形式的丰富内容。
 
