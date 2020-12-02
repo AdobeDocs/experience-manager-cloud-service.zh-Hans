@@ -93,7 +93,7 @@ ht-degree: 98%
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
+创建新页面时，AEM将[根据AEM和JCR实行的惯例](/help/implementing/developing/introduction/naming-conventions.md)验证页面名称。
 
 允许使用的字符最少包括：
 
@@ -254,7 +254,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 >
 >只有在“预览”模式下才能通过页面编辑器导航到其他页面，因为在“编辑”模式下，链接不处于活动状态。
 
-### 复制和粘贴页面 {#copying-and-pasting-a-page}
+### 复制和粘贴页面  {#copying-and-pasting-a-page}
 
 您可以将页面及其所有子页面复制到一个新位置：
 
@@ -365,7 +365,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 >[!NOTE]
 >
->页面只能移动到允许使用该页面所基于的模板的位置。See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
+>页面只能移动到允许使用该页面所基于的模板的位置。有关详细信息，请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability)。
 
 #### 异步操作 {#asynchronous-actions}
 
