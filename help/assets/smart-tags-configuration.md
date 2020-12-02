@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->默认情 [!DNL Experience Manager Assets] 况下，新部署 [!DNL Adobe Developer Console] 与集成。 它有助于更快地配置智能标记功能。 在现有部署中，管理员按照以下步骤进行配置。
+>默认情况下，新的[!DNL Experience Manager Assets]部署与[!DNL Adobe Developer Console]集成。 它有助于更快地配置智能标记功能。 在现有部署中，管理员按照以下步骤进行配置。
 
 ## 使用 Adobe 开发人员控制台进行集成 {#aio-integration}
 
