@@ -10,11 +10,11 @@ ht-degree: 7%
 ---
 
 
-# 组件概述 {#components-overview}
+# 组件概述{#components-overview}
 
-本页概述了Adobe Experience Manager(AEM)组件，如用于页 [面创作的组件](/help/sites-cloud/authoring/fundamentals/components.md)。
+本页概述了Adobe Experience Manager(AEM)组件，如用于页面创作的[](/help/sites-cloud/authoring/fundamentals/components.md)。
 
-## 什么是组件？ {#what-are-components}
+## 什么是组件？{#what-are-components}
 
 AEM中的组件包括：
 
@@ -27,7 +27,7 @@ AEM中的组件包括：
 * 拥有标准化的用户界面。
 * 具有可配置的编辑行为。
 * 使用使用基于Granite UI组件的子元素构建的对话框。
-* 使用HTL进 [行开发](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)。
+* 使用[HTL](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)进行开发。
 * 可以进行开发以创建扩展默认功能的自定义组件。
 
 由于组件是模块化的，您可以：
@@ -45,23 +45,23 @@ AEM中的组件包括：
 
 ## AEM 核心组件 {#aem-core-components}
 
-[AEM核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 是用于AEM的一套标准化Web内容管理(WCM)组件，可缩短网站开发时间并降低网站维护成本。
+[AEM核心组](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 件是一套标准化的Web内容管理(WCM)组件，用于AEM以加快开发时间并降低网站的维护成本。
 
-核心组件以AEMCloud Service形式提供，WKND教程 [说明了如何实](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 施和使用组件。 这些组件随所有源代码提供，并且可以按原样使用，也可以作为修改的或扩展组件的起点。
+核心组件以AEMCloud Service形式提供，[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)说明了如何实现和使用组件。 这些组件随所有源代码提供，并且可以按原样使用，也可以作为修改的或扩展组件的起点。
 
-### 查看可用组件 {#viewing-available-components}
+### 查看可用组件{#viewing-available-components}
 
-有关AEM实例中所有可用组件的概述，请使用组 [件控制台](/help/sites-cloud/authoring/features/components-console.md)。
+有关AEM实例中所有可用组件的概述，请使用[组件控制台](/help/sites-cloud/authoring/features/components-console.md)。
 
 或者，您也可以使用CRXDE Lite获取存储库中所有可用组件的列表。
 
-1. 在 **[!UICONTROL CRXDE Lite]**&#x200B;中 **[!UICONTROL ，从工具栏]** 中选择工具 **[!UICONTROL ，然后选]**&#x200B;择 **[!UICONTROL 查询]** ，会打开查询选项卡。
+1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中，从工具栏中选择&#x200B;**[!UICONTROL 工具]**，然后选择&#x200B;**[!UICONTROL 查询]**，打开&#x200B;**[!UICONTROL 查询]**&#x200B;选项卡。
 
-1. 在“查询 **[!UICONTROL ”]** 选项卡中，选 `XPath` 择“类 **[!UICONTROL 型”]**。
+1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;选项卡中，选择`XPath`作为&#x200B;**[!UICONTROL 类型]**。
 
 1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;输入字段中，输入以下字符串：
 
    `//element(*, cq:Component)`
 
-1. 单击 **[!UICONTROL 执行]** ，此时将列出组件。
+1. 单击&#x200B;**[!UICONTROL 执行]**&#x200B;并列出组件。
 
