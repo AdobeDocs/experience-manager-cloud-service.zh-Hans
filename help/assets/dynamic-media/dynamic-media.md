@@ -18,7 +18,7 @@ Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和�
 
 >[!NOTE]
 >
->有关使用Adobe Experience Manager和动态媒 [体的信息，请参阅社区文章](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)。
+>[使用Adobe Experience Manager和动态媒体](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)中提供社区文章。
 
 ## Dynamic Media 的功能 {#what-you-can-do-with-dynamic-media}
 
@@ -39,7 +39,7 @@ Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和�
 * [管理资产](managing-assets.md)
 * [使用概览创建自定义弹出窗口](custom-pop-ups.md)
 
-另请参 [阅设置Dynamic Media](administering-dynamic-media.md)。
+另请参阅[设置Dynamic Media](administering-dynamic-media.md)。
 
 <!-- 
 
@@ -50,7 +50,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## 启用Dynamic Media与禁用Dynamic Media {#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media已启用，而Dynamic Media已禁用{#dynamic-media-on-versus-dynamic-media-off}
 
 您可以通过以下特征判断Dynamic Media是否已启用（打开）:
 
@@ -60,7 +60,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 当您单击图像资产时，启用Dynamic Media后，资产的视图会有所不同。 Dynamic Media使用HTML5点播查看器。
 
-### Dynamic renditions {#dynamic-renditions}
+### 动态演绎版{#dynamic-renditions}
 
 当 Dynamic Media 处于启用状态时，可以使用图像和查看器预设等动态演绎版（在&#x200B;**[!UICONTROL 动态]**&#x200B;下）。
 
@@ -72,15 +72,15 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### PTIFF renditions {#ptiff-renditions}
+### PTIFF演绎版{#ptiff-renditions}
 
-Dynamic media enabled assets include `pyramid.tiffs`.
+启用Dynamic Media的资产包括`pyramid.tiffs`。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### 资产视图更改 {#asset-views-change}
 
-With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click/tap to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled looks like this:
+启用Dynamic Media后，可以单击`+`和`-`按钮进行放大和缩小。您还可以单击／点按以放大特定区域。还原功能可使您恢复到原始版本，并可通过单击对角箭头使图像全屏显示。启用Dynamic Media的外观如下所示：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
