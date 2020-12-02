@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Adobe Experience Manager作为Cloud Service站点，为数据保护和数据隐私法规做好准备 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作为Cloud Service站点，为数据保护和数据隐私法规做好准备{#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,27 +20,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关Adobe对隐私问题的回应以及这对Adobe客户意味着什么的更多信息，请参 [阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
+>有关Adobe对隐私问题的回应以及这对您作为Adobe客户意味着什么的详细信息，请参阅[Adobe隐私中心](https://www.adobe.com/privacy.html)。
 
 Adobe Experience Manager作为Cloud Service站点，随时准备帮助客户履行其数据隐私和保护合规义务。 本页将引导客户完成在AEM Sites处理此类请求的过程。 它描述了存储的私有数据的位置，以及如何手动或使用代码删除这些数据。
 
-有关详细信息，请参 [阅Adobe隐私中心](https://www.adobe.com/privacy.html)。
+有关详细信息，请参阅[Adobe隐私中心](https://www.adobe.com/privacy.html)。
 
 >[!NOTE]
 >
->有关 [更多详细信息，请参阅Adobe Experience ManagerCloud Service数据保护和数据隐私法规的](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) “准备就绪性”。
+>有关更多详细信息，请参见[《Adobe Experience Manager数据保护和数据隐私法规的Cloud Service就绪性》](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
 
 ## AEM 创作层 {#aem-author-tier}
 
-AEM Foundation文档中介绍了作者服务器上的用户帐户 [和UGC内容](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
+[AEM Foundation文档](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)介绍作者服务器上的用户帐户和UGC内容。
 
 ## AEM 发布层 {#aem-publish-tier}
 
-AEM Foundation文档中介绍用于验证站点上访客和发布服务器上UGC内容的 [用户帐户](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
+[AEM Foundation文档](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)中介绍用于验证站点上访客和发布服务器上UGC内容的用户帐户。
 
 默认情况下，AEM Sites组件不存储由访客在发布服务器上输入的表单数据。 建议将数据转发给第三方系统或Adobe Campaign以进一步处理。
 
-## 选择加入／选择退出 {#opt-in-opt-out}
+## 选择加入／选择退出{#opt-in-opt-out}
 
 <!--
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
@@ -53,9 +53,9 @@ Adobe Experience Manager受用于管理用户选择加入／选择退出的cooki
 1. 导航至:
    [Adobe隐私中心——选择退出](https://www.adobe.com/privacy/opt-out.html)
 
-1. 向下滚动到 **服务** - **Experience Cloud服务使用数据**。
+1. 向下滚动到&#x200B;**服务** - **Experience Cloud服务使用数据**。
 
-1. 选择引用的链接；当前的 **标题**。
+1. 选择引用的链接；当前标题为&#x200B;**此处**。
 
 1. 您将获得以下详细信息，以及指向或选择退出在其中的选项：
 
@@ -63,26 +63,26 @@ Adobe Experience Manager受用于管理用户选择加入／选择退出的cooki
 
       如果您删除退出Cookie，或者您更改了计算机或Web浏览器，您将需要再次退出。
 
-      选择退出——将我排除在访客会话聚合和分析之外(安 `amcglobal.sc.omtrdc.net` 装选择退出Cookie)-单击此处。
+      选择退出——将我排除在访客会话聚合和分析之外（安装`amcglobal.sc.omtrdc.net`选择退出Cookie）-单击此处。
 
-      选择加入——将我包括在访客会话聚合和分析中(不安 `amcglobal.sc.omtrdc.net` 装选择退出cookie)-单击此处。
+      选择加入——将我包括在访客会话聚合和分析中（不安装`amcglobal.sc.omtrdc.net`选择退出cookie）-单击此处。
    请按照上述步骤访问实际链接。
 
    >[!NOTE]
    >
-   > 2中有进一步的 **说明。 隐私.** adobe一 [般使用条款部分](https://www.adobe.com/legal/terms.html)。
+   > **2中还有进一步的说明。 隐私.** adobe一 [般使用条款部分](https://www.adobe.com/legal/terms.html)。
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites包括与Analytics Foundation的可选集成，后者使用Adobe Analytics点播服务中的功能。
 
-有关管理与Adobe Analytics相关的数据主体请求的更多信息，请参 [阅Adobe Analytics和数据隐私](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)。
+有关管理与Adobe Analytics相关的数据主体请求的更多信息，请参见[Adobe Analytics和数据隐私](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)。
 
-## 按目标划分的个性化基础 {#personalization-foundation-by-target}
+## 按目标列出的个性化基础{#personalization-foundation-by-target}
 
 AEM Sites包括按目标与个性化基础的可选集成，该集成使用Adobe Target点播服务中的功能。
 
-有关管理与Adobe Target相关的数据主体请求的更多信息，请 [参阅Adobe Target-隐私和一般数据保护规定](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
+有关管理与Adobe Target相关的数据主体请求的更多信息，请参见[Adobe Target-隐私和一般数据保护规定](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 
@@ -94,7 +94,7 @@ AEM为ContextHub提供可选数据层。 这会在浏览器中保留特定于访
 
 默认情况下，此访客数据不存储在AEM中；AEM会向数据层发送规则，以便在浏览器中做出个性化决策。
 
-### 实施加入／退出 {#implementing-opt-in-opt-out}
+### 实施加入／退出{#implementing-opt-in-opt-out}
 
 站点所有者需要根据以下准则实施退出组件。
 
@@ -126,7 +126,7 @@ AEM为ContextHub提供可选数据层。 这会在浏览器中保留特定于访
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### 预览ContextHub的持久性 {#previewing-persistence-of-contexthub}
+### 预览ContextHub {#previewing-persistence-of-contexthub}的持久性
 
 要预览使用的ContextHub的永久性，用户可以：
 
@@ -214,7 +214,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### 清除ContextHub的持久性 {#clearing-persistence-of-contexthub}
+### 清除ContextHub {#clearing-persistence-of-contexthub}的持久性
 
 要清除ContextHub持久性，请执行以下操作：
 
