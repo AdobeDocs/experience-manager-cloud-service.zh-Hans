@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 参数 {#parameters}
 
-![目标HTTP](assets/httpwindow.png "WindowTarget HTTP窗口")
+![目标HTTP ](assets/httpwindow.png "WindowTarget HTTP窗口")
 
 该窗口包含以下可配置参数：
 
