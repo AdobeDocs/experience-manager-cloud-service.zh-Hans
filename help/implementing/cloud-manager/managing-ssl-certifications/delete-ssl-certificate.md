@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 删除SSL证书 {#deleting-an-ssl-certificate}
+# 删除SSL证书{#deleting-an-ssl-certificate}
 
 >[!IMPORTANT]
 >从云管理器删除证书是无法撤消的永久操作。 最佳实践是，在Cloud Manager用户界面中删除任何必需的SSL文件之前，将其保存在本地。
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 1. 从“环境”页面导航到“SSL证书”屏幕
 1. 标识要删除的SSL证书名称所在的行
-1. 从行 **的最右端** 选择……菜单
-1. 选择删 **除**
+1. 选择&#x200B;**...**&#x200B;菜单
+1. 选择&#x200B;**删除**
 1. 确认提交
