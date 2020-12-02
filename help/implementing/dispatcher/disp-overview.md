@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4082'
 ht-degree: 9%
 
 ---
@@ -381,6 +381,8 @@ Phase 2 finished
 
 1. 它从上一节运行validator以确保只包含受支持的指令。 如果配置无效，则脚本将失败。
 2. 它执行`httpd -t command`以测试语法是否正确，以便apache httpd可以开始。 如果配置成功，则应准备好进行部署
+
+在Cloud Manager部署过程中，还将执行`httpd -t syntax`检查，并且Cloud Manager `Build Images step failure`日志中会包含任何错误。
 
 ## 在本地测试Apache和Dispatcher配置{#testing-apache-and-dispatcher-configuration-locally}
 
