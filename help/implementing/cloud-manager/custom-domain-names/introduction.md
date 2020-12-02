@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 简介 {#introduction}
 
-Cloud Manager允许您通过UI添加自定义域，以通过自助服务方式使用唯一的品牌名称来标识您的站点。 您的AEMaCS设置了默认域名，结尾为 `*.adobearmcloud.com`。 此默认域名将保留，即使在将自定义域名附加到网站后也是如此。
+Cloud Manager允许您通过UI添加自定义域，以通过自助服务方式使用唯一的品牌名称来标识您的站点。 您的AEMaCS设置了默认域名，以`*.adobearmcloud.com`结尾。 此默认域名将保留，即使在将自定义域名附加到网站后也是如此。
 
 >[!NOTE]
 >Cloud Manager中仅支持站点项目（发布服务）的自定义域名。 每个CM环境最多可承载每个环境50个自定义域。
