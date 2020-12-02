@@ -12,18 +12,18 @@ ht-degree: 1%
 
 # 部署代码 {#deploy-your-code}
 
-## 使用Cloud Manager部署代码 {#deploying-code-with-cloud-manager}
+## 使用Cloud Manager {#deploying-code-with-cloud-manager}部署代码
 
 配置Production Pipeline(存储库、环境和测试环境)后，即可部署代码。
 
-1. 单 **击** “从云管理器部署”以开始部署过程。
+1. 单击云管理器中的&#x200B;**部署**&#x200B;以开始部署过程。
 
    ![](assets/deploy-code1.png)
 
 
-1. 将显 **示“管道** 执行”屏幕。
+1. 将显示&#x200B;**管道执行**&#x200B;屏幕。
 
-   单击 **“构建** ”以开始该过程。
+   单击&#x200B;**Build**&#x200B;以开始进程。
 
    ![](assets/deploy-code2.png)
 
@@ -42,8 +42,8 @@ ht-degree: 1%
    Stage **Deployment**，涉及以下步骤：
 
    * 验证：此步骤确保管道配置为使用当前可用的资源，例如，已配置的分支存在，环境可用。
-   * 构建和单元测试：此步骤运行容器化构建过程。 有关 [构建环境的详细信](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) 息，请参阅构建环境详细信息。
-   * 代码扫描：此步骤将评估应用程序代码的质量。 有关 [测试过程的详细信](/help/implementing/cloud-manager/code-quality-testing.md) 息，请参阅代码质量测试。
+   * 构建和单元测试：此步骤运行容器化构建过程。 有关构建环境的详细信息，请参阅[构建环境详细信息](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md)。
+   * 代码扫描：此步骤将评估应用程序代码的质量。 有关测试过程的详细信息，请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)。
    * 构建图像：此步骤包含用于构建图像的进程中的日志文件。 此过程负责将构建步骤生成的内容和调度程序包转换为Docker图像和Kubernetes配置。
    * 部署到舞台
 
@@ -51,13 +51,13 @@ ht-degree: 1%
    舞 **台测试**，涉及以下步骤：
 
    * 产品功能测试：Cloud Manager管道执行将支持执行针对舞台环境运行的测试。
-有关更多 [详细信息，请参](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 阅产品功能测试。
+有关详细信息，请参阅[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
 
    * 自定义功能测试：管道中的此步骤始终存在，无法跳过。 但是，如果生成未生成测试JAR，则默认情况下测试通过。\
-      有关更多 [详细信息，请参](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 阅自定义功能测试。
+      有关详细信息，请参阅[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
 
    * 体验审核：管道中的此步骤始终存在，无法跳过。 在执行生产管道时，将在运行检查的自定义功能测试之后包括体验审核步骤。 配置的页面将提交到服务并进行评估。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
-有关更多 [详细信息，请参阅了解](/help/implementing/cloud-manager/experience-audit-testing.md) 体验审核结果。
+有关详细信息，请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
       ![](assets/testing-tab.png)
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 
 
-## 部署流程 {#deployment-process}
+## 部署进程{#deployment-process}
 
 以下部分介绍如何在阶段和生产阶段部署AEM和调度程序包。
 
@@ -94,7 +94,7 @@ Cloud Manager将构建过程生成的所有目标/*.zip文件上传到存储位�
 
    1. 当前配置被备份并复制到临时位置
    1. 除不可变文件外，所有配置都将被删除。 有关更多详细信息，请参阅管理调度程序配置。 这将清除目录，以确保不留下任何孤立文件。
-   1. 对象会被提取到目 `httpd` 录。  不可改写的文件不会被覆盖。 在部署时，您对git存储库中不可变文件所做的任何更改都将被忽略。  这些文件是AMS调度程序框架的核心，无法更改。
+   1. 该对象被解压到`httpd`目录。  不可改写的文件不会被覆盖。 在部署时，您对git存储库中不可变文件所做的任何更改都将被忽略。  这些文件是AMS调度程序框架的核心，无法更改。
    1. Apache执行配置测试。 如果未找到错误，则重新加载服务。 如果发生错误，则从备份中恢复配置，重新加载服务，并将错误报告回云管理器。
    1. 管道配置中指定的每个路径都无效或从调度程序缓存中刷新。
 
@@ -108,7 +108,7 @@ Cloud Manager将构建过程生成的所有目标/*.zip文件上传到存储位�
    >
    >您可以跳过开发和阶段部署中的负载平衡器更改，即在非生产管道中为开发人员环境分离和附加步骤，在生产管道中为阶段环境分离和附加步骤。
 
-### 部署到生产阶段 {#deployment-production-phase}
+### 部署到生产阶段{#deployment-production-phase}
 
 部署到生产拓扑的过程略有不同，以最大限度地减少对AEM站点访客的影响。
 
