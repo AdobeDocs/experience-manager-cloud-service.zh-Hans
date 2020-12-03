@@ -2,7 +2,7 @@
 title: SPA Blueprint
 description: 本文档描述了任何SPA框架为在AEM内实施可编辑的SPA组件而应履行的与框架无关的一般合同。
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 页面的内容结构存储在AEM中。 页面模型用于映射和实例化SPA组件。 SPA开发人员创建映射到AEM组件的SPA组件。 为此，他们使用资源类型(或AEM组件的路径)作为唯一键。
 
-SPA组件必须与页面模型保持同步，并随其内容的任何相应更改进行更新。 必须使用利用动态组件的模式来根据提供的页面模型结构动态实例化组件。
+SPA组件必须与页面模型同步，并相应地更新其内容。 必须使用利用动态组件的模式来根据提供的页面模型结构动态实例化组件。
 
 ### 元字段{#meta-fields}
 
