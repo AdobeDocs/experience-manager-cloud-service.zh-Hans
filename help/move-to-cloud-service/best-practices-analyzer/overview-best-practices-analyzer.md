@@ -2,15 +2,20 @@
 title: 最佳实践分析器概述
 description: 最佳实践分析器概述
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # 概述 {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="最佳实践分析器概述"
+>abstract="最佳实践分析器通过指明不遵循AEM最佳实践的方面来评估您当前的AEM实施。 它还就采取AEM最佳做法的后续步骤提供指导。 此外，它还有助于加快评估准备情况的进程，以便从现有Adobe Experience Manager(AEM)部署转向作为Cloud Service的AEM。"
 
 最佳实践分析器通过指明不遵循AEM最佳实践的方面来评估您当前的AEM实施。 它还就采取AEM最佳做法的后续步骤提供指导。 此外，它还有助于加快评估准备情况的进程，以便从现有Adobe Experience Manager(AEM)部署转向作为Cloud Service的AEM。
 
