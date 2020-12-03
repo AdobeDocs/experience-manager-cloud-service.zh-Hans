@@ -2,10 +2,10 @@
 title: 旋转集
 description: 了解如何在Dynamic Media中使用旋转集
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 35%
+source-wordcount: '1829'
+ht-degree: 36%
 
 ---
 
@@ -74,9 +74,9 @@ ht-degree: 35%
 
 如果需要，您可以[编辑旋转集](#editing-spin-sets)。 此外，还可以视图和修改[旋转集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-## 上传旋转集的资产 {#uploading-assets-for-spin-sets}
+## 上传旋转集{#uploading-assets-for-spin-sets}的资产
 
-对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
+对于一维旋转集，您至少需要一个项目的8-12张照片。拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。 例如，如果一维旋转集中包含 12 幅拍照，则每拍照一次应将项目旋转 30 度 (360/12)。
 
 您可以像上传AEM Assets的任何其他资产一样，为旋转集上传图像。[](/help/assets/manage-digital-assets.md)
 
