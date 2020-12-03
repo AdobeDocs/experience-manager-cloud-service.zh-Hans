@@ -2,10 +2,10 @@
 title: 页面差异
 description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 100%
+source-wordcount: '622'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 
->[!CAUTION]
+>[!NOTE]
 >
 >用户必须具有针对节点 `/content/versionhistory` 的&#x200B;**修改/创建/删除**&#x200B;权限，才能使用此功能。
 >
@@ -54,10 +54,6 @@ ht-degree: 100%
 
 * 浅绿色 - 添加了组件
 * 粉红色 - 删除了组件
-* 蓝色 - 更改了组件
-* 蓝色 - 移动了组件
-
-请注意，发生更改和发生移动的颜色是相同的。
 
 **HTML 更改**
 
@@ -93,9 +89,7 @@ ht-degree: 100%
 在某些情况下，页面差异功能可能检测不到预期的差异。
 
 * 在比较版本和启动项时，差异不会考虑动态组件，如痕迹导航、菜单、产品列表或徽标（依赖站点结构呈现其内容的组件）。
-* 对于版本，差异不会重新创建访问控制策略和 Live Copy 关系。
-* 如果对图像进行了任何更改（如修改 alt、title 或 src 属性），则所做的更改将以蓝色突出显示。但是在某些情况下，图像的 src 属性采用 Base64 表示形式，即使两个图像看起来相同，它们也会因为 src 属性发生更改而被标记为不同。
-* 差异无法检测图像旋转。
+* 对于版本，差异不会重新创建访问控制策略和Live Copy关系。
 * 如果页面发生移动，将无法再使用移动前制作的任何版本执行差异。
    * 如果您遇到差异问题，请检查页面的[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)以查看页面是否已被移动。
 
