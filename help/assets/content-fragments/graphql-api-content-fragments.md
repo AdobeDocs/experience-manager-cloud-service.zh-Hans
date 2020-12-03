@@ -2,9 +2,9 @@
 title: 内容投放，将内容片段与Adobe Experience Manager一起用作Cloud Service图QL API
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作AEM GraphQL API的Cloud Service，用于无头内容投放。
 translation-type: tm+mt
-source-git-commit: 1601d0ac5cd72ac53b810dd9891a6744adc1819e
+source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2491'
 ht-degree: 1%
 
 ---
@@ -625,3 +625,7 @@ query getAdventureByType($includePrice: Boolean!) {
 1. **问**:“*AEM的GraphQL API与查询生成器API有何不同？*”
 
    * **答**:“*AEM GraphQL API优惠对JSON输出的完全控制，是查询内容的行业标准。今后，AEM计划投资于AEM GraphQL API。*&quot;
+
+## 教程- AEM无头和GraphQL {#tutorial}入门
+
+正在寻找实践教程？ 查看[AEM无外设和GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端到端教程入门，该教程说明了如何在无外设CMS场景中使用AEM的GraphQL API构建和公开内容并由外部应用程序使用。
