@@ -3,10 +3,10 @@ title: 有关使用和共享的报告
 description: ' [!DNL Adobe Experience Manager Assets] 中有关您的资产的报告，有助于您了解数字资产的使用情况、活动和共享。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 10%
+source-wordcount: '928'
+ht-degree: 6%
 
 ---
 
@@ -48,17 +48,19 @@ ht-degree: 10%
 
    ![选择报告类型](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >在生成&#x200B;**[!UICONTROL 已下载资产]**&#x200B;报表之前，请确保已启用“资产下载”服务。从 Web 控制台 (`https://[aem_server]:[port]/system/console/configMgr`) 中打开 **[!UICONTROL Day CQ DAM 事件记录器]**&#x200B;配置，并在“事件类型”中选择&#x200B;**[!UICONTROL 已下载资产]**&#x200B;选项（如果尚未选择）。
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >默认情况下，内容片段和链接共享包含在资产[!UICONTROL 下载]报告中。 选择相应的选项以创建链接共享报告或从下载报告中排除内容片段。
+>[!NOTE]
+>
+>默认情况下，内容片段和链接共享包含在资产[!UICONTROL 下载]报告中。 选择相应的选项以创建链接共享报告或从下载报告中排除内容片段。
 
-   >[!NOTE]
-   >
-   >[!UICONTROL 下载]报告仅显示单独选择后下载或使用快速操作下载的那些资产的详细信息。 但是，它不包括已下载文件夹中资产的详细信息。
+>[!NOTE]
+>
+>[!UICONTROL 下载]报告仅显示单独选择后下载或使用快速操作下载的那些资产的详细信息。 但是，它不包括已下载文件夹中资产的详细信息。
 
 1. 在存储报告的CRX存储库中配置报告详细信息，如标题、描述、缩略图和文件夹路径。 默认情况下，文件夹路径为`/content/dam`。 可以指定其他路径。
 
@@ -139,11 +141,18 @@ ht-degree: 10%
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 创建]**。 系统会显示一条消息，通知已开始生成报告。
 
-## 配置清除服务{#configure-purging-service}
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-要删除不再需要的报表，请从Web控制台中配置DAM报表清除服务，以根据现有报表的数量和年龄来清除现有报表。
+## Configure purging service {#configure-purging-service}
 
-1. 从`https://[aem_server]:[port]/system/console/configMgr`访问Web控制台（配置管理器）。
-1. 打开&#x200B;**[!UICONTROL DAM报告清除服务]**&#x200B;配置。
-1. 在`scheduler.expression.name`字段中指定清除服务的频率（时间间隔）。 您还可以配置报告的年龄和数量阈值。
-1. 保存更改。
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## 疑难解答信息、提示和限制{#best-practices-and-limitations}
+
+* 如果未生成磁盘使用情况报告，并且您正在使用[!DNL Dynamic Media]，请确保所有资产都正确继续。 要解析资产，请重新处理资产，然后再次生成报表。
