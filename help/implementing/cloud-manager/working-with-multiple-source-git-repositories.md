@@ -2,9 +2,9 @@
 title: 使用多源Git存储库
 description: 使用多源Git存储库-Cloud Services
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 1. 在Cloud Manager Git存储库的根Maven pom中添加对新目录的引用。
 
 
-## 附录A:示例GitHub操作{#sample-github-action}
+## 示例GitHub操作{#sample-github-action}
 
 这是一个示例GitHub操作，它通过推送到主分支，然后推送到Cloud Manager的Git存储库的子目录触发。 GitHub操作需要提供两个秘密，即`MAIN_USER`和`MAIN_PASSWORD`，才能连接并推送到Cloud Manager的Git存储库。
 
@@ -117,7 +117,7 @@ jobs:
 >[!NOTE]
 >上述脚本使用`git add`更新假定包含删除的存储库——根据Git的默认配置，这需要替换为`git add --all`。
 
-## 附录B:示例Jenkins作业{#sample-jenkins-job}
+## 示例Jenkins作业{#sample-jenkins-job}
 
 这是可用于Jenkins作业或类似作业的示例脚本。 它由Git存储库中的更改触发。 Jenkins作业检出该项目或分支的最新状态，然后触发此脚本。
 
