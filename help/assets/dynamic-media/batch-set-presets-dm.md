@@ -3,9 +3,9 @@ title: 批次集预设
 description: 了解如何使用Dynamic Media中的批量集预设自动创建图像集和旋转集。
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: eba7216d6b70c15d7f8767358d1947e5dba1d802
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3521'
 ht-degree: 1%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 1%
 
 **最佳实践** -使用批集预设时，Adobe建议使用以下工作流：
 
-1. 创建批集预设。
-1. 创建新的资产文件夹或使用现有的资产文件夹，并确保它与[!DNL Dynamic Media]同步。
-1. 将批集预设应用到资产文件夹。
-1. 将图像上传到资产文件夹。
-1. 创建图像集或旋转集。
-1. 发布图像集或旋转集。
+1. 创建批集预设。 请参阅[为图像集或旋转集创建批集预设](#creating-bsp)。
+1. 创建新的资产文件夹或使用现有的资产文件夹，并确保它与[!DNL Dynamic Media]同步。 请参阅[创建文件夹](/help/assets/manage-digital-assets.md#creating-folders)。
+1. 将批集预设应用到资产文件夹。 请参阅[关于将批集预设应用到文件夹](#apply-bsp)。
+1. 将图像上传到资产文件夹。 请参阅[上传图像集的资产](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)、[上传旋转集的资产](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或[将数字资产添加到Adobe Experience Manager](#add-assets-to-experience-manager)。
+1. 创建图像集或旋转集。 请参阅[图像集](/help/assets/dynamic-media/image-sets.md)或[旋转集](/help/assets/dynamic-media/spin-sets.md)。
+1. 发布图像集或旋转集。 请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 为图像集或旋转集{#creating-bsp}创建批集预设
 
