@@ -2,15 +2,21 @@
 title: 使用最佳实践分析器
 description: 使用最佳实践分析器
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 47%
+source-wordcount: '2362'
+ht-degree: 46%
 
 ---
 
 
 # 使用最佳实践分析器{#using-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_using"
+>title="使用最佳实践分析器"
+>abstract="查看有关使用最佳实践分析器（以前称为云就绪性分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
+>additional-url=""
 
 ## 使用最佳实践分析器{#imp-considerations}的重要注意事项
 
@@ -23,12 +29,12 @@ ht-degree: 47%
 * BPA在版本6.1及更高版本的AEM实例上受支持。
 
    >[!NOTE]
-   > 有关在AEM 6.1上安装BPA的特殊要求，请参见[在AEM 6.1上安装BPA。](#installing-on-aem61)
+有关在 [AEM 6.1上安](#installing-on-aem61) 装BPA的特殊要求，请参阅在AEM 6.1上安装BPA。
 
 * BPA可以在任何环境上运行，但最好在&#x200B;*Stage*&#x200B;环境上运行。
 
    >[!NOTE]
-   >为避免对业务关键型实例产生影响，建议在&#x200B;*作者*&#x200B;环境上运行BPA，该环境在自定义、配置、内容和用户应用程序方面尽可能接近&#x200B;*生产*。 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
+为避免对业务关键型实例产生影响，建议在自定义、配 ** 置、内容和用户应用程序 ** 方面，在与生产环境尽可能接近的创作环境上运行BPA。或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
 
 * 生成BPA报告内容可能需要花费大量时间，从几分钟到几小时。 具体所需的时间长短很大程度上取决于 AEM 存储库内容的大小和性质、AEM 版本以及其他因素。
 
@@ -36,10 +42,15 @@ ht-degree: 47%
 
 ## 可用性 {#availability}
 
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_download"
+title="下载最佳实践分析器"
+abstract="最佳实践分析器可以从软件分发门户下载为zip文件。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。"
+
 最佳实践分析器可以从软件分发门户下载为zip文件。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。
 
 >[!NOTE]
->从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载最佳实践分析器。
+从软件分发门户下载最佳实 [践分](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 析器。
 
 ## 查看最佳实践分析器报告{#viewing-report}
 
@@ -73,12 +84,12 @@ ht-degree: 47%
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >您可以通过单击&#x200B;**刷新报告**&#x200B;强制BPA清除其缓存并重新生成报告。
+您可以通过单击“刷新报告”强制BPA清除其缓存并重 **新生成报告**。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-   >在重新生成报表时，它按完成百分比显示进度，如下图所示。
+在重新生成报表时，它按完成百分比显示进度，如下图所示。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -89,10 +100,15 @@ ht-degree: 47%
 
 在 Adobe Experience Manager 6.1 中，该工具无法正常运行，只能使用 HTTP 接口。
 
->[!NOTE]
->在所有版本中，包含的模式检测器可以独立运行。
+>[!NOTE]在所有版本中，包含的模式检测器可以独立运行。
 
 ## 解释最佳实践分析器报告{#cra-report}
+
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_interpreting"
+title="解释最佳实践分析器报告"
+abstract="查看BPA报表输出有两个选项：UI和CSV。 在AEM实例中运行最佳实践分析器工具时，UI报告将作为结果显示在工具窗口中。 CSV 格式的报告包括从模式检测器输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解最佳实践分析器报告类别"
 
 在AEM实例中运行最佳实践分析器工具时，报告将作为结果显示在工具窗口中。
 
@@ -109,7 +125,7 @@ ht-degree: 47%
 每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。
 
 >[!NOTE]
->要详细了解每个“查找”类别，请参阅[“模式检测器”类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
+要进一步了解每个“查找”类别，请参 [阅“图案检测器”类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
 
 请参阅下表，了解重要性级别：
 
