@@ -2,9 +2,9 @@
 title: 作为Experience Manager迁移到Cloud Service
 description: 作为Experience Manager迁移到Cloud Service
 translation-type: tm+mt
-source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2117'
 ht-degree: 8%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 8%
 # 作为Cloud Service迁移到Adobe Experience Manager{#Overview}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_migration-overview"
+>id="aemcloud_migration_overview"
 >title="迁移到AEM作为云服务"
 >abstract="概括介绍从过渡部署到Experience Manager(作为Cloud Service)的Experience Manager客户的建议分阶段方法，并帮助现有客户提供连贯、连续的体验"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en" text="新增功能和不同功能"
@@ -101,6 +101,11 @@ Cloud Manager是Managed Services的可选内容投放工具，是必需的。 �
 <br>
 
 ## 作为Cloud Service移至Adobe Experience Manager{#move-to-cloud}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_move_to_cloud"
+>title="搬去Adobe Experience Manager当Cloud Service"
+>abstract="此单页机概括了从过渡部署到Experience Manager(作为Cloud Service)，为客户推荐的分阶段方法，并帮助现有客户在这个专为体验管理而构建的现代化平台上提供连贯、连续的体验。"
 
 **Experience Manager作为Cloud Service为Experience Manager站点和资产提供了可扩展、安全、灵活的技术基础，使营销人员和IT人员能够专注于大规模提供有影响力的体验。**
 
