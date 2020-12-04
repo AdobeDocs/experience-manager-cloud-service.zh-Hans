@@ -3,10 +3,10 @@ title: 资产分析
 description: 了解资产分析功能如何让您跟踪第三方网站、营销活动和Adobe的创意解决方案中使用的图像的用户评级和使用情况统计。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -70,44 +70,47 @@ ht-degree: 11%
 1. 点按／单击工具栏中的布局图标，然后选择&#x200B;**[!UICONTROL 洞察视图]**。
 1. 该页面显示资产的使用分数。 比较各个资产的评级并进行分析。
 
-## 计划后台作业{#scheduling-background-job}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-资产分析可定期从Adobe Analytics报表包获取资产的使用数据。 默认情况下，资产分析每24小时在凌晨2点运行一次后台作业以获取数据。 但是，您可以通过从Web控制台配置&#x200B;**[!UICONTROL Adobe CQDAM资产性能报表同步作业]**&#x200B;服务来修改频率和时间。
+## Schedule background job {#scheduling-background-job}
 
-1. 点按 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web Console]**。
-1. 打开&#x200B;**[!UICONTROL Adobe CQDAM资产性能报表同步作业]**&#x200B;服务配置。
+Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. 在属性调度程序表达式中指定作业的所需开始频率和调度程序时间。 保存更改。
+1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
+-->
 
 ## 配置资产分析{#configure-asset-insights}
 
-Adobe Experience Manager(AEM)资产会从Adobe Analytics获取由第三方网站使用的AEM资产的使用数据。 要使资产分析能够检索此数据并生成洞察，请首先配置该功能以与Adobe Analytics集成。
+[!DNL Experience Manager Assets] 从第三方网站使用的数字资产中获取使用数据 [!DNL Adobe Analytics]。要使资产分析能够检索此数据并生成洞察，请首先配置该功能以与[!DNL Adobe Analytics]集成。
 
 >[!NOTE]
 >
 >只支持并提供图像洞察。
 
-1. 在 AEM 中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]**。
+1. 在[!DNL Experience Manager]中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]**。
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. 单击&#x200B;**[!UICONTROL 分析配置]**&#x200B;卡。
 1. 在向导中，选择一个数据中心并提供您的凭据，包括您的组织名称、用户名和共享机密。
 
-   ![为AEM中的资产洞察配置Adobe Analytics](assets/insights_config2.png)
+   ![在中配置Adobe Analytics的资产洞察  [!DNL Experience Manager]](assets/insights_config2.png)
 
-   *图：为AEM中的资产洞察配置Adobe Analytics*
+   *图：在中配置Adobe Analytics的资产洞察[!DNL Experience Manager]*
 
-1. 单击／点按 **[!UICONTROL 身份验证]**。在AEM验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择Adobe Analytics报表包，让资产分析从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
-1. AEM设置报表包后，点按&#x200B;**[!UICONTROL 完成]**。
+1. 单击／点按 **[!UICONTROL 身份验证]**。在[!DNL Experience Manager]验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择您希望资产分析从中获取数据的Adobe Analytics报表包。 单击&#x200B;**[!UICONTROL 添加]**。
+1. 在[!DNL Experience Manager]设置报表包后，点按&#x200B;**[!UICONTROL 完成]**。
 
 ### 页面跟踪器{#page-tracker}
 
-配置Adobe Analytics帐户后，将为您生成页面跟踪器代码。 要使资产分析能够跟踪第三方网站中使用的AEM资产，请在网站代码中包含页面跟踪器代码。 使用AEM Assets的页面跟踪器实用程序生成页面跟踪器代码。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+配置Adobe Analytics帐户后，将为您生成页面跟踪器代码。 要使资产分析能够跟踪第三方网站中使用的[!DNL Experience Manager]资产，请在网站代码中包含页面跟踪器代码。 使用资产中的页面跟踪器实用程序生成页面跟踪器代码。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. 在 AEM 中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]**。
+1. 在[!DNL Experience Manager]中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]**。
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -121,7 +124,7 @@ Adobe Experience Manager(AEM)资产会从Adobe Analytics获取由第三方网站
 Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
 
 1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
-1. Download the sample AEM Assets package from below and install the package from CRXDE package manager.
+1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
 
@@ -137,6 +140,6 @@ Using the demo package, you can enable Adobe Asset Insights to capture data from
 
    >[!NOTE]
    >
-   >The external web page can be in AEM itself.
+   >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
