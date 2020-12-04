@@ -3,10 +3,10 @@ title: 串联元数据
 description: 本文介绍如何为资产定义层叠元数据。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 13%
+source-wordcount: '957'
+ht-degree: 12%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 13%
 * 根据在另一个字段中指定的值更改特定字段显示的选项。
 * 根据在其他字段中指定的值，在特定字段中设置默认元数据值。
 
-## 在AEM {#configure-cascading-metadata-in-aem}中配置级联元数据
+## 在[!DNL Experience Manager] {#configure-cascading-metadata-in-aem}中配置级联元数据
 
 请考虑您希望根据所选资产类型显示级联元数据的方案。 一些示例
 
@@ -35,7 +35,7 @@ ht-degree: 13%
 
 无论选择何种资产类型，均将版权信息显示为必填字段。
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。
+1. 点按／单击[!DNL Experience Manager]徽标，然后转至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据模式]**。
 1. 在&#x200B;**[!UICONTROL 架构表单]**&#x200B;页面中，选择一个架构表单，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 编辑]**，以编辑架构。
 
    ![select_form](assets/select_form.png)
@@ -54,7 +54,7 @@ ht-degree: 13%
 
    * 要手动指定值，请选择&#x200B;**[!UICONTROL 手动添加]**，然后点按／单击&#x200B;**[!UICONTROL 添加选择]**&#x200B;并指定选项文本和值。 例如，指定视频、PDF、Word和图像资产类型。
 
-   * 要动态从JSON文件中获取值，请选择&#x200B;**[!UICONTROL 通过JSON路径添加]**，并提供JSON文件的路径。 AEM在向用户显示表单时实时获取键值对。
+   * 要动态从JSON文件中获取值，请选择&#x200B;**[!UICONTROL 通过JSON路径添加]**，并提供JSON文件的路径。 [!DNL Experience Manager] 向用户显示表单时，实时获取键值对。
 
    这两种选择是互斥的。 无法从JSON文件导入选项并手动编辑。
 
