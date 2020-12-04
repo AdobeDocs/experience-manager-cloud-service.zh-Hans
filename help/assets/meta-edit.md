@@ -1,11 +1,11 @@
 ---
 title: 如何编辑或添加元数据
-description: 了解AEM Assets的资产元数据以及编辑资产元数据的各种方式。
+description: 了解 [!DNL Experience Manager Assets] 中的资产元数据以及编辑资产元数据的各种方法。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '422'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 元数据是有关可搜索资产的其他信息。 上传图像时会自动提取图像。 您可以编辑现有元数据或向现有字段添加新的元数据属性（例如，当元数据字段为空时）。
 
-由于公司需要可控、可靠的元数据词汇，AEM Assets不允许临时添加新的元数据属性。 尽管作者无法为资产添加新的元数据字段，但开发人员可以。 请参阅[为资产创建新的元数据属性](meta-edit.md#editing-metadata-schema)。
+由于公司需要可控且可靠的元数据词汇，[!DNL Experience Manager Assets]不允许临时添加新的元数据属性。 尽管作者无法为资产添加新的元数据字段，但开发人员可以。 请参阅[为资产创建新的元数据属性](meta-edit.md#editing-metadata-schema)。
 
 ## 编辑资产{#editing-metadata-for-an-asset}的元数据
 
