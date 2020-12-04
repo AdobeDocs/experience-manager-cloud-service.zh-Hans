@@ -3,9 +3,9 @@ title: 下载资产
 description: 从 [!DNL Adobe Experience Manager Assets] 下载资源，启用或禁用下载功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 6%
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## 使用AEM接口{#download-in-aem}下载资源
+## 使用[!DNL Experience Manager]接口{#download-in-aem}下载资源
 
 异步下载服务为大型资源的无缝下载提供了一个框架。 从用户界面实时下载较小的文件。 大型文件以异步方式下载，并通过收件箱中的Experience Manager通知告知用户完成操作。 请参阅[了解Experience Manager收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
 
