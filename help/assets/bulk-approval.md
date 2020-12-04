@@ -3,9 +3,9 @@ title: 审核文件夹和收藏集中的资产
 description: 为文件夹或集合中的资产设置审阅工作流，并与审阅者或创意合作伙伴共享它以寻求反馈。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '793'
 ht-degree: 24%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 24%
 
 # 查看文件夹和收藏集中的资产{#review-folder-assets-and-collections}
 
-使用Adobe Experience Manager(AEM)资产，您可以为文件夹或集合中的资产设置临时审核工作流。 您可以与审阅者或创意合作伙伴共享它以征求他们的反馈。 您可以将审核工作流与项目关联，也可以创建独立的审核任务。
+使用Adobe Experience Manager资产，您可以为文件夹或集合中的资产设置临时审核工作流。 您可以与审阅者或创意合作伙伴共享它以征求他们的反馈。 您可以将审核工作流与项目关联，也可以创建独立的审核任务。
 
 共享资产后，审阅者可以批准或拒绝资产。 通知在工作流的各个阶段发送，以通知预期收件人完成各种任务。 例如，当您共享文件夹或集合时，审阅者会收到一个通知，告知已共享文件夹／集合以供审阅。
 
@@ -47,7 +47,7 @@ ht-degree: 24%
    ![review_name](assets/review_name.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以批准者身份登录AEM Assets，然后导航到资产UI。 要批准资产，请单击／点按&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 以审批者身份登录到[!DNL Experience Manager Assets]，然后导航到资产UI。 要批准资产，请单击／点按&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
 
    ![通知](assets/notification.png)
 
@@ -91,7 +91,7 @@ ht-degree: 24%
    ![任务详细信息集合](assets/task_details-collection.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以审批者身份登录AEM Assets，然后导航到资产控制台。 要批准资产，请点按／单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 以审批者身份登录到[!DNL Experience Manager Assets]，然后导航到资产控制台。 要批准资产，请点按／单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
 1. 在&#x200B;**[!UICONTROL 审查任务]**&#x200B;页面中，检查审查任务的详细信息，然后点按/单击&#x200B;**[!UICONTROL 审查]**。
 1. 集合中的所有资产都会显示在审核页面上。 选择资产，然后点按／单击&#x200B;**[!UICONTROL 批准／拒绝]**&#x200B;图标，以根据需要批准或拒绝资产。
 
