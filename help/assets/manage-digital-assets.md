@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '4429'
+source-wordcount: '4408'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 ## 创建文件夹{#creating-folders}
 
-在组织资产集合（例如所有`Nature`图像）时，您可以创建文件夹来将它们放在一起。 您可以使用文件夹对资产进行分类和组织。 AEM Assets不要求您组织文件夹中的资源以更好地工作。
+在组织资产集合（例如所有`Nature`图像）时，您可以创建文件夹来将它们放在一起。 您可以使用文件夹对资产进行分类和组织。 [!DNL Experience Manager Assets] 不要求您组织文件夹中的资产以更好地工作。
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ ht-degree: 18%
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记名称，然后按Enter键。 新标记保存在AEM中。
+1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记名称，然后按Enter键。 新标记保存在[!DNL Experience Manager]中。
 
    YouTube需要“标记”才能发布，并有一个指向YouTube的链接（如果可以找到合适的链接）。
 
@@ -139,7 +139,7 @@ ht-degree: 18%
 
    >[!NOTE]
    >
-   >如果您在同一位置复制资产，AEM会自动生成该名称的变体。 例如，如果复制名为`Square`的资产，AEM会自动为其副本生成`Square1`的标题。
+   >如果您在同一位置复制资产，[!DNL Experience Manager]会自动生成该名称的变体。 例如，如果复制名为`Square`的资产，[!DNL Experience Manager]会自动为其副本生成`Square1`的标题。
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 粘贴]**&#x200B;资产图标。 资产会复制到此位置。
 
@@ -162,7 +162,7 @@ ht-degree: 18%
    * 点按／单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止该进程。
    >[!NOTE]
    >
-   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
+   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果您使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
    >* 重命名时，文件名中不允许有空格。
 
 
@@ -203,7 +203,7 @@ ht-degree: 18%
 
    >[!NOTE]
    >
-   >默认情况下，AEM Assets不在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加将AEM Assets配置为在预览模式下显示原始演绎版。
+   >默认情况下，[!DNL Experience Manager Assets]不在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加将[!DNL Assets]配置为在预览模式下显示原始演绎版。
 
 1. 选择一个演绎版以进行查看或删除。
 
@@ -223,7 +223,7 @@ ht-degree: 18%
    >
    >如果您从演绎版面板中选 **[!UICONTROL 择了演绎版]** ，工具栏会更改上下文并仅显示与演绎版相关的那些操作。 不显示“上传演绎版”图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
-   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的尺寸，AEM Assets显示具有精确或最接近尺寸的再现。
+   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的维，资产会显示具有精确或最接近维度的演绎版。
 
    要在资产详细信息级别配置图像的演绎版尺寸，请叠 `renditionpicker` 加节点(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)并配置width属性的值。 配置属性大 **[!UICONTROL 小（长）(以KB]** )代替宽度，以根据图像大小在资产详细信息页面上自定义再现。 对于基于大小的自定义，如果匹 `preferOriginal` 配的再现的大小大于原始再现，则属性会为原始再现分配首选项。
 
@@ -270,7 +270,7 @@ ht-degree: 18%
 
 ## 下载资产 {#download-assets}
 
-请参阅[从AEM](/help/assets/download-assets-from-aem.md)下载资产。
+请参阅[从 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)下载资产。
 
 ## 发布资产{#publish-assets}
 
@@ -323,7 +323,7 @@ ht-degree: 18%
 
 ## 已关闭的用户组{#closed-user-group}
 
-已关闭的用户组(CUG)用于限制对从AEM发布的特定资产文件夹的访问。 如果为文件夹创建CUG，则仅对分配的成员或组具有对文件夹（包括文件夹资产和子文件夹）的访问权限。 要访问文件夹，他们必须使用其安全凭据登录。
+已关闭的用户组(CUG)用于限制对从[!DNL Experience Manager]发布的特定资产文件夹的访问。 如果为文件夹创建CUG，则仅对分配的成员或组具有对文件夹（包括文件夹资产和子文件夹）的访问权限。 要访问文件夹，他们必须使用其安全凭据登录。
 
 CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置登录页面。
 
@@ -332,22 +332,22 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
    ![add_user](assets/add_user.png)
 
-1. 要在用户访问文件夹时显示登录屏幕，请选择&#x200B;**[!UICONTROL 启用]**&#x200B;选项。 然后，选择AEM中登录页面的路径，并保存更改。
+1. 要在用户访问文件夹时显示登录屏幕，请选择&#x200B;**[!UICONTROL 启用]**&#x200B;选项。 然后，在[!DNL Experience Manager]中选择登录页面的路径，并保存更改。
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >如果不指定登录页面的路径，AEM将在发布实例中显示默认登录页面。
+   >如果未指定登录页面的路径，[!DNL Experience Manager]将显示发布实例中的默认登录页面。
 
 1. 发布文件夹，然后尝试从发布实例访问它。 将显示登录屏幕。
-1. 如果您是CUG成员，请输入您的安全凭据。 在AEM对您进行身份验证后，将显示文件夹。
+1. 如果您是CUG成员，请输入您的安全凭据。 对您进行[!DNL Experience Manager]身份验证后，将显示该文件夹。
 
 ## 搜索资产 {#search-assets}
 
 搜索资产对于数字资产管理系统的使用至关重要——无论是供创意人员进一步使用、供业务用户和营销人员对资产进行可靠管理，还是供DAM管理员管理。
 
-要进行简单、高级和自定义搜索以发现和使用最合适的资产，请参阅AEM](/help/assets/search-assets.md)中的[搜索资产。
+要进行简单、高级和自定义搜索以发现和使用最合适的资产，请参阅 [!DNL Experience Manager]](/help/assets/search-assets.md)中的[搜索资产。
 
 ## 快速操作 {#quick-actions}
 
@@ -358,7 +358,7 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
 ## 编辑图像{#editing-images}
 
-AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作业。 您可以对图像进行裁剪、旋转、翻转和执行其他编辑作业。 您还可以向资产添加图像映射。
+[!DNL Experience Manager Assets]界面中的编辑工具允许您对图像资源执行小型编辑作业。 您可以对图像进行裁剪、旋转、翻转和执行其他编辑作业。 您还可以向资产添加图像映射。
 
 >[!NOTE]
 >
@@ -430,7 +430,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 注释是指添加到图像或视频的评论或解释性说明。注释使营销人员能够协作并留下资产反馈。
 
-视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。AEM Assets支持的视频格式取决于浏览器。
+视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。资产支持的视频格式取决于浏览器。
 
 >[!NOTE]
 >
@@ -467,7 +467,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
    >在保存注释之前，可以添加多个注释。
 
 1. 点按／单击&#x200B;**[!UICONTROL 关闭]**&#x200B;以退出“注释”模式。
-1. 要视图通知，请使用Aaron MacDonald的凭据登录AEM Assets，然后单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标以视图通知。
+1. 要视图通知，请使用Aaron MacDonald的凭据登录资产，然后单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标以视图通知。
 
    >[!NOTE]
    >
@@ -545,11 +545,11 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 1. 使用右上方的选项下载或打印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注字体颜色的信息，请参阅[批注](/help/assets/manage-digital-assets.md#annotating)。
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    返回渲染的PDF文件并刷新它。 刷新的PDF反映了您所做的更改。
 
@@ -559,9 +559,9 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 以下是创建版本的方案：
 
-* 您可以在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，这样原始图像不会被覆盖。
+* 您可以在其他应用程序中修改图像并上传到资产。 将创建图像的某个版本，这样原始图像不会被覆盖。
 * 您可以编辑资产的元数据。
-* 您使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建新版本。
+* 您使用[!DNL Experience Manager]桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建一个新版本。
 
 您还可以通过工作流启用自动版本控制。 为资产创建版本时，元数据和演绎版会与该版本一起保存。 演绎版是相同图像的替代内容，例如，已上传JPEG文件的PNG演绎版。
 
