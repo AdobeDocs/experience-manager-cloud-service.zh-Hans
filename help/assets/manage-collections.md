@@ -4,10 +4,10 @@ description: 了解Adobe Experience Manager资产中的收集概念。 了解如
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 26%
+source-wordcount: '2396'
+ht-degree: 27%
 
 ---
 
@@ -140,7 +140,7 @@ ht-degree: 26%
 
 ### 搜索集合{#search-collections}
 
-您可以从“收藏集”控制台中搜索收藏集。当您在“全搜索”框中使用关键字进行搜索时，AEM Assets会搜索集合名称、元数据和添加到集合的标记。
+您可以从“收藏集”控制台中搜索收藏集。当您在“全局搜索”框中使用关键字进行搜索时，[!DNL Experience Manager Assets]会搜索集合名称、元数据以及添加到集合的标记。
 
 如果您从顶级搜索集合，则搜索结果中只返回单个集合。 收藏集中的资产或文件夹将被排除。 在所有其他情况下（例如，在单个收藏集或文件夹层次结构中），都会返回所有相关资产、文件夹和收藏集。
 
@@ -148,7 +148,7 @@ ht-degree: 26%
 
 在收藏集控制台中，点按／单击收藏集以将其打开。
 
-在收藏集中，AEM资产搜索仅限于您正在查看的收藏集中的资产（及其标记和元数据）。 当您在某个文件夹内进行搜索时，将返回当前文件夹中所有匹配的资产和子文件夹。 当您在收藏集中进行搜索时，只会返回与收藏集直接成员匹配的资产、文件夹和其他收藏集。
+在集合中，[!DNL Experience Manager]搜索仅限于您正在查看的集合中的资产（及其标记和元数据）。 当您在某个文件夹内进行搜索时，将返回当前文件夹中所有匹配的资产和子文件夹。 当您在收藏集中进行搜索时，只会返回与收藏集直接成员匹配的资产、文件夹和其他收藏集。
 
 ## 编辑集合设置{#edit-collection-settings}
 
@@ -179,7 +179,7 @@ ht-degree: 26%
 
 ## 编辑多个集合的元数据属性{#editing-metadata-properties-of-multiple-collections}
 
-Adobe企业管理器(AEM)资产允许您批量编辑许多集合的元数据。 使用[!UICONTROL 属性]页可对多个集合执行元数据更改，例如，将元数据属性更改为通用值或添加或修改标记。
+AdobeEnterprise Manager资产允许您批量编辑许多集合的元数据。 使用[!UICONTROL 属性]页可对多个集合执行元数据更改，例如，将元数据属性更改为通用值或添加或修改标记。
 
 要自定义元数据[!UICONTROL 属性]页面，包括添加、修改和删除元数据属性，请使用模式编辑器。
 
