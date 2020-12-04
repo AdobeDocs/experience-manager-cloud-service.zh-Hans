@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1269'
 ht-degree: 3%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 3%
 
 * **[启动层次结构管理](/help/sites-cloud/authoring/launches/managing-pages.md) 和 [未来时间扭曲](/help/sites-cloud/authoring/launches/preview.md)**:用于在启动项内添加／删除页面以及使用时间扭曲浏览站点的新UI显示启动项中的未来状态。
 
-* **对可用于转出的Live Copy页面进行排序**:使用“名称”、“上次修改日期”和“上次转出日期”属性对可 [!UICONTROL 用于转出]的Live Copy页 [!UICONTROL 面进行排序的新]  选项。页面的[!UICONTROL 上次转出日期]是引入的新属性。
+* **[扩展内容片段模型和编辑器](/help/assets/content-fragments/content-fragments-models.md)**:新的选项可用于各种数据类型的输入验证，新的表单可视化功能改进了明细列表数据类型，内容片段模型名称在资产UI中显示并可搜索。
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **对可用于转出的Live Copy页面进行排序**:使用“名称”、“上次修改日期”和“上次转出日期”属性对可 [!UICONTROL 用于转出]的Live Copy页 [!UICONTROL 面进行排序的新]  选项。页面的[!UICONTROL 上次转出日期]是引入的新属性。
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
 
