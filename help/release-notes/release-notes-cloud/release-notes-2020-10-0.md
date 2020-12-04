@@ -2,13 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: 841069f35539a49c6ee67699bf3a476cf1c9da41
+source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版的发行说明 {#release-notes}
@@ -32,8 +31,6 @@ ht-degree: 17%
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}中的新增功能
-
 * **[!DNL Adobe Sensei]强大的视频智能标记**:通过利用AI模型分析针对对象和特定操作标记的视频内容，DAM用户可以花费更少的时间添加标记，并将更多时间用于利用暴露的丰富信息向客户提供正确的体验。请参阅[智能标记视频资产](/help/assets/smart-tags-video-assets.md)。
 
 * **Brand Portal增强功能**:中提供了以下新增功能等 [!DNL Brand Portal]。有关详细信息，请参阅[[!DNL Brand Portal] 发行说明](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)。
@@ -45,13 +42,7 @@ ht-degree: 17%
 
 * **[!DNL Adobe Asset Link]2.1版**:有适用于和 [的新](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 版Adobe资 [!DNL Adobe Photoshop]产 [!DNL Adobe Illustrator]Linkextension的 [!DNL Adobe InDesign] 资产。它增加了与2020年10月发布的最新[!DNL Adobe Creative Cloud]应用程序与版本2021的兼容性。
 
-* **[!DNL Assets]WebP文件支持**: [!DNL Assets] 作为Cloud Service，现在支持WebP图像格式。WebP是由谷歌创建的一种新兴的图像格式。 WebP文件格式的图像在视觉上与JPG或PNG文件无明显区别，并且文件要小得多。 降低资产的文件大小可缩短页面加载时间，并帮助内容创建者交付更快的Web体验。
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]WebP文件支持**: [!DNL Assets] 作为Cloud Service，现在支持WebP图像格式。WebP是由谷歌创建的一种新兴的图像格式。 WebP文件格式的图像在视觉上与JPG或PNG文件无明显区别，并且文件要小得多。 降低资产的文件大小可缩短页面加载时间，并帮助内容创建者交付更快的Web体验。 了解如何在[创建处理用户档案](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)中使用WebP。
 
 ## Adobe Experience Manager商务作为Cloud Service{#cloud-services-commerce}
 
@@ -80,7 +71,6 @@ AEM中Cloud Manager作为Cloud Service2020.10.0的发布日期为2020年10月2�
 * 现在，进入休眠状态的环境在 Cloud Manager 中会显示离散状态。
 
 * Cloud Manager构建容器现在支持使用Java 8或Java 11编译项目。 Maven工具链系统提供对Java 11的支持。
-
 
 * 每个环境的环境变量数量已增加至 200 个。
 
@@ -122,4 +112,3 @@ AEM中Cloud Manager作为Cloud Service2020.10.0的发布日期为2020年10月2�
 ### 错误修复 {#ctt-bug-fixes}
 
 * 如果迁移集包含的路径与文件名部分相似，则内容传输工具将跳过内容文件。 已修复。
-
