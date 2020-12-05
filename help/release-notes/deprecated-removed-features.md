@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 以下发行说明特定于 Adobe Experience Manager as a Cloud Service 中已弃用和已删除的功能。
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 区域 | 功能 | 替换 |
 | ------------ | ------------------ | ----------- |
 | UI | 虽然某些经典 UI 对话框目前仍保留某些选择功能（如链接检查程序、版本清除和某些云服务配置）中，但在 AEM 产品 UI 中通常已删除对经典 UI 的访问。 | 标准 UI |
-| Dynamic Media | 以前与 [Dynamic Media Classic(Scene7)](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/scene7.html) 和 [Dynamic Media Hybrid](https://helpx.adobe.com/cn/experience-manager/6-5/assets/using/config-dynamic.html) 模式的集成在 AEM as a Cloud Service 中不可用。 | 使用 Experience Manager as a Cloud Service 提供的 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。 |
+| Dynamic Media | 以前与[Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration)和[Dynamic Media Hybrid模式](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)的集成在AEM中不作为Cloud Service可用。 | 使用 Experience Manager as a Cloud Service 提供的 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。 |
 | 站点 | Portal Director 和 Portlet 组件 | 这些功能在 AEM 6.4 中已弃用，现已从 AEM 中删除。 |
 | 站点 | 设计导入程序 | 此功能已被删除，因为 AEM 存储库的不可更改部分在运行时无法访问。 |
 | 资产 | [AEM Assets 与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务共享](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html)功能不可用。 | 要与 Creative Cloud 集成，请使用 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。 |
