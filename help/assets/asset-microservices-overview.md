@@ -3,9 +3,9 @@ title: 使用资产微服务处理资产
 description: 使用云本机、可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -50,14 +50,14 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 获取和处理流是资产微服务架构的关键概念，用于Experience Manager。
 
-* **直接二进制访问**:一旦为Experience Manager环境配置了资产，资产就会被传输（并上传）到云二进制存储，然后AEM资产微型服务，最后客户可以直接访问这些资产以开展工作。这样可最大限度地减少网络负载和存储二进制文件的复制
-* **外部化处理**:资产处理工作在AEM环境之外完成，并节省其资源（CPU、内存），以提供关键的数字资产管理功能，并支持与系统为最终用户进行的交互式工作
+* **直接二进制访问**:一旦为Experience Manager环境配置了资产，便会将资产传输（并上传）到Cloud Binary Store，然后 [!DNL Experience Manager]，资产微型服务会直接访问客户，以便进行工作。这样可最大限度地减少网络负载和存储二进制文件的复制
+* **外部化处理**:资产处理在环境之外完 [!DNL Experience Manager] 成，并且节省其资源（CPU、内存），以提供关键的数字资产管理功能并支持与系统为最终用户进行的交互式工作
 
 ## 通过直接二进制访问上传资产{#asset-upload-with-direct-binary-access}
 
-Experience Manager客户端是产品提供的一部分，默认情况下，所有支持都通过直接二进制访问进行上传。 这包括使用Web界面上传、Adobe资产链接和AEM桌面应用程序。
+Experience Manager客户端是产品提供的一部分，默认情况下，所有支持都通过直接二进制访问进行上传。 这包括使用Web界面上传、Adobe资产链接和[!DNL Experience Manager]桌面应用程序。
 
-您可以使用自定义上传工具，它们直接与AEM HTTP API配合使用。 您可以直接使用这些API，或者使用和扩展以下实现上传协议的开放源码项目：
+您可以使用自定义上传工具，它们直接与[!DNL Experience Manager] HTTP API一起使用。 您可以直接使用这些API，或者使用和扩展以下实现上传协议的开放源码项目：
 
 * [开源上传库](https://github.com/adobe/aem-upload)
 * [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Experience Manager客户端是产品提供的一部分，默认情况下，所�
 
 虽然大多数客户应从可配置的资产微服务获得其所有资产处理需求，但有些客户可能需要额外的资产处理。 如果资产需要根据来自其他系统的集成信息进行处理，这一点尤为突出。 在这种情况下，可以使用自定义后处理工作流。
 
-后处理工作流是常规的AEM工作流模型，在AEM工作流编辑器中创建和管理。 客户可以配置工作流以对资产执行其他处理步骤，包括使用可用的现成工作流步骤和自定义工作流。
+后处理工作流是常规的[!DNL Experience Manager]工作流模型，在[!DNL Experience Manager]工作流编辑器中创建和管理。 客户可以配置工作流以对资产执行其他处理步骤，包括使用可用的现成工作流步骤和自定义工作流。
 
 Adobe Experience Manager可以配置为在资产处理完成后自动触发后处理工作流。
 
