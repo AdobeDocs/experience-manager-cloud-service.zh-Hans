@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dynamic Media支持跨创作用户界面的键盘控制和辅助技术，如JAWS
 
 ## Dynamic Media中的键盘辅助功能支持
 
-由于Dynamic Media是AEM Assets的插件，因此大多数键盘控制行为与AEM Assets完全相同。 例如，Dynamic Media中的`Cancel`按钮与AEM Assets中的焦点突出显示相同，并对`Spacebar`键作出响应，与AEM Assets中的&lt;a1/>键相同。 请参阅Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
+由于Dynamic Media是Experience Manager资产的插件，因此大多数键盘控制行为与Experience Manager资产完全相同。 例如，Dynamic Media中的`Cancel`按钮与Experience Manager资产中的焦点突出显示相同，并且与Experience Manager资产中的`Spacebar`键作出响应。 请参阅Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
 
 Dynamic Media中各个用户界面元素支持的按键在大多数情况下都显而易见，易于发现。 Dynamic Media中的键盘控制与以下内容相关：
 
