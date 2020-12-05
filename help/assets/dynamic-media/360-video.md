@@ -2,9 +2,9 @@
 title: 360/VR视频
 description: 了解如何在动态媒体中处理360和虚拟现实(VR)视频。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '964'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Dynamic Media包含对360个视频资源投放的本机支持。 默认情况下
 
 ## 上传要与360视频查看器{#uploading-assets-for-use-with-the-video-viewer}一起使用的资产
 
-上传到AEM的360个视频资产在“资产”页面上标记为&#x200B;**Multimedia**，与普通视频资产类似。
+上传到Experience Manager中的360个视频资产在资产页面上标记为&#x200B;**Multimedia**，与普通视频资产类似。
 
 ![6_5_360video-selecttopreview在卡](assets/6_5_360video-selecttopreview.png)
 *片视图中看到已上传的360视频资产。资产标记为“多媒体”。*
@@ -97,7 +97,7 @@ Start by uploading 360 Videos.
 
 如果您对360视频感到满意，可以发布该视频。
 
-请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。请注意，如果您的交互式内容包含相对URL的链接，特别是指向AEM Sites页面的链接，则无法使用基于URL的链接方法。
+请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。请注意，如果您的交互式内容包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
 请参阅[向页面添加Dynamic Media资产。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **预览360个视频**
@@ -133,5 +133,5 @@ Start by uploading 360 Videos.
 
 有关如何发布360视频的详细信息，请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 另请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
-另请参阅[将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 请注意，如果您的交互式内容包含相对URL的链接，特别是指向AEM Sites页面的链接，则无法使用基于URL的链接方法。
+另请参阅[将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 请注意，如果您的交互式内容包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
 另请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
