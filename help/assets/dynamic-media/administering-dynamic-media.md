@@ -2,10 +2,10 @@
 title: 设置Dynamic Media
 description: 要设置Dynamic Media，您需要配置Dynamic Media并管理图像预设和查看器预设
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 23%
+source-wordcount: '175'
+ht-degree: 22%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -40,4 +40,4 @@ ht-degree: 23%
 >
 >**如果要升级：**
 >
->* 在AEM启动并运行后，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员明确禁用它）。 如果您是AEM的升级实例，并且是Dynamic Media的新实例，则可能需要重新处理资产以启用Dynamic Media。
+>* 在Experience Manager启动并运行后，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员明确禁用它）。 如果您是Experience Manager的升级实例，并且是Dynamic Media的新用户，您可能需要重新处理资产以启用Dynamic Media。
