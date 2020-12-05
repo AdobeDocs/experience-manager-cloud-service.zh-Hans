@@ -3,9 +3,9 @@ title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 在需要对无法使用处理用户档案进行的资产进行额外处理的情况下，可以向配置中添加其他后处理工作流。 这允许在使用资产微服务的可配置处理的基础上添加完全自定义的处理。
 
-后处理工作流（如果配置）由AEM在微服务处理完成后自动执行。 无需手动添加工作流启动器来触发它们。 示例包括：
+后处理工作流（如果配置）由[!DNL Experience Manager]在微服务处理完成后自动执行。 无需手动添加工作流启动器来触发它们。 示例包括：
 
 * 处理资产的自定义工作流步骤。
 * 集成功能，可将元数据或属性从外部系统添加到资产，例如产品或流程信息。
@@ -195,7 +195,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 ### 创建后处理工作流模型{#create-post-processing-workflow-models}
 
-后处理工作流模型是常规的AEM工作流模型。 如果您需要针对不同的存储库位置或资产类型进行不同的处理，请创建不同的模型。
+后处理工作流模型是常规的[!DNL Experience Manager]工作流模型。 如果您需要针对不同的存储库位置或资产类型进行不同的处理，请创建不同的模型。
 
 应根据需要添加处理步骤。 您可以使用任何支持的步骤以及任何自定义实现的工作流步骤。
 
@@ -213,7 +213,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 >[!NOTE]
 >
 >自定义工作流运行器的配置是OSGi服务的配置。 有关如何部署OSGi配置的信息，请参阅[部署到Experience Manager](/help/implementing/deploying/overview.md)。
->与AEM的内部部署和托管服务部署不同，OSGi Web控制台在云服务部署中不直接可用。
+>与[!DNL Experience Manager]的内部部署和托管服务部署不同，OSGi Web控制台在云服务部署中不直接可用。
 
 有关在后处理工作流中可以使用哪个标准工作流步骤的详细信息，请参阅开发人员参考中的后处理工作流](developer-reference-material-apis.md#post-processing-workflows-steps)中的[工作流步骤。
 
