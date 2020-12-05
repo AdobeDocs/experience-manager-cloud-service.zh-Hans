@@ -1,25 +1,25 @@
 ---
 title: 文件夹元数据架构
-description: 了解如何在AEM Assets为资产文件夹创建元数据模式
+description: 了解如何为 [!DNL Experience Manager Assets]中的资产文件夹创建元数据模式
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 15%
+source-wordcount: '1029'
+ht-degree: 14%
 
 ---
 
 
 # 文件夹元数据架构 {#folder-metadata-schema}
 
-Adobe Experience Manager(AEM)资产允许您为资产文件夹创建元数据模式，定义在文件夹属性页面中显示的布局和元数据。
+[!DNL Adobe Experience Manager Assets] 允许您为资产文件夹创建元数据架构，这些架构定义了文件夹属性页面中显示的布局和元数据。
 
 ## 添加文件夹元数据模式表单{#add-a-folder-metadata-schema-form}
 
 使用文件夹元数据模式Forms编辑器创建和编辑文件夹的元数据模式。
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 文件夹元数据架构]**。
+1. 点按／单击[!DNL Experience Manager]徽标，然后转至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 文件夹元数据模式]**。
 1. 在“文件夹元数据模式Forms”页面中，点按／单击&#x200B;**[!UICONTROL 创建]**。
 1. 指定表单的名称，然后点按／单击&#x200B;**[!UICONTROL 创建]**。 新的模式表单列在模式Forms页面。
 
@@ -138,7 +138,7 @@ Adobe Experience Manager(AEM)资产允许您为资产文件夹创建元数据模
 
 ### 从“文件夹元数据”模式页{#assign-to-a-schema-from-the-folder-metadata-schema-page}分配给模式
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 文件夹元数据架构]**。
+1. 点按／单击[!DNL Experience Manager]徽标，然后转至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]****[!UICONTROL 文件夹元数据模式]**。
 1. 从“文件夹元数据模式Forms”页面，选择要应用于文件夹的模式表单。
 1. 在工具栏中，点按／单击&#x200B;**[!UICONTROL 应用到文件夹]**。
 
@@ -155,7 +155,7 @@ Adobe Experience Manager(AEM)资产允许您为资产文件夹创建元数据模
 
 您可以在创建文件夹时分配文件夹元数据模式。 如果系统中至少存在一个文件夹元数据模式，则在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中会显示额外的列表。 您可以选择所需的模式。 默认情况下，不选择模式。
 
-1. 在AEM Assets用户界面中，点按／单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
+1. 在[!DNL Experience Manager Assets]用户界面中，点按／单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
 1. 指定文件夹的标题和名称。
 1. 从文件夹元数据模式列表中，选择所需的模式。 然后，点按／单击&#x200B;**[!UICONTROL 创建]**。
 
