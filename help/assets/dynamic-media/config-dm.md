@@ -2,9 +2,9 @@
 title: 配置Dynamic MediaCloud Service
 description: 有关如何在Adobe Experience ManagerCloud Service配置Dynamic Media的信息。
 translation-type: tm+mt
-source-git-commit: 4fe879d6d75d6e264d9f0b7d9d001b1426d59823
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '3861'
+source-wordcount: '3853'
 ht-degree: 8%
 
 ---
@@ -206,7 +206,7 @@ Dynamic Media中的密码过期时间设置为当前系统日期起的100年。
 
 “图像服务器”屏幕为传送图像建立了默认设置。 有关每个设置的说明，请参阅UI屏幕。
 
-**[!UICONTROL 请求属性]** -这些设置对可以从服务器传送的图像施加限制。**[!UICONTROL 默认请求属性]** -这些设置与图像的默认外观有关。**[!UICONTROL 常见缩略图属性]** -这些设置与缩略图图像的默认外观有关。**[!UICONTROL 目录字段的默认值]**-这些设置与图像的分辨率和默认缩略图类型有关。**[!UICONTROL 颜色管理属性]** -这些设置决定使用哪些ICC颜色用户档案。**[!UICONTROL 兼容性属性]** -通过此设置，文本图层中的前导和尾部段落可以像在版本3.6中一样处理，以实现向后兼容性。**[!UICONTROL 本地化支持]** -这些设置允许您管理多个区域设置属性。它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置&#x200B;**[!UICONTROL 本地化支持]**&#x200B;的详细信息，请参阅[设置资产本地化时的注意事项](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)。
+**[!UICONTROL 请求属性]** -这些设置对可以从服务器传送的图像施加限制。**[!UICONTROL 默认请求属性]** -这些设置与图像的默认外观有关。**[!UICONTROL 常见缩略图属性]** -这些设置与缩略图图像的默认外观有关。**[!UICONTROL 目录字段的默认值]**-这些设置与图像的分辨率和默认缩略图类型有关。**[!UICONTROL 颜色管理属性]** -这些设置决定使用哪些ICC颜色用户档案。**[!UICONTROL 兼容性属性]** -通过此设置，文本图层中的前导和尾部段落可以像在版本3.6中一样处理，以实现向后兼容性。**[!UICONTROL 本地化支持]** -这些设置允许您管理多个区域设置属性。它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置&#x200B;**[!UICONTROL 本地化支持]**&#x200B;的详细信息，请参阅[设置资产本地化时的注意事项](https://experienceleague.corp.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)。
 
 #### 配置应用程序常规设置{#configuring-application-general-settings}
 
@@ -334,171 +334,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 在CRXDE Lite页的左上角附近，单击&#x200B;**[!UICONTROL 全部保存]**。
 
-<!-- #### Creating batch set presets to auto-generate Image Sets and Spin Sets {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
-Use batch set presets to automate the creation of image sets or spin sets while assets are uploaded to Dynamic Media.
-
-First, define the naming convention for how assets should be grouped together in a set. You can then create a batch set preset which is a uniquely named, self-contained set of instructions that defines how to construct the set using images that match the defined naming conventions in the preset recipe.
-
-When you upload files, Dynamic Media automatically creates a set with all files that match the defined naming convention in the active presets.
-
-**Configuring default naming**
-
-Create a default naming convention that is used in any batch set preset recipe. The default naming convention selected in the batch set preset definition may be all your company needs to batch-generate sets. A batch set preset is created to use the default naming convention that you define. You are able to create as many Batch Set presets with alternate, custom naming conventions needed for a particular set of content in cases where there is an exception to the company-defined default naming.
-
-While setting up a default naming convention is not required to use batch set preset functionality, best practice recommends that you use the default naming convention to define as many elements of your naming convention that you want grouped in a set so you can streamline batch set creation.
-
-As an alternative, note that you can use **[!UICONTROL View Code]** with no form fields available. In this view you create your naming convention definitions entirely using regular expressions.
-
-Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention may make use of one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
-
-**To configure default naming**
-
-1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
-
-1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup > Application Setup > Batch Set Presets > Default Naming]**.
-1. Select **[!UICONTROL View Form]** or **[!UICONTROL View Code]** to specify how you want to view and enter information about each element.
-
-   You can select the **[!UICONTROL View Code]** check box to view the regular expression value building alongside your form selections. You are able to enter or alter these values to help define the elements of the naming convention, if the form view limits you for any reason. If your values are unable to be parsed in the form view, the form fields become inactive.
-
-   >[!NOTE]
-   >
-   >De-activated form fields perform no validation that your regular expressions are correct. You see results of the regular expression you are building for each element after the Result line. The complete regular expression is visible at the bottom of the page.
-
-1. Expand each element as necessary and enter the naming conventions you want to use.
-1. As necessary, do any of the following:
-
-    * Tap **[!UICONTROL Add]** to add another naming convention for an element.
-    * Tap **[!UICONTROL Remove]** to delete a naming convention for an element.
-
-1. Do one of the following:
-
-    * Tap **[!UICONTROL Save As]** and type a name for the preset.
-    * Tap **[!UICONTROL Save]** if you are editing an existing preset.
-
-**Creating a Batch Set Preset**
-
-Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
-
-You can create, edit, and manage your batch set presets. There are two forms of batch set preset definitions: one for a default naming convention that you might have set up, and one for custom naming conventions that you create on the fly.
-
-You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
-
-**To create a Batch Set Preset**
-
-1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
-
-1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup > Application Setup > Batch Set Presets > Batch Set Preset]**.
-
-   Note that **[!UICONTROL View Form]**, as set in the upper-right corner of the Details page, is the default view.
-
-1. In the Preset List panel, tap **[!UICONTROL Add]** to activate the definition fields in the Details panel on the right hand side of the screen.
-1. In the Details panel, in the Preset Name field, type a name for the preset.
-1. In the Batch Set Type drop-down menu, select a preset type.
-1. Do one of the following:
-
-    * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, tap **[!UICONTROL Default]**.
-
-    * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, click **[!UICONTROL Custom]**.
-
-1. For Sequence order, define the order in which images are displayed after the set is grouped together in Dynamic Media.
-
-   By default, your assets are ordered alphanumerically. However, you can use a comma-separated list of regular expressions to define the order.
-
-1. For Set Naming and Creation Convention, specify the suffix or prefix to the base name you defined in the Asset Naming Convention. Also, define where the set will be created within the Dynamic Media folder structure.
-
-   If you define large numbers of sets, you may prefer to keep these separate from the folders that contain the assets themselves. For example, you can create an Image Sets folder and place generated sets here.
-
-1. In the Details panel, tap **[!UICONTROL Save]**.
-1. Tap **[!UICONTROL Active]** next to the new preset name.
-
-   Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set.
-
-**Creating a Batch Set Preset for the auto-generation of a 2D Spin Set**
-
-You can use the Batch Set Type **[!UICONTROL Multi-Axis Spin Set]** to create a recipe that automates the generation of 2D Spin Sets. The grouping of images uses Row and Column regular expressions so that the image assets are properly aligned in the corresponding location in the multi-dimensional array. There is no minimum or maximum number of rows or columns that you must have in a multi-axis spin set.
-
-As an example, suppose you want to create a multi-axis spin set named `spin-2dspin`. You have a set of spin set images that contain three rows, with 12 images per row. The images are named as follows:
-
-```
-spin-01-01
- spin-01-02
- …
- spin-01-12
- spin-02-01
- …
- spin-03-12
-```
-
-With this information, your Batch Set Type recipe might be created as follows:
-
-![chlimage_1-560](assets/chlimage_1-560.png)
-
-Grouping for the shared asset name part of the spinset is added to the **Match** field (as highlighted). The variable part of the asset name containing the row and column is added to the **Row** and **Column** fields, respectively.
-
-When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **Batch Set Presets** in the **Upload Job Options** dialog box.
-
-**To create a Batch Set Preset for the auto-generation of a 2D Spin Set**
-
-1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
-
-1. On the navigation bar near the top of the page, click **[!UICONTROL Setup > Application Setup] > [!UICONTROL Batch Set Presets] > [!UICONTROL Batch Set Preset]**.
-
-   Note that **[!UICONTROL View Form]**, as set in the upper-right corner of the Details page, is the default view.
-
-1. In the Preset List panel, click **[!UICONTROL Add]** to activate the definition fields in the Details panel on the right hand side of the screen.
-1. In the Details panel, in the Preset Name field, type a name for the preset.
-1. In the Batch Set Type drop-down menu, select **[!UICONTROL Asset Set]**.
-1. In the Sub Type drop-down list, select **[!UICONTROL Multi-Axis Spin Set]**.
-1. Expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, click **[!UICONTROL Custom]**.
-1. Use the **[!UICONTROL Match]** and, optionally, **[!UICONTROL Base Name]** attributes to define a regular expression for the naming of image assets that make up the grouping.
-
-   For example, your literal Match regular expression might look like the following:
-
-   `(w+)-w+-w+`
-
-1. Expand **[!UICONTROL Row Column Position]**, and then define the name format for the position of the image asset within the 2D Spin Set array.
-
-   Use the parenthesis to embrace the row or column position in the file name.
-
-   For example, for your row regular expression, it might look like the following:
-
-   `\w+-R([0-9]+)-\w+`
-
-   or
-
-   `\w+-(\d+)-\w+`
-
-   For your column regular expression, it might look like the following:
-
-   `\w+-\w+-C([0-9]+)`
-
-   or
-
-   `\w+-\w+-C(\d+)`
-
-   Remember that these are only examples. You can create your regular expression however you want to suit your needs.
-
-   >[!NOTE]
-   >
-   >If the combination of row and column regular expressions is unable to determine the position of the asset within the multi-dimensional spinset array, then that asset is not added to the set and an error is logged.
-
-1. For Set Naming and Creation Convention, specify the suffix or prefix to the base name you defined in the Asset Naming Convention.
-
-   Also, define where the spin set will be created within the Dynamic Media Classic folder structure.
-
-   If you define large numbers of sets, you may prefer to keep these separate from the folders that contain the assets themselves. For example, create a Spin Sets folder to place generated sets here.
-
-1. In the Details panel, click **[!UICONTROL Save]**.
-1. Click **[!UICONTROL Active]** next to the new preset name.
-
-   Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set. -->
 
 ### （可选）调整Dynamic Media的性能{#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
