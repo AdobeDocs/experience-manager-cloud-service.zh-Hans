@@ -2,7 +2,7 @@
 title: 将 Dynamic Media 查看器与 Adobe Analytics 和 Adobe Launch 集成
 description: 用于 Adobe Launch 的 Dynamic Media 查看器扩展以及 Dynamic Media 查看器 5.13 版允许 Dynamic Media 客户、Adobe Analytics 客户和 Adobe Launch 客户在其 Adobe Launch 配置中使用特定于 Dynamic Media 查看器的事件和数据。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
 source-wordcount: '6647'
 ht-degree: 18%
@@ -646,7 +646,7 @@ Adobe启动可能具有多个开发环境、一个分阶段环境和一个生产
 
 ## 为集成配置Adobe Experience Manager{#configuring-adobe-experience-manager-for-the-integration}
 
-<!-- Prerequisites lost below should be verified by Sasha -->
+<!-- Prerequisites list below should be verified by Sasha -->
 
 前提条件:
 
