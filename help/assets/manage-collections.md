@@ -4,10 +4,10 @@ description: 了解Adobe Experience Manager资产中的收集概念。 了解如
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 27%
+source-wordcount: '2393'
+ht-degree: 26%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 27%
 智能收藏集使用搜索条件动态填充资产。 您只能使用文件（而不是文件夹、文件和文件夹）创建智能收藏集。
 
 1. 导航到资产UI，然后点按／单击搜 **[!UICONTROL 索图]** 标。
-1. 在“全方位搜索”框中输入搜索关键字，然后按Enter。 点按／单击GlobalNav图标以显示“过滤器”面板，并从“搜索”面板应用搜索筛选器。
+1. 在Omni Search框中输入搜索关键字，然后选择`Enter`。 点按／单击GlobalNav图标以显示“过滤器”面板，并从“搜索”面板应用搜索筛选器。
 1. 从&#x200B;**[!UICONTROL 文件和文件夹]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 文件]**。
 1. 点按／单击&#x200B;**[!UICONTROL 保存智能收藏集]**。
 1. 指定集合的名称。 选择&#x200B;**[!UICONTROL Public]**&#x200B;以将具有查看器角色的DAM用户组添加到智能收藏集。
@@ -103,7 +103,7 @@ ht-degree: 27%
 智能集合是通过保存搜索来构建的，因此您可以通过修改保存的搜索[的搜索参数来更改其内容。](#saved-searches)
 
 1. 在资产用户界面中，点按／单击工具栏中的&#x200B;**[!UICONTROL 搜索]**&#x200B;图标。
-1. 将光标置于Omnisearch框中，按Enter键。
+1. 将光标置于Omnisearch框中，选择`Enter`键。
 1. 点按／单击GlobalNav图标以显示“过滤器”面板。
 1. 从&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表中，选择要修改的智能收藏集。“搜索”面板显示为保存的搜索配置的过滤器。
 1. 从&#x200B;**[!UICONTROL 文件和文件夹]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 文件]**。
@@ -238,7 +238,7 @@ AdobeEnterprise Manager资产允许您批量编辑许多集合的元数据。 �
 
 1. 在资产用户界面中，点按／单击工具栏中的搜索图标。
 
-1. 将光标置于Omnisearch字段中，按Enter键。
+1. 将光标置于Omnisearch字段中，选择`Enter`键。
 1. 单击或点按GlobalNav图标以显示“过滤器”面板。
 1. 从保存 **[!UICONTROL 的搜索列表]** ，点按／单 **** 击要删除的智能收藏集旁边的删除。
 1. 在对话框中，点按／单击&#x200B;**[!UICONTROL 删除]**&#x200B;以删除保存的搜索。
@@ -249,7 +249,7 @@ AdobeEnterprise Manager资产允许您批量编辑许多集合的元数据。 �
 
 1. 从收藏集控制台中，选择要在其上运行工作流的收藏集。
 1. 点按／单击GlobalNav图标，然后从列表中选择&#x200B;**[!UICONTROL 时间轴]**。
-1. 在时间轴中，单击或点按底部的尖角图标，然后点按／单击开始工 **[!UICONTROL 作流]**。
+1. 在时间轴中，选择或点按底部的尖角图标，然后点按／单击&#x200B;**[!UICONTROL 开始工作流]**。
 1. 在&#x200B;**[!UICONTROL 启动工作流]**&#x200B;部分，从列表中选择工作流模型。例如，选择 **[!UICONTROL DAM 更新资产]**&#x200B;模型。
 1. 输入工作流的标题，然后点按／单击&#x200B;**[!UICONTROL 开始]**。
 1. 在对话框中，点按／单击&#x200B;**[!UICONTROL 继续]**。 该工作流将运行在集合中的所有资产上。
