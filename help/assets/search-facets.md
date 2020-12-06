@@ -2,7 +2,7 @@
 title: 搜索 Facet.
 description: 本文介绍如何在AEM中创建、修改和使用搜索彩块化。
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 34%
@@ -33,9 +33,9 @@ Adobe Experience Manager(AEM)资产在整个企业范围内的部署能够存储
 
 1. 在“编辑搜索”Forms页中，将谓词从&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡拖到主窗格。 例如，拖动&#x200B;**[!UICONTROL 属性谓词]**。
 
-   ![按并移动谓词以自定义搜索过滤器](assets/drag_predicate.png)
+   ![选择并移动谓词以自定义搜索过滤器](assets/drag_predicate.png)
 
-   *图：按并移动谓词以自定义搜索过滤器。*
+   *图：选择并移动谓词以自定义搜索过滤器。*
 
 1. 在设置选项卡中，输入谓词的字段标签、占位符文本和说明。 为要与谓词关联的元数据属性指定有效名称。 设置选项卡中的标题标签标识所选谓词的类型。
 
