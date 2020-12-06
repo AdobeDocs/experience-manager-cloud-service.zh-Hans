@@ -3,9 +3,9 @@ title: Digital Rights Management在 [!DNL Assets]
 description: 了解如何以 [!DNL Experience Manager] as [!DNL Cloud Service]的形式管理授权资产的到期状态和信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1343'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 1. 在[!DNL Assets]控制台中，单击工具栏中的&#x200B;**[!UICONTROL 搜索]**&#x200B;以显示“搜索”框。
 
-1. 将光标置于“全搜索”框中，按Enter键显示搜索结果页面。
+1. 将光标置于“搜索”框中，选择`Enter`键以显示搜索结果页。
 
 1. 单击GlobalNav图标以显示“搜索”面板。
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 
 1. 要根据资产的状态搜索资产，请单击&#x200B;**[!UICONTROL 搜索]**&#x200B;以显示“全局搜索”栏。
 
-1. 按返回并单击[!DNL Experience Manager]以显示搜索面板。
+1. 选择`Return`并单击[!DNL Experience Manager]以显示搜索面板。
 1. 在搜索面板中，单击&#x200B;**[!UICONTROL 发布状态]**&#x200B;并选择&#x200B;**[!UICONTROL 已发布]**&#x200B;以在[!DNL Assets]中搜索已发布的资产。
 
 1. 单击&#x200B;**[!UICONTROL 批准状态]**&#x200B;并单击相应选项以搜索已批准或已拒绝的资产。
