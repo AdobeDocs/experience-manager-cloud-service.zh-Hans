@@ -2,10 +2,10 @@
 title: 基本操作
 description: 轻松自如地导航 AEM 及其基本用法
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 * [搜索](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![“搜索”按钮](/help/sites-cloud/authoring/assets/search-button.png)
+   ![搜索图标](/help/sites-cloud/authoring/assets/search-icon.png)
 
    您还可以使用[快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`（正斜杠）从任何控制台中调用搜索。
 
