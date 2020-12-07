@@ -2,9 +2,9 @@
 title: 简介——管理SSL证书
 description: 简介——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 74cc587874c4d0a0ef9b542549801198d4f2d7a5
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cloud Manager为客户提供通过Cloud Manager UI安装SSL证书的自助服务
 
 Cloud Manager支持以下客户SSL证书要求：
 
-* SSL证书可以由多个环境使用——添加一次并使用多次。
+* SSL证书可以由多个环境使用，即添加一次并使用多次。
 * 每个Cloud Manager环境都可使用多个证书。
 * 私钥可以发出多个SSL证书。
 * 每个证书通常包含多个域。
@@ -30,6 +30,8 @@ Cloud Manager支持以下客户SSL证书要求：
 
 使用“云管理器UI SSL证书”页，具有权限的用户可以执行多个任务来管理项目的SSL证书：
 
-* 添加SSL证书。
-* 查看、更新或替换SSL证书。 这些操作允许您视图详细信息或替换即将过期的证书。
-* 删除SSL证书。
+* 添加SSL证书
+* 查看、更新或替换SSL证书
+   >[!NOTE]
+   >这些操作允许您视图详细信息或替换即将过期的证书。
+* 删除SSL证书
