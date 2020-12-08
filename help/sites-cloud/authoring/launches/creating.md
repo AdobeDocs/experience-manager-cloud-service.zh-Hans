@@ -2,10 +2,10 @@
 title: 创建启动项
 description: 您可以创建启动项，以允许更新现有网页的新版本，以便将来激活。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 85%
+source-wordcount: '998'
+ht-degree: 83%
 
 ---
 
@@ -120,13 +120,15 @@ ht-degree: 85%
 从&#x200B;**启动项**&#x200B;控制台创建嵌套启动项与创建任何其他形式的启动项基本相同，但您需要导航到启动项分支`/content/launches`:
 
 1. 在&#x200B;**启动项**&#x200B;控制台中，选择&#x200B;**创建**。
-1. 选择 **添加页面**，然后通过在筛选器中指定来导航到启动 `/content/launches` 项分支。 选择所需的启动项，并通过选择进 **行确认**:
+1. 选择&#x200B;**添加页面**，然后通过在&#x200B;**过滤器**&#x200B;边栏中指定`/content/launches`导航到启动项分支。 选择所需的启动项，并通过选择进 **行确认**:
 
    ![创建嵌套启动项](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. 单击&#x200B;**下一步**&#x200B;以继续，然后与创建其他任何启动项一样完成&#x200B;**属性**。
+1. 单击&#x200B;**下一步**&#x200B;以继续。
 
-   ![为嵌套启动项选择源](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. 像任何其他启动项一样，完成&#x200B;**属性**。
+
+1. 完成&#x200B;**创建**。
 
 #### 创建嵌套启动项 -“站点”控制台 {#creating-a-nested-launch-sites-console}
 
