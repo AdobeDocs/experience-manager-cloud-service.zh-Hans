@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ AEM作为Cloud Service不支持从发布到作者的反向复制。 如果需要
 
 云环境上的线程转储会持续收集，但此时无法以自助方式下载。 同时，如果调试问题时需要线程转储，请与AEM支持联系，指定确切的时间窗口。
 
-## CRX/DE Lite和系统控制台{#crxde-lite-and-system-console}
+## CRX/DE Lite和开发人员控制台{#crxde-lite-and-developer-console}
 
 ### 本地开发{#local-development}
 
@@ -132,7 +132,7 @@ AEM作为Cloud Service不支持从发布到作者的反向复制。 如果需要
 
 ### AEM作为Cloud Service开发工具{#aem-as-a-cloud-service-development-tools}
 
-客户可以在开发环境访问CRXDE lite，但不能在舞台或生产上访问。 不可变的存储库(`/libs`, `/apps`)在运行时无法写入，因此尝试写入将导致错误。
+客户可以在创作层的开发环境访问CRXDE lite，但不能在舞台或生产上访问。 不可变的存储库(`/libs`, `/apps`)在运行时无法写入，因此尝试写入将导致错误。
 
 开发人员控制台中提供一组工具，用于将AEM作为Cloud Service开发人员环境进行调试，面向开发人员、舞台和生产环境。 可以通过按如下方式调整作者或发布服务URL来确定URL:
 
