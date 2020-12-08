@@ -2,9 +2,9 @@
 title: 管理启动项中的页面
 description: '您可以在启动项中创建新页面。 您还可以删除不需要的页面。 '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 1%
 * 选择现有页面并采取操作；例如，**编辑**，打开&#x200B;**属性**,**锁定**,**复制**,**粘贴**&#x200B;和&#x200B;**删除**
 
    ![在站点控制台中从管理内容导航启动项](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* 使用&#x200B;**引用**&#x200B;边栏可返回到&#x200B;**启动源**页面：
+   ![站点控制台——启动源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## 将页面添加到启动项{#add-pages-to-launch}
 
