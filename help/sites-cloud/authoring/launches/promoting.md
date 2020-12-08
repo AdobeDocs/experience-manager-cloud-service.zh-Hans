@@ -2,10 +2,10 @@
 title: 提升启动项
 description: '您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。 '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 81%
+source-wordcount: '799'
+ht-degree: 78%
 
 ---
 
@@ -47,11 +47,14 @@ ht-degree: 81%
 您可以从&#x200B;**站点**&#x200B;控制台或&#x200B;**启动项**&#x200B;控制台提升启动项：
 
 1. 打开：
-   * **站点**&#x200B;控制台：
+   * 导航源页面时，**站点**&#x200B;控制台：
       1. 打开[引用边栏](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)，然后使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)选择所需的源页面（或选择并打开引用边栏，顺序不重要）。 此时将显示所有引用。
       1. 选择&#x200B;**启动项**（例如“启动项 (1)”）以显示特定启动项的列表。
       1. 选择特定的启动项以显示可用的操作。
       1. 选择&#x200B;**提升启动项**&#x200B;以打开向导。
+   * 导航启动页面时，**站点**&#x200B;控制台：
+      1. 使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)选择所需的启动页面。
+      1. 工具栏中将显示&#x200B;**提升**&#x200B;操作。
    * **启动项**&#x200B;控制台：
       1. 选择您的启动项（点按/单击缩略图）。
       1. 选择&#x200B;**提升**。
