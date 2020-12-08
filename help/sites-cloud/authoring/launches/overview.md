@@ -2,10 +2,10 @@
 title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 89%
+source-wordcount: '878'
+ht-degree: 82%
 
 ---
 
@@ -84,22 +84,31 @@ ht-degree: 89%
 >
 >如果您遇到任何问题，请联系您的系统管理员。
 
-### “启动项”控制台{#the-launches-console}
-
-“启动项”控制台提供了启动项的概览，并允许您对列出的启动项执行操作。该控制台可以通过以下方式访问：
-
-* **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
-
-* 或直接使用`https://<host>:<port>/libs/launches/content/launches.html`
-
 ## 引用（站点控制台）中的启动项{#launches-in-references-sites-console}
 
 1. 在&#x200B;**站点**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
-1. 选择&#x200B;**启动项**，此时将列出现有的启动项：
+1. 选择&#x200B;**启动项**，将列出现有启动项，并访问&#x200B;**启动项控制台**:
 
    ![站点控制台中启动项的引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 点按/单击相应的启动项，此时将显示可执行的操作列表：
 
    ![在站点控制台中对启动项执行的操作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## “启动项”控制台{#the-launches-console}
+
+“启动项”控制台提供了启动项的概览，并允许您对列出的启动项执行操作。该控制台可以通过以下方式访问：
+
+* **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
+
+* **启** 动当在站点控制台中 **** 导航源内容 **** 时，控制台位于引用边栏的“启动项”部分的底部。
+
+   ![“站点”控制台中启动项的引用中的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* 在站点控制台中导航启动内容时，右上方的&#x200B;**启动项**&#x200B;按钮：
+
+   ![站点控制台中的启动项选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* 或者直接；例如：
+   `https://<host>:<port>/libs/launches/content/launches.html`
