@@ -1,16 +1,16 @@
 ---
 title: 使用选择器
-description: 为交互式图像、交互式视频和旋转横幅选择资源
+description: 了解在Dynamic Media为交互式图像、交互式视频和传送横幅选择资源时可使用的方法。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '748'
 ht-degree: 18%
 
 ---
 
 
-# 在Dynamic Media{#working-with-selectors}中使用选择器
+# 使用Dynamic Media的选择器{#working-with-selectors}
 
 使用交互式图像、交互式视频或旋转横幅时，您可以选择资产，然后为热点和图像映射选择站点和产品以链接到。 处理图像集、旋转集和多媒体集时，您还可以使用资产选择器选择资产。
 
@@ -24,7 +24,7 @@ ht-degree: 18%
 
 当您选择热点或图像映射转到的位置（而不是手动输入）时，您将使用选择器。 站点选择器仅在您是AEM Sites客户时有效。 产品选择器还需要AEM Commerce。
 
-## 在Dynamic Media中选择产品{#selecting-products}
+## 在Dynamic Media选择产品{#selecting-products}
 
 当您希望热点或图像映射向产品目录中的特定产品提供概览时，请使用产品选择器选择产品。
 
@@ -62,7 +62,7 @@ ht-degree: 18%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 在Dynamic Media中选择站点{#selecting-sites}
+## 在Dynamic Media选择站点{#selecting-sites}
 
 当您希望热点或图像映射链接到AEM站点内管理的网页时，请使用站点选择器选择网页。
 
@@ -82,7 +82,7 @@ ht-degree: 18%
 
 1. 当处于&#x200B;**[!UICONTROL 预览]**&#x200B;模式时，如果点按热点或图像映射，则导航到您指定的AEM站点页面。
 
-## 在Dynamic Media中选择资产{#selecting-assets}
+## 在Dynamic Media选择资产{#selecting-assets}
 
 使用此选择器选择用于传送横幅、交互式视频、图像集、混合媒体集和旋转集的图像。 在交互式视频中，当您点按&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中的&#x200B;**[!UICONTROL 选择资产]**&#x200B;时，资产选择器可用。 在传送集中，创建新幻灯片时，资产选择器可用。 在图像集、混合媒体集和旋转集中，当您分别创建新的图像集、混合媒体集或旋转集时，资产选择器可用。
 
