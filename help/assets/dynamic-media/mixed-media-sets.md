@@ -1,8 +1,8 @@
 ---
 title: 混合媒体集
-description: 了解如何在Dynamic Media中使用混合媒体集
+description: 了解如何在Dynamic Media使用混合媒体集。
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 43%
@@ -64,7 +64,7 @@ ht-degree: 43%
 
 >[!NOTE]
 >
->如果创建集时遇到问题，请参阅[ Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)疑难解答。
+>如果创建集时遇到问题，请参阅[疑难解答Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)。
 
 ## 上传资产 {#uploading-assets}
 
