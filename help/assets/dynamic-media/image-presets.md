@@ -1,8 +1,8 @@
 ---
 title: 应用 Dynamic Media 图像预设
-description: 了解如何在Dynamic Media中应用图像预设
+description: 了解如何在Dynamic Media应用图像预设。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 44%
@@ -47,5 +47,5 @@ ht-degree: 44%
    >
    >如果资产&#x200B;*和*&#x200B;图像预设尚未发布，则 **[!UICONTROL URL]** 按钮（或 **[!UICONTROL URL]** 和 **[!UICONTROL RESS]** 按钮，如果适用）将不可用。
    >
-   >另请注意，图像预设会自动发布到Dynamic Media S7服务器上。
+   >另请注意，图像预设会自动发布到Dynamic MediaS7服务器上。
 
