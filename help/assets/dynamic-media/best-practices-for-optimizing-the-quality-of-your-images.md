@@ -1,11 +1,11 @@
 ---
 title: 优化图像质量的最佳实践
-description: 了解在Dynamic Media中优化图像质量的最佳实践
+description: 了解可在Dynamic Media用来优化图像资产质量的最佳实践。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 54%
+source-wordcount: '1497'
+ht-degree: 53%
 
 ---
 
