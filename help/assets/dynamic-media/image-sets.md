@@ -1,8 +1,8 @@
 ---
 title: 图像集
-description: 了解如何在Dynamic Media中使用图像集
+description: 了解如何在Dynamic Media使用图像集。
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '2070'
 ht-degree: 49%
@@ -79,11 +79,11 @@ ht-degree: 49%
 
 要编辑图像集，请参阅[编辑图像集。](#editing-image-sets) 此外，您还可以视图和编 [辑图像集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-如果创建集时遇到问题，请参阅[ Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)疑难解答中的图像和集。
+如果创建集时遇到问题，请参阅[疑难排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的图像和集。
 
 ## 上传图像集{#uploading-assets-in-image-sets}的资产
 
-开始，方法是为图像集上传图像资产。 由于用户可以在图像集查看器中缩放图像，因此在选择图像时，请考虑缩放因素。确保图像的最大尺寸至少有2000像素，以实现最佳缩放细节。 Dynamic Media可以渲染每幅高达2500万像素的图像。 例如，您可以使用5000 x 5000万像素的图像或任何其他大小的组合，最高可达2500万像素。
+开始，方法是为图像集上传图像资产。 由于用户可以在图像集查看器中缩放图像，因此在选择图像时，请考虑缩放因素。确保图像的最大尺寸至少有2000像素，以实现最佳缩放细节。 Dynamic Media每幅图像渲染速度高达2500万像素。 例如，您可以使用5000 x 5000万像素的图像或任何其他大小的组合，最高可达2500万像素。
 
 图像集支持很多种图像文件格式，但建议使用无损的 TIFF、PNG 和 EPS 图像。
 
