@@ -1,8 +1,8 @@
 ---
 title: 传送横幅
-description: 了解如何在Dynamic Media中使用传送横幅
+description: 了解如何在Dynamic Media使用传送横幅。
 translation-type: tm+mt
-source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 21%
@@ -42,7 +42,7 @@ ht-degree: 21%
 
 要快速设置并运行图像集，请执行以下操作：
 
-1. [识别热点和图像映射变量](#identifying-hotspot-and-image-map-variables) (仅适用于使用AEM Assets+ Dynamic Media的客户)
+1. [识别热点和图像映射变量](#identifying-hotspot-and-image-map-variables) (仅适用于使用AEM Assets+Dynamic Media的客户)
 
    开始，识别现有快速视图实施所使用的动态变量，以便在AEM Assets的传送横幅创建过程中输入适当的热点和图像映射数据。
 
@@ -366,7 +366,7 @@ ht-degree: 21%
 
 当您对传送横幅感到满意时，可以发布它。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。请注意，如果您的交互式内容包含相对URL的链接，特别是指向AEM Sites页面的链接，则无法使用基于URL的链接方法。
-请参阅[向页面添加Dynamic Media资产。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 您可以从传送编辑器（首选方法）或&#x200B;**[!UICONTROL 查看器]**&#x200B;预览列表传送横幅。
 
@@ -390,7 +390,7 @@ ht-degree: 21%
 
 ## 发布传送横幅{#publishing-carousel-banners}
 
-您需要发布传送才能使用它。 发布传送集时，将激活URL和嵌入代码。 它还将传送发布到Dynamic Media云，该云与CDN集成，可进行可扩展且高性能的投放。
+您需要发布传送才能使用它。 发布传送集时，将激活URL和嵌入代码。 它还将传送发布到Dynamic Media云，该云与CDN集成以实现可扩展和高性能投放。
 
 >[!NOTE]
 如果您将现有的带热点的交互式图像用于传送横幅，则必须在发布传送横幅后单独发布该交互式图像。
