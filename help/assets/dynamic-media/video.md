@@ -1,8 +1,8 @@
 ---
 title: 视频
-description: 了解如何在Dynamic Media中处理视频
+description: 了解如何在Dynamic Media使用视频。
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '10081'
 ht-degree: 28%
@@ -16,13 +16,13 @@ ht-degree: 28%
 
 ## 快速开始:视频{#quick-start-videos}
 
-以下工作流分步说明旨在帮助您快速设置并运行Dynamic Media中的自适应视频集。每个步骤之后都会交叉引用主题标题，您可以从中找到更多信息。
+以下工作流分步说明旨在帮助您快速设置并运行Dynamic Media的自适应视频集。每个步骤之后都会交叉引用主题标题，您可以从中找到更多信息。
 
 >[!NOTE]
 >
->在Dynamic Media中处理视频之前，请确保AEM管理员已启用并配置Dynamic MediaCloud Services。
+>在Dynamic Media处理视频之前，请确保AEM管理员已启用并配置了Dynamic MediaCloud Services。
 >
->* 请参阅配置Dynamic Media和[Dynamic Media疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md)中的[配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
+>* 请参阅配置Dynamic Media中的[配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)和[Dynamic Media故障排除](/help/assets/dynamic-media/troubleshoot-dm.md)。
 
 >
 
@@ -117,13 +117,13 @@ ht-degree: 28%
 
 
 
-## 在Dynamic Media中处理视频{#working-with-video-in-dynamic-media}
+## 在Dynamic Media使用视频{#working-with-video-in-dynamic-media}
 
-Dynamic Media中的视频是一款端到端解决方案，它可轻松发布高质量自适应视频以跨多个屏幕（包括桌面、iOS、Android、Blackberry和Windows移动设备）进行流化。自适应视频集为同一视频的不同版本编码，这些版本以不同的比特率和格式进行编码，如400 kbps、800 kbps和1000 kbps。桌面计算机或移动设备会检测可用带宽。
+Dynamic Media的视频是一款端到端的解决方案，可轻松发布高质量自适应视频，跨多个屏幕（包括桌面、iOS、Android、Blackberry和Windows移动设备）进行流播放。自适应视频集为同一视频的不同版本编码，这些版本以不同的比特率和格式进行编码，如400 kbps、800 kbps和1000 kbps。桌面计算机或移动设备会检测可用带宽。
 
 例如，在 iOS 移动设备上，设备检测到 3G、4G 或 Wi-Fi 等带宽。设备会随之自动从自适应视频集内的各种视频比特率中选择正确的编码视频。然后，视频会在桌面设备、移动设备或平板电脑上进行流播放。
 
-此外，如果桌面或移动设备上的网络条件发生变化，设备会自动动态地切换视频质量。同时，如果客户在桌面上进入全屏模式，自适应视频集也会做出响应来使用较好的分辨率，从而改善客户的观看体验。使用自适应视频集可为在多个屏幕和设备上播放Dynamic Media视频的客户提供最佳播放方式。
+此外，如果桌面或移动设备上的网络条件发生变化，设备会自动动态地切换视频质量。同时，如果客户在桌面上进入全屏模式，自适应视频集也会做出响应来使用较好的分辨率，从而改善客户的观看体验。使用自适应视频集为在多个屏幕和设备上播放Dynamic Media视频的客户提供最佳播放方式。
 
 视频播放器用来确定在播放期间要播放或要选择的编码视频的逻辑基于以下算法：
 
@@ -146,9 +146,9 @@ Dynamic Media中的视频是一款端到端解决方案，它可轻松发布高�
 * 组织、浏览和搜索具有全面元数据支持的视频，以实现高效的视频资产管理。
 * 将自适应视频集交付到Web、桌面和移动设备，包括iPhone、iPad、Android、Blackberry和Windows手机。
 
-自适应视频流播放在多种 iOS 平台上受支持。请参阅[Dynamic Media查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
+自适应视频流播放在多种 iOS 平台上受支持。请参阅[《Dynamic Media查看器参考指南》](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
 
-Dynamic Media支持MP4 H.264视频的移动视频回放。您可以在以下位置找到支持此视频格式的Blackberry设备：[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支持的视频格式。
+Dynamic Media支持MP4 H.264视频的移动视频播放。您可以在以下位置找到支持此视频格式的Blackberry设备：[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支持的视频格式。
 
 请参阅下面的文档，以了解支持此视频格式的 Windows 设备：[Windows Phone 上支持的视频格式](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)。
 
@@ -162,11 +162,11 @@ Dynamic Media支持MP4 H.264视频的移动视频回放。您可以在以下位�
 
 请参阅[动态视频播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)范例。
 
-另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[AEM Assets和Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)的查看器和[AEM Assets的查看器。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)
+另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[AEM Assets和Dynamic Media经典](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)和[AEM Assets查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ## 最佳实践：使用HTML5视频查看器{#best-practice-using-the-html-video-viewer}
 
-Dynamic Media HTML5视频查看器预设是强大的视频播放器。您可以使用它们避免许多与HTML5视频播放相关的常见问题以及与移动设备相关的问题，如缺少自适应流投放和桌面浏览器访问能力有限。
+Dynamic MediaHTML5视频查看器预设是功能强大的视频播放器。您可以使用它们避免许多与HTML5视频播放相关的常见问题以及与移动设备相关的问题，如缺少自适应流投放和桌面浏览器访问能力有限。
 
 在播放器的设计方面，您可以使用标准的 Web 开发工具设计视频播放器的所有功能。例如，您可以使用 HTML5 和 CSS 设计按钮、控件和自定义标识图像背景，从而帮助您向客户展示自定义的外观。
 
@@ -174,7 +174,7 @@ Dynamic Media HTML5视频查看器预设是强大的视频播放器。您可以�
 
 通过将使用 HTML5 和 CSS 设计播放组件的功能、支持嵌入式播放的功能，以及根据浏览器的容量使用自适应和渐进式流播放的功能整合到单一播放器中，您可以扩大富媒体内容可以传送到的桌面和移动用户的范围，并确保简化视频体验。
 
-另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[仅针对AEM Assets的查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
+另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[仅针对AEM Assets的查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ### 使用HTML5视频查看器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在桌面计算机和移动设备上播放视频
 
@@ -191,7 +191,7 @@ HLS是Apple自适应视频流播放的标准，可根据网络带宽容量自动
 
 渐进式视频通过在用户的桌面系统或移动设备上本地下载和存储视频来交付。
 
-下表介绍了使用[Dynamic Media HTML5视频查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)在桌面计算机和移动设备上播放视频的设备、浏览器和方法。
+下表介绍了使用[Dynamic MediaHTML5视频查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)在桌面计算机和移动设备上播放视频的设备、浏览器和方法。
 
 <table>
  <tbody>
@@ -263,9 +263,9 @@ HLS是Apple自适应视频流播放的标准，可根据网络带宽容量自动
  </tbody>
 </table>
 
-## 动态媒体视频解决方案的架构{#architecture-of-dynamic-media-video-solution}
+## Dynamic Media视频解决方案的架构{#architecture-of-dynamic-media-video-solution}
 
-下图显示了通过DMGateway（在Dynamic Media Hybrid模式下）上传和编码并供公众使用的视频的整体创作工作流程。
+下图显示了通过DMGateway(在Dynamic Media混合模式下)上传和编码并供公众使用的视频的整体创作工作流程。
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -308,7 +308,7 @@ HLS是Apple自适应视频流播放的标准，可根据网络带宽容量自动
 
 在为主源视频文件选择或创建视频编码预设时，请确保该预设的宽高比与主源视频文件的宽高比相同。 宽高比是视频的宽度与高度的比率。
 
-要确定视频文件的长宽比，请获取该文件的元数据并记录该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
+要确定视频文件的长宽比，请获取该文件的元数据并记下该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
 
 宽度/高度 = 宽高比
 
@@ -417,9 +417,9 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 要将视频资产发布到YouTube，您需要在AEM Assets为视频资产添加标签。 将这些标记与YouTube渠道关联。 如果视频资产的标签与YouTube渠道的标签匹配，则视频将发布到YouTube。 只要使用关联标记，发布到YouTube就会与视频的正常发布一起发生。
 
-YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到YouTube，而不是Dynamic Media编码创建的任何视频再现。 虽然不需要使用Dynamic Media处理视频，但在回放时需要查看器预设时，视频会处理。
+YouTube自行编码。 因此，上传到AEM的原始视频文件将发布到YouTube，而不是Dynamic Media编码创建的任何视频再现。 虽然不需要使用Dynamic Media处理视频，但在回放时需要查看器预设时，视频会这样处理。
 
-当您绕过视频处理用户档案并直接发布到YouTube时，这只意味着AEM资产中的视频资产可能无法获得可查看的缩略图。 这也意味着未编码的视频将不能用于任何Dynamic Media资产类型。
+当您绕过视频处理用户档案并直接发布到YouTube时，这只意味着AEM资产中的视频资产可能无法获得可查看的缩略图。 这还意味着未编码的视频不适用于任何Dynamic Media资源类型。
 
 将视频资产发布到YouTube服务器需要完成以下任务，以确保使用YouTube进行安全、安全的服务器到服务器身份验证：
 
@@ -589,7 +589,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 #### 在AEM 6.4和更高版本{#setting-up-youtube-in-aem-and-later}中设置YouTube
 
-1. 请确保以管理员身份登录到Dynamic Media实例。
+1. 请确保以管理员身份登录您的Dynamic Media实例。
 1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 云服务]** > **[!UICONTROL YouTube 发布配置]**。
 1. 点按&#x200B;**[!UICONTROL global]**（请勿选择它）。
 
@@ -636,7 +636,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 #### 在AEM 6.4之前设置YouTube {#setting-up-youtube-in-aem-before}
 
-1. 请确保以管理员身份登录到Dynamic Media实例。
+1. 请确保以管理员身份登录您的Dynamic Media实例。
 
 1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 部署]** > **[!UICONTROL 云服务]**。
 1. 在YouTube的“第三方服务”标题下，点按&#x200B;**[!UICONTROL Configure now]**。
@@ -751,7 +751,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 >
 >请注意，立即发布不会自动发布到 YouTube。设置 Dynamic Media 时，有两种发布选项可供选择：**[!UICONTROL 立即]**&#x200B;或&#x200B;**[!UICONTROL 激活时]**。
 >
->**[!UICONTROL 立即]** 发布意味着上传的资产在与IPS同步后会自动发布到投放系统。虽然Dynamic Media是如此，但YouTube则并非如此。 要发布到YouTube，您必须通过AEM作者进行发布。
+>**[!UICONTROL 立即]** 发布意味着上传的资产在与IPS同步后会自动发布到投放系统。尽管Dynamic Media是如此，但YouTube并非如此。 要发布到YouTube，您必须通过AEM作者进行发布。
 
 >[!NOTE]
 要从YouTube发布内容，AEM使用&#x200B;**[!UICONTROL 发布到YouTube]**&#x200B;工作流，它允许您监视进度并视图任何故障信息。
@@ -788,7 +788,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### 将 YouTube URL 关联到您的 Web 应用程序 {#linking-youtube-urls-to-your-web-application}
 
-您可以在发布视频后获取Dynamic Media生成的YouTube URL字符串。 在复制该 YouTube URL 时，它会进入“剪贴板”，以便您能够视需要将其粘贴到网站或应用程序中的页面。
+您可以在发布视频后获得由Dynamic Media生成的YouTube URL字符串。 在复制该 YouTube URL 时，它会进入“剪贴板”，以便您能够视需要将其粘贴到网站或应用程序中的页面。
 
 >[!NOTE]
 只有在将视频资产发布到 YouTube 后，才可复制其 YouTube URL。
@@ -945,7 +945,7 @@ For YouTube publishing jobs, do the following:
 ## 查看视频报表 {#viewing-video-reports}
 
 >[!NOTE]
-视频报告仅在运行Dynamic Media —— 混合模式时可用。
+视频报表仅在运行Dynamic Media-混合模式时可用。
 
 视频报表显示指定时间段内的多个聚合量度，帮助您监控*已发布*单个和聚合视频是否按预期效果呈现。以下顶级指标数据是整个网站中所有已发布视频的汇总数据：
 
@@ -966,7 +966,7 @@ For YouTube publishing jobs, do the following:
 
 默认情况下，在您首次进入视频报表时，报表会显示从当月的第一个开始到当月的当日结束的视频数据。但是，您可以通过指定您自己的日期范围来覆盖默认日期范围。下次输入视频报表时，将使用您指定的日期范围。
 
-为使视频报表正常工作，在配置Dynamic MediaCloud Services时会自动创建报表包ID。同时，报表包ID将推送到发布服务器，以便在预览资产时可用于复制URL功能。但是，这要求已设置发布服务器。如果未设置发布服务器，您仍可以进行发布以查看视频报告，但是，您需要返回Dynamic Media云配置并点按&#x200B;**[!UICONTROL 确定]**。
+为使视频报表正常工作，在配置Dynamic MediaCloud Services时会自动创建报表包ID。同时，报表包ID将推送到发布服务器，以便在预览资产时可用于复制URL功能。但是，这要求已设置发布服务器。如果未设置发布服务器，您仍可以进行发布以查看视频报告，但您需要返回Dynamic Media云配置并点按&#x200B;**[!UICONTROL 确定]**。
 
 要查看视频报表，请执行以下操作：
 
@@ -983,13 +983,13 @@ For YouTube publishing jobs, do the following:
 
 1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
 
-### 根据您使用Dynamic Media HTML5查看器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}创建的视频查看器查看视频报告
+### 根据您使用Dynamic MediaHTML5查看器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}创建的视频查看器查看视频报告
 
-如果您使用的是Dynamic Media提供的现成视频查看器，或者您基于现成视频查看器创建了自定义查看器预设，则无需执行任何其他步骤即可视图视频报告。 但是，如果您基于Dynamic Media HTML5查看器SDK创建了自己的视频查看器，请使用以下步骤确保视频查看器将跟踪事件发送到Dynamic Media视频报表。
+如果您使用的是Dynamic Media提供的现成视频查看器，或者您基于现成视频查看器创建了自定义查看器预设，则无需执行任何其他步骤即可视图视频报告。 但是，如果您基于Dynamic MediaHTML5查看器SDK创建了自己的视频查看器，请使用以下步骤确保视频查看器将跟踪事件发送到Dynamic Media视频报表。
 
-使用Dynamic Media查看器参考和Dynamic Media HTML5查看器SDK创建您自己的视频查看器。
+使用《Dynamic Media查看器参考》和《Dynamic MediaHTML5查看器SDK》创建您自己的视频查看器。
 
-请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en)。
+请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en)。
 
 <!-- 
 
@@ -1001,7 +1001,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 -->
 
-**要视图基于您使用Dynamic Media HTML5查看器SDK创建的视频查看器的视频报表，请执行以下操作：**
+**要视图基于您使用Dynamic MediaHTML5查看器SDK创建的视频查看器的视频报表，请执行以下操作：**
 
 1. 导航到任意已发布的视频资产。
 1. 在资产页面的左上角附近，从下拉列表中选择&#x200B;**[!UICONTROL 查看器]**。
@@ -1059,7 +1059,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 >[!NOTE]
 您使用的视频播放器必须支持字幕的显示。
 
-Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）格式。 此转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
+Dynamic Media有能力将字幕文件转换为JSON（JavaScript对象表示法）格式。 此转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
 
 有关在URL中使用JSON函数的详细信息，请参阅[服务静态（非图像）内容](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
@@ -1071,7 +1071,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
    请参阅[WebVTT:Web视频文本跟踪格式](https://dev.w3.org/html5/webvtt/)。
 
-   您可以使用免费和高级工具及服务在Dynamic Media外创作字幕／子标题文件。 例如，要创建不带样式的简单视频题注文件，您可以使用以下免费的在线题注创作和编辑工具：
+   您可以使用免费和高级工具及服务在Dynamic Media以外创作字幕／子标题文件。 例如，要创建不带样式的简单视频题注文件，您可以使用以下免费的在线题注创作和编辑工具：
 
    [WebVTT字幕制作器](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
