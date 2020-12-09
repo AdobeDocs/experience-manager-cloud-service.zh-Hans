@@ -1,8 +1,8 @@
 ---
 title: 交互式视频
-description: 了解如何在Dynamic Media中处理交互式视频和购物视频
+description: 了解如何在Dynamic Media使用交互式视频和购物视频。
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '6016'
 ht-degree: 26%
@@ -27,7 +27,7 @@ ht-degree: 26%
 
 * 单击缩略图以暂停视频并打开产品的概览。 例如，单击视频中的KitchenAid缩览图图像，体验混色器的360度旋转视图，或放大以查看混色器详细信息。
 
-另请参阅[将交互式视频与Dynamic Media结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+另请参阅[将交互式视频与Dynamic Media一起使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
 
 <!-- 
 
@@ -220,7 +220,7 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
 
 在创作环境中单击缩略图时，将显示“概览”对话框的预览。
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 您可以选择创建自己的自定义交互式视频查看器预设。 您可以确定视频播放器的样式、交互式缩略图以及显示在视频末尾的缩略图网格视图。
 
@@ -474,7 +474,7 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
       在时间轴上，点按要分成两半的区段，然后点按工具栏上的&#x200B;**[!UICONTROL 拆分区段]**。
 
       选择两个或多个段会禁用&#x200B;**[!UICONTROL 拆分段]**&#x200B;功能。
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    将选定的10秒段分为两段，每段5秒。
 
