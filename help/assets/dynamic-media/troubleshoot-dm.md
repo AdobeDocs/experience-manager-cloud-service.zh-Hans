@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media 疑难解答
-description: Dynamic Media 疑难解答.
+description: 使用Dynamic Media时的疑难解答提示。
 translation-type: tm+mt
-source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 2%
+source-wordcount: '998'
+ht-degree: 1%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 以下主题介绍Dynamic Media的疑难解答。
 
-## 新的Dynamic Media配置{#new-dm-config}
+## 新Dynamic Media配置{#new-dm-config}
 
-请参阅[对新Dynamic Media配置进行故障诊断。](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+请参阅[对新的Dynamic Media配置进行故障诊断。](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## 常规（所有资产）{#general-all-assets}
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 | **属性** | **示例** | **描述** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 节点链接到Dynamic Media的常规指示符。 |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 该节点链接到Dynamic Media的一般指示符。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** 或错误文本 | 资产上传到Dynamic Media的状态。 |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必须填充才能生成Dynamic Media远程资产的URL。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **后继** 者 **失败：`<error text>`** | 集（旋转集、图像集等）、图像预设、查看器预设、资产的图像映射更新或已编辑图像的同步状态。 |
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 ### 版本控制 {#version-control}
 
-替换现有Dynamic Media资产（同名和位置）时，您可以选择保留两个资产或替换／创建版本：
+替换现有的Dynamic Media资产（名称和位置相同）时，您可以选择保留两个资产或替换／创建版本：
 
 * 同时保留这两个属性将为已发布的资产URL创建一个具有唯一名称的新资产。 例如，`image.jpg`是原始资产，`image1.jpg`是新上传的资产。
 
@@ -191,7 +191,7 @@ ht-degree: 2%
    <td>查看器预设图稿会从资产详细信息中的预览或复制URL/嵌入代码返回404</td>
    <td><p>在CRXDE Lite中，请执行以下操作：</p>
     <ol>
-     <li>导览至Dynamic Media sync文件夹中的<code>&lt;sync-folder&gt;/_CSS/_OOTB</code>文件夹（例如<code>/content/dam/_CSS/_OOTB</code>）,</li>
+     <li>导览至您的Dynamic Media同步文件夹中的<code>&lt;sync-folder&gt;/_CSS/_OOTB</code>文件夹（例如<code>/content/dam/_CSS/_OOTB</code>）,</li>
      <li>查找有问题的资产的元数据节点（例如<code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>）。</li>
      <li>检查是否存在<code>dam:scene7*</code>属性。 如果资产已成功同步并发布，您会看到<code>dam:scene7FileStatus</code>集设置为<strong>PublishComplete</strong>。</li>
      <li>尝试通过连接以下属性和字符串文字的值直接从Dynamic Media请求图稿
