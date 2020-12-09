@@ -2,10 +2,10 @@
 title: 创建启动项
 description: 您可以创建启动项，以允许更新现有网页的新版本，以便将来激活。
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 83%
+source-wordcount: '1045'
+ht-degree: 79%
 
 ---
 
@@ -19,6 +19,18 @@ ht-degree: 83%
 * 默认情况下，Live Copy 会在源页面发生更改时自动更新启动页面。您可以指定创建静态副本以防止自动更改。<!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 （可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**[](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
+
+>[!NOTE]
+>
+>创建启动项时，层次结构中上方的页面不是源页面的副本。 它们是占位符，使用模板创建：
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+无法编辑这些页面。 您将看到以下消息：
+>
+>* **此页面不是启动项的一部分。转到生产页面**
+
 
 ## 创建启动项 {#creating-a-launch}
 
