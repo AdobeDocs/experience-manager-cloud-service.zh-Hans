@@ -2,10 +2,10 @@
 title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 82%
+source-wordcount: '907'
+ht-degree: 80%
 
 ---
 
@@ -20,6 +20,11 @@ ht-degree: 82%
 
 * 对因为执行常规维护任务而对源页面做出的更改。这些更改会自动复制到启动页面中。
 * 为下一季度做准备而在启动页面上直接执行的编辑。
+
+您也可以:
+
+* 在启动项分支中导航内容；根据需要添加或删除页面。
+* 预览发布内容在将来如何查看特定日期／日期。
 
 当下一季度到来时，您需要提升启动页面，以便发布源页面（包含更新的内容）。您可以提升所有页面，也可以仅提升已修改的页面。
 
