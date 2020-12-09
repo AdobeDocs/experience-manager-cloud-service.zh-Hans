@@ -1,10 +1,10 @@
 ---
 title: 预览3D资产
-description: 了解如何预览3D资源
+description: 了解如何在Dynamic Media预览3D资产。
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '569'
 ht-degree: 15%
 
 ---
