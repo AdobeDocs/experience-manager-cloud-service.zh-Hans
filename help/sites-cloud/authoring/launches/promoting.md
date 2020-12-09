@@ -2,10 +2,10 @@
 title: 提升启动项
 description: '您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。 '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 78%
+source-wordcount: '817'
+ht-degree: 74%
 
 ---
 
@@ -64,6 +64,7 @@ ht-degree: 78%
    * **范围**
       * **提升整个启动项**
       * **提升已修改的页面**
+      * **提升已批准的页面** -具体取决于启动项批准工作流
       * **提升当前页面**
       * **提升当前页面和子页面**
 
@@ -75,7 +76,7 @@ ht-degree: 78%
       >
       >此处介绍的是单个启动项的情况，如果您具有嵌套启动项，请参阅[提升嵌套启动项](#promoting-a-nested-launch)。
 1. 选择&#x200B;**下一步**&#x200B;以继续。
-1. 您可以查看要提升的页面，具体页面取决于您选择的页面范围：
+1. 您可以查看要提升的页面；这取决于您选择的页面范围：
 
    ![审查促销](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ ht-degree: 78%
    * **范围** -您可以在此选择是提升整个启动项，还是只提升实际已编辑的页面。如果选择后者，则还可以选择包括/排除子页面。默认配置是仅提升当前页面的页面更改：
       * **提升整个启动项**
       * **提升已修改的页面**
+      * **提升已批准的页面** -具体取决于启动项批准工作流
       * **提升当前页面**
       * **提升当前页面和子页面**
 
