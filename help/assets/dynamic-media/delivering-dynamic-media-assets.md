@@ -1,8 +1,8 @@
 ---
 title: 传送 Dynamic Media 资产
-description: 了解如何交付动态媒体资产
+description: 了解如何交付Dynamic Media资产。
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 22%
@@ -12,7 +12,7 @@ ht-degree: 22%
 
 # 传送 Dynamic Media 资产{#delivering-dynamic-media-assets}
 
-您如何投放动态媒体资产（视频和图像）取决于网站的实施方式。
+您如何提供Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
 
 通过 Dynamic Media，您可以选择以下方式：
 
@@ -36,11 +36,11 @@ ht-degree: 22%
 * [为响应式网站传送优化的图像](/help/assets/dynamic-media/responsive-site.md)
 * [内容的HTTP2投放](/help/assets/dynamic-media/http2faq.md)
 * [通过Dynamic Media使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [通过Dynamic Media Classic使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [通过Dynamic Media经典使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用规则集转换URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## HTTP/2投放Dynamic Media资产{#http-delivery-of-dynamic-media-assets}
+## HTTP/2投放Dynamic Media资源{#http-delivery-of-dynamic-media-assets}
 
-AEM现在支持通过HTTP/2投放所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 随后，将通过HTTP/2协议传送已发布的资产。 此投放方法改进了浏览器和服务器通信的方式，使所有Dynamic Media资源的响应和加载时间都更好。
+AEM现在支持通过HTTP/2投放所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 随后，将通过HTTP/2协议传送已发布的资产。 此投放方法改进了浏览器和服务器通信的方式，使您的所有Dynamic Media资源都能得到更好的响应和加载时间。
 
 请参阅[HTTP/2投放内容常见问题](/help/assets/dynamic-media/http2faq.md)以了解更多信息。
