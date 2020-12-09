@@ -1,8 +1,8 @@
 ---
 title: 交互式图像
-description: 了解如何在Dynamic Media中处理交互式图像
+description: 了解如何在Dynamic Media使用交互式图像。
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4253'
 ht-degree: 23%
@@ -36,7 +36,7 @@ ht-degree: 23%
 
 交互式图像步骤：
 
-1. **（可选）识别热点变量** -如果您使用AEM Assets和Dynamic Media独立版本，可通过识别现有Quickview实施中使用的动态变量来开始，以便您在创建交互式图像时输入热点数据。请参阅[（可选）识别热点变量](#optional-identifying-hotspot-variables)。
+1. **（可选）识别热点变量** -如果您使用AEM Assets和Dynamic Media独立版本，可以通过识别现有Quickview实施中使用的动态变量来开始，以便您在创建交互式图像时输入热点数据。请参阅[（可选）识别热点变量](#optional-identifying-hotspot-variables)。
 但是，如果您使用AEM Sites、AEM eCommerce或二者，则不必执行此步骤。
 
 1. **（可选）创建交互式图像查看器预设** -自定义用于表示热点的图形图像。如果您打算使用现成的名为`Shoppable_Banner`的交互式图像查看器预设，则无需创建自己的交互式图像查看器预设。
@@ -51,7 +51,7 @@ ht-degree: 23%
 
 1. **将交互式图像添加到您的网站或您在AEMI中的网站**
 (如果您使用AEM Sites、AEM eCommerce，或同时使用两者)，则可以通过将交互式媒体组件拖动到页面上，将交互式图像直接添加到AEM的网页。请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-如果您使用AEM Assets和Dynamic Media独立版本，则必须将嵌入代码复制到您的网站上，然后将其与现有Quickview集成。请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
+如果您使用AEM Assets和Dynamic Media独立版本，则必须在您的网站上复制嵌入代码，然后将其与现有Quickview集成。请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
 如果您使用第三方WCM（Web内容管理器），则必须将新的交互式视频与网站上使用的现有Quickview实现相集成。 请参阅[将交互式图像与现有Quickview](#integrating-an-interactive-image-with-an-existing-quickview)集成。
 
 ## （可选）识别热点变量{#optional-identifying-hotspot-variables}
