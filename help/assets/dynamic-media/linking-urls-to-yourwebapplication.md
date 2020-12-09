@@ -1,8 +1,8 @@
 ---
 title: 将 URL 关联到您的 Web 应用程序
-description: 如何在Dynamic Media中将URL关联到您的Web应用程序
+description: 如何将URL链接到您在Dynamic Media的Web应用程序。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 27%
@@ -120,7 +120,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
 1. 在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下，点按所需配置的名称。
 
-1. 在&#x200B;**[!UICONTROL Dynamic Media Cloud设置]**&#x200B;页面的&#x200B;**[!UICONTROL 视频服务URL]**&#x200B;下，向下复制整个URL路径。 您稍后将需要复制的URL路径。
+1. 在&#x200B;**[!UICONTROL Dynamic Media云设置]**&#x200B;页面的&#x200B;**[!UICONTROL 视频服务URL]**&#x200B;下，复制整个URL路径。 您稍后将需要复制的URL路径。
 
    例如，URL路径可能与以下内容类似：
 
@@ -188,7 +188,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
     </tbody>
    </table>
 
-1. 在AEM中复制完整的视频资产路径（由Dynamic Media处理）。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
+1. 复制AEM中由Dynamic Media处理的完整视频资产路径。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
 
    例如：
 
@@ -206,8 +206,8 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## 使用HTTP/2传送Dynamic Media资产{#using-http-to-deliver-your-dynamic-media-assets}
+## 使用HTTP/2传送您的Dynamic Media资源{#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资产的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
+HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资源的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
 
-有关Dynamic Media帐户HTTP/2快速入门的完整详细信息，请参阅[内容的HTTP2投放](http2faq.md)。
+有关使用Dynamic Media帐户HTTP/2入门的完整详细信息，请参阅[内容](http2faq.md)的HTTP2投放。
