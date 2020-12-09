@@ -1,11 +1,11 @@
 ---
 title: 为响应式网站传送优化的图像
-description: 如何使用响应式代码功能传送优化的图像
+description: 了解如何使用响应式代码功能从Dynamic Media投放优化的图像。
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 27%
+source-wordcount: '322'
+ht-degree: 26%
 
 ---
 
@@ -43,8 +43,8 @@ ht-degree: 27%
 1. 在&#x200B;**[!UICONTROL 嵌入响应式图像]**&#x200B;对话框中，选择并复制响应式代码文本，然后将其粘贴到您的网站中以访问响应式资产。
 1. 编辑嵌入代码中的默认断点，使其直接与响应式网站的代码断点相匹配。此外，测试不同页面断点处使用的不同图像分辨率。
 
-## 使用HTTP/2投放Dynamic Media资产{#using-http-to-delivery-your-dynamic-media-assets}
+## 使用HTTP/2投放您的Dynamic Media资源{#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 HTTP/2支持Dynamic Media资产的投放，可提供更好的响应和加载时间。
+HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 投放Dynamic Media资源使用HTTP/2支持，它提供更好的响应和加载时间。
 
-有关Dynamic Media帐户HTTP/2快速入门的完整详细信息，请参阅[内容的HTTP2投放](http2faq.md)。
+有关使用Dynamic Media帐户HTTP/2入门的完整详细信息，请参阅[内容](http2faq.md)的HTTP2投放。
