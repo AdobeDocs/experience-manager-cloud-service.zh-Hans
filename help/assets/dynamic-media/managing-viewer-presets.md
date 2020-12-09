@@ -1,10 +1,10 @@
 ---
 title: 管理查看器预设
-description: 如何创建和管理查看器预设
+description: 如何在Dynamic Media创建和管理查看器预设。
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4261'
 ht-degree: 26%
 
 ---
@@ -51,7 +51,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 不同的网页有不同的需求。 例如，有时您希望网页提供链接，在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要将HTML5查看器直接嵌入到托管页面。 在后一种情况下，网页可能具有静态布局。 或者，它可能是“响应式”的，并在不同设备或不同浏览器窗口大小下以不同方式显示。 为了满足这些需求，Dynamic Media附带的所有预定义现成HTML5查看器都支持静态网页和响应式设计网页。
 
-有关如何将响应式查看器嵌入到网页中的详细信息，请参阅&#x200B;*Dynamic Media图像服务和渲染API帮助*&#x200B;中的[响应式静态图像库](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)。
+有关如何将响应式查看器嵌入到网页上的详细信息，请参阅&#x200B;*Dynamic Media图像服务和渲染API帮助*&#x200B;中的[响应式静态图像库](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)。
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ### 查看器预设系统兼容性{#viewer-preset-system-compatibility}
 
-Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容：
+Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容：
 
 * 台式机
 * Apple iPhone
@@ -158,7 +158,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 >[!NOTE]
 >
->Dynamic Media中的所有现成查看器预设均已激活（开启），但您必须发布它们。
+>Dynamic Media的所有现成查看器预设都已激活（开启），但您必须发布它们。
 >请参阅[发布查看器预设](#publishing-viewer-presets)。
 >
 >您创建和添加的任何新查看器预设都必须同时激活*和*已发布。
@@ -530,7 +530,7 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
 
 ## 发布查看器预设{#publishing-viewer-presets}
 
-激活（或打开“打开”）查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中以及每次视图资产时都可见。
+激活（或打开“打开”）查看器预设的状态意味着查看器预设可在Dynamic Media组件、交互式媒体组件中以及每次视图资产时都可见。
 
 但是，要传送* *包含查看器预设的资产，还必须发布查看器预设。 必须激活*和*已发布所有查看器预设，才能获取资产的URL或嵌入代码。 您必须激活并发布Dynamic media附带的所有现成查看器预设。 您创建和添加的自定义查看器预设将自动激活，但也必须发布。
 
