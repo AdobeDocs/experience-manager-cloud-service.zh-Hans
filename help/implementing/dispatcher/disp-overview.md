@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
+source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4050'
 ht-degree: 9%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 9%
 >[!NOTE]
 >
 >Windows用户需要使用Windows 10 Professional或支持Docker的其他分发版。 这是在本地计算机上运行和调试Dispatcher的先决条件。 以下各节包括使用Mac或Linux版本的SDK的命令，但Windows SDK也可以采用类似的方式使用。
-
+<!--
 >[!WARNING]
 >
->Windows用户：当前版本的AEM作为Cloud Service本地调度程序工具(v2.0.20)与Windows不兼容。 请联系[Adobe支持](https://daycare.day.com/home.html)以接收Windows兼容性的更新。
+>Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## 调度程序工具{#dispatcher-sdk}
 
