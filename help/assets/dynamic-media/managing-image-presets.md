@@ -1,8 +1,8 @@
 ---
 title: 管理图像预设
-description: 了解图像预设并了解如何创建、修改和管理图像预设
+description: 了解图像预设并了解如何创建、修改和管理图像预设。
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '3608'
 ht-degree: 26%
@@ -67,7 +67,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 
 在打开资产时，您可以视图子资产或页面，点按内容菜单，然后选择&#x200B;**[!UICONTROL 子资产]**&#x200B;或&#x200B;**[!UICONTROL 页面]**。 子资产是真实资产。 即，PDF页面由`Create Sub Asset`工作流组件提取。 然后，它们会作为`page1.pdf`、`page2.pdf`等存储在主资产下方。 在存储它们后，`DAM Update Asset`工作流会处理它们。
 
-要使用Dynamic Media预览和生成AI、EPS或PDF文件的动态演绎版，需要执行以下处理步骤：
+要使用Dynamic Media预览AI、EPS或PDF文件并生成动态演绎版，需要执行以下处理步骤：
 
 1. 在`DAM Update Asset`工作流中，`Rasterize PDF/AI Image Preview Rendition`流程组件使用配置的分辨率将原始资产的第一页栅格化为`cqdam.preview.png`再现。
 
@@ -144,7 +144,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 
 DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路径。
 
-Dynamic Media集成使用以下脚本：
+以下脚本由Dynamic Media集成使用：
 
 <table>
  <tbody>
@@ -173,7 +173,7 @@ Dynamic Media集成使用以下脚本：
 
 ### 配置图像缩略图大小{#configuring-image-thumbnail-size}
 
-您可以通过在&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流中配置这些设置来配置缩略图的大小。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图像资产使用一个(**[!UICONTROL Dynamic Media Process Image Assets]**)，静态缩略图生成使用另一个（**[!UICONTROL 处理缩略图]**），或者当所有其他进程无法生成缩略图时，*两个*&#x200B;应具有相同的设置。
+您可以通过在&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流中配置这些设置来配置缩略图的大小。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图像资产使用一个(**[!UICONTROL Dynamic Media处理图像资产]**)，静态缩略图生成使用另一个（**[!UICONTROL 处理缩略图]**），或者当所有其他进程无法生成缩略图时，*两个*&#x200B;应具有相同的设置。
 
 在 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中，缩略图由图像服务器生成，此配置与应用于&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤的配置无关。通过&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤生成缩略图是创建缩览图最耗时、内存占用最多的方法。
 
@@ -193,7 +193,7 @@ Dynamic Media集成使用以下脚本：
 **配置图像缩略图大小**
 
 1. 点按&#x200B;**[!UICONTROL 工具>工作流>模型> DAM更新资产>编辑]**。
-1. 点按&#x200B;**[!UICONTROL Dynamic Media Process Image Assets]**&#x200B;步骤，然后点按&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
+1. 点按&#x200B;**[!UICONTROL Dynamic Media处理图像资产]**&#x200B;步骤，然后点按&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -475,4 +475,4 @@ Dynamic Media集成使用以下脚本：
 ### 删除图像预设 {#deleting-image-presets}
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按或单击工具图标，导航至&#x200B;**[!UICONTROL 资产>图像预设]**。
-1. 选择预设，然后单击&#x200B;**[!UICONTROL 删除]**。 Dynamic Media会确认您是否要删除它。 点按&#x200B;**[!UICONTROL 删除]**&#x200B;以删除，或点按&#x200B;**[!UICONTROL 取消]**&#x200B;以中止操作。
+1. 选择预设，然后单击&#x200B;**[!UICONTROL 删除]**。 Dynamic Media确认您要删除它。 点按&#x200B;**[!UICONTROL 删除]**&#x200B;以删除，或点按&#x200B;**[!UICONTROL 取消]**&#x200B;以中止操作。
