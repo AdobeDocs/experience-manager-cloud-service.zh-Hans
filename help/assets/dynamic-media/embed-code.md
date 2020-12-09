@@ -1,10 +1,10 @@
 ---
-title: 在网页上嵌入Dynamic Media视频查看器或图像查看器
-description: 了解如何将Dynamic Media视频或图像嵌入网页
+title: 将Dynamic Media视频查看器或图像查看器嵌入网页
+description: 了解如何将Dynamic Media视频或图像资源嵌入网页。
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 30%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 30%
 >
 >请参阅[发布图像预设](managing-image-presets.md#publishing-image-presets)。
 
-**在网页上嵌入Dynamic Media视频查看器或图像查看器**
+**将Dynamic Media视频查看器或图像查看器嵌入网页**
 
 1. 导航到要复制其嵌入代码的&#x200B;*已发布*&#x200B;视频或图像资产。
 
@@ -48,8 +48,8 @@ ht-degree: 30%
 1. 在&#x200B;**[!UICONTROL 嵌入代码]**&#x200B;对话框中，将整个代码复制到剪贴板，然后点按&#x200B;**[!UICONTROL 关闭]**。
 1. 将嵌入代码粘贴到网页中。
 
-## 使用HTTP/2传送Dynamic Media资产{#using-http-to-deliver-your-dynamic-media-assets}
+## 使用HTTP/2传送您的Dynamic Media资源{#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资产的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
+HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资源的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
 
-有关Dynamic Media帐户HTTP/2快速入门的完整详细信息，请参阅[内容的HTTP2投放](http2faq.md)。
+有关使用Dynamic Media帐户HTTP/2入门的完整详细信息，请参阅[内容](http2faq.md)的HTTP2投放。
