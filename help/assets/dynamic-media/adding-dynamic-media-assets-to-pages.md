@@ -1,10 +1,10 @@
 ---
 title: 将 Dynamic Media 资产添加到页面
-description: 如何在Experience Manager中将Dynamic Media组件添加到页面
+description: 如何将Dynamic Media组件作为Cloud Service添加到Adobe Experience Manager的页面。
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '3134'
+source-wordcount: '3139'
 ht-degree: 30%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 30%
 
 要将Dynamic Media功能添加到您在网站上使用的资产中，您可以直接在页面上添加 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360 Media全景组件。 为此，可进入布局模式并启用Dynamic Media组件。 然后，您可以将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
 
-如果您使用Experience Manager作为WCM，则可以直接将Dynamic Media资产添加到页面。 如果您为 WCM 使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[嵌入](/help/assets/dynamic-media/embed-code.md)资产。有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用Dynamic Media作为WCM，则可以直接将Experience Manager资源添加到页面。 如果您为 WCM 使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[嵌入](/help/assets/dynamic-media/embed-code.md)资产。有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
@@ -22,14 +22,14 @@ ht-degree: 30%
 
 ## 将Dynamic Media组件添加到页面{#adding-a-dynamic-media-component-to-a-page}
 
-向页面添加3D媒体、动态媒体、交互式媒体、全景媒体、智能裁剪视频或视频360媒体组件与向任何页面添加组件相同。 以下部分介绍了Dynamic Media组件。
+向页面添加3D媒体、Dynamic Media、交互式媒体、全景媒体、智能裁剪视频或视频360媒体组件与向任何页面添加组件相同。 以下各节介绍了Dynamic Media各组成部分。
 
-**将Dynamic Media组件添加到页面**
+**向页面添加Dynamic Media组件**
 
 1. 在Experience Manager中，打开要添加Dynamic Media组件的页面。
 1. 在左窗格中，点按&#x200B;**[!UICONTROL 组件]**&#x200B;图标，然后过滤Dynamic Media。
 
-   如果没有可用的Dynamic Media组件列表，您可能需要启用要使用的Dynamic Media组件。 请参阅[启用Dynamic Media组件](#enabling-dynamic-media-components)。
+   如果没有可用的列表Dynamic Media组件，您可能需要启用要使用的Dynamic Media组件。 请参阅[启用Dynamic Media组件](#enabling-dynamic-media-components)。
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -41,11 +41,11 @@ ht-degree: 30%
 
 1. 根据您放到页面上的Dynamic Media组件，将打开一个配置对话框。 [根据需要设置组](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) 件选项。
 
-   以下示例显示了Dynamic Media **[!UICONTROL Video 360 Media]**&#x200B;组件对话框以及查看器预设下拉列表中提供的选项。
+   以下示例显示了“Dynamic Media视频360媒体&#x200B;**[!UICONTROL ”组件对话框以及“查看器预设”下拉列表中提供的选项。]**
 
    ![视频360媒体组件](assets/6_5_360video_wcmcomponentviewerpreset.png)
 
-   Dynamic Media Video 360媒体组件。
+   Dynamic Media视频360媒体组件。
 
 1. 完成后，在对话框的右上角，点按复选标记以保存更改。
 
@@ -67,16 +67,16 @@ ht-degree: 30%
 
    ![允许的组件](/help/assets/assets-dm/allowed-components.png)
 
-1. 滚动，直到您看到&#x200B;**[!UICONTROL Dynamic Media]**。
+1. 滚动直到您看到&#x200B;**[!UICONTROL Dynamic Media]**。
 1. 点按&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;左侧的>图标以展开列表，选择要启用的Dynamic Media组件。
 
-   ![Dynamic Media组件列表](/help/assets/assets-dm/dm-components-select.png)
+   ![Dynamic Media部件列表](/help/assets/assets-dm/dm-components-select.png)
 
 1. 在&#x200B;**[!UICONTROL 布局容器]**&#x200B;页面的右上角附近，点按完成（复选标记）图标。
 
-1. 在工具栏右侧页面顶部附近的下拉列表中，点按&#x200B;**[!UICONTROL 初始内容]**，然后按[将Dynamic Media组件添加到页面](#adding-a-dynamic-media-component-to-a-page)。
+1. 在工具栏右侧页面顶部附近的下拉列表中，点按&#x200B;**[!UICONTROL 初始内容]**，然后按[将Dynamic Media组件按常规方式添加到页面](#adding-a-dynamic-media-component-to-a-page)。
 
-## 本地化Dynamic Media组件{#localizing-dynamic-media-components}
+## 将Dynamic Media组件定位{#localizing-dynamic-media-components}
 
 您可以通过以下两种方式之一本地化Dynamic Media组件：
 
@@ -92,7 +92,7 @@ ht-degree: 30%
 
 ## 可用的Dynamic Media组件{#dynamic-media-components}
 
-点按&#x200B;**[!UICONTROL 组件]**&#x200B;图标，然后在&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;上进行筛选时，Dynamic Media组件可用。
+当您点按&#x200B;**[!UICONTROL 组件]**&#x200B;图标，然后在&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;上进行筛选时，可使用Dynamic Media组件。
 
 可用的Dynamic Media组件包括：
 
@@ -107,9 +107,9 @@ ht-degree: 30%
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
-### 组件：Dynamic Media {#dynamic-media-component}
+### 组件：Dynamic Media{#dynamic-media-component}
 
-Dynamic Media组件是智能的。根据您添加的是图像还是视频，您有各种选项。 该组件支持图像预设、基于图像的查看器（例如图像集、旋转集、混合媒体集）和视频。此外，查看器是响应式的——屏幕大小会根据屏幕大小自动更改。 所有查看器都是 HTML5 查看器。
+Dynamic Media是聪明的。根据您添加的是图像还是视频，您有各种选项。 该组件支持图像预设、基于图像的查看器（例如图像集、旋转集、混合媒体集）和视频。此外，查看器是响应式的——屏幕大小会根据屏幕大小自动更改。 所有查看器都是 HTML5 查看器。
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 您还可以直接在组件中配置查看器预设、图像预设或图像格式。要使图像成为响应式图像，您可以设置断点，或应用响应式图像预设。
 
-通过点按组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标，然后点按&#x200B;**[!UICONTROL Dynamic Media设置]**，可以编辑以下Dynamic Media设置。
+通过点按组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标，然后&#x200B;**[!UICONTROL Dynamic Media设置]**，可以编辑以下Dynamic Media设置。
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -228,7 +228,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
    单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;可编辑以下高级设置。
 
-* **[!UICONTROL 启用长宽比匹配]**-选择此选项可让Dynamic Media选取宽高比与原始图像的长宽比最匹配的智能裁剪再现。
+* **[!UICONTROL 启用长宽比匹配]**-选择此选项可让Dynamic Media选择宽高比最匹配原始图像长宽比的智能裁剪再现。
 
 * **[!UICONTROL 标题]**-更改智能裁剪图像的标题。
 
@@ -329,18 +329,18 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 如果未显示您要查找的查看器预设，请检查以确保其已发布。 您必须先发布查看器预设，然后才能使用它们。 请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-### 使用HTTP/2投放Dynamic Media资产{#using-http-to-delivery-dynamic-media-assets}
+### 使用HTTP/2投放Dynamic Media资源{#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资产的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
+HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资源的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
 
-有关Dynamic Media帐户HTTP/2快速入门的完整详细信息，请参阅[内容的HTTP2投放](/help/assets/dynamic-media/http2faq.md)。
+有关使用Dynamic Media帐户HTTP/2入门的完整详细信息，请参阅[内容](/help/assets/dynamic-media/http2faq.md)的HTTP2投放。
 
 >[!MORELIKETHIS]
 >
 >* [在Experience ManagerDynamic Media中使用视频播放器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [将交互式视频与Experience ManagerDynamic Media结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [与Experience ManagerDynamic Media一起使用交互式视频](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
 >* [通过Experience ManagerDynamic Media了解资产查看器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [将自定义视频缩略图与Experience ManagerDynamic Media结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [将自定义视频缩略图与Experience ManagerDynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [使用Experience ManagerDynamic Media了解色彩管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [将图像锐化与Experience ManagerDynamic Media结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [使用图像锐化和Experience ManagerDynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
