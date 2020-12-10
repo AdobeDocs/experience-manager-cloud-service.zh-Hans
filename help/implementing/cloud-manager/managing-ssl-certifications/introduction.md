@@ -2,9 +2,9 @@
 title: 简介——管理SSL证书
 description: 简介——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 5ebe94c8562b952521effa3b67267c3eab925d16
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,12 @@ ht-degree: 0%
 
 Cloud Manager为客户提供通过Cloud Manager UI安装SSL证书的自助服务功能。 Cloud Manager使用平台TLS服务管理客户拥有的SSL证书和私钥，通常从第三方认证中心获取，例如，让我们加密。
 
->[!IMPORTANT]
->云管理器不提供SSL证书或私钥。 这些许可证必须从第三方认证机构获得。 请参阅[获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)以了解更多信息。
+## 重要注意事项{#important-considerations}
 
->[!NOTE]
->AEM作为Cloud Service仅支持安全的https站点。 具有多个自定义域的客户不希望在每次添加域时上传证书。 因此，此类客户将从获得一个具有多个域的证书中受益。
+
+* 云管理器不提供SSL证书或私钥。 这些许可证必须从第三方认证机构获得。 请参阅[获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)以了解更多信息。
+
+* AEM作为Cloud Service仅支持安全的`https`站点。 具有多个自定义域的客户不希望在每次添加域时上传证书。 因此，此类客户将从获得一个具有多个域的证书中受益。
 
 Cloud Manager支持以下客户SSL证书要求：
 
@@ -30,8 +31,8 @@ Cloud Manager支持以下客户SSL证书要求：
 
 使用“云管理器UI SSL证书”页，具有权限的用户可以执行多个任务来管理项目的SSL证书：
 
-* 添加SSL证书
-* 查看、更新或替换SSL证书
+* [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [查看、更新或替换SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
    >这些操作允许您视图详细信息或替换即将过期的证书。
-* 删除SSL证书
+* [删除SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
