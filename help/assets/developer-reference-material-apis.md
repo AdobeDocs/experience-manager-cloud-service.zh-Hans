@@ -3,17 +3,65 @@ title: ' [!DNL Assets]的开发人员参考'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 1%
+source-wordcount: '1400'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Assets] API和开发人员参考资料  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API和开发人员参考资料  {#assets-cloud-service-apis}
 
-本文包含作为[!DNL Cloud Service]的[!DNL Assets]开发者的参考材料和资源。 它包括新的上传方法、API参考以及有关在后处理工作流中提供的支持的信息。
+本文包含为[!DNL Assets]的开发者提供的建议、参考材料和资源作为[!DNL Cloud Service]。 它包括新的资产上传模块、API参考以及有关后处理工作流中提供的支持的信息。
+
+## [!DNL Experience Manager Assets] API和操作  {#use-cases-and-apis}
+
+[!DNL Assets] as提供 [!DNL Cloud Service] 了多个API以编程方式与数字资产交互。每个API都支持特定用例，如下表中所述。 [!DNL Assets]用户界面、[!DNL Experience Manager]桌面应用程序和[!DNL Adobe Asset Link]支持所有或部分操作。
+
+>[!CAUTION]
+>
+>某些API继续存在，但不受主动支持（用×表示），且不得使用。
+
+| 支持级别 | 描述 |
+| ------------- | --------------------------- |
+| 选定 | 支持 |
+| × | 不受支持. 不要使用。 |
+| - | 不可用 |
+
+| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(预览)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **原始二进制** |  |  |  |  |  |  |
+| 创建原始 | 选定 | × | - | × | × | - |
+| 阅读原件 | - | × | 选定 | 选定 | 选定 | - |
+| 更新原始 | 选定 | × | 选定 | × | × | - |
+| 删除原始 | - | 选定 | - | 选定 | 选定 | - |
+| 复制原始 | - | 选定 | - | 选定 | 选定 | - |
+| 移动原始 | - | 选定 | - | 选定 | 选定 | - |
+| **元数据** |  |  |  |  |  |  |
+| 创建元数据 | - | 选定 | 选定 | 选定 | 选定 | - |
+| 读取元数据 | - | 选定 | - | 选定 | 选定 | - |
+| 更新元数据 | - | 选定 | 选定 | 选定 | 选定 | - |
+| 删除元数据 | - | 选定 | 选定 | 选定 | 选定 | - |
+| 复制元数据 | - | 选定 | - | 选定 | 选定 | - |
+| 移动元数据 | - | 选定 | - | 选定 | 选定 | - |
+| **内容片段(CF)** |  |  |  |  |  |  |
+| 创建CF | - | 选定 | - | 选定 | - | - |
+| 阅读CF | - | 选定 | - | 选定 | - | 选定 |
+| 更新CF | - | 选定 | - | 选定 | - | - |
+| 删除CF | - | 选定 | - | 选定 | - | - |
+| 复制CF | - | 选定 | - | 选定 | - | - |
+| 移动CF | - | 选定 | - | 选定 | - | - |
+| **版本** |  |  |  |  |  |  |
+| 创建版本 | 选定 | 选定 | - | - | - | - |
+| 阅读版本 | - | 选定 | - | - | - | - |
+| 删除版本 | - | 选定 | - | - | - | - |
+| **文件夹** |  |  |  |  |  |  |
+| 创建文件夹 | 选定 | 选定 | - | 选定 | - | - |
+| 读取文件夹 | - | 选定 | - | 选定 | - | - |
+| 删除文件夹 | 选定 | 选定 | - | 选定 | - | - |
+| 复制文件夹 | 选定 | 选定 | - | 选定 | - | - |
+| 移动文件夹 | 选定 | 选定 | - | 选定 | - | - |
 
 ## 资产上传{#asset-upload-technical}
 
@@ -31,8 +79,7 @@ ht-degree: 1%
 * 二进制云存储可与内容投放网络(CDN)或边缘网络一起使用。 CDN会选择更接近客户端的上传端点。 当数据传输到附近端点的距离较短时，上传性能和用户体验会得到改善，尤其对于地理上分布的团队而言。
 
 >[!NOTE]
->
->请参阅在开源[aem-upload库](https://github.com/adobe/aem-upload)中实现此方法的客户端代码。
+请参阅在开源[aem-upload库](https://github.com/adobe/aem-upload)中实现此方法的客户端代码。
 
 ### 启动上传{#initiate-upload}
 
