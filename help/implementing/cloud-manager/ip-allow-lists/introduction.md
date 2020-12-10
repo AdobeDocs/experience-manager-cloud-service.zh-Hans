@@ -2,9 +2,9 @@
 title: 简介- Could Manager中的IP允许列表
 description: 简介- Could Manager中的IP允许列表
 translation-type: tm+mt
-source-git-commit: ef7d8c340d4c6c47ede89552e6c4bfab49251d79
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM作为云服务，是对internet开放的，安全性是通过用户身份验
 IP允许列表可以添加一次，然后作为一个单位或实体多次应用／取消应用到环境中的作者和／或发布者服务。
 
 >[!NOTE]
->在环境中，用于创作和／或发布的云管理器支持IP允许列表名称。
+>Cloud Manager中的创作和／或发布服务支持IP允许列表名称。
 
 使用云管理器UI IP允许列表页或环境详细信息页，具有权限的用户可以执行多个任务来管理您的环境的IP允许列表，包括：
 
