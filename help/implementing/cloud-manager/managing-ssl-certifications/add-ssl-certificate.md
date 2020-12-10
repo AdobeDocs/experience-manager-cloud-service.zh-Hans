@@ -2,9 +2,9 @@
 title: 添加SSL证书——管理SSL证书
 description: 添加SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: b6911f0b8674550713bd4ec1e34be5d0a14cc427
+source-git-commit: 88ef9265b40f64f2229e37e5f8ca02959e8d9ce2
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!NOTE]
 >AEM作为Cloud Service将仅接受OV（组织验证）或EV（扩展验证）证书。 将不接受DV（域验证）证书。
 
-配置证书需要几天时间，建议提前数月配置证书。 有关详细信息，请参阅获取SSL证书。
+配置证书需要几天时间，建议提前数月配置证书。 有关详细信息，请参阅[获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)。
 
 ## 证书格式{#certificate-format}
 
@@ -45,16 +45,21 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
 请按照以下步骤添加证书：
 
 1. 登录Cloud Manager。
-1. 从“概述”页面导航到环境屏幕。
-1. 从左侧导航菜单导航到“SSL证书”屏幕。 此屏幕上将显示包含任何现有SSL证书详细信息的表。
-1. 选择&#x200B;**添加证书**&#x200B;按钮以启动向导。
-   1. 提供证书的名称。 这可以是帮助您轻松引用证书的任何名称。
-   1. 将证书、私钥和链内容粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
+1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
+1. 单击左侧导航菜单中的&#x200B;**SSL证书**。 此屏幕上将显示包含任何现有SSL证书详细信息的表。
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+1. 选择&#x200B;**添加证书**&#x200B;按钮以打开&#x200B;**添加SSL证书**&#x200B;对话框。
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   1. 在&#x200B;**证书名称**&#x200B;中输入证书的名称。 这可以是帮助您轻松引用证书的任何名称。
+   1. 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
 
       >[!NOTE]
       >这三个字段都不是可选字段，必须包括在内。
-1. 提交证书后，您会在表中看到它显示为新行。
-
+1. 单击&#x200B;**保存**&#x200B;以提交您的证书。 您将在表中看到它显示为新行。
+   >[!NOTE]
+   >将显示检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，进一步了解如何解决常见错误。
 
 ## 证书错误{#certificate-errors}
 
