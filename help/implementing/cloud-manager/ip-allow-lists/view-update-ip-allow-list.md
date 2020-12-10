@@ -2,7 +2,7 @@
 title: 查看和更新- Could Manager中的IP允许列表
 description: 查看和更新- Could Manager中的IP允许列表
 translation-type: tm+mt
-source-git-commit: b353de1a58eb8c31de7289677a589cf192ebc0b9
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,10 +29,10 @@ ht-degree: 0%
 
 请按照以下步骤更新IP允许列表:
 
-1. 从“允许列表”屏幕导航到IP环境页。
+1. 从&#x200B;**允许列表**&#x200B;屏幕导航到&#x200B;**IP环境**&#x200B;页。
 1. 确定您希望允许列表/更新的IP视图规则所在的行。
 1. 选择&#x200B;**...**&#x200B;菜单。
-1. 选择“视图和更新”选项。
+1. 选择&#x200B;**视图和更新**&#x200B;选项。
 1. 更改名称或IP并确认您的提交。
 
 ## 添加、更新或删除IP允许列表{#considerations}时的重要注意事项
@@ -41,4 +41,4 @@ ht-degree: 0%
 * 从IP允许列表删除IP范围将自动从所有相应环境服务中取消应用它。
 * 在先前更新正在进行且尚未完成时，无法对IP允许列表进行更新。
 * 如果先前更新中存在任何错误，则无法对IP允许列表进行更新。 必须通过尝试重试更新来清除任何错误。
-请参阅检查IP允许列表状态以了解更多信息。
+请参阅[检查IP允许列表状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)以了解更多信息。
