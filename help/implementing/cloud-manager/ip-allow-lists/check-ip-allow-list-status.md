@@ -2,9 +2,9 @@
 title: 检查IP允许列表状态
 description: 检查IP允许列表状态
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * **失败**:更新中的一个或多个应用或取消应用进程失败。每个“Apply”（应用）和“Unapply”（取消应用）将与“Complete”（完成）或“Failed”（失败）一起列出。
    * 即使更新中的一个应用／取消应用失败，状态仍将为“失败”。
-   * 在清除所有故障之前，状态将保持“失败”状态。用户必须选择状态旁的重试图标以清除故障。
+   * 在清除所有故障之前，状态将保持“失败”状态。 用户必须选择状态旁边的重试图标以清除失败。
    * 当状态为“失败”时，用户将无法更新或删除IP允许列表。
 
 * **删除**:正在删除请求。这涉及取消应用所有服务。 每个取消应用都会与“未开始／进行中／完成”或“失败”一起列出。
