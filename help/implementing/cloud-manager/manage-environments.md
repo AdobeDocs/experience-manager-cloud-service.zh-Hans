@@ -2,10 +2,10 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
+source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 6%
+source-wordcount: '1254'
+ht-degree: 5%
 
 ---
 
@@ -146,4 +146,45 @@ ht-degree: 6%
 此外，您还可以从&#x200B;**环境**&#x200B;摘要页面本地登录。
 
 ![](assets/environ-login-locally-2.png)
+
+## 管理自定义域名{#manage-cdn}
+
+从“环境摘要”页面导航到环境详细信息页面。
+
+可以对环境的发布服务执行以下操作，如下所述：
+
+1. **添加自定义域名**:请参阅 [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. **查看和更新自定义域名**:请参阅查 [看和更新自定义域名和SSL证书](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. **删除自定义域名**:请参阅 [删除自定义域名和SSL证书](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## 管理IP允许列表{#manage-ip-allow-lists}
+
+从“环境摘要”页面导航到环境详细信息页面。 您可以在此处对您的环境的发布和／或作者服务执行以下操作。
+
+### 应用IP允许列表{#apply-ip-allow-list}
+
+应用IP允许列表是将“允许列表”定义中包含的所有IP范围与环境中的作者或发布服务相关联的过程。 必须登录“业务所有者”或“部署管理者”角色的用户，才能应用IP允许列表。
+
+>[!NOTE]
+>IP允许列表必须存在于云管理器中，才能将其应用于环境服务。 要进一步了解云管理器中的IP允许列表，请导航至Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)中的[IP允许列表简介。
+
+应遵循以下步骤：
+
+1. 从“环境”屏幕导航到特定的“环境详细信息”页，然后导航到IP允许列表表。
+1. 使用IP允许列表表顶部的输入字段选择IP允许列表以及要将其应用到的创作或发布服务。
+1. 然后选择“应用”并确认您的提交。
+
+### 取消应用IP允许列表{#unapply-ip-allow-list}
+
+取消应用IP允许列表是将允许列表定义中包含的所有IP范围与环境中的作者／或发布者服务取消关联的过程。  必须登录“业务所有者”或“部署管理者”角色的用户，才能取消应用IP允许列表。
+
+应遵循以下步骤：
+
+1. 从“环境”屏幕导航到特定的“环境详细信息”页，然后导航到IP允许列表表。
+1. 确定要取消应用的IP允许列表规则所在的行。
+1. 选择&#x200B;**...**&#x200B;菜单。
+1. 选择“取消应用”选项并确认您的提交。
+
 
