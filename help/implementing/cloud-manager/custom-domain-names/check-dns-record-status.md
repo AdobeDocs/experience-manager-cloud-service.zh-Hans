@@ -2,7 +2,7 @@
 title: 正在检查DNS记录状态
 description: 正在检查DNS记录状态
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 您可以通过从域设置页的Cloud Service表中单击DNS记录的状态图标，确定您的域名是否正确解析到AEM作为环境网站。
 
->[!NOTE]
->在首次成功验证和部署自定义域名时，Cloud Manager将自动触发DNS查找。 对于后续尝试，必须主动选择状态旁边的&#x200B;**resolve again**&#x200B;图标。
+在首次成功验证和部署自定义域名时，Cloud Manager将自动触发DNS查找。 对于后续尝试，必须主动选择状态旁边的&#x200B;**resolve again**&#x200B;图标。
 
 Cloud Manager会为您的域名执行DNS查找并显示以下状态消息之一：
 
