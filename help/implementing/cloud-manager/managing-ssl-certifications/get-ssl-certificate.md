@@ -2,9 +2,9 @@
 title: 获取SSL证书——管理SSL证书
 description: 获取SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >AEM作为Cloud Service将仅接受OV（组织验证）或EV（扩展验证）证书。 不接受DV（域验证）或自签名证书。 OV和EV证书为用户提供额外的、经CA验证的信息，他们可以使用这些信息来确定网站所有者、电子邮件发件人或可执行代码或PDF文档的数字签字人是否可信。 DV证书是通用的，并且价格低廉。 但是，它们不允许所有权验证。
+>此外，任何证书必须是来自受信任认证机构(CA)的具有匹配的2048位RSA私钥的X.509 TLS证书。
 
