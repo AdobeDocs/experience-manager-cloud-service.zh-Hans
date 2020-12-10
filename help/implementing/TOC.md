@@ -4,9 +4,9 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: b927992107d7e7e4df5511a366c71449ff73ec93
+source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '579'
 ht-degree: 53%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 53%
          + [图像编辑器](developing/components/image-editor.md)
          + [装饰标签](developing/components/decoration-tag.md)
          + [使用隐藏条件](developing/components/hide-conditions.md)
+         + [组件参考指南](developing/components/reference.md)
       + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
       + [将标记构建到AEM应用程序中](/help/implementing/developing/introduction/tagging-applications.md)
       + 搜索 {#search}
