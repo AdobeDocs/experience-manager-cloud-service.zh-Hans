@@ -2,9 +2,9 @@
 title: 简介——自定义域名
 description: 简介——自定义域名
 translation-type: tm+mt
-source-git-commit: 7704c19e440b1fedc651ce0115eb5e5ecf1eba1c
+source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ Cloud Manager允许您通过UI添加自定义域，以通过自助服务方式�
 
 使用“云管理器UI域设置”页或“环境详细信息”页，具有权限的用户可以执行多个任务来管理您的环境的自定义域名，包括：
 
-* 添加自定义域名。
-* 查看或更新允许用户视图详细信息或替换即将过期的证书的自定义域名。
-* 正在删除自定义域名。
+* [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [查看或更新自定](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) 义域名，它允许用户视图详细信息或替换即将过期的证书
+* [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
