@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 61%
+source-wordcount: '377'
+ht-degree: 59%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 61%
       + [取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [删除IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [检查IP允许列表状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + Cloud Manager的发行说明{#release-notes-cloud-manager}
       + [最新发行说明（2020.12.0 版）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [2020.11.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
