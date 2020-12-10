@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '359'
 ht-degree: 62%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 62%
       + [查看和更新或替换SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [检查SSL证书的状态](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [删除SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + 自定义域名{#custom-domain-names}
+   + 管理自定义域名{#custom-domain-names}
       + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [获取自定义域名](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -61,7 +61,7 @@ ht-degree: 62%
       + [查看和更新自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [更新自定义域名的SSL证书](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + IP允许列表{#ip-allow-lists}
+   + 管理IP允许列表{#ip-allow-lists}
       + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [查看和更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
