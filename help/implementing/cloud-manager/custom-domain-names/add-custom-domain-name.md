@@ -2,9 +2,9 @@
 title: 添加自定义域名
 description: 添加自定义域名
 translation-type: tm+mt
-source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
+source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,8 @@ ht-degree: 0%
 按照提供的说明证明您的环境的域所有权。
 
 1. 单击&#x200B;**创建**。
-1. CDN部署需要有效的SSL证书和成功的TXT验证。 状态&#x200B;**已验证和已部署**&#x200B;表示。
-1. 导航到检查自定义域名状态，进一步了解各种状态以及地址。
+1. CDN部署需要有效的SSL证书和成功的TXT验证。 状态&#x200B;**已验证和已部署**表示。
+导览至[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，进一步了解各种状态以及地址。
 
    >[!NOTE]
    >由于DNS传播延迟，DNS验证可能需要花费数小时才能识别。 云管理器将验证所有权并更新状态，该状态可在域设置表中看到。 有关详细信息，请参阅检查域名状态。
@@ -60,14 +60,31 @@ ht-degree: 0%
 ## 从环境页{#adding-cdn-environments}添加自定义域名
 
 1. 定位至感兴趣环境的“环境详细信息”页。
-1. 使用“域名”表顶部的输入字段提交自定义域名，即SSL证书。 然后选择添加。
-1. 这将启动“添加自定义域名”向导并预填充环境名。
-1. 输入自定义域名。 注意：在域中输入时，不要包括`http://`、`https://`或空格。 选择继续。
-1. 这将带您进入环境的域名验证屏幕。 请参阅[域验证](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以了解更多信息。 按照提供的说明证明您的环境的域所有权。
-1. 选择&#x200B;**继续**。
-1. CDN部署需要有效的SSL证书和成功的TXT验证。 状态&#x200B;**已验证和已部署**&#x200B;表示。
 
-此时，您的自定义域名已准备好进行测试，并且`CNAME`将指向它。 请参阅域名状态，进一步了解各种状态以及如何寻址。
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
+
+1. 使用“域名”(Domain Names)表顶部的输入字段提交自定义域名，并从下拉列表中选择SSL证书。 单击&#x200B;**+添加**。
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+
+1. 检查&#x200B;**添加域名**&#x200B;对话框中的字段，然后单击&#x200B;**继续**。
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+
+   >[!NOTE]
+   >在域中输入时，不要包括`http://`、`https://`或空格。
+
+1. 此时将显示环境屏幕的域名验证。
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
+
+   请参阅[域验证](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以了解更多信息。 按照提供的说明证明您的环境的域所有权。
+
+1. 单击&#x200B;**创建**。
+
+1. 自定义域名部署需要有效的SSL证书和成功的TXT验证。 状态&#x200B;**已验证和已部署**&#x200B;表示。
+
+此时，您的自定义域名已准备好进行测试，并且`CNAME`将指向它。 请参阅[域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，进一步了解各种状态以及如何解决。
 
 >[!NOTE]
 >由于DNS传播延迟，DNS验证可能需要花费数小时才能识别。 云管理器将验证所有权并更新状态，该状态可在域设置表中看到。 请参阅检查域名状态以了解更多信息。
