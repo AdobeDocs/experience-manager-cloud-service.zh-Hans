@@ -2,9 +2,9 @@
 title: 添加SSL证书——管理SSL证书
 description: 添加SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 88ef9265b40f64f2229e37e5f8ca02959e8d9ce2
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,13 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## 添加证书{#adding-certificate}
+## 重要注意事项{#important-considerations}
 
->[!NOTE]
->* 要在云管理器中安装SSL证书，用户必须处于业务所有者或部署管理器角色。
->* 在任何给定时间，云管理器将允许最多10个SSL证书，这些证书可以与您项目内的一个或多个环境关联，即使证书已过期也是如此。 但是，云管理器UI允许在具有此约束的项目中安装最多50个SSL证书。
+* 要在云管理器中安装SSL证书，用户必须处于业务所有者或部署管理器角色。
 
+* 在任何给定时间，云管理器将允许最多10个SSL证书，这些证书可以与您项目内的一个或多个环境关联，即使证书已过期也是如此。 但是，云管理器UI允许在具有此约束的项目中安装最多50个SSL证书。
+
+## 添加证书{#adding-a-cert}
 
 请按照以下步骤添加证书：
 
@@ -51,13 +52,14 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 1. 选择&#x200B;**添加证书**&#x200B;按钮以打开&#x200B;**添加SSL证书**&#x200B;对话框。
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
    1. 在&#x200B;**证书名称**&#x200B;中输入证书的名称。 这可以是帮助您轻松引用证书的任何名称。
-   1. 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
+   1. 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
+这三个字段都不是可选字段，必须包括在内。
 
-      >[!NOTE]
-      >这三个字段都不是可选字段，必须包括在内。
 1. 单击&#x200B;**保存**&#x200B;以提交您的证书。 您将在表中看到它显示为新行。
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
    >[!NOTE]
    >将显示检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，进一步了解如何解决常见错误。
 
