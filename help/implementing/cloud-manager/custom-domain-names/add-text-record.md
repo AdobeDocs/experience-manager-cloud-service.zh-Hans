@@ -2,9 +2,9 @@
 title: 添加TXT记录
 description: 添加自定义域名
 translation-type: tm+mt
-source-git-commit: 8d97bedc8c473c13e3378849741104b2c85492e2
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
