@@ -2,7 +2,7 @@
 title: 添加SSL证书——管理SSL证书
 description: 添加SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
+source-git-commit: 1e7855661220f69038edf35d4c45b7d45b5c6bce
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -53,11 +53,12 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
 
 1. 单击&#x200B;**添加SSL证书**&#x200B;以打开&#x200B;**添加SSL证书**&#x200B;对话框。
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
-
-   1. 在&#x200B;**证书名称**&#x200B;中输入证书的名称。 这可以是帮助您轻松引用证书的任何名称。
-   1. 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
+   * 在&#x200B;**证书名称**&#x200B;中输入证书的名称。 这可以是帮助您轻松引用证书的任何名称。
+   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
 这三个字段都不是可选字段，必须包括在内。
+
+      ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
 
       >[!NOTE]
       >将显示检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，进一步了解如何解决常见错误。
