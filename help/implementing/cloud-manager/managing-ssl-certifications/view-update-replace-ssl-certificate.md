@@ -2,7 +2,7 @@
 title: '查看更新和替换SSL证书——管理SSL '
 description: 查看更新和替换SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 54171b90f99a14fd43c4dc01308264b9a954b927
+source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -19,14 +19,12 @@ ht-degree: 0%
 * 现有证书即将过期。 用户已用证书供应商续订证书，并希望替换即将过期的现有证书。 注意：只有具有相应权限的用户才能进行更新。
 * 使用&#x200B;**视图和更新**&#x200B;菜单，只需视图SSL证书详细信息。
 * 或者，您也可以更改已用于从此屏幕引用证书的名称。
-   >[!NOTE]
-   >只有具有相应权限的用户才能进行更新。
+* 只有具有相应权限的用户才能进行更新。
 
 
 ## 更新即将过期的SSL证书{#update-ssl-certificate}
 
->[!NOTE]
->当证书过期时，任何与过期证书一起使用的域将不再工作。 要更新过期的证书，必须按照下面列出的步骤操作。 这将确保您的域继续按需要工作。 添加新证书将需要使用新证书更新自定义域名，然后域才能根据需要工作。 有关详细信息，请参阅[查看和更新并替换自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+当证书过期时，任何与过期证书一起使用的域将不再工作。 要更新过期的证书，必须按照下面列出的步骤操作。 这将确保您的域继续按需要工作。 添加新证书将需要使用新证书更新自定义域名，然后域才能根据需要工作。 有关详细信息，请参阅[查看和更新并替换自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
 请按照以下步骤更新SSL证书：
 
