@@ -2,7 +2,7 @@
 title: 简介——管理SSL证书
 description: 简介——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 简介 {#introduction}
 
-Cloud Manager为客户提供通过Cloud Manager UI安装SSL证书的自助服务功能。 Cloud Manager使用平台TLS服务管理客户拥有的SSL证书和私钥，通常从第三方认证中心获取，例如，让我们加密。
+Cloud Manager为客户提供通过Cloud Manager UI安装SSL证书的自助服务功能。 云管理器使用平台TLS服务管理客户拥有的SSL证书和私钥，通常从第三方认证中心获取，例如&#x200B;*让我们加密*。
 
 ## 重要注意事项{#important-considerations}
 
