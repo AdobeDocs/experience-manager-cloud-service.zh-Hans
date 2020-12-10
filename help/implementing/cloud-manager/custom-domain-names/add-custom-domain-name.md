@@ -2,9 +2,9 @@
 title: 添加自定义域名
 description: 添加自定义域名
 translation-type: tm+mt
-source-git-commit: 6571c11cedbc0d81fbdfd8072a39b1327bdba10b
+source-git-commit: 9d5f7d633ac8dfaadf315e85666479c87a0afa04
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,13 @@ ht-degree: 0%
 
 用户必须是业务所有者或部署管理者，才能在云管理器中添加自定义域名。
 
->[!NOTE]
->在添加自定义域名之前，必须向项目安装包含自定义域名的有效SSL证书。 请参阅安装SSL证书以了解更多信息。
+## 重要注意事项{#important-considerations}
 
-一次只能添加一个域名。 但是，用户可以添加通配符（例如`*.wknd.com`）作为域名，这允许使用单个TXT记录托管多个子域。
-每个Cloud Manager环境最多可托管每个环境50个自定义域。
-同一域名不能用于多个环境。
+* 在添加自定义域名之前，必须向项目安装包含自定义域名的有效SSL证书。 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以了解更多信息。
+
+* 一次只能添加一个域名。 但是，用户可以添加通配符（例如`*.wknd.com`）作为域名，这允许使用单个TXT记录托管多个子域。
+
+* 每个Cloud Manager环境最多可托管每个环境100个自定义域。 同一域名不能用于多个环境。
 
 ## 从“域设置”页{#adding-cdn-settings}添加自定义域名
 
@@ -38,10 +39,8 @@ ht-degree: 0%
 
 1. 从下拉列表中选择SSL证书，然后选择继续。
 
-1. 这将带您进入环境的域名验证屏幕。 请参阅添加TXT记录以了解更多信息。
-
-   >[!NOTE]
-   >按照提供的说明证明您的环境的域所有权。
+1. 这将带您进入环境的域名验证屏幕。 请参阅[添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以了解更多信息。
+按照提供的说明证明您的环境的域所有权。
 
 1. 选择继续。
 1. CDN部署需要有效的SSL证书和成功的TXT验证。 状态&#x200B;**已验证和已部署**&#x200B;表示。
@@ -56,10 +55,7 @@ ht-degree: 0%
 1. 使用“域名”表顶部的输入字段提交自定义域名，即SSL证书。 然后选择添加。
 1. 这将启动“添加自定义域名”向导并预填充环境名。
 1. 输入自定义域名。 注意：在域中输入时，不要包括`http://`、`https://`或空格。 选择继续。
-1. 这将带您进入环境的域名验证屏幕。 请参阅域验证（添加TXT记录）以了解更多信息。
-
-   >[!NOTE]
-   >按照提供的说明证明您的环境的域所有权。
+1. 这将带您进入环境的域名验证屏幕。 请参阅[域验证](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以了解更多信息。 按照提供的说明证明您的环境的域所有权。
 
 1. 选择继续。
 1. CDN部署需要有效的SSL证书和成功的TXT验证。 状态&#x200B;**已验证和已部署**&#x200B;表示。
