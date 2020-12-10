@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
+source-git-commit: c1485dabe9c31b355a0b06b96c69a11e31ea9962
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 53%
+source-wordcount: '681'
+ht-degree: 45%
 
 ---
 
@@ -28,6 +28,32 @@ ht-degree: 53%
       + [UI测试](/help/implementing/cloud-manager/ui-testing.md)
    + [访问和管理日志](cloud-manager/manage-logs.md)
    + [了解通知](cloud-manager/notifications.md)
+   + 管理SSL证书{#manage-ssl-certificates}
+      + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [查看和更新或替换SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [检查SSL证书的状态](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [删除SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + 自定义域名{#custom-domain-names}
+      + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [获取自定义域名](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [配置DNS设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [正在检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [查看和更新自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [更新自定义域名的SSL证书](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + IP允许列表{#ip-allow-lists}
+      + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [查看和更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [删除IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [检查IP允许列表状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
 + 管理代码 {#managing-code}
    + [Maven 项目版本处理](cloud-manager/project-version-handling.md)
    + [访问 Git](cloud-manager/accessing-git.md)
