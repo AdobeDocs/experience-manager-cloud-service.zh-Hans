@@ -4,9 +4,9 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '693'
 ht-degree: 45%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 45%
       + [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
       + [配置DNS设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [正在检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [查看和更新自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [查看、更新和替换自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [更新自定义域名的SSL证书](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + 管理IP允许列表{#ip-allow-lists}
