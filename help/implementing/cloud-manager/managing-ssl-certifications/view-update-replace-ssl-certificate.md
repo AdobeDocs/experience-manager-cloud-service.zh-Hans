@@ -2,15 +2,15 @@
 title: '查看更新和替换SSL证书——管理SSL '
 description: 查看更新和替换SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
 
-# 查看更新和替换SSL证书{#view-update-replace-ssl-certificate}
+# 查看和更新并替换SSL证书{#view-update-replace-ssl-certificate}
 
 ## 查看和更新SSL证书{#view-update}
 
