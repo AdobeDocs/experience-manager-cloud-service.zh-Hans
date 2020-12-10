@@ -2,9 +2,9 @@
 title: 添加SSL证书——管理SSL证书
 description: 添加SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
 
 请按照以下步骤将SSL文件的格式转换为PEM:
 
-1. 将PFX转换为PEM
+* 将PFX转换为PEM
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. 将P7B转换为PEM
+* 将P7B转换为PEM
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. 将DER转换为PEM
+* 将DER转换为PEM
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## 重要注意事项{#important-considerations}
 
@@ -50,9 +50,11 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
 1. 单击左侧导航菜单中的&#x200B;**SSL证书**。 此屏幕上将显示包含任何现有SSL证书详细信息的表。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. 选择&#x200B;**添加证书**&#x200B;按钮以打开&#x200B;**添加SSL证书**&#x200B;对话框。
+
+1. 单击&#x200B;**添加SSL证书**&#x200B;以打开&#x200B;**添加SSL证书**&#x200B;对话框。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. 在&#x200B;**证书名称**&#x200B;中输入证书的名称。 这可以是帮助您轻松引用证书的任何名称。
    1. 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
 这三个字段都不是可选字段，必须包括在内。
@@ -84,6 +86,4 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
 
 ### 证书有效日期{#certificate-validity-dates}
 
-Cloud Manager预计SSL证书在将来至少90天内有效
-
-检查证书链的有效性。
+Cloud Manager预计SSL证书在将来至少90天内有效。 您应检查证书链的有效性。
