@@ -2,9 +2,9 @@
 title: 添加SSL证书——管理SSL证书
 description: 添加SSL证书——管理SSL证书
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # 添加SSL证书{#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM作为Cloud Service将仅接受OV（组织验证）或EV（扩展验证）证书。 将不接受DV（域验证）证书。
+>AEM作为Cloud Service将仅接受OV（组织验证）或EV（扩展验证）证书。 将不接受DV（域验证）证书。 此外，任何证书必须是来自受信任认证机构(CA)的具有匹配的2048位RSA私钥的X.509 TLS证书。
 
 配置证书需要几天时间，建议提前数月配置证书。 有关详细信息，请参阅[获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)。
 
@@ -59,11 +59,12 @@ SSL文件必须采用PEM格式，才能安装在云管理器上。 PEM格式中�
    1. 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**粘贴到各自的字段中。 使用输入框右侧的粘贴图标。
 这三个字段都不是可选字段，必须包括在内。
 
+      >[!NOTE]
+      >将显示检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，进一步了解如何解决常见错误。
+
 1. 单击&#x200B;**保存**&#x200B;以提交您的证书。 您将在表中看到它显示为新行。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >将显示检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，进一步了解如何解决常见错误。
 
 ## 证书错误{#certificate-errors}
 
