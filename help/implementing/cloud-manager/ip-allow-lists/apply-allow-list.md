@@ -2,9 +2,9 @@
 title: '应用IP允许列表 '
 description: 应用IP允许列表
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 请按照以下步骤应用IP允许列表:
 
-1. 从“环境”屏幕导航到特定的“环境详细信息”页，然后导航到IP允许列表表。
+1. 从&#x200B;**环境**&#x200B;屏幕导航到特定的环境详细信息页面，然后导航到IP允许列表表。
 1. 使用IP允许列表表顶部的输入字段选择IP允许列表以及要将其应用到的创作或发布服务。
-1. 选择“应用”并确认您的提交。
+1. 选择&#x200B;**应用**&#x200B;并确认您的提交。
 
