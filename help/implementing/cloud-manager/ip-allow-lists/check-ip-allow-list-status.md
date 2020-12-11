@@ -2,7 +2,7 @@
 title: 检查IP允许列表状态
 description: 检查IP允许列表状态
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ ht-degree: 0%
 
 * **删除**:正在删除请求。这涉及取消应用所有服务。 每个取消应用都会与“未开始／进行中／完成”或“失败”一起列出。
 完成删除操作后，IP允许列表将：
-   * 不再显示在IP允许列表表中*不再应用于云管理器项目中的任何服务
+   * IP允许列表表中不再显示。
+   * 不再应用于云管理器项目中的任何服务。
 
 * **删除失败**:删除操作中的一个或多个取消应用进程失败。每个取消应用都会与完成或失败一起列出。
 
