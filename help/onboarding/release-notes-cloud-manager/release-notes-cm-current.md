@@ -2,9 +2,9 @@
 title: AEM中Cloud Manager作为Cloud Service版本2020.12.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2020.12.0的发行说明
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '130'
 ht-degree: 6%
 
 ---
