@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1264'
 ht-degree: 5%
 
 ---
@@ -149,15 +149,22 @@ ht-degree: 5%
 
 ## 管理自定义域名{#manage-cdn}
 
-从“环境摘要”页面导航到环境详细信息页面。
+从“环境摘要”页面导航到&#x200B;**环境**&#x200B;详细信息页面。
 
 可以对环境的发布服务执行以下操作，如下所述：
 
-1. **添加自定义域名**:请参阅 [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **添加自定义域**
+名请参阅 [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **查看和更新自定义域名**:请参阅查 [看和更新自定义域名和SSL证书](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **查看和更新自定义域名和证**
+书请参阅
+   * [查看和更新自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [查看和更新SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **删除自定义域名**:请参阅 [删除自定义域名和SSL证书](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **删除自定义域名和证**
+书请参阅
+   * [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [SSL证书](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## 管理IP允许列表{#manage-ip-allow-lists}
 
