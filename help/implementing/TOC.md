@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 45%
+source-wordcount: '701'
+ht-degree: 44%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 45%
       + [取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [删除IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [检查IP允许列表状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 + 管理代码 {#managing-code}
    + [Maven 项目版本处理](cloud-manager/project-version-handling.md)
    + [访问 Git](cloud-manager/accessing-git.md)
