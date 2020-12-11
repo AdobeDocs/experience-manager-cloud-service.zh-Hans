@@ -2,10 +2,10 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
+source-git-commit: 3aff98256eb26176bca52a49286bf2853290b5ef
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 3%
+source-wordcount: '1205'
+ht-degree: 2%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 3%
    * 从页面中出现的网格中选择网格单元格后，焦点将转移到屏幕上显示的操作栏。
    * 可视用户可以区分普通文本和链接，因为在[!DNL Experience Manager]主页中，将显示可视提示（下划线和V形图标），用于链接到所有解决方案。
 
-* **Dynamic Media中的批集预设**:现在，您可以在将资产文件单独或使用批量摄取上传到文件夹时，自动创建和组织图像集或旋转集中的多个资产。
+* **Dynamic Media的批集预设**:现在，您可以在将资产文件单独或使用批量摄取上传到文件夹时，自动创建和组织图像集或旋转集中的多个资产。
 
    请参阅[关于批集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)。
 
@@ -85,21 +85,21 @@ ht-degree: 3%
 
 ### 发布日期 {#release-date-cm}
 
-AEM中Cloud Manager作为Cloud Service2020.11.0的发布日期为2020年11月12日。
+AEM中Cloud Manager作为Cloud Service2020.12.0的发布日期为2020年12月10日。
 
 ### [!DNL Cloud Manager] {#what-is-new-cm}中的新增功能
 
-* 现在，用户可从&#x200B;**环境**&#x200B;卡和&#x200B;**环境**&#x200B;摘要页上的环境菜单选项使用新的菜单选项&#x200B;**本地登录**。
-有关详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md##login-locally)。
+* 对[SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)和[自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)进行自助管理。
 
-* Cloud Manager中的&#x200B;**Learn**&#x200B;选项卡已用UI中的新图像刷新。
+* [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)的自助服务管理。
+
+* 更新的&#x200B;**环境**&#x200B;详细信息页面现在允许用户管理其环境上的自定义域名和IP允许列表。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
-* 需要下载Maven插件，才能加载执行构建之前完成的依赖项。
-* 现在，从Cloud Manager页脚中选择语言的链接将导航到正确的位置。
-* 有时，在代码扫描过程中，SonarQube进程不会开始。 现在将自动检测并尝试重新启动。
-* 所有现有的生产管道都将通过体验审核步骤自动启用。
+* 在代码扫描阶段发生的一些故障没有提供已解决的结果。
+
+* 环境卡显示&#x200B;**添加**&#x200B;按钮时不一致。
 
 ## Adobe Experience Manager as a Cloud Service 基础 {#cloud-service-foundation}
 
@@ -119,30 +119,18 @@ AEM作为Cloud ServiceSDK构建分析器主插件可检测主项目中的问题�
 
 新的[&quot;httpd -t&quot;语法](/help/implementing/dispatcher/disp-overview.md#local-validation)检查在Cloud Manager构建过程中执行的apache和调度程序配置，也可以使用AEM作为Cloud ServiceSDK的调度程序工具运行该配置。
 
-## 内容传输工具 {#content-transfer-tool}
+## 代码重构工具 {#code-refactoring-tools}
 
-可查看本节以了解[内容传输工具](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)版本1.1.12的新增功能和更新。
+### [!DNL Code Refactoring Tools] {#what-is-new-crt}中的新增功能
 
-### 新增功能 {#what-is-new-ctt}
+* 已发布新版AIO-CLI插件。 此插件的最新版本包括AEM Dispatcher Converter和Repository Modernizer的错误修复，还支持新的实用程序——索引转换器。 请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以进一步了解此插件。
 
-* 改进了日志的用户体验。 添加到提取和摄取日志的时间戳。 添加的消息，指示日志是否为空。
+* Index Converter是一个实用程序，可用于将客户的自定义OAK索引定义转换为AEM作为Cloud Service兼容的OAK索引定义。
+有关详细信息，请参阅[索引转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
-### 错误修复 {#ctt-bug-fixes}
+* 添加到[存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)的新功能，该功能创建单独的包`ui.config`以包含所有OSGi配置。
 
-* 如果迁移集包含的路径与文件名部分相似，则内容传输工具将跳过内容文件。 已修复。
+### 错误修复 {#crt-bug-fixes}
 
-## 最佳实践分析器{#best-practices-analyzer}
-
-### 发布日期 {#release-date-bpa}
-
-最佳实践分析器发布日期为2020年11月13日。
-
-### [!DNL Best Practices Analyzer] {#what-is-new-bpa}中的新增功能
-
-* 云就绪性分析器现在是最佳实践分析器(BPA)。 BPA为您当前的AEM实施提供最佳实践评估，并帮助评估从现有AEM实例迁移到AEM作为Cloud Service的准备情况。
-
-* 添加了新的检测器以检测`java.io.InputStream`的使用，如果在AEM中作为Cloud Service使用，则会导致问题。
-
-### 错误修复 {#bpa-bug-fixes}
-
-* 修复了导致与&#x200B;*textfield foundation*&#x200B;组件相关的正面错误。
+* 对AEM Dispatcher Converter和Repository Modernizer工具执行了若干错误修复。
+请参阅[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
