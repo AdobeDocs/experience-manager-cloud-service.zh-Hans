@@ -2,9 +2,9 @@
 title: 添加自定义域名
 description: 添加自定义域名
 translation-type: tm+mt
-source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
+source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 * 在添加自定义域名之前，必须向项目安装包含自定义域名的有效SSL证书。 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以了解更多信息。
 
-* 一次只能添加一个域名。 但是，用户可以添加通配符（例如`*.wknd.com`）作为域名，这允许使用单个TXT记录托管多个子域。
+* 一次只能添加一个域名。 但是，域不能包含通配符。 创作端不支持自定义域。
 
 * 每个Cloud Manager环境最多可托管每个环境100个自定义域。
 
