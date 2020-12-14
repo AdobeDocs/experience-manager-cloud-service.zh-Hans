@@ -2,7 +2,7 @@
 title: 创建资产文件夹无头快速开始指南
 description: 内容片段模型定义内容片段的结构。 然后，内容片段存储在资产文件夹中。
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -53,5 +53,6 @@ ht-degree: 0%
 
 现在，您已经为内容片段创建了文件夹，现在可以转到入门指南的第四部分，并[创建内容片段。](create-content-fragment.md)
 
->!![TIP]
-有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/assets/content-fragments/content-fragments.md)
