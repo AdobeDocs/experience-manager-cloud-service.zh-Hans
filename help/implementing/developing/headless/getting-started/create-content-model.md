@@ -2,7 +2,7 @@
 title: 创建内容片段模型无头快速开始指南
 description: 内容片段模型定义您将使用AEM无头功能创建和提供的内容的结构。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -63,5 +63,6 @@ ht-degree: 0%
 
 现在，您已通过创建模型定义了内容片段的结构，您可以转到入门指南的第三部分，并[创建文件夹，以便存储片段本身。](create-assets-folder.md)
 
->!![TIP]
-有关内容片段模型的完整详细信息，请参阅[内容片段模型文档](/help/assets/content-fragments/content-fragments-models.md)
+>[!TIP]
+>
+>有关内容片段模型的完整详细信息，请参阅[内容片段模型文档](/help/assets/content-fragments/content-fragments-models.md)
