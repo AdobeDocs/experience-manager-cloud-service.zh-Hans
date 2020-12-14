@@ -2,7 +2,7 @@
 title: 创建配置无头快速开始指南
 description: 作为从AEM中作为Cloud Service的无头开始的第一步，您需要创建配置。
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 1%
@@ -42,12 +42,14 @@ ht-degree: 1%
 
 您可以根据需要创建多个配置。 配置也可以嵌套。
 
->!![NOTE]
-除&#x200B;**内容片段模型**&#x200B;和&#x200B;**GraphQL永久查询**&#x200B;外，可能还需要配置选项，具体取决于您的实施要求。
+>[!NOTE]
+>
+>除&#x200B;**内容片段模型**&#x200B;和&#x200B;**GraphQL永久查询**&#x200B;外，可能还需要配置选项，具体取决于您的实施要求。
 
 ## 后续步骤{#next-steps}
 
 使用此配置，您现在可以转到入门指南的第二部分，并[创建内容片段模型。](create-content-model.md)
 
->!![TIP]
-有关配置浏览器的完整详细信息，请参阅配置浏览器文档。[](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>有关配置浏览器的完整详细信息，请参阅配置浏览器文档。[](/help/implementing/developing/introduction/configurations.md)
