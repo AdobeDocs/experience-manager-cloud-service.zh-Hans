@@ -3,9 +3,9 @@ title: AEM Assets 与 AEM MediaLibrary
 description: 关于AEM Assets和的常见问题。 AEM媒体库，包括两者之间的差异。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '694'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ AEM媒体库是AEM WCM内容存储库的指定部分，存储图像和其他共�
 
 ## 我想在我的网站上使用类别谓词。 我需要AEM Assets吗？{#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-是的，类别谓词以及Geometrixx新闻中心使用的所有其他组件是AEM Assets的一部分，需要获得AEM Assets许可证。
+是的，类别谓词以及所有其他组件都是AEM Assets的一部分，并需要AEM Assets许可证。
 
 ## 我想在导入时自动调整图像大小。 我需要AEM Assets吗？{#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
