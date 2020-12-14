@@ -2,7 +2,7 @@
 title: 访问和交付内容片段无头快速开始指南
 description: 资产REST API允许管理内容片段，而GraphQL API允许对内容片段内容进行简单的无头投放。
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 假设我们创建的模型名为`person`，字段为`firstName`、`lastName`和`position`，我们可以构建一个简单的查询来检索内容片段的内容。
 
-   ```
+   ```text
    query {
      persons {
        items {
