@@ -2,9 +2,9 @@
 title: SPA简介和演练
 description: 本文介绍SPA的概念，并逐步介绍使用基本的SPA应用程序进行创作，显示它与基础的SPA editor的关系。
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ SPA的主要思想是减少对服务器的调用和对服务器的依赖性，�
 
 ### 加载SPA应用程序{#loading-a-spa-application}
 
-1. 如果尚未加载，请在发布服务器上或从页面编辑器的&#x200B;**页面信息**&#x200B;菜单中使用选项&#x200B;**视图作为发布**&#x200B;加载We.Retail日志应用程序。
+1. 如果尚未加载，请在发布服务器上或从页面编辑器的&#x200B;**页面信息**&#x200B;菜单中使用选项&#x200B;**视图作为发布**&#x200B;加载WKND SPA项目应用程序。
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -254,7 +254,7 @@ SPA的主要思想是减少对服务器的调用和对服务器的依赖性，�
 
 1. 该模型还可以将页面分组在一起，以便它们同步加载，从而减少需要重新加载的页面数。
 
-   在We.Retail日志的示例中，将同步加载`home`、`page-1`、`page-2`和`page-3`页面，因为访客通常访问所有这些页面。
+   在WKND SPA Project应用程序的示例中，将同步加载`home`、`page-1`、`page-2`和`page-3`页面，因为访客通常访问所有这些页面。
 
    此行为不是强制的，并且完全可以定义。
 
