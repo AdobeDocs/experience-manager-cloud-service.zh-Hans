@@ -2,7 +2,7 @@
 title: 创建内容片段无头快速开始指南
 description: 内容片段允许您设计、创建、管理和使用AEM可以无头地交付的与页面无关的内容。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 1%
@@ -53,5 +53,6 @@ ht-degree: 1%
 
 现在您已创建内容片段，您可以继续阅读入门指南的最后一部分，并[创建API请求以访问和传送内容片段。](create-api-request.md)
 
->!![TIP]
-有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/assets/content-fragments/content-fragments.md)
