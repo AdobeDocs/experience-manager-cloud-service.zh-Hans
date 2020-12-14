@@ -2,7 +2,7 @@
 title: 页面模板
 description: 页面模板用于创建将用作新页面基础的页面
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 7%
@@ -555,7 +555,7 @@ GITHUB上的代码
 
 * 如果`T`具有非空的`allowedPaths`属性，但没有任何值与`P`的路径匹配，则拒绝`T`。
 
-* 如果以上两个属性为空或不存在，则拒绝`T`，除非它属于与`P`相同的应用程序。 `T` 属于与if相同的应 `P` 用程序，并且仅当路径的第二级 `T` 的名称与路径的第二级的名称相同时 `P`。例如，模板`/apps/geometrixx/templates/foo`与页面`/content/geometrixx`属于同一应用程序。
+* 如果以上两个属性为空或不存在，则拒绝`T`，除非它属于与`P`相同的应用程序。 `T` 属于与if相同的应 `P` 用程序，并且仅当路径的第二级 `T` 的名称与路径的第二级的名称相同时 `P`。例如，模板`/apps/wknd/templates/foo`与页面`/content/wknd`属于同一应用程序。
 
 * 如果`T`具有非空的`allowedParents`属性，但没有任何值与`P`的路径匹配，则拒绝`T`。
 
