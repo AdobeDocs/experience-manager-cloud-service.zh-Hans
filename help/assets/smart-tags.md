@@ -3,9 +3,9 @@ title: 使用AI生成的标记自动标记图像
 description: 使用人为智能服务标记图像，这些服务使用 [!DNL Adobe Sensei] 服务应用上下文和描述性业务标记。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2431'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 要使用智能标记，请完成以下任务:
 
-* [将Experience Manager与Adobe开发者控制台集成](#integrate-aem-with-aio)。
+* [ [!DNL Adobe Experience Manager] 使用 Adobe 开发人员控制台进行集成](#integrate-aem-with-aio).
 * [了解标签模型和准则](#understand-tag-models-guidelines)。
 * [训练模型](#train-model)。
 * [标记您的数字资产](#tag-assets)。
@@ -105,6 +105,9 @@ ht-degree: 6%
 1. 单击&#x200B;**[!UICONTROL 创建]**。提供&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 说明]**。
 1. 浏览并从`cq:tags`中要培训模型的现有标记中选择标记。 单击&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**[!UICONTROL 选择资产]**&#x200B;对话框中，单击每个标记的&#x200B;**[!UICONTROL 添加资产]**。 在DAM存储库中搜索或浏览存储库以选择至少10张和最多50张图像。 选择资产，而不是文件夹。 选择图像后，单击&#x200B;**[!UICONTROL 选择]**。
+
+   ![视图培训状态](assets/smart-tags-training-status.png)
+
 1. 要预览选定图像的缩览图，请单击标记前面的折叠面板。 您可以通过单击&#x200B;**[!UICONTROL 添加资产]**&#x200B;来修改您的选择。 对选择感到满意后，单击&#x200B;**[!UICONTROL 提交]**。 用户界面在页面底部显示通知，指示已开始培训。
 1. 检查每个标记模型的&#x200B;**[!UICONTROL 状态]**&#x200B;列中的培训状态。 可能的状态为[!UICONTROL 挂起]、[!UICONTROL 已培训]和[!UICONTROL 失败]。
 
@@ -116,13 +119,13 @@ ht-degree: 6%
 
 要检查是否已针对资产培训集中的标记对智能标记服务进行了培训，请从“报告”控制台查看培训工作流报告。
 
-1. 在[!DNL Experience Manager]接口中，转至&#x200B;**[!UICONTROL 工具>资产>报告]**。
+1. 在[!DNL Experience Manager]接口中，转至**[!UICONTROL 工具] > **[!UICONTROL 资产] > **[!UICONTROL 报告]**。
 1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，单击&#x200B;**[!UICONTROL 创建]**。
 1. 选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;报告，然后单击工具栏中的&#x200B;**[!UICONTROL 下一步]**。
 1. 指定报表的标题和描述。在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。然后，单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，选择生成的报表。要视图报告，请单击工具栏中的&#x200B;**[!UICONTROL 视图]**。
 1. 查看报告的详细信息。 报表显示您培训的标记的培训状态。**[!UICONTROL 培训状态]**&#x200B;列中的绿色表示已为标记培训智能标记服务。 黄色表示服务未针对特定标记进行完整培训。在这种情况下，使用特定标记添加更多图像并运行培训工作流以在标签上完整地培训服务。如果此报告中未显示标记，请再次运行这些标记的培训工作流。标记
-1. 要下载报告，请从列表中选择它，然后单击工具栏中的&#x200B;**[!UICONTROL 下载]**。 报告以Microsoft Excel电子表格的形式下载。
+1. 要下载报告，请从列表中选择它，然后单击工具栏中的&#x200B;**[!UICONTROL 下载]**。 报告下载为[!DNL Microsoft Excel]电子表格。
 
 ## 标记资源{#tag-assets}
 
