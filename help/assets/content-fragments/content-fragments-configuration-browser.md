@@ -2,10 +2,10 @@
 title: 内容片段——配置浏览器
 description: 了解如何在配置浏览器中启用某些内容片段功能。
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 20%
+source-wordcount: '263'
+ht-degree: 19%
 
 ---
 
@@ -42,19 +42,25 @@ ht-degree: 20%
 >
 >有关详细信息，另请参阅[配置浏览器：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)。
 
+>[!CAUTION]
+>
+>子配置（嵌套在配置中的配置）不支持与内容片段一起使用。
+
 1. 导航到&#x200B;**工具**、**常规**，然后打开&#x200B;**配置浏览器**。
-2. 选择适合您的网站的位置。
-3. 使用&#x200B;**创建**&#x200B;打开对话框，其中：
+
+1. 使用&#x200B;**创建**&#x200B;打开对话框，其中：
 
    1. 指定&#x200B;**标题**。
-   2. 要启用其使用选择
+   1. 要启用其使用选择
       * **内容片段模型**
       * **GraphQL永久查询**
 
       ![定义配置](assets/cfm-conf-01.png)
 
 
-4. 选择&#x200B;**创建**&#x200B;以保存定义。
+1. 选择&#x200B;**创建**&#x200B;以保存定义。
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### 将配置应用于您的资产文件夹{#apply-the-configuration-to-your-assets-folder}
 
