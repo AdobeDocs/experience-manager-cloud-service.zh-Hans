@@ -2,10 +2,10 @@
 title: 管理图像预设
 description: 了解图像预设并了解如何创建、修改和管理图像预设。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 26%
+source-wordcount: '3607'
+ht-degree: 31%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 26%
 
 图像预设使AEM Assets能够动态地传送不同大小、不同格式或具有动态生成的其他图像属性的图像。 每个图像预设都代表一组预定义的大小调整和格式设置命令，以用于显示图像。在创建图像预设时，您需要选择图像传送的大小。此外，还需要选择格式设置命令，以确保传送供查看的图像时，显示优化的图像外观。
 
-管理员可以创建用于导出资产的预设。在导出图像时，用户可以选择预设，此操作也会根据管理员指定的规范重新设置图像的格式。
+管理员可以创建用于导出资产的预设。在导出图像时，用户可以选择预设，此操作也将调整图像的格式，使其符合管理员指定的规范。
 
 您还可以创建响应式图像预设。如果对资产应用响应式图像预设，则资产会根据查看资产时所使用的设备或屏幕大小而相应发生更改。除了RGB或灰色外，您还可以将图像预设配置为在色彩空间中使用CMYK。
 
@@ -28,7 +28,7 @@ ht-degree: 26%
 
 与宏一样，图像预设是一组预定义的大小调整和格式设置命令，这些命令使用同一个名称进行保存。为了解图像预设的工作方式，假定您的网站要求每个产品图像在桌面设备和移动设备上传送时均以不同的大小和格式显示。
 
-您可以创建两种图像预设：一种是适用于桌面版本的 500 x 500 像素；一种是适用于移动版本的 150 x 150 像素。您可以创建两个图像预设，一个称为`Enlarge`，用于以500x500像素显示图像，另一个称为`Thumbnail`，用于以150 x 150像素显示图像。 要传送大小为`Enlarge`和`Thumbnail`的图像，AEM会查找“大图预设”和“缩略图预设”的定义。 然后，AEM会根据每个图像预设的大小和格式规范动态生成图像。
+您可以创建两种图像预设：一种是适用于桌面版本的 500 x 500 像素；一种是适用于移动版本的 150 x 150 像素。您可以创建两个图像预设，一个称为`Enlarge`，用于以500x500像素显示图像，另一个称为`Thumbnail`，用于以150 x 150像素显示图像。 要传送大小为`Enlarge`和`Thumbnail`的图像，AEM会查找“大图预设”和“缩略图预设”的定义。 然后，AEM 会根据每种“图像预设”的尺寸和格式规范，动态地生成相应的图像。
 
 如果图像在动态传送时大小大幅缩减，图像可能会丢失锐化和细节。由于这一原因，每个图像预设中都包含格式控制，以在传送图像时将其优化为特定大小。这些控制可确保图像在传送到网站或应用程序时具有锐化、清晰的效果。
 
@@ -257,9 +257,9 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 ### 创建响应式图像预设{#creating-a-responsive-image-preset}
 
-要创建响应式图像预设，请执行[创建图像预设](#creating-image-presets)中的步骤。在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请清除这些值并将它们留空。
+要创建响应式图像预设，请执行[创建图像预设](#creating-image-presets)中的步骤。在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请清除这两个字段的值，并将其保留为空。
 
-将它们留空会告知AEM此图像预设是响应式的。您可以根据需要调整其他值。
+将这两个字段保留为空就是告诉 AEM 此图像预设为响应式。您可以视需要调整其他值。
 
 >[!NOTE]
 >
@@ -320,7 +320,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
   </tr>
   <tr>
    <td><strong>锐化</strong></td>
-   <td>选择<strong>启用简单锐化</strong>选项，在进行所有缩放后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </td>
+   <td>选择<strong>启用简单锐化</strong>选项可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </td>
   </tr>
  </tbody>
 </table>
@@ -361,10 +361,10 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
   </tr>
   <tr>
    <td><strong>锐化类型</strong></td>
-   <td><p>选择“无”(<strong>)、“锐化”(<strong>)或“锐化”(<strong>)。</strong></strong></strong> </p>
+   <td><p>选择<strong>无</strong>、<strong>锐化</strong>或 <strong>USM 锐化</strong>。 </p>
     <ul>
      <li>选择<strong>无</strong>可禁用锐化。</li>
-     <li>选择<strong>锐化</strong>以在进行所有缩放后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
+     <li>选择<strong>锐化</strong>可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
      <li>选择<strong> USM锐化</strong>可微调最终缩减采样图像的锐化滤镜效果。您可以控制效果的强度、效果的半径（以像素为单位）以及将被忽略的对比度阈值。此效果使用的选项与Photoshop的“USM锐化”滤镜相同。</li>
     </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p>
     <ul>
@@ -374,7 +374,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
      <li><strong>应用至</strong> -确定是否将取消锐化应用于每种颜色或亮度。</li>
     </ul>
     <div>
-      有关“锐化”的信息，请参阅<a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">锐化图像</a>。
+      有关“锐化”的信息，请参阅<a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">锐化图像</a>。
     </div> </td>
   </tr>
   <tr>
@@ -413,7 +413,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 除了“基本”和“高级”选项卡中提供的选项外，您还可以定义图像修饰符，以便在定义图像预设时有更多选择。图像渲染依赖于Dynamic Media图像渲染API，在[HTTP协议参考](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)中有详细定义。
 
-下面是一些基本示例，说明了可以使用图像修饰符进行哪些操作。
+下面的一些基本示例显示了可以使用图像修饰符实现的操作。
 
 >[!NOTE]
 >
