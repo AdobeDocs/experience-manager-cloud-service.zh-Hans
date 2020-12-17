@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
 translation-type: tm+mt
-source-git-commit: 70974ad7762bd07f68ee883756708799a79cf85f
+source-git-commit: 66374fe5a9126ba92e12c0128d5f60e0f0d09cb6
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -34,7 +34,8 @@ ht-degree: 4%
 ### [!DNL Assets]和[!DNL Dynamic Media] {#what-is-new-assets}的新增功能
 
 * **批量资产摄取**:为客户提供可扩展的、云本地摄取服务，该服 [!DNL Experience Manager] 务利用Cloud Service架构（包括资产微服务）。主要用例包括通过监控、报告和计划进行大规模摄取，同时允许使用通用云上传工具将资产初始传输到云数据存储。 请参阅[资产批量收录工具](/help/assets/add-assets.md#asset-bulk-ingestor)。
-此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许进行大规模摄取，最好在初始摄取或偶尔进行大型摄取时使用。 对于较小的摄取作业，请使用资产用户界面](/help/assets/add-assets.md#upload-assets)上传[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en)或[。
+
+   此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许进行大规模摄取，最好在初始摄取或偶尔进行大型摄取时使用。 对于较小的摄取作业，请使用资产用户界面](/help/assets/add-assets.md#upload-assets)上传[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en)或[。
 
    ![批量导入程序配置](/help/assets/assets/bulk-import-config-low-res.png)
 
