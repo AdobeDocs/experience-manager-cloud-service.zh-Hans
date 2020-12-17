@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 984914c6147d0ee96575c93496cbdfc4bb9bc094
+source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '553'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 4%
 
 [!DNL Adobe Experience Manager]作为Cloud Service2020.12.0的发布日期为2020年12月17日。
 以下版本(2021.1.0)将于2020年1月28日发布。
+
+## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
+
+* **[内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:添加使用HTTP API添加／更新和删除内容片段变体的功能。
 
 ## [!DNL Adobe Experience Manager Assets] 作为  [!DNL Cloud Service] {#assets}
 
