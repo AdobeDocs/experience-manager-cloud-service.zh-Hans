@@ -2,10 +2,10 @@
 title: 优化图像质量的最佳实践
 description: 了解可在Dynamic Media用来优化图像资产质量的最佳实践。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 53%
+source-wordcount: '1475'
+ht-degree: 54%
 
 ---
 
@@ -40,7 +40,7 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 
 在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请参阅以下有用资源，花时间详细了解一下 AEM 中锐化和 USM 锐化的工作原理：
 
-最佳实践白皮书[在Adobe Scene7出版系统和图像服务器](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)中锐化图像同样适用于AEM。
+最佳实践白皮书[在AdobeDynamic Media经典](/help/assets/dynamic-media/assets/sharpening_images.pdf)中锐化图像也适用于AEM。
 
 在Adobe电视上，请观看[使用USM锐化锐化图像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
 
@@ -65,7 +65,7 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 
       AEM有关锐化图像的帮助主题。
 
-      最佳实践白皮书[在Adobe Scene7出版系统和图像服务器上锐化图像。](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+      最佳实践白皮书[AdobeDynamic Media经典图像质量和锐化最佳实践](/help/assets/dynamic-media/assets/sharpening_images.pdf)。
 
    * AEM还允许您控制第四个参数：monochrome(0,1)。 此参数确定是使用值0分别将USM锐化应用于每个颜色组件，还是使用值1将USM锐化应用于图像亮度／强度。
 
@@ -117,7 +117,7 @@ jpegSize是一个有用的参数，可确保图像不会超过某个大小，以
 
 在您试验的过程中，以下一般建议对于优化工作流也很有帮助：
 
-* 实时尝试和测试不同的参数，可直接在URL上或使用Scene7出版系统的图像调整功能，该功能为调整操作提供实时预览。
+* 直接在URL上实时尝试和测试不同的参数。
 * 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上是具有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL 路径中的自定义预设名称会调用这些预设。这类功能可帮助您针对网站中图像的不同使用模式来管理命令和质量设置，并缩短 URL 的整体长度。
 * AEM 还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。对于高级用例，如果这可能是进一步调整和优化渲染结果的选项，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可以帮助您进行自定义分析和最佳实践。
 
