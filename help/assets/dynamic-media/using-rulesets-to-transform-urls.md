@@ -2,9 +2,9 @@
 title: 使用规则集转换URL
 description: 您可以在Dynamic Media部署规则集以转换URL。 规则集是用脚本语言（如JavaScript）编写的指令集，用于评估XML数据，并在数据满足某些条件时采取某些操作。
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '766'
 ht-degree: 5%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 5%
 * 添加MIME类型后缀。 许多服务和网站需要图像后缀，如向URL添加`.jpg`。
 * 为SEO（搜索引擎优化）创建URL的文件夹路径。
 
-   请参阅[Dynamic Media经典如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   请参阅[AdobeDynamic Media经典如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 为SEO（搜索引擎优化）向URL添加元数据。
 
-   请参阅[Dynamic Media经典如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   请参阅[AdobeDynamic Media经典如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 设置内容配置以触发下载。
 * 简化图像服务模板URL以实现个性化。 例如，将`rgb{XX,YY,ZZ}`转换为RTF就绪型`\redXX\greenYY\blueZZ`
@@ -45,9 +45,11 @@ ht-degree: 5%
 另外，请确保首先在不影响实时生产环境的分阶段环境中测试规则集。
 生产环境和临时环境通常需要不同的登录名。
 
-* **NA临时** 环境登录页： [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **EMEA分阶段** 环境登录页： [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC登台** 环境登录页： [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+有关登录信息](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)，请参阅[AdobeDynamic Media经典桌面应用程序。
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 另请参阅[在规则集](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)中使用“asset”而不是“is”映像。
 
