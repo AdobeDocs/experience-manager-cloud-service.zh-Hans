@@ -2,9 +2,9 @@
 title: Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持
 description: 了解Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持。
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -66,6 +66,7 @@ Assets REST API可用于最近安装的Adobe Experience Manager作为Cloud Servi
 
 >[!NOTE]
 >访问：
+>
 >* `/api/assets` **不** 需要使用选择 `.model` 器。
 >* `/content/path/to/page` **不** 需要使用选择 `.model` 器。
 
@@ -306,32 +307,27 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 有一些限制：
 
-* **无法编写和更新变量。** 如果将这些变量添加到有效负荷（例如，用于更新），则将忽略它们。但是，变体将通过投放(`GET`)提供。
-
 * **当前不支持内容片段模型**:无法读取或创建。为了能够创建新内容片段或更新现有内容片段，开发人员必须知道内容片段模型的正确路径。 目前，获取这些概述的唯一方法是通过管理UI。
 * **引用将被忽略**。当前不检查是否引用了现有内容片段。 因此，例如，删除内容片段可能会导致页面上出现包含对已删除内容片段的引用的问题。
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## 状态代码和错误消息{#status-codes-and-error-messages}
 
 在相关情况下可以看到以下状态代码：
 
-* **200** （确定）
-
-   返回时间：
+* **200** (OK)在以下情况下返回：
 
    * 通过`GET`请求内容片段
-
    * 通过`PUT`成功更新内容片段
 
-* **201** （已创建）
-
-   返回时间：
+* **201** （已创建）在以下情况下返回：
 
    * 通过`POST`成功创建内容片段
 
-* **404** （未找到）
-
-   返回时间：
+* **404** （未找到）在以下情况下返回：
 
    * 请求的内容片段不存在
 
@@ -341,8 +337,8 @@ The exact format of supported requests is defined in the [API Reference](/help/a
    >
    >返回此错误：
    >
-   >    * 发生无法用特定代码识别的错误时
-   >    * 当给定的有效负荷无效时
+   >* 发生无法用特定代码识别的错误时
+   >* 当给定的有效负荷无效时
 
 
    以下列表返回此错误状态时的常见情形以及生成的错误消息（等宽）:
@@ -384,6 +380,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 ## API参考{#api-reference}
 
 有关详细的API参考，请参阅此处：
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
