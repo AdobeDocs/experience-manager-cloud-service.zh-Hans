@@ -3,7 +3,7 @@ title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署中可用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 29c3ca56281c482f195d84590ceb4ef07c556e64
 workflow-type: tm+mt
 source-wordcount: '2240'
 ht-degree: 41%
@@ -157,6 +157,16 @@ ht-degree: 41%
 >在网页中使用后，获取的远程资源便可以被具有访问本地文件夹权限的用户搜索和使用。 获取的资源存储在本地文件夹中（上面的遍历中的`connectedassets`）。 此外，还可通过[!UICONTROL 内容查找器]，搜索和查看本地存储库中的资产。
 
 获取的资产可用作任何其他本地资产，但关联的元数据无法编辑。
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+### Check use of an asset across other pages {#asset-usage-references}
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+
+Users can view incoming references of the assets and move or delete the asset.
+
+-->
 
 ## 限制和最佳实践{#tip-and-limitations}
 
