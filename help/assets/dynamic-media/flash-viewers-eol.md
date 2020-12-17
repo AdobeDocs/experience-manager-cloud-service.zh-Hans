@@ -1,19 +1,17 @@
 ---
 title: Flash 查看器生命周期终止通知
-description: 自 2017 年 1 月 31 日起，Adobe Scene7 将正式停止对 Flash 查看器平台的支持。
+description: 自2017年1月31日起，对Flash查看器平台的支持正式终止。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 61%
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
 
 
-# Flash 查看器生命周期终止通知{#flash-viewers-end-of-life-notice}
+# Flash查看器生命周期结束{#flash-viewers-end-of-life-notice}
 
-*自2017年1月31日起，Adobe动态媒体经典(Scene7)正式终止对Flash查看器平台的支持。*
+自2017年1月31日起，对Flash查看器平台的支持正式终止。
 
-*有关此重要更改的更多信息，请参阅以下常见问题解答网站：*
-
-[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+有关最新支持的查看器，请参见[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
