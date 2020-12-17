@@ -2,19 +2,19 @@
 title: 配置Dynamic MediaCloud Service
 description: 关于如何将Adobe Experience ManagerDynamic Media配置为Cloud Service的信息。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3853'
 ht-degree: 8%
 
 ---
 
 
-# 关于配置Dynamic MediaCloud Service{#configuring-dynamic-media-scene-mode}
+# 关于配置Dynamic MediaCloud Service{#configuring-dynamic-media}
 
 如果您使用Adobe Experience Manager为不同环境（如一个用于开发、一个用于暂存、一个用于实时生产）进行设置，则需要为每个环境配置Dynamic MediaCloud Services。
 
-## Dynamic Media{#architecture-diagram-of-dynamic-media-scene-mode}架构图
+## Dynamic Media{#architecture-diagram-of-dynamic-media}架构图
 
 以下架构图描述了Dynamic Media的工作方式。
 
@@ -184,9 +184,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ### （可选）Dynamic Media设置的设置和配置{#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
-使用Dynamic Media经典(Scene7)用户界面更改您的Dynamic Media设置。
+使用Dynamic Media经典用户界面更改您的Dynamic Media设置。
 
-以上一些任务要求您在以下位置登录Dynamic Media经典(Scene7):[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+以上一些任务要求您在此处登录Dynamic Media经典：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 设置和配置任务包括：
 
