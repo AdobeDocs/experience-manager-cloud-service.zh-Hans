@@ -3,9 +3,9 @@ title: 使用资产微服务处理资产
 description: 使用云本机、可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Manager作为[!DNL Cloud Service]提供了一种云本机方法
 * 在适用的情况下使用本机Adobe文件处理服务，提供高保真输出和[对Adobe专有格式的有效处理](file-format-support.md)。
 * 能够配置后处理工作流，以添加用户特定的操作和集成。
 
-Asset microservices有助于避免对第三方渲染工具和方法（如ImageMagick和FFmpeg转码）的需求，并简化配置，同时为常见文件类型提供现成功能。
+资产微服务有助于避免对第三方渲染工具和方法（如ImageMagick和FFmpeg转码）的需求并简化配置，同时在默认情况下为常见文件类型提供基本功能。
 
 ## 高级架构{#asset-microservices-architecture}
 
