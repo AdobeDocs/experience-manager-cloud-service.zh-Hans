@@ -2,9 +2,9 @@
 title: 组件参考指南
 description: 关于组件及其结构的详细信息的开发人员参考指南
 translation-type: tm+mt
-source-git-commit: 3f31ced24ab8af942b848a8c9ac6bd53ceb5f3b1
+source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3464'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,6 @@ ht-degree: 0%
 * 使用Java - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)使HTL文件能够访问自定义Java类中的帮助方法。 这允许您使用Java代码实现用于选择和配置组件内容的逻辑。
 * 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)使HTL文件能够访问用JavaScript编写的帮助代码。 这允许您使用JavaScript代码实现用于选择和配置组件内容的逻辑。
 * 使用客户端库——现代网站严重依赖由复杂的JavaScript和CSS代码驱动的客户端处理。 有关详细信息，请参阅文档[将AEM上的客户端库用作Cloud Service](/help/implementing/developing/introduction/clientlibs.md)。
-
-### 开发您自己的组件{#developing-your-own-components}
-
-在此处开发内容？
 
 ## 组件结构{#structure}
 
@@ -409,6 +405,14 @@ AEM中有许多现有配置。 使用&#x200B;**查询**&#x200B;中的CRXDE Lite�
 ### 字段验证{#field-validation}
 
 Granite UI和Granite UI构件中的字段验证是使用`foundation-validation` API完成的。 有关详细信息，请参阅[`foundation-valdiation` Granite文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)。
+
+### 检测对话框{#dialog-ready}的可用性
+
+如果您有自定义JavaScript，并且需要仅在对话框可用且准备就绪时执行，您应该侦听`dialog-ready`事件。
+
+当对话框加载（或重新加载）并准备使用时，将触发此事件，这意味着只要对话框的DOM中发生更改（创建／更新）。
+
+`dialog-ready` 可用于挂接JavaScript自定义代码，该代码对对话框或类似任务中的字段执行自定义。
 
 ## 预览行为{#preview-behavior}
 
