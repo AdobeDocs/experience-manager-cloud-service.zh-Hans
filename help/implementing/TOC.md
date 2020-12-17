@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: c82622ad26fecd547c12fff6994713488b9759df
+source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 45%
+source-wordcount: '701'
+ht-degree: 44%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 45%
    + [配置和配置浏览器](developing/introduction/configurations.md)
    + [AEM技术基础](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [为服务器端API生成访问令牌](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + 完整堆栈AEM开发{#full-stack}
       + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
       + [AEM UI的结构](developing/introduction/ui-structure.md)
