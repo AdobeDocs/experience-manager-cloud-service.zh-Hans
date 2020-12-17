@@ -2,9 +2,9 @@
 title: HTTP2 内容交付常见问题解答
 description: 了解HTTP2内容投放。
 translation-type: tm+mt
-source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '753'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信�
 
 ## 转向HTTP/2进行内容投放有哪些主要优势？{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-性能改进因网站代码、Scene7的使用方式、消费者设备、屏幕和位置等因素而异。
+性能改进因网站代码、Dynamic Media的使用方式、消费者设备、屏幕和位置等因素而异。
 
 Adobe自己的测试得出以下结果：
 
@@ -40,14 +40,14 @@ Adobe自己的测试得出以下结果：
 要使用HTTP/2，必须满足以下要求：
 
 * 为您的富媒体请求使用安全HTTPS。
-* 将Adobe捆绑的CDN(内容投放网络)用作Dynamic Media Classic许可证的一部分。
-* 使用专用域（即`images.company.com`或`mycompany.scene7.com`），而不使用通用的Dynamic Media Classic域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
+* 将Adobe捆绑的CDN(内容投放网络)作为Dynamic Media经典许可证的一部分。
+* 使用专用域（即`images.company.com`或`mycompany.scene7.com`），而不使用通用的Dynamic Media域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-   要查找您的域，请[登录每个Scene7帐户的公司发布系统实例](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。
+   要查找您的域，请[登录每个公司帐户的Dynamic Media经典](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)实例。
 
-   单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**发布服务器名称**&#x200B;的字段。 如果您当前使用的是通用的Scene7域，则可以请求移至您自己的自定义域作为此过渡的一部分。
+   单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**发布服务器名称**&#x200B;的字段。 如果您当前使用的是通用的Dynamic Media域，则可以请求移至您自己的自定义域作为此过渡的一部分。
 
-## 为我的Dynamic Media Classic帐户启用HTTP/2的过程是什么？{#what-is-the-process-for-enabling-http-for-my-scene-account}
+## 为我的Dynamic Media帐户启用HTTP/2的过程是什么？{#what-is-the-process-for-enabling-http-for-my-dm-account}
 
 必须[使用Admin Console创建支持案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)并请求切换到HTTP/2;它不会自动为您完成。
 
@@ -56,17 +56,17 @@ Adobe自己的测试得出以下结果：
    * 主要联系人姓名、电子邮件和电话号码。
    * 要过渡到HTTP2的所有域。 即`images.company.com`或`mycompany.scene7.com`。
 
-   要查找您的域，请[登录每个Scene7帐户的公司发布系统实例](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。
+   要查找您的域，请[登录每个公司帐户的Dynamic Media经典](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)实例。
 
    单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL 发布服务器名称]**&#x200B;的字段。
 
    * 验证是否对多媒体请求使用安全HTTPS。
    * 验证您是否通过Adobe使用CDN，而不是通过直接关系进行管理。
-   * 验证您使用的是专用域。 即`images.company.com`或`mycompany.scene7.com`，不是通用的Scene7域，如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
+   * 验证您使用的是专用域。 即`images.company.com`或`mycompany.scene7.com`，不是通用的Dynamic Media域，如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
-   要查找您的域，请[登录每个Scene7帐户的公司发布系统实例](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。
+   要查找您的域，请[登录每个公司帐户的Dynamic Media经典](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)实例。
 
-   单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL 发布服务器名称]**&#x200B;的字段。 如果您当前使用的是通用的Scene7域，则可以请求移至您自己的自定义域作为此过渡的一部分。
+   单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL 发布服务器名称]**&#x200B;的字段。 如果您当前使用的是通用的Dynamic Media域，则可以请求移至您自己的自定义域作为此过渡的一部分。
 
    1. 技术支持根据请求的提交顺序将您添加到HTTP/2客户等候名单。
    1. 当Adobe准备好处理您的请求时，支持部门将与您联系以协调过渡并设置目标日期。
