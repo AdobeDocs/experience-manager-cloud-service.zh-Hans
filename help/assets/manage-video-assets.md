@@ -3,10 +3,10 @@ title: 管理视频资产
 description: 在 [!DNL Adobe Experience Manager]中上传、预览、批注和发布视频资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 12%
+source-wordcount: '616'
+ht-degree: 10%
 
 ---
 
@@ -28,17 +28,17 @@ ht-degree: 12%
 
 ## 发布视频资产{#publish-video-assets}
 
-发布后，您可以将视频资产作为URL包含在网页中或直接嵌入资产。 有关详细信息，请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+发布后，您可以将视频资产作为URL包含在网页中或直接嵌入资产。 有关详细信息，请参阅[publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 使用处理用户档案{#transcode-video}转码
 
 [!DNL Experience Manager] 这样， [!DNL Cloud Service] 您就可以使用处理用户档案对MP4视频文件进行基本转码。该功能不仅允许您上传，还可以预览和缩放MP4视频文件。
 
-![创建处理用户档案，在Experience Manager中进行视频转码](assets/video-processing-profile-for-mp4.png)
+![创建用于在  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *图：中用于视频转码的处理用户档案 [!DNL Experience Manager]。*
 
-如果您只提供宽度或仅提供高度，而将其他字段留空，则演绎版将保持宽高比。 目前，只有h264编解码器可用于转码。
+如果您只提供宽度或仅提供高度，而将其他字段留空，则演绎版将保持宽高比。 H.264视频编解码器可用于转码。
 
 要使用处理用户档案处理资产，请向文件夹添加用户档案。 请参阅[使用处理用户档案处理资产](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
@@ -52,11 +52,21 @@ ht-degree: 12%
 
 ## 最佳实践和限制{#tips-limitations}
 
-* 没有Dynamic Media许可证，您只能使用处理用户档案处理MP4文件。
-* 用于使用
+* 没有[!DNL Dynamic Media]许可证，您只能使用处理用户档案处理MP4文件。
+* 使用“处理”用户档案转码MP4文件时，将适用以下准则和限制：
+
+   * Apple ProRes文件只能将代码转换为最大分辨率1080p。
+   * 如果源文件的比特率大于200 Mbps，则只能将代码转换到最大分辨率1080p。
+   * 如果源帧速率>= 60 fps，则可以使用的最大源文件大小是
+
+      * 400 MB用于4k转码。
+      * 1080p转码需要800 MB。
+      * 8 GB，用于720p转码。
+   * 可转码到4k分辨率的最大文件大小为2.55 GB MP4文件，分辨率为4k、12 Mbps比特率和23 fps。
+
 
 >[!MORELIKETHIS]
 >
->* [动态媒体视频文档](/help/assets/dynamic-media/video.md)。
+>* [Dynamic Media视频文档](/help/assets/dynamic-media/video.md)。
 >* [进一步了解处理用户档案的使用、类型和配置](/help/assets/asset-microservices-configure-and-use.md)。
 
