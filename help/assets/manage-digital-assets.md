@@ -4,10 +4,10 @@ description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
-source-wordcount: '4407'
-ht-degree: 18%
+source-wordcount: '4358'
+ht-degree: 19%
 
 ---
 
@@ -103,19 +103,25 @@ ht-degree: 18%
    >
    >要创建标记，您必须在CRX存储库中的`/content/cq:tags/default`路径处具有写入权限。
 
-1. 要视图资产的使用情况统计信息，请单击／点按&#x200B;**[!UICONTROL Insights]**&#x200B;选项卡。
-
-   使用情况统计信息包括：
-
-   * 资产的查看或下载次数
-   * 渠道/设备，资产通过这些设备
-   * 最近使用该资产的创意解决方案
-
-   有关详细信息，请参阅[资产分析](assets-insights.md)。
-
 1. 点按／单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
 1. 导航到资产用户界面。 已编辑的元数据属性（包括标题、描述和标记）显示在资产卡上的卡片视图中以及列表视图的相关列下。
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+## View asset usage and references {#usage-and-references}
+
+[!DNL Experience Manager] lets you track statistics about usage of a digital asset. The usage statistics include the following:
+
+    * Number of times the asset was viewed or downloaded
+    * Channels/devices through which the asset was used
+    * Creative solutions where the asset was recently used
+
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
+
+-->
 
 ## 复制资产{#copying-assets}
 
@@ -178,7 +184,7 @@ ht-degree: 18%
 
    * 根据新的详细信息指定要调整的引用，然后点按／单击&#x200B;**[!UICONTROL 移动]**&#x200B;以继续。
 
-   * 从&#x200B;**[!UICONTROL Adjust]**&#x200B;列中，选择／取消选择对资产的引用。
+   * 在&#x200B;**[!UICONTROL 调整]**&#x200B;列中，选择/取消选择对资产的引用。
    * 点按／单击&#x200B;**[!UICONTROL 返回]**&#x200B;以返回至&#x200B;**[!UICONTROL 选择目标]**&#x200B;屏幕。
 
    * 点按／单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止移动操作。
@@ -311,7 +317,7 @@ ht-degree: 18%
 
 1. 要稍后取消发布资产，请选择&#x200B;**[!UICONTROL 稍后取消发布]**，然后选择取消发布资产的日期。
 1. 计划一个资产在发布环境中不再可用的日期。
-1. 如果资产引用了其他资产，请选择您要取消发布的引用。 点按／单击&#x200B;**[!UICONTROL 取消发布]**。
+1. 如果资产引用了其他资产，请选择要取消发布的引用。点按／单击&#x200B;**[!UICONTROL 取消发布]**。
 1. 在确认对话框中，点按／单击：
 
    * **** 取消以停止操作
