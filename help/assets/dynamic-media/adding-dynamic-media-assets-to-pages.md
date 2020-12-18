@@ -2,9 +2,9 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何将Dynamic Media组件作为Cloud Service添加到Adobe Experience Manager的页面。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3135'
 ht-degree: 30%
 
 ---
@@ -195,8 +195,8 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
    例如，通过查看器修饰符，可以执行以下操作：
 
-   * 将题注文件与视频关联：[题注](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 将导航文件与视频关联：[navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * 将题注文件与视频关联：[题注](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 将导航文件与视频关联：[navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;可编辑以下高级设置。
 
