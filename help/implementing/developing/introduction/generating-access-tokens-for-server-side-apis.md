@@ -2,9 +2,9 @@
 title: 为服务器端API生成访问令牌
 description: 了解如何通过生成安全的JWT令牌，将第三方服务器与AEM作为Cloud Service进行通信
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 生成JWT承载令牌{#generating-the-jwt-bearer-token}
 
-具有组织管理员角色的用户将看到给定环境的开发人员控制台中的集成选项卡以及两个按钮。 单击&#x200B;**获取服务凭据**&#x200B;按钮将生成私钥、证书和配置。
+具有组织管理员角色的用户将看到给定环境的开发人员控制台中的集成选项卡以及两个按钮。 单击&#x200B;**获取服务凭据**&#x200B;按钮将为环境的创作层和发布层生成私钥、证书和配置，而不管选择哪个窗格。
 
 ![JWT Generation](assets/JWTtoken3.png)
 
