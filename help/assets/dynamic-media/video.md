@@ -2,9 +2,9 @@
 title: 视频
 description: 了解如何在Dynamic Media使用视频。
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '9538'
+source-wordcount: '9536'
 ht-degree: 28%
 
 ---
@@ -146,7 +146,7 @@ Dynamic Media的视频是一款端到端的解决方案，可轻松发布高质�
 * 组织、浏览和搜索具有全面元数据支持的视频，以实现高效的视频资产管理。
 * 将自适应视频集交付到Web、桌面和移动设备，包括iPhone、iPad、Android、Blackberry和Windows手机。
 
-自适应视频流播放在多种 iOS 平台上受支持。请参阅[《Dynamic Media查看器参考指南》](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
+自适应视频流播放在多种 iOS 平台上受支持。请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
 
 Dynamic Media支持MP4 H.264视频的移动视频播放。您可以在以下位置找到支持此视频格式的Blackberry设备：[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支持的视频格式。
 
@@ -308,7 +308,7 @@ HLS是Apple自适应视频流播放的标准，可根据网络带宽容量自动
 
 在为主源视频文件选择或创建视频编码预设时，请确保该预设的宽高比与主源视频文件的宽高比相同。 宽高比是视频的宽度与高度的比率。
 
-要确定视频文件的长宽比，请获取该文件的元数据并记下该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
+要确定视频文件的长宽比，请获取该文件的元数据并记录该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
 
 宽度/高度 = 宽高比
 
@@ -402,9 +402,9 @@ VBR编码时间较长，但生成的结果最为有利；媒体文件的质量�
 
 | 视频类型 | 宽度 x 高度 | 宽度比 | 高度比 |
 |--- |--- |--- |--- |
-| 源 | 1920 x 1080 | 1 | 1 |
+| 源 | 1920 x 1080 | 1 | 3 |
 | 编码 | 960 x 540 | 2 | 2 |
-| 编码 | 640 x 360 | 3 | 3 |
+| 编码 | 640 x 360 | 3 | 1 |
 | 编码 | 480 x 270 | 4 | 4 |
 
 ### 编码视频文件格式 {#encoded-video-file-format}
