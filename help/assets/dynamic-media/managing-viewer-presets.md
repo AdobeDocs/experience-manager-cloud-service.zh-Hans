@@ -2,9 +2,9 @@
 title: 管理查看器预设
 description: 如何在Dynamic Media创建和管理查看器预设。
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '4261'
+source-wordcount: '4246'
 ht-degree: 26%
 
 ---
@@ -23,7 +23,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-另请参阅[Adobe查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
+另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
 
 本节介绍如何创建、编辑和管理查看器预设。 无论您何时对资产进行预览，您都可以将查看器预设应用到资产。 请参阅[应用查看器预设](#applying-a-viewer-preset-to-an-asset)。
 
@@ -35,7 +35,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 所有现成查看器都支持键盘辅助功能。
 
-另请参阅[键盘辅助功能和导航](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+另请参阅[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## 管理查看器预设 {#managing-viewer-presets-1}
 
@@ -154,7 +154,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 有关查看器支持的Web浏览器和操作系统版本的信息，可以查看查看器发行说明。
 
-请参阅[查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)的目录中的“查看器发行说明”。
+请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)的目录中的“查看器发行说明”。
 
 >[!NOTE]
 >
@@ -419,13 +419,13 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
 
       通过可视编辑器，您可以查看特定属性对样式的影响。 只需设置或调整任何属性，即可使用编辑器左侧的范例即时查看它对查看器有何影响。
 
-      [查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*`<viewer name>`*&#x200B;查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。 例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)以了解列表和每个属性的说明。
+      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*`<viewer name>`*&#x200B;查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。 例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)以了解列表和每个属性的说明。
 
    * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到AEM Assets。 点按&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单下的&#x200B;**[!UICONTROL 导入CSS]**（可能需要向上滚动可视编辑器才能看到它），以查找已上传的CSS文件并将其与查看器预设关联。
 
       导入CSS文件时，可视编辑器会检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则必须使用父查看器元素上定义的查看器类名`.s7mixedmediaviewer`定义导入的所有CSS规则。
 
-      只要正确定义给定查看器的CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中均有介绍。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能不理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍可正常工作。
+      只要正确定义给定查看器的CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中均有介绍。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能不理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍可正常工作。
    >[!NOTE]
    >
    >如果您希望直接在其原始表单中编辑 CSS，请点按“选定类型”下拉菜单下的&#x200B;**[!UICONTROL 显示/隐藏 CSS]**（您可能需要向上滚动可视编辑器才能看到此选项）。
@@ -441,7 +441,7 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
 
    可视编辑器中的许多组件都有与其关联的详细说明。 当您展开组件以显示其关联的参数时，这些说明会显示在蓝色框中。
 
-   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
+   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
 
    >[!NOTE]
    >
@@ -490,7 +490,7 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
 
 为了说明这一点，假定您有一个30秒的视频区段。 在30秒内共显示9个缩略图。 您的浏览器的大小调整为显示面板中有四个可见的缩略图位置。 30秒视频时间段分为三个子段。 下表显示了特定时间子区段显示哪些缩略图的细分：
 
-| **视频子区段** | **子区段时间（以秒为单位）** | **面板中可见的缩略图** |
+| **视频子段** | **子段时间（以秒为单位）** | **面板中可见的缩略图** |
 |---|---|---|
 | 1 | 0-10 | 1，2，3，4 |
 | 2 | 10-20 | 4，5，6，7 |
@@ -506,12 +506,12 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
 * 缩略图数量=舍入到下一个缩略图（缩略图数量／视频子区段数量）。
 使用上表中的示例，9个缩略图/ 3个视频子区段= 3个缩略图。
 
-* 子区段的持续时间=视频总持续时间／视频子区段的数量。
+* 子段的持续时间=总视频持续时间／视频子段的数量。
 使用上表中的示例，30秒/ 3个视频子段=每个视频子段的10秒显示。
 
-#### 创建传送横幅查看器预设的特殊注意事项{#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+#### 创建旋转横幅查看器预设的特殊注意事项{#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
-创建传送横幅查看器预设时，可以按如下方式访问更改热点样式：
+创建旋转式横幅查看器预设时，可以按如下方式访问更改热点的样式：
 
 |  | **描述** | **操作** |
 |---|---|---|
