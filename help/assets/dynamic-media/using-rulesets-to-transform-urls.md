@@ -2,9 +2,9 @@
 title: 使用规则集转换URL
 description: 您可以在Dynamic Media部署规则集以转换URL。 规则集是用脚本语言（如JavaScript）编写的指令集，用于评估XML数据，并在数据满足某些条件时采取某些操作。
 translation-type: tm+mt
-source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 5%
 >使用规则集时要小心；它们可以阻止在您的网站上显示Dynamic Media内容。
 
 有一些可用的示例规则集可以帮助您创建自己的规则集。
-请参阅[规则集引用](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
+请参阅[规则集引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
 
 与创建所有规则集一样，在使用XML validator项目（如xmlvalid）上传XML文件之前，请确保XML文件有效。
 另请参阅[规则集疑难解答](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)。
