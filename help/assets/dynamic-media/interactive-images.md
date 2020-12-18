@@ -2,9 +2,9 @@
 title: 交互式图像
 description: 了解如何在Dynamic Media使用交互式图像。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '4253'
+source-wordcount: '4249'
 ht-degree: 23%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 23%
 
 在最简单的情况下，Quickview URL中唯一的变量部分是产品SKU。 在这种情况下，SKU 值就是您将热点添加到横幅图像时唯一需要提供的数据。
 
-但是，在复杂情况下，除SKU外，Quickview URL还具有不同的可变元素，如类别ID、颜色代码、大小代码等。 在这种情况下，在 AEM 资产的交互式购物图像功能中，每个元素都是热点数据定义中的一个独立变量。
+但是，在复杂情况下，除SKU外，Quickview URL还具有不同的可变元素，如类别ID、颜色代码、大小代码等。 在这种情况下，在 AEM Assets 的交互式购物图像功能中，每个元素都是热点数据定义中的一个独立变量。
 
 请考虑以下Quickview URL示例及其生成的热点变量：
 
@@ -164,11 +164,11 @@ ht-degree: 23%
 
 依据上述分析，您可以在热点中使用 `categoryId` 和 `SKU`。
 
-现在，您便可以使用 AEM 资产中的交互式购物图像功能，上传图像横幅并向其添加热点。
+现在，您便可以使用 AEM Assets 中的交互式购物图像功能，上传图像横幅并向其添加热点。
 
 ## （可选）创建交互式图像查看器预设{#optional-creating-an-interactive-image-viewer-preset}
 
-您可以选择使用 AEM 资产默认附带的名为 `Shoppable_Banner` 的现成交互式图像查看器预设。或者，您也可以创建自己的自定义查看器预设，以便与交互式图像配合使用。
+您可以选择使用 AEM Assets 默认附带的名为 `Shoppable_Banner` 的现成交互式图像查看器预设。或者，您也可以创建自己的自定义查看器预设，以便与交互式图像配合使用。
 
 在创建自定义交互式图像查看器预设时，您可以确定图像横幅上热点的外观。 在创建查看器预设的过程中，您可以选择使用预定义图像库中提供的热点图形。
 
@@ -348,7 +348,7 @@ ht-degree: 23%
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-集成过程很简单，只需删除 `IMG` 标记并将其替换为从 AEM 资产中复制的嵌入代码即可。您可以看到结果[在页面上显示交互式购物图像，该图像有三个圆形热点](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
+集成过程很简单，只需删除 `IMG` 标记并将其替换为从 AEM Assets 中复制的嵌入代码即可。您可以看到结果[在页面上显示交互式购物图像，该图像有三个圆形热点](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
 
 >[!NOTE]
 >
@@ -356,9 +356,9 @@ ht-degree: 23%
 
 要面向交互式环境对购物交互式图像进行“裁剪”，您可以将交互式图像配置属性 `ZoomView.iscommand` 添加到路径中 － 其中 `ZoomView` 是要调用的组件，而 `iscommand` 是您所应用的“裁剪”图像服务命令。
 
-请参阅 [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 配置属性。
+请参阅 [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 配置属性。
 
-请参阅[裁剪](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)图像服务命令。
+请参阅[裁剪](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)图像服务命令。
 
 您现在可以将交互式图像与网站上的现有概览相集成。
 
@@ -382,7 +382,7 @@ ht-degree: 23%
 
 这些调用并非独立的公共 API 调用（可以由网页逻辑从任意步骤进行调用）。相反，这些调用属于链式调用，即，每个后续步骤都隐藏在前一步的最后阶段（回调）。
 
-如果用交互式购物图像来替换第 1 步的操作以及第 2 步的部分操作，则与此同时，当用户单击购物图像中的热点时，查看器就会处理此类用户交互。查看器会向网页返回一个事件，其中包含之前添加到 AEM 资产中的所有热点数据。
+如果用交互式购物图像来替换第 1 步的操作以及第 2 步的部分操作，则与此同时，当用户单击购物图像中的热点时，查看器就会处理此类用户交互。查看器会向网页返回一个事件，其中包含之前添加到 AEM Assets 中的所有热点数据。
 
 在此类事件处理程序中，前端代码会执行下列操作：
 
