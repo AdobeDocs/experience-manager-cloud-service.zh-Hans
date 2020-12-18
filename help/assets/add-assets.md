@@ -2,7 +2,7 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 1%
@@ -151,6 +151,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 该工具仅提供给管理员组，用于从Azure或S3数据存储中大规模获取资源。
 
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+
 要配置此工具，请执行以下步骤：
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]**。 选择&#x200B;**[!UICONTROL 创建]**&#x200B;选项。
@@ -199,12 +201,12 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 此外，如果部署中启用了[!DNL Dynamic Media]，则可以使用以下选项卡：
 
-* [Dynamic Media图像配](dynamic-media/image-profiles.md) 置文件允许您对上传的资&#x200B;**[!UICONTROL 产应]** 用特定裁剪（智能裁剪和像素裁剪）和锐化配置。
-* [Dynamic Media视频配置](dynamic-media/video-profiles.md) 文件允许您应用特定的视频编码用户档案（分辨率、格式、参数）。
+* [Dynamic Media图](dynamic-media/image-profiles.md) 像配置文件允许您对上传的资&#x200B;**[!UICONTROL 源应]** 用特定裁剪（智能裁剪和像素裁剪）和锐化配置。
+* [Dynamic Media视](dynamic-media/video-profiles.md) 频配置文件允许您应用特定的视频编码用户档案（分辨率、格式、参数）。
 
 >[!NOTE]
 >
->Dynamic Media对资产进行裁剪和其他操作是无损的，即，它们不会更改上传的原件，而是提供在传送资产时要进行裁剪或媒体转换的参数
+>Dynamic Media资产裁剪和其他操作是无损的，即它们不会更改上传的原始内容，而是为传送资产时要进行的裁剪或媒体转换提供参数
 
 对于分配了处理用户档案的文件夹，用户档案名显示在卡视图的缩略图上。 在列表视图中，用户档案名显示在&#x200B;**[!UICONTROL 处理用户档案]**&#x200B;列中。
 
