@@ -3,10 +3,10 @@ title: 支持的文件格式和MIME类型
 description: ' [!DNL Experience Manager Assets] 作为 [!DNL Cloud Service]支持的文件格式和MIME类型。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 35%
+source-wordcount: '807'
+ht-degree: 34%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 35%
 
 支持以下3D格式列表。
 
-另请参阅[在Dynamic Media中使用3D资产。](/help/assets/dynamic-media/assets-3d.md)
+另请参阅[在Dynamic Media使用3D资产。](/help/assets/dynamic-media/assets-3d.md)
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | 动态媒体投放 |
+| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | 选定 | 选定 | 选定 | - | 选定 | 选定 | - | - |
 | gLB | 选定 | 选定 | 选定 | 选定 | 选定 | - | 选定 | 选定 |
@@ -222,6 +222,10 @@ ht-degree: 35%
 ## 音频格式{#audio-formats}
 
 [!DNL Assets] as为 [!DNL Cloud Service] AIF、ASF、M4A、MP3、WAV和WMA音频格式提供XMP元数据提取支持。
+
+## 提示和限制{#limitations-and-tips}
+
+* 目前，元数据提取的文件大小限制约为10 GB。 上传超大资产时，元数据提取操作有时会失败。
 
 >[!MORELIKETHIS]
 >
