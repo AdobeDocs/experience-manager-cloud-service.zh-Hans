@@ -3,9 +3,9 @@ title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2532'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 开发人员可以使用[!DNL Asset Compute Service]创建符合支持用例的自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。 [[!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义应用程序。[!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
-* 使用[!DNL Adobe Photoshop]的[ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout)将结果保存为再现。
+* 使用[!DNL Adobe Photoshop]的[ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout)将结果另存为再现。
 * 呼叫第三方系统以更新数据，例如PIM系统。
 * 使用[!DNL Photoshop] API根据Photoshop模板生成各种再现。
 * 使用[AdobeLightroomAPI](https://github.com/AdobeDocs/lightroom-api-docs#supported-features)优化所摄取的资产并将其另存为演绎版。
@@ -221,6 +221,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 * 设计工作流时，请考虑您对所有类型再现的需求。 如果您不认为将来需要再现，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 延长使用[!DNL Experience Manager]后，不需要的再现可能占用大量存储空间。 对于单个资产，您可以从用户界面手动删除演绎版。 对于多个资产，您可以自定义[!DNL Experience Manager]以删除特定演绎版，或删除资产并再次上传这些资产。
 * 目前，支持仅限于生成再现。 不支持生成新资产。
+* 目前，元数据提取的文件大小限制约为10 GB。 上传超大资产时，元数据提取操作有时会失败。
 
 >[!MORELIKETHIS]
 >
