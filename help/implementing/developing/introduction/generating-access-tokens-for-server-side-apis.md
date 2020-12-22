@@ -2,9 +2,9 @@
 title: 为服务器端API生成访问令牌
 description: 了解如何通过生成安全的JWT令牌，将第三方服务器与AEM作为Cloud Service进行通信
 translation-type: tm+mt
-source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
+source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ ht-degree: 0%
 
 ## 服务器到服务器流{#the-server-to-server-flow}
 
-具有管理员角色的用户可以生成JWT承载令牌，该令牌应安装在服务器上，并应谨慎视为密钥。 JWT载体令牌应与IMS交换以获得访问令牌，该令牌应包含在发给AEM的请求中作为Cloud Service。
+具有管理员角色的用户可以生成AEM作为Cloud Service凭据，该凭据应安装在服务器上，并应谨慎视为密钥。 此JSON格式文件包含与AEM集成为Cloud ServiceAPI所需的所有数据。 该数据用于创建已签名的JWT令牌，该令牌与IMS交换以用于IMS访问令牌。 然后，此访问令牌可用作承载身份验证令牌以作为Cloud Service向AEM发出请求。
 
 服务器到服务器的流程涉及以下步骤：
 
-* 从开发人员控制台生成JWT载体令牌
-* 在向AEM发出调用的非AEM服务器上安装令牌
-* 使用Adobe的IMS API为访问令牌交换JWT载体令牌
-* 调用AEM API
+* 从开发人员控制台获取AEM作为Cloud Service凭据
+* 将AEM作为Cloud Service凭据安装到非AEM服务器上，以发出对AEM的调用
+* 生成JWT令牌，并使用Adobe的IMS API为访问令牌交换该令牌
+* 使用访问令牌作为承载身份验证令牌调用AEM API
 
-### 生成JWT承载令牌{#generating-the-jwt-bearer-token}
+### 将AEM作为Cloud Service凭据{#fetch-the-aem-as-a-cloud-service-credentials}提取
 
-具有组织管理员角色的用户将看到给定环境的开发人员控制台中的集成选项卡以及两个按钮。 单击&#x200B;**获取服务凭据**&#x200B;按钮将为环境的创作层和发布层生成私钥、证书和配置，而不管选择哪个窗格。
+对IMS组织具有管理员角色的用户将看到给定环境的开发人员控制台中的集成选项卡以及两个按钮。 单击&#x200B;**获取服务凭据**&#x200B;按钮将生成服务凭据json，该json将包含非AEM服务器所需的所有信息，包括环境的作者层和发布层的客户端id、客户端机密、私钥、证书和配置，而不管选择哪个窗格。
 
 ![JWT Generation](assets/JWTtoken3.png)
 
@@ -59,21 +59,45 @@ ht-degree: 0%
 }
 ```
 
-### 在非AEM服务器{#install-the-token-on-a-non-aem-server}上安装令牌
+### 在非AEM服务器{#install-the-aem-service-credentials-on-a-non-aem-server}上安装AEM服务凭据
 
-向AEM发出调用的非AEM应用程序应安装JWT承载令牌，将其视为机密。
+向AEM发出调用的非AEM应用程序应能够作为Cloud Service凭据访问AEM，将其视为机密。
 
-### 将JWT令牌交换为访问令牌{#exchange-the-jwt-token-for-an-access-token}
+### 生成JWT令牌并交换访问令牌{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在对AdobeIMS服务的调用中包含JWT令牌以检索访问令牌，该令牌的有效期为24小时。
+在对Adobe的IMS服务的调用中使用凭据创建JWT令牌，以检索有效时间为24小时的访问令牌。
+
+可以使用为此目的设计的客户端库将AEM-CS服务凭据交换为访问令牌。 可从[Adobe的公共GitHub存储库](https://github.com/adobe/aemcs-api-client-lib)访问客户端库，其中包含更详细的指南和最新信息。
+
+```
+/*jshint node:true */
+"use strict";
+
+const fs = require('fs');
+const exchange = require("@adobe/aemcs-api-client-lib");
+
+const jsonfile = "aemcs-service-credentials.json";
+
+var config = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
+exchange(config).then(accessToken => {
+    // output the access token in json form including when it will expire.
+    console.log(JSON.stringify(accessToken,null,2));
+}).catch(e => {
+    console.log("Failed to exchange for access token ",e);
+});
+```
+
+同样的交换可以在能够生成具有正确格式的签名JWT令牌并调用IMS令牌交换API的任何语言中执行。
+
+访问令牌将定义何时过期，通常为12h。 Git存储库中有一个示例代码，用于管理访问令牌并在过期前对其进行刷新。
 
 ### 调用AEM API {#calling-the-aem-api}
 
-将相应的服务器到服务器API调用作为Cloud Service环境(包括头中的访问令牌)发送到AEM。 因此，对于“Authorization”头，请使用值`"Bearer <access_token>"`。
+将相应的服务器到服务器API调用作为Cloud Service环境(包括头中的访问令牌)发送到AEM。 因此，对于“Authorization”头，请使用值`"Bearer <access_token>"`。 例如，使用`curl`:
 
-<!-- ### Code Samples {#code-samples}
-
-https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL will change to public git repo before we publish) contains client libraries written in node.js that will exchange the JSON outputted by the developer console for an access token. -->
+```curlc
+curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
+```
 
 ## 开发人员流{#developer-flow}
 
@@ -100,6 +124,6 @@ https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL wil
 
 将非AEM应用程序的适当服务器到服务器API调用作为Cloud Service环境，包括头中的访问令牌。 因此，对于“Authorization”头，请使用值`"Bearer <access_token>"`。
 
-## JWT承载令牌吊销{#jwt-bearer-token-revocation}
+## 服务凭据吊销{#service-credentials-revocation}
 
 如果需要撤销JWT承载令牌，请向客户支持提交请求。
