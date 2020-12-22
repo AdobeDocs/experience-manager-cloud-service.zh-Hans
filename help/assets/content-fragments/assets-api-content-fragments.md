@@ -2,9 +2,9 @@
 title: Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持
 description: 了解Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持。
 translation-type: tm+mt
-source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
+source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1877'
 ht-degree: 2%
 
 ---
@@ -381,9 +381,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 有关详细的API参考，请参阅此处：
 
-<!--
-* [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
--->
+* [Adobe Experience Manager资产API —— 内容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [资产 HTTP API](/help/assets/mac-api-assets.md)
 
