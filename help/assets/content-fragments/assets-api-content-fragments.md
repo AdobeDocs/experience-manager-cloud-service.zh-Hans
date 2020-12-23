@@ -2,9 +2,9 @@
 title: Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持
 description: 了解Adobe Experience Manager作为资产HTTP API中的Cloud Service内容片段支持。
 translation-type: tm+mt
-source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
+source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1914'
 ht-degree: 2%
 
 ---
@@ -82,9 +82,7 @@ HTTP方法确定要执行的操作：
 >
 >请求主体和／或URL参数可用于配置其中的一些操作；例如，定义文件夹或资产应由&#x200B;**POST**&#x200B;请求创建。
 
-<!--
-The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation.
--->
+支持的请求的确切格式在[API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)文档中定义。
 
 ### 事务性行为{#transactional-behavior}
 
@@ -256,11 +254,9 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 >
 >AEM云实例上的调度程序配置可能会阻止对`/api`的访问。
 
-<!--
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
--->
+>有关详细信息，请参阅[API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 特别是[Adobe Experience Manager资产API —— 内容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 读/投放{#read-delivery}
 
@@ -309,10 +305,6 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 * **当前不支持内容片段模型**:无法读取或创建。为了能够创建新内容片段或更新现有内容片段，开发人员必须知道内容片段模型的正确路径。 目前，获取这些概述的唯一方法是通过管理UI。
 * **引用将被忽略**。当前不检查是否引用了现有内容片段。 因此，例如，删除内容片段可能会导致页面上出现包含对已删除内容片段的引用的问题。
-
-<!--
-* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
--->
 
 ## 状态代码和错误消息{#status-codes-and-error-messages}
 
