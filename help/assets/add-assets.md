@@ -2,9 +2,9 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 批量上传资产{#bulk-upload}
 
-批量资产摄取工具可以高效地处理数千个资产。 但是，大规模摄取不仅仅是广泛和大型的文件转储或盲迁移。 如果它是一个有意义的项目，并且符合您的业务目的，则规划和管理资产会带来效率更高的摄取。 所有的收入都不一样，要做概括，就必须考虑细致的存储库组成和业务需求。 以下是计划和执行批量摄取的总体建议：
+批量资产摄取器可以高效地处理大量资产。 但是，大规模摄取不仅仅是一个广泛的文件转储或临时迁移。 要实现大规模摄取，使其成为符合您业务目的且高效的有意义的项目，请规划迁移并管理资产组织。 所有收入都不同，因此，在细微的信息库构成和业务需求中，不是泛泛的因素。 以下是规划和执行批量摄取的一些总体建议：
 
 * 特选资产：删除DAM中不需要的资产。 考虑删除未使用、过时或重复资产。 这减少了数据传输和资产摄取量，从而加快了摄取速度。
 * 组织资产：考虑按照某种逻辑顺序组织内容，例如按文件大小、文件格式、用例或优先级。 通常，大型复杂文件需要更多处理。 您还可以考虑使用文件大小筛选选项（如下所述）单独引入大文件。
@@ -149,7 +149,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 资产批量摄取工具{#asset-bulk-ingestor}
 
-该工具仅提供给管理员组，用于从Azure或S3数据存储中大规模获取资源。
+该工具仅提供给管理员组，用于从Azure或S3数据存储中大规模获取资源。 观看配置和摄取的视频演练。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
