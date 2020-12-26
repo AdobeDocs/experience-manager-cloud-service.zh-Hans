@@ -3,10 +3,10 @@ title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署中可用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29c3ca56281c482f195d84590ceb4ef07c556e64
+source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 41%
+source-wordcount: '2688'
+ht-degree: 28%
 
 ---
 
@@ -45,16 +45,17 @@ ht-degree: 41%
 
 ### 涉及的用户和组 {#users-and-groups-involved}
 
-下面介绍了配置和使用该功能所涉及的各种角色，及其相应的用户组。本地范围用于作者创建网页的用例。 对于托管所需资产的 DAM 部署，使用远程范围。[!DNL Sites]作者获取这些远程资产。
+下面介绍了配置和使用该功能所涉及的各种角色，及其相应的用户组。本地范围用于作者创建网页的用例。 远程范围用于DAM部署。 [!DNL Sites]作者获取这些远程资产。
 
 | 角色 | 范围 | 用户组 | 演示中的用户名 | 要求 |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------|--------|-----------|-----|----------|
 | [!DNL Sites] 管理员 | 本地 | [!DNL Experience Manager] `administrators` | `admin` | 设置[!DNL Experience Manager]并配置与远程[!DNL Assets]部署的集成。 |
 | DAM 用户 | 本地 | `Authors` | `ksaner` | 用于查看和复制在 `/content/DAM/connectedassets/` 上获取的资产。 |
-| [!DNL Sites] 作者 | 本地 | `Authors` (在远程DAM上具有读访问权，在本地具有作者访问权 [!DNL Sites]) | `ksaner` | 最终用户是[!DNL Sites]作者，他们使用此集成来提高其内容速度。 作者使用[!UICONTROL 内容查找器]在远程DAM中搜索和浏览资产，并在本地网页中使用所需的图像。 使用的 DAM 用户的 `ksaner` 凭据。 |
+| [!DNL Sites] 作者 | 本地 | <ul><li>`Authors` (在远程DAM上具有读访问权，在本地具有作者访问权 [!DNL Sites]) </li> <li>`dam-users` 在本地  [!DNL Sites]</li></ul> | `ksaner` | 最终用户是[!DNL Sites]作者，他们使用此集成来提高其内容速度。 作者使用[!UICONTROL 内容查找器]在远程DAM中搜索和浏览资产，并在本地网页中使用所需的图像。 使用的 DAM 用户的 `ksaner` 凭据。 |
 | [!DNL Assets] 管理员 | 远程 | [!DNL Experience Manager] `administrators` | `admin` 在远程  [!DNL Experience Manager] | 配置跨源资源共享 (CORS)。 |
 | DAM 用户 | 远程 | `Authors` | `ksaner` 在远程  [!DNL Experience Manager] | 远程[!DNL Experience Manager]部署上的作者角色。 使用[!UICONTROL 内容查找器]在已连接资产中搜索和浏览资产。 |
-| DAM 分发人员（技术用户） | 远程 | [!DNL Sites] `Authors` | `ksaner` 在远程  [!DNL Experience Manager] | [!DNL Experience Manager]本地服务器（不是[!DNL Sites]作者角色）使用此远程部署用户代表[!DNL Sites]作者获取远程资产。 此角色与上述两个 `ksaner` 角色不同，它属于另一个不同的用户组。 |
+| DAM 分发人员（技术用户） | 远程 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 在远程  [!DNL Experience Manager] | [!DNL Experience Manager]本地服务器（不是[!DNL Sites]作者角色）使用此远程部署用户代表[!DNL Sites]作者获取远程资产。 此角色与上述两个 `ksaner` 角色不同，它属于另一个不同的用户组。 |
+| [!DNL Sites] 技术用户 | 本地 | `connectedassets-sites-techaccts` | - | 允许[!DNL Assets]部署在[!DNL Sites]网页中搜索对资产的引用。 |
 
 ## 配置[!DNL Sites]和[!DNL Assets]部署{#configure-a-connection-between-sites-and-assets-deployments}之间的连接
 
@@ -62,29 +63,28 @@ ht-degree: 41%
 
 要配置已连接资产和本地[!DNL Sites]连接，请执行以下步骤：
 
-1. 访问现有[!DNL Sites]部署或使用以下命令创建部署：
+1. 访问现有[!DNL Sites]部署。 此[!DNL Sites]部署用于网页创作，例如`https://[sites_servername]:port`。 当页面创作发生在[!DNL Sites]部署时，让我们从页面创作角度将[!DNL Sites]部署调用为本地部署。
 
-   1. 在JAR文件的文件夹中，在终端上执行以下命令以创建每个[!DNL Experience Manager]服务器。
-      `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+1. 访问现有[!DNL Assets]部署。 此[!DNL Assets]部署用于管理数字资产，例如`https://[assets_servername]:port`。
 
-   1. 几分钟后，[!DNL Experience Manager]服务器开始成功。 将此[!DNL Sites]部署视为用于网页创作的本地计算机，例如`https://[local_sites]:4502`。
+1. 确保在[!DNL Sites]部署和AMS的[!DNL Assets]部署中存在具有适当范围的用户和角色。 在[!DNL Assets]部署中创建一个技术用户，并将其添加到[用户和涉及的组](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved)中提到的用户组。
 
-1. 确保在[!DNL Sites]部署和AMS的[!DNL Assets]部署中存在具有本地范围的用户和角色。 在[!DNL Assets]部署中创建一个技术用户，并将其添加到[用户和涉及的组](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved)中提到的用户组。
+1. 访问`https://[sites_servername]:port`的本地[!DNL Sites]部署。 单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 已连接资产配置]**。提供以下值：
 
-1. 访问`https://[local_sites]:4502`的本地[!DNL Sites]部署。 单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 连接的资产配置]**，并提供以下值：
-
-   1. [!DNL Assets] 位置为 `https://[assets_servername_ams]:[port]`。
+   1. 配置的&#x200B;**[!UICONTROL 标题]**。
+   1. **[!UICONTROL 远程]** DAM URL是格式 [!DNL Assets] 中位置的URL `https://[assets_servername]:[port]`。
    1. DAM 分发人员（技术用户）的凭据。
-   1. 在&#x200B;**[!UICONTROL 装载点]**&#x200B;字段中，输入[!DNL Experience Manager]获取资产的本地[!DNL Experience Manager]路径。 例如，`remoteassets` 文件夹。
+   1. 在&#x200B;**[!UICONTROL 装载点]**&#x200B;字段中，输入[!DNL Experience Manager]获取资产的本地[!DNL Experience Manager]路径。 例如，`connectedassets` 文件夹。从DAM获取的资产存储在[!DNL Sites]部署的此文件夹中。
+   1. **[!UICONTROL 本地]** 站点URL是部署的 [!DNL Sites] 位置。[!DNL Assets] 部署使用此值来维护对此部署获取的数字资产的 [!DNL Sites] 引用。
+   1. [!DNL Sites]技术用户的凭据。
+   1. **[!UICONTROL 原始二进制传输优化阈值]**&#x200B;字段的值指定原始资产（包括演绎版）是否同步传输。 可以轻松获取文件较小的资产，而文件较大的资产最好异步同步。 价值取决于您的网络功能。
+   1. 如果您使用数据存储来存储您的资产，且数据存储是两个 部署之间的公用存储，请选择&#x200B;**[!UICONTROL 与连接的资产共享数据存储]**。在这种情况下，阈值限制并不重要，因为实际的资产二进制文件在数据存储上可用，并且不会传输。
 
-   1. 根据您的网络，调整&#x200B;**[!UICONTROL 原始二进制传输优化阈值]**&#x200B;的值。大于此阈值的资产演绎版，将异步传输。
-   1. 如果您使用数据存储来存储您的资产，且数据存储是两个 部署之间的公用存储，请选择&#x200B;**[!UICONTROL 与连接的资产共享数据存储]**。在这种情况下，阈值限制并不重要，因为实际的资产二进制文件驻留在数据存储上并且不会传输。
+   ![连接资产功能的典型配置](assets/connected-assets-typical-config.png)
 
-   ![连接的资产的典型配置](assets/connected-assets-typical-config.png)
+   *图：连接资产功能的典型配置。*
 
-   *图：连接的资产的典型配置.*
-
-1. 由于已经处理资产且已获取资产演绎版，因此请禁用工作流程启动器。调整本地([!DNL Sites])部署上的启动器配置，以排除从中获取远程资源的`connectedassets`文件夹。
+1. [!DNL Assets]部署中的现有数字资产已经处理，并且将生成演绎版。 这些演绎版是使用此功能获取的，因此无需重新生成演绎版。 禁用工作流启动器，以防止再生再现。 调整([!DNL Sites])部署中的启动器配置以排除`connectedassets`文件夹（资产将在此文件夹中获取）。
 
    1. 在[!DNL Sites]部署中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 启动器]**。
 
@@ -104,13 +104,9 @@ ht-degree: 41%
    >
    >在作者获取资产时，将会获取该资产在远程 部署中可用的所有演绎版。如果要为获取的资产创建更多演绎版，请跳过此配置步骤。将触发[!UICONTROL  DAM更新资产]工作流并创建更多演绎版。 这些演绎版仅在本地[!DNL Sites]部署中可用，在远程DAM部署中则不可用。
 
-1. 将[!DNL Sites]部署添加为远程[!DNL Assets'] CORS配置上的&#x200B;**[!UICONTROL 允许的来源]**&#x200B;之一。
+1. 将[!DNL Sites]部署添加为[!DNL Assets]部署上的CORS配置中允许的来源。 有关详细信息，请参阅[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)。
 
-   1. 使用管理员凭据登录。 搜索 `Cross-Origin`. 访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 运营]** > **[!UICONTROL Web 控制台]**。
-
-   1. 要为[!DNL Sites]部署创建CORS配置，请单击&#x200B;**[!UICONTROL AdobeGranite跨来源资源共享策略]**&#x200B;旁边的“资产添加”选项![“添加”图标](assets/do-not-localize/aem_assets_add_icon.png)。
-
-   1. 在字段&#x200B;**[!UICONTROL 允许的来源]**&#x200B;中，输入本地[!DNL Sites]的URL，即`https://[local_sites]:[port]`。 保存配置。
+<!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
 ## 使用远程资产 {#use-remote-assets}
 
@@ -140,13 +136,13 @@ ht-degree: 41%
 
    *图：在远程 DAM 上搜索资产时，筛选文档类型和图像的选项.*
 
-1. 如果异步获取资产且获取任务失败，会通知站点作者。在创作过程中甚至是创作后，作者可以在[异步作业](/help/operations/asynchronous-jobs.md)用户界面中，查看关于获取任务和错误的详细信息。
+1. 如果异步获取资产且获取任务失败，会通知站点作者。在创作时，甚至在创作之后，作者可以在[异步作业](/help/operations/asynchronous-jobs.md)用户界面中查看有关提取任务和错误的详细信息。
 
    ![关于在后台进行的异步获取资产的通知。](assets/assets_async_transfer_fails.png)
 
    *图：关于在后台进行的异步获取资产的通知。*
 
-1. 发布页面时，[!DNL Experience Manager]将显示页面上使用的资产的完整列表。 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请查看[异步作业](/help/operations/asynchronous-jobs.md)用户界面。
+1. 发布页面时，[!DNL Experience Manager]将显示页面上使用的资产的完整列表。 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请参阅[异步作业](/help/operations/asynchronous-jobs.md)用户界面。
 
    >[!NOTE]
    >
@@ -158,15 +154,22 @@ ht-degree: 41%
 
 获取的资产可用作任何其他本地资产，但关联的元数据无法编辑。
 
-<!-- TBD: Uncomment after verification for Dec release.
+### 检查跨网页{#asset-usage-references}使用资产的情况
 
-### Check use of an asset across other pages {#asset-usage-references}
+[!DNL Experience Manager] 允许DAM用户检查对资产的所有引用。它有助于了解和管理远程[!DNL Sites]和复合资产中资产的使用情况。 部署[!DNL Experience Manager Sites]的多个网页的作者可以在不同网页的远程[!DNL Assets]上使用资产。 为简化资产管理，且不会导致引用中断，DAM用户必须检查本地和远程网页中资产的使用情况。 资产的[!UICONTROL 属性]页面中的[!UICONTROL 引用]选项卡列表资产的本地和远程引用。
 
-[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+要视图和管理[!DNL Assets]部署上的引用，请执行以下步骤：
 
-Users can view incoming references of the assets and move or delete the asset.
+1. 在[!DNL Assets]控制台中选择资产，然后单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
+1. 单击&#x200B;**[!UICONTROL 引用]**&#x200B;选项卡。 有关在[!DNL Assets]部署上使用资产的信息，请参阅&#x200B;**[!UICONTROL 本地引用]**。 请参阅**[!UICONTROL 远程引用]，以便在[!DNL Sites]部署中使用已连接资产功能获取资产。
 
--->
+   ![资产属性中的远程引用](assets/connected-assets-remote-reference.png)
+
+1. [!DNL Sites]页的引用显示每个本地[!DNL Sites]的引用总数。 查找所有引用并显示引用总数可能需要一些时间。
+1. 引用列表为交互式，DAM用户可以单击引用以打开引用页面。 如果由于某种原因无法获取远程引用，则显示通知，通知用户失败。
+1. 用户可以移动或删除资产。 移动或删除资产时，所有选定资产／文件夹的引用总数会显示在警告对话框中。 删除尚未显示引用的资产时，将显示警告对话框。
+
+   ![强制删除警告](assets/delete-referenced-asset.png)
 
 ## 限制和最佳实践{#tip-and-limitations}
 
@@ -198,13 +201,18 @@ Users can view incoming references of the assets and move or delete the asset.
 * 可以对获取的资产执行无损的简单编辑以及 `Image` 组件支持的编辑。资产是只读的。
 * 重新提取资产的唯一方法是将其拖动到页面上。 没有API支持或其他方法可重新获取资产以进行更新。
 * 如果资产从DAM中停止使用，则这些资产将继续在[!DNL Sites]页面上使用。
+* 资产的远程引用条目将异步读取。 引用和总计数不是实时的，如果在DAM用户查看引用时站点作者使用资产，则可能会有一些不同。 DAM用户可以刷新页面，并在几分钟后重试以获取总计数。
 
 ## 故障诊断问题 {#troubleshoot}
 
-要排除常见错误方案的故障，请执行以下步骤：
+要排除常见错误，请执行以下步骤：
 
 * 如果无法从[!UICONTROL 内容查找器]搜索远程资产，请确保所需的角色和权限已到位。
 * 由于一个或多个原因，从远程dam获取的资产可能无法发布到网页上。 它在远程服务器上不存在，缺少相应的权限来获取它，或者网络故障可能是原因。 确保资产未从远程DAM中删除。 确保拥有适当的权限，并满足先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/operations/asynchronous-jobs.md)，查看是否发生了资产获取错误。
 * 如果无法从本地[!DNL Sites]部署访问远程DAM部署，请确保允许跨站点Cookie。 如果跨站点Cookie被阻止，则[!DNL Experience Manager]的两个部署可能无法进行身份验证。 例如，在Incognito模式下，[!DNL Google Chrome]可能会阻止第三方cookie。 要允许[!DNL Chrome]浏览器中的cookie，请单击地址栏中的“眼睛”图标，导航到“站点不工作”>“阻止”，选择“远程DAM URL”，并允许登录令牌cookie。 或者，请参阅有关如何启用第三方cookies](https://support.google.com/chrome/answer/95647)的帮助。[
 
    ![Chrome中的Incognito模式下的Cookie错误](assets/chrome-cookies-incognito-dialog.png)
+
+* 如果未检索远程引用并导致错误消息，请检查站点部署是否可用，并检查网络连接问题。 稍后重试以检查。 [!DNL Assets] 部署尝试两次建立与部 [!DNL Sites] 署的连接，然后报告失败。
+
+![重试资产远程引用失败](assets/reference-report-failure.png)
