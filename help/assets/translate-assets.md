@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
 workflow-type: tm+mt
 source-wordcount: '2608'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -133,7 +133,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 单击/点按&#x200B;**[!UICONTROL 创建]**。要翻译的资产将添加到目标文件夹。更新的文件夹列在&#x200B;**[!UICONTROL 语言副本]**&#x200B;部分下。
 1. 导航到项目控制台，然后打开您添加到的现有翻译项目。
 1. 单击／点按项目详细信息页面视图的转换项目。
-1. 单击／点按&#x200B;**转换作业**&#x200B;拼贴底部的省略号，以视图转换工作流中的资产。 转换作业列表还显示资产元数据和标记的条目。 这些条目指示资产的元数据和标记也会被翻译。
+1. 单击／点按&#x200B;**转换作业**&#x200B;拼贴底部的省略号，以视图转换工作流中的资产。 翻译作业列表还会显示资产元数据和标记条目。这些条目指示资产的元数据和标记也会被翻译。
 
    >[!NOTE]
    >
