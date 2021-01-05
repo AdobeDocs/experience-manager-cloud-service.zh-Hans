@@ -62,7 +62,7 @@ IMS 配置包括两个步骤：
 
 公钥（证书）在Adobe开发者控制台上验证您的用户档案。
 
-1. 登录 AEM 资产。
+1. 登录 AEM Assets。
 1. 从&#x200B;**工具**&#x200B;面板，导航至&#x200B;**[!UICONTROL 安全]** > **[!UICONTROL AdobeIMS配置]**。
 1. 在“AdobeIMS配置”页中，单击&#x200B;**[!UICONTROL 创建]**。 它将重定向到&#x200B;**[!UICONTROL AdobeIMS技术帐户配置]**&#x200B;页。 默认情况下，**证书**&#x200B;选项卡打开。
 1. 在&#x200B;**[!UICONTROL 云解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Adobe品牌门户]**。
@@ -215,7 +215,7 @@ IMS 配置包括两个步骤：
 
 请执行以下步骤来配置Brand Portal云服务：
 
-1. 登录 AEM 资产。
+1. 登录 AEM Assets。
 
 1. 从&#x200B;**工具**&#x200B;面板，导航到&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL AEM品牌门户]**。
 
@@ -237,7 +237,7 @@ IMS 配置包括两个步骤：
 
 请执行以下步骤以验证配置：
 
-1. 登录 AEM 资产。
+1. 登录 AEM Assets。
 
 1. 从&#x200B;**工具**&#x200B;面板，导航到&#x200B;**[!UICONTROL 部署]** > **[!UICONTROL 分发]**。
 
