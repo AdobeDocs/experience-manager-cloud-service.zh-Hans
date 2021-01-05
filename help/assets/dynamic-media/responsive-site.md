@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 26%
+ht-degree: 36%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 26%
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. 在&#x200B;**[!UICONTROL 嵌入响应式图像]**&#x200B;对话框中，选择并复制响应式代码文本，然后将其粘贴到您的网站中以访问响应式资产。
-1. 编辑嵌入代码中的默认断点，使其直接与响应式网站的代码断点相匹配。此外，测试不同页面断点处使用的不同图像分辨率。
+1. 编辑嵌入代码中的默认断点，以直接与响应式网站的代码断点相匹配。此外，还应测试不同页面断点处使用的不同图像分辨率。
 
 ## 使用HTTP/2投放您的Dynamic Media资源{#using-http-to-delivery-your-dynamic-media-assets}
 
