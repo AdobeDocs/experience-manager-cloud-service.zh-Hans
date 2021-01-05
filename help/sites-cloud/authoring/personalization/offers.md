@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 90%
 
    ![创建优惠文件夹](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. 选择&#x200B;**文件夹**&#x200B;并单击&#x200B;**下一步**。
+1. 选择&#x200B;**文件夹**，然后单击&#x200B;**下一步**。
 1. 键入您希望文件夹在选件库中显示的标题，然后键入或选择标记。
 
    ![定义文件夹属性](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
@@ -63,7 +63,7 @@ ht-degree: 90%
 
 1. 选择&#x200B;**选件页面**&#x200B;模板，然后单击或点按&#x200B;**下一步**。
 1. 键入选件的标题，（可选）选择或键入要与该选件关联的一个或多个标记，然后单击或点按&#x200B;**创建**。
-1. 在确认对话框中，要打开要编辑的优惠，请单击或点按&#x200B;**打开页面**。
+1. 在确认对话框中，要打开选件进行编辑，请单击或点按&#x200B;**打开页面**。
 
 ## 编辑选件 {#editing-an-offer}
 
@@ -100,5 +100,5 @@ ht-degree: 90%
 
 要搜索选件，请执行以下操作：
 
-1. 在“选件”控制台顶部，单击或点按放大镜图标。默认情况下，搜索仅限于优惠。
+1. 在“选件”控制台顶部，单击或点按放大镜图标。默认情况下，仅限于搜索选件。
 1. 输入关键字以搜索选件。从结果中进行选择。
