@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1467'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
 
 # 混合媒体集{#mixed-media-sets}
 
-通过混合媒体集，您可以在一个演示文稿中提供图像、图像集、旋转集和视频的混合。
+通过混合媒体集，您可以在一份展示中提供图像、图像集、旋转集和视频的组合内容。
 
 混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **** Pencil图标指示)。
 
@@ -52,9 +52,9 @@ ht-degree: 43%
 
    发布混合媒体集时，将会激活 URL 和嵌入字符串。此外，您必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
 
-1. [将URL关联到您的Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 应用程 [序或嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
+1. [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或者[嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
-   在发布混合媒体集后，AEM 资产会为该混合媒体集创建 URL 调用并将其激活。预览资产时，您可以复制这些 URL。或者，您也可以将这些 URL 嵌入到网站中。
+   在发布混合媒体集后，AEM Assets 会为该混合媒体集创建 URL 调用并将其激活。预览资产时，您可以复制这些 URL。或者，您也可以将这些 URL 嵌入到网站中。
 
    选择混合媒体集，然后在左边栏下拉菜单中，选择&#x200B;**[!UICONTROL 查看器]**。
 
