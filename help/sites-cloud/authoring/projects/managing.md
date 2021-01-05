@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -57,7 +57,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
    >
    >有关可与项目关联的项目拼贴的详细说明，请参阅[项目拼贴](/help/sites-cloud/authoring/projects/overview.md#project-tiles)。
 
-1. 点按/单击&#x200B;**创建**。您的资源已链接到您的项目，从现在开始，您可以从您的项目访问它。
+1. 点按/单击&#x200B;**创建**。您的资源随即会链接到项目，从现在开始，您便可以从项目中访问该资源。
 
 ### 删除项目或资源链接 {#deleting-a-project-or-resource-link}
 
