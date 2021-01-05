@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '1545'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -185,7 +185,7 @@ ht-degree: 70%
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
 1. 选择&#x200B;**回退**&#x200B;以打开对话框。
-1. 指定&#x200B;**上一步**&#x200B;并根据需要添加&#x200B;**注释**。
+1. 指定&#x200B;**上一步**，并根据需要添加&#x200B;**评论**。
 1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止操作）。
 
 #### 对参与者步骤执行回退 - 页面编辑器 {#performing-step-back-on-a-participant-step-page-editor}
@@ -194,7 +194,7 @@ ht-degree: 70%
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**回退**。
-1. 指定&#x200B;**上一步**&#x200B;并根据需要添加&#x200B;**注释**。
+1. 指定&#x200B;**上一步**，并根据需要添加&#x200B;**评论**。
 1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止操作）。
 
 #### 对参与者步骤执行回退 - 时间轴 {#performing-step-back-on-a-participant-step-timeline}
@@ -218,7 +218,7 @@ ht-degree: 70%
 
 工作流详细信息会以选项卡的形式显示，并且工具栏中会提供相应的操作：
 
-* **工作** 项选项卡：
+* **工作项**&#x200B;选项卡：
 
    ![工作项选项卡](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
