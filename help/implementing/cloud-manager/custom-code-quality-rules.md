@@ -219,7 +219,7 @@ public class DontDoThis implements Page {
 
 从ResourceResolverFactory获取的ResourceResolver对象使用系统资源。 尽管当ResourceResolver不再使用时，已经有可回收这些资源的度量，但通过调用close()方法显式关闭任何已打开的ResourceResolver对象会更有效。
 
-一个比较常见的误解是使用现有JCR会话创建的ResourceResolver对象不应显式关闭，或者这样做将关闭基础JCR会话。 这种情况不存在——无论ResourceResolver如何打开，都应在不再使用时关闭它。 由于ResourceResolver实现了Closeable接口，因此也可以使用try-with-resources语法，而不是显式调用close()。
+一个比较常见的误解是使用现有JCR会话创建的ResourceResolver对象不应显式关闭，或者这样做将关闭基础JCR会话。 这种情况不存在——无论ResourceResolver如何打开，都应在不再使用时关闭它。 由于ResourceResolver实现了Closeable接口，因此也可以使用try-with-resources语法而不是显式调用close()。
 
 #### 不兼容代码{#non-compliant-code-4}
 
