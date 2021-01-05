@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 73%
+ht-degree: 80%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 73%
 
 ![添加体验](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
-选择缩略图的路径，并在适用的情况下更改体验的缩略图。体验在&#x200B;**体验**&#x200B;拼贴中分组在一起。
+选择缩略图的路径，并在适用的情况下更改体验的缩略图。体验会在&#x200B;**体验**&#x200B;拼贴中进行分组。
 
 ### 链接 {#links}
 
@@ -116,7 +116,7 @@ ht-degree: 73%
 
 ![翻译作业](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-单击&#x200B;**翻译作业**&#x200B;卡底部的省略号，以视图翻译工作流中的资产。 转换作业列表还显示资产元数据和标记的条目。 这些条目指示资产的元数据和标记也会被翻译。
+单击&#x200B;**翻译作业**&#x200B;卡底部的省略号，以视图翻译工作流中的资产。 翻译作业列表还会显示资产元数据和标记条目。这些条目指示资产的元数据和标记也会被翻译。
 
 ![翻译作业详细信息](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -126,7 +126,7 @@ ht-degree: 73%
 
 ![团队拼贴](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
-您可以在团队中添加和删除团队成员。此外，还可以编辑分配给团队成员的[用户角色](#user-roles-in-a-project)。
+您可以在团队中添加和删除团队成员。此外，您还可以编辑向团队成员分配的[用户角色](#user-roles-in-a-project)。
 
 ![从列表添加团队](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
 
@@ -154,10 +154,10 @@ ht-degree: 73%
 
 ## 项目模板 {#project-templates}
 
-AEM随附三个不同的现成模板：
+AEM 提供了四种不同的现成模板：
 
 * 简单项目——任何不适合其他类别的项目的参考范例（全部捕获）。 它包括三个基本角色（所有者、编辑者和观察者）和四个工作流（项目批准、请求启动项、请求登陆页面和请求电子邮件）。
-* 媒体项目——与媒体相关的活动的参考示例项目。 它包括几个与媒体相关的项目角色（摄影师、编辑者、撰稿人、设计师、所有者和观察者）。它还包括两个与媒体内容相关的工作流-请求复制（用于请求和查看文本）和产品照片拍摄（用于管理与产品相关的照片）
+* 媒体项目——与媒体相关的活动的参考示例项目。 它包括几个与媒体相关的项目角色（摄影师、编辑者、撰稿人、设计师、所有者和观察者）。此外，它还包括两个与媒体内容相关的工作流 - 请求复制（用于请求和查看文本）和产品照片拍摄（用于管理与产品相关的照片）。
 * 翻译项目 - 用于管理翻译相关活动的参考示例。它包括三个基本角色（所有者、编辑者和观察者）。它包括两个工作流，它们可在工作流用户界面中访问。<!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
 
 根据您选择的模板，您可以使用不同的选项，特别是与用户角色和工作流有关的选项。
@@ -166,8 +166,8 @@ AEM随附三个不同的现成模板：
 
 项目模板中设置了不同的用户角色，之所以使用这些用户角色，主要是出于以下两个原因：
 
-1. 权限. 用户角色属于下列三个类别之一：观察者、编辑者、所有者。例如，摄影师或文案人将具有与编辑相同的权限。 权限决定了用户可以对项目中的内容执行的操作。
-1. 工作流. 工作流可确定向谁分配了项目中的任务。任务可以与项目角色关联。 例如，可以将某个任务分配给摄影师，这样所有具有摄影师角色的团队成员都将会获取该任务。
+1. 权限. 用户角色属于下列三个类别之一：观察者、编辑者、所有者。例如，摄影师或撰稿人将拥有与编辑者相同的权限。权限决定了用户可以对项目中的内容执行的操作。
+1. 工作流. 工作流可确定向谁分配了项目中的任务。任务可以与项目角色关联。例如，可以将某个任务分配给摄影师，这样所有具有摄影师角色的团队成员都将会获取该任务。
 
 所有项目都支持以下默认角色，以便您可以管理安全性和控制权限：
 
