@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 14%
+ht-degree: 19%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 14%
   </tr>
   <tr>
    <td><p>章节标题</p> </td>
-   <td><p> 添加一列表常用组件的章节标题。</p> </td>
+   <td><p> 添加一系列常用组件的章节标题。</p> </td>
   </tr>
   <tr>
    <td><p>单行文本</p> </td>
@@ -73,7 +73,7 @@ ht-degree: 14%
   </tr>
   <tr>
    <td><p>多值文本</p> </td>
-   <td><p> 添加多值文本属性。它存储为字符串数组。</p> </td>
+   <td><p> 添加多值文本属性。它将作为字符串数组存储。</p> </td>
   </tr>
   <tr>
    <td><p>数字</p> </td>
@@ -89,11 +89,11 @@ ht-degree: 14%
   </tr>
   <tr>
    <td><p>标准标记</p> </td>
-   <td><p> 添加标记. </p> </td>
+   <td><p> 添加标记。 </p> </td>
   </tr>
   <tr>
    <td><p>隐藏字段</p> </td>
-   <td><p> 添加隐藏字段。在保存资产时，它将作为POST参数发送。</p> </td>
+   <td><p> 添加隐藏字段。在保存资产时，该字段将作为 POST 参数发送。</p> </td>
   </tr>
  </tbody>
 </table>
