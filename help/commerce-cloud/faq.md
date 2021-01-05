@@ -23,9 +23,9 @@ AEM无需I/O Runtime层即可直接连接到Magento。 如果需要将非Magento
 
 I/O运行时平台还可用于扩展或自定义商务服务。 对于此用例，您将调用I/O Runtime端点，该端点随后将承载各个服务的自定义实现。 集成和扩展用例可以结合使用。
 
-## 3.产品资产（图像）是否可以通过Magento管理员从AEM进行存储和引用？ 如何使用Dynamic Media中的资产？
+## 3.产品资产（图像）是否可以通过Magento管理员从AEM进行存储和引用？ 如何消费Dynamic Media的资产？
 
-目前没有AEM Assets-Magento整合。 作为解决方法，您可以在AEM Assets存储产品资产（图像），但必须在Magento中手动存储资产URL。 Dynamic Media现在是AEM Assets的一部分，将以同样的方式工作。
+目前没有AEM Assets-Magento整合。 作为解决方法，您可以在AEM Assets存储产品资产（图像），但必须在Magento中手动存储资产URL。 Dynamic Media现在是AEM Assets的一部分，将采取同样的方式工作。
 
 ## 4.在何处部署Magento是否重要？ （在云端或在云端）
 
