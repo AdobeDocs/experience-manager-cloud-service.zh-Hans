@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager资产[!DNL Cloud Service]优惠云本地PaaS解决方案，使企业不仅能够快速、有影响地执行数字资产管理和动态媒体操作，而且能够在始终处于最新状态、始终可用且始终处于学习状态的系统中使用下一代智能功能，如AI/ML。
+Adobe Experience Manager资产[!DNL Cloud Service]优惠云本地的PaaS解决方案，使企业不仅能够快速、有影响地执行其数字资产管理和Dynamic Media业务，而且能够在始终处于最新状态、始终可用且始终处于学习状态的系统中使用下一代智能功能，如AI/ML。
 
 对于AEM作者实例，并发获取许多资产或复杂资产是资源密集型任务。 在添加、处理甚至迁移资产时，主实例会消耗大量CPU、内存和I/O资源。 这类性能问题会影响最终用户的创作和浏览体验。
 
