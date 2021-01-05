@@ -1,6 +1,6 @@
 ---
 title: 关于Dynamic Media图像用户档案和视频用户档案
-description: 图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用到Dynamic Media图像资产的图像用户档案，以正确裁剪这些资产。
+description: 图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用于Dynamic Media图像资产的图像用户档案，以正确裁剪这些图像资产。
 translation-type: tm+mt
 source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # 关于Dynamic Media图像用户档案和视频用户档案{#about-dm-image-video-profiles}
 
-图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用到Dynamic Media图像资产的图像用户档案，以正确裁剪这些资产。
+图像用户档案或视频用户档案是将哪些选项应用到您上传到文件夹的资产的菜谱。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用于Dynamic Media图像资产的图像用户档案，以正确裁剪这些图像资产。
 
-在Dynamic Media中，您可以创建两种类型的用户档案，这些类型在以下链接中有详细介绍：
+在Dynamic Media，您可以创建两种类型的用户档案，其详细信息请参阅以下链接：
 
 * [Dynamic Media图像用户档案](/help/assets/dynamic-media/image-profiles.md)
 * [Dynamic Media视频用户档案](/help/assets/dynamic-media/video-profiles.md)
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 您必须具有管理员权限才能创建、编辑和删除Dynamic Media图像用户档案或Dynamic Media视频用户档案。
 
-创建图像用户档案或视频用户档案后，您可以将其分配给一个或多个文件夹，这些文件夹用作新上传的Dynamic Media资产的目标。
+创建图像用户档案或视频用户档案后，您可以将其分配给一个或多个文件夹，以用作新上传的Dynamic Media资产的目标。
 
 另请参阅[组织数字资产以使用图像用户档案或视频用户档案的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)。
 
@@ -33,23 +33,23 @@ ht-degree: 3%
 >
 >即使在分配了相同用户档案的两个文件夹之间移动资产，情况也是如此。
 
-## 重新处理文件夹{#reprocessing-assets}中的Dynamic Media资产
+## 在文件夹{#reprocessing-assets}中重新处理Dynamic Media资源
 
 您可以重新处理已有Dynamic Media图像用户档案或稍后更改的Dynamic Media视频用户档案的文件夹中的资产。
 
-例如，假定您创建了Dynamic Media图像用户档案并将其分配给文件夹。 您上传到该文件夹的任何图像资产都会自动将图像用户档案应用到资产。 但是，稍后您决定向图像用户档案添加新的智能裁剪比率。 现在，您只需运行&#x200B;*Scene7:重新处理资产*&#x200B;工作流。
+例如，假定您创建了一个Dynamic Media图像用户档案并将其分配给文件夹。 您上传到该文件夹的任何图像资产都会自动将图像用户档案应用到资产。 但是，稍后您决定向图像用户档案添加新的智能裁剪比率。 现在，您只需运行&#x200B;*Scene7:重新处理资产*&#x200B;工作流。
 
 您可以对首次处理失败的资产运行重新处理工作流。 因此，即使您尚未编辑图像用户档案或视频用户档案，或者您已经应用了图像用户档案或视频用户档案，您仍然可以随时对资产文件夹运行重新处理工作流。
 
-您可以选择调整重新处理工作流的批大小，默认值为50个资产，最多为1000个资产。 运行&#x200B;_Scene7时：在文件夹中重新处理资产_&#x200B;工作流，资产会分批分组在一起，然后发送到Dynamic Media服务器进行处理。 处理后，整个批集中每个资产的元数据会在AEM上更新。 如果批量很大，您可能会遇到处理延迟。 或者，如果批量太小，可能会导致往返到Dynamic Media服务器的次数过多。
+您可以选择调整重新处理工作流的批大小，默认值为50个资产，最多为1000个资产。 运行&#x200B;_Scene7时：在文件夹中重新处理资产_&#x200B;工作流，资产会分批分组，然后发送到Dynamic Media服务器进行处理。 处理后，整个批集中每个资产的元数据会在AEM上更新。 如果批量很大，您可能会遇到处理延迟。 或者，如果批量太小，可能导致往返于Dynamic Media服务器的次数过多。
 
 请参阅[调整重新处理工作流的批处理大小](#adjusting-load)。
 
 >[!NOTE]
 >
->如果要将资产从Dynamic Media Classic批量迁移到Experience Manager，则必须在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
+>如果要将资产从Dynamic Media经典批量迁移到Experience Manager，则必须在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
 >
->迁移发布代理必须在Dynamic Media服务器上禁用，这样重新处理工作流就可以按预期工作。
+>必须在Dynamic Media服务器上禁用迁移发布代理，以便重新处理工作流按预期工作。
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -57,8 +57,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**要重新处理文件夹中的Dynamic Media资产，请执行以下操作**:
-1. 在Adobe Experience Manager，从“资产”页面，导航到一个Dynamic Media资产文件夹，该文件夹中分配了图像用户档案或视频用户档案，并且您要对其应用&#x200B;**Scene7:重新处理资产**&#x200B;工作流，
+**要重新处理文件夹中的Dynamic Media资产**:
+1. 在Adobe Experience Manager，从“资产”页面，导航到Dynamic Media资产的一个文件夹，该文件夹中分配了图像用户档案或视频用户档案，并且您要对其应用&#x200B;**Scene7:重新处理资产**&#x200B;工作流，
 
    如果文件夹已经分配了图像用户档案或视频用户档案，则卡视图中的文件夹名称正下方会显示用户档案的名称。
 
@@ -105,7 +105,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 如果处理函数将前进到下一步，请选择&#x200B;**[!UICONTROL 处理函数高级]**。
    * 在&#x200B;**[!UICONTROL 超时]**&#x200B;字段中，输入外部进程超时（秒）。
    * 在&#x200B;**[!UICONTROL Period]**&#x200B;字段中，输入轮询间隔（秒）以测试外部进程是否完成。
-   * 在&#x200B;**[!UICONTROL 批处理字段]**&#x200B;中，输入Dynamic Media服务器批处理上传作业中要处理的资产的最大数量(50-1000)。
+   * 在&#x200B;**[!UICONTROL 批处理字段]**&#x200B;中，输入要在Dynamic Media服务器批处理上传作业中处理的最大资产数(50-1000)。
    * 如果希望在达到超时时前进，请选择&#x200B;**[!UICONTROL 超时时前进]**。 如果要在达到超时时继续进入收件箱，请取消选择。
 
    ![属性对话框](/help/assets/dynamic-media/assets/reprocess-assets3.png)
