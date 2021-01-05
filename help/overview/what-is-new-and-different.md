@@ -262,7 +262,7 @@ Adobe Experience Manager Sites作为Cloud Service，通过将AEM内容管理系�
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager资产作为Cloud Service优惠，为企业提供云本地SaaS解决方案，不仅可以快速、有效地执行数字资产管理和动态媒体操作，还可以在始终处于最新状态、始终可用且始终处于学习状态的系统中使用下一代智能功能，如AI/ML。
+Adobe Experience Manager资产作为Cloud Service优惠，为企业提供云本地SaaS解决方案，不仅可以快速、有影响地执行其数字资产管理和Dynamic Media业务，还可以在始终处于最新状态、始终可用且始终处于学习状态的系统中使用下一代智能功能，如AI/ML。
 
 资产产品包括云中的下一代资产处理以及高性能的资产获取和搜索。
 
