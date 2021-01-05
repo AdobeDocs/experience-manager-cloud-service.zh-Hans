@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -32,7 +32,7 @@ AEM 为创作目标内容和呈现个性化体验提供了一个工具框架。
 
 ## 体验 {#experiences}
 
-对于每个活动，您可以定义一个或多个体验来识别要定位的受众。AEM使您能够控制包含每种体验的内容。
+对于每个活动，您可以定义一个或多个体验来识别要定位的受众。AEM 使您能够控制包含每个体验的内容。
 
 受众基于在 AEM 或 Adobe Target 中创建的营销区段。当访客打开网页时，页面逻辑会确定他们所属的受众，并显示您为该受众创建的内容。
 
