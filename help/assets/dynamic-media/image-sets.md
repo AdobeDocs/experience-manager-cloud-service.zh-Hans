@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '2070'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 49%
 
 1. [为多个视图上传主源图像。](#uploading-assets-in-image-sets)
 
-   上传图像集的图像。 由于用户可以在图像集查看器中缩放图像，因此在选择图像时，请考虑缩放因素。确保图像的最大尺寸至少为2000像素。AEM 资产支持很多种图像文件格式，但建议使用无损的 TIFF、PNG 和 EPS 图像。
+   上传图像集的图像。 由于用户可以在图像集查看器中缩放图像，因此在选择图像时，请考虑缩放因素。确保图像的最大尺寸至少为2000像素。AEM Assets 支持很多种图像文件格式，但建议使用无损的 TIFF、PNG 和 EPS 图像。
 
 1. [创建图像集。](#creating-image-sets)
 
@@ -69,9 +69,9 @@ ht-degree: 49%
 
    发布图像集时，将会激活 URL 和嵌入字符串。此外，您必须[发布已创建的任何自定义查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。 现成查看器预设已发布。
 
-1. [将URL关联到您的Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 应用程 [序或嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
+1. [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或者[嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
-   在发布图像集后，AEM 资产会为该图像集创建 URL 调用并将其激活。预览资产时，您可以复制这些 URL。或者，也可以将它们嵌入到您的网站上。
+   在发布图像集后，AEM Assets 会为该图像集创建 URL 调用并将其激活。预览资产时，您可以复制这些 URL。或者，也可以将它们嵌入到您的网站上。
 
    选择图像集，然后在左边栏下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**。
 
@@ -87,7 +87,7 @@ ht-degree: 49%
 
 图像集支持很多种图像文件格式，但建议使用无损的 TIFF、PNG 和 EPS 图像。
 
-您可以像上传资产](/help/assets/manage-digital-assets.md#uploading-assets)中的任何其他资产一样，为图像集上传图像。[
+为图像集上传图像的方法与[在资产中上传任何其他资产](/help/assets/manage-digital-assets.md#uploading-assets)的方法相同。
 
 ### 准备要上传的图像集资产 {#preparing-image-set-assets-for-upload}
 
