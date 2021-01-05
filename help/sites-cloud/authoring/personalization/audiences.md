@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 58%
 
    ![创建区段](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
-1. 在&#x200B;**新 ContextHub 区段**&#x200B;对话框中，输入标题并调整提升，然后单击&#x200B;**创建**。您的新ContextHub区段将显示在受众列表中。
+1. 在&#x200B;**新 ContextHub 区段**&#x200B;对话框中，输入标题并调整提升，然后单击&#x200B;**创建**。新 ContextHub 区段随即会显示在受众列表中。
 
    >[!NOTE]
    >
