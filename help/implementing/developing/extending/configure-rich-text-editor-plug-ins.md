@@ -130,7 +130,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 对于链接，您还可以定义自动接受的协议。
 
-要配置将文本从其他项目粘贴到[!DNL Experience Manager]时允许使用的格式：
+要配置将文本从其他项目粘贴到[!DNL Experience Manager]时允许使用的格式，请执行以下操作：
 
 1. 在您的组件中，导航到节点`<rtePlugins-node>/edit`。 如果节点不存在，请创建节点。 有关详细信息，请参阅[激活插件](#activateplugin)。
 1. 在`edit`节点下创建一个节点以保存HTML粘贴规则：
@@ -192,7 +192,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 ## 配置文本样式{#textstyles}
 
-作者可以应用样式来更改部分文本的外观。 样式基于您在CSS样式表中预定义的CSS类。 格式化内容使用`class`属性包含在`span`标记中以引用CSS类。 例如：
+作者可以应用样式来更改部分文本的外观。 这些样式基于您在CSS样式表中预定义的CSS类。 格式化内容使用`class`属性包含在`span`标记中以引用CSS类。 例如：
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
