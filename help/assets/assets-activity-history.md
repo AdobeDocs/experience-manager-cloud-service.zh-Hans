@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 31%
+ht-degree: 37%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 31%
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
-时间轴显示您对资产执行的操作的活动流。
+时间轴显示您对资产所执行操作的活动流。
 
 <!-- ![activity_stream](assets/activity_stream.png) -->
 
