@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '2900'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->对目标内容提供多站点支持是一项高级功能。要使用此功能，您应熟悉多站点管理器以及Adobe Target与AEM的集成。
+>对目标内容提供多站点支持是一项高级功能。要使用此功能，您应该熟悉多站点管理器以及 Adobe Target 与 AEM 的集成。
 <!--
 >Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
 -->
@@ -65,10 +65,10 @@ ht-degree: 83%
 
 例如，通过目标内容的多站点支持功能，您的&#x200B;**一个**&#x200B;品牌可以拥有两个（或更多）站点，这些站点具有以下某种内容：
 
-* 完全“不同”**&#x200B;的目标内容集 - 在一个站点中编辑目标内容不会影响其他站点。链接到不同区域的站点会读取并写入其自己配置的区域。 例如：
+* 完全“不同”**&#x200B;的目标内容集 - 在一个站点中编辑目标内容不会影响其他站点。链接到不同区域的站点将读取并写入其自身的配置区域。例如：
    * 站点 A 链接到区域 X
    * 站点 B 链接到区域 Y
-* “共享”**&#x200B;的目标内容集 - 在一个站点中编辑会直接影响两个站点；通过让两个站点引用同一区域，可以实现此设置。链接到同一区域的站点共享此区域内的目标内容。 例如：
+* “共享”**&#x200B;的目标内容集 - 在一个站点中编辑会直接影响两个站点；通过让两个站点引用同一区域，可以实现此设置。链接到同一区域的站点共享该区域内的目标内容。例如：
    * 站点 A 链接到区域 X
    * 站点 B 也链接到区域 X
 * 通过MSM从另一个站点继承的不同目标内容&#x200B;**&#x200B;集——内容可以从主控单向转出到Live Copy。 例如：
@@ -195,7 +195,7 @@ ht-degree: 83%
 
    >[!NOTE]
    >
-   >将页面转出到Live Copy且为Blueprint页面配置的区域也是为页面Live Copy配置的区域的Blueprint时，LiveAction **personalizationContentRollout**&#x200B;将触发同步子Rollout，它是&#x200B;**标准配置**&#x200B;转出的一部分。
+   >如果将页面转出到 Live Copy，且为 Blueprint 页面配置的区域同时也是为页面 Live Copy 配置的区域的 Blueprint，则 LiveAction **personalizationContentRollout** 会触发同步的 subRollout，它是&#x200B;**标准转出配置**&#x200B;的一部分。
 
 1. 点按或单击&#x200B;**创建**。
 
@@ -211,7 +211,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->引用同一区域的页面或站点使用&#x200B;*相同*&#x200B;的共享活动、体验和优惠集。 编辑由多个站点共享的活动、体验或优惠会影响所有站点。
+>引用同一区域的页面或站点使用&#x200B;*相同*&#x200B;的共享活动、体验和优惠集。 编辑由多个站点共享的活动、体验或选件会影响所有站点。
 
 要将站点链接到区域，请执行以下操作：
 
@@ -232,7 +232,7 @@ ht-degree: 83%
 
 暂停 Live Copy 会暂时中断继承，但之后可以恢复继承。而分离 Live Copy 则会永久中断继承。
 
-要暂停或分离目标内容的继承，需要先在活动中恢复继承。如果页面或站点链接到的是Live Copy区域，则可以视图活动的继承状态。
+要暂停或分离目标内容的继承，需要先在活动中恢复继承。如果页面或站点链接到的区域是 Live Copy，则可以查看活动的继承状态。
 
 从其他站点继承的活动的名称旁边显示有绿色标记。暂停的继承标记为红色，本地创建的活动没有图标。
 
