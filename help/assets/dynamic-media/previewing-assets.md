@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 23%
+ht-degree: 29%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 23%
         </ul> <p><strong>在特定查看器中预览资产</strong></p>
         <ul>
         <li>在页面的左上角附近，单击该图标以显示下拉列表。 单击列表中的<strong>查看器</strong>，然后选择要应用到资产的查看器。</li>
-        </ul> <p>使用<strong>+</strong>和<strong>- </strong>图标可分别增大或减小所选图像的缩放比例。 单击<strong>重置</strong>可使图像恢复到原始缩放比例。
+        </ul> <p>使用 <strong>+</strong> 和 <strong>-</strong> 图标可分别增大和减小选定图像的缩放比例。单击<strong>重置</strong>可使图像恢复到原始缩放比例。
 <br /> 如果您在触摸屏上，请多次点击图像以逐步放大。当您达到最大缩放比例时，再连按两次图像可重置缩放状态。横向拖动图像可进行平移。
 </p> </td>
       </tr>
@@ -92,7 +92,7 @@ ht-degree: 23%
       <td><p><strong>在特定查看器中预览资产</strong></p>
         <ul>
         <li>在页面的左上角附近，单击该图标以显示下拉列表。 单击列表中的<strong>查看器</strong>，然后选择要应用到资产的查看器。</li>
-        </ul> <p>使用<strong>+</strong>和<strong>- </strong>图标可分别增大或减小所选图像的缩放比例。 单击<strong>重置</strong>可使图像恢复到原始缩放比例。
+        </ul> <p>使用 <strong>+</strong> 和 <strong>-</strong> 图标可分别增大和减小选定图像的缩放比例。单击<strong>重置</strong>可使图像恢复到原始缩放比例。
 <br /> 如果您在触摸屏上，请多次点击图像以逐步放大。当您达到最大缩放比例时，再连按两次图像可重置缩放状态。横向拖动图像可进行平移。
 </p> </td>
       </tr>
@@ -103,7 +103,7 @@ ht-degree: 23%
       <td><p><strong>在特定查看器中预览资产</strong></p>
         <ul>
         <li>在页面的左上角附近，单击该图标以显示下拉列表。 单击列表中的<strong>查看器</strong>，然后选择要应用到资产的查看器。</li>
-        </ul> <p>使用<strong>+</strong>和<strong>- </strong>图标可分别增大或减小所选图像的缩放比例。 单击<strong>重置</strong>可使图像恢复到原始缩放比例。
+        </ul> <p>使用 <strong>+</strong> 和 <strong>-</strong> 图标可分别增大和减小选定图像的缩放比例。单击<strong>重置</strong>可使图像恢复到原始缩放比例。
 <br /> 如果您在触摸屏上，请多次点击图像以逐步放大。当您达到最大缩放比例时，再连按两次图像可重置缩放状态。横向拖动图像可进行平移。
 </p> </td>
       </tr>
@@ -114,7 +114,7 @@ ht-degree: 23%
       <td><p><strong>在特定查看器中预览资产</strong></p>
         <ul>
         <li>在页面的左上角附近，单击该图标以显示下拉列表。 单击列表中的<strong>查看器</strong>，然后选择要应用到资产的查看器。</li>
-        </ul> <p>使用<strong>+</strong>和<strong>- </strong>图标可分别增大或减小所选图像的缩放比例。 单击<strong>重置</strong>可使图像恢复到原始缩放比例。
+        </ul> <p>使用 <strong>+</strong> 和 <strong>-</strong> 图标可分别增大和减小选定图像的缩放比例。单击<strong>重置</strong>可使图像恢复到原始缩放比例。
 <br /> 如果您在触摸屏上，请多次点击图像以逐步放大。当您达到最大缩放比例时，再连按两次图像可重置缩放状态。横向拖动图像可进行平移。
 </p> </td>
       </tr>
@@ -137,7 +137,7 @@ ht-degree: 23%
         </ul> <p><strong>在特定查看器中预览资产</strong></p>
         <ul>
         <li>在页面的左上角附近，点按图标以显示下拉列表。 选择<strong>查看器</strong>，然后选择要应用到资产的查看器。</li>
-        </ul> <p>使用<strong>+</strong>和<strong>- </strong>图标可分别增大或减小所选图像的缩放比例。 单击<strong>重置</strong>可使图像恢复到原始缩放比例。
+        </ul> <p>使用 <strong>+</strong> 和 <strong>-</strong> 图标可分别增大和减小选定图像的缩放比例。单击<strong>重置</strong>可使图像恢复到原始缩放比例。
 <br /> 如果您在触摸屏上，请多次点击图像以逐步放大。当您达到最大缩放比例时，再连按两次图像可重置缩放状态。横向拖动图像可进行平移。
 </p> </td>
       </tr>
