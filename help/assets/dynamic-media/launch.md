@@ -649,22 +649,22 @@ Adobe启动可能具有多个开发环境、一个分阶段环境和一个生产
 
 前提条件:
 
-* AEM同时运行Author和Publish实例。
+* AEM同时运行作者实例和发布实例。
 * AEM作者节点在Dynamic Media设置。<!-- Scene7 run mode (dynamicmedia_s7) -->
 * Dynamic MediaWCM组件在AEM Sites启用。
 
-AEM配置由以下两个主要步骤组成：
+AEM配置包含以下两个主要步骤：
 
 * AEM IMS的配置
-* 配置AdobeLaunch Cloud。
+* 配置Adobe启动云。
 
 ### 配置AEM IMS {#configuring-aem-ims}
 
-1. 在AEM作者中，单击“工具”图标（锤），然后单击&#x200B;**[!UICONTROL “安全性”>“AdobeIMS配置”]**。
+1. 在AEM作者中，单击工具图标（锤子），然后单击&#x200B;**[!UICONTROL 安全>AdobeIMS配置]**。
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
-1. 在“AdobeIMC配置”页面左上角附近，单击&#x200B;**[!UICONTROL 创建]**。
+1. 在“AdobeIMC配置”页的左上角附近，单击&#x200B;**[!UICONTROL 创建]**。
 1. 在 **[!UICONTROL Adobe IMS 技术帐户配置]**&#x200B;页面的&#x200B;**[!UICONTROL 云解决方案]**&#x200B;下拉列表中，单击 **[!UICONTROL Adobe Launch]**。
 1. 启用&#x200B;**[!UICONTROL 创建新证书]**，然后在文本字段中为证书输入任何有意义的值。 例如，*AdobeLaunchIMSCert*。 单击&#x200B;**[!UICONTROL 创建证书]**。
 
@@ -684,9 +684,9 @@ AEM配置由以下两个主要步骤组成：
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. 在新的浏览器选项卡中，导航到[Adobe I/O控制台](https://console.adobe.io/integrations)。
+1. 在新的浏览器选项卡中，导航至[Adobe I/O控制台](https://console.adobe.io/integrations)。
 
-1. 在右上角附近的&#x200B;**[!UICONTROL Adobe I/O控制台集成]**&#x200B;页面中，单击&#x200B;**[!UICONTROL 新集成]**。
+1. 在&#x200B;**[!UICONTROL Adobe I/O控制台集成]**&#x200B;页面的右上角附近，单击&#x200B;**[!UICONTROL 新建集成]**。
 1. 在&#x200B;**[!UICONTROL 创建新集成]**&#x200B;对话框中，确保选中&#x200B;**[!UICONTROL 访问 API]** 单选按钮，然后单击&#x200B;**[!UICONTROL 继续]**。
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -701,20 +701,20 @@ AEM配置由以下两个主要步骤组成：
 
    * 在&#x200B;**[!UICONTROL 说明]**&#x200B;字段中，输入集成的说明。
 
-   * 在&#x200B;**[!UICONTROL 公钥证书]**&#x200B;区域中，上传您之前在这些步骤中下载的公钥文件(`*.crt`)。
+   * 在&#x200B;**[!UICONTROL 公钥证书]**&#x200B;区域，上传您之前在这些步骤中下载的公钥文件(`*.crt`)。
 
    * 在&#x200B;**[!UICONTROL 为Experience Platform LaunchAPI]**&#x200B;选择角色标题下，选择&#x200B;**[!UICONTROL 管理员]**。
 
-   * 在&#x200B;**[!UICONTROL 为Experience Platform LaunchAPI]**&#x200B;选择一个或多个产品配置标题下，选择名为&#x200B;**[!UICONTROL Launch - &lt;your_company_name>]**&#x200B;的产品配置。
+   * 在&#x200B;**[!UICONTROL 为Experience Platform LaunchAPI]**&#x200B;选择一个或多个产品用户档案标题下，选择名为&#x200B;**[!UICONTROL 启动- &lt;your_公司名称>]**&#x200B;的产品用户档案。
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
 1. 单击&#x200B;**[!UICONTROL 创建集成]**。
-1. 在&#x200B;**[!UICONTROL 已创建集成]**&#x200B;页面上，单击&#x200B;**[!UICONTROL 继续集成详细信息]**。
+1. 在&#x200B;**[!UICONTROL 已创建集成]**&#x200B;页面上，单击&#x200B;**[!UICONTROL 继续获取集成详细信息]**。
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. 此时会显示“集成详细信息”页面，类似于：
+1. 此时会显示“集成详细信息”页面，与以下内容类似：
 
    >[!NOTE]
    >
@@ -730,7 +730,7 @@ AEM配置由以下两个主要步骤组成：
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _AdobeIMS技术帐户配置——证书页_
 
-1. “**[!UICONTROL 帐户]**”页包含五个字段，需要您使用上一步中“集成详细信息”页面中的信息填写这些字段。
+1. **[!UICONTROL 帐户]**&#x200B;页面有五个字段，需要您使用上一步“集成详细信息”页面中的信息填写这些字段。
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
    _AdobeIMS技术帐户配置——帐户页_
@@ -738,10 +738,10 @@ AEM配置由以下两个主要步骤组成：
 1. 在&#x200B;**[!UICONTROL 帐户]**&#x200B;页面上，填写以下字段：
 
    * **[!UICONTROL 标题]** -输入描述性帐户标题。
-   * **[!UICONTROL 授权服务器]** -返回您之前打开的“集成详细信息”页。单击&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡。 复制不带路径的服务器名称，如下所示。
+   * **[!UICONTROL 授权服务器]** -返回到您之前打开的“集成详细信息”页。单击&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡。 复制不带路径的服务器名称，如下所示高亮显示。
 
-（示例服务器名称仅用于说明目的）   返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。例如，`https://ims-na1.adobelogin.com/`
-（示例服务器名称仅用于说明目的）
+（示例服务器名称仅供说明之用）   返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。例如，`https://ims-na1.adobelogin.com/`
+（示例服务器名称仅供说明之用）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _集成详细信息页- JWT选项卡_
@@ -757,32 +757,32 @@ AEM配置由以下两个主要步骤组成：
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将密钥粘贴到相应的字段中。
 
-1. **[!UICONTROL 有效负荷]** -返回到“集成详细信息”页。从&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡的JWT负载字段中，复制整个JSON对象代码。
+1. **[!UICONTROL 有效负荷]** -返回到“集成详细信息”页。从&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡的JWT有效负荷字段中，复制整个JSON对象代码。
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将代码粘贴到相应的字段中。
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
    _集成详细信息页- JWT选项卡_
 
-   “帐户”页面（填写了所有字段）将类似于：
+   已填写所有字段的“帐户”页面的外观将类似于以下内容：
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
 1. 在&#x200B;**[!UICONTROL 帐户]**&#x200B;页面的右上角附近，单击&#x200B;**[!UICONTROL 创建]**。
 
-   配置了AEM IMS后，您现在将在&#x200B;**[!UICONTROL AdobeIMS配置]**&#x200B;下列出一个新的IMSAccount。
+   配置AEM IMS后，您现在在&#x200B;**[!UICONTROL AdobeIMS配置]**&#x200B;下列出了新的IMSAccount。
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## 为集成{#configuring-adobe-launch-cloud-for-the-integration}配置AdobeLaunch Cloud
+## 为集成配置Adobe启动云{#configuring-adobe-launch-cloud-for-the-integration}
 
-1. 在AEM作者中，在左上角附近，单击“工具”图标（锤），然后单击&#x200B;**[!UICONTROL Cloud Services>Adobe启动配置]**。
+1. 在AEM作者的左上角附近，单击工具图标（锤子），然后单击&#x200B;**[!UICONTROL Cloud Services>Adobe启动配置]**。
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
 1. 在&#x200B;**[!UICONTROL Adobe启动配置]**&#x200B;页面的左侧面板中，选择要应用Adobe启动配置的AEM站点。
 
-   仅出于说明目的，在以下屏幕截图中选择了&#x200B;**[!UICONTROL We.Retail]**&#x200B;站点。
+   仅供说明，**[!UICONTROL We.Retail]**&#x200B;站点在以下屏幕截图中处于选中状态。
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
@@ -791,25 +791,25 @@ AEM配置由以下两个主要步骤组成：
 
    * **[!UICONTROL 标题]** -输入描述性配置标题。例如，`We.Retail Launch cloud configuration`。
 
-   * **[!UICONTROL 关联AdobeIMS配置]** -选择您之前在配置AEM IMS中创 [建的IMS配置](#configuring-aem-ims)。
+   * **[!UICONTROL 关联AdobeIMS配置]** -选择您之前在配置AEM IMS时创 [建的IMS配置](#configuring-aem-ims)。
 
-   * **[!UICONTROL 公司]** -从“公 **** 司”下拉列表中，选择您的Experience Cloud公司。列表会自动填充。
+   * **[!UICONTROL 公司]** -从“ **** 公司”下拉列表中，选择您的Experience Cloud公司。列表会自动填充。
 
-   * **[!UICONTROL 属性]** -从“属性”下拉列表中，选择您以前创建的Adobe启动属性。列表会自动填充。
-   完成所有字段后，**[!UICONTROL “常规”]**&#x200B;页面将类似于：
+   * **[!UICONTROL 属性]** -从“属性”下拉列表卡中，选择您之前创建的Adobe启动属性。列表会自动填充。
+   完成所有字段后，您的&#x200B;**[!UICONTROL “常规”]**&#x200B;页面将与以下内容类似：
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-1. 在左上角附近，单击&#x200B;**[!UICONTROL 下一个]**。
+1. 在左上角附近，单击&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**[!UICONTROL 创建 Adobe Launch 配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 测试]**&#x200B;页面（第 2/3 页）中，填写以下字段：
 
    在&#x200B;**[!UICONTROL 库 URI]** 字段中，查看 Adobe Launch 库的测试版本的位置。AEM 会自动填充此字段。
 
-   仅出于说明目的，此步骤将使用部署到AdobeCDN的Adobe启动库。
+   仅供说明，此步骤将使用部署到AdobeCDN的Adobe启动库。
 
    >[!NOTE]
    >
-   >检查以确保自动填充的库URI（统一资源标识符）的格式不正确。 如有必要，请修复它，使URI表示协议相对URI。 也就是说，它从双正斜杠开始。
+   >检查以确保自动填充的库URI（统一资源标识符）格式不正确。 如有必要，请修复它，使URI表示协议相对URI。 就是多次正斜杠开始.
    >
    >
    >例如：`//assets.adobetm.com/launch-xxxx`。
@@ -818,20 +818,20 @@ AEM配置由以下两个主要步骤组成：
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
-1. 在右上角附近，单击&#x200B;**[!UICONTROL Next]**。
+1. 在右上角附近，单击&#x200B;**[!UICONTROL 下一步]**。
 1. 如有需要，在&#x200B;**[!UICONTROL 创建 Adobe Launch 配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 生产]**&#x200B;页面（第 3/3 页）中，修复自动填充的生产 URI，类似于在上一个&#x200B;**[!UICONTROL 测试]**&#x200B;页面中的操作。
 1. 在右上角附近，单击&#x200B;**[!UICONTROL 创建]**。
 
    您的新Adobe启动云配置现已创建并列在您的网站旁边。
 
-1. 选择新的Adobe启动云配置（选中配置标题时，其左侧会出现复选标记）。 在工具栏上，单击&#x200B;**[!UICONTROL 发布]**。
+1. 选择新的Adobe启动云配置（选中配置标题后，将在其左侧显示复选标记）。 在工具栏上，单击&#x200B;**[!UICONTROL 发布]**。
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
 目前，AEM作者不支持将Dynamic Media查看器与AdobeLaunch集成。
 
-但是，AEM发布节点支持它。 使用AdobeLaunch Cloud配置的默认设置，AEM publish使用AdobeLaunch的生产环境。 因此，在测试期间，必须每次将Adobe启动库更新从开发推送到生产环境。
+但是，AEM publish节点支持它。 使用Adobe启动云配置的默认设置，AEM publish使用Adobe启动的生产环境。 因此，在测试过程中，每次必须将Adobe启动库更新从开发推送到生产环境。
 
-通过在上述AEM发布的Adobe启动云配置中指定Adobe启动库的开发或暂存URL，可以解决此限制。 这样，AEM发布节点就会使用Adobe启动库的开发或暂存版本。
+通过在上述Adobe发布的Adobe启动云配置中指定AEM启动库的开发或临时URL，可以解决此限制。 这样做会使AEM发布节点使用Adobe启动库的开发或暂存版本。
 
-请参阅[将AEM与Adobe启动集成通过Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)，了解有关设置Adobe启动云配置的更多信息。
+有关设置Adobe启动云配置的详细信息，请参阅[通过Adobe I/O将AEM与Adobe启动集成](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)。
