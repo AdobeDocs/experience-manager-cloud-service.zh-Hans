@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 27%
 
    * 如果您选择了图像，请在下拉菜单中，点按&#x200B;**[!UICONTROL 演绎版]**。
 
-      在&#x200B;**[!UICONTROL Dynamic]**&#x200B;标题下，点按预设名称，将其演绎版视图到右侧框架中。 您可能需要滚动演绎版列表才能看到动态标题。
+      在&#x200B;**[!UICONTROL Dynamic]**&#x200B;标题下，点按预设名称，将其演绎版视图到右侧框架中。 您可能需要滚动“演绎版”列表才能看到“动态”标题。
 
       在左边栏的底部，点按 **[!UICONTROL URL]**。
 
@@ -72,7 +72,7 @@ ht-degree: 27%
 
       在左边栏中，点按查看器预设名称。预览集或视频将在单独的页面中打开。
 
-      在左边栏的底部，点按&#x200B;**[!UICONTROL URL]**。
+      在左边栏中，点按底部的 **[!UICONTROL URL]**。
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
