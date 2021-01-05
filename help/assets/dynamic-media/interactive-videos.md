@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '6016'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -373,7 +373,7 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
       您只能删除最后一个区段。例如，如果要删除时间轴上的所有区段，则必须始终选择最后一个区段，然后点按&#x200B;**[!UICONTROL 删除区段]**。
 
 
-1. 选择要将一个或多个缩略图关联到的时间区段。
+1. 选择您要为其关联一个或多个缩略图的时间区段。
 1. 在视频右侧，点按&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡。
 1. 在“内容”选项卡下，点按&#x200B;**[!UICONTROL 选择资产]**，然后浏览并选择您要用于视频的所有图像资产。 选定的资产会添加到“内容”选项卡的“资产选择器”面板。
 
@@ -474,7 +474,7 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
       在时间轴上，点按要分成两半的区段，然后点按工具栏上的&#x200B;**[!UICONTROL 拆分区段]**。
 
       选择两个或多个段会禁用&#x200B;**[!UICONTROL 拆分段]**&#x200B;功能。
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    将选定的10秒段分为两段，每段5秒。
 
@@ -521,7 +521,7 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
 
 1. 在目标网页代码中，找到静态视频所在的位置。
 
-1. 删除静态视频，并将其代码原封不动地替换为您从 AEM 资产中复制的嵌入代码或 URL。
+1. 删除静态视频，并将其代码原封不动地替换为您从 AEM Assets 中复制的嵌入代码或 URL。
 
 由于复制的嵌入代码是为响应式环境设计的，因此该代码应该会自动地适应之前由静态视频所占用的区域。
 
