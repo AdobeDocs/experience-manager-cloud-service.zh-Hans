@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
 source-wordcount: '2002'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 84%
 
 您可以查看任何 Adobe Target 活动（XT 或 A/B）的业绩。如果您使用的是 A/B 测试，则还可以转换入选体验，入选体验随后会成为默认体验。
 
-要视图活动性能并转换成功体验，请执行以下操作：
+要查看活动业绩并转换入选体验，请执行以下操作：
 
 1. 在&#x200B;**个性化**&#x200B;中，单击或点按&#x200B;**活动**&#x200B;以导航到&#x200B;**活动**&#x200B;控制台。
 1. 单击或点按要查看其活动的品牌。
