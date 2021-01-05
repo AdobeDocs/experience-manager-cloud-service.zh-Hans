@@ -157,7 +157,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 | 创建者 | creator:John |
 | 位置 | 位置：NA |
 | 描述 | description:&quot;Sample Image&quot; |
-| 创建程序工具 | creatortool:&quot;Adobe Photoshop CC2015&quot; |
+| 创建者工具 | creatortool:&quot;Adobe Photoshop CC2015&quot; |
 | 版权所有者 | copyrightowner:&quot;Adobe Systems&quot; |
 | 参与者 | contributor:John |
 | 使用条款 | usageterms:&quot;CopyRights Reserved&quot; |
