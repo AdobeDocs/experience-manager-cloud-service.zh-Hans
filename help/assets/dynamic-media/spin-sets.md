@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -64,9 +64,9 @@ ht-degree: 36%
 
    发布旋转集时，将会激活 URL 和嵌入字符串。此外，您必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-1. [将URL关联到您的Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 应用程 [序或嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
+1. [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或者[嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
-   在发布旋转集后，AEM 资产会为该旋转集创建 URL 调用并将其激活。预览资产时，您可以复制这些 URL。或者，您也可以将这些 URL 嵌入到网站中。
+   在发布旋转集后，AEM Assets 会为该旋转集创建 URL 调用并将其激活。预览资产时，您可以复制这些 URL。或者，您也可以将这些 URL 嵌入到网站中。
 
    选择旋转集，然后在左边栏下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**。
 
@@ -78,7 +78,7 @@ ht-degree: 36%
 
 对于一维旋转集，您至少需要一个项目的8-12张照片。拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。 例如，如果一维旋转集中包含 12 幅拍照，则每拍照一次应将项目旋转 30 度 (360/12)。
 
-您可以像上传AEM Assets的任何其他资产一样，为旋转集上传图像。[](/help/assets/manage-digital-assets.md)
+为旋转集上传图像的方法与[在 AEM Assets 中上传任何其他资产](/help/assets/manage-digital-assets.md)的方法相同。
 
 ### 为旋转集{#guidelines-for-shooting-spin-set-images}捕获图像的指南
 
