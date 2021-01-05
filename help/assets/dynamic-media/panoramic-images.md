@@ -1,6 +1,6 @@
 ---
 title: 全景图像
-description: 了解如何在Dynamic Media中处理全景图像。
+description: 了解如何在Dynamic Media处理全景图像。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 workflow-type: tm+mt
