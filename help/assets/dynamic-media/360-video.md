@@ -1,6 +1,6 @@
 ---
 title: 360/VR视频
-description: 了解如何在动态媒体中处理360和虚拟现实(VR)视频。
+description: 了解如何在Dynamic Media使用360和虚拟现实(VR)视频。
 translation-type: tm+mt
 source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
@@ -20,7 +20,7 @@ Dynamic Media包含对360个视频资源投放的本机支持。 默认情况下
 
 当前不支持空间音频；如果音频在立体声中混合，则余额(L/R)不会随客户更改摄像机视角而改变。
 
-请参阅[将Dynamic Media 360视频和自定义视频缩略图与AEM Assets一起使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)。
+请参阅[将Dynamic Media360视频和自定义视频缩略图与AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)一起使用。
 
 另请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -51,7 +51,7 @@ Dynamic Media包含对360个视频资源投放的本机支持。 默认情况下
 
    渲染360视频内容比标准非360视频内容对源视频分辨率和编码演绎版分辨率的要求更高。
 
-   您可以使用Dynamic Media附带的现成自适应视频用户档案。 但是，请注意，对于使用非360视频查看器渲染的设置进行编码的非360视频，其视频质量将明显低于您的360视频质量。 因此，如果需要高质量的360视频，请执行以下操作：
+   您可以使用现成的自适应视频用户档案，它已随Dynamic Media提供。 但是，请注意，对于使用非360视频查看器渲染的设置进行编码的非360视频，其视频质量将明显低于您的360视频质量。 因此，如果需要高质量的360视频，请执行以下操作：
 
    * 理想情况下，原始360视频内容应具有以下任一分辨率：
 
@@ -98,7 +98,7 @@ Start by uploading 360 Videos.
 如果您对360视频感到满意，可以发布该视频。
 
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。请注意，如果您的交互式内容包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
-请参阅[向页面添加Dynamic Media资产。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **预览360个视频**
 
@@ -129,7 +129,7 @@ Start by uploading 360 Videos.
 
 ## 发布360视频{#publishing-video}
 
-您需要发布360视频才能使用它。 发布360视频时，将激活URL和嵌入代码。 它还将360视频发布到Dynamic Media云，该云与CDN集成，可实现可扩展且高性能的投放。
+您需要发布360视频才能使用它。 发布360视频时，将激活URL和嵌入代码。 它还将360视频发布到Dynamic Media云，该云与CDN集成以实现可扩展和高性能投放。
 
 有关如何发布360视频的详细信息，请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 另请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
