@@ -188,7 +188,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
    1. 创建属性`sling:hideResource`
 
       * 类型: `Boolean`
-      * value: `true`
+      * 选定: `true`
 
 * **隐藏节点的子项（同时保留节点的属性）**
 
@@ -215,7 +215,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
          这指定了当前节点应该位于以下位置之前的节点（如`/libs`中所示）:
 
          * 类型: `String`
-         * value:`<before-SiblingName>`
+         * 选定: `<before-SiblingName>`
 
 ### 从代码{#invoking-the-sling-resource-merger-from-your-code}调用Sling资源合并
 
