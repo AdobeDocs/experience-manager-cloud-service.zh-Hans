@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
 workflow-type: tm+mt
 source-wordcount: '5348'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 74%
 
    ![定位模式](../assets/targeted-mode.png)
 
-1. 单击或点按&#x200B;**定位**。 定位选项随即会显示在页面顶部。
+1. 单击或点按&#x200B;**定位**。定位选项随即会显示在页面顶部。
 
    ![定位工具栏](../assets/targeted-toolbar.png)
 
@@ -216,7 +216,7 @@ ht-degree: 74%
 可为体验定位组件或创建选件。目标组件所提供的内容将用作体验的选件。
 
 * [定位现有组件](#creating-a-default-offer-by-targeting-an-existing-component)。内容会成为默认体验的选件。
-* [添加目标组件](#creating-an-offer-by-adding-a-target-component)，然后向组件添加内容。
+* [添加 Target 组件](#creating-an-offer-by-adding-a-target-component)，然后向该组件中添加内容。
 
 定位某个组件后，您可以为每个体验添加选件：
 
@@ -245,11 +245,11 @@ ht-degree: 74%
 
    ![目标按钮](../assets/targeted-target-button.png)
 
-   该组件内容随即会成为默认体验的选件。定位某个组件后，将为每个体验复制其默认节点。 在进行特定于体验的创作时，需要具有此默认节点，才能编辑正确的内容节点。对于这些非默认体验，请添加自定义优惠](#adding-a-custom-offer)或[添加库优惠](#adding-an-offer-from-an-offer-library)。[
+   该组件内容随即会成为默认体验的选件。定位某个组件后，其默认节点会被复制到每个体验中。在进行特定于体验的创作时，需要具有此默认节点，才能编辑正确的内容节点。对于这些非默认体验，请添加自定义优惠](#adding-a-custom-offer)或[添加库优惠](#adding-an-offer-from-an-offer-library)。[
 
 #### 通过添加 Target 组件创建选件 {#creating-an-offer-by-adding-a-target-component}
 
-可添加 Target 组件，以创建默认体验的选件。目标组件是其他组件的容器，放置在其中的组件将成为目标。 使用 Target 组件时，可以在其中添加多个组件以创建选件。此外，您还可以在每个体验中使用不同的组件，以创建不同的选件。
+可添加 Target 组件，以创建默认体验的选件。Target 组件是用于存放其他组件的容器，放置在其中的组件会成为目标组件。使用 Target 组件时，可以在其中添加多个组件以创建选件。此外，您还可以在每个体验中使用不同的组件，以创建不同的选件。
 
 有关自定义此组件的信息，请参阅[配置目标组件选项](#configuring-target-component-options)。
 
@@ -298,7 +298,7 @@ ht-degree: 74%
 
 可通过在定位模式下创作目标组件的内容来创建选件。创建自定义选件时，它会用作单个体验的选件。
 
-如果您决定可以将优惠用于其他体验，则可以创建自定义优惠并将其添加到库](#adding-a-custom-offer-to-a-library)。 [有关使用优惠控制台创建可重用优惠的信息，请参阅[向优惠库添加优惠](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
+如果您决定可以将优惠用于其他体验，则可以创建自定义优惠并将其添加到库](#adding-a-custom-offer-to-a-library)。 [有关如何使用“选件”控制台创建可重复使用的选件的信息，请参阅[将选件添加到选件库](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
 
 1. 选择要添加选件的体验。
 1. 要显示组件菜单，请单击或点按要添加选件的目标组件。
@@ -317,7 +317,7 @@ ht-degree: 74%
 
 #### 添加选件库中的选件  {#adding-an-offer-from-an-offer-library}
 
-将[优惠库](/help/sites-cloud/authoring/personalization/offers.md)中的优惠添加到体验。 您可以从您当前定位的品牌的库中添加任何优惠。
+将[优惠库](/help/sites-cloud/authoring/personalization/offers.md)中的优惠添加到体验。 您可以添加当前定位的品牌的库中包含的任何选件。
 
 您不能将库选件添加到默认体验。
 
@@ -336,7 +336,7 @@ ht-degree: 74%
 
    您可以使用选件选取器浏览或筛选选件。浏览或筛选选件时，您可能还希望对选件进行排序，并更改查看选件的方式。右上方的数字指示当前选件库中可用的选件数量。
 
-   * 单击或点按&#x200B;**浏览**&#x200B;可导览至其他文件夹。 导航窗格随即会打开，单击箭头可向下浏览文件夹。再次单击或点按&#x200B;**浏览**&#x200B;以关闭导航窗格。
+   * 单击或点按&#x200B;**浏览**&#x200B;以导览至其他文件夹。 导航窗格随即会打开，单击箭头可向下浏览文件夹。再次单击或点按&#x200B;**浏览**&#x200B;以关闭导航窗格。
 
    ![浏览内容](../assets/targeted-select-content-browse.png)
 
@@ -344,7 +344,7 @@ ht-degree: 74%
 
    ![筛选内容](../assets/targeted-filter.png)
 
-   * 单击或点按&#x200B;**最新到最旧**&#x200B;旁边的箭头可更改选件排序方式。优惠可以按从最新到最旧或从最早到最新进行排序。
+   * 单击或点按&#x200B;**最新到最旧**&#x200B;旁边的箭头可更改选件排序方式。可以按“最新到最旧”或“最旧到最新”方式对选件进行排序。
 
    ![筛选排序顺序](../assets/targeted-filter-sort.png)
 
@@ -356,7 +356,7 @@ ht-degree: 74%
 
 如果您希望将自定义选件重复用作多个体验的选件，需将其添加到[选件库](/help/sites-cloud/authoring/personalization/offers.md)。您可以将选件添加到当前定位的品牌的库。
 
-有关使用优惠控制台创建可重用优惠的信息，请参阅[向优惠库添加优惠](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
+有关如何使用“选件”控制台创建可重复使用的选件的信息，请参阅[将选件添加到选件库](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
 
 1. 选择体验以显示自定义选件。
 1. 单击或点按自定义选件以显示选件菜单，然后单击或点按&#x200B;**将选件保存到选件库**&#x200B;图标。
