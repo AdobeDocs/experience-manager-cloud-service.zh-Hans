@@ -1,6 +1,6 @@
 ---
 title: 批次集预设
-description: 了解如何使用Dynamic Media中的批量集预设自动创建图像集和旋转集。
+description: 了解如何使用Dynamic Media的批量集预设自动创建图像集和旋转集。
 contentOwner: Rick Brough
 translation-type: tm+mt
 source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
@@ -109,7 +109,7 @@ ht-degree: 1%
 | 预设名称 | 只读. 首次创建批集时指定的名称。 如果您需要重新命名预设，您可以复制现有批集预设并指定新名称。 请参阅[复制现有批集预设](#copy-bsp)。 |
 | 类型 | 只读. 首次创建批集时指定了类型。 复制现有批集预设不允许您更改其[!UICONTROL 类型];您必须改为创建新预设。 |
 | 包括派生的资产 | 可选。选择&#x200B;**[!UICONTROL 是]**（默认），使[!DNL Dynamic Media]的IPS（图像生产系统）包含旋转集或图像集中的生成或“派生”图像。 派生的资产是未由用户直接上传的图像。 而是在上传主控资源时，IPS生成该资源。 例如，IPS在[!DNL Dynamic Media]上传PDF时从PDF中的页面生成的图像资源被视为派生的资源。 |
-| 目标文件夹 | 可选。如果您定义了大量图像集或旋转集，您可能希望将这些集与包含资产自己的文件夹分开。 因此，您可能希望考虑创建图像集或旋转集文件夹，并将应用程序重定向到将批量集生成的集放在此处。<br>在这种情况下，请指定“Adobe Experience Manager资产”文件夹结构()中`/content/dam`的哪个文件夹应激活批集预设。确保已为[!DNL Dynamic Media]同步启用该文件夹，以允许它作为目标文件夹。 请参阅[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)的文件夹级别配置选择性发布。<br>请注意，如果通过文件夹的属性应用预设，则可以向多个文件夹分配给定的批集预 **[!UICONTROL 设]**。请参阅[从资产文件夹的“属性”页面](#apply-bsp-to-folders-via-properties)应用批集预设。<br>如果不指定文件夹，则会在与资产上传文件夹相同的文件夹中创建批集预设。 |
+| 目标文件夹 | 可选。如果您定义了大量图像集或旋转集，您可能希望将这些集与包含资产自己的文件夹分开。 因此，您可能希望考虑创建图像集或旋转集文件夹，并将应用程序重定向到将批量集生成的集放在此处。<br>在这种情况下，请指定“Adobe Experience Manager资产”文件夹结构()中`/content/dam`的哪个文件夹应激活批集预设。确保已为[!DNL Dynamic Media]同步启用该文件夹，以允许它作为目标文件夹。 请参阅Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)在文件夹级别配置选择性发布。[<br>请注意，如果通过文件夹的属性应用预设，则可以向多个文件夹分配给定的批集预 **[!UICONTROL 设]**。请参阅[从资产文件夹的“属性”页面](#apply-bsp-to-folders-via-properties)应用批集预设。<br>如果不指定文件夹，则会在与资产上传文件夹相同的文件夹中创建批集预设。 |
 | **[!UICONTROL 设置命名规则]** |  |
 | 前缀<br>或<br>后缀 | 可选。在相应的字段中输入前缀和／或后缀。<br>使用前缀和后缀字段，您可以使用特定内容集可能需要的替代自定义文件命名约定创建任意数量的批集预设。在公司定义的默认命名方案存在异常时，此方法尤其有用。<br>前缀或后缀会添加到您在“资 **[!UICONTROL 产命]** 名约定”区域中定 **[!UICONTROL 义的“基]** 本名称”。通过添加前缀或后缀，您可以确保图像集或旋转集是独立于其他资产创建的。 它还有助于进一步帮助其他人识别文件类型。 例如，要确定所使用的颜色模式，可以添加前缀或后缀`rgb`或`cmyk`。<br>虽然使用批量集预设功能不需要指定集命名约定，但最佳实践是建议您使用集命名约定来定义要组合到集中的命名约定的任意多个元素，以帮助简化批量集创建。 |
 | **[!UICONTROL 规则结果 - RegX]** |  |
@@ -153,7 +153,7 @@ ht-degree: 1%
 1. 导航到要应用一个或多个批集预设的文件夹。
 1. 在页面的&#x200B;**[!UICONTROL 名称]**&#x200B;列左侧，选中该列的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
-1. 在文件夹的“属性”页面上，点按&#x200B;**[!UICONTROL Dynamic Media Processing]**&#x200B;选项卡。
+1. 在文件夹的“属性”页面上，点按&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -230,7 +230,7 @@ ht-degree: 1%
 1. 导航到要删除一个或多个批集预设的文件夹。
 1. 在页面的&#x200B;**[!UICONTROL 名称]**&#x200B;列左侧，选中文件夹的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
-1. 在文件夹的“属性”页面上，点按&#x200B;**[!UICONTROL Dynamic Media Processing]**。
+1. 在文件夹的“属性”页面上，点按&#x200B;**[!UICONTROL Dynamic Media处理]**。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -240,7 +240,7 @@ ht-degree: 1%
 
 ## 删除批集预设{#delete-bsp}
 
-您可以删除批集预设，以从[!DNL Dynamic Media]中永久删除它们。 也就是说，它们不再显示在文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;页面的&#x200B;**[!UICONTROL Dynamic Media Processing]**&#x200B;选项卡的[!UICONTROL 批集预设]页面上，也不再显示在&#x200B;**[!UICONTROL 批集预设]**&#x200B;下拉列表中。 因此，当重新处理文件夹或将新资产上传到该文件夹时，该预设将不会应用于该文件夹中的现有资产。
+您可以删除批集预设，以从[!DNL Dynamic Media]中永久删除它们。 也就是说，它们不再显示在文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;页面的&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡的[!UICONTROL 批集预设]页面上，也不会显示在&#x200B;**[!UICONTROL 批集预设]**&#x200B;下拉列表中。 因此，当重新处理文件夹或将新资产上传到该文件夹时，该预设将不会应用于该文件夹中的现有资产。
 
 如果您删除之前应用于一个或多个文件夹的预设，则从这些文件夹中的资产创建的任何图像集或旋转集将继续按原样显示。
 
