@@ -1,6 +1,6 @@
 ---
 title: 使用 Dynamic Media
-description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上消费。
+description: 了解如何使用Dynamic Media提供资产以在Web、移动和社交网站上消费。
 translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 45%
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media 有助于按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)Dynamic Media使用一组主源资源，通过其全局、可扩展、性能优化的网络实时生成和交付多种形式的丰富内容。
+[Dynamic Media 有助于按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)Dynamic Media公司使用一组主要源资产，通过其全球、可扩展、性能优化的网络实时生成和交付多种不同的丰富内容。
 
 Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和视频。Dynamic Media 以独特的方式整合 Adobe Experience Manager 数字资产管理（资产）解决方案的工作流，从而简化了数字营销活动管理流程。
 
 >[!NOTE]
 >
->[使用Adobe Experience Manager和动态媒体](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)中提供社区文章。
+>[与Adobe Experience Manager和Dynamic Media合作](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)上有社区文章。
 
 ## Dynamic Media 的功能 {#what-you-can-do-with-dynamic-media}
 
@@ -50,15 +50,15 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Dynamic Media已启用，而Dynamic Media已禁用{#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media启用与Dynamic Media禁用{#dynamic-media-on-versus-dynamic-media-off}
 
-您可以通过以下特征判断Dynamic Media是否已启用（打开）:
+您可以通过以下特征判断是否启用了Dynamic Media:
 
 * 在下载或预览资产时，可以使用动态演绎版。
 * 图像集、旋转集和混合媒体集均可用。
 * 创建了 PTIFF 演绎版。
 
-当您单击图像资产时，启用Dynamic Media后，资产的视图会有所不同。 Dynamic Media使用HTML5点播查看器。
+单击图像资产时，启用了Dynamic Media后，资产的视图会有所不同。 Dynamic Media使用点播HTML5查看器。
 
 ### 动态演绎版{#dynamic-renditions}
 
@@ -80,10 +80,10 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ### 资产视图更改 {#asset-views-change}
 
-启用Dynamic Media后，可以单击`+`和`-`按钮进行放大和缩小。您还可以单击／点按以放大特定区域。还原功能可使您恢复到原始版本，并可通过单击对角箭头使图像全屏显示。启用Dynamic Media的外观如下所示：
+启用Dynamic Media后，可以单击`+`和`-`按钮进行放大和缩小。您还可以单击／点按以放大特定区域。还原功能可使您恢复到原始版本，并可通过单击对角箭头使图像全屏显示。Dynamic Media启用后，
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-禁用Dynamic Media后，您可以放大和缩小并还原到原始大小：
+禁用Dynamic Media后，您可以放大和缩小并恢复到原始大小：
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
