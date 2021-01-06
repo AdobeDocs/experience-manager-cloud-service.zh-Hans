@@ -91,9 +91,10 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
 ## （可选）识别Quickview变量{#optional-identifying-quickview-variables}
 
 >[!NOTE]
-仅当满足以下条件时，才需要此任务:
-* 您希望通过触发Quickviews向视频添加交互性。
-* 您对AEM的实施does *not*&#x200B;使用eCommerce integration framework从任何电子商务解决方案（如IBM Websphere Commerce、Elastic Path、hybris或Intershop）将产品数据拉入AEM。<!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+>
+>仅当满足以下条件时，才需要此任务:
+>* 您希望通过触发Quickviews向视频添加交互性。
+>* 您对AEM的实施does *not*&#x200B;使用eCommerce integration framework从任何电子商务解决方案（如IBM Websphere Commerce、Elastic Path、hybris或Intershop）将产品数据拉入AEM。<!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 如果您的AEM实施使用电子商务，则可以跳过此任务并继续到下一个任务。
 
@@ -254,10 +255,12 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
 请参阅[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)。
 
 >[!NOTE]
-请注意，在体验片段中嵌入查看器时，不支持交互式视频中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
+>
+>请注意，在体验片段中嵌入查看器时，不支持交互式视频中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
 
 >[!NOTE]
-如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
+>
+>如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
 
 在当前创建／编辑会话中，页面右上角附近支持撤消和重做选项。
 
@@ -488,7 +491,8 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
    完成后，点按&#x200B;**[!UICONTROL 保存]**。
 
    >[!NOTE]
-   在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 文 `.vtt` 件将保存到位于资 `_VTT` 产根目录的文 **[!UICONTROL 件夹]**。 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
+   >
+   >在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 文 `.vtt` 件将保存到位于资 `_VTT` 产根目录的文 **[!UICONTROL 件夹]**。 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
 
 1. 发布交互式视频。发布后会创建嵌入代码或 URL，最后您需要将该嵌入代码或 URL 复制并粘贴到您的网站体验。
 
@@ -497,7 +501,8 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
    请参阅[发布资产](publishing-dynamicmedia-assets.md)。
 
    >[!NOTE]
-   要使用Quickviews发布购物视频，请确保还从您的商务区域单独发布每个视频的相关图像资产。
+   >
+   >要使用Quickviews发布购物视频，请确保还从您的商务区域单独发布每个视频的相关图像资产。
 
    在添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站登录页面。请参阅[将交互式视频与您的网站集成。](#integrating-an-interactive-video-with-your-website)
 
@@ -505,7 +510,7 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
 
 有关如何发布交互式视频资产的详细信息，请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 将交互式视频与您的网站{#integrating-an-interactive-video-with-your-website}集成
+## 将交互式视频与您的网站集成{#integrating-an-interactive-video-with-your-website}
 
 现在，在上传视频、向视频添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站。
 
@@ -526,8 +531,9 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
 由于复制的嵌入代码是为响应式环境设计的，因此该代码应该会自动地适应之前由静态视频所占用的区域。
 
 >[!NOTE]
-至此，如果您只是通过超链接的网页添加交互性，您就已经完成了所有操作。
-但是，如果您为触发概览而添加了任何交互性，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与您现有的Quickviews集成。 在这种情况下，您现在需要将交互式视频与网站上的现有Quickviews相集成。
+>
+>至此，如果您只是通过超链接的网页添加交互性，您就已经完成了所有操作。
+>但是，如果您为触发概览而添加了任何交互性，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与您现有的Quickviews集成。 在这种情况下，您现在需要将交互式视频与网站上的现有Quickviews相集成。
 
 **示例**
 
@@ -566,10 +572,11 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)的[使�
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
-## 将交互式视频与现有Quickview {#integrating-an-interactive-video-with-an-existing-quickview}集成
+## 将交互式视频与现有Quickview集成 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-此任务仅在您是独立的AEM Assets客户时适用。
+>
+>此任务仅在您是独立的AEM Assets客户时适用。
 
 该过程的最后一步是将交互式视频与网站上使用的现有Quickview实现相集成。 但是，没有任何一种集成解决方案是在所有情况下都适用的。每个Quickview实施都是独一无二的。 因此，需要一种最可能需要前端IT人员协助的特定方法。
 

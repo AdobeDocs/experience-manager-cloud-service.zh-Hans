@@ -117,7 +117,7 @@ AEM将站点的CSS和Javascript收集到一个中央位置的单个文件中，�
 * 通过j`/etc.clientlibs/myprojects/clientlibs/foo.js`的clientlib
 * 通过`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`的静态图像
 
-### 通过HTL {#loading-via-htl}加载客户端库
+### 通过HTL加载客户端库 {#loading-via-htl}
 
 在客户端库文件夹中成功存储和管理客户端库后，即可通过HTL访问它们。
 
@@ -139,7 +139,7 @@ AEM publish实例上需要大多数clientlib。 即，大多数客户端的目�
 
 但有时可能需要客户端库来自定义创作体验。 例如，自定义对话框可能需要将少量CSS或JS部署到AEM创作实例。
 
-### 在作者{#clientlibs-on-author}上管理客户端库
+### 在作者上管理客户端库{#clientlibs-on-author}
 
 如果需要在作者上使用客户端库，可以使用与发布相同的方法在`/apps`下创建客户端库，但直接在`/apps/.../clientlibs/foo`下编写，而不是创建整个项目来管理它。
 
@@ -204,7 +204,7 @@ AEM中的客户端库文件夹还支持许多其他功能。 但是，AEM作为C
 <script src="/etc/clientlibs/mylibs/publicmain.js" type="text/javascript">
 ```
 
-### 从其他库{#embedding-code-from-other-libraries}嵌入代码
+### 从其他库嵌入代码{#embedding-code-from-other-libraries}
 
 可以将客户端库中的代码嵌入到另一个客户端库中。 在运行时，嵌入库生成的JS和CSS文件包括嵌入库的代码。
 
@@ -226,7 +226,7 @@ AEM中的客户端库文件夹还支持许多其他功能。 但是，AEM作为C
 
 在这种情况下，将所有所需的客户端库代码合并到单个文件中，以减少页面加载时来回请求的数量，这是非常有用的。 为此，您可以使用`cq:ClientLibraryFolder`节点的embed属性，将所需的库`embed`导入应用程序特定的客户端库。
 
-#### CSS文件{#paths-in-css-files}中的路径
+#### CSS文件中的路径{#paths-in-css-files}
 
 嵌入CSS文件时，生成的CSS代码使用相对于嵌入库的资源的路径。 例如，可公开访问的库`/etc/client/libraries/myclientlibs/publicmain`嵌入了`/apps/myapp/clientlib`客户端库：
 
@@ -252,7 +252,7 @@ body {
 }
 ```
 
-#### 请参阅HTML输出{#see-embedded-files}中的嵌入文件
+#### 请参阅HTML输出中的嵌入文件{#see-embedded-files}
 
 要跟踪嵌入代码的来源，或确保嵌入的客户端库生成预期结果，您可以在运行时查看嵌入的文件名称。 要查看文件名，请在网页的URL后面附加`debugClientLibs=true`参数。 生成的库包含`@import`语句，而不是嵌入代码。
 

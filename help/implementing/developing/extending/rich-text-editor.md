@@ -131,10 +131,8 @@ RTE的基本功能由特定于相应插件的节点上的`features`属性值激�
 >* **名称**: `configPath`
 >* **类型**: `String`
 >* **值**:包含实际配置的节点的路径
-
 >
->
-请勿将RTE配置节点命名为`config`。 否则，RTE配置只对管理员有效，对组`content-author`中的用户无效。
+>请勿将RTE配置节点命名为`config`。 否则，RTE配置只对管理员有效，对组`content-author`中的用户无效。
 
 配置在对话框编辑模式下应用的以下属性：
 
@@ -146,7 +144,7 @@ RTE的基本功能由特定于相应插件的节点上的`features`属性值激�
 
 在触屏启用对话框中使用RTE时，将属性`useFixedInlineToolbar`设置为`true`以避免出现问题。
 
-## 通过激活插件{#enable-rte-functionalities-by-activating-plug-ins}启用RTE功能
+## 通过激活插件启用RTE功能{#enable-rte-functionalities-by-activating-plug-ins}
 
 RTE功能通过一系列插件提供，每个插件都具有features属性。 您可以配置features属性以启用或禁用每个插件的各种功能。
 
@@ -161,10 +159,8 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
->
-要创建您自己的文本组件，请复制上述组件，而不是编辑这些组件。
+>要创建您自己的文本组件，请复制上述组件，而不是编辑这些组件。
 
 ## 配置RTE工具栏{#dialogfullscreen}
 
@@ -233,7 +229,7 @@ RTE流中从用户界面配置到内容策略的下游的可用选项。
 
 例如，您可以看到[文本核心组件文档](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
 
-## 自定义工具栏图标和命令{#iconstoolbar}之间的映射
+## 自定义工具栏图标和命令之间的映射{#iconstoolbar}
 
 可以自定义RTE工具栏上显示的Coral图标与可用命令之间的映射。 除了Coral图标，您还不能使用任何其他图标。
 

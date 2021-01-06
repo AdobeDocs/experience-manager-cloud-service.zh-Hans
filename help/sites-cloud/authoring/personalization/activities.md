@@ -39,12 +39,10 @@ ht-degree: 85%
 >可用的活动类型由以下因素决定：
 >
 >* 如果 `xt_only` 在AEM端用于连接到Adobe Target的Adobe Target租户(clientcode)上启用了此选项，则您只能在AEM中创 **建** XT活动。
-   >
-   >
-* 如果Adobe `xt_only` Target租户 **(clientcode)上未启用这些选项，则您可以在** AEM中创建 **** XT和A/B活动。
 >
+>* 如果Adobe `xt_only` Target租户 **(clientcode)上未启用这些选项，则您可以在** AEM中创建 **** XT和A/B活动。
 >
-**其他注意事项：**`xt_only` 选项是对特定 Target 租户 (clientcode) 应用的设置，只能在 Adobe Target 中直接进行修改。您无法在 AEM 中启用或禁用此选项。
+>**其他注意事项：**`xt_only` 选项是对特定 Target 租户 (clientcode) 应用的设置，只能在 Adobe Target 中直接进行修改。您无法在 AEM 中启用或禁用此选项。
 
 >[!CAUTION]
 >

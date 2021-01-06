@@ -26,17 +26,14 @@ ht-degree: 6%
 >[!CAUTION]
 >
 >* **如果您不需要下面描 [述的](#definition-of-advanced-services-that-need-configuration)** 高级服务，可以忽略此配置。
-   >
-   >
-* **当您扩展或使用现成组件时**，不建议更改OSGi配置。
-   >
-   >
-* **您可以从头开始编写一个仅使用内容片段API的组件，而无需高级服务**。但是，在这种情况下，您必须开发组件，以便它处理相应的处理。
 >
+>* **当您扩展或使用现成组件时**，不建议更改OSGi配置。
 >
-因此，建议使用核心组件。
+>* **您可以从头开始编写一个仅使用内容片段API的组件，而无需高级服务**。但是，在这种情况下，您必须开发组件，以便它处理相应的处理。
+>
+>因此，建议使用核心组件。
 
-## 需要配置{#definition-of-advanced-services-that-need-configuration}的高级服务的定义
+## 需要配置的高级服务的定义{#definition-of-advanced-services-that-need-configuration}
 
 需要注册组件的服务包括：
 

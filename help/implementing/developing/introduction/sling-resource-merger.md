@@ -32,7 +32,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 >
 >Sling Resource Merager和相关方法只能与触屏优化UI(这是AEM作为Cloud Service唯一可用的UI)一起使用。
 
-### AEM {#goals-for-aem}的目标
+### AEM的目标 {#goals-for-aem}
 
 在AEM中使用Sling Resource合并的目标是：
 
@@ -48,12 +48,10 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 >这是因为，只要对实例应用升级，`/libs`的内容都可能被覆盖。
 >
 >* 叠加取决于[搜索路径](/help/implementing/developing/introduction/overlays.md#search-paths)。
-   >
-   >
-* 覆盖不取决于搜索路径，它们使用属性`sling:resourceSuperType`建立连接。
 >
+>* 覆盖不取决于搜索路径，它们使用属性`sling:resourceSuperType`建立连接。
 >
-但是，重写通常在`/apps`下定义，因为AEM的最佳实践是在`/apps`下定义自定义；这是因为您不得更改`/libs`下的任何内容。
+>但是，重写通常在`/apps`下定义，因为AEM的最佳实践是在`/apps`下定义自定义；这是因为您不得更改`/libs`下的任何内容。
 
 ### 属性 {#properties}
 
@@ -217,7 +215,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
          * 类型: `String`
          * 选定: `<before-SiblingName>`
 
-### 从代码{#invoking-the-sling-resource-merger-from-your-code}调用Sling资源合并
+### 从代码调用Sling资源合并{#invoking-the-sling-resource-merger-from-your-code}
 
 Sling Resource Merager包括两个自定义资源提供商——一个用于叠加，另一个用于覆盖。 可以通过使用装载点在代码中调用其中的每一个：
 

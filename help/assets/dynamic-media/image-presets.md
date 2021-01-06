@@ -31,9 +31,8 @@ ht-degree: 44%
    >[!NOTE]
    >
    >* 静态演绎版显示在窗格的上半部分。 动态演绎版显示在下半部分。您只能对动态演绎版使用 URL 来显示图像。**[!UICONTROL URL]** 按钮仅在选择动态演绎版的情况下才会显示。而 **[!UICONTROL RESS]** 按钮则仅在选择响应式图像预设的情况下才会显示。
-      >
-      >
-   * 当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 演绎版]**&#x200B;时，系统会显示大量演绎版。 您可以增加可查看的预设数。请参阅[增加显示](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)的图像预设数。
+   >
+   >* 当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 演绎版]**&#x200B;时，系统会显示大量演绎版。 您可以增加可查看的预设数。请参阅[增加显示](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)的图像预设数。
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
