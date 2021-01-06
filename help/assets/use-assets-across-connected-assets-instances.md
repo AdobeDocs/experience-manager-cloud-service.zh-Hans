@@ -3,9 +3,9 @@ title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署中可用的资源。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
+source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2704'
 ht-degree: 28%
 
 ---
@@ -105,6 +105,10 @@ ht-degree: 28%
    >在作者获取资产时，将会获取该资产在远程 部署中可用的所有演绎版。如果要为获取的资产创建更多演绎版，请跳过此配置步骤。将触发[!UICONTROL  DAM更新资产]工作流并创建更多演绎版。 这些演绎版仅在本地[!DNL Sites]部署中可用，在远程DAM部署中则不可用。
 
 1. 将[!DNL Sites]部署添加为[!DNL Assets]部署上的CORS配置中允许的来源。 有关详细信息，请参阅[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)。
+
+您可以检查已配置的[!DNL Sites]部署和[!DNL Assets]部署之间的连接。
+
+![已配置已连接资产的连接测试  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
