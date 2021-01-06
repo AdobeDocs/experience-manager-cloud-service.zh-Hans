@@ -3,10 +3,10 @@ title: XMP 元数据
 description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 AEM将其用作元数据的创建、处理和交换的标准格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
+source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 55%
+source-wordcount: '899'
+ht-degree: 61%
 
 ---
 
@@ -72,11 +72,11 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
-Adobe Experience Manager(AEM)资产中的此XMP回写功能可将资产元数据更改复制到资产的演绎版。
+Adobe Experience Manager(AEM)资产中的此XMP写回功能可将资产元数据更改复制到资产的演绎版。
 
 当您从AEM Assets内更改资产的元数据或在上传资产时，更改最初存储在CRXDE的资产节点内。
 
-XMP回写功能会将元数据更改传播到资产的所有或特定演绎版。
+XMP写回功能将元数据更改传播到资产的所有或特定演绎版。
 
 请考虑将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的情况。
 
@@ -88,39 +88,43 @@ XMP回写功能会将元数据更改传播到资产的所有或特定演绎版�
 
 但是，AEM Assets不会自动将任何元数据更改传播到资产的演绎版。
 
-XMP回写功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
+XMP写回功能允许您将元数据更改传播到资产的所有或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
 
-### 启用XMP写回{#enable-xmp-writeback}
+<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
+### Enable XMP writeback {#enable-xmp-writeback}
 -->
 
-要在上传元数据更改时将其传播到资产的演绎版，请修改Configuration Manager中的&#x200B;**[!UICONTROL Adobe CQDAM演绎版制作器]**&#x200B;配置。
+<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
 
-1. 要打开Configuration Manager，请访问`https://[aem_server]:[port]/system/console/configMgr`。
-1. 打开&#x200B;**[!UICONTROL Adobe CQDAM再现制造商]**&#x200B;配置。
-1. 选择&#x200B;**[!UICONTROL 传播XMP]**&#x200B;选项，然后保存更改。
+<!-- 
+To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
-### 为特定再现{#enable-xmp-writeback-for-specific-renditions}启用XMP回写
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
+1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
-要让XMP回写功能将元数据更改传播到选择的演绎版，请将这些演绎版指定到DAM元数据回写工作流的[!UICONTROL XMP回写回进程]工作流步骤。 默认情况下，此步骤配置为原始再现。
+### Enable XMP write-back for specific renditions {#enable-xmp-writeback-for-specific-renditions}
 
-要使XMP回写功能将元数据传播到再现缩略图140.100.png和319.319.png，请执行这些步骤。
+To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. By default, this step is configured with the original rendition.
 
-1. 点按/单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模式]**。
-1. 在“模型”页中，打开&#x200B;**[!UICONTROL DAM元数据写回]**&#x200B;工作流模型。
-1. 在“ **[!UICONTROL DAM元数据写回]** ”属性页中，打开“ **[!UICONTROL XMP写回进程”步骤]** 。
-1. 在&#x200B;**[!UICONTROL 步骤属性]**&#x200B;对话框中，点按/单击&#x200B;**[!UICONTROL 流程]**&#x200B;选项卡。
-1. 在&#x200B;**[!UICONTROL 参数]**&#x200B;框中，添加`rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`，然后点按／单击&#x200B;**[!UICONTROL 确定]**。
+For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
+
+1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
+1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
+1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
+1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, and then tap/click **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. 保存更改。
-1. 要使用新属性为 Dynamic Media 图像重新生成 Pyramid TIFF (PTIFF) 呈现，请将 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤添加到 DAM 元数据回写工作流。PTIFF 呈现仅在 Dynamic Media Hybrid 实施中本地创建和存储。
+1. Save the changes.
+1. To regenerate the Pyramid TIFF (PTIFF) renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata write-back workflow. PTIFF renditions are only created and stored locally in a Dynamic Media Hybrid implementation.
 
-1. 保存工作流。
+1. Save the workflow.
 
-元数据更改将传播到资产的演绎版缩略图140.100.png和缩略图319.319.png，而不是其他演绎版。
+The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
+-->
 
 >[!MORELIKETHIS]
 >
