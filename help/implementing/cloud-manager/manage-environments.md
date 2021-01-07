@@ -2,7 +2,7 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
+source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 4%
@@ -168,7 +168,7 @@ ht-degree: 4%
 应用IP允许列表是将“允许列表”定义中包含的所有IP范围与环境中的作者或发布服务相关联的过程。 必须登录“业务所有者”或“部署管理者”角色的用户，才能应用IP允许列表。
 
 >[!NOTE]
->IP允许列表必须存在于云管理器中，才能将其应用于环境服务。 要进一步了解Cloud Manager中的IP允许列表，请导航至Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)中的[IP允许列表简介。
+>IP允许列表必须存在于云管理器中，才能将其应用于环境服务。 要进一步了解Cloud Manager中的IP允许列表，请导航至Cloud Manager中的[IP允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
 请按照以下步骤应用IP允许列表:
 
