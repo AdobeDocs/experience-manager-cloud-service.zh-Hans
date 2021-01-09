@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 70%
+source-wordcount: '2018'
+ht-degree: 66%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 70%
 * 如果您使用&#x200B;*沙箱环境*，请确保环境是最新的并已升级到最新版本。 如果您使用的是“生产环境”**，则会自动更新。
 
 * 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的Cloud Service实例中的本地AEM管理员组。 无特权的用户将无法检索访问令牌，进而无法使用内容传输工具。
+
+* 访问令牌可以在特定时间段后或Cloud Service环境升级后定期过期。 如果访问令牌已过期，您将无法连接到Cloud Service实例，您必须检索新访问令牌。 与现有迁移集关联的状态图标将更改为红色云，并将鼠标悬停在该云上时将显示一条消息。
 
 * 当前，AEM作为Cloud Service作者实例的默认MongoDB大小为32GB。 建议对于大于20GB的区段存储大小，您应提交支持票证以增加MongoDB大小。
 
@@ -162,6 +164,9 @@ ht-degree: 70%
 请按照以下步骤从内容传输工具中摄取迁移集：
 
 1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**摄取**&#x200B;以开始摄取阶段。 出于演示目的，禁用了&#x200B;**将内容摄取到创作实例**&#x200B;选项。否则其会将内容同时摄取到“创作”和“发布”。
+
+   >[!IMPORTANT]
+   >启用&#x200B;**在摄取**&#x200B;选项之前擦除云实例上的现有内容时，它将删除整个现有存储库并创建新存储库以将内容摄取到其中。 这意味着它重置所有设置，包括目标Cloud Service实例的权限。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
