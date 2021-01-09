@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 66%
+source-wordcount: '1915'
+ht-degree: 64%
 
 ---
 
@@ -255,12 +255,6 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 ### UI 行为 {#ui-behavior}
 
 作为用户，您可能会在内容传输工具的用户界面 (UI) 中看到以下行为更改：
-
-* 用户为作者 URL（开发/暂存/生产）创建迁移集，并成功执行提取和摄取。
-
-* 然后，用户为同一作者 URL 创建新的迁移集，并对新迁移集执行提取和摄取。UI 显示第一个迁移集的摄取状态更改为&#x200B;**失败**，并且没有日志可用。
-
-* 这并不意味着第一个迁移集的摄取失败。出现此行为是因为启动新的摄取作业时，会删除以前的摄取作业。因此，应该忽略第一个迁移集上的更改状态。
 
 * 内容传输工具 UI 中的图标可能与本指南中显示的屏幕截图有所不同，也可能根本不显示，这取决于源 AEM 实例的版本。
 
