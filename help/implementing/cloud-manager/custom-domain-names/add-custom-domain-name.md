@@ -2,7 +2,7 @@
 title: 添加自定义域名
 description: 添加自定义域名
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ ht-degree: 0%
 1. 从下拉列表中选择&#x200B;**域SSL证书**&#x200B;并选择&#x200B;**继续**。
 
 1. **将显示“添** 加域名”对话框。这将带您进入环境的域名验证屏幕。 请参阅[添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以了解更多信息。
-按照提供的说明证明您的环境的域所有权。
+
+   按照提供的说明证明您的环境的域所有权：
 
 1. 单击&#x200B;**创建**。
 1. CDN部署需要有效的SSL证书和成功的TXT验证。 状态&#x200B;**已验证和已部署**表示。
