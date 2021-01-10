@@ -2,9 +2,9 @@
 title: 添加自定义域名
 description: 添加自定义域名
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 ## 重要注意事项{#important-considerations}
 
 * 在添加自定义域名之前，必须向项目安装包含自定义域名的有效SSL证书。 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以了解更多信息。
+
+* 当存在连接到这些环境的当前正在运行的管道时，无法将域名添加到环境。
 
 * 一次只能添加一个域名。 但是，域不能包含通配符。 创作端不支持自定义域。
 
