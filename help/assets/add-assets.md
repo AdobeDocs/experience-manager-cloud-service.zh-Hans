@@ -2,9 +2,9 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -44,17 +44,13 @@ ht-degree: 1%
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 上传{#process-when-uploaded}时处理资产
 
-为了对已上传的资产进行其他处理，您可以对上传文件夹应用处理用户档案。 这些用户档案位于[!DNL Assets]文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;页面中。
+为了对已上传的资产进行其他处理，您可以对上传文件夹应用处理用户档案。 这些用户档案位于[!DNL Assets]文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;页面中。 没有扩展或扩展不正确的数字资产不会根据需要进行处理。 例如，上传此类资产时，资产可能不会发生任何情况，或者处理用户档案不正确。 用户仍可以在DAM中存储二进制文件。
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![资产文件夹的属性，其中包含添加处理用户档案的选项](assets/assets-folder-properties.png)
 
 可以使用以下选项卡：
 
-* [元数据](metadata-profiles.md) 配置文件允许您将默认元数据属性应用到上传到该文件夹的资产
+* [元数据](metadata-profiles.md) 配置文件允许您将默认元数据属性应用到上传到该文件夹的资产。
 * [处理](asset-microservices-configure-and-use.md) 配置文件允许您生成的演绎版数量超出默认值。
 
 此外，如果部署中启用了[!DNL Dynamic Media]，则可以使用以下选项卡：
 
-* [Dynamic Media图](dynamic-media/image-profiles.md) 像配置文件允许您对上传的资&#x200B;**[!UICONTROL 源应]** 用特定裁剪（智能裁剪和像素裁剪）和锐化配置。
-* [Dynamic Media视](dynamic-media/video-profiles.md) 频配置文件允许您应用特定的视频编码用户档案（分辨率、格式、参数）。
+* [[!DNL Dynamic Media] 图像](dynamic-media/image-profiles.md) 配置文件允许您对上传的资&#x200B;**[!UICONTROL 产应]** 用特定裁剪（智能裁剪和像素裁剪）和锐化配置。
+* [[!DNL Dynamic Media] 视频](dynamic-media/video-profiles.md) 配置文件允许您应用特定的视频编码用户档案（分辨率、格式、参数）。
 
 >[!NOTE]
 >
->Dynamic Media资产裁剪和其他操作是无损的，即它们不会更改上传的原始内容，而是为传送资产时要进行的裁剪或媒体转换提供参数
+>[!DNL Dynamic Media] 对资产进行裁剪和其他操作是无损的，即，这些操作不会更改上传的原始资产。而是在传送资产时提供用于裁剪或变换的参数。
 
 对于分配了处理用户档案的文件夹，用户档案名显示在卡视图的缩略图上。 在列表视图中，用户档案名显示在&#x200B;**[!UICONTROL 处理用户档案]**&#x200B;列中。
 
