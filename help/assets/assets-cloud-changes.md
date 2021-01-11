@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager资产中a [!DNL Cloud Service]的显着变化
-description: 与Adobe Experience Manager6.5相比，Adobe Experience Manager资产在Experience Manager [!DNL Cloud Service] 方面发生了显着变化。
+title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的显着变化'
+description: 与[!DNLAdobe Experience Manager6.5]相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的显着变化。
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '605'
 ht-degree: 3%
 
 ---
 
 
-# 对Experience Manager资产的显着更改为[!DNL Cloud Service] {#notable-changes}
+# 对[!DNL Experience Manager Assets]作为[!DNL Cloud Service] {#notable-changes}的显着更改
 
-Adobe Experience Manager[!DNL Cloud Service]为管理Experience Manager项目带来了许多新功能和可能性。 与[!DNL Experience Manager]作为[!DNL Cloud Service]作为Experience Manager托管服务的Adobe资产相比，本地资产或作为托管服务托管资产之间存在许多差异。 本文重点介绍[!DNL Assets]功能的重要区别。
+[!DNL Adobe Experience Manager] 这为管理 [!DNL Cloud Service] 您的Experience Manager项目带来了许多新功能和可能性。与作为[!DNL Cloud Service]的[!DNL Experience Manager]相比，[!DNL Experience Manager Assets]内部部署或作为Adobe托管服务托管之间有许多差异。 本文重点介绍[!DNL Assets]功能的重要区别。
 
 与[Experience Manager] 6.5相比，主要区别在于：
 
@@ -22,16 +22,17 @@ Adobe Experience Manager[!DNL Cloud Service]为管理Experience Manager项目带
 
 ## 资产摄取和处理{#asset-ingestion}
 
-通过支持更好的资产摄取、更快的上传、使用微服务更快的处理以及批量摄取，资产上传已经过优化以提高效率。 产品功能（Web用户界面、桌面客户端）已更新。 但是，这可能会影响一些现有的自定义。
+通过支持更好的摄取缩放、更快的上传、使用微服务更快的处理以及批量摄取，资源上传已经过优化，从而提高了效率。 产品功能（Web用户界面、桌面客户端）已更新。 此外，这可能会影响一些现有自定义设置。
 
-* Experience Manager使用直接二进制访问原则进行上传和下载，资产微服务用于资产处理。 请参阅[资产摄取概述](/help/assets/asset-microservices-overview.md)。
+* [!DNL Experience Manager] 使用直接二进制访问原则上传和下载资产，并使用资产微服务处理资产。请参阅[microservices的概述](/help/assets/asset-microservices-overview.md)。
    * 资产上传[（直接二进制访问](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)）。
    * 有关技术详细信息，请参阅[直接二进制上传协议和API](/help/assets/developer-reference-material-apis.md#upload-binary)。
    * 有关基本CRUD操作的可用API方法的比较，请参阅[API和资产操作](/help/assets/developer-reference-material-apis.md#use-cases-and-apis)。
 *  早期版本中的默认工作流程 **[!UICONTROL DAM 资产更新]**&#x200B;不再可用。[!DNL Experience Manager]相反，资产微服务提供了可扩展的、随时可用的服务，涵盖大多数默认资产处理(演绎版、元数据提取和用于索引的文本提取)。
    * 请参阅[配置和使用资产微服务](/help/assets/asset-microservices-configure-and-use.md)
    * 要在处理中具有自定义的工作流步骤，可以使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。
-* 通过包管理器导入的资产需要使用资产界面中的&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作进行手动重新处理。
+* 使用包管理器上传的资产需要使用[!DNL Assets]界面中的&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作进行手动重新处理。
+* 没有扩展或扩展不正确的数字资产不会根据需要进行处理。 例如，上传此类资产时，资产可能不会发生任何情况，或者处理用户档案不正确。 用户仍可以在DAM中存储二进制文件。
 
 使用资产微服务生成的标准演绎版以向后兼容的方式存储在资产存储库节点中（相同的命名惯例）。
 
