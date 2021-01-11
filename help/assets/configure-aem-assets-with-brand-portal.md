@@ -3,7 +3,7 @@ title: 将AEM Assets配置为 [!DNL Cloud Service] 品牌门户
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 15%
@@ -71,7 +71,7 @@ IMS 配置包括两个步骤：
 
    ![创建证书](assets/ims-config2.png)
 
-1. 单击&#x200B;**[!UICONTROL 下载公钥]**&#x200B;图标，并将公钥(.crt)文件保存到您的计算机上。
+1. 单击&#x200B;**[!UICONTROL 下载公钥]**&#x200B;图标，并将公钥(CRT)文件保存到您的计算机上。
 
    公钥稍后将用于为您的Brand Portal租户配置API并在Adobe开发人员控制台中生成服务帐户凭据。
 
