@@ -3,7 +3,7 @@ title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
 ht-degree: 1%
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可以将图像、视频、文档和其他文件格式转换为不同的再现，包括缩略图、提取的文本和元数据以及存档。
 
-开发人员可以使用[!DNL Asset Compute Service]创建符合支持用例的自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。 [[!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义应用程序。[!DNL Asset Compute Service] 支持以下调用外部服务的用例：
+开发人员可以使用[!DNL Asset Compute Service]为支持的用例创建自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。 [[!DNL Experience Manager] 可以使用管理员配置的自定义用户档案从用户界面调用这些自定义应用程序。[!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
 * 使用[!DNL Adobe Photoshop]的[ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout)将结果另存为再现。
 * 呼叫第三方系统以更新数据，例如PIM系统。
@@ -123,7 +123,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 要创建自定义用户档案，请执行以下步骤：
 
-1. 管理员可访问&#x200B;**[!UICONTROL 工具>资产>处理用户档案]**。 单击&#x200B;**[!UICONTROL 创建]**。
+1. 管理员可访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理用户档案]**。 单击&#x200B;**[!UICONTROL 创建]**。
 1. 单击&#x200B;**[!UICONTROL Custom]**&#x200B;选项卡。 单击&#x200B;**[!UICONTROL 添加新]**。 提供再现所需的文件名。
 1. 提供以下信息。
 
@@ -145,6 +145,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 为了说明自定义用户档案的用法，让我们考虑将一些自定义文本应用于活动图像的用例。 您可以创建利用PhotoshopAPI编辑图像的处理用户档案。
 
 asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]字段将这些参数传递到自定义应用程序。 然后，自定义应用程序调用PhotoshopAPI并将这些值传递给API。 例如，您可以传递字体名称、文本颜色、文本权重和文本大小，将自定义文本添加到活动图像。
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![自定义处理用户档案](assets/custom-processing-profile.png)
 
