@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
+source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '694'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 ## 发布日期 {#release-date}
 
 [!DNL Adobe Experience Manager]作为Cloud Service2020.12.0的发布日期为2020年12月17日。
-以下版本(2021.1.0)将于2020年1月28日发布。
+以下版本(2021.1.0)将于2021年1月28日发布。
 
 ## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
 
@@ -74,3 +74,20 @@ AEM中Cloud Manager作为Cloud Service2020.12.0的发布日期为2020年12月10�
 ### 错误修复 {#crt-bug-fixes}
 
 * 对AEM Dispatcher Converter和Repository Modernizer工具执行了若干错误修复。 请参阅[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
+
+## 云过渡工具{#code-transition-tools}
+
+### 发布日期 {#release-date-ctt}
+
+内容传输工具v1.1.20的发布日期为2021年1月08日。
+
+### [!DNL Content Transfer Tool] {#what-is-new-ctt}中的新增功能
+
+* 用户现在可以通过将指针悬停在内容传输工具(CTT)用户界面的状态图标上来了解其访问令牌是否已过期。 在迁移集详细信息UI中，还会通知他们无法连接到Cloud Service实例。
+
+### 错误修复 {#ctt-bug-fixes}
+
+* 迁移集的内容传输工具(CTT)用户界面状态在非活动状态持续一段时间后未持续并更改。 已修复。
+* 如果日志不可用，则禁用视图日志的选项。 此问题已修复，并添加了消息以通知用户日志缺失的原因。
+* 当用户停止摄取时，内容传输工具用户界面状态显示“失败”。 已修复此问题，改为显示&#x200B;*STOPPED*。
+
