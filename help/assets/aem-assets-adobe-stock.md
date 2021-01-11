@@ -3,7 +3,7 @@ title: 管理 [!DNL Assets]中的 [!DNL Adobe Stock] 资产。
 description: 从 [!DNL Adobe Experience Manager]中搜索、提取、许可和管理 [!DNL Adobe Stock] 资产。 将授权资产用作任何其他数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->如果有多个[!DNL Adobe Stock]配置，请在“用户首选项”面板中选择所需的配置。 要从Experience Manager主页访问面板，请单击用户图标，然后单击&#x200B;**[!UICONTROL 用户首选项]** > **[!UICONTROL 库存配置]**)。
+>如果有多个[!DNL Adobe Stock]配置，请在“用户首选项”面板中选择所需的配置。 要从Experience Manager主页访问面板，请单击用户图标，然后单击&#x200B;**[!UICONTROL 用户首选项]** > **[!UICONTROL 库存配置]**。
 
 ## 使用和管理[!DNL Experience Manager] {#usemanage}中的[!DNL Adobe Stock]资产
 
