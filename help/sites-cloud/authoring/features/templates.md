@@ -2,10 +2,10 @@
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 98%
+source-wordcount: '4600'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 98%
 >
 >通常，在最初设置您的网站时便会预定义&#x200B;**允许的模板**。
 
->[!CAUTION]
+>[!TIP]
 >
 >切勿在模板中输入任何需要国际化的信息。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -127,7 +127,13 @@ ht-degree: 98%
    >
    >创建新模板后，会在控制台中将其标记为&#x200B;**草稿**，这表示页面作者还不能使用此模板。
 
-### 定义模板属性 - 模板作者  {#defining-template-properties-template-author}
+>[!NOTE]
+>
+>模板是简化页面创建工作流程的强大工具。 但是，过多的模板可能会使作者不堪重负，并使页面创建变得混乱。 一个不错的经验法则是将模板数量保持在100以下。
+>
+>Adobe不建议具有1000个以上的模板，因为这可能会影响性能。
+
+### 定义模板属性 - 模板作者 {#defining-template-properties-template-author}
 
 模板可能具有以下属性：
 
