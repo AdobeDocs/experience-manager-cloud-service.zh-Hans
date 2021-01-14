@@ -2,9 +2,9 @@
 title: 使用内容片段和GraphQL的无头内容投放
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作GraphQL的Cloud Service，以实现无头内容投放。
 translation-type: tm+mt
-source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->针对内容片段投放的AEM GraphQL API将于2021年初发布。
+>AEM GraphQL API for Content Fragments投放可应请求提供。
 >
->相关文档已经可供预览使用。
+>请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 以Adobe Experience Manager(AEM)为Cloud Service，您可以将内容片段与AEM GraphQL API（一种基于标准GraphQL的自定义实施）结合使用，以交付结构化内容以用于您的应用程序。
 
