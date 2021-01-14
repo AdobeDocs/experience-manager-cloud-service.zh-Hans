@@ -2,7 +2,7 @@
 title: 变量 - 创作片段内容
 description: 变量允许您为片段创作内容，然后根据用途创建该内容的变量（如果需要）。
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 19%
@@ -11,16 +11,6 @@ ht-degree: 19%
 
 
 # 变量 - 创作片段内容{#variations-authoring-fragment-content}
-
-<!--
->[!CAUTION]
->
->Certain features for Content Fragments will be released in early 2021.
->
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
 
 [变](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 量是内容片段的重要功能，因为它们允许您创建和编辑主控内容的副本，以用于特定渠道和／或场景。
 
