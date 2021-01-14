@@ -2,7 +2,7 @@
 title: AEM中Cloud Manager作为Cloud Service版本2021.1.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2021.1.0的发行说明
 translation-type: tm+mt
-source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
+source-git-commit: 05f539c41ea3caa0f754c0cdced4c795f8b6afb9
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # 作为Cloud Service2021.1.0 {#release-notes}的Adobe Experience ManagerCloud Manager发行说明
 
-本页概述了AEM中作为Cloud Service2021.1.0的Cloud Manager发行说明
+本页概述了AEM中作为Cloud Service2021.1.0的Cloud Manager发行说明。
 
 ## 发布日期 {#release-date}
 
