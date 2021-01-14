@@ -2,9 +2,9 @@
 title: 使用内容片段
 description: 了解作为Cloud Service的Adobe Experience Manager(AEM)的内容片段如何允许您设计、创建、策划和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: 468d6f6a87c9a4794d5187146f7d879433cafa6f
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '2012'
 ht-degree: 6%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 6%
 
 # 使用内容片段{#working-with-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>AEM GraphQL API for Content Fragments投放可应请求提供。
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->针对内容片段投放的AEM GraphQL API将于2021年初发布。
->
->相关文档已经可供预览使用。
+>请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 以Adobe Experience Manager(AEM)为Cloud Service，内容片段允许您设计、创建、管理和[发布与页面无关的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它们允许您准备内容，准备好在多个位置／多个渠道使用。
 
@@ -230,7 +220,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
    * 这是片段外部的内容，但与片段的编辑相关。 通常是图像、视频或其他片段。
    * 将片段添加到页面时，集合中的单个资产可用于页面编辑器中的片段。 这意味着它们是可选的，具体取决于特定渠道的要求。
-   * 资产通过集合[与片段关联；关联的集合允许作者决定在创作页面时要使用哪些资产。](/help/assets/content-fragments/content-fragments-assoc-content.md)
+   * 资产通过集合](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段关联；关联的集合允许作者决定在创作页面时要使用哪些资产。[
 
       * 集合可以作为默认内容与片段关联，也可以由作者在片段创作过程中关联。
       * [资产(DAM)](/help/assets/manage-collections.md) 集合是片段关联内容的基础。
@@ -293,7 +283,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
    * 使用配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md)启用[。
    * 是使用工具](/help/assets/content-fragments/content-fragments-models.md)创建的[。
-   * 创建片段[时需要。](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)
+   * 创建片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)时需要。[
    * 定义片段的结构（标题、内容元素、标记定义）。
    * 内容模型定义需要一个标题和一个数据元素；其他一切都是可选的。
    * 模型可以定义默认内容（如果适用）。
@@ -305,7 +295,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 * **内容片段组件**
 
    * 有助于以HTML和／或JSON格式传送片段。
-   * 在页面[上引用片段时需要。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+   * 在页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)上引用片段时需要。[
    * 负责片段的布局和投放;即渠道。
    * 片段需要一个或多个专用组件来定义布局，并提供一些或所有元素／变量和相关内容。
    * 在创作过程中将片段拖到页面上将自动关联所需的组件。
