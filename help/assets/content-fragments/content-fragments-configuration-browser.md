@@ -2,10 +2,10 @@
 title: 内容片段——配置浏览器
 description: 了解如何在配置浏览器中启用某些内容片段功能。
 translation-type: tm+mt
-source-git-commit: c821baff208e563009e68f51700555ea1d516886
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 19%
+source-wordcount: '278'
+ht-degree: 18%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 19%
 
 >[!CAUTION]
 >
->针对内容片段投放的AEM GraphQL API将于2021年初发布。
+>AEM GraphQL API for Content Fragments投放可应请求提供。
 >
->相关文档已经可供预览使用。
+>请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 ## 为实例{#enable-content-fragment-functionality-instance}启用内容片段功能
 
