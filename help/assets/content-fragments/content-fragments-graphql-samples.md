@@ -2,9 +2,9 @@
 title: 学习将GraphQL与AEM结合使用——示例内容和查询
 description: 学习将GraphQL与AEM结合使用——示例内容和查询。
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1298'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->针对内容片段投放的AEM GraphQL API将于2021年初发布。
+>AEM GraphQL API for Content Fragments投放可应请求提供。
 >
->相关文档已经可供预览使用。
+>请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 要开始使用GraphQL查询以及它们如何使用AEM内容片段，查看一些实际示例会有所帮助。
 
@@ -1197,7 +1197,7 @@ query {
 此示例查询询问：
 
 * 对于类型`article`的所有内容片段
-* 和`path`属性。`author`
+* 和`author`属性。`path`
 
 **示例查询**
 
