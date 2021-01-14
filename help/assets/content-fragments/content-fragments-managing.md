@@ -2,9 +2,9 @@
 title: 管理内容片段
 description: 内容片段存储为资产，因此主要通过资产控制台进行管理。
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1488'
 ht-degree: 11%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 11%
 
 # 管理内容片段{#managing-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>AEM GraphQL API for Content Fragments投放可应请求提供。
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->针对内容片段投放的AEM GraphQL API将于2021年初发布。
->
->相关文档已经可供预览使用。
+>请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 内容片段存储为&#x200B;**资产**，因此主要通过&#x200B;**资产**&#x200B;控制台进行管理。
 
@@ -172,7 +162,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->还可以从时间轴[创建、比较和还原版本。](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)
+>还可以从时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)创建、比较和还原版本。[
 
 编辑器有两个选项：
 
