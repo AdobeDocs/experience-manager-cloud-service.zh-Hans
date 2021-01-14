@@ -2,9 +2,9 @@
 title: 页面模板
 description: 页面模板用于创建将用作新页面基础的页面
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # 页面模板 {#page-templates}
 
-创建页面时，您需要选择模板。 页面模板用作新页面的基础。 模板可定义生成页面的结构、任何初始内容以及可使用的组件（设计属性）。这具有以下几个优点：
+创建页面时，您需要选择模板。 页面模板用作新页面的基础。 模板可定义生成页面的结构、任何初始内容以及可使用的组件（设计属性）。这具有以下几个优势：
 
 * 页面模板允许专业作者[创建和编辑模板](/help/sites-cloud/authoring/features/templates.md)。
    * 此类专用作者称为&#x200B;**模板作者**
@@ -61,7 +61,7 @@ ht-degree: 7%
 
    有关模板作者如何定义结构的详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)。
 
-   有关结构的技术详细信息，请参阅此文档中的[结构](#structure)。
+   有关此结构的技术详细信息，请参阅此文档中的[结构](#structure)。
 
    **策略**
 
@@ -99,7 +99,7 @@ ht-degree: 7%
 
    有关模板作者如何启用模板的详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)。
 
-   有关启用模板的技术详细信息，请参阅此文档中的[为Us](#enabling-and-allowing-a-template-for-use)e启用和允许模板
+   有关启用模板的技术详细信息，请参阅此文档中的[为我们启用和允许模板](#enabling-and-allowing-a-template-for-use)e
 
 1. 使用它创建内容页面。
 
@@ -110,6 +110,16 @@ ht-degree: 7%
 
    有关使用可编辑模板创建页面的技术详细信息，请参阅此文档中的[生成内容页面](#resultant-content-pages)。
 
+>[!TIP]
+>
+>切勿在模板中输入任何需要国际化的信息。出于内部化目的，建议使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
+
+>[!NOTE]
+>
+>模板是简化页面创建工作流程的强大工具。 但是，过多的模板可能会使作者不堪重负，并使页面创建变得混乱。 一个不错的经验法则是将模板数量保持在100以下。
+>
+>Adobe不建议具有1000个以上的模板，因为这可能会影响性能。
+
 >[!NOTE]
 >
 >编辑器客户端库假定内容页面中存在`cq.shared`命名空间，如果不存在，则将导致JavaScript错误`Uncaught TypeError: Cannot read property 'shared' of undefined`。
@@ -118,9 +128,7 @@ ht-degree: 7%
 >
 >有关详细信息，请参阅[使用客户端库](/help/implementing/developing/introduction/clientlibs.md)。
 
->[!CAUTION]
->
->切勿在模板中输入任何需要国际化的信息。
+
 
 ## 模板文件夹{#template-folders}
 
