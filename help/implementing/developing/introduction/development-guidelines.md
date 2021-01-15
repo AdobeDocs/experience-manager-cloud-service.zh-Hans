@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 translation-type: tm+mt
-source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
+source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -222,7 +222,7 @@ AEM作为Cloud Service，要求对出站邮件进行加密。 以下各节介绍
 默认情况下，出站电子邮件处于禁用状态。 要激活它，请提交支持票证，具有：
 
 1. 邮件服务器的完全限定域名（例如`smtp.sendgrid.net`）
-1. 要使用的端口。 如果邮件服务器支持，端口应为465，否则端口587请注意，只有邮件服务器要求并强制使用该端口上的TLS时，端口587才能使用
+1. 要使用的端口。 如果邮件服务器支持，它应为端口465，否则为端口587。 请注意，只有在邮件服务器要求并强制使用该端口的TLS时，端口587才能使用
 1. 项目ID和环境ID，用于发送邮件至
 1. 创作、发布还是同时使用SMTP访问。
 
@@ -240,16 +240,16 @@ AEM CS要求通过端口465发送邮件。 如果邮件服务器不支持端口4
 
 AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)发送。
 
-有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)。 对于AEM CS，必须对`com.day.cq.mailer.DefaultMailService OSGI`服务进行以下调整：
+有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)。 对于AEM作为Cloud Service，必须对`com.day.cq.mailer.DefaultMailService OSGI`服务进行以下调整：
 
 如果已请求端口465:
 
 * 将`smtp.port`设置为`465`
 * 将`smtp.ssl`设置为`true`
-* 将`smtp.starttls`设置为`false`
 
 如果请求了端口587（仅当邮件服务器不支持端口465时才允许）:
 
 * 将`smtp.port`设置为`587`
 * 将`smtp.ssl`设置为`false`
-* 将`smtp.starttls`设置为`true`
+
+AEM将在运行时自动将`smtp.starttls`属性设置为Cloud Service至相应值。 端口465的`false`和端口587的`true`。 这与在OSGI配置中设置的`smtp.starttls`值无关。
