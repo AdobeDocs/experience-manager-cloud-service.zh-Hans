@@ -2,7 +2,7 @@
 title: 为服务器端API生成访问令牌
 description: 了解如何通过生成安全的JWT令牌，将第三方服务器与AEM作为Cloud Service进行通信
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 开发人员流{#developer-flow}
 
-开发人员可能希望使用其非AEM应用程序的开发实例进行测试（在其笔记本电脑上运行或托管），该实例向开发AEM提出请求，作为Cloud Service开发环境。 但是，由于开发人员不一定作为Cloud Service开发环境对AEM具有管理员角色访问权，因此我们不能假设他们可以生成常规服务器到服务器流中描述的JWT载体。 因此，我们为开发者提供了一种机制，使开发者能够直接生成访问令牌，该机制可以在请求AEM时用作他们有权访问的Cloud Service环境。 有关将AEM用作Cloud Service开发者控制台所需权限的信息，请参阅[开发者准则文档](/help/implementing/developing/introduction/development-guidelines.md)。
+开发人员可能希望使用其非AEM应用程序的开发实例进行测试（在其笔记本电脑上运行或托管），该实例向开发AEM提出请求，作为Cloud Service开发环境。 但是，由于开发人员不一定作为Cloud Service开发环境对AEM具有管理员角色访问权，因此我们不能假设他们可以生成常规服务器到服务器流中描述的JWT载体。 因此，我们为开发者提供了一种机制，使开发者能够直接生成访问令牌，该机制可以在请求AEM时用作他们有权访问的Cloud Service环境。
+
+有关将AEM用作Cloud Service开发者控制台所需权限的信息，请参阅[开发者准则文档](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)。
 
 >[!NOTE]
 >
