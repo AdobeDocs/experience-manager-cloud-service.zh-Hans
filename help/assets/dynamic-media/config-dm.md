@@ -1,10 +1,10 @@
 ---
-title: 配置Dynamic MediaCloud Service
+title: 配置 Dynamic Media 云服务
 description: 关于如何将Adobe Experience ManagerDynamic Media配置为Cloud Service的信息。
 translation-type: tm+mt
-source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3869'
 ht-degree: 8%
 
 ---
@@ -48,7 +48,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 在Cloud Services{#configuring-dynamic-media-cloud-services}中创建新的Dynamic Media配置
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台。
 1. 在控制台的左侧，点按工具图标，然后点按&#x200B;**[!UICONTROL Cloud Services>Dynamic Media配置]**。
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 要在发布Dynamic Media内容之前安全地预览它，您允许列表需要“”AEM作者实例以连接到Dynamic Media。 要设置此设置，请执行以下操作：
 
-   * 登录您的Dynamic Media经典帐户：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
+   * 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录您的帐户。 您的凭据和登录详细信息是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
    * 在页面右上方的导航栏上，单击&#x200B;**[!UICONTROL 设置>应用程序设置>发布设置>图像服务器]**。
 
    * 在“图像服务器发布”页面的“发布上下文”下拉列表中，选择&#x200B;**[!UICONTROL 测试图像服务]**。
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 现在您已完成基本配置；你准备好使用Dynamic Media。
 
-如果要进一步自定义配置，您可以选择在Dynamic Media[中的“配置高级设置”下完成任何任务。](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)
+如果要进一步自定义配置，您可以选择在Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)中的“配置高级设置”下完成任何任务。[
 
 ### 对新的Dynamic Media配置{#troubleshoot-dm-config}进行故障诊断
 
@@ -186,7 +186,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 使用Dynamic Media经典用户界面更改您的Dynamic Media设置。
 
-以上一些任务要求您在此处登录Dynamic Media经典：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+以上某些任务要求您打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
 设置和配置任务包括：
 
@@ -210,7 +210,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 配置应用程序常规设置{#configuring-application-general-settings}
 
-要打开“应用程序常规设置”页，请在“Dynamic Media经典全局导航”栏中，单击“设置”>“应用程序设置”>“常规设置”。****
+要打开“应用程序常规设置”页，请在“Dynamic Media经典全局导航”栏中，单击“设置”>“应用程序设置”>“常规设置”。]****[!UICONTROL 
 
 **[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
 **[!UICONTROL 覆盖图像]** -Dynamic Media不允许两个文件具有相同的名称。每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产：是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
@@ -225,7 +225,8 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 配置默认颜色属性以在请求图像时启用颜色校正：
 
-1. [使用在设置过](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 程中提供的凭据登录Dynamic Media类。导航到&#x200B;**[!UICONTROL 设置>应用程序设置]**。
+1. 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后使用在配置过程中提供的凭据登录您的帐户。
+1. 导航到&#x200B;**[!UICONTROL 设置>应用程序设置]**。
 1. 展开&#x200B;**[!UICONTROL 发布设置]**&#x200B;区域，然后选择&#x200B;**[!UICONTROL 图像服务器]**。设置发布实例的默认设置时，将&#x200B;**[!UICONTROL 发布上下文]**&#x200B;设置为&#x200B;**[!UICONTROL 图像提供]**。
 1. 滚动到需要更改的属性，例如&#x200B;**[!UICONTROL 颜色管理属性]**区域中的属性。
 可以设置以下颜色校正属性：
