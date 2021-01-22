@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1535'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,15 @@ ht-degree: 1%
 
 ### HTML/文本{#html-text}
 
-* 默认情况下，根据apache层发出的cache-control头，由浏览器缓存五分钟。 CDN还尊重此价值。
+* 默认情况下，根据apache层发出的`cache-control`头，由浏览器缓存五分钟。 CDN还尊重此价值。
+* 通过在`global.vars`中定义`DISABLE_DEFAULT_CACHING`变量，可以禁用默认的HTML/文本缓存设置：
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+这可能很有用，例如，当您的业务逻辑需要微调页面标题（具有基于日历日的值）时，因为默认情况下，页面标题设置为0。 也就是说，在关闭默认缓存时，请务必小心。****
+
 * 可以通过使用AEM作为Cloud ServiceSDK调度程序工具在`global.vars`中定义`EXPIRATION_TIME`变量来覆盖所有HTML/Text内容。
 * 可以由以下apache mod_headers指令在更细的粒度级别上覆盖：
 
