@@ -2,9 +2,9 @@
 title: 通过Dynamic Media经典使CDN缓存失效
 description: 使您的CDN(内容投放网络)缓存内容失效后，您可以快速更新由Dynamic Media交付的资源，而不是等待缓存过期。
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '663'
 ht-degree: 26%
 
 ---
@@ -22,15 +22,9 @@ Dynamic Media资源由CDN缓存，以便快速投放。 但是，当您对资产
 
 **要通过Dynamic Media经典使CDN缓存失效，请执行以下操作：**
 
-1. 执行下列操作之一：
+1. 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录您的帐户。
 
-   * 在您的Web浏览器中，登录您的Dynamic Media经典帐户：
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
-
-   * 打开Dynamic Media经典应用程序，然后登录您的帐户。
+   您的凭据和登录详细信息是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
 1. 单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。
 1. 在“应用程序常规设置”页的“服务器”组标题下，找到&#x200B;**[!UICONTROL CDN失效模板]**&#x200B;文本框。
