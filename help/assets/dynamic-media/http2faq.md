@@ -2,9 +2,9 @@
 title: HTTP2 内容交付常见问题解答
 description: 了解HTTP2内容投放。
 translation-type: tm+mt
-source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '762'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Adobe自己的测试得出以下结果：
 * 将Adobe捆绑的CDN(内容投放网络)作为Dynamic Media经典许可证的一部分。
 * 使用专用域（即`images.company.com`或`mycompany.scene7.com`），而不使用通用的Dynamic Media域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-   要查找您的域，请[登录每个公司帐户的Dynamic Media经典](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)实例。
+   要查找您的域，请打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
    单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**发布服务器名称**&#x200B;的字段。 如果您当前使用的是通用的Dynamic Media域，则可以请求移至您自己的自定义域作为此过渡的一部分。
 
@@ -56,7 +56,7 @@ Adobe自己的测试得出以下结果：
    * 主要联系人姓名、电子邮件和电话号码。
    * 要过渡到HTTP2的所有域。 即`images.company.com`或`mycompany.scene7.com`。
 
-   要查找您的域，请[登录每个公司帐户的Dynamic Media经典](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)实例。
+   要查找您的域，请打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
    单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL 发布服务器名称]**&#x200B;的字段。
 
@@ -64,7 +64,7 @@ Adobe自己的测试得出以下结果：
    * 验证您是否通过Adobe使用CDN，而不是通过直接关系进行管理。
    * 验证您使用的是专用域。 即`images.company.com`或`mycompany.scene7.com`，不是通用的Dynamic Media域，如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
-   要查找您的域，请[登录每个公司帐户的Dynamic Media经典](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)实例。
+   要查找您的域，请打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
    单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL 发布服务器名称]**&#x200B;的字段。 如果您当前使用的是通用的Dynamic Media域，则可以请求移至您自己的自定义域作为此过渡的一部分。
 
