@@ -2,10 +2,10 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 translation-type: tm+mt
-source-git-commit: 664c278494a5ac88362b994946060ab3baa846d8
+source-git-commit: 410b7900981596590fa80b286b40a965700f108e
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '750'
+ht-degree: 1%
 
 ---
 
@@ -42,3 +42,39 @@ ht-degree: 0%
 1. 生成密钥对或上传公钥（rsa不行）
 1. 生成访问令牌（或JWT令牌或载体令牌）。
 1. 将所有这些信息(客户端ID、客户端机密、技术帐户ID、技术帐户电子邮件、组织ID、访问令牌)保存在一个安全位置。
+
+## 用户界面 {#user-interface}
+
+用户映射工具集成到内容传输工具中。 您可以从软件分发门户下载内容传输工具。 有关最新版本的更多详细信息，请参阅发行说明。
+
+1. 选择选择Adobe Experience Manager并导航到工具-> **操作** -> **内容传输**。
+1. 单击&#x200B;**创建用户映射配置**。
+
+   >[!NOTE]
+   >如果您跳过此步骤，则在提取阶段将跳过用户和组映射。
+
+   按如下所述填充用户管理API配置中的字段：
+
+   * **组织ID**:输入要迁移用户的组织的IMS组织ID。
+
+      >[!NOTE]
+      >要获取组织ID，请登录[Admin Console](https://adminconsole.adobe.com/)，并选择您的组织（在右上方区域）（如果您属于多个组织）。 组织ID将以`xx@AdobeOrg`的格式显示在该页的URL中，其中xx是IMS组织ID。  或者，您也可以在[Adobe开发者控制台](https://console.adobe.io)页面中找到组织ID，您可以在该页面中生成访问令牌。
+
+   * **客户端ID**:输入您从设置步骤保存的客户端ID
+
+   * **访问令牌**:输入您从设置步骤保存的访问令牌
+
+      >[!NOTE]
+      >该访问令牌每24小时过期一次，需要创建新的订阅。 要创建新令牌，请返回[Adobe开发者控制台](https://console.adobe.io)，选择您的项目，单击“用户管理API”并将同一私钥粘贴到框中。
+
+1. 输入上述信息后，单击“保存”。
+
+1. 通过单击创建迁移集并填充字段，然后单击保存，创建迁移集。 有关详细信息，请参阅运行内容传输工具。
+
+   >[!NOTE]
+   >默认情况下，用于包括IMS用户和用户组映射用户的切换开关处于开启状态。 通过此设置，当对此迁移集执行提取时，用户映射工具将作为提取阶段的一部分运行。 这是运行内容传输工具的提取阶段的推荐方式。 如果此切换被关闭且／或未创建用户映射配置，则在提取阶段将跳过用户和用户组映射。
+
+1. 要运行提取阶段，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)。
+
+
+
