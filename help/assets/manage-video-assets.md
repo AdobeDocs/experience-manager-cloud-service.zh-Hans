@@ -3,9 +3,9 @@ title: 管理视频资产
 description: 在 [!DNL Adobe Experience Manager]中上传、预览、批注和发布视频资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 10%
 
 ---
@@ -53,11 +53,11 @@ ht-degree: 10%
 ## 最佳实践和限制{#tips-limitations}
 
 * 没有[!DNL Dynamic Media]许可证，您只能使用处理用户档案处理MP4文件。
-* 使用“处理”用户档案转码MP4文件时，将适用以下准则和限制：
+* 使用处理用户档案转码MP4文件时，有以下准则和限制：
 
    * Apple ProRes文件只能将代码转换为最大分辨率1080p。
    * 如果源文件的比特率大于200 Mbps，则只能将代码转换到最大分辨率1080p。
-   * 如果源帧速率>= 60 fps，则可以使用的最大源文件大小是
+   * 如果源帧速率>=60 fps，则可以使用的源文件的最大大小为，
 
       * 400 MB用于4k转码。
       * 1080p转码需要800 MB。
