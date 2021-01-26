@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 7%
+source-wordcount: '567'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +51,24 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 由于额外的跳数，可能会对性能造成很小的影响，但从客户CDN到Adobe托管CDN的跳数可能会很高效。
 
 请注意，发布层支持此客户CDN配置，但创作层不支持此客户CDN配置。
+
+## 地理位置标头{#geo-headers}
+
+Adobe管理的CDN将通过以下方式向每个请求添加头：
+
+* 国家／地区代码：`x-aem-client-country`
+* 大陆代码：`x-aem-client-continent`
+
+国家代码的值是[此处](https://en.wikipedia.org/wiki/ISO_3166-1)描述的Alpha-2代码。
+
+大陆代码的值为：
+
+* AF非洲
+* 南极洲
+* AS亚洲
+* 欧盟
+* 北美
+* 大洋洲OC
+* SA南美洲
+
+此信息对于根据请求的来源（国家）重定向到其他url等用例可能非常有用。 但是，在此特定用例中，不应缓存重定向，因为它会有所不同。 如果需要，可以使用`Cache-Control: private`阻止缓存。 另请参阅[缓存](/help/implementing/dispatcher/caching.md#html-text)。
