@@ -2,9 +2,9 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '757'
 ht-degree: 1%
 
 ---
@@ -35,17 +35,17 @@ ht-degree: 1%
 请按照以下步骤设置：
 
 1. 使用您的Adobe ID导航到[Adobe开发人员控制台](https://console.adobe.io)。
-1. 创建新项目或打开现有项目
-1. 添加API
-1. 选择用户管理API
-1. 创建JWT凭据
-1. 生成密钥对或上传公钥（rsa不行）
+1. 创建新项目或打开现有项目。
+1. 添加API。
+1. 选择“用户管理API”。
+1. 创建JWT凭据。
+1. 生成密钥对或上传公钥（rsa不行）。
 1. 生成访问令牌（或JWT令牌或载体令牌）。
-1. 将所有这些信息(客户端ID、客户端机密、技术帐户ID、技术帐户电子邮件、组织ID、访问令牌)保存在一个安全位置。
+1. 保存所有这些信息，如&#x200B;**客户端ID**、**客户端机密**、**技术帐户ID**、**技术帐户电子邮件**、**组织ID**&#x200B;和&#x200B;**访问令牌**&#x200B;安全。
 
 ## 用户界面 {#user-interface}
 
-用户映射工具集成到内容传输工具中。 您可以从软件分发门户下载内容传输工具。 有关最新版本的更多详细信息，请参阅发行说明。
+用户映射工具集成到内容传输工具中。 您可以从软件分发门户下载内容传输工具。 有关最新版本的详细信息，请参阅[当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 1. 选择选择Adobe Experience Manager并导航到工具-> **操作** -> **内容传输**。
 1. 单击&#x200B;**创建用户映射配置**。
