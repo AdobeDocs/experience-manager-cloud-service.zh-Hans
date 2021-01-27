@@ -2,9 +2,9 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,11 @@ ht-degree: 1%
    >[!NOTE]
    >如果您跳过此步骤，则在提取阶段将跳过用户和组映射。
 
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    按如下所述填充用户管理API配置中的字段：
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **组织ID**:输入要迁移用户的组织的IMS组织ID。
 
@@ -67,12 +71,17 @@ ht-degree: 1%
       >[!NOTE]
       >该访问令牌每24小时过期一次，需要创建新的订阅。 要创建新令牌，请返回[Adobe开发者控制台](https://console.adobe.io)，选择您的项目，单击“用户管理API”并将同一私钥粘贴到框中。
 
-1. 输入上述信息后，单击“保存”。
+1. 输入上述信息后，单击&#x200B;**保存**。
 
-1. 通过单击创建迁移集并填充字段，然后单击保存，创建迁移集。 有关详细信息，请参阅运行内容传输工具。
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. 通过单击&#x200B;**创建迁移集**&#x200B;并填充字段，然后单击&#x200B;**保存**，创建迁移集。 有关详细信息，请参阅运行内容传输工具。
 
    >[!NOTE]
    >默认情况下，用于包括IMS用户和用户组映射用户的切换开关处于开启状态。 通过此设置，当对此迁移集执行提取时，用户映射工具将作为提取阶段的一部分运行。 这是运行内容传输工具的提取阶段的推荐方式。 如果此切换被关闭且／或未创建用户映射配置，则在提取阶段将跳过用户和用户组映射。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. 要运行提取阶段，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)。
 
