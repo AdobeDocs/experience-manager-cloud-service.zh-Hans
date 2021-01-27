@@ -2,7 +2,7 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
+source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 9%
@@ -195,15 +195,15 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 此验证工具在SDK中以Mac OS、Linux或Windows二进制形式提供，允许客户运行与Cloud Manager在构建和部署发行版时执行的验证相同的验证。`bin/validator`
 
-它被调用为：`validator full [-d folder] [-w whitelist] zip-file | src folder`
+它被调用为：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
 该工具通过扫描模式为`conf.d/enabled_vhosts/*.vhost`的所有文件来验证调度程序配置是否使用AEM支持的适当指令作为云服务。 通过运行validator的命令，可以列出Apache配置文件中允许的指允许列表令：
 
 ```
-$ validator whitelist
+$ validator allowlist
 Cloud manager validator 2.0.4
  
-Whitelisted directives:
+Allowlisted directives:
   <Directory>
   ...
   
@@ -249,7 +249,7 @@ Whitelisted directives:
 ```
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
+2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
