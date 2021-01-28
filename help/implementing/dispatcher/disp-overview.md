@@ -2,9 +2,9 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
+source-wordcount: '4119'
 ht-degree: 9%
 
 ---
@@ -375,7 +375,8 @@ Phase 2 finished
 脚本执行以下操作：
 
 1. 它从上一节运行validator以确保只包含受支持的指令。 如果配置无效，则脚本将失败。
-2. 它执行`httpd -t command`以测试语法是否正确，以便apache httpd可以开始。 如果配置成功，则应准备好进行部署
+2. 它执行`httpd -t command`以测试语法是否正确，以便apache httpd可以开始。 如果配置成功，则应准备好进行部署。
+3. 检查调度程序SDK配置文件的子集（如[文件结构部分](#file-structure)所述）是否未被修改。 这是AEM SDK版本v2021.1.4738引入的一项新检查，其中还包括调度程序工具版本2.0.36。在此更新之前，客户可能错误地假定这些不可变文件的任何本地SDK修改也将应用于云环境。
 
 在Cloud Manager部署过程中，还将执行`httpd -t syntax`检查，并且Cloud Manager `Build Images step failure`日志中会包含任何错误。
 
