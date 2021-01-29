@@ -2,10 +2,10 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '783'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 在以Cloud Service身份访问Adobe Experience Manager(AEM)的过渡旅程中，您需要将用户和组从现有的AEM系统移至作为Cloud Service。 这由内容传输工具完成。
 
-对AEM作为Cloud Service的一个重大改变是完全集成地使用AdobeID访问创作层。  这需要使用Adobe Admin Console管理用户和用户组。 AdobeIdentity Management系统(IMS)中集中了用户用户档案信息，该系统可在所有Adobe云应用程序中提供单一登录。 有关详细信息，请参阅Identity Management。 由于此更改，现有用户和用户组需要映射到其IMS ID，以避免重复用户和Cloud Service作者实例上的用户组。
+对AEM作为Cloud Service的一个重大改变是完全集成地使用AdobeID访问创作层。  这需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)管理用户和用户组。 AdobeIdentity Management系统(IMS)中集中了用户用户档案信息，该系统可在所有Adobe云应用程序中提供单一登录。 有关详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。 由于此更改，现有用户和用户组需要映射到其IMS ID，以避免重复用户和Cloud Service作者实例上的用户组。
 
 ## 重要注意事项{#important-considerations}
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ## 用户界面 {#user-interface}
 
-用户映射工具集成到内容传输工具中。 您可以从软件分发门户下载内容传输工具。 有关最新版本的详细信息，请参阅[当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+用户映射工具集成到内容传输工具中。 您可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载内容传输工具。 有关最新版本的详细信息，请参阅[当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 1. 选择选择Adobe Experience Manager并导航到工具-> **操作** -> **内容传输**。
 1. 单击&#x200B;**创建用户映射配置**。
