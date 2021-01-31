@@ -3,9 +3,9 @@ title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -180,18 +180,18 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 ## 后处理工作流{#post-processing-workflows}
 
-在需要对无法使用处理用户档案进行的资产进行额外处理的情况下，可以向配置中添加其他后处理工作流。 这允许在使用资产微服务的可配置处理的基础上添加完全自定义的处理。
+在需要额外处理资产而无法使用处理用户档案的情况下，可以向配置中添加额外的后处理工作流。 这允许在使用资产微服务的可配置处理的基础上添加完全自定义的处理。
 
-后处理工作流（如果配置）由[!DNL Experience Manager]在微服务处理完成后自动执行。 无需手动添加工作流启动器来触发它们。 示例包括：
+后处理工作流（如果配置）由[!DNL Experience Manager]在微服务处理完成后自动执行。 无需手动添加工作流启动器来触发工作流。 示例包括：
 
 * 处理资产的自定义工作流步骤。
 * 集成功能，可将元数据或属性从外部系统添加到资产，例如产品或流程信息。
 * 外部服务完成的附加处理。
 
-将后处理工作流配置添加到Experience Manager包含以下步骤：
+要向[!DNL Experience Manager]添加后处理工作流配置，请执行以下步骤：
 
-* 创建一个或多个工作流模型。 文档将其称为&#x200B;*后处理工作流模型*，但这些是常规Experience Manager工作流模型。
-* 为这些模型添加特定的工作流步骤。 这些步骤将基于工作流模型配置对资产执行。
+* 创建一个或多个工作流模型。 这些自定义模型在本文档中称为&#x200B;*后处理工作流模型*。 它们是常规的[!DNL Experience Manager]工作流模型。
+* 将所需的工作流步骤添加到这些模型。 查看默认工作流中的步骤，并将所有必需的默认步骤添加到自定义工作流。 这些步骤将基于工作流模型配置对资产执行。 例如，如果您希望在上传资产时自动进行智能标记，请将该步骤添加到自定义的后处理工作流模型。
 * 在末尾添加[!UICONTROL DAM更新资产工作流已完成进程]步骤。 添加此步骤可确保Experience Manager知道处理何时结束，并且资产可以标记为已处理，即&#x200B;*资产上显示新*。
 * 为自定义工作流运行服务创建配置，允许通过路径（文件夹位置）或常规表达式配置后处理工作流模型的执行。
 
@@ -207,7 +207,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 要配置在资产微型服务处理完成后，为系统中上传或更新的资产执行后处理工作流模型，需要配置自定义工作流运行器服务。
 
-自定义工作流运行器服务(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服务，并提供两个配置选项：
+Adobe CQDAM自定义工作流运行器(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服务，并提供两个配置选项：
 
 * 按路径(`postProcWorkflowsByPath`)进行后处理工作流:可以根据不同的存储库路径列出多个工作流模型。 路径和模型应以冒号分隔。 支持简单的存储库路径，并应映射到`/var`路径中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
 * 按表达式(`postProcWorkflowsByExpression`)列出的后处理工作流:可以根据不同的常规表达式列出多个工作流模型。 表达式和模型应用冒号分隔。 常规表达式应直接指向“资产”节点，而不是指向某个演绎版或文件。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
