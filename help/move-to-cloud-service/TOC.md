@@ -4,10 +4,10 @@ user-guide-title: 移动到 AEM as a Cloud Service
 breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 translation-type: tm+mt
-source-git-commit: 81e84ae3993321c210de917a9a9bcd17d32b2040
+source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 84%
+source-wordcount: '87'
+ht-degree: 80%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 84%
       + [使用最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 内容传输工具 {#content-transfer-tool}
       + [概述](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [使用用户映射工具](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 代码重构工具 {#refactoring-tools}
    + [统一的体验](/help/move-to-cloud-service/unified-experience.md)
