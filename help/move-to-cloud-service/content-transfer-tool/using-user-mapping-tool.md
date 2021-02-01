@@ -2,10 +2,10 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '782'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 用户映射工具集成到内容传输工具中。 您可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载内容传输工具。 有关最新版本的详细信息，请参阅[当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-1. 选择选择Adobe Experience Manager并导航到工具-> **操作** -> **内容传输**。
+1. 选择 Adobe Experience Manager 并导航到工具 -> **操作** -> **内容传输**。
 1. 单击&#x200B;**创建用户映射配置**。
 
    >[!NOTE]
