@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1906'
 ht-degree: 64%
 
 ---
@@ -28,9 +28,7 @@ ht-degree: 64%
 
 * 访问令牌可以在特定时间段后或Cloud Service环境升级后定期过期。 如果访问令牌已过期，您将无法连接到Cloud Service实例，您必须检索新访问令牌。 与现有迁移集关联的状态图标将更改为红色云，并将鼠标悬停在该云上时将显示一条消息。
 
-* 当前，AEM作为Cloud Service作者实例的默认MongoDB大小为32GB。 建议对于大于20GB的区段存储大小，您应提交支持票证以增加MongoDB大小。
-
-* 内容传输工具传输的用户和用户组只是内容满足权限要求的用户和用户组。 *提取*&#x200B;进程将整个`/home`复制到迁移集中，而&#x200B;*摄取*&#x200B;进程复制迁移内容ACL中引用的所有用户和组。
+* 内容传输工具传输的用户和用户组只是内容满足权限要求的用户和用户组。 *提取*&#x200B;进程将整个`/home`复制到迁移集中，而&#x200B;*摄取*&#x200B;进程复制迁移内容ACL中引用的所有用户和组。 要自动将现有用户和用户组映射到其IMS ID，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
