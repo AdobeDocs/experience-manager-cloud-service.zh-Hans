@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '649'
 ht-degree: 4%
 
 ---
@@ -73,14 +73,10 @@ AEM中Cloud Manager作为Cloud Service2021.1.0的发布日期为2021年1月14日
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具v1.1.20的发布日期为2021年1月08日。
+内容传输工具v1.2.20的发布日期为2021年2月1日。
 
 ### [!DNL Content Transfer Tool] {#what-is-new-ctt}中的新增功能
 
-* 用户现在可以通过将指针悬停在内容传输工具(CTT)用户界面的状态图标上来了解其访问令牌是否已过期。 在迁移集详细信息UI中，还会通知他们无法连接到Cloud Service实例。
-
-### 错误修复 {#ctt-bug-fixes}
-
-* 迁移集的内容传输工具(CTT)用户界面状态在非活动状态持续一段时间后未持续并更改。 已修复。
-* 如果日志不可用，则禁用视图日志的选项。 此问题已修复，并添加了消息以通知用户日志缺失的原因。
-* 当用户停止摄取时，内容传输工具用户界面状态显示“失败”。 已修复此问题，改为显示&#x200B;*STOPPED*。
+* 内容传输工具——用户映射工具新增功能和UI。 此功能会将现有用户和用户组自动映射到其AdobeIdentity Management系统ID，作为内容迁移活动的一部分。 有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
+* 内容传输工具现在可迁移迁移集中引用的所有组和用户，包括子项。
+* 在创建迁移集时，允许用户选择`/etc`下的某些路径。
