@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 100%
 
    有关更多详细信息，请参阅[内容传输中的提取流程](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process)。
 
-2. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
+>[!NOTE]
+>
+> 建议在提取阶段运行用户映射工具。 有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
+
+1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
    有关更多详细信息，请参阅[内容传输中的摄取流程](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process)。
 
