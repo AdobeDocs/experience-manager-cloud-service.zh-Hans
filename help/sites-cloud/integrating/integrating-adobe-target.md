@@ -2,9 +2,9 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,6 @@ Adobe启动是管理AEM页面中分析和目标的客户端属性（JS库／标�
 1. 选择现有配置，然后单击&#x200B;**属性**。
 2. 编辑属性。
 3. 选择&#x200B;**重新连接到Adobe Target**。
-   ![重新连](assets/edit_config_page1.png "接重新连接")
 4. 选择&#x200B;**保存并关闭**。
 
 ### 将配置添加到站点{#add-configuration}
