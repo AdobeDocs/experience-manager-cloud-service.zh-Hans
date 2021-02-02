@@ -2,7 +2,7 @@
 title: 视频
 description: 了解如何在Dynamic Media使用视频。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
 ht-degree: 28%
@@ -1058,7 +1058,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 Dynamic Media有能力将字幕文件转换为JSON（JavaScript对象表示法）格式。 此转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
 
-有关在URL中使用JSON函数的详细信息，请参阅[服务静态（非图像）内容](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
+有关在URL中使用JSON函数的详细信息，请参阅[服务静态（非图像）内容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
 **要向视频添加字幕或字幕，请执行以下操作：**
 
