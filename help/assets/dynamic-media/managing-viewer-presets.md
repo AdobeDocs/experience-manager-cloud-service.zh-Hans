@@ -2,7 +2,7 @@
 title: 管理查看器预设
 description: 如何在Dynamic Media创建和管理查看器预设。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '4246'
 ht-degree: 26%
@@ -51,7 +51,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 不同的网页有不同的需求。 例如，有时您希望网页提供链接，在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要将HTML5查看器直接嵌入到托管页面。 在后一种情况下，网页可能具有静态布局。 或者，它可能是“响应式”的，并在不同设备或不同浏览器窗口大小下以不同方式显示。 为了满足这些需求，Dynamic Media附带的所有预定义现成HTML5查看器都支持静态网页和响应式设计网页。
 
-有关如何将响应式查看器嵌入到网页上的详细信息，请参阅&#x200B;*Dynamic Media图像服务和渲染API帮助*&#x200B;中的[响应式静态图像库](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)。
+有关如何将响应式查看器嵌入到网页上的详细信息，请参阅&#x200B;*Dynamic Media图像服务和渲染API帮助*&#x200B;中的[响应式静态图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)。
 
 >[!NOTE]
 >
@@ -469,7 +469,7 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
   </tr>
   <tr>
    <td>区段</td>
-   <td><p><code>Segment </code>是现成的交互式视频查看器预设<code>Shoppable_Video_light</code>和<code>Shoppable_Video_dark</code>以及您自己创建的任何交互式视频查看器预设的默认显示模式。</p> <p>在此模式中，当分配给视频区段的缩略图数少于显示面板中的可见点数时，下一个或上一个子区段的缩略图不会<i>被拉入，以填充面板中的任何空白点。 </i>即保留分配给特定视频段的色板的显示。</p> </td>
+   <td><p><code>Segment </code>是现成的交互式视频查看器预设<code>Shoppable_Video_light</code>和<code>Shoppable_Video_dark</code>以及您自己创建的任何交互式视频查看器预设的默认显示模式。</p> <p>在此模式中，当分配给视频区段的缩略图数少于显示面板中的可见点数时，下一个或上一个子区段的缩略图不会</i>被拉入，以填充面板中的任何空白点。 <i>即保留分配给特定视频段的色板的显示。</i></p> </td>
   </tr>
   <tr>
    <td>连续</td>
