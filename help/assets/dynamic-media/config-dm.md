@@ -2,7 +2,7 @@
 title: 配置 Dynamic Media 云服务
 description: 关于如何将Adobe Experience ManagerDynamic Media配置为Cloud Service的信息。
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 8%
@@ -206,7 +206,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 “图像服务器”屏幕为传送图像建立了默认设置。 有关每个设置的说明，请参阅UI屏幕。
 
-**[!UICONTROL 请求属性]** -这些设置对可以从服务器传送的图像施加限制。**[!UICONTROL 默认请求属性]** -这些设置与图像的默认外观有关。**[!UICONTROL 常见缩略图属性]** -这些设置与缩略图图像的默认外观有关。**[!UICONTROL 目录字段的默认值]**-这些设置与图像的分辨率和默认缩略图类型有关。**[!UICONTROL 颜色管理属性]** -这些设置决定使用哪些ICC颜色用户档案。**[!UICONTROL 兼容性属性]** -通过此设置，文本图层中的前导和尾部段落可以像在版本3.6中一样处理，以实现向后兼容性。**[!UICONTROL 本地化支持]** -这些设置允许您管理多个区域设置属性。它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置&#x200B;**[!UICONTROL 本地化支持]**&#x200B;的详细信息，请参阅[设置资产本地化时的注意事项](https://experienceleague.corp.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)。
+**[!UICONTROL 请求属性]** -这些设置对可以从服务器传送的图像施加限制。**[!UICONTROL 默认请求属性]** -这些设置与图像的默认外观有关。**[!UICONTROL 常见缩略图属性]** -这些设置与缩略图图像的默认外观有关。**[!UICONTROL 目录字段的默认值]**-这些设置与图像的分辨率和默认缩略图类型有关。**[!UICONTROL 颜色管理属性]** -这些设置决定使用哪些ICC颜色用户档案。**[!UICONTROL 兼容性属性]** -通过此设置，文本图层中的前导和尾部段落可以像在版本3.6中一样处理，以实现向后兼容性。**[!UICONTROL 本地化支持]** -这些设置允许您管理多个区域设置属性。它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置&#x200B;**[!UICONTROL 本地化支持]**&#x200B;的详细信息，请参阅[设置资产本地化时的注意事项](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)。
 
 #### 配置应用程序常规设置{#configuring-application-general-settings}
 
