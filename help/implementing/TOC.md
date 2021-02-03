@@ -4,10 +4,10 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 44%
+source-wordcount: '710'
+ht-degree: 45%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 44%
       + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
       + [将标记构建到AEM应用程序中](/help/implementing/developing/introduction/tagging-applications.md)
       + 搜索 {#search}
-         + [查询生成器API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [查询生成器 API](/help/implementing/developing/introduction/query-builder-api.md)
          + [查询生成器谓词引用](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [实现自定义谓词计算器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [自定义错误页](/help/implementing/developing/introduction/custom-error-page.md)
@@ -140,11 +140,12 @@ ht-degree: 44%
       + 投放API {#delivery-api}
          + [内容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
          + [内容片段图QL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [内容片段上的远程AEM GraphQL查询身份验证](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
          + [AEM包含内容片段的GraphQL API —— 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + Developer Tools {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [内容包Maven插件](/help/implementing/developing/tools/maven-plugin.md)
-   + [AEM Repo工具](/help/implementing/developing/tools/repo-tool.md)
+   + [AEM Repo 工具](/help/implementing/developing/tools/repo-tool.md)
    + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + 个性化 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
