@@ -2,21 +2,15 @@
 title: 预览- JSON表示法
 description: 预览片段的JSON表示形式。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
 
 # 预览- JSON表示法{#preview-json-representation}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments投放可应请求提供。
->
->请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 在开发内容片段的模型时，您可能希望视图内容片段的JSON示例输出，如基于模型。 例如，了解最终输出的外观。 在验证模型JSON结构时，这可能会很有帮助，对于每个数据类型的默认示例内容可能会有所帮助。
 
