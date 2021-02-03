@@ -2,10 +2,10 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
+source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 3%
+source-wordcount: '678'
+ht-degree: 4%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 3%
 以下版本(2021.2.0)将于2021年2月25日发布。
 
 ## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
-
-* **[内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:添加使用HTTP API添加／更新和删除内容片段变体的功能。
 
 * **[内容片段投放的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:能够使用GraphQL语法查询内容片段，以及基于内容片段模型的模式，以JSON格式输出。
 
@@ -69,20 +67,6 @@ AEM中Cloud Manager作为Cloud Service2021.1.0的发布日期为2021年1月14日
 * 从Cloud Manager触发解除休眠时，有时即使成功启动解除休眠，也会显示一条失败消息。
 
 * 已解决在创建或删除环境时遇到的少数故障。
-
-## 代码重构工具 {#code-refactoring-tools}
-
-### [!DNL Code Refactoring Tools] {#what-is-new-crt}中的新增功能
-
-* 已发布新版AIO-CLI插件。 此插件的最新版本包括AEM Dispatcher Converter和Repository Modernizer的错误修复，还支持新的实用程序——索引转换器。 请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以进一步了解此插件。
-
-* Index Converter是一个实用程序，可用于将客户的自定义OAK索引定义转换为AEM作为Cloud Service兼容的OAK索引定义。 有关详细信息，请参阅[索引转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
-
-* 添加到[存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)的新功能，该功能创建单独的包`ui.config`以包含所有OSGi配置。
-
-### 错误修复 {#crt-bug-fixes}
-
-* 对AEM Dispatcher Converter和Repository Modernizer工具执行了若干错误修复。 请参阅[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
 
 ## AEM作为Cloud Service基础{#aem-as-a-cloud-service-foundation}
 
