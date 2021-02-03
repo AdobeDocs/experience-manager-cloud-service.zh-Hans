@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 translation-type: tm+mt
-source-git-commit: 8125d78d4751f22bcc5dd22acbdfd21ce62fc53d
+source-git-commit: a01a55f85639613e5febd2588c9c55590f888124
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2284'
 ht-degree: 1%
 
 ---
@@ -246,10 +246,10 @@ AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://docs.adob
 
 * 将`smtp.port`设置为`465`
 * 将`smtp.ssl`设置为`true`
-* 将`smtp.starttls`设置为`false`
 
 如果请求了端口587（仅当邮件服务器不支持端口465时才允许）:
 
 * 将`smtp.port`设置为`587`
 * 将`smtp.ssl`设置为`false`
-* 将`smtp.starttls`设置为`true`
+
+AEM将在运行时自动将`smtp.starttls`属性设置为Cloud Service至相应值。 因此，如果`smtp.tls`设置为true，则忽略`smtp.startls`。 如果`smtp.ssl`设置为false，则`smtp.starttls`设置为true。 这与在OSGI配置中设置的`smtp.starttls`值无关。
