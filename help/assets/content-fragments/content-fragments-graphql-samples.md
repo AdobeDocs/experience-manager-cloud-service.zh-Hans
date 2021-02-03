@@ -2,21 +2,24 @@
 title: 学习将GraphQL与AEM结合使用——示例内容和查询
 description: 学习将GraphQL与AEM结合使用——示例内容和查询。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 6%
+source-wordcount: '1708'
+ht-degree: 5%
 
 ---
 
 
 # 学习将GraphQL与AEM结合使用——示例内容和查询{#learn-graphql-with-aem-sample-content-queries}
 
->[!CAUTION]
+>[!NOTE]
 >
->AEM GraphQL API for Content Fragments投放可应请求提供。
+>此页面应与以下内容一起阅读：
 >
->请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
+>* [内容片段](/help/assets/content-fragments/content-fragments.md)
+>* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+>* [AEM GraphQL API，用于内容片段](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 要开始使用GraphQL查询以及它们如何使用AEM内容片段，查看一些实际示例会有所帮助。
 
@@ -26,7 +29,7 @@ ht-degree: 6%
 
 * 以及某些[示例GraphQL查询](#graphql-sample-queries)，基于示例内容片段结构（内容片段模型和相关内容片段）。
 
-## GraphQL for AEM —— 某些扩展{#graphql-some-extensions}
+## GraphQL for AEM —— 扩展{#graphql-extensions}摘要
 
 使用GraphQL for AEM的查询的基本操作符合标准的GraphQL规范。 对于具有AEM的GraphQL查询，有以下几个扩展：
 
@@ -34,148 +37,59 @@ ht-degree: 6%
    * 使用模型名称；eg city
 
 * 如果您希望获得一列表结果：
-   * 在模型名称中添加“列表”;例如`cityList`
+   * 将`List`添加到模型名称；例如`cityList`
+   * 请参阅[示例查询-所有城市相关信息](#sample-all-information-all-cities)
 
 * 如果要使用逻辑OR:
-   * 使用&quot; _logOp:或
+   * 使用` _logOp: OR`
+   * 请参阅[示例查询-名称为“Jobs”或“Smith”](#sample-all-persons-jobs-smith)的所有人员
 
 * 逻辑AND也存在，但是是（通常）隐式
 
 * 您可以查询与内容片段模型中的字段对应的字段名称
+   * 请参阅[示例查询-公司CEO和员工的完整详细信息](#sample-full-details-company-ceos-employees)
 
 * 除了模型中的字段之外，还有一些系统生成的字段（以下划线为前面）:
 
    * 对于内容：
 
       * `_locale` :去揭示语言；基于语言管理器
-
+         * 请参阅[给定区域设置的多个内容片段的示例查询](#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` :显示片段的元数据
-
+         * 请参阅[元数据查询示例-列表标题为GB](#sample-metadata-awards-gb)的奖项的元数据
+      * `_model` :允许查询内容片段模型（路径和标题）
+         * 请参阅[模型](#sample-wknd-content-fragment-model-from-model)中内容片段模型的示例查询
       * `_path` :存储库中内容片段的路径
-
-      * `_references` :显示引用；包括富文本编辑器中的内联引用
-
-      * `_variations` :以显示内容片段中的特定变量
+         * 请参阅[示例查询-单个特定城市片段](#sample-single-specific-city-fragment)
+      * `_reference` :显示引用；包括富文本编辑器中的内联引用
+         * 请参阅[具有预取引用的多个内容片段的示例查询](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` :以显示内容片段中的特定变量
+         * 请参阅[示例查询-所有具有命名变量的城市](#sample-cities-named-variation)
    * 运营：
 
-      * `_operator` :应用特定运营商； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
-
+      * `_operator` :应用特定运营商； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`  `CONTAINS`
+         * 请参阅[示例查询-所有姓名不为“Jobs”](#sample-all-persons-not-jobs)的人员
       * `_apply` :适用特定条件；例如，   `AT_LEAST_ONCE`
-
+         * 请参阅[示例查询-对包含项目的数组进行筛选，该项目必须至少发生一次](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` :在查询时忽略大小写
+         * 请参阅[示例查询-名称中包含SAN的所有城市，而不考虑大小写](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
 
 
 * 支持GraphQL合并类型：
 
-   * 使用`...on`
-
-
-## 与GraphQL {#content-fragment-structure-graphql}一起使用的示例内容片段结构
-
-对于简单的示例，我们需要：
-
-* 一个或多个[示例内容片段模型](#sample-content-fragment-models-schemas) —— 构成GraphQL模式的基础
-
-* [基于上](#sample-content-fragments) 述模型的示例内容片段
-
-### 示例内容片段模型(模式){#sample-content-fragment-models-schemas}
-
-对于示例查询，我们将使用以下内容模型及其相互关系（引用->）:
-
-* [公司](#model-company)
--> [人物](#model-person)
-    ->奖 [项](#model-award)
-
-* [城市](#model-city)
-
-#### 公司 {#model-company}
-
-定义公司的基本字段有：
-
-| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
-|--- |--- |--- |
-| 公司名称 | 单行文本 |  |
-| 首席执行官 | 片段引用（单个） | [人员](#model-person) |
-| 员工 | 片段引用（多字段） | [人员](#model-person) |
-
-#### 人员 {#model-person}
-
-定义人员（也可以是员工）的字段：
-
-| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
-|--- |--- |--- |
-| 名称 | 单行文本 |  |
-| 名字 | 单行文本 |  |
-| 奖项 | 片段引用（多字段） | [奖项](#model-award) |
-
-#### 奖项{#model-award}
-
-定义奖励的字段包括：
-
-| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
-|--- |--- |--- |
-| 快捷键/ID | 单行文本 |  |
-| 标题 | 单行文本 |  |
-
-#### 城市 {#model-city}
-
-用于定义城市的字段有：
-
-| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
-|--- |--- |--- |
-| 名称 | 单行文本 |  |
-| 国家/地区 | 单行文本 |  |
-| 人口 | 数字 |  |
-| 类别 | 标记 |  |
-
-### 示例内容片段{#sample-content-fragments}
-
-以下片段用于相应的模型。
-
-#### 公司 {#fragment-company}
-
-| 公司名称 | 首席执行官 | 员工 |
-|--- |--- |--- |
-| Apple | 史蒂夫·乔布斯 | 杜克·马什<br>马克斯·考尔菲尔德 |
-|  小马公司 | 亚当·斯密 | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | 史蒂夫·乔布斯 | 乔·史密斯<br>阿贝·林肯 |
-
-#### 人员 {#fragment-person}
-
-| 名称 | 名字 | 奖项 |
-|--- |--- |--- |
-| 林肯 |  阿部 |  |
-| 史密斯 | Adam |   |
-| 斯莱德 |  刀具 |  Gameblitz<br>Gamestar |
-| 马什 |  杜克 |   |   |
-|  史密斯 |  乔 |   |
-| 克罗夫特 |  拉拉 | Gamestar |
-| Caulfield |  最大 |  加梅布利茨 |
-|  作业 |  Steve |   |
-
-#### 奖项{#fragment-award}
-
-| 快捷键/ID | 标题 |
-|--- |--- |
-| GB | 加梅布利茨 |
-|  GS | Gamestar |
-|  OSC | 奥斯卡 |
-
-#### 城市 {#fragment-city}
-
-| 名称 | 国家/地区 | 人口 | 类别 |
-|--- |--- |--- |--- |
-| Basel | 瑞士 | 172258 | 城市： emea |
-| 柏林 | 德国 | 3669491 | 城市：首都<br>城市：emea |
-| 布加勒斯特 | 罗马尼亚 | 1821000 |  城市：首都<br>城市：emea |
-| San Francisco |  美国 |  883306 |  城市：海滩<br>城市：na |
-| 圣何塞 |  美国 |  102635 |  城市：纳 |
-| 斯图加特 |  德国 |  634830 |  城市： emea |
-|  苏黎世 |  瑞士 |  415367 |  城市：首都<br>城市：emea |
+   * 使用`... on`
+      * 请参阅[具有内容引用的特定模型的内容片段的示例查询](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL —— 使用示例内容片段结构{#graphql-sample-queries-sample-content-fragment-structure}的示例查询
 
-有关创建查询的插图，请参阅示例查询以及示例结果。
+有关创建查询的插图，请参阅这些示例查询以及示例结果。
 
 >[!NOTE]
 >
@@ -183,9 +97,13 @@ ht-degree: 6%
 >
 >例如：`http://localhost:4502/content/graphiql.html`
 
+>[!NOTE]
+>
+>示例查询基于与GraphQL](#content-fragment-structure-graphql)一起使用的[示例内容片段结构
+
 ### 示例查询-所有可用模式和数据类型{#sample-all-schemes-datatypes}
 
-这将返回所有可用模式的所有类型。
+这将返回所有可用模式的所有`types`。
 
 **示例查询**
 
@@ -269,134 +187,6 @@ ht-degree: 6%
         {
           "name": "__TypeKind",
           "description": "An enum describing what kind of type a given __Type is"
-        }
-      ]
-    }
-  }
-}
-```
-
-### 示例查询-公司CEO和员工的完整详细信息{#sample-full-details-company-ceos-employees}
-
-使用嵌套片段的结构，此查询返回公司CEO及其所有员工的完整详细信息。
-
-**示例查询**
-
-```xml
-query {
-  companyList {
-    items {
-      name
-      ceo {
-        _path
-        name
-        firstName
-        awards {
-        id
-          title
-        }
-      }
-      employees {
-       name
-        firstName
-       awards {
-         id
-          title
-        }
-      }
-    }
-  }
-}
-```
-
-**示例结果**
-
-```xml
-{
-  "data": {
-    "companyList": {
-      "items": [
-        {
-          "name": "Apple Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Marsh",
-              "firstName": "Duke",
-              "awards": []
-            },
-            {
-              "name": "Caulfield",
-              "firstName": "Max",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Little Pony, Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
-            "name": "Smith",
-            "firstName": "Adam",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Croft",
-              "firstName": "Lara",
-              "awards": [
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            },
-            {
-              "name": "Slade",
-              "firstName": "Cutter",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                },
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "NextStep Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Smith",
-              "firstName": "Joe",
-              "awards": []
-            },
-            {
-              "name": "Lincoln",
-              "firstName": "Abraham",
-              "awards": []
-            }
-          ]
         }
       ]
     }
@@ -537,7 +327,7 @@ query {
 }
 ```
 
-### 示例查询-单个城市片段{#sample-single-city-fragment}
+### 示例查询-单个特定城市片段{#sample-single-specific-city-fragment}
 
 这是一个查询，用于返回存储库中特定位置的单个片段条目的详细信息。
 
@@ -613,6 +403,134 @@ query {
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### 示例查询-公司CEO和员工的完整详细信息{#sample-full-details-company-ceos-employees}
+
+使用嵌套片段的结构，此查询返回公司CEO及其所有员工的完整详细信息。
+
+**示例查询**
+
+```xml
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        _path
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**示例结果**
+
+```xml
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
           ]
         }
       ]
@@ -1186,7 +1104,13 @@ query {
 
 ## 使用WKND项目{#sample-queries-using-wknd-project}的示例查询
 
-这些示例查询基于WKND项目。
+这些示例查询基于WKND项目。 这包括：
+
+* 内容片段模型可在以下位置获得：
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* 内容片段（和其他内容）可在以下位置获得：
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1277,12 +1201,12 @@ query {
 
 此示例查询询问：
 
-* 对于给定模型的单个内容片段
-* 对于所有格式的内容：
-   * HTML
-   * Markdown
-   * 纯文本
-   * JSON
+* 对于特定路径上类型为`article`的单个内容片段
+   * 其中，所有内容格式：
+      * HTML
+      * Markdown
+      * 纯文本
+      * JSON
 
 **示例查询**
 
@@ -1303,7 +1227,40 @@ query {
 }
 ```
 
+### 模型{#sample-wknd-content-fragment-model-from-model}中内容片段模型的示例查询
+
+此示例查询询问：
+
+* 用于单个内容片段
+   * 基础内容片段模型的详细信息
+
+**示例查询**
+
+```xml
+{
+  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+    item {
+      _path
+      adventureTitle
+      _model {
+        _path
+        title
+      }
+    }
+  }
+}
+```
+
 ### 嵌套内容片段的示例查询-单模型类型{#sample-wknd-nested-fragment-single-model}
+
+这位查询质问：
+
+* 对于特定路径上类型为`article`的单个内容片段
+   * 其中，引用（嵌套）片段的路径和作者
+
+>[!NOTE]
+>
+>字段`referencearticle`的数据类型为`fragment-reference`。
 
 **示例查询**
 
@@ -1324,6 +1281,15 @@ query {
 
 ### 嵌套内容片段的示例查询-多模型类型{#sample-wknd-nested-fragment-multiple-model}
 
+这位查询质问：
+
+* 对于`bookmark`类型的多个内容片段
+   * 与片段对特定模型类型`article`和`adventure`的其他片段的引用
+
+>[!NOTE]
+>
+>字段`fragments`的数据类型为`fragment-reference`，选择了型号`Article`、`Adventure`。
+
 ```xml
 {
   bookmarkList {
@@ -1343,7 +1309,61 @@ query {
 }
 ```
 
-### 具有内容引用的特定模型的内容片段的示例查询{#sample-wknd-fragment-specific-model-content-reference}
+### 包含内容引用的特定模型的内容片段的示例查询{#sample-wknd-fragment-specific-model-content-reference}
+
+这种查询有两种风格：
+
+1. 返回所有内容引用。
+1. 返回类型`attachments`的特定内容引用。
+
+这些查询质问：
+
+* 对于`bookmark`类型的多个内容片段
+   * 包含对其他片段的内容引用
+
+#### 预取引用{#sample-wknd-multiple-fragments-prefetched-references}的多个内容片段的示例查询
+
+以下查询使用`_references`返回所有内容引用：
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### 附件{#sample-wknd-multiple-fragments-attachments}的多个内容片段的示例查询
+
+以下查询返回所有`attachments` —— 类型为`content-reference`的特定字段（子组）:
+
+>[!NOTE]
+>
+>字段`attachments`具有数据类型`content-reference`，并选择了各种形式。
 
 ```xml
 {
@@ -1376,80 +1396,16 @@ query {
 }
 ```
 
-### 预取引用{#sample-wknd-multiple-fragments-prefetched-references}的多个内容片段的示例查询
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### 给定模型{#sample-wknd-single-fragment-given-model}的单个内容片段变体的示例查询
-
-**示例查询**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### 给定区域设置{#sample-wknd-multiple-fragments-given-locale}的多个内容片段的示例查询
-
-**示例查询**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### RTE内联引用{#sample-wknd-single-fragment-rte-inline-reference}的单个内容片段的示例查询
+
+这位查询质问：
+
+* 对于特定路径上类型为`bookmark`的单个内容片段
+   * 其中，RTE内联引用
+
+>[!NOTE]
+>
+>RTE内联引用在`_references`中已水合。
 
 **示例查询**
 
@@ -1486,7 +1442,37 @@ query {
 }
 ```
 
+### 给定模型{#sample-wknd-single-fragment-given-model}的单个内容片段变体的示例查询
+
+这位查询质问：
+
+* 对于特定路径上类型为`article`的单个内容片段
+   * 其中，与变量相关的数据：`variation1`
+
+**示例查询**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### 给定模型{#sample-wknd-variation-multiple-fragment-given-model}的多个内容片段的命名变体的示例查询
+
+这位查询质问：
+
+* 对于类型为`article`且具有特定变体的内容片段：`variation1`
 
 **示例查询**
 
@@ -1506,3 +1492,131 @@ query {
   }
 }
 ```
+
+### 给定区域设置{#sample-wknd-multiple-fragments-given-locale}的多个内容片段的示例查询
+
+这位查询质问：
+
+* 对于`fr`区域设置中类型`article`的内容片段
+
+**示例查询**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+## 示例内容片段结构（与GraphQL一起使用）{#content-fragment-structure-graphql}
+
+示例查询基于以下结构，其使用：
+
+* 一个或多个[示例内容片段模型](#sample-content-fragment-models-schemas) —— 构成GraphQL模式的基础
+
+* [基于上](#sample-content-fragments) 述模型的示例内容片段
+
+### 示例内容片段模型(模式){#sample-content-fragment-models-schemas}
+
+对于示例查询，我们将使用以下内容模型及其相互关系（引用->）:
+
+* [公司](#model-company)
+-> [人物](#model-person)
+    ->奖 [项](#model-award)
+
+* [城市](#model-city)
+
+#### 公司 {#model-company}
+
+定义公司的基本字段有：
+
+| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
+|--- |--- |--- |
+| 公司名称 | 单行文本 |  |
+| 首席执行官 | 片段引用（单个） | [人员](#model-person) |
+| 员工 | 片段引用（多字段） | [人员](#model-person) |
+
+#### 人员 {#model-person}
+
+定义人员（也可以是员工）的字段：
+
+| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
+|--- |--- |--- |
+| 名称 | 单行文本 |  |
+| 名字 | 单行文本 |  |
+| 奖项 | 片段引用（多字段） | [奖项](#model-award) |
+
+#### 奖项{#model-award}
+
+定义奖励的字段包括：
+
+| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
+|--- |--- |--- |
+| 快捷键/ID | 单行文本 |  |
+| 标题 | 单行文本 |  |
+
+#### 城市 {#model-city}
+
+用于定义城市的字段有：
+
+| 字段名称 | 数据类型 | 针对开发人员的 Adobe AIR API 参考 |
+|--- |--- |--- |
+| 名称 | 单行文本 |  |
+| 国家/地区 | 单行文本 |  |
+| 人口 | 数字 |  |
+| 类别 | 标记 |  |
+
+### 示例内容片段{#sample-content-fragments}
+
+以下片段用于相应的模型。
+
+#### 公司 {#fragment-company}
+
+| 公司名称 | 首席执行官 | 员工 |
+|--- |--- |--- |
+| Apple | 史蒂夫·乔布斯 | 杜克·马什<br>马克斯·考尔菲尔德 |
+|  小马公司 | 亚当·斯密 | Lara Croft<br>Cutter Slade |
+| NextStep Inc. | 史蒂夫·乔布斯 | 乔·史密斯<br>阿贝·林肯 |
+
+#### 人员 {#fragment-person}
+
+| 名称 | 名字 | 奖项 |
+|--- |--- |--- |
+| 林肯 |  阿部 |  |
+| 史密斯 | Adam |   |
+| 斯莱德 |  刀具 |  Gameblitz<br>Gamestar |
+| 马什 |  杜克 |   |   |
+|  史密斯 |  乔 |   |
+| 克罗夫特 |  拉拉 | Gamestar |
+| Caulfield |  最大 |  加梅布利茨 |
+|  作业 |  Steve |   |
+
+#### 奖项{#fragment-award}
+
+| 快捷键/ID | 标题 |
+|--- |--- |
+| GB | 加梅布利茨 |
+|  GS | Gamestar |
+|  OSC | 奥斯卡 |
+
+#### 城市 {#fragment-city}
+
+| 名称 | 国家/地区 | 人口 | 类别 |
+|--- |--- |--- |--- |
+| Basel | 瑞士 | 172258 | 城市： emea |
+| 柏林 | 德国 | 3669491 | 城市：首都<br>城市：emea |
+| 布加勒斯特 | 罗马尼亚 | 1821000 |  城市：首都<br>城市：emea |
+| San Francisco |  美国 |  883306 |  城市：海滩<br>城市：na |
+| 圣何塞 |  美国 |  102635 |  城市：纳 |
+| 斯图加特 |  德国 |  634830 |  城市： emea |
+|  苏黎世 |  瑞士 |  415367 |  城市：首都<br>城市：emea |
