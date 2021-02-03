@@ -5,17 +5,17 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 72%
+source-wordcount: '476'
+ht-degree: 73%
 
 ---
 
 
 # [!DNL Assets] 指南  {#assets}
 
-+ [[!DNL Assets] 作为 [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概述和新增功能](overview.md)
 + [a的显 [!DNL Assets] 着变化 [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 体系结构](architecture.md)
@@ -56,6 +56,7 @@ ht-degree: 72%
    + [资产 HTTP API](mac-api-assets.md)
    + [资产HTTP API中的内容片段支持](content-fragments/assets-api-content-fragments.md)
    + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+   + [内容片段上的远程AEM GraphQL查询身份验证](content-fragments/graphql-authentication-content-fragments.md)
    + [AEM包含内容片段的GraphQL API —— 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
    + [资产报表](asset-reports.md)
@@ -85,7 +86,7 @@ ht-degree: 72%
    + [使用 Dynamic Media](dynamic-media/dynamic-media.md)
    + [配置 Dynamic Media](dynamic-media/config-dm.md)
    + [Dynamic Media 疑难解答](dynamic-media/troubleshoot-dm.md)
-   + [Dynamic Media无障碍](dynamic-media/accessibility-dm.md)
+   + [Dynamic Media 中的辅助功能](dynamic-media/accessibility-dm.md)
    + [管理 Dynamic Media 资产](dynamic-media/managing-assets.md)
    + [优化图像质量的最佳实践](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [文件管理最佳实践](dynamic-media/best-practices-for-file-management.md)
@@ -120,7 +121,7 @@ ht-degree: 72%
    + [将 URL 关联到您的 Web 应用程序](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [使用规则集转换 URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [发布 Dynamic Media 资产](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [在Dynamic Media使用选择性出版](dynamic-media/selective-publishing.md)
+   + [使用 Dynamic Media 中的“选择性发布”功能](dynamic-media/selective-publishing.md)
    + [使用选择器](dynamic-media/working-with-selectors.md)
    + [DHTML 查看器生命周期结束常见问题解答](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 查看器生命周期终止通知](dynamic-media/flash-viewers-eol.md)
