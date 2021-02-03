@@ -1,10 +1,10 @@
 ---
 title: 智能标记视频资源
-description: 智能标记视频资产通过使用Adobe Sensei服务应用上下文和描述性标记，从而自动化资产标记。
+description: Experience Manager使用 [!DNL Adobe Sensei]自动向视频添加上下文和描述性智能标记。
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 智能标记视频资源{#video-smart-tags}
 
-对新内容的不断需求要求减少手动工作，以快速提供引人入胜的数字体验。 [!DNL Adobe Experience Manager] 支持在 [!DNL Cloud Service] 人工智能的帮助下自动标记视频资产。手动标记视频会非常耗时。 但是，Adobe Sensei支持的视频智能标记功能使用人工智能模型来分析视频内容并向视频资产添加标记。 从而缩短DAM用户向客户提供丰富体验的时间。 Adobe的机器学习服务为一个视频生成两组标签。 而一个集合则对应该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等动作有关。
+对新内容的不断需求要求减少手动工作，以快速提供引人入胜的数字体验。 [!DNL Adobe Experience Manager] 支持 [!DNL Cloud Service] 使用人工智能自动标记视频资产。手动标记视频会非常耗时。 但是，以[!DNL Adobe Sensei]为后盾的视频智能标记功能使用人工智能模型来分析视频内容并向视频资产中添加标记。 从而缩短DAM用户向客户提供丰富体验的时间。 Adobe的机器学习服务为一个视频生成两组标签。 而一个集合则对应该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等动作有关。
 
-支持智能标记的视频文件格式（及其编解码器）包括MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC、vp6f)和WMV(WMV2)。 此外，该功能还允许标记最大300 MB的视频。 在上传视频或触发重新处理后，视频资产的自动标记会作为标准资产处理(以及缩略图创建和元数据提取)进行。 智能标记按资产[!UICONTROL 属性]中[置信度得分](#confidence-score-video-tag)的降序显示。 默认情况下，在[!DNL Adobe Experience Manager]中，视频标记为[!DNL Cloud Service]。 但是，您可以在文件夹上选择[退出视频智能标记](#opt-out-video-smart-tagging)。
+在上传视频或触发重新处理后，视频资产的自动标签会作为标准资产处理(以及缩略图创建和元数据提取)进行。 智能标记按资产[!UICONTROL 属性]中[置信度得分](#confidence-score-video-tag)的降序显示。 默认情况下，在[!DNL Adobe Experience Manager]中，视频标记为[!DNL Cloud Service]。 但是，您可以在文件夹上选择[退出视频智能标记](#opt-out-video-smart-tagging)。
 
 ## 上传时智能标记视频{#smart-tag-assets-on-ingestion}
 
-当您[将视频资产](add-assets.md#upload-assets)作为[!DNL Cloud Service]上传到[!DNL Adobe Experience Manager]时，视频将进行![处理](assets/do-not-localize/assetprocessing.png)。 完成处理后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的视频中。 asset compute服务利用Adobe Sensei创建这些智能标签。
+当您[将视频资产](add-assets.md#upload-assets)作为[!DNL Cloud Service]上传到[!DNL Adobe Experience Manager]时，会处理视频。 完成处理后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的视频中。 资产微服务利用[!DNL Adobe Sensei]创建这些智能标记。
 
 ![智能标记会添加到视频中，并会在资产属性的“基本”选项卡中显示](assets/smart-tags-added-to-videos.png)
 
@@ -43,6 +43,8 @@ DAM中已有的视频资产不会自动智能标记。 您需要手动[!UICONTRO
 1. 选择整个文件夹或特定视频资产。
 
 1. 选择![重新处理资产图标](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新处理资产]图标，然后选择[!UICONTROL 完全处理]选项。
+
+<!-- TBD: Limit size -->
 
 ![重新处理资产以向现有DAM存储库的视频添加标记](assets/reprocess.gif)
 
@@ -123,13 +125,13 @@ DAM中已有的视频资产不会自动智能标记。 您需要手动[!UICONTRO
 
 ## 限制 {#video-smart-tagging-limitations}
 
-* 尚不支持培训智能标记服务（或增强的智能标记）来标记视频资产。
+* 您无法培训使用任何特定视频将智能标记应用于视频的服务。 它使用默认的[!DNL Adobe Sensei]设置。
 
 * 不显示标记进度。
 
-* 只有大小不超过300 MB的视频适合标记。 Adobe Sensei服务会智能标记符合此条件的视频，并跳过标记文件夹中的其他视频。
+* 只有文件大小小于300 MB的视频会自动标记。 [!DNL Adobe Sensei]服务将跳过大小较大的视频文件。
 
-* 只有这些文件格式（和支持的编解码器）的视频：MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC)64/AVC、vp6f)和WMV(WMV2)-可以标记。
+* 只标记在[智能标记](/help/assets/smart-tags.md#smart-tags-supported-file-formats)中提及的文件格式和支持的编解码器的视频。
 
 >[!MORELIKETHIS]
 >
