@@ -2,9 +2,9 @@
 title: 创建内容片段无头快速开始指南
 description: 内容片段允许您设计、创建、管理和使用AEM可以无头地交付的与页面无关的内容。
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 1%
 1. 在内容片段编辑器中提供内容片段的详细信息。
 
    ![内容片段编辑器](../assets/content-fragment-edit.png)
-1. 点按或单击&#x200B;**保存**。
+1. 点按或单击&#x200B;**保存并关闭**。
 
 内容片段可以引用其他内容片段，从而允许在必要时使用嵌套的内容结构。
 
