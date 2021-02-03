@@ -3,9 +3,9 @@ title: 增强型智能标记
 description: 使用 Adobe Sensei 的 AI 和 ML 服务应用上下文和描述性业务标记，以提高资产发现和内容交付速度。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->默认情况下，新的[!DNL Experience Manager Assets]部署与[!DNL Adobe Developer Console]集成。 它有助于更快地配置智能标记功能。 在现有部署中，管理员按照以下步骤进行配置。
+>默认情况下，新的[!DNL Experience Manager Assets]部署与[!DNL Adobe Developer Console]集成。 它有助于更快地配置智能标记功能。 在现有部署中，管理员按照以下步骤配置集成。
 
 ## 使用 Adobe 开发人员控制台进行集成 {#aio-integration}
 
