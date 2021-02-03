@@ -2,21 +2,15 @@
 title: 内容片段模型
 description: 内容片段模型用于创建包含结构化内容的内容片段。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 10%
+source-wordcount: '2156'
+ht-degree: 7%
 
 ---
 
 
 # 内容片段模型 {#content-fragment-models}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments投放可应请求提供。
->
->请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 内容片段模型定义[内容片段](/help/assets/content-fragments/content-fragments.md)的内容结构。
 
@@ -25,6 +19,7 @@ ht-degree: 10%
 1. [为实例启用内容片段模型功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [创建](#creating-a-content-fragment-model)、配 [置内容](#defining-your-content-fragment-model)片段模型
 1. [启用内容片段模](#enabling-disabling-a-content-fragment-model) 型，以在创建内容片段时使用
+1. [通过配置策略，在所需的资产文件夹上允](#allowing-content-fragment-models-assets-folder) 许您的内容 **片段模型**。
 
 ## 创建内容片段模型{#creating-a-content-fragment-model}
 
@@ -36,7 +31,7 @@ ht-degree: 10%
    >
    >如果[未启用内容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
 
-1. 指定&#x200B;**模型标题**。如果需要，还可以添加&#x200B;**标记**&#x200B;和&#x200B;**说明**。
+1. 指定&#x200B;**模型标题**。还可以添加&#x200B;**标记**、**描述**，并根据需要选择&#x200B;**启用模型**&#x200B;以[启用模型](#enabling-disabling-a-content-fragment-model)。
 
    ![标题和说明](assets/cfm-models-02.png)
 
@@ -64,70 +59,35 @@ ht-degree: 10%
    >
    >当字段为&#x200B;**必填字段**&#x200B;时，左窗格中显示的&#x200B;**标签**&#x200B;将标有一个星号标记 (*****)。
 
+   ![属性](assets/cfm-models-03.png)
+
 1. **添加字段**
 
-   * 将所需数据类型拖动到字段的所需位置。
+   * 将所需数据类型拖动到字段的所需位置：
+
+      ![数据类型到字段](assets/cfm-models-04.png)
 
    * 将字段添加到模型后，右面板将显示可为该特定数据类型定义的&#x200B;**属性**。 您可以在此处定义该字段的必需内容。
-许多属性是自解释的，有关其他详细信息，请参阅[属性](#properties)。
+
+      * 许多属性是自解释的，有关其他详细信息，请参阅[属性](#properties)。
+      * 键入&#x200B;**字段标签**&#x200B;将自动完成&#x200B;**属性名称** —— 如果为空，之后可以手动更新。
+
+      例如：
+
+      ![字段属性](assets/cfm-models-05.png)
+
 
 1. **删除字段**
 
    选择所需字段，然后单击／点按垃圾桶图标。 系统将要求您确认该操作。
 
-1. 添加所有必填字段，并根据需要定义相关属性。
+   ![删除](assets/cfm-models-06.png)
+
+1. 添加所有必填字段，并根据需要定义相关属性。 例如：
+
+   ![保存](assets/cfm-models-07.png)
 
 1. 选择&#x200B;**保存**&#x200B;以保留定义。
-
-<!--
-## Defining your Content Fragment Model {#defining-your-content-fragment-model}
-
-The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
-
->[!CAUTION]
->
->Editing an existing content fragment model can impact dependent fragments.
-
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your content fragment model.
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
-
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
-
-   ![properties](assets/cfm-models-03.png)
-
-1. **To Add a Field**
-
-    * Drag a required data type to the required location for a field:
-
-      ![data type to field](assets/cfm-models-04.png)
-
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
-      For example:
-
-      ![field properties](assets/cfm-models-05.png)
-
-1. **To Remove a Field**
-
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
-
-   ![remove](assets/cfm-models-06.png)
-
-1. Add all required fields, and define the related properties, as required. For example:
-
-   ![save](assets/cfm-models-07.png)
-
-1. Select **Save** to persist the definition.
--->
 
 ## 数据类型 {#data-types}
 
@@ -149,19 +109,16 @@ The content fragment model effectively defines the structure of the resulting co
    * 允许片段作者访问和选择标记区域
 * **内容引用**
    * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
-
-<!--
-* **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
-* **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
-    * To allow AEM to store direct JSON that you have copy/pasted from another service.
-    * The JSON will be passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
--->
+* **片段引用**
+   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 数据类型可配置为允许片段作者：
+      * 直接编辑引用的片段。
+      * 根据相应的模型创建新内容片段
+* **JSON 对象**
+   * 允许内容片段作者在片段的相应元素中输入JSON语法。
+      * 允许AEM存储您从其他服务复制／粘贴的直接JSON。
+      * JSON将传递，并在GraphQL中输出为JSON。
+      * 在内容片段编辑器中包括JSON语法高亮显示、自动完成和错误高亮显示。
 
 ## 属性 {#properties}
 
@@ -187,15 +144,26 @@ The content fragment model effectively defines the structure of the resulting co
 
    更改内容片段模型中的&#x200B;**默认类型**&#x200B;仅会对在编辑器中打开并保存的现有相关内容片段生效。
 
-<!--
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
+* **UniqueContent(**
+对于特定字段)在从当前模型创建的所有内容片段中必须是唯一的。
 
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+   这用于确保内容作者不能重复已在同一模型的另一个片段中添加的内容。
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
--->
+   例如，在内容片段模型中名为`Country`的&#x200B;**单行文本**&#x200B;字段不能在两个从属内容片段中具有值`Japan`。 当尝试第二个实例时，将发出警告。
+
+   >[!NOTE]
+   确保每个语言根的唯一性。
+
+   >[!NOTE]
+   变量可以具有与同一片段的变量相同的&#x200B;*唯一*&#x200B;值，但不能具有与其他片段的任何变量相同的值。
+
+* **可**
+翻译在CF模型编辑器中选中某个字段上的“可翻译”复选框
+
+   * 确保将字段的属性名称添加到转换配置上下文`/content/dam/<tenant>`（如果尚不存在）。
+   * 对于GraphQL:将“内容片段”字段上的`<translatable>`属性设置为`yes`，以允许仅对可翻译内容的JSON输出使用GraphQL查询过滤器。
+
+* 有关该特定数据类型及其属性的详细信息，请参阅&#x200B;**[片段引用（嵌套片段）](#fragment-reference-nested-fragments)**。
 
 ## 验证{#validation}
 
@@ -205,72 +173,65 @@ The content fragment model effectively defines the structure of the resulting co
    * 与预定义正则表达式进行比较。
 * **数字**
    * 检查特定值。
+* **内容引用**
+   * 测试特定类型的内容。
+   * 只能引用指定文件大小或更小的资产。
+   * 只能引用预定义宽度和／或高度范围内的图像（以像素为单位）。
+* **片段引用**
+   * 测试特定内容片段模型。
 
 <!--
-* **Content Reference**
-  * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
-  * Only assets of specified file size or smaller can be referenced. 
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
 -->
 
-<!--
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## 使用引用表单嵌套内容{#using-references-to-form-nested-content}
 
-Content Fragments can form nested content, using either of the following data types:
+内容片段可以使用以下任何一种数据类型来形成嵌套内容：
 
-* **[Content Reference](#content-reference)**
-  * Provides a simple reference to other content; of any type.
-  * Can be configured for a one or multiple references (in the resulting fragment).
+* **[内容引用](#content-reference)**
+   * 提供对其他内容的简单引用；任何类型。
+   * 可以为一个或多个引用（在生成的片段中）配置。
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
-  * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
-    >[!NOTE]
-    >
-    >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-  * Can be configured for one or multiple references (in the resulting fragment)..
+* **[片段引用](#fragment-reference-nested-fragments)** （嵌套片段）
+   * 引用其他片段，具体取决于指定的特定模型。
+   * 允许您包含／检索结构化数据。
+
+      >[!NOTE]
+      此方法与[使用带有GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)的内容片段的无头内容投放相关。
+   * 可以为一个或多个引用（在生成的片段中）配置。
 
 >[!NOTE]
->
->AEM has a recurrence protection for:
->
->* Content References
->  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
->
->* Fragment References in GraphQL 
->  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+AEM对以下对象具有重复保护：
+* 内容引用
+这会阻止用户添加对当前片段的引用。 这可能导致一个空的片段引用选取器对话框。
 
-### Content Reference {#content-reference}
+* GraphQL中的片段引用
+如果创建一个深层查询，它返回彼此引用的多个内容片段，它将在第一次返回null。
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify:
+### 内容引用 {#content-reference}
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
--->
+内容引用允许您从其他源中呈现内容；例如，图像或内容片段。
 
-<!-- Check screenshot - might need update
+除了标准属性之外，您还可以指定：
 
-   ![Content Reference](assets/cfm-content-reference.png)
--->
+* 任何引用内容的&#x200B;**根路径**。
+* 可引用的内容类型。
+* 文件大小限制。
+* 图像限制。
+   <!-- Check screenshot - might need update -->
+   ![内容引用](assets/cfm-content-reference.png)
 
-<!--
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### 片段引用（嵌套片段）{#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+片段引用引用一个或多个内容片段。 此功能在检索内容以在应用程序中使用时特别受关注，因为它允许您检索包含多个图层的结构化数据。
 
-For example:
+例如：
 
-* A model defining details for an employee; these include:
-  * A reference to the model that defines the employer (company)
+* 定义员工详细信息的模型；包括：
+   * 对定义雇主(公司)的模型的引用
 
 ```xml
 type EmployeeModel {
@@ -287,44 +248,34 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->This is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+这与[使用内容片段和GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)的无头内容投放特别相关。
 
-In addition to standard properties you can define:
+除了标准属性之外，您还可以定义：
 
-* **Render As**:
+* **呈现为**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+   * **多字段** -片段作者可以创建多个单独的引用
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+   * **fragmentreference** -允许片段作者选择对片段的单个引用
 
-* **Model Type**
-  Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
+* **模型**
+类型可选择多个模型。创作内容片段时，必须使用这些模型创建任何引用的片段。
 
-* **Root Path**
-  This specifies a root path for any fragments referenced.
+* **根路**
+径指定引用的任何片段的根路径。
 
-* **Allow Fragment Creation**
+* **允许创建片段**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
--->
+   这将允许片段作者基于相应的模型创建新片段。
 
-<!--
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
--->
+   * **fragmentreferenccomport** -允许片段作者通过选择多个片段来构建合成
 
-<!-- Check screenshot - might need update
+   <!-- Check screenshot - might need update -->
+   ![片段引用](assets/cfm-fragment-reference.png)
 
-   ![Fragment Reference](assets/cfm-fragment-reference.png)
--->
-
-<!--
 >[!NOTE]
->
->A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
->
->There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
--->
+已建立复发保护机制。 它禁止用户在片段引用中选择当前内容片段。 这可能导致一个空的片段引用选取器对话框。
+GraphQL中还对片段引用提供重复保护。 如果您在两个相互引用的内容片段之间创建深层查询，则它将返回null。
 
 ## 启用或禁用内容片段模型{#enabling-disabling-a-content-fragment-model}
 
@@ -366,6 +317,40 @@ In addition to standard properties you can define:
 * 相应的快速操作（将鼠标悬停在所需的模型上）。
 
 ![禁用启用的模型](assets/cfm-status-disable.png)
+
+## 允许资产文件夹{#allowing-content-fragment-models-assets-folder}上的内容片段模型
+
+要实施内容管理，您可以在“资产”文件夹上配置&#x200B;**策略**，以控制允许在该文件夹中创建片段的内容片段模型。
+
+>[!NOTE]
+该机制类似于在页面的高级属性中允许页面模板](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)及其子项。[
+
+为&#x200B;**允许的内容片段模型**&#x200B;配置&#x200B;**策略**:
+
+1. 导航并打开所需资产文件夹的&#x200B;**属性**。
+
+1. 打开&#x200B;**策略**&#x200B;选项卡，在该选项卡中可以配置：
+
+   * **继承自`<folder>`**
+
+      创建新子文件夹时，策略会自动继承；如果子文件夹需要允许与父文件夹不同的模型，则可以重新配置策略（继承中断）。
+
+   * **按照路径允许的内容片段模型**
+
+      可以允许多个型号。
+
+   * **允许的内容片段模型（按标记）**
+
+      可以允许多个型号。
+   ![内容片段模型策略](assets/cfm-model-policy-assets-folder.png)
+
+1. **保** 存任何更改。
+
+文件夹允许的内容片段模型解析如下：
+* **允许的内容片段模型**&#x200B;的&#x200B;**策略**。
+* 如果为空，则尝试使用继承规则确定策略。
+* 如果继承链未传递结果，则查看该文件夹的&#x200B;**Cloud Services**&#x200B;配置（也先直接，然后通过继承）。
+* 如果以上没有任何结果，则不允许使用该文件夹的模型。
 
 ## 删除内容片段模型{#deleting-a-content-fragment-model}
 
