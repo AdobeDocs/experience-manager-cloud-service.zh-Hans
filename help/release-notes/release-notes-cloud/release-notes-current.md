@@ -2,10 +2,10 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
+source-git-commit: 7ce352515b375d553cd00802204274c3c6774bb4
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 4%
+source-wordcount: '863'
+ht-degree: 3%
 
 ---
 
@@ -23,23 +23,38 @@ ht-degree: 4%
 
 * **[内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:添加使用HTTP API添加／更新和删除内容片段变体的功能。
 
+* **[内容片段投放的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:能够使用GraphQL语法查询内容片段，以及基于内容片段模型的模式，以JSON格式输出。
+
+* **[GraphQL API请求的身份验证支持](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:能够使用服务器端API的访问令牌验证GraphQL API请求。
+
+* GraphQL API的增强JSON输出，包括以JSON格式和区域设置输出富文本的能力。
+
+* 支持嵌套内容片段模型，以允许通过多行文本字段中内联的专用内容片段引用数据类型或内容片段引用创建嵌套内容片段结构。
+
+* 内容片段模型数据类型中提供的其他验证规则，包括“唯一”、“必需”和“可翻译”。
+
+* 能够标记内容片段模型，并允许在文件夹中按标记或路径创建包含策略的内容片段。
+
+* 内容片段编辑器中的可用性增强功能，包括发布操作和片段所基于的模型显示。
+
+* 能够直接在内容片段编辑器中预览JSON输出。
+
+
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* 现在，与[!DNL Adobe InDesign Server]集成可用于[!DNL Experience Manager]作为[!DNL Cloud Service]。 它提供使用[!DNL Adobe InDesign Server]脚本处理[!DNL Adobe InDesign]文件的自动化，并允许用户使用[!DNL Assets]模板用户界面创建小册子或广告。 [!DNL Experience Manager as a Cloud Service]仅支持由[!DNL Adobe Managed Services]托管的[!DNL InDesign Server]。 <!-- TBD: Add link to article. -->
+* [!DNL Experience Manager] as扩展 [!DNL Cloud Service] 了智能标记功能以支持在基于文本的资产中识别关键字和实体。文本将被识别、索引，并作为元数据提供，以改进搜索体验，而无需任何配置。 请参阅[智能标记](/help/assets/smart-tags.md)。
 
-* [!DNL Experience Manager] 该功能经过增强，可在使用已连接资产功能在远程部署中使用资产时 [!DNL Experience Manager Sites] 跟踪和显示资产引用。资产的[!UICONTROL 属性]页面中新增的[!UICONTROL 引用]选项卡现在会列表资产的本地和远程引用。 引用允许DAM用户跟踪[!DNL Sites]页面和[!DNL Assets]复合资产中的资产使用情况。 请参阅[配置和使用连接的资产](/help/assets/use-assets-across-connected-assets-instances.md)。
-
-* [!DNL Dynamic Media] 现在可通过基于图像 [!DNL Sites] 的核心组件访问这些功能。作者可以在创建网页时快速配置组件以使用图像预设、智能裁剪和图像修饰符。 请参阅[核心组件2.13.0版本](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)。
-
-* [!DNL Experience Manager] 桌面应用程序允许用户通过从Windows资源管理器或桌面应用程序界面上的Mac Finder拖动文件来上传文件和文件夹。请参阅[使用桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)添加资产。
+* 现在支持MXF文件格式。 请参阅[支持的文件格式](/help/assets/file-format-support.md#video-formats)。
 
 ## Adobe Experience Manager商务作为Cloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已发布CIF Venia参考站点- 2020.12.01，其中包括最新的CIF核心组件版本v1.6.0。有关更多详细信息，请参阅[CIF Venia参考站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)。
+* 产品体验管理：资产和体验片段的新“商务”属性选项卡。 通过此选项卡，您可以将产品/类别关联到资产和体验片段。 该选项卡还显示链接的产品/类别的实时数据，以及在产品控制台中显示详细信息的链接。
 
-* 已发布CIF核心组件v1.6.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0)。
+* 已发布CIF Venia参考站点- 2021.02.02，其中包括最新的CIF核心组件版本v1.7.0。有关更多详细信息，请参阅[CIF Venia参考站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02)。
+
+* 已发布CIF核心组件v1.7.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0)。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -68,6 +83,23 @@ AEM中Cloud Manager作为Cloud Service2021.1.0的发布日期为2021年1月14日
 ### 错误修复 {#crt-bug-fixes}
 
 * 对AEM Dispatcher Converter和Repository Modernizer工具执行了若干错误修复。 请参阅[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
+
+## AEM作为Cloud Service基础{#aem-as-a-cloud-service-foundation}
+
+### 新增功能 {#what-is-new-foundation}
+
+* 服务器对服务器的身份验证API调用——生成相应的访问令牌，在外部应用程序和AEM之间进行身份验证的服务器对服务器API调用，作为Cloud Service环境。 阅读[文档](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或查阅[教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)，了解更多信息。
+
+### SDK Build Analyzers {#sdk-build-analyzers}
+
+AEM作为Cloud ServiceSDK构建分析器主插件可检测主项目中的问题，包括缺少依赖项。 它为开发人员提供了在本地开发过程中发现问题的机会，而且很早之后，您就可以使用Cloud Manager部署到云环境。
+
+为此版本添加了两个新的分析器：
+
+* 重点分析仪
+* bundle-nativecode
+
+有关详细信息，请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)。
 
 ## 云过渡工具{#code-transition-tools}
 
