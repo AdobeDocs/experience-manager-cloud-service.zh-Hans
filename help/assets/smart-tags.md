@@ -1,29 +1,54 @@
 ---
-title: 使用AI生成的标记自动标记图像
-description: 使用人为智能服务标记图像，这些服务使用 [!DNL Adobe Sensei] 服务应用上下文和描述性业务标记。
+title: 使用AI生成的标记自动标记资源
+description: 使用人工智能服务标记资产，这些服务使用 [!DNL Adobe Sensei] 服务应用上下文和描述性业务标记。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2557'
 ht-degree: 6%
 
 ---
 
 
-# 培训智能内容服务并自动标记图像{#train-service-tag-assets}
+# 为资产添加智能标记以加快搜索速度{#smart-tag-assets-for-faster-search}
 
-处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 本质上，它包含一列表关键字，员工、合作伙伴和客户通常使用这些关键字来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保通过基于标记的搜索轻松识别和检索资产。
+处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 本质上，它包含一列表关键字，员工、合作伙伴和客户通常使用这些关键字来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保在搜索中轻松识别和检索资产。
 
 与自然语言词汇相比，基于业务分类的标签有助于使资产与公司的业务保持一致，并确保最相关的资产出现在搜索中。 例如，汽车制造商可以用型号名称标记汽车图像，以便在搜索时只显示相关图像以设计促销活动。
 
-在后台，Smart Tags使用[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)的人工智能框架，根据您的标签结构和业务分类训练其图像识别算法。 然后，此内容智能用于对另一组资产应用相关标记。
+在后台，Smart Tags使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架，根据您的标签结构和业务分类训练其图像识别算法。 然后，此内容智能用于对另一组资产应用相关标记。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-要使用智能标记，请完成以下任务:
+## 支持的资产类型{#smart-tags-supported-file-formats}
+
+智能标记仅应用于那些支持的文件类型，这些文件类型生成JPG和PNG格式的再现。 以下类型的资产支持该功能：
+
+| 图像（MIME类型） | 基于文本的资源（文件格式） | 视频资源（文件格式和编解码器） |
+|----|-----|------|
+| image/jpeg | TXT | MP4(H264/AVC) |
+| image/tiff | RTF | MKV(H264/AVC) |
+| image/png | DITA | MOV(H264/AVC, Motion JPEG) |
+| image/bmp | XML | AVI(indeo4) |
+| image/gif | JSON | FLV(H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV(WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] 默认情况下，自动将智能标记添加到基于文本的资产和视频中。要自动向图像添加智能标记，请完成以下任务。
 
 * [ [!DNL Adobe Experience Manager] 使用 Adobe 开发人员控制台进行集成](#integrate-aem-with-aio).
 * [了解标签模型和准则](#understand-tag-models-guidelines)。
@@ -31,7 +56,9 @@ ht-degree: 6%
 * [标记您的数字资产](#tag-assets)。
 * [管理标记和搜索](#manage-smart-tags-and-searches)。
 
-智能标记仅适用于[!DNL Adobe Experience Manager Assets]客户。 智能标记可作为[!DNL Experience Manager]的附加组件购买。
+>[!TIP]
+>
+>智能标记仅适用于[!DNL Adobe Experience Manager Assets]客户。 智能标记可作为[!DNL Experience Manager]的附加组件购买。
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ ht-degree: 6%
    * 一种标签模型，包括2019年和2020年发布的车型。
    * 包含相同少数车型的多个标签型号。
 
-**用于培训的图像**:您可以使用相同的图像训练不同的标签模型。但是，不会将图像与标签模型中的多个标签相关联。 因此，可以用属于不同标签模型的不同标签标记同一图像。
+**用于培训的图像**:您可以使用相同的图像训练不同的标签模型。但是，请勿将图像与标记模型中的多个标记相关联。 可以使用属于不同标签模型的不同标签标记同一图像。
 
 您无法撤消培训。 以上准则应帮助您选择要培训的优质图像。
 
@@ -158,11 +185,13 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->在随后的标记周期中，只有修改后的资产会再次使用经过新培训的标记进行标记。但是，如果标记工作流的上一个标记周期与当前标记周期之间的间隔超过24小时，即使资产未更改也会进行标记。 对于定期标记工作流，当时间间隔超过6个月时，将标记未更改的资产。
+>在随后的标记周期中，只有经过修改的资产会再次使用经过新培训的标记进行标记。 但是，如果标记工作流的上一个标记周期与当前标记周期之间的间隔超过24小时，则即使是未更改的资产也会被标记。 对于定期标记工作流，当时间间隔超过6个月时，将标记未更改的资产。
 
 ### 标记已上传的资产{#tag-uploaded-assets}
 
 Experience Manager可以自动标记用户上传到DAM的资产。 为此，管理员配置工作流，以向智能标记资产添加可用步骤。 请参阅[如何为上传的资产启用智能标记](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## 管理智能标记和资产搜索{#manage-smart-tags-and-searches}
 
@@ -190,7 +219,7 @@ Experience Manager可以自动标记用户上传到DAM的资产。 为此，管�
 
 ### 使用智能标记{#understandsearch}了解AEM搜索结果
 
-默认情况下，AEM search将搜索词与`AND`子句组合。 使用智能标记不会更改此默认行为。 使用智能标记可添加额外的`OR`子句，以查找应用智能标记中的任何搜索词。 例如，考虑搜索`woman running`。 默认情况下，元数据中仅包含`woman`或`running`关键字的资产不会显示在搜索结果中。 但是，使用智能标记标记的资产会显示在此类搜索查询中。 `woman``running`搜索结果是，
+默认情况下，AEM search将搜索词与`AND`子句组合。 使用智能标记不会更改此默认行为。 使用智能标记可添加额外的`OR`子句，以在应用的智能标记中查找任何搜索词。 例如，考虑搜索`woman running`。 默认情况下，元数据中仅包含`woman`或`running`关键字的资产不会显示在搜索结果中。 但是，使用智能标记标记的资产会显示在此类搜索查询中。 `woman``running`搜索结果是，
 
 * 元数据中具有`woman`和`running`关键字的资产。
 
@@ -209,6 +238,8 @@ Experience Manager可以自动标记用户上传到DAM的资产。 为此，管�
 * 无法识别图像中的细微差异。 比如，修身与普通衬衫。
 * 无法根据图像的微小图案／部分识别标记。 例如，T恤上的徽标。
 * Experience Manager支持的语言支持标记。 有关语言列表，请参阅[智能内容服务发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 要使用智能标记（常规或增强）搜索资产，请使用资产搜索（全文搜索）。 智能标记没有单独的搜索谓词。
 
