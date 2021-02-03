@@ -2,21 +2,15 @@
 title: 使用内容片段
 description: 了解作为Cloud Service的Adobe Experience Manager(AEM)的内容片段如何允许您设计、创建、策划和使用独立于页面的内容。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2027'
 ht-degree: 6%
 
 ---
 
 
 # 使用内容片段{#working-with-content-fragments}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments投放可应请求提供。
->
->请联系[Adobe支持](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)，为AEM启用API作为Cloud Service项目。
 
 以Adobe Experience Manager(AEM)为Cloud Service，内容片段允许您设计、创建、管理和[发布与页面无关的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它们允许您准备内容，准备好在多个位置／多个渠道使用。
 
@@ -30,12 +24,9 @@ ht-degree: 6%
    * 复杂
       * 多种数据类型不同的字段的组合，包括文本、数字、布尔值、数据和时间等。
       * 可用于准备更多结构化内容以进行页面创作，或用于投放应用程序。
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * 嵌套
+      * 可用的引用数据类型允许您嵌套您的内容。
+      * 通常用于投放应用程序。
 
 使用AEM核心组件的Sling Model(JSON)导出功能，内容片段也可以以JSON格式交付。 这种投放:
 
@@ -78,10 +69,7 @@ ht-degree: 6%
 * 为各种渠道构建内容池。
 * 为特定渠道设计内容变体。
 * 通过插入资产（混合媒体片段）将图像添加到文本。
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* 创建嵌套内容以反映数据的复杂性。
 
 然后，可以组合这些内容片段，以便在各种渠道上提供体验。
 
@@ -121,11 +109,9 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 >
 >AEM还支持片段内容的翻译。
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM还支持片段内容的翻译。 有关详细信息，请参阅[转换资产](/help/assets/translate-assets.md)。
 
 ## 内容类型 {#content-type}
 
@@ -306,6 +292,12 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 ### WKND示例{#wknd-sample}
 
-提供[WKND站点](/help/implementing/developing/introduction/develop-wknd-tutorial.md)示例，帮助您了解AEM作为Cloud Service。 它包括示例片段，可在以下位置查看：
+提供[WKND站点](/help/implementing/developing/introduction/develop-wknd-tutorial.md)示例，帮助您了解AEM作为Cloud Service。
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+WKND项目包括：
+
+* 内容片段模型可在以下位置获得：
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* 内容片段（和其他内容）可在以下位置获得：
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
