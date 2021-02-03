@@ -2,10 +2,10 @@
 title: 变量 - 创作片段内容
 description: 变量允许您为片段创作内容，然后根据用途创建该内容的变量（如果需要）。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 19%
+source-wordcount: '2186'
+ht-degree: 16%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 19%
 
 * [输入片](#authoring-your-content) 段的内容，
 * [创建和管](#managing-variations) 理主内容 **** 的各种
-* 查看用于创建片段的[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)的名称；显示在顶部工具栏的片段名称下。
 
 根据正在编辑的数据类型执行一系列其他操作；例如：
 
@@ -54,11 +53,9 @@ ht-degree: 19%
    * 查看更多编辑选项（对于[富文本](#rich-text)格式）
    * 访问[操作](#actions)的范围
 
-<!--
-For example:
+例如：
 
-![full screen editor](assets/cfm-variations-02.png)
--->
+![全屏编辑器](assets/cfm-variations-02.png)
 
 ### 全屏编辑器{#full-screen-editor}
 
@@ -66,11 +63,9 @@ For example:
 
 ![全屏编辑器图标](assets/cfm-variations-03.png)
 
-<!--
-This will open the full screen text editor:
+这将打开全屏文本编辑器：
 
-![full screen editor icon](assets/cfm-variations-fullscreentexteditor.png)
--->
+![全屏编辑器](assets/cfm-variations-fullscreentexteditor.png)
 
 全屏文本编辑器提供：
 
@@ -122,10 +117,7 @@ This will open the full screen text editor:
    * 查找/替换
    * 拼写检查器
    * [注释](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-
-<!--
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment)
--->
+* [插入内容片段](#inserting-content-fragment-into-your-fragment);当多行文 **本字段** 配置了允许片段 **引用时可用**。
 
 也可以从全屏编辑器访问[操作](#actions)。
 
@@ -161,35 +153,33 @@ This will open the full screen text editor:
 >
 >如果在&#x200B;**富文本**&#x200B;和&#x200B;**标记**&#x200B;之间切换，您可能会在“引述块”和“代码块”中遇到意料之外的体验效果，因为这两种格式在处理方式上可能有所不同。
 
-<!--
-### Fragment References {#fragment-references}
+### 片段引用{#fragment-references}
 
-If the Content Fragment Model contains Fragment References, your fragment authors may have additional options:
+如果内容片段模型包含片段引用，则片段作者可能还有其他选项：
 
-* [Edit Content Fragment](#fragment-references-edit-content-fragment)
-* [New Content Fragment](#fragment-references-new-content-fragment)
+* [编辑内容片段](#fragment-references-edit-content-fragment)
+* [新内容片段](#fragment-references-new-content-fragment)
 
-![Fragment References](assets/cfm-variations-12.png)
+![片段引用](assets/cfm-variations-12.png)
 
-#### Edit Content Fragment {#fragment-references-edit-content-fragment}
+#### 编辑内容片段{#fragment-references-edit-content-fragment}
 
-The option **Edit Content Fragment** will open
-a new browser tab, with the content fragment open in the content fragment editor.
+将打开选项&#x200B;**编辑内容片段**
+新的浏览器选项卡，内容片段在内容片段编辑器中打开。
 
-#### New Content Fragment {#fragment-references-new-content-fragment}
+#### 新内容片段 {#fragment-references-new-content-fragment}
 
-The option **New Content Fragment** will allow you to create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
+选项&#x200B;**新内容片段**&#x200B;将允许您创建一个全新的片段。 为此，将在编辑器中打开创建内容片段向导的变体。
 
-You will then be able to create a new fragment by:
+然后，您将能够通过以下方式创建新片段：
 
-1. Navigating to, and selecting the required folder.
-1. Selecting **Next**.
-1. Specifying properties; for example **Title**.
-1. Selecting **Create**.
-1. Finally:
-   1. **Done** will return (to the original fragment) and reference the new fragment.
-   1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
--->
+1. 导航到所需的文件夹，然后选择所需的文件夹。
+1. 选择&#x200B;**下一步**。
+1. 指定属性；例如&#x200B;**标题**。
+1. 选择&#x200B;**创建**。
+1. 最后：
+   1. **Donew** 将返回（到原始片段）并引用新片段。
+   1. **Open** 将引用新片段，并在新的浏览器选项卡中打开新片段进行编辑。
 
 ### 查看密钥统计{#viewing-key-statistics}
 
@@ -245,23 +235,25 @@ You will then be able to create a new fragment by:
 
 1. 选择&#x200B;**摘要**&#x200B;以确认更改。
 
-<!--
-1. The original text is displayed side-by-side with the proposed summarization:
+1. 原始文本与建议的摘要并排显示：
 
-    * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click on any highlighted sentence to keep it in the summarized content.
-    * Click on any non-highlighted sentence to have it eliminated.
+   * 任何要删除的句子都以红色突出显示，并带有删除。
+   * 单击任何高亮显示的句子，将其保留在摘要内容中。
+   * 单击任何未加亮显示的句子以将其删除。
 
-   ![summarization comparison](assets/cfm-variations-06.png)
--->
+   ![总结比较](assets/cfm-variations-06.png)
 
 ### 对内容片段{#annotating-a-content-fragment}添加注释
 
 要对片段添加注释：
 
 1. 选择&#x200B;**主控**&#x200B;或所需的变量。
+
 1. 打开全屏编辑器。
+
 1. 顶部工具栏中提供&#x200B;**注释**&#x200B;图标。 您可以根据需要选择一些文本。
+
+   ![注释](assets/cfm-variations-07.png)
 
 1. 此时将打开一个对话框。您可以在此处输入您的注释。
 
@@ -279,18 +271,9 @@ You will then be able to create a new fragment by:
 
 1. 选择&#x200B;**保存**。
 
-<!--
-1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
+1. 关闭全屏编辑器后，批注仍会高亮显示。 如果选中，将打开一个对话框，以便您能够进一步编辑注释。
 
-   ![annotate](assets/cfm-variations-07.png)
--->
-
-<!--
-1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
-
-   ![annotate](assets/cfm-variations-07c.png)
-
--->
+   ![注释](assets/cfm-variations-07c.png)
 
 ### 查看、编辑和删除注释{#viewing-editing-deleting-annotations}
 
@@ -305,13 +288,9 @@ You will then be able to create a new fragment by:
 
 * 通过选择片段编辑器中的&#x200B;**注释**&#x200B;选项卡，可以列出和删除。
 
+   ![批注](assets/cfm-variations-08.png)
+
 * 可在[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中查看和删除所选片段。
-
-<!--
-* Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
-
-  ![annotations](assets/cfm-variations-08.png)
--->
 
 ### 将资产插入片段{#inserting-assets-into-your-fragment}
 
@@ -346,47 +325,41 @@ You will then be able to create a new fragment by:
    * **标记**：资产将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
 
 
-<!--
-### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
+### 将内容片段插入片段{#inserting-content-fragment-into-your-fragment}
 
-To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
+为了简化内容片段的创作过程，您还可以向片段添加其他内容片段。
 
-They will be added as a reference, in your current location in your fragment.
--->
-
-<!--
->[!CAUTION]
->
->These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
->
->However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+它们将作为引用添加到片段的当前位置。
 
 >[!NOTE]
->
->There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
--->
+当&#x200B;**多行文本**&#x200B;配置为&#x200B;**允许片段引用**&#x200B;时，此选项可用。
 
-<!--
-1. Position the cursor at the position you want to add the fragment.
-1. Use the **Insert Content Fragment** icon to open the search dialog.
+>[!CAUTION]
+不能在引用页面上移动或删除这些资产，这必须在片段编辑器中完成。
+但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中完成资产的格式设置（如大小）。 资产在片段编辑器中的表示形式仅用于创作内容流。
 
-   ![insert Content Fragment icon](assets/cfm-variations-13.png)
+>[!NOTE]
+有多种方法可将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和／或页面。
 
-1. In the dialog you can either:
+1. 将光标放在要添加片段的位置。
+1. 使用&#x200B;**插入内容片段**&#x200B;图标打开搜索对话框。
 
-    * navigate to the required fragment in the Assets folder
-    * search for the fragment
+   ![插入内容片段图标](assets/cfm-variations-13.png)
 
-   Once located, select the required fragment by clicking on the thumbnail.
+1. 在对话框中，您可以：
 
-1. Use **Select** to add a reference to the selected Content Fragment to your current content fragment (at the current location).
+   * 导航到“资产”文件夹中所需的片段
+   * 搜索片段
+
+   找到后，单击缩略图以选择所需的片段。
+
+1. 使用&#x200B;**选择**&#x200B;将对所选内容片段的引用添加到您的当前内容片段（在当前位置）。
 
    >[!CAUTION]
-   >
-   >If, after adding an reference to another fragment, you change format to:
-   >* **Plain Text**: the reference will be completely lost from the fragment.
-   >* **Markdown**: the reference will remain.
--->
+   如果在添加对另一个片段的引用后，将格式更改为：
+   * **纯文本**:引用将从片段中完全丢失。
+   * **Markdown**:引用将保留。
+
 
 ## 管理变量{#managing-variations}
 
@@ -455,9 +428,12 @@ They will be added as a reference, in your current location in your fragment.
 不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 
 1. 在片段编辑器中打开您的内容片段。 确保已编辑&#x200B;**主控**。
+
 1. 从以下任一位置选择特定变体，然后选择相应的同步操作：
 
    * **操作**&#x200B;下拉选择器- **将当前元素与主控**&#x200B;同步
+
+      ![与主控同步](assets/cfm-variations-11a.png)
 
    * 全屏编辑器的工具栏- **与主控**&#x200B;同步
 
@@ -472,26 +448,3 @@ They will be added as a reference, in your current location in your fragment.
    ![与主控同步](assets/cfm-variations-11c.png)
 
 1. 选择&#x200B;**同步**，变体将更新并显示。
-
-<!--
-1. Select a specific variation, then the appropriate synchronization action from either:
-
-   * the **Actions** drop down selector - **Sync current element with master**
-
-      ![synchronizing with master](assets/cfm-variations-11a.png)
-
-   * the toolbar of the full-screen editor - **Sync with master**
-
-      ![synchronizing with master](assets/cfm-variations-11b.png)
-
-1. Master and the variation will be shown side-by-side:
-
-   * green indicates content added (to the variation)
-   * red indicates content removed (from the variation)
-   * blue indicates replaced text
-
-   ![synchronizing with master](assets/cfm-variations-11c.png)
-
-1. Select **Synchronize**, the variation will updated and shown.
-
--->
