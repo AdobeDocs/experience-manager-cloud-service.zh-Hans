@@ -2,10 +2,10 @@
 title: AEM Sites作为Cloud Service的无头发展
 description: 借助内容模型、内容片段和GraphQL API等强大功能，AEM作为Cloud Service，您可以集中管理体验并跨渠道提供这些体验。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 3%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
@@ -21,6 +21,14 @@ ht-degree: 3%
 无头实施与完全堆栈和混合解决方案中的传统方式一样，用于页面和组件管理，并侧重于创建渠道中性、可重用的内容片段及其跨渠道投放。 它是用于实现Web体验的现代、动态的开发模式。
 
 ![AEM实施模型](assets/aem-implementation-models.png)
+
+## 比较头部和无头部{#headful-headless}
+
+本文档重点介绍AEM的完全无头实施模型。 然而，在AEM中，头脑强大与头脑无需成为二元选择。 无头功能可用于管理内容并将内容交付到各种端点，同时使内容作者能够编辑单页应用程序。 都在AEM。
+
+>[!TIP]
+>
+>有关详细信息，请参阅AEM](/help/implementing/developing/headful-headless.md)中的文档[头和头。
 
 ## AEM作为Cloud Service和无头{#aem-headless}
 
