@@ -5,10 +5,10 @@ user-guide-title: 在 AEM as a Cloud Service 中创作内容
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 91%
+source-wordcount: '241'
+ht-degree: 90%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 91%
       + [组件控制台](authoring/features/components-console.md)
       + [响应式布局](authoring/features/responsive-layout.md)
       + [使用标记](authoring/features/tags.md)
+      + [启用渐进式Web应用程序功能](authoring/features/enable-pwa.md)
    + 项目 {#projects}
       + [使用项目](authoring/projects/overview.md)
       + [管理项目](authoring/projects/managing.md)
