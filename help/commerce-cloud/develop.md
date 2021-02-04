@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 6be2ed60f4e672b99a85b55f833b8ae2f1b952b0
+source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '967'
 ht-degree: 8%
 
 ---
@@ -83,9 +83,9 @@ CIF加载项可从[软件分发门户](https://experience.adobe.com/#/downloads/
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   此变量也必须设置为AEM的Cloud Service环境。
+   AEM使用此变量连接到您的商务系统。 此外，CIF加载项包含本地反向代理，使MagentoGraphQL端点在本地可用。 CIF创作工具（产品控制台和选择器）和执行直接GraphQL调用的CIF客户端组件都使用它。
 
-   有关变量的详细信息，请参阅[将AEM的OSGi配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
+   此变量也必须设置为AEM的Cloud Service环境。 有关变量的详细信息，请参阅[将AEM的OSGi配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. （可选）要启用分阶段目录功能，您需要为Magento实例创建集成令牌。 请按照[入门](./getting-started.md#staging)中的步骤创建令牌。
 
@@ -98,35 +98,6 @@ CIF加载项可从[软件分发门户](https://experience.adobe.com/#/downloads/
    有关机密的详细信息，请参阅[将AEM的OSGi配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. 开始AEM作为Cloud ServiceSDK
-
-1. 开始本地GraphQL代理服务器
-
-   要使MagentoGraphQL端点在本地可用于CIF加载项和CIF组件，请使用以下命令。 GraphQL端点随后将在`http://localhost:3002/graphql`上可用。
-Mac OSX示例：
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
-   ```
-
-   示例Windows:
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
-   ```
-
-   参数`--proxyPartial`需要接收空字符串。
-
-   可以通过将GraphQL查询工具指向`http://localhost:3002/graphql`并测试几个查询来测试本地GraphQL代理。
-
-1. 登录AEM SDK并配置CIF以使用本地GraphQL代理服务器。
-
-   导航到CIFCloud Service配置(“工具”>“Cloud Services”>“CIF配置”)。 打开项目所使用的配置的属性视图符。
-
-   对于`GraphQL Proxy Path`属性，请使用本地代理服务器端点`http://localhost:3002/graphql`。 保存配置。
-
->[!NOTE]
->
->请勿将步骤8的配置推入项目回购。 仅本地开发设置需要此配置。 AEM作为Cloud Service环境已在入门过程中使用GraphQL代理设置。
 
 通过OSGI控制台验证设置： `http://localhost:4502/system/console/osgi-installer`。 列表应包括特征模型文件中定义的CIF附加捆绑包、内容包和OSGI配置。
 
