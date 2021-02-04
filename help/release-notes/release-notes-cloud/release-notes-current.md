@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 4%
 
 ---
@@ -21,9 +21,13 @@ ht-degree: 4%
 
 ## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
 
+### 无头内容管理 {#headless}
+
 * **[内容片段投放的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:能够使用GraphQL语法查询内容片段，以及基于内容片段模型的模式，以JSON格式输出。
 
 * **[GraphQL API请求的身份验证支持](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:能够使用服务器端API的访问令牌验证GraphQL API请求。
+
+* [RemotePage组件](/help/implementing/developing/hybrid/remote-page.md) 支持使用AEM查看和编辑外部SPA。
 
 * GraphQL API的增强JSON输出，包括以JSON格式和区域设置输出富文本的能力。
 
@@ -37,6 +41,9 @@ ht-degree: 4%
 
 * 能够直接在内容片段编辑器中预览JSON输出。
 
+### 渐进式Web应用程序(PWA){#pwa}
+
+* [现在，可通过简单配置在项目](/help/sites-cloud/authoring/features/enable-pwa.md)  级别启用站点的渐进式Web应用程序(PWA)版本。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
