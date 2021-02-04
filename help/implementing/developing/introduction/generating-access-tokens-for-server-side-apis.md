@@ -2,9 +2,9 @@
 title: 为服务器端API生成访问令牌
 description: 了解如何通过生成安全的JWT令牌，将第三方服务器与AEM作为Cloud Service进行通信
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 简介 {#introduction}
 
->[!IMPORTANT]
->
->此功能尚不可用。 有关最新功能列表，请参阅[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
-
 某些体系结构依赖于从托管在AEM基础架构外的服务器上的应用程序发出调用作为Cloud Service调用AEM。 例如，调用服务器的移动应用程序，然后作为Cloud Service向AEM发出API请求。
 
 服务器到服务器的流程如下所述，还有简化的开发流程。 AEM作为Cloud Service[开发者控制台](development-guidelines.md#crxde-lite-and-developer-console)用于生成身份验证过程所需的令牌。
+
+>[!NOTE]
+>
+>除了本文档之外，您还可以参阅教程中关于将AEM作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)进行基于令牌的身份验证的教程。[
 
 ## 服务器到服务器流{#the-server-to-server-flow}
 
