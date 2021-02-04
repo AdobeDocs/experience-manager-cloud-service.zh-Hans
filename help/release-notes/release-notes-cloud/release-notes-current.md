@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
+source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '745'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,9 @@ ht-degree: 4%
 
 * **[GraphQL API请求的身份验证支持](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:能够使用服务器端API的访问令牌验证GraphQL API请求。
 
-* [RemotePage组件](/help/implementing/developing/hybrid/remote-page.md) 支持使用AEM查看和编辑外部SPA。
+* **[RemotePage组件](/help/implementing/developing/hybrid/remote-page.md)**:增加了使用AEM查看和编辑外部SPA的支持。
+
+* **[在AEM中编辑外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)**:添加了将独立的单页应用程序上传到AEM实例、添加内容的可编辑部分以及启用创作的功能。
 
 * GraphQL API的增强JSON输出，包括以JSON格式和区域设置输出富文本的能力。
 
