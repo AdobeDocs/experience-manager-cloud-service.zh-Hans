@@ -3,9 +3,9 @@ title: 使用AI生成的标记自动标记资源
 description: 使用人工智能服务标记资产，这些服务使用 [!DNL Adobe Sensei] 服务应用上下文和描述性业务标记。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 * **图像**:使用Adobe Sensei的智能内容服务标记多种格式的图像。您[创建培训模型](#train-model)，然后[将智能标记](#tag-assets)应用到图像。
 * **视频资产**:默认情况下，视频标记 [!DNL Adobe Experience Manager] 为启用 [!DNL Cloud Service]。[在您上传新视频或](/help/assets/smart-tags-video-assets.md) 重新处理现有视频时，视频会自动进行标记。
-* **基于文本的资产**: [!DNL Experience Manager Assets] 上传时，自动标记支持的基于文本的资产。
+* **基于文本的资产**: [!DNL Experience Manager Assets] 上传时，自动标记支持的基于文本的资产。了解有关[基于文本的资产智能标记的更多信息](#smart-tag-text-based-assets)。
 
 ## 支持的资产类型{#smart-tags-supported-file-formats}
 
