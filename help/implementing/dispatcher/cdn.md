@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
+source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -18,14 +18,14 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 
 ## AEM Managed CDN {#aem-managed-cdn}
 
-请按照以下部分使用Cloud Manager自助UI，使用Adobe现成的CDN准备内容投放:
+请按照以下部分，使用Cloud Manager自助UI，通过AEM现成的CDN准备内容投放:
 
 1. [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **限制流量**
 
-默认情况下，对于Adobe管理的CDN设置，所有公共流量都可用于生产和非生产（开发和阶段）环境的发布服务。 如果您希望限制特定环境发布服务的流量（例如，按IP地址范围限制暂存），则可以通过云管理器UI以自助方式执行此操作。
+默认情况下，对于AEM托管的CDN设置，所有公共流量都可用于生产和非生产（开发和阶段）环境的发布服务。 如果您希望限制特定环境发布服务的流量（例如，按IP地址范围限制暂存），则可以通过云管理器UI以自助方式执行此操作。
 
 请参阅[管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)以了解更多信息。
 
@@ -35,7 +35,7 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 
 ## 客户CDN指向AEM Managed CDN {#point-to-point-CDN}
 
-如果客户必须使用其现有CDN，则可以管理它并将其指向Adobe的托管CDN，只要满足以下条件：
+如果客户必须使用其现有CDN，他们可以管理它并将其指向AEM托管CDN，只要满足以下条件：
 
 * 客户必须拥有一个需要更换的现有CDN。
 * 客户必须管理它。
@@ -46,19 +46,19 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 配置说明：
 
 1. 使用域名设置`X-Forwarded-Host`头。
-1. 将主机头与来源域(即Adobe的CDN入口)一起设置。 值应来自Adobe。
+1. 在来源域(即AEM CDN的入口)中设置主机头。 值应来自Adobe。
 1. 将SNI头发送到来源。 与主机头一样， sni头必须是来源域。
 1. 设置`X-Edge-Key` ，它是将流量正确路由到AEM服务器所需的。 值应来自Adobe。
 
 在接受实时流量之前，您应向Adobe客户支持确认端对端流量路由是否正常运行。
 
-由于额外的跳数，可能会对性能造成很小的影响，但从客户CDN到Adobe托管CDN的跳数可能会很高效。
+由于额外的跳数，性能可能会受到较小的影响，但从客户CDN到AEM托管CDN的跳数可能会很高效。
 
 请注意，发布层支持此客户CDN配置，但创作层不支持此客户CDN配置。
 
 ## 地理位置标头{#geo-headers}
 
-Adobe管理的CDN将通过以下方式向每个请求添加头：
+AEM托管CDN将通过以下方式向每个请求添加头：
 
 * 国家／地区代码：`x-aem-client-country`
 * 大陆代码：`x-aem-client-continent`
