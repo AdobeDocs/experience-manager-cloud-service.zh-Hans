@@ -3,9 +3,9 @@ title: 支持的文件格式和MIME类型
 description: ' [!DNL Experience Manager Assets] 作为 [!DNL Cloud Service]支持的文件格式和MIME类型。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '818'
 ht-degree: 34%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 34%
 * 常见[文档格式](#document-formats)，包括Microsoft Office和Open文档格式。
 * 各种[视频](#video-formats)和[音频](#audio-formats)格式.
 
-下图说明了支持级别。
+以下图例描述了每种格式的支持级别。
 
 | 支持级别 | 描述 |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ ht-degree: 34%
 >[!MORELIKETHIS]
 >
 >* [使用资产微服务进行资产处理](asset-microservices-overview.md)
+>* [支持用于智能标记基于文本的资产的文件格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
