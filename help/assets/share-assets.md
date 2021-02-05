@@ -3,9 +3,9 @@ title: 将资产、文件夹和收藏集共享为链接
 description: 本文描述如何将 [!DNL Experience Manager Assets] 中的资产、文件夹和收藏集共享为超链接。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >* 您需要对要作为链接共享的文件夹或资产具有编辑ACL权限。
->* 在与用户共享链接之前，请确保已配置Day CQ邮件服务。 否则，将发生错误。
+>* 在与用户共享链接之前，请确保[已启用出站电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。 否则，将发生错误。
 
 
 1. 在[!DNL Assets]用户界面中，选择要作为链接共享的资产。
@@ -115,7 +115,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 * **Experience Manager桌面应用程序**:该应用程序在Windows和Mac上工作。请参阅[桌面应用程序概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资产，请参阅[浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其共享回AEM用户对应的资产，例如，通过上传新图像。 请参阅[使用桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)上传资产。
 
-* **Adobe资产链接**:创意专业人士可以直接从内部、内部 [!DNL Adobe InDesign]和内 [!DNL Adobe Illustrator]部搜索和使用 [!DNL Adobe Photoshop]资源。
+* **Adobe资产链接**:创意专业人士可以直接在、和中搜索 [!DNL Adobe InDesign]和使 [!DNL Adobe Illustrator]用资源 [!DNL Adobe Photoshop]。
 
 ## 配置资产共享 {#configure-sharing}
 
