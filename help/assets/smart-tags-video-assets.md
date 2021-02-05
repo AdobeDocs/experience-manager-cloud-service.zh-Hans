@@ -2,9 +2,9 @@
 title: 智能标记视频资源
 description: Experience Manager使用 [!DNL Adobe Sensei]自动向视频添加上下文和描述性智能标记。
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 对新内容的不断需求要求减少手动工作，以快速提供引人入胜的数字体验。 [!DNL Adobe Experience Manager] 支持 [!DNL Cloud Service] 使用人工智能自动标记视频资产。手动标记视频会非常耗时。 但是，以[!DNL Adobe Sensei]为后盾的视频智能标记功能使用人工智能模型来分析视频内容并向视频资产中添加标记。 从而缩短DAM用户向客户提供丰富体验的时间。 Adobe的机器学习服务为一个视频生成两组标签。 而一个集合则对应该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等动作有关。
 
-在上传视频或触发重新处理后，视频资产的自动标签会作为标准资产处理(以及缩略图创建和元数据提取)进行。 智能标记按资产[!UICONTROL 属性]中[置信度得分](#confidence-score-video-tag)的降序显示。 默认情况下，在[!DNL Adobe Experience Manager]中，视频标记为[!DNL Cloud Service]。 但是，您可以在文件夹上选择[退出视频智能标记](#opt-out-video-smart-tagging)。
+默认情况下，在[!DNL Adobe Experience Manager]中，视频标记为[!DNL Cloud Service]。 但是，您可以在文件夹上选择[退出视频智能标记](#opt-out-video-smart-tagging)。 在您上传新视频或重新处理现有视频时，视频会自动添加标签。 [!DNL Experience Manager] 同时创建缩略图并提取视频文件的元数据。智能标记按资产[!UICONTROL 属性]中[置信度得分](#confidence-score-video-tag)的降序显示。
 
 ## 上传时智能标记视频{#smart-tag-assets-on-ingestion}
 
