@@ -3,15 +3,15 @@ title: 使用AI生成的标记自动标记资源
 description: 使用人工智能服务标记资产，这些服务使用 [!DNL Adobe Sensei] 服务应用上下文和描述性业务标记。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2799'
 ht-degree: 6%
 
 ---
 
 
-# 为资产添加智能标记以加快搜索速度{#smart-tag-assets-for-faster-search}
+# 为资产添加智能标记以改善搜索体验{#smart-tag-assets-for-faster-search}
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 本质上，它包含一列表关键字，员工、合作伙伴和客户通常使用这些关键字来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保在搜索中轻松识别和检索资产。
 
@@ -23,25 +23,31 @@ ht-degree: 6%
 ![flowchart](assets/flowchart.gif) 
 -->
 
+您可以标记以下类型的资产：
+
+* **图像**:使用Adobe Sensei的智能内容服务标记多种格式的图像。您[创建培训模型](#train-model)，然后[将智能标记](#tag-assets)应用到图像。
+* **视频资产**:默认情况下，视频标记 [!DNL Adobe Experience Manager] 为启用 [!DNL Cloud Service]。[在您上传新视频或](/help/assets/smart-tags-video-assets.md) 重新处理现有视频时，视频会自动进行标记。
+* **基于文本的资产**: [!DNL Experience Manager Assets] 上传时，自动标记支持的基于文本的资产。
+
 ## 支持的资产类型{#smart-tags-supported-file-formats}
 
-智能标记仅应用于那些支持的文件类型，这些文件类型生成JPG和PNG格式的再现。 以下类型的资产支持该功能：
+智能标记将应用于支持的文件类型，这些文件类型生成JPG和PNG格式的再现。 以下类型的资产支持该功能：
 
 | 图像（MIME类型） | 基于文本的资源（文件格式） | 视频资源（文件格式和编解码器） |
 |----|-----|------|
-| image/jpeg | TXT | MP4(H264/AVC) |
-| image/tiff | RTF | MKV(H264/AVC) |
-| image/png | DITA | MOV(H264/AVC, Motion JPEG) |
-| image/bmp | XML | AVI(indeo4) |
+| image/jpeg | CSV | MP4(H264/AVC) |
+| image/tiff | DOC | MKV(H264/AVC) |
+| image/png | DOCX | MOV(H264/AVC, Motion JPEG) |
+| image/bmp | HTML | AVI(indeo4) |
 | image/gif | JSON | FLV(H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV(WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| image/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV(WMV2) |
+| image/x-portable-anymap | PPT |  |
+| image/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ ht-degree: 6%
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## 基于文本的资产的智能标记{#smart-tag-text-based-assets}
+
+上传时，支持的基于文本的资产会由[!DNL Experience Manager Assets]自动标记。 默认情况下为启用状态。 智能标记的效果不取决于资产中的文本数量，而取决于资产文本中显示的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但是最能描述资产的关键字。 对于受支持的资产，[!DNL Experience Manager]已提取文本，然后对其进行索引并用于搜索资产。 但是，基于文本中关键字的智能标记提供专用的、结构化的和更高优先级的搜索彩块，与完整搜索索引相比，该彩块用于改进资产发现。
+
+相比之下，对于图像和视频，智能标记是基于某些视觉方面派生的。
+
 ## 将[!DNL Experience Manager]与Adobe开发者控制台{#integrate-aem-with-aio}集成
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ ht-degree: 6%
 
 ## 了解标签型号和准则{#understand-tag-models-guidelines}
 
-标记模型是一组相关标记，这些标记通过图像的视觉方面进行。 例如，鞋类集合可以有不同的标签，但所有标签都与鞋类相关，并且可以属于同一标签模型。 标签只能与图像的不同视觉方面相关。 要了解[!DNL Experience Manager]中培训模型的内容表示形式，请将培训模型可视化为由一组手动添加的标记和每个标记的示例图像组成的顶级实体。 每个标记都可以专门应用于图像。
-
-无法实际处理的标记与以下内容相关：
-
-* 非可视、抽象的方面，如产品的发布年份或季节、由图像引起的情绪或情绪。
-* 产品（如衬衫和衬衫，无领子或小产品徽标嵌入产品）中的细微视觉差异。
+标签模型是一组相关标签，它们与被标记的图像的各种视觉方面相关联。 标签与图像的明显不同的视觉方面相关，以便应用标签时有助于搜索特定类型的图像。 例如，鞋类集合可以有不同的标签，但所有标签都与鞋类相关，并且可以属于同一标签模型。 应用这些标记后，可帮助查找不同类型的鞋，例如按颜色、设计或使用。 要了解[!DNL Experience Manager]中培训模型的内容表示形式，请将培训模型可视化为由一组手动添加的标记和每个标记的示例图像组成的顶级实体。 每个标记都可以专门应用于图像。
 
 在创建标记模型并培训服务之前，请确定一组唯一的标记，这些标记最能描述业务环境中图像中的对象。 确保您所选集合中的资产符合[培训准则](#training-guidelines)。
 
@@ -189,9 +196,7 @@ ht-degree: 6%
 
 ### 标记已上传的资产{#tag-uploaded-assets}
 
-Experience Manager可以自动标记用户上传到DAM的资产。 为此，管理员配置工作流，以向智能标记资产添加可用步骤。 请参阅[如何为上传的资产启用智能标记](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] 可以自动标记用户上传到DAM的资产。为此，管理员配置工作流，以向智能标记资产添加可用步骤。 请参阅[如何为上传的资产启用智能标记](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
 
 ## 管理智能标记和资产搜索{#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Experience Manager可以自动标记用户上传到DAM的资产。 为此，管�
 1. smart标记中`woman running`的匹配项。
 1. smart标记中`woman`或`running`的匹配项。
 
-### 标记限制{#limitations}
+## 标记限制和最佳实践{#limitations}
 
-增强的智能标签基于品牌图像及其标签的学习模型。 这些模型并不总是能够完美地识别标记。 智能标记的当前版本具有以下限制：
+增强的智能标记功能基于图像及其标记的学习模型。 这些模型并不总是能够完美地识别标记。 智能标记的当前版本具有以下限制：
 
 * 无法识别图像中的细微差异。 比如，修身与普通衬衫。
 * 无法根据图像的微小图案／部分识别标记。 例如，T恤上的徽标。
-* Experience Manager支持的语言支持标记。 有关语言列表，请参阅[智能内容服务发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
+* [!DNL Experience Manager]支持的语言支持标记。 有关语言列表，请参阅[智能内容服务发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
+* 不切实际处理的标记与以下内容相关：
+
+   * 非可视、抽象的方面，如产品发布的年份或季节、图像所诱发的情绪或情绪、视频的主观内涵等。
+   * 产品（如衬衫和衬衫，无领子或小产品徽标嵌入产品）中的细微视觉差异。
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-要使用智能标记（常规或增强）搜索资产，请使用资产搜索（全文搜索）。 智能标记没有单独的搜索谓词。
+要使用智能标记（常规或增强）搜索资产，请使用[!DNL Assets]全文搜索（全文搜索）。 智能标记没有单独的搜索谓词。
 
 >[!NOTE]
 >
