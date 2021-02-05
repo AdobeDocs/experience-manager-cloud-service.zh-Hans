@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
+source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '604'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,10 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 默认情况下，对于Adobe管理的CDN设置，所有公共流量都可用于生产和非生产（开发和阶段）环境的发布服务。 如果您希望限制特定环境发布服务的流量（例如，按IP地址范围限制暂存），则可以通过云管理器UI以自助方式执行此操作。
 
 请参阅[管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)以了解更多信息。
+
+>[!CAUTION]
+>
+>只有AEM的托管CDN提供来自允许IP的请求。 如果将您自己的CDN指向AEM托管的CDN，则确保您的CDN的IP包含在允许列表中。
 
 ## 客户CDN指向AEM Managed CDN {#point-to-point-CDN}
 
