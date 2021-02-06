@@ -70,7 +70,7 @@ Adobe Experience Manager受用于管理用户选择加入／选择退出的cooki
 
    >[!NOTE]
    >
-   > **2中还有进一步的说明。 隐私.** adobe一 [般使用条款部分](https://www.adobe.com/legal/terms.html)。
+   > **2中还有进一步的说明。 隐私.** adobe一 [般使用条款部分](https://www.adobe.com/cn/legal/terms.html)。
 
 ## Analytics Foundation {#analytics-foundation}
 
