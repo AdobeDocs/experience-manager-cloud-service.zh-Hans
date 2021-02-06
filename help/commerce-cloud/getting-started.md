@@ -74,7 +74,7 @@ AEM Commerce as a saCloud Service的入门过程分为两步：
 >
 >此功能仅在Magento企业版或Magento云中可用。
 
-1. 登录Magento并创建集成令牌。 有关详细信息，请参阅[基于令牌的身份验证](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)。 确保集成令牌仅具有对&#x200B;*资源的*&#x200B;访问权限。 `Content -> Staging`复制`Access Token`值。
+1. 登录Magento并创建集成令牌。 有关详细信息，请参阅[基于令牌的身份验证](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)。 确保集成令牌仅具有对`Content -> Staging`资源的&#x200B;*访问权限。*&#x200B;复制`Access Token`值。
 
 1. 在云管理器中设置`COMMERCE_AUTH_HEADER`机密变量：
 
