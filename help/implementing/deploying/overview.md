@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ### 通过云管理器{#deployments-via-cloud-manager}进行部署
 
-客户通过Cloud Manager将自定义代码部署到云环境。 应当注意的是，云管理器将本地装配的内容包转换为符合Sling特征模型的伪像，即在云环境中运行AEM时，如何将描述为Cloud Service应用程序。 因此，在查看云环境上的包管理器中的包时，名称将包括“cp2fm”，转换的包将删除所有元数据。 它们不能与之交互，这意味着它们不能下载、复制或打开。 有关转换器的详细文档可在此[找到。](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
+客户通过Cloud Manager将自定义代码部署到云环境。 应当注意的是，云管理器将本地装配的内容包转换为符合Sling特征模型的伪像，即在云环境中运行AEM时，如何将描述为Cloud Service应用程序。 因此，在查看云环境上的包管理器中的包时，名称将包括“cp2fm”，转换的包将删除所有元数据。 它们不能与之交互，这意味着它们不能下载、复制或打开。 有关转换器的详细文档可在此](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)找到。[
 
 作为Cloud Service应用程序为AEM编写的内容包必须在不可变内容和可变内容之间有清晰的分隔，云管理器将通过失败生成来强制执行该内容，并输出如下消息：
 
@@ -235,7 +235,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 索引{#indexes}
 
-新的或修改的索引将导致在新的（绿色）版本开始通信之前执行额外的索引或重新索引步骤。 有关AEM中作为Cloud Service的索引管理的详细信息，请参阅本文[。 ](/help/operations/indexing.md)您可以在Cloud Manager构建页面上检查索引编制作业的状态，并在新版本可以接收流量时收到通知。
+新的或修改的索引将导致在新的（绿色）版本开始通信之前执行额外的索引或重新索引步骤。 有关AEM中作为Cloud Service的索引管理的详细信息，请参阅本文](/help/operations/indexing.md)。 [您可以在Cloud Manager构建页面上检查索引编制作业的状态，并在新版本可以接收流量时收到通知。
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 索引更改{#index-changes}
 
-如果对索引进行了更改，则Blue版本应继续使用其索引，直到其终止，而Green版本应使用其自己修改过的索引集。 开发人员应遵循本文[中描述的索引管理技术。](/help/operations/indexing.md)
+如果对索引进行了更改，则Blue版本应继续使用其索引，直到其终止，而Green版本应使用其自己修改过的索引集。 开发人员应遵循本文](/help/operations/indexing.md)中描述的索引管理技术。[
 
 ### 回滚的保守编码{#conservative-coding-for-rollbacks}
 
