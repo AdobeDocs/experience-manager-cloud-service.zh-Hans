@@ -2,9 +2,9 @@
 title: Markdown
 description: 在创作时，内容片段编辑器使用标记语法允许您轻松编写内容。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 4%
 
 ---
@@ -188,7 +188,7 @@ ht-degree: 4%
 
     `\ backslash`
 
-    “倒钩”
+    `` ` backtick``
 
     `* asterisk`
 
