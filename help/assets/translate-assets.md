@@ -3,9 +3,9 @@ title: 创建和管理多种语言的数字资产
 description: 了解如何自动将资产（包括二进制文件、元数据和标记）翻译成多种语言的工作流。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
+source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2587'
 ht-degree: 24%
 
 ---
@@ -105,7 +105,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 从&#x200B;**[!UICONTROL 项目]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 创建新的翻译项目]**。
 1. 在&#x200B;**[!UICONTROL 项目标题]**&#x200B;字段中，输入项目标题。
 1. 单击／点按&#x200B;**[!UICONTROL 创建]**。 源文件夹中的资产将复制到您在步骤4中选择的区域设置的目标文件夹。
-1. 要导航到文件夹，请选择语言副本，然后单击“资产&#x200B;**[!UICONTROL 中显示”。]**
+1. 要导航到文件夹，请选择语言副本，然后单击“资产&#x200B;]**中显示”。**[!UICONTROL 
 1. 导航到项目控制台。 翻译文件夹会被复制到项目控制台。
 1. 打开文件夹以视图翻译项目。
 1. 单击／点按项目以打开详细信息页面。
@@ -186,7 +186,10 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 1. 导航到“资产”控制台，然后打开每个已翻译资产的“属性”页面以视图已翻译的元数据。
 
-有关有效翻译资产元数据的提示，请参阅[有效翻译元数据的](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)步骤。
+<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+
+For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
+-->
 
 ## 创建翻译项目{#creating-translation-projects}
 
