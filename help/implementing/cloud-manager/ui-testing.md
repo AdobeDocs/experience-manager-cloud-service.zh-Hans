@@ -2,9 +2,9 @@
 title: UI测试-Cloud Services
 description: UI测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
+source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -12,12 +12,11 @@ ht-degree: 0%
 
 # UI测试{#ui-testing}
 
->[!CAUTION]
->
->此功能尚不普遍可用。
-
-
 UI测试是将基于硒的测试打包在Docker图像中，以便在语言和框架（如Java和Maven、Node和WebDriver.io，或任何基于Selenium构建的其他框架和技术）中做出广泛选择。 Docker图像可以使用标准工具创建，但在执行时必须遵守某些约定。 运行Docker映像时，将自动设置Selenium服务器。 下面描述的运行时约定允许测试代码访问Selenium服务器和测试中的AEM实例。
+
+>[!NOTE]
+> 需要更新在2021年2月10日之前创建的舞台和生产管道，以使用本页所述的UI测试。
+> 有关管线配置的信息，请参见[配置CI-CD管线](/help/implementing/cloud-manager/configure-pipeline.md)。
 
 ## 构建UI测试{#building-ui-tests}
 
