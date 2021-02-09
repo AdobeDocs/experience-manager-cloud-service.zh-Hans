@@ -2,9 +2,9 @@
 title: 在多个站点中使用目标内容
 description: 如果您需要在多个站点间管理目标内容（例如活动、体验和选件），则可以利用 AEM 中内置的目标内容多站点支持功能
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2915'
 ht-degree: 87%
 
 ---
@@ -52,6 +52,7 @@ ht-degree: 87%
 >
 >* 使用转出或 Live Copy 时，需要获得 MSM 许可。
 >* 使用同步到 Adobe Target 的功能时，需要获得 Adobe Target 许可。
+
 >
 
 
@@ -188,9 +189,9 @@ ht-degree: 87%
 
 1. 在&#x200B;**转出配置**&#x200B;下拉菜单中，选择相应的配置。
 
-   有关每个选项的说明，请参阅安装的转出配置。<!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   有关每个选项的说明，请参阅[安装的转出配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations)。
 
-   有关Live Copy的详细信息，请参阅创建和同步Live Copy。<!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   有关 Live Copy 的更多信息，请参阅[创建和同步 Live Copy](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html)。
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ ht-degree: 87%
 >
 >* 您只能在活动中暂停或分离 Live Copy。
 >* 要扩展继承的活动，无需暂停或分离 Live Copy。您始终可以为该活动创建&#x200B;**新的**&#x200B;本地体验和选件。如果您想要修改现有活动，则需要暂停继承。
+
 >
 
 
