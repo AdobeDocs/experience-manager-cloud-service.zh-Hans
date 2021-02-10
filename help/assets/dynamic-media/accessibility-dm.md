@@ -1,38 +1,38 @@
 ---
-title: ' [!DNL Dynamic Media]中的辅助功能'
+title: Dynamic Media 中的辅助功能
 description: 了解Dynamic Media和Dynamic Media观众的辅助功能。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 0%
+source-wordcount: '613'
+ht-degree: 1%
 
 ---
 
 
-# Dynamic Media的辅助功能{#working-with-three-d-assets-dm}
+# Dynamic Media 中的辅助功能 {#accessibility-in-dm}
 
 Dynamic Media支持跨创作用户界面的键盘控制和辅助技术，如JAWS和NVDA屏幕阅读器。
 
-## Dynamic Media支持键盘辅助功能
+## Dynamic Media{#keyboard-support-in-dm}中支持键盘辅助功能
 
-由于Dynamic Media是Experience Manager资产的插件，因此大多数键盘控制行为与Experience Manager资产完全相同。 例如，Dynamic Media的`Cancel`按钮与Experience Manager资产中的焦点突出显示相同，并对`Spacebar`键作出响应，与Experience Manager资产中的焦点突出显示相同。 请参阅Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
+由于Dynamic Media是Experience Manager资产的插件，因此大多数键盘控制行为与Experience Manager资产中的操作相同。 例如，Dynamic Media的`Cancel`按钮与Experience Manager资产中的焦点突出显示相同。 它还会像在Experience Manager资产中一样对`Spacebar`键做出响应。 请参阅Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
 
-在Dynamic Media，由单个用户界面元素支持的按键在大多数情况下都显而易见，易于发现。 Dynamic Media的键盘控件与以下内容相关：
+在Dynamic Media，单个用户界面元素支持的按键在大多数情况下都显而易见，并且易于查找。 Dynamic Media的键盘控件与以下内容相关：
 
 * 能够使用`Tab`和`Shift+Tab`按键在页面上的交互式元素之间导航。
 使用`Tab`将输入焦点按Tab键顺序前进到下一个用户界面元素；使用`Shift+Tab`将输入焦点重新调回到以前的用户界面元素。
 焦点遍历遵循屏幕上的自然用户界面元素位置，并按从左到右、从上到下的顺序移动。 此外，如果任何字段有错误，可按`Tab`将焦点移到该字段。
 * 能够使用`Spacebar`和`Enter`键激活标准用户界面元素，如按钮、下拉列表等。
-* 能够在活动元素上查看键盘焦点突出显示。 具有输入焦点的用户界面元素可以接收可视焦点指示作为呈现在用户界面元素周围的边框。
+* 能够在活动元素上查看键盘焦点突出显示。 具有输入焦点的用户界面元素接收可视焦点指示作为呈现在用户界面元素周围的边框。
 * 在热点编辑器中，您可以使用一些自定义按键（如箭头键）与复杂的用户界面元素进行交互，从而重新确定热点的位置。
-* 在交互式视频编辑器中，可以使用`Spacebar`选择图像并将其添加到区段。 此外，您还可以使用`Backspace`键从&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中删除选定项。 此外，按`Tab`可根据需要在页面上的交互式元素之间导航。
+* 在交互式视频编辑器中，可以使用`Spacebar`选择图像并将其添加到区段。 此外，还可以使用`Backspace`键从&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中删除选定项。 此外，按`Tab`可根据需要在页面上的交互式元素之间导航。
 * 在图像裁剪／智能裁剪编辑器中，您可以执行以下操作：
-   * 使用箭头键可裁剪帧大小，或者重新定位图像，或者两者。
-   * 第一个`Tab`停止将高亮显示整个图像帧。 然后，可以使用键盘上的箭头键重新定位框架。
+   * 使用箭头键可裁剪帧大小，或调整图像的位置，或同时调整两者。
+   * 第一个`Tab`停止将高亮显示整个图像帧。 然后，可使用键盘上的箭头键重新确定框架的位置。
    * 接下来的四个`Tab`停止是框架的四个角。 当焦点放在框架角上时，该角将高亮显示。 同样，您可以使用键盘上的箭头键移动聚焦的角。
 请参阅[编辑单个图像的智能裁剪或智能色板](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
