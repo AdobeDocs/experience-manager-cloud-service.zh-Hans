@@ -2,9 +2,9 @@
 title: 将 Dynamic Media 查看器与 Adobe Analytics 和 Adobe Launch 集成
 description: 用于 Adobe Launch 的 Dynamic Media 查看器扩展以及 Dynamic Media 查看器 5.13 版允许 Dynamic Media 客户、Adobe Analytics 客户和 Adobe Launch 客户在其 Adobe Launch 配置中使用特定于 Dynamic Media 查看器的事件和数据。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6628'
+source-wordcount: '6626'
 ht-degree: 17%
 
 ---
@@ -436,7 +436,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
    在下图中，用户创建了一个名为&#x200B;*DynamicMediaViewersExtensionDoc*&#x200B;的报表包，并从下拉列表中将其选中。 报告套件名称仅供说明；最终选择的报表包名称将有所不同。
 
-   如果没有可用的报表包，则您或您的Adobe Analytics管理员必须创建一个报表包，然后才能继续进行配置。
+   如果没有可用的报告套件，您或您的Adobe Analytics管理员必须创建一个报告套件，然后才能继续进行配置。
 
    请参阅[报告和报告套件](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[创建报告套件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console)。
 
@@ -834,4 +834,4 @@ AEM配置包含以下两个主要步骤：
 
 通过在上述Adobe发布的Adobe启动云配置中指定AEM启动库的开发或临时URL，可以解决此限制。 这样做会使AEM发布节点使用Adobe启动库的开发或暂存版本。
 
-有关设置Adobe启动云配置的详细信息，请参阅[通过Adobe I/O将AEM与Adobe启动集成](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)。
+有关设置Experience Platform Launch启动云配置的详细信息，请参阅[集成Adobe和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations)。
