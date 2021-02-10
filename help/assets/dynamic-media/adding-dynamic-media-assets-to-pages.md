@@ -2,19 +2,19 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何将Dynamic Media组件作为Cloud Service添加到Adobe Experience Manager的页面。
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
 workflow-type: tm+mt
-source-wordcount: '3128'
-ht-degree: 30%
+source-wordcount: '3123'
+ht-degree: 29%
 
 ---
 
 
 # 将 Dynamic Media 资产添加到页面{#adding-dynamic-media-assets-to-pages}
 
-要将Dynamic Media功能添加到您在网站上使用的资产中，您可以直接在页面上添加 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360 Media全景组件。 为此，可进入布局模式并启用Dynamic Media组件。 然后，您可以将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
+要将Dynamic Media功能添加到您在网站上使用的资产中，您可以直接在页面上添加 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360 Media全景组件。 您进入布局模式并启用Dynamic Media组件。 然后，您将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
 
-如果您使用Dynamic Media作为WCM，则可以直接将Experience Manager资源添加到页面。 如果您为 WCM 使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[嵌入](/help/assets/dynamic-media/embed-code.md)资产。有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用Dynamic Media作为WCM，则可以直接将Experience Manager资源添加到页面。 如果您的WCM使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[embed](/help/assets/dynamic-media/embed-code.md)您的资产。 有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ Dynamic Media是聪明的。根据您添加的是图像还是视频，您有各�
 
 添加 Dynamic Media 组件时，如果 **[!UICONTROL Dynamic Media 设置]**&#x200B;为空或无法正常添加资产，请检查以下各项：
 
-* 图像具有金字塔 TIFF 文件。在启用 Dynamic Media 之前导入的图像没有金字塔 TIFF 文件。
+* 图像具有金字塔 TIFF 文件。在启用Dynamic Media之前导入的图像没有金字塔tiff文件。
 
-#### 处理图像时  {#when-working-with-images}
+#### 处理图像时 {#when-working-with-images}
 
 Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和混合媒体集。您可以缩放图像，并在适当的情况下在旋转集内旋转图像，或从其他类型的集合中选择图像。
 
@@ -317,7 +317,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 使用&#x200B;**[!UICONTROL 视频360媒体]**&#x200B;组件在您的网页上呈现等长形视频，让您沉浸在房间、财产、位置、风景或医疗过程的欣赏中。
 
-在平面显示器上播放时，用户可以控制观看角度；在移动设备上播放通常利用其内置的陀螺仪控件。
+在平面显示器上播放时，用户可以控制观看角度；在移动设备上播放通常利用内置的陀螺仪控件。
 
 查看器包含对360个视频资源投放的本机支持。 默认情况下，查看或回放不需要任何其他配置。 您可以使用标准视频扩展（如。mp4、.mkv和。mov）交付360视频。 最常见的编解码器是H.264。
 
