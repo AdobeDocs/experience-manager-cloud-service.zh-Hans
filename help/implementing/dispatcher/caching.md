@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Define DISABLE_DEFAULT_CACHING
 * 可以由以下apache mod_headers指令在更细的粒度级别上覆盖：
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Define DISABLE_DEFAULT_CACHING
    在设置全局高速缓存控制标头或与宽正则表达式匹配的标头时，请务必小心，这样它们不会应用于您可能希望保持私有的内容。 考虑使用多个指令来确保以细粒度方式应用规则。 如果AEM检测到缓存头已应用到调度程序检测到的无法使用的内容，则作为Cloud Service将删除缓存头，如调度程序文档中所述。 为了强制AEM始终应用缓存，可以添加“always”选项，如下所示：
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Define DISABLE_DEFAULT_CACHING
 * 要防止对特定内容进行缓存，请将Cache-Control头设置为&#x200B;*private*。 例如，以下操作将阻止缓存名为&#x200B;**myfolder**&#x200B;的目录下的html内容：
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Define DISABLE_DEFAULT_CACHING
 * 可以通过以下apache `mod_headers`指令在更细的粒度级别上进行设置：
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
