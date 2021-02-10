@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '721'
 ht-degree: 4%
 
 ---
@@ -43,9 +43,11 @@ ht-degree: 4%
 
 * 能够直接在内容片段编辑器中预览JSON输出。
 
-### 渐进式Web应用程序(PWA){#pwa}
+<!--
+### Progressive Web Apps (PWAs) {#pwa}
 
-* [现在，可通过简单配置在项目](/help/sites-cloud/authoring/features/enable-pwa.md)  级别启用站点的渐进式Web应用程序(PWA)版本。
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
