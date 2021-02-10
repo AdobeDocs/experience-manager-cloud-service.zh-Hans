@@ -2,9 +2,9 @@
 title: 将 Dynamic Media 资产添加到页面
 description: 如何将Dynamic Media组件作为Cloud Service添加到Adobe Experience Manager的页面。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3135'
+source-wordcount: '3128'
 ht-degree: 30%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 30%
 
 1. 根据您放到页面上的Dynamic Media组件，将打开一个配置对话框。 [根据需要设置组](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) 件选项。
 
-   以下示例显示了“Dynamic Media视频360媒体&#x200B;**[!UICONTROL ”组件对话框以及“查看器预设”下拉列表中提供的选项。]**
+   以下示例显示了“Dynamic Media视频360媒体&#x200B;]**”组件对话框以及“查看器预设”下拉列表中提供的选项。**[!UICONTROL 
 
    ![视频360媒体组件](assets/6_5_360video_wcmcomponentviewerpreset.png)
 
@@ -210,7 +210,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 使用Dynamic Media组件将智能裁剪图像资产添加到您的网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
 
-请参阅[将智能裁剪与Experience Manager资产结合使用Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+请参阅[将智能裁剪与Experience Manager资产结合使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
 
 另请参阅[图像用户档案](/help/assets/dynamic-media/image-profiles.md)。
 
@@ -337,10 +337,10 @@ HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器�
 
 >[!MORELIKETHIS]
 >
->* [在Experience ManagerDynamic Media中使用视频播放器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [与Experience ManagerDynamic Media一起使用交互式视频](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [通过Experience ManagerDynamic Media了解资产查看器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [将自定义视频缩略图与Experience ManagerDynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [使用Experience ManagerDynamic Media了解色彩管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [使用图像锐化和Experience ManagerDynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [在Experience ManagerDynamic Media中使用视频播放器](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html#dynamic-media)
+>* [与Experience ManagerDynamic Media一起使用交互式视频](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
+>* [通过Experience ManagerDynamic Media了解资产查看器](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
+>* [将自定义视频缩略图与Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html#dynamic-media)
+>* [使用Experience ManagerDynamic Media了解色彩管理](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [使用图像锐化和Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)
 
