@@ -2,10 +2,10 @@
 title: 使用 Dynamic Media
 description: 了解如何使用Dynamic Media提供资产以在Web、移动和社交网站上消费。
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 45%
+source-wordcount: '395'
+ht-degree: 48%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 45%
 
 Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和视频。Dynamic Media 以独特的方式整合 Adobe Experience Manager 数字资产管理（资产）解决方案的工作流，从而简化了数字营销活动管理流程。
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->[与Adobe Experience Manager和Dynamic Media合作](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)上有社区文章。
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Dynamic Media 的功能 {#what-you-can-do-with-dynamic-media}
 
