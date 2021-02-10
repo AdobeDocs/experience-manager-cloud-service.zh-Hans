@@ -2,9 +2,9 @@
 title: 视频
 description: 了解如何在Dynamic Media使用视频。
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '9536'
+source-wordcount: '9537'
 ht-degree: 28%
 
 ---
@@ -308,7 +308,7 @@ HLS是Apple自适应视频流播放的标准，可根据网络带宽容量自动
 
 在为主源视频文件选择或创建视频编码预设时，请确保该预设的宽高比与主源视频文件的宽高比相同。 宽高比是视频的宽度与高度的比率。
 
-要确定视频文件的长宽比，请获取该文件的元数据并记录该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
+要确定视频文件的长宽比，请获取该文件的元数据并记下该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
 
 宽度/高度 = 宽高比
 
@@ -402,7 +402,7 @@ VBR编码时间较长，但生成的结果最为有利；媒体文件的质量�
 
 | 视频类型 | 宽度 x 高度 | 宽度比 | 高度比 |
 |--- |--- |--- |--- |
-| 源 | 1920 x 1080 | 1 | 1 |
+| 源 | 1920 x 1080 | 1 | 3 |
 | 编码 | 960 x 540 | 2 | 2 |
 | 编码 | 640 x 360 | 3 | 3 |
 | 编码 | 480 x 270 | 4 | 4 |
@@ -772,7 +772,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在视频属性页面的右上角，单击&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 快速发布]**。
 
-   另请参阅[将出版物管理与AEM Sites一起使用](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html)。
+   另请参阅[将出版物管理与AEM Sites一起使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
    您可以选择验证已发布到YouTube渠道上的视频。
 
@@ -983,7 +983,7 @@ For YouTube publishing jobs, do the following:
 
 1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
