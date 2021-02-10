@@ -2,9 +2,9 @@
 title: 优化图像质量的最佳实践
 description: 了解可在Dynamic Media用来优化图像资产质量的最佳实践。
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 54%
 
 ---
@@ -40,9 +40,9 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 
 在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请参阅以下有用资源，花时间详细了解一下 AEM 中锐化和 USM 锐化的工作原理：
 
-最佳实践白皮书[在AdobeDynamic Media经典](/help/assets/dynamic-media/assets/sharpening_images.pdf)中锐化图像也适用于AEM。
+* 最佳实践白皮书[在AdobeDynamic Media经典](/help/assets/dynamic-media/assets/sharpening_images.pdf)中锐化图像也适用于AEM。
 
-在Adobe电视上，请观看[使用USM锐化锐化图像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
+* 观看[使用AEM Dynamic Media的图像锐化](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)。
 
 通过 AEM，可以在摄取、传送或同时在这两个过程中锐化图像。但是，在大多数情况下，应只使用一种方法锐化图像，而不要同时使用两种方法。通常，在传送过程中通过 URL 锐化图像可实现最佳效果。
 
