@@ -1,8 +1,10 @@
 ---
 title: 启用渐进式Web应用程序功能
 description: AEM Sites允许内容作者通过简单的配置而不是编码，向任何站点提供渐进式Web应用程序功能。
+hide: true
+hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ba014bb90b1cb08630455b3ac72895272ae8ed5b
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 0%
