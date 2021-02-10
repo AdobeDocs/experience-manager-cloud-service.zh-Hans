@@ -2,9 +2,9 @@
 title: 管理图像预设
 description: 了解图像预设并了解如何创建、修改和管理图像预设。
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
+source-wordcount: '3647'
 ht-degree: 31%
 
 ---
@@ -374,8 +374,9 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
      <li><strong>应用至</strong> -确定是否将取消锐化应用于每种颜色或亮度。</li>
     </ul>
     <div>
-      有关“锐化”的信息，请参阅<a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">锐化图像</a>。
-    </div> </td>
+      有关锐化的说明，请参阅
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">在AEMDynamic Media</a>视频中使用图像锐化，在<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">锐化图像</a>联机帮助主题中以及在Dynamic Media经典</a>可下载的PDF中锐化图像的最佳实践中。<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">
+    </a></div> </td>
   </tr>
   <tr>
    <td><strong>重新取样模式</strong></td>
