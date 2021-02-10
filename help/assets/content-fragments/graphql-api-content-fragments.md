@@ -2,9 +2,9 @@
 title: AEM GraphQL API，用于内容片段
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作AEM GraphQL API的Cloud Service，用于无头内容投放。
 translation-type: tm+mt
-source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
+source-git-commit: 20f90d46d24fa211d51ef4b59bb56f4b9f963bc3
 workflow-type: tm+mt
-source-wordcount: '3192'
+source-wordcount: '3167'
 ht-degree: 1%
 
 ---
@@ -218,7 +218,9 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 
 GraphiQL用户界面可以安装在AEM上并包含专用包：[GraphiQL内容包v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)包。
 
-有关完整的详细信息，请参见软件包&#x200B;**README**;包括在各种情况下如何在AEM实例上安装它的完整详细信息。
+<!--
+See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
+-->
 
 ## 创作和发布环境的用例{#use-cases-author-publish-environments}
 
