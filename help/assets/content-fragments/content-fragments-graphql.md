@@ -2,10 +2,10 @@
 title: 使用内容片段和GraphQL的无头内容投放
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作GraphQL的Cloud Service，以实现无头内容投放。
 translation-type: tm+mt
-source-git-commit: 54b377c6d98398fd5066dc4a3337a3877b9e3ed7
+source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 1%
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +17,14 @@ ht-degree: 1%
 >[!NOTE]
 >
 >有关AEM Sites作为Cloud Service的无头开发的简介，请参见[无头和AEM](/help/implementing/developing/headless/introduction.md)。
+
+>[!NOTE]
+>
+>GraphQL目前用于Adobe Experience Manager(AEM)的两个（单独的）情形中作为Cloud Service:
+>
+>* [AEM Commerce通过GraphQL从商务平台消费数据](/help/commerce-cloud/architecture/magento.md)。
+>* [AEM内容片段与AEM GraphQL API（一种基于标准GraphQL的自定义实施）协同工作，以提供结构化内容以用于您的应用程序](/help/assets/content-fragments/graphql-api-content-fragments.md)。
+
 
 ## 无外设CMS {#headless-cms}
 
