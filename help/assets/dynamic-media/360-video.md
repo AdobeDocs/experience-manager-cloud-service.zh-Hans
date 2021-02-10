@@ -2,9 +2,9 @@
 title: 360/VR视频
 description: 了解如何在Dynamic Media使用360和虚拟现实(VR)视频。
 translation-type: tm+mt
-source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '963'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media包含对360个视频资源投放的本机支持。 默认情况下
 
 当前不支持空间音频；如果音频在立体声中混合，则余额(L/R)不会随客户更改摄像机视角而改变。
 
-请参阅[将Dynamic Media360视频和自定义视频缩略图与AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)一起使用。
+请参阅[将Dynamic Media360视频和自定义视频缩略图与AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)一起使用。
 
 另请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
