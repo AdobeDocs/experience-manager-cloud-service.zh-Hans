@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '611'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Dynamic Media支持跨创作用户界面的键盘控制和辅助技术，如JAWS
 * 能够使用`Tab`和`Shift+Tab`按键在页面上的交互式元素之间导航。
 使用`Tab`将输入焦点按Tab键顺序前进到下一个用户界面元素；使用`Shift+Tab`将输入焦点重新调回到以前的用户界面元素。
 焦点遍历遵循屏幕上的自然用户界面元素位置，并按从左到右、从上到下的顺序移动。 此外，如果任何字段有错误，可按`Tab`将焦点移到该字段。
-* 能够使用`Spacebar`和`Enter`键激活标准用户界面元素，如按钮、下拉列表等。
+* 能够使用`Spacebar`和`Enter`键激活标准用户界面元素，如按钮和下拉列表。
 * 能够在活动元素上查看键盘焦点突出显示。 具有输入焦点的用户界面元素接收可视焦点指示作为呈现在用户界面元素周围的边框。
 * 在热点编辑器中，您可以使用一些自定义按键（如箭头键）与复杂的用户界面元素进行交互，从而重新确定热点的位置。
 * 在交互式视频编辑器中，可以使用`Spacebar`选择图像并将其添加到区段。 此外，还可以使用`Backspace`键从&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中删除选定项。 此外，按`Tab`可根据需要在页面上的交互式元素之间导航。
