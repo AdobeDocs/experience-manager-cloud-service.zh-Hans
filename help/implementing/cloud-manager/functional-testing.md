@@ -2,9 +2,9 @@
 title: 功能测试-Cloud Services
 description: 功能测试-Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 
 * 产品功能测试
 * 自定义功能测试
+* 自定义UI测试
 
 ## 产品功能测试{#product-functional-testing}
 
@@ -33,6 +34,12 @@ ht-degree: 4%
 
 >[!NOTE]
 >“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关详细信息，请参阅[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)。
+
+## 自定义UI测试{#custom-ui-testing}
+
+可以编写自定义UI测试，使客户能够快速构建测试自动化套件，以验证构建在AEM上的Web和移动应用程序。
+
+要进一步了解如何编写自定义UI测试，请参阅[构建UI测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests)。
 
 
 ### 编写功能测试{#writing-functional-tests}
