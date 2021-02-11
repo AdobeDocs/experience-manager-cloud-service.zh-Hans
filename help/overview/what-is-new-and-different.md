@@ -2,7 +2,7 @@
 title: Adobe Experience Manager是Cloud Service
 description: '不同和新—Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 10%
@@ -262,7 +262,7 @@ Adobe Experience Manager Sites作为Cloud Service，通过将AEM内容管理系�
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager资产作为Cloud Service优惠，为企业提供云本地SaaS解决方案，不仅可以快速、有影响地执行其数字资产管理和Dynamic Media业务，还可以在始终处于最新状态、始终可用且始终处于学习状态的系统中使用下一代智能功能，如AI/ML。
+Adobe Experience Manager资产作为Cloud Service优惠，为企业提供云本地的PaaS解决方案，不仅可以快速、有影响地执行其数字资产管理和Dynamic Media操作，还可以在始终处于最新状态、始终可用且始终处于学习状态的系统中使用下一代智能功能，如AI/ML。
 
 资产产品包括云中的下一代资产处理以及高性能的资产获取和搜索。
 
