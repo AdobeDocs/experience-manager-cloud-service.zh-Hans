@@ -2,10 +2,10 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 4%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -69,15 +69,37 @@ ht-degree: 4%
 
 ### 发布日期 {#release-date-cm}
 
-AEM中Cloud Manager作为Cloud Service2021.1.0的发布日期为2021年1月14日。
+AEM中Cloud Manager作为Cloud Service2021.2.0的发布日期为2021年2月11日。
+
+### 新增功能 {#what-is-new-cloud-manager}
+
+* Cloud Manager Production管道现在将包含自定义UI测试功能。
+
+* 资产客户现在可以通过云管理器UI自助选择何时何地部署其品牌门户实例。 对于具有资产解决方案的常规（非沙箱）项目，现在可以在生产环境上设置Brand Portal。 在“生产”环境上只能进行一次设置。
+
+* 项目和沙箱创建中使用的AEM项目原型已更新为版本25。
+
+* 代码扫描过程中标识的已弃用API的列表已得到改进，以包括最新Cloud ServiceSDK版本中已弃用的其他类和方法。
+
+* SonarQueb用户档案, Cloud Manager已更新以删除Sonar规则squid:S2142。 这不再与“线程中断检查”冲突。
+
+* Cloud Manager UI将告知用户暂时无法添加／更新域名，因为关联的环境连接了正在运行的管道，或者当前正在等待批准步骤。
+
+* 现在，将动态删除客户`pom.xml`文件中设置的“声纳”前缀的属性，以避免生成和质量扫描失败。
+
+* 云管理器UI将通知用户，如果当前正在部署的域名正在使用SSL证书，则该用户可能暂时无法选择该证书。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
-* 资产生产实例有时可能会将&#x200B;**环境**&#x200B;详细信息页面上的品牌门户状态显示为&#x200B;*挂起*，而不允许用户执行任何操作。
+* 将SSL证书与域名匹配不再区分大小写。
 
-* 从Cloud Manager触发解除休眠时，有时即使成功启动解除休眠，也会显示一条失败消息。
+* 现在，如果证书私钥不满足2048位限制，Cloud Manager UI将通知用户并显示相应的错误消息。
 
-* 已解决在创建或删除环境时遇到的少数故障。
+* 云管理器UI将通知用户，如果当前正在部署的域名正在使用SSL证书，则该用户可能暂时无法选择该证书。
+
+* 在某些情况下，内部问题可能导致环境删除卡住。
+
+* 某些管线故障被错误报告为管线错误。
 
 ## AEM作为Cloud Service基础{#aem-as-a-cloud-service-foundation}
 
