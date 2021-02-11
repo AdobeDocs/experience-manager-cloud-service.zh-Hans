@@ -4,9 +4,9 @@ description: 最佳实践是与Adobe Creative Cloud整合Experience Manager部�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3294'
 ht-degree: 18%
 
 ---
@@ -70,7 +70,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，帮
 
 要支持资产分发使用案例，应考虑其他解决方案：
 
-* [AEM Assets品](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 牌门户，为AEM Assets提供可配置的SaaS加载项来发布资产。
+* [AEM Assets品](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 牌门户，通过可配置的资产加载项来发布资产。
 
 * 自定义解决方案是根据[资产共享公域](https://adobe-marketing-cloud.github.io/asset-share-commons/)代码库创建的。
 * AEM [链接共享](/help/assets/share-assets.md)可使用链接临时共享资产。
