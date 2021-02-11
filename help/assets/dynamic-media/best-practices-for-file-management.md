@@ -1,8 +1,9 @@
 ---
 title: 组织数字资产以使用Dynamic Media图像用户档案或视频用户档案的最佳实践
 description: 命名、组织和管理Dynamic Media图像和视频资产文件的提示和最佳实践。
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 18%
