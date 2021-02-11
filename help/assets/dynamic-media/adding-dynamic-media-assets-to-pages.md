@@ -1,11 +1,12 @@
 ---
 title: 将 Dynamic Media 资产添加到页面
 description: 如何将Dynamic Media组件作为Cloud Service添加到Adobe Experience Manager的页面。
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 29%
+source-wordcount: '3082'
+ht-degree: 21%
 
 ---
 
@@ -14,28 +15,28 @@ ht-degree: 29%
 
 要将Dynamic Media功能添加到您在网站上使用的资产中，您可以直接在页面上添加 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360 Media全景组件。 您进入布局模式并启用Dynamic Media组件。 然后，您将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
 
-如果您使用Dynamic Media作为WCM，则可以直接将Experience Manager资源添加到页面。 如果您的WCM使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[embed](/help/assets/dynamic-media/embed-code.md)您的资产。 有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用Dynamic Media作为WCM，则可以直接将Experience Manager资源添加到页面。 如果您的WCM使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[embed](/help/assets/dynamic-media/embed-code.md)您的资产。 有关响应式第三方网站，请参阅[将优化的图像传送到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
->您必须先发布资产，然后才能以Experience Manager将其添加到页面。 请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+>请确保在将资产添加到Experience Manager中的页面之前先发布资产。 请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 将Dynamic Media组件添加到页面{#adding-a-dynamic-media-component-to-a-page}
 
-向页面添加3D媒体、Dynamic Media、交互式媒体、全景媒体、智能裁剪视频或视频360媒体组件与向任何页面添加组件相同。 以下各节介绍了Dynamic Media各组成部分。
+向页面添加3D媒体、Dynamic Media、交互式媒体、全景媒体、智能裁剪视频或视频360媒体组件与向任何页面添加组件相同。
 
 **向页面添加Dynamic Media组件**
 
 1. 在Experience Manager中，打开要添加Dynamic Media组件的页面。
 1. 在左窗格中，点按&#x200B;**[!UICONTROL 组件]**&#x200B;图标，然后过滤Dynamic Media。
 
-   如果没有可用的列表Dynamic Media组件，您可能需要启用要使用的Dynamic Media组件。 请参阅[启用Dynamic Media组件](#enabling-dynamic-media-components)。
+   如果没有可用的列表Dynamic Media组件，您可能必须启用要使用的Dynamic Media组件。 请参阅[启用Dynamic Media组件](#enabling-dynamic-media-components)。
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. 拖动&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;组件，将其放到页面上的所需位置。
 
-1. 将鼠标指针直接悬停在组件上。 当组件被蓝色框包围时，点按一次以显示组件的工具栏。 点按&#x200B;**[!UICONTROL 配置（扳手）]**&#x200B;图标。
+1. 将指针直接悬停在组件上。 当组件被蓝色框包围时，点按一次以显示组件的工具栏。 点按&#x200B;**[!UICONTROL 配置（扳手）]**&#x200B;图标。
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -51,7 +52,7 @@ ht-degree: 29%
 
 ### 启用Dynamic Media组件{#enabling-dynamic-media-components}
 
-如果没有可添加到页面的Dynamic Media组件，则可能意味着您需要首先启用要使用的组件。
+如果没有可添加到页面的Dynamic Media组件，则可能意味着您必须启用要使用的组件。
 
 1. 在Experience Manager中，打开要添加Dynamic Media组件的页面。
 1. 在工具栏左侧，点按页面顶部附近的页面信息图标，然后点按下拉列表中的&#x200B;**[!UICONTROL 编辑模板]**。
@@ -68,13 +69,14 @@ ht-degree: 29%
    ![允许的组件](/help/assets/assets-dm/allowed-components.png)
 
 1. 滚动直到您看到&#x200B;**[!UICONTROL Dynamic Media]**。
-1. 点按&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;左侧的>图标以展开列表，选择要启用的Dynamic Media组件。
+1. 点按&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;左侧的>图标，然后选择要启用的Dynamic Media组件。
 
    ![Dynamic Media部件列表](/help/assets/assets-dm/dm-components-select.png)
 
 1. 在&#x200B;**[!UICONTROL 布局容器]**&#x200B;页面的右上角附近，点按完成（复选标记）图标。
 
-1. 在工具栏右侧页面顶部附近的下拉列表中，点按&#x200B;**[!UICONTROL 初始内容]**，然后按[将Dynamic Media组件按常规方式添加到页面](#adding-a-dynamic-media-component-to-a-page)。
+1. 在工具栏右侧页面顶部附近的下拉列表中，点按&#x200B;**[!UICONTROL 初始内容]**。
+1. [将Dynamic Media组件添加到通常](#adding-a-dynamic-media-component-to-a-page) 的页面。
 
 ## 将Dynamic Media组件定位{#localizing-dynamic-media-components}
 
@@ -88,7 +90,7 @@ ht-degree: 29%
 
    >[!NOTE]
    >
-   >请注意，**[!UICONTROL 语言]**&#x200B;菜单中并非所有可用语言当前都分配了令牌。
+   >并非所有在&#x200B;**[!UICONTROL 语言]**&#x200B;菜单中可用的语言都已分配令牌。
 
 ## 可用的Dynamic Media组件{#dynamic-media-components}
 
@@ -103,7 +105,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->这些组件默认不可用，在使用之前需要通过模板编辑器使用。 在模板编辑器中使用这些组件后，您可以像添加任何其他Experience Manager组件一样将这些组件添加到页面。
+>这些组件默认不可用，在使用之前必须通过模板编辑器使用。 在模板编辑器中使用这些组件后，您可以像添加任何其他Experience Manager组件一样将这些组件添加到页面。
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -120,7 +122,7 @@ Dynamic Media是聪明的。根据您添加的是图像还是视频，您有各�
 
 >
 >
-请注意，不支持为该页面上的每个Dynamic Media组件分配不同的查看器预设。
+不支持为该页面上的每个Dynamic Media组件分配不同的查看器预设。
 >
 >但是，您可以对页面中使用相同类型资产的所有Dynamic Media组件使用相同的查看器预设。
 
@@ -132,7 +134,7 @@ Dynamic Media是聪明的。根据您添加的是图像还是视频，您有各�
 
 Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和混合媒体集。您可以缩放图像，并在适当的情况下在旋转集内旋转图像，或从其他类型的集合中选择图像。
 
-您还可以直接在组件中配置查看器预设、图像预设或图像格式。要使图像成为响应式图像，您可以设置断点，或应用响应式图像预设。
+您还可以直接在组件中配置查看器预设、图像预设或图像格式。要使图像成为响应式图像，您可以设置断点或应用响应式图像预设。
 
 通过点按组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标，然后&#x200B;**[!UICONTROL Dynamic Media设置]**，可以编辑以下Dynamic Media设置。
 
@@ -142,21 +144,21 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 >
 >默认情况下，Dynamic media图像组件是自适应的。 如果要使其变为固定大小，请在“高级”选项卡的组件中设置 **[!UICONTROL 它]** ，并使用“宽度”和“高 **** 度” ****。
 
-* **[!UICONTROL 查看器预设]**-从下拉菜单中选择现有的查看器预设。如果未显示您要查找的查看器预设，则可能需要将其显示出来。请参阅管理查看器预设。如果您正在使用图像预设，则无法选择查看器预设，反之亦然。
+* **[!UICONTROL 查看器预设]**-从下拉式列表中选择现有的查看器预设。如果未显示您要查找的查看器预设，则必须使其可见。 请参阅管理查看器预设。如果您使用的是图像预设，则无法选择查看器预设，反之，则无法选择查看器预设。
 
-   如果您查看的是图像集、旋转集或混合媒体集，这是唯一可用的选项。显示的查看器预设也是智能的 - 仅显示相关的查看器预设。
+   如果您正在查看图像集、旋转集或混合媒体集，则此选项是唯一可用的选项。 显示的查看器预设也是智能相关的查看器预设。
 
 * **[!UICONTROL 查看器修饰符]**-查看器修饰符采用名称=值对和分隔符的形式，允许您根据《查看器参考指南》中的概述更改查看器。查看器修饰符的示例是`posterimage=img.jpg&caption=text.vtt,1`，它为视频缩略图设置不同的图像并将隐藏字幕／子标题文件与视频相关联。
 
-* **[!UICONTROL 图像预设]**-从下拉菜单中选择现有的图像预设。如果未显示您要查找的图像预设，则可能需要将其显示出来。请参阅管理图像预设。如果您正在使用图像预设，则无法选择查看器预设，反之亦然。
+* **[!UICONTROL 图像预设]**-从下拉列表中选择现有的图像预设。如果您要查找的图像预设不可见，则必须使其可见。 请参阅管理图像预设。如果您使用的是图像预设，则无法选择查看器预设，反之，则无法选择查看器预设。
 
    如果您查看的是图像集、旋转集或混合媒体集，则此选项不可用。
 
-* **[!UICONTROL 图像修饰符]**-可以通过提供其他图像命令来应用图像效果。这些内容在图像预设和图像服务命令参考中进行了介绍。
+* **[!UICONTROL 图像修饰符]**-可以通过提供更多图像命令来应用图像效果。这些命令在图像预设和图像服务命令参考中有介绍。
 
    如果您查看的是图像集、旋转集或混合媒体集，则此选项不可用。
 
-* **[!UICONTROL 断点]**-如果您在响应式站点上使用此资产，则需要添加图像断点。图像断点之间需要使用逗号 (,) 进行分隔。当图像预设中未定义高度或宽度时，可以使用此选项。
+* **[!UICONTROL 断点]**-如果您在响应式站点上使用此资产，则必须添加图像断点。图像断点必须用逗号(,)分隔。 当图像预设中未定义高度或宽度时，可以使用此选项。
 
    如果您查看的是图像集、旋转集或混合媒体集，则此选项不可用。
 
@@ -179,7 +181,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 #### 处理视频时 {#when-working-with-video}
 
-使用Dynamic Media组件将动态视频添加到网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
+使用Dynamic Media组件将动态视频添加到网页。 编辑组件时，您可以选择使用预定义的视频查看器预设在页面上播放视频。
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
@@ -189,16 +191,16 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 >
 >默认情况下，Dynamic Media 视频组件为自适应组件。如果要使其具有固定大小，请在组件中使用&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中的&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;进行设置。
 
-* **[!UICONTROL 查看器预设]**-从下拉菜单中选择现有的视频查看器预设。如果未显示您要查找的查看器预设，则可能需要将其显示出来。请参阅管理查看器预设。
+* **[!UICONTROL 查看器预设]**-从下拉式列表中选择现有的视频查看器预设。如果未显示您要查找的查看器预设，则必须使其可见。 请参阅管理查看器预设。
 
-* **[!UICONTROL 查看器修饰符]**-查看器修饰符采用名称=值对和分隔符的形式，允许您根据《Adobe查看器参考指南》中的概述更改查看器。查看器修饰符的示例为`posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL 查看器修饰符]**-查看器修饰符采用带分隔符 `name=value` 的对形 `&` 式。它们允许您根据《Adobe查看器参考指南》更改查看器。 查看器修饰符的示例为`posterimage=img.jpg&caption=text.vtt,1`
 
-   例如，通过查看器修饰符，可以执行以下操作：
+   例如，使用查看器修饰符，您可以执行以下操作：
 
    * 将题注文件与视频关联：[题注](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * 将导航文件与视频关联：[navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-   单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;可编辑以下高级设置。
+      单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;可编辑以下高级设置。
 
 * **[!UICONTROL 标题]**-更改视频的标题。
 
@@ -208,7 +210,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 #### 使用智能裁剪{#when-working-with-smart-crop}时
 
-使用Dynamic Media组件将智能裁剪图像资产添加到您的网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
+使用Dynamic Media组件将智能裁剪图像资产添加到您的网页。 编辑组件时，您可以选择使用预定义的视频查看器预设在页面上播放视频。
 
 请参阅[将智能裁剪与Experience Manager资产结合使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
 
@@ -222,13 +224,13 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 >
 >默认情况下，Dynamic media图像组件是自适应的。 如果要使其变为固定大小，请在“高级”选项卡的组件中设置 **[!UICONTROL 它]** ，并使用“宽度”和“高 **** 度” ****。
 
-* **[!UICONTROL 图像修饰符]**-可以通过提供其他图像命令来应用图像效果。这些内容在图像预设和图像服务命令参考中进行了介绍。
+* **[!UICONTROL 图像修饰符]**-可以通过提供更多图像命令来应用图像效果。这些命令在图像预设和图像服务命令参考中有介绍。
 
    如果您查看的是图像集、旋转集或混合媒体集，则此选项不可用。
 
    单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;可编辑以下高级设置。
 
-* **[!UICONTROL 启用长宽比匹配]**-选择此选项可让Dynamic Media选择宽高比最匹配原始图像长宽比的智能裁剪再现。
+* **[!UICONTROL 启用长宽比匹配]**-要让Dynamic Media选取长宽比与原始图像的长宽比最匹配的智能裁剪演绎版，请选择此选项。
 
 * **[!UICONTROL 标题]**-更改智能裁剪图像的标题。
 
@@ -259,7 +261,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 >
 >
-请注意，不支持为该页面上的每个交互式媒体组件分配不同的查看器预设。
+不支持为该页面上的每个交互式媒体组件分配不同的查看器预设。
 >
 >但是，您可以对页面中使用相同类型资产的所有交互式媒体组件使用相同的查看器预设。
 
@@ -267,7 +269,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 通过点按组件中的&#x200B;**[!UICONTROL 编辑]**，可以编辑以下&#x200B;**[!UICONTROL 常规]**&#x200B;设置。
 
-* **[!UICONTROL 查看器预设]**-从下拉菜单中选择现有的查看器预设。如果未显示您要查找的查看器预设，则可能需要将其显示出来。查看器预设必须先发布，然后才能使用。请参阅管理查看器预设。
+* **[!UICONTROL 查看器预设]**-从下拉式列表中选择现有的查看器预设。如果未显示您要查找的查看器预设，则必须使其可见。 查看器预设必须先发布，然后才能使用。请参阅管理查看器预设。
 
 * **[!UICONTROL 标题]**-更改视频的标题。
 
@@ -301,7 +303,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 >
 >
-请注意，不支持为该页面上的每个&#x200B;**[!UICONTROL 全景媒体]**&#x200B;组件分配不同的查看器预设。
+不支持为该页面上的每个&#x200B;**[!UICONTROL 全景媒体]**&#x200B;组件分配不同的查看器预设。
 >
 >但是，对于在页面中使用相同类型资产的所有全景媒体组件，您可以使用相同的查看器预设。
 
@@ -309,15 +311,15 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 通过点按组件中的&#x200B;**[!UICONTROL 配置]**，可以编辑以下设置。
 
-* **[!UICONTROL 查看器预设]**-从查看器预设下拉菜单中选择现有的查看器。
+* **[!UICONTROL 查看器预设]**-从查看器预设下拉列表中选择现有查看器。
 
-如果未显示您要查找的查看器预设，请检查以确保其已发布。 您必须先发布查看器预设，然后才能使用它们。 请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
+如果未显示您要查找的查看器预设，请检查以确保其已发布。 在使用查看器预设之前先发布它们。 请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
 ### 组件：视频360介质{#video-media-component}
 
-使用&#x200B;**[!UICONTROL 视频360媒体]**&#x200B;组件在您的网页上呈现等长形视频，让您沉浸在房间、财产、位置、风景或医疗过程的欣赏中。
+使用&#x200B;**[!UICONTROL 视频360媒体]**&#x200B;组件在网页上呈现等长形视频。 这样做可确保房间、房产、位置、景观或医疗过程的沉浸式观看体验。
 
-在平面显示器上播放时，用户可以控制观看角度；在移动设备上播放通常利用内置的陀螺仪控件。
+在平面显示器上播放时，用户可以控制观看角度；在移动设备上播放通常使用内置的陀螺仪控件。
 
 查看器包含对360个视频资源投放的本机支持。 默认情况下，查看或回放不需要任何其他配置。 您可以使用标准视频扩展（如。mp4、.mkv和。mov）交付360视频。 最常见的编解码器是H.264。
 
@@ -325,9 +327,9 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 通过点按组件中的&#x200B;**[!UICONTROL 配置]**，可以编辑以下设置。
 
-* **[!UICONTROL 查看器预设]**-从查看器预设下拉菜单中选择现有的查看器。将Video360VR用于使用虚拟现实眼镜的最终用户。 包括基本的视频播放控件和社交媒体功能。 使用Video360_social，它包含基本的视频播放控件。 视频渲染以立体模式完成。 手动视图点控制关闭，但陀螺仪控制打开。 没有社交媒体功能。
+* **[!UICONTROL 查看器预设]**-从查看器预设下拉列表中选择现有查看器。将Video360VR用于使用虚拟现实眼镜的最终用户。 包括基本的视频播放控件和社交媒体功能。 使用Video360_social，它包含基本的视频播放控件。 视频渲染以立体模式完成。 手动视图点控制关闭，但陀螺仪控制打开。 没有社交媒体功能。
 
-如果未显示您要查找的查看器预设，请检查以确保其已发布。 您必须先发布查看器预设，然后才能使用它们。 请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
+如果未显示您要查找的查看器预设，请检查以确保其已发布。 在使用查看器预设之前先发布它们。 请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
 ### 使用HTTP/2投放Dynamic Media资源{#using-http-to-delivery-dynamic-media-assets}
 
