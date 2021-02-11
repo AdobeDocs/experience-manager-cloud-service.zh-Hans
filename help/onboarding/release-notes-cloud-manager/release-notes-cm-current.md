@@ -2,7 +2,7 @@
 title: AEM中Cloud Manager作为Cloud Service版本2021.2.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2021.2.0的发行说明
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%
@@ -30,11 +30,11 @@ AEM中Cloud Manager作为Cloud Service2021.2.0的发布日期为2021年2月11日
 
 * 代码扫描过程中标识的已弃用API的列表已得到改进，以包括最新Cloud ServiceSDK版本中已弃用的其他类和方法。
 
-* SonarQueb用户档案, Cloud Manager已更新以删除Sonar规则squid:S2142。 这不再与线程中断检查冲突。
+* SonarQueb用户档案, Cloud Manager已更新以删除Sonar规则squid:S2142。 这不再与“线程中断检查”冲突。
 
 * Cloud Manager UI将告知用户暂时无法添加／更新域名，因为关联的环境连接了正在运行的管道，或者当前正在等待批准步骤。
 
-* 在客户`pom.xml`文件中设置的带有声纳前缀的属性现在将动态删除，以避免生成和质量扫描失败。
+* 现在，将动态删除客户`pom.xml`文件中设置的“声纳”前缀的属性，以避免生成和质量扫描失败。
 
 * 云管理器UI将通知用户，如果当前正在部署的域名正在使用SSL证书，则该用户可能暂时无法选择该证书。
 
