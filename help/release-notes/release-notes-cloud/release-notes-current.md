@@ -2,7 +2,7 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
+source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 3%
@@ -146,7 +146,7 @@ AEM作为Cloud ServiceSDK构建分析器主插件可检测主项目中的问题�
 
 Best Practices Analyzer v2.1.0的发布日期为2021年2月11日。
 
-### [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}中的新增功能
+### [!DNL Best Practices Analyzer] {#what-is-new-bpa}中的新增功能
 
 * 能够发现AEM Forms和AEM Forms的使用情况，并指明作为Cloud Service迁入AEM Forms的相关领域。
 * 能够检测并报告自定义组件和模板的使用情况和计数。
