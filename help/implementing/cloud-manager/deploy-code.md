@@ -2,9 +2,9 @@
 title: 部署代码-Cloud Services
 description: 部署代码-Cloud Services
 translation-type: tm+mt
-source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
+source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,9 @@ ht-degree: 1%
 
    * 自定义功能测试：管道中的此步骤始终存在，无法跳过。 但是，如果生成未生成测试JAR，则默认情况下测试通过。\
       有关详细信息，请参阅[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
+
+   * 自定义UI测试：管道中的此步骤始终存在，无法跳过。 可以编写自定义UI测试，使客户能够快速构建测试自动化套件，以验证构建在AEM上的Web和移动应用程序。
+有关详细信息，请参阅[自定义UI测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。
 
    * 体验审核：管道中的此步骤始终存在，无法跳过。 在执行生产管道时，将在运行检查的自定义功能测试之后包括体验审核步骤。 配置的页面将提交到服务并进行评估。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否会引入退化，很有价值。
 有关详细信息，请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)。
