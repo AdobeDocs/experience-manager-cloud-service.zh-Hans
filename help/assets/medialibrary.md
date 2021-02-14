@@ -3,7 +3,7 @@ title: 比较 [!DNL Assets] 和媒体库产品
 description: 比较 [!DNL Experience Manager Assets] 和媒体库功能并了解差异。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3a7af5fa5889c74eb74e12dead1df0494c2c6386
+source-git-commit: 93735a59dac1a0d674c0292ce268a8662f3b0b91
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -106,4 +106,5 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->*[Experience Manager作为Cloud Service产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [Experience Manager作为Cloud Service产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+
