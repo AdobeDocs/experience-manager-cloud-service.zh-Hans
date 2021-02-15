@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 88%
+source-wordcount: '1894'
+ht-degree: 58%
 
 ---
 
@@ -20,63 +20,55 @@ ht-degree: 88%
 
 ### 基本 {#basic}
 
-* **标题**
+* **标题和标记**
 
-   * 页面的标题会显示在各种不同的位置。例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
-   * 这是必填字段。
+   * **标题**  — 页面的标题会显示在各种不同的位置。例如，Websitestab **** 列表和Sitescard **** /列表视图。
+      * 这是必填字段。
+   * **标记**  — 在此，可以通过更新选择框中的列表，在页面中添加或删除标记。
+      * 选择标记后，它会列在选择框下。您可以使用“x”从此列表中删除标记。
+      * 可通过在空白选择框中键入名称输入全新标记。
+         * 按 Enter 将创建新标记。
+         * 随后将会显示新标记，其右侧带有一个小星星，表示该标记为新标记。
+      * 使用下拉列表功能，可从现有标记中进行选择。
+      * 当您将鼠标悬停在选择框中的标记条目上时，会显示 x，用于为此页面删除该标记。
+      * 有关标记的更多信息，请访问[使用标记](/help/sites-cloud/authoring/features/tags.md)。
+   * **隐藏导航**  — 指示在生成的站点的页面导航中显示还是隐藏页面。
 
-* **标记**
+* **品牌化**
 
-   * 在此，可以通过更新选择框中的列表在页面中添加或删除标记。
-   * 选择标记后，它会列在选择框下。您可以使用“x”从此列表中删除标记。
-   * 可通过在空白选择框中键入名称输入全新标记。
-      * 按 Enter 将创建新标记。
-      * 随后将会显示新标记，其右侧带有一个小星星，表示该标记为新标记。
-   * 使用下拉列表功能，可从现有标记中进行选择。
-   * 当您将鼠标悬停在选择框中的标记条目上时，会显示 x，用于为此页面删除该标记。
-   * 有关标记的更多信息，请访问[使用标记](/help/sites-cloud/authoring/features/tags.md)。
+   通过将品牌辅助信息附加到每个页面标题，跨页面应用一致的品牌标识。 此功能要求使用[核心组件版本2.14.0或更高版本的页面组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-* **隐藏导航**
-
-   * 指示在生成的站点的页面导航中是显示还是隐藏页面。
+   * **覆盖**  — 选中可定义此页上的品牌辅助信息区。
+      * 除非任何子页面也设置了&#x200B;**Override**&#x200B;值，否则该值将由其继承。
+   * **覆盖值**  — 要附加到页面标题的品牌辅助信息区文本。
+      * 该值将附加到管道字符（如“循环托斯卡纳”）之后的页面标题 |始终为WKND做好准备”
 
 * **HTML ID**
 
-   * 应用于组件的 HTML ID。
+   * **ID**  — 要应用于组件的HTML ID。
 
-* **页面标题**
+* **更多标题和说明**
 
-   * 要在页面中使用的标题。通常由标题组件使用。如果留空，则将使用&#x200B;**标题**。
+   * **页面标题**  — 要在页面上使用的标题。通常由标题组件使用。如果留空，则将使用&#x200B;**标题**。
+   * **导航标题**  — 您可以指定单独的标题以在导航中使用（例如，如果您希望某些内容能更加简洁）。 如果为空，则 **** 将使用标题。
+   * **子标题**  — 要在页面上使用的子标题。
+   * **描述**  — 页面的描述、用途或要添加的任何其他详细信息。
 
-* **导航标题**
+* **开启/结束时间**
 
-   * 您可以指定单独的标题以便在导航中使用（例如，如果您想用一种更加简洁明了的说法）。如果留空，则将使用&#x200B;**标题**。
-
-* **子标题**
-
-   * 要在页面中使用的子标题。
-
-* **描述**
-
-   * 页面及其用途的描述，或要添加的任何其他详细信息。
-
-* **开始时间**
-
-   * 发布环境上显示（呈现）已发布页面的日期和时间。 必须手动或通过预配置的自动复制来发布页面。
+   * **开始**  — 发布环境上发布页面的显示（呈现）日期和时间。必须手动或通过预先配置的自动复制来发布页面。
 
       >[!NOTE]
       >
-      > 有关如何配置相关自动复制的详细信息，请参见[开启和关闭时间——触发器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
+      > 有关如何配置相关自动复制的详细信息，请参阅[开启和关闭时间 — 触发器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
 
-      * 如果[已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，则在指定时间呈现之前，此页面将保持休眠（隐藏）。
-      * 如果页面未发布并配置为自动复制，则页面将在指定的时间自动发布并呈现。
-      * 如果未发布，且未配置为自动复制，则页面将不会自动发布，因此当尝试访问页面时，将显示404。
-   * 对于要立即发布的页面，将这些字段（**开始时间**&#x200B;和&#x200B;**结束时间**）留空，并在发布环境中可用，直到取消激活它们（正常情况）。
+      * 如果已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，则在指定时间呈现之前，此页面将保持休眠（隐藏）。[
+      * 如果未发布页面并配置为自动复制，则页面将在指定时间自动发布，然后呈现。
+      * 如果未发布，且未配置为自动复制，则页面将不会自动发布，因此在尝试访问页面时，将会看到404。
+   * **结束时间**  — 与“开始时间”类似，并且经常与“开始 **时间**”结合使用，这定义发布页面在发布环境上隐藏的时间。
 
-* **结束时间**
+   * 对于要立即发布的页面，将这些字段（**开始时间**&#x200B;和&#x200B;**结束时间**）保留为空，并在发布环境中可用，直到它们被停用（正常情况）。
 
-   * 与&#x200B;**On Time**&#x200B;并行，它定义发布环境上隐藏已发布页面的时间。
-   * 对于要立即发布的页面，将这些字段（**开始时间**&#x200B;和&#x200B;**结束时间**）留空，并在发布环境中可用，直到取消激活它们（正常情况）。
 
 * **虚 URL**
 
@@ -92,31 +84,24 @@ ht-degree: 88%
    >* 不应设置为现有页面。
 
 
-* **重定向虚 URL**
+   * **添加**  — 点按或单击以显示字段，以定义页面的虚URL。
+      * 再次点按或单击可添加多个。
+      * 点按或单击&#x200B;**删除**&#x200B;图标以删除虚URL。
+   * **重定向虚URL**  — 指示您是否希望页面使用虚URL。
 
-   * 指示您是否希望页面使用虚 URL。
+
+
 
 ### 高级 {#advanced}
 
-* **语言**
+* **设置**
 
-   * 页面语言。
+   * **语言**  — 页面语言
+   * **语言根**  — 如果页面是语言副本的根，则必须选中
+   * **重定向**  — 指示此页面应自动重定向到的页面
+   * **设计**  — 指示在生成站点的页面导航中显示还是隐藏页面
+   * **Alias**  — 指定要与此页一起使用的别名
 
-* **语言根目录**
-
-   * 如果页面是语言副本的根目录，则必须选中。
-
-* **重定向**
-
-   * 指示此页面应自动重定向到的页面。
-
-* **设计**
-
-   * 指示在生成的站点的页面导航中是显示还是隐藏页面。
-
-* **别名**
-
-   * 指定要用于此页面的别名。
    >[!NOTE]
    >
    >别名会设置 `sling:alias` 属性以定义资源的别名（这仅会影响资源，不会影响路径）。
@@ -129,52 +114,36 @@ ht-degree: 88%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **继承自 &lt;路径>**
+* **配置**
 
-   * 指示是否继承页面以及从何处继承。
+   * **云配置**  — 配置的路径
 
-* **云配置**
+* **模板设置**
 
-   * 配置的路径。
+   * **允许的模** 板 —  [定义将在此子分支](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) 内可用的模板的列表
 
-* **允许的模板**
+* **身份验证要求**
 
-   * [定义将在此子分支内可用的模板列表](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)。
+   * **启用**  — 启用身份验证以访问页面
 
-* **启用**（身份验证要求）
+      >[!NOTE]
+      >
+      >已关闭的用户组在&#x200B;**[权限](#permissions)**&#x200B;选项卡上定义。
 
-   * 启用（或禁用）身份验证来访问页面。
-   >[!NOTE]
-   >
-   >已关闭的用户组在&#x200B;**[权限](#permissions)**&#x200B;选项卡上定义。
+   * **登录页**  — 用于登录的页面
 
-* **登录页面**
+* **导出**
 
-   * 要用于登录的页面。
+   * **导出配置**  — 指定导出配置
 
-* **导出配置**
+### 缩略图 {#thumbnail}
 
-   * 指定导出配置。
+配置页面缩略图
 
-### 缩略图  {#thumbnail}
-
-显示页面缩略图图像。您可以：
-
-* **生成预览**
-
-   * 生成要用作缩略图的页面预览。
-
-* **上传图像**
-
-   * 上传要用作缩略图的图像。
-
-* **选择图像**
-
-   * 选择要用作缩略图的现有资产。
-
-* **还原**
-
-   * 在您对缩略图进行更改后，此选项将变得可用。如果不想保留您的更改，可以在保存前还原更改。
+* **生成预览**  — 生成要用作缩略图的页面预览
+* **上传图像**  — 上传要用作缩略图的图像
+* **选择图像**  — 选择一个现有资产作为缩略图
+* **还原**  — 在对缩览图进行更改后，此选项变为可用。如果不想保留您的更改，可以在保存前还原更改。
 
 ### 社交媒体 {#social-media}
 
@@ -189,9 +158,7 @@ ht-degree: 88%
 
 ### 云服务 {#cloud-services}
 
-* **云服务配置**
-
-   * 为云服务定义属性。
+* **云服务配置**  — 定义云服务的属性
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -200,16 +167,14 @@ ht-degree: 88%
 
 * **ContextHub 配置**
 
-   * 选择 ContextHub 配置和区段路径。
-
-   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
-  -->
+   * **ContextHub路径**  — 定义ContextHub [配置](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **区段路径**  — 定义区 [段路径](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **定位配置**
 
-   * 选择一个[品牌以指定定位的范围](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+   * **品牌**  — 定义 [品牌以指定定位范围](/help/sites-cloud/authoring/personalization/targeted-content.md)。
    >[!NOTE]
-   >此选项要求用户帐户属于 `Target Adminstrators` 组。
+   >此选项要求用户帐户属于 `Target Administrators` 组。
 
 ### 权限 {#permissions}
 
@@ -227,25 +192,33 @@ ht-degree: 88%
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+此选项卡仅对用作蓝图的页面可见。
 
-   * 在多站点管理中为 Blueprint 页面定义属性。
+* **当前Live Copy**  — 基于（即Live Copy的）此Blueprint页面的列表页面
 
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+* **转出配置**  — 控制将修改传播到Live Copy的情况
 
-   * 控制将修改传播到 Live Copy 的情况。
+### Live Copy {#live-copy}
 
+* **同步**  — 将Live Copy与Blueprint同步，保留本地修改
+* **重置**  — 将Live Copy重置为Blueprint状态，删除本地修改
+* **暂停**  — 暂停Live Copy以进一步转出修改
+* **分离**  — 从Blueprint中分离Live Copy
 
-### Live Copy  {#live-copy}
+* **源**
 
-* **Live Copy**
+   * 显示此Live Copy的Blueprint的路径
 
-   * 在多站点管理中为 Live Copy 页面定义属性。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-   * 控制将从 Blueprint 中传播修改的情况。
+* **状态**
 
-### 站点结构  {#site-structure}
+   * 列表页面的当前Live Copy状态
 
-* 提供具有全站点功能的页面的链接，例如&#x200B;**注册页面**、**脱机页面**&#x200B;以及其他。
+* **配置**
+
+   * **Live Copy继承**  — 如果选中，则Live Copy配置对所有子项都有效
+   * **从父项继承转出配置**  — 如果选中，则转出配置从页面的父项继承
+   * **选择转出配置**  — 定义将从Blueprint传播修改的情况，并且仅在未选择从父项继承转 **出配置时** 可用
 
 ## 编辑页面属性 {#editing-page-properties-1}
 
