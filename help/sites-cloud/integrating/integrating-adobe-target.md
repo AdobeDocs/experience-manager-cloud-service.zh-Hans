@@ -2,9 +2,9 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
+source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Adobe启动是管理AEM页面（JS库/标记）中Analytics和目标的客户端
 
 >[!NOTE]
 >
-> 如果要编辑现有目标配置：
+> 如果要更改现有目标配置：
 >
 > 1. 重新输入租户ID。
 > 2. 重新连接到目标。
