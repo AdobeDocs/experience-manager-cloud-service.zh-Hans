@@ -1,10 +1,10 @@
 ---
-title: 功能测试-Cloud Services
-description: 功能测试-Cloud Services
+title: 功能测试 — Cloud Services
+description: 功能测试 — Cloud Services
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '415'
 ht-degree: 4%
 
 ---
@@ -16,11 +16,10 @@ ht-degree: 4%
 
 * 产品功能测试
 * 自定义功能测试
-* 自定义UI测试
 
 ## 产品功能测试{#product-functional-testing}
 
-产品功能测试是围绕AEM中核心功能（例如，创作和复制）的一组稳定的HTTP集成测试(IT)，可防止客户在中断此核心功能时部署对其应用程序代码所做的更改。
+产品功能测试是一组围绕AEM中核心功能（例如，创作和复制）的稳定HTTP集成测试(IT)，可防止客户在应用程序代码中断此核心功能时部署对其应用程序代码所做的更改。
 
 只要客户将新代码部署到Cloud Manager且无法跳过，产品功能测试就会自动运行。
 
@@ -33,20 +32,14 @@ ht-degree: 4%
 但是，如果生成未生成测试JAR，则默认情况下测试通过。
 
 >[!NOTE]
->“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包含实际AEM运行时进程的日志——可以使用常规下载或尾日志功能访问这些日志。 有关详细信息，请参阅[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)。
-
-## 自定义UI测试{#custom-ui-testing}
-
-可以编写自定义UI测试，使客户能够快速构建测试自动化套件，以验证构建在AEM上的Web和移动应用程序。
-
-要进一步了解如何编写自定义UI测试，请参阅[构建UI测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests)。
+>“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包括实际AEM运行时进程的日志 — 可以使用常规下载或尾日志功能访问这些日志。 有关详细信息，请参阅[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)。
 
 
 ### 编写功能测试{#writing-functional-tests}
 
-必须将客户编写的功能测试打包为由与要部署到AEM的对象相同的Maven版本生成的单独JAR文件。 通常，这将是一个单独的Maven模块。 生成的JAR文件必须包含所有必需的依赖关系，并且通常使用maven-assembly-plugin使用jar-with-dependencies描述符创建。
+必须将客户编写的功能测试打包为由与要部署到AEM的对象相同的Maven生成的单独JAR文件。 通常，这将是一个单独的Maven模块。 生成的JAR文件必须包含所有必需的依赖项，并且通常使用maven-assembly-plugin使用jar-with-dependencies描述符创建。
 
-此外，JAR必须将Cloud-Manager-TestType清单头设置为integration-test。 将来，预计会支持其他标题值。 maven-assembly-plugin的示例配置是：
+此外，JAR必须将Cloud-Manager-TestType清单标头设置为integration-test。 将来，预计会支持其他标头值。 maven-assembly-plugin的一个示例配置是：
 
 ```java
 <build>
@@ -83,15 +76,15 @@ ht-degree: 4%
 
 例如，将执行名为`com.myco.tests.aem.ExampleIT`的类，但名为`com.myco.tests.aem.ExampleTest`的类不会执行。
 
-测试类必须是普通JUnit测试。 测试基础架构设计并配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳实践。 有关详细信息，请参阅[Git Link](https://github.com/adobe/aem-testing-clients)。
+测试类需要是正常的JUnit测试。 测试基础结构设计并配置为与aem-testing-clients测试库使用的惯例兼容。 强烈建议开发人员使用此库并遵循其最佳做法。 有关详细信息，请参阅[Git Link](https://github.com/adobe/aem-testing-clients)。
 
 ### 本地测试执行{#local-test-execution}
 
-由于测试类是JUnit测试，它们可以从主流Java IDE（如Eclipse、IntelliJ、NetBeans等）运行。
+由于测试类是JUnit测试，它们可以从Eclipse、IntelliJ、NetBeans等主流Java IDE中运行。
 
 但是，在运行这些测试时，需要设置aem-testing-clients（和基础Sling Testing Clients）预期的各种系统属性。
 
-系统属性如下：
+系统属性如下所示：
 
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
