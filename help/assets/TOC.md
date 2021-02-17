@@ -5,10 +5,10 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 73%
+source-wordcount: '474'
+ht-degree: 72%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 73%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概述和新增功能](overview.md)
-+ [a的显 [!DNL Assets] 着变化 [!DNL Cloud Service]](assets-cloud-changes.md)
++ [对a [!DNL Assets] 的显着更改 [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 体系结构](architecture.md)
 + [支持的文件格式](file-format-support.md)
 + [资产微服务概述](asset-microservices-overview.md)
@@ -29,10 +29,10 @@ ht-degree: 73%
    + [添加和上传资产](add-assets.md)
    + [搜索资产](search-assets.md)
    + [常见资产管理任务](manage-digital-assets.md)
-   + [图像的智能标记](smart-tags.md)
+   + [图像的智能标签](smart-tags.md)
    + [智能标记视频资源](smart-tags-video-assets.md)
    + [如何组织资产](organize-assets.md)
-   + [aem中 [!DNL Adobe Stock] 的使用资产](aem-assets-adobe-stock.md)
+   + [在AEM中 [!DNL Adobe Stock] 使用资产](aem-assets-adobe-stock.md)
    + [管理收藏集](manage-collections.md)
    + [元数据概述](manage-metadata.md)
    + [与 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -45,7 +45,7 @@ ht-degree: 73%
    + [下载资产](download-assets-from-aem.md)
    + [签入和签出要编辑的资产](check-out-and-submit-assets.md)
    + [资产的数字版权管理](drm.md)
-   + [水印资产](watermark-assets.md)
+   + [水印资源](watermark-assets.md)
 + 配置、管理和扩展[!DNL Assets] {#admin}
    + [开发人员文档和API参考](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
@@ -57,7 +57,7 @@ ht-degree: 73%
    + [资产HTTP API中的内容片段支持](content-fragments/assets-api-content-fragments.md)
    + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
    + [内容片段上的远程AEM GraphQL查询身份验证](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM包含内容片段的GraphQL API —— 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [AEM GraphQL API（包含内容片段） — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
    + [资产报表](asset-reports.md)
    + [串联元数据](cascading-metadata.md)
@@ -69,7 +69,7 @@ ht-degree: 73%
    + [将资产发布到 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
-   + [无头投放，内容片段和GraphQL](content-fragments/content-fragments-graphql.md)
+   + [无外设投放（包含内容片段和GraphQL）](content-fragments/content-fragments-graphql.md)
    + [管理内容片段](content-fragments/content-fragments-managing.md)
    + [为实例启用内容片段功能](content-fragments/content-fragments-configuration-browser.md)
    + [内容片段模型](content-fragments/content-fragments-models.md)
@@ -79,7 +79,7 @@ ht-degree: 73%
    + [内容片段 - 删除注意事项](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
    + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [预览- JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [预览- JSON表示](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Experience League 发布的 Dynamic Media 新闻稿](dynamic-media/dynamic-media-newsletter.md)
    + [设置 Dynamic Media](dynamic-media/administering-dynamic-media.md)
@@ -98,7 +98,7 @@ ht-degree: 73%
    + [应用 Dynamic Media 查看器预设](dynamic-media/viewer-presets.md)
    + [批次集预设](dynamic-media/batch-set-presets-dm.md)
    + [通过Dynamic Media使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [通过Dynamic Media经典使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [通过Dynamic Media Classic使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [智能图像处理](dynamic-media/imaging-faq.md)
    + [传送 Dynamic Media 资产](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](dynamic-media/hotlink-protection.md)
@@ -123,6 +123,6 @@ ht-degree: 73%
    + [发布 Dynamic Media 资产](dynamic-media/publishing-dynamicmedia-assets.md)
    + [使用 Dynamic Media 中的“选择性发布”功能](dynamic-media/selective-publishing.md)
    + [使用选择器](dynamic-media/working-with-selectors.md)
-   + [DHTML 查看器生命周期结束常见问题解答](dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + [Flash 查看器生命周期终止通知](dynamic-media/flash-viewers-eol.md)
    + [HTTP2 内容交付常见问题解答](dynamic-media/http2faq.md)
+   + [Flash查看器寿命终止](dynamic-media/flash-viewers-eol.md)
+   + [DHTML查看器寿命终止](dynamic-media/dhtml-viewer-endoflifefaqs.md)
