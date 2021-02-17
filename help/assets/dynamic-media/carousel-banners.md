@@ -2,9 +2,9 @@
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅。
 translation-type: tm+mt
-source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
+source-git-commit: 3391045d867cdfc21ab9784e20c6893d38bc78f0
 workflow-type: tm+mt
-source-wordcount: '4575'
+source-wordcount: '4561'
 ht-degree: 9%
 
 ---
@@ -86,16 +86,16 @@ ht-degree: 9%
    * [将传送横幅添加到您的网站](#adding-a-carousel-banner-to-your-website-page)页面您可以添加已复制到网站页面上的传送横幅URL或嵌入代码。
 
       * [将轮盘横幅与现有的快速视图集成](#integrating-the-carousel-banner-with-an-existing-quickview)。如果您使用的是第三方Web内容管理系统，则必须将新的传送横幅与网站上现有的快速视图实施相集成。
-   * [在Experience Manager中向网站添加传送横](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) 幅如果您是Experience Manager站点客户，则可以使用交互式媒体组件将传送集直接添加到Experience Manager中的页面。
+   * [以Experience Manager方式将传送横幅添加到您的网站](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。如果您是Experience Manager站点客户，则可以使用交互式媒体组件将传送集直接添加到页面。
 
 
 如果必须编辑传送集，请参阅[编辑传送集。](#editing-carousel-sets) 此外，您还可以视图和编辑传送 [集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
 ## 识别热点和图像映射变量{#identifying-hotspot-and-image-map-variables}
 
-开始，确定现有“快速视图”实施所使用的动态变量。 这有助于您在创建传送集的过程中在Experience Manager资产中正确输入热点或图像映射数据。
+开始，确定现有“快速视图”实施所使用的动态变量。 此方法可帮助您在创建传送集的过程中在Experience Manager资产中输入热点或图像映射数据。
 
-在将热点或图像映射添加到横幅图像时，您需要为每个热点或图像映射分配一个SKU和可选的额外变量。 以后会使用这些变量将热点或图像映射与快速视图内容相匹配。
+在向横幅图像添加热点或图像映射时，您需要分配一个SKU（库存单位）。 您还可以为每个热点或图像映射分配可选的额外变量。 以后会使用这些变量将热点或图像映射与快速视图内容相匹配。
 
 <!-- LEAVE; COMMERCE BEING ADDED LATER
 
@@ -135,7 +135,7 @@ ht-degree: 9%
 
 在最简单的情况下，快速视图URL中唯一的变量部分是产品SKU。 在这种情况下，SKU值是您向横幅图像添加热点或图像映射时唯一需要的数据。
 
-但是，在复杂情况下，快速视图URL除了SKU之外还有不同的可变元素，如类别ID、颜色代码、大小代码等。 在这种情况下，在旋转横幅功能中，每个元素都是热点或图像映射数据定义中的单独变量。
+但是，在复杂情况下，快速视图URL除了SKU之外，还具有不同的可变元素。 其中一些元素包括类别ID、颜色代码、大小代码等。 在这种情况下，在旋转横幅功能中，每个元素都是热点或图像映射数据定义中的单独变量。
 
 请考虑以下快速视图URL示例及其生成的热点或图像映射变量：
 
@@ -215,7 +215,7 @@ ht-degree: 9%
    要删除幻灯片，请点按或单击幻灯片，然后点按或单击工具栏中的&#x200B;**[!UICONTROL 删除幻灯片]**。 要移动幻灯片，请点按重新排序图标，然后按住并移至所需位置。
 
 1. 在幻灯片中添加图像后，可以向图像中添加热点和/或图像映射。 请参阅[添加热点或图像映射](#adding-hotspots-or-image-maps-to-an-image-banner)。
-1. 您可以通过点按或单击“行为”和“外观”选项卡，并调整传送横幅的外观或特定组件的行为方式来更改传送集的可视设计和行为。 有关如何使用查看器编辑器的详细信息，请参阅[管理查看器预设](/help/assets/dynamic-media/viewer-presets.md)。
+1. 您可以更改传送集的可视设计和行为。 点按或单击“行为”和“外观”选项卡，并调整旋转横幅的外观或特定组件的行为方式。 有关如何使用查看器编辑器的详细信息，请参阅[管理查看器预设](/help/assets/dynamic-media/viewer-presets.md)。
 
    >[!NOTE]
    >
@@ -253,7 +253,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->在[交互式图像](/help/assets/dynamic-media/interactive-images.md)或传送横幅中向图像添加热点时，热点信息会存储在相对于图像位置的同一元数据位置。 无论是交互式图像还是传送横幅，此点均为真。 此功能意味着您可以在任一查看器中轻松重复使用同一图像及其定义的热点数据。
+>在将热点添加到图像横幅时，热点信息会存储在相同的元数据位置 — 相对于图像的位置。 无论是交互式图像还是传送横幅，此点均为真。 此功能意味着您可以在任一查看器中轻松重复使用同一图像及其定义的热点数据。
 但是，请注意，传送横幅支持图像上的图像映射，这些图像上可能还包含热点；交互式图像不会。 如果您要创建使用相同图像的交互式图像或传送横幅，请记住此提示。 请考虑改为使用同一图像的单独副本创建交互式图像和传送横幅。
 
 >[!NOTE]
@@ -285,7 +285,7 @@ ht-degree: 9%
       * 如果您不是Experience Manager站点<!-- or Ecommerce -->客户：
 
          * 定义变量。 请参阅[识别热点变量](#identifying-hotspot-and-image-map-variables)。
-         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），即您所优惠的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充“快速视图”模板的变量部分，以便系统能够将点按的热点与特定SKU的“快速视图”关联。
+         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），即您所优惠的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充“快速视图”模板的变量部分。 系统现在可以将点按的热点与特定SKU的快速视图关联。
          * （可选）如果您必须在“快速”视图中使用其他变量来进一步标识产品，请点按&#x200B;**[!UICONTROL 添加常规变量]**。 在文本字段中，指定一个额外的变量。 例如，类别=Mens是一个添加的变量。
 
          * 有关详细信息，请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
@@ -304,7 +304,7 @@ ht-degree: 9%
 
    * 点按&#x200B;**[!UICONTROL 体验片段]**。
 
-      * 如果您是AEM Sites客户，请点按搜索图标（放大镜）以打开体验片段页面。 要返回到热点管理页面，请点按或单击要使用的体验片段，然后点按页面右上角的选择。
+      * 如果您是AEM Sites客户，请点按搜索图标（放大镜）以打开体验片段页面。 要返回到“热点”管理页面，请点按您要使用的体验片段，然后点按页面右上角的选择。
 请参阅[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)。
 
       * 指定在横幅上显示的体验片段的宽度和高度。
@@ -348,7 +348,7 @@ ht-degree: 9%
 
 1. 要编辑传送集，请执行下列任一操作：
 
-   * 要添加幻灯片，请点按&#x200B;**[!UICONTROL 添加幻灯片]**&#x200B;图标，然后导航到要添加到该幻灯片的资产，然后点按或单击复选标记。
+   * 要添加幻灯片，请点按&#x200B;**[!UICONTROL 添加幻灯片]**&#x200B;图标。 导航到要添加到该幻灯片的资产，然后点按或单击复选标记。
    * 要对幻灯片重新排序，请将幻灯片拖到新位置（选择重新排序图标以移动项目）。
    * 要添加热点或图像映射，请单击热点或图像映射图标，并参阅[添加热点和图像映射](#adding-hotspots-or-image-maps-to-an-image-banner)。
    * 要编辑轮盘集的外观或行为，请点按&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡或&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡，然后设置所需的选项。
@@ -362,7 +362,7 @@ ht-degree: 9%
 
 ## （可选）预览传送横幅{#optional-previewing-carousel-banners}
 
-您可以使用预览来查看您的传送横幅对客户的外观，并测试传送横幅热点和图像映射以确保它们按预期行为。
+您可以使用预览来查看传送横幅对客户的外观。 使用预览还可以测试传送横幅的热点和图像映射，以确保它们按预期的方式工作。
 
 当您对传送横幅满意时，可以发布它。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
@@ -390,11 +390,11 @@ ht-degree: 9%
 
 ## 发布传送横幅{#publishing-carousel-banners}
 
-发布传送以使用它。 发布传送集时，将激活URL和嵌入代码。 它还将传送发布到Dynamic Media云，该云与CDN集成，可实现可扩展且高性能的投放。
+要使用传送，您必须发布它。 发布传送集时，将激活URL和嵌入代码。 它还将传送发布到Dynamic Media云，该云与CDN集成，可实现可扩展且高性能的投放。
 
 >[!NOTE]
 如果您将具有热点的现有交互式图像用于传送横幅，则必须在发布传送横幅后单独发布该交互式图像。
-此外，如果您修改了在传送横幅中使用的预先存在的已发布交互式图像，则必须先发布交互式图像，然后才能将这些更改反映到传送横幅中。
+此外，如果您修改在传送横幅中使用的已发布交互式图像，则发布交互式图像，以便这些更改反映在传送横幅中。
 
 有关如何发布传送横幅的信息，请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
@@ -405,7 +405,7 @@ ht-degree: 9%
 >[!NOTE]
 如果您是AEM Sites客户，则可以通过将交互式媒体组件拖动到页面来直接将传送横幅添加到页面。 请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-但是，如果您是独立的Experience Manager资产客户，您可以手动将传送横幅添加到您的网站登陆页，如本主题中所述。
+但是，如果您是独立的Experience Manager资产客户，则可以手动将传送横幅添加到您的网站登陆页。
 
 1. 复制已发布的传送集的嵌入代码。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
@@ -431,7 +431,7 @@ ht-degree: 9%
 
 这些调用不代表独立的公共API调用，网页逻辑可以从任意步骤调用这些调用。 相反，这些调用属于链式调用，即，每个后续步骤都隐藏在前一步的最后阶段（回调）。
 
-在轮盘横幅将替换步骤1和部分步骤2的同时，当用户在轮盘横幅中单击热点或图像映射时，查看器将处理此类用户交互。 查看器将返回一个事件到网页，其中包含之前添加的所有热点或图像映射数据。
+当用户单击热点或图像映射时，轮盘横幅将替换第1步，并部分替换第2步时，查看器将处理此类交互。 查看器将返回一个事件到网页，其中包含之前添加的所有热点或图像映射数据。
 
 在此类事件处理程序中，前端代码会执行下列操作：
 
