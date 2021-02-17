@@ -2,9 +2,9 @@
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅。
 translation-type: tm+mt
-source-git-commit: f5627a6e885a556700fbf56c4c63f0f4d6a89da0
+source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
 workflow-type: tm+mt
-source-wordcount: '4576'
+source-wordcount: '4575'
 ht-degree: 9%
 
 ---
@@ -224,7 +224,7 @@ ht-degree: 9%
    >    * 动画. 默认情况下，每张幻灯片过渡都是淡入淡出。 您可以将其更改为幻灯片过渡。
    >    * 按钮的样式。 用户点击每个点或数字即可旋转横幅。 您可以更改设置指示符按钮的显示位置（以及它们是数字或虚线样式）以及它们的大小。
    >    * 更改图像映射的高亮样式或用于热点的图标。
-   >    * 在编辑查看器预设之前，请选择要作为预设基础的样式。 如果您不选择样式，则在开始编辑查看器预设时，如果您决定更改为其他预设，则会丢失所有更改。
+   >    * 在编辑查看器预设之前，请选择要作为预设基础的样式。 如果您不选择样式，则在开始编辑查看器预设时，如果您更改为其他预设，则会丢失所有更改。
 
 
    您还可以预览传送横幅的外观。 请参阅[（可选）预览传送横幅](#optional-previewing-carousel-banners)。
