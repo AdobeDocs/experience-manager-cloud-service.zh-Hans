@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
+source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1178'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,7 @@ AEM作为Cloud Service SDK Build Analyzer Maven Plugin可检测特定项目中�
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.0的发布日期为2021年2月11日。
+Best Practices Analyzer v2.1.2的发布日期为2021年2月18日。
 
 ### 最佳实践分析器{#what-is-new-bpa}的新增功能
 
@@ -153,6 +153,19 @@ Best Practices Analyzer v2.1.0的发布日期为2021年2月11日。
 * 能够检测使用的节点存储和数据存储的类型。
 * 能够检测Dynamic Media的使用情况。
 * 能够检测使用的Java版本。
+
+## 代码重构工具 {#code-refactoring-tools}
+
+### 代码重构工具{#what-is-new-crt}的新增功能
+
+* 已发布AIO-CLI插件的新版本。 此插件的最新版本包括存储库Modernizer的多个错误修复。
+请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以了解有关此插件的更多信息。
+
+### 错误修复 {#bug-fixes-crt}
+
+* 在Repository Modernizer上完成了多个错误修复。
+请参阅[GitHub资源：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)以了解更多详细信息。
+
 
 
 
