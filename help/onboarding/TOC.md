@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
+source-git-commit: 39c7679e390067b520f36c4053133caeb9541875
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 36%
+source-wordcount: '673'
+ht-degree: 35%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 36%
       + [代码质量测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html)
       + [自定义代码质量规则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
       + [功能测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html)
-      + [体验审核测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/experience-audit-testing.html)
+      + [Experience Audit Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/experience-audit-testing.html)
    + [访问和管理日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)
    + [了解通知](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/notifications.html)
    + 创建 AEM 应用程序项目 {#create-application-project}
@@ -59,7 +59,7 @@ ht-degree: 36%
       + [获取自定义域名](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html)
       + [添加自定义域名](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
       + [添加TXT记录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html)
-      + [检查自定义域名状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html)
+      + [正在检查自定义域名状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html)
       + [配置DNS设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html)
       + [正在检查DNS记录状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
       + [查看和更新自定义域名](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
@@ -73,7 +73,7 @@ ht-degree: 36%
       + [取消应用IP允许列表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
       + [删除IP允许列表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [检查IP允许列表状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
-   + Cloud Manager的发行说明{#release-notes-cloud-manager}
+   + Cloud Manager {#release-notes-cloud-manager}发行说明
       + [最新发行说明（2021.2.0 版）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [2021.1.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [2020.12.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
@@ -95,7 +95,10 @@ ht-degree: 36%
    + [AEM as a Cloud Service 和 Web 无障碍准则](accessibility/web-accessibility.md)
    + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
 + 迁移方法{#migration-methodology}
-   + [作为Cloud Service迁入Adobe Experience Manager](migration-methodology/getting-started.md)
+   + [迁移到Adobe Experience Manager作为Cloud Service](migration-methodology/getting-started.md)
 + 最佳实践 {#best-practices}
    + [SEO 和 URL 管理](best-practices/seo-and-url-management.md)
+   + [评估KPI](best-practices/assessing-kpis.md)
+   + [协调KPI](best-practices/aligning-kpis.md)
+   + [选择合适的团队](best-practices/choose-right-team.md)
 + [工具控制台概述](tools-consoles.md)
