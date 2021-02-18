@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager Assets] 作为 [!DNL Cloud Service]的显着变化'
 description: 与[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 有显着变化。
 translation-type: tm+mt
-source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
+source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '743'
 ht-degree: 4%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 4%
 * [!DNL Assets] 主页体验不可用。请参见[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)。
 * 重复资产检测与[在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的工作方式不同。
 * 与早期的[!DNL Experience Manager]版本相比，仅用于放置(FPO)再现的生成方式有所不同。 请参阅 [!DNL Experience Manager] 的[FPO再现作为 [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)。
+* 上传ZIP存档时，作为[!DNL Cloud Service]的[!DNL Experience Manager]不会提取该存档中绑定的资产。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)中的[ZIP提取。
 
 使用资产微服务生成的标准演绎版使用相同的命名约定以向后兼容的方式存储在资产存储库节点中。
 
