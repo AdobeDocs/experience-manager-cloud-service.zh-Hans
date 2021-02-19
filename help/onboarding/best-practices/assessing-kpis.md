@@ -2,15 +2,22 @@
 title: 访问KPI
 description: 访问KPI
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
 
 # 你是在衡量最重要的东西吗？
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="评估KPI"
+>abstract="在开始Adobe Experience Manager发布之前，所有与项目有利害关系的人都应了解您的前三大KPI及其重要性。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="协调KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="选择合适的团队"
 
 在开始Adobe Experience Manager发布之前，所有与项目有利害关系的人都应了解您的前三大KPI及其重要性。
 
