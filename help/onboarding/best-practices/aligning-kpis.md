@@ -2,9 +2,9 @@
 title: 协调KPI
 description: 协调KPI
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 
 # 要选择合适的KPI，请开始您的业务目标
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_alignkpis"
+>title="协调KPI"
+>abstract="在数字世界中，您几乎可以衡量一切。 为您的Adobe Experience Manager实施选择适当的KPI将帮助您的团队专注于最重要的方面。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="评估KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="选择合适的团队"
 
 在数字世界中，您几乎可以衡量一切。 为Adobe Experience Manager实施选择三个KPI将帮助您的团队专注于最重要的方面。
 
