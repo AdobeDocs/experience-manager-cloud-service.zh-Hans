@@ -2,7 +2,7 @@
 title: What is Different and What is New - Adobe Experience Manager作为Cloud Service
 description: 'What is Different and What is New - Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 938f2b45a99e8884c166656694424d2123121369
+source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 10%
@@ -121,7 +121,7 @@ Cloud Manager已发展成为自助门户，可在此创建和配置AEM作为Clou
 
 * 获得有关这些组件的重要生命周期事件的通知（例如，产品更新）。
 
-Cloud Manager可跨多个地理区域在数据中心创建环境，提供全球覆盖。 CDN现场点(PoP)确保为遍布全球的客户提供低延迟内容投放。
+Cloud Manager可跨多个地理区域在数据中心创建环境，提供全球覆盖。 CDN存在点(PoP)确保为遍布全球的客户提供低延迟内容投放。
 
 >[!NOTE]
 >请参阅[将Experience Manager作为Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)访问，以开始将AEM中的Cloud Manager作为Cloud Service。
