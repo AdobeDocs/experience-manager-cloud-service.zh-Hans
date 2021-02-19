@@ -2,15 +2,22 @@
 title: 合适的人，合适的角色
 description: 合适的人，合适的角色
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 
 # **首先，让合适的人扮演合适的角色**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="选择合适的团队"
+>abstract="让合适的人员胜任正确的工作，帮助您推动Adobe Experience Manager部署取得成功。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="协调KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="评估KPI"
 
 在您的组织中，有几个部门拥有数字体验的不同方面。 没有治理，舞台就注定会无休止的辩论、内斗和混乱。
 
