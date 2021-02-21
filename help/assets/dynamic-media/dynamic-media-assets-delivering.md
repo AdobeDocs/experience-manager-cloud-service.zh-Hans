@@ -2,19 +2,19 @@
 title: 传送 Dynamic Media 资产
 description: 通过Dynamic Media，您可以选择多种方式将Dynamic Media资产（视频和图像）交付到您的网站。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 62%
+source-wordcount: '105'
+ht-degree: 56%
 
 ---
 
 
 # 传送 Dynamic Media 资产{#delivering-dynamic-media-assets}
 
-您如何交付Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
+您如何提供Dynamic Media资产（视频和图像）取决于网站的实施方式。
 
-通过 Dynamic Media，您可以选择以下方式：
+有了Dynamic Media，您有以下几种选择：
 
 * 如果您的网站托管在 AEM 上，您会希望将 Dynamic Media 资产直接添加到您的页面。
 * 如果您的网站未托管在 AEM 上，请参阅在触屏优化用户界面中[传送 Dynamic Media 资产](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)。
