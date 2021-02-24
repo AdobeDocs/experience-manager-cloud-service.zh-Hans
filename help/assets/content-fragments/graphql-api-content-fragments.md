@@ -2,7 +2,7 @@
 title: AEM GraphQL API，与内容片段一起使用
 description: 了解如何使用Adobe Experience Manager(AEM)中的内容片段作为AEM GraphQL API的无外设内容投放的Cloud Service。
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 1%
@@ -275,7 +275,7 @@ GraphQL规范提供了有关如何创建用于查询特定实例上的数据的�
 
    * 其中三个由用户控制：`author`、`main`和`referencearticle`。
 
-   * 其他字段由AEM自动添加，表示提供特定内容片段相关信息的有用方法；在此示例中，`_path`、`_metadata`、`_variations`。 这些[帮助字段](#helper-fields)用前面的`_`标记，以区分用户定义的内容和自动生成的内容。
+   * 其他字段由AEM自动添加，表示提供特定内容片段相关信息的有用方法；在此示例中，`_path`、`_metadata`、`_variations`。 这些[帮助字段](#helper-fields)标有前面的`_`，以区分用户定义的内容和自动生成的内容。
 
 1. 在用户基于文章模型创建内容片段后，可以通过GraphQL进行询问。 有关示例，请参阅[示例查询](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)（基于[示例内容片段结构，以与GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)一起使用）。
 
@@ -321,8 +321,8 @@ GraphQL for AEM支持列表类型。 所有支持的内容片段模型数据类�
 
 | 内容片段模型 — 数据类型 | 图形QL类型 | 描述 |
 |--- |--- |--- |
-| 单行文本 | 字符串，[字符串] |  用于简单字符串，如作者姓名、位置名称等 |
-| 多行文本 | 字符串 |  用于输出文本，如文章正文 |
+| 单行文本 | 字符串，[字符串] |  用于简单字符串，如作者姓名、位置名称等。 |
+| 多行文本 | 字符串 |  用于输出文本，如文章的正文 |
 | 数字 |  浮点，[浮点] | 用于显示浮点数和正则数 |
 | 布尔型 |  布尔型 |  用于显示复选→框的简单true/false语句 |
 | 日期和时间 | 日历 |  用于以ISO 8086格式显示日期和时间 |
