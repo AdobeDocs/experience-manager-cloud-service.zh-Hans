@@ -2,7 +2,7 @@
 title: 在 Dynamic Media 中激活热链接保护
 description: 有关如何在Dynamic Media中激活热链接保护的信息。
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 6%
@@ -18,6 +18,4 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->此功能要求您使用与Adobe Experience Manager Dynamic Media绑定的现成CDN。 此功能不支持任何其他自定义CDN。
-
-要激活热链接保护，管理员必须创建支持票证以请求对您的Dynamic Media帐户进行配置更改。 激活热链路保护无需额外费用。
+>此功能要求您使用与Adobe Experience Manager Dynamic Media绑定的现成CDN。 此功能不支持任何其他自定义CDN。 要激活热链接保护，管理员必须创建支持票证以请求对您的Dynamic Media帐户进行配置更改。 激活热链路保护无需额外费用。
