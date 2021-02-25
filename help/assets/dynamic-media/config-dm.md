@@ -2,9 +2,9 @@
 title: 配置 Dynamic Media 云服务
 description: 有关如何将Adobe Experience Manager中的Dynamic Media配置为Cloud Service的信息。
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3893'
+source-wordcount: '3883'
 ht-degree: 5%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # 关于配置Dynamic Media Cloud Service {#configuring-dynamic-media}
 
-如果您将Adobe Experience Manager用于不同的环境，如开发、升级和实时生产，请为这些环境中的每个配置Dynamic MediaCloud Services。
+如果将Adobe Experience Manager用于不同的环境（如开发、暂存和实时生产），请为这些环境中的每个配置Dynamic MediaCloud Services。
 
 ## Dynamic Media{#architecture-diagram-of-dynamic-media}的架构图
 
@@ -34,7 +34,6 @@ ht-degree: 5%
 >* [缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
 >* [HTTP/2 内容交付](/help/assets/dynamic-media/http2faq.md)
->* [将Dynamic Media查看器与Adobe Analytics和Experience Platform Launch集成](/help/assets/dynamic-media/launch.md)
 >* 在CDN级别重定向URL
 >* Akamai ChinaCDN(在中国实现最佳投放)
 
