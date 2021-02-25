@@ -2,9 +2,9 @@
 title: HTTP2 内容交付常见问题解答
 description: 了解HTTP2内容投放。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '786'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 3%
 # HTTP2 内容交付常见问题解答{#http-delivery-of-content-faq}
 
 Adobe欣然宣布推出HTTP/2投放内容。 使用HTTP/2时，整体性能会有所提高。
+
+>[!NOTE]
+>
+>此功能要求您使用与Adobe Experience Manager Dynamic Media绑定的现成CDN。 此功能不支持任何其他自定义CDN。
 
 ## 什么是HTTP/2?{#what-is-http}
 
@@ -40,7 +44,7 @@ Adobe自己的测试得出以下结果：
 要使用HTTP/2，必须满足以下要求：
 
 * 为您的富媒体请求使用安全HTTPS。
-* 将Adobe捆绑的CDN(内容投放网络)用作Dynamic Media Classic许可证的一部分。
+* 将Adobe捆绑的CDN(内容投放网络)作为Dynamic Media Classic许可证的一部分。
 * 使用专用域（即`images.company.com`或`mycompany.scene7.com`），而不使用通用Dynamic Media域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
    要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
