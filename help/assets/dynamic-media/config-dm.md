@@ -2,9 +2,9 @@
 title: 配置 Dynamic Media 云服务
 description: 有关如何将Adobe Experience Manager中的Dynamic Media配置为Cloud Service的信息。
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3893'
 ht-degree: 5%
 
 ---
@@ -12,19 +12,32 @@ ht-degree: 5%
 
 # 关于配置Dynamic Media Cloud Service {#configuring-dynamic-media}
 
-如果将Adobe Experience Manager用于不同的环境（如开发、暂存和实时生产），请为这些环境中的每个配置Dynamic MediaCloud Services。
+如果您将Adobe Experience Manager用于不同的环境，如开发、升级和实时生产，请为这些环境中的每个配置Dynamic MediaCloud Services。
 
 ## Dynamic Media{#architecture-diagram-of-dynamic-media}的架构图
 
 以下架构图描述了Dynamic Media的工作方式。
 
-借助新架构，AEM负责主源资源并与Dynamic Media同步以处理和发布资源：
+借助新的架构，Experience Manager负责主源资源并与Dynamic Media同步以处理和发布资源：
 
 1. 将主源资产上传到AEM后，该资产将复制到Dynamic Media。 此时，Dynamic Media将处理所有资产处理和再现生成，如图像的视频编码和动态变体。
 1. 生成演绎版后，AEM可以安全访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回AEM实例)。
 1. 在内容准备好发布和批准后，它会触发Dynamic Media服务，将内容推送到投放服务器并缓存CDN中的内容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
+
+>[!NOTE]
+>
+>以下功能列表要求您使用与Adobe Experience Manager - Dynamic Media捆绑的现成CDN。 这些功能不支持任何其他自定义CDN。
+>
+>* [智能图像处理](/help/assets/dynamic-media/imaging-faq.md)
+>* [缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
+>* [HTTP/2 内容交付](/help/assets/dynamic-media/http2faq.md)
+>* [将Dynamic Media查看器与Adobe Analytics和Experience Platform Launch集成](/help/assets/dynamic-media/launch.md)
+>* 在CDN级别重定向URL
+>* Akamai ChinaCDN(在中国实现最佳投放)
+
 
 <!-- OBSOLETE CONTENT
 
