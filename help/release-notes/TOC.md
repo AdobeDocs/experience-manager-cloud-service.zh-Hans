@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 发行说明
 breadcrumb-title: 发行说明
 user-guide-description: 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。
 translation-type: tm+mt
-source-git-commit: 137d8f6c432e4d5dea744c96e01782e81bd4cfee
+source-git-commit: fe26fe183c437d6ffe18e1db7fcdb74ad9448982
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '107'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,9 @@ ht-degree: 100%
 + [发行信息](/help/release-notes/home.md)
 + 发行说明 {#release-notes}
    + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
-   + 2020 {#2020}
+   + 2021年{#2021}
+      + [2021.1.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
+   + 2020年{#2020}
       + [2020.12.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
       + [2020.11.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
       + [2020.10.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
