@@ -2,9 +2,9 @@
 title: 智能成像
 description: 智能图像处理应用每个用户的独特查看特性，自动提供为其体验优化的正确图像，从而提高性能和参与度。
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1856'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 2%
 ## 什么是“智能成像”？{#what-is-smart-imaging}
 
 Smart Imaging技术应用Adobe Sensei AI功能并与现有“图像预设”配合使用。 它根据客户端浏览器功能自动优化图像格式、大小和质量，从而增强图像投放性能。
+
+>[!NOTE]
+>
+>此功能要求您使用与Adobe Experience Manager Dynamic Media绑定的现成CDN。 此功能不支持任何其他自定义CDN。
 
 Smart Imaging还得益于与Adobe一流的高级CDN(内容投放网络)服务完全集成所带来的性能提升。 此服务可找到服务器、网络和对点之间的最佳Internet路由。 它查看的是最低延迟或最低的数据包丢失率，或两者兼而有之，而不是简单地使用因特网上的默认路由。
 
