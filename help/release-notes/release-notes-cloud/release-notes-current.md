@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1017'
 ht-degree: 4%
 
 ---
@@ -53,22 +53,18 @@ ht-degree: 4%
 
 ## [!DNL Assets] {#what-is-new-assets}中的新增功能
 
-* 资产可以使用[!DNL Experience Manager Assets Brand Portal]进行来源补充。 它有助于从机构用户那里为新的营销活动、照片和项目寻找资产。
+* 在[!DNL Brand Portal]中，引入了新的下载设置，允许您在下载文件夹、集合等时为每个资产创建单独的文件夹。 请参阅[下载设置](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## [!DNL Assets] {#bug-fixes-assets}中的错误修复
 
 * 在解决命名冲突后创建现有资产的新版本时，将覆盖原始资产的元数据。 (CQ-4313594)
 * 打印带有长注释文本的资产时，即使有空间，注释文本也会被裁切。 (CQ-4314101)
+* 当选择多个资产以更新属性时，有时会发生错误，或者取消选择的资产的属性会被更新。 (CQ-4316532)
+* 尝试打开[!UICONTROL 资产管理搜索边栏]时，页面仍为空，单击[!UICONTROL 编辑] > [!UICONTROL 设置]会生成错误。 (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
