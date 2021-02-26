@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 96%
+source-wordcount: '832'
+ht-degree: 90%
 
 ---
 
@@ -65,11 +65,10 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 
 ## 不允许更改发布存储库 {#changes-to-publish-repo}
 
-AEM 云服务不允许直接更改发布存储库。在 On-Premise AEM 或 AMS 上 AEM 的先前版本中，可以直接对发布存储库进行代码更改以执行一些操作，例如创建用户、更新用户配置文件和创建节点。现在不能这样做，但可通过以下方式进行缓解：
+除了发布层`/home`文件夹下的更改之外，不允许在AEMCloud Service中直接更改发布存储库。 在AMS上的先前版本的内部部署AEM或AEM中，可以直接对发布存储库进行代码更改。 可以通过以下方式缓解某些限制：
 
 * 对于内容和基于内容的配置：对创作实例进行更改并将其发布。
 * 对于代码和配置：在 GIT 存储库中进行更改，然后运行 CI/CD 管道以将其推出。
-* 对于与用户相关的数据（如表单提交或配置文件数据）：使用 Experience Cloud 平台或其他第三方会话感知型存储中的统一配置文件服务。
 
 ## 不允许自定义运行模式 {#custom-runmodes}
 
@@ -109,7 +108,7 @@ AEM 云服务中不能使用其他运行模式或自定义运行模式。
 
 ## 资产处理和交付 {#asset-handling}
 
-资产上传、处理和下载已作为一种Cloud Service在Assets中进行了优化，以提高效率，从而实现更好的扩展和更快的上传和下载。 但是，这可能会影响一些现有的自定义代码。
+资产上传、处理和下载已作为一种Cloud Service在资产中进行了优化，可以更高效地实现更好的扩展以及更快的上传和下载。 但是，这可能会影响一些现有的自定义代码。
 
 * AEM 早期版本中的默认工作流程 **DAM 资产更新**&#x200B;不再可用。
 * **不进行转换**&#x200B;直接交付二进制文件的网站组件应使用直接下载。
