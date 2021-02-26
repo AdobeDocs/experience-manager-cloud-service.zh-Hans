@@ -2,9 +2,9 @@
 title: 为服务器端API生成访问令牌
 description: 了解如何通过生成安全的JWT令牌来促进第三方服务器与作为Cloud Service的AEM之间的通信
 translation-type: tm+mt
-source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
+source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -141,4 +141,11 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 服务凭据吊销{#service-credentials-revocation}
 
-如果需要吊销JWT承载令牌，请向客户支持提交请求。
+如果需要撤销凭据，您需要使用以下步骤向客户支持提交请求：
+
+1. 在用户界面中禁用Adobe Admin Console的技术帐户用户：
+   * 在Cloud Manager中，按&#x200B;**...**&#x200B;按钮。 这将打开产品用户档案页
+   * 现在，单击&#x200B;**AEM Users**&#x200B;用户档案，以显示用户的列表
+   * 单击&#x200B;**API凭据**&#x200B;选项卡，然后找到相应的技术帐户用户并将其删除
+2. 联系客户支持，并请求删除该特定环境的服务凭据
+3. 最后，您可以再次生成凭据，如本文档中所述。 另外，请确保创建的新技术帐户用户具有适当的权限。
