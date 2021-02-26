@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
+source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 5%
 
 ---
@@ -75,4 +75,4 @@ AEM托管CDN将通过以下方式向每个请求添加标头：
 * 大洋洲
 * SA南美洲
 
-此信息对于根据请求的来源（国家）重定向到其他url等用例可能很有用。 但是，在此特定用例中，不应缓存重定向，因为它会有所不同。 如果需要，您可以使用`Cache-Control: private`来阻止缓存。 另请参阅[缓存](/help/implementing/dispatcher/caching.md#html-text)。
+此信息对于根据请求的来源（国家）重定向到其他url等用例可能很有用。 使用Vary头缓存取决于地理信息的响应。 例如，重定向到特定国家/地区的登陆页应始终包含`Vary: x-aem-client-country`。 如果需要，您可以使用`Cache-Control: private`来阻止缓存。 另请参阅[缓存](/help/implementing/dispatcher/caching.md#html-text)。
