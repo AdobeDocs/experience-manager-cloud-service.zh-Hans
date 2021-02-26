@@ -4,9 +4,9 @@ user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 translation-type: tm+mt
-source-git-commit: 85c802029f8499ef1d97bc40e2cce5015f19c49b
+source-git-commit: 7b17605ceb794969b079c21a639dd145f8e028af
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '872'
 ht-degree: 37%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 37%
       + [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)
       + [自定义代码质量规则](cloud-manager/custom-code-quality-rules.md)
       + [功能测试](/help/implementing/cloud-manager/functional-testing.md)
-      + [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [UI测试](/help/implementing/cloud-manager/ui-testing.md)
    + [访问和管理日志](cloud-manager/manage-logs.md)
    + [了解通知](cloud-manager/notifications.md)
@@ -32,7 +32,7 @@ ht-degree: 37%
       + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [查看、更新和替换SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [查看和更新并替换SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [检查SSL证书的状态](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [删除SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + 管理自定义域名{#custom-domain-names}
@@ -40,10 +40,10 @@ ht-degree: 37%
       + [获取自定义域名](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
-      + [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [正在检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
       + [配置DNS设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [正在检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [查看、更新和替换自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [查看和更新并替换自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [更新自定义域名的SSL证书](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + 管理IP允许列表{#ip-allow-lists}
@@ -54,6 +54,7 @@ ht-degree: 37%
       + [取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [删除IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [检查IP允许列表状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [Cloud Manager常见问题解答](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + 管理代码 {#managing-code}
    + [Maven 项目版本处理](cloud-manager/project-version-handling.md)
    + [访问 Git](cloud-manager/accessing-git.md)
@@ -69,7 +70,7 @@ ht-degree: 37%
    + [AEM技术基础](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [为服务器端API生成访问令牌](developing/introduction/generating-access-tokens-for-server-side-apis.md)
-   + [AEM中的头和头](developing/headful-headless.md)
+   + [AEM中的Headful和Headless](developing/headful-headless.md)
    + 完整堆栈AEM开发{#full-stack}
       + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
       + [AEM UI的结构](developing/introduction/ui-structure.md)
@@ -86,31 +87,31 @@ ht-degree: 37%
          + [模板](developing/components/templates.md)
          + [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
          + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
-         + [内容服务的JSON导出程序](developing/components/json-exporter.md)
+         + [内容服务的JSON导出器](developing/components/json-exporter.md)
          + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
          + [图像编辑器](developing/components/image-editor.md)
-         + [装饰标签](developing/components/decoration-tag.md)
+         + [修饰标签](developing/components/decoration-tag.md)
          + [使用隐藏条件](developing/components/hide-conditions.md)
          + [组件参考指南](developing/components/reference.md)
       + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
-      + [将标记构建到AEM应用程序中](/help/implementing/developing/introduction/tagging-applications.md)
+      + [将标记构建到AEM应用程序](/help/implementing/developing/introduction/tagging-applications.md)
       + 搜索 {#search}
          + [查询生成器 API](/help/implementing/developing/introduction/query-builder-api.md)
-         + [查询生成器谓词引用](/help/implementing/developing/introduction/query-builder-predicates.md)
+         + [查询 Builder谓词引用](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [实现自定义谓词计算器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [自定义错误页](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM节点类型](/help/implementing/developing/introduction/node-types.md)
       + [Java API准则](/help/implementing/developing/introduction/java-api-guidelines.md)
    + 混合AEM开发{#hybrid}
-      + [混合和SPA与AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [混合和SPA(含AEM)](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA简介和演练](developing/hybrid/introduction.md)
       + [SPA WKND教程](developing/hybrid/wknd-tutorial.md)
       + [使用React快速入门](developing/hybrid/getting-started-react.md)
-      + [角度式入门](developing/hybrid/getting-started-angular.md)
-      + [SPA深海潜水](developing/hybrid/deep-dives.md)
+      + [使用Angular](developing/hybrid/getting-started-angular.md)
+      + [SPA深潜](developing/hybrid/deep-dives.md)
       + [为AEM开发SPA](developing/hybrid/developing.md)
-      + [SPA编辑器概述](developing/hybrid/editor-overview.md)
+      + [SPA Editor概述](developing/hybrid/editor-overview.md)
       + [SPA Blueprint](developing/hybrid/blueprint.md)
       + [SPA页面组件](developing/hybrid/page-component.md)
       + [动态模型到组件映射](developing/hybrid/model-to-component-mapping.md)
@@ -122,15 +123,15 @@ ht-degree: 37%
       + [启动集成](developing/hybrid/launch-integration.md)
       + [SPA参考文档](developing/hybrid/reference-materials.md)
    + 无外设体验管理 {#headless}
-      + [无头和AEM](developing/headless/introduction.md)
+      + [无外设和AEM](developing/headless/introduction.md)
       + 入门指南{#getting-started}
          + [创建配置](developing/headless/getting-started/create-configuration.md)
          + [创建内容片段模型](developing/headless/getting-started/create-content-model.md)
          + [创建资产文件夹](developing/headless/getting-started/create-assets-folder.md)
          + [创建内容片段](developing/headless/getting-started/create-content-fragment.md)
-         + [访问和交付内容片段](developing/headless/getting-started/create-api-request.md)
+         + [访问和传送内容片段](developing/headless/getting-started/create-api-request.md)
       + 内容片段 {#content-fragments}
-         + [无头投放，内容片段和GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+         + [无外设投放（包含内容片段和GraphQL）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
          + [使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
          + [为实例启用内容片段功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
          + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
@@ -140,15 +141,15 @@ ht-degree: 37%
          + [使用关联内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
          + [元数据 - 片段属性](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
          + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-         + [预览- JSON表示法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
-      + 投放API {#delivery-api}
+         + [预览- JSON表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+      + 投放 API {#delivery-api}
          + [内容片段REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
          + [内容片段图QL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-         + [AEM包含内容片段的GraphQL API —— 示例内容和查询](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [AEM GraphQL API（包含内容片段） — 示例内容和查询](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [内容片段上的远程AEM GraphQL查询身份验证](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
 + Developer Tools {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
-   + [内容包Maven插件](/help/implementing/developing/tools/maven-plugin.md)
+   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo 工具](/help/implementing/developing/tools/repo-tool.md)
    + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + 个性化 {#personalization}
