@@ -2,7 +2,7 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ ht-degree: 100%
 
 继承是一种机制，通过该机制，可以将内容从一个组件自动推送到另一个组件。继承组件可能是多种情况的产物，包括：
 
-* 多站点管理 <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [多站点管理](/help/sites-cloud/administering/msm/overview.md)
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)（当基于 Live Copy 时）。
 
 您可以取消（随后也可以重新启用）继承。根据组件的不同，如果组件位于 Live Copy 或启动项的一个页面（基于 Live Copy）中，则可以从组件工具栏中执行此操作。
