@@ -2,7 +2,7 @@
 title: 基本操作
 description: 轻松自如地导航 AEM 及其基本用法
 translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 99%
@@ -452,8 +452,8 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 **引用**&#x200B;显示与所选资源的所有关联。例如，在&#x200B;**站点**&#x200B;控制台中，页面的[引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)会显示以下项目：
 
 * [启动项](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live Copy<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* 语言副本<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live Copy](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [语言副本](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * 内容引用：
 
    * 从其他页面到所选页面的链接
