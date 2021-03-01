@@ -2,7 +2,7 @@
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -130,10 +130,7 @@ ht-degree: 98%
 >
 >应避免使用 ISO-639-1 定义的双字母代码作为页面名称，除非该页面是语言根页面。
 >
->请参阅准备翻译内容以了解更多信息。
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>请参阅[准备翻译内容](/help/sites-cloud/administering/translation/preparation.md)以了解更多信息。
 
 ### 模板 {#templates}
 
