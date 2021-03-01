@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2152'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
    ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 对于属于 Live Copy 的一部分且组件继承自其他页面的页面，可供选择的选项将会有所减少，包括继承选项。<!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* 作为[Live Copy](/help/sites-cloud/administering/msm/overview.md)的一部分的页面，其中组件是从其他页面继承的。
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * **传入链接**，在选择特定链接后提供引用页面的页面列表，并可直接访问以&#x200B;**编辑**&#x200B;这些页面之一
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)，提供对相关启动项的访问权
-* Live Copy 显示基于选定资源的所有 Live Copy 的路径。<!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Blueprint 提供详细信息和各种操作 <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* 语言副本提供详细信息和各种操作 <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [](/help/sites-cloud/administering/msm/overview.md)Live Copy 显示基于选定资源的所有 Live Copy 的路径。
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，提供详细信息和各种操作
+* [语言副本](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)，提供详细信息和各种操作
 
 ## 事件 - 时间轴 {#events-timeline}
 
@@ -248,7 +248,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 ![页面信息选项](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [打开属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* 转出页 <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [转出页](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [启动工作流](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >* 某些模式需要相应的许可/权限才能访问。
 >* 由于空间限制，“开发人员”模式在移动设备上不可用。
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) 可以在&#x200B;**预览**&#x200B;模式和当前选定的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
+
 >
 
 
