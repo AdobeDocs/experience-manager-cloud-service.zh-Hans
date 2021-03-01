@@ -2,9 +2,9 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 translation-type: tm+mt
-source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
+source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1909'
 ht-degree: 58%
 
 ---
@@ -192,11 +192,10 @@ ht-degree: 58%
 
 ### Blueprint {#blueprint}
 
-此选项卡仅对用作蓝图的页面可见。
+此选项卡仅对用作蓝图的页面可见。 Blueprint用作Live Copy的基础是[多站点管理的一部分。](/help/sites-cloud/administering/msm/overview.md)
 
 * **当前Live Copy**  — 基于（即Live Copy的）此Blueprint页面的列表页面
 
-   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 * **转出配置**  — 控制将修改传播到Live Copy的情况
 
 ### Live Copy {#live-copy}
