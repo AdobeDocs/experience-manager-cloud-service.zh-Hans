@@ -2,7 +2,7 @@
 title: 页面差异
 description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
@@ -29,9 +29,9 @@ ht-degree: 97%
 可以并排比较以下内容：
 
 * [版本](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - 将页面的以前版本与其当前状态进行比较
-* Live Copy - 将 Live Copy 与其 Blueprint 进行比较 <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - 将 Live Copy 与其 Blueprint 进行比较
 * [启动项](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - 将启动项与其源进行比较
-* 语言副本 - 将翻译之前和翻译之后（重新翻译）的页面进行比较 <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)语言副本 - 将翻译之前和翻译之后（重新翻译）的页面进行比较
 
 请参阅有关如何在这些情况下启动差异比较的相关主题。
 
