@@ -1,8 +1,9 @@
 ---
 product: adobe experience manager
+description: 这是AEMaaCS文档页面所需的元数据
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hans
 index: y
-type: Documentation
+type: 文档
 solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: 入门
@@ -10,15 +11,15 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: 教程
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 10%
+source-wordcount: '120'
+ht-degree: 19%
 
 ---
 
 
-# 元数据供内部使用
+# 内部使用的元数据
 
 GitHub创作系统中的元数据是分层的，定义为以下不断增加的先例级别。
 
@@ -26,7 +27,7 @@ GitHub创作系统中的元数据是分层的，定义为以下不断增加的�
 1. ToC
 1. 文章
 
-metadata.md文件中定义的元数据适用于整个回购区，但可以在ToC和文章级别覆盖。 对元数据的任何覆盖都应在尽可能低的级别执行。
+metadata.md文件中定义的元数据适用于整个回购，但可以在ToC和文章级别覆盖。 对元数据的任何覆盖都应在尽可能低的级别执行。
 
 experience-manager-cloud-service.en repo中的元数据是最低要求。
 
