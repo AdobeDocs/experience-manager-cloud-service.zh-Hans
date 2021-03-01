@@ -5,10 +5,10 @@ user-guide-title: 在 AEM as a Cloud Service 中创作内容
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
 translation-type: tm+mt
-source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
+source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 90%
+source-wordcount: '307'
+ht-degree: 73%
 
 ---
 
@@ -81,6 +81,25 @@ ht-degree: 90%
       + [注册、登录和用户用户档案](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [管理工作流](administering/workflows-administering.md)
+   + 重用内容{#reusing-content}
+      + [MSM与翻译](administering/msm-and-translation.md)
+      + 多站点管理器 {#msm}
+         + [MSM和Live Copy概述](administering/msm/overview.md)
+         + [配置 Live Copy 同步](administering/msm/live-copy-sync-config.md)
+         + [创建和同步Live Copy](administering/msm/creating-live-copies.md)
+         + [Live Copy概述控制台](administering/msm/live-copy-overview.md)
+         + [转出冲突](administering/msm/rollout-conflicts.md)
+         + [MSM最佳实践](administering/msm/best-practices.md)
+         + [疑难解答和常见问题解答](administering/msm/troubleshooting.md)
+      + 翻译 {#translation}
+         + [翻译多语言站点的内容](administering/translation/overview.md)
+         + [准备翻译内容](administering/translation/preparation.md)
+         + [管理翻译项目](administering/translation/managing-projects.md)
+         + [语言复制向导](administering/translation/wizard.md)
+         + [确定要翻译的内容](administering/translation/rules.md)
+         + [配置翻译集成框架](administering/translation/integration-framework.md)
+         + [连接到Microsoft Translator](administering/translation/connect-ms-translator.md)
+         + [翻译最佳实践](administering/translation/best-practices.md)
 + 与 AEM as a Cloud Service 集成 {#integrations}
    + [与 Adobe Analytics 集成](integrating/integrating-adobe-analytics.md)
    + [与 Adobe Target 集成](integrating/integrating-adobe-target.md)
