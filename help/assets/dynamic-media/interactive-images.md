@@ -2,9 +2,9 @@
 title: 交互式图像
 description: 了解如何在Dynamic Media中使用交互式图像。
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
-source-wordcount: '4246'
+source-wordcount: '4245'
 ht-degree: 17%
 
 ---
