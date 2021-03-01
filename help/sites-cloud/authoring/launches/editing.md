@@ -2,10 +2,10 @@
 title: 编辑启动项
 description: '在为您的一个页面（或一组页面）创建启动项后，您可以编辑页面启动副本中的内容。 '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 81%
+ht-degree: 83%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 81%
 1. [从“引用”（“站点”控制台）中访问启动项](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)以显示可用的操作。
 1. 选择&#x200B;**转到页面**&#x200B;以打开要编辑的页面。
 
-编辑页面时，您将在顶部工具栏中看到一个指示，以及&#x200B;**离开**&#x200B;和&#x200B;**导航**&#x200B;选项：
+编辑页面时，顶部工具栏中将显示一个指示，以及&#x200B;**离开**&#x200B;和&#x200B;**导航**&#x200B;选项：
 
-![从页面编辑器中退出和导航启动项](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+![从页面编辑器中离开和导航启动项](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
 ### 编辑基于 Live Copy 的启动页面 {#editing-launch-pages-subject-to-a-live-copy}
 
-如果您的启动项基于Live Copy，则您将：<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+如果您的启动项基于[Live Copy](/help/sites-cloud/administering/msm/overview.md)，则您将：
 
-* 编辑组件（内容和／或属性）时，请参阅锁符号（小挂锁）。
+* 请参阅编辑组件（内容和/或属性）时的锁符号（小挂锁）。
 * 请参阅&#x200B;**页面属性**&#x200B;中的&#x200B;**Live Copy**&#x200B;选项卡
 
 Live copy用于将源分 *支中的**内容同步到启动分支* （以使启动项与源中所做的更改保持最新）。
@@ -37,13 +37,13 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
 * 单击已闭合的挂锁将会中断此同步，并允许您对启动项中的内容做出新的更新。解除锁定（打开挂锁）后，您的更改将不会被源分支中的相同位置所做的任何更改所覆盖。
 * 特定页面的&#x200B;**暂停**（和&#x200B;**继续**）继承。
 
-有关更多信息，请参阅更改Live Copy内容。<!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+有关更多信息，请参阅[更改 Live Copy 内容](/help/sites-cloud/administering/msm/creating-live-copies.md)。
 
-## 比较启动页面与其源页面 {#comparing-a-launch-page-to-its-source-page}
+## 比较启动页面与其源页面  {#comparing-a-launch-page-to-its-source-page}
 
 要跟踪您所做的更改，您可以在引用中查看启动项 **** ，并将启动项页面与其源页面进行比较：
 
-1. 在&#x200B;**站点**&#x200B;控制台中，[导航到启动项的源页面，然后选择一个](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
+1. 在&#x200B;**站点**&#x200B;控制台中，[导航到启动项的源页面并选择一个](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板，然后选择&#x200B;**启动项**。
 1. 选择您的特定启动项，然后选择&#x200B;**和源比较**：
 
