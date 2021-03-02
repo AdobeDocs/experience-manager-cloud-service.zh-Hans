@@ -5,10 +5,10 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 72%
+source-wordcount: '487'
+ht-degree: 70%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 72%
 + 共享和分发资产 {#brand-portal}
    + [配 [!DNL Assets] 置 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [将资产发布到 [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [将资产从 [!DNL Brand Portal] 发布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
    + [无外设投放（包含内容片段和GraphQL）](content-fragments/content-fragments-graphql.md)
