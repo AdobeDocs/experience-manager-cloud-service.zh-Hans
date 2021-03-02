@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
+source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1142'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 3%
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## [!DNL Assets] {#what-is-new-assets}中的新增功能
+
+* 企业现在可以使用[!DNL Brand Portal]来源资产。 资产来源功能利用[!DNL Brand Portal]来帮助客户与代理用户互动，为新的营销活动、照片和项目寻找资产。 请参阅 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)中的[资产来源补充。
+
+* [!DNL Brand Portal]使用情况报告现在仅显示活动用户。 不活动的用户现在不显示。 活动用户是将其帐户分配给[!DNL Admin Console]中的产品用户档案的用户。 请参阅[[!DNL Brand Portal] 报告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
 
 * 在[!DNL Brand Portal]中，引入了新的下载设置，允许您在下载文件夹、集合等时为每个资产创建单独的文件夹。 请参阅[下载设置](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
 
