@@ -2,10 +2,10 @@
 title: 编辑启动项
 description: '在为您的一个页面（或一组页面）创建启动项后，您可以编辑页面启动副本中的内容。 '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 83%
+source-wordcount: '555'
+ht-degree: 78%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 83%
 编辑页面时，顶部工具栏中将显示一个指示，以及&#x200B;**离开**&#x200B;和&#x200B;**导航**&#x200B;选项：
 
 ![从页面编辑器中离开和导航启动项](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>不允许您在启动项中移动页面。 尝试此操作将触发警告消息：
+>
+>* 警告：此页面是启动项的源。 不允许移动页面。
+
 
 ### 编辑基于 Live Copy 的启动页面 {#editing-launch-pages-subject-to-a-live-copy}
 
