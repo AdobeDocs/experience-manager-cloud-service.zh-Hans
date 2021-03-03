@@ -2,9 +2,9 @@
 title: 将您的数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
+source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1951'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 |---------------------|----------------|-----------------|
 | [资产控制台用户界面](#upload-assets) | 偶尔上传、轻松按下和拖动、查找器上传。 请勿用于上传大量资产。 | 所有用户 |
 | [上传API](#upload-using-apis) | 用于上传期间的动态决策。 | 开发人员 |
-| [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低容量资源摄取，但用于迁移。 | 管理员、营销人员 |
+| [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低卷资产摄取，但不适用于迁移。 | 管理员、营销人员 |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | 创意、营销人员 |
 | [资产批量收录](#asset-bulk-ingestor) | 建议用于大规模迁移和偶尔的批量摄取。 仅对支持的数据存储。 | 管理员、开发人员 |
 
