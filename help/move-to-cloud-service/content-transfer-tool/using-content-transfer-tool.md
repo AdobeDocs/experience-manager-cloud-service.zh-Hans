@@ -2,7 +2,7 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
+source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 58%
@@ -178,7 +178,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >启用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项后，将删除整个现有存储库并创建新存储库以将内容摄取到其中。**&#x200B;这意味着它会重置所有设置，包括目标Cloud Service实例的权限。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. 完成摄取后，**PUBLISH INGESTION**&#x200B;字段中的状态将更新为&#x200B;**FINISHED**。
