@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
+source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 63%
+source-wordcount: '1969'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,8 @@ ht-degree: 63%
 * 内容传输工具的最低系统要求为 AEM 6.3 + 和 JAVA 8。如果您使用的是较低版本的 AEM，则需要将内容存储库升级到 AEM 6.5，才能使用内容传输工具。
 
 * 需要在AEM环境上配置Java，这样`java`命令就可以由开始AEM的用户执行。
+
+* 在安装版本1.3.0时，建议卸载旧版内容传输工具，因为该工具在体系结构上发生了重大更改。 对于1.3.0，您还应创建新的迁移集，并重新运行新迁移集的提取和摄取。
 
 * 内容传输工具可用于以下类型的数据存储：文件数据存储、S3数据存储、共享的S3数据存储和Azure Blob存储数据存储。
 
@@ -101,7 +103,7 @@ ht-degree: 63%
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (允 `/etc` 许在CTT中选择某些路径)
 
 
 1. 填充&#x200B;**内容迁移集详细信息**&#x200B;屏幕中的所有字段后，单击&#x200B;**保存**。
