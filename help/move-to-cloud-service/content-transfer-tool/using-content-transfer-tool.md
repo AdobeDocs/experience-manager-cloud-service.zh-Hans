@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
+source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 64%
+source-wordcount: '1916'
+ht-degree: 63%
 
 ---
 
@@ -22,20 +22,20 @@ ht-degree: 64%
 
 * 内容传输工具可用于以下类型的数据存储：文件数据存储、S3数据存储、共享的S3数据存储和Azure Blob存储数据存储。
 
-* 如果您使用&#x200B;*沙箱环境*，请确保环境是最新的并已升级到最新版本。 如果您使用的是“生产环境”**，则会自动更新。
+* 如果您使用&#x200B;*沙箱环境*，请确保环境为最新版本并升级到最新版本。 如果您使用的是“生产环境”**，则会自动更新。
 
 * 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的Cloud Service实例中的本地AEM管理员组。 无特权的用户将无法检索访问令牌，进而无法使用内容传输工具。
 
-* 访问令牌可以在特定时间段后或Cloud Service环境升级后定期过期。 如果访问令牌已过期，您将无法连接到Cloud Service实例，您必须检索新访问令牌。 与现有迁移集关联的状态图标将更改为红色云，并将鼠标悬停在该云上时将显示一条消息。
+* 访问令牌可以在特定时间段后或Cloud Service环境升级后定期过期。 如果访问令牌已过期，您将无法连接到Cloud Service实例，您必须检索新访问令牌。 与现有迁移集关联的状态图标将更改为红色云，并且当您将鼠标悬停在该云上方时，将显示一条消息。
 
-* 内容传输工具传输的用户和用户组只是内容满足权限要求的用户和用户组。 *提取*&#x200B;进程将整个`/home`复制到迁移集中，而&#x200B;*摄取*&#x200B;进程复制迁移内容ACL中引用的所有用户和组。 要自动将现有用户和用户组映射到其IMS ID，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
+* 由内容传输工具传输的用户和用户组只是内容满足权限要求的用户和用户组。 *提取*&#x200B;进程将整个`/home`复制到迁移集中，而&#x200B;*Ingestion*&#x200B;进程将复制迁移内容ACL中引用的所有用户和组。 要自动将现有用户和用户组映射到其IMS ID，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
-* 在完成内容传输过程的&#x200B;*提取*&#x200B;阶段后，在开始&#x200B;*摄取阶段*&#x200B;将内容作为Cloud Service *阶段*&#x200B;或&#x200B;*生产*&#x200B;实例引入AEM之前，您需要记录支持票证以通知Adobe您打算运行&#x200B;*摄取*，以确保Adobe在&#x200B;*摄取*&#x200B;过程中不发生中断。 您需要在计划的&#x200B;*摄取*&#x200B;日期前1周记录支持票证。 一旦您提交了支持票证，支持团队将提供后续步骤的指导。
+* 在完成内容传输过程的&#x200B;*提取*&#x200B;阶段后，并在开始&#x200B;*摄取阶段*&#x200B;将内容作为Cloud Service *阶段*&#x200B;或&#x200B;*生产*&#x200B;实例引入AEM之前，您需要记录支持票证以通知Adobe您打算运行&#x200B;*Ingestion*，以便Adobe可确保在&#x200B;*Ingestion*&#x200B;过程中不发生中断。 您需要在计划的&#x200B;*Ingestion*&#x200B;日期之前1周记录支持票证。 一旦您提交了支持票证，支持团队将提供后续步骤的指导。
    * 使用以下详细信息记录支持票证：
-      * 计划开始&#x200B;*Ingestion*&#x200B;阶段时，确切的日期和估计的时间（与时区一起）。
-      * 环境类型（阶段或生产），您计划将数据引入。
+      * 计划开始&#x200B;*摄取*&#x200B;阶段时，确切日期和估计时间（与时区一起）。
+      * 环境类型（舞台或生产），您计划将数据引入其中。
       * 项目ID。
 
 * 作者的&#x200B;*摄取阶段*&#x200B;将会按比例缩小整个作者部署。这意味着作者 AEM 在整个摄取过程中将不可用。另外，请确保在运行&#x200B;*Ingestion*&#x200B;阶段时未执行Cloud Manager管道。
@@ -55,16 +55,20 @@ ht-degree: 64%
 
 请阅读以下章节，了解如何使用内容传输工具将内容迁移至 AEM as a Cloud Service （创作/发布）：
 
-1. 选择 Adobe Experience Manager 并导航到工具 -> **操作** -> **内容传输**。
+1. 选择Adobe Experience Manager并导航到工具 — > **Operations** -> **内容迁移**。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
-1. 创建第一个迁移集时，将显示以下控制台。 单击&#x200B;**创建迁移集**&#x200B;以创建新的迁移集。
+1. 从&#x200B;**内容迁移**&#x200B;向导中选择&#x200B;**内容传输**&#x200B;选项。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+
+1. 创建第一个迁移集时将显示以下控制台。 单击&#x200B;**创建迁移集**&#x200B;以创建新的迁移集。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >如果您有现有迁移集，控制台将显示现有迁移集的列表及其当前状态。
+   >如果您有现有的迁移集，控制台将显示现有迁移集的列表及其当前状态。
 
 1. 按如下所述填充&#x200B;**内容迁移集详细信息**&#x200B;屏幕中的字段。
 
@@ -84,7 +88,7 @@ ht-degree: 64%
    1. **访问令牌**：输入访问令牌。
 
       >[!NOTE]
-      >可以使用&#x200B;**打开访问令牌**&#x200B;按钮检索访问令牌。 您需要确保属于目标Cloud Service实例中的AEM管理员组。
+      >可以使用&#x200B;**打开访问令牌**&#x200B;按钮检索访问令牌。 您需要确保您属于目标 Cloud Service实例中的AEM管理员组。
 
    1. **参数**：选择以下参数以创建迁移集：
 
@@ -120,7 +124,7 @@ ht-degree: 64%
 
 请按照以下步骤从内容传输工具中提取迁移集：
 
-1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**提取**&#x200B;以开始提取。显示&#x200B;**迁移集提取**&#x200B;对话框，然后单击&#x200B;**提取**&#x200B;以开始提取阶段。
+1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**提取**&#x200B;以开始提取。将显示&#x200B;**迁移集提取**&#x200B;对话框，并单击&#x200B;**Extract**&#x200B;以开始提取阶段。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -161,10 +165,10 @@ ht-degree: 64%
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 
-1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**摄取**&#x200B;以开始摄取阶段。 出于演示目的，禁用了&#x200B;**将内容摄取到创作实例**&#x200B;选项。否则其会将内容同时摄取到“创作”和“发布”。
+1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**收录**&#x200B;以开始摄取阶段。 出于演示目的，禁用了&#x200B;**将内容摄取到创作实例**&#x200B;选项。否则其会将内容同时摄取到“创作”和“发布”。
 
    >[!IMPORTANT]
-   >启用&#x200B;**在摄取**&#x200B;选项之前擦除云实例上的现有内容时，它将删除整个现有存储库并创建新存储库以将内容摄取到其中。 这意味着它重置所有设置，包括目标Cloud Service实例的权限。
+   >启用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项后，将删除整个现有存储库并创建新存储库以将内容摄取到其中。**&#x200B;这意味着它会重置所有设置，包括目标Cloud Service实例的权限。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
@@ -186,7 +190,7 @@ ht-degree: 64%
 
    >[!IMPORTANT]
    >
-   >您应禁用“在摄取&#x200B;**之前擦除云实例上的现有内容”选项，以防止从以前的摄取活动中删除现有内容。**
+   >您应禁用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项，以防止从以前的摄取活动中删除现有内容。**
    >
    >![图像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
