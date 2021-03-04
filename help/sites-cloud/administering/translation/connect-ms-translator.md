@@ -2,9 +2,9 @@
 title: 连接到Microsoft Translator
 description: 了解如何将AEM连接到现成的Microsoft Translator以自动处理您的翻译工作流程。
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 1%
 
 # 连接到Microsoft Translator {#connecting-to-microsoft-translator}
 
-为[Microsoft Translator](https://hub.microsofttranslator.com)云服务创建配置，以使用您的Microsoft Translation帐户翻译AEM页面内容、社区内容或资产。
+为[Microsoft Translator](https://hub.microsofttranslator.com)云服务创建配置，以使用您的Microsoft Translation帐户翻译AEM页面内容或资产。
+
+>[!NOTE]
+>
+>AEM提供试用版Microsoft翻译帐户，每月最多允许2 000 000个免费翻译字符。 要获得适合生产系统的帐户订阅，请参阅[升级Microsoft Translator试用许可证配置](#upgrading-the-microsoft-translator-trial-license-configuration)。
 
 | 属性 | 描述 |
 |---|---|
