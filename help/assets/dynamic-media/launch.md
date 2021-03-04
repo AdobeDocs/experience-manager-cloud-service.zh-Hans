@@ -2,9 +2,9 @@
 title: 将Dynamic Media查看器与Adobe Analytics和Experience Platform Launch集成
 description: 针对Platform launch和Dynamic Media Viewers 5.13的Dynamic Media查看器扩展使Adobe Analytics和Platform launch的客户能够在其Platform launch配置中使用特定于查看器的事件和数据。
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6684'
+source-wordcount: '6658'
 ht-degree: 9%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 9%
 
 与Experience Platform Launch集成的主要用例是同时使用Experience Manager资产和Experience Manager站点的客户。 在这些情况下，您可以在Experience Manager作者节点和Experience Platform Launch之间设置标准集成，然后将您的站点实例与Experience Platform Launch属性关联。 之后，添加到“站点”页面的任何Dynamic Media WCM组件都将跟踪来自查看器的数据和事件。
 
-请参阅[关于在Experience Manager Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)中跟踪Dynamic Media查看器。
+请参阅[跟踪Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites)中的Dynamic Media查看器。
 
 集成支持的次要用例是那些仅使用Experience Manager资产或Dynamic Media Classic的客户。 在这种情况下，您可以获得查看器的嵌入代码并将其添加到网站页面。 然后，从Experience Platform Launch获取Experience Platform Launch库生产URL，然后手动将其添加到网页代码。
 
-请参阅[关于使用嵌入代码](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)跟踪Dynamic Media查看器。
+请参阅[使用嵌入代码](#tracking-dynamic-media-viewers-using-embed-code)跟踪Dynamic Media查看器。
 
 ## 数据和事件跟踪在集成{#how-data-and-event-tracking-works-in-the-integration}中的工作方式
 
