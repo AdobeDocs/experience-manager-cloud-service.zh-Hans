@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
+source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1167'
 ht-degree: 3%
 
 ---
@@ -109,6 +109,20 @@ AEM中Cloud Manager作为Cloud Service 2021.2.0的发布日期为2021年2月11�
 * 某些管线故障被错误地报告为管线错误。
 
 ## 内容传输工具 {#content-transfer-tool}
+
+### 发布日期 {#release-date-ctt-march}
+
+内容传输工具v1.3.0的发布日期为2021年3月04日。
+
+### 内容传输工具{#what-is-new-ctt-march}的新增功能
+
+* CTT现在安装到`/apps`，而不是`/libs`某些页面的浏览器书签可能不再有效。
+* 安装CTT后，用户将必须浏览其他级别才能进入“内容传输”页面。 有关详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)。
+
+### 错误修复 {#bug-fixes-ctt-march}
+
+* 从特定路径迁移内容时，CTT正在调用不相关的资源。 已修复
+
 
 ### 发布日期 {#release-date-ctt}
 
