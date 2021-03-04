@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 62%
+source-wordcount: '2055'
+ht-degree: 58%
 
 ---
 
@@ -65,16 +65,23 @@ ht-degree: 62%
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. 创建第一个迁移集时将显示以下控制台。 单击&#x200B;**创建迁移集**&#x200B;以创建新的迁移集。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >如果您有现有的迁移集，控制台将显示现有迁移集的列表及其当前状态。
 
-1. 按如下所述填充&#x200B;**内容迁移集详细信息**&#x200B;屏幕中的字段。
+   此外，单击&#x200B;**创建用户映射配置**&#x200B;可访问[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. 按如下所述填充&#x200B;**内容迁移集**&#x200B;屏幕中的字段。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >选择&#x200B;**“包括来自IMS用户和组的映射**”，如上图所突出显示。 有关详细信息，请参阅[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 
 
    1. **名称**：输入迁移集的名称。
@@ -119,7 +126,6 @@ ht-degree: 62%
    * *黄色图标*&#x200B;表示您没有创建现有迁移集，而特定迁移集是由同一实例中的其他用户创建的。
 
 1. 从“概述”页面中选择一个迁移集，然后单击&#x200B;**属性**&#x200B;以查看或编辑迁移集属性。编辑属性时，无法更改容器名称或服务URL。
-
 
 
 ### 内容传输中的提取流程 {#extraction-process}
@@ -174,6 +180,7 @@ ht-degree: 62%
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. 完成摄取后，**PUBLISH INGESTION**&#x200B;字段中的状态将更新为&#x200B;**FINISHED**。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -190,11 +197,13 @@ ht-degree: 62%
 
 1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补摄取的迁移集。单击&#x200B;**摄取**&#x200B;以开始增补提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
 
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+
    >[!IMPORTANT]
    >
    >您应禁用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项，以防止从以前的摄取活动中删除现有内容。**
-   >
-   >![图像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   此外，请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以了解如何添加到客户关怀票证。
 
 ### 查看迁移集的日志 {#viewing-logs-migration-set}
 
