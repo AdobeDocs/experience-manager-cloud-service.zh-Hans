@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
+source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 59%
+source-wordcount: '2057'
+ht-degree: 58%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 59%
 
       1. **包含版本**：根据需要选择。
 
-      1. **包括来自IMS用户和组的映射**:选择选项。有关详细信息，请参阅[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
+      1. **包括来自IMS用户和组的映射**:选择选项以包括来自IMS用户和组的映射。有关详细信息，请参阅[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 
       1. **要包含的路径**：使用路径浏览器选择需要迁移的路径。路径选取器通过键入或选择接受输入。
 
