@@ -2,7 +2,7 @@
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加速页面的初始加载，然后将进一步渲染传递给客户端。
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 何时使用SSR {#when-to-use-ssr}
 
-并非所有项目都需要SSR。 尽管AEM完全支持SPA的JS SSR，但Adobe不建议对每个项目系统地实施它。
+并非所有项目都需要SSR。 尽管AEM完全支持SPA的JS SSR，但Adobe不建议在每个项目系统地实施它。
 
 在决定实施SSR时，您首先必须估计SSR的实际额外复杂度、工作量和成本增加，包括长期维护。 SSR结构只有在增值明显超过估计成本时才能选择。
 
