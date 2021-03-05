@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2049'
+ht-degree: 59%
 
 ---
 
@@ -76,13 +76,9 @@ ht-degree: 58%
 
    此外，单击&#x200B;**创建用户映射配置**&#x200B;可访问[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
 
-1. 按如下所述填充&#x200B;**内容迁移集**&#x200B;屏幕中的字段。
+1. 按如下所述填充&#x200B;**创建迁移集**&#x200B;屏幕中的字段。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >选择&#x200B;**“包括来自IMS用户和组的映射**”，如上图所突出显示。 有关详细信息，请参阅[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
-
 
    1. **名称**：输入迁移集的名称。
       >[!NOTE]
@@ -102,6 +98,8 @@ ht-degree: 58%
    1. **参数**：选择以下参数以创建迁移集：
 
       1. **包含版本**：根据需要选择。
+
+      1. **包括来自IMS用户和组的映射**:选择选项。有关详细信息，请参阅[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 
       1. **要包含的路径**：使用路径浏览器选择需要迁移的路径。路径选取器通过键入或选择接受输入。
 
@@ -178,7 +176,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >启用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项后，将删除整个现有存储库并创建新存储库以将内容摄取到其中。**&#x200B;这意味着它会重置所有设置，包括目标Cloud Service实例的权限。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. 完成摄取后，**PUBLISH INGESTION**&#x200B;字段中的状态将更新为&#x200B;**FINISHED**。
