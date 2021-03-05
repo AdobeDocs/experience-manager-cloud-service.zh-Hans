@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
+source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2068'
+ht-degree: 57%
 
 ---
 
@@ -176,7 +176,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >启用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项后，将删除整个现有存储库并创建新存储库以将内容摄取到其中。**&#x200B;这意味着它会重置所有设置，包括目标Cloud Service实例的权限。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    此外，单击&#x200B;**客户关怀**&#x200B;可记录票证，如上图所示。 另外，请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以了解更多信息。
 
@@ -199,7 +199,7 @@ ht-degree: 58%
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >您应禁用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项，以防止从以前的摄取活动中删除现有内容。**
+   >您应禁用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项，以防止从以前的摄取活动中删除现有内容。**&#x200B;此外，单击&#x200B;**客户关怀**&#x200B;可记录票证，如上图所示。
 
 
 ### 查看迁移集的日志 {#viewing-logs-migration-set}
