@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
+source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2065'
 ht-degree: 58%
 
 ---
@@ -201,7 +201,7 @@ ht-degree: 58%
    >
    >您应禁用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项，以防止从以前的摄取活动中删除现有内容。**
 
-   此外，请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)，了解如何添加到客户关怀票证。
+   此外，单击&#x200B;**客户关怀**&#x200B;可记录票证，如上图所示。 另外，请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以了解更多信息。
 
 ### 查看迁移集的日志 {#viewing-logs-migration-set}
 
