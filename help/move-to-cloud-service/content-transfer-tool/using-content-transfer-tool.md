@@ -2,7 +2,7 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
+source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
