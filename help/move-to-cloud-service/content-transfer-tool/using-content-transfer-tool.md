@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
+source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2053'
 ht-degree: 58%
 
 ---
@@ -171,13 +171,14 @@ ht-degree: 58%
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 
-1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**收录**&#x200B;以开始摄取阶段。 出于演示目的，禁用了&#x200B;**将内容摄取到创作实例**&#x200B;选项。否则其会将内容同时摄取到“创作”和“发布”。
+1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**收录**&#x200B;以开始摄取阶段。 否则其会将内容同时摄取到“创作”和“发布”。
 
    >[!IMPORTANT]
    >启用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项后，将删除整个现有存储库并创建新存储库以将内容摄取到其中。**&#x200B;这意味着它会重置所有设置，包括目标Cloud Service实例的权限。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
+   此外，单击&#x200B;**客户关怀**&#x200B;可记录票证，如上图所示。 另外，请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以了解更多信息。
 
 1. 完成摄取后，**PUBLISH INGESTION**&#x200B;字段中的状态将更新为&#x200B;**FINISHED**。
 
@@ -198,10 +199,8 @@ ht-degree: 58%
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
    >您应禁用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项，以防止从以前的摄取活动中删除现有内容。**
 
-   此外，单击&#x200B;**客户关怀**&#x200B;可记录票证，如上图所示。 另外，请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以了解更多信息。
 
 ### 查看迁移集的日志 {#viewing-logs-migration-set}
 
