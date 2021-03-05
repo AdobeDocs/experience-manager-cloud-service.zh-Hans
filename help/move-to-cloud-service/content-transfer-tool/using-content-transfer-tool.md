@@ -2,7 +2,7 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -111,7 +111,7 @@ ht-degree: 57%
          >* `/etc` (允 `/etc` 许在CTT中选择某些路径)
 
 
-1. 填充&#x200B;**内容迁移集详细信息**&#x200B;屏幕中的所有字段后，单击&#x200B;**保存**。
+1. 在&#x200B;**创建迁移集**&#x200B;详细信息屏幕中填充所有字段后，单击&#x200B;**保存**。
 
 1. 您将在&#x200B;*概述*&#x200B;页面中查看迁移集。
 
