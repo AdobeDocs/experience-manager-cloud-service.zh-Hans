@@ -1,12 +1,12 @@
 ---
 title: XMP 元数据
-description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 AEM将其用作元数据的创建、处理和交换的标准格式。
+description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作创建、处理和交换元数据的标准格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
+source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 61%
+source-wordcount: '1000'
+ht-degree: 54%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 61%
 
 XMP（可扩展元数据平台）是 AEM Assets 用来进行所有元数据管理的元数据标准。XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 
-除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且受Adobe](#advantages-of-xmp)和其他公司的支持[，使XMP与AEM Assets联合的用户拥有强大的基础平台。
+除了提供可嵌入所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且受Adobe](#advantages-of-xmp)和其他公司的支持[，因此XMP和AEM Assets的用户拥有一个强大的平台可以在其上构建。
 
 ## XMP概述和生态系统{#xmp-ecosystem}
 
-AEM Assets本机支持XMP元数据标准。 XMP 是一项用于处理和存储数字资产中的标准化专有元数据的标准。XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
+AEM Assets本身支持XMP元数据标准。 XMP 是一项用于处理和存储数字资产中的标准化专有元数据的标准。XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
 
 例如，专业生产人士可以使用 Adobe 应用程序中内置的 XMP 支持，在多种文件格式之间传递信息。AEM Assets 存储库会提取 XMP 元数据，用它来管理内容生命周期，并提供创建自动化工作流的能力。
 
@@ -42,11 +42,11 @@ XMP 最常使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) 
 * XMP 采用标准化的编码，让您可以轻松交换元数据。
 * XMP 具有可扩展性。您可以向资产中添加其他信息。
 
-XMP标准设计为可扩展，允许您向XMP数据中添加自定义类型的元数据。 而EXIF则不然——它具有无法扩展的属性的固定列表。
+XMP标准设计为可扩展，允许您向XMP数据中添加自定义类型的元数据。 而EXIF则并非如此 — 它具有无法扩展的属性的固定列表。
 
 >[!NOTE]
 >
->XMP 一般不允许嵌入二进制类型的数据。要在XMP中包含二进制数据（例如缩略图），必须以XML友好格式（如`Base64`）对它们进行编码。
+>XMP 一般不允许嵌入二进制类型的数据。要在XMP中传送二进制数据（例如，缩略图），必须采用XML友好格式（如`Base64`）对它们进行编码。
 
 ### XMP核心概念{#xmp-core-concepts}
 
@@ -72,23 +72,34 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
-Adobe Experience Manager(AEM)资产中的此XMP写回功能可将资产元数据更改复制到资产的演绎版。
+[!DNL Adobe Experience Manager Assets]中的此XMP写回功能会将元数据更改复制到原始资产的演绎版。 当您从[!DNL Assets]中更改资产的元数据或在上传资产时，这些更改最初存储在存储库的资产节点中。 XMP写回功能会将元数据更改传播到资产的所有演绎版或特定演绎版。
 
-当您从AEM Assets内更改资产的元数据或在上传资产时，更改最初存储在CRXDE的资产节点内。
-
-XMP写回功能将元数据更改传播到资产的所有或特定演绎版。
-
-请考虑将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的情况。
+考虑将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的方案。
 
 ![元数据](assets/metadata.png)
 
-在这种情况下，AEM Assets会为资产层次结构中存储的资产元数据在`dc:title`参数中保存对&#x200B;**[!UICONTROL Title]**&#x200B;属性所做的更改。
+在这种情况下，[!DNL Assets]会在资产层次结构中存储的资产元数据的`dc:title`参数中，将更改保存到&#x200B;**[!UICONTROL Title]**&#x200B;属性。
 
 ![metadata_stored](assets/metadata_stored.png)
 
-但是，AEM Assets不会自动将任何元数据更改传播到资产的演绎版。
+但是，[!DNL Assets]不会自动将任何元数据更改传播到资产的演绎版。
 
-XMP写回功能允许您将元数据更改传播到资产的所有或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
+XMP写回功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
+
+默认情况下，[!DNL Assets]中未启用写回功能。 了解如何[启用元数据写回](#enable-xmp-writeback)。
+
+### 启用XMP写回{#enable-xmp-writeback}
+
+[!UICONTROL DAM元数据] 写回工作流用于写回资产的元数据。要启用写回，请执行以下步骤：
+
+1. 作为管理员，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 启动器]**。
+1. 选择[!UICONTROL 启动器]，其中&#x200B;**[!UICONTROL Workflow]**&#x200B;列显示&#x200B;**[!UICONTROL DAM MetaData Writeback]**。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
+
+   ![选择DAM元数据写回启动程序以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
+
+1. 在[!UICONTROL 启动器属性]页面上选择&#x200B;**[!UICONTROL 激活]**。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+
+要将此工作流仅一次性应用于资产，请从左边栏应用工作流[!UICONTROL DAM元数据写回]工作流。 要将工作流应用于已上传的资产，请将该工作流添加到后期处理用户档案。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
@@ -125,8 +136,3 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 -->
-
->[!MORELIKETHIS]
->
->* [XMP规范(按Adobe)](https://www.adobe.com/devnet/xmp.html)
-
