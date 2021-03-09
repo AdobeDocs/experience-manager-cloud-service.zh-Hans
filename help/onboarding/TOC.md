@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: 3ccf56939f444ce57669b289f4997084828fd0a5
+source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 36%
+source-wordcount: '685'
+ht-degree: 35%
 
 ---
 
@@ -20,7 +20,12 @@ ht-degree: 36%
    + [添加用户和角色](what-is-required/add-users-roles.md)
    + [基于角色的权限](what-is-required/role-based-permissions.md)
    + [源代码存储库](what-is-required/source-code-repository.md)
++ 过渡历程的阶段 {#phases}
+   + [规划](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
+   + [执行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
+   + [上线后](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + 在云中获取 AEM 的访问权限 {#getting-access}
+   + [AEM作为Cloud Service:配置过程概述](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [访问 Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
    + 云服务程序 {#cloud-service-programs}
       + [访问程序](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -83,6 +88,7 @@ ht-degree: 36%
       + [2020.4.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [2020.3.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [2020.2.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + [了解角色和职责](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + 数据隐私和保护已准备就绪 {#data-privacy}
    + [用于数据保护和数据隐私法规的 AEM 已准备就绪](data-privacy-and-protection-readiness/aem-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
