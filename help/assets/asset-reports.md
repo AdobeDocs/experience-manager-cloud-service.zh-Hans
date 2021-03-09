@@ -3,10 +3,10 @@ title: 有关使用和共享的报告
 description: ' [!DNL Adobe Experience Manager Assets] 中有关您的资产的报告，有助于您了解数字资产的使用、活动和共享。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 5%
+source-wordcount: '945'
+ht-degree: 4%
 
 ---
 
@@ -92,13 +92,13 @@ ht-degree: 5%
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 下一步]**。
 
-1. 在&#x200B;**[!UICONTROL 配置列]**&#x200B;页中，默认情况下会选择某些列以显示在报表中。 可以选择更多列。 取消选择选定列，以在报表中将其排除。
+1. 在&#x200B;**[!UICONTROL 配置列]**&#x200B;页中，默认情况下会选择某些列以显示在报表中。 可以选择更多列。 取消选择列，以将其排除在报表中。
 
-   ![选择或取消选择报表列](assets/configure_columns.png)
+   ![选择或取消选择的报表列](assets/configure_columns.png)
 
    要显示自定义列名或属性路径，请在CRX的`jcr:content`节点下配置资产二进制的属性。 或者，通过属性路径选取器添加它。
 
-   ![选择或取消选择报表列](assets/custom_columns.png)
+   ![选择或取消选择的报表列](assets/custom_columns.png)
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 创建]**。 将显示一条消息，通知已开始生成报告。
 1. 在[!UICONTROL 资产报表]页面上，报表生成状态基于报表作业的当前状态，例如[!UICONTROL Success]、[!UICONTROL Failed]、[!UICONTROL Queued]或[!UICONTROL Scheduled]。 通知收件箱中会显示相同的状态。要视图报表页面，请单击报表链接。 或者，选择报告，然后单击工具栏中的&#x200B;**[!UICONTROL 视图]**。
