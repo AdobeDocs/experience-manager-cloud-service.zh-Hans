@@ -1,11 +1,15 @@
 ---
-source-git-commit: d2a24f55d5b89f1abe64702d5f1ad39f793429d5
-workflow-type: tm+mt
+title: 设置过程 — 概述
+description: 设置过程 — 概述
 translation-type: tm+mt
-source-wordcount: '334'
+source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
+workflow-type: tm+mt
+source-wordcount: '340'
 ht-degree: 7%
 
 ---
+
+
 # AEM作为Cloud Service:入门和访问
 
 本页列表了有关将Experience Manager设置为Cloud Service的过程的自助资源。
@@ -46,7 +50,7 @@ ht-degree: 7%
 
 ### 2.将组织载入Adobe Admin Console:
 
- >   ![procesoverview2.jpg](./assets/processOverview2.jpg)
+>   ![procesoverview2.jpg](./assets/processOverview2.jpg)
 * 系统管理员：
    * 配置AEM项目和环境。
    * 导航到Admin Console以管理任务。
@@ -70,5 +74,5 @@ ht-degree: 7%
 
 ## 帮助和资源
 
-[首次登录 — Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)\
-[将对AEM的访问配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [首次登录 — Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [将对AEM的访问配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
