@@ -2,10 +2,10 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 3%
+source-wordcount: '1574'
+ht-degree: 2%
 
 ---
 
@@ -82,7 +82,10 @@ AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11�
 
 ### 新增功能 {#what-is-new-march}
 
-* 拥有针对IP环境、SSL证书和自定义域名的CDN预允许列表先配置的将看到一条消息，告诉您他们先前的现有配置，并能够通过UI自助服务。
+* 拥有针对IP环境、SSL证书和自定义域名的CDN预允许列表先配置的将看到一条消息，告诉您他们先前的现有配置，并能够通过UI自助服务。 用户现在可以：
+   * 将“站点”解决方案添加到包含资产的现有项目（反之亦然）。
+   * 将站点（或资产）从包含站点和资产的现有项目中删除。
+   * 将第二个未使用的解决方案授权添加到现有项目或作为新项目。
 
 * 具有必需权限的用户现在可以“编辑”项目，允许他们以自助方式执行以下操作。
 
