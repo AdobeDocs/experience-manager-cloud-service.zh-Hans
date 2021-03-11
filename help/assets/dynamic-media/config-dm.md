@@ -2,7 +2,7 @@
 title: 配置 Dynamic Media 云服务
 description: 有关如何将Adobe Experience Manager中的Dynamic Media配置为Cloud Service的信息。
 translation-type: tm+mt
-source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '3883'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # 关于配置Dynamic Media Cloud Service {#configuring-dynamic-media}
 
-如果将Adobe Experience Manager用于不同的环境（如开发、暂存和实时生产），请为这些环境中的每个配置Dynamic MediaCloud Services。
+如果您将Adobe Experience Manager用于不同的环境，如开发、升级和实时生产，请为这些环境中的每个配置Dynamic MediaCloud Services。
 
 ## Dynamic Media{#architecture-diagram-of-dynamic-media}的架构图
 
@@ -232,7 +232,7 @@ Dynamic Media中的密码过期时间设置为从当前系统日期起100年。
 
 #### 配置色彩管理{#configuring-color-management}
 
-Dynamic Media色彩管理可让您对资产进行色彩校正。 借助颜色校正，摄取的资源可保留其色彩空间（RGB、CMYK、灰色）和嵌入的颜色用户档案。 当您请求动态再现时，图像颜色会使用CMYK、RGB或灰色输出校正到目标色彩空间。 请参阅[配置图像预设](/help/assets/dynamic-media/managing-image-presets.md)。
+Dynamic Media色彩管理可让您对资源进行色彩校正。 借助颜色校正，摄取的资源可保留其色彩空间（RGB、CMYK、灰色）和嵌入的颜色用户档案。 当您请求动态再现时，图像颜色会使用CMYK、RGB或灰色输出校正到目标色彩空间。 请参阅[配置图像预设](/help/assets/dynamic-media/managing-image-presets.md)。
 
 要配置默认颜色属性，以便在请求图像时启用颜色校正：
 
