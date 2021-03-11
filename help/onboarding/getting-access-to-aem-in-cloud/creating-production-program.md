@@ -2,7 +2,7 @@
 title: '创建生产项目 '
 description: '创建生产项目 '
 translation-type: tm+mt
-source-git-commit: e1d805e1e5b5850ecf3154cd69a3955c4dbe1e65
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 *Production*&#x200B;项目适用于熟悉AEM和Cloud Manager的用户，可以开始编写、构建和测试代码，以将其部署到生产。
 
-请按照以下步骤创建常规项目:
+请按照以下步骤创建生产项目:
 
-1. 在“创建项目”向导中选择&#x200B;**为生产设置**&#x200B;以创建常规项目。 用户可以接受默认项目名或在选择&#x200B;**继续**&#x200B;之前对其进行编辑。
+1. 在“创建项目”向导中选择&#x200B;**为生产设置**&#x200B;以创建生产项目。 用户可以接受默认项目名或在选择&#x200B;**继续**&#x200B;之前对其进行编辑。
 
    ![](assets/create-prod1.png)
 
