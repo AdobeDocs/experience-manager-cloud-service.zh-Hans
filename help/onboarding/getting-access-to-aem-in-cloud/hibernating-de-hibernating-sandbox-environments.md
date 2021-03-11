@@ -2,7 +2,7 @@
 title: '冬眠和冬眠沙箱环境 '
 description: '冬眠和冬眠沙箱环境 '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 沙箱项目环境在某段时间内未检测到活动，则进入&#x200B;*休眠模式*。
 
 >[!NOTE]
->休眠是沙箱项目环境特有的。 常规项目环境不休眠。
+>休眠是沙箱项目环境特有的。 生产项目环境不休眠。
 
 ## 休眠{#hibernation-introduction}
 
