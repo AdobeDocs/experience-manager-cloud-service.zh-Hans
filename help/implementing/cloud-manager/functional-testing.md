@@ -2,10 +2,10 @@
 title: 功能测试 — Cloud Services
 description: 功能测试 — Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 4%
 
 * 产品功能测试
 * 自定义功能测试
+* 自定义UI测试
 
 ## 产品功能测试{#product-functional-testing}
 
@@ -34,6 +35,34 @@ ht-degree: 4%
 >[!NOTE]
 >“ **下载日志** ”按钮允许访问包含测试执行详细表单日志的ZIP文件。 这些日志不包括实际AEM运行时进程的日志 — 可以使用常规下载或尾日志功能访问这些日志。 有关详细信息，请参阅[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)。
 
+## 自定义UI测试{#custom-ui-testing}
+
+AEM为其客户提供了一套集成的Cloud Manager质量门户，以确保顺利更新其应用程序。 特别是，IT测试门已经允许客户创建并使用AEM API的自动测试。
+
+自定义UI测试功能是一项可选功能，使我们的客户能够为其应用程序创建和自动运行UI测试。 UI测试是在Docker图像中打包的基于Selenium的测试，以允许在语言和框架（如Java和Maven、Node和WebDriver.io，或任何基于Selenium构建的其他框架和技术）中进行广泛的选择。 您可以从此处进一步了解如何构建UI和编写UI测试。 此外，使用AEM Project Archetype可轻松生成UI测试项目。
+
+客户可以（通过GIT）为用户界面创建自定义测试和测试套件。 UI测试将作为每个Cloud Manager管道的特定质量门的一部分执行，并包含其特定步骤和反馈信息。 任何UI测试（包括回归和新功能）都将允许在客户上下文中检测和报告错误。
+
+客户UI测试在“自定义UI测试”步骤下的生产管道上自动运行。
+
+与使用java编写的HTTP测试（自定义功能测试）不同，UI测试可以是使用任何语言编写测试的文档程序图像，只要它们遵循在[构建UI测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests)中定义的惯例。
+
+>[!NOTE]
+>建议以[AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)中便捷提供的结构和语言&#x200B;*（js和wdio）*&#x200B;为起点。
+
+### 客户选择加入{#customer-opt-in}
+
+要构建并执行其UI测试，客户需要通过在UI测试的主子模块（UI测试子模块的pom.xml文件旁边）下的代码存储库中添加一个文件来“选择加入”，并确保此文件位于生成的`tar.gz`文件的根文件中。
+
+*文件名*:  `testing.properties`
+
+*内容*:  `one line: ui-tests.version=1`
+
+如果内置的`tar.gz`文件中不存在此问题，将跳过UI测试生成和执行
+
+>[!NOTE]
+>在2021年2月10日之前创建的生产管道需要更新，才能使用本节中所述的UI测试。 这实质上意味着用户必须编辑生产管线，并从UI中单击&#x200B;**保存**，即使未进行任何更改。
+>有关管道配置的更多信息，请参阅[配置CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager)。
 
 ### 编写功能测试{#writing-functional-tests}
 
