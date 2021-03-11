@@ -2,10 +2,10 @@
 title: 将 URL 关联到您的 Web 应用程序
 description: 如何在Dynamic Media中将URL关联到您的Web应用程序。
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 25%
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->URL 字符串仅适用于资产的动态演绎版。对于存放在 DAM 中（而非 Dynamic Media 服务器中）的静态资产，目前 URL 字符串不适用。对于静态的演绎版，不会显示 URL 按钮。
+>URL字符串仅适用于资产的动态演绎版。它们当前不适用于DAM(而非Dynamic Media服务器)中的静态资产。对于静态的演绎版，不会显示URL按钮。
 
 另请参阅[在网页上嵌入视频查看器或图像查看器](embed-code.md)。
 
