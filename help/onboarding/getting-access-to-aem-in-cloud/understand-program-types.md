@@ -2,7 +2,7 @@
 title: 了解项目和项目类型
 description: 了解项目和项目类型 — Cloud Services
 translation-type: tm+mt
-source-git-commit: e1d805e1e5b5850ecf3154cd69a3955c4dbe1e65
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 3%
@@ -26,6 +26,6 @@ ht-degree: 3%
 有关详细信息，请参阅[生产项目简介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
 
 
-* *沙箱项目*通常用于培训、运行演示、启用、POC或文档目的。 它不是用来承载实时流量的，而且会有常规项目不会受到的限制。 它将包括站点和资产，并将自动填充包含示例代码、开发环境和非生产渠道的Git分支。
+* *沙箱项目*通常用于培训、运行演示、启用、POC或文档目的。 它不用于传输实时流量，并且将具有生产项目不会的限制。 它将包括站点和资产，并将自动填充包含示例代码、开发环境和非生产渠道的Git分支。
 有关详细信息，请参阅[沙箱项目简介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 
