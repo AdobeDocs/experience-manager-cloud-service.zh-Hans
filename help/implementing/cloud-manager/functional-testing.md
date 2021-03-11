@@ -2,9 +2,9 @@
 title: 功能测试 — Cloud Services
 description: 功能测试 — Cloud Services
 translation-type: tm+mt
-source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
+source-git-commit: 765334cff443d56e37f578647af4bcd133509481
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '847'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 功能测试{#functional-testing}
 
-功能测试分为两类：
+功能测试分为三类：
 
 * 产品功能测试
 * 自定义功能测试
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 AEM为其客户提供了一套集成的Cloud Manager质量门户，以确保顺利更新其应用程序。 特别是，IT测试门已经允许客户创建并使用AEM API的自动测试。
 
-自定义UI测试功能是一项可选功能，使我们的客户能够为其应用程序创建和自动运行UI测试。 UI测试是在Docker图像中打包的基于Selenium的测试，以允许在语言和框架（如Java和Maven、Node和WebDriver.io，或任何基于Selenium构建的其他框架和技术）中进行广泛的选择。 您可以从此处进一步了解如何构建UI和编写UI测试。 此外，使用AEM Project Archetype可轻松生成UI测试项目。
+自定义UI测试功能是一项可选功能[客户选择](#customer-opt-in)，它使我们的客户能够为其应用程序创建和自动运行UI测试。 UI测试是在Docker图像中打包的基于Selenium的测试，以允许在语言和框架（如Java和Maven、Node和WebDriver.io，或任何基于Selenium构建的其他框架和技术）中进行广泛的选择。 您可以从此处进一步了解如何构建UI和编写UI测试。 此外，使用AEM Project Archetype可轻松生成UI测试项目。
 
 客户可以（通过GIT）为用户界面创建自定义测试和测试套件。 UI测试将作为每个Cloud Manager管道的特定质量门的一部分执行，并包含其特定步骤和反馈信息。 任何UI测试（包括回归和新功能）都将允许在客户上下文中检测和报告错误。
 
