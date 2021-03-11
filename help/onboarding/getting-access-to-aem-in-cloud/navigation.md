@@ -2,9 +2,9 @@
 title: 以Cloud Service的身份获取对Cloud Manager for AEM的访问权限
 description: 以Cloud Service的身份获取对Cloud Manager for AEM的访问权限
 translation-type: tm+mt
-source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
+source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,10 @@ ht-degree: 0%
 
 如果您未看到&#x200B;**添加项目**&#x200B;按钮并对访问Cloud Service有疑问，请与Adobe代表联系。
 
-有关更多详细信息，请参阅[使用现有项目](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program)在Cloud Service中添加新项目。
-
 ## 对于新Cloud Service客户{#new-cloud-services}
 
 如果您是新的Cloud Service客户，则您将在空登陆页的右上角看到&#x200B;**添加项目**&#x200B;按钮。 您需要向Cloud Service添加新项目。
 
-有关更多详细信息，请参阅[在没有现有项目的Cloud Service中添加新项目](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program)。
-
+要了解如何在云管理器中添加项目，请参阅：
+* [创建生产项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [创建沙箱项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
