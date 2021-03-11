@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 translation-type: tm+mt
-source-git-commit: 4e1f06e38fd968f8bcf240a5a30cf3362e562294
+source-git-commit: 6bbcbb75076a537a78b92415549f631842f028ce
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 35%
+source-wordcount: '691'
+ht-degree: 32%
 
 ---
 
@@ -15,19 +15,26 @@ ht-degree: 35%
 # 入门 {#onboarding}
 
 + [AEM as a Cloud Service 入门](/help/onboarding/home.md)
-+ 先决条件 {#what-is-required}
++ 将AEM作为Cloud Service{#what-is-required}入门
    + [已授予的访问权限](what-is-required/access-rights-granted.md)
    + [添加用户和角色](what-is-required/add-users-roles.md)
    + [基于角色的权限](what-is-required/role-based-permissions.md)
    + [源代码存储库](what-is-required/source-code-repository.md)
 + 在云中获取 AEM 的访问权限 {#getting-access}
-   + [配置过程概述](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
-   + [访问 Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
+   + [以Cloud Service的身份获取对Cloud Manager for AEM的访问权限](getting-access-to-aem-in-cloud/navigation.md)
    + 访问 Cloud Manager {#cloud-service-programs}
       + [Cloud Manager主页](getting-access-to-aem-in-cloud/first-time-login.md)
       + [了解程序和程序类型](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + [创建程序](getting-access-to-aem-in-cloud/creating-a-program.md)
-      + [沙盒程序](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + 生产项目{#production-programs}
+         + [简介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [创建生产项目](getting-access-to-aem-in-cloud/creating-production-program.md)
+         + [编辑制作项目](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + 沙盒程序 {#sandbox-programs}
+         + [简介](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [创建沙箱项目](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+         + [编辑沙箱项目](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+         + [删除沙箱项目](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+         + [冬眠和冬眠沙箱环境](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
       + [配置 CI/CD 管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
@@ -71,7 +78,8 @@ ht-degree: 35%
       + [删除IP允许列表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [检查IP允许列表状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Cloud Manager {#release-notes-cloud-manager}发行说明
-      + [最新发行说明（2021.2.0 版）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新发行说明（2021.3.0 版）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2021.2.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [2021.1.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [2020.12.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [2020.11.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
