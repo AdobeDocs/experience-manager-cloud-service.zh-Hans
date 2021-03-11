@@ -2,17 +2,19 @@
 title: Cloud Manager主页
 description: Cloud Manager主页
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
 
-# Cloud Manager主页{#first-time-login}
+# Cloud Manager登陆页{#first-time-login}
 
-要访问云管理器：
+当您的系统管理员授予您对Cloud Manager的访问权限后，您将收到一封电子邮件，将带您进入Cloud Manager登录页面。
+
+请按照以下步骤访问Cloud Manager:
 
 1. 使用您的Adobe ID导航到[Experience Cloud](https://experience.adobe.com/)。
 1. 选择&#x200B;**Experience Manager**。
@@ -26,7 +28,7 @@ ht-degree: 0%
    >
    >根据在[!UICONTROL Cloud Manager]中分配的角色和应用程序的状态，您将在使用[!UICONTROL Cloud Manager] UI时看到不同的屏幕。
 
-## Cloud Manager登陆页{#landing-page}
+## 项目在Cloud Manager {#cloud-manager-landing-page}中
 
 成功登录[!UICONTROL 云管理器]后，登陆页将显示您组织中任何现有项目的卡。
 
@@ -44,28 +46,21 @@ ht-degree: 0%
 * **项目已存在于Cloud Manager中**
 
 
-## 在没有现有项目的Cloud Service中添加新项目{#no-program}
-
-
-登陆页指示您创建第一个项目，如下图所示。
+如果您的组织中不存在项目，则登陆页会指示您创建您的第一个项目，如下图所示。
 ![](assets/first_timelogin0.png)
 
 
-## 使用现有项目{#existing-program}在Cloud Service中添加新项目
+如果您的组织中已存在项目，则登陆页会指示您添加其他项目并显示您的所有现有项目，如下图所示。
 
+![](assets/first_timelogin1.png)
 
-1. 登录到&#x200B;**Adobe[!UICONTROL Experience Cloud]**，您将看到&#x200B;**项目和产品**&#x200B;的列表。
+>[!NOTE]
+>Cloud Service上的项目由子标题&#x200B;**Experience Manager云**&#x200B;表示(与AMS项目的&#x200B;**Experience Manager**相对)。
+>例如，在上图中，**We.Retail Global**&#x200B;是AMS项目,**We.Retail-Prod项目- Prod**&#x200B;是可通过Cloud Service获得的项目。
 
-   ![](assets/first_timelogin1.png)
+要了解如何在云管理器中添加项目，请参阅：
 
-   Cloud Service上的项目由子标题&#x200B;**Experience Manager云**&#x200B;表示(与AMS项目的&#x200B;**Experience Manager**&#x200B;相对)。
-
-   >[!NOTE]
-   >例如，在上图中，**We.Retail Global**&#x200B;是AMS项目,**We.Retail-Prod项目- Prod**&#x200B;是可通过Cloud Service获得的项目。
-
-1. 要了解如何从&#x200B;**项目和产品**&#x200B;屏幕添加项目以在Cloud Service中创建新项目，请参阅：
-
-   * [创建生产项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-   * [创建沙箱项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* [创建生产项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [创建沙箱项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
