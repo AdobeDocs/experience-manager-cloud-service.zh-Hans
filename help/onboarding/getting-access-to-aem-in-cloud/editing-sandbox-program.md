@@ -2,9 +2,9 @@
 title: '编辑沙箱项目 '
 description: '编辑沙箱项目 '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ ht-degree: 0%
 
 请按照以下步骤编辑沙箱项目:
 
-1. 导航到&#x200B;**编辑项目**&#x200B;页。
+1. 从Cloud Manager的&#x200B;*概述*&#x200B;页面导航到&#x200B;**编辑项目**&#x200B;页面。
 
 1. **“编辑项目**”页显示两个用于“生产”和“沙箱”项目的选项卡（“常规”和“解决方案”）。
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >当站点和资产都将显示时，根据已购买和未使用的内容，其中一个可能会被禁用。 具体而言，如果组织没有特定解决方案的未使用授权，则将显示该解决方案，但将禁用该解决方案。
 
 ## 编辑项目{#considerations-editing}时的注意事项
 
