@@ -2,9 +2,9 @@
 title: 部署代码 — Cloud Services
 description: 部署代码 — Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1054'
 ht-degree: 1%
 
 ---
@@ -50,15 +50,19 @@ ht-degree: 1%
       ![](assets/stage-deployment.png)
    舞 **台测试**，涉及以下步骤：
 
-   * 产品功能测试：Cloud Manager管道执行将支持执行针对舞台环境运行的测试。
-有关详细信息，请参阅[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
+   * **产品功能测试**:Cloud Manager管道执行将支持执行针对舞台环境运行的测试。有关详细信息，请参阅[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
 
-   * 自定义功能测试：管道中的此步骤始终存在，无法跳过。 但是，如果生成未生成测试JAR，则默认情况下测试通过。\
+   * **自定义功能测试**:管道中的此步骤始终存在，无法跳过。但是，如果生成未生成测试JAR，则默认情况下测试通过。\
       有关详细信息，请参阅[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
 
+   * **自定义UI测试**:此步骤是一项可选功能，使我们的客户能够为其应用程序创建和自动运行UI测试。UI测试是在Docker图像中打包的基于Selenium的测试，以允许在语言和框架（如Java和Maven、Node和WebDriver.io，或任何基于Selenium构建的其他框架和技术）中进行广泛的选择。
+有关详细信息，请参阅自定义UI测试。
 
-   * 体验审计：管道中的此步骤始终存在，无法跳过。 在执行生产管道时，将在运行检查的自定义功能测试之后包括体验审核步骤。 配置的页面将提交到服务并进行评估。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 这一洞察对于确定当前部署中是否引入回归很有价值。
+
+   * **体验审计**:管道中的此步骤始终存在，无法跳过。在执行生产管道时，将在运行检查的自定义功能测试之后包括体验审核步骤。 配置的页面将提交到服务并进行评估。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 这一洞察对于确定当前部署中是否引入回归很有价值。
 有关更多详细信息，请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+
+      ![](assets/stage-testing.png)
 
 
 
