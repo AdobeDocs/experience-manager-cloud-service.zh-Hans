@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
+source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 57%
+source-wordcount: '2274'
+ht-degree: 51%
 
 ---
 
@@ -26,9 +26,13 @@ ht-degree: 57%
 
 * 如果您使用&#x200B;*沙箱环境*，请确保环境为最新版本并升级到最新版本。 如果您使用的是“生产环境”**，则会自动更新。
 
-* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的Cloud Service实例中的本地AEM管理员组。 无特权的用户将无法检索访问令牌，进而无法使用内容传输工具。
+* 要使用内容传输工具，您必须是源实例上的管理员用户，并且属于要将内容传输到的Cloud Service实例中的本地AEM **administrators**&#x200B;组。 无特权的用户将无法检索访问令牌，进而无法使用内容传输工具。
+
+* 如果启用设置&#x200B;**在ingestion**&#x200B;之前擦除Cloud实例上的现有内容，则会删除整个现有存储库并创建新存储库以将内容收录到其中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到&#x200B;**administrators**&#x200B;组的管理员用户，也是如此。 需要将用户重新添加到&#x200B;**administrators**&#x200B;组，以检索CTT的访问令牌。
 
 * 访问令牌可以在特定时间段后或Cloud Service环境升级后定期过期。 如果访问令牌已过期，您将无法连接到Cloud Service实例，您必须检索新访问令牌。 与现有迁移集关联的状态图标将更改为红色云，并且当您将鼠标悬停在该云上方时，将显示一条消息。
+
+* 在将内容从源实例传输到目标实例之前，内容传输工具不执行任何类型的内容分析。 例如，在将内容引入发布环境时，CTT不区分已发布和未发布的内容。 迁移集中指定的任何内容都将被引入所选的目标实例。 用户可以将迁移集引入Author实例或Publish实例中，或同时引入两者。 建议在将内容移至生产实例时，CTT应安装一个源作者实例，以将内容移至目标作者实例，并以同样方式在源Publish实例上安装CTT以将内容移至目标发布实例。
 
 * 由内容传输工具传输的用户和用户组只是内容满足权限要求的用户和用户组。 *提取*&#x200B;进程将整个`/home`复制到迁移集中，而&#x200B;*Ingestion*&#x200B;进程将复制迁移内容ACL中引用的所有用户和组。 要自动将现有用户和用户组映射到其IMS ID，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
@@ -174,7 +178,7 @@ ht-degree: 57%
 1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**收录**&#x200B;以开始摄取阶段。 否则其会将内容同时摄取到“创作”和“发布”。
 
    >[!IMPORTANT]
-   >启用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项后，将删除整个现有存储库并创建新存储库以将内容摄取到其中。**&#x200B;这意味着它会重置所有设置，包括目标Cloud Service实例的权限。
+   >启用“在摄取&#x200B;**之前擦除Cloud实例上的现有内容”选项后，将删除整个现有存储库并创建新存储库以将内容摄取到其中。**&#x200B;这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到&#x200B;**administrators**&#x200B;组的管理员用户，也是如此。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
