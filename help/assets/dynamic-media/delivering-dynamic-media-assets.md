@@ -2,10 +2,10 @@
 title: 传送 Dynamic Media 资产
 description: 了解如何交付Dynamic Media资产。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 20%
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 20%
 
 有了Dynamic Media，您有以下几种选择：
 
-* 如果您的网站托管在 AEM 上，您会希望将 Dynamic Media 资产直接添加到您的页面。
+* 如果您的网站托管在AEM上，则您希望将Dynamic Media资产直接添加到您的页面。
 * 如果您的网站不在AEM上，您可以选择：
 
    * 将视频或图像嵌入您的网站。
