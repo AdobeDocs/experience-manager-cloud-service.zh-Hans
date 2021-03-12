@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2307'
 ht-degree: 51%
 
 ---
@@ -208,6 +208,8 @@ ht-degree: 51%
 
 ### 查看迁移集的日志 {#viewing-logs-migration-set}
 
+完成每个步骤(提取和摄取)后，请检查日志并查找错误。  任何错误都应立即通过处理报告的问题或联系Adobe支持来解决。
+
 您可以从&#x200B;*概述*&#x200B;页面查看现有迁移集的日志。应遵循以下步骤：
 
 1. 导航到&#x200B;*概述*&#x200B;页面并选择您要删除的迁移集，然后单击操作栏中的&#x200B;**查看日志**。
@@ -265,6 +267,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 有关更多详细信息，请参阅 [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)。
 
 可以检查在上述指定 *OUT_DIR* 中为保持一致性而创建的文件是否存在缺少二进制文件的路径，以及是否执行了相应操作，例如从备份中还原、删除路径、重建索引等。
+
 
 ### UI 行为 {#ui-behavior}
 
