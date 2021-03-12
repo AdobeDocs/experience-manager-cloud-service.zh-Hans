@@ -2,9 +2,9 @@
 title: '创建生产项目 '
 description: '创建生产项目 '
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 *Production*&#x200B;项目适用于熟悉AEM和Cloud Manager的用户，可以开始编写、构建和测试代码，以将其部署到生产。
 
 请按照以下步骤创建生产项目:
+
+1. 启动Cloud Manager的登陆页，然后单击屏幕右上角的&#x200B;**添加项目**。
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >要了解如何访问Cloud Manager，请参阅[Cloud Manager登陆页](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)以了解详细信息。
 
 1. 在“创建项目”向导中选择&#x200B;**为生产设置**&#x200B;以创建生产项目。 用户可以接受默认项目名或在选择&#x200B;**继续**&#x200B;之前对其进行编辑。
 
