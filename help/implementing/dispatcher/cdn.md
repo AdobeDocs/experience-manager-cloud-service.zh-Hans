@@ -2,17 +2,17 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
+source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 4%
+source-wordcount: '695'
+ht-degree: 7%
 
 ---
 
 
 # AEM as a Cloud Service 中的 CDN {#cdn}
 
-AEM as Cloud Service随内置CDN提供。 其主要目的是通过从位于浏览器边缘的CDN节点传送可缓存内容来减少延迟。 它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。
+AEM as Cloud Service随内置CDN提供。 其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。
 
 AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层，客户可以选择从自己的CDN指向它，他们需要管理它。 这将基于满足某些先决条件（包括但不限于客户与其CDN供应商的旧版集成很难放弃）而允许，逐个案例进行。
 
@@ -47,10 +47,10 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 
 1. 使用域名设置`X-Forwarded-Host`头。
 1. 将主机头设置为来源域，即AEM CDN的入口。 值应来自Adobe。
-1. 将SNI头发送到来源。 与主机头一样， sni头必须是来源域。
+1. 将SNI头发送到来源。 与主机头一样， SNI头必须是来源域。
 1. 设置`X-Edge-Key`或`X-AEM-Edge-Key`（如果CDN中包含X-Edge-*），这是将流量正确路由到AEM服务器所需的。 值应来自Adobe。 如果您希望直接访问Adobe CDN的入口，请通知Adobe（当`X-Edge-Key`不存在时将被阻止）。
 
-在接受实时流量之前，您应向Adobe客户支持进行验证，以确保端到端流量路由能够正确运行。
+在接受实时流量之前，您应向Adobe的客户支持确认端到端流量路由是否正常运行。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 
 ## 地理位置标头{#geo-headers}
 
-AEM托管CDN将通过以下方式向每个请求添加标头：
+AEM托管CDN可通过以下方式将标头添加到每个请求：
 
 * 国家/地区代码：`x-aem-client-country`
 * 大陆代码：`x-aem-client-continent`
