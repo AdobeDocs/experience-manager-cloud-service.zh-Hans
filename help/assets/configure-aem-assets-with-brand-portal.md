@@ -3,10 +3,10 @@ title: 将AEM Assets配置为 [!DNL Cloud Service] 和Brand Portal
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
+source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 15%
+source-wordcount: '2248'
+ht-degree: 11%
 
 ---
 
@@ -15,9 +15,162 @@ ht-degree: 15%
 
 通过配置Adobe Experience Manager Assets Brand Portal，您可以将Adobe Experience Manager Assets中已批准的品牌资产作为[!DNL Cloud Service]实例发布到Brand Portal，然后将其分发到Brand Portal用户。
 
-**配置工作流**
+## 使用Cloud Manager {#activate-brand-portal}激活Brand Portal
 
-AEM Assets作为[!DNL Cloud Service]已通过Adobe Developer Console配置Brand Portal，后者为Brand Portal租户购买Adobe Identity Management Services(IMS)帐户令牌以进行授权。 它要求在AEM Assets和Adobe开发人员控制台中进行配置。
+Cloud Manager用户将AEM Assets的Brand Portal激活为[!DNL Cloud Service]实例。 激活工作流会在后端创建所需的配置（授权令牌、IMS配置和Brand Portal云服务），并反映Cloud Manager中Brand Portal租户的状态。
+
+**前提条件**
+
+您需要以下内容才能将AEM Assets上的Brand Portal作为[!DNL Cloud Service]实例激活：
+
+* 作为[!DNL Cloud Service]实例启动并运行AEM Assets。
+* 有权访问Cloud Manager的用户，已分配给Cloud Manager产品的用户档案。 有关详细信息，请参阅[访问Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#accessing-cloud-manager)。
+
+>[!NOTE]
+>
+>作为[!DNL Cloud Service]实例的AEM Assets仅有权连接一个Brand Portal租户。 您可以作为[!DNL Cloud Service]实例为AEM Assets创建多个环境（开发、生产和舞台），其中Brand Portal仅在一个环境上激活。
+
+**激活Brand Portal的步骤**
+
+您可以在将AEM Assets创建为[!DNL Cloud Service]实例的环境时激活Brand Portal，也可以单独激活。 假设环境已创建，您现在需要激活Brand Portal。
+
+1. 登录到Adobe Cloud Manager，然后导航到&#x200B;**[!UICONTROL 环境]**。
+
+   **[!UICONTROL 环境]**&#x200B;页显示所有现有环境的列表。
+
+1. 从列表中选择环境（逐个）以视图环境详细信息。
+
+   Brand Portal有权访问某个可用环境，并反映在&#x200B;**[!UICONTROL 环境信息]**&#x200B;下。
+
+   找到与Brand Portal关联的环境后，单击&#x200B;**[!UICONTROL 激活Brand Portal]**&#x200B;按钮，开始激活工作流。
+
+   ![激活Brand Portal](assets/create-environment4.png)
+
+1. 在激活工作流在后端创建所需的配置时，激活Brand Portal租户可能需要几分钟。 激活Brand Portal租户后，状态将更改为“已激活”。
+
+   ![视图状态](assets/create-environment5.png)
+
+**另请参阅**:
+* [在AEM Assets中添加用户和角色作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+
+* [在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
+
+
+**登录到您的Brand Portal租户**:
+
+在Cloud Manager中激活您的Brand Portal租户后，您可以从Admin Console或直接使用租户URL登录到Brand Portal。
+
+您的Brand Portal租户的默认URL为：`https://<tenant-id>.brand-portal.adobe.com/`。
+
+如果您不确定Brand Portal URL，请执行以下步骤：
+
+1. 登录[Admin Console](http://adminconsole.adobe.com/)并导航到&#x200B;**[!UICONTROL 产品]**。
+1. 在左边栏中，选择&#x200B;**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**。
+1. 单击&#x200B;**[!UICONTROL 转至Brand Portal]**&#x200B;以在浏览器中直接打开Brand Portal。
+
+   或者，复制Brand Portal租户URL并将其粘贴到您的浏览器中以打开Brand Portal界面。
+
+   ![访问Brand Portal](assets/access-bp-on-cloud.png)
+
+
+**测试连接**
+
+请执行以下步骤来验证作为[!DNL Cloud Service]实例的AEM Assets与Brand Portal租户之间的连接：
+
+1. 登录 AEM Assets。
+
+1. 从&#x200B;**工具**&#x200B;面板，导航到&#x200B;**[!UICONTROL 部署]** > **[!UICONTROL 分发]**。
+
+   ![](assets/test-bpconfig1.png)
+
+   在&#x200B;**[!UICONTROL 发布到Brand Portal]**&#x200B;下创建Brand Portal分发代理(**[!UICONTROL bpdistributionagent0]**)。
+
+   ![](assets/test-bpconfig2.png)
+
+
+1. 单击&#x200B;**[!UICONTROL 发布到Brand Portal]**&#x200B;以打开分发代理。
+
+   您可以在&#x200B;**[!UICONTROL 状态]**&#x200B;选项卡下看到分布队列。
+
+   分发代理包含两个队列：
+   * **processing-queue**:用于将资产分发到Brand Portal。
+
+   * **error-queue**:对于分发失败的资产。
+   >[!NOTE]
+   >
+   >建议定期查看故障并清除&#x200B;**error-queue**。
+
+   ![](assets/test-bpconfig3.png)
+
+1. 要验证作为[!DNL Cloud Service]的AEM Assets与Brand Portal之间的连接，请单击&#x200B;**[!UICONTROL 测试连接]**&#x200B;图标。
+
+   ![](assets/test-bpconfig4.png)
+
+   将显示一条消息，提示已成功传送&#x200B;*测试包*。
+
+   >[!NOTE]
+   >
+   >请避免禁用分发代理，因为这可能导致资产分发（在队列中运行）失败。
+
+要验证作为[!DNL Cloud Service]实例的AEM Assets与Brand Portal租户之间的连接，请将资产从AEM Assets发布到Brand Portal。 如果连接成功，则已发布的资产会显示在Brand Portal界面中。
+
+
+您现在可以：
+
+* [将资产从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md)
+* [将文件夹从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [将收藏集从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [将资产从Brand Portal发布到AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Brand Portal中的资产来源
+* [将预设、架构和 Facet 发布到 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [将标记发布到 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+有关详细信息，请参阅[Brand Portal文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/home.html)。
+
+**分发日志**
+
+您可以监视资产发布工作流的分发代理日志。
+
+例如，我们已将资产从AEM Assets发布到Brand Portal以验证配置。
+
+1. 按照[测试配置](#test-configuration)部分中显示的步骤（从1到4）操作，并导航到Distribution Agent页。
+1. 单击&#x200B;**[!UICONTROL 日志]**&#x200B;以视图处理日志和错误日志。
+
+   ![](assets/test-bpconfig5.png)
+
+分发代理已生成以下日志：
+
+* 信息：这是系统生成的日志，在成功配置分发代理时触发。
+* DSTRQ1（请求1）：测试连接时触发器。
+
+发布资产时，会生成以下请求和响应日志：
+
+**分发代理请求**：
+
+* DSTRQ2（请求 2）：触发资产发布请求。
+* DSTRQ3（请求3）：系统会触发另一个请求，以发布AEM Assets文件夹（资产所在的文件夹），并在Brand Portal中复制该文件夹。
+
+**分发代理响应**：
+
+* queue-bpdistributionagent0(DSTRQ2)：将资产发布到 Brand Portal。
+* queue-bpdistributionagent0(DSTRQ3):系统将复制Brand Portal中的AEM Assets文件夹（包含资产）。
+
+在上述示例中，还会触发其他请求和响应。系统无法在Brand Portal中找到父文件夹（添加路径），因为资产是首次发布的，因此系统会触发另一个请求，要求在发布资产的Brand Portal中创建同名的父文件夹。
+
+>[!NOTE]
+>
+>如果父级文件夹在Brand Portal中不存在或在AEM Assets中已修改，则会生成其他请求。
+
+除了将AEM Assets上的Brand Portal激活为[!DNL Cloud Service]的自动化工作流程外，还有一种方法可使用Adobe开发人员控制台将AEM Assets手动配置为[!DNL Cloud Service]并将Brand Portal，这已不再建议使用。
+
+>[!NOTE]
+>
+>如果您在激活Brand Portal租户时遇到任何问题，必须联系Adobe支持。
+
+## 使用Adobe Developer Console {#manual-configuration}进行手动配置
+
+下节介绍如何使用Adobe Developer Console将AEM Assets手动配置为[!DNL Cloud Service]和Brand Portal。
+
+以前，AEM Assets作为[!DNL Cloud Service]是通过Adobe Developer Console手动配置Brand Portal的，后者为Brand Portal租户购买Adobe Identity Management Services(IMS)帐户令牌以授权。 它要求在AEM Assets和Adobe开发人员控制台中进行配置。
 
 1. 在AEM Assets中，创建IMS帐户并生成公钥（证书）。
 1. 在Adobe开发人员控制台中，为您的Brand Portal租户（组织）创建一个项目。
@@ -31,7 +184,7 @@ AEM Assets作为[!DNL Cloud Service]已通过Adobe Developer Console配置Brand 
 >
 >作为[!DNL Cloud Service]实例的AEM Assets只能配置一个Brand Portal租户。
 
-## 前提条件 {#prerequisites}
+**前提条件**
 
 您需要以下各项才能使用 Brand Portal 配置 AEM Assets：
 
@@ -47,7 +200,6 @@ AEM Assets作为[!DNL Cloud Service]已通过Adobe Developer Console配置Brand 
 1. [创建服务帐户(JWT)连接](#createnewintegration)
 1. [配置IMS帐户](#create-ims-account-configuration)
 1. [配置云服务](#configure-the-cloud-service)
-1. [测试配置](#test-configuration)
 
 ### 创建 IMS 配置 {#create-ims-configuration}
 
@@ -233,89 +385,94 @@ IMS 配置包括两个步骤：
 
    您的AEM Assets现在已配置为[!DNL Cloud Service]实例的Brand Portal租户。
 
-### 测试配置{#test-configuration}
+您现在可以通过检查分发代理并将资产发布到Brand Portal来测试配置。
 
-请执行以下步骤以验证配置：
+<!--
+### Test configuration {#test-configuration}
 
-1. 登录 AEM Assets。
+Perform the following steps to validate the configuration:
 
-1. 从&#x200B;**工具**&#x200B;面板，导航到&#x200B;**[!UICONTROL 部署]** > **[!UICONTROL 分发]**。
+1. Log in to AEM Assets.
 
-   ![](assets/test-bpconfig1.png)
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-   在&#x200B;**[!UICONTROL 发布到Brand Portal]**&#x200B;下创建Brand Portal分发代理(**[!UICONTROL bpdistributionagent0]**)。
+    ![](assets/test-bpconfig1.png)
+
+   A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
    ![](assets/test-bpconfig2.png)
 
 
-1. 单击&#x200B;**[!UICONTROL 发布到Brand Portal]**&#x200B;以打开分发代理。
+1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
 
-   您可以在&#x200B;**[!UICONTROL 状态]**&#x200B;选项卡下看到分布队列。
+   You can see the distribution queues under the **[!UICONTROL Status]** tab. 
+   
+   A distribution agent contains two queues: 
+   * **processing-queue**: for the distribution of assets to Brand Portal. 
 
-   分发代理包含两个队列：
-   * **processing-queue**:用于将资产分发到Brand Portal。
-
-   * **error-queue**:对于分发失败的资产。
+   * **error-queue**: for the assets where distribution has failed. 
+   
    >[!NOTE]
    >
-   >建议定期查看故障并清除&#x200B;**error-queue**。
+   >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
    ![](assets/test-bpconfig3.png)
 
-1. 要验证作为[!DNL Cloud Service]的AEM Assets与Brand Portal之间的连接，请单击&#x200B;**[!UICONTROL 测试连接]**&#x200B;图标。
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
    ![](assets/test-bpconfig4.png)
 
-   将显示一条消息，提示已成功传送&#x200B;*测试包*。
+   A message appears that your *test package is successfully delivered*.
 
    >[!NOTE]
    >
-   >请避免禁用分发代理，因为这可能导致资产分发（在队列中运行）失败。
+   >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
 
-您现在可以：
+You can now:
 
-* [将资产从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md)
-* [将文件夹从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [将收藏集从 AEM Assets 发布到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [将资产从Brand Portal发布到AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Brand Portal中的资产来源
-* [将预设、架构和 Facet 发布到 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [将标记发布到 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
+* [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-有关详细信息，请参阅[Brand Portal文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/home.html)。
+See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
-## 分发日志 {#distribution-logs}
+## Distribution logs {#distribution-logs}
 
-您可以监视资产发布工作流的分发代理日志。
+You can monitor the distribution agent logs for the asset publishing workflow. 
 
-例如，我们已将资产从AEM Assets发布到Brand Portal以验证配置。
+For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
-1. 按照[测试配置](#test-configuration)部分中显示的步骤（从1到4）操作，并导航到Distribution Agent页。
-1. 单击&#x200B;**[!UICONTROL 日志]**&#x200B;以视图处理日志和错误日志。
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
+1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
    ![](assets/test-bpconfig5.png)
 
-分发代理已生成以下日志：
+The distribution agent has generated the following logs:
 
-* 信息：这是系统生成的日志，在成功配置分发代理时触发。
-* DSTRQ1（请求1）：测试连接时触发器。
+* INFO: This is a system-generated log that triggers on successful configuration of the distribution agent. 
+* DSTRQ1 (Request 1): Triggers on test connection.
 
-发布资产时，会生成以下请求和响应日志：
+On publishing the asset, the following request and response logs are generated:
 
-**分发代理请求**：
+**Distribution agent request**:
 
-* DSTRQ2（请求 2）：触发资产发布请求。
-* DSTRQ3（请求3）：系统会触发另一个请求，以发布AEM Assets文件夹（资产所在的文件夹），并在Brand Portal中复制该文件夹。
+* DSTRQ2 (Request 2): The asset publishing request is triggered.
+* DSTRQ3 (Request 3): The system triggers another request to publish the AEM Assets folder (in which the asset exists) and replicates the folder in Brand Portal.
 
-**分发代理响应**：
+**Distribution agent response**:
 
-* queue-bpdistributionagent0(DSTRQ2)：将资产发布到 Brand Portal。
-* queue-bpdistributionagent0(DSTRQ3):系统将复制Brand Portal中的AEM Assets文件夹（包含资产）。
+* queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): The system replicates the AEM Assets folder (containing the asset) in Brand Portal.
 
-在上述示例中，还会触发其他请求和响应。系统无法在Brand Portal中找到父文件夹（添加路径），因为资产是首次发布的，因此系统会触发另一个请求，要求在发布资产的Brand Portal中创建同名的父文件夹。
+In the above example, an additional request and response is triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
 >
->如果父级文件夹在Brand Portal中不存在或在AEM Assets中已修改，则会生成其他请求。
+>Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
+-->
 
 <!--
 
