@@ -2,9 +2,9 @@
 title: Adobe Experience Manager与Cloud Service支持相同的站点Cookie
 description: Adobe Experience Manager与Cloud Service支持相同的站点Cookie
 translation-type: tm+mt
-source-git-commit: e51d9c3e4691fb58f3c4b6a2565cc8cad2a1acb0
+source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ ht-degree: 0%
 1. 单击“保存”
 1. 按照使用AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)生成OSGi配置中所述的步骤，为此特定设置生成JSON格式配置[
 1. 按照[Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi文档中的步骤应用设置。
+
+更新此设置后，用户将重新注销并登录，`login-token` cookie将设置`None`属性，并将包含在跨站点请求中。
