@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
+source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -51,6 +51,10 @@ AEM托管CDN将满足大多数客户的性能和安全要求。 对于发布层�
 1. 设置`X-Edge-Key`或`X-AEM-Edge-Key`（如果CDN中包含X-Edge-*），这是将流量正确路由到AEM服务器所需的。 值应来自Adobe。 如果您希望直接访问Adobe CDN的入口，请通知Adobe（当`X-Edge-Key`不存在时将被阻止）。
 
 在接受实时流量之前，您应向Adobe客户支持进行验证，以确保端到端流量路由能够正确运行。
+
+>[!NOTE]
+>
+>管理自己的CDN的客户应确保发送到AEM CDN的头的完整性。 例如，建议客户清除所有`X-Forwarded-*`标头，并将其设置为已知和受控值。 例如，`X-Forwarded-For`应包含客户端的IP地址，而`X-Forwarded-Host`应包含站点的主机。
 
 由于额外的跃点，性能可能会受到很小的影响，但从客户CDN到AEM托管CDN的跃点可能会很高效。
 
