@@ -2,7 +2,7 @@
 title: 授予的访问权限 — 必需
 description: 授予的访问权限 — 必需
 translation-type: tm+mt
-source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
+source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 9%
@@ -36,8 +36,8 @@ Adobe为您的公司创建了组织后，您指定的管理员将作为该组织
    * [管理角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-roles)
    * [管理对作者实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-access-aem)
 
->[!NOTE]
->请访问[用户和角色](#users-roles)部分，进一步了解Cloud Manager中的用户和角色定义。
+      >[!NOTE]
+      >请访问[用户和角色](#users-roles)部分，进一步了解Cloud Manager中的用户和角色定义。
 
 授予这些权限后，管理员现在可通过单一登录(使用Adobe ID)设置以访问[!UICONTROL Experience Cloud]服务、登录AEM云环境并使用[!UICONTROL 云管理器]。
 
