@@ -2,7 +2,7 @@
 title: Adobe Experience Manager与Cloud Service支持相同的站点Cookie
 description: 将Adobe Experience Manager作为Cloud Service支持ISame站点Cookie
 translation-type: tm+mt
-source-git-commit: d9a7836034134fac91529a1996c8f05a48a5f4fd
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -26,5 +26,5 @@ ht-degree: 0%
 1. 如下图所示，将登录令牌cookie **的** SameSite属性设置为`None`
    ![samesite](/help/security/assets/samesite1.png)
 1. 单击“保存”
-1. 按照使用AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configuratuions-using-the-aem-sdk-quickstart)生成OSGi配置中所述的步骤，为此特定设置生成JSON格式配置[
+1. 按照使用AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)生成OSGi配置中所述的步骤，为此特定设置生成JSON格式配置[
 1. 按照[Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi文档中的步骤应用设置。
