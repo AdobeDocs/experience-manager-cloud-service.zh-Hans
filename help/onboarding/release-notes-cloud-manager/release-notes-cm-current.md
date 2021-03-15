@@ -2,7 +2,7 @@
 title: AEM中Cloud Manager作为Cloud Service版本2021.3.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2021.3.0的发行说明
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -26,8 +26,8 @@ AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11�
 * 拥有[IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)预存自定义域名配置的环境的客户将看到有关其先前现有配置的消息，并将能够通过UI自助服务。
 
 * 具有必需权限的用户现在可以编辑项目，允许他们以自助方式执行以下操作：
-   * 将“站点”解决方案添加到包含资产的现有项目（反之亦然）。
-   * 将站点（或资产）从包含站点和资产的现有项目中删除。
+   * 将站点解决方案添加到包含资产的现有项目，反之亦然。
+   * 将站点或资产从包含站点和资产的现有项目中删除。
    * 将第二个未使用的解决方案授权添加到现有项目或作为新项目。
 
 * **AEM推** 送更新标签现在将同时显示在“管线执行”和“活动”屏幕中。
