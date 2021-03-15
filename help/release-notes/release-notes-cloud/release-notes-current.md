@@ -2,7 +2,7 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 2%
@@ -87,8 +87,8 @@ AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11�
 
 * 具有必需权限的用户现在可以编辑项目，允许他们以自助方式执行以下操作：
 
-   * 将“站点”解决方案添加到包含资产的现有项目（反之亦然）。
-   * 将站点（或资产）从包含站点和资产的现有项目中删除。
+   * 将站点解决方案添加到包含资产的现有项目，反之亦然。
+   * 将站点或资产从包含站点和资产的现有项目中删除。
    * 将第二个未使用的解决方案授权添加到现有项目或作为新项目。
 
 * **AEM Push** Updatelabel现在将同时显示在Pipeline Executive和 *Activity* 屏幕 ** 上。
@@ -101,11 +101,11 @@ AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11�
 
 * **版本**&#x200B;标签已重新标记到“生产”管线执行屏幕中的&#x200B;**Git标签**。
 
-* 当重要量度未达到定义的阈值时定义行为的标签已重新标记，以反映其真实行为 — **取消立即**&#x200B;和&#x200B;**批准立即**。
+* 当重要量度未达到定义的阈值时定义行为的标签已重新标记，以反映其真实行为：**取消立即**&#x200B;和&#x200B;**立即批准**。
 
 * 类和方法弃用列表已根据AEM Cloud Service SDK的`2021.3.4997.20210303T022849Z-210225`版本进行更新。
 
-* Cloud Manager生产渠道现在将包含自定义UI测试功能。
+* Cloud Manager生产管道现在将包含[自定义UI测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)功能。
 
 ### 错误修复 {#bug-fixes-cm-march}
 
