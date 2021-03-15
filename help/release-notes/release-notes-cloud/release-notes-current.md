@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
@@ -78,28 +78,29 @@ Customers using the Connected Assets feature can now easily view and track asset
 ## 发布日期 {#release-date-cm-march}
 
 AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11日。
+下一版本计划于2021年4月08日发布。
 
 
 ### 新增功能 {#what-is-new-march}
 
-* 拥有针对IP环境、SSL证书和自定义域名的CDN预允许列表先配置的将看到一条消息，告诉您他们先前的现有配置，并能够通过UI自助服务。 用户现在可以：
+* 拥有[IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)预存自定义域名配置的环境的客户将看到有关其先前现有配置的消息，并将能够通过UI自助服务。 用户现在可以：
    * 将“站点”解决方案添加到包含资产的现有项目（反之亦然）。
    * 将站点（或资产）从包含站点和资产的现有项目中删除。
    * 将第二个未使用的解决方案授权添加到现有项目或作为新项目。
 
-* 具有必需权限的用户现在可以“编辑”项目，允许他们以自助方式执行以下操作。
+* 拥有必需权限的用户现在可以编辑项目，允许他们以自助方式执行以下操作。
 
-* AEM推送更新”标签现在将同时显示在“管线执行”和“活动”屏幕中。
+* **AEM Push** Updatelabel现在将同时显示在Pipeline Executive和 *Activity* 屏幕 ** 上。
 
-* 如果环境已休眠，但也有可用的AEM更新，则“已休眠”状态将优先于“可用更新”。
+* 如果环境已休眠，但也有可用的AEM更新，则&#x200B;**已休眠**&#x200B;状态将优先于&#x200B;**可用更新**。
 
 * 现在，用户在导航至Unified Shell的“用户用户档案”图标（右上方）后，通过选择“视图 Cloud Manager角色”选项，即可查看其Cloud Manager角色。
 
-* 标签“申请批准”已重新标记为“生产批准”，以便更加清晰。
+* 标签&#x200B;**申请批准**&#x200B;已重新标记到&#x200B;**生产批准**，以便更清晰。
 
-* “版本”标签已重新标记为“生产”管道执行屏幕中的“Git标签”。
+* **版本**&#x200B;标签已重新标记到“生产”管线执行屏幕中的&#x200B;**Git标签**。
 
-* 当重要量度未达到定义的阈值时定义行为的标签已重新标记，以反映其真实行为 — 立即取消和立即批准。
+* 当重要量度未达到定义的阈值时定义行为的标签已重新标记，以反映其真实行为 — **取消立即**&#x200B;和&#x200B;**批准立即**。
 
 * 类和方法弃用列表已根据AEM Cloud Service SDK的`2021.3.4997.20210303T022849Z-210225`版本进行更新。
 
