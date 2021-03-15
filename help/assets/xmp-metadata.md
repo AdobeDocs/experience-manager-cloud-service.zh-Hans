@@ -3,10 +3,10 @@ title: XMP 元数据
 description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作创建、处理和交换元数据的标准格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
+source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 54%
+source-wordcount: '1003'
+ht-degree: 52%
 
 ---
 
@@ -72,21 +72,19 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]中的此XMP写回功能会将元数据更改复制到原始资产的演绎版。 当您从[!DNL Assets]中更改资产的元数据或在上传资产时，这些更改最初存储在存储库的资产节点中。 XMP写回功能会将元数据更改传播到资产的所有演绎版或特定演绎版。
+[!DNL Adobe Experience Manager Assets]中的此XMP写回功能会将元数据更改复制到原始资产的演绎版。 当您从[!DNL Assets]中更改资产的元数据或在上传资产时，这些更改最初存储在存储库的资产节点中。 但是，[!DNL Assets]不会自动将任何元数据更改传播到资产的演绎版。 XMP写回功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 更新存储在资产层次结构中的元数据节点中。 此功能还将更新嵌入到演绎版的二进制文件中。 该功能仅写回那些使用`jcr`命名空间的元数据属性。
 
-考虑将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的方案。
+例如，假设您将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的方案。
 
 ![元数据](assets/metadata.png)
 
 在这种情况下，[!DNL Assets]会在资产层次结构中存储的资产元数据的`dc:title`参数中，将更改保存到&#x200B;**[!UICONTROL Title]**&#x200B;属性。
 
-![metadata_stored](assets/metadata_stored.png)
+![存储在存储库中资产节点中的元数据](assets/metadata_stored.png)
 
-但是，[!DNL Assets]不会自动将任何元数据更改传播到资产的演绎版。
-
-XMP写回功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
-
-默认情况下，[!DNL Assets]中未启用写回功能。 了解如何[启用元数据写回](#enable-xmp-writeback)。
+>[!NOTE]
+>
+>默认情况下，[!DNL Assets]中未启用写回功能。 了解如何[启用元数据写回](#enable-xmp-writeback)。
 
 ### 启用XMP写回{#enable-xmp-writeback}
 
@@ -97,9 +95,9 @@ XMP写回功能允许您将元数据更改传播到资产的所有演绎版或�
 
    ![选择DAM元数据写回启动程序以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
 
-1. 在[!UICONTROL 启动器属性]页面上选择&#x200B;**[!UICONTROL 激活]**。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 在&#x200B;**[!UICONTROL 启动器属性]**&#x200B;页面上选择&#x200B;**[!UICONTROL 激活]**。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
-要将此工作流仅一次性应用于资产，请从左边栏应用工作流[!UICONTROL DAM元数据写回]工作流。 要将工作流应用于已上传的资产，请将该工作流添加到后期处理用户档案。
+要将此工作流仅应用于一次资产，请从左边栏应用工作流[!UICONTROL DAM元数据写回]工作流。 要将工作流应用于所有上传的资产，请将该工作流添加到后期处理用户档案。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
