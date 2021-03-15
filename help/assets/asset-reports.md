@@ -3,17 +3,17 @@ title: 有关使用和共享的报告
 description: ' [!DNL Adobe Experience Manager Assets] 中有关您的资产的报告，有助于您了解数字资产的使用、活动和共享。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: dc6823d9a0dabcc4fe1537073d90ca53da205556
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 4%
+source-wordcount: '869'
+ht-degree: 5%
 
 ---
 
 
 # 资产报表 {#asset-reports}
 
-资产报告允许您评估[!DNL Adobe Experience Manager Assets]部署的实用程序。 使用[!DNL Assets]，您可以为数字资产生成各种报告。 这些报告提供有关您的系统使用情况、用户与资产交互方式以及下载和共享哪些资产的有用信息。
+资产报告允许您评估[!DNL Adobe Experience Manager Assets]部署的实用程序。 使用[!DNL Assets]，您可以为数字资产生成各种报告。 这些报告提供有关系统使用情况、用户与资产交互方式以及<!-- downloaded and -->共享的资产的有用信息。
 
 使用报告中的信息得出关键成功量度，以衡量企业内和客户采用[!DNL Assets]的情况。
 
@@ -28,7 +28,6 @@ ht-degree: 4%
 [!DNL Experience Manager Assets] 为您生成以下标准报表：
 
 * 上传
-* 下载
 * 到期时间
 * 修改
 * 发布
@@ -36,6 +35,18 @@ ht-degree: 4%
 * 磁盘使用情况
 * 文件
 * 链接共享
+
+<!-- Removed download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Disk Usage
+* Files
+* Link Share
+-->
 
 [!DNL Adobe Experience Manager] 管理员可以轻松生成和自定义这些报告以用于您的实施。管理员可以按照以下步骤生成报告：
 
@@ -47,20 +58,6 @@ ht-degree: 4%
 1. 在&#x200B;**[!UICONTROL 创建报表]**&#x200B;页面中，选择要创建的报表，然后单击&#x200B;**[!UICONTROL 下一步]**。
 
    ![选择报告类型](assets/choose_report.png)
-
-<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
-   >[!NOTE]
-   >
-   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
--->
-
->[!NOTE]
->
->默认情况下，内容片段和链接共享包含在资产[!UICONTROL 下载]报告中。 选择相应的选项以创建链接共享的报告或从下载报告中排除内容片段。
-
->[!NOTE]
->
->[!UICONTROL 下载]报告仅显示在单独选择后下载或使用快速操作下载的那些资产的详细信息。 但是，它不包括已下载文件夹中的资产的详细信息。
 
 1. 在存储报表的CRX存储库中配置报表详细信息，如标题、描述、缩略图和文件夹路径。 默认情况下，文件夹路径为`/content/dam`。 可以指定其他路径。
 
@@ -111,6 +108,16 @@ ht-degree: 4%
 
 您可以向以下报表中添加自定义列，以根据您的自定义要求显示更多数据：
 
+<!-- Remove download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Files
+-->
+
 * 上传
 * 下载
 * 到期时间
@@ -152,6 +159,24 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 疑难解答信息和提示{#tips-troubleshoot}
+## 疑难解答信息{#tips-troubleshoot}
 
 * 如果[!UICONTROL 磁盘使用情况报告]未生成，并且您使用的是[!DNL Dynamic Media]，请确保所有资产都正确继续。 要解析资产，请重新处理资产并再次生成报表。
+
+<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+
+TBD: How do enable this in CS now? Is it done using some OSGi config now?
+   >[!NOTE]
+   >
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
+
+<!-- Removed download report.
+   >[!NOTE]
+   >
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+
+   >[!NOTE]
+   >
+   >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
+-->
