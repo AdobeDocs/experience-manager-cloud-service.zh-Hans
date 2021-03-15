@@ -2,9 +2,9 @@
 title: 管理环境-Cloud Service
 description: 管理环境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1266'
 ht-degree: 4%
 
 ---
@@ -158,6 +158,10 @@ ht-degree: 4%
 1. [查看和更新自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
 1. [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+1. [正在检查自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 或SSL证 [书的状态](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)。
+
+1. [检查IP允许列表的状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 ## 管理IP允许列表{#manage-ip-allow-lists}
 
