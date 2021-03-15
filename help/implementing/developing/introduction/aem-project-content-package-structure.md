@@ -1,10 +1,10 @@
 ---
 title: AEM 项目结构
-description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
+description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2850'
 ht-degree: 13%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 13%
 
 >[!TIP]
 >
->熟悉基本的[AEM项目原型使用](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault内容管理插件](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)，因为本文基于这些学习和概念。
+>熟悉基本的[AEM Project Archetype use](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)，因为本文构建于这些学习和概念之上。
 
-本文概述了Adobe Experience ManagerMaven项目需要作为Cloud Service兼容的变化，确保它们遵守可变内容和不可变内容的分割，建立依赖关系以创建不冲突的确定性部署，并将其打包成可部署结构。
+本文概述了Adobe Experience Manager Maven项目作为Cloud Service兼容项所需的更改，具体方法是确保它们遵守可变内容和不可变内容的拆分，建立依赖关系以创建不冲突的确定性部署，并将它们打包在可部署结构中。
 
-AEM应用程序部署必须由单个AEM包组成。 此包应包含子包，子包包含应用程序运行所需的一切，包括代码、配置和任何支持的基线内容。
+AEM应用程序部署必须由单个AEM包组成。 此包又应包含子包，子包包含应用程序运行所需的一切，包括代码、配置和任何支持基准内容。
 
 AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这意味着单个内容包&#x200B;**不能****同时**&#x200B;部署到存储库的 `/apps` 和到运行时可写区域（例如，`/content`、`/conf`、`/home` 或 `/apps` 以外的任何区域)。相反，应用程序必须将代码和内容分离到离散包中，以部署到 AEM 中。
 
@@ -32,23 +32,23 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 
 `/apps` 和 `/libs`**被视为 AEM 中的不可变区域，因为 AEM 启动后（例如，运行时），无法对其进行更改（创建、更新、删除）。**&#x200B;运行时对不可改变区域所做的任何更改尝试都将失败。
 
-存储库中的其他所有内容，如`/content`、`/conf`、`/var`、`/etc`、`/oak:index`、`/system`、`/tmp`等。 是所有&#x200B;**可变**&#x200B;区域，这意味着它们可以在运行时更改。
+存储库中的其他所有项，`/content`、`/conf`、`/var`、`/etc`、`/oak:index`、`/system`、`/tmp`等。 是所有&#x200B;**mutable**&#x200B;区域，这意味着它们可以在运行时进行更改。
 
 >[!WARNING]
 >
->与先前版本的AEM一样，`/libs`不应被修改。 只有AEM产品代码可部署到`/libs`。
+>与AEM的早期版本一样，`/libs`不应被修改。 只有AEM产品代码可以部署到`/libs`。
 
 ### Oak索引{#oak-indexes}
 
-Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新编制索引后才能切换到新代码映像。
+Oak索引(`/oak:index`)由AEM专门管理，作为Cloud Service部署过程。 这是因为Cloud Manager必须等到部署任何新索引并完全重新编制索引后才能切换到新代码映像。
 
-因此，尽管Oak索引在运行时是可变的，但必须将其部署为代码，以便在安装任何可变包之前安装它们。 因此，`/oak:index`配置是代码包的一部分，而不是内容包[的一部分，如下文](#recommended-package-structure)所述。
+因此，尽管Oak索引在运行时是可变的，但必须将其部署为代码，以便在安装任何可变的包之前安装它们。 因此，`/oak:index`配置是代码包的一部分，而不是内容包[的一部分，如下所述](#recommended-package-structure)。
 
 >[!TIP]
 >
 >有关在AEM中作为Cloud Service建立索引的更多详细信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md)。
 
-## 推荐的包结构{#recommended-package-structure}
+## 建议的包结构{#recommended-package-structure}
 
 ![Experience Manager项目包结构](assets/content-package-organization.png)
 
@@ -56,11 +56,11 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 
 建议的应用程序部署结构如下：
 
-### 代码包/OSGi捆绑包
+### 代码包/OSGi包
 
 + 将生成OSGi bundle Jar文件，并直接嵌入到所有项目中。
 
-+ `ui.apps`包包含要部署的所有代码，并且仅部署到`/apps`。 `ui.apps`包的常用元素包括但不限于：
++ `ui.apps`包包含要部署的所有代码，并且仅部署到`/apps`。 `ui.apps`包的常见元素包括但不限于：
    + [组件定义和](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html) HTLscript
       + `/apps/my-app/components`
    + JavaScript和CSS（通过[客户端库](/help/implementing/developing/introduction/clientlibs.md)）
@@ -73,45 +73,46 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
       + `/apps`下任何路径的任何`rep:policy`
 
 + `ui.config`包包含所有[OSGi配置](/help/implementing/deploying/configuring-osgi.md):
-   + 包含运行模式特定OSGi配置定义的组织文件夹
+   + 包含特定于运行模式的OSGi配置定义的组织文件夹
       + `/apps/my-app/osgiconfig`
-   + 包含默认OSGi配置的公用OSGi配置文件夹，这些配置作为Cloud Service部署目标应用于所有目标AEM
+   + 公用OSGi配置文件夹，包含默认OSGi配置，这些配置作为Cloud Service部署目标应用于所有目标 AEM
       + `/apps/my-app/osgiconfig/config`
-   + 运行特定于模式的OSGi配置文件夹，其中包含应用于所有目标AEM的默认OSGi配置，作为Cloud Service部署目标
+   + 运行特定于模式的OSGi配置文件夹，其中包含应用于所有目标 AEM的默认OSGi配置作为Cloud Service部署目标
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + 回购初始化OSGi配置脚本
-      + [回购](#repo-init) 区炎是部署（可变）内容(逻辑上属于AEM应用程序的一部分)的推荐方式。回购初始化OSGi配置应位于相应的`config.<runmode>`文件夹中，如上所述，并用于定义：
+      + [回购](#repo-init) 可变性是部署（可变）内容(逻辑上是AEM应用程序的一部分)的推荐方式。回购初始化OSGi配置应位于上述的相应`config.<runmode>`文件夹中，并用于定义：
          + 基线内容结构
          + 用户
          + 服务用户
          + 组
          + ACL（权限）
 
+
 ### 内容包
 
-+ `ui.content`包包含所有内容和配置。 内容包包含所有不在`ui.apps`或`ui.config`包中的节点定义，换言之，任何不在`/apps`或`/oak:index`中的内容。 `ui.content`包的常用元素包括但不限于：
++ `ui.content`包包含所有内容和配置。 内容包中包含所有不在`ui.apps`或`ui.config`包中的节点定义，换言之，不在`/apps`或`/oak:index`中的任何内容。 `ui.content`包的常见元素包括但不限于：
    + 上下文感知配置
       + `/conf`
-   + 必需的、复杂的内容结构(即 在回购初始化中定义的基线内容结构的基础上构建并扩展的内容外部。)
+   + 必需的复杂内容结构(即 在回购初始化中定义的基线内容结构的基础上构建并扩展的内容外部。)
       + `/content`, `/content/dam`, 等.
    + 受管制的标记分类
       + `/content/cq:tags`
-   + 旧式等节点（理想情况下，将这些节点迁移到非／等位置）
+   + 旧式等节点（理想情况下，将这些节点迁移到非/等位置）
       + `/etc`
 
 ### 容器包
 
 + `all`包是一个容器包，它仅包含可部署的伪像、OSGI包Jar文件、`ui.apps`、`ui.config`和`ui.content`包作为嵌入。 `all`包不得具有自己的&#x200B;**任何内容或代码**，而是将所有部署委派到存储库的子包或OSGi捆绑Jar文件。
 
-   现在，使用Maven [FileVault Package Maven插件的嵌入式配置](#embeddeds)而不是`<subPackages>`配置来包含包。
+   现在，包是使用Maven [FileVault Package Maven插件的嵌入式配置](#embeddeds)而不是`<subPackages>`配置包含的。
 
-   对于复杂的Experience Manager部署，可能需要创建多个`ui.apps`、`ui.config`和`ui.content`项目／包，它们代表AEM中的特定站点或租户。 如果这样做，则确保可变内容和不可变内容之间的拆分得到遵守，并将所需的内容包和OSGi bundle Jar文件作为子包嵌入`all`容器内容包中。
+   对于复杂的Experience Manager部署，可能需要创建多个`ui.apps`、`ui.config`和`ui.content`项目/包，它们代表AEM中的特定站点或租户。 如果这样做，请确保在可变内容和不可变内容之间进行拆分，并将所需的内容包和OSGi bundle Jar文件作为子包嵌入`all` 容器内容包中。
 
-   例如，复杂的部署内容包结构可能如下：
+   例如，复杂的部署内容包结构可能如下所示：
 
-   + `all` 内容包嵌入以下包，以创建单个部署对象
-      + `common.ui.apps` 部署站点A **** 和站点B所需的代码
-      + `site-a.core` 站点A需要OSGi bundle Jar
+   + `all` 内容包嵌入以下包，以创建单个部署伪像
+      + `common.ui.apps` 部署站点A和 **** 站点B所需的代码
+      + `site-a.core` 站点A需要的OSGi bundle Jar
       + `site-a.ui.apps` 部署站点A所需的代码
       + `site-a.ui.config` 部署站点A所需的OSGi配置
       + `site-a.ui.content` 部署站点A所需的内容和配置
@@ -124,9 +125,9 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 
 如果AEM部署使用其他AEM项目（它们本身由自己的代码和内容包组成），则其容器包应嵌入项目的`all`包中。
 
-例如，包含2个供应商AEM应用程序的AEM项目可能如下：
+例如，包含2个供应商AEM应用程序的AEM项目可能如下所示：
 
-+ `all` 内容包嵌入以下包，以创建单个部署对象
++ `all` 内容包嵌入以下包，以创建单个部署伪像
    + `core` AEM应用程序需要的OSGi bundle Jar
    + `ui.apps` 部署AEM应用程序所需的代码
    + `ui.config` 部署AEM应用程序所需的OSGi配置
@@ -136,31 +137,32 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 
 ## 包类型{#package-types}
 
-将用声明的包类型标记包。
+包将用其声明的包类型进行标记。
 
-+ 容器包必须将其`packageType`设置为`container`。
++ 容器包必须将其`packageType`设置为`container`。 容器包不能直接包含OSGi包和OSGi配置，不允许使用[安装挂接](http://jackrabbit.apache.org/filevault/installhooks.html)。
 + 代码（不可变）包必须将其`packageType`设置为`application`。
 + 内容（可变）包必须将其`packageType`设置为`content`。
 
-有关详细信息，请参阅下面的[Apache Jackrabbit FileVault - Package Maven插件文档](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)和[FileVault Maven配置代码段](#marking-packages-for-deployment-by-adoube-cloud-manager)。
+
+有关详细信息，请参阅下面的[Apache Jackrabbit FileVault - Package Maven Plugin文档](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)和[ FileVault Maven配置代码段](#marking-packages-for-deployment-by-adoube-cloud-manager)。
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[POM XML代码片断](#xml-package-types)部分。
+>有关完整的片段，请参阅下面的[POM XML代码片段](#xml-package-types)部分。
 
-## 通过Adobe云管理器{#marking-packages-for-deployment-by-adoube-cloud-manager}标记要部署的包
+## 通过Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}标记要部署的包
 
 默认情况下，Adobe Cloud Manager 会收集由 Maven 内部版本生成的所有包，但是，由于容器 (`all`) 包是包含所有代码和内容包的单个部署对象，因此我们必须确保&#x200B;**仅**&#x200B;部署容器 (`all`) 包。要确保这一点，Maven 内部版本生成的其他包必须使用 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` 的 FileVault Content Package Maven Plug-In 配置进行标记。
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[POM XML代码片断](#pom-xml-snippets)部分。
+>有关完整的片段，请参阅下面的[POM XML代码片段](#pom-xml-snippets)部分。
 
 ## 回购初始化{#repo-init}
 
-回购初始化提供定义JCR结构的指令或脚本，这些结构从文件夹树等常见节点结构到用户、服务用户、组和ACL定义。
+回购初始化提供了定义JCR结构的指令（或脚本），这些结构从文件夹树等常见节点结构到用户、服务用户、组和ACL定义。
 
-回购初始化的主要好处是它们具有执行其脚本定义的所有操作的隐式权限，并且在部署生命周期的早期被调用，确保执行时间代码时存在所有必需的JCR结构。
+回购初始化的主要好处是，它们具有执行其脚本定义的所有操作的隐式权限，并在部署生命周期的早期被调用，以确保执行时间代码时存在所有必需的JCR结构。
 
 虽然回购初始化脚本本身作为脚本存在于`ui.config`项目中，但它们可以而且应该用于定义以下可变结构：
 
@@ -170,25 +172,25 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 + 组
 + ACL
 
-回购初始化脚本存储为`RepositoryInitializer` OSGi工厂配置的`scripts`条目，因此可以通过运行模式隐式定位，从而允许AEM作者和AEM发布服务的回购初始化脚本之间，甚至环境（开发、舞台和产品）之间存在差异。
+回购初始化脚本存储为`RepositoryInitializer` OSGi工厂配置的`scripts`条目，因此可以通过运行模式隐式定位，从而允许AEM作者和AEM发布服务的回购初始化脚本之间或甚至环境（开发、舞台和生产）之间的差异。
 
-回购初始化OSGi配置以[`.config` OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1)编写，因为它们支持多行，这是使用[`.cfg.json`定义OSGi配置](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)的最佳实践的例外。
+回购初始化OSGi配置最好以[`.config` OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1)编写，因为它们支持多行，这是使用[`.cfg.json`定义OSGi配置](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)的最佳实践的例外。
 
-请注意，在定义“用户”和“组”时，只有组被视为应用程序的一部分，并且应在此处定义其功能的组成部分。 组织用户和组在运行时仍应在AEM中进行定义；例如，如果自定义工作流将工作分配给指定的组，则应在AEM应用程序中通过回购初始化定义该组，但是，如果该组只是组织，如“Wendy&#39;s Team”和“Sean&#39;s Team”，则这些工作流是在运行时在AEM中最佳定义和管理的。
-
->[!TIP]
->
->回购初始化脚本&#x200B;*必须在内联`scripts`字段中定义*，并且`references`配置将无法工作。
-
-在[Apache Sling Repo Init文档](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)中可找到回购初始化脚本的完整词汇。
+请注意，定义“用户”和“组”时，只有组被视为应用程序的一部分，并且应在此处定义其功能的组成部分。 组织用户和用户组在运行时仍应在AEM中定义；例如，如果自定义工作流将工作分配给指定的组，则该组应通过AEM应用程序中的回购初始化进行定义，但是，如果该组只是组织形式（如“Wendy&#39;s Team”和“Sean&#39;s Team”），则最好在AEM中定义并在运行时进行管理。
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[回购初始化代码片断](#snippet-repo-init)部分。
+>回购初始化脚本&#x200B;*必须在内联`scripts`字段中定义*，且`references`配置将无法工作。
+
+[Apache Sling Repo Init文档](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)中提供了回购初始化脚本的完整词汇。
+
+>[!TIP]
+>
+>有关完整的片段，请参见下面的[回购初始化片段](#snippet-repo-init)部分。
 
 ## 存储库结构包{#repository-structure-package}
 
-“代码包”要求将FileVault Maven插件的配置配置为引用`<repositoryStructurePackage>`，以强制结构依赖关系的正确性（以确保一个代码包不会安装在另一个代码包上）。 您可以[为项目](repository-structure-package.md)创建您自己的存储库结构包。
+“代码包”要求配置FileVault Maven插件的配置以引用强制结构依赖关系正确性的`<repositoryStructurePackage>`（以确保一个代码包不会安装在另一个代码包上）。 您可以[为项目](repository-structure-package.md)创建您自己的存储库结构包。
 
 此操作&#x200B;**仅适用于**&#x200B;代码包，即任何标有 `<packageType>application</packageType>` 的包。
 
@@ -198,28 +200,28 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[POM XML代码片断](#xml-repository-structure-package)部分。
+>有关完整的片段，请参阅下面的[POM XML代码片段](#xml-repository-structure-package)部分。
 
 ## 在容器包中嵌入子包{#embeddeds}
 
-内容或代码包放在特殊的“侧车”文件夹中，可以使用FileVault Maven插件的`<embeddeds>`配置在AEM author、AEM publish或两者上进行安装。 请注意，不应使用`<subPackages>`配置。
+内容或代码包放在特殊的“侧车”文件夹中，可以使用FileVault Maven插件的`<embeddeds>`配置在AEM作者或AEM发布或两者上进行安装。 请注意，不应使用`<subPackages>`配置。
 
 常见用例包括：
 
 + AEM作者用户和AEM发布用户之间的ACL/权限不同
-+ 仅用于支持AEM作者活动的配置
-+ 代码（如与后台系统集成），只需在AEM author上运行
++ 仅用于支持AEM作者的活动的配置
++ 代码（如与后台系统集成）仅在AEM作者上运行
 
 ![嵌入包](assets/embeddeds.png)
 
-要目标AEM作者、AEM发布，或者同时发布，该包将以下格式嵌入到`all`容器包中的特殊文件夹位置：
+要目标AEM作者、AEM发布或两者，将包嵌入到`all`容器包中的一个特殊文件夹位置，格式如下：
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-将此文件夹结构细分：
+划分此文件夹结构：
 
 + 第1级文件夹&#x200B;**必须为** `/apps`。
-+ 第2级文件夹表示文件夹名称后缀为`-packages`的应用程序。 通常，只有一个2级文件夹所有子包都嵌入其中，但可以创建任意数量的2级文件夹以最好地表示应用程序的逻辑结构：
++ 第2级文件夹表示文件夹名称中具有`-packages`后置固定的应用程序。 通常，只有一个2级文件夹所有子包都嵌入其中，但可以创建任意数量的2级文件夹以最好地表示应用程序的逻辑结构：
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
@@ -228,72 +230,72 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
    >
    >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
 
-+ 3级文件夹必须是
++ 第3级文件夹必须
    `application`、 `content` 或  `container`
    + `application`文件夹包含代码包
    + `content`文件夹包含内容包
-   + `container`文件夹包含AEM应用程序可能包含的任何[额外的应用程序包](#extra-application-packages)。
-此文件夹名称与它包含的包的[包类型](#package-types)相对应。
+   + `container`文件夹包含AEM应用程序可能包含的任何[其他应用程序包](#extra-application-packages)。
+此文件夹名称对应于它包含的包的[包类型](#package-types)。
 + 第 4 级文件夹包含子包，且必须是以下包之一：
    + `install`，以在 AEM 作者&#x200B;**和** AEM 发布上安装
    + `install.author`，以&#x200B;**仅**&#x200B;在 AEM 作者上安装
-   + `install.publish` to  **** onlyinstall on AEM publish注意，仅 `install.author` 和 `install.publish` 受支持目标。不支持其 **他运行模式** 。
+   + `install.publish` to only  **** install on AEM publish注意，仅 `install.author` 支持 `install.publish` 和是支持目标。不支持其 **他运行模式** 。
 
 例如，包含AEM作者和发布特定包的部署可能如下所示：
 
-+ `all` 容器包嵌入以下包，以创建单个部署伪像
-   + `ui.apps` 嵌入到 `/apps/my-app-packages/application/install` 部署代码到AEM author和AEM publish
-   + `ui.apps.author` 嵌入到部 `/apps/my-app-packages/application/install.author` 署代码中，仅允许AEM作者
-   + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 部署内容和配置到AEM author和AEM publish
-   + `ui.content.publish` 嵌入到 `/apps/my-app-packages/content/install.publish` 部署内容和配置中，仅发布到AEM
++ `all` 容器包嵌入以下包，以创建单一部署伪像
+   + `ui.apps` 已嵌入 `/apps/my-app-packages/application/install` 到部署代码到AEM作者和AEM发布
+   + `ui.apps.author` 嵌入到 `/apps/my-app-packages/application/install.author` 仅将代码嵌入到AEM作者
+   + `ui.content` 嵌入到 `/apps/my-app-packages/content/install` 部署内容和配置到AEM作者和AEM发布
+   + `ui.content.publish` 嵌入 `/apps/my-app-packages/content/install.publish` 到仅AEM发布中的部署内容和配置
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[POM XML代码片断](#xml-embeddeds)部分。
+>有关完整的片段，请参阅下面的[POM XML代码片段](#xml-embeddeds)部分。
 
-### 容器包的过滤器定义{#container-package-filter-definition}
+### 容器包的筛选器定义{#container-package-filter-definition}
 
-由于容器包中嵌入了代码和内容子包，嵌入的目标路径必须添加到容器项目的`filter.xml`中，以确保在构建时将嵌入的包包含在容器包中。
+由于在容器包中嵌入了代码和内容子包，嵌入的目标路径必须添加到容器项目的`filter.xml`中，以确保在构建时将嵌入的包包含在容器包中。
 
-只需为任何包含要部署的子包的2级文件夹添加`<filter root="/apps/<my-app>-packages"/>`条目。
+只需为包含要部署的子包的任何2级文件夹添加`<filter root="/apps/<my-app>-packages"/>`条目。
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[POM XML代码片断](#xml-container-package-filters)部分。
+>有关完整的片段，请参阅下面的[POM XML代码片段](#xml-container-package-filters)部分。
 
 ## 嵌入第三方包{#embedding-3rd-party-packages}
 
-所有包都必须通过[Adobe的公共Maven对象存储库](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)或可访问的公共、可引用的第三方Maven对象存储库可用。
+所有包必须通过[Adobe的公共Maven对象存储库](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)或可访问的可引用的第三方Maven对象存储库可用。
 
 如果第三方包位于 **Adobe 的公共 Maven 对象存储库**，则 Adobe Cloud Manager 无需进一步配置即可解析对象。
 
 如果第三方包位于&#x200B;**公共的第三方 Maven 对象存储库**，则必须在项目的 `pom.xml` 中注册此存储库，并将其嵌入到[以上所述](#embeddeds)的以下方法中。
 
-第三方应用程序／连接器应使用其`all`包作为容器嵌入到项目的容器包(`all`)中。
+应将第三方应用程序/连接器作为项目容器(`all`)包中的容器，使用其`all`包进行嵌入。
 
-添加Maven依赖项遵循标准Maven惯例，嵌入第三方对象（代码和内容包）为[上述](#embedding-3rd-party-packages)。
+添加Maven依赖项遵循标准Maven惯例，嵌入第三方对象（代码和内容包）为[，如上所述](#embedding-3rd-party-packages)。
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[POM XML代码片断](#xml-3rd-party-maven-repositories)部分。
+>有关完整的片段，请参阅下面的[POM XML代码片段](#xml-3rd-party-maven-repositories)部分。
 
 ## `ui.content`包{#package-dependencies}中`ui.apps`之间的包依赖关系
 
-为了确保正确安装软件包，建议建立软件包间依赖关系。
+为确保正确安装软件包，建议建立软件包间依赖关系。
 
 一般规则是包含可变内容(`ui.content`)的包，这些内容应取决于支持可变内容的呈现和使用的不可变代码(`ui.apps`)。
 
-此一般规则的一个显着例外是，如果不可变的代码包（`ui.apps`或任何其他）,__仅__&#x200B;包含OSGi包。 如果是，则AEM包不应声明对它的依赖关系。 这是因为不可变的代码包&#x200B;__仅__（包含OSGi包）未在AEM Package Manager中注册，因此，任何依赖于它的AEM包都将具有不满足的依赖关系并无法安装。
+此一般规则的一个显着例外是，如果不可变的代码包（`ui.apps`或任何其他代码包），__仅__&#x200B;包含OSGi包。 如果是，则任何AEM包都不应声明对它的依赖关系。 这是因为不可变的代码包&#x200B;__仅__&#x200B;包含OSGi包未在AEM包管理器中注册，因此，任何依赖于它的AEM包都将具有不满足的依赖关系，并且无法安装。
 
 >[!TIP]
 >
->有关完整的代码片断，请参见下面的[POM XML代码片断](#xml-package-dependencies)部分。
+>有关完整的片段，请参阅下面的[POM XML代码片段](#xml-package-dependencies)部分。
 
 内容包依赖关系的常见模式有：
 
 ### 简单部署包依赖项{#simple-deployment-package-dependencies}
 
-简单的大小写将`ui.content`可变内容包设置为取决于`ui.apps`不可变代码包。
+简单的案例将`ui.content`可变内容包设置为取决于`ui.apps`不可变代码包。
 
 + `all` 没有依赖关系
    + `ui.apps` 没有依赖关系
@@ -301,7 +303,7 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 
 ### 复杂部署包依赖项{#complex-deploxment-package-dependencies}
 
-复杂的部署会根据简单情况进行扩展，并设置相应可变内容和不可变代码包之间的相关性。 根据需要，还可以在不可变的代码包之间建立依赖关系。
+复杂的部署会根据简单情况进行扩展，并设置相应可变内容和不可变代码包之间的依赖关系。 根据需要，还可以在不可变的代码包之间建立依赖关系。
 
 + `all` 没有依赖关系
    + `common.ui.apps.common` 没有依赖关系
@@ -314,7 +316,7 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 
 本文中概述的项目结构和组织是&#x200B;**完全兼容的**&#x200B;本地开发AEM实例。
 
-## POM XML片段{#pom-xml-snippets}
+## POM XML代码片段{#pom-xml-snippets}
 
 以下是可添加到Maven项目以符合上述建议的Maven `pom.xml`配置片段。
 
@@ -380,9 +382,9 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
     ...
 ```
 
-### 标记Adobe云管理器部署的包{#cloud-manager-target}
+### 标记Adobe Cloud Manager部署的包{#cloud-manager-target}
 
-在生成包的每个项目中，**除**&#x200B;容器 (`all`) 项目外，将 `<cloudManagerTarget>none</cloudManagerTarget>` 添加到 `filevault-package-maven-plugin` 插件声明的 `<properties>` 配置中，以确保 Adobe Cloud Manager **不**&#x200B;部署这些它们。容器(`all`)包应是通过Cloud Manager部署的单个包，Cloud Manager将嵌入所有必需的代码和内容包。
+在生成包的每个项目中，**除**&#x200B;容器 (`all`) 项目外，将 `<cloudManagerTarget>none</cloudManagerTarget>` 添加到 `filevault-package-maven-plugin` 插件声明的 `<properties>` 配置中，以确保 Adobe Cloud Manager **不**&#x200B;部署这些它们。容器(`all`)包应是通过Cloud Manager部署的单个包，而Cloud Manager又嵌入所有必需的代码和内容包。
 
 ```xml
 ...
@@ -404,7 +406,7 @@ Oak索引(`/oak:index`)由AEM作为Cloud Service部署过程专门管理。 这�
 
 ### 回购初始化{#snippet-repo-init}
 
-包含回购初始化脚本的回购初始化脚本在`RepositoryInitializer` OSGi工厂配置中通过`scripts`属性进行定义。 请注意，由于这些脚本是在OSGi配置中定义的，因此可以使用通常的`../config.<runmode>`文件夹语义，通过运行模式轻松确定其范围。
+包含回购初始化脚本的回购初始化脚本通过`scripts`属性在`RepositoryInitializer` OSGi工厂配置中定义。 请注意，由于这些脚本是在OSGi配置中定义的，因此可以使用通常的`../config.<runmode>`文件夹语义，通过运行模式轻松确定这些脚本的作用范围。
 
 请注意，由于脚本通常是多行声明，因此在`.config`文件中定义脚本比基于JSON的`.cfg.json`格式更容易。
 
@@ -528,7 +530,7 @@ scripts=["
 ...
 ```
 
-### 容器包的过滤器定义{#xml-container-package-filters}
+### 容器包的筛选器定义{#xml-container-package-filters}
 
 在 `all` 项目的 `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`) 中，**包括**&#x200B;要部署的任何包含子包的 `-packages` 文件夹：
 
@@ -536,15 +538,15 @@ scripts=["
 <filter root="/apps/my-app-packages"/>
 ```
 
-如果在嵌入目标中使用多个`/apps/*-packages`，则必须在此处枚举所有&lt;a0/>。
+如果在嵌入目标中使用多个`/apps/*-packages`，则必须在此处枚举它们。
 
-### 第三方主资料库{#xml-3rd-party-maven-repositories}
+### 第3方Maven存储库{#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
 >
->添加更多Maven存储库可能会延长大量构建时间，因为将检查其他Maven存储库是否具有相关性。
+>添加更多Maven存储库可能会延长大量构建时间，因为将检查其他Maven存储库是否存在依赖关系。
 
-在反应堆项目的`pom.xml`中，添加任何必需的第三方公共Maven存储库指令。 完整的`<repository>`配置应可从第三方存储库提供程序中使用。
+在反应堆项目的`pom.xml`中，添加任何必要的第三方公共Maven存储库指令。 完全`<repository>`配置应可从第三方存储库提供程序中使用。
 
 ```xml
 <repositories>
@@ -591,9 +593,9 @@ scripts=["
 ...
 ```
 
-### 清除容器项目的目标文件夹{#xml-clean-container-package}
+### 清理容器项目的目标文件夹{#xml-clean-container-package}
 
-在`all/pom.xml`中，添加`maven-clean-plugin`插件，该插件将清除Maven构建之前的目标目录。
+在`all/pom.xml`中，添加`maven-clean-plugin`插件，该插件将在Maven构建之前清理目标目录。
 
 ```xml
 <plugins>
