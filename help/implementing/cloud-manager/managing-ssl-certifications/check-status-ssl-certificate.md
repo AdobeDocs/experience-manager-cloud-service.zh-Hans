@@ -2,9 +2,9 @@
 title: 检查SSL证书的状态 — 管理SSL证书
 description: 检查SSL证书的状态 — 管理SSL证书
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 0%
 * **红色**
 指示尽管有多个通知，您的SSL证书仍已过期。
 
-## IP的预存CDN允许列表配置{#pre-existing-cdn}
+## IP允许列表{#pre-existing-cdn}的预存CDN配置
 
-环境包括IP允许列表、SSL证书或自定义域名的预先存在的CDN配置的客户将在&#x200B;**IP允许列表**&#x200B;和&#x200B;**环境**&#x200B;详细信息页中看到以下消息。
+环境包括IP允许列表、SSL证书或自定义域名的预先存在的CDN配置的客户将在&#x200B;**IP允许列表**&#x200B;和&#x200B;**环境**&#x200B;详细信息页中看到以下消息。 在客户通过UI完全迁移所有预先存在的环境配置后，UI上显示的消息将会消失，并且消息可能需要1-2个工作日才能消失。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
