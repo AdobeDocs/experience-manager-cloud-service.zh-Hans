@@ -2,7 +2,7 @@
 title: 正在检查域名状态
 description: 正在检查域名状态
 translation-type: tm+mt
-source-git-commit: dbf64ec2b4b7e5c549ef5942b1c7bd0ca75eb66f
+source-git-commit: f3df4b23dc4542e7a194c979a7894bda1b728572
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
