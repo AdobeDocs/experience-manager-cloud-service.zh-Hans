@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: bd0efdcea679fa8dc312b17309a5ef0a3c27efc9
+source-git-commit: b3e6cc15e283ca7996b4a55ccb88ef9880b09903
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -231,7 +231,7 @@ Best Practices Analyzer v2.1.2的发布日期为2021年2月18日。
 
 ### 已知问题 {#known-issues-foundation}
 
-**问题说明**
+**由于本地生成分析器插件存在问题，某些本地生成可能会失败**
 
 在某些情况下，执行`aemanalyser-maven-plugin`时，本地项目生成可能会失败，并显示以下错误消息：
 
