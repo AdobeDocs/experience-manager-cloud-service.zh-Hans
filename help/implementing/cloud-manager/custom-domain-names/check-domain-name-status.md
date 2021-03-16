@@ -2,9 +2,9 @@
 title: 正在检查域名状态
 description: 正在检查域名状态
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: dbf64ec2b4b7e5c549ef5942b1c7bd0ca75eb66f
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ FailedTXT验证成功。但是，CDN部署失败。 Adobe代表将自动收到�
 
 环境包括IP允许列表、SSL证书或自定义域名的预先存在的CDN配置的客户将在&#x200B;**IP允许列表**&#x200B;和&#x200B;**环境**&#x200B;详细信息页中看到以下消息。 在客户通过UI完全迁移所有预先存在的环境配置后，UI上显示的消息将会消失，并且消息可能需要1-2个工作日才能消失。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
-
 >[!NOTE]
->要查看和管理预先存在的配置，必须通过UI添加这些配置，如下图所示。
+>要查看和管理预先存在的配置，必须通过UI添加这些配置。 有关详细信息，请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
