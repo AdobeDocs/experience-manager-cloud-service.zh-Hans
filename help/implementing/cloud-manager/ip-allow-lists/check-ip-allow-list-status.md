@@ -2,9 +2,9 @@
 title: 检查IP允许列表状态
 description: 检查IP允许列表状态
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -46,10 +46,11 @@ ht-degree: 0%
 
 环境包括IP允许列表、SSL证书或自定义域名的预先存在的CDN配置的客户将在&#x200B;**IP允许列表**&#x200B;和&#x200B;**环境**&#x200B;详细信息页中看到以下消息。 在客户通过UI完全迁移所有预先存在的环境配置后，UI上显示的消息将会消失，并且消息可能需要1-2个工作日才能消失。
 
+>[!NOTE]
+>要查看和管理预先存在的配置，必须通过UI添加这些配置。 有关详细信息，请参阅[添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
->[!NOTE]
->要查看和管理预先存在的配置，必须通过UI添加这些配置，如下图所示。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
