@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
+source-git-commit: bd0efdcea679fa8dc312b17309a5ef0a3c27efc9
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1748'
 ht-degree: 2%
 
 ---
@@ -227,12 +227,29 @@ Best Practices Analyzer v2.1.2的发布日期为2021年2月18日。
    * 能够同时处理vhosts的文件夹路径和vhost文件的路径。
    * 生成客户配置范围在600个以上的农场文件。
 
+## [!DNL Adobe Experience Manager] 作为Cloud Service基础  {#aem-as-a-cloud-service-foundation}
 
+### 已知问题 {#known-issues-foundation}
 
+**问题说明**
 
+在某些情况下，执行`aemanalyser-maven-plugin`时，本地项目生成可能会失败，并显示以下错误消息：
 
+```
+[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
+ 
+Was expecting one of:
+ 
+     
+ 
+[ERROR] Analyser detected errors on feature
+```
 
+**解决方法**
 
+要解决此问题，请在父`pom.xml`文件中选择`aemanalyser-maven-plugin`的最新版本：
 
-
+```xml
+<aemanalyser.version>0.9.2</aemanalyser.version>
+```
 
