@@ -2,7 +2,7 @@
 title: 正在检查域名状态
 description: 正在检查域名状态
 translation-type: tm+mt
-source-git-commit: f3df4b23dc4542e7a194c979a7894bda1b728572
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -49,6 +49,6 @@ FailedTXT验证成功。但是，CDN部署失败。 Adobe代表将自动收到�
 >[!NOTE]
 >要查看和管理预先存在的配置，必须通过UI添加这些配置。 有关详细信息，请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
