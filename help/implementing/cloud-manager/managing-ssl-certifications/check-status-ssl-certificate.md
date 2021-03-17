@@ -2,7 +2,7 @@
 title: 检查SSL证书的状态 — 管理SSL证书
 description: 检查SSL证书的状态 — 管理SSL证书
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -32,6 +32,6 @@ ht-degree: 0%
 >[!NOTE]
 >要查看和管理预先存在的配置，必须通过UI添加这些配置。 有关详细信息，请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
