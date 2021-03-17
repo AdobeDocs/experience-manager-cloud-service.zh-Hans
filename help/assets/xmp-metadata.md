@@ -3,10 +3,10 @@ title: XMP 元数据
 description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作创建、处理和交换元数据的标准格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 52%
+source-wordcount: '979'
+ht-degree: 54%
 
 ---
 
@@ -72,7 +72,10 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]中的此XMP写回功能会将元数据更改复制到原始资产的演绎版。 当您从[!DNL Assets]中更改资产的元数据或在上传资产时，这些更改最初存储在存储库的资产节点中。 但是，[!DNL Assets]不会自动将任何元数据更改传播到资产的演绎版。 XMP写回功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 更新存储在资产层次结构中的元数据节点中。 此功能还将更新嵌入到演绎版的二进制文件中。 该功能仅写回那些使用`jcr`命名空间的元数据属性。
+[!DNL Adobe Experience Manager Assets]中的此XMP写回功能会将元数据更改复制到原始资产的演绎版。
+当您从资产中更改资产的元数据时，或在上传资产时，更改最初存储在资产层次结构的元数据节点中。
+
+XMP写回功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 该功能仅回写那些使用`jcr`命名空间的元数据属性，即，将回写名为`dc:title`的属性，但不写名为`mytitle`的属性。
 
 例如，假设您将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的方案。
 
