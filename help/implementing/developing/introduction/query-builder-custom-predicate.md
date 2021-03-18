@@ -1,26 +1,26 @@
 ---
-title: 为查询生成器实施自定义谓词计算器
-description: AEM查询中的优惠构建器为查询内容存储库提供了一种简单、可自定义的方式
+title: 为查询 Builder实施自定义谓词计算器
+description: AEM中的查询 Builder优惠了一种轻松、可自定义的查询内容存储库的方式
 translation-type: tm+mt
-source-git-commit: 21a0e6967a17ea30435d0343c4aa497f54134cda
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# 为查询生成器{#implementing-a-custom-predicate-evaluator-for-the-query-builder}实施自定义谓词计算器
+# 为查询 Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}实施自定义谓词计算器
 
 本文档介绍如何通过实现自定义谓词计算器来扩展[查询生成器](query-builder-api.md)。
 
 ## 概述 {#overview}
 
-[查询生成器](query-builder-api.md)优惠一种轻松的内容存储库查询方式。 AEM附带有[一组谓词计算器](#query-builder-predicates.md)，可帮助您查询数据。
+[查询 Builder](query-builder-api.md)优惠一种轻松的内容存储库查询方式。 AEM附带有一组[谓词计算器](#query-builder-predicates.md)，可帮助您查询数据。
 
 但是，您可能希望通过实现隐藏某些复杂性并确保更好的语义的自定义谓词计算器来简化查询。
 
-自定义谓词还可以执行XPath不能直接执行的其他操作，例如：
+自定义谓词还可以执行XPath无法直接执行的其他操作，例如：
 
 * 从其他服务查询数据
 * 基于计算的自定义过滤
@@ -38,7 +38,7 @@ ht-degree: 0%
 >您可以在GitHub上找到此页面的代码
 >
 >* [在GitHub上打开aem-search-custom-predicate-evaluator项目](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
->* 将项目下载为[a ZIP文件](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
+>* 将项目下载为[ZIP文件](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 
 >[!NOTE]
@@ -49,15 +49,15 @@ ht-degree: 0%
 
 谓词计算器处理特定谓词的计算，这些谓词是查询的定义约束。
 
-它将更高级别的搜索约束（如`width>200`）映射到符合实际内容模型(如`metadata/@width > 200`)。 或者，也可以手动过滤节点并检查其约束。
+它将更高级别的搜索约束（如`width>200`）映射到符合实际内容模型(如`metadata/@width > 200`)。 也可以手动过滤节点并检查其约束。
 
 >[!TIP]
 >
->有关`PredicateEvaluator`和`com.day.cq.search`包的详细信息，请参阅[Java文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html)。
+>有关`PredicateEvaluator`和`com.day.cq.search`包的详细信息，请参阅[Java文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html)。
 
 ### 为复制元数据{#implementing-a-custom-predicate-evaluator-for-replication-metadata}实施自定义谓词计算器
 
-作为示例，本节介绍如何创建自定义谓词计算器，以帮助基于复制元数据的数据：
+例如，本节介绍如何创建自定义谓词计算器，以帮助基于复制元数据的数据：
 
 * `cq:lastReplicated` 存储上次复制操作的日期
 * `cq:lastReplicatedBy` 存储触发上次复制操作的用户的id
@@ -81,7 +81,7 @@ daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
 ```
 
-此查询有效，但难以读取，并且不会突出显示三个复制属性之间的关系。 实现自定义谓词计算器将降低该查询的复杂性和语义。
+此查询有效但难以读取，不会突出显示三个复制属性之间的关系。 实现自定义谓词求值器将降低该查询的复杂性和语义。
 
 #### 目标{#objectives}
 
@@ -101,15 +101,15 @@ replic.action=Activate
 
 >[!TIP]
 >
->[WKND教程详细介绍了新AEM项目（包括使用maven）的设置。](develop-wknd-tutorial.md)
+>WKND教程](develop-wknd-tutorial.md)中详细说明了包括使用maven在内的新AEM项目的设置。[
 
-首先，您需要更新项目的Maven依赖关系。 `PredicateEvaluator`是`cq-search`项目的一部分，因此需要将其添加到您的Maven pom文件。
+首先，您需要更新项目的Maven依赖项。 `PredicateEvaluator`是`cq-search`项目的一部分，因此需要将它添加到Maven pom文件。
 
 >[!NOTE]
 >
->由于`OSGi`容器将提供`cq-search`，因此`cq-search`依赖关系的范围设置为`provided`。
+>`cq-search`依赖关系的范围设置为`provided`，因为`cq-search`将由`OSGi`容器提供。
 
-以下代码片断以[统一差异格式](https://en.wikipedia.org/wiki/Diff#Unified_format)显示`pom.xml`文件中的差异
+以下代码片断显示了`pom.xml`文件中以[统一diff格式](https://en.wikipedia.org/wiki/Diff#Unified_format)的差异
 
 ```text
 @@ -120,6 +120,12 @@
@@ -126,16 +126,16 @@ replic.action=Activate
              <version>3.8.1</version></dependency>
 ```
 
-#### 编写ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
+#### 写入ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-`cq-search`项目包含`AbstractPredicateEvaluator`抽象类。 只需几步即可扩展该功能，以实现您自己的自定义谓词计算器`(PredicateEvaluator`。
+`cq-search`项目包含`AbstractPredicateEvaluator`抽象类。 可以通过几个步骤扩展该功能，以实现您自己的自定义谓词计算器`(PredicateEvaluator`)。
 
 >[!NOTE]
 >
->以下过程说明如何构建`Xpath`表达式来筛选数据。 另一个选项是实施`includes`方法，该方法以行为基础选择数据。 有关详细信息，请参阅[Java文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)。
+>以下过程说明了如何构建`Xpath`表达式来筛选数据。 另一个选项是实现`includes`方法，该方法以行为基础选择数据。 有关详细信息，请参阅[Java文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
 
-1. 新建一个扩展`com.day.cq.search.eval.AbstractPredicateEvaluator`的Java类
-1. 用`@Component`类似代码片段注释类，它们以[统一差异格式](https://en.wikipedia.org/wiki/Diff#Unified_format)显示
+1. 创建扩展`com.day.cq.search.eval.AbstractPredicateEvaluator`的新Java类
+1. 使用[统一diff格式](https://en.wikipedia.org/wiki/Diff#Unified_format)中显示的类似代码片段注释类`@Component`
 
    ```text
    @@ -19,8 +19,11 @@
@@ -157,19 +157,19 @@ replic.action=Activate
 
    >[!NOTE]
    >
-   >`PredicateEvaluator`的名称是谓词名称，在构建查询时使用它。
+   >`PredicateEvaluator`的名称是谓词名称，在生成查询时使用。
 
-1. 覆盖：
+1. 替代:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   在覆盖方法中，您根据参数中给定的`Predicate`构建一个`Xpath`表达式。
+   在覆盖方法中，根据参数中给定的`Predicate`构建`Xpath`表达式。
 
-### 复制元数据的自定义谓词计算器示例{#example-of-a-custom-predicate-evaluator-for-replication-metadata}
+### 复制元数据{#example-of-a-custom-predicate-evaluator-for-replication-metadata}的自定义谓词计算器示例
 
-此`PredicateEvaluator`的完整实现可能与以下类类似。
+此`PredicateEvaluator`的完整实现可能类似于以下类。
 
 ```java
 /*
