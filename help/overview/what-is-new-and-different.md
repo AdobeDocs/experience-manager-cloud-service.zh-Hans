@@ -2,7 +2,7 @@
 title: What is Different and What is New - Adobe Experience Manager作为Cloud Service
 description: 'What is Different and What is New - Adobe Experience Manager(AEM)作为Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 10%
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有关内部部署和托管服务版本的更多详细信息，请参阅[AEM 6.5](https://helpx.adobe.com/cn/support/experience-manager/6-5.html)的文档集。
+>有关内部部署和托管服务版本的更多详细信息，请参阅[AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html)的文档集。
 
 ## 架构 {#architecture}
 
