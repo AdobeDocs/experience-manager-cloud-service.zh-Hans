@@ -2,9 +2,9 @@
 title: 迁移后阶段
 description: 迁移后阶段
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '226'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >在运行时写入不可变存储库（例如 `/libs` 和 `/apps`）将会导致错误。此外，作为客户，您将无法访问用于暂存和生产环境的开发人员工具。
 
-请参阅[使用 CRXDE Lite 进行开发](https://docs.adobe.com/help/zh-Hans/experience-manager-65/developing/devtools/developing-with-crxde-lite.html)，了解如何使用 CRXDE Lite 来开发 AEM 应用程序。
+请参阅[使用 CRXDE Lite 进行开发](/help/implementing/developing/tools/crxde.md)，了解如何使用 CRXDE Lite 来开发 AEM 应用程序。
 
 ## 管理日志 {#managing-logs}
 
