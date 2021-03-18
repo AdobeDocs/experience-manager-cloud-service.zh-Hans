@@ -2,9 +2,9 @@
 title: 配置翻译集成框架
 description: 了解如何配置翻译集成框架以与第三方翻译服务集成。
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1381'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,6 @@ ht-degree: 1%
 * [智能](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [阿尔特朗](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 安装连接器包后，可以为连接器创建云配置。 通常，您需要提供凭据以便向翻译服务进行身份验证。 有关为Microsoft Translator连接器添加云配置的信息，请参阅[与Microsoft Translator](connect-ms-translator.md)集成。
 
