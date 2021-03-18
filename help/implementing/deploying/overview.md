@@ -2,10 +2,10 @@
 title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 1%
    * 上下文感知配置（`/conf`下的任何内容）（添加、修改、删除）
    * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂钩
 
-通过将包嵌入install.author或install.publish文件夹（位于`/apps`下），可以将可变内容安装限制为创作或发布。 有关建议的项目重组的详细信息，请参阅[AEM文档](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)。
+通过将包嵌入install.author或install.publish文件夹（位于`/apps`下），可以将可变内容安装限制为创作或发布。 在AEM 6.5中进行了重组，以反映此分离，有关建议项目重组的详细信息，请参阅[AEM 6.5文档。](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >内容包将部署到所有环境类型(dev、stage、prod)。 无法将部署限制为特定环境。 此限制旨在确保自动执行的测试运行选项。 特定于环境的内容需要通过包管理器手动安装。
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 必须验证包含的任何第三方包是否与AEM兼容，否则其包含将导致部署失败。
 
-如上所述，拥有现有代码库的客户应符合[ AEM文档](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)中描述的存储库重构练习。
+如上所述，拥有现有代码库的客户应符合[AEM 6.5文档中描述的6.5存储库更改所需的存储库重构操作。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## 重新指向{#repoinit}
 
@@ -153,9 +153,9 @@ ht-degree: 1%
 
 >[!TIP]
 >
->对于ACL，创建深层结构可能比较麻烦，因此更合理地在更高层定义ACL，并通过rep:glob限制来限制它应该在哪些位置执行操作。
+>对于ACL，创建深层结构可能比较繁琐，因此更合理地在更高级别定义ACL，并通过rep:glob限制约束其应在何处操作。
 
-有关重新点的更多详细信息，请参阅[Sling文档](https://sling.apache.org/documentation/bundles/repository-initialization.html)
+有关重新指向的详细信息，请参阅[Sling文档](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
 <!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
@@ -163,17 +163,17 @@ above appears to be internal, to confirm with Brian -->
 
 ### 可变内容包{#package-manager-oneoffs-for-mutable-content-packages}的包管理器“one offs”
 
-在某些情况下，应将内容包作为“一次性”安装。 例如，将特定内容从生产导入暂存，以调试生产问题。 对于这些情况，包管理器可以在AEM中用作Cloud Service环境。
+在某些情况下，内容包应作为“一次性”安装。 例如，将特定内容从生产导入到暂存，以调试生产问题。 对于这些情况，包管理器可以在AEM中用作Cloud Service环境。
 
-由于包管理器是运行时概念，因此无法将内容或代码安装到不可改变的存储库中，因此这些内容包只应包含可变内容（主要是`/content`或`/conf`）。 如果内容包中包含混合的内容（可变内容和不可变内容），则只安装可变内容。
+由于包管理器是一个运行时概念，因此无法将内容或代码安装到不可变的存储库中，因此这些内容包只应由可变内容（主要是`/content`或`/conf`）组成。 如果内容包包含混合的内容（可变内容和不可变内容），则将仅安装可变内容。
 
-通过Cloud Manager安装的任何内容包（可变和不可变）都将以冻结状态显示在AEM Package Manager的用户界面中。 无法重新安装、重建甚至下载这些包，并将以&#x200B;**&quot;cp2fm&quot;**&#x200B;后缀列出，指示其安装由Cloud Manager管理。
+通过Cloud Manager安装的任何内容包（可变和不可变）都将在AEM Package Manager的用户界面中显示为冻结状态。 无法重新安装、重新构建或甚至下载这些包，并将以&#x200B;**&quot;cp2fm&quot;**&#x200B;后缀列出，表明其安装由Cloud Manager管理。
 
 ### 包括第三方包{#including-third-party}
 
-客户通常会包括来自第三方来源(如Adobe翻译合作伙伴等软件供应商)的预建包。 建议将这些包托管在远程存储库中，并在`pom.xml`中引用它们。 这适用于公共存储库，也适用于具有密码保护的专用存储库，如[受密码保护的maven存储库](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)中所述。
+客户通常会包括来自第三方来源(如Adobe翻译合作伙伴等软件供应商)的预建包。 建议将这些包托管在远程存储库中，并在`pom.xml`中引用它们。 这适用于公共存储库，也适用于具有密码保护的专用存储库，如[受密码保护的主存储库](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)中所述。
 
-如果无法将包存储在远程存储库中，客户可以将包放在基于本地文件系统的Maven存储库中，该存储库将作为项目的一部分提交到SCM，并由任何依赖它的资源引用。 储存库将在以下所示的项目提示中声明：
+如果无法将包存储在远程存储库中，客户可以将包放置在基于本地文件系统的Maven存储库中，该存储库作为项目的一部分提交到SCM，并由依赖它的任何对象引用。 储存库将在以下项目展示中宣布：
 
 
 ```
@@ -186,7 +186,7 @@ above appears to be internal, to confirm with Brian -->
 
 <!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
-任何包含的第三方包都必须作为本文中描述的Cloud Service服务编码和打包指南遵守AEM，否则，其包含将导致部署失败。
+任何包含的第三方包都必须遵守AEM作为本文所述的Cloud Service服务编码和打包指南，否则，其包含将导致部署失败。
 
 以下Maven POM XML代码片断展示了如何通过 **filevault-package-maven-plugin** Maven插件配置将第三方包嵌入项目的“容器”包中(通常名为 **** &#39;all&#39;)。
 
@@ -223,86 +223,86 @@ above appears to be internal, to confirm with Brian -->
 ...
 ```
 
-## 滚动部署如何工作{#how-rolling-deployments-work}
+## 滚动部署的工作方式{#how-rolling-deployments-work}
 
-与AEM更新一样，客户版本使用滚动部署策略进行部署，以在适当的情况下消除作者群集停机。 事件的一般顺序如下所述，其中&#x200B;**Blue**&#x200B;是旧版本的客户代码，**Green**&#x200B;是新版本。 “蓝色”和“绿色”运行的AEM代码版本相同。
+与AEM更新一样，客户版本使用滚动部署策略进行部署，以便在适当的情况下消除作者群集停机时间。 事件的常规序列如下所述，其中&#x200B;**Blue**&#x200B;是旧版客户代码，**Green**&#x200B;是新版本。 蓝色和绿色运行的AEM代码版本相同。
 
-* 蓝色版本处于活动状态，并且已构建并提供绿色版本候选
+* 蓝色版本处于活动状态，并且已构建并提供绿色版的候选发行版
 * 如果存在任何新的或更新的索引定义，则处理相应的索引。 请注意，蓝色部署将始终使用旧索引，而绿色部署将始终使用新索引。
-* “蓝色”仍在服务时，绿色开始
-* 蓝色正在运行，并在通过运行状况检查检查绿色是否准备就绪时提供服务
-* 已准备好的绿色节点接受通信并替换已关闭的蓝色节点
-* 随着时间的推移，蓝色节点被绿色节点替换，直到只保留绿色节点，从而完成部署
-* 部署任何新的或修改的可变内容
+* “蓝色”仍在服务时，“绿色”正在启动
+* 蓝色正在运行，并且正在通过运行状况检查检查检查绿色是否准备就绪
+* 准备就绪的绿色节点接受通信并替换已关闭的蓝色节点
+* 随着时间的推移，蓝色节点被绿色节点替换，直到仅绿色节点保留，从而完成部署
+* 已部署任何新的或修改的可变内容
 
 ## 索引{#indexes}
 
-新的或修改的索引将导致在新（绿色）版本开始流量之前执行额外的索引编制或重新索引步骤。 有关AEM作为Cloud Service的索引管理的详细信息，请参阅本文[](/help/operations/indexing.md)。 您可以在Cloud Manager构建页面上检查索引编制作业的状态，并在新版本准备好接收流量时收到通知。
+新的或修改的索引将导致在新（绿色）版本开始流量之前执行额外的索引或重新索引步骤。 有关AEM作为Cloud Service的索引管理的详细信息，请参阅本文[](/help/operations/indexing.md)。 您可以在Cloud Manager构建页上检查索引作业的状态，并在新版本准备就绪后收到通知。
 
 >[!NOTE]
 >
->滚动部署所需的时间会因索引大小而异，因为在生成新索引之前，绿色版本不能接受通信量。
+>滚动部署所需的时间会因索引的大小而异，因为生成新索引之前，绿色版本不能接受通信。
 
-目前，AEM作为Cloud Service无法与索引管理工具（如ACS Commons Ensure Oak Index工具）一起使用。
+目前，AEM作为Cloud Service无法使用索引管理工具，如ACS Commons Ensure Oak Index工具。
 
 ## 复制 {#replication}
 
-发布机制向后兼容[AEM复制Java API](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)。
+发布机制与[AEM Replication Java API](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)向后兼容。
 
-为了使用云就绪型AEM快速启动开发和测试复制，传统复制功能需要与作者/发布设置一起使用。 如果已为云删除AEM Author上的UI入口点，则用户将转到`http://localhost:4502/etc/replication`进行配置。
+要使用云就绪型AEM快速启动开发和测试复制功能，需要将经典复制功能与作者/发布设置结合使用。 如果已为云删除AEM作者上的UI入口点，则用户将转至`http://localhost:4502/etc/replication`进行配置。
 
 ## 滚动部署的向后兼容代码{#backwards-compatible-code-for-rolling-deployments}
 
-如上所述，AEM作为Cloud Service的滚动部署策略意味着新旧版本可能同时运行。 因此，请谨慎处理代码更改，这些更改不向后兼容仍在运行的旧AEM版本。
+如上所述，AEM作为Cloud Service的滚动部署策略意味着旧版本和新版本可能同时运行。 因此，请注意代码更改与仍在运行的旧AEM版本不向后兼容。
 
-此外，应测试旧版本是否与新版本在回滚时应用的任何新的可变内容结构兼容，因为不会删除可变内容。
+此外，应测试旧版本与回滚事件中新版本应用的任何新可变内容结构的兼容性，因为不会删除可变内容。
 
 ### 服务用户和ACL更改{#service-users-and-acl-changes}
 
-更改访问内容或代码所需的服务用户或ACL可能会导致较旧的AEM版本中出现错误，从而导致对过时服务用户访问该内容或代码。 要解决此行为，建议在至少2个版本之间进行更改，第一个版本在后续版本中清理之前充当桥。
+更改访问内容或代码所需的服务用户或ACL可能会导致较早的AEM版本中出现错误，从而导致对过时服务用户访问该内容或代码。 要解决此行为，建议在至少2个版本之间传播更改，第一个版本在后续版本中清理之前充当桥。
 
 ### 索引更改{#index-changes}
 
-如果对索引进行了更改，则Blue版本应继续使用其索引，直到其终止，而Green版本应使用其自己修改的索引集。 开发人员应遵循本文](/help/operations/indexing.md)中描述的[索引管理技术。
+如果对索引进行了更改，则Blue版本应继续使用其索引，直到其终止，而Green版本应使用其自己修改过的索引集。 开发人员应遵循本文](/help/operations/indexing.md)中描述的索引管理技术。[
 
 ### 回滚的保守编码{#conservative-coding-for-rollbacks}
 
-如果在部署后报告或检测到故障，则可能需要回滚到蓝色版本。 最好确保蓝色代码与绿色版本创建的任何新结构兼容，因为新结构（任何可变内容内容内容）将不会回滚。 如果旧代码不兼容，则需要在后续客户版本中应用修复。
+如果在部署后报告或检测到故障，则可能需要回滚到蓝色版本。 最好确保蓝色代码与由绿色版本创建的任何新结构兼容，因为新结构（任何可变内容内容）不会回滚。 如果旧代码不兼容，则需要在后续客户版本中应用修复。
 
 ## 运行模式{#runmodes}
 
-在现有AEM解决方案中，客户可以选择以任意运行模式运行实例，并将OSGI配置或安装OSGI捆绑包到这些特定实例。 定义的运行模式通常包括&#x200B;*服务*（作者和发布）和环境(dev、stage、prod)。
+在现有的AEM解决方案中，客户可以选择以任意运行模式运行实例，并将OSGI配置或将OSGI捆绑包安装到这些特定实例。 通常定义的运行模式包括&#x200B;*service*（作者和发布）和环境(dev、stage、prod)。
 
-AEM作为一个Cloud Service，对于哪些运行模式可用以及如何将OSGI包和OSGI配置映射到这些模式，则更加确信：
+而AEM作为Cloud Service，则对哪些运行模式可用以及如何将OSGI捆绑包和OSGI配置映射到这些模式更加确信：
 
-* OSGI配置运行模式必须引用dev、stage、prod for the environment或author、publish for the service。 支持`<service>.<environment_type>`的组合，但必须按此特定顺序使用`author.dev`或`publish.prod`。 OSGI令牌应直接从代码中引用，而不是使用`getRunModes`方法，该方法在运行时将不再包含`environment_type`。 有关详细信息，请参阅[将AEM的OSGi配置为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
-* OSGI包运行模式仅限于服务（作者、发布）。 每运行模式OSGI包应安装在`install/author`或`install/publish`下的内容包中。
+* OSGI配置运行模式必须引用dev、stage、prod for the 环境或author， publish for the service。 支持`<service>.<environment_type>`的组合，但必须按此特定顺序使用它们（例如`author.dev`或`publish.prod`）。 OSGI令牌应直接从代码中引用，而不是使用`getRunModes`方法，该方法在运行时将不再包括`environment_type`。 有关详细信息，请参阅[将AEM的OSGi配置为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI捆绑包运行模式仅限于服务（作者、发布）。 每运行模式OSGI包应安装在`install/author`或`install/publish`下的内容包中。
 
-与现有AEM解决方案一样，无法使用运行模式仅安装特定环境或服务的内容。 如果希望为开发环境植入数据或不在舞台或生产上的HTML，则可以使用包管理器。
+与现有的AEM解决方案一样，无法使用运行模式仅为特定环境或服务安装内容。 如果希望用未在舞台或生产中的数据或HTML为开发环境植入种子，则可以使用包管理器。
 
-支持的运行模式配置包括：
+支持的运行模式配置有：
 
 * **config** (*默认值，适用于所有AEM服务*)
-* **config.author** (适&#x200B;*用于所有AEM作者服务*)
-* **config.author.dev** (*适用于AEM Dev作者服务*)
+* **config.author** (*适用于所有AEM作者服务*)
+* **config.author.dev** (*适用于AEM Dev Author服务*)
 * **config.author.stage** (*适用于AEM Staging Author服务*)
 * **config.author.prod** (*适用于AEM Production Author服务*)
 * **config.publish** (*适用于AEM发布服务*)
-* **config.publish.dev** (*适用于AEM Dev发布服务*)
+* **config.publish.dev** (*适用于AEM Dev Publish服务*)
 * **config.publish.stage** (*适用于AEM Staging Publish服务*)
 * **config.publish.prod** (*适用于AEM Production Publish服务*)
 * **config.dev** (*适用于AEM Dev服务)
 * **config.stage** (*适用于AEM Staging服务)
-* **config.prod** (*适用于AEM生产服务)
+* **config.prod** (*适用于AEM Production Services)
 
 使用具有最匹配运行模式的OSGI配置。
 
-在本地开发时，可以传入运行模式启动参数，以指定将使用哪种运行模式OSGI配置。
+在本地开发时，可以传入运行模式启动参数，以指示将使用哪种运行模式OSGI配置。
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
 Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
 
-## 源代码控件{#maintenance-tasks-configuration-in-source-control}中的维护任务配置
+## Source Control {#maintenance-tasks-configuration-in-source-control}中的维护任务配置
 
-维护任务配置必须在源代码控制中保留，因为&#x200B;**工具>操作**&#x200B;屏幕将不再在云环境中可用。 这有利于确保有意保留更改，而不是重新应用或遗忘更改。 有关其他信息，请参阅[维护任务文章](/help/operations/maintenance.md)。
+维护任务配置必须在源代码控制中保留，因为云环境中将不再提供&#x200B;**工具>操作**&#x200B;屏幕。 这样做的好处是，确保有意地坚持改变，而不是反复适用，或许会被遗忘。 请参考[维护任务文章](/help/operations/maintenance.md)以了解详细信息。
