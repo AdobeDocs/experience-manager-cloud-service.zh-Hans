@@ -2,10 +2,10 @@
 title: 自定义代码质量规则 — Cloud Services
 description: 自定义代码质量规则 — Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -747,7 +747,7 @@ AEM现代化工具文档提供了如何将组件从经典UI转换为触屏UI的�
 
 **自**:2021.2.0版
 
-AEM客户端库可能包含图像和字体等静态资源。 如[使用预处理器](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)中所述，在使用代理客户端库时，这些静态资源必须包含在名为resources的子文件夹中，才能在发布实例上有效地引用。
+AEM客户端库可能包含图像和字体等静态资源。 如[使用预处理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)中所述，在使用代理客户端库时，这些静态资源必须包含在名为resources的子文件夹中，才能在发布实例上有效地引用。
 
 #### 不兼容代码{#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ AEM客户端库可能包含图像和字体等静态资源。 如[使用预处理
 
 **自**:2021.2.0版
 
-尽管静态模板的使用在AEM项目中一直非常常见，但强烈建议使用可编辑模板，因为它们提供了最灵活的功能，并支持静态模板中不存在的其他功能。 有关详细信息，请参阅[页面模板 — 可编辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)。 从静态模板到可编辑模板的迁移可以使用[AEM Moderization Tools](https://opensource.adobe.com/aem-modernize-tools/)实现大量自动化。
+尽管静态模板的使用在AEM项目中一直非常常见，但强烈建议使用可编辑模板，因为它们提供了最灵活的功能，并支持静态模板中不存在的其他功能。 有关详细信息，请参阅[页面模板。](/help/implementing/developing/components/templates.md) 从静态模板到可编辑模板的迁移可以使用AEM Medurization Tools实现 [大量自动化](https://opensource.adobe.com/aem-modernize-tools/)。
 
 ### OakPAL — 不鼓励使用旧版基础组件{#oakpal-usage-legacy}
 
