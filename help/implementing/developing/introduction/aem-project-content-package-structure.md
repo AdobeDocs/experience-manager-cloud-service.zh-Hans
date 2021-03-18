@@ -2,10 +2,10 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 translation-type: tm+mt
-source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->熟悉基本的[AEM Project Archetype use](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)，因为本文构建于这些学习和概念之上。
+>熟悉基本的[AEM Project Archetype use](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md)，因为本文构建于这些学习和概念之上。
 
 本文概述了Adobe Experience Manager Maven项目作为Cloud Service兼容项所需的更改，具体方法是确保它们遵守可变内容和不可变内容的拆分，建立依赖关系以创建不冲突的确定性部署，并将它们打包在可部署结构中。
 
@@ -619,5 +619,5 @@ scripts=["
 
 ## 其他资源 {#additional-resources}
 
-+ [使用Maven管理包](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [使用Maven管理包](/help/implementing/developing/tools/maven-plugin.md)
 + [FileVault内容包Maven插件](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
