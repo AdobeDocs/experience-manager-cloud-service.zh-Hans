@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用视频。
 feature: 视频配置文件
 topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
 workflow-type: tm+mt
-source-wordcount: '9541'
-ht-degree: 28%
+source-wordcount: '9512'
+ht-degree: 22%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 28%
 
 ## 快速开始:视频{#quick-start-videos}
 
-以下工作流分步说明旨在帮助您快速设置并运行Dynamic Media中的自适应视频集。每个步骤之后都会交叉引用主题标题，您可以从中找到更多信息。
+下面的工作流分布说明旨在帮助您在 Dynamic Media 中快速设置并运行自适应视频集。每个步骤之后都交叉引用主题标题，您可以在其中找到更多信息。
 
 >[!NOTE]
 >
->在Dynamic Media中处理视频之前，请确保您的AEM管理员已启用并配置了Dynamic MediaCloud Services。
+>在Dynamic Media中处理视频之前，请确保您的Adobe Experience Manager管理员已启用并配置Dynamic MediaCloud Services。
 >
 >* 请参阅配置Dynamic Media和[疑难解答Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)中的[配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
 
@@ -102,7 +102,7 @@ ht-degree: 28%
 
 1. 通过执行以下任一操作，**发布 Dynamic Media 视频**：
 
-   * 如果您使用Adobe Experience Manager作为WCM(Web内容管理)系统，则可以将视频直接添加到网页中。
+   * 如果您使用Experience Manager作为WCM(Web内容管理)系统，则可以将视频直接添加到网页中。
 
       * [将视频添加到网页](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
    * 如果您使用的是第三方Web内容管理系统，则可以将视频链接或嵌入到您的网页。
@@ -121,11 +121,11 @@ ht-degree: 28%
 
 ## 在Dynamic Media中使用视频{#working-with-video-in-dynamic-media}
 
-Dynamic Media中的视频是一个端到端解决方案，它使得发布高质量自适应视频以跨多个屏幕（包括桌面、iOS、Android、Blackberry和Windows移动设备）进行流化变得很容易。自适应视频集为同一视频的不同版本编码，这些版本以不同的比特率和格式进行编码，如400 kbps、800 kbps和1000 kbps。台式计算机或移动设备会检测可用带宽。
+Dynamic Media中的视频是一个端到端解决方案，它使得发布高质量自适应视频以跨多个屏幕(包括桌面、iOS、Android™、BlackBerry®和Windows®移动设备)进行流化变得很容易。自适应视频集为同一视频的不同版本编码，这些版本以不同的比特率和格式进行编码，如400 kbps、800 kbps和1000 kbps。台式计算机或移动设备会检测可用带宽。
 
 例如，在 iOS 移动设备上，设备检测到 3G、4G 或 Wi-Fi 等带宽。设备会随之自动从自适应视频集内的各种视频比特率中选择正确的编码视频。然后，视频会在桌面设备、移动设备或平板电脑上进行流播放。
 
-此外，如果桌面或移动设备上的网络条件发生变化，设备会自动动态地切换视频质量。同时，如果客户在桌面上进入全屏模式，自适应视频集也会做出响应来使用较好的分辨率，从而改善客户的观看体验。使用自适应视频集可为在多个屏幕和设备上播放Dynamic Media视频的客户提供最佳回放。
+此外，如果桌面或移动设备上的网络条件发生变化，设备会自动动态地切换视频质量。此外，如果客户在桌面上进入全屏模式，自适应视频集会做出响应，使用更好的分辨率，从而改善客户的观看体验。 使用自适应视频集可为在多个屏幕和设备上播放Dynamic Media视频的客户提供最佳回放。
 
 视频播放器在确定播放或选择播放期间要播放或选择的编码视频时所使用的逻辑基于以下算法：
 
@@ -146,13 +146,13 @@ Dynamic Media中的视频是一个端到端解决方案，它使得发布高质�
 
 * 在所有HTML5视频查看器中添加视频字幕。
 * 组织、浏览和搜索具有全面元数据支持的视频，以实现高效的视频资产管理。
-* 将自适应视频集交付到Web以及桌面和移动设备，包括iPhone、iPad、Android、Blackberry和Windows phone。
+* 将自适应视频集交付到网络和桌面以及移动设备，包括iPhone、iPad、Android™、BlackBerry®和Windows® phone。
 
-自适应视频流播放在多种 iOS 平台上受支持。请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
+各种iOS平台支持自适应视频流播放。 请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
 
-Dynamic Media支持为MP4 H.264视频播放移动视频。可在以下位置找到支持此视频格式的Blackberry设备：[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支持的视频格式。
+Dynamic Media支持为MP4 H.264视频播放移动视频。可在以下位置找到支持此视频格式的BlackBerry®设备：[BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支持的视频格式。
 
-请参阅下面的文档，以了解支持此视频格式的 Windows 设备：[Windows Phone 上支持的视频格式](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)。
+可在以下位置找到支持此视频格式的Windows®设备：[Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)上支持的视频格式
 
 * 使用 Dynamic Media 视频查看器预设播放视频，包括以下查看器：
 
@@ -164,27 +164,27 @@ Dynamic Media支持为MP4 H.264视频播放移动视频。可在以下位置找�
 
 请参阅[动态视频播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)示例。
 
-另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[AEM Assets和Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)的查看器和[AEM Assets的查看器。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)
+另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[Experience Manager资产和Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)和[Experience Manager资产的查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ## 最佳实践：使用HTML5视频查看器{#best-practice-using-the-html-video-viewer}
 
-Dynamic Media HTML5视频查看器预设是功能强大的视频播放器。您可以使用它们避免与HTML5视频播放相关的许多常见问题以及与移动设备相关的问题，如缺少自适应流投放和桌面浏览器访问能力有限。
+Dynamic Media HTML5视频查看器预设是功能强大的视频播放器。您可以使用它们避免与HTML5视频播放相关的许多常见问题和与移动设备相关的问题。 例如，缺少自适应流投放和桌面浏览器访问能力有限。
 
-在播放器的设计方面，您可以使用标准的 Web 开发工具设计视频播放器的所有功能。例如，您可以使用 HTML5 和 CSS 设计按钮、控件和自定义标识图像背景，从而帮助您向客户展示自定义的外观。
+在播放器的设计方面，您可以使用标准Web开发工具来设计视频播放器的功能。 例如，您可以使用 HTML5 和 CSS 设计按钮、控件和自定义标识图像背景，从而帮助您向客户展示自定义的外观。
 
 在查看器的播放方面，查看器可以自动检测浏览器的视频功能。然后，它使用HLS（HTTP实时流）（也称为自适应视频流）来提供视频。 或者，如果这些传送方法不可用，则会改用 HTML5 渐进式流播放。
 
-通过将使用 HTML5 和 CSS 设计播放组件的功能、支持嵌入式播放的功能，以及根据浏览器的容量使用自适应和渐进式流播放的功能整合到单一播放器中，您可以扩大富媒体内容可以传送到的桌面和移动用户的范围，并确保简化视频体验。
+您可以将使用HTML5和CSS设计回放组件的功能组合到单个播放器中。 它可以具有嵌入式播放，并根据浏览器的功能使用自适应和渐进式流播放。 所有这些功能意味着您可以将多媒体内容的触及范围扩展到桌面和移动用户，并确保简化的视频体验。
 
-另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[仅限AEM Assets的查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
+另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[仅用于Experience Manager资产的查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ### 使用HTML5视频查看器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在台式计算机和移动设备上播放视频
 
 对于桌面和移动自适应视频流播放，比特率切换所使用的视频基于自适应视频集中的所有MP4视频。
 
-使用HLS或渐进式视频下载进行视频播放。 在AEM的先前版本（如6.0、6.1和6.2）中，视频通过HTTP进行流传输。
+使用HLS或渐进式视频下载进行视频播放。 在Experience Manager的先前版本（如6.0、6.1和6.2）中，视频通过HTTP进行流传输。
 
-但是，在AEM 6.3和on中，视频现在通过HTTPS（即HLS）进行流传输，因为DM网关服务URL也始终使用HTTPS。 请注意，此默认行为不会对客户造成任何影响。 也就是说，除非浏览器不支持，否则视频流将始终通过HTTPS进行。 （请参阅下表）。 因此，
+但是，在Experience Manager 6.3和on中，视频现在通过HTTPS（即HLS）进行流传输，因为DM网关服务URL也始终使用HTTPS。 此默认行为不会对客户产生影响。 也就是说，除非浏览器不支持，否则视频流将始终通过HTTPS进行。 （请参阅下表）。 因此，
 
 * 如果您有一个HTTPS网站，其中包含HTTPS视频流，则流播放可以。
 * 如果您有一个HTTPS视频流的HTTP网站，则流程可以正常进行，并且Web浏览器中不存在混合内容问题。
@@ -210,7 +210,7 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
   <tr>
    <td>桌面设备</td>
    <td>Internet Explorer 11+</td>
-   <td>在Windows 8和Windows 10上 — 每当请求HLS时强制使用HTTPS。 已知限制：HLS上的HTTP在浏览器/操作系统组合<br /> <br /> Windows 7上 — 渐进式下载中不起作用。 使用标准逻辑选择HTTP与HTTPS协议。</td>
+   <td>在Windows® 8和Windows® 10上 — 每当请求HLS时强制使用HTTPS。 已知限制：HLS上的HTTP在浏览器/操作系统组合<br /> <br /> Windows® 7上 — 渐进式下载中无效。 使用标准逻辑选择HTTP与HTTPS协议。</td>
   </tr>
   <tr>
    <td>桌面设备</td>
@@ -234,17 +234,17 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
   </tr>
   <tr>
    <td>移动设备</td>
-   <td>Chrome（Android 6或更早版本）</td>
+   <td>Chrome(Android™ 6或更早版本)</td>
    <td>渐进式下载。</td>
   </tr>
   <tr>
    <td>移动设备</td>
-   <td>Chrome（Android 7或更高版本）</td>
+   <td>Chrome(Android™ 7或更高版本)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>移动设备</td>
-   <td>Android（默认浏览器）</td>
+   <td>Android™（默认浏览器）</td>
    <td>渐进式下载。</td>
   </tr>
   <tr>
@@ -259,7 +259,7 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
   </tr>
   <tr>
    <td>移动设备</td>
-   <td>黑莓</td>
+   <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
  </tbody>
@@ -277,7 +277,7 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
 
 ## 视频编码的最佳实践 {#best-practices-for-encoding-videos}
 
-如果您已启用Dynamic Media并设置视频云服务，则&#x200B;**Dynamic Media编码视频**&#x200B;工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已启用Dynamic Media并设置视频云服务，则在您上传视频时，**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流将自动生效。 (如果您未使用Dynamic Media,**[!UICONTROL DAM更新资产]**&#x200B;工作流将生效。)
+如果您已启用Dynamic Media并设置视频Cloud Services，则&#x200B;**Dynamic Media编码视频**&#x200B;工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已启用Dynamic Media并设置视频Cloud Services，则在您上传视频时，**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流会自动生效。 (如果您未使用Dynamic Media,**[!UICONTROL DAM更新资产]**&#x200B;工作流将生效。)
 
 以下是关于源视频文件编码的最佳实践提示。
 
@@ -290,7 +290,7 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
 
 在对视频文件进行编码时，请尽可能使用最高质量的源视频文件。避免使用先前已编码的视频文件，因为这样的文件已经压缩，进一步编码会导致创建的视频质量不佳。
 
-下表说明了在编码之前，源视频文件应具有的建议大小、宽高比和最低比特率。
+下表介绍了在对源视频文件进行编码之前，您必须具有的推荐大小、宽高比和最低比特率：
 
 | 大小 | 宽高比 | 最低比特率 |
 |--- |--- |--- |
@@ -304,7 +304,7 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
 
 1. 转到此网页：[https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download)。
 1. 选择并下载 GUI 版本的安装程序，然后按照安装说明进行操作。
-1. 完成安装后，右键单击视频文件（仅限 Windows）并选择 MediaInfo，或打开 MediaInfo 并将视频文件拖到该应用程序中。您会看到与该视频文件相关的所有元数据，包括其宽度、高度和每秒帧数。
+1. 安装后，右键单击视频文件（仅限Windows®）并选择“MediaInfo”，或打开MediaInfo并将视频文件拖动到应用程序中。您会看到与视频文件关联的所有元数据，包括其宽度、高度和fps。
 
 ### 宽高比 {#aspect-ratio}
 
@@ -323,7 +323,7 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例如，如果一个视频的宽度为 1440，高度为 1080，则其宽高比为 1440/1080，也就是 1.33。在这种情况下，要对该视频文件进行编码，您需要选择宽高比为 4:3 的视频编码预设。
+例如，宽度为1440 x 1080的视频的宽高比为1440/1080，即1.33。在这种情况下，您需要选择宽高比为4:3的视频编码预设来对视频文件进行编码。
 
 ### 比特率 {#bitrate}
 
@@ -335,16 +335,16 @@ HLS是苹果的自适应视频流播放标准，可根据网络带宽容量自�
 
 在选择比特率编码时，您可以选择两种类型：
 
-* **[!UICONTROL 恒定比特率编码]** (CBR) — 在CBR编码期间，在整个编码过程中，比特率或每秒的比特数保持相同。CBR编码在整个视频中将设置的数据速率保持为您的设置。 此外，CBR编码不会为质量优化媒体文件，但会节省存储空间。
+* **[!UICONTROL 恒定比特率]** 编码(CBR) — 在CBR编码期间，在整个编码过程中，比特率或每秒的比特数保持相同。CBR编码在整个视频中将设置的数据速率保持为您的设置。 此外，CBR编码不会为质量优化媒体文件，但会节省存储空间。
 如果您的视频在整个视频中包含类似的运动级别，则使用CBR。 CBR最常用于流式视频内容。 另请参阅[使用自定义添加的视频编码参数](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters)。
 
-* **[!UICONTROL 可变比特率编码]** (VBR)- VBR编码根据压缩程序所需的数据，将数据率调低并调整到您设置的上限。这意味着在VBR编码过程中，媒体文件的比特率会根据媒体文件的比特率需求动态地增加或减少。
+* **[!UICONTROL 可变比特率编码]** (VBR)- VBR编码根据压缩程序所需的数据，将数据率调低并调整到您设置的上限。此功能意味着在VBR编码过程中，媒体文件的比特率会根据媒体文件的比特率需求动态地增加或减少。
 VBR编码时间较长，但产生最有利的结果；媒体文件的质量优越。 VBR最常用于视频内容的http渐进式投放。
 
-何时应使用VBR与CRB?
-在选择VBR与CBR时，几乎总是建议您对媒体文件使用VBR。 VBR以竞争的比特率提供更高质量的文件。 使用VBR时，请务必使用两遍编码，并将最大比特率设置为目标视频比特率的1.5倍。
+您何时使用VBR与CRB?
+在选择VBR与CBR时，几乎始终建议您对媒体文件使用VBR。 VBR以竞争的比特率提供更高质量的文件。 使用VBR时，请务必使用两遍编码，并将最大比特率设置为目标视频比特率的1.5倍。
 
-在选择视频编码预设时，请考虑目标最终用户的连接速度。所选预设的数据率应该是目标最终用户连接速度的 80%。例如，如果目标最终用户的连接速度是 1000 Kbps，则最佳预设就是视频数据率为 800 Kbps 的预设。
+在选择目标编码预设时，请确保考虑到视频最终用户的连接速度。 所选预设的数据率应该是目标最终用户连接速度的 80%。例如，如果目标最终用户的连接速度是 1000 Kbps，则最佳预设就是视频数据率为 800 Kbps 的预设。
 
 下表说明了典型连接速度的数据率。
 
@@ -368,7 +368,7 @@ VBR编码时间较长，但产生最有利的结果；媒体文件的质量优�
 
 对于分辨率为 640 x 480 的文件，其每帧像素数高出四倍。为使这两个示例分辨率的文件实现同等的数据率，您需要对分辨率为 640 x 480 的文件应用四倍的压缩，而这会降低视频的质量。因此，如果视频数据率为 250 Kbps，则在 320 x 240 分辨率下观看时质量会很高，但在 640 x 480 分辨率下观看时质量则不高。
 
-总的来说，您使用的数据率越高，视频的画质就越好；您使用的分辨率越高，您保持画质所需的数据率就越高（与较低分辨率相比）。
+通常，您使用的数据率越高，视频的外观越好，使用的分辨率越高，您必须保持观看质量的数据率就越高（与较低分辨率相比）。
 
 由于分辨率与数据率相关联，在对视频进行编码时，有两种选择：
 
@@ -415,20 +415,20 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 ## 将视频发布到 YouTube {#publishing-videos-to-youtube}
 
-您可以将在AEM Assets中管理的视频资产直接发布到您之前创建的YouTube渠道。
+您可以将在Experience Manager资产中管理的视频资产直接发布到您之前创建的YouTube渠道。
 
-要将视频资产发布到YouTube，请在AEM Assets中为视频资产添加标记。 将这些标记与YouTube渠道关联。 如果视频资产的标记与YouTube渠道的标记匹配，则视频会发布到YouTube。 只要使用关联的标记，发布到YouTube时就会与视频的正常发布一起发生。
+要将视频资产发布到YouTube，您可以在Experience Manager资产中为视频资产添加标记。 将这些标记与YouTube渠道关联。 如果视频资产的标记与YouTube渠道的标记匹配，则视频会发布到YouTube。 只要使用关联的标记，发布到YouTube时就会与视频的正常发布一起发生。
 
-YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将发布到YouTube，而不是Dynamic Media编码已创建的任何视频再现。 虽然不需要使用Dynamic Media处理视频，但是在回放时需要查看器预设时，视频会这样做。
+YouTube会进行自己的编码。 因此，上传到Experience Manager中的原始视频文件将发布到YouTube，而不是Dynamic Media编码已创建的任何视频再现。 虽然不需要使用Dynamic Media处理视频，但在回放时需要查看器预设时，视频会这样做。
 
-当您绕过视频处理用户档案并直接发布到YouTube时，这只意味着AEM资产中的视频资产可能无法获得可查看的缩略图。 这还意味着未编码的视频无法用于任何Dynamic Media资源类型。
+当您绕过视频处理用户档案并直接发布到YouTube时，这只意味着您的Experience Manager资产中的视频资产没有可查看的缩略图。 这还意味着未编码的视频不适用于任何Dynamic Media资源类型。
 
 将视频资产发布到YouTube服务器需要完成以下任务，以确保使用YouTube进行安全、安全的服务器对服务器身份验证：
 
 1. [配置Google Cloud设置](#configuring-google-cloud-settings)
 1. [创建YouTube渠道](#creating-a-youtube-channel)
 1. [添加用于发布的标记](#adding-tags-for-publishing)
-1. [在AEM中设置YouTube](#setting-up-youtube-in-aem)
+1. [在Experience Manager中设置YouTube](#setting-up-youtube-in-aem)
 1. [（可选）自动设置已上传视频的默认YouTube属性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [将视频发布到您的 YouTube 频道](#publishing-videos-to-your-youtube-channel)
 1. [（可选）验证已发布到 YouTube 上的视频](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
@@ -442,7 +442,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
 与Google Cloud一起使用的帐户和用于YouTube的Google帐户不需要相同。
 
-请注意，Google会定期更改其用户界面。 因此，将视频发布到YouTube的步骤可能与下面介绍的内容略有不同。 当您尝试检查视频是否上传到YouTube时，此警告也适用于YouTube。
+Google会定期更改其用户界面。 因此，将视频发布到YouTube的步骤可能与下面介绍的内容略有不同。 当您尝试检查视频是否上传到YouTube时，此警告也适用于YouTube。
 
 >[!NOTE]
 >
@@ -450,7 +450,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
 要配置Google Cloud设置：
 
-1. 创建新的Google帐户。
+1. 创建Google帐户。
    [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
 
    如果您已经有Google帐户，请跳到下一步。
@@ -458,7 +458,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 1. 转到[https://cloud.google.com/](https://cloud.google.com/)。
 1. 在Google cloud页面的右上角附近，单击控制 **[!UICONTROL 台]**。
 
-   如有必要，您可能需要使用Google帐户凭据&#x200B;**[!UICONTROL 登录]**&#x200B;才能查看&#x200B;**[!UICONTROL Console]**&#x200B;选项。
+   如有必要，使用您的Google帐户凭据&#x200B;**[!UICONTROL 登录]**&#x200B;以查看&#x200B;**[!UICONTROL 控制台]**&#x200B;选项。
 
 1. 在仪表板页面的&#x200B;**[!UICONTROL Google Cloud Platform]**&#x200B;右侧，单击“项目”下拉列表以打开“选择项目”对话框。
 1. 在“选择项目”对话框中，点按&#x200B;**[!UICONTROL 新建项目]**。
@@ -467,7 +467,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
 1. 在“新建项目”对话框的“项目名称”字段中，键入新项目的名称。
 
-   请注意，您的项目ID基于您的项目名称。 因此，请谨慎选择项目名称；创建后无法更改。 此外，当您稍后在AEM中设置YouTube时，还需要再次输入同一项目ID;你可能想把它写下来。
+   您的项目ID基于您的项目名称。 因此，请谨慎选择项目名称；创建后无法更改。 此外，您必须在以后在Experience Manager中设置YouTube时再次输入相同的项目ID。 所以，把它写下来。
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -484,7 +484,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. 要使用API，您可能需要凭据。 如有必要，单击&#x200B;**[!UICONTROL 创建凭据]**。
+1. 要使用API，您需要凭据。 如有必要，单击&#x200B;**[!UICONTROL 创建凭据]**。
 
    ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
@@ -492,7 +492,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
    * 从&#x200B;**[!UICONTROL 您正在使用哪个API?]** 下拉列表，选 **[!UICONTROL 择YouTube Data API v3]**。
 
-   * 从&#x200B;**[!UICONTROL 将从何处调用API?]** 下拉列表，选 **[!UICONTROL 择Web服务器（例如node.js、Tomcat）]**
+   * 从&#x200B;**[!UICONTROL 从何处调用API?]** 下拉列表，选 **[!UICONTROL 择“Web服务器”（例如，node.js、Tomcat）]**。
 
    * 从&#x200B;**[!UICONTROL 访问哪些数据？]** 下拉列表，点按 **[!UICONTROL 用户数据]**。
 
@@ -500,7 +500,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
 1. 点按&#x200B;**[!UICONTROL 我需要哪些凭据？]**
 1. 在&#x200B;**[!UICONTROL 将凭据添加到项目]**&#x200B;页面中步骤 2 的&#x200B;**[!UICONTROL 创建 OAuth 2.0 客户端 ID]** 标题下，根据需要在“名称”字段中输入唯一名称。或者，您也可以使用 Google 指定的默认名称。
-1. 在&#x200B;**[!UICONTROL 授权的Javascript来源]**&#x200B;标题下，在文本字段中输入以下路径，在路径中替换您自己的域和端口号，然后按&#x200B;**[!UICONTROL Enter]**&#x200B;将路径添加到列表:
+1. 在“**[!UICONTROL 已授权的JavaScript™来源]**”标题下，在文本字段中输入以下路径，在路径中替换您自己的域和端口号，然后按&#x200B;**[!UICONTROL Enter]**&#x200B;以添加列表的路径：
 
    `https://<servername.domain>:<port_number>`
 
@@ -525,7 +525,7 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
 1. 在显示给用户的&#x200B;**[!UICONTROL 产品名称]**&#x200B;标题下，在文本字段中，输入您希望在同意屏幕上显示的内容。
 
-   当AEM管理员向YouTube进行身份验证时，会向他们显示同意屏幕；AEM将与YouTube联系以获得许可。
+   当Experience Manager管理员通过YouTube验证时，同意屏幕会显示给他们。 Experience Manager联系YouTube以获得许可。
 
 1. 单击&#x200B;**[!UICONTROL 继续]**。
 1. 在将凭据添加到项目页面的步骤4中，在“下载凭据 **[!UICONTROL ”标题下]** ，点按 **[!UICONTROL 下载]**。
@@ -534,11 +534,11 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
 1. 保存`client_id.json`文件。
 
-   稍后在Adobe Experience Manager中设置YouTube时，您将需要此下载的json文件。
+   稍后在Adobe Experience Manager中设置YouTube时，您需要此下载的json文件。
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-   从Google帐户注销。 您现在将创建一个YouTube渠道。
+   从Google帐户注销。 现在创建一个YouTube渠道。
 
 ### 创建YouTube渠道{#creating-a-youtube-channel}
 
@@ -546,60 +546,60 @@ YouTube会进行自己的编码。 因此，上传到AEM的原始视频文件将
 
 >[!CAUTION]
 >
->请确保已在YouTube *中设置一个或多个渠道,*&#x200B;之前，在AEM的“YouTube设置”下添加渠道(请参阅下面的[在AEM](#setting-up-youtube-in-aem)中设置YouTube)。 如果您未能这样做，则系统不会向您发出任何警告，警告您没有现有渠道。 但是，添加渠道时仍会发生Google身份验证，但无法选择发送视频的渠道。
+>请确保已在YouTube *中设置一个或多个渠道,*&#x200B;之前，在“Experience Manager中的YouTube设置”下添加渠道(请参阅下面的[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube)。 如果您未能设置渠道，则不会警告您没有任何现有渠道。 但是，添加渠道时仍会发生Google身份验证，但无法选择发送视频的渠道。
 
 要创建YouTube渠道，请执行以下操作：
 
 1. 转到[https://www.youtube.com](https://www.youtube.com/)并使用您的Google帐户凭据登录。
-1. 在YouTube页面的右上角，单击您的用户档案图片（也可能显示为纯色圆圈中的字母），然后单击&#x200B;**[!UICONTROL YouTube设置]**（圆齿轮图标）。
+1. 在YouTube页面的右上角，单击您的用户档案图片（也可以在纯色圆中显示为字母），然后单击&#x200B;**[!UICONTROL YouTube设置]**（圆齿轮图标）。
 1. 在“概述”页面的“其他功能”标题下，单击&#x200B;**[!UICONTROL 查看所有我的渠道或创建新渠道]**。
 1. 在“渠道”页面上，单击&#x200B;**[!UICONTROL 创建新渠道]**。
 1. 在“品牌帐户”页面的“品牌帐户名称”字段中，输入您要发布视频资产的业务名称或任何其他渠道名称，然后单击&#x200B;**[!UICONTROL 创建]**。
 
-   记住在此处输入的名称，因为在AEM中设置YouTube时，您需要再次输入该名称。
+   请记住在此处输入的名称，因为在以Experience Manager设置YouTube时，必须再次输入该名称。
 
 1. （可选）如有必要，请添加更多渠道。
 
-   现在，您将添加用于发布的标记。
+   现在，您可以添加用于发布的标记。
 
 ### 添加用于发布{#adding-tags-for-publishing}的标记
 
-要将视频发布到YouTube，AEM会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅[管理标记](/help/sites-cloud/authoring/features/tags.md)。
+要将视频发布到YouTube，Experience Manager会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅[管理标记](/help/sites-cloud/authoring/features/tags.md)。
 
-或者，如果您打算使用AEM中的默认标签，则可以跳过此任务，转到“在AEM](#setting-up-youtube-in-aem)中设置YouTube”。[
+或者，如果您打算在Experience Manager中使用默认标签，则可以跳过此任务，转到[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube。
 
 >[!NOTE]
 >
->配置云服务后，此时无需进行其他配置即可启用YouTube发布复制代理。 原因是在保存云服务配置时启用了它。
+>配置Cloud Service后，此时无需其他配置即可启用YouTube发布复制代理。 原因是在保存Cloud Service配置时启用了它。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
 1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Click **[!UICONTROL OK]**. -->
 
-### 在AEM {#setting-up-youtube-in-aem}中设置YouTube
+### 在Experience Manager{#setting-up-youtube-in-aem}中设置YouTube
 
-从 AEM 6.4 开始，引入了一种新的触控用户界面方法，用来在 AEM 中设置 YouTube 发布。根据您所使用的 AEM 安装实例，执行下列操作之一：
+从Experience Manager 6.4开始，引入了一种新的触摸式用户界面方法，以Experience Manager方式建立YouTube发布。 根据您使用的Experience Manager的已安装实例，执行以下操作之一：
 
-* 要在6.4之前的AEM中配置YouTube，请参阅 [在6.4之前的AEM中设置YouTube](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)。
-* 要在AEM 6.4或更高版本中配置YouTube，请参阅[在AEM 6.4和更高版本中设置YouTube](#setting-up-youtube-in-aem-and-later)。
+* 要在6.4之前的Experience Manager中配置YouTube，请参阅[在6.4之前的Experience Manager中设置YouTube。](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)
+* 要在Experience Manager 6.4或更高版本中配置YouTube，请参阅[在Experience Manager 6.4和更高版本中设置YouTube](#setting-up-youtube-in-aem-and-later)。
 
-#### 在AEM 6.4和更高版本{#setting-up-youtube-in-aem-and-later}中设置YouTube
+#### 在Experience Manager 6.4和更高版本{#setting-up-youtube-in-aem-and-later}中设置YouTube
 
 1. 请确保以管理员身份登录到Dynamic Media实例。
-1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 云服务]** > **[!UICONTROL YouTube 发布配置]**。
+1. 在Experience Manager的左上角，点按Experience Manager徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube发布配置]**。
 1. 点按&#x200B;**[!UICONTROL global]**（请勿选择它）。
 
 1. 在全局页面的右上角附近，点按&#x200B;**[!UICONTROL 创建]**。
 1. 在“创建 YouTube 配置”页面的“Google Cloud Platform 设置”下的&#x200B;**[!UICONTROL 应用程序名称]**&#x200B;字段中，输入 Google 项目 ID。
 
    您在最初配置Google Cloud设置时指定了项目ID。
-保持“创建YouTube配置”页面打开；你马上就会回来。
+保持“创建YouTube配置”页面打开；你马上就会重新开始。
 
    ![6_5_youtubepublish-createyoutuconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -608,7 +608,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回至“YouTube 帐户设置”对话框。在 **[!UICONTROL JSON 配置]**&#x200B;字段中，粘贴 JSON 文本。
 1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**。
 
-   您现在将在AEM中设置YouTube渠道。
+   您现在将以Experience Manager设置YouTube渠道。
 
 1. 点按&#x200B;**[!UICONTROL 添加渠道]**。
 1. 在“渠道名称”字段中，输入您在任务&#x200B;**[!UICONTROL 之前向YouTube]**&#x200B;添加一个或多个渠道中创建的渠道的名称。
@@ -627,8 +627,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    您现在将设置用于发布的标记。
 
 1. **[!UICONTROL 设置要发布的标记]**  — 在“Cloud Services”>“YouTube”页面上，点按铅笔图标以编辑要使用的标记的列表。
-1. 点按下拉列表图标（倒转插入标记）可显示AEM中可用标记的列表。
-1. 点按一个或多个标记以添加它们。
+1. 要在Experience Manager中显示可用标记的列表，请点按下拉列表图标（倒转插入标记）。
+1. 要添加标记，请点按一个或多个标记。
 
    要删除已添加的标记，请选择该标记，然后点按&#x200B;**[!UICONTROL X]**。
 
@@ -636,25 +636,25 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    现在，您可以将视频发布到YouTube渠道。
 
-#### 在AEM 6.4 {#setting-up-youtube-in-aem-before}之前设置YouTube
+#### 在6.4 {#setting-up-youtube-in-aem-before}之前的Experience Manager中设置YouTube
 
 1. 请确保以管理员身份登录到Dynamic Media实例。
 
-1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 部署]** > **[!UICONTROL 云服务]**。
+1. 在Experience Manager的左上角，点按Experience Manager徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 部署]** > **[!UICONTROL Cloud Services]**。
 1. 在“第三方服务”标题下的YouTube下，点按&#x200B;**[!UICONTROL 立即配置]**。
 1. 在“创建配置”对话框中，在相应的字段中输入标题（必填）和名称（可选）。
 1. 点按&#x200B;**[!UICONTROL 创建]**。
 1. 在“YouTube 帐户设置”对话框的&#x200B;**[!UICONTROL 应用程序名称]**&#x200B;字段中，输入 Google 项目 ID。
 
    您在最初[配置Google Cloud设置](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)时指定了项目ID。
-保持“YouTube帐户设置”对话框处于打开状态；你马上就会回来。
+保持“YouTube帐户设置”对话框处于打开状态；你马上就会重新开始。
 
 1. 使用纯文本编辑器，打开您之前在“配置Google Cloud”设置中下载和保存的JSON文件。
 1. 选择并复制整个JSON文本。
 1. 返回至“YouTube 帐户设置”对话框。在 **[!UICONTROL JSON 配置]**&#x200B;字段中，粘贴 JSON 文本。
 1. 点按&#x200B;**[!UICONTROL 确定]**。
 
-   您现在将在AEM中设置YouTube渠道。
+   您现在将以Experience Manager设置YouTube渠道。
 
 1. 在&#x200B;**[!UICONTROL 可用渠道]**&#x200B;右侧，点按 **+**（加号图标）。
 1. 在“YouTube频道设置”对话框的“标题”字段中，输入您在之前向YouTube添加一个或多个频道任务中创建的频道 **[!UICONTROL 名称]** 。
@@ -673,8 +673,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    您现在将设置用于发布的标记。
 
 1. **[!UICONTROL 设置要发布的标记]**  — 在“Cloud Services”>“YouTube”页面上，点按铅笔图标以编辑要使用的标记的列表。
-1. 点按下拉列表图标（倒转插入标记）可显示AEM中可用标记的列表。
-1. 点按一个或多个标记以添加它们。
+1. 要在Experience Manager中显示可用标记的列表，请点按下拉列表图标（倒转插入标记）。
+1. 要添加标记，请点按一个或多个标记。
 
    要删除已添加的标记，请选择该标记，然后点按&#x200B;**X**。
 
@@ -684,13 +684,13 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### （可选）自动设置已上传视频的默认YouTube属性{#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-您可以选择在上传视频时自动设置YouTube属性。 您可以通过在AEM中创建元数据处理用户档案来完成此操作。
+您可以选择在上传视频时自动设置YouTube属性。 在Experience Manager中创建元数据处理用户档案。
 
-要创建元数据处理配置文件，您首先需要从&#x200B;**[!UICONTROL 字段标签]**、**[!UICONTROL 映射到属性]**&#x200B;和&#x200B;**[!UICONTROL 选择]**&#x200B;字段中复制值，所有这些字段均位于视频的元数据架构中。然后，您可以通过向处理配置文件添加这些值来构建您的 YouTube 视频元数据处理配置文件。
+要创建元数据处理配置文件，您首先需要从&#x200B;**[!UICONTROL 字段标签]**、**[!UICONTROL 映射到属性]**&#x200B;和&#x200B;**[!UICONTROL 选择]**&#x200B;字段中复制值，所有这些字段均位于视频的元数据架构中。然后，通过向YouTube视频元数据处理用户档案中添加这些值，来构建该视频元数据处理数据。
 
 要自动设置已上传视频的默认YouTube属性，请执行以下操作：
 
-1. 点按 AEM 左上角的 AEM 徽标，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。
+1. 在Experience Manager的左上角，单击Experience Manager标志，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产]** > **[!UICONTROL 元数据模式]**。
 1. 单击&#x200B;**[!UICONTROL default]**。 （请勿在“默认”左侧的选择框中添加复选标记。）
 1. 在&#x200B;**[!UICONTROL default]**&#x200B;页面上，选中&#x200B;**[!UICONTROL video]**&#x200B;左侧的框，然后单击&#x200B;**[!UICONTROL 编辑]**。
 1. 在“元数据模式编辑器”页面上，单击&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。
@@ -713,7 +713,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 将复制的值粘贴到打开的文本编辑器中。 您以后将在创建元数据处理用户档案时需要此值。 使文本编辑器保持打开状态。
 
 1. 在“元数据模式编辑器”页面的右上角附近，单击&#x200B;**[!UICONTROL 取消]**。
-1. 点按 AEM 左上角的 AEM 徽标，然后单击左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**。
+1. 在Experience Manager的左上角，点按Experience Manager徽标，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产]** > **[!UICONTROL 元数据用户档案]**。
 
 1. 在“元数据用户档案”页面的右上角附近，单击&#x200B;**[!UICONTROL 创建]**。
 1. 在“添加元数据配置文件”对话框的&#x200B;**[!UICONTROL 配置文件]**&#x200B;文本字段中，输入名称 `YouTube Video`，然后单击&#x200B;**[!UICONTROL 创建]**。
@@ -724,9 +724,9 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * （可选）将标记为&#x200B;**[!UICONTROL Section Header]**&#x200B;的组件拖到左侧，并将其放置到表单区域中。
    * （可选）单击&#x200B;**[!UICONTROL 字段标签]**&#x200B;以选择组件。
    * （可选）在页面右侧的“设置”选项卡的“字段标签”文本字段中，输入`YouTube Publishing`。
-   * 单击&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡，然后拖动标有&#x200B;**[!UICONTROL 多值文本]**&#x200B;的组件，将其放在您刚刚创建的&#x200B;**[!UICONTROL YouTube发布]**&#x200B;标题下。
+   * 单击&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡，然后拖动标有&#x200B;**[!UICONTROL 多值文本]**&#x200B;的组件，将其放在您创建的&#x200B;**[!UICONTROL YouTube发布]**&#x200B;标题下。
 
-   * 单击&#x200B;**[!UICONTROL 字段标签]**&#x200B;以选择组件。
+   * 要选择组件，请单击&#x200B;**[!UICONTROL 字段标签]**。
    * 在页面右侧的“设置”选项卡下，将您之前复制的YouTube发布值（字段标签值和映射到属性值）粘贴到表单上的相应字段中。 将选择值粘贴到默认值字段中。
 
 1. 通过执行以下操作，将复制的YouTube隐私值添加到用户档案:
@@ -735,34 +735,34 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * （可选）将标记为&#x200B;**[!UICONTROL Section Header]**&#x200B;的组件拖到左侧，并将其放置到表单区域中。
    * （可选）单击&#x200B;**[!UICONTROL 字段标签]**&#x200B;以选择组件。
    * （可选）在页面右侧的“设置”选项卡的“字段标签”文本字段中，输入`YouTube Privacy`。
-   * 单击&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡，然后拖动标有&#x200B;**[!UICONTROL 多值文本]**&#x200B;的组件，将其放在您刚刚创建的&#x200B;**[!UICONTROL YouTube隐私]**&#x200B;标题下。
+   * 单击&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡，然后拖动标有&#x200B;**[!UICONTROL 多值文本]**&#x200B;的组件，将其放在您创建的&#x200B;**[!UICONTROL YouTube隐私]**&#x200B;标题下。
 
-   * 单击&#x200B;**[!UICONTROL 字段标签]**&#x200B;以选择组件。
+   * 要选择组件，请单击&#x200B;**[!UICONTROL 字段标签]**。
    * 在页面右侧的“设置”选项卡下，将您之前复制的YouTube发布值（字段标签值和映射到属性值）粘贴到表单上的相应字段中。 将选择值粘贴到默认值字段中。
 
 1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
-1. 将YouTube发布元数据用户档案应用到您要上传视频的文件夹。 您需要同时设置元数据用户档案和视频用户档案。
+1. 将YouTube发布元数据用户档案应用到您要上传视频的文件夹。 您必须同时设置元数据用户档案和视频用户档案。
 
    请参阅 [元数据配置文件](/help/assets/metadata-profiles.md) 和视 [频配置文件](/help/assets/dynamic-media/video-profiles.md)。
 
 ### 将视频发布到您的 YouTube 频道 {#publishing-videos-to-your-youtube-channel}
 
-现在，您可以将之前添加的标记关联到视频资产。 此过程可让AEM知道要将哪些资产发布到您的YouTube渠道。
+现在，您可以将之前添加的标记关联到视频资产。 此过程可让Experience Manager知道要将哪些资产发布到您的YouTube渠道。
 
 >[!NOTE]
 >
->请注意，立即发布不会自动发布到 YouTube。设置 Dynamic Media 时，有两种发布选项可供选择：**[!UICONTROL 立即]**&#x200B;或&#x200B;**[!UICONTROL 激活时]**。
+>立即发布不会自动发布到YouTube。 设置 Dynamic Media 时，有两种发布选项可供选择：**[!UICONTROL 立即]**&#x200B;或&#x200B;**[!UICONTROL 激活时]**。
 >
->**[!UICONTROL “立]** 即发布”表示上传的资源在与IPS同步后会自动发布到投放系统。尽管Dynamic Media的情况确实如此，但YouTube的情况并非如此。 要发布到YouTube，您必须通过AEM作者方式进行发布。
+>**[!UICONTROL “立]** 即发布”表示上传的资源在与IPS同步后会自动发布到投放系统。尽管Dynamic Media的情况确实如此，但YouTube的情况并非如此。 要发布到YouTube，您必须通过Experience Manager作者的方式进行发布。
 
 >[!NOTE]
-要从YouTube发布内容，AEM使用&#x200B;**[!UICONTROL 发布到YouTube]**&#x200B;工作流，可监视进度并视图任何故障信息。
+要从YouTube发布内容，Experience Manager使用&#x200B;**[!UICONTROL 发布到YouTube]**&#x200B;工作流，它允许您监视进度并视图任何故障信息。
 请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 有关更详细的进度信息，您可以在复制下监视YouTube日志。 但是，请注意，此类监视需要管理员访问。
 
 **要将视频发布到您的YouTube渠道**:
 
-1. 在AEM中，导航到要发布到YouTube渠道的视频资产。
+1. 在Experience Manager中，导航到要发布到YouTube渠道的视频资产。
 1. 选择视频资产（自适应视频集）。
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 属性]**。
 1. 在“基本”选项卡的“元数据”标题下，单击“标记”字段右侧的&#x200B;**[!UICONTROL 打开选择对话框]**。
@@ -774,7 +774,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在视频属性页面的右上角，单击&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 快速发布]**。
 
-   另请参阅[将出版物管理与AEM Sites一起使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
+   另请参阅[将发布管理与Experience Manager站点一起使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
    您可以选择验证已发布到YouTube渠道上的视频。
 
@@ -784,9 +784,9 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
-发布时间可能因诸多因素而有很大不同，这些因素包括主源视频的格式、文件大小和上传流量。 发布过程所需的时间少则几分钟，多则几小时，这些情况都有可能出现。另请注意，分辨率较高的格式渲染起来会慢很多。例如，分辨率分别为 720p 和 1080p 的视频在渲染时所需的时间会比 480p 的视频显著更长。
+发布时间可能因诸多因素而有很大不同，这些因素包括主源视频的格式、文件大小和上传流量。 发布过程所需的时间少则几分钟，多则几小时，这些情况都有可能出现。此外，分辨率更高的格式渲染速度要慢得多。 例如，720p和1080p的显示时间长于480p。
 
-如果在八小时后，状态消息仍然显示&#x200B;**[!UICONTROL 已上传（正在处理，请稍候）]**，请尝试从我们的站点中删除视频，然后重新上传。
+八小时后，如果您仍看到状态消息“**[!UICONTROL 已上载（正在处理，请稍候）]**”，请尝试从您的站点中删除视频，然后重新上传。
 
 ### 将 YouTube URL 关联到您的 Web 应用程序 {#linking-youtube-urls-to-your-web-application}
 
@@ -803,31 +803,31 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 属性]**。
 1. 单击&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。
-1. 在“YouTube发布”标题下的YouTube URL列表中，选择URL文本并将其复制到您的Web浏览器，以预览资产或添加到您的Web内容页面。
+1. 在“YouTube发布”标题下，在YouTube URL列表中，选择URL文本并将其复制到您的Web浏览器，以预览资产或添加到您的Web内容页面。
 
 ### 取消发布视频以将其从 YouTube 中删除 {#unpublishing-videos-to-remove-them-from-youtube}
 
-在AEM中取消发布视频资产时，该视频会从YouTube中删除。
+当您在 Experience Manager 中取消发布视频资产时，该视频会从 YouTube 中删除。
 
 >[!CAUTION]
-如果您直接从YouTube中删除视频，AEM不会察觉并继续表现为视频仍发布到YouTube。 始终通过AEM从YouTube取消发布视频资产。
+如果您直接从YouTube中删除视频，Experience Manager不会察觉，并继续表现为视频仍发布到YouTube。 始终通过Experience Manager方式从YouTube取消发布视频资产。
 
 >[!NOTE]
-要从YouTube中删除内容，AEM使用&#x200B;**[!UICONTROL 从YouTube]**&#x200B;中取消发布工作流，该工作流允许您监视进度并视图任何故障信息。
+要从YouTube中删除内容，Experience Manager使用&#x200B;**[!UICONTROL 从YouTube]**&#x200B;中取消发布工作流，该工作流允许您监视进度并视图任何故障信息。
 请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
 要取消发布视频以将其从 YouTube 中删除，请执行以下操作：
 
 1. 导航到要从YouTube渠道取消发布的视频资产。
 1. 在资产选择模式下，选择一个或多个已发布的视频资产。
-1. 在工具栏中，单击&#x200B;**[!UICONTROL 管理发布]**。 您可能需要点按三个圆点图标(...) 工具栏上，查看&#x200B;**[!UICONTROL 管理发布]**。
+1. 在工具栏中，单击&#x200B;**[!UICONTROL 管理发布]**。 如有必要，点按三个点图标(...) 工具栏上，查看&#x200B;**[!UICONTROL 管理发布]**。
 1. 在“管理发布”页面上，点按&#x200B;**[!UICONTROL 取消发布]**。
 1. 在页面的右上角，点按&#x200B;**[!UICONTROL 下一步]**。
 1. 在页面的右上角，点按&#x200B;**[!UICONTROL 取消发布]**。
 
 ## 监视视频编码和YouTube发布进度{#monitoring-video-encoding-and-youtube-publishing-progress}
 
-当您将新视频上传到应用了视频编码的文件夹或将视频发布到Youtube时，您可以通过多种方式监控视频编码/Youtube发布的进展（或失败）。 实际的YouTube发布进度仅通过日志提供，但是失败还是成功会通过以下过程描述的其他方式列出。 此外，当YouTube发布工作流或视频编码完成或中断时，您可能会收到电子邮件通知。
+当您将新视频上传到应用了视频编码的文件夹时，或者，将视频发布到YouTube，监视视频编码/Youtube发布的进展（或失败）。 实际YouTube发布进度仅通过日志提供。 但是，无论它是失败还是成功，它都会以以下过程中描述的其他方式列出。 此外，当YouTube发布工作流或视频编码完成或中断时，您会收到电子邮件通知。
 
 ### 监视进度{#monitoring-progress}
 
@@ -854,17 +854,17 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    任何工作流信息（如编码）都会显示在时间轴中。 对于YouTube发布，工作流时间轴还包括YouTube渠道和YouTube视频URL的名称。 此外，发布完成后，您会在工作流时间轴中看到任何失败通知。
 
    >[!NOTE]
-   由于 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 中存在多个关于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的工作流配置，最终记录失败/错误会花费较长时间，例如：
+   由于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**(从[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))上的多个工作流配置，最终记录失败/错误消息可能需要很长时间，例如：
    * Apache Sling作业队列配置
    * Adobe Granite工作流外部进程作业处理程序
    * Granite工作流超时队列
 
-   在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
+   在这些配置中，您可以调整&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;属性。
 
 1. 有关进行中的工作流，请参阅“工具”>“工作流” **[!UICONTROL >“实例”中提供的“工作流实例]** ” **[!UICONTROL (Workflow]** ) **[!UICONTROL >“]**&#x200B;实例”。
 
    >[!NOTE]
-   您可能需要管理权限才能访问&#x200B;**[!UICONTROL 工具]**&#x200B;菜单。
+   您需要管理权限才能访问&#x200B;**[!UICONTROL 工具]**&#x200B;菜单。
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -877,26 +877,26 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 有关失败的作业，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 失败]**&#x200B;中显示的“工作流失败”。**[!UICONTROL 工作流失败]**&#x200B;列出所有失败的工作流活动。
 
    >[!NOTE]
-   您可能需要管理权限才能访问&#x200B;**[!UICONTROL 工具]**&#x200B;菜单。
+   您需要管理权限才能访问&#x200B;**[!UICONTROL 工具]**&#x200B;菜单。
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   由于 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 中存在多个关于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的多个工作流配置，最终记录错误消息会花费较长时间，例如：
+   由于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**(从[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))上的多个工作流配置，最终记录错误消息可能需要很长时间，例如：
    * Apache Sling作业队列配置
    * Adobe Granite工作流外部进程作业处理程序
    * Granite工作流超时队列
 
-   在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
+   在这些配置中，您可以调整&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;属性。
 
 1. 有关已完成的工作流，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 存档]**&#x200B;中的可用工作流存档。**[!UICONTROL 工作流存档]**&#x200B;列出了所有已完成的工作流活动。
 
    >[!NOTE]
-   您可能需要管理权限才能访问&#x200B;**[!UICONTROL 工具]**&#x200B;菜单。
+   您需要管理权限才能访问&#x200B;**[!UICONTROL 工具]**&#x200B;菜单。
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. 您可能会收到有关中止或失败的工作流作业的电子邮件通知。 管理员可以配置这些电子邮件通知。 请参阅[配置电子邮件通知](#configuring-e-mail-notifications)。
+1. 您会收到有关已中止或失败的工作流作业的电子邮件通知。 管理员可以配置这些电子邮件通知。 请参阅[配置电子邮件通知](#configuring-e-mail-notifications)。
 
 <!-- EMAIL NOT AVAILABLE IN SKYLINE
 
@@ -908,11 +908,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 How you configure notification depends on whether you want notifications for YouTube publishing jobs.
 
-* For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
+* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
 
 For YouTube publishing jobs, do the following:
 
-1. In AEM, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
 1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
 1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
 1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
@@ -949,7 +949,7 @@ For YouTube publishing jobs, do the following:
 >[!NOTE]
 视频报表仅在运行Dynamic Media — 混合模式时可用。
 
-“视频报表”显示指定时间段内的多个聚合量度，帮助您监控*已发布*单个和聚合视频是否按预期效果呈现。以下顶级量度数据是您整个网站中所有已发布视频的汇总数据：
+“视频报表”显示指定时间段内的多个聚合量度，以帮助您监控已发布的&#x200B;**&#x200B;个视频和聚合视频是否按预期执行。 以下顶级量度数据是您整个网站中所有已发布视频的汇总数据。
 
 * 视频开始
 * 完成率
@@ -959,7 +959,7 @@ For YouTube publishing jobs, do the following:
 
 报表中还会列出包含所有&#x200B;*已发布*&#x200B;视频的表格，以便您能够根据视频开始的总次数，跟踪您网站上最常观看的视频。
 
-在您点按列表中的视频名称时，系统会以折线图向您显示该视频的受众保留（流失）报表。该图表显示了视频播放期间任意给定时刻的查看次数。当您播放视频时，垂直条与播放器中的时间指示器同步进行跟踪。折线图数据中的下降趋势表示受众因不感兴趣而停止观看。
+当您点按列表中的视频名称时，它会以折线图的形式向您显示视频的受众保留（流失）报表。该图表显示在视频播放期间任意给定时刻的视图数。播放视频时，垂直栏会与播放器中的时间指示器同步跟踪。折线图数据中的下降指示受众因不感兴趣而停止的位置。
 
 如果视频是在 Adobe Experience Manager Dynamic Media 外部编码的，就不会提供受众保留（流失）图表和表中的播放比例数据。
 
@@ -968,15 +968,15 @@ For YouTube publishing jobs, do the following:
 
 默认情况下，在您首次输入视频报表时，报表会显示从当月的第一个开始到当月的当日结束的视频数据。但是，您可以通过指定您自己的日期范围来覆盖默认日期范围。下次输入视频报表时，将使用您指定的日期范围。
 
-为使视频报表正常工作，配置Dynamic MediaCloud Services时会自动创建报表包ID。同时，报表包ID将推送到发布服务器，以便在您预览资产时可以使用“复制URL”功能。但是，这要求已设置发布服务器。如果未设置发布服务器，您仍可以发布以查看视频报表，但是，您需要返回Dynamic Media云配置并点按&#x200B;**[!UICONTROL 确定]**。
+为使视频报表正常工作，配置Dynamic MediaCloud Services时会自动创建报表包ID。同时，报表包ID将推送到发布服务器，以便在您预览资产时可以使用“复制URL”功能。 但是，此功能要求已设置发布服务器。 如果未设置发布服务器，您仍可以发布以查看视频报告。 但是，您必须返回Dynamic Media云配置并点按&#x200B;**[!UICONTROL 确定]**。
 
 要查看视频报表，请执行以下操作：
 
-1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Assets]** > **[!UICONTROL 视频报表]**。
+1. 在Experience Manager的左上角，点按Experience Manager徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产]** > **[!UICONTROL 视频报表]**。
 1. 在“视频报表”页面中，执行以下任一操作：
 
    * 在右上角附近，点按&#x200B;**[!UICONTROL 刷新视频报表]**图标。
-如果报表的结束日期是当天，您只需使用“刷新”。这可确保您查看自上次运行报表以来发生的视频跟踪。
+仅当报表的结束日期是当天时，才使用“刷新”。 此功能可确保您查看自上次运行报告以来发生的视频跟踪。
 
    * 在右上角附近，点按&#x200B;**[!UICONTROL 日期选取器]**图标。
 指定您希望视频数据的开始日期和结束日期范围，然后点按**[!UICONTROL 运行报表]**。
@@ -1058,7 +1058,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 >[!NOTE]
 您使用的视频播放器必须支持字幕的显示。
 
-Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）格式。 此转换意味着您可以将JSON文本作为隐藏但完整的视频记录嵌入网页。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
+Dynamic Media可以将题注文件转换为JSON(JavaScript™对象表示法)格式。 此转换意味着您可以将JSON文本作为隐藏但完整的视频记录嵌入网页。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
 
 有关在URL中使用JSON函数的详细信息，请参阅[服务静态（非图像）内容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
@@ -1066,7 +1066,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
 1. 使用第三方应用程序或服务创建您的视频字幕/子标题文件。
 
-   确保您创建的文件符合WebVTT（Web视频文本轨道）标准。 字幕文件扩展名为.vtt。 您可以了解有关WebVTT字幕标准的更多信息。
+   确保您创建的文件符合WebVTT（Web视频文本轨道）标准。 字幕文件扩展名为.VTT。 您可以了解有关WebVTT字幕标准的更多信息。
 
    请参阅[WebVTT:Web视频文本轨道格式](https://dev.w3.org/html5/webvtt/)。
 
@@ -1078,14 +1078,14 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
    在该工具中，在&#x200B;**[!UICONTROL 输入视频文件]**&#x200B;的URL字段中，粘贴视频文件复制的URL，然后单击&#x200B;**[!UICONTROL 加载]**。 请参阅[获取资产的 URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)，以获取视频文件的 URL，然后您可以将该 URL 粘贴到&#x200B;**[!UICONTROL 输入视频文件的 URL 字段]**。随后，Internet Explorer、Chrome 或 Safari 可以本机播放视频。
 
-   现在，请按照该站点的屏幕说明创作并保存您的WebVTT文件。 完成后，复制题注文件内容并将其粘贴到纯文本编辑器中，并以.vtt文件扩展名保存它。
+   现在，请按照该站点的屏幕说明创作并保存您的WebVTT文件。 完成后，复制题注文件内容并将其粘贴到纯文本编辑器中，并以.VTT文件扩展名保存它。
 
    >[!NOTE]
-   要全局支持多语言视频字幕，请注意，WebVTT标准要求您为要支持的每种语言创建单独的.vtt文件和调用。
+   为全局支持多语言视频字幕，WebVTT标准要求您创建单独的.vtt文件，并为要支持的每种语言调用。
 
-   通常，您希望将题注VTT文件命名为与视频文件同名，并在其后面附加语言区域设置，如 — EN、-FR或 — DE等。 这样，它可以帮助您使用现有的Web内容管理系统自动生成视频URL。
+   通常，您希望将字幕VTT文件命名为与视频文件相同的名称，并附加语言区域设置，如 — EN、-FR或 — DE。 这样，它可以帮助您使用现有的Web内容管理系统自动生成视频URL。
 
-1. 在AEM中，将您的WebVTT题注文件上传到DAM。
+1. 在Experience Manager中，将您的WebVTT题注文件上传到DAM。
 1. 导航到要与上传的题注文件关联的&#x200B;*已发布*&#x200B;视频资产。
 
    请注意，只有在首次&#x200B;*发布*&#x200B;资产&#x200B;*后*，才可复制 URL。
@@ -1098,24 +1098,24 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      请注意题注路径末尾的`,1`。 紧随路径中.vtt文件扩展名的后面，您可以选择分别设置为`,1`或`,0`，以启用（打开）或禁用（关闭）视频播放器栏上的隐藏字幕按钮。
+      请注意题注路径末尾的`,1`。 紧随路径中.VTT文件扩展名的后面，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏字幕按钮，方法是分别设置为`,1`或`,0`。
 
-   * 要获得嵌入式视频查看器体验，请点按&#x200B;**[!UICONTROL 嵌入代码]**。 在“嵌入代码”对话框中，选择嵌入代码并将其复制到剪贴板，然后将代码粘贴到简单的文本编辑器中。 在复制的嵌入代码后附加以下语法：
+   * 要获得嵌入式视频查看器体验，请点按&#x200B;**[!UICONTROL 嵌入代码]**。 在“嵌入代码”对话框中，选择嵌入代码并将其复制到剪贴板，然后将该代码粘贴到简单的文本编辑器中。 在复制的嵌入代码后附加以下语法：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      请注意题注路径末尾的`,1`。 紧随路径中.vtt文件扩展名的后面，您可以选择分别设置为`,1`或`,0`，以启用（打开）或禁用（关闭）视频播放器栏上的隐藏字幕按钮。
+      请注意题注路径末尾的`,1`。 紧随路径中.VTT文件扩展名的后面，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏字幕按钮，方法是分别设置为`,1`或`,0`。
 
 ## 将章节标记添加到视频{#adding-chapter-markers-to-video}
 
-您可以通过向单个视频或自适应视频集添加章节标记，使长形视频更易于观看和导航。 当用户播放视频时，他们可以单击视频时间轴上的章节标记（也称为视频浏览条）以轻松导航到其兴趣点，或立即跳转到新内容、演示、教程等。
+您可以通过向单个视频或自适应视频集添加章节标记，使长形视频更易于观看和导航。 用户播放视频时，可以单击视频时间轴上的章节标记（也称为视频浏览条）。 他们可以轻松导航到自己感兴趣的点，或立即跳到新内容、演示和教程。
 
 >[!NOTE]
 使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器确实支持章节标记，但使用第三方视频播放器可能不支持。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-您创建视频的章节列表的方式与创建字幕的方式非常相似。 即，创建一个WebVTT文件。 但是，请注意，此文件必须与您可能也在使用的任何WebVTT题注文件分开；不能将字幕和章节合并到一个WebVTT文件中。
+您创建视频的章节列表的方式与创建字幕的方式非常相似。 即，创建一个WebVTT文件。 但是，请注意，此文件必须与任何WebVTT题注文件分开。 不能将字幕和章节合并到一个WebVTT文件中。
 
 您可以将以下示例用作创建具有章节导航的WebVTT文件所使用格式的示例：
 
@@ -1137,18 +1137,18 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-在上例中，`Chapter 1`是提示标识符，是可选的。 `00:00:000 --> 01:04:364`的提示时间以`00:00:000`格式指定章节的开始时间和结束时间。 最后三位是毫秒，如果首选，可保留为`000`。 `The bicycle store behind it all`的章节标题是本章内容的实际描述。 当用户将鼠标指针悬停在视频时间轴中的可视提示点上时，提示标识符、开始提示时间和章节标题都会显示在视频播放器的弹出窗口中。
+在上例中，`Chapter 1`是提示标识符，是可选的。 `00:00:000 --> 01:04:364`的提示时间以`00:00:000`格式指定章节的开始时间和结束时间。 最后三位是毫秒，如果首选，可保留为`000`。 `The bicycle store behind it all`的章节标题是本章内容的实际描述。 当用户将鼠标指针悬停在时间轴中的可视提示点上时，提示标识符、开始提示时间和章节标题都会显示在视频播放器的弹出窗口中。
 
-由于您使用的是HTML5视频查看器，请确保您创建的章节文件符合WebVTT（Web视频文本轨道）标准。 章节文件扩展名为.vtt。 您可以了解有关WebVTT字幕标准的更多信息。
+由于您使用的是HTML5视频查看器，请确保您创建的章节文件符合WebVTT（Web视频文本轨道）标准。 章节文件扩展名为.VTT。 您可以了解有关WebVTT字幕标准的更多信息。
 
 请参阅[WebVTT:Web视频文本轨道格式](https://dev.w3.org/html5/webvtt/)
 
 **要向视频添加章节标记，请执行以下操作：**
 
-1. 以UTF8编码保存.vtt文件，以避免章节标题文本中的字符再现问题。
+1. 以UTF8编码保存.VTT文件，以避免章节标题文本中的字符再现问题。
 
    通常，您希望将章节VTT文件命名为与视频文件同名，并在其后添加章节。 这样，它可以帮助您使用现有的Web内容管理系统自动生成视频URL。
-1. 在AEM中，上传您的WebVTT章节文件。
+1. 在Experience Manager中，上传您的WebVTT章节文件。
 
    请参阅[上传资产](/help/assets/manage-digital-assets.md#uploading-assets)。
 
@@ -1176,7 +1176,7 @@ Cost-efficient access to rapidly evolving technology.
        <li>从下拉菜单中，单击或点按<strong>查看器</strong>。</li>
        <li>在左边栏中，点按或单击视频查看器预设名称。 预览将在单独的页面中打开。</li>
        <li>在左边栏的底部，单击<strong>嵌入</strong>。</li>
-       <li>在“嵌入代码”对话框中，选择整个代码并将其复制到剪贴板，然后将其粘贴到简单文本编辑器中。</li>
+       <li>在“嵌入代码”对话框中，选择整个代码并将其复制到剪贴板，然后将其粘贴到简单的文本编辑器中。</li>
        <li>在视频的嵌入代码后面附加以下语法，以将其与复制的URL关联到您的章节文件：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
        </ol> </td>
       </tr>
@@ -1189,7 +1189,7 @@ Cost-efficient access to rapidly evolving technology.
 
 A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to click on the video.
 
-All videos in AEM must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to AEM, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
 Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
 
@@ -1233,7 +1233,7 @@ The ability to customize a video thumbnail is only available after you have appl
 
 ## About video thumbnails in Dynamic Media Hybrid mode{#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-You can choose from one of ten thumbnail images automatically generated by Dynamic Media to add to your video. The video player displays your selected thumbnail when a video asset is used with the Dynamic Media component in the authoring environment of AEM Sites, AEM Mobile, or AEM Screens. The thumbnail serves as a static picture that best represents the contents of your entire video and further encourages users to click the Play button.
+You can choose from one of ten thumbnail images automatically generated by Dynamic Media to add to your video. The video player displays your selected thumbnail when a video asset is used with the Dynamic Media component in the authoring environment of Experience Manager Sites, Experience Manager Mobile, or Experience Manager Screens. The thumbnail serves as a static picture that best represents the contents of your entire video and further encourages users to click the Play button.
 
 Based on the total time of the video, Dynamic Media captures ten (default) thumbnail images at 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81%, and 91% into the video. The ten thumbnails persist meaning that if you decide to choose a different thumbnail later on, you do not need to regenerate the series. You preview the ten thumbnail images and then select the one you want to use with your video. If you want to change to default you can use CRXDE Lite to configure the time interval that thumbnail images are generated. For example, if you only wanted to generate a series of four evenly spaced thumbnail images from your video, you can configure the interval time at 24%, 49%, 74%, and 99%.
 
@@ -1278,7 +1278,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 **To configure the default time interval that video thumbnails are generated,**
 
-1. In AEM, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite]**.
 
 1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
@@ -1292,7 +1292,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
     * Tap the up arrow icon and the down arrow icon to reorder the interval values.
 
 1. Tap **[!UICONTROL OK]** to return to the Properties tab.
-1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to AEM.
+1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
 
    See [Adding a video thumbnail.](#adding-a-video-thumbnail)
 
@@ -1311,7 +1311,7 @@ T**o add a custom video thumbnail**,
 1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
 1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Upload New Thumbnail]**.
-1. Navigate to a thumbnail image you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into AEM. Following the upload, be sure you publish the image.
+1. Navigate to a thumbnail image you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
 1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
