@@ -1,10 +1,12 @@
 ---
 title: 配置 Live Copy 同步
 description: 了解可用的功能强大的Live Copy同步选项，以及如何根据项目的需要配置和自定义它们。
+feature: 多站点管理器
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 30%
 
 ---
