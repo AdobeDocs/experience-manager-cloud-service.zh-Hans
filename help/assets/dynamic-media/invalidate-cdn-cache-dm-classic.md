@@ -1,10 +1,12 @@
 ---
 title: 通过Dynamic Media Classic使CDN缓存失效
-description: 使您的CDN(内容投放网络)缓存内容失效后，您可以快速更新由Dynamic Media交付的资源，而不是等待缓存过期。
+description: “了解如何使您的CDN(内容投放网络)缓存内容失效，以便您快速更新由Dynamic Media交付的资源，而不是等待缓存过期。”
+feature: 资产管理，Dynamic Media Classic
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '690'
 ht-degree: 14%
 
 ---
