@@ -3,11 +3,14 @@ sub-product: AEM as a Cloud Service 的安全性
 user-guide-title: AEM as a Cloud Service 的安全性
 breadcrumb-title: 安全指南
 user-guide-description: 了解有关 Experience Manager as a Cloud Service 的重要安全主题。
+feature-set: Experience Manager Sites
+feature: 配置
+role: 管理员
 translation-type: tm+mt
-source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 70%
+source-wordcount: '64'
+ht-degree: 71%
 
 ---
 
