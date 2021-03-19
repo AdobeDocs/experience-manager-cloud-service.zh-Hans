@@ -1,10 +1,12 @@
 ---
 title: MSM问题和常见问题解答疑难解答
 description: 了解如何解决最常见的MSM相关问题，并获得最常见的MSM相关问题的答案。
+feature: 多站点管理器
+role: 管理员
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
