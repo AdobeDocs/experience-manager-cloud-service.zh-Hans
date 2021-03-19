@@ -1,10 +1,12 @@
 ---
 title: 交互式视频
 description: 了解如何在Dynamic Media中使用交互式视频和购物视频。
+feature: 交互式视频
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '6062'
+source-wordcount: '6066'
 ht-degree: 20%
 
 ---
@@ -223,7 +225,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 您可以选择创建自己的自定义交互式视频查看器预设。 您可以确定视频播放器的样式、交互式缩略图以及显示在视频末尾的缩略图网格视图等。
 
-交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，这样您就可以在发布前测试其交互性。
+交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，以便您在发布前测试其交互性。
 
 保存查看器预设后，“查看器预设”页面中的查看器预设状态将自动设置为 **开**。此状态表明查看器预设在 Dynamic Media 组件中可见，预览视频时也可见。另请确保手动发布新查看器预设。
 
