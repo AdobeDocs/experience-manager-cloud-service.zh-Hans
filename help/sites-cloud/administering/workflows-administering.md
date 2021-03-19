@@ -1,22 +1,24 @@
 ---
 title: 管理工作流实例
 description: 了解如何管理工作流实例
+feature: 管理
+role: 管理员
 translation-type: tm+mt
-source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 0%
+source-wordcount: '936'
+ht-degree: 1%
 
 ---
 
 
-# 管理工作流实例{#administering-workflow-instances}
+# 管理工作流实例 {#administering-workflow-instances}
 
-工作流控制台提供了多个用于管理工作流实例的工具，以确保它们按预期执行。
+“工作流”控制台提供了多个用于管理工作流实例的工具，以确保它们按预期执行。
 
-您可以使用各种控制台来管理工作流。 使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**:
+您可以使用一系列控制台来管理您的工作流。 使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**:
 
-* **型号**:管理工作流定义
+* **模型**:管理工作流定义
 * **实例**:视图和管理正在运行的工作流实例
 * **启动器**:管理工作流的启动方式
 * **存档**:视图成功完成的工作流历史记录
@@ -34,21 +36,21 @@ ht-degree: 0%
 ## 搜索工作流实例{#search-workflow-instances}
 
 1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
-1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例的列表。 在顶部边栏的左角，选择&#x200B;**过滤器**。 或者，您也可以使用按键alt+1。 此时将显示以下对话框：
+1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例的列表。 在顶部边栏的左角，选择&#x200B;**过滤器**。 或者，您也可以使用按键alt+1。 将显示以下对话框：
 
    ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
 
-1. 在筛选器对话框中，选择工作流搜索条件。 您可以根据以下输入进行搜索：
+1. 在“筛选器”对话框中，选择工作流搜索条件。 您可以根据以下输入进行搜索：
 
    * 有效负荷路径：选择特定路径
    * 工作流模型：选择工作流模型
-   * 被分派人：选择工作流受分派人
+   * 被分派人：选择工作流被分派人
    * 类型：任务、工作流项或工作流失败
    * 任务状态：活动、完成或终止
-   * 我在哪里：所有者和被分派人，仅限所有者，仅限被分派人
+   * 我的位置：OWNER AND Assignee，仅限Owner，仅限Assignee
    * 开始日期：开始日期在指定日期之前或之后
    * 结束日期：指定日期之前或之后的结束日期
-   * 到期日期：到期日期在指定日期之前或之后
+   * 到期日：指定日期之前或之后的到期日
    * 更新日期：在指定日期之前或之后更新的日期
 
 ## 挂起、恢复和终止工作流实例{#suspending-resuming-and-terminating-a-workflow-instance}
@@ -58,11 +60,11 @@ ht-degree: 0%
 
    ![wf-96-1](/help/sites-cloud/administering/assets/wf-96-1.png)
 
-1. 选择特定项目，然后根据需要使用&#x200B;**终止**、**暂停**&#x200B;或&#x200B;**恢复**;确认，和／或更多详细信息：
+1. 选择特定项目，然后根据需要使用&#x200B;**Terminate**、**Suspend**&#x200B;或&#x200B;**Resume**;确认，和/或更多详细信息：
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
-## 查看归档的工作流{#viewing-archived-workflows}
+## 查看存档的工作流{#viewing-archived-workflows}
 
 1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
 
@@ -71,7 +73,7 @@ ht-degree: 0%
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
-   >中止状态被视为由于用户操作而发生的成功终止；例如：
+   >中止状态被视为成功终止，因为它是由用户操作造成的；例如：
    >
    >* 使用&#x200B;**终止**&#x200B;操作
    >* 当受工作流约束的页面被（强制）删除时，工作流将终止
@@ -83,20 +85,20 @@ ht-degree: 0%
 
 ## 修复工作流实例失败{#fixing-workflow-instance-failures}
 
-当工作流失败时，AEM会提供&#x200B;**故障**&#x200B;控制台，以便您能够在处理原始原因后调查并采取适当的操作：
+当工作流失败时，AEM会提供&#x200B;**Failures**&#x200B;控制台，以便您在处理原始原因后调查并采取适当操作：
 
 * **失败详**
 细信息打开一个窗口以显示 
-**故障消息**、 **** 继续和 **故障堆栈**。
+**失败消息**、 **** 继 **续和失败堆栈**。
 
-* **打开历**
-史记录显示工作流历史记录的详细信息。
+* **打开**
+历史记录显示工作流历史记录的详细信息。
 
-* **重试** 步骤再次执行脚本步骤组件实例。在修复了原始错误的原因后，使用“重试步骤”命令。 例如，在修复了执行进程步骤的脚本中的错误后，重试该步骤。
-* **终** 止如果错误导致工作流无法协调的情况，则终止工作流。例如，工作流可以依赖于环境条件，如存储库中对工作流实例不再有效的信息。
-* **终止和重** 试与终 **** 止类似，只是新工作流实例是使用原始有效负荷、标题和说明启动的。
+* **重试** 步骤再次执行脚本步骤组件实例。在修复了原始错误的原因后，使用“重试步骤”命令。 例如，在修复了执行“进程步骤”的脚本中的错误后，请重试该步骤。
+* **终** 止如果错误导致工作流无法协调的情况，则终止工作流。例如，工作流可以依赖于环境条件，例如存储库中对工作流实例不再有效的信息。
+* **终止和重** 试类似 **** 于终止，只是使用原始有效负荷、标题和说明启动了新的工作流实例。
 
-要调查失败，然后在之后恢复或终止工作流，请执行以下步骤：
+要调查失败，然后在之后继续或终止工作流，请执行以下步骤：
 
 1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
 
@@ -105,20 +107,20 @@ ht-degree: 0%
 
    ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
 
-## 定期清除工作流实例{#regular-purging-of-workflow-instances}
+## 工作流实例的常规清除{#regular-purging-of-workflow-instances}
 
-最小化工作流实例数可提高工作流引擎的性能，因此您可以定期从存储库中清除已完成或正在运行的工作流实例。
+最小化工作流实例数会提高工作流引擎的性能，因此您可以定期从存储库中清除已完成或正在运行的工作流实例。
 
 配置&#x200B;**AdobeGranite工作流清除配置**&#x200B;以根据工作流实例的年龄和状态清除工作流实例。 您还可以清除所有模型或特定模型的工作流实例。
 
-您还可以创建服务的多个配置来清除满足不同标准的工作流实例。 例如，创建一个配置，当特定工作流模型的实例运行时间比预期时间长时清除这些实例。 创建另一个配置，该配置在特定天数后清除所有已完成的工作流，以最大限度地减小存储库的大小。
+您还可以创建服务的多个配置来清除满足不同标准的工作流实例。 例如，创建一个配置，该配置在特定工作流模型的实例运行时间比预期时间长得多时清除这些实例。 创建另一个配置，该配置会在特定天数后清除所有已完成的工作流，以最大限度地减小存储库的大小。
 
-要配置服务，可以配置OSGi配置文件，请参阅[OSGi配置文件](/help/implementing/deploying/configuring-osgi.md)。 下表说明了您对这两种方法都需要的属性。
+要配置服务，可以配置OSGi配置文件，请参阅[OSGi配置文件](/help/implementing/deploying/configuring-osgi.md)。 下表描述了您对任一方法所需的属性。
 
 >[!NOTE]
 >要将配置添加到存储库，服务PID为：
 >`com.adobe.granite.workflow.purge.Scheduler`
->由于服务是工厂服务，`sling:OsgiConfig`节点的名称需要标识符后缀，例如：
+>由于服务是工厂服务，因此`sling:OsgiConfig`节点的名称需要标识符后缀，例如：
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -148,7 +150,7 @@ ht-degree: 0%
    <td><p>要清除的工作流模型的ID。 ID是模型节点的路径，例如：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br />指定不值清除所有工作流模型的实例。</p> <p>要指定多个模型，请单击Web控制台中的+按钮。 </p> </td>
   </tr>
   <tr>
-   <td>工作流年龄</td>
+   <td>工作流时间</td>
    <td>scheduledpurge.daysold</td>
    <td>要清除的工作流实例的年龄（以天为单位）。</td>
   </tr>
@@ -161,9 +163,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >要将配置添加到存储库，服务PID为：
->`com.adobe.granite.workflow.core.WorkflowSessionFactory`。
+>`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | 属性名称（Web控制台） | OSGi属性名称 |
 |---|---|
-| 最大收件箱查询大小 | granite.workflow.inboxQuerySize |
+| 最大收件箱查询 | granite.workflow.inboxQuerySize |
 
