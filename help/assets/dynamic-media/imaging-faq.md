@@ -1,10 +1,12 @@
 ---
 title: 智能成像
-description: 智能图像处理应用每个用户的独特查看特性，自动提供为其体验优化的正确图像，从而提高性能和参与度。
+description: “了解智能图像处理如何应用每个用户的独特查看特性，自动提供为其体验优化的正确图像，从而提高性能和参与度。”
+feature: 资产管理，演绎版
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1863'
 ht-degree: 2%
 
 ---
