@@ -1,10 +1,12 @@
 ---
 title: 确定要翻译的内容
 description: 了解翻译规则如何识别需要翻译的内容。
+feature: 语言复制
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
