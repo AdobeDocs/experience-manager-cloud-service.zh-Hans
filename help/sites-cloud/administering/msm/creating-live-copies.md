@@ -1,10 +1,12 @@
 ---
 title: 创建和同步Live Copy
 description: 了解如何创建和同步Live Copy，以在整个站点中重复使用您的内容。
+feature: 多站点管理器
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4188'
+source-wordcount: '4192'
 ht-degree: 1%
 
 ---
@@ -482,7 +484,7 @@ Blueprint页面（在Blueprint配置中引用）为您提供了Live Copy页面�
 
 ### 更改Live Copy页面{#changing-the-order-of-components-on-a-live-copy-page}上的组件顺序
 
-如果Live Copy包含段落系统中的组件，则该段落系统的继承将遵循以下规则：
+如果Live Copy包含段落系统中的组件，则该段落系统的继承遵循以下规则：
 
 * 即使已建立继承，也可以修改继承段落系统中组件的顺序。
 * 转出后，将从Blueprint中恢复组件的顺序。 如果在转出前已将新组件添加到Live Copy，则将对它们与添加它们的组件一起重新排序。
