@@ -3,10 +3,13 @@ sub-product: AEM as a Cloud Service 的连接器
 user-guide-title: AEM as a Cloud Service 的连接器
 breadcrumb-title: Connectors 指南
 user-guide-description: 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。
+feature-set: Experience Manager
+feature: Developer Tools
+role: 开发人员
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '52'
 ht-degree: 100%
 
 ---
