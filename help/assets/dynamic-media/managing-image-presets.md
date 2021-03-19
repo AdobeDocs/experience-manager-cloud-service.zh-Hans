@@ -1,10 +1,12 @@
 ---
 title: 管理图像预设
-description: 了解图像预设，了解如何创建、修改和管理图像预设。
+description: “了解图像预设以及如何创建、修改和管理图像预设。”
+feature: 图像预设、查看器、演绎版
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3646'
 ht-degree: 27%
 
 ---
