@@ -2,9 +2,9 @@
 title: 了解如何将GraphQL与AEM结合使用 — 示例内容和查询
 description: 了解如何将GraphQL与AEM结合使用 — 示例内容和查询。
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1742'
 ht-degree: 5%
 
 ---
@@ -67,12 +67,14 @@ ht-degree: 5%
          * 请参阅[示例查询 — 具有命名变量的所有城市](#sample-cities-named-variation)
    * 操作：
 
-      * `_operator` :应用特定的经营者； `EQUALS`,  `EQUALS_NOT`, `GREATER_EQUAL`  `LOWER`,  `CONTAINS`
+      * `_operator` :应用特定的经营者； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
          * 请参阅[示例查询 — 所有姓名不为“Jobs”](#sample-all-persons-not-jobs)的人员
+         * 请参阅[示例查询 — 其`_path`以特定前缀](#sample-wknd-all-adventures-cycling-path-filter)开头的所有冒险
       * `_apply` :（二）适用特定条件；例如，   `AT_LEAST_ONCE`
          * 请参阅[示例查询 — 对包含项目的数组进行筛选，该项目必须至少发生一次](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` :在查询时忽略大小写
          * 请参阅[示例查询 — 名称中包含SAN的所有城市，而不考虑大小写](#sample-all-cities-san-ignore-case)
+
 
 
 
@@ -653,6 +655,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### 示例查询 — 其`_path`以特定前缀{#sample-wknd-all-adventures-cycling-path-filter}开头的所有冒险
+
+其`_path`以特定前缀(`/content/dam/wknd/en/adventures/cycling`)开头的所有`adventures`。
+
+**示例查询**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**示例结果**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
