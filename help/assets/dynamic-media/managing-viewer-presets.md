@@ -1,10 +1,12 @@
 ---
 title: 管理查看器预设
-description: 如何在Dynamic Media中创建和管理查看器预设。
+description: 了解如何在Dynamic Media中创建和管理查看器预设。
+feature: 查看器预设，查看器
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '4239'
+source-wordcount: '4245'
 ht-degree: 22%
 
 ---
