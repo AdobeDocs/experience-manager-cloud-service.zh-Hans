@@ -4,17 +4,12 @@ description: 这是AEMaaCS文档页面所需的元数据
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hans
 index: y
 type: 文档
-solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
-getting-started-title: 入门
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
-tutorials-title: 教程
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
+solution: Experience Manager
 translation-type: tm+mt
-source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 19%
+source-wordcount: '92'
+ht-degree: 7%
 
 ---
 
