@@ -4,9 +4,9 @@ description: AEM Sites允许内容作者通过简单的配置而非编码向任�
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
+source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,6 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 并非所有PWA功能都适用于AEM Sites。 这些是一些显着的局限性。
 
-* 用户必须至少浏览一次页面，才能将其脱机缓存。
 * 如果用户未使用应用程序，则不会自动同步或更新页面。
 
 Adobe在您实施PWA时还会提出以下建议。
