@@ -1,10 +1,12 @@
 ---
 title: MSM最佳实践
 description: 了解由Adobe工程和咨询团队编译的最佳实践，帮助您快速入门和使用AEM多站点管理器。
+feature: 多站点管理器
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
