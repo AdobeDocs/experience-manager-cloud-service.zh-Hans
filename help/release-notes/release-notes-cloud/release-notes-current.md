@@ -2,9 +2,9 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
+source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1793'
 ht-degree: 2%
 
 ---
@@ -163,6 +163,15 @@ AEM中Cloud Manager作为Cloud Service 2021.2.0的发布日期为2021年2月11�
 
 ## 内容传输工具 {#content-transfer-tool}
 
+### 发布日期 {#release-date-ctt}
+
+内容传输工具v1.3.4的发布日期为2021年3月19日。
+
+### 错误修复 {#bug-fixes-ctt}
+
+* CTT正在跳过名称相同但名称带有连字符的文件夹中的内容。 此问题已解决。
+
+
 ### 发布日期 {#release-date-ctt-march}
 
 内容传输工具v1.3.0的发布日期为2021年3月04日。
@@ -177,15 +186,15 @@ AEM中Cloud Manager作为Cloud Service 2021.2.0的发布日期为2021年2月11�
 * 从特定路径迁移内容时，CTT正在调用不相关的资源。 已修复
 
 
-### 发布日期 {#release-date-ctt}
+### 发布日期 {#release-date-ctt-feb}
 
 内容传输工具v1.2.4的发布日期为2021年2月10日。
 
-### 错误修复 {#bug-fixes-ctt}
+### 错误修复 {#bug-fixes-ctt-feb}
 
 * 映射多个用户时，某些用户的IMS ID映射不正确。 此问题已解决。
 
-### 发布日期 {#release-date-ctt-feb}
+### 发布日期 {#release-date-ctt-feb01}
 
 内容传输工具v1.2.2的发布日期为2021年2月01日。
 
