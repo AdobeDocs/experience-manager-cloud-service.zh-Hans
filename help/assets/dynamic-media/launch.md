@@ -1,10 +1,12 @@
 ---
 title: 将Dynamic Media查看器与Adobe Analytics和Experience Platform Launch集成
-description: 针对Platform launch和Dynamic Media Viewers 5.13的Dynamic Media查看器扩展使Adobe Analytics和Platform launch的客户能够在其Platform launch配置中使用特定于查看器的事件和数据。
+description: 了解Dynamic Media查看器扩展的Platform launch和Dynamic Media查看器5.13。它使Adobe Analytics和Platform launch的客户能够在其Platform launch配置中使用特定于查看器的事件和数据。
+feature: 资产报表
+topic: “数据工程师、管理员、业务从业者”
 translation-type: tm+mt
-source-git-commit: 0f20bf7de87fb3635f77a45f532c3ffe2f361adf
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '6658'
+source-wordcount: '6668'
 ht-degree: 9%
 
 ---
