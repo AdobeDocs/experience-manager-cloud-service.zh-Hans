@@ -1,11 +1,12 @@
 ---
 title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1534'
+ht-degree: 1%
 
 ---
 
