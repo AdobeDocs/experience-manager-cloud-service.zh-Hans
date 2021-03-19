@@ -1,8 +1,9 @@
 ---
 title: 配置 Dynamic Media 云服务
-description: 有关如何将Adobe Experience Manager中的Dynamic Media配置为Cloud Service的信息。
+description: 了解如何将Adobe Experience Manager中的Dynamic Media配置为Cloud Service。
+topic: 管理员
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
 source-wordcount: '3883'
 ht-degree: 5%
