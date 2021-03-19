@@ -1,11 +1,13 @@
 ---
 title: 全景图像
-description: 了解如何在Dynamic Media处理全景图像。
+description: 了解如何在Dynamic Media中处理全景图像。
+feature: 全景图像
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 4%
+source-wordcount: '151'
+ht-degree: 5%
 
 ---
 
@@ -16,17 +18,17 @@ ht-degree: 4%
 
 另请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-![panoramic-image2](assets/panoramic-image2.png)
+![全景图2](assets/panoramic-image2.png)
 
-## 上传资产以用于全景图像查看器{#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## 上传要与全景图像查看器{#uploading-assets-for-use-with-the-panoramic-image-viewer}一起使用的资产
 
-要使上传的资产成为您要与全景图像查看器一起使用的球面全景图像，该资产必须具有以下一种或两种：
+要使上传的资源成为您要与全景图像查看器一起使用的球面全景图像，该资源必须具有以下一项或两项：
 
 * 宽高比为2。
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 使用关键字`equirectangular`、`spherical`和`panorama`、`spherical`和`panoramic`进行标记。 请参阅[使用标记](/help/sites-cloud/authoring/features/tags.md)。
+* 使用关键字`equirectangular`、`spherical`和`panorama`或`spherical`和`panoramic`标记。 请参阅[使用标记](/help/sites-cloud/authoring/features/tags.md)。
 
 长宽比和关键字条件都适用于资产详细信息页面和`Panoramic Media` WCM组件的全景资产。
 
