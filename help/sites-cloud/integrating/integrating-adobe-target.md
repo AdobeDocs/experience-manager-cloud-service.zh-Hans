@@ -2,9 +2,9 @@
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 * 使用触屏UI在AEM中创建目标配置作为Cloud Service（需要IMS配置）。
 * 在[Adobe启动](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)中添加并配置Adobe Target作为扩展。
 
-Adobe启动是管理AEM页面（JS库/标记）中Analytics和目标的客户端属性所必需的。 尽管如此，“体验定位”需要与Launch集成。 对于导出到目标的体验片段，您只需使用Adobe Target配置和IMS。
+Adobe启动是管理AEM页面（JS库/标记）中Analytics和目标的客户端属性所必需的。 尽管如此，“体验定位”需要与Launch集成。 对于导出到目标的体验片段，您只需要Adobe Target配置和IMS。
 
 >[!NOTE]
 >
@@ -46,11 +46,11 @@ Adobe启动是管理AEM页面（JS库/标记）中Analytics和目标的客户端
 
 在这两种情况下，请注意：
 
-* 默认情况下，客户端代码（如果是先添加的）也将自动复制到租户ID字段中。
+* 默认情况下，客户端代码（如果是先添加的）也会自动复制到租户ID字段中。
 * 您可以选择更改默认的租户ID集。
 * 因此，对目标的后端调用将基于租户ID，而对目标的客户端调用将基于客户端代码。
 
-如前所述，AEM作为Cloud Service最常使用第一种情况。 无论采用哪种方式，请根据您的要求确保&#x200B;**和**&#x200B;字段都包含正确的信息。
+如前所述，AEM作为Cloud Service最常使用第一种情况。 无论采用哪种方式，请确保&#x200B;**和**&#x200B;字段都包含正确的信息，具体取决于您的要求。
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Adobe启动是管理AEM页面（JS库/标记）中Analytics和目标的客户端
 
 ## 使用Adobe Launch {#integrate-target-launch}在AEM站点上集成Adobe Target
 
-AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Target扩展添加到Experience Platform Launch，您可以在AEM网页上使用Adobe Target的功能。目标库仅将使用Launch渲染。
+AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Target扩展添加到Experience Platform Launch，您可以在AEM网页上使用Adobe Target的功能。 目标库只能通过使用Launch呈现。
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 ### 创建启动项属性{#create-property}
 
-属性是一个容器，将填充扩展、规则和数据元素。
+属性是一个容器，其中填充了扩展、规则和数据元素。
 
 1. 选择&#x200B;**新建属性**&#x200B;按钮。
 2. 为您的属性提供名称。
-3. 在域中输入要加载启动库的IP/主机。
+3. 作为域，输入要加载启动库的IP/主机。
 4. 选择&#x200B;**保存**按钮。
    ![LaunchpropertyLaunchproperty](assets/properties_newproperty1.png "")
 
 ### 添加所需的扩展{#add-extension}
 
-**扩** 展管理核心库设置的容器。Adobe Target扩展通过使用目标 JavaScript SDK用于现代Web、at.js，支持客户端实现。 您需要添加&#x200B;**Adobe Target**&#x200B;和&#x200B;**Adobe ContextHub**&#x200B;扩展。
+**扩** 展管理核心库设置的容器。Adobe Target扩展通过使用目标 JavaScript SDK用于现代Web、at.js，支持客户端实现。 必须添加&#x200B;**Adobe Target**&#x200B;和&#x200B;**Adobe ContextHub**&#x200B;扩展。
 
 1. 选择“扩展目录”选项，并在筛选器中搜索目标。
 2. 选择&#x200B;**Adobe Target** at.js并单击“Install（安装）”选项。
@@ -124,7 +124,7 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 ### 创建页面规则{#page-rule}
 
-在&#x200B;**规则**&#x200B;中，我们定义并排序一系列将在现场执行的操作，以实现目标。
+在&#x200B;**规则**&#x200B;中，我们定义并排序一系列在现场执行的操作，以实现定位。
 
 1. 添加一组操作，如屏幕截图所示。
    ![操](assets/rules1.png "作")
@@ -139,8 +139,8 @@ AEM优惠与Experience Platform Launch的开箱即用集成。 通过将Adobe Ta
 
 | **更改** | **经典UI配置** | **触屏UI配置** | **后果** |
 |---|---|---|---|
-| 目标配置的位置。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/目标 | /etc/cloudservices/testandtarget下存在以前的多个配置，但现在租户下将存在单个配置。 |
+| 目标配置的位置。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/目标 | 以前在/etc/cloudservices/testandtarget下存在多个配置，但现在在租户下存在单个配置。 |
 
 >[!NOTE]
 >
->现有客户仍支持旧版配置（没有编辑或创建新配置的选项）。 旧版配置是客户使用VSTS上传的内容包的一部分。
+>现有客户仍支持旧版配置（没有编辑或创建新配置的选项）。 旧版配置是使用VSTS的客户上传的内容包的一部分。
