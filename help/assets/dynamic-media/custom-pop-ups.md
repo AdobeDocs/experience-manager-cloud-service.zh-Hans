@@ -1,10 +1,11 @@
 ---
 title: 使用快速视图创建自定义弹出窗口
-description: 默认的“快速视图”用于电子商务体验，弹出窗口显示产品信息以推动购买。 您可以触发要在弹出窗口中显示的自定义内容。
+description: “了解默认快速视图在电子商务体验中的使用方式，在电子商务体验中，弹出窗口会显示产品信息以推动购买。 您可以触发要在弹出窗口中显示的自定义内容。”
+topic: “开发人员、管理员、业务从业者”
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1032'
 ht-degree: 2%
 
 ---
