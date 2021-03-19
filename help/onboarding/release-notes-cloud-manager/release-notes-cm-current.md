@@ -1,11 +1,12 @@
 ---
 title: AEM中Cloud Manager作为Cloud Service版本2021.3.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2021.3.0的发行说明
+feature: 发行信息
 translation-type: tm+mt
-source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 1%
+source-wordcount: '456'
+ht-degree: 2%
 
 ---
 
