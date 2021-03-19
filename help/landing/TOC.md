@@ -1,11 +1,14 @@
 ---
 sub-product: Adobe Experience Manager as a Cloud Service 帮助
 user-guide-title: Adobe Experience Manager as a Cloud Service 帮助
+feature-set: Experience Manager
+feature: 发行信息
+role: 领导者，架构师，开发人员，数据架构师，数据工程师，管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 96%
+source-wordcount: '212'
+ht-degree: 91%
 
 ---
 
