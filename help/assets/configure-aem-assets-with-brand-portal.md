@@ -2,11 +2,13 @@
 title: 将AEM Assets配置为 [!DNL Cloud Service] 和Brand Portal
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
+feature: Brand Portal
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 9%
+source-wordcount: '2414'
+ht-degree: 10%
 
 ---
 
@@ -257,39 +259,39 @@ IMS 配置包括两个步骤：
 
    >[!NOTE]
    >
-   >确保您从右上角的下拉（组织）列表中选择了正确的IMS组织（品牌门户租户）。
+   >确保您从右上角的下拉（组织）列表中选择了正确的IMS组织（Brand Portal租户）。
 
-1. 单击&#x200B;**[!UICONTROL 新建项目]**。 系统会为您的组织创建一个具有系统生成的名称的空白项目。
+1. 单击&#x200B;**[!UICONTROL 新建项目]**。 系统会为您的组织创建一个具有系统生成名称的空白项目。
 
    单击&#x200B;**[!UICONTROL 编辑项目]**&#x200B;以更新&#x200B;**[!UICONTROL 项目标题]**&#x200B;和&#x200B;**[!UICONTROL 说明]**，然后单击&#x200B;**[!UICONTROL 保存]**。
 
 1. 在&#x200B;**[!UICONTROL 项目概述]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL 添加API]**。
 
-1. 在&#x200B;**[!UICONTROL 添加API窗口]**&#x200B;中，选择&#x200B;**[!UICONTROL AEM品牌门户]**，然后单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 添加API窗口]**&#x200B;中，选择&#x200B;**[!UICONTROL AEM Brand Portal]**&#x200B;并单击&#x200B;**[!UICONTROL 下一步]**。
 
    确保您有权访问AEM Brand Portal服务。
 
-1. 在&#x200B;**[!UICONTROL 配置API]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL 上传公钥]**。 然后，单击&#x200B;**[!UICONTROL 选择文件]**，并上传已在[获取公共证书](#public-certificate)部分下载的公钥（.crt文件）。
+1. 在&#x200B;**[!UICONTROL 配置API]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL 上传公钥]**。 然后，单击&#x200B;**[!UICONTROL 选择文件]**&#x200B;并上传您在[获取公共证书](#public-certificate)部分下载的公钥（.crt文件）。
 
    单击&#x200B;**[!UICONTROL 下一步]**。
 
    ![上传公钥](assets/service-account3.png)
 
-1. 验证公钥，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 验证公钥，然后单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 选择&#x200B;**[!UICONTROL Assets Brand Portal]**&#x200B;作为默认产品配置，然后单击&#x200B;**[!UICONTROL 保存配置的API]**。
+1. 选择&#x200B;**[!UICONTROL 资产品牌门户]**&#x200B;作为默认产品用户档案，然后单击&#x200B;**[!UICONTROL 保存配置的API]**。
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
    -->
 
-   ![选择产品配置](assets/service-account4.png)
+   ![选择产品用户档案](assets/service-account4.png)
 
-1. 配置API后，您将重定向到API概述页面。 在左侧导航的&#x200B;**[!UICONTROL 凭据]**&#x200B;下，单击&#x200B;**[!UICONTROL 服务帐户(JWT)]**&#x200B;选项。
+1. 配置API后，您将被重定向到API概述页。 在左侧导航下的&#x200B;**[!UICONTROL 凭据]**&#x200B;中，单击&#x200B;**[!UICONTROL 服务帐户(JWT)]**&#x200B;选项。
 
    >[!NOTE]
    >
-   >您可以查看凭据并执行生成JWT令牌、复制凭据详细信息、检索客户端机密等操作。
+   >您可以视图凭据并执行诸如生成JWT令牌、复制凭据详细信息、检索客户端机密等操作。
 
 1. 从&#x200B;**[!UICONTROL 客户端凭据]**&#x200B;选项卡中，复制&#x200B;**[!UICONTROL 客户端ID]**。
 
@@ -299,7 +301,7 @@ IMS 配置包括两个步骤：
 
 1. 导航到&#x200B;**[!UICONTROL 生成JWT]**&#x200B;选项卡并复制&#x200B;**[!UICONTROL JWT负载]**&#x200B;信息。
 
-您现在可以使用客户端ID（API密钥）、客户端密钥和JWT负载[配置AEM Assets中的IMS帐户](#create-ims-account-configuration)。
+您现在可以使用客户端ID（API密钥）、客户端机密和JWT负载[在AEM Assets中配置IMS帐户](#create-ims-account-configuration)。
 
 <!--
 1. Click **[!UICONTROL Create Integration]**.
@@ -345,15 +347,15 @@ IMS 配置包括两个步骤：
 * [获取公共证书](#public-certificate)
 * [创建服务帐户(JWT)连接](#createnewintegration)
 
-执行以下步骤来配置IMS帐户。
+请执行以下步骤来配置IMS帐户。
 
-1. 打开IMS配置并导航到&#x200B;**[!UICONTROL 帐户]**&#x200B;选项卡。 在[获取公共证书](#public-certificate)时，页面保持打开状态。
+1. 打开IMS配置并导航到&#x200B;**[!UICONTROL 帐户]**&#x200B;选项卡。 在[获取公共证书](#public-certificate)时，您保持页面打开。
 
 1. 为 IMS 帐户指定&#x200B;**[!UICONTROL 标题]**。
 
    在&#x200B;**[!UICONTROL 授权服务器]**&#x200B;字段中，指定URL:[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   在[创建服务帐户(JWT)连接](#createnewintegration)时复制的&#x200B;**[!UICONTROL API密钥]**&#x200B;字段&#x200B;**[!UICONTROL 客户端密钥]**&#x200B;和&#x200B;**[!UICONTROL 负载]**（JWT负载）中指定客户端ID。
+   在[创建服务帐户(JWT)连接](#createnewintegration)时，在&#x200B;**[!UICONTROL API密钥]**&#x200B;字段、**[!UICONTROL 客户端密钥]**&#x200B;和&#x200B;**[!UICONTROL 负载]**（JWT负载）中指定您复制的客户端ID。
 
    单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -364,7 +366,7 @@ IMS 配置包括两个步骤：
 
 1. 选择IMS帐户配置，然后单击&#x200B;**[!UICONTROL 检查运行状况]**。
 
-   在对话框中单击&#x200B;**[!UICONTROL 检查]**。 在成功配置时，将显示一条消息，说明&#x200B;*标记已成功检索*。
+   单击对话框中的&#x200B;**[!UICONTROL 选中]**。 成功配置时，将显示一条消息，提示已成功检索&#x200B;*令牌*。
 
    ![](assets/create-new-integration5.png)
 
@@ -376,19 +378,19 @@ IMS 配置包括两个步骤：
 
 ### 配置云服务 {#configure-the-cloud-service}
 
-执行以下步骤以配置Brand Portal云服务：
+请执行以下步骤来配置Brand Portal云服务：
 
 1. 登录 AEM Assets。
 
 1. 从&#x200B;**工具**&#x200B;面板，导航到&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**。
 
-1. 在“品牌门户配置”页面中，单击&#x200B;**[!UICONTROL 创建]**。
+1. 在“Brand Portal配置”页中，单击&#x200B;**[!UICONTROL 创建]**。
 
 1. 指定配置的&#x200B;**[!UICONTROL 标题]**。
 
    选择在[配置IMS帐户](#create-ims-account-configuration)时创建的IMS配置。
 
-   在&#x200B;**[!UICONTROL 服务URL]**&#x200B;字段中，指定您的品牌门户租户（组织）URL。
+   在&#x200B;**[!UICONTROL 服务URL]**&#x200B;字段中，指定您的Brand Portal租户（组织）URL。
 
    ![](assets/create-cloud-service.png)
 
@@ -396,7 +398,7 @@ IMS 配置包括两个步骤：
 
    您的AEM Assets现在已配置为[!DNL Cloud Service]实例的Brand Portal租户。
 
-您现在可以通过检查分发代理并将资源发布到Brand Portal来测试配置。
+您现在可以通过检查分发代理并将资产发布到Brand Portal来测试配置。
 
 <!--
 ### Test configuration {#test-configuration}
