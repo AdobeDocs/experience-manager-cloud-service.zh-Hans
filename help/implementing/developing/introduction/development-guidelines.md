@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2283'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ Cloud环境上的线程转储会持续收集，但此时无法以自助方式下
 
 对于本地开发，开发人员可以完全访问CRXDE Lite(`/crx/de`)和AEM Web控制台(`/system/console`)。
 
-请注意，在本地开发（使用云就绪快速启动）中，`/apps`和`/libs`可直接写入，这与那些顶级文件夹不可变的云环境不同。
+请注意，在本地开发（使用SDK）中，`/apps`和`/libs`可直接写入，这与顶级文件夹不可变的云环境不同。
 
 ### AEM as Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
