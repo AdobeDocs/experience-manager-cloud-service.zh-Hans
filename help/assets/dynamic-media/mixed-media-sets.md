@@ -1,10 +1,12 @@
 ---
 title: 混合媒体集
 description: 了解如何在Dynamic Media中使用混合媒体集。
+feature: 混合媒体集
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1469'
 ht-degree: 36%
 
 ---
