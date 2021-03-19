@@ -1,10 +1,12 @@
 ---
 title: 在网页上嵌入Dynamic Media视频或图像查看器
 description: 了解如何将Dynamic Media视频或图像资源嵌入网页。
+feature: 资产管理
+topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '376'
 ht-degree: 30%
 
 ---
