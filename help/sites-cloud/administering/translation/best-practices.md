@@ -1,10 +1,12 @@
 ---
 title: 翻译最佳实践
 description: 了解由Adobe工程和咨询团队编译的最佳实践，帮助您着手处理和运行翻译项目。
+feature: 语言复制
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
