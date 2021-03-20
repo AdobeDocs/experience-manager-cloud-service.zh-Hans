@@ -2,7 +2,7 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
+source-git-commit: 25b998014f9706da7de7b7ed6e2c8a03404d1950
 workflow-type: tm+mt
 source-wordcount: '1793'
 ht-degree: 2%
@@ -49,10 +49,6 @@ ht-degree: 2%
 * [!DNL Brand Portal]使用情况报告现在仅显示活动用户。 不活动的用户现在不显示。 活动用户是将其帐户分配给[!DNL Admin Console]中的产品用户档案的用户。 请参阅[[!DNL Brand Portal] 报告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
 
 * 在[!DNL Brand Portal]中，引入了新的下载设置，允许您在下载文件夹、集合等时为每个资产创建单独的文件夹。 请参阅[下载设置](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
-
-<!-- TBD: refine this list of features and enh. for Feb release.
-
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## [!DNL Assets] {#bug-fixes-assets}中的错误修复
 
