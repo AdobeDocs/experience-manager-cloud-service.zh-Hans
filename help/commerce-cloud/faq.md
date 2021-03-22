@@ -2,9 +2,9 @@
 title: AEM - Commerce Integration using Commerce Integration Framework常见问题解答
 description: AEM - Commerce Integration using Commerce Integration Framework常见问题解答
 translation-type: tm+mt
-source-git-commit: 903a78d98082b937128073d5edce23dc70b01a1d
+source-git-commit: ad831b2cc3657666678662eeff0eaf371ce4da49
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ I/O Runtime平台还可用于扩展或自定义商务服务。 对于此用例�
 
 ## 7.AEM支持哪些目录大小？
 
-当产品数据和目录页面被动态创建和缓存时，不存在修复大小限制。 但是，目录大小只有一个方面需要考虑。 缓存率、并发数据请求和页面创建都可能会影响可扩展性和性能。
+这取决于您需要考虑的其他几个方面。 目录数据和页面的缓存比率是多少？ 在高峰时段，您预计有多少个并发请求？ 您的商务解决方案的API有多大的可扩展性？
 
 ## 8. PIM如何融入这个框架？
 
