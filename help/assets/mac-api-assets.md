@@ -3,9 +3,9 @@ title: 资产 HTTP API
 description: 使用 [!DNL Experience Manager Assets]中的HTTP API创建、读取、更新、删除和管理数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1fa095c7c89be89ed02ebdf14dcc0a4b9f542b1
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1474'
 ht-degree: 1%
 
 ---
@@ -24,11 +24,9 @@ ht-degree: 1%
 
 API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 JSON响应是可选的，可能不可用，例如PDF文件。 依赖响应代码进行进一步的分析或操作。
 
-在[!UICONTROL 结束时间]之后，资产及其演绎版无法通过[!DNL Assets] Web界面和HTTP API使用。 如果[!UICONTROL 开机时间]在将来，或[!UICONTROL 结束时间]在过去，则API返回404错误消息。
-
 >[!NOTE]
 >
->对于AEM，与上传或更新资产或二进制文件（如演绎版）相关的所有API调用作为[!DNL Cloud Service]部署已弃用。 对于上传二进制文件，请改用[直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical)。
+>与上传或更新资产或二进制文件（如演绎版）相关的所有API调用在[!DNL Experience Manager]部署中已弃用。 [!DNL Cloud Service]对于上传二进制文件，请改用[直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical)。
 
 ## 内容片段 {#content-fragments}
 
@@ -42,7 +40,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 ### 文件夹 {#folders}
 
-文件夹类似于传统文件系统中的目录。 它们是其他文件夹或声明的容器。 文件夹具有以下组件：
+文件夹与传统文件系统中的目录类似。 文件夹只能包含资产、文件夹或文件夹和资产。 文件夹具有以下组件：
 
 **实体**:文件夹的实体是其子元素，可以是文件夹和资产。
 
@@ -66,7 +64,8 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 在[!DNL Experience Manager]中，资产包含以下元素：
 
 * 资产的属性和元数据。
-* 多个演绎版，如原始演绎版（最初上传的资产）、缩略图和各种其他演绎版。 其他再现可以是不同大小的图像、不同的视频编码或从PDF或Adobe InDesign文件提取的页面。
+* 资产最初上传的二进制文件。
+* 已配置多个再现。 这些图像可以是不同大小的图像、不同编码的视频或从PDF或[!DNL Adobe InDesign]文件提取的页面。
 * 可选注释。
 
 有关内容片段中元素的信息，请参阅Experience Manager资产HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[内容片段支持。
@@ -95,7 +94,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 >[!NOTE]
 >
->为了便于读取，请省略完整的cURL记号。 事实上，该记号确实与[Resty](https://github.com/micha/resty)相关，后者是`cURL`的脚本包装器。
+>为了便于读取，以下示例忽略完整的cURL注释。 此记号与[Resty](https://github.com/micha/resty)相关，后者是cURL的脚本包装器。
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -122,9 +121,14 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 ## 创建文件夹{#create-a-folder}
 
-创建新`sling`:`OrderedFolder`。 如果提供`*`而不是节点名称，则servlet将参数名称用作节点名称。 接受为请求数据是新文件夹的Siren表示形式或一组名称 — 值对，编码为`application/www-form-urlencoded`或`multipart`/ `form`- `data`，对于从HTML表单直接创建文件夹非常有用。 此外，文件夹的属性可以指定为URL查询参数。
+创建`sling`:`OrderedFolder`。 如果提供`*`而不是节点名，则servlet将参数名用作节点名。 该请求接受以下任一条件：
 
-如果提供的路径的父节点不存在，则API调用将失败，并带有`500`响应代码。 如果文件夹已存在，则调用将返回响应代码`409`。
+* 新文件夹的Siren表示
+* 一组名称 — 值对，编码为`application/www-form-urlencoded`或`multipart`/ `form`- `data`。 这对于直接从HTML表单创建文件夹很有用。
+
+此外，文件夹的属性可以指定为URL查询参数。
+
+如果提供的路径的父节点不存在，则API调用将失败，并带有`500`响应代码。 如果文件夹存在，调用将返回响应代码`409`。
 
 **参数**: `name` 是文件夹名称。
 
@@ -136,7 +140,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 **响应代码**:响应代码为：
 
 * 201 — 创建 — 成功创建时。
-* 409 — 冲突 — 如果文件夹已存在。
+* 409 — 冲突 — 如果文件夹存在。
 * 412 - PRENIDETATION FAILED — 如果找不到或访问根集合。
 * 500 — 内部服务器错误 — 如果发生其他问题。
 
@@ -163,7 +167,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 ## 创建资产演绎版{#create-an-asset-rendition}
 
-为资产创建新的资产演绎版。 如果未提供请求参数名称，则文件名将用作格式副本名称。
+为资产创建演绎版。 如果未提供请求参数名称，则文件名将用作格式副本名称。
 
 **参数**:这些参数 `name` 用于格式副本的名称， `file` 并用作文件引用。
 
@@ -181,7 +185,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 ## 更新资产演绎版{#update-an-asset-rendition}
 
-这些更新分别用新的二进制数据替换资产演绎版。
+更新会分别将资产演绎版替换为新的二进制数据。
 
 **请求**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
@@ -193,8 +197,6 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * 500 — 内部服务器错误 — 如果发生其他问题。
 
 ## 在资产{#create-an-asset-comment}上添加评论
-
-创建新资产注释。
 
 **参数**:参数用 `message` 于注释的消息正文和 `annotationData` JSON格式的注释数据。
 
@@ -234,7 +236,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 * `X-Destination` - API解决方案作用域中要将资源复制到的新目标URI。
 * `X-Depth` - `infinity` 或 `0`。使用`0`仅复制资源及其属性，而不复制其子项。
-* `X-Overwrite`  — 使用以 `T` 强制删除现有资源或 `F` 防止覆盖现有资源。
+* `X-Overwrite`  — 使用强制 `T` 删除现有资源或防止覆 `F` 盖现有资源。
 
 **请求**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -260,6 +262,12 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * 200 — 确定 — 如果文件夹已成功删除。
 * 412 - PRENIDETATION FAILED — 如果找不到或访问根集合。
 * 500 — 内部服务器错误 — 如果发生其他问题。
+
+## 提示、最佳实践和限制{#tips-limitations}
+
+* 在[!UICONTROL 结束时间]之后，资产及其演绎版无法通过[!DNL Assets] Web界面和HTTP API使用。 如果[!UICONTROL 开机时间]在将来，或[!UICONTROL 结束时间]在过去，则API返回404错误消息。
+
+* 请勿使用`/adobe`作为URL或JCR路径。 请勿在此树下注册任何servlet或在JCR中创建内容。
 
 >[!MORELIKETHIS]
 >
