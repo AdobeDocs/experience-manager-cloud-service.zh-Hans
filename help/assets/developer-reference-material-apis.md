@@ -3,9 +3,9 @@ title: ' [!DNL Assets]的开发人员参考'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1388'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->某些API仍然存在，但不受主动支持（用×表示），因此不得使用。
+>某些API仍然存在，但不受主动支持（用×表示）。 请尽量不要使用这些API。
 
 | 支持级别 | 描述 |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 ## 资产上传{#asset-upload-technical}
 
-[!DNL Experience Manager] as提供 [!DNL Cloud Service] 了将资产上传到存储库的新方法。用户可以使用HTTP API直接将资产上传到云存储。 上载二进制文件的步骤有：
+在[!DNL Experience Manager]中，作为[!DNL Cloud Service]，您可以使用HTTP API将资产直接上传到云存储。 上载二进制文件的步骤有：
 
 1. [提交HTTP请求](#initiate-upload)。它将通知[!DNL Experience Manage]r部署您上传新二进制文件的意图。
 1. [将二进制内容](#upload-binary) POST到由启动请求提供的一个或多个URI。
@@ -116,8 +116,8 @@ ht-degree: 2%
 * `mimeType` （字符串）：相应二进制的MIME类型，在启动请求中提供。此值应包括在完整请求中。
 * `uploadToken` （字符串）：对应二进制文件的上载令牌。此值应包括在完整请求中。
 * `uploadURIs` （数组）：一个字符串列表，其值是应将二进制内容上载到的完整URI(请参阅上 [载二进制](#upload-binary))。
-* `minPartSize` （数）：如果存在多个URI，则可能提供给任何一个uploadURI的数据的最小长度（以字节为单位）。
-* `maxPartSize` （数）：如果存在多个URI，则可能提供给任何一个uploadURI的数据的最大长度（以字节为单位）。
+* `minPartSize` （数）：如果有多个URI，则可向其中任何一个提供的数据的最小长度(以 `uploadURIs`字节为单位)。
+* `maxPartSize` （数）：如果有多个URI，则可能提供给其中任何一个的数据的最大长度(以 `uploadURIs`字节为单位)。
 
 ### 上传二进制{#upload-binary}
 
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud [!DNL Cloud Service] aSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
 
