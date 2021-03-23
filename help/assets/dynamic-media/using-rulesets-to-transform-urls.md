@@ -1,11 +1,11 @@
 ---
 title: 使用规则集转换URL
-description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是用脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在数据满足某些条件时采取某些操作。
+description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是用脚本语言(如JavaScript™)编写的指令集，用于评估XML数据并在数据满足某些条件时采取某些操作。
 topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 使用规则集转换URL {#using-rulesets-to-transform-urls}
 
-您可以在Dynamic Media中部署规则集以转换URL。 规则集是用脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在数据满足某些条件时采取某些操作。 每个规则都包含至少一个条件和至少一个操作。 规则根据条件评估XML数据，如果满足条件，则执行相应的操作。 规则集的示例包括：
+您可以在Dynamic Media中部署规则集以转换URL。 规则集是用脚本语言(如JavaScript™)编写的指令集，用于评估XML数据并在数据满足某些条件时采取某些操作。 每个规则都包含至少一个条件和至少一个操作。 规则根据条件评估XML数据，如果满足条件，则执行相应的操作。 规则集的示例包括：
 
 * 添加MIME类型后缀。 许多服务和网站需要图像后缀，如向URL添加`.jpg`。
 * 为SEO（搜索引擎优化）目的创建指向URL的文件夹路径。
@@ -67,7 +67,7 @@ ht-degree: 5%
    * 在&#x200B;**[!UICONTROL 打开]**&#x200B;对话框中，浏览到规则集文件(XML)。
    * 选择文件，然后单击&#x200B;**[!UICONTROL 打开]**。
    * 在&#x200B;**[!UICONTROL 上载]**&#x200B;页面的右侧，为规则集文件选择目标文件夹。
-   * 在页面底部附近，确保选中&#x200B;**[!UICONTROL 上载后发布]**。
+   * 在页面底部附近，确保选中“上载后发布”。
    * 在页面的右下角，单击&#x200B;**[!UICONTROL 提交上载]**。
    * 在全局导航栏上，单击&#x200B;**[!UICONTROL 作业]**&#x200B;以检查上载作业的状态。 当&#x200B;**[!UICONTROL 作业]**&#x200B;页面上的&#x200B;**[!UICONTROL 状态]**&#x200B;列显示上载完成时，请继续执行后续步骤。
 
@@ -79,5 +79,5 @@ ht-degree: 5%
 
    规则集条件将应用于对实时Dynamic Media图像服务器的请求。
 
-   如果您对规则集文件进行了更改，则在您重新上传和重新发布更新的规则集文件时，会立即应用更改。
+   如果更改规则集文件，则在您重新上传和重新发布更新的规则集文件时，将立即应用更改。
 
