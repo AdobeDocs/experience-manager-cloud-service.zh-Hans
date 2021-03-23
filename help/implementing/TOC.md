@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: Developer Tools
 role: 开发人员、架构师
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: d4aacc8d5f0b355cae9f79c10de496f26b3e395a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '880'
 ht-degree: 37%
 
 ---
@@ -121,6 +121,7 @@ ht-degree: 37%
       + [模型路由](developing/hybrid/routing.md)
       + [RemotePage组件](developing/hybrid/remote-page.md)
       + [在AEM中编辑外部SPA](developing/hybrid/editing-external-spa.md)
+      + [在SPA中组合组件](developing/hybrid/composite-components.md)
       + [服务器端渲染](developing/hybrid/ssr.md)
       + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [启动集成](developing/hybrid/launch-integration.md)
