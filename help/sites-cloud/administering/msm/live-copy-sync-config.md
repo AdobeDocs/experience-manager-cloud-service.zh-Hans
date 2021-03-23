@@ -4,10 +4,10 @@ description: 了解可用的功能强大的Live Copy同步选项，以及如何�
 feature: 多站点管理器
 role: 管理员
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
-ht-degree: 30%
+source-wordcount: '2340'
+ht-degree: 29%
 
 ---
 
@@ -43,7 +43,11 @@ Adobe Experience Manager提供了大量现成的同步配置。 在使用Live Co
 
 ### 转出配置 {#rollout-configurations}
 
-下表列表了随AEM提供的现成转出配置。 该表包含每个转出配置的触发器和同步操作。如果已安装的转出配置操作不符合您的要求，您可以[创建一个新的转出配置](#creating-a-rollout-configuration)。
+下表列表了随AEM提供的现成转出配置。 该表包含每个转出配置的触发器和同步操作。
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | 名称 | 描述 | 触发器 | [同步操作](#synchronization-actions) |
 |---|---|---|---|
