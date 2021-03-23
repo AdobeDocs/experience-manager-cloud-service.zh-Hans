@@ -3,9 +3,9 @@ title: Dynamic Media 疑难解答
 description: 使用Dynamic Media时的疑难解答提示。
 topic: '"管理员，业务从业者"'
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -25,24 +25,24 @@ ht-degree: 1%
 
 ### 资产同步状态属性{#asset-synchronization-status-properties}
 
-可以在CRXDE Lite中查看以下资产属性，以确认将资产从AEM成功同步到Dynamic Media:
+可以在CRXDE Lite中查看以下资产属性，以确认将资产从Adobe Experience Manager成功同步到Dynamic Media:
 
 | **属性** | **示例** | **描述** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 节点已链接到Dynamic Media的常规指示器。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishCompleteor** 错误文本 | 资产上传到Dynamic Media的状态。 |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必须填充才能生成Dynamic Media远程资产的URL。 |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必须填充以生成Dynamic Media远程资产的URL。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **继** 承 **程序失败：`<error text>`** | 集（旋转集、图像集等）、图像预设、查看器预设、资产的图像映射更新或已编辑的图像的同步状态。 |
 
 ### 同步日志记录{#synchronization-logging}
 
-同步错误和问题记录在`error.log`(AEM服务器目录`/crx-quickstart/logs/`)中。 可以使用足够的日志记录来确定大多数问题的根本原因，但您可以通过Sling Console([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))将记录增加到`com.adobe.cq.dam.ips`包上的DEBUG以收集更多信息。
+同步错误和问题记录在`error.log`(Experience Manager服务器目录`/crx-quickstart/logs/`)中。 可以使用足够的日志记录来确定大多数问题的根本原因，但您可以通过Sling Console([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))将记录增加到`com.adobe.cq.dam.ips`包上的DEBUG以收集更多信息。
 
 ### 版本控制 {#version-control}
 
-替换现有Dynamic Media资产（同名和位置）时，您可以选择保留两个资产或替换/创建版本：
+替换现有Dynamic Media资产（同名和位置）时，您可以同时保留这两个资产或替换/创建一个版本：
 
-* 同时保留这两个选项将为已发布的资产URL创建一个具有唯一名称的新资产。 例如，`image.jpg`是原始资产，`image1.jpg`是新上传的资产。
+* 同时保留会为已发布的资产URL创建一个具有唯一名称的资产。 例如，`image.jpg`是原始资产，`image1.jpg`是新上传的资产。
 
 * Dynamic Media不支持创建版本。 新版本将替换投放中的现有资产。
 
@@ -63,11 +63,11 @@ ht-degree: 1%
     <ol>
      <li><p>转到CRX/DE:</p>
       <ul>
-       <li>检查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中的预设是否已定义。 请注意，如果您从AEM 6.x升级到6.4并选择退出迁移，则此位置适用。 否则，位置为<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
+       <li>检查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中的预设是否已定义。 如果您从Experience Manager 6.x升级到6.4并选择退出迁移，则此位置适用。 否则，位置为<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
        <li>检查以确保JCR中的资产在“Metadata”（元数据）下具有<code>dam:scene7FileStatus</code><strong> </strong>，显示为<code>PublishComplete</code>。</li>
       </ul> </li>
     </ol> </td>
-   <td><p>刷新页面/导航到其他页面并返回（需要重新编译边栏JSP）</p> <p>如果这行不通：</p>
+   <td><p>刷新页面/导航到其他页面并返回（必须重新编译边栏JSP）</p> <p>如果这行不通：</p>
     <ul>
      <li>发布资产。</li>
      <li>重新上传资产并发布。</li>
@@ -125,7 +125,7 @@ ht-degree: 1%
      <li>将视频用户档案分配给文件夹。</li>
      <li>编辑视频用户档案以包含多个编码预设。</li>
      <li>等待视频完成处理。</li>
-     <li>要重新加载视频，请确保Dynamic Media编码视频工作流未运行。<br/> </li>
+     <li>重新加载视频之前，请确保Dynamic Media编码视频工作流未运行。<br/> </li>
      <li>重新上传视频。</li>
     </ol> </td>
   </tr>
@@ -133,7 +133,7 @@ ht-degree: 1%
    <td>视频未编码</td>
    <td>
     <ul>
-     <li>检查是否配置了Dynamic Media云服务。</li>
+     <li>检查是否配置了Dynamic MediaCloud Service。</li>
      <li>检查视频用户档案是否与上传文件夹关联。</li>
     </ul> </td>
    <td>
@@ -179,7 +179,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>查看器预设未发布</td>
-   <td><p>继续执行示例管理器诊断页： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>观察计算值。 正确操作时，您应看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>继续执行示例管理器诊断页： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>观察计算值。 当运行正确时，您会看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资源。</p> <p>如果未激活的资产仍保留，请单击<strong>列表所有未激活的资产</strong>按钮中的任一按钮以查看详细信息。</p> </td>
    <td>
     <ol>
@@ -214,7 +214,7 @@ ht-degree: 1%
        <li>删除预设文件夹（<code>/conf</code>下）。
        <li>触发DM设置异步作业。</li>
       </ol> </li>
-     <li>在AEM收件箱中等待成功同步的通知。
+     <li>在您的Experience Manager收件箱中等待成功同步的通知。
      </li>
     </ol> </td>
   </tr>
