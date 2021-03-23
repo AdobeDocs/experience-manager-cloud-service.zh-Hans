@@ -3,9 +3,9 @@ title: 资产 HTTP API
 description: 使用 [!DNL Experience Manager Assets]中的HTTP API创建、读取、更新、删除和管理数字资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
+source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1489'
 ht-degree: 1%
 
 ---
@@ -267,7 +267,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 * 在[!UICONTROL 结束时间]之后，资产及其演绎版无法通过[!DNL Assets] Web界面和HTTP API使用。 如果[!UICONTROL 开机时间]在将来，或[!UICONTROL 结束时间]在过去，则API返回404错误消息。
 
-* 请勿使用`/adobe`作为URL或JCR路径。 请勿在此树下注册任何servlet或在JCR中创建内容。
+* 使用API进行更新时，文件夹或资产的某些属性会映射到其他前缀。 将`jcr:title`、`jcr:description`和`jcr:language`的`jcr`前缀替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
 
 >[!MORELIKETHIS]
 >
