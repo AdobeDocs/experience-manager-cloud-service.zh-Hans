@@ -4,7 +4,7 @@ description: 了解如何在Dynamic Media中使用视频。
 feature: 视频配置文件
 topic: 业务从业者
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
 ht-degree: 22%
@@ -406,7 +406,7 @@ VBR编码时间较长，但产生最有利的结果；媒体文件的质量优�
 |--- |--- |--- |--- |
 | 源 | 1920 x 1080 | 1 | 3 |
 | 编码 | 960 x 540 | 2 | 2 |
-| 编码 | 640 x 360 | 3 | 3 |
+| 编码 | 640 x 360 | 3 | 1 |
 | 编码 | 480 x 270 | 4 | 4 |
 
 ### 编码视频文件格式 {#encoded-video-file-format}
@@ -551,9 +551,9 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 要创建YouTube渠道，请执行以下操作：
 
 1. 转到[https://www.youtube.com](https://www.youtube.com/)并使用您的Google帐户凭据登录。
-1. 在YouTube页面的右上角，单击您的用户档案图片（也可以在纯色圆中显示为字母），然后单击&#x200B;**[!UICONTROL YouTube设置]**（圆齿轮图标）。
-1. 在“概述”页面的“其他功能”标题下，单击&#x200B;**[!UICONTROL 查看所有我的渠道或创建新渠道]**。
-1. 在“渠道”页面上，单击&#x200B;**[!UICONTROL 创建新渠道]**。
+1. 在YouTube页面的右上角，单击您的用户档案图片（也可以在纯色圆中显示为字母），然后点按&#x200B;**[!UICONTROL YouTube设置]**（圆齿轮图标）。
+1. 在“概述”页面的“其他功能”标题下，点按&#x200B;**[!UICONTROL 查看所有我的渠道或创建新渠道]**。
+1. 在“渠道”页面上，点按&#x200B;**[!UICONTROL 创建新渠道]**。
 1. 在“品牌帐户”页面的“品牌帐户名称”字段中，输入您要发布视频资产的业务名称或任何其他渠道名称，然后单击&#x200B;**[!UICONTROL 创建]**。
 
    请记住在此处输入的名称，因为在以Experience Manager设置YouTube时，必须再次输入该名称。
