@@ -2,12 +2,12 @@
 title: 应用Dynamic Media查看器预设
 description: 了解如何在Dynamic Media中应用查看器预设。
 feature: 查看器预设，查看器
-topic: 业务从业者
+topic: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 44%
+ht-degree: 36%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 44%
 
 查看器预设是一组设置，这些设置决定用户如何在其计算机屏幕和移动设备上视图富媒体资产。您可以将管理员创建的任何查看器预设应用到资产。
 
-如果您是管理员，并且需要管理、创建、排序或删除查看器预设，请参阅[管理查看器预设](managing-viewer-presets.md)。
+如果您是管理员，并且必须管理、创建、排序和删除查看器预设，请参阅[管理查看器预设](managing-viewer-presets.md)。
 
 另请参阅[发布查看器预设](managing-viewer-presets.md#publishing-viewer-presets)。
 
