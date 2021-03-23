@@ -2,7 +2,7 @@
 title: '编辑制作项目 '
 description: '编辑制作项目 '
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -23,8 +23,7 @@ ht-degree: 0%
 
 请按照以下步骤编辑生产项目:
 
-1. 
-   1. 从Cloud Manager的&#x200B;*概述*&#x200B;页面导航至&#x200B;**编辑项目**&#x200B;页面
+1. 从Cloud Manager的&#x200B;*概述*&#x200B;页面导航至&#x200B;**编辑项目**&#x200B;页面
 
 1. **编辑项目**&#x200B;页将显示生产和沙箱项目的两个选项卡（常规和解决方案）。
 
