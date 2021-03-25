@@ -2,9 +2,9 @@
 title: AEM GraphQL API，与内容片段一起使用
 description: 了解如何使用Adobe Experience Manager(AEM)中的内容片段作为AEM GraphQL API的无外设内容投放的Cloud Service。
 translation-type: tm+mt
-source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
+source-git-commit: b0bfcacb35f520045ee6ed6d427467490e012912
 workflow-type: tm+mt
-source-wordcount: '2901'
+source-wordcount: '3233'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Manager作为Cloud Service(AEM)GraphQL API与内容片段一起
 >
 >GraphQL当前用于Adobe Experience Manager(AEM)中的两个（单独）方案作为Cloud Service:
 >
->* [AEM Commerce通过GraphQL从商务平台中消耗数据](/help/commerce-cloud/architecture/magento.md)。
+>* [AEM Commerce通过GraphQL从商务平台读取数据](/help/commerce-cloud/architecture/magento.md)。
 >* AEM内容片段与AEM GraphQL API（一种基于标准GraphQL的自定义实施）一起提供结构化内容，以便在您的应用程序中使用。
 
 
@@ -40,7 +40,7 @@ GraphQL是：
 
    请参阅[浏览GraphQL](https://www.graphql.com)。
 
-* *&quot;。..一种数据查询语言和规范，由Facebook于2012年在内部开发，后于2015年公开开放采购。它为基于REST的体系结构提供了一种替代方法，目的是提高开发者的工作效率并最大限度地减少数据传输量。 GraphQL由数百个不同规模的组织用于生产……&quot;*
+* *&quot;。..一种数据查询语言和规范，由Facebook于2012年在内部开发，后于2015年公开开放采购。它为基于REST的体系结构提供了一种替代方法，目的是提高开发者的生产力并最大限度地减少数据传输量。 GraphQL由数百个不同规模的组织用于生产……&quot;*
 
    请参阅[GraphQL Foundation](https://foundation.graphql.org/)。
 
@@ -48,7 +48,7 @@ GraphQL是：
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-有关GraphQL API的更多信息，请参阅以下部分（包括许多其他资源）：
+有关GraphQL API的更多信息，请参阅以下部分（以及其他许多资源）：
 
 * 在[graphql.org](https://graphql.org):
 
@@ -167,30 +167,10 @@ GraphQL for AEM端点的存储库路径为：
 * 虚 URL:
    * 为端点分配简化的URL
    * 可选
-* OSGi配置：
-   * GraphQL Servlet配置：
-      * 处理对端点的请求
-      * 配置名称为`org.apache.sling.graphql.core.GraphQLServlet`。 它需要作为OSGi工厂配置提供
-      * `sling.servlet.extensions` 必须设置为  `[json]`
-      * `sling.servlet.methods` 必须设置为  `[GET,POST]`
-      * `sling.servlet.resourceTypes` 必须设置为  `[graphql/sites/components/endpoint]`
-      * 强制
-   * 模式Servlet配置：
-      * 创建GraphQL模式
-      * 配置名称为`com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`。 它需要作为OSGi工厂配置提供
-      * `sling.servlet.extensions` 必须设置为  `[GQLschema]`
-      * `sling.servlet.methods` 必须设置为  `[GET]`
-      * `sling.servlet.resourceTypes` 必须设置为  `[graphql/sites/components/endpoint]`
-      * 强制
-   * CSRF配置：
-      * 端点的安全保护
-      * 配置名称为`com.adobe.granite.csrf.impl.CSRFFilter`
-      * 将`/content/cq:graphql/global/endpoint`添加到已排除路径的现有列表(`filter.excluded.paths`)
-      * 强制
 
 ### 支持包{#supporting-packages}
 
-为简化GraphQL端点的设置，Adobe提供[GraphQL示例项目](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip)包。
+为简化GraphQL端点的设置，Adobe提供[GraphQL示例项目(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip)包。
 
 此归档文件包含[所需的附加配置](#additional-configurations-graphql-endpoint)和[GraphQL终结点](#enabling-graphql-endpoint)。 如果安装在普通AEM实例上，它将在`/content/cq:graphql/global/endpoint`处公开一个完全工作的GraphQL端点。
 
@@ -218,7 +198,7 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 
 ### 安装AEM GraphiQL接口{#installing-graphiql-interface}
 
-GraphiQL用户界面可安装在AEM上并包含专用包：[GraphiQL内容包v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)包。
+GraphiQL用户界面可安装在AEM上并包含专用包：[GraphiQL内容包v0.0.6(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)包。
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
@@ -273,6 +253,14 @@ GraphQL规范提供了有关如何创建用于查询特定实例上的数据的�
 
 在GraphQL for AEM中，模式是灵活的。 这意味着每次创建、更新或删除内容片段模型时，都会自动生成该片段。 在更新内容片段模型时，数据模式缓存也会刷新。
 
+<!--
+>[!NOTE]
+>
+>AEM does not use the concept of namespacing for Content Fragment Models. 
+>
+>If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
+-->
+
 站点图形QL服务监听（在后台）对内容片段模型所做的任何修改。 检测到更新时，只会重新生成模式的该部分。 这种优化节省了时间并提供了稳定性。
 
 例如，如果：
@@ -292,6 +280,16 @@ GraphQL规范提供了有关如何创建用于查询特定实例上的数据的�
 >当您希望通过REST api或以其他方式对内容片段模型进行批量更新时，请务必注意这一点。
 
 模式通过与GraphQL查询相同的端点进行服务，客户端处理以扩展名`GQLschema`调用模式的事实。 例如，对`/content/cq:graphql/global/endpoint.GQLschema`执行简单的`GET`请求将导致输出具有Content-type的模式:`text/x-graphql-schema;charset=iso-8859-1`。
+
+### 模式生成 — 未发布的模型{#schema-generation-unpublished-models}
+
+嵌套内容片段时，父内容片段模型可能已发布，但引用的模型不会发布。
+
+>[!NOTE]
+>
+>AEM UI可防止这种情况发生，但如果以编程方式或通过内容包进行发布，则可能会发生这种情况。
+
+发生这种情况时，AEM会为父内容片段模型生成&#x200B;*不完整*&#x200B;模式。 这意味着从模式中删除依赖于未发布的模型的片段引用。
 
 ## 字段 {#fields}
 
@@ -517,13 +515,73 @@ query {
 
 有关更多示例，请参阅：
 
-* [用于AEM扩展](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)的GraphQL的详细信息
+* [用于AEM扩展](#graphql-extensions)的GraphQL的详细信息
 
 * [使用此示例内容和结构的示例查询](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
    * 和准备用于样本查询的[样本内容和结构](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 
 * [基于WKND项目的示例查询](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
+## GraphQL for AEM — 扩展{#graphql-extensions}摘要
+
+使用GraphQL for AEM的查询的基本操作符合标准的GraphQL规范。 对于具有AEM的GraphQL查询，有以下几个扩展：
+
+* 如果您需要一个结果：
+   * 使用模型名称；eg city
+
+* 如果您希望获得一列表结果：
+   * 将`List`添加到模型名称；例如，`cityList`
+   * 请参阅[示例查询 — 所有城市相关信息](#sample-all-information-all-cities)
+
+* 如果要使用逻辑OR:
+   * 使用` _logOp: OR`
+   * 请参阅[示例查询 — 名称为“Jobs”或“Smith”](#sample-all-persons-jobs-smith)的所有人员
+
+* 逻辑AND也存在，但是是（通常）隐式的
+
+* 您可以查询与内容片段模型中的字段相对应的字段名称
+   * 请参阅[示例查询-公司CEO和员工的完整详细信息](#sample-full-details-company-ceos-employees)
+
+* 除了模型中的字段之外，还有一些系统生成的字段（前面有下划线）：
+
+   * 对于内容：
+
+      * `_locale` :去揭示语言；基于语言管理器
+         * 请参阅[给定区域设置的多个内容片段的示例查询](#sample-wknd-multiple-fragments-given-locale)
+      * `_metadata` :显示片段的元数据
+         * 请参阅[元数据示例查询-列表标题为GB](#sample-metadata-awards-gb)的奖项的元数据
+      * `_model` :允许查询内容片段模型（路径和标题）
+         * 请参阅[模型](#sample-wknd-content-fragment-model-from-model)中内容片段模型的示例查询
+      * `_path` :存储库中内容片段的路径
+         * 请参阅[示例查询 — 单个特定城市片段](#sample-single-specific-city-fragment)
+      * `_reference` :显示引用；包括富文本编辑器中的内联引用
+         * 请参阅[具有预取引用的多个内容片段的示例查询](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` :以显示内容片段中的特定变量
+         * 请参阅[示例查询 — 具有命名变量的所有城市](#sample-cities-named-variation)
+   * 操作：
+
+      * `_operator` :应用特定的经营者； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
+         * 请参阅[示例查询 — 所有姓名不为“Jobs”](#sample-all-persons-not-jobs)的人员
+         * 请参阅[示例查询 — 所有Adventures，其中`_path`开始具有特定前缀](#sample-wknd-all-adventures-cycling-path-filter)
+      * `_apply` :（二）适用特定条件；例如，   `AT_LEAST_ONCE`
+         * 请参阅[示例查询 — 对包含项目的数组进行筛选，该项目必须至少发生一次](#sample-array-item-occur-at-least-once)
+      * `_ignoreCase` :在查询时忽略大小写
+         * 请参阅[示例查询 — 名称中包含SAN的所有城市，而不考虑大小写](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
+
+
+
+* 支持GraphQL合并类型：
+
+   * 使用`... on`
+      * 请参阅[具有内容引用的特定模型的内容片段的示例查询](#sample-wknd-fragment-specific-model-content-reference)
 
 <!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
