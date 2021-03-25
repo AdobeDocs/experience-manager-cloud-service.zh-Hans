@@ -3,10 +3,10 @@ title: 云中的调度程序
 description: '云中的调度程序 '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 9%
+source-wordcount: '4113'
+ht-degree: 6%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 9%
 
 调度程序工具作为Cloud ServiceSDK是整个AEM的一部分，它提供：
 
-* 包含要包含在调度程序的主项目中的配置文件的vanilla文件结构。
+* 包含要包含在Dispatcher的主项目中的配置文件的vanilla文件结构。
 * 客户验证调度程序配置是否仅包含AEM作为Cloud Service支持的指令的工具。        此外，工具还验证语法是否正确，以便apache能够成功开始。
-* 在本地调度程序的Docker映像。
+* 本地调度程序的Docker映像。
 
 ## 下载和提取工具{#extracting-the-sdk}
 
-调度程序工具是作为Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)的[ AEM的一部分，可从[软件分发](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)门户的zip文件下载。 该新调度程序工具版本中提供的任何新配置均可用于部署到云中运行该版本AEM的云环境。
+调度程序工具是作为Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)的[ AEM的一部分，可从[软件分发](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)门户的zip文件下载。 该新版Dispatcher Tools版本中提供的任何新配置均可用于部署到云中运行该版AEM的云环境或更高版本。
 
 解压缩SDK，它捆绑适用于macOS/Linux和Windows的Dispatcher Tools。
 
-**对于macOS/Linux**，请使调度程序工具对象可执行并运行它。它将自解压存储到的目录下的调度程序工具文件（其中`version`是调度程序工具的版本）。
+**对于macOS/Linux**，使Dispatcher工具对象可执行并运行它。它将自解压存储到的目录下的调度程序工具文件（其中`version`是调度程序工具的版本）。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -47,7 +47,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## 文件结构{#file-structure}
 
-项目的调度程序子文件夹的结构如下所述，应将其复制到主项目调度程序文件夹中：
+项目的Dispatcher子文件夹的结构如下所述，应将其复制到主项目Dispatcher文件夹中：
 
 ```bash
 ./
@@ -104,7 +104,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 >[!NOTE]
 >
->此时，必须使用单个重写文件，而不是站点特定的文件。 该文件大小必须小于1MB。
+>当前，必须使用单个重写文件，而不是站点特定的文件。 通常，可自定义文件的内容总和必须小于1MB。
 
 * `conf.d/variables/custom.vars`
 
@@ -112,7 +112,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.d/variables/global.vars`
 
-此文件包含在`dispatcher_vhost.conf`文件中。 您可以更改此文件中的调度程序和重写日志级别。
+此文件包含在`dispatcher_vhost.conf`文件中。 您可以更改Dispatcher并重写此文件中的日志级别。
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
@@ -134,13 +134,13 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 此文件包含在`.farm`文件中。 它具有要通过全局匹配匹配的主机名或URI路径列表。 这决定了用于服务请求的后端。
 
-上述文件引用下列不可改变的配置文件。 Cloud环境中的调度程序不会处理对不可变文件所做的更改。
+上述文件引用下列不可改变的配置文件。 Cloud环境中的Dispatcher将不处理对不可变文件所做的更改。
 
 **不可变的配置文件**
 
 这些文件是基本框架的一部分，并执行标准和最佳做法。 这些文件被视为不可变，因为在本地修改或删除它们不会对您的部署产生影响，因为它们不会被传输到您的云实例。
 
-建议上述文件引用下面列出的不可变文件，后跟任何其他语句或覆盖。 将调度程序配置部署到云环境时，将使用不可变文件的最新版本，而不管本地开发中使用的是哪个版本。
+建议上述文件引用下面列出的不可变文件，后跟任何其他语句或覆盖。 将Dispatcher配置部署到云环境时，将使用不可变文件的最新版本，而不管本地开发中使用的是哪个版本。
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -156,7 +156,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-包含一个调度程序群示例。 对于您自己的场，请创建此文件的副本，对其进行自定义，转到`conf.d/enabled_farms`并创建一个指向自定义副本的符号链接。
+包含一个Dispatcher群集示例。 对于您自己的场，请创建此文件的副本，对其进行自定义，转到`conf.d/enabled_farms`并创建一个指向自定义副本的符号链接。
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
@@ -348,7 +348,7 @@ Apache虚拟主机配置中有两种类型的文件可指定为包括：重写�
 具有`ams_`前缀的Apache配置和文件。 尽管向后支持
 兼容性，您应切换到新布局。
 
-## 本地验证调度程序配置语法，以便apache httpd能够开始{#local-validation}
+## 本地验证Dispatcher配置语法，以便apache httpd能够开始{#local-validation}
 
 一旦确定调度程序模块配置仅包含受支持的指令，您应检查语法是否正确，以便apache能够开始。 为了测试它，文档程序必须安装在本地。 请注意，AEM不必运行。
 
@@ -377,7 +377,7 @@ Phase 2 finished
 
 1. 它从上一节运行验证程序以确保只包含受支持的指令。 如果配置无效，则脚本将失败。
 2. 它执行`httpd -t command`以测试语法是否正确，以便apache httpd可以开始。 如果配置成功，则应准备好进行部署。
-3. 检查未修改调度程序SDK配置文件的子集（如[文件结构部分](#file-structure)中所述）。 这是随AEM SDK版本v2021.1.4738引入的一个新检查，其中还包括Dispatcher Tools版本2.0.36。在此更新之前，客户可能错误地假定这些不可变文件的任何本地SDK修改也将应用于云环境。
+3. 检查Dispatcher SDK配置文件的子集是否未修改，这些子集旨在如[文件结构部分](#file-structure)中所述不可变。 这是随AEM SDK版本v2021.1.4738引入的一个新检查，其中还包括Dispatcher Tools版本2.0.36。在此更新之前，客户可能错误地假定这些不可变文件的任何本地SDK修改也将应用于云环境。
 
 在Cloud Manager部署过程中，将同时执行`httpd -t syntax`检查，并且Cloud Manager `Build Images step failure`日志中将包含任何错误。
 
@@ -385,7 +385,7 @@ Phase 2 finished
 
 还可以在本地测试Apache和Dispatcher配置。 它要求在本地安装文档程序，并且您的配置要通过验证，如上所述。
 
-使用`-d`参数执行验证程序工具（请注意，它与前面提到的`validator.sh`不同），该参数输出包含所有调度程序配置文件的文件夹。 然后执行`docker_run.sh`脚本，将该文件夹作为参数进行传递。 通过提供端口号(此处：8080)，若要显示调度程序终结点，将启动Docker容器，使用您的配置运行调度程序。
+使用`-d`参数执行验证程序工具（请注意，它与前面提到的`validator.sh`不同），该参数输出包含所有Dispatcher配置文件的文件夹。 然后执行`docker_run.sh`脚本，将该文件夹作为参数进行传递。 通过提供端口号(此处：8080)，若要公开Dispatcher端点，将启动Docker容器，运行配置的Dispatcher。
 
 ```
 $ validator full -d out src/dispatcher
@@ -400,11 +400,11 @@ Starting httpd server
 ...
 ```
 
-这将在容器中开始调度程序，其后端指向本地Mac OS计算机上运行的AEM实例（端口4503）。
+这将开始容器中的调度程序，其后端指向本地Mac OS计算机上运行的AEM实例（端口4503）。
 
 ## 调试Apache和Dispatcher配置{#debugging-apache-and-dispatcher-configuration}
 
-以下策略可用于增加调度程序模块的日志输出，并查看本地和云环境中`RewriteRule`评估的结果。
+以下策略可用于增加Dispatcher模块的日志输出，并查看本地和云环境中`RewriteRule`评估的结果。
 
 这些模块的日志级别由变量`DISP_LOG_LEVEL`和`REWRITE_LOG_LEVEL`定义。 可以在文件`conf.d/variables/global.vars`中设置它们。 其相关部分如下：
 
@@ -430,13 +430,13 @@ Starting httpd server
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-在本地运行调度程序时，日志将直接打印到终端输出。 大多数情况下，您希望这些日志在DEBUG中，这可以通过在运行Docker时将调试级别作为参数进行传递来完成。 例如：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`。
+在本地运行Dispatcher时，日志将直接打印到终端输出。 大多数情况下，您希望这些日志在DEBUG中，这可以通过在运行Docker时将调试级别作为参数进行传递来完成。 例如：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`。
 
-云环境的日志可通过云管理器中提供的日志服务公开。
+云环境的日志通过云管理器中提供的日志服务公开。
 
 ## 每个环境{#different-dispatcher-configurations-per-environment}的不同调度程序配置
 
-此时，同一调度程序配置将作为Cloud Service环境应用于所有AEM。 运行时将具有一个环境变量`ENVIRONMENT_TYPE`，其中包含当前运行模式（dev、stage或prod）以及定义。 定义可以是`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`或`ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，定义可用于构建逻辑：
+当前，将同一调度程序配置作为Cloud Service环境应用于所有AEM。 运行时将具有一个环境变量`ENVIRONMENT_TYPE`，其中包含当前运行模式（dev、stage或prod）以及定义。 定义可以是`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`或`ENVIRONMENT_PROD`。 在Apache配置中，变量可以直接在表达式中使用。 或者，定义可用于构建逻辑：
 
 ```
 # Simple usage of the environment variable
@@ -503,12 +503,12 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 将调度程序配置从AMS迁移到AEM作为Cloud Service的准则
 
-作为Cloud Service，调度程序配置结构在Managed Services和AEM之间存在差异。 下面是有关如何将AMS Dispatcher配置版本2作为Cloud Service迁移到AEM的分步指南。
+作为Cloud Service,Managed Services和AEM之间的调度程序配置结构存在差异。 下面是有关如何从AMS Dispatcher配置版本2迁移到AEM作为Cloud Service的分步指南。
 
 ## 如何将AMS转换为AEM作为云服务调度程序配置
 
 下节提供有关如何转换AMS配置的分步说明。 它假设
-您的存档结构与[ Cloud Manager调度程序配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中描述的结构类似
+您的存档结构与[ Cloud Manager Dispatcher配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中描述的结构类似
 
 ### 提取存档并删除最后的前缀
 
@@ -527,7 +527,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ### 移除或注释未引用端口 80 的虚拟主机部分
 
-如果您的虚拟主机文件中仍然有部分内容专门引用端口 80 以外的其他端口，例如
+如果您的虚拟主机文件中仍有部分专门引用端口80以外的其他端口，例如：
 
 ```
 <VirtualHost *:443>
@@ -578,7 +578,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ### 通过运行验证器检查状态
 
-使用`httpd`子命令在目录中运行调度程序validator:
+使用`httpd`子命令在您的目录中运行Dispatcher validator:
 
 ```
 $ validator httpd .
@@ -606,7 +606,7 @@ $ validator httpd .
 移除所有前缀为 `ams_` 的文件。
 
 如果`conf.dispatcher.d/cache`现在为空，则复制文件`conf.dispatcher.d/cache/rules.any`
-从标准调度程序配置到此文件夹。 标准调度程序
+从标准Dispatcher配置到此文件夹。 标准Dispatcher
 可在此SDK的文件夹`src`中找到配置。 不要忘记
 `$include`语句引用场文件中的`ams_*_cache.any`规则文件
 还有。
@@ -615,13 +615,13 @@ $ validator httpd .
 它应重命名为`rules.any`并且不要忘记改编`$include`语句
 在场文件中也引用该文件。
 
-但是，如果文件夹包含多个具有该模式的场特定文件，则其内容
+但是，如果文件夹包含多个具有该模式的特定于场的文件，则其内容
 应该被复制到`$include`语句中，引用这些语句在场文件中。
 
 删除任何后缀为`_invalidate_allowed.any`的文件。
 
 从默认位置复制文件`conf.dispatcher.d/cache/default_invalidate_any`
-AEM Cloud Dispatcher配置中的。
+AEM Dispatcher配置中的。
 
 在每个场文件中，删除`cache/allowedClients`部分中的所有内容并替换它
 :
@@ -640,13 +640,13 @@ $include "../cache/default_invalidate.any"
 它应重命名为`clientheaders.any`并且不要忘记改编`$include`语句
 在场文件中也引用该文件。
 
-但是，如果文件夹包含多个具有该模式的场特定文件，则其内容
+但是，如果文件夹包含多个具有该模式的特定于场的文件，则其内容
 应该被复制到`$include`语句中，引用这些语句在场文件中。
 
 从默认位置复制文件`conf.dispatcher/clientheaders/default_clientheaders.any`
-AEM作为到该位置的Cloud Service调度程序配置。
+AEM作为指向该位置的Cloud Service Dispatcher配置。
 
-在每个场文件中，将如下所示的所有 clientheader include 语句：
+在每个场文件中，替换任何clientheader include语句，如下所示：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
@@ -669,13 +669,13 @@ $include "../clientheaders/default_clientheaders.any"
 `filters.any`，不要忘记改编引用该
 文件。`$include`
 
-但是，如果文件夹包含多个具有该模式的场特定文件，则其内容
+但是，如果文件夹包含多个具有该模式的特定于场的文件，则其内容
 应该被复制到`$include`语句中，引用这些语句在场文件中。
 
 从默认位置复制文件`conf.dispatcher/filters/default_filters.any`
-AEM作为到该位置的Cloud Service调度程序配置。
+AEM作为指向该位置的Cloud Service Dispatcher配置。
 
-在每个场文件中，将如下所示的所有 filter include 语句：
+在每个场文件中，替换任何筛选器包含如下语句：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
@@ -694,7 +694,7 @@ $include "../filters/default_filters.any"
 移除该文件夹中的所有文件。
 
 从默认位置复制文件`conf.dispatcher.d/renders/default_renders.any`
-AEM作为到该位置的Cloud Service调度程序配置。
+AEM作为指向该位置的Cloud Service Dispatcher配置。
 
 在每个场文件中，删除`renders`部分中的所有内容并替换它
 :
@@ -713,13 +713,13 @@ $include "../renders/default_renders.any"
 `virtualhosts.any`，不要忘记改编引用该
 文件。`$include`
 
-但是，如果文件夹包含多个具有该模式的场特定文件，则其内容
+但是，如果文件夹包含多个具有该模式的特定于场的文件，则其内容
 应该被复制到`$include`语句中，引用这些语句在场文件中。
 
 从默认位置复制文件`conf.dispatcher/virtualhosts/default_virtualhosts.any`
-AEM作为到该位置的Cloud Service调度程序配置。
+AEM作为指向该位置的Cloud Service Dispatcher配置。
 
-在每个场文件中，将如下所示的所有 filter include 语句：
+在每个场文件中，替换任何筛选器包含如下语句：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
@@ -733,7 +733,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### 通过运行验证器检查状态
 
-使用`dispatcher`子命令将AEM作为Cloud Service调度程序validator运行在您的目录中：
+使用`dispatcher`子命令将AEM作为Cloud Service调度程序验证程序运行在您的目录中：
 
 ```
 $ validator dispatcher .
@@ -760,9 +760,10 @@ validator full -d out .
 
 这将验证完整配置并在 中生成部署信息`out`
 
-### 第2步：将调度程序与该部署信息开始到docker映像中
+### 第2步：将调度程序开始到文档映像中并包含该部署信息
 
-在 macOS 计算机上运行 AEM 发布服务器，并监听端口 4503 时，您可以在该服务器前面运行启动 Dispatcher，如下所示：
+如果AEM发布服务器在macOS计算机上运行，则侦听端口4503,
+您可以按如下方式在该服务器前运行开始程序：
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -770,7 +771,7 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 这将启动容器并在本地端口 8080 上公开 Apache。
 
-### 使用新的调度程序配置
+### 使用新的Dispatcher配置
 
 恭喜！ 如果验证程序不再报告任何问题，
 Docker容器开始，不会出现任何故障或警告，
