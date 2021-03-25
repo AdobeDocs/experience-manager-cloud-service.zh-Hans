@@ -2,10 +2,10 @@
 title: 了解如何将GraphQL与AEM结合使用 — 示例内容和查询
 description: 了解如何将GraphQL与AEM结合使用 — 示例内容和查询。
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 5%
+source-wordcount: '1396'
+ht-degree: 6%
 
 ---
 
@@ -29,65 +29,6 @@ ht-degree: 5%
 
 * 以及某些[示例GraphQL查询](#graphql-sample-queries)，基于示例内容片段结构（内容片段模型和相关内容片段）。
 
-## GraphQL for AEM — 扩展{#graphql-extensions}摘要
-
-使用GraphQL for AEM的查询的基本操作符合标准的GraphQL规范。 对于具有AEM的GraphQL查询，有以下几个扩展：
-
-* 如果您需要一个结果：
-   * 使用模型名称；eg city
-
-* 如果您希望获得一列表结果：
-   * 将`List`添加到模型名称；例如，`cityList`
-   * 请参阅[示例查询 — 所有城市相关信息](#sample-all-information-all-cities)
-
-* 如果要使用逻辑OR:
-   * 使用` _logOp: OR`
-   * 请参阅[示例查询 — 名称为“Jobs”或“Smith”](#sample-all-persons-jobs-smith)的所有人员
-
-* 逻辑AND也存在，但是是（通常）隐式的
-
-* 您可以查询与内容片段模型中的字段相对应的字段名称
-   * 请参阅[示例查询-公司CEO和员工的完整详细信息](#sample-full-details-company-ceos-employees)
-
-* 除了模型中的字段之外，还有一些系统生成的字段（前面有下划线）：
-
-   * 对于内容：
-
-      * `_locale` :去揭示语言；基于语言管理器
-         * 请参阅[给定区域设置的多个内容片段的示例查询](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` :显示片段的元数据
-         * 请参阅[元数据示例查询-列表标题为GB](#sample-metadata-awards-gb)的奖项的元数据
-      * `_model` :允许查询内容片段模型（路径和标题）
-         * 请参阅[模型](#sample-wknd-content-fragment-model-from-model)中内容片段模型的示例查询
-      * `_path` :存储库中内容片段的路径
-         * 请参阅[示例查询 — 单个特定城市片段](#sample-single-specific-city-fragment)
-      * `_reference` :显示引用；包括富文本编辑器中的内联引用
-         * 请参阅[具有预取引用的多个内容片段的示例查询](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` :以显示内容片段中的特定变量
-         * 请参阅[示例查询 — 具有命名变量的所有城市](#sample-cities-named-variation)
-   * 操作：
-
-      * `_operator` :应用特定的经营者； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
-         * 请参阅[示例查询 — 所有姓名不为“Jobs”](#sample-all-persons-not-jobs)的人员
-         * 请参阅[示例查询 — 所有Adventures，其中`_path`开始具有特定前缀](#sample-wknd-all-adventures-cycling-path-filter)
-      * `_apply` :（二）适用特定条件；例如，   `AT_LEAST_ONCE`
-         * 请参阅[示例查询 — 对包含项目的数组进行筛选，该项目必须至少发生一次](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` :在查询时忽略大小写
-         * 请参阅[示例查询 — 名称中包含SAN的所有城市，而不考虑大小写](#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
-* 支持GraphQL合并类型：
-
-   * 使用`... on`
-      * 请参阅[具有内容引用的特定模型的内容片段的示例查询](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL — 使用示例内容片段结构{#graphql-sample-queries-sample-content-fragment-structure}的示例查询
 
