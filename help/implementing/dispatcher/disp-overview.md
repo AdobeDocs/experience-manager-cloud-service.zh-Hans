@@ -3,9 +3,9 @@ title: 云中的调度程序
 description: '云中的调度程序 '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
+source-wordcount: '4169'
 ht-degree: 6%
 
 ---
@@ -198,7 +198,21 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 调用为：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-该工具通过扫描模式为`conf.d/enabled_vhosts/*.vhost`的所有文件来验证调度程序配置是否使用AEM支持的适当指令作为云服务。 通过运行validator的命令可以列出Apache配置文件中允许的指允许列表令：
+该工具通过扫描模式为`conf.d/enabled_vhosts/*.vhost`的所有文件来验证调度程序配置是否使用AEM支持的适当指令作为云服务。
+
+在Windows上，调度程序验证程序区分大小写。 因此，如果您不尊重配置所在路径的大写，它可能无法验证配置，例如：
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+通过从Windows资源管理器复制并粘贴路径，然后在命令提示符下使用`cd`命令将路径复制并粘贴到该路径中，避免出现此错误。
+
+通过运行validator的命令可以列出Apache配置文件中允许的指允许列表令：
 
 ```
 $ validator allowlist
