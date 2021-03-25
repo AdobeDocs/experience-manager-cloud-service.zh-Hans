@@ -1,9 +1,9 @@
 ---
 title: 使用选择器
 description: 了解在Dynamic Media中为交互式图像、交互式视频和传送横幅选择资源时可使用的方法。
-topic: 业务从业者
+topic: 商务从业人员
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 14%
@@ -87,7 +87,7 @@ ht-degree: 14%
 
 使用此选择器选择要在传送横幅、交互式视频、图像集、混合媒体集和旋转集中使用的图像。 在交互式视频中，当您点按&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中的&#x200B;**[!UICONTROL 选择资产]**&#x200B;时，资产选择器可用。 在传送集中，创建幻灯片时，资产选择器可用。 在图像集、混合媒体集和旋转集中，当您分别创建图像集、混合媒体集或旋转集时，资产选择器可用。
 
-另请参阅[资产选取器](/help/assets/search-assets.md#assetselector)以了解详细信息。
+另请参阅[资产选取器](/help/assets/search-assets.md#asset-selector)以了解详细信息。
 
 1. 导航到传送集并创建幻灯片。 或者，导航到交互式视频，转到&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡，然后选择资产。 或者，创建混合媒体集、图像集或旋转集。
 1. 点按&#x200B;**[!UICONTROL 资产选择器]**&#x200B;图标（带有放大镜的文件夹），然后导航到资产。
