@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: 'Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。 '
 translation-type: tm+mt
-source-git-commit: 80c135b5527764d7c4edd541118870e4d5b0f8cf
+source-git-commit: ba80e5753b3b761c15805d8caf8ed9f87fc551dd
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2021.02.0 |
+| 版本 | 2021.03.0 |
 | 类型 | 连续更新 |
 | 发行日期 | 持续更新 |
 
