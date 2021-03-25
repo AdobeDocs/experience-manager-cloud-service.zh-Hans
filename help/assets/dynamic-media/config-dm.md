@@ -3,9 +3,9 @@ title: 配置 Dynamic Media 云服务
 description: 了解如何将Adobe Experience Manager中的Dynamic Media配置为Cloud Service。
 topic: 管理员
 translation-type: tm+mt
-source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
+source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 关于配置Dynamic Media Cloud Service {#configuring-dynamic-media}
 
-如果您将Adobe Experience Manager用于不同的环境，如开发、升级和实时生产，请为这些环境中的每个配置Dynamic MediaCloud Services。
+如果将Adobe Experience Manager用于不同的环境（如开发、暂存和实时生产），请为这些环境中的每个配置Dynamic MediaCloud Services。
 
 ## Dynamic Media{#architecture-diagram-of-dynamic-media}的架构图
 
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 1. 将主源资产作为Cloud Service上传到Adobe Experience Manager时，该资产将复制到Dynamic Media。 此时，Dynamic Media将处理所有资产处理和再现生成，如图像的视频编码和动态变体。
 1. 生成演绎版后，Experience Manager作为Cloud Service可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件作为Cloud Service实例发送回Experience Manager)。
-1. 在内容准备好发布和批准后，它会触发Dynamic Media服务，将内容推送到投放服务器并缓存CDN中的内容。
+1. 在内容准备好发布和批准后，它会触发Dynamic Media服务，将内容推送到投放服务器并在CDN(内容投放网络)缓存内容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -376,7 +376,9 @@ Adobe建议对PDF、PostScript®和PSD文件使用以下“调整”作业参数
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+要更新任何这些参数，请参阅[编辑支持的格式的MIME类型](#editing-mime-types-for-supported-formats)。
+
+另请参阅[添加不支持的格式](#adding-mime-types-for-unsupported-formats)的MIME类型。
 
 #### 更新Granite临时工作流队列{#updating-the-granite-transient-workflow-queue}
 
