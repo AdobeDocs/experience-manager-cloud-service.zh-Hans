@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: 发行信息
 role: 领导者，架构师，开发人员，数据架构师，数据工程师，管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 1d64fe00e9694721073fa6a47a9b2cbd82e5b8ae
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '122'
 ht-degree: 91%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 91%
 + 发行说明 {#release-notes}
    + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021年{#2021}
+      + [2021.2.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [2021.1.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020年{#2020}
       + [2020.12.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
