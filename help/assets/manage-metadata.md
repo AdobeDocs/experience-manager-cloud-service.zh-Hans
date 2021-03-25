@@ -4,7 +4,7 @@ description: 了解元数据的类型，以及如何 [!DNL Adobe Experience Mana
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 15%
@@ -62,7 +62,7 @@ ht-degree: 15%
 
 两种基本类型的元数据是技术性元数据和描述性元数据。
 
-技术性元数据对于处理数字资产的软件应用程序而言非常有用，因此不应该手动维护。[!DNL Experience Manager Assets] 而其他软件会自动确定技术性元数据，并且在修改资产时，元数据可能会发生更改。资产的可用技术性元数据主要取决于资产的文件类型。技术元数据的一些示例包括：
+技术性元数据对于处理数字资产的软件应用程序而言非常有用，因此不应该手动维护。[!DNL Experience Manager Assets] 而其他软件会自动确定技术性元数据，并且修改资产时，元数据可能会发生更改。资产的可用技术性元数据主要取决于资产的文件类型。技术元数据的一些示例包括：
 
 * 文件的大小。
 * Dimension（高度和宽度）。
@@ -116,7 +116,7 @@ Enterprise Manager资产允许您同时编辑多个资产的元数据，以便�
 
 >[!NOTE]
 >
->批量编辑方法适用于文件夹或收藏集中的可用资产。 对于跨文件夹可用或符合通用标准的资产，可以在搜索](/help/assets/search-assets.md#metadataupdates)后，[批量更新元数据。
+>批量编辑方法适用于文件夹或收藏集中的可用资产。 对于跨文件夹可用或符合通用标准的资产，可以在搜索](/help/assets/search-assets.md#metadata-updates)后，[批量更新元数据。
 
 1. 导航到要编辑的资产所在的位置。
 1. 选择要编辑其通用属性的资产。
