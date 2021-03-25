@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 translation-type: tm+mt
-source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
+source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 1%
@@ -161,7 +161,6 @@ Cloud环境上的线程转储会持续收集，但此时无法以自助方式下
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 对于生产项目，对开发人员控制台的访问由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙箱项目，具有产品用户档案的任何用户都可以使用开发人员控制台，这样他们就可以以Cloud Service的形式访问AEM。 对于所有项目，状态转储都需要“云管理器 — 开发人员角色”，并且必须在创作和发布服务的AEM用户或AEM管理员产品用户档案中定义用户，才能视图来自两个服务的状态转储数据。 有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
-
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
