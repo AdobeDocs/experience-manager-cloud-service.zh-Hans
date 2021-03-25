@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] 作为 [!DNL Cloud Service]的显着变化'
 description: 与[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 有显着变化。
 translation-type: tm+mt
-source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
+source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '757'
+ht-degree: 6%
 
 ---
 
@@ -31,14 +31,6 @@ ht-degree: 4%
 *  早期版本中的默认工作流程 **[!UICONTROL DAM 资产更新]**&#x200B;不再可用。[!DNL Experience Manager]相反，资产微服务提供了可扩展、随时可用的服务，涵盖大多数默认资产处理(演绎版、元数据提取和用于索引的文本提取)。
    * 请参阅[配置和使用资产microservices](/help/assets/asset-microservices-configure-and-use.md)
    * 要在处理过程中具有自定义的工作流步骤，可以使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。
-* 不支持元数据写回。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)中的[元数据写回。
-* 使用包管理器上传的资产需要使用[!DNL Assets]用户界面中的&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作手动进行重新处理。
-* [!DNL Assets] 不会自动检测已上传资产的MIME类型。没有扩展或扩展不正确的数字资产不会根据需要进行处理。 例如，上传此类资产时，资产可能不会发生任何情况或应用不正确的处理用户档案。 用户仍可以存储二进制文件，而无需在DAM中扩展名。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME类型检测。
-* [!DNL Experience Manager] as不 [!DNL Cloud Service] 会为复合资产生成子资产。请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。
-* [!DNL Assets] 主页体验不可用。请参见[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)。
-* 重复资产检测与[在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的工作方式不同。
-* 与早期的[!DNL Experience Manager]版本相比，仅用于放置(FPO)再现的生成方式有所不同。 请参阅 [!DNL Experience Manager] 的[FPO再现作为 [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)。
-* 上传ZIP存档时，作为[!DNL Cloud Service]的[!DNL Experience Manager]不会提取该存档中绑定的资产。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)中的[ZIP提取。
 
 使用资产微服务生成的标准演绎版使用相同的命名约定以向后兼容的方式存储在资产存储库节点中。
 
@@ -50,9 +42,22 @@ Asset microservices是一种云本机服务，可自动配置并连接到Cloud M
 
 要对代码和流程（包括资产摄取和处理）进行端对端验证，请使用[管道](/help/implementing/cloud-manager/configure-pipeline.md)将代码更改部署到云开发环境，并在资产微服务处理完全执行时进行测试。
 
-## 删除了经典 UI {#classic-ui}
 
-经典UI在[!DNL Experience Manager]中不再作为[!DNL Cloud Service]可用。 只有触屏优化UI才可用。
+## 与[!DNL Experience Manager] 6.5 {#cloud-service-feature-status}的功能奇偶校验
+
+[!DNL Experience Manager] 为现 [!DNL Cloud Service] 有功能引入了许多新功能和更高性能的工作方式。但是，当从[!DNL Experience Manager] 6.5移动到[!DNL Experience Manager]作为[!DNL Cloud Service]时，您可能会注意到某些功能的工作方式不同、不可用或部分可用。 以下是这些功能的列表:
+
+| 功能或用例 | [!DNL Experience Manager]中的状态为[!DNL Cloud Service] | 评论 |
+|-----|-----|-----|
+| [重复资产检测](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 工作方式不同。 | 请参见[它在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的工作方式。 |
+| [仅用于放置(FPO)再现](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 工作方式不同 |  |
+| 元数据写回 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)中的[元数据写回 |
+| 处理使用包管理器上传的资产 | 需要手动干预。 | 使用&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作手动重新处理。 |
+| MIME类型检测 | 不受支持. | 如果您上传的数字资产没有扩展名或扩展名不正确，可能无法按需要进行处理。 用户仍可以存储二进制文件，而无需在DAM中扩展名。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME类型检测。 |
+| 复合资产的子资产生成 | 不受支持. | 未完成从属使用案例。 例如，多页PDF文件的批注会受到影响。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 |
+| 主页 | 不受支持. | 请参阅[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| 从ZIP存档提取资源 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)中的[ZIP提取。 |
+| 经典 UI | 不受支持. | 只有触屏优化UI才可用。 |
 
 >[!MORELIKETHIS]
 >
