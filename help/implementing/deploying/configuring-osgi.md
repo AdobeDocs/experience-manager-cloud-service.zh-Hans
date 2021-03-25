@@ -3,9 +3,9 @@ title: 将Adobe Experience Manager的OSGi配置为Cloud Service
 description: '具有机密值和特定于环境的值的OSGi配置 '
 feature: 部署
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ OSGi的常见情况使用内联OSGi配置值。 特定于环境的配置仅用�
 * 值隐式绑定到代码部署
 * 它们不需要任何额外的部署考虑或协调
 
-无论何时定义OSGi配置值(与内联值开始)，任何只选择机密或环境特定配置（如果用例需要）。
+只要定义OSGi配置值，就使用内联值进行开始，并且只在用例需要时选择机密或特定于环境的配置。
 
 ### 何时使用非机密环境特定配置值{#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -194,6 +194,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 客户只应将此技术用于与其自定义代码相关的OSGI配置属性；它不能用于覆盖Adobe定义的OSGI配置。
+
+>[!NOTE]
+>
+>占位符不能用在[repoint语句](/help/implementing/deploying/overview.md#repoinit)中。
 
 ### 密钥配置值{#secret-configuration-values}
 
