@@ -2,10 +2,10 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
+source-git-commit: 3a21441f11d59a8d2a706bda8e1676aa072650b3
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 2%
+source-wordcount: '1318'
+ht-degree: 3%
 
 ---
 
@@ -23,51 +23,62 @@ ht-degree: 2%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为Cloud Service2021.2.0的发布日期为2021年2月25日。
-以下版本(2021.3.0)将于2021年3月25日发布。
+[!DNL Adobe Experience Manager]作为Cloud Service2021.3.0的发布日期为2021年3月25日。
+以下版本(2021.4.0)将于2021年4月29日发布。
 
 ## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
 
-* **[RemotePage组件](/help/implementing/developing/hybrid/remote-page.md)**:增加了在AEM中使用查看和编辑外部SPA的支持。
-
-* **[在AEM中编辑外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)**:添加了将独立单页应用程序上传到AEM实例、添加内容的可编辑部分以及启用创作的功能。
-
-<!--
-### Progressive Web Apps (PWAs) {#pwa}
-
-* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
--->
+* [现在，可以通过简单配置在项目](/help/sites-cloud/authoring/features/enable-pwa.md) 级别启用网站的渐进式Web应用程序(PWA)版本。
+* 内容片段模型扩展 — 现在可以将多行文本数据类型定义为多字段列表。
+* 内容片段编辑器UX增强 — 嵌套子片段现在以痕迹导航显示，并改进了发布、保存和保存退出操作的视图
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-## [!DNL Assets] {#what-is-new-assets}中的新增功能
+### [!DNL Assets] {#what-is-new-assets}中的新增功能
 
-* [!DNL Experience Manager Assets] as [!DNL Cloud Service] 有权拥有预配置的实 [!DNL Brand Portal] 例。[!DNL Cloud Manager]用户可以在[!DNL Experience Manager Assets]上以[!DNL Cloud Service]的形式激活[!DNL Brand Portal]。 请参阅[激活Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)。
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-* 企业现在可以使用[!DNL Brand Portal]来源资产。 资产来源功能利用[!DNL Brand Portal]来帮助客户与代理用户互动，为新的营销活动、照片和项目寻找资产。 请参阅 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)中的[资产来源补充。
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* [!DNL Brand Portal]使用情况报告现在仅显示活动用户。 不活动的用户现在不显示。 活动用户是将其帐户分配给[!DNL Admin Console]中的产品用户档案的用户。 请参阅[[!DNL Brand Portal] 报告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* 在[!DNL Brand Portal]中，引入了新的下载设置，允许您在下载文件夹、集合等时为每个资产创建单独的文件夹。 请参阅[下载设置](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
+Ability to select a root path. select if a minimum number of tags is required. 
 
-## [!DNL Assets] {#bug-fixes-assets}中的错误修复
+Add a Boolean or radio widget type to metadata schema setup. -->
 
-* 在解决命名冲突后创建现有资产的新版本时，将覆盖原始资产的元数据。 (CQ-4313594)
-* 打印带有长注释文本的资产时，即使有空间，注释文本也会被裁切。 (CQ-4314101)
-* 当选择多个资产以更新属性时，有时会发生错误，或者取消选择的资产的属性会被更新。 (CQ-4316532)
-* 尝试打开[!UICONTROL 资产管理搜索边栏]时，页面仍为空，单击[!UICONTROL 编辑] > [!UICONTROL 设置]会生成错误。 (CQ-4315079)
+* [!DNL Experience Manager] 扩展了“已连接资产”功能，支持在支 [!DNL Dynamic Media] 持的核心组件中使用图像。请参阅[使用连接的资产](/help/assets/use-assets-across-connected-assets-instances.md)。
+* Experience Manager管理员可以在特定日期或时间计划批量资产摄取。 此外，管理员可以根据日期和时间计划循环摄取。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
+
+### [!DNL Assets] {#bug-fixes-assets}中的错误修复
+
+* 尝试下载多个受版权管理的资产时，不会显示版权页面。 (CQ-4314403)
+* 选择编辑INDD文件时，分辨率会意外更改。 (CQ-4317376)
+* 在PDF演绎版中，只有InDesign模板的最后一页。 (CQ-4317305)
+* 当选取器是复杂元数据模式的一部分时，打开标记选取器需要很长时间。 (CQ-4316426)
+* 上传的资产的文件名与现有资产文件名相同时，不会显示名称冲突对话框以提示用户创建版本。 (CQ-4315424)
+* 文件夹元数据属性可从文件夹的“属性”页面的弹出菜单中设置和保存。 选择内容保存在存储库中时，在再次打开文件夹元数据属性时不显示。 (CQ-4314429)
+* 文件名包含空格或特殊字符的资产可通过浏览器上传。 (CQ-4318381)
+
+## [!DNL Adobe Experience Manager Forms] a  [!DNL Cloud Service] {#forms}
+
+AEM Forms多年来一直帮助许多组织提供出色的入职和注册体验。 这些体验帮助组织将销售线索转换为销售线索、处理捕获的客户数据、根据受众用户档案提供响应式体验等。 现在，AEM Forms可作为云服务提供。
+
+您可以使用[AEM Forms作为Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)创建数字表单、将表单连接到现有数据源、将表单与Adobe Sign集成以向表单添加电子签名、生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可以将您现有的PDF forms转换为数字表单。 除标准AEM Forms功能外，该服务还优惠了几个云本机功能，如自动扩展、升级零停机和云本机开发环境。 阅读[此博客文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)，了解AEM Forms作为Cloud Service的功能和特性。
+
+您可以联系Adobe代表进行演示或注册服务。
 
 ## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 产品体验管理：使用Experience Fragments单独丰富产品目录页面。
+* 支持Magento 2.4.2
 
-* 可显示链接资产和体验片段的扩展产品控制台属性，包括快速导航到相关内容的操作。
+* 现在可以在任何内容页面上使用和配置产品详细信息组件
 
-* 已发布CIF委内瑞拉参考站点 — 2021.02.24，其中包括最新的CIF核心组件版本v1.8.0。有关更多详细信息，请参阅[CIF委内瑞拉参考站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24)。
+* 已发布CIF委内瑞拉参考站点 — 2021.03.25，其中包括最新的CIF核心组件版本v1.9.0。有关更多详细信息，请参阅[CIF委内瑞拉参考站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)。
 
-* 已发布CIF核心组件v1.8.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)。
+* 已发布CIF核心组件v1.9.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)。
+
 
 ## Cloud Manager {#cloud-manager}
 
@@ -77,7 +88,6 @@ ht-degree: 2%
 
 AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11日。
 下一版本计划于2021年4月08日发布。
-
 
 ### 新增功能 {#what-is-new-march}
 
@@ -121,42 +131,6 @@ AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11�
 
 * 所有现有生产管道将通过体验审核步骤自动启用。
 
-
-### 发布日期 {#release-date-cm}
-
-AEM中Cloud Manager作为Cloud Service 2021.2.0的发布日期为2021年2月11日。
-
-### 新增功能 {#what-is-new-cloud-manager}
-
-
-* Assets客户现在可以通过Cloud Manager UI以自助方式选择何时何地部署其Brand Portal实例。 对于具有资产解决方案的常规（非沙箱）项目，现在可以在生产环境上设置Brand Portal。 在生产环境上只能执行一次设置。
-
-* 在“项目”和“沙箱创建”中使用的AEM Project原型已更新为版本25。
-
-* 在代码扫描过程中识别的已弃用API的列表已得到改进，以包括最新Cloud Service SDK版本中已弃用的其他类和方法。
-
-* SonarQube 用户档案 for Cloud Manager已更新以删除Sonar规则squid:S2142。 这不再与“线程中断检查”冲突。
-
-* Cloud Manager UI将通知暂时无法添加/更新域名的用户，因为关联的环境已连接正在运行的管道，或者当前正在等待批准步骤。
-
-* 现在，将动态删除客户`pom.xml`文件中设置的属性，以避免生成和质量扫描失败。
-
-* Cloud Manager UI将通知用户，如果当前正在部署的域名正在使用SSL证书，则该用户可能暂时无法选择该证书。
-
-* 已添加其他代码质量规则，以解决Cloud Service兼容性问题。
-
-### 错误修复 {#bug-fixes-cloud-manager}
-
-* 与域名匹配的SSL证书不再区分大小写。
-
-* 现在，如果证书私钥不符合2048位限制，Cloud Manager用户界面将通知用户，并显示相应的错误消息。
-
-* Cloud Manager UI将通知用户，如果当前正在部署的域名正在使用SSL证书，则用户可能暂时无法选择该证书。
-
-* 在某些情况下，内部问题可能导致环境删除卡住。
-
-* 某些管线故障被错误地报告为管线错误。
-
 ## 内容传输工具 {#content-transfer-tool}
 
 ### 发布日期 {#release-date-ctt}
@@ -166,7 +140,6 @@ AEM中Cloud Manager作为Cloud Service 2021.2.0的发布日期为2021年2月11�
 ### 错误修复 {#bug-fixes-ctt}
 
 * CTT正在跳过名称相同但名称带有连字符的文件夹中的内容。 此问题已解决。
-
 
 ### 发布日期 {#release-date-ctt-march}
 
@@ -181,53 +154,19 @@ AEM中Cloud Manager作为Cloud Service 2021.2.0的发布日期为2021年2月11�
 
 * 从特定路径迁移内容时，CTT正在调用不相关的资源。 已修复
 
-
-### 发布日期 {#release-date-ctt-feb}
-
-内容传输工具v1.2.4的发布日期为2021年2月10日。
-
-### 错误修复 {#bug-fixes-ctt-feb}
-
-* 映射多个用户时，某些用户的IMS ID映射不正确。 此问题已解决。
-
-### 发布日期 {#release-date-ctt-feb01}
-
-内容传输工具v1.2.2的发布日期为2021年2月01日。
-
-### 内容传输工具{#what-is-new-ctt}的新增功能
-
-* 内容传输工具 — 用户映射工具新增功能和UI。 此功能会自动将现有用户和用户组映射到其AdobeIdentity Management系统ID，作为内容迁移活动的一部分。
-有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
-* 内容传输工具现在可迁移迁移集中引用的所有组和用户，包括子项。
-* 在创建迁移集时，允许用户选择`/etc`下的某些路径。
-
 ## 最佳实践分析器{#best-practices-analyzer}
-
-### 发布日期 {#release-date-bpa-march}
-
-Best Practices Analyzer v2.1.8的发布日期为2021年3月22日。
-
-### 最佳实践分析器{#what-is-new-bpa-march}的新增功能
-
-* 能够从UI中的BPA报表以及导出为CSV文件的报表中过滤出ACS共享资源查找结果。
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.2的发布日期为2021年2月18日。
+Best Practices Analyzer v2.1.8的发布日期为2021年3月22日。
 
 ### 最佳实践分析器{#what-is-new-bpa}的新增功能
 
-* 能够检测AEM Forms和AEM Forms实施的使用情况并指示与作为Cloud Service迁移到AEM Forms相关的领域。
-* 能够检测并报告自定义组件和模板的使用情况和计数。
-* 能够检测使用的节点存储和数据存储的类型。
-* 能够检测Dynamic Media的使用情况。
-* 能够检测使用的Java版本。
+* 能够从UI中的BPA报表以及导出为CSV文件的报表中过滤出ACS共享资源查找结果。
 
 ## 代码重构工具 {#code-refactoring-tools}
 
 ### 代码重构工具{#what-is-new-crt}的新增功能
-
-* 已发布AIO-CLI插件的新版本。 此插件的最新版本包括存储库Modernizer和调度程序转换器的几个新增功能和错误修复。    请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以了解有关此插件的更多信息。
 
 * Repository Modernizer的新增功能和增强功能。 请参阅[GitHub资源：最新版本的存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
    * 将OSGi配置（RepoInit配置除外）标准化为首选.cfg.json格式。
@@ -239,30 +178,3 @@ Best Practices Analyzer v2.1.2的发布日期为2021年2月18日。
    * 为不同包含创建单独文件，而不是在内容中排列。
    * 能够同时处理vhosts的文件夹路径和vhost文件的路径。
    * 生成客户配置范围在600个以上的农场文件。
-
-## [!DNL Adobe Experience Manager] 作为Cloud Service基础  {#aem-as-a-cloud-service-foundation}
-
-### 已知问题 {#known-issues-foundation}
-
-**由于Build Analyzer插件出现问题，某些生成可能会失败**
-
-在某些情况下，在执行`aemanalyser-maven-plugin`时项目生成可能会失败，并显示以下错误消息：
-
-```
-[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
- 
-Was expecting one of:
- 
-     
- 
-[ERROR] Analyser detected errors on feature
-```
-
-**解决方法**
-
-要解决此问题，请在父`pom.xml`文件中选择`aemanalyser-maven-plugin`的最新版本：
-
-```xml
-<aemanalyser.version>0.9.2</aemanalyser.version>
-```
-
