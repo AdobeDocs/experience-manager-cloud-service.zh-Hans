@@ -2,9 +2,9 @@
 title: 将您的数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >如果启用资产分析以通过[!DNL Adobe Analytics]跟踪展示次数或点击次数，则重新生成的资产ID将使在[!DNL Analytics]上为资产捕获的数据无效。
 
-要在[!DNL Assets]中保留重复资产，请单击&#x200B;**[!UICONTROL 保留]**。 要删除您上传的重复资产，请点按/单击&#x200B;**[!UICONTROL 删除]**。
+要在[!DNL Assets]中保留重复资产，请单击&#x200B;**[!UICONTROL 保留]**。 要删除您上传的重复资产，请单击&#x200B;**[!UICONTROL 删除]**。
 
 ### 文件名处理和禁用字符{#filename-handling}
 
