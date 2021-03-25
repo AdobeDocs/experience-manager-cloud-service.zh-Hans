@@ -2,9 +2,9 @@
 title: 将您的数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -174,8 +174,20 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 练习]:调用批量摄取的测试运行。
    * [!UICONTROL 运行]:执行所选配置。
    * [!UICONTROL 停止]:终止活动配置。
+   * [!UICONTROL 计划]:设置一次性或循环计划以收录资产。
    * [!UICONTROL 作业状态]:视图配置在当前导入作业中或用于已完成作业时的状态。
+   * [!UICONTROL 作业历史]:作业的以前实例。
    * [!UICONTROL 视图资产]:视图目标文件夹（如果存在）。
+
+   ![用于收录器配置的工具栏选项](assets/bulk-ingest-toolbar-options.png)
+
+要计划一次性或重复的批量导入，请执行以下步骤：
+
+1. 创建批量导入配置。
+1. 选择配置，然后从工具栏中选择&#x200B;**[!UICONTROL 计划]**。
+1. 设置一次性摄取或计划，每小时、每天或每周计划。 单击&#x200B;**[!UICONTROL 提交]**。
+
+   ![计划批量收录作业](assets/bulk-ingest-schedule1.png)
 
 ## 使用桌面客户端{#upload-assets-desktop-clients}上传资源
 
