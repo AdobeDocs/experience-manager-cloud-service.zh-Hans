@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] 作为 [!DNL Cloud Service]的显着变化'
 description: 与[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 有显着变化。
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Asset microservices是一种云本机服务，可自动配置并连接到Cloud M
 | MIME类型检测 | 不受支持. | 如果您上传的数字资产没有扩展名或扩展名不正确，可能无法按需要进行处理。 用户仍可以存储二进制文件，而无需在DAM中扩展名。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME类型检测。 |
 | 复合资产的子资产生成 | 不受支持. | 未完成从属使用案例。 例如，多页PDF文件的批注会受到影响。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 |
 | 主页 | 不受支持. | 请参阅[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| 从ZIP存档提取资源 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)中的[ZIP提取。 |
+| 从ZIP存档提取资源 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP提取。 |
 | 经典 UI | 不受支持. | 只有触屏优化UI才可用。 |
 
 >[!MORELIKETHIS]
