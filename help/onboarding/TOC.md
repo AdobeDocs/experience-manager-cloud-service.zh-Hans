@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: 部署
 role: 架构师、开发人员
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '683'
 ht-degree: 31%
 
 ---
@@ -94,8 +94,6 @@ ht-degree: 31%
       + [2020.4.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [2020.3.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [2020.2.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + 了解角色和职责{#getting-access-to-aem-in-cloud}
-      + [了解角色和职责](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + 数据隐私和保护已准备就绪 {#data-privacy}
    + [用于数据保护和数据隐私法规的 AEM 已准备就绪](data-privacy-and-protection-readiness/aem-readiness.md)
    + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
