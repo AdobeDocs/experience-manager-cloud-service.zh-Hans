@@ -1,10 +1,10 @@
 ---
 title: 内容片段模型
-description: 内容片段模型用于创建包含结构化内容的内容片段。
+description: 了解内容片段模型如何作为AEM中无头内容的基础，以及如何使用结构化内容创建内容片段。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2199'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # 内容片段模型 {#content-fragment-models}
 
-内容片段模型定义[内容片段](/help/assets/content-fragments/content-fragments.md)的内容结构。
+AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/content-fragments/content-fragments.md)用作无头内容的基础。
 
 要使用内容片段模型，请执行以下操作：
 
