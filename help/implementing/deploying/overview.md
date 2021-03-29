@@ -3,7 +3,7 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: 部署
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
 ht-degree: 1%
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 客户通过Cloud Manager将自定义代码部署到云环境。 应当注意的是，Cloud Manager会将本地组合的内容包转换为符合Sling特征模型的伪像，即在云环境中运行时，AEM应用程序是如何描述为Cloud Service应用程序的。 因此，在查看云环境上的包管理器中的包时，名称将包括“cp2fm”，转换的包将删除所有元数据。 它们无法与之交互，这意味着它们无法下载、复制或打开。 有关转换器的详细文档可在此](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)找到。[
 
-作为Cloud Service应用程序写入的AEM内容包必须在不可变内容和可变内容之间保持清晰的隔离，Cloud Manager将通过失败生成来强制执行，并输出如下消息：
+为AEM作为Cloud Service应用程序编写的内容包必须在不可变内容和可变内容之间保持清晰的隔离，Cloud Manager将仅安装可变内容，并输出如下消息：
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
