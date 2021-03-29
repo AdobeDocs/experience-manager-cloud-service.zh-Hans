@@ -2,17 +2,17 @@
 title: AEM 现代化工具
 description: 'AEM 现代化工具 '
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # AEM 现代化工具 {#aem-moderization-tools}
 
-AEM 现代化工具套件为 AEM 开发团队提供了将当前的旧版 AEM 功能转换为当前受支持功能的工具。
+AEM现代化工具提供了一套实用工具，可将旧版AEM功能转换为AEM作为Cloud Service所支持的现代功能。
 
 
 ## 简介 {#introduction}
