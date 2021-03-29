@@ -1,20 +1,22 @@
 ---
 title: 元数据 - 片段属性
-description: 您可以视图和编辑内容片段的元数据（属性）。
+description: 了解如何视图和编辑AEM中内容片段的元数据属性以调整无外设内容。
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 10%
+source-wordcount: '140'
+ht-degree: 8%
 
 ---
 
 
-# 元数据 - 片段属性{#metadata-fragment-properties}
+# 元数据 - 片段属性 {#metadata-fragment-properties}
 
-## 编辑属性／元数据{#editing-properties-meta-data}
+了解如何视图和编辑AEM中内容片段的元数据属性以调整无外设内容。
 
-您可以视图和编辑内容片段的元数据（属性）:
+## 编辑属性/元数据{#editing-properties-meta-data}
+
+您可以视图和编辑内容片段的元数据（属性）：
 
 1. 在&#x200B;**资产**&#x200B;控制台中，导航到内容片段的位置。
 2. 可以任选其一：
@@ -26,8 +28,8 @@ ht-degree: 10%
 
 3. **基本**&#x200B;选项卡提供了可进行视图或编辑的选项：
 
-   * 缩略图，可以&#x200B;**上传图像**
-   * **内容片** 段模型指示用于创建当前片段的模型
+   * 缩览图，您可以为其&#x200B;**上载图像**
+   * **内容片** 段模型链接用于创建当前片段的模型
    * **标题**
    * **描述**
    * **标记**
