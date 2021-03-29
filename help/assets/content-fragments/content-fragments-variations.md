@@ -1,10 +1,10 @@
 ---
 title: 变量 - 创作片段内容
-description: 变量允许您为片段创作内容，然后根据用途创建该内容的变量（如果需要）。
+description: 了解各种变量如何允许您为片段创作内容，然后根据目的创建该内容的变量，从而使AEM中的无头内容更加灵活。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2236'
+source-wordcount: '2255'
 ht-degree: 15%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # 变量 - 创作片段内容{#variations-authoring-fragment-content}
 
-[变](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 量是内容片段的重要功能，因为它们允许您创建和编辑主控内容的副本，以用于特定渠道和/或场景。
+[变](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 量是AEM内容片段的重要功能，它们允许您创建和编辑主控内容的副本，以用于特定渠道和/或场景，从而使无头内容投放更加灵活。
 
 在&#x200B;**变量**&#x200B;选项卡中，您可以：
 
