@@ -1,16 +1,18 @@
 ---
 title: 管理内容片段
-description: 内容片段以资产形式存储，因此主要通过“资产”控制台进行管理。
+description: 了解如何使用“资产”控制台管理AEM内容片段（无外设内容的基础）。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1640'
 ht-degree: 9%
 
 ---
 
 
-# 管理内容片段{#managing-content-fragments}
+# 管理内容片段 {#managing-content-fragments}
+
+了解如何使用“资产”控制台管理AEM内容片段（无外设内容的基础）。
 
 内容片段存储为&#x200B;**资产**，因此主要从&#x200B;**资产**&#x200B;控制台进行管理。
 
