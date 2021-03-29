@@ -1,10 +1,10 @@
 ---
 title: AEM GraphQL API，与内容片段一起使用
-description: 了解如何使用Adobe Experience Manager(AEM)中的内容片段作为AEM GraphQL API的无外设内容投放的Cloud Service。
+description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作AEM GraphQL API的Cloud Service，实现无外设内容投放。
 translation-type: tm+mt
-source-git-commit: b0bfcacb35f520045ee6ed6d427467490e012912
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '3233'
+source-wordcount: '3253'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,9 @@ ht-degree: 1%
 
 # AEM GraphQL API，用于内容片段{#graphql-api-for-use-with-content-fragments}
 
-Adobe Experience Manager作为Cloud Service(AEM)GraphQL API与内容片段一起使用，这在很大程度上是基于标准的开放源GraphQL API。
+了解如何将Adobe Experience Manager(AEM)中的内容片段用作AEM GraphQL API的Cloud Service，实现无外设内容投放。
+
+AEM作为Cloud ServiceGraphQL API与内容片段一起使用，这在很大程度上是基于标准的开放源GraphQL API。
 
 使用AEM中的GraphQL API，可以在无外设CMS实施中将内容片段高效投放到JavaScript客户端：
 
