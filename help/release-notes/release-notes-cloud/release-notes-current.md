@@ -2,7 +2,7 @@
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 translation-type: tm+mt
-source-git-commit: 3a21441f11d59a8d2a706bda8e1676aa072650b3
+source-git-commit: 8331ecb0797f878067a4f83d97e6ec2f62bb551a
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 3%
@@ -84,7 +84,7 @@ AEM Forms多年来一直帮助许多组织提供出色的入职和注册体验�
 
 本节概述AEM中作为Cloud Service 2021.3.0的Cloud Manager发行说明。
 
-## 发布日期 {#release-date-cm-march}
+### 发布日期 {#release-date-cm-march}
 
 AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11日。
 下一版本计划于2021年4月08日发布。
