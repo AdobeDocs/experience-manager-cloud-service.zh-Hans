@@ -1,44 +1,46 @@
 ---
-title: 内容片段——配置浏览器
-description: 了解如何在配置浏览器中启用某些内容片段功能。
+title: 内容片段 — 配置浏览器
+description: 了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM强大的无头投放功能。
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 19%
 
 ---
 
 
-# 内容片段——配置浏览器{#content-fragments-configuration-browser}
+# 内容片段 — 配置浏览器{#content-fragments-configuration-browser}
+
+了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM强大的无头投放功能。
 
 ## 为实例{#enable-content-fragment-functionality-instance}启用内容片段功能
 
 在使用内容片段之前，您需要使用&#x200B;**配置浏览器**&#x200B;来启用：
 
-* **内容片段模型** -必填
-* **GraphQL永久查询** -可选
+* **内容片段模型**  — 必填项
+* **GraphQL永久查询**  — 可选
 
 >[!CAUTION]
 >
->如果不启用&#x200B;**内容片段模型**，则创建&#x200B;**选项将不可用于创建新模型。**
+>如果未启用&#x200B;**内容片段模型**，则&#x200B;**创建**&#x200B;选项将不可用于创建新模型。
 
 要启用内容片段功能，您需要：
 
 * 通过配置浏览器启用内容片段功能
-* 将配置应用到您的资产文件夹
+* 将配置应用到您的Assets文件夹
 
 ### 在配置浏览器{#enable-content-fragment-functionality-in-configuration-browser}中启用内容片段功能
 
-要[使用某些内容片段功能](#creating-a-content-fragment-model),**必须首先通过**&#x200B;配置浏览器&#x200B;**启用它们：**
+要[使用某些内容片段功能](#creating-a-content-fragment-model),**必须**&#x200B;首先通过&#x200B;**配置浏览器**&#x200B;启用它们：
 
 >[!NOTE]
 >
->有关详细信息，另请参阅[配置浏览器：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)。
+>有关更多详细信息，另请参阅[配置浏览器：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)。
 
 >[!CAUTION]
 >
->子配置（嵌套在配置中的配置）不支持与内容片段一起使用。
+>不支持与内容片段一起使用子配置（嵌套在配置中的配置）。
 
 1. 导航到&#x200B;**工具**、**常规**，然后打开&#x200B;**配置浏览器**。
 
@@ -56,7 +58,7 @@ ht-degree: 21%
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### 将配置应用于您的资产文件夹{#apply-the-configuration-to-your-assets-folder}
+### 将配置应用到您的资产文件夹{#apply-the-configuration-to-your-assets-folder}
 
 为内容片段功能启用配置&#x200B;**global**&#x200B;后，将应用于任何资产文件夹。
 
