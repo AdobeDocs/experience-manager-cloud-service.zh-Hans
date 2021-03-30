@@ -2,31 +2,46 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 86%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
 
 # Experience Manager as a Cloud Service 入门 {#aem-onboarding-guide}
 
-本页列出了有关 Experience Manager as a Cloud Service 入门的自助资源。
+祝贺您以AEM为Cloud Service开始您的旅程！ 无论您是要部署新应用程序还是迁移现有应用程序，本指南都是您的起点，可确保您的应用程序经过优化并准备好在Cloud Service上取得成功。
 
 ## 关键入门文章 {#key-articles}
 
-此部分涵盖有关以下内容的关键文章：
+本节介绍从AEM作为Cloud Service开始时，重点介绍您旅程中的主要文章：
 
-* AEM入门Cloud Service
+**入职时的预计**
 
-* 了解控制特定功能可用性的用户的角色
+签订合同后，将进行以下事件:
 
-* 设置Cloud Manager的git存储库
+1. 贵组织的系统管理员将收到一封欢迎电子邮件，允许他们执行[管理员任务](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用户、将用户分配给角色，从而授予他们对云管理器的适当访问权限。
 
-* 访问 Experience Manager as a Cloud Service
+1. 由系统管理员添加的用户随后将收到一封欢迎电子邮件，通知他们有权访问Cloud Manager。 现在，用户可以从此处开始使用Cloud Manager的旅程。
 
-* 数据保护和隐私法规基础
+1. 此外，为了开发目的，用户还可以获得对AEM实例](/help/onboarding/what-is-required/accessing-aem-instance.md)的[访问权限。
+
+**团队、角色和权限**
+
+您的系统管理员可以添加用户并将其分配给Cloud Manager角色。 本节帮助您了解&#x200B;*云管理器角色*&#x200B;是什么，以及在开始之前与角色关联的权限。
+
+**系统管理员任务**
+
+系统管理员可以管理用户的各个方面，从访问权限到权限。 以下文档页面包含描述基本组织任务的信息，即[添加用户和将用户分配到Cloud Manager角色和权限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+
+
+**导航到Cloud Manager**
+
+访问Cloud Manager，开始使用AEM的云旅程。 现在，您已经添加为用户并分配到Cloud Manager角色，您可以执行各种任务，如创建项目、添加环境、管理Git、配置渠道和部署代码。
+
+**访问AEM实例**
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
