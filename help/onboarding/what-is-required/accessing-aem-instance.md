@@ -2,9 +2,9 @@
 title: '访问AEM实例 '
 description: 可查看本页以了解如何访问AEM实例
 translation-type: tm+mt
-source-git-commit: 7ab5c624ccb2b321462c9759946becd79d03689c
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 访问AEM实例{#accessing-aem-instance}
 
-请按照以下步骤从云管理器管理访问权限：
+请按照以下步骤从Cloud Manager访问AEM实例：
 
 1. 导航到Cloud Manager，然后单击&#x200B;**环境**&#x200B;卡中的&#x200B;**管理访问**&#x200B;按钮，如下所示。
 
