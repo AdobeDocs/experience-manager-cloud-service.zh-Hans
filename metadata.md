@@ -1,14 +1,14 @@
 ---
 product: adobe experience manager
-description: 这是AEMaaCS文档页面所需的元数据
+description: Adobe Experience Manager作为Cloud Service文档。
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hans
 index: y
 type: 文档
 solution: Experience Manager
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 1140a05a137ecebb443f69c9c93d9d82f5d4815c
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '91'
 ht-degree: 7%
 
 ---
