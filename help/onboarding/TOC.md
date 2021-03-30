@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: 部署
 role: 架构师、开发人员
 translation-type: tm+mt
-source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
+source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 31%
+source-wordcount: '672'
+ht-degree: 29%
 
 ---
 
@@ -19,24 +19,22 @@ ht-degree: 31%
 
 + [AEM as a Cloud Service 入门](/help/onboarding/home.md)
 + 将AEM作为Cloud Service{#what-is-required}入门
-   + [已授予的访问权限](what-is-required/access-rights-granted.md)
-   + [基于角色的权限](what-is-required/role-based-permissions.md)
-   + [源代码存储库](what-is-required/source-code-repository.md)
-+ 在云中获取 AEM 的访问权限 {#getting-access}
-   + [以Cloud Service的身份获取对Cloud Manager for AEM的访问权限](getting-access-to-aem-in-cloud/navigation.md)
-   + 访问 Cloud Manager {#cloud-service-programs}
-      + [Cloud Manager登陆页](getting-access-to-aem-in-cloud/first-time-login.md)
-      + [了解程序和程序类型](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + 生产项目{#production-programs}
-         + [简介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [创建生产项目](getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [编辑制作项目](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + 沙盒程序 {#sandbox-programs}
-         + [简介](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [创建沙箱项目](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [编辑沙箱项目](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [删除沙箱项目](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [冬眠和冬眠沙箱环境](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + [获取Adobe ID](what-is-required/get-your-adobe-id.md)
+   + [添加用户和分配到云管理器角色](what-is-required/add-users-assign-cm-roles.md)
+   + [导航到Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
+   + [访问AEM实例](/help/onboarding/what-is-required/accessing-aem-instance.md)
++ Cloud Manager项目{#getting-access}
+   + [了解程序和程序类型](getting-access-to-aem-in-cloud/understand-program-types.md)
+   + 生产项目{#production-programs}
+      + [简介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [创建生产项目](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [编辑制作项目](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + 沙盒程序 {#sandbox-programs}
+      + [简介](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [创建沙箱项目](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [编辑沙箱项目](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [删除沙箱项目](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [冬眠和冬眠沙箱环境](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
       + [配置 CI/CD 管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
