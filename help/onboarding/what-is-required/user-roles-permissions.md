@@ -2,10 +2,10 @@
 title: 用户角色和权限
 description: 本页介绍用户角色和权限。 可查看本页以了解如何添加用户并将其分配给Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 7%
+source-wordcount: '624'
+ht-degree: 6%
 
 ---
 
@@ -18,6 +18,10 @@ Adobe将在Adobe Identity Management系统(IMS)中为您的公司创建&#x200B;*
 
 Cloud Manager中的许多功能需要特定权限才能运行。
 
+Cloud Manager中的许多功能需要特定权限才能操作，并根据分配的角色和权限限制您在用户界面中执行的操作。 在某些情况下，如果您没有执行操作的权限，则会显示接口控件，但会禁用它。
+
+如果有要执行的操作，但无法执行，请检查与角色定义](#permissions)关联的[权限。 根据您的目标，您可以联系系统管理员并请求所需的角色。
+
 Cloud Manager当前为控制特定功能可用性的用户定义四个角色：
 
 * 业务所有者
@@ -28,6 +32,8 @@ Cloud Manager当前为控制特定功能可用性的用户定义四个角色：
 >[!NOTE]
 >Admin Console中的“开发人员”角色与[!UICONTROL 云管理器]中的“开发人员”角色无关。
 
+## 角色定义{#role-definitions}
+
 下表总结了这些角色：
 
 | [!UICONTROL Cloud ] Manager角色 | 描述 |
@@ -37,6 +43,12 @@ Cloud Manager当前为控制特定功能可用性的用户定义四个角色：
 | 部署管理器 | 管理部署操作。 使用[!UICONTROL Cloud Manager]执行舞台/生产部署。 可以编辑CI/CD管道。 可以批准重要的3层故障。 可获取对Git存储库的访问权限。 |
 | 开发人员 | 开发和测试自定义应用程序代码。 主要使用[!UICONTROL 云管理器]来视图状态。 可获取对Git存储库的代码提交访问权限。 |
 | 内容作者 | 通常不与[!UICONTROL 云管理器]交互。 可以使用[!UICONTROL 云管理器]项目切换器(已从[!UICONTROL Experience Cloud]导航)访问AEM。 |
+
+### 查看您的角色{#view-roles}
+
+要视图您在Cloud Manager中的角色，请登录Cloud Manager UI，选择右上角的用户档案图标，然后选择&#x200B;**用户角色**，如下图所示。
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### 集成产品用户档案{#integration-product-profile}
 
