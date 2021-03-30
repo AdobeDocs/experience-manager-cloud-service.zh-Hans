@@ -2,7 +2,7 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登陆页
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-在此处，具有相应权限的用户（如云管理器中的业务所有者角色）可以选择&#x200B;**添加项目**&#x200B;来启动向导。
+在此处，具有相应权限的用户（如云管理器中的业务所有者角色）能够选择&#x200B;**添加项目**&#x200B;以启动[向导](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)。
 
 要了解如何在云管理器中添加项目，请参阅：
 
