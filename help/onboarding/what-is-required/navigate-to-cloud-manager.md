@@ -2,9 +2,9 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登陆页
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 0%
 >[!NOTE]
 >您必须以用户身份添加，并由系统管理员分配给“云管理者”角色(Admin Console中的产品用户档案)。
 
-1. 在欢迎电子邮件中，选择&#x200B;**开始**&#x200B;或导航到[云管理器](https://experience.adobe.com)并使用Adobe ID登录。
+1. 在您的欢迎电子邮件中，单击&#x200B;**开始**，如下图所示，或导航到[Cloud Manager](https://experience.adobe.com)并使用Adobe ID登录。\
+   ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
 1. 选择&#x200B;**Experience Manager**。
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
@@ -34,7 +35,7 @@ ht-degree: 0%
 >[!NOTE]
 >根据在[!UICONTROL Cloud Manager]中分配的角色和应用程序的状态，您将在使用[!UICONTROL Cloud Manager] UI时看到不同的屏幕。
 
-您将看到下面描述的三个选项之一：
+您将看到以下三个选项之一：
 
 * **当云管理器中不存在项目时**
 
