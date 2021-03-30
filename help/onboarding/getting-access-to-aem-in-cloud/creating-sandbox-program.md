@@ -2,7 +2,7 @@
 title: '创建沙箱项目 '
 description: '创建沙箱项目 '
 translation-type: tm+mt
-source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
    ![](assets/first_timelogin1.png)
 
    >[!NOTE]
-   >要了解如何访问Cloud Manager，请参阅[Cloud Manager登陆页](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)以了解详细信息。
+   >要了解如何访问Cloud Manager，请参阅[Cloud Manager登陆页](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以了解详细信息。
 
 1. 在创建项目向导中，选择&#x200B;**设置沙箱**。 用户在选择&#x200B;**创建**&#x200B;之前提交项目名。
 
