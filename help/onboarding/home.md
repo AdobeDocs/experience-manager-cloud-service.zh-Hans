@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 translation-type: tm+mt
-source-git-commit: 834d41cfb9b2988b5e7ffa03ad0f45d78c53f915
+source-git-commit: b3f9d750c2103f2af97b8348dcdb24a80a06fa06
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '692'
 ht-degree: 47%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 47%
 
 # Experience Manager as a Cloud Service 入门 {#aem-onboarding-guide}
 
-祝贺您以AEM为Cloud Service开始您的旅程！ 无论您是要部署新应用程序还是迁移现有应用程序，本指南都是您的起点，可确保您的应用程序经过优化并准备好在Cloud Service上取得成功。
+祝贺您以AEM为Cloud Service开始您的旅程！ 无论您是部署新应用程序还是迁移现有应用程序，本指南都是您的起点，可确保您的应用程序已得到优化并可在Cloud Service上成功。
 
 ## 关键入门文章 {#key-articles}
 
@@ -35,7 +35,7 @@ ht-degree: 47%
 
 **[系统管理员任务](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-系统管理员可以管理用户的各个方面，从访问权限到权限。 以下文档页包含描述基本组织任务的信息：
+系统管理员可以管理用户的各个方面，从访问权限到权限。 以下文档包括描述基本组织任务的信息，例如：
 
 * 添加用户
 * 将用户分配到Cloud Manager角色和权限
