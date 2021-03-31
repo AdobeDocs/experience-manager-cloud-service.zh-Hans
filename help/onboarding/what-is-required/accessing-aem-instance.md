@@ -2,9 +2,9 @@
 title: '授予用户对AEM实例的访问权限 '
 description: 可查看本页以了解系统管理员如何授予用户对AEM实例的访问权限
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 授予用户对AEM实例{#accessing-aem-instance}的访问权限
 
-作为系统管理员，请按照以下步骤向用户授予对AEM实例的访问权限：
+作为系统管理员，请按照以下步骤授予用户对AEM实例的访问权：
 
 1. 导航到Cloud Manager，然后单击&#x200B;**环境**&#x200B;卡中的&#x200B;**管理访问**&#x200B;按钮，如下所示。
 
