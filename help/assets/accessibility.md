@@ -2,10 +2,12 @@
 title: ' [!DNL Experience Manager Assets]中的辅助功能'
 description: 了解 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中的辅助功能如何帮助残障用户。
 contentOwner: AG
+feature: 辅助功能，资源管理
+role: 业务从业者，架构师，领导者
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1919'
 ht-degree: 2%
 
 ---
