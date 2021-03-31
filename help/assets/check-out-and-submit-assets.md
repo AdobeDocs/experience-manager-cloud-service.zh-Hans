@@ -2,10 +2,12 @@
 title: 在 [!DNL Assets]中签入和签出文件
 description: 了解如何签出要编辑的资产，并在更改完成后重新签入。
 contentOwner: AG
+feature: 资产管理
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 8db9f899cee8f01a4c2aac93ccecc052f9780bc0
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
