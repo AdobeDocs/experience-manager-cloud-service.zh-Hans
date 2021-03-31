@@ -2,10 +2,12 @@
 title: 将资产、文件夹和收藏集共享为链接
 description: 本文描述如何将 [!DNL Experience Manager Assets] 中的资产、文件夹和收藏集共享为超链接。
 contentOwner: AG
+feature: 资产管理、协作、资产分发
+role: 业务从业者，管理员
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
