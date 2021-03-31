@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
+source-git-commit: d1727601bb5d70bea9920aa1d680284fb3d25bf0
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
@@ -79,7 +79,7 @@ AEM Commerce as a Cloud Service的入门是一个分两步的过程：
 1. 在云管理器中设置`COMMERCE_AUTH_HEADER`机密变量：
 
    ```bash
-   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
    ```
 
    请参阅[将AEM Commerce与Magento](#magento)连接，了解如何配置Adobe I/O CLI for Cloud Manager。
