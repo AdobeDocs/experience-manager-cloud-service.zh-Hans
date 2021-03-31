@@ -2,11 +2,12 @@
 title: 360/VR视频
 description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频。
 feature: 360 VR 视频
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
