@@ -2,10 +2,11 @@
 title: 配置 Dynamic Media 云服务
 description: 了解如何将Adobe Experience Manager中的Dynamic Media配置为Cloud Service。
 topic: 管理员
+role: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4057'
 ht-degree: 4%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # 关于配置Dynamic Media Cloud Service {#configuring-dynamic-media}
 
-如果将Adobe Experience Manager用于不同的环境（如开发、暂存和实时生产），请为这些环境中的每个配置Dynamic MediaCloud Services。
+如果您将Adobe Experience Manager用于不同的环境，如开发、升级和实时生产，请为这些环境中的每个配置Dynamic MediaCloud Services。
 
 ## Dynamic Media{#architecture-diagram-of-dynamic-media}的架构图
 
