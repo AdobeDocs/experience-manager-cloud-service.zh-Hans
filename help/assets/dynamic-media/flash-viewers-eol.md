@@ -1,12 +1,13 @@
 ---
 title: Flash 查看器生命周期终止通知
 description: 自2017年1月31日起，对Flash查看器平台的支持正式终止。
-topic: 业务从业者
+topic: 商务从业人员
+role: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 8%
+source-wordcount: '52'
+ht-degree: 11%
 
 ---
 
