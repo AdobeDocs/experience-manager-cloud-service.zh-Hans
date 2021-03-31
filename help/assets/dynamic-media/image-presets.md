@@ -2,12 +2,13 @@
 title: 应用 Dynamic Media 图像预设
 description: 了解如何在Dynamic Media中应用图像预设。
 feature: 图像预设、查看器、演绎版
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 34%
+source-wordcount: '313'
+ht-degree: 35%
 
 ---
 
