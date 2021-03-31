@@ -2,12 +2,13 @@
 title: 为响应式网站传送优化的图像
 description: 了解如何使用响应式代码功能从Dynamic Media投放优化的图像。
 feature: 资产管理
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 36%
+source-wordcount: '328'
+ht-degree: 37%
 
 ---
 
