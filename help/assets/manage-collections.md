@@ -3,10 +3,12 @@ title: 管理数字资产收藏集
 description: 了解Adobe Experience Manager资产中的收集概念。 了解如何与其他用户一起收藏、管理、编辑和收藏。
 contentOwner: AG
 mini-toc-levels: 1
+feature: 收藏集，资产管理
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2402'
 ht-degree: 26%
 
 ---
