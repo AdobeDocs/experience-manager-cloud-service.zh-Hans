@@ -2,10 +2,12 @@
 title: 使用AI生成的标记自动标记资源
 description: 使用人工智能服务标记资产，这些服务使用 [!DNL Adobe Sensei] 服务应用上下文和描述性业务标记。
 contentOwner: AG
+feature: 智能标记，标记
+role: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2806'
 ht-degree: 6%
 
 ---
