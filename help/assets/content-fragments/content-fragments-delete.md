@@ -1,11 +1,13 @@
 ---
 title: 内容片段 - 删除注意事项
 description: 在AEM中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是交付无标题内容的强大工具，删除这些内容的含义必须得到仔细考虑。
+feature: 内容片段
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 9%
+source-wordcount: '474'
+ht-degree: 10%
 
 ---
 
