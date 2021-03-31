@@ -1,10 +1,12 @@
 ---
 title: 管理内容片段
 description: 了解如何使用“资产”控制台管理AEM内容片段（无外设内容的基础）。
+feature: 内容片段
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1644'
 ht-degree: 9%
 
 ---
