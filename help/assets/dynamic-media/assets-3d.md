@@ -6,11 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Serv
 topic-tags: introduction
 content-type: reference
 feature: 3D资产
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 890b4d6b519ca682470d40c6615f17c228d233f9
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2273'
 ht-degree: 4%
 
 ---
