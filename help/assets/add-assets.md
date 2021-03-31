@@ -1,10 +1,12 @@
 ---
 title: 将您的数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
+feature: 资产管理，上传
+role: 业务从业者，管理员
 translation-type: tm+mt
-source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
