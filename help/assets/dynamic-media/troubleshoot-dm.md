@@ -2,10 +2,11 @@
 title: Dynamic Media 疑难解答
 description: 使用Dynamic Media时的疑难解答提示。
 topic: '"管理员，业务从业者"'
+role: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '996'
 ht-degree: 1%
 
 ---
