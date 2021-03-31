@@ -2,7 +2,7 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登陆页
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 1. 单击Cloud Manager卡中的&#x200B;**启动**。
 成功登录[!UICONTROL 云管理器]后，即可使用用户界面(UI)。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager登陆页{#cloud-manager-landing}
