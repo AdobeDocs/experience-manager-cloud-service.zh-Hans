@@ -2,15 +2,17 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登陆页
 translation-type: tm+mt
-source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
 
 # 导航到Cloud Manager {#cloud-manager}
+
+作为Cloud Service,Cloud Manager是AEM的重要部分。 它使组织能够在云中自行管理Experience Manager。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。使用用户界面，您可以配置和启动CI/CD管道。
 
 当您的系统管理员授予您对Cloud Manager的访问权限后，您将收到一封电子邮件，将带您进入Cloud Manager登录页面，也可通过[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)访问该页面。
 
