@@ -1,11 +1,13 @@
 ---
 title: 内容片段 — 配置浏览器
 description: 了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM强大的无头投放功能。
+feature: 内容片段
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 19%
+source-wordcount: '275'
+ht-degree: 20%
 
 ---
 
