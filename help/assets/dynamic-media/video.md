@@ -2,11 +2,12 @@
 title: 视频
 description: 了解如何在Dynamic Media中使用视频。
 feature: 视频配置文件
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9514'
 ht-degree: 22%
 
 ---
@@ -406,7 +407,7 @@ VBR编码时间较长，但产生最有利的结果；媒体文件的质量优�
 |--- |--- |--- |--- |
 | 源 | 1920 x 1080 | 1 | 3 |
 | 编码 | 960 x 540 | 2 | 2 |
-| 编码 | 640 x 360 | 3 | 1 |
+| 编码 | 640 x 360 | 3 | 3 |
 | 编码 | 480 x 270 | 4 | 4 |
 
 ### 编码视频文件格式 {#encoded-video-file-format}
