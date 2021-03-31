@@ -2,15 +2,21 @@
 title: '系统管理员任务 '
 description: 可查看本页以了解如何以系统管理员身份添加用户并将其分配给Cloud Manager角色
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 
 # 系统管理员任务{#add-users-assign}
+
+系统管理员可以管理用户的各个方面，从访问权限到权限。 此用户是第一个在Admin Console和Cloud Manager中执行任务的开始。
+系统管理员将执行以下组织任务:
+
+* 添加用户
+* 将用户分配到Cloud Manager角色和权限
 
 ## 添加用户{#add-users}
 
