@@ -2,12 +2,13 @@
 title: 传送 Dynamic Media 资产
 description: 了解如何交付Dynamic Media资产。
 feature: 资产管理
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 13%
+source-wordcount: '321'
+ht-degree: 14%
 
 ---
 
