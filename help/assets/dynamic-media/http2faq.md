@@ -2,10 +2,11 @@
 title: HTTP2 内容交付常见问题解答
 description: 了解HTTP2内容投放。
 topic: '"管理员，业务从业者"'
+role: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '792'
 ht-degree: 3%
 
 ---
