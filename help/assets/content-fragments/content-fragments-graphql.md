@@ -1,11 +1,13 @@
 ---
 title: 使用内容片段和GraphQL的无外设内容投放
 description: 了解如何将AEM内容片段与GraphQL结合使用，实现无外设内容投放。
+feature: 内容片段
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 0%
+source-wordcount: '720'
+ht-degree: 1%
 
 ---
 
