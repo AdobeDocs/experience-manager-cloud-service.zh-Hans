@@ -1,13 +1,14 @@
 ---
-title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
-description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0 版的发行说明。'
+description: '[!DNL Adobe Experience Manager] 作为2021.2.0的Cloud Service发行说明。'
 translation-type: tm+mt
-source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
+source-git-commit: 2920ab75fca1eaa3b8e3b1f75e9126632a026b6b
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
+
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 版的发行说明 {#release-notes}
