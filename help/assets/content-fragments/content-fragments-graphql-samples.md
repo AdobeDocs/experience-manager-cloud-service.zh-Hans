@@ -1,10 +1,11 @@
 ---
 title: 了解如何将GraphQL与AEM结合使用 — 示例内容和查询
 description: 了解如何通过探索示例内容和查询，将GraphQL与AEM结合使用来无头地提供内容。
+feature: 内容片段，GraphQL API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1422'
 ht-degree: 6%
 
 ---
