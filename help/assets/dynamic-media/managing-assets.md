@@ -2,12 +2,13 @@
 title: 关于管理Dynamic Media资产
 description: 了解如何使用Dynamic Media资源。
 feature: 资产管理
-topic: 业务从业者
+topic: 商务从业人员
+role: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 37%
+source-wordcount: '126'
+ht-degree: 38%
 
 ---
 
