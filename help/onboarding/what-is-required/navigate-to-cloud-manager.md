@@ -2,7 +2,7 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登陆页
 translation-type: tm+mt
-source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -24,7 +24,7 @@ ht-degree: 7%
 
    或者，
 
-   1. 从[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)导航到Cloud Manager登录页
+   1. 从[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)导航到Cloud Manager登录页。
 
    1. 选择&#x200B;**Experience Manager**。
       ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
