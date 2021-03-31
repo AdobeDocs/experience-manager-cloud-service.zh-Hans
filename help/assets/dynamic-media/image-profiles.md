@@ -2,12 +2,13 @@
 title: Dynamic Media 图像配置文件
 description: “了解如何创建包含USM锐化设置、智能裁切或智能色板，或同时包含这两个设置的Dynamic Media图像用户档案。 然后，将用户档案应用到图像资产的文件夹。”
 feature: 资产管理，图像用户档案，演绎版
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 13%
+source-wordcount: '2707'
+ht-degree: 14%
 
 ---
 
