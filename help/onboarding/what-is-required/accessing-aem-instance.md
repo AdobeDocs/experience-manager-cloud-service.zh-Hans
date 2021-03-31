@@ -2,9 +2,9 @@
 title: '授予用户对AEM实例的访问权限 '
 description: 可查看本页以了解系统管理员如何授予用户对AEM实例的访问权限
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 1. 导航到Cloud Manager，然后单击&#x200B;**环境**&#x200B;卡中的&#x200B;**管理访问**&#x200B;按钮，如下所示。
 
    >[!NOTE]
-   >您必须是系统管理员或创建环境的用户，才能在Admin Console中添加用户。 只有“业务所有者”或“部署管理者”角色具有创建环境的权限。 请参阅[添加用户和分配Cloud Manager角色](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)以了解有关角色和关联权限的更多信息。
+   >您必须是系统管理员或创建环境的用户，才能在Admin Console中添加用户。 只有“业务所有者”或“部署管理者”角色具有创建环境的权限。 请参阅[用户角色和权限](/help/onboarding/what-is-required/user-roles-permissions.md)以了解有关角色和关联权限的更多信息。 此外，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)以了解有关环境的信息。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
