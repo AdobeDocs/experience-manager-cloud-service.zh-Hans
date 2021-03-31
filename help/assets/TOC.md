@@ -4,9 +4,9 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
-feature-set: Experience Manager Assets, Experience Manager
+feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: daee370e4da22432fe15a7500702a2bb669381f3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 70%
