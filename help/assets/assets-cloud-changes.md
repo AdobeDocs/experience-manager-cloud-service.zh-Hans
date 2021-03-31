@@ -1,11 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 作为 [!DNL Cloud Service]的显着变化'
 description: 与[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 有显着变化。
+feature: 发行信息
+role: 业务从业者，领导者，架构师，管理员
 translation-type: tm+mt
-source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '764'
+ht-degree: 6%
 
 ---
 
