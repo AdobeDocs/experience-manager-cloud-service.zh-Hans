@@ -3,11 +3,12 @@ title: 组织数字资产以使用Dynamic Media图像用户档案或视频用户
 description: “有关命名、组织和管理Dynamic Media图像文件和视频资产文件的提示和最佳实践。”
 contentOwner: Rick Brough
 feature: 资产管理，图像用户档案，视频用户档案
-topic: 业务从业者
+topic: 商务从业人员
+role: 管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '504'
 ht-degree: 18%
 
 ---
