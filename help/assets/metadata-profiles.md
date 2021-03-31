@@ -2,10 +2,12 @@
 title: 元数据配置文件
 description: 了解资产的元数据用户档案。 了解如何创建元数据用户档案并将其应用到文件夹资产。
 contentOwner: AG
+feature: 元数据
+role: 业务从业者，管理员
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1230'
 ht-degree: 41%
 
 ---
