@@ -1,10 +1,11 @@
 ---
 title: AEM GraphQL API，与内容片段一起使用
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作AEM GraphQL API的Cloud Service，实现无外设内容投放。
+feature: 内容片段，GraphQL API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3257'
 ht-degree: 1%
 
 ---
