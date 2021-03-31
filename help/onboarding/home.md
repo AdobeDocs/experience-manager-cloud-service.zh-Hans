@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 translation-type: tm+mt
-source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '905'
 ht-degree: 39%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 39%
 
 签订合同后，将进行以下事件:
 
-1. Adobe将完成您组织的设置，随后您的组织的系统管理员将收到一封欢迎电子邮件，允许他们执行[管理员任务](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用户、将用户分配到角色，从而授予他们对Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)的适当[访问权限。
+1. Adobe将完成您组织的设置，随后您的组织的系统管理员将收到一封欢迎电子邮件，允许他们执行[系统管理员任务](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用户、将用户分配到角色，从而授予他们对Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)的适当[访问权限。
 
 1. 由系统管理员添加的用户随后将收到一封欢迎电子邮件，通知他们具有对Cloud Manager的[访问权限。 ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)用户现在可以从此处使用其[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)登录并开始使用Cloud Manager的旅程。
 
