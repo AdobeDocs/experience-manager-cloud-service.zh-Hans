@@ -2,7 +2,7 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登陆页
 translation-type: tm+mt
-source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
+source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -19,15 +19,19 @@ ht-degree: 7%
 >[!NOTE]
 >您必须以用户身份添加，并由系统管理员分配给“云管理者”角色(Admin Console中的产品用户档案)。
 
-1. 在您的欢迎电子邮件中，单击&#x200B;**开始**，如下图所示，或导航到[Cloud Manager](https://experience.adobe.com)并使用Adobe ID登录。\
+1. 在欢迎电子邮件中，单击&#x200B;**开始**，如下图所示。
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-1. 选择&#x200B;**Experience Manager**。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   或者，
 
-1. 单击Cloud Manager卡中的&#x200B;**启动**。
+   1. 从[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)导航到Cloud Manager登录页
+
+   1. 选择&#x200B;**Experience Manager**。
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+
+   1. 单击Cloud Manager卡中的&#x200B;**启动**。
 成功登录[!UICONTROL 云管理器]后，即可使用用户界面(UI)。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager登陆页{#cloud-manager-landing}
