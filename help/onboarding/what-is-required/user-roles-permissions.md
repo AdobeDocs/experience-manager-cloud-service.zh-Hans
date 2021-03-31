@@ -2,7 +2,7 @@
 title: 用户角色和权限
 description: 本页介绍用户角色和权限。 可查看本页以了解如何添加用户并将其分配给Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 6%
@@ -12,7 +12,7 @@ ht-degree: 6%
 
 # 用户角色和权限{#user-roles-permissions}
 
-Adobe将在Adobe Identity Management系统(IMS)中为您的公司创建&#x200B;**组织**&#x200B;标识符，可以在其中管理您的所有用户及其权限。 每个用户(需要是此组织的成员，并将获得对任何[!UICONTROL Experience Cloud]服务的访问权)都需要拥有自己的&#x200B;**Adobe ID**。
+Adobe将在Adobe Identity Management系统(IMS)中为您的公司创建&#x200B;**组织**&#x200B;标识符，可以在其中管理您的所有用户及其权限。 每个用户(需要是此组织的成员，并将获得对任何[!UICONTROL Experience Cloud]服务的访问权)都需要拥有自己的&#x200B;**[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**。
 
 ## 用户角色 {#user-roles}
 
