@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 translation-type: tm+mt
-source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 39%
+source-wordcount: '924'
+ht-degree: 38%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 39%
 
 祝贺您以AEM为Cloud Service开始您的旅程！ 无论您是部署新应用程序还是迁移现有应用程序，本指南都是您的起点，可确保您的应用程序已得到优化并可在Cloud Service上成功。
 
-本指南将为您提供一个清单，让您和您的团队快速开始使用Cloud Manager。 您需要Adobe ID以及系统管理员的帮助，才能将用户添加到云管理器，以便将其分配的角色(在Admin Console中称为产品用户档案)和关联权限添加到云管理器。 有关系统管理员如何通过Admin Console执行此操作的说明，请参阅[此处](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)。 Cloud Manager角色(在Admin Console中称为产品用户档案)的列表及其关联权限会详细列出，以便您确定组织中的不同用户可能需要哪些角色。
+本指南将帮助您和您的团队快速开始使用Cloud Manager。 您需要Adobe ID以及系统管理员的帮助，才能将用户添加到云管理器，以便将其分配的角色(在Admin Console中称为产品用户档案)和关联权限添加到云管理器。 介绍了系统管理员如何通过Admin Console执行此操作的说明。 Cloud Manager角色(在Admin Console中称为产品用户档案)的列表及其关联权限会详细列出，以便您确定组织中的不同用户可能需要哪些角色。
 
-下图说明了您的入门培训旅程，从系统管理员收到的欢迎电子邮件开始，最终以Cloud Service身份访问Cloud Manager for AEM的用户为高潮。
+下图说明了您的入门旅程，从系统管理员收到的欢迎电子邮件开始，最终以Cloud Service身份访问Cloud Manager for AEM。
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
@@ -30,10 +30,13 @@ ht-degree: 39%
 
 1. Adobe将完成您组织的设置，随后您的组织的系统管理员将收到一封欢迎电子邮件，允许他们执行[系统管理员任务](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用户、将用户分配到角色，从而授予他们对Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)的适当[访问权限。
 
-1. 由系统管理员添加的用户随后将收到一封欢迎电子邮件，通知他们具有对Cloud Manager的[访问权限。 ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)用户现在可以从此处使用其[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)登录并开始使用Cloud Manager的旅程。
+1. 系统管理员添加的用户随后将收到一封欢迎电子邮件，从而允许他们成功[导航到云管理器](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)。 用户现在可以从此处使用Adobe ID登录并开始Cloud Manager旅程。
 
+1. 系统管理员可以[为开发目的授予用户对AEM实例](/help/onboarding/what-is-required/accessing-aem-instance.md)的访问权限。
 
-1. 此外，为了开发目的，用户还可以获得对AEM实例](/help/onboarding/what-is-required/accessing-aem-instance.md)的[访问权限。
+**[获取Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+
+您需要Adobe ID以及系统管理员的帮助，才能将用户添加到云管理器，以便将其分配的角色。
 
 **[用户角色和权限](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
