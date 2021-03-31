@@ -2,11 +2,12 @@
 title: Dynamic Media 视频配置文件
 description: Dynamic Media 附带预定义的自适应视频编码配置文件。此开箱即用用户档案中的设置经过优化，可为客户提供最佳的观看体验。 您还可以向视频添加智能裁剪。
 feature: 资产管理，视频用户档案，演绎版
-topic: 业务从业者
+topic: 商务从业人员
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '3666'
+source-wordcount: '3668'
 ht-degree: 20%
 
 ---
