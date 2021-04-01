@@ -2,9 +2,9 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登陆页
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '458'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 6%
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-在此处，具有相应权限的用户（如云管理器中的业务所有者角色）能够选择&#x200B;**添加项目**&#x200B;以启动[向导](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)。
+在此处，具有相应权限的用户（如云管理器中的业务所有者角色）能够选择&#x200B;**添加项目**&#x200B;以启动[添加项目向导](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)。
 
 要了解如何在云管理器中添加项目，请参阅：
 
