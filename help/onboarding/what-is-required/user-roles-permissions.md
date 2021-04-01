@@ -2,7 +2,7 @@
 title: 云管理者角色
 description: 本页介绍用户角色和权限。 可查看本页以了解如何添加用户并将其分配给Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
+source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 6%
@@ -30,7 +30,7 @@ Cloud Manager当前为控制特定功能可用性的用户定义四个角色：
 
 ## 查看您的角色{#view-roles}
 
-要视图您在Cloud Manager中的角色，请登录Cloud Manager UI，选择右上角的用户档案图标，然后选择&#x200B;**用户角色**，如下图所示。
+要视图Cloud Manager中的角色，请登录Cloud Manager UI，选择右上角的用户档案图标，然后选择&#x200B;**用户角色**，如下图所示。
 
 >[!NOTE]
 >请参阅[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以了解有关登录到Cloud Manager的更多信息。
