@@ -2,9 +2,9 @@
 title: '系统管理员任务 '
 description: 可查看本页以了解如何以系统管理员身份添加用户并将其分配给Cloud Manager角色
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >请参阅[用户角色和权限](#user-roles)和与角色定义](#permissions)关联的[权限，以确保在&#x200B;**Admin Console**&#x200B;中为正确的用户分配了正确的角色。
+   >有关在Cloud Manager中提供的角色和权限的更多信息，请参阅[云管理器角色](/help/onboarding/what-is-required/user-roles-permissions.md)。
 
    现在，您已将用户添加到Adobe Experience Manager作为Cloud Service产品上下文，并且设置了正确的角色或产品用户档案。
 
