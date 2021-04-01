@@ -1,10 +1,10 @@
 ---
-title: 用户角色和权限
+title: 云管理者角色
 description: 本页介绍用户角色和权限。 可查看本页以了解如何添加用户并将其分配给Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 6%
 
 ---
