@@ -2,9 +2,9 @@
 title: '系统管理员任务 '
 description: 可查看本页以了解如何以系统管理员身份添加用户并将其分配给Cloud Manager角色
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >请参阅前几节[“用户角色和权限](#user-roles)”和与角色定义](#permissions)关联的[权限，以确保在&#x200B;**Admin Console**&#x200B;中为正确的用户分配了正确的角色。
+   >请参阅[用户角色和权限](#user-roles)和与角色定义](#permissions)关联的[权限，以确保在&#x200B;**Admin Console**&#x200B;中为正确的用户分配了正确的角色。
 
    现在，您已将用户添加到Adobe Experience Manager作为Cloud Service产品上下文，并且设置了正确的角色或产品用户档案。
 
-   例如，如果您是以下人员：
-
-   * ***业务所有者***，您具有添加新项目或编辑项目、添加或更新环境、添加/编辑/删除管道和运行任何管道以及将代码部署到AEM环境或代码质量的权限。
-
-   * ***Deployment Manager***，您拥有添加或更新环境、运行任何管道以及将代码部署到AEM 环境或代码质量的权限。
-
-   * ***开发人员***，您有权生成个人访问令牌以访问Git。
-
-      >[!NOTE]
-      > 可以将用户分配给多个角色。 例如，将业务所有者和部署管理器角色分配给用户可向他们提供这些权限的组合或总和。
