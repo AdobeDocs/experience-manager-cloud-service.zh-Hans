@@ -2,7 +2,7 @@
 title: 云管理者角色
 description: 本页介绍用户角色和权限。 可查看本页以了解如何添加用户并将其分配给Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 6%
@@ -65,7 +65,7 @@ Cloud Manager当前为控制特定功能可用性的用户定义四个角色：
 | 添加项目<br>编辑项目 | 添加新项目。<br>编辑项目 — 添加或删除解决方案或加载项 | x |  |  |  |
 | 创建环境 | 创建Prod+Stage、Dev、环境。 | x | x |  |  |
 | 更新环境 | 更新Prod+Stage、Dev、环境。 | x | x |  |  |
-| 删除环境 | 删除非生产、开发、环境。 | x | x |  |  |
+| 删除开发环境 | 删除开发环境。 | x | x |  |  |
 | 管线设置 | 设置或编辑管道。 |  | x |  |  |
 | 管道执行 | 开始管道。 | x | x |  |  |
 | 管道执行 | 拒绝/批准重要的3层故障。 | x | x | x |  |
