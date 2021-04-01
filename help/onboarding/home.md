@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 translation-type: tm+mt
-source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 39%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 39%
 
 您需要Adobe ID以及系统管理员的帮助，才能将用户添加到云管理器，以便将其分配的角色。
 
-**[用户角色和权限](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[云管理者角色](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 您的系统管理员可以添加用户并将其分配给Cloud Manager角色。 本节帮助您了解&#x200B;*云管理器角色*&#x200B;是什么以及与角色关联的权限，然后再开始。
 
