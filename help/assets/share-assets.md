@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 资产管理、协作、资产分发
 role: 业务从业者，管理员
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 1%
+source-wordcount: '758'
+ht-degree: 2%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager Assets] 允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。使用以下方法将[!DNL Experience Manager Assets]中的资产共享为[!DNL Cloud Service]:
 
 * 以链接的形式共享。
-* 单独下载资产和共享。
-* 通过AEM桌面应用程序共享。
-* 通过Adobe资产链接共享。
-* （即将推出的功能）使用Brand Portal进行共享。
+* [下载](/help/assets/download-assets-from-aem.md) 资产并单独共享。
+* 使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)进行共享。
+* 使用[[!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)进行共享。
+* 使用[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)进行共享。
 
 ## 以链接方式共享资产 {#sharelink}
 
