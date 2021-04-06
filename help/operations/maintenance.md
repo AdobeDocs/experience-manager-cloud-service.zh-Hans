@@ -3,9 +3,9 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
+source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -54,8 +54,8 @@ ht-degree: 2%
     <td>每日</td>
     <td>客户</td>
     <td>JCR节点定义</td>
-    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
-    <td>请参阅代码示例1标签</td>
+    <td>请参阅下面的位置1</td>
+    <td>请参见下面的代码示例1</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily（不应更改此值）</li>
@@ -67,7 +67,7 @@ ht-degree: 2%
     <td>每周</td>
     <td>客户</td>
     <td>JCR节点定义</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>请参阅下面的位置2</td>
     <td>请参见下面的代码示例2</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ ht-degree: 2%
     <td>每月</td>
     <td>客户</td>
     <td>JCR节点定义</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>请参阅下面的位置3</td>
     <td>请参见下面的代码示例3</td>
      <td>
     <ul>
@@ -93,6 +93,14 @@ ht-degree: 2%
     </ul> </td> 
   </tr>
 </table>
+
+位置:
+
+1. /apps/settings/granite/operations/maintenance/granite_daily
+2. /apps/settings/granite/operations/maintenance/granite_weekly
+3. /apps/settings/granite/operations/maintenance/granite_monthly
+
+代码示例：
 
 代码示例1
 
