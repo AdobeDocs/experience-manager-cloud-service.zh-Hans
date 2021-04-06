@@ -1,14 +1,14 @@
 ---
 title: 创建内容片段无头快速开始指南
 description: 了解如何使用AEM内容片段设计、创建、策划和使用独立于页面的内容实现无头投放。
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
-
 
 # 创建内容片段无头快速开始指南{#creating-content-fragments}
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 1. 在内容片段编辑器中提供内容片段的详细信息。
 
    ![内容片段编辑器](../assets/content-fragment-edit.png)
-1. 点按或单击&#x200B;**保存并关闭**。
+1. 点按或单击&#x200B;**保存**&#x200B;或&#x200B;**保存并关闭**。
 
 内容片段可以引用其他内容片段，从而允许在必要时使用嵌套的内容结构。
 
