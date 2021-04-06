@@ -3,20 +3,30 @@ title: 管理内容片段
 description: 了解如何使用“资产”控制台管理AEM内容片段（无外设内容的基础）。
 feature: 内容片段
 role: 商务从业人员
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1748'
 ht-degree: 9%
 
 ---
-
 
 # 管理内容片段 {#managing-content-fragments}
 
 了解如何使用“资产”控制台管理AEM内容片段（无外设内容的基础）。
 
-内容片段存储为&#x200B;**资产**，因此主要从&#x200B;**资产**&#x200B;控制台进行管理。
+在定义[内容片段模型](#creating-a-content-model)后，您可以使用这些模型[创建内容片段](#creating-a-content-fragment)。
+
+[内容片段编辑器](#opening-the-fragment-editor)提供了各种[模式](#modes-in-the-content-fragment-editor)，使您能够：
+
+* [编辑内](#editing-the-content-of-your-fragment) 容并 [管理变量](#creating-and-managing-variations-within-your-fragment)
+* [注释片段](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [将内容与片段关联](#associating-content-with-your-fragment)
+* [配置元数据](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [视图结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [预览JSON表示](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ ht-degree: 9%
 >* 创作页面时；请参阅[使用内容片段创作页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 >* 对于[使用带有GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)的内容片段的无外设内容投放。
 
+
+>[!NOTE]
+>
+>内容片段存储为&#x200B;**资产**，因此主要从&#x200B;**资产**&#x200B;控制台进行管理。
 
 ## 创建内容片段{#creating-content-fragments}
 
@@ -135,11 +149,15 @@ ht-degree: 9%
 
    ![片段编辑器](assets/cfm-managing-03.png)
 
-1. 进行更改后，根据需要使用&#x200B;**保存并关闭**&#x200B;或&#x200B;**取消**。
+1. 进行更改后，根据需要使用&#x200B;**Save**、**Save &amp; close**&#x200B;或&#x200B;**Close**。
 
    >[!NOTE]
    >
-   >**保存并关闭**&#x200B;和&#x200B;**取消**&#x200B;都将退出编辑器 — 有关这两个选项如何对内容片段进行操作的完整信息，请参阅[保存、取消和版本](#save-cancel-and-versions)。
+   >**保存并关** 闭可通过保存下拉 **** 菜单使用。
+
+   >[!NOTE]
+   >
+   >**保存并关闭**&#x200B;和&#x200B;**关闭**&#x200B;都将退出编辑器 — 有关内容片段各种选项如何操作的完整信息，请参阅[保存、关闭和版本](#save-close-and-versions)。
 
 ## 内容片段编辑器{#modes-actions-content-fragment-editor}中的模式和操作
 
@@ -181,21 +199,29 @@ ht-degree: 9%
    * **已修改**:橙
    * **已停用**:红
 
+* **“保** 存”提供对“保存并 **关闭”选** 项的访问。
+
 * 三个点(**...**)下拉列表提供对其他操作的访问：
+   * **更新页面引用**
+      * 这会更新任何页面引用。
    * **[快速发布](#publishing-and-referencing-a-fragment)**
    * **[管理发布](#publishing-and-referencing-a-fragment)**
 
-## 保存、取消和版本{#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## 保存、关闭和版本{#save-close-and-versions}
 
 >[!NOTE]
 >
 >也可以从时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)创建、比较和还原版本。[
 
-编辑器有两个选项：
+编辑器具有各种选项：
 
-* **保存**
+* **保** 存并 **保存并关闭**
 
-   将保存最新更改并退出编辑器。
+   * **保存** 将保存最新更改并保留在编辑器中。
+   * **保存并** 关闭将保存最新更改并退出编辑器。
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >在选择&#x200B;**保存**&#x200B;之前，可以保留在编辑器中并进行一系列更改。
+   >在保存之前，可以保留在编辑器中并进行一系列更改。
 
    >[!CAUTION]
    >
-   >除了简单地保存更改外，**Save**&#x200B;还更新了任何引用，并确保调度程序根据需要刷新。 这些更改可能需要时间才能处理。 因此，对于大型/复杂/重负载的系统，可能会产生性能影响。
+   >除了简单地保存更改外，这些操作还会更新任何引用，并确保调度程序根据需要刷新。 这些更改可能需要时间才能处理。 因此，对于大型/复杂/重负载的系统，可能会产生性能影响。
    >
-   >
-   >在使用&#x200B;**保存**&#x200B;时请牢记这一点，然后快速重新输入片段编辑器以进行和保存进一步的更改。
+   >使用&#x200B;**保存并关闭**，然后快速重新输入片段编辑器以进行和保存进一步更改时，请牢记这一点。
 
-* **取消**
+* **关闭**
 
-   将退出编辑器，而不保存最新更改。
+   将退出编辑器，但不保存最新更改（即自上次&#x200B;**保存**&#x200B;以来所做的更改）。
 
-编辑内容片段时，AEM会自动创建版本，以确保在您&#x200B;**取消**&#x200B;更改时，先前的内容可以恢复：
+编辑内容片段时，AEM会自动创建版本，以确保在您取消更改时（使用&#x200B;**关闭**&#x200B;而不保存）可以恢复先前的内容：
 
 1. 打开内容片段以编辑AEM时，将检查是否存在基于cookie的令牌，该令牌指示是否存在&#x200B;*编辑会话*:
 
@@ -232,7 +257,7 @@ ht-degree: 9%
    >默认值，请参阅：
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. 如果用户选择&#x200B;**取消**&#x200B;编辑，则恢复在编辑会话开始创建的版本，并删除令牌以结束编辑会话。
+3. 如果用户取消编辑，则恢复在编辑会话开始创建的版本，并删除令牌以结束编辑会话。
 4. 如果用户选择&#x200B;**保存**&#x200B;编辑，则会保留更新的元素/变量，并删除令牌以结束编辑会话。
 
 ## 编辑片段{#editing-the-content-of-your-fragment}的内容
