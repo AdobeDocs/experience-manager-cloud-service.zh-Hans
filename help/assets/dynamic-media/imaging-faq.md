@@ -3,15 +3,15 @@ title: 智能成像
 description: “了解智能图像处理如何应用每个用户的独特查看特性，自动提供为其体验优化的正确图像，从而提高性能和参与度。”
 feature: 资产管理，演绎版
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
-
 
 # 智能成像 {#smart-imaging}
 
@@ -21,9 +21,9 @@ Smart Imaging技术应用Adobe Sensei AI功能并与现有“图像预设”配�
 
 >[!NOTE]
 >
->此功能要求您使用与Adobe Experience Manager Dynamic Media绑定的现成CDN。 此功能不支持任何其他自定义CDN。
+>此功能要求您使用与Adobe Experience Manager Dynamic Media捆绑的现成CDN(内容投放网络)。 此功能不支持任何其他自定义CDN。
 
-Smart Imaging还得益于与Adobe一流的高级CDN(内容投放网络)服务完全集成所带来的性能提升。 此服务可找到服务器、网络和对点之间的最佳Internet路由。 它查看的是最低延迟或最低的数据包丢失率，或两者兼而有之，而不是简单地使用因特网上的默认路由。
+Smart Imaging还得益于与Adobe一流的高级CDN(内容投放网络)服务完全集成所带来的性能提升。 此服务可找到服务器、网络和对点之间的最佳Internet路由。 它找到的路由具有最低的延迟和最低的数据包丢失率，而不是使用Internet上的默认路由。
 
 以下图像资产示例描述了添加的智能成像优化：
 
@@ -43,6 +43,7 @@ Smart Imaging还得益于与Adobe一流的高级CDN(内容投放网络)服务完
 
 最新版Smart Imaging中的增强功能：
 
+* 利用最新的Smart Imaging改进了网页的Google SEO排名。
 * 立即提供优化内容（在运行时）。
 * 使用Adobe Sensei技术根据图像请求中指定的质量(qlt)进行转换。
 * 可以使用“bfc”URL参数关闭智能成像。
@@ -58,25 +59,26 @@ Smart Imaging还得益于与Adobe一流的高级CDN(内容投放网络)服务完
 >
 >Smart Imaging不适用于Dynamic Media — 混合型客户。
 
-
 ## 智能图像处理是如何工作的？{#how-does-smart-imaging-work}
 
-当用户请求图像时，Smart Imaging会检查用户特性。 然后，它会根据使用中的浏览器转换为适当的图像格式。 以不会降低视觉保真度的方式执行这些格式转换。 智能成像功能会按以下方式根据浏览器功能自动将图像转换为不同格式。
+当消费者请求图像时，Smart Imaging会检查用户特征，并根据使用中的浏览器转换为适当的图像格式。 以不会降低视觉保真度的方式执行这些格式转换。 智能成像功能会按以下方式根据浏览器功能自动将图像转换为不同格式。
+
+<!--   * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
 
 * 自动转换为以下浏览器的WebP:
    * 铬黄
    * Firefox
-   * Microsoft Edge
-   * Safari 14.0 +
-      * 仅带iOS 14.0及更高版本和macOS BigSur及更高版本的Safari 14
-   * Android
+   * Microsoft® Edge
+   * Safari（跨iOS、macOS、iPadOS），提供了浏览器和操作系统版本支持WebP
+   * Android™
    * Opera
 * 对以下内容的传统浏览器支持：
 
    | 浏览器 | 浏览器/操作系统版本 | 格式 |
    | --- | --- | --- |
-   | Safari | iOS 14.0或更早版本 | JPEG2000 |
-   | Edge | 18或更早版本 | JPEGXR |
+   | Safari | 早于iOS/iPad 14.0或macOS BigSur | JPEG2000 |
+   | Edge | 早于18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * 对于不支持这些格式的浏览器，将提供最初请求的图像格式。
 
@@ -85,6 +87,7 @@ Smart Imaging还得益于与Adobe一流的高级CDN(内容投放网络)服务完
 ## 支持哪些图像格式？{#what-image-formats-are-supported}
 
 Smart Imaging支持以下图像格式：
+
 * JPEG
 * PNG
 
@@ -97,17 +100,17 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 智能成像如何处理您现有的已使用图像预设？{#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Smart Imaging可与您现有的“图像预设”配合使用。 如果所请求的文件格式为JPEG或PNG，它将观察除质量(qlt)和格式(fmt)外的所有图像设置。 对于格式转换，“智能成像”可保持图像预设设置所定义的完全视觉保真度，但文件大小较小。 如果原始图像大小小于智能成像生成的图像大小，则会提供原始图像。
+Smart Imaging可与您现有的“图像预设”配合使用。 如果请求的文件格式为JPEG或PNG，它将观察除质量(`qlt`)和格式(`fmt`)外的所有图像设置。 对于格式转换，“智能成像”可保持图像预设设置所定义的完全视觉保真度，但文件大小较小。 如果原始图像大小小于智能成像生成的图像大小，则会提供原始图像。
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## 我是否必须更改任何URL、图像预设，或在我的网站上部署任何用于智能成像的新代码？{#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-如果您在现有自定义域上配置Smart Imaging，Smart Imaging可无缝地与您的现有图像URL和图像预设配合使用。 此外，智能成像不要求您在网站上添加任何代码以检测用户的浏览器。 所有这些功能都是自动处理的。
+如果您在现有自定义域上配置Smart Imaging，Smart Imaging可无缝地与您的现有图像URL和图像预设配合使用。 此外，智能成像不要求您在网站上添加任何代码以检测用户的浏览器。 它都是自动处理的。
 
 如果必须配置新的自定义域才能使用智能成像，则必须更新URL以反映此自定义域。
 
-要了解智能成像的先决条件，请参阅[我是否有资格使用智能成像？](#am-i-eligible-to-use-smart-imaging)。
+要了解智能成像的先决条件，请参阅[我是否有资格使用智能成像？](#am-i-eligible-to-use-smart-imaging)
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -124,7 +127,7 @@ Smart Imaging可处理通过HTTP或HTTPS传送的图像。 此外，它还适用
 * 将Adobe捆绑的CDN(内容投放网络)作为许可的一部分。
 * 使用专用域（例如`images.company.com`或`mycompany.scene7.com`），而不使用通用域（例如`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-要查找您的域，请登录到您的公司帐户或帐户。
+要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
 点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标有&#x200B;**[!UICONTROL 发布服务器名称]**&#x200B;的字段。 如果您当前使用的是通用域，则可以请求移至您自己的自定义域。 在您提交技术支持票证时发出此过渡请求。
 
@@ -140,7 +143,7 @@ Smart Imaging可处理通过HTTP或HTTPS传送的图像。 此外，它还适用
    1. 主要联系人姓名、电子邮件、电话。
    1. 要启用智能成像的所有域（即`images.company.com`或`mycompany.scene7.com`）。
 
-      要查找您的域，请登录您的公司帐户或帐户。
+      要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
       单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。
 
@@ -148,7 +151,7 @@ Smart Imaging可处理通过HTTP或HTTPS传送的图像。 此外，它还适用
    1. 验证您是否通过Adobe使用CDN，而不是通过直接关系进行管理。
    1. 验证您使用的是专用域（如`images.company.com`或`mycompany.scene7.com`），而不是通用域（如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`）。
 
-      要查找您的域，请登录您的公司帐户或帐户。
+      要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
       单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。
 
@@ -166,10 +169,11 @@ Smart Imaging可处理通过HTTP或HTTPS传送的图像。 此外，它还适用
 
 ## 我预计我的帐户何时启用智能成像？{#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-请求将按照技术支持接收的顺序进行处理，这取决于等待列表。
+请求将按照客户关怀部门接收请求的顺序进行处理，这取决于等待列表。
 
 >[!NOTE]
-有时，提前期较长，因为启用智能成像涉及Adobe清除缓存。 因此，在任何给定时间只能处理少数客户过渡。
+>
+>可能会有很长的提前期，因为启用智能成像涉及Adobe清除缓存。 因此，在任何给定时间只能处理少数客户过渡。
 
 ## 改用Smart Imaging有哪些风险？{#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -179,19 +183,20 @@ Smart Imaging可处理通过HTTP或HTTPS传送的图像。 此外，它还适用
 
 ## 如何验证智能成像是否按预期工作？{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 在您的帐户配置了智能图像后，请在浏览器上加载Dynamic Media Classic(Scene7)/Dynamic Media图像URL。
+1. 在您的帐户配置了智能图像后，请在浏览器上加载Dynamic Media Classic或Adobe Experience Manager - Dynamic Media图像URL。
 1. 在浏览器中单击&#x200B;**[!UICONTROL “视图”>“开发人员”>“开发人员工具”]**，打开Chrome开发人员窗格。 或者，选择您选择的任何浏览器开发者工具。
 
 1. 确保在开发人员工具打开时禁用缓存。
 
-   * 在Windows上 — 导航到开发人员工具窗格中的设置，然后选中&#x200B;**[!UICONTROL 禁用缓存（当设备工具打开时）]**&#x200B;复选框。
-   * 在Mac上 — 在开发人员窗格的&#x200B;**[!UICONTROL Network]**&#x200B;选项卡下，选择&#x200B;**[!UICONTROL 禁用缓存]**。
+   * 在Windows®上，导航到开发人员工具窗格中的设置，然后选中&#x200B;**[!UICONTROL 禁用缓存（当devtools打开时）]**&#x200B;复选框。
+   * 在macOS上，在开发人员窗格的&#x200B;**[!UICONTROL Network]**&#x200B;选项卡下，选择&#x200B;**[!UICONTROL 禁用缓存]**。
 
 1. 观察内容类型将转换为适当的格式。 以下屏幕截图显示了在Chrome上将动态转换为WebP的PNG图像。
 1. 在不同的浏览器和用户条件上重复此测试。
 
 >[!NOTE]
-并非所有图像都已转换。 Smart Imaging决定是否需要进行转换以提高性能。 有时，如果没有预期的性能增益，或者格式不是JPEG或PNG，则不会转换图像。
+>
+>并非所有图像都已转换。 Smart Imaging决定转换能否提高性能。 有时，如果没有预期的性能增益，或者格式不是JPEG或PNG，则不会转换图像。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
