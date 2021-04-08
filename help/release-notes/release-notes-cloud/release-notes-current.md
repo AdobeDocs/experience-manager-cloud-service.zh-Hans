@@ -1,14 +1,14 @@
 ---
 title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8331ecb0797f878067a4f83d97e6ec2f62bb551a
+source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 3%
+source-wordcount: '1585'
+ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager]作为Cloud Service{#release-notes}的当前发行说明
 
@@ -82,12 +82,49 @@ AEM Forms多年来一直帮助许多组织提供出色的入职和注册体验�
 
 ## Cloud Manager {#cloud-manager}
 
-本节概述AEM中作为Cloud Service 2021.3.0的Cloud Manager发行说明。
+本节概述AEM中作为Cloud Service 2021.4.0和2021.3.0的Cloud Manager发行说明。
+
+### 发布日期 {#release-date-cm-april}
+
+AEM中Cloud Manager作为Cloud Service 2021.4.0的发布日期为2021年4月8日。
+下一版本计划于2021年5月06日发布。
+
+### 新增功能 {#what-is-new-april}
+
+* 对“添加”和“编辑”项目工作流的UI更新，使其更直观。
+
+* 具有必需权限的用户现在可以通过UI提交商务端点。
+
+* 环境变量现在可以作用于特定服务（创作或发布）。 需要AEM版本`2021.03.5104.20210328T185548Z`或更高版本。
+
+* 即使未配置管线，**管理Git**&#x200B;按钮也会显示在管线卡上。
+
+* Cloud Manager使用的AEM项目原型版本已更新为版本27。
+
+* 云管理器创建的Adobe I/O开发人员控制台中的项目不再可以无意中编辑或删除。
+
+* 当用户添加新环境时，他们将收到通知，创建环境后，无法将其移动到其他区域。
+
+* 环境变量现在可以作用于特定服务（创作或发布）。 需要AEM 2021.03.5104.20210328T185548Z或更高版本。
+
+* 澄清了删除环境时启动管线时的错误消息。
+
+* 现在，规则`CQBP-84--dependencies`中不包括Eclipse项目提供的OSGi捆绑包。
+
+### 错误修复 {#bug-fixes-cm-april}
+
+* 编辑管道的体验审核页面时，以斜杠`( / )`开头的输入路径将不再导致步骤卡在挂起状态中。
+
+* 创建新的生产管道时，如果用户未添加内容审核覆盖，则不会审核默认主页。
+
+* `CloudServiceIncompatibleWorkflowProcess`的问题在可下载的问题CSV文件中严重性不正确。
+
+* `Runmode`检查在非文件夹节点上产生误报。
+
 
 ### 发布日期 {#release-date-cm-march}
 
 AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11日。
-下一版本计划于2021年4月08日发布。
 
 ### 新增功能 {#what-is-new-march}
 
