@@ -6,9 +6,9 @@ topic: 商务从业人员
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1924'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ Smart Imaging还得益于与Adobe一流的高级CDN(内容投放网络)服务完
 
 * 利用最新的Smart Imaging改进了网页的Google SEO排名。
 * 立即提供优化内容（在运行时）。
-* 使用Adobe Sensei技术根据图像请求中指定的质量(qlt)进行转换。
-* 可以使用“bfc”URL参数关闭智能成像。
+* 使用Adobe Sensei技术根据图像请求中指定的质量(`qlt`)进行转换。
+* 可以使用`bfc` URL参数关闭智能成像。
 * TTL（生存时间）独立。 以前，“智能成像”必须至少使用12小时的TTL才能正常工作。
 * 以前，原始图像和派生图像都被缓存，使缓存失效是一个两步过程。 在最新的智能成像中，只缓存衍生项，从而允许单步缓存失效过程。
-* 使用其规则集中自定义标题的客户。 例如，[向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建议的“允许来源计时”、“X-Robot”可从最新的智能成像中受益。 这些标头不会被阻止，这与以前版本的智能成像不同。
+* 在其规则集中使用自定义标头的客户可以从最新的智能映像中受益，因为这些标头不会被阻止，这与以前版本的智能映像不同。 例如，[向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建议的“允许来源计时”、“X-Robot”。
 
 ## 是否存在与智能成像相关的许可成本？{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
