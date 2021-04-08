@@ -3,25 +3,25 @@ title: 在网页上嵌入Dynamic Media视频或图像查看器
 description: 了解如何将Dynamic Media视频或图像资源嵌入网页。
 feature: 资产管理
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 31%
+source-wordcount: '376'
+ht-degree: 30%
 
 ---
-
 
 # 在网页{#embedding-the-video-or-image-viewer-on-a-web-page}上嵌入Dynamic Media Video、Image Viewer或Dimensional查看器
 
 当您想 **[!UICONTROL 要播放视频或查看嵌入到网页中的资产时]** ，请使用嵌入代码功能。 将嵌入代码复制到剪贴板，以便将其粘贴到网页中。 不允许在“嵌入代码”对 **[!UICONTROL 话框中编辑代码]** 。
 
-仅当&#x200B;_不_&#x200B;使用AEM作为WCM时，才嵌入URL。 如果您使用AEM作为WCM，[将资产直接添加到页面。](adding-dynamic-media-assets-to-pages.md)
+仅当&#x200B;_不_&#x200B;使用AEM作为WCM时，才嵌入URL。 如果您使用AEM作为WCM，[将资产直接添加到页面](adding-dynamic-media-assets-to-pages.md)。
 
-请参阅[将URL关联到您的Web 应用程序。](linking-urls-to-yourwebapplication.md)
+请参阅[将URL关联到您的Web 应用程序](linking-urls-to-yourwebapplication.md)。
 
-请参阅[为响应式网站传送优化的图像。](responsive-site.md)
+请参阅[为响应式网站传送优化的图像](responsive-site.md)。
 
 >[!NOTE]
 >
