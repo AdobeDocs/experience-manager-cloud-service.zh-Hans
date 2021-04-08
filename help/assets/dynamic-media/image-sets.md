@@ -3,15 +3,15 @@ title: 图像集
 description: 了解如何在Dynamic Media中使用图像集。
 feature: 图像集
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 31%
+source-wordcount: '2051'
+ht-degree: 30%
 
 ---
-
 
 # 图像集 {#image-sets}
 
@@ -19,7 +19,7 @@ ht-degree: 31%
 
 图像集由带有单词的横幅来指定 `IMAGESET`。 此外，如果图像集已发布，则横幅上将显示由&#x200B;**[!UICONTROL 世界]**&#x200B;图标指示的发布日期。 此外，还显示由&#x200B;**[!UICONTROL 铅笔]**&#x200B;图标指示的上次修改日期。
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 在图像集中，您还可以通过创建图像集并添加缩略图来创建色板。
 
@@ -43,11 +43,11 @@ ht-degree: 31%
    >
    >批集由IPS（图像生产系统）创建，作为资产摄取的一部分。
 
-1. [上传多个视图的主源图像。](#uploading-assets-in-image-sets)
+1. [上传多个视图的主源图像](#uploading-assets-in-image-sets)。
 
    上传图像集的图像。 请记住，用户可以在图像集查看器中缩放图像。 因此，请谨慎选择图像。 确保图像的最大尺寸至少为2000像素。Experience Manager资产支持多种图像文件格式，但建议使用无损的TIFF、PNG和EPS图像。
 
-1. [创建图像集。](#creating-image-sets)
+1. [创建图像集](#creating-image-sets)。
 
    在图像集中，用户在图像集查看器中单击缩略图。
 
@@ -55,7 +55,7 @@ ht-degree: 31%
 
    请参阅[准备要上传的图像集资产和上传文件](#uploading-assets-in-image-sets)。
 
-   请参阅[使用选择器。](/help/assets/dynamic-media/working-with-selectors.md)
+   请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
 1. 根据需要添加[图像集查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -64,11 +64,11 @@ ht-degree: 31%
    要创建或编辑查看器预设，请参阅&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
 
 1. （可选）[查看使用批集预设创建的图像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)。
-1. [预览图像集。](/help/assets/dynamic-media/previewing-assets.md)
+1. [预览图像集](/help/assets/dynamic-media/previewing-assets.md)。
 
    选择图像集后，您便可以预览该图像集。要在选定的查看器中检查图像集，请点按缩略图图标。 您可以从左边栏下拉列表的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
 
-1. [发布图像集。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [发布图像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    发布图像集时，将会激活 URL 和嵌入字符串。此外，您还必须[发布已创建的任何自定义查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。 现成的查看器预设已发布。
 
@@ -80,7 +80,7 @@ ht-degree: 31%
 
    请参 [阅将图像集链接到网页和嵌入视](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 频查看器或图像查看器 [](/help/assets/dynamic-media/embed-code.md)。
 
-要编辑图像集，请参阅[编辑图像集。](#editing-image-sets) 此外，您还可以视图和编辑图 [像集属性](/help/assets/manage-digital-assets.md#editing-properties)。
+要编辑图像集，请参阅[编辑图像集](#editing-image-sets)。 此外，您还可以视图和编辑[图像集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
 如果您在创建集时遇到问题，请参阅[疑难解答Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的图像和集。
 
@@ -147,7 +147,7 @@ ht-degree: 31%
 
    借助资产选择器，您可以通过键入关键字并点按或单击&#x200B;**[!UICONTROL 返回]**&#x200B;来搜索资产。您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择该过滤器，然后点按工具栏中的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。 点按“视图”图标并选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;可更改视图。
 
-   请参阅[使用选择器。](/help/assets/dynamic-media/working-with-selectors.md)
+   请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
