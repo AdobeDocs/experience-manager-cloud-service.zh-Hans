@@ -3,9 +3,9 @@ title: '编辑沙箱项目 '
 description: 编辑沙箱项目
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
+source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ ht-degree: 0%
 
 编辑项目时，应查看以下几点注意事项：
 
-* 对于项目，必须至少选择一个解决方案，即，在编辑项目工作流程中，不允许使用来取消选择所有解决方案。
+* 对于项目，必须至少选择一个解决方案，即不允许用户在“编辑项目”工作流程中取消选择所有解决方案。
 
 * 单击&#x200B;**保存**&#x200B;按钮，如果选定的解决方案已更改，则对环境的解决方案更新将在下次部署后生效。
