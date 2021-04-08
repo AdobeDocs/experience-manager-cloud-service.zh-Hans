@@ -4,15 +4,15 @@ description: “有关命名、组织和管理Dynamic Media图像文件和视频
 contentOwner: Rick Brough
 feature: 资产管理，图像用户档案，视频用户档案
 topic: 商务从业人员
-role: 管理员，业务从业者
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '501'
 ht-degree: 18%
 
 ---
-
 
 # 组织数字资产以使用图像用户档案或视频用户档案的最佳实践{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,8 +26,7 @@ ht-degree: 18%
 
 * 根据您为文件添加的元数据来整理文件，而非根据文件所在的文件夹。您可以通过添加元数据用户档案来完成此操作。
 
-   * 请参阅[元数据配置文件](/help/assets/metadata-profiles.md)。
-
+   * 请参阅[元数据用户档案](/help/assets/metadata-profiles.md)。
    * 请参阅[数字资产元数据的管理](/help/assets/manage-metadata.md)。
 
 * 通常，您的数字资产集合会不断增长。 因此，在所有上传的资产中实现元数据使用、文件夹结构和文件命名的规范化非常重要。 在这些方面实现标准化，可以确保随着数字资产池的增大，您仍可以更精确、更一致地对文件夹应用处理配置文件。
@@ -45,4 +44,3 @@ ht-degree: 18%
 
 * 创建不可能更改的文件夹目录，以便任何分配的用户档案都不会中断。
 * 假设某个资产已经发布，则您可以使用Adobe Experience Manager将该资产移动到其他文件夹并从新位置重新发布。 原始已发布的资产位置以及新重新发布的资产仍然可用。 但是，原始已发布的资产会“丢失”到Experience Manager，无法取消发布。 因此，作为最佳实践，在将资产移到其他文件夹之前，请先取消发布资产。
-
