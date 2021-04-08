@@ -4,21 +4,21 @@ description: 了解如何发布Dynamic Media资产。
 contentOwner: Rick Brough
 feature: 资产管理
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 13%
+source-wordcount: '465'
+ht-degree: 10%
 
 ---
-
 
 # 发布 Dynamic Media 资产 {#publishing-dynamic-media-assets}
 
 您可以通过选择已上传的资产并点按&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**&#x200B;来发布Dynamic Media资产。 在发布Dynamic Media资产后，您便可以通过URL或在页面上嵌入代码的方式，将资产包含在网页中。
 
-您还可以立即发布上传的资产，而无需任何用户干预。 或者，您也可以选择性发布这些资产。 请参阅[配置Dynamic Media。](config-dm.md) 或者，您也可以使用文件夹级别的“选择性发布”，选择性地将资源发布到Dynamic Media或Adobe Experience Manager, **[!UICONTROL 它们]** 相互排斥。请参阅[使用 Dynamic Media 中的“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md)。
+您还可以立即发布上传的资产，而无需任何用户干预。 或者，您也可以选择性发布这些资产。 请参阅[配置Dynamic Media](config-dm.md)。 或者，您也可以使用文件夹级别的&#x200B;**[!UICONTROL 选择性发布]**，选择性地将资产发布到Dynamic Media或Adobe Experience Manager，它们相互排斥。 请参阅[在Dynamic Media中使用选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
 
 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，资产名称正下方以及日期和时间左侧会显示一个小地球图标，指示资产已发布。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
@@ -28,9 +28,9 @@ ht-degree: 13%
 
 如果您打算在对视频资产进行编码后立即发布这些资产，请确保编码已完成。 当对视频进行编码时，系统会通知您视频处理工作流正在进行中。 完成视频编码后，您可以预览视频演绎版。 此时，您便可以安全地发布视频，而不会出现任何发布错误。
 
-另请参阅[将 URL 关联到您的 Web 应用程序。](linking-urls-to-yourwebapplication.md)
+另请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。
 
-另请参阅[在网页上嵌入Dynamic Media视频查看器或图像查看器。](embed-code.md)
+另请参阅[在网页上嵌入Dynamic Media Video查看器或图像查看器](embed-code.md)。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 13%
 
 
 
-有关发布集或资产的详细信息，请参阅[发布资产。](/help/assets/manage-digital-assets.md)
+有关发布集或资产的详细信息，请参阅[发布资产](/help/assets/manage-digital-assets.md)。
 
 ## HTTP/2投放Dynamic Media资源{#http-delivery-of-dynamic-media-assets}
 
