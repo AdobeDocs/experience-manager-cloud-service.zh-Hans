@@ -1,14 +1,14 @@
 ---
 title: 自定义代码质量规则 — Cloud Services
 description: 自定义代码质量规则 — Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3278'
+ht-degree: 4%
 
 ---
-
 
 # 自定义代码质量规则 {#custom-code-quality-rules}
 
@@ -613,7 +613,7 @@ AEM API表面处于不断修订的状态，以标识不鼓励使用并因此被�
 复杂项目上出现的一个常见问题是多次配置同一OSGi组件。 这产生了关于哪种配置可操作的模糊。 此规则是“运行模式感知”的，因为它只识别在同一运行模式（或运行模式组合）中多次配置同一组件的问题。
 
 >[!NOTE]
->此规则将产生在多个包中定义相同配置（路径相同）的问题，包括在构建包的整体列表中复制相同包的情况。 例如，如果内部版本生成名为`com.myco:com.myco.ui.apps`和`com.myco:com.myco.all`的包，其中`com.myco:com.myco.all`嵌入了`com.myco:com.myco.ui.apps`，则`com.myco:com.myco.ui.apps`中的所有配置都将报告为重复。 通常情况下，不遵循[内容包结构准则](/help/implementing/developing/aem-project-content-package-structure.md);在此特定示例中，包`com.myco:com.myco.ui.apps`缺少`<cloudManagerTarget>none</cloudManagerTarget>`属性。
+>此规则将产生在多个包中定义相同配置（路径相同）的问题，包括在构建包的整体列表中复制相同包的情况。 例如，如果内部版本生成名为`com.myco:com.myco.ui.apps`和`com.myco:com.myco.all`的包，其中`com.myco:com.myco.all`嵌入了`com.myco:com.myco.ui.apps`，则`com.myco:com.myco.ui.apps`中的所有配置都将报告为重复。 通常情况下，不遵循[内容包结构准则](/help/implementing/developing/introduction/aem-project-content-package-structure.md);在此特定示例中，包`com.myco:com.myco.ui.apps`缺少`<cloudManagerTarget>none</cloudManagerTarget>`属性。
 
 #### 不兼容代码{#non-compliant-code-osgi}
 
@@ -914,9 +914,3 @@ AEM Cloud Service禁止自定义搜索索引定义（即`oak:QueryIndexDefinitio
 **自**:2021.2.0版
 
 AEM Cloud Service禁止自定义搜索索引定义（即`oak:QueryIndexDefinition`类型的节点）包含名为reindex的属性。 使用此属性进行索引创建必须在迁移到AEMCloud Service之前更新。 有关详细信息，请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
-
-
-
-
-
-
