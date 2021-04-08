@@ -3,15 +3,15 @@ title: 360/VR视频
 description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频。
 feature: 360 VR 视频
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '944'
 ht-degree: 2%
 
 ---
-
 
 # 360/VR视频{#vr-video}
 
@@ -101,7 +101,7 @@ Start by uploading 360 Videos.
 当您对360视频满意时，您可以发布它。
 
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向Experience Manager站点页面的链接)的链接，则无法使用基于URL的链接方法。
-请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 **预览360视频**
 
@@ -137,4 +137,4 @@ Start by uploading 360 Videos.
 有关如何发布360视频的详细信息，请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 另请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 另请参阅[将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含与相对URL(尤其是指向Experience Manager站点页面的链接)的链接，则无法使用基于URL的链接方法。
-另请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+另请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
