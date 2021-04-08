@@ -3,15 +3,15 @@ title: Dynamic Media 视频配置文件
 description: Dynamic Media 附带预定义的自适应视频编码配置文件。此开箱即用用户档案中的设置经过优化，可为客户提供最佳的观看体验。 您还可以向视频添加智能裁剪。
 feature: 资产管理，视频用户档案，演绎版
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 20%
 
 ---
-
 
 # Dynamic Media 视频配置文件{#video-profiles}
 
@@ -37,7 +37,7 @@ Dynamic Media 附带预定义的自适应视频编码配置文件。此开箱即
 >
 >在搜索资产时元数据很有用。缩略图是在编码过程中生成的静态视频图像。 Experience Manager系统需要这些视频，并在用户界面中使用它们来帮助您在“卡”视图、“搜索结果”视图和“资产”列表视图中直观地识别视频。 点按编码视频的“演绎版”图标（“画板”调板）时，可以看到生成的缩略图。
 
-创建完“视频”用户档案后，您可以将其应用到一个或多个文件夹。请参阅[将视频用户档案应用到文件夹。](#applying-a-video-profile-to-folders)
+创建完“视频”用户档案后，您可以将其应用到一个或多个文件夹。请参阅[将视频用户档案应用到文件夹](#applying-a-video-profile-to-folders)。
 
 要为其他资产类型定义高级处理参数，请参阅[配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
@@ -427,4 +427,3 @@ Dynamic Media已附带预定义的自适应视频编码用户档案 — 一组�
 1. 点按或单击Experience Manager标志，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到您要从中删除视频用户档案的文件夹。
 1. 在文件夹中，点按或单击复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存并关闭]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
-
