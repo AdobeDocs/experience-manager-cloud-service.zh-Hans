@@ -3,15 +3,15 @@ title: Dynamic Media 图像配置文件
 description: “了解如何创建包含USM锐化设置、智能裁切或智能色板，或同时包含这两个设置的Dynamic Media图像用户档案。 然后，将用户档案应用到图像资产的文件夹。”
 feature: 资产管理，图像用户档案，演绎版
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 14%
 
 ---
-
 
 # Dynamic Media 图像配置文件 {#image-profiles}
 
@@ -96,7 +96,7 @@ ht-degree: 14%
  </tbody>
 </table>
 
-有关“锐化”的说明，请参阅[锐化图像。](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+有关“锐化”的信息，请参阅[锐化图像](/help/assets/dynamic-media/assets/sharpening_images.pdf)。
 
 ## 创建Dynamic Media Image用户档案{#creating-image-profiles}
 
@@ -248,7 +248,7 @@ ht-degree: 14%
       * 如果图像仅包含智能裁剪或智能色板，请在图像上拖动裁剪框的角手柄。 调整裁剪的可视区域的大小。
       * 如果图像同时具有智能裁剪和智能色板，请在图像上拖动裁剪框的角手柄。 调整裁剪的可视区域的大小。 或者，点按图像下方的智能色板（色板是静态的），然后拖动裁剪框的角手柄。 调整色板可查看区域的大小。
 
-      ![调整图像的智能裁剪大小。](assets/edit_smart_crops-resize.png)
+      ![调整图像的智能裁剪大小](assets/edit_smart_crops-resize.png)。
 
    * 移动智能裁剪框。 执行下列任一操作：
 
