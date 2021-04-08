@@ -6,15 +6,15 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2937'
 ht-degree: 4%
 
 ---
-
 
 # 在Dynamic Media {#selective-publish-configure-folder}中的文件夹级别配置选择性发布
 
@@ -34,40 +34,40 @@ ht-degree: 4%
 
 如果您稍后决定更改文件夹中的&#x200B;**[!UICONTROL 选择性发布]**&#x200B;设置，则这些更改仅影响从此点上传到该文件夹的新资产。 在您从&#x200B;**[!UICONTROL 快速发布]**&#x200B;或&#x200B;**[!UICONTROL 管理发布]**&#x200B;对话框手动更改文件夹中现有资产的发布状态之前，这些资产将保持原样。
 
-文件夹级别&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;选项始终默认为在&#x200B;**[!UICONTROL Dynamic Media配置中的**[!UICONTROL &#x200B;发布资产&#x200B;]**设置中找到的值。]** 但是，本主题中的以下步骤将向您显示如何在文件夹级别手动更改此默认值（如以下步骤所述）以覆盖 **[!UICONTROL Dynamic Media]** 配置值。
+文件夹级别&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;选项始终默认为在&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;设置中找到的值。 但是，本主题中的以下步骤将向您显示如何在文件夹级别手动更改此默认值（如以下步骤所述）以覆盖&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;值。
 
 无论您是否依赖：
 
 * 在&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;中设置的&#x200B;**[!UICONTROL 发布资产]**&#x200B;值
 * 或者，在文件夹级别属性中设置的&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;值
 
-您仍然可以选择&#x200B;**[!UICONTROL 立即]**、**[!UICONTROL 在激活]**&#x200B;或&#x200B;**[!UICONTROL 选择性发布。]** 例如，您可以将Dynamic Media配置中 **[!UICONTROL 的“]** 发布资产”值 **[!UICONTROL 设]** 置为 **[!UICONTROL “在激活时]**”。此外，您可以将文件夹级别的&#x200B;**[!UICONTROL Dynamic Media Publish]**&#x200B;模式值设置为&#x200B;**[!UICONTROL 选择性发布]**，反之，依此类推。
+您仍然可以选择&#x200B;**[!UICONTROL 立即]**、**[!UICONTROL 激活]**&#x200B;或&#x200B;**[!UICONTROL 选择性发布]**。 例如，您可以将&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;值设置为&#x200B;**[!UICONTROL 在激活]**&#x200B;时。 此外，您可以将文件夹级别的&#x200B;**[!UICONTROL Dynamic Media Publish]**&#x200B;模式值设置为&#x200B;**[!UICONTROL 选择性发布]**，反之，依此类推。
 
 在文件夹中配置选择性发布后，可以执行下列任一操作：
 
-* [使用管理发布功能选择性地将资源发布到Dynamic Media或Experience Manager。](#selective-publish-manage-publication)
-* [使用管理发布功能从Dynamic Media或Experience Manager中有选择地取消发布资产。](#selective-unpublish-manage-publication)
-* [使用快速发布将资产发布到Dynamic Media或Experience Manager。](#quick-publish-aem-dm)
-* [通过搜索结果有选择地发布或取消发布资产。](#selective-publish-unpublish-search-results)
+* [使用管理发布功能有选择地将资产发布到Dynamic Media或Experience Manager](#selective-publish-manage-publication)。
+* [使用管理发布功能，有选择地从Dynamic Media或Experience Manager中取消发布资产](#selective-unpublish-manage-publication)。
+* [使用快速发布将资源发布到Dynamic Media或Experience Manager](#quick-publish-aem-dm)。
+* [通过搜索结果有选择地发布或取消发布资产](#selective-publish-unpublish-search-results)。
 
 **在Dynamic Media中在文件夹级别配置选择性发布**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（就在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件。]**
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（位于工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
 1. 执行下列操作之一：
-   * 编辑现有文件夹的属性 — 在&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，导航到要编辑其属性的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 属性。]**
-   * 编辑新文件夹的属性 — 在&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，点按页面右上角附近的&#x200B;**[!UICONTROL 创建>文件夹。]** 在创建 **[!UICONTROL 文]** 件夹对话框中，输入文件夹的标题（必需），然后点按 **[!UICONTROL 创建。]** 选择文件夹，然后在工具栏中点按 **[!UICONTROL 属性。]**
+   * 编辑现有文件夹的属性 — 在&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，导航到要编辑其属性的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
+   * 编辑新文件夹的属性 — 在&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，点按页面右上角附近的&#x200B;**[!UICONTROL 创建>文件夹]**。 在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中，输入文件夹的标题（必需），然后点按&#x200B;**[!UICONTROL 创建]**。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
 
 1. 在&#x200B;**[!UICONTROL 同步模式]**&#x200B;下拉列表中，选择以下选项之一：
 
    | 同步模式 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 已继承]** | 文件夹上没有明确的同步值；相反，该文件夹会从&#x200B;**[!UICONTROL Dynamic Media配置中设置的其父文件夹或默认模式继承同步值。]** 通过工具提示 **** 显示继承显示的详细状态。 |
-   | **[!UICONTROL 将此文件夹子树中的所有内容同步到Dynamic Media]** | 要成功发布到Dynamic Media，资源必须同步到Dynamic Media。 选择此选项将包括此子树中用于同步到Dynamic Media的所有资产。 特定于文件夹的设置会覆盖&#x200B;**[!UICONTROL Dynamic Media配置中的默认设置。]** |
+   | **[!UICONTROL 已继承]** | 文件夹上没有明确的同步值；相反，该文件夹会从&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;中设置的父文件夹或默认模式继承同步值。 **[!UICONTROL 继承]**&#x200B;的详细状态通过工具提示显示。 |
+   | **[!UICONTROL 将此文件夹子树中的所有内容同步到Dynamic Media]** | 要成功发布到Dynamic Media，资源必须同步到Dynamic Media。 选择此选项将包括此子树中用于同步到Dynamic Media的所有资产。 特定于文件夹的设置会覆盖&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;中的默认设置。 |
    | **[!UICONTROL 从Dynamic Media同步中排除此文件夹子树中的所有内容]** | 从同步到Dynamic Media中排除此子树中的所有资产。 |
 
    ![文件夹级别选择性发布](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. 在&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;下拉列表中，选择一个选项。 **[!UICONTROL Dynamic Media发布模式]**&#x200B;选项始终默认为在&#x200B;**[!UICONTROL Dynamic Media配置中设置的值。]** 但是，您可以使用以下选项之 **[!UICONTROL 一]** 手动覆盖此默认的Dynamic Media配置值。
+1. 在&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;下拉列表中，选择一个选项。 **[!UICONTROL Dynamic Media发布模式]**&#x200B;选项始终默认为在&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;中设置的值。 但是，您可以使用以下选项之一手动覆盖此默认的&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;值。
 
    >[!IMPORTANT]
    >
@@ -125,15 +125,15 @@ ht-degree: 4%
    | **[!UICONTROL 现在]** | 选择以立即发布资产。 |
    | **[!UICONTROL 稍后]** | 选择以在特定日期和时间发布资产。 |
 
-1. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 下一步。]**
+1. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 下一页]**。
 1. 在&#x200B;**[!UICONTROL 管理发布 — 范围]**&#x200B;页中，执行下列操作之一：
    * 如有必要，请选择您要从发布中删除的一个或多个资产。
-   * 在&#x200B;**[!UICONTROL 管理发布 — 范围]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 发布到Dynamic Media。]**
-1. 点按&#x200B;**[!UICONTROL 确定。]**
+   * 在&#x200B;**[!UICONTROL 管理发布 — 范围]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 发布到Dynamic Media]**。
+1. 点按&#x200B;**[!UICONTROL 确定]**。
 
 ### 使用管理发布{#selective-unpublish-manage-publication}从Dynamic Media或Experience Manager中选择性取消发布资产
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（就在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件。]**
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（位于工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
 1. 在&#x200B;**[!UICONTROL 卡视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，执行以下操作之一：
    * 导航到要取消发布其资产的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 管理发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便更轻松地检查特定文件夹的发布状态。
    * 导航到要取消发布其资产的文件夹。 打开文件夹，然后选择一个或多个资产。 在工具栏中，点按&#x200B;**[!UICONTROL 管理发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便您可以更轻松地检查特定资产的发布状态。
@@ -156,11 +156,11 @@ ht-degree: 4%
    | **[!UICONTROL 现在]** | 选择以立即取消发布资产。 |
    | **[!UICONTROL 稍后]** | 选择此项可在特定日期和时间取消发布资产。 |
 
-1. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 下一步。]**
+1. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 下一页]**。
 1. 在&#x200B;**[!UICONTROL 管理发布 — 范围]**&#x200B;页中，执行下列操作之一：
    * 选择要从取消发布中删除的一个或多个资产。
-   * 在&#x200B;**[!UICONTROL 管理发布 — 范围]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 取消发布]**&#x200B;或&#x200B;**[!UICONTROL 从Dynamic Media取消发布。]**
-1. 点按&#x200B;**[!UICONTROL 确定。]**
+   * 在&#x200B;**[!UICONTROL 管理发布 — 范围]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 取消发布]**&#x200B;或&#x200B;**[!UICONTROL 从Dynamic Media]**&#x200B;取消发布。
+1. 点按&#x200B;**[!UICONTROL 确定]**。
 
 ## 使用快速发布{#quick-publish-aem-dm}将资源发布到Dynamic Media或Experience Manager
 
@@ -170,9 +170,9 @@ ht-degree: 4%
 >
 >要使用&#x200B;**[!UICONTROL 快速发布]**&#x200B;将资产发布到Dynamic Media或Experience Manager，请确保在&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;或选定文件夹的文件夹属性中启用了&#x200B;**[!UICONTROL 选择性发布]**。
 
-**使用快速发布将资产发布到Dynamic Media或Experience Manager**
+**要使用快速发布将资产发布到Dynamic Media或Experience Manager，请执行以下操作：**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在页面的左侧，点按导航图标（就在工具图标上方），然后在页面的右侧，点按&#x200B;**[!UICONTROL 资产>文件。]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在页面的左侧，点按导航图标（就在工具图标上方），然后在页面的右侧，点按&#x200B;**[!UICONTROL 资产>文件]**。
 1. 在&#x200B;**[!UICONTROL 卡视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，执行以下操作之一：
    * 导航到要发布其资产的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 快速发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便更轻松地检查特定文件夹的发布状态。
    * 导航到要发布其资产的文件夹。 打开文件夹，然后选择一个或多个资产。 在工具栏中，点按&#x200B;**[!UICONTROL 快速发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便您可以更轻松地检查特定资产的发布状态。
@@ -264,7 +264,8 @@ ht-degree: 4%
 1. 在Experience Manager中，在页面的左上角，点按Experience Manager徽标以访问全局导航控制台。 在页面的左侧，点按导航图标（就在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
 1. 在&#x200B;**[!UICONTROL 卡视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**(下面的屏幕截图显示了&#x200B;**[!UICONTROL 列表视图]**)中，打开包含已发布或未发布的资产的文件夹。
 1. 选择资产，以便显示带有复选标记的资产。 请参见下面的屏幕截图。
-1. 在页面左上角附近，从下拉菜单中，选择&#x200B;**[!UICONTROL 时间轴。]** 左 **** 面板中的“状态”区域显示所选资源的发布状态。使用&#x200B;**[!UICONTROL 列表 视图]**&#x200B;时，将显示一列额外的&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;发布状态。
+1. 在页面左上角附近，从下拉菜单中，选择&#x200B;**[!UICONTROL 时间轴]**。 左面板中的&#x200B;**[!UICONTROL 状态]**区域显示所选资源的发布状态。
+使用**[!UICONTROL 列表 视图]**&#x200B;时，将显示一列额外的&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;发布状态。
    * 默认情况下，配置为同步到Dynamic Media的文件夹会显示&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;列。
    * 如果文件夹&#x200B;*未*配置为同步到Dynamic Media，则不显示Dynamic Media列。
       ![列表视图和时间轴](/help/assets/assets-dm/selective-publish-status-timeline.png)
@@ -274,4 +275,3 @@ ht-degree: 4%
 未同步到Dynamic Media但在其上触发了Dynamic Media发布操作的资产会导致以下错误消息和解决方案：
 
 ![选择性发布错误](/help/assets/assets-dm/selective-publish-error.png)
-
