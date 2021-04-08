@@ -3,7 +3,7 @@ title: '编辑沙箱项目 '
 description: 编辑沙箱项目
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
+source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
