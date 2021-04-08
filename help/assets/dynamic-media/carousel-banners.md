@@ -3,15 +3,15 @@ title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅。
 feature: 传送横幅
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4565'
 ht-degree: 9%
 
 ---
-
 
 # 传送横幅{#carousel-banners}
 
@@ -74,11 +74,11 @@ ht-degree: 9%
 
    要在 Assets 中创建轮播集，请点按&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 轮播集]**。将资产添加到幻灯片，然后点按&#x200B;**[!UICONTROL 保存]**。您还可以直接在编辑器中编辑轮播集的外观和行为。
 
-1. [将热点或图像映射添加到图像横幅。](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [将热点或图像映射添加到图像横幅](#adding-hotspots-or-image-maps-to-an-image-banner)。
 
    向图像横幅添加一个或多个热点或图像映射。 然后，将每个视图与一个操作（如链接、快速体验片段）关联。 添加热点或图像映射后，可通过发布传送集来完成此任务。 发布后会创建可用于复制并应用于网站登陆页的嵌入代码。
 
-   请参阅[（可选）预览传送横幅。](#optional-previewing-carousel-banners) - 可选. 如果需要，您可以视图轮盘集的表示形式并测试其交互性。
+   请参阅[（可选）预览传送横幅](#optional-previewing-carousel-banners) — 可选。 如果需要，您可以视图轮盘集的表示形式并测试其交互性。
 
 1. [发布传送横幅](#publishing-carousel-banners)。
 
@@ -92,7 +92,7 @@ ht-degree: 9%
    * [以Experience Manager方式将传送横幅添加到您的网站](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。如果您是Experience Manager站点客户，则可以使用交互式媒体组件将传送集直接添加到页面。
 
 
-如果必须编辑传送集，请参阅[编辑传送集。](#editing-carousel-sets) 此外，您还可以视图和编辑传送 [集属性](/help/assets/manage-digital-assets.md#editing-properties)。
+如果必须编辑传送集，请参阅[编辑传送集](#editing-carousel-sets)。 此外，您还可以视图和编辑[传送集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
 ## 识别热点和图像映射变量{#identifying-hotspot-and-image-map-variables}
 
@@ -252,7 +252,7 @@ ht-degree: 9%
 
 创建完传送横幅后，您可以选择使用“预览”来查看传送横幅对客户的显示方式。
 
-请参阅[（可选）预览传送横幅。](#optional-previewing-carousel-banners)
+请参阅[（可选）预览传送横幅](#optional-previewing-carousel-banners)。
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ ht-degree: 9%
 
 当您对传送横幅满意时，可以发布它。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
-请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 您可以从传送编辑器（首选方法）或&#x200B;**[!UICONTROL 查看器]**&#x200B;预览中列表传送横幅。
 
@@ -406,7 +406,7 @@ ht-degree: 9%
 在上传横幅图像以创建轮播后，将热点或图像映射（或两者）添加到横幅。 已发布传送集。 现在，您可以将其添加到现有网站页面。
 
 >[!NOTE]
-如果您是AEM Sites客户，则可以通过将交互式媒体组件拖动到页面来直接将传送横幅添加到页面。 请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites客户，则可以通过将交互式媒体组件拖动到页面来直接将传送横幅添加到页面。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 但是，如果您是独立的Experience Manager资产客户，则可以手动将传送横幅添加到您的网站登陆页。
 
