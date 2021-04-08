@@ -3,9 +3,9 @@ title: '创建生产项目 '
 description: 创建生产项目
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,14 @@ ht-degree: 0%
 
    ![](assets/create-prod1.png)
 
-1. 用户将在屏幕上选择要包含在项目中的解决方案，这些解决方案将在上面的屏幕后显示。
+1. 用户将在屏幕上选择要包含在项目中的解决方案，这些解决方案将在上面的屏幕后显示。 选择所需的解决方案后，单击&#x200B;**创建**。
 
 
-   ![](assets/set-up-prod-2.png)
+   ![](assets/setup-prod-select.png)
 
-1. 选择解决方案后，单击&#x200B;**创建**。
+   此外，您还可以如下图所示，在&#x200B;**Sites**&#x200B;下选择&#x200B;**Commerce**&#x200B;加载项选项，然后单击&#x200B;**创建**。
 
+   ![](assets/setup-prod-commerce.png)
 
 1. 在登陆页上看到您的项目卡后，将鼠标悬停在该卡上，以选择Cloud Manager图标以导航至Cloud Manager **概述**&#x200B;页面。
 
