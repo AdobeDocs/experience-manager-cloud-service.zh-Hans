@@ -4,23 +4,23 @@ description: 了解如何使用 Dynamic Media 中的批次集预设自动创建�
 contentOwner: Rick Brough
 feature: 图像预设，查看器预设
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3435'
+source-wordcount: '3446'
 ht-degree: 2%
 
 ---
 
-
 # 关于批集预设{#about-bsp}
 
-使用&#x200B;**[!UICONTROL 批量集预设]**&#x200B;可帮助在您将资产文件单独或使用批量摄取上传到文件夹时，在图像集或旋转集中轻松创建和组织多个资产。 您可以在[!DNL Dynamic Media]中计划的资产导入作业旁边运行预设。 每个预设都是一组唯一命名的自包含指令，这些指令定义如何使用与预设方法中定义的命名约定相匹配的图像来构建图像集或旋转集。
+在将资产文件单独或使用批量摄取功能将资产文件上传到文件夹时，使用&#x200B;**[!UICONTROL 批量集预设]**&#x200B;在图像集或旋转集中创建和组织多个资产。 您可以在[!DNL Dynamic Media]中计划的资产导入作业旁边运行预设。 每个预设都是一组唯一命名的自包含指令，这些指令定义如何使用与预设方法中定义的命名约定相匹配的图像来构建图像集或旋转集。
 
 >[!IMPORTANT]
 >
->如果您在[!DNL Dynamic Media Classic]中使用了批集预设，并且您将从[!DNL Dynamic Media Classic]迁移到Adobe Experience Manager作为Cloud Service，则必须在[!DNL Adobe Experience Manager as a Cloud Service]中手动重新创建批集预设定义。
+>如果您在[!DNL Dynamic Media Classic]中使用了批量集预设，并且您将作为Cloud Service从[!DNL Dynamic Media Classic]迁移到Adobe Experience Manager，请在[!DNL Adobe Experience Manager as a Cloud Service]中手动重新创建批量集预设定义。
 
 **最佳实践**  — 使用批集预设时，Adobe建议使用以下工作流：
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 1. 创建资产文件夹或使用现有的资产文件夹，并确保它已同步到[!DNL Dynamic Media]。 请参阅[创建文件夹](/help/assets/manage-digital-assets.md#creating-folders)。
 1. 将批集预设应用到资产文件夹。 请参阅[关于将批集预设应用到文件夹](#apply-bsp)。
 1. 将图像上传到资产文件夹。 请参阅[上传图像集的资产](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)、[上传旋转集的资产](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或[向Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager)添加数字资产。
-1. 创建图像集或旋转集。 请参阅[图像集](/help/assets/dynamic-media/image-sets.md)或[旋转集](/help/assets/dynamic-media/spin-sets.md)。
+1. 图像集或旋转集会在所需文件夹中自动生成。
 1. 发布图像集或旋转集。 请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 为图像集或旋转集{#creating-bsp}创建批集预设
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 `.*_main,.*_alt[0-9]`
 
-虽然可以强制排序序列，但最好依靠字母数字编号来排序序列。 此外，您还可以使用[!DNL Dynamic Media]中的图像集或旋转集编辑器工具轻松重新排列资产的顺序，或通过拖放操作在资产集中添加和删除新资产。
+虽然可以强制排序序列，但最好依靠字母数字编号来排序序列。 此外，您还可以使用[!DNL Dynamic Media]中的图像集或旋转集编辑器工具重新排列资产的顺序，或者使用拖放操作在资产集中添加和删除新资产。
 
 创建完批集预设后，您可以将其应用到已创建的一个或多个文件夹。 请参阅[关于将批集预设应用到文件夹](#apply-bsp)。
 
@@ -87,7 +87,7 @@ ht-degree: 2%
    * 在“**[!UICONTROL 编辑批集预设]**”页左侧，在“**[!UICONTROL 匹配]**”、“**[!UICONTROL 基名]**”或“**[!UICONTROL 序列排序]**”下，点按“**[!UICONTROL 添加组]**”。
    * **[!UICONTROL Match]**&#x200B;字段为必填字段。 **[!UICONTROL 仅当]** “匹配”字段尚未使 **** 用括号分组指定基名时，“基名”才是必需的。**[!UICONTROL 序列]** 排序是可选的。
    * 使用组表单中的下拉列表和文本框，指定要用于为图像集或旋转集资产成员定义命名标准的表达式组。
-      * 当您选择并指定组的表达式时，请注意，实际的常规表达式语法反映在页面右下角的&#x200B;**[!UICONTROL 规则结果 — RegX]**&#x200B;标题下(点按表单区域外的任意位置，以查看右下角更新的常规表达式字符串)。 这些常规表达式字符串表示您要在搜索[!DNL Dynamic Media]资产以创建图像集或旋转集时要匹配的模式。
+      * 当您选择并指定组的表达式时，请注意，实际的常规表达式语法反映在页面右下方的&#x200B;**[!UICONTROL 规则结果 — RegX]**&#x200B;标题下。 要查看右下角更新的常规表达式字符串，请点按表单区域外的任何位置。 这些常规表达式字符串表示您要在搜索[!DNL Dynamic Media]资产以创建图像集或旋转集时要匹配的模式。
       * 要删除已添加的组，请点按&#x200B;**[!UICONTROL X]**。
    * 添加两个或更多组时，在&#x200B;**[!UICONTROL And]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL And]**&#x200B;将新添加的组与您添加的任何以前的表达式组连接。 或者，选择&#x200B;**[!UICONTROL Or]**&#x200B;以添加上一个表达式组与您创建的新组之间的交互。 **[!UICONTROL Or]**&#x200B;操作数由常规表达式语法本身中使用垂直行字符`|`来定义。
 
@@ -99,7 +99,7 @@ ht-degree: 2%
 
 1. 在该页面的右上角，点按&#x200B;**[!UICONTROL 保存]**。
 
-您现在可以通过读取操作将批集预设应用到一个或多个资产文件夹，将资产上传到该文件夹，然后创建图像集或旋转集。 请参阅[关于将批集预设应用到文件夹](#apply-bsp)。
+您现在可以将批集预设应用到资产文件夹了。 然后，您会将资产上传到该文件夹。 此工作流会自动生成图像集或旋转集。 请参阅[关于将批集预设应用到资产文件夹](#apply-bsp)。
 
 ### 预设详细信息、设置命名约定和规则结果 — RegX选项{#features-options-bsp}
 
@@ -112,7 +112,7 @@ ht-degree: 2%
 | 预设名称 | 只读. 首次创建批集时指定的名称。 如果必须重命名预设，则可以复制现有批集预设并指定新名称。 请参阅[复制现有批集预设](#copy-bsp)。 |
 | 类型 | 只读. 首次创建批集时指定了类型。 复制现有批集预设不允许您更改其[!UICONTROL 类型];您必须创建预设。 |
 | 包括派生的资产 | 可选。要使[!DNL Dynamic Media]的IPS（图像生产系统）包含旋转集或图像集中的已生成或“派生”图像，请选择&#x200B;**[!UICONTROL 是]**（默认）。 派生资产是指未由用户直接上传的图像。 而是在上传主控资源时，IPS生成了该资源。 例如，IPS在[!DNL Dynamic Media]上载PDF时从PDF中的页面生成的图像资源被视为派生资源。 |
-| 目标文件夹 | 可选。如果您定义了大量图像集或旋转集，Adobe建议您将这些集与包含资产本身的文件夹分开。 因此，请考虑创建“图像集”或“旋转集”文件夹，并将应用程序重定向到将批量集生成的集放在此处。<br>在这种情况下，请指定“Experience Manager资产”文件夹结构()中`/content/dam`的哪个文件夹处于活动状态批集预设。确保已为[!DNL Dynamic Media]同步启用该文件夹，以允许它作为目标文件夹。 请参阅Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)中的[在文件夹级别配置选择性发布。<br>如果您通过文件夹的“属性”应用预设，则多个文件夹可以为其分配给定的批集 **[!UICONTROL 预设]**。请参阅[从资产文件夹的“属性”页面](#apply-bsp-to-folders-via-properties)应用批集预设。<br>如果您未指定文件夹，则会在与资产上传文件夹相同的文件夹中创建批处理集预设。 |
+| 目标文件夹 | 可选。如果您定义了大量图像集或旋转集，Adobe建议您将这些集与包含资产本身的文件夹分开。 因此，请考虑创建“图像集”或“旋转集”文件夹，并将应用程序重定向到将批量集生成的集放在此处。<br>在这种情况下，请指定“Experience Manager资产”文件夹结构()中`/content/dam`的哪个文件夹处于活动状态批集预设。确保已为[!DNL Dynamic Media]同步启用该文件夹，以允许它作为目标文件夹。 请参阅Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)中的[在文件夹级别配置选择性发布。<br>如果您通过文件夹的“属性”应用预设，则多个文件夹可以为其分配给定的批集 **[!UICONTROL 预设]**。请参阅[从资产文件夹的“属性”页面](#apply-bsp-to-folders-via-properties)应用批集预设。<br>如果未指定文件夹，则会在上传到的资产文件夹所在的文件夹中创建批处理集预设生成的图像集或旋转集。 |
 | **[!UICONTROL 设置命名规则]** |  |
 | 前缀<br>或<br>后缀 | 可选。在相应的字段中输入前缀和/或后缀。<br>使用前缀和后缀字段，您可以为特定内容集使用替代的自定义文件命名约定创建任意数量的批集预设。当公司定义的默认命名方案出现异常时，此方法特别有用。<br>前缀或后缀将添加到您在“资 **[!UICONTROL 产]** 命名约定”区域中 **[!UICONTROL 定义的]** 基本名称。通过添加前缀或后缀，您可以确保图像集或旋转集是专门创建的，并且独立于其他资产。 它还有助于进一步帮助其他人识别文件类型。 例如，要确定所使用的颜色模式，可以添加前缀或后缀`rgb`或`cmyk`。<br>虽然使用批量集预设功能不需要指定集命名约定，但最佳实践是建议您使用集命名约定。通过此实践，您可以定义想要分组到一组中的命名约定的任意多个元素，以帮助简化批量集创建。 |
 | **[!UICONTROL 规则结果 - RegX]** |  |
@@ -120,15 +120,15 @@ ht-degree: 2%
 | 资产命名约定 — 基本名称 | 只读. 根据您选择的“基名”表单选项或您输入的原始代码显示常规表达式语法。 |
 | 序列排序 — 匹配 | 只读. 根据您选择的表单选项或输入的原始代码显示常规表达式语法。 |
 
-## 关于将批集预设应用到文件夹{#apply-bsp}
+## 关于将批集预设应用到资产文件夹{#apply-bsp}
 
-当您将批集预设分配给一个或多个文件夹时，该文件夹中的所有子文件夹都会自动继承父文件夹的预设。
+当您将批集预设分配给一个或多个资产文件夹时，该文件夹中的所有子文件夹都会自动继承父文件夹中的预设。
 
-您可以将多个批集预设应用到一个文件夹。
+您可以将多个批集预设应用到资产文件夹。
 
 在用户界面中，如果文件夹已分配了批预设，则该预设的名称会显示在&#x200B;**[!UICONTROL 卡片]**&#x200B;视图中。
 
-要将批集预设应用到文件夹，请使用以下两种方法之一：
+要将批集预设应用到资产文件夹，请使用以下两种方法之一：
 
 * [从“批集预设”页面将批集预设应用到资产文件夹](#apply-bsp-to-folders-via-bsp-page)  — 此方法优惠您最灵活。您可以将一个预设或多个预设应用到一个或多个文件夹。
 * [从资产文件夹的“属性”页面应用批集预设](#apply-bsp-to-folders-via-properties)  — 通过此方法，您可以将一个或多个批集预设应用到单个文件夹。
@@ -160,7 +160,7 @@ ht-degree: 2%
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;下，从&#x200B;**[!UICONTROL 预设名称]**&#x200B;下拉列表框中，选择要应用的批集预设的名称。 上面的屏幕截图显示了两个应用于文件夹的选定批量集预设。
+1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;下，从&#x200B;**[!UICONTROL 预设名称]**&#x200B;下拉列表框中，选择要应用的批集预设的名称。 上面的屏幕截图显示了两个应用到资产文件夹的选定批量集预设。
 
    如果&#x200B;**[!UICONTROL 预设名称]**&#x200B;下拉列表框中不存在批集预设名称，则表示您尚未创建任何批集预设。 请参阅[为图像集或旋转集](#creating-bsp)创建批集预设。
 
@@ -172,19 +172,19 @@ ht-degree: 2%
 
 您可以编辑已创建的现有批集预设。 您可以更改您为资产命名约定或序列顺序创建的任何表达式组。 如果需要，您还可以更新目标文件夹并设置命名约定。
 
-但是，您无法更改预设的名称或预设类型（图像集或旋转集）。 如果需要更改预设的名称，您只需复制现有预设并指定新名称即可。 请参阅[复制批集预设](#copy-bsp)。
+但是，您无法更改预设的名称或预设类型（图像集或旋转集）。 如果需要更改预设的名称，请复制现有预设并指定新名称。 请参阅[复制批集预设](#copy-bsp)。
 
-如果您编辑之前应用于某个文件夹的批集预设，则新编辑的预设将仅应用于上传到该文件夹的新资产。
+如果您编辑之前应用到某个文件夹的批集预设，则新编辑的批集预设将仅应用于上传到该文件夹的新资产。
 
-如果您希望将新编辑的预设重新应用于文件夹中的现有资产，则必须重新处理该文件夹。 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->这样，现有资产现在就有资格成为图像集或旋转集的一部分并进行添加。此外，不会删除图像集或旋转集中基于之前已使用的批量集预设而包含的现有资产（假定它们不再基于新编辑的预设而符合条件）并按原样显示。
+如果您希望将新编辑的预设重新应用于文件夹中的现有资产，则必须重新处理该文件夹。 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->这样，现有资产现在就有资格成为图像集或旋转集的一部分并进行添加。此外，不会删除已包含在图像集或旋转集中的现有资产（基于之前使用的批集预设）并按原样显示。 此方案假定它们不再基于新编辑的预设进行资格确认。
 
 **要编辑批集预设，请执行以下操作：**
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设。]**
+1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在“**[!UICONTROL 批集预设]**”页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要更改的批集预设。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑批集预设。]**
+1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑批集预设]**。
 1. 根据需要编辑预设。
-1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 保存。]**
+1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 保存]**。
 
 ## 复制现有批集预设{#copy-bsp}
 
@@ -194,7 +194,7 @@ ht-degree: 2%
 
 **要复制现有批集预设，请执行以下操作：**
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设。]**
+1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在“**[!UICONTROL 批集预设]**”页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要复制的批集预设的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 复制]**。
 1. 在&#x200B;**[!UICONTROL 复制批集预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 标题]**&#x200B;文本框中，键入预设的新名称。
@@ -269,3 +269,4 @@ ht-degree: 2%
 >* [旋转集](/help/assets/dynamic-media/spin-sets.md)
 >* [在Dynamic Media中的文件夹级别配置选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  — 请参阅主题中的“同步模式”，了解有关将单个文件夹同步到的更多信息 [!DNL Dynamic Media]。
 >* [在Cloud Services中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  — 请参阅主题中的“Dynamic Media同步模式”，了解有关将所有文件夹同步到的详细信息 [!DNL Dynamic Media]。
+
