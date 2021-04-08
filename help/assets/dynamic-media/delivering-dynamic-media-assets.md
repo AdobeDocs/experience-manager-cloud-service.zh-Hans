@@ -3,15 +3,15 @@ title: 传送 Dynamic Media 资产
 description: 了解如何交付Dynamic Media资产。
 feature: 资产管理
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 14%
 
 ---
-
 
 # 传送 Dynamic Media 资产{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ ht-degree: 14%
 
    * 将视频或图像嵌入您的网站。
    * 将URL关联到您的Web应用程序。当您希望以弹出窗口或模态窗口的形式传送视频播放器时，可使用链接。
-   * 如果您的站点是响应式的，则您可以[传送优化的图像。](/help/assets/dynamic-media/responsive-site.md)
+   * 如果您的站点是响应式的，则您可以[传送优化的图像](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
