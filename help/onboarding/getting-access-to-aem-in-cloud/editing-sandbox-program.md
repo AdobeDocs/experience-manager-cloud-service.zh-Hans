@@ -1,14 +1,14 @@
 ---
 title: '编辑沙箱项目 '
-description: '编辑沙箱项目 '
+description: 编辑沙箱项目
+exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
-
 
 # 编辑沙箱项目{#create-sandbox-program}
 
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 1. 从Cloud Manager的&#x200B;*概述*&#x200B;页面导航到&#x200B;**编辑项目**&#x200B;页面。
 
-1. **“编辑项目**”页显示两个用于“生产”和“沙箱”项目的选项卡（“常规”和“解决方案”）。
-   ![](assets/edit-program.png)
+1. **“编辑项目**”页面显示三个选项（**Sites**、**Commerce**&#x200B;和&#x200B;**Assets**），分别用于生产和沙箱项目。
+   ![](assets/edit-prg.png)
 
 
 ## 编辑项目{#considerations-editing}时的注意事项
