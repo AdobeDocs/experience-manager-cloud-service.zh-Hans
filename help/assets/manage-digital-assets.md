@@ -4,15 +4,15 @@ description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
 feature: 资产管理，发布，协作，资产处理
-role: 业务从业者，架构师，管理员
+role: Business Practitioner,Architect,Administrator
+exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4342'
 ht-degree: 19%
 
 ---
-
 
 # 管理资产{#manage-assets}
 
@@ -285,7 +285,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 <!--
 >[!NOTE]
 >
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+>For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 -->
 
 1. 导航到要发布的资产/文件夹所在的位置。
@@ -513,7 +513,7 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
 ### 打印注释{#printing-annotations}
 
-如果资产有批注或已受到审阅工作流程的影响，您可以将资产连同批注一起打印为PDF文件，以便脱机审阅。
+如果资产有批注或已受到审阅工作流程的影响，您可以将资产以及批注和审阅状态打印为PDF文件，以便脱机审阅。
 
 您还可以选择仅打印注释或审阅状态。
 
@@ -549,7 +549,7 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
 1. 使用右上角的选项下载或打印PDF。
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注的字体颜色的信息，请参阅[批注](/help/assets/manage-digital-assets.md#annotating)。
 
