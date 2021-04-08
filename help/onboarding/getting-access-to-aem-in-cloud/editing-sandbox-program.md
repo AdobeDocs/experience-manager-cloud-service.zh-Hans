@@ -3,7 +3,7 @@ title: '编辑沙箱项目 '
 description: 编辑沙箱项目
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >必须为项目至少选择一个解决方案，即在编辑项目工作流程期间，不允许用户取消选择所有解决方案。
+   >必须为项目至少选择一个解决方案，即不允许用户在编辑项目工作流程中取消选择所有解决方案。
 
 1. 单击&#x200B;**保存**&#x200B;以完成编辑项目过程。
 
