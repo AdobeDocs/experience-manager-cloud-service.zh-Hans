@@ -3,9 +3,9 @@ title: '编辑制作项目 '
 description: 编辑制作项目
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ ht-degree: 0%
 
 请按照以下步骤编辑生产项目:
 
-1. 从Cloud Manager的&#x200B;*概述*&#x200B;页面导航至&#x200B;**编辑项目**&#x200B;页面
+1. 单击Cloud Manager的&#x200B;*概述*&#x200B;页面中的&#x200B;**编辑项目**&#x200B;选项
 
-1. **“编辑项目**”页将显示三个选项（**Sites**&#x200B;和&#x200B;**Assets**），分别用于“生产”和“沙箱”项目。 此外，您还可以选择&#x200B;**Commerce** add-on选项，该选项位于&#x200B;**Sites**&#x200B;下，如下图所示。
+   ![](assets/edit-program-overview.png)
+
+1. **“编辑项目**”页显示两个选项卡&#x200B;**General**&#x200B;和&#x200B;**Solutions &amp; Add-ons**。
+
+   导航到&#x200B;**常规**&#x200B;选项卡以编辑项目说明。
+
+   ![](assets/edit-program-general.png)
+
+   **解决方案和加载项**&#x200B;选项卡显示两个选项，如&#x200B;**Sites**&#x200B;和&#x200B;**Assets**(适用于生产和沙箱项目)。 此外，您还可以选择&#x200B;**Commerce** add-on选项，该选项位于&#x200B;**Sites**&#x200B;下，如下图所示。
 
    ![](assets/edit-prg.png)
 
