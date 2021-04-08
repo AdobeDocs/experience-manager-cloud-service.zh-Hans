@@ -3,15 +3,15 @@ title: 交互式视频
 description: 了解如何在Dynamic Media中使用交互式视频和购物视频。
 feature: 交互式视频
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '6068'
+source-wordcount: '6066'
 ht-degree: 20%
 
 ---
-
 
 # 交互式视频{#interactive-videos}
 
@@ -85,8 +85,8 @@ There was a link here that showed the video frame of an interactive video and wh
 最后，发布交互式视频资产。 发布后会创建嵌入代码或URL，您最终会将其复制并应用到您的网站登陆页。 请参阅[为视频添加交互性](#adding-interactivity-to-your-video)。
 请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **在Experience Manager中将交互式视频添加到您的网站或您的网站**  — 如果您使用Experience Manager站点或Experience Manager电子商务，或两者兼有，则可以在Experience Manager中将交互式视频直接添加到网页。将交互式媒体组件拖动到页面上。 请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-使用嵌入代码或URL将交互式视频集成到您的网站体验。请参阅[将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website)。
+1. **在Experience Manager中将交互式视频添加到您的网站或您的网站**  — 如果您使用Experience Manager站点或Experience Manager电子商务，或两者兼有，则可以在Experience Manager中将交互式视频直接添加到网页。将交互式媒体组件拖动到页面上。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+使用嵌入代码或URL将交互式视频集成到您的网站体验。 请参阅[将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website)。
 如果您使用第三方WCM（Web内容管理器），则必须将新的交互式视频与您网站上使用的现有快速视图实施相集成。 请参阅[将交互式视频与现有快速视图集成](#integrating-an-interactive-video-with-an-existing-quickview)。
    [将 Dynamic Media 资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
@@ -226,7 +226,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 您可以选择创建自己的自定义交互式视频查看器预设。 您可以确定视频播放器的样式、交互式缩略图以及显示在视频末尾的缩略图网格视图等。
 
-交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，以便您在发布前测试其交互性。
+交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，这样您就可以在发布前测试其交互性。
 
 保存查看器预设后，“查看器预设”页面中的查看器预设状态将自动设置为 **开**。此状态表明查看器预设在 Dynamic Media 组件中可见，预览视频时也可见。另请确保手动发布新查看器预设。
 
@@ -500,7 +500,7 @@ There was a link here that showed the video frame of an interactive video and wh
    >[!NOTE]
    要发布包含快速视图的购物视频，请确保您还从您的商务区域单独发布每个视频的相关图像资产。
 
-   在添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站登录页面。请参阅[将交互式视频集成到您的网站。](#integrating-an-interactive-video-with-your-website)
+   在添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站登录页面。请参阅[将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website)。
 
 ## 发布交互式视频资源{#publishing-interactive-video-assets}
 
@@ -510,7 +510,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 现在，在上传视频、向视频添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站。
 
-如果您是Experience Manager站点客户，则可以通过将交互式媒体组件拖动到页面来添加交互式视频。 请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是Experience Manager站点客户，则可以通过将交互式媒体组件拖动到页面来添加交互式视频。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 如果您是独立的Experience Manager资产客户，您可以按本节所述手动将交互式视频添加到您的网站。
 
