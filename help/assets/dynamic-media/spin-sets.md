@@ -3,15 +3,15 @@ title: 旋转集
 description: 了解如何在Dynamic Media中使用旋转集。
 feature: 旋转集
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 34%
+source-wordcount: '1831'
+ht-degree: 33%
 
 ---
-
 
 # 旋转集{#spin-sets}
 
@@ -39,11 +39,11 @@ ht-degree: 34%
    >
    >批集由IPS（图像生产系统）创建，作为资产摄取的一部分。
 
-1. [上传多个视图的图像。](#uploading-assets-for-spin-sets)
+1. [上传多个视图的图像](#uploading-assets-for-spin-sets)。
 
    对于一维旋转集，一个项目至少需要8-12张照片，对于二维旋转集，需要16-24张照片。拍照必须以固定的间隔拍摄，以给人以项目正在旋转和翻动的印象。 例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30°(360/12)。
 
-1. [创建旋转集。](#creating-spin-sets)
+1. [创建旋转集](#creating-spin-sets)。
 
    要创建旋转集，请选择&#x200B;**[!UICONTROL 创建>旋转集]**，然后命名旋转集，选择资产，然后选择图像的显示顺序。
 
@@ -55,15 +55,15 @@ ht-degree: 34%
 
    要创建或编辑查看器预设，请参阅&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
 
-   请参阅[添加和编辑查看器预设。](/help/assets/dynamic-media/managing-viewer-presets.md)
+   请参阅[添加和编辑查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
    您可以通过三种不同的方式视图和访问通过批集预设创建的集。 （使用批集预设创建的集，请执行&#x200B;*不*&#x200B;操作，以便在用户界面中显示。）
 
-1. [预览旋转集。](/help/assets/dynamic-media/previewing-assets.md)
+1. [预览旋转集](/help/assets/dynamic-media/previewing-assets.md)。
 
    选择旋转集，之后您便可以进行预览。旋转该旋转集。您可以从左边栏下拉菜单中的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
 
-1. [发布旋转集。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [发布旋转集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    发布旋转集时，将会激活 URL 和嵌入字符串。此外，您必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -138,7 +138,7 @@ ht-degree: 34%
 
    如有必要，可将资产的重新排序图标拖动到资产文件名右侧，以在设置的列表上下重新排序图像。
 
-   ![通过将旋转集中的第11帧拖动到新位置，将其重新排序。](assets/6_5_spinset-reorderassets.png)
+   ![通过将旋转集中的第11帧拖动到新位置，将其重新排序](assets/6_5_spinset-reorderassets.png)
 
    通过将旋转集中的第11帧拖动到新位置，将其重新排序。
 
