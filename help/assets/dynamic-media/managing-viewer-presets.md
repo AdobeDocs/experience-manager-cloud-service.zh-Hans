@@ -3,15 +3,15 @@ title: 管理查看器预设
 description: 了解如何在Dynamic Media中创建和管理查看器预设。
 feature: 查看器预设，查看器
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4245'
 ht-degree: 22%
 
 ---
-
 
 # 管理查看器预设{#managing-viewer-presets}
 
@@ -59,7 +59,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >[!NOTE]
 >
 >在首次使用开箱即用的查看器之前，先发布这些查看器。
->请参阅[发布查看器预设。](#publishing-viewer-presets)
+>请参阅[发布查看器预设](#publishing-viewer-presets)。
 
 ### 查看器预设系统兼容性{#viewer-preset-system-compatibility}
 
