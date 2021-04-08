@@ -6,7 +6,7 @@ topic: 商务从业人员
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 2%
@@ -137,7 +137,7 @@ Smart Imaging可处理通过HTTP或HTTPS传送的图像。 此外，它还适用
 
 请求使用智能成像；它不会自动启用。
 
-1. [使用Admin Console创建支持案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [使用Admin Console创建支持案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 1. 在您的支持案例中提供以下信息：
 
    1. 主要联系人姓名、电子邮件、电话。
