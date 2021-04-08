@@ -1,14 +1,14 @@
 ---
 title: '创建生产项目 '
-description: '创建生产项目 '
+description: 创建生产项目
+exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # 创建生产项目{#create-production-program}
 
@@ -29,11 +29,6 @@ ht-degree: 0%
 
 1. 用户将在屏幕上选择要包含在项目中的解决方案，这些解决方案将在上面的屏幕后显示。
 
-
-
-   >[!NOTE]
-   >
-   >以下屏幕仅针对已购买多个解决方案的客户细分显示。 对于只购买了一个解决方案的客户，将不显示以下解决方案选择屏幕。
 
    ![](assets/set-up-prod2.png)
 
