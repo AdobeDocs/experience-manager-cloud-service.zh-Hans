@@ -3,15 +3,15 @@ title: 交互式图像
 description: 了解如何在Dynamic Media中使用交互式图像。
 feature: 交互式图像
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4251'
+source-wordcount: '4249'
 ht-degree: 17%
 
 ---
-
 
 # 交互式图像{#interactive-images}
 
@@ -52,8 +52,8 @@ ht-degree: 17%
 请参阅[预览交互式图像](#optional-previewing-interactive-images) — 可选。 如果需要，您可以查看购物横幅的呈现形式并测试其交互性。
 有关如何发布交互式图像资产的详细信息，请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **以Experience Manager方式将交互式图像添加到您的网站或您的网站**。如果您使用站点或电子商务，或者同时使用两者，则可以在Experience Manager中将交互式图像直接添加到网页。 将交互式媒体组件拖动到页面上。 请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-如果您使用Experience Manager资产和Dynamic Media独立版本，请将嵌入代码复制到您的网站。然后，将其与现有快速视图集成。 请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
+1. **以Experience Manager方式将交互式图像添加到您的网站或您的网站**。如果您使用站点或电子商务，或者同时使用两者，则可以在Experience Manager中将交互式图像直接添加到网页。 将交互式媒体组件拖动到页面上。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+如果您使用Experience Manager资产和Dynamic Media独立版本，请将嵌入代码复制到您的网站。 然后，将其与现有快速视图集成。 请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
 如果您使用第三方WCM（Web内容管理器），请将新的交互式视频与您网站上使用的现有快速视图集成。 请参阅[将交互式图像与现有快速视图集成](#integrating-an-interactive-image-with-an-existing-quickview)。
 
 ## （可选）识别热点变量{#optional-identifying-hotspot-variables}
@@ -311,7 +311,7 @@ ht-degree: 17%
 
 当您对交互式图像感到满意时，您可以发布该图像。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
-请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 **预览交互式图像**
 
@@ -328,7 +328,7 @@ ht-degree: 17%
 
 在上传横幅图像、向其添加热点以及发布交互式图像后，即可将其添加到网站页面。
 
-如果您是AEM Sites客户，则可以通过将交互式媒体组件拖动到页面上来添加交互式图像。 请参阅[将Dynamic Media资产添加到页面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites客户，则可以通过将交互式媒体组件拖动到页面上来添加交互式图像。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 如果您是独立的AEM Assets客户，则可以按本节所述手动将交互式图像添加到您的网站。
 
