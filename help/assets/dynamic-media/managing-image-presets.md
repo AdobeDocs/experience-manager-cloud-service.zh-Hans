@@ -3,15 +3,15 @@ title: 管理图像预设
 description: “了解图像预设以及如何创建、修改和管理图像预设。”
 feature: 图像预设、查看器、演绎版
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 27%
 
 ---
-
 
 # 管理图像预设{#managing-image-presets}
 
@@ -49,7 +49,7 @@ ht-degree: 27%
 >
 >您&#x200B;*不*&#x200B;需要在图像预设自动发布时发布图像预设。
 >
->请参阅[发布图像预设。](#publishing-image-presets)
+>请参阅[发布图像预设](#publishing-image-presets)。
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 >
 >如果使用 Internet Explorer 9，创建的预设在保存后不会立即显示在预设列表中。要解决此问题，请禁用 IE9 的缓存。
 
-如果您希望支持摄取AI、PDF和EPS文件，以便生成这些文件格式的动态演绎版，请在创建图像预设前查看以下信息。
+如果您希望支持摄取AI、PDF和EPS文件，以便生成这些文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
 
 请参阅[Adobe Illustrator(AI)、PostScript®(EPS)和PDF文件格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)。
 
