@@ -3,9 +3,9 @@ title: '编辑制作项目 '
 description: 编辑制作项目
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,20 @@ ht-degree: 0%
 
 1. 从Cloud Manager的&#x200B;*概述*&#x200B;页面导航至&#x200B;**编辑项目**&#x200B;页面
 
-1. **“编辑项目**”页将显示生产和沙箱项目的三个选项（**Sites**、**Commerce**&#x200B;和&#x200B;**Assets**）。
+1. **“编辑项目**”页将显示三个选项（**Sites**&#x200B;和&#x200B;**Assets**），分别用于“生产”和“沙箱”项目。 此外，您还可以选择&#x200B;**Commerce** add-on选项，该选项位于&#x200B;**Sites**&#x200B;下，如下图所示。
 
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >必须为项目至少选择一个解决方案，即在编辑项目工作流程期间，不允许用户取消选择所有解决方案。
+
+1. 单击&#x200B;**保存**&#x200B;以完成编辑项目过程。
 
 
 ## 编辑项目{#considerations-editing}时的注意事项
 
 编辑项目时，应查看以下几点注意事项：
 
-* 对于项目，必须至少选择一个解决方案，即，在编辑项目工作流程中，不允许使用来取消选择所有解决方案。
+* 对于项目，必须至少选择一个解决方案，即不允许用户在“编辑项目”工作流程中取消选择所有解决方案。
 
 * 单击&#x200B;**保存**&#x200B;按钮，如果选定的解决方案已更改，则对环境的解决方案更新将在下次部署后生效。
