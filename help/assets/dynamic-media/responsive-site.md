@@ -3,15 +3,15 @@ title: 为响应式网站传送优化的图像
 description: 了解如何使用响应式代码功能从Dynamic Media投放优化的图像。
 feature: 资产管理
 topic: 商务从业人员
-role: 商务从业人员
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 37%
 
 ---
-
 
 # 为响应式网站传送优化的图像 {#delivering-optimized-images-for-a-responsive-site}
 
@@ -19,9 +19,9 @@ ht-degree: 37%
 
 如果您的网站位于第三方WCM上，则使用此功能很合理。 但是，如果您的网站在AEM上，则非现场映像服务器会渲染映像并将其提供到网页。
 
-另请参阅[在网页上嵌入视频查看器。](embed-code.md)
+另请参阅[将视频查看器嵌入网页](embed-code.md)。
 
-另请参阅[将 URL 关联到您的 Web 应用程序。](linking-urls-to-yourwebapplication.md)
+另请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。
 
 **要为响应式网站提供优化的图像，请执行以下操作**:
 
