@@ -3,15 +3,15 @@ title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上的可用资源。
 contentOwner: AG
 feature: 资产管理，关联资产，资产分发
-role: 管理员，业务从业者，架构师
+role: Administrator,Business Practitioner,Architect
+exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2922'
 ht-degree: 27%
 
 ---
-
 
 # 在 中，使用连接的资产共享 DAM 资产 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -108,9 +108,12 @@ ht-degree: 27%
 
 1. 将[!DNL Sites]部署添加为[!DNL Assets]部署上的CORS配置中允许的来源。 有关详细信息，请参阅[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)。
 
+1. 配置[同一站点Cookie支持](/help/security/same-site-cookie-support.md)。
+
 您可以检查已配置的[!DNL Sites]部署与[!DNL Assets]部署之间的连接。
 
-![已配置已连接资产的连接测试  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+![已配置已连接资产的连接测 [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*试图：已配置已连接资产的连接测试 [!DNL Sites]。*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -129,7 +132,7 @@ ht-degree: 27%
    * 在本地[!DNL Sites]的&#x200B;**[!UICONTROL 发布资产]**&#x200B;选项中，选择&#x200B;**[!UICONTROL 选择性发布]**。 请勿选择&#x200B;**[!UICONTROL 同步所有内容]**。
    * 在远程[!DNL Assets]部署中，在[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
 
-1. 启用Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中的[[!DNL Dynamic Media] 支持。 当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]图像时，此功能使默认图像组件能够显示[!DNL Dynamic Media]图像。
+1. 启用Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中的[[!DNL Dynamic Media] 支持。 当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]图像时，此功能使默认[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)显示[!DNL Dynamic Media]图像。
 
 ## 使用远程资产 {#use-remote-assets}
 
@@ -231,11 +234,13 @@ ht-degree: 27%
 要排除常见错误，请执行以下步骤：
 
 * 如果您无法从[!UICONTROL 内容查找器]中搜索远程资产，请确保所需的角色和权限都到位。
-* 由于一个或多个原因，从远程大坝获取的资产可能无法发布到网页上。 它不存在于远程服务器上，缺少相应的获取权限，或者网络故障可能是原因。 确保未从远程DAM中删除资产。 请确保适当的权限到位并满足先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/operations/asynchronous-jobs.md)，查看是否发生了资产获取错误。
-* 如果无法从本地[!DNL Sites]部署访问远程DAM部署，请确保允许跨站点Cookie。 如果跨站点Cookie被阻止，则[!DNL Experience Manager]的两个部署可能无法进行身份验证。 例如，在Incognito模式下，[!DNL Google Chrome]可能会阻止第三方Cookie。 要允许[!DNL Chrome]浏览器中的Cookie，请单击地址栏中的“眼睛”图标，导航到“站点不工作”>“阻止”，选择“远程DAM URL”，然后允许登录令牌Cookie。 或者，请参阅有关[如何启用第三方Cookie的帮助](https://support.google.com/chrome/answer/95647)。
 
-   ![Chrome中的Cookie错误](assets/chrome-cookies-incognito-dialog.png)
+* 由于一个或多个原因，从远程DAM获取的资产可能无法发布到网页上。 它不存在于远程服务器上，缺少相应的获取权限，或者网络故障可能是原因。 确保未从远程DAM中删除资产。 请确保适当的权限到位并满足先决条件。 重试将资产添加到页面并重新发布。 检查[异步作业列表](/help/operations/asynchronous-jobs.md)，查看是否发生了资产获取错误。
 
-* 如果未检索远程引用并导致错误消息，请检查站点部署是否可用，并检查网络连接问题。 稍后重试以进行检查。 [!DNL Assets] 部署尝试两次建立与部署的 [!DNL Sites] 连接，然后报告失败。
+* 如果您无法从本地[!DNL Sites]部署访问远程DAM部署，请确保允许跨站点Cookie，并配置[同一站点Cookie支持](/help/security/same-site-cookie-support.md)。 如果跨站点Cookie被阻止，则[!DNL Experience Manager]的部署可能无法进行身份验证。 例如，在Incognito模式下，[!DNL Google Chrome]可能会阻止第三方Cookie。 要允许[!DNL Chrome]浏览器中的Cookie，请单击地址栏中的“眼睛”图标，导航至&#x200B;**Site Not Working** > **Blocked**，选择远程DAM URL，并允许登录令牌Cookie。 或者，请参阅[如何启用第三方Cookie](https://support.google.com/chrome/answer/95647)。
+
+   ![Chrome浏览器中的Incognito模式中出现Cookie错误](assets/chrome-cookies-incognito-dialog.png)
+
+* 如果未检索远程引用并导致错误消息，请检查[!DNL Sites]部署是否可用，并检查网络连接问题。 稍后重试以进行检查。 [!DNL Assets] 部署尝试两次建立与部署的 [!DNL Sites] 连接，然后报告失败。
 
 ![重试资产远程引用失败](assets/reference-report-failure.png)
