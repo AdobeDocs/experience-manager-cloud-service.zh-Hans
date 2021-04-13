@@ -2,13 +2,13 @@
 title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上的可用资源。
 contentOwner: AG
-feature: 资产管理，关联资产，资产分发
+feature: 资产管理，关联资产，资产分发，用户和组
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2922'
+source-wordcount: '2932'
 ht-degree: 27%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 27%
 在使用或配置此功能之前，请确保：
 
 * 这些用户是每个部署中相应用户组的一部分。
-* 对于[!DNL Adobe Experience Manager]部署类型，符合支持的标准之一。 有关此功能在[!DNL Experience Manager] 6.5中的工作方式的详细信息，请参阅 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的[连接资产。
+* 对于[!DNL Adobe Experience Manager]部署类型，符合支持的标准之一。 [!DNL Experience Manager] 作为Cloud Service [!DNL Assets] 可 [!DNL Experience Manager] 以使用6.5。有关此功能在6.5中的工作方式的 [!DNL Experience Manager] 详细信息，请参 [阅6.5 [!DNL Experience Manager] 中的连接资产 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)。
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] on AMS | [!DNL Experience Manager] 6.5内 [!DNL Sites] 部部署 |
    |---|---|---|---|
@@ -42,7 +42,7 @@ ht-degree: 27%
 
 作者在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中使用搜索的资产。 文档会添加到`Download`组件，图像会添加到`Image`组件。 作者还可以在扩展默认`Download`或`Image`组件的任何自定义[!DNL Experience Manager]组件中添加远程资源。 支持的格式有：
 
-* **图像格式**:图像组件支 [持](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 的格式。
+* **图像格式**:图像组件支 [持](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 的格式。
 * **文档格式**:请参阅支 [持的文档格式](file-format-support.md#document-formats)。
 
 ### 涉及的用户和组 {#users-and-groups-involved}
@@ -189,7 +189,7 @@ ht-degree: 27%
 1. 在[!DNL Assets]控制台中选择资产，然后单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
 1. 单击&#x200B;**[!UICONTROL 引用]**&#x200B;选项卡。 有关在[!DNL Assets]部署中使用资产的信息，请参阅&#x200B;**[!UICONTROL 本地引用]**。 请参阅**[!UICONTROL 远程引用]，以在[!DNL Sites]部署中使用“已连接资产”功能获取资产时使用资产。
 
-   ![资产属性中的远程引用](assets/connected-assets-remote-reference.png)
+   ![资产属性页中的远程引用](assets/connected-assets-remote-reference.png)
 
 1. [!DNL Sites]页的引用显示每个本地[!DNL Sites]的引用总数。 查找所有引用并显示引用的总数可能需要一些时间。
 1. 引用的列表是交互式的，DAM用户可以单击引用以打开引用页面。 如果由于某种原因无法获取远程引用，则显示通知，通知用户失败。
@@ -243,4 +243,4 @@ ht-degree: 27%
 
 * 如果未检索远程引用并导致错误消息，请检查[!DNL Sites]部署是否可用，并检查网络连接问题。 稍后重试以进行检查。 [!DNL Assets] 部署尝试两次建立与部署的 [!DNL Sites] 连接，然后报告失败。
 
-![重试资产远程引用失败](assets/reference-report-failure.png)
+   ![无法检索资产远程引用](assets/reference-report-failure.png)
