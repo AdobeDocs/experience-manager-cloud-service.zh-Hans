@@ -2,9 +2,9 @@
 title: 企业团队开发设置 — Cloud Services
 description: 可查看本页以了解有关企业团队开发设置的更多信息
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager支持灵活的多团队设置，可根据企业需求进行调整�
 
 每个企业都有不同的需求，包括不同的团队设置、流程和开发工作流。 Adobe将下面描述的设置用于以AEM为Cloud Service提供体验的多个项目。
 
-例如，Adobe Creative Cloud应用程序(如Adobe Photoshop或Adobe Illustrator)包括向最终用户提供的教程、示例和指南等内容资源。 通过向AEM Cloud发布层发出API调用以将结构化内容作为JSON流检索，以及利用AEM Cloud Service CDN以最佳性能同时提供结构化和非结构化内容，以&#x200B;*无外设*&#x200B;方式将AEM用作Cloud Service的客户端应用程序会使用此内容。
+例如，Adobe Creative Cloud应用程序(如Adobe Photoshop或Adobe Illustrator)包括向最终用户提供的教程、示例和指南等内容资源。 此内容由客户端应用程序以&#x200B;*无标题*&#x200B;的方式使用AEM作为Cloud Service，通过向AEM Cloud发布层发出API调用以将结构化内容作为JSON流检索，并通过将AEM中的[内容投放网络(CDN)作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=en#content-delivery)来为结构化和非结构化内容提供最佳性能。
 
 为本项目作出贡献的小组遵循下文所述的过程。
 
@@ -68,13 +68,13 @@ Cloud Manager的git存储库中的设置有两个分支：
 * *稳定的发行分支*，包含所有团队的生产代码
 * *开发分支*，包含所有团队的开发代码
 
-在开发或稳定分支中向团队的git存储库推送的每次操作都将触发[github操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有项目都遵循稳定分支的相同设置。 对项目的稳定分支的推送会自动推送到Cloud Manager的git存储库中的稳定分支。 Cloud Manager中的生产管道配置为通过推送到稳定分支来触发。 因此，通过任何团队的每个推入一个稳定分支来执行生产流水线，并且如果所有质量门都通过，则更新生产部署。
+在开发或稳定分支中向团队的git存储库推送的每次操作都将触发[github操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有项目都遵循稳定分支的相同设置。 向项目的稳定分支的推送将自动推送到Cloud Manager的git存储库中的稳定分支。 Cloud Manager中的生产管道配置为通过推送到稳定分支来触发。 因此，通过任何团队的每个推入一个稳定分支来执行生产流水线，并且如果所有质量门都通过，则更新生产部署。
 
 ![](assets/team-setup2.png)
 
 推送到开发分支的处理方式不同。 当推送到团队的git存储库中的开发人员分支也会触发github操作，且代码会自动推送到Cloud Manager的git存储库中的开发分支中时，非生产渠道不会由代码推送自动触发。 它通过调用Cloud Manager的api触发。
 运行生产管道包括通过提供的质量门检查所有团队的代码。 将代码部署到舞台后，将执行测试和审核，以确保一切正常工作。 所有门都通过后，更改即可在不发生任何中断或宕机的情况下转出生产。
-对于本地开发，使用SDK for Cloud Service。 SDK允许设置本地作者、发布和调度程序。 这使离线开发和周转时间更快。 有时只有作者用于开发，但快速设置调度程序和发布允许在推送到git存储库之前在本地测试所有内容。 每个团队的成员通常从共享的git中签出代码，以及他们自己的项目代码。 无需签出其他项目，因为项目是独立的。
+对于本地开发，使用[SDK for AEM作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)。 SDK允许设置本地作者、发布和调度程序。 这使离线开发和周转时间更快。 有时只有作者用于开发，但快速设置调度程序和发布允许在推送到git存储库之前在本地测试所有内容。 每个团队的成员通常从共享的git中签出代码，以及他们自己的项目代码。 无需签出其他项目，因为项目是独立的。
 
 ![](assets/team-setup3.png)
 
