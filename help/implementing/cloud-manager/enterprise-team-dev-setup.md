@@ -2,7 +2,7 @@
 title: 企业团队开发设置 — Cloud Services
 description: 可查看本页以了解有关企业团队开发设置的更多信息
 translation-type: tm+mt
-source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
+source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Cloud Manager的git存储库中的设置有两个分支：
 * *稳定的发行分支*，包含所有团队的生产代码
 * *开发分支*，包含所有团队的开发代码
 
-在开发或稳定分支中向团队的git存储库推送的每次操作都将触发[github操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有项目都遵循稳定分支的相同设置。 对项目稳定分支的推送将自动推送到Cloud Managers Git存储库中的稳定分支。 Cloud Manager中的生产管道配置为通过推送到稳定分支来触发。 因此，通过任何团队的每个推入一个稳定分支来执行生产流水线，并且如果所有质量门都通过，则更新生产部署。
+在开发或稳定分支中向团队的git存储库推送的每次操作都将触发[github操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有项目都遵循稳定分支的相同设置。 对项目的稳定分支的推送会自动推送到Cloud Manager的git存储库中的稳定分支。 Cloud Manager中的生产管道配置为通过推送到稳定分支来触发。 因此，通过任何团队的每个推入一个稳定分支来执行生产流水线，并且如果所有质量门都通过，则更新生产部署。
 
 ![](assets/team-setup2.png)
 
