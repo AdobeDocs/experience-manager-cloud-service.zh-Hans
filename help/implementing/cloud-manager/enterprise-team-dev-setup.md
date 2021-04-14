@@ -2,9 +2,9 @@
 title: 企业团队开发设置 — Cloud Services
 description: 可查看本页以了解有关企业团队开发设置的更多信息
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -63,12 +63,12 @@ Cloud Manager支持灵活的多团队设置，可根据企业需求进行调整�
 
 在特征分支中进行开发，当特征逐渐成熟时，它将合并到开发分支中。 从开发分支中选取已完成和已验证的特征并合并到稳定分支中。 所有更改均通过拉取请求(PR)完成。 每个PR都由质量门自动验证。 声纳用于检查代码的质量，并运行一组测试套件以确保新代码不引入任何回归。
 
-Cloud Manager Git存储库中的设置有两个分支：
+Cloud Manager的git存储库中的设置有两个分支：
 
 * *稳定的发行分支*，包含所有团队的生产代码
 * *开发分支*，包含所有团队的开发代码
 
-在开发或稳定分支中向团队的git存储库推送的每次操作都将触发[github操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有项目都遵循稳定分支的相同设置：将项目的稳定分支推送自动推送到Cloud Managers git存储库中的稳定分支。 Cloud Manager中的生产管道配置为通过推送到稳定分支来触发。 因此，通过任何团队的每个推入一个稳定分支来执行生产流水线，并且如果所有质量门都通过，则更新生产部署。
+在开发或稳定分支中向团队的git存储库推送的每次操作都将触发[github操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有项目都遵循稳定分支的相同设置。 对项目稳定分支的推送将自动推送到Cloud Managers Git存储库中的稳定分支。 Cloud Manager中的生产管道配置为通过推送到稳定分支来触发。 因此，通过任何团队的每个推入一个稳定分支来执行生产流水线，并且如果所有质量门都通过，则更新生产部署。
 
 ![](assets/team-setup2.png)
 
@@ -78,7 +78,7 @@ Cloud Manager Git存储库中的设置有两个分支：
 
 ![](assets/team-setup3.png)
 
-这个真实的设置可用作蓝图，然后根据企业的需要进行自定义。 灵活的分支和整合的git概念允许根据每个团队的需求定制上述工作流的变体。 AEM作为Cloud Service，支持所有这些变量，同时不会牺牲有见地的Cloud Manager渠道的核心价值。
+这个真实的设置可用作蓝图，然后根据企业的需求进行自定义。 灵活的分支和整合的git概念允许根据每个团队的需求定制上述工作流的变体。 AEM作为Cloud Service，支持所有这些变量，同时不会牺牲有见地的Cloud Manager渠道的核心价值。
 
 ### 多团队设置{#considerations}的注意事项
 
