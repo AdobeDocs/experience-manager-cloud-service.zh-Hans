@@ -1,14 +1,14 @@
 ---
 title: 内容搜索与索引
 description: 内容搜索与索引
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 2%
 
 ---
-
 
 # 内容搜索与索引 {#indexing}
 
@@ -169,7 +169,7 @@ ht-degree: 2%
 
 ### 撤消更改{#undoing-a-change}
 
-有时，需要恢复索引定义中的更改。 原因可能是，改变是错误的，或者不再需要改变。 例如，索引定义`damAssetAssetLucene-8-custom-3`是错误创建的，已部署。 因此，您可能希望还原到上一个索引定义`damAssetAssetLucene-8-custom-2`。 为此，您需要添加一个名为`damAssetAssetLucene-8-custom-4`的新索引，该索引包含上一个索引的定义`damAssetAssetLucene-8-custom-2`。
+有时，需要恢复索引定义中的更改。 原因可能是，改变是错误的，或者不再需要改变。 例如，索引定义`damAssetLucene-8-custom-3`是错误创建的，已部署。 因此，您可能希望还原到上一个索引定义`damAssetLucene-8-custom-2`。 为此，您需要添加一个名为`damAssetLucene-8-custom-4`的新索引，该索引包含上一个索引的定义`damAssetLucene-8-custom-2`。
 
 ### 删除索引{#removing-an-index}
 
@@ -198,7 +198,7 @@ ht-degree: 2%
     </acme.product-custom-3>
 ```
 
-如果不再需要自定义现成索引，则必须复制现成索引定义。 例如，如果您已部署`damAssetAssetLucene-8-custom-3`，但不再需要自定义，并希望切换回默认的`damAssetAssetLucene-8`索引，则必须添加包含`damAssetAssetLucene-8`的索引定义的索引`damAssetAssetLucene-8-custom-4`。
+如果不再需要自定义现成索引，则必须复制现成索引定义。 例如，如果您已部署`damAssetLucene-8-custom-3`，但不再需要自定义，并希望切换回默认的`damAssetLucene-8`索引，则必须添加包含`damAssetLucene-8`的索引定义的索引`damAssetLucene-8-custom-4`。
 
 ### 索引可用性和容错{#index-availability-and-fault-tolerance}
 
