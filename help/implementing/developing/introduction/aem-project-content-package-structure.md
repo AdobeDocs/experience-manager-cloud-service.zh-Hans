@@ -3,7 +3,7 @@ title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience Manager Cloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
+source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
 ht-degree: 13%
@@ -89,7 +89,7 @@ Oak索引(`/oak:index`)由AEM专门管理，作为Cloud Service部署过程。 �
 
 >[!NOTE]
 >
->必须将同一代码部署到所有环境。 这是为了确保在生产中也对舞台环境进行一定程度的置信度验证所必需的。 有关详细信息，请参阅[回滚的保守编码](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks)。
+>必须将同一代码部署到所有环境。 这是为了确保在生产中也对舞台环境进行一定程度的置信度验证所必需的。 有关详细信息，请参阅[Runmodes](/help/implementing/deploying/overview.md#runmodes)上的一节。
 
 
 ### 内容包
