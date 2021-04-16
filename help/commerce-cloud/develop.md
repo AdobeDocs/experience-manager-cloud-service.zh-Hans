@@ -7,14 +7,14 @@ version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
+exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 translation-type: tm+mt
-source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1011'
 ht-degree: 8%
 
 ---
-
 
 # 将AEM Commerce for AEM开发为Cloud Service{#develop}
 
@@ -34,7 +34,7 @@ CIF Add-On作为Sling功能存档提供。 软件分发门户上提供的zip文�
 
 **初次使用AEM作为Cloud Service?** 查看更 [详细的指南，使用AEM作为Cloud Service SDK设置本地开发环境](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
 
-### 所需软件
+### 必需软件
 
 应在本地安装以下内容：
 
@@ -83,11 +83,11 @@ CIF加载项可从[软件分发门户](https://experience.adobe.com/#/downloads/
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   此变量由AEM用于连接到您的商务系统。 此外，CIF加载项包含本地反向代理，使Magento GraphQL端点可在本地使用。 CIF创作工具（产品控制台和选择器）和执行直接GraphQL调用的CIF客户端组件都使用此功能。
+   此变量由AEM用于连接到您的商务系统。 此外，CIF加载项包含本地反向代理，使Commerce GraphQL端点可在本地使用。 CIF创作工具（产品控制台和选择器）和执行直接GraphQL调用的CIF客户端组件都使用此功能。
 
    此变量也必须设置为AEM作为Cloud Service环境。 有关变量的详细信息，请参阅[将AEM的OSGi配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
-1. （可选）要启用分阶段目录功能，您需要为Magento实例创建集成令牌。 请按照[入门](./getting-started.md#staging)中的步骤创建令牌。
+1. （可选）要启用分阶段目录功能，您必须为您的Magento实例创建集成令牌。 请按照[入门](./getting-started.md#staging)中的步骤创建令牌。
 
    将名称为`COMMERCE_AUTH_HEADER`的OSGi机密设置为以下值：
 
@@ -98,6 +98,10 @@ CIF加载项可从[软件分发门户](https://experience.adobe.com/#/downloads/
    有关机密的详细信息，请参阅[将AEM的OSGi配置为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. 将AEM开始为Cloud Service SDK
+
+>[!NOTE]
+>
+>确保在步骤5中设置了环境变量的同一终端窗口中将AEM开始为Cloud Service SDK。 如果在单独的终端窗口中或通过多次单击.jar文件来开始它，请确保环境变量可见。
 
 通过OSGI控制台验证设置： `http://localhost:4502/system/console/osgi-installer`。 列表应包括特征模型文件中定义的CIF附加包、内容包和OSGI配置。
 
@@ -131,7 +135,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIF核心组件可通过包括提供的`all`包或单独使用CIF内容包和相关OSGI包在任何项目中使用。 要手动将CIF核心组件添加到项目，请使用以下依赖关系：
+CIF核心组件可以通过以下方式在任何项目中使用：包括提供的`all`包，或单独使用CIF内容包和相关OSGI包。 要手动将CIF核心组件添加到项目，请使用以下依赖关系：
 
 ```java
 <dependency>
@@ -165,7 +169,7 @@ CIF核心组件可通过包括提供的`all`包或单独使用CIF内容包和相
 
 ### 使用AEM Venia Reference Store
 
-开始CIF项目的第二个选项是克隆并使用[AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是示范性参考店面应用程序，用于演示AEM的CIF核心组件的用法。 它旨在作为一组最佳实践示例，以及开发您自己的功能的潜在起点。
+开始CIF项目的第二个选项是克隆并使用[AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是示范性参考店面应用程序，用于演示AEM的CIF核心组件的用法。 它旨在作为一组最佳实践示例和开发您自己的功能的潜在起点。
 
 要开始使用Venia Reference Store，只需克隆Git存储库，然后开始根据您的需要自定义项目即可。
 
