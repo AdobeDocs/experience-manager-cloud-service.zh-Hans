@@ -2,14 +2,14 @@
 title: AEM GraphQL API，与内容片段一起使用
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作AEM GraphQL API的Cloud Service，实现无外设内容投放。
 feature: 内容片段，GraphQL API
+exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357
 workflow-type: tm+mt
 source-wordcount: '3257'
 ht-degree: 1%
 
 ---
-
 
 # AEM GraphQL API，用于内容片段{#graphql-api-for-use-with-content-fragments}
 
@@ -27,7 +27,7 @@ AEM作为Cloud ServiceGraphQL API与内容片段一起使用，这在很大程�
 >
 >GraphQL当前用于Adobe Experience Manager(AEM)中的两个（单独）方案作为Cloud Service:
 >
->* [AEM Commerce通过GraphQL从商务平台读取数据](/help/commerce-cloud/architecture/magento.md)。
+>* [AEM Commerce通过GraphQL从商务平台读取数据](/help/commerce-cloud/integrating/magento.md)。
 >* AEM内容片段与AEM GraphQL API（一种基于标准GraphQL的自定义实施）一起提供结构化内容，以便在您的应用程序中使用。
 
 
@@ -43,7 +43,7 @@ GraphQL是：
 
    请参阅[浏览GraphQL](https://www.graphql.com)。
 
-* *&quot;。..一种数据查询语言和规范，由Facebook于2012年在内部开发，后于2015年公开开放采购。它为基于REST的体系结构提供了一种替代方法，目的是提高开发者的生产力并最大限度地减少数据传输量。 GraphQL由数百个不同规模的组织用于生产……&quot;*
+* *&quot;。..一种数据查询语言和规范，由Facebook于2012年在内部开发，后于2015年公开开放采购。它为基于REST的体系结构提供了一种替代方法，目的是提高开发者的工作效率并最大限度地减少数据传输量。 GraphQL由数百个不同规模的组织用于生产……&quot;*
 
    请参阅[GraphQL Foundation](https://foundation.graphql.org/)。
 
