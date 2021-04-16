@@ -1,5 +1,5 @@
 ---
-title: 多商店设置
+title: 商务多商店设置
 description: 了解如何将多个商店视图从Magento映射到AEM。 这允许项目支持多租户和多语言使用案例。
 sub-product: 商务
 version: cloud-service
@@ -9,16 +9,16 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
 
-
-# 多存储设置{#multi-store}
+# 商务多商店设置{#multi-store}
 
 AEM CIF核心组件可用于多个AEM站点结构，基础GraphQL客户端实现可连接到不同的Magento存储/存储视图。 这允许项目实施复杂的多存储/多站点设置。
 
@@ -45,6 +45,10 @@ Live Copy和语言副本的AEM多站点管理功能与Commerce Integration Frame
    * 使用上面第2点所述的步骤创建新配置
 
    此新配置将创建为基本配置的子配置。 您现在可以转到工具 — >常规 — >配置浏览器并创建配置设置。
+
+   >[!TIP]
+   >
+   > 可以使用ID或UID解决商务目录问题。 Magento 2.4.2中引入的UID。仅当您的商务后端支持版本2.4.2或更高版本的GraphQL模式时，才启用此选项。
 
 4. 将子配置分配给AEM站点
 
