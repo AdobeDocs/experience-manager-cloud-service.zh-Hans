@@ -1,57 +1,67 @@
 ---
-title: 对AEM Commerce作为Cloud Service的显着变化
-description: 与Adobe Experience Manager6.5相比，AEM Commerce作为Cloud Service的变化显着。
+title: Commerce Integration Framework(CIF)加载项的显着更改
+description: 与旧版CIF相比，商务集成框架(CIF)发生了显着变化。
+exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '453'
 ht-degree: 5%
 
 ---
 
+# 对Commerce Integration Framework(CIF)Add-on{#notable-changes}的显着更改
 
-# 对AEM Commerce作为Cloud Service{#notable-changes}的显着更改
+Adobe Experience Manager作为一名Cloud Service，为管理AEM项目提供了许多新功能和可能。 要进一步了解这些功能，请按照链接将[更改为Experience Manager](/help/release-notes/aem-cloud-changes.md)。
 
-Adobe Experience Manager作为Cloud Service，为管理AEM项目提供了许多新功能和可能性。 本文档强调了内部部署、Adobe托管服务和Experience Manager作为Cloud Service的商务集成框架(CIF)之间商务功能的重要区别。 有关其他更改，请参阅通用[将Experience Manager更改为Cloud Service](/help/release-notes/aem-cloud-changes.md)。
+本文档强调了商务集成框架(CIF)附加组件与旧CIF版本(主要称为CIF Classic(Quickstart))和CIF开放源代码之间的重要区别。
 
-与Experience Manager6.5相比，主要区别在于：
-* [支持CIF Classic](#cif-classic)
-* [部署CIF创作工具](#cif-tools)
-* [从本地和Adobe托管服务转变](#moving-cif-cs)
+## 安装和更新
 
-## 支持将CIF经典／快速启动Experience Manager作为Cloud Service{#cif-classic}
+AEM CIF加载项通过云管理器安装。 安装需要CIF信用，但沙箱除外，在安装CIF时无需信用。 您的AEM合同中通过CIF附加项预配自动收到积分。
 
-在Experience Manager中，不再以Cloud Service形式提供包含产品导入程序以导入和存储产品目录的经典商务集成框架。 在Experience Manager中不支持使用经典CIF作为Cloud Service，使用经典CIF的项目必须用Experience Manager上的[CIF作为Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/architecture/magento.html#overview)所述的支持版本取代经典CIF实施
+此插件会作为常规AEM的一部分自动更新，作为Cloud Service更新。
 
-## 部署CIF {#deployment}
+**先前的CIF版本**
 
-下面显示了不同AEM产品的商务集成框架的不同部署模型：
+* CIF经典：无需安装，CIF是快速启动的一部分。 CIF更新是常规AEM或Service Pack更新的一部分
+* CIF Open-source for AEM On-ormess:通过GitHub进行安装。 更新是手动更新/维护工作的一部分。
+* AEM Adobe Managed Services的CIF开放源：通过客户成功经理进行安装。 更新是手动更新/维护工作的一部分。
 
-|  | AEM内部部署 | AEMManaged Services | AEMCloud Service |
-|-------------     |-----------|-----------|-----------|
-| 如何为Magento后端部署CIF创作工具 | [请参阅AEM ](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) 6.5上支持的CIF连接器 | [请参阅AEM ](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) 6.5上支持的CIF连接器 | AEM作为Cloud Service，需要随CIF加载项提供。 有关更多详细信息，请与销售代表联系 |
-| 如何部署[CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) | AEM包安装 | 通过[云管理器](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)完成部署 | 项目已移入[Cloud Manager Git存储库](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)，并通过[ Cloud Manager](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/deploying/overview.html)完成部署 |
+## 端点配置
+
+通过Cloud Manager UI或其CLI配置和更新终结点。
+
+**先前的CIF版本**
+
+* CIF经典：通过AEM中的OSGi配置
+* CIF开放源：通过CIF配置浏览器
+
+## CIF维尼亚项目的部署
+
+在[Cloud Manager Git存储库](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)中可用的项目，并通过[Cloud Manager](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/deploying/overview.html)完成部署
+
+**先前的CIF版本**
+
+* CIF经典：通过AEM包安装
+* CIF开放源：通过[云管理器](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+
+## 产品目录数据
+
+通过对支持所需GraphQL API的外部端点的实时调用，按需获取产品目录数据。 这些API支持在任何给定日期访问实时或分阶段数据。 无需复制。
+
+**先前的CIF版本**
+
+* CIF经典：通过完全或增量产品导入，实时和分阶段产品数据会在AEM作者的JCR中导入并保留。 将实时产品数据复制到AEM发布。
+
+## 利用AEM渲染实现产品目录体验
+
+AEM使用已分配给产品和类别的AEM目录模板，即时呈现产品目录体验。 无需复制。
+
+**先前的CIF版本**
+
+* CIF经典：AEM作者使用目录蓝图工具为每个类别/产品创建一个AEM页面。 这些页面将被复制到AEM发布。
 
 >[!NOTE]
 >
->有关如何将CIF与AEM Managed Service或AEM内部部署一起使用的其他文档，请参阅[商务集成框架](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
-
->[!NOTE]
->
->CIF Classic/Quickstart版本的商务集成框架可用于AEM内部部署产品，但用例非常有限。 但是，这不是推荐的解决方案。
-
-## 从内部部署和Managed Services{#moving-cif-cs}移至AEM Commerce作为Cloud Service
-
-从AEM内部部署或Managed Services安装到AEM作为Cloud Service的客户需要对AEM项目进行一些细微调整。
-
-如上所述，CIF连接器需要进行第一次调整。 CIF连接器由CIF附加组件取代，CIF附加组件由Adobe部署。 因此，请勿将CIF连接器作为Cloud Service安装在AEM上。 此外，不支持与本地AEM Cloud SDK一起使用，Adobe还为[本地开发](develop.md)提供CIF加载项。
-
-其次，了解[AEM项目结构](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)和AEM作为Cloud Service的特性。 将项目设置调整为AEM作为Cloud Service布局。
-主要区别在于：
-
-* GraphQL客户端OSGI包&#x200B;**不能再**&#x200B;包含在AEM项目中，它通过CIF加载项进行部署
-* GraphQL客户端和Graphql数据服务&#x200B;**的OSGI配置不能再**&#x200B;包含在AEM项目中
-
->[!TIP]
->
->查看GitHub上的[AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)项目。 此项目为AEM的Maven用户档案提供了Cloud Service和内部部署，其中考虑了不同的框架条件。
+>有关如何将CIF与AEM Managed Service或AEM On-premise一起使用的其他文档，请参阅[Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
