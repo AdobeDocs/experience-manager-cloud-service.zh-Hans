@@ -10,14 +10,14 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 2%
 
 ---
-
 
 # 样式AEM CIF核心组件{#style-aem-cif-core-components}
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 ## 更新Teaser样式{#ui-frontend-module}
 
-接下来，对Teaser样式做一些小的更改，以了解`ui.frontend`模块和clientlibraries的工作方式。 使用您选择的[IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)导入Venia项目。 使用的截屏来自[ Visual Studio代码IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
+接下来，对Teaser样式进行一小段更改，以查看`ui.frontend`模块和客户端库的工作方式。 使用您选择的[IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)导入Venia项目。 使用的截屏来自[ Visual Studio代码IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
 
 1. 导航并展开&#x200B;**ui.frontend**&#x200B;模块，然后展开文件夹层次结构以：`ui.frontend/src/main/styles/commerce`:
 
@@ -136,7 +136,7 @@ ht-degree: 2%
 
    ![已编译站点CSS](../assets/style-cif-component/comiled-site-css.png)
 
-   该文件是项目中所有Sass文件的压缩和缩放版本。
+   该文件是项目中所有Sass文件的编译和缩小版本。
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ ht-degree: 2%
 
    ![查看已发布的项目](../assets/style-cif-component/view-as-published.png)
 
-   此操作将在未加载任何AEM作者javascript的情况下打开页面，就像在发布的站点上一样。 请注意，URL附加了查询参数`?wcmmode=disabled`。 在开发CSS和Javascript时，最好使用此参数来简化页面，而无需AEM作者提供的任何内容。
+   此操作将在未加载任何AEM作者javascript的情况下打开页面，就像在发布的站点上一样。 请注意，url中附加了查询参数`?wcmmode=disabled`。 在开发CSS和Javascript时，最好使用此参数来简化页面，而无需AEM作者提供的任何内容。
 
 1. 视图页面源，您应该能够识别包含的多个客户端库：
 
@@ -254,7 +254,7 @@ ht-degree: 2%
 
    注意`venia/clientlibs/clientlib-site.min.css`和`venia/clientlibs/clientlib-site.min.js`。 这些是从`ui.frontend`模块派生的已编译CSS和Javascript文件。
 
-## 包含页面模板{#client-library-inclusion-pagetemplates}的客户端库
+## 包含页面模板的客户端库{#client-library-inclusion-pagetemplates}
 
 有关如何包含客户端库的方法有多种选项。 接下来，通过[页面模板](/help/implementing/developing/components/templates.md)检查生成的项目如何包含`clientlib-site`库。
 
@@ -331,7 +331,7 @@ webpack-dev-server代理来自AEM本地实例的图像和某些CSS/JavaScript，
 
    >[!CAUTION]
    >
-   > 如果出现与Sass相关的错误，请停止服务器并运行命令`npm rebuild node-sass`并重复上述步骤。 如果项目`aem-cif-guides-venia/pom.xml`中指定了不同版本的`npm`和`node`，则可能发生这种情况。
+   > 如果出现与Sass相关的错误，请停止服务器并运行命令`npm rebuild node-sass`，然后重复上述步骤。 如果项目`aem-cif-guides-venia/pom.xml`中指定了不同版本的`npm`和`node`，则可能发生这种情况。
 
 1. 在与AEM登录实例浏览器相同的新选项卡中导航到[http://localhost:8080/](http://localhost:8080/)。 您应通过webpack-dev-server看到Venia主页:
 
