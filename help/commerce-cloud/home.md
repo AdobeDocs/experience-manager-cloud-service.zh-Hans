@@ -1,24 +1,24 @@
 ---
-title: AEM Commerce as a Cloud Service
-description: AEM Commerce as a self-help resources and documentation links(商务作为Cloud Service自助资源和文档链接)
+title: AEM Content and Commerce
+description: AEM Content and Commerce自助资源和文档链接
+exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 85%
+source-wordcount: '356'
+ht-degree: 82%
 
 ---
 
+# AEM Content and Commerce {#commerce-guide}
 
-# AEM Commerce as a Cloud Service {#commerce-guide}
+本页列表了与AEM内容和商务相关的自助资源。
 
-本页列表了将AEM Commerce作为Cloud Service的自助资源。
+## 关键内容和商务文章{#key-articles}
 
-## 关键商务文章{#key-articles}
-
-* [AEM商务作为Cloud Service的简介](overview.md)
-* [AEM商务的Cloud Service架构](architecture/magento.md)
-* [入门](getting-started.md)
+* [AEM内容和商务简介](introduction.md)
+* [AEM内容和商务入门](/help/commerce-cloud/getting-started.md)
+* [开发AEM内容和商务](/help/commerce-cloud/develop.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
