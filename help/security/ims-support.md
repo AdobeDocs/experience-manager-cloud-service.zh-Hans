@@ -1,14 +1,14 @@
 ---
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持 {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 ### 在 Admin Console 中管理产品和用户访问权限 {#managing-products-and-user-access-in-admin-console}
 
-当产品管理员登录到 Admin Console 时，他们将看到 AEM Managed Services 产品上下文的多个实例，如下所示：
+当产品管理员登录到Admin Console时，他们将看到AEM的多个实例作为Cloud Service产品上下文，如下所示。 例如，从&#x200B;**概述**&#x200B;页面选择任何产品：
 
 ![实例登录](/help/security/assets/ims6.png)
 
-在此示例中，组织 **AEM-MS-Onboard** 具有 32 个实例，这些实例跨不同的拓扑和环境，如暂存或生产环境。
+您将看到现有实例的列表:
 
 ![实例登录 2](/help/security/assets/ims7.png)
 
-在每个产品上下文实例下，将显示关联的产品配置文件。这些产品配置文件用于为具有所需权限的用户和组分配访问权限。
+在每个Product Context实例下，将有跨生产、阶段或开发环境的作者或发布服务的实例。 每个实例都将关联到产品用户档案或云管理器角色。 这些产品用户档案用于向具有所需权限的用户和组分配访问权限。
 
 **Administrator_xxx** 配置文件将用于在关联的 AEM 实例中授予管理员特权，而 **User_xxx** 配置文件用于添加常规用户。
 
@@ -241,4 +241,3 @@ ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组
 每个作者实例都将具有 AEM 管理员和 AEM 用户配置文件，每个发布实例也都将具有 AEM 用户配置文件。您可以根据需要添加其他配置文件。
 
 要获取对 AEM 实例的管理员级别访问权限，请将用户添加到该特定产品的 AEM 管理员配置文件。
-
