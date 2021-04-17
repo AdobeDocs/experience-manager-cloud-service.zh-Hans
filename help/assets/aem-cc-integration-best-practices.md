@@ -3,16 +3,16 @@ title: 与 [!DNL Adobe Creative Cloud]集成的最佳实践
 description: 最佳实践是将Experience Manager部署与Adobe Creative Cloud集成，以简化资产传输工作流并实现最高效率。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 协作，Adobe资产链接，Experience Manager桌面应用程序
-role: 架构师，业务从业者，管理员
+feature: 协作，Adobe资产链接，桌面应用程序
+role: Architect,Business Practitioner,Administrator
+exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3300'
 ht-degree: 18%
 
 ---
-
 
 # AEM和Creative Cloud集成最佳实践{#aem-and-creative-cloud-integration-best-practices}
 
@@ -24,7 +24,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，帮
 
 >[!NOTE]
 >
->AEM到Creative Cloud文件夹共享现已弃用，下面不再讨论。 Adobe建议使用Adobe Asset Link或AEM桌面应用程序等更新的功能，为创意用户提供对AEM中管理的资产的访问权限。
+>AEM到Creative Cloud文件夹共享现已弃用，下面不再讨论。 Adobe建议使用Adobe Asset Link或AEM桌面应用程序等更新的功能，使创意用户能够访问AEM中管理的资产。
 
 ## 创意人员、营销人员和DAM用户的协作需求{#collaboration-need-of-creatives-marketers-and-dam-users}
 
