@@ -1,9 +1,9 @@
 ---
 title: Commerce Integration Framework(CIF)加载项的显着更改
 description: 与旧版CIF相比，商务集成框架(CIF)发生了显着变化。
-exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 7a52e4b62f5a18f9c68e5afb0d464bd11be732d2
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Adobe Experience Manager作为一名Cloud Service，为管理AEM项目提供了许多新功能和可能。 要进一步了解这些功能，请按照链接将[更改为Experience Manager](/help/release-notes/aem-cloud-changes.md)。
 
-本文档强调了商务集成框架(CIF)附加组件与旧CIF版本(主要称为CIF Classic(Quickstart))和CIF开放源代码之间的重要区别。
+本文档强调了商务集成框架(CIF)附加组件与旧CIF版本(主要称为CIF Classic（快速入门）和CIF开放源码)之间的重要区别。
 
 ## 安装和更新
 
