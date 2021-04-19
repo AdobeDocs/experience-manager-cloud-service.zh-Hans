@@ -2,15 +2,15 @@
 title: 将您的数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 feature: 资产管理，上传
-role: 业务从业者，管理员
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2059'
 ht-degree: 1%
 
 ---
-
 
 # 将数字资产添加到Adobe Experience Manager {#add-assets-to-experience-manager}
 
@@ -223,6 +223,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 ## 使用API {#upload-using-apis}上传或收录资产
 
 开发人员参考的[asset upload](developer-reference-material-apis.md#asset-upload-technical)部分提供了上传API和协议的技术详细信息，以及指向开放源SDK和示例客户端的链接。
+
+## 提示、最佳实践和限制{#tips-limitations}
+
+* Adobe建议在[!DNL Experience Manager Assets]的每个文件夹中最多添加1000个资产。 虽然您可以向文件夹添加更多资产，但是您可能会看到性能问题，如浏览此类文件夹的速度较慢。
 
 >[!MORELIKETHIS]
 >
