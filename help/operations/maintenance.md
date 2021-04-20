@@ -3,7 +3,7 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
+source-git-commit: 0c7f413be7b7f2222c5487426b74f2a954d0b21f
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -56,11 +56,11 @@ ht-degree: 2%
     <td>JCR节点定义</td>
     <td>请参阅下面的位置1</td>
     <td>请参见下面的代码示例1</td>
-   <td>
-    <strong>windowSchedule</strong> = daily（此值不应更改）
-    <strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务何时开始执行。
-    <strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。
-    </td> 
+  <td>
+  <strong>windowSchedule</strong> = daily（此值不应更改）
+  <strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务何时开始执行。
+  <strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。
+  </td> 
   </tr>
   <tr>
     <td>每周</td>
@@ -68,13 +68,12 @@ ht-degree: 2%
     <td>JCR节点定义</td>
     <td>请参阅下面的位置2</td>
     <td>请参见下面的代码示例2</td>
-     <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = weekly（不应更改此值）</li>
-    <li><strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每周维护窗口关联的维护任务何时开始执行。</li>
-    <li><strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。</li>
-    <li><strong>windowScheduleWeekdays =从1-7到2值的数组。例如[5,5]。</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。</li>
-    </ul> </td> 
+    <td>
+    <strong>windowSchedule</strong> = weekly（此值不应更改）
+    <strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每周维护窗口关联的维护任务何时开始执行。
+    <strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。
+    <strong>windowScheduleWeekdays =从1-7到2值的数组。例如[5,5]。</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。
+    </td> 
   </tr>
   <tr>
     <td>每月</td>
