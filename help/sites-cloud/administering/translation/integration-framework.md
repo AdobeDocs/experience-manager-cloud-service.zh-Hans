@@ -1,8 +1,8 @@
 ---
 title: 配置翻译集成框架
 description: 了解如何配置翻译集成框架以与第三方翻译服务集成。
-feature: 语言复制
-role: 管理员
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

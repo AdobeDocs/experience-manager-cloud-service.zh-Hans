@@ -1,8 +1,8 @@
 ---
 title: 搜索 Facet.
 description: 本文介绍如何在AEM中创建、修改和使用搜索彩块化。
-feature: 搜索，元数据
-role: 业务从业者，管理员
+feature: Search,Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

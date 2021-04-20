@@ -1,9 +1,9 @@
 ---
 title: 应用Dynamic Media查看器预设
 description: 了解如何在Dynamic Media中应用查看器预设。
-feature: 查看器预设，查看器
-topic: 管理员，业务从业者
-role: 商务从业人员
+feature: Viewer Presets,Viewers
+topic: Administrator,Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

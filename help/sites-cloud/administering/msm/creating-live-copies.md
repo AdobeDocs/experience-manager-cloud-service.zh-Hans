@@ -1,7 +1,7 @@
 ---
 title: 创建和同步Live Copy
 description: 了解如何创建和同步Live Copy，以在整个站点中重复使用您的内容。
-feature: 多站点管理器
+feature: Multi Site Manager
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt

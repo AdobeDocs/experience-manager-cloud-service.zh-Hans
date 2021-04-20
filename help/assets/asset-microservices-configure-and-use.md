@@ -2,8 +2,8 @@
 title: 配置和使用资产微服务
 description: 配置和使用云本机资产微服务大规模处理资产。
 contentOwner: AG
-feature: asset compute Microservices，工作流，资产处理
-role: 架构师，管理员
+feature: Asset Compute Microservices,Workflow,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 智能标记视频资源
 description: Experience Manager使用 [!DNL Adobe Sensei]自动向视频添加上下文和描述性智能标签。
-feature: 智能标记，标记
-role: 管理员，业务从业者
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -5,8 +5,8 @@ user-guide-title: 在 AEM as a Cloud Service 中创作内容
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
 feature-set: Experience Manager Sites
-feature: 创作
-role: 业务从业者
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

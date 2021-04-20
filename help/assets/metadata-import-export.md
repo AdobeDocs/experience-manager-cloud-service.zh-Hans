@@ -2,8 +2,8 @@
 title: 批量导入和导出资产元数据
 description: 本文介绍如何批量导入和导出元数据。
 contentOwner: AG
-feature: 元数据
-role: 业务从业者，管理员
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

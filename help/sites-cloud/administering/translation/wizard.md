@@ -1,8 +1,8 @@
 ---
 title: 语言复制向导
 description: 了解如何使用AEM中的语言复制向导。
-feature: 语言复制
-role: 管理员
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 审核文件夹和收藏集中的资产
 description: 为文件夹或集合中的资产设置审阅工作流，并与审阅者或创意合作伙伴共享它以寻求反馈。
 contentOwner: AG
-feature: 集合，协作
-role: 商务从业人员
+feature: Collections,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

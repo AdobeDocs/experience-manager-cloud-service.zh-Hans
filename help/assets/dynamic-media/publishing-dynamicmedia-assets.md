@@ -2,8 +2,8 @@
 title: 发布 Dynamic Media 资产
 description: 了解如何发布Dynamic Media资产。
 contentOwner: Rick Brough
-feature: 资产管理
-topic: 商务从业人员
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt

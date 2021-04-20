@@ -1,8 +1,8 @@
 ---
 title: 传送 Dynamic Media 资产
 description: 了解如何交付Dynamic Media资产。
-feature: 资产管理
-topic: 商务从业人员
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt

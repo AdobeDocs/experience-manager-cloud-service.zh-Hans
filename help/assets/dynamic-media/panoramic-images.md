@@ -1,9 +1,9 @@
 ---
 title: 全景图像
 description: 了解如何在Dynamic Media中处理全景图像。
-feature: 全景图像
-topic: 商务从业人员
-role: 商务从业人员
+feature: Panoramic Images
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

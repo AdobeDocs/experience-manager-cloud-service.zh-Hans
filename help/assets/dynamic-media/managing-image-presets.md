@@ -1,8 +1,8 @@
 ---
 title: 管理图像预设
 description: “了解图像预设以及如何创建、修改和管理图像预设。”
-feature: 图像预设、查看器、演绎版
-topic: 商务从业人员
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

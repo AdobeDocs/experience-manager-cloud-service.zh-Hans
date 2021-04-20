@@ -1,8 +1,8 @@
 ---
 title: 在网页上嵌入Dynamic Media视频或图像查看器
 description: 了解如何将Dynamic Media视频或图像资源嵌入网页。
-feature: 资产管理
-topic: 商务从业人员
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt

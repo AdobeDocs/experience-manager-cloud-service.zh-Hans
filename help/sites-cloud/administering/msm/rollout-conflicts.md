@@ -1,8 +1,8 @@
 ---
 title: 转出冲突
 description: 了解如何管理和解决多站点管理器转出冲突。
-feature: 多站点管理器
-role: 管理员
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

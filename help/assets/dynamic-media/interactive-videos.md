@@ -1,8 +1,8 @@
 ---
 title: 交互式视频
 description: 了解如何在Dynamic Media中使用交互式视频和购物视频。
-feature: 交互式视频
-topic: 商务从业人员
+feature: Interactive Videos
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt

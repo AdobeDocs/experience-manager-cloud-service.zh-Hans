@@ -1,8 +1,8 @@
 ---
 title: 使用 Dynamic Media
 description: 了解如何使用Dynamic Media为在Web、移动和社交网站上消费提供资产。
-topic: '"管理员，业务从业者"'
-role: 管理员，业务从业者
+topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

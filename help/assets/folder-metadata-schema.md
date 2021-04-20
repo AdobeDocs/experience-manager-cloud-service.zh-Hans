@@ -2,8 +2,8 @@
 title: 文件夹元数据架构
 description: 了解如何为 [!DNL Experience Manager Assets]中的资产文件夹创建元数据模式
 contentOwner: AG
-feature: 元数据
-role: 业务从业者，管理员
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

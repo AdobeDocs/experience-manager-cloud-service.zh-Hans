@@ -1,8 +1,8 @@
 ---
 title: 与 Adobe Analytics 集成
 description: '与 Adobe Analytics 集成 '
-feature: 管理
-role: 管理员
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

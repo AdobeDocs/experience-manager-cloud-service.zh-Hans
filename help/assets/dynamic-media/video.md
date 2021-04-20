@@ -1,8 +1,8 @@
 ---
 title: 视频
 description: 了解如何在Dynamic Media中使用视频。
-feature: 视频配置文件
-topic: 商务从业人员
+feature: Video Profiles
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt

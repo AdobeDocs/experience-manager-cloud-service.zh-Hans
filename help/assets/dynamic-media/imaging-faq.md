@@ -1,8 +1,8 @@
 ---
 title: 智能成像
 description: “了解智能图像处理如何应用每个用户的独特查看特性，自动提供为其体验优化的正确图像，从而提高性能和参与度。”
-feature: 资产管理，演绎版
-topic: 商务从业人员
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

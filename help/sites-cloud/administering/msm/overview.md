@@ -1,8 +1,8 @@
 ---
 title: 重用内容 — 多站点管理器和Live Copy
 description: 了解如何使用AEM功能强大的Live Copy和多站点管理器功能来重用内容。
-feature: 多站点管理器
-role: 管理员
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

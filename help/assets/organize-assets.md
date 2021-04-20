@@ -2,8 +2,8 @@
 title: 组织数字资产
 description: 使用Adobe Experience Manager Assets中提供的各种方法组织您的数字资产。
 contentOwner: AG
-feature: 资产管理，标记，资产分发
-role: 商务从业人员
+feature: Asset Management,Tagging,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

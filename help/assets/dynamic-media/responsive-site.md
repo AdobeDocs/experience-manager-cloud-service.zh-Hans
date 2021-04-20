@@ -1,8 +1,8 @@
 ---
 title: 为响应式网站传送优化的图像
 description: 了解如何使用响应式代码功能从Dynamic Media投放优化的图像。
-feature: 资产管理
-topic: 商务从业人员
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt

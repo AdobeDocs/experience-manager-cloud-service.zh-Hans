@@ -1,8 +1,8 @@
 ---
 title: 管理查看器预设
 description: 了解如何在Dynamic Media中创建和管理查看器预设。
-feature: 查看器预设，查看器
-topic: 商务从业人员
+feature: Viewer Presets,Viewers
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt

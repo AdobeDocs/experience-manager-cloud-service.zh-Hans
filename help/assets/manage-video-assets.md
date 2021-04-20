@@ -2,8 +2,8 @@
 title: 管理视频资产
 description: 在 [!DNL Adobe Experience Manager]中上传、预览、批注和发布视频资产。
 contentOwner: AG
-feature: 资产管理，发布，协作，视频
-role: 商务从业人员
+feature: Asset Management,Publishing,Collaboration,Video
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

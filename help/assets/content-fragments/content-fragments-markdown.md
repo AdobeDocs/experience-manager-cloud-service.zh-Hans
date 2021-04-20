@@ -1,8 +1,8 @@
 ---
 title: Markdown
 description: 了解内容片段编辑器如何使用标记语法使您能够轻松创建无标题内容。
-feature: 内容片段
-role: 商务从业人员
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

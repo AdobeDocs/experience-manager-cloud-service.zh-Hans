@@ -3,8 +3,8 @@ title: 在 [!DNL Adobe Experience Manager]中搜索数字资产和图像
 description: 了解如何使用“过滤器”面板在 [!DNL Adobe Experience Manager] 中查找所需的资源，以及如何使用在搜索中显示的资源。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 搜索、元数据、资产分发
-role: 业务从业者，管理员
+feature: Search,Metadata,Asset Distribution
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

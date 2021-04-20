@@ -1,8 +1,8 @@
 ---
 title: 图像集
 description: 了解如何在Dynamic Media中使用图像集。
-feature: 图像集
-topic: 商务从业人员
+feature: Image Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: AEM中Cloud Manager作为Cloud Service版本2020.3.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2020.3.0的发行说明
-feature: 发行信息
+feature: Release Information
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

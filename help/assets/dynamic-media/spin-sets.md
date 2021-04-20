@@ -1,8 +1,8 @@
 ---
 title: 旋转集
 description: 了解如何在Dynamic Media中使用旋转集。
-feature: 旋转集
-topic: 商务从业人员
+feature: Spin Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt

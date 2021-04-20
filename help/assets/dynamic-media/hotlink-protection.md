@@ -1,9 +1,9 @@
 ---
 title: 在 Dynamic Media 中激活热链接保护
 description: 了解如何在Dynamic Media中激活热链接保护。
-feature: 资产管理
-topic: 商务从业人员
-role: 商务从业人员
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

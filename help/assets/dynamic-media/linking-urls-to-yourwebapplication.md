@@ -1,8 +1,8 @@
 ---
 title: 将 URL 关联到您的 Web 应用程序
 description: 了解如何在Dynamic Media中将URL关联到您的Web应用程序。
-topic: 商务从业人员
-role: 商务从业人员
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

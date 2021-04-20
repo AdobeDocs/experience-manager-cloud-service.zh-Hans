@@ -1,8 +1,8 @@
 ---
 title: 管理翻译项目
 description: 了解如何在AEM中创建和管理机器和人类翻译项目。
-feature: 语言复制
-role: 管理员
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

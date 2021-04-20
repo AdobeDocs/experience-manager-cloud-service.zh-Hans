@@ -4,7 +4,7 @@ user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 feature-set: Experience Manager Sites
-feature: 部署
+feature: Deploying
 role: Architect, Developer
 translation-type: tm+mt
 source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6

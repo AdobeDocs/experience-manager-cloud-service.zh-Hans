@@ -1,8 +1,8 @@
 ---
 title: 关联的内容
 description: 了解AEM关联内容功能如何提供连接，以便在将片段添加到内容页面时，可以选择将其与片段一起使用，从而为无标题内容投放增加了更多灵活性。
-feature: 内容片段
-role: 商务从业人员
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

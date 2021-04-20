@@ -1,8 +1,8 @@
 ---
 title: 交互式图像
 description: 了解如何在Dynamic Media中使用交互式图像。
-feature: 交互式图像
-topic: 商务从业人员
+feature: Interactive Images
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt

@@ -2,8 +2,8 @@
 title: 资产简介a [!DNL Cloud Service]
 description: 资产中的新增功能，如a [!DNL Cloud Service]。
 contentOwner: AG
-feature: 资产管理
-role: 业务从业者，领导者，架构师
+feature: Asset Management
+role: Business Practitioner,Leader,Architect
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

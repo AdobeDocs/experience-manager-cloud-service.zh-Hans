@@ -2,8 +2,8 @@
 title: ' [!DNL Assets]的架构'
 description: Adobe Experience Manager Assets的架构，作为 [!DNL Cloud Service]
 contentOwner: AG
-feature: 资产管理，Asset compute Microservices
-role: 架构师
+feature: Asset Management,Asset Compute Microservices
+role: Architect
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

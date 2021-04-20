@@ -4,8 +4,8 @@ user-guide-title: 移动到 AEM as a Cloud Service
 breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature-set: Experience Manager Sites
-feature: 部署
-role: 架构师、开发人员
+feature: Deploying
+role: Architect, Developer
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

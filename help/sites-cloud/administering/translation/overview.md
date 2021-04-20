@@ -1,8 +1,8 @@
 ---
 title: 翻译多语言站点的内容
 description: 获取有关如何翻译多语言站点内容的概述。
-feature: 语言复制
-role: 管理员
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

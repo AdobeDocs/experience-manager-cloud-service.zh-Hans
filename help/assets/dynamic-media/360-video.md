@@ -1,8 +1,8 @@
 ---
 title: 360/VR视频
 description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频。
-feature: 360 VR 视频
-topic: 商务从业人员
+feature: 360 VR Video
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt

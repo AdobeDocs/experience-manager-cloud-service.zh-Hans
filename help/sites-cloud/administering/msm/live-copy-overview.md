@@ -1,8 +1,8 @@
 ---
 title: Live Copy概述控制台
 description: 了解Live Copy概述控制台的基础知识，快速了解Live Copy的状态，以便同步内容。
-feature: 多站点管理器
-role: 管理员
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

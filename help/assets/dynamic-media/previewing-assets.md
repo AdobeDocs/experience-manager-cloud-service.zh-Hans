@@ -1,9 +1,9 @@
 ---
 title: 预览资产
 description: 了解如何在Dynamic Media中预览资源。
-feature: 资产管理
-topic: 商务从业人员
-role: 商务从业人员
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

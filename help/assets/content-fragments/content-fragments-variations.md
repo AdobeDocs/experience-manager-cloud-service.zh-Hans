@@ -1,8 +1,8 @@
 ---
 title: 变量 - 创作片段内容
 description: 了解各种变量如何允许您为片段创作内容，然后根据目的创建该内容的变量，从而使AEM中的无头内容更加灵活。
-feature: 内容片段
-role: 商务从业人员
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media 疑难解答
 description: 使用Dynamic Media时的疑难解答提示。
-topic: '"管理员，业务从业者"'
+topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt

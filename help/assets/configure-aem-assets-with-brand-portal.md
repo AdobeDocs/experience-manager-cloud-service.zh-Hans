@@ -2,7 +2,7 @@
 title: 将AEM Assets配置为 [!DNL Cloud Service] 和Brand Portal
 description: 使用 Brand Portal 配置 AEM Assets.
 contentOwner: Vishabh Gupta
-feature: Brand Portal，资产分发，配置
+feature: Brand Portal,Asset Distribution,Configuration
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 translation-type: tm+mt

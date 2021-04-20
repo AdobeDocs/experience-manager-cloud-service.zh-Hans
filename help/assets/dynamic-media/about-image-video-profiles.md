@@ -1,8 +1,8 @@
 ---
 title: 关于Dynamic Media图像用户档案和视频用户档案
 description: 图像用户档案或视频用户档案是一种菜谱，可用于将哪些选项应用到您上传到文件夹的资产。 例如，您可以指定将哪些视频编码应用于您上传的Dynamic Media视频资产。 或者，要应用到Dynamic Media图像资产的图像用户档案，以正确裁剪图像资产。
-feature: 资产管理，图像用户档案，视频用户档案
-role: 管理员，业务从业者
+feature: Asset Management,Image Profiles,Video Profiles
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

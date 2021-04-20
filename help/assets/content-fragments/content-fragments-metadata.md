@@ -1,8 +1,8 @@
 ---
 title: 元数据 - 片段属性
 description: 了解如何视图和编辑AEM中内容片段的元数据属性以调整无外设内容。
-feature: 内容片段
-role: 商务从业人员
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

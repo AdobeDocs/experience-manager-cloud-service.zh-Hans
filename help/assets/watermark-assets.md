@@ -2,8 +2,8 @@
 title: 设置资产水印
 description: 将水印添加到您的数字资产。
 contentOwner: AG
-feature: 资产管理，发布
-role: 业务从业者，管理员
+feature: Asset Management,Publishing
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

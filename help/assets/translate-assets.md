@@ -2,8 +2,8 @@
 title: 创建和管理多种语言的数字资产
 description: 了解如何自动工作流资产的翻译，包括二进制文件、元数据和标记，以及多种语言。
 contentOwner: AG
-feature: 资产管理，翻译
-role: 管理员，业务从业者
+feature: Asset Management,Translation
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

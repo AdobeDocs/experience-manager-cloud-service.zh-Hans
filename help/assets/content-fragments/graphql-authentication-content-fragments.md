@@ -1,7 +1,7 @@
 ---
 title: 内容片段上的远程AEM GraphQL查询身份验证
 description: 了解远程AEM GraphQL查询所需的身份验证，以保护无外设内容投放。
-feature: 内容片段，GraphQL API
+feature: Content Fragments,GraphQL API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

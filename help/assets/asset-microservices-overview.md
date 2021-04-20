@@ -2,8 +2,8 @@
 title: 使用资产微服务处理资产
 description: 使用云本机、可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
-feature: asset computeMicrosoft Services，工作流，发布信息，资产处理
-role: 架构师，管理员
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

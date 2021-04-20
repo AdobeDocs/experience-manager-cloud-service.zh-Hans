@@ -1,8 +1,8 @@
 ---
 title: 预览- JSON表示
 description: 了解如何在实施AEM无头解决方案时轻松预览内容片段的JSON表示形式。
-feature: 内容片段
-role: 商务从业人员
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

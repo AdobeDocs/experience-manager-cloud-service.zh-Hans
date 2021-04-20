@@ -1,8 +1,8 @@
 ---
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅。
-feature: 传送横幅
-topic: 商务从业人员
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

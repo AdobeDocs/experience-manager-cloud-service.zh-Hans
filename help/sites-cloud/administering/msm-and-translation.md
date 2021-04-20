@@ -1,8 +1,8 @@
 ---
 title: 多站点管理器和翻译
 description: 了解如何在您的项目中重复使用您的内容并在AEM中管理多语言网站。
-feature: 管理
-role: 管理员
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

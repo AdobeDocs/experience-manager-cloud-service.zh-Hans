@@ -1,8 +1,8 @@
 ---
 title: 管理内容片段
 description: 了解如何使用“资产”控制台管理AEM内容片段（无外设内容的基础）。
-feature: 内容片段
-role: 商务从业人员
+feature: Content Fragments
+role: Business Practitioner
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
 source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562

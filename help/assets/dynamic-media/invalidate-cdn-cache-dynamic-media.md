@@ -1,8 +1,8 @@
 ---
 title: 通过Dynamic Media使CDN缓存失效
 description: “了解如何使您的CDN(内容投放网络)缓存内容失效，以便您快速更新由Dynamic Media交付的资源，而不是等待缓存过期。”
-feature: 资产管理
-topic: 商务从业人员
+feature: Asset Management
+topic: Business Practitioner
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 translation-type: tm+mt

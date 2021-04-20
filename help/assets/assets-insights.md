@@ -2,7 +2,7 @@
 title: 资产分析
 description: 跟踪在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的用户评级和使用统计信息。
 contentOwner: AG
-feature: 资产分析，资产报表
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt
