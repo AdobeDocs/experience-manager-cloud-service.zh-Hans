@@ -5,32 +5,26 @@ feature: 资产管理，上传
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2065'
 ht-degree: 1%
 
 ---
 
-# 将数字资产添加到Adobe Experience Manager {#add-assets-to-experience-manager}
+# 将数字资产作为[!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}添加到[!DNL Adobe Experience Manager]
+
+[!DNL Adobe Experience Manager Assets] 接受来自多种来源的多种类型的数字资产。它存储二进制文件和创建的演绎版，可以使用各种工作流和[!DNL Adobe Sensei]服务进行资产处理，允许在多个表面通过许多渠道进行分发。
 
 [!DNL Adobe Experience Manager] 通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务，丰富已上传数字文件的二进制内容。您可以将各种类型的文件(如图像、文档和原始图像文件)从本地文件夹或网络驱动器上传到[!DNL Experience Manager Assets]。
 
-提供了许多上载方法。 除了最常用的浏览器上传外，还存在将资产添加到[!DNL Experience Manager]存储库的其他方法，包括桌面客户端(如Adobe Asset Link或[!DNL Experience Manager]桌面应用程序)、上传和摄取客户将创建的脚本，以及自动获取作为[!DNL Experience Manager]扩展添加的集成。
-
-我们将在此处重点介绍面向最终用户的上传方法，并提供文章的链接，这些文章描述了使用[!DNL Experience Manager] API和SDK进行资产上传和获取的技术方面。
+除了最常用的浏览器上传外，还存在将资产添加到[!DNL Experience Manager]存储库的其他方法，包括桌面客户端(如Adobe Asset Link或[!DNL Experience Manager]桌面应用程序)、上传和摄取客户将创建的脚本，以及自动获取作为[!DNL Experience Manager]扩展添加的集成。
 
 虽然您可以在[!DNL Experience Manager]中上传和管理任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/再现生成。 有关详细信息，请参阅[支持的文件格式](file-format-support.md)。
 
 您还可以选择对上传的资产进行其他处理。 您可以在上传资产的文件夹中配置多个资产处理用户档案，以添加特定元数据、演绎版或图像处理服务。 请参阅[在上传资产时处理资产](#process-when-uploaded)。
 
->[!NOTE]
->
->[!DNL Experience Manager] 利用 [!DNL Cloud Service] 了新的资产上传方式 — 直接二进制上传。默认情况下，开箱即用的产品功能和客户端（如[!DNL Experience Manager]用户界面、[!DNL Adobe Asset Link]、[!DNL Experience Manager]桌面应用程序）都支持它，因此对最终用户是透明的。
->
->技术团队需要使用新的上传API和协议的客户自定义或扩展的上传代码。
-
-资产([!DNL Cloud Service])提供以下上传方法。 Adobe建议您在使用上传选项之前了解其使用案例和适用性。
+[!DNL Assets] 提供以下上载方法。Adobe建议您在使用上传选项之前了解其使用案例和适用性。
 
 | 上载方法 | 何时使用？ | 主要人物 |
 |---------------------|----------------|-----------------|
@@ -112,19 +106,13 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 替换现有资产：如果您替换现有资产，则您对现有资产所做的资产元数据以及之前所做的任何修改（例如注释、裁剪等）都将被删除。
 * 创建另一个版本：此时会在存储库中创建现有资产的新版本。 您可以视图[!UICONTROL 时间轴]中的两个版本，并可以根据需要还原到以前现有的版本。
-* 同时保留：如果您选择保留这两个资产，则会重命名新资产，并在其名称后附加数字`1`。
-
->[!NOTE]
->
->在[!UICONTROL 名称冲突]对话框中选择&#x200B;**[!UICONTROL 替换]**&#x200B;时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
->
->如果启用资产分析以通过[!DNL Adobe Analytics]跟踪展示次数或点击次数，则重新生成的资产ID将使在[!DNL Analytics]上为资产捕获的数据无效。
+* 同时保留：如果您选择保留这两个资产，则会重命名新资产。
 
 要在[!DNL Assets]中保留重复资产，请单击&#x200B;**[!UICONTROL 保留]**。 要删除您上传的重复资产，请单击&#x200B;**[!UICONTROL 删除]**。
 
 ### 文件名处理和禁用字符{#filename-handling}
 
-[!DNL Experience Manager Assets] 尝试阻止您上传文件名中包含禁止字符的资产。如果您尝试上传的资产的文件名中包含不允许的字符或更多字符，则[!DNL Assets]会显示一条警告消息，并停止上传，直到您删除这些字符或上传时使用允许的名称。 某些上传方法不会阻止您上传文件名中包含禁止字符的资产，但会将这些字符替换为`-`。
+[!DNL Experience Manager Assets] 尝试阻止您上传文件名中包含禁止字符的资产。如果您尝试上传的资产的文件名中包含不允许的字符或更多字符，则[!DNL Assets]会显示一条警告消息，并停止上传，直到您删除这些字符或上传时使用允许的名称。
 
 为了适合您组织的特定文件命名约定，[!UICONTROL 上传资产]对话框允许您为上传的文件指定长名称。 不支持以下(空格分隔的列表)字符：
 
@@ -226,7 +214,18 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 提示、最佳实践和限制{#tips-limitations}
 
+* 直接二进制上传是上传资产的一种新方法。 默认情况下，产品功能和客户端都支持它，如[!DNL Experience Manager]用户界面、[!DNL Adobe Asset Link]和[!DNL Experience Manager]桌面应用程序。 客户技术团队自定义或扩展的任何自定义代码都必须使用新的上传API和协议。
+
 * Adobe建议在[!DNL Experience Manager Assets]的每个文件夹中最多添加1000个资产。 虽然您可以向文件夹添加更多资产，但是您可能会看到性能问题，如浏览此类文件夹的速度较慢。
+
+* 在[!UICONTROL 名称冲突]对话框中选择&#x200B;**[!UICONTROL 替换]**&#x200B;时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。 如果[资产分析](/help/assets/assets-insights.md)已启用，可通过[!DNL Adobe Analytics]跟踪展示次数或点击次数，则重新生成的资产ID将使在[!DNL Analytics]上为资产捕获的数据无效。
+
+* 某些上传方法不会阻止您上传文件名中具有[禁止字符](#filename-handling)的资产。 字符将替换为`-`符号。
+
+* 使用浏览器上传资产仅支持平面文件列表，不支持嵌套文件夹层次结构。 要上传嵌套文件夹中的所有资产，请考虑使用[桌面应用程序](#upload-assets-desktop-clients)。
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
