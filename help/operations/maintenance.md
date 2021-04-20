@@ -3,7 +3,7 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -57,11 +57,10 @@ ht-degree: 2%
     <td>请参阅下面的位置1</td>
     <td>请参见下面的代码示例1</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily（不应更改此值）</li>
-    <li><strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务何时开始执行。</li>
-    <li><strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily（此值不应更改）
+    <strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务何时开始执行。
+    <strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。
+    </td> 
   </tr>
   <tr>
     <td>每周</td>
