@@ -2,14 +2,14 @@
 title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: 部署
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
-
 
 # 部署到 AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ ht-degree: 1%
    * 文件夹（添加、修改、删除）
    * 可编辑的模板（添加、修改、删除）
    * 上下文感知配置（`/conf`下的任何内容）（添加、修改、删除）
-   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂钩
+   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂钩。 请参阅[Jackrabbit filevault文档](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)中有关安装挂接的说明，其中包括允许用户执行这些挂接)。
 
 通过将包嵌入install.author或install.publish文件夹（位于`/apps`下），可以将可变内容安装限制为创作或发布。 在AEM 6.5中进行了重组，以反映此分离，有关建议项目重组的详细信息，请参阅[AEM 6.5文档。](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
