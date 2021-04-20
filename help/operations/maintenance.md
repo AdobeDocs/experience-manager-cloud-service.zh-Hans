@@ -3,9 +3,9 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 7700ad89b1c2a3009c4b64c1af899a0130708a32
+source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 2%
     <td>请参阅下面的位置1</td>
     <td>请参见下面的代码示例1</td>
   <td>
-  <strong>windowSchedule</strong> = daily（此值不应更改）
-  <strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务何时开始执行。
-  <strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。
+  <strong>windowSchedule= daily</strong> （此值不应更改）windowStartTime
+  <strong>= HH:</strong> Mmusing as 24 hor clock。定义与每日维护窗口关联的维护任务何时开始执行。
+  <strong>windowEndTime= HH:</strong> M使用为24小时。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。
   </td> 
   </tr>
   <tr>
@@ -69,10 +69,10 @@ ht-degree: 2%
     <td>请参阅下面的位置2</td>
     <td>请参见下面的代码示例2</td>
     <td>
-    <strong>windowSchedule</strong> = weekly（此值不应更改）
-    <strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每周维护窗口关联的维护任务何时开始执行。
-    <strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。
-    <strong>windowScheduleWeekdays =从1-7到2值的数组。例如[5,5]。</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。
+    <strong>windowSchedule= weekly</strong> （此值不应更改）windowStartTime
+    <strong>= HH:</strong> Mmusing as 24 hor clock。定义与每周维护窗口关联的维护任务何时开始执行。
+    <strong>windowEndTime= HH:</strong> M使用为24小时。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。
+    <strong>windowScheduleWeekdays=从1到7的2个值的数组(例如[5,5])</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。
     </td> 
   </tr>
   <tr>
@@ -82,11 +82,11 @@ ht-degree: 2%
     <td>请参阅下面的位置3</td>
     <td>请参见下面的代码示例3</td>
     <td>
-    <strong>windowSchedule</strong> = daily（此值不应更改）
-    <strong>windowStartTime</strong> = HH:MM，用作24小时时钟。定义与每月维护窗口关联的维护任务何时开始执行。
-    <strong>windowEndTime</strong> = HH:MM，用作24小时时钟。定义与每月维护窗口关联的维护任务在尚未完成时应停止执行的时间。
-    <strong>windowScheduleWeekdays =从1-7到2值的数组。例如[5,5]。</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。
-    <strong>windowFirstLastStartDay - 0/10</strong> 在月的第一周计划，或1在月的最后一周计划。如果缺少值，将有效地每天计划工作，每月按windowScheduleWeekdays进行管理。
+    <strong>windowSchedule= daily</strong> （此值不应更改）windowStartTime
+    <strong>= HH:</strong> Mmusing as 24 hor clock。定义与每月维护窗口关联的维护任务何时开始执行。
+    <strong>windowEndTime= HH:</strong> M使用为24小时。定义与每月维护窗口关联的维护任务在尚未完成时应停止执行的时间。
+    <strong>windowScheduleWeekdays =从1到7的2个值的数组(例如[5,5])</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。
+    <strong>windowFirstLastStartDay= 0/10</strong> 表示在月的第一周计划，或1表示在月的最后一周计划。如果缺少值，将有效地每天计划工作，每月按windowScheduleWeekdays进行管理。
     </td> 
     </tr>
 </table>
@@ -144,9 +144,3 @@ ht-degree: 2%
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
-
-| 维护窗口配置 | 配置的所有者 | 配置类型 | 位置 | 示例 | 参数 |
-|---|---|---|---|---|---|
-| 每日 | 客户 | JCR节点定义 | 请参阅下面的位置1 | 请参见下面的代码示例1 | **windowSchedule= daily** （不应更改此值）。  <br> **windowStartTime= HH:** M使用为24小时。定义与每日维护窗口关联的维护任务何时开始执行。<br> **windowEndTime= HH:** M使用为24小时。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。 |
-| 每周 | 客户 | JCR节点定义 | 请参阅下面的位置2 | 请参见下面的代码示例2 | **windowSchedule= weekly** （不应更改此值）。  <br> **windowStartTime= HH:** M使用为24小时。定义与每周维护窗口关联的维护任务何时开始执行。<br> **windowEndTime= HH:** M使用为24小时。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。<br> **windowScheduleWeekdays=从1到7的2个值的数组** (例如 [5,5])。数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。 开始和结束的确切时间分别受windowStartTime和windowEndTime控制。 |
-
