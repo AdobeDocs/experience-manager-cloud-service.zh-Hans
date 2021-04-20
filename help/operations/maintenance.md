@@ -3,9 +3,9 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8adead735a5c3c0a03ee6f81372c1714634932ec
+source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -147,4 +147,4 @@ ht-degree: 2%
 
 | 维护窗口配置 | 配置的所有者 | 配置类型 | 位置 | 示例 | 参数 |
 |---|---|---|---|---|---|
-| 每日 | 客户 | JCR节点定义 | 请参阅下面的位置2 | 请参见下面的代码示例2 | **windowSchedule= daily** （不应更改此值）。  <br> **windowStartTime= HH:** M使用为24小时。定义与每日维护窗口关联的维护任务何时开始执行。<br> **windowEndTime= HH:** M使用为24小时。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。 |
+| 每日 | 客户 | JCR节点定义 | 请参阅下面的位置2 | 请参见下面的代码示例2 | `windowSchedule= daily` （不应更改此值）。  <br> `windowStartTime=HH:MM` 24小时。定义与每日维护窗口关联的维护任务何时开始执行。<br> **windowEndTime= HH:** M使用为24小时。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。 |
