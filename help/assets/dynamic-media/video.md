@@ -1,14 +1,13 @@
 ---
 title: 视频
 description: 了解如何在Dynamic Media中使用视频。
-feature: Video Profiles
-topic: Business Practitioner
+feature: 视频配置文件
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9510'
 ht-degree: 22%
 
 ---
@@ -407,7 +406,7 @@ VBR编码时间较长，但产生最有利的结果；媒体文件的质量优�
 |--- |--- |--- |--- |
 | 源 | 1920 x 1080 | 1 | 3 |
 | 编码 | 960 x 540 | 2 | 2 |
-| 编码 | 640 x 360 | 3 | 3 |
+| 编码 | 640 x 360 | 3 | 1 |
 | 编码 | 480 x 270 | 4 | 4 |
 
 ### 编码视频文件格式 {#encoded-video-file-format}
@@ -416,15 +415,15 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 ## 将视频发布到 YouTube {#publishing-videos-to-youtube}
 
-您可以将在Experience Manager资产中管理的视频资产直接发布到您之前创建的YouTube渠道。
+您可以将在Experience Manager资产中管理的视频资产直接发布到之前创建的YouTube渠道。
 
-要将视频资产发布到YouTube，您可以在Experience Manager资产中为视频资产添加标记。 将这些标记与YouTube渠道关联。 如果视频资产的标记与YouTube渠道的标记匹配，则视频会发布到YouTube。 只要使用关联的标记，发布到YouTube时就会与视频的正常发布一起发生。
+要将视频资产发布到YouTube，您需要在Experience Manager资产中标记视频资产，并添加标记。 将这些标记与YouTube渠道关联。 如果视频资产的标记与YouTube渠道的标记匹配，则视频将发布到YouTube。 只要使用关联标记，发布到YouTube与视频的正常发布一起进行。
 
-YouTube会进行自己的编码。 因此，上传到Experience Manager中的原始视频文件将发布到YouTube，而不是Dynamic Media编码已创建的任何视频再现。 虽然不需要使用Dynamic Media处理视频，但在回放时需要查看器预设时，视频会这样做。
+YouTube进行自己的编码。 因此，上传到Experience Manager中的原始视频文件将发布到YouTube，而不是Dynamic Media编码已创建的任何视频再现。 虽然不需要使用Dynamic Media处理视频，但在回放时需要查看器预设时，视频会这样做。
 
 当您绕过视频处理用户档案并直接发布到YouTube时，这只意味着您的Experience Manager资产中的视频资产没有可查看的缩略图。 这还意味着未编码的视频不适用于任何Dynamic Media资源类型。
 
-将视频资产发布到YouTube服务器需要完成以下任务，以确保使用YouTube进行安全、安全的服务器对服务器身份验证：
+将视频资源发布到YouTube服务器需要完成以下任务，以确保使用YouTube进行安全、安全的服务器到服务器身份验证：
 
 1. [配置Google Cloud设置](#configuring-google-cloud-settings)
 1. [创建YouTube渠道](#creating-a-youtube-channel)
@@ -439,11 +438,11 @@ YouTube会进行自己的编码。 因此，上传到Experience Manager中的原
 
 ### 配置Google Cloud设置{#configuring-google-cloud-settings}
 
-要发布到YouTube，您需要一个Google帐户。 如果你有GMAIL账户，那么你已经有了Google账户；如果您没有Google帐户，您可以轻松创建一个。 您需要此帐户，因为您需要凭据才能将视频资产发布到YouTube。 如果已创建帐户，请跳过此任务并直接转到[创建YouTube渠道](#creating-a-youtube-channel)。
+要发布到YouTube，您需要Google帐户。 如果你有GMAIL账户，那么你已经有了Google账户；如果您没有Google帐户，您可以轻松创建一个。 您需要此帐户，因为您需要凭据才能将视频资产发布到YouTube。 如果已创建帐户，请跳过此任务并直接转到[创建YouTube渠道](#creating-a-youtube-channel)。
 
 与Google Cloud一起使用的帐户和用于YouTube的Google帐户不需要相同。
 
-Google会定期更改其用户界面。 因此，将视频发布到YouTube的步骤可能与下面介绍的内容略有不同。 当您尝试检查视频是否上传到YouTube时，此警告也适用于YouTube。
+Google会定期更改其用户界面。 因此，将视频发布到YouTube的步骤可能与下面介绍的步骤略有不同。 当您尝试检查是否将视频上传到YouTube时，此警告同样适用。
 
 >[!NOTE]
 >
@@ -468,7 +467,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 1. 在“新建项目”对话框的“项目名称”字段中，键入新项目的名称。
 
-   您的项目ID基于您的项目名称。 因此，请谨慎选择项目名称；创建后无法更改。 此外，您必须在以后在Experience Manager中设置YouTube时再次输入相同的项目ID。 所以，把它写下来。
+   您的项目ID基于您的项目名称。 因此，请谨慎选择项目名称；创建后无法更改。 此外，在以后在Experience Manager中设置YouTube时，必须再次输入同一项目ID。 所以，把它写下来。
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -480,8 +479,8 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. 在“API和服务”页面顶部附近，点按&#x200B;**[!UICONTROL 启用API和服务]**。
-1. 在“API库”页的左侧，在&#x200B;**[!UICONTROL 类别]**&#x200B;下，点按&#x200B;**[!UICONTROL YouTube]**。 在页面的右侧，点按&#x200B;**[!UICONTROL YouTube数据API]**。
-1. 在YouTube数据API v3页上，点按&#x200B;**[!UICONTROL 启用]**。
+1. 在“API库”页的左侧，在&#x200B;**[!UICONTROL 类别]**&#x200B;下，点按&#x200B;**[!UICONTROL YouTube]**。 在页面的右侧，点按&#x200B;**[!UICONTROL YouTube Data API]**。
+1. 在YouTube Data API v3页上，点按&#x200B;**[!UICONTROL 启用]**。
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
@@ -526,7 +525,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 1. 在显示给用户的&#x200B;**[!UICONTROL 产品名称]**&#x200B;标题下，在文本字段中，输入您希望在同意屏幕上显示的内容。
 
-   当Experience Manager管理员通过YouTube验证时，同意屏幕会显示给他们。 Experience Manager联系YouTube以获得许可。
+   当Experience Manager管理员对YouTube进行身份验证时，同意屏幕将显示给用户。 Experience Manager联系YouTube获取权限。
 
 1. 单击&#x200B;**[!UICONTROL 继续]**。
 1. 在将凭据添加到项目页面的步骤4中，在“下载凭据 **[!UICONTROL ”标题下]** ，点按 **[!UICONTROL 下载]**。
@@ -539,25 +538,25 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-   从Google帐户注销。 现在创建一个YouTube渠道。
+   从Google帐户注销。 现在创建YouTube渠道。
 
 ### 创建YouTube渠道{#creating-a-youtube-channel}
 
-将视频发布到YouTube需要您拥有一个或多个渠道。 如果已创建YouTube渠道，则可跳过此任务并转到[添加用于发布的标记](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)。
+将视频发布到YouTube需要您具有一个或多个渠道。 如果已创建YouTube渠道，则可以跳过此任务，转到[添加用于发布的标记](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)。
 
 >[!CAUTION]
 >
->请确保已在YouTube *中设置一个或多个渠道,*&#x200B;之前，在“Experience Manager中的YouTube设置”下添加渠道(请参阅下面的[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube)。 如果您未能设置渠道，则不会警告您没有任何现有渠道。 但是，添加渠道时仍会发生Google身份验证，但无法选择发送视频的渠道。
+>请确保已在YouTube *中设置一个或多个渠道,*&#x200B;之前，在Experience Manager的“YouTube设置”下添加渠道(请参阅下面的[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube)。 如果您未能设置渠道，则不会警告您没有任何现有渠道。 但是，添加渠道时仍会发生Google身份验证，但无法选择发送视频的渠道。
 
 要创建YouTube渠道，请执行以下操作：
 
 1. 转到[https://www.youtube.com](https://www.youtube.com/)并使用您的Google帐户凭据登录。
-1. 在YouTube页面的右上角，单击您的用户档案图片（也可以在纯色圆中显示为字母），然后点按&#x200B;**[!UICONTROL YouTube设置]**（圆齿轮图标）。
+1. 在YouTube页面的右上角，单击您的用户档案图片（它也可以显示为纯色圆中的字母），然后点按&#x200B;**[!UICONTROL YouTube设置]**（圆齿轮图标）。
 1. 在“概述”页面的“其他功能”标题下，点按&#x200B;**[!UICONTROL 查看所有我的渠道或创建新渠道]**。
 1. 在“渠道”页面上，点按&#x200B;**[!UICONTROL 创建新渠道]**。
 1. 在“品牌帐户”页面的“品牌帐户名称”字段中，输入您要发布视频资产的业务名称或任何其他渠道名称，然后单击&#x200B;**[!UICONTROL 创建]**。
 
-   请记住在此处输入的名称，因为在以Experience Manager设置YouTube时，必须再次输入该名称。
+   请记住在此处输入的名称，因为在Experience Manager中设置YouTube时必须再次输入该名称。
 
 1. （可选）如有必要，请添加更多渠道。
 
@@ -565,13 +564,13 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 ### 添加用于发布{#adding-tags-for-publishing}的标记
 
-要将视频发布到YouTube，Experience Manager会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅[管理标记](/help/sites-cloud/authoring/features/tags.md)。
+要将视频发布到YouTube,Experience Manager会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅[管理标记](/help/sites-cloud/authoring/features/tags.md)。
 
-或者，如果您打算在Experience Manager中使用默认标签，则可以跳过此任务，转到[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube。
+或者，如果您打算在Experience Manager中使用默认标签，则可以跳过此任务并转到[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube。
 
 >[!NOTE]
 >
->配置Cloud Service后，此时无需其他配置即可启用YouTube发布复制代理。 原因是在保存Cloud Service配置时启用了它。
+>配置Cloud Service后，此时不需要其他配置即可启用YouTube Publish复制代理。 原因是在保存Cloud Service配置时启用了它。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -583,9 +582,9 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Click **[!UICONTROL OK]**. -->
 
-### 在Experience Manager{#setting-up-youtube-in-aem}中设置YouTube
+### 在Experience Manager {#setting-up-youtube-in-aem}中设置YouTube
 
-从Experience Manager 6.4开始，引入了一种新的触摸式用户界面方法，以Experience Manager方式建立YouTube发布。 根据您使用的Experience Manager的已安装实例，执行以下操作之一：
+从Experience Manager 6.4开始，引入了一种新的触摸式用户界面方法，在Experience Manager中建立YouTube发布。 根据您使用的Experience Manager的已安装实例，执行以下操作之一：
 
 * 要在6.4之前的Experience Manager中配置YouTube，请参阅[在6.4之前的Experience Manager中设置YouTube。](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)
 * 要在Experience Manager 6.4或更高版本中配置YouTube，请参阅[在Experience Manager 6.4和更高版本中设置YouTube](#setting-up-youtube-in-aem-and-later)。
@@ -600,7 +599,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在“创建 YouTube 配置”页面的“Google Cloud Platform 设置”下的&#x200B;**[!UICONTROL 应用程序名称]**&#x200B;字段中，输入 Google 项目 ID。
 
    您在最初配置Google Cloud设置时指定了项目ID。
-保持“创建YouTube配置”页面打开；你马上就会重新开始。
+使“创建YouTube配置”页保持打开状态；你马上就会重新开始。
 
    ![6_5_youtubepublish-createyoutuconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -609,7 +608,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回至“YouTube 帐户设置”对话框。在 **[!UICONTROL JSON 配置]**&#x200B;字段中，粘贴 JSON 文本。
 1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**。
 
-   您现在将以Experience Manager设置YouTube渠道。
+   您现在将在Experience Manager中设置YouTube渠道。
 
 1. 点按&#x200B;**[!UICONTROL 添加渠道]**。
 1. 在“渠道名称”字段中，输入您在任务&#x200B;**[!UICONTROL 之前向YouTube]**&#x200B;添加一个或多个渠道中创建的渠道的名称。
@@ -617,7 +616,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    如果需要，您可以根据需要添加说明。
 
 1. 点按&#x200B;**[!UICONTROL 添加]**。
-1. 将显示YouTube/Google身份验证。 如果您尚未登录Google Cloud帐户，请跳过此步骤。
+1. YouTube/Google身份验证显示。 如果您尚未登录Google Cloud帐户，请跳过此步骤。
 
    * 输入与上述Google项目ID和JSON文本关联的Google用户名和密码。
    * 根据您的帐户有多少渠道，您会看到两个或多个项目。 选择渠道。 不要选择电子邮件地址；它不是渠道。
@@ -642,20 +641,20 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 请确保以管理员身份登录到Dynamic Media实例。
 
 1. 在Experience Manager的左上角，点按Experience Manager徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 部署]** > **[!UICONTROL Cloud Services]**。
-1. 在“第三方服务”标题下的YouTube下，点按&#x200B;**[!UICONTROL 立即配置]**。
+1. 在“第三方服务”标题的YouTube下，点按&#x200B;**[!UICONTROL 立即配置]**。
 1. 在“创建配置”对话框中，在相应的字段中输入标题（必填）和名称（可选）。
 1. 点按&#x200B;**[!UICONTROL 创建]**。
 1. 在“YouTube 帐户设置”对话框的&#x200B;**[!UICONTROL 应用程序名称]**&#x200B;字段中，输入 Google 项目 ID。
 
    您在最初[配置Google Cloud设置](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)时指定了项目ID。
-保持“YouTube帐户设置”对话框处于打开状态；你马上就会重新开始。
+使“YouTube帐户设置”对话框保持打开状态；你马上就会重新开始。
 
 1. 使用纯文本编辑器，打开您之前在“配置Google Cloud”设置中下载和保存的JSON文件。
 1. 选择并复制整个JSON文本。
 1. 返回至“YouTube 帐户设置”对话框。在 **[!UICONTROL JSON 配置]**&#x200B;字段中，粘贴 JSON 文本。
 1. 点按&#x200B;**[!UICONTROL 确定]**。
 
-   您现在将以Experience Manager设置YouTube渠道。
+   您现在将在Experience Manager中设置YouTube渠道。
 
 1. 在&#x200B;**[!UICONTROL 可用渠道]**&#x200B;右侧，点按 **+**（加号图标）。
 1. 在“YouTube频道设置”对话框的“标题”字段中，输入您在之前向YouTube添加一个或多个频道任务中创建的频道 **[!UICONTROL 名称]** 。
@@ -663,7 +662,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    如果需要，您可以根据需要添加说明。
 
 1. 点按&#x200B;**[!UICONTROL 确定]**。
-1. 将显示YouTube/Google身份验证。 如果您尚未登录Google Cloud帐户，请跳过此步骤。
+1. YouTube/Google身份验证显示。 如果您尚未登录Google Cloud帐户，请跳过此步骤。
 
    * 输入与上述Google项目ID和JSON文本关联的Google用户名和密码。
    * 根据您的帐户有多少渠道，您会看到两个或多个项目。 选择渠道。 不要选择电子邮件地址；它不是渠道。
@@ -687,7 +686,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 您可以选择在上传视频时自动设置YouTube属性。 在Experience Manager中创建元数据处理用户档案。
 
-要创建元数据处理配置文件，您首先需要从&#x200B;**[!UICONTROL 字段标签]**、**[!UICONTROL 映射到属性]**&#x200B;和&#x200B;**[!UICONTROL 选择]**&#x200B;字段中复制值，所有这些字段均位于视频的元数据架构中。然后，通过向YouTube视频元数据处理用户档案中添加这些值，来构建该视频元数据处理数据。
+要创建元数据处理配置文件，您首先需要从&#x200B;**[!UICONTROL 字段标签]**、**[!UICONTROL 映射到属性]**&#x200B;和&#x200B;**[!UICONTROL 选择]**&#x200B;字段中复制值，所有这些字段均位于视频的元数据架构中。然后，通过向YouTube视频元数据处理用户档案中添加这些值，来构建该视频元数据。
 
 要自动设置已上传视频的默认YouTube属性，请执行以下操作：
 
@@ -704,7 +703,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * 在&#x200B;**[!UICONTROL Choices]**下，选择并复制您要使用的默认值（如“人物和博客”或“科学与技术”）。
 将复制的值粘贴到打开的文本编辑器中。 您以后将在创建元数据处理用户档案时需要此值。 使文本编辑器保持打开状态。
 
-1. 在“YouTube发布”标题下，单击&#x200B;**[!UICONTROL YouTube隐私]**。
+1. 在YouTube发布标题下，单击&#x200B;**[!UICONTROL YouTube隐私]**。
 1. 在页面右侧的&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，执行以下操作：
 
    * 在&#x200B;**[!UICONTROL 映射到属性]**文本字段中，选择并复制值。
@@ -725,10 +724,10 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * （可选）将标记为&#x200B;**[!UICONTROL Section Header]**&#x200B;的组件拖到左侧，并将其放置到表单区域中。
    * （可选）单击&#x200B;**[!UICONTROL 字段标签]**&#x200B;以选择组件。
    * （可选）在页面右侧的“设置”选项卡的“字段标签”文本字段中，输入`YouTube Publishing`。
-   * 单击&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡，然后拖动标有&#x200B;**[!UICONTROL 多值文本]**&#x200B;的组件，将其放在您创建的&#x200B;**[!UICONTROL YouTube发布]**&#x200B;标题下。
+   * 单击&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡，然后拖动标有&#x200B;**[!UICONTROL 多值文本]**&#x200B;的组件，将其放在您创建的&#x200B;**[!UICONTROL YouTube Publishing]**&#x200B;标题下。
 
    * 要选择组件，请单击&#x200B;**[!UICONTROL 字段标签]**。
-   * 在页面右侧的“设置”选项卡下，将您之前复制的YouTube发布值（字段标签值和映射到属性值）粘贴到表单上的相应字段中。 将选择值粘贴到默认值字段中。
+   * 在页面右侧的“设置”选项卡下，将您之前复制的YouTube发布值（字段标签值和映射到属性值）粘贴到表单中其各自的字段中。 将选择值粘贴到默认值字段中。
 
 1. 通过执行以下操作，将复制的YouTube隐私值添加到用户档案:
 
@@ -739,7 +738,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * 单击&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡，然后拖动标有&#x200B;**[!UICONTROL 多值文本]**&#x200B;的组件，将其放在您创建的&#x200B;**[!UICONTROL YouTube隐私]**&#x200B;标题下。
 
    * 要选择组件，请单击&#x200B;**[!UICONTROL 字段标签]**。
-   * 在页面右侧的“设置”选项卡下，将您之前复制的YouTube发布值（字段标签值和映射到属性值）粘贴到表单上的相应字段中。 将选择值粘贴到默认值字段中。
+   * 在页面右侧的“设置”选项卡下，将您之前复制的YouTube发布值（字段标签值和映射到属性值）粘贴到表单中其各自的字段中。 将选择值粘贴到默认值字段中。
 
 1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
 1. 将YouTube发布元数据用户档案应用到您要上传视频的文件夹。 您必须同时设置元数据用户档案和视频用户档案。
@@ -754,14 +753,14 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 >
 >立即发布不会自动发布到YouTube。 设置 Dynamic Media 时，有两种发布选项可供选择：**[!UICONTROL 立即]**&#x200B;或&#x200B;**[!UICONTROL 激活时]**。
 >
->**[!UICONTROL “立]** 即发布”表示上传的资源在与IPS同步后会自动发布到投放系统。尽管Dynamic Media的情况确实如此，但YouTube的情况并非如此。 要发布到YouTube，您必须通过Experience Manager作者的方式进行发布。
+>**[!UICONTROL “立]** 即发布”表示上传的资源在与IPS同步后会自动发布到投放系统。尽管Dynamic Media是如此，但YouTube并非如此。 要发布到YouTube，您必须通过Experience Manager作者的方式进行发布。
 
 >[!NOTE]
 要从YouTube发布内容，Experience Manager使用&#x200B;**[!UICONTROL 发布到YouTube]**&#x200B;工作流，它允许您监视进度并视图任何故障信息。
 请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 有关更详细的进度信息，您可以在复制下监视YouTube日志。 但是，请注意，此类监视需要管理员访问。
 
-**要将视频发布到您的YouTube渠道**:
+**要将视频发布到YouTube渠道**:
 
 1. 在Experience Manager中，导航到要发布到YouTube渠道的视频资产。
 1. 选择视频资产（自适应视频集）。
@@ -777,7 +776,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    另请参阅[将发布管理与Experience Manager站点一起使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
-   您可以选择验证已发布到YouTube渠道上的视频。
+   您可以选择验证已发布的YouTube渠道。
 
 ### （可选）验证已发布到 YouTube 上的视频{#optional-verifying-the-published-video-on-youtube}
 
@@ -798,20 +797,20 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 要将 YouTube URL 关联到您的 Web 应用程序，请执行以下操作：
 
-1. 导航到要复制其URL的&#x200B;*YouTube已发布*&#x200B;视频资产，然后选择它。
+1. 导航到要复制其URL的&#x200B;*YouTube published*&#x200B;视频资产，然后选择它。
 
-   请记住，YouTube URL仅可用于将视频资产复制到YouTube之前的&#x200B;**&#x200B;之后的&#x200B;*。*
+   请记住，YouTube URL仅可用于在您先将视频资产&#x200B;*发布*&#x200B;复制到YouTube *之后复制*。
 
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 属性]**。
 1. 单击&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。
-1. 在“YouTube发布”标题下，在YouTube URL列表中，选择URL文本并将其复制到您的Web浏览器，以预览资产或添加到您的Web内容页面。
+1. 在YouTube发布标题的YouTube URL列表下，选择URL文本并将其复制到您的Web浏览器，以预览资产或添加到您的Web内容页面。
 
 ### 取消发布视频以将其从 YouTube 中删除 {#unpublishing-videos-to-remove-them-from-youtube}
 
 当您在 Experience Manager 中取消发布视频资产时，该视频会从 YouTube 中删除。
 
 >[!CAUTION]
-如果您直接从YouTube中删除视频，Experience Manager不会察觉，并继续表现为视频仍发布到YouTube。 始终通过Experience Manager方式从YouTube取消发布视频资产。
+如果您直接从YouTube中删除视频，Experience Manager不会察觉并继续表现为视频仍发布到YouTube。 始终通过Experience Manager方式从YouTube取消发布视频资产。
 
 >[!NOTE]
 要从YouTube中删除内容，Experience Manager使用&#x200B;**[!UICONTROL 从YouTube]**&#x200B;中取消发布工作流，该工作流允许您监视进度并视图任何故障信息。
@@ -819,7 +818,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 要取消发布视频以将其从 YouTube 中删除，请执行以下操作：
 
-1. 导航到要从YouTube渠道取消发布的视频资产。
+1. 导航到要从YouTube渠道中取消发布的视频资产。
 1. 在资产选择模式下，选择一个或多个已发布的视频资产。
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 管理发布]**。 如有必要，点按三个点图标(...) 工具栏上，查看&#x200B;**[!UICONTROL 管理发布]**。
 1. 在“管理发布”页面上，点按&#x200B;**[!UICONTROL 取消发布]**。
@@ -832,7 +831,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### 监视进度{#monitoring-progress}
 
-要监视进度（包括编码失败/YouTube发布），请执行以下操作：
+要监视进度(包括编码失败/YouTube发布):
 
 1. 视图资源文件夹中的视频编码进度：
 
@@ -848,11 +847,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. 视图资产详细信息的进度。 点按或单击资产时，请打开下拉菜单，然后选择&#x200B;**[!UICONTROL 时间轴]**。 要将其缩小到编码或YouTube发布等工作流活动，请选择&#x200B;**[!UICONTROL 工作流]**。
+1. 视图资产详细信息的进度。 点按或单击资产时，请打开下拉菜单，然后选择&#x200B;**[!UICONTROL 时间轴]**。 要将其缩小为工作流活动(如编码或YouTube发布)，请选择&#x200B;**[!UICONTROL 工作流]**。
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   任何工作流信息（如编码）都会显示在时间轴中。 对于YouTube发布，工作流时间轴还包括YouTube渠道和YouTube视频URL的名称。 此外，发布完成后，您会在工作流时间轴中看到任何失败通知。
+   任何工作流信息（如编码）都会显示在时间轴中。 对于YouTube发布，工作流时间轴还包含YouTube渠道和YouTube视频URL的名称。 此外，发布完成后，您会在工作流时间轴中看到任何失败通知。
 
    >[!NOTE]
    由于&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**(从[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))上的多个工作流配置，最终记录失败/错误消息可能需要很长时间，例如：
