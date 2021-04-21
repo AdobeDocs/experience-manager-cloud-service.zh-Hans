@@ -1,17 +1,16 @@
 ---
 title: 通过Dynamic Media Classic使CDN缓存失效
 description: “了解如何使您的CDN(内容投放网络)缓存内容失效，以便您快速更新由Dynamic Media交付的资源，而不是等待缓存过期。”
-feature: Asset Management,Dynamic Media Classic
-topic: Business Practitioner
+feature: 资产管理，Dynamic Media Classic
 role: Administrator,Business Practitioner
+exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '688'
 ht-degree: 14%
 
 ---
-
 
 # 通过Dynamic Media Classic {#invalidating-your-cdn-cached-content}使CDN缓存失效
 
@@ -62,4 +61,3 @@ Dynamic Media资源由CDN(内容投放网络)缓存，以便快速投放。 但�
    >选择资源，然后点按&#x200B;**[!UICONTROL 文件> Invalidate CDN]**&#x200B;时，Dynamic Media会使用失效的CDN模板自动创建要从CDN失效的URL。 如果 **[!UICONTROL CDN 无效模板]**&#x200B;文本框中没有任何内容，则会显示空白 URL 列表。CDN 上的缓存不是基于资产，而是基于 URL。因此，必须了解您网站上的完整 URL。确定这些 URL 后，可以将其添加到步骤前面的&#x200B;**[!UICONTROL 无效 CDN 模板]**。然后，您可以选择这些资产，并在一个步骤中使 URL 失效。
    >
    >另一种方法是向&#x200B;**[!UICONTROL 使CDN]**&#x200B;列表添加完整的URL。 如果遵循此方法，则不必在Dynamic Media Classic中选择资源，然后再转到&#x200B;**[!UICONTROL “文件”>“使CDN]**&#x200B;失效”选项。
-
