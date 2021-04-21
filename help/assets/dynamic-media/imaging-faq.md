@@ -1,14 +1,13 @@
 ---
 title: 智能成像
 description: “了解智能图像处理如何应用每个用户的独特查看特性，自动提供为其体验优化的正确图像，从而提高性能和参与度。”
-feature: Asset Management,Renditions
-topic: Business Practitioner
+feature: 资产管理，演绎版
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1922'
 ht-degree: 2%
 
 ---
