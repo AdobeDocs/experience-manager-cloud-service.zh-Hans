@@ -1,17 +1,16 @@
 ---
 title: 应用 Dynamic Media 图像预设
 description: 了解如何在Dynamic Media中应用图像预设。
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: 图像预设、查看器、演绎版
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 35%
+source-wordcount: '309'
+ht-degree: 34%
 
 ---
-
 
 # 应用 Dynamic Media 图像预设 {#applying-image-presets}
 
@@ -51,4 +50,3 @@ ht-degree: 35%
    >如果资产&#x200B;*和*&#x200B;图像预设尚未发布，则&#x200B;**[!UICONTROL URL]**&#x200B;按钮（或URL和RESS按钮，如果适用）不可用。
    >
    >另请注意，图像预设会自动发布到Dynamic Media S7服务器上。
-
