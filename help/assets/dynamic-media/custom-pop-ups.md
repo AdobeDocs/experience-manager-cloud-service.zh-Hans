@@ -1,17 +1,16 @@
 ---
 title: 使用快速视图创建自定义弹出窗口
 description: “了解默认快速视图在电子商务体验中的使用方式，在电子商务体验中，弹出窗口会显示产品信息以推动购买。 您可以触发要在弹出窗口中显示的自定义内容。”
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: 交互式图像，交互式视频，旋转横幅
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 2%
 
 ---
-
 
 # 使用快速视图创建自定义弹出窗口{#using-quickviews-to-create-custom-pop-ups}
 
@@ -264,4 +263,3 @@ Dynamic Media中的以下查看器支持快速视图:
    `s7interactiveimageviewer.init()`
 
    将查看器嵌入到主机页面后，请确保已创建查看器实例。 另外，请确保在使用`init()`调用查看器之前加载了处理函数。
-
