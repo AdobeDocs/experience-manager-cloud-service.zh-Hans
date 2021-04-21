@@ -1,14 +1,13 @@
 ---
 title: 交互式视频
 description: 了解如何在Dynamic Media中使用交互式视频和购物视频。
-feature: Interactive Videos
-topic: Business Practitioner
+feature: 交互式视频
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 20%
 
 ---
@@ -55,7 +54,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### Adobe 客户成功网络研讨会 {#adobe-customer-success-webinar}
 
-[在Experience Manager资产](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)中使用交互式视频、链接共享和YouTube共享网络研讨会教您如何使用交互式视频和其他功能将转化驱动的事件绑定到视频营销内容中。
+在Experience Manager资产](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)中使用交互式视频、链接共享和YouTube共享网络研讨会，教您如何使用交互式视频和其他功能将转化驱动的事件绑定到视频营销内容中。[
 
 ## 快速入门：交互式视频 {#quick-start-interactive-videos}
 
@@ -226,7 +225,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 您可以选择创建自己的自定义交互式视频查看器预设。 您可以确定视频播放器的样式、交互式缩略图以及显示在视频末尾的缩略图网格视图等。
 
-交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，这样您就可以在发布前测试其交互性。
+交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，以便您在发布前测试其交互性。
 
 保存查看器预设后，“查看器预设”页面中的查看器预设状态将自动设置为 **开**。此状态表明查看器预设在 Dynamic Media 组件中可见，预览视频时也可见。另请确保手动发布新查看器预设。
 
