@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media新闻快讯
 description: 'Experience League的Dynamic Media新闻快讯是每月新闻快讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您能够立即开始实现价值。 这一一站式商店时事通讯中提供了宝贵的知识建设资源。 例如，有操作方法视频和解决方案概述。 了解一些关键功能，如图像预设、查看器预设、视频用户档案等。 '
-feature: Asset Management
-topic: "Administrator,Business Practitioner"
+feature: 资产管理
 role: Business Practitioner
+exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1152'
 ht-degree: 0%
 
 ---
-
 
 # ![Dynamic Media Newsletter徽标](/help/assets/dynamic-media/assets/dynamic-media-newsletter-logo.png)
 
