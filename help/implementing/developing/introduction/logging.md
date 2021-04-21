@@ -1,16 +1,16 @@
 ---
-title: 记录
-description: 了解如何为中央日志记录服务配置全局参数、单个服务的特定设置或如何请求数据记录。
+title: 将AEM记录为Cloud Service
+description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置，或如何以Cloud Service身份请求在AEM中记录数据。
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 translation-type: tm+mt
-source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
+source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 3%
+source-wordcount: '2332'
+ht-degree: 2%
 
 ---
 
-
-# 记录 {#logging}
+# 将AEM记录为Cloud Service{#logging-for-aem-as-a-cloud-service}
 
 AEM作为Cloud Service，是客户包含自定义代码以为其客户群创建独特体验的平台。 考虑到这一点，日志记录是调试和了解本地开发和云环境(特别是作为Cloud Service开发环境的AEM)上代码执行的关键功能。
 
