@@ -3,14 +3,13 @@ sub-product: AEM as a Cloud Service 发行说明
 user-guide-title: AEM as a Cloud Service 发行说明
 breadcrumb-title: 发行说明
 user-guide-description: 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。
-feature-set: Experience Manager
-feature: Release Information
+feature: 发行信息
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1d64fe00e9694721073fa6a47a9b2cbd82e5b8ae
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 91%
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
 
