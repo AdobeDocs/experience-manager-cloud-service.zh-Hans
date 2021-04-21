@@ -2,16 +2,16 @@
 title: 元数据配置文件
 description: 了解资产的元数据用户档案。 了解如何创建元数据用户档案并将其应用到文件夹资产。
 contentOwner: AG
-feature: Metadata
+feature: 元数据
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 41%
+source-wordcount: '1236'
+ht-degree: 37%
 
 ---
-
 
 # 元数据配置文件 {#metadata-profiles}
 
@@ -63,13 +63,11 @@ ht-degree: 41%
 
 ## 将元数据用户档案应用到文件夹{#applying-a-metadata-profile-to-folders}
 
-当您将元数据配置文件分配给文件夹之后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。这就意味着您只能为每个文件夹分配一个元数据配置文件。因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
+当您将元数据配置文件分配给文件夹之后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。当将其他用户档案应用到子文件夹时，继承会停止。 您只能为一个文件夹分配一个元数据用户档案。 因此，请仔细考虑上传、存储、使用和存档资产的文件夹结构。
 
-如果您为文件夹分配了一个不同的元数据配置文件，新配置文件就会取代之前的配置文件。此前存在的文件夹资产将保持不变。此后添加到该文件夹的资产将会应用新的配置文件。
+如果您为文件夹分配了一个不同的元数据配置文件，新配置文件就会取代之前的配置文件。此前存在的文件夹资产将保持不变。新用户档案将应用于更改后添加到文件夹的资产。 您可以将元数据用户档案应用到特定文件夹或全局应用到所有资产。
 
 在用户界面中，卡名称中显示的用户档案名称会指示已为其分配用户档案的文件夹。
-
-您可以将元数据用户档案应用到特定文件夹或全局应用到所有资产。
 
 您可以重新处理文件夹中的资产，该文件夹已经包含您稍后更改的现有元数据用户档案。<!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
