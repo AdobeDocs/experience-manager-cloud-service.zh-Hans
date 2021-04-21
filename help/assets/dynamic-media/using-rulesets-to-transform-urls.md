@@ -1,16 +1,15 @@
 ---
 title: 使用规则集转换URL
 description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是用脚本语言(如JavaScript™)编写的指令集，用于评估XML数据并在数据满足某些条件时采取某些操作。
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 6%
+source-wordcount: '766'
+ht-degree: 5%
 
 ---
-
 
 # 使用规则集转换URL {#using-rulesets-to-transform-urls}
 
@@ -81,4 +80,3 @@ ht-degree: 6%
    规则集条件将应用于对实时Dynamic Media图像服务器的请求。
 
    如果更改规则集文件，则在您重新上传和重新发布更新的规则集文件时，将立即应用更改。
-
