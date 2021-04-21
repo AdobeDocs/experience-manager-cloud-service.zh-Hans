@@ -3,14 +3,13 @@ sub-product: AEM as a Cloud Service 的核心概念
 user-guide-title: AEM as a Cloud Service 的核心概念
 breadcrumb-title: Core Concepts 指南
 user-guide-description: 本指南简要介绍 Experience Manager as a Cloud Service 核心概念，包括新服务的架构。
-feature-set: Experience Manager
-feature: Release Information
+feature: 发行信息
 role: Architect
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 98%
+source-wordcount: '65'
+ht-degree: 100%
 
 ---
 
