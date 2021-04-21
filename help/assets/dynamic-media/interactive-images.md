@@ -1,14 +1,13 @@
 ---
 title: 交互式图像
 description: 了解如何在Dynamic Media中使用交互式图像。
-feature: Interactive Images
-topic: Business Practitioner
+feature: 交互式图像
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4247'
 ht-degree: 17%
 
 ---
