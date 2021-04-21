@@ -2,17 +2,16 @@
 title: 优化图像质量的最佳实践
 description: 了解可在Dynamic Media中用来优化图像资源质量的最佳实践。
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: 资产管理
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 49%
 
 ---
-
 
 # 优化图像质量的最佳实践 {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 * 直接在URL上实时尝试和测试不同的参数。
 * 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上就是具有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL路径中的自定义预设名称会调用这些预设。 这类功能可帮助您针对网站中图像的不同使用模式来管理命令和质量设置，并缩短 URL 的整体长度。
 * Experience Manager还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。 要调整和优化渲染结果，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可以帮助您进行自定义分析和最佳实践。
-
