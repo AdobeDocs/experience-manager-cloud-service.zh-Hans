@@ -2,16 +2,15 @@
 title: 设置Dynamic Media
 description: 要设置Dynamic Media，必须配置Dynamic Media并管理图像预设和查看器预设。
 contentOwner: Rick Brough
-topic: Administrator
 role: Administrator,Business Practitioner
+exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '179'
 ht-degree: 25%
 
 ---
-
 
 # 设置Dynamic Media {#setting-up-dynamic-media}
 
@@ -44,3 +43,4 @@ ht-degree: 25%
 >**如果要升级：**
 >
 >* 在Experience Manager启动并运行后，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员明确禁用了它）。 如果您是Experience Manager的升级实例，并且是Dynamic Media的新用户，则可能必须重新处理您的资源以启用Dynamic Media。 请参阅[重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+
