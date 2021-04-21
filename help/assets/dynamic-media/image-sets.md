@@ -1,14 +1,13 @@
 ---
 title: 图像集
 description: 了解如何在Dynamic Media中使用图像集。
-feature: Image Sets
-topic: Business Practitioner
+feature: 图像集
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2049'
 ht-degree: 30%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 30%
 
 图像集由带有单词的横幅来指定 `IMAGESET`。 此外，如果图像集已发布，则横幅上将显示由&#x200B;**[!UICONTROL 世界]**&#x200B;图标指示的发布日期。 此外，还显示由&#x200B;**[!UICONTROL 铅笔]**&#x200B;图标指示的上次修改日期。
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 在图像集中，您还可以通过创建图像集并添加缩略图来创建色板。
 
