@@ -3,9 +3,8 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as a Cloud Service
 breadcrumb-title: AEM内容和商务指南
 user-guide-description: 了解如何将Experience Manager内容和商务用作Cloud Service。
-feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 4b4741926381818e44b2293f9bed86782e689c49
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 5%
