@@ -1,14 +1,13 @@
 ---
 title: 混合媒体集
 description: 了解如何在Dynamic Media中使用混合媒体集。
-feature: Mixed Media Sets
-topic: Business Practitioner
+feature: 混合媒体集
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1467'
 ht-degree: 35%
 
 ---
