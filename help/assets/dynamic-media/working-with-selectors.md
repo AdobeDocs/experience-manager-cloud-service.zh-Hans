@@ -1,16 +1,15 @@
 ---
 title: 使用选择器
 description: 了解在Dynamic Media中为交互式图像、交互式视频和传送横幅选择资源时可使用的方法。
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 15%
+source-wordcount: '751'
+ht-degree: 14%
 
 ---
-
 
 # 使用Dynamic Media中的选择器{#working-with-selectors}
 
