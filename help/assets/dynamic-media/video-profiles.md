@@ -1,14 +1,13 @@
 ---
 title: Dynamic Media 视频配置文件
 description: Dynamic Media 附带预定义的自适应视频编码配置文件。此开箱即用用户档案中的设置经过优化，可为客户提供最佳的观看体验。 您还可以向视频添加智能裁剪。
-feature: Asset Management,Video Profiles,Renditions
-topic: Business Practitioner
+feature: 资产管理，视频用户档案，演绎版
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '3666'
+source-wordcount: '3664'
 ht-degree: 20%
 
 ---
