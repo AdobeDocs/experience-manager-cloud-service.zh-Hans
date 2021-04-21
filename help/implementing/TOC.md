@@ -3,11 +3,10 @@ sub-product: 实施 AEM as a Cloud Service
 user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
-feature-set: Experience Manager
 feature: Developer Tools
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: cef4c40a0a4af7b3cc7cbe696ceb1a197bbef56a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 36%
