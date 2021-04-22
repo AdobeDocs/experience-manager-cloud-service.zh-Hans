@@ -1,13 +1,13 @@
 ---
 title: 将您的数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
-feature: Asset Management,Upload
+feature: 资产管理，上传
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
+source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2067'
 ht-degree: 1%
 
 ---
@@ -216,7 +216,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 直接二进制上传是上传资产的一种新方法。 默认情况下，产品功能和客户端都支持它，如[!DNL Experience Manager]用户界面、[!DNL Adobe Asset Link]和[!DNL Experience Manager]桌面应用程序。 客户技术团队自定义或扩展的任何自定义代码都必须使用新的上传API和协议。
 
-* Adobe建议在[!DNL Experience Manager Assets]的每个文件夹中最多添加1000个资产。 虽然您可以向文件夹添加更多资产，但是您可能会看到性能问题，如浏览此类文件夹的速度较慢。
+* Adobe建议在[!DNL Experience Manager Assets]中的每个文件夹中添加不超过1000个资源。 虽然您可以向文件夹添加更多资产，但是您可能会遇到性能问题，如浏览此类文件夹的速度较慢。
 
 * 在[!UICONTROL 名称冲突]对话框中选择&#x200B;**[!UICONTROL 替换]**&#x200B;时，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。 如果[资产分析](/help/assets/assets-insights.md)已启用，可通过[!DNL Adobe Analytics]跟踪展示次数或点击次数，则重新生成的资产ID将使在[!DNL Analytics]上为资产捕获的数据无效。
 
