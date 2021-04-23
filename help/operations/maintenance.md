@@ -3,9 +3,9 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
+source-git-commit: df44a73b71c26cc9c6488fac14edba5d898eba2f
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
