@@ -3,9 +3,9 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -55,11 +55,11 @@ ht-degree: 2%
     <td>每日</td>
     <td>客户</td>
     <td>JCR节点定义</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>请参阅下面的位置1</td>
     <td>请参见下面的代码示例1</td>
-  <td><p><code>windowSchedule= daily</code></p> （不应更改此值）
-  <p><code>windowStartTime= HH:MM</code> 24小时。 定义与每日维护窗口关联的维护任务何时开始执行。</p>
-  <p><code>windowEndTime= HH:MM</code> 24小时。 定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
+  <td><p><strong>windowSchedule= daily</strong></p> （不应更改此值）
+  <p><strong>windowStartTime= HH:</strong> M使用为24小时。定义与每日维护窗口关联的维护任务何时开始执行。</p>
+  <p><strong>windowEndTime= HH:</strong> M使用为24小时。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
   </td> 
   </tr>
   <tr>
