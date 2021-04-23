@@ -3,9 +3,9 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 | 工作流清除 | 客户 | 必须用github完成。 <br> 通过在文件夹下创建属性，覆盖下现成的 `/libs` 维护窗口配置节`/apps/settings/granite/operations/maintenance/granite_weekly` 点 `granite_daily`。有关其他配置详细信息，请参阅下面的维护窗口表。 <br> 通过在上面的节点下添加另一个节点（将其命名）并使用相 `granite_WorkflowPurgeTask`应的属性来启用维护任务。<br> 配置OSGI属性，请参 [阅AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | 项目清除 | 客户 | 必须用github完成。 <br> 通过在文件夹或下创建属性，覆盖 `/libs` 下现成的维护窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置节 `granite_daily`点。有关其他配置详细信息，请参阅下面的维护窗口表。 <br> 通过在上面的节点（命名它）下添加具有相应属性的节 `granite_ProjectPurgeTask`点来启用维护任务。<br> 配置OSGI属性，请参 [阅AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-客户可以计划要在每日、每周或每月维护窗口期间执行的每个工作流清除、临时任务清除和项目清除维护任务。 应直接在源代码管理中编辑这些配置。 下表说明了每个窗口可用的配置参数。
+客户可以计划要在每日、每周或每月维护窗口期间执行的每个工作流清除、临时任务清除和项目清除维护任务。 应直接在源代码管理中编辑这些配置。 下表说明了每个窗口可用的配置参数。 另外，请参阅表之后提供的位置和代码示例。
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ ht-degree: 1%
     </tbody>
 </table>
 
-位置:
+**位置**:
 
-1. /apps/settings/granite/operations/maintenance/granite_daily
-2. /apps/settings/granite/operations/maintenance/granite_weekly
-3. /apps/settings/granite/operations/maintenance/granite_monthly
+* 每日 — /apps/settings/granite/operations/maintenance/granite_daily
+* 每周 — /apps/settings/granite/operations/maintenance/granite_weekly
+* 每月 — /apps/settings/granite/operations/maintenance/granite_monthly
 
-代码示例：
+**代码示例**:
 
-代码示例1
+代码示例1（每日）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ ht-degree: 1%
  />
 ```
 
-代码示例2
+代码示例2（每周）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ ht-degree: 1%
    windowStartTime="14:30"/>
 ```
 
-代码示例3
+代码示例3（每月）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
