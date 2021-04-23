@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-在此可选的[AEM无外设开发者历程的延续中，](#overview.md)您将学习AEM如何将无外设投放与传统的全栈CMS功能结合在一起，以及如何使用SPA  Editor框架创建可编辑的SPA，以及集成外部SPA，从而根据需要启用编辑功能。
+在此可选的[AEM无外设开发者历程的延续中，](overview.md)您将学习AEM如何将无外设投放与传统的全栈CMS功能结合在一起，以及如何使用SPA  Editor框架创建可编辑的SPA，以及集成外部SPA，从而根据需要启用编辑功能。
 
 ## 迄今为止的故事{#story-so-far}
 
