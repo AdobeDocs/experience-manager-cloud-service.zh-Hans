@@ -3,7 +3,7 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: df44a73b71c26cc9c6488fac14edba5d898eba2f
+source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 1%
@@ -54,9 +54,9 @@ ht-degree: 1%
     <td>客户</td>
     <td>JCR节点定义</td>
   <td>
-  <p><strong>windowSchedule= daily</strong> （此值不应更改）</p>
-  <p><strong>windowStartTime= HH:</strong> M使用为24小时。定义与每日维护窗口关联的维护任务何时开始执行。</p>
-  <p><strong>windowEndTime= HH:</strong> M使用为24小时。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
+  <p><strong>windowSchedule=daily</strong> （此值不应更改）</p>
+  <p><strong>windowStartTime=HH:</strong> M使用为24小时。定义与每日维护窗口关联的维护任务何时开始执行。</p>
+  <p><strong>windowEndTime=HH:M使</strong> 用为24小时。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
   </td> 
   </tr>
   <tr>
@@ -64,9 +64,9 @@ ht-degree: 1%
     <td>客户</td>
     <td>JCR节点定义</td>
     <td>
-    <p><strong>windowSchedule= weekly</strong> （不应更改此值）</p>
-    <p><strong>windowStartTime= HH:</strong> M使用为24小时。定义与每周维护窗口关联的维护任务何时开始执行。</p>
-    <p><strong>windowEndTime= HH:</strong> M使用为24小时。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
+    <p><strong>windowSchedule=weekly</strong> （此值不应更改）</p>
+    <p><strong>windowStartTime=HH:</strong> M使用为24小时。定义与每周维护窗口关联的维护任务何时开始执行。</p>
+    <p><strong>windowEndTime=HH:M使</strong> 用为24小时。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
     <p><strong>windowScheduleWeekdays=从1到7的2个值的数组(例如[5,5])</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。</p>
     </td>
   </tr>
@@ -75,10 +75,10 @@ ht-degree: 1%
     <td>客户</td>
     <td>JCR节点定义</td>
     <td>
-    <p><strong>windowSchedule= daily</strong> （此值不应更改）</p>
-    <p><strong>windowStartTime= HH:</strong> M使用为24小时。定义与每月维护窗口关联的维护任务何时开始执行。</p>
-    <p><strong>windowEndTime= HH:</strong> M使用为24小时。定义与每月维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
-    <p><strong>windowScheduleWeekdays =从1到7的2个值的数组(例如[5,5])</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。</p>
+    <p><strong>windowSchedule=daily</strong> （此值不应更改）</p>
+    <p><strong>windowStartTime=HH:</strong> M使用为24小时。定义与每月维护窗口关联的维护任务何时开始执行。</p>
+    <p><strong>windowEndTime=HH:M使</strong> 用为24小时。定义与每月维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
+    <p><strong>windowScheduleWeekdays=从1到7的2个值的数组(例如[5,5])</strong> 数组的第一个值是计划作业的开始日，第二个值是停止作业的结束日。开始和结束的确切时间分别受windowStartTime和windowEndTime控制。</p>
     <p><strong>windowFirstLastStartDay= 0/10</strong> 表示在月的第一周计划，或1表示在月的最后一周计划。如果缺少值，将有效地每天计划工作，每月按windowScheduleWeekdays进行管理。</p>
     </td> 
     </tr>
