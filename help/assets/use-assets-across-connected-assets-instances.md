@@ -2,20 +2,20 @@
 title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上的可用资源。
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
+feature: 资产管理，关联资产，资产分发，用户和组
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
 workflow-type: tm+mt
 source-wordcount: '2932'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
 # 在 中，使用连接的资产共享 DAM 资产 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。一个原因可以是在地理上分散了需要协同工作的现有部署。 另一个原因可能是收购导致了父公司希望共同使用的异质基础结构。
+在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。一个原因可以是地理上分散的现有部署，它们需要协同工作。 另一个原因可能是收购导致了父公司希望共同使用的异质基础结构。
 
 用户可以在[!DNL Experience Manager Sites]中创建网页。 [!DNL Experience Manager Assets] 是数字资产管理(DAM)系统，可为网站提供所需的资产。[!DNL Experience Manager] 现在，通过集成和支持上述用 [!DNL Sites] 例 [!DNL Assets]。
 
@@ -53,7 +53,7 @@ ht-degree: 27%
 |------|--------|-----------|-----|----------|
 | [!DNL Sites] 管理员 | 本地 | [!DNL Experience Manager] `administrators` | `admin` | 设置[!DNL Experience Manager]并配置与远程[!DNL Assets]部署的集成。 |
 | DAM 用户 | 本地 | `Authors` | `ksaner` | 用于查看和复制在 `/content/DAM/connectedassets/` 上获取的资产。 |
-| [!DNL Sites] 作者 | 本地 | <ul><li>`Authors` (在远程DAM上具有读访问权，在本地具有作者访问 [!DNL Sites]权) </li> <li>`dam-users` 在本地  [!DNL Sites]</li></ul> | `ksaner` | 最终用户是[!DNL Sites]作者，他们使用此集成来提高其内容速度。 作者使用[!UICONTROL 内容查找器]并在本地网页中使用所需的图像在远程DAM中搜索和浏览资产。 使用的 DAM 用户的 `ksaner` 凭据。 |
+| [!DNL Sites] 作者 | 本地 | <ul><li>`Authors` (在远程DAM上具有读访问权，在本地具有作者访问 [!DNL Sites]权) </li> <li>`dam-users` 在本地  [!DNL Sites]</li></ul> | `ksaner` | 最终用户是[!DNL Sites]作者，他们使用此集成来提高内容速度。 作者可以使用[!UICONTROL 内容查找器]在远程DAM中搜索和浏览资产，并在本地网页中使用所需的图像。 使用的 DAM 用户的 `ksaner` 凭据。 |
 | [!DNL Assets] 管理员 | 远程 | [!DNL Experience Manager] `administrators` | `admin` 远程  [!DNL Experience Manager] | 配置跨源资源共享 (CORS)。 |
 | DAM 用户 | 远程 | `Authors` | `ksaner` 远程  [!DNL Experience Manager] | 远程[!DNL Experience Manager]部署上的作者角色。 使用[!UICONTROL 内容查找器]在已连接资产中搜索和浏览资产。 |
 | DAM 分发人员（技术用户） | 远程 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 远程  [!DNL Experience Manager] | [!DNL Experience Manager]本地服务器（而非[!DNL Sites]作者角色）会代表[!DNL Sites]作者使用此远程部署用户获取远程资源。 此角色与上述两个 `ksaner` 角色不同，它属于另一个不同的用户组。 |
@@ -148,7 +148,7 @@ ht-degree: 27%
 
 1. 通过从[!DNL Experience Manager]工作区访问&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，导航到远程部署上的[!DNL Assets]接口。 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上传您选择的资产。
 1. 在[!DNL Sites]部署中，在右上角的用户档案激活器中，单击&#x200B;**[!UICONTROL 模拟为]**。 提供 `ksaner` 作为用户名，选择提供的选项，然后单击&#x200B;**[!UICONTROL 确定]**。
-1. 打开 We.Retail 网页：**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**。编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` 以编辑页面。
+1. 打开`We.Retail`网站页面，网址为&#x200B;**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**。 编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` 以编辑页面。
 
    单击页面左上角的&#x200B;**[!UICONTROL 切换侧面板]**。
 
@@ -182,7 +182,7 @@ ht-degree: 27%
 
 ### 检查跨网页{#asset-usage-references}使用资产的情况
 
-[!DNL Experience Manager] 允许DAM用户检查对资产的所有引用。它有助于了解和管理远程[!DNL Sites]和复合资产中资产的使用情况。 [!DNL Experience Manager Sites]部署中的许多网页作者都可以在不同网页中使用远程[!DNL Assets]上的资源。 要简化资产管理，而不是导致引用损坏，DAM用户必须检查本地和远程网页中资产的使用情况。 资产的[!UICONTROL 属性]页面中的[!UICONTROL 引用]选项卡列表了资产的本地和远程引用。
+[!DNL Experience Manager] 允许DAM用户检查对资产的所有引用。它有助于了解和管理远程[!DNL Sites]和复合资产中资产的使用情况。 [!DNL Experience Manager Sites]部署中的许多网页作者可以在不同网页中使用远程DAM上的资产。 要简化资产管理，而不是导致引用损坏，DAM用户必须检查本地和远程网页中资产的使用情况。 资产的[!UICONTROL 属性]页面中的[!UICONTROL 引用]选项卡列表了资产的本地和远程引用。
 
 要视图和管理[!DNL Assets]部署上的引用，请执行以下步骤：
 
@@ -191,7 +191,7 @@ ht-degree: 27%
 
    ![资产属性页中的远程引用](assets/connected-assets-remote-reference.png)
 
-1. [!DNL Sites]页的引用显示每个本地[!DNL Sites]的引用总数。 查找所有引用并显示引用的总数可能需要一些时间。
+1. [!DNL Sites]页面的引用显示每个本地[!DNL Sites]的引用总数。 查找所有引用并显示引用的总数可能需要一些时间。
 1. 引用的列表是交互式的，DAM用户可以单击引用以打开引用页面。 如果由于某种原因无法获取远程引用，则显示通知，通知用户失败。
 1. 用户可以移动或删除资产。 移动或删除资产时，所有选定资产/文件夹的引用总数会显示在警告对话框中。 删除尚未显示引用的资产时，将显示警告对话框。
 
@@ -227,7 +227,7 @@ ht-degree: 27%
 * 可以对获取的资产执行无损的简单编辑以及 `Image` 组件支持的编辑。资产是只读的。
 * 重新提取资产的唯一方法是将其拖动到页面上。 没有API支持或其他方法可重新获取资源以进行更新。
 * 如果资产从DAM中停止使用，则这些资产将继续在[!DNL Sites]页面上使用。
-* 资产的远程引用条目以异步方式获取。 引用和总计数不是实时的，如果在DAM用户查看引用时站点作者使用资产，则可能会有一些差异。 DAM用户可以刷新页面，并在几分钟后重试以获取总计数。
+* 资产的远程引用条目以异步方式获取。 引用和总计数不是实时的，如果[!DNL Sites]作者在DAM用户查看引用时使用资产，则可能会有一些差异。 DAM用户可以刷新页面，并在几分钟后重试以获取总计数。
 
 ## 故障诊断问题 {#troubleshoot}
 
