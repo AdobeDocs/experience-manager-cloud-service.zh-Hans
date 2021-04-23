@@ -3,10 +3,10 @@ title: AEM中的维护任务作为Cloud Service
 description: AEM中的维护任务作为Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 2%
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
@@ -47,16 +47,12 @@ ht-degree: 2%
     <th>维护窗口配置</th>
     <th>配置的所有者</th>
     <th>配置类型</th>
-    <th>位置</th>
-    <th>示例</th>
     <th>参数</th>
   </tr>
   <tr>
     <td>每日</td>
     <td>客户</td>
     <td>JCR节点定义</td>
-    <td>1</td>
-    <td>1</td>
   <td>
   <p><strong>windowSchedule= daily</strong> （此值不应更改）</p>
   <p><strong>windowStartTime= HH:</strong> M使用为24小时。定义与每日维护窗口关联的维护任务何时开始执行。</p>
@@ -67,8 +63,6 @@ ht-degree: 2%
     <td>每周</td>
     <td>客户</td>
     <td>JCR节点定义</td>
-    <td>请参阅下面的位置2</td>
-    <td>请参见下面的代码示例2</td>
     <td>
     <p><strong>windowSchedule= weekly</strong> （不应更改此值）</p>
     <p><strong>windowStartTime= HH:</strong> M使用为24小时。定义与每周维护窗口关联的维护任务何时开始执行。</p>
@@ -80,8 +74,6 @@ ht-degree: 2%
     <td>每月</td>
     <td>客户</td>
     <td>JCR节点定义</td>
-    <td>请参阅下面的位置3</td>
-    <td>请参见下面的代码示例3</td>
     <td>
     <p><strong>windowSchedule= daily</strong> （此值不应更改）</p>
     <p><strong>windowStartTime= HH:</strong> M使用为24小时。定义与每月维护窗口关联的维护任务何时开始执行。</p>
