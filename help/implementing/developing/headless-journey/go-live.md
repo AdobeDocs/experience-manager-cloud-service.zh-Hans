@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-在[AEM无头开发人员历程的这一部分中，](#overview.md)了解如何通过将您的本地代码以Git格式保存并移至Cloud Manager Git（用于CI/CD管道）来实时部署无头应用程序。
+在[AEM无头开发人员历程的这一部分中，](overview.md)了解如何通过将您的本地代码以Git格式保存并移至Cloud Manager Git（用于CI/CD管道）来实时部署无头应用程序。
 
 ## 迄今为止的故事{#story-so-far}
 
