@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '764'
 ht-degree: 2%
 
 ---
@@ -130,6 +130,7 @@ AEM GraphQL API允许您对内容片段执行（复杂）查询;每个查询都�
 
 ## 其他资源 {#additional-resources}
 
+* [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无头功能，包括数据建模和GraphQL
 * [GraphQL.org](https://graphql.org)
    * [架构](https://graphql.org/learn/schema/)
    * [GraphQL Java库](https://graphql.org/code/#java)
