@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-在[AEM无外设开发者历程](#overview.md)的这一部分中，您将了解在AEM中实施第一个无外设体验的步骤，包括规划注意事项，并学习最佳实践，以尽可能顺利地实现您的路径。
+在[AEM无外设开发者历程](overview.md)的这一部分中，您将了解在AEM中实施第一个无外设体验的步骤，包括规划注意事项，并学习最佳实践，以尽可能顺利地实现您的路径。
 
 ## 迄今为止的故事{#story-so-far}
 
