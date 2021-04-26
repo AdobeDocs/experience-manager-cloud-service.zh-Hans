@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-在[AEM无头开发者历程的这一部分中，](#overview.md)了解无头技术以及您使用它的原因。
+在[AEM无头开发者历程的这一部分中，](overview.md)了解无头技术以及您使用它的原因。
 
 ## 目标 {#objective}
 
