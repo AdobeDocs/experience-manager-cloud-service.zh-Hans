@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-在[AEM无头开发者历程](#overview.md)的这一部分中，您可以学习如何对内容结构建模。 然后，使用内容片段模型和内容片段实现Adobe Experience Manager(AEM)的结构，以便在渠道间重复使用。
+在[AEM无头开发者历程](overview.md)的这一部分中，您可以学习如何对内容结构建模。 然后，使用内容片段模型和内容片段实现Adobe Experience Manager(AEM)的结构，以便在渠道间重复使用。
 
 ## 迄今为止的故事{#story-so-far}
 
