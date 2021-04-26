@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-在[AEM无外设开发人员历程的这一部分中，](#overview.md)了解如何将您的AEM项目（包括内容片段）、您的GraphQL调用、您的REST API调用和您的应用程序)准备好并投入使用。
+在[AEM无外设开发人员历程的这一部分中，](overview.md)了解如何将您的AEM项目（包括内容片段）、您的GraphQL调用、您的REST API调用和您的应用程序)准备好并投入使用。
 
 ## 迄今为止的故事{#story-so-far}
 
