@@ -6,9 +6,9 @@ user-guide-description: 了解如何自定义 Experience Manager as a Cloud Serv
 feature: Developer Tools
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
+source-git-commit: f0357bb2b19d7d44066bf868c3ea3ce0dcf42461
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 33%
 
 ---
@@ -168,6 +168,7 @@ ht-degree: 33%
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo 工具](/help/implementing/developing/tools/repo-tool.md)
    + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [Linnk Externalizer](/help/implementing/developing/tools/externalizer.md)
 + 个性化 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [配置ContextHub](developing/personalization/configuring-contexthub.md)
