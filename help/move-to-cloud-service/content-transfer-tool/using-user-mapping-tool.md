@@ -1,18 +1,26 @@
 ---
 title: 使用用户映射工具
 description: 使用用户映射工具
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1185'
 ht-degree: 3%
 
 ---
 
-
 # 使用用户映射工具{#user-mapping-tool}
 
 ## 概述 {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="用户映射工具"
+>abstract="内容传输工具可帮助您将用户和用户组从现有AEM系统移到AEM作为Cloud Service。 需要将现有用户和用户组映射到其IMS ID，以避免重复用户和用户组在Cloud Service作者实例上。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用用户映射工具的重要注意事项"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="使用用户映射工具"
+
 
 在将用户和用户组从现有的AEM系统移至AEM作为Cloud Service的Adobe Experience Manager(AEM)的过渡旅程中，您需要将用户和用户组从现有的Cloud Service系统移至。 这是由内容传输工具完成的。
 
@@ -102,4 +110,3 @@ ht-degree: 3%
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. 要运行提取阶段，请参阅[运行内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)。
-
