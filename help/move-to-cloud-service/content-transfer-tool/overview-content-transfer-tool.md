@@ -1,16 +1,23 @@
 ---
 title: 内容传输工具概述
 description: 内容传输工具概述
+exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 94%
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
 
-
 # 概述 {#overview-content-transfer-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_overview"
+>title="概述"
+>abstract="内容传输工具是由Adobe开发的工具，可用于将现有内容从源AEM实例（内部部署或AMS）移至目标 AEMCloud Service实例。 此工具还会自动传输主体（用户或组）。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="提取流程"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="摄取过程"
 
 内容传输工具是 Adobe 开发的一个工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM 云服务实例。
 
@@ -49,6 +56,12 @@ ht-degree: 94%
 
 
 ## 准则和最佳实践 {#best-practices}
+
+>id=&quot;aemcloud_ctt_guidelines&quot;
+>title=&quot;准则和最佳实践&quot;
+>abstract=&quot;查看使用内容传输工具的准则和最佳做法，包括修订清理任务、磁盘空间注意事项等。&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;使用内容传输工具的重要注意事项&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;使用用户映射工具的重要注意事项&quot;
 
 请阅读以下章节，以了解有关使用内容传输工具的准则和最佳实践。
 
