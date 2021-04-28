@@ -3,16 +3,21 @@ title: AEM Content and Commerce
 description: AEM Content and Commerce自助资源和文档链接
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
+source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 82%
+source-wordcount: '377'
+ht-degree: 78%
 
 ---
 
 # AEM Content and Commerce {#commerce-guide}
 
 本页列表了与AEM内容和商务相关的自助资源。
+
+>[!NOTE]
+>
+>有关AEM Content and Commerce with AEM 6.5 and classic CIF的信息，请参阅[AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)。
+
 
 ## 关键内容和商务文章{#key-articles}
 
