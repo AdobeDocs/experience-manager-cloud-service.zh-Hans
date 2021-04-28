@@ -1,13 +1,13 @@
 ---
 title: 创建和同步Live Copy
 description: 了解如何创建和同步Live Copy，以在整个站点中重复使用您的内容。
-feature: Multi Site Manager
+feature: 多站点管理器
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,15 @@ Blueprint配置标识您要用作一个或多个Live Copy页面源的现有网�
 
 使用Blueprint配置时，您可以将其与转出配置关联，转出配置用于确定如何同步源/Blueprint的Live Copy。 请参阅[指定要使用的转出配置](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)。
 
-### 创建Blueprint配置{#creating-a-blueprint-configuration}
+### 创建和编辑Blueprint配置{#creating-editing-blueprint-configurations}
+
+Blueprint配置被视为不可变数据，因此在运行时不可编辑。 因此，任何配置更改都必须通过Git使用CI/CD管道部署。
+
+有关详细信息，请参阅文章[对Adobe Experience Manager(AEM)作为Cloud Service的显着更改。](/help/release-notes/aem-cloud-changes.md)
+
+以下步骤仅供本地开发实例上的管理员用于测试和开发目的。 这些选项在任何AEMaCS云实例中不可用。
+
+#### 在本地{#creating-a-blueprint-configuration}创建Blueprint配置
 
 要创建Blueprint配置，请执行以下操作：
 
@@ -61,7 +69,7 @@ Blueprint配置标识您要用作一个或多个Live Copy页面源的现有网�
 
 1. **Create将根据** 您的规范创建Blueprint配置。
 
-### 编辑或删除Blueprint配置{#editing-or-deleting-a-blueprint-configuration}
+### 在本地编辑或删除Blueprint配置{#editing-or-deleting-a-blueprint-configuration}
 
 您可以编辑或删除现有的Blueprint配置：
 
