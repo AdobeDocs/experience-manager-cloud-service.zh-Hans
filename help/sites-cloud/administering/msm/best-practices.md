@@ -1,16 +1,16 @@
 ---
 title: MSM最佳实践
 description: 了解由Adobe工程和咨询团队编译的最佳实践，帮助您快速入门和使用AEM多站点管理器。
-feature: Multi Site Manager
+feature: 多站点管理器
 role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
-
 
 # MSM最佳实践{#msm-best-practices}
 
@@ -37,6 +37,10 @@ MSM是一个可配置的框架，用于自动进行内容部署。 实施通常�
 如果未引用Blueprint配置，则只能从Live Copy本身启动推出，实质上是从源中提取内容。
 
 使用Live Copy创建新站点时，创建Blueprint配置是非常有利的，可以确保完整MSM功能集的可用性。
+
+>[!NOTE]
+>
+> 请注意，“权限”选项卡中的CUG无法从Blueprint中转出到Live Copy。 请在配置Live Copy时针对此进行规划。
 
 ## 组件和容器同步{#components-and-container-synchronization}
 
