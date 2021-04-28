@@ -1,13 +1,14 @@
 ---
-title: 使用AI生成的标记自动标记资源
-description: 使用人工智能服务标记资产，这些服务使用 [!DNL Adobe Sensei] 服务应用上下文和描述性业务标记。
+title: 使用 [!DNL Adobe Sensei] 智能服务自动标记资源
+description: 使用人为智能的服务为资产添加标签，该服务应用上下文和描述性商业标签。
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: 智能标记，标记
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2709'
 ht-degree: 6%
 
 ---
@@ -19,21 +20,19 @@ ht-degree: 6%
 
 与自然语言词汇相比，基于业务分类的标记有助于使资产与公司的业务相协调，并确保最相关的资产出现在搜索中。 例如，汽车制造商可以用型号名称标记汽车图像，以便在搜索时只显示相关图像以设计促销活动。
 
-在后台，该功能使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架来训练其关于标签结构和业务分类的图像识别算法。 然后，此内容智能可用于对不同的资产集应用相关标记。
+在后台，该功能使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架来训练其关于标签结构和业务分类的图像识别算法。 然后，此内容智能可用于对不同的资产集应用相关标记。 默认情况下，新的[!DNL Experience Manager Assets]部署与[!DNL Adobe Developer Console]集成。 它有助于更快地配置智能标签功能。 在旧版部署中，管理员可以手动[配置智能标签集成](/help/assets/smart-tags-configuration.md#aio-integration)。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-您可以标记以下类型的资产：
-
-* **图像**:使用Adobe Sensei的智能内容服务标记多种格式的图像。您[创建一个培训模型](#train-model)，然后[将智能标签](#tag-assets)应用到图像。
-* **视频资产**:默认情况下，视频标记 [!DNL Adobe Experience Manager] 为启用 [!DNL Cloud Service]。[在您上传新视频或](/help/assets/smart-tags-video-assets.md) 重新处理现有视频时，视频会自动标记。
-* **基于文本的资产**: [!DNL Experience Manager Assets] 上传时，会自动为支持的基于文本的资产添加标记。了解有关[标记基于文本的资产](#smart-tag-text-based-assets)的更多信息。
-
 ## 支持的资源类型{#smart-tags-supported-file-formats}
 
-“智能标签”将应用于支持的文件类型，这些文件类型以JPG和PNG格式生成再现。 以下类型的资产支持该功能：
+您可以标记以下类型的资产：
+
+* **图像**:使用Adobe Sensei的智能内容服务标记多种格式的图像。您[创建一个培训模型](#train-model)，然后[将智能标签](#tag-assets)应用到图像。 “智能标签”将应用于支持的文件类型，这些文件类型以JPG和PNG格式生成再现。
+* **基于文本的资产**: [!DNL Experience Manager Assets] 上传时，会自动为支持的基于文本的资产添加标记。了解有关[标记基于文本的资产](#smart-tag-text-based-assets)的更多信息。
+* **视频资产**:默认情况下，视频标记 [!DNL Adobe Experience Manager] 为启用 [!DNL Cloud Service]。[在您上传新视频或](/help/assets/smart-tags-video-assets.md) 重新处理现有视频时，视频会自动标记。
 
 | 图像（MIME类型） | 基于文本的资产（文件格式） | 视频资源（文件格式和编解码器） |
 |----|-----|------|
@@ -58,15 +57,10 @@ ht-degree: 6%
 
 [!DNL Experience Manager] 默认情况下，自动将智能标记添加到基于文本的资产和视频中。要自动向图像添加智能标签，请完成以下任务。
 
-* [ [!DNL Adobe Experience Manager] 使用 Adobe 开发人员控制台进行集成](#integrate-aem-with-aio).
 * [了解标签模型和准则](#understand-tag-models-guidelines)。
 * [训练模型](#train-model)。
 * [标记您的数字资产](#tag-assets)。
 * [管理标记和搜索](#manage-smart-tags-and-searches)。
-
->[!TIP]
->
->智能标记仅适用于[!DNL Adobe Experience Manager Assets]客户。 可以购买智能标记作为[!DNL Experience Manager]的附加组件。
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ ht-degree: 6%
 上传时，支持的基于文本的资产会由[!DNL Experience Manager Assets]自动标记。 默认情况下为启用状态。 智能标记的效果不取决于资产中的文本数量，而取决于资产文本中显示的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但是最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后对其进行索引并用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用的、结构化的和更高优先级的搜索彩块，与完整搜索索引相比，该彩块用于改进资产发现。
 
 相比之下，对于图像和视频，智能标签是基于某些视觉方面派生的。
-
-## 将[!DNL Experience Manager]与Adobe Developer Console {#integrate-aem-with-aio}集成
-
->[!IMPORTANT]
->
->默认情况下，新的[!DNL Experience Manager Assets]部署与[!DNL Adobe Developer Console]集成。 它有助于更快地配置智能标签功能。 在旧版部署中，管理员可以手动[配置智能标签集成](/help/assets/smart-tags-configuration.md#aio-integration)。
-
-您可以使用[!DNL Adobe Developer Console]将[!DNL Adobe Experience Manager]与智能标签集成。 使用此配置可从[!DNL Experience Manager]中访问智能标记服务。 请参阅[configure [!DNL Experience Manager] 以标记资产](smart-tags-configuration.md)，以了解配置智能标记的任务。 在后端，[!DNL Experience Manager]服务器在将请求转发到Smart Tags服务之前，使用Adobe Developer Console网关验证您的服务凭据。
 
 ## 了解标签模型和准则{#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ ht-degree: 6%
 
 要检查是否在资产培训集中的标记上对智能标记服务进行了培训，请从“报告”控制台中查看培训工作流报告。
 
-1. 在[!DNL Experience Manager]接口中，转至**[!UICONTROL 工具] > **[!UICONTROL 资产] > **[!UICONTROL 报表]**。
+1. 在[!DNL Experience Manager]接口中，转至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 报表]**。
 1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，单击&#x200B;**[!UICONTROL 创建]**。
 1. 选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;报告，然后单击工具栏中的&#x200B;**[!UICONTROL 下一步]**。
 1. 指定报表的标题和描述。在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。然后，单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
@@ -165,7 +151,7 @@ ht-degree: 6%
 
 ## 标记资源{#tag-assets}
 
-在培训了智能标记服务后，您可以触发标记工作流以自动对另一组类似资产应用适当的标记。 您可以定期或在需要时应用标记工作流。 标记工作流同时适用于资产和文件夹。
+在培训了智能标记服务后，您可以触发标记工作流以自动对另一组资产应用标记。 您可以按需应用标记工作流，或将其计划以定期执行。 标记工作流同时适用于资产和文件夹。
 
 ### 从工作流控制台{#tagging-assets-from-the-workflow-console}中标记资源
 
@@ -224,7 +210,7 @@ ht-degree: 6%
 
 1. 导航到资产的[!UICONTROL 属性]页面。 请注意，您提升的标记已分配高相关性，因此会在搜索结果中显示得更高。
 
-### 使用智能标签{#understandsearch}了解AEM搜索结果
+### 使用智能标签{#understand-search}了解AEM搜索结果
 
 默认情况下，AEM搜索将搜索词与`AND`子句组合。 使用智能标签不会更改此默认行为。 使用智能标记可添加`OR`子句，以查找所应用智能标记中的任何搜索词。 例如，考虑搜索`woman running`。 默认情况下，元数据中仅包含`woman`或`running`关键字的资产不会显示在搜索结果中。 但是，此类搜索查询中会显示使用智能标签标记为`woman`或`running`的资产。 搜索结果是，
 
