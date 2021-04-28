@@ -1,16 +1,16 @@
 ---
 title: 智能标记视频资源
 description: Experience Manager使用 [!DNL Adobe Sensei]自动向视频添加上下文和描述性智能标签。
-feature: Smart Tags,Tagging
+feature: 智能标记，标记
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
-
 
 # 智能标记视频资源{#video-smart-tags}
 
@@ -64,7 +64,7 @@ DAM中已有的视频资产不会自动智能标记。 您需要手动[!UICONTRO
 
 搜索结果会根据您指定的标记显示视频资产。
 
-您的搜索结果是元数据中带有搜索关键字的视频资产以及使用搜索关键字智能标记的视频资产的组合。 但是，首先显示与元数据字段中所有搜索词匹配的搜索结果，然后显示与智能标记中任何搜索词匹配的搜索结果。 有关详细信息，请参阅[了解 [!DNL Experience Manager] 使用智能标签的搜索结果](smart-tags.md#understandsearch)。
+您的搜索结果是元数据中带有搜索关键字的视频资产以及使用搜索关键字智能标记的视频资产的组合。 但是，首先显示与元数据字段中所有搜索词匹配的搜索结果，然后显示与智能标记中任何搜索词匹配的搜索结果。 有关详细信息，请参阅[了解 [!DNL Experience Manager] 使用智能标签的搜索结果](smart-tags.md#understand-search)。
 
 ## 审核视频智能标签{#moderate-video-smart-tags}
 
@@ -92,7 +92,7 @@ DAM中已有的视频资产不会自动智能标记。 您需要手动[!UICONTRO
 
 1. 打开文件夹[!UICONTROL 属性]中的[!UICONTROL 资产处理]选项卡。
 
-1. 在[!UICONTROL 视频]的智能标签菜单中，默认情况下选择[!UICONTROL 继承]选项，并启用视频智能标签。
+1. 在“视频]智能标签”菜单中，默认情况下会选择“继承]”选项，并启用视频智能标签。[!UICONTROL [!UICONTROL 
 
    选择[!UICONTROL 已继承]选项后，还可以看到继承的文件夹路径以及将其设置为[!UICONTROL 启用]或[!UICONTROL 禁用]的信息。
 
