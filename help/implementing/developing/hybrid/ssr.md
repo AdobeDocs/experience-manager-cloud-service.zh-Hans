@@ -1,14 +1,14 @@
 ---
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加速页面的初始加载，然后将进一步渲染传递给客户端。
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 translation-type: tm+mt
-source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
+source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
-
 
 # SPA和服务器端渲染{#spa-and-server-side-rendering}
 
@@ -45,7 +45,9 @@ SSR通常在以下任一问题有明确的“是”时提供一些值：
 
 >[!NOTE]
 >
->Adobe建议为每个AEM环境（创作、发布、舞台等）使用一个单独的Adobe I/O Runtime实例。
+>Adobe建议每个环境（舞台、生产、测试等）使用单独的Adobe I/O Runtime工作区。 这允许使用部署到不同环境的不同版本的单个应用程序的典型系统开发生命周期(SDLC)模式。 有关详细信息，请参阅Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md)的文档[CI/CD。
+>
+>每个实例（创作、发布）不需要单独的工作区，除非每个实例类型的运行时实现存在差异。
 
 ## 远程渲染器配置{#remote-content-renderer-configuration}
 
