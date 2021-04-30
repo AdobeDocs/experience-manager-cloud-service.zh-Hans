@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 ## 目标 {#objective}
 
+* 了解什么是AEM的本地开发工作流程
 * 安装AEM SDK以获取可用于在
-* 了解所需的开发工具
-* 在上线前在本地测试您的代码和内容
+* 了解在本地开发运行时旁边使用所需的开发工具
 
 ## 本地开发工作流{#the-local-development-workflow}
 
