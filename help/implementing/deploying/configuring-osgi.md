@@ -1,15 +1,15 @@
 ---
 title: 将Adobe Experience Manager的OSGi配置为Cloud Service
 description: '具有机密值和特定于环境的值的OSGi配置 '
-feature: Deploying
+feature: 部署
+exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 translation-type: tm+mt
-source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
+source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
-
 
 # 将Adobe Experience Manager的OSGi配置为Cloud Service{#configuring-osgi-for-aem-as-a-cloud-service}
 
@@ -219,6 +219,10 @@ use $[secret:SECRET_VAR_NAME]
 
 变量的值不能超过2048个字符。
 
+>[!NOTE]
+>
+>前缀为`INTERNAL_`的变量名由Adobe保留。 将忽略与此前缀开始的任何客户集变量。
+
 ### 默认值 {#default-values}
 
 以下内容适用于环境特定配置值和机密配置值。
@@ -252,7 +256,10 @@ export ENV_VAR_NAME=my_value
 如果OSGI属性要求创作值和发布值不同：
 
 * 必须使用单独的`config.author`和`config.publish` OSGi文件夹，如[运行模式分辨率部分](#runmode-resolution)中所述。
-* 应使用独立变量名称。 建议使用变量名称相同的前缀，如`author_<variablename>`和`publish_<variablename>`
+* 创建应使用的独立变量名称有两个选项：
+   * 第一个选项，建议：在声明为定义不同值的所有OSGI文件夹（如`config.author`和`config.publish`）中，使用相同的变量名。 例如
+      `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值与该层（作者或发布）的默认值相对应。当通过[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或通过客户端设置环境变量时，请使用[API参考文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)中所述的“service”参数来区分各层。 “service”参数将变量的值绑定到相应的OSGI层。
+   * 第二个选项，即使用前缀（如`author_<samevariablename>`和`publish_<samevariablename>`）声明不同的变量
 
 ### 配置示例{#configuration-examples}
 
