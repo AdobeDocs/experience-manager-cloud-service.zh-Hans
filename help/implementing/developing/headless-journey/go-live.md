@@ -4,14 +4,14 @@ description: 在AEM无外设开发人员历程的这一部分中，了解如何�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # 如何与无外设应用程序共存{#go-live}
 
@@ -63,6 +63,8 @@ AEM无外设应用程序的最常见部署模式是让应用程序的生产版�
 3. 配置缓存和可伸缩性
 
 ## 部署到生产{#deploy-to-production}
+
+在本地测试所有代码和内容后，现在即可开始使用AEM进行生产部署。
 
 ### 模型结构与GraphQL输出{#structure-vs-output}
 
