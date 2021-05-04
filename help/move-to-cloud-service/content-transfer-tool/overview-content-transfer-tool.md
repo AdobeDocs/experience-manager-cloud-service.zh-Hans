@@ -3,10 +3,10 @@ title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 79%
+source-wordcount: '803'
+ht-degree: 81%
 
 ---
 
@@ -57,11 +57,12 @@ ht-degree: 79%
 
 ## 准则和最佳实践 {#best-practices}
 
->id=&quot;aemcloud_ctt_guidelines&quot;
->title=&quot;准则和最佳实践&quot;
->abstract=&quot;查看使用内容传输工具的准则和最佳做法，包括修订清理任务、磁盘空间注意事项等。&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;使用内容传输工具的重要注意事项&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;使用用户映射工具的重要注意事项&quot;
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_guidelines"
+>title="准则和最佳实践"
+>abstract="查看使用内容传输工具的准则和最佳实践，包括修订清理任务、磁盘空间注意事项等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用内容传输工具的重要注意事项"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用用户映射工具的重要注意事项"
 
 请阅读以下章节，以了解有关使用内容传输工具的准则和最佳实践。
 
