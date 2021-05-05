@@ -4,14 +4,14 @@ description: 在AEM无头开发人员历程的这一部分中，了解如何使�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '327'
 ht-degree: 1%
 
 ---
-
 
 # 如何通过AEM Assets API {#update-your-content}更新您的内容
 
@@ -23,12 +23,13 @@ ht-degree: 1%
 
 ## 迄今为止的故事{#story-so-far}
 
-在AEM无头旅程的上一个文档中，[如何通过AEM 投放 API访问您的内容](access-your-content.md)您学习了如何通过API访问AEM中的无头内容，您现在应：
+在AEM无头旅程的上一个文档中，[如何通过AEM 投放 API访问您的内容](access-your-content.md)您学会了如何通过AEM GraphQL API在AEM中访问您的无头内容，您现在应：
 
-* 了解什么是GraphQL以及AEM GraphQL API的工作原理。
+* 深入了解GraphQL。
+* 了解AEM GraphQL API的工作原理。
 * 了解一些实用的示例查询。
 
-本文以这些基础为基础，因此您了解如何通过API更新AEM中的现有无外设内容。
+本文以这些基础知识为基础，因此您了解如何通过REST API更新AEM中的现有无外设内容。
 
 ## 目标 {#objective}
 
@@ -44,7 +45,7 @@ ht-degree: 1%
 现在您已完成了AEM Headless Developer历程的这一部分，您应：
 
 * 了解AEM Assets HTTP API。
-* 了解API中如何支持内容片段。
+* 了解此API中如何支持内容片段。
 * 具有示例代码经验并了解API在实践中的工作方式。
 
 您应该继续您的AEM无头旅程，接下来查看文档[如何将一切结合在一起 — 您的应用程序和您的内容(位于AEM无头](put-it-all-together.md)中)，了解如何带入AEM无头项目并准备投入使用。
