@@ -3,7 +3,7 @@ title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9743b5a80a8554e375561093e8554455b3a6b8f5
+source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 3%
@@ -80,7 +80,7 @@ AEM Forms多年来一直帮助许多组织提供出色的入职和注册体验�
 * 已发布CIF核心组件v1.9.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)。
 
 
-## Cloud Manager {#c-manager}
+## Cloud Manager {#cloud-manager}
 
 本节概述AEM中作为Cloud Service 2021.4.0和2021.3.0的Cloud Manager发行说明。
 
