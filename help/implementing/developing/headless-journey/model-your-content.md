@@ -4,14 +4,14 @@ description: 在AEM无头开发人员历程的这一部分中，了解如何使�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
 
 ---
-
 
 # 如何对内容{#model-your-content}进行建模
 
@@ -241,10 +241,10 @@ tbc...
 
 ## 其他资源 {#additional-resources}
 
-* [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无头功能，包括数据建模和GraphQL
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)  — 内容片段的导入页面
    * [配置浏览器中的内容片段](/help/assets/content-fragments/content-fragments-configuration-browser.md)  — 在配置浏览器中启用内容片段功能
    * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 创建和编辑内容片段模型
    * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 创建和创作内容片段；本页将引导您进入其他详细章节
 * [AEM GraphQL模式](/help/implementing/developing/headless-journey/access-your-content.md) - GraphQL如何实现模型
 * [示例内容片段结构](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无头功能，包括数据建模和GraphQL
