@@ -1,16 +1,16 @@
 ---
 title: 内容片段 — 配置浏览器
 description: 了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM强大的无头投放功能。
-feature: Content Fragments
+feature: 内容片段
 role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 20%
+source-wordcount: '287'
+ht-degree: 18%
 
 ---
-
 
 # 内容片段 — 配置浏览器{#content-fragments-configuration-browser}
 
@@ -25,7 +25,11 @@ ht-degree: 20%
 
 >[!CAUTION]
 >
->如果未启用&#x200B;**内容片段模型**，则&#x200B;**创建**&#x200B;选项将不可用于创建新模型。
+>如果未启用&#x200B;**内容片段模型**:
+>
+>* **创建**&#x200B;选项将不可用于创建新模型。
+>* 您将无法[选择租户以创建相关的端点](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)。
+
 
 要启用内容片段功能，您需要：
 
