@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 作为2021.2.0的Cloud Service发行说明。'
+exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 translation-type: tm+mt
-source-git-commit: 2920ab75fca1eaa3b8e3b1f75e9126632a026b6b
+source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 4%
 
 ---
-
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 版的发行说明 {#release-notes}
@@ -166,4 +166,3 @@ Best Practices Analyzer v2.1.2的发布日期为2021年2月18日。
 
 * 在Repository Modernizer上完成了多个错误修复。
 请参阅[GitHub资源：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)以了解更多详细信息。
-
