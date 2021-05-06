@@ -3,9 +3,9 @@ title: RemotePage组件
 description: RemotePage组件是一个自定义页面组件，用于在AEM中编辑远程React SPA。
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 translation-type: tm+mt
-source-git-commit: a46a2b3951d2fcc8468b29b4fa2c1faada643243
+source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必�
 
 ## 限制 {#limitations}
 
+* RemotePage组件的当前实现仅支持远程React应用程序。
 * 在AEM中进行远程渲染时，应用程序的根HTML文件中定义的内部CSS以及根DOM节点上的内联CSS将不可用。
 
 ## 技术详细信息{#technical-details}
