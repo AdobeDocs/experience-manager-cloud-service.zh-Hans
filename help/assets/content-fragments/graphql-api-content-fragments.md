@@ -1,15 +1,16 @@
 ---
 title: AEM GraphQL API，与内容片段一起使用
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作AEM GraphQL API的Cloud Service，实现无外设内容投放。
-feature: Content Fragments,GraphQL API
+feature: 内容片段，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3901'
 ht-degree: 1%
 
 ---
+
 
 # AEM GraphQL API，用于内容片段{#graphql-api-for-use-with-content-fragments}
 
@@ -43,7 +44,7 @@ GraphQL是：
 
    请参阅[浏览GraphQL](https://www.graphql.com)。
 
-* *&quot;。..一种数据查询语言和规范，由Facebook于2012年在内部开发，后于2015年公开开放采购。它为基于REST的体系结构提供了一种替代方法，目的是提高开发者的工作效率并最大限度地减少数据传输量。 GraphQL由数百个不同规模的组织用于生产……&quot;*
+* *&quot;。..一种数据查询语言和规范，由Facebook于2012年在内部开发，后于2015年公开开发。它为基于REST的体系结构提供了一种替代方法，目的是提高开发者的工作效率并最大限度地减少数据传输量。 GraphQL由数百个不同规模的组织用于生产……&quot;*
 
    请参阅[GraphQL Foundation](https://foundation.graphql.org/)。
 
@@ -51,7 +52,7 @@ GraphQL是：
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-有关GraphQL API的更多信息，请参阅以下部分（以及其他许多资源）：
+有关GraphQL API的更多信息，请参阅以下部分（包括许多其他资源）：
 
 * 在[graphql.org](https://graphql.org):
 
@@ -101,11 +102,12 @@ GraphQL使用以下功能：
 
 * **[条目列表](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-<!--
-You can also perform:
+您还可以执行：
 
-* [Persisted Queries, that are cached](#persisted-queries-caching)
--->
+* [已缓存的持久查询](#persisted-queries-caching)
+
+>[!NOTE]
+>可以使用[GraphiQL IDE](#graphiql-interface)测试和调试GraphQL查询。
 
 ## AEM Endpoint {#graphql-aem-endpoint}的GraphQL
 
@@ -115,77 +117,83 @@ endpoint是用于访问AEM的GraphQL的路径。 使用此路径，您（或您�
 * 发送您的GraphQL查询,
 * 接收响应(对您的GraphQL查询)。
 
-GraphQL for AEM端点的存储库路径为：
+AEM中有两种类型的端点：
+
+* 全局
+   * 可供所有站点使用。
+   * 此端点可以使用所有租户的所有内容片段模型。
+   * 如果租户之间应共享任何内容片段模型，则应在全局租户下创建这些模型。
+* 租户:
+   * 对应于租户配置，如[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中所定义。
+   * 特定于指定的站点/项目。
+   * 特定租户端点将使用该特定租户的内容片段模型与来自全局租户的内容片段模型一起使用。
+
+>[!CAUTION]
+>
+>内容片段编辑器允许一个租户的内容片段引用另一个租户的内容片段（通过策略）。
+>
+>在这种情况下，并非所有内容都可以使用租户特定的端点进行检索。
+>
+>内容作者应控制此方案；例如，考虑将共享内容片段模型放在全局租户下可能很有用。
+
+GraphQL for AEM全局端点的存储库路径为：
 
 `/content/cq:graphql/global/endpoint`
 
-您的应用程序可以在请求URL中使用以下路径：
+您的应用程序可在请求URL中使用以下路径：
 
 `/content/_cq_graphql/global/endpoint.json`
 
 要为AEM的GraphQL启用端点，您需要：
 
->[!CAUTION]
->
->这些步骤在不久的将来可能会发生变化。
-
 * [启用GraphQL端点](#enabling-graphql-endpoint)
-* [执行其他配置](#additional-configurations-graphql-endpoint)
+* [发布您的GraphQL端点](#publishing-graphql-endpoint)
 
 ### 启用GraphQL端点{#enabling-graphql-endpoint}
 
->[!NOTE]
->
->请参阅[支持包](#supporting-packages)，了解Adobe提供的包的详细信息以帮助简化这些步骤。
-
-要在AEM中启用GraphQL查询，请在`/content/cq:graphql/global/endpoint`处创建一个端点：
-
-* 节点`cq:graphql`和`global`的类型必须为`sling:Folder`。
-* 节点`endpoint`必须为`nt:unstructured`类型，并包含`graphql/sites/components/endpoint`的`sling:resourceType`。
+要启用GraphQL端点，您首先需要具有相应的配置。 请参阅[内容片段 — 配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
 
 >[!CAUTION]
 >
->每个人都可以访问该端点。 这可能会引起安全问题，因为GraphQL查询可能会对服务器施加大负载。
+>如果未启用[对内容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
+
+要启用相应的端点，请执行以下操作：
+
+1. 导航到&#x200B;**工具**、**站点**，然后选择&#x200B;**图形QL**。
+1. 选择&#x200B;**创建**。
+1. 将打开&#x200B;**新建GraphQL Endpoint**&#x200B;对话框。 您可以在此处指定：
+   * **名称**:端点的名称；您可以输入任何文本。
+   * **使用GraphQL模式**:使用下拉列表选择所需的站点/项目。
+
+   >[!NOTE]
+   >
+   >对话框中显示以下警告：
+   >
+   >* *如果不对 GraphQL 端点仔细管理，则可能会带来数据安全和性能问题。请确保在创建端点后设置适当的权限。*
+
+
+1. 使用&#x200B;**创建**&#x200B;进行确认。
+1. **后续步骤**&#x200B;对话框将提供指向安全控制台的直接链接，以便您能够确保新创建的端点具有适当的权限。
+
+   >[!CAUTION]
+   >
+   >每个人都可以访问该端点。 这可能会引起安全问题，因为GraphQL查询可能会对服务器施加大负载。
+   >
+   >您可以在端点上设置与用例相适应的ACL。
+
+### 发布GraphQL端点{#publishing-graphql-endpoint}
+
+选择新端点并选择&#x200B;**发布**，使其在所有环境中都完全可用。
+
+>[!CAUTION]
 >
->您可以在端点上设置与用例相适应的ACL。
-
->[!NOTE]
+>每个人都可以访问该端点。
 >
->您的端点不会开箱即用。 您必须单独提供GraphQL Endpoint](#additional-configurations-graphql-endpoint)的[其他配置。
-
->[!NOTE]
->此外，您还可以使用[GraphiQL IDE](#graphiql-interface)测试和调试GraphQL查询。
-
-### GraphQL端点{#additional-configurations-graphql-endpoint}的其他配置
-
->[!NOTE]
+>在发布实例中，这可能会引起安全问题，因为GraphQL查询可能会对服务器施加大负载。
 >
->请参阅[支持包](#supporting-packages)，了解Adobe提供的包的详细信息以帮助简化这些步骤。
-
-需要其他配置：
-
-* Dispatcher:
-   * 允许所需的URL
-   * 强制
-* 虚 URL:
-   * 为端点分配简化的URL
-   * 可选
-
-### 支持包{#supporting-packages}
-
-为简化GraphQL端点的设置，Adobe提供[GraphQL示例项目(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip)包。
-
-此归档文件包含[所需的附加配置](#additional-configurations-graphql-endpoint)和[GraphQL终结点](#enabling-graphql-endpoint)。 如果安装在普通AEM实例上，它将在`/content/cq:graphql/global/endpoint`处公开一个完全工作的GraphQL端点。
-
-此包旨在成为您自己的GraphQL项目的蓝图。 有关如何使用该包的详细信息，请参阅包&#x200B;**README**。
-
-如果您希望手动创建所需的配置，Adobe还提供专用的[GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)。 此内容包仅包含GraphQL端点，无任何配置。
+>必须在端点上设置与用例相适应的ACL。
 
 ## GraphiQL接口{#graphiql-interface}
-
-<!--
-AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
--->
 
 标准[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)接口的实现可与AEM GraphQL一起使用。 可以与AEM](#installing-graphiql-interface)一起安装[。
 
@@ -202,10 +210,6 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 ### 安装AEM GraphiQL接口{#installing-graphiql-interface}
 
 GraphiQL用户界面可安装在AEM上并包含专用包：[GraphiQL内容包v0.0.6(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)包。
-
-<!--
-See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
--->
 
 ## 创作和发布环境的用例{#use-cases-author-publish-environments}
 
@@ -255,14 +259,6 @@ GraphQL规范提供了有关如何创建用于查询特定实例上的数据的�
 1. 在用户基于文章模型创建内容片段后，可以通过GraphQL进行询问。 有关示例，请参阅[示例查询](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)（基于[示例内容片段结构，以与GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)一起使用）。
 
 在GraphQL for AEM中，模式是灵活的。 这意味着每次创建、更新或删除内容片段模型时，都会自动生成该片段。 在更新内容片段模型时，数据模式缓存也会刷新。
-
-<!--
->[!NOTE]
->
->AEM does not use the concept of namespacing for Content Fragment Models. 
->
->If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
--->
 
 站点图形QL服务监听（在后台）对内容片段模型所做的任何修改。 检测到更新时，只会重新生成模式的该部分。 这种优化节省了时间并提供了稳定性。
 
@@ -318,7 +314,7 @@ GraphQL for AEM支持列表类型。 所有支持的内容片段模型数据类�
 | 多行文本 | 字符串 |  用于输出文本，如文章的正文 |
 | 数字 |  浮点，[浮点] | 用于显示浮点数和正则数 |
 | 布尔型 |  布尔型 |  用于显示复选→框的简单true/false语句 |
-| 日期和时间 | 日历 |  用于以ISO 8086格式显示日期和时间 |
+| 日期和时间 | 日历 |  用于以ISO 8086格式显示日期和时间。 根据所选的类型，AEM GraphQL中有三种可用方式：`onlyDate`、`onlyTime`、`dateTime` |
 | 枚举 |  String |  用于从创建模型时定义的列表选项中显示选项 |
 |  标记 |  [String] |  用于显示表示AEM中使用的标记的字符串列表 |
 | 内容引用 |  字符串 |  用于在AEM中显示指向另一个资产的路径 |
@@ -437,7 +433,7 @@ GraphQL for AEM支持列表类型。 所有支持的内容片段模型数据类�
 
 ## GraphQL变量{#graphql-variables}
 
-GraphQL允许将变量放置在查询中。 有关详细信息，请参阅GraphiQL](https://graphql.org/learn/queries/#variables)的[GraphQL文档。
+GraphQL允许将变量放置在查询中。 有关详细信息，请参阅[变量](https://graphql.org/learn/queries/#variables)的GraphQL文档。
 
 例如，要获取具有特定变量的`Article`类型的所有内容片段，可以在GraphiQL中指定变量`variation`。
 
@@ -580,27 +576,50 @@ query {
 
 
 
-
 * 支持GraphQL合并类型：
 
    * 使用`... on`
       * 请参阅[具有内容引用的特定模型的内容片段的示例查询](#sample-wknd-fragment-specific-model-content-reference)
 
-<!--
-## Persisted Queries (Caching) {#persisted-queries-caching}
+## 持久查询（缓存）{#persisted-queries-caching}
 
-After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
+在准备具有查询请求的GET后，可以使用HTTP缓存或CDN缓存的POST请求执行该请求。
 
-This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
+这是必需的，因为POST查询通常不进行缓存，如果将查询作为参数使用，则参数对于HTTP服务和中间产品而言变得过大的风险很大。
 
-Here are the steps required to persist a given query:
+持久查询必须始终使用与[相应（租户）配置](#graphql-aem-endpoint)相关的端点；这样，他们就可以使用其中一种或两种方式：
+
+* 全局配置和端点
+查询可以访问所有内容片段模型。
+* 特定租户配置和端点
+为特定租户配置创建持久查询需要相应的租户特定端点（以提供对相关内容片段模型的访问）。
+例如，要为WKND租户专门创建持久查询，必须提前创建相应的WKND特定租户配置和WKND特定终结点。
 
 >[!NOTE]
->Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>有关详细信息，请参阅[在配置浏览器中启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)。
+>
+>需要为相应的租户配置启用&#x200B;**GraphQL持久查询**。
 
-1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
+例如，如果存在名为`my-query`的特定查询，它使用租户配置`my-conf`中的模型`my-model`:
 
-   For example, create a persisted query:
+* 您可以使用`my-conf`特定端点创建查询，然后查询将保存为：
+   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* 您可以使用`global`端点创建相同的查询，但随后查询将保存为：
+   `/conf/global/settings/graphql/persistentQueries/my-query`
+
+>[!NOTE]
+>
+>这是两种不同的查询 — 保存在不同的路径下。
+>
+>他们恰巧使用了相同的模型 — 但是通过不同的端点。
+
+
+以下是保持给定查询所需的步骤：
+
+1. 将查询放置到新的端点URL `/graphql/persist.json/<config>/<persisted-label>`来准备。
+
+   例如，创建持久查询:
 
    ```xml
    $ curl -X PUT \
@@ -621,32 +640,32 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. At this point, check the response.
+1. 此时，请检查响应。
 
-   For example, check for success:
+   例如，检查成功与否：
 
-     ```xml
-     {
-       "action": "create",
-       "configurationName": "wknd",
-       "name": "plain-article-query",
-       "shortPath": "/wknd/plain-article-query",
-       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-     }
-     ```
+   ```xml
+   {
+     "action": "create",
+     "configurationName": "wknd",
+     "name": "plain-article-query",
+     "shortPath": "/wknd/plain-article-query",
+     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+   }
+   ```
 
-1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
+1. 然后，可以通过获取URL `/graphql/execute.json/<shortPath>`来重播保留的查询。
 
-   For example, use the persisted query:
+   例如，使用持久查询:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. Update a persisted query by POSTing to an already existing query path.
+1. 通过将POST更新到现有查询路径来更新持续查询。
 
-   For example, use the persisted query:
+   例如，使用持久查询:
 
    ```xml
    $ curl -X POST \
@@ -670,9 +689,9 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. Create a wrapped plain query.
+1. 创建包装的纯查询。
 
-   For example:
+   例如：
 
    ```xml
    $ curl -X PUT \
@@ -683,9 +702,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. Create a wrapped plain query with cache control.
+1. 使用缓存控件创建包装式纯查询。
 
-   For example:
+   例如：
 
    ```xml
    $ curl -X PUT \
@@ -696,9 +715,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. Create a persisted query with parameters:
+1. 使用参数创建持续查询:
 
-   For example:
+   例如：
 
    ```xml
    $ curl -X PUT \
@@ -722,62 +741,62 @@ Here are the steps required to persist a given query:
      }'
    ```
 
-1. Executing a query with parameters.
+1. 使用参数执行查询。
 
-   For example:
+   例如：
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-
+   
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. To execute the query on publish, the related persist tree need to replicated
+1. 要在发布时执行查询，需要复制相关的持久树
 
-   * Using a POST for replication:
+   * 使用POST进行复制：
 
-     ```xml
-     $curl -X POST   http://localhost:4502/bin/replicate.json \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-       -F cmd=activate
-     ```
+      ```xml
+      $curl -X POST   http://localhost:4502/bin/replicate.json \
+        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+        -F cmd=activate
+      ```
 
-   * Using a package:
-     1. Create a new package definition.
-     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-     1. Build the package.
-     1. Replicate the package.
+   * 使用包：
+      1. 创建新包定义。
+      1. 包括配置（例如`/conf/wknd/settings/graphql/persistentQueries`）。
+      1. 构建包。
+      1. 复制包。
+   * 使用复制/分发工具。
+      1. 转到“分发”工具。
+      1. 为配置选择树激活（例如`/conf/wknd/settings/graphql/persistentQueries`）。
+   * 使用工作流（通过工作流启动器配置）：
+      1. 定义一个工作流启动器规则，用于执行将在不同事件（例如，创建、修改等）上复制配置的工作流模型。
 
-   * Using replication/distribution tool.
-     1. Go to the Distribution tool.
-     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-   * Using a workflow (via workflow launcher configuration):
-     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
-
-   >[!NOTE]
-   >
-   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
-   >
-   >If that is not the case it will not be able to execute.
+1. 查询配置在发布后，同样的原则也适用，只需使用发布端点即可。
 
    >[!NOTE]
    >
-   >Any semicolons (";") in the URLs need to be encoded.
+   >对于匿名访问，系统假定ACL允许“所有人”访问查询配置。
    >
-   >For example, as in the request to Execute a persisted query:
+   >如果情况并非如此，它将无法执行。
+
+   >[!NOTE]
    >
-   >```xml
+   >需要对URL中的任何分号(&quot;;&quot;)进行编码。
+   >
+   >例如，与执行持久查询的请求一样：
+   >
+   >
+   ```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
--->
 
 ## 从外部网站{#query-graphql-endpoint-from-external-website}查询GraphQL端点
 
@@ -796,13 +815,8 @@ Here are the steps required to persist a given query:
 
 此配置必须指定必须授予访问权限的受信任的网站来源`alloworigin`或`alloworiginregexp`。
 
-<!--
-For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
--->
+例如，要授予对`https://my.domain`的GraphQL端点和持久查询端点的访问权，可以使用：
 
-例如，要授予对`https://my.domain`的GraphQL端点的访问权限，可以使用：
-
-<!--
 ```xml
 {
   "supportscredentials":true,
@@ -832,39 +846,6 @@ For example, to grant access to the GraphQL endpoint and persisted queries endpo
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
-  ]
-}
-```
--->
-
-```xml
-{
-  "supportscredentials":true,
-  "supportedmethods":[
-    "GET",
-    "HEAD",
-    "POST"
-  ],
-  "exposedheaders":[
-    ""
-  ],
-  "alloworigin":[
-    "https://my.domain"
-  ],
-  "maxage:Integer":1800,
-  "alloworiginregexp":[
-    ""
-  ],
-  "supportedheaders":[
-    "Origin",
-    "Accept",
-    "X-Requested-With",
-    "Content-Type",
-    "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
-  ],
-  "allowedpaths":[
-    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
