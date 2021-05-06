@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2120'
 ht-degree: 1%
 
 ---
@@ -146,24 +146,6 @@ AEM GraphQL API的用例取决于AEM作为Cloud Service环境的类型：
 ### JSON预览{#json-preview}
 
 要帮助设计和开发内容片段模型，您可以在内容片段编辑器中预览JSON输出。
-
-### 创建内容片段模型和内容片段{#creating-content-fragment-models-and-content-fragments}
-
-首先，为您的站点启用内容片段模型，这是在配置浏览器中完成的：
-
-![定义配置](assets/cfm-configuration.png)
-
-然后，可以对内容片段模型进行建模：
-
-![内容片段模型](assets/cfm-model.png)
-
-选择适当的模型后，将打开一个内容片段以在内容片段编辑器中进行编辑：
-
-![内容片段编辑器](assets/cfm-editor.png)
-
->[!NOTE]
->
->请参阅使用内容片段。
 
 ## 从内容片段{#graphql-schema-generation-content-fragments}生成GraphQL模式
 
