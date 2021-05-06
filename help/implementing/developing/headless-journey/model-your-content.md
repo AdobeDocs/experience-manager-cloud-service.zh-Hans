@@ -1,14 +1,14 @@
 ---
 title: 如何对内容进行建模
-description: 在AEM无头开发人员历程的这一部分中，了解如何使用内容片段模型和内容片段数据建模来为AEM无头投放建立内容模型。
+description: 在AEM无头开发人员历程的这一部分中，了解如何使用内容片段模型和内容片段进行内容建模，为AEM无头投放建立内容模型。
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 1%
 
 ---
@@ -38,10 +38,10 @@ ht-degree: 1%
 
 * **受众**:初学者
 * **目标**:了解如何对内容结构建模，然后使用AEM内容片段模型和内容片段实现该结构：
-   * 介绍与[数据建模](#data-modeling)相关的概念和术语。
-   * 了解[为何需要数据建模以用于无头内容投放](#data-modeling-for-aem-headless)。
-   * 了解[如何使用AEM内容片段模型](#create-structure-content-fragment-models)实现此结构（以及使用[内容片段](#use-content-to-author-content)创作内容）。
-   * 了解[如何对内容进行建模](#getting-started-examples);基本样本的原则。
+   * 介绍与数据/内容建模相关的概念和术语。
+   * 了解为何需要内容建模来实现无外设内容投放。
+   * 了解如何使用AEM内容片段模型（以及使用内容片段创作内容）实现此结构。
+   * 了解如何对您的内容进行建模；基本样本的原则。
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ ht-degree: 1%
 >
 >我们将仅考虑建模数据以与AEM Headless一起使用时需要考虑的方面。
 
-## 数据建模{#data-modeling}
+## 内容建模{#content-modeling}
 
 *外面是个大坏世界*。
 
 也许，也许不是，但它肯定是一个大的&#x200B;***复杂的***&#x200B;世界，数据建模用于定义非常（非常）小的子节的简化表示，使用为特定目的所需的特定信息。
+
+>[!NOTE]
+>
+>在AEM处理内容时，我们将数据建模称为内容建模。
 
 例如：
 
@@ -91,7 +95,7 @@ ht-degree: 1%
 
 然后，实体之间存在各种&#x200B;**关系**。 例如，一所学校通常只有一位校长，而许多老师（而校长通常也是老师）。
 
-分析和定义此信息的过程，以及它们之间的关系，称为&#x200B;**数据建模**。
+分析和定义此信息的过程，以及它们之间的关系，称为&#x200B;**内容建模**。
 
 ### 基本信息 {#basics}
 
@@ -128,9 +132,9 @@ ht-degree: 1%
 
 * 如果查询必须访问多个嵌套（引用的）内容片段以检索所需内容，则会严重影响性能。
 
-## AEM Headless {#data-modeling-for-aem-headless}的数据建模
+## AEM Headless {#content-modeling-for-aem-headless}的内容建模
 
-数据建模是一组已建立的技术，在开发关系数据库时经常使用，因此对AEM Headless意味着什么？
+数据建模是一组已建立的技术，在开发关系数据库时经常使用，因此内容建模对AEM Headless意味着什么？
 
 ### 为什么？{#why}
 
@@ -142,7 +146,7 @@ ht-degree: 1%
 
 AEM使用内容片段来为应用程序提供无头投放内容所需的结构。
 
-数据模型的结构是：
+您的内容模型的结构是：
 
 * 通过定义内容片段模型实现，
 * 用作内容片段生成的基础。
@@ -172,7 +176,7 @@ AEM使用内容片段来为应用程序提供无头投放内容所需的结构�
 
 1. **“数** 据类型”允许您定义各个属性。例如，将包含教师姓名的字段定义为&#x200B;**Text**，将其服务年限定义为&#x200B;**Number**。
 1. 数据类型&#x200B;**内容引用**&#x200B;和&#x200B;**片段引用**&#x200B;允许您创建与AEM中其他内容的关系。
-1. **片段引用**&#x200B;数据类型允许您通过嵌套内容片段（根据模型类型）实现多级结构。 这对您的数据建模至关重要。
+1. **片段引用**&#x200B;数据类型允许您通过嵌套内容片段（根据模型类型）实现多级结构。 这对您的内容建模至关重要。
 
 例如：
 ![使用内容片段进行内容建模](assets/headless-modeling-01.png "使用内容片段进行内容建模")
@@ -247,4 +251,4 @@ tbc...
    * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 创建和创作内容片段；本页将引导您进入其他详细章节
 * [AEM GraphQL模式](/help/implementing/developing/headless-journey/access-your-content.md) - GraphQL如何实现模型
 * [示例内容片段结构](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无头功能，包括数据建模和GraphQL
+* [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了使用AEM无头功能，包括内容建模和GraphQL
