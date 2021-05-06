@@ -1,15 +1,15 @@
 ---
 title: 内容片段上的远程AEM GraphQL查询身份验证
 description: 了解远程AEM GraphQL查询所需的身份验证，以保护无外设内容投放。
-feature: Content Fragments,GraphQL API
+feature: 内容片段，GraphQL API
+exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # 内容片段{#authentication-for-remote-aem-graphql-queries-on-content-fragments}上的远程AEM GraphQL查询身份验证
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >对于测试和开发，您还可以使用[GraphicQL接口](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)接口直接访问AEM GraphQL API。
 
-要进行身份验证，第三方服务需要使用[访问令牌](#access-token)，然后该标识符可以在GraphQL请求](#use-access-token-in-graphql-request)中使用。[
+为了进行身份验证，第三方服务需要[检索访问令牌](#retrieving-access-token)，然后，GraphQL请求](#use-access-token-in-graphql-request)中可以使用[。
 
 ## 检索访问令牌{#retrieving-access-token}
 
