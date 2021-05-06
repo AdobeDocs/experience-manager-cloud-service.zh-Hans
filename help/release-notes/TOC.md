@@ -6,9 +6,9 @@ user-guide-description: 本指南提供了有关最新版本的 Experience Manag
 feature: 发行信息
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '115'
 ht-degree: 100%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 100%
 + 发行说明 {#release-notes}
    + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021年{#2021}
+      + [2021.3.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
       + [2021.2.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [2021.1.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020年{#2020}
