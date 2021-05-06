@@ -6,10 +6,10 @@ user-guide-description: 本指南概述了如何开始使用 Experience Manager 
 feature: 部署
 role: Architect, Developer
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,8 @@ ht-degree: 29%
       + [删除IP允许列表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [检查IP允许列表状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Cloud Manager {#release-notes-cloud-manager}发行说明
-      + [最新发行说明（2021.4.0 版）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新发行说明（2021.5.0 版）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2021.4.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [2021.3.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [2021.2.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [2021.1.0 版发行说明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
