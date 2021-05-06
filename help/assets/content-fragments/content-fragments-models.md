@@ -1,16 +1,16 @@
 ---
 title: 内容片段模型
 description: 了解内容片段模型如何作为AEM中无头内容的基础，以及如何使用结构化内容创建内容片段。
-feature: Content Fragments
+feature: 内容片段
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2309'
 ht-degree: 7%
 
 ---
-
 
 # 内容片段模型 {#content-fragment-models}
 
@@ -61,7 +61,7 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
    >
    >当字段为&#x200B;**必填字段**&#x200B;时，左窗格中显示的&#x200B;**标签**&#x200B;将标有一个星号标记 (*****)。
 
-   ![属性](assets/cfm-models-03.png)
+![属性](assets/cfm-models-03.png)
 
 1. **添加字段**
 
@@ -111,6 +111,7 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
    * 允许片段作者访问和选择标记区域
 * **内容引用**
    * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 如果图像被引用，您可以选择显示缩略图
 * **片段引用**
    * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
    * 数据类型可配置为允许片段作者：
@@ -121,6 +122,13 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
       * 允许AEM存储您从其他服务复制/粘贴的直接JSON。
       * JSON将传递，并在GraphQL中输出为JSON。
       * 在内容片段编辑器中包括JSON语法高亮显示、自动完成和错误高亮显示。
+* **制表符占位符**
+   * 允许引入在编辑内容片段内容时使用的选项卡。
+这将在模型编辑器中显示为分隔条，分隔内容列表类型的部分。 每个实例都表示新选项卡的开始。
+在片段编辑器中，每个实例将显示为一个选项卡。
+
+      >[!NOTE]
+      此数据类型仅用于格式化，而AEM GraphQL模式会忽略它。
 
 ## 属性 {#properties}
 
@@ -165,6 +173,8 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
    * 如果尚未存在，请确保在转换配置上下文`/content/dam/<tenant>`中添加字段的属性名称。
    * 对于GraphQL:将“内容片段”字段上的`<translatable>`属性设置为`yes`，以允许对仅具有可翻译内容的JSON输出进行GraphQL查询筛选。
 
+* 有关特定数据类型及其属性的详细信息，请参阅&#x200B;**[内容引用](#content-reference)**。
+
 * 有关特定数据类型及其属性的详细信息，请参阅&#x200B;**[片段引用（嵌套片段）](#fragment-reference-nested-fragments)**。
 
 ## 验证{#validation}
@@ -181,12 +191,6 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
    * 只能引用预定义宽度和/或高度范围内的图像（以像素为单位）。
 * **片段引用**
    * 测试特定内容片段模型。
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## 使用引用表单嵌套内容{#using-references-to-form-nested-content}
 
@@ -219,12 +223,14 @@ AEM具有以下重复保护：
 
 除了标准属性之外，您还可以指定：
 
-* 任何引用内容的&#x200B;**根路径**。
-* 可引用的内容类型。
-* 文件大小限制。
-* 图像限制。
-   <!-- Check screenshot - might need update -->
-   ![内容引用](assets/cfm-content-reference.png)
+* 任何引用内容的&#x200B;**根路径**
+* 可引用的内容类型
+* 文件大小限制
+* 如果引用了图像：
+   * 显示缩略图
+   * 图像高度和宽度限制
+
+![内容引用](assets/cfm-content-reference.png)
 
 ### 片段引用（嵌套片段）{#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ type CompanyModel {
 
    * **fragmentreferencecompose**  — 允许片段作者通过选择多个片段来构建合成
 
-   <!-- Check screenshot - might need update -->
    ![片段引用](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ GraphQL中还对片段引用提供循环保护。 如果您在两个相互引用
    * **标记**
    * **描述**
    * **上传图像**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
