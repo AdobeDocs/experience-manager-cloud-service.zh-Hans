@@ -3,10 +3,10 @@ title: AEM中Cloud Manager作为Cloud Service版本2021.5.0的发行说明
 description: AEM中Cloud Manager作为Cloud Service版本2021.5.0的发行说明
 feature: 发行信息
 translation-type: tm+mt
-source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
+source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '386'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +35,11 @@ AEM中Cloud Manager作为Cloud Service 2021.5.0的发布日期为2021年5月06�
 
 * Commerce add-on现在可以在“编辑”项目工作流程中应用到沙箱项目。
 
-* 编辑项目体验已刷新。
+* *编辑项目*&#x200B;体验已刷新。
 
 * “环境详细信息”页中的“域名”表将通过分页显示多达250个域名。
 
-* 添加项目和编辑项目工作流中的解决方案选项卡将显示解决方案，即使项目仅提供一个解决方案也是如此。
+* **添加项目**&#x200B;和&#x200B;**编辑项目**&#x200B;工作流中的&#x200B;**解决方案和加载项**&#x200B;选项卡将显示解决方案，即使项目仅提供一个解决方案也是如此。
 
 * 生成未生成任何已部署内容包时生成步骤日志中的错误消息不清楚。
 
