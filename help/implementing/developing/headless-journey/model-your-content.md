@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 1%
+source-wordcount: '1752'
+ht-degree: 2%
 
 ---
 
@@ -209,6 +209,20 @@ AEM为您提供以下数据类型来对内容进行建模：
    * 直接编辑引用的片段。
    * 根据相应的模型创建新内容片段
 
+### 创建内容片段模型{#creating-content-fragment-models}
+
+首先，为您的站点启用内容片段模型，这是在配置浏览器中完成的：
+
+![定义配置](assets/cfm-configuration.png)
+
+然后，可以对内容片段模型进行建模：
+
+![内容片段模型](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>请参阅使用内容片段。
+
 ## 使用模型创作内容片段{#use-content-to-author-content}的内容
 
 内容片段始终基于内容片段模型。 模型提供结构，片段保存内容。
@@ -228,6 +242,16 @@ AEM为您提供以下数据类型来对内容进行建模：
 * 编辑元数据。
 * 显示树结构。
 * 预览JSON表示形式。
+
+### 创建内容片段{#creating-content-fragments}
+
+选择适当的模型后，将打开一个内容片段以在内容片段编辑器中进行编辑：
+
+![内容片段编辑器](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>请参阅使用内容片段。
 
 ## 一些示例{#getting-started-examples}入门
 
