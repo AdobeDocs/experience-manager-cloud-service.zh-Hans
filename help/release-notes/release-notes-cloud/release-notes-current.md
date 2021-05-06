@@ -3,12 +3,13 @@ title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
+source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 3%
+source-wordcount: '1473'
+ht-degree: 2%
 
 ---
+
 
 # [!DNL Adobe Experience Manager]作为Cloud Service{#release-notes}的当前发行说明
 
@@ -23,66 +24,125 @@ ht-degree: 3%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为Cloud Service2021.3.0的发布日期为2021年3月25日。
-以下版本(2021.4.0)将于2021年4月29日发布。
+作为Cloud Service2021.4.0的[!DNL Adobe Experience Manager]的发布日期为2021年5月6日。
+以下版本(2021.5.0)将于2021年5月27日发布。
 
-## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
-* [现在，可以通过简单配置在项目](/help/sites-cloud/authoring/features/enable-pwa.md) 级别启用网站的渐进式Web应用程序(PWA)版本。
-* 内容片段模型扩展 — 现在可以将多行文本数据类型定义为多字段列表。
-* 内容片段编辑器UX增强 — 嵌套子片段现在以痕迹导航显示，并改进了发布、保存和保存退出操作的视图
+### 新增功能 {#what-is-new-foundation}
 
-## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+* [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)  — 新的工作流模型和步骤在发布内容的深层层次结构时提高了性能。
+
+## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### [!DNL Sites] {#what-is-new-sites}中的新增功能
+
+* GraphQL终结点 — 现在，可以为各个AEM Sites配置启用AEM GraphQL API，并通过使用新的GraphQL控制台UI为这些配置创建自定义GraphQL终结点。 该UI还允许管理GraphQL端点。
+
+* 内容模型、增强的日期和时间数据类型 — 现在可以配置日期和时间日期类型，以仅允许创作日期、时间或日期和时间信息。
+
+* 内容模型、增强的标记数据类型 — 现在可以配置标记数据类型以允许创作单个或多个标记。
+
+* 内容模型、新的制表符占位符数据类型 — 新的制表符占位符数据类型允许将数据类型分组到将在内容片段编辑器的选项卡下呈现的部分中。
+
+### [!DNL Sites] {#bug-fixes-sites}中的错误修复
+
+* 内容片段 — 移动内容片段或文件夹现在会更新片段内的嵌套引用(CQ-4320815)
+
+* GraphQL — 持久查询现在支持特定于AEM Sites配置的用户定义终结点(CQ-4315928)
+
+## [!DNL Adobe Experience Manager Assets] a  [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] {#what-is-new-assets}中的新增功能
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+* [!DNL Experience Manager] 不存档下载原始文件的单个资源下载。此增强功能可加快下载速度。
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
+* 当通过链接共享选项下载资产时，您现在可以选择下载或不下载演绎版。 以前，会下载所有资产演绎版。
 
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
+* 管理员可以配置[!DNL Experience Manager]以在执行批量资产摄取后删除资产源。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-Ability to select a root path. select if a minimum number of tags is required. 
+* 当执行运行状况检查以批量导入资产时，Experience Manager现在提供故障的更多信息原因。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+* 使用批量导入工具导入资源时，管理员现在可以选择在成功导入后删除源文件。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* [!DNL Experience Manager] 扩展了“已连接资产”功能，支持在支 [!DNL Dynamic Media] 持的核心组件中使用图像。请参阅[使用连接的资产](/help/assets/use-assets-across-connected-assets-instances.md)。
-* Experience Manager管理员可以在特定日期或时间计划批量资产摄取。 此外，管理员可以根据日期和时间计划循环摄取。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 编辑元数据模式时，新的根路径选择器字段使管理员能够快速、轻松地进行选择，从而缩短配置时间。
+
+* 许多资产的元数据可以使用CSV文件批量导入，也可以导出到CSV文件。 现在，默认日期格式为`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 用户可以通过更新列标题来利用不同的格式。 例如，在CSV文件中将`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`添加为列标题，而不是单词`Date`。
+
+* 在“列”视图中浏览资产时，系统会显示每个资产的已批准或已拒绝状态。
+
+* 在列视图中浏览资产时，会为过期的资产显示一个可视指示符。
 
 ### [!DNL Assets] {#bug-fixes-assets}中的错误修复
 
-* 尝试下载多个受版权管理的资产时，不会显示版权页面。 (CQ-4314403)
-* 选择编辑INDD文件时，分辨率会意外更改。 (CQ-4317376)
-* 在PDF演绎版中，只有InDesign模板的最后一页。 (CQ-4317305)
-* 当选取器是复杂元数据模式的一部分时，打开标记选取器需要很长时间。 (CQ-4316426)
-* 上传的资产的文件名与现有资产文件名相同时，不会显示名称冲突对话框以提示用户创建版本。 (CQ-4315424)
-* 文件夹元数据属性可从文件夹的“属性”页面的弹出菜单中设置和保存。 选择内容保存在存储库中时，在再次打开文件夹元数据属性时不显示。 (CQ-4314429)
-* 文件名包含空格或特殊字符的资产可通过浏览器上传。 (CQ-4318381)
+* 尝试移动多个资产或文件夹时，控制台中会记录一个错误，移动操作尚未完成。 如果标题无法更新，则移动操作将失败。 (CQ-4322080)
+
+* 可以根据规则隐藏元数据字段，这样在满足预定义条件时，元数据就不是必填项。 但是，此类隐藏的元数据字段会显示为必填字段。 (CQ-4321285)
+
+* 由于日期格式不正确，批量元数据导入失败。 (CQ-4319014)
+
+* 当在“属性”页中进行选择以更新元数据时，当模式提供了许多选项时，界面响应速度会很慢。 (CQ-4318538)
+
+* 在单行文本字段中更新和保存元数据值时，即使在下拉菜单中禁用了编辑，下拉菜单中的值也会被删除。 (CQ-4317077)
+
+* 您可以使用省略号作为注释来审阅资产。 使用小椭圆时，椭圆会与打印版本中的注释数重叠。 (CQ-4316792)
 
 ## [!DNL Adobe Experience Manager Forms] a  [!DNL Cloud Service] {#forms}
 
-AEM Forms多年来一直帮助许多组织提供出色的入职和注册体验。 这些体验帮助组织将销售线索转换为销售线索、处理捕获的客户数据、根据受众用户档案提供响应式体验等。 现在，AEM Forms可作为云服务提供。
+### [!DNL Forms] {#what-is-new-forms}中的新增功能
 
-您可以使用[AEM Forms作为Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)创建数字表单、将表单连接到现有数据源、将表单与Adobe Sign集成以向表单添加电子签名、生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可以将您现有的PDF forms转换为数字表单。 除标准AEM Forms功能外，该服务还优惠了几个云本机功能，如自动扩展、升级零停机和云本机开发环境。 阅读[此博客文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)，了解AEM Forms作为Cloud Service的功能和特性。
+* **在启用Adobe Sign的自适应Forms中使用政府ID身份验证方法**
 
-您可以联系Adobe代表进行演示或注册服务。
+   Adobe Sign的政府ID流程以高级机器学习算法为后盾，为全球公司提供了确保收件人身份的高质量身份验证的能力。 现在，您可以在启用Adobe Sign的自适应Forms中使用政府ID身份验证方法。
+
+   政府ID是一种高级身份验证方法，指示收件人[上传政府颁发的身份文档（驾照、国家ID、护照）](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)的图像，然后评估该文档以确保其真实。
+
+* **支持对异步自适应表单提交使用表单签名体验**
+
+   现在，您可以将表单内签名体验用于异步自适应表单提交。 您还可以在[!DNL Experience Manager Sites]页面中嵌入自适应表单，并使用表单内签名体验提交自适应表单。
+
+* **支持在为分配任务步骤预填充自适应表单时使用变量指定附件**
+
+   在为分配任务步骤预填充自适应表单时，您现在可以使用文档类型变量为自适应表单选择输入附件。
+
+* **支持使用文本选项设置JSON类型变量的值**
+
+   您可以使用文本选项在AEM工作流的设置变量步骤中设置JSON类型变量的值。 文本选项允许您以字符串形式指定JSON。
+
+* **使用本地开发环境创建记录文档(DoR)**
+
+   您可以将XDP用作Cloud Service实例上的“记录”模板的文档，将AEM Forms用作Cloud Service SDK(本地开发环境)。 以前，支持仅限于Cloud Service实例。
+
+### [!DNL Forms] {#bug-fixes-forms}中的错误修复
+
+* 将配置为不生成记录文档的自适应表单提交到配置为生成记录文档的AEM工作流时，不会显示错误消息，任务无法提交。
+
+### 其他更新{#misc-2021-04-0-forms}
+
+* 为了更轻松地识别内容，服务现在为XDP、动态PDF和模式文件生成实时缩略图。
+* 添加将PDF文件移动到AEM Forms UI中放置的文件夹的功能。
 
 ## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 支持Magento 2.4.2
+* 支持类别UID — 这将解锁对类别ID使用字符串的系统的第三方商务集成
 
-* 现在可以在任何内容页面上使用和配置产品详细信息组件
+* AEM extension for PWA Studio，包括 示例集成
 
-* 已发布CIF委内瑞拉参考站点 — 2021.03.25，其中包括最新的CIF核心组件版本v1.9.0。有关更多详细信息，请参阅[CIF委内瑞拉参考站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)。
+* 扩展WCM导航核心组件的新CIF导航核心组件
 
-* 已发布CIF核心组件v1.9.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)。
+* AEM商店中分阶段目录数据的可视指示器
 
+* 现在可通过Cloud Manager UI配置商务端点
+
+### 错误修复 {#bug-fixes-commerce}
+
+* 根类别字段未显示在类别页面页面属性中的“商务”选项卡下
 
 ## Cloud Manager {#cloud-manager}
 
-本节概述AEM中作为Cloud Service 2021.4.0和2021.3.0的Cloud Manager发行说明。
+本节概述AEM中作为Cloud Service 2021.4.0的Cloud Manager发行说明。
 
 ### 发布日期 {#release-date-cm-april}
 
@@ -121,76 +181,6 @@ AEM中Cloud Manager作为Cloud Service 2021.4.0的发布日期为2021年4月8日
 
 * `Runmode`检查在非文件夹节点上产生误报。
 
-
-### 发布日期 {#release-date-cm-march}
-
-AEM中Cloud Manager作为Cloud Service 2021.3.0的发布日期为2021年3月11日。
-
-### 新增功能 {#what-is-new-march}
-
-* 拥有[IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)预存自定义域名配置的环境的客户将看到有关其先前现有配置的消息，并将能够通过UI自助服务。
-
-* 具有必需权限的用户现在可以编辑项目，允许他们以自助方式执行以下操作：
-
-   * 将站点解决方案添加到包含资产的现有项目，反之亦然。
-   * 将站点或资产从包含站点和资产的现有项目中删除。
-   * 将第二个未使用的解决方案授权添加到现有项目或作为新项目。
-
-* **AEM Push** Updatelabel现在将同时显示在Pipeline Executive和 *Activity* 屏幕 ** 上。
-
-* 如果环境已休眠，但也有可用的AEM更新，则&#x200B;**已休眠**&#x200B;状态将优先于&#x200B;**可用更新**。
-
-* 现在，用户在导航至Unified Shell的“用户用户档案”图标（右上方）后，通过选择“视图 Cloud Manager角色”选项，即可查看其Cloud Manager角色。
-
-* 标签&#x200B;**申请批准**&#x200B;已重新标记到&#x200B;**生产批准**，以便更清晰。
-
-* **版本**&#x200B;标签已重新标记到“生产”管线执行屏幕中的&#x200B;**Git标签**。
-
-* 当重要量度未达到定义的阈值时定义行为的标签已重新标记，以反映其真实行为：**取消立即**&#x200B;和&#x200B;**立即批准**。
-
-* 类和方法弃用列表已根据AEM Cloud Service SDK的`2021.3.4997.20210303T022849Z-210225`版本进行更新。
-
-* Cloud Manager生产管道现在将包含[自定义UI测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)功能。
-
-### 错误修复 {#bug-fixes-cm-march}
-
-* 在AEM推送升级期间，在某些情况下跳过了包版本控制。
-
-* 在将包嵌入到其他包中时，未正确发现某些质量问题。
-
-* 在模糊情况下，打开“添加项目”对话框时生成的默认项目名称可能是现有项目名称的重复。
-
-* 有时，如果用户在启动管道后立即从管道执行页面导航离开，将显示一条错误消息，指出操作失败，尽管实际执行会开始。
-
-* 当客户生成导致包无效时，不必要地重新启动生成步骤。
-
-* 有时，即使未部署IP，用户也会在IP旁看到允许列表绿色的“活动”状态。
-
-* 所有现有生产管道将通过体验审核步骤自动启用。
-
-## 内容传输工具 {#content-transfer-tool}
-
-### 发布日期 {#release-date-ctt}
-
-内容传输工具v1.3.4的发布日期为2021年3月19日。
-
-### 错误修复 {#bug-fixes-ctt}
-
-* CTT正在跳过名称相同但名称带有连字符的文件夹中的内容。 此问题已解决。
-
-### 发布日期 {#release-date-ctt-march}
-
-内容传输工具v1.3.0的发布日期为2021年3月04日。
-
-### 内容传输工具{#what-is-new-ctt-march}的新增功能
-
-* CTT现在安装到`/apps`，而不是`/libs`某些页面的浏览器书签可能不再有效。
-* 安装CTT后，用户将必须浏览其他级别才能进入“内容传输”页面。 有关详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)。
-
-### 错误修复 {#bug-fixes-ctt-march}
-
-* 从特定路径迁移内容时，CTT正在调用不相关的资源。 已修复
-
 ## 最佳实践分析器{#best-practices-analyzer}
 
 ### 发布日期 {#release-date-bpa}
@@ -202,18 +192,3 @@ Best Practices Analyzer v2.1.12的发布日期为2021年4月12日。
 * 重复行在报告的BPA中。 此问题已解决。
 * AEM版本6.4.2上的BPA UI正在引发JS错误，该错误正在禁用“生成报告”按钮。 已修复
 
-
-## 代码重构工具 {#code-refactoring-tools}
-
-### 代码重构工具{#what-is-new-crt}的新增功能
-
-* Repository Modernizer的新增功能和增强功能。 请参阅[GitHub资源：最新版本的存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
-   * 将OSGi配置（RepoInit配置除外）标准化为首选.cfg.json格式。
-   * 将OSGi配置文件夹重命名为指定格式。
-   * 生成ui.apps.structure项目。
-   * 创建分析模块。
-
-* Dispatcher Converter的新增功能和增强功能。 请参阅[GitHub资源：调度程序转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
-   * 为不同包含创建单独文件，而不是在内容中排列。
-   * 能够同时处理vhosts的文件夹路径和vhost文件的路径。
-   * 生成客户配置范围在600个以上的农场文件。
