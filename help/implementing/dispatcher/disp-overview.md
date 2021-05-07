@@ -2,16 +2,21 @@
 title: 云中的调度程序
 description: '云中的调度程序 '
 feature: Dispatcher
+exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 translation-type: tm+mt
-source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '4169'
+source-wordcount: '4211'
 ht-degree: 6%
 
 ---
 
-
 # 云中的调度程序 {#Dispatcher-in-the-cloud}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispoverview"
+>title="云中的调度程序"
+>abstract="本节介绍如何将AEM构造为Cloud Service Apache和Dispatcher配置，以及如何在部署到云环境之前在本地验证并运行它。 还描述了在Cloud环境中调试。"
 
 ## Apache和Dispatcher配置和测试{#apache-and-dispatcher-configuration-and-testing}
 
