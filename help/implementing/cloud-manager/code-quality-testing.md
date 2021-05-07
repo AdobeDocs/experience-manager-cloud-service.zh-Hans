@@ -1,16 +1,21 @@
 ---
 title: 代码质量测试 — Cloud Services
 description: 代码质量测试 — Cloud Services
+exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 translation-type: tm+mt
-source-git-commit: 5a945cbb138aea64ecc6da3728827531569d6d63
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
 
-
 # 代码质量测试{#code-quality-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_codequalitytests"
+>title="代码质量测试"
+>abstract="代码质量测试可评估应用程序代码的质量。 它是仅代码质量管道的核心目标，在所有非生产和生产管道中的构建步骤后立即执行。"
 
 代码质量测试可评估应用程序代码的质量。 它是仅代码质量管道的核心目标，在所有非生产和生产管道中的构建步骤后立即执行。
 
