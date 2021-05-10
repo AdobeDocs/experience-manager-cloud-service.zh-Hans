@@ -1,16 +1,16 @@
 ---
 title: 关于Dynamic Media图像用户档案和视频用户档案
 description: 图像用户档案或视频用户档案是一种菜谱，可用于将哪些选项应用到您上传到文件夹的资产。 例如，您可以指定将哪些视频编码应用于您上传的Dynamic Media视频资产。 或者，要应用到Dynamic Media图像资产的图像用户档案，以正确裁剪图像资产。
-feature: Asset Management,Image Profiles,Video Profiles
+feature: 资产管理，图像用户档案，视频用户档案
 role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1282'
 ht-degree: 3%
 
 ---
-
 
 # 关于Dynamic Media图像用户档案和用户档案{#about-dm-image-video-profiles}
 
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 您可以对首次处理失败的资产运行重新处理工作流。 即使您尚未编辑图像用户档案或视频用户档案，或者您已经应用了图像用户档案或视频用户档案，您仍然可以随时对资产文件夹运行重新处理工作流。
 
-您可以（可选）调整重新处理工作流的批大小，从默认的50个资产调整到1000个资产。 运行&#x200B;_Scene7时：在文件夹中重新处理资产_&#x200B;工作流时，资产会分批分组，然后发送到Dynamic Media服务器进行处理。 处理后，整个批集中每个资产的元数据将在AEM上更新。 如果批量大，则处理时可能会出现延迟。 或者，如果批量太小，则可能导致到Dynamic Media服务器的往返次数过多。
+您可以（可选）调整重新处理工作流的批大小，从默认的50个资产调整到1000个资产。 运行&#x200B;_Scene7时：在文件夹中重新处理资产_&#x200B;工作流时，资产会分批分组，然后发送到Dynamic Media服务器进行处理。 处理后，整个批集中每个资产的元数据将在Adobe Experience Manager上更新。 如果批量大，则处理时可能会出现延迟。 或者，如果批量太小，则可能导致到Dynamic Media服务器的往返次数过多。
 
 请参阅[调整重新处理工作流的批大小](#adjusting-load)。
 
@@ -59,8 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**要重新处理文件夹中的Dynamic Media资产**:
-1. 在Adobe Experience Manager中，从“资产”页面，导航到一个Dynamic Media资产文件夹，其中为该资产分配了图像用户档案或视频用户档案，并且您要为其应用&#x200B;**Scene7:重新处理资产**&#x200B;工作流，
+**要重新处理文件夹中的Dynamic Media资产，请执行以下操作：**
+1. 在Experience Manager中，从“资产”页面，导航到一个资产文件夹，该文件夹已分配有图像用户档案或视频用户档案，并且您要为其应用&#x200B;**Scene7:重新处理资产**&#x200B;工作流。
 
    如果文件夹已分配了图像用户档案或用户档案，则用户档案的名称会显示在卡片视图中文件夹名称的正下方。
 
@@ -87,7 +87,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### 调整重新处理工作流{#adjusting-load}的批大小
 
-（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受运行重新处理的资产的平均资产大小和MIME类型的约束。 值越高，表示您在一个重新处理作业中拥有许多文件。 因此，处理横幅会在Experience Manager资源上停留更长时间。 但是，如果平均文件大小为小 — 1 MB或小于1 MB的Adobe建议您将该值增加到几百，但不超过1000。 如果平均文件大小为大百兆字节，则Adobe建议将批处理大小减小到10。
+（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受运行重新处理的资产的平均资产大小和MIME类型的约束。 值越高，表示您在一个重新处理作业中拥有许多文件。 因此，处理横幅会在Experience Manager资源上停留更长时间。 但是，如果平均文件大小为小 — 1 MB或小于1 MB的Adobe建议将该值增加到100，但不超过1000。 如果文件的平均大小为数百MB，Adobe建议您将批处理大小减小到10。
 
 **（可选）要调整重新处理工作流的批大小**:
 
