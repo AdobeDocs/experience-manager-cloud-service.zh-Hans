@@ -3,9 +3,9 @@ title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -57,6 +57,12 @@ ht-degree: 2%
 然后，它需要在`ui.apps/src/main/content/jcr_root`下。 目前不支持子根文件夹。
 
 上述示例中的包构建为`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`。
+
+>[!NOTE]
+>
+>在位于`/META-INF/vault/properties.xml`的内容包的属性文件中，应设置包含索引定义的任何内容包的以下属性：
+>
+>`noIntermediateSaves=true`
 
 ### 部署索引定义{#deploying-index-definitions}
 
