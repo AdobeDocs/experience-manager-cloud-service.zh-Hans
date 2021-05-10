@@ -1,15 +1,15 @@
 ---
 title: 优化图像质量的最佳实践
-description: 了解可在Dynamic Media中用来优化图像资源质量的最佳实践。
+description: 了解使用Dynamic Media优化图像资产质量的最佳实践。
 contentOwner: Rick Brough
 feature: 资产管理
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 49%
+source-wordcount: '1478'
+ht-degree: 48%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 49%
 
 优化图像质量可能会是一个很耗时的过程，因为渲染可接受的效果涉及到很多因素。在某种程度上，效果带有主观性，因为每个人对图像质量都会有不同的看法。结构化试验是关键所在。
 
-AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像以及渲染结果。以下准则可以帮助您使用一些基本命令和最佳实践简化流程并快速实现良好效果。
+Adobe Experience Manager包含100多个Dynamic Media图像投放命令，用于调整和优化图像及渲染结果。 以下准则可以帮助您通过使用一些基本的命令和最佳实践，简化操作过程，并快速获得最佳效果。
 
 ## 图像格式的最佳实践 (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -41,13 +41,13 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 
 ## 图像锐化的最佳实践 {#best-practices-for-image-sharpening}
 
-在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请参阅以下有用资源，花时间详细了解一下 AEM 中锐化和 USM 锐化的工作原理：
+在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请参阅以下有用资源，花时间进一步了解锐化和USM锐化在Experience Manager中的工作原理：
 
-* 最佳实践白皮书[在Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf)中锐化图像也适用于AEM。
+* 最佳实践白皮书[“Adobe Dynamic Media经典图像质量和锐化最佳实践”](/help/assets/dynamic-media/assets/sharpening_images.pdf)同样适用于Experience Manager。
 
-* 观看[使用AEM Dynamic Media锐化](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)。
+* 观看[使用Experience Manager锐化 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)。
 
-通过 AEM，可以在摄取、传送或同时在这两个过程中锐化图像。但是，通常最好只使用一种方法锐化图像，而不同时使用两种方法。 通常，在传送过程中通过 URL 锐化图像可实现最佳效果。
+借助Experience Manager，您可以在摄取、投放或同时在两种情况下锐化图像。 但是，通常最好只使用一种方法锐化图像，而不同时使用两种方法。 通常，在传送过程中通过 URL 锐化图像可实现最佳效果。
 
 有两种可用的图像锐化方法：
 
@@ -66,11 +66,11 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 
       有关如何设置这三个参数的更多信息，包括使用滤镜方面的最佳实践，请参阅以下资源：
 
-      有关锐化图像的AEM帮助主题。
+      * 最佳实践白皮书[“Adobe Dynamic Media经典图像质量和锐化最佳实践”](/help/assets/dynamic-media/assets/sharpening_images.pdf)同样适用于Experience Manager。
 
-      最佳实践白皮书[AdobeDynamic Media经典图像质量和锐化最佳实践](/help/assets/dynamic-media/assets/sharpening_images.pdf)。
+      * 观看[使用Experience Manager锐化 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)。
 
-      * AEM还允许您控制第四个参数：monochrome(0,1)。 此参数确定是将USM锐化分别应用于每个颜色组件（使用值0），还是应用于图像亮度/强度（使用值1）。
+      * Experience Manager还允许您控制第四个参数：monochrome(0,1)。 此参数确定是将USM锐化分别应用于每个颜色组件（使用值0），还是应用于图像亮度/强度（使用值1）。
 
 
 
@@ -100,7 +100,7 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 
 ## JPEG 大小调整的最佳实践 (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize` 是一个有用的参数，可确保图像不会超过某个大小，以便投放到内存有限的设备。
+如果要保证图像不会超过某个大小，以投放到内存有限的设备，则参数`jpegSize`很有用。
 
 * 此参数以千字节(`jpegSize=&lt;size_in_kilobytes&gt;`)为单位设置。 它为图像投放定义允许的最大大小。
 * `&jpegSize=` 与JPG压缩参数交互 `&qlt=`。如果具有指定JPG压缩参数(`&qlt=`)的JPG响应未超过jpegSize值，则将按照定义以`&qlt=`返回图像。 否则，`&qlt=`会逐渐减小，直到图像符合允许的最大大小，或直到系统确定它无法适应并返回错误。
@@ -123,4 +123,4 @@ AEM包含100多个Dynamic Media图像投放命令，用于调整和优化图像�
 
 * 直接在URL上实时尝试和测试不同的参数。
 * 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上就是具有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL路径中的自定义预设名称会调用这些预设。 这类功能可帮助您针对网站中图像的不同使用模式来管理命令和质量设置，并缩短 URL 的整体长度。
-* Experience Manager还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。 要调整和优化渲染结果，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可以帮助您进行自定义分析和最佳实践。
+* Experience Manager还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。 要调整和优化渲染结果，[Adobe的咨询服务](https://business.adobe.com/customers/consulting-services/main.html)可以帮助您进行自定义分析和最佳实践。
