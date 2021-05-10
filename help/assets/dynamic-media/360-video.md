@@ -5,9 +5,9 @@ feature: 360 VR 视频
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '941'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Dynamic Media包含对360个视频资源投放的本机支持。 默认情况下
 
 ## 360视频实际操作情况{#video-in-action}
 
-点按[空间站360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)打开浏览器窗口并观看360度视频。 在视频播放过程中，将指针拖动到新位置以更改视角。
+点按[空间站360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)打开浏览器窗口并观看360度视频。 在视频播放过程中，将指针拖动到新位置以更改视角。
 
 ![360视频采](assets/6_5_360videoiss_simplified.png)
 *样来自空间站的视频帧360*
@@ -93,7 +93,7 @@ Start by uploading 360 Videos.
 
 ## 预览360视频{#previewing-video}
 
-您可以使用预览来查看您的360视频对客户的显示效果，并确保它按预期行事。
+您可以使用预览来查看您的360视频如何呈现给客户，并确保其按预期方式播放。
 
 另请参阅[编辑查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets)。
 
