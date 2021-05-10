@@ -6,9 +6,9 @@ feature: 图像预设，查看器预设
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ ht-degree: 1%
 
 通过[!DNL Dynamic Media]中的&#x200B;**[!UICONTROL 批集预设]**&#x200B;页，可以创建、编辑或删除批集预设，以及在资产文件夹中应用或删除批集预设。 您可以使用表单字段下拉列表定义批集预设，或使用&#x200B;**[!UICONTROL 原始代码]**&#x200B;字段，通过该字段可键入常规表达式语法。
 
-您可以根据需要创建任意数量的批集预设，以涵盖所需的所有资产摄取作业。
+您可以创建许多批集预设，以涵盖所需的所有资产摄取作业。
 
-**关于资产命名规范**
+### 关于资产命名规范
 
 **[!UICONTROL 批量集预设]**&#x200B;页面上的&#x200B;**[!UICONTROL 资产命名约定]**&#x200B;区域包含两个元素，您可以使用这些元素定义批量集预设：**[!UICONTROL 匹配]**&#x200B;和&#x200B;**[!UICONTROL 基本名称]**。 这些元素允许您定义命名约定并标识用于命名包含这些约定的集合的约定部分。<!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 `(\w+)-\w+-\w+`
 
-**关于序列排序**
+### 关于序列排序
 
 您可以选择定义在[!DNL Dynamic Media]中对图像集或旋转集进行分组后图像的显示顺序。 默认情况下，资产按字母数字顺序排列。 但是，您可以使用逗号分隔的常规表达式列表来定义顺序。
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 **要为图像集或旋转集创建批集预设，请执行以下操作：**
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ ht-degree: 1%
 | 包括派生的资产 | 可选。要使[!DNL Dynamic Media]的IPS（图像生产系统）包含旋转集或图像集中的已生成或“派生”图像，请选择&#x200B;**[!UICONTROL 是]**（默认）。 派生资产是指未由用户直接上传的图像。 而是在上传主控资源时，IPS生成了该资源。 例如，IPS在[!DNL Dynamic Media]上载PDF时从PDF中的页面生成的图像资源被视为派生资源。 |
 | 目标文件夹 | 可选。如果您定义了大量图像集或旋转集，Adobe建议您将这些集与包含资产本身的文件夹分开。 因此，请考虑创建“图像集”或“旋转集”文件夹，并将应用程序重定向到将批量集生成的集放在此处。<br>在这种情况下，请指定“Experience Manager资产”文件夹结构()中`/content/dam`的哪个文件夹处于活动状态批集预设。确保已为[!DNL Dynamic Media]同步启用该文件夹，以允许它作为目标文件夹。 请参阅Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)中的[在文件夹级别配置选择性发布。<br>如果您通过文件夹的“属性”应用预设，则多个文件夹可以为其分配给定的批集 **[!UICONTROL 预设]**。请参阅[从资产文件夹的“属性”页面](#apply-bsp-to-folders-via-properties)应用批集预设。<br>如果未指定文件夹，则会在上传到的资产文件夹所在的文件夹中创建批处理集预设生成的图像集或旋转集。 |
 | **[!UICONTROL 设置命名规则]** |  |
-| 前缀<br>或<br>后缀 | 可选。在相应的字段中输入前缀和/或后缀。<br>使用前缀和后缀字段，您可以为特定内容集使用替代的自定义文件命名约定创建任意数量的批集预设。当公司定义的默认命名方案出现异常时，此方法特别有用。<br>前缀或后缀将添加到您在“资 **[!UICONTROL 产]** 命名约定”区域中 **[!UICONTROL 定义的]** 基本名称。通过添加前缀或后缀，您可以确保图像集或旋转集是专门创建的，并且独立于其他资产。 它还有助于进一步帮助其他人识别文件类型。 例如，要确定所使用的颜色模式，可以添加前缀或后缀`rgb`或`cmyk`。<br>虽然使用批量集预设功能不需要指定集命名约定，但最佳实践是建议您使用集命名约定。通过此实践，您可以定义想要分组到一组中的命名约定的任意多个元素，以帮助简化批量集创建。 |
+| 前缀<br>或<br>后缀 | 可选。在相应的字段中输入前缀和/或后缀。<br>使用前缀和后缀字段，您可以为特定内容集使用替代的自定义文件命名约定来创建许多批集预设。当公司定义的默认命名方案出现异常时，此方法特别有用。<br>前缀或后缀将添加到您在“资 **[!UICONTROL 产]** 命名约定”区域中 **[!UICONTROL 定义的]** 基本名称。通过添加前缀或后缀，您可以确保图像集或旋转集是专门创建的，并且独立于其他资产。 它还有助于进一步帮助其他人识别文件类型。 例如，要确定所使用的颜色模式，可以添加前缀或后缀`rgb`或`cmyk`。<br>虽然使用批量集预设功能不需要指定集命名约定，但最佳实践是建议您使用集命名约定。通过此实践，您可以定义想要分组到一组中的命名约定的任意多个元素，以帮助简化批量集创建。 |
 | **[!UICONTROL 规则结果 - RegX]** |  |
 | 资产命名约定 — 匹配 | 只读. 根据您选择的“匹配”表单选项或您输入的原始代码显示常规表达式语法。 |
 | 资产命名约定 — 基本名称 | 只读. 根据您选择的“基名”表单选项或您输入的原始代码显示常规表达式语法。 |
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 ### 从“批集预设”页{#apply-bsp-to-folders-via-bsp-page}将批集预设应用到资产文件夹
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在“**[!UICONTROL 批集预设]**”页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要应用于文件夹的每个批集预设的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 将批预设应用到文件夹]**。
 1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;页面上，选中要应用批集预设的每个文件夹对应的复选框。
@@ -151,7 +151,7 @@ ht-degree: 1%
 
 ### 从资产文件夹的“属性”页面{#apply-bsp-to-folders-via-properties}应用批集预设
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 导航到要应用一个或多个批集预设的文件夹。
 1. 在页面的&#x200B;**[!UICONTROL 名称]**&#x200B;列左侧，选中文件夹的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
@@ -179,7 +179,7 @@ ht-degree: 1%
 
 **要编辑批集预设，请执行以下操作：**
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在“**[!UICONTROL 批集预设]**”页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要更改的批集预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑批集预设]**。
 1. 根据需要编辑预设。
@@ -193,7 +193,7 @@ ht-degree: 1%
 
 **要复制现有批集预设，请执行以下操作：**
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在“**[!UICONTROL 批集预设]**”页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要复制的批集预设的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 复制]**。
 1. 在&#x200B;**[!UICONTROL 复制批集预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 标题]**&#x200B;文本框中，键入预设的新名称。
@@ -215,7 +215,7 @@ ht-degree: 1%
 
 ### 通过“批集预设”页{#remove-bsp-from-folders-via-bsp-page}从文件夹删除批集预设
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中您要从一个或多个文件夹删除的一个或多个批集预设的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 从文件夹]**&#x200B;删除批预设。
 
@@ -228,7 +228,7 @@ ht-degree: 1%
 
 ### 从文件夹的“属性”页面{#remove-bsp-from-folders-via-properties}删除批集预设
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 导航到要将一个或多个批集预设删除的文件夹。
 1. 在页面的&#x200B;**[!UICONTROL 名称]**&#x200B;列左侧，选中文件夹的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
@@ -250,7 +250,7 @@ ht-degree: 1%
 
 **要删除批集预设，请执行以下操作：**
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在“**[!UICONTROL 批集预设]**”页面的“**[!UICONTROL 预设名称]**”列左侧，选中您要删除的一个或多个批集预设的复选框。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 删除批集预设]**。
 
