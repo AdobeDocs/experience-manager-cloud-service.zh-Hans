@@ -9,9 +9,9 @@ feature: 3D资产
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2248'
 ht-degree: 6%
 
 ---
@@ -250,8 +250,8 @@ Dynamic Media接受Dynamic Media中支持的各种3D文件格式为&#x200B;*stat
 
 **要发布静态Dynamic Media 3D资产，请执行以下操作：**
 
-1. 打开3D资源（GLB、OBJ或STL文件格式），在“详细信息”页面中视图它。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 快速发布]**。
+1. 打开3D资源（GLB、OBJ或STL文件格式）。
+1. 在“详细信息”页面的工具栏中，点按&#x200B;**[!UICONTROL 快速发布]**。
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
