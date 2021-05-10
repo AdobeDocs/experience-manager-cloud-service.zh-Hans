@@ -3,10 +3,10 @@ title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
+source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1879'
+ht-degree: 2%
 
 ---
 
@@ -90,6 +90,8 @@ ht-degree: 0%
 ## [!DNL Adobe Experience Manager Forms] a  [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] {#what-is-new-forms}中的新增功能
+
+您可以使用[AEM Forms作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)创建数字表单、将表单连接到现有数据源、将表单与Adobe Sign集成以向表单添加电子签名、生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可以将您现有的PDF forms转换为数字表单。 除标准AEM Forms功能外，该服务还优惠了几个云本机功能，如自动扩展、升级零停机和云本机开发环境。 阅读[此博客文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)，了解AEM Forms作为Cloud Service的功能和特性。
 
 * **在启用Adobe Sign的自适应Forms中使用政府ID身份验证方法**
 
