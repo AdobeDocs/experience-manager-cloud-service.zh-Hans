@@ -3,10 +3,10 @@ title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
+source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 47%
+source-wordcount: '2731'
+ht-degree: 46%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 47%
 
 * 作者的&#x200B;*摄取阶段*&#x200B;将会按比例缩小整个作者部署。这意味着作者 AEM 在整个摄取过程中将不可用。另外，请确保在运行&#x200B;*Ingestion*&#x200B;阶段时未执行Cloud Manager管道。
 
+* 当将`Amazon S3`或`Azure`用作源AEM系统上的数据存储时，应配置数据存储，以便无法删除存储的块（垃圾回收）。 这是为了确保索引数据的完整性。 如果无法以这种方式进行配置，则可能会导致提取失败，因为此索引数据缺乏完整性。
 
 ## 可用性 {#availability}
 
