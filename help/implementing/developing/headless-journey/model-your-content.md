@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1830'
 ht-degree: 2%
 
 ---
@@ -211,17 +211,21 @@ AEM为您提供以下数据类型来对内容进行建模：
 
 ### 创建内容片段模型{#creating-content-fragment-models}
 
-首先，为您的站点启用内容片段模型，这是在配置浏览器中完成的：
+在您需要为站点启用内容片段模型的开始，这是在配置浏览器中完成的；在工具 — >常规 — >配置浏览器下。 您可以选择配置全局条目或创建新配置。 例如：
 
 ![定义配置](assets/cfm-configuration.png)
 
-然后，可以对内容片段模型进行建模：
+>[!NOTE]
+>
+>请参阅配置浏览器中的其他资源 — 内容片段
+
+然后，可以创建内容片段模型并定义结构。 这可以在工具 — >资产 — >内容片段模型下完成。 例如：
 
 ![内容片段模型](assets/cfm-model.png)
 
 >[!NOTE]
 >
->请参阅使用内容片段。
+>请参阅其他资源 — 内容片段模型。
 
 ## 使用模型创作内容片段{#use-content-to-author-content}的内容
 
@@ -229,7 +233,9 @@ AEM为您提供以下数据类型来对内容进行建模：
 
 ### 选择合适的型号{#select-model}
 
-实际创建内容的第一步是创建内容片段。 这基于特定的内容片段模型，您选择该模型作为创建过程的第一步。
+实际创建内容的第一步是创建内容片段。 使用资产 — >文件下所需文件夹中的创建 — >内容片段即可完成此操作。 向导将指导您完成各个步骤。
+
+内容片段基于特定的内容片段模型，您选择该模型作为创建过程的第一步。
 
 ### 创建和编辑结构化内容{#create-edit-structured-content}
 
@@ -251,7 +257,7 @@ AEM为您提供以下数据类型来对内容进行建模：
 
 >[!NOTE]
 >
->请参阅使用内容片段。
+>请参阅其他资源 — 使用内容片段。
 
 ## 一些示例{#getting-started-examples}入门
 
