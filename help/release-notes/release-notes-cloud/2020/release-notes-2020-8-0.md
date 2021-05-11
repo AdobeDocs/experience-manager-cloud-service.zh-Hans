@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 作为2020.8.0的Cloud Service发行说明。'
+exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 5%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 版的发行说明 {#release-notes}
 
@@ -19,77 +19,77 @@ ht-degree: 5%
 
 ### [!DNL Sites] {#what-is-new-sites}中的新增功能
 
-* 能够[将页面和子页面（页面树）恢复到较早版本](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
+* [可将页面和子页面（页面树）恢复到较早版本](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
 
-* 能够在AEM [SPA编辑器中创建启动项](/help/sites-cloud/authoring/launches/overview.md)。](/help/implementing/developing/hybrid/introduction.md)[
+* 在AEM [SPA Editor中[创建启动项](/help/sites-cloud/authoring/launches/overview.md)的功能。](/help/implementing/developing/hybrid/introduction.md)
 
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
 
 ### [!DNL Assets] {#what-is-new-assets}中的新增功能
 
-* 现在，资产微型服务支持视频转码。 [!UICONTROL 处理用户档案]配置中的新部分允许您设置视频比特率和尺寸。 输出格式为MP4，采用H.264编解码器。 有关详细信息，请参阅[管理视频资产](/help/assets/manage-video-assets.md#transcode-video)。 要获得更多转码选项和视频投放，请使用[!DNL Dynamic Media]加载项。
+* 现在，资产微服务支持视频转码。 [!UICONTROL 处理用户档案]配置中的新部分允许您设置视频比特率和尺寸。 输出格式为MP4，采用H.264编解码器。 有关详细信息，请参阅[管理视频资产](/help/assets/manage-video-assets.md#transcode-video)。 有关更多转码选项和视频投放，请使用[!DNL Dynamic Media]加载项。
 
-* 在新的[!DNL Experience Manager Assets]部署中，现在默认配置了智能标记功能。 无需手动与[!DNL Adobe Developer Console]集成。 在现有部署中，管理员[会像以前一样配置智能标记集成](/help/assets/smart-tags-configuration.md#aio-integration)。
+* 在新的[!DNL Experience Manager Assets]部署中，现在默认情况下配置了智能标记功能。 无需手动与[!DNL Adobe Developer Console]集成。 在现有部署中，管理员会像以前一样配置智能标记集成。
 
 * 新的[资产下载体验](/help/assets/download-assets-from-aem.md)允许，
 
    * 异步下载，以便用户无需等待。
    * 用于开发人员可扩展性的全新模块化API。
 
-* 资产微型服务的元数据提取具有改进的性能。 它提高了整体资产摄取吞吐量。
+* 资产微服务的元数据提取性能得到改进。 它提高了总体资产摄取吞吐量。
 
-* 使用处理用户档案，使用计算服务生成自定义元数据。 请参阅[使用处理用户档案](/help/assets/manage-metadata.md#metadata-compute-service)自定义元数据。
+* 使用处理用户档案使用计算服务生成自定义元数据。 请参阅[使用处理用户档案自定义元数据](/help/assets/manage-metadata.md#metadata-compute-service)。
 
-* 管理员可以配置的更简单的品牌门户用户下载体验。 请参阅[下载体验概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
+* 管理员可以配置的更简单的Brand Portal用户下载体验。 请参阅[下载体验概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 
-* 本机和高保真PDF文档预览现在在Brand Portal中可用。 请参阅[文档查看器概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
+* Brand Portal中现在提供原生和高保真PDF文档预览。 请参阅[文档查看器概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
-* 您现在可以将AEM中的[!DNL Dynamic Media]的CDN(内容投放网络)缓存作为Cloud Service直接失效（与使用[!DNL Dynamic Media Classic]相反）。 它可以确保在几分钟内而不是几小时内提供最新的资产。 请参阅[通过Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN缓存失效。
+* 现在，您可以将AEM中的[!DNL Dynamic Media]中的CDN(内容投放网络)缓存作为Cloud Service直接失效（与使用[!DNL Dynamic Media Classic]相比）。 它可以确保在几分钟内而不是几小时内即可交付最新的资产。 请参阅[通过Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN缓存失效。
 
 * 在[!DNL Assets]中，用户界面控件、导航、浏览和搜索体验中增加了增强的辅助功能支持。
 
-   * 如果在选择[!UICONTROL 添加演绎版]选项后按Esc键，则焦点将返回到工具栏。<!-- via CQ-4293594-->
-   * 使用“电子邮件”组合框时，键盘焦点可以正常工作。<!-- via CQ-4286215 -->
-   * 搜索过滤器部分的折叠元素被解释为标准的可扩展折叠元素。<!-- via CQ-4273103 -->
-   * 将标记应用于资产时，对话框将标记显示为树元素。 ARIA属性适当地应用于树元素，以使它们现在可访问。<!-- via CQ-4272964 -->
+   * 如果在选择[!UICONTROL 添加演绎版]选项后按Esc键，焦点将返回到工具栏。<!-- via CQ-4293594-->
+   * 使用“电子邮件”组合框时，键盘焦点会按预期工作。<!-- via CQ-4286215 -->
+   * 搜索过滤器部分中的折叠元素被解释为标准的可扩展折叠元素。<!-- via CQ-4273103 -->
+   * 将标记应用到资产时，对话框会将标记显示为树元素。 ARIA属性适当应用于树元素，以便现在可访问。<!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3版本现已推出。它提高了与[!DNL Experience Manager] 6.5.5服务包的兼容性，并具有更新的客户端操作系统兼容列表。 [!DNL Windows] 不支 [!DNL macOS] 持7和10.14之前的版本。
+* [!DNL AEM Desktop app] 2.0.3版现已推出。它提高了与[!DNL Experience Manager] 6.5.5 Service Pack的兼容性，并具有更新的客户端操作系统兼容列表。 [!DNL Windows] 不支 [!DNL macOS] 持早于10.14的7和版本。
 
 ### [!DNL Assets] {#bugs-fixed}中修复的错误
 
-* 首次单击“相关”和“不相关”选项时，该选项不响应。 (CQ-4299022)
+* 首次单击时，“关联”和“不关联”选项不响应。 (CQ-4299022)
 * 下载资产时，如果您选择通过电子邮件接收资产的选项，则不会发送电子邮件。 (CQ-4299146)
 
-## Adobe Experience Manager商务作为Cloud Service{#cloud-services-commerce}
+## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 产品控制台功能现已可用。 这使AEM中的营销人员／作者能够视图和浏览存储在商务后端中的类别和产品。 还在产品控制台中提供对类别和产品属性的支持。
+* 产品控制台功能现已可用。 这使AEM中的营销人员/作者能够视图和导航存储在商务后端中的类别和产品。 还在产品控制台中提供了对类别和产品属性的支持。
 
-* 产品和类别选择器经过改进，可让营销人员通过SKU选择产品或通过类别ID选择类别。
+* 产品和类别选择器得到改进，允许营销人员通过SKU选择产品或通过类别ID选择类别。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 发布日期 {#release-date-cm}
 
-[!UICONTROL Cloud Manager]版本2020.8.0的发布日期为2020年8月6日。
+[!UICONTROL Cloud Manager]版本2020.8.0的发布日期为2020年8月06日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
-* 内容审核是在Cloud Manager Sites Production Pipelines中启用的一项功能。 具有站点的项目的生产管道配置现在包括名为&#x200B;**内容审核**&#x200B;的第三个选项卡。 每当运行生产管道时，在进行自定义功能测试后，管道中将包括新的内容审核步骤，该测试将根据包括性能、SEO（搜索引擎优化）、辅助功能、最佳实践和PWA（渐进式Web应用程序）在内的多个维度评估站点。
+* 内容审核是在Cloud Manager Sites Production Pipelines中启用的一项功能。 具有站点的项目的生产管道配置现在包括名为&#x200B;**内容审核**&#x200B;的第三个选项卡。 每当生产管道运行时，在进行自定义功能测试后，该管道中将包括新的内容审核步骤，该测试将根据包括性能、SEO（搜索引擎优化）、辅助功能、最佳实践和PWA（渐进式Web应用程序）在内的许多维度评估站点。
 
 
    >[!NOTE]
-   >内容审核现已更名为“体验审核”。
+   >内容审核现已更名为Experience Audit。
 
-   有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)。
+   有关更多详细信息，请参阅[Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 * 现在，资产项目中新创建的环境将自动配置智能内容服务。
 
-* 休眠环境可以从云管理器的&#x200B;**概述**&#x200B;页面中解除休眠。
+* 在Cloud Manager的&#x200B;**概述**&#x200B;页面中，可以取消休眠环境。
 
-* 能够在页面上执行体验检查，这由Google Lighthouse提供支持。 作为Cloud Manager渠道的一部分，最多可以根据体验KPI检查和验证25个页面，并在Cloud Manager UI中显示分数。
+* 能够在页面上执行体验检查，由Google Lighthouse提供支持。 作为Cloud Manager渠道的一部分，可以根据体验KPI检查和验证最多25个页面，并在Cloud Manager用户界面中显示分数。
 
 ### 错误修复 {#bug-fixes-cm}
 
@@ -97,15 +97,15 @@ ht-degree: 5%
 
 * 在管道执行页面上，分支名称的格式不正确。
 
-* 在某些情况下，已完成的管道执行未被成功记录为已完成，从而防止了管道的新执行。
+* 在某些情况下，已完成的管道执行没有被成功记录为已完成，从而防止管道的新执行。
 
-* 由于内部通信问题，管道执行偶尔会被卡住&#x200B;*。*
+* 由于内部通信问题，管道执行偶尔会遇到&#x200B;*卡住*。
 
-* 在设置新组织时，某些除系统管理员以外具有管理角色的用户被错误地授予了对Cloud Manager的访问权限。
+* 在设置新组织时，某些除系统管理员之外具有管理角色的用户被错误地授予了对Cloud Manager的访问权限。
 
 * 在某些情况下，更新索引作业多次并行启动，导致部署失败。
 
-* 项目卡上的工具提示不一致正确。
+* 项目卡上的工具提示并不一致。
 
 * 在删除环境时，用户界面错误地允许尝试对其执行操作。
 
@@ -117,7 +117,7 @@ ht-degree: 5%
 
 * “内容审核”选项卡使用作者域而非发布域错误地显示了基本URL。
 
-* 要激活“内容审核”步骤，用户必须编辑管道，（可选）添加页面。 如果未添加任何页面，则将审核主页。
+* 要激活“内容审核”步骤，用户必须编辑管道，并（可选）添加页面。 如果未添加任何页面，将审核主页。
 
 ## 内容传输工具 {#content-transfer-tool}
 
@@ -125,11 +125,11 @@ ht-degree: 5%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容传输工具现在支持共享S3数据存储。
+* 内容传输工具现在支持共享S3 DataStore。
 
 ### 错误修复 {#ctt-bug-fixes}
 
-* 为工具添加了更多超时以完成操作。
+* 为该工具添加了更多超时以完成操作。
 
 * 早期版本的UI有时显示成功的提取，即使日志显示错误。
 
@@ -139,8 +139,8 @@ ht-degree: 5%
 
 ### 新增功能 {#what-is-new-refactoring}
 
-* 发布的AIO-CLI插件可统一代码重构工具，使开发人员能从一个位置调用和执行代码重构工具。 请参阅[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)以获取更多详细信息。
+* 发布的AIO-CLI插件用于统一代码重构工具，使开发人员能从一个位置调用和执行代码重构工具。 请参阅[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)以了解更多详细信息。
 
-* AEM Dispatcher Converter经过扩展，可支持将内部部署和Adobe Managed Services Dispatcher配置转换为AEM，作为Cloud Service兼容的Dispatcher配置。 请参阅[Git资源：AEMCloud Service调度程序转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)以了解更多详细信息。
+* AEM Dispatcher Converter已扩展，可支持将内部部署和Adobe Managed Services Dispatcher配置转换为AEM作为与Cloud Service兼容的Dispatcher配置。 请参阅[Git资源：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)以了解更多详细信息。
 
 * AEM Dispatcher Converter重新写入` node.js `并与AIO-CLI插件集成。
