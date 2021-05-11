@@ -6,9 +6,9 @@ feature: 智能标记，标记
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2401'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 与自然语言词汇相比，基于业务分类的标记有助于使资产与公司的业务相协调，并确保最相关的资产出现在搜索中。 例如，汽车制造商可以用型号名称标记汽车图像，以便在搜索时只显示相关图像以设计促销活动。
 
-在后台，该功能使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架来训练其关于标签结构和业务分类的图像识别算法。 然后，此内容智能可用于对不同的资产集应用相关标记。 默认情况下，新的[!DNL Experience Manager Assets]部署与[!DNL Adobe Developer Console]集成。 它有助于更快地配置智能标签功能。 在旧版部署中，管理员可以手动[配置智能标签集成](/help/assets/smart-tags-configuration.md#aio-integration)。
+在后台，该功能使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架来训练其关于标签结构和业务分类的图像识别算法。 然后，此内容智能可用于对不同的资产集应用相关标记。 [!DNL Experience Manager Assets] 默认情况下，部署 [!DNL Adobe Developer Console] 与集成。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ ht-degree: 6%
 
 ## 标记资源{#tag-assets}
 
-在培训了智能标记服务后，您可以触发标记工作流以自动对另一组资产应用标记。 您可以按需应用标记工作流，或将其计划以定期执行。 标记工作流同时适用于资产和文件夹。
+在您培训了智能标记服务后，上传的资产会自动添加标记。 [!DNL Experience Manager] 近乎实时地应用相应的标签。您可以按需应用标记工作流，或将其计划以定期执行。 标记工作流同时适用于资产和文件夹。
 
-### 从工作流控制台{#tagging-assets-from-the-workflow-console}中标记资源
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. 在[!DNL Experience Manager]接口中，转至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。
-1. 在&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面中，选择&#x200B;**[!UICONTROL DAM智能标记资产]**&#x200B;工作流，然后单击工具栏中的&#x200B;**[!UICONTROL 开始工作流]**。
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. 在&#x200B;**[!UICONTROL 运行工作流]**&#x200B;对话框中，浏览至包含要自动应用标记的资产的有效负荷文件夹。
-1. 指定工作流的标题和可选注释。 单击&#x200B;**[!UICONTROL 运行]**。
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *图：导航到资产文件夹并检查标记，以验证您的资产是否已正确标记。有关详细信息，请参阅[管理智能标签](#manage-smart-tags-and-searches)。*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### 从时间轴{#tagging-assets-from-the-timeline}标记资源
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. 从[!DNL Assets]用户界面中，选择包含要应用智能标记的资产或特定资产的文件夹。
-1. 从左上角，打开&#x200B;**[!UICONTROL 时间轴]**。
-1. 从左侧栏底部打开操作，然后单击&#x200B;**[!UICONTROL 开始工作流]**。
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
-   ![开始_workflow](assets/start_workflow.png)
+   ![start_workflow](assets/start_workflow.png)
 
-1. 选择&#x200B;**[!UICONTROL DAM智能标记资产]**&#x200B;工作流，然后为工作流指定标题。
-1. 单击&#x200B;**[!UICONTROL 开始]**。 该工作流会对资产应用您的标记。 导航到资产文件夹并检查标记，以验证您的资产是否已正确标记。 有关详细信息，请参阅[管理智能标签](#manage-smart-tags-and-searches)。
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->在随后的标记周期中，只有修改后的资产再次被标记为新训练的标记。 但是，如果标记工作流的上次和当前标记周期之间的间隙超过24小时，即使是未更改的资产也会被标记。 对于定期添加标签的工作流，当时间间隔超过六个月时，将标记未更改的资产。
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### 标记已上载的资产{#tag-uploaded-assets}
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] 可以自动标记用户上传到DAM的资产。为此，管理员需要配置一个工作流，以添加一个可用的步骤来标记资产。 请参阅[如何为已上传的资产启用智能标记](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## 管理智能标记和资产搜索{#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [配 [!DNL Experience Manager] 置智能标记](smart-tags-configuration.md)
 >* [了解智能标记如何帮助管理资产](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [智能标记视频资产](smart-tags-video-assets.md)
+>* [智能标记视频资源](smart-tags-video-assets.md)
 
