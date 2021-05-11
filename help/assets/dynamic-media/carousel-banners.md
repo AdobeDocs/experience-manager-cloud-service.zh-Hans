@@ -5,9 +5,9 @@ feature: 传送横幅
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4556'
 ht-degree: 9%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-在此，您可以通过单击数字来浏览图像。 此外，幻灯片会根据您可以自定义的时间间隔自动旋转。 您在传送横幅中添加的图像支持热点和图像映射。 用户可以点按或转到超链接或访问“快速视图”窗口。
+在此，您可以通过单击数字来浏览图像。 此外，幻灯片会根据您可以自定义的时间间隔自动旋转。 旋转横幅中的图像支持热点和图像映射。 用户可以点按或转到超链接或访问“快速视图”窗口。
 
 在此示例中，用户已点按或单击图像映射，并访问了手套的“快速视图”窗口：
 
@@ -34,7 +34,7 @@ ht-degree: 9%
 
 ## 观看如何创建传送横幅{#watch-how-carousel-banners-are-created}
 
-观看有关如何创建传送横幅的[的10分钟33秒演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)。 您还可以了解如何预览、编辑和传送传送传送横幅。
+观看有关如何创建传送横幅的[演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(持续时间：10分33秒)。 您还可以了解如何预览、编辑和传送传送传送横幅。
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ ht-degree: 9%
 * “快速视图”数据将转换为准备在网页上呈现的内容。
 * 最后，前端代码以可视形式将这些内容呈现在屏幕上。
 
-接下来的方法是访问现有网站中实施“快速视图”功能的不同区域。 然后触发快速视图并捕获网页发送的用于加载快速视图数据或内容的Ajax URL。
+接下来的方法是访问现有网站中实施“快速视图”功能的不同区域。 然后触发快速视图并获取网页发送的用于加载快速视图数据或内容的Ajax URL。
 
 通常情况下，您不需要使用任何专业的调试工具。现代的 Web 浏览器具备 Web 检查器，可以实现相同的功能。下面列举了一些具备 Web 检查器的 Web 浏览器：
 
-* 要在Google Chrome中查看所有传出HTTP请求，请按F12(Windows)或Command-Option-I(Mac)打开“开发人员工具”面板。 点按网络选项卡。
-* 在Firefox中，您可以按F12(Windows)或Command-Option-I(Mac)激活Firebug插件。 使用其“网络”选项卡，或使用内置的“检查器”工具及其“网络”选项卡。
+* 要在Google Chrome中查看所有传出HTTP请求，请按F12(Windows®)或Command-Option-I(Mac)打开“开发人员工具”面板。 点按网络选项卡。
+* 在Firefox中，您可以通过按F12(Windows®)或Command-Option-I(Mac)来激活Firebug插件。 使用其“网络”选项卡，或使用内置的“检查器”工具及其“网络”选项卡。
 
 在浏览器中打开网络监视时，在页面上触发“快速视图”。
 
@@ -191,7 +191,7 @@ ht-degree: 9%
 >
 >必须将非管理用户添加到&#x200B;**[!UICONTROL dam-users]**&#x200B;组，才能创建或编辑传送横幅。 如果您在创建或编辑时遇到问题，请咨询系统管理员，他可以将您添加到&#x200B;**[!UICONTROL dam-users]**&#x200B;组。
 
-**创建传送集**
+**要创建传送集，请执行以下操作：**
 
 1. 在资产中，导航到要创建传送集的文件夹，然后点按&#x200B;**[!UICONTROL 创建>传送集]**。
 1. 在传送横幅编辑器页面上，点按&#x200B;**[!UICONTROL 以打开资产选择器]**&#x200B;以选择第一张幻灯片的图像。
@@ -217,16 +217,17 @@ ht-degree: 9%
    要删除幻灯片，请点按或单击幻灯片，然后点按或单击工具栏中的&#x200B;**[!UICONTROL 删除幻灯片]**。 要移动幻灯片，请点按重新排序图标，然后按住并移至所需位置。
 
 1. 在幻灯片中添加图像后，可以向图像中添加热点和/或图像映射。 请参阅[添加热点或图像映射](#adding-hotspots-or-image-maps-to-an-image-banner)。
-1. 您可以更改传送集的可视设计和行为。 点按或单击“行为”和“外观”选项卡，并调整旋转横幅的外观或特定组件的行为方式。 有关如何使用查看器编辑器的详细信息，请参阅[管理查看器预设](/help/assets/dynamic-media/viewer-presets.md)。
+1. 您可以更改传送集的可视设计和行为。 点按或单击&#x200B;**[!UICONTROL Behavior]**&#x200B;和&#x200B;**[!UICONTROL Appearance]**&#x200B;选项卡，并调整传送横幅的显示方式或特定组件的行为方式。 有关如何使用查看器编辑器的详细信息，请参阅[管理查看器预设](/help/assets/dynamic-media/viewer-presets.md)。
 
    >[!NOTE]
    >
    >对于传送横幅，您可以调整以下内容：
-   >    * 图像显示的持续时间。 默认情况下，每幅图像显示9秒。
-   >    * 动画. 默认情况下，每张幻灯片过渡都是淡入淡出。 您可以将其更改为幻灯片过渡。
-   >    * 按钮的样式。 用户点击每个点或数字即可旋转横幅。 您可以更改设置指示符按钮的显示位置（以及它们是数字或虚线样式）以及它们的大小。
-   >    * 更改图像映射的高亮样式或用于热点的图标。
-   >    * 在编辑查看器预设之前，请选择要作为预设基础的样式。 如果您不选择样式，则在开始编辑查看器预设时，如果您更改为其他预设，则会丢失所有更改。
+   >
+   >* 图像显示的持续时间。 默认情况下，每幅图像显示9秒。
+   >* 动画. 默认情况下，每张幻灯片过渡都是淡入淡出。 您可以将其更改为幻灯片过渡。
+   >* 按钮的样式。 用户点击每个点或数字即可旋转横幅。 您可以更改设置指示符按钮的显示位置（以及它们是数字或虚线样式）以及它们的大小。
+   >* 更改图像映射的高亮样式或用于热点的图标。
+   >* 在编辑查看器预设之前，请选择要作为预设基础的样式。 如果您不选择样式，则在开始编辑查看器预设时，如果您更改为其他预设，则会丢失所有更改。
 
 
    您还可以预览传送横幅的外观。 请参阅[（可选）预览传送横幅](#optional-previewing-carousel-banners)。
@@ -263,7 +264,7 @@ ht-degree: 9%
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**向图像横幅添加热点或图像映射**
+**要将热点或图像映射添加到图像横幅，请执行以下操作：**
 
 1. 从资产中，导航到您要实现交互的传送集。
 1. 选择传送集，然后点按&#x200B;**[!UICONTROL 编辑]**。 此时将打开传送查看器编辑器。
@@ -339,7 +340,7 @@ ht-degree: 9%
 * 删除传送集。
 * 添加或编辑热点和图像映射。 另请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
-**编辑传送集**
+**要编辑传送集，请执行以下操作：**
 
 1. 执行下列任一操作：
 
@@ -364,7 +365,7 @@ ht-degree: 9%
 
 ## （可选）预览传送横幅{#optional-previewing-carousel-banners}
 
-您可以使用预览来查看传送横幅对客户的外观。 使用预览还可以测试传送横幅的热点和图像映射，以确保它们按预期的方式工作。
+您可以使用预览来查看传送横幅对客户的显示方式。 使用预览还可以测试传送横幅的热点和图像映射，以确保它们按预期的方式工作。
 
 当您对传送横幅满意时，可以发布它。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
@@ -372,7 +373,7 @@ ht-degree: 9%
 
 您可以从传送编辑器（首选方法）或&#x200B;**[!UICONTROL 查看器]**&#x200B;预览中列表传送横幅。
 
-**预览传送横幅**
+**要预览传送横幅：**
 
 1. 在&#x200B;**[!UICONTROL 资产]**&#x200B;中，导航到您已创建的现有传送横幅，然后点按以将其打开。
 1. 点按&#x200B;**[!UICONTROL 编辑]**。
@@ -383,7 +384,7 @@ ht-degree: 9%
 1. 点按&#x200B;**[!UICONTROL 预览]**。
 1. 要测试其关联的操作，请点按图像上的热点或图像映射。
 
-**从“查看器”预览传送横幅列表**
+**要从“查看器”列表预览传送横幅，请执行以下操作：**
 
 1. 在&#x200B;**[!UICONTROL 资产]**&#x200B;中，导航到您已创建的现有传送横幅，然后点按以将其打开。
 1. 在预览页面的左上角附近，单击内容图标。
@@ -451,6 +452,6 @@ AEM Assets返回的嵌入代码已经有一个已注释掉的可用事件处理�
 
 触发“快速视图URL”并激活“快速视图”面板的最后一步操作，极有可能需要IT部门的前端IT人员的协助。他们最了解如何通过拥有现成的快速视图URL从正确的步骤准确触发快速视图实施。
 
-## 使用快速视图创建自定义弹出窗口{#using-quickviews-to-create-custom-pop-ups}
+## 使用快速视图创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-请参阅[使用快速视图创建自定义弹出窗口](/help/assets/dynamic-media/custom-pop-ups.md)。
+请参阅[使用快速视图创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
