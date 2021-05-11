@@ -1,18 +1,18 @@
 ---
 title: 使用快速视图创建自定义弹出窗口
-description: “了解默认快速视图在电子商务体验中的使用方式，在电子商务体验中，弹出窗口会显示产品信息以推动购买。 您可以触发要在弹出窗口中显示的自定义内容。”
+description: “了解默认快速视图在电子商务体验中的使用方式，在电子商务体验中，弹出窗口会显示产品信息以推动购买。 您可以触发要在弹出式Windows®中显示的自定义内容。”
 feature: 交互式图像，交互式视频，旋转横幅
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 2%
 
 ---
 
-# 使用快速视图创建自定义弹出窗口{#using-quickviews-to-create-custom-pop-ups}
+# 使用快速视图创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 默认的“快速视图”用于电子商务体验，弹出窗口显示产品信息以推动购买。 但是，您可以触发要在弹出窗口中显示的自定义内容。 根据您使用的查看器，客户可以点按热点、缩略图或图像映射以查看信息或相关内容。
 
@@ -24,7 +24,7 @@ Dynamic Media中的以下查看器支持快速视图:
 
 虽然每个查看器的功能不同，但创建快速视图的过程在所有三个支持的查看器中是相同的。
 
-**使用快速视图创建自定义弹出窗口**
+**要使用快速视图创建自定义弹出窗口，请执行以下操作：**
 
 1. 为已上传的资产创建快速视图。
 
@@ -102,8 +102,8 @@ Dynamic Media中的以下查看器支持快速视图:
 
    有关`setHandlers()`方法的详细信息，请访问：
 
-   * 交互式图像查看器：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * 交互式视频查看器：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * 交互式图像查看器 — [设置器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * 交互式视频查看器 — [设置器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. 现在配置`quickViewActivate`处理函数。
 
