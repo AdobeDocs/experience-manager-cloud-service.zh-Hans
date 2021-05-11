@@ -4,9 +4,9 @@ description: 了解如何将Adobe Experience Manager中的Dynamic Media配置为
 role: Administrator,Business Practitioner
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4053'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -93,9 +93,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | 公司 | Dynamic Media帐户的名称。 您可能为不同子品牌、部门或暂存/生产环境拥有多个Dynamic Media帐户。 |
    | 公司根文件夹路径 | 您的公司的根文件夹路径。 |
-   | 发布资产 | 您可以从以下三个选项中进行选择：<br>**[!UICONTROL Immediale ]**:上传资产后，系统会立即收录资产并提供URL/嵌入。 发布资产不需要用户干预。<br>**[!UICONTROL 激活时]**:在提供URL/嵌入链接之前，必须先显式发布资产。<br>**[!UICONTROL 选择性发布&#x200B;]**:资产会自动发布，仅用于安全预览。它们也可以显式发布到Experience Manager作为Cloud Service，而不发布到DMS7以在公共域中投放。 将来，此选项打算将资产作为Cloud Service发布到Experience Manager，并将资产发布到Dynamic Media，它们互不相容。 即，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您也可以将仅以Experience Manager形式发布资源作为预览的Cloud Service;DMS7中不发布这些相同的资源，以便在公共域中投放。 |
+   | 发布资产 | 您可以从以下三个选项中进行选择：<br>**[!UICONTROL Immediale ]**— 上传资产时，系统会收录资产并立即提供URL/Embed。 发布资产不需要用户干预。<br>**[!UICONTROL 激活]**  — 必须先显式发布资产，然后才能提供URL/嵌入链接。<br>**[!UICONTROL 选择性发布&#x200B;]**— 资产是自动发布的，仅用于安全预览。它们也可以显式发布到Experience Manager作为Cloud Service，而不发布到DMS7以在公共域中投放。 将来，此选项打算将资产作为Cloud Service发布到Experience Manager，并将资产发布到Dynamic Media，它们互不相容。 即，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您也可以将仅以Experience Manager形式发布资源作为预览的Cloud Service;DMS7中不发布这些相同的资源，以便在公共域中投放。 |
    | 安全预览服务器 | 允许您指定指向安全再现预览服务器的URL路径。 也就是说，在生成再现后，Experience Manager作为Cloud Service可以安全地访问和预览远程Dynamic Media再现(不会将二进制文件作为Cloud Service实例发送回Experience Manager)。<br>除非您有特殊安排来使用您自己的公司服务器或特殊服务器，否则Adobe建议您按指定的方式保留此设置。 |
-   | 同步所有内容 | 默认选中。 如果您希望在同步到Dynamic Media时有选择地包括或排除资源，请取消选择此选项。 取消选择此选项后，您可以从以下两种Dynamic Media同步模式中进行选择：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 默认情况下启用&#x200B;]**:默认情况下，此配置将应用于所有文件夹，除非您专门为排除标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 默认禁用]**:只有显式标记选定的文件夹以同步到Dynamic Media后，配置才会应用于任何文件夹。<br>要将选定的文件夹标记为同步到Dynamic Media，请选择一个资产文件夹，然后在工具栏中点按 **[!UICONTROL 属性]**。在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中，从以下三个选项中进行选择。 完成后，点按&#x200B;**[!UICONTROL 保存]**。 *记住：如果您选择了“同步所有内容”，则这三个&#x200B;**选项将**不可用。* 另请参 [阅在Dynamic Media的文件夹级别使用选择性发布](/help/assets/dynamic-media/selective-publishing.md)。<br>**[!UICONTROL 继承&#x200B;]**:文件夹上没有显式同步值。相反，该文件夹会从其某个祖先文件夹或云配置中的默认模式继承同步值。 通过工具提示显示继承的节目的详细状态。<br>**[!UICONTROL 为子文件夹启用]**:包含此子树中的所有内容以同步到Dynamic Media。特定于文件夹的设置将覆盖云配置中的默认模式。<br>**[!UICONTROL 对子文件夹禁用&#x200B;]**:将此子树中的所有内容排除在同步到Dynamic Media之外。 |
+   | 同步所有内容 | 默认选中。 如果您希望在同步到Dynamic Media时有选择地包括或排除资源，请取消选择此选项。 取消选择此选项后，您可以从以下两种Dynamic Media同步模式中进行选择：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 默认启用&#x200B;]**— 默认情况下，该配置将应用于所有文件夹，除非您专门为排除而标记文件夹。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 默认情况下禁用]**  — 在显式标记选定的文件夹以同步到Dynamic Media之前，此配置不会应用于任何文件夹。<br>要将选定的文件夹标记为同步到Dynamic Media，请选择一个资产文件夹，然后在工具栏中点按 **[!UICONTROL 属性]**。在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中，从以下三个选项中进行选择。 完成后，点按&#x200B;**[!UICONTROL 保存]**。 *记住：如果您选择了“同步所有内容”，则这三个&#x200B;**选项将**不可用。* 另请参 [阅在Dynamic Media的文件夹级别使用选择性发布](/help/assets/dynamic-media/selective-publishing.md)。<br>**[!UICONTROL 继承&#x200B;]**— 文件夹上没有显式同步值。相反，该文件夹会从其某个祖先文件夹或云配置中的默认模式继承同步值。 通过工具提示显示继承的节目的详细状态。<br>**[!UICONTROL 为子文件夹启用]**  — 包括此子树中的所有内容以同步到Dynamic Media。特定于文件夹的设置将覆盖云配置中的默认模式。<br>**[!UICONTROL 对子文件夹禁用&#x200B;]**— 将此子树中的所有内容从同步到Dynamic Media中排除。 |
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >此收件箱通知会通知您配置是否成功。
    > 有关详细信息，请参阅[对新Dynamic Media配置](#troubleshoot-dm-config)和[您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)进行疑难解答。
 
-1. 要在发布Dynamic Media内容之前安全地进行预览，默认情况下，Experience Manager作为Cloud Service使用基于令牌的身份验证。 但是，您也可以“”允许列表更多IP，以便让用户能够访问安全的预览内容。 要设置此操作，请执行以下操作：<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 要在发布Dynamic Media内容之前安全地进行预览，默认情况下，Experience Manager作为Cloud Service使用基于令牌的验证。 但是，您也可以“”允许列表更多IP，以便让用户能够访问安全的预览内容。 要设置此操作，请执行以下操作：<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
    * 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。 您的凭据和登录详细信息由Adobe在设置时提供。 如果您没有此信息，请与Adobe客户关怀部门联系。
    * 在页面右上角附近的导航栏上，点按&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。
@@ -139,7 +139,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 另请参阅[您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
-**对新Dynamic Media配置进行疑难解答**
+**要对新的Dynamic Media配置进行疑难解答：**
 
 1. 在Experience Manager右上角附近，点按Cloud Service页，然后点按&#x200B;**[!UICONTROL 视图全部]**。
 1. 在“收件箱”页面上，点按成功通知以阅读配置状态和日志的概述。
@@ -273,7 +273,7 @@ Dynamic Media色彩管理可让您对资源进行色彩校正。 借助颜色校
 
 请参阅[上传资产](/help/assets/add-assets.md)。
 
-**要编辑支持的格式的MIME类型，请执行以下操作**
+**要编辑支持的格式的MIME类型，请执行以下操作：**
 
 1. 在Experience Manager作为Cloud Service时，单击Experience Manager作为Cloud Service徽标以访问全局导航控制台，然后单击&#x200B;**[!UICONTROL 常规>CRXDE Lite]**。
 1. 在左边栏中，导航到以下内容：
@@ -299,7 +299,7 @@ Dynamic Media色彩管理可让您对资源进行色彩校正。 借助颜色校
 
 您可以为Experience Manager资产中不支持的格式添加自定义MIME类型。 要确保在CRXDE Lite中添加的任何新节点不会被Experience Manager删除，请将MIME类型移到`image_`之前。 另外，确保将其启用值设置为&#x200B;**[!UICONTROL false]**。
 
-**为不支持的格式添加MIME类型**
+**要为不支持的格式添加MIME类型，请执行以下操作：**
 
 1. 从Experience Manager作为Cloud Service，点按&#x200B;**[!UICONTROL 工具>操作> Web控制台]**。
 
@@ -319,7 +319,7 @@ Dynamic Media色彩管理可让您对资源进行色彩校正。 借助颜色校
 
 1. 在刚刚添加的空文本字段中键入`DWG=image/vnd.dwg`。
 
-   示例`DWG=image/vnd.dwg`仅供说明之用。 您在此处添加的MIME类型可以是任何其他不支持的格式。
+   `DWG=image/vnd.dwg` MIME类型仅用于示例目的。 您在此处添加的MIME类型可以是任何其他不支持的格式。
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -384,7 +384,7 @@ Adobe建议对PDF、PostScript®和PSD文件使用以下“调整”作业参数
 
 Granite Transit工作流队列用于&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流。 在Dynamic Media中，它用于图像摄取和处理。
 
-**更新Granite临时工作流队列**
+**要更新Granite临时工作流队列，请执行以下操作：**
 
 1. 导航到[https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr)并搜索&#x200B;**队列：Granite临时工作流队列**。
 
