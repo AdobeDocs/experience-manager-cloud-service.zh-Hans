@@ -4,9 +4,9 @@ description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用�
 feature: 内容片段，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 1%
 
 ---
@@ -121,20 +121,20 @@ AEM中有两种类型的端点：
 
 * 全局
    * 可供所有站点使用。
-   * 此端点可以使用所有租户的所有内容片段模型。
-   * 如果租户之间应共享任何内容片段模型，则应在全局租户下创建这些模型。
-* 租户:
-   * 对应于租户配置，如[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中所定义。
+   * 此端点可以使用所有站点配置（在[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定义）中的所有内容片段模型。
+   * 如果在站点配置之间应共享任何内容片段模型，则应在全局站点配置下创建这些模型。
+* 站点配置：
+   * 对应于站点配置，如[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定义。
    * 特定于指定的站点/项目。
-   * 特定租户端点将使用该特定租户的内容片段模型与来自全局租户的内容片段模型一起使用。
+   * 特定于站点配置的终结点将使用该特定站点配置的内容片段模型与全局站点配置的内容片段模型一起使用。
 
 >[!CAUTION]
 >
->内容片段编辑器允许一个租户的内容片段引用另一个租户的内容片段（通过策略）。
+>内容片段编辑器允许一个站点配置的内容片段引用另一个站点配置的内容片段（通过策略）。
 >
->在这种情况下，并非所有内容都可以使用租户特定的端点进行检索。
+>在这种情况下，并非所有内容都可以使用特定于站点配置的端点进行检索。
 >
->内容作者应控制此方案；例如，考虑将共享内容片段模型放在全局租户下可能很有用。
+>内容作者应控制此方案；例如，考虑将共享内容片段模型置于全局站点配置下可能会很有用。
 
 GraphQL for AEM全局端点的存储库路径为：
 
@@ -196,6 +196,10 @@ GraphQL for AEM全局端点的存储库路径为：
 ## GraphiQL接口{#graphiql-interface}
 
 标准[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)接口的实现可与AEM GraphQL一起使用。 可以与AEM](#installing-graphiql-interface)一起安装[。
+
+>[!NOTE]
+>
+>GraphiQL绑定了全局端点（对于特定的站点配置，它不与其他端点一起使用）。
 
 此界面允许您直接输入和测试查询。
 
@@ -587,21 +591,21 @@ query {
 
 这是必需的，因为POST查询通常不进行缓存，如果将查询作为参数使用，则参数对于HTTP服务和中间产品而言变得过大的风险很大。
 
-持久查询必须始终使用与[相应（租户）配置](#graphql-aem-endpoint)相关的端点；这样，他们就可以使用其中一种或两种方式：
+持久查询必须始终使用与[相应的Sites配置](#graphql-aem-endpoint)相关的端点；这样，他们就可以使用其中一种或两种方式：
 
 * 全局配置和端点
 查询可以访问所有内容片段模型。
-* 特定租户配置和端点
-为特定租户配置创建持久查询需要相应的租户特定端点（以提供对相关内容片段模型的访问）。
-例如，要为WKND租户专门创建持久查询，必须提前创建相应的WKND特定租户配置和WKND特定终结点。
+* 特定站点配置和端点
+为特定站点配置创建持久查询需要相应的站点配置特定端点（以提供对相关内容片段模型的访问）。
+例如，要为WKND站点配置专门创建持久查询，必须提前创建相应的WKND特定站点配置和WKND特定端点。
 
 >[!NOTE]
 >
 >有关详细信息，请参阅[在配置浏览器中启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)。
 >
->需要为相应的租户配置启用&#x200B;**GraphQL持久查询**。
+>需要为相应的站点配置启用&#x200B;**GraphQL持久查询**。
 
-例如，如果存在名为`my-query`的特定查询，它使用租户配置`my-conf`中的模型`my-model`:
+例如，如果存在名为`my-query`的特定查询，它使用站点配置`my-conf`中的模型`my-model`:
 
 * 您可以使用`my-conf`特定端点创建查询，然后查询将保存为：
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
