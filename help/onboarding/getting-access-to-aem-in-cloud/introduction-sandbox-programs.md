@@ -1,14 +1,14 @@
 ---
 title: '沙箱项目简介 '
-description: '沙箱项目简介 '
+description: 沙箱项目简介
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # 沙箱项目{#sandbox-programs}简介
 
@@ -37,5 +37,7 @@ ht-degree: 0%
 
 1. **AEM更新：** AEM更新可以手动应用于沙箱项目中的环境，且不会自动推送。有关详细信息，请参阅[AEM沙箱环境的更新](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)。
 
-1. **休眠：** 如果在某段时间内未检测到活动，沙箱项目中的环境将自动休眠。冬眠环境可以手动解除冬眠。
+1. **休眠：** 如果在某段时间内未检测到活动，沙箱项目中的环境将自动休眠。沙箱在8小时不活动后被置于休眠节点中，在此之后，它们可以解除休眠。 冬眠环境可以手动解除冬眠。
 有关详细信息，请参阅[冬眠和脱冬沙箱环境](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)。
+
+1. **删除**:沙箱在连续休眠模式下运行6个月后被删除，之后可以重新创建。
