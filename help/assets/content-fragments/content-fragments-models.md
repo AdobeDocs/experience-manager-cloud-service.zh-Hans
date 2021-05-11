@@ -5,7 +5,7 @@ feature: 内容片段
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -170,7 +170,7 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
 * **可**
 翻译在CF模型编辑器中选中某个字段上的“可翻译”复选框
 
-   * 如果尚未存在，请确保在转换配置上下文`/content/dam/<tenant>`中添加字段的属性名称。
+   * 如果尚未存在，请确保在转换配置上下文`/content/dam/<sites-configuration>`中添加字段的属性名称。
    * 对于GraphQL:将“内容片段”字段上的`<translatable>`属性设置为`yes`，以允许对仅具有可翻译内容的JSON输出进行GraphQL查询筛选。
 
 * 有关特定数据类型及其属性的详细信息，请参阅&#x200B;**[内容引用](#content-reference)**。
