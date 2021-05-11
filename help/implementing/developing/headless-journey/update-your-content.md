@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -324,11 +324,10 @@ API参考文档中定义了支持请求的确切格式。
 
 您应该继续您的AEM无头旅程，接下来查看文档[如何将一切结合在一起 — 您的应用程序和您的内容(位于AEM无头](put-it-all-together.md)中)，了解如何带入AEM无头项目并准备投入使用。
 
+[如何使用AEM创建单页应用程序(SPA)](create-spa.md) 还将说明如何使用SPA AEM Editor框架创建可编辑的SPA，以及如何集成外部SPA，从而根据需要启用编辑功能。
+
 ## 其他资源 {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [HATEOAS原则](https://en.wikipedia.org/wiki/HATEOAS)
-* [SIREN格式](https://github.com/kevinswiber/siren)
 * [资产 HTTP API](/help/assets/mac-api-assets.md)
 * [内容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
