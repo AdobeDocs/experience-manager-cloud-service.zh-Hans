@@ -5,9 +5,9 @@ feature: 资产管理
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 30%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 30%
 
 当您想 **[!UICONTROL 要播放视频或查看嵌入到网页中的资产时]** ，请使用嵌入代码功能。 将嵌入代码复制到剪贴板，以便将其粘贴到网页中。 不允许在“嵌入代码”对 **[!UICONTROL 话框中编辑代码]** 。
 
-仅当&#x200B;_不_&#x200B;使用AEM作为WCM时，才嵌入URL。 如果您使用AEM作为WCM，[将资产直接添加到页面](adding-dynamic-media-assets-to-pages.md)。
+仅当&#x200B;_不_&#x200B;使用Adobe Experience Manager作为WCM时，才嵌入URL。 如果您使用Experience Manager作为WCM，[将资产直接添加到页面](adding-dynamic-media-assets-to-pages.md)。
 
 请参阅[将URL关联到您的Web 应用程序](linking-urls-to-yourwebapplication.md)。
 
@@ -32,7 +32,7 @@ ht-degree: 30%
 >
 >请参阅[发布图像预设](managing-image-presets.md#publishing-image-presets)。
 
-**将Dynamic Media视频查看器或图像查看器嵌入网页**
+**要在网页上嵌入Dynamic Media视频查看器或图像查看器，请执行以下操作：**
 
 1. 导航到要复制其嵌入代码的&#x200B;*已发布的*&#x200B;视频或图像资产。
 
