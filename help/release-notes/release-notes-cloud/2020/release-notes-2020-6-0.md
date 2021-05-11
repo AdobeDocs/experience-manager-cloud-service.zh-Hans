@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 99%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
-
 
 # AEM as a Cloud Service 2020.6.0 发行说明 {#release-notes}
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 除通用智能标记以外，增强型智能标记还允许组织培训智能标记模型，以根据客户特定的业务标记识别图像。
 
-在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。请参阅[如何向资产添加智能标记](/help/assets/smart-tags.md)和[配置智能标记](/help/assets/smart-tags-configuration.md)。
+在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。请参阅[如何向资产添加智能标记](/help/assets/smart-tags.md)。
 
 **支持 3D 内容的摄取、预览和交付**
 
