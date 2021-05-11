@@ -3,9 +3,9 @@ title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 2%
 
 ---
@@ -72,6 +72,8 @@ ht-degree: 2%
 * 在“列”视图中浏览资产时，系统会显示每个资产的已批准或已拒绝状态。
 
 * 在列视图中浏览资产时，会为过期的资产显示一个可视指示符。
+
+* 在[!DNL Assets]元数据编辑器中提供了文本区域数据类型。 您可以使用此选项让用户在自由格式文本字段中输入元数据。
 
 ### [!DNL Assets] {#bug-fixes-assets}中的错误修复
 
