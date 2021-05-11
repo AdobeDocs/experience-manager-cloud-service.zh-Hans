@@ -1,14 +1,14 @@
 ---
 title: '冬眠和冬眠沙箱环境 '
-description: '冬眠和冬眠沙箱环境 '
+description: 冬眠和冬眠沙箱环境
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # 冬眠和冬眠沙箱环境{#hibernating-introduction}
 
@@ -121,8 +121,12 @@ ht-degree: 0%
 
 * AEM升级可应用于冬眠环境，客户可从Cloud Manager手动触发。 环境将保持冬眠状态，在冬眠后，新版本将显示在环境中。
 
->[!NOTE]
->目前，Cloud Manager不指示环境是否已休眠。
+* 沙箱在8小时不活动后被置于休眠节点中，在此之后，它们可以解除休眠。
+
+* 沙箱在连续休眠模式下运行6个月后被删除，之后可以重新创建。
+
+   >[!NOTE]
+   >目前，Cloud Manager不指示环境是否已休眠。
 
 ## AEM对沙箱环境{#aem-updates-sandbox}的更新
 
@@ -135,9 +139,4 @@ ht-degree: 0%
 >[!NOTE]
 >* 只有目标环境具有正确配置的管线时，才能运行手动更新。
 >* 手动更新至&#x200B;*Production*&#x200B;或&#x200B;*Stage*&#x200B;环境将自动更新至另一个。 Production+Stage环境集必须位于同一AEM版本上。
-
-
-
-
-
 
