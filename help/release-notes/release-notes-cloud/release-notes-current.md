@@ -3,9 +3,9 @@ title: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明
 description: 作为Cloud Service的 [!DNL Adobe Experience Manager] 当前发行说明。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '2002'
 ht-degree: 2%
 
 ---
@@ -223,6 +223,22 @@ AEM中Cloud Manager作为Cloud Service 2021.4.0的发布日期为2021年4月8日
 * `CloudServiceIncompatibleWorkflowProcess`的问题在可下载的问题CSV文件中严重性不正确。
 
 * `Runmode`检查在非文件夹节点上产生误报。
+
+## 内容传输工具 {#content-transfer-tool}
+
+### 发布日期 {#release-date-ctt}
+
+内容传输工具v1.4.0的发布日期为2021年5月11日。
+
+### 新增功能 {#what-is-new-ctt-may}
+
+* 此版本的内容传输工具为要迁移到Cloud Service的资产创建文本演绎版。 文本演绎版是必需的，以支持对收录的资产进行全文搜索。
+* 用户可创建的内容传输工具迁移集的最大数量已从4个增加到10个。
+
+### 错误修复 {#bug-fixes-ctt-may}
+
+* 与内容传输工具UI中的自动刷新功能相关的多个错误修复。
+* 具有`wipe=true`的内容传输工具导致目标上的计数器索引不正确。 此问题已解决。
 
 ## 最佳实践分析器{#best-practices-analyzer}
 
