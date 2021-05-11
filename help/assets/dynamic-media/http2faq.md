@@ -4,9 +4,9 @@ description: 了解HTTP2内容投放。
 role: Administrator,Business Practitioner
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '794'
 ht-degree: 3%
 
 ---
@@ -17,15 +17,13 @@ Adobe欣然宣布推出HTTP/2投放内容。 使用HTTP/2时，整体性能会�
 
 >[!NOTE]
 >
->此功能要求您使用与Adobe Experience Manager Dynamic Media绑定的现成CDN。 此功能不支持任何其他自定义CDN。
+>此功能要求您使用与Adobe Experience Manager - Dynamic Media捆绑的现成内容投放网络。 此功能不支持任何其他自定义内容投放网络。
 
 ## 什么是HTTP/2?{#what-is-http}
 
 HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信息，同时降低所需的处理能力。
 
-以下网站以简短而简单的方式描述了HTTP/2及其优势：
-
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+网站文章[您必须了解的关于HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)以简单而简单的方式描述了HTTP/2及其优势。
 
 ## 将内容投放转到HTTP/2有哪些主要优势？{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
