@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 2%
+source-wordcount: '1381'
+ht-degree: 1%
 
 ---
 
@@ -50,24 +50,24 @@ ht-degree: 2%
 >
 >AEM GraphQL API是基于标准GraphQL API规范的自定义实施。
 
-<!--
-## GraphQL - An Introduction {#graphql-introduction}
+## GraphQL — 简介{#graphql-introduction}
 
-GraphQL is an open-source specification that provides:
+GraphQL是一个开放源代码规范，它提供：
 
-* a query language that enables you to select specific content from structured objects.
-* a runtime to fulfill these queries with your structured content.
+* 一种查询语言，允许您从结构化对象中选择特定内容。
+* 一个运行时，用于使结构化内容实现这些查询。
 
-GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
+GraphQL是&#x200B;*strongly*&#x200B;类型API。 这意味着&#x200B;*所有*&#x200B;内容必须按照类型清晰地结构化和组织，这样GraphQL *才能了解*&#x200B;要访问的内容和访问方式。 数据字段在GraphQL模式中定义，GraphQL定义内容对象的结构。
 
-GraphQL endpoints then provide the paths that respond to the GraphQL queries.
+然后，GraphQL端点提供响应GraphQL查询的路径。
 
-All this means that your app can accurately, reliably and efficiently select the content that it needs - just what you need when used with AEM.
+所有这些意味着您的应用程序能够准确、可靠、高效地选择所需内容 — 这正是您与AEM一起使用时需要的内容。
 
 >[!NOTE]
 >
->See *GraphQL*.org and *GraphQL*.com.
+>请参阅&#x200B;*GraphQL*.org和&#x200B;*GraphQL*.com。
 
+<!--
 ## AEM and GraphQL {#aem-graphql}
 
 GraphQL is used in various locations in AEM; for example:
@@ -83,25 +83,29 @@ GraphQL is used in various locations in AEM; for example:
 >[!NOTE]
 >
 >This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
+-->
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to allow you to perform (complex) queries on your Content Fragments.
+AEM GraphQL API是基于标准GraphQL API规范的自定义版本，专门配置为允许您对内容片段执行（复杂）查询。
 
-Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
+使用内容片段，因为内容是根据内容片段模型构建的。 这满足了GraphQL的基本要求。
 
-* A Content Fragment Model is built up of one, or more, fields. 
-  * Each field is defined according to a Data Type.
-* Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
+* 内容片段模型由一个或多个字段组成。
+   * 每个字段都根据数据类型定义。
+* 内容片段模型用于生成相应的AEM GraphQL模式。
 
-To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
+要实际访问GraphQL for AEM（和内容），使用端点提供访问路径。
 
-The content returned, via the AEM GraphQL API, can then be used by your applications. 
+通过AEM GraphQL API返回的内容随后便可供应用程序使用。
+
+为了帮助您直接输入和测试查询，还可以与AEM GraphQL(可与AEM一起安装)一起使用标准GraphiQL界面的实现。 它提供语法高亮显示、自动完成、自动建议等功能，以及历史记录和在线文档。
 
 >[!NOTE]
 >
->The AEM GraphQL API implementation is based on the GraphQL Java libraries.
+>AEM GraphQL API实现基于GraphQL Java库。
 
+<!--
 ### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
 The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud Service environment:
@@ -113,41 +117,41 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
   * Query content for "content management purposes":
     * GraphQL in AEM as a Cloud Service is currently a read-only API.
     * The REST API can be used for CR(u)D operations.
+-->
 
-## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
+## 用于AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}的内容片段
 
-Content Fragments can be used as a basis for GraphQL for AEM schemas and queries as:
+内容片段可用作AEM模式和查询的GraphQL的基础，如：
 
-* They enable you to design, create, curate and publish page-independent content.
-* They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment by means of defined data types.
-* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
- 
-### Content Fragment Models {#content-fragments-models}
+* 它们使您能够设计、创建、策划和发布独立于页面的内容，这些内容可以无头地交付。
+* 它们基于内容片段模型，该模型使用选定的数据类型预定义了生成片段的结构。
+* 可使用“片段引用”数据类型实现其他结构层，在定义模型时可用。
 
-These Content Fragment Models:
+### 内容片段模型 {#content-fragments-models}
 
-* Are used to generate the Schemas, once **Enabled**.
+以下内容片段模型：
 
-* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
+* 用于生成模式，只需&#x200B;**Enabled**&#x200B;一次。
+* 提供GraphQL所需的数据类型和字段。 它们确保您的应用程序仅请求可能的内容，并接收预期内容。
+* 数据类型&#x200B;**片段引用**&#x200B;可在模型中用于引用其他内容片段，因此引入其他结构级别。
 
-* The data type **Fragment References** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
+### 片段引用{#fragment-references}
 
-### Fragment References {#fragment-references}
+**片段引用**:
 
-The **Fragment Reference**:
+* 是定义内容片段模型时可用的特定数据类型。
+* 引用另一个片段，具体取决于特定的内容片段模型。
+* 允许您创建结构化数据，然后进行检索。
 
-* Is a specific data type available when defining a Content Fragment Model.
+   * 当定义为&#x200B;**multifeed**&#x200B;时，主片段可以引用（检索）多个子片段。
 
-* References another fragment, dependent on a specific Content Fragment Model.
+### JSON预览{#json-preview}
 
-* Allows you to create, and then retrieve, structured data.
+要帮助设计和开发内容片段模型，您可以在内容片段编辑器中预览JSON输出。
 
-  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+![JSON预](assets/cfm-model-json-preview.png "览JSON预览")
 
-### JSON Preview {#json-preview}
-
-To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
-
+<!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
 GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
@@ -247,21 +251,23 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 * 启用您的端点
    * 使用工具 — >站点 — > GraphQL
+   * [启用GraphQL端点](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * 安装GraphiQL（如果需要）
    * 作为专用包安装
+   * [安装AEM GraphQL界面](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 
 ### 示例结构{#sample-structure}
 
 要在查询中实际使用AEM GraphQL API，我们可以使用两个非常基本的内容片段模型结构：
 
 * 公司
-   * 名称
-   * 首席执行官（人）
-   * 员工（人员）
+   * 名称 — 文本
+   * CEO（人员） — 片段参考
+   * 员工（人员） — 片段参考
 * 人员
-   * 名称
-   * 名字
+   * 名称 — 文本
+   * 名字 — 文本
 
 如您所见，CEO和Employees字段引用“人员”片段。
 
@@ -275,6 +281,8 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 这些查询可以在GraphiQL界面中输入，例如：
 
 * `http://localhost:4502/content/graphiql.html `
+
+![GraphiQL接](assets/graphiql-interface.png "口GraphiQL接口")
 
 ### 查询{#getting-Started-with-queries}入门
 
