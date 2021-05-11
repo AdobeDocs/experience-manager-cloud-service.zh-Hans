@@ -5,9 +5,9 @@ feature: 资产管理
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '321'
 ht-degree: 13%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 13%
 
 有了Dynamic Media，您有以下几种选择：
 
-* 如果您的网站托管在AEM上，则您希望将Dynamic Media资产直接添加到您的页面。
-* 如果您的网站不在AEM上，您可以选择：
+* 如果您的网站托管在Adobe Experience Manager上，则您希望将Dynamic Media资源直接添加到您的页面。
+* 如果您的网站未在Experience Manager中，您可以选择：
 
    * 将视频或图像嵌入您的网站。
    * 将URL关联到您的Web应用程序。当您希望以弹出窗口或模态窗口的形式传送视频播放器时，可使用链接。
@@ -43,6 +43,6 @@ ht-degree: 13%
 
 ## HTTP/2投放Dynamic Media资源{#http-delivery-of-dynamic-media-assets}
 
-AEM现在支持通过HTTP/2投放所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，通过HTTP/2协议传送已发布的资产。 此投放方法改进了浏览器和服务器通信的方式，使您的所有Dynamic Media资源都能得到更好的响应和加载时间。
+Experience Manager现在支持通过HTTP/2投放所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，通过HTTP/2协议传送已发布的资产。 此投放方法改进了浏览器和服务器通信的方式，使您的所有Dynamic Media资源都能得到更好的响应和加载时间。
 
 要了解更多信息，请参阅[HTTP/2投放内容常见问题](/help/assets/dynamic-media/http2faq.md)。
