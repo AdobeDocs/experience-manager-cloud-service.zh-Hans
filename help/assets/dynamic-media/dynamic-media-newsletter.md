@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media新闻快讯
-description: 'Experience League的Dynamic Media新闻快讯是每月新闻快讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您能够立即开始实现价值。 这一一站式商店时事通讯中提供了宝贵的知识建设资源。 例如，有操作方法视频和解决方案概述。 了解一些关键功能，如图像预设、查看器预设、视频用户档案等。 '
+description: 'Experience League的Dynamic Media新闻快讯是每月新闻快讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您能够立即实现价值。 这一一站式商店时事通讯中提供了宝贵的知识建设资源。 例如，有操作方法视频和解决方案概述。 了解一些关键功能，如图像预设、查看器预设、视频用户档案等。 '
 feature: 资产管理
 role: Business Practitioner
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 0%
    * 了解Dynamic Media团队如何帮助您为一天比正常访客流量更高做准备。
    * 观看最近两次Skill Builder网络研讨会的另一个机会。
    * 观看有关保护数字资产免遭盗版的点播网络研讨会。
-   * 认识Adobe Experience Manager Assets的高级产品营销经理Brigte Roman。
+   * 会见Experience Manager资产高级产品营销经理Bridget Roman。
    * 了解Experience League中的Dynamic Media和Dynamic Media Classic。
 
 * **[2019年8月总第08期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
@@ -112,7 +112,7 @@ ht-degree: 0%
    在此问题中：
 
    * 探索仅在升级到Dynamic Media时可用的有价功能。
-   * 了解旨在帮助您快速掌握Adobe Experience Manager Assets和Dynamic Media的网络研讨会系列。
+   * 了解旨在帮助您快速掌握Experience Manager资产和Dynamic Media的网络研讨会系列。
    * 开始您的旅程，从Experience League上的Dynamic Media获得价值。
    * 抢先领略即将在9月推出的强大集成，它允许您分析访客如何与您的富媒体交互。
    * 欢迎见到Dynamic Media技术支持部门的PieterJan Pieper。
@@ -124,7 +124,7 @@ ht-degree: 0%
    * 可让您正确管理高价值资产的资源和信息，以自信地提供可让访客不断光顾的体验。
    * 了解即将举办的有关保护您的数字资产的网络研讨会。
    * 下一站访问信息丰富的Adobe内幕演示。
-   * 如果您在Adobe Experience Manager Assets(AEM Assets)中拥有Dynamic Media，您将获得令人兴奋的功能。
+   * 如果您在Experience Manager Assets(AEM Assets)中拥有Dynamic Media，您就可以获得令人兴奋的功能。
    * 将360度视频和自定义视频缩略图添加到您的网站。
    * 会见AEM Assets内Dynamic Media首席解决方案顾问Andrew Hathaway。
 
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 * **[2019年4月，04期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   欢迎阅读《Dynamic Media新闻快讯》的开幕式。 Adobe的新月度新闻快讯中充斥着新闻、事件和资源。 内容适用于Adobe Experience Manager Assets中的Dynamic Media用户和Adobe Dynamic Media Classic。
+   欢迎阅读《Dynamic Media新闻快讯》的开幕式。 Adobe的新月度新闻快讯中充斥着新闻、事件和资源。 内容针对Dynamic Media资产中的Experience Manager用户和Adobe Dynamic Media Classic用户。
 
    在此问题中：
 
