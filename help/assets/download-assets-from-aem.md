@@ -2,16 +2,16 @@
 title: 下载资产
 description: 从 [!DNL Adobe Experience Manager Assets] 下载资源，然后启用或禁用下载功能。
 contentOwner: AG
-feature: Asset Management
+feature: 资产管理
 role: Business Practitioner
+exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '921'
 ht-degree: 7%
 
 ---
-
 
 # 从[!DNL Adobe Experience Manager] {#download-assets-from-aem}下载资源
 
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->收件人封电子邮件必须是`dam-users`组的成员，才能访问电子邮件中的ZIP下载链接。 要能够下载资产，成员必须具有启动工作流的权限，以触发资产下载。
+>收件人封电子邮件必须是`dam-users`组的成员才能访问电子邮件中的ZIP下载链接。 要能够下载资产，成员必须具有启动工作流的权限，以触发资产下载。
 
 无法下载图像集、旋转集、混合媒体集和传送集等资产类型。
 
@@ -68,7 +68,7 @@ ht-degree: 7%
 
 ## 启用资产下载servlet {#enable-asset-download-servlet}
 
-[!DNL Experience Manager]中的默认servlet允许经过身份验证的用户发出任意大型的并发下载请求，以创建资源的ZIP文件。 下载准备可能会影响性能，甚至可能使服务器和网络过载。 要减轻由此功能引起的类似DoS的潜在风险，将对发布实例禁用`AssetDownloadServlet` OSGi组件。
+[!DNL Experience Manager]中的默认servlet允许经过身份验证的用户发出任意大型的并发下载请求，以创建资源的ZIP文件。 下载准备可能会影响性能，甚至可能使服务器和网络过载。 要减轻由此功能引起的类似DoS的潜在风险，将对发布实例禁用`AssetDownloadServlet` OSGi组件。 如果您在创作实例上不需要下载功能，请在创作时禁用servlet。
 
 要允许从您的DAM下载资产，例如，在使用Asset Share Commons或其他类似门户的实施时，请通过OSGi配置手动启用servlet。 Adobe建议尽可能低地设置允许的下载大小，而不影响日常下载要求。 高价值可能会影响性能。
 
@@ -86,7 +86,7 @@ ht-degree: 7%
 
 ## 禁用资源下载servlet {#disable-asset-download-servlet}
 
-`Asset Download Servlet`可以通过更新调度程序配置来阻止任何资产下载请求，在[!DNL Experience Manager]发布实例上禁用。 也可以直接通过OSGi控制台手动禁用Servlet。
+如果您不需要下载功能，请禁用servlet以防止任何类似DoS的风险。 `Asset Download Servlet`可以通过更新调度程序配置来阻止任何资产下载请求，在[!DNL Experience Manager]作者实例和发布实例上禁用。 也可以直接通过OSGi控制台手动禁用Servlet。
 
 1. 要通过调度程序配置阻止资源下载请求，请编辑`dispatcher.any`配置，并向[过滤器部分](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)添加新规则。
 
