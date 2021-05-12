@@ -4,14 +4,14 @@ description: 在AEM无外设开发人员历程的这一部分中，您将了解�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # 使用AEM Headless {#path-to-first-experience}的初次体验路径
 
@@ -137,7 +137,14 @@ ht-degree: 0%
 * 了解需要哪些必要的工具和AEM配置。
 * 了解最佳实践，让您的无头旅程变得顺畅、保持内容生成高效并确保内容快速交付。
 
-您应该继续您的AEM无头旅程，接下来查看文档[如何将您的内容建模为AEM内容模型](model-your-content.md)，从中学习如何在AEM中建模您的内容结构。
+我们希望您以此基础知识为基础，充分了解AEM Headless的强大功能和灵活性，以便您能够将其用于您自己的项目。 为此，您有选择。
+
+### 选择您自己的冒险{#choose-your-path}
+
+无论您的学习风格如何，Adobe都希望您能够成功地开始使用AEM无头项目。
+
+* 如果您希望&#x200B;**继续学习无头概念和AEM无头技术**，则应继续您的AEM无头旅程，方法是阅读文档[如何将您的内容建模为AEM内容模型](model-your-content.md)，从中学习如何在AEM中建模您的内容结构。
+* 如果您希望&#x200B;**通过执行**&#x200B;来学习，您可以跳到[AEM无头动手教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)入门，在该教程中，您将通过实施一个简单项目来公开AEM无头内容，直接进入AEM无头开发。
 
 ## 其他资源 {#additional-resources}
 
