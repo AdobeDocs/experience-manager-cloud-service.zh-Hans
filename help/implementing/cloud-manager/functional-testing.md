@@ -2,10 +2,9 @@
 title: 功能测试 — Cloud Services
 description: 功能测试 — Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能测试"
->abstract="功能测试分为三类：产品功能测试、自定义功能测试、自定义用户界面测试"
+>abstract="功能测试分为三类：产品功能测试、自定义功能测试和自定义UI测试"
 
 功能测试分为三类：
 
