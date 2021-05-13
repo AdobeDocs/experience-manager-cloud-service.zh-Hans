@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
+source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1836'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,8 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 
 ## 其他资源 {#additional-resources}
 
-* [AEM无外设生产部署入门](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [部署到AEM作为Cloud Service概述](/help/implementing/deploying/overview.md)
 * [设置本地AEM环境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [AEM作为Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [部署到AEM作为Cloud Service概述](/help/implementing/deploying/overview.md)
 * [使用Cloud Manager部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [将Cloud Manager Git存储库与外部Git存储库集成，并将项目部署到AEM作为Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
