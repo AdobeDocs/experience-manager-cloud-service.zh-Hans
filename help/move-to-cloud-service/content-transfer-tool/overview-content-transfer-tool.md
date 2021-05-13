@@ -2,10 +2,9 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-translation-type: tm+mt
-source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
+source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '860'
 ht-degree: 73%
 
 ---
@@ -81,4 +80,4 @@ ht-degree: 73%
    * *数据存储大小*：内容传输工具使用 64 GB，即使实际数据存储更大也是如此。
    * *节点存储大小*：区段存储目录大小或 MongoDB 数据库大小。因此，对于 20 GB 的区段存储大小，所需的可用磁盘空间将为 94 GB。
 
-* 需要在整个内容传输活动中维护迁移集以支持内容补充。 由于在内容传输活动内，最多可以同时创建和维护十个迁移集，因此建议相应地分解内容存储库，以确保不用完迁移集。  在迁移期间/结构中，
+* 需要在整个内容传输活动中维护迁移集以支持内容补充。 由于在内容传输活动内，最多可以同时创建和维护十个迁移集，因此建议相应地分解内容存储库以确保不会用尽迁移集。
