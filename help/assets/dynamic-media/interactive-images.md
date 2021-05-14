@@ -4,11 +4,10 @@ description: 了解如何在Dynamic Media中使用交互式图像。
 feature: 交互式图像
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '4247'
-ht-degree: 17%
+source-wordcount: '4263'
+ht-degree: 15%
 
 ---
 
@@ -24,11 +23,11 @@ ht-degree: 17%
 
 ## 观看如何创建交互式图像横幅{#watch-how-interactive-image-banners-are-created}
 
-观看[如何创建交互式图像横幅的10分钟33秒演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)。 您还可以学习如何预览、编辑和投放交互式图像横幅。
+观看[如何创建交互式图像横幅的演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)（10分33秒）。 您还可以学习如何预览、编辑和投放交互式图像横幅。
 
 ## 快速开始:交互式图像{#quick-start-interactive-images}
 
-以下工作流分步说明旨在帮助您在AEM Assets中快速设置并运行交互式图像。
+以下工作流分步说明旨在帮助您在Adobe Experience Manager Assets中快速设置并运行交互式图像。
 
 请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。它包含一个简短的教程，该教程基于尚未向其](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)添加交互式图像的[网页示例。
 
@@ -39,7 +38,7 @@ ht-degree: 17%
 交互式图像步骤：
 
 1. **（可选）识别热点变量**。如果您使用Adobe Experience Manager Assets和Dynamic Media独立版本，请识别现有快速视图实施中使用的动态变量。 这样做可确保您在创建交互式图像时输入热点数据。 请参阅[（可选）识别热点变量](#optional-identifying-hotspot-variables)。
-但是，如果您使用AEM Sites或AEM eCommerce，或同时使用两者，则不需要执行此步骤。
+但是，如果您使用Experience Manager站点或Experience Manager电子商务，或同时使用这两个工具，则不必执行此步骤。
 
 1. **（可选）创建交互式图像查看器预设**。自定义用于表示热点的图形图像。 如果您打算使用名为`Shoppable_Banner`的现成交互式图像查看器预设，则无需创建您自己的交互式图像查看器预设。
 请参阅[（可选）创建交互式图像查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)。
@@ -62,11 +61,11 @@ ht-degree: 17%
 >只有在以下情况下才需要此任务:
 >
 >* 您希望通过触发快速视图来为图像添加交互性。
->* 您的Experience Manager实施&#x200B;*不*&#x200B;使用电子商务集成框架从任何电子商务解决方案将产品数据拉入Experience Manager。 此类解决方案包括IBM WebSphere® Commerce、Elastic Path、hybris或Intershop。
+>* 您的Experience Manager实施&#x200B;*不*&#x200B;使用电子商务集成框架从任何电子商务解决方案将产品数据拉入Experience Manager。 此类解决方案包括IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop。
 
 >
 >
-如果您的AEM实施使用电子商务，则可以跳过此任务并继续到下一个任务。
+如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续到下一个任务。
 
 开始，您可以识别现有“快速视图”实施所使用的动态变量，以便输入热点数据以创建交互式图像。
 
@@ -85,7 +84,7 @@ ht-degree: 17%
 * “快速视图”数据将转换为准备在网页上呈现的内容。
 * 最后，前端代码以可视形式将这些内容呈现在屏幕上。
 
-接下来的方法是访问现有网站中实施“快速视图”功能的不同区域。 然后触发快速视图并捕获由网页发送的用于加载快速视图数据或内容的Ajax URL。
+接下来的方法是访问现有网站中实施“快速视图”功能的不同区域。 然后触发快速视图并获取由网页发送的用于加载快速视图数据或内容的Ajax URL。
 
 通常情况下，您不需要使用任何专业的调试工具。现代的 Web 浏览器具备 Web 检查器，可以实现相同的功能。下面列举了一些具备 Web 检查器的 Web 浏览器：
 
@@ -166,15 +165,15 @@ ht-degree: 17%
 
 依据上述分析，您可以在热点中使用 `categoryId` 和 `SKU`。
 
-现在，您便可以使用 AEM Assets 中的交互式购物图像功能，上传图像横幅并向其添加热点。
+您现在可以使用Experience Manager资产中的交互式购物图像功能上传图像横幅并向其添加热点。
 
 ## （可选）创建交互式图像查看器预设{#optional-creating-an-interactive-image-viewer-preset}
 
-您可以选择使用 AEM Assets 默认附带的名为 `Shoppable_Banner` 的现成交互式图像查看器预设。或者，您也可以创建自己的自定义查看器预设以用于交互式图像。
+您可以选择使用Experience Manager资产附带的名为`Shoppable_Banner`的现成默认交互式图像查看器预设。 或者，您也可以创建自己的自定义查看器预设以用于交互式图像。
 
 在创建自定义交互式图像查看器预设时，您可以确定图像横幅上热点的外观。 在创建查看器预设的过程中，您可以选择使用预定义图像库中提供的热点图形。
 
-在保存查看器预设后，查看器预设会在AEM Assets的“查看器预设”列表页面上自动激活（打开）。 此功能意味着无论您何时视图资产，都可以在交互式媒体组件中看到此功能。 但是，要&#x200B;*传送*&#x200B;具有此查看器预设的交互式横幅，*也要发布*&#x200B;您的查看器预设。 对于自定或现成查看器预设，此规则为true。
+在保存查看器预设后，查看器预设会在Experience Manager资产的“查看器预设”列表页面上自动激活（打开）。 此功能意味着无论您何时视图资产，都可以在交互式媒体组件中看到此功能。 但是，要&#x200B;*传送*&#x200B;具有此查看器预设的交互式横幅，*也要发布*&#x200B;您的查看器预设。 对于自定或现成查看器预设，此规则为true。
 
 **要创建交互式图像查看器预设，请执行以下操作**
 
@@ -265,7 +264,7 @@ ht-degree: 17%
 
    * 点按&#x200B;**[!UICONTROL 快速视图]**。
 
-      * 如果您是AEM Sites或电子商务客户，请点按或单击产品选取器图标（放大镜）以打开选择产品页面。 点按要使用的产品，然后点按页面右上角的&#x200B;**选择**。 您将返回到“热点”管理页面。
+      * 如果您是Experience Manager站点或电子商务客户，请点按或单击产品选取器图标（放大镜）以打开选择产品页面。 点按要使用的产品，然后点按页面右上角的&#x200B;**选择**。 您将返回到“热点”管理页面。
       * 如果您是&#x200B;*不是* Experience Manager站点或电子商务客户
 
          * 请参阅[识别热点变量](#optional-identifying-hotspot-variables);您必须定义这些变量。
@@ -282,7 +281,7 @@ ht-degree: 17%
 
    * 点按&#x200B;**[!UICONTROL 体验片段]**。
 
-      * 如果您是AEM Sites客户，请点按或单击搜索图标（放大镜）以打开体验片段页面。 点按您要使用的体验片段。 然后点按页面右上角的&#x200B;**[!UICONTROL 选择]**。 您将返回到“热点”管理页面。
+      * 如果您是Experience Manager站点客户，请点按或单击搜索图标（放大镜）以打开体验片段页面。 点按您要使用的体验片段。 然后点按页面右上角的&#x200B;**[!UICONTROL 选择]**。 您将返回到“热点”管理页面。
 请参阅[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)。
 
       * 指定体验片段在横幅上显示时的宽度和高度。
@@ -306,10 +305,10 @@ ht-degree: 17%
 
 ### （可选）预览交互式图像{#optional-previewing-interactive-images}
 
-您可以使用预览来查看交互式图像对客户的呈现效果。 预览还允许您测试图像的热点，确保它们按预期的方式显示。
+您可以使用预览来查看交互式图像如何呈现给客户的演示。 预览还允许您测试图像的热点，确保它们按预期的方式显示。
 
 当您对交互式图像感到满意时，您可以发布该图像。
-请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
+请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向Experience Manager站点页面的链接)的链接，则无法使用基于URL的链接方法。
 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 **预览交互式图像**
@@ -327,9 +326,9 @@ ht-degree: 17%
 
 在上传横幅图像、向其添加热点以及发布交互式图像后，即可将其添加到网站页面。
 
-如果您是AEM Sites客户，则可以通过将交互式媒体组件拖动到页面上来添加交互式图像。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+如果您是Experience Manager站点客户，则可以通过将交互式媒体组件拖动到页面上来添加交互式图像。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
-如果您是独立的AEM Assets客户，则可以按本节所述手动将交互式图像添加到您的网站。
+如果您是独立的Experience Manager资产客户，您可以按本节所述手动将交互式图像添加到您的网站。
 
 1. 复制已发布的交互式图像的嵌入代码。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
@@ -345,7 +344,7 @@ ht-degree: 17%
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-集成过程很简单，只需删除 `IMG` 标记并将其替换为从 AEM Assets 中复制的嵌入代码即可。您可以看到，结果[显示页面上的交互式购物图像，其中有三个圆形热点](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
+集成过程很简单，只需删除`IMG`标记并将其替换为从Experience Manager资产中复制的嵌入代码即可。 您可以看到，结果[显示页面上的交互式购物图像，其中有三个圆形热点](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
 
 >[!NOTE]
 至此，演示网站的交互式购物图像上的热点仅用于显示目的。它们尚未与现有的快速视图集成。
@@ -361,7 +360,7 @@ ht-degree: 17%
 ## 将交互式图像与现有快速视图{#integrating-an-interactive-image-with-an-existing-quickview}集成
 
 >[!NOTE]
-此任务仅在您是独立AEM Assets客户时适用。
+此任务仅在您是独立Experience Manager资产客户时适用。
 
 此过程的最后一步是将交互式图像与网站上现有的快速视图实施相集成。 但是，没有任何一种集成解决方案是在所有情况下都适用的。每个快速视图实施都是独一无二的，并且需要一种特定的方法。 因此，在前端IT人员的协助下工作非常有帮助。
 
@@ -377,7 +376,7 @@ ht-degree: 17%
 
 这些调用不一定代表由网页逻辑从任意步骤调用的独立公共API调用。 相反，这些调用属于链式调用，即，每个后续步骤都隐藏在前一步的最后阶段（回调）。
 
-当交互式购物图像替换第1步（部分替换第2步）时，用户将在购物图像内点击热点。 此类用户交互由查看器处理。 查看器会向网页返回一个事件，其中包含之前添加到 AEM Assets 中的所有热点数据。
+当交互式购物图像替换第1步（部分替换第2步）时，用户将在购物图像内点击热点。 此类用户交互由查看器处理。 查看器会返回一个事件到网页，其中包含之前添加到Experience Manager资产中的所有热点数据。
 
 在此类事件处理程序中，前端代码会执行下列操作：
 
@@ -446,7 +445,7 @@ Experience Manager资产返回的嵌入代码具有一个已注释掉的可用�
  </tbody>
 </table>
 
-触发“快速视图URL”并激活“快速视图”面板的最后一步，需要业务前端IT人员的协助。 他们最了解如何通过拥有现成的快速视图URL从正确的步骤准确触发快速视图实施。
+触发“快速视图URL”并激活“快速视图”面板的最后一步需要前端IT人员在您的工作中的协助。 他们最了解如何通过拥有现成的快速视图URL从正确的步骤准确触发快速视图实施。
 
 您可以了解如何将这些步骤应用到演示网站，以将交互式购物图像与快速视图代码完全集成。以前，快速视图URL的结构如下所示：
 
@@ -494,4 +493,4 @@ loadQuickView(quickViewUrl);
 
 ## 使用快速视图创建自定义弹出窗口{#using-quickviews-to-create-custom-pop-ups}
 
-请参阅[使用快速视图创建自定义弹出窗口](/help/assets/dynamic-media/custom-pop-ups.md)。
+请参阅[使用快速视图创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
