@@ -4,11 +4,10 @@ description: 了解如何在Dynamic Media中使用交互式视频和购物视频
 feature: 交互式视频
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '6064'
-ht-degree: 20%
+source-wordcount: '6051'
+ht-degree: 19%
 
 ---
 
@@ -49,7 +48,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### 观看如何创建交互式视频{#watch-how-interactive-videos-are-created}
 
-观看有关[如何创建交互式视频](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)的 7 分 30 秒视频演练[](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA)。
+观看[如何创建交互式视频的演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)（7分30秒）。
 (尽管视频演练使用“资产（按需）”进行标记，但Adobe Experience Manager资产中的交互式视频仍适用这些原则和步骤。)
 
 ### Adobe 客户成功网络研讨会 {#adobe-customer-success-webinar}
@@ -70,8 +69,10 @@ There was a link here that showed the video frame of an interactive video and wh
 
 交互式视频步骤：
 
-1. **（可选）识别快速视图变量**  — 通过识别现有快速开始实施所使用的动态变量来识别视图。在创建交互式视频时，您可以使用变量将产品缩略图映射到相应的产品快速视图。 请参阅[（可选）识别快速视图变量](#optional-identifying-quickview-variables)。
-   **仅当以下所有条件均为true时，才需要执行此步骤**:·您希望通过触发快速视图来为视频添加交互性。· Your implementation of Experience Manager does *not* use an eCommerce integration framework for dulle product data into Experience Manager from any eCommerce solution（如IBM WebSphere® Commerce、Elastic Path、hybris或Intershop）。
+1. **（可选）通过识别现有“快速视图** ”实施所使用的动态变量来识别“快速视图”变量 — 开始。在创建交互式视频时，您可以使用变量将产品缩略图映射到相应的产品快速视图。 请参阅[（可选）识别快速视图变量](#optional-identifying-quickview-variables)。
+   **仅当以下所有情况均为真时，才需要此步骤**
+:·您希望通过触发“快速”视图来为视频添加交互性。·您的Experience Manager实施 
+*notuse* an eCommerce integration framework for tulling product data into Experience Manager from any eCommerce solution， such as IBM® WebSphere® Commerce， Elastic Path， SAP Hybris， or Intershop.
 
 1. **（可选）创建交互式视频查看器预设**  — 自定义组成播放器的各种组件的外观和行为，如视频浏览条和交互式缩略图。如果您打算使用现成的交互式视频查看器预设`Shoppable_Video_Light`或`Shoppable_Video_Dark`，则无需创建您自己的交互式视频查看器预设。
 请参阅[创建新查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)（可选）和[创建交互式查看器预设的特殊注意事项](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)。
@@ -79,12 +80,12 @@ There was a link here that showed the video frame of an interactive video and wh
 1. **上传视频及其关联的图像资产**  — 上传您要实现交互的视频和关联的图像。请参阅[上传视频及其关联的缩略图资产](#uploading-a-video-and-its-associated-thumbnail-assets)。
 
 
-1. **为视频添加交互性**  — 向视频添加一个或多个时间段。然后，将这些时间段中的图像缩略图关联起来。 将每个图像缩略图分配给操作，如超链接、快速视图或体验片段。
+1. **为视频添加交互性**  — 为视频添加一个或多个时间段。然后，将这些时间段中的图像缩略图关联起来。 将每个图像缩略图分配给操作，如超链接、快速视图或体验片段。
 (如果您的交互式内容包含与相对URL的链接，特别是指向“Experience Manager站点”页面的链接，则无法使用基于URL的链接方法。)
 最后，发布交互式视频资产。 发布后会创建嵌入代码或URL，您最终会将其复制并应用到您的网站登陆页。 请参阅[为视频添加交互性](#adding-interactivity-to-your-video)。
 请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **在Experience Manager中将交互式视频添加到您的网站或您的网站**  — 如果您使用Experience Manager站点或Experience Manager电子商务，或两者兼有，则可以在Experience Manager中将交互式视频直接添加到网页。将交互式媒体组件拖动到页面上。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+1. **在Experience Manager中将交互式视频添加到您的网站或您的网站**  — 如果您使用Experience Manager站点或电子商务，或者同时使用这两种方式，请在Experience Manager中将交互式视频添加到网页。将交互式媒体组件拖动到页面上。 请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 使用嵌入代码或URL将交互式视频集成到您的网站体验。 请参阅[将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website)。
 如果您使用第三方WCM（Web内容管理器），则必须将新的交互式视频与您网站上使用的现有快速视图实施相集成。 请参阅[将交互式视频与现有快速视图集成](#integrating-an-interactive-video-with-an-existing-quickview)。
    [将 Dynamic Media 资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -94,7 +95,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >[!NOTE]
 只有在以下情况下才需要此任务:
 * 您希望通过触发“快速视图”来为视频添加交互性。
-* Your implementation of Experience Manager does *not* use an eCommerce integration framework for dulle product data into Experience Manager from any eCommerce solution（如IBM WebSphere® Commerce、Elastic Path、hybris或Intershop）。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+* Your implementation of Experience Manager does *not* use a eCommerce integration framework for dulle product data into Experience Manager from any eCommerce solution（如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop）。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续到下一个任务。
 
@@ -113,13 +114,13 @@ There was a link here that showed the video frame of an interactive video and wh
 * “快速视图”数据将转换为准备在网页上呈现的内容。
 * 最后，前端代码以可视形式将这些内容呈现在屏幕上。
 
-因此，方法是访问现有网站中实施快速视图的不同区域。 然后触发快速视图，并捕获网页发送的用于加载快速视图数据或内容的Ajax URL。
+因此，方法是访问现有网站中实施快速视图的不同区域。 然后触发快速视图，获取网页发送的用于加载快速视图数据或内容的Ajax URL。
 
 通常情况下，您不需要使用任何专业的调试工具。现代的 Web 浏览器具备 Web 检查器，可以实现相同的功能。下面列举了一些具备 Web 检查器的 Web 浏览器：
 
-* 要在Google Chrome中查看所有传出HTTP请求，请按&#x200B;**F12**(Windows)或&#x200B;**Command+Options+I**(Mac)打开“开发人员工具”面板，然后单击&#x200B;**Network**&#x200B;选项卡。
+* 要在Google Chrome中查看所有传出HTTP请求，请按&#x200B;**F12**(Windows®)或&#x200B;**Command+Options+I**(Mac)打开“开发人员工具”面板，然后单击&#x200B;**“网络**”选项卡。
 
-* 在Firefox中，您可以通过按&#x200B;**F12**(Windows)或&#x200B;**Command+Option+I**(Mac)并使用其&#x200B;**[!UICONTROL Net]**&#x200B;选项卡来激活Firebug插件，也可以使用内置检查器工具及其“网络”选项卡。
+* 在Firefox中，您可以通过按&#x200B;**F12**(Windows®)或&#x200B;**Command+Option+I**(Mac)并使用其&#x200B;**[!UICONTROL Net]**&#x200B;选项卡来激活Firebug插件，也可以使用内置检查器工具及其“网络”选项卡。
 
 * 在Internet Explorer中，通过按&#x200B;**F12**&#x200B;激活调试器工具。
 
@@ -225,7 +226,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 您可以选择创建自己的自定义交互式视频查看器预设。 您可以确定视频播放器的样式、交互式缩略图以及显示在视频末尾的缩略图网格视图等。
 
-交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，以便您在发布前测试其交互性。
+交互式视频查看器预设能够正确呈现您添加的视频和所有时间轴区段。当您在预览模式下单击产品缩略图时，它还会使用默认的“快速视图”示例，这样您就可以在发布前测试其交互性。
 
 保存查看器预设后，“查看器预设”页面中的查看器预设状态将自动设置为 **开**。此状态表明查看器预设在 Dynamic Media 组件中可见，预览视频时也可见。另请确保手动发布新查看器预设。
 
@@ -264,7 +265,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 在保存交互式视频后，视频会立即在“预览”中打开。从中，您可以选择交互式视频查看器预设并播放视频，大致了解交互式视频如何呈现给客户。
 
-**要向视频添加交互性**:
+**为视频添加交互性：**
 
 1. 在“资产”视图中，导航到您上传的要实现交互的视频。
 1. 执行下列操作之一：
@@ -441,10 +442,10 @@ There was a link here that showed the video frame of an interactive video and wh
       </tr> 
       <tr> 
       <td>更改缩略图的文本标签</td> 
-      <td><p>默认情况下，文本标签使用缩略图的<code>Title</code>元数据字段。 如果<code>Title</code>不存在，则会改用缩略图的文件名，但不使用扩展名。</p> <p>要更改缩略图的文本标签，请在<strong>操作</strong>选项卡中，直接在显示的图像资产下方输入所需的文本。 请参阅下面的插图。</p> <p>新文本标签仅由视频播放器本身以及时间轴区段中显示的缩略图文本使用。 标签更改不会影响缩略图的“标题”元数据字段及其文件名。</p> </td> 
+      <td><p>默认情况下，文本标签使用缩略图的<code>Title</code>元数据字段。 如果<code>Title</code>不存在，则会改用缩略图的文件名，但不使用扩展名。</p> <p>要更改缩略图的文本标签，请在<strong>操作</strong>选项卡中，直接在显示的图像资产下方输入所需的文本。 请参阅下图。</p> <p>新文本标签仅由视频播放器本身以及时间轴区段中显示的缩略图文本使用。 标签更改不会影响缩略图的“标题”元数据字段及其文件名。</p> </td> 
       </tr> 
       <tr> 
-      <td>还原所做的更改</td> 
+      <td>还原更改</td> 
       <td>在页面的右上角附近，点按<strong>撤消</strong>或<strong>重做</strong>。</td> 
       </tr> 
     </tbody> 
@@ -463,7 +464,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
    * **[!UICONTROL 合并区段]**  — 您可以将两个相邻的区段（无论是否分配了产品缩略图）合并到一个区段中。
 
-      在时间轴上，点按要合并到一个中的两个或多个连续段。 下图中的两个选定段上没有蓝色的椭圆拖动手柄。
+      在时间轴上，点按要合并到一个中的两个或多个连续段。 在下图中的两个选定区段上，没有蓝色的椭圆形拖动手柄。
 
       点按工具栏上的&#x200B;**[!UICONTROL 合并区段]**。
    ![chlimage_1-134](assets/chlimage_1-134.png)
@@ -698,7 +699,7 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 loadQuickView(quickViewUrl);
 ```
 
-最后，确保将“快速视图”对话框附加到查看器的容器元素。 默认嵌入代码提供实现此功能的示例步骤。 要获取对查看器的容器元素的引用，可使用以下几行代码：
+最后，确保将“快速视图”对话框附加到查看器的容器元素。 嵌入代码默认值提供了实现此功能的示例步骤。 要获取对查看器的容器元素的引用，可使用以下几行代码：
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -764,7 +765,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
-## 使用快速视图创建自定义弹出窗口{#using-quickviews-to-create-custom-pop-ups}
+## 使用快速视图创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-请参阅[使用快速视图创建自定义弹出窗口](/help/assets/dynamic-media/custom-pop-ups.md)。
+请参阅[使用快速视图创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
 —>
