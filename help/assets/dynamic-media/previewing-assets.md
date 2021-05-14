@@ -4,17 +4,16 @@ description: 了解如何在Dynamic Media中预览资源。
 feature: 资产管理
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 20%
+source-wordcount: '1214'
+ht-degree: 21%
 
 ---
 
 # 预览资产{#previewing-assets}
 
-您可以使用预览查看您上传的数字资产在客户在其自己的Web浏览器中查看时的外观。 预览时将使用为资产分配的默认嵌入式跨设备查看器。
+您可以使用预览查看您上传的数字资产在客户在其自己的Web浏览器中查看时的显示方式。 预览时将使用为资产分配的默认嵌入式跨设备查看器。
 
 查看器是各种设置或“预设”的集合。 例如，查看器的显示大小、缩放行为、颜色方案、边框和字体，这些都决定了用户如何在其计算机屏幕和移动设备上视图富媒体资源。
 
@@ -25,11 +24,11 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->当您位于Adobe Experience Manager的网页（站点）上时，无法以&#x200B;**编辑**&#x200B;模式预览资产。 相反，单击页面右上角的&#x200B;**预览**，转到&#x200B;**预览**&#x200B;模式。
+>当您位于Adobe Experience Manager的网页（站点）上时，无法以&#x200B;**[!UICONTROL 编辑]**&#x200B;模式预览资产。 相反，单击页面右上角的&#x200B;**[!UICONTROL 预览]**，转至预览模式。
 
 要在用户界面中启用或禁用查看器预设，请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-**预览资产**
+**要预览资产，请执行以下操作：**
 
 1. 在&#x200B;**[!UICONTROL Experience Manager]**&#x200B;的&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产]**，然后点按&#x200B;**[!UICONTROL 文件]**&#x200B;以访问资产。
 1. 在页面右上角附近，从&#x200B;**[!UICONTROL 视图]**&#x200B;下拉列表中，点按&#x200B;**[!UICONTROL 列表视图]**。
@@ -58,7 +57,7 @@ ht-degree: 20%
       <ul>
       <li><p><strong>旋转3D相机</strong>  — 围绕3D场景和对象绕行视图。</p> 鼠标：左键单击+拖动。</p> 触摸屏：按+拖动。</p></li>
       <li><p><strong>平移相机</strong>  — 向左、向右、向上和向下平移视图。</p> 鼠标：右键单击并拖动。</p> 触摸屏：双指按+拖动。</p></li>
-      <li><p><strong>缩放相机</strong>  — 缩放相机以在3D场景中移入和移出区域。</p> 鼠标：滚轮。</p> 触摸屏：手指捏。</p></li>
+      <li><p><strong>缩放相机</strong>  — 如果要移入和移出3D场景中的区域，请缩放相机。</p> 鼠标：滚轮。</p> 触摸屏：手指捏。</p></li>
       <li><p><strong>重新进入相机</strong>  — 围绕3D场景和对象绕行视图。</p> 鼠标：多次单击。</p> 触摸屏：多次点击。</li></ul></td>
       </tr>
       <tr>
