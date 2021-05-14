@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: 资产管理
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '464'
 ht-degree: 10%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 10%
 
 您可以通过选择已上传的资产并点按&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**&#x200B;来发布Dynamic Media资产。 在发布Dynamic Media资产后，您便可以通过URL或在页面上嵌入代码的方式，将资产包含在网页中。
 
-您还可以立即发布上传的资产，而无需任何用户干预。 或者，您也可以选择性发布这些资产。 请参阅[配置Dynamic Media](config-dm.md)。 或者，您也可以使用文件夹级别的&#x200B;**[!UICONTROL 选择性发布]**，选择性地将资产发布到Dynamic Media或Adobe Experience Manager，它们相互排斥。 请参阅[在Dynamic Media中使用选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
+您还可以即时发布上传的资产，而无需任何用户干预。 或者，您也可以选择性发布这些资产。 请参阅[配置Dynamic Media](config-dm.md)。 或者，您也可以使用文件夹级别的&#x200B;**[!UICONTROL 选择性发布]**，选择性地将资产发布到Dynamic Media或Adobe Experience Manager，它们相互排斥。 请参阅[在Dynamic Media中使用选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
 
 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，资产名称正下方以及日期和时间左侧会显示一个小地球图标，指示资产已发布。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
