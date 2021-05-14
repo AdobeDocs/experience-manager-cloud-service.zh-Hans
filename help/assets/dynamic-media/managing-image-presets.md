@@ -4,11 +4,10 @@ description: “了解图像预设以及如何创建、修改和管理图像预�
 feature: 图像预设、查看器、演绎版
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 27%
+source-wordcount: '3653'
+ht-degree: 26%
 
 ---
 
@@ -38,7 +37,7 @@ ht-degree: 27%
 
 ## 管理图像预设 {#managing-image-presets-1}
 
-要以Experience Manager方式管理图像预设，请点按或单击Experience Manager徽标以访问全局导航控制台，然后点按或单击工具图标，然后导航到&#x200B;**[!UICONTROL 资产>图像预设]**。
+您可以通过点按或单击Experience Manager徽标来访问全局导航控制台，然后点按或单击工具图标，然后导航到&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**，以Experience Manager方式管理图像预设。
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -63,7 +62,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager资产�
 * Adobe Illustrator文档由包含多个图层的单个页面组成。 每个图层都会作为PNG子资产提取到主Illustrator资产下。
 * PDF文档由一个或多个页面组成。 每个页面都会在主多页PDF文档下提取为单页PDF子资产。
 
-子资产由整个`DAM Update Asset`工作流中的`Create Sub Asset process`组件创建。 要在工作流中查看此流程组件，请点按&#x200B;**[!UICONTROL 工具>工作流>模型> DAM更新资产>编辑]**。
+子资产由整个`DAM Update Asset`工作流中的`Create Sub Asset process`组件创建。 要在工作流中查看此流程组件，请点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**。
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -88,7 +87,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager资产�
 
 可通过`DAM Update Asset`工作流访问`Rasterize PDF/AI Image Preview Rendition`进程组件选项。
 
-点按左上角的Adobe Experience Manager，导航到&#x200B;**[!UICONTROL 工具>工作流>模型]**。 在“工作流模型”页面上，选择&#x200B;**[!UICONTROL DAM更新资产]**，然后在工具栏中点按&#x200B;**[!UICONTROL 编辑]**。 在“DAM更新资产”工作流页面中，多次点按`Rasterize PDF/AI Image Preview Rendition`流程组件以打开其步骤属性对话框。
+点按左上角的Adobe Experience Manager，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。 在“工作流模型”页面上，选择&#x200B;**[!UICONTROL DAM更新资产]**，然后在工具栏中点按&#x200B;**[!UICONTROL 编辑]**。 在“DAM更新资产”工作流页面中，多次点按`Rasterize PDF/AI Image Preview Rendition`流程组件以打开其步骤属性对话框。
 
 #### 栅格化PDF/AI图像预览再现选项{#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -96,41 +95,18 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager资产�
 
 用于栅格化PDF或AI工作流程的参数
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>进程参数</strong></td>
-   <td><strong>默认设置</strong></td>
-   <td><strong>描述</strong></td>
-  </tr>
-  <tr>
-   <td>Mime 类型</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>列表被视为PDF或Illustrator文档的文档mime类型。<br /> </td>
-  </tr>
-  <tr>
-   <td>最大宽度</td>
-   <td>2048</td>
-   <td>生成的预览再现的最大宽度（以像素为单位）。<br /> </td>
-  </tr>
-  <tr>
-   <td>最大高度</td>
-   <td>2048</td>
-   <td>生成的预览再现的最大高度（以像素为单位）。<br /> </td>
-  </tr>
-  <tr>
-   <td>分辨率</td>
-   <td>72</td>
-   <td>用于栅格化第一页的分辨率，以ppi为单位（每英寸像素数）。</td>
-  </tr>
- </tbody>
-</table>
+| 进程参数 | 默认设置 | 描述 |
+|---|---|---|
+| Mime 类型 | application/pdf<br>application/postscript<br>application/illustrator | 列表被视为PDF或Illustrator文档的文档mime类型。 |
+| 最大宽度 | 2048 | 生成的预览再现的最大宽度（以像素为单位）。 |
+| 最大高度 | 2048 | 生成的预览再现的最大高度（以像素为单位）。 |
+| 分辨率 | 72 | 用于栅格化第一页的分辨率，以ppi为单位（每英寸像素数）。 |
 
 使用默认处理参数，PDF/AI文档的第一页将栅格化为72 ppi，生成的预览图像的大小为2048 x 2048像素。 对于典型部署，您可以将分辨率提高到至少150 ppi或更高。 例如，300 ppi的美国字母大小文档要求最大宽度和高度分别为2550 x 3300像素。
 
 “最大宽度”和“最大高度”限制栅格化的分辨率。 例如，如果最大值保持不变，而“分辨率”设置为300 ppi，则“美国字母文档”将栅格化为186 ppi。 即，文档为1581 x 2046像素。
 
-`Rasterize PDF/AI Image Preview Rendition`进程组件已定义最大值，以确保它不会在内存中创建过大的映像。 这样的大映像可能会溢出提供给JVM（Java虚拟机）的内存。 必须注意向JVM提供足够的内存来管理已配置的并行工作流数，每个并行应用程序都有可能以最大配置大小创建映像。
+`Rasterize PDF/AI Image Preview Rendition`进程组件已定义最大值，以确保它不会在内存中创建过大的映像。 这样的大映像可能会溢出提供给JVM(Java™虚拟机)的内存。 必须注意向JVM提供足够的内存来管理已配置的并行工作流数，每个并行应用程序都有可能以最大配置大小创建映像。
 
 ### InDesign(INDD)文件格式{#indesign-indd-file-format}
 
@@ -148,30 +124,12 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 以下脚本由Dynamic Media集成使用：
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>ExtendScript</strong></td>
-   <td><strong>默认</strong></td>
-   <td><strong>描述</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>是</td>
-   <td>生成300 ppi <code>thumbnail.jpg</code>再现，该再现经过优化并由<code>Dynamic Media Process Image Assets</code>进程组件转换为PTIFF再现。<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>是</td>
-   <td>为每页生成一个300 ppi JPEG子资产。 JPEG子资产是存储在InDesign资产下的真实资产。 它还通过<code>DAM Update Asset</code>工作流优化并转换为PTIFF。<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>否</td>
-   <td>为每个页面生成一个PDF子资产。 PDF子资产会按如前所述进行处理。 由于PDF仅包含单页，因此不会生成子资产。<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+| ExtendScript | 默认 | 描述 |
+|---|---|---|
+| ThumbnailExport.jsx | 是 | 生成300 ppi `thumbnail.jpg`再现，该再现经过优化并由`Dynamic Media Process Image Assets`进程组件转换为PTIFF再现。 |
+| JPEGPagesExport.jsx | 是 | 为每页生成一个300 ppi JPEG子资产。 JPEG子资产是存储在InDesign资产下的真实资产。 它还通过`DAM Update Asset`工作流进行优化并转换为PTIFF。 |
+| PDFPagesExport.jsx | 否 | 为每个页面生成一个PDF子资产。 PDF子资产会按如前所述进行处理。 由于PDF仅包含单页，因此不会生成子资产。 |
 
 ### 配置图像缩略图大小{#configuring-image-thumbnail-size}
 
@@ -194,7 +152,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 **配置图像缩略图大小**
 
-1. 点按&#x200B;**[!UICONTROL 工具>工作流>模型> DAM更新资产>编辑]**。
+1. 点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**。
 1. 点按&#x200B;**[!UICONTROL Dynamic Media处理图像资产]**&#x200B;步骤，然后点按&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -211,7 +169,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 在预览资产时，您创建的图像预设可以作为动态演绎版使用。 Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>演绎版]**&#x200B;查看资产时显示各种动态演绎版。 您可以增加或减少显示的演绎版限制。
 
-**要增加或减少显示的图像预设数**:
+**要增加或减少显示的图像预设数：**
 
 1. 导航到CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 导航到`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`的图像预设列表节点
@@ -239,11 +197,12 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 请参阅[Adobe Illustrator(AI)、PostScript®(EPS)和PDF文件格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)。
 
 如果您希望支持摄取INDD文件，以便生成此文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
+
 请参阅[InDesign(INDD)文件格式](#indesign-indd-file-format)。
 
-**要创建图像预设，请执行以下操作**:
+**要创建图像预设，请执行以下操作：**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具>资产>图像预设]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**。
 1. 单击&#x200B;**[!UICONTROL 创建]**。此时将打开&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -318,7 +277,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
       选择 <strong>PDF</strong>、<strong>TIFF</strong> 或<strong>带有 Alpha 的 TIFF</strong> 可提供以下更多选项：
     </div>
     <ul>
-     <li><strong>压缩</strong> - 选择一种压缩算法。“PDF”的算法选项有<strong>无</strong>、<strong>Zip</strong> 和 <strong>Jpeg</strong>；对于“TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong>、<strong>Jpeg</strong> 和 <strong>Zip</strong>；对于“带有 Alpha 的 TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong> 和 <strong>Zip</strong>。</li>
+     <li><strong>压缩</strong> - 选择一种压缩算法。PDF的算法选项有<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>;对于TIFF，它们是<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>;对于带有Alpha的TIFF，为<strong>None</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li>
     </ul> <p>如果选择 <strong>PNG</strong>、<strong>带有 Alpha 的 PNG</strong>，或者选择 <strong>EPS</strong>，则不提供其他选项。</p> </td>
   </tr>
   <tr>
@@ -350,7 +309,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
     <ul>
      <li>选择<strong>“可感知</strong>”，当原始图像中的一个或多个颜色超出目标色彩空间的色域时，将一个色彩空间的总色域压缩到另一个色彩空间。</li>
      <li>当当前色彩空间中的颜色超出目标色彩空间中的色域时，选择“相对比色”<strong>。 </strong>并且，您希望将其映射到目标色彩空间色域内最接近的可能颜色，而不影响任何其他颜色。 </li>
-     <li>选择<strong>饱和度</strong>以在转换为目标色彩空间时重现原始图像色彩饱和度。 </li>
+     <li>如果要在转换为目标色彩空间时重现原始图像色彩饱和度，请选择<strong>饱和度</strong>。 </li>
      <li>选择<strong>绝对比色</strong>以完全匹配颜色，而不对会改变图像亮度的白点或黑点进行任何调整。</li>
     </ul> </td>
   </tr>
@@ -366,9 +325,9 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
    <td><strong>锐化类型</strong></td>
    <td><p>选择<strong>无</strong>、<strong>锐化</strong>或 <strong>USM 锐化</strong>。 </p>
     <ul>
-     <li>选择<strong>无</strong>可禁用锐化。</li>
+     <li>如果要禁用锐化，请选择<strong>无</strong>。</li>
      <li>选择<strong>锐化</strong>可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
-     <li>选择<strong> USM锐化</strong>可对最终的缩减采样图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与 Photoshop 的“钝化蒙蔽”滤镜相同的选项。</li>
+     <li>如果要对最终的缩减采样图像微调锐化滤镜效果，请选择<strong> USM锐化</strong>。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与 Photoshop 的“钝化蒙蔽”滤镜相同的选项。</li>
     </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p>
     <ul>
      <li><strong>数量</strong>  — 控制应用于边缘像素的对比度数量。默认的实数值为1.0。对于高分辨率图像，最高可将其增加到5.0。可以考虑使用“数量”来衡量滤镜强度。</li>
@@ -465,7 +424,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 ### 编辑图像预设{#modifying-image-presets}
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具>资产>图像预设]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**。
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -478,5 +437,5 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 ### 删除图像预设 {#deleting-image-presets}
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按或单击工具图标，并导航到&#x200B;**[!UICONTROL 资产>图像预设]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按或单击工具图标，并导航到&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**。
 1. 选择一个预设，然后单击&#x200B;**[!UICONTROL 删除]**。 Dynamic Media会向您确认是否要删除该组件。 点按&#x200B;**[!UICONTROL 删除]**&#x200B;可删除，或点按&#x200B;**[!UICONTROL 取消]**&#x200B;可中止删除。
