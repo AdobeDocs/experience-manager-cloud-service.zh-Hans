@@ -4,8 +4,7 @@ description: 图像用户档案或视频用户档案是一种菜谱，可用于�
 feature: 资产管理，图像用户档案，视频用户档案
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 3%
@@ -89,7 +88,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 （可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受运行重新处理的资产的平均资产大小和MIME类型的约束。 值越高，表示您在一个重新处理作业中拥有许多文件。 因此，处理横幅会在Experience Manager资源上停留更长时间。 但是，如果平均文件大小为小 — 1 MB或小于1 MB的Adobe建议将该值增加到100，但不超过1000。 如果文件的平均大小为数百MB，Adobe建议您将批处理大小减小到10。
 
-**（可选）要调整重新处理工作流的批大小**:
+**（可选）要调整重新处理工作流的批大小，请执行以下操作：**
 
 1. 在 Experience Manager 中，点按 **[!UICONTROL Adobe Experience Manager]**，以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]**（锤子）图标 > **[!UICONTROL 工作流 > 模型]**。
 1. 在“工作流模型”页面的卡片视图或列表视图中，选择&#x200B;**[!UICONTROL Scene7:重新处理资产]**。
