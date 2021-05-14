@@ -1,10 +1,9 @@
 ---
 title: 预览 3D 资产
 description: 了解如何在Dynamic Media中预览3D资源。
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '562'
 ht-degree: 15%
 
 ---
@@ -25,7 +24,7 @@ Experience Manager中的交互式3D预览支持以下文件格式：
 | 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
 |---|---|---|---|
 | GLB | 二进制GL传输 | model/gltf-binary |  |
-| GLTF | GL传输格式 | model/gltf+json | 请参阅下面的&#x200B;**注**。 |
+| GLTF | GL传输格式 | model/gltf+json | 请参见下面的&#x200B;**注**。 |
 | OBJ | WaveFront 3D对象文件 | application/x-tgif |  |
 | STL | 立体光刻 | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | 仅支持摄取；预览不可用。 |
@@ -46,19 +45,19 @@ Experience Manager中的交互式3D预览支持以下文件格式：
 
 在资产详细信息视图页中打开3D资产所花费的时间取决于若干因素，如带宽、图像复杂性和服务器延迟。
 
-此外，在以交互方式操作相机时，还要考虑客户端计算机的功能，如工作站、笔记本或移动触控设备。 具备良好图形功能的相当强大的系统可以使交互式 3D 查看体验更流畅、更舒适。
+此外，在以交互方式操作相机时，还应考虑客户端计算机的功能，如工作站、笔记本或移动触控设备。 具备良好图形功能的相当强大的系统可以使交互式 3D 查看体验更流畅、更舒适。
 
 **要在Experience Manager中预览3D资产：**
 
 1. 确保您已将3D资产上传到Experience Manager。
 请参阅[支持的3D预览格式](#supported-3d-previewing-assets)和[上传资产](/help/assets/manage-digital-assets.md#uploading-assets)。
-1. 从Experience Manager，在&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 从Experience Manager，在&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 
    ![导航页面](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. 在页面的右上角附近，从“视图”下拉列表中，点按&#x200B;**[!UICONTROL 卡片视图]**，然后导航到要预览的 3D 资产。
 
-   ![3D卡选择](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![选择3D卡](/help/assets/dynamic-media/assets/3d-card-select.png)
    _在卡片视图中，点按要预览的3D资产的卡片。_
 
 1. 点按3D资产的卡片。
