@@ -4,10 +4,9 @@ description: Dynamic Media 附带预定义的自适应视频编码配置文件�
 feature: 资产管理，视频用户档案，演绎版
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3665'
 ht-degree: 20%
 
 ---
@@ -101,7 +100,7 @@ Dynamic Media 附带预定义的自适应视频编码配置文件。此开箱即
 
 * 持续五分钟。
 * 30帧/秒(FPS)。
-* 300 MB文件大小。
+* 文件大小为300 MB。
 
 Adobe Sensei仅限9000帧。 即，在30 FPS时5分钟。 如果视频的FPS较高，则支持的最大视频持续时间会减少。 例如，60 FPS视频必须长2.5分钟，才能得到Adobe Sensei和智能裁剪的支持。
 
@@ -211,7 +210,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案 — 一组�
 1. 执行以下操作：
    * 在&#x200B;**[!UICONTROL 宽度]**&#x200B;字段中，输入&#x200B;**[!UICONTROL 自动]**。
    * 在&#x200B;**[!UICONTROL 高度]**字段中，输入以像素为单位的值。
-要帮助您直观地显示视频的大小，请点按“高度”的信息图标以打开**[!UICONTROL 大小计算器]**&#x200B;页。 使用“**[!UICONTROL 大小计算器]**”页可以根据需要进一步设置视频尺寸（蓝框）。 完成后，在对话框的右上角，点按&#x200B;**[!UICONTROL X]**。
+要帮助您直观地显示视频的大小，请点按“高度”的信息图标以打开**[!UICONTROL 大小计算器]**&#x200B;页。 使用“**[!UICONTROL 大小计算器]**”页面根据需要进一步设置视频大小（蓝框）。 完成后，在对话框的右上角，点按&#x200B;**[!UICONTROL X]**。
 1. （可选）执行以下操作之一：
 
    * 点按&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡，并确保选中&#x200B;**[!UICONTROL 使用默认值]**&#x200B;复选框（建议）。
@@ -244,7 +243,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案 — 一组�
 
 您可以编辑现有的视频编码用户档案，以利用在Experience Manager中创建或编辑视频用户档案时在用户界面中找不到的高级视频编码参数。 您可以自定义将一个或多个高级参数（如minBitrate和maxBitrate）添加到现有用户档案。
 
-**要使用自定义添加的视频编码参数**:
+**要使用自定义添加的视频编码参数：**
 
 1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL CRXDE Lite]**。
 1. 在CRXDE Lite页面左侧的“资源管理器”面板中，导航到以下内容：
@@ -271,7 +270,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案 — 一组�
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>关键帧之间的目标帧数。 计算此值以每2-10秒生成一个关键帧。 例如，在每秒30帧处，关键帧间隔为60-300。<br /> <br /> 较低的关键帧间隔改善了自适应视频编码的流搜索和流切换行为，还可以提高具有大量运动的视频的质量。但是，由于关键帧会增加文件的大小，因此较低的关键帧间隔通常会导致在给定比特率下的整体视频质量降低。</td>
+   <td>关键帧之间的目标帧数。 计算此值，以便每2-10秒生成一个关键帧。 例如，在每秒30帧处，关键帧间隔为60-300。<br /> <br /> 较低的关键帧间隔改善了自适应视频编码的流搜索和流切换行为，还可以提高具有大量运动的视频的质量。但是，由于关键帧会增加文件的大小，因此较低的关键帧间隔通常会导致在给定比特率下的整体视频质量降低。</td>
    <td><code>String</code></td>
    <td><p>正数。</p> <p>默认为300。</p> <p>HLS（HTTP实时流）的建议值为60-90。</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案 — 一组�
 
 要为其他资产类型定义高级处理参数，请参阅[配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-**要编辑视频用户档案**:
+**要编辑视频用户档案，请执行以下操作：**
 
 1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 用户档案]**。
 1. 在“视频用户档案”页面上，选中一个视频用户档案名称。
@@ -381,7 +380,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案 — 一组�
 
 #### 从属性{#applying-video-profiles-to-folders-from-properties}将视频用户档案应用到文件夹
 
-1. 点按或单击Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]**，然后导航到您要将视频用户档案应用到的文件夹。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]**，然后导航到您要应用视频用户档案的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后单击&#x200B;**[!UICONTROL 保存并关闭]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
@@ -394,7 +393,7 @@ Dynamic Media已附带预定义的自适应视频编码用户档案 — 一组�
 
 另请参阅[重新处理文件夹](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的资产。
 
-**要全局应用视频用户档案**,
+**要全局应用视频用户档案，请执行以下操作：**
 
 * 导航到CRXDE Lite到以下节点：`/content/dam/jcr:content`。 添加属性`videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>`并点按&#x200B;**[!UICONTROL 保存全部]**。
 
