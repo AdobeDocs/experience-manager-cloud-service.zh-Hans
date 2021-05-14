@@ -3,10 +3,9 @@ title: 将 URL 关联到您的 Web 应用程序
 description: 了解如何在Dynamic Media中将URL关联到您的Web应用程序。
 role: Business Practitioner
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1275'
 ht-degree: 22%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 22%
 
 您的网站和应用程序通过URL调用访问Dynamic Media服务。 在您发布资产后，Dynamic Media 会激活引用该资产的 URL 字符串。您可以将这些 URL 粘贴到 Web 浏览器中以进行测试。
 
-仅当&#x200B;*不*&#x200B;使用AEM作为WCM时，才链接到URL。 链接与嵌入 — 用于您希望以弹出窗口或模态窗口的形式传送视频播放器时。 如果您使用AEM作为WCM，[将资产直接添加到页面。](adding-dynamic-media-assets-to-pages.md)
+仅当&#x200B;*不*&#x200B;使用Adobe Experience Manager作为WCM时，才链接到URL。 链接 — 与嵌入 — 用于在您希望以弹出窗口或模态窗口的形式传送视频播放器时使用。 如果您使用Experience Manager作为WCM，则[将资产直接添加到页面。](adding-dynamic-media-assets-to-pages.md)
 
 要将这些URL字符串放置到网页和应用程序中，请从Dynamic Media复制它们。
 
@@ -47,7 +46,7 @@ ht-degree: 22%
 
 有多种不同的方法可以获取 URL 字符串。但是，下面的步骤只介绍了一种可用的方法。
 
-**获取资产的URL**
+**要获取资产的URL，请执行以下操作：**
 
 1. 导航到您要复制其图像预设URL或查看器预设URL的&#x200B;*已发布*&#x200B;资产，然后点按该资产以将其打开。
 
@@ -89,15 +88,15 @@ Dynamic Media支持投放静态资产，静态资产是除图像和视频之外�
 * 动画GIF
 * 音频文件
 * CSS
-* JavaScript(当公司配置了自己的域时)
+* JavaScript™(当您的公司配置了自己的域时)
 * PDF
 * SVG
 * XML
 * ZIP
 
-**获取静态资产的URL**
+**要获取静态资产的URL，请执行以下操作：**
 
-1. 导航到您要复制其URL的*已发布*静态资产，然后点按该资产以将其打开。
+1. 导航到要复制其URL的&#x200B;*已发布*&#x200B;静态资产，然后点按该资产以将其打开。
 
    请记住，仅在&#x200B;*之后复制*&#x200B;的URL才可用，您已先发布&#x200B;*已*&#x200B;静态资产。
 
@@ -117,7 +116,7 @@ Dynamic Media支持投放静态资产，静态资产是除图像和视频之外�
 
 ## 获取已发布视频演绎版{#obtaining-a-video-url-for-a-published-video-rendition}的视频URL
 
-1. 在AEM中，导航到&#x200B;**[!UICONTROL 工具>部署>云>Cloud Services]**。
+1. 在Experience Manager中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 云]** > **[!UICONTROL Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
 1. 在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下，点按所需配置的名称。
 
@@ -127,20 +126,20 @@ Dynamic Media支持投放静态资产，静态资产是除图像和视频之外�
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (以上路径仅供说明；它不是您复制的实际路径。)
+   (上述路径仅供解释；它不是您复制的实际路径。)
 
 1. 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。
 
    例如，如果注册ID为`87654321|MyCompany`，则客户名称将为`MyCompany`。
 
-1. 在页面的左上角附近，点按&#x200B;**[!UICONTROL Cloud Services]**，然后点按AEM图标并导航到&#x200B;**[!UICONTROL 常规>CRXDE Lite]**。
-1. 从JCR（Java内容存储库）中向下复制整个视频再现路径。
+1. 在页面的左上角附近，点按&#x200B;**[!UICONTROL Cloud Services]**，然后点按Experience Manager图标并导航到&#x200B;**[!UICONTROL 常规]** > **[!UICONTROL CRXDE Lite]**。
+1. 从JCR(Java™内容存储库)中向下复制整个视频再现路径。
 
    例如，视频的再现路径可能与以下内容类似：
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (以上路径仅供说明；它不是您复制的实际路径。)
+   (上述路径仅供解释；它不是您复制的实际路径。)
 
 1. 要形成完整的URL路径，请按以下顺序排列复制的信息：
 
@@ -154,7 +153,7 @@ Dynamic Media支持投放静态资产，静态资产是除图像和视频之外�
 
 ## 获取自适应流播放(HLS){#obtaining-a-video-url-for-adaptive-streaming-hls}的视频URL
 
-1. 在AEM中，导航到&#x200B;**[!UICONTROL 工具>部署>云>Cloud Services]**。
+1. 在Experience Manager中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 云]** > **[!UICONTROL Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
 1. 在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下，点按所需配置的名称。
 1. 在&#x200B;**[!UICONTROL Dynamic MediaCloud Services设置]**&#x200B;页面上，执行以下操作：
@@ -163,7 +162,7 @@ Dynamic Media支持投放静态资产，静态资产是除图像和视频之外�
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (以上路径仅供说明；它不是您复制的实际路径。)
+   (上述路径仅供解释；它不是您复制的实际路径。)
 
    * 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。您需要在以下步骤的后面复制客户名称。
 
@@ -189,7 +188,7 @@ Dynamic Media支持投放静态资产，静态资产是除图像和视频之外�
     </tbody>
    </table>
 
-1. 在AEM中复制Dynamic Media处理的完整视频资产路径。 您需要在以下步骤的稍后部分复制此视频资产路径。
+1. 在Experience Manager中复制Dynamic Media处理的完整视频资产路径。 您需要在以下步骤的稍后部分复制此视频资产路径。
 
    例如：
 
