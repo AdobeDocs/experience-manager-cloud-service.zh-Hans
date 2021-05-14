@@ -7,17 +7,16 @@ content-type: reference
 docset: aem65
 role: Business Practitioner
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 4%
 
 ---
 
 # 在Dynamic Media {#selective-publish-configure-folder}中的文件夹级别配置选择性发布
 
-您可以使用&#x200B;**[!UICONTROL 管理发布]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，选择在文件夹级别向Adobe Experience Manager或Dynamic Media发布或从Adobe取消发布资产。 此发布方法很有用，因为它不仅依赖于&#x200B;**[!UICONTROL Dynamic Media Configuration]**，后者的设置对Dynamic Media实例中的所有文件夹都是全局的。
+您可以选择向Adobe Experience Manager或Dynamic Media发布或从Adobe或Adobe取消发布资产。 可以使用&#x200B;**[!UICONTROL 管理发布]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**&#x200B;在文件夹级别执行此操作。 此发布方法很有用，因为它不仅依赖于&#x200B;**[!UICONTROL Dynamic Media Configuration]**，后者的设置对Dynamic Media实例中的所有文件夹都是全局的。
 
 例如，通过选择性发布，您可以处理尚未实时的产品的资产。 在这种情况下，营销团队可以访问同步到Dynamic Media的智能裁剪图像和动态演绎版。 他们可以创建宣传资料，无需将这些资产发布到Dynamic Media进行全球投放。
 
@@ -40,7 +39,7 @@ ht-degree: 4%
 * 在&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;中设置的&#x200B;**[!UICONTROL 发布资产]**&#x200B;值
 * 或者，在文件夹级别属性中设置的&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;值
 
-您仍然可以选择&#x200B;**[!UICONTROL 立即]**、**[!UICONTROL 激活]**&#x200B;或&#x200B;**[!UICONTROL 选择性发布]**。 例如，您可以将&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;值设置为&#x200B;**[!UICONTROL 在激活]**&#x200B;时。 此外，您可以将文件夹级别的&#x200B;**[!UICONTROL Dynamic Media Publish]**&#x200B;模式值设置为&#x200B;**[!UICONTROL 选择性发布]**，反之，依此类推。
+您仍然可以选择&#x200B;**[!UICONTROL 立即]**、**[!UICONTROL 激活]**&#x200B;或&#x200B;**[!UICONTROL 选择性发布]**。 例如，您可以将&#x200B;**[!UICONTROL Dynamic Media Configuration]**&#x200B;中的&#x200B;**[!UICONTROL 发布资产]**&#x200B;值设置为&#x200B;**[!UICONTROL 在激活]**&#x200B;上。 此外，您可以将文件夹级别的&#x200B;**[!UICONTROL Dynamic Media Publish]**&#x200B;模式值设置为&#x200B;**[!UICONTROL 选择性发布]**，反之，依此类推。
 
 在文件夹中配置选择性发布后，可以执行下列任一操作：
 
@@ -49,9 +48,9 @@ ht-degree: 4%
 * [使用快速发布将资源发布到Dynamic Media或Experience Manager](#quick-publish-aem-dm)。
 * [通过搜索结果有选择地发布或取消发布资产](#selective-publish-unpublish-search-results)。
 
-**在Dynamic Media中在文件夹级别配置选择性发布**
+**要在Dynamic Media中的文件夹级别配置选择性发布，请执行以下操作：**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（位于工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 执行下列操作之一：
    * 编辑现有文件夹的属性 — 在&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，导航到要编辑其属性的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
    * 编辑新文件夹的属性 — 在&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，点按页面右上角附近的&#x200B;**[!UICONTROL 创建>文件夹]**。 在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中，输入文件夹的标题（必需），然后点按&#x200B;**[!UICONTROL 创建]**。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
@@ -99,9 +98,9 @@ ht-degree: 4%
 >
 >*在文* 件夹中复制资产会清除这些资产的发布状态。但是，当&#x200B;*将*&#x200B;资产移动到其文件夹属性设置为&#x200B;**[!UICONTROL 选择性发布]**&#x200B;的文件夹时，将保留这些资产的发布状态。
 
-**使用管理发布将资产选择性地发布到Dynamic Media或Experience Manager作为Cloud Service**
+**要使用管理发布选择性地将资产发布到Dynamic Media或Experience Manager作为Cloud Service:**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（位于工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 在&#x200B;**[!UICONTROL 卡视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，执行以下操作之一：
    * 导航到要发布其资产的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 管理发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便更轻松地检查特定文件夹的发布状态。
    * 导航到要发布其资产的文件夹。 打开文件夹，然后选择一个或多个资产。 在工具栏中，点按&#x200B;**[!UICONTROL 管理发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便您可以更轻松地检查特定资产的发布状态。
@@ -132,7 +131,7 @@ ht-degree: 4%
 
 ### 使用管理发布{#selective-unpublish-manage-publication}从Dynamic Media或Experience Manager中选择性取消发布资产
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（位于工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在左侧，点按导航图标（在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 在&#x200B;**[!UICONTROL 卡视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，执行以下操作之一：
    * 导航到要取消发布其资产的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 管理发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便更轻松地检查特定文件夹的发布状态。
    * 导航到要取消发布其资产的文件夹。 打开文件夹，然后选择一个或多个资产。 在工具栏中，点按&#x200B;**[!UICONTROL 管理发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便您可以更轻松地检查特定资产的发布状态。
@@ -171,7 +170,7 @@ ht-degree: 4%
 
 **要使用快速发布将资产发布到Dynamic Media或Experience Manager，请执行以下操作：**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在页面的左侧，点按导航图标（就在工具图标上方），然后在页面的右侧，点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。 在页面的左侧，点按导航图标（就在工具图标的上方），然后在页面的右侧，点按&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 在&#x200B;**[!UICONTROL 卡视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，执行以下操作之一：
    * 导航到要发布其资产的文件夹。 选择文件夹，然后在工具栏中，点按&#x200B;**[!UICONTROL 快速发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便更轻松地检查特定文件夹的发布状态。
    * 导航到要发布其资产的文件夹。 打开文件夹，然后选择一个或多个资产。 在工具栏中，点按&#x200B;**[!UICONTROL 快速发布]**。 使用&#x200B;**[!UICONTROL 列表视图]**，以便您可以更轻松地检查特定资产的发布状态。
@@ -190,7 +189,7 @@ ht-degree: 4%
    | 发布至 Brand Portal | 立即将选定的资产发布到&#x200B;**[!UICONTROL Brand Portal]**。<br>仅当您的Experience Manager资产实例已配置Brand Portal时，此 **[!UICONTROL 选]** 项才可用。 |
    | 发布到 Dynamic Media | 将选定的资产立即发布到Dynamic Media。<br>资产必须已同步到Dynamic Media。如果需要，请确保文件夹属性中的&#x200B;**[!UICONTROL 同步模式]**&#x200B;已设置为&#x200B;**[!UICONTROL 将此文件夹子树中的所有内容同步到Dynamic Media]**。 |
 
-1. 点按&#x200B;**[!UICONTROL 确定，]**，然后点按&#x200B;**[!UICONTROL 关闭]**。
+1. 点按&#x200B;**[!UICONTROL 确定]**，然后点按&#x200B;**[!UICONTROL 关闭]**。
 
 ## 通过搜索结果{#selective-publish-unpublish-search-results}选择性发布或取消发布资产
 
@@ -198,9 +197,9 @@ ht-degree: 4%
 
 另请参阅[在Experience Manager](/help/assets/search-assets.md)中搜索资产。
 
-**通过搜索结果有选择地发布或取消发布资产**
+**要通过搜索结果有选择地发布或取消发布资产，请执行以下操作：**
 
-1. 在Experience Manager中，在页面的左上角，点按Experience Manager徽标以访问全局导航控制台。 在页面的左侧，点按导航图标（就在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 在Experience Manager中，在页面的左上角，点按Experience Manager徽标以访问全局导航控制台。 在页面左侧，点按导航图标（就在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 在工具栏中，点按页面右上角附近的搜索图标（放大镜）。
 1. 在&#x200B;**[!UICONTROL 键入以搜索]**&#x200B;文本字段中，输入关键字，然后按&#x200B;**[!UICONTROL Enter]**。
 1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 列表视图]**&#x200B;图标。
@@ -258,9 +257,9 @@ ht-degree: 4%
 
 您可以在Experience Manager中将&#x200B;**[!UICONTROL 时间轴]**&#x200B;与&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;一起使用，以快速检查资产的发布状态。
 
-**要检查资产的发布状态，请执行以下操作**
+**要检查资产的发布状态，请执行以下操作：**
 
-1. 在Experience Manager中，在页面的左上角，点按Experience Manager徽标以访问全局导航控制台。 在页面的左侧，点按导航图标（就在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 在Experience Manager中，在页面的左上角，点按Experience Manager徽标以访问全局导航控制台。 在页面左侧，点按导航图标（就在工具图标上方），然后点按&#x200B;**[!UICONTROL 资产]** > **[!UICONTROL 文件]**。
 1. 在&#x200B;**[!UICONTROL 卡视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**(下面的屏幕截图显示了&#x200B;**[!UICONTROL 列表视图]**)中，打开包含已发布或未发布的资产的文件夹。
 1. 选择资产，以便显示带有复选标记的资产。 请参见下面的屏幕截图。
 1. 在页面左上角附近，从下拉菜单中，选择&#x200B;**[!UICONTROL 时间轴]**。 左面板中的&#x200B;**[!UICONTROL 状态]**区域显示所选资源的发布状态。
