@@ -3,10 +3,9 @@ title: 使用选择器
 description: 了解在Dynamic Media中为交互式图像、交互式视频和传送横幅选择资源时可使用的方法。
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 14%
 
 ---
@@ -59,7 +58,7 @@ ht-degree: 14%
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，您可以点按热点或图像映射，并查看快速视图的外观。
+1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，您可以点按热点或图像映射，并查看快速视图的显示方式。
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
