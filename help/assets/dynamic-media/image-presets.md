@@ -4,17 +4,16 @@ description: 了解如何在Dynamic Media中应用图像预设。
 feature: 图像预设、查看器、演绎版
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '306'
 ht-degree: 34%
 
 ---
 
 # 应用 Dynamic Media 图像预设 {#applying-image-presets}
 
-图像预设使资产能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。在导出图像时，您可以选择预设，这也会根据管理员指定的规范重新设置图像的格式。
+图像预设使资产能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。 在导出时，您可以选择预设，以根据管理员列出的规范重新设置图像格式。
 
 此外，您可以选择响应式图像预设（选择图像预设后，通过 **[!UICONTROL RESS]** 按钮指定）。
 
@@ -26,7 +25,7 @@ ht-degree: 34%
 
 无论您何时预览图像，都可以对图像应用图像预设。
 
-**应用Dynamic Media图像预设**
+**要应用Dynamic Media图像预设，请执行以下操作：**
 
 1. 打开资产，在左边栏中，点按下拉列表，然后点按&#x200B;**[!UICONTROL 演绎版]**。
 
