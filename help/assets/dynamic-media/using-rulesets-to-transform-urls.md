@@ -3,8 +3,7 @@ title: 使用规则集转换URL
 description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是用脚本语言(如JavaScript™)编写的指令集，用于评估XML数据并在数据满足某些条件时采取某些操作。
 role: Business Practitioner
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -31,7 +30,7 @@ ht-degree: 5%
 
    请参阅[从URL中删除特殊字符](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)。
 
-在Dynamic Media环境中，使用基于XML的系统管理资产信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于服务Dynamic Media资源的预处理规则集文件。 此文件重新构建标准URL协议格式，以满足与Dynamic Media集成的系统的业务逻辑。 您指定一个XML文件作为规则集定义文件路径。
+在Dynamic Media环境中，使用基于XML的系统管理资产信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于服务Dynamic Media资源的预处理规则集文件。 此文件重新构建标准URL协议格式，以满足与Dynamic Media集成的系统的公司逻辑。 您指定一个XML文件作为规则集定义文件路径。
 
 >[!CAUTION]
 >
@@ -71,7 +70,7 @@ ht-degree: 5%
    * 在页面的右下角，单击&#x200B;**[!UICONTROL 提交上载]**。
    * 在全局导航栏上，单击&#x200B;**[!UICONTROL 作业]**&#x200B;以检查上载作业的状态。 当&#x200B;**[!UICONTROL 作业]**&#x200B;页面上的&#x200B;**[!UICONTROL 状态]**&#x200B;列显示上载完成时，请继续执行后续步骤。
 
-1. 在页面顶部附近的导航栏上，单击&#x200B;**[!UICONTROL 设置>应用程序设置>发布设置>图像服务器]**。
+1. 在页面顶部附近的导航栏上，单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。
 1. 在&#x200B;**[!UICONTROL 图像服务器发布]**&#x200B;页面的&#x200B;**[!UICONTROL 目录管理]**&#x200B;组下，找到&#x200B;**[!UICONTROL 规则集定义文件路径]**，然后单击&#x200B;**[!UICONTROL 选择]**。
 1. 在&#x200B;**[!UICONTROL 择规则集定义文件 (XML)]** 页面上，浏览至您的规则集文件，然后在页面的右下角单击&#x200B;**[!UICONTROL 选择]**。
 1. 在设置页面的右下角，单击&#x200B;**[!UICONTROL 关闭]**。
