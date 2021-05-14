@@ -1,13 +1,12 @@
 ---
 title: Dynamic Media 图像配置文件
-description: “了解如何创建包含USM锐化设置、智能裁切或智能色板，或同时包含这两个设置的Dynamic Media图像用户档案。 然后，将用户档案应用到图像资产的文件夹。”
+description: 了解如何创建包含USM锐化设置、智能裁剪或智能用户档案或同时包含这两个设置的Dynamic Media Image Swatch。 然后，将用户档案应用到图像资产的文件夹。
 feature: 资产管理，图像用户档案，演绎版
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2714'
 ht-degree: 14%
 
 ---
@@ -45,14 +44,14 @@ ht-degree: 14%
      <li>值为“顶”、“底”、“左”和“右”。</li>
      <li>左上角被视为0,0，并从那里计算像素裁剪。</li>
      <li>裁切起点：左为X，上为Y</li>
-     <li>水平计算：原始图像的水平像素尺寸减去“左”，然后减去“右”。</li>
+     <li>水平计算：原始图像的水平像素大小减去“左”，然后减去“右”。</li>
      <li>垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。</li>
     </ul> <p>例如，假设您有一张4000 x 3000像素的图像。 您使用以下值：顶部=250，底部=500，左侧=300，右侧=700。</p> <p>使用(4000-300-700、3000-250-500或3000、2250)的填充空间从左上角(300,250)进行裁剪。</p> </td>
   </tr>
   <tr>
    <td>智能裁剪</td>
    <td>根据图像的可视焦点批量裁剪图像。</td>
-   <td><p>Smart Crop利用Adobe Sensei中人工智能的强大功能快速实现图像批量裁剪的自动化。 Smart Crop可自动检测并裁切到任何图像的焦点，以捕获预期的目标点，而不管屏幕大小。</p> <p>要使用智能裁剪，请从“裁剪选项”下拉列表中选择<strong>智能裁剪</strong>，然后在响应式图像裁剪的右侧，启用（打开）该功能。</p> <p>默认的断点大小（大、中、小）涵盖大多数图像在移动和平板电脑设备、桌面和横幅上使用的所有大小。 如果需要，您可以编辑默认名称“大”、“中”和“小”。</p> <p>要添加更多断点，请单击<strong>添加裁剪</strong>;要删除裁剪，请单击垃圾桶图标。</p> </td>
+   <td><p>Smart Crop利用Adobe Sensei中人工智能的强大功能快速实现图像批量裁剪的自动化。 Smart Crop可自动检测并裁切到任何图像的焦点，以获取预期的目标点，而不管屏幕大小。</p> <p>要使用智能裁剪，请从“裁剪选项”下拉列表中选择<strong>智能裁剪</strong>，然后在响应式图像裁剪的右侧，启用（打开）该功能。</p> <p>默认的断点大小（大、中、小）涵盖大多数图像在移动和平板电脑设备、桌面和横幅上使用的所有大小。 如果需要，您可以编辑默认名称“大”、“中”和“小”。</p> <p>要添加更多断点，请单击<strong>添加裁剪</strong>;要删除裁剪，请单击垃圾桶图标。</p> </td>
   </tr>
   <tr>
    <td>颜色和图像样本</td>
@@ -70,7 +69,7 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小演绎版。 这意味着ptiff中最大的演绎版不会受USM锐化的影响。 但是，缩略图等较小的演绎版会发生更改（并显示USM锐化）。
+>USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小演绎版。 这意味着ptiff中最大的演绎版不会受USM锐化的影响。 而较小的再现（如缩览图）则会发生更改（并显示USM锐化）。
 
 在&#x200B;**[!UICONTROL USM锐化]**&#x200B;中，您有以下筛选选项：
 
@@ -105,9 +104,9 @@ ht-degree: 14%
 
 另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)。
 
-**创建Dynamic Media图像用户档案**
+**要创建Dynamic Media图像用户档案，请执行以下操作：**
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>图像用户档案]**。
+1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像用户档案]**。
 1. 要添加图像用户档案，请点按&#x200B;**[!UICONTROL 创建]**。
 1. 输入用户档案名称，以及USM锐化、裁剪或色板或两者的值。
 
@@ -121,7 +120,7 @@ ht-degree: 14%
 
 ## 编辑或删除Dynamic Media图像用户档案{#editing-or-deleting-image-profiles}
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>图像用户档案]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像用户档案]**。
 1. 选择要编辑或删除的图像用户档案。要编辑图像，请选择&#x200B;**[!UICONTROL 编辑图像处理用户档案]**。 要删除图像，请选择&#x200B;**[!UICONTROL 删除图像处理用户档案]**。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -152,7 +151,7 @@ ht-degree: 14%
 
 #### 将Dynamic Media Image用户档案从用户档案用户界面{#applying-image-profiles-to-folders-from-profiles-user-interface}应用到文件夹
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>图像用户档案]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像用户档案]**。
 1. 选择要应用到一个或多个文件夹的图像用户档案。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
@@ -161,7 +160,7 @@ ht-degree: 14%
 
 #### 从属性{#applying-image-profiles-to-folders-from-properties}将Dynamic Media图像用户档案应用到文件夹
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 资产]**，然后导航到您要对其应用图像用户档案的文件夹。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]**，然后导航到您要对其应用图像用户档案的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
 1. 点按&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择配置文件，然后点按&#x200B;**[!UICONTROL 保存并关闭]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
@@ -173,7 +172,7 @@ ht-degree: 14%
 
 您可以重新处理文件夹中的资产，该文件夹已经有您稍后更改的现有视频用户档案。 请参阅[编辑文件夹的处理配置文件后重新处理该文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
-**要全局应用Dynamic Media图像用户档案**:
+**要全局应用Dynamic Media图像用户档案，请执行以下操作：**
 
 1. 执行下列操作之一：
 
@@ -197,10 +196,9 @@ ht-degree: 14%
 
 另请参阅[编辑多个图像的智能裁剪或智能色板](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)。
 
-**编辑单个图像的智能裁剪或智能色板**
+**要编辑单个图像的智能裁剪或智能色板，请执行以下操作：**
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 资产]**，然后导航到应用了智能裁剪或智能色板图像用户档案的文件夹。
-
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 资产]**，然后导航到应用了智能裁剪或智能色板图像用户档案的文件夹。
 1. 要打开其内容，请点按文件夹。
 1. 点按要调整其智能裁剪或智能色板的图像。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 智能裁剪]**。
@@ -217,15 +215,15 @@ ht-degree: 14%
 
 ## 编辑多个图像的智能裁剪或智能色板{#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-将包含智能裁剪的图像用户档案应用到文件夹后，该文件夹中的所有图像都应用了裁剪。 如果需要，您可以手动&#x200B;**&#x200B;重新对齐或调整多个图像中的智能裁剪窗口的大小，以进一步调整其焦点。
+在将包含智能裁剪的图像用户档案应用到文件夹后，该文件夹中的所有图像都应用了裁剪。 如果需要，您可以手动&#x200B;**&#x200B;重新对齐或调整多个图像中的智能裁剪窗口的大小，以进一步调整其焦点。
 
 在编辑智能裁剪并保存后，更改会传播到您对特定图像使用裁剪的所有位置。
 
 如有必要，您可以重新运行智能裁剪以再次生成其他裁剪。
 
-**编辑多个图像的智能裁剪或智能色板**
+**要编辑多个图像的智能裁剪或智能色板，请执行以下操作：**
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 资产]**，然后导航到应用了智能裁剪或智能色板图像用户档案的文件夹。
+1. 点按Experience Manager徽标，导航到&#x200B;**[!UICONTROL 资产]**，然后导航到应用了智能裁剪或智能色板图像用户档案的文件夹。
 1. 在文件夹中，点按&#x200B;**[!UICONTROL 更多操作]**(...)图标，然后点按&#x200B;**[!UICONTROL 智能裁剪]**。
 
 1. 在&#x200B;**[!UICONTROL 编辑智能裁切]**&#x200B;页面上，执行下列任一操作：
@@ -274,7 +272,7 @@ ht-degree: 14%
 
 ### 通过用户档案用户界面{#removing-image-profiles-from-folders-via-profiles-user-interface}将Dynamic Media Image用户档案从文件夹删除
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>图像用户档案]**。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像用户档案]**。
 1. 选择要从一个或多个文件夹删除的图像用户档案。
 1. 点按&#x200B;**[!UICONTROL 从文件夹]**&#x200B;中删除处理用户档案，然后选择一个或多个要用于从中删除用户档案的文件夹，然后点按&#x200B;**[!UICONTROL 删除]**。
 
@@ -282,7 +280,7 @@ ht-degree: 14%
 
 ### 通过属性{#removing-image-profiles-from-folders-via-properties}将Dynamic Media图像用户档案从文件夹删除
 
-1. 点按AEM徽标，然后导航&#x200B;**[!UICONTROL 资产]**，然后导航到您要从中删除图像用户档案的文件夹。
+1. 点按Experience Manager徽标，然后导航&#x200B;**[!UICONTROL 资产]**，然后导航到您要从中删除图像用户档案的文件夹。
 1. 在文件夹中，点按复选标记以选择它，然后点按&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 图像用户档案]**&#x200B;选项卡。
 1. 从&#x200B;**[!UICONTROL 用户档案名称]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 无]**，然后点按&#x200B;**[!UICONTROL 保存并关闭]**。
