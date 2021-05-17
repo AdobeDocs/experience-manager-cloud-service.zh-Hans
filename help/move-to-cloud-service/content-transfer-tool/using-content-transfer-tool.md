@@ -2,11 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-translation-type: tm+mt
-source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
+source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 46%
+source-wordcount: '2769'
+ht-degree: 45%
 
 ---
 
@@ -54,6 +53,8 @@ ht-degree: 46%
 * 作者的&#x200B;*摄取阶段*&#x200B;将会按比例缩小整个作者部署。这意味着作者 AEM 在整个摄取过程中将不可用。另外，请确保在运行&#x200B;*Ingestion*&#x200B;阶段时未执行Cloud Manager管道。
 
 * 当将`Amazon S3`或`Azure`用作源AEM系统上的数据存储时，应配置数据存储，以便无法删除存储的块（垃圾回收）。 这确保了索引数据的完整性，并且未能配置这种方式可能会导致提取失败，因为此索引数据缺乏完整性。
+
+* 如果使用自定义索引，则必须确保在运行内容传输工具之前使用`tika`节点配置自定义索引。 有关详细信息，请参阅[准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)。
 
 ## 可用性 {#availability}
 
