@@ -4,14 +4,13 @@ description: 开始此处，引导您了解AEM强大而灵活的无外设功能�
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
-
 
 # AEM无外设开发者历程{#aem-headless-developer-journey}
 
@@ -19,11 +18,11 @@ ht-degree: 2%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-开始此处，引导您了解AEM强大而灵活的无外设功能、其功能以及如何将它们用于您的首个开发项目。
+开始此处，引导您了解AEM强大而灵活的无头功能、其功能以及如何将它们用于您的首个无头开发项目。
 
 ## 简介 {#introduction}
 
-无外设实施对于向您的受众提供体验越来越重要，无论体验在何处，也不论渠道。
+无外设实施对于向您的受众提供体验变得越来越重要，无论体验在何处，也不管渠道。
 
 无外设实施可实现页面和组件管理，就像在完整堆栈解决方案中一样，侧重于创建渠道中立、可重用的内容片段及其跨渠道投放。 它是用于实施Web体验的现代、动态的开发模式。
 
@@ -52,3 +51,14 @@ ht-degree: 2%
 | 8 | [如何与无外设应用程序一起使用](go-live.md) | 了解如何实时部署应用程序并在Git中保存您的本地代码，然后将其移至Cloud Manager Git for CI/CD渠道。 |
 | 9 | [启动后](post-launch.md) | 了解如何保持无外设体验。 |
 | 10 | [可选 — 如何使用AEM创建单页应用程序(SPA)](create-spa.md) | 了解AEM无头功能后，了解如何结合使用无头和无头投放，并了解如何使用AEM SPA Editor框架创建可编辑的SPA。 |
+
+## 下一步是什么{#what-is-next}
+
+您现在已准备好开始Adobe无头之旅。 我们建议您继续下一步，阅读文章[了解CMS无外设开发。](learn-about.md)
+
+### 选择您自己的冒险{#choose-your-path}
+
+但是，Adobe希望您在开始使用AEM无头项目时取得成功，无论您的学习风格如何。 所以请考虑这两个选项。
+
+* 如果您希望继续&#x200B;**了解无头概念和AEM无头技术**，则应继续按照建议的AEM无头旅程，方法是查看文档[如何将您的内容建模为AEM内容模型](model-your-content.md)，从中可了解如何在AEM中建模您的内容结构。
+* 如果您希望&#x200B;**通过执行**&#x200B;来学习，您可以跳到[AEM无头动手教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)入门，在该教程中，您将通过实施一个简单项目来公开AEM无头内容，直接进入AEM无头开发。
