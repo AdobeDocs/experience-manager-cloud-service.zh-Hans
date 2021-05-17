@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -41,7 +40,7 @@ ht-degree: 0%
 * 了解需要哪些必要的工具和AEM配置。
 * 了解最佳实践，让您的无头旅程变得顺畅、保持内容生成高效并确保内容快速交付。
 
-## 要求{#requirements}
+## 要求 {#requirements}
 
 在继续此文档之前，请确保已查看AEM无头开发人员历程[AEM无头入门Cloud Service](getting-started.md)中以前的文档，确保您：
 
@@ -74,7 +73,7 @@ ht-degree: 0%
 
 在开发阶段，建议您使用开发和阶段环境。 当您转到性能测试时，您将希望转到生产环境。
 
-### 开发人员与内容作者的合作{#cooperation}
+### 开发人员与内容作者的合作 {#cooperation}
 
 开发人员需要使用填充的内容模型设置AEM开发环境。 开发人员开发的客户端将从AEM无头中消费内容，因为内容作者仍在创建内容。 这就是API定义真正重要的原因。 通过利用AEM SDK，开发人员可以创建测试挂接，以便创建客户端和单元测试以确保客户端能够正确呈现内容。
 
@@ -122,7 +121,7 @@ ht-degree: 0%
 * 邀请其他内容制作者审阅内容并提供注释和注释反馈，这些注释和注释可在内容片段编辑器中使用，并可在内容片段管理控制台中全局跨片段使用。
 * 尽可能少的必备元素，让一切保持运转。 必选元素可以阻止工作流。
 
-### 创作全局内容{#localization}
+### 创作全局内容 {#localization}
 
 * 建立内容翻译的规则和管理。 要减少系统负载，请将转换建立为可以以较长时间间隔运行的异步进程。 为本地化质量控制和错误修复留出时间。
 * 利用您的翻译技术系统提供的所有功能，这些功能可以与AEM集成，如翻译记忆库。
@@ -141,9 +140,9 @@ ht-degree: 0%
 
 ### 选择您自己的冒险{#choose-your-path}
 
-无论您的学习风格如何，Adobe都希望您能够成功地开始使用AEM无头项目。
+无论您的学习风格如何，Adobe都希望您在开始使用AEM无头项目时取得成功。
 
-* 如果您希望&#x200B;**继续学习无头概念和AEM无头技术**，则应继续您的AEM无头旅程，方法是阅读文档[如何将您的内容建模为AEM内容模型](model-your-content.md)，从中学习如何在AEM中建模您的内容结构。
+* 如果您希望继续&#x200B;**了解无头概念和AEM无头技术**，则应继续您的AEM无头旅程，方法是接下来查看文档[如何将您的内容建模为AEM内容模型](model-your-content.md)，从中学习如何在AEM中建模您的内容结构。
 * 如果您希望&#x200B;**通过执行**&#x200B;来学习，您可以跳到[AEM无头动手教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)入门，在该教程中，您将通过实施一个简单项目来公开AEM无头内容，直接进入AEM无头开发。
 
 ## 其他资源 {#additional-resources}
