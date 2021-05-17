@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
+source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 43%
    1. **Cloud Service 配置**：输入目标 AEM as a Cloud Service 作者 URL。
 
       >[!NOTE]
-      >在内容传输活动期间，您一次最多可以创建和维护四个迁移集。
+      >在内容传输活动，您一次最多可以创建和维护十个迁移集。
       >此外，您还必须为每个特定的环境（*暂存*、*开发*&#x200B;或&#x200B;*生产*）单独创建迁移。
 
    1. **访问令牌**：输入访问令牌。
