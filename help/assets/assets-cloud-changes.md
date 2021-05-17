@@ -1,16 +1,15 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 作为 [!DNL Cloud Service]的显着变化'
 description: 与[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 有显着变化。
-feature: Release Information
+feature: 发行信息
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 6%
 
 ---
-
 
 # 对[!DNL Experience Manager Assets]作为[!DNL Cloud Service] {#notable-changes}的显着更改
 
@@ -53,7 +52,7 @@ Asset microservices是一种云本机服务，可自动配置并连接到Cloud M
 |-----|-----|-----|
 | [重复资产检测](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 工作方式不同。 | 请参见[它在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的工作方式。 |
 | [仅用于放置(FPO)再现](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 工作方式不同 |  |
-| 元数据写回 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)中的[元数据写回 |
+| 元数据写回 | 工作方式不同 | 默认为已禁用. 根据需要启用相应的工作流启动程序。 写回由资产微服务处理。 |
 | 处理使用包管理器上传的资产 | 需要手动干预。 | 使用&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作手动重新处理。 |
 | MIME类型检测 | 不受支持. | 如果您上传的数字资产没有扩展名或扩展名不正确，可能无法按需要进行处理。 用户仍可以存储二进制文件，而无需在DAM中扩展名。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME类型检测。 |
 | 复合资产的子资产生成 | 不受支持. | 未完成从属使用案例。 例如，多页PDF文件的批注会受到影响。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 |
@@ -66,10 +65,10 @@ Asset microservices是一种云本机服务，可自动配置并连接到Cloud M
 >[!DNL Experience Manager]为[!DNL Cloud Service]提供了以下资源：
 >
 >* [列表已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)
->* [简介](/help/overview/introduction.md)
->* [新增功能和不同功能](/help/overview/what-is-new-and-different.md)
->* [架构](/help/core-concepts/architecture.md)
->* [显着变化](/help/release-notes/aem-cloud-changes.md)
->* [显着变化 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [简介](/help/overview/introduction.md)
+* [新增功能和不同功能](/help/overview/what-is-new-and-different.md)
+* [架构](/help/core-concepts/architecture.md)
+* [显着变化](/help/release-notes/aem-cloud-changes.md)
+* [显着变化 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
