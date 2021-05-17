@@ -1,18 +1,17 @@
 ---
 title: 部署代码 — Cloud Services
 description: 部署代码 — Cloud Services
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
 
-
 # 部署代码 {#deploy-your-code}
 
-## 使用Cloud Manager {#deploying-code-with-cloud-manager}部署代码
+## 在AEM中使用Cloud Manager作为Cloud Service{#deploying-code-with-cloud-manager}部署代码
 
 配置生产管道(存储库、环境和测试环境)后，您就可以部署代码了。
 
@@ -125,5 +124,3 @@ Cloud Manager将构建过程生成的所有目标/*.zip文件上传到存储位�
 1. 将AEM包部署到publish2，将调度程序包部署到dispatcher2，刷新调度程序缓存。
 1. 将dispatcher2放回负载平衡器中。
 此过程将一直持续到部署到达拓扑中的所有发布者和调度程序为止。
-
-
