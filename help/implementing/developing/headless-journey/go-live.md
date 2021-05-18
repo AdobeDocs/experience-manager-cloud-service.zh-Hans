@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
 
-在[AEM无头开发人员历程的这一部分中，](overview.md)了解如何通过将您的本地代码以Git格式保存并移至Cloud Manager Git（用于CI/CD管道）来实时部署无头应用程序。
+在[AEM无头开发者历程](overview.md)的这一部分中，了解如何通过将您的本地代码以Git格式保存并移至Cloud Manager Git（用于CI/CD管道）来实时部署无头应用程序。
 
 ## 迄今为止的故事{#story-so-far}
 
@@ -40,19 +40,18 @@ ht-degree: 0%
 
 ## AEM SDK {#the-aem-sdk}
 
-它包含以下伪像：
+AEM SDK用于构建和部署自定义代码。 它是开发和测试无外设应用程序上市前所需的主要工具。 它包含以下伪像：
 
 * 快速启动jar — 可执行的jar文件，可用于设置作者和发布实例
 * 调度程序工具 — 针对基于Windows和UNIX系统的调度程序模块及其依赖项
 * Java API Jar - Java Jar/Maven依赖关系，它公开可用于针对AEM进行开发的所有允许的Java API
 * Javadocjar - Javadocs for the Java API jar
 
-## 开发工具 {#development-tools}
+## 其他开发工具{#additional-development-tools}
 
 除了AEM SDK，您还需要其他工具，以便在本地开发和测试代码和内容：
 
 * Java
-* AEM SDK
 * Git
 * 阿帕奇·马文
 * Node.js库
@@ -60,15 +59,15 @@ ht-degree: 0%
 
 由于AEM是Java应用程序，您需要安装Java和Java SDK以支持将AEM作为Cloud Service进行开发。
 
-AEM SDK用于构建和部署自定义代码。 它是您在上线前测试无外设应用程序所需的主要工具。
-
 Git是您用来管理源代码控制以及将更改签入到Cloud Manager，然后将其部署到生产实例的工具。
 
 AEM使用Apache Maven构建从AEM Maven Project原型生成的项目。 所有主要IDE都为Maven提供集成支持。
 
-Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子项目的前端资源。 Node.js与npm一起分发，它是事实上的Node.js包管理器，用于管理JavaScript依赖关系。
+Node.js是一个JavaScript运行时环境，用于处理AEM项目的`ui.frontend`子项目的前端资源。 Node.js与npm一起分发，它是事实上的Node.js包管理器，用于管理JavaScript依赖关系。
 
 ## AEM系统组件概览{#components-of-an-aem-system-at-a-glance}
+
+接下来，让我们看一下AEM环境的组成部分。
 
 完整的AEM环境由作者、发布和调度程序组成。 这些相同的组件将在本地开发运行时中提供，以便您在上线前更轻松地预览代码和内容。
 
@@ -80,17 +79,13 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 
 ## 本地开发工作流{#the-local-development-workflow}
 
-本地开发项目以Apache Maven为构建基础，并且使用Git进行源代码控制。 为了更新项目，开发人员可以使用他们的首选集成开发环境，如Eclipse、Visual Studio代码或IntelliJ等。
+本地开发项目以Apache Maven为构建基础，并使用Git进行源代码控制。 为了更新项目，开发人员可以使用他们的首选集成开发环境，如Eclipse、Visual Studio代码或IntelliJ等。
 
 要测试将由您的无外设应用程序摄取的代码或内容更新，您需要将更新部署到本地AEM运行时，其中包括AEM创作和发布服务的本地实例。
 
 请务必注意本地AEM运行时中每个组件之间的区别，因为在最重要的位置测试更新非常重要。 例如，在创作时测试内容更新或在发布实例上测试新代码。
 
 在生产系统中，调度程序和http Apache服务器始终位于AEM发布实例前面。 它们为AEM系统提供缓存和安全服务，因此测试针对调度程序的代码和内容更新也至关重要。
-
-在您确保所有内容都经过测试并正常运行后，即可将代码更新推送到Cloud Manager中的集中式Git存储库。
-
-在将更新上传到Cloud Manager后，可以使用Cloud Manager的CI/CD管道将这些更新部署到AEM作为Cloud Service。
 
 ## 使用本地开发环境{#previewing-your-code-and-content-locally-with-the-local-development-environment}在本地预览您的代码和内容
 
@@ -106,23 +101,16 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 
 设置本地开发环境后，您可以通过在本地部署静态节点服务器来模拟向React应用程序提供服务的内容。
 
-要更深入地了解设置本地开发环境以及内容预览所需的所有依赖项，请参阅[使用AEM发布服务的生产部署](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
-
-## 部署到生产{#deploy-to-production}
-
-在本地测试所有代码和内容后，即可开始使用AEM进行生产部署。
-
-您可以通过利用Cloud Manager CI/CD管道来开始部署代码，该管道在[此处](/help/implementing/deploying/overview.md)中有广泛介绍。
+要更深入地了解设置本地开发环境以及内容预览所需的所有依赖项，请参阅[生产部署文档](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
 
 ## 准备AEM无外设应用程序以投入使用{#prepare-your-aem-headless-application-for-golive}
 
-现在，您应该遵循下面概述的最佳实践，为启动准备AEM无外设应用程序。
+现在，是时候按照以下概述的最佳实践为您的AEM无外设应用程序做好启动准备了。
 
 ### 在启动{#secure-and-scale-before-launch}之前保护和扩展您的无头应用程序
 
-1. 配置[基于令牌的身份验证](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-1. 安全Webhooks
-1. 配置缓存和可伸缩性
+1. 使用GraphQL请求配置[基于令牌的身份验证](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
+1. 配置[缓存](/help/implementing/dispatcher/caching.md)。
 
 ### 模型结构与GraphQL输出{#structure-vs-output}
 
@@ -133,8 +121,8 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 ### 最大化CDN缓存命中率{#maximize-cdn}
 
 * 请勿使用直接GraphQL查询，除非您从表面请求实时内容。
-   * 请改用持久查询。
-   * 提供600秒以上的CDN TTL，以便CDN可以缓存它们。
+   * 尽可能使用持久查询。
+   * 提供600秒以上的CDN TTL，以便CDN缓存它们。
    * AEM可以计算模型更改对现有查询的影响。
 * 在低和高内容更改率之间拆分JSON文件/GraphQL查询，以减少CDN的客户端流量并分配更高的TTL。 这样可最大限度地减少CDN通过来源服务器重新验证JSON。
 * 要主动使CDN中的内容失效，请使用软清除。 这样，CDN可以重新下载内容，而不会导致缓存丢失。
@@ -146,6 +134,14 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 * 最小化用于托管JSON和引用对象的域数。
 * 利用`Last-modified-since`刷新资源。
 * 在JSON文件中使用`_reference`输出，无需解析完整的JSON文件即可开始下载资产。
+
+## 部署到生产{#deploy-to-production}
+
+确保所有内容都经过测试并正常运行后，您便可以将代码更新推送到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)中的[集中式Git存储库。
+
+在将更新上传到Cloud Manager后，可以使用[Cloud Manager的CI/CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)将其部署到AEM作为Cloud Service。
+
+您可以通过利用Cloud Manager CI/CD管道来开始部署代码，该管道在[此处](/help/implementing/deploying/overview.md)中有广泛介绍。
 
 ## 性能监视{#performance-monitoring}
 
@@ -207,16 +203,10 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 * 如何与AEM Headless项目实时协作。
 * 上线后该怎么办。
 
-您已经启动了您的第一个AEM Headless项目，或现在拥有执行此操作所需的全部知识。 干得好！
-
-不过，AEM中的无头店不需要停在这里。 您可能还记得，在旅程的[入门部分](getting-started.md#integration-levels)中，我们简要地讨论了AEM如何不仅支持无头投放和传统的全栈模型，还支持结合两者优点的混合模型。
-
-如果您的项目需要这种灵活性，请继续旅程的可选附加部分[如何使用AEM创建单页应用程序(SPA)。](create-spa.md)
-
 ## 其他资源 {#additional-resources}
 
-* [设置本地AEM环境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [AEM作为Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [部署到AEM作为Cloud Service概述](/help/implementing/deploying/overview.md)
+* [AEM作为Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [设置本地AEM环境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [使用Cloud Manager部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [将Cloud Manager Git存储库与外部Git存储库集成，并将项目部署到AEM作为Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
+* [将Cloud Manager Git存储库与外部Git存储库集成，并将项目部署到AEM作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
