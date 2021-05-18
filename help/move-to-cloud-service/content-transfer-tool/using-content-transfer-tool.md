@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
+source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
 workflow-type: tm+mt
-source-wordcount: '2762'
-ht-degree: 42%
+source-wordcount: '2721'
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 42%
 >title="使用内容传输工具的重要注意事项"
 >abstract="查看使用内容传输工具的重要注意事项，包括Java和AEM版本、支持的数据存储类型、用户组注意事项等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="最佳实践和准则"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="下载内容传输工具"
 
 请阅读以下章节，以了解运行内容传输工具时的重要注意事项：
 
@@ -159,7 +158,6 @@ ht-degree: 42%
 >id="aemcloud_ctt_extraction"
 >title="内容提取"
 >abstract="提取是指将源AEM实例中的内容提取到称为迁移集的临时区域。 迁移集是 Adobe 提供的云存储区域，用于临时存储源 AEM 实例和云服务 AEM 实例之间的传输内容。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="摄取过程"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="自上而上提取"
 
 请按照以下步骤从内容传输工具中提取迁移集：
@@ -206,8 +204,7 @@ ht-degree: 42%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="内容摄取"
->abstract="Ingestion是指将内容从&#x200B;*迁移集*&#x200B;引入目标Cloud Service实例。 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="提取流程"
+>abstract="Ingestion是指从迁移集中摄取内容到目标Cloud Service实例。 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="增补摄取"
 
 请按照以下步骤从内容传输工具中摄取迁移集：
