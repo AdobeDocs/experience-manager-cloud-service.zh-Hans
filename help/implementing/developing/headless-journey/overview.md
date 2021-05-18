@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -55,8 +55,7 @@ ht-degree: 1%
 | 6 | [如何通过AEM资产API更新您的内容](update-your-content.md) | 了解如何使用REST API访问和更新内容片段内容。 |
 | 7 | [如何将所有内容整合在一起 — 您的应用程序和您的内容放在AEM Headless中](put-it-all-together.md) | 了解如何利用您的AEM项目（包括内容片段、GraphQL调用、您的REST API调用和您的应用程序），并为其上线做准备。 |
 | 8 | [如何与无外设应用程序一起使用](go-live.md) | 了解如何实时部署应用程序并在Git中保存您的本地代码，然后将其移至Cloud Manager Git for CI/CD渠道。 |
-| 9 | [启动后](post-launch.md) | 了解如何保持无外设体验。 |
-| 10 | [可选 — 如何使用AEM创建单页应用程序(SPA)](create-spa.md) | 了解AEM无头功能后，了解如何结合使用无头和无头投放，并了解如何使用AEM SPA Editor框架创建可编辑的SPA。 |
+| 9 | [可选 — 如何使用AEM创建单页应用程序(SPA)](create-spa.md) | 了解AEM无头功能后，了解如何结合使用无头和无头投放，并了解如何使用AEM SPA Editor框架创建可编辑的SPA。 |
 
 ## 下一步是什么{#what-is-next}
 
