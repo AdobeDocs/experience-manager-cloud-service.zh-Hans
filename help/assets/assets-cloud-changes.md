@@ -4,9 +4,9 @@ description: 与[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experien
 feature: 发行信息
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bcb747517595943e1ed65d19424f002136877903
+source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '778'
 ht-degree: 6%
 
 ---
@@ -46,7 +46,7 @@ Asset microservices是一种云本机服务，可自动配置并连接到Cloud M
 
 ## 与[!DNL Experience Manager] 6.5 {#cloud-service-feature-status}的功能奇偶校验
 
-[!DNL Experience Manager] 为现 [!DNL Cloud Service] 有功能引入了许多新功能和更高性能的工作方式。但是，当从[!DNL Experience Manager] 6.5移动到[!DNL Experience Manager]作为[!DNL Cloud Service]时，您可能会注意到某些功能的工作方式不同、不可用或部分可用。 以下是这些功能的列表:
+[!DNL Experience Manager] 为现 [!DNL Cloud Service] 有功能引入了许多新功能和更高性能的工作方式。但是，当从[!DNL Experience Manager] 6.5移动到[!DNL Experience Manager]作为[!DNL Cloud Service]时，您可能会注意到某些功能的工作方式不同、不可用或部分可用。 以下是这些功能的列表。 此外，请参阅[已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)。
 
 | 功能或用例 | [!DNL Experience Manager]中的状态为[!DNL Cloud Service] | 评论 |
 |-----|-----|-----|
