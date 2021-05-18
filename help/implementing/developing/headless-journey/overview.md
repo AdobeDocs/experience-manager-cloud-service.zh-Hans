@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 2%
+source-wordcount: '782'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,13 @@ ht-degree: 2%
 * 了解AEM无外设功能以及它们如何协同工作以提供无外设体验。
 * 能够采取实施您的第一个AEM无头项目的第一步。
 
-## 无头历程{#the-journey}
+## 受众 {#audience}
+
+此旅程面向开发人员角色，从开发人员的角度规划AEM无外设项目的要求、步骤和方法。 该旅程将定义其他角色，开发人员必须与这些角色交互才能成功的项目，但旅程的视图点是开发人员的角色。
+
+此旅程中的信息当然对其他角色有用，但某些信息对某些角色来说是多余的。 敬请关注即将到来、涉及更多角色的旅程。
+
+## 无外设开发者历程{#the-journey}
 
 您将在此旅程中探索许多主题。 以下文章为您提供了AEM中无外设的基本知识，并链接到详细的技术文档。
 
