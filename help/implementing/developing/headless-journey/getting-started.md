@@ -4,14 +4,13 @@ description: 在此部分的AEM无头开发人员历程中，了解AEM无头的�
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
 
 ---
-
 
 # 将AEM Headless作为Cloud Service{#getting-started}入门
 
@@ -44,13 +43,13 @@ ht-degree: 0%
 
 在AEM中定义无外设项目之前，了解一些基本的AEM概念非常重要。
 
-### 作者实例{#author}
+### 作者实例 {#author}
 
 最简单的方法是， AEM包含一个作者实例和一个[发布实例](#publish)，这两个实例可共同创建、管理和发布您的内容。
 
 内容从创作实例开始。 内容作者可在此处创建其内容。 作者环境为作者优惠了各种工具，以创建、组织和重复使用其内容。
 
-### 发布实例{#publish}
+### 发布实例 {#publish}
 
 在创作实例中创建内容后，必须发布内容，以便其他服务可以使用。 发布实例包含所有已发布的内容。
 
@@ -63,7 +62,8 @@ ht-degree: 0%
 在最简单的级别上，在AEM中创建数字体验需要以下步骤：
 
 1. 您的内容作者将在创作实例中创建您的无外设内容。
-1. 当此内容准备就绪时，它将复制到发布实例。 然后，可以调用API来检索此内容。
+1. 当此内容准备就绪时，它将复制到发布实例。
+1. 然后，可以调用API来检索此内容。
 
 AEM Headless通过提供强大的工具来管理下一节中描述的[无头内容，以此技术基础为基础。](#aem-headless-basics)
 
@@ -128,7 +128,7 @@ AEM支持CMS的全无外设和传统的完整堆栈或外设模型。 但AEM不�
 
 在开始无头AEM项目之前，有许多要求。
 
-### 知识{#knowledge}
+### 知识 {#knowledge}
 
 * GraphQL
 * 使用React或Angular框架创建SPA的开发经验
@@ -173,7 +173,7 @@ AEM支持CMS的全无外设和传统的完整堆栈或外设模型。 但AEM不�
 
 内容作者应牢记以下最佳实践。
 
-#### 本地化计划{#localization}
+#### 计划本地化 {#localization}
 
 在项目开始时计划翻译和本地化。 将“国际化项目经理”视为一个单独的角色，其职责是定义哪些内容应进行翻译，哪些内容不进行翻译，哪些翻译的内容可能由区域或本地内容制作者修改。
 
