@@ -2,16 +2,15 @@
 title: 批量导入和导出资产元数据
 description: 本文介绍如何批量导入和导出元数据。
 contentOwner: AG
-feature: Metadata
+feature: 元数据
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fb70a068-3ba3-4459-952d-79155d286c42
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 10%
 
 ---
-
 
 # 批量{#import-and-export-asset-metadata-in-bulk}导入和导出资产元数据
 
@@ -19,7 +18,7 @@ AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过
 
 ## 导入元数据{#import-metadata}
 
-元数据导入是异步的，不会影响系统性能。 由于XMP使用资产微服务进行写回活动，因此同时更新多个资产的元数据可能会占用大量资源。 Adobe建议您在精简服务器使用期间计划任何批量操作，以便不影响其他用户的性能。
+元数据导入是异步的，不会影响系统性能。 由于使用资产微服务进行元数据写回活动，因此同时更新多个资产的元数据可能会占用大量资源。 Adobe建议您在精简服务器使用期间计划任何批量操作，以便不影响其他用户的性能。
 
 >[!NOTE]
 >
@@ -35,7 +34,7 @@ AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过
    | 批量大小 | 要为其导入元数据的批处理中的资产数。 默认值为 50。最大值为100。 |
    | 字段分隔符 | 默认值为`,`（逗号）。 可以指定任何其他字符。 |
    | 多值分隔符 | 元数据值的分隔符。 默认值为 `|`. |
-   | 启动工作流 | 默认为False。 当设置为`true`且默认的启动程序设置对DAM元数据回写工作流(将元数据写入二进制XMP数据)有效时。 启用启动工作流会降低系统速度。 |
+   | 启动工作流 | 默认为False。 当设置为`true`且默认的“启动器”设置对DAM元数据回写工作流(将元数据写入二进制XMP数据)有效时。 启用启动工作流会降低系统速度。 |
    | 资产路径列名称 | 为包含资产的CSV文件定义列名。 |
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 导入]**。 导入元数据后，将向您的通知收件箱发送通知。 导航到资产属性页，并验证是否已为资产正确导入元数据值。
