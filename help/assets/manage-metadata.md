@@ -3,26 +3,19 @@ title: 管理数字资产的元数据
 description: 了解元数据的类型，以及如何 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 根据资产的元数据自动组织和处理资产。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: 资产管理，元数据
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 15%
 
 ---
 
-
 # 管理数字资产的元数据{#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] 为每个资产保留元数据。它可以更轻松地对资产进行分类和组织，并帮助寻找特定资产的用户。 元数据管理能够从上传到[!DNL Experience Manager Assets]的文件中提取元数据，与创意工作流程集成。 利用资产中的元数据保留和管理功能，您可以根据资产的元数据自动组织和处理资产。
-
->[!MORELIKETHIS]
->
->* [XMP 元数据](xmp-metadata.md)
->* [如何编辑或添加元数据](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 工作流可以检查图像是否具有标题。 如果没有，系统将通知您添加标题。
 * 该工作流可以检查资产上的版权声明是否允许分发。 因此，系统会将资产发送给一台或另一台服务器。
 * 工作流可以检查没有预定义的强制元数据的资产，或具有&#x200B;*无效*&#x200B;元数据的资产。
+
+>[!MORELIKETHIS]
+>
+>* [XMP 元数据](xmp-metadata.md)
+* [如何编辑或添加元数据](meta-edit.md)
+
