@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 
 ## 本地开发工作流{#the-local-development-workflow}
 
-本地开发项目以Apache Maven为构建基础，并使用Git进行源代码控制。 为了更新项目，开发人员可以使用他们的首选集成开发环境，如Eclipse、Visual Studio代码或IntelliJ等。
+本地开发项目以Apache Maven为构建基础，并且使用Git进行源代码控制。 为了更新项目，开发人员可以使用他们的首选集成开发环境，如Eclipse、Visual Studio代码或IntelliJ等。
 
 要测试将由您的无外设应用程序摄取的代码或内容更新，您需要将更新部署到本地AEM运行时，其中包括AEM创作和发布服务的本地实例。
 
@@ -195,7 +195,23 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的ui.front子�
 * 了解如何在启动之前保护和扩展您的应用程序。
 * 了解如何监视性能和调试问题。
 
-您应继续您的AEM无头旅程，接下来查看文档[启动后](post-launch.md)，了解如何保持无头体验。
+## 历程结束了？{#journey-ends}
+
+恭喜！ 您已经完成了AEM Headless Developer历程! 您现在应该了解：
+
+* 无头和无头内容投放之间的区别。
+* AEM无外设功能。
+* 如何组织和AEM无头项目。
+* 如何在AEM中创建无外设内容。
+* 如何在AEM中检索和更新无头内容。
+* 如何与AEM Headless项目实时协作。
+* 上线后该怎么办。
+
+您已经启动了您的第一个AEM Headless项目，或现在拥有执行此操作所需的全部知识。 干得好！
+
+不过，AEM中的无头店不需要停在这里。 您可能还记得，在旅程的[入门部分](getting-started.md#integration-levels)中，我们简要地讨论了AEM如何不仅支持无头投放和传统的全栈模型，还支持结合两者优点的混合模型。
+
+如果您的项目需要这种灵活性，请继续旅程的可选附加部分[如何使用AEM创建单页应用程序(SPA)。](create-spa.md)
 
 ## 其他资源 {#additional-resources}
 
