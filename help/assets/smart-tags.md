@@ -5,10 +5,9 @@ contentOwner: AG
 feature: 智能标记，标记
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-translation-type: tm+mt
-source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2357'
 ht-degree: 6%
 
 ---
@@ -30,8 +29,8 @@ ht-degree: 6%
 
 您可以标记以下类型的资产：
 
-* **图像**:使用Adobe Sensei的智能内容服务标记多种格式的图像。您[创建一个培训模型](#train-model)，然后[将智能标签](#tag-assets)应用到图像。 “智能标签”将应用于支持的文件类型，这些文件类型以JPG和PNG格式生成再现。
-* **基于文本的资产**: [!DNL Experience Manager Assets] 上传时，会自动为支持的基于文本的资产添加标记。了解有关[标记基于文本的资产](#smart-tag-text-based-assets)的更多信息。
+* **图像**:使用Adobe Sensei的智能内容服务标记多种格式的图像。您[创建培训模型](#train-model)，然后自动标记上传的图像。 “智能标签”将应用于支持的文件类型，这些文件类型以JPG和PNG格式生成再现。
+* **基于文本的资产**: [!DNL Experience Manager Assets] 上传时，会自动为支持的基于文本的资产添加标记。
 * **视频资产**:默认情况下，视频标记 [!DNL Adobe Experience Manager] 为启用 [!DNL Cloud Service]。[在您上传新视频或](/help/assets/smart-tags-video-assets.md) 重新处理现有视频时，视频会自动标记。
 
 | 图像（MIME类型） | 基于文本的资产（文件格式） | 视频资源（文件格式和编解码器） |
@@ -62,14 +61,6 @@ ht-degree: 6%
 * [标记您的数字资产](#tag-assets)。
 * [管理标记和搜索](#manage-smart-tags-and-searches)。
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
-
-## 使用智能标记{#smart-tag-text-based-assets}标记基于文本的资产
-
-上传时，支持的基于文本的资产会由[!DNL Experience Manager Assets]自动标记。 默认情况下为启用状态。 智能标记的效果不取决于资产中的文本数量，而取决于资产文本中显示的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但是最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后对其进行索引并用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用的、结构化的和更高优先级的搜索彩块，与完整搜索索引相比，该彩块用于改进资产发现。
-
-相比之下，对于图像和视频，智能标签是基于某些视觉方面派生的。
-
 ## 了解标签模型和准则{#understand-tag-models-guidelines}
 
 标签模型是一组相关标签，这些标签与被标记的图像的各种视觉方面相关联。 标签与图像的明显不同的可视方面相关，以便在应用标签时有助于搜索特定类型的图像。 例如，鞋类集合可以有不同的标签，但所有标签都与鞋类相关，并且可以属于同一标签模型。 应用这些标签后，可帮助查找不同类型的鞋，例如按颜色、设计或使用情况。 要了解[!DNL Experience Manager]中培训模型的内容表示形式，请将培训模型可视化为由一组手动添加的标记和每个标记的示例图像组成的顶级实体。 每个标签可以专门应用于图像。
@@ -86,7 +77,7 @@ ht-degree: 6%
 
 ![说明性图像以说明培训准则](assets/do-not-localize/coherence.png)
 
-**覆盖**:培训中的图像应该有足够的多样性。我们的想法是提供一些比较多样的例子，以便AEM学会专注于正确的事情。 如果要对视觉上不同的图像应用相同的标签，请至少包含每种类型的五个示例。 例如，对于标签&#x200B;*model-down-pose*，包含更多与下面突出显示的图像相似的培训图像，以便服务在标记期间更准确地识别类似图像。
+**覆盖**:培训中的图像应该有足够的多样性。我们的想法是提供一些比较多样的例子，以便[!DNL Experience Manager]学会专注于正确的事情。 如果要对视觉上不同的图像应用相同的标签，请至少包含每种类型的五个示例。 例如，对于标签&#x200B;*model-down-pose*，包含更多与下面突出显示的图像相似的培训图像，以便服务在标记期间更准确地识别类似图像。
 
 ![说明性图像以说明培训准则](assets/do-not-localize/coverage_1.png)
 
@@ -149,10 +140,6 @@ ht-degree: 6%
 1. 查看报告的详细信息。 报表显示您培训的标记的培训状态。**[!UICONTROL 培训状态]**&#x200B;列中的绿色表示已为标记培训智能标记服务。 黄色表示服务未针对特定标记进行完整培训。在这种情况下，使用特定标记添加更多图像并运行培训工作流以在标签上完整地培训服务。如果此报表中未显示标记，请再次运行这些标记的培训工作流。标记
 1. 要下载报告，请从列表中选择它，然后单击工具栏中的&#x200B;**[!UICONTROL 下载]**。 报告以[!DNL Microsoft Excel]电子表格的形式下载。
 
-## 标记资源{#tag-assets}
-
-在您培训了智能标记服务后，上传的资产会自动添加标记。 [!DNL Experience Manager] 近乎实时地应用相应的标签。您可以按需应用标记工作流，或将其计划以定期执行。 标记工作流同时适用于资产和文件夹。
-
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
@@ -188,6 +175,14 @@ ht-degree: 6%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
+## 使用智能标记{#tag-assets}标记资产
+
+上传时，所有类型的受支持资产都会由[!DNL Experience Manager Assets]自动标记。 默认情况下启用标记。 [!DNL Experience Manager] 近乎实时地应用相应的标签。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+
+对于图像和视频，智能标签是根据某些可视方面派生的。
+
+对于基于文本的资产，智能标记的效果并不取决于资产中的文本数量，而取决于资产文本中显示的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但是最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后对其进行索引并用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用的、结构化的和更高优先级的搜索彩块，与完整搜索索引相比，该彩块用于改进资产发现。
+
 ## 管理智能标记和资产搜索{#manage-smart-tags-and-searches}
 
 您可以创建智能标记来删除可能已分配给您的品牌资产的任何不准确标记，以便仅显示最相关的标记。
@@ -212,9 +207,9 @@ ht-degree: 6%
 
 1. 导航到资产的[!UICONTROL 属性]页面。 请注意，您提升的标记已分配高相关性，因此会在搜索结果中显示得更高。
 
-### 使用智能标签{#understand-search}了解AEM搜索结果
+### 使用智能标签{#understand-search}了解[!DNL Experience Manager]搜索结果
 
-默认情况下，AEM搜索将搜索词与`AND`子句组合。 使用智能标签不会更改此默认行为。 使用智能标记可添加`OR`子句，以查找所应用智能标记中的任何搜索词。 例如，考虑搜索`woman running`。 默认情况下，元数据中仅包含`woman`或`running`关键字的资产不会显示在搜索结果中。 但是，此类搜索查询中会显示使用智能标签标记为`woman`或`running`的资产。 搜索结果是，
+默认情况下，[!DNL Experience Manager]搜索将搜索词与`AND`子句组合。 使用智能标签不会更改此默认行为。 使用智能标记可添加`OR`子句，以查找所应用智能标记中的任何搜索词。 例如，考虑搜索`woman running`。 默认情况下，元数据中仅包含`woman`或`running`关键字的资产不会显示在搜索结果中。 但是，此类搜索查询中会显示使用智能标签标记为`woman`或`running`的资产。 搜索结果是，
 
 * 元数据中具有`woman`和`running`关键字的资产。
 
@@ -226,12 +221,12 @@ ht-degree: 6%
 1. smart标签中`woman running`的匹配项。
 1. smart标签中`woman`或`running`的匹配项。
 
-## 标记限制和最佳实践{#limitations}
+## 标记限制和最佳实践 {#limitations}
 
 增强的智能标记基于图像及其标记的学习模型。 这些模型并不总是能够完美地识别标签。 智能标记的当前版本具有以下限制：
 
-* 无法识别图像中的细微差异。 比如，修身与普通衬衫。
-* 无法根据图像的微小图案/部分识别标记。 例如，T恤上的徽标。
+* 无法识别图像中的细微差异。 比如，修身衬衫与普通衬衫。
+* 无法根据图像的微小图案或部分来识别标记。 例如，衬衫上的徽标。
 * [!DNL Experience Manager]支持的语言支持标记。 有关语言列表，请参阅[智能内容服务发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
 * 未实际处理的标记与以下内容相关：
 
