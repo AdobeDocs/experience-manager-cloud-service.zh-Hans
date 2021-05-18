@@ -2,16 +2,15 @@
 title: XMP 元数据
 description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作创建、处理和交换元数据的标准格式。
 contentOwner: AG
-feature: Metadata
+feature: 元数据
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 54%
+source-wordcount: '1000'
+ht-degree: 53%
 
 ---
-
 
 # XMP 元数据 {#xmp-metadata}
 
@@ -75,9 +74,7 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
 [!DNL Adobe Experience Manager Assets]中的此XMP写回功能会将元数据更改复制到原始资产的演绎版。
-当您从资产中更改资产的元数据时，或在上传资产时，更改最初存储在资产层次结构的元数据节点中。
-
-XMP写回功能允许您将元数据更改传播到资产的所有演绎版或特定演绎版。 该功能仅回写那些使用`jcr`命名空间的元数据属性，即，将回写名为`dc:title`的属性，但不写名为`mytitle`的属性。
+当您在[!DNL Assets]中或在上传资产时更改资产的元数据时，这些更改最初存储在资产层次结构的元数据节点中。 使用写回功能，您可以将元数据更改传播到资产的所有演绎版或特定演绎版。 该功能仅回写那些使用`jcr`命名空间的元数据属性，即，将回写名为`dc:title`的属性，但不写名为`mytitle`的属性。
 
 例如，假设您将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的方案。
 
@@ -93,7 +90,13 @@ XMP写回功能允许您将元数据更改传播到资产的所有演绎版或�
 
 ### 启用XMP写回{#enable-xmp-writeback}
 
-[!UICONTROL DAM元数据] 写回工作流用于写回资产的元数据。要启用写回，请执行以下步骤：
+[!UICONTROL DAM元数据] 写回工作流用于写回资产的元数据。要启用写回，请遵循以下三种方法之一：
+
+* 使用启动器。
+* 手动开始`DAM MetaData Writeback`工作流。
+* 将工作流配置为后期处理的一部分。
+
+要使用启动器，请执行以下步骤：
 
 1. 作为管理员，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 启动器]**。
 1. 选择[!UICONTROL 启动器]，其中&#x200B;**[!UICONTROL Workflow]**&#x200B;列显示&#x200B;**[!UICONTROL DAM MetaData Writeback]**。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
@@ -102,16 +105,14 @@ XMP写回功能允许您将元数据更改传播到资产的所有演绎版或�
 
 1. 在&#x200B;**[!UICONTROL 启动器属性]**&#x200B;页面上选择&#x200B;**[!UICONTROL 激活]**。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
-要将此工作流仅应用于一次资产，请从左边栏应用工作流[!UICONTROL DAM元数据写回]工作流。 要将工作流应用于所有上传的资产，请将该工作流添加到后期处理用户档案。
+要手动将工作流仅应用一次资产，请从左边栏应用[!UICONTROL DAM元数据写回]工作流。
+
+要将工作流应用于所有上传的资产，请将该工作流添加到后期处理用户档案。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
--->
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
-
-<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
