@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 ## 迄今为止的故事{#story-so-far}
 
-在AEM无头旅程的上一个文档中，[如何将一切结合在一起 — 您的应用程序和您的内容在AEM无头中](put-it-all-together.md)您学会了如何准备您自己的AEM无头项目上线，现在您应：
+在AEM无头旅程的上一个文档中，[如何通过AEM Assets API更新您的内容](update-your-content.md)您学会了如何通过API在AEM中更新现有无头内容，您现在应：
 
-* 了解上线的要求。
+* 了解AEM Assets HTTP API。
 
-本文基于这些基础知识，因此您了解如何实际实施AEM无外设项目。
+本文以这些基础为基础，因此您了解如何准备自己的AEM无头项目投入使用。
 
 ## 目标 {#objective}
 
@@ -151,13 +151,13 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的`ui.frontend
 * 验证AEM状态页的当前服务可用性状态
 * 访问性能报告
    * 投放性能
-      * 快速(CDN) — 检查呼叫数、缓存率、错误率、负载流量
+      * CDN（快速）性能 — 检查呼叫数、缓存率、错误率和有效负荷流量
       * 来源服务器 — 呼叫数、错误率、CPU负载、负载流量
    * 作者性能
       * 检查用户数、请求数和加载数
 * 访问特定于应用程序和空间的性能报告
    * 服务器启动后，检查常规指标是否为绿色/橙色/红色，然后确定特定应用程序问题
-   * 打开以上已筛选到应用程序/空间的相同报表(即Photoshop桌面、付费专区等)
+   * 打开上面筛选到应用程序或空间的相同报表(例如Photoshop桌面、付费专区)
    * 使用Splunk日志API访问服务和应用程序性能
    * 如果存在其他问题，请与客户支持联系。
 
@@ -181,15 +181,6 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的`ui.frontend
 * 文档重现问题的方法
 * 文档期刊复制的内容
 * 通过AEM支持门户以适当的优先级记录问题
-
-## 下一步是什么{#what-is-next}
-
-现在您已完成了AEM Headless Developer历程的这一部分，您应：
-
-* 了解AEM内容复制和缓存基础知识。
-* 了解如何为无外设应用程序配置模拟上线所需的工具。
-* 了解如何在启动之前保护和扩展您的应用程序。
-* 了解如何监视性能和调试问题。
 
 ## 历程结束了？{#journey-ends}
 
