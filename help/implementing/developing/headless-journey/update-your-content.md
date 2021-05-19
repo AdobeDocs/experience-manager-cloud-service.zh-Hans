@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -322,7 +321,11 @@ API参考文档中定义了支持请求的确切格式。
 * Have experience with sample code and know how the API works in practice.
 -->
 
-您应该继续您的AEM无头旅程，接下来查看文档[如何将一切结合在一起 — 您的应用程序和您的内容(位于AEM无头](put-it-all-together.md)中)，了解如何带入AEM无头项目并准备投入使用。
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+您应该继续您的AEM无头旅程，接下来查看文档[如何使用您的无头应用程序](go-live.md)实现您的AEM无头项目！
 
 [如何使用AEM创建单页应用程序(SPA)](create-spa.md) 还将说明如何使用SPA AEM Editor框架创建可编辑的SPA，以及如何集成外部SPA，从而根据需要启用编辑功能。
 
