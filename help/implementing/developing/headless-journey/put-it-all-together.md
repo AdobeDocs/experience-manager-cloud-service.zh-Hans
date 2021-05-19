@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
-source-git-commit: 58617913f967abbab31054ea9cdb691a9b29415f
+source-git-commit: 5932ece1297512e726ece09217565957da4bda75
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -14,4 +14,4 @@ ht-degree: 0%
 
 # AEM无外设SDK — 即将推出{#coming-soon}
 
-本页旨在就如何使用全新的AEM无外设SDK设置本地开发项目提供指导。 SDK公开发布后，请关注更多内容。
+本页旨在就如何使用全新的AEM无外设SDK设置本地开发项目提供指导。 SDK公开发布后，请继续关注更多详细信息。
