@@ -1,36 +1,35 @@
 ---
-title: 数据保护和数据隐私法规-Adobe Experience Manager作为Cloud Service基础准备
-description: '了解Adobe Experience Manager作为Cloud Service基金会对各种数据保护和数据隐私法规的支持；包括欧盟一般数据保护规定(GDPR)、加利福尼亚州消费者隐私法，以及在将新的AEM作为Cloud Service项目实施时如何遵守这些规定。 '
-translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+title: 数据保护和数据隐私法规 — Adobe Experience Manager作为Cloud Service基础就绪
+description: 了解Adobe Experience Manager作为Cloud Service基础对各种数据保护和数据隐私法规的支持；包括欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》，以及在实施新的AEM as a Cloud Service项目时如何遵守这些规定。
+exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 5%
 
 ---
 
-
-# Adobe Experience Manager作为Cloud Service基础，为数据保护和数据隐私法规做好准备{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Data Protection和数据隐私法规的Cloud Service基础已准备就绪{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->本文档的内容不构成法律咨询，不能代替法律咨询。
+>本文档的内容不构成法律建议，也不会代替法律建议。
 >
->请咨询您的公司的法律部门，以获取有关数据保护和数据隐私法规的建议。
+>请咨询贵公司的法律部门，以获取有关数据保护和数据隐私法规的建议。
 
 >[!NOTE]
 >
->有关Adobe对隐私问题的回应以及这对您作为Adobe客户意味着什么的详细信息，请参阅[Adobe隐私中心](https://www.adobe.com/privacy.html)。
+>有关Adobe对隐私问题的响应以及这对Adobe客户有何影响的更多信息，请参阅[Adobe的隐私中心](https://www.adobe.com/privacy.html)。
 
-## AEM Foundation Data Privacy and Protection支持{#aem-foundation-data-privacy-and-protection-support}
+## AEM基础数据隐私和保护支持{#aem-foundation-data-privacy-and-protection-support}
 
-在AEM基础级别，存储的个人数据保留在用户用户档案中。 因此，本文所介绍的信息主要是如何访问和删除用户用户档案，分别解决访问和删除请求。
+在AEM Foundation级别，存储的个人数据会保存在用户配置文件中。 因此，本文的信息主要介绍如何访问和删除用户档案，分别处理访问和删除请求。
 
-## 访问用户用户档案{#accessing-a-user-profile}
+## 访问用户配置文件{#accessing-a-user-profile}
 
 ### 手动步骤{#manual-steps}
 
-1. 通过浏览至&#x200B;**[!UICONTROL 工具——安全性——用户]**&#x200B;或直接浏览至`https://<serveraddress>:<serverport>/security/users.html`，打开用户管理控制台
+1. 通过浏览到&#x200B;**[!UICONTROL 工具 — 安全 — 用户]**&#x200B;或直接浏览到`https://<serveraddress>:<serverport>/security/users.html`来打开用户管理控制台
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -40,13 +39,13 @@ ht-degree: 5%
 
    ![搜索帐户](assets/dpp-foundation-01.png)
 
-1. 最后，单击打开用户用户档案，然后查看&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡下。
+1. 最后，单击以打开用户配置文件，然后查看&#x200B;**[!UICONTROL Details]**&#x200B;选项卡下的。
 
-   ![用户用户档案](assets/dpp-foundation-02.png)
+   ![用户配置文件](assets/dpp-foundation-02.png)
 
 ### HTTP API {#http-api}
 
-如前所述，Adobe为访问用户数据提供API，以便于自动化。 您可以使用几种类型的API:
+如前所述，Adobe为访问用户数据提供了API，以便于自动化。 您可以使用以下几种类型的API:
 
 **用户属性API**
 
@@ -56,7 +55,7 @@ curl -u user:password http://localhost:4502/libs/granite/security/search/profile
 
 **Sling API**
 
-**发现用户主页：**
+**了解用户主页：**
 
 ```xml
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
@@ -65,7 +64,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **检索用户数据：**
 
-使用从上述命令返回的JSON有效负荷的主属性中的节点路径：
+使用从上述命令返回的JSON有效负载的home属性中的节点路径：
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -75,34 +74,34 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## 禁用用户并删除关联用户档案{#disabling-a-user-and-deleting-the-associated-profiles}
+## 禁用用户并删除关联的配置文件{#disabling-a-user-and-deleting-the-associated-profiles}
 
 ### 禁用用户{#disable-user}
 
-1. 打开“用户管理”控制台并搜索相关用户，如上所述。
-2. 将鼠标悬停在用户上并单击选择图标。 用户档案将变为灰色，表示已选择它。
+1. 如上所述，打开用户管理控制台并搜索相关用户。
+2. 将鼠标悬停在用户上，然后单击选择图标。 用户档案将变为灰色，表示已选择该用户档案。
 
-3. 按上方菜单中的&#x200B;**禁用**&#x200B;按钮以禁用用户：
+3. 按上方菜单中的&#x200B;**Disable**&#x200B;按钮以禁用用户：
 
    ![禁用帐户](assets/dpp-foundation-03.png)
 
 4. 最后，确认操作。
 
-   然后，用户界面将指示已通过擦除并向用户档案卡添加锁定来取消激活用户帐户：
+   随后，用户界面将通过注销并向用户档案卡添加锁定来指示已停用该用户帐户：
 
-   ![已禁用](assets/dpp-foundation-04.png)
+   ![已禁用帐户](assets/dpp-foundation-04.png)
 
-### 删除用户用户档案信息{#delete-user-profile-information}
+### 删除用户配置文件信息{#delete-user-profile-information}
 
 >[!NOTE]
 >
->对于AEM作为Cloud Service,UI中没有可用于删除用户用户档案的手动过程，因为CRXDE不可访问。
+>对于AEM as aCloud Service,UI中没有可用于删除用户配置文件的手动过程，因为CRXDE无法访问。
 
 ### HTTP API {#http-api-1}
 
 以下过程使用 `curl` 命令行工具说明如何使用 **[!UICONTROL cavery]** `userId` 禁用用户，并删除默认位置提供的配置文件。
 
-**发现用户主页：**
+**了解用户主页：**
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
@@ -111,15 +110,15 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **禁用用户：**
 
-使用从上述命令返回的JSON有效负荷的主属性中的节点路径：
+使用从上述命令返回的JSON有效负载的home属性中的节点路径：
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-**删除用户用户档案**
+**删除用户配置文件**
 
-使用从帐户发现命令返回的JSON有效负荷的主属性中的节点路径和已知的现成用户档案节点位置：
+使用从帐户发现命令返回的JSON有效负载的home属性中的节点路径和已知的现成配置文件节点位置：
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
