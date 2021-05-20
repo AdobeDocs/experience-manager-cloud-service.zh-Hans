@@ -1,17 +1,16 @@
 ---
 title: Sling 备忘单
-description: 简单的Sling参考
-translation-type: tm+mt
-source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
+description: 简单的Sling引用
+exl-id: 6ca374f4-5dc4-4322-bc36-5010bc2c7768
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 13%
 
 ---
 
-
 # Sling 备忘单 {#sling-cheatsheet}
 
-![了解Apache Sling脚本分辨率。](assets/sling-cheatsheet-01.png)
+![了解Apache Sling脚本解析。](assets/sling-cheatsheet-01.png)
 
-![使用SlingPostServlet —— 这是POST请求的默认处理函数；它几乎可以做任何事。](assets/sling-cheatsheet-02.png)
+![使用SlingPostServlet — 这是POST请求的默认处理程序；它几乎可以做任何事。](assets/sling-cheatsheet-02.png)
