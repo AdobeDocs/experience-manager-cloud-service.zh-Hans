@@ -1,14 +1,13 @@
 ---
 title: 资产工作流迁移工具
-description: '资产工作流迁移工具 '
-translation-type: tm+mt
-source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
+description: 资产工作流迁移工具
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 46%
 
 ---
-
 
 # 资产工作流迁移工具 {#asset-workflow-migration}
 
@@ -22,15 +21,15 @@ ht-degree: 46%
 
 ## 支持的工作流{#migration-support-for-workflows}
 
-工作流的迁移支持级别各不相同。 请参阅此[特定工作流的列表](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)。 根据提供的支持，这些工作流分为以下类别。 Adobe支持迁移`SUPPORTED`、`REQUIRED`或`OPTIONAL`类别中列出的工作流。 不支持其他类别中提及的工作流步骤。
+工作流具有不同级别的迁移支持。 请参阅此[特定工作流的列表](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)。 根据提供的支持，工作流分为以下类别。 Adobe支持迁移`SUPPORTED`、`REQUIRED`或`OPTIONAL`类别中列出的工作流。 不支持其他类别中提及的工作流步骤。
 
-* `SUPPORTED`:支持的 [!DNL Experience Manager Assets] Cloud Service功能。
-* `OPTIONAL`:作为Cloud Service [!DNL Experience Manager Assets] 的可选功能。
+* `SUPPORTED`:支持的 [!DNL Experience Manager Assets] 作为Cloud Service。
+* `OPTIONAL`:中的可选 [!DNL Experience Manager Assets] 功能作为Cloud Service。
 * `REQUIRED`:添加到工作流的必需步骤。
-* `UNNECESSARY`:功能在作为Cloud Service [!DNL Experience Manager Assets] 时不是必需的。
+* `UNNECESSARY`:在中，作为Cloud Service [!DNL Experience Manager Assets] 不需要功能。
 * `NUI_OOTB`:asset compute服务 [提供的功能](/help/assets/asset-microservices-configure-and-use.md)。
 * `DMS7_OOTB`:默认连接器提供 [!DNL Dynamic Media] 的功能。
-* `NUI_MIGRATED`:已迁移到 [Asset compute服务的处理用户档案](/help/assets/asset-microservices-configure-and-use.md)。
+* `NUI_MIGRATED`:已迁移到 [Asset compute服务的处理配置文件](/help/assets/asset-microservices-configure-and-use.md)。
 * `UNSUPPORTED`:当前不支持 [!DNL Experience Manager Assets] 作为Cloud Service。
 
 ## 安装资产工作流迁移工具 {#installing-tool}
