@@ -5,7 +5,6 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: 部署
 role: Architect, Developer
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '88'
@@ -14,7 +13,7 @@ ht-degree: 79%
 ---
 
 
-# 移动到 AEM as a Cloud Service 指南{#moving}
+# 移动到 AEM as a Cloud Service 指南 {#moving}
 
 + [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + 过渡历程的阶段 {#phases}
@@ -30,8 +29,8 @@ ht-degree: 79%
       + [使用用户映射工具](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 代码重构工具 {#refactoring-tools}
-   + [统一的体验](/help/move-to-cloud-service/unified-experience.md)
-   + [存储库Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
+   + [统一体验](/help/move-to-cloud-service/unified-experience.md)
+   + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
    + [索引转换器](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [资产工作流迁移](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
