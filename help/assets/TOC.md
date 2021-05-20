@@ -4,24 +4,23 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '480'
 ht-degree: 70%
 
 ---
 
 
-# [!DNL Assets] 指南  {#assets}
+# [!DNL Assets] 指南 {#assets}
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概述和新增功能](overview.md)
-+ [对a [!DNL Assets] 的显着更改 [!DNL Cloud Service]](assets-cloud-changes.md)
-+ [[!DNL Assets] 体系结构](architecture.md)
++ [对 [!DNL Assets] as a [!DNL Cloud Service]的显着更改](assets-cloud-changes.md)
++ [[!DNL Assets] 架构](architecture.md)
 + [支持的文件格式](file-format-support.md)
 + [资产微服务概述](asset-microservices-overview.md)
-+ [中的辅助功能 [!DNL Assets]](accessibility.md)
++ [ [!DNL Assets]中的辅助功能](accessibility.md)
 + 管理数字资产{#manage}
    + [共享资产](share-assets.md)
    + [监测活动和 DAM 任务](assets-activity-history.md)
@@ -29,13 +28,13 @@ ht-degree: 70%
    + [添加和上传资产](add-assets.md)
    + [搜索资产](search-assets.md)
    + [常见资产管理任务](manage-digital-assets.md)
-   + [图像的智能标签](smart-tags.md)
-   + [智能标记视频资源](smart-tags-video-assets.md)
+   + [图像智能标记](smart-tags.md)
+   + [智能标记视频资产](smart-tags-video-assets.md)
    + [如何组织资产](organize-assets.md)
-   + [在AEM中 [!DNL Adobe Stock] 使用资产](aem-assets-adobe-stock.md)
+   + [在AEM中使用 [!DNL Adobe Stock] assets](aem-assets-adobe-stock.md)
    + [管理收藏集](manage-collections.md)
    + [元数据概述](manage-metadata.md)
-   + [与 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [与 [!DNL Adobe Creative Cloud]集成](aem-cc-integration-best-practices.md)
    + [如何添加或编辑元数据](meta-edit.md)
    + [审核文件夹资产和收藏集](bulk-approval.md)
    + [使用和配置资产分析](assets-insights.md)
@@ -45,18 +44,18 @@ ht-degree: 70%
    + [下载资产](download-assets-from-aem.md)
    + [签入和签出要编辑的资产](check-out-and-submit-assets.md)
    + [资产的数字版权管理](drm.md)
-   + [水印资源](watermark-assets.md)
+   + [对资产添加水印](watermark-assets.md)
 + 配置、管理和扩展[!DNL Assets] {#admin}
    + [开发人员文档和API参考](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
-   + [使用图像和视频用户档案](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [使用图像和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [多语言资产和翻译](translate-assets.md)
    + [搜索 Facet](search-facets.md)
    + [资产 HTTP API](mac-api-assets.md)
    + [资产HTTP API中的内容片段支持](content-fragments/assets-api-content-fragments.md)
-   + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
-   + [内容片段上的远程AEM GraphQL查询身份验证](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM GraphQL API（包含内容片段） — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [AEM GraphQL API（用于内容片段）](content-fragments/graphql-api-content-fragments.md)
+   + [对内容片段的远程AEM GraphQL查询进行身份验证](content-fragments/graphql-authentication-content-fragments.md)
+   + [包含内容片段的AEM GraphQL API — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
    + [资产报表](asset-reports.md)
    + [串联元数据](cascading-metadata.md)
@@ -64,12 +63,12 @@ ht-degree: 70%
    + [媒体库功能](medialibrary.md)
    + [导入和导出资产元数据](metadata-import-export.md)
 + 共享和分发资产 {#brand-portal}
-   + [配 [!DNL Assets] 置 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [使用 [!DNL Brand Portal]配置 [!DNL Assets] ](configure-aem-assets-with-brand-portal.md)
    + [将资产发布到 [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [将资产从 [!DNL Brand Portal] 发布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [将资产从发 [!DNL Brand Portal] 布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
-   + [无外设投放（包含内容片段和GraphQL）](content-fragments/content-fragments-graphql.md)
+   + [使用内容片段和GraphQL进行无头交付](content-fragments/content-fragments-graphql.md)
    + [为实例启用内容片段功能](content-fragments/content-fragments-configuration-browser.md)
    + [内容片段模型](content-fragments/content-fragments-models.md)
    + [管理内容片段](content-fragments/content-fragments-managing.md)
@@ -79,7 +78,7 @@ ht-degree: 70%
    + [内容片段 - 删除注意事项](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
    + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [预览- JSON表示](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [预览 — JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Experience League 发布的 Dynamic Media 新闻稿](dynamic-media/dynamic-media-newsletter.md)
    + [设置 Dynamic Media](dynamic-media/administering-dynamic-media.md)
@@ -99,7 +98,7 @@ ht-degree: 70%
    + [批次集预设](dynamic-media/batch-set-presets-dm.md)
    + [通过Dynamic Media使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [通过Dynamic Media Classic使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
-   + [智能图像处理](dynamic-media/imaging-faq.md)
+   + [智能成像](dynamic-media/imaging-faq.md)
    + [传送 Dynamic Media 资产](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](dynamic-media/hotlink-protection.md)
    + [3D 支持](dynamic-media/assets-3d.md)
@@ -124,5 +123,5 @@ ht-degree: 70%
    + [使用 Dynamic Media 中的“选择性发布”功能](dynamic-media/selective-publishing.md)
    + [使用选择器](dynamic-media/working-with-selectors.md)
    + [HTTP2 内容交付常见问题解答](dynamic-media/http2faq.md)
-   + [Flash查看器寿命终止](dynamic-media/flash-viewers-eol.md)
-   + [DHTML查看器寿命终止](dynamic-media/dhtml-viewer-endoflifefaqs.md)
+   + [Flash查看器生命周期终止](dynamic-media/flash-viewers-eol.md)
+   + [DHTML查看器生命周期终止](dynamic-media/dhtml-viewer-endoflifefaqs.md)
