@@ -1,34 +1,33 @@
 ---
-title: 管理日志-Cloud Service
-description: 管理日志-Cloud Service
-translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+title: 管理日志 — Cloud Service
+description: 管理日志 — Cloud Service
+exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
 
 ---
 
-
 # 访问和管理日志 {#manage-logs}
 
-用户可以使用列表卡访问选定环境的可用日志文件的环境。  用户可以访问选定环境的可用日志文件列表。
+用户可以使用环境卡访问选定环境的可用日志文件列表。  用户可以访问选定环境的可用日志文件列表。
 
-这些文件可通过UI下载，可从&#x200B;**概述**&#x200B;页面下载：
+这些文件可通过UI从&#x200B;**Overview**&#x200B;页面下载：
 
 ![](assets/download-logs1.png)
 
-或者，**环境**&#x200B;页：
+或者，在&#x200B;**Environments**&#x200B;页面中：
 
 ![](assets/download-logs.png)
 
 >[!NOTE]
->无论打开位置如何，都会显示相同的对话框，允许下载单个日志文件。
+>无论该日志文件在何处打开，都会显示相同的对话框，允许下载单个日志文件。
 
 ![](assets/download-logs2.png)
 
 
-## 通过API {#logs-through-api}进行日志
+## 通过API {#logs-through-api}记录
 
 除了通过UI下载日志外，日志还可通过API和命令行界面使用。
 
@@ -44,7 +43,7 @@ $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-为了获得环境ID（本例中为1884）以及可用的服务或日志名称选项，您可以使用：
+为了获取环境ID（在本例中为1884）以及您可以使用的可用服务或日志名称选项：
 
 ```java
 $ aio cloudmanager:list-environments
@@ -72,7 +71,7 @@ Environment Id Service    Name
 
 ### 其他资源 {#resources}
 
-请参阅以下其他资源，进一步了解Cloud Manager API和Adobe I/OCLI:
+请参阅以下其他资源，了解有关Cloud Manager API和Adobe I/OCLI的更多信息：
 
 * [Cloud Manager API文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 * [Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
