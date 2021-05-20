@@ -1,14 +1,13 @@
 ---
 title: 使用 ContextHub 数据预览页面
 description: ContextHub 工具栏显示 ContextHub 存储区中的数据，并允许您更改存储区数据，该工具栏可用于预览内容
-translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 89%
 
 ---
-
 
 # 使用 ContextHub 数据预览页面  {#previewing-pages-using-contexthub-data}
 
@@ -29,7 +28,7 @@ ContextHub 工具栏在“预览”模式下可用。该工具栏仅在创作实
 
 1. 在打开页面以进行编辑时，在工具栏上单击或点按“预览”。
 
-   ![预览按钮](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
+   ![“预览”按钮](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
 1. 要显示工具栏，请单击或点按 ContextHub 图标。
 
@@ -47,9 +46,9 @@ UI 模块可以在工具栏中显示一个或多个 ContextHub 存储区中的�
 
 ### 弹出窗口内容 {#popup-content}
 
-某些UI模块在单击或点击时显示弹出式叠加。 通常，弹出窗口包含的信息比工具栏上显示的信息要多。
+某些UI模块在单击或点按时会显示一个弹出式叠加。 通常，弹出窗口包含的信息比工具栏上显示的信息要多。
 
-![ContextHub用户档案信息](/help/sites-cloud/authoring/assets/contexthub-profile.png)
+![ContextHub配置文件信息](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### 弹出窗口表单 {#popup-forms}
 
