@@ -1,14 +1,13 @@
 ---
 title: 添加页面注释
 description: 许多与内容直接相关的组件允许您添加注释
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%
 
 ---
-
 
 # 添加页面注释 {#adding-page-annotations}
 
