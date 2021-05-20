@@ -1,77 +1,75 @@
 ---
-title: 云管理者角色
+title: Cloud Manager角色
 description: 本页介绍用户角色和权限。 可查看本页以了解如何添加用户并将其分配给Cloud Manager角色。
-translation-type: tm+mt
-source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
+exl-id: d1689134-044a-4d96-97a2-cd09f735a680
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 6%
 
 ---
 
-
 # Cloud Manager角色{#user-roles-permissions}
 
 ## 用户角色 {#user-roles}
 
-Cloud Manager中的许多功能需要特定权限才能操作，并根据分配的角色和权限限制您在用户界面中执行的操作。 在某些情况下，如果您没有执行操作的权限，则会显示接口控件，但会禁用它。
+Cloud Manager中的许多功能需要特定权限才能运行，并根据分配的角色和权限限制您在用户界面中执行的操作。 在某些情况下，如果您没有执行操作的权限，则界面控件会存在，但会被禁用。
 
-如果有要执行但无法执行的操作，请检查下面的部分[用户角色和权限](#permissions)。 根据您的目标，您可以联系系统管理员并请求所需的角色。
+如果您希望执行某项操作，但无法执行，请检查下面的部分[用户角色和权限](#permissions)。 根据您的目标，您可以联系系统管理员并请求所需的角色。
 
-Cloud Manager当前为控制特定功能可用性的用户定义四个角色：
+Cloud Manager当前为用户定义了四个角色，这些角色可控制特定功能的可用性：
 
 * 业务所有者
 * 部署管理器
-* 项目 Manager
+* 项目经理
 * 开发人员
 
 >[!NOTE]
->Admin Console中的“开发人员”角色与[!UICONTROL 云管理器]中的“开发人员”角色无关。
+>Admin Console中的开发人员角色与[!UICONTROL Cloud Manager]中的开发人员角色无关。
 
-## 查看您的角色{#view-roles}
+## 查看角色{#view-roles}
 
-要视图Cloud Manager中的角色，请登录Cloud Manager UI，选择右上角的用户档案图标，然后选择&#x200B;**用户角色**，如下图所示。
+要在Cloud Manager中查看您的角色，请登录到Cloud Manager UI，选择右上角的配置文件图标，然后选择&#x200B;**用户角色**，如下图所示。
 
 >[!NOTE]
->请参阅[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以了解有关登录到Cloud Manager的更多信息。
+>请参阅[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) ，了解有关登录到Cloud Manager的更多信息。
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
-### 集成产品用户档案{#integration-product-profile}
+### 集成产品配置文件{#integration-product-profile}
 
-除上述功能外，Cloud Manager还将自动创建一个名为“集成 — Cloud Service”的产品用户档案。 此产品用户档案用于Adobe Experience Manager与其他Adobe产品之间的集成。 不能删除此产品用户档案&#x200B;****。 如果意外删除了此用户档案，则需要手动重新创建它。 此用户档案&#x200B;**的显示名称必须**&#x200B;为`CM_CS_DEFAULT`。
+除了上述功能之外，Cloud Manager还将自动创建一个名为“集成 — Cloud Service”的产品配置文件。 此产品配置文件用于Adobe Experience Manager与其他Adobe产品之间的集成。 不能删除此产品配置文件&#x200B;****。 如果意外删除了此配置文件，则需要手动重新创建此配置文件。 此配置文件&#x200B;**的“显示名称”必须**&#x200B;为`CM_CS_DEFAULT`。
 
 
-## 用户角色和权限{#permissions}
+## 用户角色和权限 {#permissions}
 
-[!UICONTROL Cloud Manager 预配置了一些具有适当权限的角色。]例如，开发人员开发代码并有权将代码推送到Git存储库。 或者，业务所有者具有不同的权限，允许他们添加和编辑项目、添加环境和批准部署。
+[!UICONTROL Cloud Manager 预配置了一些具有适当权限的角色。]例如，开发人员开发代码，并有权将代码推送到Git存储库。 或者，业务所有者具有不同的权限，可以添加和编辑程序、添加环境以及批准部署。
 
-每个角色都具有与其关联的特定权限。 例如，如果您是以下人员：
+每个角色都具有与其关联的特定权限。 例如，如果您的角色是：
 
-* ***业务所有者***，您具有添加新项目或编辑项目、添加或更新环境、添加/编辑/删除管道和运行任何管道以及将代码部署到AEM环境或代码质量的权限。
+* ***业务所有者***，您拥有以下权限：添加新程序或编辑程序、添加或更新环境、添加/编辑/删除管道并运行任何管道，以及将代码部署到AEM环境或代码质量。
 
-* ***Deployment Manager***，您拥有添加或更新环境、运行任何管道以及将代码部署到AEM 环境或代码质量的权限。
+* ***部署管理器***&#x200B;中，您有权添加或更新环境、运行任何管道，以及将代码部署到AEM环境或代码质量。
 
-* ***开发人员***，您有权生成个人访问令牌以访问Git。
+* ***开发人员***，您有权生成访问Git的个人访问令牌。
 
    >[!NOTE]
-   > 可以将用户分配给多个角色。 例如，将业务所有者和部署管理器角色分配给用户可向他们提供这些权限的组合或总和。
+   > 可以将用户分配到多个角色。 例如，将“业务所有者”和“部署管理者”角色分配给用户时，会向他们提供这些权限的组合或总和。
 
 
-下表总结了Cloud Manager中的角色及其关联权限。
+下表概述了Cloud Manager中的角色及其关联权限。
 
-| 权限 | 描述 | 业务所有者 | 部署管理器 | 项目 Manager | 开发人员 |
+| 权限 | 描述 | 业务所有者 | 部署管理器 | 项目经理 | 开发人员 |
 |--- |--- |--- |--- |--- |--- |
-| 添加项目<br>编辑项目 | 添加新项目。<br>编辑项目 — 添加或删除解决方案或加载项 | x |  |  |  |
-| 创建环境 | 创建Prod+Stage、Dev、环境。 | x | x |  |  |
-| 更新环境 | 更新Prod+Stage、Dev、环境。 | x | x |  |  |
+| 添加程序<br>编辑程序 | 添加新程序。<br>编辑程序 — 添加或删除解决方案或加载项 | x |  |  |  |
+| 创建环境 | 创建Prod+Stage、Dev、Environments。 | x | x |  |  |
+| 更新环境 | 更新Prod+Stage、Dev、Environments。 | x | x |  |  |
 | 删除开发环境 | 删除开发环境。 | x | x |  |  |
-| 管线设置 | 设置或编辑管道。 |  | x |  |  |
-| 管道执行 | 开始管道。 | x | x |  |  |
-| 管道执行 | 拒绝/批准重要的3层故障。 | x | x | x |  |
+| 管道设置 | 设置或编辑管道。 |  | x |  |  |
+| 管道执行 | 启动管道。 | x | x |  |  |
+| 管道执行 | 拒绝/批准3层重要故障。 | x | x | x |  |
 | 管道执行 | 提供GoLive批准。 | x | x | x |  |
 | 管道执行 | 计划生产部署。 | x | x | x |  |
-| 管道删除 | 允许删除管线。 |  | x |  |  |
+| 管道删除 | 允许删除管道。 |  | x |  |  |
 | 执行取消 | 取消当前执行。 |  | x |  |  |
 | 生成个人访问令牌 | 访问Git。 |  | x |  | x |
-
