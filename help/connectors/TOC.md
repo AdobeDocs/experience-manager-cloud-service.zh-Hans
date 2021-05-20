@@ -5,7 +5,6 @@ breadcrumb-title: Connectors 指南
 user-guide-description: 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。
 feature: Developer Tools
 role: Developer
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '51'
