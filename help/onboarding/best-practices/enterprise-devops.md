@@ -1,7 +1,6 @@
 ---
 title: 企业 DevOps
 description: 了解轻松部署和简化协作所需的流程、方法和通信。
-translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
 workflow-type: tm+mt
 source-wordcount: '1001'
@@ -76,7 +75,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 通常包含多个环境，分
 
 根据项目的规模，该环境通常包含多个作者和/或发布实例。在较低的级别上，存储库也可群集到多个实例。
 
-#### 创作 {#author}
+#### 作者 {#author}
 
 创作实例通常位于内部防火墙之后。这是您和您的同事将在其中执行创作任务的环境，例如：
 
