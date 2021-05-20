@@ -3,10 +3,9 @@ title: 管理数字资产
 description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Publishing,Collaboration,Asset Processing
+feature: 资产管理、发布、协作、资产处理
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-translation-type: tm+mt
 source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
 source-wordcount: '4505'
@@ -16,36 +15,36 @@ ht-degree: 17%
 
 # 管理资产{#manage-assets}
 
-本文介绍如何在Adobe Experience Manager资产中管理和编辑资产。 要管理内容片段，请参阅[内容片段](content-fragments/content-fragments.md)资产。
+本文介绍如何管理和编辑Adobe Experience Manager Assets中的资产。 要管理内容片段，请参阅[内容片段](content-fragments/content-fragments.md)资产。
 
 ## 创建文件夹{#creating-folders}
 
-在组织资产集合（例如所有`Nature`图像）时，您可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 [!DNL Experience Manager Assets] 不要求您组织文件夹中的资产以更好地工作。
+组织资产集合（例如，所有`Nature`图像）时，可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 [!DNL Experience Manager Assets] 您无需组织文件夹中的资产，即可更好地运行。
 
 >[!NOTE]
 >
->* 在共享到Marketing Cloud时，不支持共享`sling:OrderedFolder`类型的Assets文件夹。 如果要共享文件夹，请不要在创建文件夹时选择[!UICONTROL Ordered]。
->* Experience Manager不允许使用`subassets`字作为文件夹的名称。 它是为包含复合资产子资产的节点保留的关键字
+>* 共享到Marketing Cloud时，不支持共享`sling:OrderedFolder`类型的Assets文件夹。 如果要共享文件夹，请在创建文件夹时不要选择[!UICONTROL Ordered]。
+>* Experience Manager不允许使用`subassets`单词作为文件夹的名称。 它是为包含复合资产子资产的节点保留的关键字
 
 
 1. 导航到数字资产文件夹中要创建新文件夹的位置。 在菜单中，单击&#x200B;**[!UICONTROL 创建]**。 选择&#x200B;**[!UICONTROL 新建文件夹]**。
-1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中，提供文件夹名称。 默认情况下，DAM使用您提供的标题作为文件夹名称。 创建文件夹后，您可以覆盖默认文件夹并指定其他文件夹名称。
+1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中，提供文件夹名称。 默认情况下，DAM会使用您提供的标题作为文件夹名称。 创建文件夹后，可以覆盖默认文件夹并指定其他文件夹名称。
 1. 单击&#x200B;**[!UICONTROL 创建]**。您的文件夹会显示在数字资产文件夹中。
 
-不支持以下(空格分隔的列表)字符：
+不支持以下（以空格分隔的）字符列表：
 
-* 资产文件名不能包含以下任意字符：`* / : [ \\ ] | # % { } ? &`
-* 资产文件夹名称不能包含以下任意字符：`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 资产文件名不能包含以下任一字符：`* / : [ \\ ] | # % { } ? &`
+* 资产文件夹名称不能包含以下任一字符：`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## 上传资产{#uploading-assets}
 
-请参阅[向Experience Manager](add-assets.md)添加数字资产。
+请参阅[将数字资产添加到Experience Manager](add-assets.md)。
 
-## 检测重复资源{#detect-duplicate-assets}
+## 检测重复的资产{#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM用户上传存储库中已存在的一个或多个资产， [!DNL Experience Manager]会检测重复项并通知用户。 重复检测在默认情况下处于禁用状态，因为它可能会对性能产生影响，具体取决于存储库的大小和上传的资产数量。 要启用该功能，请配置[!UICONTROL Adobe AEM Cloud Asset Detector]。 请参见[如何进行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 重复项检测基于存储在`jcr:content/metadata/dam:sha1`的唯一`dam:sha1`值。 这意味着即使文件名不同，也会检测重复资源。
+如果DAM用户上传存储库中已存在的一个或多个资产，则[!DNL Experience Manager]会检测到重复项并通知用户。 默认情况下，重复项检测处于禁用状态，因为它可能会根据存储库的大小和上传的资产数量而影响性能。 要启用该功能，请配置[!UICONTROL AdobeAEM云资产重复检测器]。 请参阅[如何执行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 重复检测基于存储在`jcr:content/metadata/dam:sha1`的唯一`dam:sha1`值。 这意味着即使文件名不同，也会检测到重复的资产。
 
 您可以在自定义代码中添加配置文件`/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json`，该文件可以包含以下内容：
 
@@ -56,7 +55,7 @@ ht-degree: 17%
 }
 ```
 
-启用后，Experience Manager会将重复资产的通知发送到Experience Manager收件箱。 它是多个重复的汇总结果。 用户可以根据结果选择删除资产。
+启用后，Experience Manager会将重复资产的通知发送到Experience Manager收件箱。 它是多个重复项的汇总结果。 用户可以根据结果选择删除资产。
 
 ![重复资产的收件箱通知](assets/duplicate-detect-inbox-notification.png)
 
@@ -67,45 +66,45 @@ ht-degree: 17%
 1. 从资产用户界面中，导航到要预览的资产所在的位置。
 1. 点按所需的资产以将其打开。
 
-1. 在预览模式下，缩放选项可用于[支持的图像类型](/help/assets/file-format-support.md)（通过交互式编辑）。
+1. 在预览模式下，缩放选项适用于[支持的图像类型](/help/assets/file-format-support.md)（通过交互式编辑）。
 
-   要放大资产，请点按/单击`+`（或点按/单击资产上的放大镜）。 要缩小，请点按/单击`-`。 放大时，可以通过平移来仔细查看图像上的任意区域。重置缩放箭头可让您返回到原始视图。
+   要放大资产，请点按/单击`+`（或点按/单击资产上的放大镜）。 要缩小，请点按/单击`-`。 放大时，可以通过平移来仔细查看图像上的任意区域。使用重置缩放箭头可返回原始视图。
 
-   点按&#x200B;**[!UICONTROL 重置]**&#x200B;将视图重置为原始大小。
+   点按&#x200B;**[!UICONTROL 重置]**&#x200B;可将视图重置为原始大小。
 
 ## 编辑属性 {#editing-properties}
 
 1. 导航到要编辑元数据的资产所在的位置。
 
-1. 选择资产，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 属性]**&#x200B;以视图资产属性。 或者，选择资产卡上的&#x200B;**[!UICONTROL 属性]**&#x200B;快速操作。
+1. 选择资产，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 属性]** ，以查看资产属性。 或者，选择资产卡上的&#x200B;**[!UICONTROL 属性]**&#x200B;快速操作。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. 在[!UICONTROL 属性]页面中，编辑各个选项卡下的元数据属性。 例如，在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡下，编辑标题、说明等。
+1. 在[!UICONTROL 属性]页面中，编辑各个选项卡下的元数据属性。 例如，在&#x200B;**[!UICONTROL Basic]**&#x200B;选项卡下，编辑标题、描述等。
 
    >[!NOTE]
    >
-   >[!UICONTROL 属性]页面的布局和可用的元数据属性取决于基础元数据模式。 要了解如何修改[!UICONTROL 属性]页面的布局，请参阅[元数据模式](/help/assets/metadata-schemas.md)。
+   >[!UICONTROL 属性]页面的布局和可用的元数据属性取决于基础元数据架构。 要了解如何修改[!UICONTROL 属性]页面的布局，请参阅[元数据架构](/help/assets/metadata-schemas.md)。
 
 1. 要计划资产激活的特定日期/时间，请使用&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段旁边的日期选取器。
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 要在特定持续时间后取消激活资产，请从&#x200B;**[!UICONTROL 结束时间]**&#x200B;字段旁边的日期选取器中选择取消激活日期/时间。 取消激活日期应晚于资产的激活日期。 在[!UICONTROL 结束时间]之后，资产及其演绎版无法通过资产Web界面或通过HTTP API使用。
+1. 要在特定持续时间后停用资产，请从&#x200B;**[!UICONTROL Off Time]**&#x200B;字段旁边的日期选取器中选择停用日期/时间。 停用日期应晚于资产的激活日期。 在[!UICONTROL 结束时间]之后，资产及其演绎版无法通过Assets Web界面或HTTP API使用。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
 1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记的名称，然后选择`Enter`键。 新标记保存在[!DNL Experience Manager]中。
 
-   YouTube需要“标记”才能发布，并有指向YouTube的链接（如果可以找到合适的链接）。
+   YouTube需要标记才能发布，并具有指向YouTube的链接（如果找到合适的链接）。
 
    >[!NOTE]
    >
-   >要创建标记，您必须在CRX存储库的`/content/cq:tags/default`路径处具有写入权限。
+   >要创建标记，您必须在CRX存储库的`/content/cq:tags/default`路径上具有写入权限。
 
 1. 点按/单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
-1. 导航到资产用户界面。 已编辑的元数据属性（包括标题、描述和标记）将显示在卡片视图的资产卡上以及列表视图的相关列下。
+1. 导航到资产用户界面。 编辑后的元数据属性（包括标题、描述和标记）显示在卡片视图的资产卡片上以及列表视图的相关列下。
 
 <!-- TBD: Uncomment after verification for Dec release.
 
@@ -125,35 +124,35 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 复制资产{#copying-assets}
 
-在复制资产或文件夹时，会复制整个资产或文件夹，以及其内容结构。 复制的资产或文件夹会在目标位置进行复制。 不会更改源位置的资产。
+复制资产或文件夹时，会复制整个资产或文件夹及其内容结构。 复制的资产或文件夹会复制在目标位置。 不会更改源位置的资产。
 
-资产特定副本的少数属性不会结转。 例如：
+资产特定副本特有的一些属性不会结转。 例如：
 
-* 资产ID、创建日期和时间、版本和版本历史记录。 其中一些属性由属性`jcr:uuid`、`jcr:created`和`cq:name`表示。
+* 资产ID、创建日期和时间，以及版本和版本历史记录。 其中一些属性由属性`jcr:uuid`、`jcr:created`和`cq:name`表示。
 
 * 每个资产及其每个演绎版的创建时间和引用路径都是唯一的。
 
-其他属性和元数据信息将被保留。 复制资产时不会创建部分副本。
+其他属性和元数据信息将保留。 复制资产时，不会创建部分副本。
 
-1. 从资产用户界面中，选择一个或多个资产，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 复制]**&#x200B;图标。 或者，从资产卡中选择&#x200B;**[!UICONTROL 复制]** ![复制图标](assets/copy_icon.png)快速操作。
+1. 从资产UI中，选择一个或多个资产，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 复制]**&#x200B;图标。 或者，从资产卡中选择&#x200B;**[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png)快速操作。
 
    >[!NOTE]
    >
-   >如果您使用[!UICONTROL 复制]快速操作，则一次只能复制一个资产。
+   >如果您使用[!UICONTROL Copy]快速操作，则一次只能复制一个资产。
 
 1. 导航到要将资产复制到的位置。
 
    >[!NOTE]
    >
-   >如果您在同一位置复制资产，[!DNL Experience Manager]会自动生成该名称的变体。 例如，如果复制名为`Square`的资产，[!DNL Experience Manager]会自动为其副本生成`Square1`的标题。
+   >如果您在同一位置复制资产，[!DNL Experience Manager]会自动生成该名称的变体。 例如，如果复制名为`Square`的资产，则[!DNL Experience Manager]会自动为其副本生成`Square1`的标题。
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL 粘贴]**&#x200B;资产图标。 资产会复制到此位置。
+1. 单击工具栏中的&#x200B;**[!UICONTROL 粘贴]**&#x200B;资产图标。 资产将会复制到此位置。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >粘贴操作完成之前，工具栏中会显示&#x200B;**[!UICONTROL 粘贴]**&#x200B;图标。
+   >在粘贴操作完成之前，工具栏中会显示&#x200B;**[!UICONTROL 粘贴]**&#x200B;图标。
 
 ### 移动或重命名资产{#moving-or-renaming-assets}
 
@@ -168,8 +167,8 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * 点按/单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止该进程。
    >[!NOTE]
    >
-   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统会自动生成该名称的变体。 例如，如果您的资产名为“Square”，系统会为其副本生成名称“Square1”。
-   >* 重命名时，文件名中不允许有空格。
+   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到某个位置，而该位置存在具有相同名称的资产，则应使用其他名称。 如果使用相同的名称，则系统会自动生成该名称的变体。 例如，如果资产的名称为“Square”，则系统会为其副本生成名称“Square1”。
+   >* 重命名时，文件名中不允许包含空格。
 
 
 1. 在&#x200B;**[!UICONTROL 选择目标]**&#x200B;对话框中，执行下列操作之一：
@@ -178,9 +177,9 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    * 点按/单击&#x200B;**[!UICONTROL 返回]**&#x200B;以返回到&#x200B;**[!UICONTROL 重命名]**&#x200B;屏幕。
 
-1. 如果被移动的资产具有任何引用页面、资产或收藏集，则&#x200B;**[!UICONTROL 调整引用]**&#x200B;选项卡会显示在&#x200B;**[!UICONTROL 选择目标]**&#x200B;选项卡的旁边。
+1. 如果被移动的资产具有任何引用页面、资产或收藏集，则&#x200B;**[!UICONTROL 调整引用]**&#x200B;选项卡会显示在&#x200B;**[!UICONTROL 选择目标]**&#x200B;选项卡旁边。
 
-   在&#x200B;**[!UICONTROL 调整引用]**&#x200B;屏幕中执行下列操作之一：
+   在&#x200B;**[!UICONTROL Adjust References]**&#x200B;屏幕中执行下列操作之一：
 
    * 根据新的详细信息指定要调整的引用，然后点按/单击&#x200B;**[!UICONTROL 移动]**&#x200B;以继续。
 
@@ -189,7 +188,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    * 点按/单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止移动操作。
 
-   如果您不更新引用，则这些引用会继续指向资产的上一路径。 如果您调整引用，这些引用将更新为新资产路径。
+   如果您没有更新引用，则引用将继续指向资产的上一个路径。 如果调整引用，它们将更新为新的资产路径。
 
 ### 管理演绎版{#managing-renditions}
 
@@ -209,13 +208,13 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >默认情况下，[!DNL Experience Manager Assets]不在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加将[!DNL Assets]配置为在预览模式下显示原始演绎版。
+   >默认情况下，[!DNL Experience Manager Assets]在预览模式下不显示资产的原始演绎版。 如果您是管理员，则可以使用叠加图配置[!DNL Assets] ，以在预览模式下显示原始演绎版。
 
 1. 选择一个演绎版以进行查看或删除。
 
    **删除演绎版**
 
-   从&#x200B;**[!UICONTROL 演绎版]**&#x200B;面板中选择一个演绎版，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 删除演绎版]**&#x200B;图标。 资产处理完成后，无法批量删除演绎版。 对于单个资产，您可以从用户界面中手动删除演绎版。 对于多个资产，您可以自定义[!DNL Experience Manager]以删除特定演绎版或删除资产，然后重新上传已删除的资产。
+   从&#x200B;**[!UICONTROL 演绎版]**&#x200B;面板中选择一个演绎版，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 删除演绎版]**&#x200B;图标。 资产处理完成后，无法批量删除演绎版。 对于单个资产，您可以从用户界面手动删除演绎版。 对于多个资产，您可以自定义[!DNL Experience Manager]以删除特定演绎版或删除资产，并重新上传已删除的资产。
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -229,15 +228,15 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >如果从&#x200B;**[!UICONTROL “演绎版”]**&#x200B;面板选择演绎版，则工具栏更改上下文并仅显示与该演绎版相关的那些操作。不显示“上传演绎版”图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
-   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的维度，资产会显示具有精确或最接近的维度的演绎版。
+   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的维度。 根据您指定的维度，Assets会显示具有精确或最接近维度的演绎版。
 
    要在资源详细信息级别配置图像的演绎版尺寸，请叠加 `renditionpicker` 节点 (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) 并配置宽度属性的值。配置属性&#x200B;**[!UICONTROL 大小（长）(以 KB 计）]**&#x200B;代替宽度，以根据图像大小在资源详细信息页面上自定义演绎版。对于基于大小的自定义，如果匹配的演绎版的大小大于原始演绎版，则属性 `preferOriginal` 将首选项分配给原始演绎版。
 
-   同样，您也可以通过覆盖`libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`来自定义“注释”页面图像。
+   同样，您也可以通过叠加`libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`来自定义“注释”页面图像。
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   要为视频资产配置演绎版尺寸，请导航到CRX存储库中位于`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`的`videopicker`节点，覆盖该节点，然后编辑相应的属性。
+   要为视频资产配置演绎版维度，请导航到CRX存储库中位于`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`的`videopicker`节点，叠加该节点，然后编辑相应的属性。
 
    >[!NOTE]
    >
@@ -247,7 +246,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 要解析或删除其他页面中的传入引用，请在删除资产之前更新相关引用。
 
-此外，使用叠加禁用强制删除按钮，以禁止用户删除引用的资产和离开断开的链接。
+此外，还可以使用叠加禁用强制删除按钮，以禁止用户删除引用的资产并保留断开的链接。
 
 1. 导航至要删除的资产所在的位置。
 
@@ -257,7 +256,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 在确认对话框中，单击：
 
-   * **** 取消以停止操作
+   * **** 取消停止操作
    * **[!UICONTROL 删除]**，以确认操作：
 
       * 如果资产没有引用，则资产会被删除。
@@ -265,14 +264,14 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >您需要对dam/asset具有删除权限才能删除资产。 如果您只具有修改权限，则只能编辑资产元数据并向资产添加注释。 但是，您无法删除资产或其元数据。
+   >您需要对dam/asset具有删除权限，才能删除资产。 如果您只有修改权限，则只能编辑资产元数据并向资产添加注释。 但是，您无法删除资产或其元数据。
 
    >[!NOTE]
    >
    >要解析或删除其他页面中的传入引用，请在删除资产之前更新相关引用。
    >
    >
-   >此外，使用叠加禁用强制删除按钮，以禁止用户删除引用的资产和离开断开的链接。
+   >此外，还可以使用叠加禁用强制删除按钮，以禁止用户删除引用的资产并保留断开的链接。
 
 ## 下载资产 {#download-assets}
 
@@ -280,40 +279,40 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 发布或取消发布资产{#publish-assets}
 
-1. 导航到要发布或要从发布环境（取消发布）中删除的资产或资产文件夹的位置。
+1. 导航到要发布或要从发布环境中删除的资产文件夹（取消发布）的位置。
 
 1. 选择要发布或取消发布的资产或文件夹，然后从工具栏中选择&#x200B;**[!UICONTROL 管理发布]** ![管理发布选项](assets/do-not-localize/globe-publication.png)选项。 或者，要快速发布，请从工具栏中选择&#x200B;**[!UICONTROL 快速发布]**&#x200B;选项。 如果要发布的文件夹包含空文件夹，则不会发布空文件夹。
 
 1. 根据需要选择&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL Unpublish]**&#x200B;选项。
 
    ![取消发布操作](assets/unpublish_action.png)
-   *图：发布和取消发布选项以及计划选项。*
+   *图：发布和取消发布选项和计划选项。*
 
-1. 选择&#x200B;**[!UICONTROL Now]**&#x200B;立即对资产执行操作，或选择&#x200B;**[!UICONTROL 稍后]**&#x200B;计划操作。 如果选择&#x200B;**[!UICONTROL 稍后]**&#x200B;选项，请选择日期和时间。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 选择&#x200B;**[!UICONTROL Now]**&#x200B;立即对资产执行操作，或选择&#x200B;**[!UICONTROL 稍后]**&#x200B;以计划操作。 如果选择&#x200B;**[!UICONTROL 稍后]**&#x200B;选项，请选择日期和时间。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 发布时，如果资产引用了其他资产，向导中便会列出这些引用。 仅显示自上次发布后未发布或修改的引用。 选择要发布的引用。
+1. 发布时，如果资产引用了其他资产，则向导中会列出其引用。 只会显示那些自上次发布以来未发布或修改的引用。 选择要发布的引用。
 
-1. 取消发布时，如果资产引用了其他资产，请选择您要取消发布的引用。 单击&#x200B;**[!UICONTROL 取消发布]**。 在确认对话框中，单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止操作，或单击&#x200B;**[!UICONTROL 取消发布]**&#x200B;以确认资产将在指定日期取消发布。
+1. 取消发布时，如果资产引用了其他资产，请选择要取消发布的引用。 单击&#x200B;**[!UICONTROL 取消发布]**。 在确认对话框中，单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止操作，或单击&#x200B;**[!UICONTROL 取消发布]**&#x200B;以确认将在指定的日期取消发布资产。
 
-了解与发布或取消发布资产或文件夹相关的以下限制和提示：
+了解以下与发布或取消发布资产或文件夹相关的限制和提示：
 
 * [!UICONTROL 管理发布]选项仅对具有复制权限的用户帐户可用。
-* 取消发布复杂资产时，仅取消发布该资产。请避免取消发布引用，因为其他已发布的资产可能会引用这些内容。
+* 取消发布复杂资产时，仅取消发布该资产。请避免取消发布引用，因为其他已发布的资产可能会引用这些引用。
 * 未发布空文件夹。
-* 如果您发布的资产正在处理，则仅会发布原始内容。 缺少再现。 等待处理完成，然后在处理完成后发布或重新发布资产。
+* 如果您发布的资产正在处理，则只会发布原始内容。 缺少演绎版。 等待处理完成，然后在处理完成后发布或重新发布资产。
 
 ## 已关闭的用户组{#closed-user-group}
 
-已关闭的用户组(CUG)用于限制对从[!DNL Experience Manager]发布的特定资产文件夹的访问。 如果您为文件夹创建了CUG，则仅对已分配成员或组的文件夹（包括文件夹资源和子文件夹）的访问权限会受限。 要访问该文件夹，他们必须使用其安全凭据登录。
+已关闭的用户组(CUG)用于限制对从[!DNL Experience Manager]发布的特定资产文件夹的访问。 如果您为文件夹创建CUG，则对该文件夹（包括文件夹资产和子文件夹）的访问权限将仅限于分配的成员或组。 要访问文件夹，用户必须使用其安全凭据登录。
 
-CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置登录页。
+CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配置登录页面。
 
-1. 从资产用户界面中选择一个文件夹，然后点按/单击工具栏中的属性图标以显示属性页面。
-1. 从&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡，在&#x200B;**[!UICONTROL 已关闭的用户组]**&#x200B;下添加成员或组。
+1. 从资产UI中选择一个文件夹，然后点按/单击工具栏中的属性图标，以显示属性页面。
+1. 在&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡中，在&#x200B;**[!UICONTROL 已关闭的用户组]**&#x200B;下添加成员或组。
 
    ![add_user](assets/add_user.png)
 
-1. 要在用户访问文件夹时显示登录屏幕，请选择&#x200B;**[!UICONTROL 启用]**&#x200B;选项。 然后，在[!DNL Experience Manager]中选择登录页面的路径，并保存更改。
+1. 要在用户访问文件夹时显示登录屏幕，请选择&#x200B;**[!UICONTROL 启用]**&#x200B;选项。 然后，选择[!DNL Experience Manager]中登录页面的路径，并保存更改。
 
    ![login_page](assets/login_page.png)
 
@@ -321,31 +320,31 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
    >
    >如果未指定登录页面的路径，[!DNL Experience Manager]将显示发布实例中的默认登录页面。
 
-1. 发布文件夹，然后尝试从发布实例访问它。 将显示登录屏幕。
-1. 如果您是CUG成员，请输入您的安全凭据。 在[!DNL Experience Manager]验证您后，将显示该文件夹。
+1. 发布文件夹，然后尝试从发布实例访问该文件夹。 将显示登录屏幕。
+1. 如果您是CUG成员，请输入您的安全凭据。 在[!DNL Experience Manager]验证您身份后，文件夹即会显示。
 
 ## 搜索资产 {#search-assets}
 
-搜索资产对于数字资产管理系统的使用至关重要 — 无论是供创意人员进一步使用、供业务用户和营销人员对资产进行可靠管理，还是供DAM管理员管理。
+搜索资产是使用数字资产管理系统的核心 — 无论是供创意人员进一步使用，还是由业务用户和营销人员对资产进行稳健管理，还是由DAM管理员进行管理。
 
-有关简单、高级和自定义搜索以发现和使用最合适的资产，请参阅 [!DNL Experience Manager]](/help/assets/search-assets.md)中的[搜索资产。
+要进行简单、高级和自定义的搜索以发现和使用最合适的资产，请参阅 [!DNL Experience Manager]](/help/assets/search-assets.md)中的[搜索资产。
 
 ## 快速操作 {#quick-actions}
 
-快速操作图标一次只能用于单个资产。根据设备的不同，执行以下操作以显示快速操作图标：
+快速操作图标一次只能用于单个资产。根据您的设备，执行以下操作以显示快速操作图标：
 
-* 触控设备：握住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
-* 非触控设备：悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，将显示快速操作栏。
+* 触控设备：触摸并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
+* 非触控设备：悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，则会显示快速操作栏。
 
 ## 编辑图像{#editing-images}
 
-[!DNL Experience Manager Assets]界面中的编辑工具允许您对图像资源执行小型编辑作业。 您可以对图像进行裁切、旋转、翻转和执行其他编辑作业。 您还可以向资产中添加图像映射。
+[!DNL Experience Manager Assets]界面中的编辑工具允许您对图像资产执行小型编辑作业。 您可以裁剪、旋转、翻转和对图像执行其他编辑作业。 您还可以将图像映射添加到资产。
 
 >[!NOTE]
 >
->对于某些组件，全屏模式还有其他可用选项。
+>对于某些组件，全屏模式还提供了其他选项。
 
-1. 执行以下操作之一以在编辑模式下打开资产：
+1. 执行下列操作之一，以在编辑模式下打开资产：
 
    * 选择资产，然后单击/点按工具栏中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。
    * 点按/单击卡片视图中资产上显示的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。
@@ -362,7 +361,7 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. 选择要裁剪的区域，并在图像上调整其大小或位置。
-1. 使用&#x200B;**完成**&#x200B;图标（右上角）裁剪图像。 单击&#x200B;**完成**&#x200B;图标也会触发再现的重新生成。
+1. 使用&#x200B;**完成**&#x200B;图标（右上角）裁剪图像。 单击&#x200B;**完成**&#x200B;图标也会触发演绎版的重新生成。
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -394,34 +393,34 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
 ## 时间轴 {#timeline}
 
-通过时间轴，您可以视图选定项目的各种事件，如资产的活动工作流、注释/注释、活动日志和版本。
+时间轴允许您查看选定项目的各种事件，如资产的活动工作流、评论/批注、活动日志和版本。
 
-![对资产的时间轴条目排](assets/sort_timeline.gif)
-*序图：对资产的时间轴条目排序*
-
->[!NOTE]
->
->在[收藏集控制台](/help/assets/manage-collections.md#navigate-the-collections-console)中，**[!UICONTROL 显示全部]**&#x200B;列表仅提供视图注释和工作流的选项。 此外，时间轴仅对控制台中列出的顶级集合显示。 如果您在任何收藏集中导航，则不会显示该收藏集。
+![对资产的时间轴条目排序图](assets/sort_timeline.gif)
+*表：对资产的时间轴条目进行排序*
 
 >[!NOTE]
 >
->时间轴包含特定于内容片段的几个[选项](content-fragments/content-fragments.md)。
+>在[收藏集控制台](/help/assets/manage-collections.md#navigate-the-collections-console)中， **[!UICONTROL 显示所有]**&#x200B;列表提供了仅查看注释和工作流的选项。 此外，时间轴仅对控制台中列出的顶级收藏集显示。 如果您在任何收藏集中导航，则不会显示该收藏集。
+
+>[!NOTE]
+>
+>时间轴包含若干特定于内容片段的[选项](content-fragments/content-fragments.md)。
 
 ## 批注 {#annotating}
 
-注释是指添加到图像或视频的评论或解释性说明。注释使营销人员能够协作并留下有关资产的反馈。
+注释是指添加到图像或视频的评论或解释性说明。通过注释，营销人员能够协作并提供有关资产的反馈。
 
 视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。资产支持的视频格式取决于浏览器。
 
 >[!NOTE]
 >
->对于内容片段，将在片段编辑器](content-fragments/content-fragments.md)中创建[注释。
+>对于内容片段，在片段编辑器](content-fragments/content-fragments.md)中创建[注释。
 
 1. 导航到要添加注释的资产所在的位置。
-1. 点按/单击以下任一图标中的&#x200B;**[!UICONTROL 注释]**&#x200B;图标：
+1. 点按/单击以下任一位置中的&#x200B;**[!UICONTROL 注释]**&#x200B;图标：
 
    * [快速操作](#quick-actions)
-   * 在选择资产或导航到资产页面后从工具栏中
+   * 从工具栏中选择资产或导航到资产页面
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -435,26 +434,26 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
 >[!NOTE]
 >
->对于非管理员用户，仅当用户在CRXDE中的`/home`具有“读取”权限时，才显示建议。
+>对于非管理员用户，仅当用户在CRXDE的`/home`具有读取权限时，才会显示建议。
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. 添加注释后，单击&#x200B;**[!UICONTROL 添加]**&#x200B;以保存注释。将向Aaron发送注释通知。
+1. 添加注释后，单击&#x200B;**[!UICONTROL Add]**&#x200B;以保存注释。注释通知将发送给Aaron。
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
    >[!NOTE]
    >
-   >在保存注释之前，可以添加多个注释。
+   >在保存注释之前，您可以添加多个注释。
 
 1. 点按/单击&#x200B;**[!UICONTROL 关闭]**&#x200B;以退出“注释”模式。
-1. 要视图通知，请使用Aaron MacDonald的凭据登录到资产，然后单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标以视图通知。
+1. 要查看通知，请使用Aaron MacDonald的凭据登录Assets，然后单击&#x200B;**[!UICONTROL Notifications]**&#x200B;图标以查看通知。
 
    >[!NOTE]
    >
-   >您也可以对视频资产添加注释。在对视频添加注释时，播放器会暂停，让您对某个帧添加注释。 有关详细信息，请参阅[管理视频资产](manage-video-assets.md)。
+   >您也可以对视频资产添加注释。在对视频添加注释时，播放器会暂停，以允许您对帧添加注释。 有关详细信息，请参阅[管理视频资产](manage-video-assets.md)。
 
-1. 要选择不同的颜色以便您能够区分不同的用户，请单击/点按用户档案图标，然后单击/点按&#x200B;**[!UICONTROL 我的首选项]**。
+1. 要选择不同的颜色以便区分不同的用户，请单击/点按配置文件图标，然后单击/点按&#x200B;**[!UICONTROL 我的首选项]**。
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -464,11 +463,11 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
 >[!NOTE]
 >
->您还可以向收藏集添加注释。 但是，如果集合包含子集合，则只能向父集合添加注释/注释。 “注释”选项不适用于子集合。
+>您还可以向收藏集添加注释。 但是，如果收藏集包含子收藏集，则您只能向父收藏集添加注释/注释。 “注释”选项不适用于子收藏集。
 
-### 视图保存的注释{#viewing-saved-annotations}
+### 查看保存的注释{#viewing-saved-annotations}
 
-1. 要视图为资产保存的注释，请导航到资产所在的位置，然后打开资产的资产页面。
+1. 要查看资产的已保存注释，请导航到资产的位置，然后打开资产页面。
 
 1. 点按/单击GlobalNav图标，然后从列表中选择&#x200B;**[!UICONTROL 时间轴]**。
 
@@ -478,31 +477,31 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   点按/单击&#x200B;**[!UICONTROL 时间轴]**&#x200B;面板中的注释，以视图图像上的相应注释。
+   点按/单击&#x200B;**[!UICONTROL 时间轴]**&#x200B;面板中的注释，以查看图像上的相应注释。
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   点按/单击&#x200B;**[!UICONTROL 删除]**&#x200B;以删除特定注释。
+   点按/单击&#x200B;**[!UICONTROL 删除]**，以删除特定注释。
 
-### 打印注释{#printing-annotations}
+### 打印批注{#printing-annotations}
 
-如果资产有批注或已受到审阅工作流程的影响，您可以将资产连同批注一起打印为PDF文件，以便脱机审阅。
+如果资产具有批注或者已经受过审阅工作流，您可以将资产以及批注和审阅状态打印为PDF文件，以供离线审阅。
 
-您还可以选择仅打印注释或审阅状态。
+您还可以选择仅打印批注或审阅状态。
 
-要打印注释和审阅状态，请点按/单击&#x200B;**[!UICONTROL 打印]**&#x200B;图标，然后按照向导中的说明操作。 仅当资产至少为其分配了一个注释或审阅状态时，工具栏中才会显示&#x200B;**[!UICONTROL 打印]**&#x200B;图标。
+要打印批注和查看状态，请点按/单击&#x200B;**[!UICONTROL 打印]**&#x200B;图标，然后按照向导中的说明操作。 只有当资产至少分配了一个注释或审阅状态时，工具栏中才会显示&#x200B;**[!UICONTROL 打印]**&#x200B;图标。
 
-1. 在资产用户界面中，打开资产的预览页面。
+1. 从资产UI中，打开资产的预览页面。
 1. 执行下列操作之一：
 
-   * 要打印所有注释和审阅状态，请跳过步骤3并直接转到步骤4。
-   * 要打印特定注释和审阅状态，请打开[时间轴](/help/assets/manage-digital-assets.md#timeline)，然后转到步骤3。
+   * 要打印所有批注和审阅状态，请跳过步骤3，直接转到步骤4。
+   * 要打印特定批注和审阅状态，请打开[时间轴](/help/assets/manage-digital-assets.md#timeline)，然后转到步骤3。
 
 1. 要打印特定注释，请从时间轴中选择注释。
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   要仅打印审阅状态，请从时间轴中选择它。
+   要仅打印审阅状态，请从时间轴中选择该状态。
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -510,51 +509,51 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. 从“打印”对话框中，选择您希望批注/审阅状态在PDF上显示的位置。 例如，如果希望在包含打印图像的页面的右上角打印注释/状态，请使用&#x200B;**左上**&#x200B;设置。 默认情况下，它处于选中状态。
+1. 从“打印”对话框中，选择希望在PDF上显示批注/审阅状态的位置。 例如，如果希望在包含已打印图像的页面的右上角打印批注/状态，请使用&#x200B;**左上角**&#x200B;设置。 默认情况下，此参数处于选中状态。
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
    您可以根据希望在打印的 PDF 中显示批注/状态的位置选择其他设置。如果希望批注/状态显示在与打印资产不同的页面中，请选择&#x200B;**[!UICONTROL 下一页]**。
 
-1. 单击&#x200B;**[!UICONTROL 打印]**。 根据您在步骤 2 中选择的选项，生成的 PDF 会在指定位置显示批注/状态。例如，如果您选择使用&#x200B;**左上角**&#x200B;设置打印批注和审阅状态，则生成的输出将类似于此处描述的 PDF 文件。
+1. 单击&#x200B;**[!UICONTROL Print]**。 根据您在步骤 2 中选择的选项，生成的 PDF 会在指定位置显示批注/状态。例如，如果您选择使用&#x200B;**左上角**&#x200B;设置打印批注和审阅状态，则生成的输出将类似于此处描述的 PDF 文件。
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. 使用右上角的选项下载或打印PDF。
+1. 使用右上方的选项下载或打印PDF。
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注的字体颜色的信息，请参阅[批注](/help/assets/manage-digital-assets.md#annotating)。
+   要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注字体颜色的信息，请参阅[批注](/help/assets/manage-digital-assets.md#annotating)。
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   返回渲染的PDF文件并刷新它。 刷新的PDF会反映您所做的更改。
+   返回到渲染的PDF文件并刷新它。 刷新后的PDF将反映您所做的更改。
 
 ## 资产版本控制 {#asset-versioning}
 
-版本控制创建数字资产在某个特定时间点的快照。版本控制可帮助在以后将资产恢复到之前的状态。 例如，如果您要撤消对资产所做的更改，请恢复该资产的未编辑版本。
+版本控制创建数字资产在某个特定时间点的快照。版本控制有助于在以后将资产恢复到以前的状态。 例如，如果要撤消对资产所做的更改，请恢复该资产未经编辑的版本。
 
-以下是您在其中创建版本的方案：
+以下是创建版本的情景：
 
-* 您可以在其他应用程序中修改图像并上传到资产。 此时会创建图像的某个版本，因此不会覆盖原始图像。
+* 您可以在其他应用程序中修改图像并上传到资产。 将创建图像的某个版本，以便不会覆盖原始图像。
 * 您可以编辑资产的元数据。
-* 您使用[!DNL Experience Manager]桌面应用程序签出现有资产并保存您所做的更改。 每次保存资产时，都会创建一个新版本。
+* 您使用[!DNL Experience Manager]桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建一个新版本。
 
-您还可以通过工作流启用自动版本控制。 当您为资产创建版本时，元数据和演绎版会与该版本一起保存。 演绎版是相同图像的替代内容，例如，已上传JPEG文件的PNG演绎版。
+您还可以通过工作流启用自动版本控制。 为资产创建版本时，元数据和演绎版会与该版本一起保存。 演绎版是相同图像的替代呈现形式，例如上传的JPEG文件的PNG演绎版。
 
-通过版本控制功能，您可以执行以下操作：
+版本控制功能允许您执行以下操作：
 
 * 创建资产的版本。
-* 视图资产的当前版本。
-* 将资产恢复到先前版本。
+* 查看资产的当前修订版本。
+* 将资产恢复到之前的版本。
 
-1. 导航到您要为其创建版本的资产所在的位置，然后点按/单击该资产以打开其资产页面。
+1. 导航到要为其创建版本的资产所在的位置，然后点按/单击该资产以打开其资产页面。
 
 1. 点按/单击GlobalNav图标，然后从菜单中选择&#x200B;**[!UICONTROL 时间轴]**。
 
-   ![时间](assets/timeline.png)
+   ![时间线](assets/timeline.png)
 
-1. 点按/单击底部的&#x200B;**[!UICONTROL 操作]**（箭头）图标，以视图您可以对资产执行的操作。
+1. 点按/单击底部的&#x200B;**[!UICONTROL 操作]**（箭头）图标，以查看您可以对资产执行的可用操作。
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -570,44 +569,44 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
    ![versions_option](assets/versions_option.png)
 
-1. 为资产选择特定版本以对其进行预览，或启用该版本以在资产用户界面中显示。
+1. 为资产选择特定版本以进行预览，或者启用资产以在资产UI中显示。
 
    ![select_version](assets/select_version.png)
 
-1. 为版本添加标签和注释，以在资产用户界面中还原到特定版本。
+1. 为版本添加标签和注释，以还原到Assets UI中的特定版本。
 
    ![save_version](assets/save_version.png)
 
 1. 要为版本生成预览，请点按/单击&#x200B;**[!UICONTROL 预览版本]**。
 1. 要在资产UI中显示此版本，请选择&#x200B;**[!UICONTROL 还原到此版本]**。
-1. 要比较两个版本，请转到资产的资产页面，然后点按/单击要与当前版本进行比较的版本。
+1. 要在两个版本之间进行比较，请转到资产的资产页面，然后点按/单击要与当前版本进行比较的版本。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. 从时间轴中，选择要比较的版本，然后将滑块向左拖动，以将此版本叠加到当前版本上并进行比较。
+1. 从时间轴中，选择要比较的版本，然后将滑块向左拖动，以将此版本叠加在当前版本上并进行比较。
 
    ![compare_versions](assets/compare_versions.png)
 
 ### 在资产{#starting-a-workflow-on-an-asset}上启动工作流
 
-1. 导航到要开始工作流的资产所在的位置，然后点按/单击资产以打开资产页面。
+1. 导航到要启动工作流的资产位置，然后点按/单击资产以打开资产页面。
 1. 点按/单击GlobalNav图标，然后从菜单中选择&#x200B;**[!UICONTROL 时间轴]**&#x200B;以显示时间轴。
 
    ![时间轴–1](assets/timeline-1.png)
 
-1. 点按/单击底部的&#x200B;**[!UICONTROL 操作]**（箭头）图标，打开资产可用的操作列表。
+1. 点按/单击底部的&#x200B;**[!UICONTROL 操作]**（箭头）图标，以打开可用于资产的操作列表。
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. 从列表点按/单击&#x200B;**[!UICONTROL 开始工作流]**。
+1. 点按/单击列表中的&#x200B;**[!UICONTROL 启动工作流]**。
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. 在&#x200B;**[!UICONTROL 开始工作流]**&#x200B;对话框中，从列表中选择工作流模型。
+1. 在&#x200B;**[!UICONTROL 启动工作流]**&#x200B;对话框中，从列表中选择工作流模型。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. （可选）指定工作流的标题，可用于引用工作流实例。
+1. （可选）为工作流指定标题，可用于引用工作流实例。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
@@ -617,20 +616,20 @@ CUG是限制访问您的资产的额外方式。 您还可以为文件夹配置�
 
 ## 收藏集 {#collections}
 
-收藏集是一组有序的资产。使用集合在用户之间共享资产。
+收藏集是一组有序的资产。可使用收藏集在用户之间共享资产。
 
-* 一个收藏集可以包含来自不同位置的资产，因为它们只包含对这些资产的引用。 每个收藏集都保持资产的引用完整性。
-* 您可以与具有不同权限级别（包括编辑、查看等）的多个用户共享集合。
+* 收藏集可以包含来自不同位置的资产，因为它们只包含对这些资产的引用。 每个收藏集均维护资产的引用完整性。
+* 您可以与具有不同权限级别（包括编辑、查看等）的多个用户共享收藏集。
 
 要了解集合管理的详细信息，请参阅[管理集合](/help/assets/manage-collections.md)。
 
-## 在桌面应用程序或Adobe资产链接{#hide-expired-assets-via-acp-api}中查看资产时隐藏已过期的资产
+## 在桌面应用程序中或Adobe资产链接{#hide-expired-assets-via-acp-api}中查看资产时，隐藏已过期的资产
 
-[!DNL Experience Manager] 桌面应用程序允许从Windows或Mac桌面访问DAM存储库。Adobe Asset Link允许从支持的[!DNL Creative Cloud]桌面应用程序中访问资产。
+[!DNL Experience Manager] 桌面应用程序允许从Windows或Mac桌面访问DAM存储库。Adobe资产链接允许从支持的[!DNL Creative Cloud]桌面应用程序内访问资产。
 
-在[!DNL Experience Manager]用户界面中浏览资产时，不会显示过期的资产。 要防止在从桌面应用程序和资产链接浏览资产时查看、搜索和获取过期的资产，管理员可以执行以下配置。 此配置适用于所有用户，而不考虑管理员权限。
+从[!DNL Experience Manager]用户界面中浏览资产时，不会显示已过期的资产。 要防止在从桌面应用程序和资产链接浏览资产时查看、搜索和获取过期的资产，管理员可以执行以下配置。 配置适用于所有用户，而不考虑管理员权限。
 
-执行以下CURL命令。 确保对访问资产的用户在`/conf/global/settings/dam/acpapi/`上具有读取访问权限。 默认情况下，属于`dam-user`组的用户具有该权限。
+执行以下CURL命令。 确保对访问资产的用户具有对`/conf/global/settings/dam/acpapi/`的读取访问权限。 默认情况下，属于`dam-user`组的用户具有权限。
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -642,4 +641,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-要了解更多信息，请参阅如何[使用桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)浏览DAM资产和[如何使用Adobe资产链接](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
+要了解更多信息，请参阅如何[使用桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)浏览DAM资产，以及[如何使用Adobe资产链接](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
