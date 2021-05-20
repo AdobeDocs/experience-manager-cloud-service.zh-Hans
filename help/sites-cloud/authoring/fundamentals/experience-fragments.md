@@ -1,14 +1,13 @@
 ---
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
-translation-type: tm+mt
-source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
 ---
-
 
 # 体验片段 {#experience-fragments}
 
@@ -341,9 +340,9 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
    * **社交媒体状态**
       * 社交媒体变体的详细信息
 
-## 纯 HTML 呈现版本 {#the-plain-html-rendition}
+## 纯 HTML 演绎版 {#the-plain-html-rendition}
 
-使用 URL 中的 `.plain.` 选择器，您可以从浏览器中访问纯 HTML 呈现版本。
+可使用 URL 中的 `.plain.` 选择器从浏览器访问纯 HTML 演绎版。
 
 >[!NOTE]
 >
