@@ -5,7 +5,6 @@ breadcrumb-title: 发行说明
 user-guide-description: 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。
 feature: 发行信息
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-translation-type: tm+mt
 source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
 workflow-type: tm+mt
 source-wordcount: '115'
@@ -35,7 +34,7 @@ ht-degree: 100%
       + [2020.4.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
       + [2020.3.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-+ [新增功能](what-is-new.md)
++ [新增功能 ](what-is-new.md)
 + [AEM 云服务中的显著更改](aem-cloud-changes.md)
 + [已知问题](known-issues.md)
 + [已弃用和已删除的功能](deprecated-removed-features.md)
