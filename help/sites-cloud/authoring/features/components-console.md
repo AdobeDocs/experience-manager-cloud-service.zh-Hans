@@ -1,14 +1,13 @@
 ---
 title: 组件控制台
 description: 组件控制台允许您浏览针对实例定义的所有组件
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
 ---
-
 
 # 组件控制台 {#components-console}
 
