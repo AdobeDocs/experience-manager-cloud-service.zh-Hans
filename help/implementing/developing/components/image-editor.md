@@ -1,28 +1,27 @@
 ---
 title: 图像编辑器
-description: 图像编辑器是AEM的核心部分，组件可利用它来方便内容作者处理图像。
-translation-type: tm+mt
-source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
+description: 图像编辑器是AEM的核心部分，可由组件使用，以便于内容作者处理图像。
+exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
 
 ---
 
-
 # 图像编辑器 {#image-editor}
 
-图像编辑器是AEM的核心部分，组件可利用它来方便内容作者处理图像。
+图像编辑器是AEM的核心部分，可由组件使用，以便于内容作者处理图像。
 
 ## 图像映射{#relative-units-for-image-map}的相对单位
 
-图像编辑器将图像映射区域保留为绝对和相对单位。 当在响应式图像组件中以数据属性的形式提供相对单位，用于在客户端动态地调整图像映射（相对于图像大小）的大小时。
+图像编辑器将图像映射区域保留为绝对和相对单位。 当提供相对单位作为数据属性时，用于在响应式图像组件的客户端上动态地调整图像映射（相对于图像大小）的大小。
 
 ### imageMap属性{#imagemap-property}
 
-图像编辑器将图像映射坐标作为`imageMap`属性保留到JCR。 它有以下格式。
+图像编辑器会将图像映射坐标作为`imageMap`属性保留到JCR中。 其格式如下。
 
-属性按如下方式存储地图区域：
+资产会按如下方式存储地图区域：
 
 `[area1][area2][...]`
 
@@ -39,19 +38,19 @@ ht-degree: 2%
 
 图像编辑器支持可缩放矢量图形(SVG)。
 
-* 支持从DAM拖放SVG资产和从本地文件系统上传SVG文件。
+* 同时支持从DAM拖放SVG资产和从本地文件系统上传SVG文件。
 
 ## 按MIME类型{#enabling-plugins-by-mime-type}启用插件
 
-在某些情况下，创作操作必须限制用于某些MIME类型，因为在服务器端处理中缺乏支持。 例如，可能不允许编辑SVG图像。
+在某些情况下，由于服务器端处理中不支持，因此必须限制某些MIME类型的创作操作。 例如，可能不允许编辑SVG图像。
 
-通过在单个插件的配置节点上设置`supportedMimeTypes`属性，可以通过MIME类型选择性地启用图像编辑器中的插件。
+可以通过在单个插件的配置节点中设置`supportedMimeTypes`属性，通过MIME类型有选择地启用图像编辑器中的插件。
 
 ### 示例 {#example}
 
-例如，我们假设仅允许对GIF、JPEG、PNG、WEBP和TIFF图像进行裁剪。
+例如，应当仅允许对GIF、JPEG、PNG、WEBP和TIFF图像进行裁剪。
 
-然后，必须在图像组件`cq:editConfig`节点上插件的配置节点上将`supportedMimeTypes`属性设置为允许的MIME类型的字符串。
+然后，必须在图像组件`cq:editConfig`节点上插件的配置节点上将`supportedMimeTypes`属性设置为允许的MIME类型字符串。
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 
