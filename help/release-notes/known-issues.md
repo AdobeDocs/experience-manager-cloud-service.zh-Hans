@@ -1,14 +1,13 @@
 ---
 title: 已知问题
 description: 特定于 Adobe Experience Manager as a Cloud Service 已知问题的发行说明
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
 ---
-
 
 # 已知问题 {#known-issues}
 
@@ -44,6 +43,6 @@ Adobe Experience Manager Assets 中有一些依赖于基础功能的功能在 Ex
 >[!MORELIKETHIS]
 >
 >* [AEM 中的主要更改](aem-cloud-changes.md)
->* [已弃用和已删除的功能](deprecated-removed-features.md)
->* [发行说明](home.md)
+* [已弃用和已删除的功能](deprecated-removed-features.md)
+* [发行说明](home.md)
 
