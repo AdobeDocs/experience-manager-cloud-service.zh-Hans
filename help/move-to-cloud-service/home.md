@@ -1,21 +1,20 @@
 ---
 title: 移动到 AEM as a Cloud Service
 description: 有关将 Adobe Experience Manager as a Cloud Service 作为云服务移动到 AEM 的自助资源和文档链接
-translation-type: tm+mt
-source-git-commit: f275b9f8a1c6cbc188e75be435a4efc9394fa140
+exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 90%
+source-wordcount: '589'
+ht-degree: 83%
 
 ---
-
 
 # 移动到 AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
 >title="关于Cloud Acceleration Manager"
->abstract="Cloud Acceleration Manager是您自己的个人指南，贯穿整个移动到AEM作为Cloud Service的过程。"
+>abstract="Cloud Acceleration Manager是您自己在将AEM作为Cloud Service移动到Adobe的整个过程中的个人指南。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="对 AEM Sites as a Cloud Service 的显著更改"
 
 ## 移动到 AEM as a Cloud Service 的好处 {#benefits-aem-moving-to-aem-guide}
@@ -53,10 +52,11 @@ AEM as a Cloud Service 为 Experience Manager Sites 和 Assets 提供了可扩�
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
-| [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。 |
+| [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
+| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [商务用户指南](/help/commerce-cloud/home.md) | 了解AEM作为Cloud Service的Commerce Integration Framework。 |
+| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Commerce Integration FrameworkCloud Service。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
