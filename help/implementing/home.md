@@ -1,14 +1,13 @@
 ---
 title: 实施 Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service 实施自助资源和文档链接
-translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 94%
+source-wordcount: '454'
+ht-degree: 86%
 
 ---
-
 
 # 实施 AEM as a Cloud Service 的应用程序 {#aem-implementation-guide}
 
@@ -19,6 +18,7 @@ ht-degree: 94%
 * [使用 Cloud Manager 管理您的环境](cloud-manager/manage-environments.md)
 * [部署 AEM as a Cloud Service](deploying/overview.md)
 * [开发 AEM as a Cloud Service](developing/introduction/development-guidelines.md)
+* [无头开发人员历程](/help/journey-headless/developer/overview.md)
 * [AEM as a Cloud Service 的调度程序](dispatcher/overview.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
@@ -33,10 +33,12 @@ ht-degree: 94%
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
+| [实施用户指南](/help/implementing/home.md) | 了解如何使用AEM的强大功能构建和自定义体验。 |
+| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [商务用户指南](/help/commerce-cloud/home.md) | 了解AEM作为Cloud Service的Commerce Integration Framework。 |
+| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Commerce Integration FrameworkCloud Service。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
