@@ -1,56 +1,55 @@
 ---
 title: ContextHub Javascript API参考
 description: 将ContextHub组件添加到页面后，您的脚本可以使用ContextHub Javascript API
-translation-type: tm+mt
-source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
+exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 2%
 
 ---
 
+# ContextHub Javascript API引用{#contexthub-javascript-api-reference}
 
-# ContextHub Javascript API参考{#contexthub-javascript-api-reference}
-
-将[ContextHub组件添加到页面](adding-contexthub.md)时，您的脚本可以使用ContextHub Javascript API。
+将[ContextHub组件添加到页面](adding-contexthub.md)后，您的脚本便可以使用ContextHub Javascript API。
 
 ## ContextHub常量{#contexthub-constants}
 
-ContextHub Javascript API定义的常数值。
+ContextHub Javascript API定义的常量值。
 
 ### 事件常量{#event-constants}
 
-下表列表了ContextHub存储区发生的名称事件。 另请参阅[ContextHub.Utils.Eventing](#contexthub-utils-eventing)。
+下表列出了ContextHub存储发生的名称事件。 另请参阅[ContextHub.Utils.Eventing](#contexthub-utils-eventing)。
 
-| 常数 | 描述 | 值 |
+| 常量 | 描述 | 值 |
 |---|---|---|
 | `ContextHub.Constants.EVENT_NAMESPACE` | ContextHub的事件命名空间 | `ch` |
-| `ContextHub.Constants.EVENT_ALL_STORES_READY` | 指示所有必需的存储已注册、初始化并准备使用 | `all-stores-ready` |
-| `ContextHub.Constants.EVENT_STORES_PARTIALLY_READY` | 表示并非所有存储在给定超时内都已初始化 | `stores-partially-ready` |
+| `ContextHub.Constants.EVENT_ALL_STORES_READY` | 指示所有必需的存储都已注册、初始化并准备使用 | `all-stores-ready` |
+| `ContextHub.Constants.EVENT_STORES_PARTIALLY_READY` | 表示并非所有存储都在给定的超时内初始化 | `stores-partially-ready` |
 | `ContextHub.Constants.EVENT_STORE_REGISTERED` | 注册商店时触发 | `store-registered` |
-| `ContextHub.Constants.EVENT_STORE_READY` | 指示商店可以正常使用。 注册后会立即触发，JSONP存储区除外，在获取数据时会触发它)。 | `store-ready` |
-| `ContextHub.Constants.EVENT_STORE_UPDATED` | 当存储更新其持久性时触发 | `store-updated` |
+| `ContextHub.Constants.EVENT_STORE_READY` | 表示存储已准备就绪，可以工作。 注册后会立即触发该事件，但JSONP存储除外，在那里获取数据时会触发该事件)。 | `store-ready` |
+| `ContextHub.Constants.EVENT_STORE_UPDATED` | 存储更新其持久性时触发 | `store-updated` |
 | `ContextHub.Constants.PERSISTENCE_CONTAINER_NAME` | 持久性容器名称 | `ContextHubPersistence` |
-| `ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY` | 存储原始JSON结果的特定持久性密钥名称 | `/_/raw-response` |
+| `ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY` | 存储存储原始JSON结果的特定持久性键名称 | `/_/raw-response` |
 | `ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY` | 存储指示何时获取JSON数据的特定时间戳 | `/_/response-time` |
 | `ContextHub.Constants.SERVICE_LAST_URL_KEY` | 存储上次调用期间使用的JSON服务的特定URL | `/_/url` |
 | `ContextHub.Constants.IS_CONTAINER_EXPANDED` | 指示ContextHub的UI是否已展开 | `/_/container-expanded` |
 
 ### UI事件常量{#ui-event-constants}
 
-下表列表了ContextHub UI发生的事件的名称。
+下表列出了ContextHub UI中发生的事件的名称。
 
-| **常数** | **描述** | **值** |
+| **常量** | **描述** | **值** |
 |---|---|---|
 | `ContextHub.Constants.EVENT_UI_MODE_REGISTERED` | 注册模式时触发 | `ui-mode-registered` |
-| `ContextHub.Constants.EVENT_UI_MODE_UNREGISTERED` | 未注册模式时触发 | `ui-mode-unregistered` |
+| `ContextHub.Constants.EVENT_UI_MODE_UNREGISTERED` | 取消注册模式时触发 | `ui-mode-unregistered` |
 | `ContextHub.Constants.EVENT_UI_MODE_RENDERER_REGISTERED` | 注册模式渲染器时触发 | `ui-mode-renderer-registered` |
-| `ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTERED` | 未注册模式呈现器时触发 | `ui-mode-renderer-unregistered` |
+| `ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTERED` | 未注册模式渲染器时触发 | `ui-mode-renderer-unregistered` |
 | `ContextHub.Constants.EVENT_UI_MODE_ADDED` | 添加新模式时触发 | `ui-mode-added` |
 | `ContextHub.Constants.EVENT_UI_MODE_REMOVED` | 删除模式时触发 | `ui-mode-removed` |
-| `ContextHub.Constants.EVENT_UI_MODE_SELECTED` | 当用户选择某个模式时触发 | `ui-mode-selected` |
+| `ContextHub.Constants.EVENT_UI_MODE_SELECTED` | 用户选择模式时触发 | `ui-mode-selected` |
 | `ContextHub.Constants.EVENT_UI_MODULE_REGISTERED` | 注册新模块时触发 | `ui-module-registered` |
-| `ContextHub.Constants.EVENT_UI_MODULE_UNREGISTERED` | 未注册模块时触发 | `ui-module-unregistered` |
+| `ContextHub.Constants.EVENT_UI_MODULE_UNREGISTERED` | 取消注册模块时触发 | `ui-module-unregistered` |
 | `ContextHub.Constants.EVENT_UI_MODULE_RENDERER_REGISTERED` | 注册模块渲染器时触发 | `ui-module-renderer-registered` |
 | `ContextHub.Constants.EVENT_UI_MODULE_RENDERER_UNREGISTERED` | 未注册模块渲染器时触发 | `ui-module-renderer-unregistered` |
 | `ContextHub.Constants.EVENT_UI_MODULE_ADDED` | 添加新模块时触发 | `ui-module-added` |
@@ -59,29 +58,29 @@ ContextHub Javascript API定义的常数值。
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | 打开ContextHub UI时触发 | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | 折叠ContextHub UI时触发 | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | 修改属性时触发 | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | 每次呈现ContextHub UI时触发（例如，在属性更改后） | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | 每次渲染ContextHub UI时（例如，在属性更改后）均触发 | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | 初始化UI容器时触发 | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | 指示活动UI模式 | `/_/active-ui-mode` |
 
-## ContextHub Javascript API参考{#contexthub-javascript-api-reference-2}
+## ContextHub Javascript API引用{#contexthub-javascript-api-reference-2}
 
-ContextHub对象提供对所有商店的访问。
+ContextHub对象提供对所有存储的访问。
 
 ### 函数(ContextHub){#functions-contexthub}
 
-#### getAllStores(){#getallstores}
+#### getAllStores() {#getallstores}
 
-返回所有已注册的ContextHub存储。
+返回所有注册的ContextHub存储。
 
 此函数没有参数。
 
 ##### 返回{#returns-}
 
-包含所有ContextHub存储的对象。 每个存储都是一个与存储同名的对象。
+包含所有ContextHub存储的对象。 每个存储都是一个使用与存储相同名称的对象。
 
 ##### 示例 {#example-}
 
-以下示例检索所有存储，然后检索地理位置存储：
+以下示例检索所有存储区，然后检索地理位置存储区：
 
 ```javascript
 var allStores = ContextHub.getAllStores();
@@ -94,7 +93,7 @@ var geoloc = allStores.geolocation
 
 ##### 参数 {#parameters-}
 
-* **`name`:** 用于注册商店的名称。
+* **`name`:** 注册存储的名称。
 
 ##### 返回{#returns-getstore-name}
 
@@ -102,7 +101,7 @@ var geoloc = allStores.geolocation
 
 ##### 示例 {#example-getstore-name}
 
-以下示例检索geolocation存储：
+以下示例检索地理位置存储：
 
 ```javascript
 var geoloc = ContextHub.getStore("geolocation");
@@ -114,13 +113,13 @@ var geoloc = ContextHub.getStore("geolocation");
 
 ### 函数(ContextHub.ContextEngine.Segment){#functions-contexthub-contextengine-segment}
 
-#### getName(){#getname}
+#### getName() {#getname}
 
-以字符串值的形式返回段的名称。
+将区段的名称作为字符串值返回。
 
-#### getPath(){#getpath}
+#### getPath() {#getpath}
 
-以字符串值的形式返回段定义的存储库路径。
+将区段定义的存储库路径作为字符串值返回。
 
 ## ContextHub.SegmentEngine.SegmentManager {#contexthub-segmentengine-segmentmanager}
 
@@ -128,7 +127,7 @@ var geoloc = ContextHub.getStore("geolocation");
 
 ### 函数(ContextHub.SegmentEngine.SegmentManager){#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments(){#getresolvedsegments}
+#### getResolvedSegments() {#getresolvedsegments}
 
 返回在当前上下文中解析的区段。 此函数没有参数。
 
@@ -138,46 +137,46 @@ var geoloc = ContextHub.getStore("geolocation");
 
 ## ContextHub.Store.Core {#contexthub-store-core}
 
-ContextHub存储库的基类。
+ContextHub存储的基类。
 
 ### 属性(ContextHub.Store.Core){#properties-contexthub-store-core}
 
-#### 事件{#eventing}
+#### 事件 {#eventing}
 
-[`ContextHub.Utils.Eventing`](#contexthub-utils-eventing)对象。 使用此对象绑定函数以存储事件。 有关默认值和初始化的信息，请参见[`init(name,config)`](#init-name-config)。
+[`ContextHub.Utils.Eventing`](#contexthub-utils-eventing)对象。 使用此对象绑定函数以存储事件。 有关默认值和初始化的信息，请参阅[`init(name,config)`](#init-name-config)。
 
 #### name {#name}
 
 商店的名称。
 
-#### 持久性{#persistence}
+#### 持久性 {#persistence}
 
-`ContextHub.Utils.Persistence`对象。 有关默认值和初始化的信息，请参见[`init(name,config)`](#init-name-config)。
+`ContextHub.Utils.Persistence`对象。 有关默认值和初始化的信息，请参阅[`init(name,config)`](#init-name-config)。
 
 ### 函数(ContextHub.Store.Core){#functions-contexthub-store-core}
 
-#### addAllItems(tree, options){#addallitems-tree-options}
+#### addAllItems(tree， options){#addallitems-tree-options}
 
-将数据对象或数组与存储数据合并。 对象或数组中的每个键／值对都添加到存储中（通过`setItem`函数）:
+将数据对象或数组与存储数据合并。 对象或数组中的每个键/值对都会添加到存储中（通过`setItem`函数）：
 
 * **对象：** 键是属性名称。
-* **Array:Keys** 是数组索引。
+* **数组：** 键是数组索引。
 
 请注意，值可以是对象。
 
 ##### 参数 {#parameters-addallitems}
 
 * **`tree`:** （对象或数组）要添加到存储的数据。
-* **`options`:** （对象）传递给setItem函数的选项的可选对象。有关信息，请参阅[`setItem(key,value,options)`](#setitem-key-value-options)的`options`参数。
+* **`options`:** （对象）传递到setItem函数的选项的可选对象。有关信息，请参阅[`setItem(key,value,options)`](#setitem-key-value-options)的`options`参数。
 
 ##### 返回{#returns-addallitems}
 
 `boolean`值：
 
-* 值`true`表示已存储数据对象。
+* 值`true`表示存储了数据对象。
 * 值`false`表示数据存储未更改。
 
-#### addReference(key, anotherKey){#addreference-key-anotherkey}
+#### addReference(key， anotherKey){#addreference-key-anotherkey}
 
 创建从一个键到另一个键的引用。 键不能引用自身。
 
@@ -194,17 +193,17 @@ ContextHub存储库的基类。
 * 值`true`表示已添加引用。
 * 值`false`表示未添加引用。
 
-#### announceReadiness(){#announcereadiness}
+#### announceReadiness() {#announcereadiness}
 
-触发此存储的`ready`事件。 此函数没有参数，并且不返回值。
+触发此存储的`ready`事件。 此函数没有参数，且不返回任何值。
 
-#### clean(){#clean}
+#### clean() {#clean}
 
-从存储中删除所有数据。 函数没有参数，没有返回值。
+从存储中删除所有数据。 函数没有参数，也没有返回值。
 
 #### getItem(key){#getitem-key}
 
-返回与键关联的值。
+返回与键值关联的值。
 
 ##### 参数 {#parameters-getitem}
 
@@ -216,7 +215,7 @@ ContextHub存储库的基类。
 
 #### getKeys(includeInternals){#getkeys-includeinternals}
 
-从商店检索密钥。 或者，您可以检索ContextHub框架内部使用的键。
+从存储中检索键。 或者，您也可以检索ContextHub框架内部使用的键。
 
 ##### 参数 {#parameters-getkeys}
 
@@ -224,32 +223,32 @@ ContextHub存储库的基类。
 
 ##### 返回{#returns-getkeys}
 
-键名（`string`值）的数组。
+键名称数组（`string`值）。
 
-#### getReferences(){#getreferences}
+#### getReferences() {#getreferences}
 
-从商店检索引用。
+从存储中检索引用。
 
 ##### 返回{#returns-getreferences}
 
-使用引用键作为引用键索引的数组：
+使用引用键作为引用键的索引的数组：
 
 * 引用键与`addReference`函数的`key`参数相对应。
 * 引用的键与`addReference`函数的`anotherKey`参数相对应。
 
 #### getTree(includeInternals){#gettree-includeinternals}
 
-从存储中检索数据树。 或者，您也可以包括ContextHub框架内部使用的键／值对。
+从存储中检索数据树。 或者，您也可以包含ContextHub框架在内部使用的键/值对。
 
 ##### 参数 {#parameters-gettree}
 
-* `includeInternals:` 值包括 `true` 结果中内部使用的键／值对。此数据的键以下划线(`_`)字符开头。 默认值为 `false`.
+* `includeInternals:` 的值包括 `true` 结果中内部使用的键/值对。此数据的键以下划线(`_`)字符开头。 默认值为 `false`.
 
 ##### 返回{#returns-gettree}
 
 表示数据树的对象。 键是对象的属性名称。
 
-#### init(name, config){#init-name-config}
+#### init(name， config){#init-name-config}
 
 初始化存储。
 
@@ -260,32 +259,32 @@ ContextHub存储库的基类。
 
 ##### 参数 {#parameters-init}
 
-* **`name`:** 商店的名称。
-* **`config`：包** 含配置属性的对象：
+* **`name`:** 存储的名称。
+* **`config`:** 包含配置属性的对象：
    * `eventDeferring`:默认值为32。
-   * `eventing`:此 [存储的ContextHub.](#contexthub-utils-eventing) Utils.Eventingobject。默认值为`ContextHub.eventing`对象使用的值。
+   * `eventing`:此 [存储的ContextHub.Utils.](#contexthub-utils-eventing) Eventingobject 。默认值为`ContextHub.eventing`对象使用的值。
    * `persistence`:此 `ContextHub.Utils.Persistence` 存储的对象。默认值为`ContextHub.persistence`对象。
 
-#### isEventingPaused(){#iseventingpaused}
+#### isEventingPaused() {#iseventingpaused}
 
-确定此存储是否暂停了事件。
+确定是否暂停此存储的事件。
 
 ##### 返回{#returns-iseventingpaused}
 
 布尔值：
 
-* `true`:事件暂停，因此不会触发此存储的事件。
+* `true`:事件暂停，因此不会为此存储触发任何事件。
 * `false`:事件不会暂停，因此会为此存储触发事件。
 
-#### pauseEventing(){#pauseeventing}
+#### pauseEventing() {#pauseeventing}
 
-暂停存储事件，以便不触发事件。 此函数不需要参数，也不返回值。
+暂停存储的事件，以便不触发任何事件。 此函数不需要任何参数，也不返回任何值。
 
-#### removeItem(key, options){#removeitem-key-options}
+#### removeItem(key， options){#removeitem-key-options}
 
-从存储中删除密钥／值对。
+从存储中删除键/值对。
 
-删除密钥后，函数将触发`data`事件。 事件数据包括存储名称、已删除的键的名称、已删除的值、键的新值(null)以及“remove”的操作类型。
+删除键后，函数将触发`data`事件。 事件数据包括存储名称、已删除键的名称、已删除的值、键的新值(null)以及“remove”操作类型。
 
 或者，您也可以防止触发`data`事件。
 
@@ -293,18 +292,18 @@ ContextHub存储库的基类。
 
 * **`key`:** （字符串）要删除的键的名称。
 * **`options`:** （对象）选项的对象。以下对象属性有效：
-   * 静默：值`true`可防止触发`data`事件。 默认值为 `false`.
+   * 沉默：值`true`可阻止触发`data`事件。 默认值为 `false`.
 
 ##### 返回{#returns-removeitem}
 
 `boolean`值：
 
-* 值`true`表示已删除键／值对。
-* 值`false`表示数据存储未更改，因为在存储中找不到密钥。
+* 值`true`表示已删除键/值对。
+* 值`false`表示数据存储未更改，因为在存储中未找到密钥。
 
 #### removeReference(key){#removereference-key}
 
-从商店删除引用。
+从存储中删除引用。
 
 ##### 参数 {#parameters-removereference}
 
@@ -314,61 +313,61 @@ ContextHub存储库的基类。
 
 `boolean`值：
 
-* 值`true`表示引用已被删除。
-* 值`false`表示密钥无效且存储未更改。
+* 值`true`表示已删除引用。
+* 值`false`表示键无效，且存储未更改。
 
 #### reset(keepRemainingData){#reset-keepremainingdata}
 
-重置存储的保留数据的初始值。 或者，您也可以从存储中删除所有其他数据。 重置存储时，此存储的事件暂停。 此函数不返回值。
+重置存储保留数据的初始值。 或者，您也可以从存储中删除所有其他数据。 重置存储时，会暂停此存储的事件。 此函数不返回任何值。
 
-初始值在用于实例化存储对象的config对象的`initialValues`属性中提供。
+初始值在用于实例化存储对象的配置对象的`initialValues`属性中提供。
 
 ##### 参数 {#parameters-reset}
 
-* **`keepRemainingData`**:（布尔值）如果值为true，则非初始数据会被保留。如果值为false，则除初始值外，所有数据都会被删除。
+* **`keepRemainingData`**:（布尔值）如果值为true，则会保留非初始数据。如果值为false，则会删除除初始值之外的所有数据。
 
-#### resolveReference(key, retry){#resolvereference-key-retry}
+#### resolveReference(key， retry){#resolvereference-key-retry}
 
-检索引用的键。 或者，您可以指定用于解析最佳匹配的迭代数。
+检索引用的键值。 或者，您可以指定用于解析最佳匹配的迭代次数。
 
 ##### 参数 {#parameters-resolvereference}
 
 * **`key`:** （字符串）要解析引用的键。此`key`参数与`addReference`函数的`key`参数相对应。
-* **`retry`:** (Number)要使用的迭代数。
+* **`retry`:** （数字）要使用的迭代次数。
 
 ##### 返回{#returns-resolvereference}
 
-表示引用的键的`string`值。 如果未解析引用，则返回`key`参数的值。
+表示引用键的`string`值。 如果未解析引用，则返回`key`参数的值。
 
-#### resumeEventing(){#resumeeventing}
+#### resumeEventing() {#resumeeventing}
 
-恢复此商店的事件，以触发事件。 此函数不定义参数，也不返回值。
+恢复此存储的事件，以便触发事件。 此函数未定义任何参数，且不返回任何值。
 
-#### setItem(key, value, options){#setitem-key-value-options}
+#### setItem(key， value， options){#setitem-key-value-options}
 
-向存储添加键／值对。
+向存储添加键/值对。
 
-仅当键的值与当前存储的键值不同时，才触发`data`事件。 您可以选择防止触发`data`事件。
+仅当键的值与当前存储的键值不同时，才会触发`data`事件。 您可以选择阻止触发`data`事件。
 
-事件数据包括存储名称、键、上一个值、新值和`set`的操作类型。
+事件数据包括存储名称、键、前一个值、新值和`set`的操作类型。
 
 ##### 参数 {#parameters-setitem}
 
 * **`key`:** （字符串）键的名称。
 * **`options`:** （对象）选项的对象。以下对象属性有效：
-   * `silent`:值可防止 `true` 触发事件的 `data` 情况。默认值为 `false`.
+   * `silent`:值可阻 `true` 止触发事 `data` 件。默认值为 `false`.
 * **`value`:** （对象）要与键关联的值。
 
 ##### 返回{#returns-setitem}
 
 `boolean`值：
 
-* 值`true`表示已存储数据对象。
+* 值`true`表示存储了数据对象。
 * 值`false`表示数据存储未更改。
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-包含JSON数据的商店。 从外部JSONP服务或返回JSON数据的服务（可选）检索数据。 创建此类的实例时，使用[`init`](#init-name-config)函数指定服务详细信息。
+包含JSON数据的商店。 数据是从外部JSONP服务中检索，或者（可选）从返回JSON数据的服务中检索。 在创建此类的实例时，使用[`init`](#init-name-config)函数指定服务详细信息。
 
 存储使用内存中的永久性（Javascript变量）。 存储数据仅在页面的生命周期内可用。
 
@@ -376,33 +375,33 @@ ContextHub.Store.JSONPStore扩展了[ContextHub.Store.Core](#contexthub-store-co
 
 ### 函数(ContextHub.Store.JSONPStore){#functions-contexthub-store-jsonpstore}
 
-#### configureService(serviceConfig, override){#configureservice-serviceconfig-override}
+#### configureService(serviceConfig， override){#configureservice-serviceconfig-override}
 
-配置用于连接到此对象使用的JSONP服务的详细信息。 您可以更新或替换现有配置。 该函数不返回任何值。
+配置用于连接到此对象所使用的JSONP服务的详细信息。 您可以更新或替换现有配置。 该函数不返回任何值。
 
 ##### 参数 {#parameters-configureservice}
 
 * **`serviceConfig`:** 包含以下属性的对象：
    * `host`:（字符串）服务器名称或IP地址。
-   * `jsonp`:（布尔值）值为true表示服务是JSONP服务，否则为false。如果为true，则{callback:&quot;ContextHub.Callbacks.*Object.name*}对象添加到service.params对象。
+   * `jsonp`:（布尔值）值为true表示该服务是JSONP服务，否则为false。如果为true，则为{callback:&quot;ContextHub.回调。*Object.name*}对象会添加到service.params对象。
    * `params`:（对象）表示为对象属性的URL参数。参数名称是属性名称，参数值是属性值。
    * `path`:（字符串）服务的路径。
-   * `port`:（编号）服务的端口号。
+   * `port`:（数字）服务的端口号。
    * `secure`:（字符串或布尔值）确定用于服务URL的协议：
       * `auto`://
       * `true`:https://
       * `false`: http://
-* **override:** (Boolean)。值`true`将使现有服务配置被替换为属性`serviceConfig`。 值`false`将使现有服务配置属性与属性`serviceConfig`合并。
+* **override:** （布尔值）。值`true`会导致现有服务配置被替换为属性`serviceConfig`。 值`false`会导致现有服务配置属性与属性`serviceConfig`合并。
 
-#### getRawResponse(){#getrawresponse}
+#### getRawResponse() {#getrawresponse}
 
-返回自上次调用JSONP服务后缓存的原始响应。 该函数不需要任何参数。
+返回自上次调用JSONP服务后缓存的原始响应。 函数不需要任何参数。
 
 ##### 返回{#returns-getrawresponse}
 
 表示原始响应的对象。
 
-#### getServiceDetails(){#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 检索此ContextHub.Store.JSONPStore对象的服务对象。 服务对象包含创建服务URL所需的所有信息。
 
@@ -411,11 +410,11 @@ ContextHub.Store.JSONPStore扩展了[ContextHub.Store.Core](#contexthub-store-co
 具有以下属性的对象：
 
 * **`host`:** （字符串）服务器名称或IP地址。
-* **`jsonp`:** (Boolean)值true表示服务是JSONP服务，否则为false。如果为true，则{callback:&quot;ContextHub.Callbacks.*Object.name*}对象添加到service.params对象。
-* **`params`:(** 对象)表示为对象属性的URL参数。参数名称是属性名称，参数值是属性值。
+* **`jsonp`:** （布尔值）值为true表示该服务是JSONP服务，否则为false。如果为true，则为{callback:&quot;ContextHub.回调。*Object.name*}对象会添加到service.params对象。
+* **`params`:** （对象）表示为对象属性的URL参数。参数名称是属性名称，参数值是属性值。
 * **`path`:** （字符串）服务的路径。
-* **`port`:** (Number)服务的端口号。
-* **`secure`:** （字符串或布尔值）确定用于服务URL的协议：
+* **`port`:** （数字）服务的端口号。
+* **`secure`:** （字符串或布尔）确定用于服务URL的协议：
    * `auto`://
    * `true`:https://
    * `false`:http://
@@ -426,71 +425,71 @@ ContextHub.Store.JSONPStore扩展了[ContextHub.Store.Core](#contexthub-store-co
 
 ##### 参数 {#parameters-getserviceurl}
 
-* **`resolve`:** (Boolean)确定是否在URL中包含已解析的参数。值`true`解析参数，而`false`解析参数不。
+* **`resolve`:** （布尔）确定是否在URL中包含已解析的参数。值`true`可解析参数，而值`false`不解析。
 
 ##### 返回{#returns-getserviceurl}
 
 表示服务URL的`string`值。
 
-#### init(name, config){#init-name-config-1}
+#### init(name， config){#init-name-config-1}
 
 初始化`ContextHub.Store.JSONPStore`对象。
 
 ##### 参数 {#parameters-init-1}
 
 * **`name`:** （字符串）存储的名称。
-* **`config`:** (Object)包含服务属性的对象。JSONPStore对象使用`service`对象的属性来构建JSONP服务的URL:
+* **`config`:** （对象）包含服务属性的对象。JSONPStore对象使用`service`对象的属性来构建JSONP服务的URL:
    * `eventDeferring`:32.
    * `eventing`:此存储的ContextHub.Utils.Eventing对象。默认值为`ContextHub.eventing`对象。
-   * `persistence`:此存储的ContextHub.Utils.Persistence对象。默认情况下，使用内存持久性（Javascript对象）。
+   * `persistence`:此存储的ContextHub.Utils.Persistence对象。默认情况下，会使用内存持久性（Javascript对象）。
    * `service`: (Object)
       * `host`:（字符串）服务器名称或IP地址。
-      * `jsonp`:（布尔值）值为true表示服务是JSONP服务，否则为false。如果为true，则将`{callback: "ContextHub.Callbacks.*Object.name*}`对象添加到`service.params`。
+      * `jsonp`:（布尔值）值为true表示该服务是JSONP服务，否则为false。如果为true，则会将`{callback: "ContextHub.Callbacks.*Object.name*}`对象添加到`service.params`。
       * `params`:（对象）表示为对象属性的URL参数。参数名称和值分别是对象属性名称和值。
       * `path`:（字符串）服务的路径。
-      * `port`:（编号）服务的端口号。
+      * `port`:（数字）服务的端口号。
       * `secure`:（字符串或布尔值）确定用于服务URL的协议：
          * `auto`://
          * `true`:https://
          * `false`:http://
-      * `timeout`:（数字）超时前等待JSONP服务响应的时间（以毫秒为单位）。
-         * `ttl`:在JSONP服务调用之间传递的最小时间（以毫秒为单位）。（请参阅[queryService](#queryservice-reload)函数）。
+      * `timeout`:（数字）等待JSONP服务在超时前做出响应的时间（以毫秒为单位）。
+         * `ttl`:在对JSONP服务的调用之间传递的最小时间（以毫秒为单位）。（请参阅[queryService](#queryservice-reload)函数）。
 
 #### queryService(reload){#queryservice-reload}
 
-查询远程JSONP服务并缓存响应。 如果此函数上次调用后的时间小于`config.service.ttl`的值，则不调用服务，并且不更改缓存响应。 或者，您也可以强制调用服务。 调用[init](#init-name-config)函数初始化存储时设置`config.service.ttl`属性。
+查询远程JSONP服务并缓存响应。 如果自上次调用此函数以来的时间小于`config.service.ttl`的值，则不会调用服务，也不会更改缓存的响应。 或者，您也可以强制调用服务。 调用[init](#init-name-config)函数以初始化存储时，将设置`config.service.ttl`属性。
 
-完成事件时触发就绪查询。 如果未设置JSONP服务URL，则函数不执行任何操作。
+查询完成后会触发就绪事件。 如果未设置JSONP服务URL，则函数不执行任何操作。
 
 ##### 参数 {#parameters-queryservice}
 
-* **`reload`:** (Boolean)值为true将删除缓存响应并强制调用JSONP服务。
+* **`reload`:** （布尔值）如果为true，则删除缓存响应并强制调用JSONP服务。
 
 #### 重置 {#reset}
 
-重置存储的保留数据的初始值，然后调用JSONP服务。 或者，您也可以从存储中删除所有其他数据。 重置初始值时，此存储的事件会暂停。 此函数不返回值。
+重置存储保留数据的初始值，然后调用JSONP服务。 或者，您也可以从存储中删除所有其他数据。 重置初始值时，会暂停此存储的事件。 此函数不返回任何值。
 
-初始值在用于实例化存储对象的config对象的initialValues属性中提供。
+初始值在用于实例化存储对象的配置对象的initialValues属性中提供。
 
 ##### 参数 {#parameters-reset-1}
 
-* **`keepRemainingData`:** (Boolean)如果值为true，则非初始数据会被保留。如果值为false，则除初始值外，所有数据都会被删除。
+* **`keepRemainingData`:** （布尔值）如果为true，则会保留非初始数据。如果值为false，则会删除除初始值之外的所有数据。
 
 #### resolveParameter(f){#resolveparameter-f}
 
 解析给定参数。
 
-## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
+## ContextHub.Store.PeristedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` 扩 [展ContextHub.Store.](#contexthub-store-jsonpstore) JSONPStoreso，它继承了该类的所有函数。但是，根据ContextHub持久性的配置，从JSONP服务检索的数据会被保留。 （请参阅[持久性模式：](adding-contexthub.md#persistence-modes)）
+`ContextHub.Store.PersistedJSONPStore` 扩 [展ContextHub.Store.](#contexthub-store-jsonpstore) JSONPStoreso ，它会继承该类的所有函数。但是，从JSONP服务检索的数据将根据ContextHub持久性的配置进行保留。 （请参阅[持久性模式：](adding-contexthub.md#persistence-modes)）
 
-## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
+## ContextHub.Store.PersiredStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` 扩 [展ContextHub.Store.](#contexthub-store-core) Coreso，它继承该类的所有函数。此存储中的数据会根据ContextHub持久性的配置进行保留。
+`ContextHub.Store.PersistedStore` 扩 [展ContextHub.Store.](#contexthub-store-core) Coreso，它继承该类的所有函数。此存储中的数据将根据ContextHub持久性的配置进行保留。
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` 扩 [展ContextHub.Store.](#contexthub-store-core) Coreso，它继承该类的所有函数。此存储中的数据将使用内存中的持久性（Javascript对象）进行保留。
+`ContextHub.Store.SessionStore` 扩 [展ContextHub.Store.](#contexthub-store-core) Coreso，它继承该类的所有函数。此存储中的数据将使用内存中持久性（Javascript对象）进行保留。
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -498,19 +497,19 @@ ContextHub.Store.JSONPStore扩展了[ContextHub.Store.Core](#contexthub-store-co
 
 ### 函数(ContextHub.UI){#functions-contexthub-ui}
 
-#### registerRenderer(moduleType, renderer, dontRenderer){#registerrenderer-moduletype-renderer-dontrender}
+#### registerRenderer(moduleType， renderer， dontRender){#registerrenderer-moduletype-renderer-dontrender}
 
-向ContextHub注册UI模块渲染器。 注册呈示器后，它可用于[创建UI模块](configuring-contexthub.md#adding-a-ui-module)。 当您是[扩展`ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types)以创建自定义UI模块渲染器时，请使用此函数。
+使用ContextHub注册UI模块渲染器。 注册渲染器后，可将其用于[创建UI模块](configuring-contexthub.md#adding-a-ui-module)。 当您[扩展`ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types)时，请使用此函数来创建自定义UI模块渲染器。
 
 ##### 参数 {#parameters-registerrenderer}
 
-* **`moduleType`:** （字符串）UI模块渲染器的标识符。如果渲染器已使用指定的值进行注册，则在注册此渲染器之前，将先取消注册现有渲染器。
+* **`moduleType`:** （字符串）UI模块渲染器的标识符。如果已使用指定的值注册了渲染器，则在注册此渲染器之前会取消注册现有渲染器。
 * **`renderer`:** （字符串）呈现UI模块的类的名称。
-* **`dontRender`:(** Boolean)设置为 `true` 阻止在注册呈示器后呈现ContextHub UI。默认值为 `false`.
+* **`dontRender`:** （布尔值）设 `true` 置为，以阻止在注册渲染器后渲染ContextHub UI。默认值为 `false`.
 
 ##### 示例 {#example-registerrenderer}
 
-以下示例将呈示器注册为`contexthub.browserinfo`模块类型。
+以下示例将渲染器注册为`contexthub.browserinfo`模块类型。
 
 ```javascript
 ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer());
@@ -524,11 +523,11 @@ ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer(
 
 #### exists(key){#exists-key}
 
-确定Cookie是否存在。
+确定是否存在Cookie。
 
 ##### 参数 {#parameters-exists}
 
-* **`key`:** 包 `String` 含要测试的cookie的密钥的A。
+* **`key`:** 包 `String` 含要测试的Cookie的键。
 
 ##### 返回{#returns-exists}
 
@@ -544,19 +543,19 @@ if (ContextHub.Utils.Cookie.exists("name")) {
 
 #### getAllItems(filter){#getallitems-filter}
 
-返回所有具有与筛选器匹配的键的cookie。
+返回具有与过滤器匹配的键的所有Cookie。
 
 ##### 参数 {#parameters-getallitems}
 
 * **`filter`:** （可选）匹配Cookie键的条件。要返回所有Cookie，请指定无值。 支持以下类型：
-   * 字符串：该字符串与Cookie键进行比较。
-   * 阵列：数组中的每个项都是过滤器。
-   * RegExp对象：对象的测试函数用于匹配cookie键。
-   * 函数：测试Cookie密钥的匹配项的函数。 如果测试确认匹配，该函数必须将cookie键作为参数并返回true。
+   * 字符串：字符串会与Cookie键值进行比较。
+   * 阵列：数组中的每个项目都是一个过滤器。
+   * 正则表达式对象：对象的测试函数用于匹配Cookie键。
+   * 函数：用于测试Cookie键是否匹配的函数。 如果测试确认匹配，则函数必须将Cookie键作为参数并返回true。
 
 ##### 返回{#returns-getallitems}
 
-Cookie的对象。 对象属性是cookie键，键值是cookie值。
+Cookie的对象。 对象属性是Cookie键，键值是Cookie值。
 
 ##### 示例 {#example-getallitems}
 
@@ -570,11 +569,11 @@ ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 
 ##### 参数 {#parameters-getitem-1}
 
-* **`key`:** 您希望其值的cookie的键。
+* **`key`:** 您想要其值的Cookie的键。
 
 ##### 返回{#returns-getitem-1}
 
-Cookie值，如果找不到该键的Cookie，则为`null`。
+Cookie值，或者`null`（如果未找到该键的Cookie）。
 
 ##### 示例 {#example-getitem-1}
 
@@ -584,19 +583,19 @@ ContextHub.Utils.Cookie.getItem("name");
 
 #### getKeys(filter){#getkeys-filter}
 
-返回与筛选器匹配的现有cookie的密钥数组。
+返回与过滤器匹配的现有Cookie的键数组。
 
 ##### 参数 {#parameters-getkeys-1}
 
-* **`filter`：匹** 配Cookie键的条件。支持以下类型：
-   * 字符串：该字符串与Cookie键进行比较。
-   * 阵列：数组中的每个项都是过滤器。
-   * RegExp对象：对象的测试函数用于匹配cookie键。
-   * 函数：测试Cookie密钥的匹配项的函数。 如果测试确认匹配，该函数必须将cookie键作为参数并返回`true`。
+* **`filter`:** 匹配Cookie键的条件。支持以下类型：
+   * 字符串：字符串会与Cookie键值进行比较。
+   * 阵列：数组中的每个项目都是一个过滤器。
+   * 正则表达式对象：对象的测试函数用于匹配Cookie键。
+   * 函数：用于测试Cookie键是否匹配的函数。 如果测试确认匹配，则函数必须将Cookie键作为参数并返回`true`。
 
 ##### 返回{#returns-getkeys-1}
 
-字符串的数组，其中每个字符串是与筛选器匹配的cookie的键。
+一个字符串数组，其中每个字符串是与过滤器匹配的Cookie的键。
 
 ##### 示例 {#example-getkeys-1}
 
@@ -604,14 +603,14 @@ ContextHub.Utils.Cookie.getItem("name");
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### removeItem(key, options){#removeitem-key-options-1}
+#### removeItem(key， options){#removeitem-key-options-1}
 
 删除Cookie。 要删除Cookie，该值将设置为空字符串，到期日期将设置为当前日期前一天。
 
 ##### 参数 {#parameters-removeitem-1}
 
-* **`key`:** 一 `String` 个值，它表示要删除的cookie的键。
-* **`options`:** 包含用于配置Cookie属性的属性值的对象。有关信息，请参见[`setItem`](#setitem-key-value-options)函数。 `expires`属性无效。
+* **`key`:** 表示 `String` 要删除的Cookie的键值。
+* **`options`:** 一个对象，其中包含用于配置Cookie属性的属性值。有关信息，请参阅[`setItem`](#setitem-key-value-options)函数。 `expires`属性无效。
 
 ##### 返回{#returns-removeitem-1}
 
@@ -623,18 +622,18 @@ ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 ```
 
-#### setItem(key, value, options){#setitem-key-value-options-1}
+#### setItem(key， value， options){#setitem-key-value-options-1}
 
-创建给定密钥和值的cookie，并将cookie添加到当前文档。 或者，您也可以指定用于配置Cookie属性的选项。
+创建给定键值的Cookie，并将该Cookie添加到当前文档。 或者，您也可以指定用于配置Cookie属性的选项。
 
 ##### 参数 {#parameters-setitem-1}
 
-* **`key`:** 包含cookie键的字符串。
-* **`value`:** 包含cookie值的字符串。
-* **`options`:** （可选）包含以下任意属性的对象，这些属性配置了cookie属性：
-   * `expires`:一个 `date` 或 `number` 一个值，它指定Cookie何时过期。日期值指定到期的绝对时间。 数字（以天为单位）将到期时间设置为当前时间加数字。 默认值为 `undefined`.
-   * `secure`:一 `boolean` 个值，它指 `Secure` 定cookie的属性。默认值为 `false`.
-   * `path`:用 `String` 作cookie属 `Path` 性的值。默认值为 `undefined`.
+* **`key`:** 包含Cookie键的字符串。
+* **`value`:** 包含Cookie值的字符串。
+* **`options`:** （可选）一个对象，其中包含配置Cookie属性的以下任意属性：
+   * `expires`:一个 `date` 或 `number` 值，用于指定Cookie何时过期。日期值指定到期的绝对时间。 数字（以天为单位）会将到期时间设置为当前时间加上数字。 默认值为 `undefined`.
+   * `secure`:一 `boolean` 个值，用于指 `Secure` 定Cookie的属性。默认值为 `false`.
+   * `path`:用 `String` 作Cookie属 `Path` 性的值。默认值为 `undefined`.
 
 ##### 返回{#returns-setitem-1}
 
@@ -651,14 +650,14 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 });
 ```
 
-#### nish(filter, options){#vanish-filter-options}
+#### nish(filter， options){#vanish-filter-options}
 
-删除与给定筛选器匹配的所有Cookie。 使用`getKeys`函数匹配cookie，并使用`removeItem`函数删除cookie。
+删除与给定过滤器匹配的所有Cookie。 Cookie使用`getKeys`函数进行匹配，并使用`removeItem`函数删除。
 
 ##### 参数 {#parameters-vanish}
 
-* **`filter`:** 在 `filter` 函数调用中使用的参 [`getKeys`](#getkeys-filter) 数。
-* **`options`:** 在 `options` 函数调用中使用的参 [`removeItem`](#removeitem-key-options) 数。
+* **`filter`:** 在 `filter` 函数的调用中使用的 [`getKeys`](#getkeys-filter) 参数。
+* **`options`:** 在 `options` 函数的调用中使用的 [`removeItem`](#removeitem-key-options) 参数。
 
 ##### 返回{#returns-vanish}
 
@@ -666,46 +665,46 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-允许您将函数绑定到ContextHub存储事件并取消绑定。 使用存储的[事件](#eventing)属性访问存储的`ContextHub.Utils.Eventing`对象。
+允许您将函数绑定和取消绑定到ContextHub存储事件。 使用存储的[eventing](#eventing)属性访问存储的`ContextHub.Utils.Eventing`对象。
 
 ### 函数(ContextHub.Utils.Eventing){#functions-contexthub-utils-eventing}
 
-#### off(name, selector){#off-name-selector}
+#### off(name， selector){#off-name-selector}
 
-从事件解除函数绑定。
+从事件中取消绑定函数。
 
 ##### 参数 {#parameters-off}
 
-* **`name`:** 要 [解除函数](#contexthub-utils-eventing) 绑定的事件的名称。
-* **`selector`:** 标识绑定的选择器。（请参见[`on`](#on-name-handler-selector-triggerforpastevents)和[`once`](#once-name-handler-selector-triggerforpastevents)函数的`selector`参数）。
+* **`name`:** 要 [取消绑](#contexthub-utils-eventing) 定函数的事件的名称。
+* **`selector`:** 标识绑定的选择器。（请参阅[`on`](#on-name-handler-selector-triggerforpastevents)和[`once`](#once-name-handler-selector-triggerforpastevents)函数的`selector`参数）。
 
 ##### 返回{#returns-off}
 
-此函数不返回值。
+此函数不返回任何值。
 
-#### on(name, handler, selector, triggerForPastEvents){#on-name-handler-selector-triggerforpastevents}
+#### on(name， handler， selector， triggerForPastEvents){#on-name-handler-selector-triggerforpastevents}
 
-将函数绑定到事件。 每次发生事件时都会调用函数。 或者，可以在建立绑定之前为过去发生的事件调用该函数。
+将函数绑定到事件。 每次发生事件时都会调用函数。 或者，也可以在建立绑定之前，为过去发生的事件调用函数。
 
 ##### 参数 {#parameters-on}
 
-* **`name`:** （字符串） [要将函](#contexthub-utils-eventing) 数绑定到的事件的名称。
+* **`name`:** （字符串） [要将](#contexthub-utils-eventing) 函数绑定到的事件的名称。
 * **`handler`:** （函数）要绑定到事件的函数。
 * **`selector`:** （字符串）绑定的唯一标识符。如果要使用`off`函数删除绑定，则需要选择器来标识绑定。
-* **`triggerForPastEvents`:** (Boolean)指示是否应为过去发生的事件执行处理函数。值`true`调用过去事件的处理函数。 值`false`将调用处理函数以用于将来的事件。 默认值为 `true`.
+* **`triggerForPastEvents`:** （布尔）指示是否应为过去发生的事件执行处理程序。值`true`会为过去的事件调用处理程序。 值`false`将为将来的事件调用处理程序。 默认值为 `true`.
 
 ##### 返回{#returns-on}
 
-当`triggerForPastEvents`参数为`true`时，此函数返回一个`boolean`值，指示事件是否发生在过去：
+当`triggerForPastEvents`参数为`true`时，此函数会返回一个`boolean`值，指示事件是否发生在过去：
 
-* `true`:过去发生的事件，将调用该处理函数。
-* `false`:事件从未发生过。
+* `true`:事件在过去发生，将调用处理程序。
+* `false`:以前未发生过该事件。
 
-如果`triggerForPastEvents`是`false`，则此函数不返回值。
+如果`triggerForPastEvents`为`false`，则此函数不返回任何值。
 
 ##### 示例 {#example-on}
 
-以下示例将一个函数绑定到地理位置存储的事件。 函数使用商店中纬度数据项的值填充页面上的元素。
+以下示例将函数绑定到地理位置存储的数据事件。 函数会使用商店中纬度数据项的值填充页面上的元素。
 
 ```html
 <div class="location">
@@ -723,50 +722,50 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 </script>
 ```
 
-#### once(name, handler, selector, triggerForPastEvents){#once-name-handler-selector-triggerforpastevents}
+#### once(name， handler， selector， triggerForPastEvents){#once-name-handler-selector-triggerforpastevents}
 
-将函数绑定到事件。 该函数只被调用一次，用于事件的第一次出现。 或者，可以在建立绑定之前为过去发生的事件调用该函数。
+将函数绑定到事件。 对于事件的首次出现，函数只调用一次。 或者，也可以在建立绑定之前，为过去发生的事件调用函数。
 
 ##### 参数 {#parameters-once}
 
-* **`name`:** （字符串） [要将函](#contexthub-utils-eventing) 数绑定到的事件的名称。
+* **`name`:** （字符串） [要将](#contexthub-utils-eventing) 函数绑定到的事件的名称。
 * **`handler`:** （函数）要绑定到事件的函数。
 * **`selector`:** （字符串）绑定的唯一标识符。如果要使用`off`函数删除绑定，则需要选择器来标识绑定。
-* **`triggerForPastEvents`:** (Boolean)指示是否应为过去发生的事件执行处理函数。值`true`调用过去事件的处理函数。 值`false`将调用处理函数以用于将来的事件。 默认值为 `true`.
+* **`triggerForPastEvents`:** （布尔）指示是否应为过去发生的事件执行处理程序。值`true`会为过去的事件调用处理程序。 值`false`将为将来的事件调用处理程序。 默认值为 `true`.
 
 ##### 返回{#returns-once}
 
-当`triggerForPastEvents`参数为`true`时，此函数返回一个`boolean`值，指示事件是否发生在过去：
+当`triggerForPastEvents`参数为`true`时，此函数会返回一个`boolean`值，指示事件是否发生在过去：
 
-* `true`:过去发生的事件，将调用该处理函数。
-* `false`:事件从未发生过。
+* `true`:事件在过去发生，将调用处理程序。
+* `false`:以前未发生过该事件。
 
-如果`triggerForPastEvents`是`false`，则此函数不返回值。
+如果`triggerForPastEvents`为`false`，则此函数不返回任何值。
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
-一个实用程序类，它使对象能够继承其他对象的属性和方法。
+允许对象继承另一个对象的属性和方法的实用程序类。
 
 ### 函数(ContextHub.Utils.inheritance){#functions-contexthub-utils-inheritance}
 
-#### inherit(child, parent){#inherit-child-parent}
+#### inherit(child， parent， {#inherit-child-parent}
 
-使对象继承其他对象的属性和方法。
+导致对象继承另一个对象的属性和方法。
 
 ##### 参数 {#parameters-inherit}
 
-* **`child`:** (Object)继承的对象。
-* **`parent`:** (Object)定义继承的属性和方法的对象。
+* **`child`:** （对象）继承的对象。
+* **`parent`:** （对象）用于定义继承的属性和方法的对象。
 
 ## ContextHub.Utils.JSON {#contexthub-utils-json}
 
-提供将对象序列化为JSON格式并将JSON字符串反序列化为对象的函数。
+提供了用于将对象序列化为JSON格式并将JSON字符串反序列化为对象的函数。
 
 ### 函数(ContextHub.Utils.JSON){#functions-contexthub-utils-json}
 
 #### parse(data){#parse-data}
 
-将字符串值解析为JSON，并将其转换为javascript对象。
+将字符串值解析为JSON，并将其转换为Javascript对象。
 
 ##### 参数 {#parameters-parse}
 
@@ -800,11 +799,11 @@ Object {
 
 ##### 参数 {#parameters-stringify}
 
-* **`data`:** 要序列化的值或对象。此函数支持布尔值、数组、数字、字符串和日期值。
+* **`data`:** 要序列化的值或对象。此函数支持布尔值、数组值、数字值、字符串值和日期值。
 
 ##### 返回{#returns-stringify}
 
-序列化字符串值。 当`data`是R `egExp`值时，此函数返回空对象。 当`data`是函数时，返回`undefined`。
+序列化的字符串值。 当`data`是R `egExp`值时，此函数返回空对象。 当`data`是函数时，返回`undefined`。
 
 ##### 示例 {#example-stringify}
 
@@ -818,7 +817,7 @@ ContextHub.Utils.JSON.stringify({
 });
 ```
 
-退货：
+返回：
 
 ```javascript
 "{'city':'Basel','country':'Switzerland','population':'173330'}":
@@ -826,26 +825,26 @@ ContextHub.Utils.JSON.stringify({
 
 ## ContextHub.Utils.JSON.tree {#contexthub-utils-json-tree}
 
-此类简化了要存储或从ContextHub存储检索的数据对象的操作。
+此类便于处理要存储或从ContextHub存储中检索的数据对象。
 
 ### 函数(ContextHub.Utils.JSON.tree){#functions-contexthub-utils-json-tree}
 
-#### addAllItems(){#addallitems}
+#### addAllItems() {#addallitems}
 
-创建数据对象的副本，并从第二个对象添加到数据树中。 该函数返回副本，但不修改任何原始对象。 当两个对象的数据树包含相同的键时，第二对象的值将覆盖第一对象的值。
+创建数据对象的副本，并从第二个对象向其添加数据树。 该函数返回副本，且不会修改任何原始对象。 当两个对象的数据树包含相同的键时，第二对象的值将覆盖第一对象的值。
 
 ##### 参数 {#parameters-addallitems-1}
 
-* **`tree`:** 要复制的对象。
+* **`tree`:** 复制的对象。
 * **`secondTree`:** 与对象副本合并的对 `tree` 象。
 
 ##### 返回{#returns-addallitems-1}
 
 包含合并数据的对象。
 
-#### cleanup(){#cleanup}
+#### cleanup() {#cleanup}
 
-创建对象的副本，查找并删除数据树中不包含值、空值或未定义值的项，并返回该副本。
+创建对象的副本，查找并删除数据树中不包含值、空值或未定义值的项，然后返回该副本。
 
 ##### 参数 {#parameters-cleanup}
 
@@ -853,11 +852,11 @@ ContextHub.Utils.JSON.stringify({
 
 ##### 返回{#returns-cleanup}
 
-已清除的树的副本。
+已清理的树副本。
 
-#### getItem(){#getitem}
+#### getItem() {#getitem}
 
-从键的对象检索值。
+从键的对象中检索值。
 
 ##### 参数 {#parameters-getitem-2}
 
@@ -866,7 +865,7 @@ ContextHub.Utils.JSON.stringify({
 
 ##### 返回{#returns-getitem-2}
 
-与键对应的值。 当密钥具有子密钥时，此函数返回一个复杂对象。 当键的值类型为`undefined`时，将返回`null`。
+与键对应的值。 当键具有子键时，此函数将返回一个复杂的对象。 当键值的类型为`undefined`时，将返回`null`。
 
 ##### 示例 {#example-getitem-2}
 
@@ -892,7 +891,7 @@ myObject {
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user/location/details/elevation");
 ```
 
-以下示例代码检索具有子项的键的值：
+以下示例代码可检索具有子项的键的值：
 
 ```javascript
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user");
@@ -912,15 +911,15 @@ Object {
 }
 ```
 
-#### getKeys(){#getkeys}
+#### getKeys() {#getkeys}
 
-从对象的数据树中检索所有键。 （可选）您只能检索特定键子项的键。 您还可以选择指定检索到的键的排序顺序。
+从对象的数据树中检索所有键。 或者，您只能检索特定键子项的键。 您还可以选择指定检索到键值的排序顺序。
 
 ##### 参数 {#parameters-getkeys-2}
 
-* **`tree`:** 要从中检索数据树密钥的对象。
-* **`parent`:** （可选）要检索子项密钥的数据树中项的密钥。
-* **`order`:** （可选）确定返回键的排序顺序的函数。（请参阅Mozilla Developer Network上的[`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)。）
+* **`tree`:** 要从中检索数据树键的对象。
+* **`parent`:** （可选）要检索子项键的数据树中项的键。
+* **`order`:** （可选）用于确定返回键的排序顺序的函数。（请参阅Mozilla开发人员网络上的[`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)。）
 
 ##### 返回{#returns-getkeys-2}
 
@@ -953,7 +952,7 @@ myObject {
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
 ```
 
-#### removeItem(){#removeitem}
+#### removeItem() {#removeitem}
 
 创建给定对象的副本，从数据树中删除指定的分支，并返回修改后的副本。
 
@@ -1004,25 +1003,25 @@ myObject {
 
 #### sanitizeKey(key){#sanitizekey-key}
 
-清理字符串值以使它们可用作键。 要清理字符串，此函数将执行以下操作：
+整理字符串值以使其可用作键。 要整理字符串，此函数将执行以下操作：
 
 * 将多个连续正斜杠减少为一个斜杠。
 * 从字符串的开头和结尾删除空格。
-* 将结果拆分为用斜杠划分的字符串数组。
+* 将结果拆分为用斜杠标定的字符串数组。
 
-使用生成的数组创建可用的键。
+使用生成的数组创建可用键。
 
 ##### 参数 {#parameters-sanitizekey}
 
-* **`key`:** 要 `string` 清理。
+* **`key`:** 要 `string` 整理。
 
 ##### 返回{#returns-sanitizekey}
 
-`string`值的数组，其中每个字符串是由斜杠划分的`key`部分。 表示已清理的密钥。 如果已清理的数组长度为零，则此函数返回`null`。
+`string`值的数组，其中每个字符串是`key`中用斜杠标定的部分。 表示已清理的键值。 如果清理后的数组的长度为零，则此函数返回`null`。
 
 ##### 示例 {#example-sanitizekey}
 
-以下代码清理字符串以生成数组`["this", "is", "a", "path"]`，然后从数组生成密钥`"/this/is/a/path"`:
+以下代码会清理字符串以生成数组`["this", "is", "a", "path"]`，然后从数组生成键`"/this/is/a/path"`:
 
 ```javascript
 var key = " / this////is/a/path ";
@@ -1030,19 +1029,19 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 "/" + ContextHub.Utils.JSON.tree.sanitizeKey(key).join("/");
 ```
 
-#### setItem(tree, key, value){#setitem-tree-key-value}
+#### setItem(tree， key， value){#setitem-tree-key-value}
 
-将键／值对添加到对象副本的数据树中。 有关数据树的信息，请参见[持久性。](contexthub.md#persistence)
+将键/值对添加到对象副本的数据树中。 有关数据树的信息，请参阅[持久性。](contexthub.md#persistence)
 
 ##### 参数 {#parameters-setitem-2}
 
 * **`tree`:** 数据对象。
-* **`key`:** 要与要添加的值关联的键。关键是数据树中项目的路径。 此函数调用`ContextHub.Utils.JSON.tree.sanitize`在添加密钥之前对其进行清理。
+* **`key`:** 要与您添加的值关联的键。键值是数据树中项目的路径。 此函数会调用`ContextHub.Utils.JSON.tree.sanitize`以在添加密钥之前对其进行整理。
 * **`value`:** 要添加到数据树的值。
 
 ##### 返回{#returns-setitem-2}
 
-包含`key`/ `value`对的`tree`对象的副本。
+`tree`对象的副本，其中包含`key`/ `value`对。
 
 ##### 示例 {#example-setitem-2}
 
@@ -1067,15 +1066,15 @@ var myValue = {
 myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 ```
 
-## ContextHub.Utils.storeCanapits {#contexthub-utils-storecandidates}
+## ContextHub.Utils.storeCapiates {#contexthub-utils-storecandidates}
 
-允许您注册商店候选者并获取注册的商店候选者。
+允许您注册存储候选项并获取注册的存储候选项。
 
-### 函数(ContextHub.Utils.storeConapits){#functions-contexthub-utils-storecandidates}
+### 函数(ContextHub.Utils.storeCapiates){#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCanapites(storeType){#getregisteredcandidates-storetype}
+#### getRegisteredCanapits(storeType){#getregisteredcandidates-storetype}
 
-返回已注册为存储候选项的存储类型。 检索特定存储类型或所有存储类型的已注册候选。
+返回注册为商店候选项的商店类型。 检索特定存储类型或所有存储类型的注册候选项。
 
 ##### 参数 {#parameters-getregisteredcandidates}
 
@@ -1083,11 +1082,11 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 返回{#returns-getregisteredcandidates}
 
-存储类型的对象。 对象属性是存储类型名称，属性值是已注册存储候选项的数组。
+存储类型的对象。 对象属性是存储类型名称，属性值是已注册的存储候选项数组。
 
-#### getStoreFromCanapites(storeType){#getstorefromcandidates-storetype}
+#### getStoreFromCapinates(storeType){#getstorefromcandidates-storetype}
 
-从注册的候选者返回存储类型。 如果注册了多个同名的存储类型，该函数将返回具有最高优先级的存储类型。
+从已注册的候选项返回存储类型。 如果注册了多个同名的存储类型，则函数将返回具有最高优先级的存储类型。
 
 ##### 参数 {#parameters-getstorefromcandidates}
 
@@ -1095,28 +1094,28 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 返回{#returns-getstorefromcandidates}
 
-表示已注册存储候选项的对象。 如果未注册请求的存储类型，则会引发错误。
+表示注册的存储候选项的对象。 如果未注册请求的存储类型，则会引发错误。
 
-#### getSupportedStoreTypes(){#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
-返回注册为应用商店的商店类型的名称。 此函数不需要任何参数。
+返回注册为存储候选项的存储类型的名称。 此函数不需要任何参数。
 
 ##### 返回{#returns-getsupportedstoretypes}
 
-字符串值的数组，其中每个字符串是注册存储候选的存储类型。 请参阅[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates)函数的`storeType`参数。
+字符串值的数组，其中每个字符串是在其中注册存储候选项的存储类型。 请参阅[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates)函数的`storeType`参数。
 
-#### registerStoreCandidate(store, storeType, priority, applies){#registerstorecandidate-store-storetype-priority-applies}
+#### registerStoreCandidate(store， storeType， priority， applies){#registerstorecandidate-store-storetype-priority-applies}
 
-使用名称和优先级将存储对象注册为存储候选对象。
+使用名称和优先级将存储对象注册为存储候选项。
 
-优先级是指示同名商店重要性的数字。 当使用与已注册的存储候选者相同的名称注册存储候选者时，使用具有较高优先级的候选者。 当注册存储候选时，仅当优先级高于同名注册存储候选时，才注册存储。
+优先级是指示同名商店重要性的数字。 当使用与已注册的存储候选者相同的名称注册存储候选者时，使用具有较高优先级的候选者。 当注册存储候选时，仅当优先级高于同一命名的注册存储候选时，才注册存储。
 
 ##### 参数 {#parameters-registerstorecandidate}
 
-* **`store`:** （对象）要注册为存储候选对象的存储对象。
+* **`store`:** （对象）要注册为存储候选项的存储对象。
 * **`storeType`:** （字符串）存储候选项的名称。创建存储候选项的实例时需要此值。
-* **`priority`:** (Number)存储候选项的优先级。
-* **`applies`:** （函数）用于评估存储在当前环境中的适用性的函数。如果存储适用，该函数必须返回`true`，否则返回`false`。 默认值为返回true的函数：`function() {return true;}`
+* **`priority`:** （数字）存储候选项的优先级。
+* **`applies`:** （函数）用于评估存储在当前环境中的适用性的函数。如果存储适用，则函数必须返回`true`，否则返回`false`。 默认值为返回true的函数：`function() {return true;}`
 
 ##### 示例 {#example-registerstorecandidate}
 
