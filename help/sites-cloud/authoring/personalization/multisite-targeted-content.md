@@ -1,14 +1,13 @@
 ---
 title: 在多个站点中使用目标内容
 description: 如果您需要在多个站点间管理目标内容（例如活动、体验和选件），则可以利用 AEM 中内置的目标内容多站点支持功能
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2900'
 ht-degree: 89%
 
 ---
-
 
 # 在多个站点中使用目标内容  {#working-with-targeted-content-in-multisites}
 
@@ -37,11 +36,11 @@ ht-degree: 89%
 
 目标内容的多站点支持功能是开箱即用式功能，利用此功能，您可以将目标内容从通过 MSM 管理的主页面推送到本地 Live Copy，还可以管理对此类内容的全局修改和本地修改。
 
-在&#x200B;**区域**&#x200B;中管理。 区域可将在不同站点中使用的目标内容（活动、体验和选件）分隔开来，并提供基于 MSM 的机制，以创建并管理目标内容的继承以及站点继承。如此一来，您就不必按照 6.2 之前的 AEM 版本中的要求，在继承的站点中重新创建目标内容。
+可以在&#x200B;**Area**&#x200B;中管理此内容。 区域可将在不同站点中使用的目标内容（活动、体验和选件）分隔开来，并提供基于 MSM 的机制，以创建并管理目标内容的继承以及站点继承。如此一来，您就不必按照 6.2 之前的 AEM 版本中的要求，在继承的站点中重新创建目标内容。
 
 在某个区域中，只有链接到该区域的活动才会被推送到 Live Copy。默认情况下，主区域将处于选定状态。创建其他区域后，您可以将这些区域链接到站点或页面，以指示要推送的目标内容。
 
-站点或 Live Copy 链接到的区域包含需要在该站点或 Live Copy 上提供的活动。默认情况下，站点或Live Copy链接指向主控区域，但您可以很好地链接除主控区域之外的其他区域。
+站点或 Live Copy 链接到的区域包含需要在该站点或 Live Copy 上提供的活动。默认情况下，站点或Live Copy会链接到主控区域，但您可以很好地链接除主控区域之外的其他区域。
 
 >[!NOTE]
 >
@@ -56,7 +55,7 @@ ht-degree: 89%
 
 ## 用例  {#use-cases}
 
-您可以使用多种方式设置目标内容的多站点支持功能，具体使用哪种方式取决于您的用例。此部分从理论上介绍了如何在一个品牌中使用多种方式设置此功能。此外，在[示例中：定位基于地理](#example-targeting-content-based-on-geography)的内容，您可以看到在多个站点中定位内容的真实应用程序。
+您可以使用多种方式设置目标内容的多站点支持功能，具体使用哪种方式取决于您的用例。此部分从理论上介绍了如何在一个品牌中使用多种方式设置此功能。此外，在[示例中：根据地理位置确定目标内容](#example-targeting-content-based-on-geography)，您可以在多个网站中看到目标内容的真实应用。
 
 目标内容打包在所谓的可定义站点或页面范围的区域中。这些区域在品牌级别进行定义。一个品牌可以包含多个区域。不同品牌的区域可以有所不同。一个品牌可能只包含主区域，从而在所有品牌之间共享；而另一个品牌可能包含多个品牌（例如，按地区划分的品牌）。因此，品牌之间不需要相互映射区域集。
 
@@ -68,7 +67,7 @@ ht-degree: 89%
 * “共享”**&#x200B;的目标内容集 - 在一个站点中编辑会直接影响两个站点；通过让两个站点引用同一区域，可以实现此设置。链接到同一区域的站点共享该区域内的目标内容。例如：
    * 站点 A 链接到区域 X
    * 站点 B 也链接到区域 X
-* 通过MSM从另一个站点继承的不同目标内容&#x200B;**&#x200B;集 — 内容可以从主控单向转出到Live Copy。 例如：
+* 通过MSM从其他站点继承的不同目标内容&#x200B;**&#x200B;集 — 内容可以从主控单向转出到Live Copy。 例如：
    * 站点 A 链接到区域 X
    * 站点 B 链接到区域 Y（该区域是区域 X 的 Live Copy）
 
@@ -78,7 +77,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->有关此功能的更多技术说明，请参阅[如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
+>有关此功能的技术性更详细的介绍，请参阅[如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
 
 ## 示例：根据地域定位内容 {#example-targeting-content-based-on-geography}
 
@@ -94,16 +93,16 @@ ht-degree: 89%
 每个站点均共享地理区域中的个性化内容：
 
 * 加拿大站点与美国站点共享主区域。
-* 大不列颠与欧洲地区相连，并从主控地区继承。
+* 英国与欧洲地区有联系，并从主控地区继承。
 * 澳大利亚站点由于位于南半球，季节性产品不适用，因此会有自己的个性化内容。
 
 ![多站点图](/help/sites-cloud/authoring/assets/multisite-diagram.png)
 
 对于北半球，我们创建了一个冬季活动，不过是针对男性受众创建的，北美的营销人员想要为冬季活动启用一幅新图像，因此他们在美国站点中更改了原有图像。
 
-![美国版](/help/sites-cloud/authoring/assets/multisite-us.png)
+![美国版本](/help/sites-cloud/authoring/assets/multisite-us.png)
 
-刷新选项卡后，我们无需执行任何操作，加拿大站点即会变更为新的图像。之所以会这样，是因为加拿大站点与美国站点共享主区域。在大不列颠和澳大利亚的网站中，形象不会改变。
+刷新选项卡后，我们无需执行任何操作，加拿大站点即会变更为新的图像。之所以会这样，是因为加拿大站点与美国站点共享主区域。在英国和澳大利亚的景点，形象不会改变。
 
 ![更改版本](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
@@ -119,7 +118,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->有关此功能的更多技术说明，请参阅[如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
+>有关此功能的技术性更详细的介绍，请参阅[如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
 
 ### 创建新区域与创建新区域作为 Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -129,7 +128,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->当页面是链接到某个区域的Live Copy，而该区域本身又是链接到页面Blueprint的区域的Live Copy时，默认转出会触发目标内容的后续转出。
+>当页面是链接到某个区域的Live Copy，而该区域本身是链接到页面Blueprint的区域的Live Copy时，默认转出会触发目标内容的后续转出。
 
 例如，下图中有四个站点，其中两个站点共享主区域（以及该区域中的所有活动）；还有一个站点的区域是其他区域的 Live Copy，因此会在转出后共享活动；最后一个站点完全独立（因此其活动需要一个单独的区域）。
 
@@ -174,7 +173,7 @@ ht-degree: 89%
 1. 导航到 **个性化** >活 **动** 或 **选件** ，然后导航到您的品牌。
 1. 点按或单击&#x200B;**创建区域作为 Live Copy**。
 
-   ![创建区域作为Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
+   ![将区域创建为Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
 1. 选择要为其创建 Live Copy 的区域，然后单击&#x200B;**下一步**。
 
@@ -202,13 +201,13 @@ ht-degree: 89%
 
 ## 将站点链接到区域 {#linking-sites-to-an-area}
 
-您可以将区域链接到页面或站点。所有子页面都会继承区域，除非这些页面被子页面上的映射覆盖。 不过，通常而言，您需要在站点级别建立链接。
+您可以将区域链接到页面或站点。区域会由所有子页面继承，除非这些页面在子页面上叠加有映射。 不过，通常而言，您需要在站点级别建立链接。
 
 建立链接后，只能使用选定区域中的活动、体验和选件。这样可以防止意外搞混单独管理的内容。如果没有配置任何其他区域，则会使用每个品牌的主区域。
 
 >[!NOTE]
 >
->引用相同区域的页面或站点使用&#x200B;*相同*&#x200B;的共享活动、体验和优惠集。 编辑由多个站点共享的活动、体验或选件会影响所有站点。
+>引用相同区域的页面或站点使用的是&#x200B;*same*&#x200B;一组共享的活动、体验和选件。 编辑由多个站点共享的活动、体验或选件会影响所有站点。
 
 要将站点链接到区域，请执行以下操作：
 
@@ -257,7 +256,7 @@ ht-degree: 89%
 
 1. 点按或单击&#x200B;**暂停**&#x200B;以暂停活动。 暂停继承的活动会标记为红色。
 
-   ![挂起的Live Copy](/help/sites-cloud/authoring/assets/multisite-suspended.png)
+   ![暂停的Live Copy](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
 ### 中断继承 {#breaking-inheritance}
 
@@ -280,16 +279,16 @@ ht-degree: 89%
 1. 点按或单击&#x200B;**开始定位**。
 1. 从工 **具栏的下拉菜单中选择** “恢复Live Copy”。
 
-   ![正在恢复Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
+   ![恢复Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
 1. 点按或单击&#x200B;**继续**，以确认您想要恢复 Live Copy 继承。如果恢复继承，对当前活动所做的任何修改都会丢失。
 
 ## 删除区域  {#deleting-areas}
 
-删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了网站所链接到的区域，则此品牌的映射将自动重新映射到主控区域。
+删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了网站所链接的区域，则此品牌的映射将自动重新映射到主控区域。
 
 要删除区域，请执行以下操作：
 
-1. 导航到&#x200B;**个性化** > **活动**&#x200B;或&#x200B;**优惠**，然后再导航到您的品牌。
+1. 导航至&#x200B;**Personalization** > **Activities**&#x200B;或&#x200B;**Offers**，然后导航至您的品牌。
 1. 点按或单击要删除的区域旁边的图标。
 1. 点按或单击&#x200B;**删除**，并确认要删除该区域。
