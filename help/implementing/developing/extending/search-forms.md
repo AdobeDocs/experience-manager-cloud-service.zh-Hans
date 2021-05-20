@@ -1,24 +1,23 @@
 ---
 title: 配置搜索表单
-description: 将搜索Forms作为Cloud Service。
-translation-type: tm+mt
-source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
+description: 配置将Forms作为Cloud Service搜索Adobe Experience Manager。
+exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 18%
 
 ---
 
-
 # 配置搜索表单 {#configuring-search-forms}
 
-Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/sites-cloud/authoring/getting-started/search.md)机制。
+Adobe Experience Manager as aCloud Service附带一个功能强大的[Search](/help/sites-cloud/authoring/getting-started/search.md)机制。
 
-此外，还有一组预定义选项可帮助您筛选内容。 这些方面包含预定义的方面，如&#x200B;**修改日期**、**发布状态**&#x200B;或&#x200B;**Live Copy状态**，以帮助您快速深入到所需的资源。
+与此同时，还有一组预定义选项可帮助您筛选内容。 这些页面可保存预定义的方面，例如&#x200B;**修改日期**、**发布状态**&#x200B;或&#x200B;**Live Copy状态**，以帮助您快速向下访问所需的资源。
 
-![搜索和筛选使用情况](assets/csf-usage.png)
+![搜索和过滤使用情况](assets/csf-usage.png)
 
-这些目标是帮助您快速轻松地从以下位置找到内容：
+这些功能旨在帮助您快速轻松地从以下位置找到内容：
 
 * [搜索和筛选](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
@@ -28,17 +27,17 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 >
 >您可以配置基础[内容搜索和索引](/help/operations/indexing.md)服务。
 
-使用&#x200B;**搜索Forms**，您可以根据您的特定需求自定义和扩展这些面板。
+使用&#x200B;**搜索Forms**，您可以根据自己的特定需求自定义和扩展这些面板。
 
-**搜索Forms**&#x200B;提供现成的[谓词选项](#predicates-and-their-settings)，您可以组合和定义这些谓词。 配置这些表单的[对话框可通过以下方式访问：](#configuring-your-search-forms)
+**搜索Forms**&#x200B;提供了一个现成的[谓词选项](#predicates-and-their-settings)，您可以合并和定义这些谓词。 可通过以下方式访问用于配置这些表单的[对话框：](#configuring-your-search-forms)
 
 * **工具**
    * **常规**
       * **搜索表单**
 
-## 默认Forms{#default-forms}
+## 默认Forms {#default-forms}
 
-首次访问&#x200B;**搜索Forms**&#x200B;控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置——无法删除。 在您自定义并保存后，锁定将消失。 当您[删除您的自定义配置](#deleting-a-configuration-to-reinstate-the-default)时，它将重新出现，在这种情况下，将恢复默认配置（和挂锁指示符）。
+首次访问&#x200B;**搜索Forms**&#x200B;控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置，无法删除。 自定义并保存后，锁定将消失。 当您[删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)时，它将重新显示，在这种情况下，将恢复默认配置（和挂锁指示器）。
 
 ![配置搜索表单概述](assets/csf-overview.png)
 
@@ -65,12 +64,12 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 
 >[!NOTE]
 >
->有关资产相关搜索表单的更多详细信息，请参阅[资产——搜索彩块化](/help/assets/search-facets.md)
+>有关与资产相关的搜索表单的更多详细信息，请参阅[资产 — 搜索彩块化](/help/assets/search-facets.md)
 
 
 ## 谓词及其设置{#predicates-and-their-settings}
 
-### 谓词{#predicates}
+### 谓语 {#predicates}
 
 以下谓词可用，具体取决于配置：
 
@@ -82,8 +81,8 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
    <th>设置</th>
   </tr>
   <tr>
-   <td>分析</td>
-   <td>显示以分析为后盾的数据时，站点浏览器中的搜索／过滤功能。 分析搜索过滤器加载以匹配映射的自定义分析列。</td>
+   <td>Analytics</td>
+   <td>显示分析支持的数据时，站点浏览器中的搜索/过滤功能。 加载Analytics搜索过滤器以匹配映射的自定义分析列。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -136,7 +135,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>组件</td>
-   <td>允许作者搜索／筛选具有特定组件的页面。 例如，图像库。<br /> </td>
+   <td>允许作者搜索/过滤页面上具有特定组件的页面。 例如，图像库。<br /> </td>
    <td>
     <ul>
      <li>占位符</li>
@@ -153,8 +152,8 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
      <li>字段标签</li>
      <li>占位符</li>
      <li>属性名称*</li>
-     <li>范围文本（自）*</li>
-     <li>范围文本（收件人）*</li>
+     <li>范围文本（从）*</li>
+     <li>范围文本（至）*</li>
      <li>描述</li>
     </ul> </td>
   </tr>
@@ -181,7 +180,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>文件类型</td>
-   <td>根据文件/MIME类型搜索资产。</td>
+   <td>根据文件/mime类型搜索资产。</td>
    <td>
     <ul>
      <li>字段标签</li> 
@@ -193,7 +192,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>全文</td>
-   <td>此搜索谓词用于进行全文搜索. 它映射为“jcr:contains´”运算符。</td>
+   <td>此搜索谓词用于进行全文搜索. 它将映射为“jcr:contains´”运算符。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -203,7 +202,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>组</td>
-   <td>组的搜索谓词（仅在“分析谓词”中使用）。</td>
+   <td>此搜索谓词用于群组（仅在“分析谓词”中使用）。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -222,7 +221,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>分析</td>
-   <td>根据一系列Insights参数进行搜索。</td>
+   <td>根据一系列分析参数进行搜索。</td>
    <td>这是一个由多个谓词组成的复杂谓词：
     <ul>
      <li>组</li>
@@ -257,7 +256,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>选项</td>
-   <td><p>这些选项是用户创建的内容节点。</p> <p>有关详细信息，请参阅<a href="#addinganoptionspredicate">添加选项谓词</a>。</p> </td>
+   <td><p>选项是用户创建的内容节点。</p> <p>有关更多信息，请参阅<a href="#addinganoptionspredicate">添加选项谓词</a>。</p> </td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -283,7 +282,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>页面 状态</td>
-   <td>根据页面状态筛选页面。</td>
+   <td>根据页面的状态过滤页面。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -294,7 +293,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>路径</td>
-   <td>根据特定路径进行筛选。 可以指定多个路径作为选项。</td>
+   <td>根据特定路径进行筛选。 您可以指定多个路径作为选项。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -304,7 +303,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>路径浏览器</td>
-   <td>提供一个路径浏览器以在预定义的根路径下进行搜索。</td>
+   <td>提供要在预定义根路径下进行搜索的路径浏览器。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -314,12 +313,12 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
    </td>
   </tr>
   <tr>
-   <td>隐藏路径</td>
+   <td>隐藏的路径</td>
    <td>路径上的过滤器，用户不可见。</td>
    <td>
     <ul>
-     <li>属性名称(`path`)</li>
-     <li>属性值(`/content/dam`)</li>
+     <li>属性名称('path')</li>
+     <li>属性值(“/content/dam”)</li>
     </ul> 
    </td>
   </tr>
@@ -359,7 +358,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>评级</td>
-   <td>根据资源的平均等级搜索资源。<br /> </td>
+   <td>根据资源的平均评分搜索资源。<br /> </td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -381,7 +380,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>滑块范围</td>
-   <td>使用滑块功能扩展范围谓词的通用搜索谓词。 搜索的属性的值必须介于滑块限制之间。</td>
+   <td>使用滑块功能扩展范围谓词的常用搜索谓词。 搜索的属性值必须介于滑块限制之间。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -405,7 +404,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
    <td>根据标记进行搜索。</td>
    <td>
     <ul>
-     <li>Field Lavel</li>
+     <li>字段级别</li>
      <li>占位符</li>
      <li>属性名称*</li>
      <li>显示匹配所有标记选项</li>
@@ -415,7 +414,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>模板</td>
-   <td>根据所选模板进行搜索。</td>
+   <td>根据选定的模板进行搜索。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -478,7 +477,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 
 >[!NOTE]
 >
->常用搜索谓词在以下位置进行定义：
+>常见的搜索谓词在中定义：
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >此信息仅供参考，您不得对`/libs`进行更改。
@@ -496,7 +495,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 
 * **字段标签**
 
-   将显示为可折叠标题或谓词字段标签的标签。
+   将显示为可折叠的标题或谓词的字段标签的标签。
 
 * **描述**
 
@@ -510,7 +509,7 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 
    要搜索的属性。 它使用相对路径，通配符`*/*/*`指定属性相对于`jcr:content`节点的深度（每个星号表示一个节点级别）。
 
-   如果只想在`jcr:content`节点上具有`x`属性的资源的一级子节点上搜索，请使用`*/jcr:content/x`
+   如果只想在`jcr:content`节点上具有`x`属性的资源的第一级子节点上搜索，请使用`*/jcr:content/x`
 
 * **属性深度**
 
@@ -528,34 +527,34 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 
 * **选项路径**
 
-   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择&#x200B;**+**&#x200B;图标后，将选择添加到有效选项列表（然后根据需要删除&#x200B;**-**&#x200B;图标）。
+   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择&#x200B;**+**&#x200B;图标后，会将所选内容添加到有效选项列表中（如果需要，可删除&#x200B;**-**&#x200B;图标）。
 
-   这些选项是用户创建的内容节点，其结构如下：
+   选项是用户创建的内容节点，具有以下结构：
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节**
 点路径与 
-**选项路径**，只有此路径位于通用谓词字段中，而另一个路径则特定于资产。
+**选项路径**，只有此路径位于常用谓词字段中，而其他路径则特定于资产。
 
 * **单选**
-项如果选中，则这些选项将呈现为复选框，仅允许单选。如果错误地选中了复选框，则可取消选中该复选框。
+如果选中，则选项将呈现为仅允许单选的复选框。如果错误地选中了复选框，则可以取消选中该复选框。
 
-* **发布和Live Copy属性名称特**
-定站点谓词的发布和Live Copy复选框的标签。
+* **发布和Live Copy属性名称**
+特定于站点的谓词的发布和Live Copy复选框的标签。
 
-* &amp;ast;在&#x200B;**设置**&#x200B;选项卡的字段标签上，表示字段是必填字段，如果留空，则将显示错误消息。
+* &amp;ast;在&#x200B;**设置**&#x200B;选项卡的字段标签上，表示字段是必填字段，如果留空，将显示错误消息。
 
-## 配置搜索Forms{#configuring-your-search-forms}
+## 配置搜索Forms {#configuring-your-search-forms}
 
-### 创建／打开自定义配置{#creating-opening-a-customized-configuration}
+### 创建/打开自定义配置{#creating-opening-a-customized-configuration}
 
-1. 导航到&#x200B;**工具**、**常规**、**搜索Forms**。
+1. 导航至&#x200B;**工具**、**常规**、**搜索Forms**。
 
 1. 选择要自定义的配置。
 1. 使用&#x200B;**编辑**&#x200B;图标打开要更新的配置。
-1. 如果是新的自定义，您可能希望[添加新的谓词字段并根据需要定义设置](#add-edit-a-predicate-field-and-define-field-settings)。 如果是现有自定义设置，则可以选择现有字段并[更新设置](#add-edit-a-predicate-field-and-define-field-settings)。
-1. 选择&#x200B;**完成**&#x200B;以保存配置。 您的更改可以在下次使用配置时看到。
+1. 如果是新的自定义设置，您可能希望[添加新谓词字段并根据需要定义设置](#add-edit-a-predicate-field-and-define-field-settings)。 如果是现有的自定义设置，则可以选择现有字段并[更新设置](#add-edit-a-predicate-field-and-define-field-settings)。
+1. 选择&#x200B;**完成**&#x200B;以保存配置。 下次使用配置时，您可以看到所做的更改。
 
    >[!NOTE]
    >
@@ -565,12 +564,12 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### 添加／编辑谓词字段和定义字段设置{#add-edit-a-predicate-field-and-define-field-settings}
+### 添加/编辑谓词字段并定义字段设置{#add-edit-a-predicate-field-and-define-field-settings}
 
-您可以添加或编辑字段，并定义／更新其设置：
+您可以添加或编辑字段，并定义/更新其设置：
 
-1. [打开要更](#creating-opening-a-customized-configuration) 新的自定义配置。
-1. 如果要添加新字段，请打开&#x200B;**选择谓词**&#x200B;选项卡，并将所需的谓词拖动到所需位置。 例如，**日期范围谓词**:
+1. [打开要更新的](#creating-opening-a-customized-configuration) 自定义配置。
+1. 如果要添加新字段，请打开&#x200B;**选择谓词**&#x200B;选项卡，然后将所需的谓词拖到所需位置。 例如，**日期范围谓词**:
 
    ![添加谓词](assets/csf-add-predicate.png)
 
@@ -578,16 +577,16 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 
    * 您正在添加新字段：
 
-      添加谓词后，将打开&#x200B;**设置**&#x200B;选项卡并显示可定义的属性。
+      添加谓词后，将打开&#x200B;**设置**&#x200B;选项卡，并显示可定义的属性。
 
-   * 您要更新现有谓词：
+   * 要更新现有谓词：
 
-      选择谓词字段（在右侧），然后打开&#x200B;**设置**&#x200B;选项卡。
+      选择谓词字段（位于右侧），然后打开&#x200B;**Settings**&#x200B;选项卡。
    例如，**日期范围谓词**&#x200B;的设置：
 
    ![修改谓词](assets/csf-modify-predicate.png)
 
-1. 根据需要进行更改，然后使用&#x200B;**完成**&#x200B;进行确认。 您的更改可以在下次使用配置时看到。
+1. 根据需要进行更改，然后使用&#x200B;**Done**&#x200B;进行确认。 下次使用配置时，您可以看到所做的更改。
 
 ### 预览搜索配置{#previewing-the-search-configuration}
 
@@ -595,72 +594,72 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
 
    ![预览图标](assets/csf-preview-icon.png)
 
-1. 这将显示搜索表单，就像在相应控制台的“搜索”列中显示（完全展开）这些表单一样。
+1. 这将显示搜索表单，因为它们将在相应控制台的“搜索”列中显示（完全展开）。
 
    ![预览表单](assets/csf-preview-form.png)
 
-1. **关** 闭预览以返回并完成配置。
+1. **** 关闭预览以返回并完成配置。
 
 ### 删除谓词字段{#deleting-a-predicate-field}
 
-1. [打开要更](#creating-opening-a-customized-configuration) 新的自定义配置。
+1. [打开要更新的](#creating-opening-a-customized-configuration) 自定义配置。
 1. 选择谓词字段（在右侧），打开&#x200B;**设置**&#x200B;选项卡，然后选择&#x200B;**删除**&#x200B;图标（左下方）。
 
    ![删除图标](assets/csf-delete-icon.png)
 
 1. 对话框将请求确认删除操作。
 
-1. 使用&#x200B;**完成**&#x200B;确认此更改和任何其他更改。
+1. 使用&#x200B;**Done**&#x200B;确认此更改和任何其他更改。
 
-### 删除配置（恢复默认配置）{#deleting-a-configuration-to-reinstate-the-default}
+### 删除配置（恢复默认值）{#deleting-a-configuration-to-reinstate-the-default}
 
 自定义配置后，这将覆盖默认值。 您可以通过删除自定义配置来重新声明默认配置。
 
 >[!NOTE]
 >
->无法删除默认配置。
+>您无法删除默认配置。
 
-从控制台中删除自定义配置：
+从控制台中删除自定义配置已完成：
 
-1. 选择所需的配置(例如，**页面编辑器（段落搜索）**)，然后在工具栏中选择&#x200B;**删除**&#x200B;图标：
+1. 选择所需的配置(例如，**页面编辑器（段落搜索）**)，然后选择工具栏中的&#x200B;**删除**&#x200B;图标：
 
-   ![恢复默认](assets/csf-restore-default.png)
+   ![恢复默认值](assets/csf-restore-default.png)
 
-1. 将删除自定义配置并恢复默认配置（在控制台中重新显示挂锁符号表示）。
+1. 将删除自定义配置并恢复默认配置（这由控制台中重新出现挂锁符号来指示）。
 
 ### 添加选项谓词{#adding-options-predicates}
 
-选项谓词（选项、选项属性）允许您配置要搜索的项目。 它们通常用于直接搜索页面下的内容；例如，页面节点上的属性。
+选项谓词（选项、选项属性）允许您配置要搜索的项目。 通常用于直接在页面下搜索内容；例如，page节点上的属性。
 
-以下示例（根据用于创建页面的模板进行搜索）说明了所涉及的步骤：
+以下示例（根据用于创建页面的模板进行搜索）说明了涉及的步骤：
 
 1. 创建定义要搜索的属性的节点。
 
-   您需要一个根节点，其中包含单个选项的定义才能提供给用户。
+   您需要一个根节点，其中包含各个选项的定义，才可供用户使用。
 
    单个选项的节点需要属性：
 
-   * `jcr:title` -要在搜索边栏中显示的字段标签
-   * `value` -要搜索的属性值
+   * `jcr:title`  — 要在搜索边栏中显示的字段标签
+   * `value`  — 要搜索的属性值
 
    ![谓词定义](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
    >
-   >您&#x200B;***必须***&#x200B;不要更改`/libs`路径中的任何内容。
+   >***必须***&#x200B;不更改`/libs`路径中的任何内容。
    >
    >这是因为下次升级实例时，`/libs`的内容会被覆盖（当您应用修补程序或功能包时，很可能会被覆盖）。
    >
-   >建议的配置和其他更改方法是：
+   >配置和其他更改的推荐方法是：
    >
-   >1. 在`/apps`下重新创建所需项，因为它存在于`/libs`中。 在本例中，来源：
+   >1. 在`/apps`下重新创建所需项目，因为它存在于`/libs`中。 在本例中，来源为：
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. 在`/apps.`中进行任何更改
 
 
-1. 打开&#x200B;**搜索Forms**&#x200B;控制台并选择要更新的配置。 例如，**站点管理员搜索边栏**。 然后选择&#x200B;**编辑**。
+1. 打开&#x200B;**搜索Forms**&#x200B;控制台，然后选择要更新的配置。 例如，**站点管理员搜索边栏**。 然后选择&#x200B;**编辑**。
 
-1. 根据配置，向配置中添加&#x200B;**选项**&#x200B;或&#x200B;**选项属性**。
+1. 根据配置，向配置中添加&#x200B;**Options**&#x200B;或&#x200B;**Options属性**。
 1. 更新字段，特别是：
 
    * **属性名称**
@@ -677,14 +676,14 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
    ![选项谓词](assets/csf-options-predicate-02.png)
 
 1. 选择&#x200B;**完成**&#x200B;以保存配置。
-1. 导航到相应的控制台（在此示例中为&#x200B;**站点**）并打开&#x200B;**搜索-过滤器**&#x200B;边栏。 新定义的搜索表单以及各种选项将可见。 选择所需的选项可查看搜索结果。
+1. 导航到相应的控制台（在此示例中为&#x200B;**Sites**），然后打开&#x200B;**Search - Filters**&#x200B;边栏。 新定义的搜索表单以及各种选项将可见。 选择所需选项可查看搜索结果。
 
    ![使用的选项](assets/csf-options-usage.png)
 
 
 ## 用户权限 {#user-permissions}
 
-下表列表了对搜索表单执行编辑、删除和预览操作所需的权限。
+下表列出了对搜索表单执行编辑、删除和预览操作所需的权限。
 
 <table>
  <thead>
@@ -700,11 +699,11 @@ Adobe Experience Manager作为Cloud Service，有一个强大的[搜索](/help/s
   </tr>
   <tr>
    <td>删除</td>
-   <td><code>/apps</code>节点上的读取、写入和删除权限</td>
+   <td>对<code>/apps</code>节点的读取、写入和删除权限</td>
   </tr>
   <tr>
    <td>预览</td>
-   <td>对<code>/var/dam/content</code>节点的读取、写入和删除权限。<br /> 节点的读取、写入 <code>/apps</code> 权限。</td>
+   <td>对<code>/var/dam/content</code>节点的读取、写入和删除权限。<br /> 对节点的读取、写入权 <code>/apps</code> 限。</td>
   </tr>
  </tbody>
 </table>
