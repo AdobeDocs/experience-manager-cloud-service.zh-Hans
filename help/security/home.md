@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 安全性
 description: Adobe Experience Manager as a Cloud Service 安全性自助资源和文档链接
-translation-type: tm+mt
-source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
+exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 89%
+source-wordcount: '430'
+ht-degree: 80%
 
 ---
-
 
 # Experience Manager as a Cloud Service 的安全性 {#aem-security-guide}
 
@@ -16,9 +15,9 @@ ht-degree: 89%
 
 ## 关键安全性文章 {#key-articles}
 
-* [AEM作为Cloud Service的安全概述](/help/security/cloud-service-security-overview.md)
+* [AEM as aCloud Service的安全概述](/help/security/cloud-service-security-overview.md)
 * [AEM as a Cloud Service 的 IMS 支持](ims-support.md)
-* [AEM的站点Cookie支持与Cloud Service相同](same-site-cookie-support.md)
+* [AEM与Cloud Service支持相同的网站Cookie](same-site-cookie-support.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
@@ -32,10 +31,11 @@ ht-degree: 89%
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
-| [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。 |
+| [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
+| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [商务用户指南](/help/commerce-cloud/home.md) | 了解将AEM作为Cloud Service的Commerce Integration Framework。 |
+| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Commerce Integration FrameworkCloud Service。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
