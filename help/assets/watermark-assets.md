@@ -1,27 +1,26 @@
 ---
-title: 设置资产水印
-description: 将水印添加到您的数字资产。
+title: 对资产添加水印
+description: 向数字资产添加水印。
 contentOwner: AG
-feature: Asset Management,Publishing
+feature: 资产管理，发布
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
+# 对资产添加水印{#watermark-assets}
 
-# 为您的资产设置水印{#watermark-assets}
+[!DNL Adobe Experience Manager Assets] 用于向图像添加数字水印。[!DNL Assets] 支持将图像作为水印应用到其他图像文件。水印可帮助用户验证资产的真实性和版权所有权。 此外，水印可用于表示文档的状态，如机密、草稿、有效性等。
 
-[!DNL Adobe Experience Manager Assets] 允许您向图像添加数字水印。[!DNL Assets] 支持将图像作为水印应用于其他图像文件。水印可以帮助用户验证资源的真实性和版权所有权。 此外，水印可用于指示文档的状态，如机密、草稿、有效性等。
+要配置[!DNL Experience Manager]以对资产添加水印，请执行以下步骤：
 
-要将[!DNL Experience Manager]配置为水印资产，请执行以下步骤：
+1. PNG文件将作为水印应用。 在DAM存储库中上传此文件。
 
-1. PNG文件将作为水印应用。 将此文件上载到DAM存储库。
-
-1. 访问与您的环境关联的[!DNL Cloud Manager] Git存储库。 提交存储库中名为`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`的文件，其中包含以下内容。 有关说明，请参阅 [!DNL Experience Manager] 中的[如何将OSGi配置作为 [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md)。
+1. 访问与您的环境关联的[!DNL Cloud Manager] Git存储库。 在存储库中提交名为`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`的文件，其中包含以下内容。 有关说明，请参阅 [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md)中的[如何进行OSGi配置。
 
    ```json
    {
@@ -30,20 +29,20 @@ ht-degree: 0%
    }
    ```
 
-1. [创建处理配](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 置文件，以利用资产微服务应用水印。
+1. [创建处理配](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 置文件以利用资产微服务来应用水印。
 
-   ![用于创建水印的资产处理用户档案](assets/watermark-processing-profile.png)
+   ![用于创建水印的资产处理配置文件](assets/watermark-processing-profile.png)
 
-1. [将处理用户档案应用于文件夹](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以创建带水印的资产。
+1. [将处理配置文件应用到文件夹](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以创建带水印的资产。
 
 ## 提示和限制{#tips-limitations-bestpractices}
 
-* 您可以使用单个配置来对您的所有资产设置水印。 只有一幅图像用于水印，其宽度固定。
-* 您可以将水印放置在中心，无需拼贴。
+* 您可以使用单个配置对所有资产添加水印。 只有一幅图像用于水印，其宽度是固定的。
+* 您可以将水印放置在中心，而不进行拼贴。
 * 不支持基于文本的水印。
 
 >[!MORELIKETHIS]
 >
 >* [资产微服务概述](/help/assets/asset-microservices-overview.md)。
->* [将资产微服务与处理用户档案结合使用](/help/assets/asset-microservices-configure-and-use.md)。
+>* [将资产微服务与处理配置文件结合使用](/help/assets/asset-microservices-configure-and-use.md)。
 
