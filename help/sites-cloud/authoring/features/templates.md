@@ -1,14 +1,13 @@
 ---
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4600'
 ht-degree: 97%
 
 ---
-
 
 # 创建页面模板  {#creating-page-templates}
 
@@ -29,7 +28,7 @@ ht-degree: 97%
 
 本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
 
-有关可编辑模板在技术层面的工作方式的详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md)以了解更多信息。
+有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md)以获取更多信息。
 
 >[!NOTE]
 >
@@ -96,7 +95,7 @@ ht-degree: 97%
 
 ### 创建模板文件夹 - 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。这是管理员任务，在文档[页面模板](/help/implementing/developing/components/templates.md#template-folders)中有说明。—>
+您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在文档[页面模板](/help/implementing/developing/components/templates.md#template-folders)中有相关说明。—>
 
 ### 创建新模板 - 模板作者 {#creating-a-new-template-template-author}
 
@@ -114,7 +113,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md#template-type)。—>
+   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. 填写&#x200B;**模板详细信息**：
 
@@ -129,9 +128,9 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->模板是简化页面创建工作流程的强大工具。 但是，过多的模板可能会使作者不堪重负，并使页面创建变得混乱。 一个不错的经验法则是将模板数量保持在100以下。
+>模板是简化页面创建工作流程的强大工具。 但是，太多的模板可能会使作者不堪重负，并使页面创建令人困惑。 经验法则是将模板数量保持在100以下。
 >
->Adobe不建议具有1000个以上的模板，因为这可能会影响性能。
+>Adobe不建议拥有1000个以上的模板，因为这可能会影响性能。
 
 ### 定义模板属性 - 模板作者 {#defining-template-properties-template-author}
 
@@ -210,7 +209,7 @@ ht-degree: 97%
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
    >
-   >请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability) —— 允许的模板原则保持不变。
+   >请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability) — 对允许的模板适用的原则与此相同。
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
