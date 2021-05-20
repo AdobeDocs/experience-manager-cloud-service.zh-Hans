@@ -1,14 +1,13 @@
 ---
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
 
 ---
-
 
 # 创建和组织页面 {#creating-and-organizing-pages}
 
@@ -93,7 +92,7 @@ ht-degree: 98%
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-创建新页面时，AEM将[根据AEM和JCR实行的惯例](/help/implementing/developing/introduction/naming-conventions.md)验证页面名称。
+创建新页面时，AEM将根据AEM和JCR实行的惯例](/help/implementing/developing/introduction/naming-conventions.md)验证页面名称。[
 
 允许使用的字符最少包括：
 
@@ -362,7 +361,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 >[!NOTE]
 >
->页面只能移动到允许使用该页面所基于的模板的位置。有关详细信息，请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability)。
+>页面只能移动到允许使用该页面所基于的模板的位置。有关更多信息，请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability)。
 
 #### 异步操作 {#asynchronous-actions}
 
