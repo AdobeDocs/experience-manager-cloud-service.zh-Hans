@@ -1,14 +1,13 @@
 ---
 title: 搜索
 description: 使用完备的搜索功能更快速地查找您的内容
-translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 99%
 
 ---
-
 
 # 搜索 {#search-feature}
 
@@ -18,7 +17,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 搜索在顶部工具栏中可用：
 
-![搜索图标](/help/sites-cloud/authoring/assets/search-icon.png)
+![“搜索”图标](/help/sites-cloud/authoring/assets/search-icon.png)
 
 使用搜索边栏可以：
 
