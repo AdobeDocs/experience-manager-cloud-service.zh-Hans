@@ -6,7 +6,6 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
 feature: 创作
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '308'
@@ -61,7 +60,7 @@ ht-degree: 74%
    + 启动项 {#launches}
       + [使用启动项](authoring/launches/overview.md)
       + [创建启动项](authoring/launches/creating.md)
-      + [管理启动项中的页面](authoring/launches/managing-pages.md)
+      + [在启动项中管理页面](authoring/launches/managing-pages.md)
       + [编辑启动项](authoring/launches/editing.md)
       + [使用时间扭曲预览启动项](authoring/launches/preview.md)
       + [提升启动项](authoring/launches/promoting.md)
@@ -80,11 +79,11 @@ ht-degree: 74%
       + [创建和管理选件](authoring/personalization/offers.md)
       + [了解分段](authoring/personalization/segmentation.md)
       + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-      + [注册、登录和用户用户档案](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + [注册、登录和用户配置文件](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [管理工作流](administering/workflows-administering.md)
    + 重用内容{#reusing-content}
-      + [MSM与翻译](administering/msm-and-translation.md)
+      + [MSM和翻译](administering/msm-and-translation.md)
       + 多站点管理器 {#msm}
          + [MSM和Live Copy概述](administering/msm/overview.md)
          + [配置 Live Copy 同步](administering/msm/live-copy-sync-config.md)
@@ -97,8 +96,8 @@ ht-degree: 74%
          + [翻译多语言站点的内容](administering/translation/overview.md)
          + [准备翻译内容](administering/translation/preparation.md)
          + [管理翻译项目](administering/translation/managing-projects.md)
-         + [语言复制向导](administering/translation/wizard.md)
-         + [确定要翻译的内容](administering/translation/rules.md)
+         + [语言副本向导](administering/translation/wizard.md)
+         + [识别要翻译的内容](administering/translation/rules.md)
          + [配置翻译集成框架](administering/translation/integration-framework.md)
          + [连接到Microsoft Translator](administering/translation/connect-ms-translator.md)
          + [翻译最佳实践](administering/translation/best-practices.md)
