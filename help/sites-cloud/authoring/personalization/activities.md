@@ -1,14 +1,13 @@
 ---
 title: 管理活动
 description: 通过“活动”控制台，您可以创建、组织和管理品牌的营销活动
-translation-type: tm+mt
-source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
+exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 85%
 
 ---
-
 
 # 管理活动 {#managing-activities}
 
@@ -24,13 +23,13 @@ ht-degree: 85%
 
 在“活动”控制台中，各活动按品牌进行组织。您可以使用品牌和文件夹构建活动的组织结构。通过点按/单击&#x200B;**个性化**，然后再点按/单击&#x200B;**活动**，可以导航到“活动”控制台。
 
-活动在“定位”模式下可用于[创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)，在该模式下，您还可以创建活动。 在“定位”模式下创建的活动会显示在“活动”控制台中。
+在“定位”模式下，可以使用活动来创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)，您也可以在该模式下创建活动。 [在“定位”模式下创建的活动会显示在“活动”控制台中。
 
 活动显示有相应的标签，用于说明定义的活动类型：
 
 * XT - Adobe Target 体验定位
 * A/B - Adobe Target A/B 测试
-* AEM -Adobe Experience Manager定位（即ContextHub驱动型）
+* AEM - Adobe Experience Manager定位（即，由ContextHub驱动）
 
 ![活动类型](/help/sites-cloud/authoring/assets/activities-types.png)
 
@@ -39,14 +38,16 @@ ht-degree: 85%
 >可用的活动类型由以下因素决定：
 >
 >* 如果 `xt_only` 在AEM端用于连接到Adobe Target的Adobe Target租户(clientcode)上启用了此选项，则您只能在AEM中创 **建** XT活动。
+   >
+   >
+* 如果Adobe `xt_only` Target租户 **(clientcode)上未启用这些选项，则您可以在** AEM中创建 **** XT和A/B活动。
 >
->* 如果Adobe `xt_only` Target租户 **(clientcode)上未启用这些选项，则您可以在** AEM中创建 **** XT和A/B活动。
 >
->**其他注意事项：**`xt_only` 选项是对特定 Target 租户 (clientcode) 应用的设置，只能在 Adobe Target 中直接进行修改。您无法在 AEM 中启用或禁用此选项。
+**其他注意事项：**`xt_only` 选项是对特定 Target 租户 (clientcode) 应用的设置，只能在 Adobe Target 中直接进行修改。您无法在 AEM 中启用或禁用此选项。
 
 >[!CAUTION]
 >
->必须保护发布实例上的活动设置节点`cq:ActivitySettings`，以使普通用户无法访问它。 该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
+>您必须保护发布实例上的活动设置节点`cq:ActivitySettings`的安全，以便普通用户无法访问该节点。 该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
 >
 >有关详细信息，请参阅与Adobe Target集成的先决条件。
 <!--
@@ -57,7 +58,7 @@ ht-degree: 85%
 
 创建要管理其营销活动的品牌。
 
-当您使用活动控制台创建品牌时，该品牌也会显示在[优惠控制台](/help/sites-cloud/authoring/personalization/offers.md)中，您可以在此创建活动体验的优惠。
+使用“活动”控制台创建品牌时，该品牌也会显示在[“选件”控制台](/help/sites-cloud/authoring/personalization/offers.md)中，您可以在该控制台中为活动体验创建选件。
 
 1. 在“导航”控制台中，单击或点按&#x200B;**个性化**。单击或点按&#x200B;**活动**。
 
@@ -75,7 +76,7 @@ ht-degree: 85%
 * **名称：**&#x200B;活动的名称。
 * **定位引擎：**&#x200B;将 [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) 或 [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) 作为目标内容的引擎。
 * **选择 Target 配置：**（仅限 Adobe Target）此活动连接到 Adobe Target 的云配置。只有为定位引擎选择了 Adobe Target 时，才会显示此选项。
-* **活动类型**:活动类型- A/B测试或体验定位
+* **活动类型**:活动类型 — A/B测试或体验定位
 * **目标：**（可选）活动描述。
 * **体验：**&#x200B;受众名称和您定位的营销区段之间的映射。
 * **流量百分比：**&#x200B;如果选择 A/B 测试，则可以更改每个体验的流量（百分比）。
@@ -100,7 +101,7 @@ ht-degree: 85%
    * 选择活动类型。
 1. 向活动添加一个或多个体验。 单击或点按 **添加体验**。
 1. 如果您使用的是 AEM 定位或 Adobe Target 体验定位，请执行以下操作：
-   1. 单击或点按&#x200B;**选择受众**，然后选择体验目标的区段。
+   1. 单击或点按&#x200B;**选择受众**，然后选择您的体验所定位的区段。
    1. 单击或点按&#x200B;**添加体验**，键入名称，然后单击或点按&#x200B;**确定**。
    1. 单击或点按&#x200B;**下一步**。如果您使用的是 Adobe Target A/B 测试，请执行以下操作：
    1. 单击或点按受众对话框中的铅笔图标，以选择受众。
@@ -114,7 +115,7 @@ ht-degree: 85%
    * **停用时：**&#x200B;活动在包含目标内容的页面被停用时结束。
    * **指定的日期和时间**：特定的时间。选择此选项时，请单击或点按日历图标，选择一个日期，然后指定结束活动的时间。
 1. 要指定活动的优先级，请使用滑块选择&#x200B;**低**、**标准**&#x200B;或&#x200B;**高**。
-1. 如果您使用 Adobe Target 作为定位引擎，请选择您希望使用此活动测量什么内容。有关可用成功量度的详细信息，请参阅[配置活动和设置目标](/help/sites-cloud/authoring/personalization/targeted-content.md)。 您必须至少选择一个目标。
+1. 如果您使用 Adobe Target 作为定位引擎，请选择您希望使用此活动测量什么内容。有关可用成功量度的更多信息，请参阅[配置活动和设置目标](/help/sites-cloud/authoring/personalization/targeted-content.md)。 您必须至少选择一个目标。
 1. 单击或点按&#x200B;**保存**。
 
    >[!NOTE]
@@ -151,20 +152,20 @@ ht-degree: 85%
 
 要查看活动业绩并转换入选体验，请执行以下操作：
 
-1. 在&#x200B;**个性化**&#x200B;中，单击或点按&#x200B;**活动**&#x200B;以导航到&#x200B;**活动**&#x200B;控制台。
+1. 在&#x200B;**Personalization**&#x200B;中，单击或点按&#x200B;**活动** ，以导航到&#x200B;**活动**&#x200B;控制台。
 1. 单击或点按要查看其活动的品牌。
 1. ********&#x200B;显示性能数据。
 
    ![检查活动性能](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. 单击或点按&#x200B;**推送入选方**&#x200B;链接，将该体验作为默认体验推送。
+1. 单击或点按&#x200B;**推送入选者**&#x200B;链接，以将该体验作为默认体验进行推送。
 
    如果转换入选方，则会：
 
    * 禁用当前活动
    * 修改所有页面，并将目标内容替换为入选体验的实际内容。入选体验的内容将成为普通页面&#x200B;**的一部分，而不是**&#x200B;定位。
 
-   ![转换入选方](/help/sites-cloud/authoring/assets/activities-reports.png)
+   ![转化入选者](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    入选体验是在报表中生成较高提升度（基于转化率）的体验。
 
@@ -183,17 +184,17 @@ ht-degree: 85%
 同步某个活动后，Adobe Target 中会创建一个与其对应的营销活动：
 
 * 发布实例中的活动与其对应的 Adobe Target 营销活动具有相同的名称。
-* 创作实例上的活动与同名的目标活动和`_author`后缀对应。
+* 创作实例上的活动与具有`_author`后缀且名称相同的Target营销活动相对应。
 
 ![与Adobe Target同步](/help/sites-cloud/authoring/assets/activities-synch.png)
 
-创作活动在修改活动时立即同步。 立即同步允许活动与ContextHub模拟。
+修改活动后，会立即同步创作活动。 立即同步允许使用ContextHub模拟活动。
 
 将活动发布到 AEM 发布实例后，会同步发布活动。
 
 ## 活动同步故障排除  {#troubleshooting-activity-synchronization}
 
-当AEM将活动与Adobe Target同步时，AEM包含名为`thirdPartyId`的活动的属性。 此属性的值基于活动在 AEM 存储库中的路径。Adobe Target 中的任意两个营销活动不能具有相同的 `thirdPartyId` 属性值。因此，如果 Adobe Target 中的某个现有营销活动（具有不同的类型：AB、XT）使用的 `thirdPartyId` 值与某个活动相同，则该活动的同步操作会失败。
+当AEM与Adobe Target同步活动时，AEM将包含名为`thirdPartyId`的活动属性。 此属性的值基于活动在 AEM 存储库中的路径。Adobe Target 中的任意两个营销活动不能具有相同的 `thirdPartyId` 属性值。因此，如果 Adobe Target 中的某个现有营销活动（具有不同的类型：AB、XT）使用的 `thirdPartyId` 值与某个活动相同，则该活动的同步操作会失败。
 
 这种情况可能会出现在以下情形中：
 
@@ -205,11 +206,11 @@ ht-degree: 85%
 1. 已创建活动，并已将其与 Adobe Target 同步。之后，在 AEM 上删除了该活动。
 1. 在同一品牌下使用与已删除活动相同的名称创建了活动。在这种情形下，尝试同步该活动时会失败。
 
-要避免同步问题，请始终对活动使用唯一名称。 如果活动同步失败，您可以删除 Adobe Target 中具有相同名称的营销活动，但前提是该营销活动未在使用中。
+要避免出现同步问题，请始终为活动使用唯一的名称。 如果活动同步失败，您可以删除 Adobe Target 中具有相同名称的营销活动，但前提是该营销活动未在使用中。
 
 >[!NOTE]
 >
->在 Adobe Target 中创建营销活动时，会为每个营销活动分配名为 `thirdPartyId` 的属性。在 Adobe Target 中删除营销活动时，不会删除 `thirdPartyId`。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。要避免此问题，请为每个活动命名一个唯一的名称；因此，活动名称不能在不同的活动类型中重新使用。
+>在 Adobe Target 中创建营销活动时，会为每个营销活动分配名为 `thirdPartyId` 的属性。在 Adobe Target 中删除营销活动时，不会删除 `thirdPartyId`。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。要避免出现此问题，请为每个营销活动命名一个唯一的名称；因此，不能在不同的营销活动类型中重复使用营销活动名称。
 >
 >如果在同一种营销活动类型中使用相同的名称，则会覆盖现有的营销活动。
 >
