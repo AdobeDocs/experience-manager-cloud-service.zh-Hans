@@ -1,14 +1,13 @@
 ---
 title: 异步作业
 description: Adobe Experience Manager 通过异步完成某些资源密集型任务来优化性能。
-translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
 ---
-
 
 # 异步操作 {#asynchronous-operations}
 
@@ -144,6 +143,6 @@ AEM 每天 01:00 运行清除作业，以删除已完成的已超过一天的异
 >[!MORELIKETHIS]
 >
 >* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
->* [批量导入和导出资产元数据](/help/assets/metadata-import-export.md)。
->* [使用“连接的资产”从远程部署中共享 DAM 资产](/help/assets/use-assets-across-connected-assets-instances.md)。
+* [批量导入和导出资产元数据](/help/assets/metadata-import-export.md)。
+* [使用“连接的资产”从远程部署中共享 DAM 资产](/help/assets/use-assets-across-connected-assets-instances.md)。
 
