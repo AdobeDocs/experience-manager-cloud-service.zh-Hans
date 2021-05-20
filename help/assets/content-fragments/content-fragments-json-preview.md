@@ -1,25 +1,24 @@
 ---
-title: 预览- JSON表示
+title: 预览 — JSON表示法
 description: 了解如何在实施AEM无头解决方案时轻松预览内容片段的JSON表示形式。
-feature: Content Fragments
+feature: 内容片段
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 5%
+source-wordcount: '115'
+ht-degree: 3%
 
 ---
 
+# 预览 — JSON表示法{#preview-json-representation}
 
-# 预览- JSON表示{#preview-json-representation}
-
-在开发作为AEM无头实施的一部分的内容片段模型时，您可能希望视图内容片段的示例JSON输出，如基于模型。 例如，了解最终输出的外观。 在验证模型JSON结构时，这可能很有帮助，可能每个数据类型都包含默认的示例内容。
+在将内容片段的模型作为AEM无头实施的一部分进行开发时，您可能希望查看内容片段的JSON示例输出（基于模型）。 例如，了解最终输出的外观。 验证模型JSON结构时，这可能会很有帮助，每种数据类型可能包含默认示例内容。
 
 使用&#x200B;**预览**&#x200B;图标：
 
-![内容片段编辑器 — 预览选项卡](assets/cfm-preview-01.png)
+![内容片段编辑器 — “预览”选项卡](assets/cfm-preview-01.png)
 
-您可以视图当前片段的JSON表示形式。 例如：
+您可以查看当前片段的JSON表示形式。 例如：
 
 ![内容片段编辑器 — 片段的预览](assets/cfm-preview-02.png)
