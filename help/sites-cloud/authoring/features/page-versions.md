@@ -1,27 +1,26 @@
 ---
 title: 处理页面版本
 description: 创建、比较和恢复页面版本
-translation-type: tm+mt
-source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
+exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 66%
 
 ---
 
-
 # 处理页面版本 {#working-with-page-versions}
 
 版本控制可创建页面在特定时间点的“快照”。使用版本控制，您可以执行下列操作：
 
 * 创建页面的版本。
-* 将一个或多个页面的先前版本恢复为：
+* 恢复一个或多个页面的先前版本，以：
    * 撤消对页面所做的更改。
    * 恢复已删除的页面。
    * 恢复树（在指定的日期和时间）。
 * 预览版本。
-* 将页面的当前版本与先前版本进行比较。
-   * 突出显示文本和图像中的差异。
+* 比较页面的当前版本与先前版本。
+   * 文本和图像中的差异会突出显示。
 * 时间扭曲使用页面版本来确定发布环境的状态。
 
 ## 创建新版本 {#creating-a-new-version}
@@ -61,13 +60,13 @@ ht-degree: 66%
 
 ## 恢复版本{#reinstating-versions}
 
-创建页面版本后，可通过各种方法恢复上一版本：
+创建页面版本后，可使用多种方法恢复以前的版本：
 
 * **从[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)边栏还原到此版本**&#x200B;选项
 
-   恢复所选页面的先前版本。
+   恢复选定页面的先前版本。
 
-* 顶部[操作工具栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)的&#x200B;**恢复**&#x200B;选项
+* **操作工具栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)顶部[操作工具栏**&#x200B;中的“恢复”选项
 
    * **恢复版本**
 
@@ -79,20 +78,20 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->重新安装页面时，创建的版本将作为新分支的一部分。
+>恢复页面时，创建的版本将包含在新分支中。
 >
 >举例说明：
 >
 >1. 为任意页面创建版本。
 >1. 初始的标签和版本节点名称将表示为 1.0、1.1、1.2，以此类推。
->1. 恢复第一个版本；即1.0。
+>1. 恢复第一版；即1.0。
 >1. 再次创建新版本。
 >1. 此时生成的标签和节点名称将表示为 1.0.0、1.0.1、1.0.2，以此类推。
 
 
 ### 还原到版本{#revert-to-a-version}
 
-要&#x200B;**还原**&#x200B;所选页面至先前版本：
+要&#x200B;**还原**&#x200B;选定页面到之前的版本：
 
 1. 导航以显示要还原到之前版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
@@ -105,58 +104,58 @@ ht-degree: 66%
 
 ### 恢复版本 {#restore-version}
 
-此方法可用于恢复当前文件夹中指定页面的版本；这还可以包括恢复之前已删除的页面：
+此方法可用于还原当前文件夹中指定页面的版本；这还可能包括恢复之前已删除的页面：
 
-1. 导览至所需文件夹，然后[选择](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
+1. 导航到所需的文件夹，然后选择](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。[
 
 1. 从顶部的[操作工具栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)中选择&#x200B;**恢复**，然后选择&#x200B;**恢复版本**。
 
    >[!NOTE]
    >
    >如果，则：
-   >* 您选择了单个页面，该页面从未包含任何子页面，
+   >* 您选择了单个页面，且该页面从未包含任何子页面，
    >* 或者文件夹中的任何页面都没有版本，
 
    >
-   >然后，显示屏将为空，因为没有适用的版本。
+   >然后，显示内容将为空，因为没有适用的版本。
 
 1. 将列出可用版本：
 
-   ![恢复版本-列表文件夹中所有页面](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+   ![恢复版本 — 文件夹中所有页面的列表](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
-1. 对于特定页面，请使用&#x200B;**RESTORE TO VERSION**&#x200B;下的下拉选择器为该页面选择所需的版本。
+1. 对于特定页面，使用&#x200B;**RESTORE TO VERSION**&#x200B;下的下拉选择器为该页面选择所需的版本。
 
-   ![恢复版本——选择版本](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+   ![还原版本 — 选择版本](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
-1. 在主显示屏中，选择要恢复的所需页面：
+1. 在主显示屏中，选择要还原的所需页面：
 
-   ![恢复版本——选择页](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+   ![恢复版本 — 选择页](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. 选择&#x200B;**恢复**，将选定页面的选定版本恢复为当前版本。
+1. 选择&#x200B;**恢复**，以恢复选定页面的选定版本，作为当前版本。
 
 >[!NOTE]
 >
->选择所需页面和相关版本的顺序可互换。
+>您选择所需页面和相关版本的顺序可互换。
 
 ### 恢复树 {#restore-tree}
 
-此方法可用于在指定日期和时间恢复树的某个版本；这可以包括以前已删除的页面：
+此方法可用于在指定的日期和时间还原树的版本；这可能包括之前已删除的页面：
 
-1. 导览至所需文件夹，然后[选择](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
+1. 导航到所需的文件夹，然后选择](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。[
 
-1. 从顶部的[操作工具栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)中选择&#x200B;**恢复**，然后选择&#x200B;**恢复树**。 将显示树的最新版本：
+1. 从顶部的[操作工具栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)中选择&#x200B;**Restore**，然后选择&#x200B;**Restore Tree**。 将显示树的最新版本：
 
    ![恢复树](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. 使用&#x200B;**Date**&#x200B;的Latest Versions（最新版本）中的日期和时间选择器选择树的另一个版本——要恢复的版本。
+1. 使用&#x200B;**Date**&#x200B;最新版本中的日期和时间选择器，选择树的其他版本 — 要恢复的版本。
 
-1. 根据需要设置标志&#x200B;**保留的非版本页面**:
+1. 根据需要设置标记&#x200B;**保留的未版本化页面**:
 
-   * 如果处于活动状态（已选定），则任何非版本化页面都将被维护，且不会受恢复的影响。
+   * 如果处于活动状态（已选中），则任何非版本化页面都将得到维护，且不会受到恢复的影响。
 
-   * 如果处于非活动状态（未选中），则任何非版本化页面都将被删除，因为版本化树中不存在这些页面。
+   * 如果不活动（未选中），则将删除任何未版本化的页面，因为这些页面在版本化树中不存在。
 
-1. 选择&#x200B;**恢复**，将树的选定版本恢复为&#x200B;*当前*&#x200B;版本。
+1. 选择&#x200B;**恢复**，以恢复树的选定版本为&#x200B;*当前*&#x200B;版本。
 
 ## 预览版本 {#previewing-a-version}
 
@@ -190,13 +189,13 @@ ht-degree: 66%
 
 1. 选择&#x200B;**与当前比较**。此时将打开[页面差异](/help/sites-cloud/authoring/features/page-diff.md)，并显示存在的差异。
 
-## 时间扭曲  {#timewarp}
+## 时间扭曲 {#timewarp}
 
 时间扭曲是一项功能，旨在模拟过去特定时间某个页面的&#x200B;*已发布*&#x200B;状态。
 
 >[!NOTE]
 >
->[时间扭曲还可与启动项一起使用，以预览未来](/help/sites-cloud/authoring/launches/preview.md)。
+>[时间扭曲还可以与启动项一起使用来预览将来](/help/sites-cloud/authoring/launches/preview.md)。
 
 由于内容创建是一个持续的协作过程，因此时间扭曲旨在允许作者随时间跟踪已发布的网站，以了解内容的更改情况。此功能使用页面版本来确定发布环境的状态。
 
