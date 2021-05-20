@@ -1,14 +1,13 @@
 ---
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 96%
 
 ---
-
 
 # 发布页面 {#publishing-pages}
 
@@ -20,7 +19,7 @@ ht-degree: 96%
 
 ## 术语 {#terminology}
 
-在与Adobe Experience Manager(AEM)合作作为Cloud Service时，您可能会遇到与发布相关的不同术语。
+在使用Adobe Experience Manager(AEM)作为Cloud Service时，您可能会遇到与发布相关的不同术语。
 
 * **发布/取消发布**
    * 这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
@@ -55,7 +54,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
-> 有关其他可能性，请参阅页面属性[“基本”选项卡中的&#x200B;**开始时间**&#x200B;和&#x200B;**结束时间**](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> 有关其他可能性，请参阅“页面属性”的“基本”选项卡中的[开启时间&#x200B;**和**&#x200B;关闭时间&#x200B;****](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### 从编辑器中发布 {#publishing-from-the-editor}
 
@@ -93,7 +92,7 @@ ht-degree: 96%
 * [快速发布](#quick-publish)
 * [管理发布](#manage-publication)
 
-#### 快速发布  {#quick-publish}
+#### 快速发布 {#quick-publish}
 
 **快速发布**&#x200B;适用于一些简单的情况，可立即发布选定的页面，而无需进行任何进一步的交互。正因为这一点，任何未发布的引用也将被自动发布。
 
@@ -144,7 +143,7 @@ ht-degree: 96%
 
    单击“添加内容”按钮会启动[路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)以供选择内容。
 
-   选择所需页面，然后单击&#x200B;**选择**&#x200B;将内容添加到向导，或单击&#x200B;**取消**&#x200B;取消选择并返回向导。
+   选择所需的页面，然后单击&#x200B;**选择**&#x200B;以将内容添加到向导，或单击&#x200B;**取消**&#x200B;以取消选择并返回到向导。
 
    返回到向导后，您可以选择列表中的项目以进一步配置其选项，例如：
 
@@ -212,7 +211,7 @@ ht-degree: 96%
 * [从页面编辑器中](#unpublishing-from-the-editor)
 * [从站点控制台中](#unpublishing-from-the-console)
 
-### 从编辑器中取消发布  {#unpublishing-from-the-editor}
+### 从编辑器中取消发布 {#unpublishing-from-the-editor}
 
 在编辑页面时，如果您希望取消发布该页面，请选择&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**取消发布页面**，这与[发布页面](#publishing-from-the-editor)非常类似。
 
