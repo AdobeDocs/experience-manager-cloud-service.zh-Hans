@@ -1,14 +1,13 @@
 ---
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 97%
 
 ---
-
 
 # 样式系统{#style-system}
 
@@ -105,7 +104,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的CSS类（以及任何必要的Javascript）必须部署为[客户端库](/help/implementing/developing/introduction/clientlibs.md)才能使用。
+>配置为组件策略的样式属性的CSS类（以及任何必需的Javascript）必须部署为[客户端库](/help/implementing/developing/introduction/clientlibs.md)才能正常工作。
 
 ## 设置 {#setup}
 
@@ -121,7 +120,6 @@ ht-degree: 97%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >这通过 [Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)使用[叠加](/help/implementing/developing/introduction/overlays.md)。
 
 配置组件后，由页面作者配置的样式将由 AEM 自动插入到装饰元素，AEM 会自动在每个可编辑的组件周围包裹该装饰元素。组件本身不需要执行任何操作即可实现这一点。
@@ -136,7 +134,6 @@ ht-degree: 97%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >这通过 [Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)使用[叠加](/help/implementing/developing/introduction/overlays.md)。
 
 >[!NOTE]
@@ -158,6 +155,7 @@ ht-degree: 97%
 >1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
 >1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
+
 >
 
 
