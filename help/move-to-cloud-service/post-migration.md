@@ -1,7 +1,6 @@
 ---
 title: 迁移后阶段
 description: 迁移后阶段
-translation-type: tm+mt
 source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
 source-wordcount: '226'
