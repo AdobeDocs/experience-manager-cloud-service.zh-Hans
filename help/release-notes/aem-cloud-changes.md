@@ -1,14 +1,13 @@
 ---
 title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 90%
 
 ---
-
 
 # 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改 {#notable-changes-aem-cloud}
 
@@ -18,10 +17,10 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 >本文档重点介绍了对 AEM 整体的显著更改。有关更多信息和特定于解决方案的更改，请参阅：
 >
 >* [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)
->* 与先前版本相比，Adobe Experience Manager as a Cloud Service 具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service[架构](/help/core-concepts/architecture.md)
->* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
->* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
+* 与先前版本相比，Adobe Experience Manager as a Cloud Service 具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service[架构](/help/core-concepts/architecture.md)
+* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
+* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
 
 
 主要区别包括以下方面：
@@ -65,7 +64,7 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 
 ## 不允许更改发布存储库 {#changes-to-publish-repo}
 
-除了发布层`/home`文件夹下的更改之外，不允许在AEMCloud Service中直接更改发布存储库。 在AMS上的先前版本的内部部署AEM或AEM中，可以直接对发布存储库进行代码更改。 可以通过以下方式缓解某些限制：
+除了发布层`/home`文件夹下的更改之外，还不允许在AEMCloud Service上直接更改发布存储库。 在On-Premise AEM或AEM on AMS的先前版本中，可以直接对发布存储库进行代码更改。 可通过以下方式缓解某些限制：
 
 * 对于内容和基于内容的配置：对创作实例进行更改并将其发布。
 * 对于代码和配置：在 GIT 存储库中进行更改，然后运行 CI/CD 管道以将其推出。
@@ -108,7 +107,7 @@ AEM 云服务中不能使用其他运行模式或自定义运行模式。
 
 ## 资产处理和交付 {#asset-handling}
 
-资产上传、处理和下载已作为一种Cloud Service在资产中进行了优化，可以更高效地实现更好的扩展以及更快的上传和下载。 但是，这可能会影响一些现有的自定义代码。
+资产上传、处理和下载已作为Cloud Service在Assets中进行了优化，以提高效率，从而实现更好的扩展，并加快上传和下载速度。 但是，这可能会影响一些现有的自定义代码。
 
 * AEM 早期版本中的默认工作流程 **DAM 资产更新**&#x200B;不再可用。
 * **不进行转换**&#x200B;直接交付二进制文件的网站组件应使用直接下载。
