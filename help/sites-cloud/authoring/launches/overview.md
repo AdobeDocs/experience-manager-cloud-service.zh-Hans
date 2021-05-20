@@ -1,14 +1,13 @@
 ---
 title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
-translation-type: tm+mt
-source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
+exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 80%
 
 ---
-
 
 # 启动项 {#launches}
 
@@ -23,8 +22,8 @@ ht-degree: 80%
 
 您也可以:
 
-* 在启动项分支中导航内容；根据需要添加或删除页面。
-* 预览发布内容在将来如何查看特定日期／日期。
+* 在启动分支中导航内容；根据需要添加或删除页面。
+* 预览已发布内容在将来的特定日期/时间的显示情况。
 
 当下一季度到来时，您需要提升启动页面，以便发布源页面（包含更新的内容）。您可以提升所有页面，也可以仅提升已修改的页面。
 
@@ -33,15 +32,15 @@ ht-degree: 80%
 * 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
-本节介绍如何从站点控制台或启动项控制台](#the-launches-console)中创建、编辑和提升（如果需要[delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）启动页面：[
+本节将介绍如何在站点控制台或[启动项控制台](#the-launches-console)中创建、编辑和提升（以及如有必要，还可以[delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）启动页面：
 
 * [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
 * [编辑启动项](/help/sites-cloud/authoring/launches/editing.md)
 * [在启动项中管理页面](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [使用时间扭曲根据启动项预览您的内容](/help/sites-cloud/authoring/launches/preview.md)
+* [使用时间扭曲根据启动项预览内容](/help/sites-cloud/authoring/launches/preview.md)
 * [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)
 
-## 启动项 - 事件的顺序  {#launches-the-order-of-events}
+## 启动项 - 事件的顺序 {#launches-the-order-of-events}
 
 启动项允许您有效地为将来发布的一个或多个激活网页开发内容。
 
@@ -85,15 +84,15 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->创建和编辑启动项需要对`/content/launches`的访问权限——与默认组`content-authors`的权限相同。
+>创建和编辑启动项需要具有`/content/launches`的访问权限 — 与默认组`content-authors`的访问权限相同。
 >
 >如果您遇到任何问题，请联系您的系统管理员。
 
-## 引用（站点控制台）中的启动项{#launches-in-references-sites-console}
+## 引用（站点控制台）{#launches-in-references-sites-console}中的启动项
 
 1. 在&#x200B;**站点**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
-1. 选择&#x200B;**启动项**，将列出现有启动项，并访问&#x200B;**启动项控制台**:
+1. 选择&#x200B;**启动项**，将列出现有的启动项，以及对&#x200B;**启动项控制台**&#x200B;的访问：
 
    ![站点控制台中启动项的引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -107,13 +106,13 @@ ht-degree: 80%
 
 * **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
 
-* **启** 动当在站点控制台中 **** 导航源内容 **** 时，控制台位于引用边栏的“启动项”部分的底部。
+* **在站** 点控制台中导 **** 航源内容时， **** 启动“参考”边栏的“启动项”部分的底部。
 
-   ![“站点”控制台中启动项的引用中的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![“站点”控制台中启动项引用的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* 在站点控制台中导航启动内容时，右上方的&#x200B;**启动项**&#x200B;按钮：
+* 在站点控制台中导航启动项内容时， **启动项**&#x200B;按钮位于右上方的：
 
    ![站点控制台中的启动项选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
-* 或者直接；例如：
+* 或者直接；例如，使用：
    `https://<host>:<port>/libs/launches/content/launches.html`
