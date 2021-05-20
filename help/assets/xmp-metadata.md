@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 元数据
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 53%
+source-wordcount: '1016'
+ht-degree: 52%
 
 ---
 
@@ -84,9 +84,9 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
 ![存储在存储库中资产节点中的元数据](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->默认情况下，[!DNL Assets]中未启用写回功能。 了解如何[启用元数据写回](#enable-xmp-writeback)。
+>默认情况下，[!DNL Assets]中未启用写回功能。 了解如何[启用元数据写回](#enable-xmp-writeback)。 在启用元数据写回的情况下，数字资产的MSM无法工作。 写回时，继承会中断。
 
 ### 启用XMP写回{#enable-xmp-writeback}
 
