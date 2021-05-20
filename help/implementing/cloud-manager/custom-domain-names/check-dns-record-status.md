@@ -1,34 +1,33 @@
 ---
 title: 正在检查DNS记录状态
 description: 正在检查DNS记录状态
-translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-
 # 正在检查DNS记录状态{#check-dns-record-status}
 
-您可以通过从域设置页的Cloud Service表中单击DNS记录的状态图标，确定您的域名是否正确解析到AEM作为环境网站。
+您可以通过单击“域设置”页面上“环境”表中DNS记录的“状态”图标，来确定您的域名是否正确解析为AEM as a Cloud Service网站。
 
-在首次成功验证和部署自定义域名时，Cloud Manager将自动触发DNS查找。 对于后续尝试，必须主动选择状态旁边的&#x200B;**resolve again**&#x200B;图标。
+当您的自定义域名首次成功验证和部署后，Cloud Manager将自动触发DNS查找。 对于后续尝试，必须主动选择状态旁边的&#x200B;**再次解析**&#x200B;图标。
 
-Cloud Manager会为您的域名执行DNS查找并显示以下状态消息之一：
+Cloud Manager会对您的域名执行DNS查找，并显示以下状态消息之一：
 
 * **未检测到DNS**
 状态直到您的自定义域名成功验证和部署后，才会检测到DNS状态。当您的自定义域名正在删除过程中时，也会观察到此状态。
 
 * **DNS解析**
-不正确这表示DNS记录配置尚未解析／指向或错误。将自动通知Adobe代表。
+不正确这表示DNS记录配置尚未解析/指向，或错误。Adobe代表将自动收到通知。
 
    >[!NOTE]
-   >必须按照相应的说明配置`CNAME`或`A-record`。 请参阅配置DNS设置以了解更多信息。 准备就绪后，必须再次选择状态旁的&#x200B;**resolve**&#x200B;图标。
+   >您必须按照相应的说明配置`CNAME`或`A-record`。 请参阅配置DNS设置，以了解更多信息。 准备就绪后，必须再次选择状态旁边的&#x200B;**resolve**&#x200B;图标。
 
-* **正在进行DNS**
-解析正在进行。此状态通常在您选择状态旁的“再次解析”图标后显示。
+* **正在进行**
+ProgressResolution的DNS解析。此状态通常在您选择状态旁边的“再次解析”图标后才会显示。
 
-* **DNS解析正**
-确您的DNS设置已正确配置。您的站点为访客提供服务。
+* **正确解析**
+DNS您的DNS设置已正确配置。您的网站为访客提供服务。
