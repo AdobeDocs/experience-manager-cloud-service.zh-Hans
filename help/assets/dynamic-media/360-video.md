@@ -4,7 +4,6 @@ description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频�
 feature: 360 VR 视频
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '941'
@@ -14,57 +13,57 @@ ht-degree: 2%
 
 # 360/VR视频{#vr-video}
 
-360度视频同时在每个方向记录一个视图。 它们是用全向摄像机或一组摄像机拍摄的。 在播放时，在平面显示器上，用户可以控制视角；在移动设备上播放通常应用其内置的陀螺仪控件。
+360度视频同时记录每个方向的视图。 它们是用全方位相机或一组相机拍摄的。 在播放期间，在平面显示器上，用户可以控制观看角度；移动设备上的播放通常应用其内置的陀螺仪控件。
 
-Dynamic Media包含对360个视频资源投放的本机支持。 默认情况下，查看或回放不需要任何其他配置。 您可以使用标准视频扩展(如.mp4、.mkv和.mov)交付360视频。 最常见的编解码器是H.264。
+Dynamic Media包含交付360个视频资产的本机支持。 默认情况下，查看或播放不需要任何其他配置。 您使用标准视频扩展名(如.mp4、.mkv和.mov)交付360视频。 最常见的编解码器是H.264。
 
-可使用360/VR视频查看器渲染等矩形视频。 结果是，您可以沉浸式地观看房间、房产、位置、风景、医疗程序等。
+您可以使用360/VR视频查看器来渲染等矩形视频。 这样，您就可以体验到房间、房产、位置、景观、医疗程序等的沉浸式观看体验。
 
-目前不支持空间音频；如果音频在立体声中混合，则余额(L/R)不会随客户更改摄像机视角而改变。
+当前不支持空间音频；如果音频在立体声中混合，则余额(L/R)不会随客户更改相机视角而改变。
 
-请参阅[将Dynamic Media 360视频和自定义视频缩略图与AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)一起使用。
+请参阅[将Dynamic Media 360视频和自定义视频缩略图与AEM Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)。
 
 另请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-## 360视频实际操作情况{#video-in-action}
+## 360视频正在播放{#video-in-action}
 
-点按[空间站360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)打开浏览器窗口并观看360度视频。 在视频播放过程中，将指针拖动到新位置以更改视角。
+点按[空间站360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)以打开浏览器窗口并观看360度视频。 在视频播放期间，将指针拖动到新位置以更改观看角度。
 
 ![360视频采](assets/6_5_360videoiss_simplified.png)
 *样来自空间站的视频帧360*
 
 ## 360/VR视频和Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-您可以使用Adobe Premier Pro视图和编辑360/VR素材。 例如，您可以将徽标和文本正确放置在场景中，并应用专为等长方形媒体设计的效果和过渡。
+您可以使用AdobePremier Pro查看和编辑360/VR素材。 例如，您可以将徽标和文本正确放置在场景中，并应用专为等矩形媒体设计的效果和过渡。
 
 请参阅[编辑360/VR视频](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
 
-## 上传要与360视频查看器{#uploading-assets-for-use-with-the-video-viewer}一起使用的资产
+## 上传资产以与360视频查看器{#uploading-assets-for-use-with-the-video-viewer}一起使用
 
-上传到Experience Manager中的360个视频资产在“资产”页面上标记为&#x200B;**Multimedia**，与普通视频资产类似。
+上传到Experience Manager中的360个视频资产在资产页面上标记为&#x200B;**Multimedia**，与常规视频资产类似。
 
-![6_5_360-video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*在卡片视图中看到已上传的360视频资产。资源标记为多媒体。*
+![6_5_360 video-selecttopreview](assets/6_5_360video-selecttopreview.png)
+*在卡片视图中看到已上传的360个视频资产。资产将标记为多媒体。*
 
 **要上传资产以与360视频查看器一起使用，请执行以下操作：**
 
-1. 已创建专用于您的360视频资产的文件夹。
-1. [将自适应视频用户档案应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
+1. 创建了专用于360视频资产的文件夹。
+1. [将自适应视频配置文件应用到该文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
 
-   与标准非360视频内容相比，渲染360视频内容对源视频分辨率和编码演绎版分辨率的要求更高。
+   与标准非360视频内容相比，渲染360视频内容对源视频分辨率和编码呈现分辨率提出了更高的要求。
 
-   您可以使用Dynamic Media附带的现成自适应视频用户档案。 但是，对于使用非360视频查看器渲染的相同设置进行编码的非360视频，其视频质量明显低于您的360。 因此，如果需要高质量的360视频，请执行以下操作：
+   您可以使用已随附的现成自适应视频配置文件Dynamic Media。 但是，对于使用非360视频查看器呈现的相同设置进行编码的非360视频，其视频质量会明显低于预期的360视频质量。 因此，如果需要高品质的360视频，请执行以下操作：
 
-   * 理想情况下，您的原始360视频内容具有以下任一分辨率：
+   * 理想情况下，原始360视频内容具有以下任一分辨率：
 
       * 1080p - 1920 x 1080，称为全高清或全高清分辨率，或
-      * 2160p - 3840 x 2160，称为4K、UHD或UltraHD分辨率。 这种大的显示分辨率通常出现在高级电视机和计算机显示器上。 2160p分辨率通常称为“4K”，因为宽度接近4000像素。 换句话说，它优惠了1080p像素的4倍。
-   * [创建具有更高质量再](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 现的自定义自适应视频配置文件。例如，您可以创建包含以下三种设置的自适应视频用户档案:
+      * 2160p - 3840 x 2160，称为4K、UHD或UltraHD分辨率。 这种大的显示分辨率通常出现在高档电视机和电脑显示器上。 2160p分辨率通常称为“4K”，因为宽度接近4000像素。 换句话说，它的像素数是1080p的四倍。
+   * [创建具有更高质量演绎版](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 的自定义自适应视频配置文件。例如，您可以创建包含以下三个设置的自适应视频配置文件：
 
-      * 宽度=自动；高=720;比特率=2500 kbps
-      * 宽度=自动；高度=1080;比特率=5000 kbps
-      * 宽度=自动；高度=1440;比特率=6600 kbps
-   * 处理专用于360个视频资源的文件夹中的360个视频内容。
+      * Width=auto;高度=720;比特率= 2500 kbps
+      * Width=auto;高度=1080;比特率= 5000 kbps
+      * Width=auto;高度=1440;比特率= 6600 kbps
+   * 在专门用于360个视频资产的文件夹中处理360个视频内容。
 
    这种方法对最终用户的网络和CPU提出了更高的要求。
 
@@ -93,47 +92,47 @@ Start by uploading 360 Videos.
 
 ## 预览360视频{#previewing-video}
 
-您可以使用预览来查看您的360视频如何呈现给客户，并确保其按预期方式播放。
+您可以使用“预览”功能查看您的360视频如何显示给客户，并确保其行为符合预期。
 
 另请参阅[编辑查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets)。
 
-当您对360视频满意时，您可以发布它。
+如果您对360视频满意，可以发布该视频。
 
-请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含与相对URL(尤其是指向Experience Manager站点页面的链接)的链接，则无法使用基于URL的链接方法。
-请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
+请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
-**预览360视频**
+**预览360个视频**
 
-1. 在&#x200B;**[!UICONTROL 资产]**&#x200B;中，导航到您创建的现有360视频。 要在预览模式下打开视频，请点按360视频资产。
+1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，导航到您创建的现有360视频。 要在预览模式下将其打开，请点按360视频资产。
 
-   ![6_5_360 Video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
    要预览视频，请点按360视频资产。
 
 1. 在预览页面的左上角附近，点按下拉列表，然后选择&#x200B;**[!UICONTROL 查看器]**。
 
-   ![6_5_360视频预览查看器](assets/6_5_360video-preview-viewers.png)
+   ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
-   在“查看器”列表卡中，点按&#x200B;**[!UICONTROL Video360_social]**，然后执行以下操作之一：
+   从“查看器”列表中，点按&#x200B;**[!UICONTROL Video360_social]**，然后执行下列操作之一：
 
-   * 要更改静态场景的视角，请在视频上拖动指针。
-   * 要开始播放，请点按视频的&#x200B;**[!UICONTROL 播放]**&#x200B;按钮。 播放视频时，在视频上拖动指针可改变视角。
+   * 要更改静态场景的观看角度，请在视频中拖动指针。
+   * 要开始播放，请点按视频的&#x200B;**[!UICONTROL 播放]**&#x200B;按钮。 在视频播放时，在视频中拖动指针以更改观看角度。
 
-   ![6_5_360 video-预览-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360视频屏幕截图。*
+   ![6_5_360video-preview-video360-socialA 360 ](assets/6_5_360video-preview-video360-social.png)*视频屏幕截图。*
 
-   * 在“查看器”列表卡中，点按&#x200B;**[!UICONTROL Video360VR]**。
+   * 从查看器列表中，点按&#x200B;**[!UICONTROL Video360VR]**。
 
-      虚拟现实(VR)视频是一种沉浸式视频内容，可通过使用虚拟现实耳机访问。 与普通视频一样，您可以在使用360度视频摄像机录制或捕捉视频时，在开始时创建VR视频。
-   ![6_5_360 video-预览-video360vr](assets/6_5_360video-preview-video360vr.png)
+      虚拟现实(VR)视频是使用虚拟现实耳机访问的沉浸式视频内容。 与普通视频一样，在视频被录制或捕获时，您会在开始时使用360度摄像机创建VR视频。
+   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *360 VR视频屏幕截图。*
 
 1. 在预览页面的右上角附近，点按&#x200B;**[!UICONTROL 关闭]**。
 
 ## 发布360视频{#publishing-video}
 
-要使用360视频，您必须发布它。 发布360视频时，会激活URL和嵌入代码。 它还将360视频发布到Dynamic Media云，该云与CDN集成，可实现可扩展且高性能的投放。
+要使用360视频，您必须发布它。 发布360视频可激活URL和嵌入代码。 它还会将360视频发布到Dynamic Media云，该云与CDN集成以进行可扩展且性能出众的交付。
 
-有关如何发布360视频的详细信息，请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+有关如何发布360视频的详细信息，请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 另请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
-另请参阅[将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含与相对URL(尤其是指向Experience Manager站点页面的链接)的链接，则无法使用基于URL的链接方法。
-另请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+另请参阅[将URL关联到Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
+另请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
