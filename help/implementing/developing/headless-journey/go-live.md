@@ -5,14 +5,14 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
 
-# 如何使用无头应用程序{#go-live}
+# 如何使用您的无头应用程序{#go-live}
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目`ui.frontend`�
 
 * **创作服** 务是内部用户创建、管理和预览内容的位置。
 
-* **发布服** 务被视为“实时”环境，通常是最终用户与之交互的环境。内容在创作服务上进行编辑和批准后，会分发到发布服务。 AEM无头应用程序的最常见部署模式是，将应用程序的生产版本连接到AEM发布服务。
+* **发布服** 务被视为“实时”环境，通常是最终用户与之交互的环境。内容在创作服务上进行编辑和应用后，会分发到发布服务。 AEM无头应用程序的最常见部署模式是，将应用程序的生产版本连接到AEM发布服务。
 
 * **Dispatcher是** 一种静态Web服务器，可通过AEM调度程序模块进行扩展。它会缓存由发布实例生成的网页，以提高性能。
 
@@ -103,11 +103,11 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目`ui.frontend`�
 
 要更深入地了解如何设置本地开发环境以及内容预览所需的所有依赖关系，请参阅[生产部署文档](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
 
-## 准备AEM Headless应用程序以上线{#prepare-your-aem-headless-application-for-golive}
+## 准备AEM Headless应用程序以投入使用{#prepare-your-aem-headless-application-for-golive}
 
 现在，是时候按照下面概述的最佳实践，为启动您的AEM无头应用程序做好准备了。
 
-### 在启动{#secure-and-scale-before-launch}之前保护并扩展您的无头应用程序
+### 在启动{#secure-and-scale-before-launch}之前保护和扩展您的无头应用程序
 
 1. 使用GraphQL请求配置[基于令牌的身份验证](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
 1. 配置[缓存](/help/implementing/dispatcher/caching.md)。
@@ -155,10 +155,10 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目`ui.frontend`�
       * 源服务器 — 调用数、错误率、CPU负载、负载流量
    * 创作性能
       * 检查用户数、请求数和加载数
-* 访问特定于应用程序和空间的性能报表
+* 访问特定于应用程序和空间的性能报告
    * 服务器启动后，检查常规量度是否为绿色/橙色/红色，然后确定特定的应用程序问题
-   * 打开上面按应用程序或空间过滤的相同报表(例如Photoshop桌面版、付费专区)
-   * 使用Splunk日志API访问服务和应用程序性能
+   * 打开上述报表，但按应用程序或空间(例如Photoshop桌面版、付费专区)筛选报表
+   * [使用Splunk日志API](/help/implementing/developing/introduction/logging.md#splunk-logs) 访问服务和应用程序性能
    * 如果存在其他问题，请联系客户支持。
 
 ## 疑难解答 {#troubleshooting}
@@ -169,7 +169,7 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目`ui.frontend`�
 
 * 使用应用程序的预览版本验证功能和性能
 * 使用应用程序的生产版本验证功能和性能
-* 使用内容片段编辑器的JSON预览进行验证
+* 使用内容片段编辑器的[JSON预览](/help/assets/content-fragments/content-fragments-json-preview.md)进行验证
 * Inspect客户端应用程序中的JSON，以检查客户端应用程序或交付问题是否存在
 * Inspect使用GraphQL检查是否存在与缓存内容或AEM相关的问题
 
@@ -180,7 +180,7 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目`ui.frontend`�
 * 如有必要，请拍摄问题的屏幕截图
 * 记录重现问题的方法
 * 记录问题所重现的内容
-* 通过具有相应优先级的AEM支持门户记录问题
+* 通过AEM支持门户使用应用程序适当优先级记录问题
 
 ## 历程结束了？{#journey-ends}
 
