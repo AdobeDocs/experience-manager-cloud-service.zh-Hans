@@ -2,7 +2,6 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-translation-type: tm+mt
 source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
 source-wordcount: '2009'
@@ -20,7 +19,7 @@ ht-degree: 92%
 
 >[!TIP]
 >
->请参阅Experience League课程[为管理员](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)配置AEM访问权限，了解用户如何使用Adobe IMS验证AEM作为Cloud Service，以及如何使用Adobe IMS用户、用户组和产品用户档案控制对AEM及其特性和功能的访问。 Adobe ID必填。
+>请参阅我们的Experience League课程[为管理员配置对AEM的访问权限](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，以了解用户如何使用AdobeIMS对AEM as a Cloud Service进行身份验证，以及如何使用AdobeIMS用户、用户组和产品配置文件来控制对AEM及其特性和功能的访问。 Adobe ID必需。
 
 ## 主要亮点 {#key-highlights}
 
@@ -129,15 +128,15 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 ### 在 Admin Console 中管理产品和用户访问权限 {#managing-products-and-user-access-in-admin-console}
 
-当产品管理员登录到Admin Console时，他们将看到AEM的多个实例作为Cloud Service产品上下文，如下所示。 例如，从&#x200B;**概述**&#x200B;页面选择任何产品：
+当产品管理员登录到Admin Console时，他们将看到多个AEM实例作为Cloud Service产品上下文，如下所示。 例如，从&#x200B;**Overview**&#x200B;页面中选择任意产品：
 
 ![实例登录](/help/security/assets/ims6.png)
 
-您将看到现有实例的列表:
+您将看到现有实例的列表：
 
 ![实例登录 2](/help/security/assets/ims7.png)
 
-在每个Product Context实例下，将有跨生产、阶段或开发环境的作者或发布服务的实例。 每个实例都将关联到产品用户档案或云管理器角色。 这些产品用户档案用于向具有所需权限的用户和组分配访问权限。
+在每个产品上下文实例下，将有跨生产、暂存或开发环境的创作或发布服务的实例。 每个实例都将与产品配置文件或Cloud Manager角色关联。 这些产品配置文件用于为具有所需权限的用户和组分配访问权限。
 
 **Administrator_xxx** 配置文件将用于在关联的 AEM 实例中授予管理员特权，而 **User_xxx** 配置文件用于添加常规用户。
 
