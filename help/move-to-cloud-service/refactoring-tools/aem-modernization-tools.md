@@ -1,18 +1,17 @@
 ---
 title: AEM 现代化工具
-description: 'AEM 现代化工具 '
-translation-type: tm+mt
-source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
+description: AEM 现代化工具
+exl-id: bc6efab1-cea0-4808-9bd4-495cd871bd75
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '131'
+ht-degree: 77%
 
 ---
 
-
 # AEM 现代化工具 {#aem-moderization-tools}
 
-AEM现代化工具提供了一套实用工具，可将旧版AEM功能转换为AEM作为Cloud Service所支持的现代功能。
+AEM现代化工具提供了一套实用工具，可用于将旧版AEM功能转换为AEM as a Cloud Service的现代和受支持功能。
 
 
 ## 简介 {#introduction}
@@ -32,4 +31,3 @@ AEM 现代化工具可轻松完成以下转换：
 ## 安装和实施 AEM 现代化工具套件 {#installing-implementing}
 
 请参阅 **[Git 资源：AEM 现代化工具套件](https://github.com/adobe/aem-modernize-tools)**，了解有关安装和实施的信息。
-
