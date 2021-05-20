@@ -14,9 +14,9 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概述"
->abstract="内容传输工具是由Adobe开发的工具，可用于将现有内容从源AEM实例（内部部署或AMS）移至目标 AEMCloud Service实例。 此工具还会自动传输主体（用户或组）。"
+>abstract="内容传输工具是由Adobe开发的工具，可用于将现有内容从源AEM实例（内部部署或AMS）移至目标AEMCloud Service实例。 此工具还会自动传输主体（用户或组）。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="提取流程"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="摄取过程"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="摄取流程"
 
 内容传输工具是 Adobe 开发的一个工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM 云服务实例。
 
@@ -30,7 +30,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
-> 建议在提取阶段运行用户映射工具。 有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
+> 建议在提取阶段中运行用户映射工具。 有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) 。
 
 1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
@@ -38,7 +38,7 @@ ht-degree: 73%
 
 *迁移集*&#x200B;具有以下属性：
 
-* 在内容传输活动，最多一次可创建和维护十个迁移集。
+* 在内容传输活动期间，一次最多可以创建和维护10个迁移集。
 * 每个迁移集应具有唯一的名称。
 * 如果迁移集处于非活动状态的时间超过 30 天，则将会自动删除该迁移集。
 * 每当您创建迁移集时，它都会与特定环境关联。您只能摄取到同一环境的创作或发布实例中。
@@ -80,4 +80,4 @@ ht-degree: 73%
    * *数据存储大小*：内容传输工具使用 64 GB，即使实际数据存储更大也是如此。
    * *节点存储大小*：区段存储目录大小或 MongoDB 数据库大小。因此，对于 20 GB 的区段存储大小，所需的可用磁盘空间将为 94 GB。
 
-* 需要在整个内容传输活动中维护迁移集以支持内容补充。 由于在内容传输活动内，最多可以同时创建和维护十个迁移集，因此建议相应地分解内容存储库以确保不会用尽迁移集。
+* 需要在整个内容传输活动中维护迁移集，以支持内容增补。 由于在内容传输活动期间一次最多可以创建和维护10个迁移集，因此建议相应地划分内容存储库，以确保不会耗尽迁移集。
