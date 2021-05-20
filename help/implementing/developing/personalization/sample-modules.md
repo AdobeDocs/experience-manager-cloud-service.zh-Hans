@@ -1,63 +1,62 @@
 ---
-title: 示例ContextHub UI模块类型
-description: ContextHub提供了几个可在解决方案中使用的示例UI模块
-translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+title: ContextHub UI模块类型示例
+description: ContextHub提供了几个示例UI模块，您可以在解决方案中使用这些模块
+exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
 
 ---
 
+# ContextHub UI模块类型{#sample-contexthub-ui-module-types}示例
 
-# 示例ContextHub UI模块类型{#sample-contexthub-ui-module-types}
-
-ContextHub提供了几个可在解决方案中使用的示例UI模块。 提供了以下信息：
+ContextHub提供了多个示例UI模块，您可以在解决方案中使用这些模块。 提供了以下信息：
 
 * UI模块的主要功能。
-* 在何处可以找到源代码，以便您打开它进行学习。
+* 在何处查找源代码，以便您能够将其打开以用于学习目的。
 * 如何配置UI模块。
 
 有关将UI模块添加到ContextHub的信息，请参阅[添加UI模块](configuring-contexthub.md#adding-a-ui-module)。 有关开发UI模块的信息，请参阅[创建ContextHub UI模块类型](extending-contexthub.md#creating-contexthub-ui-module-types)。
 
 ## contexthub.base UI模块类型{#contexthub-base-ui-module-type}
 
-contexthub.base UI模块类型是所有其他UI模块类型的基本类型。 因此，它提供用于呈现存储数据的通用功能。
+ContextHub.base UI模块类型是所有其他UI模块类型的基本类型。 因此，它为渲染存储数据提供了通用功能。
 
 提供以下功能：
 
-* **标题和图标：** 指定UI模块的标题和图标。该图标可以使用URL或从Coral UI图标库中引用。
-* **存储数据：** 标识要从中检索数据的一个或多个存储。
-* **内容：** 指定在UI模块中显示的内容（如同在ContextHub工具栏中显示的一样）。
-* **跨窗内容：** 指定在单击或点按UI模块时在跨窗中显示的内容。
+* **标题和图标：** 为UI模块指定标题和图标。可以使用URL或从Coral UI图标库引用该图标。
+* **存储数据：** 标识一个或多个要从中检索数据的存储。
+* **内容：** 指定在UI模块中显示的内容（它显示在ContextHub工具栏中）。
+* **弹出窗口内容：** 指定在单击或点按UI模块时显示在弹出窗口中的内容。
 * **全屏模式：** 控制是否允许全屏模式。
 
 源代码位于`/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`。
 
 ### 配置 {#configuration}
 
-使用JSON格式的Javascript对象配置contexthub.base UI模块。 包含以下任意属性以配置UI模块功能：
+使用JSON格式的Javascript对象配置ContextHub.base UI模块。 包含以下任意属性以配置UI模块功能：
 
 * **图像：** 要显示为图标的图像的URL。
-* **图标：** Coral UI图 [标类的](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 名称。如果为图标和图像属性指定值，则会使用图像。
+* **图标：** Coral UI图 [标类](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 的名称。如果同时为图标和图像属性指定值，则会使用图像。
 * **title:** UI模块的标题。当指针暂停在UI模块图标上时，将显示标题。
-* **fullscreen：一** 个布尔值，指示UI模块是否支持全屏模式。使用`true`支持全屏，使用`false`防止全屏模式。
-* **模板：** 一个 [](https://handlebarsjs.com/) Handlebarstemplate，它指定要在ContextHub工具栏中呈现的内容。最多使用两个`<p>`标记。
-* **storeMapping:** 密钥／存储映射。使用Handlebar模板中的键访问关联的ContextHub存储数据。
-* **列表** ：一组项目，在单击UI模块时在弹出窗口中显示为列表。如果包括此项目，则不要包括popoverTemplate。 该值是具有以下键的对象的数组：
-   * 标题：此项目要显示的文本
-   * 图像：（可选）应显示在左侧的图像的URL
+* **全屏：** 一个布尔值，指示UI模块是否支持全屏模式。使用`true`支持全屏模式，使用`false`阻止全屏模式。
+* **模板：** Handlebarstemplate [](https://handlebarsjs.com/) ，用于指定要在ContextHub工具栏中呈现的内容。最多使用两个`<p>`标记。
+* **storeMapping:** 键/存储映射。在Handlebar模板中使用键值访问关联的ContextHub存储数据。
+* **列表：** 单击UI模块后，要在弹出窗口中以列表形式显示的项目数组。如果包含此项目，请勿包含popoverTemplate。 值是使用以下键的对象数组：
+   * 标题：要为此项目显示的文本
+   * 图像：（可选）应显示在左侧的图像URL
    * 图标：（可选）应显示在左侧的CUI图标类；如果指定了图像，则忽略
-   * 选定：（可选）一个布尔值，它指定是否应将此项显示为选定项（true=已选定）。 默认情况下，选定项目使用粗体显示。 使用`listType`属性配置其他外观（请参见下文）。
-* **listType：用** 于跨距列表项的样式。请使用以下值之一：
-   * 选中标记
+   * 选定项：（可选）一个布尔值，用于指定是否应将此项目显示为已选定(true=selected)。 默认情况下，选定项目使用粗体显示。 使用`listType`属性配置其他外观（请参阅下文）。
+* **listType:** 用于弹出窗口列表项的样式。使用以下任一值：
+   * 复选标记
    * 复选框
    * 无线电
-* **popover模板：** 一个Handlebars模板，它指定在单击UI模块时在弹出窗口中呈现的内容。如果包含此项，则不要包含`list`项。
+* **弹出窗口模板：** Handlebars模板，用于指定在单击UI模块时要在弹出窗口中呈现的内容。如果包含此项目，请勿包含`list`项目。
 
 ### 示例 {#example}
 
-以下示例将c`ontexthub.base` UI模块配置为显示[contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate)存储中的信息。 `template`项演示如何使用`storeMapping`项所建立的键从存储获取数据。
+以下示例将c`ontexthub.base` UI模块配置为显示[contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate)存储中的信息。 `template`项目演示了如何使用`storeMapping`项目建立的键从存储中获取数据。
 
 ```javascript
 {
@@ -74,15 +73,15 @@ contexthub.base UI模块类型是所有其他UI模块类型的基本类型。 �
 
 ## contexthub.browserinfo UI模块类型{#contexthub-browserinfo-ui-module-type}
 
-`contexthub.browserinfo` UI模块显示有关客户端Web浏览器和操作系统的信息。 根据[contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate)存储候选，从surferinfo存储获取信息。
+`contexthub.browserinfo` UI模块显示有关客户端Web浏览器和操作系统的信息。 根据[contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate)存储候选项，从surferinfo存储中获取信息。
 
 ![contexthub.browserinfo模块](assets/browserinfo-module.png)
 
-UI模块的源代码位于`/libs/granite/contexthub/components/modules/browserinfo`。 尽管`contexthub.browserinfo`扩展了`contexthub.base` UI模块，但它不会覆盖或提供其他功能。 该实现为呈现浏览器信息提供了默认配置。
+UI模块的源代码位于`/libs/granite/contexthub/components/modules/browserinfo`。 尽管`contexthub.browserinfo`扩展了`contexthub.base` UI模块，但它不会覆盖或提供其他功能。 该实施为渲染浏览器信息提供了默认配置。
 
 ### 配置 {#configuration-1}
 
-contexthub.browserinfo UI模块的实例不需要详细信息配置的值。 以下JSON文本表示模块的默认配置。
+Contexthub.browserinfo UI模块的实例不需要Detail Configuration的值。 以下JSON文本表示模块的默认配置。
 
 ```javascript
 {
@@ -95,17 +94,17 @@ contexthub.browserinfo UI模块的实例不需要详细信息配置的值。 以
 
 ## contexthub.datetime UI模块类型{#contexthub-datetime-ui-module-type}
 
-`contexthub.datetime` UI模块显示存储在名为datetime的存储中的日期和时间，该存储基于`contexthub.datetime`存储候选。
+`contexthub.datetime` UI模块显示存储在名为日期时间（基于`contexthub.datetime`存储候选项）的存储中的日期和时间。
 
 ![contexthub.datetime模块](assets/datetime-module.png)
 
-该模块提供一个弹出窗格，允许您更改商店中的日期和时间。
+模块提供一个弹出窗体，用于更改存储中的日期和时间。
 
 `contexthub.datetime` UI模块的源位于`/libs/granite/contexthub/components/modules/datetime`。
 
 ### 配置 {#configuration-2}
 
-contexthub.datetime UI模块的实例不需要Detail Configuration的值。 以下JSON文本表示模块的默认配置。
+Contexthub.datetime UI模块的实例不需要Detail Configuration的值。 以下JSON文本表示模块的默认配置。
 
 ```javascript
 {
@@ -120,7 +119,7 @@ contexthub.datetime UI模块的实例不需要Detail Configuration的值。 以�
 
 ## contexthub.location UI模块类型{#contexthub-location-ui-module-type}
 
-`contexthub.location` UI模块显示客户端的经度和纬度。 该模块提供一个弹出窗口，其中显示一个Google地图，您可以单击该地图来更改当前位置。 该模块从名为geolocation的ContextHub存储中获取信息，该存储基于[contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate)存储候选。
+`contexthub.location` UI模块显示客户端的经度和纬度。 模块提供了一个弹出窗口，其中显示了一个Google地图，您可以单击该地图来更改当前位置。 该模块从名为geolocation的ContextHub存储中获取信息，该存储基于[contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate)存储候选。
 
 ![contexthub.location模块](assets/location-module.png)
 
@@ -128,7 +127,7 @@ UI模块的源位于`/etc/cloudsettings/default/contexthub/geolocation`。
 
 ### 配置 {#configuration-4}
 
-contexthub.location UI模块的实例不需要详细信息配置的值。 以下JSON文本表示模块的默认配置。
+ContextHub.location UI模块的实例不需要Detail Configuration的值。 以下JSON文本表示模块的默认配置。
 
 ```javascript
 {
@@ -163,7 +162,7 @@ contexthub.location UI模块的实例不需要详细信息配置的值。 以下
 
 ## contexthub.screen-orientation UI模块类型{#contexthub-screen-orientation-ui-module-type}
 
-`contexthub.screen-orientation` UI模块显示客户端的当前屏幕方向。 虽然模块默认处于禁用状态，但该模块会提供一个弹出窗口，允许您选择方向。 该模块从名为模拟器的ContextHub存储中获取信息，该模拟器基于[granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate)存储候选。
+`contexthub.screen-orientation` UI模块显示客户端的当前屏幕方向。 虽然默认情况下处于禁用状态，但该模块会提供一个弹出窗口，允许您选择方向。 该模块从名为emulators的ContextHub存储中获取信息，该存储基于[granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate)存储候选项。
 
 ![contexthub.screen-orientation模块](assets/screen-orientation-module.png)
 
@@ -171,7 +170,7 @@ UI模块的源位于`/libs/granite/contexthub/components/modules/screen-orientat
 
 ### 配置 {#configuration-5}
 
-`contexthub.screen-orientation` UI模块的实例不需要详细配置值。 以下JSON文本表示模块的默认配置。 请注意，默认情况下，`clickable`属性为`false`。 如果覆盖将`clickable`设置为`true`的默认配置，则单击模块会显示一个弹出窗口，您可以从中选择方向。
+`contexthub.screen-orientation` UI模块的实例不需要详细信息配置值。 以下JSON文本表示模块的默认配置。 请注意，默认情况下，`clickable`属性为`false`。 如果覆盖将`clickable`设置为`true`的默认配置，则单击模块会显示一个弹出窗口，您可以从中选择方向。
 
 ```javascript
 {
@@ -187,7 +186,7 @@ UI模块的源位于`/libs/granite/contexthub/components/modules/screen-orientat
 
 ## contexthub.tagcloud UI模块类型{#contexthub-tagcloud-ui-module-type}
 
-`contexthub.tagcloud` UI模块显示有关标记的信息。 在工具栏中，UI模块显示标记数。 弹出窗口会显示用于添加新标记的标记云和文本框。 UI模块从名为tagcloud的ContextHub存储中获取基于`contexthub.tagcloud`存储候选项的信息。
+`contexthub.tagcloud` UI模块显示有关标记的信息。 在工具栏上，UI模块显示标记数。 弹出窗口会显示用于添加新标记的标记云和文本框。 UI模块从名为tagcloud的ContextHub存储中获取基于`contexthub.tagcloud`存储候选项的信息。
 
 ![contexthub.tagcloud模块](assets/tagcloud-module.png)
 
@@ -195,7 +194,7 @@ UI模块的源位于`/libs/granite/contexthub/components/modules/tagcloud`。
 
 ### 配置 {#configuration-6}
 
-`contexthub.tagcloud` UI模块的实例不需要详细配置值。 以下JSON文本表示模块的默认配置。
+`contexthub.tagcloud` UI模块的实例不需要详细信息配置值。 以下JSON文本表示模块的默认配置。
 
 ```javascript
 {
@@ -209,17 +208,17 @@ UI模块的源位于`/libs/granite/contexthub/components/modules/tagcloud`。
 }
 ```
 
-## granite.用户档案UI模块类型{#granite-profile-ui-module-type}
+## granite.profile UI模块类型{#granite-profile-ui-module-type}
 
-`granite.profile` ContextHub UI模块显示当前用户的显示名称。 弹出窗口显示用户的登录名，并允许您更改显示名称的值。 UI模块从名为用户档案的ContextHub存储中获取基于[granite.用户档案](sample-stores.md#granite-profile-sample-store-candidate)存储候选的信息。
+`granite.profile` ContextHub UI模块显示当前用户的显示名称。 弹出窗口会显示用户的登录名，并允许您更改显示名称的值。 UI模块从名为profile的ContextHub存储中获取信息，该存储基于[granite.profile](sample-stores.md#granite-profile-sample-store-candidate)存储候选项。
 
-![granite.用户档案模块](assets/profile-module.png)
+![granite.profile模块](assets/profile-module.png)
 
 UI模块的源位于`/libs/granite/contexthub/components/modules/profile`。
 
 ### 配置 {#configuration-7}
 
-`granite.profile` UI模块的实例不需要详细配置值。 以下JSON文本表示模块的默认配置。
+`granite.profile` UI模块的实例不需要详细信息配置值。 以下JSON文本表示模块的默认配置。
 
 ```javascript
 {
