@@ -1,23 +1,22 @@
 ---
-title: AEM中Cloud Manager作为Cloud Service版本2020.4.0的发行说明
-description: AEM中Cloud Manager作为Cloud Service版本2020.4.0的发行说明
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+title: AEM as a Cloud Manager版本2020.4.0的发行说明
+description: AEM as a Cloud Manager版本2020.4.0的发行说明
+feature: 发行信息
+exl-id: 15665fb5-9444-416b-938a-45c31fdce5cf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 77%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service2020.4.0 {#release-notes}中的Cloud Manager发行说明
 
-# Adobe Experience Manager中Cloud Manager作为Cloud Service 2020.4.0 {#release-notes}的发行说明
-
-本页概述了AEM中作为Cloud Service 2020.4.0的Cloud Manager发行说明。
+本页面概述了AEM as a Cloud 2020.4.0中的Cloud Manager发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM中Cloud Manager作为Cloud Service 2020.4.0的发布日期为2020年4月09日。
+AEM as a Cloud ManagerCloud Service2020.4.0的发布日期是2020年4月9日。
 
 ## 新增功能 {#whats-new-cloud-manager}
 
@@ -38,4 +37,3 @@ AEM中Cloud Manager作为Cloud Service 2020.4.0的发布日期为2020年4月09�
 * 在某些情况下，生成图像步骤可能无法成功下载客户包。
 * 某些偶然发生的情况可能会阻止删除环境。
 * 不能终如收到 Experience Cloud 通知。
-
