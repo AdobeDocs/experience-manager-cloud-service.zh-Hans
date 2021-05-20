@@ -2,11 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-translation-type: tm+mt
-source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 93%
+source-wordcount: '402'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 93%
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
 | 版本 | 2021.04.0 |
-| 类型 | 连续更新 |
+| 类型 | 持续更新 |
 | 发行日期 | 持续更新 |
 
 ## 关键发行信息 {#key-articles}
@@ -38,10 +37,11 @@ ht-degree: 93%
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
-| [实施用户指南](/help/implementing/home.md) | 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。 |
+| [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
+| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [商务用户指南](/help/commerce-cloud/home.md) | 了解将AEM作为Cloud Service的Commerce Integration Framework。 |
+| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Commerce Integration FrameworkCloud Service。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
