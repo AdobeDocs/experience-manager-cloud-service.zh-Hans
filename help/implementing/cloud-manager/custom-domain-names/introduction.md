@@ -1,24 +1,23 @@
 ---
 title: 简介 — 自定义域名
 description: 简介 — 自定义域名
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
 
 ---
 
-
 # 简介 {#introduction}
 
-Cloud Manager允许您添加自定义域，通过UI以自助方式使用唯一的品牌名称来标识您的网站。 您的Adobe Experience Manager作为Cloud Service设置了默认域名，以`*.adobeaemcloud.com`结尾。 即使将自定义域名附加到网站后，此默认域名仍会保留。
+Cloud Manager允许您添加自定义域，以通过UI以自助方式使用唯一的品牌名称来标识您的网站。 您的Adobe Experience Manager as aCloud Service配置了默认域名，以`*.adobeaemcloud.com`结尾。 此默认域名将保留，即使在您将自定义域名附加到您的网站后也是如此。
 
 >[!NOTE]
->Cloud Manager中仅支持站点项目（发布服务）的自定义域名。 每个Cloud Manager环境最多可托管每个环境250个自定义域。
+>Cloud Manager仅支持Sites项目（发布服务）的自定义域名。 每个Cloud Manager环境最多可托管每个环境250个自定义域。
 
-使用Cloud Manager UI域设置页面或环境详细信息页面，具有权限的用户可以执行多个任务来管理环境的自定义域名，包括：
+使用Cloud Manager UI域设置页面或环境详细信息页面，具有权限的用户可以执行多项任务来管理环境的自定义域名，包括：
 
 * [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-* [查看或更新允许用](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) 户视图详细信息或替换即将过期的证书的自定义域名
+* [查看或更新自定义](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) 域名，该名称允许用户查看详细信息或替换即将过期的证书
 * [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
