@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 简介
-description: 'Adobe Experience Manager (AEM) as a Cloud Service 简介。 '
-translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+description: Adobe Experience Manager (AEM) as a Cloud Service 简介。
+exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service 简介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
