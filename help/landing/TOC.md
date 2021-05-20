@@ -3,7 +3,6 @@ sub-product: Adobe Experience Manager as a Cloud Service 帮助
 user-guide-title: Adobe Experience Manager as a Cloud Service 帮助
 feature: 发行信息
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '202'
