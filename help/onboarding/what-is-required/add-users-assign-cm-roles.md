@@ -1,35 +1,34 @@
 ---
 title: '系统管理员任务 '
 description: 可查看本页以了解如何以系统管理员身份添加用户并将其分配给Cloud Manager角色
-translation-type: tm+mt
-source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
+exl-id: 4c0f5783-02c1-4ea6-871a-03ea8a0847bf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
-
 # 系统管理员任务{#add-users-assign}
 
-系统管理员可以管理用户的各个方面，从访问权限到权限。 此用户是第一个在Admin Console和Cloud Manager中执行任务的开始。
-系统管理员将执行以下组织任务:
+系统管理员可管理其用户从访问到权限的各个方面。 此用户是第一个有权在Admin Console和Cloud Manager中开始执行任务的用户。
+系统管理员执行以下组织任务：
 
 * 添加用户
-* 将用户分配到Cloud Manager角色和权限
+* 将用户分配给Cloud Manager角色和权限
 
 ## 添加用户{#add-users}
 
 >[!NOTE]
 >您必须是系统管理员才能添加用户。
 
-1. 如果您是系统管理员，请导航到[Admin Console](https://adminconsole.adobe.com)。 或者，您也可以导航到Cloud Manager，在Cloud Manager中，您会看到&#x200B;**管理访问**&#x200B;按钮，如下所述。
+1. 如果您是系统管理员，请导航到[Admin Console](https://adminconsole.adobe.com)。 或者，您也可以导航到Cloud Manager，您将在其中看到&#x200B;**管理访问**&#x200B;按钮，如下所述。
 
-1. 单击位于Cloud Manager登陆页右上角的&#x200B;**管理访问**&#x200B;按钮，在新选项卡中打开Admin Console。
+1. 单击位于Cloud Manager登录页面右上角的&#x200B;**管理访问**&#x200B;按钮，以在新选项卡中打开Admin Console。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
-   在&#x200B;**Admin Console**&#x200B;中，您可以将用户添加到云管理器，并将其分配到角色，即Admin Console中的产品用户档案。
+   在&#x200B;**Admin Console**&#x200B;中，您可以将用户添加到Cloud Manager，并将其分配给角色，在Admin Console中称为产品配置文件。
 
 1. 从&#x200B;**产品和服务**&#x200B;卡中选择&#x200B;**Adobe Experience Manager作为Cloud Service**，如下所示。
 
@@ -39,12 +38,11 @@ ht-degree: 0%
 
    ![](/help/onboarding/what-is-required/assets/admin-console-2.png)
 
-1. 选择用户，然后为用户分配适当的云管理者角色或产品用户档案，如下所示。
+1. 选择用户，并为用户分配相应的Cloud Manager角色或产品配置文件，如下所示。
 
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >有关在Cloud Manager中提供的角色和权限的更多信息，请参阅[云管理器角色](/help/onboarding/what-is-required/user-roles-permissions.md)。
+   >请参阅[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md) ，了解有关Cloud Manager中提供的角色和权限的更多信息。
 
-   现在，您已将用户添加到Adobe Experience Manager作为Cloud Service产品上下文，并且设置了正确的角色或产品用户档案。
-
+   现在，您已将用户作为Cloud Service产品上下文添加到Adobe Experience Manager，并且其设置具有正确的角色或产品配置文件。
