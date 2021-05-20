@@ -1,14 +1,13 @@
 ---
 title: 处理任务
 description: 任务是指要对内容完成的工作项，可在项目中使用任务来确定当前任务的完成程度
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 93%
 
 ---
-
 
 # 处理任务 {#working-with-tasks}
 
@@ -48,7 +47,7 @@ ht-degree: 93%
 
 #### 任务详细信息 {#task-details}
 
-有关特定任务的详细信息，请在任务列表中点按／单击任务，然后打开**任务详细信息**。
+有关特定任务的详细信息，请在任务列表中，点按/单击该任务，然后打开**任务详**。
 
 ![任务详细信息](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -56,7 +55,7 @@ ht-degree: 93%
 
 在任务详细信息中，您可以编辑或添加评论。此外，项目中的所有评论都会显示在“评论”区域。
 
-![对任务的评论](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
+![任务注释](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
 ### 添加任务 {#adding-tasks}
 
@@ -75,7 +74,7 @@ ht-degree: 93%
 
 访问任务的另一种方式是使用收件箱。您可以在收件箱中打开内容以实施必需的更改。完成此操作后，将任务状态设置为“已完成”。如果任务被分配到您所属的用户组，则它们也会显示在您的收件箱中。在这种情况下，组内的任何成员都可以执行工作并完成任务。
 
-![任务](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
+![收件箱中的任务](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
 要完成任务，请选择相应的任务并单击&#x200B;**完成**。向该任务中添加信息，然后单击&#x200B;**完成**。有关更多信息，请参阅[您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
