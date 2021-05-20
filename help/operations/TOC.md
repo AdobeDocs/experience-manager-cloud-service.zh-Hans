@@ -5,7 +5,6 @@ breadcrumb-title: Operations 指南
 user-guide-description: 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。
 feature: 配置
 role: Administrator
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '63'
@@ -14,7 +13,7 @@ ht-degree: 100%
 ---
 
 
-# 操作 {#operations}
+# 运营 {#operations}
 
 + [AEM as a Cloud Service 的操作和维护](/help/operations/home.md)
 + [内容搜索与索引](indexing.md)
