@@ -1,14 +1,13 @@
 ---
 title: 规划阶段
 description: 规划阶段
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 91%
 
 ---
-
 
 # 规划 {#planning-phase}
 
@@ -16,7 +15,7 @@ ht-degree: 91%
 >id="aemcloud_cam_planning"
 >title="规划过渡"
 >abstract="在开始过渡到 Cloud Service 的历程之前，您应该熟悉 AEM as a Cloud Service，并查看已对它所做的显著更改以及已替换或已弃用的功能。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="最佳实践分析器"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
 
 在开始过渡到 Cloud Service 的历程之前，您应该熟悉 AEM as a Cloud Service，并查看已对它所做的显著更改以及已替换或已弃用的功能。
 
@@ -46,7 +45,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 您需要根据显著更改和已弃用功能对当前 AEM 源代码进行全面评估，以确定过渡历程中预期的工作量。
 
-您可以通过在当前AEM版本上运行最佳实践分析器来加速评估步骤。 有关详细信息，请参阅[最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
+您可以通过在当前AEM版本上运行最佳实践分析器来加快评估步骤。 有关更多详细信息，请参阅[Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
 
 >[!NOTE]
 >如果您已经有权访问 Cloud Manager 和云服务环境，则建议在 Cloud Manager 代码质量管道中运行当前代码，以评估与云服务兼容所需的代码更改。
@@ -60,4 +59,3 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 如果您以前尚未建立关键绩效指标 (KPI)，则建议为 Adobe Experience Manager (AEM) 实施建立 KPI，以帮助团队专注于最重要的事情。
 
 请参阅[制定 KPI](https://guided.adobe.com/welcome/aem/part6.html)，以了解如何为您的业务目标选择恰当的 KPI。
-
