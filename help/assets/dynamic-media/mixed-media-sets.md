@@ -13,7 +13,7 @@ ht-degree: 33%
 
 # 混合媒体集{#mixed-media-sets}
 
-通过混合媒体集，您可以在一个演示文稿中提供图像、图像集、旋转集和视频的混合。
+混合媒体集允许您在一个演示文稿中提供图像、图像集、旋转集和视频的混合。
 
 混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **** Pencil图标指示)。
 
@@ -21,13 +21,13 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->有关资产用户界面的信息，请参阅[使用触屏UI](/help/assets/manage-digital-assets.md)管理资产。
+>有关Assets用户界面的信息，请参阅[使用触屏UI](/help/assets/manage-digital-assets.md)管理资产。
 
 ## 快速入门：混合媒体集 {#quick-start-mixed-media-sets}
 
 要快速设置并运行混合媒体集，请执行以下步骤：
 
-1. [上传您的资产](#uploading-assets)。
+1. [上传资产](#uploading-assets)。
 
    首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/dynamic-media/image-sets.md)[和旋转集](/help/assets/dynamic-media/spin-sets.md)。 由于用户可以在混合媒体集查看器中缩放图像，因此在选择图像时，请务必考虑缩放因素。 确保图像的最大大小至少为2000像素。
 
@@ -47,37 +47,37 @@ ht-degree: 33%
 
 1. [预览混合媒体集](#previewing-mixed-media-sets)。
 
-   选择混合媒体集，之后您便可以进行预览。要在选定的查看器中检查混合媒体集，请单击缩略图图标。 您可以从左边栏下拉菜单中的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
+   选择混合媒体集，之后您便可以进行预览。要在选定的查看器中检查混合媒体集，请单击缩略图图标。 您可以从左边栏下拉菜单的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
 
 1. [发布混合媒体集](#publishing-mixed-media-sets)。
 
-   发布混合媒体集时，将会激活 URL 和嵌入字符串。此外，您必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
+   发布混合媒体集时，将会激活 URL 和嵌入字符串。此外，您还必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
 
 1. [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或者[嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
-   在发布混合媒体集后，Adobe Experience Manager资产会为混合媒体集创建URL调用并将其激活。 预览资产时，您可以复制这些 URL。或者，您也可以将这些 URL 嵌入到网站中。
+   Adobe Experience Manager Assets会为混合媒体集创建URL调用，并在您发布混合媒体集后激活它们。 预览资产时，您可以复制这些 URL。或者，您也可以将这些 URL 嵌入到网站中。
 
    选择混合媒体集，然后在左边栏下拉菜单中，选择&#x200B;**[!UICONTROL 查看器]**。
 
    请参 [阅将混合媒体集关联到网页](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[和嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
-如有必要，可以编辑[混合媒体集](#editing-mixed-media-sets)。 此外，您还可以视图和修改[混合媒体集属性](/help/assets/manage-digital-assets.md#editing-properties)。
+如有必要，您可以编辑[混合媒体集](#editing-mixed-media-sets)。 此外，您还可以查看和修改[混合媒体集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
 >[!NOTE]
 >
->如果您在创建集时遇到问题，请参阅[疑难解答Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)。
+>如果在创建集时遇到问题，请参阅[对Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)进行故障诊断。
 
 ## 上传资产 {#uploading-assets}
 
-首先为混合媒体集上传图像和视频。 请记住，用户可以在混合媒体集查看器中缩放图像。 因此，在选择图像时应考虑到这种缩放功能。 确保图像的最大大小至少为2000像素。
+首先为混合媒体集上传图像和视频。 请记住，用户可以在混合媒体集查看器中缩放图像。 因此，在选择具有此缩放功能的图像时，请牢记这一点。 确保图像的最大大小至少为2000像素。
 
-此外，如果要向混合媒体集添加旋转集或图像集，请也创建它们。
+此外，如果要向混合媒体集添加旋转集或图像集，也应创建旋转集或图像集。
 
 ## 创建混合媒体集 {#creating-mixed-media-sets}
 
 您可以向混合媒体集添加图像、图像集、旋转集和视频。 在将您的文件、图像集和旋转集添加到混合媒体集之前，请确保您已准备好发布它们。
 
-当您将资产添加到资产集时，资产会按字母数字顺序自动添加。 添加资产后，您可以手动对其重新排序或排序。
+在将资产添加到资产集时，资产会按字母数字顺序自动添加。 您可以在添加资产后手动重新排序或排序资产。
 
 **要创建混合媒体集，请执行以下操作：**
 
@@ -91,7 +91,7 @@ ht-degree: 33%
 
    >[!NOTE]
    >
-   >在创建混合媒体集时，您可以更改混合媒体集缩略图，或者允许Experience Manager根据混合媒体集中的资产自动选择缩略图。 要选择缩略图，请单击&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;并选择任何图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定要Experience Manager从混合媒体集中生成缩略图，请选择&#x200B;**[!UICONTROL 切换到自动缩略图]**。
+   >创建混合媒体集时，您可以更改混合媒体集缩略图，或允许Experience Manager根据混合媒体集中的资产自动选择缩略图。 要选择缩略图，请单击&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;并选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从混合媒体集中生成缩略图，请选择&#x200B;**[!UICONTROL 切换到自动缩略图]**。
 
 1. 要选择要包含在混合媒体集中的资产，请点按资产选择器。 选择它们，然后单击&#x200B;**[!UICONTROL 选择]**。
 
@@ -101,7 +101,7 @@ ht-degree: 33%
 
    ![chlimage_1-140](assets/chlimage_1-351.png)
 
-1. 根据需要，通过向上或向下拖动资产来对资产重新排序（必须选择&#x200B;**[!UICONTROL 重新排序]**&#x200B;图标）。
+1. 通过向上或向下拖动资产来重新排序资产（必要时必须选择&#x200B;**[!UICONTROL 重新排序]**&#x200B;图标）。
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
@@ -109,7 +109,7 @@ ht-degree: 33%
 
    >[!NOTE]
    >
-   >如果您要添加资产，请点按&#x200B;**[!UICONTROL 添加资产]**。
+   >如果要添加资产，请点按&#x200B;**[!UICONTROL 添加资产]**。
 
 1. 要删除资产，请选中相应的复选框，然后点按&#x200B;**[!UICONTROL 删除资产]**。
 1. 要应用预设，请点按右上角的&#x200B;**[!UICONTROL 预设]**，然后选择要应用于资产的预设。
@@ -117,7 +117,7 @@ ht-degree: 33%
 
 ## 编辑混合媒体集 {#editing-mixed-media-sets}
 
-您可以像在“资产”](/help/assets/manage-digital-assets.md)中对任何资产执行操作一样，直接在用户界面[中对混合媒体集中的资产执行各种编辑任务。 您还可以在混合媒体集中执行下列操作：
+您可以像在Assets](/help/assets/manage-digital-assets.md)中对任意资产执行操作一样，直接在用户界面[中对混合媒体集中的资产执行各种编辑任务。 您还可以在混合媒体集中执行下列操作：
 
 * 将资产添加到混合媒体集。
 * 对混合媒体集中的资产重新排序。
@@ -127,38 +127,38 @@ ht-degree: 33%
 
 **要编辑混合媒体集，请执行以下操作：**
 
-1. 执行下列任一操作：
+1. 执行以下任一操作：
 
    * 将鼠标悬停在混合媒体集资产上，然后点按&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
    * 将鼠标悬停在混合媒体集资产上，点按&#x200B;**[!UICONTROL 选择]**（复选标记图标），然后点按工具栏上的&#x200B;**[!UICONTROL 编辑]**。
 
    * 点按混合媒体集资产，然后点按工具栏上的&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
 
-1. 在混合媒体集编辑器中，执行下列任一操作：
+1. 在混合媒体集编辑器中，执行以下任一操作：
 
-   * 要重新排序资产 — 在左侧面板中，点按&#x200B;**[!UICONTROL 资产]**（图片图标），将资产拖动到新位置。
-   * 要添加资产 — 在工具栏中，点按&#x200B;**[!UICONTROL 添加资产]**。 导航到资产。 对于要添加的每个资产，将鼠标悬停在资产的图像（而非资产的名称）上，然后点按复选标记图标。 在右上角，点按&#x200B;**[!UICONTROL 选择]**。
+   * 要对资产重新排序 — 在左侧面板中，点按&#x200B;**[!UICONTROL Assets]**（图片图标），将资产拖动到新位置。
+   * 要添加资产 — 在工具栏中，点按&#x200B;**[!UICONTROL 添加资产]**。 导航到资产。 对于要添加的每个资产，将鼠标悬停在资产的图像（而非资产名称）上，然后点按复选标记图标。 点按右上角的&#x200B;**[!UICONTROL 选择]**。
 
-   * 要删除资产 — 在左侧面板中，点按&#x200B;**[!UICONTROL 资产]**（图片图标），然后选择资产。 在工具栏中，点按&#x200B;**[!UICONTROL 删除资产]**。
+   * 要删除资产 — 在左侧面板中，点按&#x200B;**[!UICONTROL Assets]**（图片图标），然后选择资产。 在工具栏中，点按&#x200B;**[!UICONTROL 删除资产]**。
 
-   * 要按资产名称的升序或降序排序，请在左侧面板中点按&#x200B;**[!UICONTROL 资产]**（图片图标）。 在&#x200B;**[!UICONTROL 资产]**&#x200B;标题的右侧，点按尖号图标的向上或向下。
+   * 要按资产名称的升序或降序排序，请在左侧面板中，点按&#x200B;**[!UICONTROL Assets]**（图片图标）。 在&#x200B;**[!UICONTROL Assets]**&#x200B;标题的右侧，点按向上或向下尖角图标。
 
       >[!NOTE]
       >
-      >* 要删除整个混合媒体集，请从任何查看模式(如&#x200B;**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列视图]**)导航到混合媒体集。 将鼠标悬停在资产上，然后点按复选标记图标，以便您能够选择它。 按键盘上的&#x200B;**[!UICONTROL Backspace]**，或单击工具栏上的&#x200B;**[!UICONTROL 更多]**（三个点），然后点按&#x200B;**[!UICONTROL 删除]**。
+      >* 要删除整个混合媒体集，请从任何查看模式（如&#x200B;**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列视图]**）导航到混合媒体集。 将鼠标悬停在资产上，然后点按复选标记图标，以便您选择它。 在键盘上按&#x200B;**[!UICONTROL Backspace]**，或单击工具栏上的&#x200B;**[!UICONTROL 更多]**（三个圆点），然后点按&#x200B;**[!UICONTROL Delete]**。
          >
          >
-      * 您可以通过导航到混合媒体集来编辑该集中的资产。 在左边栏中，点按&#x200B;**[!UICONTROL 设置成员]**，然后点按单个资产上的&#x200B;**[!UICONTROL 铅笔]**&#x200B;图标以打开编辑窗口。
+      * 您可以通过导航到混合媒体集来编辑资产。 在左边栏中，点按&#x200B;**[!UICONTROL 设置成员]**，然后点按单个资产上的&#x200B;**[!UICONTROL 铅笔]**&#x200B;图标以打开编辑窗口。
 
 
-1. 完成编辑后，点按&#x200B;**[!UICONTROL 保存]**。
+1. 完成编辑后，点按&#x200B;**[!UICONTROL Save]**。
 
    >[!NOTE]
    >
-   >* 要编辑混合媒体集中的资产，请导航到混合媒体集。 点按（不选择）该集，这样您就可以在Experience Manager集预览页中打开它。 在左边栏中，单击向下尖号以打开下拉列表，然后点按&#x200B;**[!UICONTROL 设置成员]**。 在“设置成员”页面中，将指针悬停在资产上，然后点按&#x200B;**[!UICONTROL 编辑]**（铅笔图标）以打开编辑页面。
+   >* 要编辑混合媒体集中的资产 — 请导航到混合媒体集。 点按（不选择）该集，以便在Experience Manager集预览页面中将其打开。 在左边栏中，单击向下尖角以打开下拉列表，然后点按&#x200B;**[!UICONTROL 设置成员]**。 在“设置成员”页面中，将鼠标悬停在资产上，然后点按&#x200B;**[!UICONTROL 编辑]**（铅笔图标）以打开编辑页面。
       >
       >
-   * 要删除整个混合媒体集 — 在任何查看模式(如卡片视图或列视图)中，请导航到混合媒体集。 将鼠标悬停在集上，然后点按&#x200B;**[!UICONTROL 选择]**（复选标记图标）。 按键盘上的&#x200B;**[!UICONTROL Backspace]**，或点按&#x200B;**[!UICONTROL 更多]**（三个点的行），然后点按&#x200B;**[!UICONTROL 删除]**。
+   * 要删除整个混合媒体集 — 从任何查看模式（如“卡片”视图或“列”视图）中，导航到混合媒体集。 将鼠标悬停在集上，然后点按&#x200B;**[!UICONTROL 选择]**（复选标记图标）。 在键盘上按&#x200B;**[!UICONTROL Backspace]**，或点按&#x200B;**[!UICONTROL 更多]**（三个圆点的行），然后点按&#x200B;**[!UICONTROL Delete]**。
 
 
 ## 预览混合媒体集 {#previewing-mixed-media-sets}
@@ -171,4 +171,4 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->如果您第一次发布混合媒体集时未完全结束在投放服务中，请再次发布混合媒体集。
+>如果混合媒体集在您首次发布时未完全在投放服务中结束，请第二次发布混合媒体集。
