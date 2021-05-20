@@ -1,28 +1,27 @@
 ---
-title: 删除SSL证书——管理SSL证书
-description: 删除SSL证书——管理SSL证书
-translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+title: 删除SSL证书 — 管理SSL证书
+description: 删除SSL证书 — 管理SSL证书
+exl-id: 43f66871-cca4-4709-95d0-68aa715c0da2
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
 
 ---
 
-
 # 删除SSL证书{#deleting-an-ssl-certificate}
 
 >[!IMPORTANT]
->从云管理器删除证书是无法撤消的永久操作。 最佳实践是，在Cloud Manager用户界面中删除任何必需的SSL文件之前，将其保存在本地。
+>从Cloud Manager中删除证书是一项无法撤消的永久操作。 最佳做法是在Cloud Manager用户界面中删除任何必需的SSL文件之前，将其保存在本地。
 
-要在云管理器中删除SSL证书，用户必须处于业务所有者或部署管理器角色。 云管理器将不允许您删除具有一个或多个与其关联的域的SSL证书。  删除SSL证书之前，必须先删除所有关联域。 请参阅[删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以了解更多信息。
+要在Cloud Manager中删除SSL证书，用户必须处于业务所有者或部署管理员角色。 Cloud Manager将不允许您删除一个SSL证书，该证书具有一个或多个与其关联的域。  删除SSL证书之前，必须删除所有关联的域。 请参阅[删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以了解更多信息。
 
-请按照以下步骤删除SSL证书：
+按照以下步骤删除SSL证书：
 
-1. 从&#x200B;**环境**&#x200B;页面导航到&#x200B;**SSL证书**屏幕。
+1. 从&#x200B;**Environments**&#x200B;页面导航到&#x200B;**SSL Certificates**屏幕。
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 1. 确定要删除的SSL证书名称所在的行。
 1. 选择&#x200B;**...**&#x200B;菜单。
-1. 选择&#x200B;**删除**。
+1. 选择&#x200B;**Delete**。
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete01.png)
 1. 从&#x200B;**删除SSL证书**&#x200B;对话框确认您的提交。
