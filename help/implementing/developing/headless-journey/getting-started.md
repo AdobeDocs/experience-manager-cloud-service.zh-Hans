@@ -1,144 +1,144 @@
 ---
-title: AEM Headless入门Cloud Service
-description: 在此部分的AEM无头开发人员历程中，了解AEM无头的先决条件。
+title: AEM Headless as aCloud Service入门
+description: 在AEM Headless开发人员历程的这一部分中，了解AEM Headless的先决条件。
 hide: true
 hidefromtoc: true
 index: false
 exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3073'
 ht-degree: 0%
 
 ---
 
-# 将AEM Headless作为Cloud Service{#getting-started}入门
+# AEM Headless as a Cloud Service入门{#getting-started}
 
 >[!CAUTION]
 >
->正在进行中的工作 — 此文档的创建正在进行中，不应理解为完整或明确，也不应将其用于生产目的。
+>已过时 — 此草稿内容已被新的[无头开发人员历程文档取代。](/help/journey-headless/developer/overview.md)
 
-在[AEM无头开发者历程的这一部分中，](overview.md)了解开始使用AEM无头项目所需的操作。
+在[AEM Headless开发人员历程的此部分中，](overview.md)了解开始使用AEM Headless时需要满足哪些条件。
 
-## 迄今为止的故事{#story-so-far}
+## 到目前为止{#story-so-far}
 
-在AEM无外设旅程的上一个文档中，[了解CMS无外设开发](learn-about.md)您学习了无外设CMS的基本理论，现在您应：
+在AEM无头历程的上一个文档中， [了解CMS无头开发](learn-about.md)您学习了无头CMS的基本理论，您现在应该：
 
-* 了解无外设内容投放的基本概念和术语
-* 了解为何和何时需要无头
-* 深入了解无外设概念的使用方式及其相互关系
+* 了解无头内容交付的基本概念和术语
+* 了解为何需要无头
+* 在高级别了解无头概念的使用方式及其相互关系
 
-本文以这些基础为基础，因此您了解如何使用AEM实施无外设解决方案。
+本文基于这些基础知识，以便您了解如何使用AEM来实施无外设解决方案。
 
 ## 目标 {#objective}
 
-此文档可帮助您在自己项目的上下文中了解AEM无头。 阅读后，您应：
+本文档可帮助您在自己项目的上下文中了解AEM Headless。 阅读后，您应该：
 
-* 了解AEM无外设功能的基础知识。
-* 了解使用AEM无外设功能的先决条件。
-* 了解AEM无外设集成级别。
-* 能够根据范围定义您的项目。
+* 了解AEM无头功能的基础知识。
+* 了解使用AEM无头功能的先决条件。
+* 请注意AEM无头集成级别。
+* 能够根据范围定义项目。
 
 ## AEM基础知识{#aem-basics}
 
-在AEM中定义无外设项目之前，了解一些基本的AEM概念非常重要。
+在AEM中定义无头项目之前，请务必了解一些基本的AEM概念。
 
-### 作者实例 {#author}
+### 创作实例 {#author}
 
-最简单的方法是， AEM包含一个作者实例和一个[发布实例](#publish)，这两个实例可共同创建、管理和发布您的内容。
+最简单的方法是，AEM包含一个创作实例和一个[发布实例](#publish)，这两个实例可共同创建、管理和发布您的内容。
 
-内容从创作实例开始。 内容作者可在此处创建其内容。 作者环境为作者优惠了各种工具，以创建、组织和重复使用其内容。
+内容从创作实例开始。 内容作者可在此处创建其内容。 创作环境为作者提供了各种工具，用于创建、组织和重复使用其内容。
 
 ### 发布实例 {#publish}
 
-在创作实例中创建内容后，必须发布内容，以便其他服务可以使用。 发布实例包含所有已发布的内容。
+在创作实例中创建内容后，必须将其发布以供其他服务使用。 发布实例包含已发布的所有内容。
 
 ### 复制 {#replication}
 
-复制是将内容从创作实例传输到发布实例的操作。 当作者或其他具有适当权限的用户发布内容时，AEM会自动执行此操作。
+复制是将内容从创作实例传输到发布实例的操作。 当作者或其他具有相应权限的用户发布内容时，AEM会自动执行此操作。
 
 ### AEM基础知识摘要{#aem-basics-summary}
 
-在最简单的级别上，在AEM中创建数字体验需要以下步骤：
+在最简单的级别上，在AEM中创建数字体验需要执行以下步骤：
 
-1. 您的内容作者将在创作实例中创建您的无外设内容。
-1. 当此内容准备就绪时，它将复制到发布实例。
-1. 然后，可以调用API来检索此内容。
+1. 内容作者将在创作实例中创建无标题内容。
+1. 此内容准备就绪后，会复制到发布实例。
+1. 然后，可以调用API以检索此内容。
 
-AEM Headless通过提供强大的工具来管理下一节中描述的[无头内容，以此技术基础为基础。](#aem-headless-basics)
+AEM Headless以此技术基础为基础，提供了功能强大的工具来管理下一节中描述的[无头内容。](#aem-headless-basics)
 
-## AEM无头基础{#aem-headless-basics}
+## AEM Headless基础知识{#aem-headless-basics}
 
-AEM的无外设功能基于几个关键功能。 这些内容将在旅程的后半部分详细说明。 现在，只有了解他们所做工作的基础知识和所谓的知识才很重要。
+AEM的无头功能基于一些关键特性。 这些内容将在历程的后续部分中详细说明。 现在，只要了解他们的基本操作和所谓，就很重要了。
 
 ### 内容片段模型 {#content-fragment-models}
 
-内容片段模型定义您将在AEM中创建和管理的数据和内容的结构。 它们用作内容的基架。 选择创建内容时，作者将从您定义的内容片段模型中进行选择，这些模型将引导他们创建内容。
+内容片段模型定义要在AEM中创建和管理的数据和内容的结构。 它们是你内容的脚手架。 选择创建内容时，作者将从您定义的内容片段模型中进行选择，这将指导他们创建内容。
 
 ### 内容片段 {#content-fragments}
 
-内容片段允许您设计、创建、管理和发布独立于页面的内容。 它们允许您准备内容，准备好在多个位置和多个渠道中使用。
+内容片段允许您设计、创建、策划和发布独立于页面的内容。 利用这些功能，可准备内容以准备在多个位置和多个渠道上使用。
 
-内容片段包含结构化内容，可以以JSON格式提供。
+内容片段包含结构化内容，可以采用JSON格式交付。
 
 ### GraphQL和REST API {#apis}
 
-要无头地修改您的内容，AEM优惠了两个强大的API。
+为了无拘无束地修改内容，AEM提供了两个强大的API。
 
-* GraphQL API允许您创建访问和传送内容片段的请求。
+* GraphQL API允许您创建访问和交付内容片段的请求。
 * 资产REST API允许您创建和修改内容片段（和其他资产）。
 
-您将了解这些API以及如何在AEM无外设旅程的稍后部分使用它们。 或参阅下面的[其他资源](#additional-resources)部分以获取更多文档。
+您将在AEM无头历程的后续部分中了解这些API以及如何使用它们。 有关其他文档，请参阅下面的[其他资源](#additional-resources)部分。
 
-## 无外设集成级别{#integration-levels}
+## 无头集成级别{#integration-levels}
 
-AEM支持CMS的全无外设和传统的完整堆栈或外设模型。 但AEM不仅优惠了这两种独有的选择，还能够支持混合模型，这两种模型结合了两者的优势，为您的无外设项目提供了独特的灵活性。
+AEM支持CMS的全无头模型和传统的全栈或头模型。 但是，AEM不仅提供了这两种独有的选择，还提供了支持混合模型的功能，该混合模型结合了两者的优势，为您的无头项目提供了独特的灵活性。
 
-为了确保您对无头概念的理解，此AEM无头开发人员历程侧重于纯无头模型，使您能够尽快上手并运行，而无需在AEM中进行编码。
+为确保您了解无头概念，此AEM无头开发人员历程重点介绍纯无头模型，以便您尽快启动并运行，而无需在AEM中进行编码。
 
-但是，理解AEM无头功能后，您应该会注意到您面临的其他混合可能性。 我们将这些案件列在下面，以便您了解。 在旅程结束时，您将更详细地介绍这些概念，以备您的项目需要此类灵活性。
+但是，您应该了解了解AEM无头功能后，您还会看到其他混合可能性。 我们在下面列出这些案例，以便您了解。 在历程结束时，您将更详细地介绍这些概念，以防项目需要这种灵活性。
 
-### 您已经有了对无标题内容的外部消费，如单页应用程序(SPA)。{#already-have-a-spa}
+### 您已经对无标题内容进行了外部使用，例如单页应用程序(SPA)。 {#already-have-a-spa}
 
-假设您的基本要求至少是将内容从AEM交付到现有的外部服务。
+假设您的基本要求至少是要将内容从AEM交付到现有的外部服务。
 
-#### 第1级：内容片段集成 — 传统无头模型{#level-1}
+#### 级别1:内容片段集成 — 传统无头模型{#level-1}
 
-此集成级别是传统的无外设模型，它允许内容作者在AEM中创建内容，然后使用GraphQL将内容无缝地交付到任意数量的外部服务，或使用资产API从外部服务编辑内容。 AEM中无需编码。
+此级集成是传统的无头模型，允许内容作者在AEM中创建内容，并使用GraphQL将内容无头地交付给任意数量的外部服务，或使用Assets API从外部服务编辑这些服务。 在AEM中不需要编码。
 
-在此模型中，AEM仅用于通过使用AEM内容片段创建和提供内容。 渲染以及与内容的交互被委托给消费性的外部应用程序，通常是单页应用程序(SPA)。
+在此模型中，AEM仅用于通过使用AEM内容片段创建和提供内容。 呈现内容以及与内容的交互被委派给消费型外部应用程序，通常是单页应用程序(SPA)。
 
-#### 级别2:将SPA嵌入AEM - Hybrid Model {#level-2}
+#### 级别2:将SPA嵌入AEM — 混合模型{#level-2}
 
-此级集成构建于第一级，但也允许将外部应用程序(SPA)嵌入到AEM中，以便内容作者可以在AEM内外部应用程序的上下文中视图内容。 该应用程序还支持在AEM内对外部应用程序进行有限编辑。
+此级别的集成构建于第一级之上，但也允许将外部应用程序(SPA)嵌入到AEM中，以便内容作者可以在AEM内的外部应用程序上下文中查看内容。 该应用程序还支持在AEM中对外部应用程序进行有限编辑。
 
-此级别的优势在于，允许内容作者以强大的方式在AEM中灵活创作内容，其内容与嵌入的外部SPA进行上下文相关展示，同时仍无头地交付内容。
+此级别的优势在于，允许内容作者以标题方式在AEM中灵活创作内容，其内容与嵌入的外部SPA呈现在上下文中，同时仍无拘无束地交付内容。
 
-#### 第3级：在AEM中嵌入并完全启用SPA — 混合型号{#level-3}
+#### 第3级：在AEM中嵌入和完全启用SPA — 混合模型{#level-3}
 
-此级别的集成在第二级的基础上构建，它允许外部SPA中的大多数内容在AEM中进行编辑。
+此级别的集成在级别2的基础上构建，具体方法是：允许外部SPA中的大多数内容在AEM中可编辑。
 
-### 您还没有无头内容的外部用户，如单页应用程序(SPA)。{#do-not-have-a-spa}
+### 您还没有无标题内容的外部使用者，例如单页应用程序(SPA)。 {#do-not-have-a-spa}
 
-如果您的目标是创建一个无头地使用AEM内容的新SPA，则可以使用内容片段等功能管理无头内容，还可以使用AEM SPA Editor框架构建SPA。
+如果您的目标是创建一个无头地使用AEM内容的新SPA，则可以使用内容片段等功能管理您的无头内容，还可以使用AEM SPA编辑器框架构建SPA。
 
-使用SPA编辑器，SPA不仅会读取AEM中的内容，而且内容作者还可以在AEM中完全编辑，从而使您能够灵活地进行无头投放和AEM中的上下文编辑。
+使用SPA编辑器，SPA不仅会使用AEM中的内容，而且内容作者还可以在AEM中完全编辑，从而让您既能够灵活地进行无标题交付，又能够在AEM中进行上下文编辑。
 
 ## 要求和先决条件{#requirements-prerequisites}
 
-在开始无头AEM项目之前，有许多要求。
+在开始您的无外设AEM项目之前，有许多要求。
 
 ### 知识 {#knowledge}
 
 * GraphQL
-* 使用React或Angular框架创建SPA的开发经验
-* AEM创建内容片段和使用编辑器的基本技能
+* 使用React或SPA框架创建Angular的开发经验
+* 基本AEM技能：创建内容片段和使用编辑器
 
 ### 工具 {#tools}
 
-* 用于测试部署项目的沙箱访问
+* 用于测试部署项目的沙盒访问
 * 用于数据建模和测试的本地开发实例
-* 现有外部SPA或您的无头AEM内容的其他消费者
+* 您的无头SPA内容的现有外部AEM或其他使用者
 
 ## 定义项目{#defining-your-project}
 
@@ -146,13 +146,13 @@ AEM支持CMS的全无外设和传统的完整堆栈或外设模型。 但AEM不�
 
 ### 范围 {#scope}
 
-明确项目范围非常重要。 范围会通知接受标准并允许您确定完成的定义。
+必须明确界定项目的范围。 范围会告知接受标准，并允许您确定“完成”的定义。
 
-您需要扪心自问的第一个问题是“我如何使用AEM Headless？” 一般来说，答案应该是您已拥有或将来拥有一个使用您自己的开发工具而不是与AEM结合构建的体验应用程序。 此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户的体验应用程序。 使用AEM Headless的目标是在AEM中创建、存储和管理的内容，并借助最新API为您的体验应用程序提供内容，这些API将调用AEM Headless直接从体验应用程序获取内容或甚至完整的CRUD内容。 如果您不希望这样做，您可能希望[返回AEM文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)并找到最适合您想要完成的部分。
+您需要问自己的第一个问题是“我尝试使用AEM Headless实现什么？” 答案通常应该是，您将来拥有或将拥有一个体验应用程序，该应用程序是您使用自己的开发工具而不是与AEM结合构建的。 此体验应用程序可以是移动设备应用程序、网站，或任何其他面向客户的最终用户体验应用程序。 使用AEM Headless的目标是使用最新的API，为您的体验应用程序提供在AEM中创建、存储和管理的内容，这些API将调用AEM Headless以直接从您的体验应用程序中获取内容，甚至是完全CRUD内容。 如果您不希望执行此操作，则可能希望[返回AEM文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)，并找到更适合您想要完成的部分。
 
-### 角色和责任{#roles-responsibilities}
+### 角色和职责{#roles-responsibilities}
 
-任何单个项目的角色都会有所不同，但在AEM无外设开发内容中需要考虑的重要角色是：
+任何单个项目的角色都将有所不同，但在AEM无头开发内容中需要考虑的重要角色是：
 
 * [管理员](#administrator)
 * [内容作者](#content-author)
@@ -161,140 +161,140 @@ AEM支持CMS的全无外设和传统的完整堆栈或外设模型。 但AEM不�
 
 #### 管理员 {#administrator}
 
-管理员负责系统的基本设置和配置。 例如，管理员将在Adobe用户管理系统中设置您的组织，即Identity Management系统(IMS)。 在IMS中的Adobe创建组织后，管理员将是组织中第一个从Adobe接收电子邮件邀请的用户。 管理员将能够登录IMS并添加其他角色的用户。
+管理员负责系统的基本设置和配置。 例如，管理员将在Adobe用户管理系统(称为Identity Management系统(IMS))中设置您的组织。 在IMS中的Adobe创建了您的组织后，管理员将是组织中第一个从Adobe接收电子邮件邀请的用户。 管理员将能够登录IMS并添加其他角色的用户。
 
-管理员配置用户后，将授予他们访问所有AEM资源的权限，以完成其使用AEM无头交付体验应用程序的贡献者的工作。
+管理员配置用户后，他们将有权访问所有AEM资源，以完成其作为使用AEM Headless交付体验应用程序贡献者的工作。
 
-管理员应是设置AEM并准备运行时环境的用户，以使[内容作者](#content-author)能够创建和更新内容，并使[开发人员](#developer)能够使用API获取或修改其体验应用程序的内容。
+管理员应是设置AEM并准备运行时环境的用户，以使[内容作者](#content-author)能够创建和更新内容，而[开发人员](#developer)能够使用API获取或修改其体验应用程序的内容。
 
 #### 内容作者{#content-author}
 
-内容作者创建和管理AEM无谓提供的内容。 内容作者使用AEM功能（如内容片段和资产控制台）管理其内容。
+内容作者创建并管理由AEM无头地交付的内容。 内容作者使用AEM功能（如内容片段和资产控制台）管理其内容。
 
 内容作者应牢记以下最佳实践。
 
-#### 计划本地化 {#localization}
+#### 本地化计划 {#localization}
 
-在项目开始时计划翻译和本地化。 将“国际化项目经理”视为一个单独的角色，其职责是定义哪些内容应进行翻译，哪些内容不进行翻译，哪些翻译的内容可能由区域或本地内容制作者修改。
+在项目开始时计划翻译和本地化。 将“国际化项目经理”视为一个单独的角色，其职责是定义哪些内容应被翻译、哪些不应翻译，以及哪些翻译内容可能由区域或本地内容制作者进行修改。
 
-根据您需要的内容本地化创建计划。
+制定所需内容本地化计划。
 
-* 您只是需要不同的语言或语言才能采用区域特定语言吗？
+* 您是否需要不同的语言或语言才能适应地区具体情况？
 * 您是否需要富媒体内容（如图像或视频）在不同区域设置中有所不同？
 
-清楚您的内容更新工作流程。 系统需要支持哪些批准过程？ 是否可能利用AEM工作流来自动化此过程？
+请明确内容更新工作流。 系统需要支持哪些批准流程？ 是否可以利用AEM工作流来自动执行此过程？
 
-请注意，您的[内容层次结构](#content-hierarchy)可以利用它简化本地化。
+请注意，您的[内容层级](#content-hierarchy)可以利用来简化本地化过程。
 
 有关AEM工作流和本地化工具的其他文档，请参阅[其他资源](#additional-resources)部分。
 
 ##### 利用内容层次结构{#content-hierarchy}
 
-文件夹层次结构可以解决与内容管理相关的两个主要问题：
+文件夹层次结构可以解决与内容管理有关的两个主要问题：
 
-* [本地化](#localization) - AEM通过在特定于区域设置的文件夹中维护内容副本来管理内容本地化。
-* 组织 — 文件夹用于定义支持本地化需求以及逻辑管理内容片段所需的内容层次结构。
+* [本地化](#localization)  - AEM通过维护特定于区域设置的文件夹中的内容副本来管理内容的本地化。
+* 组织 — 文件夹用于定义支持本地化需求所需的内容层次结构，以及在逻辑上管理内容片段。
 
-AEM允许非常灵活的内容结构，并且层次结构可以任意大。 但是，必须认识到，对文件夹结构所做的任何更改都可能会对[依赖内容路径的现有查询产生意外的后果。](#developer) 因此，预先明确定义的层次结构对内容作者非常有用。
+AEM允许非常灵活的内容结构，并且层级可以任意大。 但是，必须认识到，对文件夹结构所做的任何更改都可能会对依赖内容路径的现有查询产生意想不到的后果。[](#developer) 因此，预先明确定义的层级结构对内容作者可能非常有用。
 
-也可以限制文件夹仅允许某些类型的内容（基于内容片段模型）。 通常建议始终显式指定允许对层次结构中的所有文件夹使用的模型。 指定给定文件夹允许的内容：
+文件夹也可以限制为仅允许某些类型的内容（基于内容片段模型）。 通常建议始终明确指定允许使用哪些模型来访问层次结构中的所有文件夹。 为给定文件夹指定允许的内容：
 
 * 阻止内容作者创作不属于该文件夹的内容。
-* 通过筛选在创建过程中允许在文件夹中显示的内容类型来优化内容创建过程，从而仅显示有效类型的内容。
+* 通过筛选创建期间文件夹中允许的内容类型来优化内容创建过程，以仅显示有效类型的内容。
 
-通过创建适当的内容结构，跨渠道协调无头内容创作变得更加轻松，以便最大化内容重用。 跨多个渠道利用内容将大大提高内容生产效率和更改管理。
+通过创建适当的内容结构，可以更轻松地跨渠道协调无头内容创作，以最大限度地重复利用内容。 跨多个渠道利用内容将大大提高内容生产效率和更改管理。
 
 ##### 建立良好的命名约定{#naming-conventions}
 
-内容片段名称必须为内容作者的描述性。 AEM透明地处理转义和/或截断存储库级别上使用的ID的名称。 因此，内容作者提供的逻辑名称应始终可读并表示内容。
+内容片段名称必须为内容作者提供描述性。 AEM可透明地处理转义和/或截断存储库级别上使用的ID的名称。 因此，内容作者提供的逻辑名称应始终可读并表示内容。
 
 * 错误名称：`cta_btn_1`
 * 好名：`Call To Action Button`
 
 有关AEM页面命名约定的其他文档，请参阅[其他资源](#additional-resources)部分。
 
-##### 不要过度扩展内容嵌套{#content-nesting}
+##### 不要过度嵌套内容{#content-nesting}
 
-[内容](#content-fragments) 片段用在AEM中创建无头内容。AEM支持内容片段多达十级的内容嵌套。 但是，务必记住，AEM需要反复解析父内容片段中定义的每个引用，然后检查所有同级中是否存在任何子引用。 这些操作可以快速累加并成为性能问题。
+[内容](#content-fragments) 片段在AEM中用于创建无头内容。AEM最多支持对内容片段嵌套10级内容。 但是，请务必记住，AEM将需要迭代解析父内容片段中定义的每个引用，然后检查所有同级中是否存在任何子引用。 这些操作可以快速加总，并成为性能问题。
 
 作为一般经验法则，内容片段引用不应嵌套在五个级别以上。
 
 #### 内容建模器{#content-modeler}
 
-内容建模器可分析需要无头传送的数据需求，并定义此数据的结构。 这些结构在AEM中称为[内容片段模型](#content-fragment-models)。 内容片段模型用作内容作者创建的内容片段的基础。
+内容建模器可分析需要无头传送的数据的要求，并定义此数据的结构。 在AEM中，这些结构称为[内容片段模型](#content-fragment-models)。 内容片段模型用作内容作者创建的内容片段的基础。
 
-定义内容片段模型时的一个有用方法是创建映射到将使用内容的应用程序的UX组件的模型。
+定义内容片段模型时的一种有用方法是，创建映射到将使用内容的应用程序的UX组件的模型。
 
-由于内容作者在创建新内容时不断与模型交互，将模型与UX对齐有助于他们直观地呈现最终的数字体验。 更进一步，您可以将图标指定到表示UX元素的内容片段模型，以便作者能够根据视觉提示直观地选择正确的模型。
+由于内容作者在创建新内容时会不断与模型交互，因此将模型与UX保持一致有助于他们可视化最终的数字体验。 更进一步地，您可以向内容片段模型分配表示UX元素的图标，以便作者能够根据视觉提示直观地选择正确的模型。
 
 #### 开发人员 {#developer}
 
-开发人员负责将在AEM中创建的内容无头地与该内容的消费者结合在一起，该内容通常可以是单页应用程序(SPA)、渐进式Web应用程序(PWA)、Web商店或AEM外部的其他服务。
+开发人员负责将在AEM中无头创建的内容与该内容的消费者连接在一起，这些内容通常可以是单页应用程序(SPA)、渐进式Web应用程序(PWA)、Web Shop或AEM外部的其他服务。
 
-GraphQL是AEM与无外设内容消费者之间的“纽带”。 GraphQL是查询AEM所需内容的语言。
+GraphQL充当AEM与无头内容使用者之间的“胶水”。 GraphQL是用于查询AEM所需内容的语言。
 
-开发人员在规划查询时应牢记一些基本建议：
+开发人员在规划其查询时应牢记一些基本建议：
 
 * 查询不应依赖固定路径(`ByPath`)来检索内容片段。
-   * [内容作者对内容片段层次结构具有](#content-hierarchy) 完全的控制权，并可以进行会破坏此类查询的更改。
-   * 查询应选择使用动态查询参数引用内容片段模型，以过滤结果以生成所需的有效负荷。
-* 为获得最佳查询性能，请始终在AEM中使用持久查询。 在旅程的稍后部分将讨论这些问题。
-* GraphQL设计为遵循格言“请求您确切需要的内容，并准确获得所需内容”的声明性。 这意味着在创建GraphQL查询时，应始终避免在关系查询库中创建`select *`-type。
+   * [内容作者对内容片段层次结构具有完](#content-hierarchy) 整的控制权，并可以进行可能会破坏此类查询的更改。
+   * 相反，查询应选择包含动态查询参数的内容片段模型引用，以筛选结果以生成所需的有效负载。
+* 为获得最佳查询性能，请始终在AEM中使用持久查询。 这些内容将在历程的后面进行讨论。
+* GraphQL旨在按照以下格言进行声明：“请求您确切需要的内容，并准确获取这些内容。” 这意味着在创建GraphQL查询时，应始终避免在关系数据库中可能创建的`select *`类型查询。
 
-对于使用AEM的[典型的无头实施，](#level-1)开发人员不需要AEM的编码知识。
+对于使用AEM的典型[无头实施，](#level-1)开发人员不需要AEM的编码知识。
 
 ### 性能要求{#performance-requirements}
 
 要使任何项目成功，必须在创建任何内容之前考虑性能。
 
-您必须了解您的用户/访客期望，并为此进行设计。 设置服务级别目标(SLO)并衡量它们，了解您是否达到用户的期望。
+您必须了解用户/访客对这些方面的期望和设计。 设置服务级别目标(SLO)并衡量这些目标，以了解您是否满足用户的期望。
 
 #### 流量模式{#traffic-patterns}
 
-了解流量和交通模式开始，收集过去所掌握的信息，然后预测未来几年的预期增长。 需要考虑的一些最重要变量：
+要了解流量和流量模式，首先要收集您过去所了解的信息，然后预测未来几年的预期增长。 需要考虑的一些最重要的变量：
 
-* 您预计每小时/天/月有多少个API调用，是否存在高峰和季节性？
+* 您预计每小时/天/月会有多少个API调用，并且有可能出现峰值和季节性？
 * 有多少个不同的内容作者？
-* 您预计并发工作的内容作者有多少？
+* 您预计有多少内容作者同时工作？
 * 内容更新的频率是多少？
-* 需要多少种内容模型？
+* 需要多少个内容模型？
 * 需要多少个模型实例？
 
 #### 更新频率{#update-frequency}
 
-很多情况下，不同体验部分的内容更新频率不同。 了解这一点对于能够优化CDN和缓存配置非常重要。 这也是[内容建模器](#content-modeler)的重要输入，因为它们设计用于表示您的内容的模型。 请考虑：
+体验的不同部分往往具有不同的内容更新频率。 了解这一点对于能够优化CDN和缓存配置非常重要。 这也是[内容建模器](#content-modeler)的重要输入，因为它们设计模型来表示您的内容。 请考虑：
 
-* 某些类型的内容必须在特定时间段后过期？
-* 是否存在特定于用户的元素，因此无法缓存？
+* 某些类型的内容是否会在特定时间段后过期？
+* 是否有特定于用户的元素，因此无法缓存？
 
 ## 下一步是什么{#what-is-next}
 
-现在您已完成了AEM Headless Developer历程的这一部分，您应：
+现在，您已完成AEM Headless开发人员历程的这一部分，接下来您应该：
 
-* 了解AEM无外设功能的基础知识。
-* 了解使用AEM无外设功能的先决条件。
-* 了解AEM无外设集成级别。
-* 能够根据范围定义您的项目。
+* 了解AEM无头功能的基础知识。
+* 了解使用AEM无头功能的先决条件。
+* 请注意AEM无头集成级别。
+* 能够根据范围定义项目。
 
-您应继续您的AEM无头旅程，接下来查看文档[使用AEM无头体验的第一条路径](path-to-first-experience.md)，了解如何设置必要的工具以及如何开始考虑在AEM中建模您的数据。
+您应该继续您的AEM无头历程，方法是接下来查看文档[使用AEM Headless的首次体验路径](path-to-first-experience.md)，您将在其中了解如何设置必要工具以及如何开始考虑在AEM中建模数据。
 
 ## 其他资源 {#additional-resources}
 
-尽管建议您通过查看文档[使用AEM无头体验的第一条路径，进入无头开发旅程的下一部分，](path-to-first-experience.md)以下是一些附加的可选资源，可以更深入地了解本文档中提到的某些概念，但无需继续无头开发旅程。
+虽然建议您通过查看文档[使用AEM Headless获得首次体验的路径来进入无头开发历程的下一部分，但是](path-to-first-experience.md)以下是一些额外的可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头开发历程。
 
-* [Adobe Experience ManagerCloud Service体系结构简介](/help/core-concepts/architecture.md)  — 将AEM理解为Cloud Service
-* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 使用这些实践教程探索如何使用AEM将内容交付到无头端点的各种选项并选择适合您的选项。
-* [无外设内容管理使用](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) GraphQL API — 请通过本课程概述在AEM中实现的GraphQL API。需要通过AdobeID进行身份验证。
+* [Adobe Experience ManagerCloud Service架构简介](/help/core-concepts/architecture.md)  — 了解AEM作为Cloud Service的结构
+* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 通过这些动手实践教程，了解如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。
+* [使用GraphQL API的无头内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  — 请阅读本课程，概述在AEM中实施的GraphQL API。需要通过AdobeID进行身份验证。
 * [AEM指南WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  — 此GitHub项目包括高亮显示AEM GraphQL API的示例应用程序。
-* [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md) - AEM创作环境的技术文档，包括有关创作发布设置的详细信息
-* [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — 在AEM上发布内容的技术文档
-* [命名约定](/help/implementing/developing/introduction/naming-conventions.md) - AEM中页面命名限制的技术文档
+* [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)  — 有关AEM创作环境的技术文档，包括有关创作 — 发布设置的详细信息
+* [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — 有关在AEM上发布内容的技术文档
+* [命名约定](/help/implementing/developing/introduction/naming-conventions.md)  - AEM中页面命名限制的技术文档
 * [多站点管理器和翻译](/help/sites-cloud/administering/msm-and-translation.md)  — 关于AEM强大翻译功能的技术文档
-* [AEM工作流](/help/sites-cloud/authoring/workflows/overview.md)  — 关于如何在AEM中自动工作流的技术文档
-* [内容片段](/help/assets/content-fragments/content-fragments.md)  — 内容片段的技术文档。
+* [AEM工作流](/help/sites-cloud/authoring/workflows/overview.md)  — 有关如何在AEM中自动执行工作流的技术文档
+* [内容片段](/help/assets/content-fragments/content-fragments.md)  — 有关内容片段的技术文档。
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 内容片段模型的技术文档。
 * [GraphQL技术文档](https://graphql.org) - GraphQL定义（外部链接）
-* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)  — 介绍如何创建访问和交付内容片段请求的技术文档
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md)  — 介绍如何创建和修改内容片段（和其他资产）的技术文档
-* [持久查询](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - AEM中持久查询的技术文档
-* [AEM中的无头和无头](/help/implementing/developing/headful-headless.md)  — 完整讨论AEM中可用的无头集成级别
+* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)  — 技术文档，其中说明了如何创建访问和交付内容片段的请求
+* [资产REST API](/help/assets/content-fragments/assets-api-content-fragments.md)  — 技术文档，介绍如何创建和修改内容片段（和其他资产）
+* [持久查询](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching)  — 有关AEM中持久查询的技术文档
+* [AEM中的无头和无头](/help/implementing/developing/headful-headless.md)  — 对AEM中可用的无头集成级别的完整讨论
