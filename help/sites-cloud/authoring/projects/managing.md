@@ -1,14 +1,13 @@
 ---
 title: 管理项目
-description: 通过“项目”，您可以将资源分组到一个实体中，然后在“项目”控制台中访问和管理该实体，从而组织项目
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+description: 通过“项目”，您可以将资源分组到一个实体中来组织项目，该实体可以在“项目”控制台中访问和管理
+exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 80%
 
 ---
-
 
 # 管理项目 {#managing-projects}
 
@@ -32,11 +31,11 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 从项目到项目，创建项目的过程相同。 项目类型之间的差异包括可用的用户角 [色](/help/sites-cloud/authoring/projects/overview.md) 和工 [作流](/help/sites-cloud/authoring/projects/workflows.md)。  要创建新项目，请执行以下操作：
 
 1. 在“ **项目**”中，点按／单 **击创建** ，以打开创 **建项目向导** :
-1. 选择模板，然后单击&#x200B;**下一步**。
+1. 选择模板并单击&#x200B;**Next**。
 
    ![创建项目](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. 定义&#x200B;**标题**&#x200B;和&#x200B;**说明**，并根据需要添加&#x200B;**缩略图**&#x200B;图像。 您还可以添加或删除用户以及他们所属的组。此外，也可单击&#x200B;**高级**&#x200B;以添加 URL 中使用的名称。
+1. 定义&#x200B;**标题**&#x200B;和&#x200B;**描述**&#x200B;并根据需要添加&#x200B;**缩略图**&#x200B;图像。 您还可以添加或删除用户以及他们所属的组。此外，也可单击&#x200B;**高级**&#x200B;以添加 URL 中使用的名称。
 
    ![添加项目详细信息](/help/sites-cloud/authoring/assets/projects-title.png)
 
@@ -83,13 +82,13 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 要向拼贴中添加一些项，请执行以下操作：
 
-1. 在&#x200B;**项目**&#x200B;中，导航到项目并单击要向其添加项目的拼贴上的添加+图标。
+1. 在&#x200B;**项目**&#x200B;中，导航到项目，然后单击要将项目添加到的拼贴上的添加+图标。
 
-   ![向拼贴添加项](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![将项目添加到图块](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
 1. 像创建新拼贴时一样，向拼贴中添加项。项目拼贴在[此处](/help/sites-cloud/authoring/projects/overview.md#project-tiles)进行了介绍。在此示例中，添加了其他工作流。
 
-   ![添加到拼贴的另一个项](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
+   ![添加到图块的另一个项目](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### 打开拼贴 {#opening-a-tile}
 
@@ -99,11 +98,11 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 1. 在“项目”控制台中，点按/单击省略号 (...)。
 
-   ![打开拼贴](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![打开图块](/help/sites-cloud/authoring/assets/projects-open-tile.png)
 
 1. AEM 列出了该拼贴中的各个项。您可以进入选择模式来修改或删除一些项。
 
-   ![已打开拼贴](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![已打开磁贴](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
 ## 查看项目统计信息 {#viewing-project-statistics}
 
@@ -113,19 +112,19 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 ### 查看项目时间轴 {#viewing-a-project-timeline}
 
-项目时间轴提供了项目中的资产上次使用时间的相关信息。要视图项目时间轴，请单击／点按&#x200B;**时间轴**，然后进入选择模式并选择项目。 资产会显示在左侧窗格中。单击／点按&#x200B;**时间轴**&#x200B;以返回至&#x200B;**项目**&#x200B;控制台。
+项目时间轴提供了项目中的资产上次使用时间的相关信息。要查看项目时间轴，请单击/点按&#x200B;**时间轴**，然后进入选择模式并选择项目。 资产会显示在左侧窗格中。单击/点按&#x200B;**时间轴**&#x200B;以返回到&#x200B;**项目**&#x200B;控制台。
 
 ![项目时间轴](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### 查看活动/不活动的项目 {#viewing-active-inactive-projects}
 
-要在活动项目和非活动项目之间切换，请在&#x200B;**项目**&#x200B;控制台中，单击&#x200B;**切换活动项目**。 如果图标旁边有一个复选标记，则显示的是活动项目。
+要在活动项目和不活动项目之间进行切换，请在&#x200B;**项目**&#x200B;控制台中，单击&#x200B;**切换活动项目**。 如果该图标旁边有一个复选标记，则会显示活动项目。
 
-![切换活动项目按钮](/help/sites-cloud/authoring/assets/projects-active.png)
+![“切换活动项目”按钮](/help/sites-cloud/authoring/assets/projects-active.png)
 
 如果该图标旁边显示有一个 x，则显示的是不活动的项目。
 
-![切换不活动的项目按钮](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![“切换不活动项目”按钮](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## 将项目设为不活动或活动 {#making-projects-inactive-or-active}
 
@@ -136,10 +135,9 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 1. 在&#x200B;**项目**&#x200B;控制台中，打开您的项目，然后找到&#x200B;**项目信息**&#x200B;拼贴。
 
    >[!NOTE]
-   >
-   >如果该拼贴不在您的项目中，您可能需要添加它。请参阅[添加拼贴](#adding-items-to-a-tile)。
+   如果该拼贴不在您的项目中，您可能需要添加它。请参阅[添加拼贴](#adding-items-to-a-tile)。
 
-1. 点按／单击&#x200B;**编辑**。
+1. 点按/单击&#x200B;**编辑**。
 1. 将选择器从&#x200B;**活动**&#x200B;更改为&#x200B;**不活动**（反之亦然）。
 
    ![激活项目](/help/sites-cloud/authoring/assets/projects-activate.png)
