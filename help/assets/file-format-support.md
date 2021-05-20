@@ -1,11 +1,10 @@
 ---
 title: 支持的文件格式和MIME类型
-description: ' [!DNL Experience Manager Assets] 作为 [!DNL Cloud Service]支持的文件格式和MIME类型。'
+description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service]支持的文件格式和MIME类型。'
 contentOwner: AG
-feature: Asset Management,Renditions
+feature: 资产管理，演绎版
 role: Business Practitioner,Administrator
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-translation-type: tm+mt
 source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '821'
@@ -15,24 +14,24 @@ ht-degree: 34%
 
 # [!DNL Assets] 支持的文件格式  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] 作为支 [!DNL Cloud Service] 持任何二进制文件的基本内容管理功能(存储、在线管理元数据、版本控制、上传和下载等)，与其格式无关。[!DNL Adobe Experience Manager Assets] 支持各种文件格式，每种产品功能都支持不同格式。
+[!DNL Adobe Experience Manager] 作为支 [!DNL Cloud Service] 持任何二进制文件的基本内容管理功能（存储、在线管理元数据、版本控制、上传和下载等），与其格式无关。[!DNL Adobe Experience Manager Assets] 支持多种文件格式，每种产品功能都支持不同格式。
 
-此外，[!DNL Experience Manager Assets]还提供扩展支持，用于生成预览和再现以及提取元数据和文本以实现全文索引。 此扩展支持是使用[asset microservices](asset-microservices-configure-and-use.md)提供的。
+此外，[!DNL Experience Manager Assets]还提供扩展支持，用于生成预览和呈现，以及提取用于全文索引的元数据和文本。 使用[asset microservices](asset-microservices-configure-and-use.md)提供此扩展支持。
 
-使用资产微型服务进行资产转换的亮点包括：
+使用资产微服务进行资产转换的功能亮点包括：
 
-* 键[由Adobe应用程序和服务生成的Adobe文件格式](#adobe-formats)，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
+* 键[由Adobe应用程序和服务（包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF）生成的Adobe文件格式](#adobe-formats)。
 * 键[映像文件格式](#image-formats)。
-* [Camera Raw文](#camera-raw-formats) 件格式，适用于各种相机，包括Canon、Nikon、Fujifilm、Olympus和其他制造商(由Adobe Camera Raw提供支持)。
-* 常见[文档格式](#document-formats)，包括Microsoft Office和Open文档格式。
+* [Camera Raw文](#camera-raw-formats) 件格式，适用于各种相机，包括佳能、尼康、富士胶片、奥林巴斯和其他制造商(由Adobe Camera Raw提供支持)。
+* 常用的[文档格式](#document-formats)，包括Microsoft Office和Open Document格式。
 * 各种[视频](#video-formats)和[音频](#audio-formats)格式.
 
-下图例描述了每种格式的支持级别。
+下图描述了每种格式的支持级别。
 
 | 支持级别 | 描述 |
 | ------------- | --------------------------- |
 | ✓ | 支持 |
-| * | 查看表下的注释 |
+| * | 请参阅表下的注释 |
 | - | 不适用 |
 
 ## Adobe格式{#adobe-formats}
@@ -42,7 +41,7 @@ ht-degree: 34%
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
-| 创意 | - | - | ✓ | - |
+| 构思 | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
 | PDF | ✓ | ✓ | ✓ | ✓ |
@@ -51,7 +50,7 @@ ht-degree: 34%
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\*对于[!DNL Adobe InDesign]文件(INDD)，再现的大小由嵌入在INDD文件中的预览决定。 在[!DNL InDesign](**[!UICONTROL “首选项”>“文件处理”>“始终使用文档保存预览图像”、“预览大小”]**)中配置首选项，以嵌入较大的再现。
+\*对于[!DNL Adobe InDesign]文件(INDD)，再现的大小由INDD文件中嵌入的预览决定。 在[!DNL InDesign]（**[!UICONTROL 首选项>文件处理>始终保存预览图像和文档，预览大小]**）中配置首选项以嵌入较大的演绎版。
 
 ## 图像格式{#image-formats}
 
@@ -81,13 +80,13 @@ ht-degree: 34%
 | PSD   ‡ | ✓ | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-‡合并的图像会从PSD文件中提取。 它是由[!DNL Adobe Photoshop]生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
+从PSD文件中提取合并的图像。 它是由[!DNL Adobe Photoshop]生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际的图像，也可能不是实际的图像。
 
 [!DNL Dynamic Media]中不支持的栅格图像文件格式的以下子类型：
 
-* IDAT区块大小大于100 MB的PNG文件。
+* IDAT区块大于100 MB的PNG文件。
 * PSB文件。
-* 不支持具有CMYK、RGB、灰度或位图以外的色彩空间的PSD文件。 不支持DuoTone、Lab和索引色彩空间。
+* 不支持具有非CMYK、RGB、灰度或位图的色彩空间的PSD文件。 不支持DuoTone、Lab和索引色彩空间。
 * 位深度大于16的PSD文件。
 * 具有浮点数据的TIFF文件。
 * 具有Lab色彩空间的TIFF文件。
@@ -96,9 +95,9 @@ ht-degree: 34%
 
 支持以下3D格式。
 
-另请参阅[使用Dynamic Media](/help/assets/dynamic-media/assets-3d.md)中的3D资源。
+另请参阅[在Dynamic Media中使用3D资产](/help/assets/dynamic-media/assets-3d.md)。
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media 投放 |
+| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media交付 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -120,7 +119,7 @@ ht-degree: 34%
 | DNG | ✓ | ✓ | ✓ |
 | ERF | ✓ | ✓ | ✓ |
 | FFF | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ |
+| 探地雷达 | ✓ | ✓ | ✓ |
 | IIQ | ✓ | ✓ | ✓ |
 | KDC | ✓ | ✓ | ✓ |
 | MEF | ✓ | ✓ | ✓ |
@@ -129,10 +128,10 @@ ht-degree: 34%
 | MRW | ✓ | ✓ | ✓ |
 | NEF | ✓ | ✓ | ✓ |
 | NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
+| 奥夫 | ✓ | ✓ | ✓ |
 | PEF | ✓ | ✓ | ✓ |
 | RAF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
+| 原始 | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
 | SRF | ✓ | ✓ | ✓ |
@@ -169,7 +168,7 @@ ht-degree: 34%
 
 | 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
+| 人工智能 | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
@@ -201,7 +200,7 @@ ht-degree: 34%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## 用于转码{#video-dynamic-media-transcoding}的[!DNL Dynamic Media]中的视频格式
+## [!DNL Dynamic Media]中用于转码{#video-dynamic-media-transcoding}的视频格式
 
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 |------------------------|--------------------|--------|-------|
@@ -217,14 +216,14 @@ ht-degree: 34%
 | MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
 | MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| R3D， RM | Red Raw Video | MJPEG 2000 | - |
+| R3D、RM | Red Raw Video | MJPEG 2000 | - |
 | RAM、RM | RealVideo | 不支持 | Real G2 (RV20)、Real 8 (RV30)、Real 10 (RV40) |
 | FLAC | Native Flac | 自由无损音频编解码器 | - |
 | MJ2 | Motion JPEG2000 | Motion JPEG 2000编解码器 | - |
 
 ## 音频格式{#audio-formats}
 
-[!DNL Assets] as为 [!DNL Cloud Service] AIF、ASF、M4A、MP3、WAV和WMA音频格式提供XMP元提取支持。
+[!DNL Assets] as a为 [!DNL Cloud Service] AIF、ASF、M4A、MP3、WAV和WMA音频格式提供XMP元数据提取支持。
 
 ## 提示和限制{#limitations-and-tips}
 
@@ -233,5 +232,5 @@ ht-degree: 34%
 >[!MORELIKETHIS]
 >
 >* [使用资产微服务进行资产处理](asset-microservices-overview.md)
->* [支持的文件格式，用于智能标记基于文本的资产](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [支持基于文本的资产智能标记的文件格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
