@@ -1,23 +1,22 @@
 ---
-title: AEM中Cloud Manager作为Cloud Service版本2020.6.0的发行说明
-description: AEM中Cloud Manager作为Cloud Service版本2020.6.0的发行说明
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+title: AEM as a Cloud Manager版本2020.6.0的发行说明
+description: AEM as a Cloud Manager版本2020.6.0的发行说明
+feature: 发行信息
+exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 89%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service2020.6.0 {#release-notes}中的Cloud Manager发行说明
 
-# Adobe Experience Manager中Cloud Manager作为Cloud Service 2020.6.0 {#release-notes}的发行说明
-
-本页概述了AEM中作为Cloud Service 2020.6.0的Cloud Manager发行说明。
+本页面概述了AEM as a Cloud 2020.6.0中的Cloud Manager发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM中Cloud Manager作为Cloud Service 2020.6.0的发布日期为2020年6月4日。
+AEM as a Cloud Manager 2020.6.0Cloud Service中Cloud Manager的发布日期是2020年6月4日。
 
 ## 新增功能 {#whats-new-cloud-manager}
 
