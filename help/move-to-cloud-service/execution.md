@@ -1,14 +1,13 @@
 ---
 title: 执行阶段
 description: 执行阶段
-translation-type: tm+mt
-source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
+exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
-
 
 # 执行 {#execution-phase}
 
