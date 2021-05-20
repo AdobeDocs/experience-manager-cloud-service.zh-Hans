@@ -2,9 +2,9 @@
 title: 添加自定义域名
 description: 添加自定义域名
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 0%
 * 当当前正在运行的管道已附加到这些环境时，无法将域名添加到这些环境。
 
 * 一次只能添加一个域名。 但是，域不能包含通配符。 不支持创作端的自定义域。
+
+* AEM as aCloud Service不支持通配符域。
 
 * 每个Cloud Manager环境最多可托管每个环境100个自定义域。
 
