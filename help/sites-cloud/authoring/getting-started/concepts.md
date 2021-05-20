@@ -1,14 +1,13 @@
 ---
 title: 创作概念
 description: 在 AEM 中进行创作的概念
-translation-type: tm+mt
-source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
+exl-id: ee9e4952-e075-4398-b31f-d7886153efff
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 100%
 
 ---
-
 
 # 创作概念 {#authoring-concepts}
 
