@@ -2,37 +2,36 @@
 title: 资产分析
 description: 跟踪在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的用户评级和使用统计信息。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
-role: Business Practitioner
+feature: 资产分析，资产报表
+role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-translation-type: tm+mt
-source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 10%
+source-wordcount: '796'
+ht-degree: 9%
 
 ---
 
 # 资产分析 {#asset-insights}
 
-资产分析跟踪在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的用户评级和使用统计信息。 它有助于提供有关图像性能和受欢迎程度的洞察。
+利用资产分析功能，您可以跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计数据。 它有助于提供有关图像性能和受欢迎程度的洞察。
 
 资产分析可捕获用户活动详细信息，例如对图像进行评级、单击和展示次数（在网站上加载图像的次数）。 它根据这些统计信息为图像分配分数。 您可以使用分数和性能统计信息来选择热门图像，以将其纳入目录、营销活动等。 您甚至可以根据这些统计数据制定存档和许可证续订策略。
 
 要使资产分析能够从网站捕获图像的使用情况统计信息，您必须在网站代码中包含图像的嵌入代码。
 
-要让资产分析显示资产的使用情况统计信息，请首先配置该功能以从Adobe Analytics获取报告数据。 有关详细信息，请参阅[配置资产分析](#configure-asset-insights)。
+要让资产分析显示资产的使用情况统计信息，请首先配置该功能以从[!DNL Adobe Analytics]获取报告数据。 有关详细信息，请参阅[配置资产分析](#configure-asset-insights)。 要使用此功能，请单独购买[!DNL Adobe Analytics]许可证。
 
 >[!NOTE]
 >
->只支持并提供图像分析。
+>支持并仅为图像提供洞察。
 
 ## 图像{#viewing-statistics-for-an-image}的视图统计
 
 您可以从元数据页面视图资产分析分数。
 
-1. 从资产用户界面(UI)中，选择图像，然后点按工具栏中的&#x200B;**[!UICONTROL 属性]**。
-1. 在“属性”页中，点按&#x200B;**[!UICONTROL Insights]**。
+1. 从“资产”用户界面中，选择图像，然后单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
+1. 在“属性”页中，单击&#x200B;**[!UICONTROL Insights]**。
 1. 在&#x200B;**[!UICONTROL Insights]**&#x200B;选项卡中查看资产的使用详细信息。 **[!UICONTROL Score]**&#x200B;部分描述资产的资产使用总数和性能存储。
 
    使用情况分数描述资产在各种解决方案中的使用次数。
@@ -43,14 +42,14 @@ ht-degree: 10%
 
    * **[!UICONTROL 资产]**:资产属于集合或复合资产的次数。
    * **[!UICONTROL Web和移动]**:资产加入网站和应用程序的次数。
-   * **[!UICONTROL 社交]**:资产在解决方案(如Adobe Social和Adobe Campaign)中的使用次数。
+   * **[!UICONTROL 社交]**:资产在其他解决方案(如 [!DNL Adobe Campaign]
    * **[!UICONTROL 电子邮件]**:资产在电子邮件活动中的使用次数。
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >由于资产分析功能通常会定期从Adobe Analytics获取解决方案数据，因此解决方案部分可能不会显示最新数据。 显示数据的时间段取决于资产分析运行以检索Analytics数据的提取操作的计划。
+   >由于资产分析功能通常会定期从[!DNL Adobe Analytics]中获取解决方案数据，因此解决方案部分可能不显示最新数据。 显示数据的时间段取决于资产分析运行以检索Analytics数据的提取操作的计划。
 
 1. 要以图形方式查看一段时间内资产的性能统计信息，请在&#x200B;**[!UICONTROL 性能统计信息]**&#x200B;部分中选择时间段。包括点击次数和印象在内的详细信息将显示为图形的趋势线。
 
@@ -60,7 +59,7 @@ ht-degree: 10%
    >
    >与“解决方案”部分中的数据不同，“性能统计”部分显示最新数据。
 
-1. 要获取包含在网站中的资产的嵌入代码以获取性能数据，请点按/单击资产缩略图下方的&#x200B;**[!UICONTROL 获取嵌入代码]**。<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. 要获取包含在网站中的资产的嵌入代码以获取性能数据，请单击资产缩略图下方的&#x200B;**[!UICONTROL 获取嵌入代码]**。<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -69,7 +68,7 @@ ht-degree: 10%
 您可以使用&#x200B;**[!UICONTROL 分析视图]**&#x200B;同时查看文件夹中所有资产的分数。
 
 1. 在资产用户界面中，导航到包含要视图分析的资产的文件夹。
-1. 点按/单击工具栏中的布局图标，然后选择&#x200B;**[!UICONTROL 分析视图]**。
+1. 单击工具栏中的布局选项，然后选择&#x200B;**[!UICONTROL 分析视图]**。
 1. 该页面显示资产的使用分数。 比较各个资产的评级并进行分析。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -105,8 +104,8 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *图：在中为资产分析配置Adobe Analytics[!DNL Experience Manager]*
 
-1. 单击／点按 **[!UICONTROL 身份验证]**。在[!DNL Experience Manager]验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择Adobe Analytics报表包，您希望资产分析从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
-1. 在[!DNL Experience Manager]设置报表包后，点按&#x200B;**[!UICONTROL 完成]**。
+1. 单击&#x200B;**[!UICONTROL Authenticate]**。 在[!DNL Experience Manager]验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择Adobe Analytics报表包，您希望资产分析从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
+1. 在[!DNL Experience Manager]设置报表包后，单击&#x200B;**[!UICONTROL 完成]**。
 
 ### 页面跟踪器{#page-tracker}
 
