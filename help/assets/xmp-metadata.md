@@ -1,6 +1,6 @@
 ---
 title: XMP 元数据
-description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作创建、处理和交换元数据的标准格式。
+description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作元数据的创建、处理和交换的标准格式。
 contentOwner: AG
 feature: 元数据
 role: Business Practitioner,Administrator
@@ -16,7 +16,7 @@ ht-degree: 52%
 
 XMP（可扩展元数据平台）是 AEM Assets 用来进行所有元数据管理的元数据标准。XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 
-除了提供可嵌入所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且受Adobe](#advantages-of-xmp)和其他公司的支持[，因此XMP和AEM Assets的用户拥有一个强大的平台可以在其上构建。
+除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且受Adobe](#advantages-of-xmp)和其他公司的支持[，因此XMP和AEM Assets的用户拥有强大的基础平台。
 
 ## XMP概述和生态系统{#xmp-ecosystem}
 
@@ -28,7 +28,7 @@ XMP 通过提供数据模型、存储模型和架构，使元数据的定义、�
 
 来自 EXIF、ID3 或 Microsoft Office 的所有旧版元数据都将自动转换为 XMP，而 XMP 可进行扩展，以支持特定于客户的元数据架构，例如产品目录。
 
-XMP 中的元数据包含一组属性。这些属性始终与称为资源的特定实体相关联；即，属性是“关于”资源的。 对于 XMP，资源始终是指资产。
+XMP 中的元数据包含一组属性。这些属性始终与称为资源的特定实体相关联；即，属性是“关于”资源。 对于 XMP，资源始终是指资产。
 
 XMP 定义了一个可与任何定义的元数据项集一起使用的[元数据](https://en.wikipedia.org/wiki/Metadata)模型。XMP 还为基本属性定义了一个特定的[架构[，这些基本属性可用于记录资源经过多个处理步骤的历史记录：从拍摄、](https://en.wikipedia.org/wiki/XML_schema)扫描](https://en.wikipedia.org/wiki/Image_scanner)或创作为文本，到照片编辑步骤（如[裁剪](https://en.wikipedia.org/wiki/Cropping_%28image%29)或颜色调整），再到组合到最终图像中。XMP 允许每个软件程序或设备向数字资源添加其自己的信息，该信息可保留在最终的数字文件中。
 
@@ -43,11 +43,11 @@ XMP 最常使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) 
 * XMP 采用标准化的编码，让您可以轻松交换元数据。
 * XMP 具有可扩展性。您可以向资产中添加其他信息。
 
-XMP标准设计为可扩展，允许您向XMP数据中添加自定义类型的元数据。 而EXIF则并非如此 — 它具有无法扩展的属性的固定列表。
+XMP标准旨在提供可扩展性，允许您向XMP数据中添加自定义类型的元数据。 而EXIF则不会 — 它有一个固定的无法扩展的属性列表。
 
 >[!NOTE]
 >
->XMP 一般不允许嵌入二进制类型的数据。要在XMP中传送二进制数据（例如，缩略图），必须采用XML友好格式（如`Base64`）对它们进行编码。
+>XMP 一般不允许嵌入二进制类型的数据。要在XMP中携带二进制数据（例如缩略图），必须以XML友好格式（如`Base64`）对它们进行编码。
 
 ### XMP核心概念{#xmp-core-concepts}
 
@@ -62,10 +62,10 @@ XMP 架构采用其 XML 命名空间 URI 进行标识。使用命名空间可以
 
 XMP 可以包含来自一个或多个架构的属性。例如，很多 Adobe 应用程序使用的典型子集包括以下架构：
 
-* 都柏林核心模式:`dc:title`、`dc:creator`、`dc:subject`、`dc:format`、`dc:rights`
-* XMP基本模式:`xmp:CreateDate`、`xmp:CreatorTool`、`xmp:ModifyDate`、`xmp:metadataDate`
-* XMP rights management模式:`xmpRights:WebStatement`, `xmpRights:Marked`
-* XMP媒体管理模式:`xmpMM:DocumentID`
+* 都柏林核心架构：`dc:title`、`dc:creator`、`dc:subject`、`dc:format`、`dc:rights`
+* XMP基本架构：`xmp:CreateDate`、`xmp:CreatorTool`、`xmp:ModifyDate`、`xmp:metadataDate`
+* XMP权限管理架构：`xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP媒体管理架构：`xmpMM:DocumentID`
 
 **替代语言**
 
@@ -74,40 +74,40 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 ## XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
 [!DNL Adobe Experience Manager Assets]中的此XMP写回功能会将元数据更改复制到原始资产的演绎版。
-当您在[!DNL Assets]中或在上传资产时更改资产的元数据时，这些更改最初存储在资产层次结构的元数据节点中。 使用写回功能，您可以将元数据更改传播到资产的所有演绎版或特定演绎版。 该功能仅回写那些使用`jcr`命名空间的元数据属性，即，将回写名为`dc:title`的属性，但不写名为`mytitle`的属性。
+当您从[!DNL Assets]中更改资产的元数据时，或在上传资产时，所做的更改最初存储在资产层次结构的元数据节点中。 使用写回功能，您可以将元数据更改传播到资产的所有演绎版或特定演绎版。 该功能仅写回那些使用`jcr`命名空间的元数据属性，即，将写回名为`dc:title`的属性，但不会写回名为`mytitle`的属性。
 
-例如，假设您将标题为`Classic Leather`的资产的[!UICONTROL Title]属性修改为`Nylon`的方案。
+例如，假设您将标题为`Classic Leather`的资产的[!UICONTROL 标题]属性修改为`Nylon`。
 
 ![元数据](assets/metadata.png)
 
-在这种情况下，[!DNL Assets]会在资产层次结构中存储的资产元数据的`dc:title`参数中，将更改保存到&#x200B;**[!UICONTROL Title]**&#x200B;属性。
+在这种情况下， [!DNL Assets]会将对资产层次结构中存储的资产元数据的`dc:title`参数中的&#x200B;**[!UICONTROL Title]**&#x200B;属性所做的更改保存下来。
 
-![存储在存储库中资产节点中的元数据](assets/metadata_stored.png)
+![存储在存储库资产节点中的元数据](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->默认情况下，[!DNL Assets]中未启用写回功能。 了解如何[启用元数据写回](#enable-xmp-writeback)。 在启用元数据写回的情况下，数字资产的MSM无法工作。 写回时，继承会中断。
+>默认情况下，[!DNL Assets]中未启用写回功能。 请参阅如何[启用元数据写回](#enable-xmp-writeback)。 启用元数据写回后，数字资产的MSM无法工作。 写回时，继承会中断。
 
 ### 启用XMP写回{#enable-xmp-writeback}
 
-[!UICONTROL DAM元数据] 写回工作流用于写回资产的元数据。要启用写回，请遵循以下三种方法之一：
+[!UICONTROL DAM元数] 据写回工作流用于写回资产的元数据。要启用写回，请遵循以下三种方法之一：
 
 * 使用启动器。
-* 手动开始`DAM MetaData Writeback`工作流。
-* 将工作流配置为后期处理的一部分。
+* 手动启动`DAM MetaData Writeback`工作流。
+* 将工作流配置为后处理的一部分。
 
 要使用启动器，请执行以下步骤：
 
 1. 作为管理员，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 启动器]**。
-1. 选择[!UICONTROL 启动器]，其中&#x200B;**[!UICONTROL Workflow]**&#x200B;列显示&#x200B;**[!UICONTROL DAM MetaData Writeback]**。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
+1. 选择[!UICONTROL 启动器]，其中&#x200B;**[!UICONTROL 工作流]**&#x200B;列显示&#x200B;**[!UICONTROL DAM元数据写回]**。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
 
-   ![选择DAM元数据写回启动程序以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
+   ![选择DAM元数据写回启动器以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
 
 1. 在&#x200B;**[!UICONTROL 启动器属性]**&#x200B;页面上选择&#x200B;**[!UICONTROL 激活]**。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
-要手动将工作流仅应用一次资产，请从左边栏应用[!UICONTROL DAM元数据写回]工作流。
+要手动将工作流仅应用于一次资产，请从左边栏应用[!UICONTROL DAM元数据写回]工作流。
 
-要将工作流应用于所有上传的资产，请将该工作流添加到后期处理用户档案。
+要将工作流应用于所有上传的资产，请将该工作流添加到后处理配置文件。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
