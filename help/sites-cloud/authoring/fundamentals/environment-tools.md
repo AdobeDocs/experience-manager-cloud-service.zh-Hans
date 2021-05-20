@@ -1,14 +1,13 @@
 ---
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 99%
 
 ---
-
 
 # 创作环境和工具 {#authoring-the-environment-and-tools}
 
@@ -191,7 +190,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
    ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 作为[Live Copy](/help/sites-cloud/administering/msm/overview.md)的一部分的页面，其中组件是从其他页面继承的。
+* 属于[Live Copy](/help/sites-cloud/administering/msm/overview.md)的一部分的页面，其中组件继承自其他页面。
 
 >[!NOTE]
 >
