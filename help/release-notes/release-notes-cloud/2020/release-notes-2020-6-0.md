@@ -2,7 +2,6 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1951'
@@ -47,7 +46,7 @@ ht-degree: 98%
 
 * 屏幕阅读器改进。
 
-## AEM as a Cloud Service 的新增基础功能{#foundations}
+## AEM as a Cloud Service 的新增基础功能 {#foundations}
 
 通过删除 AEM 项目的 pom.xml 中对远程存储库 `https://downloads.experiencecloud.adobe.com/content/maven/public` 的所有引用，AEM 项目构建时间将会缩短。
 
@@ -189,4 +188,4 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 * 下载资产时，如果选择了电子邮件选项，即使提供了有效的电子邮件 ID，下载选项也不可用。(CQ-4296535)
 * 另存为智能收藏集的自定义筛选器无法正确应用于资产。(CQ-4294942)
 * 多项搜索和索引增强功能与错误修复使性能得以提高。(CQ-4286373)
-* 无法在资产中访问文件夹属性选项卡，并返回500错误。 (CQ-4295701)
+* 无法在Assets中访问文件夹属性选项卡，并返回500错误。 (CQ-4295701)
