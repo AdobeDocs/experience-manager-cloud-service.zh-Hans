@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 简介 - 术语
-description: 'Adobe Experience Manager as a Cloud Service 简介 - 术语。 '
-translation-type: tm+mt
-source-git-commit: 465172db5bbc3b1dc3b42164d759a45e0ff13a8e
+description: Adobe Experience Manager as a Cloud Service 简介 - 术语。
+exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service - 术语 {#adobe-experience-manager-as-a-cloud-service-terminology}
 
@@ -38,7 +37,7 @@ ht-degree: 100%
 | 术语 | 描述 |
 |---|---|
 | AEM 图像 | 包含 AEM 产品代码和客户代码的可部署项目。 |
-| 资产微服务 | 基于云的数字资产处理服务，可满足各种资产处理用例的需求，如呈现版本生成、PDF 演示、子资产处理、文本提取等。有关更多信息，请参阅[资产微服务概述](/help/assets/asset-microservices-overview.md)。 |
+| 资产微服务 | 基于云的数字资源处理服务，它适合各种资源处理用例，如演绎版生成、PDF 演示、子资源处理、文本提取等。有关更多信息，请参阅[资产微服务概述](/help/assets/asset-microservices-overview.md)。 |
 | Cloud Manager Git 存储库 | 客户存储其代码和配置设置的位置。 |
 | 云提供商 | AEM as a Cloud Service 当前支持 Azure。AWS 支持是路线图中的计划项目。 |
 | 内容交付网络 (CDN) | AEM 云服务随附一个默认 CDN。其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。 |
