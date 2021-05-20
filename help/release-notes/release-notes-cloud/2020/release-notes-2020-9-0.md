@@ -1,43 +1,42 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版的发行说明。'
-description: '[!DNL Adobe Experience Manager] cloud service发行说明。'
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+description: '[!DNL Adobe Experience Manager] 作为Cloud Service2020.9.0发行说明。'
+exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 12%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明 {#release-notes}
 
-以下部分概述了[!DNL Experience Manager]作为2020.9.0Cloud Service的一般发行说明。
+以下部分概述了[!DNL Experience Manager] as a 2020.9.0Cloud Service的常规发行说明。
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为Cloud Service2020.9.0的发布日期为2020年9月24日。
+[!DNL Adobe Experience Manager] as a 2020.9.0Cloud Service的发布日期是2020年9月24日。
 
-## [!DNL Adobe Experience Manager Sites] 作为Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] 作为Cloud Service {#sites}
 
-### [!DNL Sites] {#what-is-new-sites}中的新增功能
+### [!DNL Sites] {#what-is-new-sites}的新增功能
 
 * 单页应用程序 (SPA) 编辑器 JavaScript SDK [现已开源](/help/implementing/developing/hybrid/reference-materials.md)。
 
-## [!DNL Adobe Experience Manager Assets] 作为Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}中的新增功能
+### [!DNL Assets] {#what-is-new-assets}的新增功能
 
-* 使用资产微服务生成的演绎版支持添加水印图像文件。 它可以配置为处理用户档案，并使用PNG文件作为水印。 请参阅[为资产设置水印](/help/assets/watermark-assets.md)。
+* 通过资产微服务生成的演绎版支持对图像文件添加水印。 它可以配置为处理配置文件，并使用PNG文件作为水印。 请参阅[对资产添加水印](/help/assets/watermark-assets.md)。
 
 * [!DNL Dynamic Media]中的增强功能
 
-   * 选择性发布——营销团队现在可以访问同步到[!DNL Dynamic Media]的[!DNL Dynamic Media]智能裁剪图像和动态演绎版，以便创建促销资料，而无需将这些资产发布到[!DNL Dynamic Media]进行全局投放。 [!DNL Experience Manager] 而发 [!DNL Dynamic Media] 布是相互分离的，可单独进行，以实现这一点。请参阅[选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
-   * 管理员现在可以重置在设置时收到的[!DNL Dynamic Media]Cloud Service密码。 可在[!DNL Experience Manager]用户界面中完成重置，无需使用[!DNL Dynamic Media Classic]桌面应用程序。
+   * 选择性发布 — 营销团队现在可以访问同步到[!DNL Dynamic Media]的[!DNL Dynamic Media]智能裁剪图像和动态演绎版，以便创建促销材料，而无需将这些资产发布到[!DNL Dynamic Media]进行全球交付。 [!DNL Experience Manager] 和发 [!DNL Dynamic Media] 布是相互分离的，可单独进行以实现这一点。请参阅[选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
+   * 管理员现在可以重置在预配时收到的[!DNL Dynamic Media]Cloud Service密码。 可以在[!DNL Experience Manager]用户界面中完成重置，而无需使用[!DNL Dynamic Media Classic]桌面应用程序。
 
-* 要了解以下增强功能，请参阅[ Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)中的新增功能。
+* 要了解以下增强功能，请参阅[Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)的新增功能。
 
-   * 集成Adobe Document Cloud视图SDK，增强PDF预览。
+   * Adobe Document Cloud视图SDK集成增强了PDF预览。
    * 单击下载功能。
    * 下载体验的新管理配置。
 
@@ -47,39 +46,39 @@ ht-degree: 12%
 TBD: list of Assets aaCS bugs that are fixed.
 -->
 
-## Adobe Experience Manager商务作为Cloud Service{#cloud-services-commerce}
+## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
 * 已发布CIF核心组件v1.3.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0)。
 
-* 产品/预览模板的类别功能和类别模板现已可用。 这使AEM的商业用户／营销人员能够视图产品/类别模板和真实数据。
+* 现在提供了产品和类别模板的产品/类别预览功能。 这允许AEM中的业务用户/营销人员查看包含真实数据的产品/类别模板。
 
-* 属性页面已添加到产品和类别中，以允许业务用户视图与产品SKU/类别id关联的详细信息。
+* 产品和类别中添加了属性页面，以允许业务用户查看与产品SKU/类别id关联的详细信息。
 
-* 添加到产品控制台的排序功能允许按名称或价格属性对产品/类别进行排序。
+* 产品控制台中添加了排序功能，以允许按名称或价格属性对产品/类别进行排序。
 
 * 产品搜索功能已添加到产品控制台。
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* Commerce Cloud配置不尊重继承。 已对此进行修复，以确保配置继承值。
+* Commerce Cloud配置不遵循继承。 已修复此问题，以确保配置继承值。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 发布日期 {#release-date-cm}
 
-[!UICONTROL Cloud Manager]版本2020.9.0的发布日期为2020年9月3日。
+[!UICONTROL Cloud Manager]版本2020.9.0的发行日期是2020年9月3日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
 * 内容审核已重新标记为体验审核。
 * 构建过程已分为三个单独的Maven命令。
-* 如果无法克隆Git存储库，则最多将重新尝试三次。
+* 如果Git存储库克隆失败，则最多将重试三次。
 
 ### 错误修复 {#bug-fixes-cm}
 
-* “内容审核”选项卡使用作者域而非发布域错误地显示了基本URL。
+* “内容审核”选项卡使用创作域而不是发布域错误地显示了基本URL。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
@@ -87,41 +86,40 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新增功能 {#what-is-new-cra}
 
-* 云就绪性分析器(CRA)具有开始状态控制台，该控制台显示一个显式&#x200B;**生成报告**&#x200B;按钮，供用户单击以执行CRA。
+* 云就绪分析器(CRA)具有开始状态控制台，该控制台显示一个明确的&#x200B;**生成报告**&#x200B;按钮，供用户单击以执行CRA。
 
-* CRA UI在运行时显示进度。 它显示正在分析的项目和在执行过程中找到的结果。
+* CRA UI在运行时会显示进度。 它显示正在分析的项目以及在执行过程中找到的结果。
 
-* CRA报告以表格形式显示了调查结果的摘要和数量，按调查结果类型和重要性级别进行组织。 单击该查找结果的数量将自动滚动到该查找结果在报告中的位置。
+* CRA报告以表格形式显示了调查结果的摘要和数量，按调查结果类型和重要性级别进行组织。 单击该发现结果的编号将自动滚动到该发现结果在报表中的位置。
 
 ### 错误修复 {#cra-bug-fixes}
 
-* 在某些情况下，强制更新后，CRA报告没有得到更新。 此版本中已修复此问题。
+* 在某些情况下，强制刷新后，CRA报告未更新。 此版本中已修复此问题。
 
 ## 内容传输工具 {#content-transfer-tool}
 
-可查看本节以了解新增功能以及内容传输工具版本1.1.10的更新。
+请阅读本节内容，了解内容传输工具版本v1.1.10的新增功能和更新。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容传输工具(CTT)支持Azure Blob存储数据存储。
+* 内容传输工具(CTT)支持Azure Blob Store数据存储。
 
 * CTT用户界面具有自动重新加载功能，每30秒重新加载一次概述页面。
 
-* 添加到CTT用户界面的按钮可轻松检索&#x200B;*访问令牌*。
+* 在CTT用户界面中添加了按钮，以便轻松检索&#x200B;*访问令牌*。
 
 * 为&#x200B;*URL*&#x200B;和&#x200B;*迁移集名称*&#x200B;添加了描述性验证消息。
 
 ## 代码重构工具 {#code-refactoring}
 
-可查看本节以了解新增功能和代码重构工具的更新。
+请阅读本节内容，了解代码重构工具的新增功能和更新。
 
 ### 新增功能 {#what-is-new-refactoring}
 
 * AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
 
-   请参阅[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)以获取更多详细信息。
+   请参阅[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ，以了解更多详细信息。
 
-* 存储库Modernizer实用程序可用于将现有项目包重构为与为AEM定义为Cloud Service的项目结构兼容的包。
+* Repository Modernizer实用程序可用于将现有项目包重构为与为AEM定义为Cloud Service的项目结构兼容的包。
 
-   请参阅[Git资源：存储库Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)以获取更多详细信息。
-
+   请参阅[Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) ，以了解更多详细信息。
