@@ -1,14 +1,13 @@
 ---
 title: 用于页面编辑的键盘快捷键
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
 ---
-
 
 # 用于页面编辑的键盘快捷键 {#keyboard-shortcuts-when-editing-pages}
 
