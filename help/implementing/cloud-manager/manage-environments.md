@@ -2,7 +2,7 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
@@ -62,7 +62,7 @@ ht-degree: 4%
    >如果尚未设置非生产管道，则&#x200B;*概述*&#x200B;屏幕会显示可从中创建非生产管道的卡。
 
 
-## 查看环境{#viewing-environment}
+## 环境详细信息{#viewing-environment}
 
 “概述”页面上的&#x200B;**Environments**&#x200B;卡最多列出了三个环境。
 
@@ -111,7 +111,6 @@ ht-degree: 4%
 
 
 >[!NOTE]
->
 >此功能不适用于为生产目的而设置的生产计划中设置的生产/暂存环境。 但是，该功能也可用于沙盒项目中的生产/暂存环境。
 
 ## 管理访问{#managing-access}
