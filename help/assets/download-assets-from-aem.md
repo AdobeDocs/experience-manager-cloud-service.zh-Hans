@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 资产管理
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '921'
 ht-degree: 7%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 7%
 
 您可以使用以下方法下载Experience Manager资产：
 
-* [Experience Manager用户界面](#download-in-aem)
+* [Experience Manager用户界面](#download-assets)
 * [资产共享共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## 使用[!DNL Experience Manager]界面{#download-in-aem}下载资产
+## 使用[!DNL Experience Manager]界面{#download-assets}下载资产
 
-异步下载服务为无缝下载大型资产提供了一个框架。 从用户界面实时下载较小的文件。 大文件将异步下载，用户将通过收件箱中的Experience Manager通知得知完成情况。 请参阅[了解Experience Manager收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
+异步下载服务为无缝下载大型资产提供了一个框架。 从用户界面实时下载较小的文件。 [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。此功能可加快下载速度。 大文件会异步下载，[!DNL Experience Manager]会通过收件箱中的通知通知完成。 请参阅[了解 [!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
 ![下载通知](assets/download-notification.png)
 
@@ -51,7 +51,7 @@ ht-degree: 7%
 
    *图：下载对话框选项。*
 
-1. 在“下载”对话框中，选择所需的下载选项。
+1. 在下载对话框中，选择所需的下载选项。
 
    | 下载选项 | 描述 |
    |---|---|
