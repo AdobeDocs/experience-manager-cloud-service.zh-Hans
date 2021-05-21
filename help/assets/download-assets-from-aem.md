@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 资产管理
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
+source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '916'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 7%
 您可以使用以下方法下载Experience Manager资产：
 
 * [Experience Manager用户界面](#download-in-aem)
-* 资产链接共享用户界面
 * [资产共享共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
