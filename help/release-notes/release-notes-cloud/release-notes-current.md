@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 2%
 
 ---
@@ -54,19 +54,17 @@ ht-degree: 2%
 
 ### [!DNL Assets] {#what-is-new-assets}的新增功能
 
-* [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。此增强功能可加快下载速度。
+* [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。此增强功能可加快下载速度。 请参阅[下载资产](/help/assets/download-assets-from-aem.md)。
 
-* 当通过链接共享选项下载资产时，您现在可以选择下载或不下载演绎版。 以前，会下载所有资产演绎版。
-
-* 管理员可以配置[!DNL Experience Manager]以在执行批量资产摄取后删除资产源。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 现在，当您通过链接共享选项下载资产时，可以选择下载或不下载演绎版。 以前，会下载所有资产演绎版。 请参阅[下载选项](/help/assets/download-assets-from-aem.md)。
 
 * 现在，在执行运行状况检查以批量导入资产时，Experience Manager会提供失败的更多信息原因。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
 * 现在，使用批量导入工具导入资产时，管理员可以选择在导入成功后删除源文件。 请参阅[批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* 在编辑元数据架构时，新的根路径选择器字段允许管理员快速轻松地进行选择，从而缩短配置时间。
+* 在编辑元数据架构时，新的根路径选择器字段允许管理员快速轻松地进行选择。 此增强功能有助于缩短元数据配置时间。
 
-* 许多资产的元数据可以使用CSV文件批量导入，并可以导出到CSV文件。 默认日期格式现在为`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 用户可以通过更新列标题来使用其他格式。 例如，将`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`添加为CSV文件中的列标题，而不是单词`Date`。
+* 许多资产的元数据可以使用CSV文件批量导入，并可以导出到CSV文件。 默认日期格式现在为`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 用户可以通过更新列标题来使用其他格式。 例如，将`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`添加为CSV文件中的列标题，而不是单词`Date`。 请参阅[导入元数据](/help/assets/metadata-import-export.md)。
 
 * 在列视图中浏览资产时，可视指示器会显示每个资产的已批准或已拒绝状态。
 
