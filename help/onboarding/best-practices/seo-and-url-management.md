@@ -46,6 +46,7 @@ ht-degree: 100%
    * 在页面上使用选择器时，首选提供语义值的选择器。
    * 如果人们无法读取您的 URL，则搜索引擎也无法读取。
    * 例如：
+
       `mybrand.com/products/product-detail.product-category.product-name.html` 比  更可取 
 `mybrand.com/products/product-detail.1234.html`
 
@@ -362,8 +363,8 @@ Disallow: /
 >
 >您可以注册一个 Sling Servlet 来侦听带有 `xml` 扩展名的选择器 `sitemap`。这会让 Servlet 随时处理以如下内容结尾的 URL 请求：
 >    `/<path-to>/page.sitemap.xml`
-然后，您可以从请求中获取所请求的资源，并通过使用 JCR API 从内容树中的该点生成站点地图。
-此类方法带来的好处是您可以从同一实例为多个网站提供提供。对 `/content/siteA.sitemap.xml` 的请求将生成 `siteA` 的站点地图，对 `/content/siteB.sitemap.xml` 的请求将生成 `siteB` 的站点地图，而无需编写额外的代码。
+>然后，您可以从请求中获取所请求的资源，并通过使用 JCR API 从内容树中的该点生成站点地图。
+>此类方法带来的好处是您可以从同一实例为多个网站提供提供。对 `/content/siteA.sitemap.xml` 的请求将生成 `siteA` 的站点地图，对 `/content/siteB.sitemap.xml` 的请求将生成 `siteB` 的站点地图，而无需编写额外的代码。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 

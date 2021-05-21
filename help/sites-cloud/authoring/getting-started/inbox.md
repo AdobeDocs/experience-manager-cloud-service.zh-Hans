@@ -28,8 +28,8 @@ ht-degree: 100%
 >有关这些项目类型的更多信息，另请参阅：
 >
 >* [项目](/help/sites-cloud/authoring/projects/overview.md)
-* [项目 - 处理任务](/help/sites-cloud/authoring/projects/tasks.md)
-* [工作流](/help/sites-cloud/authoring/workflows/overview.md)
+>* [项目 - 处理任务](/help/sites-cloud/authoring/projects/tasks.md)
+>* [工作流](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## 标题中的收件箱 {#inbox-in-the-header}
@@ -39,7 +39,8 @@ ht-degree: 100%
 ![标题中的收件箱概述](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
-某些操作也将显示在[相应资源的卡片视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)中。
+>
+>某些操作也将显示在[相应资源的卡片视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)中。
 
 ## 打开收件箱  {#opening-the-inbox}
 
@@ -55,7 +56,8 @@ ht-degree: 100%
    ![收件箱视图设置](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
-收件箱作为控制台运行，因此当您完成操作后，可使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)或[搜索](/help/sites-cloud/authoring/getting-started/search.md)导航到其他位置。
+>
+>收件箱作为控制台运行，因此当您完成操作后，可使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)或[搜索](/help/sites-cloud/authoring/getting-started/search.md)导航到其他位置。
 
 ### 收件箱 - 列表视图 {#inbox-list-view}
 
@@ -108,7 +110,8 @@ ht-degree: 100%
 ## 对某个项目执行操作 {#taking-action-on-an-item}
 
 >[!NOTE]
-尽管可以选择多个项目，但一次只能对一个项目执行操作。
+>
+>尽管可以选择多个项目，但一次只能对一个项目执行操作。
 
 1. 要对某个项目执行操作，请选择相应项目的缩略图。工具栏中将显示适用于该项目的操作图标：
 
@@ -128,8 +131,9 @@ ht-degree: 100%
    * 从该项目创建一个项目
 
    >[!NOTE]
-   有关更多信息，请参阅：
-   * 工作流项目 - [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
+   >
+   >有关更多信息，请参阅：
+   >* 工作流项目 - [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. 根据所选项目，将会启动相应的操作；例如：
@@ -184,8 +188,9 @@ ht-degree: 100%
 1. 通过点按/单击缩略图选择相应的任务。
 
    >[!NOTE]
-   只有使用&#x200B;**收件箱**&#x200B;的&#x200B;**创建**&#x200B;选项创建的任务才能用于创建项目。
-   不能使用工作项（来自工作流）创建项目。
+   >
+   >只有使用&#x200B;**收件箱**&#x200B;的&#x200B;**创建**&#x200B;选项创建的任务才能用于创建项目。
+   >不能使用工作项（来自工作流）创建项目。
 
 1. 从工具栏中选择“**创建项目**”以打开向导。
 1. 选择相应的模板，然后选择&#x200B;**下一步**。
@@ -201,8 +206,10 @@ ht-degree: 100%
    * **高级**
 
       * **名称**
+
    >[!NOTE]
-   有关完整信息，请参阅[创建项目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)。
+   >
+   >有关完整信息，请参阅[创建项目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)。
 
 1. 选择&#x200B;**创建**&#x200B;以确认操作。
 
@@ -221,4 +228,5 @@ ht-degree: 100%
    ![收件箱搜索筛选器](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
-   通过[视图设置](#inbox-view-settings)，您还可以在使用[列表视图](#inbox-list-view)时配置排序顺序。
+   >
+   >通过[视图设置](#inbox-view-settings)，您还可以在使用[列表视图](#inbox-list-view)时配置排序顺序。
