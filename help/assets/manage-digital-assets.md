@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: 资产管理、发布、协作、资产处理
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
-ht-degree: 17%
+source-wordcount: '4502'
+ht-degree: 16%
 
 ---
 
@@ -250,9 +250,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 导航至要删除的资产所在的位置。
 
-1. 选择资产，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 删除]**&#x200B;图标。
-
-   ![delete_icon](assets/delete_icon.png)
+1. 选择资产，然后单击工具栏中的&#x200B;**[!UICONTROL 删除]** ![delete_icon](assets/do-not-localize/delete-icon.png)。
 
 1. 在确认对话框中，单击：
 
@@ -260,7 +258,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * **[!UICONTROL 删除]**，以确认操作：
 
       * 如果资产没有引用，则资产会被删除。
-      * 如果资产具有引用，则会出现一条错误消息，通知您&#x200B;**一个或多个资产被引用**。您可以选择&#x200B;**[!UICONTROL 强制删除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
+      * 如果资产包含引用，则会出现一条错误消息，通知您&#x200B;**[!UICONTROL 引用了一个或多个资产]**。您可以选择&#x200B;**[!UICONTROL 强制删除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
 
    >[!NOTE]
    >
@@ -268,10 +266,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >要解析或删除其他页面中的传入引用，请在删除资产之前更新相关引用。
-   >
-   >
-   >此外，还可以使用叠加禁用强制删除按钮，以禁止用户删除引用的资产并保留断开的链接。
+   >要解析或删除其他页面中的传入引用，请在删除资产之前更新相关引用。 您可以禁止删除引用的资产，因为它会导致链接断开。 使用叠加禁用强制删除按钮。
 
 ## 下载资产 {#download-assets}
 
@@ -521,7 +516,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 1. 使用右上方的选项下载或打印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注字体颜色的信息，请参阅[批注](/help/assets/manage-digital-assets.md#annotating)。
 
