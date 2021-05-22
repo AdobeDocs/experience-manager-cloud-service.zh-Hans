@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 发行说明特定于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已弃用和已移除的功能。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 45%
+source-wordcount: '448'
+ht-degree: 44%
 
 ---
 
@@ -43,4 +43,4 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Dynamic Media] | 以前与[Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration)和[Dynamic Media混合模式](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)的集成在[!DNL Experience Manager]中作为[!DNL Cloud Service]不可用。 | 使用[随[!DNL Experience Manager]提供的Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)作为[!DNL Cloud Service]。 |
 | [!DNL Sites] | Portal Director 和 Portlet 组件 | 这些功能已在[!DNL Experience Manager] 6.4中弃用，现在已从[!DNL Experience Manager]中删除。 |
 | [!DNL Sites] | 设计导入程序 | 此功能已被删除，因为[!DNL Experience Manager]存储库的不可更改部分在运行时无法访问。 |
-| [!DNL Assets] | [[!DNL Assets]  与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务共享](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html)功能不可用。 | 要与[!DNL Adobe Creative Cloud]集成，请使用[Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。 |
+| [!DNL Assets] | [!DNL Assets] 与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务共享功能不可用。 | 要与[!DNL Adobe Creative Cloud]集成，请使用[Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。 |
