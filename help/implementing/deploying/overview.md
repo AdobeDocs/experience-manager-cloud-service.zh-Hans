@@ -3,9 +3,9 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: 部署
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3350'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 1%
    * 文件夹（添加、修改、删除）
    * 可编辑的模板（添加、修改、删除）
    * 上下文感知配置（`/conf`下的任何内容）（添加、修改、删除）
-   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂接。 请参阅[Jackrabbit filevault文档](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)有关安装挂接的信息，其中包括允许用户执行这些挂接)。
+   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂接。 请参阅[Jackrabbit filevault文档](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)有关安装挂接的信息。 请注意，AEM CS当前使用的是Filevault 3.4.0版，该版本限制管理员用户、系统用户和管理员组的成员安装挂接)。
 
 可以通过将包嵌入install.author或install.publish文件夹（位于`/apps`下），将可变内容安装限制为创作或发布。 为了反映此分离，已在AEM 6.5中进行了重组，有关建议项目重组的详细信息，请参阅[AEM 6.5文档。](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
