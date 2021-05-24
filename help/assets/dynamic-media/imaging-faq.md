@@ -4,7 +4,7 @@ description: 了解Adobe Sensei AI智能成像如何应用每个用户的独特�
 feature: 资产管理，演绎版
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 ## 是否存在与智能成像相关的许可成本？{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-否. 智能成像功能包含在您的现有许可证中。 对于Dynamic Media Classic或Experience ManagerDynamic Media(内部部署、AMS和Experience Manager作为Cloud Service)，此规则为true。
+否. 智能成像功能包含在您的现有许可证中。 对于Dynamic Media Classic或Experience Manager- Dynamic Media(内部部署、AMS和Experience Manager作为Cloud Service)，此规则为true。
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
-点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用域，则可以请求移至您自己的自定义域。 在提交技术支持票证时，发出此过渡请求。
+点按&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用域，则可以请求移至您自己的自定义域。 在提交技术支持票证时，发出此过渡请求。
 
 使用Dynamic Media许可证，您的第一个自定义域无需额外付费。
 
