@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 资产管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 21%
+source-wordcount: '3242'
+ht-degree: 20%
 
 ---
 
@@ -165,6 +165,17 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
    您可以通过点按组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;来编辑以下高级设置。
 
+* **[!UICONTROL 优化高分辨率设备]**  — 选中（默认）复选框以允许DPR（设备像素比）优化。
+
+   另请参阅[关于设备像素比率优化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
+
+   请注意，任何Adobe Experience Manager Dynamic Media智能成像DPR值都将被忽略。
+
+   仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 优化高分辨率设备]**&#x200B;选项：
+   * 在“预设类型”下，选择&#x200B;**[!UICONTROL 图像预设]**，并从“**[!UICONTROL 图像预设]**”下拉列表中选择&#x200B;**[!UICONTROL RESS_IP]**。
+
+   ![图像预设中的设备像素比率设置](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL 标题]**  — 更改图像的标题。
 
 * **[!UICONTROL 替换文本]**  — 为关闭了图形的用户在图像中添加标题。
@@ -178,7 +189,6 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 * **[!UICONTROL 宽度]**  — 如果希望图像具有固定大小，请输入以像素为单位的值。将此值留空会使资产具有自适应性。
 
 * **[!UICONTROL 高度]**  — 如果希望图像具有固定大小，请输入以像素为单位的值。将此值留空会使资产具有自适应性。
-
 
 #### 处理视频时 {#when-working-with-video}
 
@@ -232,6 +242,18 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
    您可以通过单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;来编辑以下高级设置。
 
 * **[!UICONTROL 启用宽高比匹配]**  — 要让Dynamic Media选取宽高比与原始图像的宽高比最匹配的智能裁剪呈现，请选择此选项。
+
+* **[!UICONTROL 优化高分辨率设备]**  — 选中（默认）复选框以允许DPR（设备像素比）优化。
+
+   另请参阅[关于设备像素比率优化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
+
+   请注意，任何Adobe Experience Manager Dynamic Media智能成像DPR值都将被忽略。
+
+   仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 优化高分辨率设备]**&#x200B;选项：
+
+   * 在预设类型下，选择了&#x200B;**[!UICONTROL 智能裁剪]**&#x200B;选项。
+
+   ![用于智能裁剪的设备像素比设置](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL 标题]**  — 更改智能裁剪图像的标题。
 
