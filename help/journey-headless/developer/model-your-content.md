@@ -1,7 +1,7 @@
 ---
 title: 如何对内容进行建模
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用内容片段模型和内容片段的内容建模来为AEM无头交付构建内容模型。
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 在开头的[了解CMS无头开发](learn-about.md)中，介绍了无头内容交付以及应使用该内容的原因。 然后， [AEM HeadlessCloud Service入门](getting-started.md)在您自己项目的上下文中介绍了AEM Headless
 
-在AEM无头历程的上一个文档[使用AEM Headless实现首个体验的路径](/help/implementing/developing/headless-journey/path-to-first-experience.md)中，您随后了解了实施第一个项目所需的步骤。 阅读完该文档后，您应：
+在AEM无头历程的上一个文档[使用AEM Headless实现首个体验的路径](path-to-first-experience.md)中，您随后了解了实施第一个项目所需的步骤。 阅读完该文档后，您应：
 
 * 了解设计内容时的重要规划注意事项
 * 了解根据集成级别要求实施无头的步骤。
@@ -271,6 +271,6 @@ tbc...
    * [配置浏览器中的内容片段](/help/assets/content-fragments/content-fragments-configuration-browser.md)  — 在配置浏览器中启用“内容片段”功能
    * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 创建和编辑内容片段模型
    * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 创建和创作内容片段；此页面将引导您查看其他详细章节
-* [AEM GraphQL模式](/help/implementing/developing/headless-journey/access-your-content.md)  - GraphQL如何实现模型
+* [AEM GraphQL模式](access-your-content.md)  - GraphQL如何实现模型
 * [示例内容片段结构](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无头功能，包括内容建模和GraphQL
