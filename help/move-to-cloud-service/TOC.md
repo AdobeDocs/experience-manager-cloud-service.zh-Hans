@@ -5,10 +5,10 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: 部署
 role: Architect, Developer
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 79%
+source-wordcount: '93'
+ht-degree: 75%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 79%
       + [使用最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 内容传输工具 {#content-transfer-tool}
       + [概述](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [内容传输工具的先决条件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [使用用户映射工具](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 代码重构工具 {#refactoring-tools}
