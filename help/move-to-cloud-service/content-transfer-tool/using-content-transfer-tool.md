@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
+source-git-commit: d8ea69fc36a6565d245fe3c01484200b2e744c6c
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 43%
+source-wordcount: '2833'
+ht-degree: 41%
 
 ---
 
@@ -54,6 +54,8 @@ ht-degree: 43%
 * 将`Amazon S3`或`Azure`用作源AEM系统上的数据存储时，应配置数据存储，以便无法删除存储的Blob（垃圾收集）。 这确保了索引数据的完整性，并且未能配置这种方式，可能会由于此索引数据缺乏完整性而导致提取失败。
 
 * 如果使用自定义索引，则必须确保在运行内容传输工具之前使用`tika`节点配置自定义索引。 有关更多详细信息，请参阅[准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) 。
+
+* 如果您打算进行增补，则必须从采用初始提取到运行增补提取期间，不更改现有内容的内容结构。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中限制此操作。
 
 ## 可用性 {#availability}
 
@@ -188,6 +190,7 @@ ht-degree: 43%
 
 >[!NOTE]
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
+>此外，必须从采用初始提取到运行增补提取时，不要更改现有内容的内容结构。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中限制此操作。
 
 完成提取流程后，可以使用增补提取方法传输增量内容。应遵循以下步骤：
 
