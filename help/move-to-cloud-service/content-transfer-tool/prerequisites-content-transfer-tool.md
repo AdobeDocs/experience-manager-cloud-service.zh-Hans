@@ -1,9 +1,9 @@
 ---
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
-source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
+source-git-commit: ea179642442b7b246df3096fa52d94f9b5e865ac
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 |--- |--- |
 | AEM 版本 | 内容传输工具只能在AEM 6.3或更高版本上运行。 要将内容传输工具与AEM 6.2或更早版本结合使用，需要将内容存储库就地升级到AEM 6.5。 无需将代码升级到AEM 6.5即可实现此目的。 |
 | 区段存储的大小 | 内容传输工具当前支持&#x200B;*Author*&#x200B;上最多83 GB，在&#x200B;*Publish*&#x200B;上最多31 GB。 |
-| 内容存储库的总大小&#x200B;<br>*（内容存储+数据存储）* | 内容传输工具可传输多达10 TB的内容。 当前不支持任何高于10 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于10 TB的内容选项。 |
-| 不可变路径中的内容 | 内容传输工具无法迁移不可变路径（如`“/etc”`）中的内容。 <br>请参阅常用 [存储库重](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 组，了解有关存储库重组和工作流模型的更多信息。 |
+| 内容存储库的总大小&#x200B;<br>*（区段存储+数据存储）* | 内容传输工具可传输多达10 TB的内容。 当前不支持任何高于10 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于10 TB的内容选项。 |
+| 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径（如`“/etc”`）中的内容。 允许选择某些`"/etc"`路径，但仅支持[AEM Forms到AEM Forms作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)。 有关所有其他用例，请参阅[通用存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) ，了解有关存储库重组的更多信息。 |
 
 ## 下一步是什么{#whats-next}
 
-查看先决条件后，您现在可以了解如何运行内容传输工具。 有关更多详细信息，请参阅[使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) 。
+查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请在使用内容传输工具时参阅[其他最佳实践和注意事项](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)。
