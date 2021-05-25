@@ -2,7 +2,7 @@
 title: AEM Sites作为Cloud Service的无头开发
 description: 了解AEM作为Cloud Service强大的无头功能（如内容模型、内容片段和GraphQL API）如何协同工作，从而让您能够集中管理您的体验并跨渠道提供它们。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -53,6 +53,6 @@ AEM as a Cloud Service通过提供三项功能强大的服务，为无头实施�
 
 | 资源 | 描述 | 类型 | 受众 | 是。 时间 |
 |---|---|---|---|---|
-| [无头开发人员历程](/help/implementing/developing/headless-journey/overview.md) | 要全面了解从无头理论到使用您的第一个无头项目的AEM无头功能，请从此处开始。 | 指南 | 开发人员 | 1小时 |
+| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 要全面了解从无头理论到使用您的第一个无头项目的AEM无头功能，请从此处开始。 | 指南 | 开发人员 | 1小时 |
 | [Headless快速入门指南](/help/implementing/developing/headless/getting-started/introduction.md) | 有关AEM主要无头功能的简短摘要，请参阅此快速入门概述。 | 快速入门 | 开发人员、管理员 | 20分钟 |
 | [AEM Headless动手操作入门教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | 如果您喜欢实用方法，本教程将直接深入探讨如何创建一个简单的无头项目。 | 教程 | 开发人员 | 2小时 |
