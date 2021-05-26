@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D资产
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2217'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ Dynamic Media让您可以上传、管理、查看和交付3D资产，充当沉�
 
 * 单击发布（使用工具栏上的&#x200B;**[!UICONTROL 快速发布]**）3D资产以生成URL。
 * 通过由Adobe Dimension提供支持的高质量交互式维度查看器预设，优化了对查看3D资产的支持。
-* 通过3D Media WCM组件，您可以轻松地将3D资产添加到Adobe Experience Manager Sites页面。
+* 通过3D Media WCM组件，您可以轻松地将3D资产添加到[!DNL Adobe Experience Manager Sites]页面。
 
 在Dynamic Media中使用3D资产无需额外安装。
 
@@ -46,7 +46,7 @@ Dynamic Media支持以下3D文件格式。
 
 以下工作流分步描述旨在帮助您在Dynamic Media中快速启动和运行3D资产。
 
-在Dynamic Media中处理3D资产之前，请确保Experience Manager管理员已启用并配置了Dynamic MediaCloud Services。
+在Dynamic Media中处理3D资产之前，请确保[!DNL Experience Manager]管理员已启用并配置Dynamic MediaCloud Services。
 
 请参阅[配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
 
@@ -103,11 +103,11 @@ Dynamic Media支持以下3D文件格式。
 
 **要从资产详细信息页面查看3D资产并与其交互，请执行以下操作：**
 
-1. 确保已将3D资产上传到Experience Manager。
+1. 确保您已将 3D 资产上传到 [!DNL Experience Manager].
 
    请参阅[上传3D资产以在Dynamic Media中使用](/help/assets/add-assets.md#upload-assets)。
 
-1. 从Experience Manager中，在&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产>文件]**。
+1. 从[!DNL Experience Manager]的&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产>文件]**。
 1. 在页面的右上角附近，从&#x200B;**[!UICONTROL 视图]**&#x200B;下拉列表中，点按&#x200B;**[!UICONTROL 卡片视图]**。
 1. 导航到要查看的 3D 资产。
 1. 要在详细信息页面中打开资产，请点按3D资产的卡片。
@@ -157,7 +157,7 @@ Dynamic Media支持以下3D文件格式。
 
 ## 关于使用3D媒体组件{#working-with-three-d-media-component}
 
-Dynamic Media包含Dynamic Media 3D媒体组件，您可以在Experience Manager站点中使用该组件，以在网页上实现3D模型的交互式查看。
+Dynamic Media包含Dynamic Media 3D媒体组件，您可以在[!DNL Experience Manager Sites]中使用该组件，以在网页上实现3D模型的交互式查看。
 
 * [将3D媒体组件添加到页面模板](#adding-three-d-media-component-to-page-template)
 * [将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)
@@ -166,7 +166,7 @@ Dynamic Media包含Dynamic Media 3D媒体组件，您可以在Experience Manager
 
 ## 将3D媒体组件添加到页面模板{#adding-three-d-media-component-to-page-template}
 
-1. 导航到&#x200B;**[!UICONTROL 工具>常规>模板]**。
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 模板]**。
 1. 导航到要在中启用3D组件的页面模板，然后选择该模板。
 1. 要打开模板，请点按&#x200B;**[!UICONTROL 编辑]**。
 1. 在页面右上角附近的下拉菜单中，选择&#x200B;**[!UICONTROL 结构]**&#x200B;模式（如果它尚未处于活动状态）。
@@ -182,11 +182,11 @@ Dynamic Media包含Dynamic Media 3D媒体组件，您可以在Experience Manager
 
 ## 将3D媒体组件添加到网页{#adding-the-three-d-media-component-to-a-web-page}
 
-如果您将Experience Manager用作Web内容管理系统，则可以通过3D媒体组件将3D资产添加到网页。
+如果您使用[!DNL Experience Manager]作为Web内容管理系统，则可以通过3D媒体组件将3D资产添加到网页。
 
 另请参阅[将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
-1. 打开Experience Manager站点，然后选择要将Dynamic Media 3D媒体组件添加到的网页。
+1. 打开[!DNL Experience Manager Sites]并选择要将Dynamic Media 3D媒体组件添加到的网页。
 1. 要在页面编辑器中打开该页面，请点按&#x200B;**[!UICONTROL 编辑]**（铅笔）图标。 确保在页面右上方附近选择了&#x200B;**[!UICONTROL 编辑]**&#x200B;模式。
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -205,7 +205,7 @@ Dynamic Media包含Dynamic Media 3D媒体组件，您可以在Experience Manager
 
 ### 可选 — 配置3D媒体组件{#configuring-the-three-d-component}
 
-1. 在Experience Manager站点页面编辑器中，选择您之前添加到页面的&#x200B;**[!UICONTROL 3D媒体查看器]**&#x200B;组件。
+1. 在[!DNL Experience Manager Sites]页面编辑器中，选择您之前添加到页面的&#x200B;**[!UICONTROL 3D媒体查看器]**&#x200B;组件。
 1. 要打开组件配置对话框，请点按&#x200B;**[!UICONTROL 配置]**&#x200B;图标（扳手）。
 
    ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
@@ -222,7 +222,7 @@ Dynamic Media包含Dynamic Media 3D媒体组件，您可以在Experience Manager
 
 请参阅[将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)。
 
-1. 在“Experience Manager站点”页面编辑器中，单击&#x200B;**[!UICONTROL Assets]**&#x200B;图标以打开侧面板中的&#x200B;**[!UICONTROL Assets]** 。
+1. 在[!DNL Experience Manager Sites]页面编辑器中，单击&#x200B;**[!UICONTROL Assets]**&#x200B;图标以打开侧面板中的&#x200B;**[!UICONTROL Assets]**。
 1. 在下拉列表中，选择&#x200B;**[!UICONTROL 3D]**&#x200B;以仅显示3D资产文件类型。
 1. 在侧面板中，搜索或滚动到要在编辑的页面上查看的3D资产。
 1. 将3D资产从“资产”侧面板拖放到您之前添加到页面的&#x200B;**[!UICONTROL 3D Media]**&#x200B;组件上。
@@ -231,7 +231,7 @@ Dynamic Media包含Dynamic Media 3D媒体组件，您可以在Experience Manager
 
 >[!NOTE]
 >
->当网页处于Experience Manager站点&#x200B;**[!UICONTROL 编辑]**&#x200B;模式时，3D媒体组件会显示3D资产，但无法与资产进行交互。 要使资产具有交互性，您可以使用&#x200B;**[!UICONTROL 预览]**&#x200B;功能在页面编辑器中查看网页，并完全访问3D媒体组件的功能。
+>当网页处于[!DNL Experience Manager Sites] **[!UICONTROL 编辑]**&#x200B;模式时，3D媒体组件会显示3D资产，但无法与资产进行交互。 要使资产具有交互性，您可以使用&#x200B;**[!UICONTROL 预览]**&#x200B;功能在页面编辑器中查看网页，并完全访问3D媒体组件的功能。
 
 ## 发布静态Dynamic Media 3D资产{#publishing-three-d-assets}
 
@@ -241,7 +241,7 @@ Dynamic Media接受Dynamic Media中支持的各种3D文件格式为&#x200B;*静�
 
 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，资产名称的正下方以及其日期和时间左侧会显示一个小地球图标，指示资产已发布。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
-如果您使用Experience Manager作为WCM，请使用此发布方法直接将Dynamic Media 3D资产添加到您的网页上。
+如果您使用[!DNL Experience Manager]作为WCM，请使用此发布方法直接将Dynamic Media 3D资产添加到您的网页上。
 
 另请参阅[发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
@@ -270,7 +270,7 @@ Dynamic Media接受Dynamic Media中支持的各种3D文件格式为&#x200B;*静�
 
 ### 使用维度查看器{#alternate-publish-methods}发布Dynamic Media 3D资产的替代方法
 
-如果您&#x200B;*不*&#x200B;使用Experience Manager作为WCM，请使用以下两种方法发布Dynamic Media 3D资产。
+如果您的WCM为&#x200B;*不*，则使用以下两种方法发布Dynamic Media 3D资产。[!DNL Experience Manager]
 
 * **[!UICONTROL URL]**  — 如果您 **** 使用的是第三方Web内容管理系统，并且希望使用维度查看器将Dynamic Media 3D资产关联到您的网页，请使用URL。
 
