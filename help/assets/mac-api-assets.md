@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 资产HTTP API，API
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
@@ -27,7 +27,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 
 >[!NOTE]
 >
->与上传或更新资产或二进制文件相关的所有API调用（通常如演绎版）均已在[!DNL Experience Manager]部署中被弃用。 [!DNL Cloud Service]要上传二进制文件，请改用[直接二进制上传API](developer-reference-material-apis.md#asset-upload-technical)。
+>与上传或更新资产或二进制文件相关的所有API调用（通常如演绎版）均已在[!DNL Experience Manager]部署中被弃用。 [!DNL Cloud Service]要上传二进制文件，请改用[直接二进制上传API](developer-reference-material-apis.md#asset-upload)。
 
 ## 内容片段 {#content-fragments}
 
