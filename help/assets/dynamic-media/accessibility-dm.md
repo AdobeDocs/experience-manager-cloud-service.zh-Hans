@@ -6,9 +6,9 @@ topic-tags: introduction
 content-type: reference
 feature: 辅助功能
 role: Administrator,Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media在整个创作用户界面中支持键盘控制和辅助技术，�
 
 ## Dynamic Media {#keyboard-support-in-dm}中支持键盘辅助功能
 
-由于Dynamic Media是Experience Manager资产的插件，因此大多数键盘控制行为与Experience Manager资产中的行为相同。 例如，Dynamic Media中的`Cancel`按钮的焦点突出显示与Experience Manager资产中的焦点突出显示相同。 与在Experience Manager资产中一样，它也会对`Spacebar`键产生反应。 请参阅Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
+由于Dynamic Media是[!DNL Experience Manager Assets]的插件，因此大多数键盘控制行为与[!DNL Experience Manager Assets]中的相同。 例如，Dynamic Media中的`Cancel`按钮的焦点突出显示与[!DNL Experience Manager Assets]中的按钮相同。 它还会像在[!DNL Experience Manager Assets]中一样对`Spacebar`键产生反应。 请参阅Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
 
 在Dynamic Media中，单个用户界面元素支持的击键在大多数情况下是显而易见的，并且易于查找。 Dynamic Media中的键盘控件与以下事项相关：
 
