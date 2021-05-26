@@ -4,10 +4,10 @@ description: 图像配置文件或视频配置文件是将哪些选项应用到�
 feature: 资产管理，图像配置文件，视频配置文件
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 3%
+source-wordcount: '1269'
+ht-degree: 2%
 
 ---
 
@@ -42,13 +42,13 @@ ht-degree: 3%
 
 您可以对首次处理失败的资产运行重新处理工作流。 即使您未编辑图像配置文件或视频配置文件，或者已经应用了图像配置文件或视频配置文件，您仍可以随时对资产文件夹运行重新处理工作流。
 
-您可以（可选）从默认的50个资产（最多1000个资产）调整重新处理工作流的批大小。 运行&#x200B;_Scene7时：在文件夹上重新处理资产_&#x200B;工作流，会将资产分批分组，然后将其发送到Dynamic Media服务器进行处理。 处理后，整个批处理集中每个资产的元数据都会在Adobe Experience Manager上更新。 如果批次大小较大，则处理过程可能会延迟。 或者，如果批次大小过小，则可能会导致到Dynamic Media服务器的往返次数过多。
+您可以（可选）从默认的50个资产（最多1000个资产）调整重新处理工作流的批大小。 运行&#x200B;_Scene7时：在文件夹上重新处理资产_&#x200B;工作流，会将资产分批分组，然后将其发送到Dynamic Media服务器进行处理。 处理后，整个批处理集中每个资产的元数据都会在[!DNL Adobe Experience Manager]上更新。 如果批次大小较大，则处理过程可能会延迟。 或者，如果批次大小过小，则可能会导致到Dynamic Media服务器的往返次数过多。
 
 请参阅[调整重新处理工作流的批处理大小](#adjusting-load)。
 
 >[!NOTE]
 >
->如果您正在将资产从Dynamic Media Classic批量迁移到Experience Manager，请在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
+>如果您正在将资产从Dynamic Media Classic批量迁移到[!DNL Experience Manager]，请在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
 >
 >必须在Dynamic Media服务器上禁用迁移发布代理，以便重新处理工作流按预期工作。
 
@@ -59,7 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **要重新处理文件夹中的Dynamic Media资产，请执行以下操作：**
-1. 在Experience Manager中，从“资产”页面中，导航到一个资产文件夹，该文件夹中的图像配置文件或视频配置文件已分配给您，并且您要对其应用&#x200B;**Scene7:重新处理资产**&#x200B;工作流。
+1. 在[!DNL Experience Manager]的“资产”页面中，导航到一个资产文件夹，该文件夹中的图像配置文件或视频配置文件已分配给您要对其应用&#x200B;**Scene7:重新处理资产**&#x200B;工作流。
 
    如果文件夹分配了图像配置文件或视频配置文件，则其配置文件名称会显示在卡片视图中文件夹名称的正下方。
 
@@ -82,15 +82,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. 单击&#x200B;**[!UICONTROL 开始]**，然后单击&#x200B;**[!UICONTROL 确认]**。
 
-   要监视工作流或检查其进度，请从Experience Manager主控制台页面中，单击&#x200B;**[!UICONTROL 工具>工作流]**。 在工作流实例页面上，选择一个工作流。 在菜单栏上，单击&#x200B;**[!UICONTROL 打开历史记录]**。 您还可以从同一工作流实例页面中终止、暂停或重命名选定的工作流。
+   要监视工作流或检查其进度，请从[!DNL Experience Manager]主控制台页面中，单击&#x200B;**[!UICONTROL 工具>工作流]**。 在工作流实例页面上，选择一个工作流。 在菜单栏上，单击&#x200B;**[!UICONTROL 打开历史记录]**。 您还可以从同一工作流实例页面中终止、暂停或重命名选定的工作流。
 
 ### 调整重新处理工作流的批处理大小{#adjusting-load}
 
-（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受平均资产大小和运行重新处理的资产的MIME类型的约束。 值越高，表示您在一个重新处理作业中拥有许多文件。 因此，处理横幅会在Experience Manager资产上停留较长时间。 但是，如果平均文件大小为1 MB或更小，则建议将该值增加到100，但不要超过1000。 如果文件的平均大小为数百MB，则Adobe建议您将批处理大小降低到10。
+（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受平均资产大小和运行重新处理的资产的MIME类型的约束。 值越高，表示您在一个重新处理作业中拥有许多文件。 因此，处理横幅会在[!DNL Experience Manager]资产上停留较长时间。 但是，如果平均文件大小为1 MB或更小，则建议将该值增加到100，但不要超过1000。 如果文件的平均大小为数百MB，则Adobe建议您将批处理大小降低到10。
 
 **（可选）要调整重新处理工作流的批大小，请执行以下操作：**
 
-1. 在 Experience Manager 中，点按 **[!UICONTROL Adobe Experience Manager]**，以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]**（锤子）图标 > **[!UICONTROL 工作流 > 模型]**。
+1. 在[!DNL Experience Manager]中，点按&#x200B;**[!UICONTROL Adobe Experience Manager]**&#x200B;以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]**（锤子）图标> **[!UICONTROL 工作流>模型]**。
 1. 在“工作流模型”页面的卡片视图或列表视图中，选择&#x200B;**[!UICONTROL Scene7:重新处理资产]**。
 
    ![工作流模型页面，其中包含Scene7:重新处理在卡片视图中选择的资产工作流](/help/assets/dynamic-media/assets/reprocess-assets7.png)
