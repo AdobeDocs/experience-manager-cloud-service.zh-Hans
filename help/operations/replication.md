@@ -2,9 +2,9 @@
 title: 复制
 description: 分发 和复制故障排除。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 
 * `replicateAsParticipant` (布尔值，默认值： `false`)。如果配置为`true`，则复制将使用执行参与者步骤的主体的`userid`。
 * `enableVersion` (布尔值，默认值： `true`)。此参数可确定复制时是否创建了新版本。
-* `agentId` （字符串值，默认表示使用所有已启用的代理）。
+* `agentId` （字符串值，默认表示使用所有已启用的代理）。建议明确说明agentId;例如，将其设置为值：发布
 * `filters` （字符串值，默认表示激活所有路径）。可用值包括：
    * `onlyActivated`  — 将只激活未标记为已激活的路径。
    * `onlyModified`  — 仅激活已激活且修改日期晚于激活日期的路径。
