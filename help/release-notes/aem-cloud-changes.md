@@ -2,16 +2,23 @@
 title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 90%
+source-wordcount: '882'
+ht-degree: 85%
 
 ---
 
 # 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改 {#notable-changes-aem-cloud}
 
 AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是，与 AEM 云服务相比，On-Premise 版或 Adobe Managed Service 中的 AEM Sites 存在很大差异。本文档重点介绍了这些重要差异。
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_notable_changes"
+>title="对AEM作为Cloud Service的显着更改"
+>abstract="在此选项卡中，您可以查看有助于您了解内部部署版AEM之间或与Adobe Managed Services中的AEM as a Cloud Service相比有何差异的内容。"
+>additional-url="https://video.tv.adobe.com/v/330543" text="AEM作为Cloud Service的演变"
+
 
 >[!NOTE]
 >本文档重点介绍了对 AEM 整体的显著更改。有关更多信息和特定于解决方案的更改，请参阅：
