@@ -2,14 +2,14 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 33%
+source-wordcount: '962'
+ht-degree: 19%
 
 ---
 
-# Experience Manager as a Cloud Service 入门 {#aem-onboarding-guide}
+# [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}入门
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
@@ -58,31 +58,31 @@ ht-degree: 33%
 **[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
 现在，您已作为用户添加并被分配到Cloud Manager角色，接下来可以访问Cloud Manager以开始使用AEM的Cloud历程。 用户可以执行各种任务，如[创建程序](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)、[添加环境](/help/implementing/cloud-manager/manage-environments.md)、[访问Git](/help/implementing/cloud-manager/accessing-git.md)、[配置管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代码](/help/implementing/cloud-manager/deploy-code.md)。
-Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行管理Experience Manager。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。使用用户界面，您可以配置并启动CI/CD管线。
+Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行管理[!DNL Experience Manager]。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。使用用户界面，您可以配置并启动CI/CD管线。
 
 **[授予用户对AEM实例的访问权限](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 请阅读本节内容，了解系统管理员或创建环境的用户如何向其他用户授予对AEM实例的访问权限。
 
-## Experience Manager as a Cloud Service 指南 {#aem-guides}
+## [!DNL Experience Manager as a Cloud Service] 指南  {#aem-guides}
 
 | 用户指南 | 描述 |
 |---|---|
 | [Experience Manager as a Cloud Service 主页](/help/landing/home.md) | 有关 Experience Manager as a Cloud Service 文档的概述，请单击此处开始。 |
-| [概述](/help/overview/home.md) | 本指南提供了 Experience Manager as a Cloud Service 的概述，包括简介、术语等。 |
-| [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
-| [核心概念](/help/core-concepts/home.md) | 本指南简要介绍 Experience Manager as a Cloud Service 核心概念，包括新服务的架构。 |
-| [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
-| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
-| [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
+| [概述](/help/overview/home.md) | 本指南提供[!DNL Experience Manager as a Cloud Service]的概述，包括简介、术语等。 |
+| [发行说明](/help/release-notes/home.md) | 本指南提供了有关[!DNL Experience Manager as a Cloud Service]最新版本的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
+| [核心概念](/help/core-concepts/home.md) | 本指南介绍[!DNL Experience Manager as a Cloud Service]的核心概念，包括新服务的架构。 |
+| [安全用户指南](/help/security/home.md) | 了解有关[!DNL Experience Manager as a Cloud Service]的重要安全主题。 |
+| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用[!DNL Experience Manager Sites]作为Cloud Service进行创作，以及如何管理。 |
+| [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理[!DNL Experience Manager Assets as a Cloud Service]。 |
 | [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
-| [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
-| [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Commerce Integration FrameworkCloud Service。 |
+| [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到[!DNL Experience Manager as a Cloud Service]中。 |
+| [操作用户指南](/help/operations/home.md) | 了解[!DNL Experience Manager as a Cloud Service]的后端操作，如索引和维护任务。 |
+| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解[!DNL Experience Manager as a Cloud Service]上的Commerce Integration Framework。 |
 
-## 其他 Experience Manager 资源 {#other-resources}
+## 其他[!DNL Experience Manager]资源{#other-resources}
 
 * [近期文档更新](https://helpx.adobe.com/cn/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
