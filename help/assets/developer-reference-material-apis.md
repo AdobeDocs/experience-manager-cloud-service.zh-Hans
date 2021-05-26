@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API，Assets HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
+source-git-commit: 5243b02a8168da82674989b9f5abb65af6613096
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1420'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 ## 资产上传{#asset-upload}
 
-在[!DNL Experience Manager]中，作为[!DNL Cloud Service]，您可以使用HTTP API直接将资产上传到云存储。 上传二进制文件的步骤如下：
+在[!DNL Experience Manager]中，作为[!DNL Cloud Service]，您可以使用HTTP API直接将资产上传到云存储。 下面是上载二进制文件的步骤。 在外部应用程序中而不是在[!DNL Experience Manager] JVM中执行这些步骤。
 
 1. [提交HTTP请求](#initiate-upload)。它会通知[!DNL Experience Manage]r部署您上传新二进制文件的意图。
 1. [POST由启动请](#upload-binary) 求提供的一个或多个URI的二进制内容。
