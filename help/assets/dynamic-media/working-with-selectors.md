@@ -3,10 +3,10 @@ title: 使用选择器
 description: 了解在Dynamic Media中，可以使用方法选择交互式图像、交互式视频和轮播横幅的资产。
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 14%
+source-wordcount: '731'
+ht-degree: 18%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 14%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-当您选择热点或图像映射转到的位置（而不是手动输入）时，您将使用选择器。 仅当您是Adobe Experience Manager Sites客户时，网站选择器才起作用。 产品选择器还需要Experience Manager商务。
+当您选择热点或图像映射转到的位置（而不是手动输入）时，您将使用选择器。 仅当您是[!DNL Adobe Experience Manager Sites]客户时，站点选择器才有效。 产品选择器还需要[!DNL Experience Manager Commerce]。
 
 ## 在Dynamic Media中选择产品{#selecting-products}
 
@@ -42,11 +42,11 @@ ht-degree: 14%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以通过点按&#x200B;**[!UICONTROL Browse]**&#x200B;并导航到其他文件夹来更改Experience Manager浏览产品数据的位置。
+   您可以通过点按&#x200B;**[!UICONTROL Browse]**&#x200B;并导航到其他文件夹来更改[!DNL Experience Manager]浏览产品数据的位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   点按&#x200B;**[!UICONTROL 按]**&#x200B;排序，以更改Experience Manager按最新到最旧还是最旧到最新的排序。
+   点按&#x200B;**[!UICONTROL 按]**&#x200B;排序，以更改[!DNL Experience Manager]按最新到最旧还是最旧到最新进行排序。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ ht-degree: 14%
 
 ## 在Dynamic Media中选择站点{#selecting-sites}
 
-当您希望热点或图像映射链接到在Experience Manager网站中管理的网页时，请使用站点选择器来选择网页。
+当您希望热点或图像映射链接到在[!DNL Experience Manager]网站中管理的网页时，请使用站点选择器选择一个网页。
 
 1. 导航到传送集、交互式图像或交互式视频，然后点按“ **[!UICONTROL Actions]** ”（操作）选项卡（仅当您定义了热点或图像映射时可用）。
 
@@ -72,7 +72,7 @@ ht-degree: 14%
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. 点按&#x200B;**[!UICONTROL 站点选择器]**&#x200B;图标（带放大镜的文件夹），然后导航到Experience Manager站点中要将热点或图像映射链接到的页面。
+1. 点按&#x200B;**[!UICONTROL 站点选择器]**&#x200B;图标（带放大镜的文件夹），然后导航到 站点中要将热点或图像映射链接到的页面。[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ ht-degree: 14%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下（如果点按热点或图像映射），您将导航到您指定的Experience Manager站点页面。
+1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下（如果点按热点或图像映射），您将导航到您指定的[!DNL Experience Manager]站点页面。
 
 ## 在Dynamic Media中选择资产{#selecting-assets}
 
@@ -97,7 +97,7 @@ ht-degree: 14%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以通过导航到&#x200B;**[!UICONTROL Path]**&#x200B;字段中的其他文件夹来更改Experience Manager浏览资产的位置。
+   您可以通过导航到&#x200B;**[!UICONTROL 路径]**&#x200B;字段中的其他文件夹来更改[!DNL Experience Manager]浏览资产的位置。
 
    点按&#x200B;**[!UICONTROL 收藏集]** ，以仅搜索收藏集中的资产。
 
