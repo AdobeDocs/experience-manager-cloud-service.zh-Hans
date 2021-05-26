@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 资产管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3226'
 ht-degree: 20%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 20%
 
 要将Dynamic Media功能添加到您在网站上使用的资产中，您可以直接在页面上添加 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360 Media全景组件。 您进入布局模式并启用Dynamic Media组件。 然后，您将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
 
-如果您使用Dynamic Media作为WCM，则可以直接将Experience Manager添加到页面。 如果您为WCM使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[embed](/help/assets/dynamic-media/embed-code.md)您的资产。 有关响应式第三方网站，请参阅[将优化的图像传送到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用[!DNL Adobe Experience Manager]作为WCM，则可以直接将Dynamic Media资产添加到页面。 如果您为WCM使用第三方，请[链接](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[embed](/help/assets/dynamic-media/embed-code.md)您的资产。 有关响应式第三方网站，请参阅[将优化的图像传送到响应式网站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
->在将资产添加到Experience Manager中的页面之前，请确保先发布资产。 请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+>确保在将资产添加到[!DNL Experience Manager]的页面之前先发布资产。 请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 将Dynamic Media组件添加到页面{#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ ht-degree: 20%
 
 **要将Dynamic Media组件添加到页面，请执行以下操作：**
 
-1. 在Experience Manager中，打开要添加Dynamic Media组件的页面。
+1. 在[!DNL Experience Manager]中，打开要添加Dynamic Media组件的页面。
 1. 在左窗格中，点按&#x200B;**[!UICONTROL 组件]**&#x200B;图标，然后筛选Dynamic Media。
 
    如果没有可用的Dynamic Media组件列表，您可能必须启用要使用的Dynamic Media组件。 请参阅[启用Dynamic Media组件](#enabling-dynamic-media-components)。
@@ -55,7 +55,7 @@ ht-degree: 20%
 
 如果没有可添加到页面的Dynamic Media组件，则可能意味着您必须启用要使用的组件。
 
-1. 在Experience Manager中，打开要添加Dynamic Media组件的页面。
+1. 在[!DNL Experience Manager]中，打开要添加Dynamic Media组件的页面。
 1. 在靠近页面顶部的工具栏左侧，点按页面信息图标，然后点按下拉列表中的&#x200B;**[!UICONTROL 编辑模板]** 。
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->默认情况下，这些组件不可用，在使用之前必须通过模板编辑器来提供。 在模板编辑器中提供组件后，您可以像添加任何其他Experience Manager组件一样，将组件添加到页面。
+>默认情况下，这些组件不可用，在使用之前必须通过模板编辑器来提供。 在模板编辑器中提供组件后，您可以像添加任何其他[!DNL Experience Manager]组件一样，将组件添加到页面中。
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
    另请参阅[关于设备像素比率优化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
 
-   请注意，任何Adobe Experience Manager Dynamic Media智能成像DPR值都将被忽略。
+   请注意，任何[!DNL Experience Manager] Dynamic Media智能成像DPR值都将被忽略。
 
    仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 优化高分辨率设备]**&#x200B;选项：
    * 在“预设类型”下，选择&#x200B;**[!UICONTROL 图像预设]**，并从“**[!UICONTROL 图像预设]**”下拉列表中选择&#x200B;**[!UICONTROL RESS_IP]**。
@@ -247,7 +247,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
    另请参阅[关于设备像素比率优化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
 
-   请注意，任何Adobe Experience Manager Dynamic Media智能成像DPR值都将被忽略。
+   请注意，任何[!DNL Experience Manager] Dynamic Media智能成像DPR值都将被忽略。
 
    仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 优化高分辨率设备]**&#x200B;选项：
 
