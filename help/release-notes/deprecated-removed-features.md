@@ -2,14 +2,20 @@
 title: 已弃用和已删除的功能
 description: 发行说明特定于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已弃用和已移除的功能。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
+source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 44%
+source-wordcount: '484'
+ht-degree: 41%
 
 ---
 
 # 已弃用和已删除的功能 {#deprecated-and-removed-features}
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
+>title="AEM as aCloud Service中已弃用和已删除的功能"
+>abstract="AEM as aCloud Service具有云原生部署模型。 某些功能和特性已由云原生对应功能和特性进行替换，此选项卡会显示这些特性。"
+
 
 Adobe 不断评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。此外，由于[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]提供云原生部署模型，因此某些功能和特性已被云原生对应功能和特性所取代。
 
