@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频�
 feature: 360 VR 视频
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '933'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Dynamic Media包含交付360个视频资产的本机支持。 默认情况下，
 
 ## 上传资产以与360视频查看器{#uploading-assets-for-use-with-the-video-viewer}一起使用
 
-上传到Experience Manager中的360个视频资产在资产页面上标记为&#x200B;**Multimedia**，与常规视频资产类似。
+上传到[!DNL Experience Manager]中的360个视频资产在“资产”页面上标记为&#x200B;**Multimedia**，与普通视频资产类似。
 
 ![6_5_360 video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *在卡片视图中看到已上传的360个视频资产。资产将标记为多媒体。*
@@ -98,7 +98,7 @@ Start by uploading 360 Videos.
 
 如果您对360视频满意，可以发布该视频。
 
-请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
+请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容具有包含相对URL的链接，特别是指向[!DNL Experience Manager Sites]页面的链接，则无法使用基于URL的链接方法。
 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 **预览360个视频**
@@ -134,5 +134,5 @@ Start by uploading 360 Videos.
 
 有关如何发布360视频的详细信息，请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 另请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
-另请参阅[将URL关联到Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
+另请参阅[将URL关联到Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容具有包含相对URL的链接，特别是指向[!DNL Experience Manager Sites]页面的链接，则无法使用基于URL的链接方法。
 另请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
