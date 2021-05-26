@@ -4,7 +4,7 @@ description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Ado
 feature: 资产管理，上传
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -128,7 +128,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 要上传更多文件，请使用以下方法之一。 另请参阅[用例和方法](#upload-methods-comparison)
 
-* [资产上传API](developer-reference-material-apis.md#asset-upload-technical):根据需要，使用自定义上传脚本或工具来利用API添加对资产的其他处理（例如，翻译元数据或重命名文件）。
+* [资产上传API](developer-reference-material-apis.md#asset-upload):根据需要，使用自定义上传脚本或工具来利用API添加对资产的其他处理（例如，翻译元数据或重命名文件）。
 * [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):对于从本地文件系统上传资产的创意专业人士和营销人员非常有用。使用它可上载本地可用的嵌套文件夹。
 * [批量摄取工具](#asset-bulk-ingestor):在部署时，有时或最初会使用摄取大量资产 [!DNL Experience Manager]。
 
@@ -209,7 +209,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 使用API {#upload-using-apis}上传或摄取资产
 
-开发人员参考的[资产上传](developer-reference-material-apis.md#asset-upload-technical)部分中提供了上传API和协议、指向开源SDK和示例客户端的链接的技术详细信息。
+开发人员参考的[资产上传](developer-reference-material-apis.md#asset-upload)部分中提供了上传API和协议、指向开源SDK和示例客户端的链接的技术详细信息。
 
 ## 提示、最佳实践和限制{#tips-limitations}
 
@@ -231,5 +231,5 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >* [[!DNL Adobe Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文档](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [资产上传技术参考](developer-reference-material-apis.md#asset-upload-technical)
+>* [资产上传技术参考](developer-reference-material-apis.md#asset-upload)
 
