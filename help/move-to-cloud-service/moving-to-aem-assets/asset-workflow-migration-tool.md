@@ -2,10 +2,10 @@
 title: 资产工作流迁移工具
 description: 资产工作流迁移工具
 exl-id: 18490295-ead6-4691-8983-a6d4054e4264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 46%
+source-wordcount: '276'
+ht-degree: 29%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 46%
 * `NUI_MIGRATED`:已迁移到 [Asset compute服务的处理配置文件](/help/assets/asset-microservices-configure-and-use.md)。
 * `UNSUPPORTED`:当前不支持 [!DNL Experience Manager Assets] 作为Cloud Service。
 
-## 安装资产工作流迁移工具 {#installing-tool}
+## 使用资产工作流迁移工具{#use-workflow-migrator}
 
-请参阅 **[Git 资源：AEM Assets as a Cloud Service - 工作流迁移](https://github.com/adobe/aem-cloud-migration)**，以了解有关通过源安装和构建代码的信息。
+* **[!DNL Adobe I/O]CLI**:Adobe建议通过使用资产工作流迁移 `aio-cli-plugin-aem-cloud-service-migration` 工具([!DNL Experience Manager] 作为 [!DNL Cloud Service] CLI的代码重构插 [!DNL Adobe I/O] 件)。要了解如何安装和使用插件，请参阅[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)。
+
+* **独立实用程序**:资产工作流迁移工具也可以作为独立实用程序执行。要了解如何从源安装和构建代码，请参阅&#x200B;**[Git资源： [!DNL Experience Manager Assets] as a [!DNL Cloud Service]  — 工作流迁移](https://github.com/adobe/aem-cloud-migration)**。
