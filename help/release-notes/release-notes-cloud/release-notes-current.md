@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -61,9 +61,9 @@ ht-degree: 3%
 * 上载超大文件会使[!DNL Experience Manager desktop app]崩溃。 (CQ-4320942)
 * 从文件夹中选择同一收藏集和从搜索结果中选择该收藏集时，工具栏选项会有所不同。 (CQ-4321406)
 
-#### Dynamic Media的新增功能{#what-is-new-dm}
+#### [!DNL Dynamic Media] {#what-is-new-dm}的新增功能
 
-* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和有限网络带宽的设备上高效地交付最佳质量的图像。 有关更多信息，请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)。
+* 智能成像设备像素比(DPR)和网络带宽优化让您能够在具有高分辨率显示器和有限网络带宽的设备上高效地交付最佳质量的图像。 请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)。
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ ht-degree: 3%
    * 亚太2021年7月19日。
 
 
-* 在Dynamic Media交付（fmt URL修饰符）中引入了对下一代图像格式AVIF的支持。
+* 在[!DNL Dynamic Media]交付中引入了对下一代图像格式AVIF（fmt URL修饰符）的支持。
 
    >[!NOTE]
    >
