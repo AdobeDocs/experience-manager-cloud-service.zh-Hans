@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 37e431d70bc7e11097b9d59faed4b654b9087656
+source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '947'
 ht-degree: 3%
 
 ---
@@ -43,12 +43,6 @@ ht-degree: 3%
 * 您很快将能够在新的[预览层](/help/sites-cloud/authoring/fundamentals/previewing-content.md)上验证内容，以像在发布层一样模拟最终体验外观。 这由AEM Sites托管发布向导启用，该向导现在允许您在发布或预览之间选择发布目标。 然后，可以通过专用URL访问预览体验。 验证“预览”后，内容可以照常从“创作”发布到“发布”。 在AEM as a Cloud Service环境中启用“预览服务”功能将在未来几周逐步推出。
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
-
-### [!DNL Assets] {#what-is-new-assets}的新增功能
-
-* 您可以使用链接共享功能下载共享的资产。 现在，此下载使用的是异步服务，即使下载量非常大，也可提供更快、不间断的下载。 请参阅[下载资产](/help/assets/download-assets-from-aem.md#link-share-download)。
-
-   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
 ### 预发行渠道{#what-is-new-assets-prerelease}中的新增功能
 
