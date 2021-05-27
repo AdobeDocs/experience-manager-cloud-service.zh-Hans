@@ -1,13 +1,13 @@
 ---
-title: 将资产、文件夹和收藏集共享为链接
-description: 本文介绍了如何将 [!DNL Experience Manager Assets] 中的资产、文件夹和收藏集共享为超链接。
+title: 分发和共享资产、文件夹和收藏集
+description: 使用共享作为链接、下载和通过 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]等方法分发数字资产。
 contentOwner: AG
 feature: 资产管理、协作、资产分发
 role: Business Practitioner,Administrator
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] 允许您与组织成员以及外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。使用以下方法将[!DNL Experience Manager Assets]中的资产共享为[!DNL Cloud Service]:
 
-* 共享为链接。
+* [共享为链接](#sharelink)。
 * [下载资](/help/assets/download-assets-from-aem.md) 产并单独共享。
 * 使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)共享。
 * 使用[[!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)共享。
@@ -26,10 +26,12 @@ ht-degree: 2%
 
 要为要与用户共享的资产生成URL，请使用链接共享对话框。 具有管理员权限或在`/var/dam/share`位置具有读取权限的用户能够查看与其共享的链接。 通过链接共享资产是使外部各方无需首先登录[!DNL Assets]即可获得资源的一种便捷方式。
 
+![链接共享对话框](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* 您需要对要作为链接共享的文件夹或资产具有编辑ACL权限。
->* 在与用户共享链接之前，请确保[已启用出站电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。 否则，会发生错误。
+>* 在与用户共享链接之前，[启用出站电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。 否则，会发生错误。
 
 
 1. 在[!DNL Assets]用户界面中，选择要作为链接共享的资产。
