@@ -5,16 +5,16 @@ contentOwner: AG
 feature: 资产管理
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 7%
+source-wordcount: '1016'
+ht-degree: 4%
 
 ---
 
 # 从[!DNL Adobe Experience Manager] {#download-assets-from-aem}下载资产
 
-您可以下载资产，包括静态和动态演绎版。 或者，您也可以直接从[!DNL Adobe Experience Manager Assets]发送包含指向资产链接的电子邮件。 下载的资产会打包在 ZIP 文件中。对于导出作业，压缩的 ZIP 文件大小最大为 1 GB。每个导出作业最多允许资产总数为500个。
+您可以下载资产，包括静态和动态演绎版。 或者，您也可以直接从[!DNL Adobe Experience Manager Assets]发送包含指向资产链接的电子邮件。 下载的资产捆绑在ZIP文件中。<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ ht-degree: 7%
 您可以使用以下方法下载Experience Manager资产：
 
 * [Experience Manager用户界面](#download-assets)
+* [链接共享](#link-share-download)
 * [资产共享共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -63,6 +64,16 @@ ht-degree: 7%
    | **[!UICONTROL 动态演绎版]** | 选择此选项可实时生成一系列替代演绎版。 当您选择此选项时，您还可以通过从[图像预设](/help/assets/dynamic-media/image-presets.md)列表中选择要动态创建的演绎版。 <br>此外，您还可以选择大小和单位、格式、色彩空间、分辨率以及任何可选的图像修饰符（如反转图像）。仅当您启用了[!DNL Dynamic Media]时，此选项才可用。 |
 
 1. 在对话框中，单击&#x200B;**[!UICONTROL Download]**。
+
+## 下载使用链接共享{#link-share-download}共享的资产
+
+使用链接共享资产是让感兴趣的人无需首先登录[!DNL Assets]即可使用的一种便捷方式。 要生成用于共享资产的URL，请使用[链接共享功能](/help/assets/share-assets.md#sharelink)。
+
+当用户从共享链接下载资产时，[!DNL Assets]会使用异步服务来提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于非常大的下载，下载内容将分块为大小为100 GB的文件。
+
+收件箱会显示每个存档的处理状态。 处理完成后，您可以从收件箱中下载存档。
+
+![下载收件箱](assets/download-inbox.png)
 
 ## 启用资产下载Servlet {#enable-asset-download-servlet}
 
