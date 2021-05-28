@@ -2,9 +2,9 @@
 title: 自定义代码质量规则 — Cloud Services
 description: 自定义代码质量规则 — Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3298'
 ht-degree: 4%
 
 ---
@@ -724,7 +724,7 @@ AEM现代化工具文档提供了有关如何将组件从经典UI转换为触屏
 
 为了与Cloud Service部署模型兼容，单个内容包必须包含存储库不可变区域的内容（即`/apps and /libs, although /libs`不应被客户代码修改，并将导致单独的违规）或可变区域（即其他所有内容），但不能同时包含这两者。 例如，包含`/apps/myco/components/text and /etc/clientlibs/myco`的包与Cloud Service不兼容，并且会导致报告问题。
 
-有关更多详细信息，请参阅[AEM项目结构](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
+有关更多详细信息，请参阅[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
 
 ### 不应使用反向复制代理{#oakpal-reverse-replication}
 
@@ -736,7 +736,7 @@ AEM现代化工具文档提供了有关如何将组件从经典UI转换为触屏
 
 **自**:版本2020.5.0
 
-如[发行说明中所述，在Cloud Service部署中不提供对反向复制的支持：删除了复制代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+如[发行说明中所述，在Cloud Service部署中不提供对反向复制的支持：删除了复制代理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
 
 使用反向复制的客户应与Adobe联系以获取其他解决方案。
 
