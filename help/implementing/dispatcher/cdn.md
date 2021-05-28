@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 9%
+source-wordcount: '882'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 
 >[!CONTEXTUALHELP]
->id="aemcloud_nonbpa_cdn"
+>id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service 中的 CDN"
 >abstract="AEM asCloud Service随内置CDN一起提供。 其主要目的是通过从浏览器附近边缘的CDN节点交付可缓存的内容来减少延迟。 它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。"
 
@@ -41,6 +41,11 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 >只有来自允许IP的请求才会由AEM托管CDN提供。 如果您将自己的CDN指向AEM托管的CDN，请确保将CDN的IP包含在该允许列表中。
 
 ## 客户CDN指向AEM Managed CDN {#point-to-point-CDN}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_byocdn"
+>title="客户CDN指向AEM Managed CDN"
+>abstract="AEM as Cloud Service为客户提供了使用其现有CDN的选项。 对于发布层，客户可以选择从自己的CDN指向它，他们需要管理CDN。 将根据满足某些先决条件（包括但不限于客户与其CDN供应商进行旧版集成，而这些旧版集成很难放弃）的情况，逐个允许执行此操作。"
 
 如果客户必须使用其现有的CDN，则他们可以管理CDN并将其指向AEM托管的CDN，从而满足以下要求：
 
