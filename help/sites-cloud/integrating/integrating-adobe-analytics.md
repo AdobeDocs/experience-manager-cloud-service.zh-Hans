@@ -4,9 +4,9 @@ description: '与 Adobe Analytics 集成 '
 feature: 管理
 role: Administrator
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '532'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 将Adobe Analytics和AEM集成为Cloud Service后，您可以跟踪网页活动。 该集成要求：
 
 * 使用触屏UI在AEM中创建Analytics配置作为Cloud Service。
-* 在[AdobeLaunch](#analytics-launch)中添加并配置Adobe Analytics作为扩展。 有关LaunchAdobe的更多详细信息，请参阅[此页面](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 在[AdobeLaunch](#analytics-launch)中添加并配置Adobe Analytics作为扩展。 有关LaunchAdobe的更多详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)。
 
 与AEM的先前版本相比，AEM作为Cloud Service的Analytics配置中未提供框架支持。 现在，可以通过Launch来完成，Launch是使用Analytics功能（JS库）检测AEM网站的实际工具。 在Launch中，将创建一个资产，用于配置Adobe Analytics扩展，并创建规则以将数据发送到Adobe Analytics。 Adobe启动已取代sitecatalyst提供的分析任务。
 
@@ -44,7 +44,7 @@ ht-degree: 4%
 | 用户名 | Adobe Analytics API用户 |
 | 密码 | Adobe Analytics密码用于身份验证 |
 | 数据中心 | 您的帐户关联的Adobe Analytics数据中心（例如，San Jose， London） |
-| 区段 | 用于使用当前报表包中定义的Analytics区段的选项。 将根据区段过滤Analytics报表。 有关其他详细信息，请参阅[此页面](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html)。 |
+| 区段 | 用于使用当前报表包中定义的Analytics区段的选项。 将根据区段过滤Analytics报表。 有关其他详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
 | 报表包 | 用于发送数据和提取报表的存储库。 报表包可针对选定的网站、网站集或网站页面的子集，定义完整、独立的报表。 您可以查看从单个报表包获取的报表，并可以根据您的要求随时在配置中编辑此字段。 |
 
 ### 向站点{#add-configuration}添加配置
@@ -55,9 +55,9 @@ ht-degree: 4%
 
 Adobe Analytics可以作为Launch资产的扩展添加。 可以定义规则以执行映射和对Adobe Analytics进行后调用：
 
-* 观看[此视频](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)，了解如何在Launch中为基本站点配置Analytics扩展。
+* 观看[此视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)，了解如何在Launch中为基本站点配置Analytics扩展。
 
-* 有关如何创建规则和将数据发送到Adobe Analytics的详细信息，请参阅[此页面](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)。
+* 有关如何创建规则和将数据发送到Adobe Analytics的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)。
 
 >[!NOTE]
 >
