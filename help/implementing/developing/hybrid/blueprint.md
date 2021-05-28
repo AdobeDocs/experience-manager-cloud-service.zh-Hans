@@ -2,9 +2,9 @@
 title: SPA Blueprint
 description: 本文档介绍任何SPA框架在AEM中实施可编辑的SPA组件时应履行的与框架无关的一般合同。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2056'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ SPA组件必须与页面模型同步，并相应地更新以更改其内容。 �
 * `:itemsOrder`:订了孩子的名单。JSON映射对象不保证其字段的顺序。 通过让映射和当前数组成为API的使用者，这两种结构都具有好处
 * `:path`:项目的内容路径（在表示页面的项目上存在）
 
-另请参阅[AEM Content Services快速入门。](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+另请参阅[AEM Content Services快速入门。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 ### 特定于框架的模块{#framework-specific-module}
 
