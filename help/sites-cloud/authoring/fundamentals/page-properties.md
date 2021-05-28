@@ -2,9 +2,9 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 58%
 
 ---
@@ -148,7 +148,7 @@ ht-degree: 58%
 
 * **社交媒体共享**
 
-   定义页面上可用的共享选项。显示可用于[共享核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/sharing.html)的选项。
+   定义页面上可用的共享选项。显示可用于[共享核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html)的选项。
 
    * **为 Facebook 启用用户共享**
    * **为 Pinterest 启用用户共享**
