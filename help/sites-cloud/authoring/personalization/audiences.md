@@ -2,10 +2,10 @@
 title: 管理受众
 description: 通过“受众”控制台，您可以创建、组织和管理Adobe Target帐户的受众，或管理ContextHub的区段
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 59%
+source-wordcount: '964'
+ht-degree: 60%
 
 ---
 
@@ -81,13 +81,13 @@ ht-degree: 59%
 
 | **属性** | **描述** | **有关详细信息** |
 |---|---|---|
-| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕大小（按像素）等参数定位移动设备。 | 请参阅位于Adobe Target的[移动设备文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html)。 |
-| **自定义** | 自定义参数是mbox参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参阅位于Adobe Target的[自定义参数文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)。 |
+| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕大小（按像素）等参数定位移动设备。 | 请参阅位于Adobe Target的[移动设备文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)。 |
+| **自定义** | 自定义参数是mbox参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参阅位于Adobe Target的[自定义参数文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)。 |
 | **操作系统** | 您可以定位使用特定操作系统的访客。 | 定位使用Linux、Macintosh或Windows的用户。 |
-| **站点页面** | 定位位于特定页面或具有特定mbox参数的访客。 | 请参阅位于Adobe Target的[网站页面文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html)。 |
-| **浏览器** | 您可以定位使用特定浏览器或特定浏览器选项访问您的页面的用户。 | 请参阅位于Adobe Target的[浏览器选项文档](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)。 |
-| **访客配置文件** | 定位满足特定配置文件参数的访客。 | 请参阅位于Adobe Target的[访客配置文件文档](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html)。 |
-| **流量源** | 根据将访客引荐至您网站的搜索引擎或登陆页面来定位访客。 | 请参阅位于Adobe Target的[流量源文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)。 |
+| **站点页面** | 定位位于特定页面或具有特定mbox参数的访客。 | 请参阅位于Adobe Target的[网站页面文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)。 |
+| **浏览器** | 您可以定位使用特定浏览器或特定浏览器选项访问您的页面的用户。 | 请参阅位于Adobe Target的[浏览器选项文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)。 |
+| **访客配置文件** | 定位满足特定配置文件参数的访客。 | 请参阅位于Adobe Target的[访客配置文件文档](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html)。 |
+| **流量源** | 根据将访客引荐至您网站的搜索引擎或登陆页面来定位访客。 | 请参阅位于Adobe Target的[流量源文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)。 |
 
 ## 在“受众”控制台中修改受众 {#modifying-an-audience-in-the-audiences-console}
 
