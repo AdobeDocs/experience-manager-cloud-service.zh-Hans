@@ -3,9 +3,9 @@ title: 云中的调度程序
 description: '云中的调度程序 '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4211'
+source-wordcount: '4207'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## Apache和Dispatcher配置和测试{#apache-and-dispatcher-configuration-and-testing}
 
-本节介绍如何将AEM构建为Cloud ServiceApache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行该配置。 此外，还介绍了如何在云环境中进行调试。 有关Dispatcher的其他信息，请参阅[AEM Dispatcher文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)。
+本节介绍如何将AEM构建为Cloud ServiceApache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行该配置。 此外，还介绍了如何在云环境中进行调试。 有关Dispatcher的其他信息，请参阅[AEM Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
 
 >[!NOTE]
 >Windows用户需要使用支持Docker的Windows 10专业版或其他发行版。 这是在本地计算机上运行和调试Dispatcher的先决条件。 以下部分包括使用Mac或Linux版本的SDK的命令，但Windows SDK也可以以类似的方式使用。
@@ -526,7 +526,7 @@ Dispatcher配置结构在Managed Services与AEM as a Dispatcher之间存在差�
 ## 如何将AMS转换为AEM as a Cloud Service Dispatcher配置
 
 以下部分提供了有关如何转换AMS配置的分步说明。 它假定
-具有与[Cloud Manager Dispatcher配置](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述结构类似的存档
+具有与[Cloud Manager Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述结构类似的存档
 
 ### 提取存档并删除最后的前缀
 
