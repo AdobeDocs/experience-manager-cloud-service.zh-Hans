@@ -2,10 +2,10 @@
 title: 自定义和扩展内容片段
 description: 内容片段对标准资产进行了扩展。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 3%
+source-wordcount: '1796'
+ht-degree: 2%
 
 ---
 
@@ -101,9 +101,9 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->[内容片段组件是核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)的一部分。 有关更多详细信息，请参阅[开发核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)。
+>[内容片段组件是核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)的一部分。 有关更多详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
-可以像任何其他资产类型一样，从AEM页面引用内容片段。 AEM提供了&#x200B;**[内容片段核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** - a [组件，该组件允许您在页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)上包含内容片段。 您还可以扩展此&#x200B;**[内容片段](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)**&#x200B;核心组件。
+可以像任何其他资产类型一样，从AEM页面引用内容片段。 AEM提供了&#x200B;**[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** - a [组件，该组件允许您在页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)上包含内容片段。 您还可以扩展此&#x200B;**[内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**&#x200B;核心组件。
 
 * 组件使用`fragmentPath`属性引用实际的内容片段。 `fragmentPath`属性的处理方式与其他资产类型的类似属性相同；例如，当内容片段被移动到其他位置时。
 
@@ -170,7 +170,7 @@ ht-degree: 3%
 
 您可以使用服务器端API访问您的内容片段；请参阅：
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -180,7 +180,7 @@ ht-degree: 3%
 
 以下三个界面可用作入口点：
 
-* **内容片段** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **内容片段** ([ContentFragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    此界面允许您以抽象方式处理内容片段。
 
@@ -206,7 +206,7 @@ ht-degree: 3%
 
    表示片段主要元素的界面包括：
 
-   * **内容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **内容元素** ([ContentElement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 获取基本数据（名称、标题、描述）
       * 获取/设置内容
@@ -218,7 +218,7 @@ ht-degree: 3%
          * 删除变体（请参阅[注意事项](#caveats)）
          * 访问变量数据（请参阅`ContentVariation`）
       * 解析变量的快捷方式（如果指定的变量不适用于元素，则应用一些其他特定于实施的回退逻辑）
-   * **内容变体** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **内容变体** ([ContentVariation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 获取基本数据（名称、标题、描述）
       * 获取/设置内容
@@ -248,9 +248,9 @@ ht-degree: 3%
 
 * `ContentElement` 可适用于：
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html)  — 访问元素的结构信息。
+   * [`ElementTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html)  — 访问元素的结构信息。
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 可适用于：
 
@@ -353,4 +353,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 有关详细信息，请参阅
 
-* [核心组件 — 内容片段组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) （推荐）
+* [核心组件 — 内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) （推荐）
