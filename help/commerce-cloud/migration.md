@@ -2,10 +2,10 @@
 title: 迁移到AEM Commerce Integration Framework(CIF)附加组件
 description: 如何从旧版本迁移到AEM Commerce Integration Framework(CIF)加载项
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 1%
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ AEM 6.5也可通过[软件分发门户](https://experience.adobe.com/#/downloads
 
 ## 项目结构
 
-了解[AEM项目结构](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)以及AEM作为Cloud Service的特性。 将项目设置作为Cloud Service布局调整为AEM。
+了解[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)以及AEM作为Cloud Service的特性。 将项目设置作为Cloud Service布局调整为AEM。
 与AEM 6.5部署相比，以下两个主要区别：
 
 * GraphQL客户端OSGI包&#x200B;**不能再**&#x200B;包含在AEM项目中，而是通过CIF附加组件进行部署
