@@ -2,14 +2,22 @@
 title: 上线后阶段
 description: 上线后阶段
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 73%
 
 ---
 
 # 上线后 {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="故障诊断AEM"
+>abstract="查看持续开发的最佳实践并管理日志，以及诸如开发人员控制台和CRXDE Lite之类的工具，以帮助解决AEM问题"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="访问和管理日志"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service开发工具"
+
 
 在上线后阶段，您应确保清理临时文件，审查持续开发的最佳实践并管理日志。
 
@@ -43,4 +51,10 @@ ht-degree: 100%
 
 ### 其他支持 {#additional-support}
 
-如果您对云服务的访问权限存有任何疑问，请联系您的 Adobe 代表或 Adobe AEM CQ 支持门户。
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="帮助和支持"
+>abstract="请联系我们的AEM支持团队，以获取说明或解决任何问题。"
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="支持Experience Cloud"
+
+如果您对访问Cloud Service有任何疑问，请联系您的Adobe代表或[Experience Cloud支持](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)以获取更多详细信息。
