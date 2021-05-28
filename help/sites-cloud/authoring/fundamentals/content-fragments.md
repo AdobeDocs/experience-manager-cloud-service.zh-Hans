@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 100%
+source-wordcount: '1163'
+ht-degree: 99%
 
 ---
 
@@ -23,8 +23,10 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 >
 >* **内容片段**&#x200B;是可编辑的内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容，网页即属于此类片段。
+
 >
->体验片段可以包含内容片段形式的内容，反之则不行。
+>
+体验片段可以包含内容片段形式的内容，反之则不行。
 
 >[!CAUTION]
 >
@@ -70,7 +72,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
    >有关其他编辑功能的更多信息，另请参阅：
    >
    >* [响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >* [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   * [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### 选择元素或变量 {#selecting-the-element-or-variation}
@@ -78,8 +80,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 打开片段的&#x200B;**配置**&#x200B;对话框以配置片段在当前页面上使用。该对话框取决于所使用的组件。
 
 >[!NOTE]
->
->另请参阅[核心组件和内容片段组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)
+另请参阅[核心组件和内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 在相应的配置对话框中，您可以选择可用的参数，包括：
 
@@ -92,8 +93,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
    * 可用的选项取决于所使用的模型。
 
    >[!NOTE]
-   >
-   >可用的元素取决于所使用的模型。
+   可用的元素取决于所使用的模型。
 
 * **变量**
    * 默认主 **视图** 将始终可用。
@@ -108,8 +108,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 您可以打开片段源，以使用组件工具栏中的&#x200B;**编辑**&#x200B;图标编辑（资产）。这将允许您[编辑和管理内容片段](/help/assets/content-fragments/content-fragments.md)。
 
 >[!CAUTION]
->
->通常情况下，编辑片段源将会影响引用该内容片段的所有页面。
+通常情况下，编辑片段源将会影响引用该内容片段的所有页面。
 
 ### 添加中间内容  {#adding-in-between-content}
 
@@ -124,21 +123,18 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 * 使用[关联内容](#using-associated-content)作为中间内容的源。
 
 >[!CAUTION]
->
->中间内容是页面内容。它不会存储在内容片段中。
+中间内容是页面内容。它不会存储在内容片段中。
 
 ![插入组件](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
->
->您还可以[在片段本身中插入可视资产（图像）](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
->在片段本身中插入的可视资产会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。如果需要达到此关联程度，可以将图像添加到片段（形成[混合媒体片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)）。
+您还可以[在片段本身中插入可视资产（图像）](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
+在片段本身中插入的可视资产会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。如果需要达到此关联程度，可以将图像添加到片段（形成[混合媒体片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)）。
 
 >[!CAUTION]
->
->在将中间内容添加到页面上的内容片段之后，更改基础内容片段的结构（例如在内容片段编辑器中）可能会导致错误/意外的结果。
->在发生此问题时，中间内容会按原样保留：
->* 中间组件在片段流的组件序列中具有一个绝对位置。即使片段中段落的内容发生更改，此位置也不会变化。
+在将中间内容添加到页面上的内容片段之后，更改基础内容片段的结构（例如在内容片段编辑器中）可能会导致错误/意外的结果。
+在发生此问题时，中间内容会按原样保留：
+* 中间组件在片段流的组件序列中具有一个绝对位置。即使片段中段落的内容发生更改，此位置也不会变化。
 
 这可能使其看起来像是相对位置发生了更改一样，因为中间段落与它们旁边的（片段）段落之间没有上下文关系。
 * 除非两个段落结构产生冲突；在这种情况下，将不会显示中间内容（尽管它在内部依然存在）。
@@ -149,12 +145,10 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 如果您有与[内容片段](/help/assets/content-fragments/content-fragments.md)[关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
 
 >[!NOTE]
->
->可以通过多种方法向片段和/或页面中添加[可视资产（例如图像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)。
+可以通过多种方法向片段和/或页面中添加[可视资产（例如图像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)。
 
 >[!NOTE]
->
->如果您在一个页面中拥有多个内容片段，**关联内容**&#x200B;选项卡将显示适用于所有片段的资产。
+如果您在一个页面中拥有多个内容片段，**关联内容**&#x200B;选项卡将显示适用于所有片段的资产。
 
 在将具有关联内容的片段添加到页面之后，将会在侧面板中打开一个新的选项卡（**关联内容**）。
 
