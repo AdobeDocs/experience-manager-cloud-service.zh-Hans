@@ -2,9 +2,9 @@
 title: 将AEM作为Cloud Service记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置，或如何在AEM中作为Cloud Service请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
+source-wordcount: '2330'
 ht-degree: 2%
 
 ---
@@ -549,7 +549,7 @@ AEM日志位于文件夹`crx-quickstart/logs`中，可在该文件夹中查看�
 * AEM HTTP请求日志：`request.log`
 * AEM HTTP访问日志：`access.log`
 
-Apache层日志（包括调度程序）位于包含调度程序的Docker容器中。 有关如何启动Dispatcher的信息，请参阅[Dispatcher文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
+Apache层日志（包括调度程序）位于包含调度程序的Docker容器中。 有关如何启动Dispatcher的信息，请参阅[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
 要检索日志，请执行以下操作：
 
