@@ -2,9 +2,9 @@
 title: 修饰标记
 description: 呈现网页中的组件后，可以生成一个 HTML 元素，以将呈现的组件封装在其中。对于开发人员而言，AEM 可提供清晰而简单的逻辑来控制用于封装所包含组件的修饰标记。
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 10%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 10%
 
 可以完全控制HTL脚本中包装器标记的行为及其关联逻辑。
 
-有关在HTL中进行开发的更多信息，请参阅[HTL文档](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)。
+有关在HTL中进行开发的更多信息，请参阅[HTL文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)。
 
 ### 决策树{#decision-tree}
 
