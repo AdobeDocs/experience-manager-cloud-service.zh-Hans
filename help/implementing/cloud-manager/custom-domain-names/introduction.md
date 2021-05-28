@@ -2,14 +2,21 @@
 title: 简介 — 自定义域名
 description: 简介 — 自定义域名
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # 简介 {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_domains"
+>title="管理自定义域名"
+>abstract="Cloud Manager允许您添加自定义域，以通过UI以自助方式使用唯一的品牌名称来标识您的网站。 您的Adobe Experience Manager as aCloud Service配置了默认域名，以*.adobeaemcloud.com结尾。 此默认域名将保留，即使在您将自定义域名附加到您的网站后也是如此。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="添加自定义域名"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="查看和更新自定义域名"
 
 Cloud Manager允许您添加自定义域，以通过UI以自助方式使用唯一的品牌名称来标识您的网站。 您的Adobe Experience Manager as aCloud Service配置了默认域名，以`*.adobeaemcloud.com`结尾。 此默认域名将保留，即使在您将自定义域名附加到您的网站后也是如此。
 
