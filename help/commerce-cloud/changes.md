@@ -2,10 +2,10 @@
 title: 对商务集成框架(CIF)附加组件的显着更改
 description: 与旧的CIF版本相比，商务集成框架(CIF)发生了显着更改。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-source-git-commit: 7a52e4b62f5a18f9c68e5afb0d464bd11be732d2
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 5%
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
@@ -38,12 +38,12 @@ AEM CIF加载项将通过Cloud Manager安装。 安装需要CIF信用，但沙�
 
 ## 部署CIF维尼亚项目
 
-在[Cloud Manager Git存储库](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)中提供的项目，并通过[Cloud Manager](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/deploying/overview.html)完成部署
+在[Cloud Manager Git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)中提供的项目，并通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)完成部署
 
 **早期CIF版本**
 
 * CIF Classic:通过AEM包安装
-* CIF开源：通过[Cloud Manager](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* CIF开源：通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans)
 
 ## 产品目录数据
 
