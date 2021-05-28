@@ -2,9 +2,9 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2869'
 ht-degree: 13%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->熟悉基本的[AEM项目原型use](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md)，因为本文基于这些学习和概念。
+>熟悉基本的[AEM项目原型use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md)，因为本文基于这些学习和概念。
 
 本文概述了Adobe Experience Manager Maven项目作为Cloud Service兼容所需的更改，具体方法是：确保项目能够遵循可变和不可变内容的拆分，建立依赖关系以创建无冲突的确定性部署，并将它们打包为可部署的结构。
 
@@ -60,7 +60,7 @@ Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理�
 + 将生成OSGi包Jar文件，并直接嵌入到所有项目中。
 
 + `ui.apps`包包含要部署的所有代码，并且仅部署到`/apps`。 `ui.apps`包的常见元素包括，但不限于：
-   + [组件定义和](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html) HTLscript
+   + [组件定义和](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans) HTLscript
       + `/apps/my-app/components`
    + JavaScript和CSS（通过[客户端库](/help/implementing/developing/introduction/clientlibs.md)）
       + `/apps/my-app/clientlibs`
