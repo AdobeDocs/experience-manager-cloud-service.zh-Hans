@@ -1,10 +1,10 @@
 ---
 title: '与 Adobe Analytics 集成 '
 description: '与 Adobe Analytics 集成 '
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 14%
+source-wordcount: '545'
+ht-degree: 12%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 14%
 
 下面列出的页面可帮助您配置集成。 请注意，Launch by Adobe是使用Analytics功能（JS库）检测AEM网站的实际工具。 因此，将AEM as a Launch与Launch和Adobe Analytics集成是一回事。
 
-* [连接到Adobe Analytics和创建框架](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html)  — 请注意，“Analytics框架”是AEM中的旧版框架，并且由于需要经典UI，因此在AEM中无法将其创建为Cloud Service。Launch by Adobe应用于变量映射和将JS库部署到页面。
-* [集成Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+* [连接到Adobe Analytics和创建框架](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-connect.html)  — 请注意，“Analytics框架”是AEM中的旧版框架，并且由于需要经典UI，因此在AEM中无法将其创建为Cloud Service。Launch by Adobe应用于变量映射和将JS库部署到页面。
+* [集成Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
 * [通过AEM将Adobe I/O与AdobeLaunch集成](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
 * [了解AEM与Launch by Adobe、Analytics和Target的集成](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
-* [为Adobe Analytics配置链接跟踪](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-link.html)
-* [使用Adobe Analytics属性映射组件数据](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-mapping.html)
-* [为Adobe Analytics配置视频跟踪](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-video.html)
-* [Adobe分类](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-classifications.html)
+* [为Adobe Analytics配置链接跟踪](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-link.html)
+* [使用Adobe Analytics属性映射组件数据](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-mapping.html)
+* [为Adobe Analytics配置视频跟踪](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-video.html)
+* [Adobe分类](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-classifications.html)
 
 >[!CAUTION]
 >
@@ -46,12 +46,12 @@ ht-degree: 14%
 
 请参阅：
 
-* [扩展Adobe Analytics集](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) 成，以了解有关开发可收集用户数据的组件和自定义Adobe Analytics框架的信息。请注意，“Analytics框架”是AEM中的旧版框架，由于需要经典UI，因此在AEM中无法将其创建为Cloud Service。 Launch by Adobe应用于变量映射和将JS库部署到页面。
+* [扩展Adobe Analytics集](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) 成，以了解有关开发可收集用户数据的组件和自定义Adobe Analytics框架的信息。请注意，“Analytics框架”是AEM中的旧版框架，由于需要经典UI，因此在AEM中无法将其创建为Cloud Service。 Launch by Adobe应用于变量映射和将JS库部署到页面。
 * 知识库文章[Adobe Analytics集成 — 疑难解答问题](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html)，以了解有关对Adobe Analytics集成进行疑难解答的信息。
 
 >[!NOTE]
 >
->如果您使用的是具有自定义代理配置的 Adobe Analytics，则需要配置 **Apache HTTP Client** 代理配置所需的[两个 OSGi 包](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/configuring/configuring-osgi.html)（例如，使用 Web Console）。这两个包都是必需的，因为 AEM 的某些功能使用 3.x API，而其他功能使用 4.x API。配置:
+>如果您使用的是具有自定义代理配置的 Adobe Analytics，则需要配置 **Apache HTTP Client** 代理配置所需的[两个 OSGi 包](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)（例如，使用 Web Console）。这两个包都是必需的，因为 AEM 的某些功能使用 3.x API，而其他功能使用 4.x API。配置:
 >
 >* **Day Commons HTTP Client 3.1** 来配置3.x API;
    >  例如， [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
