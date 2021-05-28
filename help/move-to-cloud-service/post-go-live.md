@@ -2,10 +2,10 @@
 title: 上线后阶段
 description: 上线后阶段
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 73%
+source-wordcount: '314'
+ht-degree: 63%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 73%
 >id="aemcloud_golive_troubleshooting"
 >title="故障诊断AEM"
 >abstract="查看持续开发的最佳实践并管理日志，以及诸如开发人员控制台和CRXDE Lite之类的工具，以帮助解决AEM问题"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="访问和管理日志"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service开发工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="访问和管理日志"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service开发工具"
 
 
 在上线后阶段，您应确保清理临时文件，审查持续开发的最佳实践并管理日志。
@@ -32,7 +32,7 @@ ht-degree: 73%
 
 开发人员控制台中提供了调试 AEM as a Cloud Service 开发人员环境的功能，可用于开发、暂存和生产环境。
 
-请参阅[实施 AEM as a Cloud Service](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，了解有关开发工具的更多信息。
+请参阅[实施 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，了解有关开发工具的更多信息。
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ ht-degree: 73%
 
 用户可以访问选定环境的可用日志文件列表。
 
-请参阅[访问和管理日志](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)，了解如何通过 UI 或通过 Cloud Manager 从 API 访问和管理日志。
+请参阅[访问和管理日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)，了解如何通过 UI 或通过 Cloud Manager 从 API 访问和管理日志。
 
 ### 其他支持 {#additional-support}
 
