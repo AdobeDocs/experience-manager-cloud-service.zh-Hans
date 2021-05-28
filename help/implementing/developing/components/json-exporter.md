@@ -2,10 +2,10 @@
 title: 内容服务的JSON导出程序
 description: AEM Content Services旨在对AEM中/从中提供的内容的描述和交付进行归纳，使其不仅仅限于网页。 它们使用可供任何客户使用的标准化方法，将内容交付到非传统AEM网页的渠道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 8%
+source-wordcount: '409'
+ht-degree: 5%
 
 ---
 
@@ -83,4 +83,4 @@ AEM内容服务旨在将AEM中/从Content Services交付的内容的描述和交
 * [Assets用户指南中的内容片段](/help/assets/content-fragments/content-fragments.md)
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 组件和内容 [片段组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)
+* [核心](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 组件和内容 [片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
