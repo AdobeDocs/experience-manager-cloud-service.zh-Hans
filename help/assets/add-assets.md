@@ -4,7 +4,7 @@ description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Ado
 feature: 资产管理，上传
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
