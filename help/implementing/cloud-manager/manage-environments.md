@@ -2,9 +2,9 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 4%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 只有具有开发人员角色的用户才有权访问&#x200B;**开发人员控制台**。 沙盒程序除外，在沙盒程序中，任何有权访问Cloud Manager沙盒程序的用户都将有权访问&#x200B;**开发人员控制台**。
 
-有关更多详细信息，请参阅[休眠和解除休眠沙盒环境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)。
+有关更多详细信息，请参阅[休眠和解除休眠沙盒环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)。
 
 
 ![](assets/environ-devconsole.png)
