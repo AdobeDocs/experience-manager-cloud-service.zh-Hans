@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 作为Cloud Service2021.3.0发行说明。'
-source-git-commit: 63b7c11683425cc20851ee5a16ee099511429b17
+source-git-commit: 3ff105507f4d42f5858a7e3a4c703d9135b36e5b
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 3%
@@ -62,7 +62,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms多年来一直帮助许多组织提供出色的入门和注册体验。 这些体验帮助组织将潜在客户转化为销售，处理捕获的客户数据，根据受众配置文件提供响应式体验，等等。 现在，AEM Forms已作为云服务提供。
 
-您可以使用[AEM Forms作为Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)创建数字表单，将表单连接到现有数据源，将表单与Adobe Sign集成以向表单添加电子签名，生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可以将您现有的PDF forms转换为数字表单。 除了标准的AEM Forms功能外，该服务还提供若干云原生功能，如自动扩展、升级无停机以及云原生开发环境。 请阅读[此博客文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) ，了解AEM Forms作为Cloud Service的功能和特性。
+您可以使用[AEM Forms作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)创建数字表单，将表单连接到现有数据源，将表单与Adobe Sign集成以向表单添加电子签名，生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可以将您现有的PDF forms转换为数字表单。 除了标准的AEM Forms功能外，该服务还提供若干云原生功能，如自动扩展、升级无停机以及云原生开发环境。 请阅读[此博客文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) ，了解AEM Forms作为Cloud Service的功能和特性。
 
 您可以联系Adobe代表以观看演示或注册该服务。
 
