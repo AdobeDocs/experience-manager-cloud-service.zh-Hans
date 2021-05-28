@@ -2,9 +2,9 @@
 title: 与 Adobe Target 集成
 description: 与 Adobe Target 集成
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '723'
 ht-degree: 4%
 
 ---
@@ -27,12 +27,12 @@ ht-degree: 4%
 
 要与Target集成，请执行以下任务：
 
-* [执行先决任务](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html):在Adobe Target中注册并配置AEM创作实例的某些方面。您的Adobe Target帐户必须至少具有&#x200B;**审批者**&#x200B;级别权限。 此外，您还必须保护发布节点上的活动设置，以便用户无法访问该活动设置。
+* [执行先决任务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html):在Adobe Target中注册并配置AEM创作实例的某些方面。您的Adobe Target帐户必须至少具有&#x200B;**审批者**&#x200B;级别权限。 此外，您还必须保护发布节点上的活动设置，以便用户无法访问该活动设置。
 
 * Launch by Adobe是使用Target功能（JS库）检测AEM网站的实际工具。 因此，将AEM as a Launch与Launch和Adobe Target集成时，会一起使用（请参阅以下链接）。
 
-   * [使用Adobe Target与Adobe I/O集成](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
-   * [集成Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+   * [使用Adobe Target与Adobe I/O集成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+   * [集成Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
    * [通过AEM将Adobe I/O与AdobeLaunch集成](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [了解AEM与Launch by Adobe、Analytics和Target的集成](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 >
 >用于Launch by Adobe的IMS配置（技术帐户）在AEM中预配置为Cloud Service。 用户无需创建此配置。
 
-1. [配置活动](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):将您的活动与Target云配置关联。
+1. [配置活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html):将您的活动与Target云配置关联。
 
 >[!CAUTION]
 >
@@ -61,9 +61,9 @@ ht-degree: 4%
 >
 >您必须保护发布实例上的活动设置节点&#x200B;**cq:ActivitySettings**，以便普通用户无法访问该节点。 该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
 >
->有关详细信息，请参阅[与Adobe Target集成的先决条件](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node)。
+>有关详细信息，请参阅[与Adobe Target集成的先决条件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node)。
 
-集成完成后，您可以[创作目标内容](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html)以将访客数据发送到Adobe Target。 请注意，页面组件需要特定代码才能启用内容定位。 (请参阅[为目标内容开发](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html)。
+集成完成后，您可以[创作目标内容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html)以将访客数据发送到Adobe Target。 请注意，页面组件需要特定代码才能启用内容定位。 (请参阅[为目标内容开发](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)。
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ ht-degree: 4%
 
 将AEM as a A Audience与Adobe Target集成需要了解Adobe Target、AEM活动管理和AEM受众管理。 您应该熟悉以下信息：
 
-* Adobe Target(请参阅[Adobe Target文档](https://docs.adobe.com/content/help/en/target/using/target-home.html))。
-* AEM活动控制台(请参阅[管理活动](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)。
-* AEM受众(请参阅[管理受众](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html)。
+* Adobe Target(请参阅[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/target-home.html))。
+* AEM活动控制台(请参阅[管理活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)。
+* AEM受众(请参阅[管理受众](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)。
 
 >[!NOTE]
 >
