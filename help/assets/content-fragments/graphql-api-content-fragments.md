@@ -3,7 +3,7 @@ title: AEM GraphQL API，用于内容片段
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作与AEM GraphQL API结合的Cloud Service，以进行无头内容交付。
 feature: 内容片段，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 1%
@@ -158,7 +158,7 @@ AEM中有两种类型的端点：
 
 要启用相应的端点，请执行以下操作：
 
-1. 导航到&#x200B;**工具**、**站点**，然后选择&#x200B;**GraphQL**。
+1. 导航到&#x200B;**工具**、**资产**，然后选择&#x200B;**GraphQL**。
 1. 选择&#x200B;**创建**。
 1. 将打开&#x200B;**新建GraphQL端点**&#x200B;对话框。 您可以在此指定：
    * **名称**:端点名称；您可以输入任何文本。
