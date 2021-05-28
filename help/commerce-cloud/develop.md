@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 8%
+source-wordcount: '1001'
+ht-degree: 5%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 8%
 
 根据AEM as a AEM的商务集成框架(CIF)开发Cloud Service Commerce项目时，也会遵循与AEM上的其他AEM项目一样的规则和最佳实践，作为Cloud Service。 请首先查看以下内容：
 
-- [AEM 项目结构](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service 开发准则](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM 项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service 开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## 使用AEM as a Cloud ServiceSDK进行本地开发 {#local}
 
@@ -31,13 +31,13 @@ ht-degree: 8%
 
 CIF附加组件作为Sling功能存档提供。 Software Distribution门户上提供的zip文件包括两个Sling功能存档文件，一个用于AEM作者，一个用于AEM发布实例。
 
-**初次使用AEM as aCloud Service?** 请查 [看更详细的指南，以便使用AEM as a Cloud ServiceSDK设置本地开发环境](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
+**初次使用AEM as aCloud Service?** 请查 [看更详细的指南，以便使用AEM as a Cloud ServiceSDK设置本地开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
 
 ### 必需软件
 
 应在本地安装以下内容：
 
-- [AEM as a Cloud ServiceSDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud ServiceSDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) （3.3.9或更高版本）
 - [Node.js v10+](https://nodejs.org/en/)
