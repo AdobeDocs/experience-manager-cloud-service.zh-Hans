@@ -2,9 +2,9 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3657'
 ht-degree: 1%
 
 ---
@@ -240,9 +240,13 @@ Granite UI提供了在创作环境中创建对话框所需的一系列基本小�
 
 ### 自定义对话框字段{#customizing-dialog-fields}
 
+<!--
+Content not found
+
 >[!TIP]
 >
->有关自定义对话框字段的信息，请参阅[AEM Gems会话](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)。
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+-->
 
 要创建在组件对话框中使用的新小组件，需要创建新的Granite UI字段组件。
 
@@ -446,7 +450,7 @@ AEM中现有的配置很多。 使用&#x200B;**CRXDE Lite**&#x200B;中的“查�
 
 ## 预览行为{#preview-behavior}
 
-切换到预览模式时，即使页面未刷新，也会设置[WCM模式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
+切换到预览模式时，即使页面未刷新，也会设置[WCM模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
 
 对于呈现的对WCM模式敏感的组件，需要定义它们以专门刷新它们，然后依赖Cookie的值。
 
