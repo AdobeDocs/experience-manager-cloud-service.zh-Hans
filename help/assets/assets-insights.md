@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 资产分析，资产报表
 role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 9%
 
 ---
 
-# 资产分析 {#asset-insights}
+# 资产分析{#asset-insights}
 
 通过Adobe分析功能，您可以跟踪用户评级以及在第三方网站、营销活动和资产创意解决方案中使用的图像的使用情况统计信息。 它有助于深入了解图像的性能和受欢迎程度。
 
@@ -75,7 +75,7 @@ ht-degree: 9%
 
 ## Schedule background job {#scheduling-background-job}
 
-Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+Assets Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Assets Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
 1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
@@ -87,7 +87,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 ## 配置资产分析{#configure-asset-insights}
 
-[!DNL Experience Manager Assets] 从获取第三方网站使用的数字资产的使用情况数 [!DNL Adobe Analytics]据。要启用资产分析以检索此数据并生成分析，请首先配置该功能以与[!DNL Adobe Analytics]集成。
+[!DNL Experience Manager Assets] 从获取第三方网站使用的数字资产的使用情况数 [!DNL Adobe Analytics]据。要使资产分析能够检索此数据并生成分析，请首先配置该功能以与[!DNL Adobe Analytics]集成。
 
 >[!NOTE]
 >
@@ -120,11 +120,11 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 <!--
 
-## Using demo package for Asset Insights {#using-demo-package-for-asset-insights}
+## Using demo package for Assets Insights {#using-demo-package-for-asset-insights}
 
-Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
+Using the demo package, you can enable Adobe Assets Insights to capture data from and generate insights for a sample web page.
 
-1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
+1. Configure Assets Insights using the instructions in [Configure Assets Insights](#configure-asset-insights).
 1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
