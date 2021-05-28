@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 73%
+source-wordcount: '858'
+ht-degree: 72%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 73%
 
 请阅读以下章节，以了解有关使用内容传输工具的准则和最佳实践。
 
-* 建议对&#x200B;**源**&#x200B;存储库运行[修订清理](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/deploying/revision-cleanup.html)和[数据存储一致性检查](https://helpx.adobe.com/cn/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以确定潜在问题，并减小存储库的大小。
+* 建议对&#x200B;**源**&#x200B;存储库运行[修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[数据存储一致性检查](https://helpx.adobe.com/cn/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以确定潜在问题，并减小存储库的大小。
 
 * 如果将 AEM 云创作内容分发网络 (CDN) 配置为包含 IP 白名单，则应确保将源环境 IP 也添加到白名单中，以便源环境和 AEM 云环境可以相互通信。
 
