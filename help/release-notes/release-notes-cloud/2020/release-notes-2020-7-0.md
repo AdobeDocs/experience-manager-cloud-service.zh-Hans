@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 作为Cloud Service2020.7.0发行说明。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 80%
+source-wordcount: '1038'
+ht-degree: 76%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 80%
 
 * 新的用户界面实施取代了基于经典 UI 的实施。
 
-* 简化的用户界面对话框，将用于变量映射的框架创建和其他配置留给 [!DNL Adobe Launch]。请参阅[集成 Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和[集成 Adobe Target](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
+* 简化的用户界面对话框，将用于变量映射的框架创建和其他配置留给 [!DNL Adobe Launch]。请参阅[集成 Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和[集成 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
 * 如今，配置是存储在 Experience Manager 存储库的 `/conf` 中，而不是 `/etc/cloudsettings` 中。
 
@@ -55,20 +55,20 @@ ht-degree: 80%
 
 AEM Commerce现在可用于Cloud Service。
 
-有关更多详细信息，请参阅[AEM Commerce as a Commerce快速入门](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 。
+有关更多详细信息，请参阅[AEM Commerce as a Commerce快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 。
 
 ## 核心组件 {#core-components}
 
 ### 新增功能 {#what-is-new-core-components}
 
-[AEM 核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)版本 2.11.0 现已作为 AEM Sites 的一部分提供，其中包括：
+[AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)版本 2.11.0 现已作为 AEM Sites 的一部分提供，其中包括：
 
 * 推出了新的 [PDF 查看器组件](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
 
 * 核心组件的加速移动页面 (AMP) 支持功能现已可用。通过输入来自 Google 移动设备搜索结果的站点，可实现页面即时转换，这有助于提高用户参与度和 SEO，从而实现更快速的客户体验。
-有关更多详细信息，请参阅[核心组件的 AMP 支持](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/amp.html)。
+有关更多详细信息，请参阅[核心组件的 AMP 支持](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)。
 
-* 与 [Adobe 客户端数据层](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/data-layer/overview.html)版本 1.0.2 的兼容性。
+* 与 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)版本 1.0.2 的兼容性。
 
 * 错误修复和代码质量改进。
 
@@ -137,7 +137,7 @@ AEM Commerce现在可用于Cloud Service。
 
 * 无法在 Adobe Experience Manager (AEM) 6.1 上运行早期版本的云就绪分析器 (CRA)。明确向管理员组中的用户增加了允许他们运行 CRA 的相关支持。
 
-   有关更多详细信息，请参阅[在 AEM 6.1 上安装 CRA](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
+   有关更多详细信息，请参阅[在 AEM 6.1 上安装 CRA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
 
 * 摘要报告上显示的到期时间戳不正确。
 
