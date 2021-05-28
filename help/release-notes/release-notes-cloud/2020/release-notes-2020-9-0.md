@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 作为Cloud Service2020.9.0发行说明。'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 12%
+source-wordcount: '724'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 12%
    * 选择性发布 — 营销团队现在可以访问同步到[!DNL Dynamic Media]的[!DNL Dynamic Media]智能裁剪图像和动态演绎版，以便创建促销材料，而无需将这些资产发布到[!DNL Dynamic Media]进行全球交付。 [!DNL Experience Manager] 和发 [!DNL Dynamic Media] 布是相互分离的，可单独进行以实现这一点。请参阅[选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
    * 管理员现在可以重置在预配时收到的[!DNL Dynamic Media]Cloud Service密码。 可以在[!DNL Experience Manager]用户界面中完成重置，而无需使用[!DNL Dynamic Media Classic]桌面应用程序。
 
-* 要了解以下增强功能，请参阅[Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)的新增功能。
+* 要了解以下增强功能，请参阅[Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)的新增功能。
 
    * Adobe Document Cloud视图SDK集成增强了PDF预览。
    * 单击下载功能。
