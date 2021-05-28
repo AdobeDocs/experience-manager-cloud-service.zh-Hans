@@ -2,10 +2,10 @@
 title: 创建 Adobe Experience Manager as a Cloud Service 的无障碍内容（WCAG 2.1 合规性）
 description: 使用 AEM as a Cloud Service 帮助残障人士访问和使用 Web 内容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
-ht-degree: 99%
+source-wordcount: '14050'
+ht-degree: 98%
 
 ---
 
@@ -68,15 +68,15 @@ ht-degree: 99%
 
 #### 如何达到标准 - 非文本内容 (1.1.1)  {#how-to-meet-non-text-content}
 
-对于静态图形，基本的要求是为图形提供对等的替换文本。这可以在&#x200B;**替换文本**&#x200B;字段中完成，例如，请参阅核心组件&#x200B;**[图像](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html)**。
+对于静态图形，基本的要求是为图形提供对等的替换文本。这可以在&#x200B;**替换文本**&#x200B;字段中完成，例如，请参阅核心组件&#x200B;**[图像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**。
 
 >[!NOTE]
 >
->某些开箱即用的核心组件（例如&#x200B;**[轮播](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
+>某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
 >因此，在为 AEM 实例实施这些版本时，开发团队需要将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
 >
->某些开箱即用的核心组件（例如&#x200B;**[轮播](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
+>某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
 >在为AEM实例实施这些版本时，开发团队将需要配置这些组件以支持`alt`属性，以便作者可以将其添加到内容中（请参阅[添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
 
