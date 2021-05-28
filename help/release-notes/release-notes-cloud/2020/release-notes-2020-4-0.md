@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 发行说明
 description: Experience Manager 2020.4.0 发行说明
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '646'
+ht-degree: 95%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 了解当前版本中 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 的新增功能、增强功能和错误修复。
 
-* [Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/home.html) 支持 Experience Manager Assets 的资产分发用例。[!DNL Brand Portal] 可以将获得批准的品牌和产品资产安全地分发给外部代理、合作伙伴、内部团队和经销商进行下载，从而帮助组织满足其营销需求。
-   * [!DNL Brand Portal] 配置可通过 [!DNL Adobe I/O] 控制台完成。请参阅[配置 Brand Portal](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 支持 Experience Manager Assets 的资产分发用例。[!DNL Brand Portal] 可以将获得批准的品牌和产品资产安全地分发给外部代理、合作伙伴、内部团队和经销商进行下载，从而帮助组织满足其营销需求。
+   * [!DNL Brand Portal] 配置可通过 [!DNL Adobe I/O] 控制台完成。请参阅[配置 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
    * [!DNL Experience Manager] as a Cloud Service 尚不支持 [!DNL Brand Portal] 中的资产采购。
 
 * [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) v2.0 可与 [!DNL Experience Manager] as a Cloud Service 搭配使用。[!DNL Adobe Asset Link] 可通过应用程序内 [!DNL Asset Link] 面板将 [!DNL Experience Manager Assets] 与 [!DNL Creative Cloud] 桌面应用程序 [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] 和 [!DNL Adobe InDesign] 连接，从而简化内容创建过程中创意专业人士与营销人员之间的协作。
@@ -48,9 +48,9 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [关于 Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
->* [配置 Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [配置 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [配置 Experience Manager 以搭配使用 Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [使用资产微服务在 Experience Manager 中创建工作流](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [使用资产微服务在 Experience Manager 中创建工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager 的新增功能 {#whats-new-cloud-manager}
