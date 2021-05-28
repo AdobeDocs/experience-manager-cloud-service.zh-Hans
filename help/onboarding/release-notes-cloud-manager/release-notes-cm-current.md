@@ -2,7 +2,7 @@
 title: AEM as a Cloud Manager版本2021.5.0的发行说明
 description: AEM as a Cloud Manager版本2021.5.0的发行说明
 feature: 发行信息
-source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
+source-git-commit: 13d45a02169fc99be60d73dde91dbc8c2ce03ef8
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 ## 发布日期 {#release-date}
 
 AEM as a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6日。
-下一版本计划于2021年6月3日发布。
+下一版本计划于2021年6月10日发布。
 
 ### 新增功能 {#what-is-new}
 
