@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 
 对于本地开发，日志条目会写入`/crx-quickstart/logs`文件夹中的本地文件。
 
-在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **设置日志级别**
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于生产程序，开发人员控制台的访问权限由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙盒程序，任何具有产品配置文件的用户都可以使用开发人员控制台，以便他们能够将AEM作为Cloud Service访问。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义用户，才能查看两个服务中的状态转储数据。 有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+对于生产程序，开发人员控制台的访问权限由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙盒程序，任何具有产品配置文件的用户都可以使用开发人员控制台，以便他们能够将AEM作为Cloud Service访问。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义用户，才能查看两个服务中的状态转储数据。 有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
@@ -226,7 +226,7 @@ AEM as aCloud Service要求加密出站邮件。 以下各节介绍如何请求�
 
 ### 发送电子邮件{#sending-emails}
 
-应使用[Day CQ Mail Service OSGI服务](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
+应使用[Day CQ Mail Service OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
 
 AEM CS要求通过端口465发送邮件。 如果邮件服务器不支持端口465，则只要启用了TLS选项，就可以使用端口587。
 
@@ -236,9 +236,9 @@ AEM CS要求通过端口465发送邮件。 如果邮件服务器不支持端口4
 
 ### 配置 {#email-configuration}
 
-AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)发送。
+AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)发送。
 
-有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)。 对于AEM as aCloud Service，必须对`com.day.cq.mailer.DefaultMailService OSGI`服务进行以下调整：
+有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 对于AEM as aCloud Service，必须对`com.day.cq.mailer.DefaultMailService OSGI`服务进行以下调整：
 
 如果已请求端口465:
 
