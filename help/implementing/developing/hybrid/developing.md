@@ -2,10 +2,10 @@
 title: 开发SPA for AEM
 description: 本文介绍了在让前端开发人员开发AEM的SPA时应考虑的重要问题，并概述了在部署AEM上开发的SPA时要记住的AEM与SPA的架构。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 1%
+source-wordcount: '2076'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并呈现内容结构�
 
 ## AEM 项目原型 {#aem-project-archetype}
 
-任何AEM项目都应使用[AEM项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用React或Angular的SPA项目并利用SPA SDK。
+任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用React或Angular的SPA项目并利用SPA SDK。
 
 ## SPA设计模型{#spa-design-models}
 
