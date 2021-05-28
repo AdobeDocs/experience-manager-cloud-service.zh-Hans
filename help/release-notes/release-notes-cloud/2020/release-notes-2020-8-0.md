@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 作为Cloud Service2020.8.0发行说明。'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1046'
 ht-degree: 5%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 5%
 
 * 使用处理配置文件使用计算服务生成自定义元数据。 请参阅[使用处理配置文件的自定义元数据](/help/assets/manage-metadata.md#metadata-compute-service)。
 
-* 管理员可以配置的更简单的Brand Portal用户下载体验。 请参阅[下载体验概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
+* 管理员可以配置的更简单的Brand Portal用户下载体验。 请参阅[下载体验概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 
-* 本机和高保真PDF文档预览现在在Brand Portal中提供。 请参阅[文档查看器概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
+* 本机和高保真PDF文档预览现在在Brand Portal中提供。 请参阅[文档查看器概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
 * 现在，您可以在AEM as aCloud Service中直接从[!DNL Dynamic Media]使CDN（内容分发网络）缓存失效（与使用[!DNL Dynamic Media Classic]不同）。 它可确保在几分钟内而不是几小时内提供最新资产。 请参阅[通过Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN缓存失效。
 
