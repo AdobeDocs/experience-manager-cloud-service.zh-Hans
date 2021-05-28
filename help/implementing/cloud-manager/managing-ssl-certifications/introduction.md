@@ -2,14 +2,22 @@
 title: 简介 — 管理SSL证书
 description: 简介 — 管理SSL证书
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # 简介 {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_sslcert"
+>title="管理SSL证书"
+>abstract="Cloud Manager为客户提供了通过Cloud Manager UI安装SSL证书的自助服务功能。 Cloud Manager使用Platform TLS服务来管理客户拥有的SSL证书和私钥，这些证书和私钥通常从第三方认证机构获得。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html" text="查看、更新和替换SSL证书"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="检查SSL证书的状态"
+
 
 Cloud Manager为客户提供了通过Cloud Manager UI安装SSL证书的自助服务功能。 Cloud Manager使用Platform TLS服务来管理客户拥有的SSL证书和私钥，这些证书和私钥通常从第三方认证机构获取，例如&#x200B;*Let&#39;s Encrypt*。
 
