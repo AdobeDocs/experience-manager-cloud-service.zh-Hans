@@ -2,10 +2,10 @@
 title: 使用最佳实践分析器
 description: 使用最佳实践分析器
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 43%
+source-wordcount: '2506'
+ht-degree: 42%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 43%
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用最佳实践分析器{#imp-considerations}的重要注意事项
 
 请阅读以下章节，了解运行最佳实践分析器(BPA)的重要注意事项：
 
-* BPA报告是使用Adobe Experience Manager(AEM)[模式检测器](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/deploying/upgrading/pattern-detector.html)的输出生成的。 BPA使用的模式检测器版本包含在BPA安装包中。
+* BPA报告是使用Adobe Experience Manager(AEM)[模式检测器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)的输出生成的。 BPA使用的模式检测器版本包含在BPA安装包中。
 
 * BPA只能由&#x200B;**admin**&#x200B;用户或&#x200B;**administrators**&#x200B;组中的用户运行。
 
@@ -246,8 +246,8 @@ HTTP 接口可用于多种方法。
 
 BPA利用名为`repository-reader-service`的系统服务用户帐户来执行模式检测器。 此帐户在 AEM 6.2 和更高版本上可用。在AEM 6.1上，必须在&#x200B;*安装BPA之前通过执行以下步骤创建此帐户：*
 
-1. 按照[创建新服务用户](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的说明创建用户。将用户 ID 设置为 `repository-reader-service`，并将“中间路径”留空，然后单击绿色复选标记。
+1. 按照[创建新服务用户](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的说明创建用户。将用户 ID 设置为 `repository-reader-service`，并将“中间路径”留空，然后单击绿色复选标记。
 
-2. 按照[管理用户和组](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的说明（特别是有关将用户添加到组的说明），将 `repository-reader-service` 用户添加到 `administrators` 组。
+2. 按照[管理用户和组](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的说明（特别是有关将用户添加到组的说明），将 `repository-reader-service` 用户添加到 `administrators` 组。
 
 3. 通过包管理器在源AEM实例上安装BPA包。 （这将为 `repository-reader-service` 系统服务用户的 ServiceUserMapper 配置添加必要的配置修正。）
