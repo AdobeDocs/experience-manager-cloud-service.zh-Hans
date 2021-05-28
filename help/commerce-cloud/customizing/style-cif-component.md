@@ -11,10 +11,10 @@ feature: 商务集成框架
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 2%
+source-wordcount: '2549'
+ht-degree: 1%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 2%
 
 可通过添加和覆盖由这些客户端库管理的CSS，将特定于品牌的样式应用于AEM CIF核心组件。 了解客户端库的结构以及如何在页面上包含至关重要。
 
-[ui.frontend](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/uifrontend.html)是一个专用的[Webpack](https://webpack.js.org/)项目，用于管理项目的所有前端资产。 这允许前端开发人员使用任意数量的语言和技术，如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等。
+[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)是一个专用的[Webpack](https://webpack.js.org/)项目，用于管理项目的所有前端资产。 这允许前端开发人员使用任意数量的语言和技术，如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等。
 
 `ui.frontend`模块也是Maven模块，通过使用[aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)的NPM模块与较大的项目集成。 在生成过程中， `aem-clientlib-generator`会将编译的CSS和JavaScript文件复制到`ui.apps`模块的客户端库中。
 
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 ## 更新Teaser样式{#ui-frontend-module}
 
-接下来，对Teaser样式进行细微更改，以了解`ui.frontend`模块和客户端库的工作方式。 使用[您选择的IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)导入Venia项目。 使用的屏幕截图来自[Visual Studio代码IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
+接下来，对Teaser样式进行细微更改，以了解`ui.frontend`模块和客户端库的工作方式。 使用[您选择的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)导入Venia项目。 使用的屏幕截图来自[Visual Studio代码IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
 
 1. 导航并展开&#x200B;**ui.frontend**&#x200B;模块，然后展开文件夹层次结构以：`ui.frontend/src/main/styles/commerce`:
 
@@ -178,7 +178,7 @@ ht-degree: 2%
 
    这些客户端库不由`ui.frontend`模块管理。 相反，这些客户端库包含由Adobe提供的CSS和JavaScript依赖项。 这些clientlibraries的定义位于每个文件夹下的`.content.xml`文件中。
 
-   **clientlib-base**  — 这是一个空的客户端库，它只嵌入AEM核心组件中的必 [要依赖项](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)。类别为`venia.base`。
+   **clientlib-base**  — 这是一个空的客户端库，它只嵌入AEM核心组件中的必 [要依赖项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)。类别为`venia.base`。
 
    **clientlib-cif**  — 这也是一个空的客户端库，只需嵌入AEM CIF核心组件中 [的必需依赖项即可](https://github.com/adobe/aem-core-cif-components)。类别为`venia.cif`。
 
@@ -445,7 +445,7 @@ Webpack-dev-server代理AEM本地实例中的图像和某些CSS/JavaScript，但
    ```
 
    >[!NOTE]
-   >还有其他的[IDE设置和工具](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)，它们可以将项目文件直接同步到本地AEM实例，而无需执行完整的Maven生成。
+   >还有其他的[IDE设置和工具](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)，它们可以将项目文件直接同步到本地AEM实例，而无需执行完整的Maven生成。
 
 ## 查看更新的Product Teaser {#view-updated-product-teaser}
 
@@ -473,7 +473,7 @@ AEM还尝试缓存客户端库以提高性能。 有时，在代码部署后，�
 
 ## 附加练习{#bonus-challenge}
 
-使用[AEM Style system](/help/sites-cloud/authoring/features/style-system.md)创建可由内容作者打开/关闭的两个样式。 [使用样式系统进](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) 行开发，包括有关如何实现此目的的详细步骤和信息。
+使用[AEM Style system](/help/sites-cloud/authoring/features/style-system.md)创建可由内容作者打开/关闭的两个样式。 [使用样式系统进](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) 行开发，包括有关如何实现此目的的详细步骤和信息。
 
 ![奖金挑战 — 风格系统](../assets/style-cif-component/bonus-challenge.png)
 
@@ -481,7 +481,7 @@ AEM还尝试缓存客户端库以提高性能。 有时，在代码部署后，�
 
 * [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
-* [设置本地AEM开发环境](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [设置本地AEM开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [客户端库](/help/implementing/developing/introduction/clientlibs.md)
-* [开始使用AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [用风格体系发展](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [开始使用AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [用风格体系发展](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
