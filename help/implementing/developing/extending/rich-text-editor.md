@@ -3,9 +3,9 @@ title: 配置富文本编辑器以将 [!DNL Adobe Experience Manager] 中的内�
 description: 配置富文本编辑器以将 [!DNL Adobe Experience Manager] 中的内容作为Cloud Service。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[核心组件文本组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)允许模板编辑器使用用户界面作为内容策略来配置多个RTE插件，从而无需进行技术配置。 内容策略可以与RTE UI配置配合使用，如本文档中所述。 有关更多信息，请参阅[创建页面模板](/help/sites-cloud/authoring/features/templates.md)和[核心组件开发人员文档](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)。
+[核心组件文本组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)允许模板编辑器使用用户界面作为内容策略来配置多个RTE插件，从而无需进行技术配置。 内容策略可以与RTE UI配置配合使用，如本文档中所述。 有关更多信息，请参阅[创建页面模板](/help/sites-cloud/authoring/features/templates.md)和[核心组件开发人员文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >出于参考目的，默认的文本组件（作为标准安装的一部分提供）可在以下位置找到：
 >
@@ -230,7 +230,7 @@ RTE流中从用户界面配置到内容策略的下游的可用选项。
 * 如果RTE的用户界面配置已删除或未启用项目，则内容策略无法对其进行配置。
 * 作者只能访问用户界面配置和内容策略提供的此类功能。
 
-例如，您可以看到[文本核心组件文档](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[文本核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
 
 ## 自定义工具栏图标和命令之间的映射 {#iconstoolbar}
 
