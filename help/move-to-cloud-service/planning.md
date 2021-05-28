@@ -2,10 +2,10 @@
 title: 规划阶段
 description: 规划阶段
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 91%
+source-wordcount: '470'
+ht-degree: 88%
 
 ---
 
@@ -25,13 +25,13 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
 
 但是，与 AEM as a Cloud Service 相比，内部部署版或 Adobe Managed Service 中的 AEM 存在很大差异。
 
-请参阅 [对 AEM 云服务的显著更改](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)，以了解重要差异。
+请参阅 [对 AEM 云服务的显著更改](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)，以了解重要差异。
 
 ## 已弃用功能 {#deprecated-features}
 
 Adobe 不断评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。
 
-请参阅[已弃用的功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)，以了解有关在 Experience Manager as a Cloud Service 中标记为已弃用的特性和功能的更多信息。
+请参阅[已弃用的功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)，以了解有关在 Experience Manager as a Cloud Service 中标记为已弃用的特性和功能的更多信息。
 
 ## 了解规划阶段 {#introduction}
 
