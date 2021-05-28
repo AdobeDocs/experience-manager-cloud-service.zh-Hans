@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道'
 description: '[!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] as aCloud Service根据Experience Manager版路线图计划，在每月的频率下提 [供新功能](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)。为了熟悉计划在下月上线的功能，客户可以订阅预发行渠道，该渠道可通过在标准项目开发环境或任何沙盒项目环境中进行适当配置来访问。 客户可以预览站点控制台的更改，并针对任何新的预发行API构建代码。
 
 给定月份的预发行功能列表将发布在[月度发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中。
+
+>[！视频](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## 如何启用预发行版本{#enable-prerelease}
 
@@ -110,8 +112,7 @@ Javaoc将发布到Maven Central。
 1. 如果满意地在本地可以按预期工作，请将代码提交到开发分支，然后使用Cloud Manager非生产管道部署到订阅预发行渠道的环境
 
 >[!CAUTION]
-> 
-> 部署到Stage或Production时，不得使用`aem-prerelease-sdk-api` artifactId。 在通过生产管道部署时，始终使用aem-sdk-api。 同样，引用预发行API的代码也不应通过生产管道进行部署。
+部署到Stage或Production时，不得使用`aem-prerelease-sdk-api` artifactId。 在通过生产管道部署时，始终使用aem-sdk-api。 同样，引用预发行API的代码也不应通过生产管道进行部署。
 
 [AEM CS SDK构建分析器maven插件v1.0及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)将通过检查依赖关系来检测项目中是否使用了预发行api。 如果分析器找到它，则将使用预发行sdk api来分析项目。
 
