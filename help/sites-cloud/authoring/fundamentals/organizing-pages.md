@@ -2,9 +2,9 @@
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2552'
 ht-degree: 98%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 98%
 
 网站的结构可被认为是保留您的内容页面的树。这些内容页面的名称用于组成 URL，而标题则会在查看页面内容时显示出来。
 
-以下显示了 [WKND 教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)网站上的一个示例，该网站上有一篇介绍滑板场 (`la-skateparks`) 的文章：
+以下显示了 [WKND 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)网站上的一个示例，该网站上有一篇介绍滑板场 (`la-skateparks`) 的文章：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
