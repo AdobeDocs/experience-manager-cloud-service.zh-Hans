@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Define DISABLE_DEFAULT_CACHING
 
 与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面。
 
-当发布实例收到作者提供的页面或资产的新版本时，它会使用刷新代理使其调度程序上的相应路径失效。 更新的路径会从调度程序缓存及其父缓存中删除，最高级别为（您可以使用[statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)配置此路径）。
+当发布实例收到作者提供的页面或资产的新版本时，它会使用刷新代理使其调度程序上的相应路径失效。 更新的路径会从调度程序缓存及其父缓存中删除，最高级别为（您可以使用[statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)配置此路径）。
 
 ### 显式调度程序缓存失效{#explicit-invalidation}
 
@@ -123,8 +123,8 @@ Define DISABLE_DEFAULT_CACHING
 1. 调用复制代理，指定发布调度程序刷新代理
 2. 直接调用`invalidate.cache` API（例如`POST /dispatcher/invalidate.cache`）
 
-不再支持调度程序的`invalidate.cache` API方法，因为它只处理特定的调度程序节点。 AEM as aCloud Service在服务级别运行，而不是在单个节点级别运行，因此[从AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html)页面中使缓存的页面失效的失效说明对于AEM as aCloud Service不再有效。
-而应使用复制刷新代理。 可以使用复制API完成此操作。 [此处](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)提供了复制API文档，有关刷新缓存的示例，请参阅[ API示例页面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)，具体是`CustomStep`向所有可用代理发布类型为ACTIVATE的复制操作示例。 无法配置刷新代理端点，但已预配置为指向与运行刷新代理的发布服务匹配的调度程序。 刷新代理通常可以由OSGi事件或工作流触发。
+不再支持调度程序的`invalidate.cache` API方法，因为它只处理特定的调度程序节点。 AEM as aCloud Service在服务级别运行，而不是在单个节点级别运行，因此[从AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html)页面中使缓存的页面失效的失效说明对于AEM as aCloud Service不再有效。
+而应使用复制刷新代理。 可以使用复制API完成此操作。 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)提供了复制API文档，有关刷新缓存的示例，请参阅[ API示例页面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)，具体是`CustomStep`向所有可用代理发布类型为ACTIVATE的复制操作示例。 无法配置刷新代理端点，但已预配置为指向与运行刷新代理的发布服务匹配的调度程序。 刷新代理通常可以由OSGi事件或工作流触发。
 
 下图说明了这一点。
 
