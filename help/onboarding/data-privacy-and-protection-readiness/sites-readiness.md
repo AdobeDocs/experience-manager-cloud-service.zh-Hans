@@ -2,9 +2,9 @@
 title: 数据保护和数据隐私法规 — Adobe Experience Manager作为Cloud Service站点就绪性
 description: 了解Adobe Experience Manager作为Cloud Service站点对各种数据保护和数据隐私法规的支持；包括欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》，以及在实施新的AEM as a Cloud Service项目时如何遵守这些规定。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -75,13 +75,13 @@ Adobe Experience Manager受用于管理用户选择启用/选择禁用的cookie�
 
 AEM Sites包含与Analytics Foundation的可选集成，该集成使用Adobe Analytics On-demand Service中的功能。
 
-有关管理与Adobe Analytics相关的数据主体请求的更多信息，请参阅[Adobe Analytics和数据隐私](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)。
+有关管理与Adobe Analytics相关的数据主体请求的更多信息，请参阅[Adobe Analytics和数据隐私](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)。
 
 ## Target的个性化基础{#personalization-foundation-by-target}
 
 AEM Sites包含一个可选的与Personalization Foundation by Target的集成，该集成使用Adobe Target On-demand Service中的功能。
 
-有关管理与Adobe Target相关的数据主体请求的更多信息，请参阅[Adobe Target — 隐私和《通用数据保护条例》](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
+有关管理与Adobe Target相关的数据主体请求的更多信息，请参阅[Adobe Target — 隐私和《通用数据保护条例》](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 
