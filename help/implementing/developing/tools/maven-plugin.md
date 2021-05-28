@@ -2,10 +2,10 @@
 title: Adobe内容包Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 7%
+source-wordcount: '1847'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service遵循由最新AEM项目原型实施的包管理和项目�
 
 >[!TIP]
 >
->有关更多详细信息，请参阅AEM as a Cloud Service文档中的[AEM项目结构](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章以及[AEM项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两种方法。
+>有关更多详细信息，请参阅AEM as a Cloud Service文档中的[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章以及[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两种方法。
 
 ## 获取内容包Maven插件{#obtaining-the-content-package-maven-plugin}
 
@@ -265,4 +265,4 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 >[!TIP]
 >
->有关更多详细信息，请参阅AEM as a Cloud Service文档中的[AEM项目结构](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章以及[AEM项目原型](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两种方法。
+>有关更多详细信息，请参阅AEM as a Cloud Service文档中的[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章以及[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两种方法。
