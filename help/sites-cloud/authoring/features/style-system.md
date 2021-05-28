@@ -2,9 +2,9 @@
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1327'
 ht-degree: 97%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 97%
 
 ## 用法 {#use}
 
-为了演示该功能，我们将使用核心组件的[标题组件](https://www.adobe.com/go/aem_cmp_title_v2_cn)的 [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 实施作为示例。
+为了演示该功能，我们将使用核心组件的[标题组件](https://www.adobe.com/go/aem_cmp_title_v2_cn)的 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 实施作为示例。
 
 下面的[作为内容作者](#as-a-content-author)和[作为模板作者](#as-a-template-author)部分介绍了如何使用 WKND 样式系统来测试样式系统的功能。
 
@@ -120,7 +120,6 @@ ht-degree: 97%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >这通过 [Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)使用[叠加](/help/implementing/developing/introduction/overlays.md)。
 
 配置组件后，由页面作者配置的样式将由 AEM 自动插入到装饰元素，AEM 会自动在每个可编辑的组件周围包裹该装饰元素。组件本身不需要执行任何操作即可实现这一点。
@@ -135,7 +134,6 @@ ht-degree: 97%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >这通过 [Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)使用[叠加](/help/implementing/developing/introduction/overlays.md)。
 
 >[!NOTE]
@@ -157,6 +155,7 @@ ht-degree: 97%
 >1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
 >1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
+
 >
 
 
