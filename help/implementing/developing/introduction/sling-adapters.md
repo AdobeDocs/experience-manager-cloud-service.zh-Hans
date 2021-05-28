@@ -2,9 +2,9 @@
 title: 使用 Sling 适配器
 description: Sling提供了适配器模式，可方便地转换实施可适应界面的对象
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2234'
+source-wordcount: '2130'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 要求传递内部上下文对象的对象的快捷方式创建。
 
-   例如，基于JCR的[`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)包含对请求的[`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)的引用，这反过来又需要对基于该请求会话工作的许多对象的引用，如[`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)或[`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)。
+   例如，基于JCR的[`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)包含对请求的[`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)的引用，这反过来又需要对基于该请求会话工作的许多对象的引用，如[`PageManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)或[`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)。
 
 * 服务的快捷方式。
 
@@ -63,7 +63,7 @@ Node node = resource.adaptTo(Node.class);
 * 对象本身；实现方法本身，并映射到特定对象。
 * 通过[`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)，可映射任意对象。
 
-   这些对象仍必须实现`Adaptable`接口，并且必须扩展[`SlingAdaptable`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html)（这会将`adaptTo`调用传递到中央适配器管理器）。
+   这些对象仍必须实现`Adaptable`接口，并且必须扩展[`SlingAdaptable`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html)（这会将`adaptTo`调用传递到中央适配器管理器）。
 
    这允许将挂接到现有类的`adaptTo`机制中，如`Resource`。
 
@@ -75,7 +75,7 @@ Node node = resource.adaptTo(Node.class);
 
 ### Sling {#sling}
 
-[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) Resourceataifated用于：
+[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) Resourceataifated用于：
 
 <table>
  <tbody>
@@ -96,16 +96,16 @@ Node node = resource.adaptTo(Node.class);
    <td>返回属性的映射(如果这是基于JCR节点的资源（或其他支持值的资源映射）。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>如果这是基于JCR节点的资源（或其他资源支持值映射），则返回属性的方便使用映射。 还可以使用<br /> <code><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code>（句柄空小写等）实现（更简单）。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
+   <td>如果这是基于JCR节点的资源（或其他资源支持值映射），则返回属性的方便使用映射。 还可以使用<br /> <code><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code>（句柄空小写等）实现（更简单）。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">继承值映射</a></td>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>的扩展，在查找属性时，可考虑资源的层次结构。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">继承值映射</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>的扩展，在查找属性时，可考虑资源的层次结构。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModiableValueMap</a></td>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>的扩展，用于修改该节点上的属性。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModiableValueMap</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>的扩展，用于修改该节点上的属性。</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -132,81 +132,81 @@ Node node = resource.adaptTo(Node.class);
    <td>如果这是基于JCR属性的资源（值适合），则返回值。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LakedResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LakedResource</a></td>
    <td>如果这是基于JCR节点的资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">页面</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">页面</a></td>
    <td>如果这是基于JCR的资源，并且该节点是<code>cq:Page</code>（或<code>cq:PseudoPage</code>）。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">组件</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">组件</a></td>
    <td>如果这是<code>cq:Component</code>节点资源。</td>
   </tr>  
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">设计</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">设计</a></td>
    <td>如果这是设计节点(<code>cq:Page</code>)。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">模板</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">模板</a></td>
    <td>如果这是<code>cq:Template</code>节点资源。</td>
   </tr>  
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
    <td>如果这是<code>cq:Template</code>节点资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Asset.html">资产</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Asset.html">资产</a></td>
    <td>如果这是dam:Asset节点资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">演绎版</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">演绎版</a></td>
    <td>如果这是dam:Asset演绎版（nt:file位于dam:Assert的演绎版文件夹下）</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
    <td>如果这是<code>cq:Tag</code>节点资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
    <td>基于JCR会话（如果这是基于JCR的资源，且用户有权访问UserManager）。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">可授权</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">可授权</a></td>
    <td>“可授权”是“用户”和“组”的常用基本界面。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">用户</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">用户</a></td>
    <td>用户是可进行身份验证和模拟的特殊可授权。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
    <td>在资源下方搜索(或使用setSearchIn())（如果这是基于JCR的资源）。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
    <td>给定页面/工作流有效负载节点的工作流状态。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html">复制状态</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html">复制状态</a></td>
    <td>给定资源或其jcr:content子节点的复制状态（首先选中）。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/connector/ConnectorResource.html">连接器资源</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/connector/ConnectorResource.html">连接器资源</a></td>
    <td>如果某些类型是基于JCR节点的资源，则返回该类型的适配连接器资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">配置</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">配置</a></td>
    <td>如果这是<code>cq:ContentSyncConfig</code>节点资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
    <td>如果这位于<code>cq:ContentSyncConfig</code>节点资源下。</td>
   </tr>
  </tbody>
 </table>
 
-[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolveratifate为：
+[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolveratifate为：
 
 <table>
  <tbody>
@@ -215,54 +215,54 @@ Node node = resource.adaptTo(Node.class);
    <td>请求的JCR会话(如果这是基于JCR的资源解析程序（默认）)。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/ComponentManager.html">组件管理器</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/ComponentManager.html">组件管理器</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
    <td>基于JCR会话，如果这是基于JCR的资源解析程序。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>基于JCR会话，如果这是基于JCR的资源解析程序。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
    <td>UserManager提供对可授权对象（即用户和组）的访问和维护方法。 UserManager绑定到特定会话。
    </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">可授权</a> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">可授权</a> </td>
    <td>当前用户。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">用户</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">用户</a><br /> </td>
    <td>当前用户。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html">外部器</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html">外部器</a></td>
    <td>用于外部化绝对URL，即使不包含请求对象。<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequestable适用于：
+[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequestable适用于：
 
 尚无目标，但实施了“适应性”，可在自定义AdapterFactory中用作源。
 
-[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponse适用于：
+[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponse适用于：
 
 <table>
  <tbody>
@@ -275,16 +275,16 @@ Node node = resource.adaptTo(Node.class);
 
 #### WCM {#wcm}
 
-**[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** 页面调整为：
+**[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** 页面调整为：
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">资源</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">资源</a><br /> </td>
    <td>页面的资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LakedResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LakedResource</a></td>
    <td>标记的资源(==此)。</td>
   </tr>
   <tr>
@@ -298,24 +298,24 @@ Node node = resource.adaptTo(Node.class);
  </tbody>
 </table>
 
-**[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** 组件会适应以下情况：
+**[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** 组件会适应以下情况：
 
-| [资源](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 组件的资源。 |
+| [资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 组件的资源。 |
 |---|---|
-| [LakedResource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | 标记的资源(==此)。 |
+| [LakedResource](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | 标记的资源(==此)。 |
 | [节点](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 组件的节点。 |
 | ... | 组件资源可以适应的所有内容。 |
 
-**[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** Template会自动适应：
+**[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** Template会自动适应：
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">资源</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">资源</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>模板的资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LakedResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LakedResource</a></td>
    <td>标记的资源(==此)。</td>
   </tr>
   <tr>
@@ -335,13 +335,13 @@ Node node = resource.adaptTo(Node.class);
 
 | [节点](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 返回用户/组主节点。 |
 |---|---|
-| [复制状态](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | 返回用户/组主节点的复制状态。 |
+| [复制状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | 返回用户/组主节点的复制状态。 |
 
 #### DAM {#dam}
 
 **** 资产可适应：
 
-| [资源](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 资产的资源。 |
+| [资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 资产的资源。 |
 |---|---|
 | [节点](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 资产的节点。 |
 | ... | 资产资源可以调整的所有内容。 |
@@ -350,7 +350,7 @@ Node node = resource.adaptTo(Node.class);
 
 **** 标记适应于：
 
-| [资源](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 标记的资源。 |
+| [资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 标记的资源。 |
 |---|---|
 | [节点](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 标记的节点。 |
 | ... | 标记资源可以调整的所有内容。 |
