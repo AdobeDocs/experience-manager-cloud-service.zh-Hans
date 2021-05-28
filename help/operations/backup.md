@@ -2,14 +2,20 @@
 title: 在AEM as aCloud Service中备份和还原
 description: 在AEM as aCloud Service中备份和还原
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
 # 在AEM as aCloud Service中备份和还原
+
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_backuprestore"
+>title="备份和恢复"
+>abstract="AEM as aCloud Service可以将客户的完整应用程序（代码和内容）还原到过去七天中特定的预定时间，从而替换生产环境。 仅当代码或内容存在严重问题时，才应使用此功能。 从还原备份到当前备份之间的最近数据将丢失。 暂存版本也将还原到旧版本。"
 
 如果发生内容或数据损坏，AEM as aCloud Service可以将客户的完整应用程序（代码和内容）还原到过去七天中的特定预定时间，以替换生产中的内容。
 如果客户的部署（即已部署的应用程序代码已损坏或有故障），最好修复它并转到新版本，而不是从备份中恢复它。 备份的执行方式对应用程序的运行时性能没有影响。
