@@ -3,9 +3,9 @@ title: AEM版本更新
 description: 'AEM版本更新 '
 feature: 部署
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ AEM版本更新有两种类型：
 
 AEM更新通过密集且完全自动化的产品验证管道，涉及多个步骤，以确保生产中任何系统的服务不会中断。 运行状况检查用于监控应用程序的运行状况。 如果在AEM as a Cloud Service更新期间，这些检查失败，则该版本将不继续，并且Adobe将调查更新为何会导致此意外行为。
 
-[在AEM版本更新期间，](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 还会验证阻止产品升级和客户代码推送中断生产的产品测试和客户功能测试。
+[在AEM版本更新期间，](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 还会验证阻止产品升级和客户代码推送中断生产的产品测试和客户功能测试。
 
 >[!NOTE]
 >
