@@ -3,9 +3,9 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: 部署
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,10 @@ ht-degree: 1%
 
 本文档的其余部分将介绍开发人员如何调整其实践，以便与AEM一起作为Cloud Service的版本更新和客户更新。
 
+<!--
 >[!NOTE]
->建议具有现有代码库的客户完成[AEM文档](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)中所述的存储库重组练习。
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## 客户版本{#customer-releases}
 
@@ -40,8 +42,10 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->建议具有现有代码库的客户完成[AEM文档](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)中所述的存储库重组练习。
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## 通过Cloud Manager和包管理器部署内容包{#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ ht-degree: 1%
    * 上下文感知配置（`/conf`下的任何内容）（添加、修改、删除）
    * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂接。 请参阅[Jackrabbit filevault文档](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)有关安装挂接的信息。 请注意，AEM CS当前使用的是Filevault 3.4.0版，该版本限制管理员用户、系统用户和管理员组的成员安装挂接)。
 
-可以通过将包嵌入install.author或install.publish文件夹（位于`/apps`下），将可变内容安装限制为创作或发布。 为了反映此分离，已在AEM 6.5中进行了重组，有关建议项目重组的详细信息，请参阅[AEM 6.5文档。](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+可以通过将包嵌入install.author或install.publish文件夹（位于`/apps`下），将可变内容安装限制为创作或发布。 为了反映此分离，已在AEM 6.5中进行了重组，有关建议项目重组的详细信息，请参阅[AEM 6.5文档。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >内容包将部署到所有环境类型（开发、暂存、生产）。 无法将部署限制到特定环境。 此限制旨在确保自动执行的测试运行选项。 特定于环境的内容需要通过包管理器手动安装。
