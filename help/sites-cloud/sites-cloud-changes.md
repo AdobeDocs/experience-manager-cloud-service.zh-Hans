@@ -2,10 +2,10 @@
 title: 对 AEM 云服务中 AEM Sites 的显著更改
 description: 对 AEM 云服务中 AEM Sites 的显著更改
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 21%
+source-wordcount: '532'
+ht-degree: 17%
 
 ---
 
@@ -22,7 +22,7 @@ AEM Sites as aCloud Service作为云原生AEM as aCloud Service平台的一部�
 * [对 AEM as a Cloud Service 的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
 * [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
 * [将AEM Assets作为Cloud Service介绍](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 教程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 AEM Sites作为Cloud Service的更改和添加如下：
@@ -44,9 +44,9 @@ AEM Sites作为Cloud Service的更改和添加如下：
 
 ## 新参考站点和教程{#new-reference-site-and-tutorial}
 
-[更新并发布了新的AEM参考网站WKND](https://wknd.site/)，以反映使用AEM构建网站的最佳实践，以及AEM中提供的一整套功能、组件和部署模型。新的引用站点和随附的[教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)涵盖了一些基本主题，如项目设置、核心组件、可编辑的模板、客户端库以及使用Adobe Experience Manager Sites进行组件开发。
+[更新并发布了新的AEM参考网站WKND](https://wknd.site/)，以反映使用AEM构建网站的最佳实践，以及AEM中提供的一整套功能、组件和部署模型。新的引用站点和随附的[教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)涵盖了一些基本主题，如项目设置、核心组件、可编辑的模板、客户端库以及使用Adobe Experience Manager Sites进行组件开发。
 
-以前，We.Retail默认与AEM一起安装（生产模式下启动时除外）。  现在，以后默认情况下不会安装引用站点。  相反，提供了随附教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)的[git repo](https://github.com/adobe/aem-guides-wknd/)和[，以及更新的WKND引用站点代码。
+以前，We.Retail默认与AEM一起安装（生产模式下启动时除外）。  现在，以后默认情况下不会安装引用站点。  相反，提供了随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)的[git repo](https://github.com/adobe/aem-guides-wknd/)和[，以及更新的WKND引用站点代码。
 
 ## 运行时{#capabilities-not-available-at-runtime}中不提供的功能
 
