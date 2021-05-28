@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 36%
+source-wordcount: '900'
+ht-degree: 34%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 36%
    + [记录](developing/introduction/logging.md)
    + [配置和配置浏览器](developing/introduction/configurations.md)
    + [AEM技术基础](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [为服务器端API生成访问令牌](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM中的Headful和Headless](developing/headful-headless.md)
    + 完整堆栈AEM开发{#full-stack}
@@ -87,7 +87,7 @@ ht-degree: 36%
       + 组件和模板{#components-templates}
          + [组件概述](developing/components/overview.md)
          + [模板](developing/components/templates.md)
-         + [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
+         + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
          + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [内容服务的JSON导出程序](developing/components/json-exporter.md)
          + [为组件启用JSON导出](developing/components/enabling-json-exporter.md)
