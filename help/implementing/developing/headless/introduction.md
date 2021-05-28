@@ -2,10 +2,10 @@
 title: AEM Sites作为Cloud Service的无头开发
 description: 了解AEM作为Cloud Service强大的无头功能（如内容模型、内容片段和GraphQL API）如何协同工作，从而让您能够集中管理您的体验并跨渠道提供它们。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 4%
+source-wordcount: '487'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service通过提供三项功能强大的服务，为无头实施�
 1. 用于交付的内容API
    * AEM GraphQL API支持内容片段交付。
    * AEM Assets REST API支持内容片段CRUD操作。
-   * 通过[内容片段核心组件的JSON导出，也可以直接交付内容。](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)
+   * 通过[内容片段核心组件的JSON导出，也可以直接交付内容。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## 使用AEM Headless {#first-steps}的首要步骤
 
