@@ -2,9 +2,9 @@
 title: 数据保护和数据隐私法规 — Adobe Experience Manager作为Cloud Service就绪
 description: 了解Adobe Experience Manager作为对各种数据保护和数据隐私法规的Cloud Service支持；包括欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》，以及在实施新的AEM as a Cloud Service项目时如何遵守这些规定。
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 2%
 
 ---
@@ -94,6 +94,6 @@ Adobe正在提供处理与Adobe Experience Manager as a Cloud Service的访问�
 这些Adobe Experience Manager作为Cloud Service集成，提供了数据保护和隐私（例如GDPR）就绪服务。 AEM中不存储与集成相关的来自Adobe Target或Adobe Analytics的个人数据。
 有关更多信息，请参阅：
 
-* [Adobe Target — 隐私概述](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target — 隐私概述](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html)
 
-* [Adobe Analytics数据隐私工作流程](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
+* [Adobe Analytics数据隐私工作流程](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)
