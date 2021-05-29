@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 资产管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
+source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
 workflow-type: tm+mt
-source-wordcount: '3084'
+source-wordcount: '3186'
 ht-degree: 21%
 
 ---
@@ -165,16 +165,16 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
    您可以通过点按组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;来编辑以下高级设置。
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL 优化高分辨率设备]**  — 选中（默认）复选框以允许DPR（设备像素比）优化。
 
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 优化高分辨率设备]**&#x200B;选项：
+   * 在“预设类型”下，选择&#x200B;**[!UICONTROL 图像预设]**，并从“**[!UICONTROL 图像预设]**”下拉列表中选择&#x200B;**[!UICONTROL RESS_IP]**。
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+   ![图像预设中的设备像素比率设置](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
-  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL 标题]**  — 更改图像的标题。
 
@@ -243,17 +243,17 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 * **[!UICONTROL 启用宽高比匹配]**  — 要让Dynamic Media选取宽高比与原始图像的宽高比最匹配的智能裁剪呈现，请选择此选项。
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+* **[!UICONTROL 优化高分辨率设备]**  — 选中（默认）复选框以允许DPR（设备像素比）优化。
 
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 优化高分辨率设备]**&#x200B;选项：
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+   * 在预设类型下，选择了&#x200B;**[!UICONTROL 智能裁剪]**&#x200B;选项。
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+   ![用于智能裁剪的设备像素比设置](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
 
-  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
+<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL 标题]**  — 更改智能裁剪图像的标题。
 
