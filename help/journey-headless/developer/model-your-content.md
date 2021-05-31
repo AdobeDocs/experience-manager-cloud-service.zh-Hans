@@ -1,9 +1,9 @@
 ---
 title: 如何对内容进行建模
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用内容片段模型和内容片段的内容建模来为AEM无头交付构建内容模型。
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1830'
 ht-degree: 2%
 
 ---
@@ -274,3 +274,4 @@ tbc...
 * [AEM GraphQL模式](access-your-content.md)  - GraphQL如何实现模型
 * [示例内容片段结构](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无头功能，包括内容建模和GraphQL
+   * [GraphQL建模基础](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  — 了解如何在Adobe Experience Manager(AEM)中定义和使用内容片段，以与GraphQL一起使用。
