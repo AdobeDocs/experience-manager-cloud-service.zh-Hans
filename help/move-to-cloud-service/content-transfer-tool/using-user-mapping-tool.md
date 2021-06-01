@@ -2,10 +2,10 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: 44b46358528f768476a8ec73119957bba3880d76
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 3%
+source-wordcount: '1266'
+ht-degree: 2%
 
 ---
 
@@ -24,6 +24,10 @@ ht-degree: 3%
 在将用户和组从现有AEM系统移至AEM作为Cloud Service，以在过渡到Adobe Experience Manager(AEM)的历程中，将用户和组作为Cloud Service。 这由内容传输工具完成。
 
 对AEM as a A A Service的主要更改是完全集成地使用AdobeID访问创作层。  这需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)管理用户和用户组。 AdobeIdentity Management系统(IMS)中集中了用户配置文件信息，该系统可在所有Adobe云应用程序中提供单点登录。 有关更多详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。 由于进行了这项更改，现有用户和组需要映射到其IMS ID，以避免Cloud Service创作实例上出现重复的用户和组。
+
+### 用户映射工具{#user-mapping-tool}
+
+内容传输工具（无用户映射）将迁移与所迁移内容关联的任何用户和组。  用户映射工具是内容传输工具的一部分，其唯一目的是修改用户和组，以便IMS(AEM用作Cloud Service的单点登录功能)能够正确识别它们。  完成这些修改后，内容传输工具会照常迁移指定内容的用户和组。
 
 ## 重要注意事项{#important-considerations}
 
