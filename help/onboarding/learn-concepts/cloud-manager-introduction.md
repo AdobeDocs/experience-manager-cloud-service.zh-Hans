@@ -1,7 +1,7 @@
 ---
 title: 了解什么是Cloud Manager
 description: 请阅读本页面，了解Cloud Manager、Cloud Manager程序和环境。
-source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Cloud Manager计划表示一组Cloud Manager环境，这些环境支持业务计
 您的云环境将通过Cloud Manager创建、访问和查看。 这些环境可以是生产环境、暂存环境或开发环境。 不同的环境支持不同的目的，并且可以使用不同的CI/CD管道参与。 环境由以下服务组成：
 
 * [AEM创作服务](#author-services)
-* [AEM发布服务](publish-services)
+* [AEM发布服务](#publish-services)
 * [Dispatcher Services](#dispatcher-services)
 
    >[!NOTE]
