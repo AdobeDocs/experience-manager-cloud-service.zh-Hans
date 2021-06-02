@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 07a03d603e2a5e0a7d55a64862f991fedebbf93d
+source-git-commit: b8e7bc6e68bde3e102bf304af5fb8999fccb1624
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2302'
 ht-degree: 1%
 
 ---
@@ -252,6 +252,6 @@ AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://experienc
 
 `smtp.starttls`属性将在运行时由AEM自动设置为相应的Cloud Service值。 因此，如果将`smtp.tls`设置为true，则将忽略`smtp.startls`。 如果将`smtp.ssl`设置为false，则将`smtp.starttls`设置为true。 这与OSGI配置中设置的`smtp.starttls`值无关。
 
-## Recommendations和[!DNL Assets] {#use-cases-assets}的准则
+## 资产开发人员准则和建议[!DNL Assets] {#use-cases-assets}
 
 要了解资产作为Cloud Service的开发用例、建议和参考资料，请参阅[资产的开发人员参考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
