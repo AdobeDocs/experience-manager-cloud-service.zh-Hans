@@ -1,9 +1,9 @@
 ---
 title: 了解什么是Cloud Manager
 description: 请阅读本页面，了解Cloud Manager、Cloud Manager程序和环境。
-source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
+source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager是AEM作为Cloud Service的基本组件，是您团队的单个入
 
 ## Cloud Manager程序{#cloud-manager-programs}
 
-Cloud Manager计划表示一组Cloud Manager环境，这些环境支持业务计划的逻辑集，通常对应于购买的服务级别协议(SLA)。 例如，一个项目可以表示支持全球公共网站的AEM资源，而另一个项目则表示内部中央DAM。 请观看此视频以了解更多信息。
+Cloud Manager计划表示一组Cloud Manager环境，这些环境支持业务计划的逻辑集，通常对应于购买的服务级别协议(SLA)。 例如，一个项目可以表示支持全球公共网站的AEM资源，而另一个项目则表示内部中央DAM。 请观看此[视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)，了解有关使用Cloud Manager程序的更多信息。
 
 用户可以创建&#x200B;**Sandbox**&#x200B;或&#x200B;**Production**&#x200B;程序。
 
