@@ -2,7 +2,7 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: d7f74356db14c40ce2e1e76f96211a277fed8b93
+source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ### 用户映射工具{#mapping-tool}
 
-内容传输工具（无用户映射）将迁移与所迁移内容关联的任何用户和组。  用户映射工具是内容传输工具的一部分，其唯一目的是修改用户和组，以便IMS(AEM用作Cloud Service的单点登录功能)能够正确识别它们。  完成这些修改后，内容传输工具会照常迁移指定内容的用户和组。
+内容传输工具（无用户映射）将迁移与所迁移内容关联的任何用户和组。 用户映射工具是内容传输工具的一部分，其唯一目的是修改用户和组，以便IMS(AEM用作Cloud Service的单点登录功能)能够正确识别它们。 完成这些修改后，内容传输工具会照常迁移指定内容的用户和组。
 
 ## 重要注意事项{#important-considerations}
 
