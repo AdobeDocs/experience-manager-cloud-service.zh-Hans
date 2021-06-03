@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 3%
+source-wordcount: '1349'
+ht-degree: 2%
 
 ---
 
@@ -96,6 +96,29 @@ ht-degree: 3%
       >
    * 亚太2021年6月24日。
 
+
+## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+
+### [!DNL Forms] {#what-is-new-forms}的新增功能
+
+* **上下文帮助**:为自适应表单编辑器、模板编辑器和主题编辑器添加了上下文帮助，以帮助作者更好地了解编辑器的各种功能。
+* **属性浏览器中的错误消息**:为自适应Forms属性浏览器中的每个属性添加了错误消息。这些消息有助于了解字段的允许值。
+
+### 即将推出的[!DNL Forms] {#what-is-new-forms-prerelease}测试版功能
+
+Output as a Cloud Service:输出服务可帮助您将XDP模板和XML数据结合起来，以生成各种格式的打印文档。 该服务允许您以同步和异步批处理模式生成文档。 通过输出服务，您可以创建应用程序，以便：
+
+* 使用XML数据填充模板文件，生成最终表单文档。
+* 以各种格式生成输出表单，包括非交互式PDF打印流。
+* 从XFA表单PDF生成打印PDF。
+
+您可以写信至formscsbeta@adobe.com注册测试版计划。
+
+### 在[!DNL Forms] {#forms-bugs-fixed}中修复的错误
+
+* 在AEM Forms工作流的“分配任务”步骤中，当您将操作按钮的默认图标替换为珊瑚图标时，工作流会停止工作并记录异常。 使用默认图标时，工作流会按预期执行。
+* 在布局层中，当更改列数、打开编辑层并将某些组件拖动到面板中时，自适应表单编辑器的内容区域中会开始出现正方形蓝框，且编辑器变得无响应。
+* 与提供自适应或外部资产的URL相关的规则编辑器选项的错误消息太长，且用户不友好。
 
 ## Cloud Manager {#cloud-manager}
 
