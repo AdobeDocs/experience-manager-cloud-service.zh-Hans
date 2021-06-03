@@ -1,7 +1,7 @@
 ---
 title: AEM as a Team和Cloud Service配置文件
 description: 请阅读本页，了解AEM as a Team和Product Profiles。
-source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
+source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
