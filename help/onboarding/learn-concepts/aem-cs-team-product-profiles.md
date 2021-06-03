@@ -1,9 +1,9 @@
 ---
 title: AEM as a Team和Cloud Service配置文件
 description: 请阅读本页，了解AEM as a Team和Product Profiles。
-source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
+source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ Cloud Manager已预配置了产品配置文件，或者更简单的，基于角�
 * 一名开发人员
 
    >[!NOTE]
-   >要获得AEM as aCloud Service的访问权限，用户必须属于两个产品配置文件（如`AEM Users`或`AEM Administrators`）之一。 您必须被授予实例的权限，但管理关联的Cloud Manager的权限是不够的。
+   >要获得AEM as aCloud Service的访问权限，用户必须属于以下两个产品配置文件之一：`AEM Users`或`AEM Administrators`。 您必须被授予实例的权限，但管理关联的Cloud Manager的权限是不够的。
