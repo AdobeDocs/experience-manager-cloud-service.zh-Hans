@@ -1,9 +1,9 @@
 ---
 title: AEM as a Team和Cloud Service配置文件
 description: 请阅读本页，了解AEM as a Team和Product Profiles。
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -11,14 +11,17 @@ ht-degree: 0%
 
 # AEM as a Team和产品配置文件{#product-profiles}
 
-AEM as a Cloud Service是完全云原生的产品，可将AEM作为服务进行交付。 它以云原生方式提供AEM，并具有诸如始终开启、始终为最新、始终为安全且始终为大规模的新属性。 同时，它保留了AEM作为客户可自定义的平台提供的主要价值主张，并允许企业级团队在其开发和交付过程中进行集成。 请参阅[Adobe Experience Manager as aCloud Service简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) ，了解有关AEM as aCloud Service的更多信息。
+## 产品配置文件 {#profiles}
 
-在入门过程中，您的AEM as a Analytics团队成员将通过Admin Console添加并分配到以下一个或多个产品配置文件。
+在授予用户访问特定Adobe解决方案的权限时，您不一定希望授予他们完全访问权限。 产品配置文件使每个解决方案都具有自己的一组用户权限。 这些资源可通过Adobe Admin Console访问。
 
+有关[AEM as a Cloud Service产品配置文件](#aem-product-profiles)和[Cloud Manager产品配置文件](#cloud-manager-product-profiles)的更多信息，了解在您的团队进行设置时，这些配置文件如何协同工作。
 
 ## AEM as a Cloud Service产品配置文件{#aem-product-profiles}
 
-AEM作为Cloud Service团队提供了以下产品配置文件：
+AEM as a Cloud Service是完全云原生的产品，可将AEM作为服务进行交付。 它以云原生方式提供AEM，并具有诸如始终开启、始终为最新、始终为安全且始终为大规模的新属性。 同时，它保留了AEM作为客户可自定义的平台提供的主要价值主张，并允许企业级团队在其开发和交付过程中进行集成。 请参阅[Adobe Experience Manager as a Cloud Service简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) ，了解有关AEM as a Cloud Service的更多信息。
+
+在入门过程中，您的AEM as a Analytics团队成员将通过Admin Console添加并分配到以下一个或多个产品配置文件。
 
 * **AEM管理员**:AEM管理员通常会分配给开发人员，特别是需要有权访问（例如）开发环境的开发人员。AEM管理员产品配置文件将用于在关联的AEM实例中授予管理员权限。
 
@@ -52,4 +55,4 @@ Cloud Manager已预配置了产品配置文件，或者更简单的，基于角�
 * 一名开发人员
 
    >[!NOTE]
-   >要获得AEM as aCloud Service的访问权限，用户必须属于两个产品配置文件`AEM Users-xxx`或`AEM Administrators-xxx`中的一个。 您必须拥有实例的权限。 管理关联的Cloud Manager的权限是不够的。
+   >要获得AEM as aCloud Service的访问权限，用户必须属于两个产品配置文件`AEM Users-xxx`或`AEM Administrators-xxx`中的一个，您必须拥有该实例的权限。 管理关联的Cloud Manager的权限是不够的。
