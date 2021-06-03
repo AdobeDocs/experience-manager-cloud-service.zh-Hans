@@ -1,9 +1,9 @@
 ---
 title: AEM as a Team和Cloud Service配置文件
 description: 请阅读本页，了解AEM as a Team和Product Profiles。
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 产品配置文件 {#profiles}
 
-在授予用户访问特定Adobe解决方案的权限时，您不一定希望授予他们完全访问权限。 产品配置文件使每个解决方案都具有自己的一组用户权限。 这些资源可通过Adobe Admin Console访问。
+在授予用户访问特定Adobe解决方案的权限时，您不一定希望授予他们完全访问权限。 产品配置文件使每个解决方案都具有自己的一组用户权限。 这些文件可通过[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)访问。
 
 有关[AEM as a Cloud Service产品配置文件](#aem-product-profiles)和[Cloud Manager产品配置文件](#cloud-manager-product-profiles)的更多信息，了解在您的团队进行设置时，这些配置文件如何协同工作。
 
@@ -40,13 +40,13 @@ Cloud Manager已预配置了产品配置文件，或者更简单的，基于角�
 
 每个产品配置文件都具有与其关联的特定权限。 例如，如果您的角色是：
 
-* **业务所有者**，您拥有以下权限：添加新程序或编辑程序、添加或更新环境、添加/编辑/删除管道并运行任何管道，以及将代码部署到AEM环境或代码质量。
+* **业务所有者**，您有权添加新程序或编辑程序、添加或更新环境、添加/编辑/删除管道并运行任何管道，以及将代码部署到AEM环境或代码质量。
 
 * **部署管理器**&#x200B;中，您有权添加或更新环境、运行任何管道，以及将代码部署到AEM环境或代码质量。
 
 * **开发人员**，您有权生成访问Git的个人访问令牌。
 
-* **程序管理器**&#x200B;中，则表示您有权访问Git。
+* **计划管理器**，则您有权计划管道、覆盖3层质量门并提供生产批准。
 
 可以将用户分配到多个产品配置文件。 例如，将业务所有者和部署管理员角色分配给用户，可为其提供这些权限的组合或总和。
 
@@ -57,4 +57,4 @@ Cloud Manager已预配置了产品配置文件，或者更简单的，基于角�
 * 一名开发人员
 
    >[!NOTE]
-   >要获得AEM as aCloud Service的访问权限，用户必须属于两个产品配置文件`AEM Users-xxx`或`AEM Administrators-xxx`中的一个，您必须拥有该实例的权限。 管理关联的Cloud Manager的权限是不够的。
+   >要获得AEM as aCloud Service的访问权限，用户必须属于两个产品配置文件（如`AEM Users`或`AEM Administrators`）之一。 您必须被授予实例的权限，但管理关联的Cloud Manager的权限是不够的。
