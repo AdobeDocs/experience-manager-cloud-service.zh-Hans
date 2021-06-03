@@ -2,7 +2,7 @@
 title: 添加页面注释
 description: 使用注释模式在页面上保留注释和草图，就像使用附注来协助内容审阅过程一样
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 35%
@@ -45,7 +45,7 @@ ht-degree: 35%
 
 1. 单击或点按注释以打开注释对话框并查看其详细信息。
 
-   ![注释详细信息](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![注释详细信息](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. 要退出“注释”模式并返回到之前使用的模式，请点按/单击顶部工具栏右侧的x按钮。
 
