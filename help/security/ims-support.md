@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -163,7 +163,7 @@ AEM 可继续支持管理员用户在本地登录。登录屏幕具有本地登�
 
 >[!NOTE]
 >
->在 IMS 中创建任何用户时，都可以使用 Adobe ID 或 Federated ID 进行创建。如果用户是使用 Adobe ID 设置的，则会使用其公司的身份提供程序对其进行身份验证以登录。
+>在 IMS 中创建任何用户时，都可以使用 Adobe ID 或 Federated ID 进行创建。如果用户是使用Federated ID设置的，则会使用其公司的身份提供程序对其进行身份验证以登录。
 
 然后，他们将被重定向到 IMS 登录屏幕，并需要输入其凭证：
 
