@@ -2,10 +2,10 @@
 title: 自定义和扩展内容片段
 description: 内容片段对标准资产进行了扩展。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 2%
+source-wordcount: '1808'
+ht-degree: 1%
 
 ---
 
@@ -170,7 +170,7 @@ ht-degree: 2%
 
 您可以使用服务器端API访问您的内容片段；请参阅：
 
-[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -180,7 +180,7 @@ ht-degree: 2%
 
 以下三个界面可用作入口点：
 
-* **内容片段** ([ContentFragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **内容片段** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    此界面允许您以抽象方式处理内容片段。
 
@@ -206,7 +206,7 @@ ht-degree: 2%
 
    表示片段主要元素的界面包括：
 
-   * **内容元素** ([ContentElement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **内容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 获取基本数据（名称、标题、描述）
       * 获取/设置内容
@@ -218,7 +218,7 @@ ht-degree: 2%
          * 删除变体（请参阅[注意事项](#caveats)）
          * 访问变量数据（请参阅`ContentVariation`）
       * 解析变量的快捷方式（如果指定的变量不适用于元素，则应用一些其他特定于实施的回退逻辑）
-   * **内容变体** ([ContentVariation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **内容变体** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 获取基本数据（名称、标题、描述）
       * 获取/设置内容
@@ -248,9 +248,9 @@ ht-degree: 2%
 
 * `ContentElement` 可适用于：
 
-   * [`ElementTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html)  — 访问元素的结构信息。
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html)  — 访问元素的结构信息。
 
-* [`FragmentTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 可适用于：
 
