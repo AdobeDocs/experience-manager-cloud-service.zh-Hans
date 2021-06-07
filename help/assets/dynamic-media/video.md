@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中处理视频。
 feature: 视频配置文件
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
+source-wordcount: '9471'
 ht-degree: 21%
 
 ---
@@ -499,7 +499,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 1. 点按&#x200B;**[!UICONTROL 我需要哪些凭据？]**
 1. 在&#x200B;**[!UICONTROL 将凭据添加到项目]**&#x200B;页面中步骤 2 的&#x200B;**[!UICONTROL 创建 OAuth 2.0 客户端 ID]** 标题下，根据需要在“名称”字段中输入唯一名称。或者，您也可以使用 Google 指定的默认名称。
-1. 在&#x200B;**[!UICONTROL 授权的JavaScript™源]**&#x200B;标题的文本字段中，输入以下路径，在路径中替换您自己的域和端口号，然后按&#x200B;**[!UICONTROL Enter]**&#x200B;以添加列表的路径：
+1. 在&#x200B;**[!UICONTROL Authorized JavaScript原点]**&#x200B;标题的文本字段中，输入以下路径，在路径中替换您自己的域和端口号，然后按&#x200B;**[!UICONTROL Enter]**&#x200B;将路径添加到列表：
 
    `https://<servername.domain>:<port_number>`
 
@@ -545,7 +545,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 >[!CAUTION]
 >
->确保已在YouTube *中的*&#x200B;之前的“Experience Manager中的YouTube设置”下添加渠道(请参阅下面的[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube)，已在中设置一个或多个渠道。 如果您未能设置渠道，则系统不会警告您现有渠道。 但是，在添加渠道时，仍会发生Google验证，但是没有选项可选择发送视频的渠道。
+>确保已在YouTube *中的*&#x200B;之前的“Experience Manager中的YouTube设置”下添加渠道(请参阅下面的[在Experience Manager](#setting-up-youtube-in-aem)中设置YouTube)，已在中设置一个或多个渠道。 如果您未能设置渠道，则系统不会警告您任何现有渠道。 但是，在添加渠道时，仍会发生Google验证，但是没有选项可选择发送视频的渠道。
 
 **要创建YouTube渠道，请执行以下操作：**
 
@@ -607,7 +607,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回至“YouTube 帐户设置”对话框。在 **[!UICONTROL JSON 配置]**&#x200B;字段中，粘贴 JSON 文本。
 1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**。
 
-   您现在将在YouTube中设置Experience Manager。
+   现在，在YouTube中设置Experience Manager。
 
 1. 点按&#x200B;**[!UICONTROL 添加渠道]**。
 1. 在渠道名称字段中，输入您在任务&#x200B;**[!UICONTROL 向YouTube]**&#x200B;前添加一个或多个渠道中创建的渠道名称。
@@ -623,7 +623,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 点按&#x200B;**[!UICONTROL 允许]**。
 
-   您现在将设置标记以进行发布。
+   现在，设置用于发布的标记。
 
 1. **[!UICONTROL 设置要发布的标记]**  — 在“Cloud Services”>“YouTube”页面上，点按铅笔图标，以编辑要使用的标记列表。
 1. 要在Experience Manager中显示可用标记列表，请点按下拉列表图标（倒置尖角）。
@@ -653,7 +653,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回至“YouTube 帐户设置”对话框。在 **[!UICONTROL JSON 配置]**&#x200B;字段中，粘贴 JSON 文本。
 1. 点按&#x200B;**[!UICONTROL 确定]**。
 
-   您现在将在YouTube中设置Experience Manager。
+   现在，在YouTube中设置Experience Manager。
 
 1. 在&#x200B;**[!UICONTROL 可用渠道]**&#x200B;右侧，点按 **+**（加号图标）。
 1. 在“YouTube频道设置”对话框的“标题”字段中，输入您在之前向YouTube添加一个或多个频道任务中创建的频道 **[!UICONTROL 名称]** 。
@@ -669,7 +669,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 点按&#x200B;**[!UICONTROL 允许]**。
 
-   您现在将设置标记以进行发布。
+   现在，设置用于发布的标记。
 
 1. **[!UICONTROL 设置要发布的标记]**  — 在“Cloud Services”>“YouTube”页面上，点按铅笔图标，以编辑要使用的标记列表。
 1. 要在Experience Manager中显示可用标记列表，请点按下拉列表图标（倒置尖角）。
@@ -1057,7 +1057,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 >[!NOTE]
 您使用的视频播放器必须支持字幕的显示。
 
-Dynamic Media可以将题注文件转换为JSON(JavaScript™对象表示法)格式。 这种转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网/索引内容，以使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
+Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）格式。 这种转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网/索引内容，以使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
 
 请参阅[提供静态（非图像）内容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) ，以了解有关在URL中使用JSON函数的更多信息。
 
