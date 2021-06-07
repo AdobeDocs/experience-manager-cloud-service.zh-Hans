@@ -2,9 +2,9 @@
 title: 外部化URL
 description: Externalizer是一种OSGi服务，它允许您以编程方式将资源路径转换为外部URL和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 由于AEM作为Cloud Service实例无法知道其外部可见URL，并且由于有时必须在请求范围之外创建链接，因此此服务提供了一个中心位置来配置这些外部URL并构建它们。
 
-本文介绍如何配置外部器服务及其使用方法。 有关该服务的技术详细信息，请参阅[Javaocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)。
+本文介绍如何配置外部器服务及其使用方法。 有关该服务的技术详细信息，请参阅[Javaocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)。
 
 ## 外部器的默认行为和如何覆盖{#default-behavior}
 
@@ -125,4 +125,4 @@ Externalizer服务允许您集中定义可用于以编程方式为资源路径�
 
 >[!TIP]
 >
->您可以在[Javaocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)中找到更多示例。
+>您可以在[Javaocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)中找到更多示例。
