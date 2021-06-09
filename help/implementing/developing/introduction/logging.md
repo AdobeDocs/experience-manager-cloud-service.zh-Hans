@@ -2,9 +2,9 @@
 title: 将AEM作为Cloud Service记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置，或如何在AEM中作为Cloud Service请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
+source-git-commit: 599f32afbee7514ddad6396bd35707cea5dcca14
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2305'
 ht-degree: 2%
 
 ---
@@ -253,28 +253,30 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-**日志格式**
+<!--
+
+**Log Format**
 
 <table>
 <tbody>
 <tr>
-<td>AEM as a Cloud Service节点ID</td>
+<td>AEM as a Cloud Service node ID</td>
 <td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
 </tr>
 <tr>
-<td>客户端的IP地址</td>
+<td>IP address of the Client</td>
 <td>-</td>
 </tr>
 <tr>
-<td>用户</td>
+<td>User</td>
 <td>myuser@adobe.com</td>
 </tr>
 <tr>
-<td>日期和时间</td>
-<td>2000年4月30日2020:17:37:14 +000</td>
+<td>Date and time</td>
+<td>30/Apr/2020:17:37:14 +0000</td>
 </tr>
 <tr>
-<td>HTTP方法</td>
+<td>HTTP method</td>
 <td>GET</td>
 </tr>
 <tr>
@@ -282,27 +284,42 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
 </tr>
 <tr>
-<td>协议</td>
+<td>Protocol</td>
 <td>HTTP/1.1</td>
 </tr>
 <tr>
-<td>HTTP响应状态</td>
+<td>HTTP response status</td>
 <td>200</td>
 </tr>
 <tr>
-<td>HTTP请求时间（以毫秒为单位）</td>
+<td>HTTP request time in milliseconds</td>
 <td>1141</td>
 </tr>
 <tr>
-<td>引用</td>
+<td>Referrer</td>
 <td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
 </tr>
 <tr>
-<td>用户代理</td>
-<td>“Mozilla/5.0(Macintosh;英特尔Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，如Gecko）Chrome/81.0.4044.122 Safari/537.36英寸</td>
+<td>User agent</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
+
+-->
+
+| AEM as a Cloud Service节点ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+|---|---|
+| 客户端的IP地址 | - |
+| 用户 | myuser@adobe.com |
+| 日期和时间 | 2000年4月30日2020:17:37:14 +000 |
+| HTTP方法 | GET |
+| URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
+| 协议 | HTTP/1.1 |
+| HTTP响应状态 | 200 |
+| HTTP请求时间（以毫秒为单位） | 1141 |
+| 引用 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| 用户代理 | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
 ### 配置HTTP访问日志{#configuring-the-http-access-log}
 
