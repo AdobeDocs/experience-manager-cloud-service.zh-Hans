@@ -4,7 +4,7 @@ description: 本页介绍如何在Screens中作为Cloud Service创建和管理�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 4%
@@ -33,7 +33,11 @@ ht-degree: 4%
 请按照以下步骤在Screens中作为Cloud Service创建新序列渠道：
 
 1. 导航到Screens内容提供商。
-1. 导航到您的AEM Screens项目，如SanJoseCafe。
+
+1. 导航到您的AEM Screens项目，如&#x200B;*FirstDigitalExperience*。
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. 从您的项目中选择&#x200B;**渠道**&#x200B;文件夹，如SanJoseCafe —>渠道。
 1. 单击操作栏中的&#x200B;**创建**。
 1. 从&#x200B;**创建**&#x200B;向导中选择模板，例如&#x200B;**序列渠道**，然后单击&#x200B;**下一步**。
