@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 1%
@@ -81,7 +81,7 @@ CIF附加组件（可选）仅适用于AdobeCommerce Enterprise / Cloud，它支
 
    有关详细信息，请参阅[CLI文档](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)。
 
-   商务GraphQL端点URL必须指向商务的GraphQl服务，并使用安全的HTTPS连接。 例如：`https://demo.magentosite.cloud/graphql`。
+   商务GraphQL端点URL必须指向商务的GraphQl服务，并使用安全的HTTPS连接。 例如：`https://<yourmagentosystem>/graphql`。
 
 4. 启用需要身份验证的暂存目录功能（可选）
 
