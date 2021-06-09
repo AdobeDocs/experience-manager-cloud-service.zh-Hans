@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 5%
@@ -73,13 +73,13 @@ CIF加载项可以从[软件分发门户](https://experience.adobe.com/#/downloa
    Mac OSX示例：
 
    ```bash
-   export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    示例窗口：
 
    ```bash
-   set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    AEM使用此变量连接到您的商务系统。 此外，CIF附加组件包含本地反向代理，以使Commerce GraphQL端点在本地可用。 CIF创作工具（产品控制台和选取器）以及执行直接GraphQL调用的CIF客户端组件均使用此功能。
