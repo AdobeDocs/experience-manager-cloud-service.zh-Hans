@@ -2,18 +2,18 @@
 title: 将AEM作为Cloud Service记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置，或如何在AEM中作为Cloud Service请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
 
 # 将AEM作为Cloud Service{#logging-for-aem-as-a-cloud-service}进行日志记录
 
-AEM as a Cloud Service是客户包含自定义代码以为其客户群创建独特体验的平台。 考虑到这一点，日志记录是调试和了解本地开发和云环境(特别是AEM as a Cloud Service的开发环境)中代码执行的关键功能。
+AEM as a Cloud Service是客户包含自定义代码以为其客户群创建独特体验的平台。 考虑到这一点，日志记录服务是调试和了解本地开发和云环境(特别是AEM as a Cloud Service的开发环境)中代码执行的关键功能。
 
-AEM日志记录和日志级别在配置文件中进行管理，这些配置文件存储为Git中AEM项目的一部分，并通过Cloud Manager部署为AEM项目的一部分。 以Cloud Service身份登录AEM可以划分为两个逻辑集：
+AEM日志记录设置和日志级别在配置文件中进行管理，这些配置文件作为AEM项目的一部分存储在Git中，并通过Cloud Manager部署为AEM项目的一部分。 以Cloud Service身份登录AEM可以划分为两个逻辑集：
 
 * AEM日志记录，在AEM应用程序级别执行日志记录
 * Apache HTTPD Web Server/Dispatcher日志记录，用于在发布层上执行Web服务器和Dispatcher的日志记录。
