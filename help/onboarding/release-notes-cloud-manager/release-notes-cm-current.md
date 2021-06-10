@@ -2,56 +2,58 @@
 title: AEM as a Cloud Manager版本2021.5.0的发行说明
 description: AEM as a Cloud Manager版本2021.5.0的发行说明
 feature: 发行信息
-source-git-commit: 13d45a02169fc99be60d73dde91dbc8c2ce03ef8
+source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '394'
 ht-degree: 3%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service2021.5.0 {#release-notes}中的Cloud Manager发行说明
+# Adobe Experience Manager as a Cloud Service2021.6.0 {#release-notes}中的Cloud Manager发行说明
 
-本页面概述了AEM as a Cloud 2021.5.0中Cloud Manager的发行说明。
+本页面概述了AEM as a Cloud 2021.6.0中Cloud Manager的发行说明。
 
 >[!NOTE]
 >要查看Adobe Experience Manager as a Cloud Service的最新发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6日。
-下一版本计划于2021年6月10日发布。
+AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日。
+下一版本计划于2021年7月15日发布。
 
 ### 新增功能 {#what-is-new}
 
-* PackageOverlaps质量规则现在会检测在同一部署的包集中多次部署同一包的情况，即在多个嵌入位置中部署同一包的情况。
+* 预览服务将以滚动方式部署到所有程序。 当客户的计划启用了预览服务后，系统会在产品中通知客户。 有关更多详细信息，请参阅[访问预览服务](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 。
 
-* 现在，公共API中的存储库端点包含Git URL。
+* 现在，在生成步骤期间下载的Maven依赖项将在管道执行之间缓存。 未来几周，将为客户启用此功能。
 
-* Cloud Manager用户下载的部署日志将更有洞察力，现在将包含有关失败和成功方案的详细信息。
+* 现在可以通过编辑程序对话框编辑程序的名称。
 
-* 现在，已解决将代码推送到AdobeGit时遇到的间歇性故障。
+* 在项目创建期间和通过管理git工作流在默认推送命令中使用的默认分支名称已更改为`main`。
 
-* 现在，可以在编辑项目工作流期间将商务加载项应用于沙盒项目。
+* 在UI中编辑项目体验已刷新。
 
-* *编辑程序*&#x200B;体验已刷新。
+* 质量规则`ImmutableMutableMixCheck`已更新，可将`/oak:index`节点分类为不可变。
 
-* “环境详细信息”页面中的“域名”表将通过分页显示多达250个域名。
+* 质量规则`CQBP-84`和`CQBP-84--dependencies`已合并到单个规则中。
 
-* 在&#x200B;**Add Program**&#x200B;和&#x200B;**Edit Program**&#x200B;工作流中，**Solutions &amp; Add-ons**&#x200B;选项卡将显示解决方案，即使只有一个解决方案可用于该程序。
+* 为避免混淆，“环境详细信息”页面上的“发布AEM”和“发布Dispatcher”区段行已进行合并。
 
-* 生成步骤日志中未生成任何已部署的内容包时的错误消息不明确。
+* 添加了新的代码质量规则来验证`damAssetLucene`索引的结构。 有关更多详细信息，请参阅[自定义DAM资产Lucene Oak索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)。
+
+* “环境详细信息”页面现在将显示发布和预览服务的多个域名（如果适用）。 有关更多详细信息，请参阅[环境详细信息](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
 
 ### 错误修复 {#bug-fixes}
 
-* 有时，即使未部署该配置，用户也可能会在IP允许列表旁边看到绿色的“活动”状态。
+* 未正确解析根元素名称后包含换行符的JCR节点定义。
 
-* 管道变量API不会删除“已删除”变量，而是仅以状态&#x200B;**DELETED**&#x200B;标记它们。
+* 列表存储库API不会过滤已删除的存储库。
 
-* 某些代码气味类型的质量问题错误地影响了可靠性评级。
+* 为计划步骤提供无效值时，显示错误消息。
 
-* 由于不支持通配符域，因此UI将禁止用户提交通配符域。
+* 有时，即使未部署该配置，用户也可能在IP允许列表旁看到绿色的&#x200B;*活动*&#x200B;状态。
 
-* 当从午夜UTC到凌晨1点之间开始管道执行时，Cloud Manager生成的对象版本不保证大于前一天创建的版本。
+* 某些程序编辑序列可能会导致无法创建或编辑生产管道。
 
-* 在沙盒项目设置过程中，成功创建包含示例代码的项目后，“概述”页面中的“管理Git”将显示为主页卡中的链接。
+* 某些程序编辑序列可能会导致在&#x200B;**概述**&#x200B;页面中显示一条误导性消息，以便重新执行程序设置。
