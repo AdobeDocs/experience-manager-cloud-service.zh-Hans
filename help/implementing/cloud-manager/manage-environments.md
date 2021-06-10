@@ -2,9 +2,9 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
+source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1652'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 3%
 
    具有必需权限的用户必须执行下列操作之一，才能&#x200B;*解锁*&#x200B;对预览服务的访问，并提供所需的访问权限：
 
-   * 创建相应的IP允许列表并将其应用于预览服务。 请立即从预览服务中取消应用`Preview Default [Env ID] IP Allow List`，以便执行此操作。
+   * 创建相应的IP允许列表并将其应用于预览服务。 请立即从预览服务中取消应用`Preview Default [Env ID] IP Allow List`，以便执行此操作。 有关更多详细信息，请参阅[取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)。
 
       *或者*,
 
