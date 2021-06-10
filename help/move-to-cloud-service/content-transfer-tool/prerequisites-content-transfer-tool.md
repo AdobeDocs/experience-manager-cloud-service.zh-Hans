@@ -1,14 +1,21 @@
 ---
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
-source-git-commit: becb8368af8a8228bf3248bde66ad7164187a9c4
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
 # 内容传输工具的先决条件 {#prerequisites}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="使用内容传输工具的重要注意事项"
+>abstract="查看有关使用内容传输工具的重要注意事项，包括Java和AEM版本、支持的数据存储类型、用户组注意事项等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用内容传输工具的重要注意事项"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="最佳实践和准则"
 
 下表概述了使用内容传输工具的先决条件。
 
