@@ -2,9 +2,9 @@
 title: 添加自定义域名
 description: 添加自定义域名
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * AEM as aCloud Service不支持通配符域。
 
-* 每个Cloud Manager环境最多可托管每个环境100个自定义域。
+* 每个Cloud Manager环境最多可托管每个环境250个自定义域。
 
 * 同一域名不能在多个环境中使用。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**添加域**&#x200B;按钮以打开&#x200B;**添加域名**&#x200B;对话框。
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. 在&#x200B;**域名**&#x200B;中输入自定义域名。
 
@@ -47,6 +47,11 @@ ht-degree: 0%
    >在域中输入时，不应包含`http://`、`https://`或空格。
 
 1. 选择其发布服务将与域名关联的&#x200B;**Environment**。
+
+1. 选择服务作为&#x200B;**Publish**&#x200B;或&#x200B;**Preview**。
+
+   >[!NOTE]
+   >现在，Cloud Manager中支持发布和预览服务的站点程序的自定义域名。 每个Cloud Manager环境最多可托管每个环境250个自定义域。 要了解有关预览服务的更多信息，请参阅[预览服务](/help/implementing/cloud-manager/manage-environments.md#preview-service)。
 
 1. 从下拉菜单中选择&#x200B;**域SSL证书**，然后选择&#x200B;**继续**。
 
