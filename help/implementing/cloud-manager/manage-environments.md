@@ -2,7 +2,7 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -91,22 +91,22 @@ ht-degree: 3%
 
 1. **默认IP允许列表锁**:首次创建后，您必须主动从环境的预览服务中取消应用默认IP允许列表，才能启用访问权限。
 
+   具有必需权限的用户必须执行下列操作之一，才能&#x200B;*解锁*&#x200B;对预览服务的访问并提供所需的访问权限：
+
+   1. 创建相应的IP允许列表并将其应用于预览服务。 请立即从预览服务中取消应用`Preview Default [Env ID] IP Allow List`，以便执行此操作。
+
+      或者,
+
+   1. 使用更新IP允许列表工作流删除默认IP并根据需要添加IP。 请参阅[查看和更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)以了解更多信息。
+
+      >[!NOTE]
+      >必须在与您的任何团队共享预览服务URL之前完成上述步骤，以确保团队的相应成员能够访问预览URL。
+
+      解锁对预览服务的访问后，将不再显示锁图标，如下所示。
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **将内容发布到预览**:您可以使用AEM中的管理发布UI将内容发布到预览服务。有关更多详细信息，请参阅[预览内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) 。
-
-具有必需权限的用户必须执行下列操作之一，才能&#x200B;*解锁*&#x200B;对预览服务的访问并提供所需的访问权限：
-
-1. 创建相应的IP允许列表并将其应用于预览服务。 请立即从预览服务中取消应用`Preview Default [Env ID] IP Allow List`，以便执行此操作。
-
-   或者,
-
-1. 使用更新IP允许列表工作流删除默认IP并根据需要添加IP。 请参阅[查看和更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)以了解更多信息。
-
-   >[!NOTE]
-   >必须在与您的任何团队共享预览服务URL之前完成上述步骤，以确保团队的相应成员能够访问预览URL。
-
-   解锁对预览服务的访问后，将不再显示锁图标，如下所示。
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## 更新环境{#updating-dev-environment}
 
