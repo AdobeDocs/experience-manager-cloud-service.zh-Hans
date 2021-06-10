@@ -2,7 +2,7 @@
 title: '编辑沙盒项目 '
 description: 编辑沙盒项目
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
    导航到&#x200B;**General**&#x200B;选项卡以编辑程序说明。
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    **Solutions &amp; Add-ons**&#x200B;选项卡显示两个选项，例如：**Sites**&#x200B;和&#x200B;**Assets**（适用于生产和沙盒程序）。 此外，您还可以选择&#x200B;**Commerce**&#x200B;附加选项，该选项位于&#x200B;**Sites**&#x200B;下，如下图所示。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
    >[!NOTE]
    >必须为程序至少选择一个解决方案，即在“编辑程序”工作流中不允许用户取消选择所有解决方案。
 
-1. 单击&#x200B;**Save**&#x200B;以完成编辑程序工作流。
+1. 单击&#x200B;**Update**&#x200B;以完成编辑程序工作流。
 
 
 ## 编辑程序{#considerations-editing}时的注意事项
