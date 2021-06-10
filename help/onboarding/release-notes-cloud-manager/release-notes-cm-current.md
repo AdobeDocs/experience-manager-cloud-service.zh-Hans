@@ -2,7 +2,7 @@
 title: AEM as a Cloud Manager版本2021.5.0的发行说明
 description: AEM as a Cloud Manager版本2021.5.0的发行说明
 feature: 发行信息
-source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
+source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -39,6 +39,8 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
 * 质量规则`CQBP-84`和`CQBP-84--dependencies`已合并到单个规则中。
 
 * 为避免混淆，“环境详细信息”页面上的“发布AEM”和“发布Dispatcher”区段行已进行合并。
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
 * 添加了新的代码质量规则来验证`damAssetLucene`索引的结构。 有关更多详细信息，请参阅[自定义DAM资产Lucene Oak索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)。
 
