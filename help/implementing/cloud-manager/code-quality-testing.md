@@ -2,7 +2,7 @@
 title: 代码质量测试 — Cloud Services
 description: 代码质量测试 — Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 在“代码质量测试”中，会扫描源代码以确保其符合特定质量标准。 目前，这是通过SonarQube与使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则可组合通用Java规则和特定于AEM的规则。 某些特定于AEM的规则是根据AEM Engineering中的最佳实践创建的，称为[Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
 >[!NOTE]
->您可以在此处[下载规则的完整列表。](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx)
+>您可以在此处[下载规则的完整列表。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 **三层门**
 
