@@ -2,9 +2,9 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
+source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1648'
 ht-degree: 3%
 
 ---
@@ -89,9 +89,14 @@ ht-degree: 3%
 
 1. **AEM版本**:您的环境必须为AEM版本或 `2021.5.5343.20210542T070738Z` 更高版本。确保更新管道在您的环境中成功运行以完成此操作。
 
-1. **默认IP允许列表锁**:首次创建后，您必须主动从环境的预览服务中取消应用默认IP允许列表，才能启用访问权限。
+1. **默认IP允许列表锁**:创建后，预览服务将应用默认的IP允许列表，并进行标 `Preview Default [Env ID]`记，如下图所示。
 
-   具有必需权限的用户必须执行下列操作之一，才能&#x200B;*解锁*&#x200B;对预览服务的访问并提供所需的访问权限：
+   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+
+   >[!NOTE]
+   >首次创建后，您必须主动从环境的预览服务中取消应用默认IP允许列表，才能启用访问权限。
+
+   具有必需权限的用户必须执行下列操作之一，才能&#x200B;*解锁*&#x200B;对预览服务的访问，并提供所需的访问权限：
 
    * 创建相应的IP允许列表并将其应用于预览服务。 请立即从预览服务中取消应用`Preview Default [Env ID] IP Allow List`，以便执行此操作。
 
