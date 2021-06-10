@@ -2,9 +2,9 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
+source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1626'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 3%
       >[!NOTE]
       >必须在与您的任何团队共享预览服务URL之前完成上述步骤，以确保团队的相应成员能够访问预览URL。
 
-      解锁对预览服务的访问后，将不再显示锁图标，如下所示。
+      解锁对预览服务的访问后，将不再显示锁图标（如下图所示）。
 
       ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
