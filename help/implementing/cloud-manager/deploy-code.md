@@ -2,10 +2,10 @@
 title: 部署代码 — Cloud Services
 description: 部署代码 — Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
@@ -69,46 +69,7 @@ ht-degree: 1%
 
 ## 部署过程{#deployment-process}
 
-以下部分介绍如何在阶段和生产阶段部署AEM和调度程序包。
-
-Cloud Manager将构建过程生成的所有target/*.zip文件上传到存储位置。  这些工件在管道的部署阶段期间从此位置进行检索。
-
-当Cloud Manager部署到非生产拓扑时，其目标是尽快完成部署，从而将工件同时部署到所有节点，如下所示：
-
-1. Cloud Manager确定每个对象是AEM还是调度程序包。
-1. Cloud Manager从负载平衡器中删除所有调度程序，以在部署期间隔离环境。
-
-   除非另外配置，否则您可以在开发部署和暂存部署中跳过负载平衡器更改，即在非生产管道、开发环境和生产管道的暂存环境中分离和附加步骤。
-
-   >[!NOTE]
-   >
-   >此功能预计主要由1-1-1个客户使用。
-
-1. 每个AEM对象都会通过包管理器API部署到每个AEM实例，并且包依赖关系会确定部署顺序。
-
-   要详细了解如何使用软件包来安装新功能、在实例之间传输内容以及备份存储库内容，请参阅如何使用软件包。
-
-   >[!NOTE]
-   >
-   >所有AEM对象都会部署到作者和发布者。 当需要特定于节点的配置时，应使用运行模式。 要了解有关运行模式如何允许您针对特定目的优化AEM实例的更多信息，请参阅运行模式。
-
-1. 调度程序对象将部署到每个调度程序，如下所示：
-
-   1. 当前配置将被备份并复制到临时位置
-   1. 除不可变文件外，所有配置都将被删除。 有关更多详细信息，请参阅管理调度程序配置。 这会清除目录，以确保不会留下任何孤立的文件。
-   1. 对象将提取到`httpd`目录。  不可变文件不会被覆盖。 在部署时，您对Git存储库中的不可变文件所做的任何更改都将被忽略。  这些文件是AMS调度程序框架的核心文件，无法更改。
-   1. Apache会执行配置测试。 如果未找到错误，则重新加载服务。 如果发生错误，将从备份还原配置，重新加载服务，并将错误报告回Cloud Manager。
-   1. 管道配置中指定的每个路径都将失效或从调度程序缓存中刷新。
-
-   >[!NOTE]
-   >
-   >Cloud Manager需要调度程序对象包含完整文件集。  所有Dispatcher配置文件都必须存在于Git存储库中。 缺少文件或文件夹将导致部署失败。
-
-1. 成功将所有AEM和调度程序包部署到所有节点后，调度程序将添加回负载平衡器，并且部署完成。
-
-   >[!NOTE]
-   >
-   >您可以在开发和暂存部署中跳过负载平衡器更改，即在非生产管道、开发人员环境和暂存环境的生产管道中分离和附加步骤。
+所有Cloud Service部署都遵循滚动流程，以确保零停机时间。 请参阅[滚动部署的工作原理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work)以了解更多信息。
 
 ### 部署到生产阶段{#deployment-production-phase}
 
