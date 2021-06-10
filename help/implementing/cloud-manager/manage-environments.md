@@ -2,7 +2,7 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -87,7 +87,7 @@ ht-degree: 3%
 
 在网站到达发布环境并公开可用之前，预览网站的最终体验。 在您查看和使用“预览服务”之前，有几个指针：
 
-1. **AEM版本**:您的环境必须为AEM版本或 `2021.5.5343.20210542T070738Z` 更高版本。确保更新管道在您的环境中成功运行以完成此操作。
+1. **AEM版本**:您的环境必须为AEM版本或 `2021.05.5368.20210529T101701Z` 更高版本。确保更新管道在您的环境中成功运行以完成此操作。
 
 1. **默认IP允许列表锁**:创建后，预览服务将应用默认的IP允许列表，并标记为 `Preview Default [Env ID]`。
 
