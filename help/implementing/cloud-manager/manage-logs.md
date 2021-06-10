@@ -2,10 +2,10 @@
 title: 管理日志 — Cloud Service
 description: 管理日志 — Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 17%
+source-wordcount: '264'
+ht-degree: 13%
 
 ---
 
@@ -25,6 +25,21 @@ ht-degree: 17%
 >无论该日志文件在何处打开，都会显示相同的对话框，允许下载单个日志文件。
 
 ![](assets/download-logs2.png)
+
+## 正在下载预览服务的日志{#download-preview-service}
+
+用户可以下载预览服务的日志
+
+1. 从Cloud Manager的&#x200B;**概述**&#x200B;页面中，导航到&#x200B;**Environments**&#x200B;卡。
+
+1. 从……菜单中选择下载日志。
+
+1. 从服务下拉选项中，选择&#x200B;**预览**&#x200B;或&#x200B;**预览Dispatcher**，然后单击下载图标。
+
+   >[!NOTE]
+   >此操作也可以从环境详细信息页面完成。
+
+   ![](assets/download-preview.png)
 
 
 ## 通过API {#logs-through-api}记录
