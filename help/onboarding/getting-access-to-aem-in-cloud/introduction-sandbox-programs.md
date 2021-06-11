@@ -2,9 +2,9 @@
 title: '沙盒程序简介 '
 description: 沙盒程序简介
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: 1ecadc0d2b45ee8c94af8d91b35dbd40b08e89b5
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在沙盒中创建的环境未配置为自动缩放。 因此，这些环境不适合进行性能或负载测试。
 
-沙盒程序包括站点和资产，并自动填充了Git存储库、开发环境和非生产管道。  Git存储库会使用基于AEM项目原型的示例项目填充。
+沙盒程序包括[!DNL Sites]和[!DNL Assets]，并自动填充了Git存储库、开发环境和非生产管道。  Git存储库会使用基于AEM项目原型的示例项目填充。
 
 请参阅[了解程序和程序类型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) ，了解有关程序类型的更多信息。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
    * 开发环境的创造
    * 创建非生产管道部署到开发环境(主控的分支部署到开发环境)
 
-1. **解决方案：** 沙盒项目包括AEM Sites和Assets。
+1. **解决方案：** 沙盒程序包括AEM [!DNL Sites] 和 [!DNL Assets]。
 
 1. **AEM更新：** AEM更新可以手动应用于沙盒项目中的环境，且不会自动推送。有关更多详细信息，请参阅[AEM对沙盒环境的更新](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) 。
 
