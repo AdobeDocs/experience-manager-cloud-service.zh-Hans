@@ -2,20 +2,22 @@
 title: 管理日志 — Cloud Service
 description: 管理日志 — Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
+source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 13%
+source-wordcount: '245'
+ht-degree: 9%
 
 ---
 
 # 访问和管理日志 {#manage-logs}
 
-用户可以使用环境卡访问选定环境的可用日志文件列表。 用户可以访问选定环境的可用日志文件列表。
+用户可以使用环境卡访问选定环境的可用日志文件列表。
 
 ## 下载日志{#download-logs}
 
-这些文件可通过UI从&#x200B;**Overview**&#x200B;页面的&#x200B;**Environments**&#x200B;卡中下载：
+请按照以下步骤下载日志：
+
+1. 您可以通过UI从&#x200B;**Overview**&#x200B;页面的&#x200B;**Environments**&#x200B;卡片中下载日志：
 
 ![](assets/download-logs1.png)
 
@@ -26,22 +28,11 @@ ht-degree: 13%
 >[!NOTE]
 >无论该日志文件在何处打开，都会显示相同的对话框，允许下载单个日志文件。
 
-![](assets/download-logs2.png)
+1.从&#x200B;**中选择**&#x200B;下载日志&#x200B;**...**&#x200B;菜单。
 
-## 正在下载预览服务的日志{#download-preview-service}
+1. 从&#x200B;**Service**&#x200B;下拉菜单中，选择诸如&#x200B;**Preview**&#x200B;或&#x200B;**Preview Dispatcher**&#x200B;等选项，然后单击下载图标。 此操作也可以从环境详细信息页面完成。
 
-请按照以下步骤下载预览服务的日志
-
-1. 从Cloud Manager的&#x200B;**概述**&#x200B;页面中，导航到&#x200B;**Environments**&#x200B;卡。
-
-1. 从&#x200B;**中选择**&#x200B;下载日志&#x200B;**..**&#x200B;菜单。
-
-1. 从&#x200B;**Service**&#x200B;下拉菜单中，选择&#x200B;**预览**&#x200B;或&#x200B;**预览Dispatcher**，然后单击下载图标。
-
-   >[!NOTE]
-   >此操作也可以从环境详细信息页面完成。
-
-   ![](assets/download-preview.png)
+![](assets/download-preview.png)
 
 
 ## 通过API {#logs-through-api}记录
