@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中创建项目作为Cloud Service。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
+source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -29,35 +29,25 @@ ht-degree: 0%
    >[!NOTE]
    >请参阅[使用Screens内容提供程序](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) ，了解如何访问Screens内容提供程序以创建项目。
 
-1. 单击操作栏右上角的&#x200B;**创建** —> **创建实体**。
+1. 单击操作栏右上角的&#x200B;**创建屏幕项目**。
 
-   ![](/help/screens-cloud/assets/create-content/create-project1.png)
-
-1. 从&#x200B;**创建**&#x200B;向导中选择&#x200B;**Screens项目**。 单击&#x200B;**Next**。
-
-   ![](/help/screens-cloud/assets/create-content/create-project2.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. 在&#x200B;**创建屏幕项目**&#x200B;对话框中，输入项目的&#x200B;**标题**，例如&#x200B;*FirstDigitalExperience*。
 
-   ![](/help/screens-cloud/assets/create-content/create-project3.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >在&#x200B;**创建屏幕项目**&#x200B;对话框中，会根据您选择的标题自动填充&#x200B;**名称**&#x200B;字段。
 
-1. 单击&#x200B;**创建**。 您将在Screens内容提供程序中看到标题为&#x200B;*FirstDigitalExperience*&#x200B;的Screens项目。
+1. 单击&#x200B;**Save**。 您将在Screens内容提供程序中看到标题为&#x200B;*FirstDigitalExperience*&#x200B;的Screens项目。
 
-   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
+1. 您将在Screens内容提供程序中看到您的项目，其中有两个名为&#x200B;**位置**&#x200B;和&#x200B;**渠道**&#x200B;的文件夹。
 
-   或者，
+   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
-   1. 单击操作栏中的&#x200B;**创建屏幕项目**。
-
-      ![](/help/screens-cloud/assets/create-content/create-project7.png)
-
-   1. 输入项目的&#x200B;**标题**。 单击&#x200B;**Save**。
-
-      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    现在，您已设置AEM Screens项目，接下来可以开始向项目添加渠道和位置。
 
 ### 删除现有项目{#deleting-project}
