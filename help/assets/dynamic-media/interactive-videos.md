@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用交互式视频和购物视频
 feature: 交互式视频
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '6051'
-ht-degree: 19%
+source-wordcount: '6021'
+ht-degree: 20%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 19%
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
 
 -->
 
@@ -59,11 +59,11 @@ There was a link here that showed the video frame of an interactive video and wh
 
 下面的工作流分步说明旨在帮助您在 Dynamic Media 中快速设置并运行交互式视频。
 
-请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。它包含一个简短教程，该教程基于此[开始演示网页，其中&#x200B;*尚未*&#x200B;在其中添加交互性](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)。
+请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。它包含一个简短教程，该教程基于此[开始演示网页，其中&#x200B;*尚未*&#x200B;在其中添加交互性](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)。
 
 **示例**&#x200B;有助于说明在您的网站上集成交互式视频的步骤。
 
-在上一个示例部分中完成教程后，将以](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)的方式显示您最终的演示网页，其中包含完全集成的交互式视频。[
+在上一个示例部分中完成教程后，将以](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)的方式显示您最终的演示网页，其中包含完全集成的交互式视频。[
 
 
 
@@ -178,7 +178,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 将上述方法应用于示例网站后，您的网页中会包含多个产品缩略图，每个缩略图中都有一个“查看更多”按钮：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 激活页面上所有可用的产品概览后，您会收到向后端发出的概览请求列表：
 
@@ -533,7 +533,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 以演示网站为例：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 请注意，视频嵌入代码是标准代码：
 
@@ -564,7 +564,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 集成过程很简单，只需删除视频嵌入代码并将其替换为从Experience Manager中插入的交互式视频嵌入代码即可。 您可以在以下URL上查看结果。 虽然该视频在页面上显示交互式视频，但尚未与现有概览相集成：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## 将交互式视频与现有概览{#integrating-an-interactive-video-with-an-existing-quickview}集成
 
@@ -763,7 +763,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 具有完全集成的交互式视频的最终演示网站如下所示：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## 使用概览创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
 
