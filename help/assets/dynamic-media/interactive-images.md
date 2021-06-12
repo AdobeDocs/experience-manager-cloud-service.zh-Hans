@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用交互式图像。
 feature: 交互式图像
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '4263'
+source-wordcount: '4245'
 ht-degree: 15%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 15%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-请参阅上图网页上的[交互式图像操作中的](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)。
+请参阅上图网页上的[交互式图像操作中的](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)。
 
 ## 观看如何创建交互式图像横幅{#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ ht-degree: 15%
 
 以下工作流分步描述旨在帮助您快速启动并运行Adobe Experience Manager Assets中的交互式图像。
 
-请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。本教程包含一个基于[尚未向其添加交互式图像的网页示例的简短教程](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)。
+请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。本教程包含一个基于[尚未向其添加交互式图像的网页示例的简短教程](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
 
 
 
@@ -145,7 +145,7 @@ ht-degree: 15%
 
 **示例**
 
-您可以将上述三个示例中使用的相同方法应用到[演示网页](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)。
+您可以将上述三个示例中使用的相同方法应用到[演示网页](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
 
 演示网页包含多个产品缩略图，每个缩略图都有一个标有“查看更多”的概览按钮。如果Web浏览器的调试工具仍处于激活状态，请单击每个按钮并记下记录的概览URL。激活页面上所有四个可用的产品概览后，您会向后端发出以下概览请求列表：
 
@@ -338,13 +338,13 @@ ht-degree: 15%
 
 **示例**
 
-以[演示网站为例](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)，请注意三个人的图片是一个静态`IMG`标记：
+以[演示网站为例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)，请注意三个人的图片是一个静态`IMG`标记：
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-集成过程很简单，只需删除`IMG`标记并将其替换为从Experience Manager资产中复制的嵌入代码即可。 您可以看到结果[在页面上显示交互式购物图像，该图像具有三个圆形热点](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
+集成过程很简单，只需删除`IMG`标记并将其替换为从Experience Manager资产中复制的嵌入代码即可。 您可以看到结果[在页面上显示交互式购物图像，该图像具有三个圆形热点](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)。
 
 >[!NOTE]
 因此，演示网站交互式购物图像上的热点仅用于显示目的。它们尚未与现有概览相集成。
@@ -489,7 +489,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-具有完全集成的交互式图像的[最终演示网站](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)。
+具有完全集成的交互式图像的[最终演示网站](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)。
 
 ## 使用概览创建自定义弹出窗口{#using-quickviews-to-create-custom-pop-ups}
 
