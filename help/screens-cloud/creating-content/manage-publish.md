@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中将渠道作为Cloud Service发布�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,22 @@ ht-degree: 0%
 
 按照以下步骤发布渠道：
 
-1. 从项目中导航并选择渠道，如&#x200B;**FirstDigitalExperience** —>渠道 — > ChannelFood。
+1. 从项目中导航并选择渠道，如&#x200B;**FirstDigitalExperience** —> **渠道** —> **LoopingChannelOne**。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. 单击操作栏中的&#x200B;**管理发布** 。
 
-1. 从“管理发布”向导中选择作为“立即发布和计划”的操作，然后单击&#x200B;**Next**。
+1. 从&#x200B;**管理发布向导**&#x200B;中选择&#x200B;**Action**&#x200B;作为&#x200B;**Publish**&#x200B;和&#x200B;**Scheduling**&#x200B;作为&#x200B;**Now**，然后单击&#x200B;**Next**。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >单击操作栏中的&#x200B;**+包含子项** ，然后取消选中所有选项以发布项目中的所有模块，然后单击添加以发布。 默认情况下，将选中所有框，您必须手动取消选中这些框才能发布项目中的所有模块。
 
 1. 从&#x200B;**管理发布**&#x200B;向导中选择渠道后，单击&#x200B;**发布**&#x200B;以发布该渠道。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 下一步是什么{#whats-next}
@@ -48,4 +57,4 @@ ht-degree: 0%
 * 从Screens内容提供商创建和管理位置
 * 从Screens服务提供商创建和管理播放器
 
-   您应继续以Cloud Service网络管理员的身份访问Screens，方法是接下来查看文档。
+   您应该通过下一步审阅文档，将Screens作为Cloud Service继续。
