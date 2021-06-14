@@ -1,12 +1,12 @@
 ---
 title: 使用Screens内容提供程序
-description: 本页介绍如何使用Screens内容提供程序。
+description: 本页介绍如何使用Screens内容提供程序创建内容。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ ht-degree: 1%
 
 ## 下一步是什么{#whats-next}
 
-学会如何导航到Screens内容提供程序后，您可以导航到下一步，即在Screens中创建和管理项目作为Cloud Service。
+现在，您已学会如何导航到Screens内容提供程序，您现在应继续将Screens作为Cloud Service历程，方法是接下来查看文档[在Screens中创建和管理Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
+
 
