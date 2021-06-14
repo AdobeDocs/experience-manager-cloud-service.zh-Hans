@@ -2,9 +2,9 @@
 title: AEM as a Cloud Manager版本2021.5.0的发行说明
 description: AEM as a Cloud Manager版本2021.5.0的发行说明
 feature: 发行信息
-source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
+source-git-commit: 04195582602c0cb4cc6d359dff6abfc8dbc24614
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '419'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
 
 * 质量规则`ImmutableMutableMixCheck`已更新，可将`/oak:index`节点分类为不可变。
 
-* 质量规则`CQBP-84`和`CQBP-84--dependencies`已合并到单个规则中。
+* 质量规则`CQBP-84`和`CQBP-84--dependencies`已合并到单个规则中。 作为此整合的一部分，对依赖项的扫描可更准确地识别部署到AEM运行时的第三方依赖项中的问题。
 
 * 为避免混淆，“环境详细信息”页面上的“发布AEM”和“发布Dispatcher”区段行已进行合并。
 
