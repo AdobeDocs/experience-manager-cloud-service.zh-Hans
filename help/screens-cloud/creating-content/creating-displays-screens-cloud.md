@@ -4,10 +4,10 @@ description: 本页介绍如何创建和管理Screens中的显示屏作为Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 16%
+source-wordcount: '283'
+ht-degree: 14%
 
 ---
 
@@ -53,3 +53,6 @@ ht-degree: 16%
 
 ![图像](/help/screens-cloud/assets/display/disp-5.png)
 
+## 下一步是什么{#whats-next}
+
+现在，您已学会如何为项目创建和管理显示屏，接下来应继续将屏幕作为Cloud Service历程，方法是查看文档[将渠道分配给Screens中显示屏作为Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md)。
