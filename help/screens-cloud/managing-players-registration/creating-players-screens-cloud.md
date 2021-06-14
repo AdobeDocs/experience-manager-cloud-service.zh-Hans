@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中创建和管理播放器作为Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,12 @@ ht-degree: 0%
 
 # 在屏幕中创建和管理播放器作为Cloud Service{#creating-players-screens-cloud}
 
-从AEM Screens项目发布渠道后，必须创建播放器。
+从AEM Screens项目发布渠道后，必须从Screens服务提供商创建播放器。
+
 *播放器*&#x200B;运行播放器软件以生成可视输出。 它能够控制显示常见内容或体验的裁剪、缩放、翻译部分。 屏幕配置绑定到显示器，但在出现技术缺陷时可以替换。
+
+>[!NOTE]
+>在安装Screens播放器后，您还可以实施本指南中提及的步骤。
 
 ## 目标 {#objective}
 
@@ -26,10 +30,12 @@ ht-degree: 0%
 
 ## 创建播放器{#creating-players}
 
-请按照以下步骤从Screens服务提供商创建显示屏：
+请按照以下步骤从Screens服务提供商创建播放器：
 
-1. 从您的AEMCloud Service实例导航到Screens服务提供商。
-1. 从左侧导航栏中选择&#x200B;**Displays**&#x200B;选项卡，然后单击屏幕右上角的创建。
+1. 导航到Screens服务提供商。
+
+1. 从左侧导航面板中选择&#x200B;**Displays**&#x200B;选项卡，然后单击屏幕右上角的创建。
+
 1. 选择&#x200B;**显示**。
 1. 在“显示名称”中输入&#x200B;**ChannelFoodDisplay**&#x200B;标题，然后单击“创建”。
 1. 标题为ChannelFoodDisplay的显示现在将记录在显示列表中。
