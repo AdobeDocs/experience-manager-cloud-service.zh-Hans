@@ -4,7 +4,7 @@ description: 本页介绍如何将渠道分配给Screens中的显示屏作为Clo
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
@@ -71,4 +71,4 @@ ht-degree: 19%
 
 ## 下一步是什么{#whats-next}
 
-现在，您已经将渠道分配给显示屏，接下来应继续将屏幕作为Cloud Service历程，方法是查看文档&#x200B;**安装和配置AEM的Screens播放器作为Cloud Service**。
+现在，您已经将渠道分配给显示屏，接下来应继续将屏幕作为Cloud Service历程，方法是查看文档[安装和配置AEM的Screens播放器作为Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)。
