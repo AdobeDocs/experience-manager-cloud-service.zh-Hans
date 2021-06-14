@@ -1,18 +1,18 @@
 ---
-title: 设置Screens服务提供商
-description: 本页介绍如何设置Screens服务提供商。
+title: 导航到Screens服务提供商
+description: 本页介绍如何导航到Screens服务提供商。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
 
 
-# 设置Screens服务提供商{#setup-screens-services-provider}
+# 导航到Screens服务提供商{#setup-screens-services-provider}
 
 ## 简介 {#introduction}
 
@@ -44,5 +44,5 @@ ht-degree: 1%
 
 ## 下一步是什么{#whats-next}
 
-了解如何设置Screens服务提供商后，您可以导航到Screens内容提供商，以了解更多详细信息。
+了解如何设置Screens服务提供商后，您可以导航到[使用Screens内容提供商](/help/screens-cloud/configuring/using-screens-content-provider.md)，以获取更多详细信息。
 
