@@ -2,7 +2,7 @@
 title: 正在检查域名状态
 description: 正在检查域名状态
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -41,7 +41,7 @@ FailedTXT值缺失或检测到有错误。请按照说明重试。 准备就绪�
 义域名的删除失败删除失败。必须重试。 请参阅[删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以了解更多信息。
 
 
-## 用于IP允许列表的预先存在的CDN配置{#pre-existing-cdn}
+## 自定义域名的预先存在的CDN配置{#pre-existing-cdn}
 
 如果客户的环境中包含针对IP允许列表、SSL证书或自定义域名的预先存在的CDN配置，则该客户将在&#x200B;**IP允许列表**&#x200B;和&#x200B;**环境**&#x200B;详细信息页面中看到以下消息。 客户通过UI完全迁移所有预先存在的环境配置后，UI中显示的消息将消失，并且消息可能需要1-2个工作日才能消失。
 
