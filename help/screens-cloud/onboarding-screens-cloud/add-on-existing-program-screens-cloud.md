@@ -4,9 +4,9 @@ description: 本页介绍如何在Cloud Manager中将Screens加载项作为Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 请按照以下步骤将Screens作为现有项目的加载项进行添加：
 
-1. 导航到Cloud Manager。
+1. 导航到[Cloud Manager](https://my.cloudmanager.adobe.com/)。
 
    >[!NOTE]
    >请参阅[Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) ，了解Cloud Manager。
@@ -47,4 +47,4 @@ ht-degree: 1%
 
 ## 下一步是什么{#whats-next}
 
-在了解如何将Screens作为现有Cloud Manager项目的加载项添加，并在Cloud Manager的项目和产品下看到您的项目后，您现在可以继续进入入门流程的下一步，即[在Cloud Manager中为项目创建分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)。
+在了解如何将Screens作为现有Cloud Manager项目的加载项添加，并在Cloud Manager的“程序和产品”下看到您的项目后，您现在可以继续进入入门流程的下一步，即[在Cloud Manager中为项目创建分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)。
