@@ -4,7 +4,7 @@ description: 本页介绍如何在Cloud Manager中将Screens作为Cloud Service�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 371cfaeb0e526197fdf98dea65ed5bc2ca0481a2
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -59,4 +59,4 @@ ht-degree: 2%
 
 ## 下一步是什么{#whats-next}
 
-在Cloud Manager中了解如何为程序运行管道后，您现在可以继续执行下一步。 下一步是配置和设置Screens项目。
+在Cloud Manager中了解如何为程序设置环境后，您现在可以继续进入载入过程的下一步，即[导航到Screens服务提供商](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)。
