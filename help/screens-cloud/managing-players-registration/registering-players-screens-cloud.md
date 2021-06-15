@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中将播放器注册为Cloud Service�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 1%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解在Screens服务提供商中注册播放器的情况。 阅读后，您应该：
+本文档可帮助您了解在Screens服务提供商中注册播放器的情况。 阅读后，您应该能够：
 
-* 了解如何注册播放器。
-* 能够在AEM Screens项目中管理渠道（范围）。
+* 了解如何注册播放器
+* 如何从Screens服务提供商处完成注册流程
 
 ## 注册Screens播放器{#register-players}的步骤
 
@@ -66,3 +66,6 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/player/register-player6.png)
 
+## 下一步是什么{#whats-next}
+
+现在，您已经安装并配置了播放器以云模式，您应该继续将Screens作为Cloud Service历程，方法是接下来查看文档[将播放器分配给屏幕中的显示屏，作为Screens服务提供商的Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md)。
