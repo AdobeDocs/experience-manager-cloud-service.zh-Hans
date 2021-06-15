@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 10e08b100c637db968b405b65d72a896ad411308
+source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '933'
 ht-degree: 19%
 
 ---
@@ -15,7 +15,6 @@ ht-degree: 19%
 >id="aemcloud_onboarding_overview"
 >title="入门概述"
 >abstract="无论您是要部署新应用程序还是迁移现有应用程序，本指南都将作为您的起点，确保您的应用程序已得到优化并可在Cloud Service中取得成功。 您需要Adobe ID和系统管理员的帮助，才能将用户添加到Cloud Manager中，以获取其分配的角色和关联权限。"
->additional-url="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/SLAExhibit-AEMCloudService-2019DEC12.pdf" text="服务级别展示 — AEM as aCloud Service"
 
 恭喜您开始使用AEM as aCloud Service! 无论您是要部署新应用程序还是迁移现有应用程序，本指南都将作为您的起点，确保您的应用程序已得到优化并可在Cloud Service中取得成功。
 
