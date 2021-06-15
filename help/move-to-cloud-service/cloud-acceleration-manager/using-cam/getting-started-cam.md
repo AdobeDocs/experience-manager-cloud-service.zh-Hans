@@ -4,9 +4,9 @@ description: 本页概述如何使用和开始使用Cloud Acceleration Manager�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### 在Cloud Acceleration Manager中创建项目{#create-project}
+### 在Cloud Acceleration Manager中创建和管理项目{#create-project}
 
 云加速管理器(CAM)的登陆页面允许您创建和编辑多个项目。
 
