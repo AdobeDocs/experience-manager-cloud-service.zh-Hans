@@ -4,9 +4,9 @@ description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ ht-degree: 3%
 
 准备阶段包括：
 
-* 最佳实践分析
-* 计划和设置
+* [最佳实践分析](#best-practices-analysis)
+* [计划和设置](#planning-setup)
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## 使用最佳实践分析{#best-practices-analysis}
+## 使用最佳实践分析卡{#best-practices-analysis}
 
-请按照以下步骤使用最佳实践分析：
+请按照以下步骤使用“最佳实践分析”信息卡：
 
 1. 单击&#x200B;**Best Practices Analysis**&#x200B;卡中的&#x200B;**Review**&#x200B;按钮。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 请按照以下步骤下载Best Practices Analyzer并在AEM系统的克隆上运行它。
+1. 按照以下步骤下载Best Practices Analyzer(BPA)，并在AEM系统的克隆上运行它。
 
    1. 导航到[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户，并以zip文件形式下载Best Practices Analyzer。
 
@@ -46,10 +46,10 @@ ht-degree: 3%
 
 1. 查看并浏览CAM中的“最佳实践分析”功能板。
 
-   * 单击每个信息卡将打开其关联的选项卡
-   * 所有报表选项卡（包括过滤）均可添加书签以便共享或将来检索
-   * 通过详细信息图标查看每个报表查找结果的详细信息
-   * 上传新报表将重置所有评估
+   * 单击每个信息卡以打开其关联的选项卡
+   * 您可以为所有报表选项卡（包括过滤）添加书签，以便共享或将来检索
+   * 使用详细信息图标可查看每个报表查找结果的详细信息
+   * 上传新报表会重置所有评估
 
 ## 使用计划和设置{#planning-setup}
 
@@ -66,8 +66,5 @@ ht-degree: 3%
 ## 下一步是什么{#whats-next}
 
 了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在即可继续查看下一步（使用实施阶段）。
-
-
-
 
 
