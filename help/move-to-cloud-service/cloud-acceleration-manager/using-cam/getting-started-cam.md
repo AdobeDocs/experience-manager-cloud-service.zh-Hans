@@ -4,10 +4,10 @@ description: 本页概述如何使用和开始使用Cloud Acceleration Manager�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 4%
+source-wordcount: '480'
+ht-degree: 3%
 
 ---
 
@@ -54,14 +54,41 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   选择项目并将鼠标悬停在项目上，以编辑或删除项目，如下图所示。
+1. 项目现已创建，并显示在&#x200B;**Cloud Acceleration Manager**&#x200B;登陆页面上。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. 单击项目卡片以输入项目。 这会将您转到项目登录页面。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## 管理项目{#manage-project}
+
+您可以编辑项目名称、描述、缩略图图像或删除项目。
+
+### 编辑项目{#edit-project}
+
+请按照以下步骤编辑项目：
+
+1. 选择项目并将鼠标悬停在项目上，然后单击铅笔图标以编辑项目，如下图所示。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. 您可以编辑项目名称、描述，甚至可以上传新图像，或从&#x200B;**编辑项目**&#x200B;对话框中编辑现有图像。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. 单击&#x200B;**Update**&#x200B;以提交更改。
+
+### 删除项目{#delete-project}
+
+请按照以下步骤删除您的项目：
+
+1. 选择项目并将鼠标悬停在项目上，然后单击存储段图标以删除项目，如下图所示。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. 单击&#x200B;**Delete**&#x200B;以确认该步骤。
 
 ## 下一步是什么{#whats-next}
 
