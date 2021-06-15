@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中将渠道作为Cloud Service发布�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-您可以从AEM Screens发布内容。 通过管理发布功能，您可以将内容更新从创作交付到发布到播放器。 您可以发布或取消发布整个AEM Screens项目或仅发布其中一个渠道、位置、播放器或应用程序的内容。
+您可以从AEM Screens发布内容。 通过管理发布功能，您可以将内容更新从创作交付到发布到播放器。 您可以发布或取消发布整个AEM Screens项目的内容，也只能发布或取消发布渠道、位置、播放器或应用程序之一的内容。
 
 >[!IMPORTANT]
 >在项目中创建渠道或渠道后，必须发布渠道，以便在AEM Screens服务提供商的库存列表视图中显示渠道/渠道。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何在Screens内容提供程序中为AEM Screens项目创建新项目。 阅读后，您应该：
+本文档可帮助您了解如何在Screens内容提供程序中为AEM Screens项目创建新项目。 阅读后，您应该能够：
 
 * 了解如何发布渠道。
-* 能够管理渠道发布（在范围方面）。
+* 按范围管理发布
 
 ## 发布渠道{#publish-channel}的步骤
 
