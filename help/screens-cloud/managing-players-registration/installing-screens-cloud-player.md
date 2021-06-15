@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中作为Cloud Service安装和配置�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 在屏幕中安装和配置播放器作为Cloud Service{#installing-players-screens-cloud}
 
-以下部分介绍如何安装已注册到内部部署AEM实例的AEM Screens播放器。 此外，您还必须对现有播放器进行工厂重置，然后针对AEM Screens注册新播放器作为Cloud Service。
+本节介绍如何安装已注册到内部部署AEM实例的AEM Screens播放器。 此外，您还必须对现有播放器进行工厂重置，然后针对AEM Screens注册新播放器作为Cloud Service。
 
 ## 目标 {#objective}
 
@@ -44,8 +44,8 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. 单击&#x200B;**确认**&#x200B;在切换到云模式时会提示取消注册播放器。
+1. 单击&#x200B;**Confirm**，在切换到云模式时，会提示取消注册播放器。
 
 ## 下一步是什么{#whats-next}
 
-现在，您已安装播放器并将其配置为云模式，您应该继续将Screens作为Cloud Service历程，方法是接下来查看文档[从Screens服务提供商将Screens中的播放器注册为Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)。
+现在，您已安装播放器并将其配置为云模式，接下来应继续将Screens作为Cloud Service历程，方法是：接下来查看文档[从Screens服务提供商将Screens中的播放器注册为Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)。
