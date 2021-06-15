@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中将播放器分配为显示屏作为
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,11 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/player/register-player8.png)
 
-1. 单击选择后，您将在&#x200B;**已分配显示**&#x200B;面板下看到已分配的显示。
+## 内容播放{#content-playback}
 
-   现在，显示内容已分配给您的播放器，并且渠道将开始播放内容。 播放器现在应该下载并开始播放内容。 **恭喜！**
+在将显示内容分配给播放器后（如前一节中所示），您将在&#x200B;**ASSIGNED DISPLAY**&#x200B;面板下看到已分配的显示内容。
 
-   ![图像](/help/screens-cloud/assets/player/output.gif)
+现在，显示内容已分配给您的播放器，并且渠道将开始播放内容。 播放器现在应该下载并开始播放内容。 **恭喜！**
+
+![图像](/help/screens-cloud/assets/player/output.gif)
 
