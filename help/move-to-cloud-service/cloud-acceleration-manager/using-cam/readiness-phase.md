@@ -4,9 +4,9 @@ description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,12 @@ ht-degree: 3%
 * [最佳实践分析](#best-practices-analysis)
 * [计划和设置](#planning-setup)
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+单击项目卡以打开项目登录页面，然后导航到&#x200B;**Readiness**&#x200B;部分，如下图所示。
+
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+>[!NOTE]
+>请参阅[在Cloud Acceleration Manager中创建和管理项目](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)以了解更多信息。
 
 ## 使用最佳实践分析卡{#best-practices-analysis}
 
