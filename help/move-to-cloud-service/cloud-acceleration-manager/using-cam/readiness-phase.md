@@ -4,9 +4,9 @@ description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 3%
    * 使用详细信息图标可查看每个报表查找结果的详细信息
    * 上传新报表会重置所有评估
 
-## 使用计划和设置{#planning-setup}
+## 使用计划和设置卡{#planning-setup}
 
 请按照此部分来浏览“计划和设置”活动卡。
 
