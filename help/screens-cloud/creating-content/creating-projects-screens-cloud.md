@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中创建项目作为Cloud Service。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何在Screens内容提供商中为AEM Screens项目创建新项目。 阅读后，您应该能够在范围方面创建AEM Screens项目。
+本文档可帮助您了解如何在Screens内容提供程序中创建新的AEM Screens项目。 阅读后，您应该能够在范围方面创建AEM Screens项目。
 
 ## 创建新项目{#create-new-project}
 
@@ -40,13 +40,9 @@ ht-degree: 0%
    >[!NOTE]
    >在&#x200B;**创建屏幕项目**&#x200B;对话框中，会根据您选择的标题自动填充&#x200B;**名称**&#x200B;字段。
 
-1. 单击&#x200B;**Save**。 您将在Screens内容提供程序中看到标题为&#x200B;*FirstDigitalExperience*&#x200B;的Screens项目。
+1. 单击&#x200B;**Save**。 您将在Screens内容提供程序中看到标题为&#x200B;*FirstDigitalExperience*&#x200B;的Screens项目。 您将在Screens内容提供程序中看到您的项目，其中有两个名为&#x200B;**位置**&#x200B;和&#x200B;**渠道**&#x200B;的文件夹。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
-
-1. 您将在Screens内容提供程序中看到您的项目，其中有两个名为&#x200B;**位置**&#x200B;和&#x200B;**渠道**&#x200B;的文件夹。
-
-   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
    现在，您已设置AEM Screens项目，接下来可以开始向项目添加渠道和位置。
 
