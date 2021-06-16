@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 辅助功能，资产管理
 role: Business Practitioner,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -86,7 +86,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | [!DNL Assets]用户界面中的列视图 | 向上和向下箭头键 | 导航到同一层次结构中的文件和文件夹。 |
 | [!DNL Assets]用户界面中的列视图 | 向左和向右箭头键 | 导航到当前文件夹上方或下方的文件和文件夹。 |
 | 在[!DNL Assets]中浏览文件夹 | `/` | 通过打开Omnisearch框来调用搜索。 |
-| [!DNL Assets] 控制台 | ` | 切换侧边栏 |
+| [!DNL Assets] 控制台 |  | 切换侧边栏 |
 | [!DNL Assets] 控制台 | `Alt + 1` | 打开内容树。 |
 | [!DNL Assets] 控制台 | `Alt + 2` | 打开[!UICONTROL Navigation]左边栏。 |
 | [!DNL Assets] 控制台 | `Alt + 3` | 显示选定资产的[!UICONTROL 时间轴]。 |
