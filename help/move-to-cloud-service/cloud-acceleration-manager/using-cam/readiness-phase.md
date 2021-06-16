@@ -4,9 +4,9 @@ description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ ht-degree: 3%
 
 1. 查看并浏览CAM中的“最佳实践分析”功能板。 有关更多详细信息，请参阅下面的[查看最佳实践分析报表](#analysis-report)一节。
 
+   >[!NOTE]
+   >上传新报表会重置所有评估。
+
 ### 查看最佳实践分析报表{#analysis-report}
 
-浏览报表页面中可用的以下信息卡：
+浏览“最佳实践分析报表”页面中提供的以下信息卡：
 
 >[!NOTE]
->上传新报表会重置所有评估。
+> 通过每张卡，您能够：
+>* 单击每个卡片以打开其关联选项卡
+>* 将所有报表选项卡（包括过滤）加入书签，以便共享或将来检索
+>* 使用“详细信息”图标查看每个报表查找结果的详细信息
 
-1. **报表属性**:此卡片在报表属性中提供信息，如报表日期、持续时间、过滤器、上传日期等。
 
-1. **报表概述**:
+#### 报表属性 {#report-properties}
 
-   此卡提供报告结果
+此卡片在报表属性中提供信息，如报表日期、持续时间、过滤器、上传日期等。
 
-1. **最佳实践评估**
+#### 报表概述{#report-overview}
 
-1. **迁移复杂性评估**
+此卡提供报告结果
 
-   >[!NOTE]
-   > 此外，您还能够：
-   >* 单击每个卡片以打开其关联选项卡
-   >* 将所有报表选项卡（包括过滤）加入书签，以便共享或将来检索
-   >* 使用“详细信息”图标查看每个报表查找结果的详细信息
+#### 最佳实践评估{#best-practices-assessment}
+
+此卡提供
+
+#### 迁移复杂性评估{#migration-complexity-assessment}
+
+此卡提供
 
 
 ## 使用计划和设置卡{#planning-setup}
