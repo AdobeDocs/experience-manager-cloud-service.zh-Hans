@@ -4,10 +4,10 @@ description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ ht-degree: 3%
 
 浏览“最佳实践分析报表”页面中提供的以下信息卡：
 
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > 通过每张卡，您能够：
 >* 单击每个卡片以打开其关联选项卡
@@ -77,11 +79,26 @@ ht-degree: 3%
 
 #### 报表属性 {#report-properties}
 
-此卡片在报表属性中提供信息，如报表日期、持续时间、过滤器、上传日期等。
+此卡提供了有关报表属性的信息，例如报表日期、持续时间、过滤器、上传日期和Adobe Experience Manager(AEM)详细信息。
+
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### 报表概述{#report-overview}
 
 此卡提供报告结果
+
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+单击此报表会打开&#x200B;**Report**&#x200B;选项卡，如下图所示。
+
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+您可以根据重要性、子类型或计数来过滤报表。
+
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>请参阅[解释最佳实践分析器报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) ，以了解发现结果类别和重要性级别。
 
 #### 最佳实践评估{#best-practices-assessment}
 
