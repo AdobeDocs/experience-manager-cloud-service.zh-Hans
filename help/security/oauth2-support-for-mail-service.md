@@ -1,7 +1,7 @@
 ---
 title: 对邮件服务的OAuth2支持
 description: Oauth2对Adobe Experience Manager as aCloud Service中邮件服务的支持
-source-git-commit: b46062697b25aa8d3f215a8a4249f5203bec268e
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 0%
@@ -61,15 +61,17 @@ AEM as a Cloud Service为其集成的邮件服务提供了OAuth2支持，以便�
 1. 复制上面示例中的`<code>`值
 1. 使用以下cURL命令获取refreshToken。 您需要将tenantID、clientID和clientSecret替换为您帐户的值以及`<code>`的值：
 
-   `curl --location --request POST 'https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
---data-urlencode 'client_id=<clientID>' \
---data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
---data-urlencode 'redirect_uri=http://localhost' \
---data-urlencode 'grant_type=authorization_code' \
---data-urlencode 'client_secret=<clientSecret>' \
---data-urlencode 'code=<code>'`
+   ```
+   curl --location --request POST 'https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token' \
+   --header 'Content-Type: application/x-www-form-urlencoded' \
+   --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
+   --data-urlencode 'client_id=<clientID>' \
+   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'redirect_uri=http://localhost' \
+   --data-urlencode 'grant_type=authorization_code' \
+   --data-urlencode 'client_secret=<clientSecret>' \
+   --data-urlencode 'code=<code>'
+   ```
 
 1. 记下refreshToken和accessToken。
 
@@ -79,15 +81,17 @@ AEM as a Cloud Service为其集成的邮件服务提供了OAuth2支持，以便�
 
 1. 使用上一过程中生成的refreshToken生成accessToken。 您可以通过以下curl来实现此目的，它会替换`<client_id>`、`<client_secret>`和`<refreshToken>`的值：
 
-   `curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
---data-urlencode 'client_id=<client_id>' \
---data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
---data-urlencode 'redirect_uri=http://localhost' \
---data-urlencode 'grant_type=refresh_token' \
---data-urlencode 'client_secret=<client_secret>' \
---data-urlencode 'refresh_token=<refreshToken>'`
+   ```
+   curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
+   --header 'Content-Type: application/x-www-form-urlencoded' \
+   --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
+   --data-urlencode 'client_id=<client_id>' \
+   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'redirect_uri=http://localhost' \
+   --data-urlencode 'grant_type=refresh_token' \
+   --data-urlencode 'client_secret=<client_secret>' \
+   --data-urlencode 'refresh_token=<refreshToken>'
+   ```
 
 1. 使用accessToken发送邮件，以查看是否正常工作。
 
