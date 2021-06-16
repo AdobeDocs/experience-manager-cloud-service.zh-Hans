@@ -4,9 +4,9 @@ description: 了解内容片段编辑器如何使用Markdown语法来轻松创�
 feature: 内容片段
 role: Business Practitioner
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '524'
 ht-degree: 4%
 
 ---
@@ -165,7 +165,7 @@ ht-degree: 4%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-要指示代码跨度，请用反勾号(&#39;)将代码换行。 与预格式化的代码块不同，代码范围表示普通段落中的代码。
+要指示代码跨度，请用反勾号(&amp;grave;)将代码换行。 与预格式化的代码块不同，代码范围表示普通段落中的代码。
 
 例如：
 
