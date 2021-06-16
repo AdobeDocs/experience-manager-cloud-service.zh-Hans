@@ -4,9 +4,9 @@ description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ ht-degree: 3%
 * [最佳实践分析](#best-practices-analysis)
 * [计划和设置](#planning-setup)
 
-单击项目卡以打开项目登录页面，然后导航到&#x200B;**Readiness**&#x200B;部分，如下图所示。
+请按照以下步骤导航到准备阶段：
 
-![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. 单击您的项目卡片上的以打开项目登录页面。
 
->[!NOTE]
->请参阅[在Cloud Acceleration Manager中创建和管理项目](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)以了解更多信息。
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. 导航到&#x200B;**Readiness**&#x200B;部分，如下图所示。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >请参阅[在Cloud Acceleration Manager中创建和管理项目](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)以了解更多信息。
 
 ## 使用最佳实践分析卡{#best-practices-analysis}
 
@@ -49,12 +55,35 @@ ht-degree: 3%
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. 查看并浏览CAM中的“最佳实践分析”功能板。
+1. 上传新报表后，您将看到“最佳实践分析”报表。
 
-   * 单击每个信息卡以打开其关联的选项卡
-   * 您可以为所有报表选项卡（包括过滤）添加书签，以便共享或将来检索
-   * 使用详细信息图标可查看每个报表查找结果的详细信息
-   * 上传新报表会重置所有评估
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. 查看并浏览CAM中的“最佳实践分析”功能板。 有关更多详细信息，请参阅下面的[查看最佳实践分析报表](#analysis-report)一节。
+
+### 查看最佳实践分析报表{#analysis-report}
+
+浏览报表页面中可用的以下信息卡：
+
+>[!NOTE]
+>上传新报表会重置所有评估。
+
+1. **报表属性**:此卡片在报表属性中提供信息，如报表日期、持续时间、过滤器、上传日期等。
+
+1. **报表概述**:
+
+   此卡提供报告结果
+
+1. **最佳实践评估**
+
+1. **迁移复杂性评估**
+
+   >[!NOTE]
+   > 此外，您还能够：
+   >* 单击每个卡片以打开其关联选项卡
+   >* 将所有报表选项卡（包括过滤）加入书签，以便共享或将来检索
+   >* 使用“详细信息”图标查看每个报表查找结果的详细信息
+
 
 ## 使用计划和设置卡{#planning-setup}
 
