@@ -2,10 +2,10 @@
 title: 基本操作
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
-ht-degree: 99%
+source-wordcount: '2876'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 | 项目 | 通过“项目”控制台，您可以直接访问您的项目。[项目是虚拟功能板](/help/sites-cloud/authoring/projects/overview.md)，可用于组建团队。然后，您可以为该团队提供对资源、工作流和任务的访问权限，从而让人们朝着一个共同目标努力。 |
 | 站点 | “站点”控制台让您可以[创建、查看和管理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)在 AEM 实例中运行的站点。通过此控制台，您可以创建、编辑、复制、移动和删除页面、启动工作流以及发布页面。 |
 | 体验片段 | [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)是独立的体验，可以跨渠道重复使用，也可以具有变量，从而避免反复地复制和粘贴体验或体验的部分内容。 |
-| 资产 | 通过“资产”控制台，您可以导入和管理数字资产，如图像、视频、文档和音频文件。随后，这些资产便可由同一 AEM 实例上运行的任何站点使用。<!--add some kind of assets link--> |
+| 资产 | 通过“资产”控制台，您可以导入和管理[数字资产，如图像、视频、文档和音频文件](/help/assets/overview.md)。 随后，这些资产便可由同一 AEM 实例上运行的任何站点使用。您还可以从资产控制台中创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 个性化 | 此控制台为[创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md)提供了一个工具框架。 |
 
 ## “工具”面板{#tools-panel}
