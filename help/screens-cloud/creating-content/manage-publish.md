@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中将渠道作为Cloud Service发布�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何在Screens内容提供程序中为AEM Screens项目创建新项目。 阅读后，您应该能够：
+本文档可帮助您了解将编辑的内容发布到Screens服务提供商和播放器。 阅读后，您应该能够：
 
-* 了解如何发布渠道。
+* 了解如何发布渠道
 * 按范围管理发布
 
 ## 发布渠道{#publish-channel}的步骤
