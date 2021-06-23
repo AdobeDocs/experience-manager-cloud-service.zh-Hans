@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '891'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ AEM asCloud Service随内置CDN一起提供。 其主要目的是通过从浏览
 
 AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布层，客户可以选择从自己的CDN指向它，他们需要管理CDN。 将根据满足某些先决条件（包括但不限于客户与其CDN供应商进行旧版集成，而这些旧版集成很难放弃）的情况，逐个允许执行此操作。
 
-## AEM Managed CDN {#aem-managed-cdn}
+## AEM Managed CDN  {#aem-managed-cdn}
 
 请按照以下部分，使用Cloud Manager自助服务UI，通过现成的CDN为内容交付做好准备：
 
@@ -70,11 +70,15 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 >
 >管理自己CDN的客户应确保发送到AEM CDN的标头的完整性。 例如，建议客户清除所有`X-Forwarded-*`标头，并将其设置为已知和受控值。 例如，`X-Forwarded-For`应包含客户端的IP地址，而`X-Forwarded-Host`应包含站点的主机。
 
+>[!NOTE]
+>
+>沙盒项目环境不支持客户提供的CDN。
+
 由于额外的跳数，性能可能会受到较小的点击，不过从客户CDN到AEM托管CDN的跳数可能会非常有效。
 
 请注意，发布层支持此客户CDN配置，但创作层不支持此配置。
 
-## 地理位置标头{#geo-headers}
+## 地理位置标题 {#geo-headers}
 
 AEM Managed CDN会通过以下方式向每个请求添加标头：
 
