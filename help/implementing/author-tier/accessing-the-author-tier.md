@@ -2,10 +2,10 @@
 title: 访问创作层
 description: 访问创作层
 exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ebc80a68d250ce5e95657f42419e6b40b843f25b
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 100%
+source-wordcount: '51'
+ht-degree: 78%
 
 ---
 
@@ -17,8 +17,4 @@ ht-degree: 100%
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-最终，此格式将替换为标准 Adobe Experience Cloud URL 格式：
-
-* `https://experience.adobe.com/#/@[TenantId]/`
-
-因此，不支持为 AEM 创作层配置自定义域名。
+不支持AEM创作层的自定义域名。
