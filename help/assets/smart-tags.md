@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 智能标记，标记
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 ---
 
 
-# 向资产中添加智能标记以改善搜索体验{#smart-tag-assets-for-faster-search}
+# 向资产中添加智能标记以改善搜索体验 {#smart-tag-assets-for-faster-search}
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 基本上，它包含一个关键词列表，员工、合作伙伴和客户通常使用该列表来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保在搜索中轻松识别和检索资产。
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## 支持的资产类型{#smart-tags-supported-file-formats}
+## 支持的资产类型 {#smart-tags-supported-file-formats}
 
 您可以标记以下类型的资产：
 
@@ -61,13 +61,13 @@ ht-degree: 6%
 * [标记数字资产](#tag-assets)。
 * [管理标记和搜索](#manage-smart-tags-and-searches)。
 
-## 了解标记模型和准则{#understand-tag-models-guidelines}
+## 了解标记模型和准则 {#understand-tag-models-guidelines}
 
 标记模型是一组与被标记的图像的各种视觉方面相关联的相关标记。 标签与图像的明显不同的视觉方面相关，以便当应用时，标签有助于搜索特定类型的图像。 例如，鞋类收藏集可以具有不同的标记，但所有标记都与鞋类相关，并且可以属于同一标记模型。 应用标记后，有助于查找不同类型的鞋，例如按颜色、设计或使用情况。 要了解[!DNL Experience Manager]中培训模型的内容表示形式，请将培训模型可视化为顶级实体，该实体由一组手动添加的标记和每个标记的示例图像组成。 每个标记都可以专门应用于图像。
 
 在创建标记模型并培训服务之前，请确定一组唯一的标记，这些标记最好地描述业务环境中图像中的对象。 确保策划集中的资产符合[培训准则](#training-guidelines)。
 
-### 培训准则{#training-guidelines}
+### 培训准则 {#training-guidelines}
 
 确保培训集中的图像符合以下准则：
 
@@ -109,7 +109,7 @@ ht-degree: 6%
 
 您无法撤消培训。 上述准则应有助于您选择要培训的良好图像。
 
-## 为自定义标记培训模型{#train-model}
+## 为自定义标记培训模型 {#train-model}
 
 要为特定于业务的标记创建和培训模型，请执行以下步骤：
 
@@ -128,7 +128,7 @@ ht-degree: 6%
 
 *图：培训工作流中用于培训标记模型的步骤。*
 
-### 查看培训状态并报告{#training-status}
+### 查看培训状态和报告 {#training-status}
 
 要检查是否在资产培训集中的标记上对智能标记服务进行了培训，请从报表控制台中查看培训工作流报表。
 
@@ -175,7 +175,7 @@ ht-degree: 6%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## 使用智能标记{#tag-assets}标记资产
+## 使用智能标记标记资产 {#tag-assets}
 
 上传后，所有类型的受支持资产都会自动由[!DNL Experience Manager Assets]标记。 默认情况下，将启用标记。 [!DNL Experience Manager] 近乎实时地应用相应的标记。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -183,7 +183,7 @@ ht-degree: 6%
 
 对于基于文本的资产，智能标记的效果并不取决于资产中的文本数量，而取决于资产文本中存在的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后将其编入索引，用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用、结构化和更高优先级的搜索方面，与完整搜索索引相比，该方面用于改进资产发现。
 
-## 管理智能标记和资产搜索{#manage-smart-tags-and-searches}
+## 管理智能标记和资产搜索 {#manage-smart-tags-and-searches}
 
 您可以策划智能标记以删除可能分配给您的品牌资产的任何不准确标记，以便仅显示最相关的标记。
 
@@ -207,7 +207,7 @@ ht-degree: 6%
 
 1. 导航到资产的[!UICONTROL 属性]页面。 请注意，为您提升的标记分配了高相关性，因此，在搜索结果中显示的较高。
 
-### 了解使用智能标记{#understand-search}的[!DNL Experience Manager]搜索结果
+### 了解带有智能标记的[!DNL Experience Manager]搜索结果 {#understand-search}
 
 默认情况下，[!DNL Experience Manager]搜索将搜索词与`AND`子句组合在一起。 使用智能标记不会更改此默认行为。 使用智能标记可添加`OR`子句，以查找应用的智能标记中的任何搜索词。 例如，请考虑搜索`woman running`。 默认情况下，元数据中仅具有`woman`或仅具有`running`关键字的资产不会显示在搜索结果中。 但是，此类搜索查询中会显示使用智能标记标记为`woman`或`running`的资产。 所以搜索结果是，
 
