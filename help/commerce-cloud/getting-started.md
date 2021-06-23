@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
+source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ CIF附加组件（可选）仅适用于AdobeCommerce Enterprise / Cloud，它支
 
 有两个选项可配置端点：
 
-### 通过Cloud Manager UI（默认）{#cm-ui}
+### 通过Cloud Manager UI（默认） {#cm-ui}
 
 可以使用“环境详细信息”页面上的对话框来完成此操作。 查看启用了商务的程序的此页面时，如果当前未配置端点，则会显示一个按钮：
 
@@ -61,7 +61,7 @@ CIF附加组件（可选）仅适用于AdobeCommerce Enterprise / Cloud，它支
 
 ![CM环境信息](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 通过Adobe I/OCLI {#adobe-cli}
+### 通过Adobe I/OCLI  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -128,6 +128,9 @@ CIF附加组件和[CIF核心组件](https://github.com/adobe/aem-core-cif-compon
    >
    > 在Adobe商务(Magento)2.4.2中引入了对UID的支持。仅当您的商务后端支持版本2.4.2或更高版本的GraphQL架构时，才启用此功能。
 - 目录根类别标识符 — 存储目录根的标识符（UID或ID）
+   >[!CAUTION]
+   >
+   > 从CIF核心组件版本2.0.0开始，`id`支持已移除，并替换为`uid`。 如果您的项目使用CIF核心组件版本2.0.0，则必须启用“目录UID支持”，并使用有效的类别UID作为“目录根类别标识符”。
 
 上面显示的配置供参考。 项目应提供自己的配置。
 
