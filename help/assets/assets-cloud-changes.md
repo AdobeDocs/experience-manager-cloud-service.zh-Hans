@@ -4,14 +4,14 @@ description: 与[!DNL Adobe Experience Manager 6.5相比，对 [!DNL Adobe Exper
 feature: 发行信息
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 6%
+source-wordcount: '830'
+ht-degree: 5%
 
 ---
 
-# 对[!DNL Experience Manager Assets]作为[!DNL Cloud Service] {#notable-changes}的显着更改
+# 对[!DNL Experience Manager Assets]作为[!DNL Cloud Service]的显着更改 {#notable-changes}
 
 [!DNL Adobe Experience Manager] as a为管 [!DNL Cloud Service] 理Experience Manager项目提供了许多新功能和可能性。与[!DNL Experience Manager]作为[!DNL Cloud Service]的相比，[!DNL Experience Manager Assets]本地或作为Adobe托管服务的之间存在许多差异。 本文重点介绍了[!DNL Assets]功能的重要差异。
 
@@ -21,7 +21,7 @@ ht-degree: 6%
 * [用于云原生处理的资产微服务](#asset-microservices)。
 * [删除了经典 UI](#classic-ui).
 
-## 资产摄取和处理{#asset-ingestion}
+## 资产摄取、处理和分发 {#asset-ingestion-distribution}
 
 资产上传通过实现更好的摄取扩展、更快的上传、使用微服务加快处理以及批量摄取，从而优化了效率。 产品功能（Web用户界面、桌面客户端）已更新。 此外，这可能会影响一些现有的自定义设置。
 
@@ -33,9 +33,11 @@ ht-degree: 6%
    * 请参阅[配置和使用资产微服务](/help/assets/asset-microservices-configure-and-use.md)
    * 要在处理过程中执行自定义的工作流步骤，可以使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。
 
+* 无需任何转换即可交付二进制文件的网站组件可以使用直接下载。 SlingGETServlet已更新，允许开发人员默认执行此操作。 通过某些转换交付二进制文件的网站组件（例如，通过Servlet调整其大小）可以继续按原样运行。
+
 使用资产微服务生成的标准演绎版，使用相同的命名约定在资产存储库节点中以向后兼容的方式存储。
 
-## 开发和测试资产微服务{#asset-microservices}
+## 开发和测试资产微服务 {#asset-microservices}
 
 资产微服务使用云服务提供资产的可扩展且可复原的处理。 Adobe可管理云服务，以优化处理不同资产类型和处理选项。 资产微服务有助于避免使用第三方渲染工具和方法（如ImageMagick）并简化配置，同时为常见文件类型提供现成功能。 现在，您可以处理广泛的文件类型[](/help/assets/file-format-support.md)，这些文件类型的开箱即用格式比以前版本的Experience Manager所能处理的格式多。 例如，现在可以提取PSD和PSB格式的缩略图，而以前需要的第三方解决方案（如ImageMagick）就可以了。 不能将ImageMagick的复杂配置用于[!UICONTROL 处理配置文件]配置。 使用[!DNL Dynamic Media]进行高级FFmpeg视频转码，并使用处理配置文件进行MP4视频的[基本转码](/help/assets/manage-video-assets.md#transcode-video)。
 
@@ -43,8 +45,7 @@ ht-degree: 6%
 
 要对代码和流程（包括资产摄取和处理）进行端到端验证，请使用[管道](/help/implementing/cloud-manager/configure-pipeline.md)将代码更改部署到云开发环境，并通过完全执行资产微服务处理进行测试。
 
-
-## 与[!DNL Experience Manager] 6.5 {#cloud-service-feature-status}的功能对等性
+## 与[!DNL Experience Manager] 6.5的功能对等性 {#cloud-service-feature-status}
 
 [!DNL Experience Manager] as a为现 [!DNL Cloud Service] 有功能引入了许多新功能和更高性能的工作方式。但是，当从[!DNL Experience Manager] 6.5作为[!DNL Cloud Service]从[!DNL Experience Manager]移动到时，您可能会注意到某些功能的工作方式不同、不可用或部分可用。 以下是此类功能的列表。 此外，请参阅[已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)。
 
