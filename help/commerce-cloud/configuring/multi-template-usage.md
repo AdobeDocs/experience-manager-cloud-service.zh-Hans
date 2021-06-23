@@ -10,9 +10,9 @@ feature: 商务集成框架
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -26,3 +26,7 @@ ht-degree: 0%
 您可以从以下资源找到有关此主题的更多信息：
 
 - [AEM CIF核心组件 — 多目录页面配置](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+
+## 相关资源
+
+还可以动态定位页面的特定区域并重复使用同一模板。 了解如何使用关联的AEM内容](./enrich-product-associated-content.md)扩充产品数据。[
