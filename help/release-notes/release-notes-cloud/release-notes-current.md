@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1663'
 ht-degree: 2%
 
 ---
 
 
-# [!DNL Adobe Experience Manager]作为Cloud Service{#release-notes}的最新发行说明
+# [!DNL Adobe Experience Manager]作为Cloud Service的最新发行说明 {#release-notes}
 
 以下部分概述了作为Cloud Service的[!DNL Experience Manager]当前（最新）版本的常规发行说明。
 
@@ -26,13 +26,13 @@ ht-degree: 2%
 [!DNL Adobe Experience Manager]作为Cloud Service2021.5.0的发布日期是2021年5月27日。
 以下版本(2021.6.0)将于2021年6月24日发布。
 
-## 发行视频{#release-video}
+## 发行视频 {#release-video}
 
 请观看2021年5月版概述](https://video.tv.adobe.com/v/333602)视频，了解添加的功能摘要。[
 
 ## AEM as a A A Foundation( as aCloud Service基础) {#foundation}
 
-### AEM as a A A Cloud Foundation {#what-is-new-foundation}的新增功能
+### AEM as a A A Cloud的新增功能基础 {#what-is-new-foundation}
 
 * [预发行渠道](/help/release-notes/prerelease.md):在即将推出的功能投入生产之前，请预览该功能整整一个月！
 
@@ -42,13 +42,13 @@ ht-degree: 2%
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] {#what-is-new-sites}的新增功能
+### [!DNL Sites]的新增功能 {#what-is-new-sites}
 
 * 您很快将能够在新的[预览层](/help/sites-cloud/authoring/fundamentals/previewing-content.md)上验证内容，以像在发布层一样模拟最终体验外观。 这由AEM Sites托管发布向导启用，该向导现在允许您在发布或预览之间选择发布目标。 然后，可以通过专用URL访问预览体验。 验证“预览”后，内容可以照常从“创作”发布到“发布”。 在AEM as a Cloud Service环境中启用“预览服务”功能将在未来几周逐步推出。
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### 预发行渠道{#what-is-new-assets-prerelease}中的新增功能
+### 预发行渠道中提供的新增功能 {#what-is-new-assets-prerelease}
 
 * 元数据架构可以直接应用到文件夹属性。
 
@@ -60,51 +60,25 @@ ht-degree: 2%
 
    ![文件夹中的资产数量显示在界面上](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### 在[!DNL Assets] {#assets-bugs-fixed}中修复的错误
+### [!DNL Assets]中修复的错误 {#assets-bugs-fixed}
 
 * 上载超大文件会使[!DNL Experience Manager desktop app]崩溃。 (CQ-4320942)
 * 从文件夹中选择同一收藏集和从搜索结果中选择该收藏集时，工具栏选项会有所不同。 (CQ-4321406)
 
-#### [!DNL Dynamic Media] {#what-is-new-dm}的新增功能
+#### [!DNL Dynamic Media]的新增功能 {#what-is-new-dm}
 
 * 智能成像设备像素比(DPR)和网络带宽优化让您能够在具有高分辨率显示器和有限网络带宽的设备上高效地交付最佳质量的图像。 请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)。
 
-   >[!NOTE]
-   >
-   >上述智能成像增强功能的发布时间表是：
-   >
-   >* 2021年5月24日，北美，
-      >
-      >
-   * 欧洲、中东和非洲2021年6月25日，
-      >
-      >
-   * 亚太2021年7月19日。
-
-
-* 在[!DNL Dynamic Media]交付中引入了对下一代图像格式AVIF（fmt URL修饰符）的支持。
-
-   >[!NOTE]
-   >
-   >AVIF支持的发布时间表为：
-   >
-   >* 北美2021年5月10日，
-      >
-      >
-   * 欧洲、中东和非洲2021年5月24日，
-      >
-      >
-   * 亚太2021年6月24日。
-
+* 在[!DNL Dynamic Media]投放中引入了对下一代图像格式AVIF的支持（`fmt` URL修饰符）。 有关更多详细信息和时间轴，请参阅[图像提供和渲染API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)。
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] {#what-is-new-forms}的新增功能
+### [!DNL Forms]的新增功能 {#what-is-new-forms}
 
 * **上下文帮助**:为自适应表单编辑器、模板编辑器和主题编辑器添加了上下文帮助，以帮助作者更好地了解编辑器的各种功能。
 * **属性浏览器中的错误消息**:为自适应Forms属性浏览器中的每个属性添加了错误消息。这些消息有助于了解字段的允许值。
 
-### 即将推出的[!DNL Forms] {#what-is-new-forms-prerelease}测试版功能
+### 即将推出的[!DNL Forms]测试版功能 {#what-is-new-forms-prerelease}
 
 Output as a Cloud Service:输出服务可帮助您将XDP模板和XML数据结合起来，以生成各种格式的打印文档。 该服务允许您以同步和异步批处理模式生成文档。 通过输出服务，您可以创建应用程序，以便：
 
@@ -114,7 +88,7 @@ Output as a Cloud Service:输出服务可帮助您将XDP模板和XML数据结合
 
 您可以写信至formscsbeta@adobe.com注册测试版计划。
 
-### 在[!DNL Forms] {#forms-bugs-fixed}中修复的错误
+### [!DNL Forms]中修复的错误 {#forms-bugs-fixed}
 
 * 在AEM Forms工作流的“分配任务”步骤中，当您将操作按钮的默认图标替换为珊瑚图标时，工作流会停止工作并记录异常。 使用默认图标时，工作流会按预期执行。
 * 在布局层中，当更改列数、打开编辑层并将某些组件拖动到面板中时，自适应表单编辑器的内容区域中会开始出现正方形蓝框，且编辑器变得无响应。
@@ -238,7 +212,7 @@ AEM as a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6�
 * 修复了与内容传输工具UI中的自动刷新功能相关的多个错误。
 * 包含`wipe=true`的内容传输工具导致目标上的计数器索引不正确。 此问题已修复。
 
-## 商务附加组件{#cloud-services-commerce}
+## 商务附加组件 {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
