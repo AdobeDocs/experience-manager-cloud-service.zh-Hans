@@ -3,14 +3,14 @@ title: 为Adobe Experience Manager配置OSGi作为Cloud Service
 description: '具有密钥值和环境特定值的OSGi配置 '
 feature: 部署
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
+source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2927'
 ht-degree: 0%
 
 ---
 
-# 将Adobe Experience Manager的OSGi配置为Cloud Service{#configuring-osgi-for-aem-as-a-cloud-service}
+# 为Adobe Experience Manager配置OSGi作为Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [](https://www.osgi.org/) OSG是Adobe Experience Manager(AEM)技术堆栈中的一个基本元素。它用于控制AEM及其配置的复合包。
 
@@ -18,7 +18,7 @@ OSGi提供了标准化的基元，这些基元允许从可重用的小型协作�
 
 您可以通过AEM代码项目中的配置文件来管理OSGi组件的配置设置。
 
-## OSGi配置文件{#osgi-configuration-files}
+## OSGi配置文件 {#osgi-configuration-files}
 
 配置更改在AEM Project的代码包(`ui.apps`)中定义为运行模式特定配置文件夹下的配置文件(`.cfg.json`):
 
@@ -40,7 +40,7 @@ OSGi配置文件在以下位置定义：
 >
 >以前版本的AEM支持使用不同文件格式（如.cfg.、.config和XML sling:OsgiConfig资源定义）的OSGi配置文件。 这些格式已由cfg.json OSGi配置格式取代。
 
-## 运行模式分辨率{#runmode-resolution}
+## 运行模式分辨率 {#runmode-resolution}
 
 使用运行模式，可以将特定OSGi配置定位到特定AEM实例。 要使用运行模式，请在`/apps/example`下创建配置文件夹（例如，您的项目名称），格式为：
 
@@ -54,9 +54,13 @@ OSGi配置文件在以下位置定义：
 
 此规则的粒度处于PID级别。 这意味着您不能在`/apps/example/config.author/`中为同一PID定义某些属性，而在`/apps/example/config.author.dev/`中为同一PID定义更多特定属性。 具有最大匹配运行模式数的配置将对整个PID有效。
 
+>[!NOTE]
+>
+>`config.preview` OSGI配置文件夹&#x200B;**不能以与声明`config.publish`文件夹相同的方式声明**。 预览层而是会从发布层的值继承其OSGI配置。
+
 在本地开发时，可以传递运行模式启动参数，以指示使用哪种运行模式OSGI配置。
 
-## OSGi配置值的类型{#types-of-osgi-configuration-values}
+## OSGi配置值的类型 {#types-of-osgi-configuration-values}
 
 有三种OSGi配置值，可将Adobe Experience Manager用作Cloud Service。
 
@@ -94,7 +98,7 @@ OSGi配置文件在以下位置定义：
    }
    ```
 
-## 如何选择适当的OSGi配置值类型{#how-to-choose-the-appropriate-osgi-configuration-value-type}
+## 如何选择适当的OSGi配置值类型 {#how-to-choose-the-appropriate-osgi-configuration-value-type}
 
 OSGi的常见用例使用内联OSGi配置值。 特定于环境的配置仅用于开发环境中值不同的特定用例。
 
@@ -104,7 +108,7 @@ OSGi的常见用例使用内联OSGi配置值。 特定于环境的配置仅用�
 
 以下指南介绍了何时使用非机密和机密环境特定配置：
 
-### 何时使用内联配置值{#when-to-use-inline-configuration-values}
+### 何时使用内联配置值 {#when-to-use-inline-configuration-values}
 
 内联配置值被视为标准方法，应尽可能使用。 内联配置具有以下优势：
 
@@ -114,24 +118,24 @@ OSGi的常见用例使用内联OSGi配置值。 特定于环境的配置仅用�
 
 每当定义OSGi配置值时，请以内联值开头，并在用例中必要时只选择机密或特定于环境的配置。
 
-### 何时使用非机密环境特定配置值{#when-to-use-non-secret-environment-specific-configuration-values}
+### 何时使用非机密环境特定的配置值 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-当值在各个开发环境中有所不同时，仅将特定于环境的配置(`$[env:ENV_VAR_NAME]`)用于非机密配置值。 这包括本地开发实例和任何作为Cloud Service开发环境的Adobe Experience Manager。 避免将特定于环境的非机密配置用于Adobe Experience Manager作为Cloud Service阶段或生产环境。
+当预览层的值不同或开发环境不同时，仅将特定于环境的配置(`$[env:ENV_VAR_NAME]`)用于非机密配置值。 这包括本地开发实例和任何作为Cloud Service开发环境的Adobe Experience Manager。 除了为预览层设置唯一值之外，请避免将Adobe Experience Manager的非机密环境特定配置用作Cloud Service暂存或生产环境。
 
-* 仅对不同开发环境（包括本地开发实例）之间不同的配置值使用非机密环境特定配置。
-* 请改为在OSGi配置中为暂存值和生产非密钥值使用标准内联值。 关于此问题，不建议使用特定于环境的配置来便于在运行时对暂存和生产环境进行配置更改；应通过源代码管理引入这些更改。
+* 仅对发布层和预览层之间存在差异的配置值，或对于开发环境（包括本地开发实例）之间存在差异的值，使用非机密环境特定配置。
+* 除了预览层需要与发布层不同的情况外，在OSGi配置中为暂存值和生产非机密值使用标准内联值。 关于此问题，不建议使用特定于环境的配置来便于在运行时对暂存和生产环境进行配置更改；应通过源代码管理引入这些更改。
 
-### 何时使用特定于环境的机密配置值{#when-to-use-secret-environment-specific-configuration-values}
+### 何时使用特定于环境的机密配置值 {#when-to-use-secret-environment-specific-configuration-values}
 
 Adobe Experience Manager as aCloud Service要求将特定于环境的配置(`$[secret:SECRET_VAR_NAME]`)用于任何秘密OSGi配置值，例如密码、专用API密钥，或出于安全原因无法存储在Git中的任何其他值。
 
 使用特定于密钥环境的配置，将机密值存储在所有Adobe Experience Manager作为Cloud Service环境（包括暂存和生产环境）上。
 
-## 创建OSGi配置{#creating-sogi-configurations}
+## 创建OSGi配置 {#creating-sogi-configurations}
 
 创建OSGi配置的方法有两种，如下所述。 前一种方法通常用于配置自定义OSGi组件，这些组件具有开发人员所知的OSGi属性和值，后一种方法则用于AEM提供的OSGi组件。
 
-### 编写OSGi配置{#writing-osgi-configurations}
+### 编写OSGi配置 {#writing-osgi-configurations}
 
 JSON格式的OSGi配置文件可以直接手动写入AEM项目。 这通常是为知名OSGi组件创建OSGi配置的最快捷方式，尤其是由定义配置的相同开发人员设计和开发的自定义OSGi组件。 此方法还可用于在不同运行模式文件夹中复制/粘贴和更新同一OSGi组件的配置。
 
@@ -143,7 +147,7 @@ JSON格式的OSGi配置文件可以直接手动写入AEM项目。 这通常是�
 1. 保存对新`.cfg.json`文件所做的更改
 1. 将新的OSGi配置文件添加到Git并将其提交到Git
 
-### 使用AEM SDK快速入门{#generating-osgi-configurations-using-the-aem-sdk-quickstart}生成OSGi配置
+### 使用AEM SDK快速入门生成OSGi配置 {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 AEM SDK快速入门Jar的AEM Web Console可用于配置OSGi组件，以及将OSGi配置导出为JSON。 这对于配置AEM提供的OSGi组件非常有用，因为开发人员在AEM项目中定义OSGi配置时可能无法很好地了解这些组件的OSGi属性及其值格式。
 
@@ -170,9 +174,9 @@ AEM SDK快速入门Jar的AEM Web Console可用于配置OSGi组件，以及将OSG
 1. 将新的OSGi配置文件添加到Git并将其提交到Git。
 
 
-## OSGi配置属性格式{#osgi-configuration-property-formats}
+## OSGi配置属性格式 {#osgi-configuration-property-formats}
 
-### 内联值{#inline-values}
+### 内联值 {#inline-values}
 
 内联值采用标准JSON语法，以标准名称 — 值对格式设置。 例如：
 
@@ -184,7 +188,7 @@ AEM SDK快速入门Jar的AEM Web Console可用于配置OSGi组件，以及将OSG
 }
 ```
 
-### 特定于环境的配置值{#environment-specific-configuration-values}
+### 特定于环境的配置值 {#environment-specific-configuration-values}
 
 OSGi配置应为要根据环境定义的变量分配一个占位符：
 
@@ -198,7 +202,7 @@ use $[env:ENV_VAR_NAME]
 >
 >占位符不能用在[repoint语句](/help/implementing/deploying/overview.md#repoinit)中。
 
-### 密钥配置值{#secret-configuration-values}
+### 密钥配置值 {#secret-configuration-values}
 
 OSGi配置应为要根据环境定义的密钥分配一个占位符：
 
@@ -206,7 +210,7 @@ OSGi配置应为要根据环境定义的密钥分配一个占位符：
 use $[secret:SECRET_VAR_NAME]
 ```
 
-### 变量命名{#variable-naming}
+### 变量命名 {#variable-naming}
 
 以下内容适用于特定于环境的配置值和密钥配置值。
 
@@ -234,7 +238,7 @@ $[env:ENV_VAR_NAME;default=<value>]
 
 如果提供了默认值，则占位符将替换为每个环境的值（如果提供）或提供的默认值。
 
-### 本地开发{#local-development}
+### 地方发展 {#local-development}
 
 以下内容适用于特定于环境的配置值和密钥配置值。
 
@@ -250,17 +254,17 @@ export ENV_VAR_NAME=my_value
 
 例如，如果使用`$[secret:server_password]`，则必须创建名为&#x200B;**server_password**&#x200B;的文本文件。 所有这些密钥文件必须存储在同一目录中，并且框架属性`org.apache.felix.configadmin.plugin.interpolation.secretsdir`必须使用该本地目录进行配置。
 
-### 创作配置与发布配置{#author-vs-publish-configuration}
+### 创作配置与发布配置 {#author-vs-publish-configuration}
 
 如果OSGi属性要求创作值与发布值不同，则：
 
 * 必须使用单独的`config.author`和`config.publish` OSGi文件夹，如[运行模式分辨率部分](#runmode-resolution)中所述。
 * 创建独立变量名称时，应使用以下两个选项：
    * 第一个选项，建议使用：在声明为定义不同值的所有OSGi文件夹（如`config.author`和`config.publish`）中，使用相同的变量名称。 例如
-      `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值对应于该层（创作或发布）的默认值。通过[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或通过客户端设置环境变量时，请根据[ API参考文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)中所述，使用“service”参数区分不同层。 “service”参数将变量的值绑定到相应的OSGi层。
+      `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值对应于该层（创作或发布）的默认值。通过[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或通过客户端设置环境变量时，请根据[ API参考文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)中所述，使用“service”参数区分不同层。 “service”参数将变量的值绑定到相应的OSGi层。 它可以是“作者”、“发布”或“预览”。
    * 第二个选项，用于使用前缀（如`author_<samevariablename>`和`publish_<samevariablename>`）声明不同的变量
 
-### 配置示例{#configuration-examples}
+### 配置示例 {#configuration-examples}
 
 在以下示例中，除了暂存和生产环境之外，还假设有三个开发环境。
 
@@ -448,14 +452,14 @@ config.dev
 </tr>
 </table>
 
-## 用于设置属性{#cloud-manager-api-format-for-setting-properties}的Cloud Manager API格式
+## 用于设置属性的Cloud Manager API格式 {#cloud-manager-api-format-for-setting-properties}
 
 请参阅[此页面](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) ，了解如何配置API。
 >[!NOTE]
 >
 >确保使用的Cloud Manager API已分配角色“部署管理器 — Cloud Service”。 其他角色无法执行下面所有命令。
 
-### 通过API {#setting-values-via-api}设置值
+### 通过API设置值 {#setting-values-via-api}
 
 调用API会将新变量和值部署到云环境，类似于典型的客户代码部署管道。 创作和发布服务将重新启动并引用新值，通常需要几分钟时间。
 
@@ -483,7 +487,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >
 >有关详细信息，请参阅[此页面](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)。
 
-### 通过API {#getting-values-via-api}获取值
+### 通过API获取值 {#getting-values-via-api}
 
 ```
 GET /program/{programId}/environment/{environmentId}/variables
@@ -491,7 +495,7 @@ GET /program/{programId}/environment/{environmentId}/variables
 
 有关详细信息，请参阅[此页面](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables)。
 
-### 通过API {#deleting-values-via-api}删除值
+### 通过API删除值 {#deleting-values-via-api}
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -501,7 +505,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 有关详细信息，请参阅[此页面](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)。
 
-### 通过命令行{#getting-values-via-cli}获取值
+### 通过命令行获取值 {#getting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
@@ -511,13 +515,13 @@ MY_VAR2  secretString ****
 ```
 
 
-### 通过命令行{#setting-values-via-cli}设置值
+### 通过命令行设置值 {#setting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
 ```
 
-### 通过命令行{#deleting-values-via-cli}删除值
+### 通过命令行删除值 {#deleting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
@@ -527,11 +531,11 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 >
 >有关如何使用Cloud Manager插件配置Adobe I/OCLI值的详细信息，请参阅[此页面](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)。
 
-### 变量数{#number-of-variables}
+### 变量数 {#number-of-variables}
 
 每个环境最多可声明200个变量。
 
-## 有关特定于密钥和环境的配置值的部署注意事项{#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+## 有关密钥和特定于环境的配置值的部署注意事项 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
 由于特定于密钥和环境的配置值位于Git之外，因此不是正式的Adobe Experience Manager(作为Cloud Service部署机制)的一部分，因此客户应该将管理、管理和集成到Adobe Experience Manager(作为Cloud Service部署过程)中。
 
