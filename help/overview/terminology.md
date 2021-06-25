@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 简介 - 术语
 description: Adobe Experience Manager as a Cloud Service 简介 - 术语。
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '345'
+ht-degree: 97%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 100%
 |---|---|
 | Adobe 管道 | 将内容从创作层发布到发布层的机制。 |
 | AEM 创作层 | 描述站点和资产的创作环境。 |
+| AEM预览层 | 描述站点的预览环境。 |
 | AEM 发布层 | 描述站点的发布环境。 |
 
 
