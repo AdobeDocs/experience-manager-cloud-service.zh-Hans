@@ -4,9 +4,9 @@ description: 本文介绍了如何在AEM中创建、修改和使用搜索彩块�
 feature: 搜索，元数据
 role: Business Practitioner,Administrator
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2361'
 ht-degree: 34%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 34%
 
 例如，如果要查找图像，则可以选择想要位图还是矢量图像。 您可以通过为图像指定MIME类型，进一步缩小搜索范围。 同样，在搜索文档时，您可以指定格式，例如PDF或MS Word。
 
-## 添加谓词{#adding-a-predicate}
+## 添加谓词 {#adding-a-predicate}
 
 “筛选器”面板中显示的搜索彩块化在基础搜索表单中使用谓词进行定义。 要显示更多或不同的Facet，您可以向默认表单添加谓词，或使用包含您选择的Facet的自定义表单。
 
@@ -62,7 +62,7 @@ ht-degree: 34%
 1. 导航到资产用户界面中的搜索面板。属性谓词已添加到面板。
 1. 在文本框中输入对要搜索的资产的描述。例如，输入“Adobe”。执行搜索时，其描述与“Adobe”匹配的资产便会列在搜索结果中。
 
-## 添加“选项”谓词{#adding-an-options-predicate}
+## 添加“选项”谓词 {#adding-an-options-predicate}
 
 “选项”谓词允许您在“过滤器”面板中添加多个搜索选项。 您可以在过滤器面板中选择一个或多个选项来搜索资产。 例如，要根据文件类型搜索资产，请配置搜索表单中的“图像”、“多媒体”、“文档”和“存档”等选项。 配置这些选项后，当您在“过滤器”面板中选择“图像”选项时，会对GIF、JPEG、PNG等类型的资产执行搜索。
 
@@ -114,7 +114,7 @@ ht-degree: 34%
 1. 在&#x200B;**描述**&#x200B;字段中，输入可选描述，然后单击&#x200B;**[!UICONTROL 完成]**。
 1. 导航到“搜索”面板。“选项”谓词已添加到&#x200B;**搜索**&#x200B;面板。 **[!UICONTROL 文件类型]**&#x200B;的选项显示为复选框。
 
-## 添加多值属性谓词{#adding-a-multi-value-property-predicate}
+## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
 `Multi Value Property`谓词允许您搜索资产以查找多个值。 假设您在AEM Assets中拥有多个产品的图像，并且每个图像的元数据都包含与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
@@ -127,7 +127,7 @@ ht-degree: 34%
 1. 导航到 Assets 用户界面中的“过滤器”面板。**[!UICONTROL 多值属性]**&#x200B;谓词已添加到面板。
 1. 在由分隔符分隔的多值字段中指定多个值并执行搜索。 此谓词会获取与您指定的值精确匹配的文本。
 
-## 添加“标记”谓词{#adding-a-tags-predicate}
+## 添加“标记”谓词 {#adding-a-tags-predicate}
 
 `Tags`谓词允许您对资产执行基于标记的搜索。 默认情况下，AEM Assets会根据您指定的标记搜索资产中一个或多个标记匹配项。 换句话说，搜索查询使用指定的标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
 
@@ -272,17 +272,6 @@ ht-degree: 34%
     </ul> </td>
   </tr>
   <tr>
-   <td>评级</td>
-   <td>此搜索谓词用于根据资产的平均评级搜索资产 </td>
-   <td>
-    <ul>
-     <li>标签</li>
-     <li>属性名称</li>
-     <li>选项路径</li>
-     <li>描述</li>
-    </ul> </td>
-  </tr>
-  <tr>
    <td>到期状态</td>
    <td>此搜索谓词用于根据资产的到期状态搜索资产 </td>
    <td>
@@ -305,7 +294,7 @@ ht-degree: 34%
  </tbody>
 </table>
 
-## 恢复默认搜索彩块化{#restoring-default-search-facets}
+## 恢复默认搜索彩块化 {#restoring-default-search-facets}
 
 默认情况下，在&#x200B;**[!UICONTROL 搜索Forms]**&#x200B;页面的&#x200B;**[!UICONTROL 资产管理员搜索边栏]**&#x200B;之前，会显示锁图标。 如果您向该表单中添加搜索彩块化，该锁图标便会消失，以指示默认表单已被修改。
 
