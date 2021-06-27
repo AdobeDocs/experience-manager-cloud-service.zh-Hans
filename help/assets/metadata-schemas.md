@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 元数据
 role: Business Practitioner,Administrator
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 855b8b1de11e5f986948d3144104d6b5226c2dd5
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2557'
 ht-degree: 19%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 19%
 
    要修改资产的MIME类型，请使用自定义元数据架构表单或修改现有表单。 有关更多信息，请参阅[编辑元数据架构Forms](#edit-metadata-schema-forms)。 如果修改MIME类型的元数据架构，则会修改资产的属性页面布局和所有子类型。 例如，修改`default/image`下的jpeg架构仅会修改MIME类型为`image/jpeg`的资产的元数据布局（资产属性）。 但是，如果您编辑默认架构，则所做的更改将修改所有类型资产的元数据布局。
 
-## 元数据架构表单{#default-metadata-schema-forms}
+## 元数据架构表单 {#default-metadata-schema-forms}
 
 要查看表单或模板列表，请在[!DNL Experience Manager]界面中导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**。
 
@@ -53,7 +53,7 @@ ht-degree: 19%
 >
 >要查看架构表单的子表单，请单击架构表单名称。
 
-## 添加元数据架构表单{#add-a-metadata-schema-form}
+## 添加元数据架构表单 {#add-a-metadata-schema-form}
 
 要添加元数据架构表单，请执行以下步骤：
 
@@ -65,7 +65,7 @@ ht-degree: 19%
 
 1. 在对话框中，提供架构表单的标题，然后单击&#x200B;**[!UICONTROL 创建]**&#x200B;以完成表单创建过程。
 
-## 编辑元数据架构表单{#edit-metadata-schema-forms}
+## 编辑元数据架构表单 {#edit-metadata-schema-forms}
 
 您可以编辑新添加的或现有的元数据架构表单。 元数据架构表单包括选项卡和选项卡中的表单项目。 您可以将这些表单项目映射/配置到CRX存储库元数据节点中的字段。 您可以向元数据架构表单中添加选项卡或表单项目。 从父级派生的选项卡和表单项目处于锁定状态。 无法从子级别更改它们。
 
@@ -79,7 +79,7 @@ ht-degree: 19%
 
 1. 要配置组件，请选择该组件并在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中修改其属性。
 
-### [!UICONTROL 构建表单]选项卡{#components-within-the-build-form-tab}中的组件
+### [!UICONTROL 构建表单]选项卡中的组件 {#components-within-the-build-form-tab}
 
 **[!UICONTROL 构建表单]**&#x200B;选项卡列出了您在架构表单中使用的表单项目。 **[!UICONTROL 设置]**&#x200B;选项卡提供您在&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中选择的每个项目的属性。 下表列出了&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中可用的表单项目：
 
@@ -97,10 +97,13 @@ ht-degree: 19%
 | [!UICONTROL 资产引用对象] | 添加此组件可查看该资产所引用的其他资产的列表。 |
 | [!UICONTROL 资产引用] | 添加此组件可显示引用该资产的其他资产的列表。 |
 | [!UICONTROL 产品引用] | 添加此组件可显示与该资产关联的产品的列表。 |
-| [!UICONTROL 资产评级] | 添加以显示资产评级选项。 |
 | [!UICONTROL 上下文元数据] | 添加可控制资产属性页面中其他元数据选项卡的显示。 |
 
-#### 编辑元数据组件{#edit-the-metadata-component}
+<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
+-->
+
+#### 编辑元数据组件 {#edit-the-metadata-component}
 
 要编辑表单上元数据组件的属性，请在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中单击该组件以编辑以下所有属性或属性的子集。
 
@@ -136,11 +139,11 @@ ht-degree: 19%
 
 要在属性页面中显示除应用上下文元数据组件的选项卡之外的任何选项卡，请从列表中选择选项卡。 选项卡会添加到属性页面。
 
-### 在JSON文件{#specify-properties-in-json-file}中指定属性
+### 在JSON文件中指定属性 {#specify-properties-in-json-file}
 
 您还可以通过指定相应的键值对在 JSON 文件中定义选项，而不是为&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中的选项指定属性。在 **[!UICONTROL JSON 路径]**&#x200B;字段中指定 JSON 文件的路径。
 
-#### 在架构表单{#add-delete-a-tab-in-the-schema-form}中添加或删除选项卡
+#### 在架构表单中添加或删除选项卡 {#add-delete-a-tab-in-the-schema-form}
 
 通过架构编辑器，可以添加或删除选项卡。默认架构表单包括&#x200B;**[!UICONTROL Basic]**、**[!UICONTROL Advanced]**、**[!UICONTROL IPTC]**&#x200B;和&#x200B;**[!UICONTROL IPTC扩展]**&#x200B;选项卡。
 
@@ -150,7 +153,7 @@ ht-degree: 19%
 
 ![使用元数据架构编辑器添加或删除选项卡](assets/metadata-schema-form-new-tab.png)
 
-## 删除元数据架构表单{#deleting-metadata-schema-forms}
+## 删除元数据架构表单 {#deleting-metadata-schema-forms}
 
 AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
 
@@ -166,15 +169,15 @@ AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表�
 >* 无法删除[!DNL Assets]中的默认元数据架构表单。
 
 
-## MIME类型{#schema-forms-for-mime-types}的架构表单
+## MIME类型的架构表单 {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] 为各种开箱即用的MIME类型提供默认表单。但是，您可以为各种MIME类型的资产添加自定义表单。
 
-### 为MIME类型{#adding-new-forms-for-mime-types}添加新表单
+### 为MIME类型添加新表单 {#adding-new-forms-for-mime-types}
 
 在相应的表单类型下创建表单。 例如，要为`image/png`子类型添加模板，请在“image”表单下创建表单。 架构表单的标题是子类型名称。在这种情况下，标题为`png`。
 
-#### 对各种MIME类型{#use-an-existing-schema-template-for-various-mime-types}使用现有架构模板
+#### 对各种MIME类型使用现有架构模板 {#use-an-existing-schema-template-for-various-mime-types}
 
 您可以为不同的 MIME 类型使用现有模板。例如，对于MIME类型为`image/png`的资产，请使用`image/jpeg`表单。
 
@@ -201,11 +204,11 @@ AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表�
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## 授予对元数据架构{#grant-access-to-metadata-schemas}的访问权限
+## 授予对元数据架构的访问权限 {#grant-access-to-metadata-schemas}
 
 元数据架构功能仅适用于管理员。但是，管理员可以通过修改某些权限来向非管理员用户提供访问权限。 为非管理员用户提供对`/conf`文件夹的创建、修改和删除权限。
 
-## 应用特定于文件夹的元数据{#applying-folder-specific-metadata}
+## 应用特定于文件夹的元数据 {#applying-folder-specific-metadata}
 
 [!DNL Assets] 允许您定义元数据架构的变体，并将其应用到特定文件夹。
 
@@ -227,7 +230,7 @@ AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表�
 1. 单击&#x200B;**确定**&#x200B;以关闭成功消息。
 1. 导航到应用已修改元数据架构的文件夹。
 
-## 定义必需元数据{#defining-mandatory-metadata}
+## 定义必需元数据 {#defining-mandatory-metadata}
 
 您可以在文件夹级别定义必填字段，该字段对上传到该文件夹的资产强制执行。 如果您为之前定义的必填字段上传缺少元数据的资产，则卡片视图的资产中会显示缺少元数据的可视指示。
 
