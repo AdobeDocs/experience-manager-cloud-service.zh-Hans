@@ -4,9 +4,9 @@ description: 与[!DNL Adobe Experience Manager 6.5相比，对 [!DNL Adobe Exper
 feature: 发行信息
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
+source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 6%
 
 ---
@@ -59,8 +59,8 @@ ht-degree: 6%
 | 复合资产的子资产生成 | 不受支持. | 未满足相关用例。 例如，多页PDF文件的注释会受到影响。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 |
 | 主页 | 不受支持. | 请参阅[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 从ZIP存档提取资产 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP提取。 |
-| 资产评级 | 不受支持. | 不支持元数据架构编辑器中提供资产评级选项的小组件。 |
-| 经典 UI | 不受支持. | 只有触屏UI可用。 |
+| 资产评级 | 不受支持. | 不支持元数据架构编辑器中的评级小组件。 |
+| 经典 UI | 不受支持. | 只有启用了触屏的用户界面才可用。 |
 
 >[!MORELIKETHIS]
 >
