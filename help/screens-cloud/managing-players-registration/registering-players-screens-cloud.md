@@ -1,10 +1,7 @@
 ---
 title: 在屏幕中将播放器注册为Cloud Service
 description: 本页介绍如何在Screens中将播放器注册为Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 将屏幕中的播放器注册为Cloud Service{#registering-players-screens-cloud}
+# 在屏幕中将播放器注册为Cloud Service {#registering-players-screens-cloud}
 
 为Screens安装并配置播放器作为Cloud Service后，您必须注册播放器。
 
@@ -23,7 +20,7 @@ ht-degree: 1%
 * 了解如何注册播放器
 * 如何从Screens服务提供商处完成注册流程
 
-## 注册Screens播放器{#register-players}的步骤
+## 注册Screens播放器的步骤 {#register-players}
 
 将播放器作为Cloud Service安装到Screens后，您便可以从Screens服务提供商处注册您的播放器。
 
@@ -66,6 +63,6 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/player/register-player6.png)
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已经安装并配置了播放器以云模式，您应该继续将Screens作为Cloud Service历程，方法是接下来查看文档[将播放器分配给屏幕中的显示屏，作为Screens服务提供商的Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md)。
