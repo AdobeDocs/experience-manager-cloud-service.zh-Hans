@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
+source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2929'
 ht-degree: 40%
 
 ---
@@ -208,7 +208,7 @@ ht-degree: 40%
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 >[!NOTE]
->如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快摄取阶段。 有关更多详细信息，请参阅[使用AzCopy摄取] 。
+>如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快摄取阶段。 有关更多详细信息，请参阅[使用AzCopy摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 。
 
 1. 从&#x200B;*概述*&#x200B;页面中选择迁移集，然后单击&#x200B;**摄取**&#x200B;以开始摄取。 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**摄取**&#x200B;以开始摄取阶段。 否则其会将内容同时摄取到“创作”和“发布”。
 
