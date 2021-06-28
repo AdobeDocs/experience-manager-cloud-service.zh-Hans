@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c7cba6217ec960219c607b76ab7f2f096af7459a
+source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 2%
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 * 智能成像设备像素比(DPR)和网络带宽优化让您能够在具有高分辨率显示器和有限网络带宽的设备上高效地交付最佳质量的图像。 请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)。
 
-* 在[!DNL Dynamic Media]投放中引入了对下一代图像格式AVIF的支持（`fmt` URL修饰符）。 有关更多详细信息和时间轴，请参阅[图像提供和渲染API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)。
+* 在[!DNL Dynamic Media]投放中引入了对下一代图像格式AVIF的支持（`fmt` URL修饰符）。 有关更多详细信息和时间轴，请参阅[图像提供和渲染API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)。
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
