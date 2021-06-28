@@ -2,9 +2,9 @@
 title: 预览内容
 description: 了解如何在上线之前使用AEM预览服务预览内容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ AEM提供了“站点预览”服务，旨在让开发人员和内容作者在�
 
 1. 单击&#x200B;**Next**，然后单击&#x200B;**Publish**&#x200B;以确认。
 
-请参阅预览内容，将&#x200B;**preview**&#x200B;附加到生产实例的发布URL。 URL的构建方式如下：
+1. 将显示一个对话框，用于在“预览”环境中访问内容的URL。
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   或者，要查看预览内容，您还可以将&#x200B;**preview**&#x200B;附加到生产实例的发布URL。
+
+   URL的构建方式如下：
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 有关如何获取环境URL的更多信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)。
 
