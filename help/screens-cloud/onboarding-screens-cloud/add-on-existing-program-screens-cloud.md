@@ -1,10 +1,7 @@
 ---
 title: 在Cloud Manager中将Screens附加组件添加到现有项目
 description: 本页介绍如何在Cloud Manager中将Screens加载项作为Cloud Service添加到现有项目。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 在Cloud Manager {#adding-screens-program}中向现有程序添加Screens附加组件
+# 在Cloud Manager中将Screens附加组件添加到现有项目 {#adding-screens-program}
 
 本节介绍如何在Cloud Manager中将Screens作为现有项目的加载项进行添加。
 
@@ -23,7 +20,7 @@ ht-degree: 1%
 
 通过以下步骤，您将了解如何在Cloud Manager中将Screens加载项添加到现有项目。
 
-## 在Cloud Manager {#edit-programs-screens-cloud}中向现有程序添加Screens加载项的步骤
+## 在Cloud Manager中向现有项目添加Screens加载项的步骤 {#edit-programs-screens-cloud}
 
 请按照以下步骤将Screens作为现有项目的加载项进行添加：
 
@@ -45,6 +42,6 @@ ht-degree: 1%
 
 1. 选择选项后，单击&#x200B;**Update**。
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 在了解如何将Screens作为现有Cloud Manager项目的加载项添加，并在Cloud Manager的“程序和产品”下看到您的项目后，您现在可以继续进入入门流程的下一步，即[在Cloud Manager中为项目创建分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)。
