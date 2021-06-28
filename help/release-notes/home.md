@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: f4d646e3898f568d17cfb09bd2974fc55a1260c4
+source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 44%
@@ -13,11 +13,11 @@ ht-degree: 44%
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2021.05.0 |
+| 版本 | 2021.06.0 |
 | 类型 | 持续更新 |
 | 发行日期 | 持续更新 |
 
-## 如何准备{#how-to-prepare}版本
+## 如何准备发行 {#how-to-prepare}
 
 以[!DNL Adobe Experience Manager]中的连续发布模型作为Cloud Service，应用程序会持续自动更新。 更新分为两种类型：功能发布和关键更新：
 
