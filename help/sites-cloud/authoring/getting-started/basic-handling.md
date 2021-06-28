@@ -2,9 +2,9 @@
 title: 基本操作
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2881'
 ht-degree: 98%
 
 ---
@@ -56,7 +56,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 这些面板中的可用选项如下所述。
 
-### “导航”面板  {#navigation-panel}
+### “导航”面板 {#navigation-panel}
 
 “导航”面板：
 
@@ -74,7 +74,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 | 资产 | 通过“资产”控制台，您可以导入和管理[数字资产，如图像、视频、文档和音频文件](/help/assets/overview.md)。 随后，这些资产便可由同一 AEM 实例上运行的任何站点使用。您还可以从资产控制台中创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 个性化 | 此控制台为[创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md)提供了一个工具框架。 |
 
-## “工具”面板{#tools-panel}
+## “工具”面板 {#tools-panel}
 
 在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。“工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
@@ -207,7 +207,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
    * [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
-## “操作”工具栏{#actions-toolbar}
+## “操作”工具栏 {#actions-toolbar}
 
 每当选择资源（例如一个页面或资产）时，工具栏中都会显示一些包含说明性文本的图标以指示各种操作。这些操作取决于以下要素：
 
@@ -226,7 +226,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 >[!NOTE]
 各个可用图标根据相应控制台/功能/方案提供。
 
-## 快速操作  {#quick-actions}
+## 快速操作 {#quick-actions}
 
 在[卡片视图](#card-view)中，某些操作以快速操作图标的形式呈现，同时也在工具栏中提供。快速操作图标一次只能用于一个项目，因此无需预先选择。
 
@@ -247,7 +247,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 >[!NOTE]
 默认情况下，AEM Assets 不会在 UI 中将资产的原始呈现版本显示为任何视图中的缩略图。如果您是管理员，可以使用叠加来配置 AEM Assets，以将原始呈现版本显示为缩略图。
 
-### 选择资源  {#selecting-resources}
+### 选择资源 {#selecting-resources}
 
 选择特定的资源取决于视图和设备的组合：
 
@@ -317,7 +317,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
    * 页面所基于的模板
    * 修改详细信息
    * 页面语言
-   * 发布详细信息
+   * 发布和预览详细信息
 
 
 ### 卡片视图 {#card-view}
@@ -363,6 +363,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
    * **名称** - 页面名称，在多语言创作环境中非常有用，因为它是页面 URL 的一部分，无论用户使用何种语言，都不会发生更改
    * **修改时间** - 上次修改日期和上次修改用户
    * **发布时间** - 发布状态
+   * **预览**  — 预览状态
    * **模板** - 页面所基于的模板
    * **工作流** - 当前应用于页面的工作流。当您鼠标悬停或打开时间轴时，会提供更多信息。
    * **页面分析**
