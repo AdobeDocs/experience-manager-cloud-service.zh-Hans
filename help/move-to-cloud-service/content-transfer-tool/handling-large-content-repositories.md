@@ -1,7 +1,7 @@
 ---
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -134,7 +134,6 @@ AzCopy会在后续运行中自动跳过在错误之前复制的任何Blob，而�
 随着内容传输工具1.5.4的发布，我们为创作摄取添加了AzCopy支持。
 
 >[!NOTE]
->
 > 建议先单独运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
 
 要在摄取期间利用AzCopy，我们要求您以至少为2021.6.5561版的AEMCloud Service版本的形式使用。
