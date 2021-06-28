@@ -1,10 +1,7 @@
 ---
 title: 创建分支
 description: 本页介绍如何在Cloud Manager中为Screens创建分支作为Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f1a21aa8ff832bd8fa460a2ef8013b8e3d1acfde
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# 在Cloud Manager中创建分支{#create-branch-screens-cloud}
+# 在Cloud Manager中创建分支 {#create-branch-screens-cloud}
 
 本节介绍如何在Cloud Manager中为项目创建分支。
 
@@ -23,7 +20,7 @@ ht-degree: 2%
 
 以下部分介绍如何使用向导在Cloud Manager中为程序创建分支。
 
-## 在Cloud Manager {#steps-branch-creation}中为Screens项目创建分支的步骤
+## 在Cloud Manager中为Screens项目创建分支的步骤 {#steps-branch-creation}
 
 1. 导航到Cloud Manager，然后选择图标以转到Cloud Manager概述页面。
 
@@ -43,6 +40,6 @@ ht-degree: 2%
 
    ![图像](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 在Cloud Manager中了解如何为项目创建分支后，您现在可以继续进入载入流程的下一步，即[创建和设置环境](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)。
