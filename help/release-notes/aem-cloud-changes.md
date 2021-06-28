@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 82%
+source-wordcount: '819'
+ht-degree: 81%
 
 ---
 
@@ -114,4 +114,4 @@ AEM 云服务中不能使用其他运行模式或自定义运行模式。
 
 ## 资产处理和交付 {#asset-handling}
 
-资产上传、处理和下载在Experience Manager资产作为Cloud Service时进行了优化。 它现在更高效，可实现更大的扩展，并加快上传和下载速度。 此外，它还会影响现有的自定义代码和某些操作。 请参阅对 [!DNL Assets]](/help/assets/assets-cloud-changes.md)的[更改。
+在[!DNL Experience Manager Assets]中，资产上传、处理和下载已优化为[!DNL Cloud Service]。 [!DNL Assets] 现在更高效，可进行更大的扩展，并且允许您以更快的速度上传和下载。此外，它还会影响现有的自定义代码和某些操作。 有关更改列表以及与[!DNL Experience Manager] 6.5功能对等的信息，请参阅[对 [!DNL Assets]](/help/assets/assets-cloud-changes.md)的更改。
