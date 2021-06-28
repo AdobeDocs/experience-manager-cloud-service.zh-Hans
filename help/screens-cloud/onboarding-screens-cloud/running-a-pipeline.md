@@ -1,10 +1,7 @@
 ---
 title: 运行管道
 description: 本页介绍如何在Cloud Manager中将Screens作为Cloud Service项目运行管道。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# 在Cloud Manager {#run-pipeline-screens-cloud}中为屏幕作为Cloud Service程序运行管道
+# 在Cloud Manager中运行屏幕作为Cloud Service程序的管道 {#run-pipeline-screens-cloud}
 
 本节介绍如何在Cloud Manager中运行管道并为程序部署代码。
 
@@ -23,7 +20,7 @@ ht-degree: 2%
 
 以下部分介绍如何在Cloud Manager中配置CI/CD管道并为程序部署代码。
 
-## 在Cloud Manager {#steps-branch-creation}中为Screens项目运行管道的步骤
+## 在Cloud Manager中为Screens项目运行管道的步骤 {#steps-branch-creation}
 
 1. 环境设置成功完成后，您将在Cloud Manager的&#x200B;**概述**&#x200B;页面中看到行动动员卡更新。
 
@@ -57,6 +54,6 @@ ht-degree: 2%
 
    ![图像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 在Cloud Manager中了解如何为程序设置环境后，您现在可以继续进入载入过程的下一步，即[导航到Screens服务提供商](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)。
