@@ -1,9 +1,10 @@
 ---
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
+source-git-commit: 269ef355e10acd99e9cfcb9cac9e676b079a7ecb
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
@@ -24,10 +25,10 @@ ht-degree: 2%
 | 注意事项 | 当前支持的内容 |
 |--- |--- |
 | AEM 版本 | 内容传输工具只能在AEM 6.3或更高版本上运行。 要将内容传输工具与AEM 6.2或更早版本结合使用，需要将内容存储库就地升级到AEM 6.5。 无需将代码升级到AEM 6.5即可实现此目的。 |
-| 区段存储的大小 | 内容传输工具当前支持&#x200B;*Author*&#x200B;上最多83 GB，在&#x200B;*Publish*&#x200B;上最多31 GB。 |
-| 内容存储库的总大小&#x200B;<br>*（区段存储+数据存储）* | 内容传输工具可传输多达10 TB的内容。 当前不支持任何高于10 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于10 TB的内容选项。 |
-| 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径（如`“/etc”`）中的内容。 允许选择某些`"/etc"`路径，但仅支持[AEM Forms到AEM Forms作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)。 有关所有其他用例，请参阅[通用存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) ，了解有关存储库重组的更多信息。 |
+| 区段存储的大小 | 当前支持&#x200B;*Author*&#x200B;上最高83 GB， *Publish*&#x200B;上最高31 GB。 与Adobe客户关怀团队一起创建支持票证，以讨论区段存储大小超过这些限制的选项。 |
+| 内容存储库的总大小&#x200B;<br>*（区段存储+数据存储）* | 内容传输工具旨在为文件数据存储类型的数据存储传输高达10 TB的内容。 当前不支持任何高于10 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于10 TB的内容选项。 对于Amazon S3和Azure数据存储类型的数据存储，可使用可选的预复制步骤来显着加快内容传输过程并支持大于10TB的数据存储大小。 |
+| 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径中的内容。 要从`/etc`传输内容，只允许选择某些`"/etc"`路径，但仅支持将[AEM Forms作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)传输到AEM Forms。 有关所有其他用例，请参阅[通用存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) ，了解有关存储库重组的更多信息。 |
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请在使用内容传输工具时参阅[其他最佳实践和注意事项](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)。
