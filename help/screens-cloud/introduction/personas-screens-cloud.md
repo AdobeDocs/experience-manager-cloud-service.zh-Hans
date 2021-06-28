@@ -1,10 +1,7 @@
 ---
 title: AEM Screens as aCloud Service中的角色定义
 description: 本页介绍了作为Cloud Service在AEM Screens中的角色定义。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 65b7bc7d911a80fa1ae03dc83eb49956b283a050
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# 角色定义{#role-definitions}
+# 角色定义 {#role-definitions}
 
 典型的AEM Screens项目涉及各种角色。 以下详细信息可帮助您确定项目所需的角色。
 
