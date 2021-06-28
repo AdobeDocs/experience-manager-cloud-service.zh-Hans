@@ -1,10 +1,7 @@
 ---
 title: 创建分支
 description: 本页介绍如何在Cloud Manager中为Screens创建分支作为Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 在Cloud Manager {#create-environment-screens-cloud}中创建环境
+# 在Cloud Manager中创建环境 {#create-environment-screens-cloud}
 
 本节介绍如何在Cloud Manager中为项目创建环境。
 
@@ -23,7 +20,7 @@ ht-degree: 1%
 
 以下部分介绍如何在Cloud Manager中为项目创建环境。
 
-## 在Cloud Manager {#steps-branch-creation}中为Screens项目创建环境的步骤
+## 在Cloud Manager中为Screens项目创建环境的步骤 {#steps-branch-creation}
 
 项目创建成功完成后，您将在Cloud Manager的概述页面中看到行动动员卡更新。
 
@@ -41,7 +38,7 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 在Cloud Manager中了解如何为程序设置环境后，您现在可以继续进入载入流程的下一步，即[运行管道](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)。
 
