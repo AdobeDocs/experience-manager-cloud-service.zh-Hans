@@ -1,10 +1,7 @@
 ---
 title: 在Screens中创建项目作为Cloud Service
 description: 本页介绍如何在Screens中创建项目作为Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# 在Screens中创建和管理项目作为Cloud Service{#creating-project-screens-cloud}
+# 在Screens中创建和管理项目作为Cloud Service {#creating-project-screens-cloud}
 
 在Screens中作为Cloud Service实施新项目的第一步是创建新项目。
 
@@ -20,14 +17,14 @@ ht-degree: 0%
 
 本文档可帮助您了解如何在Screens内容提供程序中创建新的AEM Screens项目。 阅读后，您应该能够在范围方面创建AEM Screens项目。
 
-## 创建新项目{#create-new-project}
+## 创建新项目 {#create-new-project}
 
 请按照以下步骤在Screens中作为Cloud Service创建新项目：
 
 1. 导航到Screens内容提供商。
 
    >[!NOTE]
-   >请参阅[使用Screens内容提供程序](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) ，了解如何访问Screens内容提供程序以创建项目。
+   >请参阅[使用Screens内容提供程序] ，了解如何访问Screens内容提供程序以创建项目。
 
 1. 单击操作栏右上角的&#x200B;**创建屏幕项目**。
 
@@ -46,7 +43,7 @@ ht-degree: 0%
 
    现在，您已设置AEM Screens项目，接下来可以开始向项目添加渠道和位置。
 
-### 删除现有项目{#deleting-project}
+### 删除现有项目 {#deleting-project}
 
 您可以删除现有的Screens作为Cloud Service项目。
 请按照以下步骤从Screens内容提供商中删除现有项目：
@@ -62,6 +59,6 @@ ht-degree: 0%
    >[!NOTE]
    >您可以选择多个项目，因此可以在一个步骤中删除多个项目。
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
-现在，您已设置AEM Screens项目，接下来可以创建新渠道并向渠道中添加内容。 请参阅[创建和管理渠道](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md) ，了解如何在渠道中创建和管理内容。
+现在，您已设置AEM Screens项目，接下来可以创建新渠道并向渠道中添加内容。 请参阅[创建和管理渠道] ，了解如何在渠道中创建和管理内容。
