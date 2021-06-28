@@ -1,10 +1,7 @@
 ---
 title: 将渠道作为Cloud Service分配到Screens中的显示屏
 description: 本页介绍如何将渠道分配给Screens中的显示屏作为Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
@@ -12,7 +9,7 @@ ht-degree: 19%
 ---
 
 
-# 将渠道作为Cloud Service{#assign-channel-displays-screens-cloud}分配给Screens中的显示屏
+# 将渠道作为Cloud Service分配到Screens中的显示屏 {#assign-channel-displays-screens-cloud}
 
 项目设置完成后，必须将渠道分配给显示屏来查看内容。
 
@@ -27,7 +24,7 @@ ht-degree: 19%
 * 创建和管理显示屏
 * 创建和管理渠道
 
-## 将渠道分配给显示屏{#assign-channel-to-display}的步骤
+## 将渠道分配给显示屏的步骤 {#assign-channel-to-display}
 
 请按照以下步骤为显示屏分配渠道：
 
@@ -69,6 +66,6 @@ ht-degree: 19%
    ![图像](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已经将渠道分配给显示屏，接下来应继续将屏幕作为Cloud Service历程，方法是查看文档[安装和配置AEM的Screens播放器作为Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)。
