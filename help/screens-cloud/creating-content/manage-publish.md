@@ -1,10 +1,7 @@
 ---
 title: 在Screens中将渠道作为Cloud Service发布
 description: 本页介绍如何在Screens中将渠道作为Cloud Service发布。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
+source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# 以{#publish-channel-screens-cloud}的形式发布Screens中的Cloud Service
+# 在Screens中将渠道作为Cloud Service发布 {#publish-channel-screens-cloud}
 
 ## 简介 {#introduction}
 
@@ -28,7 +25,7 @@ ht-degree: 0%
 * 了解如何发布渠道
 * 按范围管理发布
 
-## 发布渠道{#publish-channel}的步骤
+## 发布渠道的步骤 {#publish-channel}
 
 按照以下步骤发布渠道：
 
@@ -50,6 +47,6 @@ ht-degree: 0%
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已在项目中发布了渠道，接下来应继续将Screens作为Cloud Service历程，方法是接下来查看文档[在Screens中安装和配置播放器作为Cloud Service](/help/screens-cloud/creating-content/manage-publish.md)。
