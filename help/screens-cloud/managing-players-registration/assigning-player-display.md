@@ -1,10 +1,7 @@
 ---
 title: 将播放器分配到屏幕中的显示屏作为Cloud Service
 description: 本页介绍如何在Screens中将播放器分配为显示屏作为Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 将播放器作为Cloud Service{#assign-player-displays-screens-cloud}分配到Screens中的显示屏
+# 将播放器分配到屏幕中的显示屏作为Cloud Service {#assign-player-displays-screens-cloud}
 
 项目设置完成后，必须将播放器分配给显示屏来查看内容。
 
@@ -20,7 +17,7 @@ ht-degree: 1%
 
 本文档可帮助您了解如何在Screens服务提供商中将播放器分配给显示屏。 这些是内容开始在Screens中作为Cloud Service播放器播放之前的最后强制步骤。
 
-## 将播放器分配给显示器的步骤{#create-display}
+## 将播放器分配给显示屏的步骤 {#create-display}
 
 注册播放器后，必须将播放器分配给必要的显示，以便内容开始在播放器中播放。
 
@@ -34,7 +31,7 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/player/register-player8.png)
 
-## 内容播放{#content-playback}
+## 内容播放 {#content-playback}
 
 在将显示内容分配给播放器后（如前一节中所示），您将在&#x200B;**ASSIGNED DISPLAY**&#x200B;面板下看到已分配的显示内容。
 
