@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
 workflow-type: tm+mt
-source-wordcount: '2785'
-ht-degree: 42%
+source-wordcount: '2907'
+ht-degree: 40%
 
 ---
 
@@ -157,6 +157,8 @@ ht-degree: 42%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="增补提取"
 
 请按照以下步骤从内容传输工具中提取迁移集：
+>[!NOTE]
+>如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快提取阶段。 为此，您需要在运行提取之前配置azcopy.config文件。 有关更多详细信息，请参阅[处理大内容存储库]。
 
 1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**提取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集提取**&#x200B;对话框，然后单击&#x200B;**提取**&#x200B;以开始提取阶段。
 
@@ -196,7 +198,7 @@ ht-degree: 42%
    >
    >![图像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
-### 内容传输中的摄取流程{#ingestion-process}
+### 内容传输中的摄取流程 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -205,8 +207,13 @@ ht-degree: 42%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="增补摄取"
 
 请按照以下步骤从内容传输工具中摄取迁移集：
+>[!NOTE]
+>如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快摄取阶段。 有关更多详细信息，请参阅[使用AzCopy摄取] 。
 
-1. 从&#x200B;*概述*&#x200B;页面中选择一个迁移集，然后单击&#x200B;**摄取**&#x200B;以开始提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**摄取**&#x200B;以开始摄取阶段。 否则其会将内容同时摄取到“创作”和“发布”。
+1. 从&#x200B;*概述*&#x200B;页面中选择迁移集，然后单击&#x200B;**摄取**&#x200B;以开始摄取。 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**摄取**&#x200B;以开始摄取阶段。 否则其会将内容同时摄取到“创作”和“发布”。
+
+   >[!IMPORTANT]
+   >如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
 
    >[!IMPORTANT]
    >启用&#x200B;**在摄取**&#x200B;之前擦除云实例上的现有内容选项后，它将删除整个现有存储库并创建新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到&#x200B;**administrators**&#x200B;组的管理员用户，也是如此。
