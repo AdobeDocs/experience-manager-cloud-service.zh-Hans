@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 58%
+source-wordcount: '1930'
+ht-degree: 57%
 
 ---
 
@@ -157,7 +157,7 @@ ht-degree: 58%
 
 ### 云服务 {#cloud-services}
 
-* **云服务配置**  — 为云服务定义属性
+* **Cloud Service配置**  — 为云服务定义属性
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -217,6 +217,12 @@ ht-degree: 58%
    * **Live Copy继承**  — 如果选中此选项，则Live Copy配置对所有子项都有效
    * **从父项继承转出配置**  — 如果选中此选项，则转出配置将从页面的父项继承
    * **选择转出配置**  — 定义将从Blueprint传播修改的情况，并且仅在未选择从父项继承转出配 **置时** 可用
+
+### 预览 {#preview}
+
+启用预览环境后，您将看到：
+
+* 预览URL — 用于访问预览环境中内容的URL
 
 ## 编辑页面属性 {#editing-page-properties-1}
 
