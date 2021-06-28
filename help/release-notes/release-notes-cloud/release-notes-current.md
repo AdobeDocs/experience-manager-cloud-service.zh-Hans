@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -154,5 +154,25 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
 * 商务核心组件支持Adobe商务Sensei Recs数据收集
 * 改进了类别页面的SEO友好URL
 * 支持每个站点/配置的自定义HTTP标头
+
+## 内容传输工具 {#content-transfer-tool}
+
+### 发布日期 {#release-date-ctt-latest}
+
+内容传输工具v1.5.4的发布日期是2021年6月28日。
+
+### 新增功能 {#what-is-new-ctt-latest}
+
+* 支持添加了可选的[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)步骤以与CTT一起使用。 当将源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储时，可以使用预复制步骤显着加快内容传输活动的提取和摄取阶段。
+
+* 向CTT添加了护栏，以防止用户在摄取阶段期间数据到达关键点时停止摄取，并可能损坏数据。
+
+* 提取日志更具描述性，可帮助进行疑难解答。
+
+* 在UI中添加了更具描述性的摄取状态消息。
+
+### 错误修复 {#bug-fixes-ctt-latest}
+
+* 在创作实例上停止摄取时，UI会将之前在发布实例上完成的摄取从`FINISHED`覆盖到`STOPPED`。 此问题已修复。
 
 
