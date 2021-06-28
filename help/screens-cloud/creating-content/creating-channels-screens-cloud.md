@@ -1,10 +1,7 @@
 ---
 title: 在Screens中创建和管理渠道作为Cloud Service
 description: 本页介绍如何在Screens中作为Cloud Service创建和管理渠道。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 7%
@@ -12,7 +9,7 @@ ht-degree: 7%
 ---
 
 
-# 在Screens中创建和管理渠道作为Cloud Service{#creating-channels-screens-cloud}
+# 在Screens中创建和管理渠道作为Cloud Service {#creating-channels-screens-cloud}
 
 创建AEM Screens项目后，必须创建渠道。
 ***渠道***、显示一系列内容（图像和视频）、网站或单页应用程序。
@@ -24,7 +21,7 @@ ht-degree: 7%
 * 了解如何创建Screens内容提供商的渠道
 * 管理和编辑渠道中的内容
 
-## 在Screens中作为Cloud Service创建新序列渠道的步骤{#create-new-channel}
+## 在Screens中作为Cloud Service创建新序列渠道的步骤 {#create-new-channel}
 
 >[!NOTE]
 >**前提条件**
@@ -54,7 +51,7 @@ ht-degree: 7%
 
    创建渠道后，您现在可以向渠道中添加内容。 请参阅[向渠道添加内容](#add-content) ，了解如何向渠道添加资产（图像/视频）。
 
-## 管理渠道{#managing-channels}
+## 管理渠道 {#managing-channels}
 
 您可以编辑、复制、预览和删除渠道，以及查看渠道属性和功能板。
 
@@ -62,7 +59,7 @@ ht-degree: 7%
 
 ![](/help/screens-cloud/assets/create-content/channelprop1.png)
 
-### 向渠道{#add-content}添加内容
+### 向渠道添加内容 {#add-content}
 
 要在渠道中添加或编辑内容，请按照以下步骤操作：
 
@@ -80,7 +77,7 @@ ht-degree: 7%
    >单击&#x200B;**预览**以预览渠道的内容。
    >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
-## 创建向导{#available-templates}中的可用模板
+## 创建向导中的可用模板 {#available-templates}
 
 使用&#x200B;**创建**&#x200B;渠道向导时，可以使用以下模板：
 
@@ -91,6 +88,6 @@ ht-degree: 7%
 | 左或右L条分屏渠道 | 允许内容作者在大小适当的区域中查看不同类型的资产。 |
 
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已在项目中设置AEM Screens渠道，因此需要发布渠道。 在从Screens服务提供商管理您的播放器之前，请参阅[以Cloud Service身份发布Screens中的渠道](/help/screens-cloud/creating-content/manage-publish.md)。
