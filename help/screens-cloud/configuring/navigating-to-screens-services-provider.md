@@ -1,10 +1,7 @@
 ---
 title: 导航到Screens服务提供商
 description: 本页介绍如何导航到Screens服务提供商。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 导航到Screens服务提供商{#setup-screens-services-provider}
+# 导航到Screens服务提供商 {#setup-screens-services-provider}
 
 ## 简介 {#introduction}
 
@@ -25,7 +22,7 @@ ht-degree: 1%
 
 以下部分介绍如何配置和设置Screens服务提供商。
 
-## 设置Screens服务提供商{#screens-services-provider}的步骤
+## 设置Screens服务提供商的步骤 {#screens-services-provider}
 
 请按照以下步骤设置Screens服务提供商：
 
@@ -42,7 +39,7 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/configure/configure-screens2.png)
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 了解如何设置Screens服务提供商后，您可以导航到[使用Screens内容提供商](/help/screens-cloud/configuring/using-screens-content-provider.md)，以获取更多详细信息。
 
