@@ -2,9 +2,9 @@
 title: 复制
 description: 分发 和复制故障排除。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 4%
 
 ---
@@ -34,6 +34,10 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 ![OSGi On Off触发器配置](/help/operations/assets/replication-on-off-trigger.png)
 
 ### 树激活 {#tree-activation}
+
+>[!NOTE]
+>
+>此方法应视为已弃用，因为它不会保留状态，且与其他方法相比，其可扩展性较差。 Adobe的建议是改用管理发布或工作流方法
 
 要执行树激活，请执行以下操作：
 
