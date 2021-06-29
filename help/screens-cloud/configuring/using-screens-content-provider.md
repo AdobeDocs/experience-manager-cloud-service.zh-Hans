@@ -1,9 +1,9 @@
 ---
 title: 使用Screens内容提供程序
 description: 本页介绍如何使用Screens内容提供程序创建内容。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: ffeb82345ad2fe243e09f227d495afca70da5977
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '220'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 目标 {#objective}
 
-以下部分介绍在设置Screens服务提供程序后，如何使用Screens内容提供程序。
+以下部分介绍在设置[Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)后如何使用Screens内容提供程序。
 
 ## 使用Screens内容提供程序 {#screens-content-provider}
 
@@ -25,7 +25,9 @@ ht-degree: 2%
 >**先决条件**
 >在您开始阅读此部分之前，请参阅[设置Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)以了解如何从Screens服务提供程序导航到此用户界面。
 
-登录Screens内容提供程序后，现在您就可以在内容播放中创建内容。 使用Screens内容提供程序创建和管理：
+登录Screens内容提供程序后，现在您就可以在内容播放中创建内容。
+
+您必须使用Screens内容提供程序来创建和管理：
 
 * 项目
 * 渠道
