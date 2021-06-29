@@ -1,7 +1,7 @@
 ---
 title: 导航到Screens服务提供商
 description: 本页介绍如何导航到Screens服务提供商。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 1. 从[此处](https://experience.adobe.com/screens)导航到Screens服务提供商。
 
-   >[!NOTE]
+   >[!CAUTION]
    >如果您有权访问多个组织，请确保您已登录正确的组织。 要更改您的组织，请单击屏幕右上角的组织名称，然后选择您需要访问的所需组织。
 
 1. 从左侧导航栏中选择&#x200B;**渠道**，然后单击&#x200B;**在内容提供程序中打开**。
