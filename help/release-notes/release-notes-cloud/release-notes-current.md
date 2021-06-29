@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
+source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -143,6 +143,27 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
 
 * 在通过表单数据模型(FDM)将数据提交到后端服务之前，如果对字段进行了验证，则验证会成功，但表单数据模型服务无法调用后验证。
 * 当您从Apple iOS设备提交包含标准HTML上传字段的表单时，有时不会发送文件内容，而会在另一端收到0字节文件。 这是Apple iOS中的已知问题。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+## AEM Screens {#aem-screens}
+
+本部分概述了Screens as a Seens的发行说明Cloud Service。
+
+### 发布日期 {#release-date-june-screens}
+
+AEM Screens as a Cloud Service的发布日期是2021年6月24日。
+
+### 新增功能 {#what-is-new-screens-june}
+
+>[!NOTE]
+>请参阅[AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en)指南，了解成功安装、配置和运行Screens作为Cloud Service所需的基本知识，并链接到详细概念技术文档。
+
+* 批量设备注册管理意味着可以更快、更高效地配置大量播放器设备。
+
+* 改进了每个设备、显示和渠道清单视图的搜索和过滤选项。
+
+* 设备健康快照通过提供关键状态一目了然来节省时间。
+
+* 对象详细信息页面提供了项目中每个对象最相关信息的摘要。
 
 ## CIF附加组件 {#cloud-services-cif}
 
