@@ -1,9 +1,9 @@
 ---
 title: 在Screens中创建和管理渠道作为Cloud Service
 description: 本页介绍如何在Screens中作为Cloud Service创建和管理渠道。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '550'
 ht-degree: 7%
 
 ---
@@ -90,4 +90,4 @@ ht-degree: 7%
 
 ## 下一步 {#whats-next}
 
-现在，您已在项目中设置AEM Screens渠道，因此需要发布渠道。 在从Screens服务提供商管理您的播放器之前，请参阅[以Cloud Service身份发布Screens中的渠道](/help/screens-cloud/creating-content/manage-publish.md)。
+现在，您已在项目中设置AEM Screens渠道，因此需要发布渠道。 在从Screens服务提供商管理您的播放器之前，请参阅[以Cloud Service身份发布Screens中的渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en)。
