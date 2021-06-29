@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
+source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1385'
 ht-degree: 2%
 
 ---
@@ -144,9 +144,9 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
 * 在通过表单数据模型(FDM)将数据提交到后端服务之前，如果对字段进行了验证，则验证会成功，但表单数据模型服务无法调用后验证。
 * 当您从Apple iOS设备提交包含标准HTML上传字段的表单时，有时不会发送文件内容，而会在另一端收到0字节文件。 这是Apple iOS中的已知问题。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## AEM Screens {#aem-screens}
+## [!DNL Adobe Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
 
-本部分概述了Screens as a Seens的发行说明Cloud Service。
+本部分概述了AEM Screens as a Cloud Service的发行说明。
 
 ### 发布日期 {#release-date-june-screens}
 
