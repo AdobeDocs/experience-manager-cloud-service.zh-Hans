@@ -1,9 +1,9 @@
 ---
 title: 在Screens中创建项目作为Cloud Service
 description: 本页介绍如何在Screens中创建项目作为Cloud Service。
-source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-现在，您已设置AEM Screens项目，接下来可以创建新渠道并向渠道中添加内容。 请参阅[创建和管理渠道] ，了解如何在渠道中创建和管理内容。
+现在，您已设置AEM Screens项目，接下来可以创建新渠道并向渠道中添加内容。 请参阅[创建和管理渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) ，了解如何在渠道中创建和管理内容。
