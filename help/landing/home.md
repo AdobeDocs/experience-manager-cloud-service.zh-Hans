@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 用户指南
 description: Adobe Experience Manager as a Cloud Service 自助资源和文档链接
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 560775956fbf8eb6376150e8fbf08af2ea9e5c1e
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 83%
+source-wordcount: '418'
+ht-degree: 80%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 83%
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
+| [Screens用户指南](/help/screens-cloud/home.md) | 了解如何将Experience Manager Screens用作Cloud Service并进行管理。 |
 | [Commerce用户指南](/help/commerce-cloud/home.md) | 了解如何使用和管理 Experience Manager Commerce as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
