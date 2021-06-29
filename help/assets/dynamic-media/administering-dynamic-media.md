@@ -4,10 +4,10 @@ description: 要设置Dynamic Media，您必须配置Dynamic Media并管理图�
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 25%
+ht-degree: 15%
 
 ---
 
@@ -27,10 +27,10 @@ ht-degree: 25%
 
 如果您管理Dynamic Media，请关注以下主题：
 
-* [配置 Dynamic Media](config-dm.md)
+* [配置Dynamic Media](config-dm.md)
 * [管理图像预设](managing-image-presets.md)
 * [管理查看器预设](managing-viewer-presets.md)
-* [Dynamic Media 疑难解答](troubleshoot-dm.md)
+* [Dynamic Media故障诊断](troubleshoot-dm.md)
 
 另请参阅以下主题：
 
@@ -41,5 +41,5 @@ ht-degree: 25%
 >
 >**如果您正在升级：**
 >
->* Adobe[!DNL Experience Manager]启动并运行后，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员明确禁用了该资产）。 如果您使用的是[!DNL Experience Manager]的升级实例，并且是Dynamic Media的新实例，则可能必须重新处理资产才能启用Dynamic Media。 请参阅[重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+>* Adobe[!DNL Experience Manager]启动并运行后，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员明确禁用了该资产）。 如果您使用的是[!DNL Experience Manager]的升级实例，并且是Dynamic Media的新实例，则可能必须重新处理资产才能启用Dynamic Media。 请参阅[重新处理文件夹](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的资产。
 
