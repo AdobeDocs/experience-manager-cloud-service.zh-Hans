@@ -1,7 +1,7 @@
 ---
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3数据存储 {#amazon-data-store}
+#### Amazon S3数据存储 {#amazon-sdata-store}
 
 您的azcopy.config文件应包含以下属性（确保为实例使用正确的值）。
 
@@ -134,7 +134,7 @@ AzCopy会在后续运行中自动跳过在错误之前复制的任何Blob，而�
 随着内容传输工具1.5.4的发布，我们为创作摄取添加了AzCopy支持。
 
 >[!NOTE]
-> 建议先单独运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
+>建议先单独运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
 
 要在摄取期间利用AzCopy，我们要求您以至少为2021.6.5561版的AEMCloud Service版本的形式使用。
 
