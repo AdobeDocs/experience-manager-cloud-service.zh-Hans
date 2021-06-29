@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 资产管理、连接的资产、资产分发、用户和组
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2967'
 ht-degree: 26%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 26%
 | DAM 分发人员（技术用户） | 远程 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 远程  [!DNL Experience Manager] | [!DNL Experience Manager]本地服务器（而非[!DNL Sites]作者角色）代表[!DNL Sites]作者，使用远程部署上存在的用户来获取远程资产。 此角色与上述两个 `ksaner` 角色不同，它属于另一个不同的用户组。 |
 | [!DNL Sites] 技术用户 | 本地 | `connectedassets-sites-techaccts` | - | 允许[!DNL Assets]部署在[!DNL Sites]网页中搜索对资产的引用。 |
 
-## 在[!DNL Sites]部署与[!DNL Assets]部署{#configure-a-connection-between-sites-and-assets-deployments}之间配置连接
+## 在[!DNL Sites]部署和[!DNL Assets]部署之间配置连接 {#configure-a-connection-between-sites-and-assets-deployments}
 
 [!DNL Experience Manager]管理员可以创建此集成。 创建后，使用该组件所需的权限会通过用户组建立。 用户组在[!DNL Sites]部署和DAM部署中定义。
 
@@ -116,13 +116,13 @@ ht-degree: 26%
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## 在[!DNL Sites]部署与[!DNL Dynamic Media]部署{#sites-dynamic-media-connected-assets}之间配置连接
+## 在[!DNL Sites]部署和[!DNL Dynamic Media]部署之间配置连接 {#sites-dynamic-media-connected-assets}
 
 您可以在[!DNL Sites]部署和[!DNL Dynamic Media]部署之间配置连接，以允许网页作者在其网页中使用[!DNL Dynamic Media]图像。 在创作网页时，使用远程资产和远程[!DNL Dynamic Media]部署的体验保持不变。 这允许您通过连接的资产功能（例如智能裁剪和图像预设）来利用[!DNL Dynamic Media]功能。
 
-要配置此连接，请执行以下步骤。
+要配置连接，请执行以下步骤：
 
-1. 按如上所述创建连接的资产配置。 配置功能时，选择&#x200B;**[!UICONTROL 为Dynamic Media连接的资产获取原始呈现版本]**&#x200B;选项。
+1. 按照上述说明创建连接的资产配置，除非配置功能，否则请选择&#x200B;**[!UICONTROL 获取Dynamic Media连接的资产的原始呈现版本]**&#x200B;选项。
 
 1. 在本地[!DNL Sites]和远程[!DNL Assets]部署上配置[!DNL Dynamic Media]。 按照[configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)的说明操作。
 
@@ -179,7 +179,7 @@ ht-degree: 26%
 
 获取的资产可用作任何其他本地资产，但关联的元数据无法编辑。
 
-### 检查跨网页的资产使用情况{#asset-usage-references}
+### 检查跨网页的资产使用情况 {#asset-usage-references}
 
 [!DNL Experience Manager] 允许DAM用户检查对资产的所有引用。它有助于了解和管理远程[!DNL Sites]和复合资产中资产的使用情况。 [!DNL Experience Manager Sites]部署中的许多网页作者可以在不同的网页中使用远程DAM上的资产。 为了简化资产管理，并且不会导致引用损坏，DAM用户必须检查本地和远程网页中资产的使用情况。 资产的[!UICONTROL 属性]页面中的[!UICONTROL 引用]选项卡列出了资产的本地和远程引用。
 
@@ -196,11 +196,11 @@ ht-degree: 26%
 
    ![强制删除警告](assets/delete-referenced-asset.png)
 
-## 限制和最佳实践{#tip-and-limitations}
+## 限制和最佳实践 {#tip-and-limitations}
 
 * 要深入了解资产使用情况，请在[!DNL Sites]实例上配置[资产分析](/help/assets/assets-insights.md)功能。
 
-### 权限和资产管理{#permissions-and-managing-assets}
+### 权限和资产管理 {#permissions-and-managing-assets}
 
 * 本地资产与远程部署中的原始资产不同步。在 DAM 部署上所具有的任何编辑、删除或撤销权限均不会传播到下游。
 * 本地资产是只读副本。[!DNL Experience Manager] 组件对资产进行无损编辑。不允许进行其他编辑。
