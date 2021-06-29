@@ -1,10 +1,10 @@
 ---
 title: 首次以Cloud Service身份登录Screens
 description: 本页介绍了将Screens作为Cloud Service入门的首要步骤。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3962d736778e4d17bb57296e9401503ce712a6cd
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 功能包的可用性 {#availability}
 
-AMS-Screens-Cloud功能包可通过软件分发门户获取。
+AMS-Screens-Cloud功能包可通过[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)获取。
 单击此处下载最新的功能包。
 
 ## 将用户添加到Adobe Admin Console {#admin-console}
