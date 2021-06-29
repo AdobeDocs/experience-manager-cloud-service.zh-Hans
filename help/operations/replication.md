@@ -2,7 +2,7 @@
 title: 复制
 description: 分发 和复制故障排除。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 4%
@@ -42,17 +42,17 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 要执行树激活，请执行以下操作：
 
 1. 从AEM开始菜单导航到&#x200B;**工具>部署>分发**
-2. 选择卡&#x200B;**forwardPublisher**
-3. 进入forwardPublisher Web控制台UI后，**选择Distribute**
+2. 选择卡&#x200B;**publish**
+3. 进入发布Web控制台UI后，**选择Distribute**
 
-   ![](assets/distribute.png "DistributeDistribute")
+   ![](assets/publish-distribute.png "DistributeDistribute")
 4. 在路径浏览器中选择路径，根据需要选择添加节点、树或删除，然后选择&#x200B;**Submit**
 
 ### 发布内容树工作流 {#publish-content-tree-workflow}
 
 您可以通过选择&#x200B;**工具 — 工作流 — 模型**&#x200B;并复制&#x200B;**发布内容树**&#x200B;现成工作流模型来触发树复制，如下所示：
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 请勿修改或调用原始模型。 相反，请确保首先复制模型，然后修改或调用该副本。
 
@@ -191,13 +191,13 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 要对复制问题进行故障诊断，请导航到AEM创作服务Web UI中的复制队列：
 
 1. 从AEM开始菜单导航到&#x200B;**工具>部署>分发**
-2. 选择卡&#x200B;**forwardPublisher**
-   ![](assets/status.png "StatusStatus")
+2. 选择卡&#x200B;**publish**
+   ![](assets/publish-status.png "StatusStatus")
 3. 检查应为绿色的队列状态
 4. 您可以测试与复制服务的连接
 5. 选择&#x200B;**日志**&#x200B;选项卡，以显示内容发布的历史记录
 
-![](assets/logs.png "LogsLogs")
+![](assets/publish-logs.png "LogsLogs")
 
 如果内容无法发布，则整个发布将从AEM发布服务中恢复。
 在这种情况下，应审查队列，以确定哪些项目导致取消发布。 通过单击显示红色状态的队列，将显示具有待处理项目的队列，如果需要，可从该队列中清除单个或所有项目。
