@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 资产报表，资产管理
 role: Administrator,Business Practitioner
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 生成报告后，系统会通过<!-- through an email (optional) and -->收件箱通知您。 您可以从报表列表页面查看、下载或删除报表，其中显示了所有以前生成的报表。
 
-## 生成报告{#generate-reports}
+## 生成报表 {#generate-reports}
 
 [!DNL Experience Manager Assets] 会为您生成以下标准报表：
 
@@ -105,7 +105,7 @@ ht-degree: 5%
 
    单击工具栏中的&#x200B;**[!UICONTROL 下载]**&#x200B;以CSV格式下载报表。
 
-## 向报表{#add-custom-columns}添加自定义列
+## 向报表添加自定义列 {#add-custom-columns}
 
 您可以向以下报表添加自定义列，以显示符合您自定义要求的更多数据：
 
@@ -120,7 +120,6 @@ ht-degree: 5%
 -->
 
 * 上传
-* 下载
 * 到期时间
 * 修改
 * 发布
@@ -160,7 +159,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 故障诊断信息{#tips-troubleshoot}
+## 故障诊断信息 {#tips-troubleshoot}
 
 * 如果[!UICONTROL 磁盘使用情况报表]未生成，并且如果您使用的是[!DNL Dynamic Media]，请确保所有资产均正确运行。 要解析，请重新处理资产并再次生成报表。
 
