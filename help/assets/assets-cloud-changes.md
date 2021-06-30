@@ -4,7 +4,7 @@ description: 与[!DNL Adobe Experience Manager 6.5相比，对 [!DNL Adobe Exper
 feature: 发行信息
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
+source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 5%
@@ -60,7 +60,7 @@ ht-degree: 5%
 | 主页 | 不受支持. | 请参阅[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 从ZIP存档提取资产 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP提取。 |
 | 资产评级 | 不受支持. | 不支持元数据架构编辑器中的评级小组件。 |
-| 内容分发过滤器 | 不受支持. | `ContentDispositionFilter`的常见用例是，让管理员配置[!DNL Experience Manager]以提供HTML文件，并在内联打开PDF文件，而不是下载这些文件。 在发布实例上，您可以使用Dispatcher配置管理处置。 在创作实例上，Adobe不建议修改内容处置标头。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)中的[内容处置筛选器。 |
+| 内容处置过滤器 | 不受支持. | `ContentDispositionFilter`的常见用例是，让管理员配置[!DNL Experience Manager]以提供HTML文件，并在内联打开PDF文件，而不是下载这些文件。 在发布实例上，您可以使用Dispatcher配置管理处置。 在创作实例上，Adobe不建议修改内容处置标头。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)中的[内容处置筛选器。 |
 | [下载报表](/help/assets/asset-reports.md) | 不受支持. | 目前，无法使用通知资产使用的下载报表。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)中的[下载报表。 |
 | 产品照片拍摄模板 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)中的[产品照片拍摄模板。 |
 | 经典 UI | 不受支持. | 只有启用了触屏的用户界面才可用。 |
