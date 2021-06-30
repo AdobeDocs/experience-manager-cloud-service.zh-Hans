@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1430'
 ht-degree: 2%
 
 ---
@@ -97,12 +97,23 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
    * 支持[!DNL Assets Essentials]。
    * 能够自动连接到[!DNL Experience Manager]作为[!DNL Cloud Service]或[!DNL Assets Essentials]。
 
+* [资产批量摄取工具](/help/assets/add-assets.md#asset-bulk-ingestor)允许您在批量摄取期间添加元数据。
+
 ### [!DNL Assets]预发行渠道中提供的新增功能 {#beta-features-assets}
 
 * 视图设置经过增强，允许用户选择默认视图和默认排序参数。
+
+   ![在视图设置中设置默认视图](/help/assets/assets/view-settings-for-defaults.png)
+
 * Linkshare下载功能使用异步下载来提高下载速度。
+
 * 用户可以根据属性谓词搜索和筛选文件夹。
-* [!DNL Experience Manager Assets] 嵌入由提供支持的PDF查看器， [!DNL Adobe Document Cloud] 以预览受支持的文档。此功能允许用户预览PDF和其他多页文件，而无需进行任何复杂的处理。 这改进了与[!DNL Experience Manager] 6.5的功能对等性。
+
+   ![使用搜索谓词筛选搜索文件夹](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] 嵌入PDF查看器以预览支持的文档格式。它由[!DNL Adobe Document Cloud]提供电源。 此功能允许用户预览PDF和其他多页文件，而无需进行任何复杂的处理。 这改进了与[!DNL Experience Manager] 6.5的功能对等性。
+
+   ![使用PDF查看器在中 [!DNL Experience Manager] 预览PDF文件](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### [!DNL Assets]中修复的错误 {#bugs-fixed-assets}
 
