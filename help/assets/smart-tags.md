@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 智能标记，标记
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2355'
 ht-degree: 6%
 
 ---
@@ -97,13 +97,16 @@ ht-degree: 6%
 
 **示例**:还有一些指导示例：
 
-* 创建一个标记模型，该模型包括：
-   * 只有与汽车型号相关的标记。
-   * 仅与衬衫颜色相关的标记。
-   * 只有与男女夹克相关的标签。
+* 创建仅包含、
+
+   * 与车型相关的标记。
+   * 与衬衫颜色相关的标记。
+   * 与男女夹克相关的标签。
+
 * 请勿创建，
+
    * 一种标记型号，包括2019年和2020年发布的车型。
-   * 多个标记模型，其中包含相同的少数几个汽车模型。
+   * 多个标记模型，其中包含相同的少数车型。
 
 **用于培训的图像**:您可以使用相同的图像来训练不同的标记模型。但是，请勿将图像与标记模型中的多个标记相关联。 可以使用属于不同标记模型的不同标记来标记同一图像。
 
