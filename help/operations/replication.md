@@ -2,10 +2,10 @@
 title: 复制
 description: 分发 和复制故障排除。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
+source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +32,14 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 要实现自动复制，您需要在[OSGi配置](/help/implementing/deploying/configuring-osgi.md) **开关触发器配置**&#x200B;中启用&#x200B;**自动复制**:
 
 ![OSGi On Off触发器配置](/help/operations/assets/replication-on-off-trigger.png)
+
+### 管理发布 {#manage-publication}
+
+与“快速发布”相比，管理发布提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
+
+为“稍后发布”选项包含文件夹的子项将调用发布内容树工作流，如本文所述。
+
+您可以在[发布基础知识文档](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)中找到有关管理发布的更多详细信息。
 
 ### 树激活 {#tree-activation}
 
@@ -177,14 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 如果您没有提供此类过滤器，并且只使用“发布”代理，则不使用“预览”代理，并且复制操作不会影响预览层。
 
 仅当复制操作包含至少一个默认处于活动状态的代理时，才会修改资源的整体`ReplicationStatus`。 在上例中，情况并非如此，因为复制只是使用“预览”代理。 因此，您需要使用新的`getStatusForAgent()`方法，该方法允许查询特定代理的状态。 此方法也适用于“发布”代理。 如果已使用提供的代理完成任何复制操作，则返回非空值。
-
-### 管理发布 {#manage-publication}
-
-与“快速发布”相比，管理发布提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
-
-为“稍后发布”选项包含文件夹的子项将调用发布内容树工作流，如本文所述。
-
-您可以在[发布基础知识文档](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)中找到有关管理发布的更多详细信息。
 
 ## 疑难解答 {#troubleshooting}
 
