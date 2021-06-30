@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1395'
 ht-degree: 2%
 
 ---
@@ -90,14 +90,12 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
 
 ### [!DNL Assets]的新增功能 {#ga-features-assets}
 
-* “内容自动化”功能允许[!DNL Experience Manager Assets]利用[!DNL Adobe Creative Cloud] API大规模自动化资产生产。 它可显着减少创建同一资产变体所花费的时间和所需的迭代次数，从而提高内容速度。 该功能不需要任何代码，也可从DAM中使用。
+* “内容自动化”功能允许[!DNL Experience Manager Assets]利用[!DNL Adobe Creative Cloud] API大规模自动化资产生产。 它可显着减少创建同一资产变体所需的时间和迭代次数，从而提高内容速度。 该功能不需要任何编程，也可从DAM内工作。 请参阅[使用Creative Cloud集成生成资产的变体](/help/assets/cc-api-integration.md)。
+
 * [!DNL Adobe Asset Link] v3.0 for  [!DNL Adobe Photoshop]、 [!DNL Adobe Illustrator]和 [!DNL Adobe InDesign] v2. [!DNL Adobe Asset Link] 0 for  [!DNL Adobe XD] 已发布它提供：
 
    * 支持[!DNL Assets Essentials]。
    * 能够自动连接到[!DNL Experience Manager]作为[!DNL Cloud Service]或[!DNL Assets Essentials]。
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### [!DNL Assets]预发行渠道中提供的新增功能 {#beta-features-assets}
 
