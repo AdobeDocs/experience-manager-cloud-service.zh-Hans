@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 资产管理，图像配置文件，视频配置文件
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 17%
 
 ---
