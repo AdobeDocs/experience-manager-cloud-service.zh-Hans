@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用传送横幅。
 feature: 传送横幅
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '4556'
-ht-degree: 9%
+source-wordcount: '4537'
+ht-degree: 6%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 9%
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-在此，您可以通过单击数字来浏览图像。 此外，幻灯片会根据您可以自定义的时间间隔自动旋转。 轮播横幅中的图像同时支持热点和图像映射。 用户可以点按或转到超链接或访问概览窗口。
+在此，您可以通过选择数字来浏览图像。 此外，幻灯片会根据您可以自定义的时间间隔自动旋转。 轮播横幅中的图像同时支持热点和图像映射。 用户可以选择或转到超链接或访问“概览”窗口。
 
-在此示例中，用户点按或单击了图像映射，并访问了手套的概览窗口：
+在此示例中，用户选择了图像映射并访问手套的“概览”窗口：
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## 观看如何创建传送横幅{#watch-how-carousel-banners-are-created}
+## 观看如何创建轮播横幅 {#watch-how-carousel-banners-are-created}
 
 观看有关如何创建轮播横幅的](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)演练(持续时间：10分33秒)。 [您还将了解如何预览、编辑和传送轮播横幅。
 
@@ -39,7 +39,7 @@ ht-degree: 9%
 >
 >必须将非管理用户添加到&#x200B;**[!UICONTROL dam-users]**&#x200B;组，才能创建或编辑传送横幅。 如果您在创建或编辑时遇到问题，请咨询系统管理员，系统管理员可以将您添加到&#x200B;**d[!UICONTROL am-users]**&#x200B;组。
 
-## 快速入门：传送横幅{#quick-start-carousel-banners}
+## 快速入门：传送横幅 {#quick-start-carousel-banners}
 
 要快速设置并运行图像集，请执行以下操作：
 
@@ -51,10 +51,10 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables.
+   >If you are an Experience Manager Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables.
    >
    >
-   >If you are an AEM Assets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
+   >If you are an Experience ManagerAssets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
 
 -->
 
@@ -68,9 +68,9 @@ ht-degree: 9%
 
 1. [创建轮播集](#creating-carousel-sets)。
 
-   在轮播集中，用户在横幅图像中导航，并点按热点或图像映射以访问相关内容。
+   在轮播集中，用户在横幅图像中导航，并选择热点或图像映射以访问相关内容。
 
-   要在 Assets 中创建轮播集，请点按&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 轮播集]**。将资产添加到幻灯片，然后点按&#x200B;**[!UICONTROL 保存]**。您还可以直接在编辑器中编辑轮播集的外观和行为。
+   要在资产中创建轮播集，请选择&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 轮播集]**。 将资产添加到幻灯片，然后选择&#x200B;**[!UICONTROL 保存]**。 您还可以直接在编辑器中编辑轮播集的外观和行为。
 
 1. [将热点或图像映射添加到图像横幅](#adding-hotspots-or-image-maps-to-an-image-banner)。
 
@@ -80,7 +80,7 @@ ht-degree: 9%
 
 1. [发布传送横幅](#publishing-carousel-banners)。
 
-   与发布任何资产一样，您也可以发布轮播集。 在Assets中，导航到轮播集，并将其选中，然后点按&#x200B;**[!UICONTROL 发布]**。 发布轮播集时，会激活URL和嵌入字符串。
+   与发布任何资产一样，您也可以发布轮播集。 在Assets中，导航到轮播集，并将其选中，然后选择&#x200B;**[!UICONTROL 发布]**。 发布轮播集时，会激活URL和嵌入字符串。
 
 1. 执行下列操作之一：
 
@@ -92,7 +92,7 @@ ht-degree: 9%
 
 如果必须编辑传送集，请参阅[编辑传送集](#editing-carousel-sets)。 此外，您还可以查看和编辑[轮播集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-## 识别热点和图像映射变量{#identifying-hotspot-and-image-map-variables}
+## 识别热点和图像映射变量 {#identifying-hotspot-and-image-map-variables}
 
 首先，识别现有概览实施所使用的动态变量。 此方法可帮助您在Experience Manager资产的轮播集创建过程中，正确输入热点或图像映射数据。
 
@@ -102,9 +102,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md). In addition, you can use the Interactive component and add it to your web page.
+>If you are an Experience Manager Sites and/or Experience Manager Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md). In addition, you can use the Interactive component and add it to your web page.
 >
->If you are an AEM Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
+>If you are an Experience Manager Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
 
 -->
 
@@ -116,7 +116,7 @@ ht-degree: 9%
 
 大多数概览实施都使用以下范例：
 
-* 用户在网站上激活用户界面元素。例如，点按&#x200B;**[!UICONTROL 快速查看]**&#x200B;按钮。
+* 用户在网站上激活用户界面元素。例如，选择&#x200B;**[!UICONTROL Quickview]**&#x200B;按钮。
 * 如果需要，网站会向后端发送Ajax请求以加载概览数据或内容。
 * 概览数据会转换为内容，以准备在网页上渲染。
 * 最后，前端代码以可视形式将这些内容呈现在屏幕上。
@@ -125,18 +125,18 @@ ht-degree: 9%
 
 通常情况下，您不需要使用任何专业的调试工具。现代的 Web 浏览器具备 Web 检查器，可以实现相同的功能。下面列举了一些具备 Web 检查器的 Web 浏览器：
 
-* 要在Google Chrome中查看所有传出HTTP请求，请按F12(Windows®)或Command-Option-I(Mac)以打开开发人员工具面板。 点按网络选项卡。
+* 要在Google Chrome中查看所有传出HTTP请求，请按F12(Windows®)或Command-Option-I(Mac)以打开开发人员工具面板。 选择“网络”选项卡。
 * 在Firefox中，您可以通过按F12(Windows®)或Command-Option-I(Mac)来激活Firebug插件。 使用其“网络”选项卡，或使用内置的“检查器”工具及其“网络”选项卡。
 
 在浏览器中打开网络监控时，会触发页面上的概览。
 
-现在，在网络日志中找到概览Ajax URL，并复制记录的URL以供将来分析。 通常，在触发概览时，会向服务器发送大量请求。 通常，概览Ajax URL是列表中最先使用的URL之一。 它具有复杂的查询字符串部分或路径，其响应MIME类型为`text/html`、`text/xml`或`text/javascript`。
+现在，在网络日志中找到概览Ajax URL，并复制记录的URL以供将来分析。 通常，在触发概览时，会向服务器发送大量请求。 通常，Quickview Ajax URL是列表中最先使用的URL之一。 它具有复杂的查询字符串部分或路径，其响应MIME类型为`text/html`、`text/xml`或`text/javascript`。
 
 在此过程中，访问网站中具有不同产品类别和类型的不同区域非常重要。 原因是概览URL的某些部分对于给定的网站类别是通用的，但仅当您访问网站的其他区域时，才会发生更改。
 
 在最简单的情况下，概览URL中唯一的变量部分是产品SKU。 在这种情况下，SKU值是您在将热点或图像映射添加到横幅图像时需要的唯一数据块。
 
-但是，在复杂情况下，概览URL除SKU之外，还具有不同的不同的不同元素。 其中一些元素包括类别ID、颜色代码、大小代码等。 在这种情况下，在热点或轮播横幅功能的图像映射数据定义中，每个元素都是一个单独的变量。
+但是，在复杂情况下，除SKU之外，快速视图URL还具有不同的可变元素。 其中一些元素包括类别ID、颜色代码、大小代码等。 在这种情况下，在热点或轮播横幅功能的图像映射数据定义中，每个元素都是一个单独的变量。
 
 请考虑以下概览URL示例及其生成的热点或图像映射变量：
 
@@ -178,13 +178,13 @@ ht-degree: 9%
  </tbody>
 </table>
 
-## 上传图像横幅{#uploading-image-banners}
+## 上传图像横幅 {#uploading-image-banners}
 
 如果已上传要使用的图像，请前进到下一步[创建轮播集](#creating-carousel-sets)。 启用Dynamic Media后，必须上传轮播中使用的图像。
 
 要上传图像横幅，请参阅[上传资产](/help/assets/manage-digital-assets.md)。
 
-## 创建轮播集{#creating-carousel-sets}
+## 创建轮播集 {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -192,17 +192,17 @@ ht-degree: 9%
 
 **要创建轮播集，请执行以下操作：**
 
-1. 在Assets中，导航到要创建轮播集的文件夹，然后点按&#x200B;**[!UICONTROL 创建>轮播集]**。
-1. 在轮播横幅编辑器页面上，点按&#x200B;**[!UICONTROL 点按以打开资产选择器]** ，为您的第一张幻灯片选择图像。
+1. 在Assets中，导航到要创建轮播集的文件夹，然后转到&#x200B;**[!UICONTROL 创建>轮播集]**。
+1. 在轮播横幅编辑器页面上，选择&#x200B;**[!UICONTROL 点按以打开资产选择器]** ，为第一张幻灯片选择图像。
 
    在“轮播横幅编辑器”页面上，执行以下任一操作：
 
-   * 在页面的左上角附近，点按&#x200B;**[!UICONTROL 添加幻灯片]**&#x200B;图标。
+   * 在页面的左上角附近，选择&#x200B;**[!UICONTROL 添加幻灯片]**&#x200B;图标。
 
-   * 在页面中间附近，点按&#x200B;**[!UICONTROL 点按以打开资产选择器]**。
-   点按以选择要包含在轮播集中的资产。选定资产上有一个复选标记图标。 完成后，在页面的右上角附近，点按&#x200B;**[!UICONTROL 选择]**。
+   * 在页面中间附近，选择&#x200B;**[!UICONTROL 点按以打开资产选择器]**。
+   选择以选择要包含在轮播集中的资产。 选定资产上有一个复选标记图标。 完成后，在页面的右上角附近，选择&#x200B;**[!UICONTROL Select]**。
 
-   借助资产选择器，您可以通过键入关键字并点按或单击&#x200B;**[!UICONTROL 返回]**&#x200B;来搜索资产。您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后点按工具栏中的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。 点按“视图”图标并选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;可更改视图。
+   借助资产选择器，您可以通过键入关键字并选择&#x200B;**[!UICONTROL Return]**&#x200B;来搜索资产。 您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后选择工具栏中的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。 选择“视图”图标，然后选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;以更改视图。
 
    有关更多信息，请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
@@ -210,13 +210,13 @@ ht-degree: 9%
 1. （可选）执行以下操作之一：
 
    * 如有必要，可拖动幻灯片来重新排序列表中的图像。
-   * 要删除图像，请选择该图像，然后点按工具栏中的&#x200B;**[!UICONTROL 删除幻灯片]**。
+   * 要删除图像，请选择该图像，然后选择工具栏中的&#x200B;**[!UICONTROL 删除幻灯片]**。
 
-   * 要应用预设，请点按页面右上角附近的预设下拉列表，然后选择要一次应用于该预设集的预设。
-   要删除幻灯片，请点按或单击该幻灯片，然后点按或单击工具栏中的&#x200B;**[!UICONTROL 删除幻灯片]**。 要移动幻灯片，请点按重新排序图标，然后按住并移动到所需位置。
+   * 要应用预设，请在页面的右上角附近，选择预设下拉列表，然后选择要一次应用于该预设集的预设。
+   要删除幻灯片，请选择该幻灯片。 在工具栏上，选择工具栏上的&#x200B;**[!UICONTROL 删除幻灯片]**。 要移动幻灯片，请选择重新排序图标并移动到所需位置。
 
-1. 在幻灯片中添加图像后，您可以向图像添加热点和/或图像映射。 请参阅[添加热点或图像映射](#adding-hotspots-or-image-maps-to-an-image-banner)。
-1. 您可以更改轮播集的可视化设计和行为。 点按或单击&#x200B;**[!UICONTROL Behavior]**&#x200B;和&#x200B;**[!UICONTROL Appearance]**&#x200B;选项卡，并调整轮播横幅的显示方式或特定组件的行为方式。 有关如何使用查看器编辑器的更多信息，请参阅[管理查看器预设](/help/assets/dynamic-media/viewer-presets.md)。
+1. 在幻灯片中添加图像后，您可以向图像添加热点和/或图像映射。 请参阅[将热点或图像映射添加到图像横幅](#adding-hotspots-or-image-maps-to-an-image-banner)。
+1. 您可以更改轮播集的可视化设计和行为。 如果要调整轮播横幅的显示方式或特定组件的行为方式，请选择&#x200B;**[!UICONTROL 行为]**&#x200B;和&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡。 有关如何使用查看器编辑器的更多信息，请参阅[管理查看器预设](/help/assets/dynamic-media/viewer-presets.md)。
 
    >[!NOTE]
    >
@@ -224,16 +224,16 @@ ht-degree: 9%
    >
    >* 图像显示的持续时间。 默认情况下，每幅图像显示9秒。
    >* 动画. 默认情况下，每个幻灯片过渡都是渐隐效果。 您可以将其更改为幻灯片过渡。
-   >* 按钮的样式。 用户可以通过点按每个圆点或数字来旋转横幅。 您可以更改设置指示器按钮的显示位置（如果是数字或虚线样式）以及其大小。
+   >* 按钮的样式。 用户可以通过选择每个圆点或数字来旋转横幅。 您可以更改设置指示器按钮的显示位置（如果是数字或虚线样式）以及其大小。
    >* 更改图像映射的高亮显示样式或用于热点的图标。
    >* 在编辑查看器预设之前，请选择要作为预设基础的样式。 如果您没有选择样式，则在开始编辑查看器预设时，如果您更改为其他预设，则会丢失所有更改。
 
 
    您还可以预览轮播横幅的外观。 请参阅[（可选）预览传送横幅](#optional-previewing-carousel-banners)。
 
-1. 完成后，点按&#x200B;**[!UICONTROL Save]**。
+1. 完成后，选择&#x200B;**[!UICONTROL 保存]**。
 
-## 将热点或图像映射添加到图像横幅{#adding-hotspots-or-image-maps-to-an-image-banner}
+## 将热点或图像映射添加到图像横幅 {#adding-hotspots-or-image-maps-to-an-image-banner}
 
 您可以使用轮播集编辑器将热点或图像映射添加到横幅。
 
@@ -263,40 +263,40 @@ ht-degree: 9%
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**要将热点或图像映射添加到图像横幅，请执行以下操作：**
+**要向图像横幅添加热点或图像映射，请执行以下操作：**
 
 1. 在资产中，导航到要进行交互的轮播集。
-1. 选择轮播集，然后点按&#x200B;**[!UICONTROL 编辑]**。 将打开轮播查看器编辑器。
+1. 选择轮播集，然后选择&#x200B;**[!UICONTROL 编辑]**。 将打开轮播查看器编辑器。
 1. 选择要进行交互的幻灯片。
-1. 在页面的左上角附近，点按&#x200B;**[!UICONTROL 热点]**&#x200B;或&#x200B;**[!UICONTROL 图像映射]**。
+1. 在页面的左上角附近，选择&#x200B;**[!UICONTROL 热点]**&#x200B;或&#x200B;**[!UICONTROL 图像映射]**。
 1. 执行以下任一操作：
 
-   * 对于热点：在图像上，点按您希望显示热点的位置。
-   * 对于图像映射：在图像上，单击，然后从左上角向右下方拖动，以创建图像映射区域。 您可以通过拖动角来调整图像映射的大小。
+   * 对于热点：在图像上，选择您希望显示热点的位置。
+   * 对于图像映射：在图像上，从左上角向右下角拖动以创建图像映射区域。 您可以通过拖动角来调整图像映射的大小。
 
    如有必要，请将热点或图像映射拖到新位置。 或者，使用键盘箭头键控制选定热点的位置。 根据需要添加更多热点或图像映射。
 
-   要删除热点或图像映射，请点按&#x200B;**[!UICONTROL 操作]**&#x200B;选项卡。在&#x200B;**[!UICONTROL 映射和热点]**&#x200B;标题下，从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉列表中，选择要删除的热点或图像映射的名称。 点按菜单旁边的&#x200B;**[!UICONTROL 废纸篓]**&#x200B;图标，然后点按&#x200B;**[!UICONTROL 删除]**。
+   要删除热点或图像映射，请选择&#x200B;**[!UICONTROL 操作]**&#x200B;选项卡。 在&#x200B;**[!UICONTROL 映射和热点]**&#x200B;标题下，从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉列表中，选择要删除的热点或图像映射的名称。 选择菜单旁边的&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;图标，然后选择&#x200B;**[!UICONTROL 删除]**。
 
 1. 在“名称”文本字段中，键入热点或图像映射的名称。 此名称也会显示在&#x200B;**[!UICONTROL 映射与热点]**&#x200B;下拉列表中。 如果您决定在将来更改热点或图像映射，则提供名称可以让您轻松地识别该热点或图像映射。
 1. 在&#x200B;**[!UICONTROL Actions]**&#x200B;选项卡中执行下列操作之一：
 
-   * 点按&#x200B;**[!UICONTROL 概览]**。
+   * 选择&#x200B;**[!UICONTROL Quickview]**。
 
-      * 如果您是Experience Manager站点<!-- and Ecommerce-->客户，请点按产品选取器图标（放大镜）以打开选择产品页面。 要返回到轮播横幅编辑器，请点按要使用的产品，然后点按页面右上角的复选标记。
+      * 如果您是Experience Manager站点<!-- and Ecommerce-->客户，请选择产品选取器图标（放大镜）以打开选择产品页面。 要返回到轮播横幅编辑器，请选择要使用的产品，然后选择页面右上角的复选标记。
       * 如果您不是Experience Manager站点<!-- or Ecommerce -->客户：
 
          * 定义变量。 请参阅[识别热点变量](#identifying-hotspot-and-image-map-variables)。
-         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），即您提供的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充概览模板的变量部分。 系统现在知道将点按的热点与特定SKU的概览相关联。
-         * （可选）如果概览中有其他变量必须用于进一步标识产品，请点按&#x200B;**[!UICONTROL 添加常规变量]**。 在文本字段中，指定一个额外的变量。 例如，category=Mens是一个添加的变量。
+         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），即您提供的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充概览模板的变量部分。 系统现在知道将选定的热点与特定SKU的概览相关联。
+         * （可选）如果概览中有其他变量必须用于进一步标识产品，请选择&#x200B;**[!UICONTROL 添加常规变量]**。 在文本字段中，指定一个额外的变量。 例如，category=Mens是一个添加的变量。
 
          * 有关更多信息，请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
-   * 点按&#x200B;**[!UICONTROL 超链接]**。
+   * 选择&#x200B;**[!UICONTROL 超链接]**。
 
-      * 如果您是AEM Sites客户，请点按网站选择器图标（文件夹）以导航到URL。
+      * 如果您是Experience Manager站点客户，请选择站点选择器图标（文件夹）以导航到URL。
 
          >[!NOTE]
-         如果您的交互式内容具有包含相对URL的链接，特别是指向AEM Sites页面的链接，则无法使用基于URL的链接方法。
+         如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
 
       * 如果您是独立客户，请在href文本字段中，指定链接网页的完整URL路径。
 
@@ -304,9 +304,9 @@ ht-degree: 9%
 
    有关更多信息，请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
-   * 点按&#x200B;**[!UICONTROL 体验片段]**。
+   * 选择&#x200B;**[!UICONTROL 体验片段]**。
 
-      * 如果您是AEM Sites客户，请点按“搜索”图标（放大镜）以打开体验片段页面。 要返回到热点管理页面，请点按您要使用的体验片段，然后点按页面右上角的选择。
+      * 如果您是Experience Manager站点客户，请选择搜索图标（放大镜）以打开体验片段页面。 要返回到热点管理页面，请选择要使用的体验片段，然后在页面的右上角，选择&#x200B;**[!UICONTROL 选择]**。
 请参阅[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)。
 
       * 指定在横幅上显示的体验片段的宽度和高度。
@@ -318,14 +318,14 @@ ht-degree: 9%
 
    您还可以预览轮播横幅的外观。 请参阅[（可选）预览传送横幅](#optional-previewing-carousel-banners)。
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 发布轮播集。 发布后会创建可在您的网站页面上使用的嵌入代码或URL。 如果您是Experience Manager站点客户，请将轮播集直接添加到您的网页。
 
    请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    请参阅[将轮播集添加到您的网站登录页面](#adding-a-carousel-banner-to-your-website-page)
 
-## 编辑轮播集{#editing-carousel-sets}
+## 编辑轮播集 {#editing-carousel-sets}
 
 >[!NOTE]
 必须将非管理用户添加到&#x200B;**[!UICONTROL dam-users]**&#x200B;组，才能创建或编辑传送横幅。 如果您在创建或编辑时遇到问题，请咨询系统管理员，系统管理员可以将您添加到&#x200B;**[!UICONTROL dam-users]**&#x200B;组。
@@ -339,58 +339,59 @@ ht-degree: 9%
 * 删除轮播集。
 * 添加或编辑热点和图像映射。 另请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
-**要编辑轮播集，请执行以下操作：**
+**要编辑传送集，请执行以下操作：**
 
 1. 执行以下任一操作：
 
-   * 将鼠标悬停在轮播集资产上，然后点按&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
-   * 将鼠标悬停在轮播集资产上，点按&#x200B;**[!UICONTROL 选择]**（复选标记图标），然后点按工具栏中的&#x200B;**[!UICONTROL 编辑]**。
+   * 将鼠标悬停在“轮播集”资产上，然后选择&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
+   * 将鼠标悬停在轮播集资产上，选择&#x200B;**[!UICONTROL 选择]**（复选标记图标），然后在工具栏中，选择&#x200B;**[!UICONTROL 编辑]**。
 
-   * 点按“轮播集”资产，然后点按页面左上角的&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
+   * 选择“轮播集”资产，然后在页面的左上角选择&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
 
 1. 要编辑轮播集，请执行以下任一操作：
 
-   * 要添加幻灯片，请点按&#x200B;**[!UICONTROL 添加幻灯片]**&#x200B;图标。 导航到要添加到该幻灯片的资产，然后点按或单击复选标记。
+   * 要添加幻灯片，请选择&#x200B;**[!UICONTROL 添加幻灯片]**&#x200B;图标。 导航到要添加到该幻灯片的资产，然后选择复选标记。
    * 要对幻灯片重新排序，请将幻灯片拖到新位置（选择重新排序图标以移动项目）。
-   * 要添加热点或图像映射，请单击热点或图像映射图标，然后参阅[添加热点和图像映射](#adding-hotspots-or-image-maps-to-an-image-banner)。
-   * 要编辑轮播集的外观或行为，请点按&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡或&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡，然后设置所需的选项。
+   * 要添加热点或图像映射，请选择热点或图像映射图标，然后参阅[添加热点和图像映射到图像横幅](#adding-hotspots-or-image-maps-to-an-image-banner)。
+   * 要编辑轮播集的外观或行为，请选择&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡或&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡，然后设置所需的选项。
    * 要编辑热点或图像映射，请在相应的幻灯片上选择热点或图像映射。 在&#x200B;**[!UICONTROL Actions]**&#x200B;选项卡下，进行更改。
-   * 要删除幻灯片，请将其选中，然后点按工具栏中的&#x200B;**[!UICONTROL 删除幻灯片]**。
-   * 要应用预设，请点按页面右上角附近的&#x200B;**[!UICONTROL 预设]**&#x200B;下拉列表，然后选择查看器预设。
-   * 要删除整个轮播集，请导航到轮播集，将其选中，然后点按&#x200B;**[!UICONTROL Delete]**。
+   * 要删除幻灯片，请选择它，然后选择工具栏中的&#x200B;**[!UICONTROL 删除幻灯片]**。
+   * 要应用预设，请在页面右上角附近，选择&#x200B;**[!UICONTROL 预设]**&#x200B;下拉列表，然后选择查看器预设。
+   * 要删除整个轮播集，请导航到轮播集，将其选中，然后选择&#x200B;**[!UICONTROL Delete]**。
 
    >[!NOTE]
    如果您正在使用热点编辑交互式图像并裁剪图像，则热点会被删除。
 
-## （可选）预览传送横幅{#optional-previewing-carousel-banners}
+## （可选）预览传送横幅 {#optional-previewing-carousel-banners}
 
 您可以使用“预览”来查看轮播横幅对客户的显示方式。 使用“预览”还可以测试轮播横幅的热点和图像映射，以确保它们按预期运行。
 
 当您对轮播横幅满意时，可以发布该横幅。
-请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。如果您的交互式内容具有包含相对URL的链接，特别是指向AEM Sites页面的链接，则无法使用基于URL的链接方法。
+请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
+请参阅[将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 您可以从轮播编辑器（首选方法）或&#x200B;**[!UICONTROL 查看器]**&#x200B;列表预览轮播横幅。
 
-**要预览轮播横幅，请执行以下操作：**
+**（可选）要预览传送横幅，请执行以下操作：**
 
-1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，导航到您创建的现有轮播横幅，然后点按以将其打开。
-1. 点按&#x200B;**[!UICONTROL 编辑]**。
+1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，导航到您创建的现有轮播横幅，然后选择以将其打开。
+1. 选择&#x200B;**[!UICONTROL 编辑]**。
 1. 在工具栏右角的查看器预设列表中，选择查看器以预览轮播横幅。
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. 点按&#x200B;**[!UICONTROL 预览]**。
-1. 要测试其关联的操作，请点按图像上的热点或图像映射。
+1. 选择&#x200B;**[!UICONTROL 预览]**。
+1. 要测试其关联的操作，请选择图像上的热点或图像映射。
 
 **要从“查看器”列表预览轮播横幅，请执行以下操作：**
 
-1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，导航到您创建的现有轮播横幅，然后点按以将其打开。
-1. 在“预览”页面的左上角附近，单击内容图标。
-1. 在页面左侧面板的&#x200B;**[!UICONTROL 查看器]**&#x200B;列表中，点按要使用的轮播横幅查看器预设的名称。
-1. 要测试其关联的操作，请点按图像上的热点或图像映射。
+1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，导航到您创建的现有轮播横幅，然后选择以将其打开。
+1. 在预览页面的左上角附近，选择内容图标。
+1. 在页面左侧面板的&#x200B;**[!UICONTROL 查看器]**&#x200B;列表中，选择要使用的轮播横幅查看器预设的名称。
+1. 要测试其关联的操作，请选择图像上的热点或图像映射。
 
-## 发布传送横幅{#publishing-carousel-banners}
+## 发布传送横幅 {#publishing-carousel-banners}
 
 要使用轮播，必须发布它。 发布轮播集时，会激活URL和嵌入代码。 它还会将轮播发到Dynamic Media云，该云与CDN集成以进行可扩展且性能卓越的交付。
 
@@ -400,12 +401,12 @@ ht-degree: 9%
 
 有关如何发布传送横幅的信息，请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 将轮播横幅添加到您的网站页面{#adding-a-carousel-banner-to-your-website-page}
+## 将轮播横幅添加到您的网站页面 {#adding-a-carousel-banner-to-your-website-page}
 
 在将横幅图像上传到横幅以创建轮播后，将热点或图像映射（或同时将其添加到横幅）或图像映射。 已发布轮播集。 您现在可以将其添加到现有网站页面。
 
 >[!NOTE]
-如果您是AEM Sites客户，则可以通过将交互式媒体组件拖动到页面来直接将轮播横幅添加到您的页面。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+如果您是Experience Manager站点客户，则可以通过将交互式媒体组件拖动到您的页面，将轮播横幅直接添加到您的页面。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 但是，如果您是独立的Experience Manager资产客户，则可以手动将轮播横幅添加到您的网站登录页面。
 
@@ -415,11 +416,11 @@ ht-degree: 9%
 1. 将您从Experience Manager资产复制的嵌入代码添加到您的网页。
 复制的嵌入代码是响应式的，因此会自动适合页面的嵌入区域。
 
-## 将轮播横幅与现有概览{#integrating-the-carousel-banner-with-an-existing-quickview}集成
+## 将轮播横幅与现有概览相集成 {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-注意：仅当您是独立的AEM Assets客户时，此步骤才适用。
+注意：仅当您是独立的Experience Manager资产客户时，此步骤才适用。
 
-此过程中的最后一步是将轮播横幅与您网站上的现有概览实施集成。 每个概览实施都是独一无二的，需要一种特定的方法，通常需要前端IT人员的协助。
+此过程的最后一个步骤是将轮播横幅与您网站上的现有概览实施集成。 每个概览实施都是独一无二的，需要一种特定的方法，通常需要前端IT人员的协助。
 
 现有的概览实施通常表示在网页上发生的一系列相互关联的操作，这些操作按以下顺序发生：
 
@@ -433,7 +434,7 @@ ht-degree: 9%
 
 这些调用不表示独立的公共API调用，网页逻辑可从任意步骤中调用这些调用。 相反，这些调用属于链式调用，即，每个后续步骤都隐藏在前一步的最后阶段（回调）。
 
-在轮播横幅替换步骤1和部分步骤2的同时，当用户单击热点或图像映射时，此类交互由查看者处理。 查看器会向网页返回一个事件，其中包含之前添加的所有热点或图像映射数据。
+在轮播横幅替换步骤1和部分步骤2的同时，当用户选择热点或图像映射时，此类交互由查看者处理。 查看器会向网页返回一个事件，其中包含之前添加的所有热点或图像映射数据。
 
 在此类事件处理程序中，前端代码会执行下列操作：
 
@@ -441,7 +442,7 @@ ht-degree: 9%
 * 根据热点或图像映射数据构建概览URL。
 * 触发从后端加载概览并将其呈现在屏幕上以供显示的过程。
 
-由AEM Assets返回的嵌入代码已拥有一个现成的事件处理程序，该处理程序已被注释掉。
+由Experience Manager资产返回的嵌入代码已经有一个现成的事件处理程序，该处理程序已被注释掉。
 
 因此，只需取消对该代码的注释，并用针对特定网页的代码来替换虚拟处理程序主体即可。
 
@@ -453,4 +454,4 @@ ht-degree: 9%
 
 ## 使用概览创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-请参阅[使用快速视图创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
+请参阅[使用Quickview](/help/assets/dynamic-media/custom-pop-ups.md)创建自定义弹出窗口Windows®。
