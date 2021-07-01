@@ -1,14 +1,14 @@
 ---
 title: 优化图像质量的最佳实践
-description: 了解使用Dynamic Media优化图像资产质量的最佳实践。
+description: 了解可帮助您使用Dynamic Media优化图像资产质量的最佳实践。
 contentOwner: Rick Brough
 feature: 资产管理
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1478'
-ht-degree: 48%
+source-wordcount: '1480'
+ht-degree: 47%
 
 ---
 
