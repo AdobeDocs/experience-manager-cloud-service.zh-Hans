@@ -5,20 +5,20 @@ contentOwner: Rick Brough
 feature: 图像预设，查看器预设
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '3435'
+source-wordcount: '3446'
 ht-degree: 1%
 
 ---
 
-# 关于批集预设{#about-bsp}
+# 关于批集预设 {#about-bsp}
 
 在您将资产文件单独或使用批量摄取将资产文件上传到文件夹时，使用&#x200B;**[!UICONTROL 批量集预设]**&#x200B;创建并组织图像集或旋转集中的多个资产。 您可以在[!DNL Dynamic Media]中计划的资产导入作业旁边运行预设。 每个预设都是一组唯一命名的自包含说明，这些说明定义了如何使用与预设方法中定义的命名约定相匹配的图像来构建图像集或旋转集。
 
 >[!IMPORTANT]
 >
->如果您在[!DNL Dynamic Media Classic]中使用了批集预设，并且要作为Cloud Service从[!DNL Dynamic Media Classic]迁移到Adobe Experience Manager，请在[!DNL Adobe Experience Manager as a Cloud Service]中手动重新创建批集预设定义。
+>您是否在[!DNL Dynamic Media Classic]中使用批量集预设，并从[!DNL Dynamic Media Classic]迁移到Adobe Experience Manager作为Cloud Service? 如果存在，则必须在[!DNL Adobe Experience Manager as a Cloud Service]中手动重新创建批集预设定义。
 
 **最佳实践**  — 使用批集预设时，Adobe建议执行以下工作流：
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 1. 图像集或旋转集将在所需的文件夹中自动生成。
 1. 发布图像集或旋转集。 请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 为图像集或旋转集{#creating-bsp}创建批集预设
+## 为图像集或旋转集创建批集预设 {#creating-bsp}
 
 要创建批集预设，您应该对正则表达式有一些熟悉和了解。
 
@@ -66,15 +66,15 @@ ht-degree: 1%
 
 **要为图像集或旋转集创建批集预设，请执行以下操作：**
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 选择Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
-1. 在&#x200B;**[!UICONTROL 批量集预设]**&#x200B;页面右上角附近，点按&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL 批量集预设]**&#x200B;页面右上角附近，选择&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 创建批集预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 预设名称]**&#x200B;文本字段中，输入描述性名称。 如果您稍后决定更改预设名称，则该预设名称将不可编辑。
 
 1. 在&#x200B;**[!UICONTROL 预设类型]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL ImageSet]**&#x200B;或&#x200B;**[!UICONTROL SpinSet]**。 确保选择正确的预设类型；以后无法编辑。
-1. 点按&#x200B;**[!UICONTROL 创建]**。
+1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 编辑批集预设]**&#x200B;页面右侧的&#x200B;**[!UICONTROL 预设详细信息]**&#x200B;和&#x200B;**[!UICONTROL 设置命名约定]**标题下，设置所需的可编辑选项。
 要了解有关可供您使用的可编辑选项的更多信息，请参阅[预设详细信息、设置命名约定和规则结果 — RegX选项](#features-options-bsp)。
 
@@ -82,24 +82,24 @@ ht-degree: 1%
 
 1. 创建一个或多个正则表达式组。
 
-   * 在“**[!UICONTROL 编辑批集预设]**”页左侧的&#x200B;**[!UICONTROL 匹配]**、**[!UICONTROL 基本名称]**&#x200B;或&#x200B;**[!UICONTROL 序列排序]**&#x200B;下，点按&#x200B;**[!UICONTROL 添加组]**。
+   * 在“**[!UICONTROL 编辑批集预设]**”页左侧的“**[!UICONTROL 匹配]**”、“**[!UICONTROL 基本名称]**”或“**[!UICONTROL 序列排序]**”下，选择“**[!UICONTROL 添加组]**”。
    * **[!UICONTROL Match]**&#x200B;字段为必填字段。 **[!UICONTROL 只有]** 在匹配字段尚未通 **** 过括号分组指定基本名称时，“基本名称”才是必需的。**[!UICONTROL 序列]** 排序是可选的。
    * 使用组表单中的下拉列表和文本框，指定要用于为图像集或旋转集资产成员定义命名标准的表达式组。
-      * 当您选择并指定组的表达式时，请注意实际正则表达式语法反映在页面右下方的&#x200B;**[!UICONTROL 规则结果 — RegX]**&#x200B;标题下。 要查看右下方更新的正则表达式字符串，请点按表单区域外的任意位置。 这些正则表达式字符串表示您要在搜索[!DNL Dynamic Media]资产以创建图像集或旋转集时匹配的模式。
-      * 要删除已添加的组，请点按&#x200B;**[!UICONTROL X]**。
+      * 当您选择并指定组的表达式时，请注意实际正则表达式语法反映在页面右下方的&#x200B;**[!UICONTROL 规则结果 — RegX]**&#x200B;标题下。 要查看在右下方更新的正则表达式字符串，请选择表单区域外的任意位置。 这些正则表达式字符串表示您要在搜索[!DNL Dynamic Media]资产以创建图像集或旋转集时匹配的模式。
+      * 如果已添加组并要删除该组，请选择&#x200B;**[!UICONTROL X]**。
    * 添加两个或多个组时，在&#x200B;**[!UICONTROL 和]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 和]**&#x200B;将新添加的组与之前添加的任何表达式组连接起来。 或者，选择&#x200B;**[!UICONTROL Or]**&#x200B;以在上一个表达式组与您创建的新组之间添加交替。 **[!UICONTROL Or]**&#x200B;操作数由在正则表达式语法本身中使用垂直行字符`|`来定义。
 
 1. 执行下列操作之一：
 
-   * 要添加另一个新组，请在&#x200B;**[!UICONTROL Match]**、**[!UICONTROL Base Name]**&#x200B;或&#x200B;**[!UICONTROL Sequencing Order]**&#x200B;下，点按&#x200B;**[!UICONTROL Add Group]**。 创建另一个正则表达式组（与上一步中的操作相同）。
+   * 要添加另一个新组，请在&#x200B;**[!UICONTROL Match]**、**[!UICONTROL Base Name]**&#x200B;或&#x200B;**[!UICONTROL Sequencing Order]**&#x200B;下，选择&#x200B;**[!UICONTROL Add Group]**。 创建另一个正则表达式组（与上一步中的操作相同）。
    * 查看&#x200B;**[!UICONTROL 规则结果 — RegX]**&#x200B;区域中的正则表达式语法。 如果必须更改语法，请在页面左侧的相应组中进行编辑。
    * 如果已创建完表达式组，请继续下一步。
 
-1. 在该页面的右上角，点按&#x200B;**[!UICONTROL 保存]**。
+1. 在页面的右上角，选择&#x200B;**[!UICONTROL Save]**。
 
 现在，您可以将批集预设应用到资产文件夹。 然后，您将资产上传到该文件夹。 此工作流会自动生成图像集或旋转集。 请参阅[关于将批集预设应用到资产文件夹](#apply-bsp)。
 
-### 预设详细信息、设置命名约定和规则结果 — RegX选项{#features-options-bsp}
+### 预设详细信息、设置命名约定和规则结果 — RegX选项 {#features-options-bsp}
 
 创建或编辑批集预设时，“编辑批集预设”]**页面上提供了这些选项。**[!UICONTROL 
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 | 资产命名约定 — 基本名称 | 只读. 根据您选择的“基本名称”表单选项或您输入的原始代码显示正则表达式语法。 |
 | 序列排序 — 匹配 | 只读. 根据您选择的表单选项或您输入的原始代码显示正则表达式语法。 |
 
-## 关于将批集预设应用到资产文件夹{#apply-bsp}
+## 关于将批集预设应用到资产文件夹 {#apply-bsp}
 
 当您将批集预设分配给一个或多个资产文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的预设。
 
@@ -140,21 +140,21 @@ ht-degree: 1%
 
 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->
 
-### 从“批集预设”页面{#apply-bsp-to-folders-via-bsp-page}将批集预设应用到资产文件夹
+### 从“批集预设”页面将批集预设应用到资产文件夹 {#apply-bsp-to-folders-via-bsp-page}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要应用于文件夹的每个批集预设的复选框。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 将批量预设应用到文件夹]**。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 将批量预设应用到文件夹]**。
 1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;页面上，选中要应用批集预设的每个文件夹的复选框。
-1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 应用]**。
+1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;页面的右上角，选择&#x200B;**[!UICONTROL 应用]**。
 
-### 从资产文件夹的“属性”页面{#apply-bsp-to-folders-via-properties}应用批集预设
+### 从资产文件夹的“属性”页面应用批集预设 {#apply-bsp-to-folders-via-properties}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
-1. 导航到要应用一个或多个批集预设的文件夹。
+1. 选择Experience Manager徽标，然后转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**。
+1. 导航到要在其中应用一个或多个批集预设的文件夹。
 1. 在页面的&#x200B;**[!UICONTROL 名称]**&#x200B;列左侧，选中文件夹的复选框。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
-1. 在文件夹的“属性”页面上，点按&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 属性]**。
+1. 在文件夹的“属性”页面上，选择&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -162,11 +162,11 @@ ht-degree: 1%
 
    如果“**[!UICONTROL 预设名称]**”下拉列表框中不存在批集预设名称，则表示您尚未创建任何批集预设。 请参阅[为图像集或旋转集](#creating-bsp)创建批集预设。
 
-   要删除应用的批集预设，请点按预设类型右侧的&#x200B;**[!UICONTROL X]**。
+   要删除应用的批集预设，请选择预设类型右侧的&#x200B;**[!UICONTROL X]**。
 
-1. 在页面的右上角，点按&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 在页面的右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
-## 编辑批集预设{#edit-bsp}
+## 编辑批集预设 {#edit-bsp}
 
 您可以编辑已创建的现有批集预设。 您可以更改为资产命名约定或序列顺序创建的任何表达式组。 如果需要，您还可以更新目标文件夹并设置命名约定。
 
@@ -178,86 +178,86 @@ ht-degree: 1%
 
 **要编辑批集预设，请执行以下操作：**
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 选择Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要更改的批集预设。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑批集预设]**。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 编辑批集预设]**。
 1. 根据需要编辑预设。
-1. 在&#x200B;**[!UICONTROL 批量集预设]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 保存]**。
+1. 在&#x200B;**[!UICONTROL 批量集预设]**&#x200B;页面的右上角，选择&#x200B;**[!UICONTROL 保存]**。
 
-## 复制现有的批集预设{#copy-bsp}
+## 复制现有批集预设 {#copy-bsp}
 
 您可以复制现有的批集预设，以避免手动重新创建复杂的预设，或者只需重命名预设即可。 但是，您无法更改使用的预设类型（图像集或旋转集）。
 
 如果复制由资产文件夹引用的现有预设，则这些文件夹不会受到影响。
 
-**要复制现有批集预设，请执行以下操作：**
+**复制现有的批集预设：**
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 选择Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中要复制的批集预设复选框。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL Copy]**。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL Copy]**。
 1. 在&#x200B;**[!UICONTROL 复制批量集预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 标题]**&#x200B;文本框中，为预设键入新名称。
 
    ![bsp-copy2.png](/help/assets/assets-dm/bsp-copy2.png)
 
-1. 点按&#x200B;**[!UICONTROL 复制]**。
+1. 选择&#x200B;**[!UICONTROL Copy]**。
 
-## 关于从文件夹{#remove-bsp-from-folder}中删除批集预设
+## 关于从文件夹中删除批集预设 {#remove-bsp-from-folder}
 
 当您从文件夹删除批集预设时，您上传到这些文件夹的任何新资产都不会对这些资产应用批次集预设。 文件夹中已添加到图像集或基于批量集预设（已应用于文件夹）的现有资产会继续按原样显示。
 
-如果要改为从文件夹中删除&#x200B;**&#x200B;预设，请参阅[删除批集预设](#delete-bsp)。
+如果要改为从文件夹中&#x200B;*删除*&#x200B;预设，请参阅[删除批集预设](#delete-bsp)。
 
 可使用两种方法从文件夹中删除批集预设。
 
 * [通过“批集预设”页面从文件夹删除批集预设](#remove-bsp-from-folders-via-bsp-page)  — 此方法为您提供了最大的灵活性。您可以从一个或多个文件夹中删除一个或多个预设。
 * [从文件夹的“属性”页面中删除批集预设](#remove-bsp-from-folders-via-properties)  — 此方法允许您仅从单个文件夹中删除一个或多个批集预设。
 
-### 通过“批集预设”页面{#remove-bsp-from-folders-via-bsp-page}从文件夹中删除批集预设
+### 通过“批集预设”页面从文件夹删除批集预设 {#remove-bsp-from-folders-via-bsp-page}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 选择Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中您要从一个或多个文件夹中删除的一个或多个批集预设的复选框。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 从文件夹中删除批量预设]**。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 从文件夹中删除批量预设]**。
 
 1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;页面上，选择一个或多个要删除批集预设的文件夹。
-1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;页面的右上角，点按&#x200B;**[!UICONTROL 删除]**。
+1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;页面的右上角，选择&#x200B;**[!UICONTROL 删除]**。
 
    ![bsp-remove-from-folders3.png](/help/assets/assets-dm/bsp-remove-from-folders3.png)
 
-1. 在&#x200B;**[!UICONTROL 删除配置文件]**&#x200B;对话框中，点按&#x200B;**[!UICONTROL 删除]**。
+1. 在&#x200B;**[!UICONTROL 删除配置文件]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 删除]**。
 
-### 从文件夹的“属性”页面{#remove-bsp-from-folders-via-properties}中删除批集预设
+### 从文件夹的“属性”页面中删除批集预设 {#remove-bsp-from-folders-via-properties}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
 1. 导航到要删除一个或多个批集预设的文件夹。
 1. 在页面的&#x200B;**[!UICONTROL 名称]**&#x200B;列左侧，选中文件夹的复选框。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 属性]**。
-1. 在文件夹的“属性”页面上，点按&#x200B;**[!UICONTROL Dynamic Media处理]**。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 属性]**。
+1. 在文件夹的“属性”页面上，选择&#x200B;**[!UICONTROL Dynamic Media处理]**。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
-1. 在&#x200B;**[!UICONTROL 批量集预设]**&#x200B;下，点按预设类型右侧的&#x200B;**[!UICONTROL X]**。
+1. 在&#x200B;**[!UICONTROL 批量集预设]**&#x200B;下，选择预设类型右侧的&#x200B;**[!UICONTROL X]**。
 
-1. 在页面的右上角，点按&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 在页面的右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
-## 删除批集预设{#delete-bsp}
+## 删除批集预设 {#delete-bsp}
 
 您可以删除批集预设，以从[!DNL Dynamic Media]中永久删除这些预设。 也就是说，它们不再显示在文件夹&#x200B;**[!UICONTROL 属性]**&#x200B;页面的&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡的[!UICONTROL 批集预设]页面上，也不显示在&#x200B;**[!UICONTROL 批集预设]**&#x200B;下拉列表中。 因此，重新处理文件夹时或在文件夹中上传新资产时，预设不会应用于现有资产。
 
 如果删除之前应用于一个或多个文件夹的预设，则从这些文件夹中的资产创建的任何图像集或旋转集将继续按原样显示。
 
-如果您希望从文件夹中删除&#x200B;*预设，请参阅[从文件夹中删除批集预设](#remove-bsp-from-folder)。*
+如果您希望从文件夹中&#x200B;*删除*&#x200B;预设，请参阅[从文件夹中删除批集预设](#remove-bsp-from-folder)。
 
 **要删除批集预设，请执行以下操作：**
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量集预设]**。
 1. 在&#x200B;**[!UICONTROL 批集预设]**&#x200B;页面的&#x200B;**[!UICONTROL 预设名称]**&#x200B;列左侧，选中一个或多个要删除的批集预设的复选框。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 删除批集预设]**。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 删除批集预设]**。
 
    ![bsp-delete2.png](/help/assets/assets-dm/bsp-delete2.png)
 
-1. 在&#x200B;**[!UICONTROL 删除批集预设]**&#x200B;对话框中，点按&#x200B;**[!UICONTROL 删除]**。
+1. 在&#x200B;**[!UICONTROL 删除批集预设]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 删除]**。
 
-   如果要删除的预设被资产文件夹引用，请点按&#x200B;**[!UICONTROL 强制删除]**。
+   如果要删除的预设被资产文件夹引用，请改为选择&#x200B;**[!UICONTROL 强制删除]**。
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 
@@ -265,6 +265,6 @@ ht-degree: 1%
 >
 >* [图像集](/help/assets/dynamic-media/image-sets.md)
 * [旋转集](/help/assets/dynamic-media/spin-sets.md)
-* [在Dynamic Media的文件夹级别配置选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  — 请参阅主题中的“同步模式”，了解有关将单个文件夹同步到的更多 [!DNL Dynamic Media]信息。
-* [在Cloud Services中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  — 请参阅主题中的“Dynamic Media同步模式”，了解有关将所有文件夹同步到的更多 [!DNL Dynamic Media]信息。
+* [在Dynamic Media中在文件夹级别配置选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  — 如果要了解有关将单个文件夹同步到的更多信息，请参阅主题中的“同步模式”  [!DNL Dynamic Media]。
+* [在Cloud Services中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  — 如果您想了解有关将所有文件夹同步到的更多信息，请参阅主题中的“Dynamic Media同步模式” [!DNL Dynamic Media]。
 
