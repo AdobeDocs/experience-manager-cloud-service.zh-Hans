@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -211,5 +211,21 @@ AEM Screens as a Cloud Service的发布日期是2021年6月24日。
 ### 错误修复 {#bug-fixes-ctt-latest}
 
 * 在创作实例上停止摄取时，UI会将之前在发布实例上完成的摄取从`FINISHED`覆盖到`STOPPED`。 此问题已修复。
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### 发布日期 {#release-date-bpa}
+
+Best Practices Analyzer v2.1.16的发布日期是2021年6月30日。
+
+### 新增功能 {#what-is-new-bpa-latest}
+
+* 能够检测并报告`/content/dam`下文件夹中缺少的子节点。
+
+* 能够检测并报告所使用的最佳实践分析器版本。
+
+### 错误修复 {#bug-fixes-bpa-latest}
+
+* 修复了与不支持的存储库结构(URS)相关的日志记录错误。
 
 
