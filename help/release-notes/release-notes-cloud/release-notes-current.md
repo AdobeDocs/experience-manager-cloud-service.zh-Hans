@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
+source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1524'
 ht-degree: 3%
 
 ---
@@ -152,8 +152,6 @@ AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日
    * 使用XML数据填充模板文件，以生成文档。
    * 以各种格式生成输出表单，包括非交互式PDF打印流。
    * 从XFA表单PDF和Adobe Acrobat表单(AcroForm)生成打印PDF。
-
-* **变量数据外部器**:您可以在由您的组织管理的外部存储系统上保存AEM Workflow变量的数据。
 
 您可以写信给[!DNL formscsbeta@adobe.com]注册测试版程序。
 
