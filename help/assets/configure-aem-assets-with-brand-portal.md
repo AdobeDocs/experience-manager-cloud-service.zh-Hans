@@ -5,18 +5,18 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution，配置
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9d219b8de11fd977dab4f75468836892cb13364a
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2409'
 ht-degree: 8%
 
 ---
 
-# 使用Brand Portal {#configure-aem-assets-with-brand-portal}将AEM Assets配置为[!DNL Cloud Service]
+# 使用AEM Assets将Brand Portal配置为[!DNL Cloud Service] {#configure-aem-assets-with-brand-portal}
 
 通过配置Adobe Experience Manager Assets Brand Portal，您可以将已批准的品牌资产作为[!DNL Cloud Service]实例从Adobe Experience Manager Assets发布到Brand Portal，并分发给Brand Portal用户。
 
-## 使用Cloud Manager {#activate-brand-portal}激活Brand Portal
+## 使用Cloud Manager激活Brand Portal {#activate-brand-portal}
 
 Cloud Manager用户将AEM Assets的Brand Portal激活为[!DNL Cloud Service]实例。 激活工作流会在后端创建所需的配置(授权令牌、IMS配置和Brand Portal云服务)，并反映Cloud Manager中Brand Portal租户的状态。 激活Brand Portal后，AEM Assets用户可以将资产发布到Brand Portal，并将其分发给Brand Portal用户。
 
@@ -61,7 +61,7 @@ Cloud Manager用户将AEM Assets的Brand Portal激活为[!DNL Cloud Service]实�
 >如果现有的Brand Portal云配置和作为[!DNL Cloud Service]实例的AEM Assets使用的是相同的IMS组织(org1)，则您只需从Cloud Manager中激活Brand Portal。
 
 **另请参阅**:
-* [在AEM Assets中添加用户和角色作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [在AEM Assets中添加用户和角色作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
 * [在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
 
@@ -178,7 +178,7 @@ Cloud Manager用户将AEM Assets的Brand Portal激活为[!DNL Cloud Service]实�
 >
 >如果您在激活Brand Portal租户时遇到任何问题，请联系Adobe支持。
 
-## 使用Adobe开发人员控制台{#manual-configuration}进行手动配置
+## 使用Adobe开发人员控制台进行手动配置 {#manual-configuration}
 
 以下部分介绍如何使用“Adobe开发人员控制台”，使用Brand Portal手动将AEM Assets配置为[!DNL Cloud Service]。
 
@@ -339,7 +339,7 @@ IMS 配置包括两个步骤：
 
 -->
 
-### 配置IMS帐户{#create-ims-account-configuration}
+### 配置IMS帐户 {#create-ims-account-configuration}
 
 确保您已执行以下步骤：
 
