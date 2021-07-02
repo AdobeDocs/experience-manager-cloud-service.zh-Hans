@@ -4,9 +4,9 @@ description: 与[!DNL Adobe Experience Manager 6.5相比，对 [!DNL Adobe Exper
 feature: 发行信息
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '967'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 开发和测试资产微服务 {#asset-microservices}
 
-资产微服务使用云服务提供资产的可扩展且可复原的处理。 Adobe可管理云服务，以优化处理不同资产类型和处理选项。 资产微服务有助于避免使用第三方渲染工具和方法（如ImageMagick）并简化配置，同时为常见文件类型提供现成功能。 现在，您可以处理广泛的文件类型[](/help/assets/file-format-support.md)，这些文件类型的开箱即用格式比以前版本的Experience Manager所能处理的格式多。 例如，现在可以提取PSD和PSB格式的缩略图，而以前需要的第三方解决方案（如ImageMagick）就可以了。 不能将ImageMagick的复杂配置用于[!UICONTROL 处理配置文件]配置。 使用[!DNL Dynamic Media]进行高级FFmpeg视频转码，并使用处理配置文件进行MP4视频的[基本转码](/help/assets/manage-video-assets.md#transcode-video)。
+资产微服务使用云服务提供资产的可扩展且可复原的处理。 Adobe可管理云服务，以优化处理不同资产类型和处理选项。 资产微服务有助于避免使用第三方渲染工具和方法（如[!DNL ImageMagick]）并简化配置，同时为常见文件类型提供现成功能。 现在，您可以处理广泛的文件类型[](/help/assets/file-format-support.md)，这些文件类型的开箱即用格式比以前版本的Experience Manager所能处理的格式多。 例如，现在可以提取PSD和PSB格式的缩略图，以前需要的第三方解决方案如[!DNL ImageMagick]。 不能将[!DNL ImageMagick]的复杂配置用于[!UICONTROL 处理配置文件]配置。 使用[!DNL Dynamic Media]进行高级FFmpeg视频转码，并使用处理配置文件进行MP4视频的[基本转码](/help/assets/manage-video-assets.md#transcode-video)。
 
 资产微服务是一种云原生服务，在Cloud Manager中管理的客户程序和环境中自动进行配置并连接到[!DNL Experience Manager]。 要扩展或自定义[!DNL Experience Manager]，开发人员可以使用现有内容或资产以及在云环境中生成的演绎版，以使用、显示、下载资产来测试和验证其代码。
 
