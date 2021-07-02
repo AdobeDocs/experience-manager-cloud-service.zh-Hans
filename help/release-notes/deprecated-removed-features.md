@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 发行说明特定于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已弃用和已移除的功能。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 41%
+source-wordcount: '483'
+ht-degree: 38%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | ------------ | ------------------ | ----------- |
 | [!DNL Assets] | `DAM Asset Update` 工作流处理摄取的图像。 | 资产摄取现在使用[资产微服务](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 将资产直接上传到[!DNL Experience Manager]。请参阅[已弃用的资产上传API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二进制上传](/help/assets/add-assets.md)。有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
-| [!DNL Assets] | 不支持[工作流中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流步骤`DAM Asset Update`，包括如 ImageMagick 这类调用命令行工具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| [!DNL Assets] | [不支持工](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) 作流 `DAM Asset Update` 中的某些工作流步骤，包括如调用命令行工 [!DNL ImageMagick]具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 
 ## 已删除功能 {#removed-features}
