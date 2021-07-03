@@ -3,16 +3,16 @@ title: 时间轴中的活动流
 description: 本文介绍了如何在时间轴上显示资产的活动日志。
 contentOwner: AG
 feature: 资产报表，资产管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 37%
 
 ---
 
-# 查看活动流{#activity-stream-in-timeline}中的资产操作日志
+# 在活动流中查看资产操作日志 {#activity-stream-in-timeline}
 
 这项功能可将资产的活动日志显示在时间轴上。如果您在[!DNL Experience Manager Assets]中执行以下任何与资产相关的操作，活动流功能会更新时间轴以反映该活动。
 
