@@ -3,16 +3,16 @@ title: 资产分析
 description: 跟踪在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的用户评级和使用情况统计信息。
 contentOwner: AG
 feature: 资产分析，资产报表
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 9%
 
 ---
 
-# 资产分析{#asset-insights}
+# 资产分析 {#asset-insights}
 
 通过Adobe分析功能，您可以跟踪用户评级以及在第三方网站、营销活动和资产创意解决方案中使用的图像的使用情况统计信息。 它有助于深入了解图像的性能和受欢迎程度。
 
@@ -26,7 +26,7 @@ ht-degree: 9%
 >
 >仅支持对图像提供分析。
 
-## 查看图像{#viewing-statistics-for-an-image}的统计信息
+## 查看图像的统计信息 {#viewing-statistics-for-an-image}
 
 您可以从元数据页面查看资产分析得分。
 
@@ -63,7 +63,7 @@ ht-degree: 9%
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-## 查看图像{#viewing-aggregate-statistics-for-images}的聚合统计信息
+## 查看图像的聚合统计信息 {#viewing-aggregate-statistics-for-images}
 
 您可以使用&#x200B;**[!UICONTROL 分析视图]**&#x200B;同时查看文件夹中所有资产的分数。
 
@@ -85,7 +85,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## 配置资产分析{#configure-asset-insights}
+## 配置资产分析 {#configure-asset-insights}
 
 [!DNL Experience Manager Assets] 从获取第三方网站使用的数字资产的使用情况数 [!DNL Adobe Analytics]据。要使资产分析能够检索此数据并生成分析，请首先配置该功能以与[!DNL Adobe Analytics]集成。
 
@@ -107,7 +107,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 1. 单击&#x200B;**[!UICONTROL Authenticate]**。 在[!DNL Experience Manager]验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择一个Adobe Analytics报表包，您可以从中获取资产分析数据。 单击&#x200B;**[!UICONTROL 添加]**。
 1. 在[!DNL Experience Manager]设置报表包后，单击&#x200B;**[!UICONTROL 完成]**。
 
-### 页面跟踪器{#page-tracker}
+### 页面跟踪器 {#page-tracker}
 
 配置Adobe Analytics帐户后，将为您生成页面跟踪器代码。 要启用资产分析以跟踪第三方网站中使用的[!DNL Experience Manager]资产，请在网站代码中包含页面跟踪器代码。 在Assets中使用页面跟踪器实用程序生成页面跟踪器代码。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
