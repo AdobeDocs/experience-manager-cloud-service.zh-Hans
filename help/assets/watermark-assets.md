@@ -3,16 +3,16 @@ title: 对资产添加水印
 description: 向数字资产添加水印。
 contentOwner: AG
 feature: 资产管理，发布
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
-# 对资产添加水印{#watermark-assets}
+# 对资产添加水印 {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] 用于向图像添加数字水印。[!DNL Assets] 支持将图像作为水印应用到其他图像文件。水印可帮助用户验证资产的真实性和版权所有权。 此外，水印可用于表示文档的状态，如机密、草稿、有效性等。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. [将处理配置文件应用到文件夹](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以创建带水印的资产。
 
-## 提示和限制{#tips-limitations-bestpractices}
+## 提示和限制 {#tips-limitations-bestpractices}
 
 * 您可以使用单个配置对所有资产添加水印。 只有一幅图像用于水印，其宽度是固定的。
 * 您可以将水印放置在中心，而不进行拼贴。
