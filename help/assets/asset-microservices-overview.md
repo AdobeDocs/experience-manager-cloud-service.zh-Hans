@@ -3,9 +3,9 @@ title: 使用资产微服务处理资产
 description: 使用云原生且可扩展的资产处理微服务处理您的数字资产。
 contentOwner: AG
 feature: asset compute微服务，工作流，发行信息，资产处理
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 2%
