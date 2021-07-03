@@ -3,22 +3,22 @@ title: 如何编辑或添加元数据
 description: 了解 [!DNL Experience Manager Assets] 中的资产元数据，以及编辑资产元数据的各种方式。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 9%
 
 ---
 
-# 如何编辑或添加元数据{#how-to-edit-or-add-metadata}
+# 如何编辑或添加元数据 {#how-to-edit-or-add-metadata}
 
 元数据是有关可搜索资产的其他信息。 在您上传图像时，系统会自动提取该图像。 您可以编辑现有元数据或向现有字段添加新元数据属性（例如，当元数据字段为空时）。
 
 由于公司需要可控且可靠的元数据词汇，因此[!DNL Experience Manager Assets]不允许临时添加新的元数据属性。 尽管作者无法为资产添加新的元数据字段，但开发人员可以。 请参阅[为资产创建新元数据属性](meta-edit.md#editing-metadata-schema)。
 
-## 编辑资产{#editing-metadata-for-an-asset}的元数据
+## 编辑资产的元数据 {#editing-metadata-for-an-asset}
 
 要编辑元数据，请执行以下操作：
 
@@ -40,11 +40,11 @@ ht-degree: 9%
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
-## 编辑元数据架构{#editing-metadata-schema}
+## 编辑元数据架构 {#editing-metadata-schema}
 
 有关如何编辑元数据架构的详细信息，请参阅[编辑元数据架构表单](metadata-schemas.md#edit-metadata-schema-forms)。
 
-## 在AEM {#registering-a-custom-namespace-within-aem}中注册自定义命名空间
+## 在AEM中注册自定义命名空间 {#registering-a-custom-namespace-within-aem}
 
 您可以在AEM中添加自己的命名空间。 正如存在预定义的命名空间（如cq、jcr和sling）一样，您也可以拥有用于存储库元数据和xml处理的命名空间。
 
