@@ -3,16 +3,16 @@ title: 串联元数据
 description: 本文介绍了如何为资产定义级联元数据。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 12%
 
 ---
 
-# 串联元数据{#cascading-metadata}
+# 串联元数据 {#cascading-metadata}
 
 在捕获资产的元数据信息时，用户会在各种可用字段中提供信息。 您可以显示特定的元数据字段或字段值，这些字段值取决于在其他字段中选择的选项。 此类元数据的条件显示称为级联元数据。 换言之，您可以在特定元数据字段/值与一个或多个字段和/或其值之间创建依赖项。
 
@@ -27,7 +27,7 @@ ht-degree: 12%
 * 根据其他字段中指定的值更改特定字段显示的选项。
 * 根据其他字段中指定的值，在特定字段中设置默认元数据值。
 
-## 在[!DNL Experience Manager] {#configure-cascading-metadata-in-aem}中配置级联元数据
+## 在[!DNL Experience Manager]中配置级联元数据 {#configure-cascading-metadata-in-aem}
 
 假设您想要根据所选资产类型显示级联元数据。 一些示例
 
