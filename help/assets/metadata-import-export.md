@@ -3,20 +3,20 @@ title: 批量导入和导出资产元数据
 description: 本文介绍了如何批量导入和导出元数据。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 10%
 
 ---
 
-# 批量导入和导出资产元数据{#import-and-export-asset-metadata-in-bulk}
+# 批量导入和导出资产元数据 {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过导入CSV文件，对最近上传的资产或现有资产进行批量更新。 您还可以以CSV格式从第三方系统批量摄取资产元数据。
 
-## 导入元数据{#import-metadata}
+## 导入元数据 {#import-metadata}
 
 元数据导入是异步的，不会影响系统性能。 由于使用资产微服务执行元数据写回活动，因此同时更新多个资产的元数据可能会占用大量资源。 Adobe建议您规划精益服务器使用期间的任何批量操作，以便不会影响其他用户的性能。
 
@@ -39,7 +39,7 @@ AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 导入]**。 导入元数据后，系统会向您的通知收件箱发送通知。 导航到资产属性页面，并验证是否为资产正确导入了元数据值。
 
-要在导入元数据时添加日期和时间戳，请对日期和时间使用`YYYY-MM-DDThh:mm:ss.fff-00:00`格式。 日期和时间以`T`隔开， `hh`以24小时格式表示小时，`fff`以纳秒为单位，`-00:00`以时区偏移为单位。 例如， `2020-03-26T11:26:00.000-07:00`是2020年3月26日上午11:26:00:000（太平洋标准时间）。
+要在导入元数据时添加日期和时间戳，请对日期和时间使用`YYYY-MM-DDThh:mm:ss.fff-00:00`格式。 日期和时间以`T`隔开， `hh`以24小时格式表示小时，`fff`以纳秒为单位，`-00:00`以时区偏移为单位。 例如， `2020-03-26T11:26:00.000-07:00`是2020年3月26日（太平洋标准时间上午11:26:00.000）。
 
 >[!CAUTION]
 >
