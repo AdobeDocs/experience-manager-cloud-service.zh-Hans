@@ -3,16 +3,16 @@ title: 分发和共享资产、文件夹和收藏集
 description: 使用共享作为链接、下载和通过 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]等方法分发数字资产。
 contentOwner: AG
 feature: 资产管理、协作、资产分发
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 2%
 
 ---
 
-# 共享和分发在[!DNL Experience Manager] {#share-assets-from-aem}中管理的资产
+# 共享和分发[!DNL Experience Manager]中管理的资产 {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] 允许您与组织成员以及外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。使用以下方法将[!DNL Experience Manager Assets]中的资产共享为[!DNL Cloud Service]:
 
@@ -108,11 +108,11 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 下载和共享资产{#download-and-share-assets}
+## 下载和共享资产 {#download-and-share-assets}
 
 用户可以下载所需的资产，并在[!DNL Experience Manager]以外共享这些资产。 有关更多信息，请参阅[如何搜索资产](/help/assets/search-assets.md)、[如何下载资产](/help/assets/download-assets-from-aem.md)和[如何下载收藏集](manage-collections.md#download-a-collection)
 
-## 与创意专业人士共享资产{#share-with-creatives}
+## 与创意专业人士共享资产 {#share-with-creatives}
 
 营销人员和业务线用户可以使用
 
@@ -124,7 +124,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 共享资产的不同选项需要进行特定配置，并且具有特定的先决条件。
 
-### 配置资产链接共享{#asset-link-sharing}
+### 配置资产链接共享 {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
@@ -170,13 +170,13 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### 允许桌面操作与桌面应用程序{#desktop-actions}一起使用
+### 允许桌面操作与桌面应用程序一起使用 {#desktop-actions}
 
 在浏览器的[!DNL Assets]用户界面中，您可以浏览资产位置或签出并打开资产，以在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参阅 [!DNL Assets] web界面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)中的[启用桌面操作。
 
 ![使用桌面应用程序时，允许桌面操作用作快捷方式](assets/enable_desktop_actions.png)
 
-### 使用[!DNL Adobe Asset Link] {#configure-asset-link}的配置
+### 使用[!DNL Adobe Asset Link]的配置 {#configure-asset-link}
 
 Adobe资产链接可简化内容创建过程中创意人员与营销人员之间的协作。 它将[!DNL Adobe Experience Manager Assets]与[!DNL Creative Cloud]桌面应用程序[!DNL Adobe InDesign]、[!DNL Adobe Photoshop]和[!DNL Adobe Illustrator]连接。 通过[!DNL Adobe Asset Link]面板，创意人员无需离开他们最熟悉的创意应用程序即可访问和修改存储在[!DNL Assets]中的内容。
 
