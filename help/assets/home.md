@@ -2,27 +2,27 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] 指南'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 自助资源和文档链接'
 feature: 资产管理
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 31%
 
 ---
 
-# [!DNL Assets] as a  [!DNL Cloud Service] Guide  {#aem-assets-guide}
+# [!DNL Assets] as a  [!DNL Cloud Service] Guide {#aem-assets-guide}
 
 [!DNL Experience Manager Assets]作为[!DNL Cloud Service]提供以下自助资源。
 
-## 键[!DNL Assets]文章{#key-articles}
+## 关键[!DNL Assets]文章 {#key-articles}
 
 * [概述和新增功能](overview.md)
 * [显着更改](/help/assets/assets-cloud-changes.md)
 * [ [!DNL Assets] as a [!DNL Cloud Service]的架构](architecture.md)
 * [资产微服务概述](/help/assets/asset-microservices-overview.md)
 
-## [!DNL Experience Manager] 指南  {#aem-guides}
+## [!DNL Experience Manager] 指南 {#aem-guides}
 
 | 用户指南 | 描述 |
 |---|---|
