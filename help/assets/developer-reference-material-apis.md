@@ -3,20 +3,20 @@ title: ' [!DNL Assets]的开发人员引用'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 feature: API，Assets HTTP API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] 开发人员用例、 API和参考资料  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] 开发人员用例、 API和参考资料 {#assets-cloud-service-apis}
 
 本文包含针对[!DNL Assets]作为[!DNL Cloud Service]的开发人员的建议、参考材料和资源。 它包括新的资产上传模块、API引用，以及有关后处理工作流中提供支持的信息。
 
-## [!DNL Experience Manager Assets] API和操作  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API和操作 {#use-cases-and-apis}
 
 [!DNL Assets] as a提供 [!DNL Cloud Service] 了多个API以编程方式与数字资产交互。每个API都支持特定的用例，如下表所述。 [!DNL Assets]用户界面、[!DNL Experience Manager]桌面应用程序和[!DNL Adobe Asset Link]支持所有或部分操作。
 
@@ -64,7 +64,7 @@ ht-degree: 2%
 | 复制文件夹 | ✓ | ✓ | - | ✓ | - | - |
 | 移动文件夹 | ✓ | ✓ | - | ✓ | - | - |
 
-## 资产上传{#asset-upload}
+## 资产上传 {#asset-upload}
 
 在[!DNL Experience Manager]中，作为[!DNL Cloud Service]，您可以使用HTTP API直接将资产上传到云存储。 下面是上载二进制文件的步骤。 在外部应用程序中而不是在[!DNL Experience Manager] JVM中执行这些步骤。
 
@@ -85,7 +85,7 @@ ht-degree: 2%
 >[!NOTE]
 请参阅客户端代码以在开源[aem-upload库](https://github.com/adobe/aem-upload)中实施此方法。
 
-### 启动上载{#initiate-upload}
+### 启动上传 {#initiate-upload}
 
 将HTTPPOST请求提交到所需的文件夹。 资产会在此文件夹中创建或更新。 包括选择器`.initiateUpload.json`以指示请求启动二进制文件的上传。 例如，应创建资产的文件夹路径为`/assets/folder`。 POST请求为`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
 
@@ -123,7 +123,7 @@ ht-degree: 2%
 * `minPartSize` （数字）：如果有多个URI，则可能提供给其中任一URI的数据的最 `uploadURIs`小长度（以字节为单位）。
 * `maxPartSize` （数字）：如果有多个URI，则可能提供给其中任何一个的数据的最大长度(以字 `uploadURIs`节为单位)。
 
-### 上载二进制文件{#upload-binary}
+### 上载二进制文件 {#upload-binary}
 
 启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端会将二进制文件拆分为多个部分，并按顺序对每个URI发出每个部分的POST请求。 使用所有URI。 确保每个部件的大小在启动响应中指定的最小和最大大小范围内。 CDN边缘节点有助于加快请求的二进制文件上传。
 
@@ -135,7 +135,7 @@ ht-degree: 2%
 
 如果上传成功，服务器将使用`201`状态代码响应每个请求。
 
-### 完成上载{#complete-upload}
+### 完成上传 {#complete-upload}
 
 上传二进制文件的所有部分后，将HTTPPOST请求提交到初始数据提供的完整URI。 请求正文的内容类型应为`application/x-www-form-urlencoded`表单数据，其中包含以下字段。
 
@@ -158,7 +158,7 @@ ht-degree: 2%
 
 如果成功，服务器将回复`200`状态代码。
 
-### 开源上载库{#open-source-upload-library}
+### 开源上载库 {#open-source-upload-library}
 
 要了解有关上传算法的更多信息或构建您自己的上传脚本和工具，Adobe提供了开源库和工具：
 
@@ -179,13 +179,13 @@ ht-degree: 2%
 * [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)。
 
 
-## 资产处理和后处理工作流{#post-processing-workflows}
+## 资产处理和后处理工作流 {#post-processing-workflows}
 
 在[!DNL Experience Manager]中，资产处理基于使用[资产微服务](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)的&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;配置。 处理不需要开发人员扩展。
 
 对于后处理工作流配置，请使用带有自定义步骤的扩展的标准工作流。
 
-## 在后处理工作流{#post-processing-workflows-steps}中支持工作流步骤
+## 在后处理工作流中支持工作流步骤 {#post-processing-workflows-steps}
 
 从以前版本的[!DNL Experience Manager]升级的客户可以使用资产微服务来处理资产。 云原生资产微服务的配置和使用更简单。 不支持在以前版本的[!UICONTROL DAM更新资产]工作流中使用的一些工作流步骤。
 
