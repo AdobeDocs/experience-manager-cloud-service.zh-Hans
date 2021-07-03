@@ -3,8 +3,8 @@ title: 内容自动化以实现Creative Cloud集成
 description: 使用Creative Cloud集成生成资产的变体
 contentOwner: AG
 feature: 上传、资产处理、发布、Asset compute微服务、工作流
-role: Business Practitioner,Administrator
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+role: User,Admin
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
