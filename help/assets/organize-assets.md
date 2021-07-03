@@ -5,20 +5,20 @@ contentOwner: AG
 feature: 资产管理，标记，资产分发
 role: Business Practitioner
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 1%
 
 ---
 
-# 组织数字资产{#organize-digital-assets}
+# 组织数字资产 {#organize-digital-assets}
 
 Microsoft Office和PDF文档的所有数字资产、元数据和内容都会被提取并进行搜索。 搜索允许对资产进行复杂的筛选，并完全尊重正确的权限。 数字资产管理的元数据中详细介绍了元数据。
 
 AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方式组织它们，或者使用例如标记以无序、临时的方式组织它们。 用户可以在DAM资产编辑器中编辑标记，其中显示子资产、演绎版和元数据。
 
-## 创建文件夹{#create-folders}
+## 创建文件夹 {#create-folders}
 
 在组织资产集合（例如，所有&#x200B;*Nature*&#x200B;图像）时，您可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 AEM Assets不要求您组织文件夹中的资产以更好地工作。
 
@@ -31,7 +31,7 @@ AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方
 1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中，提供文件夹名称。 默认情况下，DAM会使用您提供的标题作为文件夹名称。 创建文件夹后，可以覆盖默认文件夹并指定其他文件夹名称。
 1. 单击&#x200B;**[!UICONTROL 创建]**。您的文件夹会显示在数字资产文件夹中。
 
-## 将CUG属性添加到文件夹{#add-cug-properties-to-folders}
+## 将CUG属性添加到文件夹 {#add-cug-properties-to-folders}
 
 您可以通过将文件夹设为已关闭的用户组(CUG)的一部分，来限制谁可以访问Assets中的某些文件夹。 要将文件夹作为CUG的一部分，请执行以下操作：
 
@@ -40,7 +40,7 @@ AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方
 1. 选中&#x200B;**启用**&#x200B;复选框，以使文件夹及其资产仅对已关闭的用户组可用。
 1. 浏览到登录页面（如果有）以添加该信息。 单击&#x200B;**添加项目**&#x200B;添加允许的组。 如有必要，请添加领域。 单击&#x200B;**确定**&#x200B;以保存您的更改。
 
-## 使用标记组织资产{#use-tags-to-organize-assets}
+## 使用标记组织资产 {#use-tags-to-organize-assets}
 
 您可以使用文件夹或标记或两者来组织资产。 向资产添加标记可让他们在搜索期间更轻松地检索标记。 要向资产添加标记，请执行以下步骤：
 
