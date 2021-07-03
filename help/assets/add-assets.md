@@ -2,16 +2,16 @@
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
 feature: 资产管理，上传
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
 
 ---
 
-# 将数字资产作为[!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}添加到[!DNL Adobe Experience Manager]
+# 将数字资产作为[!DNL Cloud Service] [!DNL Assets]添加到[!DNL Adobe Experience Manager] {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager Assets] 接受来自多种来源的多种类型的数字资产。它存储二进制文件和创建的演绎版，可以使用各种工作流和[!DNL Adobe Sensei]服务进行资产处理，并允许在多个表面之间通过多个渠道进行分发。
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从支持的[!DNL Creative Cloud]桌面应用程序内处理资产时，此功能非常有用。 | 创意、营销人员 |
 | [资产批量摄取](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔批量摄取。 仅适用于支持的数据存储。 | 管理员、开发人员 |
 
-## 上传资产{#upload-assets}
+## 上传资产 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -99,7 +99,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### 资产已存在时处理上传{#handling-upload-existing-file}
+### 资产已存在时处理上传 {#handling-upload-existing-file}
 
 您可以上传与现有资产路径相同（名称相同，位置相同）的资产。 但是，将显示一个警告对话框，其中包含以下选项：
 
@@ -109,7 +109,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 要在[!DNL Assets]中保留重复的资产，请单击&#x200B;**[!UICONTROL Keep]**。 要删除上传的重复资产，请单击&#x200B;**[!UICONTROL 删除]**。
 
-### 文件名处理和禁止字符{#filename-handling}
+### 文件名处理和禁止字符 {#filename-handling}
 
 [!DNL Experience Manager Assets] 会尝试阻止您上传文件名中包含禁止字符的资产。如果您尝试上传的资产的文件名中包含不允许的字符或更多字符，则[!DNL Assets]会显示一条警告消息，并停止上传，直到您删除这些字符或上传时使用允许的名称为止。
 
@@ -118,7 +118,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * 资产文件名`* / : [ \\ ] | # % { } ? &`的字符无效
 * 资产文件夹名称`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`的字符无效
 
-## 批量上传资产{#bulk-upload}
+## 批量上传资产 {#bulk-upload}
 
 批量资产摄取可以高效处理大量资产。 但是，大规模摄取不仅是广泛的文件转储或临时迁移。 要将大规模摄取作为符合您业务目的且高效的有意义项目，请规划迁移并组织资产组织。 所有的摄取都不同，因此在细微的存储库组成和业务需求中，不是一般化的因素。 以下是计划和执行批量摄取的一些主要建议：
 
@@ -132,7 +132,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):对于从本地文件系统上传资产的创意专业人士和营销人员非常有用。使用它可上载本地可用的嵌套文件夹。
 * [批量摄取工具](#asset-bulk-ingestor):在部署时，有时或最初会使用摄取大量资产 [!DNL Experience Manager]。
 
-### 资产批量摄取工具{#asset-bulk-ingestor}
+### 资产批量摄取工具 {#asset-bulk-ingestor}
 
 该工具仅提供给管理员组，用于从Azure或S3数据存储中大规模摄取资产。 请观看配置和摄取的视频演示。
 
@@ -178,14 +178,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
    ![计划批量摄取作业](assets/bulk-ingest-schedule1.png)
 
-## 使用桌面客户端{#upload-assets-desktop-clients}上传资产
+## 使用桌面客户端上传资产 {#upload-assets-desktop-clients}
 
 除了Web浏览器用户界面之外，[!DNL Experience Manager]还支持桌面上的其他客户端。 此外，它们还可提供上传体验，而无需转到Web浏览器。
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 允许从Adobe Photoshop、Adobe Illustrator和 [!DNL Experience Manager] Adobe InDesign桌面应用程序中的资产访问。您可以从这些桌面应用程序内的Adobe资产链接用户界面将当前打开的文档直接上传到[!DNL Experience Manager]。
 * [[!DNL Experience Manager] 桌面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 应用程序简化了在桌面上处理资产的过程，这些资产独立于其文件类型或用于处理资产的本机应用程序。从本地文件系统上传嵌套文件夹层次结构中的文件特别有用，因为浏览器上传仅支持上传平面文件列表。
 
-## 上传{#process-when-uploaded}后处理资产
+## 上传后处理资产 {#process-when-uploaded}
 
 要对上传的资产执行其他处理，您可以对上传文件夹应用处理配置文件。 这些配置文件位于[!DNL Assets]文件夹的&#x200B;**[!UICONTROL Properties]**&#x200B;页面中。 不会根据需要处理没有扩展或扩展不正确的数字资产。 例如，在上传此类资产时，可能不会发生任何情况，或者资产可能会应用不正确的处理配置文件。 用户仍可以将二进制文件存储在DAM中。
 
@@ -207,11 +207,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 对于分配了处理配置文件的文件夹，卡片视图的缩略图上会显示配置文件名称。 在列表视图中，配置文件名称显示在&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;列中。
 
-## 使用API {#upload-using-apis}上传或摄取资产
+## 使用API上传或摄取资产 {#upload-using-apis}
 
 开发人员参考的[资产上传](developer-reference-material-apis.md#asset-upload)部分中提供了上传API和协议、指向开源SDK和示例客户端的链接的技术详细信息。
 
-## 提示、最佳实践和限制{#tips-limitations}
+## 提示、最佳实践和限制 {#tips-limitations}
 
 * 直接二进制上传是上传资产的一种新方法。 默认情况下，产品功能和客户端都支持此功能，例如[!DNL Experience Manager]用户界面、[!DNL Adobe Asset Link]和[!DNL Experience Manager]桌面应用程序。 客户技术团队自定义或扩展的任何自定义代码都必须使用新的上传API和协议。
 
