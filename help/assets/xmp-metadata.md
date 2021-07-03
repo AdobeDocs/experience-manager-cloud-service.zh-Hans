@@ -3,9 +3,9 @@ title: XMP 元数据
 description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作元数据的创建、处理和交换的标准格式。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 52%
@@ -18,7 +18,7 @@ XMP（可扩展元数据平台）是 AEM Assets 用来进行所有元数据管�
 
 除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且受Adobe](#advantages-of-xmp)和其他公司的支持[，因此XMP和AEM Assets的用户拥有强大的基础平台。
 
-## XMP概述和生态系统{#xmp-ecosystem}
+## XMP概述和生态系统 {#xmp-ecosystem}
 
 AEM Assets本身支持XMP元数据标准。 XMP 是一项用于处理和存储数字资产中的标准化专有元数据的标准。XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
 
@@ -49,7 +49,7 @@ XMP标准旨在提供可扩展性，允许您向XMP数据中添加自定义类�
 >
 >XMP 一般不允许嵌入二进制类型的数据。要在XMP中携带二进制数据（例如缩略图），必须以XML友好格式（如`Base64`）对它们进行编码。
 
-### XMP核心概念{#xmp-core-concepts}
+### XMP核心概念 {#xmp-core-concepts}
 
 **命名空间和架构**
 
@@ -88,7 +88,7 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 >
 >默认情况下，[!DNL Assets]中未启用写回功能。 请参阅如何[启用元数据写回](#enable-xmp-writeback)。 启用元数据写回后，数字资产的MSM无法工作。 写回时，继承会中断。
 
-### 启用XMP写回{#enable-xmp-writeback}
+### 启用XMP写回 {#enable-xmp-writeback}
 
 [!UICONTROL DAM元数] 据写回工作流用于写回资产的元数据。要启用写回，请遵循以下三种方法之一：
 
