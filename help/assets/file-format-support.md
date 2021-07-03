@@ -3,16 +3,16 @@ title: 支持的文件格式和MIME类型
 description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service]支持的文件格式和MIME类型。'
 contentOwner: AG
 feature: 资产管理，演绎版
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 34%
 
 ---
 
-# [!DNL Assets] 支持的文件格式  {#supported-file-formats}
+# [!DNL Assets] 支持的文件格式 {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] 作为支 [!DNL Cloud Service] 持任何二进制文件的基本内容管理功能（存储、在线管理元数据、版本控制、上传和下载等），与其格式无关。[!DNL Adobe Experience Manager Assets] 支持多种文件格式，每种产品功能都支持不同格式。
 
@@ -34,7 +34,7 @@ ht-degree: 34%
 | * | 请参阅表下的注释 |
 | - | 不适用 |
 
-## Adobe格式{#adobe-formats}
+## Adobe格式 {#adobe-formats}
 
 | 文件格式 | 缩略图生成 | 全文提取 | 元数据提取 | 宽度/高度 |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -52,7 +52,7 @@ ht-degree: 34%
 
 \*对于[!DNL Adobe InDesign]文件(INDD)，再现的大小由INDD文件中嵌入的预览决定。 在[!DNL InDesign]（**[!UICONTROL 首选项>文件处理>始终保存预览图像和文档，预览大小]**）中配置首选项以嵌入较大的演绎版。
 
-## 图像格式{#image-formats}
+## 图像格式 {#image-formats}
 
 | 文件格式 | 缩略图生成 | 元数据提取 | 宽度/高度 | 裁剪 |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
@@ -67,7 +67,7 @@ ht-degree: 34%
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## [!DNL Dynamic Media] {#image-support-dynamic-media}中的图像格式
+## [!DNL Dynamic Media]中的图像格式 {#image-support-dynamic-media}
 
 | 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -91,7 +91,7 @@ ht-degree: 34%
 * 具有浮点数据的TIFF文件。
 * 具有Lab色彩空间的TIFF文件。
 
-## 3D格式{#support-3d-formats}
+## 3D格式 {#support-3d-formats}
 
 支持以下3D格式。
 
@@ -106,7 +106,7 @@ ht-degree: 34%
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## [!DNL Camera RAW] 格式  {#camera-raw-formats}
+## [!DNL Camera RAW] 格式 {#camera-raw-formats}
 
 | 文件格式 | 缩略图生成 | 元数据提取 | 宽度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -138,7 +138,7 @@ ht-degree: 34%
 | SRW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
-## 文档格式{#document-formats}
+## 文档格式 {#document-formats}
 
 资产管理功能支持的文档格式如下。
 
@@ -164,7 +164,7 @@ ht-degree: 34%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## [!DNL Dynamic Media] {#document-support-dynamic-media}中的文档格式
+## [!DNL Dynamic Media]中的文档格式 {#document-support-dynamic-media}
 
 | 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -172,7 +172,7 @@ ht-degree: 34%
 | INDD | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## 视频格式{#video-formats}
+## 视频格式 {#video-formats}
 
 | 文件格式 | 缩略图生成 | 元数据提取 | 宽度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -200,7 +200,7 @@ ht-degree: 34%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## [!DNL Dynamic Media]中用于转码{#video-dynamic-media-transcoding}的视频格式
+## [!DNL Dynamic Media]中用于转码的视频格式 {#video-dynamic-media-transcoding}
 
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 |------------------------|--------------------|--------|-------|
@@ -221,11 +221,11 @@ ht-degree: 34%
 | FLAC | Native Flac | 自由无损音频编解码器 | - |
 | MJ2 | Motion JPEG2000 | Motion JPEG 2000编解码器 | - |
 
-## 音频格式{#audio-formats}
+## 音频格式 {#audio-formats}
 
 [!DNL Assets] as a为 [!DNL Cloud Service] AIF、ASF、M4A、MP3、WAV和WMA音频格式提供XMP元数据提取支持。
 
-## 提示和限制{#limitations-and-tips}
+## 提示和限制 {#limitations-and-tips}
 
 * 目前，元数据提取的文件大小限制约为10 GB。 上传超大型资产时，有时元数据提取操作会失败。
 
