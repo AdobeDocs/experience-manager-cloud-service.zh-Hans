@@ -2,9 +2,9 @@
 title: 使用项目工作流
 description: 提供了多种开箱即用的项目工作流。
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 76%
 
 ---
@@ -24,7 +24,6 @@ ht-degree: 76%
 |  | **简单项目** | **媒体项目** | **翻译项目** |
 |---|:-:|:-:|:-:|
 | 请求副本 |  | x |  |
-| 产品照片拍摄 |  | x |  |
 | 项目批准 | x |  |  |
 | 请求启动 | x |  |  |
 | 请求登陆页面 | x |  |  |
@@ -48,7 +47,7 @@ ht-degree: 76%
 
 此部分介绍了可用于项目的工作流。
 
-## 请求复制工作流  {#request-copy-workflow}
+## 请求复制工作流 {#request-copy-workflow}
 
 使用此工作流，您可以请求用户提供手稿，然后批准该手稿。要启动请求复制工作流，请执行以下操作：
 
