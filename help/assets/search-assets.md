@@ -4,9 +4,9 @@ description: 了解如何使用过滤器面板在 [!DNL Adobe Experience Manager
 contentOwner: AG
 mini-toc-levels: 1
 feature: 搜索，元数据，资产分发
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: a6813cf691acb868589932719e33303871859323
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '4916'
 ht-degree: 7%
