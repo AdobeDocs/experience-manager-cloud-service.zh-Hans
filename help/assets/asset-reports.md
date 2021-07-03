@@ -3,9 +3,9 @@ title: 有关使用和共享的报表
 description: ' [!DNL Adobe Experience Manager Assets] 中有关您的资产的报表，可帮助您了解数字资产的使用情况、活动和共享情况。'
 contentOwner: AG
 feature: 资产报表，资产管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 5%
