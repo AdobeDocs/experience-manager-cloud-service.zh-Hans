@@ -3,16 +3,16 @@ title: 资产 HTTP API
 description: 使用 [!DNL Experience Manager Assets]中的HTTP API创建、读取、更新、删除和管理数字资产。
 contentOwner: AG
 feature: 资产HTTP API，API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP API  {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
 
 ## 概述 {#overview}
 
@@ -35,7 +35,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 
 有关更多信息，请参阅 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[内容片段支持。
 
-## 数据模型{#data-model}
+## 数据模型 {#data-model}
 
 [!DNL Assets] HTTP API公开了两个主要元素：文件夹和资产（对于标准资产）。 此外，它还针对描述内容片段中结构化内容的自定义数据模型公开了更多详细信息元素。 有关更多信息，请参阅[内容片段数据模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
 
@@ -77,7 +77,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 属性.
 * 链接.
 
-## 可用功能{#available-features}
+## 可用功能 {#available-features}
 
 [!DNL Assets] HTTP API包含以下功能：
 
@@ -106,7 +106,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## 检索列出{#retrieve-a-folder-listing}的文件夹
+## 检索文件夹列表 {#retrieve-a-folder-listing}
 
 检索现有文件夹及其子实体（子文件夹或资产）的警报器表示形式。
 
@@ -120,7 +120,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 
 **响应**:返回的实体类别是资产或文件夹。包含实体的属性是每个实体的完整属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接所指向的URL内容，该链接的`rel`为`self`。
 
-## 创建文件夹{#create-a-folder}
+## 创建文件夹 {#create-a-folder}
 
 创建`sling`:`OrderedFolder`。 如果提供了`*`而不是节点名称，则Servlet会使用参数名称作为节点名称。 请求接受以下任一条件：
 
@@ -145,15 +145,15 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 创建资产{#create-an-asset}
+## 创建资产 {#create-an-asset}
 
 有关如何创建资产的信息，请参阅[资产上传](developer-reference-material-apis.md)。 您无法使用HTTP API创建资产。
 
-## 更新资产二进制文件{#update-asset-binary}
+## 更新资产二进制文件 {#update-asset-binary}
 
 有关如何更新资产二进制文件的信息，请参阅[资产上传](developer-reference-material-apis.md)。 您无法使用HTTP API更新资产二进制文件。
 
-## 更新资产{#update-asset-metadata}的元数据
+## 更新资产的元数据 {#update-asset-metadata}
 
 更新资产元数据属性。 如果更新`dc:`命名空间中的任何属性，则API会更新`jcr`命名空间中的相同属性。 API不会同步两个命名空间下的属性。
 
@@ -166,7 +166,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 创建资产演绎版{#create-an-asset-rendition}
+## 创建资产演绎版 {#create-an-asset-rendition}
 
 为资产创建演绎版。 如果未提供请求参数名称，则文件名将用作格式副本名称。
 
@@ -184,7 +184,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 更新资产演绎版{#update-an-asset-rendition}
+## 更新资产演绎版 {#update-an-asset-rendition}
 
 更新后，将分别使用新的二进制数据替换资产演绎版。
 
@@ -197,7 +197,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 在资产{#create-an-asset-comment}上添加注释
+## 在资产上添加评论 {#create-an-asset-comment}
 
 **参数**:参数用 `message` 于注释的消息正文和JSON `annotationData` 格式的注释数据。
 
@@ -210,7 +210,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 复制文件夹或资产{#copy-a-folder-or-asset}
+## 复制文件夹或资产 {#copy-a-folder-or-asset}
 
 将提供路径上可用的文件夹或资产复制到新目标。
 
@@ -229,7 +229,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONDITATION失败 — 如果缺少请求标头。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 移动文件夹或资产{#move-a-folder-or-asset}
+## 移动文件夹或资产 {#move-a-folder-or-asset}
 
 将给定路径上的文件夹或资产移动到新目标。
 
@@ -248,7 +248,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONDITATION失败 — 如果缺少请求标头。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 删除文件夹、资产或演绎版{#delete-a-folder-asset-or-rendition}
+## 删除文件夹、资产或演绎版 {#delete-a-folder-asset-or-rendition}
 
 删除提供路径上的资源(-tree)。
 
@@ -264,7 +264,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 提示、最佳实践和限制{#tips-limitations}
+## 提示、最佳实践和限制 {#tips-limitations}
 
 * 在[!UICONTROL 结束时间]之后，资产及其演绎版无法通过[!DNL Assets] Web界面和HTTP API使用。 如果[!UICONTROL 开启时间]将来或[!UICONTROL 结束时间]过去，则API会返回404错误消息。
 
