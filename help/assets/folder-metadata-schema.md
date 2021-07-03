@@ -3,9 +3,9 @@ title: 文件夹元数据架构
 description: 了解如何在 [!DNL Experience Manager Assets]中为资产文件夹创建元数据架构
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 19%
@@ -16,7 +16,7 @@ ht-degree: 19%
 
 [!DNL Adobe Experience Manager Assets] 允许您为资产文件夹创建元数据架构，这些架构定义了文件夹属性页面中显示的布局和元数据。
 
-## 添加文件夹元数据架构表单{#add-a-folder-metadata-schema-form}
+## 添加文件夹元数据架构表单 {#add-a-folder-metadata-schema-form}
 
 使用文件夹元数据架构Forms编辑器为文件夹创建和编辑元数据架构。
 
@@ -24,7 +24,7 @@ ht-degree: 19%
 1. 在文件夹元数据架构Forms页面中，点按/单击&#x200B;**[!UICONTROL 创建]**。
 1. 指定表单的名称，然后点按/单击&#x200B;**[!UICONTROL 创建]**。 新架构表单列在架构Forms页面中。
 
-## 编辑文件夹元数据架构表单{#edit-folder-metadata-schema-forms}
+## 编辑文件夹元数据架构表单 {#edit-folder-metadata-schema-forms}
 
 您可以编辑新添加的或现有的元数据架构表单，其中包括：
 
@@ -54,7 +54,7 @@ ht-degree: 19%
 
 1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
 
-### 用于构建表单的组件{#components-to-build-forms}
+### 用于构建表单的组件 {#components-to-build-forms}
 
 **[!UICONTROL 构建表单]**&#x200B;选项卡列出了您在文件夹元数据架构表单中使用的表单项目。 **[!UICONTROL 设置]**&#x200B;选项卡显示您在&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中选择的每个项目的属性。 以下是&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中可用的表单项目列表：
 
@@ -99,7 +99,7 @@ ht-degree: 19%
  </tbody>
 </table>
 
-### 编辑表单项{#editing-form-items}
+### 编辑表单项目 {#editing-form-items}
 
 要编辑表单项的属性，请点按/单击组件，并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中编辑以下属性的全部或子集。
 
@@ -125,19 +125,19 @@ ht-degree: 19%
 
 **[!UICONTROL 类]**:属性与关联的对象类。
 
-## 删除文件夹元数据架构表单{#delete-folder-metadata-schema-forms}
+## 删除文件夹元数据架构表单 {#delete-folder-metadata-schema-forms}
 
 您可以从文件夹元数据架构Forms页面中删除文件夹元数据架构表单。 要删除某个表单，请将其选中，然后点按/单击工具栏中的删除图标。
 
 ![delete_form](assets/delete_form.png)
 
-## 分配文件夹元数据架构{#assign-a-folder-metadata-schema}
+## 分配文件夹元数据架构 {#assign-a-folder-metadata-schema}
 
 您可以从文件夹元数据架构Forms页面或在创建文件夹时，将文件夹元数据架构分配给文件夹。
 
 如果为文件夹配置元数据架构，则架构表单的路径将存储在下文件夹节点的`folderMetadataSchema`属性中。*/jcr:content*。
 
-### 从“文件夹元数据架构”页面{#assign-to-a-schema-from-the-folder-metadata-schema-page}中分配给架构
+### 从“文件夹元数据架构”页面中分配给架构 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]**> **[!UICONTROL 文件夹元数据架构]**。
 1. 从文件夹元数据架构Forms页面中，选择要应用于文件夹的架构表单。
@@ -152,7 +152,7 @@ ht-degree: 19%
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-### 创建文件夹{#assign-a-schema-when-creating-a-folder}时分配架构
+### 创建文件夹时分配架构 {#assign-a-schema-when-creating-a-folder}
 
 在创建文件夹时，您可以分配文件夹元数据架构。 如果系统中至少存在一个文件夹元数据架构，则在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中会显示一个额外的列表。 您可以选择所需的架构。 默认情况下，未选择架构。
 
@@ -165,7 +165,7 @@ ht-degree: 19%
 1. 打开应用元数据架构的文件夹的元数据属性。
 1. 要查看文件夹元数据字段，请点按/单击&#x200B;**[!UICONTROL 文件夹元数据]**&#x200B;选项卡。
 
-## 使用文件夹元数据架构{#use-the-folder-metadata-schema}
+## 使用文件夹元数据架构 {#use-the-folder-metadata-schema}
 
 打开使用文件夹元数据架构配置的文件夹属性。文件夹属性页面中将显示&#x200B;**[!UICONTROL 文件夹元数据]**。要查看文件夹元数据架构表单，请选择此选项卡。
 
