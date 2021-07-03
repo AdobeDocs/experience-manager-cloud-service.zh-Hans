@@ -2,9 +2,9 @@
 title: 管理项目
 description: 通过“项目”，您可以将资源分组到一个实体中来组织项目，该实体可以在“项目”控制台中访问和管理
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 80%
 
 ---
@@ -25,8 +25,11 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 * 简单项目
 * 媒体项目
-* 产品照片拍摄项目
 * 翻译项目
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 从项目到项目，创建项目的过程相同。 项目类型之间的差异包括可用的用户角 [色](/help/sites-cloud/authoring/projects/overview.md) 和工 [作流](/help/sites-cloud/authoring/projects/workflows.md)。  要创建新项目，请执行以下操作：
 
@@ -41,7 +44,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 1. 点按/单击&#x200B;**创建**。确认对话框会询问您是要打开新项目还是要返回到控制台。
 
-### 将资源与项目关联  {#associating-resources-with-your-project}
+### 将资源与项目关联 {#associating-resources-with-your-project}
 
 由于项目使您能够将资源分组到一个实体中，因此您需要将资源关联到项目。这些资源称为&#x200B;**拼贴**。有关可添加的资源类型的说明，请参阅[项目拼贴](/help/sites-cloud/authoring/projects/overview.md#project-tiles)。
 
