@@ -3,9 +3,9 @@ title: 管理视频资产
 description: 在 [!DNL Adobe Experience Manager]中上传、预览、注释和发布视频资产。
 contentOwner: AG
 feature: 资产管理，发布，协作，视频
-role: Business Practitioner
+role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 10%
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 了解如何在[!DNL Adobe Experience Manager Assets]中管理和编辑视频资产。 使用处理配置文件和使用[!DNL Dynamic Media]集成，可以进行视频编码和转码（例如FFmpeg转码）。 如果没有[!DNL Dynamic Media]许可证，[!DNL Experience Manager]将为视频提供基本支持，例如使用FFmpeg进行转码、提取支持的文件格式的预览缩略图，以及在用户界面中预览直接支持在浏览器中播放的格式。
 
-## 上传和预览视频资产{#upload-and-preview-video-assets}
+## 上传和预览视频资产 {#upload-and-preview-video-assets}
 
 [!DNL Adobe Experience Manager Assets] 为扩展名为MP4的视频资产生成预览。您可以在[!DNL Assets]用户界面中预览演绎版。
 
@@ -27,11 +27,11 @@ ht-degree: 10%
 1. 要在卡片视图中预览视频，请单击视频资产上的&#x200B;**[!UICONTROL 播放]** ![播放选项](assets/do-not-localize/play.png)选项。 您只能在卡片视图中暂停或播放视频。 列表视图中不提供[!UICONTROL Play]和[!UICONTROL Pause]选项。
 1. 要在资产详细信息页面中预览视频，请在卡片上选择&#x200B;**[!UICONTROL 编辑]**。 视频会在浏览器自带的视频播放器中播放。您可以播放视频，暂停视频，控制视频音量，以及将视频放大到全屏。
 
-## 发布视频资产{#publish-video-assets}
+## 发布视频资产 {#publish-video-assets}
 
 发布后，您可以将视频资产作为URL包含在网页中，或直接嵌入资产。 有关详细信息，请参阅[publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 使用处理配置文件{#transcode-video}进行转码
+## 使用处理配置文件进行转码 {#transcode-video}
 
 [!DNL Experience Manager] as a允许 [!DNL Cloud Service] 您使用处理配置文件对MP4视频文件进行基本转码。利用功能，不仅可上传，还可预览和缩放MP4视频文件。
 
@@ -43,7 +43,7 @@ ht-degree: 10%
 
 要使用处理配置文件处理资产，请将配置文件添加到文件夹。 请参阅[使用处理配置文件处理资产](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
-## 在视频资产中添加批注{#annotate-video-assets}
+## 在视频资产中添加批注 {#annotate-video-assets}
 
 1. 从[!DNL Assets]控制台中，选择资产卡片上的&#x200B;**[!UICONTROL 编辑]** ，以显示资产详细信息页面。
 1. 要播放视频，请单击&#x200B;**[!UICONTROL 预览]**。
@@ -51,7 +51,7 @@ ht-degree: 10%
 1. 搜索到视频中的特定点，在&#x200B;**文本**&#x200B;字段中指定时间（以秒为单位），然后单击&#x200B;**跳转**。例如，要跳过视频的前 20 秒，请在文本字段中输入 20。
 1. 要在时间轴中查看它，请单击注释。 要从时间轴中删除注释，请单击&#x200B;**[!UICONTROL Delete]**。
 
-## 最佳实践和限制{#tips-limitations}
+## 最佳实践和限制 {#tips-limitations}
 
 * 如果没有[!DNL Dynamic Media]许可证，则只能使用处理配置文件处理MP4文件。
 * 使用处理配置文件转码MP4文件时，需遵循以下准则和限制：
