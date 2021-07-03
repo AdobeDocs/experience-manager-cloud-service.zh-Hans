@@ -4,9 +4,9 @@ description: 了解Adobe Experience Manager Assets中的收集概念。 了解�
 contentOwner: AG
 mini-toc-levels: 1
 feature: 收藏集，资产管理
-role: Business Practitioner
+role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 26%
@@ -27,17 +27,17 @@ ht-degree: 26%
 
 * 一种智能收藏集，可根据搜索条件动态包含资产。
 
-## 访问收藏集控制台{#navigate-the-collections-console}
+## 访问收藏集控制台 {#navigate-the-collections-console}
 
 要打开&#x200B;**[!UICONTROL 收藏集]**&#x200B;控制台，请执行以下操作：
 
 要打开&#x200B;**[!UICONTROL 收藏集]**，请点按或单击Experience Manager徽标。 在导航页面中，转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 收藏集]**。
 
-## 创建集合{#create-a-collection}
+## 创建收藏集 {#create-a-collection}
 
 您可以创建包含[静态引用](#create-a-collection-with-static-references)的集合，也可以基于基于[搜索条件的筛选器](#create-a-smart-collection)。 您还可以从灯箱创建收藏集。
 
-### 创建包含静态引用{#create-a-collection-with-static-references}的集合
+### 创建包含静态引用的集合 {#create-a-collection-with-static-references}
 
 您可以创建包含静态引用的收藏集，例如包含对资产、文件夹、收藏集、旋转集和图像集的引用的收藏集。
 
@@ -59,7 +59,7 @@ ht-degree: 26%
 
    要将资产添加到收藏集，请导航到资产用户界面。 有关详细信息，请参阅[将资产添加到收藏集](#add-assets-to-a-collection)。
 
-### 使用dropzone {#create-collections-using-dropzone}创建收藏集
+### 使用拖放区创建收藏集 {#create-collections-using-dropzone}
 
 您可以将资产从资产UI拖到收藏集。 您还可以创建收藏集的副本，并将资产拖动到此处。
 
@@ -69,7 +69,7 @@ ht-degree: 26%
 1. 在&#x200B;**[!UICONTROL 创建新收藏集]**&#x200B;对话框中，指定收藏集的名称。如果希望所有用户都可以访问该收藏集，请选择&#x200B;**[!UICONTROL 公共收藏集]**。
 1. 点按/单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建集合。
 
-### 创建智能收藏集{#create-a-smart-collection}
+### 创建智能收藏集 {#create-a-smart-collection}
 
 智能收藏集使用搜索条件动态填充资产。 您可以仅使用文件，而不使用文件夹或文件和文件夹来创建智能收藏集。
 
@@ -86,7 +86,7 @@ ht-degree: 26%
 1. 点按/单击&#x200B;**[!UICONTROL 保存]**，以创建智能收藏集，然后关闭消息框以完成该进程。新的智能收藏集也会添加到&#x200B;**[!UICONTROL 保存的搜索]**列表。.
 “创建智能选 **[!UICONTROL 择”按钮的标签会变]** 为“编 **[!UICONTROL 辑智能选择”]**。 要编辑智能收藏集的设置，请从“文件和文 **[!UICONTROL 件夹]** ”列 **[!UICONTROL 表中选择“文件]** ”。 然后，点按／单击编辑 **[!UICONTROL 智能选择]** 按钮。
 
-## 将资产添加到集合{#add-assets-to-a-collection}
+## 将资产添加到收藏集 {#add-assets-to-a-collection}
 
 您可以将资产添加到包含一系列引用的资产或文件夹的收藏集中。
 
@@ -99,7 +99,7 @@ ht-degree: 26%
 1. 在&#x200B;**[!UICONTROL 添加到收藏集]**&#x200B;页面中，选择要将资产添加到的收藏集。
 1. 点按/单击&#x200B;**[!UICONTROL 添加]**，然后关闭确认消息。 资产会添加到收藏集。
 
-## 编辑智能收藏集{#edit-a-smart-collection}
+## 编辑智能收藏集 {#edit-a-smart-collection}
 
 智能收藏集是通过保存搜索来构建的，因此您可以通过修改[保存的搜索](#saved-searches)的搜索参数来更改其内容。
 
@@ -113,7 +113,7 @@ ht-degree: 26%
 1. 点按/单击&#x200B;**[!UICONTROL 覆盖]** ，以将原始智能收藏集替换为已编辑的收藏集。 或者，选择&#x200B;**[!UICONTROL 另存为]**&#x200B;以单独保存已编辑的集合。
 1. 在确认对话框中，点按/单击&#x200B;**[!UICONTROL 保存]**&#x200B;以完成该过程。
 
-## 查看和编辑集合元数据{#view-and-edit-collection-metadata}
+## 查看和编辑集合元数据 {#view-and-edit-collection-metadata}
 
 收藏集元数据由与收藏集相关的数据组成，其中包括添加的任何标记。
 
@@ -121,7 +121,7 @@ ht-degree: 26%
 1. 在&#x200B;**[!UICONTROL 收藏集元数据]**&#x200B;页面中，从&#x200B;**[!UICONTROL 基本]**&#x200B;和&#x200B;**高级**&#x200B;选项卡中查看收藏集元数据。
 1. 根据需要修改元数据，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存更改。
 
-### 批量编辑集合元数据{#edit-collection-metadata-in-bulk}
+### 批量编辑收藏集元数据 {#edit-collection-metadata-in-bulk}
 
 您可以同时编辑多个收藏集的元数据。 此功能可帮助您快速在多个集合中复制常用元数据。
 
@@ -139,19 +139,19 @@ ht-degree: 26%
 
 收藏集中的搜索功能支持[搜索收藏集](#search-collections)和[搜索收藏集](#search-within-collections)中的资产。
 
-### 搜索集合{#search-collections}
+### 搜索收藏集 {#search-collections}
 
 您可以从“收藏集”控制台中搜索收藏集。在Omnisearch框中使用关键字搜索时， [!DNL Experience Manager Assets]会搜索收藏集名称、元数据和添加到收藏集的标记。
 
 如果您从顶级搜索收藏集，则搜索结果中只返回单个收藏集。 收藏集中的资产或文件夹将被排除。 在所有其他情况下（例如，在单个收藏集或文件夹层次结构中），都会返回所有相关的资产、文件夹和收藏集。
 
-### 在收藏集{#search-within-collections}中搜索
+### 在收藏集中搜索 {#search-within-collections}
 
 在收藏集控制台中，点按/单击收藏集以将其打开。
 
 在收藏集中，[!DNL Experience Manager]搜索仅限于您正在查看的收藏集中的资产（及其标记和元数据）。 在文件夹中搜索时，将返回当前文件夹中所有匹配的资产和子文件夹。 在收藏集中搜索时，只会返回与收藏集直接成员匹配的资产、文件夹和其他收藏集。
 
-## 编辑集合设置{#edit-collection-settings}
+## 编辑收藏集设置 {#edit-collection-settings}
 
 您可以编辑收藏集设置（如标题和描述），或向收藏集添加成员。
 
@@ -159,7 +159,7 @@ ht-degree: 26%
 1. 在&#x200B;**[!UICONTROL 收藏集设置]**&#x200B;页面中修改收藏集设置。例如，按照[添加收藏集](#create-a-collection)中所述修改收藏集标题、描述、成员和权限。
 1. 点按/单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
 
-## 删除集合{#delete-a-collection}
+## 删除集合 {#delete-a-collection}
 
 1. 从收藏集控制台中，选择一个或多个收藏集，然后点按/单击工具栏中的删除图标。
 1. 在对话框中，点按/单击&#x200B;**[!UICONTROL 删除]**&#x200B;以确认删除操作。
@@ -168,7 +168,7 @@ ht-degree: 26%
    >
    >您也可以通过[删除保存的搜索](#saved-searches)来删除智能收藏集。
 
-## 下载集合{#download-a-collection}
+## 下载收藏集 {#download-a-collection}
 
 下载收藏集时，会下载收藏集内整个资产层次结构，包括文件夹和子收藏集。
 
@@ -178,7 +178,7 @@ ht-degree: 26%
 
    选择要下载的收藏集时，将下载该收藏集下的完整文件夹层次结构。 要将您下载的每个收藏集（包括嵌套在父收藏集下的子收藏集中的资产）包含在单个文件夹中，请选择&#x200B;**[!UICONTROL 为每个资产创建单独的文件夹]**。
 
-## 编辑多个收藏集的元数据属性{#editing-metadata-properties-of-multiple-collections}
+## 编辑多个收藏集的元数据属性 {#editing-metadata-properties-of-multiple-collections}
 
 AdobeEnterprise Manager Assets允许您批量编辑许多收藏集的元数据。 使用[!UICONTROL 属性]页面可对多个收藏集执行元数据更改，例如，将元数据属性更改为公用值，或添加或修改标记。
 
@@ -206,7 +206,7 @@ AdobeEnterprise Manager Assets允许您批量编辑许多收藏集的元数据�
 
 1. 保存更改。
 
-## 创建嵌套集合{#create-nested-collections}
+## 创建嵌套收藏集 {#create-nested-collections}
 
 您可以将一个收藏集添加到另一个收藏集中，从而创建嵌套式收藏集。
 
@@ -244,7 +244,7 @@ AdobeEnterprise Manager Assets允许您批量编辑许多收藏集的元数据�
 1. 从保存 **[!UICONTROL 的搜索列表]** ，点按／单 **** 击要删除的智能收藏集旁边的删除。
 1. 在对话框中，点按/单击&#x200B;**[!UICONTROL 删除]**&#x200B;以删除保存的搜索。
 
-## 对集合{#run-a-workflow-on-a-collection}执行工作流
+## 对集合执行工作流 {#run-a-workflow-on-a-collection}
 
 您可以为收藏集中的资产运行工作流。 如果收藏集包含嵌套收藏集，则工作流还会在嵌套收藏集中的资产上运行。 但是，如果收藏集和嵌套收藏集包含重复的资产，则此类资产的工作流仅运行一次。
 
