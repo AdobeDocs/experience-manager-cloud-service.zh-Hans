@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute微服务，工作流，资产处理
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2678'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 ## 后处理工作流 {#post-processing-workflows}
 
-对于需要使用处理用户档案无法实现的资产需要进行额外处理的情况，可以向配置添加其他后处理工作流。 这允许使用资产微服务在可配置处理之上添加完全自定义的处理。
+对于需要使用处理用户档案无法实现的资产需要进行额外处理的情况，可以向配置添加其他后处理工作流。 后处理允许您使用资产微服务在可配置处理的基础上添加完全自定义的处理。
 
 微服务处理完成后，后处理工作流（如果已配置）将由[!DNL Experience Manager]自动执行。 无需手动添加工作流启动器即可触发工作流。 示例包括：
 
@@ -196,38 +196,41 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 * 在末尾添加[!UICONTROL DAM更新资产工作流已完成进程]步骤。 添加此步骤可确保Experience Manager知道处理何时结束，并且资产可标记为已处理，即资产上会显示&#x200B;*New*。
 * 为自定义工作流运行程序服务创建配置，以便通过路径（文件夹位置）或正则表达式配置后处理工作流模型的执行。
 
+有关在后处理工作流中可以使用哪个标准工作流步骤的详细信息，请参阅开发人员参考中的后处理工作流](developer-reference-material-apis.md#post-processing-workflows-steps)中的[工作流步骤。
+
 ### 创建后处理工作流模型 {#create-post-processing-workflow-models}
 
 后处理工作流模型是常规的[!DNL Experience Manager]工作流模型。 如果您需要对不同存储库位置或资产类型进行不同的处理，请创建不同的模型。
 
-应根据需要添加处理步骤。 您可以使用任何支持的可用步骤以及任何自定义实施的工作流步骤。
+将根据需要添加处理步骤。 您可以同时使用支持的可用步骤以及任何自定义实施的工作流步骤。
 
 确保每个后处理工作流的最后一步是`DAM Update Asset Workflow Completed Process`。 最后一步有助于确保Experience Manager知道资产处理何时完成。
 
 ### 配置后处理工作流执行 {#configure-post-processing-workflow-execution}
 
-资产微服务完成处理上传的资产后，您可以定义后处理以进一步处理某些资产。 要使用工作流模型配置后处理，您可以执行以下操作之一：
+资产微服务完成对上传资产的处理后，您可以定义后处理工作流以进一步处理资产。 要使用工作流模型配置后处理，您可以执行以下操作之一：
 
-* 配置自定义工作流运行程序服务。
-* 在文件夹[!UICONTROL 属性]中应用工作流模型。
+* [在文件夹属性中应用工作流模型](#apply-workflow-model-to-folder)。
+* [配置自定义工作流运行程序服务](#configure-custom-workflow-runner-service)。
 
-Adobe CQ DAM自定义工作流运行程序(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服务，提供了两个配置选项：
+#### 将工作流模型应用到文件夹 {#apply-workflow-model-to-folder}
 
-* 按路径(`postProcWorkflowsByPath`)划分的后处理工作流：可以根据不同的存储库路径列出多个工作流模型。 使用冒号分隔路径和模型。 支持简单的存储库路径。 将这些值映射到`/var`路径中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
-* 按表达式(`postProcWorkflowsByExpression`)划分的后处理工作流：可以根据不同的正则表达式列出多个工作流模型。 表达式和模型应使用冒号分隔。 正则表达式应直接指向“资产”节点，而不是任何演绎版或文件。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
-
->[!NOTE]
->
->自定义工作流运行程序的配置是OSGi服务的配置。 有关如何部署OSGi配置的信息，请参阅[部署到Experience Manager](/help/implementing/deploying/overview.md) 。
->与[!DNL Experience Manager]的内部部署和托管服务部署不同，OSGi Web控制台在云服务部署中并非直接可用。
-
-要在文件夹[!UICONTROL 属性]中应用工作流模型，请执行以下步骤：
+对于典型的后处理用例，请考虑使用方法将工作流应用到文件夹。 要在文件夹[!UICONTROL 属性]中应用工作流模型，请执行以下步骤：
 
 1. 创建工作流模型。
 1. 选择文件夹，单击工具栏中的&#x200B;**[!UICONTROL 属性]** ，然后单击&#x200B;**[!UICONTROL 资产处理]**&#x200B;选项卡。
 1. 在&#x200B;**[!UICONTROL 自动启动工作流]**&#x200B;下，选择所需的工作流，提供工作流的标题，然后保存更改。
 
-有关在后处理工作流中可以使用哪个标准工作流步骤的详细信息，请参阅开发人员参考中的后处理工作流](developer-reference-material-apis.md#post-processing-workflows-steps)中的[工作流步骤。
+   ![将后处理工作流应用到其属性中的文件夹](assets/post-processing-profile-workflow-for-folders.png)
+
+#### 配置自定义工作流运行程序服务 {#configure-custom-workflow-runner-service}
+
+您可以为无法通过将工作流应用到文件夹轻松完成的高级配置配置配置自定义工作流运行器服务。 例如，使用正则表达式的工作流。 Adobe CQ DAM自定义工作流运行程序(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服务。 它提供了以下两个配置选项：
+
+* 按路径(`postProcWorkflowsByPath`)划分的后处理工作流：可以根据不同的存储库路径列出多个工作流模型。 使用冒号分隔路径和模型。 支持简单的存储库路径。 将这些值映射到`/var`路径中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 按表达式(`postProcWorkflowsByExpression`)划分的后处理工作流：可以根据不同的正则表达式列出多个工作流模型。 表达式和模型应使用冒号分隔。 正则表达式应直接指向“资产”节点，而不是任何演绎版或文件。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
+
+要了解如何部署OSGi配置，请参阅[部署到 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)。
 
 ## 最佳实践和限制 {#best-practices-limitations-tips}
 
