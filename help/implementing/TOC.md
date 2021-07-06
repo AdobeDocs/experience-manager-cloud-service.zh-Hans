@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '885'
 ht-degree: 34%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 34%
    + [记录](developing/introduction/logging.md)
    + [配置和配置浏览器](developing/introduction/configurations.md)
    + [AEM技术基础](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+   + [API参考资料](/help/implementing/developing/reference-materials.md)
    + [为服务器端API生成访问令牌](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM中的Headful和Headless](developing/headful-headless.md)
    + 完整堆栈AEM开发{#full-stack}
@@ -103,7 +103,6 @@ ht-degree: 34%
          + [实施自定义谓词计算器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [自定义错误页](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM节点类型](/help/implementing/developing/introduction/node-types.md)
-      + [Java API准则](/help/implementing/developing/introduction/java-api-guidelines.md)
    + 无外设体验管理 {#headless}
       + [无头和AEM](developing/headless/introduction.md)
       + [无头开发人员历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
