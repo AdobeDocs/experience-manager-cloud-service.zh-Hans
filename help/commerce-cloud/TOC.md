@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as aCloud Service
 breadcrumb-title: AEM Content and Commerce 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Content and Commerce as a Cloud Service。
-source-git-commit: 960fd1bc4731e180cea536ce5a835b15e42fe991
+source-git-commit: 677ac2c35fa79caf16f5f0ef3de7b0791272c44b
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 44%
+source-wordcount: '112'
+ht-degree: 43%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 44%
       + [使用关联的内容扩充产品数据](configuring/enrich-product-associated-content.md)
       + [为SEO配置URL](configuring/advanced-url-configuration.md)
       + [缓存选项](configuring/caching.md)
+      + [自定义HTTP头](/help/commerce-cloud/configuring/custom-http-headers.md)
    + 开发 {#developing}
       + [使用AEMCloud ServiceSDK进行开发](develop.md)
       + [样式CIF组件](customizing/style-cif-component.md)
