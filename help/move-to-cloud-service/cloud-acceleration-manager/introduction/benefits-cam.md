@@ -4,15 +4,15 @@ description: 本页重点介绍使用Cloud Acceleration Manager的主要优势�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a38238ed1bf726fa5a123d820bc2ff4d220f3606
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
 
 
-# 使用Cloud Acceleration Manager {#benefits-cam}的好处
+# 使用Cloud Acceleration Manager的好处 {#benefits-cam}
 
 Cloud Acceleration Manager是一个基于云的免费应用程序，可对客户当前的Adobe Experience Manager(AEM)实施进行评估，并帮助按照Adobe推荐的迁移方法，将其到AEM的历程作为Cloud Service进行管理。
 
@@ -21,3 +21,7 @@ Cloud Acceleration Manager是一个基于云的免费应用程序，可对客户
 * 以易于使用的格式提供评估。
 * 指导和管理过渡历程。
 * 提供最佳实践、相关帮助和工具访问权限，以最大程度地缩短迁移时间。
+
+## 下一步 {#whats-next}
+
+了解了Cloud Acceleration Manager的概念后，您即可使用和Cloud Acceleration Manager快速入门。
