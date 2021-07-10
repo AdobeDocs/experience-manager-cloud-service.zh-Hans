@@ -4,9 +4,9 @@ description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ ht-degree: 4%
 
 #### 最佳实践评估 {#best-practices-assessment}
 
-此卡提供
+“最佳实践评估”选项对您当前的AEM实例进行评估，并就采用AEM最佳实践的后续步骤提供指导。 您可以从此选项卡中查看以下信息：
+
+* AEM实例概述
+* 自定义组件和模板
+* 其他发现
+* 较慢查询
+* 维护任务
 
 #### 迁移复杂性评估 {#migration-complexity-assessment}
 
-此卡提供
+“迁移复杂性评估”选项可评估将现有AEM实施作为Cloud Service迁移到AEM的复杂性。 您可以从此选项卡中查看以下信息：
 
+* AEM实例概述
+* 评估
+* 内容迁移注意事项
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 使用计划和设置卡 {#planning-setup}
 
@@ -119,10 +130,8 @@ ht-degree: 4%
 
 1. 此时将显示一个内容轮播，其中包含迁移历程的此阶段的相关信息。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 下一步 {#whats-next}
 
 了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在即可继续查看下一步（使用实施阶段）。
-
-
