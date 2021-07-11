@@ -4,7 +4,7 @@ description: 本页概述Cloud Acceleration Manager中的实施阶段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 ---
 
 
-# Cloud Acceleration Manager {#implementation-phase-cam}中的实施阶段
+# Cloud Acceleration Manager中的实施阶段 {#implementation-phase-cam}
 
 实施阶段包括：
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 >请参阅[在Cloud Acceleration Manager中创建和管理项目](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)以了解更多信息。
 
 
-## 使用本地开发卡{#local-development}
+## 使用本地开发卡 {#local-development}
 
 当您开始迁移历程的“实施”阶段时，本地开发卡会提供所有相关内容，以帮助您设置本地AEM开发环境。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
-## 使用代码重构卡{#code-refactoring}
+## 使用代码重构卡 {#code-refactoring}
 
 “代码重构”活动卡片提供了所有相关信息，并突出显示了在移动到AEM as a Cloud Service时需要查看的代码重构区域。
 
@@ -63,7 +63,7 @@ ht-degree: 2%
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
-## 将AEM用作Cloud Service部署卡{#aem-as-a-cloud-service-deployment}
+## 将AEM用作Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
 
 AEM as a Cloud Service部署卡提供了所有相关内容，可帮助您将代码作为Cloud Service部署到AEM。
 
@@ -75,10 +75,10 @@ AEM as a Cloud Service部署卡提供了所有相关内容，可帮助您将代�
 
 1. 此时将显示一个内容轮播，其中包含迁移历程的此阶段的相关信息。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
-## 使用内容传输卡{#content-transfer}
+## 使用内容传输卡 {#content-transfer}
 
 内容传输活动卡提供了相关指导和注意事项，在使用内容传输工具将内容从当前AEM实例移动到AEM作为Cloud Service时，应该对这些内容进行审核。
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service部署卡提供了所有相关内容，可帮助您将代�
 
 1. 此时将显示一个内容轮播，其中包含迁移历程的此阶段的相关信息。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >在使用内容传输工具之前，请查看[先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)和[最佳实践和准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)。
@@ -103,6 +103,6 @@ AEM as a Cloud Service部署卡提供了所有相关内容，可帮助您将代�
 
 您还可以使用`path`参数（例如`http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`）来估计特定存储库路径的大小。
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 了解如何登录Cloud Acceleration Manager以及如何利用实施阶段后，您现在便可以继续查看下一步(使用GoLive阶段)。
