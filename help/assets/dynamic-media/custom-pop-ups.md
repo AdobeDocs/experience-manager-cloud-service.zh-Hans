@@ -2,9 +2,9 @@
 title: 使用概览创建自定义弹出窗口
 description: “了解如何在电子商务体验中使用默认概览，在该体验中显示一个弹出窗口，其中包含产品信息以促进购买。 您可以触发要在弹出窗口Windows®中显示的自定义内容。”
 feature: 交互式图像、交互式视频、轮播横幅
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 2%
