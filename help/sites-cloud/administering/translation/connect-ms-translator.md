@@ -2,9 +2,9 @@
 title: 连接到Microsoft Translator
 description: 了解如何将AEM直接连接到Microsoft Translator以自动执行翻译工作流。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 1%
@@ -48,7 +48,7 @@ ht-degree: 1%
 1. 点按或单击&#x200B;**连接**&#x200B;以验证连接。
 1. 点按或单击&#x200B;**保存并关闭**。
 
-## 升级Microsoft Translator试用版许可证配置{#upgrading-the-microsoft-translator-trial-license-configuration}
+## 升级Microsoft Translator试用版许可证配置 {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Microsoft翻译配置页面提供了指向Microsoft网站的便捷链接，以便获取适合生产系统的帐户订阅。
 
@@ -57,7 +57,7 @@ Microsoft翻译配置页面提供了指向Microsoft网站的便捷链接，以�
 1. 点按或单击&#x200B;**编辑**。
 1. 在&#x200B;**编辑配置**&#x200B;窗口中，点按或单击&#x200B;**升级订阅**。 此时将打开一个Microsoft网页，其中包含有关该服务的更多详细信息。
 
-## 自定义Microsoft Translator引擎{#customizing-your-microsoft-translator-engine}
+## 自定义Microsoft Translator引擎 {#customizing-your-microsoft-translator-engine}
 
 Microsoft翻译配置页面提供了一个指向Microsoft网站的便捷链接，用于自定义您的Microsoft Translator引擎。
 
@@ -66,7 +66,7 @@ Microsoft翻译配置页面提供了一个指向Microsoft网站的便捷链接�
 1. 点按或单击&#x200B;**编辑**。
 1. 在&#x200B;**编辑配置**&#x200B;窗口中，点按或单击&#x200B;**自定义Translator**。 使用打开的Microsoft网页自定义您的服务。
 
-## 激活Translator服务配置{#activating-the-translator-service-configurations}
+## 激活Translator服务配置 {#activating-the-translator-service-configurations}
 
 您需要激活云服务配置以支持复制到发布实例的翻译内容。 使用[发布树](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree)的方法激活存储Microsoft Translator配置的存储库节点。 节点位于以下父节点下：
 
