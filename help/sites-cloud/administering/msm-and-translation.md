@@ -2,16 +2,16 @@
 title: 多站点管理器与翻译
 description: 了解如何在项目中重复使用您的内容，以及如何在AEM中管理多语言网站。
 feature: 管理
-role: Administrator
+role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-# 多站点管理器和翻译{#msm-and-translation}
+# 多站点管理器与翻译 {#msm-and-translation}
 
 Adobe Experience Manager内置的多站点管理器和翻译工具简化了内容本地化过程。
 
@@ -22,7 +22,7 @@ Adobe Experience Manager内置的多站点管理器和翻译工具简化了内�
 
 这两项功能可以结合使用，以满足[跨国网站和多语言网站](#multinational-and-multilingual-sites)的需求。
 
-## 多国和多语言站点{#multinational-and-multilingual-sites}
+## 多国和多语言站点 {#multinational-and-multilingual-sites}
 
 通过组合使用多站点管理器和翻译工作流，您可以高效地为跨国和多语言站点创建内容。
 
