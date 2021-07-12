@@ -3,9 +3,9 @@ title: 将资产、文件夹和收藏集发布到 Brand Portal
 description: 将资产、文件夹和收藏集发布到 Brand Portal。
 contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution，配置
-role: Business Practitioner
+role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 97%
@@ -83,11 +83,11 @@ ht-degree: 97%
 ![bp_landing_page](assets/bp_landing_page.png)
 
 
-## 将文件夹发布到 Brand Portal{#publish-folders-to-brand-portal}
+## 将文件夹发布到 Brand Portal {#publish-folders-to-brand-portal}
 
 您可以立即发布或取消发布资产文件夹，或安排在稍后的日期或时间执行操作。
 
-### 将文件夹发布到 Brand Portal{#publish-folders-to-bp}
+### 将文件夹发布到 Brand Portal {#publish-folders-to-bp}
 
 1. 在 Assets 控制台中，选择要发布的文件夹，然后单击工具栏中的&#x200B;**[!UICONTROL 快速发布]**&#x200B;选项。
 
@@ -132,7 +132,7 @@ ht-degree: 97%
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
-### 从 Brand Portal 取消发布文件夹{#unpublish-folders-from-brand-portal}
+### 从 Brand Portal 取消发布文件夹 {#unpublish-folders-from-brand-portal}
 
 您可以通过从 AEM Assets 实例中取消发布已发布到 Brand Portal 的任何资产文件夹，来删除该文件夹。取消发布原始文件夹后，Brand Portal 用户将无法再使用其副本。
 
