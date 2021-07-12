@@ -2,9 +2,9 @@
 title: 设置Dynamic Media
 description: 要设置Dynamic Media，您必须配置Dynamic Media并管理图像预设和查看器预设。
 contentOwner: Rick Brough
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 15%
