@@ -2,9 +2,9 @@
 title: 管理内容片段
 description: 了解如何使用AEM控制台来管理您的Assets内容片段（无头内容的基础）。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1746'
 ht-degree: 9%
@@ -39,13 +39,13 @@ ht-degree: 9%
 >
 >内容片段以&#x200B;**Assets**&#x200B;的形式存储，因此主要从&#x200B;**Assets**&#x200B;控制台中进行管理。
 
-## 创建内容片段{#creating-content-fragments}
+## 创建内容片段 {#creating-content-fragments}
 
-### 创建内容模型{#creating-a-content-model}
+### 创建内容模型 {#creating-a-content-model}
 
 [在使用结](/help/assets/content-fragments/content-fragments-models.md) 构化内容创建内容片段之前，应启用并创建内容片段模型。
 
-### 创建内容片段{#creating-a-content-fragment}
+### 创建内容片段 {#creating-a-content-fragment}
 
 创建内容片段的方法是：
 
@@ -88,7 +88,7 @@ ht-degree: 9%
    >[!NOTE]
    >在控制台的&#x200B;**列表**&#x200B;模式下，您可以更新&#x200B;**查看设置**&#x200B;以启用&#x200B;**内容片段模型**&#x200B;列。
 
-## 资产控制台中内容片段的操作{#actions-for-a-content-fragment-assets-console}
+## 资产控制台中内容片段的操作 {#actions-for-a-content-fragment-assets-console}
 
 在&#x200B;**Assets**&#x200B;控制台中，可以对内容片段执行一系列操作：
 
@@ -126,7 +126,7 @@ ht-degree: 9%
 >
 >其中许多操作是[资产](/help/assets/manage-digital-assets.md)和/或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的标准操作。
 
-## 打开片段编辑器{#opening-the-fragment-editor}
+## 打开片段编辑器 {#opening-the-fragment-editor}
 
 要打开片段进行编辑，请执行以下操作：
 
@@ -158,11 +158,11 @@ ht-degree: 9%
    >
    >**保存并关闭**&#x200B;和&#x200B;**关闭**&#x200B;将退出编辑器 — 有关各种选项如何对内容片段进行操作的完整信息，请参阅[保存、关闭和版本](#save-close-and-versions)。
 
-## 内容片段编辑器{#modes-actions-content-fragment-editor}中的模式和操作
+## 内容片段编辑器中的模式和操作 {#modes-actions-content-fragment-editor}
 
 内容片段编辑器中提供了多种模式和操作。
 
-### 内容片段编辑器{#modes-in-the-content-fragment-editor}中的模式
+### 内容片段编辑器中的模式 {#modes-in-the-content-fragment-editor}
 
 使用侧面板中的图标在各种模式中导航：
 
@@ -176,7 +176,7 @@ ht-degree: 9%
 
 ![模式](assets/cfm-managing-04.png)
 
-### 内容片段编辑器{#toolbar-actions-in-the-content-fragment-editor}中的工具栏操作
+### 内容片段编辑器中的工具栏操作 {#toolbar-actions-in-the-content-fragment-editor}
 
 顶部工具栏中的某些功能可从多种模式中使用：
 
@@ -209,7 +209,7 @@ ht-degree: 9%
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
 
-## 保存、关闭和版本{#save-close-and-versions}
+## 保存、关闭和版本 {#save-close-and-versions}
 
 >[!NOTE]
 >
@@ -259,23 +259,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 3. 如果用户取消编辑，则会恢复在编辑会话开始时创建的版本，并删除令牌以结束编辑会话。
 4. 如果用户选择&#x200B;**Save**&#x200B;编辑，则更新的元素/变量将被保留，并且令牌会被删除以结束编辑会话。
 
-## 编辑片段{#editing-the-content-of-your-fragment}的内容
+## 编辑片段的内容 {#editing-the-content-of-your-fragment}
 
 打开片段后，可以使用[Variations](/help/assets/content-fragments/content-fragments-variations.md)选项卡创作内容。
 
-## 创建和管理片段{#creating-and-managing-variations-within-your-fragment}中的变量
+## 创建和管理片段中的变量 {#creating-and-managing-variations-within-your-fragment}
 
 创建主控内容后，即可创建和管理该内容的[变体](/help/assets/content-fragments/content-fragments-variations.md)。
 
-## 将内容与片段{#associating-content-with-your-fragment}关联
+## 将内容与片段关联 {#associating-content-with-your-fragment}
 
 您还可以[将内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段关联。 这提供了一个连接，以便在将资产（即图像）添加到内容页面时，可以（可选）与片段一起使用资产（即图像）。
 
-## 查看和编辑片段{#viewing-and-editing-the-metadata-properties-of-your-fragment}的元数据（属性）
+## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 您可以使用[Metadata](/help/assets/content-fragments/content-fragments-metadata.md)选项卡查看和编辑片段的属性。
 
-## 内容片段{#timeline-for-content-fragments}的时间轴
+## 内容片段的时间轴 {#timeline-for-content-fragments}
 
 除标准选项外， [时间轴](/help/assets/manage-digital-assets.md#timeline)还提供特定于内容片段的信息和操作：
 
@@ -310,7 +310,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ![时间线](assets/cfm-managing-05.png)
 
-## 比较片段版本{#comparing-fragment-versions}
+## 比较片段版本 {#comparing-fragment-versions}
 
 选择特定版本后，**与当前比较**&#x200B;操作可从[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中使用。
 
@@ -337,7 +337,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ![比较](assets/cfm-managing-06.png)
 
-## 还原到{#reverting-to-a-version}版本
+## 还原到某个版本  {#reverting-to-a-version}
 
 您可以还原到片段的特定版本：
 
@@ -347,7 +347,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 当[将某个版本与当前版本进行比较](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions)时，您可以&#x200B;**将**&#x200B;还原到选定的版本。
 
-## 发布和引用片段{#publishing-and-referencing-a-fragment}
+## 发布和引用片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 如果您的片段基于模型，则应确保[模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
@@ -362,7 +362,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >[!CAUTION]
 发布和/或引用片段后，当作者打开片段进行再次编辑时，AEM将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
 
-## 删除片段{#deleting-a-fragment}
+## 删除片段 {#deleting-a-fragment}
 
 要删除片段，请执行以下操作：
 
