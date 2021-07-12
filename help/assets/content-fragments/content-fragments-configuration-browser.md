@@ -2,9 +2,9 @@
 title: 内容片段 — 配置浏览器
 description: 了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM功能强大的无头交付功能。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 18%
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM功能强大的无头交付功能。
 
-## 为实例{#enable-content-fragment-functionality-instance}启用内容片段功能
+## 为实例启用内容片段功能 {#enable-content-fragment-functionality-instance}
 
 在使用内容片段之前，您需要使用&#x200B;**配置浏览器**&#x200B;来启用：
 
@@ -35,7 +35,7 @@ ht-degree: 18%
 * 通过配置浏览器启用内容片段功能的使用
 * 将配置应用到Assets文件夹
 
-### 在配置浏览器{#enable-content-fragment-functionality-in-configuration-browser}中启用内容片段功能
+### 在配置浏览器中启用内容片段功能 {#enable-content-fragment-functionality-in-configuration-browser}
 
 要[使用某些内容片段功能](#creating-a-content-fragment-model)，您&#x200B;**必须首先通过**&#x200B;配置浏览器&#x200B;**启用它们：**
 
@@ -63,7 +63,7 @@ ht-degree: 18%
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### 将配置应用到Assets文件夹{#apply-the-configuration-to-your-assets-folder}
+### 将配置应用到您的Assets文件夹 {#apply-the-configuration-to-your-assets-folder}
 
 为内容片段功能启用配置&#x200B;**全局**&#x200B;后，将应用于任何Assets文件夹。
 
