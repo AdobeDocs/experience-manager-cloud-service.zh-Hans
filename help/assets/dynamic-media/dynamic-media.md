@@ -1,9 +1,9 @@
 ---
 title: 使用 Dynamic Media
 description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上使用。
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 37%
@@ -50,7 +50,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Dynamic Media启用与Dynamic Media禁用{#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media启用与Dynamic Media禁用 {#dynamic-media-on-versus-dynamic-media-off}
 
 您可以通过以下特征判断Dynamic Media是否已启用（打开）：
 
@@ -60,7 +60,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 单击图像资产时，启用Dynamic Media后，资产的视图会有所不同。 Dynamic Media使用按需HTML5查看器。
 
-### 动态演绎版{#dynamic-renditions}
+### 动态演绎版 {#dynamic-renditions}
 
 当 Dynamic Media 处于启用状态时，可以使用图像和查看器预设等动态演绎版（在&#x200B;**[!UICONTROL 动态]**&#x200B;下）。
 
@@ -72,7 +72,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### PTIFF演绎版{#ptiff-renditions}
+### PTIFF演绎版 {#ptiff-renditions}
 
 Dynamic Media启用的资产包括`pyramid.tiffs`。
 
