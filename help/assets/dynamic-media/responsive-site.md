@@ -2,9 +2,9 @@
 title: 为响应式网站传送优化的图像
 description: 了解如何使用响应式代码功能从Dynamic Media交付优化的图像。
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 32%
@@ -44,7 +44,7 @@ ht-degree: 32%
 1. 在&#x200B;**[!UICONTROL 嵌入响应式图像]**&#x200B;对话框中，选择并复制响应式代码文本，然后将其粘贴到您的网站中，以访问响应式资产。
 1. 编辑嵌入代码中的默认断点，以便直接在代码中与响应式网站上的内容匹配。 此外，还应测试不同页面断点处使用的不同图像分辨率。
 
-## 使用HTTP/2交付Dynamic Media资产{#using-http-to-delivery-your-dynamic-media-assets}
+## 使用HTTP/2交付Dynamic Media资产 {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2是经过更新的新Web协议，可改进浏览器和服务器的通信方式。 它提供了更快的信息传输，并降低了所需的处理能力。 HTTP/2支持交付Dynamic Media资产，从而提供更好的响应和加载时间。
 
