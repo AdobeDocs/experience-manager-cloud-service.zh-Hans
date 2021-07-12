@@ -2,9 +2,9 @@
 title: 使用内容片段
 description: 了解Adobe Experience Manager(AEM)作为Cloud Service中的内容片段如何让您设计、创建、策划和使用独立于页面的内容，非常适合无头交付。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 6%
@@ -82,7 +82,7 @@ ht-degree: 6%
 体验片段可以包含内容片段形式的内容，反之则不行。
 有关更多信息，请参阅[了解AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)中的内容片段和体验片段。
 
-## 内容片段和内容服务{#content-fragments-and-content-services}
+## 内容片段和内容服务 {#content-fragments-and-content-services}
 
 AEM Content Services旨在对AEM中/从中提供的内容的描述和交付进行归纳，使其不仅仅限于网页。
 
@@ -131,7 +131,7 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
 
 * 独立于投放机制（即页面、渠道）。
 
-### 可视资产{#fragments-with-visual-assets}的片段
+### 包含可视资产的片段 {#fragments-with-visual-assets}
 
 为了让作者更好地控制其内容，可以将图像添加到内容片段和/或与其集成。
 
@@ -160,7 +160,7 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
    * 不提供为特定片段批准的概念。
    * 有关更多信息，请参阅[资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)。
 
-### 内容片段的组成部分{#constituent-parts-of-a-content-fragment}
+### 内容片段的组成部分 {#constituent-parts-of-a-content-fragment}
 
 内容片段资产由以下部分（直接或间接）组成：
 
@@ -237,7 +237,7 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
    * 可以是[Amsuglated](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)，以快速将文本截断为预定义的长度。
    * 可在片段编辑器的[Variations](/help/assets/content-fragments/content-fragments-variations.md)选项卡下找到。
 
-### 使用内容片段创作页面时的中间内容{#in-between-content-when-page-authoring-with-content-fragments}
+### 使用内容片段创作页面时的中间内容 {#in-between-content-when-page-authoring-with-content-fragments}
 
 中间内容：
 
@@ -250,7 +250,7 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
 >[!CAUTION]
 中间内容是页面内容。它不会存储在内容片段中。
 
-### 片段{#required-by-fragments}所需
+### 片段必需 {#required-by-fragments}
 
 要创建内容片段，您需要：
 
@@ -275,11 +275,11 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
    * 片段需要一个或多个专用组件来定义布局并交付部分或全部元素/变体和关联内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
 
-## 用法示例{#example-usage}
+## 使用示例 {#example-usage}
 
 片段及其元素和变量可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
 
-### WKND示例{#wknd-sample}
+### WKND示例 {#wknd-sample}
 
 提供了[WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md)示例，以帮助您了解AEM as aCloud Service。
 
