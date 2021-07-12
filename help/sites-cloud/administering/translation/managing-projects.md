@@ -2,16 +2,16 @@
 title: 管理翻译项目
 description: 了解如何在AEM中创建和管理机器和人类翻译项目。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 1%
 
 ---
 
-# 管理翻译项目{#managing-translation-projects}
+# 管理翻译项目 {#managing-translation-projects}
 
 翻译项目使您能够管理AEM内容的翻译。 翻译项目是一种AEM [project](/help/sites-cloud/authoring/projects/overview.md)类型，其中包含要翻译成其他语言的资源。 这些资源是使用语言主控创建的[语言副本](preparation.md)的页面和资产。
 
@@ -38,11 +38,11 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 * 将为`/content/wknd/en/products`页面和所有子页面创建翻译项目，以法语副本为目标。 由于语言副本不包含`/content/wknd/fr/products`页面，因此AEM会立即将`/content/wknd/en/products`页面和所有子页面复制到法语语言副本中。 翻译项目中也包含这些副本。
 * 将为`/content/wknd/en`页面和所有子页面创建翻译项目，以法语副本为目标。 由于语言副本包含与`/content/wknd/en`页面（语言根）对应的页面，因此AEM会复制`/content/wknd/en`页面和所有子页面，并将它们添加到启动项中。 翻译项目中也包含这些副本。
 
-## 从站点控制台{#performing-initial-translations-and-updating-existing-translations}进行翻译
+## 从站点控制台进行翻译 {#performing-initial-translations-and-updating-existing-translations}
 
 可以直接从站点控制台创建或更新翻译项目。
 
-### 使用引用面板{#creating-translation-projects-using-the-references-panel}创建翻译项目
+### 使用“引用”面板创建翻译项目 {#creating-translation-projects-using-the-references-panel}
 
 创建翻译项目，以便您能够执行和管理用于翻译语言资源的工作流主控。 在创建项目时，您需要以要翻译的语言主控以及要执行翻译的语言副本指定页面：
 
@@ -58,7 +58,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 >
 >要创建项目，您的帐户必须是`project-administrators`组的成员。
 
-### 初始翻译和更新翻译{#initial-and-updating}
+### 初始翻译和更新翻译 {#initial-and-updating}
 
 “引用”面板指示您是更新现有语言副本还是创建语言副本的第一个版本。 当选定页面存在语言副本时，将显示“更新语言副本”选项卡，提供对项目相关命令的访问。
 
@@ -68,7 +68,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 ![创建和翻译](../assets/create-and-translate.png)
 
-### 为新语言副本创建翻译项目{#create-translation-projects-for-a-new-language-copy}
+### 为新语言副本创建翻译项目 {#create-translation-projects-for-a-new-language-copy}
 
 1. 使用站点控制台选择要添加到翻译项目的页面。
 
@@ -90,7 +90,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按&#x200B;**创建**。
 
-### 为现有语言副本创建翻译项目{#create-translation-projects-for-an-existing-language-copy}
+### 为现有语言副本创建翻译项目 {#create-translation-projects-for-an-existing-language-copy}
 
 1. 使用站点控制台选择要添加到翻译项目的页面。
 
@@ -110,7 +110,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按&#x200B;**创建**。
 
-### 将页面添加到翻译项目{#adding-pages-to-a-translation-project}
+### 将页面添加到翻译项目 {#adding-pages-to-a-translation-project}
 
 创建翻译项目后，可以使用&#x200B;**资源**&#x200B;边栏将页面添加到项目。 当您在同一项目中包含来自不同分支的页面时，添加页面非常有用。
 
@@ -140,7 +140,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按&#x200B;**Update**。
 
-### 创建语言副本的结构{#creating-the-structure-of-a-language-copy}
+### 创建语言副本的结构 {#creating-the-structure-of-a-language-copy}
 
 可以仅创建语言副本的结构，从而将语言主控的内容和结构更改复制到（未翻译）语言副本。 这与翻译作业或项目无关。 您可以使用它保持语言母版同步，即使不进行翻译。
 
@@ -164,7 +164,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按&#x200B;**Update**。
 
-### 更新翻译内存{#updating-translation-memory}
+### 更新翻译内存 {#updating-translation-memory}
 
 翻译内容的手动编辑可以同步回翻译管理系统(TMS)以培训其翻译记忆库。
 
@@ -175,7 +175,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 AEM会将选定的字符串发送回翻译管理系统。
 
-### 检查页面{#check-translation-status}的翻译状态
+### 检查页面的翻译状态 {#check-translation-status}
 
 可以在站点控制台的列表视图中选择一个属性，以显示页面是否已翻译、正在翻译或尚未翻译。
 
@@ -210,7 +210,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 
 ![省略号按钮](../assets/ellipsis.png)
 
-### 使用项目控制台{#creating-a-translation-project-using-the-projects-console}创建翻译项目
+### 使用项目控制台创建翻译项目 {#creating-a-translation-project-using-the-projects-console}
 
 如果您希望使用项目控制台而不是站点控制台，则可以手动创建翻译项目。
 
@@ -232,7 +232,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 1. 单击或点按&#x200B;**高级**&#x200B;并提供与翻译相关的属性的值。
 1. 单击或点按&#x200B;**创建**。在确认框中，单击或点按&#x200B;**完成**&#x200B;以返回到项目控制台，或单击或点按&#x200B;**打开项目**&#x200B;以打开并开始管理项目。
 
-### 将页面和资产添加到翻译作业{#adding-pages-assets-to-a-translation-job}
+### 将页面和资产添加到翻译作业 {#adding-pages-assets-to-a-translation-job}
 
 您可以向翻译项目的翻译作业添加页面、资产或标记。 要添加页面或资产，请执行以下操作：
 
@@ -258,11 +258,11 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 >
 >此方法可将页面/资产及其子项添加到项目中。 如果您只想添加父项，请选择&#x200B;**资产/页面（不含子项）**。
 
-### 向翻译作业{#adding-tags-to-a-translation-job}添加标记
+### 向翻译作业添加标记 {#adding-tags-to-a-translation-job}
 
 您可以向翻译项目添加标记，这与向项目添加资产和页面的方式类似。[](#adding-pages-assets-to-a-translation-job) 只需在“添 **** 加”菜单下选 **** 择“标记”，然后执行相同的步骤。
 
-### 查看翻译项目详细信息{#seeing-translation-project-details}
+### 查看翻译项目详细信息 {#seeing-translation-project-details}
 
 翻译项目属性可通过项目摘要拼贴的省略号按钮访问。 除了通用的[项目信息](/help/sites-cloud/authoring/projects/overview.md#project-info)之外，翻译项目属性还包含特定于翻译的属性。
 
@@ -284,7 +284,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 
 ![翻译项目属性](../assets/translation-project-properties.png)
 
-### 监控翻译作业的状态{#monitoring-the-status-of-a-translation-job}
+### 监控翻译作业的状态 {#monitoring-the-status-of-a-translation-job}
 
 翻译项目的翻译作业拼贴提供了翻译作业的状态，以及作业中的页面和资产数量。
 
@@ -309,7 +309,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 
 要查看作业中每个文件的状态，请单击或点按图块底部的省略号。
 
-### 设置翻译作业的到期日期{#setting-the-due-date-of-translation-jobs}
+### 设置翻译作业的到期日期 {#setting-the-due-date-of-translation-jobs}
 
 指定翻译供应商需要返回翻译文件的日期。 仅当您使用的翻译供应商支持此功能时，才能正确设置到期日期。
 
@@ -323,7 +323,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 
 1. 单击或点按&#x200B;**保存并关闭**。
 
-### 对翻译作业的范围{#scoping-a-translation-job}
+### 规范翻译作业 {#scoping-a-translation-job}
 
 对翻译作业进行范围设置，以从翻译服务提供商那里获取翻译成本的估算值。 在您查看作业时，会将源文件提交给翻译供应商，该供应商将文本与其存储的翻译池（翻译内存）进行比较。 通常，范围是需要翻译的词数。
 
@@ -341,7 +341,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 1. 在翻译作业的标题中，点按或单击命令菜单，然后点按或单击&#x200B;**请求范围**。
 1. 当作业状态更改为&#x200B;**已完成的范围**&#x200B;时，单击或点按命令菜单，然后单击或点按&#x200B;**显示范围**。
 
-### 开始翻译作业{#starting-translation-jobs}
+### 启动翻译作业 {#starting-translation-jobs}
 
 启动翻译作业以将源页面翻译为目标语言。 根据翻译摘要拼贴的属性值执行翻译。
 
@@ -359,7 +359,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 1. 在工具栏中，点按或单击&#x200B;**开始翻译作业**。
 1. 在对话框中，查看要启动的作业列表，然后使用&#x200B;**Start**&#x200B;进行确认，或使用&#x200B;**Cancel**&#x200B;中止。
 
-### 取消翻译作业{#canceling-a-translation-job}
+### 取消翻译作业 {#canceling-a-translation-job}
 
 取消翻译作业以停止翻译过程并阻止翻译供应商执行任何进一步的翻译。 当作业具有&#x200B;**Committed For Translation**&#x200B;或&#x200B;**Translation In Progress**&#x200B;状态时，可以取消作业。
 
@@ -367,7 +367,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 1. 在翻译作业拼贴中，单击或点按命令菜单，然后单击或点按&#x200B;**取消**。
 1. 在确认取消翻译的操作对话框中，单击或点按&#x200B;**OK**。
 
-### 接受和拒绝工作流{#accept-reject-workflow}
+### 接受和拒绝工作流 {#accept-reject-workflow}
 
 当内容在翻译后返回且处于&#x200B;**准备审阅**&#x200B;状态时，您可以进入翻译作业并接受/拒绝内容。
 
@@ -375,7 +375,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 
 拒绝内容会将其发送回翻译供应商，以便他们能够在该供应商中看到评论。
 
-### 完成和归档翻译作业{#completing-and-archiving-translation-jobs}
+### 完成和存档翻译作业 {#completing-and-archiving-translation-jobs}
 
 在审核供应商提供的翻译文件后完成翻译工作。
 
@@ -392,11 +392,11 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 
 存档作业时，将从项目中删除翻译作业拼贴。
 
-## 审阅和使用翻译后的内容{#reviewing-and-promoting-updated-content}
+## 审阅和使用翻译内容 {#reviewing-and-promoting-updated-content}
 
 您可以使用站点控制台来查看内容、比较语言副本和激活内容。
 
-### 提升更新内容{#promoting-updated-content}
+### 提升更新内容 {#promoting-updated-content}
 
 在为现有语言副本翻译内容时，请查看翻译，根据需要进行更改，然后提升翻译以将其移至语言副本。 当翻译作业显示&#x200B;**准备审阅**&#x200B;状态时，您可以查看已翻译的文件。
 
@@ -415,7 +415,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 1. 查看内容并进行必要更改后，要提升启动项副本，请单击&#x200B;**Promote**。
 1. 在&#x200B;**提升启动项**&#x200B;页面上，指定要提升的页面，然后单击或点按&#x200B;**提升**。
 
-### 比较语言副本{#comparing-language-copies}
+### 比较语言副本 {#comparing-language-copies}
 
 要将语言副本与语言主控进行比较，请执行以下操作：
 
@@ -429,11 +429,11 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 1. 此时将并列打开两个页面（启动页面和源页面）。
    * 有关使用此功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
 
-## 导入和导出翻译作业{#import-export}
+## 导入和导出翻译作业 {#import-export}
 
 尽管AEM提供了许多翻译解决方案和界面，但也可以手动导入和导出翻译作业信息。
 
-### 导出翻译作业{#exporting-a-translation-job}
+### 导出翻译作业 {#exporting-a-translation-job}
 
 您可以下载翻译作业的内容，例如，通过连接器发送到未与AEM集成的翻译提供商，或者查看内容。
 
@@ -441,7 +441,7 @@ AEM中的翻译项目使用标准[AEM项目控制台。](/help/sites-cloud/autho
 1. 在对话框中，单击或点按&#x200B;**下载导出的文件**，如有必要，可使用Web浏览器对话框保存文件。
 1. 在对话框中，单击或点按&#x200B;**关闭**。
 
-### 导入翻译作业{#importing-a-translation-job}
+### 导入翻译作业 {#importing-a-translation-job}
 
 您可以将翻译内容导入AEM，例如，当翻译提供商将翻译内容发送给您时，因为它们未通过连接器与AEM集成。
 
