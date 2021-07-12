@@ -2,9 +2,9 @@
 title: 重用内容 — 多站点管理器和Live Copy
 description: 介绍如何利用AEM功能强大的Live Copy和多站点管理器功能来重用内容。
 feature: 多站点管理器
-role: Administrator
+role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 1%
@@ -30,7 +30,7 @@ ht-degree: 1%
 * [MSM转出冲突](rollout-conflicts.md)
 * [MSM最佳实践](best-practices.md)
 
-## 可能的情景{#possible-scenarios}
+## 可能的情景 {#possible-scenarios}
 
 MSM和Live Copy有许多用例。 某些情况包括：
 
@@ -105,7 +105,7 @@ MSM和Live Copy有许多用例。 某些情况包括：
    >* 需要调整多少个副本。
 
 
-## UI {#msm-from-the-ui}中的MSM
+## UI中的MSM {#msm-from-the-ui}
 
 可以使用相应控制台中的各种选项，在UI中直接访问MSM。
 
@@ -143,7 +143,7 @@ MSM和Live Copy有许多用例。 某些情况包括：
 >
 >MSM功能的某些方面可用于其他一些AEM功能，如启动项。 在这些情况下，Live Copy由该功能管理。
 
-### 使用的术语{#terms-used}
+### 使用的术语 {#terms-used}
 
 下表概述了与MSM一起使用的主要术语。 后续章节和页面中将详细介绍这些内容。
 
@@ -191,7 +191,7 @@ MSM Live Copy是特定站点内容的副本，其与原始源的Live关系保持
 * 作者对`/content/wknd/language-masters/en`下的页面进行了更改。
 * 触发时，MSM会将这些更改同步到Live Copy。
 
-### Live Copy — 组合{#live-copies-composition}
+### Live Copy — 合成 {#live-copies-composition}
 
 >[!NOTE]
 >
@@ -214,7 +214,7 @@ Live Copy的基本形式有：
 
 ![Live Copy合成概述](../assets/live-copy-composition.png)
 
-#### 具有非Live-Copy页面的Live Copy {#live-copy-with-non-live-copy-pages}
+#### 包含非Live-Copy页面的Live Copy {#live-copy-with-non-live-copy-pages}
 
 在AEM中创建Live Copy时，您可以查看并浏览Live Copy分支，并在Live Copy分支中使用常规的AEM功能。 这意味着您（或某个流程）可以在Live Copy中创建新资源（页面和/或段落）。 例如，特定地区或国家/地区的产品。
 
@@ -242,7 +242,7 @@ Live Copy的基本形式有：
 
 将Live Copy创建为浅层Live Copy的子项时，它称为堆叠式Live Copy。 其行为与[嵌套Live Copy](#nested-live-copies)相同。
 
-### 源、Blueprint和Blueprint配置{#source-blueprints-and-blueprint-configurations}
+### 源、Blueprint和Blueprint配置 {#source-blueprints-and-blueprint-configurations}
 
 任何页面或页面分支都可用作Live Copy的源。 但是，MSM还允许您定义用于指定源路径的Blueprint配置。 使用Blueprint配置的好处是：
 
@@ -257,7 +257,7 @@ Live Copy的源可以是常规页面或Blueprint配置包含的页面。 这两�
 * [创建Blueprint配置](creating-live-copies.md#creating-a-blueprint-configuration)  — 该配置会预先定义用于创建Live Copy的页面。
 * [创建页面的Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page)  — 用于创建Live Copy（源页面）的页面是Blueprint页面。源页面可能被Blueprint配置引用，也可能未被Blueprint配置引用。
 
-### 转出并同步{#rollout-and-synchronize}
+### 转出并同步 {#rollout-and-synchronize}
 
 转出是与Live Copy及其源同步的中央MSM操作。 您可以手动执行转出，也可以自动执行转出。
 
@@ -285,11 +285,11 @@ Live Copy的源可以是常规页面或Blueprint配置包含的页面。 这两�
 
 转出配置可以重复使用，以便多个Live Copy可以使用相同的转出配置。 标准安装中包含若干[转出配置](live-copy-sync-config.md#installed-rollout-configurations)。
 
-### 转出冲突{#rollout-conflicts}
+### 转出冲突 {#rollout-conflicts}
 
 转出可能会变得复杂，尤其是当作者同时在源和Live Copy中编辑内容时。 因此，了解AEM如何处理转出过程中可能发生的任何[冲突将非常有用。](rollout-conflicts.md)
 
-### 暂停和取消继承和同步{#suspending-and-cancelling-inheritance-and-synchronization}
+### 暂停和取消继承和同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Live Copy中的每个页面和组件都通过Live关系与其源页面和组件相关联。 实时关系配置源中Live Copy内容的同步。
 
@@ -311,7 +311,7 @@ Live Copy中的每个页面和组件都通过Live关系与其源页面和组件�
 >
 >请参阅[分离Live Copy](creating-live-copies.md#detaching-a-live-copy)以获取完整详细信息，包括对子页面和父页面的相关影响。
 
-## 使用MSM {#standard-steps-for-using-msm}的标准步骤
+## 使用MSM的标准步骤 {#standard-steps-for-using-msm}
 
 以下步骤描述了使用MSM重复使用内容和将更改同步到Live Copy的标准过程。
 
