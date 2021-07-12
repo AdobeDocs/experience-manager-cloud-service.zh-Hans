@@ -2,9 +2,9 @@
 title: 在 Dynamic Media 中激活热链接保护
 description: 了解如何在Dynamic Media中激活热链接保护。
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
