@@ -2,16 +2,16 @@
 title: 识别要翻译的内容
 description: 了解翻译规则如何识别需要翻译的内容。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
-# 识别要翻译的内容{#identifying-content-to-translate}
+# 识别要翻译的内容 {#identifying-content-to-translate}
 
 翻译规则可识别要翻译的内容，这些内容适用于翻译项目中包含或排除的页面、组件和资产。 当页面或资产被翻译时，AEM会提取此内容，以便将其发送到翻译服务。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 >
 >AEM支持在资源类型和引用属性之间进行一对一映射，以转换页面上的引用内容。
 
-## 页面、组件和资产的规则语法{#rule-syntax-for-pages-components-and-assets}
+## 页面、组件和资产的规则语法 {#rule-syntax-for-pages-components-and-assets}
 
 规则是一个`node`元素，其中包含一个或多个子元素`property`和零个或多个子元素`node`:
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 </node>
 ```
 
-## 从页面{#rule-syntax-for-extracting-assets-from-pages}提取资产的规则语法
+## 从页面提取资产的规则语法  {#rule-syntax-for-extracting-assets-from-pages}
 
 使用以下规则语法来包含在组件中嵌入或从组件中引用的资产：
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 <assetNode resourceType="core/wcm/components/image/v2/image" assetReferenceAttribute="fileReference"/>
 ```
 
-## 覆盖规则{#overriding-rules}
+## 覆盖规则 {#overriding-rules}
 
 `translation_rules.xml`文件由具有多个子`node`元素的`nodelist`元素组成。 AEM从上到下读取节点列表。 当多个规则定向同一节点时，将使用文件中较低的规则。 例如，以下规则会导致除页面的`/content/mysite/en`分支之外，`text`属性中的所有内容都被翻译：
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 <nodelist>
 ```
 
-## 筛选属性{#filtering-properties}
+## 筛选属性 {#filtering-properties}
 
 您可以使用`filter`元素筛选具有特定属性的节点。
 
@@ -215,7 +215,7 @@ xml的结果将如下所示：
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## 手动编辑规则文件{#editing-the-rules-file-manually}
+## 手动编辑规则文件 {#editing-the-rules-file-manually}
 
 随AEM一起安装的`translation_rules.xml`文件包含一组默认的翻译规则。 您可以编辑文件以支持翻译项目的要求。 例如，您可以添加规则，以便对自定义组件的内容进行翻译。
 
@@ -225,7 +225,7 @@ xml的结果将如下所示：
 >
 >创建内容包后，每次编辑文件时都重新构建包。
 
-## 翻译规则文件{#example-translation-rules-file}示例
+## 翻译规则文件示例 {#example-translation-rules-file}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><nodelist>
