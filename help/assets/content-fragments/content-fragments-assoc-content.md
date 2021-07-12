@@ -2,9 +2,9 @@
 title: 关联的内容
 description: 了解AEM关联内容功能如何提供连接，以便在将资产添加到内容页面时，可以选择将资产与片段一起使用，从而为无标题内容交付增加了额外的灵活性。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 15%
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 AEM关联内容功能提供了连接，以便在将资产添加到内容页面时，可以选择将资产与片段一起使用。 这为[交付无头内容提供了灵活性，在页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)上使用内容片段时，可提供一系列资产以供访问，同时还有助于缩短搜索相应资产所需的时间。
 
-## 添加关联内容{#adding-associated-content}
+## 添加关联内容 {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ AEM关联内容功能提供了连接，以便在将资产添加到内容页面�
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
-## 编辑关联内容{#editing-associated-content}
+## 编辑关联内容 {#editing-associated-content}
 
 关联收藏集后，您可以：
 
