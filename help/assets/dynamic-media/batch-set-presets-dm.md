@@ -3,9 +3,9 @@ title: 批次集预设
 description: 了解如何使用 Dynamic Media 中的批次集预设自动创建图像集和旋转集。
 contentOwner: Rick Brough
 feature: 图像预设，查看器预设
-role: Business Practitioner
+role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3446'
 ht-degree: 1%
