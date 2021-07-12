@@ -2,16 +2,16 @@
 title: 准备翻译内容
 description: 了解如何准备翻译内容。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
-# 准备翻译内容{#preparing-content-for-translation}
+# 准备翻译内容 {#preparing-content-for-translation}
 
 多语言网站通常提供多种语言的一定数量的内容。 网站以一种语言创作，然后翻译成其他语言。 通常，多语言站点由页面的分支组成，其中每个分支包含使用不同语言的站点页面。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 在准备翻译内容后，您可以在语言副本和关联的翻译项目中自动创建缺失的页面。 （请参阅[创建翻译项目](managing-projects.md)。） 有关AEM中内容翻译过程的概述，请参阅[多语言网站内容翻译](overview.md)。
 
-## 创建语言根{#creating-a-language-root}
+## 创建语言根 {#creating-a-language-root}
 
 将语言根创建为语言副本的根页面，以标识内容的语言。 创建语言根目录后，可以创建包含语言副本的翻译项目。
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 1. 单击或点按&#x200B;**创建**。在确认对话框中，单击或点按&#x200B;**Done**&#x200B;以返回到站点控制台，或单击或点按&#x200B;**Open**&#x200B;以打开语言副本。
 
-## 看语言根的状态{#seeing-the-status-of-language-roots}
+## 语言根的地位 {#seeing-the-status-of-language-roots}
 
 AEM提供一个&#x200B;**引用**&#x200B;边栏，用于显示已创建的语言根列表。
 
@@ -96,7 +96,7 @@ AEM提供一个&#x200B;**引用**&#x200B;边栏，用于显示已创建的语言
 
 1. 在引用边栏中，单击或点按&#x200B;**语言副本**。 边栏会显示网站的语言副本。
 
-## 多级{#multiple-levels}上的语言副本
+## 多级语言副本 {#multiple-levels}
 
 语言根也可以分组到节点下，例如按区域，同时仍被识别为语言副本的根。
 
