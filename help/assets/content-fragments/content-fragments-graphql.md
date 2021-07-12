@@ -2,16 +2,16 @@
 title: 通过GraphQL使用内容片段交付无头内容
 description: 了解如何将AEM内容片段与GraphQL结合使用来进行无头内容交付。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
 
 ---
 
-# 使用GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}的内容片段交付无头内容
+# 通过GraphQL使用内容片段交付无头内容 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 以Adobe Experience Manager(AEM)为Cloud Service，您可以使用内容片段和AEM GraphQL API（一种基于标准GraphQL的自定义实施），无缝地交付结构化内容以供在应用程序中使用。 通过自定义单个API查询的功能，您可以检索和交付您想要/需要渲染的特定内容（作为对单个API查询的响应）。
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * 内容片段的内容将按照预先确定的方式 — 根据内容片段模型进行构建。 这简化了对应用程序的访问，这将进一步处理您的内容。
 
-## GraphQL — 概述{#graphql-overview}
+## GraphQL — 概述 {#graphql-overview}
 
 GraphQL是：
 
@@ -57,7 +57,7 @@ GraphQL是：
 
 AEM GraphQL API实施基于[GraphQL Java库](https://graphql.org/code/#java)。
 
-## 用于AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}的内容片段
+## 用于AEM GraphQL API的内容片段 {#content-fragments-use-with-aem-graphql-api}
 
 [内](#content-fragments) 容片段可用作AEM查询的GraphQL的基础，如下所示：
 
@@ -85,7 +85,7 @@ AEM GraphQL API实施基于[GraphQL Java库](https://graphql.org/code/#java)。
 
 * 数据类型&#x200B;**[片段引用](#fragment-references)**&#x200B;可在模型中使用以引用其他内容片段，因此可引入其他级别的结构。
 
-### 片段引用{#fragment-references}
+### 片段引用 {#fragment-references}
 
 **[片段引用](/help/assets/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**:
 
@@ -99,11 +99,11 @@ AEM GraphQL API实施基于[GraphQL Java库](https://graphql.org/code/#java)。
 
    * 当定义为&#x200B;**多源**&#x200B;时，主片段可以引用（检索）多个子片段。
 
-### JSON预览{#json-preview}
+### JSON预览 {#json-preview}
 
 为帮助设计和开发内容片段模型，您可以预览[JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md)。
 
-## 了解如何将GraphQL与AEM结合使用 — 示例内容和查询{#learn-graphql-with-aem-sample-content-queries}
+## 了解如何将GraphQL与AEM结合使用 — 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
 
 请参阅[了解如何将GraphQL与AEM结合使用 — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)，以了解有关使用AEM GraphQL API的简介。
 
