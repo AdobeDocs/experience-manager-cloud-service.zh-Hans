@@ -1,16 +1,16 @@
 ---
 title: 使用选择器
 description: 了解在Dynamic Media中，可以使用方法选择交互式图像、交互式视频和轮播横幅的资产。
-role: Business Practitioner
+role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 18%
 
 ---
 
-# 在Dynamic Media中使用选择器{#working-with-selectors}
+# 在Dynamic Media中使用选择器 {#working-with-selectors}
 
 使用交互式图像、交互式视频或轮播横幅时，您可以选择资产，然后为热点和图像映射选择站点和产品以链接到。 使用图像集、旋转集和多媒体集时，您还可以通过资产选择器选择资产。
 
@@ -24,7 +24,7 @@ ht-degree: 18%
 
 当您选择热点或图像映射转到的位置（而不是手动输入）时，您将使用选择器。 仅当您是[!DNL Adobe Experience Manager Sites]客户时，站点选择器才有效。 产品选择器还需要[!DNL Experience Manager Commerce]。
 
-## 在Dynamic Media中选择产品{#selecting-products}
+## 在Dynamic Media中选择产品 {#selecting-products}
 
 当您希望提供热点或图像映射以快速查看产品目录中的特定产品时，可使用产品选择器选择一个产品。
 
@@ -62,7 +62,7 @@ ht-degree: 18%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 在Dynamic Media中选择站点{#selecting-sites}
+## 在Dynamic Media中选择站点 {#selecting-sites}
 
 当您希望热点或图像映射链接到在[!DNL Experience Manager]网站中管理的网页时，请使用站点选择器选择一个网页。
 
@@ -82,7 +82,7 @@ ht-degree: 18%
 
 1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下（如果点按热点或图像映射），您将导航到您指定的[!DNL Experience Manager]站点页面。
 
-## 在Dynamic Media中选择资产{#selecting-assets}
+## 在Dynamic Media中选择资产 {#selecting-assets}
 
 使用此选择器可选择要在轮播横幅、交互式视频、图像集、混合媒体集和旋转集中使用的图像。 在交互式视频中，当您点按&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中的&#x200B;**[!UICONTROL 选择资产]**&#x200B;时，即可使用资产选择器。 在轮播集中，当您创建幻灯片时，可以使用资产选择器。 在图像集、混合媒体集和旋转集中，分别创建图像集、混合媒体集或旋转集时，可以使用资产选择器。
 
