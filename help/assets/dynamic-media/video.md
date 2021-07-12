@@ -2,9 +2,9 @@
 title: 视频
 description: 了解如何在Dynamic Media中处理视频。
 feature: 视频配置文件
-role: Business Practitioner
+role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '9471'
 ht-degree: 21%
@@ -15,7 +15,7 @@ ht-degree: 21%
 
 本节介绍如何在 Dynamic Media 中处理视频。
 
-## 快速入门：视频{#quick-start-videos}
+## 快速入门：视频 {#quick-start-videos}
 
 下面的工作流分布说明旨在帮助您在 Dynamic Media 中快速设置并运行自适应视频集。每个步骤的后面是对主题标题的交叉引用，您可以在其中找到更多信息。
 
@@ -118,7 +118,7 @@ ht-degree: 21%
 
 
 
-## 在Dynamic Media中处理视频{#working-with-video-in-dynamic-media}
+## 在Dynamic Media中使用视频 {#working-with-video-in-dynamic-media}
 
 Dynamic Media中的视频是一个端到端解决方案，可轻松发布高质量自适应视频，以便在多个屏幕(包括桌面设备、iOS、Android™、BlackBerry®和Windows®移动设备)上进行流播放。自适应视频集是同一视频的一组版本，这些版本以不同的比特率和格式进行编码，如400 kbps、800 kbps和1000 kbps。台式计算机或移动设备会检测可用带宽。
 
@@ -165,7 +165,7 @@ Dynamic Media支持为MP4 H.264视频播放移动设备视频。您可以在以�
 
 另请参阅[《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的[Experience Manager资产查看器和Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)和[Experience Manager资产查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
-## 最佳实践：使用HTML5视频查看器{#best-practice-using-the-html-video-viewer}
+## 最佳实践：使用HTML5视频查看器 {#best-practice-using-the-html-video-viewer}
 
 Dynamic Media HTML5视频查看器预设是强大的视频播放器。您可以使用它们来避免与HTML5视频播放相关的许多常见问题以及与移动设备相关的问题。 例如，缺少自适应流传输和桌面浏览器访问范围有限。
 
@@ -177,11 +177,11 @@ Dynamic Media HTML5视频查看器预设是强大的视频播放器。您可以�
 
 另请参阅《Dynamic Media查看器参考指南》[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的[仅用于Experience Manager资产的查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
-### 使用HTML5视频查看器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在台式计算机和移动设备上播放视频
+### 使用HTML5视频查看器在台式计算机和移动设备上播放视频 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 对于桌面和移动设备自适应视频流播放，用于比特率切换的视频基于自适应视频集中的所有MP4视频。
 
-使用HLS或渐进式视频下载时出现视频播放。 在以前版本的Experience Manager（如6.0、6.1和6.2）中，视频通过HTTP进行流处理。
+使用HLS或渐进式视频下载发生视频播放。 在以前版本的Experience Manager（如6.0、6.1和6.2）中，视频通过HTTP进行流处理。
 
 但是，在Experience Manager6.3及更高版本中，视频现在通过HTTPS（即HLS）进行流处理，因为DM网关服务URL也始终使用HTTPS。 此默认行为不会对客户造成任何影响。 也就是说，除非浏览器不支持，否则视频流将始终通过HTTPS进行。 （请参阅下表）。 因此，
 
@@ -264,13 +264,13 @@ HLS是Apple的自适应视频流播放标准，可根据网络带宽容量自动
  </tbody>
 </table>
 
-## Dynamic Media视频解决方案的架构{#architecture-of-dynamic-media-video-solution}
+## Dynamic Media视频解决方案的架构 {#architecture-of-dynamic-media-video-solution}
 
 下图显示了视频的整体创作工作流程，这些视频通过DMGateway(在Dynamic Media混合模式下)上传和编码，并可供公众使用。
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## 视频的混合发布架构{#hybrid-publishing-architecture-for-videos}
+## 视频的混合发布架构 {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
@@ -385,7 +385,7 @@ VBR需要较长的编码时间，但会产生最有利的结果；媒体文件�
 | 720p | 720 | 大型屏幕 |
 | 1080p | 1080 | 高清晰度大型屏幕 |
 
-### Fps（每秒帧数）{#fps-frames-per-second}
+### Fps（每秒帧数） {#fps-frames-per-second}
 
 在美国和日本，大多数视频以 29.97 帧/秒 (fps) 的速率拍摄；在欧洲，大多数视频以 25 fps 的速率拍摄。电影是以 24 fps 的速率拍摄。
 
@@ -435,7 +435,7 @@ YouTube自行编码。 因此，上传到Experience Manager的原始视频文件
 
 您还可以[取消发布视频以将其从 YouTube 中删除](#unpublishing-videos-to-remove-them-from-youtube)。
 
-### 配置Google Cloud设置{#configuring-google-cloud-settings}
+### 配置Google Cloud设置 {#configuring-google-cloud-settings}
 
 要发布到YouTube，您需要Google帐户。 如果你有Gmail账户，那么你已经有Google账户；如果您没有Google帐户，则可以轻松创建一个。 您需要该帐户，因为您需要凭据才能将视频资产发布到YouTube。 如果已创建帐户，请跳过此任务，并直接转到[创建YouTube渠道](#creating-a-youtube-channel)。
 
@@ -539,7 +539,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    从Google帐户注销。 现在，创建YouTube渠道。
 
-### 创建YouTube渠道{#creating-a-youtube-channel}
+### 创建YouTube渠道 {#creating-a-youtube-channel}
 
 将视频发布到YouTube要求您拥有一个或多个渠道。 如果已创建YouTube渠道，则可以跳过此任务，转到[添加标记以进行发布](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)。
 
@@ -561,7 +561,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    现在，您可以添加标记以进行发布。
 
-### 添加用于发布{#adding-tags-for-publishing}的标记
+### 添加标记以进行发布 {#adding-tags-for-publishing}
 
 要将视频发布到YouTube,Experience Manager会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅[管理标记](/help/sites-cloud/authoring/features/tags.md)。
 
@@ -581,7 +581,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Click **[!UICONTROL OK]**. -->
 
-### 在Experience Manager{#setting-up-youtube-in-aem}中设置YouTube
+### 在Experience Manager中设置YouTube {#setting-up-youtube-in-aem}
 
 从Experience Manager6.4开始，引入了新的触屏用户界面方法，以在Experience Manager中设置YouTube发布。 根据您所使用的Experience Manager的已安装实例，执行以下操作之一：
 
@@ -681,7 +681,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    现在，您将视频发布到YouTube渠道。
 
-### （可选）自动设置已上传视频的默认YouTube属性{#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### （可选）自动设置已上传视频的默认YouTube属性 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 您可以选择在上传视频时自动设置YouTube属性。 在Experience Manager中创建元数据处理配置文件。
 
@@ -777,7 +777,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    您可以选择验证已在YouTube渠道上发布的视频。
 
-### （可选）验证已发布到 YouTube 上的视频{#optional-verifying-the-published-video-on-youtube}
+### （可选）验证已发布到 YouTube 上的视频 {#optional-verifying-the-published-video-on-youtube}
 
 您可以选择监控YouTube发布（或取消发布）的进度。
 
@@ -824,11 +824,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在页面的右上角，点按&#x200B;**[!UICONTROL Next]**。
 1. 在页面的右上角，点按&#x200B;**[!UICONTROL 取消发布]**。
 
-## 监控视频编码和YouTube发布进度{#monitoring-video-encoding-and-youtube-publishing-progress}
+## 监控视频编码和YouTube发布进度 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 在将新视频上传到应用了视频编码的文件夹时，或者，将视频发布到YouTube，监控视频编码/Youtube发布的进展情况（或失败）。 实际的YouTube发布进度仅通过日志提供。 但是，无论失败还是成功，它都将以下过程中描述的其他方式列出。 此外，当YouTube发布工作流或视频编码完成或中断时，您还会收到电子邮件通知。
 
-### 监控进度{#monitoring-progress}
+### 监控进度 {#monitoring-progress}
 
 **要监视进度，包括编码/YouTube发布失败：**
 
@@ -1048,7 +1048,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## 向视频添加字幕{#adding-captions-to-video}
+## 在视频中添加字幕 {#adding-captions-to-video}
 
 您可以通过向单个视频或自适应视频集中添加字幕来将视频的覆盖范围扩展到全球市场。 通过添加字幕，您无需对音频进行调音，也无需使用母语人士为每个不同语言重新录制音频。 视频以录制的语言播放。 出现外语字幕，使不同语言的人仍然能够理解音频部分。
 
@@ -1105,7 +1105,7 @@ Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）�
 
       记下描述路径末尾的`,1`。 紧随路径中VTT文件扩展名后，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮，方法是分别将设置为`,1`或`,0`。
 
-## 向视频{#adding-chapter-markers-to-video}添加章节标记
+## 向视频添加章节标记 {#adding-chapter-markers-to-video}
 
 您可以通过向单个视频或自适应视频集添加章节标记，来更轻松地观看和导航长形视频。 用户播放视频时，可以单击视频时间轴上的章节标记（也称为视频清理器）。 他们可以轻松导航到自己的目标点，或立即跳转到新内容、培训和演示。
 
@@ -1118,7 +1118,7 @@ Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）�
 
 您可以使用以下示例作为创建包含章节导航的WebVTT文件所使用的格式示例：
 
-### 带有视频章节导航{#webvtt-file-with-video-chapter-navigation}的WebVTT文件
+### 带有视频章节导航的WebVTT文件 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT
