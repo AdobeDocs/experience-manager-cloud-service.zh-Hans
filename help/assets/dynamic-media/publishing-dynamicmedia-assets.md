@@ -3,9 +3,9 @@ title: 发布 Dynamic Media 资产
 description: 了解如何发布Dynamic Media资产。
 contentOwner: Rick Brough
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 10%
@@ -41,7 +41,7 @@ ht-degree: 10%
 
 有关发布集或资产的详细信息，请参阅[发布资产](/help/assets/manage-digital-assets.md)。
 
-## HTTP/2交付Dynamic Media资产{#http-delivery-of-dynamic-media-assets}
+## HTTP/2交付Dynamic Media资产 {#http-delivery-of-dynamic-media-assets}
 
 Experience Manager现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，将通过HTTP/2协议来交付已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，从而可以缩短所有Dynamic Media资产的响应和加载时间。
 
