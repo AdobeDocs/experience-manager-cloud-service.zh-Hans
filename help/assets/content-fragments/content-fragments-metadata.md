@@ -2,9 +2,9 @@
 title: 元数据 - 片段属性
 description: 了解如何在AEM中查看和编辑内容片段的元数据属性，以调整无头内容。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 了解如何在AEM中查看和编辑内容片段的元数据属性，以调整无头内容。
 
-## 编辑属性/元数据{#editing-properties-meta-data}
+## 编辑属性/元数据 {#editing-properties-meta-data}
 
 您可以查看和编辑内容片段的元数据（属性）：
 
