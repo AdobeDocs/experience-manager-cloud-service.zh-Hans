@@ -2,16 +2,16 @@
 title: 配置翻译集成框架
 description: 了解如何配置翻译集成框架以与第三方翻译服务相集成。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 2%
 
 ---
 
-# 配置翻译集成框架{#configuring-the-translation-integration-framework}
+# 配置翻译集成框架 {#configuring-the-translation-integration-framework}
 
 翻译集成框架与第三方翻译服务集成以编排AEM内容的翻译。 这涉及到三个基本步骤。
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 有关AEM中内容翻译功能的概述，请参阅[多语言站点的内容翻译](overview.md)。
 
-## 连接到翻译服务提供商{#connecting-to-a-translation-service-provider}
+## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
 
 创建将AEM连接到翻译服务提供商的云配置。 AEM默认包含连接到Microsoft Translator](connect-ms-translator.md)的功能。[
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 配置连接后，您可以创建使用该连接的翻译集成框架配置。
 
-## 创建翻译集成配置{#creating-a-translation-integration-configuration}
+## 创建翻译集成配置 {#creating-a-translation-integration-configuration}
 
 创建翻译集成框架配置以指定如何翻译内容。 配置包括以下信息：
 
@@ -77,7 +77,7 @@ ht-degree: 2%
    1. （可选）键入用于存储配置的存储库节点的&#x200B;**名称**。
 1. 在&#x200B;**编辑配置**&#x200B;窗口中，在&#x200B;**站点**&#x200B;和&#x200B;**资产**&#x200B;选项卡上配置属性，然后单击或点按&#x200B;**保存并关闭**。
 
-### 站点配置属性{#sites-configuration-properties}
+### 站点配置属性 {#sites-configuration-properties}
 
 **Sites**&#x200B;选项卡控制页面内容翻译的执行方式。
 
@@ -90,7 +90,7 @@ ht-degree: 2%
 | 翻译页面资产 | 此属性定义如何翻译从文件系统添加到组件或从资产引用的资产：<br> — 请勿翻译：页面资产未进行折算。<br> — 使用站点翻译工作流：资产将根据站点选项卡中的配置属性进 **** 行处理。<br> — 使用资产翻译工作流：资产将根据“资产”选项卡上配置的属性进行 **** 处理。 |
 | 自动执行翻译 | 启用此属性可在创建翻译项目后自动执行翻译作业。 选择此选项时，您没有机会复查和调整翻译作业的范围。 |
 
-### 资产配置属性{#assets-configuration-properties}
+### 资产配置属性 {#assets-configuration-properties}
 
 资产属性可控制如何配置资产。 有关翻译资产的更多信息，请参阅[为资产创建语言副本](/help/assets/translate-assets.md)。
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 | 翻译标记 | 激活此属性可翻译与资产关联的标记。 |
 | 自动执行翻译 | 选择此属性可在创建翻译项目后自动执行翻译作业。 选择此选项时，您没有机会复查或调整翻译作业的范围。 |
 
-## 配置翻译页面{#configuring-pages-for-translation}
+## 配置翻译页面 {#configuring-pages-for-translation}
 
 要配置将源页面翻译成其他语言，请将这些页面与以下云配置关联：
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 
 如果需要，您可以覆盖子代页面上的关联。 例如，网站的内容主要与旅行和生活方式有关。 但是，页面的一个分支描述了公司。 在这种情况下，站点的根页面可能与翻译集成框架相关联，该框架指定使用“生活方式”类别进行机器翻译，而描述公司的分支将使用使用“常规”类别执行机器翻译的框架。
 
-### 将页面与翻译提供程序{#associating-a-page-with-a-translation-provider}关联
+### 将页面与翻译提供程序关联 {#associating-a-page-with-a-translation-provider}
 
 将页面与您用来翻译页面和子代页面的翻译提供程序关联。
 
@@ -126,7 +126,7 @@ ht-degree: 2%
 1. 在&#x200B;**添加配置**&#x200B;下拉列表中，选择配置。
 1. 单击或点按&#x200B;**保存并关闭**。
 
-### 将页面与翻译集成框架{#associating-pages-with-a-translation-integration-framework}关联
+### 将页面与翻译集成框架关联 {#associating-pages-with-a-translation-integration-framework}
 
 将页面与翻译集成框架关联，该框架定义您希望如何翻译页面和子页面。
 
