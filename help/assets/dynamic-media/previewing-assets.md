@@ -2,9 +2,9 @@
 title: 预览资产
 description: 了解如何在Dynamic Media中预览资产。
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 21%
