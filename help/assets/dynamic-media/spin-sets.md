@@ -2,9 +2,9 @@
 title: 旋转集
 description: 了解如何在Dynamic Media中使用旋转集。
 feature: 旋转集
-role: Business Practitioner
+role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 31%
@@ -25,7 +25,7 @@ ht-degree: 31%
 >
 >有关Assets用户界面的信息，请参阅[使用触屏UI管理资产](/help/assets/manage-digital-assets.md)，并将其应用到上传图像集资产的新文件夹。
 
-## 快速入门：旋转集{#quick-start-spin-sets}
+## 快速入门：旋转集 {#quick-start-spin-sets}
 
 要快速设置并运行旋转集，请执行以下步骤：
 
@@ -75,13 +75,13 @@ ht-degree: 31%
 
 如有必要，您可以[编辑旋转集](#editing-spin-sets)。 此外，您还可以查看和修改[旋转集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-## 上传旋转集的资产{#uploading-assets-for-spin-sets}
+## 上传旋转集的资产 {#uploading-assets-for-spin-sets}
 
 对于一维旋转集，您至少需要一个项目的8-12张照片。必须定期拍摄这些照片，以给人以项目正在旋转和被翻动的印象。 例如，如果一维旋转集包含12张照片，则对于每张照片，旋转项目30° (360/12)。
 
 您可以像[上传Experience Manager资产](/help/assets/manage-digital-assets.md)中的任何其他资产一样，上传旋转集的图像。
 
-### 为旋转集{#guidelines-for-shooting-spin-set-images}捕获图像的准则
+### 为旋转集捕获图像的准则 {#guidelines-for-shooting-spin-set-images}
 
 以下是关于旋转集图像的一些最佳实践。一般而言，旋转集中的图像越多，图像的旋转效果越好。但是，在旋转集中包含很多图像也会使加载图像所需的时间变长。Experience Manager建议，拍摄图像以在旋转集中使用的准则如下：
 
@@ -148,7 +148,7 @@ ht-degree: 31%
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。您新创建的旋转集会显示在创建时所用的文件夹中。
 
-## 查看旋转集{#viewing-spin-sets}
+## 查看旋转集 {#viewing-spin-sets}
 
 您可以在用户界面中创建旋转集，也可以使用[批集预设](/help/assets/dynamic-media/config-dm.md)自动创建旋转集。 但是，使用批集预设创建的集合，请&#x200B;*不*&#x200B;显示在用户界面中。 您可以通过三种不同方式访问通过批集预设创建的集。 （即使您是在用户界面中创建旋转集，这些方法也可用）。
 
