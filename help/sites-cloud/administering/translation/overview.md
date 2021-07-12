@@ -2,16 +2,16 @@
 title: 翻译多语言站点的内容
 description: 获取有关如何翻译多语言站点内容的概述。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# 翻译多语言站点的内容{#translating-content-for-multilingual-sites}
+# 翻译多语言站点的内容 {#translating-content-for-multilingual-sites}
 
 自动翻译页面内容和资产以创建和维护多语言网站。 要实现翻译工作流程的自动化，您需要将翻译服务提供商与AEM集成，并创建项目以将内容翻译成多种语言。 AEM支持人工和机器翻译工作流。
 
