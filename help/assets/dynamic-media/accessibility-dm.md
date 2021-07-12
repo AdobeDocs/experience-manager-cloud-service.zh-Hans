@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: 辅助功能
-role: Administrator,Business Practitioner
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+role: Admin,User
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Dynamic Media在整个创作用户界面中支持键盘控制和辅助技术，如JAWS和NVDA屏幕阅读器。
 
-## Dynamic Media {#keyboard-support-in-dm}中支持键盘辅助功能
+## Dynamic Media中的键盘辅助功能支持 {#keyboard-support-in-dm}
 
 由于Dynamic Media是[!DNL Experience Manager Assets]的插件，因此大多数键盘控制行为与[!DNL Experience Manager Assets]中的相同。 例如，Dynamic Media中的`Cancel`按钮的焦点突出显示与[!DNL Experience Manager Assets]中的按钮相同。 它还会像在[!DNL Experience Manager Assets]中一样对`Spacebar`键产生反应。 请参阅Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
 
@@ -49,7 +49,7 @@ Dynamic Media在整个创作用户界面中支持键盘控制和辅助技术，�
 
 Dynamic Media用户界面元素可与屏幕阅读器等辅助技术配合使用。 例如，当您使用键盘快捷键`D`导航地标时，它会识别页面上的地标，或者当您使用键盘快捷键`R`导航地标时，它会识别区域。 使用标题键盘快捷键`H`导航时，还会讲述标题。
 
-## Dynamic Media查看器中支持键盘辅助功能{#keyboard-accessibility-for-dm-viewers}
+## Dynamic Media查看器中支持键盘辅助功能 {#keyboard-accessibility-for-dm-viewers}
 
 所有开箱即用的Dynamic Media查看器组件都支持为客户提供键盘辅助功能。
 
