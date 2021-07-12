@@ -2,20 +2,20 @@
 title: 转出冲突
 description: 了解如何管理和解决多站点管理器转出冲突。
 feature: 多站点管理器
-role: Administrator
+role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 2%
 
 ---
 
-# 转出冲突{#msm-rollout-conflicts}
+# 转出冲突 {#msm-rollout-conflicts}
 
 如果在Blueprint分支和从属Live Copy分支中创建具有相同页面名称的新页面，则可能会发生冲突。 此类冲突需要在转出时进行处理和解决。
 
-## 冲突处理{#conflict-handling}
+## 冲突处理 {#conflict-handling}
 
 当存在冲突的页面（在Blueprint和Live Copy分支中）时，MSM允许您定义应如何处理（甚至是如果）这些页面。
 
@@ -29,7 +29,7 @@ AEM的现成默认行为是发布的内容不会受到影响。 因此，如果�
 
 除了标准功能外，还可以添加自定义冲突处理程序以实施不同的规则。 这些操作还允许将操作作为单个流程发布。
 
-### 示例方案{#example-scenario}
+### 示例方案 {#example-scenario}
 
 在以下部分中，我们使用在Blueprint和Live Copy分支（手动创建）中创建的新页面`b`的示例来说明各种冲突解决方法：
 
@@ -43,7 +43,7 @@ AEM的现成默认行为是发布的内容不会受到影响。 因此，如果�
 
    * 与子页面一起在发布时作为`/b`激活
 
-#### 转出前{#before-rollout}
+#### 转出前 {#before-rollout}
 
 |  | 转出前的Blueprint | 转出前Live Copy | 转出前发布 |
 |---|---|---|---|
@@ -52,7 +52,7 @@ AEM的现成默认行为是发布的内容不会受到影响。 因此，如果�
 | 值 | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 注释 |  | 在Live Copy分支中手动创建 | 包含在Live Copy分支中手动创建的页面`child-level-1`的内容 |
 
-## 转出管理器和冲突处理{#rollout-manager-and-conflict-handling}
+## 转出管理器和冲突处理 {#rollout-manager-and-conflict-handling}
 
 转出管理器允许您激活或停用冲突管理。
 
@@ -60,7 +60,7 @@ AEM的现成默认行为是发布的内容不会受到影响。 因此，如果�
 
 AEM在停用冲突管理时具有[预定义行为。](#behavior-when-conflict-handling-deactivated)
 
-## 冲突处理程序{#conflict-handlers}
+## 冲突处理程序 {#conflict-handlers}
 
 AEM使用冲突处理程序来解决在将内容从Blueprint转出到Live Copy时存在的任何页面冲突。 重命名页面是解决此类冲突的常用（不仅如此）方法。 可以操作多个冲突处理程序以允许选择不同的行为。
 
@@ -72,7 +72,7 @@ AEM提供：
 * 用于设置每个处理程序优先级的服务排名机制
    * 使用排名最高的服务。
 
-### 默认冲突处理程序{#default-conflict-handler}
+### 默认冲突处理程序 {#default-conflict-handler}
 
 默认冲突处理程序为`ResourceNameRolloutConflictHandler`
 
@@ -93,7 +93,7 @@ AEM提供：
 
    * `bp-level-1` 将转出到Live Copy。
 
-#### 转出后{#after-rollout}
+#### 转出后 {#after-rollout}
 
 |  | 转出后的Blueprint | 转出后Live Copy | 转出后Live Copy | 转出后发布 |
 |---|---|---|---|---|
@@ -102,7 +102,7 @@ AEM提供：
 | 值 | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 注释 |  |  | 无更改 | 无更改 |
 
-### 自定义处理程序{#customized-handlers}
+### 自定义处理程序 {#customized-handlers}
 
 自定义冲突处理程序允许您实施自己的规则。 使用服务排名机制，您还可以定义它们与其他处理程序的交互方式。
 
@@ -115,7 +115,7 @@ AEM提供：
    * **服务** 转移定义与其他冲突处理程序()相关的 `service.ranking`顺序。
       * 默认值为 `0`.
 
-### {#behavior-when-conflict-handling-deactivated}停用冲突处理时的行为
+### 停用冲突处理时的行为 {#behavior-when-conflict-handling-deactivated}
 
 如果手动[停用冲突处理，](#rollout-manager-and-conflict-handling) AEM不会对任何冲突页面执行任何操作。 非冲突页面会按预期推出。
 
@@ -133,7 +133,7 @@ AEM提供：
 
    保持不变。
 
-#### 转出后{#after-rollout-no-conflict}
+#### 转出后 {#after-rollout-no-conflict}
 
 |  | 转出后的Blueprint | 转出后Live Copy | 转出后发布 |
 |---|---|---|---|
@@ -142,6 +142,6 @@ AEM提供：
 | 值 | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 注释 |  | 无更改 | 无更改 |
 
-### 服务排名{#service-rankings}
+### 服务排名 {#service-rankings}
 
 [OSGi](https://www.osgi.org/)服务排名可用于定义各个冲突处理程序的优先级。
