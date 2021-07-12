@@ -2,9 +2,9 @@
 title: 交互式视频
 description: 了解如何在Dynamic Media中使用交互式视频和购物视频。
 feature: 交互式视频
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 20%
@@ -20,7 +20,7 @@ ht-degree: 20%
 
 另请参阅[交互式图像](/help/assets/dynamic-media/interactive-images.md)。
 
-## 交互式视频正在使用{#interactive-video-in-action}
+## 交互式视频的实际操作情况 {#interactive-video-in-action}
 
 要查看交互式购物视频的实际操作情况，请单击[实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)，滚动到页面上的&#x200B;**[!UICONTROL 购物视频]**&#x200B;标题，然后单击购物视频开始播放。
 
@@ -46,7 +46,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >如果创建交互式视频以在用户点按缩略图时启动网页，则某些设备会阻止弹出网页打开。 在这种情况下，请更改设备上的弹出窗口阻止程序设置。 例如，在Apple iPhone 6上，点按&#x200B;**[!UICONTROL 设置> Safari >阻止弹出窗口]**，然后将控件滑动到&#x200B;**[!UICONTROL 关闭]**。 现在，当您播放交互式视频并单击缩略图时，如果要打开弹出窗口，系统会提示您。 如果接受，则会打开网页。
 
-### 观看如何创建交互式视频{#watch-how-interactive-videos-are-created}
+### 观看如何创建交互式视频 {#watch-how-interactive-videos-are-created}
 
 观看有关如何创建交互式视频的演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)（7分30秒）。
 [(尽管视频演练使用Assets（按需）进行标记，但Adobe Experience Manager Assets中的交互式视频仍适用这些原则和步骤。)
@@ -90,7 +90,7 @@ There was a link here that showed the video frame of an interactive video and wh
 如果您使用的是第三方WCM（Web内容管理器），则必须将新的交互式视频与网站上使用的现有概览实施相集成。 请参阅[将交互式视频与现有概览集成](#integrating-an-interactive-video-with-an-existing-quickview)。
    [将 Dynamic Media 资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-## （可选）识别概览变量{#optional-identifying-quickview-variables}
+## （可选）识别概览变量 {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 仅当满足以下条件时，才需要执行此任务：
@@ -216,7 +216,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 您现在可以上传视频及其关联的缩略图资产。
 
-## （可选）创建交互式视频查看器预设{#optional-creating-an-interactive-video-viewer-preset}
+## （可选）创建交互式视频查看器预设 {#optional-creating-an-interactive-video-viewer-preset}
 
 如果您打算使用默认的现成交互式视频查看器预设类型`Shoppable_Video_dark`或`Shoppable_Video_light`中的任一类型，则可以跳过此任务并继续下一步。
 
@@ -502,11 +502,11 @@ There was a link here that showed the video frame of an interactive video and wh
 
    在添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站登录页面。请参阅[将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website)。
 
-## 发布交互式视频资产{#publishing-interactive-video-assets}
+## 发布交互式视频资产 {#publishing-interactive-video-assets}
 
 有关如何发布交互式视频资产的详细信息，请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 将交互式视频与您的网站集成{#integrating-an-interactive-video-with-your-website}
+## 将交互式视频与您的网站集成 {#integrating-an-interactive-video-with-your-website}
 
 现在，在上传视频、向视频添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站。
 
@@ -566,7 +566,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## 将交互式视频与现有概览{#integrating-an-interactive-video-with-an-existing-quickview}集成
+## 将交互式视频与现有概览集成 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 此任务仅在您是独立Experience Manager资产客户时才适用。
@@ -765,7 +765,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## 使用概览创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
+## 使用概览创建自定义弹出窗口® {#using-quickviews-to-create-custom-pop-ups}
 
 请参阅[使用快速视图创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
 —>
