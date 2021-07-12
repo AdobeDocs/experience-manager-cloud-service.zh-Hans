@@ -2,9 +2,9 @@
 title: 与 Adobe Analytics 集成
 description: '与 Adobe Analytics 集成 '
 feature: 管理
-role: Administrator
+role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 4%
@@ -24,7 +24,7 @@ ht-degree: 4%
 >
 >Adobe Experience Manager作为没有现有Analytics帐户的Cloud Service客户，可以请求访问Analytics Foundation Pack以进行Experience Cloud。 此Foundation Pack提供了对Analytics的卷限制使用。
 
-## 创建Adobe Analytics配置{#analytics-configuration}
+## 创建Adobe Analytics配置 {#analytics-configuration}
 
 1. 导航到&#x200B;**Tools** → **Cloud Services**。
 2. 选择&#x200B;**Adobe Analytics**。
@@ -32,7 +32,7 @@ ht-degree: 4%
 3. 选择&#x200B;**创建**&#x200B;按钮。
 4. 填写详细信息（请参阅下文），然后单击&#x200B;**连接**。
 
-### 配置参数{#configuration-parameters}
+### 配置参数 {#configuration-parameters}
 
 “Adobe Analytics配置”窗口中存在的配置字段包括：
 
@@ -47,11 +47,11 @@ ht-degree: 4%
 | 区段 | 用于使用当前报表包中定义的Analytics区段的选项。 将根据区段过滤Analytics报表。 有关其他详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
 | 报表包 | 用于发送数据和提取报表的存储库。 报表包可针对选定的网站、网站集或网站页面的子集，定义完整、独立的报表。 您可以查看从单个报表包获取的报表，并可以根据您的要求随时在配置中编辑此字段。 |
 
-### 向站点{#add-configuration}添加配置
+### 向站点添加配置 {#add-configuration}
 
 要将触屏UI配置应用到站点，请转到：**Sites** → **选择任意站点页面** → **属性** → **Advanced** → **Configuration** →选择配置租户。
 
-## 使用Launch在AEM站点上集成Adobe Analytics {#analytics-launch}
+## 使用Launch在AEM网站上集成Adobe Analytics {#analytics-launch}
 
 Adobe Analytics可以作为Launch资产的扩展添加。 可以定义规则以执行映射和对Adobe Analytics进行后调用：
 
