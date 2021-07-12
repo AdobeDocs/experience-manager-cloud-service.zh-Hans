@@ -2,9 +2,9 @@
 title: 交互式图像
 description: 了解如何在Dynamic Media中使用交互式图像。
 feature: 交互式图像
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4245'
 ht-degree: 15%
@@ -21,11 +21,11 @@ ht-degree: 15%
 
 请参阅上图网页上的[交互式图像操作中的](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)。
 
-## 观看如何创建交互式图像横幅{#watch-how-interactive-image-banners-are-created}
+## 观看如何创建交互式图像横幅 {#watch-how-interactive-image-banners-are-created}
 
 观看有关如何创建交互式图像横幅的演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)（10分33秒）。 [您还可以了解如何预览、编辑和传送交互式图像横幅。
 
-## 快速入门：交互式图像{#quick-start-interactive-images}
+## 快速入门：交互式图像 {#quick-start-interactive-images}
 
 以下工作流分步描述旨在帮助您快速启动并运行Adobe Experience Manager Assets中的交互式图像。
 
@@ -54,7 +54,7 @@ ht-degree: 15%
 如果您使用Experience ManagerAssets和Dynamic Media独立版本，请复制您网站上的嵌入代码。 然后，将其与现有概览相集成。 请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
 如果您使用第三方WCM（Web内容管理器），请将新的交互式视频与您网站上使用的现有概览相集成。 请参阅[将交互式图像与现有概览集成](#integrating-an-interactive-image-with-an-existing-quickview)。
 
-## （可选）识别热点变量{#optional-identifying-hotspot-variables}
+## （可选）识别热点变量 {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ ht-degree: 15%
 
 现在，您可以使用Experience Manager资产中的交互式购物图像功能，上传图像横幅并向其添加热点。
 
-## （可选）创建交互式图像查看器预设{#optional-creating-an-interactive-image-viewer-preset}
+## （可选）创建交互式图像查看器预设 {#optional-creating-an-interactive-image-viewer-preset}
 
 您可以选择使用默认的名为`Shoppable_Banner`且随Experience Manager资产一起提供的现成交互式图像查看器预设。 或者，您也可以创建自己的自定义查看器预设，以用于交互式图像。
 
@@ -303,7 +303,7 @@ ht-degree: 15%
    >[!NOTE]
    如果您正在使用热点编辑交互式图像并裁剪图像，则热点会被删除。
 
-### （可选）预览交互式图像{#optional-previewing-interactive-images}
+### （可选）预览交互式图像 {#optional-previewing-interactive-images}
 
 您可以使用“预览”来查看交互式图像在客户中的显示方式。 通过“预览”功能，您还可以测试图像的热点，以确保这些热点按预期运行。
 
@@ -318,11 +318,11 @@ ht-degree: 15%
 1. 在“查看器”列表中，点按&#x200B;**[!UICONTROL Shoppable_Banner]**&#x200B;或您创建的交互式图像查看器预设的名称。
 1. 要测试热点的相关操作，请点按图像上的热点。
 
-## 发布交互式图像资产{#publishing-interactive-image-assets}
+## 发布交互式图像资产 {#publishing-interactive-image-assets}
 
 有关如何发布交互式图像资产的详细信息，请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 将交互式图像与您的网站集成{#integrating-an-interactive-image-with-your-website}
+## 将交互式图像与您的网站集成 {#integrating-an-interactive-image-with-your-website}
 
 在上传横幅图像、向其添加热点以及发布交互式图像后，您便可以将其添加到网站页面。
 
@@ -357,7 +357,7 @@ ht-degree: 15%
 
 现在，您可以将交互式图像与网站上的现有概览相集成。
 
-## 将交互式图像与现有概览{#integrating-an-interactive-image-with-an-existing-quickview}集成
+## 将交互式图像与现有概览集成 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 此任务仅在您是独立Experience Manager资产客户时才适用。
@@ -491,6 +491,6 @@ loadQuickView(quickViewUrl);
 
 具有完全集成的交互式图像的[最终演示网站](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)。
 
-## 使用概览创建自定义弹出窗口{#using-quickviews-to-create-custom-pop-ups}
+## 使用概览创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 
 请参阅[使用快速视图创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
