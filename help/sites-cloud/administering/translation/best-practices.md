@@ -2,16 +2,16 @@
 title: 翻译最佳实践
 description: 了解由Adobe工程和咨询团队编译的最佳实践，帮助您启动和运行翻译项目。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
-# 翻译最佳实践{#translation-best-practices}
+# 翻译最佳实践 {#translation-best-practices}
 
 ## 常规 {#general}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 * 使用MSM从已翻译的语言母版创建国家/地区站点，并将内容推广到共享相同语言的站点。 例如，法语主控可以推广到法国、比利时和瑞士站点。
 * 在开始实施之前，请先进行规划、原型和测试。
 
-## 翻译流程和方法{#translation-processes-and-methods}
+## 翻译过程和方法 {#translation-processes-and-methods}
 
 * 请&#x200B;**本地化服务提供商(LSP)**&#x200B;在翻译和相关本地化活动方面拥有专业知识。 LSP通过提供多种资源和技术来提高效率并节省翻译成本，有助于扩展您的全球业务：
    * 一些LSP既是服务提供商，也是技术提供商。 还有一些独立技术提供商允许许多LSP参与其翻译平台。
