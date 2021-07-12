@@ -2,9 +2,9 @@
 title: 内容片段模型
 description: 了解内容片段模型如何作为AEM中无头内容的基础，以及如何使用结构化内容创建内容片段。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -22,7 +22,7 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
 1. [启用内容片段模](#enabling-disabling-a-content-fragment-model) 型，以便在创建内容片段时使用
 1. [通过配置策略，在所需的资产文件夹上允](#allowing-content-fragment-models-assets-folder) 许您的内容 **片段模型**。
 
-## 创建内容片段模型{#creating-a-content-fragment-model}
+## 创建内容片段模型 {#creating-a-content-fragment-model}
 
 1. 导航到&#x200B;**工具**、**资产**，然后打开&#x200B;**内容片段模型**。
 1. 导航到适合您的[配置](/help/assets/content-fragments/content-fragments-configuration-browser.md)的文件夹。
@@ -38,7 +38,7 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
 
 1. 使用&#x200B;**Create**&#x200B;保存空模型。 将显示一条消息，指示操作成功，您可以选择&#x200B;**打开**&#x200B;以立即编辑模型，或选择&#x200B;**完成**&#x200B;以返回到控制台。
 
-## 定义内容片段模型{#defining-your-content-fragment-model}
+## 定义内容片段模型 {#defining-your-content-fragment-model}
 
 内容片段模型使用&#x200B;**[数据类型](#data-types)**&#x200B;的选项有效地定义了生成的内容片段的结构。 使用模型编辑器，您可以添加数据类型的实例，然后对其进行配置以创建必填字段：
 
@@ -191,7 +191,7 @@ ValidationBasic验证可由Required属性等机制 **** 使用。某些数据类
 * **片段引用**
    * 测试特定内容片段模型。
 
-## 使用引用形成嵌套内容{#using-references-to-form-nested-content}
+## 使用引用表单嵌套内容 {#using-references-to-form-nested-content}
 
 内容片段可以使用以下任一数据类型形成嵌套内容：
 
@@ -231,7 +231,7 @@ AEM具有以下重复保护：
 
 ![内容引用](assets/cfm-content-reference.png)
 
-### 片段引用（嵌套片段）{#fragment-reference-nested-fragments}
+### 片段引用（嵌套片段） {#fragment-reference-nested-fragments}
 
 片段引用引用引用一个或多个内容片段。 此功能在检索内容以在您的应用程序中使用时特别感兴趣，因为它允许您使用多个层来检索结构化数据。
 
@@ -283,11 +283,11 @@ type CompanyModel {
 已建立复发保护机制。 它禁止用户在片段引用中选择当前内容片段。 这可能导致出现空的片段引用选取器对话框。
 GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用的内容片段之间创建深层查询，则将返回空值。
 
-## 启用或禁用内容片段模型{#enabling-disabling-a-content-fragment-model}
+## 启用或禁用内容片段模型 {#enabling-disabling-a-content-fragment-model}
 
 要完全控制内容片段模型的使用，可设置其状态。
 
-### 启用内容片段模型{#enabling-a-content-fragment-model}
+### 启用内容片段模型 {#enabling-a-content-fragment-model}
 
 创建模型后，需要启用该模型，以便：
 
@@ -307,7 +307,7 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 
 ![启用草稿或禁用的模型](assets/cfm-status-enable.png)
 
-### 禁用内容片段模型{#disabling-a-content-fragment-model}
+### 禁用内容片段模型 {#disabling-a-content-fragment-model}
 
 也可以禁用模型，以便：
 
@@ -324,7 +324,7 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 
 ![禁用启用的模型](assets/cfm-status-disable.png)
 
-## 允许资产文件夹{#allowing-content-fragment-models-assets-folder}上的内容片段模型
+## 允许在Assets文件夹中使用内容片段模型 {#allowing-content-fragment-models-assets-folder}
 
 要实施内容管理，您可以在Assets文件夹上配置&#x200B;**Policys**&#x200B;以控制允许在该文件夹中创建片段的内容片段模型。
 
@@ -358,7 +358,7 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 * 如果继承链未传递结果，请查看该文件夹的&#x200B;**Cloud Services**&#x200B;配置（也先直接进行，然后通过继承）。
 * 如果以上所有内容均未提供任何结果，则该文件夹不允许使用模型。
 
-## 删除内容片段模型{#deleting-a-content-fragment-model}
+## 删除内容片段模型 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 删除内容片段模型可能会影响相关片段。
@@ -373,7 +373,7 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
    >[!NOTE]
    如果引用了模型，则会发出警告。 采取适当措施。
 
-## 发布内容片段模型{#publishing-a-content-fragment-model}
+## 发布内容片段模型 {#publishing-a-content-fragment-model}
 
 在发布任何相关内容片段时/之前，需要发布内容片段模型。
 
@@ -388,7 +388,7 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
    >[!NOTE]
    如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
-## 取消发布内容片段模型{#unpublishing-a-content-fragment-model}
+## 取消发布内容片段模型 {#unpublishing-a-content-fragment-model}
 
 如果任何片段未引用内容片段模型，则可以取消发布这些模型。
 
@@ -400,7 +400,7 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 1. 选择您的模型，然后从工具栏中选择&#x200B;**取消发布** 。
 控制台中将指示已发布状态。
 
-## 内容片段模型 — 属性{#content-fragment-model-properties}
+## 内容片段模型 — 属性 {#content-fragment-model-properties}
 
 您可以编辑内容片段模型的&#x200B;**属性**:
 
