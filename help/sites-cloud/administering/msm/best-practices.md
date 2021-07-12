@@ -2,16 +2,16 @@
 title: MSM最佳实践
 description: 了解由Adobe工程和咨询团队编译的最佳实践，以帮助启动和运行AEM多站点管理器。
 feature: 多站点管理器
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# MSM最佳实践{#msm-best-practices}
+# MSM最佳实践 {#msm-best-practices}
 
 ## 常规 {#general}
 
@@ -23,7 +23,7 @@ MSM是用于自动进行内容部署的可配置框架。 实施通常涉及网�
 * 在您的结构、内容流、自动化和管理方面存在计划后，请&#x200B;**原型并对系统**&#x200B;进行全面测试，然后再开始实时实施。
 * 请记住，**Adobe咨询团队和领先的系统集成商**&#x200B;具有与MSM一起进行内容自动化规划和实施的丰富经验，因此他们可以帮助您开始使用MSM项目并贯穿其整个实施过程。
 
-## Live Copy源和Blueprint配置{#live-copy-sources-and-blueprint-configurations}
+## Live Copy源和Blueprint配置 {#live-copy-sources-and-blueprint-configurations}
 
 请记住，Live Copy可以使用[常规页面](creating-live-copies.md#creating-a-live-copy-of-a-page)或[Blueprint配置](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)创建。 这两种方法都是有效的用例。
 
@@ -41,7 +41,7 @@ MSM是用于自动进行内容部署的可配置框架。 实施通常涉及网�
 >
 > 请注意，“权限”选项卡中的CUG无法从Blueprint中转出到Live Copy。 请在配置Live Copy时针对此进行规划。
 
-## 组件和容器同步{#components-and-container-synchronization}
+## 组件和容器同步 {#components-and-container-synchronization}
 
 通常，MSM中有关组件同步的转出规则为：
 
@@ -75,7 +75,7 @@ MSM是用于自动进行内容部署的可配置框架。 实施通常涉及网�
 * 在Blueprint中手动添加语言（在第一级以下）。
 * 手动在语言根目录的正下方添加内容，因为这不会导致在转出时自动将新内容传递到Live Copy。
 
-## MSM和多语言网站{#msm-and-multilingual-websites}
+## MSM和多语言网站 {#msm-and-multilingual-websites}
 
 MSM可通过两种方式协助创建多语言网站：
 
@@ -89,7 +89,7 @@ MSM可通过两种方式协助创建多语言网站：
 
 有关更多信息，请参阅[翻译多语言站点的内容](/help/sites-cloud/administering/translation/overview.md)和[翻译最佳实践。](/help/sites-cloud/administering/translation/best-practices.md)
 
-## 结构更改和转出{#structure-changes-and-rollouts}
+## 结构更改和转出 {#structure-changes-and-rollouts}
 
 对Blueprint/源树中内容结构的修改在Live Copy中的反映方式不同。 这取决于修改类型：
 
@@ -100,7 +100,7 @@ MSM可通过两种方式协助创建多语言网站：
       * 相应Live Copy页面中的内容继承会进行更新，以反映其源在Blueprint中的新位置。
       * 要完全实现页面从Blueprint移动到Live Copy，请考虑[页面移动最佳实践。](#page-move)
 
-### 页面移动最佳实践{#page-move}
+### 页面移动最佳实践 {#page-move}
 
 考虑在Live Copy中移动页面时，请考虑以下最佳实践。
 
@@ -117,7 +117,7 @@ MSM可通过两种方式协助创建多语言网站：
       * 要在执行页面移动的同时将相应页面保留在Live Copy中的旧位置（实质上是复制内容），请执行以下操作：
          * 在标准转出配置后放置新创建的配置。 这将确保Live Copy中未删除或从发布中停用任何内容。
 
-## 自定义转出{#customizing-rollouts}
+## 自定义转出 {#customizing-rollouts}
 
 MSM转出配置是高度可自定义的。 您应该知道，自动推广可能会产生深远的后果。 作为最佳实践，您应在参与以下活动之前非常仔细地进行规划：
 
@@ -138,7 +138,7 @@ MSM转出配置是高度可自定义的。 您应该知道，自动推广可能�
 
 因此，建议您仅在自动启动转出的好处超过任何潜在性能问题时才使用`onModify`触发器。
 
-### 节点类型/属性{#node-types-properties}
+### 节点类型/属性 {#node-types-properties}
 
 除了自定义转出操作之外，MSM还允许您自定义正在转出的节点属性。 [MSM OSGi配置允许您排除从源复制到Live Copy的节点类型](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization)。
 
