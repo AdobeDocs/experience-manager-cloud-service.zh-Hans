@@ -3,9 +3,9 @@ title: 将 Dynamic Media 资产添加到页面
 description: 了解如何将Dynamic Media组件作为Cloud Service添加到Adobe Experience Manager中的页面。
 contentOwner: Rick Brough
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3218'
 ht-degree: 20%
