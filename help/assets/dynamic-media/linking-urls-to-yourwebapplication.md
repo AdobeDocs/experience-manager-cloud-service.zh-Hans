@@ -1,9 +1,9 @@
 ---
 title: 将 URL 关联到您的 Web 应用程序
 description: 了解如何在Dynamic Media中将URL关联到您的Web应用程序。
-role: Business Practitioner
+role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 22%
@@ -30,7 +30,7 @@ ht-degree: 22%
 
 另请参阅[上传资产](/help/assets/manage-digital-assets.md#uploading-assets)。
 
-## 获取资产{#obtaining-a-url-for-an-asset}的URL
+## 获取资产的URL {#obtaining-a-url-for-an-asset}
 
 您可以获取由图像预设或查看器预设生成的 URL 字符串。复制 URL 后，它会进入剪贴板，然后您可以视需要将其粘贴到网站或应用程序的页面中。
 
@@ -80,7 +80,7 @@ ht-degree: 22%
 
    要退出URL窗口，请点按&#x200B;**[!UICONTROL X]**&#x200B;或点按&#x200B;**[!UICONTROL 关闭]**。
 
-## 获取静态资产{#obtaining-a-url-for-a-static-asset}的URL
+## 获取静态资产的URL {#obtaining-a-url-for-a-static-asset}
 
 Dynamic Media支持交付静态资产，静态资产是除图像和视频之外的其他资产。 支持的静态资产格式用于交付：
 
@@ -114,7 +114,7 @@ Dynamic Media支持交付静态资产，静态资产是除图像和视频之外�
       更改复制的URL以在路径中使用`is/content`，而不是`is/image/`。
 
 
-## 获取已发布视频呈现版本{#obtaining-a-video-url-for-a-published-video-rendition}的视频URL
+## 获取已发布视频呈现的视频URL {#obtaining-a-video-url-for-a-published-video-rendition}
 
 1. 在Experience Manager中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
@@ -151,7 +151,7 @@ Dynamic Media支持交付静态资产，静态资产是除图像和视频之外�
 
    此路径是已发布视频呈现的完整视频URL。
 
-## 获取自适应流播放(HLS){#obtaining-a-video-url-for-adaptive-streaming-hls}的视频URL
+## 获取自适应流播放(HLS)的视频URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. 在Experience Manager中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
@@ -206,7 +206,7 @@ Dynamic Media支持交付静态资产，静态资产是除图像和视频之外�
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## 使用HTTP/2传送Dynamic Media资产{#using-http-to-deliver-your-dynamic-media-assets}
+## 使用HTTP/2交付Dynamic Media资产 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2是经过更新的新Web协议，可改进浏览器和服务器的通信方式。 它提供了更快的信息传输，并降低了所需的处理能力。 现在，Dynamic Media资产的交付可以通过HTTP/2进行，从而提供更好的响应和加载时间。
 
