@@ -2,9 +2,9 @@
 title: 管理工作流实例
 description: 了解如何管理工作流实例
 feature: 管理
-role: Administrator
+role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 * **失败**:查看已完成但出现错误的工作流的历史记录
 * **自动分配**:配置向模板自动分配工作流
 
-## 监控工作流实例的状态{#monitoring-the-status-of-workflow-instances}
+## 监控工作流实例的状态 {#monitoring-the-status-of-workflow-instances}
 
 1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
 1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例列表。
@@ -32,7 +32,7 @@ ht-degree: 1%
    ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
 
 
-## 搜索工作流实例{#search-workflow-instances}
+## 搜索工作流实例 {#search-workflow-instances}
 
 1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
 1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例列表。 在左上角的上边栏中，选择&#x200B;**过滤器**。 或者，您也可以使用alt+1键击。 将显示以下对话框：
@@ -52,7 +52,7 @@ ht-degree: 1%
    * 到期日期：指定日期之前或之后的到期日期
    * 更新日期：在指定日期之前或之后更新的日期
 
-## 暂停、恢复和终止工作流实例{#suspending-resuming-and-terminating-a-workflow-instance}
+## 暂停、恢复和终止工作流实例 {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
 1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例列表。
@@ -63,7 +63,7 @@ ht-degree: 1%
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
-## 查看存档的工作流{#viewing-archived-workflows}
+## 查看存档的工作流 {#viewing-archived-workflows}
 
 1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
 
-## 修复工作流实例失败{#fixing-workflow-instance-failures}
+## 修复工作流实例失败 {#fixing-workflow-instance-failures}
 
 当工作流失败时，AEM会提供&#x200B;**Failures**&#x200B;控制台，以便您在处理原始原因后调查并采取适当的操作：
 
@@ -106,7 +106,7 @@ ht-degree: 1%
 
    ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
 
-## 定期清除工作流实例{#regular-purging-of-workflow-instances}
+## 定期清除工作流实例 {#regular-purging-of-workflow-instances}
 
 最大限度地减少工作流实例数会提高工作流引擎的性能，因此您可以定期从存储库中清除已完成或正在运行的工作流实例。
 
@@ -156,7 +156,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## 设置收件箱的最大大小{#setting-the-maximum-size-of-the-inbox}
+## 设置收件箱的最大大小 {#setting-the-maximum-size-of-the-inbox}
 
 您可以通过配置&#x200B;**AdobeGranite工作流服务**&#x200B;来设置收件箱的最大大小，请参阅[将OSGi配置添加到存储库](/help/implementing/deploying/configuring-osgi.md)。 下表介绍了您配置的属性。
 
