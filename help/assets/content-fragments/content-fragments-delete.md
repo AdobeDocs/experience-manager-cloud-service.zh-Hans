@@ -2,9 +2,9 @@
 title: 内容片段 - 删除注意事项
 description: 在AEM中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于交付无头内容的强大工具，必须仔细考虑删除这些片段的影响。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 在AEM中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于交付无头内容的强大工具，必须仔细考虑删除这些片段的影响。
 
-## 权限 — 删除或不删除{#permissions-delete-or-not-delete}
+## 权限 — 删除或不删除 {#permissions-delete-or-not-delete}
 
 删除内容的功能非常强大，但可能很敏感，许多行业都需要限制和控制这些权限的分配方式。
 
@@ -41,7 +41,7 @@ ht-degree: 10%
 >
 >另请参阅如何在AEM中审核用户管理操作。 <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## 仅{#permissions-required-for-editor-functionality-only}编辑器功能所需的权限
+## 仅编辑器功能所需的权限 {#permissions-required-for-editor-functionality-only}
 
 对于需要编辑／更新内容片段的用户， **不允许他们删除整个片段**，必须分配特定权限，因为内容片段编辑器的基本操作要求可以删除临时子元素。
 
