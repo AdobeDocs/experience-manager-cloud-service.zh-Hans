@@ -2,9 +2,9 @@
 title: 图像集
 description: 了解如何在Dynamic Media中使用图像集。
 feature: 图像集
-role: Business Practitioner
+role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 28%
@@ -82,7 +82,7 @@ ht-degree: 28%
 
 如果您在创建集时遇到问题，请参阅[疑难解答Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的图像和集。
 
-## 为图像集{#uploading-assets-in-image-sets}上传资产
+## 为图像集上传资产 {#uploading-assets-in-image-sets}
 
 首先为图像集上传图像资产。 请记住，用户可以在图像集查看器中缩放图像。 因此，请仔细选择您的图像。 确保图像的最大大小至少为2000像素，以优化缩放详细信息。 Dynamic Media每幅可渲染多达2500万像素的图像。 例如，您可以使用5000x5000万像素图像或任何其他大小组合，最多2500万像素。
 
@@ -168,7 +168,7 @@ ht-degree: 28%
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。您新创建的图像集会显示在创建时所用的文件夹中。
 
-## 查看图像集{#viewing-image-sets}
+## 查看图像集 {#viewing-image-sets}
 
 您可以在用户界面中创建图像集，也可以使用[批量集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)自动创建图像集。
 
