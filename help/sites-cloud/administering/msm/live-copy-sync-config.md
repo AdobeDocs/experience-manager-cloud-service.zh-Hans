@@ -2,9 +2,9 @@
 title: 配置 Live Copy 同步
 description: 了解可用的强大Live Copy同步选项，以及如何根据项目的需要配置和自定义这些选项。
 feature: 多站点管理器
-role: Administrator
+role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 29%
@@ -57,7 +57,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | 修改时推送（简略） | 在修改Blueprint页面时将内容推送到Live Copy，而不更新引用（例如，对于浅副本）<br>在使用“修改时”触发器时，请谨慎使用此转出配置。 | 修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | 提升启动项 | 用于提升启动项页面的标准转出配置。 | 转出 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
-### 同步操作{#synchronization-actions}
+### 同步操作 {#synchronization-actions}
 
 下表列出了随AEM一起提供的现成同步操作。
 
