@@ -2,9 +2,9 @@
 title: 全景图像
 description: 了解如何在Dynamic Media中处理全景图像。
 feature: 全景图像
-role: Business Practitioner
+role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 5%
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ![全景图像2](assets/panoramic-image2.png)
 
-## 上传资产以与全景图像查看器{#uploading-assets-for-use-with-the-panoramic-image-viewer}一起使用
+## 上传资产以与全景图像查看器一起使用 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 要将上传的资产限定为要与全景图像查看器一起使用的球形全景图像，该资产必须具有以下任一项或两项：
 
@@ -76,10 +76,10 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## 预览全景图像{#previewing-panoramic-images}
+## 预览全景图像 {#previewing-panoramic-images}
 
 请参阅[预览资产](/help/assets/dynamic-media/previewing-assets.md)。
 
-## 发布全景图像{#publishing-panoramic-images}
+## 发布全景图像 {#publishing-panoramic-images}
 
 请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
