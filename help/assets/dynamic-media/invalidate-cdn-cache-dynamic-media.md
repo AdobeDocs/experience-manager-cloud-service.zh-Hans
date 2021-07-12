@@ -2,16 +2,16 @@
 title: 通过Dynamic Media使CDN（内容交付网络）缓存失效
 description: “了解如何使CDN（内容分发网络）缓存内容失效，以便快速更新由Dynamic Media交付的资产，而不必等待缓存过期。”
 feature: 资产管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 1%
 
 ---
 
-# 通过Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}使CDN缓存失效
+# 通过Dynamic Media使CDN缓存失效 {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付给客户。 但是，当您更新这些资产时，您希望这些更改在您的网站上立即生效。 通过清除或使CDN缓存失效，您可以快速更新由Dynamic Media交付的资产。 您不再需要使用TTL（生存时间）值（默认为十小时）等待缓存过期。 相反，您可以从Dynamic Media用户界面中发送请求，让缓存在几分钟内过期。
 
