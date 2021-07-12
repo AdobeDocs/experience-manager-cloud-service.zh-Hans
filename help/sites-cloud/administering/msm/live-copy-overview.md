@@ -2,16 +2,16 @@
 title: Live Copy概述控制台
 description: 了解Live Copy概述控制台的基础知识，以便快速了解Live Copy的状态以同步内容。
 feature: 多站点管理器
-role: Administrator
+role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
 
 ---
 
-# Live Copy概述控制台{#live-copy-overview-console}
+# Live Copy概述控制台 {#live-copy-overview-console}
 
 通过&#x200B;**Live Copy概述**&#x200B;控制台，您可以：
 
@@ -21,14 +21,14 @@ ht-degree: 1%
    * 查看Blueprint和Live Copy属性
 * 执行转出操作。
 
-## 打开Live Copy概述{#opening-the-live-copy-overview}
+## 打开Live Copy概述 {#opening-the-live-copy-overview}
 
 您可以从以下位置打开Live Copy概述：
 
 * [Blueprint页面（站点控制台）的引用侧面板](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Blueprint页面的属性](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### 对Blueprint页面{#references-to-a-blueprint-page}的引用
+### 对Blueprint页面的引用 {#references-to-a-blueprint-page}
 
 **Live Copy概述**&#x200B;可以从&#x200B;**Sites**&#x200B;控制台的&#x200B;**References**&#x200B;侧面板中打开：
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与选定Blueprint相关的所有Live Copy的概述。
 1. 使用&#x200B;**Close**&#x200B;退出并返回到&#x200B;**Sites**&#x200B;控制台。
 
-### Blueprint页面{#properties-of-a-blueprint-page}的属性
+### Blueprint页面的属性 {#properties-of-a-blueprint-page}
 
 在查看Blueprint页面的属性时，可以打开&#x200B;**Live Copy概述**:
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 1. 使用&#x200B;**Close**&#x200B;退出并返回到&#x200B;**Sites**&#x200B;控制台。
 
-## 使用Live Copy概述{#using-the-live-copy-overview}
+## 使用Live Copy概述 {#using-the-live-copy-overview}
 
 **Live Copy概述**&#x200B;窗口提供并概述与选定页面相关的Live Copy的状态。
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 1. 打开&#x200B;**Live Copy概述**。
 1. 选择所需的Blueprint或Live Copy页面，此时工具栏将更新以显示可用的操作。 可用的[操作](overview.md#terms-used)取决于您是选择[blueprint](#actions-for-a-blueprint-page)还是[Live Copy](#actions-for-a-live-copy-page)页面。
 
-### Blueprint页面{#actions-for-a-blueprint-page}的操作
+### Blueprint页面的操作 {#actions-for-a-blueprint-page}
 
 选择Blueprint页面时，可以执行以下操作：
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 * **编辑**  — 打开Blueprint页面进行编辑。
 * **[转出](overview.md#rollout-and-synchronize)**  — 执行转出以将更改从源推送到Live Copy。
 
-### Live Copy页面{#actions-for-a-live-copy-page}的操作
+### Live Copy页面的操作 {#actions-for-a-live-copy-page}
 
 选择Live Copy页面时，可以执行以下操作：
 
