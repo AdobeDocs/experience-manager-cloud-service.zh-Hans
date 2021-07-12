@@ -4,8 +4,8 @@ user-guide-title: AEM as a Cloud Service 的操作和维护
 breadcrumb-title: Operations 指南
 user-guide-description: 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。
 feature: 配置
-role: Administrator
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+role: Admin
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 100%
