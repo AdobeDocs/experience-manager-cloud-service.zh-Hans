@@ -3,9 +3,9 @@ title: 组织数字资产以使用Dynamic Media图像配置文件或视频配置
 description: “有关命名、组织和管理Dynamic Media图像文件和视频资产文件的提示和最佳实践。”
 contentOwner: Rick Brough
 feature: 资产管理，图像配置文件，视频配置文件
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 17%
