@@ -2,9 +2,9 @@
 title: 传送 Dynamic Media 资产
 description: 了解如何交付Dynamic Media资产。
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 13%
@@ -40,7 +40,7 @@ ht-degree: 13%
 * [通过Dynamic Media Classic使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用规则集转换URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## HTTP/2交付Dynamic Media资产{#http-delivery-of-dynamic-media-assets}
+## HTTP/2交付Dynamic Media资产 {#http-delivery-of-dynamic-media-assets}
 
 Experience Manager现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，将通过HTTP/2协议来交付已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，从而可以缩短所有Dynamic Media资产的响应和加载时间。
 
