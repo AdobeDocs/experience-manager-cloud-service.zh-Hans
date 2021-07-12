@@ -2,16 +2,16 @@
 title: 语言副本向导
 description: 了解如何在AEM中使用语言副本向导。
 feature: 语言复制
-role: Administrator
+role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 2%
 
 ---
 
-# 语言复制向导{#language-copy-wizard}
+# 语言副本向导 {#language-copy-wizard}
 
 语言副本向导是用于创建和检测多语言内容结构的引导式体验。 该向导使创建语言副本变得简单而快速。
 
