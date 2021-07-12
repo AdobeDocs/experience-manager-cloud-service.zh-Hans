@@ -2,9 +2,9 @@
 title: 智能成像
 description: 了解Adobe Sensei AI智能成像如何应用每个用户的独特查看特性，自动为其体验优化的正确图像提供服务，从而提高性能和参与度。
 feature: 资产管理，演绎版
-role: Business Practitioner
+role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0946383504aec025bda8c4087495deb2526b5fe3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
