@@ -2,9 +2,9 @@
 title: 变量 - 创作片段内容
 description: 了解变量如何允许您为片段创作内容，然后根据目的创建该内容的变量，从而使AEM中的无头内容更加灵活。
 feature: 内容片段
-role: Business Practitioner
+role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 15%
@@ -38,7 +38,7 @@ ht-degree: 15%
 >
 >发布和/或引用片段后，当作者打开片段进行再次编辑时，AEM将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
 
-## 创作内容{#authoring-your-content}
+## 创作内容 {#authoring-your-content}
 
 打开内容片段进行编辑时，默认情况下将打开&#x200B;**变量**&#x200B;选项卡。 在此，您可以为主控或您拥有的任何变体创作内容。 结构化片段包含在内容模型中定义的各种数据类型的字段。
 
@@ -59,7 +59,7 @@ ht-degree: 15%
 
 * 对于&#x200B;**片段引用**&#x200B;字段，根据模型定义，可以使用&#x200B;**[编辑内容片段](#fragment-references-edit-content-fragment)**&#x200B;选项。
 
-### 全屏编辑器{#full-screen-editor}
+### 全屏编辑器 {#full-screen-editor}
 
 编辑多行文本字段时，可以打开全屏编辑器；点按或单击实际文本，然后选择以下操作图标：
 
@@ -155,7 +155,7 @@ ht-degree: 15%
 >
 >如果在&#x200B;**富文本**&#x200B;和&#x200B;**标记**&#x200B;之间切换，您可能会在“引述块”和“代码块”中遇到意料之外的体验效果，因为这两种格式在处理方式上可能有所不同。
 
-### 片段引用{#fragment-references}
+### 片段引用 {#fragment-references}
 
 如果内容片段模型包含片段引用，则片段作者可能具有其他选项：
 
@@ -174,7 +174,7 @@ ht-degree: 15%
 
 #### 新内容片段 {#fragment-references-new-content-fragment}
 
-选项&#x200B;**新建内容片段**&#x200B;将允许您创建一个全新片段。 要实现此目的，将在编辑器中打开创建内容片段向导的变体。
+选项&#x200B;**新内容片段**&#x200B;将允许您创建一个全新片段。 要实现此目的，将在编辑器中打开创建内容片段向导的变体。
 
 然后，您将能够通过以下方式创建新片段：
 
@@ -186,7 +186,7 @@ ht-degree: 15%
    1. **** Donewill返回（到原始片段）并引用新片段。
    1. **** Open将引用新片段，以及在新的浏览器选项卡中打开新片段进行编辑。
 
-### 查看关键统计信息{#viewing-key-statistics}
+### 查看关键统计信息 {#viewing-key-statistics}
 
 当打开全屏编辑器时，**文本统计信息**&#x200B;操作将显示有关文本的一系列信息。
 
@@ -194,11 +194,11 @@ ht-degree: 15%
 
 ![统计](assets/cfm-variations-04.png)
 
-### 上传内容{#uploading-content}
+### 上传内容 {#uploading-content}
 
 为简化内容片段创作过程，您可以上传在外部编辑器中准备的文本，并将其直接添加到片段中。
 
-### 摘要文本{#summarizing-text}
+### 摘要文本 {#summarizing-text}
 
 摘要文本旨在帮助用户将其文本的长度减少为预定义的单词数，同时保留关键点和总体含义。
 
@@ -250,7 +250,7 @@ ht-degree: 15%
 
    ![总结比较](assets/cfm-variations-06.png)
 
-### 对内容片段{#annotating-a-content-fragment}添加注释
+### 对内容片段添加注释 {#annotating-a-content-fragment}
 
 要对片段添加注释：
 
@@ -282,7 +282,7 @@ ht-degree: 15%
 
    ![注释](assets/cfm-variations-07c.png)
 
-### 查看、编辑和删除批注{#viewing-editing-deleting-annotations}
+### 查看、编辑和删除批注 {#viewing-editing-deleting-annotations}
 
 注释:
 
@@ -299,7 +299,7 @@ ht-degree: 15%
 
 * 可以在[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中查看和删除选定片段。
 
-### 将资产插入片段{#inserting-assets-into-your-fragment}
+### 将资产插入片段 {#inserting-assets-into-your-fragment}
 
 要简化内容片段创作过程，您可以直接将[Assets](/help/assets/manage-digital-assets.md)（图像）添加到片段中。
 
@@ -332,7 +332,7 @@ ht-degree: 15%
    * **标记**：资产将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
 
 
-### 将内容片段插入片段{#inserting-content-fragment-into-your-fragment}
+### 将内容片段插入片段 {#inserting-content-fragment-into-your-fragment}
 
 为了简化内容片段创作过程，您还可以向片段中添加其他内容片段。
 
@@ -368,9 +368,9 @@ ht-degree: 15%
    * **Markdown**:引用将保留。
 
 
-## 管理变量{#managing-variations}
+## 管理变量 {#managing-variations}
 
-### 创建变量{#creating-a-variation}
+### 创建变体 {#creating-a-variation}
 
 变体允许您获取&#x200B;**主控**&#x200B;内容，并根据不同用途（如果需要）对其进行更改。
 
@@ -385,7 +385,7 @@ ht-degree: 15%
    >[!NOTE]
    创建新变体时，复制的变量始终为&#x200B;**主控**，而不是当前打开的变体。
 
-### 编辑变量{#editing-a-variation}
+### 编辑变量 {#editing-a-variation}
 
 在执行以下任一操作后，您可以对变体内容进行更改：
 
@@ -394,7 +394,7 @@ ht-degree: 15%
 
 ![编辑变量](assets/cfm-variations-10.png)
 
-### 重命名变量{#renaming-a-variation}
+### 重命名变量 {#renaming-a-variation}
 
 要重命名现有变量，请执行以下操作：
 
@@ -409,7 +409,7 @@ ht-degree: 15%
 >[!NOTE]
 这仅影响变量&#x200B;**Title**。
 
-### 删除变量{#deleting-a-variation}
+### 删除变量 {#deleting-a-variation}
 
 要删除现有变量，请执行以下操作：
 
@@ -422,7 +422,7 @@ ht-degree: 15%
 >[!NOTE]
 无法删除&#x200B;**主控**。
 
-### 与主控{#synchronizing-with-master}同步
+### 与主控同步 {#synchronizing-with-master}
 
 **** 母版是内容片段的一个组成部分，从定义上讲，它包含内容的主控副本，而变体则包含该内容的各个更新和定制版本。更新主控时，这些更改可能也与变体相关，因此需要传播到这些变体中。
 
