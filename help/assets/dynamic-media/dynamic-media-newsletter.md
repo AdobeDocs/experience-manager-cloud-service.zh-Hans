@@ -1,10 +1,10 @@
 ---
 title: Dynamic Media新闻稿
-description: 'Experience League的Dynamic Media快讯是每月的快讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您立即实现价值。 本一站式商店快讯中提供宝贵的知识建设资源。 例如，提供了操作方法视频和解决方案概述。 阅读一些关键特性和功能，如图像预设、查看器预设、视频配置文件等。 '
+description: '按Experience League划分的Dynamic Media新闻稿是每月的新闻稿。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您立即实现价值。 本一站式商店快讯中提供宝贵的知识建设资源。 例如，提供了操作方法视频和解决方案概述。 阅读一些关键特性和功能，如图像预设、查看器预设、视频配置文件等。 '
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
    * 探索在这个充满挑战的时代，您的富媒体投资可以提供三种帮助的方式。
    * 注册网络研讨会，了解如何通过智能成像减轻页面加载量。
    * 观看Dynamic Media Classic的按需技能培养网络研讨会。
-   * 观看2020年在线Adobe峰会的Dynamic Media会议。
+   * 查看2020年在线Adobe Summit中的Dynamic Media会议。
    * 进一步了解Adobe的免费Dynamic Media Classic审核。
    * 会见客户成功服务高级项目经理John Monroe。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
    在此问题中：
 
    * 参加新的技能培养网络研讨会，并转型为Dynamic Media Classic专家。
-   * 在2020年Adobe峰会上，您可以在何处找到Dynamic Media。
+   * 请在2020Adobe Summit的Dynamic Media中找到。
    * 探索如何使用Dynamic Media的裁剪魔力。
    * 为帮助您从Dynamic Media Classic获得更多价值，请利用免费的Adobe审核。
    * 了解Dynamic Media Classic的新用户界面。
@@ -93,7 +93,7 @@ ht-degree: 0%
    * 一篇CMSwire文章，可帮助您了解如何更新富媒体策略以满足当今客户的期望。
    * 访问技能培养系列中有关Dynamic Media的按需网络研讨会。
    * 会见Adobe Experience Manager网站可靠性工程部经理Nick Peters。
-   * 在Experience League上快速了解Dynamic Media和Dynamic Media Classic。
+   * 在Experience League中加快Dynamic Media和Dynamic Media Classic的运行速度。
 
 * **[2019年9月，09期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
@@ -104,7 +104,7 @@ ht-degree: 0%
    * 第二次机会观看最近两次技能培养网络研讨会。
    * 观看有关保护您的数字资产免受盗版侵害的按需网络研讨会。
    * 见见Experience Manager资产高级产品营销经理Bridget Roman。
-   * 在Experience League上快速了解Dynamic Media和Dynamic Media Classic。
+   * 在Experience League中加快Dynamic Media和Dynamic Media Classic的运行速度。
 
 * **[2019年8月，08期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
    * 探索仅当您升级到Dynamic Media时才可用的有价值的功能。
    * 了解网络研讨会系列，旨在帮助您快速了解Experience Manager资产和Dynamic Media。
-   * 从Experience League的Dynamic Media中开始获取价值。
+   * 开始您的旅程，从Dynamic Media获取Experience League价值。
    * 今年9月将推出一款功能强大的集成，让您能够分析访客与富媒体的交互方式。
    * 会见Dynamic Media技术支持部的PieterJan Pieper。
 
