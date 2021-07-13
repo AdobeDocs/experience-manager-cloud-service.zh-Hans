@@ -1,7 +1,7 @@
 ---
 title: 迁移后阶段
 description: 迁移后阶段
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 93%
@@ -18,7 +18,6 @@ ht-degree: 93%
 * **开发人员控制台**
 * **CRXDE Lite**
 * **管理日志**
-
 
 ## 开发人员控制台 {#developer-console}
 
