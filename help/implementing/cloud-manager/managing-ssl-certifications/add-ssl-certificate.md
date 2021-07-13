@@ -2,21 +2,21 @@
 title: 添加SSL证书 — 管理SSL证书
 description: 添加SSL证书 — 管理SSL证书
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
-# 添加SSL证书{#adding-an-ssl-certificate}
+# 添加SSL证书 {#adding-an-ssl-certificate}
 
 >[!NOTE]
 >AEM as aCloud Service将仅接受OV（组织验证）或EV（扩展验证）证书。 将不接受DV（域验证）证书。 此外，任何证书都必须是来自受信任的认证中心(CA)的X.509 TLS证书，且具有匹配的2048位RSA私钥。 AEM as aCloud Service将接受域的通配符SSL证书。
 
 配置证书需要几天时间，建议仅提前几个月配置证书。 有关更多详细信息，请参阅[获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) 。
 
-## 证书格式{#certificate-format}
+## 证书格式 {#certificate-format}
 
 SSL文件必须采用PEM格式，才能在Cloud Manager上安装。 PEM格式内的常见文件扩展名包括`.pem,` 。`crt`、 `.cer`和 `.cert`。
 
@@ -34,13 +34,14 @@ SSL文件必须采用PEM格式，才能在Cloud Manager上安装。 PEM格式内
 
    `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## 重要注意事项{#important-considerations}
+## 重要注意事项 {#important-considerations}
 
 * 要在Cloud Manager中安装SSL证书，用户必须具有业务所有者或部署管理器角色。
 
-* 在任何给定时间，Cloud Manager将允许最多10个SSL证书，这些证书可以与您计划中的一个或多个环境关联，即使证书已过期也是如此。 但是，在具有此约束的程序中，Cloud Manager UI将允许安装最多50个SSL证书。
+* 在任何给定时间，Cloud Manager将允许最多10个SSL证书，这些证书可以与您计划中的一个或多个环境关联，即使证书已过期也是如此。 但是，在具有此约束的程序中，Cloud Manager UI将允许安装最多50个SSL证书。 通常，证书可以覆盖多个域（最多100个SAN），因此请考虑将同一证书中的多个域分组，以便保持在此限制范围内。
 
-## 添加证书{#adding-a-cert}
+
+## 添加证书 {#adding-a-cert}
 
 按照以下步骤添加证书：
 
@@ -66,9 +67,9 @@ SSL文件必须采用PEM格式，才能在Cloud Manager上安装。 PEM格式内
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
-## 证书错误{#certificate-errors}
+## 证书错误 {#certificate-errors}
 
-### 正确的证书顺序{#correct-certificate-order}
+### 正确的证书顺序 {#correct-certificate-order}
 
 证书部署失败的最常见原因是中间证书或链证书的顺序不正确。 具体而言，中间证书文件必须以最靠近根的根证书或证书结尾，并以从`main/server`证书到根的降序顺序排列。
 
@@ -85,6 +86,6 @@ SSL文件必须采用PEM格式，才能在Cloud Manager上安装。 PEM格式内
 >[!NOTE]
 >这两个命令的输出必须完全相同。 如果找不到与`main/server`证书匹配的私钥，则需要通过生成新的CSR和/或向SSL供应商请求更新的证书来重新为证书加密密钥。
 
-### 证书有效期{#certificate-validity-dates}
+### 证书有效期 {#certificate-validity-dates}
 
 Cloud Manager希望SSL证书在将来至少90天内有效。 您应该检查证书链的有效性。
