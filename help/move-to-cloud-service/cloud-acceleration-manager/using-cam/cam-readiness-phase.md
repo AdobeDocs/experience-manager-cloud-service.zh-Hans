@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -133,4 +133,4 @@ ht-degree: 4%
 
 ## 下一步 {#whats-next}
 
-了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在即可继续查看下一步（使用实施阶段）。
+了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在可以使用[实施阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)继续查看下一步。
