@@ -3,10 +3,10 @@ title: HTTP2 内容交付常见问题解答
 description: 了解HTTP2内容交付。
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 3%
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe自己的测试产生了以下结果：
 
    要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**Published Server Name**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
+   转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**Published Server Name**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
 
 ## 为我的Dynamic Media帐户启用HTTP/2的过程是什么？ {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -60,7 +60,7 @@ Adobe自己的测试产生了以下结果：
 
    要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。
+   转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。
 
    * 确认您对富媒体请求使用安全HTTPS。
    * 验证您是否通过Adobe使用CDN，以及是否通过直接关系进行管理。
@@ -68,7 +68,7 @@ Adobe自己的测试产生了以下结果：
 
    要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
+   转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
 
    1. 技术支持将您根据请求提交的顺序添加到HTTP/2客户等待列表。
    1. 当Adobe准备好处理您的请求时，客户关怀团队会联系您以协调过渡并设置目标日期。
