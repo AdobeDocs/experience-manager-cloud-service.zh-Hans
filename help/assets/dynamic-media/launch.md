@@ -4,10 +4,10 @@ description: 了解适用于Platform launch的Dynamic Media查看器扩展和Dyn
 feature: 资产报表
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '6662'
-ht-degree: 9%
+source-wordcount: '6676'
+ht-degree: 7%
 
 ---
 
@@ -39,7 +39,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 与Experience Platform Launch集成的主要用例是同时使用Experience Manager资产和Experience Manager站点的客户。 在这些情况下，您可以在Experience Manager创作节点和Experience Platform Launch之间设置标准集成，然后将您的Sites实例与Experience Platform Launch属性相关联。 之后，添加到站点页面的任何Dynamic Media WCM组件都将跟踪查看器中的数据和事件。
 
-请参阅Experience Manager站点](#tracking-dynamic-media-viewers-in-aem-sites)中的[跟踪Dynamic Media查看器。
+请参阅[在Experience Manager站点](#tracking-dynamic-media-viewers-in-aem-sites)中跟踪Dynamic Media查看器。
 
 集成支持的次要用例是那些仅使用Experience Manager资产或Dynamic Media Classic的客户。 在这种情况下，您将获取查看器的嵌入代码，并将其添加到网站页面。 然后，从Experience Platform Launch中获取Experience Platform Launch库生产URL，并手动将其添加到网页代码中。
 
@@ -59,7 +59,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 Experience Platform Launch中的数据元素是一个命名的属性，其值可以静态定义，也可以根据网页或Dynamic Media查看器数据的状态进行动态计算。
 
-可用于数据元素定义的选项取决于Experience Platform Launch资产中安装的扩展列表。 “核心”扩展已预安装，可在任何配置中开箱即用。 此“核心”扩展允许定义一个数据元素，其值来自Cookie、JavaScript™代码、查询字符串和许多其他源。
+可用于数据元素定义的选项取决于Experience Platform Launch资产中安装的扩展列表。 “核心”扩展已预安装，可在任何配置中开箱即用。 此“核心”扩展允许定义一个数据元素，其值来自Cookie、JavaScript代码、查询字符串和许多其他源。
 
 为了跟踪Adobe Analytics，必须安装其他几个扩展，如[扩展的安装和设置](#installing-and-setup-of-extensions)中所述。 Dynamic Media查看器扩展添加了定义数据元素的功能，该值是Dynamic Viewer事件的参数。 例如，可以引用查看器类型或查看器在加载时报告的资产名称、最终用户缩放时报告的缩放级别等。
 
@@ -153,12 +153,12 @@ Experience Platform Launch中的以下示例配置演示了如何在查看器加
 
 要详细了解如何使用Experience ManagerDynamic Media的嵌入代码功能，请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
-**要使用嵌入代码跟踪Dynamic Media查看器，请执行以下操作：**
+**使用嵌入代码跟踪Dynamic Media查看器：**
 
 1. 为嵌入Dynamic Media查看器准备网页。
 1. 首先登录到Experience Platform Launch，以获取Experience Platform Launch库的嵌入代码(请参阅[配置Experience Platform Launch](#configuring-adobe-launch-for-the-integration))。
-1. 单击&#x200B;**[!UICONTROL 属性]**，然后单击&#x200B;**[!UICONTROL Environments]**&#x200B;选项卡。
-1. 选取与网页环境相关的环境级别。 然后，在&#x200B;**[!UICONTROL Install]**&#x200B;列中，单击框图标。
+1. 选择&#x200B;**[!UICONTROL 属性]**，然后选择&#x200B;**[!UICONTROL 环境]**&#x200B;选项卡。
+1. 选取与网页环境相关的环境级别。 然后，在&#x200B;**[!UICONTROL Install]**&#x200B;列中，选择框图标。
 1. **[!UICONTROL 在“Web安装说]** 明”对话框中，复制完整的Experience Platform Launch库嵌入代码以及周围的 `<script/>` 标记。
 
 ## Dynamic Media查看器扩展的参考指南 {#reference-guide-for-the-dynamic-media-viewers-extension}
@@ -195,7 +195,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-有关每种查看器类型支持的事件列表，请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html);转到“特定查看器”部分，然后单击“支持Adobe Analytics跟踪”子部分。 目前，《Dynamic Media查看器参考指南》未记录事件参数。
+有关每种查看器类型支持的事件列表，请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html);转到“特定查看器”部分，然后选择“支持Adobe Analytics跟踪”子部分。 目前，《Dynamic Media查看器参考指南》未记录事件参数。
 
 现在，我们来考虑Dynamic Media查看器&#x200B;*数据元素*&#x200B;的生命周期。 在页面上发生相应的Dynamic Media查看器事件后，将填充此类数据元素的值。 例如，假设数据元素指向&#x200B;**[!UICONTROL LOAD]**&#x200B;事件及其“asset”参数。 此类数据元素的值会在查看器首次运行LOAD事件后接收有效数据。 如果数据元素指向&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件及其“scale”参数，则此类数据元素的值将保持为空，直到查看器首次发送&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件为止。
 
@@ -252,7 +252,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 要实现此目的，最简单的方法是完成以下两步流程：
 
 * 首先，定义一个或多个数据元素，其中每个数据元素表示Dynamic Media查看器事件的参数。
-* 最后，在Adobe Analytics扩展的Set Variables编辑器中，单击数据元素选取器图标（三个堆叠的磁盘）以打开“选择数据元素”对话框，然后从中选择一个数据元素。
+* 最后，在Adobe Analytics扩展的Set Variables编辑器中，选择数据元素选取器图标（三个堆叠的磁盘）以打开“选择数据元素”对话框，然后从中选择一个数据元素。
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
@@ -262,7 +262,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-使用数据元素和直接事件参数引用之间有重要区别。 对于数据元素，不管是哪个事件触发Set Variables操作。 触发规则的事件可能与动态查看器无关（例如，单击核心扩展中的网页）。 但是，在使用直接参数引用时，务必确保触发规则的事件与它引用的事件参数相对应。
+使用数据元素和直接事件参数引用之间有重要区别。 对于数据元素，不管是哪个事件触发Set Variables操作。 触发规则的事件可能与动态查看器无关（例如，从核心扩展中选择网页）。 但是，在使用直接参数引用时，务必确保触发规则的事件与它引用的事件参数相对应。
 
 例如，如果规 `%event.detail.dm.LOAD.asset%` 则是由Dynamic Media Viewer扩展的 **[!UICONTROL LOAD]** 事件触发的，则引用将返回正确的资产名称。 但是，对于任何其他事件，它都会返回一个空值。
 
@@ -429,7 +429,7 @@ Adobe建议您在此部分之前仔细查看所有文档，以便了解完整集
 
 **要为集成配置Adobe Analytics，请执行以下操作：**
 
-1. 首先，从Experience Cloud[主页](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)访问Adobe Analytics。 在菜单栏中，单击页面右上角附近的“解决方案”图标（一个三个圆点对齐的表），然后单击&#x200B;**[!UICONTROL Analytics]**。
+1. 首先，从Experience Cloud[主页](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)访问Adobe Analytics。 在菜单栏中，选择页面右上角附近的“解决方案”图标（一个三个圆点对齐的表），然后选择&#x200B;**[!UICONTROL Analytics]**。
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -445,7 +445,7 @@ Adobe建议您在此部分之前仔细查看所有文档，以便了解完整集
 
    请参阅[报表和报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites)。
 
-   在Adobe Analytics中，报表包在&#x200B;**[!UICONTROL 管理员>报表包]**&#x200B;下进行管理。
+   在Adobe Analytics中，报表包在&#x200B;**[!UICONTROL 管理员]** > **[!UICONTROL 报表包]**&#x200B;下进行管理。
 
    ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
@@ -461,16 +461,16 @@ Adobe建议您在此部分之前仔细查看所有文档，以便了解完整集
 
    就本文档而言，将仅使用自定义流量(prop)变量，因为在网页上发生操作后几分钟内，Analytics报表中就会提供这些变量。
 
-   要启用新的自定义流量变量，请在工具栏的Adobe Analytics中，单击&#x200B;**[!UICONTROL 管理员>报表包]**。
+   要启用新的自定义流量变量，请在工具栏的Adobe Analytics中，转到&#x200B;**[!UICONTROL 管理员]** > **[!UICONTROL 报表包]**。
 
-1. 在&#x200B;**[!UICONTROL 报表包管理器]**&#x200B;页面上，选择正确的报表，然后在工具栏上，单击&#x200B;**[!UICONTROL 编辑设置]** > **[!UICONTROL 流量]** > **[!UICONTROL 流量变量]**。
+1. 在&#x200B;**[!UICONTROL 报表包管理器]**&#x200B;页面上，选择正确的报表，然后在工具栏上，转到&#x200B;**[!UICONTROL 编辑设置]** > **[!UICONTROL 流量]** > **[!UICONTROL 流量变量]**。
 1. 选择一个未使用的变量，为其提供一个描述性名称(**[!UICONTROL 查看器资产(prop 30)]**)，然后在“已启用”列中将组合框更改为“已启用”。
 
    以下屏幕截图是用于跟踪查看器所使用的资产名称的自定义流量变量(**[!UICONTROL prop30]**)示例：
 
    ![image2019-6-26_23-6-59](/help/assets/dynamic-media/assets/image2019-6-26_23-6-59.png)
 
-1. 在变量列表的底部，单击&#x200B;**[!UICONTROL Save]**。
+1. 在变量列表的底部，选择&#x200B;**[!UICONTROL Save]**。
 
 ### 设置报表 {#setting-up-a-report}
 
@@ -478,13 +478,13 @@ Adobe建议您在此部分之前仔细查看所有文档，以便了解完整集
 
    但是，在&#x200B;**[设置Adobe Analytics变量](#setting-up-adobe-analytics-variables)**&#x200B;中设置自定义流量变量后，您已足以知道自定义流量报表在Adobe Analytics中自动可用。
 
-   例如，可从&#x200B;**[!UICONTROL 自定义流量 > 自定义流量 21 - 30 > 查看器资产 (prop 30)]**&#x200B;下的“报告”菜单中获得&#x200B;**[!UICONTROL 查看器资产 (prop 30)]**&#x200B;的报告。
+   例如，可从&#x200B;**[!UICONTROL 自定义流量]** > **[!UICONTROL 自定义流量21-30]** > **[!UICONTROL 查看器资产(prop 30)]**&#x200B;下的“报告”菜单中获取&#x200B;**[!UICONTROL 查看器资产(prop 30)]**&#x200B;的报告。
 
    在查看器资产(prop 30)创 **[!UICONTROL 建后直接访问此报告]** ，不显示任何数据；在整合的这一阶段，人们就会期待它。
 
    ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
-## 为集成配置Experience Platform Launch {#configuring-adobe-launch-for-the-integration}
+## 配置集成Experience Platform Launch {#configuring-adobe-launch-for-the-integration}
 
 配置Experience Platform Launch后，将为集成设置以下内容：
 
@@ -495,7 +495,7 @@ Adobe建议您在此部分之前仔细查看所有文档，以便了解完整集
 
 **要配置集成的Experience Platform Launch，请执行以下操作：**
 
-1. 首先，从Experience Cloud[主页](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)访问Experience Platform Launch。 在菜单栏中，单击页面右上角附近的“解决方案”图标（三对三个圆点表），然后单击&#x200B;**[!UICONTROL Launch]**。
+1. 首先，从Experience Cloud[主页](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)访问Experience Platform Launch。 在菜单栏中，选择页面右上角附近的“解决方案”图标（三个圆点对齐三个表），然后选择&#x200B;**[!UICONTROL Launch]**。
 
    您还可以直接[打开Experience Platform Launch](https://launch.adobe.com/)。
 
@@ -507,34 +507,36 @@ Experience Platform Launch中的属性是将所有设置保持在一起的命名
 
 另请参阅[创建Launch属性](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)。
 
-1. 在Experience Platform Launch中，单击&#x200B;**[!UICONTROL New Property]**。
+**要在Experience Platform Launch中创建资产，请执行以下操作：**
+
+1. 在Experience Platform Launch中，选择&#x200B;**[!UICONTROL 新建属性]**。
 1. 在&#x200B;**[!UICONTROL 创建属性]**&#x200B;对话框的&#x200B;**[!UICONTROL 名称]**&#x200B;字段中，键入描述性名称，如网站的标题。例如，`DynamicMediaViewersProp.`
 1. 在&#x200B;**[!UICONTROL 域]**&#x200B;字段中，输入网站的域。
 1. 在&#x200B;**[!UICONTROL 高级选项]**&#x200B;下拉框中，启用&#x200B;**[!UICONTROL 配置以进行扩展开发（以后无法修改）]**，以防您要使用的扩展（本例中为 *Dynamic Media 查看器*）尚未发布。
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-   单击新创建的属性，然后继续到&#x200B;*Installation and setup of extensions*。
+   选择新创建的属性，然后继续到&#x200B;*Installation and setup of extensions*。
 
 ### 安装和设置扩展 {#installing-and-setup-of-extensions}
 
-Experience Platform Launch中所有可用的扩展都列在&#x200B;**[!UICONTROL Extensions > Catalog]**&#x200B;下。
+Experience Platform Launch中所有可用的扩展都列在&#x200B;**[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**&#x200B;下。
 
-要安装扩展，请单击&#x200B;**[!UICONTROL Install]**。 如果需要，请执行一次性扩展配置，然后单击&#x200B;**[!UICONTROL Save]**。
+要安装扩展，请选择&#x200B;**[!UICONTROL Install]**。 如果需要，请执行一次性扩展配置，然后选择&#x200B;**[!UICONTROL Save]**。
 
 如有必要，必须安装和配置以下扩展：
 
 * （必需）*Experience CloudID服务*&#x200B;扩展
 
-无需其他配置，接受任何建议的值。 完成后，请确保单击&#x200B;**[!UICONTROL Save]**。
+无需其他配置，接受任何建议的值。 完成后，请确保选择&#x200B;**[!UICONTROL Save]**。
 
 请参阅[Experience CloudID服务扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref)。
 
 * （必需）*Adobe Analytics*&#x200B;扩展
 
-要配置此扩展，您需要在Adobe Analytics中&#x200B;**[!UICONTROL 管理员>报表包]**&#x200B;下的&#x200B;**[!UICONTROL 报表包ID]**&#x200B;列标题下找到报表包ID。
+要配置此扩展，您需要在Adobe Analytics中&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL 报表包]**&#x200B;列标题下的&#x200B;**[!UICONTROL 报表包ID]**&#x200B;列标题下找到报表包ID。
 
 (仅出于演示目的，在以下屏幕截图中使用&#x200B;**[!UICONTROL DynamicMediaViewersExtensionDoc]**&#x200B;报表包的报表包ID。 此 ID 在之前的[选择报表包](#selecting-a-report-suite)中创建并使用。)
 
@@ -548,7 +550,7 @@ Experience Platform Launch中所有可用的扩展都列在&#x200B;**[!UICONTROL
 
 在&#x200B;**[!UICONTROL 安装扩展]**&#x200B;页面上，展开&#x200B;**[!UICONTROL 常规]**，然后指定跟踪服务器。 跟踪服务器遵循模板`<trackingNamespace>.sc.omtrdc.net`，其中`<trackingNamespace>`是在预配电子邮件中获取的信息。
 
-单击&#x200B;**[!UICONTROL 保存]**。
+选择&#x200B;**[!UICONTROL 保存]**。
 
 请参阅[Adobe Analytics扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref)。
 
@@ -580,7 +582,7 @@ Experience Platform Launch中所有可用的扩展都列在&#x200B;**[!UICONTROL
 
 请参阅[示例配置](#sample-configuration) ，以了解Experience Platform Launch中用于演示如何在查看器加载时跟踪资产名称的示例配置。
 
-请参阅[配置Dynamic Media查看器扩展](#configuring-the-dynamic-media-viewers-extension) ，以详细了解扩展的功能。
+有关扩展功能的详细信息，请参阅[配置Dynamic Media查看器扩展](#configuring-the-dynamic-media-viewers-extension)。
 
 ### 发布库 {#publishing-a-library}
 
@@ -599,7 +601,7 @@ platform launch可能具有多个开发环境、一个暂存环境和一个生�
 
 1. 首次在Experience Platform Launch中打开“发布”选项卡时，库列表为空。
 
-   在左列中，单击&#x200B;**[!UICONTROL Add New Library]**。
+   在左列中，选择&#x200B;**[!UICONTROL Add New Library]**。
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
@@ -607,11 +609,11 @@ platform launch可能具有多个开发环境、一个暂存环境和一个生�
 
    *DynamicMediaViewersLib*
 
-   从环境下拉列表中，选择环境级别。 最初，只有开发级别可供选择。 在页面左下方附近，单击&#x200B;**[!UICONTROL Add All Changed Resources]**。
+   从环境下拉列表中，选择环境级别。 最初，只有开发级别可供选择。 在页面的左下侧附近，选择&#x200B;**[!UICONTROL Add All Changed Resources]**。
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
-1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL Save &amp; Build for Development]**。
+1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL Save &amp; Build for Development]**。
 
    几分钟后，即会创建并准备使用库。
 
@@ -619,30 +621,30 @@ platform launch可能具有多个开发环境、一个暂存环境和一个生�
 
    >[!NOTE]
    >
-   >下次更改Experience Platform Launch配置时，转到&#x200B;**[!UICONTROL 属性]**&#x200B;配置下的&#x200B;**[!UICONTROL Publishing]**&#x200B;选项卡，然后单击之前创建的库。
+   >下次更改Experience Platform Launch配置时，转到&#x200B;**[!UICONTROL 属性]**&#x200B;配置下的&#x200B;**[!UICONTROL Publishing]**&#x200B;选项卡，然后选择之前创建的库。
    >
    >
-   >在库发布屏幕中，单击&#x200B;**[!UICONTROL Add All Changed Resources]**，然后单击&#x200B;**[!UICONTROL Save &amp; Build for Development]**。
+   >从库发布屏幕中，选择&#x200B;**[!UICONTROL Add All Changed Resources]**，然后选择&#x200B;**[!UICONTROL Save &amp; Build for Development]**。
 
 #### 在环境级别中向上移动库 {#moving-a-library-up-through-environment-levels}
 
-1. 添加新库后，即可在开发环境中找到该库。 要将其移至暂存环境级别（对应于已提交列），请从库的下拉菜单中，单击&#x200B;**[!UICONTROL 提交以供审批]**。
+1. 添加新库后，即可在开发环境中找到该库。 要将其移至暂存环境级别（对应于已提交列），请从库的下拉菜单中选择&#x200B;**[!UICONTROL 提交以供审批]**。
 
    ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
-1. 在确认对话框中，单击&#x200B;**[!UICONTROL Submit]**。
+1. 在确认对话框中，选择&#x200B;**[!UICONTROL Submit]**。
 
-   在库移到Submitted列后，从库的下拉菜单中，单击&#x200B;**[!UICONTROL Build for Staging]**。
+   在库移到Submitted列后，从库的下拉菜单中，选择&#x200B;**[!UICONTROL Build for Staging]**。
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
 1. 要将库从暂存环境移动到生产环境（即“已发布”列），请执行类似的过程。
 
-   首先，从下拉菜单中，单击&#x200B;**[!UICONTROL 批准发布]**。
+   首先，从下拉菜单中，选择&#x200B;**[!UICONTROL 批准发布]**。
 
    ![image2019-7-15_16-7-39](assets/image2019-7-15_16-7-39.png)
 
-1. 从下拉菜单中，单击&#x200B;**[!UICONTROL Build &amp; Publish to Production]**。
+1. 从下拉菜单中，选择&#x200B;**[!UICONTROL Build &amp; Publish to Production]**。
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
@@ -665,38 +667,38 @@ Experience Manager配置包含以下两个主要步骤：
 
 ### 配置Experience ManagerIMS {#configuring-aem-ims}
 
-1. 在Experience Manager作者中，单击工具图标（锤子），然后单击&#x200B;**[!UICONTROL 安全>AdobeIMS配置]**。
+1. 在Experience Manager作者中，选择工具图标（锤子），然后转到&#x200B;**[!UICONTROL Security]** > **[!UICONTROL AdobeIMS配置]**。
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
-1. 在“AdobeIMC配置”页的左上角附近，单击&#x200B;**[!UICONTROL 创建]**。
-1. 在&#x200B;**[!UICONTROL AdobeIMS技术帐户配置]**&#x200B;页面的&#x200B;**[!UICONTROL 云解决方案]**&#x200B;下拉列表中，单击&#x200B;**[!UICONTROL Experience Platform数据收集]**。
-1. 启用&#x200B;**[!UICONTROL 创建新证书]**，然后在文本字段中，为您的证书输入任何有意义的值。 例如， *AdobeLaunchIMSCert*。 单击&#x200B;**[!UICONTROL 创建证书]**。
+1. 在“AdobeIMC配置”页的左上角附近，选择&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL AdobeIMS技术帐户配置]**&#x200B;页面的&#x200B;**[!UICONTROL 云解决方案]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL Experience Platform数据收集]**。
+1. 启用&#x200B;**[!UICONTROL 创建新证书]**，然后在文本字段中，为您的证书输入任何有意义的值。 例如， *AdobeLaunchIMSCert*。 选择&#x200B;**[!UICONTROL 创建证书]**。
 
    将显示以下信息消息：
 
    *要检索有效的访问令牌，必须将新证书的公共密钥添加到Adobe I/O的技术帐户！*
 
-   要关闭“信息”对话框，请单击&#x200B;**[!UICONTROL 确定]**。
+   要关闭“信息”对话框，请选择&#x200B;**[!UICONTROL 确定]**。
 
    ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
-1. 单击&#x200B;**[!UICONTROL 下载公钥]**&#x200B;可将公钥文件(`*.crt`)下载到本地系统。
+1. 选择&#x200B;**[!UICONTROL 下载公钥]**&#x200B;以将公钥文件(`*.crt`)下载到本地系统。
 
    >[!NOTE]
    >
-   >此时，请&#x200B;***保持打开*** **[!UICONTROL Adobe IMS 技术帐户配置]**&#x200B;页面；***不要***&#x200B;关闭页面，并且&#x200B;***不要***&#x200B;单击“下一步”。您将在稍后的步骤中返回此页。
+   >此时， ***保持打开*** **[!UICONTROL AdobeIMS技术帐户配置]**&#x200B;页；***请勿***&#x200B;关闭页面，并且&#x200B;***请勿***&#x200B;选择&#x200B;**[!UICONTROL 下一步]**。 您将在稍后的步骤中返回此页。
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
 1. 在新的浏览器选项卡中，导航到[Adobe I/O控制台](https://console.adobe.io/integrations)。
 
-1. 在&#x200B;**[!UICONTROL Adobe I/O控制台集成]**&#x200B;页面右上角附近，单击&#x200B;**[!UICONTROL 新集成]**。
-1. 在&#x200B;**[!UICONTROL 创建新集成]**&#x200B;对话框中，确保选中&#x200B;**[!UICONTROL 访问 API]** 单选按钮，然后单击&#x200B;**[!UICONTROL 继续]**。
+1. 从&#x200B;**[!UICONTROL Adobe I/O控制台集成]**&#x200B;页面右上角附近，选择&#x200B;**[!UICONTROL 新集成]**。
+1. 在&#x200B;**[!UICONTROL 创建新集成]**&#x200B;对话框中，确保选中&#x200B;**[!UICONTROL 访问API]**&#x200B;单选按钮，然后选择&#x200B;**[!UICONTROL 继续]**。
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. 在第二个&#x200B;**[!UICONTROL 创建新集成]**&#x200B;页面上，启用（打开）**[!UICONTROL Experience Platform Launch API]** 单选按钮。在页面的右下角，单击&#x200B;**[!UICONTROL 继续]**。
+1. 在第二个&#x200B;**[!UICONTROL 创建新集成]**&#x200B;页面上，启用（打开）**[!UICONTROL Experience Platform Launch API]** 单选按钮。在页面的右下角，选择&#x200B;**[!UICONTROL 继续]**。
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -714,8 +716,8 @@ Experience Manager配置包含以下两个主要步骤：
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. 单击&#x200B;**[!UICONTROL 创建集成]**。
-1. 在&#x200B;**[!UICONTROL 已创建的集成]**&#x200B;页面上，单击&#x200B;**[!UICONTROL 继续查看集成详细信息]**。
+1. 选择&#x200B;**[!UICONTROL 创建集成]**。
+1. 在&#x200B;**[!UICONTROL 已创建的集成]**&#x200B;页面上，选择&#x200B;**[!UICONTROL 继续查看集成详细信息]**。
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
@@ -728,9 +730,9 @@ Experience Manager配置包含以下两个主要步骤：
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
    _集成详细信息页面_
 
-1. 返回之前打开的 **[!UICONTROL Adobe IMS 技术帐户配置]**&#x200B;页面。在页面的右上角，单击&#x200B;**[!UICONTROL 下一步]**&#x200B;以在 **[!UICONTROL Adobe IMS 技术帐户配置]**&#x200B;窗口中打开&#x200B;**[!UICONTROL 帐户]**&#x200B;页面。
+1. 返回之前打开的 **[!UICONTROL Adobe IMS 技术帐户配置]**&#x200B;页面。在页面的右上角，选择&#x200B;**[!UICONTROL Next]**&#x200B;以在&#x200B;**[!UICONTROL AdobeIMS技术帐户配置]**&#x200B;窗口中打开&#x200B;**[!UICONTROL 帐户]**&#x200B;页面。
 
-   (如果您之前关闭了页面，请返回Experience Manager作者，然后单击&#x200B;**[!UICONTROL 工具>安全>AdobeIMS配置]**。 单击&#x200B;**[!UICONTROL 创建]**。在&#x200B;**[!UICONTROL 云解决方案]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL Experience Platform Launch]**。 在&#x200B;**[!UICONTROL 证书]**&#x200B;下拉列表中，选择之前创建的证书的名称。
+   (如果您之前关闭了页面，请返回Experience Manager作者，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全]** > **[!UICONTROL AdobeIMS配置]**。 选择&#x200B;**[!UICONTROL 创建]**。在&#x200B;**[!UICONTROL 云解决方案]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL Experience Platform Launch]**。 在&#x200B;**[!UICONTROL 证书]**&#x200B;下拉列表中，选择之前创建的证书的名称。
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _AdobeIMS技术帐户配置 — 证书页_
@@ -743,7 +745,7 @@ Experience Manager配置包含以下两个主要步骤：
 1. 在&#x200B;**[!UICONTROL Account]**&#x200B;页面上，填写以下字段：
 
    * **[!UICONTROL 标题]**  — 输入描述性帐户标题。
-   * **[!UICONTROL 授权服务器]**  — 返回到您之前打开的“集成详细信息”页面。单击&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡。 复制服务器名称（不带路径），如下所示。
+   * **[!UICONTROL 授权服务器]**  — 返回到您之前打开的“集成详细信息”页面。选择&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡。 复制服务器名称（不带路径），如下所示。
 
 （示例服务器名称仅供说明）   返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。例如，`https://ims-na1.adobelogin.com/`
 （示例服务器名称仅供说明）
@@ -751,14 +753,14 @@ Experience Manager配置包含以下两个主要步骤：
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _集成详细信息页面 — JWT选项卡_
 
-1. **[!UICONTROL API 密钥]** - 返回到“集成详细信息”页面。单击&#x200B;**[!UICONTROL 概述]**&#x200B;选项卡，然后单击 **[!UICONTROL API 密钥（客户端 ID）]**&#x200B;字段右侧的&#x200B;**[!UICONTROL 复制]**。
+1. **[!UICONTROL API 密钥]** - 返回到“集成详细信息”页面。选择&#x200B;**[!UICONTROL Overview]**&#x200B;选项卡，然后在&#x200B;**[!UICONTROL API密钥（客户端ID）]**&#x200B;字段的右侧，选择&#x200B;**[!UICONTROL Copy]**。
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将密钥粘贴到相应的字段中。
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
    _集成详细信息页面_
 
-1. **[!UICONTROL 客户端密钥]** - 返回到“集成详细信息”页面。在&#x200B;**[!UICONTROL 概述]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL 检索客户端密钥]**。在&#x200B;**[!UICONTROL 客户端密钥]**&#x200B;字段的右侧，单击&#x200B;**[!UICONTROL 复制]**。
+1. **[!UICONTROL 客户端密钥]** - 返回到“集成详细信息”页面。从&#x200B;**[!UICONTROL Overview]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL 检索客户端密钥]**。 在&#x200B;**[!UICONTROL 客户端密钥]**&#x200B;字段的右侧，选择&#x200B;**[!UICONTROL 复制]**。
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将密钥粘贴到相应的字段中。
 
@@ -773,7 +775,7 @@ Experience Manager配置包含以下两个主要步骤：
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. 在&#x200B;**[!UICONTROL 帐户]**&#x200B;页面的右上角附近，单击&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL 帐户]**&#x200B;页面的右上角附近，选择&#x200B;**[!UICONTROL 创建]**。
 
    配置了Experience ManagerIMS后，您现在的&#x200B;**[!UICONTROL AdobeIMS配置]**&#x200B;下列出了新的IMSAccount。
 
@@ -781,7 +783,7 @@ Experience Manager配置包含以下两个主要步骤：
 
 ## 为集成配置Experience Platform Launch云 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. 在Experience Manager作者中，在左上角附近，单击工具图标（锤子），然后单击&#x200B;**[!UICONTROL Cloud Services>Experience Platform Launch配置]**。
+1. 在Experience Manager作者的左上角附近，选择工具图标（锤子），然后转到&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Launch配置]**。
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -791,7 +793,7 @@ Experience Manager配置包含以下两个主要步骤：
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-1. 在页面的左上角附近，单击&#x200B;**[!UICONTROL 创建]**。
+1. 在页面的左上角附近，选择&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 创建Experience Platform Launch配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 常规]**&#x200B;页面（第1/3页）中，填写以下字段：
 
    * **[!UICONTROL 标题]**  — 输入描述性配置标题。例如，`We.Retail Launch cloud configuration`。
@@ -805,7 +807,7 @@ Experience Manager配置包含以下两个主要步骤：
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-1. 在左上角附近，单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在左上角附近，选择&#x200B;**[!UICONTROL 下一个]**。
 1. 在&#x200B;**[!UICONTROL 创建Experience Platform Launch配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 测试]**&#x200B;页面（第2/3页）中，填写以下字段：
 
    在&#x200B;**[!UICONTROL 库URI]**&#x200B;字段中，检查Experience Platform Launch库的暂存版本的位置。 Experience Manager会自动填充此字段。
@@ -823,13 +825,13 @@ Experience Manager配置包含以下两个主要步骤：
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
-1. 在右上角附近，单击&#x200B;**[!UICONTROL Next]**。
+1. 在右上角附近，选择&#x200B;**[!UICONTROL 下一个]**。
 1. 如果需要，在&#x200B;**[!UICONTROL 创建Experience Platform Launch配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 生产]**&#x200B;页面（第3/3页）中，修复自动填充的生产URI，类似于在上一个&#x200B;**[!UICONTROL 测试]**&#x200B;页面中的操作。
-1. 在右上角附近，单击&#x200B;**[!UICONTROL 创建]**。
+1. 在右上角附近，选择&#x200B;**[!UICONTROL 创建]**。
 
    您的新Experience Platform Launch云配置现已创建完成，并列在您网站的旁边。
 
-1. 选择您的新Experience Platform Launch云配置（选择配置标题后，其左侧会显示一个复选标记）。 在工具栏中，单击&#x200B;**[!UICONTROL Publish]**。
+1. 选择您的新Experience Platform Launch云配置（选择配置标题后，其左侧会显示一个复选标记）。 在工具栏中，选择&#x200B;**[!UICONTROL Publish]**。
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
