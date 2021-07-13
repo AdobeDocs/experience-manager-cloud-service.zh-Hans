@@ -1,15 +1,15 @@
 ---
-title: 传送 Dynamic Media 资产
+title: 交付Dynamic Media资产
 description: 通过Dynamic Media，您可以选择多个选项来将Dynamic Media资产（视频和图像）交付到您的网站。
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 19%
+ht-degree: 6%
 
 ---
 
 
-# 传送 Dynamic Media 资产{#delivering-dynamic-media-assets}
+# 交付Dynamic Media资产{#delivering-dynamic-media-assets}
 
 如何交付Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
 
@@ -20,5 +20,5 @@ ht-degree: 19%
 
 有关更多信息，请参阅下列主题：
 
-* [将 Dynamic Media 资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [将Dynamic Media资产添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
