@@ -4,10 +4,10 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: 资产管理，图像配置文件，演绎版
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 14%
+source-wordcount: '2711'
+ht-degree: 12%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 14%
   <tr>
    <td>智能裁剪</td>
    <td>根据图像的可视焦点批量裁剪图像。</td>
-   <td><p>Smart Crop利用Adobe Sensei中人工智能的强大功能，快速批量自动裁剪图像。 智能裁剪可自动检测并裁剪到任何图像中的焦点以获取预期的目标点，而不管屏幕大小。</p> <p>要使用智能裁剪，请从“裁剪选项”下拉列表中选择<strong>智能裁剪</strong>，然后在响应式图像裁剪的右侧启用（打开）该功能。</p> <p>默认的断点大小（大、中、小）涵盖大多数图像在移动和平板电脑设备、台式机和横幅上使用的所有大小。 如果需要，您可以编辑默认名称“大”、“中”和“小”。</p> <p>要添加更多断点，请单击<strong>添加裁剪</strong>;要删除裁剪，请单击垃圾箱图标。</p> </td>
+   <td><p>Smart Crop利用Adobe Sensei中人工智能的强大功能，快速批量自动裁剪图像。 智能裁剪可自动检测并裁剪到任何图像中的焦点以获取预期的目标点，而不管屏幕大小。</p> <p>要使用智能裁剪，请从“裁剪选项”下拉列表中选择<strong>智能裁剪</strong>，然后在响应式图像裁剪的右侧启用（打开）该功能。</p> <p>默认的断点大小（大、中、小）涵盖大多数图像在移动和平板电脑设备、台式机和横幅上使用的所有大小。 如果需要，您可以编辑默认名称“大”、“中”和“小”。</p> <p>要添加更多断点，请选择<strong>添加裁剪</strong>;要删除裁剪，请选择垃圾箱图标。</p> </td>
   </tr>
   <tr>
    <td>颜色和图像样本</td>
@@ -106,8 +106,8 @@ ht-degree: 14%
 
 **要创建Dynamic Media图像配置文件，请执行以下操作：**
 
-1. 点按Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 图像配置文件]**。
-1. 要添加图像配置文件，请点按&#x200B;**[!UICONTROL 创建]**。
+1. 选择Adobe Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 图像配置文件]**。
+1. 要添加图像配置文件，请选择&#x200B;**[!UICONTROL 创建]**。
 1. 输入USM锐化、裁切或色板的配置文件名称和值，或同时输入两者。
 
    提示：使用特定于其预期目的的配置文件名称。 例如，假定您要创建仅生成色板的配置文件。 即，禁用（关闭）智能裁剪，启用（打开）颜色和图像色板。 在这些情况下，您可以使用配置文件名称“Smart Swatches”。
@@ -116,11 +116,11 @@ ht-degree: 14%
 
    ![农作物](assets/crop.png)
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。此时新创建的配置文件会显示在可用配置文件列表中。
+1. 选择&#x200B;**[!UICONTROL 保存]**。此时新创建的配置文件会显示在可用配置文件列表中。
 
 ## 编辑或删除Dynamic Media图像配置文件 {#editing-or-deleting-image-profiles}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 图像配置文件]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像配置文件]**。
 1. 选择要编辑或删除的图像配置文件。要编辑配置文件，请选择&#x200B;**[!UICONTROL 编辑图像处理配置文件]**。 要删除该配置文件，请选择&#x200B;**[!UICONTROL 删除图像处理配置文件]**。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -139,7 +139,7 @@ ht-degree: 14%
 
 您可以将图像配置文件应用到特定文件夹或全局应用到所有资产。
 
-您可以重新处理文件夹中的资产，该文件夹中已有您稍后更改的图像配置文件。 请参阅[编辑文件夹的处理配置文件后重新处理该文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+您可以重新处理文件夹中的资产，该文件夹中已有您稍后更改的图像配置文件。 请参阅[编辑文件夹中的处理配置文件](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)后，重新处理该文件夹中的资产。
 
 ### 将Dynamic Media图像配置文件应用到特定文件夹 {#applying-image-profiles-to-specific-folders}
 
@@ -147,22 +147,22 @@ ht-degree: 14%
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-您可以重新处理文件夹中已有视频配置文件且稍后进行了更改的资产。 请参阅[编辑文件夹的处理配置文件后重新处理该文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+您可以重新处理文件夹中已有视频配置文件且稍后进行了更改的资产。 请参阅[编辑文件夹中的处理配置文件](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)后，重新处理该文件夹中的资产。
 
-#### 从“配置文件”用户界面将Dynamic Media图像配置文件应用到文件夹 {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### 将Dynamic Media图像配置文件从配置文件用户界面应用到文件夹 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 图像配置文件]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像配置文件]**。
 1. 选择要应用于一个或多个文件夹的图像配置文件。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 点按&#x200B;**[!UICONTROL 将处理配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资产的文件夹，然后点按/单击&#x200B;**[!UICONTROL 应用]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 将处理配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资产的文件夹，然后选择&#x200B;**[!UICONTROL 应用]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 #### 将Dynamic Media图像配置文件从属性应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到要将图像配置文件应用到的文件夹。
-1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
-1. 点按&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择配置文件，然后点按&#x200B;**[!UICONTROL 保存并关闭]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到要将图像配置文件应用到的文件夹。
+1. 在文件夹中，选择复选标记以将其选中，然后选择&#x200B;**[!UICONTROL 属性]**。
+1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -170,19 +170,19 @@ ht-degree: 14%
 
 除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件。 任何文件夹中上传到Experience Manager资产中的任何内容都会应用选定的配置文件。
 
-您可以重新处理文件夹中已有视频配置文件且稍后进行了更改的资产。 请参阅[编辑文件夹的处理配置文件后重新处理该文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+您可以重新处理文件夹中已有视频配置文件且稍后进行了更改的资产。 请参阅[编辑文件夹中的处理配置文件](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)后，重新处理该文件夹中的资产。
 
 **要全局应用Dynamic Media图像配置文件，请执行以下操作：**
 
 1. 执行下列操作之一：
 
-   * 导航到`https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`并应用相应的配置文件，然后点按&#x200B;**[!UICONTROL Save]**。
+   * 导航到`https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`并应用相应的配置文件，然后选择&#x200B;**[!UICONTROL Save]**。
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * 导航到CRXDE Lite到以下节点：`/content/dam/jcr:content`。
 
-      添加属性`imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>`并点按&#x200B;**[!UICONTROL 保存全部]**。
+      添加属性`imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>`并选择&#x200B;**[!UICONTROL Save All]**。
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -198,22 +198,22 @@ ht-degree: 14%
 
 **要编辑单个图像的智能裁切或智能色板，请执行以下操作：**
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到应用了智能裁剪或智能色板图像配置文件的文件夹。
-1. 要打开其内容，请点按文件夹。
-1. 点按要调整其智能裁剪或智能色板的图像。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 智能裁剪]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到应用了智能裁剪或智能色板图像配置文件的文件夹。
+1. 要打开其内容，请选择文件夹。
+1. 选择要调整其智能裁剪或智能色板的图像。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 智能裁剪]**。
 
 1. 执行以下操作之一：
 
    * 在页面的右上角附近，向左或向右拖动滑块条以分别增加或减少图像显示。
    * 在图像上，拖动角手柄以调整裁剪或色板可查看区域的大小。
    * 在图像上，将框/色板拖到新位置。 您只能编辑图像色板；颜色色板是静态的。
-   * 在图像上方，点按&#x200B;**[!UICONTROL 还原]**，以撤消所有编辑并恢复原始裁剪或色板。
+   * 在图像上方，选择&#x200B;**[!UICONTROL Revert]**&#x200B;以撤消所有编辑并恢复原始裁剪或色板。
    * 使用键盘箭头键裁剪帧大小，或调整图像位置，或者同时调整两者。
 
-1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**，然后点按&#x200B;**[!UICONTROL 关闭]**&#x200B;以返回到资产文件夹。
+1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存]**，然后选择&#x200B;**[!UICONTROL 关闭]**&#x200B;以返回到资产文件夹。
 
-## 编辑多幅图像的智能裁剪或智能色板 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## 编辑多幅图像的智能裁切或智能色板 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 将包含智能裁剪的图像配置文件应用到文件夹后，该文件夹中的所有图像都会对其应用裁剪。 如果需要，您可以&#x200B;*手动*&#x200B;重新调整多个图像中智能裁剪窗口的对齐或大小，以进一步优化其焦点。
 
@@ -223,8 +223,8 @@ ht-degree: 14%
 
 **要编辑多幅图像的智能裁切或智能色板，请执行以下操作：**
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到应用了智能裁剪或智能色板图像配置文件的文件夹。
-1. 在文件夹中，点按&#x200B;**[!UICONTROL 更多操作]**(...)图标，然后点按&#x200B;**[!UICONTROL 智能裁剪]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到应用了智能裁剪或智能色板图像配置文件的文件夹。
+1. 在文件夹中，选择&#x200B;**[!UICONTROL 更多操作]**(...)图标，然后选择&#x200B;**[!UICONTROL 智能裁剪]**。
 
 1. 在&#x200B;**[!UICONTROL 编辑智能裁剪]**&#x200B;页面上，执行以下任一操作：
 
@@ -243,28 +243,28 @@ ht-degree: 14%
    * 调整智能裁剪框的大小。 执行以下任一操作：
 
       * 如果图像仅具有智能裁剪或智能色板，请在图像上拖动裁剪框的角手柄。 调整裁剪可查看区域的大小。
-      * 如果图像同时具有智能裁切和智能色板，请在图像上拖动裁剪框的角手柄。 调整裁剪可查看区域的大小。 或者，点按图像下方的智能色板（颜色色板为静态色板），然后拖动裁剪框的角手柄。 调整样本可查看区域的大小。
+      * 如果图像同时具有智能裁切和智能色板，请在图像上拖动裁剪框的角手柄。 调整裁剪可查看区域的大小。 或者，选择图像下方的智能色板（颜色色板为静态色板），然后拖动裁剪框的角手柄。 调整样本可查看区域的大小。
 
       ![调整图像的智能裁剪大小](assets/edit_smart_crops-resize.png)。
 
    * 移动智能裁剪框。 执行以下任一操作：
 
       * 如果图像仅具有智能裁剪或智能色板，则在图像上将裁剪框拖到新位置。
-      * 如果图像同时具有智能裁切和智能色板，则在图像上，将智能裁切框拖到新位置。 或者，点按或单击图像下方的智能色板（颜色色板为静态色板），然后将智能色板裁剪框拖到新位置。
+      * 如果图像同时具有智能裁切和智能色板，则在图像上，将智能裁切框拖到新位置。 或者，选择图像下方的智能色板（颜色色板为静态色板），然后将智能色板裁剪框拖到新位置。
 
       ![edit_smart_crobs_move](assets/edit_smart_crops-move.png)
 
    * 撤消所有编辑并恢复原始智能裁剪或智能色板（仅适用于当前编辑会话）。
 
-      点按图像上方的&#x200B;**[!UICONTROL 还原]**。
+      选择图像上方的&#x200B;**[!UICONTROL 还原]**。
 
       ![edit_smart_crobs_revert](assets/edit_smart_crops-revert.png)
 
 
 
-1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**，然后点按&#x200B;**[!UICONTROL 关闭]**&#x200B;以返回到资产文件夹。
+1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存]**，然后选择&#x200B;**[!UICONTROL 关闭]**&#x200B;以返回到资产文件夹。
 
-## 从文件夹删除图像配置文件 {#removing-an-image-profile-from-folders}
+## 将图像配置文件从文件夹删除 {#removing-an-image-profile-from-folders}
 
 当您将图像配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，对文件夹中已发生的文件的任何处理均将保持不变。
 
@@ -272,17 +272,17 @@ ht-degree: 14%
 
 ### 通过Profiles用户界面将Dynamic Media图像配置文件从文件夹删除 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 图像配置文件]**。
+1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像配置文件]**。
 1. 选择要从一个或多个文件夹中删除的图像配置文件。
-1. 点按&#x200B;**[!UICONTROL 从文件夹删除处理配置文件]**，然后选择一个或多个要从中删除配置文件的文件夹，然后点按&#x200B;**[!UICONTROL 删除]**。
+1. 选择&#x200B;**[!UICONTROL 从文件夹删除处理配置文件]**，然后选择一个或多个要从中删除配置文件的文件夹，然后选择&#x200B;**[!UICONTROL 删除]**。
 
    您可以确认图像配置文件不再应用于文件夹，因为文件夹名称的下方不再显示该名称。
 
 ### 通过属性将Dynamic Media图像配置文件从文件夹删除 {#removing-image-profiles-from-folders-via-properties}
 
-1. 点按Experience Manager徽标，然后导航&#x200B;**[!UICONTROL Assets]**，然后导航到您要从中删除图像配置文件的文件夹。
-1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
+1. 选择Experience Manager徽标，然后导航&#x200B;**[!UICONTROL Assets]**，然后导航到您要从中删除图像配置文件的文件夹。
+1. 在文件夹中，选择复选标记以进行选择，然后选择&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。
-1. 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 无]**，然后点按&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 无]**，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
    如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
