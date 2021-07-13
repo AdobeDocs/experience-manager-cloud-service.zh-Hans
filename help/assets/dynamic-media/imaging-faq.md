@@ -4,9 +4,9 @@ description: 了解Adobe Sensei AI智能成像如何应用每个用户的独特�
 feature: 资产管理，演绎版
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2639'
 ht-degree: 1%
 
 ---
@@ -174,7 +174,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
-点按&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用域，则可以请求移至您自己的自定义域。 在提交技术支持票证时，发出此过渡请求。
+转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用域，则可以请求移至您自己的自定义域。 在提交技术支持票证时，发出此过渡请求。
 
 使用Dynamic Media许可证，您的第一个自定义域无需额外付费。
 
@@ -200,7 +200,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
-      单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
+      转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
 
       查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。
    1. 确认您通过Adobe使用CDN，而不是通过直接关系进行管理。
@@ -208,7 +208,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
-      单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
+      转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
 
       查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media Classic域，则可以在此过渡中请求转移到您自己的自定义域。
    1. 指示您是否希望它通过HTTP/2运行。
@@ -219,7 +219,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 1. 客户关怀团队在完成后会通知您。
 1. 为了最大限度地提高智能成像的性能，Adobe建议将生存时间(TTL)设置为24小时或更长。 TTL定义CDN缓存资产的时长。 要更改此设置，请执行以下操作：
 
-   1. 如果您使用Dynamic Media Classic，请单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。 将&#x200B;**[!UICONTROL 默认客户端缓存时间设置为Live]**&#x200B;值24或更长。
+   1. 如果您使用Dynamic Media Classic，请转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。 将&#x200B;**[!UICONTROL 默认客户端缓存时间设置为Live]**&#x200B;值24或更长。
    1. 如果您使用Dynamic Media，请按照[这些说明](config-dm.md)操作。 将&#x200B;**[!UICONTROL Expiration]**&#x200B;值设置为24小时或更长。
 
 ## 我何时才能通过智能成像启用我的帐户？ {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -239,7 +239,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 ## 如何验证智能成像是否按预期工作？{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. 在您的帐户配置了智能成像后，请在浏览器上加载Dynamic Media Classic或Adobe Experience Manager - Dynamic Media图像URL。
-1. 在浏览器中单击&#x200B;**[!UICONTROL 查看]** > **[!UICONTROL 开发人员]** > **[!UICONTROL 开发人员工具]**&#x200B;以打开Chrome开发人员窗格。 或者，选择您选择的任何浏览器开发人员工具。
+1. 在浏览器中，通过转到&#x200B;**[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]**&#x200B;打开Chrome开发人员窗格。 或者，选择您选择的任何浏览器开发人员工具。
 
 1. 确保在开发人员工具打开时禁用缓存。
 
