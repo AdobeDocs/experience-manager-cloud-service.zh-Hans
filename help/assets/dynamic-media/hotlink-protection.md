@@ -1,17 +1,17 @@
 ---
-title: 在 Dynamic Media 中激活热链接保护
+title: 在Dynamic Media中激活热链接保护
 description: 了解如何在Dynamic Media中激活热链接保护。
 feature: 资产管理
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
-# 在 Dynamic Media 中激活热链接保护 {#activating-hotlink-protection-in-dynamic-media}
+# 在Dynamic Media中激活热链接保护 {#activating-hotlink-protection-in-dynamic-media}
 
 热链接是指第三方网站使用HTML代码显示您网站中的图像时。 每次请求图片时，他们都会使用您的带宽，因为访客的浏览器直接从您的服务器访问图片。 热链接&#x200B;*protection*&#x200B;是一种方法，用于阻止其他网站直接链接到您网页上的图片、CSS或JavaScript™。 这种防护措施有助于减少您的Dynamic Media帐户下不必要的带宽使用。
 
