@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中创建和管理查看器预设。
 feature: 查看器预设，查看器
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '4236'
-ht-degree: 23%
+source-wordcount: '4233'
+ht-degree: 16%
 
 ---
 
@@ -40,13 +40,13 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ## 管理查看器预设 {#managing-viewer-presets-1}
 
-您可以通过点按&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**，在Adobe Experience Manager中添加、编辑、删除、发布、取消发布和预览查看器预设。
+您可以在Adobe Experience Manager中通过导航到&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**&#x200B;来添加、编辑、删除、发布、取消发布和预览查看器预设。
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
 >[!NOTE]
 >
->默认情况下，当您在资产的详细信息视图中选择查看器时，系统会显示15个查看器预设。 您可以提高此限制。请参阅[增加显示的查看器预设数量](#increasing-the-number-of-viewer-presets-that-display)。
+>默认情况下，当您在资产的详细信息视图中选择查看器时，系统会显示15个查看器预设。 您可以提高此限制。请参阅[增加显示](#increasing-the-number-of-viewer-presets-that-display)的查看器预设数。
 
 ### 查看器支持响应式设计的网页 {#viewer-support-for-responsive-designed-web-pages}
 
@@ -68,7 +68,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 * Apple iPad
 * Android™智能手机
 * Android™平板电脑
-* 对于视频，为[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)提供了对MP4播放的额外支持。
+* 对于视频，为[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))提供了对MP4播放的额外支持。
 
 ### 查看器预设的富媒体类型 {#rich-media-types-for-viewer-presets}
 
@@ -78,7 +78,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
  <tbody>
   <tr>
    <td><strong>轮播集</strong><br /> </td>
-   <td><p>热点或图像映射，或两者都添加到两个或更多图像的系列中。 客户可以向左或向右平移图像，然后单击图像上的热点以获取更多详细信息，或直接从网站的登陆、类别或主页进行购买。</p> </td>
+   <td><p>热点或图像映射，或两者都添加到两个或更多图像的系列中。 客户可以向左或向右平移图像，然后在图像上选择热点以获取更多详细信息，或直接从网站的登陆、类别或主页进行购买。</p> </td>
   </tr>
     <tr>
    <td><strong>尺寸</strong><br /> </td>
@@ -94,15 +94,15 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
   </tr>
   <tr>
    <td><strong>图像集</strong></td>
-   <td>在“图像集”查看器中，用户可以通过单击缩略图，查看项目的不同视图或颜色变量。此查看器还提供了用于仔细检查图像的缩放工具。</td>
+   <td>在图像集查看器中，用户可以通过选择缩略图来查看项目的不同视图或颜色变化。 此查看器还提供了用于仔细检查图像的缩放工具。</td>
   </tr>
   <tr>
    <td><strong>交互式图像</strong></td>
-   <td>热点会添加到图像的某些部分，客户随后可以单击这些部分以获取更多详细信息，或直接从网站的登陆、类别或主页购买。</td>
+   <td>热点会添加到图像的某些部分，客户随后可以选择这些部分以获取更多详细信息，或直接从网站的登陆、类别或主页购买。</td>
   </tr>
   <tr>
    <td><strong>交互式视频</strong></td>
-   <td>缩略图会添加到视频中的时间轴区段，客户随后可以单击该区段以获取更多详细信息，或直接从网站的登陆、类别或主页购买。</td>
+   <td>缩略图会添加到视频中的时间轴区段，客户随后可以选择该区段以获取更多详细信息，或直接从网站的登陆、类别或主页购买。</td>
   </tr>
   <tr>
    <td><strong>混合媒体</strong></td>
@@ -142,7 +142,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
   </tr>
   <tr>
    <td><strong>缩放</strong></td>
-   <td>用户可以通过单击该选项来缩放区域。用户可以单击相应控件来放大图像、缩小图像以及将图像重置为默认大小。</td>
+   <td>允许用户通过选择区域来放大该区域。 用户可以选择用于放大、缩小图像以及将图像重置为默认大小的控件。</td>
   </tr>
  </tbody>
 </table>
@@ -369,7 +369,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 ## 增加显示的查看器预设数 {#increasing-the-number-of-viewer-presets-that-display}
 
-Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资产时显示各种查看器预设。 您可以增加或减少显示的查看器数量。
+Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图]** > **[!UICONTROL 查看器]**&#x200B;查看资产时，会显示各种查看器预设。 您可以增加或减少显示的查看器数量。
 
 **要增加显示的查看器预设数，请执行以下操作：**
 
@@ -384,7 +384,7 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
 1. 在limit属性中，将数字更改为所需的数字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. 点按&#x200B;**[!UICONTROL 保存全部]**。
+1. 选择&#x200B;**[!UICONTROL 全部保存]**。
 
 ## 创建查看器预设 {#creating-a-new-viewer-preset}
 
@@ -400,44 +400,44 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
 
 **要创建查看器预设，请执行以下操作：**
 
-1. 点按Experience Manager左上角的Experience Manager徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
+1. 在Experience Manager左上角，选择Experience Manager徽标，然后在左边栏中，转到&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**。
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. 在“查看器预设”页面的工具栏中，点按&#x200B;**[!UICONTROL 创建]**。
-1. 在&#x200B;**[!UICONTROL 新查看器预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 预设名称]**&#x200B;字段中，输入新预设的名称。请仔细选择名称 - 在您点按&#x200B;**[!UICONTROL 创建]**&#x200B;后，这些名称将不可编辑。
+1. 在“查看器预设”页面的工具栏中，选择&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL 新查看器预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 预设名称]**&#x200B;字段中，输入新预设的名称。请仔细选择名称 — 在您选择&#x200B;**[!UICONTROL 创建]**&#x200B;后，这些名称将不可编辑。
 
    在稍后的这些步骤中保存预设时，“查看器预设”页面的“预设标题”列标题下会显示该名称。
 
-1. 在“富媒体类型”下拉菜单中，选择要创建的查看器预设类型，然后点按页面右上角的&#x200B;**[!UICONTROL 创建]**。
+1. 在“富媒体类型”下拉菜单中，选择要创建的查看器预设类型，然后在页面的右上角，选择&#x200B;**[!UICONTROL 创建]**。
 
    请参阅[查看器预设的富媒体类型](#rich-media-types-for-viewer-presets)。
 
-1. 在“查看器预设编辑器”页面上，点按&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡。
+1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡。
 1. 执行下列操作之一：
 
-   * 在&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要自定义其可视设计的组件。 或者，您也可以点按或单击查看器中的任何可视元素，以选择进行配置。
+   * 在&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要自定义其可视设计的组件。 或者，您也可以选择查看器中的任何可视化元素，以选择进行配置。
 
       通过可视编辑器，您可以查看特定属性对样式有何影响。 设置或调整任何属性，以便使用编辑器左侧的示例即时查看该属性对查看器有何影响。
 
-      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的“自定义&#x200B;*`<viewer name>`*&#x200B;查看器”帮助主题中介绍了每种类型查看器预设的CSS样式属性。 例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) ，以获取每个属性的列表和说明。
+      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的“自定义&#x200B;*`<viewer name>`*&#x200B;查看器”帮助主题中介绍了每种类型查看器预设的CSS样式属性。 例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)以获取每个属性的列表和说明。
 
-   * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到Experience Manager资产。 要查找上传的CSS文件并将其与查看器预设关联，请点按&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单下的&#x200B;**[!UICONTROL 导入CSS]**（如有必要，请向上滚动可视编辑器以查看该文件）。
+   * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到Experience Manager资产。 要查找上传的CSS文件并将其与查看器预设关联，请选择&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单下的&#x200B;**[!UICONTROL 导入CSS]**（如有必要，请向上滚动可视编辑器以查看）。
 
       导入CSS文件时，可视编辑器会检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则必须使用在父查看器元素上定义的查看器类名称`.s7mixedmediaviewer`定义所有导入的CSS规则。
 
       只要为给定查看器正确定义CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中进行了描述。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可以工作。
    >[!NOTE]
    >
-   >如果您希望直接在其原始表单中编辑CSS，请点按“选定类型”下拉菜单下的&#x200B;**[!UICONTROL 显示/隐藏CSS]**（如有必要，请向上滚动可视编辑器以查看）。
+   >如果您希望直接在其原始表单中编辑CSS，请选择“选定类型”下拉菜单下方的&#x200B;**[!UICONTROL 显示/隐藏CSS]**（如有必要，请向上滚动可视编辑器以查看）。
    >与可视编辑器一样，当您直接在CSS中更改属性时，您可以立即查看该属性对查看器示例有何影响。 而且，该同一属性会在可视化编辑器中同时自动更新。 因此，您可以使用原始CSS编辑器或可视编辑器，或者两者交替使用。
 
    >[!NOTE]
    >
    >对于按钮图稿，选择2x图像并上传高分辨率艺术品。 使用交互式图像和购物横幅时，您还可以从各种现成的热点按钮中进行选择。
 
-1. （可选）在“编辑查看器预设”页面顶部附近，点按 **[!UICONTROL Desktop]**、 **[!UICONTROL Tablet]**&#x200B;或 **[!UICONTROL Phone]** ，为不同设备和屏幕类型唯一定义可视样式。
-1. 在“查看器预设编辑器”页面上，点按&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡。 或者，您也可以点按或单击查看器中的任何可视元素，以选择进行配置。
+1. （可选）在“编辑查看器预设”页面顶部附近，选择&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，为不同设备和屏幕类型唯一定义可视样式。
+1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL Behavior]**&#x200B;选项卡。 或者，您也可以选择查看器中的任何可视化元素，以选择进行配置。
 1. 从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要更改其行为的组件。
 
    可视化编辑器中的许多组件都有与其关联的详细说明。 当您展开组件以显示其关联参数时，这些描述会显示在蓝色框中。
@@ -449,9 +449,9 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
    >**如果您使用的是触控设备，如手机或平板电脑……**
    >
    >
-   >在文本字段中键入值后，点按用户界面中的其他位置，以提交所做的更改并关闭虚拟键盘。如果您点按 Enter，则不会执行任何操作。
+   >在文本字段中键入值后，请在用户界面的其他位置选择以提交更改并关闭虚拟键盘。 如果选择&#x200B;**[!UICONTROL Enter]**，则不会执行任何操作。
 
-1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**。
+1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL Save]**。
 1. 发布新查看器预设。 必须先发布预设，然后才能在您的网站上使用预设。
 
    请参阅[发布查看器预设](#publishing-viewer-presets)。
@@ -483,7 +483,7 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
 
 交互式视频查看器中缩略图的自动滚动行为与您选择的显示模式无关。
 
-创建或编辑交互式视频查看器预设时，您可以从“行为”选项卡访问“自动滚动”。在“行为”选项卡的&#x200B;**[!UICONTROL 选定的组件]**&#x200B;下拉菜单中，点按 **[!UICONTROL InteractiveSwatches]**。“自动滚动”复选框列在“IS 命令”文本字段的下方。
+创建或编辑交互式视频查看器预设时，您可以从“行为”选项卡访问“自动滚动”。在“行为”选项卡的&#x200B;**[!UICONTROL 选定的组件]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL InteractiveSwatches]**。 “自动滚动”复选框列在“IS 命令”文本字段的下方。
 
 如果在查看器预设中禁用&#x200B;**[!UICONTROL 自动滚动]**（清除复选框），则在用户播放视频时，该面板仅显示整个视频长度的第一个缩略图。但是，如果需要，用户可以使用向上和向下箭头图标手动滚动缩略图。
 
@@ -516,16 +516,16 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
 
 |  | **描述** | **操作** |
 |---|---|---|
-| **[!UICONTROL 热点图标]** | 更改用于热点的图标 | 要更改热点图标图像，请在&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选定组件]**&#x200B;中，点按&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL 图标]**&#x200B;下，选择&#x200B;**[!UICONTROL 背景]**，然后在&#x200B;**[!UICONTROL 图像]**&#x200B;字段中导航到所需的背景图像。 |
+| **[!UICONTROL 热点图标]** | 更改用于热点的图标 | 要更改热点图标图像，请在&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选定组件]**&#x200B;中，选择&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL 图标]**&#x200B;下，选择&#x200B;**[!UICONTROL 背景]**，然后在&#x200B;**[!UICONTROL 图像]**&#x200B;字段中导航到所需的背景图像。 |
 
-## 激活或取消激活查看器预设 {#activating-or-deactivating-viewer-presets}
+## 激活或停用查看器预设 {#activating-or-deactivating-viewer-presets}
 
 用户界面中可用的查看器预设取决于哪些查看器预设在创作模式下处于活动状态。 默认情况下，查看器预设在创建后为“开启”。 如果关闭预设，则在“创作”模式下看不到该预设。 如果发布了预设，则无论是打开还是关闭预设，都会始终发布预设。 如果列表变得过于庞大或您不希望某个查看器预设可供使用，请停用查看器预设。
 
 **要激活或停用查看器预设，请执行以下操作：**
 
-1. 点按Experience Manager左上角的Experience Manager徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
-1. 在“查看器预设”页面的&#x200B;**[!UICONTROL 状态]**&#x200B;列标题下，点按切换开关以激活或停用查看器预设。
+1. 在Experience Manager的左上角，选择Experience Manager徽标，然后在左边栏中，选择&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**。
+1. 在“查看器预设”页面的&#x200B;**[!UICONTROL 状态]**&#x200B;列标题下，选择切换开关以激活或停用查看器预设。
 
    已激活的查看器预设在右侧蓝色框中显示切换开关；已停用的查看器预设的切换开关会显示在灰色浅框中的左侧。
 
@@ -541,14 +541,14 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
 
 **要发布查看器预设，请执行以下操作：**
 
-1. 点按Experience Manager左上角的Experience Manager徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
+1. 在Experience Manager的左上角，选择Experience Manager徽标，然后在左边栏中，选择&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
 1. 选择要发布的一个或多个查看器预设。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
 
-## 为查看器预设排序 {#sorting-viewer-presets}
+## 对查看器预设进行排序 {#sorting-viewer-presets}
 
-1. 点按Experience Manager左上角的Experience Manager徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
-1. 单击&#x200B;**[!UICONTROL 预设标题]**、**[!UICONTROL 类型]**、**[!UICONTROL 已发布]**&#x200B;或&#x200B;**[!UICONTROL 状态]**&#x200B;来按列标题进行排序。例如，单击&#x200B;**[!UICONTROL 类型]**&#x200B;按字母顺序或反向字母顺序对查看器预设类型进行排序。
+1. 在Experience Manager的左上角，选择Experience Manager徽标，然后在左边栏中，选择&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
+1. 选择&#x200B;**[!UICONTROL 预设标题]**、**[!UICONTROL 类型]**、**[!UICONTROL 已发布]**&#x200B;或&#x200B;**[!UICONTROL 状态]**&#x200B;按列标题排序。 例如，选择&#x200B;**[!UICONTROL 类型]**，按字母顺序或反向字母顺序对查看器预设类型进行排序。
 
 ## 编辑查看器预设 {#editing-viewer-presets}
 
@@ -556,17 +556,17 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
 
 **要编辑查看器预设，请执行以下操作：**
 
-1. 点按Experience Manager左上角的Experience Manager徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
+1. 在Experience Manager的左上角，选择Experience Manager徽标，然后在左边栏中，选择&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**。
 1. 选中查看器预设标题左侧的框以选择预设。
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 编辑]**。
 1. 在&#x200B;**[!UICONTROL 查看器预设编辑器]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 外观]**&#x200B;和&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡上的选项对查看器预设进行所需的更改。
 
-   在“查看器预设编辑器”页面左上角附近的&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡中，点按&#x200B;**[!UICONTROL 桌面]**、**[!UICONTROL 平板电脑]**&#x200B;或&#x200B;**[!UICONTROL 手机]**，以更改资产的显示模式。
+   从“查看器预设编辑器”页面左上角附近的&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**&#x200B;以更改资产的显示模式。
 
 1. 在页面的右上角附近，执行下列操作之一：
 
-   * 点按&#x200B;**[!UICONTROL Save]**&#x200B;以保存所做更改并返回到“查看器预设”页面。
-   * 点按&#x200B;**[!UICONTROL 取消]**，撤消您所做的任何更改并返回到“查看器预设”页面。
+   * 选择&#x200B;**[!UICONTROL Save]**&#x200B;以保存所做更改并返回到“查看器预设”页面。
+   * 选择&#x200B;**[!UICONTROL 取消]**&#x200B;可撤消您所做的任何更改并返回到“查看器预设”页面。
 
 ## 删除自定义查看器预设 {#deleting-custom-viewer-presets}
 
@@ -574,17 +574,17 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
 
 **要删除自定义查看器预设，请执行以下操作：**
 
-1. 点按Experience Manager左上角的Experience Manager徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
-1. 在“查看器预设”页面中，选中预设标题，然后点按&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;图标。
-1. 点按&#x200B;**[!UICONTROL 删除]**。
+1. 在Experience Manager的左上角，选择Experience Manager徽标，然后在左边栏中，选择&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**。
+1. 在“查看器预设”页面中，选中预设标题，然后选择&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;图标。
+1. 选择&#x200B;**[!UICONTROL Delete]**。
 
-## 将查看器预设应用到资产 {#applying-a-viewer-preset-to-an-asset}
+## 将查看器预设应用于资产 {#applying-a-viewer-preset-to-an-asset}
 
 如果已发布资产和选定的查看器，则在选择查看器预设后 **[!UICONTROL 将显示]** “ **[!UICONTROL URL]** ”和“嵌入”按钮。
 
 **要将查看器预设应用到资产，请执行以下操作：**
 
-1. 打开资产，然后点按页面左上角附近的下拉菜单，然后选择&#x200B;**[!UICONTROL 查看器]**。
+1. 打开资产，在页面的左上角附近，选择下拉菜单，然后选择&#x200B;**[!UICONTROL 查看器]**。
 
    >[!NOTE]
    >
@@ -596,6 +596,6 @@ Experience Manager在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x
 
 ## 使用查看器预设传送资产 {#delivering-assets-with-viewer-presets}
 
-要获取查看器预设的 URL，请参阅[将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。另请参阅[将视频查看器嵌入网页](/help/assets/dynamic-media/embed-code.md)。
+要获取查看器预设的URL，请参阅[将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 另请参阅[在网页上嵌入视频查看器](/help/assets/dynamic-media/embed-code.md)。
 
 如果您使用Experience Manager作为WCM，则可以直接在页面上使用查看器预设添加资产。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
