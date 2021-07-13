@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager中的实施阶段
 description: 本页概述Cloud Acceleration Manager中的实施阶段。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '610'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,14 @@ ht-degree: 2%
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
 
-1. 此时将显示一个内容轮播，其中包含迁移历程的此阶段的相关信息。
+1. 内容轮播显示迁移历程的这一阶段的相关信息。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## 使用代码重构卡 {#code-refactoring}
 
-“代码重构”活动卡片提供了所有相关信息，并突出显示了在移动到AEM as a Cloud Service时需要查看的代码重构区域。
+“代码重构”活动卡片提供了所有相关信息，并突出显示了在移动到AEM as a Cloud Service时需要查看和解析的代码重构区域。
 
 请按照以下部分来浏览代码重构活动卡：
 
@@ -70,7 +70,7 @@ AEM as a Cloud Service部署卡提供了所有相关内容，可帮助您将代�
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
-1. 此时将显示一个内容轮播，其中包含迁移历程的此阶段的相关信息。
+1. 内容轮播显示迁移历程的这一阶段的相关信息。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
@@ -85,16 +85,19 @@ AEM as a Cloud Service部署卡提供了所有相关内容，可帮助您将代�
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
-1. 此时将显示一个内容轮播，其中包含迁移历程的此阶段的相关信息。
+1. 内容轮播显示迁移历程的这一阶段的相关信息。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >在使用内容传输工具之前，请查看[先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)和[最佳实践和准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)。
 
-### 估算内容传输工具活动 {#calculating}
+### 估计内容传输时间 {#calculating}
 
 提供了新的内容传输工具计算器，用于估算完成内容传输活动可能需要多长时间。 您可以使用内容存储库大小滑块选择适用于您的项目的大小。 对于提取和摄取阶段，传输时间会有所不同。
+
+>[!NOTE]
+>这些时间只是估计。 这些估计中没有考虑网络速度和扩展实例的时间等因素。
 
 要估计AEM存储库的大小，可以在`http://HOST:PORT/etc/reports/diskusage.html`下运行“Disk Usage（磁盘使用情况）”报告。
 
@@ -102,4 +105,4 @@ AEM as a Cloud Service部署卡提供了所有相关内容，可帮助您将代�
 
 ## 下一步 {#whats-next}
 
-了解如何登录Cloud Acceleration Manager以及如何利用实施阶段后，您现在可以继续查看下一步： [使用上线阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)。
+了解如何登录Cloud Acceleration Manager以及如何利用实施阶段后，您现在可以继续查看[上线阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)中的下一步。
