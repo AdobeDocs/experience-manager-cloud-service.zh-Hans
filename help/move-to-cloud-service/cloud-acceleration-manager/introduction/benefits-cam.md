@@ -1,9 +1,9 @@
 ---
 title: 使用Cloud Acceleration Manager的好处
 description: 本页重点介绍使用Cloud Acceleration Manager的主要优势。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-了解了Cloud Acceleration Manager的概念后，您即可使用和Cloud Acceleration Manager快速入门。
+了解了Cloud Acceleration Manager的概念后，您现在可以使用和[Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)快速入门。
