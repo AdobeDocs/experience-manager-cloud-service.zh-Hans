@@ -1,10 +1,7 @@
 ---
 title: Cloud Acceleration Manager快速入门
 description: 本页概述如何使用和开始使用Cloud Acceleration Manager。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
@@ -12,7 +9,7 @@ ht-degree: 3%
 ---
 
 
-# Cloud Acceleration Manager {#get-started-cam}快速入门
+# Cloud Acceleration Manager快速入门 {#get-started-cam}
 
 Cloud Acceleration Manager(CAM)是一款基于云的免费应用程序，可评估客户当前的AEM实施，并帮助按照Adobe推荐的迁移方法管理其作为Cloud Service的AEM历程。
 
@@ -37,7 +34,7 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### 在Cloud Acceleration Manager中创建和管理项目{#create-project}
+### 在Cloud Acceleration Manager中创建和管理项目 {#create-project}
 
 云加速管理器(CAM)的登陆页面允许您创建和编辑多个项目。
 
@@ -62,11 +59,11 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
-## 管理项目{#manage-project}
+## 管理项目 {#manage-project}
 
 您可以编辑项目名称、描述、缩略图图像或删除项目。
 
-### 编辑项目{#edit-project}
+### 编辑项目 {#edit-project}
 
 请按照以下步骤编辑项目：
 
@@ -80,7 +77,7 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
 
 1. 单击&#x200B;**Update**&#x200B;以提交更改。
 
-### 删除项目{#delete-project}
+### 删除项目 {#delete-project}
 
 请按照以下步骤删除您的项目：
 
@@ -90,6 +87,6 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
 
 1. 单击&#x200B;**Delete**&#x200B;以确认该步骤。
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在即可继续查看下一步（使用就绪阶段）。
