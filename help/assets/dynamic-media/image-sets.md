@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用图像集。
 feature: 图像集
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 28%
+source-wordcount: '2044'
+ht-degree: 23%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->有关Assets用户界面的信息，请参阅[使用触屏UI](/help/assets/manage-digital-assets.md)管理资产。
+>有关资产用户界面的信息，请参阅[使用触屏UI](/help/assets/manage-digital-assets.md)管理资产。
 
 ## 快速入门：图像集 {#quick-start-image-sets}
 
@@ -49,7 +49,7 @@ ht-degree: 28%
 
    在图像集中，用户在图像集查看器中单击缩略图图像。
 
-   要在资产中创建图像集，请点按或单击&#x200B;**[!UICONTROL 创建>图像集]**。 然后，添加图像并单击&#x200B;**[!UICONTROL 保存]**。
+   要在资产中创建图像集，请选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 图像集]**。 然后，添加图像并单击&#x200B;**[!UICONTROL 保存]**。
 
    请参阅[准备要上传的图像集资产和上传文件](#uploading-assets-in-image-sets)。
 
@@ -59,12 +59,12 @@ ht-degree: 28%
 
    管理员可以创建或修改图像集查看器预设。要查看带有查看器预设的图像集，请选择该图像集，然后在左边栏下拉列表中，选择&#x200B;**[!UICONTROL 查看器]**。
 
-   要创建或编辑查看器预设，请参阅&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
+   要创建或编辑查看器预设，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**。
 
 1. （可选）[查看使用批集预设创建的图像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)。
 1. [预览图像集](/help/assets/dynamic-media/previewing-assets.md)。
 
-   选择图像集后，您便可以预览该图像集。要在选定的查看器中检查图像集，请点按缩略图图标。 您可以从左边栏下拉列表提供的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
+   选择图像集后，您便可以预览该图像集。要在选定的查看器中检查图像集，请选择缩略图图标。 您可以从左边栏下拉列表提供的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
 
 1. [发布图像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
@@ -76,13 +76,13 @@ ht-degree: 28%
 
    选择图像集，然后在左边栏下拉列表中，选择&#x200B;**[!UICONTROL 查看器]**。
 
-   请参 [阅将图像集链接到网页和嵌入视](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 频查看器或图像查看器 [](/help/assets/dynamic-media/embed-code.md)。
+   请参阅[将图像集关联到网页](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)和[嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
 要编辑图像集，请参阅[编辑图像集](#editing-image-sets)。 此外，您还可以查看和编辑[图像集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-如果您在创建集时遇到问题，请参阅[疑难解答Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的图像和集。
+如果在创建集时遇到问题，请参阅[Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)疑难解答中的图像和集。
 
-## 为图像集上传资产 {#uploading-assets-in-image-sets}
+## 上传图像集的资产 {#uploading-assets-in-image-sets}
 
 首先为图像集上传图像资产。 请记住，用户可以在图像集查看器中缩放图像。 因此，请仔细选择您的图像。 确保图像的最大大小至少为2000像素，以优化缩放详细信息。 Dynamic Media每幅可渲染多达2500万像素的图像。 例如，您可以使用5000x5000万像素图像或任何其他大小组合，最多2500万像素。
 
@@ -125,8 +125,8 @@ ht-degree: 28%
 
 **要创建图像集，请执行以下操作：**
 
-1. 在Adobe Experience Manager中，点按Experience Manager徽标以访问全局导航控制台。
-1. 点按&#x200B;**[!UICONTROL 导航>资产]**。 导航到要创建图像集的位置，然后点按创建 **[!UICONTROL >图像集]** ，以打开“图像集编辑器”页。
+1. 在Adobe Experience Manager中，选择Experience Manager徽标以访问全局导航控制台。
+1. 点按&#x200B;**[!UICONTROL 导航]** > **[!UICONTROL 资产]**。 导航到要创建图像集的位置，然后转到&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 图像集]**&#x200B;以打开“图像集编辑器”页。
 
    您还可以从包含资产的文件夹中创建旋转集。
 
@@ -138,12 +138,12 @@ ht-degree: 28%
 
 1. 执行以下操作之一：
 
-   * 在“图像集编辑器”页面的左上角附近，点按&#x200B;**[!UICONTROL 添加资产]**。
+   * 在“图像集编辑器”页面的左上角附近，选择&#x200B;**[!UICONTROL 添加资产]**。
 
-   * 在“图像集编辑器”页面的中间附近，点按&#x200B;**[!UICONTROL 点按以打开资产选择器]**。
-   点按以选择要包含在图像集中的资产。 选定资产上有一个复选标记图标。 完成后，在页面的右上角附近，点按&#x200B;**[!UICONTROL 选择]**。
+   * 在“图像集编辑器”页面的中间附近，选择&#x200B;**[!UICONTROL 点按以打开资产选择器]**。
+   点按以选择要包含在图像集中的资产。 选定资产上有一个复选标记图标。 完成后，在页面的右上角附近，选择&#x200B;**[!UICONTROL Select]**。
 
-   借助资产选择器，您可以通过键入关键字并点按或单击&#x200B;**[!UICONTROL 返回]**&#x200B;来搜索资产。您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后点按工具栏中的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。 点按“视图”图标并选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;可更改视图。
+   借助资产选择器，您可以通过键入关键字并选择&#x200B;**[!UICONTROL Return]**&#x200B;来搜索资产。 您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后选择工具栏中的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。 选择“视图”图标，然后选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;以更改视图。
 
    请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
@@ -159,12 +159,12 @@ ht-degree: 28%
 
 1. （可选）执行以下操作之一：
 
-   * 要删除图像，请选择该图像，然后点按&#x200B;**[!UICONTROL 删除资产]**。
+   * 要删除图像，请选择该图像，然后选择&#x200B;**[!UICONTROL 删除资产]**。
 
-   * 要应用预设，请点按页面右上角附近的&#x200B;**[!UICONTROL 预设]**，然后选择要同时应用于所有资产的预设。
+   * 要应用预设，请在页面右上角附近选择&#x200B;**[!UICONTROL 预设]**，然后选择要同时应用于所有资产的预设。
    >[!NOTE]
    >
-   >创建图像集时，可以更改图像集缩略图。 或者，您也可以让Experience Manager根据图像集中的资产自动选择缩略图。 要选择缩略图，请点按“图像集编辑器”页面中“标题”字段上方的&#x200B;**[!UICONTROL 更改缩略图]**。然后，选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从图像集中生成缩略图，请选择&#x200B;**[!UICONTROL 切换到]** **[!UICONTROL 自动缩略图]**。
+   >创建图像集时，可以更改图像集缩略图。 或者，您也可以让Experience Manager根据图像集中的资产自动选择缩略图。 要选择缩略图，请在“图像集编辑器”页面的“标题”字段上方选择&#x200B;**[!UICONTROL 更改缩略图]**。 然后，选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从图像集中生成缩略图，请选择&#x200B;**[!UICONTROL 切换到]** **[!UICONTROL 自动缩略图]**。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。您新创建的图像集会显示在创建时所用的文件夹中。
 
@@ -178,7 +178,7 @@ ht-degree: 28%
 
 但是，使用批集预设创建的集合，请&#x200B;*不*&#x200B;显示在用户界面中。 您可以通过三种不同方式查看这些集。 （即使您是在用户界面中创建图像集，这些方法也可用）。
 
-* 打开资产的属性。 属性指示引用选定资产或其成员的集。 要查看整个集，请点按集名称。
+* 打开资产的属性。 属性指示引用选定资产或其成员的集。 要查看整个集，请选择集名称。
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
@@ -210,27 +210,27 @@ ht-degree: 28%
 
 1. 执行以下任一操作：
 
-   * 将鼠标悬停在图像集资产上，然后点按&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
-   * 将鼠标悬停在图像集资产上，点按&#x200B;**[!UICONTROL 选择]**（复选标记图标），然后点按工具栏中的&#x200B;**[!UICONTROL 编辑]**。
-   * 点按图像集资产，然后点按工具栏中的&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
+   * 将鼠标悬停在图像集资产上，然后选择&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
+   * 将鼠标悬停在图像集资产上，选择&#x200B;**[!UICONTROL 选择]**（复选标记图标），然后在工具栏中选择&#x200B;**[!UICONTROL 编辑]**。
+   * 点按图像集资产，然后选择工具栏中的&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
 
 1. 要编辑图像集中的图像，请执行以下任意操作：
 
    * 要对资产重新排序，请将图像拖到新位置（选择重新排序图标以移动项目）。
    * 要按升序或降序对项目进行排序，请单击列标题。
-   * 要添加资产或更新现有资产，请单击&#x200B;**[!UICONTROL 添加资产]**。 导航到资产，将其选中，然后点按页面右上角附近的&#x200B;**[!UICONTROL 选择]**。
+   * 要添加资产或更新现有资产，请单击&#x200B;**[!UICONTROL 添加资产]**。 导航到资产，将其选中，然后选择页面右上角附近的&#x200B;**[!UICONTROL 选择]**。
 
       >[!NOTE]
       >
       >如果您通过将Experience Manager用作缩略图的图像替换为其他图像来删除图像，则仍会显示原始资产。
-   * 要删除资产，请选择该资产，然后点按或单击&#x200B;**[!UICONTROL 删除资产]**。
-   * 要应用预设，请点按页面右上角附近的&#x200B;**[!UICONTROL 预设]**，然后选择查看器预设。
-   * 要添加或更改缩略图，请选择资产右侧的缩略图图标。 导航到新的缩略图或色板资产，将其选中，然后点按&#x200B;**[!UICONTROL 选择]**。
-   * 要删除整个图像集，请导航到该图像集，将其选中，然后点按&#x200B;**[!UICONTROL Delete]**。
+   * 要删除资产，请选择该资产，然后选择&#x200B;**[!UICONTROL 删除资产]**。
+   * 要应用预设，请在页面右上角附近选择&#x200B;**[!UICONTROL 预设]**，然后选择查看器预设。
+   * 要添加或更改缩略图，请选择资产右侧的缩略图图标。 导航到新的缩略图或色板资产，将其选中，然后选择&#x200B;**[!UICONTROL 选择]**。
+   * 要删除整个图像集，请导航到该图像集，将其选中，然后选择&#x200B;**[!UICONTROL Delete]**。
 
    >[!NOTE]
    >
-   >您可以编辑图像集中的图像。 导航到该集，然后点按左边栏中的&#x200B;**[!UICONTROL 设置成员]**。 要打开编辑窗口，请点按资产上的铅笔图标。
+   >您可以编辑图像集中的图像。 导航到该集，然后在左边栏中选择&#x200B;**[!UICONTROL Set Members]**。 要打开编辑窗口，请选择资产上的铅笔图标。
 
 1. 完成编辑后，点按&#x200B;**[!UICONTROL Save]**。
 
