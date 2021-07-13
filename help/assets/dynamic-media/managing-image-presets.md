@@ -1,13 +1,13 @@
 ---
 title: 管理图像预设
-description: “了解图像预设以及如何创建、修改和管理图像预设。”
+description: 了解图像预设以及如何创建、修改和管理图像预设。
 feature: 图像预设，查看器，演绎版
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '3652'
-ht-degree: 26%
+source-wordcount: '3634'
+ht-degree: 22%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 26%
 
 ## 管理图像预设 {#managing-image-presets-1}
 
-您可以通过点按或单击Experience Manager徽标以访问全局导航控制台，然后点按或单击工具图标，然后导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**&#x200B;来管理Experience Manager预设。
+您可以在Experience Manager中管理图像预设，方法是选择Experience Manager徽标以访问全局导航控制台，然后选择工具图标，并导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**。
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -51,7 +51,7 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 演绎版]**&#x200B;时，系统会显示各种演绎版。 您可以增加或减少显示的图像预设数。 请参阅[增加显示](#increasing-or-decreasing-the-number-of-image-presets-that-display)的图像预设数。
+>当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 演绎版]**&#x200B;时，系统会显示各种演绎版。 您可以增加或减少显示的图像预设数。 请参阅[增加显示的图像预设数](#increasing-or-decreasing-the-number-of-image-presets-that-display)。
 
 ### Adobe Illustrator(AI)、PostScript®(EPS)和PDF文件格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -62,11 +62,11 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager资产�
 * Adobe Illustrator文档由包含多层的单个页面组成。 每个层都作为PNG子资产提取，位于主Illustrator资产下。
 * PDF文档由一个或多个页面组成。 每个页面都作为单页PDF子资产提取，位于主多页PDF文档下。
 
-子资产由整个`DAM Update Asset`工作流中的`Create Sub Asset process`组件创建。 要在工作流中查看此流程组件，请点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**。
+子资产由整个`DAM Update Asset`工作流中的`Create Sub Asset process`组件创建。 要在工作流中查看此流程组件，请导航至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**。
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-在打开资产时，您可以查看子资产或页面，点按内容菜单，然后选择&#x200B;**[!UICONTROL 子资产]**&#x200B;或&#x200B;**[!UICONTROL 页面]**。 子资产是真实资产。 即，PDF页面由`Create Sub Asset`工作流组件提取。 然后，它们将作为`page1.pdf`、`page2.pdf`等存储在主资产的下方。 存储完这些值后，`DAM Update Asset`工作流会处理它们。
+打开资产时，您可以查看子资产或页面，选择内容菜单，然后选择&#x200B;**[!UICONTROL 子资产]**&#x200B;或&#x200B;**[!UICONTROL 页面]**。 子资产是真实资产。 即，PDF页面由`Create Sub Asset`工作流组件提取。 然后，它们将作为`page1.pdf`、`page2.pdf`等存储在主资产的下方。 存储完这些值后，`DAM Update Asset`工作流会处理它们。
 
 要使用Dynamic Media预览AI、EPS或PDF文件并生成动态呈现，需要执行以下处理步骤：
 
@@ -87,7 +87,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager资产�
 
 可通过`DAM Update Asset`工作流访问`Rasterize PDF/AI Image Preview Rendition`流程组件选项。
 
-点按左上角的Adobe Experience Manager，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。 在“工作流模型”页面中，选择&#x200B;**[!UICONTROL DAM更新资产]**，然后在工具栏中点按&#x200B;**[!UICONTROL 编辑]**。 在DAM更新资产工作流页面上，双击`Rasterize PDF/AI Image Preview Rendition`流程组件以打开其步骤属性对话框。
+在左上角的Adobe Experience Manager上选择，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。 在“工作流模型”页面中，选择&#x200B;**[!UICONTROL DAM更新资产]**，然后在工具栏中选择&#x200B;**[!UICONTROL 编辑]**。 在DAM更新资产工作流页面上，双击`Rasterize PDF/AI Image Preview Rendition`流程组件以打开其步骤属性对话框。
 
 #### 栅格化PDF/AI图像预览呈现版本选项 {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -114,7 +114,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager资产�
 
 对于InDesign文件，仅当Adobe InDesign Server与Experience Manager集成时，才会提取子资产。 引用的资产会根据其元数据进行关联。 InDesign Server不是链接所必需的。 但是，在为要在Experience Manager文件和引用的InDesign之间创建的链接处理资产文件之前，引用的InDesign必须存在于资产中。
 
-<!-- See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
 `DAM Update Asset`工作流中的媒体提取流程组件运行多个预配置的扩展脚本以处理InDesign文件。
 
@@ -127,8 +127,8 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 | ExtendScript名称 | 默认 | 描述 |
 |---|---|---|
-| ThumbnailExport.jsx | 是 | 生成300 ppi `thumbnail.jpg`呈现版本，该呈现版本经过优化并由`Dynamic Media Process Image Assets`流程组件转换为PTIFF呈现版本。 |
-| JPEGPagesExport.jsx | 是 | 为每个页面生成300 ppi JPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 它还通过`DAM Update Asset`工作流进行了优化并转换为PTIFF。 |
+| ThumbnailExport.jsx | 是 | 生成300 PPI `thumbnail.jpg`呈现版本，该呈现版本经过优化并由`Dynamic Media Process Image Assets`流程组件转换为PTIFF呈现版本。 |
+| JPEGPagesExport.jsx | 是 | 为每个页面生成300 PPI JPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 它还通过`DAM Update Asset`工作流进行了优化并转换为PTIFF。 |
 | PDFPagesExport.jsx | 否 | 为每个页面生成PDF子资产。 PDF子资产会按照前面所述进行处理。 由于PDF仅包含单个页面，因此不会生成子资产。 |
 
 ### 配置图像缩略图大小 {#configuring-image-thumbnail-size}
@@ -137,7 +137,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 在 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中，缩略图由图像服务器生成，此配置与应用于&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤的配置无关。通过&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤生成缩略图是创建缩览图最耗时、内存占用最多的方法。
 
-缩略图大小按以下格式定义：**[!UICONTROL width:height:center]**，例如&#x200B;*80:80:false*。 宽度和高度决定缩略图的大小（以像素为单位）。 中心值为false或true。 如果设置为true，则表示缩略图的大小与配置中给定的大小完全相同。 如果调整大小的图像较小，则图像将居中在缩略图中。
+缩略图大小按以下格式定义：**[!UICONTROL width:height:center]**，例如`80:80:false`。 宽度和高度决定缩略图的大小（以像素为单位）。 中心值为false或true。 如果设置为true，则表示缩略图的大小与配置中给定的大小完全相同。 如果调整大小的图像较小，则图像将居中在缩略图中。
 
 >[!NOTE]
 >
@@ -150,20 +150,20 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 
 
-**配置图像缩略图大小**
+**要配置图像缩略图大小，请执行以下操作：**
 
-1. 点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**。
-1. 点按&#x200B;**[!UICONTROL Dynamic Media处理图像资产]**&#x200B;步骤，然后点按&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**。
+1. 选择&#x200B;**[!UICONTROL Dynamic Media处理图像资产]**&#x200B;步骤，然后选择&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡。 根据需要更改缩略图大小，然后选择&#x200B;**[!UICONTROL 确定]**。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. 点按&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤，然后点按&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡。根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
+1. 选择&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤，然后选择&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡。 根据需要更改缩略图大小，然后选择&#x200B;**[!UICONTROL 确定]**。
 
    >[!NOTE]
    >
    >**[!UICONTROL 流程缩略图]**&#x200B;步骤的缩略图参数中的值必须与 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中的缩略图参数相匹配。
 
-1. 点按&#x200B;**[!UICONTROL 保存]**&#x200B;以保存对工作流所做的更改。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存对工作流所做的更改。
 
 ### 增加或减少显示的图像预设数 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -182,11 +182,11 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. 在limit属性中，将数字更改为所需的数字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. 点按&#x200B;**[!UICONTROL 保存全部]**。
+1. 选择&#x200B;**[!UICONTROL 全部保存]**。
 
 ### 创建图像预设 {#creating-image-presets}
 
-通过创建图像预设，您可以在预览或发布图像时将这些设置应用到任何图像。
+创建图像预设，以便在预览或发布图像时能够始终如一地跨图像应用设置。
 
 >[!NOTE]
 >
@@ -202,8 +202,8 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 **要创建图像预设，请执行以下操作：**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**。
-1. 单击&#x200B;**[!UICONTROL 创建]**。此时将打开&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口。
+1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**。
+1. 选择&#x200B;**[!UICONTROL 创建]**。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -211,15 +211,15 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
    >
    >要使此图像预设具有响应性，请擦除&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;字段中的值，并将其留空。
 
-1. 根据需要，在&#x200B;**[!UICONTROL 基本]**&#x200B;和&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中输入值，包括名称。图像预设选项中概 [述了这些选项](#image-preset-options)。 预设显示在左窗格中，并可以与其他资产一起动态使用。
+1. 在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中，根据需要在&#x200B;**[!UICONTROL 基本]**&#x200B;和&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中输入值，包括名称。 图像预设选项中概 [述了这些选项](#image-preset-options)。 预设显示在左窗格中，并可以与其他资产一起动态使用。
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 ### 创建响应式图像预设 {#creating-a-responsive-image-preset}
 
-要创建响应式图像预设，请执行[创建图像预设](#creating-image-presets)中的步骤。在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请清除这两个字段的值，并将其保留为空。
+要创建响应式图像预设，请执行[创建图像预设](#creating-image-presets)中的步骤。 在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请清除这两个字段的值，并将其保留为空。
 
 将它们留空会告知Experience Manager此图像预设是响应式的。 您可以视需要调整其他值。
 
@@ -231,7 +231,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 >
 >图像预设和图像资产会自动发布。
 
-### “图像预设”选项 {#image-preset-options}
+### 图像预设选项 {#image-preset-options}
 
 在创建或编辑图像预设时，您可以使用本节介绍的几种选项。此外，Adobe还建议从以下“最佳实践”选项开始：
 
@@ -243,49 +243,12 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 #### “基本”选项卡选项 {#basic-tab-options}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>字段</strong></td>
-   <td><strong>描述</strong></td>
-  </tr>
-  <tr>
-   <td><strong>名称</strong></td>
-   <td>输入一个描述性名称，不加任何空格。为帮助用户识别此图像预设，请在名称中包含图像大小规范。</td>
-  </tr>
-  <tr>
-   <td><strong>宽度和高度</strong></td>
-   <td>输入传送图像时所用的像素大小。宽度和高度必须大于 0 像素。如果任一值为 0，则无法创建预设。如果两个值均为空，则表示已经创建了响应式图像预设。</td>
-  </tr>
-  <tr>
-   <td><strong>格式</strong></td>
-   <td><p>从菜单中选择一个格式。</p> <p>选择<strong>JPEG</strong>可提供以下其他选项：</p>
-    <ul>
-     <li><strong>质量</strong>  — 控制JPEG压缩级别。此设置会影响文件大小和图像质量。JPEG质量比例为1-100。拖动滑块时，比例可见。</li>
-     <li><strong>启用JPG色度缩减采样</strong>  — 由于眼睛对高频颜色信息的敏感度低于高频亮度，因此JPEG图像会将图像信息划分为亮度和颜色分量。压缩JPEG图像时，亮度分量会保留全分辨率，而颜色分量会通过平均一组像素来缩减采样。缩减采样会将数据量减少一半或三分之一，几乎不会影响感知质量。缩减采样不适用于灰度图像。此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。</li>
-    </ul>
-    <div>
-      选择 <strong>GIF</strong> 或<strong>带有 Alpha 的 GIF</strong> 可提供以下更多 <strong>GIF 颜色量化</strong>选项：
-    </div>
-    <ul>
-     <li><strong>类 </strong>型 — 选 <strong>择自适应</strong> （默认）、 <strong>Web</strong>或 <strong>Macintosh</strong>。如果选择 <strong>带Alpha的GIF</strong>，则“Macintosh”选项不可用。</li>
-     <li><strong>Dither</strong>  — 选择“ <strong></strong> 差异 <strong>”或“关”</strong>。</li>
-     <li><strong>颜色数 </strong>量 — 输入2到256之间的数字。</li>
-     <li><strong>颜色列表</strong> - 输入一个以逗号分隔的列表。例如，对于白色、灰色和黑色，输入 000000,888888,ffffff。</li>
-    </ul>
-    <div>
-      选择 <strong>PDF</strong>、<strong>TIFF</strong> 或<strong>带有 Alpha 的 TIFF</strong> 可提供以下更多选项：
-    </div>
-    <ul>
-     <li><strong>压缩</strong> - 选择一种压缩算法。PDF的算法选项有<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>;对于TIFF，它们是<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>;对于带Alpha的TIFF，为<strong>无</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li>
-    </ul> <p>如果选择 <strong>PNG</strong>、<strong>带有 Alpha 的 PNG</strong>，或者选择 <strong>EPS</strong>，则不提供其他选项。</p> </td>
-  </tr>
-  <tr>
-   <td><strong>锐化</strong></td>
-   <td>选择<strong>启用简单锐化</strong>选项可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </td>
-  </tr>
- </tbody>
-</table>
+| 字段 | 描述 |
+| --- | --- |
+| **名称** | 输入一个描述性名称，不加任何空格。为帮助用户识别此图像预设，请在名称中包含图像大小规范。 |
+| **宽度和高度** | 输入传送图像时所用的像素大小。宽度和高度必须大于 0 像素。如果任一值为 0，则无法创建预设。如果两个值均为空，则表示已经创建了响应式图像预设。 |
+| **格式** | 从菜单中选择一个格式。<br>选 **** 择JPEG可提供以下其他选项：<br>·  **质量**  - JPEG质量比例为1-100。拖动滑块时会显示该范围。<br>·启 **用JPG色度缩减采样**  — 由于眼睛对高频颜色信息的敏感度低于高频亮度，因此JPEG图像会将图像信息分为亮度和颜色分量。压缩JPEG图像时，亮度分量会保留全分辨率，而颜色分量会通过平均一组像素来缩减采样。缩减采样会将数据量减少一半或三分之一，几乎不会影响感知质量。缩减采样不适用于灰度图像。此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。<br><br>选择 **** GIF或 **带** 有Phapa的GIF可提供以下附加 **的GIF颜色** 量化选项：<br>·  **类型**  — 选择 **自适应** （默认）、 **Web**&#x200B;或 **Macintosh**。如果您选择&#x200B;**带有 Alpha 的 GIF**，则 Macintosh 选项不可用。<br>·  **Dither**  — 选择“ **** 差 **异或关**”。<br>· **颜色数量**  — 输入数字2 - 256。<br>• **颜色列表** - 输入一个以逗号分隔的列表。例如，对于白色、灰色和黑色，输入 `000000,888888,ffffff`.<br><br>选择 **PDF**、 **TIFF**&#x200B;或带 **有Alpha的TIFF** 提供了以下附加选项：<br> **压缩**  — 选择压缩算法。PDF的算法选项有&#x200B;**None**、**Zip**&#x200B;和&#x200B;**Jpeg**;对于TIFF，它们是&#x200B;**None**、**LZW**、**Jpeg**&#x200B;和&#x200B;**Zip**;对于带Alpha的TIFF，为&#x200B;**无**、**LZW**&#x200B;和&#x200B;**Zip**。<br><br>选择 **PNG**、 **带Alpha的PNG**&#x200B;或EPS不 **** 提供其他选项。 |
+| **锐化** | 选择&#x200B;**启用简单锐化**&#x200B;可在进行所有缩放后对图像应用基本锐化滤镜。 锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 |
 
 #### “高级”选项卡选项 {#advanced-tab-options}
 
@@ -424,12 +387,12 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 ### 编辑图像预设 {#modifying-image-presets}
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**。
+1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**。
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. 选择预设，然后单击&#x200B;**[!UICONTROL 编辑]**。将打开&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口。
-1. 进行更改，然后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改，或单击&#x200B;**[!UICONTROL 取消]**&#x200B;以取消更改。
+1. 选择预设，然后选择&#x200B;**[!UICONTROL 编辑]**。 此时将打开&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口。
+1. 进行更改并选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消更改。
 
 ### 发布图像预设 {#publishing-image-presets}
 
@@ -437,5 +400,6 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 ### 删除图像预设 {#deleting-image-presets}
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按或单击工具图标，然后导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**。
-1. 选择预设，然后单击&#x200B;**[!UICONTROL 删除]**。 Dynamic Media会向您确认是否要删除它。 点按&#x200B;**[!UICONTROL 删除]**&#x200B;以删除，或点按&#x200B;**[!UICONTROL 取消]**&#x200B;以中止。
+1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后选择工具图标。
+1. 导航至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**。
+1. 选择一个预设，然后选择&#x200B;**[!UICONTROL 删除]**。 Dynamic Media会向您确认是否要删除它。 选择&#x200B;**[!UICONTROL Delete]**&#x200B;以删除，或选择&#x200B;**[!UICONTROL Cancel]**&#x200B;以返回到图像预设。
