@@ -2,14 +2,14 @@
 title: 移动到 AEM as a Cloud Service
 description: 有关将 Adobe Experience Manager as a Cloud Service 作为云服务移动到 AEM 的自助资源和文档链接
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 83%
+source-wordcount: '657'
+ht-degree: 62%
 
 ---
 
-# 移动到 AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# 迁移到 AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
@@ -19,26 +19,31 @@ ht-degree: 83%
 
 ## 移动到 AEM as a Cloud Service 的好处 {#benefits-aem-moving-to-aem-guide}
 
-AEM as a Cloud Service 为 Experience Manager Sites 和 Assets 提供了可扩展、安全且敏捷的技术基础，使营销人员和 IT 部门专注于大规模交付有影响力的体验。
+AEM as a Cloud Service为Experience Manager资产、Forms和屏幕提供了可扩展、安全、灵活的技术基础，使营销人员和IT人员能够专注于大规模提供具有影响力的体验。
 
 借助 AEM as a Cloud Service，您的团队便可以将重心放在创新上面，而不是放在规划产品升级上面。新产品功能经过全面测试并且可在无任何中断的情况下交付给团队，如此一来，您的团队便可以始终访问最先进的应用程序。
 
 ## 了解过渡到云服务的流程 {#understanding-move}
 
-过渡到云服务的历程包括三个阶段 - 规划、执行和上线后。
+过渡到Cloud Service的历程包括以下阶段：
+
+* 就绪
+* 实施
+* 上线
+* 上线后
 
 要成功、顺利的过渡，您应确保进行适当的规划并遵守本指南中概述的最佳实践。
 
-下图显示了推荐的过渡到云服务的历程的示意图。
+下图显示了推荐的过渡历程以AEM as aCloud Service的示意图。
 
-![图像](/help/move-to-cloud-service/assets/home-img1.png)
+![图像](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
 
-进一步了解过渡到云服务的历程中所包含的不同阶段：
 
-* **[规划](/help/move-to-cloud-service/planning.md)**
-* **[执行](/help/move-to-cloud-service/execution.md)**
-* **[上线后](/help/move-to-cloud-service/post-go-live.md)**
+## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
+Cloud Acceleration Manager是一个基于云的应用程序，旨在引导您的IT团队完成从规划到上线的整个过渡历程。Cloud Service 通过Adobe推荐的最佳实践、提示、文档和工具，为成功的迁移设置团队，以便在到AEM作为Cloud Service的历程的每个阶段提供帮助。
+
+请参阅Cloud Acceleration Manager快速入门，以开始您的迁移历程。
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
@@ -52,6 +57,7 @@ AEM as a Cloud Service 为 Experience Manager Sites 和 Assets 提供了可扩�
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
+| [Screens用户指南](/help/screens-cloud/home.md) | 了解如何将Experience Manager Screens用作Cloud Service并进行管理。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
