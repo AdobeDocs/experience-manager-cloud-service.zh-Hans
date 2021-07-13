@@ -1,17 +1,17 @@
 ---
-title: 传送 Dynamic Media 资产
+title: 交付Dynamic Media资产
 description: 了解如何交付Dynamic Media资产。
 feature: 资产管理
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 13%
+ht-degree: 2%
 
 ---
 
-# 传送 Dynamic Media 资产{#delivering-dynamic-media-assets}
+# 交付Dynamic Media资产{#delivering-dynamic-media-assets}
 
 如何交付Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
 
@@ -32,9 +32,9 @@ ht-degree: 13%
 
 * [将Dynamic Media Assets添加到网页](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)
-* [在 Dynamic Media 中激活热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
-* [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [为响应式网站传送优化的图像](/help/assets/dynamic-media/responsive-site.md)
+* [在Dynamic Media中激活热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
+* [将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [为响应式网站提供优化的图像](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2内容交付](/help/assets/dynamic-media/http2faq.md)
 * [通过Dynamic Media使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [通过Dynamic Media Classic使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
