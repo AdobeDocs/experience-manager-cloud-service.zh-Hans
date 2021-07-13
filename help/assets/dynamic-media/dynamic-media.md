@@ -1,16 +1,16 @@
 ---
-title: 使用 Dynamic Media
+title: 使用Dynamic Media
 description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上使用。
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 37%
+ht-degree: 35%
 
 ---
 
-# 使用 Dynamic Media {#working-with-dynamic-media}
+# 使用Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media 有助于按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况。](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)Dynamic Media使用一组主源资产，通过其全球、可扩展、性能优化的网络，实时生成并传送多种丰富内容变体。
 
