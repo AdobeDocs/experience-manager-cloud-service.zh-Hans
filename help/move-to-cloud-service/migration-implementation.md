@@ -2,10 +2,10 @@
 title: 实施阶段
 description: 实施阶段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 87%
+source-wordcount: '950'
+ht-degree: 89%
 
 ---
 
@@ -110,17 +110,4 @@ AEM Maven 项目需要进行某些更改才能与 AEM as a Cloud Service 兼容�
 
 * [部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
-## 上线准备的最佳实践 {#go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="上线准备"
->abstract="要确保AEM as a Cloud Service顺利、成功地上线，您应当规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
-
-要确保 AEM as a Cloud Service 顺利、成功地上线，应考虑执行以下步骤：
-
-* 设定代码和内容冻结期
-* 执行最终内容增补
-* 完成测试迭代
-* 运行性能和安全测试
-* 切换
