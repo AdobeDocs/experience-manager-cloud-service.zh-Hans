@@ -1,10 +1,10 @@
 ---
 title: Cloud Acceleration Manager中的上线阶段
 description: 本页概述Cloud Acceleration Manager中的上线阶段。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ GoLive阶段包括[开始运行](#go-live)。
 ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->请参阅在Cloud Acceleration Manager中创建和管理项目，以了解更多信息。
+>请参阅[在Cloud Acceleration Manager中创建和管理项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project)以了解更多信息。
 
 
 ## 使用开始使用活动卡 {#go-live}
