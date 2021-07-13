@@ -1,17 +1,17 @@
 ---
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 5%
 
 ---
 
 
 # Cloud Acceleration Manager中的就绪阶段 {#readiness-phase-cam}
 
-在Cloud Acceleration Manager中创建项目后，您现在可以开始在准备阶段运行可用的工具。
+在Cloud Acceleration Manager中创建项目后，您现在可以在准备阶段开始评估当前的AEM实施。
 
 准备阶段包括：
 
@@ -39,7 +39,10 @@ ht-degree: 4%
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 按照以下步骤下载Best Practices Analyzer(BPA)，并在AEM系统的克隆上运行它。
+1. 请按照以下步骤下载Best Practices Analyzer(BPA)。
+
+   >[!NOTE]
+   >为避免对业务关键型实例产生影响，建议您在自定义、配置、内容和用户应用程序方面尽可能接近生产环境的创作环境中运行BPA。 或者，也可以在克隆的生产“创作”环境中运行。
 
    1. 导航到[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户，并以zip文件形式下载Best Practices Analyzer。
 
@@ -82,7 +85,7 @@ ht-degree: 4%
 
 #### 报表概述 {#report-overview}
 
-此&#x200B;**报表概述**&#x200B;卡提供了报表结果，如下图所示。
+此&#x200B;**报告概述**&#x200B;信息卡提供在评估是否准备将作为Cloud Service移动到AEM时适用的报告发现结果和严重性级别，如下图所示。
 
 ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ ht-degree: 4%
 
 请按照此部分来浏览“计划和设置”活动卡。
 
-1. 单击&#x200B;**规划和设置**&#x200B;卡中的&#x200B;**查看**&#x200B;按钮，该卡提供所有相关内容，帮助您规划和设置AEM迁移。
+1. 单击&#x200B;**Planning And Setup**&#x200B;卡中的&#x200B;**View**&#x200B;按钮。 此卡提供所有相关内容，可帮助您规划和设置AEM迁移。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. 此时将显示一个内容轮播，其中包含迁移历程的此阶段的相关信息。
+1. 内容轮播显示迁移历程这一阶段的所有相关信息。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 下一步 {#whats-next}
 
-了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在可以使用[实施阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)继续查看下一步。
+了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在可以继续查看[实施阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)中的下一步。
