@@ -1,17 +1,17 @@
 ---
-title: 关于管理Dynamic Media资产
+title: 管理Dynamic Media资产
 description: 了解如何使用Dynamic Media资产。
 feature: 资产管理
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 38%
+source-wordcount: '119'
+ht-degree: 22%
 
 ---
 
-# 关于管理Dynamic Media资产 {#managing-assets}
+# 管理Dynamic Media资产 {#managing-assets}
 
 在上传Dynamic Media资产（图像、视频和交互式资产）后，管理这些资产会涉及许多任务，包括预览、下载或发布。
 
@@ -22,6 +22,6 @@ ht-degree: 38%
 以下主题介绍了管理Dynamic Media资产时可以执行的操作：
 
 * [优化图像质量的最佳实践](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [预览 Dynamic Media 资产](previewing-assets.md)
-* [发布 Dynamic Media 资产](publishing-dynamicmedia-assets.md)
+* [预览Dynamic Media资产](previewing-assets.md)
+* [发布Dynamic Media Assets](publishing-dynamicmedia-assets.md)
 * [使用选择器](working-with-selectors.md)
