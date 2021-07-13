@@ -1,17 +1,17 @@
 ---
-title: 应用 Dynamic Media 图像预设
+title: 应用Dynamic Media图像预设
 description: 了解如何在Dynamic Media中应用图像预设。
 feature: 图像预设，查看器，演绎版
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 34%
+ht-degree: 31%
 
 ---
 
-# 应用 Dynamic Media 图像预设 {#applying-image-presets}
+# 应用Dynamic Media图像预设 {#applying-image-presets}
 
 图像预设使资产能够动态传送不同大小、不同格式或具有动态生成的其他图像属性的图像。 在导出时，您可以选择预设，以根据管理员列出的规范重新设置图像格式。
 
@@ -27,7 +27,7 @@ ht-degree: 34%
 
 **要应用Dynamic Media图像预设，请执行以下操作：**
 
-1. 打开资产，然后点按左边栏中的下拉列表，然后点按&#x200B;**[!UICONTROL 演绎版]**。
+1. 打开资产，在左边栏中，选择下拉列表，然后选择&#x200B;**[!UICONTROL 演绎版]**。
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ ht-degree: 34%
 1. 执行以下操作之一：
 
    * 要预览图像预设，请选择动态演绎版。
-   * 要显示弹出窗口，请点按&#x200B;**[!UICONTROL URL]**、**[!UICONTROL Embed]**&#x200B;或&#x200B;**[!UICONTROL RESS]**。
+   * 要显示弹出窗口，请选择&#x200B;**[!UICONTROL URL]**、**[!UICONTROL Embed]**&#x200B;或&#x200B;**[!UICONTROL RESS]**。
 
    >[!NOTE]
    >
