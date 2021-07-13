@@ -1,15 +1,20 @@
 ---
 title: 上线迁移阶段
 description: 上线迁移阶段
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 819a94f3ec10268bca4ebbb30f4a6f44fb460bca
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 79%
+source-wordcount: '83'
+ht-degree: 46%
 
 ---
 
 
 # 上线 {#golive-migration}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="上线准备"
+>abstract="要确保AEM as a Cloud Service顺利、成功地上线，您应当规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
 
 要确保 AEM as a Cloud Service 顺利、成功地上线，应考虑执行以下步骤：
 
