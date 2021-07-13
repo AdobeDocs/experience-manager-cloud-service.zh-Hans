@@ -4,10 +4,10 @@ description: 了解如何在网页上嵌入Dynamic Media视频或图像资产。
 feature: 资产管理
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 30%
+ht-degree: 25%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 30%
 
 仅当&#x200B;_未_&#x200B;使用Adobe Experience Manager作为WCM时，才嵌入URL。 如果您使用Experience Manager作为WCM，请[直接在页面](adding-dynamic-media-assets-to-pages.md)中添加资产。
 
-请参阅[将URL关联到您的Web应用程序](linking-urls-to-yourwebapplication.md)。
+请参阅[将URL链接到Web应用程序](linking-urls-to-yourwebapplication.md)。
 
 请参阅[为响应式网站传送优化的图像](responsive-site.md)。
 
@@ -43,10 +43,10 @@ ht-degree: 30%
 
    请参阅[发布图像预设](managing-image-presets.md#publishing-image-presets)。
 
-1. 在左边栏中，选择下拉列表，然后点按&#x200B;**[!UICONTROL 查看器]**。
-1. 在左边栏中，点按查看器预设名称。查看器预设将应用于资产。
-1. 点按&#x200B;**[!UICONTROL 嵌入]**。
-1. 在&#x200B;**[!UICONTROL 嵌入代码]**&#x200B;对话框中，将整个代码复制到剪贴板，然后点按&#x200B;**[!UICONTROL 关闭]**。
+1. 在左边栏中，选择下拉列表，然后选择&#x200B;**[!UICONTROL 查看器]**。
+1. 在左边栏中，选择查看器预设名称。 查看器预设将应用于资产。
+1. 选择&#x200B;**[!UICONTROL Embed]**。
+1. 在&#x200B;**[!UICONTROL 嵌入代码]**&#x200B;对话框中，将整个代码复制到剪贴板，然后选择&#x200B;**[!UICONTROL 关闭]**。
 1. 将嵌入代码粘贴到网页中。
 
 ## 使用HTTP/2交付Dynamic Media资产 {#using-http-to-deliver-your-dynamic-media-assets}
