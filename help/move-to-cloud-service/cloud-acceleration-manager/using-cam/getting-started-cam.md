@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager快速入门
 description: 本页概述如何使用和开始使用Cloud Acceleration Manager。
-source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
+source-git-commit: 1e13df5c6dfb9c0d28a540ce089cf722978bd8d3
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '508'
 ht-degree: 3%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # Cloud Acceleration Manager快速入门 {#get-started-cam}
 
-Cloud Acceleration Manager(CAM)是一款基于云的免费应用程序，可评估客户当前的AEM实施，并帮助按照Adobe推荐的迁移方法管理其作为Cloud Service的AEM历程。
+Cloud Acceleration Manager是一个基于云的应用程序，旨在引导您的IT团队完成从规划到上线的整个过渡历程。Cloud Service 通过Adobe推荐的最佳实践、提示、文档和工具，为成功的迁移设置团队，以便在到AEM作为Cloud Service的历程的每个阶段提供帮助。
 
 ## 目标 {#objective}
 
@@ -22,13 +22,15 @@ Cloud Acceleration Manager(CAM)是一款基于云的免费应用程序，可评�
 
 ## 使用Cloud Acceleration Manager {#using-cam}
 
-Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站式迁移体验，该向导通过提供初始评估来指导客户和合作伙伴完成整个历程，并将他们指向正确的工具、文档和最佳实践，以确保在AEM as a Cloud Service中成功上线。
+Cloud Acceleration Manager(CAM)提供了引导式旅程形式的一站式迁移体验，方法是提供初始评估，指向正确的工具、文档和最佳实践，以确保AEM as a Cloud Service成功上线。
 
 ### 导航到Cloud Acceleration Manager {#navigating}
 
 请按照以下步骤导航到Cloud Acceleration Manager(CAM):
 
 1. 登录到[Adobe Experience Cloud](https://experience.adobe.com)。
+
+1. 单击&#x200B;**Experience Manager**&#x200B;卡。
 
 1. 单击&#x200B;**Cloud Acceleration Manager**&#x200B;卡中的&#x200B;**Launch**&#x200B;以打开登陆页面。
 
@@ -45,7 +47,7 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
-   >首次使用CAM的用户将看到一个用于创建新项目的对话框。 过去使用过CAM的用户将看到一个默认项目。
+   >首次使用CAM的用户将看到一个用于创建新项目的对话框。 过去使用过CAM的用户将看到默认项目或之前创建的项目。
 
 1. 输入项目的&#x200B;**名称**&#x200B;和&#x200B;**描述**，然后单击&#x200B;**创建**。
 
@@ -89,4 +91,4 @@ Cloud Acceleration Manager(CAM)以迁移向导的形式为客户提供了一站�
 
 ## 下一步 {#whats-next}
 
-了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在即可继续查看下一步（使用就绪阶段）。
+了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在可以继续查看[准备阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en)中的下一步。
