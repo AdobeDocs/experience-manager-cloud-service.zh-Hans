@@ -5,10 +5,10 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: 部署
 role: Architect, Developer
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 54%
+source-wordcount: '127'
+ht-degree: 53%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 54%
 + 过渡历程的阶段 {#phases}
    + [就绪](/help/move-to-cloud-service/migration-readiness.md)
    + [实施](/help/move-to-cloud-service/migration-implementation.md)
+   + [上线](/help/move-to-cloud-service/migration-go-live.md)
    + [上线后](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
    + Cloud Acceleration Manager {#introduction-cam}简介
