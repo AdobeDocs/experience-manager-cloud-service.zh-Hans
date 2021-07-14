@@ -1,29 +1,29 @@
 ---
-title: 为响应式网站传送优化的图像
+title: 为响应式网站提供优化的图像
 description: 了解如何使用响应式代码功能从Dynamic Media交付优化的图像。
 feature: 资产管理
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 32%
+ht-degree: 22%
 
 ---
 
-# 为响应式网站传送优化的图像 {#delivering-optimized-images-for-a-responsive-site}
+# 为响应式网站提供优化的图像 {#delivering-optimized-images-for-a-responsive-site}
 
 如果您希望与 Web 开发人员共享代码以实现响应式服务，可使用响应式代码功能。将响应式(**[!UICONTROL RESS]**)代码复制到剪贴板，以便与Web开发人员共享该代码。
 
 如果您的网站位于第三方WCM上，则使用此功能很有意义。 但是，如果您的网站位于Adobe Experience Manager上，则站外图像服务器会呈现该图像并将其提供到网页。
 
-另请参阅[将视频查看器嵌入网页](embed-code.md)。
+另请参阅[在网页上嵌入视频查看器](embed-code.md)。
 
-另请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。
+另请参阅[将URL链接到Web应用程序](linking-urls-to-yourwebapplication.md)。
 
 **要为响应式网站传送优化的图像，请执行以下操作：**
 
-1. 导航到您要为其提供响应代码的图像，然后在下拉菜单中，点按&#x200B;**[!UICONTROL 演绎版]**。
+1. 导航到您要为其提供响应代码的图像，然后在下拉菜单中，选择&#x200B;**[!UICONTROL 演绎版]**。
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ ht-degree: 32%
    >
    >图像预设会自动发布。
 
-1. 点按&#x200B;**[!UICONTROL RESS]**。
+1. 选择&#x200B;**[!UICONTROL RESS]**。
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
