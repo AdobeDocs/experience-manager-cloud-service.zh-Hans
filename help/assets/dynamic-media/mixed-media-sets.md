@@ -4,7 +4,7 @@ description: 了解如何在Dynamic Media中使用混合媒体集。
 feature: 混合媒体集
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 21%
@@ -21,7 +21,7 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->有关Assets用户界面的信息，请参阅[使用触屏UI](/help/assets/manage-digital-assets.md)管理资产。
+>有关资产用户界面的信息，请参阅[使用触屏UI](/help/assets/manage-digital-assets.md)管理资产。
 
 ## 快速入门：混合媒体集 {#quick-start-mixed-media-sets}
 
