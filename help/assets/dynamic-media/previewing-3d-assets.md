@@ -1,10 +1,13 @@
 ---
 title: 预览 3D 资产
 description: 了解如何在Dynamic Media中预览3D资产。
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+feature: 3D资产
+role: User
+exl-id: null
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 15%
+source-wordcount: '565'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +20,7 @@ Experience Manager支持在创作过程中上传、交付和交互式预览3D资
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 支持的Experience Manager中3D预览格式{#supported-3d-previewing-assets}
+## 支持的3D预览格式(Experience Manager){#supported-3d-previewing-assets}
 
 Experience Manager中的交互式3D预览支持以下文件格式：
 
@@ -41,7 +44,7 @@ Experience Manager中的交互式3D预览支持以下文件格式：
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## 在Experience Manager中预览3D资产时的性能注意事项{#performance-3d-previewing-assets}
+## 在预览3D资产时的性能注意事项Experience Manager{#performance-3d-previewing-assets}
 
 在资产详细信息视图页面中打开3D资产所花费的时间取决于多个因素，例如带宽、图像复杂性和服务器延迟。
 
@@ -51,16 +54,16 @@ Experience Manager中的交互式3D预览支持以下文件格式：
 
 1. 确保已将3D资产上传到Experience Manager。
 请参阅[支持的3D预览格式](#supported-3d-previewing-assets)和[上传资产](/help/assets/manage-digital-assets.md#uploading-assets)。
-1. 从Experience Manager中，在&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
+1. 从Experience Manager中，在&#x200B;**[!UICONTROL Navigation]**&#x200B;页面上，转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**。
 
    ![导航页面](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. 在页面的右上角附近，从“视图”下拉列表中，点按&#x200B;**[!UICONTROL 卡片视图]**，然后导航到要预览的 3D 资产。
+1. 在页面的右上角附近，从“视图”下拉列表中，选择&#x200B;**[!UICONTROL 卡片视图]**，然后导航到要预览的3D资产。
 
    ![3D卡的选择](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _在卡片视图中，点按要预览的3D资产的卡片。_
+   _在卡片视图中，选择要预览的3D资产的卡片。_
 
-1. 点按3D资产的卡片。
+1. 选择3D资产的卡片。
 
    ![交互式3D预览](/help/assets/dynamic-media/assets/3d-preview.png)
    _在资产详细信息视图页面中交互式预览3D资产。_
@@ -72,7 +75,7 @@ Experience Manager中的交互式3D预览支持以下文件格式：
    | **平移相机** | 向左、向右、向上或向下平移视图。 | 右键单击并拖动。 | 双指按并拖动。 |
    | **缩放相机** | 进出3D场景的区域。 | 滚轮。 | 双指捏。 |
    | **重新输入相机** | 将相机重新调到3D场景中对象上的某个点。 | 双击. | 双击。 |
-   | **重置** | 在页面的右下角附近，点按重置图标，以将视图目标点恢复到3D资产的中心。 重置还会使相机更近或更远地移开，以便以合理的查看大小完整地显示资产。 |  |  |
-   | **全屏模式** | 要进入全屏模式，请点按页面右下角的全屏图标。 |  |  |
+   | **重置** | 在页面的右下角附近，选择重置图标以将视图目标点恢复到3D资产的中心。 重置还会使相机更近或更远地移开，以便以合理的查看大小完整地显示资产。 |  |  |
+   | **全屏模式** | 要进入全屏模式，请在页面的右下角选择全屏图标。 |  |  |
 
-1. 完成后，在页面的右上角附近，点按&#x200B;**[!UICONTROL 关闭]**。
+1. 完成后，在页面的右上角附近，选择&#x200B;**[!UICONTROL 关闭]**。
