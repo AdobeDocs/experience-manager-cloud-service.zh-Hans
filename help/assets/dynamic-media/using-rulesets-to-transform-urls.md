@@ -1,18 +1,18 @@
 ---
 title: 使用规则集转换URL
-description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是使用脚本语言(如JavaScript™)编写的一组说明，这些说明可评估XML数据并在数据满足特定条件时采取某些操作。
+description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是使用脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在数据满足特定条件时采取特定操作。
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
 # 使用规则集转换URL {#using-rulesets-to-transform-urls}
 
-您可以在Dynamic Media中部署规则集以转换URL。 规则集是使用脚本语言(如JavaScript™)编写的一组说明，这些说明可评估XML数据并在数据满足特定条件时采取某些操作。 每个规则都至少包含一个条件和一个操作。 规则会根据条件来评估XML数据，如果满足条件，则会采取相应的操作。 规则集示例包括：
+您可以在Dynamic Media中部署规则集以转换URL。 规则集是使用脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在数据满足特定条件时采取特定操作。 每个规则都至少包含一个条件和一个操作。 规则会根据条件来评估XML数据，如果满足条件，则会采取相应的操作。 规则集示例包括：
 
 * 添加MIME类型后缀。 许多服务和网站都需要图像后缀，例如向URL添加`.jpg`。
 * 为SEO（搜索引擎优化）创建URL的文件夹路径。
@@ -45,7 +45,7 @@ ht-degree: 5%
 此外，请确保首先在暂存环境中测试规则集，该测试环境不会影响您的实时生产环境。
 生产环境和暂存环境通常需要不同的登录方式。
 
-请参阅[AdobeDynamic Media Classic桌面应用程序以了解登录信息](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)。
+有关登录信息](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)，请参阅[AdobeDynamic Media Classic桌面应用程序。
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -53,7 +53,7 @@ ht-degree: 5%
 
 另请参阅[在规则集](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)中使用“asset”而不是“is”图像。
 
-**要部署XML规则集，请执行以下操作：**
+## 部署XML规则集 {#deploy-xml-rule-sets}
 
 1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
@@ -61,19 +61,19 @@ ht-degree: 5%
 
 1. 通过执行以下操作，上传规则集文件：
 
-   * 在全局导航栏上，单击&#x200B;**[!UICONTROL Upload]**。
-   * 在&#x200B;**[!UICONTROL Upload]**&#x200B;页面左上角附近，单击&#x200B;**[!UICONTROL Browse]**。
+   * 在全局导航栏上，选择&#x200B;**[!UICONTROL Upload]**。
+   * 在&#x200B;**[!UICONTROL Upload]**&#x200B;页面左上角附近，选择&#x200B;**[!UICONTROL Browse]**。
    * 在&#x200B;**[!UICONTROL 打开]**&#x200B;对话框中，浏览到您的规则集文件(XML)。
-   * 选择文件，然后单击&#x200B;**[!UICONTROL Open]**。
+   * 选择文件，然后选择&#x200B;**[!UICONTROL Open]**。
    * 在&#x200B;**[!UICONTROL Upload]**&#x200B;页面的右侧，为规则集文件选择目标文件夹。
    * 在页面底部附近，确保选中上传后发布。
-   * 在页面的右下角，单击&#x200B;**[!UICONTROL 提交上传]**。
-   * 在全局导航栏上，单击&#x200B;**[!UICONTROL 作业]**&#x200B;以检查上传作业的状态。 当&#x200B;**[!UICONTROL 作业]**&#x200B;页面上的&#x200B;**[!UICONTROL 状态]**&#x200B;列显示上传完成时，请继续执行后续步骤。
+   * 在页面的右下角，选择&#x200B;**[!UICONTROL 提交上传]**。
+   * 在全局导航栏上，选择&#x200B;**[!UICONTROL 作业]**&#x200B;以检查上传作业的状态。 当&#x200B;**[!UICONTROL 作业]**&#x200B;页面上的&#x200B;**[!UICONTROL 状态]**&#x200B;列显示上传完成时，请继续执行后续步骤。
 
-1. 在页面顶部附近的导航栏中，单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。
-1. 在&#x200B;**[!UICONTROL 图像服务器发布]**&#x200B;页面的&#x200B;**[!UICONTROL 目录管理]**&#x200B;组下，找到&#x200B;**[!UICONTROL 规则集定义文件路径]**，然后单击&#x200B;**[!UICONTROL 选择]**。
-1. 在&#x200B;**[!UICONTROL 择规则集定义文件 (XML)]** 页面上，浏览至您的规则集文件，然后在页面的右下角单击&#x200B;**[!UICONTROL 选择]**。
-1. 在“设置”页的右下角，单击&#x200B;**[!UICONTROL 关闭]**。
+1. 在页面顶部附近的导航栏上，导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。
+1. 在&#x200B;**[!UICONTROL 图像服务器发布]**&#x200B;页面的&#x200B;**[!UICONTROL 目录管理]**&#x200B;组下，找到&#x200B;**[!UICONTROL 规则集定义文件路径]**，然后选择&#x200B;**[!UICONTROL 选择]**。
+1. 在&#x200B;**[!UICONTROL 选择规则集定义文件(XML)]**&#x200B;页面上，浏览到您的规则集文件，然后在页面右下角选择&#x200B;**[!UICONTROL 选择]**。
+1. 在“设置”页面的右下角，选择&#x200B;**[!UICONTROL 关闭]**。
 1. 运行图像服务器发布作业。
 
    规则集条件将应用于对实时Dynamic Media图像服务器的请求。
