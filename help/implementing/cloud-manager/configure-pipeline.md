@@ -2,9 +2,9 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 > * 配置性能测试参数。
 
 
-## 设置生产管道{#setting-up-production-pipeline}
+## 设置生产管道 {#setting-up-production-pipeline}
 
 部署管理器负责设置生产管道。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 >
 >在初始设置后，可以更改管道设置。
 
-## 从[!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}配置管道设置
+## 从[!UICONTROL Cloud Manager]配置管道设置 {#configuring-the-pipeline-settings-from-cloud-manager}
 
 在使用[!UICONTROL Cloud Manager] UI设置程序并至少有一个环境后，您就可以设置部署管道了。
 
@@ -108,9 +108,9 @@ ht-degree: 0%
    ![](assets/configure-pipeline5.png)
 
 
-## 仅限非生产和代码质量管道{#non-production-pipelines}
+## 仅限非生产和代码质量管道 {#non-production-pipelines}
 
-除了部署到暂存和生产的主管道之外，客户还能够设置其他管道，称为&#x200B;**非生产管道**。 这些管道始终执行生成和代码质量步骤。 它们也可以选择部署到Adobe Managed Services环境。
+除了部署到暂存和生产的主管道之外，客户还能够设置其他管道，称为&#x200B;**非生产管道**。 这些管道始终执行生成和代码质量步骤。 它们也可以选择部署到AEM作为Cloud Service环境。
 
 在主屏幕上，这些管道将列在新卡中：
 
