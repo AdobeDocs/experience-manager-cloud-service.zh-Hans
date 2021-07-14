@@ -2,9 +2,9 @@
 title: 复制
 description: 分发 和复制故障排除。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -200,4 +200,4 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 ![](assets/publish-logs.png "LogsLogs")
 
 如果内容无法发布，则整个发布将从AEM发布服务中恢复。
-在这种情况下，应审查队列，以确定哪些项目导致取消发布。 通过单击显示红色状态的队列，将显示具有待处理项目的队列，如果需要，可从该队列中清除单个或所有项目。
+在这种情况下，可编辑的主队列将显示红色状态，应该进行审核，以确定哪些项目导致取消发布。 通过单击该队列，将显示其待决项目，如果需要，可从中清除单个项目或所有项目。
