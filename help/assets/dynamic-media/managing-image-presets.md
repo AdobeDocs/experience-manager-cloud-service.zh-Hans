@@ -4,9 +4,9 @@ description: 了解图像预设以及如何创建、修改和管理图像预设�
 feature: 图像预设，查看器，演绎版
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '3633'
 ht-degree: 22%
 
 ---
@@ -87,7 +87,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager资产�
 
 可通过`DAM Update Asset`工作流访问`Rasterize PDF/AI Image Preview Rendition`流程组件选项。
 
-在左上角的Adobe Experience Manager上选择，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。 在“工作流模型”页面中，选择&#x200B;**[!UICONTROL DAM更新资产]**，然后在工具栏中选择&#x200B;**[!UICONTROL 编辑]**。 在DAM更新资产工作流页面上，双击`Rasterize PDF/AI Image Preview Rendition`流程组件以打开其步骤属性对话框。
+选择左上角的Adobe Experience Manager，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。 在“工作流模型”页面中，选择&#x200B;**[!UICONTROL DAM更新资产]**，然后在工具栏中选择&#x200B;**[!UICONTROL 编辑]**。 在DAM更新资产工作流页面上，双击`Rasterize PDF/AI Image Preview Rendition`流程组件以打开其步骤属性对话框。
 
 #### 栅格化PDF/AI图像预览呈现版本选项 {#rasterize-pdf-ai-image-preview-rendition-options}
 
