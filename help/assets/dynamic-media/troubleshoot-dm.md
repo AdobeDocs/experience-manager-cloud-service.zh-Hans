@@ -1,16 +1,16 @@
 ---
-title: Dynamic Media 疑难解答
+title: Dynamic Media故障诊断
 description: 使用Dynamic Media时的疑难解答提示。
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
 
-# Dynamic Media 疑难解答 {#troubleshooting-dynamic-media-scene-mode}
+# Dynamic Media故障诊断 {#troubleshooting-dynamic-media-scene-mode}
 
 以下主题介绍Dynamic Media的疑难解答。
 
@@ -179,11 +179,11 @@ ht-degree: 1%
   <tr>
    <td>查看器预设未发布</td>
    <td><p>继续执行示例管理器诊断页面： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>观察计算值。 正确操作时，您会看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资产。</p> <p>如果未激活的资产仍保留，请单击<strong>列出所有未激活的资产</strong>按钮中的任一按钮，以查看详细信息。</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资产。</p> <p>如果未激活的资产仍保留，请选择<strong>列出所有未激活的资产</strong>按钮中的任一按钮，以查看详细信息。</p> </td>
    <td>
     <ol>
      <li>在管理工具中导航到查看器预设列表： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>选择所有查看器预设，然后单击<strong>发布</strong>。</li>
+     <li>选择所有查看器预设，然后选择<strong>发布</strong>。</li>
      <li>导航回示例管理器，并观察未激活的资产计数现在为零。</li>
     </ol> </td>
   </tr>
