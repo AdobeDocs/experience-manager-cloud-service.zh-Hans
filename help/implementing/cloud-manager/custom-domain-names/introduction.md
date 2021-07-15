@@ -2,7 +2,7 @@
 title: 简介 — 自定义域名
 description: 简介 — 自定义域名
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 558cd516a89d9012e96fb0b783d0df3eecfda73d
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 Cloud Manager允许您添加自定义域，以通过UI以自助方式使用唯一的品牌名称来标识您的网站。 您的Adobe Experience Manager as aCloud Service配置了默认域名，以`*.adobeaemcloud.com`结尾。 此默认域名将保留，即使在您将自定义域名附加到您的网站后也是如此。
 
 >[!NOTE]
->Cloud Manager仅支持Sites项目（发布服务）的自定义域名。 每个Cloud Manager环境最多可托管每个环境250个自定义域。 AEM as aCloud Service不支持通配符域。
+>Cloud Manager仅支持Sites项目（发布服务）的自定义域名。 每个Cloud Manager环境最多可托管每个环境500个自定义域。 AEM as aCloud Service不支持通配符域。
 
 使用Cloud Manager UI域设置页面或环境详细信息页面，具有权限的用户可以执行多项任务来管理环境的自定义域名，包括：
 
