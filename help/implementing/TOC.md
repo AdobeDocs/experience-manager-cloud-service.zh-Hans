@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
+source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 34%
+source-wordcount: '910'
+ht-degree: 33%
 
 ---
 
@@ -186,5 +186,8 @@ ht-degree: 34%
 + 内容交付概述 {#content-delivery}
    + [内容交付流程](dispatcher/overview.md)
    + [云中的调度程序](dispatcher/disp-overview.md)
+   + [使用Dispatcher工具验证和调试](dispatcher/validation-debug.md)
+   + [将Dispatcher配置从AMS迁移到AEM as aCloud Service](dispatcher/ams-aem.md)
+   + [使用Dispatcher工具旧版验证和调试](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service 中的 CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service 中的缓存](dispatcher/caching.md)
