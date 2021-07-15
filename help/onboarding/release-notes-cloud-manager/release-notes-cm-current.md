@@ -3,9 +3,9 @@ title: AEM as a Cloud Manager版本2021.7.0的发行说明
 description: AEM as a Cloud Manager版本2021.7.0的发行说明
 feature: 发行信息
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '349'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud Manager 2021.7.0版本的发布日期是2021年7月15日。
 
 * 支持的最大SSL证书数已增加到每个计划20个。
 
-* 每个环境可以配置的最大域数已增加到500个。
+* 每个环境可配置的最大域数已增加到500个。
 
 * **管理Git**&#x200B;按钮已被命名为&#x200B;**访问Git信息**，对话框已被直观地刷新。
 
@@ -46,11 +46,9 @@ AEM as a Cloud Manager 2021.7.0版本的发布日期是2021年7月15日。
 
 * 达到最大数量的SSL证书时显示的错误消息不起作用。
 
-* 在某些情况下，概述页面的管道卡中显示的发行版本可能存在差异。
+* 在某些情况下， **Overview**&#x200B;页面的管道卡中显示的发行版本可能不一致。
 
 * “添加程序向导”错误地指示创建后无法更改名称。
-
-* 在某些情况下，将IP允许列表绑定到环境时，“预览”不是可用选项。
 
 ### 已知问题 {#known-issues}
 
