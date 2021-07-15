@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
+source-git-commit: 6176665d17432999409baca46c46503d20f8f06b
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 33%
 
 ---
@@ -180,6 +180,7 @@ ht-degree: 33%
    + [部署到 AEM as a Cloud Service](deploying/overview.md)
    + [AEM版本更新](deploying/aem-version-updates.md)
    + [为 AEM as a Cloud Service 配置 OSGi](deploying/configuring-osgi.md)
+   + [OSGi配置API](deploying/osgi-configuration-api.md)
 + 创作层 {#author-tier}
    + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [保护创作层](/help/implementing/author-tier/securing-the-author-tier.md)
