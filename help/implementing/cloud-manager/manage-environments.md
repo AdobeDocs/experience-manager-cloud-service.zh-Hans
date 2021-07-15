@@ -2,7 +2,7 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 以下部分介绍用户可以创建的环境类型以及用户如何创建环境。
 
-## 环境类型{#environment-types}
+## 环境类型 {#environment-types}
 
 具有必要权限的用户可以创建以下环境类型（在特定租户可用的范围内）。
 
@@ -35,7 +35,7 @@ ht-degree: 3%
    >[!NOTE]
    >生产和暂存作为两个组件提供，用于测试和生产目的。  用户将无法仅创建暂存环境或生产环境。
 
-## 添加环境{#adding-environments}
+## 添加环境 {#adding-environments}
 
 1. 单击&#x200B;**Add Environment**&#x200B;以添加环境。 此按钮可从&#x200B;**Environments**屏幕访问。
    ![](assets/environments-tab.png)
@@ -61,13 +61,13 @@ ht-degree: 3%
    >[!NOTE]
    >如果尚未设置非生产管道，则&#x200B;*概述*&#x200B;屏幕会显示可从中创建非生产管道的卡。
 
-## 环境详细信息{#viewing-environment}
+## 环境详细信息 {#viewing-environment}
 
 “概述”页面上的&#x200B;**Environments**&#x200B;卡最多列出了三个环境。
 
 1. 选择&#x200B;**显示所有**&#x200B;按钮以导航到&#x200B;**环境**&#x200B;摘要页以查看包含环境完整列表的表。
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. **Environments**&#x200B;页面显示所有现有环境的列表。
 
@@ -81,7 +81,7 @@ ht-degree: 3%
    ![](assets/environ-preview1.png)
 
 
-### 访问预览服务{#access-preview-service}
+### 访问预览服务 {#access-preview-service}
 
 “预览服务”功能通过Cloud Manager向每个AEM作为Cloud Service环境提供额外的预览（发布）服务。
 
@@ -111,7 +111,7 @@ ht-degree: 3%
 
 1. **将内容发布到预览**:您可以使用AEM中的管理发布UI将内容发布到预览服务。有关更多详细信息，请参阅[预览内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) 。
 
-## 更新环境{#updating-dev-environment}
+## 更新环境 {#updating-dev-environment}
 
 暂存和生产环境的更新由Adobe自动管理。
 
@@ -129,7 +129,7 @@ ht-degree: 3%
 
 如果管道已更新，则系统会提示用户执行管道。
 
-## 删除环境{#deleting-environment}
+## 删除环境 {#deleting-environment}
 
 具有所需权限的用户将能够删除开发环境。
 
@@ -145,7 +145,7 @@ ht-degree: 3%
 >[!NOTE]
 >此功能不适用于为生产目的而设置的生产计划中设置的生产/暂存环境。 但是，该功能也可用于沙盒项目中的生产/暂存环境。
 
-## 管理访问{#managing-access}
+## 管理访问权限 {#managing-access}
 
 从&#x200B;**Environments**&#x200B;卡的下拉菜单中选择&#x200B;**Manage Access**。 您可以直接导航到创作实例并管理环境的访问权限。
 
@@ -154,7 +154,7 @@ ht-degree: 3%
 ![](assets/environ-access.png)
 
 
-## 访问开发人员控制台{#accessing-developer-console}
+## 访问开发人员控制台 {#accessing-developer-console}
 
 从&#x200B;**Environments**&#x200B;卡的下拉菜单中选择&#x200B;**Developer Console**。 这将在您的浏览器中打开一个新选项卡，其中登录页面指向&#x200B;**开发人员控制台**。
 
@@ -167,7 +167,7 @@ ht-degree: 3%
 
 如果单击&#x200B;**Environments**&#x200B;卡中的&#x200B;**Details**，则也可以使用此选项。 将打开&#x200B;**Environments**&#x200B;页面，选择某个环境后，单击&#x200B;**...**&#x200B;并选择&#x200B;**开发人员控制台**。
 
-## 本地登录{#login-locally}
+## 本地登录 {#login-locally}
 
 从&#x200B;**Environments**&#x200B;卡的下拉菜单中选择&#x200B;**Local Login** ，以本地登录到Adobe Experience Manager。
 
@@ -178,7 +178,7 @@ ht-degree: 3%
 ![](assets/environ-login-locally-2.png)
 
 
-## 管理自定义域名{#manage-cdn}
+## 管理自定义域名 {#manage-cdn}
 
 从“环境摘要”页面导航到&#x200B;**Environments**&#x200B;详细信息页面。
 
@@ -198,14 +198,14 @@ ht-degree: 3%
 1. [检查IP允许列表的状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 
-## 管理IP允许列表{#manage-ip-allow-lists}
+## 管理IP允许列表 {#manage-ip-allow-lists}
 
 从环境摘要页面导航到环境详细信息页面。 您可以在此处对环境的发布和/或创作服务执行以下操作。
 
 >[!NOTE]
 >Cloud Manager现在支持创作、发布和预览服务的IP允许列表功能（在站点程序中提供）。
 
-### 应用IP允许列表{#apply-ip-allow-list}
+### 应用IP允许列表 {#apply-ip-allow-list}
 
 应用IP允许列表的过程是允许列表定义中包含的所有IP范围都与环境中的创作或发布服务相关联的过程。 必须登录具有业务所有者或部署管理员角色的用户，才能应用IP允许列表。
 
@@ -218,7 +218,7 @@ ht-degree: 3%
 1. 使用IP允许列表表顶部的输入字段选择IP允许列表以及要应用该服务的创作或发布服务。
 1. 单击&#x200B;**Apply**&#x200B;并确认您的提交。
 
-### 取消应用IP允许列表{#unapply-ip-allow-list}
+### 取消应用IP允许列表 {#unapply-ip-allow-list}
 
 取消应用IP允许列表是指在环境中，允许列表定义中包含的所有IP范围都与创作或发布者服务取消关联的过程。 必须登录具有“业务所有者”或“部署管理器”角色的用户，才能取消应用IP允许列表。
 
