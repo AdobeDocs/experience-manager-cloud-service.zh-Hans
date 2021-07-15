@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager中的实施阶段
 description: 本页概述Cloud Acceleration Manager中的实施阶段。
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,27 @@ ht-degree: 2%
 
 1. 该页面显示按严重性级别组织的代码重构活动列表。 您可以通过单击两个高亮显示的图标了解更多信息。
 
+   该页面在三个不同的选项卡中显示代码重构注意事项。
+
+   * 概述:
+   * Dispatcher
+   * 测试
+
+   **概述**&#x200B;选项卡显示代码重构活动的列表。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   **Dispatcher**&#x200B;选项卡提供了有关如何将AEM构建为Apache和DispatcherCloud Service配置的信息，以及如何在部署到云环境之前在本地验证和运行该配置。 此外，还介绍了如何在云环境中进行调试。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   **Testing**&#x200B;选项卡提供了有关功能、体验审核和UI测试的信息。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >此外，请查看页面选项卡中的内容，以了解最佳实践分析器未涵盖的其他一些区域。
-
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## 将AEM用作Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
