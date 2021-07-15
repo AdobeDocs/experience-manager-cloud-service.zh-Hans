@@ -1,7 +1,7 @@
 ---
 title: Cloud Acceleration Manager中的实施阶段
 description: 本页概述Cloud Acceleration Manager中的实施阶段。
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -54,9 +54,9 @@ ht-degree: 2%
 
 1. 该页面显示按严重性级别组织的代码重构活动列表。 您可以通过单击两个高亮显示的图标了解更多信息。
 
-   该页面在三个不同的选项卡中显示代码重构注意事项。
+   该页面在三个不同的选项卡中显示代码重构注意事项：
 
-   * 概述:
+   * 概述
    * Dispatcher
    * 测试
 
