@@ -4,9 +4,9 @@ description: 使用Creative Cloud集成生成资产的变体
 contentOwner: AG
 feature: 上传、资产处理、发布、Asset compute微服务、工作流
 role: User,Admin
-source-git-commit: 997f292be2498624c5218addd61ec40727eb48bc
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,9 @@ ht-degree: 0%
 内容自动附加组件集成了[!DNL Adobe Experience Manager Assets as a Cloud Service]和[!DNL Adobe Creative Cloud] API，以创造性地大规模处理资产。 [!DNL Experience Manager] 使用基于云的 [资](/help/assets/asset-microservices-overview.md) 产微服务来使 [!DNL Adobe Creative Cloud] 用这些功能并自动创建和处理资产。
 
 要编辑[!DNL Adobe Photoshop]和[!DNL Adobe Lightroom]中的资产，您无需从[!DNL Experience Manager Assets]下载资产、编辑资产，然后再次上传资产。 您只需在[!DNL Experience Manager]中创建并配置处理配置文件，将配置文件应用到文件夹，然后将资产上传到该文件夹即可。 您上传的资产会根据处理配置文件进行重新处理，您会获得这些资产的变体。 一致且轻松的批量处理可节省手动工作并提高内容速度，而无需卓越的创作技能。 此外，开发人员和合作伙伴还可以通过直接访问这些API来扩展资产微服务，并包含自定义逻辑。
-用户可以创建处理配置文件以自动对其资产执行以下创意操作：
 
+用户可以创建处理配置文件以自动对其资产执行以下创意操作：\
+![自动执行Adobe Photoshop和AdobeLightroom资产操作](assets/content-automation.png)
 * **自动色调**:利用人工智能对图像内容进行分析，并根据图像的独特属性智能地进行光和颜色校正。
 * **自动垂直**:使用人工智能来分析图像的内容并纠正图像中的偏斜透视。例如，创建水平视线。
 * **Lightroom预设**:对图像应用用户定义的外观，以使用自定义预设获得一致的外观。
@@ -26,6 +27,8 @@ ht-degree: 0%
 * **图像蒙版**:使用人工智能通过单个命令在显着对象周围创建蒙版。
 * **Photoshop操作**:将一系列任务(在Photoshop中)应用到文件或批量文件。
 * **智能对象替换**:通过允许您交换图像，同时保留PSD文件中应用的所有效果和调整，实现大规模个性化。
+
+
 
 ## 使用处理配置文件批量编辑您的创意资产 {#process-assets}
 
@@ -39,7 +42,7 @@ ht-degree: 0%
 
 1. 选择&#x200B;**[!UICONTROL Creative]**&#x200B;选项卡，指定输出文件夹，选择&#x200B;**[!UICONTROL Add New]**&#x200B;以添加创作配置。
 
-1. 提供&#x200B;**[!UICONTROL 演绎版名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型），选择&#x200B;**[!UICONTROL 质量]**（或输出参数），选择包含和排除MIME类型列表（或输入资产过滤器），然后选择所需的创作操作。
+1. 提供&#x200B;**[!UICONTROL 演绎版名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型）、选择&#x200B;**[!UICONTROL 质量]**（或输出参数）、选择&#x200B;**[!UICONTROL 包括]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME类型列表（或输入资产过滤器），然后选择所需的创作操作。
    ![处理配置文件中的“创作”选项卡](assets/creative-processing-profile.png)
 
 1. 某些操作需要额外的参数（资产）。 根据需要为这些额外参数提供值。
