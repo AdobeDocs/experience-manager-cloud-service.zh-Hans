@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute微服务，工作流，资产处理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 1%
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理员可以访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**。 单击&#x200B;**[!UICONTROL 创建]**。
 1. 提供一个名称，帮助您在应用到文件夹时唯一标识配置文件。
-1. 要生成FPO呈现，请在&#x200B;**[!UICONTROL 标准]**&#x200B;选项卡上，启用&#x200B;**[!UICONTROL 创建FPO呈现]**。 输入介于1和100之间的&#x200B;**[!UICONTROL 质量]**&#x200B;值。
+1. 要生成FPO呈现，请在&#x200B;**[!UICONTROL Image]**&#x200B;选项卡上，启用&#x200B;**[!UICONTROL 创建FPO呈现]**。 输入介于1和100之间的&#x200B;**[!UICONTROL 质量]**&#x200B;值。
 1. 要生成其他演绎版，请单击&#x200B;**[!UICONTROL Add New]** ，并提供以下信息：
 
    * 每个演绎版的文件名。
