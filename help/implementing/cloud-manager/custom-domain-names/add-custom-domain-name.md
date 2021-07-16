@@ -2,18 +2,18 @@
 title: 添加自定义域名
 description: 添加自定义域名
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
+source-git-commit: bee18f13a7261077821205cad1df5e68a63638e0
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
 
 ---
 
-# 添加自定义域名{#adding-cdn}
+# 添加自定义域名 {#adding-cdn}
 
 用户必须是业务所有者或部署管理器，才能在Cloud Manager中添加自定义域名。
 
-## 重要注意事项{#important-considerations}
+## 重要注意事项 {#important-considerations}
 
 * 在添加自定义域名之前，必须向您的程序安装包含自定义域名的有效SSL证书。 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以了解更多信息。
 
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 * AEM as aCloud Service不支持通配符域。
 
-* 每个Cloud Manager环境最多可托管每个环境250个自定义域。
+* 每个Cloud Manager环境最多可托管每个环境500个自定义域。
 
 * 同一域名不能在多个环境中使用。
 
-## 从“域设置”页面{#adding-cdn-settings}添加自定义域名
+## 从“域设置”页面添加自定义域名 {#adding-cdn-settings}
 
 请按照以下步骤从“域设置”页面添加自定义域名：
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    >[!NOTE]
    >由于DNS传播延迟，DNS校样可能需要长达数小时才能识别。 Cloud Manager将验证所有权并更新状态，这些状态可在域设置表中查看。 有关更多详细信息，请参阅检查域名状态。
 
-## 从“环境”页面{#adding-cdn-environments}添加自定义域名
+## “从环境添加自定义域名”页 {#adding-cdn-environments}
 
 1. 导航到所关注环境的“环境详细信息”页面。
 
