@@ -2,9 +2,9 @@
 title: 复制
 description: 分发 和复制故障排除。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1229'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,10 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 
    ![](assets/publish-distribute.png "DistributeDistribute")
 4. 在路径浏览器中选择路径，根据需要选择添加节点、树或删除，然后选择&#x200B;**Submit**
+
+为获得最佳性能，在使用此功能时请遵循以下准则：
+* 为复制生成的内容包的总大小必须低于5MB。
+* 建议一次复制少于100个路径，且路径硬限制为500个。
 
 ### 发布内容树工作流 {#publish-content-tree-workflow}
 
