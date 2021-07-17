@@ -4,9 +4,9 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f3d2fafa4f10cb6538ba3e814987f75b466080fc
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 70%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 70%
    + [图像智能标记](smart-tags.md)
    + [智能标记视频资产](smart-tags-video-assets.md)
    + [如何组织资产](organize-assets.md)
-   + [在AEM中使用 [!DNL Adobe Stock] assets](aem-assets-adobe-stock.md)
+   + [使用 [!DNL Adobe Stock] assets](aem-assets-adobe-stock.md)
    + [管理收藏集](manage-collections.md)
    + [元数据概述](manage-metadata.md)
    + [与 [!DNL Adobe Creative Cloud]集成](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 70%
    + [搜索 Facet](search-facets.md)
    + [资产 HTTP API](mac-api-assets.md)
    + [资产HTTP API中的内容片段支持](content-fragments/assets-api-content-fragments.md)
-   + [AEM GraphQL API（用于内容片段）](content-fragments/graphql-api-content-fragments.md)
-   + [对内容片段的远程AEM GraphQL查询进行身份验证](content-fragments/graphql-authentication-content-fragments.md)
-   + [包含内容片段的AEM GraphQL API — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [用于内容片段的GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [对内容片段上的远程GraphQL查询进行身份验证](content-fragments/graphql-authentication-content-fragments.md)
+   + [包含内容片段的GraphQL API — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
    + [资产报表](asset-reports.md)
    + [串联元数据](cascading-metadata.md)
