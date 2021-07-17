@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 资产管理，标记，资产分发
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 Microsoft Office和PDF文档的所有数字资产、元数据和内容都会被提取并进行搜索。 搜索允许对资产进行复杂的筛选，并完全尊重正确的权限。 数字资产管理的元数据中详细介绍了元数据。
 
-AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方式组织它们，或者使用例如标记以无序、临时的方式组织它们。 用户可以在DAM资产编辑器中编辑标记，其中显示子资产、演绎版和元数据。
+Experience Manager资产支持多种内容组织方式。 您可以使用文件夹以分层方式组织它们，或者使用例如标记以无序、临时的方式组织它们。 用户可以在DAM资产编辑器中编辑标记，其中显示子资产、演绎版和元数据。
 
 ## 创建文件夹 {#create-folders}
 
-在组织资产集合（例如，所有&#x200B;*Nature*&#x200B;图像）时，您可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 AEM Assets不要求您组织文件夹中的资产以更好地工作。
+在组织资产集合（例如，所有&#x200B;*Nature*&#x200B;图像）时，您可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 [!DNL Assets] 您无需组织文件夹中的资产，即可更好地运行。
 
 >[!NOTE]
 >
