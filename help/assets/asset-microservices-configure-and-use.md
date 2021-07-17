@@ -5,10 +5,10 @@ contentOwner: AG
 feature: asset compute微服务，工作流，资产处理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 6d662a7350b851a450b8c20660d7a461d940c1b2
 workflow-type: tm+mt
-source-wordcount: '2678'
-ht-degree: 1%
+source-wordcount: '2709'
+ht-degree: 0%
 
 ---
 
@@ -160,8 +160,10 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 使用以下方法之一将处理配置文件应用到文件夹：
 
 * 管理员可以在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**&#x200B;中选择处理配置文件定义，然后使用&#x200B;**[!UICONTROL 将配置文件应用到文件夹]**&#x200B;操作。 此时将打开一个内容浏览器，通过该浏览器可导航到特定文件夹，选择它们并确认配置文件的应用程序。
-* 用户可以在Assets用户界面中选择文件夹，使用&#x200B;**[!UICONTROL 属性]**&#x200B;操作打开文件夹属性屏幕，单击&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;选项卡，然后在弹出列表中，为该文件夹选择相应的处理配置文件。 要保存更改，请单击&#x200B;**[!UICONTROL 保存并关闭]**。
+* 用户可以在Assets用户界面中选择文件夹，使用&#x200B;**[!UICONTROL 属性]**&#x200B;操作打开文件夹属性屏幕，单击&#x200B;**[!UICONTROL 资产处理]**&#x200B;选项卡，然后在[!UICONTROL 处理配置文件]列表中，为该文件夹选择相应的处理配置文件。 要保存更改，请单击&#x200B;**[!UICONTROL 保存并关闭]**。
    ![从资产属性选项卡中将处理配置文件应用到文件夹](assets/folder-properties-processing-profile.png)
+
+* 用户可以在Assets用户界面中选择文件夹或特定资产以应用处理配置文件，然后从顶部可用的选项中选择![资产重新处理图标](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新处理资产]**&#x200B;选项。
 
 >[!TIP]
 >
