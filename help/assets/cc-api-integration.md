@@ -4,7 +4,7 @@ description: 使用Creative Cloud集成生成资产的变体
 contentOwner: AG
 feature: 上传、资产处理、发布、Asset compute微服务、工作流
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,8 @@ ht-degree: 0%
 
 1. 选择&#x200B;**[!UICONTROL Creative]**&#x200B;选项卡，指定输出文件夹，选择&#x200B;**[!UICONTROL Add New]**&#x200B;以添加创作配置。
 
-1. 提供&#x200B;**[!UICONTROL 演绎版名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型）、选择&#x200B;**[!UICONTROL 质量]**（或输出参数）、选择&#x200B;**[!UICONTROL 包括]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME类型列表（或输入资产过滤器），然后选择所需的创作操作。
+1. 提供&#x200B;**[!UICONTROL 演绎版名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型）、选择&#x200B;**[!UICONTROL 质量]**（或输出参数）、选择&#x200B;**[!UICONTROL 包括]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME类型列表（或输入资产过滤器），然后选择所需的创作操作。<br/>
+
    ![处理配置文件中的“创作”选项卡](assets/creative-processing-profile.png)
 
 1. 某些操作需要额外的参数（资产）。 根据需要为这些额外参数提供值。
