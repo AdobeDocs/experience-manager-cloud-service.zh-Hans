@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API，Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 2%
 在[!DNL Experience Manager]中，作为[!DNL Cloud Service]，您可以使用HTTP API直接将资产上传到云存储。 下面是上载二进制文件的步骤。 在外部应用程序中而不是在[!DNL Experience Manager] JVM中执行这些步骤。
 
 1. [提交HTTP请求](#initiate-upload)。它会通知[!DNL Experience Manage]r部署您上传新二进制文件的意图。
-1. [POST由启动请](#upload-binary) 求提供的一个或多个URI的二进制内容。
+1. [PUT由启动请](#upload-binary) 求提供的一个或多个URI的二进制内容。
 1. [提交HTTP请](#complete-upload) 求，以通知服务器二进制文件的内容已成功上传。
 
 ![直接二进制上传协议概述](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ ht-degree: 2%
 }
 ```
 
-* `completeURI` （字符串）：在二进制文件完成上传时调用此URI。URI可以是绝对URI或相对URI，客户端应该能够处理这两个URI。 即，该值可以是`"https://author.acme.com/content/dam.completeUpload.json"`或`"/content/dam.completeUpload.json"`。请参阅[完成上载](#complete-upload)。
+* `completeURI` （字符串）：在二进制文件完成上传时调用此URI。URI可以是绝对URI或相对URI，客户端应该能够处理这两个URI。 即，该值可以是`"https://[aem_server]:[port]/content/dam.completeUpload.json"`或`"/content/dam.completeUpload.json"`。请参阅[完成上载](#complete-upload)。
 * `folderPath` （字符串）：上传二进制文件的文件夹的完整路径。
 * `(files)` （数组）：元素列表，其长度和顺序与启动请求中提供的二进制信息列表的长度和顺序相匹配。
 * `fileName` （字符串）：相应二进制文件的名称，在启动请求中提供。此值应包含在完整请求中。
@@ -125,7 +125,7 @@ ht-degree: 2%
 
 ### 上载二进制文件 {#upload-binary}
 
-启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端会将二进制文件拆分为多个部分，并按顺序对每个URI发出每个部分的POST请求。 使用所有URI。 确保每个部件的大小在启动响应中指定的最小和最大大小范围内。 CDN边缘节点有助于加快请求的二进制文件上传。
+启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端会将二进制文件拆分为多个部分，并按顺序对每个URI发出每个部分的PUT请求。 使用所有URI。 确保每个部件的大小在启动响应中指定的最小和最大大小范围内。 CDN边缘节点有助于加快请求的二进制文件上传。
 
 实现此目的的一种潜在方法是，根据API提供的上传URI数量计算部件大小。 例如，假设二进制文件的总大小为20,000字节，并且上传URI的数量为2。 然后，执行以下步骤：
 
@@ -154,9 +154,7 @@ ht-degree: 2%
 
 与启动过程一样，完整的请求数据可能包含多个文件的信息。
 
-只有在为文件调用完整URL后，才会完成上传二进制文件的过程。 上传过程完成后，会处理资产。 即使资产的二进制文件已完全上传，但上传过程未完成，处理也不会开始。
-
-如果成功，服务器将回复`200`状态代码。
+只有在为文件调用完整URL后，才会完成上传二进制文件的过程。 上传过程完成后，会处理资产。 即使资产的二进制文件已完全上传，但上传过程未完成，处理也不会开始。 如果上传成功，服务器将回复`200`状态代码。
 
 ### 开源上载库 {#open-source-upload-library}
 
