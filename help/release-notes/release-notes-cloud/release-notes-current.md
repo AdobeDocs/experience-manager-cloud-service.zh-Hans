@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 96f2c99caebd446288720adaf4ac929bbc41950f
+source-git-commit: d30384566f08b8819d3263b12939217cafb3399e
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1943'
 ht-degree: 3%
 
 ---
@@ -219,6 +219,16 @@ AEM Screens as a Cloud Service的发布日期是2021年6月24日。
 * 设备健康快照通过提供关键状态一目了然来节省时间。
 
 * 对象详细信息页面提供了项目中每个对象最相关信息的摘要。
+
+## Cloud Acceleration Manager {#cam}
+
+### 发布日期 {#release-date-july-cam}
+
+Cloud Acceleration Manager的发布日期是2021年7月15日。
+
+## 新增功能 {#what-is-new-cam}
+
+Cloud Acceleration Manager是一个基于云的应用程序，旨在引导您的IT团队完成从规划到上线的整个过渡历程。Cloud Service 通过Adobe推荐的最佳实践、提示、文档和工具，为成功的迁移设置团队，以便在到AEM作为Cloud Service的历程的每个阶段提供帮助。 请在此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)了解更多信息。[
 
 ## CIF附加组件 {#cloud-services-cif}
 
