@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute微服务，工作流，发行信息，资产处理
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Adobe Experience Manager as a [!DNL Cloud Service]提供了云原生方法来利
 
 ## 高级架构 {#asset-microservices-architecture}
 
-高级架构图描述了资产获取和处理以及整个系统中资产流量的关键元素。
+高级架构图描述了资产获取和处理以及整个系统中资产流的关键元素。
 
 <!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
