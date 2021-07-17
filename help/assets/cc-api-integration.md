@@ -4,9 +4,9 @@ description: 使用Creative Cloud集成生成资产的变体
 contentOwner: AG
 feature: 上传、资产处理、发布、Asset compute微服务、工作流
 role: User,Admin
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 内容自动附加组件集成了[!DNL Adobe Experience Manager Assets as a Cloud Service]和[!DNL Adobe Creative Cloud] API，以创造性地大规模处理资产。 [!DNL Experience Manager] 使用基于云的 [资](/help/assets/asset-microservices-overview.md) 产微服务来使 [!DNL Adobe Creative Cloud] 用这些功能并自动创建和处理资产。
 
-要编辑[!DNL Adobe Photoshop]和[!DNL Adobe Lightroom]中的资产，您无需从[!DNL Experience Manager Assets]下载资产、编辑资产，然后再次上传资产。 您只需在[!DNL Experience Manager]中创建并配置处理配置文件，将配置文件应用到文件夹，然后将资产上传到该文件夹即可。 您上传的资产会根据处理配置文件进行重新处理，您会获得这些资产的变体。 一致且轻松的批量处理可节省手动工作并提高内容速度，而无需卓越的创作技能。 此外，开发人员和合作伙伴还可以通过直接访问这些API来扩展资产微服务，并包含自定义逻辑。
+要编辑[!DNL Adobe Photoshop]和[!DNL Adobe Lightroom]中的资产，您无需从[!DNL Experience Manager Assets]下载资产、编辑资产，然后再次上传资产。 您可以在[!DNL Experience Manager]中创建并配置处理配置文件，将配置文件应用到文件夹，然后将资产上传到该文件夹。 您上传的资产会根据处理配置文件进行重新处理，您会获得这些资产的变体。 一致且轻松的批量处理可节省手动工作并提高内容速度，而无需卓越的创作技能。 此外，开发人员和合作伙伴还可以通过直接访问这些API来扩展资产微服务，并包含自定义逻辑。
 
 用户可以创建处理配置文件以自动对其资产执行以下创意操作：\
 ![自动执行Adobe Photoshop和AdobeLightroom资产操作](assets/content-automation.png)
