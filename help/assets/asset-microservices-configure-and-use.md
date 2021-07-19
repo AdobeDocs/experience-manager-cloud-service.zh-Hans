@@ -5,10 +5,10 @@ contentOwner: AG
 feature: asset compute微服务，工作流，资产处理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2678'
-ht-degree: 1%
+source-wordcount: '2709'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理员可以访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**。 单击&#x200B;**[!UICONTROL 创建]**。
 1. 提供一个名称，帮助您在应用到文件夹时唯一标识配置文件。
-1. 要生成FPO呈现，请在&#x200B;**[!UICONTROL 标准]**&#x200B;选项卡上，启用&#x200B;**[!UICONTROL 创建FPO呈现]**。 输入介于1和100之间的&#x200B;**[!UICONTROL 质量]**&#x200B;值。
+1. 要生成FPO呈现，请在&#x200B;**[!UICONTROL Image]**&#x200B;选项卡上，启用&#x200B;**[!UICONTROL 创建FPO呈现]**。 输入介于1和100之间的&#x200B;**[!UICONTROL 质量]**&#x200B;值。
 1. 要生成其他演绎版，请单击&#x200B;**[!UICONTROL Add New]** ，并提供以下信息：
 
    * 每个演绎版的文件名。
@@ -160,8 +160,10 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 使用以下方法之一将处理配置文件应用到文件夹：
 
 * 管理员可以在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**&#x200B;中选择处理配置文件定义，然后使用&#x200B;**[!UICONTROL 将配置文件应用到文件夹]**&#x200B;操作。 此时将打开一个内容浏览器，通过该浏览器可导航到特定文件夹，选择它们并确认配置文件的应用程序。
-* 用户可以在Assets用户界面中选择文件夹，使用&#x200B;**[!UICONTROL 属性]**&#x200B;操作打开文件夹属性屏幕，单击&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;选项卡，然后在弹出列表中，为该文件夹选择相应的处理配置文件。 要保存更改，请单击&#x200B;**[!UICONTROL 保存并关闭]**。
+* 用户可以在Assets用户界面中选择文件夹，使用&#x200B;**[!UICONTROL 属性]**&#x200B;操作打开文件夹属性屏幕，单击&#x200B;**[!UICONTROL 资产处理]**&#x200B;选项卡，然后在[!UICONTROL 处理配置文件]列表中，为该文件夹选择相应的处理配置文件。 要保存更改，请单击&#x200B;**[!UICONTROL 保存并关闭]**。
    ![从资产属性选项卡中将处理配置文件应用到文件夹](assets/folder-properties-processing-profile.png)
+
+* 用户可以在Assets用户界面中选择文件夹或特定资产以应用处理配置文件，然后从顶部可用的选项中选择![资产重新处理图标](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新处理资产]**&#x200B;选项。
 
 >[!TIP]
 >
