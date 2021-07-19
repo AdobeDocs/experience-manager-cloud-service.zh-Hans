@@ -5,16 +5,16 @@ contentOwner: AG
 feature: 元数据
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 10%
 
 ---
 
 # 批量导入和导出资产元数据 {#import-and-export-asset-metadata-in-bulk}
 
-Adobe Experience Manager Assets允许您使用CSV文件批量导入资产元数据。 您可以通过导入CSV文件，对最近上传的资产或现有资产进行批量更新。 您还可以以CSV格式从第三方系统批量摄取资产元数据。
+AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过导入CSV文件，对最近上传的资产或现有资产进行批量更新。 您还可以以CSV格式从第三方系统批量摄取资产元数据。
 
 ## 导入元数据 {#import-metadata}
 
@@ -47,7 +47,7 @@ Adobe Experience Manager Assets允许您使用CSV文件批量导入资产元数�
 
 ## 导出元数据 {#export-metadata}
 
-您可以以CSV格式导出多个资产的元数据。 元数据是异步导出的，不会影响系统性能。 要导出元数据，Experience Manager会遍历资产节点`jcr:content/metadata`及其子节点的属性，并在CSV文件中导出元数据属性。
+您可以以CSV格式导出多个资产的元数据。 元数据是异步导出的，不会影响系统性能。 要导出元数据，AEM会遍历资产节点`jcr:content/metadata`及其子节点的属性，并将元数据属性导出为CSV文件。
 
 批量导出元数据的一些用例包括：
 
