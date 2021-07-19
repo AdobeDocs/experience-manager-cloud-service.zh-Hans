@@ -1,56 +1,61 @@
 ---
-title: AEM as a Cloud Manager版本2021.7.0的发行说明
-description: AEM as a Cloud Manager版本2021.7.0的发行说明
+title: AEM as a Cloud Manager版本2021.5.0的发行说明
+description: AEM as a Cloud Manager版本2021.5.0的发行说明
 feature: 版本信息
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 4%
+source-wordcount: '419'
+ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager as a Cloud 2021.7.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud 2021.6.0版中的Cloud Manager发行说明 {#release-notes}
 
-本页面概述了AEM as a Cloud 2021.7.0中的Cloud Manager发行说明。
+本页面概述了AEM as a Cloud 2021.6.0中Cloud Manager的发行说明。
 
 >[!NOTE]
 >要查看Adobe Experience Manager as a Cloud Service的最新发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Manager 2021.7.0版本的发布日期是2021年7月15日。
-下一版本计划于2021年8月12日发布。
+AEM as a Cloud Service2021.6.0中Cloud Manager的发布日期是2021年6月10日。
+下一版本计划于2021年7月15日发布。
 
 ### 新增功能 {#what-is-new}
 
-* 客户现在能够为其Cloud Manager构建过程使用Azul 8和11个JDK，并且可以选择将其中一个JDK用于与工具链兼容的Maven插件&#x200B;*或*&#x200B;整个Maven进程执行。
+* 预览服务将以滚动方式部署到所有程序。 当客户的计划启用了预览服务后，系统会在产品中通知客户。 有关更多详细信息，请参阅[访问预览服务](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 。
 
-* 出站出口IP现在将记录在生成步骤日志文件中。
+* 现在，在生成步骤期间下载的Maven依赖项将在管道执行之间缓存。 未来几周，将为客户启用此功能。
 
-* 现在，运行旧版AEM的暂存环境和生产环境将报告&#x200B;**可用更新**&#x200B;的状态。
+* 现在可以通过编辑程序对话框编辑程序的名称。
 
-* 支持的最大SSL证书数已增加到每个计划20个。
+* 在项目创建期间和通过管理git工作流在默认推送命令中使用的默认分支名称已更改为`main`。
 
-* 每个环境可配置的最大域数已增加到500个。
+* 在UI中编辑项目体验已刷新。
 
-* **管理Git**&#x200B;按钮已被命名为&#x200B;**访问Git信息**，对话框已被直观地刷新。
+* 质量规则`ImmutableMutableMixCheck`已更新，可将`/oak:index`节点分类为不可变。
 
-* Cloud Manager使用的AEM项目原型版本已更新至版本28。
+* 质量规则`CQBP-84`和`CQBP-84--dependencies`已合并到单个规则中。 作为此整合的一部分，对依赖项的扫描可更准确地识别部署到AEM运行时的第三方依赖项中的问题。
+
+* 为避免混淆，“环境详细信息”页面上的“发布AEM”和“发布Dispatcher”区段行已进行合并。
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+
+* 添加了新的代码质量规则来验证`damAssetLucene`索引的结构。 有关更多详细信息，请参阅[自定义DAM资产Lucene Oak索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)。
+
+* “环境详细信息”页面现在将显示发布和预览服务的多个域名（如果适用）。 有关更多详细信息，请参阅[环境详细信息](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
 
 ### 错误修复 {#bug-fixes}
 
-* 在某些情况下，将IP允许列表绑定到环境时，“预览”不是可用选项。
+* 未正确解析根元素名称后包含换行符的JCR节点定义。
 
-* 手动导航到非现有执行的执行详细信息页面不会显示错误，只是显示无休止的加载屏幕。
+* 列表存储库API不会过滤已删除的存储库。
 
-* 达到最大数量的SSL证书时显示的错误消息不起作用。
+* 为计划步骤提供无效值时，显示错误消息。
 
-* 在某些情况下， **Overview**&#x200B;页面的管道卡中显示的发行版本可能不一致。
+* 有时，即使未部署该配置，用户也可能在IP允许列表旁看到绿色的&#x200B;*活动*&#x200B;状态。
 
-* “添加程序向导”错误地指示创建后无法更改名称。
+* 某些程序编辑序列可能会导致无法创建或编辑生产管道。
 
-### 已知问题 {#known-issues}
-
-切换使用Azul JDK的客户应该注意到，并非所有现有应用程序都会在Azul JDK上编译而不出错。 强烈建议在切换前在本地进行测试。
-
+* 某些程序编辑序列可能会导致在&#x200B;**概述**&#x200B;页面中显示一条误导性消息，以便重新执行程序设置。
