@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 智能标记，标记
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2346'
+source-wordcount: '2350'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 与自然语言词汇相比，基于业务分类的标记有助于使资产与公司的业务保持一致，并确保最相关的资产出现在搜索中。 例如，汽车制造商可以使用型号名称标记汽车图像，以便在设计促销活动时只显示相关图像。
 
-在后台，该功能使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，可使用此内容智能对不同的资产集应用相关标记。 [!DNL Experience Manager Assets] 默认情况下，部署 [!DNL Adobe Developer Console] 与集成。
+在后台，该功能使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，可使用此内容智能对不同的资产集应用相关标记。 [!DNL Experience Manager Assets] 默认情况下，会自动将智能标记应用于已上传的资产。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ ht-degree: 6%
 
 ## 使用智能标记标记资产 {#tag-assets}
 
-上传后，所有类型的受支持资产都会自动由[!DNL Experience Manager Assets]标记。 默认情况下，将启用标记。 [!DNL Experience Manager] 近乎实时地应用相应的标记。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+上传后，所有类型的受支持资产都会自动由[!DNL Experience Manager Assets]标记。 默认情况下，标记处于启用状态并可正常使用。 [!DNL Experience Manager] 近乎实时地应用相应的标记。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-对于图像和视频，智能标记基于某些视觉方面而派生。
+* 对于图像和视频，智能标记基于某些视觉方面。
 
-对于基于文本的资产，智能标记的效果并不取决于资产中的文本数量，而取决于资产文本中存在的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后将其编入索引，用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用、结构化和更高优先级的搜索方面，与完整搜索索引相比，该方面用于改进资产发现。
+* 对于基于文本的资产，智能标记的效果并不取决于资产中的文本数量，而取决于资产文本中存在的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后将其编入索引，用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用、结构化和更高优先级的搜索方面，与完整搜索索引相比，该方面用于改进资产发现。
 
 ## 管理智能标记和资产搜索 {#manage-smart-tags-and-searches}
 
