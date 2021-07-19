@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute微服务，工作流，发行信息，资产处理
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 2%
