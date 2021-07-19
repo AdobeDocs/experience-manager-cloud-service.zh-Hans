@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] �
 feature: 资产管理
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '297'
 ht-degree: 31%
 
 ---
@@ -33,8 +33,8 @@ ht-degree: 31%
 | [安全用户指南](/help/security/home.md) | 了解有关[!DNL Experience Manager]作为[!DNL Cloud Service]的重要安全主题。 |
 | [入门](/help/onboarding/home.md) | [!DNL Experience Manager] as a [!DNL Cloud Service]入门 — 获取访问权限和保护重要数据。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用[!DNL Experience Manager Sites] as a [!DNL Cloud Service]进行创作，以及如何管理。 |
-| [实施用户指南](/help/implementing/home.md) | 了解如何通过探索这些开发和部署主题，使用Experience Manager的强大功能构建和自定义体验。 |
-| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式旅程，体验Experience Manager强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
+| [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
+| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [移 [!DNL Experience Manager] 动到as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | 了解过渡到[!DNL Experience Manager]作为[!DNL Cloud Service]的历程。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到[!DNL Experience Manager]作为[!DNL Cloud Service]。 |
 | [操作用户指南](/help/operations/home.md) | 了解[!DNL Experience Manager]作为[!DNL Cloud Service]的后端操作，如索引和维护任务。 |
