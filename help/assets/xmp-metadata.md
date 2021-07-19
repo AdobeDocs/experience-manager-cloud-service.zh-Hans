@@ -1,28 +1,28 @@
 ---
 title: XMP 元数据
-description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被Experience Manager用作元数据的创建、处理和交换的标准格式。
+description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被AEM用作元数据的创建、处理和交换的标准格式。
 contentOwner: AG
 feature: 元数据
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 48%
+source-wordcount: '1016'
+ht-degree: 52%
 
 ---
 
 # XMP 元数据 {#xmp-metadata}
 
-XMP（可扩展元数据平台）是Experience Manager资产用于所有元数据管理的元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
+XMP（可扩展元数据平台）是 AEM Assets 用来进行所有元数据管理的元数据标准。XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 
-除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且受Adobe](#advantages-of-xmp)和其他公司的支持[，以便XMP和[!DNL Assets]的用户能够拥有强大的基础平台。
+除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且受Adobe](#advantages-of-xmp)和其他公司的支持[，因此XMP和AEM Assets的用户拥有强大的基础平台。
 
 ## XMP概述和生态系统 {#xmp-ecosystem}
 
-[!DNL Assets] 本机支持XMP元数据标准。XMP 是一项用于处理和存储数字资产中的标准化专有元数据的标准。XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
+AEM Assets本身支持XMP元数据标准。 XMP 是一项用于处理和存储数字资产中的标准化专有元数据的标准。XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
 
-例如，专业生产人士可以使用 Adobe 应用程序中内置的 XMP 支持，在多种文件格式之间传递信息。[!DNL Assets]存储库提取XMP元数据，并使用它来管理内容生命周期，并提供创建自动化工作流的功能。
+例如，专业生产人士可以使用 Adobe 应用程序中内置的 XMP 支持，在多种文件格式之间传递信息。AEM Assets 存储库会提取 XMP 元数据，用它来管理内容生命周期，并提供创建自动化工作流的能力。
 
 XMP 通过提供数据模型、存储模型和架构，使元数据的定义、创建和处理方式实现标准化。本节将介绍所有这些概念。
 
@@ -125,7 +125,7 @@ To let the XMP write-back feature propagate metadata changes to select rendition
 
 For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
 
-1. Tap/click the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
 1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
 1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
