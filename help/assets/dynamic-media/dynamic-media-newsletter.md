@@ -4,9 +4,9 @@ description: '按Experience League划分的Dynamic Media新闻稿是每月的新
 feature: 资产管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -123,15 +123,15 @@ ht-degree: 0%
    * 可让您正确管理高价值资产的资源和信息，以便满怀信心地提供体验，让访客回访。
    * 了解即将举办的关于保护您的数字资产的网络研讨会。
    * 下一站将观看信息丰富的Adobe内幕浏览。
-   * 当您在Experience Manager资产(Experience Manager资产)中拥有Dynamic Media时，即可提供令人兴奋的功能。
+   * 当您在Experience Manager资产(AEM Assets)中拥有Dynamic Media时，即可提供令人兴奋的功能。
    * 将360度视频和自定义视频缩略图添加到您的网站。
-   * 在Experience Manager资产中，与Dynamic Media的首席解决方案顾问Andrew Hathaway会面。
+   * 与AEM Assets的Dynamic Media首席解决方案顾问Andrew Hathaway会面。
 
 * **[2019年6月，06期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    在此问题中：
 
-   * 观看视频，在Experience Manager资产中重点演示升级到Dynamic Media的绝佳过程。
+   * 请观看视频，在AEM Assets内向Dynamic Media升级的绝妙之处。
    * 在Experience League中观看关键操作方法视频。
    * 进一步了解即将召开的Adobe内幕浏览。
    * 了解如何保护您的数字资产免遭盗用。
