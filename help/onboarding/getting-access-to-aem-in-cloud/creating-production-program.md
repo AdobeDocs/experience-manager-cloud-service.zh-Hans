@@ -2,9 +2,9 @@
 title: '创建生产程序 '
 description: 创建生产程序
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 410986233a599638cb1c2a69f33c94ea67c530fb
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -12,14 +12,6 @@ ht-degree: 0%
 # 创建生产程序 {#create-production-program}
 
 *生产*&#x200B;程序面向熟悉AEM和Cloud Manager的用户，该用户可以开始编写、构建和测试代码，以将代码部署到生产环境。
-
-观看两部分教程视频，了解如何在Cloud Manager中创建项目：
-
->[!VIDEO](https://video.tv.adobe.com/v/334953)
-
->[!VIDEO](https://video.tv.adobe.com/v/334954)
-
-此外，
 
 按照以下步骤创建生产程序：
 
