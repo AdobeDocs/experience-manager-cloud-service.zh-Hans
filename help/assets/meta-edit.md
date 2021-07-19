@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 元数据
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '423'
 ht-degree: 9%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 9%
    * 从资产缩略图中，选择&#x200B;**[!UICONTROL 查看属性]**&#x200B;快速操作。
    * 在资产页面中，单击/点按工具栏中的&#x200B;**[!UICONTROL 查看属性]** 。
 
-   资产页面会显示资产的所有元数据。 此元数据在上传（摄取）到Experience Manager资产后会自动提取。
+   资产页面会显示资产的所有元数据。 此元数据在上传（摄取）到AEM Assets后会自动提取。
 
 1. 根据需要，在各个选项卡下对元数据进行编辑，完成后，单击／点按工具栏中的 **[!UICONTROL 保存]** ，以保存更改。 单击／点 **[!UICONTROL 按关闭]** ，以返回到资产Web界面。
 
@@ -36,7 +36,7 @@ ht-degree: 9%
    >
    >如果文本字段为空，则不存在现有的元数据集。 您可以在字段中输入一个值，然后进行保存以添加该元数据属性。
 
-对资产元数据所做的任何更改都会作为资产数据的一部分写回原始二进制文件。 这是通过Experience Manager元数据回写工作流完成的。 对现有属性（如`dc:title`）所做的更改会被覆盖，新创建的属性（包括自定义属性，如`cq:tags`）会与架构一起添加。
+对资产元数据所做的任何更改都会作为资产数据的一部分写回原始二进制文件。 这是通过AEM元数据回写工作流完成的。 对现有属性（如`dc:title`）所做的更改会被覆盖，新创建的属性（包括自定义属性，如`cq:tags`）会与架构一起添加。
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -44,9 +44,9 @@ ht-degree: 9%
 
 有关如何编辑元数据架构的详细信息，请参阅[编辑元数据架构表单](metadata-schemas.md#edit-metadata-schema-forms)。
 
-## 在Experience Manager中注册自定义命名空间 {#registering-a-custom-namespace-within-aem}
+## 在AEM中注册自定义命名空间 {#registering-a-custom-namespace-within-aem}
 
-您可以在Experience Manager中添加自己的命名空间。 正如存在预定义的命名空间（如cq、jcr和sling）一样，您也可以拥有用于存储库元数据和xml处理的命名空间。
+您可以在AEM中添加自己的命名空间。 正如存在预定义的命名空间（如cq、jcr和sling）一样，您也可以拥有用于存储库元数据和xml处理的命名空间。
 
 1. 转到节点类型管理页面&#x200B;*https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*。
 1. 单击或点按页面顶部的&#x200B;**[!UICONTROL 命名空间]**。 命名空间管理页面显示在窗口中。
