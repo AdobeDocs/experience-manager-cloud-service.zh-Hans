@@ -2,9 +2,9 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 0%
 
 1. 从Cloud Manager主屏幕中访问&#x200B;**非生产管道**&#x200B;拼贴。
 
-   ![](assets/configure-pipeline6.png)
+   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
 1. 单击&#x200B;**添加**&#x200B;按钮，以指定管道名称、管道类型和Git分支。
 
@@ -124,13 +124,15 @@ ht-degree: 0%
 
    ![](assets/non-prod-pipe1.png)
 
-1. 单击&#x200B;**Save**，此时主屏幕上的卡片上会显示管道，该管道包含三个操作，如下所示：
+1. 单击&#x200B;**Save**，此时主屏幕上的卡片上会显示管道，该管道中会有五个操作，如下所示：
 
-   ![](assets/configure-pipeline8.png)
+   ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
    * **编辑**  — 允许编辑管线设置
+   * **详细信息**  — 提供管道执行的详细信息
    * **生成**  — 导航到可从中执行管道的执行页面
-   * **管理Git**  — 允许用户获取访问Cloud Manager Git存储库所需的信息
+   * **访问存储库信息**  — 允许用户获取访问Cloud Manager Git存储库所需的信息
+   * **了解更多**  — 导航到了解CI/CD管线文档资源。
 
 ## 后续步骤 {#the-next-steps}
 
