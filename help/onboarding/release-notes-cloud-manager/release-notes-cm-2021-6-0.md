@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Manager版本2021.5.0的发行说明
 description: AEM as a Cloud Manager版本2021.5.0的发行说明
-feature: 发行信息
+feature: 版本信息
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 source-git-commit: 673ac234f0e9bfc0f5e6878abf5d01d38cbe918f
 workflow-type: tm+mt
