@@ -2,7 +2,7 @@
 title: 添加自定义域名
 description: 添加自定义域名
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: bee18f13a7261077821205cad1df5e68a63638e0
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * AEM as aCloud Service不支持通配符域。
 
-* 每个Cloud Manager环境最多可托管每个环境500个自定义域。
+* 每个Cloud Manager环境最多可托管每个环境250个自定义域。
 
 * 同一域名不能在多个环境中使用。
 
