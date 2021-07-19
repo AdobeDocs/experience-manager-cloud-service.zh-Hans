@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API，Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1420'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 2%
 | × | 不受支持. 请勿使用。 |
 | - | 不可用 |
 
-| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（预览）_ |
+| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（预览）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二进制** |  |  |  |  |  |  |
 | 创建原始 | ✓ | × | - | × | × | - |
@@ -69,7 +69,7 @@ ht-degree: 2%
 在[!DNL Experience Manager]中，作为[!DNL Cloud Service]，您可以使用HTTP API直接将资产上传到云存储。 下面是上载二进制文件的步骤。 在外部应用程序中而不是在[!DNL Experience Manager] JVM中执行这些步骤。
 
 1. [提交HTTP请求](#initiate-upload)。它会通知[!DNL Experience Manage]r部署您上传新二进制文件的意图。
-1. [PUT由启动请](#upload-binary) 求提供的一个或多个URI的二进制内容。
+1. [POST由启动请](#upload-binary) 求提供的一个或多个URI的二进制内容。
 1. [提交HTTP请](#complete-upload) 求，以通知服务器二进制文件的内容已成功上传。
 
 ![直接二进制上传协议概述](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ ht-degree: 2%
 }
 ```
 
-* `completeURI` （字符串）：在二进制文件完成上传时调用此URI。URI可以是绝对URI或相对URI，客户端应该能够处理这两个URI。 即，该值可以是`"https://[aem_server]:[port]/content/dam.completeUpload.json"`或`"/content/dam.completeUpload.json"`。请参阅[完成上载](#complete-upload)。
+* `completeURI` （字符串）：在二进制文件完成上传时调用此URI。URI可以是绝对URI或相对URI，客户端应该能够处理这两个URI。 即，该值可以是`"https://author.acme.com/content/dam.completeUpload.json"`或`"/content/dam.completeUpload.json"`。请参阅[完成上载](#complete-upload)。
 * `folderPath` （字符串）：上传二进制文件的文件夹的完整路径。
 * `(files)` （数组）：元素列表，其长度和顺序与启动请求中提供的二进制信息列表的长度和顺序相匹配。
 * `fileName` （字符串）：相应二进制文件的名称，在启动请求中提供。此值应包含在完整请求中。
@@ -125,7 +125,7 @@ ht-degree: 2%
 
 ### 上载二进制文件 {#upload-binary}
 
-启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端会将二进制文件拆分为多个部分，并按顺序对每个URI发出每个部分的PUT请求。 使用所有URI。 确保每个部件的大小在启动响应中指定的最小和最大大小范围内。 CDN边缘节点有助于加快请求的二进制文件上传。
+启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端会将二进制文件拆分为多个部分，并按顺序对每个URI发出每个部分的POST请求。 使用所有URI。 确保每个部件的大小在启动响应中指定的最小和最大大小范围内。 CDN边缘节点有助于加快请求的二进制文件上传。
 
 实现此目的的一种潜在方法是，根据API提供的上传URI数量计算部件大小。 例如，假设二进制文件的总大小为20,000字节，并且上传URI的数量为2。 然后，执行以下步骤：
 
@@ -154,7 +154,9 @@ ht-degree: 2%
 
 与启动过程一样，完整的请求数据可能包含多个文件的信息。
 
-只有在为文件调用完整URL后，才会完成上传二进制文件的过程。 上传过程完成后，会处理资产。 即使资产的二进制文件已完全上传，但上传过程未完成，处理也不会开始。 如果上传成功，服务器将回复`200`状态代码。
+只有在为文件调用完整URL后，才会完成上传二进制文件的过程。 上传过程完成后，会处理资产。 即使资产的二进制文件已完全上传，但上传过程未完成，处理也不会开始。
+
+如果成功，服务器将回复`200`状态代码。
 
 ### 开源上载库 {#open-source-upload-library}
 
@@ -185,45 +187,21 @@ ht-degree: 2%
 
 ## 在后处理工作流中支持工作流步骤 {#post-processing-workflows-steps}
 
-如果您从以前的[!DNL Experience Manager]版本进行升级，则可以使用资产微服务来处理资产。 云原生资产微服务的配置和使用更简单。 不支持在以前版本的[!UICONTROL DAM更新资产]工作流中使用的一些工作流步骤。 有关支持类的更多信息，请参阅[Java API引用](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)。
+从以前版本的[!DNL Experience Manager]升级的客户可以使用资产微服务来处理资产。 云原生资产微服务的配置和使用更简单。 不支持在以前版本的[!UICONTROL DAM更新资产]工作流中使用的一些工作流步骤。
 
-以下技术工作流模型已被资产微服务取代，或者无法获得支持：
+[!DNL Experience Manager] 作为支 [!DNL Cloud Service] 持以下工作流步骤：
 
-* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
-* `com.day.cq.dam.core.process.CommandLineProcess`
-* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
-* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
-* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
-* `com.day.cq.dam.core.process.DownloadAssetProcess`
-* `com.day.cq.dam.word.process.ExtractImagesProcess`
-* `com.day.cq.dam.word.process.ExtractPlainProcess`
-* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
-* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
-* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
-* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
-* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
-* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
+* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
+* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 * `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
 * `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
-* `com.day.cq.dam.core.process.GateKeeperProcess`
-* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
-* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
-* `com.day.cq.dam.video.FFMpegTranscodeProcess`
-* `com.day.cq.dam.core.process.ThumbnailProcess`
-* `com.day.cq.dam.video.FFMpegThumbnailProcess`
-* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
-* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
-* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
-* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
-* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
-* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
-* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
-* `com.day.cq.dam.core.process.MetadataProcessorProcess`
-* `com.day.cq.dam.core.process.AssetOffloadingProcess`
-* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
+* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
+* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
+* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
 
-<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
+以下技术工作流模型已被资产微服务取代，或者无法获得支持：
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -257,7 +235,7 @@ ht-degree: 2%
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
--->
+* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
