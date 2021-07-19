@@ -2,10 +2,10 @@
 title: 复制
 description: 分发 和复制故障排除。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: a585fd8994c00014243f628ac0abbcb6571137f6
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 3%
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -55,10 +55,6 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 
    ![](assets/publish-distribute.png "DistributeDistribute")
 4. 在路径浏览器中选择路径，根据需要选择添加节点、树或删除，然后选择&#x200B;**Submit**
-
-为获得最佳性能，在使用此功能时请遵循以下准则：
-* 建议一次复制少于100个路径，且路径硬限制为500个。
-* 复制内容的总大小必须低于5 MB。 这只包括节点和属性，但不包括任何二进制文件，它们包括工作流包和内容包。
 
 ### 发布内容树工作流 {#publish-content-tree-workflow}
 
@@ -189,11 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 如果您没有提供此类过滤器，并且只使用“发布”代理，则不使用“预览”代理，并且复制操作不会影响预览层。
 
 仅当复制操作包含至少一个默认处于活动状态的代理时，才会修改资源的整体`ReplicationStatus`。 在上例中，情况并非如此，因为复制只是使用“预览”代理。 因此，您需要使用新的`getStatusForAgent()`方法，该方法允许查询特定代理的状态。 此方法也适用于“发布”代理。 如果已使用提供的代理完成任何复制操作，则返回非空值。
-
-
-**复制API路径和大小限制**
-
-建议复制的路径少于100个，其中500个是硬限制。 超出硬限制时，将引发ReplicationException。 如果您的应用程序逻辑不需要原子复制，则可以通过将ReplicationOptions.setUseAtomicCalls设置为false（将接受任意数量的路径，但在内部创建存储段以保持在此限制以下）来克服此限制。 每个复制调用传输的内容量不得超过5 MB，其中包含节点和属性，但不包含任何二进制文件（工作流包和内容包被视为二进制文件）。
 
 ## 疑难解答 {#troubleshooting}
 
