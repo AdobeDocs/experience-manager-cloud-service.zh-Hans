@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 34%
+source-wordcount: '913'
+ht-degree: 33%
 
 ---
 
@@ -180,11 +180,15 @@ ht-degree: 34%
    + [部署到 AEM as a Cloud Service](deploying/overview.md)
    + [AEM版本更新](deploying/aem-version-updates.md)
    + [为 AEM as a Cloud Service 配置 OSGi](deploying/configuring-osgi.md)
+   + [OSGi配置API](deploying/osgi-configuration-api.md)
 + 创作层 {#author-tier}
    + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [保护创作层](/help/implementing/author-tier/securing-the-author-tier.md)
 + 内容交付概述 {#content-delivery}
    + [内容交付流程](dispatcher/overview.md)
    + [云中的调度程序](dispatcher/disp-overview.md)
+   + [使用Dispatcher工具验证和调试](dispatcher/validation-debug.md)
+   + [将Dispatcher配置从AMS迁移到AEM as aCloud Service](dispatcher/ams-aem.md)
+   + [使用Dispatcher工具旧版验证和调试](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service 中的 CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service 中的缓存](dispatcher/caching.md)
