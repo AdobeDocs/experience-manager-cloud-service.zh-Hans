@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 中作为a [!DNL Cloud Service]的显着更改'
 description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5的显着更改。
-feature: 发行信息
+feature: 版本信息
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: 31810e0a0d5ba2265eab19e5845f07b1198ec466
