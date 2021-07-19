@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 元数据
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1236'
 ht-degree: 37%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 37%
 
 **要全局应用元数据配置文件，请执行以下操作之一**
 
-* 导航到`https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`并应用相应的配置文件，然后单击&#x200B;**[!UICONTROL Save]**。
+* 导航到`https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`并应用相应的配置文件，然后单击&#x200B;**Save**。
 
 * 导航到CRXDE Lite到以下节点：`/content/dam/jcr:content`。 添加属性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`。 单击&#x200B;**Save All**。
 
@@ -110,7 +110,7 @@ ht-degree: 37%
 
 ### 通过配置文件用户界面将元数据配置文件从文件夹删除 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. 单击Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据配置文件]**。
+1. 单击AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
 1. 选择您要从一个或多个文件夹删除的元数据配置文件。
 1. 单击&#x200B;**[!UICONTROL 从文件夹删除元数据配置文件]** ，然后选择一个或多个要从中删除配置文件的文件夹，然后单击&#x200B;**[!UICONTROL 完成]**。
 
@@ -118,6 +118,6 @@ ht-degree: 37%
 
 ### 通过属性将元数据配置文件从文件夹删除 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 单击Experience Manager徽标，然后导航&#x200B;**[!UICONTROL Assets]**，然后导航到要将元数据配置文件从中删除的文件夹。
+1. 单击AEM徽标，然后导航&#x200B;**[!UICONTROL Assets]**，然后导航到要将元数据配置文件从中删除的文件夹。
 1. 在文件夹上，单击复选标记以将其选中，然后单击&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
