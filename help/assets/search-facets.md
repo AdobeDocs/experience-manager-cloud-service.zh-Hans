@@ -1,19 +1,19 @@
 ---
 title: 搜索 Facet.
-description: 本文介绍了如何在Experience Manager中创建、修改和使用搜索彩块化。
+description: 本文介绍了如何在AEM中创建、修改和使用搜索彩块化。
 feature: 搜索，元数据
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 32%
+source-wordcount: '2361'
+ht-degree: 34%
 
 ---
 
 # 搜索 Facet {#search-facets}
 
-在企业范围内部署的Adobe Experience Manager Assets能够存储许多资产。 有时，如果您仅使用通用的Experience Manager搜索功能，则查找正确的资产会非常困难且费时。
+在企业范围内部署的Adobe Experience Manager(AEM)Assets能够存储许多资产。 有时，如果您仅使用AEM的通用搜索功能，则查找正确的资产会非常困难且费时。
 
 使用“过滤器”面板中的搜索彩块化，为您的搜索体验添加更多粒度，并使搜索功能更高效、更通用。 搜索彩块化可添加多个维度（谓词），以便您执行更复杂的搜索。 “过滤器”面板包含一些标准Facet。 您还可以添加自定义搜索彩块化。
 
@@ -27,7 +27,7 @@ ht-degree: 32%
 
 要进行全文搜索，请将`Fulltext`谓词添加到表单中。 使用属性谓词，可搜索与您指定的单个属性匹配的资产。 使用“选项”谓词，可搜索与特定属性的一个或多个值匹配的资产。 添加“日期范围”谓词，以搜索在指定日期范围内创建的资产。
 
-1. 单击Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**。
+1. 单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索表单]**。
 1. 在“搜索Forms”页面中，选择&#x200B;**[!UICONTROL 资产管理员搜索边栏]**，然后点按&#x200B;**编辑** ![aemassets_edit](assets/aemassets_edit.png)。
 
    ![找到并选择资产管理搜索边栏](assets/assets_admin_searchrail.png)
@@ -96,7 +96,7 @@ ht-degree: 32%
 >
 >“选项”谓词是一个自定义包装器，其中包含用于演示所述行为的属性谓词。 目前，没有 REST 端点可在本机支持该功能。
 
-1. 点按Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具>常规>搜索Forms]**。
+1. 点按AEM徽标，然后转到&#x200B;**[!UICONTROL 工具>常规>搜索Forms]**。
 1. 在“搜索 **[!UICONTROL 表单]** ”页面中，选择 **[!UICONTROL 资产管理员搜索边栏]**，然后点按编辑图标。
 1. 在“编 **[!UICONTROL 辑搜索表单]** ”页中，将“选 **[!UICONTROL 项谓词]** ”从“选 **** 择谓词”选项卡拖至主窗格。
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，输入属性的标签和名称。例如，要根据资产的格式搜索资产，请为标签指定用户友好名称，例如&#x200B;**[!UICONTROL 文件类型]**。在属性字段中指定执行搜索时所依据的属性，例如 `jcr:content/metadata/dc:format.`
@@ -116,9 +116,9 @@ ht-degree: 32%
 
 ## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
-`Multi Value Property`谓词允许您搜索资产以查找多个值。 假设您在[!DNL Assets]中包含多个产品的图像，并且每个图像的元数据都包含与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
+`Multi Value Property`谓词允许您搜索资产以查找多个值。 假设您在AEM Assets中拥有多个产品的图像，并且每个图像的元数据都包含与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
-1. 单击Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**。
+1. 单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索表单]**。
 1. 在“搜索Forms”页面上，选择&#x200B;**[!UICONTROL 资产管理员搜索边栏]**，然后点按&#x200B;**编辑** ![aemassets_edit](assets/aemassets_edit.png)。
 1. 在“编辑搜索表单”页中，将&#x200B;**[!UICONTROL 多值属性谓词]**&#x200B;从&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡拖到主窗格。
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，输入谓词的标签和占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如`jcr:content/metadata/dc:value`。 您还可以使用选择对话框来选择节点。
@@ -129,9 +129,9 @@ ht-degree: 32%
 
 ## 添加“标记”谓词 {#adding-a-tags-predicate}
 
-`Tags`谓词允许您对资产执行基于标记的搜索。 默认情况下， [!DNL Assets]会根据您指定的标记搜索资产中一个或多个标记匹配项。 换句话说，搜索查询使用指定的标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
+`Tags`谓词允许您对资产执行基于标记的搜索。 默认情况下，AEM Assets会根据您指定的标记搜索资产中一个或多个标记匹配项。 换句话说，搜索查询使用指定的标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
 
-1. 单击Experience Manager徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**。
+1. 单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索表单]**。
 1. 在“搜索Forms”页面中，选择&#x200B;**[!UICONTROL 资产管理员搜索边栏]**，然后点按&#x200B;**编辑** ![aemassets_edit](assets/aemassets_edit.png)。
 1. 在“编辑搜索表单”页中，将&#x200B;**[!UICONTROL 标签谓词]**&#x200B;从“选择谓词”选项卡拖至主窗格。
 1. 在设置选项卡中，输入谓词的占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如`jcr:content/metadata/cq:tags`。 或者，您也可以从选择对话框中选择CRXDE中的节点。
