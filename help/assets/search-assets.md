@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 搜索，元数据，资产分发
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '4916'
+source-wordcount: '4911'
 ht-degree: 7%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 7%
 
 ## 在键入时搜索建议 {#searchsuggestions}
 
-开始键入关键词时，AEM会建议可能的搜索关键词或短语。 建议基于AEM中的资产。 AEM为所有元数据字段编制索引，以帮助进行搜索。 为了提供搜索建议，系统使用以下几个元数据字段的值。 要提供搜索建议，请考虑使用适当的关键字填充以下字段：
+开始键入关键词时，Experience Manager会建议可能的搜索关键词或短语。 建议基于Experience Manager中的资产。 Experience Manager为所有元数据字段编入索引，以帮助进行搜索。 为了提供搜索建议，系统使用以下几个元数据字段的值。 要提供搜索建议，请考虑使用适当的关键字填充以下字段：
 
 * 资产标记。 （映射到`jcr:content/metadata/cq:tags`）
 * 资产标题。 （映射到`jcr:content/metadata/dc:title`）
@@ -281,7 +281,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 * 全文搜索支持`-`和`^`等运算符。 要将这些字母作为字符串文字搜索，请用双引号将搜索表达式引住。 例如，使用`"Notebook - Beauty"`而不是`Notebook - Beauty`。
 * 如果搜索结果过多，请将搜索范围[限制为对所需资产的零值。 ](#scope)当您对如何更好地查找所需资产（例如，特定文件类型、特定位置、特定元数据等）有一些想法时，效果会最佳。
 
-* **标记**:标记可帮助您对能够更高效地浏览和搜索的资产进行分类。标记有助于将相应的分类推广到其他用户和工作流。 [!DNL Experience Manager] 提供了使用Adobe Sensei人为智能服务自动标记资产的方法，这些方法可不断通过使用和培训更好地标记资产。在搜索资产时，如果您的帐户中启用了智能标记，则会将智能标记考虑在内。 它与内置搜索功能结合使用。 请参阅[搜索行为](#searchbehavior)。 要优化搜索结果的显示顺序，您可以[提高少数选定资产的搜索排名](#searchrank)。
+* **标记**:标记可帮助您对能够更高效地浏览和搜索的资产进行分类。标记有助于将相应的分类推广到其他用户和工作流。 [!DNL Experience Manager] 提供了使用Adobe Sensei人为智能服务自动标记资产的方法，这些方法可不断通过使用和培训更好地标记资产。在搜索资产时，会考虑智能标记。 它与内置搜索功能结合使用。 请参阅[搜索行为](#searchbehavior)。 要优化搜索结果的显示顺序，您可以[提高少数选定资产的搜索排名](#searchrank)。
 
 * **索引**:搜索结果中只返回已索引的元数据和资产。为获得更好的覆盖面和性能，请确保正确索引并遵循最佳实践。 请参阅[索引](#searchindex)。
 
@@ -453,7 +453,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 ## 意外的搜索结果和问题 {#unexpected-results}
 
 <!--
-**Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
+**Partially related or unrelated search results**: Experience Manager may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
 | 错误、问题、症状 | 可能的原因 | 可能的问题修复或了解 |
