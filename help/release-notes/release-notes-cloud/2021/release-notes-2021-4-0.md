@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1535'
 ht-degree: 3%
 
 ---
 
 
-# [!DNL Adobe Experience Manager]作为Cloud Service{#release-notes}的最新发行说明
+# [!DNL Adobe Experience Manager]作为Cloud Service的最新发行说明 {#release-notes}
 
 以下部分概述了作为Cloud Service的[!DNL Experience Manager]当前（最新）版本的常规发行说明。
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 [!DNL Adobe Experience Manager]作为Cloud Service2021.4.0的发布日期是2021年5月6日。
 以下版本(2021.5.0)将于2021年5月27日发布。
 
-## AEM as a A Foundation{#aem-as-a-cloud-service-foundation}
+## AEM as a A A Foundation( as aCloud Service基础){#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] {#what-is-new-sites}的新增功能
+### [!DNL Sites]的新增功能 {#what-is-new-sites}
 
 * GraphQL端点 — 现在，可以为各个AEM Sites配置启用AEM GraphQL API，并通过使用新的GraphQL控制台UI为这些配置创建自定义GraphQL端点。 UI还允许管理GraphQL端点。
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 * 内容模型、新的制表符占位符数据类型 — 新的制表符占位符数据类型允许将数据类型分组到将在内容片段编辑器的选项卡下呈现的部分中。
 
-### [!DNL Sites] {#bug-fixes-sites}中的错误修复
+### [!DNL Sites]中的错误修复 {#bug-fixes-sites}
 
 * 内容片段 — 移动内容片段或文件夹现在会更新片段内的嵌套引用(CQ-4320815)
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}的新增功能
+### [!DNL Assets]的新增功能 {#what-is-new-assets}
 
 * [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。此增强功能可加快下载速度。
 
@@ -66,13 +66,15 @@ ht-degree: 3%
 
 * 在编辑元数据架构时，新的根路径选择器字段允许管理员快速轻松地进行选择，从而缩短配置时间。
 
+* 编辑元数据架构时，会添加一种数据类型，该数据类型在元数据编辑器中提供自由格式文本区域。 用户可以使用此文本区域输入自由格式文本作为资产的元数据。 请参阅[元数据架构编辑器](/help/assets/metadata-schemas.md)。
+
 * 许多资产的元数据可以使用CSV文件批量导入，并可以导出到CSV文件。 默认日期格式现在为`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 用户可以通过更新列标题来使用其他格式。 例如，将`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`添加为CSV文件中的列标题，而不是单词`Date`。
 
 * 在列视图中浏览资产时，可视指示器会显示每个资产的已批准或已拒绝状态。
 
 * 在列视图中浏览资产时，会为过期的资产显示一个可视指示器。
 
-### [!DNL Assets] {#bug-fixes-assets}中的错误修复
+### [!DNL Assets]中的错误修复 {#bug-fixes-assets}
 
 * 尝试移动多个资产或文件夹时，控制台中会记录一个错误，并且移动操作未能完成。 如果标题无法更新，则移动操作会失败。 (CQ-4322080)
 
@@ -84,13 +86,13 @@ ht-degree: 3%
 
 * 在单行文本字段中更新和保存元数据值时，下拉菜单中的值会被删除，即使在下拉菜单中禁用了编辑也是如此。 (CQ-4317077)
 
-* 您可以使用省略号作为注释来查看资产。 使用小椭圆时，椭圆与打印版本中注释的数量重叠。 (CQ-4316792)
+* 您可以使用省略号作为注释来查看资产。 使用小椭圆时，椭圆与打印版本中的注释数重叠。 (CQ-4316792)
 
 * 在搜索后从搜索结果中选择资产时，不会显示快速发布选项。 (CQ-4317748)
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] {#what-is-new-forms}的新增功能
+### [!DNL Forms]的新增功能 {#what-is-new-forms}
 
 * **在启用了Adobe Sign的自适应Forms中使用政府ID身份验证方法**
 
@@ -114,16 +116,16 @@ ht-degree: 3%
 
    您可以在Cloud Service实例中将XDP用作记录文档模板，将AEM Forms用作Cloud ServiceSDK（本地开发环境）。 以前，支持仅限于Cloud Service实例。
 
-### [!DNL Forms] {#bug-fixes-forms}中的错误修复
+### [!DNL Forms]中的错误修复 {#bug-fixes-forms}
 
 * 将配置为未生成记录文档的自适应表单提交到配置为生成记录文档的AEM工作流后，不会显示错误消息，并且任务无法提交。
 
-### 其他更新{#misc-2021-04-0-forms}
+### 其他更新 {#misc-2021-04-0-forms}
 
 * 为了更便于识别内容，该服务现在为XDP、动态PDF和架构文件生成实时缩略图。
 * 添加了将PDF文件移动到AEM Forms UI中文件夹的功能。
 
-## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
+## Adobe Experience Manager Commerce as aCloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -182,7 +184,7 @@ AEM as a Cloud ManagerCloud Service2021.4.0的发布日期是2021年4月8日。
 
 * `Runmode`检查对非文件夹节点产生误报。
 
-## 最佳实践分析器{#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 发布日期 {#release-date-bpa}
 
