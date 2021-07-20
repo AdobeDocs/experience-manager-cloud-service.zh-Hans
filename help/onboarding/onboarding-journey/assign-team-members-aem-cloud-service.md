@@ -4,7 +4,7 @@ description: 可查看本页以了解如何将团队成员分配给AEM作为Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解系统管理员为将团队成员分配给AEM as a Cloud Service产品配置文件所必须执行的步骤，以及为什么让AEM作者能够开始使用AEM的旅程至关重要。
+本文档可帮助您了解系统管理员为将团队成员分配为AEM as a Cloud Service产品配置文件所必须执行的步骤，以及为什么让AEM作者能够开始使用AEM的旅程至关重要。
 
 阅读此部分后，您应：
 
