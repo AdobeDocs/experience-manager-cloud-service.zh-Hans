@@ -4,9 +4,9 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: 资产管理，图像配置文件，演绎版
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2714'
 ht-degree: 12%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 12%
 
 #### 将Dynamic Media图像配置文件从属性应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
 
-1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到要将图像配置文件应用到的文件夹。
+1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL Assets]**。 然后，导航到要将图像配置文件应用到的文件夹的父文件夹。
 1. 在文件夹中，选择复选标记以将其选中，然后选择&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
