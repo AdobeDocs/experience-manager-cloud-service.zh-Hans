@@ -1,12 +1,12 @@
 ---
-title: 通过Dynamic Media使CDN（内容交付网络）缓存失效
+title: 通过Dynamic Media使内容交付网络缓存失效
 description: 了解如何使CDN（内容分发网络）缓存内容失效，以便快速更新由Dynamic Media交付的资产，而无需等待缓存过期。
 feature: 资产管理
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: c9944b1ac561b54ad2e2870ab0da967c005f105f
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1331'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,13 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付给�
    | 方案 | 选项 |
    | --- | --- |
    | 我以前已使用Dynamic Media Classic创建了CDN失效模板。 | **[!UICONTROL 创建模板]**&#x200B;文本字段已预填充模板数据。 在这种情况下，您可以编辑模板，也可以继续下一步。 |
-   | 我必须创建一个模板。 我要输入什么？ | 在&#x200B;**[!UICONTROL 创建模板]**&#x200B;文本字段中，输入引用`<ID>`的图像URL（包括图像预设或修饰符），而不是像以下示例中所示的特定图像ID:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>如果模板仅包含`<ID>`，则Dynamic Media会填入`https://<publishserver_name>/is/image/<company_name>/<ID>`中，其中`<publishserver_name>`是在Dynamic Media Classic的“常规设置”中定义的发布服务器名称。 `<company_name>`是与此Experience Manager实例关联的公司根目录的名称，`<ID>`是通过要失效的资产选取器选择的资产。<br>之后的任何预设/修 `<ID>` 改工具将按原样复制在URL定义中。<br>只有图像(即 `/is/image`图像)才能基于模板自动形成。<br>对 `/is/content/`于，使用资产选取器添加资产（如视频或PDF）时，不会自动生成URL。您而是必须在CDN失效模板中指定此类资产，或者可以在&#x200B;*第2部分（共2部分）中手动将URL添加到此类资产：设置CDN失效选项*。<br>**示例：**<br>&#x200B;在第一个示例中，失效模板包 `<ID>` 含的资产URL具有 `/is/content`。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`。 Dynamic Media会根据此路径形成URL，其中`<ID>`是通过要失效的资产选取器选择的资产。<br>在第二个示例中，失效模板包含Web属性中所用资产的完整URL，其具 `/is/content` 体取决于资产选取器。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`，其中，背包是资产ID。<br>Dynamic Media中支持的资产格式有资格失效。*不*&#x200B;支持CDN失效的资产文件类型包括PostScript®、封装的PostScript®、Adobe Illustrator、Adobe InDesign、Microsoft® Powerpoint、Microsoft® Excel、Microsoft® Word和富文本格式。<br>创建模板时，请务必注意语法和拼写错误；Dynamic Media不执行任何模板验证。<br>在此CDN失效模板或第2部分的添加URL文本字 **[!UICONTROL 段中]** 指定图像智 *能裁剪的URL:设置CDN失效选项。*<br>**重要信息：**CDN失效模板中的每个条目必须位于其自身的行上。<br>*以下模板示例仅供说明。* |
+   | 我必须创建一个模板。 我要输入什么？ | 在&#x200B;**[!UICONTROL 创建模板]**&#x200B;文本字段中，输入引用`<ID>`的图像URL（包括图像预设或修饰符），而不是像以下示例中所示的特定图像ID:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>如果模板仅包含`<ID>`，则Dynamic Media会填入`https://<publishserver_name>/is/image/<company_name>/<ID>`中，其中`<publishserver_name>`是在Dynamic Media Classic的“常规设置”中定义的发布服务器名称。 `<company_name>`是与此Experience Manager实例关联的公司根目录的名称，`<ID>`是通过要失效的资产选取器选择的资产。<br>之后的任何预设/修 `<ID>` 改工具将按原样复制在URL定义中。<br>只有图像(即 `/is/image`图像)才能基于模板自动形成。<br>对 `/is/content/`于，使用资产选取器添加资产（如视频或PDF）时，不会自动生成URL。您而是必须在CDN失效模板中指定此类资产，或者可以在&#x200B;*第2部分（共2部分）中手动将URL添加到此类资产：设置CDN失效选项*。<br>**示例：**<br>&#x200B;在第一个示例中，失效模板包 `<ID>` 含的资产URL具有 `/is/content`。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`。 Dynamic Media会根据此路径形成URL，其中`<ID>`是通过要失效的资产选取器选择的资产。<br>在第二个示例中，失效模板包含Web属性中所用资产的完整URL，其具 `/is/content` 体取决于资产选取器。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`，其中，背包是资产ID。<br>Dynamic Media中支持的资产格式有资格失效。*不*&#x200B;支持CDN失效的资产文件类型包括PostScript®、封装的PostScript®、Adobe Illustrator、Adobe InDesign、Microsoft® Powerpoint、Microsoft® Excel、Microsoft® Word和富文本格式。<br><br>·创建模板时，请务必注意语法和拼写错误；Dynamic Media不执行任何模板验证。<br>· CDN失效模板最多可保存2500个字符的文本。<br>·在此CDN失效模板或第2部分的添加URL文本字 **[!UICONTROL 段中]** 指定图像智 *能裁剪的URL:设置CDN失效选项。*<br>· CDN失效模板中的每个条目必须位于其自身的行上。<br>·以下CDN失效模板示例仅供演示之用。 |
 
    ![CDN失效模板 — 创建](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
+
+   >[!NOTE]
+   >
+   >CDN失效模板最多可保存2500个字符的文本。
 
 1. 在&#x200B;**[!UICONTROL CDN失效模板]**&#x200B;页面的右上角，选择&#x200B;**[!UICONTROL 保存]**，然后选择&#x200B;**[!UICONTROL 确定]**。<br>
 
