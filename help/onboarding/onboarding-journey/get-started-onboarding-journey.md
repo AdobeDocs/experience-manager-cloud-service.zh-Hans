@@ -4,9 +4,9 @@ description: 阅读本页以了解如何开始入门历程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -21,20 +21,14 @@ ht-degree: 1%
 
 阅读此部分后，您应该能够：
 
-* 了解什么是Admin Console
 * 如何访问和登录Admin Console
 * 以系统管理员的身份通过Admin Console查看您的权限
 
-## 了解Admin Console {#login-admin-console}
-
-签署合同后，Adobe Managed Services(AMS)开始客户入门。
-
-签署合同后，Adobe将完成贵组织的配置，随后，贵组织的系统管理员将收到一封欢迎电子邮件，允许他们执行系统管理员任务，如添加用户并将他们分配给角色。
-
-Adobe管理控制台是管理和管理Adobe产品许可证和用户的中心位置。 系统管理员将登录到Adobe管理控制台以添加或删除用户等。 单击[此处](https://adminconsole.adobe.com/)以访问Adobe管理控制台。
+>[!NOTE]
+>在开始载入流程之前，请确保了解Adobe Admin Console。 Adobe管理控制台是管理和管理Adobe产品许可证和用户的中心位置。 系统管理员将登录到Adobe管理控制台以添加或删除用户等。 请参阅[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)以了解更多信息。
 
 
-## 登录到Admin Console的步骤 {#steps-admin-console}
+## 登录到Admin Console {#steps-admin-console}
 
 请按照以下步骤导航到Admin Console，并从Admin Console中查看系统管理员角色：
 
