@@ -4,10 +4,10 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: 资产管理，图像配置文件，演绎版
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 12%
+source-wordcount: '2762'
+ht-degree: 11%
 
 ---
 
@@ -160,9 +160,15 @@ ht-degree: 12%
 
 #### 将Dynamic Media图像配置文件从属性应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL Assets]**。 然后，导航到要将图像配置文件应用到的文件夹的父文件夹。
-1. 在文件夹中，选择复选标记以将其选中，然后选择&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 点按Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL Assets]**。
+1. 导航到要将图像配置文件应用到的&#x200B;*文件夹*（不是资产）。
+1. 根据您所在的视图，执行以下操作之一：
+   * 在“卡片视图”中，将指针悬停在文件夹上，然后选择复选标记以将其选中。
+   * 在列视图或列表视图中，选中文件夹名称左侧的复选框。
+1. 在工具栏中，选择&#x200B;**[!UICONTROL 属性]**。
+1. 选择&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡。
+1. 在&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;下，从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中，选择要应用的配置文件。
+1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
