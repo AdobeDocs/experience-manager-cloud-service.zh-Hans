@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 70%
+source-wordcount: '481'
+ht-degree: 66%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 70%
    + [管理视频资产](manage-video-assets.md)
    + [下载资产](download-assets-from-aem.md)
    + [签入和签出要编辑的资产](check-out-and-submit-assets.md)
-   + [资产的数字版权管理](drm.md)
+   + [Digital Rights Management资产](drm.md)
    + [对资产添加水印](watermark-assets.md)
    + [使用 [!DNL Creative Cloud] API处理资产](cc-api-integration.md)
 + 配置、管理和扩展[!DNL Assets] {#admin}
@@ -112,7 +112,7 @@ ht-degree: 70%
    + [交互式图像](dynamic-media/interactive-images.md)
    + [交互式视频](dynamic-media/interactive-videos.md)
    + [360 VR 视频](dynamic-media/360-video.md)
-   + [将 Dynamic Media 查看器与 Adobe Analytics 和 Adobe Launch 集成](dynamic-media/launch.md)
+   + [将Dynamic Media查看器与Adobe Analytics和Adobe Experience Platform标记集成](dynamic-media/tags.md)
    + [使用概览创建自定义弹出窗口](dynamic-media/custom-pop-ups.md)
    + [为响应式网站传送优化的图像](dynamic-media/responsive-site.md)
    + [预览 Dynamic Media 资产](dynamic-media/previewing-assets.md)
