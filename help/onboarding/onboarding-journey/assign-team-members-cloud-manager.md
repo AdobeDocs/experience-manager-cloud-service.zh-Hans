@@ -4,9 +4,9 @@ description: 可查看本页以了解如何将团队成员分配给Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 将团队成员分配给Cloud Manager产品配置文件 {#assign-team-members}
 
-了解如何登录Admin Console并以系统管理员身份查看您的权限后，您现在可以将团队成员分配给Cloud Manager产品配置文件。
+了解如何登录[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)并以[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)的身份查看您的权限后，即可将团队成员分配给Cloud Manager产品配置文件。
 
 ## 目标 {#objective}
 
@@ -24,24 +24,43 @@ ht-degree: 0%
 
 * 了解添加团队成员的原因和方式。
 * 了解三个不同的Cloud Manager产品配置文件，如业务所有者、部署管理员和开发人员。
-* 将团队成员分配给Cloud Manager产品配置文件（业务所有者、部署管理器和开发人员）。
+* 将团队成员分配给Cloud Manager产品配置文件，如“业务所有者”、“部署管理器”和“开发人员”。
+
+## 前提条件 {#prerequisites}
+
+在开始此部分之前，应考虑以下先决条件。 您必须是：
+
+* 系统管理员并了解[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
+* 了解[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)基础知识。
+* 必须有关于团队成员的详细信息。 系统管理员必须具有姓名和电子邮件地址，以及需要作为Cloud Service访问AEM的团队成员的角色和职责。
+
+   >[!NOTE]
+   >为了入门，我们建议您最初添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 您无需添加所有用户即可继续载入其余内容。 完成载入后，您可以稍后扩展到更多用户。
 
 ## 查看Cloud Manager产品配置文件 {#review-product-profiles}
 
 从Admin Console中，您可以看到Cloud Manager配置文件列表。
 
 >[!NOTE]
->在从Admin Console查看Cloud Manager产品配置文件之前，建议先查看可用的Cloud Manager产品配置文件。
+>在从Admin Console查看Cloud Manager产品配置文件之前，建议先查看可用的[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
 
 请按照以下步骤查看Cloud Manager配置文件列表：
 
-1. 登录Adobe Admin Console。 从&#x200B;**概述**&#x200B;页面中，从“产品和服务”卡中选择Adobe Experience Manager as a Cloud Service 。
+1. 登录到[Adobe Admin Console](https://adminconsole.adobe.com/)。 从&#x200B;**概述**&#x200B;页面中，从&#x200B;**产品和服务**&#x200B;卡中选择&#x200B;**Adobe Experience Manager作为Cloud Service**。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
    >[!NOTE]
    >请参阅登录到Admin Console，了解如何使用Admin Console。
 
 
-1. 从包含所有实例列表的表中导航到Cloud Manager实例。 您将看到预配置的Cloud Manager产品配置文件列表。
+1. 从包含所有实例列表的表中导航到&#x200B;**Cloud Manager**&#x200B;实例。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team2.png)
+
+1. 您将看到预配置的[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)的列表。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team3.png)
 
 
 ## 将用户分配给业务所有者产品配置文件 {#assign-users-business-owner}
@@ -68,7 +87,7 @@ ht-degree: 0%
 
 恭喜！ 现在，您新组建的Cloud Manager团队（包括您自己分配给“业务所有者”角色的团队）已经设置完成。 会员将收到一封欢迎电子邮件，邀请他们登录并访问Cloud Manager。 在“业务所有者”角色中，您现在只需一步即可登录到Cloud Manager并启用云资源的创建。
 
-## 将用户分配给Deployment Manager产品配置文件 {#assign-users-deployment-manager}
+## 将用户分配到部署管理器产品配置文件 {#assign-users-deployment-manager}
 
 1. 确定将管理Cloud Manager程序的用户，并将其添加到业务所有者产品配置文件。 系统管理员必须是第一个访问和登录Cloud Manager的人员。 您必须先将自己（系统管理员）添加到“业务所有者”产品配置文件中。
 
@@ -102,7 +121,7 @@ ht-degree: 0%
 
 作为分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员，您必须访问并登录Cloud Manager。
 >[!NOTE]
->请参阅导航到Cloud Manager ，以了解如何登录和访问Cloud Manager。
+>请参阅[导航到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) ，了解如何登录和访问Cloud Manager。
 
 具有“业务所有者”角色的Cloud Manager用户可以登录并设置您的云资源，包括您的项目和环境。 这将确保您的专家团队能够尽快开始访问AEMCloud Service。
 在您的业务所有者设置您的云资源后，已成功添加到Cloud Manager产品配置文件的开发人员和部署经理可以访问Cloud Manager并熟悉如何继续其学习路径。
