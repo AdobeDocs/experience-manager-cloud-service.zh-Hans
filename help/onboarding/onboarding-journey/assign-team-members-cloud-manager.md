@@ -4,7 +4,7 @@ description: 可查看本页以了解如何将团队成员分配给Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
+source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 0%
@@ -91,7 +91,7 @@ ht-degree: 0%
    >[!NOTE]
    >请参阅[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，以确保在Admin Console中为正确的用户分配正确的角色，如下所示。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!NOTE]
    >将用户至少分配一个产品配置文件，以便用户可以访问Cloud Manager。 请记住将您自己（系统管理员）分配给业务所有者。
@@ -121,7 +121,7 @@ ht-degree: 0%
    >[!NOTE]
    >请参阅[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，以确保在Admin Console中为正确的用户分配正确的角色，如下所示。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)。
 
    >[!IMPORTANT]
    >在创建Cloud Manager资源后，可以将用户添加到部署管理器产品配置文件。
@@ -147,7 +147,7 @@ ht-degree: 0%
    >[!NOTE]
    >请参阅[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，以确保在Admin Console中为正确的用户分配正确的角色，如下所示。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)。
 
 
    >[!IMPORTANT]
