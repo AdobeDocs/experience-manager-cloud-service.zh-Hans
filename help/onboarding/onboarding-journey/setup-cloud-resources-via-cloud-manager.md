@@ -4,9 +4,9 @@ description: 请阅读本页内容，了解如何通过Cloud Manager设置云资
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 0%
 
 ## 创建Cloud Service程序 {#create-cloud-service-program}
 
+请按照以下步骤从Cloud Manager创建云服务程序：
 
 1. 导航到Cloud Manager登录页面，如下所示。
 
@@ -103,9 +104,11 @@ ht-degree: 0%
 
 ## 创建云环境 {#create-cloud-environments}
 
+请按照以下步骤从Cloud Manager创建云环境：
+
 1. 成功创建云程序后，请通过导航到Cloud Manager概述页面并从环境卡中选择添加来创建云环境。
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >必须登录具有“业务所有者”或“部署管理器”角色的Cloud Manager用户，才能成功完成此步骤。
 
    此外，请观看快速视频教程，以了解Cloud Manager环境以及如何将这些环境添加到您的项目中。
@@ -119,7 +122,9 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-现在，您的团队成员必须获得对实例的权限，因为管理Cloud Manager的权限是不够的。 现在，您的云资源已创建完毕，并可供您的团队访问，系统管理员必须将您的团队成员作为Admin Console中的Cloud Service产品配置文件分配给AEM。
+您的团队成员必须获得对实例的权限，因为管理Cloud Manager的权限是不够的。 现在，您的云资源已创建完毕，并可供您的团队访问，系统管理员必须将您的团队成员作为Admin Console中的Cloud Service产品配置文件分配给AEM。
+
+您应该通过下一步审阅将团队成员作为Cloud Service产品配置文件分配给AEM文档，来继续入门历程。
 
 >[!NOTE]
 >要获得AEM as a Cloud Service用户的访问权限，用户必须属于两个产品配置文件“AEM用户”或“AEM管理员”中的一个。 了解更多。
@@ -128,7 +133,7 @@ ht-degree: 0%
 
 请查看其他资源以了解：
 
-* 程序类型和添加程序
-* 环境类型和添加环境
-* 管理Cloud Manager Git
-* 将对AEM的访问配置为从Admin ConsoleCloud Service
+* [程序类型和添加程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
+* [环境类型和添加环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
+* [管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [将对AEM的访问配置为从Admin ConsoleCloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
