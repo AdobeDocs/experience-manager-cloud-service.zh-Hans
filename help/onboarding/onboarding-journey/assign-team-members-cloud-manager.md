@@ -4,9 +4,9 @@ description: 可查看本页以了解如何将团队成员分配给Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -155,12 +155,11 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-作为分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员，您必须访问并登录Cloud Manager。
->[!NOTE]
->请参阅[导航到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) ，了解如何登录和访问Cloud Manager。
+1. 作为分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员，您必须访问并登录Cloud Manager。 请参阅[导航到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) ，了解如何登录和访问Cloud Manager。
 
-具有“业务所有者”角色的Cloud Manager用户可以登录并设置您的云资源，包括您的项目和环境。 这将确保您的专家团队能够尽快开始访问AEMCloud Service。
-在您的业务所有者设置您的云资源后，已成功添加到Cloud Manager产品配置文件的开发人员和部署经理可以访问Cloud Manager并熟悉如何继续其学习路径。
+1. 接下来，具有&#x200B;*业务所有者*&#x200B;角色的Cloud Manager用户可以登录并设置您的云资源，包括您的云计划和环境。 这将确保您的专家团队能够尽快开始访问AEMCloud Service。
+
+1. 在&#x200B;*业务所有者*&#x200B;设置您的云资源后，已成功添加到Cloud Manager产品配置文件的&#x200B;*开发人员*&#x200B;和&#x200B;*部署管理器*&#x200B;可以访问Cloud Manager并熟悉如何继续其学习路径。
 
 ## 其他资源 {#additional-resources}
 
