@@ -4,15 +4,15 @@ description: 可查看本页以了解如何将团队成员分配给AEM作为Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '680'
 ht-degree: 1%
 
 ---
 
 
-# 将AEM分配为Cloud Service产品配置文件 {#assign-team-members-cloud-service}
+# 将团队成员作为Cloud Service产品配置文件分配给AEM {#assign-team-members-cloud-service}
 
 ## 目标 {#objective}
 
