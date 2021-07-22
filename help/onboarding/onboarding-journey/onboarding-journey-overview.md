@@ -4,9 +4,9 @@ description: 阅读本页以了解如何开始入门历程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-本指南将引导您阅读最重要的主题，以便读者在阅读完成后：
+本指南将引导您完成最重要的主题，以便您在完成后：
 
 * 充分了解在AEM作为Cloud Service入门历程期间的预期内容。
 * 使您的团队能够启动并运行，并采取首要步骤了解如何为AEM作为Cloud Service应用程序创作和开发内容。
@@ -31,18 +31,13 @@ ht-degree: 1%
 
 ## 受众 {#audience}
 
-载入是指指定的系统管理员将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源和根据用户的工作职责将用户分配给相应的角色，随后每个成员都能够登录并访问其AEM作为Cloud Service资源。
+载入是指指定的[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源和根据用户的工作职责将用户分配给相应的角色，随后每个成员都能够登录并访问其AEM作为Cloud Service资源。
 
 载入历程如下图所示，以下各节详细介绍了历程的每个步骤。
 
 ## 探索入门历程 {#exploring-onboarding-journey}
 
-
 您将在此历程中探索许多主题。 以下文章为您提供了有关AEM as a Cloud Service入门步骤的基本知识。 尽管您可以直接转到历程的特定部分，但许多概念都基于之前文章中的概念进行构建。 因此，如果您是初次入门，我们建议您从头开始，然后按顺序进行。
-
-您将在此历程中探索许多主题。 以下文章提供了入门过程中所需的基础知识，并链接到详细的技术文档。
-
-尽管您可以直接转到历程的特定部分，但许多概念都基于之前文章中的概念进行构建。 因此，如果您是初次入门，我们建议您首先查看指南的学习入门概念部分中所述的文章。
 
 | # | 文章 | 描述 |
 |---|---|---|
