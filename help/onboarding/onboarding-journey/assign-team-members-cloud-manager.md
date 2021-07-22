@@ -4,9 +4,9 @@ description: 可查看本页以了解如何将团队成员分配给Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## 前提条件 {#prerequisites}
 
-在开始此部分之前，应考虑以下先决条件。 您必须是：
+在开始此部分之前，应考虑以下先决条件。 您必须：
 
-* 系统管理员并了解[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
+* 成为系统管理员并了解[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
 * 了解[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)基础知识。
-* 必须有关于团队成员的详细信息。 系统管理员必须具有姓名和电子邮件地址，以及需要作为Cloud Service访问AEM的团队成员的角色和职责。
+* 详细了解您的团队成员。 系统管理员必须具有姓名和电子邮件地址，以及需要作为Cloud Service访问AEM的团队成员的角色和职责。
 
    >[!NOTE]
    >为了入门，我们建议您最初添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 您无需添加所有用户即可继续载入其余内容。 完成载入后，您可以稍后扩展到更多用户。
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 恭喜！ 现在，您新组建的Cloud Manager团队（包括您自己分配给“业务所有者”角色的团队）已经设置完成。 会员将收到一封欢迎电子邮件，邀请他们登录并访问Cloud Manager。 在“业务所有者”角色中，您现在只需一步即可登录到Cloud Manager并启用云资源的创建。
 
-## 将用户分配到部署管理器产品配置文件 {#assign-users-deployment-manager}
+## 将用户分配给Deployment Manager产品配置文件 {#assign-users-deployment-manager}
 
 1. 确定将管理Cloud Manager程序的用户，并将其添加到Deployment Manager产品配置文件中。 系统管理员必须是第一个访问和登录Cloud Manager的人员。 您必须先将自己（系统管理员）添加到业务所有者产品配置文件中。
 
@@ -155,7 +155,9 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-1. 作为分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员，您必须访问并登录Cloud Manager。 请参阅[导航到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) ，了解如何登录和访问Cloud Manager。
+现在，您已了解了三个不同的Cloud Manager产品配置文件（如业务所有者、部署管理器和开发人员），并将团队成员分配给Cloud Manager产品配置文件（如业务所有者、部署管理器和开发人员），接下来，您应该通过Cloud Manager查看文档设置资源，以便了解：
+
+1. 作为分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员，您必须访问并登录Cloud Manager。
 
 1. 接下来，具有&#x200B;*业务所有者*&#x200B;角色的Cloud Manager用户可以登录并设置您的云资源，包括您的云计划和环境。 这将确保您的专家团队能够尽快开始访问AEMCloud Service。
 
