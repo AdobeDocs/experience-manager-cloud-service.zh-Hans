@@ -4,14 +4,14 @@ description: 阅读本页以了解如何开始入门历程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# 入门流程快速入门 {#getting-started}
+# 入门流程 {#getting-started}
 
 载入是指指定的系统管理员将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源和根据用户的工作职责将用户分配给相应的角色，随后每个成员都能够登录并访问其AEM作为Cloud Service资源。
 
