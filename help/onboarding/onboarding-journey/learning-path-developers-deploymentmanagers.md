@@ -4,9 +4,9 @@ description: 如果您是开发人员或部署管理员，请阅读本页以了�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 4%
 
 ## 下一步 {#whats-next}
 
-开发人员和部署管理器现在已准备好了解如何在AEMaCS中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。
+开发人员和部署经理现在已准备好了解如何在AEM as a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。
 
 ## 其他资源 {#additional-resources}
 
