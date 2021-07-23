@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中处理视频。
 feature: 视频配置文件
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9459'
 ht-degree: 19%
 
 ---
@@ -151,7 +151,7 @@ Dynamic Media中的视频是一个端到端解决方案，可轻松发布高质�
 
 Dynamic Media支持为MP4 H.264视频播放移动设备视频。您可以在以下位置找到支持此视频格式的BlackBerry®设备：[BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支持的视频格式。
 
-您可以在以下位置找到支持此视频格式的Windows®设备：[Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)?redirectedfrom=MSDN)上支持的视频格式
+在以下[Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)上支持的视频格式中，您可以找到支持此视频格式的Windows®设备。
 
 * 使用 Dynamic Media 视频查看器预设播放视频，包括以下查看器：
 
@@ -301,7 +301,7 @@ HLS是Apple的自适应视频流播放标准，可根据网络带宽容量自动
 
 获取文件元数据的方法如下：通过使用视频编辑工具查看文件的元数据，或者使用专门为获取元数据而设计的应用程序。下面说明了如何使用第三方应用程序 MediaInfo 获取视频文件的元数据：
 
-1. 转到此网页：[https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download)。
+1. 转到[MediaInfo下载](https://mediaarea.net/en/MediaInfo/Download)。
 1. 选择并下载 GUI 版本的安装程序，然后按照安装说明进行操作。
 1. 安装后，右键单击视频文件(仅限Windows®)并选择“MediaInfo”，或打开“MediaInfo”并将视频文件拖到应用程序中。您会看到与视频文件关联的所有元数据，包括其宽度、高度和fps。
 
