@@ -4,9 +4,9 @@ description: 如果您是AEM用户，请阅读本页以了解获取访问权限�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bfed38bbb0a08e9d6484ec579c4b11d04282473b
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '335'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ## 下一步 {#whats-next}
 
-现在，您可以开始启动页面创作和发布的学习路径。 要了解更多信息，请参阅页面创作快速入门指南。
+现在，您可以开始启动页面创作和发布的学习路径。 您应该遵循该路径，方法是接下来查看文档“AEM用户学习路径”。
 
 ## 其他资源 {#additional-resources}
 
