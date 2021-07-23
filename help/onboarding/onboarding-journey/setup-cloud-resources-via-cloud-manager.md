@@ -4,9 +4,9 @@ description: 请阅读本页内容，了解如何通过Cloud Manager设置云资
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -83,40 +83,55 @@ ht-degree: 0%
    >[!NOTE]
    >您必须是分配给Cloud Manager业务所有者产品配置文件的团队成员，才能成功完成此步骤。
 
-1. 从此处，选择添加程序以启动添加程序向导。 请观看视频，了解如何创建AEMaCS项目以及在创建项目之前的重要注意事项。
+   从此处，单击&#x200B;**添加程序**&#x200B;以启动“添加程序”向导。
 
-1. 有关如何使用“添加程序”向导的分步说明，请转至此处。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
-   >[!CAUTION]
-   >请记住，程序名称在创建后无法更改。 我们建议您确定您希望给程序提供什么名称。
+   >[!NOTE]
+   >请观看[视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)，了解如何创建AEM as a Cloud程序，并在创建程序之前了解重要注意事项。
 
-   如果您必须更改项目名称，则需要通过Adobe支持部门打开一个案例，或者联系您的Adobe代表。 他们将协助有效删除该程序。 您必须重新开始工作，您的团队可能会失去工作。
+   >[!IMPORTANT]
+   >有关如何使用“添加程序”向导的分步说明，请转至[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en)。
+   >
+   >* 请记住，程序名称在创建后无法更改。 我们建议您确定您希望给程序提供什么名称。
+   >* 如果您必须更改项目名称，则需要通过Adobe支持部门打开一个案例，或者联系您的Adobe代表。 他们将协助有效删除该程序。 您必须重新开始工作，您的团队可能会失去工作。
 
-1. 成功创建云程序后，您可以导航到程序以查看程序的概述页面，如下所示：
 
-1. 如果您尚未执行此操作，现在是将开发人员成员添加到Cloud Manager团队的好时机，请转到将用户添加到开发人员产品配置文件并按照列出的步骤进行操作。
+1. 成功创建云程序后，您可以导航到程序以查看程序的&#x200B;**概述**&#x200B;页面，如下所示。
 
-1. 分配给开发人员产品配置文件的成员可以登录到Cloud Manager和管理Cloud Manager Git。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources8.png)
 
+   >[!NOTE]
+   >如果您尚未执行此操作，现在可以将开发人员成员添加到您的Cloud Manager团队。 请参阅将用户添加到开发人员产品配置文件，并按照列出的步骤操作。
+
+1. 分配给开发人员产品配置文件的成员可以登录到Cloud Manager和[管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
 
    干得好！ 现在，您的程序已成功创建，您的Cloud Manager Git可供开发人员访问！
 
 
 ## 创建云环境 {#create-cloud-environments}
 
+成功创建云程序后，请创建云环境。
+
 请按照以下步骤从Cloud Manager创建云环境：
 
-1. 成功创建云程序后，请通过导航到Cloud Manager概述页面并从环境卡中选择添加来创建云环境。
+1. 导航到Cloud Manager的&#x200B;**概述**&#x200B;页面，然后从环境卡中选择&#x200B;**添加**。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources9.png)
 
    >[!IMPORTANT]
    >必须登录具有“业务所有者”或“部署管理器”角色的Cloud Manager用户，才能成功完成此步骤。
 
-   此外，请观看快速视频教程，以了解Cloud Manager环境以及如何将这些环境添加到您的项目中。
+   此外，请观看[视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)快速教程，了解Cloud Manager环境以及如何将它们添加到您的项目中。
 
-1. 这将启动添加环境向导，该向导将指导您添加环境。 首先添加开发环境，以便您熟悉。
+1. 这将启动添加环境向导，该向导将指导您添加环境。 首先添加开发环境，以便您熟悉。 请参阅[添加环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)以了解更多信息。
 
-1. 如果您尚未执行此操作，则可以立即将开发人员成员添加到您的Cloud Manager团队，转到将用户添加到开发人员产品配置文件，然后按照列出的步骤操作。 这样，开发人员便可以开始导航到Cloud Manager并管理Cloud Manager Git。
+   >[!NOTE]
+   >如果您尚未执行此操作，现在可以将开发人员成员添加到您的Cloud Manager团队。 请参阅将用户添加到开发人员产品配置文件，并按照列出的步骤操作。
 
+1. 分配给开发人员产品配置文件的成员可以登录到Cloud Manager和[管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
+
+   干得好！ 现在，您的程序已成功创建，您的Cloud Manager Git可供开发人员访问！
 
    恭喜！ 现在，您的云程序环境已经创建完毕，并且开发人员已添加到团队中！
 
