@@ -4,10 +4,10 @@ description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Mana
 feature: 版本信息
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 5%
+source-wordcount: '963'
+ht-degree: 6%
 
 ---
 
@@ -56,13 +56,14 @@ ht-degree: 5%
 | 元数据写回 | 工作方式不同 | 默认为已禁用. 根据需要启用相应的工作流启动器。 写回由资产微服务处理。 |
 | 使用包管理器处理上传的资产 | 需要人工干预。 | 使用&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作手动重新处理。 |
 | MIME类型检测 | 不受支持. | 如果您上传的数字资产没有扩展或扩展名不正确，则可能无法按需要进行处理。 用户仍可以在DAM中存储没有扩展名的二进制文件。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME类型检测。 |
-| 复合资产的子资产生成或注释 | 不受支持. | 未满足相关用例。 例如，无法查看或注释多页PDF、INDD、PPT、PPTX和AI文件。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 |
+| 复合资产的子资产生成或注释 | 不受支持. | 可能无法满足相关用例。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 |
 | 主页 | 不受支持. | 请参阅[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 从ZIP存档提取资产 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP提取。 |
 | 资产评级 | 不受支持. | 不支持元数据架构编辑器中的评级小组件。 |
 | 内容处置过滤器 | 不受支持. | `ContentDispositionFilter`的常见用例是，让管理员配置[!DNL Experience Manager]以提供HTML文件，并在内联打开PDF文件，而不是下载这些文件。 在发布实例上，您可以使用Dispatcher配置管理处置。 在创作实例上，Adobe不建议修改内容处置标头。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)中的[内容处置筛选器。 |
 | [下载报表](/help/assets/asset-reports.md) | 不受支持. | 目前，无法使用通知资产使用的下载报表。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)中的[下载报表。 |
 | 产品照片拍摄模板 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)中的[产品照片拍摄模板。 |
+| 智能翻译 | 不受支持. | [as ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) a中不支持智 [!DNL Experience Manager] 能翻 [!DNL Cloud Service]译。 |
 | 经典 UI | 不受支持. | 只有启用了触屏的用户界面才可用。 |
 
 >[!MORELIKETHIS]
