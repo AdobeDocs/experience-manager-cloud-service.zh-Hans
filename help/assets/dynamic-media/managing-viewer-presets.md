@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中创建和管理查看器预设。
 feature: 查看器预设，查看器
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4231'
 ht-degree: 16%
 
 ---
@@ -68,7 +68,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 * Apple iPad
 * Android™智能手机
 * Android™平板电脑
-* 对于视频，为[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))提供了对MP4播放的额外支持。
+* 对于视频，为[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)提供了对MP4播放的额外支持。
 
 ### 查看器预设的富媒体类型 {#rich-media-types-for-viewer-presets}
 
