@@ -4,9 +4,9 @@ description: 可查看本页以了解如何将团队成员分配给AEM作为Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '779'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-要授予AEM作为Cloud Service用户的访问权限，用户必须属于两个产品配置文件之一，例如&#x200B;*AEM用户*&#x200B;或&#x200B;*AEM管理员*。 您的团队成员必须获得对AEM实例的权限，因为管理Cloud Manager的权限是不够的。 了解更多。
+要授予AEM作为Cloud Service用户的访问权限，用户必须属于两个产品配置文件之一，例如`AEM Users`或`AEM Administrators`。 您的团队成员必须获得对AEM实例的权限，因为管理Cloud Manager的权限是不够的。 了解更多。
 
 >[!NOTE]
 >系统管理员分配给AEM用户产品配置文件的每个用户都将拥有Cloud Manager的（只读）访问权限。
@@ -45,24 +45,22 @@ ht-degree: 1%
    >为了入门，我们建议您最初添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 您无需添加所有用户即可继续载入其余内容。 完成载入后，您可以稍后扩展到更多用户。
 
 
-1. 登录Admin Console
-（与之前相同）
+1. 登录到[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。 有关更多详细信息，请参阅登录Admin Console。
 
-1. 查看AEM as a Cloud Service产品配置文件
-从Admin Console中，您可以看到Cloud Manager配置文件列表。 要执行此操作：
+1. 查看[AEM as a Cloud Service产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
+
+请按照以下步骤查看Adobe Admin Console中的Cloud Manager配置文件列表：
 
 1. 登录Adobe Admin Console后，从“产品和服务”卡中选择Adobe Experience Manager as a Cloud Service :
 
 1. 导航并选择实例（开发环境的创作实例），如下图所示。
-
-
 
    现在，您将能够看到AEM作为Cloud Service产品配置文件的列表，用户需要根据其角色对其进行分配。 要了解有关这些功能的更多信息，请转至AEM as a Analytics Product Profiles。
 
 
 ## 将团队成员添加到AEM用户或AEM管理员产品配置文件 {#add-team-members}
 
-要授予AEM作为Cloud Service实例用户的访问权限，用户必须属于两个产品配置文件“AEM用户”或“AEM管理员”中的一个。
+要授予AEM作为Cloud Service实例的访问权限，用户必须属于两个产品配置文件`AEM Users`或`AEM Administrators`中的一个。
 
 >[!NOTE]
 >您必须获得实例的权限，但管理Cloud Manager的权限是不够的。 了解更多。
@@ -87,5 +85,5 @@ ht-degree: 1%
 
 ## 其他资源 {#additional-resources}
 
-配置对AEM的访问（视频演练）
-页面创作快速入门指南
+* [配置对AEM的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
+* [页面创作快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
