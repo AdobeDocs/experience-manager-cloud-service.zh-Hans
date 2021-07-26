@@ -6,16 +6,16 @@ mini-toc-levels: 1
 feature: 协作，Adobe资产链接，桌面应用程序
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 18%
+source-wordcount: '3383'
+ht-degree: 15%
 
 ---
 
-# AEM和Creative Cloud集成最佳实践 {#aem-and-creative-cloud-integration-best-practices}
+# Adobe Experience Manager和Creative Cloud集成最佳实践 {#aem-and-creative-cloud-integration-best-practices}
 
-Adobe Experience Manager(AEM)Assets是一款数字资产管理(DAM)解决方案，可以与Adobe Creative Cloud集成，以帮助DAM用户与创意团队合作，从而简化内容创建过程中的协作。
+Adobe Experience Manager Assets是一款数字资产管理(DAM)解决方案，它可以与Adobe Creative Cloud集成，以帮助DAM用户与创意团队合作，从而简化内容创建过程中的协作。
 
 Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以帮助他们创建数字资产。 它包括桌面和移动应用程序、云服务（如具有桌面同步或Web体验的存储）以及市场(如Adobe Stock)。
 
@@ -23,59 +23,60 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 
 >[!NOTE]
 >
->AEM到Creative Cloud文件夹共享现已弃用，不再在下文中介绍。 Adobe建议使用Adobe资产链接或AEM桌面应用程序等较新功能，以便创意用户能够访问AEM中管理的资产。
+>Experience Manager到Creative Cloud文件夹共享现已弃用，不再涵盖以下内容。 Adobe建议使用Adobe资产链接或Experience Manager桌面应用程序等新功能，为创意用户提供对Experience Manager中管理的资产的访问权限。
 
 ## 创意人员、营销人员和DAM用户的协作需求 {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | 要求 | 用例 | 涉及的曲面 |
 |---|---|---|
-| 简化桌面版创意人员的体验 | 简化从DAM(AEM Assets)访问资产的流程，供创意专业人士或更广泛的使用本机资产创建应用程序的桌面用户使用。 他们需要一种简单明了的方法来发现、使用（打开）、编辑和保存对AEM所做的更改，以及上传新文件。 | Win或Mac台式机；Creative Cloud应用程序 |
-| 从Adobe Stock提供高质量、可随时使用的资产 | 营销人员通过协助资产采购和发现来帮助加快内容创建流程。 创意专业人士可直接在其创意工具中使用已批准的资产。 | AEM Assets;Adobe Stock市场；元数据字段 |
-| 按组织分发和共享资产 | 内部部门/地方分支机构和外部合作伙伴、分销商和代理使用由父组织共享的已批准资产。 该组织希望安全、无缝地共享所创建的资产，以便更广泛地重复使用。 | Brand Portal、资产共享共用 |
+| 简化桌面版创意人员的体验 | 简化从DAM([!DNL Assets])访问资产的流程，供创意专业人士（更广泛地说，是使用本机资产创建应用程序的桌面用户）使用。 他们需要一种简单明了的方法来发现、使用（打开）、编辑和保存对Experience Manager所做的更改，以及上传新文件。 | Win或Mac台式机；Creative Cloud应用程序 |
+| 从[!DNL Adobe Stock]提供高质量、可随时使用的资产 | 营销人员通过协助资产采购和发现来帮助加快内容创建流程。 创意专业人士可直接在其创意工具中使用已批准的资产。 | [!DNL Assets]; [!DNL Adobe Stock] 市场；元数据字段 |
+| 按组织分发和共享资产 | 内部部门/地方分支机构和外部合作伙伴、分销商和代理使用由父组织共享的已批准资产。 该组织希望安全、无缝地共享所创建的资产，以便更广泛地重复使用。 | [!DNL Brand Portal], [!DNL Asset Share Commons] |
 
 ## Adobe服务以支持协作需求 {#adobe-offerings-to-support-the-collaboration-need}
 
 | 参与角色的价值主张 | Adobe服务 | 涉及的曲面 |
 |---|---|---|
-| 创意用户从AEM中发现资产、打开并使用资产、编辑资产并将更改上传到AEM，以及将新文件上传到AEM，而无需离开Creative Cloud应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign |
-| 业务用户可简化资产的打开和使用、编辑和上传对AEM的更改，以及从桌面环境将新文件上传到AEM的过程。 它们使用通用集成来打开本机桌面应用程序中的任何资产类型，包括非Adobe资产类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | AEM桌面应用程序在Win和Mac桌面上 |
-| 营销人员和企业用户可在AEM中发现、预览、许可和保存和管理Adobe Stock资产。 授权资产和已保存的资产可提供精选Adobe Stock元数据以更好地管理。 | [Experience Manager和Adobe Stock集成](aem-assets-adobe-stock.md) | AEM web界面 |
+| 创意用户从[!DNL Experience Manager]中发现资产、打开并使用资产、编辑资产并将更改上传到[!DNL Experience Manager]，以及将新文件上传到[!DNL Experience Manager]，而无需离开其[!DNL Creative Cloud]应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
+| 业务用户可简化资产的打开和使用、编辑和上传对[!DNL Experience Manager]所做的更改，以及从桌面环境将新文件上传到[!DNL Experience Manager]的过程。 它们使用通用集成来打开本机桌面应用程序中的任何资产类型，包括非Adobe资产类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Experience ManagerWin和Mac桌面上的桌面应用程序 |
+| 营销人员和企业用户可在Experience Manager内发现、预览、许可和保存并管理Adobe Stock资产。 授权资产和已保存的资产可提供精选Adobe Stock元数据以更好地管理。 | [Experience Manager和Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] web界面 |
+| 改进数字产品设计人员与营销人员之间的协作。 让设计师在Adobe XD画布上的设计和线框模型中使用数字资产。 | [[!DNL Adobe Asset Link] 对象 [!DNL Adobe XD]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 
-本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。其他解决方案，如 [AEM Assets Brand Portal](https://helpx.adobe.com/cn/experience-manager/brand-portal/user-guide.html)，可基于 [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 组件构建的解决方案， [Link Share](share-assets.md)[](/help/assets/manage-digital-assets.md) ，使用AEM Assets Web UI，应根据特定要求审查这些解决方案。
+本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。诸如[Experience ManagerAssets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)之类的替代解决方案，应根据特定要求审查可基于[资产共享共用](https://opensource.adobe.com/asset-share-commons/)组件、 [链接共享](share-assets.md)使用[Experience Manager资产Web UI](/help/assets/manage-digital-assets.md)构建的解决方案。
 
-![AEM的Creative Cloud连接：确定要使用的功能](assets/creative-connections-aem.png)
+![Creative Cloud连接以进行Experience Manager:确定要使用的功能](assets/creative-connections-aem.png)
 
 确定要使用的能力
 
 ### 用例映射和Adobe解决方案 {#mapping-of-use-cases-and-adobe-solutions}
 
-| 用例 | Adobe Asset Link | AEM 桌面应用程序 | 备注或替代方法 |
+| 用例 | Adobe Asset Link | Experience Manager 桌面应用程序 | 备注或替代方法 |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Discover — 浏览AEM文件夹 | 是 | AEM Web UI +桌面操作 | 浏览网络共享时，关闭缩略图以避免下载资产的二进制文件。 |
-| Discover — 访问AEM收藏集 | 是 | AEM Web UI +桌面操作 |  |
-| Discover — 从AEM中搜索资产 | 是 | AEM Web UI +桌面操作 |  |
+| Discover — 浏览文件夹 | 是 | Experience ManagerWeb UI +桌面操作 | 浏览网络共享时，关闭缩略图以避免下载资产的二进制文件。 |
+| Discover — 访问收藏集 | 是 | Experience ManagerWeb UI +桌面操作 |  |
+| Discover — 搜索资产 | 是 | Experience ManagerWeb UI +桌面操作 |  |
 | 使用 — 打开的资产 | 是 | 是  — 适用于任何应用程序 | [从Web界面或](/help/assets/manage-digital-assets.md#previewing-assets) 从Finder打开 |
-| 使用 — 将资产从AEM放入文档中 | 是 — 嵌入 | 是 — 链接或嵌入 | AEM桌面应用程序允许将资产作为本地文件系统上的文件访问。 本机应用程序中的这些链接由本地路径表示。 |
+| 使用 — 将资产从Experience Manager放入文档中 | 是 — 嵌入 | 是 — 链接或嵌入 | Experience Manager桌面应用程序允许将资产作为本地文件系统上的文件访问。 本机应用程序中的这些链接由本地路径表示。 |
 | 编辑 — 打开进行编辑 | 是 — 签出操作 | 是 — 打开操作（在网络共享中） | [签出默认情](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 况下，将资产保存到用户的Creative Cloud存储帐户(由Creative Cloud应用程序同步)。 |
-| 编辑 — 在AEM外进行中的工作 | 是 — 用户的Creative Cloud存储帐户中可用的资产已同步到桌面。 | 是 |  |
+| 编辑 — 在Experience Manager外进行中 | 是 — 用户的Creative Cloud存储帐户中可用的资产已同步到桌面。 | 是 |  |
 | 编辑 — 上传更改 | 是 — [签入操作](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)，带有可选注释 | 是 |  |
 | 上传 — 单个文件 | 是 — 上载当前活动文档 | 是 | [通过Web界面上传](/help/assets/manage-digital-assets.md#uploading-assets) |
 | 上传 — 多个文件/分层文件夹结构 | 否 | 是 | [通过Web界面上传](/help/assets/manage-digital-assets.md#uploading-assets);自定义脚本或工具 |
-| 杂项 — 用户和登录 | Creative Cloud用户登录Creative Cloud桌面应用程序后被识别(SSO) | AEM用户/登录 | 两个解决方案的用户都将计入AEM用户配额。 |
-| 杂项 — 网络和访问 | 需要从用户的桌面访问通过网络部署的AEM | 需要从用户的桌面访问通过网络部署的AEM | Adobe资产链接不共享网络代理环境。 |
+| 杂项 — 用户和登录 | Creative Cloud用户登录Creative Cloud桌面应用程序后被识别(SSO) | Experience Manager用户/登录 | 两个解决方案的用户将根据Experience Manager用户配额进行计数。 |
+| 杂项 — 网络和访问 | 需要从用户的桌面访问以通过网络Experience Manager部署 | 需要从用户的桌面访问以通过网络Experience Manager部署 | Adobe资产链接不共享网络代理环境。 |
 
 
 <!-- Removing this row from table as migration guide is not yet final.
 | Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
 -->
 
-为了支持资产分发用例，应考虑使用其他解决方案：
+要支持资产分发用例，请考虑以下选项：
 
-* [AEM Assets Brand](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html)  Portal ，可为Assets提供可配置的附加组件以发布资产。
+* [Experience Manager资产品](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 牌组合，以获取可配置的资产加载项来发布资产。
 
-* 自定义解决方案基于[资产共享共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)代码库创建。
-* AEM [链接共享](/help/assets/share-assets.md)以使用链接共享临时资产。
-* [AEM Assets Web](/help/assets/manage-digital-assets.md) 与外部用户区域进行界面，这些区域由AEM访问控制设置保护，并进行必要的IT/网络配置调整，使这些外部用户可以访问AEM。
+* 自定义解决方案基于[资产共享共用](https://opensource.adobe.com/asset-share-commons/)代码库创建。
+* Experience Manager[链接共享](/help/assets/share-assets.md)以使用链接共享临时资产。
+* [资产Web](/help/assets/manage-digital-assets.md) 与外部方的区域交互，这些区域由Experience Manager访问控制设置进行保护，并进行必要的IT/网络配置调整，使这些外部用户可以访问Experience Manager。
 
 ## 关键概念和用例 {#key-concepts-and-use-cases}
 
@@ -89,11 +90,11 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 
 * **次要资产更新/更改：**&#x200B;对数字资产进行快速、微小的更改。它通常是响应润饰或次要编辑请求、资产审阅或批准（例如，重新定位、更改文本大小、调整饱和度/亮度、颜色等）而生成的。
 * **主要资产更新/更改：**&#x200B;需要大量工作，并且有时必须在较长的一段时间内完成的数字资产更改。它通常包括多项更改。更新资产时必须多次保存。主要资产更新通常会导致资产进入 WIP 阶段。
-* **DAM：**&#x200B;数字资产管理。在本文档中，除非另有特别说明，否则它与 AEM Experience Manager Assets 同义。
+* **DAM：**&#x200B;数字资产管理。在本文档中，除非另有特别说明，否则它与 Experience Manager Assets 同义。
 * **创意用户：**&#x200B;使用 Creative Cloud 应用程序和服务创建数字资产的创意专业人士。在某些情况下，创意用户可能是使用 Creative Cloud 但不创建数字资产的创意团队成员（如创意总监或创意团队经理）。
 * **DAM 用户：** DAM 系统的典型用户。根据组织的不同，DAM 用户可以是营销或非营销用户，例如业务线 (LOB) 用户、管理员、销售人员等。
 
-### 使用AEM和Creative Cloud集成时的注意事项 {#considerations-when-using-aem-and-creative-cloud-integration}
+### 使用Experience Manager和Creative Cloud集成时的注意事项 {#considerations-when-using-aem-and-creative-cloud-integration}
 
 <!--incomplete and TBD: 
 
@@ -104,27 +105,27 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 
 -->
 
-以下是AEM与Creative Cloud集成最佳实践的简短摘要。 阅读本文档的其余部分，以详细了解这些内容。
+以下是Experience Manager和Creative Cloud集成最佳实践的简短摘要。 阅读本文档的其余部分，以详细了解这些内容。
 
-* **对于使用 Photoshop、InDesign 或 Illustrator 的创意用户：** Adobe Asset Link 提供了最佳用户体验，包括清晰处理从 AEM 中签出的正在进行的资产
-* **简化从桌面访问任何通用文件格式或应用程序资产的操作：**&#x200B;请使用 AEM 桌面应用程序
+* **对于在Photoshop、InDesign或Illustrator中工作的创意用户：** Adobe资产链接可提供最佳的用户体验，包括清晰处理从Experience Manager中签出的正在进行的资产
+* **简化从桌面访问任何通用文件格式或应用程序资产的操作：** 使用Experience Manager桌面应用程序
 * **了解在 DAM 中存储资产的原因和时间：**&#x200B;将提供给组织中更广泛团队的更新
 * **关注共享的资产数量：**&#x200B;如果您的用例是资产分发，则管理和安全可能是最重要的方面。考虑使用为大规模操作而构建的工具，如 Brand Portal。
 * **了解资产生命周期：**&#x200B;了解组织中不同团队处理资产的方式
 * **谨慎处理对资产的频繁保存：** Adobe Asset Link 通过 PS、AI、ID 为您提供相关服务。对于其他应用程序，除非您需要在 DAM 中完成所有更改，否则不要在映射/共享文件夹中执行正在进行的任务
 
-### 从AEM Assets访问Adobe Stock资产 {#access-to-adobe-stock-assets-from-aem-assets}
+### 从Adobe Stock资产访问Experience Manager资产 {#access-to-adobe-stock-assets-from-aem-assets}
 
-[AEM和Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 集成使AEM用户能够从Adobe Stock中搜索、预览、许可和保存资产，并将资产保存到AEM中。授权和保存的Adobe Stock资产已选择Stock元数据，该元数据可用于使用额外的过滤器搜索它们。
+[Experience Manager和Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 集成使Experience Manager用户能够从Adobe Stock中搜索、预览、许可和保存资产以将其保存到Experience Manager中。授权和保存的Adobe Stock资产已选择Stock元数据，该元数据可用于使用额外的过滤器搜索它们。
 
 有关此集成的几个重要要点：
 
-* 将Adobe库中的资产保存到AEM后，它们将成为常规的AEM Assets，并将二进制文件保存到AEM存储库。 在AEM中为资产保存了一些与Adobe Stock相关的元数据，否则，摄取过程与任何其他文件的过程相同。 例如，如果智能标记处于活动状态，则会在保存时将标记添加到这些资产中。
-* 保存到AEM的资产是一个副本，而不是返回到Adobe Stock的链接。
+* 将Adobe库中的资产保存到Experience Manager后，这些资产会成为常规的Experience Manager资产，并且二进制文件会保存到Experience Manager存储库。 在Experience Manager中为资产保存了一些与Adobe Stock相关的元数据，否则，摄取过程与任何其他文件的过程相同。 例如，如果智能标记处于活动状态，则会在保存时将标记添加到这些资产中。
+* 保存到Experience Manager的资产是一个副本，而不是返回到Adobe Stock的链接。
 
-**在Creative Cloud中处理从Adobe Stock保存到AEM的资产**。此集成与Adobe资产链接无关，但Adobe资产链接可以这样识别从Stock中保存的这些资产，并在Photoshop、Illustrator或InDesign的Adobe资产链接扩展UI中，在这些资产上显示其他元数据和Stock图标。 这些文件可用于浏览、打开等 — 因为它们是保存到AEM时的常规AEM资产。
-使用具有Adobe资产链接扩展的Creative Cloud应用程序的创意用户除了能够从Adobe Stock访问AEM中已获得许可的资产外，还可以使用“Creative Cloud库”面板搜索、预览和许可Adobe Stock资产。
-获得Adobe Stock授权并保存到AEM中的资产可供访问AEM Assets部署的更广泛的团队使用，而通过Creative Cloud库面板从Adobe Stock授权资产的创意人员仅可在其Creative Cloud帐户中默认自行使用这些资产。
+**在Adobe Stock中将从Creative Cloud保存到Experience Manager的资产处理为**。此集成与Adobe资产链接无关，但Adobe资产链接可以这样识别从Stock中保存的这些资产，并在Photoshop、Illustrator或InDesign的Adobe资产链接扩展UI中，在这些资产上显示其他元数据和Stock图标。 这些文件可用于浏览、打开等操作 — 因为它们是保存到Experience Manager时的常规Experience Manager资产。
+使用具有Adobe资产链接扩展的Creative Cloud应用程序的创意用户除了能够从Adobe Stock访问已获得许可的资产以进入Experience Manager外，还可以使用Creative Cloud库面板来搜索、预览和许可Adobe Stock资产。
+获得Adobe Stock授权并保存到Experience Manager中的资产可供访问Experience Manager资产部署的更广泛团队使用，而通过Creative Cloud库面板从Adobe Stock授权资产的创意人员仅可在其Creative Cloud帐户中默认自行使用这些资产。
 
 ## 关于在DAM中存储资产 {#about-storing-assets-in-a-dam}
 
@@ -134,7 +135,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 
 将资产存储在DAM中，可轻松访问和查找资产。 它可确保组织或生态系统（包括合作伙伴、客户等）中的众多用户都能够利用资产。
 
-大多数组织选择仅存储与下游营销/LOB流程相关的资产(通过AEM Sites发布到Web渠道等渠道，或Adobe Experience Cloud提供的其他渠道 — Marketing Cloud、Advertising Cloud，以及Analytics Cloud测量、提供给用户/合作伙伴等)。 此外，组织会在DAM中存储可能需要审核/批准流程的资产。 这样，DAM存储的资产大多数是极有可能被利用的资产，并避免存储闲置资产。
+大多数组织选择仅存储与下游营销/LOB流程相关的资产(通过Experience Manager站点或Adobe Experience Cloud提供的其他渠道(Marketing Cloud、Advertising Cloud和Analytics Cloud测量、提供给用户/合作伙伴等)发布到Web渠道等渠道。 此外，组织会在DAM中存储可能需要审核/批准流程的资产。 这样，DAM存储的资产大多数是极有可能被利用的资产，并避免存储闲置资产。
 
 存储资产还需要考虑技术和资源利用方面的考虑因素。 DAM提供了有关存储资产的其他服务，包括提取元数据、版本控制、生成预览/转码、管理引用和添加访问控制信息。 这些服务需要额外的时间和基础架构资源。
 
@@ -169,13 +170,13 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 
 ### 用户对DAM的访问权限 {#user-access-to-dam}
 
-AEM Assets根据用户对AEM Assets部署的访问权限支持两种类型的用户。 通常，企业网络（防火墙）内的用户可以直接访问DAM。 企业网络外的其他用户将无法直接访问。 用户类型从技术角度决定可以使用哪些集成。
+Experience Manager资产根据用户对Experience Manager资产部署的访问权限，支持两种类型的用户。 通常，企业网络（防火墙）内的用户可以直接访问DAM。 企业网络外的其他用户将无法直接访问。 用户类型从技术角度决定可以使用哪些集成。
 
 #### 直接访问DAM的创意用户 {#creative-users-with-direct-access-to-dam}
 
-通常，已载入内部网络的内部创意团队或代理/创意专业人士有权访问DAM实例，包括AEM登录。 可以设置AEM和网络基础架构，以允许直接访问外部方（通常是受信任的组织，如为客户工作的机构），从而通过网络(例如，通过VPN或IP允许列表)访问AEM。
+通常，内部创意团队或已载入内部网络的代理/创意专业人士有权访问DAM实例，包括Experience Manager登录。 Experience Manager和网络基础架构可以设置为允许直接访问外部方（通常是受信任的组织，如为客户工作的机构），以便能够通过网络(例如，通过VPN或IP允许列表)访问Experience Manager。
 
-在这种情况下，Adobe资产链接或AEM桌面应用程序可让您轻松访问最终/已批准的资产，并允许您将创意就绪资产保存到DAM。
+在这种情况下，Adobe资产链接或Experience Manager桌面应用程序可让您轻松访问最终/已批准的资产，并允许您将创意就绪资产保存到DAM。
 
 #### 无权访问DAM的创意用户 {#creative-users-without-access-to-dam}
 
@@ -184,25 +185,25 @@ AEM Assets根据用户对AEM Assets部署的访问权限支持两种类型的用
 使用以下策略提供对最终/已批准资产的访问权限：
 
 * 如果资产链接无法正常工作，请使用桌面应用程序。
-* 使用[AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html)将资产安全地分发给外部合作伙伴
+* 使用[Experience ManagerAssets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)将资产安全地分发给外部合作伙伴
 * 使用基于[资产共享共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)的分发和源门户的自定义实施
-* 使用在AEM中设置的访问控制和必要的网络基础架构（例如，允许将VPN和IP列入列表），使外部方可以访问DAM中的专用内容区域。 他们可以使用AEM Web UI获取资产并将新内容上传到您的DAM。
+* 使用在Experience Manager和必要的网络基础架构（例如，允许列出的VPN和IP）中设置的访问控制，使外部方可以访问DAM中的专用内容区域。 他们可以使用Experience ManagerWeb UI获取资产并将新内容上传到您的DAM。
 
-#### 正在从AEM处理资产 {#work-in-progress-on-assets-from-aem}
+#### 正在从Experience Manager中处理资产 {#work-in-progress-on-assets-from-aem}
 
-如本文档中所述，建议对资产进行重大更新，有时也称为正在进行中的工作，而不要将保存到本地文件的所有编辑内容作为更改上传到AEM。 这可加快桌面用户的工作速度，限制所用的网络带宽，并保持资产时间线清晰，并将重点放在受控的重大更新上。
+如本文档中所述，建议对资产进行重大更新（有时也称为正在进行中的工作），而不要将保存到本地文件的所有编辑内容也作为更改上传到Experience Manager。 这可加快桌面用户的工作速度，限制所用的网络带宽，并保持资产时间线清晰，并将重点放在受控的重大更新上。
 
 Adobe资产链接为此用例提供了良好支持：
 
 * 当Photoshop、InDesign或Illustrator中的用户意图编辑文件时，他们会对给定资产执行签出操作
-* 资产将在后台下载，放入通过Creative Cloud桌面应用程序同步到磁盘的用户Creative Cloud帐户中，并在资产的AEM中切换签出标记以最大限度地减少编辑冲突
+* 资产会在后台下载，放入通过Creative Cloud桌面应用程序同步到磁盘的用户Creative Cloud帐户中，并在资产的Experience Manager中切换签出标记，以最大限度地减少编辑冲突
 * 此后，用户将在同步位置本地存储的文件中工作，并且可以继续工作并保存所需的任何频率的必要更改
 * 此外，由于资产位于Creative Cloud帐户中，因此它也可在用户可能拥有的其他设备上使用(例如，可以在专用的Creative Cloud移动应用程序中打开或编辑)，并且可以与其他Creative Cloud用户共享以进行协作。
-* 完成更改后，创意用户可以在其Creative Cloud应用程序中对该文件执行签入操作，并提供可选注释。 AEM中的相应资产将进行版本控制，并使用新的二进制文件更新为。 AEM用户（如营销人员或LOB用户）有权通过AEM资产时间轴UI访问主要资产更改或里程碑。
+* 完成更改后，创意用户可以在其Creative Cloud应用程序中对该文件执行签入操作，并提供可选注释。 Experience Manager中的相应资产将进行版本控制，并使用新的二进制文件更新为。 Experience Manager用户（如营销人员或LOB用户）有权通过Experience Manager资产时间轴UI访问主要资产更改或里程碑。
 
-AEM桌面应用程序为本机应用程序中打开的资产提供网络共享。 默认情况下，在本地完成的所有更改都会在短暂的一段时间后自动上传到AEM。 通过这种配置，在进行中的阶段中频繁保存的内容都将上传到AEM并进行版本控制，这会造成大量网络流量和潜在的可扩展性挑战 — 更不用说AEM中不必要的版本了。
+Experience Manager桌面应用程序为本机应用程序中打开的资产提供网络共享。 默认情况下，在本地完成的所有更改都会在短暂的一段时间后自动上传到Experience Manager。 通过这种配置，在进行中的阶段中频繁保存操作都将上传到Experience Manager并进行版本控制，从而产生大量网络流量和潜在的可扩展性挑战 — 更不用说Experience Manager中不必要的版本了。
 
-此处推荐的方法是使用AEM桌面应用程序中的选项来关闭自动更新，并利用应用程序资产状态UI中的上传更改操作，手动将更改上传到AEM。
+此处推荐的方法是使用Experience Manager桌面应用程序中的选项来关闭自动更新，并利用应用程序的资产状态UI中的上传更改操作，手动将更改上传到Experience Manager。
 
 #### 批量上传到DAM {#bulk-upload-to-dam}
 
@@ -216,18 +217,12 @@ AEM桌面应用程序为本机应用程序中打开的资产提供网络共享�
 
 您可以利用以下上传功能：
 
-* 要批量上传大型/分层文件夹，请使用提供[文件夹上传](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload)功能的AEM桌面应用程序。 您还可以上传分层文件夹结构。 资产是在后台上传的，因此不会将其绑定到Web浏览器会话
-* 要从单个文件夹上传几个文件，请将文件直接拖到Web界面，或使用AEM Assets Web界面中的“创建”选项。
+* 要批量上传大型/分层文件夹，请使用提供[文件夹上传](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets)功能的Experience Manager桌面应用程序。 您还可以上传分层文件夹结构。 资产是在后台上传的，因此不会将其绑定到Web浏览器会话
+* 要从单个文件夹上传几个文件，请将文件直接拖到Web界面，或使用Experience Manager资产Web界面中的创建选项。
 * 根据您的业务要求，您还可以使用自定义Uploader。
 
 #### 直接从桌面管理数字资产 {#managing-digital-assets-directly-from-desktop}
 
-如果您使用“网络文件共享”管理数字资产，则只需使用由AEM桌面应用程序映射的网络共享即可被视为一种便捷的替代方法。 从网络文件共享进行转换时， AEM Web界面提供了丰富的数字资产管理功能集，这些功能远远超出了网络共享上的可能功能（搜索、收藏集、元数据、协作、预览等），而AEM桌面应用程序提供了一个便捷的链接，用于将服务器端DAM存储库与桌面上的工作连接起来。
+如果您使用“网络文件共享”来管理数字资产，则只需使用由Experience Manager桌面应用程序映射的网络共享即可被视为一种便捷的替代方法。 从网络文件共享进行转换时，Experience ManagerWeb界面提供了丰富的数字资产管理功能集，这些功能远远超出了网络共享上的可能功能（搜索、收藏集、元数据、协作、预览等），而Experience Manager桌面应用程序提供了一个便捷的链接，用于将服务器端DAM存储库与桌面上的工作连接起来。
 
-避免使用AEM桌面应用程序直接在AEM Assets的网络共享中管理资产。 例如，避免使用AEM桌面应用程序移动/复制多个文件。 请改用AEM Assets Web UI将文件夹从Finder/Explorer拖至网络共享，或使用AEM Assets文件夹上传功能。
-
-<!-- 
-#### Asset migration {#asset-migration}
-
-To plan and execute asset migrations from existing system to a new system or migration of large volume of assets stored on servers, see the [Migration Guide](/help/assets/assets-migration-guide.md). AEM desktop app and AEM to Creative Cloud integrations do not support such migrations. Due to the large volumes of assets to be ingested, and additional requirements around metadata mapping, transformation, and ingestion, migrations should be handled using different tools and approaches.
--->
+避免使用Experience Manager桌面应用程序直接在Experience Manager资产的网络共享中管理资产。 例如，避免使用Experience Manager桌面应用程序移动/复制多个文件。 请改用Experience Manager资产Web UI将文件夹从Finder/Explorer拖至网络共享，或使用Experience Manager资产文件夹上传功能。
