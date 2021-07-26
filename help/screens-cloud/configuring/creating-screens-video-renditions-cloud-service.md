@@ -1,9 +1,9 @@
 ---
 title: 在屏幕中创建屏幕视频演绎版作为Cloud Service
 description: 本页介绍如何在Screens中创建Screens视频演绎版作为Cloud Service。
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,24 @@ ht-degree: 0%
 
 ## 在Screens中创建Screens视频演绎版作为Cloud Service的步骤 {#steps-creating-screens-video-renditions}
 
-1. 导航到Screens云UI中的渠道。
-1. 单击左上角的Adobe Experience Manager ，导航到“屏幕内容提供程序”，即AEM as a ScreensCloud Service。
-1. 现在，单击主导航中的工具部分，单击“资产”，然后单击“处理配置文件”
+1. 在Screens内容提供商中导航到您的渠道。
 
-1. 单击“创建”以创建新的处理用户档案
-1. 提供“ScreensProcessingProfile”之类的名称
-1. 导航到视频选项卡以添加视频编码，然后单击“新增”
+   >[!NOTE]
+   >有关更多详细信息，请参阅[使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 。
+
+1. 单击左侧导航栏中的“工具”部分，单击&#x200B;**Assets**，然后单击&#x200B;**处理配置文件**。
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. 单击&#x200B;**创建**&#x200B;以创建新的处理配置文件。
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. 输入&#x200B;**名称**，如&#x200B;**ScreensProcessingProfile**。
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. 导航到&#x200B;**Video**&#x200B;选项卡以添加视频编码，然后单击&#x200B;**Add New**。
 
 
    >[!IMPORTANT]
