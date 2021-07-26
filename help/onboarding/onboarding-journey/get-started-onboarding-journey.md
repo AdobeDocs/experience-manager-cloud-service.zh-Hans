@@ -4,16 +4,16 @@ description: 阅读本页以了解如何开始入门历程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 0%
 
 ---
 
 # 入门流程 {#getting-started}
 
-载入是指指定的系统管理员将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源和根据用户的工作职责将用户分配给相应的角色，随后每个成员都能够登录并访问其AEM作为Cloud Service资源。
+载入是指指定的[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源以及根据用户的工作职责将用户分配给相应的角色，随后，每个成员都能够登录并访问其AEM作为Cloud Service资源。
 
 ## 目标 {#objective}
 
@@ -21,8 +21,8 @@ ht-degree: 1%
 
 阅读此部分后，您应该能够：
 
-* 访问和登录Admin Console
-* 以系统管理员的身份通过Admin Console查看您的权限
+* 访问和登录Admin Console。
+* 以系统管理员的身份通过Admin Console查看您的权限。
 
 >[!NOTE]
 >在开始载入流程之前，请确保了解Adobe Admin Console。 Adobe管理控制台是管理和管理Adobe产品许可证和用户的中心位置。 系统管理员将登录到Adobe管理控制台以添加或删除用户等。 请参阅[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)以了解更多信息。
@@ -42,12 +42,12 @@ ht-degree: 1%
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. 使用您的 Adobe ID 登录。成功登录后，您将看到Adobe Admin Console的&#x200B;**Overview**&#x200B;页面，如下所示。
+1. 使用[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)登录。 成功登录后，您将看到Adobe Admin Console的&#x200B;**Overview**&#x200B;页面，如下所示。
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >如果您有权访问多个组织，请确保您已登录正确的组织。 要更改您的组织，请单击操作栏中的组织名称，然后选择您需要访问的所需组织，如下图所示。
+   >如果您有权访问多个组织，请确保您已登录正确的组织。 要更改您的组织，请单击右上角的组织名称，然后选择您需要访问的所需组织，如下图所示。
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
