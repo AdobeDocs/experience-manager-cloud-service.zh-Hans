@@ -2,9 +2,9 @@
 title: 为服务器端API生成访问令牌
 description: 了解如何通过生成安全的JWT令牌来促进第三方服务器与作为Cloud Service的AEM之间的通信
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 89b43e14f35e18393ffab538483121c10f6b5a01
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 >
 >除了本文档之外，您还可以查阅有关[AEM as a Cloud Service基于令牌的身份验证](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)的教程。
 
-## 服务器到服务器的流量{#the-server-to-server-flow}
+## 服务器到服务器流 {#the-server-to-server-flow}
 
-具有IMS组织管理员角色的用户可以生成AEM作为Cloud Service凭据，随后，具有AEM作为Cloud Service环境管理员角色的用户将检索该凭据，并且应该安装在服务器上，并且需要谨慎处理为密钥。 此JSON格式文件包含与AEM as a Analytics API集成所需的所有数据。 数据用于创建已签名的JWT令牌，该令牌与IMS交换以获取IMS访问令牌。 然后，此访问令牌可用作载体身份验证令牌，以向AEM作为Cloud Service发出请求。
+具有IMS组织管理员角色的用户，以及AEM作者上的AEM用户或AEM管理员产品配置文件的成员，可以生成AEM作为Cloud Service凭据。 随后，具有AEM作为Cloud Service环境管理员角色的用户可检索该凭据，该凭据应安装在服务器上，并且需要谨慎处理为密钥。 此JSON格式文件包含与AEM as a Analytics API集成所需的所有数据。 数据用于创建已签名的JWT令牌，该令牌与IMS交换以获取IMS访问令牌。 然后，此访问令牌可用作载体身份验证令牌，以向AEM作为Cloud Service发出请求。
 
 服务器到服务器流程涉及以下步骤：
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 * 使用访问令牌作为载体身份验证令牌调用AEM API
 * 在AEM环境中为技术帐户用户设置适当的权限
 
-### 获取AEM as a Cloud Service凭据{#fetch-the-aem-as-a-cloud-service-credentials}
+### 获取AEM作为Cloud Service凭据 {#fetch-the-aem-as-a-cloud-service-credentials}
 
 对AEM as a Cloud Service开发人员控制台具有访问权限的用户将在开发人员控制台中看到给定环境的“集成”选项卡，以及两个按钮。 具有AEM作为Cloud Service环境管理员角色的用户可以单击&#x200B;**获取服务凭据**&#x200B;按钮以显示服务凭据json，其中将包含非AEM服务器所需的所有信息，包括客户端ID、客户端密钥、私钥、证书以及环境创作层和发布层的配置，而不考虑面板选择。
 
@@ -61,9 +61,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->IMS组织管理员（通常是通过Cloud Manager配置环境的同一用户）必须先访问开发人员控制台，然后单击&#x200B;**获取服务凭据**&#x200B;按钮，以便具有AEM as a Cloud Environment管理员权限的用户生成并稍后检索凭据。 如果IMS组织管理员尚未执行此操作，则会显示一条消息，告知他们需要IMS组织管理员角色。
+>IMS组织管理员（通常是通过Cloud Manager配置环境的同一用户）(也应是AEM创作上AEM用户或AEM管理员产品配置文件的成员)必须先访问开发人员控制台并单击&#x200B;**获取服务凭据**&#x200B;按钮，以便具有AEM作为Cloud Service环境的管理员权限的用户生成并稍后检索凭据。 如果IMS组织管理员尚未执行此操作，则会显示一条消息，告知他们需要IMS组织管理员角色。
 
-### 在非AEM服务器{#install-the-aem-service-credentials-on-a-non-aem-server}上安装AEM服务凭据
+### 在非AEM服务器上安装AEM服务凭据 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
 调用AEM的非AEM应用程序应能够访问AEM作为Cloud Service凭据，并将其视为机密。
 
@@ -103,7 +103,7 @@ exchange(config).then(accessToken => {
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
-### 在AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}中为技术帐户用户设置适当的权限
+### 在AEM中为技术帐户用户设置适当的权限 {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
 在AEM中创建技术帐户用户（这在具有相应访问令牌的第一个请求之后发生）后，技术帐户用户必须在&#x200B;**AEM中获得相应的**&#x200B;权限。
 
@@ -111,7 +111,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 可以使用常用方法进一步为AEM中的此技术帐户用户授予权限。
 
-## 开发人员流程{#developer-flow}
+## 开发人员流程 {#developer-flow}
 
 开发人员可能希望使用其非AEM应用程序的开发实例（在其笔记本电脑上运行或托管）进行测试，该实例可以请求将开发AEM作为Cloud Service开发环境。 但是，由于开发人员不一定具有IMS管理员角色权限，因此我们不能假定他们可以生成常规服务器到服务器流中描述的JWT载体。 因此，我们为开发人员提供了一种机制，用于直接生成访问令牌，该令牌可用于作为他们有权访问的Cloud Service环境的AEM请求中。
 
@@ -130,15 +130,15 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 开发人员还可以对其本地计算机上运行的AEM项目进行API调用，在这种情况下，不需要访问令牌。
 
-### 生成访问令牌{#generating-the-access-token}
+### 生成访问令牌 {#generating-the-access-token}
 
 单击开发人员控制台中的&#x200B;**获取本地开发令牌**&#x200B;按钮以生成访问令牌。
 
-### 调用，然后使用访问令牌{#call-the-aem-application-with-an-access-token}调用AEM应用程序
+### 调用，然后使用访问令牌调用AEM应用程序 {#call-the-aem-application-with-an-access-token}
 
 从非AEM应用程序向AEM作为Cloud Service环境进行相应的服务器到服务器API调用，包括标头中的访问令牌。 因此，对于“Authorization”标头，请使用值`"Bearer <access_token>"`。
 
-## 服务凭据吊销{#service-credentials-revocation}
+## 服务凭据吊销 {#service-credentials-revocation}
 
 如果凭据需要撤消，您需要使用以下步骤向客户支持提交请求：
 
