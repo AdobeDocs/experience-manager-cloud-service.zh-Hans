@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 搜索，元数据，资产分发
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '4911'
+source-wordcount: '4902'
 ht-degree: 7%
 
 ---
@@ -226,11 +226,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 资产选择器 {#asset-picker}
 
->[!NOTE]
->
->在以前版本的[!DNL Adobe Experience Manager]中，资产选择器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)被调用。[
-
-资产选择器允许您以特殊方式搜索、筛选和浏览DAM资产。 资产选择器位于`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以使用资产选择器获取您选择的资产的元数据。 您可以使用支持的请求参数来启动它，例如资产类型（图像、视频、文本）和选择模式（单个或多个选择）。 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
+资产选择器（在[!DNL Adobe Experience Manager]的先前版本中称为资产选取器）允许您以特殊方式搜索、筛选和浏览DAM资产。 资产选择器位于`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以使用资产选择器获取您选择的资产的元数据。 您可以使用支持的请求参数来启动它，例如资产类型（图像、视频、文本）和选择模式（单个或多个选择）。 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
 
 资产选择器使用HTML5 `Window.postMessage`消息将选定资产的数据发送到收件人。 它仅在浏览模式下工作，并且仅在Omnisearch结果页面中工作。
 
