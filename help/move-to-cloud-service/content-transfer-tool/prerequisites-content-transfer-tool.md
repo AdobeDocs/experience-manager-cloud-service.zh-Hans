@@ -2,9 +2,9 @@
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
+source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '488'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 | 注意事项 | 当前支持的内容 |
 |--- |--- |
 | AEM 版本 | 内容传输工具只能在AEM 6.3或更高版本上运行。 要将内容传输工具与AEM 6.2或更早版本结合使用，需要将内容存储库就地升级到AEM 6.5。 无需将代码升级到AEM 6.5即可实现此目的。 |
-| 区段存储的大小 | 当前支持&#x200B;*Author*&#x200B;上最高83 GB， *Publish*&#x200B;上最高31 GB。 与Adobe客户关怀团队一起创建支持票证，以讨论区段存储大小超过这些限制的选项。 |
+| 区段存储的大小 | 当前支持现有存储库，该存储库的JCR节点少于5500万，在&#x200B;*Author*&#x200B;上最多83 GB（在线压缩大小），在&#x200B;*Publish*&#x200B;上最多31 GB。 与Adobe客户关怀团队一起创建支持票证，以讨论区段存储大小超过这些限制的选项。 |
 | 内容存储库的总大小&#x200B;<br>*（区段存储+数据存储）* | 内容传输工具旨在为文件数据存储类型的数据存储传输高达10 TB的内容。 当前不支持任何高于10 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于10 TB的内容选项。 <br>对于Amazon S3和Azure Data Store类型的数据存储，可使用可选的 [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 复制前步骤来显着加快内容传输过程，并支持大于10TB的数据存储大小。 |
 | 总索引大小 | 当前支持最大25GB的索引总大小。 与Adobe客户关怀团队一起创建支持票证，以讨论索引大小超过此限制的选项。 |
 | 节点名称长度 | 节点名称的长度必须小于或等于150字节。 长度超过150字节的节点名称必须缩短为&lt;= 150字节，才能由AEM中作为Cloud Service存储的“文档”节点提供支持。 如果未修复这些长节点名称，则摄取将失败。 |
