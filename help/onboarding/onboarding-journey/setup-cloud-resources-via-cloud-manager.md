@@ -4,9 +4,9 @@ description: 请阅读本页内容，了解如何通过Cloud Manager设置云资
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -137,12 +137,13 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-您的团队成员必须获得对实例的权限，因为管理Cloud Manager的权限是不够的。 现在，您的云资源已创建完毕，并可供您的团队访问，系统管理员必须将您的团队成员作为Admin Console中的Cloud Service产品配置文件分配给AEM。
+您的团队成员必须获得对实例的权限，因为管理Cloud Manager的权限是不够的。 现在，您的云资源已创建完毕，并且可供您的团队访问，系统管理员必须将您的团队成员作为Adobe Admin Console中的Cloud Service产品配置文件分配给AEM。
+
+>[!NOTE]
+>要获得AEM as a Cloud Service用户的访问权限，用户必须属于两个产品配置文件`AEM Users`或`AEM Administrators`中的一个。 请参阅[管理Admin Console中的产品和用户访问权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)以了解更多信息。
 
 您应该通过下一步审阅将团队成员作为Cloud Service产品配置文件分配给AEM文档，来继续入门历程。
 
->[!NOTE]
->要获得AEM as a Cloud Service用户的访问权限，用户必须属于两个产品配置文件“AEM用户”或“AEM管理员”中的一个。 了解更多。
 
 ## 其他资源 {#additional-resources}
 
