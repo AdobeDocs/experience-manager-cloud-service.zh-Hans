@@ -2,7 +2,7 @@
 title: 已弃用和已删除的功能
 description: 发行说明特定于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已弃用和已移除的功能。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 1adcde525454e779adbd251b9a31f4e456b28998
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 38%
