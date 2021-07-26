@@ -4,9 +4,9 @@ description: 可查看本页以了解如何将团队成员分配给Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 目标 {#objective}
 
-本文档概述了如何从Admin Console将团队成员分配给Cloud Manager产品配置文件。
+本文档概述了如何从Adobe Admin Console将团队成员分配给Cloud Manager产品配置文件。
 
 阅读此部分后，您应该能够：
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 查看Cloud Manager产品配置文件 {#review-product-profiles}
 
-从Admin Console中，您可以看到Cloud Manager配置文件列表。
+在Adobe Admin Console中，您可以看到Cloud Manager配置文件列表。
 
 >[!NOTE]
 >在从Admin Console查看Cloud Manager产品配置文件之前，建议先查看可用的[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**保存**。系统会向您添加的用户发送一封欢迎电子邮件。 受邀用户可以通过单击欢迎电子邮件中的链接，然后使用其Adobe ID登录来访问Cloud Manager。
 
-恭喜！ 现在，您新组建的Cloud Manager团队（包括您自己分配给“业务所有者”角色的团队）已经设置完成。 会员将收到一封欢迎电子邮件，邀请他们登录并访问Cloud Manager。 在“业务所有者”角色中，您现在只需一步即可登录到Cloud Manager并启用云资源的创建。
+   恭喜！ 现在，您新组建的Cloud Manager团队（包括您自己分配给“业务所有者”角色的团队）已经设置完成。 会员将收到一封欢迎电子邮件，邀请他们登录并访问Cloud Manager。 在“业务所有者”角色中，您现在只需一步即可登录到Cloud Manager并启用云资源的创建。
 
 ## 将用户分配给Deployment Manager产品配置文件 {#assign-users-deployment-manager}
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-现在，您已了解了三个不同的Cloud Manager产品配置文件（如业务所有者、部署管理器和开发人员），并将团队成员分配给Cloud Manager产品配置文件（如业务所有者、部署管理器和开发人员），接下来，您应该通过Cloud Manager查看文档设置资源，以便了解：
+现在，您已了解了三个不同的Cloud Manager产品配置文件（如业务所有者、部署管理器和开发人员），并将团队成员分配给Cloud Manager产品配置文件（如业务所有者、部署管理器和开发人员），接下来，您应该通过Cloud Manager查看文档设置云资源，以便了解：
 
 1. 作为分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员，您必须访问并登录Cloud Manager。
 
