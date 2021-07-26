@@ -4,10 +4,10 @@ description: 如果您是开发人员或部署管理员，请阅读本页以了�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 4%
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
@@ -51,19 +51,19 @@ ht-degree: 4%
 
 ## 其他资源 {#additional-resources}
 
-* 从Cloud Manager访问Git和Git帐户管理
+* [从Cloud Manager访问Git和Git帐户管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* AEM as a A Service的本地开发环境Cloud Service
+* [AEM as a A Service的本地开发环境Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* AEM Sites入门（教程）
+* [AEM Sites入门（教程）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* AEM SPA Editor和React快速入门 | Adobe Experience Manager
+* [AEM SPA Editor和React快速入门 | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-* AEM SPA Editor 和 Angular 快速入门
+* [AEM SPA Editor 和 Angular 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 
-* AEM无头入门 — GraphQL
+* [AEM无头入门 — GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
 
-* 面向开发人员的AEM SPA Editor快速入门
+* [面向开发人员的AEM SPA Editor快速入门](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 ### Experience League课程 {#experience-league-courses}
 
