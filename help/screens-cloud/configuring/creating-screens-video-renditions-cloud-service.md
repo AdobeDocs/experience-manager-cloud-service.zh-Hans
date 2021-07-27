@@ -1,15 +1,15 @@
 ---
-title: 在屏幕中创建屏幕视频演绎版作为Cloud Service
-description: 本页介绍如何在Screens中创建Screens视频演绎版作为Cloud Service。
-source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
+title: 在屏幕中创建视频演绎版作为Cloud Service
+description: 本页介绍如何在Screens中创建视频演绎版作为Cloud Service。
+source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 
-# 在屏幕中创建屏幕视频演绎版作为Cloud Service {#creating-screens-video-renditions}
+# 在屏幕中创建视频演绎版作为Cloud Service {#creating-screens-video-renditions}
 
 ## 简介 {#introduction}
 
@@ -18,7 +18,9 @@ ht-degree: 0%
 >[!IMPORTANT]
 >如果您计划在Screens渠道中使用视频，则必须配置此部分中突出显示的步骤。
 
-## 在Screens中创建Screens视频演绎版作为Cloud Service的步骤 {#steps-creating-screens-video-renditions}
+## 在Screens中创建视频演绎版作为Cloud Service的步骤 {#steps-creating-screens-video-renditions}
+
+请按照以下步骤在Screens as a Cloud Service中从Screens内容提供商创建视频演绎版：
 
 1. 在Screens内容提供商中导航到您的渠道。
 
