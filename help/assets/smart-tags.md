@@ -5,21 +5,21 @@ contentOwner: AG
 feature: 智能标记，标记
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 6%
+source-wordcount: '2379'
+ht-degree: 5%
 
 ---
 
 
-# 向资产中添加智能标记以改善搜索体验 {#smart-tag-assets-for-faster-search}
+# 向资产中添加智能标记并改进搜索体验 {#smart-tag-assets-for-faster-search}
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 基本上，它包含一个关键词列表，员工、合作伙伴和客户通常使用该列表来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保在搜索中轻松识别和检索资产。
 
 与自然语言词汇相比，基于业务分类的标记有助于使资产与公司的业务保持一致，并确保最相关的资产出现在搜索中。 例如，汽车制造商可以使用型号名称标记汽车图像，以便在设计促销活动时只显示相关图像。
 
-在后台，该功能使用人为智能的[Adobe Sensei](https://www.adobe.com/cn/sensei/experience-cloud-artificial-intelligence.html)框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，可使用此内容智能对不同的资产集应用相关标记。 [!DNL Experience Manager Assets] 默认情况下，会自动将智能标记应用于已上传的资产。
+在后台，该功能使用人为智能的[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html)框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，可使用此内容智能对不同的资产集应用相关标记。 [!DNL Experience Manager Assets] 默认情况下，会自动将智能标记应用于已上传的资产。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -100,7 +100,7 @@ ht-degree: 6%
 * 创建仅包含、
 
    * 与车型相关的标记。
-   * 与男女夹克相关的标签。
+   * 与成人和儿童外套相关的标签。
 
 * 请勿创建，
 
@@ -139,8 +139,8 @@ ht-degree: 6%
 1. 选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;报表，然后单击工具栏中的&#x200B;**[!UICONTROL 下一步]**。
 1. 指定报表的标题和描述。在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。然后，单击工具栏中的&#x200B;**[!UICONTROL 创建]** 。
 1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，选择生成的报表。要查看报表，请单击工具栏中的&#x200B;**[!UICONTROL 查看]**。
-1. 查看报告的详细信息。 报表显示您培训的标记的培训状态。**[!UICONTROL 培训状态]**&#x200B;列中的绿色表示已为标记培训智能标记服务。 黄色表示服务未针对特定标记进行完整培训。在这种情况下，使用特定标记添加更多图像并运行培训工作流以在标签上完整地培训服务。如果在此报表中未看到您的标记，请再次为这些标记运行培训工作流。标记
-1. 要下载报表，请从列表中选择该报表，然后单击工具栏中的&#x200B;**[!UICONTROL 下载]**。 报表将下载为[!DNL Microsoft Excel]电子表格。
+1. 查看报告的详细信息。 报表显示您培训的标记的培训状态。**[!UICONTROL 培训状态]**&#x200B;列中的绿色表示已为标记培训智能标记服务。 黄色表示服务已针对特定标记进行部分培训。 要为标记完全培训服务，请使用特定标记添加更多图像并执行培训工作流。 如果在此报表中未看到标记，请再次执行这些标记的培训工作流。标记
+1. 要下载报表，请从列表中选择该报表，然后单击工具栏中的&#x200B;**[!UICONTROL 下载]**。 报表将下载为电子表格。
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -183,7 +183,7 @@ ht-degree: 6%
 
 * 对于图像和视频，智能标记基于某些视觉方面。
 
-* 对于基于文本的资产，智能标记的效果并不取决于资产中的文本数量，而取决于资产文本中存在的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后将其编入索引，用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用、结构化和更高优先级的搜索方面，与完整搜索索引相比，该方面用于改进资产发现。
+* 对于基于文本的资产，智能标记的效果并不取决于资产中的文本数量，而取决于资产文本中存在的相关关键字或实体。 对于基于文本的资产，智能标记是显示在文本中的关键字，但最能描述资产的关键字。 对于支持的资产，[!DNL Experience Manager]已提取文本，然后将其编入索引，用于搜索资产。 但是，基于文本中关键字的智能标记提供了专用、结构化和更高优先级的搜索方面。 与搜索索引相比，后者有助于改进资产发现。
 
 ## 管理智能标记和资产搜索 {#manage-smart-tags-and-searches}
 
@@ -193,11 +193,11 @@ ht-degree: 6%
 
 您还可以为标记分配更高的排名，以提高标记与资产的相关性。 提升资产的标记，可增加在基于特定标记执行搜索时，搜索结果中出现资产的可能性。
 
-要审核资产的智能标记，请执行以下操作：
+要审核数字资产的智能标记，请执行以下操作：
 
-1. 在搜索字段中，根据标记搜索资产。
+1. 在搜索字段中，根据标记搜索数字资产。
 
-1. Inspect搜索结果，以识别您找不到与搜索相关的资产。
+1. 要识别您找不到与搜索相关的数字资产，请检查搜索结果。
 
 1. 选择资产，然后从工具栏中选择![管理标记图标](assets/do-not-localize/manage-tags-icon.png)。
 
@@ -223,21 +223,23 @@ ht-degree: 6%
 1. 智能标记中`woman running`的匹配项。
 1. 智能标记中`woman`或`running`的匹配项。
 
-## 标记限制和最佳实践 {#limitations}
+## 与标记相关的限制和最佳实践 {#limitations}
 
 增强型智能标记基于图像及其标记的学习模型。 这些模型并非总能很好地识别标记。 智能标记的当前版本具有以下限制：
 
 * 无法识别图像中的细微差异。 例如，修身衬衫与普通衬衫。
 * 无法根据图像的微小模式或部分来识别标记。 例如，衬衫上的徽标。
 * [!DNL Experience Manager]支持的语言支持标记。 有关语言列表，请参阅[智能内容服务发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
-* 不切实际地处理的标记与以下事项相关：
+* 未处理的标记与以下事项相关：
 
-   * 非视觉、抽象的方面。 例如，产品发布的年份或季节、由图像引发的情绪或情感、视频的主观内涵等。
+   * 非视觉、抽象的方面。 例如，产品发布的年份或季节、图像引发的情绪或情感，以及视频的主观内涵。
    * 产品中的视觉差异非常显着，例如衬衫上嵌有和不带领，或产品上嵌有小产品标识。
 
-<!-- TBD: Add limitations related to text-based assets. -->
+要训练模型，请使用最合适的图像。 无法恢复培训或删除培训模型。 您的标记准确性取决于当前培训，因此请谨慎进行。
 
-要搜索带有智能标记的资产（常规或增强功能），请使用[!DNL Assets]搜索（全文搜索）。 智能标记没有单独的搜索谓词。
+<!-- TBD: Add limitations related to text files. -->
+
+要搜索带有智能标记的文件（常规或增强），请使用[!DNL Assets]搜索（全文搜索）。 智能标记没有单独的搜索谓词。
 
 >[!NOTE]
 >
@@ -246,6 +248,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [了解智能标记如何帮助管理资产](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [智能标记视频资产](smart-tags-video-assets.md)
+>* [了解智能标记如何帮助管理数字文件](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [对视频使用智能标记](smart-tags-video-assets.md)
 
