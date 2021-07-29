@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1286'
 ht-degree: 2%
 
 ---
@@ -140,17 +140,17 @@ API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]�
 
 * `bulk-offline-update-service` 缺少某些环境的所有权限。
 
-* 更新帮助链接以匹配新的screens云文档。
+* 更新了帮助链接以匹配新的screens云文档。
 
-* 取消分配播放列表，并禁止删除分配了播放器的播放列表。
+* 现在可以取消分配播放列表并禁止删除分配了播放器的播放列表。
 
-* 现在，在清除“所有”缓存后，播放器会重新下载资产。
+* 现在，在清除“所有”缓存时，播放器会重新下载资产。
 
 * 如果为后一天设置了&#x200B;*结束时间*，则重复计划现在有效。
 
-* `Back&Forward` 现在可在Screens云UI中使用。
+* `Back&Forward` 现在可在Screens中作为Cloud ServiceUI使用。
 
-* 无法创建名称相同但命名空间不同的标记。
+* 无法在之前创建名称相同但命名空间不同的标记。
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
