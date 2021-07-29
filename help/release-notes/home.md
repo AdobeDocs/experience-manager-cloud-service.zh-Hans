@@ -2,18 +2,18 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
+source-git-commit: 08a687afa423255046dd37c55547d3615ea8276b
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 44%
 
 ---
 
-# 发行信息 {#release-information}
+# 版本信息 {#release-information}
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2021.06.0 |
+| 版本 | 2021.07.0 |
 | 类型 | 持续更新 |
 | 发行日期 | 持续更新 |
 
@@ -24,7 +24,7 @@ ht-degree: 44%
 * 功能发布以可预测的每月频率完成，重点关注新功能和产品创新。
 * 关键更新操作频繁进行，重点关注安全更新、错误修复和性能增强。 这可确保[!DNL Adobe Experience Manager]作为Cloud Service始终与任何关键修复保持最新。
 
-除了创新速度之外，[!DNL Adobe Experience Manager]作为Cloud Service还提供了在功能发布到生产之前提前整整一个月预览即将推出的功能的灵活性。 这允许您通过测试在您自己的自定义环境中驱动这些功能来评估即将发布的版本对其组织的影响，并提前对内部用户进行培训/准备。
+除了创新速度之外，[!DNL Adobe Experience Manager]作为Cloud Service还提供了在功能发布到生产之前提前整月预览即将推出的功能的灵活性。 这允许您通过测试在您自己的自定义环境中驱动这些功能来评估即将发布的版本对其组织的影响，并提前对内部用户进行培训/准备。
 
 >[!NOTE]
 >
