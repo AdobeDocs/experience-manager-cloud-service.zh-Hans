@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,30 @@ AEM as a Cloud Manager 2021.7.0版本的发布日期是2021年7月15日。
 ### [!DNL Assets]中修复的错误 {#assets-bugs-fixed}
 
 API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]中不作为[!DNL Cloud Service]提供。 (CQ-4326322)
+
+## [!DNL Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
+
+### 错误修复 {#bug-fixes-screens}
+
+* 现在，将在创建或更新期间验证内容提供程序设置。
+
+* 所有显示的视图都包含文件夹列。
+
+* 您可以展开Screens内容结构。
+
+* `bulk-offline-update-service` 缺少某些环境的所有权限。
+
+* 更新帮助链接以匹配新的screens云文档。
+
+* 取消分配播放列表，并禁止删除分配了播放器的播放列表。
+
+* 现在，在清除“所有”缓存后，播放器会重新下载资产。
+
+* 如果为后一天设置了&#x200B;*结束时间*，则重复计划现在有效。
+
+* `Back&Forward` 现在可在Screens云UI中使用。
+
+* 无法创建名称相同但命名空间不同的标记。
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
