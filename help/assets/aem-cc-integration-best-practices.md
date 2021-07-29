@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 协作，Adobe资产链接，桌面应用程序
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '3383'
+source-wordcount: '3451'
 ht-degree: 15%
 
 ---
@@ -32,6 +32,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 | 简化桌面版创意人员的体验 | 简化从DAM([!DNL Assets])访问资产的流程，供创意专业人士（更广泛地说，是使用本机资产创建应用程序的桌面用户）使用。 他们需要一种简单明了的方法来发现、使用（打开）、编辑和保存对Experience Manager所做的更改，以及上传新文件。 | Win或Mac台式机；Creative Cloud应用程序 |
 | 从[!DNL Adobe Stock]提供高质量、可随时使用的资产 | 营销人员通过协助资产采购和发现来帮助加快内容创建流程。 创意专业人士可直接在其创意工具中使用已批准的资产。 | [!DNL Assets]; [!DNL Adobe Stock] 市场；元数据字段 |
 | 按组织分发和共享资产 | 内部部门/地方分支机构和外部合作伙伴、分销商和代理使用由父组织共享的已批准资产。 该组织希望安全、无缝地共享所创建的资产，以便更广泛地重复使用。 | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| 自动生成已上传资产的预定义变体 | 自动处理资产，利用Adobe独特的媒体处理和转换技术来执行预定义的操作。 创建自定义逻辑，以使用API和资产微服务定义您自己的操作。 | [!DNL Assets] 用户界面 |
 
 ## Adobe服务以支持协作需求 {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -41,6 +42,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 | 业务用户可简化资产的打开和使用、编辑和上传对[!DNL Experience Manager]所做的更改，以及从桌面环境将新文件上传到[!DNL Experience Manager]的过程。 它们使用通用集成来打开本机桌面应用程序中的任何资产类型，包括非Adobe资产类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Experience ManagerWin和Mac桌面上的桌面应用程序 |
 | 营销人员和企业用户可在Experience Manager内发现、预览、许可和保存并管理Adobe Stock资产。 授权资产和已保存的资产可提供精选Adobe Stock元数据以更好地管理。 | [Experience Manager和Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] web界面 |
 | 改进数字产品设计人员与营销人员之间的协作。 让设计师在Adobe XD画布上的设计和线框模型中使用数字资产。 | [[!DNL Adobe Asset Link] 对象 [!DNL Adobe XD]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 营销人员可以根据上传的资产和使用自定义功能创建的预定义操作，自动创建变体和衍生产品。 使用此自动化可提高内容速度并减少手动工作。 | [内容自动化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] web界面 |
 
 本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。诸如[Experience ManagerAssets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)之类的替代解决方案，应根据特定要求审查可基于[资产共享共用](https://opensource.adobe.com/asset-share-commons/)组件、 [链接共享](share-assets.md)使用[Experience Manager资产Web UI](/help/assets/manage-digital-assets.md)构建的解决方案。
 
