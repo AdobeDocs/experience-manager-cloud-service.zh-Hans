@@ -4,9 +4,9 @@ description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Mana
 feature: 版本信息
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bb4c1377da4bbca6c54ec2a0ec0a0b31f9182485
+source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '972'
 ht-degree: 6%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 6%
 | 元数据写回 | 工作方式不同 | 默认为已禁用. 根据需要启用相应的工作流启动器。 写回由资产微服务处理。 |
 | 使用包管理器处理上传的资产 | 需要人工干预。 | 使用&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作手动重新处理。 |
 | MIME类型检测 | 不受支持. | 如果您上传的数字资产没有扩展或扩展名不正确，则可能无法按需要进行处理。 用户仍可以在DAM中存储没有扩展名的二进制文件。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME类型检测。 |
-| 复合资产的子资产生成 | 不受支持. | 可能无法满足注释等相关用例。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 在2021.7.0版](/help/release-notes/release-notes-cloud/release-notes-current.md#beta-features-assets)中，某些文件类型的PDF预览功能可作为[预发行功能提供。 请参阅[如何访问预发行渠道](/help/release-notes/prerelease.md)。 |
+| 复合资产的子资产生成 | 不受支持. | 可能无法满足注释等相关用例。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子资产创建。 从[2021.7.0版](/help/release-notes/release-notes-cloud/release-notes-current.md)开始，可以预览某些文件类型。 |
 | 主页 | 不受支持. | 请参阅[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 从ZIP存档提取资产 | 不受支持. | 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP提取。 |
 | 资产评级 | 不受支持. | 不支持元数据架构编辑器中的评级小组件。 |
