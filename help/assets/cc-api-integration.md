@@ -4,9 +4,9 @@ description: 使用Creative Cloud集成生成资产的变体
 contentOwner: AG
 feature: 上传、资产处理、发布、Asset compute微服务、工作流
 role: User,Admin
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,41 @@ ht-degree: 0%
 
 # 使用[!DNL Adobe Creative Cloud]集成生成资产的变体 {#content-automation}
 
-内容自动附加组件集成了[!DNL Adobe Experience Manager Assets as a Cloud Service]和[!DNL Adobe Creative Cloud] API，以创造性地大规模处理资产。 [!DNL Experience Manager] 使用基于云的 [资](/help/assets/asset-microservices-overview.md) 产微服务来使 [!DNL Adobe Creative Cloud] 用这些功能并自动创建和处理资产。
+内容自动附加组件集成了[!DNL Adobe Experience Manager Assets]作为[!DNL Cloud Service]和[!DNL Adobe Creative Cloud] API，以创造性地大规模处理您的资产。 [!DNL Experience Manager] 使用基于云的 [资](/help/assets/asset-microservices-overview.md) 产微服务来使 [!DNL Adobe Creative Cloud] 用这些功能并自动创建和处理资产。
 
 要编辑[!DNL Adobe Photoshop]和[!DNL Adobe Lightroom]中的资产，您无需从[!DNL Experience Manager Assets]下载资产、编辑资产，然后再次上传资产。 您可以在[!DNL Experience Manager]中创建并配置处理配置文件，将配置文件应用到文件夹，然后将资产上传到该文件夹。 您上传的资产会根据处理配置文件进行重新处理，您会获得这些资产的变体。 一致且轻松的批量处理可节省手动工作并提高内容速度，而无需卓越的创作技能。 此外，开发人员和合作伙伴还可以通过直接访问这些API来扩展资产微服务，并包含自定义逻辑。
 
-用户可以创建处理配置文件以自动对其资产执行以下创意操作：\
-![自动执行Adobe Photoshop和AdobeLightroom资产操作](assets/content-automation.png)
+用户可以创建处理配置文件以自动对其资产执行以下创意操作：
+
 * **自动色调**:利用人工智能对图像内容进行分析，并根据图像的独特属性智能地进行光和颜色校正。
+
 * **自动垂直**:使用人工智能来分析图像的内容并纠正图像中的偏斜透视。例如，创建水平视线。
+
+   ![自动色调](/help/assets/assets/content-automation-autotone.png)
+
+   *图：自动调色和自动拉直有助于改善倾斜的图像。*
+
 * **Lightroom预设**:对图像应用用户定义的外观，以使用自定义预设获得一致的外观。
+
+   ![Lightroom预设](/help/assets/assets/content-automation-lrpresets.png)
+
+   *图：AdobeLightroom预设，以便以一致的方式提高许多图像的图像质量。*
+
 * **图像木刻**:使用人工智能在显着对象周围创建选择并使用单个命令删除背景。
+
+   ![移除背景并从照片中剪切图像](/help/assets/assets/content-automation-backgroundremove.png)
+
 * **图像蒙版**:使用人工智能通过单个命令在显着对象周围创建蒙版。
-* **Photoshop操作**:将一系列任务(在Photoshop中)应用到文件或批量文件。
+
+   ![使用AI掩盖图像](/help/assets/assets/content-automation-mask.png)
+
+* **Photoshop操作**:将一系列任 [!DNL Adobe Photoshop] 务应用于文件或批量文件。
+
+   ![Photoshop操作](/help/assets/assets/content-automation-psactions.png)
+
 * **智能对象替换**:通过允许您交换图像，同时保留PSD文件中应用的所有效果和调整，实现大规模个性化。
 
-
+   ![智能替换对象](/help/assets/assets/content-automation-objectreplace.png)
 
 ## 使用处理配置文件批量编辑您的创意资产 {#process-assets}
 
@@ -42,9 +62,9 @@ ht-degree: 0%
 
 1. 选择&#x200B;**[!UICONTROL Creative]**&#x200B;选项卡，指定输出文件夹，选择&#x200B;**[!UICONTROL Add New]**&#x200B;以添加创作配置。
 
-1. 提供&#x200B;**[!UICONTROL 演绎版名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型）、选择&#x200B;**[!UICONTROL 质量]**（或输出参数）、选择&#x200B;**[!UICONTROL 包括]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME类型列表（或输入资产过滤器），然后选择所需的创作操作。<br/>
+1. 提供&#x200B;**[!UICONTROL 演绎版名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型）、选择&#x200B;**[!UICONTROL 质量]**（或输出参数）、选择&#x200B;**[!UICONTROL 包括]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME类型列表（或输入资产过滤器），然后选择所需的创作操作。
 
-   ![处理配置文件中的“创作”选项卡](assets/creative-processing-profile.png)
+   ![ 处理配置文件中 [!UICONTROL 的“创建”选项卡]](assets/creative-processing-profile.png)
 
 1. 某些操作需要额外的参数（资产）。 根据需要为这些额外参数提供值。
 
