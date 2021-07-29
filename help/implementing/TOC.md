@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '921'
 ht-degree: 33%
 
 ---
@@ -172,7 +172,9 @@ ht-degree: 33%
    + [扩展体验片段](developing/extending/experience-fragments.md)
    + [自定义和扩展内容片段](developing/extending/content-fragments-customizing.md)
    + [内容片段配置用于渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)
-   + [配置搜索表单](developing/extending/search-forms.md)
+   + 管理搜索Forms {#manage-search-forms}
+      + [配置搜索表单](developing/extending/search-forms.md)
+      + [为收件箱配置搜索过滤器](developing/extending/configure-inbox-search-rail.md)
    + [配置富文本编辑器](/help/implementing/developing/extending/rich-text-editor.md)
    + [配置 RTE 插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [配置 RTE 以创建可访问的站点](/help/implementing/developing/extending/rte-accessible-content.md)
