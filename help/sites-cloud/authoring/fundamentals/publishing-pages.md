@@ -2,10 +2,10 @@
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 96%
+ht-degree: 85%
 
 ---
 
@@ -46,11 +46,6 @@ ht-degree: 96%
 >* 您的开发团队可能已自定义此工作流。
 >* 将显示一条简短的消息，通知您工作流已经触发。
 
-
-<!--
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
--->
 
 >[!NOTE]
 >
@@ -112,9 +107,9 @@ ht-degree: 96%
 >
 >“快速发布”是一种简单的发布方式，即只会发布选定的一个或多个页面，而不会发布任何子页面。
 
-#### 管理发布  {#manage-publication}
+#### 管理发布 {#manage-publication}
 
-与“快速发布”相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
+**与“快** 速发布” ****&#x200B;相比，“管理发布”提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
 
 要使用“管理发布”发布或取消发布页面，请执行以下操作：
 
@@ -124,46 +119,42 @@ ht-degree: 96%
 
 1. 此时会启动&#x200B;**管理发布**&#x200B;向导。第一个步骤&#x200B;**选项**&#x200B;允许您：
 
-   * 选择发布或取消发布选定的页面。
-   * 选择立即还是在以后的日期执行该操作。
+   * **操作**
 
-   稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流。
+      选择发布或取消发布选定的页面。
 
-   如果您要稍后撤消发布/取消发布页面，请转到“工作流”控制台以终止相应的工作流。<!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   * **计划**
 
+      选择立即还是在以后的日期执行该操作。
+
+      稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流。
+
+      >[!NOTE]
+      >
+      >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-   单击&#x200B;**下一步**&#x200B;以继续。
+1. 单击&#x200B;**下一步**&#x200B;以继续。
 
 1. 在“管理发布”向导的下一个步骤&#x200B;**范围**&#x200B;中，您可以定义发布/取消发布的范围，如包括子页面和/或包括引用。
 
    ![管理发布范围](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
+   **添加内容**
+
    如果您因一时疏忽而忘记在启动“管理发布”向导之前选择某个页面，则可以使用&#x200B;**添加内容**&#x200B;按钮将其他页面添加到要发布的页面列表中。
 
-   单击“添加内容”按钮会启动[路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)以供选择内容。
+   选择&#x200B;**添加内容**&#x200B;按钮会启动[路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)以允许选择内容。
 
    选择所需的页面，然后单击&#x200B;**选择**&#x200B;以将内容添加到向导，或单击&#x200B;**取消**&#x200B;以取消选择并返回到向导。
 
-   返回到向导后，您可以选择列表中的项目以进一步配置其选项，例如：
+   **删除选择**
 
-   * 包括其子项。
-   * 将其从选择中删除。
-   * 管理其已发布的引用。
+   返回向导后，您可以选择列表中的某个项目，以将其从选定范围中删除。
 
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   单击&#x200B;**包括子项**&#x200B;会打开一个对话框，它允许您：
-
-   * 仅包括下级子项。
-   * 仅包括已修改的页面。
-   * 仅包括已发布的页面。
-
-   单击&#x200B;**添加**&#x200B;可根据选择的选项将子页面添加到要发布或取消发布的页面列表中。单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
-
-   ![管理发布（包括子项）](/help/sites-cloud/authoring/assets/publishing-include-children.png)
-
-   返回到向导后，您将看到根据您在“包括子项”对话框中选择的选项添加的页面。
+   **已发布引用**
 
    您可以通过选择页面，然后单击&#x200B;**已发布引用**&#x200B;按钮，来查看和修改该页面要发布或取消发布的引用。
 
@@ -177,30 +168,42 @@ ht-degree: 96%
 
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
+   **包括子项**
+
+   >[!NOTE]
+   >
+   >请参阅[发布和取消发布树](#publishing-and-unpublishing-a-tree)
+
+   单击&#x200B;**Include Children**&#x200B;会打开一个对话框，允许您：
+
+   * **包括子项**
+   * **仅包括下级子项**
+   * **仅包括已修改的页面**
+   * **仅包括已发布的页面**
+
+   激活所需选项并使用&#x200B;**OK**&#x200B;进行确认，以根据选择的选项将子页面添加到要发布或取消发布的页面列表中。 单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
+
+   ![管理发布（包括子项）](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+
 1. 单击&#x200B;**发布**&#x200B;以完成。
 
    返回到站点控制台后，将显示一条确认发布的通知消息。
 
 1. 如果发布的页面与工作流相关联，则这些工作流可能会显示在发布向导的最后一个步骤&#x200B;**工作流**&#x200B;中。
 
+   ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
+
    >[!NOTE]
    >
    >将根据用户可能拥有也可能没有的权限显示&#x200B;**工作流**&#x200B;步骤。有关详细信息，请参阅此页面前面部分与发布权限有关的注释以及管理工作流的访问权限和[将工作流应用到页面](/help/sites-cloud/authoring/workflows/applying.md)。
-   <!--
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   -->
 
    资源将按触发的工作流分组，并且每组都提供了用于执行以下操作的选项：
 
    * 定义工作流的标题。
    * 保留工作流包，前提是工作流具有多资源支持。
-
-   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-    -->
-
    * 在选择保留工作流包的选项时，定义工作流包的标题。
 
-   单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
+1. 单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
 
 ## 取消发布页面 {#unpublishing-pages}
 
@@ -215,20 +218,24 @@ ht-degree: 96%
 
 在编辑页面时，如果您希望取消发布该页面，请选择&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**取消发布页面**，这与[发布页面](#publishing-from-the-editor)非常类似。
 
-### 从控制台中取消发布  {#unpublishing-from-the-console}
+### 从控制台中取消发布 {#unpublishing-from-the-console}
 
 正如[使用“管理发布”选项发布页面](#manage-publication)一样，也可以使用它来取消发布页面。
 
 1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
 1. 此时会启动&#x200B;**管理发布**&#x200B;向导。在第一个步骤&#x200B;**选项**&#x200B;中，选择&#x200B;**取消发布**，而不是默认选项&#x200B;**发布**。
 
-   ![正在取消发布](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![取消发布 — 选项](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    正如稍后发布会启动一个工作流，以在指定时间发布此版本页面一样，稍后取消激活也会启动一个工作流，以在指定时间取消发布选定的一个或多个页面。
 
-   如果您要稍后撤消发布/取消发布页面，请转到“工作流”控制台以终止相应的工作流。<!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
 
 1. 要完成取消发布，请按照与[发布页面](#manage-publication)类似的过程继续完成向导。
+
+   ![取消发布 — 范围](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## 发布和取消发布树 {#publishing-and-unpublishing-a-tree}
 
@@ -242,18 +249,18 @@ ht-degree: 96%
 
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. 在&#x200B;**包括子项**&#x200B;对话框中，取消选中以下选项：
+1. 在&#x200B;**包括子项**&#x200B;对话框中：
 
-   * 仅包括下级子项
-   * 仅包括已发布的页面
+   * 选择&#x200B;**包含子项**
+   * 取消选择&#x200B;**仅包含直接子项**
+   * 取消选择&#x200B;**仅包含已发布的页面**
+   * 根据需要配置&#x200B;**仅包含修改的页面**
 
-   这些选项默认处于选中状态，因此您必须记得取消选择它们。单击&#x200B;**添加**&#x200B;以确认并将内容添加到发布/取消发布。
+   这些选项默认处于选中状态，因此您必须记住配置它们。 使用&#x200B;**OK**&#x200B;确认选择，以将内容添加到发布/取消发布。
 
-   ![取消发布时包含子项](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![包含用于树发布的子项](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. **管理发布**&#x200B;向导将列出树内容以供查看。您可以通过添加其他页面或删除选定页面来进一步自定义所做的选择。
-
-   ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
+1. 在&#x200B;**管理发布**&#x200B;向导中，您可以通过添加其他页面或删除选定页面进一步自定义所做的选择。
 
    请记住，您还可以通过&#x200B;**已发布引用**&#x200B;选项查看要发布的引用。
 
