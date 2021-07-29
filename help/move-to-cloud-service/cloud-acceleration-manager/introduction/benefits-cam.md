@@ -1,15 +1,21 @@
 ---
 title: 使用Cloud Acceleration Manager的好处
 description: 本页重点介绍使用Cloud Acceleration Manager的主要优势。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
 
 # 使用Cloud Acceleration Manager的好处 {#benefits-cam}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_benefits"
+>title="使用Cloud Acceleration Manager的好处"
+>abstract="Cloud Acceleration Manager(CAM)为您的团队提供Adobe推荐的最佳实践和方法的引导式体验，以帮助您的团队进行规划、实施和开始自信投入使用。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Cloud Acceleration Manager快速入门"
 
 由于有各种业务要求和自定义设置，迁移到云可能是一个涉及的项目。 Cloud Acceleration Manager(CAM)为您的团队提供Adobe推荐的最佳实践和方法的引导式体验，以帮助您的团队进行规划、实施和开始自信投入使用。
 
