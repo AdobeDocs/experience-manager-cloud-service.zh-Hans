@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
+source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1313'
 ht-degree: 2%
 
 ---
@@ -156,22 +156,21 @@ API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]�
 
 ### [!DNL Forms]的新增功能 {#what-is-new-forms}
 
-* 您现在可以使用Automated forms conversion服务将法语、德语和西班牙语的PDF forms转换为自适应表单。
+* 现在，您可以使用Automated forms conversion服务将法语、德语和西班牙语的PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)转换为自适应表单。[
 * 在模板编辑器中添加了一个单独的面板，以显示与自适应表单组件相关的错误。 它有助于将所有自适应表单错误整合到一个位置并缩短解决时间。
 
 ### [!DNL Forms]预发行版渠道中提供的新增功能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**:通信API可帮助您结合XDP模板和XML数据，以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 利用API，可创建应用程序，以便：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) API您可以将XDP模板和XML数据组合在一起，以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 利用API，可创建应用程序，以便：
    * 使用XML数据填充模板文件，以生成文档。
    * 以各种格式生成输出表单，包括非交互式PDF打印流。
    * 从XFA表单PDF和Adobe Acrobat表单生成打印PDF文件。
 
 * **变量数据外部器**:您可以在由您的组织管理的外部存储系统上保存AEM Workflow变量的数据。
 
-* **基于Acroform的记录文档**:除了基于XFA的表单模板外，您还可以将Adobe Acrobat表单PDF(Acroform PDF)用作记录文档的模板。
+* **基于Acroform的记录文档**:除了基于 [XFA的表单模板外，您还可以使用Adobe Acrobat表单PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
 
-* **Microsoft Azure数据存储连接器**:您现在可以将表单数据模型连接到Microsoft Azure Storage。它允许您将自适应表单数据作为BLOB存储并检索到Microsoft Azure Storage。
-
+* **Microsoft Azure数据存储连接器**:现在，您可 [以将表单数据模型连接到Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它允许您将自适应表单数据作为BLOB检索并存储到Microsoft Azure Storage中。
 
 ## Cloud Acceleration Manager {#cam}
 
