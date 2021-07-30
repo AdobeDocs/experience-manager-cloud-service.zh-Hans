@@ -10,9 +10,9 @@ feature: 商务集成框架
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 >
 > 自AEM CIF核心组件版本2.0.0起，URL提供程序配置仅提供预定义的URL格式，而不提供1.x版本中可配置的自由文本格式。 此外，使用选择器在URL中传递数据的方法已被替换为后缀。
 
-### 产品页面url格式 {#product}
+### 产品页面URL格式 {#product}
 
 这会配置产品页面的URL，并支持以下选项：
 
@@ -41,7 +41,7 @@ ht-degree: 3%
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-其中，对于[Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
+对于[Venia引用存储](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 将替换为  `/content/venia/us/en/products/product-page`
 * `{{sku}}` 将被产品的sku(例如，  `VP09`
@@ -58,7 +58,7 @@ ht-degree: 3%
 * `{{page}}.html/{{url_path}}.html` (默认)
 * `{{page}}.html/{{url_key}}.html`
 
-其中，对于[Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
+对于[Venia引用存储](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 将替换为  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` 将替换为类别的属 `url_key` 性
@@ -70,7 +70,7 @@ ht-degree: 3%
 > 
 > `url_path`是产品或类别的祖先的`url_keys`与产品或类别的`url_key`之间以`/`斜杠分隔的串联。
 
-## 自定义Url格式 {#custom-url-format}
+## 自定义URL格式 {#custom-url-format}
 
 要提供自定义URL格式，项目可以实施[`UrlFormat`界面](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)并将实施注册为OSGI服务，将其用作类别页面或产品页面URL格式。 `UrlFormat#PROP_USE_AS`服务属性指示要替换的已配置预定义格式中的哪些格式：
 
