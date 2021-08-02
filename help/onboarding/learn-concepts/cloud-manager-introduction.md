@@ -2,9 +2,9 @@
 title: 了解什么是Cloud Manager
 description: 请阅读本页面，了解Cloud Manager、Cloud Manager程序和环境。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ Cloud Manager计划表示一组Cloud Manager环境，这些环境支持业务计
 用户可以创建&#x200B;**Sandbox**&#x200B;或&#x200B;**Production**&#x200B;程序。
 
 * 创建&#x200B;*生产程序*以在将来的适当时间启用实时流量。
-有关更多详细信息，请参阅生产计划简介。
+有关更多详细信息，请参阅[生产程序简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en)。
 
 * 通常，创建&#x200B;*沙盒项目*是为了用于培训、运行演示、启用、POC或文档目的。 它不用于传输实时流量，并且将具有生产程序不会受到的限制。 它将包含站点和资产，并且将使用自动填充的Git分支来交付，该分支包含示例代码、开发环境和非生产管道。
-有关更多详细信息，请参阅沙盒项目简介。
+有关更多详细信息，请参阅[沙盒程序简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en)。
 
 ## Cloud Manager环境 {#cloud-manager-environments}
 
