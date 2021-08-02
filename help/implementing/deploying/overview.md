@@ -3,7 +3,7 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: 部署
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 1%
@@ -25,9 +25,9 @@ ht-degree: 1%
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 -->
 
-## 客户版本{#customer-releases}
+## 客户版本 {#customer-releases}
 
-### 使用正确的AEM版本{#coding-against-the-right-aem-version}进行编码
+### 使用正确的AEM版本进行编码 {#coding-against-the-right-aem-version}
 
 对于以前的AEM解决方案，最新的AEM版本很少更改（大约每年一次，每季度提供Service Pack），客户将自行将生产实例更新为最新的快速启动，并引用API Jar。 但是，AEM as a Cloud Service应用程序会更频繁地自动更新到AEM的最新版本，因此内部版本的自定义代码应该针对最新的AEM版本构建。
 
@@ -47,9 +47,9 @@ ht-degree: 1%
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
 -->
 
-## 通过Cloud Manager和包管理器部署内容包{#deploying-content-packages-via-cloud-manager-and-package-manager}
+## 通过Cloud Manager和包管理器部署内容包 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
-### 通过Cloud Manager {#deployments-via-cloud-manager}进行部署
+### 通过Cloud Manager进行部署 {#deployments-via-cloud-manager}
 
 客户可通过Cloud Manager将自定义代码部署到云环境。 应该注意的是，Cloud Manager将将本地装配的内容包转换为符合Sling特征模型的对象，该模型是在云环境中运行AEM作为Cloud Service应用程序时描述的方式。 因此，在云环境的包管理器中查看包时，名称将包含“cp2fm”，并且转换的包将删除所有元数据。 它们不能进行交互，这意味着无法下载、复制或打开它们。 有关转换器的详细文档可在此处[找到。](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 本节的其余部分将介绍不可改变和可变包的组成和含义。
 
-### 不可变内容包{#immutabe-content-packages}
+### 不可变内容包 {#immutabe-content-packages}
 
 必须将不可变存储库中保留的所有内容和代码签入到git中，并通过Cloud Manager进行部署。 换言之，与当前的AEM解决方案不同，代码永远不会直接部署到正在运行的AEM实例。 这可确保在任何云环境中为给定版本运行的代码都相同，从而消除生产中无意更改代码的风险。 例如，OSGi配置应提交给源代码控制，而不是在运行时通过AEM Web控制台的配置管理器进行管理。
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 不支持对这些代码包应用某些其他限制，例如[安装挂接](http://jackrabbit.apache.org/filevault/installhooks.html)。
 
-## OSGI配置{#osgi-configuration}
+## OSGI配置 {#osgi-configuration}
 
 如上所述，OSGI配置应提交给源代码控制，而不是通过Web控制台。 实现此目的的技术包括：
 
@@ -78,13 +78,13 @@ ht-degree: 1%
 
 有关OSGi配置的更多信息，请参阅[将AEM的OSGi配置为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
 
-## 可变内容{#mutable-content}
+## 可变内容 {#mutable-content}
 
 在某些情况下，在源代码控制中准备内容更改可能会有所帮助，以便每当更新环境时，Cloud Manager都可以部署该内容。 例如，为某些根文件夹结构种子或在可编辑模板中排列更改，以便为应用程序部署所更新的组件启用策略，这可能是合理的。
 
 有两种策略可描述Cloud Manager将部署到可变存储库、可变内容包和重新指向语句的内容。
 
-### 可变内容包{#mutable-content-packages}
+### 可变内容包 {#mutable-content-packages}
 
 文件夹路径层次结构、服务用户和访问控制(ACL)等内容通常会提交到基于Maven原型的AEM项目中。 技术包括从AEM导出或直接编写为XML。 在构建和部署过程中，Cloud Manager会打包生成的可变内容包。 在管道的部署阶段，可变内容会在3个不同的时间安装：
 
@@ -165,7 +165,7 @@ ht-degree: 1%
 
 above appears to be internal, to confirm with Brian -->
 
-### 可变内容包{#package-manager-oneoffs-for-mutable-content-packages}的包管理器“一项”
+### 可变内容包的包管理器“一次性” {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
@@ -179,9 +179,9 @@ above appears to be internal, to confirm with Brian -->
 
 通过Cloud Manager安装的任何内容包（可变和不可变）都将在AEM Package Manager的用户界面中显示为冻结状态。 无法重新安装、重新构建或甚至下载这些包，且将带有&#x200B;**&quot;cp2fm&quot;**&#x200B;后缀列出，表明其安装由Cloud Manager管理。
 
-### 包含第三方包{#including-third-party}
+### 包括第三方包 {#including-third-party}
 
-客户通常会包含来自第三方源(如Adobe的翻译合作伙伴等软件供应商)的预建包。 建议将这些包托管在远程存储库中，并在`pom.xml`中引用它们。 如[受密码保护的Maven存储库](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)中所述，对于公共存储库和具有密码保护的专用存储库，都可以这样做。
+客户通常会包含来自第三方源(如Adobe的翻译合作伙伴等软件供应商)的预建包。 建议将这些包托管在远程存储库中，并在`pom.xml`中引用它们。 如[受密码保护的Maven存储库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)中所述，对于公共存储库和具有密码保护的专用存储库，都可以这样做。
 
 如果无法在远程存储库中存储包，则客户可以将包放置在基于本地文件系统的Maven存储库中，该存储库将作为项目的一部分提交到SCM，并由依赖于它的任何内容引用。 该储存库将在如下所示的项目展示中声明：
 
@@ -233,7 +233,7 @@ above appears to be internal, to confirm with Brian -->
 ...
 ```
 
-## 滚动部署的工作原理{#how-rolling-deployments-work}
+## 滚动部署的工作原理 {#how-rolling-deployments-work}
 
 与AEM更新一样，客户版本使用滚动部署策略进行部署，以便在正确的情况下消除创作群集停机时间。 事件的一般顺序如下所述，其中&#x200B;**Blue**&#x200B;是客户代码的旧版本，**Green**&#x200B;是新版本。 蓝色和绿色运行的AEM代码版本相同。
 
@@ -261,21 +261,21 @@ above appears to be internal, to confirm with Brian -->
 
 要使用云就绪型AEM快速启动开发和测试复制功能，需要将经典复制功能与创作/发布设置结合使用。 如果已为云删除AEM作者上的UI入口点，则用户将转到`http://localhost:4502/etc/replication`进行配置。
 
-## 用于滚动部署的向后兼容代码{#backwards-compatible-code-for-rolling-deployments}
+## 用于滚动部署的向后兼容代码 {#backwards-compatible-code-for-rolling-deployments}
 
 如上所述，AEM as a Cloud Service的滚动部署策略意味着旧版本和新版本可能同时运行。 因此，请谨慎处理代码更改，这些更改不向后兼容仍在运行的旧AEM版本。
 
 此外，应该对旧版本进行测试，以验证在回滚事件中新版本应用的任何新可变内容结构的兼容性，因为不会删除可变内容。
 
-### 服务用户和ACL更改{#service-users-and-acl-changes}
+### 服务用户和ACL更改 {#service-users-and-acl-changes}
 
 更改访问内容或代码所需的服务用户或ACL可能会导致旧版AEM中出现错误，从而导致服务用户对该内容或代码的访问权限过时。 要解决此问题，建议在至少2个版本之间进行更改，其中第一个版本在后续版本中清理之前充当桥梁。
 
-### 索引更改{#index-changes}
+### 索引更改 {#index-changes}
 
 如果对索引进行了更改，则务必要让蓝色版本继续使用其索引，直到其终止，而绿色版本使用其自己修改过的索引集。 开发人员应遵循本文](/help/operations/indexing.md)中描述的索引管理技术。[
 
-### 回滚的保守编码{#conservative-coding-for-rollbacks}
+### 回滚的保守编码 {#conservative-coding-for-rollbacks}
 
 如果在部署后报告或检测到故障，则可能需要回滚到蓝色版本。 最好确保蓝色代码与绿色版本创建的任何新结构兼容，因为新结构（任何可变内容内容）将不会回滚。 如果旧代码不兼容，则需要在后续客户版本中应用修复。
 
@@ -313,6 +313,6 @@ above appears to be internal, to confirm with Brian -->
 
 Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
 
-## 源控件{#maintenance-tasks-configuration-in-source-control}中的维护任务配置
+## 源代码管理中的维护任务配置 {#maintenance-tasks-configuration-in-source-control}
 
 必须在源控件中保留维护任务配置，因为&#x200B;**工具>操作**&#x200B;屏幕在云环境中将不再可用。 这有利于确保有意保留更改，而不是反向应用更改，或许会被遗忘。 有关其他信息，请参阅[维护任务文章](/help/operations/maintenance.md)。
