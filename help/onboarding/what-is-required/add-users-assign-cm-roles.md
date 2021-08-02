@@ -2,14 +2,14 @@
 title: '系统管理员任务 '
 description: 可查看本页以了解如何以系统管理员身份添加用户并将其分配给Cloud Manager角色
 exl-id: 4c0f5783-02c1-4ea6-871a-03ea8a0847bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
-# 系统管理员任务{#add-users-assign}
+# 系统管理员任务 {#add-users-assign}
 
 系统管理员可管理其用户从访问到权限的各个方面。 此用户是第一个有权在Admin Console和Cloud Manager中开始执行任务的用户。
 系统管理员执行以下组织任务：
@@ -17,7 +17,7 @@ ht-degree: 0%
 * 添加用户
 * 将用户分配给Cloud Manager角色和权限
 
-## 添加用户{#add-users}
+## 添加用户 {#add-users}
 
 >[!NOTE]
 >您必须是系统管理员才能添加用户。
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. 单击位于Cloud Manager登录页面右上角的&#x200B;**管理访问**&#x200B;按钮，以在新选项卡中打开Admin Console。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
    在&#x200B;**Admin Console**&#x200B;中，您可以将用户添加到Cloud Manager，并将其分配给角色，在Admin Console中称为产品配置文件。
 
