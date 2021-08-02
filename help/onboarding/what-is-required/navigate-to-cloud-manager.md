@@ -2,7 +2,7 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登录页面
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -25,13 +25,13 @@ Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行�
    >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager登录页面。 根据在[!UICONTROL Cloud Manager]中分配的角色和应用程序的状态，在使用[!UICONTROL Cloud Manager] UI时，您将看到不同的屏幕。 有关更多详细信息，请参阅下面的[Cloud Manager登录页面](#cloud-manager-landing)部分。
 
 1. 选择&#x200B;**Experience Manager**。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. 从Cloud Manager卡片中单击&#x200B;**Launch**。 成功登录到[!UICONTROL Cloud Manager]后，即可使用用户界面(UI)。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
-## Cloud Manager登录页面{#cloud-manager-landing}
+## Cloud Manager登录页面 {#cloud-manager-landing}
 
 成功登录后，系统会将您定向到Cloud Manager的登陆页面。
 
@@ -43,24 +43,23 @@ Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行�
 * **Cloud Manager中不存在程序时**
 
    如果您的组织中不存在项目，则登陆页面会引导您创建第一个项目，如下图所示。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
 * **当Cloud Manager中已存在程序时**
 
    如果组织中已存在项目，则登录页面会指示您添加其他项目，并显示所有现有项目，如下图所示。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
 * **当程序存在且用户是系统管理员时**
 
    如果组织中已存在项目，并且您是系统管理员，则登录页面会显示&#x200B;**管理访问**&#x200B;按钮以及&#x200B;**添加项目**&#x200B;选项，如下图所示。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 在此处，具有权限的用户（如Cloud Manager中的业务所有者角色）能够选择&#x200B;**添加程序**&#x200B;以启动[添加程序向导](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)。
 
 要了解如何在Cloud Manager中添加程序，请参阅：
 
-* [创建生产程序](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-
-* [创建沙盒项目](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* 创建生产程序
+* 创建沙盒项目
