@@ -2,14 +2,14 @@
 title: '授予用户对AEM实例的访问权限 '
 description: 可查看本页以了解系统管理员如何授予用户访问AEM实例的权限
 exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# 授予用户对AEM实例{#accessing-aem-instance}的访问权限
+# 授予用户对AEM实例的访问权限 {#accessing-aem-instance}
 
 作为系统管理员，请按照以下步骤授予用户访问AEM实例的权限：
 
@@ -18,18 +18,18 @@ ht-degree: 0%
    >[!NOTE]
    >您必须是系统管理员或创建环境的用户，才能在Admin Console中添加用户。 只有“业务所有者”或“部署管理者”角色有权创建环境。 请参阅[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md) ，了解有关角色和关联权限的更多信息。 此外，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)以了解有关环境的信息。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    或者，
 
    从&#x200B;**Environments**&#x200B;页面中，选择&#x200B;**Manage** —> **Manage Access**。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
 
 1. 单击&#x200B;**管理访问**&#x200B;后，新选项卡会导航到您有权访问环境创作实例的&#x200B;**Admin Console**。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
 
 1. 选择&#x200B;**Users**&#x200B;选项卡，然后单击&#x200B;**Add User**。
 
