@@ -2,7 +2,7 @@
 title: 不同之处和新增内容 — Adobe Experience Manager作为Cloud Service
 description: 不同之处和新增内容 — Adobe Experience Manager(AEM)作为Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 10%
@@ -65,7 +65,7 @@ AEM as a Cloud Service 现在具有：
 ![针对不同使用模式的自动缩放](assets/introduction-04.png "针对不同使用模式的自动缩放")
 
 
-## AEM更新{#aem-updates}
+## AEM更新 {#aem-updates}
 
 >[!NOTE]
 >有关更多详细信息，请参阅[AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
@@ -112,7 +112,7 @@ Cloud Manager是：
 
 Cloud Manager已演变为自助门户，在该门户中，可以创建和配置AEM as aCloud Service的主要组件：
 
-* 创建和管理新项目。 有关更多详细信息，请参阅[了解程序和程序类型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)。
+* 创建和管理新项目。 有关更多详细信息，请参阅[了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)。
 
 * 在这些程序中创建和管理AEM环境。 有关更多详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md) 。
 
@@ -161,7 +161,7 @@ Cloud Manager在跨多个地理区域的数据中心中创建环境，从而提�
 
 支持将AEM作为Cloud Service的新架构涉及对整体开发人员体验进行一些关键更改。 AEM as a A Services的主要目标之一是，让经验丰富的客户(在内部部署或Adobe Managed Services的上下文中使用了AEM)尽快迁移到AEM作为Cloud Service，而无需重写其大量自定义代码。 但是，可能仍需要进行一些调整。
 
-### 云开发{#aem-as-a-cloud-service-developing-cloud-development}
+### 云开发 {#aem-as-a-cloud-service-developing-cloud-development}
 
 对于要在AEM as a Cloud Service上运行的现有AEM应用程序，需要执行以下步骤：
 
@@ -191,7 +191,7 @@ Web控制台(管理OSGi包及其关联配置，且此前是AEM快速入门的一
 
 * 服务用户和用户组
 
-### 本地开发{#aem-as-a-cloud-service-developing-local-development}
+### 地方发展 {#aem-as-a-cloud-service-developing-local-development}
 
 为了支持快速的迭代和开发，还可以在AEM之外开发AEM应用程序作为Cloud Service上下文。 为此，开发人员可以使用以下工件：
 
@@ -203,7 +203,7 @@ Web控制台(管理OSGi包及其关联配置，且此前是AEM快速入门的一
 >
 >应该指出，云快速入门不允许使用AEM Sites和AEM Assets的所有功能。 它包含一个简单的创作环境，在该环境中，可以开发和测试大多数扩展。
 
-## 操作和性能{#operations-and-performance}
+## 操作和性能 {#operations-and-performance}
 
 >[!NOTE]
 >
@@ -237,7 +237,7 @@ Web控制台(管理OSGi包及其关联配置，且此前是AEM快速入门的一
 
 * 作为Cloud Service的AEM的每个特定实例的用户首选项仍为本地。
 
-## 创作用户界面{#authoring-user-interface}
+## 创作用户界面 {#authoring-user-interface}
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ Adobe Experience Manager Assets as a Analytics为企业提供了一个云原生�
 
 资产产品包括云中的下一代资产处理以及高性能资产摄取和搜索。
 
-有关详细信息，请参阅[概述和资产as as a Cloud Service简介](/help/assets/overview.md)。
+有关详细信息，请参阅[概述和资产as as aCloud Service简介](/help/assets/overview.md)。
 
 ## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
