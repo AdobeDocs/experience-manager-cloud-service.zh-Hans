@@ -2,9 +2,9 @@
 title: 提交 AEM 连接器
 description: 提交 AEM 连接器
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
+source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '297'
 ht-degree: 11%
 
 ---
@@ -21,7 +21,7 @@ AEM连接器列在[AdobeExchange](https://partners.adobe.com/exchangeprogram/exp
 有关如何在项目中包含包，有多种选项可供选择：
 
 1. 合作伙伴的公共存储库 — 合作伙伴将将内容包托管在可公开访问的Maven存储库中
-1. 合作伙伴的受密码保护的存储库 — 合作伙伴将将内容包托管在受密码保护的Maven存储库中。 有关说明，请参阅受密码保护的Maven存储库。
+1. 合作伙伴的受密码保护的存储库 — 合作伙伴将将内容包托管在受密码保护的Maven存储库中。 有关说明，请参阅[受密码保护的Maven存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories)。
 1. 捆绑的对象 — 在这种情况下，连接器包包含在客户的maven项目的本地中。
 
 无论包托管在何处，都需要按照供应商提供的方式在pom.xml中作为依赖项引用包。
