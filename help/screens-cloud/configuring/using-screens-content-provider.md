@@ -1,7 +1,7 @@
 ---
 title: 使用Screens内容提供程序
 description: 本页介绍如何使用Screens内容提供程序创建内容。
-source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
@@ -30,10 +30,10 @@ ht-degree: 1%
 1. 导航到[Adobe Experience Cloud](https://experience.adobe.com)主页。
 
 1. 选择&#x200B;**Experience Manager**。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. 从Cloud Manager卡片中单击&#x200B;**Launch**。 成功登录到[!UICONTROL Cloud Manager]后，即可使用用户界面(UI)。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. 选择Screens作为Cloud Service的程序并单击图标，如下所示，打开Cloud Manager的&#x200B;**概述**&#x200B;页面以查看该特定程序。
 
