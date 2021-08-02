@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] 作为Cloud Service2020.7.0发行说明。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 76%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 版的发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 版的发行说明  {#release-notes}
 
-以下部分概述了 Experience Manager as a Cloud Service 2020.7.0 版的常规发行说明。
+以下部分概述了 Experience Manager as a Cloud Service 2020.7.0 的常规发行说明。
 
 ## 发布日期 {#release-date}
 
@@ -31,7 +31,7 @@ ht-degree: 76%
 
 ## [!DNL Adobe Experience Manager Assets] 作为Cloud Service {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}的新增功能
+### [!DNL Assets]的新增功能 {#what-is-new-assets}
 
 * [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。管理员可以配置[!DNL Experience Manager]以调用使用[!DNL Asset Compute Service]创建的自定义应用程序。 开发人员可以使用该服务来创建专门的自定义应用程序，以满足复杂用例的需求。 此Web服务可以为不同文件类型生成缩略图、从Adobe文件格式生成高质量图像渲染、对视频进行编码（将来推出）、提取元数据、提取全文作为索引的前导，以及通过所有可用的[!DNL Sensei]服务运行资产。 请参阅[使用资产微服务和处理配置文件](/help/assets/asset-microservices-configure-and-use.md)。
 
@@ -43,13 +43,13 @@ ht-degree: 76%
 
 * 由部署到与[!DNL Cloud Manager]中的环境关联的Git项目中的`/conf/global`的客户创建的工作流模型会自动部署到`/var`，因此可在[!DNL Experience Manager]中使用。 客户更改的 `/libs` 下的产品工作流程模型不会自动部署到 `/var`。
 
-### 修复了{#assets-bugs-fixed}的错误
+### 已修复的错误 {#assets-bugs-fixed}
 
 * 对于收藏集中包含的资产，“移动资产”向导无法按预期加载。 (CQ-4296756)
 * `dam:size`和`dam:sha1`的值从XMP写回中排除。 (CQ-4237355)
 * 批量取消发布资产时，[!DNL Brand Portal]会生成一个错误，提示请求URI太长。 (CQ-4299474)
 
-## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
+## Adobe Experience Manager Commerce as aCloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -89,11 +89,11 @@ AEM Commerce现在可用于Cloud Service。
 * Cloud Manager 管道现在支持由客户设置的变量和密钥。
 
 
-   有关更多详细信息，请参阅[管道变量](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)。
+   有关更多详细信息，请参阅管道变量。
 
 * 现在支持绑定身份验证的专用Maven存储库。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅[使用Java 11支持](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
+* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅使用Java 11支持。
 
 ### 错误修复 {#bug-fixes-cm}
 
