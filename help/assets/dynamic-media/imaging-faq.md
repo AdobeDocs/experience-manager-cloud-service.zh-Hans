@@ -4,9 +4,9 @@ description: 了解Adobe Sensei AI智能成像如何应用每个用户的独特�
 feature: 资产管理，演绎版
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2613'
 ht-degree: 1%
 
 ---
@@ -184,13 +184,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 默认情况下，对于Dynamic Media公司帐户，会禁用（关闭）智能成像DPR和网络优化。 如果要启用（打开）其中一个或两个现成增强功能，请按如下所述创建一个支持案例。
 
-智能成像DPR和网络优化的发布计划如下：
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
-| 区域 | 目标日期 |
+| Region | Target date |
 |---|---|
-| 北美 | 实时 |
-| 欧洲、中东、非洲 | 2021年8月13日 |
-| 亚太 | 2021年7月22日 |
+| North America | Live | 
+| Europe, Middle East, Africa | 13 August 2021 | 
+| Asia-Pacific | 22 July 2021 | -->
 
 1. [使用Admin Console创建支持案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 1. 在支持案例中提供以下信息：
@@ -281,4 +281,4 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * 默认情况下，为了优化DPR，配置了Dynamic Media Foundation组件，以避免因服务器端智能成像DPR优化而出现过大的图像，将始终向Dynamic Media Foundation组件图像中添加`dpr=off`。 即使客户在DM Foundation组件中取消选择DPR优化，服务器端智能成像DPR也不会生效。 总之，在DM Foundation组件中，DPR优化仅基于DM Foundation组件级别设置生效。
 * 任何查看器端DPR优化都与服务器端智能成像DPR优化协同工作，并且不会导致图像过大。 换言之，无论DPR由查看器处理（例如仅在启用了缩放功能的查看器中的主视图），都不会触发服务器端智能成像DPR值。 同样，无论查看器元素（如色板和缩略图）没有DPR处理，都会触发服务器端智能成像DPR值。
 
-另请参阅[使用图像](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[使用智能裁剪](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)时。—>
+另请参阅[使用图像](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[使用智能裁剪](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)时。
