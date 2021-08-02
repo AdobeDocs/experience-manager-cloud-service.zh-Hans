@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 66%
+source-wordcount: '484'
+ht-degree: 44%
 
 ---
 
@@ -81,47 +81,47 @@ ht-degree: 66%
    + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [预览 — JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
-   + [Experience League 发布的 Dynamic Media 新闻稿](dynamic-media/dynamic-media-newsletter.md)
-   + [设置 Dynamic Media](dynamic-media/administering-dynamic-media.md)
-   + [使用 Dynamic Media](dynamic-media/dynamic-media.md)
-   + [配置 Dynamic Media](dynamic-media/config-dm.md)
-   + [Dynamic Media 疑难解答](dynamic-media/troubleshoot-dm.md)
+   + [Dynamic Media新闻稿存档(按Experience League)](dynamic-media/dynamic-media-newsletter.md)
+   + [设置Dynamic Media](dynamic-media/administering-dynamic-media.md)
+   + [使用Dynamic Media](dynamic-media/dynamic-media.md)
+   + [配置Dynamic Media](dynamic-media/config-dm.md)
+   + [Dynamic Media故障诊断](dynamic-media/troubleshoot-dm.md)
    + [Dynamic Media 中的辅助功能](dynamic-media/accessibility-dm.md)
    + [管理 Dynamic Media 资产](dynamic-media/managing-assets.md)
    + [优化图像质量的最佳实践](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [文件管理最佳实践](dynamic-media/best-practices-for-file-management.md)
    + [图像配置文件](dynamic-media/image-profiles.md)
    + [视频配置文件](dynamic-media/video-profiles.md)
-   + [管理 Dynamic Media 图像预设](dynamic-media/managing-image-presets.md)
-   + [应用 Dynamic Media 图像预设](dynamic-media/image-presets.md)
-   + [管理 Dynamic Media 查看器预设](dynamic-media/managing-viewer-presets.md)
-   + [应用 Dynamic Media 查看器预设](dynamic-media/viewer-presets.md)
+   + [管理Dynamic Media图像预设](dynamic-media/managing-image-presets.md)
+   + [应用Dynamic Media图像预设](dynamic-media/image-presets.md)
+   + [管理Dynamic Media查看器预设](dynamic-media/managing-viewer-presets.md)
+   + [应用Dynamic Media查看器预设](dynamic-media/viewer-presets.md)
    + [批次集预设](dynamic-media/batch-set-presets-dm.md)
    + [通过Dynamic Media使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [通过Dynamic Media Classic使CDN缓存失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [智能成像](dynamic-media/imaging-faq.md)
-   + [传送 Dynamic Media 资产](dynamic-media/delivering-dynamic-media-assets.md)
-   + [在 Dynamic Media 中激活热链接保护](dynamic-media/hotlink-protection.md)
+   + [交付Dynamic Media资产](dynamic-media/delivering-dynamic-media-assets.md)
+   + [在Dynamic Media中激活热链接保护](dynamic-media/hotlink-protection.md)
    + [3D 支持](dynamic-media/assets-3d.md)
    + [图像集](dynamic-media/image-sets.md)
    + [全景图像](dynamic-media/panoramic-images.md)
    + [混合媒体集](dynamic-media/mixed-media-sets.md)
    + [旋转集](dynamic-media/spin-sets.md)
-   + [视频](dynamic-media/video.md)
+   + [视频在Dynamic Media](dynamic-media/video.md)
    + [传送横幅](dynamic-media/carousel-banners.md)
    + [交互式图像](dynamic-media/interactive-images.md)
    + [交互式视频](dynamic-media/interactive-videos.md)
    + [360 VR 视频](dynamic-media/360-video.md)
    + [将Dynamic Media查看器与Adobe Analytics和Adobe Experience Platform标记集成](dynamic-media/tags.md)
    + [使用概览创建自定义弹出窗口](dynamic-media/custom-pop-ups.md)
-   + [为响应式网站传送优化的图像](dynamic-media/responsive-site.md)
-   + [预览 Dynamic Media 资产](dynamic-media/previewing-assets.md)
-   + [将 Dynamic Media 资产添加到页面](dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   + [为响应式网站提供优化的图像](dynamic-media/responsive-site.md)
+   + [预览Dynamic Media资产](dynamic-media/previewing-assets.md)
+   + [将Dynamic Media资产添加到页面](dynamic-media/adding-dynamic-media-assets-to-pages.md)
    + [在网页上嵌入动态视频或图像查看器](dynamic-media/embed-code.md)
-   + [将 URL 关联到您的 Web 应用程序](dynamic-media/linking-urls-to-yourwebapplication.md)
-   + [使用规则集转换 URL](dynamic-media/using-rulesets-to-transform-urls.md)
-   + [发布 Dynamic Media 资产](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [使用 Dynamic Media 中的“选择性发布”功能](dynamic-media/selective-publishing.md)
+   + [将URL关联到您的Web应用程序](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [使用规则集转换URL](dynamic-media/using-rulesets-to-transform-urls.md)
+   + [发布Dynamic Media资产](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [在Dynamic Media中使用“选择性发布”功能](dynamic-media/selective-publishing.md)
    + [使用选择器](dynamic-media/working-with-selectors.md)
    + [HTTP2 内容交付常见问题解答](dynamic-media/http2faq.md)
    + [Flash查看器生命周期终止](dynamic-media/flash-viewers-eol.md)
