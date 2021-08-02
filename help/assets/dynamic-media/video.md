@@ -1,12 +1,12 @@
 ---
-title: 视频
+title: 视频在Dynamic Media
 description: 了解如何在Dynamic Media中处理视频。
 feature: 视频配置文件
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '9459'
+source-wordcount: '9499'
 ht-degree: 19%
 
 ---
@@ -40,8 +40,10 @@ ht-degree: 19%
       * [将视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
       * 了解有关[组织数字资产以使用处理配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)的更多信息。
       * 了解有关[组织数字资产](/help/assets/organize-assets.md)的更多信息。
-   * 将主源视频上传到文件夹。 您可以上传每个最大15 GB的视频文件。 将视频添加到文件夹后，这些视频会根据您分配给文件夹的视频处理配置文件进行编码。
+   * 将主源视频上传到文件夹。 将视频添加到文件夹后，这些视频会根据您分配给文件夹的视频处理配置文件进行编码。
 
+      * Dynamic Media主要支持长度为30分钟的简短视频。
+      * 您可以上传每个最大15 GB的视频文件。
       * [上传视频](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 了解有关[支持的输入文件格式](/help/assets/file-format-support.md)的更多信息。
    * 监视[视频编码在资产或工作流视图中的进展情况](#monitoring-video-encoding-and-youtube-publishing-progress)。
@@ -288,6 +290,9 @@ HLS是Apple的自适应视频流播放标准，可根据网络带宽容量自动
 ### 源视频文件 {#source-video-files}
 
 在对视频文件进行编码时，请尽可能使用最高质量的源视频文件。避免使用先前已编码的视频文件，因为这样的文件已经压缩，进一步编码会导致创建的视频质量不佳。
+
+* Dynamic Media主要支持长度为30分钟的简短视频。
+* 您可以上载每个最大15 GB的主源视频文件。
 
 下表描述了源视频文件在编码之前必须具有的推荐大小、宽高比和最小比特率：
 
