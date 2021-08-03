@@ -2,9 +2,9 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1618'
 ht-degree: 3%
 
 ---
@@ -74,9 +74,6 @@ ht-degree: 3%
    ![](assets/environment-view-2.png)
 
 1. 从列表中选择任一环境，以查看环境详细信息。
-
-   >[!NOTE]
-   >预览服务将以滚动方式部署到所有程序。 当客户的计划启用了预览服务后，系统会在产品中通知客户。 有关更多详细信息，请参阅[访问预览服务](#access-preview-service)一节。
 
    ![](assets/environ-preview1.png)
 
