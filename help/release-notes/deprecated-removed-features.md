@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 发行说明特定于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已弃用和已移除的功能。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1adcde525454e779adbd251b9a31f4e456b28998
+source-git-commit: 8742c4058a5b89a0d6aca0d6e58ed993b01d084d
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 38%
+source-wordcount: '513'
+ht-degree: 36%
 
 ---
 
@@ -38,6 +38,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Assets] | 将资产直接上传到[!DNL Experience Manager]。请参阅[已弃用的资产上传API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二进制上传](/help/assets/add-assets.md)。有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | [!DNL Assets] | [不支持工](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) 作流 `DAM Asset Update` 中的某些工作流步骤，包括如调用命令行工 [!DNL ImageMagick]具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
+| [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制UI（在2021年9月30日之后删除） | [管理发](/help/operations/replication.md#manage-publication) 布或发 [布内容树工作](/help/operations/replication.md#publish-content-tree-workflow) 流程方法 |
 
 ## 已删除功能 {#removed-features}
 
@@ -50,3 +51,4 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Sites] | Portal Director 和 Portlet 组件 | 这些功能已在[!DNL Experience Manager] 6.4中弃用，现在已从[!DNL Experience Manager]中删除。 |
 | [!DNL Sites] | 设计导入程序 | 此功能已被删除，因为[!DNL Experience Manager]存储库的不可更改部分在运行时无法访问。 |
 | [!DNL Assets] | [!DNL Assets] 与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务共享功能不可用。 | 要与[!DNL Adobe Creative Cloud]集成，请使用[Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。 |
+| [!DNL Foundation] | 支持Apache Sling数据源（OSGi包org.apache.sling.datasource）。 | 不适用 |
