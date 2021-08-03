@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: 演绎版
 exl-id: null
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Experience Manager为Cloud Service提供云原生资产处理功能以生成FPO�
 
 ## 创建处理配置文件 {#create-processing-profile}
 
-要生成FPO呈现，请创建一个&#x200B;**[!UICONTROL 处理配置文件]**。 配置文件使用云原生资产微服务进行处理。 有关说明，请参阅[为资产微服务创建处理配置文件](asset-microservices-configure-and-use.md)。
+要生成FPO呈现，请创建&#x200B;**[!UICONTROL 处理配置文件]**。 配置文件使用云原生资产微服务进行处理。 有关说明，请参阅[为资产微服务创建处理配置文件](asset-microservices-configure-and-use.md)。
 
 选择&#x200B;**[!UICONTROL 创建FPO呈现版本]**&#x200B;以生成FPO呈现版本。 （可选）单击&#x200B;**[!UICONTROL Add New]** ，将其他演绎版设置添加到同一配置文件。
 
