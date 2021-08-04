@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道'
 description: '[!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道 {#prerelease-channel}
 
 
 ## 简介 {#introduction}
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 >[！视频](/help/release-notes/assets/prerelease-overview.mp4)
 
-## 如何启用预发行版本{#enable-prerelease}
+## 如何启用预发行版 {#enable-prerelease}
 
 预发行功能的体验方式不同：
 
 * 云环境（标准项目开发环境或任何沙盒项目环境类型）
 * 本地SDK
 
-### 云环境{#cloud-environments}
+### 云环境 {#cloud-environments}
 
 要在云开发环境的站点控制台中查看新增功能以及任何项目自定义的结果，请执行以下操作：
 
@@ -54,7 +54,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 您可以在本地快速入门SDK的站点控制台中看到新功能，并通过让您的Maven项目引用预发行版`API Jar`（位于Maven Central）来在预发行版中针对新API编码。 您还可以通过在预发行模式下启动常规快速启动SDK，在本地计算机上查看以下预发行功能：
 
-* 从软件分发门户下载SDK并安装，如[访问AEM as a Software SDK](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)中所述
+* 从软件分发门户下载SDK并安装，如[访问AEM as a Software SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)中所述。
 * 启动SDK快速启动时，请包含参数`-r prerelease`。
 * 该值为&#x200B;*sticky*，因此只能在首次启动时选择该值。 重新安装SDK以更改命令行选项。
 
