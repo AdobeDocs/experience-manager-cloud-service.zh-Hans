@@ -2,7 +2,7 @@
 title: 部署代码 — Cloud Services
 description: 部署代码 — Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # 部署代码 {#deploy-your-code}
 
-## 在AEM as a Cloud Manager中使用Cloud Manager部署代码{#deploying-code-with-cloud-manager}
+## 在AEM as aCloud Service中使用Cloud Manager部署代码 {#deploying-code-with-cloud-manager}
 
 配置生产管道（存储库、环境和测试环境）后，您便可以部署代码。
 
@@ -41,7 +41,7 @@ ht-degree: 2%
    Stage **Deployment**，涉及以下步骤：
 
    * 验证：此步骤可确保将管道配置为使用当前可用的资源，例如，配置的分支存在，且环境可用。
-   * 构建和单元测试：此步骤将运行容器化生成流程。 有关构建环境的详细信息，请参阅[构建环境详细信息](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md)。
+   * 构建和单元测试：此步骤将运行容器化生成流程。 有关构建环境的详细信息，请参阅[构建环境详细信息](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。
    * 代码扫描：此步骤将评估应用程序代码的质量。 有关测试过程的详细信息，请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)。
    * 构建图像：此步骤包含用于构建图像的流程中的日志文件。 此过程负责将生成步骤生成的内容和调度程序包转换为Docker图像和Kubernetes配置。
    * 部署到暂存环境
@@ -67,11 +67,11 @@ ht-degree: 2%
 
 
 
-## 部署过程{#deployment-process}
+## 部署过程 {#deployment-process}
 
 所有Cloud Service部署都遵循滚动流程，以确保零停机时间。 请参阅[滚动部署的工作原理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work)以了解更多信息。
 
-### 部署到生产阶段{#deployment-production-phase}
+### 部署到生产阶段 {#deployment-production-phase}
 
 部署到生产拓扑的流程略有不同，以便最大限度地减少对AEM Site访客的影响。
 
