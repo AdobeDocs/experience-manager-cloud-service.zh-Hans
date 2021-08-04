@@ -4,9 +4,9 @@ description: 如果您是开发人员或部署管理员，请阅读本页以了�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 本文档可帮助您的开发人员和部署经理访问Cloud Manager，并熟悉他们如何为学习路径做准备。
 
-阅读后，您应该：
+阅读本文档后，您应：
 
-* 作为开发人员，您应该能够了解如何访问和管理Cloud Manager Git
-* 作为部署管理器，您应该能够了解如何在Cloud Manager中设置管道和部署代码
+* 作为开发人员，您将能够了解如何访问和管理Cloud Manager Git
+* 作为部署管理器，您能够了解如何在Cloud Manager中设置管道和部署代码
 
 ## 简介 {#introduction}
 
@@ -39,11 +39,13 @@ ht-degree: 3%
 
 ## 管理Git {#manage-git}
 
-要了解有关此主题的更多信息，请转到此处。
+您可以使用Cloud Manager UI中的Git自助服务帐户管理来访问和管理Git存储库。
+要了解有关此主题的更多信息，请参阅[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
 
 ## 设置管道 {#setup-pipeline}
 
-要了解有关此主题的更多信息，请转到此处
+您可以从Cloud Manager UI配置生产管道或非生产管道。
+要了解有关此主题的更多信息，请参阅[配置CI-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)。
 
 ## 下一步 {#whats-next}
 
