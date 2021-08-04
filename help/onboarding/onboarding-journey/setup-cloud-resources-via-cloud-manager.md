@@ -4,9 +4,9 @@ description: 请阅读本页内容，了解如何通过Cloud Manager设置云资
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,21 @@ ht-degree: 0%
 
 ## 导航到Cloud Manager {#navigate-cloud-manager}
 
-1. *业务所有者*&#x200B;用户将收到一封欢迎电子邮件，从中可以开始使用，或者如果找不到，请直接转到[Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home)并使用Adobe ID登录。
+*业务所有者*&#x200B;用户将收到一封欢迎电子邮件，从中可以开始使用，或者如果找不到，请直接转到[Adobe Experience Cloud](https://experience.adobe.com)并使用Adobe ID登录。
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+按照以下步骤导航到Cloud Manager:
+
+1. 在欢迎电子邮件中，单击&#x200B;**开始**，如下图所示。
+   ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. 您将导航到Cloud Manager的&#x200B;**程序和产品**&#x200B;页面。
+
+   >[!IMPORTANT]
+   >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。
+
+此外，您还可以从Adobe Experience Cloud主页导航到Cloud Manager的&#x200B;**程序和产品**&#x200B;页面。 应遵循以下步骤：
+
+1. 直接导航到[Adobe Experience Cloud](https://experience.adobe.com)，然后使用Adobe ID登录。
 
 1. 在Adobe Experience Cloud主页中，选择&#x200B;**Experience Manager**。
 
@@ -56,11 +68,37 @@ ht-degree: 0%
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. 此时会显示Cloud Manager登录页面，如下图所示。
+1. 成功登录后，系统会将您定向到Cloud Manager的登陆页面。
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >根据在[!UICONTROL Cloud Manager]中分配的角色和应用程序的状态，在使用[!UICONTROL Cloud Manager] UI时，您将看到不同的屏幕。
 
-1. 确认已为您分配了“业务所有者产品配置文件”。 为此，请从右上方选择您的用户档案，如下所示。
+   您将看到以下三个选项之一：
+
+   * **Cloud Manager中不存在程序时**
+
+      如果您的组织中不存在项目，则登陆页面会引导您创建第一个项目，如下图所示。
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+   * **当Cloud Manager中已存在程序时**
+
+      如果组织中已存在项目，则登录页面会指示您添加其他项目，并显示所有现有项目，如下图所示。
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+   * **当程序存在且用户是系统管理员时**
+
+      如果组织中已存在项目，并且您是系统管理员，则登录页面会显示&#x200B;**管理访问**&#x200B;按钮以及&#x200B;**添加项目**&#x200B;选项，如下图所示。
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+
+## 验证用户角色 {#verify-user-roles}
+
+成功登录Cloud Manager后，请按照以下步骤验证是否已为您分配了“业务所有者产品配置文件”：
+
+1. 从右上方选择您的用户档案，如下所示。
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
