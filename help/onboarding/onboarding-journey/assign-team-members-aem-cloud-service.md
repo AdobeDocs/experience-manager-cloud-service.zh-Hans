@@ -4,9 +4,9 @@ description: 可查看本页以了解如何将团队成员分配给AEM作为Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-现在，您为AEM as a Cloud Service产品配置文件分配的用户已准备好了解如何访问“创作”，并熟悉AEM as a Cloud Service中的页面创作。 您应该遵循该路径，方法是接下来查看文档“AEM用户学习路径”。
+现在，您为AEM as a Cloud Service产品配置文件分配的用户已准备好了解如何访问“创作”，并熟悉AEM as a Cloud Service中的页面创作。 您应该遵循该路径，方法是接下来查看文档“AEM用户的学习路径”或“开发人员和部署管理器的学习路径”。
 
 ## 其他资源 {#additional-resources}
 
