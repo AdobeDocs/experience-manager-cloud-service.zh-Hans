@@ -2,9 +2,9 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登录页面
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '506'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行�
 
 在此处，具有权限的用户（如Cloud Manager中的业务所有者角色）能够选择&#x200B;**添加程序**&#x200B;以启动[添加程序向导](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)。
 
-要了解如何在Cloud Manager中添加程序，请参阅：
+要了解如何在Cloud Manager中添加程序，请参阅创建：
 
-* 创建生产程序
-* 创建沙盒项目
+* [生产计划](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [沙盒项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
