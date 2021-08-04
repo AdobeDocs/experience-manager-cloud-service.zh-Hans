@@ -4,7 +4,7 @@ description: 可查看本页以了解如何将团队成员分配给AEM作为Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 196af2ab4801b12017063bc2aab59faabdae45f9
+source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -44,11 +44,15 @@ ht-degree: 1%
    >[!NOTE]
    >为了入门，我们建议您最初添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 您无需添加所有用户即可继续载入其余内容。 完成载入后，您可以稍后扩展到更多用户。
 
-在开始查看将团队成员分配给AEM作为Cloud Service产品配置文件的步骤之前，请确保遵循以下两个步骤：
 
-1. 登录到[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。 有关更多详细信息，请参阅登录Admin Console。
+   >[!IMPORTANT]
+   >在开始查看将团队成员分配给AEM作为Cloud Service产品配置文件的步骤之前，请确保遵循以下两个步骤：
+   >
+   >1. 登录到[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。 有关更多详细信息，请参阅登录Admin Console。
+      >
+      >
+   1. 查看[AEM as a Cloud Service产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
 
-1. 查看[AEM as a Cloud Service产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
 
 请按照以下步骤查看Adobe Admin Console中的Cloud Manager配置文件列表：
 
@@ -78,16 +82,22 @@ ht-degree: 1%
 
 以下步骤必须由同时具有“业务所有者”角色的系统管理员执行。
 
-1. 在Cloud Manager中，导航到Cloud Manager，然后从感兴趣的环境的上下文中选择管理访问按钮，如下所示：
+1. 从Cloud Manager导航到您的程序，然后从感兴趣的环境的上下文中选择&#x200B;**管理访问**&#x200B;按钮，如下所示。
 
-1. 单击“管理访问”后，新的选项卡会导航您到Admin Console，您可以从中访问环境的创作实例。 根据此人需要授予的权限，选择&#x200B;*AEM Administrators*&#x200B;或&#x200B;*AEM Users*。 了解有关[AEM as a Cloud Service产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)的更多信息。
+   ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. 选择如下所示的添加用户并提交必要的详细信息以完成添加团队成员：
+1. 新选项卡会将您导航到您有权从中访问环境创作实例的Adobe Admin Console。 根据此人需要授予的权限，选择&#x200B;*AEM Administrators*&#x200B;或&#x200B;*AEM Users*。 了解有关[AEM as a Cloud Service产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)的更多信息。
 
+   ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
-1. 如果您拥有需要访问的团队成员信息，则需要对所有环境（包括开发、暂存和生产）重复执行这些步骤。
+1. 选择`AEM Administrator`或`AEM User`并单击&#x200B;**添加用户**，如下所示，并提交必要的详细信息以完成添加团队成员。
+
+   ![](/help/onboarding/onboarding-journey/assets/add-team3.png)
 
    现在，您添加的用户将有权访问AEM作为Cloud Service创作服务！
+
+   >[!NOTE]
+   >如果您拥有需要访问的团队成员信息，则需要对所有环境（包括开发、暂存和生产）重复执行这些步骤。
 
 
 ## 下一步 {#whats-next}
