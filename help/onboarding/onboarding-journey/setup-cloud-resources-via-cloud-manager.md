@@ -4,9 +4,9 @@ description: 请阅读本页内容，了解如何通过Cloud Manager设置云资
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ ht-degree: 0%
    >[!IMPORTANT]
    >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。 请为此页面添加书签以供将来使用，以帮助您直接导航到Cloud Manager的登陆页面。
 
+1. 系统会将您定向到Cloud Manager的登陆页面。 有关更多详细信息，请参阅[查看Cloud Manager的程序](#viewing-programs)部分。
+
 此外，您还可以从Adobe Experience Cloud主页导航到Cloud Manager的&#x200B;**程序和产品**&#x200B;页面。 应遵循以下步骤：
 
 1. 直接导航到[Adobe Experience Cloud](https://experience.adobe.com)，然后使用Adobe ID登录。
@@ -68,29 +70,32 @@ ht-degree: 0%
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. 成功登录后，系统会将您定向到Cloud Manager的登陆页面。
+1. 成功登录后，系统会将您定向到Cloud Manager的登陆页面。 有关更多详细信息，请参阅[查看Cloud Manager的程序](#viewing-programs)部分。
 
    >[!NOTE]
    >根据在[!UICONTROL Cloud Manager]中分配的角色和应用程序的状态，在使用[!UICONTROL Cloud Manager] UI时，您将看到不同的屏幕。
 
-   您将看到以下三个选项之一：
+### 在Cloud Manager的登录页面中查看项目 {#viewing-programs}
 
-   * **Cloud Manager中不存在程序时**
+成功登录后，系统会将您定向到Cloud Manager的登陆页面。 您将看到以下三个选项之一：
 
-      如果您的组织中不存在项目，则登陆页面会引导您创建第一个项目，如下图所示。
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+#### Cloud Manager中不存在程序时 {#no-programs}
 
-   * **当Cloud Manager中已存在程序时**
+如果您的组织中不存在项目，则登陆页面会引导您创建第一个项目，如下图所示。
 
-      如果组织中已存在项目，则登录页面会指示您添加其他项目，并显示所有现有项目，如下图所示。
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### 当Cloud Manager中已存在程序时 {#programs-exist}
 
-   * **当程序存在且用户是系统管理员时**
+如果组织中已存在项目，则登录页面会指示您添加其他项目，并显示所有现有项目，如下图所示。
 
-      如果组织中已存在项目，并且您是系统管理员，则登录页面会显示&#x200B;**管理访问**&#x200B;按钮以及&#x200B;**添加项目**&#x200B;选项，如下图所示。
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### 当程序存在且用户是系统管理员时 {#programs-exist-sysadmin}
+
+如果组织中已存在项目，并且您是系统管理员，则登录页面会显示&#x200B;**管理访问**&#x200B;按钮以及&#x200B;**添加项目**&#x200B;选项，如下图所示。
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## 验证用户角色 {#verify-user-roles}
