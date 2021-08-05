@@ -2,9 +2,9 @@
 title: 导航到Cloud Manager
 description: 可查看本页以了解如何导航到Cloud Manager登录页面
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '515'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,8 @@ Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行�
 
    >[!IMPORTANT]
    >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。 请为此页面添加书签以供将来使用，以帮助您直接导航到Cloud Manager的登陆页面。
+
+1. 系统会将您定向到Cloud Manager的登陆页面。
 
 此外，您还可以从Adobe Experience Cloud主页导航到Cloud Manager的&#x200B;**程序和产品**&#x200B;页面。 应遵循以下步骤：
 
