@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 元数据
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 19%
+source-wordcount: '1061'
+ht-degree: 17%
 
 ---
 
@@ -101,13 +101,13 @@ ht-degree: 19%
 
 ### 编辑表单项目 {#editing-form-items}
 
-要编辑表单项的属性，请点按/单击组件，并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中编辑以下属性的全部或子集。
+要编辑表单项的属性，请点按/单击组件，并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中编辑以下属性的全部或子集。 建议仅将一个字段映射到元数据架构中的给定属性。 否则，系统会选取映射到属性的最新添加字段。
 
 **[!UICONTROL 字段标签]**:文件夹的属性页面上显示的元数据属性的名称。
 
 **[!UICONTROL 映射到属性]**:此属性指定保存文件夹节点的CRX存储库中文件夹节点的相对路径。以“**”开头。/**&quot;，表示路径位于文件夹的节点下。
 
-以下是此属性的有效值：
+以下是属性的有效值示例：
 
 * `./jcr:content/metadata/dc:title`:将该值作为属性存储在文件夹的元数据节点 `dc:title`中。
 
