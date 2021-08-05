@@ -50,6 +50,7 @@ ht-degree: 7%
 ### 2.将组织载入Adobe Admin Console:
 
 >   ![processoverview2.jpg](./assets/processOverview2.jpg)
+
 * 系统管理员：
    * 配置AEM程序和环境。
    * 导航到管理任务的Admin Console。
