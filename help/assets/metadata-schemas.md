@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 元数据
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2593'
 ht-degree: 18%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 18%
 
 **映射到属性**:此属性指定保存在CRX存储库中的资产节点的相对路径或名称。以`./`开头，表示路径位于资产的节点下。
 
-以下是资产的有效值示例：
+以下是属性的有效值示例：
 
 * `./jcr:content/metadata/dc:title`：将该值作为属性 `dc:title` 存储在资产的元数据节点中。
 
