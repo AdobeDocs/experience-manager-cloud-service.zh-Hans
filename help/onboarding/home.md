@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 19%
@@ -88,7 +88,7 @@ ht-degree: 19%
 * [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
-* [GDPR 就绪](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社区论坛](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
