@@ -5,10 +5,10 @@ breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 feature: 部署
 role: Architect, Developer
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 62%
+source-wordcount: '138'
+ht-degree: 49%
 
 ---
 
@@ -30,13 +30,6 @@ ht-degree: 62%
    + [系统管理员任务](what-is-required/add-users-assign-cm-roles.md)
    + [导航到Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [授予用户对AEM实例的访问权限](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ 数据隐私和保护已准备就绪 {#data-privacy}
-   + [用于数据保护和数据隐私法规的 AEM 已准备就绪](data-privacy-and-protection-readiness/aem-readiness.md)
-   + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [用于数据保护和数据隐私法规的 AEM Sites 已准备就绪](data-privacy-and-protection-readiness/sites-readiness.md)
-+ 辅助功能 {#accessibility}
-   + [AEM as a Cloud Service 和 Web 无障碍准则](accessibility/web-accessibility.md)
-   + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
 + 迁移方法{#migration-methodology}
    + [迁移到Adobe Experience Manager作为Cloud Service](migration-methodology/getting-started.md)
 + 最佳实践 {#best-practices}
