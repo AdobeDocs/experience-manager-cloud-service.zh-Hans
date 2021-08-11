@@ -4,7 +4,7 @@ description: '按Experience League划分的Dynamic Media时事通讯是每月时
 feature: 资产管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 352b615971329600a82a08c5b5b286877ecac322
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
@@ -52,10 +52,6 @@ ht-degree: 0%
    * 查看2020年在线Adobe Summit中的Dynamic Media会议。
    * 进一步了解Adobe的免费Dynamic Media Classic审核。
    * 会见客户成功服务高级项目经理John Monroe。
-
-<!--     >[!IMPORTANT]
-    >
-    >Adobe wants to make sure that they are sending the Dynamic Media newsletter only to folks who want to receive it. To continue receiving the newsletter after this issue, sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[2020年2月，第2期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
