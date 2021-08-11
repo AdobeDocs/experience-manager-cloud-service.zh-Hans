@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 辅助功能，资产管理
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -60,7 +60,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 在[!DNL Experience Manager]中，辅助功能满足[!DNL Experience Manager]用户及其客户的两个关键要求。
 
-* 对于内容设计人员和创建者，有一些功能可用于创建和发布客户和网站访客反过来使用的无障碍内容。 残障人士可以借助辅助技术来使用内容。 有关详细信息，请参阅[Web无障碍准则](/help/onboarding/accessibility/web-accessibility.md)。
+* 对于内容设计人员和创建者，有一些功能可用于创建和发布客户和网站访客反过来使用的无障碍内容。 残障人士可以借助辅助技术来使用内容。 有关详细信息，请参阅[Web无障碍准则](/help/compliance/accessibility/quick-guide-wcag.md)。
 * [!DNL Experience Manager] 还允许残障用户和管理员访问用于创建和管理内容的用户界面和控件。残障人士可以使用辅助技术来导航、使用和管理[!DNL Assets]功能。
 
 [!DNL Assets]中的核心功能比以前更易访问，并且会定期更新以提高对全球标准的遵从性。 [!DNL Assets]中的CRUD操作在这些操作中具有一定程度的辅助功能。 可通过键盘快捷键、屏幕阅读器文本、颜色对比度等方式，访问添加、管理、搜索和分发资产等DAM工作流。
@@ -226,6 +226,6 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 >[!MORELIKETHIS]
 >
 >* [有关每个版本中所做增强功能的发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
->* [[!DNL Adobe Experience Manager] 辅助功能指南](/help/onboarding/accessibility/web-accessibility.md)。
+>* [[!DNL Adobe Experience Manager] 辅助功能指南](/help/compliance/accessibility/web-accessibility.md)。
 >* [Adobe解决方案的合规性报告(ACR)和VPAT列表](https://www.adobe.com/accessibility/compliance.html)。
 
