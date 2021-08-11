@@ -3,7 +3,7 @@ title: 配置RTE以创建无障碍的网页和站点。
 description: 了解如何配置富文本编辑器以在 [!DNL Adobe Experience Manager]中创建无障碍站点。
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -24,7 +24,7 @@ RTE功能在许多组件中都可用。 主组件是`Text`组件。
 
 ![全屏模式下的RTE文本组件](assets/rte-toolbar-full-screen-mode.png)
 
-## 配置插件功能{#configuring-the-plugin-features}
+## 配置插件功能 {#configuring-the-plugin-features}
 
 有关配置RTE的说明，请参阅[配置富文本编辑器](rich-text-editor.md)页面。 文章涵盖：
 
@@ -37,7 +37,7 @@ RTE功能在许多组件中都可用。 主组件是`Text`组件。
 
 ![CRXDE Lite显示rtePlugin示例](assets/example-rteplugin-crxde-lite.png)
 
-### 指定RTE选择字段{#example-specifying-paragraph-formats-available-in-rte-selection-field}中可用的段落格式的示例
+### 指定RTE选择字段中可用的段落格式的示例 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 提供了新的语义块格式供选择。
 
@@ -48,7 +48,7 @@ RTE功能在许多组件中都可用。 主组件是`Text`组件。
 
 通过RTE中通过段落格式选项提供的结构元素，[!DNL Experience Manager]为开发辅助内容提供了良好的基础。 内容作者不能使用RTE设置字体大小、颜色或其他相关属性的格式，从而阻止创建内联格式。 相反，作者可以选择相应的结构元素（如标题），并使用从“样式”选项中选择的全局样式，以确保使用自己的样式表和正确结构化内容进行浏览的用户能够获得干净的标记和更大的选项。
 
-## 使用源编辑功能{#use-of-the-source-edit-feature}
+## 使用源编辑功能 {#use-of-the-source-edit-feature}
 
 在某些情况下，内容作者会发现需要检查和调整使用RTE创建的HTML源代码。 例如，在RTE中创建的一段内容可能需要更多标记以确保符合WCAG 2.0。可以通过RTE的[源编辑](rich-text-editor.md#aboutplugins)选项来完成此操作。 您可以在`misctools`插件](rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
 
@@ -147,6 +147,6 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 
 >[!MORELIKETHIS]
 >
->* [WCAG标准快速指南](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [WCAG标准快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 * [如何在Experience Manager中创建无障碍内容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
