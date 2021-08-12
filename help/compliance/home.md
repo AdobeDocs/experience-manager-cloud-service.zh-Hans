@@ -2,7 +2,7 @@
 title: 合规
 description: 合规
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 79%
@@ -15,11 +15,11 @@ ht-degree: 79%
 
 ## 关键概述文章 {#key-articles}
 
-* [用于数据保护和数据隐私法规的 已准备就绪](aem-readiness.md)
-* [用于数据保护和数据隐私法规的 基础已准备就绪](foundation-readiness.md)
-* [用于数据保护和数据隐私法规的 Sites 已准备就绪](sites-readiness.md)
-* [Web无障碍准则](web-accessibility.md)
-* [WCAG 2.1 快速指南](quick-guide-wcag.md)
+* [用于数据保护和数据隐私法规的 已准备就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [用于数据保护和数据隐私法规的 基础已准备就绪](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [用于数据保护和数据隐私法规的 Sites 已准备就绪](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Web无障碍准则](/help/compliance/accessibility/web-accessibility.md)
+* [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
