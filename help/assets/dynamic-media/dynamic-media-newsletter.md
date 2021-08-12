@@ -4,9 +4,9 @@ description: '按Experience League划分的Dynamic Media时事通讯是每月时
 feature: 资产管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
    * 观看Dynamic Media Classic的按需技能培养网络研讨会。
    * 查看2020年在线Adobe Summit中的Dynamic Media会议。
    * 进一步了解Adobe的免费Dynamic Media Classic审核。
-   * 会见客户成功服务高级项目经理John Monroe。
+   * 会见`John Monroe`客户成功服务高级计划经理。
 
 * **[2020年2月，第2期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ ht-degree: 0%
    * 免费审核，可帮助您从Dynamic Media Classic中获取更多价值。
    * 为Adobe的富媒体客户创下了创纪录的假日购物季。
    * 您的DAM（数字资产管理器）选择指南，可满足您当前的需求，并为将来富媒体的新增功能做好准备。
-   * 请见数字媒体专家马克·迪恩。
+   * 会见`Mark Dean`数字媒体专家。
 
 * **[2019年11月，第11期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    * 了解Dynamic Media团队如何帮助您为高于正常访客流量的一天做好准备。
    * 第二次机会观看最近两次技能培养网络研讨会。
    * 观看有关保护您的数字资产免受盗版侵害的按需网络研讨会。
-   * 见见Experience Manager资产高级产品营销经理Bridget Roman。
+   * 会见`Bridget Roman`,Experience Manager资产高级产品营销经理。
    * 在Experience League中加快Dynamic Media和Dynamic Media Classic的运行速度。
 
 * **[2019年8月，08期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
