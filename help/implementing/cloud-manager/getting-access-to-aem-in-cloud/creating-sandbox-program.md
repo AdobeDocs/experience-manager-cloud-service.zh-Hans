@@ -2,7 +2,7 @@
 title: '创建沙盒项目 '
 description: 创建沙盒项目
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要了解有关从Cloud Manager UI中使用自助服务Git帐户管理访问和管理Git存储库的更多信息，请参阅[访问Git](/help/implementing/cloud-manager/accessing-git.md)。
+   >要了解有关从Cloud Manager UI中使用自助服务Git帐户管理访问和管理Git存储库的更多信息，请参阅[访问Git](/help/implementing/cloud-manager/accessing-repos.md)。
 
 
 1. 创建开发环境后，用户可以&#x200B;**访问AEM**&#x200B;链接，如下图所示：
