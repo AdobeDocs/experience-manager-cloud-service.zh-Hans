@@ -3,10 +3,10 @@ sub-product: Adobe Experience Manager as a Cloud Service 帮助
 user-guide-title: Adobe Experience Manager as a Cloud Service 帮助
 feature: 版本信息
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: 918f1bf1471fb66be4adfef8e26f2f5f9d887616
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 58%
+source-wordcount: '203'
+ht-degree: 55%
 
 ---
 
@@ -27,4 +27,4 @@ ht-degree: 58%
 + [实施 AEM as a Cloud Service 的应用程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
 + [实施 AEM as a Cloud Service 的连接器 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/connectors/home.html)
 + [AEM as a Cloud Service 的操作和维护](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/home.html)
-
++ [AEM as aCloud Service中的合规性](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/compliance/home.html)
