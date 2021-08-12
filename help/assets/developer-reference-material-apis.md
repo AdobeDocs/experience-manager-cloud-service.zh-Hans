@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API，Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 2%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 2%
 
 ## 在后处理工作流中支持工作流步骤 {#post-processing-workflows-steps}
 
-如果您从以前的[!DNL Experience Manager]版本进行升级，则可以使用资产微服务来处理资产。 云原生资产微服务的配置和使用更简单。 不支持在以前版本的[!UICONTROL DAM更新资产]工作流中使用的一些工作流步骤。 有关支持类的更多信息，请参阅[Java API引用](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)。
+如果您从以前的[!DNL Experience Manager]版本进行升级，则可以使用资产微服务来处理资产。 云原生资产微服务的配置和使用更简单。 不支持在以前版本的[!UICONTROL DAM更新资产]工作流中使用的一些工作流步骤。 有关支持类的更多信息，请参阅[Java API引用或Javaocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)。
 
 以下技术工作流模型已被资产微服务取代，或者无法获得支持：
 
