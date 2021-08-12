@@ -2,7 +2,7 @@
 title: 了解程序和程序类型
 description: 了解程序和程序类型 — Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Cloud Manager程序将自动配置其自己的git存储库。
 
 对于用户访问Cloud Manager git存储库，需要将Git客户端与命令行工具、独立的可视Git客户端或用户的IDE（如Eclipse、IntelliJ、NetBeans）一起使用。
 
-设置Git客户端后，您可以从Cloud Manager UI中管理您的git存储库。 要了解如何使用Cloud Manager UI管理Git，请参阅[访问Git](/help/implementing/cloud-manager/accessing-git.md)。
+设置Git客户端后，您可以从Cloud Manager UI中管理您的git存储库。 要了解如何使用Cloud Manager UI管理Git，请参阅[访问Git](/help/implementing/cloud-manager/accessing-repos.md)。
 
 要开始开发AEM Cloud应用程序，必须通过将应用程序代码从Cloud Manager存储库签出到其本地计算机上要创建其存储库的位置，来制作应用程序代码的本地副本。
 
