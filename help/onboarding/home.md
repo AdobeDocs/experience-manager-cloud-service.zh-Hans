@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 19%
@@ -56,8 +56,8 @@ ht-degree: 19%
 
 **[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-现在，您已作为用户添加并被分配到Cloud Manager角色，接下来可以访问Cloud Manager以开始使用AEM的Cloud历程。 用户可以执行各种任务，如创建程序、添加环境、访问Git](/help/implementing/cloud-manager/accessing-git.md)、配置管道](/help/implementing/cloud-manager/configure-pipeline.md)和部署代码](/help/implementing/cloud-manager/deploy-code.md)的[。
-[[Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行管理[!DNL Experience Manager]。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。使用用户界面，您可以配置并启动CI/CD管线。
+现在，您已作为用户添加并被分配到Cloud Manager角色，接下来可以访问Cloud Manager以开始使用AEM的Cloud历程。 用户可以执行各种任务，如创建程序、添加环境、访问Git、配置管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代码](/help/implementing/cloud-manager/deploy-code.md)。
+[Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行管理[!DNL Experience Manager]。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。使用用户界面，您可以配置并启动CI/CD管线。
 
 **[授予用户对AEM实例的访问权限](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
