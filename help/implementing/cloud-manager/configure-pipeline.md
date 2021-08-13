@@ -2,9 +2,9 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
+source-git-commit: 5dfe46c6a5cacc3d1d3d863ed5990214d778a1e7
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ ht-degree: 0%
 
    ![](assets/configure-pipeline/non-prod-edit-1.png)
 
-1. 选择所需的存储库，然后单击&#x200B;**Save**。
+1. 选择所需的存储库和其他必需的更新，然后单击&#x200B;**Save**。
 
    ![](assets/configure-pipeline/non-prod-edit2.png)
 
