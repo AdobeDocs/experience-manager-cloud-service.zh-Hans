@@ -3,7 +3,7 @@ title: AEM as a Cloud Manager版本2021.8.0的发行说明
 description: AEM as a Cloud Manager版本2021.8.0的发行说明
 feature: 版本信息
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -39,7 +39,7 @@ AEM as a Cloud Service2021.8.0中的Cloud Manager的发布日期是2021年8月12
 
 * 现在有一个API可用于使每个管道的Maven依赖关系缓存失效。
 
-* Cloud Manager使用的AEM项目原型版本已更新至版本28。
+* Cloud Manager使用的AEM项目原型版本已更新至版本29。
 
 ### 错误修复 {#bug-fixes}
 
