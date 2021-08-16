@@ -1,9 +1,9 @@
 ---
 title: AEM文档历程
 description: 文档历程通过将复杂和不同的功能捆绑在一起，以最佳做法方式解决业务目标，从而在AEM文档中提供了一种叙述性结构。 在设计时考虑了AEM初学者，历程将介绍概念和功能，以实现从A到Z的目标。
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ AEM文档历程的主要目标是帮助初次接触AEM的读者了解系统中�
 | 历程 | 描述 |
 |---|---|
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 从此处开始，了解AEM如何支持无头开发模型，以及如何让项目从规划、实施到上线。 |
-| 无外设创作历程 | 从此处开始，了解如何在AEM中创作和管理无头内容。 |
+| [无外设创作历程](/help/journey-headless/author/overview.md) | 从此处开始，您可以体验AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。 |
+| [无外设架构师历程](/help/journey-headless/architect/overview.md) | 从此处开始，介绍Adobe Experience Manager作为Cloud Service的强大、灵活、无头的功能，以及如何为您的项目建立内容模型。 |
 | [无头翻译历程](/help/journey-headless/translation/overview.md) | 从此处开始，了解如何在AEM中设置和管理无头翻译项目。 |
 | AEM载入历程 | 即将推出！ |
 | AEM Commerce历程 | 即将推出！ |
