@@ -1,9 +1,10 @@
 ---
 title: 了解创作基础知识
 description: 了解使用内容片段为无头CMS创作内容的概念和机制。
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: b860493d92e7886513fe08e3eb6c56bf88ca58c0
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 3%
