@@ -1,7 +1,10 @@
 ---
 title: 配置翻译规则
 description: 了解如何定义翻译规则以识别翻译内容。
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
