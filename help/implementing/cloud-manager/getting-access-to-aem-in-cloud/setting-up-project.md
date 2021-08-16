@@ -2,10 +2,10 @@
 title: 项目设置详细信息
 description: 项目设置详细信息 — Cloud Services
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: b9bb9e7b63a53ea1a6ce1e126285bb84c8351083
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '845'
+ht-degree: 7%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 ## 受密码保护的Maven存储库支持 {#password-protected-maven-repositories}
 
 >[!NOTE]
->受密码保护的Maven存储库中的对象只应非常谨慎地使用，因为通过此机制部署的代码当前未通过Cloud Manager的质量门运行。 因此，它只应用于极少数情况下以及未绑定到AEM的代码。 建议还应将Java源以及整个项目源代码与二进制文件一起部署。
+>受密码保护的Maven存储库中的工件只应非常谨慎地使用，因为通过此机制部署的代码当前未通过Cloud Manager质量门中实施的所有质量规则运行。 因此，它只应用于极少数情况下以及未绑定到AEM的代码。 建议还应将Java源以及整个项目源代码与二进制文件一起部署。
 
 要从Cloud Manager中使用受密码保护的Maven存储库，请将密码（以及可选的用户名）指定为密钥管道变量，然后在git存储库中名为`.cloudmanager/maven/settings.xml`的文件中引用该密钥。 此文件遵循[Maven设置文件](https://maven.apache.org/settings.html)架构。 当Cloud Manager构建过程启动时，此文件中的`<servers>`元素将合并到Cloud Manager提供的默认`settings.xml`文件中。 以`adobe`和`cloud-manager`开头的服务器ID被视为保留ID，自定义服务器不应使用这些ID。 Cloud Manager将永远不会镜像与其中一个前缀或默认ID `central`匹配的服务器ID **不**。 此文件就位后，服务器ID将从`<repository>`和/或`<pluginRepository>`元素内的`pom.xml`文件中引用。 通常，这些`<repository>`和/或`<pluginRepository>`元素将包含在特定于[Cloud Manager的配置文件](#activating-maven-profiles-in-cloud-manager)中，尽管这并非严格必需的。
 
