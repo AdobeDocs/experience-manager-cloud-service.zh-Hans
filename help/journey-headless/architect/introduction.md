@@ -1,9 +1,10 @@
 ---
 title: AEM Headless Content Architect历程
 description: 介绍Adobe Experience Manager作为Cloud Service的强大、灵活、无头的功能，以及如何为项目建立内容模型。
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
