@@ -2,9 +2,9 @@
 title: Cloud Manager存储库
 description: Cloud Manager存储库
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Cloud Manager存储库 {#cloud-manager-repos}
 
 在Cloud Manager中创建和可用的存储库可通过“存储库”页面查看和管理。
+
+>[!NOTE]
+>任何给定公司或[Adobe的Identity Management系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)中的所有程序都限制有300个存储库。
 
 ## 添加和管理存储库 {#add-manage-repos}
 
@@ -32,6 +35,9 @@ ht-degree: 0%
    ![](assets/repos/repo-1.png)
 
 1. 选择&#x200B;**保存**。您新创建的存储库将显示在表中，如下所示。
+
+   >[!NOTE]
+   >任何给定管道都有一个&#x200B;*主*&#x200B;存储库或分支。 使用[Git子模块支持](#git-submodule-support)时，在生成时可能包含许多辅助分支。
 
    ![](assets/repos/create-repo3.png)
 
