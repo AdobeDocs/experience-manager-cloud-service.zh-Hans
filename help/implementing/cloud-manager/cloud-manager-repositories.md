@@ -2,9 +2,9 @@
 title: Cloud Manager存储库
 description: Cloud Manager存储库
 exl-id: Cloud Manager Repositories
-source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
+source-git-commit: 8a53641745ab2e0cfabdf0b6e13b163aaf6a68bd
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 在Cloud Manager中创建和可用的存储库可通过“存储库”页面查看和管理。
 
 >[!NOTE]
->任何给定公司或[Adobe的Identity Management系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)中的所有程序中都有300个存储库。
+>任何给定公司（或IMS组织）中所有程序中的存储库数量限制为300个。
 
 ## 添加和管理存储库 {#add-manage-repos}
 
@@ -34,10 +34,10 @@ ht-degree: 0%
 
    ![](assets/repos/repo-1.png)
 
-1. 选择&#x200B;**保存**。您新创建的存储库将显示在表中，如下所示。 在Cloud Manager中创建的存储库也将可供您在添加或编辑管道步骤期间从中进行选择。 请参阅[配置CI-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)以了解更多信息。
+1. 选择&#x200B;**保存**。您新创建的存储库将显示在表中，如下所示。
 
    >[!NOTE]
-   >任何给定管道都有一个&#x200B;*主*&#x200B;存储库或分支。 使用[Git子模块支持](#git-submodule-support)时，在生成时可能包含许多辅助分支。
+   >在Cloud Manager中创建的存储库也将可供您在添加或编辑管道步骤期间从中进行选择。 请参阅[配置CI-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)以了解更多信息。 任何给定管道都有一个&#x200B;*主*&#x200B;存储库或分支。 使用[Git子模块支持](#git-submodule-support)时，在生成时可能包含许多辅助分支。
 
    ![](assets/repos/create-repo3.png)
 
