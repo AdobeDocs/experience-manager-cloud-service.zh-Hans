@@ -1,11 +1,11 @@
 ---
-sub-product: AEM Headless开发人员历程
-user-guide-title: AEM Headless开发人员历程
-breadcrumb-title: AEM Headless开发人员历程
+sub-product: AEM无头历程
+user-guide-title: AEM无头历程
+breadcrumb-title: AEM无头历程
 user-guide-description: 从此处开始，您可以引导您逐步了解AEM强大而灵活的无外设功能、其功能，以及如何在您的项目中利用这些功能。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,8 +13,9 @@ ht-degree: 0%
 ---
 
 
-# AEM Headless历程 {#headless-journey}
+# AEM无头历程 {#headless-journey}
 
++ [AEM无头历程](/help/journey-headless/home.md)
 + AEM Headless开发人员历程{#developer}
    + [了解AEM中的无头](developer/overview.md)
    + [了解CMS无头开发](developer/learn-about.md)
