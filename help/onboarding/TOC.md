@@ -5,10 +5,10 @@ breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 feature: 部署
 role: Architect, Developer
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 49%
+source-wordcount: '133'
+ht-degree: 47%
 
 ---
 
@@ -37,4 +37,3 @@ ht-degree: 49%
    + [评估KPI](best-practices/assessing-kpis.md)
    + [调整KPI](best-practices/aligning-kpis.md)
    + [选择正确的团队](best-practices/choose-right-team.md)
-+ [工具控制台概述](tools-consoles.md)
