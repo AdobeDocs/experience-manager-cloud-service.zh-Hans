@@ -5,7 +5,7 @@ breadcrumb-title: AEM无头历程
 user-guide-description: 从此处开始，您可以引导您逐步了解AEM强大而灵活的无外设功能、其功能，以及如何在您的项目中利用这些功能。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: fe1d8f29e59f1f54c4f8e3a419103926005c0e48
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -27,17 +27,17 @@ ht-degree: 0%
    + [如何把它拼凑起来](developer/put-it-all-together.md)
    + [如何使用无头应用程序](developer/go-live.md)
    + [可选 — 如何使用AEM创建单页应用程序](developer/create-spa.md)
-+ AEM Headless内容创作历程{#content-author}
++ AEM Headless Content Architect历程{#architect}
+   + [AEM Headless Content Architect历程概述](architect/overview.md)
+   + [使用AEM实现无头内容建模 — 简介](architect/introduction.md)
+   + [了解使用AEM实现无头的内容建模基础知识](architect/basics.md)
+   + [了解如何在AEM中创建内容片段模型](architect/model-structure.md)
++ AEM Headless内容创作历程{#author}
    + [AEM Headless内容创作历程 — 概述](author/overview.md)
    + [使用AEM创作无头 — 简介](author/introduction.md)
    + [使用AEM创作无头的基础知识](author/basics.md)
    + [了解如何在内容片段中使用引用](author/references.md)
    + [了解如何为内容片段定义元数据和标记](author/metadata-tagging.md)
-+ AEM Headless Content Architect历程{#content-architect}
-   + [AEM Headless Content Architect历程概述](architect/overview.md)
-   + [使用AEM实现无头内容建模 — 简介](architect/introduction.md)
-   + [了解使用AEM实现无头的内容建模基础知识](architect/basics.md)
-   + [了解如何在AEM中创建内容片段模型](architect/model-structure.md)
 + AEM无头翻译历程{#translation}
    + [了解AEM中的无标题翻译](translation/overview.md)
    + [AEM无头翻译入门](translation/getting-started.md)
