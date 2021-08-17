@@ -4,9 +4,9 @@ description: '按Experience League划分的Dynamic Media时事通讯是每月时
 feature: 资产管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
+source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
 
-* **[2020年4月总第3期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2020_April.html)**
+* **[2020年4月总第3期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html)**
 
    在此问题中：
 
@@ -64,7 +64,7 @@ ht-degree: 0%
    * 了解Dynamic Media Classic的新用户界面。
    * 会见`Georgia Myers`,Adobe Experience Cloud客户成功经理。
 
-* **[2020年1月，第1期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
+* **[2020年1月，第1期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
    在此问题中：
 
@@ -74,7 +74,7 @@ ht-degree: 0%
    * 您的DAM（数字资产管理器）选择指南，可满足您当前的需求，并为将来富媒体的新增功能做好准备。
    * 会见`Mark Dean`数字媒体专家。
 
-* **[2019年11月，第11期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
+* **[2019年11月，第11期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
    在此问题中：
 
@@ -84,7 +84,7 @@ ht-degree: 0%
    * 与您的同事共享新闻稿，以培养团队专业知识。
    * 会见Dynamic Media高级产品经理`Apoorva Gupta`。
 
-* **[2019年10月，第10期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[2019年10月，第10期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
    在此问题中：
 
@@ -95,7 +95,7 @@ ht-degree: 0%
    * 满足Adobe Experience Manager站点可靠性工程部经理`Nick Peters`的要求。
    * 在Experience League中加快Dynamic Media和Dynamic Media Classic的运行速度。
 
-* **[2019年9月，09期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+* **[2019年9月，09期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
    在此问题中：
 
@@ -106,7 +106,7 @@ ht-degree: 0%
    * 会见`Bridget Roman`,Experience Manager资产高级产品营销经理。
    * 在Experience League中加快Dynamic Media和Dynamic Media Classic的运行速度。
 
-* **[2019年8月，08期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
+* **[2019年8月，08期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    在此问题中：
 
@@ -116,7 +116,7 @@ ht-degree: 0%
    * 今年9月将推出一款功能强大的集成，让您能够分析访客与富媒体的交互方式。
    * 满足`PieterJan Pieper`,Dynamic Media技术支持wiz。
 
-* **[2019年7月，07期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[2019年7月，07期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html)**
 
    在此问题中：
 
@@ -127,7 +127,7 @@ ht-degree: 0%
    * 将360度视频和自定义视频缩略图添加到您的网站。
    * 会见`Andrew Hathaway`,Dynamic MediaExperience Manager资产的主要解决方案顾问。
 
-* **[2019年6月，06期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
+* **[2019年6月，06期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    在此问题中：
 
@@ -138,7 +138,7 @@ ht-degree: 0%
    * 了解AI驱动的图像智能裁剪。
    * 会见`Alex Thiers`，这是Dynamic Media和Dynamic Media Classic中众多伟大功能和创新背后的驱动力之一。
 
-* **[2019年5月，05期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
+* **[2019年5月，05期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html)**
 
    在此问题中：
 
@@ -148,7 +148,7 @@ ht-degree: 0%
    * 要更新您的富媒体策略，请阅读一个由三部分组成的博客系列。
    * 了解AI驱动的视频智能裁剪。
 
-* **[2019年4月，04期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
+* **[2019年4月，04期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html)**
 
    欢迎参加《Dynamic Media快讯》的开幕式。 Adobe的新月度快讯中充满了新闻、事件和资源。 内容适用于Experience Manager资产和AdobeDynamic Media Classic中的Dynamic Media用户。
 
