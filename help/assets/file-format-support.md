@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 资产管理，演绎版
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 34%
@@ -227,7 +227,7 @@ ht-degree: 34%
 
 ## 提示和限制 {#limitations-and-tips}
 
-* 目前，元数据提取的文件大小限制约为10 GB。 上传超大型资产时，有时元数据提取操作会失败。
+* 目前，元数据提取的文件大小限制约为15 GB。 上传超大型资产时，有时元数据提取操作会失败。
 
 >[!MORELIKETHIS]
 >
