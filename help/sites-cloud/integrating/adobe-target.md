@@ -2,7 +2,7 @@
 title: 与 Adobe Target 集成
 description: 与 Adobe Target 集成
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 4%
@@ -69,7 +69,7 @@ ht-degree: 4%
 >
 >在AEM作者中定位某个组件时，该组件会向Adobe Target发起一系列服务器端调用，以注册该促销活动、设置选件和检索Adobe Target区段（如果已配置）。 不会从AEM发布到Adobe Target中进行服务器端调用。
 
-## 背景信息源{#background-information-sources}
+## 背景信息源 {#background-information-sources}
 
 将AEM as a A Audience与Adobe Target集成需要了解Adobe Target、AEM活动管理和AEM受众管理。 您应该熟悉以下信息：
 
@@ -85,7 +85,4 @@ ht-degree: 4%
 >* 2,000个体验
 >* 50个量度
 >* 50个报告区段
-
->
-
 
