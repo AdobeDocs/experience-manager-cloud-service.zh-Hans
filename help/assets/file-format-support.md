@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 资产管理，演绎版
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 34%
+source-wordcount: '795'
+ht-degree: 33%
 
 ---
 
@@ -213,12 +213,8 @@ ht-degree: 34%
 | AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV、OGG | Ogg | Theora、VP3、Dirac | - |
-| MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| R3D、RM | Red Raw Video | MJPEG 2000 | - |
 | RAM、RM | RealVideo | 不支持 | Real G2 (RV20)、Real 8 (RV30)、Real 10 (RV40) |
-| FLAC | Native Flac | 自由无损音频编解码器 | - |
 | MJ2 | Motion JPEG2000 | Motion JPEG 2000编解码器 | - |
 
 ## 音频格式 {#audio-formats}
