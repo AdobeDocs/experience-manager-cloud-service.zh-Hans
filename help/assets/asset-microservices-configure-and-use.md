@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute微服务，工作流，资产处理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 0%
@@ -238,7 +238,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 * 在设计工作流时，请考虑您对所有类型的演绎版的需求。 如果您预计将来不会需要演绎版，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 长时间使用[!DNL Experience Manager]后，不需要的演绎版可能会占用大量存储空间。 对于单个资产，您可以从用户界面手动删除演绎版。 对于多个资产，您可以自定义[!DNL Experience Manager]以删除特定演绎版，或删除资产并再次上传这些资产。
 * 目前，仅支持生成演绎版。 不支持生成新资产。
-* 目前，元数据提取的文件大小限制约为10 GB。 上传超大型资产时，有时元数据提取操作会失败。
+* 目前，元数据提取的文件大小限制约为15 GB。 上传超大型资产时，有时元数据提取操作会失败。
 
 >[!MORELIKETHIS]
 >
