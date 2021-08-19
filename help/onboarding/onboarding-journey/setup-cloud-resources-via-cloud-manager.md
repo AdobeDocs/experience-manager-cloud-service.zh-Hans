@@ -4,16 +4,16 @@ description: 请阅读本页内容，了解如何通过Cloud Manager设置云资
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
+source-git-commit: 5f599eb877565c65aad3d54af411bd8d40f4580d
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
 # 通过Cloud Manager设置云资源 {#setup-cloud-resources}
 
-分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员应该访问并登录到Cloud Manager。 之后，分配给&#x200B;*业务所有者*&#x200B;产品配置文件的团队成员必须登录到Cloud Manager并创建您的云程序和环境，以便您的专家团队能够开始工作。
+分配给业务所有者角色的系统管理员应该有权访问并登录到Cloud Manager。 之后，分配给业务所有者产品配置文件的团队成员必须登录到Cloud Manager并创建您的云计划和环境，以便您的专家团队能够开始工作。
 
 ## 目标 {#objective}
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 阅读此部分后，您应该了解：
 
-* 分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员必须是第一个访问和登录Cloud Manager的管理员。
+* 分配给业务所有者角色的系统管理员必须是第一个访问和登录Cloud Manager的管理员。
 * 如何创建云程序和环境。
 
 ## 简介 {#introduction}
@@ -32,19 +32,17 @@ ht-degree: 0%
 
 ### 先决条件 {#prerequisites}
 
-* 分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员应该访问并登录到Cloud Manager。
+* 分配给业务所有者角色的系统管理员应该有权访问并登录到Cloud Manager。
 
 * 了解如何[导航和登录到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)。
 
 * 熟悉[Cloud Manager产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
 
-* 了解创建程序时的注意事项。 请观看此视频以了解更多信息。
-
 * 了解Cloud Manager [程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en)和[环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)的概念
 
 ## 导航到Cloud Manager {#navigate-cloud-manager}
 
-*业务所有者*&#x200B;用户将收到一封欢迎电子邮件，从中可以开始使用，或者如果找不到，请直接转到[Adobe Experience Cloud](https://experience.adobe.com)并使用Adobe ID登录。
+业务所有者用户将收到一封欢迎电子邮件，其中包含要开始使用的链接，或者如果找不到该链接，则直接转到[Adobe Experience Cloud](https://experience.adobe.com)并使用Adobe ID登录。
 
 按照以下步骤导航到Cloud Manager:
 
@@ -54,7 +52,7 @@ ht-degree: 0%
 1. 您将导航到Cloud Manager的&#x200B;**程序和产品**&#x200B;页面。
 
    >[!IMPORTANT]
-   >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。 请为此页面添加书签以供将来使用，以帮助您直接导航到Cloud Manager的登陆页面。
+   >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。 请将此页面加入书签以供将来参考，并帮助您直接导航到Cloud Manager的登陆页面。
 
 1. 系统会将您定向到Cloud Manager的登陆页面。 有关更多详细信息，请参阅[查看Cloud Manager的程序](#viewing-programs)部分。
 
@@ -166,16 +164,16 @@ ht-degree: 0%
 
    此外，请观看[视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)快速教程，了解Cloud Manager环境以及如何将它们添加到您的项目中。
 
-1. 这将启动添加环境向导，该向导将指导您添加环境。 首先添加开发环境，以便您熟悉。 请参阅[添加环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)以了解更多信息。
+1. 这将启动“添加环境”向导，该向导将指导您添加环境。 先添加开发环境，以熟悉向导。 请参阅[添加环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)以了解更多信息。
 
    >[!NOTE]
    >如果您尚未执行此操作，现在可以将开发人员成员添加到您的Cloud Manager团队。 请参阅将用户添加到开发人员产品配置文件，并按照列出的步骤操作。
 
 1. 分配给开发人员产品配置文件的成员可以登录到Cloud Manager和[管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
 
-   干得好！ 现在，您的程序已成功创建，您的Cloud Manager Git可供开发人员访问！
+   干得好！ 现在，您的程序已成功创建，并且您的Cloud Manager Git可供开发人员访问！
 
-   恭喜！ 现在，您的云程序环境已经创建完毕，并且开发人员已添加到团队中！
+   恭喜！ 现在，您的云程序环境已创建完毕，并且开发人员已添加到团队中！
 
 ## 下一步 {#whats-next}
 
