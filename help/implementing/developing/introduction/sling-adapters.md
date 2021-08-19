@@ -2,9 +2,9 @@
 title: 使用 Sling 适配器
 description: Sling提供了适配器模式，可方便地转换实施可适应界面的对象
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 04767681216ebee845fa6120e3da8db8e105f68f
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2234'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 Node node = resource.adaptTo(Node.class);
 ```
 
-## 用例{#use-cases}
+## 用例 {#use-cases}
 
 有以下用例：
 
@@ -29,13 +29,13 @@ Node node = resource.adaptTo(Node.class);
 
 * 要求传递内部上下文对象的对象的快捷方式创建。
 
-   例如，基于JCR的[`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)包含对请求的[`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)的引用，这反过来又需要对基于该请求会话工作的许多对象的引用，如[`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)或[`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)。
+   例如，基于JCR的[`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)包含对请求的[`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)的引用，这反过来又需要对基于该请求会话工作的许多对象的引用，如[`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)或[`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)。
 
 * 服务的快捷方式。
 
    极少数情况 — `sling.getService()`也很简单。
 
-### 返回值{#null-return-value}为空
+### Null返回值 {#null-return-value}
 
 `adaptTo()` 可返回null。
 
@@ -56,7 +56,7 @@ Node node = resource.adaptTo(Node.class);
 
 但是，没有一般规则 — 对象可以是新实例或现有实例。 这意味着您不能依赖任一行为。 因此，在此情景中，对象可重复使用这一点很重要，在`AdapterFactory`内尤其如此。
 
-### 工作原理{#how-it-works}
+### 工作原理 {#how-it-works}
 
 可通过多种方式来实施`Adaptable.adaptTo()`:
 
@@ -136,15 +136,15 @@ Node node = resource.adaptTo(Node.class);
    <td>如果这是基于JCR节点的资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">页面</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Page</a></td>
    <td>如果这是基于JCR的资源，并且该节点是<code>cq:Page</code>（或<code>cq:PseudoPage</code>）。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">组件</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">Component</a></td>
    <td>如果这是<code>cq:Component</code>节点资源。</td>
   </tr>  
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">设计</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
    <td>如果这是设计节点(<code>cq:Page</code>)。</td>
   </tr>
   <tr>
@@ -280,7 +280,7 @@ Node node = resource.adaptTo(Node.class);
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">资源</a><br /> </td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><br /> </td>
    <td>页面的资源。</td>
   </tr>
   <tr>
@@ -311,7 +311,7 @@ Node node = resource.adaptTo(Node.class);
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">资源</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>模板的资源。</td>
   </tr>
   <tr>
