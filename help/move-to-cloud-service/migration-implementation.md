@@ -2,10 +2,10 @@
 title: 实施阶段
 description: 实施阶段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 89%
+source-wordcount: '943'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ AEM Maven 项目需要进行某些更改才能与 AEM as a Cloud Service 兼容�
 
 请参阅[代码质量测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)，了解有关编写测试脚本以及建议覆盖率至少为 50% 的信息。
 
-另外，请参阅[了解自定义代码质量规则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)，以了解与基于 AEM Engineering 中的最佳实践创建并由 Cloud Manager 执行的自定义代码质量规则有关的更多信息。
+另外，请参阅[了解自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)，以了解与基于 AEM Engineering 中的最佳实践创建并由 Cloud Manager 执行的自定义代码质量规则有关的更多信息。
 
 使用 Cloud Manager 是将代码部署到云服务环境的唯一机制。
 
