@@ -2,9 +2,9 @@
 title: 迁移到Experience Manager作为Cloud Service
 description: 迁移到Experience Manager作为Cloud Service
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2105'
 ht-degree: 10%
 
 ---
@@ -31,7 +31,7 @@ Cloud Service将Adobe Experience Manager丰富的开箱即用功能和可扩展�
 
 <br>
 
-## Adobe Experience Manager as aCloud Service入门{#getting-started}
+## Adobe Experience Manager as aCloud Service入门 {#getting-started}
 
 | 有什么不同？ | 架构概述 |
 |--------------------------|--------------------------|
@@ -41,7 +41,7 @@ Cloud Service将Adobe Experience Manager丰富的开箱即用功能和可扩展�
 
 <br>
 
-## 开发人员历程Adobe Experience Manager as a Cloud Service{#developer-journey}
+## Adobe Experience Manager as a Cloud Service中的开发人员历程 {#developer-journey}
 
 ### 开发
 
@@ -53,10 +53,10 @@ Cloud Service将Adobe Experience Manager丰富的开箱即用功能和可扩展�
 
 | 本地开发设置 | 开始前要了解的事 |
 |-----------|------------|
-| <ol><li>查看[Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)文档以了解更多信息。</li><li>观看[安装Dispatcher SDK](https://video.tv.adobe.com/v/30601)以了解如何安装Dispatcher SDK</li><li>观看[配置Dispatcher SDK](https://video.tv.adobe.com/v/30602)以了解如何配置Dispatcher SDK</li><li>查看[本地开发设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)文档，以了解更多信息</li><li>配置对Experience Manager[演练](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)的访问</li></ol> | <ol><li>[开发要点](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[了解Experience Manager项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)</li><li>[数字化基础蓝图](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[叠加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/overlays.html?lang=en#developing)</li><li>[Experience Manager作为Cloud ServiceAPI引用](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
+| <ol><li>查看[Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)文档以了解更多信息。</li><li>观看[安装Dispatcher SDK](https://video.tv.adobe.com/v/30601)以了解如何安装Dispatcher SDK</li><li>观看[配置Dispatcher SDK](https://video.tv.adobe.com/v/30602)以了解如何配置Dispatcher SDK</li><li>查看[本地开发设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)文档，以了解更多信息</li><li>配置对Experience Manager[演练](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)的访问</li></ol> | <ol><li>[开发要点](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[了解Experience Manager项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)</li><li>[数字化基础蓝图](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[叠加](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager作为Cloud ServiceAPI引用](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
 
 >[!TIP]
-> 请参阅有关如何在本地Experience ManagerSDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)上开发和部署WKND的教程[
+> 请参阅有关如何在本地Experience ManagerSDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)上开发和部署WKND的教程[
 
 ### 部署
 
@@ -99,7 +99,7 @@ Cloud Manager是Managed Services的可选内容交付工具，它是必需的。
 
 <br>
 
-## 作为Cloud Service移至Adobe Experience Manager {#move-to-cloud}
+## 迁移到Adobe Experience Manager作为Cloud Service {#move-to-cloud}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
