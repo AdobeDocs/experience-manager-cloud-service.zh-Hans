@@ -4,10 +4,10 @@ description: 如果您是开发人员或部署管理员，请阅读本页以了�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 3%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## 目标 {#objective}
 
-本文档可帮助您的开发人员和部署经理访问Cloud Manager，并熟悉他们如何为学习路径做准备。
+本文档可帮助您的开发人员和部署经理访问Cloud Manager，并熟悉他们如何为学习路径做好准备。
 
 阅读本文档后，您应：
 
@@ -33,11 +33,13 @@ ht-degree: 3%
 
 ## 先决条件 {#prerequisites}
 
-系统管理员已将开发人员和部署经理分配给各自的产品配置文件。 此外，还必须将开发人员分配给AEM用户或AEM管理员产品配置文件。\
-已设置云资源。
-您了解如何导航和登录Cloud Manager
+在开始之前，请确保：
 
-## 管理Git {#manage-git}
+* 系统管理员已将开发人员和部署经理分配给各自的产品配置文件。 此外，还必须将开发人员分配给AEM用户或AEM管理员产品配置文件。
+* 已设置云资源。
+* 您了解如何导航和登录Cloud Manager
+
+## 管理GitHub {#manage-git}
 
 您可以使用Cloud Manager UI中的Git自助服务帐户管理来访问和管理Git存储库。
 要了解有关此主题的更多信息，请参阅[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
@@ -49,7 +51,7 @@ ht-degree: 3%
 
 ## 下一步 {#whats-next}
 
-开发人员和部署经理现在已准备好了解如何在AEM as a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。
+开发人员和部署经理现在已准备好了解如何在AEM as a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。 要了解内容作者的学习历程，请参阅AEM作者的学习路径。
 
 ## 其他资源 {#additional-resources}
 
