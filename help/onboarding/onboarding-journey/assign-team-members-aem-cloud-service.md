@@ -4,9 +4,9 @@ description: 可查看本页以了解如何将团队成员分配给AEM作为Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-要授予AEM作为Cloud Service用户的访问权限，用户必须属于两个产品配置文件之一，例如`AEM Users`或`AEM Administrators`。 您的团队成员必须获得对AEM实例的权限，因为管理Cloud Manager的权限是不够的。 了解更多。
+要授予AEM as a的Cloud Service访问权限，用户必须属于以下两个产品配置文件之一： `AEM Users`或`AEM Administrators`。 您的团队成员必须获得对AEM实例的权限，因为管理Cloud Manager的权限是不够的。 了解更多。
 
 >[!NOTE]
 >系统管理员分配给AEM用户产品配置文件的每个用户都将拥有Cloud Manager的（只读）访问权限。
