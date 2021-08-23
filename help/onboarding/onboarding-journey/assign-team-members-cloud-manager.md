@@ -2,9 +2,8 @@
 title: '将团队成员分配给Cloud Manager产品配置文件 '
 description: 可查看本页以了解如何将团队成员分配给Cloud Manager产品配置文件
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 00f1611b46e0f325802f3ed4bb2d96f8fcaf8535
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
