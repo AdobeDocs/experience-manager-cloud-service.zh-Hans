@@ -3,9 +3,9 @@ title: '将团队成员分配给AEM作为Cloud Service产品配置文件 '
 description: 可查看本页以了解如何将团队成员分配给AEM作为Cloud Service产品配置文件
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-现在，您为AEM as a Cloud Service产品配置文件分配的用户已准备好了解如何访问“创作”，并熟悉AEM as a Cloud Service中的页面创作。 您应该遵循该路径，方法是接下来查看文档“AEM用户的学习路径”或“开发人员和部署管理器的学习路径”。
+现在，您为AEM as a Cloud Service产品配置文件分配的用户已准备好了解如何访问“创作”，并熟悉AEM as a Cloud Service中的页面创作。 您应该遵循该路径，方法是接下来查看文档“学习路径”，该路径适用于[AEM用户](/help/onboarding/onboarding-journey/learning-path-aem-users.md)或[开发人员和部署管理器](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md)。
 
 ## 其他资源 {#additional-resources}
 
