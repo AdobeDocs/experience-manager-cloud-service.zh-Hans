@@ -2,9 +2,8 @@
 title: 入门流程快速入门
 description: 阅读本页以了解如何开始入门历程
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
