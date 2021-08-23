@@ -3,7 +3,7 @@ title: 面向开发人员和部署经理的学习路径
 description: 如果您是开发人员或部署管理员，请阅读本页以了解获取访问权限后的后续步骤
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 2%
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 ## 下一步 {#whats-next}
 
-开发人员和部署经理现在已准备好了解如何在AEM as a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。 要了解内容作者的学习历程，请参阅AEM作者的学习路径。
+开发人员和部署经理现在已准备好了解如何在AEM as a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。 要了解内容作者的学习历程，请参阅[AEM作者的学习路径](/help/onboarding/onboarding-journey/learning-path-aem-users.md)。
 
 ## 其他资源 {#additional-resources}
 
