@@ -4,10 +4,10 @@ description: 阅读本页以了解如何开始入门历程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 1%
+source-wordcount: '834'
+ht-degree: 2%
 
 ---
 
@@ -36,6 +36,17 @@ ht-degree: 1%
 载入历程如下图所示，以下各节详细介绍了历程的每个步骤。
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+此历程专为系统管理员角色设计，用于列出要求、步骤和方法。 历程定义了其他角色，系统管理员必须与这些角色进行交互才能使项目取得成功，但历程的视点是管理员。
+
+以下是此历程中交互的角色。
+
+| 角色 | 描述 | 角色在历程 |
+|---|---|---|
+| 系统管理员 | 提供云资源的初始配置，并根据用户的工作职责为用户分配适当的角色，随后每个成员都能够登录并访问其AEM作为Cloud Service资源。 | 管理其用户（从访问到权限）的各个方面。 |
+| AEM Author | 创建和审阅内容(这可以是几种类型；（例如，页面、资产、发布内容）。 | 获得权限后，便可以启动他们自己的部署管理器历程。 |
+| 开发人员 | 具有开发使用不同来源内容的AEM应用程序的经验 | 获得权限后，即可开始自己的开发人员历程 |
+| 部署管理器 | 添加或更新环境、运行任何管道，以及将代码部署到AEM环境或代码质量。 | 获得权限后，便可以启动他们自己的部署管理器历程。 |
 
 ## 探索入门历程 {#exploring-onboarding-journey}
 
