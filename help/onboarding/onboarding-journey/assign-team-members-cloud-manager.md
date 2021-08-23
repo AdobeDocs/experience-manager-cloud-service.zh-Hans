@@ -3,7 +3,7 @@ title: '将团队成员分配给Cloud Manager产品配置文件 '
 description: 可查看本页以了解如何将团队成员分配给Cloud Manager产品配置文件
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -157,7 +157,7 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-您已经了解了三个不同的Cloud Manager产品配置文件，如业务所有者、部署管理员和开发人员。 接下来，您将团队成员分配给Cloud Manager产品配置文件，如“业务所有者”、“部署管理器”和“开发人员”。 现在，您可以通过接下来通过Cloud Manager查看文档设置云资源，以继续入门历程，您将在其中学习：
+您已经了解了三个不同的Cloud Manager产品配置文件，如业务所有者、部署管理员和开发人员。 接下来，您将团队成员分配给Cloud Manager产品配置文件，如“业务所有者”、“部署管理器”和“开发人员”。 现在，您可以通过下一步查看文档[通过Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md)设置云资源，以继续入门历程，您将在其中学习：
 
 1. 作为分配给&#x200B;*业务所有者*&#x200B;角色的系统管理员，您必须访问并登录Cloud Manager。
 
