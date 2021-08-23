@@ -3,7 +3,7 @@ title: 入门流程快速入门
 description: 阅读本页以了解如何开始入门历程
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -66,5 +66,5 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-现在，您已登录Admin Console并以系统管理员身份查看配置文件，接下来应该通过查看文档将团队成员分配给Cloud Manager产品配置文件来继续入门历程。
+现在，您已登录Admin Console并以系统管理员身份查看配置文件，接下来应该通过查看文档[将团队成员分配给Cloud Manager产品配置文件](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md)来继续入门历程。
 
