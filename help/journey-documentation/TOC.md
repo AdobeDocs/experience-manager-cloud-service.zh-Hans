@@ -3,9 +3,9 @@ sub-product: AEM文档历程
 user-guide-title: AEM文档历程
 breadcrumb-title: AEM文档历程
 user-guide-description: 从此处开始，您可以引导您逐步了解AEM强大而灵活的无外设功能、其功能，以及如何在您的项目中利用这些功能。
-feature: Developer Tools
+feature: 开发人员工具
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 93d7e7159cefba687ce085eda32d8da44e60fdc5
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -40,15 +40,14 @@ Please note that all links to other guides need to be absolute references with l
    + [配置翻译规则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
    + [翻译内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
    + [发布翻译内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
-+ AEM Headless内容创作历程{#content-author}
-   + [AEM Headless内容创作历程 — 概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/overview.md)
-   + [使用AEM创作无头 — 简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/introduction.md)
-   + [使用AEM创作无头的基础知识](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/basics.md)
-   + [了解如何在内容片段中使用引用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/references.md)
-   + [了解如何为内容片段定义元数据和标记](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/metadata-tagging.md)
-+ AEM Headless Content Architect历程{#content-architect}
-   + [AEM Headless Content Architect历程概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/overview.md)
-   + [使用AEM实现无头内容建模 — 简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/introduction.md)
-   + [了解使用AEM实现无头的内容建模基础知识](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/basics.md)
-   + [了解如何在AEM中创建内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/model-structure.md)
-
++ AEM Headless内容创作历程{#author}
+   + [AEM Headless内容创作历程 — 概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
+   + [使用AEM创作无头 — 简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
+   + [使用AEM创作无头的基础知识](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
+   + [了解如何在内容片段中使用引用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
+   + [了解如何为内容片段定义元数据和标记](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
++ AEM Headless Content Architect历程{#architect}
+   + [AEM Headless Content Architect历程概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
+   + [使用AEM实现无头内容建模 — 简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
+   + [了解使用AEM实现无头的内容建模基础知识](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
+   + [了解如何在AEM中创建内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
