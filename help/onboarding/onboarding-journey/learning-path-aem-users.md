@@ -2,9 +2,8 @@
 title: AEM用户的学习路径
 description: 如果您是AEM用户，请阅读本页以了解获取访问权限后的后续步骤
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 3%
