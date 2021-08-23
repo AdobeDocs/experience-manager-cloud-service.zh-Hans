@@ -4,9 +4,9 @@ description: 从此处开始，您可以体验AEM强大而灵活的无头功能�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---
@@ -63,3 +63,4 @@ ht-degree: 2%
 * [无头创作历程](/help/journey-headless/author/overview.md)  — 从此处开始，一段引导式旅程，逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。
 * [AEM无头开发人员历程](/help/journey-headless/developer/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个开发项目中利用这些功能。
 * [AEM as a Cloud Service技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已经对AEM和无头技术有了很深的了解，您可能希望直接查阅我们的深入技术文档。
+* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您希望通过学习和技术上的倾向，请学习我们由API和框架组织的动手实践教程，这些教程探讨如何创建和使用基于AEM Headless构建的应用程序。
