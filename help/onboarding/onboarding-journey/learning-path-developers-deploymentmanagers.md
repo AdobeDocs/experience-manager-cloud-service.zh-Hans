@@ -3,9 +3,9 @@ title: 面向开发人员和部署经理的学习路径
 description: 如果您是开发人员或部署管理员，请阅读本页以了解获取访问权限后的后续步骤
 hide: true
 index: false
-source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
+source-git-commit: 53b98708044a7df8c4d24f25046c098f1a307743
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '566'
 ht-degree: 2%
 
 ---
@@ -68,3 +68,14 @@ ht-degree: 2%
 
 * [面向开发人员的AEM SPA Editor快速入门](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
+## Experience League课程 {#exp-league-courses}
+
+请参阅experience league课程以了解更多信息。 请确保您已注册以访问课程：
+
+* [传统站点](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [SPA编辑器](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [无头](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [商务](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
