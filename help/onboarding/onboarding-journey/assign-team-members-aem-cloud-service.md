@@ -3,10 +3,10 @@ title: '将团队成员分配给AEM作为Cloud Service产品配置文件 '
 description: 可查看本页以了解如何将团队成员分配给AEM作为Cloud Service产品配置文件
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-要授予AEM as a的Cloud Service访问权限，用户必须属于以下两个产品配置文件之一： `AEM Users`或`AEM Administrators`。 您的团队成员必须获得对AEM实例的权限，因为管理Cloud Manager的权限是不够的。 了解更多。
+要授予AEM as a的Cloud Service访问权限，用户必须属于以下两个产品配置文件之一： `AEM Users`或`AEM Administrators`。 您的团队成员必须获得对AEM实例的权限，因为管理Cloud Manager的权限是不够的。
 
 >[!NOTE]
 >系统管理员分配给AEM用户产品配置文件的每个用户都将拥有Cloud Manager的（只读）访问权限。
@@ -85,7 +85,7 @@ ht-degree: 1%
 
    ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. 新选项卡会将您导航到您有权从中访问环境创作实例的Adobe Admin Console。 根据此人需要授予的权限，选择&#x200B;*AEM Administrators*&#x200B;或&#x200B;*AEM Users*。 了解有关[AEM as a Cloud Service产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)的更多信息。
+1. 新选项卡会将您导航到您有权从中访问环境创作实例的Adobe Admin Console。 根据此人需要授予的权限，选择&#x200B;**AEM Administrators**&#x200B;或&#x200B;**AEM Users**。 了解有关[AEM as a Cloud Service产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)的更多信息。
 
    ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
@@ -105,5 +105,6 @@ ht-degree: 1%
 
 ## 其他资源 {#additional-resources}
 
+* [在 Admin Console 中管理产品和用户访问权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
 * [配置对AEM的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
 * [页面创作快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
