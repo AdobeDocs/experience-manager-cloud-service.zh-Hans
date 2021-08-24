@@ -3,9 +3,9 @@ title: 通过Cloud Manager设置云资源
 description: 请阅读本页内容，了解如何通过Cloud Manager设置云资源
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 导航到Cloud Manager {#navigate-cloud-manager}
 
-业务所有者用户将收到一封欢迎电子邮件，其中包含要开始使用的链接，或者如果找不到该链接，则直接转到[Adobe Experience Cloud](https://experience.adobe.com)并使用Adobe ID登录。
+业务所有者用户将收到一封欢迎电子邮件，其中包含要开始使用的链接，或者，如果找不到该链接，则使用您的Adobe ID登录以直接访问[Cloud Manager](https://my.cloudmanager.adobe.com/)。
 
 按照以下步骤导航到Cloud Manager:
 
