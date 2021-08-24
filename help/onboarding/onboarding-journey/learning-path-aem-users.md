@@ -3,10 +3,10 @@ title: AEM用户的学习路径
 description: 如果您是AEM用户，请阅读本页以了解获取访问权限后的后续步骤
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '383'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,24 @@ ht-degree: 3%
 
 ## 登录到创作 {#login-author}
 
-要访问“作者”，需要执行以下步骤：
+请按照以下步骤访问作者：
 
-1. 按照以下步骤导航到Cloud Manager。 或者，您也可以直接转到Cloud Manager并登录。
+1. 直接导航到[Adobe Experience Cloud](https://experience.adobe.com)，然后使用Adobe ID登录。
+
+1. 在Adobe Experience Cloud主页中，选择&#x200B;**Experience Manager**。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. 这会将您转到AEM主页。 从此处启动&#x200B;**Cloud Manager** 。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。 请将此页面加入书签以供将来参考，并帮助您直接导航到Cloud Manager的登陆页面。
 
 1. 在Cloud Manager的&#x200B;**概述**&#x200B;页面中，单击&#x200B;**Environments**&#x200B;卡中的创作链接。
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. 此时将打开一个新选项卡，您可以在其中使用Adobe ID登录创作环境。
 
