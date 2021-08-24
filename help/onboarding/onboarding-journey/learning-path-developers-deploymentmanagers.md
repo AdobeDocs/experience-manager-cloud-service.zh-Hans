@@ -3,9 +3,9 @@ title: 面向开发人员和部署经理的学习路径
 description: 如果您是开发人员或部署管理员，请阅读本页以了解获取访问权限后的后续步骤
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---
@@ -68,9 +68,3 @@ ht-degree: 2%
 
 * [面向开发人员的AEM SPA Editor快速入门](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-### Experience League课程 {#experience-league-courses}
-
-* 传统网站
-* SPA编辑器
-* 无头
-* 商务
