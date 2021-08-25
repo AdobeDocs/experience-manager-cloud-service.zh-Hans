@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: b7ed0d16b9cd4ba9fdfaa20e17f3c3c73659f914
 workflow-type: tm+mt
-source-wordcount: '3124'
-ht-degree: 100%
+source-wordcount: '3641'
+ht-degree: 79%
 
 ---
 
@@ -46,7 +46,6 @@ ht-degree: 100%
    * 在页面上使用选择器时，首选提供语义值的选择器。
    * 如果人们无法读取您的 URL，则搜索引擎也无法读取。
    * 例如：
-
       `mybrand.com/products/product-detail.product-category.product-name.html` 比  更可取 
 `mybrand.com/products/product-detail.1234.html`
 
@@ -80,7 +79,7 @@ ht-degree: 100%
 
    * 有时，网站会通过 `http` 提供，直到用户访问包含结账或登录表单等内容的页面时为止，此时网站将切换成 `https`。当从这个页面进行链接时，如果用户可以返回到 `http` 页面并通过 `https` 进行访问，则搜索引擎会将二者作为两个单独的页面进行跟踪。
 
-   * 目前，Google 首选的页面是 `https` 而不是 `http`。因此，通过 `https` 提供整个站点，往往会为人们的生活带来便利。
+   * 目前，Google 首选的页面是 `https` 而不是 `http`。因此，通过`https`提供整个站点，往往会为人们的生活带来便利。
 
 ### 服务器配置 {#server-configuration}
 
@@ -96,7 +95,7 @@ ht-degree: 100%
 
 ## AEM 配置 {#aem-configurations}
 
-本节介绍了配置 AEM 以遵循这些 SEO 建议所需的实施步骤。
+本节介绍配置AEM以遵循这些SEO建议所需的实施步骤。
 
 ### 使用 Sling 选择器 {#using-sling-selectors}
 
@@ -183,7 +182,7 @@ Resource myPage = req.getResource();
 
 #### 本地化的页面名称 {#localized-page-names}
 
-您可能希望向用户显示本地化页面名称中已翻译的内容。例如：
+您可能需要向翻译内容的用户显示本地化的页面名称。 例如：
 
 * 不要让讲西班牙语的用户导航到：
    `www.mydomain.com/es/home.html`
@@ -357,14 +356,34 @@ Disallow: /
 
 爬取程序使用 XML 站点地图来更好地理解网站的结构。虽然提供站点地图无法保证会提高 SEO 排名，但这是公认的最佳实践。您可以在 Web 服务器上手动维护要用作站点地图的 XML 文件，但我们建议以编程方式生成站点地图，这种方法可确保当作者创建新内容时，站点地图会自动反映内容更改。
 
-要以编程方式生成站点地图，请注册一个 Sling Servlet 用于侦听 `sitemap.xml` 调用。然后，Servlet 可使用通过 Servlet API 提供的资源来查看当前页面及其子页面，以输出的 XML。随后，将该 XML 缓存在调度程序中。这个位置应在 `robots.txt` 文件的站点地图属性中引用。此外，还需要实施自定义刷新规则，以确保在激活新页面时刷新此文件。
+AEM使用[Apache Sling站点地图模块](https://github.com/apache/sling-org-apache-sling-sitemap)生成XML站点地图，该模块为开发人员和编辑人员提供了多种选项来保持站点XML站点地图处于最新状态。
+
+Apache Sling站点地图模块区分顶级站点地图和嵌套站点地图，这两者都是为将`sling:sitemapRoot`属性设置为`true`的任何资源生成的。 通常，站点地图使用树顶级站点地图路径（即没有其他站点地图根父级的资源）中的选择器来呈现。 此顶级站点地图根目录还会公开站点地图索引，该索引通常是站点所有者在搜索引擎的配置门户中配置的索引，或添加到站点的`robots.txt`的索引。
+
+例如，假定某个站点定义了位于`my-page`的顶级站点地图根目录和位于`my-page/news`的嵌套站点地图根目录，以便为新闻子树中的页面生成专用站点地图。 由此产生的相关URL将是
+
+* https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html
 
 >[!NOTE]
 >
->您可以注册一个 Sling Servlet 来侦听带有 `xml` 扩展名的选择器 `sitemap`。这会让 Servlet 随时处理以如下内容结尾的 URL 请求：
->    `/<path-to>/page.sitemap.xml`
->然后，您可以从请求中获取所请求的资源，并通过使用 JCR API 从内容树中的该点生成站点地图。
->此类方法带来的好处是您可以从同一实例为多个网站提供提供。对 `/content/siteA.sitemap.xml` 的请求将生成 `siteA` 的站点地图，对 `/content/siteB.sitemap.xml` 的请求将生成 `siteB` 的站点地图，而无需编写额外的代码。
+> 选择器`sitemap`和`sitemap-index`可能会干扰自定义实施。 如果您不想使用产品功能，请配置您自己的Servlet，以使用大于0的`service.ranking`来提供这些选择器。
+
+在默认配置中，“页面属性”对话框提供了一个选项，用于将页面标记为站点地图根，因此，如上所述，可生成其自身及其子体的站点地图。 此行为由`SitemapGenerator`接口的实现来实施，并可通过添加其他实现来扩展。 但是，由于重新生成XML站点地图的频率高度取决于内容创作工作流和工作负载，因此产品不提供任何`SitemapScheduler`配置。 这可以有效地使该功能选择加入。
+
+要启用生成XML站点地图的后台作业，必须配置`SitemapScheduler`。 为此，请为PID `org.apache.sling.sitemap.impl.SitemapScheduler`创建OSGI配置。 调度程序表达式`0 0 0 * * ?`可用作在午夜每天重新生成所有XML站点地图的起点。
+
+![Apache Sling站点地图 — 调度程序](assets/sling-sitemap-scheduler.png)
+
+站点地图生成作业可以在创作层和发布层实例上运行。 在大多数情况下，建议在发布层实例上运行生成，因为只能生成正确的规范URL（因为Sling资源映射规则通常仅存在于发布层实例上）。 但是，可以通过实施`SitemapLinkExternalizer`接口来插入用于生成规范URL的外部化机制的自定义实现。 如果自定义实施能够在创作层实例上生成站点地图的规范URL，则可以为创作运行模式配置`SitemapScheduler` ，并且XML站点地图生成工作量可以分布在创作服务群集的实例中。 在此方案中，在处理尚未发布、已修改或仅对受限用户组可见的内容时必须特别谨慎。
+
+除了上述Apache Sling Sitemap扩展点[SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html)和[SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html)以及[SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html)之外，AEM特定实施还定义了几个扩展点：
+
+* 可以实施[SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) ，以从由AEM Sites特定页面树站点地图生成器生成的XML站点地图中删除页面
+* 可以实施[SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html)或[SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)，以从由[商务集成框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)特定站点地图生成器生成的XML站点地图中筛选出产品或类别。
+
+此外，为XML站点地图实现的功能也可用于不同的用例，例如，将规范链接或语言替代添加到页面标题中。 有关详细信息，请参阅[SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)界面。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 
@@ -394,3 +413,4 @@ Disallow: /
 * [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
+* [https://github.com/apache/sling-org-apache-sling-sitemap](https://github.com/apache/sling-org-apache-sling-sitemap)
