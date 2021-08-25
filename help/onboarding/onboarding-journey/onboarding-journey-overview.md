@@ -3,7 +3,7 @@ title: 入门历程
 description: 阅读本页以了解如何开始入门历程
 hide: true
 index: false
-source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
+source-git-commit: d5a948bd296d7e6ac9aca0b7bfc72202c1046b99
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -55,12 +55,12 @@ ht-degree: 2%
 |---|---|---|
 | 0 | 入门历程 | 本文档 |
 | 1 | 了解入门概念，例如：<br>[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[AdobeIdentity Management系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM as aCloud Service团队和产品配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[联系Adobe支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | 了解入门概念。 |
-| 2 | 入门 | 了解如何以系统管理员身份登录Admin Console和检查用户档案 |
-| 3 | 将团队成员分配给Cloud Manager产品配置文件 | 查看Cloud Manager产品配置文件，并了解如何将团队成员分配给Cloud Manager产品配置文件。 |
-| 4 | 通过Cloud Manager设置云资源 | 了解云资源的创建方式以及谁可以执行此操作。 此外，了解云程序和环境的创建方式。 |
-| 5 | 将团队成员分配给AEM作为Cloud Service产品配置文件 | 了解系统管理员如何将您的团队成员作为Cloud Service产品配置文件分配给AEM。 |
-| 6 | 面向AEM开发人员和部署经理的学习路径 | 了解作为开发人员，您如何可以访问和管理Cloud Manager Git，以及作为部署管理器，您如何在Cloud Manager中设置管道和部署代码。 |
-| 7 | AEM用户的学习路径 | 了解作为AEM作者，您如何可以作为Cloud Service实例访问AEM，并熟悉AEM as a Cloud Service的创作内容。 |
+| 2 | [入门](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md) | 了解如何以系统管理员身份登录Admin Console和检查用户档案 |
+| 3 | [将团队成员分配给Cloud Manager产品配置文件](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) | 查看Cloud Manager产品配置文件，并了解如何将团队成员分配给Cloud Manager产品配置文件。 |
+| 4 | [通过Cloud Manager设置云资源](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md) | 了解云资源的创建方式以及谁可以执行此操作。 此外，了解云程序和环境的创建方式。 |
+| 5 | [将团队成员分配给AEM作为Cloud Service产品配置文件](/help/onboarding/onboarding-journey/assign-team-members-aem-cloud-service.md) | 了解系统管理员如何将您的团队成员作为Cloud Service产品配置文件分配给AEM。 |
+| 6 | [面向AEM开发人员和部署经理的学习路径](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md) | 了解作为开发人员，您如何可以访问和管理Cloud Manager Git，以及作为部署管理器，您如何在Cloud Manager中设置管道和部署代码。 |
+| 7 | [AEM用户的学习路径](/help/onboarding/onboarding-journey/learning-path-aem-users.md) | 了解作为AEM作者，您如何可以作为Cloud Service实例访问AEM，并熟悉AEM as a Cloud Service的创作内容。 |
 
 ## 下一步 {#what-is-next}
 
