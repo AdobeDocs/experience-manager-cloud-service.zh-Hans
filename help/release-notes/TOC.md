@@ -1,13 +1,13 @@
 ---
-sub-product: AEM as a Cloud Service 发行说明
+sub-product: Release Notes for AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service 发行说明
 breadcrumb-title: 发行说明
 user-guide-description: 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。
-feature: 版本信息
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9ef460d470ffc17966a2336fe46b60fd9d9759e7
+source-git-commit: 5ad46fe8478ac22d7a263ead24ea6dc13b158c67
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '121'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 96%
 + 发行说明 {#release-notes}
    + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021年{#2021}
+      + [2021.7.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
       + [2021.6.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
       + [2021.5.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
       + [2021.4.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
