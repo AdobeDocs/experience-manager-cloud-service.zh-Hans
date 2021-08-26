@@ -1,9 +1,9 @@
 ---
 title: 在屏幕中安装和配置播放器作为Cloud Service
 description: 本页介绍如何在Screens中作为Cloud Service安装和配置播放器。
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,15 @@ ht-degree: 1%
 >|—|—|
 >|isContentRendering {boolean}|true(如果GPU能确认它正在播放实际内容（基于像素分析）|
 
+### 限制 {#limitations}
+
+下面列出了基本播放监控的一些限制：
+
+* 由于播放器向服务器报告了自己的播放状态，因此它需要一个活动连接。
+
+* 检查GPU的`isContentRendering`属性当前占用大量资源，默认情况下将启用该属性，并且需要从播放器首选项中明确选择加入。 建议不要将其与视频结合使用。
+
+* 支持序列渠道。
 
 ## 下一步 {#whats-next}
 
