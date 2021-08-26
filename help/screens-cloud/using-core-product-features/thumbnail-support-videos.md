@@ -3,9 +3,9 @@ title: 屏幕中视频的缩略图支持作为Cloud Service
 description: 本页介绍如何在Screens中为视频添加缩略图支持作为Cloud Service。
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ ht-degree: 0%
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. 编辑视频组件属性。
+1. 选择视频并单击&#x200B;*扳手*&#x200B;图标以打开视频属性。
 
-1. 将图像从资产选取器拖到缩略图拖放区域。
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. 预览渠道。
+1. 将打开&#x200B;**视频**&#x200B;对话框，您将在其中查看&#x200B;**Thumbnail**&#x200B;拖放区域。
 
-1. 如果在组件上设置了视频，则将播放视频。 如果没有，且缩略图已设置，则将播放缩略图。 否则，该组件将被视为未配置，将被跳过
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. 将资产选取器中的图像拖放到&#x200B;**Thumbnail**&#x200B;拖放区域，然后单击&#x200B;**Done**。
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. 单击&#x200B;**预览**。
+
+1. 如果在组件上设置了视频，则将播放视频。 如果没有，且缩略图已设置，则将播放缩略图。 否则，该组件将被视为未配置，将被跳过。
 
 ## 在视频中使用缩略图时支持的用例 {#understand-use-case}
 
