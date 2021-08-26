@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
@@ -62,19 +62,32 @@ ht-degree: 2%
 
 ### [!DNL Forms]的新增功能 {#what-is-new-forms}
 
-* automated forms conversion服务可以[将意大利语和葡萄牙语的PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)转换为自适应Forms。
+<!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
+
+* 用于Forms as aCloud Service的AEM原型项目现在包含[4个新主题，并形成Microsoft Dynamics和Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)的数据模型。
 
 * **基于Acroform的记录文档**:AEM Forms as a Cloud Service支持将 [Adobe Acrobat表单PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 用作记录文档的模板，而不是基于XFA的表单模板。
 
 * **Microsoft Azure数据存储连接器**:现在，您可 [以将表单数据模型连接到Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它允许您将自适应表单数据作为BLOB检索并存储到Microsoft Azure Storage中。
 
+### [!DNL Forms]的测试版功能 {#aug-what-is-new-forms-prerelease}
+
+* **统一存储连接器：** 统一存储连接器允许您将数据源连接到AEM工作流或自适应表单，而无需在AEM FormsCloud Service存储上保留任何数据。它允许您安全地处理PII（个人身份信息）并将信息直接存储到Azure数据存储中。
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) API您可以将XDP模板和XML数据组合在一起，以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 利用API，可创建应用程序，以便：
+   * 使用XML数据填充模板文件，以生成文档。
+   * 以各种格式生成输出表单，包括非交互式PDF打印流。
+   * 从XFA表单PDF和Adobe Acrobat表单生成打印PDF文件。
+
+您可以写信给[!DNL formscsbeta@adobe.com]注册测试版程序。
+
 ### [!DNL Forms]预发行版渠道中提供的新增功能 {#prerelease-features-forms}
 
-* **在自适应表单中使用Adobe Sign角色**:Adobe Sign的业务和企业服务级别可以选择扩展协议收件人的角色，而不仅仅是签名者，以更好地满足其工作流要求。现在，您可以让每个协议收件人在自适应表单中配置其角色，而签名者是默认角色。
+* **在自适应表单中使用Adobe Sign角色**:Adobe Sign的业务和企业服务级别可以选择扩展协议收件人的角色，而不仅仅是签名者，以更好地满足其工作流要求。现在，您可以使[的每个协议收件人都能够在自适应表单](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform)中配置其角色，而签名者是默认角色。
 
 * **用于自适应Forms的Analytics**:您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪最终用户行为，以收集最终用户分析。它有助于根据数据做出明智的决策，以改善最终用户体验。
 
-* **轻松连接AEM Forms与Microsoft Dynamics和Salesforce.com**:该服务为Microsoft Dynamics和Salesforce.com提供开箱即用的数据源配置和数据模型，使开发人员能够更快、更轻松地将Microsoft Dynamics和Salesforce.com配置为自适应表单的数据源。
+* **轻松连接AEM Forms与Microsoft Dynamics和Salesforce.com**:该服务为Microsoft Dynamics和Salesforce.com提供开箱即用的数据源配置和数据模型，使开发人 [员能够更快、更轻松地将Microsoft Dynamics和Salesforce.com配置为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html)。
 
 ## CIF附加组件 {#cloud-services-cif}
 
