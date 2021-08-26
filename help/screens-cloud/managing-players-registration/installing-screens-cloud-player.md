@@ -1,9 +1,9 @@
 ---
 title: 在屏幕中安装和配置播放器作为Cloud Service
 description: 本页介绍如何在Screens中作为Cloud Service安装和配置播放器。
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ ht-degree: 1%
 
 通过AEM Screens播放器中的基本播放监控，您可以：
 
-* 远程监视播放器是否正确播放内容
+* 如果播放器正确播放了内容，则进行远程监视。
 
-* 提高对字段中空白屏幕或损坏体验的反应性
+* 提高对字段中空白屏幕或损坏体验的反应性。
 
-* 降低向最终用户显示损坏的体验的风险
+* 降低向最终用户显示损坏的体验的风险。
 
 ### 了解属性 {#understand-properties}
 
@@ -78,11 +78,11 @@ ht-degree: 1%
 
 下面列出了基本播放监控的一些限制：
 
-* 由于播放器向服务器报告了自己的播放状态，因此它需要一个活动连接。
+* 播放器会向服务器报告其自身的播放状态，因此需要活动连接。
 
 * 检查GPU的`isContentRendering`属性当前占用大量资源，默认情况下将启用该属性，并且需要从播放器首选项中明确选择加入。 建议不要将其与视频结合使用。
 
-* 支持序列渠道。
+* 序列渠道支持此功能。
 
 ## 下一步 {#whats-next}
 
