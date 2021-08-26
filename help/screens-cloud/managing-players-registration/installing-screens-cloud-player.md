@@ -1,9 +1,9 @@
 ---
 title: 在屏幕中安装和配置播放器作为Cloud Service
 description: 本页介绍如何在Screens中作为Cloud Service安装和配置播放器。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,38 @@ ht-degree: 1%
    ![图像](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. 单击&#x200B;**Confirm**，在切换到云模式时，会提示取消注册播放器。
+
+## 基本播放监控 {#playback-monitoring}
+
+播放器会报告各种播放量度，每个量度的默认值为30秒。 `ping`根据这些量度，您可以检测各种边缘情况，如体验卡住、空白屏幕和计划问题。 这样，您便可以了解设备上的问题并排除故障，从而加快调查和纠正措施。
+
+通过AEM Screens播放器中的基本播放监控，您可以：
+
+* 远程监视播放器是否正确播放内容
+
+* 提高对字段中空白屏幕或损坏体验的反应性
+
+* 降低向最终用户显示损坏的体验的风险
+
+### 了解属性 {#understand-properties}
+
+每个`ping`中包含以下属性：
+
+| 属性 | 描述 |
+|---|---|
+| id {string} | 播放器标识符 |
+| activeChannel {string} | 当前正在播放渠道路径；或者，如果没有计划，则为空 |
+| activeElements {string} | 以逗号分隔的字符串，所有播放序列渠道中的当前可见元素（多区域布局中存在多个元素） |
+| isDefaultContent {boolean} | 如果播放渠道被视为默认或回退渠道（即，具有优先级1且无计划），则为true |
+| hasContentChanged {boolean} | 如果内容在过去5分钟内发生更改，则为true；否则为false |
+| lastContentChange {string} | 上次内容更改的时间戳 |
+
+>[!NOTE]
+>或者，也可以从播放器首选项（启用播放监控）中启用更高级的属性，该属性为：
+>|属性|描述|
+>|—|—|
+>|isContentRendering {boolean}|true(如果GPU能确认它正在播放实际内容（基于像素分析）|
+
 
 ## 下一步 {#whats-next}
 
