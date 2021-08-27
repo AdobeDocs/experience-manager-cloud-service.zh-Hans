@@ -1,9 +1,9 @@
 ---
 title: 在Screens中创建项目作为Cloud Service
 description: 本页介绍如何在Screens中创建项目作为Cloud Service。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 1. 导航到Screens内容提供商。
 
    >[!NOTE]
-   >请参阅[使用Screens内容提供程序] ，了解如何访问Screens内容提供程序以创建项目。
+   >请参阅[使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) ，了解如何访问Screens内容提供程序以创建项目。
 
 1. 单击操作栏右上角的&#x200B;**创建屏幕项目**。
 
