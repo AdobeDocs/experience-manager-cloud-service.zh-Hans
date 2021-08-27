@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
+source-git-commit: 2451a29b71b113f28ffc00737ed825381dd5ad07
 workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 2%
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 * **轻松连接AEM Forms与Microsoft Dynamics和Salesforce.com**:该服务为Microsoft Dynamics和Salesforce.com提供开箱即用的数据源配置和数据模型，使开发人 [员能够更快、更轻松地将Microsoft Dynamics和Salesforce.com配置为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html)。
 
-## [!DNL Screens] as a  [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
 
 ### 新增功能 {#what-is-new-screens}
 
