@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
+source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1197'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* 用于Forms as aCloud Service的AEM原型项目现在包含[4个新主题，并形成Microsoft Dynamics和Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)的数据模型。
+* 用于Forms as aCloud Service的AEM原型项目现在包含[Canvas 3.0主题，并且表单数据模型适用于Microsoft Dynamics和Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)。
 
 * **基于Acroform的记录文档**:AEM Forms as a Cloud Service支持将 [Adobe Acrobat表单PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 用作记录文档的模板，而不是基于XFA的表单模板。
 
@@ -72,7 +72,9 @@ ht-degree: 2%
 
 ### [!DNL Forms]的测试版功能 {#aug-what-is-new-forms-prerelease}
 
-* **统一存储连接器：** 统一存储连接器允许您将数据源连接到AEM工作流或自适应表单，而无需在AEM FormsCloud Service存储上保留任何数据。它允许您安全地处理PII（个人身份信息）并将信息直接存储到Azure数据存储中。
+* **统一存储连接器：** 使用统一存储连接器将客户管理的存储库中的进程中数据外部化。例如，您可以
+   * 启用Forms Portal的保存和恢复功能，并将自适应表单草稿存储在客户管理的数据存储库中。
+   * 将包含敏感个人数据(SPD)的正在处理的AEM工作流数据(AEM工作流变量数据)存储在客户管理的存储库中。
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) API您可以将XDP模板和XML数据组合在一起，以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 利用API，可创建应用程序，以便：
    * 使用XML数据填充模板文件，以生成文档。
