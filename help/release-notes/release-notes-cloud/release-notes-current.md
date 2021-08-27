@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
+source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -90,6 +90,24 @@ ht-degree: 2%
 * **用于自适应Forms的Analytics**:您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪最终用户行为，以收集最终用户分析。它有助于根据数据做出明智的决策，以改善最终用户体验。
 
 * **轻松连接AEM Forms与Microsoft Dynamics和Salesforce.com**:该服务为Microsoft Dynamics和Salesforce.com提供开箱即用的数据源配置和数据模型，使开发人 [员能够更快、更轻松地将Microsoft Dynamics和Salesforce.com配置为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html)。
+
+## [!DNL Screens] as a  [!DNL Cloud Service] {#screens}
+
+### 新增功能 {#what-is-new-screens}
+
+* 作为内容作者，您现在可以定义视频的缩略图，以便将该图像用作占位符，并在相应的团队完成实际视频时，正确测试内容播放和定位。
+有关更多详细信息，请参阅[基本播放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)。
+
+* 在Screens中，现在支持将中的视频的缩略图支持作为Cloud Service。 内容作者可以为视频定义缩略图，以便图像可用作占位符，并在相应团队最终确定实际视频时，正确测试内容播放和定位。 在视频播放失败时，也可以使用图像。
+
+### 错误修复 {#bug-fixes-screens}
+
+* 播放器无法显示嵌入页面中的内容，此问题现已修复。
+
+* 成功登录后，导航到默认页面（渠道）最终会出现“内部服务器错误”页面。
+
+* 删除播放列表时，未删除关联的标记条目。
+
 
 ## CIF附加组件 {#cloud-services-cif}
 
