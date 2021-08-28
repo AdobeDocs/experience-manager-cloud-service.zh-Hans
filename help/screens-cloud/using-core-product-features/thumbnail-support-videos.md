@@ -2,9 +2,9 @@
 title: 屏幕中视频的缩略图支持作为Cloud Service
 description: 本页介绍如何在Screens中为视频添加缩略图支持作为Cloud Service。
 index: true
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 * 如果设备上存在播放问题，请设置回退机制。
 
 ## 在视频中使用缩略图 {#using-thumbnails}
+
+>[!IMPORTANT]
+>**前提条件**
+>在了解如何使用视频缩略图之前，请确保了解如何在Screens中以视频项目的形式为渠道创建视频演绎版。 有关更多详细信息，请参阅[此处](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)。
 
 请按照以下步骤在视频中使用缩略图：
 
@@ -68,6 +72,6 @@ ht-degree: 0%
 
 * 只有缩略图集的视频组件将播放缩略图。
 
-* 同时设置了视频和缩略图的视频组件将播放视频。
+* 同时设置了视频（如果视频具有正确的演绎版）和缩略图的视频组件将播放视频。
 
 * 如果出现播放错误，则具有视频集的视频组件将播放缩略图，或者在缩略图未配置的情况下，只跳到下一个项目。
