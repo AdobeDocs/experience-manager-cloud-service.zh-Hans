@@ -1,11 +1,10 @@
 ---
 title: 屏幕中视频的缩略图支持作为Cloud Service
 description: 本页介绍如何在Screens中为视频添加缩略图支持作为Cloud Service。
-hide: true
-index: false
-source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
+index: true
+source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -63,14 +62,12 @@ ht-degree: 0%
 
 ## 在视频中使用缩略图时支持的用例 {#understand-use-case}
 
-在视频中使用缩略图时，请参阅以下用例。
+视频中的缩略图支持以下用例：
 
-视频组件具有：
+* 将跳过未设置任何内容的视频组件。
 
-* *不会* 跳过任何设置
+* 只有缩略图集的视频组件将播放缩略图。
 
-* *只有缩略图* 在缩略图上播放
+* 同时设置了视频和缩略图的视频组件将播放视频。
 
-* *视频和缩览图* 幻灯片均播放视频
-
-* *如果* 出现播放错误，视频将继续播放缩略图，或者在缩略图未配置时跳到下一个项目
+* 如果出现播放错误，则具有视频集的视频组件将播放缩略图，或者在缩略图未配置的情况下，只跳到下一个项目。
