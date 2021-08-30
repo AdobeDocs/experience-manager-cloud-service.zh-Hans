@@ -1,12 +1,12 @@
 ---
 title: 旋转集
 description: 了解如何在Dynamic Media中使用旋转集。
-feature: 旋转集
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1815'
 ht-degree: 27%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->旋转集中的图像显示顺序很重要。请务必对其进行排序，以便旋转是一个360度的平滑视图。
+>旋转集中的图像显示顺序很重要。请务必对其进行排序，以便旋转是一个平滑的360°视图。
 
 **要创建旋转集，请执行以下操作：**
 

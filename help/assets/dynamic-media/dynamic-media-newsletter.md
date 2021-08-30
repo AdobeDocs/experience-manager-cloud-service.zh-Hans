@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media新闻稿存档
 description: '按Experience League划分的Dynamic Media时事通讯是每月时事通讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您立即实现价值。 本一站式商店快讯中提供宝贵的知识建设资源。 例如，提供了操作方法视频和解决方案概述。 阅读一些关键特性和功能，如图像预设、查看器预设、视频配置文件等。 '
-feature: 资产管理
+feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 0%
    * 了解即将举办的关于保护您的数字资产的网络研讨会。
    * 下一站将观看信息丰富的Adobe内幕浏览。
    * 当您在Experience Manager资产(Experience Manager资产)中拥有Dynamic Media时，即可提供令人兴奋的功能。
-   * 将360度视频和自定义视频缩略图添加到您的网站。
+   * 将360°视频和自定义视频缩略图添加到您的网站。
    * 会见`Andrew Hathaway`,Dynamic MediaExperience Manager资产的主要解决方案顾问。
 
 * **[2019年6月，06期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**

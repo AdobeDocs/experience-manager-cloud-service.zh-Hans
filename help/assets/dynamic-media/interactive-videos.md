@@ -1,12 +1,12 @@
 ---
 title: 交互式视频
 description: 了解如何在Dynamic Media中使用交互式视频和购物视频。
-feature: 交互式视频
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 16%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 16%
 
 * 在播放过程中，由于视频中使用了产品，因此相同的产品会以缩略图的形式显示在右侧。
 
-* 要暂停视频并打开产品的概览，请选择缩略图。 例如，在视频中选择KitchenAid缩略图，以体验混合器的360度旋转视图，或放大以查看混合器详细信息。
+* 要暂停视频并打开产品的概览，请选择缩略图。 例如，在视频中选择KitchenAid缩略图图像，以体验混合器的360°旋转视图，或放大以查看混合器详细信息。
 
 另请参阅[将交互式视频与Dynamic Media结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
@@ -96,8 +96,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >* 您的Experience Manager实施&#x200B;*not*&#x200B;使用电子商务集成框架将产品数据从任何电子商务解决方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)拉入Experience Manager。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 >
->
-如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
+>如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
 
 首先，识别现有概览实施所使用的动态变量，以便您能够在交互式视频创建过程中将产品缩略图映射到其相应产品概览。
 

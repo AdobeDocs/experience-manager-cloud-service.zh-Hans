@@ -1,19 +1,19 @@
 ---
 title: 360/VR视频
 description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频。
-feature: 360 VR 视频
+feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 1%
 
 ---
 
 # 360/VR视频 {#vr-video}
 
-360度视频同时记录每个方向的视图。 它们是用全方位相机或一组相机拍摄的。 在播放期间，在平面显示器上，用户可以控制观看角度；移动设备上的播放通常应用其内置的陀螺仪控件。
+360°视频同时记录每个方向的视图。 它们是用全方位相机或一组相机拍摄的。 在播放期间，在平面显示器上，用户可以控制观看角度；移动设备上的播放通常应用其内置的陀螺仪控件。
 
 Dynamic Media包含交付360个视频资产的本机支持。 默认情况下，查看或播放不需要任何其他配置。 您使用标准视频扩展名(如.mp4、.mkv和.mov)交付360视频。 最常见的编解码器是H.264。
 
@@ -27,7 +27,7 @@ Dynamic Media包含交付360个视频资产的本机支持。 默认情况下，
 
 ## 360视频正在使用 {#video-in-action}
 
-选择[空间站360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)以打开浏览器窗口并观看360度视频。 在视频播放期间，将指针拖动到新位置以更改观看角度。
+选择[空间站360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)以打开浏览器窗口并观看360°视频。 在视频播放期间，将指针拖动到新位置以更改观看角度。
 
 ![360视频采](assets/6_5_360videoiss_simplified.png)
 *样来自空间站的视频帧360*
@@ -122,7 +122,7 @@ Start by uploading 360 Videos.
 
    * 从查看器列表中，选择&#x200B;**[!UICONTROL Video360VR]**。
 
-      虚拟现实(VR)视频是使用虚拟现实耳机访问的沉浸式视频内容。 与普通视频一样，在视频被录制或捕获时，您会在开始时使用360度摄像机创建VR视频。
+      虚拟现实(VR)视频是使用虚拟现实耳机访问的沉浸式视频内容。 与普通视频一样，在视频被录制或捕获时，您会在开始时使用360°摄像机创建VR视频。
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *360 VR视频屏幕截图。*
 
