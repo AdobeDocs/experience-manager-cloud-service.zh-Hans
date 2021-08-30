@@ -1,14 +1,14 @@
 ---
-sub-product: AEM as a Cloud Service 入门
+sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service 入门
 breadcrumb-title: 入门指南
 user-guide-description: 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
-feature: 部署
+feature: Deploying
 role: Architect, Developer
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 47%
+source-wordcount: '100'
+ht-degree: 50%
 
 ---
 
@@ -30,5 +30,3 @@ ht-degree: 47%
    + [系统管理员任务](what-is-required/add-users-assign-cm-roles.md)
    + [导航到Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [授予用户对AEM实例的访问权限](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ 迁移方法{#migration-methodology}
-   + [迁移到Adobe Experience Manager作为Cloud Service](migration-methodology/getting-started.md)
