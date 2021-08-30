@@ -1,10 +1,9 @@
 ---
 title: 入门历程
 description: 阅读本页以了解如何开始入门历程
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 1%
