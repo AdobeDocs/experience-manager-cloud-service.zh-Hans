@@ -1,0 +1,82 @@
+---
+title: 面向开发人员和部署经理的学习路径
+description: 如果您是开发人员或部署管理员，请阅读本页以了解获取访问权限后的后续步骤
+hide: true
+index: false
+role: Admin, User, Developer
+source-git-commit: 88cbc378a337d35ead92fdea6f96b91859ae2770
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 2%
+
+---
+
+# 面向开发人员和部署经理的学习路径 {#learn-path-developers-deployment}
+
+## 目标 {#objective}
+
+本文档可帮助您的开发人员和部署经理访问Cloud Manager，并熟悉他们如何为学习路径做好准备。
+
+阅读本文档后，您应：
+
+* 作为开发人员，您将能够了解如何访问和管理Cloud Manager Git
+* 作为部署管理器，您能够了解如何在Cloud Manager中设置管道和部署代码
+
+## 简介 {#introduction}
+
+如果您正在阅读此部分，则可能会将您分配到开发人员或部署经理产品配置文件，并准备好载入并继续学习路径。
+
+>[!NOTE]
+>* 作为&#x200B;*开发人员*，您将需要登录到Cloud Manager并熟悉如何访问Git。
+>* 作为&#x200B;*部署管理器*，您将需要熟悉如何设置管道，甚至是部署代码。
+
+
+## 先决条件 {#prerequisites}
+
+在开始之前，请确保：
+
+* 系统管理员已将开发人员和部署经理分配给各自的产品配置文件。 此外，还必须将开发人员分配给AEM用户或AEM管理员产品配置文件。
+* 已设置云资源。
+* 您了解如何导航和登录Cloud Manager
+
+## 管理GitHub {#manage-git}
+
+您可以使用Cloud Manager UI中的Git自助服务帐户管理来访问和管理Git存储库。
+要了解有关此主题的更多信息，请参阅[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
+
+## 设置管道 {#setup-pipeline}
+
+您可以从Cloud Manager UI配置生产管道或非生产管道。
+要了解有关此主题的更多信息，请参阅[配置CI-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)。
+
+## 下一步 {#whats-next}
+
+开发人员和部署经理现在已准备好了解如何在AEM as a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。 要了解内容作者的学习历程，请参阅[AEM作者的学习路径](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)。
+
+## 其他资源 {#additional-resources}
+
+* [从Cloud Manager访问Git和Git帐户管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+
+* [AEM as a A Service的本地开发环境Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+
+* [AEM Sites入门（教程）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+
+* [AEM SPA Editor和React快速入门 | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
+
+* [AEM SPA Editor 和 Angular 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
+
+* [AEM无头入门 — GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
+
+* [面向开发人员的AEM SPA Editor快速入门](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+## Experience League课程 {#exp-league-courses}
+
+请参阅experience league课程以了解更多信息。 请确保您已注册以访问课程：
+
+* [传统站点](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [SPA编辑器](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [无头](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [商务](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
