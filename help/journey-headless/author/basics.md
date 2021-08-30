@@ -4,9 +4,9 @@ description: 了解使用内容片段为无头CMS创作内容的概念和机制�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ AEM 安装通常至少包含两个环境：
 
 **资产**&#x200B;控制台具有专用的&#x200B;**操作工具栏**&#x200B;和&#x200B;**快速操作**，您可以在选择资源（例如文件夹或内容片段）后使用这些工具栏。
 
-快速操作适用于单个资源：
+快速操作适用于单个资源，请参阅以下示例中的&#x200B;**Basel**:
 
 ![快速操作](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ AEM 安装通常至少包含两个环境：
 
 #### 创建文件夹 {#creating-folder}
 
-为此，您可以在资产控制台的&#x200B;**文件**&#x200B;部分中创建一系列文件夹。 选择&#x200B;**创建**&#x200B;选项（右上方），然后选择&#x200B;**创建文件夹**:
+为此，您可以在资产控制台的&#x200B;**文件**&#x200B;部分中创建一系列文件夹。 选择&#x200B;**创建**&#x200B;选项（右上方），然后选择&#x200B;**文件夹**:
 
 ![“创建文件夹”选项](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ AEM 安装通常至少包含两个环境：
 
 此部分的级别稍高一些。 如果您只是开始尝试一些内容，那么您并不需要它，但是当您有许多片段时，它&#x200B;*very*&#x200B;非常有用。 因此，即使你还没用到，了解情况还是件好事。
 
-您的内容架构师将创建当前项目所需的所有内容片段模型，也可能创建了其他一些项目所需的所有内容片段模型。 为帮助使作者保持操作简单，您可以限制适用于特定文件夹的模型列表。
+您的内容架构师将创建当前项目所需的所有内容片段模型，也可能创建了其他一些项目所需的所有内容片段模型。 为了帮助您自己和其他作者保持简单，您可以限制适用于特定文件夹的模型列表。
 
 创建文件夹后，可以打开文件夹&#x200B;**Properties**。 此处提供了各种选项卡，其中包含有关文件夹的信息和配置详细信息。 特别是对于内容片段，您可以使用&#x200B;**Policys**&#x200B;选项卡为此文件夹定义特定路径和/或标记。 这限制了可在文件夹中使用的内容片段模型，因为这意味着内容片段模型必须满足这些要求，才能在此文件夹中用于生成片段。
 
@@ -147,7 +147,7 @@ AEM 安装通常至少包含两个环境：
 
 ![创建内容片段 — 选择模型](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-继续&#x200B;**Next**&#x200B;之后，您可以提供片段的详细信息：
+继续&#x200B;**Next**&#x200B;之后，您可以为片段提供详细信息（**Basic**&#x200B;和&#x200B;**Advanced**）：
 
 ![创建内容片段 — 提供名称](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
