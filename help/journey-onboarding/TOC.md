@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: 入门历程
 breadcrumb-title: 入门历程
 user-guide-description: 在此开始为系统管理员角色设计的引导式历程，其中列出了要求、步骤和方法。 历程定义了其他角色，系统管理员必须与这些角色进行交互才能使项目取得成功，但历程的视点是管理员。
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%

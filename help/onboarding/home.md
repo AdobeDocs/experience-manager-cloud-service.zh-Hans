@@ -2,14 +2,14 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e5d5e838a027af983db51a3292962200faaf3cfa
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '943'
 ht-degree: 19%
 
 ---
 
-# [!DNL Experience Manager as a Cloud Service]入门 {#aem-onboarding-guide}
+# 开始[!DNL Experience Manager as a Cloud Service]入门 {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
