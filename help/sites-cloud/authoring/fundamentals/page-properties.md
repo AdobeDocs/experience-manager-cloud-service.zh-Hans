@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 57%
+source-wordcount: '1955'
+ht-degree: 56%
 
 ---
 
@@ -55,11 +55,14 @@ ht-degree: 57%
 
 * **开启/结束时间**
 
-   * **On Time**  — 发布环境中显示（渲染）已发布页面的日期和时间。必须手动或通过预配置的自动复制来发布页面。
+   >[!NOTE]
+   >
+   > 有关如何配置相关自动复制的详细信息，请参阅[开启和关闭时间 — 触发器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
 
-      >[!NOTE]
-      >
-      > 有关如何配置相关自动复制的详细信息，请参阅[开启和关闭时间 — 触发器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
+   >[!NOTE]
+   >如果&#x200B;**开启时间**&#x200B;或&#x200B;**关闭时间**&#x200B;过去，并且配置了自动复制，则将立即触发相关操作。
+
+   * **On Time**  — 发布环境中显示（渲染）已发布页面的日期和时间。必须手动或通过预配置的自动复制来发布页面。
 
       * 如果[已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，则在指定时间渲染之前，此页面将保持休眠（隐藏）。
       * 如果未发布并配置了自动复制功能，则页面将在指定的时间自动发布并渲染。
@@ -87,8 +90,6 @@ ht-degree: 57%
       * 再次点按或单击可添加多个。
       * 点按或单击&#x200B;**删除**&#x200B;图标以删除虚URL。
    * **重定向虚URL**  — 指示您是否希望页面使用虚URL。
-
-
 
 
 ### 高级 {#advanced}
