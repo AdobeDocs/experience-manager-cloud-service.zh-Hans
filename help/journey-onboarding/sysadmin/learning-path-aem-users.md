@@ -4,9 +4,9 @@ description: 如果您是AEM用户，请阅读本页以了解获取访问权限�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 本文档可帮助您的AEM作为Cloud Service内容作者访问Adobe Experience Manager(AEM)。
 
-阅读完后，您应该明白：
+阅读后，您应该了解如何：
 
-* 如何访问Cloud Manager。
-* 如何将AEM作为Cloud Service实例访问。
-* 将AEM作为Cloud Service创作内容。
+* 访问Cloud Manager
+* 将AEM作为Cloud Service实例访问
+* 将AEM作为Cloud Service创作内容
 
 ## 简介  {#introduction}
 
