@@ -4,9 +4,9 @@ description: 阅读本页以了解如何开始入门历程
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,12 @@ ht-degree: 0%
 >[!NOTE]
 >您必须是系统管理员才能成功完成以下步骤。
 
-1. 单击欢迎电子邮件中的&#x200B;**入门**，导航到Admin Console或直接从[此处](https://adminconsole.adobe.com)导航到Admin Console。
+1. 单击欢迎电子邮件中的&#x200B;**入门**（如下图所示），导航到Admin Console或直接从[此处的](https://adminconsole.adobe.com)导航到Admin Console。
 
    >[!NOTE]
    >作为系统管理员，您将收到多封电子邮件。 查找欢迎电子邮件，其中提供了您有权访问的组织名称的相关信息，然后单击&#x200B;**快速入门**。 如果找不到电子邮件，请直接导航到[Admin Console](https://adminconsole.adobe.com/)。
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. 使用[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)登录。 成功登录后，您将看到Adobe Admin Console的&#x200B;**Overview**&#x200B;页面，如下所示。
 
