@@ -24,7 +24,7 @@ ht-degree: 42%
    + [Cloud Manager 简介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM as a Team和Cloud Service配置文件](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe支持](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [入门历程指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target=&quot;_blank&quot;}
++ [入门历程指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target="_blank"}
 + AEM as aCloud Service{#what-is-required}快速入门
    + [获取您的Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager角色](what-is-required/user-roles-permissions.md)
