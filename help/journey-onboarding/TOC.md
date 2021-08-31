@@ -5,7 +5,7 @@ breadcrumb-title: 入门历程
 user-guide-description: 在此开始为系统管理员角色设计的引导式历程，其中列出了要求、步骤和方法。 历程定义了其他角色，系统管理员必须与这些角色进行交互才能使项目取得成功，但历程的视点是管理员。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 673340ba6e33daca2b1a371286ec38d6eaaca461
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 入门历程 {#onboarding-journey}
+# 入门历程 {#journey-onboarding}
 
 + [入门历程](/help/journey-onboarding/home.md)
 + 浏览载入历程{#onboarding}
