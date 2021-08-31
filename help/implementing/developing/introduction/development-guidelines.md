@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 1%
 
 如果需要识别群集中的主群集，则可以使用Apache Sling Discovery API来检测该群集。
 
-## 内存{#state-in-memory}中的状态
+## 内存中的状态 {#state-in-memory}
 
 状态不得保留在内存中，但保留在存储库中。 否则，如果实例停止，此状态可能会丢失。
 
-## 文件系统{#state-on-the-filesystem}上的状态
+## 文件系统上的状态 {#state-on-the-filesystem}
 
 实例的文件系统不应在AEM中用作Cloud Service。 该磁盘是短暂的，在实例循环使用时将进行处置。 对与处理单个请求相关的临时存储使用文件系统是可能的，但不应滥用它来获取大文件。 这是因为它可能对资源使用配额产生负面影响，并且会遇到磁盘限制。
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 类似地，由于异步发生的一切（如对观察事件执行操作），无法保证在本地执行，因此必须谨慎使用。 对于JCR事件和Sling资源事件，均是如此。 在发生更改时，该实例可能会被拆除并被其他实例替换。 拓扑中其他在当时处于活动状态的实例将能够对该事件做出响应。 但是，在这种情况下，这将不是一个地方性事件，甚至在发布该事件时，如果正在进行的领导人选举，也可能没有积极的领导人。
 
-## 后台任务和长时间运行的作业{#background-tasks-and-long-running-jobs}
+## 后台任务和长时间运行的作业 {#background-tasks-and-long-running-jobs}
 
 作为后台任务执行的代码必须假定它正在运行的实例可以随时关闭。 因此，代码必须具有弹性，且导入次数最多可恢复。 这意味着如果重新执行代码，则不应再次从开头开始，而应从离开的位置开始。 虽然这不是此类代码的新要求，但在AEM作为Cloud Service中，更有可能发生实例停用。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 同样，由于异步发生的所有事件(例如对观察事件执行操作（即JCR事件或Sling资源事件）)，无法保证会执行，因此必须谨慎使用。 目前，AEM部署已存在这种情况。
 
-## 传出HTTP连接{#outgoing-http-connections}
+## 传出HTTP连接 {#outgoing-http-connections}
 
 强烈建议任何传出HTTP连接设置合理的连接和读取超时。 对于不应用这些超时的代码，在AEM as a Cloud Service上运行的AEM实例将强制执行全局超时。 以下超时值是连接调用的10秒，以及下列常用Java库使用的连接的读取调用的60秒：
 
@@ -59,29 +59,29 @@ Adobe建议使用提供的[Apache HttpComponents客户端4.x库](https://hc.apac
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建议使用，因为它已过时并由版本4.x替换）
 * [OK Http](https://square.github.io/okhttp/) (AEM未提供)
 
-## 无经典UI自定义{#no-classic-ui-customizations}
+## 无经典UI自定义 {#no-classic-ui-customizations}
 
 AEM as aCloud Service仅支持第三方客户代码的触屏UI。 经典UI无法进行自定义。
 
-## 避免本机二进制文件{#avoid-native-binaries}
+## 避免本机二进制文件 {#avoid-native-binaries}
 
 代码在运行时将无法下载或修改二进制文件。 例如，无法解压缩`jar`或`tar`文件。
 
-## 没有通过AEM as aCloud Service{#no-streaming-binaries}进行流二进制文件
+## 无通过AEM as a Cloud Service流式传输二进制文件 {#no-streaming-binaries}
 
 应通过CDN访问二进制文件，CDN将在核心AEM服务之外提供二进制文件。
 
 例如，请勿使用`asset.getOriginal().getStream()`，这会触发将二进制文件下载到AEM服务的临时磁盘。
 
-## 没有反向复制代理{#no-reverse-replication-agents}
+## 无反向复制代理 {#no-reverse-replication-agents}
 
 AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 如果需要此类策略，您可以使用在发布实例场（可能是创作群集）之间共享的外部持久性存储。
 
-## 可能需要移植转发复制代理{#forward-replication-agents}
+## 可能需要移植转发复制代理 {#forward-replication-agents}
 
 内容通过pub-sub机制从“创作”复制到“发布”。 不支持自定义复制代理。
 
-## 监控和调试{#monitoring-and-debugging}
+## 监控和调试 {#monitoring-and-debugging}
 
 ### 日志 {#logs}
 
@@ -117,19 +117,19 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 | 2 | 警告 | 操作已成功，但遇到问题。 CRX可能正常工作，也可能无法正常工作。 |
 | 3 | 信息 | 操作成功。 |
 
-### 线程转储{#thread-dumps}
+### 线程转储 {#thread-dumps}
 
 云环境中的线程转储会持续收集，但此时无法以自助方式下载。 同时，如果调试问题时需要线程转储，请联系AEM支持人员，并指定确切的时间窗口。
 
-## CRX/DE Lite和开发人员控制台{#crxde-lite-and-developer-console}
+## CRX/DE Lite和开发人员控制台 {#crxde-lite-and-developer-console}
 
-### 本地开发{#local-development}
+### 地方发展 {#local-development}
 
 对于本地开发，开发人员拥有对CRXDE Lite(`/crx/de`)和AEM Web控制台(`/system/console`)的完全访问权限。
 
 请注意，在本地开发（使用SDK）中，可以将`/apps`和`/libs`直接写入，这与顶级文件夹不可更改的云环境不同。
 
-### AEM as a Cloud Service开发工具{#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service开发工具 {#aem-as-a-cloud-service-development-tools}
 
 客户可以在创作层的开发环境中访问CRXDE lite，但不能在暂存或生产环境中访问。 不可变存储库(`/libs`, `/apps`)在运行时无法写入，因此尝试写入将导致错误。
 
@@ -161,15 +161,15 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 
 对于生产程序，开发人员控制台的访问权限由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙盒程序，任何具有产品配置文件的用户都可以使用开发人员控制台，以便他们能够将AEM作为Cloud Service访问。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义用户，才能查看两个服务中的状态转储数据。 有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
-### AEM Staging and Production Service {#aem-staging-and-production-service}
+### AEM Staging和Production Service {#aem-staging-and-production-service}
 
 客户将无法访问用于暂存和生产环境的开发人员工具。
 
-### 性能监控{#performance-monitoring}
+### 性能监控 {#performance-monitoring}
 
 Adobe监控应用程序性能，并采取措施在出现恶化时加以解决。 此时，无法查看应用程序量度。
 
-## 专用出口IP地址{#dedicated-egress-ip-address}
+## 专用出口IP地址 {#dedicated-egress-ip-address}
 
 应请求，AEM as aCloud Service将为使用Java代码编程的HTTP（端口80）和HTTPS（端口443）出站流量配置静态的专用IP地址。
 
@@ -183,13 +183,13 @@ Adobe监控应用程序性能，并采取措施在出现恶化时加以解决。
 
 要启用专用IP地址，请向客户支持部门提交请求，客户支持部门将提供IP地址信息。 请求应指定每个环境，如果新环境在初始请求后需要该功能，则应发出其他请求。 不支持沙盒项目环境。
 
-### 功能使用{#feature-usage}
+### 功能使用 {#feature-usage}
 
 该功能与导致出站流量的Java代码或库兼容，前提是它们使用标准Java系统属性进行代理配置。 实际上，这应该包括大多数常用的库。
 
 以下是代码示例：
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -203,15 +203,35 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
+某些库需要显式配置才能将标准Java系统属性用于代理配置。
+
+使用Apache HttpClient的示例，需要显式调用
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)或使用
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
 同一专用IP适用于其Adobe组织中的所有客户计划，也适用于其每个计划中的所有环境。 它适用于创作和发布服务。
 
 仅支持HTTP和HTTPS端口。 这包括HTTP/1.1以及加密后的HTTP/2。
 
-### 调试注意事项{#debugging-considerations}
+### 调试注意事项 {#debugging-considerations}
 
 要验证流量是否确实在预期的专用IP地址上传出，请检查目标服务中的日志（如果可用）。 否则，调用调试服务(如[https://ifconfig.me/ip](https://ifconfig.me/ip))可能会很有用，该服务将返回调用的IP地址。
 
-## 发送电子邮件{#sending-email}
+## 发送电子邮件 {#sending-email}
 
 AEM as aCloud Service要求加密出站邮件。 以下各节介绍如何请求、配置和发送电子邮件。
 
@@ -219,7 +239,7 @@ AEM as aCloud Service要求加密出站邮件。 以下各节介绍如何请求�
 >
 >可以为邮件服务配置OAuth2支持。 有关更多信息，请参阅[OAuth2对邮件服务的支持](/help/security/oauth2-support-for-mail-service.md)。
 
-### 请求访问{#requesting-access}
+### 请求访问 {#requesting-access}
 
 默认情况下，禁用出站电子邮件。 要激活它，请提交支持票证，其中包含：
 
@@ -228,7 +248,7 @@ AEM as aCloud Service要求加密出站邮件。 以下各节介绍如何请求�
 1. 要从中发送邮件的环境的项目ID和环境ID
 1. 创作、发布还是两者都需要SMTP访问。
 
-### 发送电子邮件{#sending-emails}
+### 发送电子邮件 {#sending-emails}
 
 应使用[Day CQ Mail Service OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
 
@@ -256,6 +276,6 @@ AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://experienc
 
 `smtp.starttls`属性将在运行时由AEM自动设置为相应的Cloud Service值。 因此，如果将`smtp.tls`设置为true，则将忽略`smtp.startls`。 如果将`smtp.ssl`设置为false，则将`smtp.starttls`设置为true。 这与OSGI配置中设置的`smtp.starttls`值无关。
 
-## [!DNL Assets] 开发指南和用例  {#use-cases-assets}
+## [!DNL Assets] 开发指南和用例 {#use-cases-assets}
 
 要了解资产作为Cloud Service的开发用例、建议和参考资料，请参阅[资产的开发人员参考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
