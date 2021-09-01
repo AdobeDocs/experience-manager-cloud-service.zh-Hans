@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
+source-git-commit: 58d9022b2b65aec4709a41ebfc80cc03c4c162a6
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 2%
@@ -95,7 +95,7 @@ ht-degree: 2%
 
 ### 新增功能 {#what-is-new-screens}
 
-* Screens作为Cloud Service现在支持基本的播放监控。 现在，播放器将报告各种播放量度，并且每次执行“ping”操作（默认为30秒）。 根据这些量度，它能够检测各种边缘情况（体验卡住、空白屏幕、计划问题等）。 此功能允许团队远程监控播放器是否正确播放了内容，提高对空白屏幕或现场中已损坏体验的反应性，并降低向最终用户显示已损坏体验的风险。
+* Screens作为Cloud Service现在支持基本的播放监控。 现在，播放器将报告各种播放量度，并且每次ping（默认为30秒）。 根据这些量度，它能够检测各种边缘情况（体验卡住、空白屏幕、计划问题等）。 此功能允许团队远程监控播放器是否正确播放了内容，提高对空白屏幕或现场中已损坏体验的反应性，并降低向最终用户显示已损坏体验的风险。
 有关更多详细信息，请参阅[基本播放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)。
 
 * 在Screens中，现在支持将中的视频的缩略图支持作为Cloud Service。 内容作者可以为视频定义缩略图，以便图像可用作占位符，并在相应团队最终确定实际视频时，正确测试内容播放和定位。 在视频播放失败时，也可以使用图像。
