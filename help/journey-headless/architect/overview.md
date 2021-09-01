@@ -1,13 +1,13 @@
 ---
 title: AEM Headless Content Architect历程
 description: 从此处开始，您可以体验AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '789'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,14 @@ ht-degree: 2%
 * 了解无头内容交付的含义及其好处。
 * 了解如何为AEM无头功能的内容建模。
 * 能够采取首要步骤为您的第一个AEM无头项目构建内容模型。
+
+## AEM文档历程 {#documentation-journeys}
+
+[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和功能结合在一起，提供了一种说明，帮助对AEM不熟悉、从头到尾理解和解决业务问题的读者，同时尽可能少地了解以前的主题或AEM知识。
+
+文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
+
+如果您想了解Adobe如何建议如何使用AEM解决无头业务案例，请从[AEM无头历程](/help/journey-headless/home.md)开始。
 
 ## 受众 {#audience}
 

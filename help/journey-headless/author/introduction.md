@@ -1,10 +1,10 @@
 ---
 title: AEM Headless内容创作历程
 description: 介绍Adobe Experience Manager作为Cloud Service的强大、灵活、无头的功能，以及如何为您的项目创作内容。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%

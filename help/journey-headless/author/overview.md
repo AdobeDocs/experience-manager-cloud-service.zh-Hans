@@ -1,12 +1,12 @@
 ---
 title: AEM Headless内容创作历程
 description: 从此处开始，您可以逐步了解AEM强大而灵活的无标题功能、其功能以及如何为项目创作内容。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 0d7d1150e0156f08f4289054e8fb626713c7bc79
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '868'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,14 @@ ht-degree: 1%
 * 基本了解无头内容交付的含义及其好处。
 * 了解AEM无头功能以及它们如何协同工作来提供无头体验。
 * 能够为您的AEM无头项目创作内容。
+
+## AEM文档历程 {#documentation-journeys}
+
+[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和功能结合在一起，提供了一种说明，帮助对AEM不熟悉、从头到尾理解和解决业务问题的读者，同时尽可能少地了解以前的主题或AEM知识。
+
+文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
+
+如果您想了解Adobe如何建议如何使用AEM解决无头业务案例，请从[AEM无头历程](/help/journey-headless/home.md)开始。
 
 ## 受众 {#audience}
 

@@ -1,9 +1,9 @@
 ---
 title: 入门历程
 description: 单击此处开始，概述可用于了解载入体验的引导式载入历程。
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,14 @@ ht-degree: 1%
 * 您的团队已设置并有权访问云资源，
 * AEM作者将有权访问AEM as aCloud Service,
 * AEM开发人员和部署管理器将有权访问AEM as aCloud Service。
+
+## AEM文档历程 {#documentation-journeys}
+
+[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和功能结合在一起，提供了一种说明，帮助对AEM不熟悉、从头到尾理解和解决业务问题的读者，同时尽可能少地了解以前的主题或AEM知识。
+
+文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
+
+如果您想了解Adobe如何建议如何让您的团队为AEM as a Cloud Service应用程序启动并运行创建内容，请从这里开始！
 
 ## 受众 {#audiences}
 

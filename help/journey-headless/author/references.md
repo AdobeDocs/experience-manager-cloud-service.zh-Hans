@@ -1,10 +1,10 @@
 ---
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段、内容、其他片段和其他资产（媒体）中使用引用。 介绍无头CMS创作中嵌套片段的必要性和机制。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 2%

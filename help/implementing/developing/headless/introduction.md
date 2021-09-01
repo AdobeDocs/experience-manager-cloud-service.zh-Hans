@@ -2,15 +2,15 @@
 title: AEM Sites作为Cloud Service的无头开发
 description: 了解AEM作为Cloud Service强大的无头功能（如内容模型、内容片段和GraphQL API）如何协同工作，从而让您能够集中管理您的体验并跨渠道提供它们。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 2%
+source-wordcount: '515'
+ht-degree: 1%
 
 ---
 
 
-# AEM Sites as aCloud Service的无头开发{#headless-development}
+# AEM Sites作为Cloud Service的无头开发 {#headless-development}
 
 了解AEM作为Cloud Service强大的无头功能（如内容模型、内容片段和GraphQL API）如何协同工作，从而让您能够集中管理您的体验并跨渠道提供它们。
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ![AEM实施模型](assets/aem-implementation-models.png)
 
-## 比较Headful和Headless {#headful-headless}
+## 比较头部和无头部 {#headful-headless}
 
 本文档重点介绍AEM的完整无头实施模型。 但是，在AEM中，“头部”与“无头”不必是二进制选择。 无标题功能可用于管理和将内容交付到各种端点，同时还允许内容作者编辑单页应用程序。 全部在AEM中。
 
@@ -47,12 +47,12 @@ AEM as a Cloud Service通过提供三项功能强大的服务，为无头实施�
    * AEM Assets REST API支持内容片段CRUD操作。
    * 通过[内容片段核心组件的JSON导出，也可以直接交付内容。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## 使用AEM Headless {#first-steps}的首要步骤
+## 使用AEM Headless实现首要步骤 {#first-steps}
 
 您可以使用许多资源来开始使用AEM无头功能。 这些功能适用于不同的用例，但都可以充分概述AEM的无头功能。
 
 | 资源 | 描述 | 类型 | 受众 | 是。 时间 |
 |---|---|---|---|---|
-| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 要全面了解从无头理论到使用您的第一个无头项目的AEM无头功能，请从此处开始。 | 指南 | 开发人员 | 1小时 |
-| [Headless快速入门指南](/help/implementing/developing/headless/getting-started/introduction.md) | 有关AEM主要无头功能的简短摘要，请参阅此快速入门概述。 | 快速入门 | 开发人员、管理员 | 20分钟 |
-| [AEM Headless动手操作入门教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | 如果您喜欢实用方法，本教程将直接深入探讨如何创建一个简单的无头项目。 | 教程 | 开发人员 | 2小时 |
+| [无头开发人员历程](/help/journey-headless/developer/overview.md) | **对于不熟悉AEM和** 头戴式分析的用户，请从此处全面介绍AEM及其无头功能，从无头理论到使用您的第一个无头项目。 | 指南 | 开发人员&#x200B;**对AEM和headless不熟悉** | 1小时 |
+| [Headless快速入门指南](/help/implementing/developing/headless/getting-started/introduction.md) | **对于需要** 简要概要了解AEM主要无头功能的经验丰富的AEM用户，请查看此快速入门概述。 | 快速入门 | 具有AEM体验&#x200B;**的开发人员、管理员** | 20分钟 |
+| [AEM Headless动手操作入门教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **如果您偏爱实际操作方法并熟悉AEM**，本教程将直接深入探讨如何创建一个简单的无头项目。 | 教程 | 开发人员 | 2小时 |

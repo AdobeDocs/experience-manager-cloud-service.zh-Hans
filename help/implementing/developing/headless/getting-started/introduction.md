@@ -1,23 +1,29 @@
 ---
 title: Headless快速入门指南
 description: 通过此快速入门指南，了解AEM作为Cloud Service强大无头功能（如内容模型、内容片段和GraphQL API）的要点。
-source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
+exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
 
-
 # Headless快速入门指南 {#introduction}
 
-无头入门指南为使用AEM作为Cloud Service创建、管理和提供体验的简单路径，分五步完成。 每个指南都基于前一个指南，因此建议按顺序彻底探索这些指南。
+无头入门指南为使用AEM作为Cloud Service创建、管理和提供体验的简单途径，只需五个步骤，即可为已经熟悉AEM和无头技术的用户提供。 每个指南都基于前一个指南，因此建议按顺序彻底探索这些指南。
 
 1. [创建配置](create-configuration.md)
 1. [创建内容片段模型](create-content-model.md)
 1. [创建资产文件夹](create-assets-folder.md)
 1. [创建内容片段](create-content-fragment.md)
 1. [访问和传送内容片段](create-api-request.md)
+
+>[!TIP]
+>
+>本入门指南假定您了解AEM和无外设技术。
+>
+>如果您是初次使用AEM或无头，请参阅我们的[无头文档历程](/help/journey-headless/home.md)，以了解无头和AEM如何支持的端到端简介。
 
 ## 受众 {#audience}
 

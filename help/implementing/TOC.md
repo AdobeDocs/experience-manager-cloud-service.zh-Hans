@@ -1,14 +1,14 @@
 ---
-sub-product: 实施 AEM as a Cloud Service
+sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: 实施 AEM as a Cloud Service
 breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 36%
+source-wordcount: '1033'
+ht-degree: 35%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 36%
    + [AEM 项目存储库结构包](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service 开发准则](developing/introduction/development-guidelines.md)
-   + [记录](developing/introduction/logging.md)
+   + [日志记录](developing/introduction/logging.md)
    + [配置和配置浏览器](developing/introduction/configurations.md)
    + [AEM技术基础](/help/implementing/developing/introduction/aem-technologies.md)
    + [API参考资料](/help/implementing/developing/reference-materials.md)
@@ -144,7 +144,7 @@ ht-degree: 36%
       + [AEM节点类型](/help/implementing/developing/introduction/node-types.md)
    + 无外设体验管理 {#headless}
       + [无头和AEM](developing/headless/introduction.md)
-      + [无头开发人员历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [无头文档历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
       + 入门指南{#getting-started}
          + [简介](developing/headless/getting-started/introduction.md)
          + [创建配置](developing/headless/getting-started/create-configuration.md)
@@ -190,7 +190,7 @@ ht-degree: 36%
       + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch集成](developing/hybrid/launch-integration.md)
       + [SPA参考文档](developing/hybrid/reference-materials.md)
-+ Developer Tools {#developer-tools}
++ 开发人员工具 {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [内容包Maven插件](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo 工具](/help/implementing/developing/tools/repo-tool.md)

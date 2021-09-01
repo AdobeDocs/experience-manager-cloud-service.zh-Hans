@@ -1,10 +1,10 @@
 ---
 title: AEM无头翻译历程
 description: 从此处开始，使用AEM功能强大的翻译工具引导您翻译无头内容。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 1%
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
 
-如果您想了解Adobe如何建议如何使用AEM解决无头业务案例，可从AEM无头历程开始。
+如果您想了解Adobe如何建议如何使用AEM解决无头业务案例，请从[AEM无头历程](/help/journey-headless/home.md)开始。
 
 ## 受众 {#audience}
 
