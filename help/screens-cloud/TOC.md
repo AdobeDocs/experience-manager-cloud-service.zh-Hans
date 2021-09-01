@@ -3,9 +3,9 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as aCloud Service
 breadcrumb-title: AEM Screens as aCloud Service
 user-guide-description: 了解AEM Screens作为Cloud Service。
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: 83b90b7aa51911d6aa5a76cfff7b7bca78903fe8
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '176'
 ht-degree: 2%
 
 ---
@@ -41,3 +41,4 @@ ht-degree: 2%
    + [将播放器分配给显示屏](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
 + 使用代码产品功能{#core-product-features}
    + [视频的缩略图支持](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
++ [Screens作为Cloud Service常见问题解答](/help/screens-cloud/screens-cloud-faqs.md)
