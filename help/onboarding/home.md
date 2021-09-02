@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e5d5e838a027af983db51a3292962200faaf3cfa
+source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '934'
 ht-degree: 19%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 19%
 
 1. 系统管理员可以为开发目的[授予用户对AEM实例](/help/onboarding/what-is-required/accessing-aem-instance.md)的访问权限。
 
-**[获取您的Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
+**获取您的Adobe ID**
 
 您需要Adobe ID和系统管理员的帮助，才能将用户添加到Cloud Manager中以分配到他们的角色。
 
