@@ -2,10 +2,10 @@
 title: 了解什么是Cloud Manager
 description: 请阅读本页面，了解Cloud Manager、Cloud Manager程序和环境。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
+source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 0%
+source-wordcount: '756'
+ht-degree: 1%
 
 ---
 
@@ -29,6 +29,16 @@ Cloud Manager是AEM作为Cloud Service的基本组件，是您团队的单个入
    >请将此页面加入书签以供将来参考，并帮助您直接导航到Cloud Manager的登陆页面。
 
 1. 从Cloud Manager的&#x200B;**程序和产品**&#x200B;页面中选择程序，以启动&#x200B;**概述**&#x200B;页面。
+
+此外，您还可以从Adobe Experience Cloud主页导航到Cloud Manager的“程序和产品”页面。 应遵循以下步骤：
+
+1. 直接导航到[Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)，然后使用Adobe ID登录。
+
+1. 选择&#x200B;**Experience Manager**。
+
+1. 从Cloud Manager卡片中单击&#x200B;**Launch**。 成功登录到Cloud Manager后，即可使用用户界面(UI)。
+
+成功登录后，系统会将您定向到Cloud Manager的登陆页面。
 
 ## Cloud Manager程序 {#cloud-manager-programs}
 
