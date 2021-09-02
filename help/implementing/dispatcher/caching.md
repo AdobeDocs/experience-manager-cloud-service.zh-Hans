@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1531'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 缓存 {#caching}
 
-### HTML/文本{#html-text}
+### HTML/文本 {#html-text}
 
 * 默认情况下，会根据apache层发出的`cache-control`标头，由浏览器缓存五分钟。 CDN还尊重此价值。
 * 可通过在`global.vars`中定义`DISABLE_DEFAULT_CACHING`变量来禁用默认的HTML/文本缓存设置：
@@ -40,10 +40,12 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
    ```
 
-   在设置全局缓存控制标头或与宽正则表达式匹配的标头时，请务必谨慎，以便这些标头不会应用于您可能打算保留为私有的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 根据上述说明，如果AEM as a Dispatcher文档中所述，当它检测到已将其应用于它检测到的Dispatcher不可执行的内容时，它将删除缓存标头。 为了强制AEM始终应用缓存，您可以按如下方式添加“always”选项：
+   在设置全局缓存控制标头或与宽正则表达式匹配的标头时，请务必谨慎，以便这些标头不会应用于您可能打算保留为私有的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 根据上述说明，如果AEM as a Dispatcher文档中所述，当它检测到已将其应用于它检测到的Dispatcher不可执行的内容时，它将删除缓存标头。 为了强制AEM始终应用缓存标头，可以添加&#x200B;**always**&#x200B;选项，如下所示：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
+        Header unset Cache-Control
+        Header unset Expires
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -56,18 +58,20 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 要阻止缓存特定内容，请将Cache-Control标头设置为&#x200B;*private*。 例如，以下内容会阻止缓存名为&#x200B;**myfolder**&#x200B;目录下的html内容：
+* 要阻止缓存特定内容，请将Cache-Control标头设置为&#x200B;*private*。 例如，以下内容会阻止缓存名为&#x200B;**secure**&#x200B;目录下的html内容：
 
    ```
-      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
-      Header set Cache-Control “private”
+      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+      Header unset Cache-Control
+      Header unset Expires
+      Header always set Cache-Control “private”
      </LocationMatch>
    ```
 
    >[!NOTE]
    >其他方法(包括[dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
 
-### 客户端库(js，css){#client-side-libraries}
+### 客户端库(js，css) {#client-side-libraries}
 
 * 通过使用AEM客户端库框架，可以生成JavaScript和CSS代码，以便浏览器可以无限期地缓存它，因为任何更改都将显示为具有唯一路径的新文件。  换句话说，将根据需要生成引用客户端库的HTML，以便客户在发布新内容时能够体验到新内容。 对于不遵循“不可变”值的旧版浏览器，缓存控制将设置为“不可变”或30天。
 * 有关更多详细信息，请参阅[客户端库和版本一致性](#content-consistency)部分。
@@ -98,7 +102,7 @@ Define DISABLE_DEFAULT_CACHING
    >[!NOTE]
    >其他方法(包括[dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
 
-### 节点存储{#other-content}中的其他内容文件类型
+### 节点存储中的其他内容文件类型 {#other-content}
 
 * 无默认缓存
 * 默认值不能使用用于html/文本文件类型的`EXPIRATION_TIME`变量进行设置
@@ -108,13 +112,13 @@ Define DISABLE_DEFAULT_CACHING
 
 通常，不必使调度程序缓存失效。 相反，在重新发布内容时，您应该依赖调度程序刷新其缓存，并依赖CDN遵守缓存过期标头。
 
-### 激活/停用期间Dispatcher缓存失效{#cache-activation-deactivation}
+### 在激活/停用期间使调度程序缓存失效 {#cache-activation-deactivation}
 
 与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面。
 
 当发布实例收到作者提供的页面或资产的新版本时，它会使用刷新代理使其调度程序上的相应路径失效。 更新的路径会从调度程序缓存及其父缓存中删除，最高级别为（您可以使用[statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)配置此路径）。
 
-### 显式调度程序缓存失效{#explicit-invalidation}
+### 显式调度程序缓存失效 {#explicit-invalidation}
 
 通常，不需要手动使调度程序中的内容失效，但如果需要，可以执行此操作，如下所述。
 
@@ -134,7 +138,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Adobe管理的CDN遵循TTL，因此无需刷新。 如果怀疑存在问题，请[联系可根据需要刷新Adobe管理的CDN缓存的客户支持](https://helpx.adobe.com/support.ec.html)支持人员。
 
-## 客户端库和版本一致性{#content-consistency}
+## 客户端库和版本一致性 {#content-consistency}
 
 页面由HTML、Javascript、CSS和图像组成。 我们鼓励客户利用[客户端库(clientlibs)框架](/help/implementing/developing/introduction/clientlibs.md)将Javascript和CSS资源导入HTML页面，同时考虑JS库之间的依赖关系。
 
@@ -144,7 +148,7 @@ clientlibs框架提供了自动版本管理，这意味着开发人员可以在�
 
 其机制是序列化哈希，将附加到客户端库链接中，以确保浏览器有一个唯一的版本化URL来缓存CSS/JS。 仅当客户端库的内容发生更改时，才会更新序列化的哈希。 这意味着，即使在新部署中，如果发生不相关的更新（即对客户端库的基础css/js没有更改），则引用将保持不变，从而确保减少对浏览器缓存的中断。
 
-### 启用客户端库的长缓存版本 — AEM as a Cloud ServiceSDK快速启动{#enabling-longcache}
+### 启用客户端库的长缓存版本 — AEM as a Long Cache SDK快速启动 {#enabling-longcache}
 
 HTML页面中包含的默认clientlib如下例所示：
 
