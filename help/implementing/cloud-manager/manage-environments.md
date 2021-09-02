@@ -2,9 +2,9 @@
 title: 管理环境 — Cloud Service
 description: 管理环境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
+source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1608'
 ht-degree: 3%
 
 ---
@@ -145,8 +145,6 @@ ht-degree: 3%
 ## 管理访问权限 {#managing-access}
 
 从&#x200B;**Environments**&#x200B;卡的下拉菜单中选择&#x200B;**Manage Access**。 您可以直接导航到创作实例并管理环境的访问权限。
-
-请参阅[管理对创作实例的访问](/help/onboarding/what-is-required/accessing-aem-instance.md)以了解更多信息。
 
 ![](assets/environ-access.png)
 
