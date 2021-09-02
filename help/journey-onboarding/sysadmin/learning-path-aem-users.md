@@ -3,10 +3,10 @@ title: AEM用户的学习路径
 description: 如果您是AEM用户，请阅读本页以了解获取访问权限后的后续步骤
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+source-git-commit: 12ca20c750d7332ebfaf62c781cbe5ec386c2d64
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
@@ -36,18 +36,12 @@ ht-degree: 2%
 
 请按照以下步骤访问作者：
 
-1. 直接导航到[Adobe Experience Cloud](https://experience.adobe.com)，然后使用Adobe ID登录。
+1. 从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。
 
-1. 在Adobe Experience Cloud主页中，选择&#x200B;**Experience Manager**。
+   >[!NOTE]
+   >请将[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)链接加入书签，以供将来参考，并帮助您直接导航到Cloud Manager的登陆页面。
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
-
-1. 这会将您转到AEM主页。 从此处启动&#x200B;**Cloud Manager** 。
-
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
-
-   >[!IMPORTANT]
-   >或者，您也可以从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。 请将此页面加入书签以供将来参考，并帮助您直接导航到Cloud Manager的登陆页面。
+1. 从Cloud Manager的&#x200B;**程序和产品**&#x200B;页面中选择程序，以启动&#x200B;**概述**&#x200B;页面。
 
 1. 在Cloud Manager的&#x200B;**概述**&#x200B;页面中，单击&#x200B;**Environments**&#x200B;卡中的创作链接。
 
