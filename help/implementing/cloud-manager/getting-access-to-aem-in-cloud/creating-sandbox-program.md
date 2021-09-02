@@ -2,9 +2,9 @@
 title: '创建沙盒项目 '
 description: 创建沙盒项目
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 0%
 1. 启动Cloud Manager的登陆页面，然后单击屏幕右上角的&#x200B;**添加项目** 。
 
    ![](assets/first_timelogin1.png)
-
-   >[!NOTE]
-   >要了解如何访问Cloud Manager，请参阅[Cloud Manager登录页面](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以获取更多详细信息。
 
 1. 在创建程序向导中，选择&#x200B;**设置沙盒**。 用户在选择&#x200B;**创建**&#x200B;之前提交程序名称。
 

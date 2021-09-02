@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
+source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 19%
@@ -34,7 +34,7 @@ ht-degree: 19%
 
 1. Adobe将完成贵组织的配置，随后，贵组织的系统管理员将收到一封欢迎电子邮件，允许他们执行[系统管理员任务](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用户、将他们分配到角色，从而授予他们对Cloud Manager的适当访问权限。
 
-1. 系统管理员添加的用户随后将收到一封欢迎电子邮件，这样他们就可以成功地[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)。 用户现在可以从此处使用其Adobe ID登录并使用Cloud Manager开始其历程。
+1. 系统管理员添加的用户反过来将收到一封欢迎电子邮件，从而允许他们成功导航到Cloud Manager。 用户现在可以从此处使用其Adobe ID登录并使用Cloud Manager开始其历程。
 
 1. 系统管理员可以为开发目的[授予用户对AEM实例](/help/onboarding/what-is-required/accessing-aem-instance.md)的访问权限。
 
@@ -54,7 +54,7 @@ ht-degree: 19%
 * 添加用户
 * 将用户分配给Cloud Manager角色和权限
 
-**[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
+* **导航到Cloud Manager**
 
 现在，您已作为用户添加并被分配到Cloud Manager角色，接下来可以访问Cloud Manager以开始使用AEM的Cloud历程。 用户可以执行各种任务，如创建程序、添加环境、访问Git、配置管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代码](/help/implementing/cloud-manager/deploy-code.md)。
 [Cloud Manager是AEM as a Cloud的重要部分。 它允许组织在云中自行管理[!DNL Experience Manager]。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。使用用户界面，您可以配置并启动CI/CD管线。

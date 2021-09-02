@@ -2,9 +2,9 @@
 title: Cloud Manager角色
 description: 本页介绍用户角色和权限。 可查看本页以了解如何添加用户并将其分配给Cloud Manager角色。
 exl-id: d1689134-044a-4d96-97a2-cd09f735a680
-source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '533'
 ht-degree: 6%
 
 ---
@@ -30,9 +30,6 @@ Cloud Manager当前为用户定义了四个角色，这些角色可控制特定�
 ## 查看角色 {#view-roles}
 
 要在Cloud Manager中查看您的角色，请登录到Cloud Manager UI，选择右上角的配置文件图标，然后选择&#x200B;**用户角色**，如下图所示。
-
->[!NOTE]
->请参阅[导航到Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) ，了解有关登录到Cloud Manager的更多信息。
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
