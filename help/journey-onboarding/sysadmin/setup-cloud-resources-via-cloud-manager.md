@@ -1,9 +1,8 @@
 ---
 title: 通过Cloud Manager设置云资源
 description: 请阅读本页内容，了解如何通过Cloud Manager设置云资源
-index: false
 role: Admin, User, Developer
-source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 0%

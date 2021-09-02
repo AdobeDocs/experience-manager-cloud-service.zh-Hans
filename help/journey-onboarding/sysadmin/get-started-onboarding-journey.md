@@ -1,10 +1,9 @@
 ---
 title: 入门流程快速入门
 description: 阅读本页以了解如何开始入门历程
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 533e6cb780f908cfa4a30831bab7b80174872f24
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
