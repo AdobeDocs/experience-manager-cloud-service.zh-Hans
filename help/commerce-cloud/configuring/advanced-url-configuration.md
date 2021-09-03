@@ -1,23 +1,27 @@
 ---
 title: 高级URL配置
 description: 了解如何自定义产品和类别页面的URL。 这允许实施优化搜索引擎的URL并促进发现。
-sub-product: 商务
+sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: 商务集成框架
+feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
+source-git-commit: c956aab4dbbbb7daede3e115616ae923f7a68b90
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 3%
+source-wordcount: '789'
+ht-degree: 7%
 
 ---
 
 # 高级URL配置 {#url}
+
+>[!NOTE]
+>
+> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，需要解决众多 Adobe Experience Manager (AEM) as a Cloud Service 项目中的 SEO 问题。请阅读[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html)以了解更多信息。
 
 [AEM CIF核心组](https://github.com/adobe/aem-core-cif-components) 件提供了高级配置，用于自定义产品和类别页面的URL。许多实施都将自定义这些URL以用于搜索引擎优化(SEO)。  以下视频详细介绍了如何配置`UrlProvider`服务和[Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的功能，以自定义产品和类别页面的URL。
 
