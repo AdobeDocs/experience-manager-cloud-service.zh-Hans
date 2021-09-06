@@ -2,9 +2,10 @@
 title: 使用Dispatcher工具验证和调试
 description: 使用Dispatcher工具验证和调试
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2413'
 ht-degree: 1%
 
 ---
@@ -411,7 +412,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-在本地运行Dispatcher时，日志会直接打印到终端输出。 大多数情况下，您希望这些日志处于DEBUG中，这可以通过在运行Docker时将调试级别作为参数传递来完成。 例如：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`。
+在本地运行Dispatcher时，日志会直接打印到终端输出。 大多数情况下，您希望这些日志处于DEBUG中，这可以通过在运行Docker时将调试级别作为参数传递来完成。 例如：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`。
 
 云环境的日志通过Cloud Manager中提供的日志记录服务公开。
 
@@ -445,7 +446,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 在本地测试配置时，您可以通过将变量`DISP_RUN_MODE`直接传递到`docker_run.sh`脚本来模拟不同的环境类型：
 
 ```
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
+$ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
 未传入DISP_RUN_MODE值时，默认运行模式为“dev”。
