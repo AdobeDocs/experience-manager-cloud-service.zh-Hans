@@ -3,11 +3,10 @@ title: 为仅用于置入的呈现版本生成Adobe InDesign
 description: 使用Experience Manager资产工作流和ImageMagick生成新资产和现有资产的FPO演绎版。
 contentOwner: Vishabh Gupta
 role: Admin
-feature: 演绎版
-exl-id: null
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+feature: Renditions
+source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---

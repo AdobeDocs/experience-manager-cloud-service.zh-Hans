@@ -1,8 +1,7 @@
 ---
 title: Cloud Manager存储库
 description: Cloud Manager存储库
-exl-id: Cloud Manager Repositories
-source-git-commit: 8a53641745ab2e0cfabdf0b6e13b163aaf6a68bd
+source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
