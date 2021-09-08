@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,20 @@ AEM as a Cloud Service2021.8.0中的Cloud Manager的发布日期是2021年8月12
 * 在将摄取到发布实例期间，**停止摄取**&#x200B;按钮处于禁用状态。 此操作不是必需的，因为在发布摄取期间没有执行任何一步恢复步骤。
 
 * 成功提取后，CTT未清除`/tmp`目录。 这有时会导致磁盘空间问题。
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### 发布日期 {#release-date-bpa-latest}
+
+Best Practices Analyzer v2.1.18的发布日期是2021年9月2日。
+
+### 新增功能 {#what-is-new}
+
+* 能够检测并报告节点总数。
+
+* 能够检测并报告节点存储类型和大小。
+
+### 错误修复 {#bug-fixes-bpa}
+
+* BPA错误地检测了Commerce Integration Framework的存在。
 
