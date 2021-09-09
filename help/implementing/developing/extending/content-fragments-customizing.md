@@ -2,7 +2,7 @@
 title: 自定义和扩展内容片段
 description: 内容片段对标准资产进行了扩展。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 1%
@@ -16,10 +16,6 @@ ht-degree: 1%
 * [创建和管理内容片段](/help/assets/content-fragments/content-fragments.md) 和使用 [内容片段进行页面创](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 作，以进一步了解内容片段。
 
 * [管理资](/help/assets/manage-digital-assets.md) 产，以了解有关标准资产的更多信息。
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## 架构 {#architecture}
 
@@ -44,7 +40,7 @@ ht-degree: 1%
    >
    >对现有内容片段模型所做的任何更改都可能影响依赖的片段；这可能会导致这些片段中的孤立属性。
 
-### 站点与资产的集成{#integration-of-sites-with-assets}
+### 将站点与资产集成 {#integration-of-sites-with-assets}
 
 内容片段管理(CFM)是AEM Assets的一部分，其格式为：
 
@@ -56,7 +52,7 @@ ht-degree: 1%
 
 * 在创作页面时，会使用这些量度。
 
-#### 将内容片段映射到资产{#mapping-content-fragments-to-assets}
+#### 将内容片段映射到资产 {#mapping-content-fragments-to-assets}
 
 ![内容片段到资产](assets/content-fragment-to-assets.png)
 
@@ -77,17 +73,17 @@ ht-degree: 1%
 除标题和描述之外，这些标题和描述不被视为传统元数据并存储在 
 `jcr:content`
 
-#### 资产位置{#asset-location}
+#### 资产位置 {#asset-location}
 
 与标准资产一样，内容片段位于以下位置：
 
 `/content/dam`
 
-#### 资产权限{#asset-permissions}
+#### 资产权限 {#asset-permissions}
 
 有关更多详细信息，请参阅[内容片段 — 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md)。
 
-#### 功能集成{#feature-integration}
+#### 功能集成 {#feature-integration}
 
 要与Assets核心集成，请执行以下操作：
 
@@ -97,7 +93,7 @@ ht-degree: 1%
 
 * 已扩展多个资产组件，以满足内容片段的需求。
 
-### 在页面{#using-content-fragments-in-pages}中使用内容片段
+### 在页面中使用内容片段 {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
@@ -129,13 +125,13 @@ ht-degree: 1%
 >
 >这意味着，如果发布页面时尚未发布模型，则会标记该模型，并将模型添加到要随页面一起发布的资源中。
 
-### 与其他框架{#integration-with-other-frameworks}集成
+### 与其他框架集成 {#integration-with-other-frameworks}
 
 内容片段可以与以下内容集成：
 
 * **翻译**
 
-   内容片段与AEM翻译工作流完全集成。 在建筑层面，这意味着：
+   内容片段与[AEM翻译工作流](/help/sites-cloud/administering/translation/overview.md)完全集成。 在建筑层面，这意味着：
 
    * 内容片段的个别翻译实际上是单独的片段；例如：
 
@@ -166,7 +162,7 @@ ht-degree: 1%
 
    * 相应的架构表单与片段编辑器集成。
 
-## 内容片段管理API — 服务器端{#the-content-fragment-management-api-server-side}
+## 内容片段管理API — 服务器端 {#the-content-fragment-management-api-server-side}
 
 您可以使用服务器端API访问您的内容片段；请参阅：
 
@@ -176,7 +172,7 @@ ht-degree: 1%
 >
 >强烈建议使用服务器端API，而不是直接访问内容结构。
 
-### 关键接口{#key-interfaces}
+### 关键界面 {#key-interfaces}
 
 以下三个界面可用作入口点：
 
@@ -236,7 +232,7 @@ ht-degree: 1%
 
 
 
-### 调整 — 使用adaptTo(){#adapting-using-adaptto}
+### 适应 — 使用adaptTo() {#adapting-using-adaptto}
 
 可以修改以下内容：
 
@@ -268,7 +264,7 @@ ht-degree: 1%
 
    * 使用`ContentElement.removeVariation()`通过元素删除现有变量将不会更新分配给该变量的全局数据结构。 要确保这些数据结构保持同步，请改用`ContentFragment.removeVariation()`，这会全局删除变量。
 
-## 内容片段管理API — 客户端{#the-content-fragment-management-api-client-side}
+## 内容片段管理API — 客户端 {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -282,7 +278,7 @@ ht-degree: 1%
 
    内容片段管理的`filter.xml`已进行配置，以便它不会与资产核心内容包重叠。
 
-## 编辑会话{#edit-sessions}
+## 编辑会话 {#edit-sessions}
 
 >[!CAUTION]
 >
@@ -299,7 +295,7 @@ ht-degree: 1%
 
 ## 示例 {#examples}
 
-### 示例：访问现有内容片段{#example-accessing-an-existing-content-fragment}
+### 示例：访问现有内容片段 {#example-accessing-an-existing-content-fragment}
 
 要实现此目的，您可以调整表示API的资源以：
 
@@ -317,7 +313,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### 示例：创建新内容片段{#example-creating-a-new-content-fragment}
+### 示例：创建新内容片段 {#example-creating-a-new-content-fragment}
 
 要以编程方式创建新内容片段，您需要使用
 `FragmentTemplate`根据模型资源进行调整。
@@ -330,7 +326,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### 示例：指定自动保存间隔{#example-specifying-the-auto-save-interval}
+### 示例：指定自动保存间隔 {#example-specifying-the-auto-save-interval}
 
 [自动保存间隔](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions)（以秒为单位）可以使用配置管理器(ConfMgr)定义：
 

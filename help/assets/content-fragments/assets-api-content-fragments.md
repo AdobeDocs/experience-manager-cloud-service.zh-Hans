@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Assets HTTP API中的Cloud Service内容片段支持
 description: 了解资产HTTP API中对内容片段的支持，HTTP API是AEM的一项重要无头交付功能。
-feature: 内容片段，资产HTTP API
+feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,13 @@ ht-degree: 2%
 >* 包括对内容片段的支持
 
 >
->
-资产HTTP API的当前实施基于[REST](https://en.wikipedia.org/wiki/Representational_state_transfer)架构样式。
+>资产HTTP API的当前实施基于[REST](https://en.wikipedia.org/wiki/Representational_state_transfer)架构样式。
 
 [Assets REST API](/help/assets/mac-api-assets.md)允许开发人员将Adobe Experience Manager作为Cloud Service，通过CRUD操作（创建、读取、更新、删除），直接通过HTTP API访问内容(存储在AEM中)。
 
 API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为无头CMS（内容管理系统）的Cloud Service进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
 
-例如，单页应用程序(SPA)（基于框架或自定义）需要通过HTTP API提供的内容，通常采用JSON格式。
+例如，[单页应用程序(SPA)](/help/implementing/developing/hybrid/introduction.md)（基于框架或自定义）需要通过HTTP API提供的内容，通常采用JSON格式。
 
 虽然[AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)提供了一个非常全面、灵活且可自定义的API，该API可为此目的提供所需的读取操作，并且其JSON输出可以自定义，但它们确实需要AEM WCM（Web内容管理）的专门技术来实施，因为它们必须在基于专用AEM模板的页面中托管。 并非每个SPA开发组织都能直接获取此类知识。
 
@@ -86,13 +85,13 @@ HTTP方法确定要执行的操作：
 
 支持的请求的确切格式在[API引用](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)文档中定义。
 
-### 事务性行为{#transactional-behavior}
+### 事务性行为 {#transactional-behavior}
 
 所有请求都是原子的。
 
 这意味着后续(`write`)请求不能合并到作为单个实体可能成功或失败的单个事务中。
 
-### AEM(Assets)REST API与AEM组件{#aem-assets-rest-api-versus-aem-components}
+### AEM(Assets)REST API与AEM组件 {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
@@ -153,10 +152,9 @@ HTTP方法确定要执行的操作：
 >
 
 
-
 在具有特定身份验证要求的环境中，建议使用OAuth。
 
-## 可用功能{#available-features}
+## 可用功能 {#available-features}
 
 内容片段是一种特定类型的资产，请参阅[使用内容片段](/help/assets/content-fragments/content-fragments.md)。
 
@@ -178,7 +176,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 >
 >分页通常应用于容器实体（即具有演绎版的文件夹或资产），因为它与所请求实体的子实体相关。
 
-#### 示例：分页{#example-paging}
+#### 示例：分页 {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -196,7 +194,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 ...
 ```
 
-## 实体类型{#entity-types}
+## 实体类型 {#entity-types}
 
 ### 文件夹 {#folders}
 
@@ -231,7 +229,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 
 * 也被视为原子，即元素和变量作为片段属性的一部分公开，而作为链接或子实体公开。 这允许有效访问片段的有效负载。
 
-#### 内容模型和内容片段{#content-models-and-content-fragments}
+#### 内容模型和内容片段 {#content-models-and-content-fragments}
 
 当前，定义内容片段结构的模型不会通过HTTP API公开。 因此，*使用者*&#x200B;需要了解片段的模型（至少是一个最小值） — 尽管大多数信息都可以从负载中推断出来；数据类型等。 是定义的一部分。
 
@@ -260,7 +258,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 >
 >有关更多详细信息，请参阅[API引用](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
-### 读取/投放{#read-delivery}
+### 读取/投放 {#read-delivery}
 
 用法包括：
 
@@ -309,7 +307,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 * **将忽略引用**。当前，没有检查是否引用了现有内容片段。 因此，例如，删除内容片段可能会导致页面上出现包含对已删除内容片段的引用的问题。
 * **JSON数据** 类型JSON数据类型的REST API输出当前 *基于字* 符串 *的输出*。
 
-## 状态代码和错误消息{#status-codes-and-error-messages}
+## 状态代码和错误消息 {#status-codes-and-error-messages}
 
 在相关情况下，可以看到以下状态代码：
 
@@ -372,7 +370,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
    }
    ```
 
-## API引用{#api-reference}
+## API参考 {#api-reference}
 
 有关详细的API参考，请参阅此处：
 

@@ -2,7 +2,7 @@
 title: 在Adobe Experience Manager中使用Sling资源合并器作为Cloud Service
 description: Sling资源合并器提供访问和合并资源的服务
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 2%
@@ -25,13 +25,11 @@ Sling资源合并器提供访问和合并资源的服务。 它为以下两者�
 
 * 如有必要，在自定义中定义[属性](#properties) ，以指示如何使用合并自原始内容的内容。
 
-<!-- Still links to reference material in 6.5 -->
-
 >[!CAUTION]
 >
 >Sling资源合并器及相关方法只能用于触屏优化UI(这是AEM作为Cloud Service唯一可用的UI)。
 
-### AEM的目标{#goals-for-aem}
+### AEM目标 {#goals-for-aem}
 
 在AEM中使用Sling资源合并器的目标是：
 
@@ -47,12 +45,11 @@ Sling资源合并器提供访问和合并资源的服务。 它为以下两者�
 >这是因为每当对实例应用升级时，都可能会覆盖`/libs`的内容。
 >
 >* 叠加图取决于[搜索路径](/help/implementing/developing/introduction/overlays.md#search-paths)。
-   >
-   >
-* 覆盖不取决于搜索路径，它们使用属性`sling:resourceSuperType`建立连接。
 >
+>* 覆盖不取决于搜索路径，它们使用属性`sling:resourceSuperType`建立连接。
+
 >
-但是，覆盖通常在`/apps`下定义，因为AEM作为Cloud Service的最佳实践是在`/apps`下定义自定义项；这是因为您不能更改`/libs`下的任何内容。
+>但是，覆盖通常在`/apps`下定义，因为AEM作为Cloud Service的最佳实践是在`/apps`下定义自定义项；这是因为您不能更改`/libs`下的任何内容。
 
 ### 属性 {#properties}
 
@@ -80,7 +77,7 @@ Sling资源合并器提供访问和合并资源的服务。 它为以下两者�
 
 这些属性会影响叠加/覆盖（通常在`/apps`中）使用相应/原始资源/属性（来自`/libs`）的方式。
 
-### 创建结构{#creating-the-structure}
+### 创建结构 {#creating-the-structure}
 
 要创建叠加或覆盖，您需要在目标（通常为`/apps`）下重新创建具有等效结构的原始节点。 例如：
 
@@ -123,7 +120,7 @@ Sling资源合并器提供访问和合并资源的服务。 它为以下两者�
 >
 >使用Sling资源合并器（即，处理标准触屏UI时）时，不建议从`/libs`复制整个结构，因为这会导致在`/apps`中保留的信息过多。 这可能会在系统以任何方式升级时导致问题。
 
-### 用例{#use-cases}
+### 用例 {#use-cases}
 
 这些功能与标准功能结合使用，使您能够：
 
@@ -216,7 +213,7 @@ Sling资源合并器提供访问和合并资源的服务。 它为以下两者�
          * 类型: `String`
          * 选定: `<before-SiblingName>`
 
-### 从代码{#invoking-the-sling-resource-merger-from-your-code}中调用Sling资源合并器
+### 从代码中调用Sling资源合并器 {#invoking-the-sling-resource-merger-from-your-code}
 
 Sling资源合并器包括两个自定义资源提供程序 — 一个用于叠加，另一个用于覆盖。 可以使用装载点在代码中调用以下每个值：
 
@@ -244,17 +241,3 @@ Sling资源合并器包括两个自定义资源提供程序 — 一个用于叠�
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->
