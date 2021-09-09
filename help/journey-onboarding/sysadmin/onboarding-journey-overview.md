@@ -3,24 +3,15 @@ title: 入门历程
 description: 阅读本页以了解如何开始入门历程
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 2%
 
 ---
 
 # 入门历程 {#onboarding-jourrney}
-
-## 入门体验 {#audience}
-
-载入是指指定的[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源和根据用户的工作职责将用户分配给相应的角色，随后每个成员都能够登录并访问其AEM作为Cloud Service资源。
-
-载入历程如下图所示，以下各节详细介绍了历程的每个步骤。
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-此历程专为系统管理员角色设计，用于列出要求、步骤和方法。 历程定义了其他角色，系统管理员必须与这些角色进行交互才能使项目取得成功，但历程的视点是管理员。
 
 ## 探索入门历程 {#exploring-onboarding-journey}
 

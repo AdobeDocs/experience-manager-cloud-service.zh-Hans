@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '556'
 ht-degree: 26%
 
 ---
@@ -18,24 +18,17 @@ ht-degree: 26%
 
 恭喜您开始使用AEM as aCloud Service! 无论您是要部署新应用程序还是迁移现有应用程序，本指南都将作为您的起点，确保您的应用程序已得到优化并可在Cloud Service中取得成功。
 
-本指南将帮助您和您的团队快速开始使用Cloud Manager。 您需要您的Adobe ID和系统管理员的帮助，才能将用户添加到Cloud Manager中，以获取其分配的角色(在Admin Console中称为产品配置文件)和相关权限。 介绍了系统管理员如何通过Admin Console执行此操作的说明。 详细列出了Admin Console中称为“产品配置文件”的Cloud Manager角色及其关联的权限，以便您确定组织中不同用户可能需要哪些角色。
+## 入门体验 {#audience}
 
-下图说明了您的入门历程（从系统管理员收到的欢迎电子邮件开始），并最终以用户访问Cloud Manager for AEM as aCloud Service为高潮。
+载入是指指定的[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源和根据用户的工作职责将用户分配给相应的角色，随后每个成员都能够登录并访问其AEM作为Cloud Service资源。
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+载入历程如下图所示，以下各节详细介绍了历程的每个步骤。
 
-请参阅[载入历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)以开始使用载入体验。
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->在您深入研究入门历程之前，建议先查看涵盖以下主题的学习入门概念部分：
->* [系统管理员](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [AdobeIdentity Management系统](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Cloud Manager 简介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM as a Team和Cloud Service配置文件](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Adobe支持](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+此历程专为系统管理员角色设计，用于列出要求、步骤和方法。 历程定义了其他角色，系统管理员必须与这些角色进行交互才能使项目取得成功，但历程的视点是管理员。
 
+请参阅[载入历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en)以开始使用载入体验。
 
 ## [!DNL Experience Manager as a Cloud Service] 指南 {#aem-guides}
 
