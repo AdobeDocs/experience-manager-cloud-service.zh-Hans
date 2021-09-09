@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说�
 description: ' [!DNL Adobe Experience Manager] 作为Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1630'
+ht-degree: 2%
 
 ---
 
@@ -131,6 +131,8 @@ AEM as a Cloud Manager 2021.9.0Cloud Service中Cloud Manager的发布日期是20
 
 ### 新增功能 {#what-is-new-cm-sept}
 
+* Cloud Manager使用的AEM项目原型版本已更新至版本30。
+
 * Cloud Manager登录页面上的项目卡以及关联的体验已刷新。
 
 * 代码质量步骤日志现在包含有关OakPal扫描过程的详细日志记录信息。
@@ -139,7 +141,6 @@ AEM as a Cloud Manager 2021.9.0Cloud Service中Cloud Manager的发布日期是20
 
 * 现在，直接单击项目卡片将导航到Cloud Manager概述页面。
 
-* Cloud Manager使用的AEM项目原型版本已更新至版本30。
 
 ### 错误修复 {#bug-fixes-sept}
 
