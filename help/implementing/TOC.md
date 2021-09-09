@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 35%
+source-wordcount: '1036'
+ht-degree: 36%
 
 ---
 
@@ -18,8 +18,9 @@ ht-degree: 35%
 + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
 + 使用 Cloud Manager {#using-cloud-manager}
    + Cloud Manager {#release-notes-cloud-manager}发行说明
-      + [最新发行说明（2021.8.0 版）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新发行说明（2021.9.0 版）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021年{#2021}
+         + [2021.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [2021.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [2021.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [2021.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)

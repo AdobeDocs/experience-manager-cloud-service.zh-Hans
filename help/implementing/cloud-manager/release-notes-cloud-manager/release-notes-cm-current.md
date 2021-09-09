@@ -1,52 +1,42 @@
 ---
-title: AEM as a Cloud Manager版本2021.8.0的发行说明
-description: AEM as a Cloud Manager版本2021.8.0的发行说明
-feature: 版本信息
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
+title: AEM as a Cloud Manager版本2021.9.0的发行说明
+description: AEM as a Cloud Manager版本2021.9.0的发行说明
+feature: Release Information
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 4%
+source-wordcount: '239'
+ht-degree: 5%
 
 ---
 
-# Adobe Experience Manager as a Cloud 2021.8.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud 2021.9.0版中的Cloud Manager发行说明 {#release-notes}
 
-本页面概述了AEM as a Cloud 2021.8.0中的Cloud Manager发行说明。
+本页面概述了AEM as a Cloud 2021.9.0中的Cloud Manager发行说明。
 
 >[!NOTE]
 >要查看Adobe Experience Manager as a Cloud Service的最新发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service2021.8.0中的Cloud Manager的发布日期是2021年8月12日。
-下一版本计划于2021年9月9日发布。
+AEM as a Cloud Manager 2021.9.0Cloud Service中Cloud Manager的发布日期是2021年9月9日。
+下一版本计划于2021年10月7日发布。
 
 ### 新增功能 {#what-is-new}
 
-* Cloud Service客户现在可以在Cloud Manager中查看服务级别协议(SLA)报表。 这将在今后几个月逐步提供。
-请参阅[SLA报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)以了解更多信息。
+* Cloud Manager登录页面上的项目卡以及关联的体验已刷新。
 
-* IndexType和`IndexDamAssetLucene`质量规则的类型和严重性已更改。 这两个错误现在都是阻止程序&#x200B;*serverity*&#x200B;的错误。
+* 代码质量步骤日志现在包含有关OakPal扫描过程的详细日志记录信息。
 
-* 新的Oak索引质量规则已引入，以涵盖异步和tika配置。
+* 现在，“活动”页面菜单选项中将包含一个用于&#x200B;**下载日志**&#x200B;的选项，以执行已完成的代码生成器。 选择此选项将下载生成步骤的日志。
 
-* 将每个程序的最大SSL证书数增加到50个。
+* 现在，直接单击项目卡片将导航到Cloud Manager概述页面。
 
-* 允许用户通过Cloud Manager UI创建和管理多个存储库的自助服务功能。
-
-* SonarQube不必要地读取Git历史数据。 在大型代码库中，这可能会导致不必要的内部版本性能损失。
-
-* 现在有一个API可用于使每个管道的Maven依赖关系缓存失效。
-
-* Cloud Manager使用的AEM项目原型版本已更新至版本29。
+* Cloud Manager使用的AEM项目原型版本已更新至版本30。
 
 ### 错误修复 {#bug-fixes}
 
-* 当最新版本小于当前版本时，不应显示“更新可用”状态。
+* 现在，当用户尝试在程序中添加新的IP允许列表(该程序已达到允许的最大可配置IP允许列表数)时，将看到一条更易理解的消息。
 
-* 对于名称很长的新组织，初始载入失败。
-
-* 有时，当管道因某些原因触发两次时，会导致其中一次执行失败，并出现&#x200B;*无法更新管道执行状态*&#x200B;错误。
+* 从“存储库”屏幕中选择“复制URL”菜单选项时，复制了错误的URL。
 
 
