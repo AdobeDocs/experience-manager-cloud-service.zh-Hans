@@ -2,9 +2,9 @@
 title: '创建生产程序 '
 description: 创建生产程序
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ ht-degree: 0%
 
    ![](assets/setup-prod-commerce.png)
 
-1. 在登陆页面上看到项目卡后，将鼠标悬停在其上方以选择Cloud Manager图标，以导航到Cloud Manager **Overview**&#x200B;页面。
+1. 在登陆页面上看到项目卡后，请选择&#x200B;**...** ，查看可供您使用的菜单选项。 选择&#x200B;**Cloud Manager**（如下图所示），以导航到Cloud Manager的&#x200B;**概述**&#x200B;页面。
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. 主行动动员卡将指导用户创建环境、创建非生产管道，最后是生产管道。
    ![](assets/set-up-prod5.png)
