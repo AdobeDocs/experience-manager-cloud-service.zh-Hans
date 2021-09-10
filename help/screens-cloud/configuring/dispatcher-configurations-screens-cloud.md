@@ -1,19 +1,19 @@
 ---
 title: Screens中的调度程序配置作为Cloud Service
 description: 本页介绍Screens中的调度程序配置作为Cloud Service。
-source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
+source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
 
-# Screens中的调度程序配置作为Cloud Service{#dispatcher-configurations-screens-cloud}
+# Screens中的调度程序配置作为Cloud Service {#dispatcher-configurations-screens-cloud}
 
 本节将介绍Screens的调度程序配置作为Cloud Service。
 
-## Screens作为Cloud Service部署的调度程序配置 {#deployment}
+## 在Dispatcher for Screens中添加过滤器和缓存规则作为Cloud Service部署 {#deployment}
 
 在Screens中，为发布实例允许以下过滤器和缓存规则作为Cloud Service。
 
