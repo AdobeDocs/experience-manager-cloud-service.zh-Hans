@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Manager中的实施阶段
 description: 本页概述Cloud Acceleration Manager中的实施阶段。
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
-
 
 # Cloud Acceleration Manager中的实施阶段 {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ ht-degree: 2%
    * Dispatcher
    * 测试
 
-   **概述**&#x200B;选项卡显示代码重构活动的列表。
+>[!NOTE]
+>请查看这些选项卡中的内容，以了解最佳实践分析器未涵盖的其他一些区域。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+**Dispatcher**&#x200B;选项卡提供了有关如何将AEM构建为Apache和DispatcherCloud Service配置的信息，以及如何在部署到云环境之前在本地验证和运行该配置。 此外，还介绍了如何在云环境中进行调试。
 
-   **Dispatcher**&#x200B;选项卡提供了有关如何将AEM构建为Apache和DispatcherCloud Service配置的信息，以及如何在部署到云环境之前在本地验证和运行该配置。 此外，还介绍了如何在云环境中进行调试。
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+**Testing**&#x200B;选项卡提供了有关功能、体验审核和UI测试的信息。
 
-   **Testing**&#x200B;选项卡提供了有关功能、体验审核和UI测试的信息。
-
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >此外，请查看页面选项卡中的内容，以了解最佳实践分析器未涵盖的其他一些区域。
+![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## 将AEM用作Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
