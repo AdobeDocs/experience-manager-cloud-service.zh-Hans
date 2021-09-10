@@ -2,7 +2,7 @@
 title: 简介 — Cloud Manager中的IP允许列表
 description: 简介 — Cloud Manager中的IP允许列表
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 3f282169b9ac2e2cf3e58277fd0c32cd97003de2
+source-git-commit: e20328721ba2583ed32580e47c806460ace4815c
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 AEM as a cloud service对internet开放，安全性通过用户身份验证和授权来处理。 IP允许列表是Cloud Manager中的一项功能，用于限制和控制仅对受信任用户的访问。 此功能允许具有权限的用户创建受信任IP地址的允许列表，其站点用户可以从中访问其AEM域。
 
 >[!NOTE]
->您的程序中最多可以添加10个IP允许列表，并且每个IP允许列表中最多可以添加50个IP/CIDR地址。
+>您的程序中最多可以添加50个IP允许列表，并且每个IP允许列表中最多可以添加50个IP/CIDR地址。
 
 IP允许列表可添加一次，并作为单位或实体多次应用/取消应用到环境中的创作和/或发布者服务。
 
