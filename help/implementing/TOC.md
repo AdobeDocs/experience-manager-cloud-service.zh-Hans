@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1036'
+ht-degree: 36%
 
 ---
 
@@ -56,6 +56,13 @@ ht-degree: 0%
       + [设置项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [了解构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [管理环境](cloud-manager/manage-environments.md)
+   + 管理代码 {#managing-code}
+      + [Maven 项目版本处理](cloud-manager/managing-code/project-version-handling.md)
+      + [Cloud Manager中的存储库](cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [访问存储库](cloud-manager/managing-code/accessing-repos.md)
+      + [将 Git 与 Adobe Cloud Manager 集成](cloud-manager/managing-code/integrating-with-git.md)
+      + [使用多个源Git存储库](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [AEM as aCloud Service的企业团队开发设置](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [配置 CI/CD 管线](cloud-manager/configure-pipeline.md)
    + [部署代码](cloud-manager/deploy-code.md)
    + 了解测试结果 {#test-results}
@@ -95,13 +102,6 @@ ht-degree: 0%
       + [删除IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [检查IP允许列表状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Cloud Manager常见问题解答](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
-+ 管理代码 {#managing-code}
-   + [Maven 项目版本处理](cloud-manager/project-version-handling.md)
-   + [Cloud Manager中的存储库](cloud-manager/cloud-manager-repositories.md)
-   + [访问存储库](cloud-manager/accessing-repos.md)
-   + [将 Git 与 Adobe Cloud Manager 集成](cloud-manager/integrating-with-git.md)
-   + [使用多个源Git存储库](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [AEM as aCloud Service的企业团队开发设置](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + 部署 AEM as a Cloud Service {#developing}
    + [AEM 项目结构](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 项目存储库结构包](developing/introduction/repository-structure-package.md)

@@ -2,7 +2,7 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -122,7 +122,7 @@ ht-degree: 0%
 1. **源代码**&#x200B;选项卡允许您更新存储库。 单击&#x200B;**访问存储库信息**&#x200B;以更新存储库。
 
    >[!NOTE]
-   >请参阅[添加和管理存储库](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) ，以了解如何在Cloud Manager中添加和管理存储库。
+   >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，以了解如何在Cloud Manager中添加和管理存储库。
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 
