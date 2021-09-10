@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 要阻止缓存特定内容，请将Cache-Control标头设置为&#x200B;*private*。 例如，以下内容会阻止缓存名为&#x200B;**secure**&#x200B;目录下的html内容：
+* 要防止特定内容在CDN **上缓存**，请将Cache-Control标头设置为&#x200B;*private*。 例如，以下内容会阻止将名为&#x200B;**secure**&#x200B;的目录下的html内容缓存到CDN中：
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Define DISABLE_DEFAULT_CACHING
 
    >[!NOTE]
    >其他方法(包括[dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))将无法成功覆盖值。
+
+   >[!NOTE]
+   >请注意，调度程序可能仍会根据其自己的[缓存规则](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html)来缓存内容。 要使内容真正私有，您应确保dispatcher不会缓存该内容。
 
 ### 客户端库(js，css) {#client-side-libraries}
 
