@@ -1,13 +1,13 @@
 ---
 title: 在屏幕中安装和配置播放器作为Cloud Service
 description: 本页介绍如何在Screens中作为Cloud Service安装和配置播放器。
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
-
 
 # 在屏幕中安装和配置播放器作为Cloud Service {#installing-players-screens-cloud}
 
@@ -45,9 +45,9 @@ ht-degree: 1%
 
 ## 基本播放监控 {#playback-monitoring}
 
-播放器会报告各种播放量度，每个量度的默认值为30秒。 `ping`根据这些量度，您可以检测各种边缘情况，如体验卡住、空白屏幕和计划问题。 这样，您便可以了解设备上的问题并排除故障，从而加快调查和纠正措施。
+播放器会报告各种播放量度，每个量度的默认值为30秒。 `ping`根据这些量度，我们可以检测各种边缘情况，如体验卡住、空白屏幕和计划问题。 这样，我们便可以了解设备上的问题并排除其故障，从而加快调查和纠正措施的实施。
 
-通过AEM Screens播放器中的基本播放监控，您可以：
+AEM Screens播放器中的基本播放监控允许我们：
 
 * 如果播放器正确播放了内容，则进行远程监视。
 
@@ -80,9 +80,11 @@ ht-degree: 1%
 
 * 播放器会向服务器报告其自身的播放状态，因此需要活动连接。
 
-* 检查GPU的`isContentRendering`属性当前占用大量资源，默认情况下将启用该属性，并且需要从播放器首选项中明确选择加入。 建议不要将其与视频结合使用。
+* 默认情况下，用于检查GPU的`isContentRendering`属性当前占用的资源过多，无法启用，并且需要从播放器首选项中明确选择加入。 建议不要将其与生产中的视频结合使用。
 
-* 序列渠道支持此功能。
+* 此功能仅支持序列渠道，尚不涵盖交互式渠道(SPA)用例。
+
+* 这些量度尚未完全向我们的客户公开，我们正在努力在不久的将来启用类似功能板的报告和警报机制。
 
 ## 下一步 {#whats-next}
 
