@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '926'
 ht-degree: 8%
 
 ---
@@ -56,15 +56,21 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
 配置说明：
 
-1. 将您的CDN指向AdobeCDN的入口作为其源域。 例如，`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
+1. 将您的CDN指向AdobeCDN的入口作为其源域。 例如, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI还必须设置为AdobeCDN的入口
-1. 将主机标头设置为源域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
-1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如：`X-Forwarded-Host:example.com`。
+1. 将主机标头设置为源域。 例如: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如: `X-Forwarded-Host:example.com`.
 1. 套 `X-AEM-Edge-Key`. 值应来自Adobe。
    * 这是需要的，以便AdobeCDN能够验证请求源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，由受信任的呼叫者（即客户管理的CDN）负责确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。
    * 或者，当`X-AEM-Edge-Key`不存在时，可能会阻止对AdobeCDN入口的访问。 如果您需要直接访问AdobeCDN的入口（待阻止），请通知Adobe。
 
 在接受实时流量之前，您应该通过Adobe的客户支持验证端到端流量路由是否正确运行。
+
+在获取`X-AEM-Edge-Key`后，您可以测试请求是否正确路由，如下所示：
+
+```
+curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+```
 
 请注意，使用您自己的CDN时，无需在Cloud Manager中安装域和证书。 AdobeCDN中的路由将使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成。
 
