@@ -1,12 +1,12 @@
 ---
 title: 视频在Dynamic Media
 description: 了解如何在Dynamic Media中处理视频。
-feature: 视频配置文件
+feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '9499'
+source-wordcount: '9497'
 ht-degree: 19%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 19%
 >* 请参阅配置Dynamic Media和[Dynamic Media疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md)中的[配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
 
 >
-
 
 
 1. 通过执行以下操作，**上传 Dynamic Media 视频**：
@@ -359,13 +358,13 @@ VBR需要较长的编码时间，但会产生最有利的结果；媒体文件�
 | 2000 | 典型的宽带桌面连接。对于此连接，目标数据率范围为800-2000 Kbps，大多数目标数据率平均为1200-1500 Kbps。 |
 | 5000 | 典型高宽带连接。不建议在此较高范围下进行编码，因为大多数用户并不具备此速度的视频传送条件。 |
 
-### 分辨率 {#resolution}
+### 解决方法 {#resolution}
 
 **分辨率**&#x200B;以像素为单位描述视频文件的高度和宽度。大多数源视频以高分辨率存储（例如，1920 x 1080）。出于流播放目的，源视频会压缩至较低分辨率（640 x 480 或更低）。
 
 分辨率和数据率是两个相互关联、密不可分的因素，它们决定着视频质量。为保持同等的视频质量，视频文件的像素数越高（分辨率越高），数据率就必须越高。例如，考虑分辨率分别为 320 x 240 和 640 x 480 的视频文件的每帧像素数：
 
-| 分辨率 | 每帧像素数 |
+| 解决方法 | 每帧像素数 |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
@@ -381,7 +380,7 @@ VBR需要较长的编码时间，但会产生最有利的结果；媒体文件�
 
 当您为主源视频文件选择（或创建）视频编码预设时，请使用此表来确定正确的分辨率：
 
-| 分辨率 | 高度（像素） | 屏幕大小 |
+| 解决方法 | 高度（像素） | 屏幕大小 |
 |--- |--- |--- |
 | 240p | 240 | 微型屏幕 |
 | 300p | 300 | 通常用于移动设备的小型屏幕 |
@@ -408,7 +407,7 @@ VBR需要较长的编码时间，但会产生最有利的结果；媒体文件�
 
 | 视频类型 | 宽度 x 高度 | 宽度比 | 高度比 |
 |--- |--- |--- |--- |
-| 源 | 1920 x 1080 | 1 | 1 |
+| 来源 | 1920 x 1080 | 1 | 1 |
 | 编码 | 960 x 540 | 2 | 2 |
 | 编码 | 640 x 360 | 3 | 1 |
 | 编码 | 480 x 270 | 4 | 4 |
@@ -508,7 +507,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    `https://<servername.domain>:<port_number>`
 
-   例如，`https://1a2b3c.mycompany.com:4321`
+   例如, `https://1a2b3c.mycompany.com:4321`
 
    **注意**:上述路径示例仅供说明。
 
@@ -518,7 +517,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   例如，`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   例如, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **注意**:上述路径示例仅供说明。
 
@@ -996,7 +995,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 

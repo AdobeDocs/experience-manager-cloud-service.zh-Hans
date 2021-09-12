@@ -1,12 +1,12 @@
 ---
 title: 将Dynamic Media查看器与Adobe Analytics和Experience Platform标记集成
 description: 了解适用于Experience Platform标记的Dynamic Media查看器扩展和Dynamic Media查看器5.13。它允许Adobe Analytics和Platform标记的客户在其Experience Platform标记配置中使用特定于Dynamic Media查看器的事件和数据。
-feature: 资产报表
+feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 13dbce0d8ad25fec47460a41c5ea3e355a4dd486
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '6681'
+source-wordcount: '6675'
 ht-degree: 7%
 
 ---
@@ -231,7 +231,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 无论如何，由Dynamic Media查看器驱动的数据元素的值都不会存储在本地存储或服务器上；而是仅在客户端Experience Platform标记库中保留。 此类数据元素的值在网页重新加载时消失。
 
-通常，数据元素编辑器支持[存储持续时间选择](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element)。 但是，使用Dynamic Media查看器扩展的数据元素仅支持存储持续时间选项&#x200B;**[!UICONTROL None]**。 在用户界面中可以设置任何其他值，但在这种情况下，不会定义数据元素行为。 扩展可自行管理数据元素的值：在整个查看器生命周期中维护查看器事件参数值的数据元素。
+通常，数据元素编辑器支持[存储持续时间选择](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element)。 但是，使用Dynamic Media查看器扩展的数据元素仅支持存储持续时间选项&#x200B;**[!UICONTROL None]**。 在用户界面中可以设置任何其他值，但在这种情况下，不会定义数据元素行为。 扩展可自行管理数据元素的值：在整个查看器生命周期中维护查看器事件参数值的数据元素。
 
 ### 关于Dynamic Media查看器扩展中的规则 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -443,7 +443,7 @@ Adobe建议您在此部分之前仔细查看所有文档，以便了解完整集
 
    如果没有可用的报表包，则您或您的Adobe Analytics管理员必须先创建一个报表包，然后才能继续进行配置。
 
-   请参阅[报表和报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites)。
+   请参阅[报表和报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites)。
 
    在Adobe Analytics中，报表包在&#x200B;**[!UICONTROL 管理员]** > **[!UICONTROL 报表包]**&#x200B;下进行管理。
 
@@ -510,7 +510,7 @@ Adobe建议您在此部分之前仔细查看所有文档，以便了解完整集
 **要在Experience Platform标记中创建属性，请执行以下操作：**
 
 1. 在Experience Platform标记中，选择&#x200B;**[!UICONTROL 新建属性]**。
-1. 在&#x200B;**[!UICONTROL 创建属性]**&#x200B;对话框的&#x200B;**[!UICONTROL 名称]**&#x200B;字段中，键入描述性名称，如网站的标题。例如，`DynamicMediaViewersProp.`
+1. 在&#x200B;**[!UICONTROL 创建属性]**&#x200B;对话框的&#x200B;**[!UICONTROL 名称]**&#x200B;字段中，键入描述性名称，如网站的标题。例如, `DynamicMediaViewersProp.`
 1. 在&#x200B;**[!UICONTROL 域]**&#x200B;字段中，输入网站的域。
 1. 在&#x200B;**[!UICONTROL 高级选项]**&#x200B;下拉框中，启用&#x200B;**[!UICONTROL 配置以进行扩展开发（以后无法修改）]**，以防您要使用的扩展（本例中为 *Dynamic Media 查看器*）尚未发布。
 
@@ -796,7 +796,7 @@ Experience Manager配置包含以下两个主要步骤：
 1. 在页面的左上角附近，选择&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 创建Experience Platform标记配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 常规]**&#x200B;页（第1/3页）中，填写以下字段：
 
-   * **[!UICONTROL 标题]**  — 输入描述性配置标题。例如，`We.Retail Tags cloud configuration`。
+   * **[!UICONTROL 标题]**  — 输入描述性配置标题。例如, `We.Retail Tags cloud configuration`.
 
    * **[!UICONTROL 关联的AdobeIMS配置]**  — 选择您之前在配置Experience ManagerIMS中创建 [的IMS配置](#configuring-aem-ims)。
 
@@ -819,7 +819,7 @@ Experience Manager配置包含以下两个主要步骤：
    >检查以确保自动填充的库URI（统一资源标识符）的格式不正确。 如有必要，请修复它，以便URI表示协议相对URI。 也就是说，它从双正斜杠开始。
    >
    >
-   >例如：`//assets.adobetm.com/launch-xxxx`。
+   >例如: `//assets.adobetm.com/launch-xxxx`.
 
    您的&#x200B;**[!UICONTROL 测试]**&#x200B;页面可能与以下内容类似。 **[!UICONTROL Archive]**&#x200B;和&#x200B;**[!UICONTROL Load Library Asynchroused]**&#x200B;选项为&#x200B;***not***&#x200B;设置：
 

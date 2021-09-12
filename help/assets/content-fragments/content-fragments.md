@@ -1,12 +1,12 @@
 ---
 title: 使用内容片段
 description: 了解Adobe Experience Manager(AEM)作为Cloud Service中的内容片段如何让您设计、创建、策划和使用独立于页面的内容，非常适合无头交付。
-feature: 内容片段
+feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2033'
 ht-degree: 6%
 
 ---
@@ -51,9 +51,9 @@ ht-degree: 6%
 >
 >* [通过内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [自定义和扩展内容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [内容片段配置用于渲染的组件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [AEM GraphQL API，用于内容片段](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [内容片段配置用于渲染的组件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM GraphQL API，用于内容片段](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
@@ -75,12 +75,15 @@ ht-degree: 6%
 然后，可以组合这些内容片段以通过各种渠道提供体验。
 
 >[!NOTE]
-**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
-* **内容** 片段是编辑内容，可用于访问结构化数据，包括文本、数字和日期等。它们是纯内容，具有定义和结构，但无需额外的可视设计和/或布局。
-* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
+>
+>**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
+>* **内容** 片段是编辑内容，可用于访问结构化数据，包括文本、数字和日期等。它们是纯内容，具有定义和结构，但无需额外的可视设计和/或布局。
+>* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 
-体验片段可以包含内容片段形式的内容，反之则不行。
-有关更多信息，请参阅[了解AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)中的内容片段和体验片段。
+>
+>体验片段可以包含内容片段形式的内容，反之则不行。
+>
+>有关更多信息，请参阅[了解AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)中的内容片段和体验片段。
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
@@ -99,13 +102,16 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 随后，此结构化内容可与AEM核心组件的JSON导出功能一起用于将AEM内容交付到AEM页面以外的渠道。
 
 >[!NOTE]
-请参阅[Headless和AEM](/help/implementing/developing/headless/introduction.md) ，了解AEM Sites as a Cloud Service的Headless开发简介。
+>
+>请参阅[Headless和AEM](/help/implementing/developing/headless/introduction.md) ，了解AEM Sites as a Cloud Service的Headless开发简介。
 
 >[!NOTE]
-AEM还支持片段内容的翻译。
+>
+>AEM还支持片段内容的翻译。
 
 >[!NOTE]
-AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产](/help/assets/translate-assets.md)。
+>
+>AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产](/help/assets/translate-assets.md)。
 
 ## 内容类型 {#content-type}
 
@@ -144,7 +150,8 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
    * 有关更多信息，请参阅片段编辑器中的[将资产插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) 。
 
    >[!NOTE]
-   插入到内容片段本身中的可视化资产会附加到前一段落。 将片段添加到页面后，在添加中间内容时，这些资产会相对于该段落进行移动。
+   >
+   >插入到内容片段本身中的可视化资产会附加到前一段落。 将片段添加到页面后，在添加中间内容时，这些资产会相对于该段落进行移动。
 
 * **关联的内容**
 
@@ -188,10 +195,12 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
    * 附于前文（段落）。
 
       >[!CAUTION]
-      通过切换为纯文本格式，可以（意外）从片段中删除资产。
+      >
+      >通过切换为纯文本格式，可以（意外）从片段中删除资产。
 
       >[!NOTE]
-      在页面上使用片段时，还可以将资产添加为[其他（中间）内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content);使用资产浏览器中的关联内容或资产。
+      >
+      >在页面上使用片段时，还可以将资产添加为[其他（中间）内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content);使用资产浏览器中的关联内容或资产。
 
 * **关联的内容**
 
@@ -215,7 +224,8 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
          * 在片段编辑器中编辑&#x200B;**Metadata**&#x200B;时
 
    >[!CAUTION]
-   元数据处理配置文件不适用于内容片段。
+   >
+   >元数据处理配置文件不适用于内容片段。
 
 * **母版**
 
@@ -248,7 +258,8 @@ AEM还支持片段内容的翻译。 有关更多信息，请参阅[转换资产
 * 关联内容的使用方式，以及相应浏览器中的资产和/或组件。
 
 >[!CAUTION]
-中间内容是页面内容。它不会存储在内容片段中。
+>
+>中间内容是页面内容。它不会存储在内容片段中。
 
 ### 片段必需 {#required-by-fragments}
 

@@ -3,12 +3,12 @@ title: 在 [!DNL Adobe Experience Manager]中搜索数字资产和图像
 description: 了解如何使用过滤器面板在 [!DNL Adobe Experience Manager] 中查找所需的资产，以及如何使用搜索中显示的资产。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 搜索，元数据，资产分发
+feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4898'
 ht-degree: 7%
 
 ---
@@ -354,7 +354,7 @@ Visual search uses Smart Tags. After configuring smart tagging functionality, fo
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
 
@@ -383,7 +383,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 | 搜索字段 | 搜索属性值 |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| MIME类型 | 图像、文档、多媒体、存档或其他。 |
+| MIME 类型 | 图像、文档、多媒体、存档或其他。 |
 | 上次修改时间 | “小时”、“天”、“周”、“月”或“年”。 |
 | 文件大小 | “小”、“中”或“大”。 |
 | 发布状态 | “已发布”或“已取消发布”。 |

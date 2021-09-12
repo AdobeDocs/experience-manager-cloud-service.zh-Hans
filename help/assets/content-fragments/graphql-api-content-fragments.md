@@ -1,17 +1,17 @@
 ---
 title: AEM GraphQL API，用于内容片段
 description: 了解如何将Adobe Experience Manager(AEM)中的内容片段用作与AEM GraphQL API结合的Cloud Service，以进行无头内容交付。
-feature: 内容片段，GraphQL API
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3929'
 ht-degree: 1%
 
 ---
 
 
-# AEM GraphQL API，用于内容片段{#graphql-api-for-use-with-content-fragments}
+# AEM GraphQL API，用于内容片段 {#graphql-api-for-use-with-content-fragments}
 
 了解如何将Adobe Experience Manager(AEM)中的内容片段用作与AEM GraphQL API结合的Cloud Service，以进行无头内容交付。
 
@@ -73,7 +73,7 @@ GraphQL是：
 
 * [GitHub上的GraphQL Java](https://github.com/graphql-java)
 
-### GraphQL术语{#graphql-terminology}
+### GraphQL术语 {#graphql-terminology}
 
 GraphQL使用以下代码：
 
@@ -93,7 +93,7 @@ GraphQL使用以下代码：
 
 请参阅[(GraphQL.org)GraphQL](https://graphql.org/learn/)简介，以了解详细信息，包括[最佳实践](https://graphql.org/learn/best-practices/)。
 
-### GraphQL查询类型{#graphql-query-types}
+### GraphQL查询类型 {#graphql-query-types}
 
 通过GraphQL，您可以执行查询以返回以下任一值：
 
@@ -108,7 +108,7 @@ GraphQL使用以下代码：
 >[!NOTE]
 >可以使用[GraphiQL IDE](#graphiql-interface)测试和调试GraphQL查询。
 
-## 用于AEM端点{#graphql-aem-endpoint}的GraphQL
+## 用于AEM端点的GraphQL {#graphql-aem-endpoint}
 
 端点是用于访问GraphQL for AEM的路径。 使用此路径，您（或您的应用程序）可以：
 
@@ -148,7 +148,7 @@ AEM中有两种类型的端点：
 * [启用GraphQL端点](#enabling-graphql-endpoint)
 * [发布GraphQL端点](#publishing-graphql-endpoint)
 
-### 启用GraphQL端点{#enabling-graphql-endpoint}
+### 启用GraphQL端点 {#enabling-graphql-endpoint}
 
 要启用GraphQL端点，您首先需要具有适当的配置。 请参阅[内容片段 — 配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
 
@@ -180,7 +180,7 @@ AEM中有两种类型的端点：
    >
    >您可以在端点上设置与用例相应的ACL。
 
-### 发布GraphQL端点{#publishing-graphql-endpoint}
+### 发布GraphQL端点 {#publishing-graphql-endpoint}
 
 选择新端点和&#x200B;**Publish**&#x200B;以使其在所有环境中都完全可用。
 
@@ -192,7 +192,7 @@ AEM中有两种类型的端点：
 >
 >您必须在端点上设置与用例相适的ACL。
 
-## GraphiQL接口{#graphiql-interface}
+## GraphiQL接口 {#graphiql-interface}
 
 标准[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)接口的实现可与AEM GraphQL一起使用。 这可以是[与AEM](#installing-graphiql-interface)一起安装的。
 
@@ -210,11 +210,11 @@ AEM中有两种类型的端点：
 
 ![GraphiQL接](assets/cfm-graphiql-interface.png "口GraphiQL接口")
 
-### 安装AEM GraphiQL接口{#installing-graphiql-interface}
+### 安装AEM GraphiQL界面 {#installing-graphiql-interface}
 
 GraphiQL用户界面可以通过专用包安装在AEM上：[GraphiQL内容包v0.0.6(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)包。
 
-## 创作和发布环境的用例{#use-cases-author-publish-environments}
+## 创作和发布环境的用例 {#use-cases-author-publish-environments}
 
 用例取决于AEM作为Cloud Service环境的类型：
 
@@ -230,7 +230,7 @@ GraphiQL用户界面可以通过专用包安装在AEM上：[GraphiQL内容包v0.
 
 访问资产所需的权限。
 
-## 架构生成{#schema-generation}
+## 模式生成 {#schema-generation}
 
 GraphQL是一种强类型API，这意味着数据必须按类型清晰地结构和组织。
 
@@ -283,7 +283,7 @@ GraphQL规范提供了一系列关于如何创建用于查询特定实例上数�
 
 该架构通过与GraphQL查询相同的端点提供，客户端会处理使用扩展`GQLschema`调用该架构的事实。 例如，对`/content/cq:graphql/global/endpoint.GQLschema`执行简单的`GET`请求，将导致输出具有Content-type的架构：`text/x-graphql-schema;charset=iso-8859-1`。
 
-### 架构生成 — 未发布的模型{#schema-generation-unpublished-models}
+### 架构生成 — 未发布的模型 {#schema-generation-unpublished-models}
 
 嵌套内容片段后，可能会发布父内容片段模型，但未发布引用的模型。
 
@@ -307,7 +307,7 @@ GraphQL规范提供了一系列关于如何创建用于查询特定实例上数�
 
    这些参数用于标识内容片段，或获取有关内容片段的更多信息。
 
-### 字段类型{#field-types}
+### 字段类型 {#field-types}
 
 用于AEM的GraphQL支持类型列表。 所有支持的内容片段模型数据类型和相应的GraphQL类型均表示：
 
@@ -323,7 +323,7 @@ GraphQL规范提供了一系列关于如何创建用于查询特定实例上数�
 | 内容引用 |  字符串 |  用于在AEM中显示指向其他资产的路径 |
 | 片段引用 |  *模型类型* |  用于引用在创建模型时定义的特定模型类型的另一个内容片段 |
 
-### 帮助程序字段{#helper-fields}
+### 帮助程序字段 {#helper-fields}
 
 除了用户生成字段的数据类型之外，AEM的GraphQL还会生成许多&#x200B;*帮助程序*&#x200B;字段，以帮助识别内容片段，或提供有关内容片段的其他信息。
 
@@ -434,7 +434,7 @@ AEM还通过GraphQL公开内容片段的元数据。 元数据是描述内容片
 ## Security Considerations {#security-considerations}
 -->
 
-## GraphQL变量{#graphql-variables}
+## GraphQL变量 {#graphql-variables}
 
 GraphQL允许将变量置于查询中。 有关更多信息，请参阅[GraphQL variables](https://graphql.org/learn/queries/#variables)文档。
 
@@ -459,7 +459,7 @@ query GetArticlesByVariation($variation: String!) {
 }
 ```
 
-## GraphQL指令{#graphql-directives}
+## GraphQL指令 {#graphql-directives}
 
 在GraphQL中，可以根据变量更改查询，称为GraphQL指令。
 
@@ -525,7 +525,7 @@ query {
 
 * [基于WKND项目的示例查询](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## 用于AEM的GraphQL — 扩展摘要{#graphql-extensions}
+## GraphQL for AEM — 扩展摘要 {#graphql-extensions}
 
 使用AEM的GraphQL查询的基本操作符合标准的GraphQL规范。 对于使用AEM的GraphQL查询，有以下扩展：
 
@@ -537,7 +537,7 @@ query {
    * 请参阅[示例查询 — 有关所有城市的所有信息](#sample-all-information-all-cities)
 
 * 如果要使用逻辑OR:
-   * 使用` _logOp: OR`
+   * use ` _logOp: OR`
    * 请参阅[示例查询 — 名称为“Jobs”或“Smith”](#sample-all-persons-jobs-smith)的所有人员
 
 * 逻辑AND也存在，但是（通常）是隐式的
@@ -584,7 +584,7 @@ query {
    * 使用`... on`
       * 请参阅[有关具有内容引用的特定模型的内容片段的示例查询](#sample-wknd-fragment-specific-model-content-reference)
 
-## 持久查询（缓存）{#persisted-queries-caching}
+## 持久查询（缓存） {#persisted-queries-caching}
 
 在准备包含POST请求的查询后，可以使用可由HTTP缓存或CDN缓存的GET请求执行该查询。
 
@@ -801,18 +801,18 @@ query {
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
-## 从外部网站{#query-graphql-endpoint-from-external-website}查询GraphQL端点
+## 从外部网站查询GraphQL端点 {#query-graphql-endpoint-from-external-website}
 
 要从外部网站访问GraphQL端点，您需要配置：
 
 * [CORS过滤器](#cors-filter)
 * [反向链接过滤器](#referrer-filter)
 
-### CORS筛选器{#cors-filter}
+### CORS过滤器 {#cors-filter}
 
 >[!NOTE]
 >
->有关AEM中CORS资源共享策略的详细概述，请参阅[了解跨域资源共享(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))。
+>有关AEM中CORS资源共享策略的详细概述，请参阅[了解跨域资源共享(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))。
 
 要访问GraphQL端点，必须在客户Git存储库中配置CORS策略。 这是通过为所需端点添加相应的OSGi CORS配置文件来完成的。
 
@@ -855,7 +855,7 @@ query {
 
 如果为端点配置了虚路径，则还可以在`allowedpaths`中使用该路径。
 
-### 反向链接过滤器{#referrer-filter}
+### 反向链接过滤器 {#referrer-filter}
 
 除了CORS配置之外，还必须配置反向链接过滤器，以允许从第三方主机访问。
 

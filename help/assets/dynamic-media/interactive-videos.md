@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用交互式视频和购物视频
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5936'
 ht-degree: 16%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 16%
 
 * 要暂停视频并打开产品的概览，请选择缩略图。 例如，在视频中选择KitchenAid缩略图图像，以体验混合器的360°旋转视图，或放大以查看混合器详细信息。
 
-另请参阅[将交互式视频与Dynamic Media结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+另请参阅[将交互式视频与Dynamic Media结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 

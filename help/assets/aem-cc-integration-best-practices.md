@@ -3,12 +3,12 @@ title: 与 [!DNL Adobe Creative Cloud]集成的最佳实践
 description: 最佳实践是将Experience Manager部署与Adobe Creative Cloud集成，以简化资产传输工作流程并实现最高效率。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 协作，Adobe资产链接，桌面应用程序
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3443'
 ht-degree: 15%
 
 ---
@@ -39,9 +39,9 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 | 参与角色的价值主张 | Adobe服务 | 涉及的曲面 |
 |---|---|---|
 | 创意用户从[!DNL Experience Manager]中发现资产、打开并使用资产、编辑资产并将更改上传到[!DNL Experience Manager]，以及将新文件上传到[!DNL Experience Manager]，而无需离开其[!DNL Creative Cloud]应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
-| 业务用户可简化资产的打开和使用、编辑和上传对[!DNL Experience Manager]所做的更改，以及从桌面环境将新文件上传到[!DNL Experience Manager]的过程。 它们使用通用集成来打开本机桌面应用程序中的任何资产类型，包括非Adobe资产类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Experience ManagerWin和Mac桌面上的桌面应用程序 |
+| 业务用户可简化资产的打开和使用、编辑和上传对[!DNL Experience Manager]所做的更改，以及从桌面环境将新文件上传到[!DNL Experience Manager]的过程。 它们使用通用集成来打开本机桌面应用程序中的任何资产类型，包括非Adobe资产类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Experience ManagerWin和Mac桌面上的桌面应用程序 |
 | 营销人员和企业用户可在Experience Manager内发现、预览、许可和保存并管理Adobe Stock资产。 授权资产和已保存的资产可提供精选Adobe Stock元数据以更好地管理。 | [Experience Manager和Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] web界面 |
-| 改进数字产品设计人员与营销人员之间的协作。 让设计师在Adobe XD画布上的设计和线框模型中使用数字资产。 | [[!DNL Adobe Asset Link] 对象 [!DNL Adobe XD]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 改进数字产品设计人员与营销人员之间的协作。 让设计师在Adobe XD画布上的设计和线框模型中使用数字资产。 | [[!DNL Adobe Asset Link] 表示 [!DNL Adobe XD]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | 营销人员可以根据上传的资产和使用自定义功能创建的预定义操作，自动创建变体和衍生产品。 使用此自动化可提高内容速度并减少手动工作。 | [内容自动化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] web界面 |
 
 本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。诸如[Experience ManagerAssets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)之类的替代解决方案，应根据特定要求审查可基于[资产共享共用](https://opensource.adobe.com/asset-share-commons/)组件、 [链接共享](share-assets.md)使用[Experience Manager资产Web UI](/help/assets/manage-digital-assets.md)构建的解决方案。
