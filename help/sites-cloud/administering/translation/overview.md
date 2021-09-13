@@ -1,13 +1,13 @@
 ---
 title: 翻译多语言站点的内容
 description: 获取有关如何翻译多语言站点内容的概述。
-feature: 语言复制
+feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 1%
 
 * **人文翻译：** 内容将发送给您的翻译提供商，并由专业翻译人员翻译。完成后，将返回翻译内容并将其导入AEM。 将您的翻译提供商与AEM集成后，内容会在AEM和翻译提供商之间自动发送。
 * **机器翻译：** 机器翻译服务会立即翻译您的内容。
+
+>[!TIP]
+>
+>如果您是初次翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md) ，该是使用AEM功能强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
 
 翻译内容涉及以下步骤：
 

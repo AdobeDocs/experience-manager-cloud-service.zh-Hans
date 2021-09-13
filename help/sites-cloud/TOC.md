@@ -1,15 +1,15 @@
 ---
 solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
-sub-product: 在 AEM as a Cloud Service 中创作内容
+sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: 在 AEM as a Cloud Service 中创作内容
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
-feature: 创作
+feature: Authoring
 role: User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 73%
+source-wordcount: '311'
+ht-degree: 70%
 
 ---
 
@@ -94,6 +94,7 @@ ht-degree: 73%
          + [MSM最佳实践](administering/msm/best-practices.md)
          + [疑难解答和常见问题解答](administering/msm/troubleshooting.md)
       + 翻译 {#translation}
+         + [翻译文档历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
          + [翻译多语言站点的内容](administering/translation/overview.md)
          + [准备翻译内容](administering/translation/preparation.md)
          + [管理翻译项目](administering/translation/managing-projects.md)

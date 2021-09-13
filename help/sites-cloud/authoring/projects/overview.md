@@ -2,10 +2,10 @@
 title: 项目
 description: 通过“项目”，您可以将资源分组到一个实体中，该实体的通用共享环境使您能够轻松管理项目
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 79%
+source-wordcount: '1259'
+ht-degree: 78%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 79%
 
 ![体验](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-这些图标指示表示的体验类型：网站、移动应用程序或出版物。 单击+符号或单击添加体验 **并选择体验类型** ，以添加体验。
+这些图标指示表示的体验类型：网站、移动应用程序或出版物。 点按或单击下拉V形标记，然后点按&#x200B;**添加体验**&#x200B;并选择体验类型，以添加体验。
 
 ![添加体验](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 

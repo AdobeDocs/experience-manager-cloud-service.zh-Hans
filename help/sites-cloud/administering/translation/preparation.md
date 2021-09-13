@@ -1,12 +1,12 @@
 ---
 title: 准备翻译内容
 description: 了解如何准备翻译内容。
-feature: 语言复制
+feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 准备翻译内容 {#preparing-content-for-translation}
 
 多语言网站通常提供多种语言的一定数量的内容。 网站以一种语言创作，然后翻译成其他语言。 通常，多语言站点由页面的分支组成，其中每个分支包含使用不同语言的站点页面。
+
+>[!TIP]
+>
+>如果您是初次翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md) ，该是使用AEM功能强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
 
 [WKND教程站点](/help/implementing/developing/introduction/develop-wknd-tutorial.md)包含多个语言分支，并使用以下结构：
 
@@ -136,8 +140,7 @@ AEM提供一个&#x200B;**引用**&#x200B;边栏，用于显示已创建的语言
 >* `/content/wknd/language-masters/americas/central-america/es`
 
 >
-> 
-此`es`语言副本将不被检测到，因为它离`en`节点只有2个级别(`americas/central-america`)。
+> 此`es`语言副本将不被检测到，因为它离`en`节点只有2个级别(`americas/central-america`)。
 
 >[!TIP]
 >

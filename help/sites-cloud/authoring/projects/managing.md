@@ -2,9 +2,9 @@
 title: 管理项目
 description: 通过“项目”，您可以将资源分组到一个实体中来组织项目，该实体可以在“项目”控制台中访问和管理
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '894'
 ht-degree: 80%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 在&#x200B;**项目**&#x200B;控制台中，您可以访问项目并对其执行操作：
 
-![项目控制台](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![项目控制台](/help/sites-cloud/authoring/assets/projects-console.png)
 
 在“项目”中，您可以创建项目、将资源与项目关联，还可以删除项目或资源链接。您可能想要打开一个拼贴来查看其内容，以及向拼贴中添加一些项。本主题介绍了这些过程。
 
@@ -40,7 +40,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 1. 定义&#x200B;**标题**&#x200B;和&#x200B;**描述**&#x200B;并根据需要添加&#x200B;**缩略图**&#x200B;图像。 您还可以添加或删除用户以及他们所属的组。此外，也可单击&#x200B;**高级**&#x200B;以添加 URL 中使用的名称。
 
-   ![添加项目详细信息](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![添加项目详细信息](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. 点按/单击&#x200B;**创建**。确认对话框会询问您是要打开新项目还是要返回到控制台。
 
@@ -85,13 +85,11 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 要向拼贴中添加一些项，请执行以下操作：
 
-1. 在&#x200B;**项目**&#x200B;中，导航到项目，然后单击要将项目添加到的拼贴上的添加+图标。
+1. 在&#x200B;**项目**&#x200B;中，导航到项目，然后点按或单击要将项目添加到的拼贴上的向下V形标记。
 
-   ![将项目添加到图块](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![将项目添加到图块](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. 像创建新拼贴时一样，向拼贴中添加项。项目拼贴在[此处](/help/sites-cloud/authoring/projects/overview.md#project-tiles)进行了介绍。在此示例中，添加了其他工作流。
-
-   ![添加到图块的另一个项目](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### 打开拼贴 {#opening-a-tile}
 
@@ -99,19 +97,17 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
 要打开拼贴，以便查看其中的各个项或修改一些项，请执行以下操作：
 
-1. 在“项目”控制台中，点按/单击省略号 (...)。
+1. 在“项目”控制台中，点按/单击省略号 (...)。 图标。
 
-   ![打开图块](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![打开图块](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. AEM 列出了该拼贴中的各个项。您可以进入选择模式来修改或删除一些项。
 
-   ![已打开磁贴](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![已打开磁贴](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## 查看项目统计信息 {#viewing-project-statistics}
 
-要查看项目统计信息，请在&#x200B;**项目**&#x200B;控制台中单击&#x200B;**显示统计信息视图**。随即会显示每个项目的完成程度。再次单击&#x200B;**显示统计视图**&#x200B;以转到&#x200B;**项目**&#x200B;控制台。
-
-![项目统计](/help/sites-cloud/authoring/assets/projects-stats.png)
+您可以在&#x200B;**项目**&#x200B;控制台中查看项目统计信息。
 
 ### 查看项目时间轴 {#viewing-a-project-timeline}
 
@@ -143,6 +139,6 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 1. 点按/单击&#x200B;**编辑**。
 1. 将选择器从&#x200B;**活动**&#x200B;更改为&#x200B;**不活动**（反之亦然）。
 
-   ![激活项目](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![激活项目](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. 点按/单击&#x200B;**完成**&#x200B;以保存更改。

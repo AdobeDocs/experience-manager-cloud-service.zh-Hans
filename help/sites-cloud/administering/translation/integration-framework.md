@@ -1,13 +1,13 @@
 ---
 title: 配置翻译集成框架
 description: 了解如何配置翻译集成框架以与第三方翻译服务相集成。
-feature: 语言复制
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 2%
+source-wordcount: '1419'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 2%
 1. [将云配置与您的页面关联。](#configuring-pages-for-translation)
 
 有关AEM中内容翻译功能的概述，请参阅[多语言站点的内容翻译](overview.md)。
+
+>[!TIP]
+>
+>如果您是初次翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md) ，该是使用AEM功能强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
 
 ## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
 

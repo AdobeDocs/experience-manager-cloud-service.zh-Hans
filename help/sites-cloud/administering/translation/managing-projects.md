@@ -1,12 +1,12 @@
 ---
 title: 管理翻译项目
 description: 了解如何在AEM中创建和管理机器和人类翻译项目。
-feature: 语言复制
+feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3863'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 1%
 # 管理翻译项目 {#managing-translation-projects}
 
 翻译项目使您能够管理AEM内容的翻译。 翻译项目是一种AEM [project](/help/sites-cloud/authoring/projects/overview.md)类型，其中包含要翻译成其他语言的资源。 这些资源是使用语言主控创建的[语言副本](preparation.md)的页面和资产。
+
+>[!TIP]
+>
+>如果您是初次翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md) ，该是使用AEM功能强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
 
 将资源添加到翻译项目后，将为其创建翻译作业。 作业提供命令和状态信息，您可以使用这些命令和状态信息来管理对资源执行的人工翻译和机器翻译工作流。
 
