@@ -1,11 +1,11 @@
 ---
 title: 复制
-description: 分发 和复制故障排除。
+description: 分发和复制疑难解答。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 
 >[!NOTE]
 >
->有关详细信息，请阅读[Distribution](/help/core-concepts/architecture.md#content-distribution)。
+>有关详细信息，请阅读[Distribution](/help/overview/architecture.md#content-distribution)。
 
 ## 发布内容的方法 {#methods-of-publishing-content}
 
@@ -104,7 +104,7 @@ Adobe Experience Manager as aCloud Service使用[Sling Content Distribution](htt
 * `filters` （字符串值，默认表示激活所有路径）。可用值包括：
    * `onlyActivated`  — 将只激活未标记为已激活的路径。
    * `onlyModified`  — 仅激活已激活且修改日期晚于激活日期的路径。
-   * 上面可以用管道字符“|”进行OR。 例如，`onlyActivated|onlyModified`。
+   * 上面可以用管道字符“|”进行OR。 例如, `onlyActivated|onlyModified`.
 
 **记录**
 

@@ -1,15 +1,15 @@
 ---
 title: 了解CMS无头开发
 description: 在AEM Headless开发人员历程的这一部分中，了解无头技术以及使用无头技术的原因。
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
 
 ---
 
-
-# 了解CMS无头开发{#learn-about}
+# 了解CMS无头开发 {#learn-about}
 
 在[AEM无头开发人员历程的这一部分中，](overview.md)了解无头技术以及使用无头技术的原因。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 * 了解为何需要无头
 * 在高级别了解无头概念的使用方式及其相互关系
 
-## 全栈内容交付{#full-stack}
+## 全栈内容交付 {#full-stack}
 
 自从易于使用的大型内容管理系统(CMS)兴起以来，各公司一直利用它们作为管理报文传送、品牌推广和通信的中心位置。 将CMS用作管理体验的中心点，通过消除在不同系统中重复任务的需要，提高了效率。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 无论是平台还是接触点，用户都期望获得参与度，这要求您在提供体验的方式上保持灵活性。  这种多渠道方法是数字体验的标准，在某些情况下，全栈方法可能会被证明不灵活。
 
-## 无头{#the-head}中的头
+## 无头的头 {#the-head}
 
 任何系统的头通常是该系统的输出渲染器，通常以GUI或其他图形输出的形式。
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 此历程重点介绍内容交付的仅无头模型。 但是，一旦您掌握了此基础知识，您就可以进一步了解如何利用这两个模型的强大功能。
 
-## 下一步是什么{#what-is-next}
+## 下一步 {#what-is-next}
 
 感谢您开始您的AEM无头历程！ 现在，您阅读了本文档，您应该：
 
@@ -126,5 +126,5 @@ ht-degree: 0%
 
 虽然建议您通过查看文档[AEM Headless as a Cloud Service快速入门，继续进入无头开发历程的下一部分，但是](getting-started.md)以下是一些额外的可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头开发历程。
 
-* [Adobe Experience ManagerCloud Service架构简介](/help/core-concepts/architecture.md)  — 了解AEM作为Cloud Service的结构
+* [Adobe Experience ManagerCloud Service架构简介](/help/overview/architecture.md)  — 了解AEM作为Cloud Service的结构
 * [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 通过这些动手实践教程，了解如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。

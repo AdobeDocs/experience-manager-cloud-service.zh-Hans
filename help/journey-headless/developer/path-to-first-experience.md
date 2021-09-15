@@ -2,7 +2,7 @@
 title: 使用AEM Headless获得首个体验的路径
 description: 在AEM无头开发人员历程的这一部分中，您将了解在AEM中实施首个无头体验的步骤（包括规划注意事项），并了解尽可能使路径顺畅的最佳实践。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -147,7 +147,7 @@ ht-degree: 0%
 * [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 通过这些动手实践教程，了解如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。
 * [使用GraphQL API的无头内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  — 请阅读本课程，概述在AEM中实施的GraphQL API。需要通过AdobeID进行身份验证。
 * [AEM指南WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  — 此GitHub项目包括高亮显示AEM GraphQL API的示例应用程序。
-* [Adobe Experience Manager as a Cloud Service的架构简介](/help/core-concepts/architecture.md)  - AEM架构的完整概述
+* [Adobe Experience Manager as a Cloud Service的架构简介](/help/overview/architecture.md)  - AEM架构的完整概述
 * [无头入门指南](/help/implementing/developing/headless/introduction.md#getting-started)  — 快速介绍AEM无头功能，适用于已经了解AEM的用户。
 * [创建内容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 有关内容片段模型的技术文档
 * [创建内容片段](/help/assets/content-fragments/content-fragments.md)  — 有关内容片段的技术文档
