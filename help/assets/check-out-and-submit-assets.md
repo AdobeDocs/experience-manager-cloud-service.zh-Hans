@@ -2,12 +2,12 @@
 title: 签入和签出 [!DNL Assets]中的文件
 description: 了解如何签出要编辑的资产，并在更改完成后重新签入它们。
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [了解签入和签出Indesktop应 [!DNL Experience Manager] 用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [了解签入和签出Indesktop应 [!DNL Experience Manager] 用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [了解签入和签出的视频教程 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

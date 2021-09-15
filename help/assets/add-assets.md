@@ -1,12 +1,12 @@
 ---
 title: 将数字资产添加到 [!DNL Adobe Experience Manager]。
 description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Adobe Experience Manager] 。
-feature: 资产管理，上传
+feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2063'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 [!DNL Assets] 提供了以下上传方法。Adobe建议您在使用上传选项之前先了解其用例和适用性。
 
-| 上传方法 | 何时使用？ | 主要角色 |
+| 上传方法 | 何时使用? | 主要角色 |
 |---------------------|----------------|-----------------|
 | [资产控制台用户界面](#upload-assets) | 偶尔上传、轻松按下和拖动、查找器上传。 请勿上传大量资产。 | 所有用户 |
 | [上传API](#upload-using-apis) | 用于在上传期间进行动态决策。 | 开发人员 |
@@ -124,7 +124,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 组织资产：删除DAM中不需要的资产。 请考虑删除未使用、过时或重复的资产。 这会减少传输的数据和摄取的资产，从而加快摄取速度。
 * 组织资产：考虑按某种逻辑顺序组织内容，例如按文件大小、文件格式、用例或优先级。 通常，大型复杂文件需要进行更多处理。 您还可以考虑使用文件大小筛选选项（如下所述）单独摄取大文件。
-* 交错摄取：考虑将您的摄取划分为多个批量摄取项目。 这样，您便可以更快地查看内容，并根据需要更新摄取。 例如，您可以在非高峰时间摄取处理密集型资产，或以多个区块逐渐摄取。 但是，您可以一次摄取较小且更简单的资产，这些资产不需要进行大量处理。
+* 交错摄取：考虑将您的摄取划分为多个批量摄取项目。 这样，您就可以更快地查看内容并根据需要更新摄取。 例如，您可以在非高峰时间摄取处理密集型资产，或以多个区块逐渐摄取。 但是，您可以一次摄取较小且更简单的资产，这些资产不需要进行大量处理。
 
 要上传更多文件，请使用以下方法之一。 另请参阅[用例和方法](#upload-methods-comparison)
 
@@ -150,10 +150,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 导入源]:选择适用的数据源。
    * [!UICONTROL 按最小大小过滤]:以MB为单位提供资产的最小文件大小。
    * [!UICONTROL 按最大大小过滤]:以MB为单位提供资产的最大文件大小。
-   * [!UICONTROL 排除Mime类型]:要从摄取中排除的MIME类型列表（以逗号分隔）。例如，`image/jpeg, image/.*, video/mp4`。
+   * [!UICONTROL 排除Mime类型]:要从摄取中排除的MIME类型列表（以逗号分隔）。例如, `image/jpeg, image/.*, video/mp4`.
    * [!UICONTROL 包括Mime类型]:要包含在摄取中的MIME类型列表（以逗号分隔）。请参阅[所有支持的文件格式](/help/assets/file-format-support.md)。
    * [!UICONTROL 导入模式]:选择跳过、替换或创建版本。跳过模式是默认模式，在此模式下，摄取者会跳过以导入资产（如果资产已存在）。 请参阅[替换和创建版本选项](#handling-upload-existing-file)的含义。
-   * [!UICONTROL Assets目标文件夹]:在DAM中导入资产的导入文件夹。例如，`/content/dam/imported_assets`
+   * [!UICONTROL Assets目标文件夹]:在DAM中导入资产的导入文件夹。例如, `/content/dam/imported_assets`
 
 1. 您可以删除、修改、执行和执行创建的引擎配置，并执行更多操作。 选择批量导入引入配置时，工具栏中提供了以下选项。
 

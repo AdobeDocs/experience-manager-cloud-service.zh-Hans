@@ -2,12 +2,12 @@
 title: ' [!DNL Experience Manager Assets]中的辅助功能'
 description: 了解 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中的辅助功能如何帮助残障用户。
 contentOwner: AG
-feature: 辅助功能，资产管理
+feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Possible topics to cover in this article are below.
 
 # [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]中的辅助功能 {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] 允许内容创建者和发布者在Web上提供令人惊叹的体验。Adobe努力通过改进[!DNL Experience Manager]的无障碍功能，将残障创建者也包括在内。 该软件不断得到增强，以满足所有类型用户的需求，并遵守包括视力、听觉、移动性或其他残障人士在内的全球标准。
+[!DNL Adobe Experience Manager] 让内容创建者和发布者能够在Web上提供令人惊叹的体验。Adobe努力通过改进[!DNL Experience Manager]的无障碍功能，将残障创建者也包括在内。 该软件不断得到增强，以满足所有类型用户的需求，并遵守包括视力、听觉、移动性或其他残障人士在内的全球标准。
 
 [!DNL Experience Manager] 发布符合性信息，其中描述了符合的标准，概述了产品中的无障碍功能，并描述了符合性级别。无障碍合规性报告可帮助[!DNL Experience Manager]用户了解各种标准的遵守程度。 [!DNL Assets]中的增强功能使所有用户都可以通过键盘、屏幕阅读器、放大镜和其他辅助技术轻松使用界面。
 
@@ -92,7 +92,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | [!DNL Assets] 控制台 | `Alt + 3` | 显示选定资产的[!UICONTROL 时间轴]。 |
 | [!DNL Assets] 控制台 | `Alt + 4` | 打开选定资产的Live Copy引用。 |
 | [!DNL Assets] 控制台 | `Alt + 5` | 在选定文件夹中调用搜索和搜索。 |
-| 已选择资产或文件夹 | Backspace | 删除选定的资产或文件夹。 |
+| 已选择资产或文件夹 | 退格符 | 删除选定的资产或文件夹。 |
 | 已选择资产或文件夹 | `p` | 打开选定资产的属性页面。 |
 | 已选择资产或文件夹 | `e` | 编辑选定的资产。 |
 | 已选择资产或文件夹 | `m` | 移动选定的资产。 |

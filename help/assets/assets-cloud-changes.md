@@ -4,9 +4,9 @@ description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Mana
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 开发和测试资产微服务 {#asset-microservices}
 
-资产微服务使用云服务提供资产的可扩展且可复原的处理。 Adobe可管理云服务，以优化处理不同资产类型和处理选项。 资产微服务有助于避免使用第三方渲染工具和方法（如[!DNL ImageMagick]）并简化配置，同时为常见文件类型提供现成功能。 现在，您可以处理广泛的文件类型[](/help/assets/file-format-support.md)，这些文件类型的开箱即用格式比以前版本的Experience Manager所能处理的格式多。 例如，现在可以提取PSD和PSB格式的缩略图，以前需要的第三方解决方案如[!DNL ImageMagick]。 不能将[!DNL ImageMagick]的复杂配置用于[!UICONTROL 处理配置文件]配置。 使用[!DNL Dynamic Media]进行高级FFmpeg视频转码，并使用处理配置文件进行MP4视频的[基本转码](/help/assets/manage-video-assets.md#transcode-video)。
+资产微服务使用云服务提供资产的可扩展且可复原的处理。 Adobe可管理云服务，以优化处理不同资产类型和处理选项。 资产微服务有助于避免使用第三方渲染工具和方法（如[!DNL ImageMagick]）并简化配置，同时为常见文件类型提供现成功能。 现在，您可以处理广泛的文件类型[](/help/assets/file-format-support.md)，这些文件类型的开箱即用格式比以前版本的Experience Manager所能处理的格式多。 例如，现在可以提取PSD和PSB格式的缩略图，以前需要的第三方解决方案，如[!DNL ImageMagick]。 不能将[!DNL ImageMagick]的复杂配置用于[!UICONTROL 处理配置文件]配置。 使用[!DNL Dynamic Media]进行高级FFmpeg视频转码，并使用处理配置文件进行MP4视频的[基本转码](/help/assets/manage-video-assets.md#transcode-video)。
 
 资产微服务是一种云原生服务，在Cloud Manager中管理的客户程序和环境中自动进行配置并连接到[!DNL Experience Manager]。 要扩展或自定义[!DNL Experience Manager]，开发人员可以使用现有内容或资产以及在云环境中生成的演绎版，以使用、显示、下载资产来测试和验证其代码。
 
@@ -52,7 +52,7 @@ ht-degree: 5%
 | 功能或用例 | [!DNL Experience Manager]中的[!DNL Cloud Service]状态 | 评论 |
 |-----|-----|-----|
 | [重复的资产检测](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 工作方式不同。 | 请参阅[它在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的工作方式。 |
-| [仅用于放置(FPO)演绎版](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 工作方式不同 |  |
+| [仅用于放置(FPO)演绎版](/help/assets/configure-fpo-renditions.md) | 工作方式不同 | 处理配置文件使用资产微服务生成FPO演绎版。 在Experience Manager6.5中，提供了诸如[!DNL ImageMagick]之类的第三方解决方案来生成演绎版。 |
 | 元数据写回 | 工作方式不同 | 默认为已禁用. 根据需要启用相应的工作流启动器。 写回由资产微服务处理。 |
 | 使用包管理器处理上传的资产 | 需要人工干预。 | 使用&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作手动重新处理。 |
 | MIME类型检测 | 不受支持. | 如果您上传的数字资产没有扩展或扩展名不正确，则可能无法按需要进行处理。 用户仍可以在DAM中存储没有扩展名的二进制文件。 请参阅 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME类型检测。 |
@@ -73,7 +73,7 @@ ht-degree: 5%
 >* [已弃用和已删除功能的列表](/help/release-notes/deprecated-removed-features.md)
 >* [简介](/help/overview/introduction.md)
 >* [新增功能和不同功能](/help/overview/what-is-new-and-different.md)
->* [架构](/help/overview/architecture.md)
+>* [架构](/help/core-concepts/architecture.md)
 >* [显着更改](/help/release-notes/aem-cloud-changes.md)
 >* [显着更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
