@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入门
 description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 27%
+source-wordcount: '521'
+ht-degree: 28%
 
 ---
 
@@ -35,9 +35,8 @@ ht-degree: 27%
 | 用户指南 | 描述 |
 |---|---|
 | [Experience Manager as a Cloud Service 主页](/help/landing/home.md) | 有关 Experience Manager as a Cloud Service 文档的概述，请单击此处开始。 |
-| [概述](/help/overview/home.md) | 本指南提供[!DNL Experience Manager as a Cloud Service]的概述，包括简介、术语等。 |
+| [概述](/help/overview/home.md) | 本指南提供[!DNL Experience Manager as a Cloud Service]的概述，包括简介、术语、架构等。 |
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关[!DNL Experience Manager as a Cloud Service]最新版本的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
-| [核心概念](/help/core-concepts/home.md) | 本指南介绍[!DNL Experience Manager as a Cloud Service]的核心概念，包括新服务的架构。 |
 | [安全用户指南](/help/security/home.md) | 了解有关[!DNL Experience Manager as a Cloud Service]的重要安全主题。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用[!DNL Experience Manager Sites]作为Cloud Service进行创作，以及如何管理。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理[!DNL Experience Manager Assets as a Cloud Service]。 |

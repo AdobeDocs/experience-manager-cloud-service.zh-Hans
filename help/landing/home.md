@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 用户指南
 description: Adobe Experience Manager as a Cloud Service 自助资源和文档链接
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 90e9dd3c9c61a1e3f0aa1681475afa4e4d12106b
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 78%
+source-wordcount: '406'
+ht-degree: 72%
 
 ---
 
@@ -17,9 +17,8 @@ ht-degree: 78%
 
 | 用户指南 | 描述 |
 |---|---|
-| [概述](/help/overview/home.md) | 有关 Experience Manager as a Cloud Service 的概述（包括简介、术语等），请单击此处以开始。 |
+| [概述](/help/overview/home.md) | 有关Experience Manageras a Cloud Service的概述（包括简介、术语、架构等），请单击此处开始。 |
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
-| [核心概念](/help/core-concepts/home.md) | 本指南简要介绍 Experience Manager as a Cloud Service 核心概念，包括新服务的架构。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
