@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 43%
+source-wordcount: '483'
+ht-degree: 42%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 43%
    + [元数据配置文件](metadata-profiles.md)
    + [元数据架构](metadata-schemas.md)
    + [管理视频资产](manage-video-assets.md)
+   + [使用MSM重复使用资产](reuse-assets-using-msm.md)
    + [下载资产](download-assets-from-aem.md)
    + [签入和签出要编辑的资产](check-out-and-submit-assets.md)
    + [Digital Rights Management资产](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 43%
    + [对内容片段上的远程GraphQL查询进行身份验证](content-fragments/graphql-authentication-content-fragments.md)
    + [包含内容片段的GraphQL API — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [连接的资产](use-assets-across-connected-assets-instances.md)
-   + [为Adobe InDesign生成FPO呈现](configure-fpo-renditions.md)
+   + [生成仅用于置入的演绎版](configure-fpo-renditions.md)
    + [资产报表](asset-reports.md)
    + [串联元数据](cascading-metadata.md)
    + [XMP 元数据](xmp-metadata.md)
@@ -67,7 +68,7 @@ ht-degree: 43%
 + 共享和分发资产 {#brand-portal}
    + [使用 [!DNL Brand Portal]配置 [!DNL Assets] ](configure-aem-assets-with-brand-portal.md)
    + [将资产发布到 [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [将资产从发 [!DNL Brand Portal] 布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [将资产从发 [!DNL Brand Portal] 布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
    + [使用内容片段和GraphQL进行无头交付](content-fragments/content-fragments-graphql.md)
