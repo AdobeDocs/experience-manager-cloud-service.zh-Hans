@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
+source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
 workflow-type: tm+mt
-source-wordcount: '3046'
+source-wordcount: '3086'
 ht-degree: 25%
 
 ---
@@ -147,14 +147,24 @@ ht-degree: 25%
 
 使用上述设置尝试创作体验，以了解该功能是如何运作的。使用您在远程 DAM 部署中选择的文档或图像。
 
-1. 通过从[!DNL Experience Manager]工作区访问&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，导航到远程部署上的[!DNL Assets]接口。 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上传您选择的资产。
+1. 通过从[!DNL Experience Manager]工作区访问&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，导航到远程部署上的[!DNL Assets]接口。 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上传您选择的资产。&lt;>
 1. 在[!DNL Sites]部署中，在右上角的配置文件激活器中，单击&#x200B;**[!UICONTROL 模拟为]**。 提供 `ksaner` 作为用户名，选择提供的选项，然后单击&#x200B;**[!UICONTROL 确定]**。
 1. 打开位于&#x200B;**[!UICONTROL Navigation]** > **[!UICONTROL Sites]**&#x200B;的网站页面。 编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/<site page>` 以编辑页面。
+=======
+1. 在[!DNL Sites]部署中，在右上角的配置文件激活器中，单击&#x200B;**[!UICONTROL 模拟为]**。 提供所需的用户名，然后单击&#x200B;**[!UICONTROL 确定]**。
+1. 从&#x200B;**[!UICONTROL Navigation]** > **[Sites]**&#x200B;打开网站页面。 编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/<page name>` 以编辑页面。
+>>>>>>>>>>隐藏的更改
 
-   单击页面左上角的&#x200B;**[!UICONTROL 切换侧面板]**。
+
+
+
+
+> 
+
+单击页面左上角的&#x200B;**[!UICONTROL 切换侧面板]**。
 
 1. 打开[!UICONTROL Assets]选项卡，然后单击&#x200B;**[!UICONTROL 登录到连接的资产]**。
-1. 提供凭据 -- `ksaner` 作为用户名，`password` 作为密码。此用户对两个[!DNL Experience Manager]部署都具有创作权限。
+1. 提供适当的凭据。 此用户对两个[!DNL Experience Manager]部署都具有创作权限。
 1. 搜索您添加到 DAM 的资产。远程资产会显示在左侧面板中。筛选图像或文档，并进一步筛选支持的文档类型。拖动 `Image` 组件上的图像和 `Download` 组件上的文档。
 
    获取的资产在本地[!DNL Sites]部署上为只读。 您仍可以使用[!DNL Sites]组件提供的选项来编辑获取的资产。 通过组件进行的编辑是无损的。
@@ -172,12 +182,10 @@ ht-degree: 25%
 1. 发布页面时， [!DNL Experience Manager]会显示页面上使用的资产的完整列表。 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请参阅[异步作业](/help/operations/asynchronous-jobs.md)用户界面。
 
    >[!NOTE]
-   >
-   >即使未获取一个或多个远程资产，页面也会发布。使用该远程资产的组件发布为空。[!DNL Experience Manager]通知区域显示异步作业页面中显示错误的通知。
+   即使未获取一个或多个远程资产，页面也会发布。使用该远程资产的组件发布为空。[!DNL Experience Manager]通知区域显示异步作业页面中显示错误的通知。
 
 >[!CAUTION]
->
->获取的远程资产一经在网页中使用后，有权访问本地文件夹的任何人都可以搜索和使用这些已获取的资产。 获取的资产存储在本地文件夹中（上述演练的`connectedassets`）。 此外，还可通过[!UICONTROL 内容查找器]，搜索和查看本地存储库中的资产。
+获取的远程资产一经在网页中使用后，有权访问本地文件夹的任何人都可以搜索和使用这些已获取的资产。 获取的资产存储在本地文件夹中（上述演练的`connectedassets`）。 此外，还可通过[!UICONTROL 内容查找器]，搜索和查看本地存储库中的资产。
 
 获取的资产可用作任何其他本地资产，但关联的元数据无法编辑。
 
