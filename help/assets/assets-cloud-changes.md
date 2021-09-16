@@ -4,7 +4,7 @@ description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Mana
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
+source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 5%
@@ -74,7 +74,7 @@ ht-degree: 5%
 >* [已弃用和已删除功能的列表](/help/release-notes/deprecated-removed-features.md)
 >* [简介](/help/overview/introduction.md)
 >* [新增功能和不同功能](/help/overview/what-is-new-and-different.md)
->* [架构](/help/core-concepts/architecture.md)
+>* [架构](/help/overview/architecture.md)
 >* [显着更改](/help/release-notes/aem-cloud-changes.md)
 >* [显着更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
