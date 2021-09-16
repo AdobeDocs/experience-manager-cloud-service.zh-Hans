@@ -4,12 +4,13 @@ description: 使用Experience Manager资产工作流和ImageMagick生成新资�
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
+
 
 # 为仅用于置入的呈现版本生成Adobe InDesign {#fpo-renditions}
 
@@ -20,7 +21,9 @@ ht-degree: 0%
 Experience Manager为Cloud Service提供云原生资产处理功能以生成FPO演绎版。 使用资产微服务生成演绎版。 您可以为新上传资产和Experience Manager中存在的资产配置演绎版生成。
 
 以下是生成FPO演绎版的步骤：
+
 1. [创建处理用户档案](#create-processing-profile)。
+
 1. 配置Experience Manager以使用此配置文件[处理新资产](#generate-renditions-of-new-assets)。
 1. 使用配置文件[处理现有资产](#generate-renditions-of-existing-assets)。
 

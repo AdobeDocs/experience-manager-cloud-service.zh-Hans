@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media 视频配置文件
 description: Dynamic Media 附带预定义的自适应视频编码配置文件。此现成配置文件中的设置经过优化，可为客户提供最佳的查看体验。 您还可以向视频添加智能裁剪。
-feature: 资产管理，视频配置文件，演绎版
+feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '3661'
+source-wordcount: '3656'
 ht-degree: 15%
 
 ---
@@ -27,7 +27,8 @@ Dynamic Media 附带预定义的自适应视频编码配置文件。此现成配
 
 请参阅[视频编码最佳实践](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)。
 
-另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)。
+另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
+
 
 >[!NOTE]
 >

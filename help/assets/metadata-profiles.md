@@ -2,19 +2,22 @@
 title: 元数据配置文件
 description: 了解资产的元数据配置文件。 了解如何创建元数据配置文件并将其应用到文件夹资产。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 37%
+source-wordcount: '1356'
+ht-degree: 33%
 
 ---
 
 # 元数据配置文件 {#metadata-profiles}
 
 通过元数据配置文件，您可以将默认元数据应用到文件夹中的资产。创建元数据配置文件并将其应用到文件夹。您随后上传到文件夹的任何资产都会继承您在元数据配置文件中配置的默认元数据。
+
+有关在Experience Manager资产中使用配置文件的一个重要概念是，将配置文件分配给文件夹。 配置文件中包括元数据配置文件形式的设置，以及视频配置文件或图像配置文件。 这些设置会处理文件夹及其任何子文件夹的内容。 因此，您如何命名文件和文件夹、如何排列子文件夹以及如何处理这些文件夹中的文件，都会对配置文件处理这些资产的方式产生重大影响。
+通过使用一致且适当的文件和文件夹命名策略以及良好的元数据实践，您可以充分利用数字资产收藏集，并确保使用正确的配置文件处理正确的文件。
 
 ## 添加元数据配置文件 {#adding-a-metadata-profile}
 

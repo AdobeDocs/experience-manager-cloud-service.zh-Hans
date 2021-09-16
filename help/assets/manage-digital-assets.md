@@ -3,12 +3,12 @@ title: 管理数字资产
 description: 了解各种资产管理和编辑方法。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 资产管理、发布、协作、资产处理
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4543'
 ht-degree: 16%
 
 ---
@@ -528,11 +528,9 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 1. 使用右上方的选项下载或打印PDF。
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    要修改呈现的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从Configuration Manager中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注字体颜色的信息，请参阅[批注](/help/assets/manage-digital-assets.md#annotating)。
-
-   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    返回到渲染的PDF文件并刷新它。 刷新后的PDF将反映您所做的更改。
 

@@ -1,13 +1,13 @@
 ---
 title: 关于Dynamic Media图像配置文件和视频配置文件
 description: 图像配置文件或视频配置文件是将哪些选项应用到您上传到文件夹的资产的方法。 例如，您可以指定要应用于您上传的Dynamic Media视频资产的视频编码。 或者，要应用于Dynamic Media图像资产以正确裁剪图像的图像配置文件。
-feature: 资产管理，图像配置文件，视频配置文件
+feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 1%
+source-wordcount: '1261'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,8 @@ ht-degree: 1%
 
 创建图像配置文件或视频配置文件后，您可以将其分配给一个或多个用于新上传Dynamic Media资产的文件夹。
 
-另请参阅[组织数字资产以使用图像配置文件或视频配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)。
+另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
+
 
 >[!NOTE]
 >

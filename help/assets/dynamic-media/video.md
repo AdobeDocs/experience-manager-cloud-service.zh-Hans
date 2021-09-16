@@ -4,14 +4,14 @@ description: 了解如何在Dynamic Media中处理视频。
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9497'
+source-wordcount: '9427'
 ht-degree: 19%
 
 ---
 
-# 视频{#video}
+# 视频 {#video}
 
 本节介绍如何在 Dynamic Media 中处理视频。
 
@@ -37,7 +37,6 @@ ht-degree: 19%
    * 将视频处理配置文件关联到一个或多个要在其中上传主要源视频的文件夹。
 
       * [将视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
-      * 了解有关[组织数字资产以使用处理配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)的更多信息。
       * 了解有关[组织数字资产](/help/assets/organize-assets.md)的更多信息。
    * 将主源视频上传到文件夹。 将视频添加到文件夹后，这些视频会根据您分配给文件夹的视频处理配置文件进行编码。
 
@@ -54,9 +53,7 @@ ht-degree: 19%
 
    * 组织、浏览和搜索视频资产
 
-      * [组织数字资](/help/assets/organize-assets.md)
-产了解有关组织数 [字资产以使用处理配置文件的最佳实践的更多信息](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [组织数字资产](/help/assets/organize-assets.md)
       * [搜索视频资](/help/assets/search-assets.md#custompredicates) 产或 [搜索资产](/help/assets/manage-digital-assets.md#search-assets)
    * 预览和发布视频资产
 
@@ -64,41 +61,27 @@ ht-degree: 19%
          [预览](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 视频 [或预览资产](/help/assets/dynamic-media/previewing-assets.md)
          [管理视频演绎版](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * 处理视频元数据
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
+         [编辑视频属性](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    *使用视频元数据
+      * [管理数字资产的元数据](/help/assets/manage-metadata.md)
+      * [元数据架构](/help/assets/metadata-schemas.md)
+   * 审核和批准视频，在视频中添加注释，以及保持全面的版本控制
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [对视频添](/help/assets/manage-video-assets.md#annotate-video-assets) 加注释 [或对资产添加注释](/help/assets/manage-digital-assets.md#annotating)
 
-    *编辑视频的属性，如标题、描述和标记、自定义元数据字段：
-    [编辑视频属性](/help/assets/manage-digital-assets.md#editing-properties)
-    
-    * [管理数字资产的元数据](/help/assets/manage-metadata.md)
-    * [元数据架构](/help/assets/metadata-schemas.md)
-    
-    *审阅、批准和注释视频，并维护完整版本控制
-    
-    * [对视频添加注释](/help/assets/manage-video-assets.md#annotate-video-assets)或[对资产添加注释](/help/assets/manage-digital-assets.md#annotating)
-    
-    * [创建版本](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [启动资产工作流](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [创建版本](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [在资产上启动工作流](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [审核文件夹资产](/help/assets/bulk-approval.md)
+      * [项目](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [查看文件夹资产](/help/assets/bulk-approval.md)
-    * [项目](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. 通过执行以下任一操作，**发布 Dynamic Media 视频**：
 

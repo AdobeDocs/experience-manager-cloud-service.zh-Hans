@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media 图像配置文件
 description: 了解如何创建Dynamic Media图像配置文件，其中包含USM锐化设置、智能裁切或智能色板设置，或者同时包含这两项设置。 然后，将配置文件应用到图像资产的文件夹。
-feature: 资产管理，图像配置文件，演绎版
+feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '2762'
-ht-degree: 11%
+source-wordcount: '2757'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 11%
 >
 >图像配置文件不适用于PDF、GIF动画或INDD(Adobe InDesign)文件。
 
-## 裁剪选项 {#crop-options}
+## 裁切选项 {#crop-options}
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
@@ -102,7 +102,7 @@ ht-degree: 11%
 
 请参阅[关于Dynamic Media图像配置文件和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
-另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/dynamic-media/best-practices-for-file-management.md)。
+另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
 
 **要创建Dynamic Media图像配置文件，请执行以下操作：**
 
