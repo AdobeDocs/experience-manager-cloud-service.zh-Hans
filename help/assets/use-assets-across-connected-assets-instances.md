@@ -2,13 +2,13 @@
 title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
 description: 使用远程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署中可用的资产。
 contentOwner: AG
-feature: 资产管理、连接的资产、资产分发、用户和组
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 26%
+source-wordcount: '3046'
+ht-degree: 25%
 
 ---
 
@@ -20,9 +20,11 @@ ht-degree: 26%
 
 ## 连接的资产概述 {#overview-of-connected-assets}
 
-在[!UICONTROL 页面编辑器]中编辑页面作为目标目标时，作者可以从其他充当资产源的[!DNL Assets]部署中无缝搜索、浏览和嵌入资产。 管理员将具有[!DNL Sites]功能的[!DNL Experience Manager]部署与具有[!DNL Assets]功能的[!DNL Experience Manager]的另一部署创建一次性集成。
+在[!UICONTROL 页面编辑器]中编辑页面作为目标目标时，作者可以从其他充当资产源的[!DNL Assets]部署中无缝搜索、浏览和嵌入资产。 管理员将具有[!DNL Sites]功能的[!DNL Experience Manager]部署与具有[!DNL Assets]功能的[!DNL Experience Manager]的另一部署创建一次性集成。 您还可以通过连接的资产在网站的网页中使用Dynamic Media图像，并利用Dynamic Media功能，例如智能裁剪和图像预设。
 
 对于[!DNL Sites]作者，远程资产可用作只读本地资产。 该功能可支持一次无缝搜索和使用多个远程资产。要在[!DNL Sites]部署中一次性使用许多远程资产，请考虑批量迁移这些资产。
+
+您可以在Sites部署和Dynamic Media部署之间配置连接，以允许网页作者在其网页中使用Dynamic Media图像。 在创作网页时，使用远程资产和远程Dynamic Media部署的体验保持不变。 这允许您通过连接的资产功能（例如智能裁剪和图像预设）来利用Dynamic Media功能。
 
 ### 先决条件与支持的部署 {#prerequisites}
 
@@ -147,7 +149,7 @@ ht-degree: 26%
 
 1. 通过从[!DNL Experience Manager]工作区访问&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，导航到远程部署上的[!DNL Assets]接口。 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上传您选择的资产。
 1. 在[!DNL Sites]部署中，在右上角的配置文件激活器中，单击&#x200B;**[!UICONTROL 模拟为]**。 提供 `ksaner` 作为用户名，选择提供的选项，然后单击&#x200B;**[!UICONTROL 确定]**。
-1. 打开`We.Retail`网站页面，其地址为&#x200B;**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**。 编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` 以编辑页面。
+1. 打开位于&#x200B;**[!UICONTROL Navigation]** > **[!UICONTROL Sites]**&#x200B;的网站页面。 编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/<site page>` 以编辑页面。
 
    单击页面左上角的&#x200B;**[!UICONTROL 切换侧面板]**。
 
@@ -220,7 +222,7 @@ ht-degree: 26%
 * [!DNL Assets]的许可证需要用作远程存储库。
 * 需要[!DNL Sites]的一个或多个许可证用作本地创作部署。
 
-### 使用 {#usage}
+### 用途 {#usage}
 
 * 用户在创作时，可以搜索远程资产并将这些资产拖动到本地页面上。 不支持其他功能。
 * 获取操作会在 5 秒后超时。作者在获取资产时可能会遇到问题，比如，网络问题。作者可以通过将远程资产从[!UICONTROL 内容查找器]拖到[!UICONTROL 页面编辑器]来重新尝试获取资产。
