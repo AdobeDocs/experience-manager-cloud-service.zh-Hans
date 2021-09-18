@@ -4,9 +4,9 @@ description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Mana
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
+source-git-commit: 9235dd41a77242655bf944666bdd5c14db8a83d6
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 [!DNL Adobe Experience Manager] as a为管 [!DNL Cloud Service] 理Experience Manager项目提供了许多新功能和可能性。与[!DNL Experience Manager]作为[!DNL Cloud Service]的相比，[!DNL Experience Manager Assets]本地或作为Adobe托管服务的之间存在许多差异。 本文重点介绍了[!DNL Assets]功能的重要差异。
 
-与[Experience Manager] 6.5相比，主要区别在以下方面：
+与[!DNL Experience Manager] 6.5相比，主要区别在以下方面：
 
 * [资产摄取、上传和处理](#asset-ingestion)。
 * [用于云原生处理的资产微服务](#asset-microservices)。
