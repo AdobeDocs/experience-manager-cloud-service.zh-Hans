@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 40%
+source-wordcount: '3063'
+ht-degree: 38%
 
 ---
 
@@ -283,6 +283,23 @@ ht-degree: 40%
 1. 单击&#x200B;**删除迁移集**&#x200B;对话框中的&#x200B;**删除**&#x200B;以确认删除。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## 在发布实例上运行内容传输工具 {#running-ctt-on-publish}
+
+建议在将内容移动到发布实例时，在源发布实例上安装CTT，以将内容移动到目标发布实例。 按照如下所述的建议方法操作：
+
+* 使用在创作实例中使用的相同版本的CTT。
+
+* 只需迁移一个发布节点。 应在开始提取之前从负载平衡器中删除该数据集。
+
+* 创建迁移集时，请使用创作AEMaCS环境的URL。
+
+* 在摄取到发布期间，不会缩小发布层（与作者不同）。 为防患于未然，请避免任何用户启动写操作，例如：
+
+   * 从AEMaaCS创作到在该环境中发布的内容分发
+   * 发布实例之间的用户同步
+
 
 ## 疑难解答 {#troubleshooting}
 
