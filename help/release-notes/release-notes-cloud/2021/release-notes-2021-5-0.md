@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版的发行说明。'
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1355'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Adobe Experience Manager]作为Cloud Service的最新发行说明 {#release-notes}
 
@@ -68,35 +68,8 @@ ht-degree: 4%
 
 #### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和有限网络带宽的设备上高效地交付最佳质量的图像。 有关更多信息，请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)。
-
-   >[!NOTE]
-   >
-   >上述智能成像增强功能的发布时间表是：
-   >
-   >* 2021年5月24日，北美，
-      >
-      >
-   * 欧洲、中东和非洲2021年6月25日，
-      >
-      >
-   * 亚太2021年7月19日。
-
-
+* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和有限网络带宽的设备上高效地交付最佳质量的图像。 有关更多信息，请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)和[使用下一代图像格式优化图像WebP和AVIF。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * 在Dynamic Media交付（fmt URL修饰符）中引入了对下一代图像格式AVIF的支持。
-
-   >[!NOTE]
-   >
-   >AVIF支持的发布时间表为：
-   >
-   >* 北美2021年5月10日，
-      >
-      >
-   * 欧洲、中东和非洲2021年5月24日，
-      >
-      >
-   * 亚太2021年6月24日。
-
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
