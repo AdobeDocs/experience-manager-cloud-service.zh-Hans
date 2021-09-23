@@ -2,9 +2,9 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
+source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1375'
 ht-degree: 2%
 
 ---
@@ -63,11 +63,12 @@ ht-degree: 2%
 
 1. 使用您的Adobe ID导航到[Adobe开发人员控制台](https://console.adobe.io)。
 1. 创建新项目或打开现有项目。
-1. 添加API。
-1. 选择用户管理API。
+1. 添加API — 单击&#x200B;**添加到项目**&#x200B;并选择&#x200B;**API**
+1. 选择用户管理API。  您可能需要获得权限才能使用此选项。
 1. 创建JWT凭据。
-1. 生成密钥对，或上传公钥（rsa不是好方法）。
-1. 生成访问令牌（或JWT令牌或载体令牌）。
+1. 生成密钥对，或上传公钥（rsa不是好方法）。  有一个按钮， **生成公共/私有密钥对**，它将为您执行此操作。  确保同时保存公钥和私钥。
+1. 导航到用户管理API。
+1. 通过将您的私钥内容粘贴到文本框中并单击&#x200B;**生成令牌**&#x200B;来生成访问令牌（或载体令牌）。
 1. 安全保存所有这些信息，如&#x200B;**客户端ID**、**客户端密钥**、**技术帐户ID**、**技术帐户电子邮件**、**组织ID**&#x200B;和&#x200B;**访问令牌**。
 
 ## 用户界面 {#user-interface}
