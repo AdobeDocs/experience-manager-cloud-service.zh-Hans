@@ -2,12 +2,12 @@
 title: 批量导入和导出资产元数据
 description: 本文介绍了如何批量导入和导出元数据。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '667'
 ht-degree: 10%
 
 ---
@@ -34,7 +34,7 @@ Adobe Experience Manager Assets允许您使用CSV文件批量导入资产元数�
    | 批量大小 | 要为其导入元数据的批次中的资产数量。 默认值为 50。最大值为100。 |
    | 字段分隔符 | 默认值为`,`（逗号）。 您可以指定任何其他字符。 |
    | 多值分隔符 | 元数据值的分隔符。 默认值为 `|`. |
-   | 启动工作流 | 默认为False。 当设置为`true`且默认的“启动器”设置对DAM元数据回写工作流(将元数据写入二进制XMP数据)有效。 启用启动工作流会减慢系统运行速度。 |
+   | 启动工作流 | 默认为False。 当设置为`true`且默认设置对DAM元数据回写工作流(将元数据写入二进制XMP数据)有效。 启用工作流会减慢系统速度。 |
    | 资产路径列名称 | 为包含资产的CSV文件定义列名称。 |
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 导入]**。 导入元数据后，系统会向您的通知收件箱发送通知。 导航到资产属性页面，并验证是否为资产正确导入了元数据值。
