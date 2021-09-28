@@ -2,10 +2,10 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 13%
+source-wordcount: '2880'
+ht-degree: 12%
 
 ---
 
@@ -27,7 +27,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 >
 >本文档中概述的配置由[AEM Project Maven Archetype 24或更高版本](https://github.com/adobe/aem-project-archetype/releases)提供。
 
-## 存储库的可变区域与不可变区域{#mutable-vs-immutable}
+## 存储库的可变区域与不可变区域 {#mutable-vs-immutable}
 
 `/apps` 和 `/libs`**被视为 AEM 中的不可变区域，因为 AEM 启动后（例如，运行时），无法对其进行更改（创建、更新、删除）。**&#x200B;运行时对不可改变区域所做的任何更改尝试都将失败。
 
@@ -37,7 +37,7 @@ AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这
 >
 >与以前版本的AEM一样，不应修改`/libs`。 只有AEM产品代码才能部署到`/libs`。
 
-### Oak索引{#oak-indexes}
+### Oak索引 {#oak-indexes}
 
 Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理。 这是因为Cloud Manager必须等待任何新索引部署完毕并完全重新编入索引后，才能切换到新代码图像。
 
@@ -47,7 +47,7 @@ Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理�
 >
 >有关在AEM as aCloud Service中索引的更多详细信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md)。
 
-## 推荐的包结构{#recommended-package-structure}
+## 推荐的包结构 {#recommended-package-structure}
 
 ![Experience Manager项目包结构](assets/content-package-organization.png)
 
@@ -70,6 +70,7 @@ Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理�
       + `/apps/settings`
    + ACL（权限）
       + `/apps`下任何路径的任何`rep:policy`
+   + [预编译的捆绑脚本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + `ui.config`包包含所有[OSGi配置](/help/implementing/deploying/configuring-osgi.md):
    + 包含特定于运行模式的OSGi配置定义的组织文件夹
@@ -124,7 +125,7 @@ Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理�
       + `site-b.ui.config` 部署站点B所需的OSGi配置
       + `site-b.ui.content` 部署站点B所需的内容和配置
 
-### 额外应用程序包{#extra-application-packages}
+### 其他应用程序包{#extra-application-packages}
 
 如果AEM部署使用了其他AEM项目（这些项目本身由其自己的代码和内容包组成），则应将其容器包嵌入项目的`all`包中。
 
@@ -138,7 +139,7 @@ Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理�
    + `vendor-x.all` 部署供应商X应用程序所需的所有内容（代码和内容）
    + `vendor-y.all` 部署供应商Y应用程序所需的所有内容（代码和内容）
 
-## 包类型{#package-types}
+## 包类型 {#package-types}
 
 将使用其声明的包类型标记包。
 
@@ -153,7 +154,7 @@ Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理�
 >
 >有关完整的代码片段，请参阅下面的[POM XML代码片段](#xml-package-types)部分。
 
-## 通过Analytics Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}标记要部署的Adobe包
+## 标记要由Adobe Cloud Manager部署的Adobe包 {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
 默认情况下，Adobe Cloud Manager 会收集由 Maven 内部版本生成的所有包，但是，由于容器 (`all`) 包是包含所有代码和内容包的单个部署对象，因此我们必须确保&#x200B;**仅**&#x200B;部署容器 (`all`) 包。要确保这一点，Maven 内部版本生成的其他包必须使用 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` 的 FileVault Content Package Maven Plug-In 配置进行标记。
 
@@ -191,7 +192,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
 >
 >有关完整的代码片段，请参阅下面的[Repo Init代码片段](#snippet-repo-init)部分。
 
-## 存储库结构包{#repository-structure-package}
+## 存储库结构包 {#repository-structure-package}
 
 代码包需要配置FileVault Maven插件的配置，以引用强制实施结构依赖关系正确性的`<repositoryStructurePackage>`（以确保一个代码包不会安装在另一个代码包上）。 您可以[为项目创建自己的存储库结构包](repository-structure-package.md)。
 
@@ -234,7 +235,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
    >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
 
 + 第3级文件夹必须是
-   `application`、 `content` 或  `container`
+   `application`, `content` 或 `container`
    + `application`文件夹包含代码包
    + `content`文件夹包含内容包
    + `container`文件夹包含AEM应用程序可能包含的任何[额外应用程序包](#extra-application-packages)。
@@ -256,7 +257,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
 >
 >有关完整的代码片段，请参阅下面的[POM XML代码片段](#xml-embeddeds)部分。
 
-### 容器包的过滤器定义{#container-package-filter-definition}
+### 容器包的过滤器定义 {#container-package-filter-definition}
 
 由于在容器包中嵌入了代码和内容子包，因此必须将嵌入的目标路径添加到容器项目的`filter.xml`中，以确保在构建时将嵌入的包包含在容器包中。
 
@@ -266,7 +267,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
 >
 >有关完整的代码片段，请参阅下面的[POM XML代码片段](#xml-container-package-filters)部分。
 
-## 嵌入第三方包{#embedding-3rd-party-packages}
+## 嵌入第三方包 {#embedding-3rd-party-packages}
 
 所有包都必须通过[Adobe的公共Maven对象存储库](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)或可访问的可引用的第三方Maven对象存储库来提供。
 
@@ -282,7 +283,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
 >
 >有关完整的代码片段，请参阅下面的[POM XML代码片段](#xml-3rd-party-maven-repositories)部分。
 
-## `ui.content`包{#package-dependencies}中`ui.apps`之间的包依赖关系
+## `ui.content`包中`ui.apps`之间的包依赖关系 {#package-dependencies}
 
 为确保正确安装软件包，建议建立软件包间依赖关系。
 
@@ -296,7 +297,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
 
 内容包依赖关系的常见模式包括：
 
-### 简单部署包依赖项{#simple-deployment-package-dependencies}
+### 简单部署包依赖项 {#simple-deployment-package-dependencies}
 
 简单的用例会将`ui.content`可变内容包设置为依赖于`ui.apps`不可变代码包。
 
@@ -304,7 +305,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
    + `ui.apps` 没有依赖项
    + `ui.content` 取决于  `ui.apps`
 
-### 复杂部署包依赖项{#complex-deploxment-package-dependencies}
+### 复杂的部署包依赖项 {#complex-deploxment-package-dependencies}
 
 复杂的部署会根据简单的情况进行扩展，并设置相应可变内容和不可变代码包之间的依赖关系。 根据需要，还可以在不可变代码包之间建立依赖关系。
 
@@ -315,23 +316,23 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
    + `site-b.ui.apps` 取决于  `common.ui.apps`
    + `site-b.ui.content` 取决于  `site-b.ui.apps`
 
-## 本地开发和部署{#local-development-and-deployment}
+## 本地开发和部署 {#local-development-and-deployment}
 
 本文概述的项目结构和组织是完全兼容的&#x200B;**本地开发AEM实例。**
 
-## POM XML代码片段{#pom-xml-snippets}
+## POM XML片段 {#pom-xml-snippets}
 
 以下是可添加到Maven项目的Maven `pom.xml`配置片段，以符合上述建议。
 
-### 包类型{#xml-package-types}
+### 包类型 {#xml-package-types}
 
 作为子包部署的代码和内容包必须声明&#x200B;**应用程序**&#x200B;或&#x200B;**内容**&#x200B;包类型,具体取决于它们包含的内容。
 
-#### 容器包类型{#container-package-types}
+#### 容器包类型 {#container-package-types}
 
 容器`all/pom.xml`项目&#x200B;**未**&#x200B;声明`<packageType>`。
 
-#### 代码（不可变）包类型{#immutable-package-types}
+#### 代码（不可变）包类型 {#immutable-package-types}
 
 代码包必须将其`packageType`设置为`application`。
 
@@ -358,7 +359,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
     ...
 ```
 
-#### 内容（可变）包类型{#mutable-package-types}
+#### 内容（可变）包类型 {#mutable-package-types}
 
 内容包必须将其`packageType`设置为`content`。
 
@@ -385,7 +386,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
     ...
 ```
 
-### 为AdobeCloud Manager部署标记包{#cloud-manager-target}
+### 为AdobeCloud Manager部署标记包 {#cloud-manager-target}
 
 在生成包的每个项目中，**除**&#x200B;容器 (`all`) 项目外，将 `<cloudManagerTarget>none</cloudManagerTarget>` 添加到 `filevault-package-maven-plugin` 插件声明的 `<properties>` 配置中，以确保 Adobe Cloud Manager **不**&#x200B;部署这些它们。容器(`all`)包应是通过Cloud Manager部署的单个包，Cloud Manager又嵌入所有必需的代码和内容包。
 
@@ -429,7 +430,7 @@ scripts=["
 
 `scripts` OSGi属性包含由[Apache Sling的Repo Init语言](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)定义的指令。
 
-### 存储库结构包{#xml-repository-structure-package}
+### 存储库结构包 {#xml-repository-structure-package}
 
 在声明代码包(`<packageType>application</packageType>`)的`ui.apps/pom.xml`和任何其他`pom.xml`中，将以下存储库结构包配置添加到FileVault Maven插件。 您可以[为项目创建自己的存储库结构包](repository-structure-package.md)。
 
@@ -455,7 +456,7 @@ scripts=["
     ...
 ```
 
-### 在容器包{#xml-embeddeds}中嵌入子包
+### 在容器包中嵌入子包 {#xml-embeddeds}
 
 在`all/pom.xml`中，将以下`<embeddeds>`指令添加到`filevault-package-maven-plugin`插件声明中。 请记住，**不**&#x200B;使用`<subPackages>`配置，因为这将包括`/etc/packages`中的子包，而不是`/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`中的子包。
 
@@ -533,7 +534,7 @@ scripts=["
 ...
 ```
 
-### 容器包的过滤器定义{#xml-container-package-filters}
+### 容器包的过滤器定义 {#xml-container-package-filters}
 
 在 `all` 项目的 `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`) 中，**包括**&#x200B;要部署的任何包含子包的 `-packages` 文件夹：
 
@@ -543,7 +544,7 @@ scripts=["
 
 如果在嵌入式目标中使用多个`/apps/*-packages`，则必须在此处枚举所有这些目标。
 
-### 第三方Maven存储库{#xml-3rd-party-maven-repositories}
+### 第三方Maven存储库 {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
 >
@@ -570,7 +571,7 @@ scripts=["
 </repositories>
 ```
 
-### `ui.content`包{#xml-package-dependencies}中`ui.apps`之间的包依赖关系
+### `ui.content`包中`ui.apps`之间的包依赖关系 {#xml-package-dependencies}
 
 在`ui.content/pom.xml`中，将以下`<dependencies>`指令添加到`filevault-package-maven-plugin`插件声明中。
 
@@ -596,7 +597,7 @@ scripts=["
 ...
 ```
 
-### 清除容器项目的目标文件夹{#xml-clean-container-package}
+### 清除容器项目的目标文件夹 {#xml-clean-container-package}
 
 在`all/pom.xml`中添加`maven-clean-plugin`插件，该插件将在Maven内部版本之前清理目标目录。
 
