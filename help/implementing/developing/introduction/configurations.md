@@ -1,19 +1,19 @@
 ---
 title: 配置和配置浏览器
 description: 了解AEM配置以及它们如何在AEM中管理工作区设置。
-source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
+source-git-commit: 4892f644929bc308762ca4fb8a2ebfb85e5fb5e2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1498'
 ht-degree: 2%
 
 ---
 
 
-# 配置和配置浏览器{#configuration-browser}
+# 配置和配置浏览器 {#configuration-browser}
 
 AEM配置用于管理AEM中的设置并用作工作区。
 
-## 什么是配置？{#what-is-a-configuration}
+## 什么是配置？ {#what-is-a-configuration}
 
 配置可以从两个不同的角度来考虑。
 
@@ -27,16 +27,16 @@ AEM配置用于管理AEM中的设置并用作工作区。
 * 配置可为特定用户组启用某些功能。
 * 配置定义这些功能的访问权限。
 
-## 管理员{#configurations-administrator}的配置
+## 管理员身份的配置 {#configurations-administrator}
 
 AEM管理员和作者可以将配置视为工作区。 这些工作区可用于通过实施这些功能的访问权限，为组织目的收集设置组及其关联内容。
 
 可以在AEM中为许多不同的功能创建配置。
 
-* [云配置](/help/implementing/developing/introduction/configurations.md)
 * [ContextHub区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [可编辑的模板](/help/sites-cloud/authoring/features/templates.md)
+* 各种云配置
 
 ### 示例 {#administrator-example}
 
@@ -56,7 +56,7 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 
 不仅对可编辑的模板，对于云配置、ContextHub区段和内容片段模型也可进行类似设置。
 
-### 使用配置浏览器{#using-configuration-browser}
+### 使用配置浏览器 {#using-configuration-browser}
 
 通过配置浏览器，管理员可以轻松地在AEM中创建、管理和配置配置配置的访问权限。
 
@@ -64,7 +64,7 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 >
 >仅当用户具有`admin`权限时，才可以使用配置浏览器创建配置。 `admin` 此外，还需要权限才能为配置分配访问权限或以其他方式修改配置。
 
-#### 创建配置{#creating-a-configuration}
+#### 创建配置 {#creating-a-configuration}
 
 在AEM中使用配置浏览器创建新配置非常简单。
 
@@ -79,17 +79,17 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
       * 它将根据标题自动生成，并根据[AEM命名约定进行调整。](naming-conventions.md)
       * 如有必要，可进行调整。
 1. 检查您希望允许的配置类型。
-   * [云配置](/help/implementing/developing/introduction/configurations.md)
    * [ContextHub区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
    * [可编辑的模板](/help/sites-cloud/authoring/features/templates.md)
+   * 各种云配置
 1. 点按或单击&#x200B;**创建**。
 
 >[!TIP]
 >
 >可以嵌套配置。
 
-#### 编辑配置及其访问权限{#access-rights}
+#### 编辑配置及其访问权限 {#access-rights}
 
 如果将配置视为工作区，则可以对这些配置设置访问权限，以强制哪些人可以访问这些工作区，哪些人可能不访问这些工作区。
 
@@ -110,11 +110,11 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 1. 重复这些步骤以选择用户或角色，并根据需要分配其他访问权限。
 1. 完成后，点按或单击&#x200B;**保存并关闭**。
 
-## 开发人员{#configurations-developer}的配置
+## 作为开发人员的配置 {#configurations-developer}
 
 作为开发人员，了解AEM as a Cloud Service如何与配置一起工作以及如何处理配置解析非常重要。
 
-### 配置与内容的分离{#separation-of-config-and-content}
+### 配置和内容分离 {#separation-of-config-and-content}
 
 尽管[管理员和用户可能将配置视为工作场所](#configurations-administrator)来管理不同的设置和内容，但务必要了解，配置和内容由AEM在存储库中单独存储和管理。
 
@@ -161,7 +161,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 最后，我们看到示例代码所需的属性`bgkcolor`。 我们从`getItem`返回的`ValueMap`基于页面的`jcr:content`节点。
 
-### 配置分辨率{#configuration-resolution}
+### 配置分辨率 {#configuration-resolution}
 
 上述基本示例显示了单个配置。 但是，在很多情况下，您希望具有不同的配置，例如默认全局配置、每个品牌的不同配置，以及子项目的特定配置。
 
@@ -192,13 +192,13 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
    * 已通过应用程序部署修复
    * 运行时为只读
 
-### 使用配置{#using-configurations}
+### 使用配置 {#using-configurations}
 
 AEM中的配置基于Sling上下文感知配置。 Sling包提供了一个服务API，可用于获取上下文感知配置。 上下文感知配置是与内容资源或资源树相关的配置，如上一个示例中所述。](#developer-example)[
 
 有关上下文感知配置、示例以及如何使用这些配置的更多详细信息，请[参阅Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
-### ConfMgr Web控制台{#confmgr-web-console}
+### ConfMgr Web控制台 {#confmgr-web-console}
 
 出于调试和测试目的，在`https://<host>:<port>/system/console/conf`处有一个&#x200B;**ConfMgr** Web控制台，该控制台可显示给定路径/项目的配置。
 
@@ -212,7 +212,7 @@ AEM中的配置基于Sling上下文感知配置。 Sling包提供了一个服务
 
 单击&#x200B;**Resolve**&#x200B;查看已解析的配置，并接收将解析这些配置的示例代码。
 
-### 上下文感知配置Web控制台{#context-aware-web-console}
+### 上下文感知配置Web控制台 {#context-aware-web-console}
 
 出于调试和测试目的，在`https://<host>:<port>/system/console/slingcaconfig`处有一个&#x200B;**上下文感知配置** Web控制台，该控制台允许查询存储库中的上下文感知配置并查看其属性。
 
