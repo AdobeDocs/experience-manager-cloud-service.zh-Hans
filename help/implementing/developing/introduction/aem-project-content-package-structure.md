@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
+source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
 workflow-type: tm+mt
 source-wordcount: '2880'
 ht-degree: 12%
@@ -70,7 +70,7 @@ Oak索引(`/oak:index`)由AEM专门作为Cloud Service部署过程进行管理�
       + `/apps/settings`
    + ACL（权限）
       + `/apps`下任何路径的任何`rep:policy`
-   + [预编译的捆绑脚本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [预编译的捆绑脚本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + `ui.config`包包含所有[OSGi配置](/help/implementing/deploying/configuring-osgi.md):
    + 包含特定于运行模式的OSGi配置定义的组织文件夹
