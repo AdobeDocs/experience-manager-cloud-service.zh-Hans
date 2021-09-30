@@ -2,9 +2,9 @@
 title: 了解程序和程序类型
 description: 了解程序和程序类型 — Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -39,8 +39,8 @@ $ git clone {URL}
 用户可以创建&#x200B;**Sandbox**&#x200B;或&#x200B;**Production**&#x200B;程序。
 
 * 创建&#x200B;*生产程序*以在将来的适当时间启用实时流量。
-有关更多详细信息，请参阅生产计划简介。
+有关更多详细信息，请参阅[生产程序简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en)。
 
 
 * 通常，创建&#x200B;*沙盒项目*是为了用于培训、运行演示、启用、POC或文档目的。 它不用于传输实时流量，并且将具有生产程序不会受到的限制。 它将包含站点和资产，并且将使用自动填充的Git分支来交付，该分支包含示例代码、开发环境和非生产管道。
-有关更多详细信息，请参阅沙盒项目简介。
+有关更多详细信息，请参阅[沙盒程序简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en)。

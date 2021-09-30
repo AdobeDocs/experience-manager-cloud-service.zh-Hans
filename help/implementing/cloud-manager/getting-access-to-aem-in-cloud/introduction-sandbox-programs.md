@@ -2,9 +2,9 @@
 title: '沙盒程序简介 '
 description: 沙盒程序简介
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ ht-degree: 0%
 
 沙盒程序包括[!DNL Sites]和[!DNL Assets]，并自动填充了Git存储库、开发环境和非生产管道。  Git存储库会使用基于AEM项目原型的示例项目填充。
 
-请参阅了解程序和程序类型，以了解有关程序类型的更多信息。
+>[!NOTE]
+>自定义域和IP允许列表在沙盒项目中不可用。
+
+请参阅[了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) ，了解有关程序类型的更多信息。
 
 ### 沙盒程序的属性 {#attributes-sandbox}
 
