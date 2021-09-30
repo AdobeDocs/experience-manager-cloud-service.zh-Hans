@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 8%
@@ -78,7 +78,7 @@ Cloud Manager用户将AEM Assets的Brand Portal激活为[!DNL Cloud Service]实�
 
 如果您不确定Brand Portal URL，请执行以下步骤：
 
-1. 登录到[Admin Console](http://adminconsole.adobe.com/)，然后导航到&#x200B;**[!UICONTROL 产品]**。
+1. 登录到[Admin Console](https://adminconsole.adobe.com/)，然后导航到&#x200B;**[!UICONTROL 产品]**。
 1. 从左边栏中，选择&#x200B;**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**。
 1. 单击&#x200B;**[!UICONTROL 转到Brand Portal]**，以在浏览器中直接打开Brand Portal。
 
@@ -229,8 +229,8 @@ IMS 配置包括两个步骤：
 公钥（证书）在Adobe开发人员控制台上对您的配置文件进行身份验证。
 
 1. 登录 AEM Assets。
-1. 从&#x200B;**工具**&#x200B;面板中，导航到&#x200B;**[!UICONTROL 安全]** > **[!UICONTROL AdobeIMS配置]**。
-1. 在“AdobeIMS配置”页面中，单击&#x200B;**[!UICONTROL 创建]**。 它将重定向到&#x200B;**[!UICONTROL AdobeIMS技术帐户配置]**&#x200B;页面。 默认情况下，将打开&#x200B;**Certificate**&#x200B;选项卡。
+1. 从&#x200B;**工具**&#x200B;面板中，导航到&#x200B;**[!UICONTROL 安全]** > **[!UICONTROL Adobe IMS配置]**。
+1. 在Adobe IMS配置页面中，单击&#x200B;**[!UICONTROL 创建]**。 它将重定向到&#x200B;**[!UICONTROL Adobe IMS技术帐户配置]**&#x200B;页面。 默认情况下，将打开&#x200B;**Certificate**&#x200B;选项卡。
 1. 在&#x200B;**[!UICONTROL 云解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL AdobeBrand Portal]**。
 1. 选中&#x200B;**[!UICONTROL 创建新证书]**&#x200B;复选框，并为公钥指定&#x200B;**别名**。 别名用作公钥的名称。
 1. 单击&#x200B;**[!UICONTROL 创建证书]**。然后，单击&#x200B;**[!UICONTROL OK]**&#x200B;以生成公共密钥。
@@ -245,7 +245,7 @@ IMS 配置包括两个步骤：
 
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 
-   在&#x200B;**帐户**&#x200B;选项卡中，将创建AdobeIMS帐户，该帐户需要在Adobe开发人员控制台中生成的服务帐户凭据。 暂时保持此页面打开。
+   在&#x200B;**帐户**&#x200B;选项卡中，将创建Adobe IMS帐户，该帐户需要在Adobe开发人员控制台中生成的服务帐户凭据。 暂时保持此页面打开。
 
    在Adobe开发人员控制台](#createnewintegration)中打开新选项卡并[创建服务帐户(JWT)连接，以获取用于配置IMS帐户的凭据和JWT有效负载。
 

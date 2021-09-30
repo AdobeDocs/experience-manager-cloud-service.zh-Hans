@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Assets HTTP API中的Cloud Service内容片
 description: 了解资产HTTP API中对内容片段的支持，HTTP API是AEM的一项重要无头交付功能。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1947'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ HTTP方法确定要执行的操作：
    </td>
   </tr>
   <tr>
-   <td>安全</td>
+   <td>安全性</td>
    <td><p>可以使用多个选项。</p> <p>OAuth是提出的；可以与标准设置分开配置。</p> </td>
    <td>使用AEM标准设置。</td>
   </tr>
@@ -138,7 +138,7 @@ HTTP方法确定要执行的操作：
  </tbody>
 </table>
 
-### 安全 {#security}
+### 安全性 {#security}
 
 如果在没有特定身份验证要求的环境中使用AEM REST API，则需要正确配置Assets CORS筛选器。
 
@@ -256,7 +256,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅[API引用](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>有关更多详细信息，请参阅[API引用](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 读取/投放 {#read-delivery}
 
@@ -374,7 +374,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 
 有关详细的API参考，请参阅此处：
 
-* [Adobe Experience Manager Assets API — 内容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [资产 HTTP API](/help/assets/mac-api-assets.md)
 

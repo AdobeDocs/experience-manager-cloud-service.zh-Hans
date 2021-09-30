@@ -3,12 +3,12 @@ title: 管理数字资产的元数据
 description: 了解元数据的类型，以及 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 如何根据资产的元数据自动组织和处理资产。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 资产管理，元数据
+feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1854'
 ht-degree: 15%
 
 ---
@@ -183,7 +183,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 相册 — [!DNL Adobe Photoshop Album]。
 * CQ — 由[!DNL Experience Manager Assets]使用。
 * DAM — 由[!DNL Experience Manager Assets]使用。
-* DEX - [Optima SC描述资源管理器](http://www.optimasc.com/products/dex/index.html)是用于Windows操作系统的元数据和文件管理的工具集合。
+* DEX - [Optima SC描述资源管理器](https://www.optimasc.com/products/dex/index.html)是用于Windows操作系统的元数据和文件管理的工具集合。
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
 * LR - [!DNL Adobe Lightroom]。
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
@@ -231,5 +231,5 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >[!MORELIKETHIS]
 >
 >* [XMP 元数据](xmp-metadata.md)
-* [如何编辑或添加元数据](meta-edit.md)
+>* [如何编辑或添加元数据](meta-edit.md)
 
