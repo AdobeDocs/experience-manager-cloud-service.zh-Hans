@@ -1,13 +1,13 @@
 ---
 title: 管理工作流实例
 description: 了解如何管理工作流实例
-feature: 管理
+feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 1%
+source-wordcount: '1118'
+ht-degree: 0%
 
 ---
 
@@ -162,8 +162,84 @@ ht-degree: 1%
 
 >[!NOTE]
 >要将配置添加到存储库，服务PID为：
->`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
+>`com.adobe.granite.workflow.core.WorkflowSessionFactory`。
 
 | 属性名称（Web控制台） | OSGi属性名称 |
 |---|---|
 | 最大收件箱查询大小 | granite.workflow.inboxQuerySize |
+
+## 为客户拥有的数据存储使用工作流变量 {#using-workflow-variables-customer-datastore}
+
+工作流中使用的数据存储在Adobe提供的存储(JCR)中。 此数据在性质上可能是敏感的。 您可能希望将所有用户定义的元数据/数据保存在您自己的托管存储中，而不是Adobe提供的存储中。 本节介绍如何为外部存储设置这些变量。
+
+### 设置模型以使用元数据的外部存储 {#set-model-for-external-storage}
+
+在工作流模型级别，计划引入一个标记来指示模型（及其运行时实例）具有元数据的外部存储。 对于标记为外部存储的模型的工作流实例，不会在JCR中保留用户元数据。
+
+要激活此功能，必须启用外部持久性标记：**userMetaDataCustomPersistenceEnabled = &quot;true&quot;**。
+属性*userMetadataPersistenceEnabled*&#x200B;将存储在工作流模型的&#x200B;*jcr:content节点*&#x200B;上。 此标记将作为&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流元数据中。
+
+下图显示了必须在工作流中设置标记。
+
+![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
+
+### 外部存储中元数据的API {#apis-for-metadata-external-storage}
+
+UserMetaDataPersistenceContext
+
+以下示例向您展示了如何使用API。
+
+```
+@ProviderType
+public interface UserMetaDataPersistenceContext {
+ 
+    /**
+     * Gets the workflow for persistence
+     * @return workflow
+     */
+    Workflow getWorkflow();
+ 
+    /**
+     * Gets the workflow id for persistence
+     * @return workflowId
+     */
+    String getWorkflowId();
+ 
+    /**
+     * Gets the user metadata persistence id
+     * @return userDataId
+     */
+    String getUserDataId();
+}
+```
+
+UserMetaDataPersistenceProvider
+
+```
+/**
+ * This provider can be implemented to store the user defined workflow-data metadata in a custom storage location
+ */
+@ConsumerType
+public interface UserMetaDataPersistenceProvider {
+ 
+   /**
+    * Retrieves the metadata using a unique identifier
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap of user defined workflow data metaData
+    * @throws WorkflowException
+    */
+   void get(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+   /**
+    * Stores the given metadata to the custom storage location
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap metadata map
+    * @return the unique identifier that can be used to retrieve metadata. If null is returned, then workflowId is used.
+    * @throws WorkflowException
+    */
+   String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+} 
+```
+
+
