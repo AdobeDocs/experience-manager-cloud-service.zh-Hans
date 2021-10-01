@@ -2,16 +2,16 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 99%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
 
 # 创作环境和工具 {#authoring-the-environment-and-tools}
 
-AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可以从各种控制台和页面编辑器访问提供的工具。
+AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可以从各种控制台和页面编辑器访问提供的工具。
 
 ## 管理您的网站 {#managing-your-site}
 
@@ -260,7 +260,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 另外，在适当时，**页面信息**&#x200B;还允许访问分析和建议。
 
-## 页面模式  {#page-modes}
+## 页面模式 {#page-modes}
 
 编辑页面时可以使用多种模式来执行不同的操作：
 
@@ -269,6 +269,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) - 通过在所有渠道中进行定位和衡量来提高内容相关性。
 * [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 允许您查看页面在特定时间点的状态。
 * [Live Copy 状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - 允许快速查看 Live Copy 状态以及继承/未继承的组件。
+* [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
 * [预览](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 用于查看将在发布环境中显示的页面；或使用内容中的链接进行导航。
 * [注释](/help/sites-cloud/authoring/fundamentals/annotations.md) - 用于在页面上添加或查看注释。
 
@@ -286,12 +287,11 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >
 
 
-
 ## 路径选择 {#path-selection}
 
 在创作时，通常需要选择其他资源，例如在定义指向其他页面或资源的链接或者选择图像时。为了轻松选择路径，[路径字段](#path-fields)提供了自动完成功能，并且还可通过[路径浏览器](#path-browser)做出更可靠的选择。
 
-### 路径字段  {#path-fields}
+### 路径字段 {#path-fields}
 
 此处所用的说明示例是图像组件。有关使用和编辑组件的更多信息，请参阅[页面创作组件](/help/sites-cloud/authoring/fundamentals/components.md)。
 
