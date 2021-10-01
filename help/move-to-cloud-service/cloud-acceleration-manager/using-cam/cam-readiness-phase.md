@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
-
 
 # Cloud Acceleration Manager中的就绪阶段 {#readiness-phase-cam}
 
@@ -54,6 +54,9 @@ ht-degree: 5%
 1. 单击&#x200B;**上传新报表**&#x200B;以在CAM中上传BPA报表。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >如果您处于浏览器的“隐身”模式，则无法上传报表。
 
 1. 上传新报表后，您将看到“最佳实践分析”报表。
 
