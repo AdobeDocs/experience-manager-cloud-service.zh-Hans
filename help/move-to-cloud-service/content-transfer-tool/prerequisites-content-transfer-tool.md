@@ -2,9 +2,9 @@
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 1%
 | 总索引大小 | 当前支持最大25GB的索引总大小。 与Adobe客户关怀团队一起创建支持票证，以讨论索引大小超过此限制的选项。 |
 | 节点名称长度 | 节点名称的长度必须小于或等于150字节。 长度超过150字节的节点名称必须缩短为&lt;= 150字节，才能由AEM中作为Cloud Service存储的“文档”节点提供支持。 如果未修复这些长节点名称，则摄取将失败。 |
 | 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径中的内容。 要从`/etc`传输内容，只允许选择某些`/etc`路径，但仅支持将[AEM Forms作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)传输到AEM Forms。 有关所有其他用例，请参阅[通用存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) ，了解有关存储库重组的更多信息。 |
+| MongoDB中的节点属性值 | MongoDB中存储的节点属性值不能超过16MB。 这由MongoDB强制执行。 如果存在大于此限制的属性值，则摄取将失败。 运行提取之前，请运行此[oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar)脚本。 检查所有大属性值，并验证是否需要它们。 超过16MB的数据需要转换为二进制值。 |
 
 ## 下一步 {#whats-next}
 
