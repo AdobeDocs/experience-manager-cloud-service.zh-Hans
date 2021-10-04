@@ -2,10 +2,10 @@
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 85%
+source-wordcount: '1769'
+ht-degree: 82%
 
 ---
 
@@ -79,6 +79,10 @@ ht-degree: 85%
 >[!NOTE]
 >
 >从编辑器中发布是一种简单的发布方式，即只会发布选定的一个或多个页面，而不会发布任何子页面。
+
+>[!NOTE]
+>
+>无法发布编辑器中由[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)访问的页面。 编辑器中的发布选项仅适用于通过实际路径访问的页面。
 
 ### 从控制台中发布 {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ ht-degree: 85%
 ### 从编辑器中取消发布 {#unpublishing-from-the-editor}
 
 在编辑页面时，如果您希望取消发布该页面，请选择&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**取消发布页面**，这与[发布页面](#publishing-from-the-editor)非常类似。
+
+>[!NOTE]
+>
+>无法取消发布编辑器中由[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)访问的页面。 编辑器中的发布选项仅适用于通过实际路径访问的页面。
 
 ### 从控制台中取消发布 {#unpublishing-from-the-console}
 

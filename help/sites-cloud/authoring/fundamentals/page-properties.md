@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 56%
+source-wordcount: '1966'
+ht-degree: 53%
 
 ---
 
@@ -101,14 +101,9 @@ ht-degree: 56%
    * **重定向**  — 指示此页面应自动重定向到的页面
    * **设计**  — 指示在生成的网站的页面导航中是否显示或隐藏页面
    * **别名**  — 指定要与此页一起使用的别名
-
-   >[!NOTE]
-   >
-   >别名会设置 `sling:alias` 属性以定义资源的别名（这仅会影响资源，不会影响路径）。
-   >
-   >例如：如果您为节点 `/content/we-retail/spanish` 定义别名 `latin-lang`，则可以通过 `/content/we-retail/latin-language` 访问此页面。
-   >
-   >有关详细信息，请参阅“SEO 和 URL 管理最佳实践”下的“本地化的页面名称”。
+      * 例如，如果为页面`/content/wknd/us/en/magazine/members-only`定义别名`private`，则也可以通过`/content/wknd/us/en/magazine/private`访问此页面
+      * 创建别名会在页面节点上设置`sling:alias`属性，这仅会影响资源，而不会影响存储库路径。
+      * 无法发布编辑器中别名访问的页面。 [编辑](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 器中的发布选项仅适用于通过实际路径访问的页面。
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -205,7 +200,7 @@ ht-degree: 56%
 * **暂停**  — 暂停Live Copy以进一步转出修改
 * **分离**  — 从Blueprint中分离Live Copy
 
-* **源**
+* **来源**
 
    * 显示此Live Copy的Blueprint的路径
 
