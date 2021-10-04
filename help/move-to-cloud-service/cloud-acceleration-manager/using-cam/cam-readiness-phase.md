@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '751'
 ht-degree: 5%
 
 ---
@@ -66,6 +66,19 @@ ht-degree: 5%
 
    >[!NOTE]
    >上传新报表会重置所有评估。
+
+1. 单击&#x200B;**打印预览**&#x200B;图标，如下所示，以便轻松共享。
+
+   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. 单击&#x200B;**打印预览**&#x200B;会打开一个新选项卡，其中报告显示在可打印的预览中。 单击&#x200B;**Print**&#x200B;以将报表打印为PDF格式，以便轻松共享。
+
+   >[!IMPORTANT]
+   >* 建议并支持选项&#x200B;**另存为PDF**&#x200B;来实现上述功能。
+   >* 如果使用浏览器的打印按钮，则将仅打印一页。
+
+
+   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 查看最佳实践分析报表 {#analysis-report}
 

@@ -2,10 +2,10 @@
 title: 使用最佳实践分析器
 description: 使用最佳实践分析器
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 41%
+source-wordcount: '2522'
+ht-degree: 42%
 
 ---
 
@@ -92,18 +92,6 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. 单击&#x200B;**打印预览**&#x200B;图标，如下所示，以便轻松共享。
-
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. 单击&#x200B;**打印预览**&#x200B;会打开一个新选项卡，其中报告显示在可打印的预览中。 单击&#x200B;**Print**&#x200B;以将报表打印为PDF格式，以便轻松共享。
-
-   >[!IMPORTANT]
-   * 建议并支持选项&#x200B;**另存为PDF**&#x200B;来实现上述功能。
-   * 如果使用浏览器的打印按钮，则将仅打印一页。
-
-
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### 在“最佳实践分析器”报告中使用过滤器 {#bpa-filters}
