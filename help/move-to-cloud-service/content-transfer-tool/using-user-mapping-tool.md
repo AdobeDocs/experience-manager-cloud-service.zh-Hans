@@ -2,10 +2,10 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
+source-git-commit: b290b402fe58d449dd85e9eaaef5b75e61ac1a74
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 2%
+source-wordcount: '1367'
+ht-degree: 1%
 
 ---
 
@@ -75,17 +75,20 @@ ht-degree: 2%
 
 用户映射工具已集成到内容传输工具中。 您可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载内容传输工具。 有关最新版本的更多详细信息，请参阅[当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-1. 选择 Adobe Experience Manager 并导航到工具 -> **操作** -> **内容传输**。
+1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **用户映射**。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+
 1. 单击&#x200B;**创建用户映射配置**。
 
    >[!NOTE]
    >如果跳过此步骤，则在提取阶段会跳过用户和组映射。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
 
-   按如下所述填充用户管理API配置中的字段：
+   按如下所述填充&#x200B;**用户管理API配置**&#x200B;中的字段。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
 
    * **组织ID**:输入要迁移Adobe的组织的Identity Management系统(IMS)组织ID。
 
@@ -99,16 +102,15 @@ ht-degree: 2%
       >[!NOTE]
       >访问令牌每24小时过期一次，并且需要创建一个新令牌。 要创建新令牌，请返回至[Adobe开发人员控制台](https://console.adobe.io)，选择您的项目，单击&#x200B;**用户管理API**&#x200B;并将相同的私钥粘贴到框中。
 
-1. 在输入上述信息后，单击&#x200B;**Save**。
+1. 填充字段后，单击&#x200B;**测试配置**&#x200B;以测试与用户管理API服务的连接。 如果连接成功，您将能够单击&#x200B;**Save**&#x200B;以保存配置。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+1. 保存配置后，选择配置并单击&#x200B;**启动用户映射**。
 
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. 通过单击&#x200B;**创建迁移集**&#x200B;并填充字段，然后单击&#x200B;**保存**&#x200B;来创建迁移集。 有关更多详细信息，请参阅[运行内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)。
+1. 完成用户映射后，单击&#x200B;**Results**&#x200B;以查看摘要。
 
-   >[!NOTE]
-   >默认情况下，用于包括从IMS用户和组映射用户的切换开关处于开启状态。 通过此设置，在对此迁移集执行提取时，用户映射工具将作为提取阶段的一部分运行。 这是运行内容传输工具提取阶段的推荐方法。 如果此切换开关处于关闭状态，并且/或未创建用户映射配置，则在提取阶段期间将跳过用户和组映射。
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
-
-1. 要运行提取阶段，请参阅[运行内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)。
+   >[!IMPORTANT]
+   >完成用户映射后，您可以使用痕迹导航导航导航导航回内容迁移页面。 用户映射卡显示状态和时间戳。 单击&#x200B;**内容传输**&#x200B;以创建要运行提取的迁移集。 有关更多详细信息，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)。
