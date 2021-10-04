@@ -2,7 +2,7 @@
 title: CI-CD管线
 description: CI-CD管线
 index: false
-source-git-commit: e51b995aebb053f38cb99879be70e23447f543c0
+source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 在Cloud Manager中，管道有两种类型：
 
-* **生产管道**
-* **非生产管道**
+* [生产管道](#prod-pipeline)
+* [非生产管道](#non-prod-pipeline)
 
 ## 生产管道 {#prod-pipeline}
 
