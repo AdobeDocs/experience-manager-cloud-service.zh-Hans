@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
+source-git-commit: a9d3547900c84101672cd0400bb374b1a8ccda33
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 38%
+source-wordcount: '3104'
+ht-degree: 37%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 38%
 
 * 访问令牌可在特定时间段后或Cloud Service环境升级后定期过期。 如果访问令牌已过期，您将无法连接到Cloud Service实例，因此您需要检索新的访问令牌。 与现有迁移集关联的状态图标将更改为红色云，并在您将鼠标悬停在该云上时显示一条消息。
 
-* 内容传输工具(CTT)在将内容从源实例传输到目标实例之前，不会执行任何类型的内容分析。 例如，CTT在将内容摄取到发布环境时，不会区分已发布和未发布的内容。 迁移集中指定的任何内容都将被摄取到所选目标实例中。 用户能够将迁移集摄取到创作实例或发布实例中，或同时摄取到两者中。 建议在将内容移动到生产实例时，在源创作实例上安装CTT以将内容移动到目标创作实例，同样，在源发布实例上安装CTT以将内容移动到目标发布实例。
+* 内容传输工具(CTT)在将内容从源实例传输到目标实例之前，不会执行任何类型的内容分析。 例如，CTT在将内容摄取到发布环境时，不会区分已发布和未发布的内容。 迁移集中指定的任何内容都将被摄取到所选目标实例中。 用户能够将迁移集摄取到创作实例或发布实例中，或同时摄取到两者中。 建议在将内容移动到生产实例时，在源创作实例上安装CTT以将内容移动到目标创作实例，同样，在源发布实例上安装CTT以将内容移动到目标发布实例。 有关更多详细信息，请参阅[在发布实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) 。
 
 * 内容传输工具传输的用户和组只是内容满足权限要求的用户和组。 *Extraction*&#x200B;进程将整个`/home`复制到迁移集中，而&#x200B;*Ingestion*&#x200B;进程复制迁移内容ACL中引用的所有用户和组。 要自动将现有用户和组映射到其IMS ID，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
@@ -119,7 +119,7 @@ ht-degree: 38%
 
    1. **参数**：选择以下参数以创建迁移集：
 
-      1. **包含版本**：根据需要选择。
+      1. **包含版本**：根据需要选择。包含版本后，将自动包含路径`/var/audit`以迁移审核事件。
 
       1. **包括来自IMS用户和组的映射**:选择选项以包含来自IMS用户和群组的映射。有关更多详细信息，请参阅[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 
@@ -210,7 +210,7 @@ ht-degree: 38%
 >[!NOTE]
 >如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快摄取阶段。 有关更多详细信息，请参阅[使用AzCopy摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 。
 
-1. 从&#x200B;*概述*&#x200B;页面中选择迁移集，然后单击&#x200B;**摄取**&#x200B;以开始摄取。 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。单击&#x200B;**摄取**&#x200B;以开始摄取阶段。 否则其会将内容同时摄取到“创作”和“发布”。
+1. 从&#x200B;*概述*&#x200B;页面中选择迁移集，然后单击&#x200B;**摄取**&#x200B;以开始摄取。 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。一次可以将内容摄取到创作实例或发布实例。 选择要将内容摄取到的实例。 单击&#x200B;**摄取**&#x200B;以开始摄取阶段。
 
    >[!IMPORTANT]
    >如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
@@ -218,11 +218,11 @@ ht-degree: 38%
    >[!IMPORTANT]
    >启用&#x200B;**在摄取**&#x200B;之前擦除云实例上的现有内容选项后，它将删除整个现有存储库并创建新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到&#x200B;**administrators**&#x200B;组的管理员用户，也是如此。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    此外，单击&#x200B;**客户关怀**&#x200B;记录票证，如上图所示。 另请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以了解更多信息。
 
-1. 完成摄取后， **发布摄取**&#x200B;字段中的状态将更新为&#x200B;**已完成**。
+1. 完成摄取后，状态将更新为&#x200B;**FINISHED**。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -238,7 +238,7 @@ ht-degree: 38%
 
 1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补摄取的迁移集。单击&#x200B;**摄取**&#x200B;以开始增补提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >您应该禁用&#x200B;**在摄取**&#x200B;之前擦除云实例上的现有内容选项，以防止从上一个摄取活动中删除现有内容。 此外，单击&#x200B;**客户关怀**&#x200B;记录票证，如上图所示。
