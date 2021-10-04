@@ -1,9 +1,9 @@
 ---
 title: 使用Adobe开发人员应用程序生成器将 [!DNL Adobe Experience Manager] 扩展为Cloud Service。
 description: 使用Adobe开发人员应用程序生成器将 [!DNL Adobe Experience Manager] 扩展为Cloud Service。
-source-git-commit: 4bd0419ff31195fef1565b50f87b4b55f81361f0
+source-git-commit: 32580d3e45747b71e959b137e99fdb8e64cdf4bb
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ App Builder提供了统一的第三方可扩展性框架，用于集成和创建
 * 用户体验可扩展性 — 扩展核心体验以支持业务需求或构建特定于客户的数字资产、店面和后台应用程序。
 
 自2020年夏季以来，企业客户和合作伙伴可以通过我们的开发人员预览来使用应用程序生成器（以前称为项目Firefly）。 应用程序生成器的正式发布(GA)计划于2021年12月正式发布。 我们欢迎开发人员通过我们的[试用程序](http://adobe.ly/appbuilder-trial)来试用应用程序生成器。
+
+>[!NOTE]
+>
+> 对于要利用应用程序生成器的AEM 6.5客户，请转到[使用Adobe开发人员应用程序生成器](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)将Adobe Experience Manager扩展为Cloud Service。
 
 ## 架构 {#architecture}
 
