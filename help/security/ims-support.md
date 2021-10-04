@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
+source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 91%
+source-wordcount: '2024'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,11 @@ ht-degree: 91%
 
 >[!TIP]
 >
->请参阅我们的Experience League课程[为管理员配置对AEM的访问权限](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，以了解用户如何使用AdobeIMS对AEM as a Cloud Service进行身份验证，以及如何使用AdobeIMS用户、用户组和产品配置文件来控制对AEM及其特性和功能的访问。 Adobe ID必需。
+>请参阅我们的Experience League课程[为管理员配置对AEM的访问权限](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，以了解用户如何使用Adobe IMS对AEM as a Cloud Service进行身份验证，以及如何使用Adobe IMS用户、用户组和产品配置文件来控制对AEM及其特性和功能的访问权限。 Adobe ID必需。
+
+>[!NOTE]
+>
+>AEM作为Cloud Service的IMS登录不支持Admin Console中的嵌套组。
 
 ## 主要亮点 {#key-highlights}
 
