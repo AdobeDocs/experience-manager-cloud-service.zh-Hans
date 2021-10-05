@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
@@ -219,3 +219,9 @@ Apache Jackrabbit Oak支持灵活的索引配置，以高效处理搜索查询�
 
 全文索引`/oak:index/lucene-2`可能会变得非常大，因为它默认为AEM存储库中的所有节点编制索引。 Lucene全文索引已在内部弃用，从2021年9月起将不再部署在AEM中作为Cloud Service。 因此，它不再用在AEM中的产品端作为Cloud Service，也不应该要求它运行客户代码。 对于AEM作为具有常用Lucene索引的Cloud Service环境，Adobe正在与客户单独合作，以采用协调的方法来弥补此索引的不足，并使用更好、优化的索引。 如果自定义查询需要此索引，则作为临时解决方案，应使用其他名称（例如`/oak:index/acme.lucene-1-custom-1`）创建此索引的副本，如[此处](/help/operations/indexing.md)所述。
 此优化不适用于其他AEM环境（由内部部署托管或由Adobe Managed Services管理），除非Adobe另有建议。
+
+## 查询优化
+
+**查询性能**&#x200B;工具允许您同时查看常用和缓慢的JCR查询。 此外，它还能够分析查询并显示各种有关的信息，尤其是当某个索引正在用于此查询时。
+
+与AEM on premise不同，AEM as aCloud Service不再在UI中显示&#x200B;**查询性能**&#x200B;工具。 现在，可通过开发人员控制台（在Cloud Manager中）在&#x200B;**查询**&#x200B;选项卡上使用此功能。
