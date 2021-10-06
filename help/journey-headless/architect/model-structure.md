@@ -4,13 +4,13 @@ description: 了解使用内容片段模型为无头CMS建模内容的概念和�
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
+source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 3%
+source-wordcount: '690'
+ht-degree: 2%
 
 ---
-
 
 # 了解如何在AEM中创建内容片段模型 {#architect-headless-content-fragment-models}
 
@@ -101,6 +101,10 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >如果作者尝试发布模型尚未发布的内容片段，则会显示一个选择列表以指示该情况，并且模型将随该片段一起发布。
 
+发布模型后，该模型会立即&#x200B;*locked*&#x200B;进入创作的只读模式。 这旨在防止更改会导致现有GraphQL架构和查询出错，尤其是在发布环境中。 该参数在控制台中由&#x200B;**Locked**&#x200B;指示。
+
+当模型为&#x200B;**Locked**（在只读模式下）时，可以查看模型的内容和结构，但不能直接编辑它们；但是，您可以从控制台或模型编辑器中管理&#x200B;**锁定的**&#x200B;模型。
+
 ## 下一步 {#whats-next}
 
 现在，您已经学习了基础知识，接下来的步骤是开始创建您自己的内容片段模型。
@@ -126,6 +130,8 @@ At the very start you need to enable Content Fragment Models for your site, this
       * [发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [取消发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+
+      * [锁定（已发布）内容片段模型](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 入门指南
 

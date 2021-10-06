@@ -1,8 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版的发行说明。'
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 3%
@@ -10,9 +9,9 @@ ht-degree: 3%
 ---
 
 
-# [!DNL Adobe Experience Manager]作为Cloud Service的最新发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager]as a Cloud Service的最新发行说明 {#release-notes}
 
-以下部分概述了作为Cloud Service的[!DNL Experience Manager]当前（最新）版本的常规发行说明。
+以下部分概述了[!DNL Experience Manager]as a Cloud Service的当前（最新）版本的常规发行说明。
 
 >[!NOTE]
 >从此处，您可以导航到以前版本的发行说明；例如，2020年、2021年等年份的客户。
@@ -23,10 +22,10 @@ ht-degree: 3%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为Cloud Service2021.4.0的发布日期是2021年5月6日。
+[!DNL Adobe Experience Manager] 2021.4.0as a Cloud Service版的发布日期是2021年5月6日。
 以下版本(2021.5.0)将于2021年5月27日发布。
 
-## AEM as a A A Foundation( as aCloud Service基础){#aem-as-a-cloud-service-foundation}
+## AEMas a Cloud Service基础{#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
@@ -86,7 +85,7 @@ ht-degree: 3%
 
 * 在单行文本字段中更新和保存元数据值时，下拉菜单中的值会被删除，即使在下拉菜单中禁用了编辑也是如此。 (CQ-4317077)
 
-* 您可以使用省略号作为注释来查看资产。 使用小椭圆时，椭圆与打印版本中的注释数重叠。 (CQ-4316792)
+* 您可以使用省略号作为注释来查看资产。 使用小椭圆时，椭圆与打印版本中注释的数量重叠。 (CQ-4316792)
 
 * 在搜索后从搜索结果中选择资产时，不会显示快速发布选项。 (CQ-4317748)
 
@@ -114,7 +113,7 @@ ht-degree: 3%
 
 * **使用本地开发环境创建记录文档(DoR)**
 
-   您可以在Cloud Service实例中将XDP用作记录文档模板，将AEM Forms用作Cloud ServiceSDK（本地开发环境）。 以前，支持仅限于Cloud Service实例。
+   您可以在Cloud Service实例和AEM Formsas a Cloud ServiceSDK（本地开发环境）中将XDP用作记录文档模板。 以前，支持仅限于Cloud Service实例。
 
 ### [!DNL Forms]中的错误修复 {#bug-fixes-forms}
 
@@ -123,9 +122,9 @@ ht-degree: 3%
 ### 其他更新 {#misc-2021-04-0-forms}
 
 * 为了更便于识别内容，该服务现在为XDP、动态PDF和架构文件生成实时缩略图。
-* 添加了将PDF文件移动到AEM Forms UI中文件夹的功能。
+* 添加了将PDF文件移动到AEM Forms UI中放置文件夹的功能。
 
-## Adobe Experience Manager Commerce as aCloud Service {#cloud-services-commerce}
+## Adobe Experience Manager商务as a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -145,11 +144,11 @@ ht-degree: 3%
 
 ## Cloud Manager {#cloud-manager}
 
-本部分概述了AEM as a Cloud 2021.4.0中的Cloud Manager发行说明。
+本部分概述了AEM 2021.4.0版中Cloud Manager的发行说明。
 
 ### 发布日期 {#release-date-cm-april}
 
-AEM as a Cloud ManagerCloud Service2021.4.0的发布日期是2021年4月8日。
+AEM 2021.4.0版中Cloud Manager的发布日期是2021年4月8日。
 下一版本计划于2021年5月6日发布。
 
 ### 新增功能 {#what-is-new-april}

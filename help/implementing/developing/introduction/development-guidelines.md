@@ -2,18 +2,18 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
+source-git-commit: bcb3beb893d5e8aa6d5911866e78cb72fe7d4ae0
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 1%
+source-wordcount: '2073'
+ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service 开发准则 {#aem-as-a-cloud-service-development-guidelines}
 
-在AEM as a Cloud Service中运行的代码必须了解它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。代码必须具有弹性，尤其是当实例可能在任何时间点停止时。
+在AEMas a Cloud Service中运行的代码必须知道它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。代码必须具有弹性，尤其是当实例可能在任何时间点停止时。
 
-在更新AEM as a Cloud Service期间，将会有一些旧代码和新代码并行运行的实例。 因此，旧代码不得与由新代码创建的内容中断，而新代码必须能够处理旧内容。
+在更新AEMas a Cloud Service期间，将有旧代码和新代码并行运行的实例。 因此，旧代码不得与由新代码创建的内容中断，而新代码必须能够处理旧内容。
 <!--
 
 >[!NOTE]
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 文件系统上的状态 {#state-on-the-filesystem}
 
-实例的文件系统不应在AEM中用作Cloud Service。 该磁盘是短暂的，在实例循环使用时将进行处置。 对与处理单个请求相关的临时存储使用文件系统是可能的，但不应滥用它来获取大文件。 这是因为它可能对资源使用配额产生负面影响，并且会遇到磁盘限制。
+实例的文件系统不应用于AEMas a Cloud Service。 该磁盘是短暂的，在实例循环使用时将进行处置。 对与处理单个请求相关的临时存储使用文件系统是可能的，但不应滥用它来获取大文件。 这是因为它可能对资源使用配额产生负面影响，并且会遇到磁盘限制。
 
 例如，不支持文件系统使用，发布层应确保将需要保留的任何数据发送到外部服务，以便进行较长期的存储。
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 后台任务和长时间运行的作业 {#background-tasks-and-long-running-jobs}
 
-作为后台任务执行的代码必须假定它正在运行的实例可以随时关闭。 因此，代码必须具有弹性，且导入次数最多可恢复。 这意味着如果重新执行代码，则不应再次从开头开始，而应从离开的位置开始。 虽然这不是此类代码的新要求，但在AEM作为Cloud Service中，更有可能发生实例停用。
+作为后台任务执行的代码必须假定它正在运行的实例可以随时关闭。 因此，代码必须具有弹性，且导入次数最多可恢复。 这意味着如果重新执行代码，则不应再次从开头开始，而应从离开的位置开始。 虽然这不是此类代码的新要求，但在AEMas a Cloud Service中，更有可能发生实例停用。
 
 为了将问题降至最低，应尽可能避免长时间运行的作业，并且应至少恢复这些作业。 要执行此类作业，请使用Sling作业，Sling作业可至少保证一次，因此，如果中断，将尽快重新执行。 但它们或许不应该从头开始。 对于安排此类作业，最好使用[Sling作业](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing)调度程序，这样至少执行一次。
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ## 传出HTTP连接 {#outgoing-http-connections}
 
-强烈建议任何传出HTTP连接设置合理的连接和读取超时。 对于不应用这些超时的代码，在AEM as a Cloud Service上运行的AEM实例将强制执行全局超时。 以下超时值是连接调用的10秒，以及下列常用Java库使用的连接的读取调用的60秒：
+强烈建议任何传出HTTP连接设置合理的连接和读取超时。 对于不应用这些超时的代码，在AEMas a Cloud Service上运行的AEM实例将强制执行全局超时。 以下超时值是连接调用的10秒，以及下列常用Java库使用的连接的读取调用的60秒：
 
 Adobe建议使用提供的[Apache HttpComponents客户端4.x库](https://hc.apache.org/httpcomponents-client-ga/)进行HTTP连接。
 
@@ -61,13 +61,13 @@ Adobe建议使用提供的[Apache HttpComponents客户端4.x库](https://hc.apac
 
 ## 无经典UI自定义 {#no-classic-ui-customizations}
 
-AEM as aCloud Service仅支持第三方客户代码的触屏UI。 经典UI无法进行自定义。
+AEMas a Cloud Service仅支持第三方客户代码的触屏UI。 经典UI无法进行自定义。
 
 ## 避免本机二进制文件 {#avoid-native-binaries}
 
 代码在运行时将无法下载或修改二进制文件。 例如，无法解压缩`jar`或`tar`文件。
 
-## 无通过AEM as a Cloud Service流式传输二进制文件 {#no-streaming-binaries}
+## 无通过AEMas a Cloud Service的流二进制文件 {#no-streaming-binaries}
 
 应通过CDN访问二进制文件，CDN将在核心AEM服务之外提供二进制文件。
 
@@ -75,7 +75,7 @@ AEM as aCloud Service仅支持第三方客户代码的触屏UI。 经典UI无法
 
 ## 无反向复制代理 {#no-reverse-replication-agents}
 
-AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 如果需要此类策略，您可以使用在发布实例场（可能是创作群集）之间共享的外部持久性存储。
+AEMas a Cloud Service不支持从“发布到作者”进行反向复制。 如果需要此类策略，您可以使用在发布实例场（可能是创作群集）之间共享的外部持久性存储。
 
 ## 可能需要移植转发复制代理 {#forward-replication-agents}
 
@@ -95,7 +95,7 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 
 >[!NOTE]
 >
->要执行下面列出的配置更改，您需要在本地开发环境中创建这些更改，然后将它们作为Cloud Service实例推送到AEM。 有关如何执行此操作的更多信息，请参阅[部署到AEM as a Cloud Service](/help/implementing/deploying/overview.md)。
+>要执行下面列出的配置更改，您需要在本地开发环境中创建配置更改，然后将它们推送到AEMas a Cloud Service实例。 有关如何执行此操作的更多信息，请参阅[部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md)。
 
 **激活DEBUG日志级别**
 
@@ -129,11 +129,11 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 
 请注意，在本地开发（使用SDK）中，可以将`/apps`和`/libs`直接写入，这与顶级文件夹不可更改的云环境不同。
 
-### AEM as a Cloud Service开发工具 {#aem-as-a-cloud-service-development-tools}
+### AEMas a Cloud Service开发工具 {#aem-as-a-cloud-service-development-tools}
 
 客户可以在创作层的开发环境中访问CRXDE lite，但不能在暂存或生产环境中访问。 不可变存储库(`/libs`, `/apps`)在运行时无法写入，因此尝试写入将导致错误。
 
-开发人员控制台中提供了一组用于调试AEM as a Cloud Service开发人员环境的工具，可用于开发、暂存和生产环境。 可通过调整创作或发布服务URL来确定该URL，如下所示：
+开发人员控制台中提供了一组用于调试AEMas a Cloud Service开发人员环境的工具，可用于开发、暂存和生产环境。 可通过调整创作或发布服务URL来确定该URL，如下所示：
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于生产程序，开发人员控制台的访问权限由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙盒程序，任何具有产品配置文件的用户都可以使用开发人员控制台，以便他们能够将AEM作为Cloud Service访问。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义用户，才能查看两个服务中的状态转储数据。 有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+对于生产程序，开发人员控制台的访问权限由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙盒程序，任何具有产品配置文件且有权访问AEMas a Cloud Service的用户都可以使用开发人员控制台。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义用户，才能查看两个服务中的状态转储数据。 有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### AEM Staging和Production Service {#aem-staging-and-production-service}
 
@@ -169,90 +169,27 @@ AEM as a Cloud Service中不支持从“发布到作者”进行反向复制。 
 
 Adobe监控应用程序性能，并采取措施在出现恶化时加以解决。 此时，无法查看应用程序量度。
 
-## 专用出口IP地址 {#dedicated-egress-ip-address}
-
-应请求，AEM as aCloud Service将为使用Java代码编程的HTTP（端口80）和HTTPS（端口443）出站流量配置静态的专用IP地址。
-
-### 优点 {#benefits}
-
-当与SaaS供应商（如CRM供应商）集成或作为提供IP地址AEM的Cloud Service在外部进行其他集成时，此专用IP地址可允许列表以增强安全性。 通过向添加专用IP地允许列表址，它可确保仅允许来自客户AEMCloud Service的流量流入外部服务。 除了允许的来自任何其他IP的流量之外，
-
-如果未启用专用的IP地址功能，则作为Cloud Service从AEM传出的流量将通过一组与其他客户共享的IP来流动。
-
-### 配置 {#configuration}
-
-要启用专用IP地址，请向客户支持部门提交请求，客户支持部门将提供IP地址信息。 请求应指定每个环境，如果新环境在初始请求后需要该功能，则应发出其他请求。 不支持沙盒项目环境。
-
-### 功能使用 {#feature-usage}
-
-该功能与导致出站流量的Java代码或库兼容，前提是它们使用标准Java系统属性进行代理配置。 实际上，这应该包括大多数常用的库。
-
-以下是代码示例：
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-  URLConnection connection = finalUrl.openConnection();
-  connection.addRequestProperty("Accept", "application/json");
-  connection.addRequestProperty("X-API-KEY", apiKey);
-
-  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
-    return new JSONObject(new JSONTokener(responseReader));
-  }
-}
-```
-
-某些库需要显式配置才能将标准Java系统属性用于代理配置。
-
-使用Apache HttpClient的示例，需要显式调用
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)或使用
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-
-  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
-  HttpGet request = new HttpGet(finalUrl.toURI());
-  request.setHeader("Accept", "application/json");
-  request.setHeader("X-API-KEY", apiKey);
-  HttpResponse response = httpClient.execute(request);
-  String result = EntityUtils.toString(response.getEntity());
-}
-```
-
-同一专用IP适用于其Adobe组织中的所有客户计划，也适用于其每个计划中的所有环境。 它适用于创作和发布服务。
-
-仅支持HTTP和HTTPS端口。 这包括HTTP/1.1以及加密后的HTTP/2。
-
-### 调试注意事项 {#debugging-considerations}
-
-要验证流量是否确实在预期的专用IP地址上传出，请检查目标服务中的日志（如果可用）。 否则，调用调试服务(如[https://ifconfig.me/ip](https://ifconfig.me/ip))可能会很有用，该服务将返回调用的IP地址。
-
 ## 发送电子邮件 {#sending-email}
 
-AEM as aCloud Service要求加密出站邮件。 以下各节介绍如何请求、配置和发送电子邮件。
+AEMas a Cloud Service要求对出站邮件进行加密。 以下各节介绍如何请求、配置和发送电子邮件。
 
 >[!NOTE]
 >
 >可以为邮件服务配置OAuth2支持。 有关更多信息，请参阅[OAuth2对邮件服务的支持](/help/security/oauth2-support-for-mail-service.md)。
 
-### 请求访问 {#requesting-access}
+### 启用出站电子邮件 {#enabling-outbound-email}
 
-默认情况下，禁用出站电子邮件。 要激活它，请提交支持票证，其中包含：
+默认情况下，用于发送的端口处于禁用状态。 要激活它，请配置[高级网络](/help/security/configuring-advanced-networking.md)，并确保为每个所需环境设置`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`端点的端口转发规则，以便流量可以通过端口465（如果邮件服务器支持）或端口587（如果邮件服务器需要）或端口587（如果邮件服务器也强制使用该端口）。
 
-1. 邮件服务器的完全限定的域名（例如`smtp.sendgrid.net`）
-1. 要使用的端口。 如果邮件服务器支持，它应为端口465，否则为端口587。 请注意，只有当邮件服务器要求并强制使用该端口上的TLS时，才能使用端口587
-1. 要从中发送邮件的环境的项目ID和环境ID
-1. 创作、发布还是两者都需要SMTP访问。
+建议使用将`kind`参数设置为`flexiblePortEgress`的方法配置高级网络，因为Adobe可以优化灵活端口出口流量的性能。 如果需要唯一的出口IP地址，请选择`dedicatedEgressIp`的`kind`参数。 如果您出于其他原因配置了VPN，则还可以使用该高级网络变体提供的唯一IP地址。
+
+您必须通过邮件服务器发送电子邮件，而不是直接通过电子邮件客户端发送。 否则，可能会阻止电子邮件。
 
 ### 发送电子邮件 {#sending-emails}
 
 应使用[Day CQ Mail Service OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
 
-AEM CS要求通过端口465发送邮件。 如果邮件服务器不支持端口465，则只要启用了TLS选项，就可以使用端口587。
+AEMas a Cloud Service要求通过端口465发送邮件。 如果邮件服务器不支持端口465，则只要启用了TLS选项，就可以使用端口587。
 
 >[!NOTE]
 >
@@ -262,7 +199,7 @@ AEM CS要求通过端口465发送邮件。 如果邮件服务器不支持端口4
 
 AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)发送。
 
-有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 对于AEM as aCloud Service，必须对`com.day.cq.mailer.DefaultMailService OSGI`服务进行以下调整：
+有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 对于AEMas a Cloud Service，必须对`com.day.cq.mailer.DefaultMailService OSGI`服务进行以下调整：
 
 如果已请求端口465:
 
@@ -274,8 +211,10 @@ AEM中的电子邮件应使用[Day CQ Mail Service OSGi服务](https://experienc
 * 将`smtp.port`设置为`587`
 * 将`smtp.ssl`设置为`false`
 
-`smtp.starttls`属性将在运行时由AEM自动设置为相应的Cloud Service值。 因此，如果将`smtp.tls`设置为true，则将忽略`smtp.startls`。 如果将`smtp.ssl`设置为false，则将`smtp.starttls`设置为true。 这与OSGI配置中设置的`smtp.starttls`值无关。
+AEM在运行时会自动将`smtp.starttls`属性设置为相应的值。 因此，如果将`smtp.tls`设置为true，则将忽略`smtp.startls`。 如果将`smtp.ssl`设置为false，则将`smtp.starttls`设置为true。 这与OSGI配置中设置的`smtp.starttls`值无关。
+
+可以选择为邮件服务配置OAuth2支持。 有关更多信息，请参阅[OAuth2对邮件服务的支持](/help/security/oauth2-support-for-mail-service.md)。
 
 ## [!DNL Assets] 开发指南和用例 {#use-cases-assets}
 
-要了解资产作为Cloud Service的开发用例、建议和参考资料，请参阅[资产的开发人员参考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
+要了解资产as a Cloud Service的开发用例、建议和参考资料，请参阅[Assets开发人员参考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。

@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 72c1e85fca032f82a2755f9ca601625e1a3f7461
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 42%
@@ -13,18 +13,18 @@ ht-degree: 42%
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2021.08.0 |
+| 版本 | 2021.09.0 |
 | 类型 | 持续更新 |
 | 发行日期 | 持续更新 |
 
 ## 如何准备发行 {#how-to-prepare}
 
-以[!DNL Adobe Experience Manager]中的连续发布模型作为Cloud Service，应用程序会持续自动更新。 更新分为两种类型：功能发布和关键更新：
+使用[!DNL Adobe Experience Manager]as a Cloud Service的连续发布模型，应用程序会持续自动更新。 更新分为两种类型：功能发布和关键更新：
 
 * 功能发布以可预测的每月频率完成，重点关注新功能和产品创新。
-* 关键更新操作频繁进行，重点关注安全更新、错误修复和性能增强。 这可确保[!DNL Adobe Experience Manager]作为Cloud Service始终与任何关键修复保持最新。
+* 关键更新操作频繁进行，重点关注安全更新、错误修复和性能增强。 这可确保[!DNL Adobe Experience Manager]as a Cloud Service始终与任何关键修复保持最新。
 
-除了创新速度之外，[!DNL Adobe Experience Manager]作为Cloud Service还提供了在功能发布到生产之前提前整月预览即将推出的功能的灵活性。 这允许您通过测试在您自己的自定义环境中驱动这些功能来评估即将发布的版本对其组织的影响，并提前对内部用户进行培训/准备。
+除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service还提供了在功能发布到生产之前提前整整一个月预览即将推出的功能的灵活性。 这允许您通过测试在您自己的自定义环境中驱动这些功能来评估即将发布的版本对其组织的影响，并提前对内部用户进行培训/准备。
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ ht-degree: 42%
 | [Experience Manager as a Cloud Service 主页](/help/landing/home.md) | 有关 Experience Manager as a Cloud Service 文档的概述，请单击此处开始。 |
 | [概述](/help/overview/home.md) | 本指南提供了 Experience Manager as a Cloud Service 的概述，包括简介、术语等。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
-| [入门](/help/onboarding/home.md) | 本指南概述了如何开始将Experience Manager作为Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
+| [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用Experience Manageras a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
@@ -60,7 +60,7 @@ ht-degree: 42%
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Commerce Integration FrameworkCloud Service。 |
+| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Cloud Service上的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 

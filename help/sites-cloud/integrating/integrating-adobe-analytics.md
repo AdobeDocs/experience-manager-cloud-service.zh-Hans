@@ -1,28 +1,28 @@
 ---
 title: 与 Adobe Analytics 集成
 description: '与 Adobe Analytics 集成 '
-feature: 管理
+feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
 
 # 与 Adobe Analytics 集成{#integrating-with-adobe-analytics}
 
-将Adobe Analytics和AEM集成为Cloud Service后，您可以跟踪网页活动。 该集成要求：
+将Adobe Analytics与AEMas a Cloud Service集成后，您可以跟踪网页活动。 该集成要求：
 
-* 使用触屏UI在AEM中创建Analytics配置作为Cloud Service。
-* 在[AdobeLaunch](#analytics-launch)中添加并配置Adobe Analytics作为扩展。 有关LaunchAdobe的更多详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)。
+* 使用触屏UI在AEMas a Cloud Service中创建Analytics配置。
+* 在[AdobeLaunch](#analytics-launch)中添加并配置Adobe Analytics作为扩展。 有关LaunchAdobe的更多详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。
 
-与AEM的先前版本相比，AEM作为Cloud Service的Analytics配置中未提供框架支持。 现在，可以通过Launch来完成，Launch是使用Analytics功能（JS库）检测AEM网站的实际工具。 在Launch中，将创建一个资产，用于配置Adobe Analytics扩展，并创建规则以将数据发送到Adobe Analytics。 Adobe启动已取代sitecatalyst提供的分析任务。
+与AEM的先前版本相比，AEMas a Cloud Service的Analytics配置中未提供框架支持。 现在，可以通过Launch来完成，Launch是使用Analytics功能（JS库）检测AEM网站的实际工具。 在Launch中，将创建一个资产，用于配置Adobe Analytics扩展，并创建规则以将数据发送到Adobe Analytics。 Adobe启动已取代sitecatalyst提供的分析任务。
 
 >[!NOTE]
 >
->Adobe Experience Manager作为没有现有Analytics帐户的Cloud Service客户，可以请求访问Analytics Foundation Pack以进行Experience Cloud。 此Foundation Pack提供了对Analytics的卷限制使用。
+>Adobe Experience Manager as a Cloud Service客户如果没有现有的Analytics帐户，则可以请求访问Analytics Foundation Pack以进行Experience Cloud。 此Foundation Pack提供了对Analytics的卷限制使用。
 
 ## 创建Adobe Analytics配置 {#analytics-configuration}
 
@@ -65,4 +65,4 @@ Adobe Analytics可以作为Launch资产的扩展添加。 可以定义规则以�
 
 >[!NOTE]
 >
->Launch的IMS配置（技术帐户）在AEM中预配置为Cloud Service。 用户无需创建此配置。
+>Launch的IMS配置（技术帐户）已在AEMas a Cloud Service中预配置。 用户无需创建此配置。

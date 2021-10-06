@@ -2,9 +2,9 @@
 title: 构建环境详细信息
 description: 构建环境详细信息 — Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 9ae940fb0149a76277aba49a75abfb8b83305788
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。 此环
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven在系统级别配置了settings.xml文件，该文件使用名为`adobe-public`的配置文件自动包含公共Adobe **Artifact**&#x200B;存储库。 (有关更多详细信息，请参阅[Adobe公共Maven存储库](https://repo.adobe.com/))。
+* Maven在系统级别配置了settings.xml文件，该文件使用名为`adobe-public`的配置文件自动包含公共Adobe **Artifact**&#x200B;存储库。 (有关更多详细信息，请参阅[Adobe公共Maven存储库](https://repo1.maven.org/))。
 
 >[!NOTE]
 >尽管Cloud Manager未定义`jacoco-maven-plugin`的特定版本，但使用的版本必须至少为`0.7.5.201505241946`。

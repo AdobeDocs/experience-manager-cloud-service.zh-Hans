@@ -1,42 +1,42 @@
 ---
 title: 与 Adobe Target 集成
 description: '与 Adobe Target 集成 '
-feature: 管理
+feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1035'
 ht-degree: 2%
 
 ---
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为Adobe Marketing Cloud的一部分，Adobe Target允许您通过跨所有渠道进行定位和测量来提高内容相关性。 将Adobe Target和AEM作为Cloud Service集成需要：
+作为Adobe Marketing Cloud的一部分，Adobe Target允许您通过跨所有渠道进行定位和测量来提高内容相关性。 集成Adobe Target和AEMas a Cloud Service需要：
 
-* 使用触屏UI在AEM中创建Target配置作为Cloud Service（需要IMS配置）。
-* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)中添加并配置Adobe Target作为扩展。
+* 使用触屏UI在AEMas a Cloud Service中创建Target配置（需要IMS配置）。
+* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)中添加并配置Adobe Target作为扩展。
 
 AdobeLaunch是管理AEM页面（JS库/标记）中Analytics和Target的客户端属性所必需的。 尽管如此，“体验定位”需要与Launch集成。 要将体验片段导出到Target，您只需要Adobe Target配置和IMS。
 
 >[!NOTE]
 >
->Adobe Experience Manager作为没有现有Target帐户的Cloud Service客户，可以请求访问Target Foundation Pack以进行Experience Cloud。 Foundation Pack提供了对Target的卷限制使用。
+>Adobe Experience Manager as a Cloud Service客户如果没有现有的Target帐户，则可以请求访问Target Foundation Pack以进行Experience Cloud。 Foundation Pack提供了对Target的卷限制使用。
 
 ## 创建Adobe Target配置 {#create-configuration}
 
 1. 导航到&#x200B;**Tools** → **Cloud Services**。
-   ![](assets/cloudservice1.png "NavigationNavigation")
+   ![](assets/cloudservice1.png "导航导航")
 2. 选择&#x200B;**Adobe Target**。
 3. 选择&#x200B;**创建**按钮。
-   ![](assets/tenant1.png "创建")
+   ![](assets/tenant1.png "创建创建")
 4. 填写详细信息（请参阅下文），然后选择&#x200B;**连接**。
    ![](assets/open_screen1.png "ConnectConnect")
 
 ### IMS 配置 {#ims-configuration}
 
-要将Target与AEM和Launch正确集成，必须同时为Launch和Target配置IMS。 虽然Launch的IMS配置在AEM中预配置为Cloud Service，但必须创建Target IMS配置（在配置Target后）。 请参阅[此视频](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)和[此页面](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)以了解如何创建Target IMS配置。
+要将Target与AEM和Launch正确集成，必须同时为Launch和Target配置IMS。 虽然Launch的IMS配置在AEMas a Cloud Service中进行了预配置，但必须创建Target IMS配置（在配置Target后）。 请参阅[此视频](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)和[此页面](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)以了解如何创建Target IMS配置。
 
 ### Adobe Target租户ID和Adobe Target客户端代码 {#tenant-client}
 
@@ -51,7 +51,7 @@ AdobeLaunch是管理AEM页面（JS库/标记）中Analytics和Target的客户端
 * 您可以选择更改默认的租户ID集。
 * 因此，对Target的后端调用将基于租户ID，而对Target的客户端调用将基于客户端代码。
 
-如前所述，AEM as a Cloud Service最常见的一种情况是： 无论采用哪种方式，请确保&#x200B;**两个**&#x200B;字段都包含正确的信息，具体取决于您的要求。
+如前所述，第一种情况是AEMas a Cloud Service最常见的情况。 无论采用哪种方式，请确保&#x200B;**两个**&#x200B;字段都包含正确的信息，具体取决于您的要求。
 
 >[!NOTE]
 >
