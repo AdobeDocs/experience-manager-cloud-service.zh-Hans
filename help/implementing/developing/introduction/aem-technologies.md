@@ -2,14 +2,14 @@
 title: AEM技术基础
 description: 概述AEM的技术基础，包括AEM的结构方式和基本技术（如JCR、Sling和OSGi）。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
 
-# AEM技术基础{#aem-technical-foundations}
+# AEM技术基础 {#aem-technical-foundations}
 
 AEM是一个基于经验证、可扩展和灵活的技术构建的强大平台。 本文档详细概述了构成AEM的各个部分，这些部分旨在作为全栈AEM开发人员的技术附录。 本指南不提供入门指南。 如果您是初次使用AEM开发，请参阅[AEM Sites开发入门 — WKND教程](develop-wknd-tutorial.md)作为第一步。
 
@@ -32,11 +32,11 @@ AEM是一个基于经验证、可扩展和灵活的技术构建的强大平台�
 * Sling
 * OSGi
 
-## Java内容存储库{#java-content-repository}
+## Java内容存储库 {#java-content-repository}
 
-Java内容存储库(JCR)标准[JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)指定了一种独立于供应商和独立于实施的方式，用于在内容存储库的粒度级别上双向访问内容。 Adobe研究公司（瑞士）AG持有规格指标。
+Java内容存储库(JCR)标准[JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)指定了一种独立于供应商和独立于实施的方式，用于在内容存储库的粒度级别上双向访问内容。 Adobe研究公司（瑞士）AG持有规格指标。
 
-[JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)包`javax.jcr.*`用于直接访问和处理存储库内容。
+[JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)包`javax.jcr.*`用于直接访问和处理存储库内容。
 
 AEM基于JCR构建。
 
@@ -46,13 +46,13 @@ AEM基于JCR构建。
 
 Jackrabbit Oak（也简称Oak）是构建AEM的JCR标准的实施。
 
-## Sling请求处理{#sling-request-processing}
+## Sling请求处理 {#sling-request-processing}
 
 AEM是使用[Sling](https://sling.apache.org/site/index.html)构建的，Sling是一个基于REST原则的Web应用程序框架，可轻松开发面向内容的应用程序。 Sling使用JCR存储库（如Apache Jackrabbit Oak）作为其数据存储。 Sling已对Apache Software Foundation做出了贡献 — 有关更多信息，请参阅Apache 。
 
-### Sling {#introduction-to-sling}简介
+### Sling简介 {#introduction-to-sling}
 
-使用Sling时，要呈现的内容类型不是首要处理考虑事项。 相反，主要考虑的是URL是否解析为内容对象，随后可以找到用于执行渲染的脚本。 这为Web内容作者构建可轻松根据其要求进行自定义的页面提供了绝佳支持。
+使用Sling时，要呈现的内容类型不是首要处理考虑事项。 相反，主要考虑的是URL是否解析为内容对象，随后可以找到用于执行渲染的脚本。 这为Web内容作者构建可轻松根据其要求进行自定义的页面提供了极佳支持。
 
 在具有多种不同内容元素的应用程序中，或者您需要能够轻松自定义的页面时，这种灵活性的优势显而易见。 特别是，在实施Web内容管理系统(如AEM)时。
 
@@ -66,7 +66,7 @@ AEM是使用[Sling](https://sling.apache.org/site/index.html)构建的，Sling�
 
 ![使用SlingPostServlet](assets/sling-cheatsheet-02.png)
 
-### Sling以内容为中心{#sling-is-content-centric}
+### Sling以内容为中心 {#sling-is-content-centric}
 
 Sling以&#x200B;*以内容为中心*。 这意味着当每个(HTTP)请求以JCR资源（存储库节点）的形式映射到内容时，处理重点会放在内容上：
 
@@ -82,7 +82,7 @@ Sling由于其以内容为中心的理念，实施了面向REST的服务器，�
    * 其他内容管理框架可能需要URL结构、业务对象、数据库模式才能访问资源。
    * 使用Sling，可简化为：URL = resource = JCR结构
 
-### URL分解{#url-decomposition}
+### URL分解 {#url-decomposition}
 
 在Sling中，处理由用户请求的URL驱动。 这定义了要由相应脚本显示的内容。 为此，将从URL中提取信息。
 
@@ -106,7 +106,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 * **后缀**  — 可用于指定其他信息
 * **参数**  — 动态内容所需的任何参数
 
-#### 从URL到内容和脚本{#from-url-to-content-and-scripts}
+#### 从URL到内容和脚本 {#from-url-to-content-and-scripts}
 
 使用URL分解的原则：
 
@@ -119,7 +119,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 使用Sling，您可以指定哪个脚本渲染特定实体（通过在JCR节点中设置`sling:resourceType`属性）。 此机制比脚本在其中访问数据实体（如PHP脚本中的SQL语句那样）的自由度更高，因为资源可以具有多个演绎版。
 
-#### 将请求映射到资源{#mapping-requests-to-resources}
+#### 将请求映射到资源 {#mapping-requests-to-resources}
 
 请求被划分，并提取必要的信息。 在存储库中搜索所请求的资源（内容节点）：
 
@@ -129,7 +129,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 Sling还允许JCR节点以外的其他内容作为资源，但这是一项高级功能。
 
-### 查找脚本{#locating-the-script}
+### 查找脚本 {#locating-the-script}
 
 在找到相应的资源（内容节点）后，将提取&#x200B;**sling资源类型**。 这是一个路径，用于查找用于呈现内容的脚本。
 
@@ -159,7 +159,7 @@ Sling还允许JCR节点以外的其他内容作为资源，但这是一项高级
    * POST将用在脚本名称中。
    * 脚本将为`/apps/hr/jobs/jobs.POST.esp`。
 * 其他格式的URL，不以`.html`结尾
-   * 例如`../content/corporate/jobs/developer.pdf`
+   * 例如 `../content/corporate/jobs/developer.pdf`
    * 脚本将为`/apps/hr/jobs/jobs.pdf.esp`;后缀会添加到脚本名称中。
 * 包含选择器的URL
    * 选择器可用于以替代格式显示相同的内容。 例如，打印机友好版本、rss源或摘要。
@@ -228,7 +228,7 @@ Sling还允许JCR节点以外的其他内容作为资源，但这是一项高级
 
 这是因为`/y`具有`sling:resourceSuperType`属性，而`/x`没有，因此其超类型从其资源类型中获取。
 
-#### 不能直接调用{#sling-scripts-cannot-be-called-directly} Sling脚本
+#### 无法直接调用Sling脚本 {#sling-scripts-cannot-be-called-directly}
 
 在Sling中，无法直接调用脚本，因为这会破坏REST服务器的严格概念；您将混合使用资源和表示法。
 
@@ -243,7 +243,7 @@ Sling还允许JCR节点以外的其他内容作为资源，但这是一项高级
 
 它使用Sling API包、 `org.apache.sling.*`和标记库。
 
-### 使用sling:include {#referencing-existing-elements-using-sling-include}引用现有元素
+### 使用sling:include引用现有元素 {#referencing-existing-elements-using-sling-include}
 
 最后需要考虑的是需要引用脚本中的现有元素。
 
@@ -280,9 +280,9 @@ OSGi（开放服务网关计划）定义了用于开发和部署模块化应用�
 * 查看当前状态
 * 访问有关特定包的更多详细信息（例如，符号名称、版本、位置等）
 
-有关更多信息，请参阅[将AEM的OSGi配置为Cloud Service](/help/implementing/deploying/configuring-osgi.md)。
+有关更多信息，请参阅[为AEMas a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md) 。
 
-## 存储库{#structure-within-the-repository}内的结构
+## 存储库内的结构 {#structure-within-the-repository}
 
 以下列表概述了您将在存储库中看到的结构。
 

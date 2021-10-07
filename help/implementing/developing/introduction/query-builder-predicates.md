@@ -2,14 +2,14 @@
 title: 查询生成器谓词引用
 description: 查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2218'
 ht-degree: 1%
 
 ---
 
-# 查询生成器谓词引用{#query-builder-predicate-reference}
+# 查询生成器谓词引用 {#query-builder-predicate-reference}
 
 ## 常规 {#general}
 
@@ -135,7 +135,7 @@ group.2_group.type=dam:Asset
 
 * **`property`**  — 例如属性的 `DATE` 相对路径  `jcr:lastModified`
 * **`lowerBound`**  — 例如，下限日期将检查属性  `2014-10-01`
-* **`lowerOperation`** -( `>` 较新)或 `>=` （at或更高版本）适用于 `lowerBound`。默认为 `>`
+* **`lowerOperation`** -( `>` 较新)或 `>=` （at或较新）适用于 `lowerBound`。默认为 `>`
 * **`upperBound`**  — 例如，检查属性的上限  `2014-10-01T12:15:00`
 * **`upperOperation`** -( `<` 旧)或 `<=` （旧）适用于 `upperBound`。默认为 `<`
 * **`timeZone`**  — 未作为ISO-8601日期字符串提供时使用的时区ID。默认时区是系统的默认时区。
@@ -167,7 +167,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-此谓词将结果限制为当前会话具有指定[JCR权限的项目。](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+此谓词将结果限制为当前会话具有指定[JCR权限的项目。](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 这是仅限过滤的谓词，无法利用搜索索引。 它不支持面提取。
 
@@ -334,7 +334,7 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-20}
 
-* **`similar`**  — 要查找类似节点的节点的绝对路径
+* **`similar`**  — 要查找相似节点的节点的绝对路径
 * **`local`**  — 子节点或当前节点的相 `.` 对路径(可选，默认为 `.`)
 
 ### 标记 {#tag}
