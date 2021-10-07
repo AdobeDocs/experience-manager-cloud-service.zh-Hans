@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -65,7 +65,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在Experience Manageras a Cloud Service中，选择Experience Manageras a Cloud Service徽标以访问全局导航控制台。
 1. 在控制台的左侧，选择工具图标，然后转到&#x200B;**[!UICONTROL Cloud Services> Dynamic Media配置]**。
 1. 在“Dynamic Media配置浏览器”页面的左窗格中，选择&#x200B;**[!UICONTROL 全局]**（请勿选择&#x200B;**[!UICONTROL 全局]**&#x200B;左侧的文件夹图标）。 然后选择&#x200B;**[!UICONTROL 创建]**。
-1. 在&#x200B;**[!UICONTROL 创建Dynamic Media配置]**&#x200B;页面上，输入标题、Dynamic Media帐户电子邮件地址、密码，然后选择您所在的区域。 此信息通过配置电子邮件中的Adobe提供给您。 如果您未收到此电子邮件，请联系Adobe客户关怀。
+1. 在&#x200B;**[!UICONTROL 创建Dynamic Media配置]**&#x200B;页面上，输入标题、Dynamic Media帐户电子邮件地址、密码，然后选择您所在的区域。 此信息通过配置电子邮件中的Adobe提供给您。 如果您未收到此电子邮件，请联系Adobe客户支持。
 1. 选择&#x200B;**[!UICONTROL 连接到Dynamic Media]**。
 1. 在&#x200B;**[!UICONTROL 更改密码]**&#x200B;对话框的&#x200B;**[!UICONTROL 新密码]**&#x200B;字段中，输入包含8-25个字符的新密码。 密码必须至少包含以下任一项：
 
@@ -117,7 +117,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 为了在发布Dynamic Media内容之前安全预览该内容，默认情况下，Experience Manageras a Cloud Service会使用基于令牌的验证。 但是，您也可以“”允许列表更多IP，以便为用户提供安全预览内容的访问权限。 要设置此操作，请执行以下操作：<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。 您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系Adobe客户关怀团队。
+   * 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。 您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系Adobe客户支持。
    * 在页面右上角附近的导航栏上，转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。
    * 在“图像服务器发布”页面的&#x200B;**[!UICONTROL 发布上下文]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 测试图像服务]**。
    * 对于客户端地址筛选器，选择&#x200B;**[!UICONTROL Add]**。
@@ -147,7 +147,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![Dynamic Media安装失败](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. 在&#x200B;**[!UICONTROL DMSETUP]**&#x200B;页面上，查看描述失败的配置详细信息。 请特别注意任何错误消息或错误代码。 请联系Adobe客户关怀团队，以获取此信息。
+1. 在&#x200B;**[!UICONTROL DMSETUP]**&#x200B;页面上，查看描述失败的配置详细信息。 请特别注意任何错误消息或错误代码。 请联系Adobe客户支持，以获取此信息。
 
    ![Dynamic Media设置页面](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -385,7 +385,8 @@ Granite传输工作流队列用于&#x200B;**[!UICONTROL DAM更新资产]**&#x200
 
 **要更新Granite Transient工作流队列，请执行以下操作：**
 
-1. 导航到[https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr)并搜索&#x200B;**队列：Granite Transient工作流队列**。
+1. 导航到位于`http://<host>:<port>/system/console/configMgr`的&#x200B;**Adobe Experience Manager Web控制台配置**
+1. 搜索&#x200B;**队列：Granite Transient工作流队列**。
 
    >[!NOTE]
    >

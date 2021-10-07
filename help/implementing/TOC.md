@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1046'
 ht-degree: 35%
 
 ---
@@ -210,6 +210,7 @@ ht-degree: 35%
    + [与 Adobe Target 集成](/help/sites-cloud/integrating/adobe-target.md)
    + [使用ContextHub配置分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + 配置和扩展 AEM as a Cloud Service {#configuring-and-extending}
+   + [使用Adobe开发人员应用程序生成器扩展AEM](developing/extending/app-builder.md)
    + [扩展体验片段](developing/extending/experience-fragments.md)
    + [自定义和扩展内容片段](developing/extending/content-fragments-customizing.md)
    + [内容片段配置用于渲染的组件](developing/extending/content-fragments-configuring-components-rendering.md)

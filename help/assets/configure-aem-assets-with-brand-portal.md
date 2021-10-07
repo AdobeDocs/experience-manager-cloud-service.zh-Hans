@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 8%
@@ -178,7 +178,7 @@ Cloud Manager用户将AEM Assets的Brand Portal激活为[!DNL Cloud Service]实�
 
 >[!NOTE]
 >
->如果您在激活Brand Portal租户时遇到任何问题，请联系Adobe支持。
+>如果您在激活Brand Portal租户时遇到任何问题，请联系客户支持。
 
 ## 使用Adobe开发人员控制台进行手动配置 {#manual-configuration}
 
