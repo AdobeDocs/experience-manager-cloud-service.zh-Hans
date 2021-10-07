@@ -1,9 +1,9 @@
 ---
 title: 有关用户映射工具的重要注意事项
 description: 有关用户映射工具的重要注意事项
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -35,3 +35,7 @@ ht-degree: 0%
 * 如果目标AEM Cloud Service实例的用户与源AEM实例上的某个用户具有不同的用户名，但其电子邮件地址与该用户中的某个用户相同，并且启用了“用户映射”，则日志中将写入一条错误消息，并且不会传输源AEM用户，因为目标系统上只允许一个具有给定电子邮件地址的用户。
 
 * 如果源AEM实例上的两个用户具有相同的电子邮件地址，并且启用了“用户映射”，则日志中将写入一条错误消息，并且不会传输源AEM用户之一，因为目标系统上只允许一个具有给定电子邮件地址的用户。
+
+### 下一步 {#whats-next}
+
+了解重要注意事项和特殊案例后，您即可使用该工具。 有关更多详细信息，请参阅[使用用户映射工具](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)。

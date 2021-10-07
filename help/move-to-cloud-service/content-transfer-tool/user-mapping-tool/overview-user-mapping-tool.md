@@ -1,9 +1,9 @@
 ---
 title: 用户映射工具概述
 description: 用户映射工具概述
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -27,3 +27,7 @@ AEMas a Cloud Service的一项主要更改是完全集成地使用AdobeID访问�
 ## 用户映射工具 {#mapping-tool}
 
 内容传输工具（无用户映射）将迁移与所迁移内容关联的任何用户和组。 用户映射工具是内容传输工具的一部分，其唯一目的是修改用户和组，以便IMS(AEMas a Cloud Service使用的单点登录功能)能够正确识别它们。 完成这些修改后，内容传输工具会照常迁移指定内容的用户和组。
+
+### 下一步 {#whats-next}
+
+了解了用户映射工具的含义后，您现在可以在使用用户映射工具之前查看重要注意事项和特殊案例。 有关更多详细信息，请参阅[用户映射工具的重要注意事项](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)。
