@@ -5,7 +5,7 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 45%
@@ -38,11 +38,11 @@ ht-degree: 45%
       + [概述](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [内容传输工具的先决条件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [处理大型内容存储库](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + 用户映射工具{#user-mapping-tool}
          + [概述](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
          + [重要注意事项](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
          + [使用用户映射工具](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-      + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 代码重构工具 {#refactoring-tools}
    + [统一体验](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
