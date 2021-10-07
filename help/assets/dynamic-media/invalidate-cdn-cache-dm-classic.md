@@ -1,12 +1,12 @@
 ---
 title: 通过Dynamic Media Classic使CDN（内容交付网络）缓存失效
 description: 了解如何使CDN（内容分发网络）缓存内容失效，以便快速更新由Dynamic Media交付的资产，而无需等待缓存过期。
-feature: 资产管理，Dynamic Media Classic
+feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '693'
 ht-degree: 13%
 
 ---
@@ -29,7 +29,7 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付。 
 
 1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系技术支持。
+   您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系客户支持。
 
 1. 转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
 1. 在“应用程序常规设置”页面的“服务器”组标题下，找到&#x200B;**[!UICONTROL CDN失效模板]**&#x200B;文本框。
@@ -59,4 +59,4 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付。 
    >
    >当您选择资产，然后转到&#x200B;**[!UICONTROL 文件]** > **[!UICONTROL 无效CDN]**&#x200B;时，Dynamic Media会使用无效CDN模板从CDN自动创建URL。 如果 **[!UICONTROL CDN 无效模板]**&#x200B;文本框中没有任何内容，则会显示空白 URL 列表。CDN 上的缓存不是基于资产，而是基于 URL。因此，必须了解您网站上的完整 URL。确定这些 URL 后，可以将其添加到步骤前面的&#x200B;**[!UICONTROL 无效 CDN 模板]**。然后，您可以选择这些资产，并在一个步骤中使 URL 失效。
    >
-   >另一个选项是向&#x200B;**[!UICONTROL 无效CDN]**&#x200B;列表添加完整的URL。 如果您遵循这种方法，则无需在Dynamic Media Classic中先选择资产，然后再转到&#x200B;**[!UICONTROL 文件]** > **[!UICONTROL 无效CDN]**&#x200B;选项。
+   >另一个选项是向&#x200B;**[!UICONTROL 无效CDN]**&#x200B;列表添加完整的URL。 如果您遵循这种方法，则无需在转到&#x200B;**[!UICONTROL 文件]** > **[!UICONTROL 无效CDN]**&#x200B;选项之前，在Dynamic Media Classic中选择资产。

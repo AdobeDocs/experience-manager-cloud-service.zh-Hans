@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
@@ -110,7 +110,7 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-不应忽视ACS Commons的调查结果。请参阅[文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以确定与AEM作为Cloud Service的兼容性。
+不应忽视ACS Commons的调查结果。请参阅[文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以确定与AEMas a Cloud Service的兼容性。
 
 
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
@@ -210,7 +210,7 @@ HTTP 接口可用于多种方法。
 当不能轻松使用 HTTP 标头时，可以方便地使用以下 HTTP 查询参数：
 
 * `max-age` （数字，可选）：以秒为单位指定缓存刷新生命周期。此数字必须为 0 或更大。默认的刷新生命周期为86400秒。 如果没有此参数或相应的标头，则新的缓存将用于在24小时内为请求提供服务，此时必须重新生成缓存。 使用`max-age=0`将强制清除缓存并启动报告的重新生成，同时使用新生成的缓存之前的非零刷新生命周期。
-* `respond-async` （布尔，可选）：指定应异步提供响应。当缓存失效时，使用`respond-async=true`将导致服务器返回`202 Accepted`响应，而无需等待刷新缓存和生成报告。 如果缓存是新的，则此参数不起作用。默认值为`false`。如果没有此参数或相应的标头，服务器将同步响应，这可能需要大量时间，并且需要调整HTTP客户端的最大响应时间。
+* `respond-async` （布尔，可选）：指定应异步提供响应。当缓存失效时，使用`respond-async=true`将导致服务器返回`202 Accepted`响应，而无需等待缓存刷新和报告生成。 如果缓存是新的，则此参数不起作用。默认值为`false`。如果没有此参数或相应的标头，服务器将同步响应，这可能需要大量时间，并且需要调整HTTP客户端的最大响应时间。
 * `may-refresh-cache` （布尔，可选）：指定当前缓存为空、失效或即将失效时，服务器可以响应请求刷新缓存。如果`may-refresh-cache=true`，或者未指定，则服务器可以启动后台任务，该任务将调用模式检测器并刷新缓存。 如果`may-refresh-cache=false`，则服务器将不会启动任何刷新任务，否则，如果缓存为空或失效，则会启动任何刷新任务，在这种情况下，报表将为空。 任何已在处理中的刷新任务将不会受到此参数的影响。
 * `return-minimal` （布尔，可选）：指定来自服务器的响应应仅包含包含JSON格式进度指示和缓存状态的状态。如果`return-minimal=true`，则响应主体将限制为状态对象。 如果`return-minimal=false`，或者未指定，则将提供完整响应。
 * `log-findings` （布尔，可选）：指定服务器应在首次构建或刷新缓存时记录缓存的内容。缓存中的每个发现结果都将记录为JSON字符串。 仅当`log-findings=true`并且请求生成新缓存时，才会发生此日志记录。

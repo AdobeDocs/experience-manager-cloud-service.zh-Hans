@@ -101,7 +101,7 @@ ht-degree: 5%
 
 #### 报表概述 {#report-overview}
 
-此&#x200B;**报告概述**&#x200B;信息卡提供在评估是否准备将作为Cloud Service移动到AEM时适用的报告发现结果和严重性级别，如下图所示。
+此&#x200B;**报告概述**&#x200B;信息卡提供了在评估是否准备好迁移到AEMas a Cloud Service时适用的报告发现结果和严重性级别，如下图所示。
 
 ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ ht-degree: 5%
 
 #### 迁移复杂性评估 {#migration-complexity-assessment}
 
-“迁移复杂性评估”选项可评估将现有AEM实施作为Cloud Service迁移到AEM的复杂性。
+迁移复杂性评估选项可评估将现有AEM实施迁移到AEMas a Cloud Service的复杂性。
 
 您可以从此选项卡中查看以下信息：
 

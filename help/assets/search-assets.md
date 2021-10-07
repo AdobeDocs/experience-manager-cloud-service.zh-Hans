@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
 workflow-type: tm+mt
-source-wordcount: '4898'
+source-wordcount: '4897'
 ht-degree: 7%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 7%
 
 熟悉搜索界面和可用的操作。
 
-![了解Experience Manager资产搜索结果界面](assets/aem_search_results.png)
+![了解Experience Manager Assets搜索结果界面](assets/aem_search_results.png)
 
 *图：了解 [!DNL Experience Manager Assets] 搜索结果界面。*
 
@@ -157,7 +157,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 创建者 | creator:John |
 | 位置 | 位置：NA |
 | 描述 | description:&quot;Sample Image&quot; |
-| 创建者工具 | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| 创建者工具 | creatortool:&quot;Adobe Photoshop&quot; |
 | 版权所有者 | copyrightowner:&quot;Adobe Systems&quot; |
 | 参与者 | contributor:John |
 | 使用条款 | usageterms:&quot;CopyRights Reserved&quot; |
@@ -202,7 +202,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 在[!DNL Experience Manager]桌面应用程序中搜索资产 {#desktop-app}
 
-创意专业人士使用桌面应用程序，可轻松搜索[!DNL Experience Manager Assets]并在其本地桌面（Win或Mac）上提供。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资产，在桌面应用程序中打开，并在本地更改 — 更改将通过在存储库中创建的新版本保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、 `*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
+创意专业人士使用桌面应用程序，可轻松搜索[!DNL Experience Manager Assets]并在其本地桌面(Win或Mac)上提供。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资产，在桌面应用程序中打开，并在本地更改 — 更改将通过在存储库中创建的新版本保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、 `*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
 
 ### 在[!DNL Brand Portal]中搜索资产 {#brand-portal}
 

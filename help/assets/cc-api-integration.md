@@ -2,15 +2,15 @@
 title: 内容自动化以实现Creative Cloud集成
 description: 使用Creative Cloud集成生成资产的变体
 contentOwner: AG
-feature: 上传、资产处理、发布、Asset compute微服务、工作流
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # 使用[!DNL Adobe Creative Cloud]集成生成资产的变体 {#content-automation}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
    ![Lightroom预设](/help/assets/assets/content-automation-lrpresets.png)
 
-   *图：AdobeLightroom预设，以便以一致的方式提高许多图像的图像质量。*
+   *图：Adobe Lightroom预设，可以一致地提高许多图像的图像质量。*
 
 * **图像木刻**:使用人工智能在显着对象周围创建选择并使用单个命令删除背景。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    ![Photoshop操作](/help/assets/assets/content-automation-psactions.png)
 
-* **智能对象替换**:通过允许您交换图像，同时保留PSD文件中应用的所有效果和调整，实现大规模个性化。
+* **智能对象替换**:通过允许您交换图像，同时保留在PSD文件中应用的所有效果和调整来大规模个性化。
 
    ![智能替换对象](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 要使用处理配置文件自动创建变体，请执行以下步骤：
 
-1. 联系[Adobe客户关怀](https://experienceleague.adobe.com/#support)以接收许可证。
+1. 联系[Adobe客户支持](https://experienceleague.adobe.com/#support)以接收许可证。
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**。
 

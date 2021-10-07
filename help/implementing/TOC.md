@@ -62,7 +62,7 @@ ht-degree: 35%
       + [访问存储库](cloud-manager/managing-code/accessing-repos.md)
       + [将 Git 与 Adobe Cloud Manager 集成](cloud-manager/managing-code/integrating-with-git.md)
       + [使用多个源Git存储库](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [AEM as aCloud Service的企业团队开发设置](cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [AEM Team Development Setup for as a Cloud Service Development Setup](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [配置 CI/CD 管线](cloud-manager/configure-pipeline.md)
    + [部署代码](cloud-manager/deploy-code.md)
    + 了解测试结果 {#test-results}
@@ -232,7 +232,7 @@ ht-degree: 35%
    + [内容交付流程](dispatcher/overview.md)
    + [云中的调度程序](dispatcher/disp-overview.md)
    + [使用Dispatcher工具验证和调试](dispatcher/validation-debug.md)
-   + [将Dispatcher配置从AMS迁移到AEM as aCloud Service](dispatcher/ams-aem.md)
+   + [将Dispatcher配置从AMS迁移到AEMas a Cloud Service](dispatcher/ams-aem.md)
    + [使用Dispatcher工具旧版验证和调试](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service 中的 CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service 中的缓存](dispatcher/caching.md)

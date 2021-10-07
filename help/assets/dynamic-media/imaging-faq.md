@@ -4,7 +4,7 @@ description: 了解Adobe Sensei AI智能成像如何应用每个用户的独特�
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 | [图像4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | 平均= 51% |
 
-与上述内容类似，Adobe还使用实时客户网站的7009 URL进行测试。 他们平均可以进一步优化JPEG的38%文件大小。 对于具有WebP格式的PNG，他们平均可进一步优化31%的文件大小。 这种优化是由于智能成像的能力而实现的。
+与上述内容类似，Adobe还使用实时客户网站的7009 URL进行测试。 他们平均可以进一步优化38%的文件大小，以便JPEG。 对于具有WebP格式的PNG，他们平均可进一步优化31%的文件大小。 这种优化是由于智能成像的能力而实现的。
 
 在移动网络上，挑战因以下两个因素而加剧：
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->DPR和网络带宽值基于检测到的捆绑CDN的客户端值。 这些值有时不准确。 例如，DPR=2的iPhone5和DPR=3的iPhone12，都显示DPR=2。 但是，对于高分辨率设备，发送DPR=2比发送DPR=1要好。 即将推出：Adobe正在使用客户端代码来准确确定最终用户的DPR。
+>DPR和网络带宽值基于检测到的捆绑CDN的客户端值。 这些值有时不准确。 例如，DPR=2的iPhone5和DPR=3的iPhone12，都会显示DPR=2。 但是，对于高分辨率设备，发送DPR=2比发送DPR=1要好。 即将推出：Adobe正在使用客户端代码来准确确定最终用户的DPR。
 
 ## 最新的“智能成像”功能有哪些主要优势？ {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -88,17 +88,17 @@ ht-degree: 1%
 
 最新版智能成像中的增强功能：
 
-* 针对使用最新智能成像的网页，改进了Google SEO排名。
+* 改进了使用最新智能成像的网页的Google SEO排名。
 * 立即提供优化内容（在运行时）。
 * 使用Adobe Sensei技术根据图像请求中指定的质量(`qlt`)进行转换。
 * 可以使用`bfc` URL参数关闭智能成像。
 * TTL（生存时间）独立。 以前，智能成像的工作TTL必须至少为12小时。
 * 以前，原始图像和派生图像都会缓存，而且使缓存失效需分两步进行。 在最新的智能成像中，只缓存派生项，从而允许单步缓存失效过程。
-* 在其规则集中使用自定义标头的客户可以从最新的智能成像中受益，因为这些标头不会被阻止，这与以前版本的智能成像不同。 例如，[向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建议的“Timing Allow Origin”、“X-Robot”。
+* 在其规则集中使用自定义标头的客户可以从最新的智能成像中受益，因为这些标头不会被阻止，这与以前版本的智能成像不同。 例如， [向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建议的“Timing Allow Origin”、“X-Robot”。
 
 ## 是否存在与智能成像相关的许可成本？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-否. 智能成像功能包含在您的现有许可证中。 对于Dynamic Media Classic或Experience Manager- Dynamic Media(内部部署、AMS和Experience Manager作为Cloud Service)，此规则为true。
+否. 智能成像功能包含在您的现有许可证中。 对于Dynamic Media Classic或Experience Manager- Dynamic Media(内部部署、AMS和Experience Manageras a Cloud Service)，此规则为true。
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ ht-degree: 1%
    * 铬黄
    * Firefox
    * Microsoft® Edge
-   * Safari（跨iOS、macOS、iPadOS）提供的浏览器和操作系统版本支持WebP
+   * Safari(跨iOS、macOS、iPadOS)提供了支持WebP的浏览器和操作系统版本
    * Android™
    * Opera
 * 旧版浏览器支持以下功能：
@@ -210,13 +210,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
 
-      查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media Classic域，则可以在此过渡中请求转移到您自己的自定义域。
+      查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media Classic域，则可以在此过渡中请求移至您自己的自定义域。
    1. 指示您是否希望它通过HTTP/2运行。
 
-1. Adobe客户关怀团队会根据请求提交的顺序将您添加到智能成像客户等待列表。
-1. 当Adobe准备好处理您的请求时，客户关怀团队会联系您以协调并设置目标日期。
+1. Adobe客户支持根据请求的提交顺序将您添加到智能图像处理客户等待列表。
+1. 当Adobe准备好处理您的请求时，客户支持团队会联系您以协调并设置目标日期。
 1. **可选**:在Adobe将新功能推送到生产之前，您可以选择在暂存环境中测试智能成像。
-1. 客户关怀团队在完成后会通知您。
+1. 客户支持部门在完成后会通知您。
 1. 为了最大限度地提高智能成像的性能，Adobe建议将生存时间(TTL)设置为24小时或更长。 TTL定义CDN缓存资产的时长。 要更改此设置，请执行以下操作：
 
    1. 如果您使用Dynamic Media Classic，请转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。 将&#x200B;**[!UICONTROL 默认客户端缓存时间设置为Live]**&#x200B;值24或更长。
@@ -224,7 +224,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 我何时才能通过智能成像启用我的帐户？ {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-请求会按照客户关怀团队收到请求的顺序，根据等待列表进行处理。
+根据等待列表，将按照客户支持接收请求的顺序来处理请求。
 
 >[!NOTE]
 >
@@ -238,20 +238,20 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 如何验证智能成像是否按预期工作？{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 在您的帐户配置了智能成像后，请在浏览器上加载Dynamic Media Classic或Adobe Experience Manager - Dynamic Media图像URL。
+1. 在您的帐户配置了“智能成像”功能后，请在浏览器中加载Dynamic Media Classic或Adobe Experience Manager - Dynamic Media图像URL。
 1. 在浏览器中，通过转到&#x200B;**[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]**&#x200B;打开Chrome开发人员窗格。 或者，选择您选择的任何浏览器开发人员工具。
 
 1. 确保在开发人员工具打开时禁用缓存。
 
    * 在Windows®上，导航到开发人员工具窗格中的设置，然后选中&#x200B;**[!UICONTROL 禁用缓存（在设备工具打开时）]**&#x200B;复选框。
-   * 在macOS上，在开发人员窗格的&#x200B;**[!UICONTROL Network]**&#x200B;选项卡下，选择&#x200B;**[!UICONTROL 禁用缓存]**。
+   * 在macOS上，在开发人员窗格的&#x200B;**[!UICONTROL Network]**&#x200B;选项卡下，选择&#x200B;**[!UICONTROL disable cache]**。
 
 1. 观察内容类型已转换为相应的格式。 以下屏幕截图显示了在Chrome上动态转换为WebP的PNG图像。
 1. 在不同的浏览器和用户条件上重复此测试。
 
 >[!NOTE]
 >
->并非所有图像都会转换。 智能成像功能可决定转换是否可以提高性能。 有时，如果没有预期的性能增益或格式不是JPEG或PNG，则不会转换图像。
+>并非所有图像都会转换。 智能成像功能可决定转换是否可以提高性能。 有时，如果没有预期的性能增益或格式不JPEG或PNG，则不会转换图像。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
@@ -277,7 +277,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 智能成像DPR优化如何与Adobe Experience Manager Sites组件和Dynamic Media查看器一起使用？
 
-* Experience Manager站点核心组件默认配置以进行DPR优化。 为避免因服务器端智能成像DPR优化而出现超大图像，应始终将`dpr=off`添加到Experience Manager站点核心组件Dynamic Media图像中。
+* Experience Manager Sites核心组件默认配置，以优化DPR。 为避免因服务器端智能成像DPR优化而出现超大图像，始终将`dpr=off`添加到Experience Manager Sites核心组件Dynamic Media图像中。
 * 默认情况下，为了优化DPR，配置了Dynamic Media Foundation组件，以避免因服务器端智能成像DPR优化而出现过大的图像，将始终向Dynamic Media Foundation组件图像中添加`dpr=off`。 即使客户在DM Foundation组件中取消选择DPR优化，服务器端智能成像DPR也不会生效。 总之，在DM Foundation组件中，DPR优化仅基于DM Foundation组件级别设置生效。
 * 任何查看器端DPR优化都与服务器端智能成像DPR优化协同工作，并且不会导致图像过大。 换言之，无论DPR由查看器处理（例如仅在启用了缩放功能的查看器中的主视图），都不会触发服务器端智能成像DPR值。 同样，无论查看器元素（如色板和缩略图）没有DPR处理，都会触发服务器端智能成像DPR值。
 

@@ -37,7 +37,7 @@ ht-degree: 37%
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
-* 完成内容传输流程的&#x200B;*提取*&#x200B;阶段后，在开始&#x200B;*摄取阶段*&#x200B;以将内容作为Cloud Service *暂存*&#x200B;或&#x200B;*生产*&#x200B;实例摄取到AEM之前，您将需要记录支持票证以通知Adobe您打算运行&#x200B;*摄取*，以便Adobe可以确保在&#x200B;*摄取A1/>流程期间不会发生中断。*&#x200B;您需要在计划的&#x200B;*摄取*&#x200B;日期之前1周记录支持票证。 一旦您提交了支持票证，支持团队将就后续步骤提供指导。 您可以记录支持票证，其中包含以下详细信息：
+* 完成内容传输流程的&#x200B;*提取*&#x200B;阶段后，在开始&#x200B;*摄取阶段*&#x200B;以将内容摄取到AEMas a Cloud Service *暂存*&#x200B;或&#x200B;*生产*&#x200B;实例之前，您需要记录支持票证以通知Adobe您打算运行&#x200B;*摄取*，以便Adobe可以确保在&#x200B;*摄取A11/>流程期间不会发生中断。*&#x200B;您需要在计划的&#x200B;*摄取*&#x200B;日期之前1周记录支持票证。 一旦您提交了支持票证，支持团队将就后续步骤提供指导。 您可以记录支持票证，其中包含以下详细信息：
 
    * 计划启动&#x200B;*摄取*&#x200B;阶段时的确切日期和预计时间（包含您的时区）。
    * 您计划将数据摄取到的环境类型（暂存或生产）。
@@ -70,7 +70,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="运行内容传输工具"
->abstract="了解如何使用内容传输工具将内容迁移到AEM as a Cloud Service（创作/发布）。"
+>abstract="了解如何使用内容传输工具将内容迁移到AEMas a Cloud Service（创作/发布）。"
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 请参阅演示"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="教程 — 使用内容传输工具"
 

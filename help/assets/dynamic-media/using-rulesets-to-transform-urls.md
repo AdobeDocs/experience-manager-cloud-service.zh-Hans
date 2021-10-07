@@ -3,7 +3,7 @@ title: 使用规则集转换URL
 description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是使用脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在数据满足特定条件时采取特定操作。
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 * 添加MIME类型后缀。 许多服务和网站都需要图像后缀，例如向URL添加`.jpg`。
 * 为SEO（搜索引擎优化）创建URL的文件夹路径。
 
-   请参阅[AdobeDynamic Media Classic如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   请参阅[Adobe Dynamic Media Classic如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 将元数据添加到URL以进行SEO（搜索引擎优化）。
 
-   请参阅[AdobeDynamic Media Classic如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   请参阅[Adobe Dynamic Media Classic如何支持SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 设置内容处置以触发下载。
 * 简化图像提供模板URL以进行个性化。 例如，将`rgb{XX,YY,ZZ}`转换为RTF就绪型`\redXX\greenYY\blueZZ`
@@ -45,7 +45,7 @@ ht-degree: 0%
 此外，请确保首先在暂存环境中测试规则集，该测试环境不会影响您的实时生产环境。
 生产环境和暂存环境通常需要不同的登录方式。
 
-有关登录信息](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)，请参阅[AdobeDynamic Media Classic桌面应用程序。
+有关登录信息](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)，请参阅[Adobe Dynamic Media Classic桌面应用程序。
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系技术支持。
+   您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系客户支持。
 
 1. 通过执行以下操作，上传规则集文件：
 
