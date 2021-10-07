@@ -4,9 +4,9 @@ description: '与 Adobe Target 集成 '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1036'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 作为Adobe Marketing Cloud的一部分，Adobe Target允许您通过跨所有渠道进行定位和测量来提高内容相关性。 集成Adobe Target和AEMas a Cloud Service需要：
 
 * 使用触屏UI在AEMas a Cloud Service中创建Target配置（需要IMS配置）。
-* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)中添加并配置Adobe Target作为扩展。
+* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)中添加并配置Adobe Target作为扩展。
 
 AdobeLaunch是管理AEM页面（JS库/标记）中Analytics和Target的客户端属性所必需的。 尽管如此，“体验定位”需要与Launch集成。 要将体验片段导出到Target，您只需要Adobe Target配置和IMS。
 

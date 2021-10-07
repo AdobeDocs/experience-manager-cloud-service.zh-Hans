@@ -3,9 +3,9 @@ title: HTTP2 内容交付常见问题解答
 description: 了解HTTP2内容交付。
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Adobe自己的测试产生了以下结果：
 
 ## 为我的Dynamic Media帐户启用HTTP/2的过程是什么？ {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[使用Admin Console创建支持案](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 例，并请求切换到HTTP/2;它不会自动为您完成。
+[使用Admin Console创建支持案](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 例，并请求切换到HTTP/2;它不会自动为您完成。
 
 1. 在支持案例中提供以下信息：
 
@@ -70,15 +70,15 @@ Adobe自己的测试产生了以下结果：
 
    转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
 
-   1. 客户支持将您根据请求提交的顺序添加到HTTP/2客户等待列表。
-   1. 当Adobe准备好处理您的请求时，客户支持团队会联系您以协调过渡并设置目标日期。
+   1. 技术支持将您根据请求提交的顺序添加到HTTP/2客户等待列表。
+   1. 当Adobe准备好处理您的请求时，客户关怀团队会联系您以协调过渡并设置目标日期。
    1. 完成后，系统会通知您，并可以验证是否成功过渡到HTTP2。
 
 
 
 ## 我何时可以转换到HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-请求的处理顺序是客户支持部门接收请求的顺序。
+请求的处理顺序与技术支持部门接收请求的顺序一致。
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2880'
 ht-degree: 12%
 
 ---
@@ -269,7 +269,7 @@ Repo Init的主要优势在于它们具有执行其脚本定义的所有操作�
 
 ## 嵌入第三方包 {#embedding-3rd-party-packages}
 
-所有包都必须通过[Adobe的公共Maven对象存储库](https://repo1.maven.org/maven2/com/adobe/)或可访问的可引用的第三方Maven对象存储库来提供。
+所有包都必须通过[Adobe的公共Maven对象存储库](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)或可访问的可引用的第三方Maven对象存储库来提供。
 
 如果第三方包位于 **Adobe 的公共 Maven 对象存储库**，则 Adobe Cloud Manager 无需进一步配置即可解析对象。
 

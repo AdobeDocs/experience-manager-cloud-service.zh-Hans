@@ -2,9 +2,9 @@
 title: 正在检查DNS记录状态
 description: 正在检查DNS记录状态
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 17dffaae3beac678ce89b5fde7abea3b2dff86a8
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager会对您的域名执行DNS查找，并显示以下状态消息之�
 状态直到您的自定义域名成功验证和部署后，才会检测到DNS状态。当您的自定义域名正在删除过程中时，也会观察到此状态。
 
 * **DNS解析**
-不正确这表示DNS记录配置尚未解析/指向，或错误。
+不正确这表示DNS记录配置尚未解析/指向，或错误。Adobe代表将自动收到通知。
 
    >[!NOTE]
    >您必须按照相应的说明配置`CNAME`或`A-record`。 请参阅配置DNS设置，以了解更多信息。 准备就绪后，必须再次选择状态旁边的&#x200B;**resolve**&#x200B;图标。

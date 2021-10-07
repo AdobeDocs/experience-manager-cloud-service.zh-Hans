@@ -4,7 +4,7 @@ description: 了解如何使CDN（内容分发网络）缓存内容失效，以�
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 13%
@@ -29,7 +29,7 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付。 
 
 1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系客户支持。
+   您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系技术支持。
 
 1. 转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
 1. 在“应用程序常规设置”页面的“服务器”组标题下，找到&#x200B;**[!UICONTROL CDN失效模板]**&#x200B;文本框。

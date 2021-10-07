@@ -4,18 +4,14 @@ description: 了解内容片段模型如何作为AEM中无头内容的基础，�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 6%
+source-wordcount: '2256'
+ht-degree: 7%
 
 ---
 
 # 内容片段模型 {#content-fragment-models}
-
->[!NOTE]
->
->[锁定（已发布）内容片段模型](#locked-published-content-fragment-models)功能处于测试阶段。
 
 AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/content-fragments/content-fragments.md)用作无头内容的基础。
 
@@ -415,82 +411,28 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 1. 选择您的模型，然后从工具栏中选择&#x200B;**取消发布** 。
 控制台中将指示已发布状态。
 
-如果您尝试取消发布一个或多个片段当前使用的模型，则会出现错误警告，通知您：
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-![取消发布正在使用的模型时显示内容片段模型错误消息](assets/cfm-model-unpublish-error.png)
+This feature provides governance for Content Fragment Models that have been published. 
 
-该消息将建议您检查[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)面板以进一步调查：
+The challenge:
 
-![引用中的内容片段模型](assets/cfm-model-references.png)
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
 
-## 锁定（已发布）内容片段模型 {#locked-published-content-fragment-models}
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
 
->[!NOTE]
-锁定（已发布）内容片段模型功能处于测试阶段。
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
 
-此功能为已发布的内容片段模型提供了管理。
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
 
-### 挑战 {#the-challenge}
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-* 内容片段模型确定AEM中GraphQL查询的架构。
+The solution:
 
-   * AEM GraphQL架构在创建内容片段模型后即会创建，并且它们可以同时存在于创作和发布环境中。
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
 
-   * 发布架构是最关键的，因为它们为JSON格式的内容片段内容的实时交付奠定了基础。
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
-* 修改内容片段模型或进行其他编辑时，可能会出现问题。 这意味着架构发生更改，这进而可能影响现有GraphQL查询。
-
-* 向内容片段模型添加新字段通常不应产生任何有害影响。 但是，修改现有数据字段（例如，其名称）或删除字段定义时，将在请求这些字段时中断现有GraphQL查询。
-
-### 要求 {#the-requirements}
-
-* 使用户了解在编辑已用于实时内容交付的模型（即已发布的模型）时的风险。
-
-* 此外，还可以避免意外的更改。
-
-如果重新发布修改的模型，则其中任一查询都可能会中断查询。
-
-### 解决方案 {#the-solution}
-
-为了解决这些问题，内容片段模型在发布后即会在作者上锁定&#x200B;**&#x200B;为只读模式。 这由&#x200B;**Locked**&#x200B;表示：
-
-![锁定内容片段模型的卡片](assets/cfm-model-locked.png)
-
-当模型为&#x200B;**Locked**（在只读模式下）时，可以查看模型的内容和结构，但无法编辑它们。
-
-您可以从控制台或模型编辑器中管理&#x200B;**Locked**&#x200B;模型：
-
-* 控制台
-
-   从控制台中，您可以使用工具栏中的&#x200B;**Unlock**&#x200B;和&#x200B;**Lock**&#x200B;操作来管理只读模式：
-
-   ![锁定的内容片段模型的工具栏](assets/cfm-model-locked.png)
-
-   * 您可以&#x200B;**解锁**&#x200B;模型以启用编辑。
-
-      如果选择&#x200B;**解锁**，将显示警告，并且必须确认&#x200B;**解锁**操作：
-      ![解锁内容片段模型时的消息](assets/cfm-model-unlock-message.png)
-
-      然后，可以打开模型进行编辑。
-
-   * 之后，您还可以&#x200B;**锁定**&#x200B;模型。
-   * 重新发布模型会立即将其重新置于&#x200B;**锁定**（只读）模式。
-
-* 模型编辑器
-
-   * 打开锁定的模型时，系统会发出警告，并会显示三个操作：**取消**、**查看只读**、**编辑**:
-
-      ![查看锁定的内容片段模型时的消息](assets/cfm-model-editor-lock-message.png)
-
-   * 如果选择&#x200B;**查看只读**，则可以查看模型的内容和结构：
-
-      ![查看只读 — 锁定的内容片段模型](assets/cfm-model-editor-locked-view-only.png)
-
-   * 如果选择&#x200B;**Edit**，则可以编辑并保存更新：
-
-      ![编辑 — 锁定的内容片段模型](assets/cfm-model-editor-locked-edit.png)
-
-      >[!NOTE]
-      顶部可能仍会显示一条警告，但此时模型已由现有内容片段使用。
-
-   * **** 取消将返回控制台。
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->

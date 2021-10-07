@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 要使用处理配置文件自动创建变体，请执行以下步骤：
 
-1. 联系[Adobe客户支持](https://experienceleague.adobe.com/#support)以接收许可证。
+1. 联系[Adobe客户关怀](https://experienceleague.adobe.com/#support)以接收许可证。
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**。
 
