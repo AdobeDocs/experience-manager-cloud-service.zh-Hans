@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 37%
+source-wordcount: '3216'
+ht-degree: 36%
 
 ---
 
@@ -50,6 +50,8 @@ ht-degree: 37%
 * 如果使用自定义索引，则必须确保在运行内容传输工具之前使用`tika`节点配置自定义索引。 有关更多详细信息，请参阅[准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) 。
 
 * 如果您打算进行增补，则必须从采用初始提取到运行增补提取期间，不更改现有内容的内容结构。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中限制此操作。
+
+* 如果您打算将版本作为迁移集的一部分包含在内，并且正在通过`wipe=false`执行增补，则由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望启用版本清除，并在迁移集中执行增补，则必须将摄取作为`wipe=true`执行。
 
 ## 可用性 {#availability}
 
@@ -120,6 +122,8 @@ ht-degree: 37%
    1. **参数**：选择以下参数以创建迁移集：
 
       1. **包含版本**：根据需要选择。包含版本后，将自动包含路径`/var/audit`以迁移审核事件。
+      >[!NOTE]
+      >如果您打算将版本作为迁移集的一部分包含在内，并且正在通过`wipe=false`执行增补，则由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望启用版本清除，并在迁移集中执行增补，则必须将摄取作为`wipe=true`执行。
 
       1. **包括来自IMS用户和组的映射**:选择选项以包含来自IMS用户和群组的映射。有关更多详细信息，请参阅[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 
@@ -131,6 +135,7 @@ ht-degree: 37%
          >* `/libs`
          >* `/home`
          >* `/etc` (允许 `/etc` 在CTT中选择某些路径)
+
 
 
 1. 在填充&#x200B;**创建迁移集**&#x200B;详细信息屏幕中的所有字段后，单击&#x200B;**Save**。
