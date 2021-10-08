@@ -1,39 +1,32 @@
 ---
-title: AEM as aCloud Service中的维护任务
-description: AEM as aCloud Service中的维护任务
+title: AEMas a Cloud Service中的维护任务
+description: AEMas a Cloud Service中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
+source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '940'
 ht-degree: 2%
 
 ---
 
-# AEM as aCloud Service中的维护任务
+# AEMas a Cloud Service中的维护任务
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="维护任务"
->abstract="维护任务是按计划运行以优化存储库的进程。 以AEM为Cloud Service，客户配置维护任务的操作属性的需求微乎其微。 客户可以将资源集中在应用程序级别的问题上，从而让基础架构操作Adobe。"
->additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="AEM维护指南"
->additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="操作仪表板维护任务"
+>abstract="维护任务是按计划运行以优化存储库的进程。 借助AEMas a Cloud Service，客户配置维护任务的操作属性的需求非常小。 客户可以将资源集中在应用程序级别的问题上，从而让基础架构操作Adobe。"
 
-维护任务是按计划运行以优化存储库的进程。 以AEM为Cloud Service，客户配置维护任务的操作属性的需求微乎其微。 客户可以将资源集中在应用程序级别的问题上，从而让基础架构操作Adobe。
-
-有关维护任务的其他信息，请参阅以下页面：
-
-* [AEM维护指南](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
-* [操作仪表板维护任务](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
+维护任务是按计划运行以优化存储库的进程。 借助AEMas a Cloud Service，客户配置维护任务的操作属性的需求非常小。 客户可以将资源集中在应用程序级别的问题上，从而让基础架构操作Adobe。
 
 ## 配置维护任务
 
-在AEM的早期版本中，您可以使用维护卡（工具>操作>维护）配置维护任务。 对于AEM as aCloud Service，维护卡将不再可用，因此应将配置提交到源控件并使用Cloud Manager进行部署。 Adobe将管理不需要客户决策的维护任务（例如，数据存储垃圾收集），而客户可以配置其他维护任务（请参阅下表）。
+在AEM的早期版本中，您可以使用维护卡（工具>操作>维护）配置维护任务。 对于AEMas a Cloud Service，维护卡不再可用，因此应将配置提交到源控件并使用Cloud Manager进行部署。 Adobe将管理不需要客户决策的维护任务（例如，数据存储垃圾收集），而客户可以配置其他维护任务（请参阅下表）。
 
 >[!CAUTION]
 >
 >Adobe保留覆盖客户维护任务配置设置以缓解性能下降等问题的权限。
 
-下表说明了在将AEM作为Cloud Service发布时可用的维护任务。
+下表说明了在AEMas a Cloud Service发布时可用的维护任务。
 
 | 维护任务 | 配置的所有者 | 如何配置（可选） |
 |---|---|---|
