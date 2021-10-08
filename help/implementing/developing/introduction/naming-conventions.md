@@ -2,7 +2,7 @@
 title: 命名约定
 description: 存储库中的节点受Java内容存储库的命名约定的约束
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 存储库中的节点须遵守 Java 内容存储库的命名约定。但是，AEM对页面节点的名称作了进一步的约定。
 
-## 页面{#naming-conventions-for-pages}的命名约定
+## 页面的命名约定 {#naming-conventions-for-pages}
 
 这些命名约定在不同级别实施：
 
@@ -21,9 +21,9 @@ ht-degree: 8%
 * PageManager:[页面管理器](#page-manager)提供了页面级别操作的方法。
 * 在AEM UI {#ui-behavior}中
 
-### JCR实用程序{#jcr-utilities}
+### JCR实用程序 {#jcr-utilities}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis是JCR实用程序的AEM实施。验证名称时特别需要注意的是它所控制的字符映射和以下验证：
+[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis是JCR实用程序的AEM实施。验证名称时特别需要注意的是它所控制的字符映射和以下验证：
 
 * `isValidName`
    * 检查名称是否不为空，并且只包含有效字符。
@@ -32,11 +32,11 @@ ht-degree: 8%
    * 这会从任意字符串中创建有效标签。
    * 它可用于从标题创建名称。
 
-### 页面管理器{#page-manager}
+### 页面管理器 {#page-manager}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager根据JCRUtil [提供页面级别操作](#jcr-utilities)的方法。
+[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager根据JCRUtil [提供页面级操作](#jcr-utilities)方法。
 
-### AEM UI行为{#ui-behavior}
+### AEM UI行为 {#ui-behavior}
 
 管理内容时，AEM UI:
 

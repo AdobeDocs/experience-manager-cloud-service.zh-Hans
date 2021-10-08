@@ -2,7 +2,7 @@
 title: 查询生成器谓词引用
 description: 查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 1%
@@ -201,7 +201,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-此谓词会查找属于特定[sling资源集合](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html)的成员的项目。
+此谓词会查找属于特定[sling资源集合](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)的成员的项目。
 
 这是仅限过滤的谓词，无法利用搜索索引。
 

@@ -2,7 +2,7 @@
 title: API参考资料
 description: AEM具有广泛而功能强大的API，您可以将其用于数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 4%
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM)提供了许多用于开发应用程序和扩展AEM
 
 | API | 描述 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | 产品抽象概念，如页面、资产、工作流等。 |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 产品抽象概念，如页面、资产、工作流等。 |
 | [Granite用户界面](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe的开放式Web堆栈，提供各种基本组件（请注意，6.5 Granite材料适用于AEMaCS） |
 | [Coral用户界面](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe的云UI可视样式，旨在提供用户体验的一致性 |
 
@@ -44,7 +44,7 @@ AEM基于以下四个主要Java API集以首选项的降序顺序构建。
 
 | 优先级 | API | 描述 |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | 产品抽象概念，如页面、资产、工作流等。 |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 产品抽象概念，如页面、资产、工作流等。 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST和基于资源的抽象概念，如资源、值映射和HTTP请求。 |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 数据和内容抽象，如节点、属性和会话。 |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi应用程序容器抽象，如服务和(OSGi)组件。 |

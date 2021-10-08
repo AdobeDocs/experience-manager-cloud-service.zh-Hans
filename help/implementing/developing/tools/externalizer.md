@@ -2,7 +2,7 @@
 title: 外部化URL
 description: Externalizer是一种OSGi服务，它允许您以编程方式将资源路径转换为外部URL和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # 外部化URL {#externalizing-urls}
 
-在AEM中，**Externalizer**&#x200B;是一项OSGi服务，它允许您以编程方式转换资源路径(例如，`/path/to/my/page`)通过预配置的DNS来预定路径，从而将其置于外部和绝对URL（例如`https://www.mycompany.com/path/to/my/page`）中。
+在AEM中，**Externalizer**&#x200B;是一种OSGi服务，它允许您以编程方式转换资源路径(例如，`/path/to/my/page`)通过预配置的DNS来预定路径，从而将其置于外部和绝对URL（例如`https://www.mycompany.com/path/to/my/page`）中。
 
-由于AEM作为Cloud Service实例无法知道其外部可见URL，并且由于有时必须在请求范围之外创建链接，因此此服务提供了一个中心位置来配置这些外部URL并构建它们。
+由于AEMas a Cloud Service实例无法知道其外部可见的URL，并且由于有时必须在请求范围之外创建链接，因此此服务提供了一个中心位置来配置这些外部URL并构建它们。
 
-本文介绍如何配置外部器服务及其使用方法。 有关该服务的技术详细信息，请参阅[Javaocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)。
+本文介绍如何配置外部器服务及其使用方法。 有关该服务的技术详细信息，请参阅[Javaocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html)。
 
-## 外部器的默认行为和如何覆盖{#default-behavior}
+## 外部器的默认行为和如何覆盖 {#default-behavior}
 
 现成的Externalizer服务具有`author-p12345-e6789.adobeaemcloud.com`和`publish-p12345-e6789.adobeaemcloud.com`之类的值。
 
-要覆盖此类值，请按照[将AEM的OSGi配置为Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)中所述，使用Cloud Manager环境变量，并设置预定义的`AEM_CDN_DOMAIN_AUTHOR`和`AEM_CDN_DOMAIN_PUBLISH`变量。
+要覆盖此类值，请按照[为AEMas a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)一文中所述，使用Cloud Manager环境变量，并设置预定义的`AEM_CDN_DOMAIN_AUTHOR`和`AEM_CDN_DOMAIN_PUBLISH`变量。
 
-## 配置外部器服务{#configuring-the-externalizer-service}
+## 配置外部器服务 {#configuring-the-externalizer-service}
 
 Externalizer服务允许您集中定义可用于以编程方式为资源路径添加前缀的域。 外部器服务应仅用于具有单个域的应用程序。
 
 >[!NOTE]
 >
->与将任何[OSGi配置应用于AEM as a Cloud Service一样，](/help/implementing/deploying/overview.md#osgi-configuration)应对本地开发人员实例执行以下步骤，然后将其提交到您的项目代码以进行部署。
+>与为AEMas a Cloud Service应用任何[OSGi配置一样，](/help/implementing/deploying/overview.md#osgi-configuration)应对本地开发人员实例执行以下步骤，然后将其提交到您的项目代码进行部署。
 
 要为外部器服务定义域映射，请执行以下操作：
 
@@ -73,7 +73,7 @@ Externalizer服务允许您集中定义可用于以编程方式为资源路径�
 
 1. 单击&#x200B;**Save**&#x200B;以保存更改。
 
-### 使用外部器服务{#using-the-externalizer-service}
+### 使用外部器服务 {#using-the-externalizer-service}
 
 此部分显示如何使用外部器服务的一些示例。
 
@@ -125,4 +125,4 @@ Externalizer服务允许您集中定义可用于以编程方式为资源路径�
 
 >[!TIP]
 >
->您可以在[Javaocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)中找到更多示例。
+>您可以在[Javaocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html)中找到更多示例。

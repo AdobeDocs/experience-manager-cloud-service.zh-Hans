@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 ### HTML/文本 {#html-text}
 
 * 默认情况下，会根据apache层发出的`cache-control`标头，由浏览器缓存五分钟。 CDN还尊重此价值。
-* 可通过在`global.vars`中定义`DISABLE_DEFAULT_CACHING`变量来禁用默认的HTML/文本缓存设置：
+* 可通过在`global.vars`中定义`DISABLE_DEFAULT_CACHING`变量来禁用默认HTML/文本缓存设置：
 
 ```
 Define DISABLE_DEFAULT_CACHING
@@ -30,7 +30,7 @@ Define DISABLE_DEFAULT_CACHING
 
 例如，当您的业务逻辑需要微调页面标题（其值基于日历日）时，这非常有用，因为默认情况下，页面标题设置为0。 也就是说，在关闭默认缓存时，请务必谨慎。****
 
-* 可以通过使用AEM作为Cloud ServiceSDK Dispatcher工具在`global.vars`中定义`EXPIRATION_TIME`变量来覆盖所有HTML/文本内容。
+* 可以通过使用AEMas a Cloud ServiceSDK Dispatcher工具在`global.vars`中定义`EXPIRATION_TIME`变量来覆盖所有HTML/文本内容。
 * 可以由以下apache mod_headers指令在更细粒度级别上覆盖：
 
    ```
@@ -40,7 +40,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
    ```
 
-   在设置全局缓存控制标头或与宽正则表达式匹配的标头时，请务必谨慎，以便这些标头不会应用于您可能打算保留为私有的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 根据上述说明，如果AEM as a Dispatcher文档中所述，当它检测到已将其应用于它检测到的Dispatcher不可执行的内容时，它将删除缓存标头。 为了强制AEM始终应用缓存标头，可以添加&#x200B;**always**&#x200B;选项，如下所示：
+   在设置全局缓存控制标头或与宽正则表达式匹配的标头时，请务必谨慎，以便这些标头不会应用于您可能打算保留为私有的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 根据上述说明，如果AEM as a Cloud Service检测到已将缓存标头应用于Dispatcher检测到的不可执行的内容，则它将删除该缓存标头，如Dispatcher文档中所述。 为了强制AEM始终应用缓存标头，可以添加&#x200B;**always**&#x200B;选项，如下所示：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 客户端库(js，css) {#client-side-libraries}
 
-* 通过使用AEM客户端库框架，可以生成JavaScript和CSS代码，以便浏览器可以无限期地缓存它，因为任何更改都将显示为具有唯一路径的新文件。  换句话说，将根据需要生成引用客户端库的HTML，以便客户在发布新内容时能够体验到新内容。 对于不遵循“不可变”值的旧版浏览器，缓存控制将设置为“不可变”或30天。
+* 通过使用AEM客户端库框架，可以生成JavaScript和CSS代码，以便浏览器可以无限期地缓存它，因为任何更改都将显示为具有唯一路径的新文件。  换言之，将根据需要生成引用客户端库的HTML，以便客户在发布新内容时能够体验到新内容。 对于不遵循“不可变”值的旧版浏览器，缓存控制将设置为“不可变”或30天。
 * 有关更多详细信息，请参阅[客户端库和版本一致性](#content-consistency)部分。
 
 ### 图像和任何存储在blob存储中且足够大的内容 {#images}
@@ -125,13 +125,13 @@ Define DISABLE_DEFAULT_CACHING
 
 通常，不需要手动使调度程序中的内容失效，但如果需要，可以执行此操作，如下所述。
 
-在将AEM作为Cloud Service之前，有两种方法可使调度程序缓存失效。
+在AEMas a Cloud Service之前，有两种方法可使调度程序缓存失效。
 
 1. 调用复制代理，指定发布调度程序刷新代理
 2. 直接调用`invalidate.cache` API（例如`POST /dispatcher/invalidate.cache`）
 
-不再支持调度程序的`invalidate.cache` API方法，因为它只处理特定的调度程序节点。 AEM as aCloud Service在服务级别运行，而不是在单个节点级别运行，因此[从AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html)页面中使缓存的页面失效的失效说明对于AEM as aCloud Service不再有效。
-而应使用复制刷新代理。 可以使用复制API完成此操作。 [此处](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)提供了复制API文档，有关刷新缓存的示例，请参阅[ API示例页面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)，具体是`CustomStep`向所有可用代理发布类型为ACTIVATE的复制操作示例。 无法配置刷新代理端点，但已预配置为指向与运行刷新代理的发布服务匹配的调度程序。 刷新代理通常可以由OSGi事件或工作流触发。
+不再支持调度程序的`invalidate.cache` API方法，因为它只处理特定的调度程序节点。 AEMas a Cloud Service在服务级别运行，而不是在单个节点级别运行，因此[从AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html)页中使缓存页面失效的失效说明对AEMas a Cloud Service不再有效。
+而应使用复制刷新代理。 可以使用复制API完成此操作。 [此处](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)提供了复制API文档，有关刷新缓存的示例，请参阅[ API示例页面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)，具体是`CustomStep`向所有可用代理发布类型为ACTIVATE的复制操作示例。 无法配置刷新代理端点，但已预配置为指向与运行刷新代理的发布服务匹配的调度程序。 刷新代理通常可以由OSGi事件或工作流触发。
 
 下图说明了这一点。
 
@@ -145,15 +145,15 @@ Adobe管理的CDN遵循TTL，因此无需刷新。 如果怀疑存在问题，�
 
 页面由HTML、Javascript、CSS和图像组成。 我们鼓励客户利用[客户端库(clientlibs)框架](/help/implementing/developing/introduction/clientlibs.md)将Javascript和CSS资源导入HTML页面，同时考虑JS库之间的依赖关系。
 
-clientlibs框架提供了自动版本管理，这意味着开发人员可以在源代码管理中签入对JS库的更改，并且当客户推送其版本时，将提供最新版本。 如果没有这些内容，开发人员将需要手动更改引用了新版库的HTML，如果许多HTML模板共享同一库，这尤其繁重。
+clientlibs框架提供了自动版本管理，这意味着开发人员可以在源代码管理中签入对JS库的更改，并且当客户推送其版本时，将提供最新版本。 如果没有这些权限，开发人员将需要手动更改引用新版库的HTML，如果许多HTML模板共享同一库，则更加繁琐。
 
-将库的新版本发布到生产环境后，将更新引用的HTML页面，并包含指向这些更新库版本的新链接。 给定HTML页面的浏览器缓存过期后，无论从浏览器缓存中加载旧库，因为现在保证刷新的页面(从AEM)会引用库的新版本。 换言之，刷新的HTML页面将包含所有最新的库版本。
+将库的新版本发布到生产环境后，将更新引用的HTML页面，其中包含指向这些更新库版本的新链接。 给定HTML页面的浏览器缓存过期后，无论从浏览器缓存中加载旧库，因为现在保证(从AEM中)刷新的页面会引用库的新版本。 换言之，刷新的HTML页面将包含所有最新的库版本。
 
 其机制是序列化哈希，将附加到客户端库链接中，以确保浏览器有一个唯一的版本化URL来缓存CSS/JS。 仅当客户端库的内容发生更改时，才会更新序列化的哈希。 这意味着，即使在新部署中，如果发生不相关的更新（即对客户端库的基础css/js没有更改），则引用将保持不变，从而确保减少对浏览器缓存的中断。
 
-### 启用客户端库的长缓存版本 — AEM as a Long Cache SDK快速启动 {#enabling-longcache}
+### 启用客户端库的长缓存版本 — AEMas a Cloud ServiceSDK快速启动 {#enabling-longcache}
 
-HTML页面中包含的默认clientlib如下例所示：
+HTML页面上的默认clientlib包含如下示例所示：
 
 ```
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.css" type="text/css">
@@ -165,13 +165,13 @@ HTML页面中包含的默认clientlib如下例所示：
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-默认情况下，所有AEM as a Cloud Service环境中都会启用严格的clientlib版本控制。
+默认情况下，所有AEMas a Cloud Service环境中都启用了严格clientlib版本控制。
 
 要在本地SDK快速启动中启用严格的clientlib版本控制，请执行以下操作：
 
 1. 导航到OSGi配置管理器`<host>/system/console/configMgr`
-1. 找到用于AdobeGranite HTML库管理器的OSGi配置：
+1. 找到AdobeGraniteHTML库管理器的OSGi配置：
    * 选中此复选框可启用严格版本控制
    * 在标记为长期客户端缓存键的字段中，输入值/。*；哈希
-1. 保存更改。请注意，无需在源代码管理中保存此配置，因为AEM as a Cloud Service将在开发、暂存和生产环境中自动启用此配置。
+1. 保存更改。请注意，无需在源代码管理中保存此配置，因为AEMas a Cloud Service将在开发、暂存和生产环境中自动启用此配置。
 1. 每当客户端库的内容发生更改时，都会生成一个新的哈希键，并且HTML引用将会更新。
