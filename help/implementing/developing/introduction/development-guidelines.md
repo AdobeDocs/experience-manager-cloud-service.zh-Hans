@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2059'
 ht-degree: 2%
 
 ---
@@ -190,10 +190,6 @@ AEMas a Cloud Service要求对出站邮件进行加密。 以下各节介绍如�
 应使用[Day CQ Mail Service OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
 
 AEMas a Cloud Service要求通过端口465发送邮件。 如果邮件服务器不支持端口465，则只要启用了TLS选项，就可以使用端口587。
-
->[!NOTE]
->
->请注意，Adobe不支持通过唯一专用IP地址进行SMTP签名。
 
 ### 配置 {#email-configuration}
 
