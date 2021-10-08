@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
+source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -75,13 +75,13 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **轻松将AEM Forms与Microsoft Dynamics和Salesforce连接**:该服务为Microsoft Dynamics和Salesforce提供了开箱即用的数据源配置和数据模型，使开发人 [员能够更快、更轻松地将Microsoft Dynamics和Salesforce配置为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)。
 
-* **使用DocuSign对自适应表单进行电子签名：** 您可以使用DocuSign对自适应表单进行电子签名。该服务提供自定义提交操作，以便将DocuSign与自适应表单结合使用。 您可以安装Software Distribution上提供的包以导入提交操作。
+* **使用DocuSign对自适应表单进行电子签名：** 您可以使用DocuSign对自适应表单进行电子签名。该服务提供自定义提交操作，以便将DocuSign与自适应表单结合使用。
 
 ### [!DNL Forms]的测试版功能 {#sep-what-is-new-forms-prerelease}
 
-* **统一存储连接器：** 使用统一存储连接器将客户管理的存储库中的进程中数据外部化。例如，您可以
-   * 启用Forms Portal的保存和恢复功能，并将自适应表单草稿存储在客户管理的数据存储库中。
-   * 将包含敏感个人数据(SPD)的正在处理的AEM工作流数据(AEM工作流变量数据)存储在客户管理的存储库中。
+* **统一存储连接器：** 使用统一存储连接器将客户管理的存储库中的进程中数据外部化。例如，您可以将包含敏感个人数据(SPD)的正在处理的AEM工作流数据(AEM工作流变量数据)存储在客户管理的存储库中。
+
+   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) API您可以将XDP模板和XML数据组合在一起，以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 利用API，可创建应用程序，以便：
    * 使用XML数据填充模板文件，以生成文档。
