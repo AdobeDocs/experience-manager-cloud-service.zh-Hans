@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager as a Assets HTTP API中的Cloud Service内容片段支持
+title: Adobe Experience Manager as a Cloud Service Assets HTTP API中的内容片段支持
 description: 了解资产HTTP API中对内容片段的支持，HTTP API是AEM的一项重要无头交付功能。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 2%
 >
 >资产HTTP API的当前实施基于[REST](https://en.wikipedia.org/wiki/Representational_state_transfer)架构样式。
 
-[Assets REST API](/help/assets/mac-api-assets.md)允许开发人员将Adobe Experience Manager作为Cloud Service，通过CRUD操作（创建、读取、更新、删除），直接通过HTTP API访问内容(存储在AEM中)。
+[Assets REST API](/help/assets/mac-api-assets.md)允许Adobe Experience Manager as a Cloud Service开发人员通过CRUD操作（创建、读取、更新、删除），直接通过HTTP API访问内容(存储在AEM中)。
 
-API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为无头CMS（内容管理系统）的Cloud Service进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
+该API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager as a Cloud Service作为无头CMS（内容管理系统）进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
 
 例如，[单页应用程序(SPA)](/help/implementing/developing/hybrid/introduction.md)（基于框架或自定义）需要通过HTTP API提供的内容，通常采用JSON格式。
 
@@ -50,7 +50,7 @@ API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe E
 
 ## 前提条件 {#prerequisites}
 
-在最新Adobe Experience Manager的每次现成安装中，都提供了Assets REST API(作为Cloud Service版本)。
+在最新Adobe Experience Manager as a Cloud Service版本的每次现成安装中，都提供Assets REST API。
 
 ## 重要概念 {#key-concepts}
 
@@ -69,7 +69,7 @@ API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe E
 >访问：
 >
 >* `/api/assets` **不** 需要使用选择 `.model` 器。
->* `/content/path/to/page` **** 需要使用选 `.model` 择器。
+>* `/content/path/to/page` **** 需要使用选择 `.model` 器。
 
 
 HTTP方法确定要执行的操作：
@@ -256,7 +256,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅[API引用](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>有关更多详细信息，请参阅[API引用](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
 ### 读取/投放 {#read-delivery}
 
@@ -374,7 +374,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 
 有关详细的API参考，请参阅此处：
 
-* [Adobe Experience Manager Assets API — 内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [资产 HTTP API](/help/assets/mac-api-assets.md)
 
