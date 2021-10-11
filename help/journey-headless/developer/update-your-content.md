@@ -1,19 +1,19 @@
 ---
 title: 如何通过AEM Assets API更新您的内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用REST API访问和更新内容片段的内容。
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
 
 ---
 
-
-# 如何通过AEM Assets API更新您的内容{#update-your-content}
+# 如何通过AEM Assets API更新您的内容 {#update-your-content}
 
 在[AEM无头开发人员历程的这一部分中，](overview.md)了解如何使用REST API访问和更新内容片段的内容。
 
-## 到目前为止{#story-so-far}
+## 迄今为止的故事 {#story-so-far}
 
 在AEM无头历程的上一个文档中， [如何通过AEM交付API访问您的内容](access-your-content.md)您学习了如何通过AEM GraphQL API在AEM中访问无头内容，您现在应该：
 
@@ -35,7 +35,7 @@ ht-degree: 2%
   * Look at sample code to see how things work in practice.
 -->
 
-## 为什么内容片段{#why-http-api}需要资产HTTP API
+## 为什么内容片段需要资产HTTP API {#why-http-api}
 
 在无头历程的上一步中，您了解了如何使用AEM GraphQL API来使用查询检索内容。
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 资产HTTP API允许您&#x200B;**读取**&#x200B;内容，但也允许您&#x200B;**创建**、**更新**&#x200B;和&#x200B;**删除**&#x200B;内容 — GraphQL API不可能执行的操作。
 
-在最新Adobe Experience Manager的每次现成安装中，都提供了Assets REST API(作为Cloud Service版本)。
+在最新Adobe Experience Manager as a Cloud Service版本的每次现成安装中，都提供Assets REST API。
 
 ## 资产 HTTP API {#assets-http-api}
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 资产HTTP API的当前实施基于&#x200B;**REST**&#x200B;架构样式，允许您通过&#x200B;**CRUD**&#x200B;操作（创建、读取、更新、删除）访问内容(存储在AEM中)。
 
-通过这些操作，API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为无头CMS（内容管理系统）的Cloud Service进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。 例如，单页应用程序(SPA)（基于框架或自定义）需要通过API提供的内容，通常采用JSON格式。
+通过这些操作，API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager as a Cloud Service作为无头CMS（内容管理系统）进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。 例如，单页应用程序(SPA)（基于框架或自定义）需要通过API提供的内容，通常采用JSON格式。
 
 <!--
 >[!NOTE]
@@ -178,7 +178,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 -->
 
-## 资产HTTP API和内容片段{#assets-http-api-content-fragments}
+## 资产HTTP API和内容片段 {#assets-http-api-content-fragments}
 
 内容片段用于无标题交付，而内容片段是一种特殊类型的资产。 它们用于访问结构化数据，例如文本、数字、日期等。
 
@@ -222,7 +222,7 @@ Associated content is currently not exposed.
 >访问：
 >
 >* `/api/assets` **不** 需要使用选择 `.model` 器。
->* `/content/path/to/page` **** 需要使用选 `.model` 择器。
+>* `/content/path/to/page` **** 需要使用选择 `.model` 器。
 
 
 ### 操作 {#operation}
@@ -255,9 +255,9 @@ HTTP方法确定要执行的操作：
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅API引用。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>有关更多详细信息，请参阅API引用。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
-### 读取/投放{#read-delivery}
+### 读取/投放 {#read-delivery}
 
 用法包括：
 
@@ -303,7 +303,7 @@ HTTP方法确定要执行的操作：
 * Adobe Experience Manager Assets HTTP API（其他资源）
 * AEM Assets HTTP API中的内容片段支持（其他资源）
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已完成AEM Headless开发人员历程的这一部分，接下来您应该：
 
@@ -325,7 +325,7 @@ HTTP方法确定要执行的操作：
 * [资产 HTTP API](/help/assets/mac-api-assets.md)
 * [内容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API — 内容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [CORS/AEM说明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
