@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 3%
@@ -210,14 +210,13 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 ### 发布日期 {#release-date-bpa-latest}
 
-Best Practices Analyzer v2.1.18的发布日期是2021年9月2日。
+Best Practices Analyzer v2.1.20的发布日期是2021年10月5日。
 
 ### 新增功能 {#what-is-new}
 
-* 能够检测并报告节点总数。
+* 能够检测并报告节点名称长度。
 
-* 能够检测并报告节点存储类型和大小。
+* 能够检测并报告总索引大小。
 
-### 错误修复 {#bug-fixes-bpa}
+* 能够检测并报告缺少其原始演绎版的资产。
 
-* BPA错误地检测了Commerce Integration Framework的存在。
