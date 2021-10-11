@@ -1,9 +1,9 @@
 ---
 title: 使用用户映射工具
 description: 使用用户映射工具
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '596'
 ht-degree: 3%
 
 ---
@@ -31,20 +31,25 @@ ht-degree: 3%
 
 用户映射工具已集成到内容传输工具中。 您可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载内容传输工具。 有关最新版本的更多详细信息，请参阅[当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **用户映射**。
+1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **内容迁移**。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
+
+1. 单击&#x200B;**用户映射**&#x200B;卡。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
 1. 单击&#x200B;**创建用户映射配置**。
 
    >[!NOTE]
    >如果跳过此步骤，则在提取阶段会跳过用户和组映射。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
    按如下所述填充&#x200B;**用户管理API配置**&#x200B;中的字段。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
+
 
    * **组织ID**:输入要迁移Adobe的组织的Identity Management系统(IMS)组织ID。
 
@@ -59,6 +64,8 @@ ht-degree: 3%
       >访问令牌每24小时过期一次，并且需要创建一个新令牌。 要创建新令牌，请返回至[Adobe开发人员控制台](https://console.adobe.io)，选择您的项目，单击&#x200B;**用户管理API**&#x200B;并将相同的私钥粘贴到框中。
 
 1. 填充字段后，单击&#x200B;**测试配置**&#x200B;以测试与用户管理API服务的连接。 如果连接成功，您将能够单击&#x200B;**Save**&#x200B;以保存配置。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
 1. 保存配置后，选择配置并单击&#x200B;**启动用户映射**。
 
