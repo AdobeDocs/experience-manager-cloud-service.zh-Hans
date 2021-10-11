@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
+source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1488'
 ht-degree: 3%
 
 ---
@@ -71,11 +71,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **在自适应表单中使用Adobe Sign角色**:Adobe Sign的业务和企业服务级别可以选择扩展协议收件人的角色，而不仅仅是签名者，以更好地满足其工作流要求。现在，您可以使[的每个协议收件人都能够在自适应表单](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)中配置其角色，而签名者是默认角色。
 
-* **用于自适应Forms的Analytics**:您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪最终用户行为，以收集最终用户分析。它有助于根据数据做出明智的决策，以改善最终用户体验。
+* **用于自适应Forms的Analytics**:您现在可以通过自适 [应Forms的Adobe分析来捕](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html) 获和跟踪最终用户行为，以收集最终用户分析。它有助于根据数据做出明智的决策，以改善最终用户体验。
 
 * **轻松将AEM Forms与Microsoft Dynamics和Salesforce连接**:该服务为Microsoft Dynamics和Salesforce提供了开箱即用的数据源配置和数据模型，使开发人 [员能够更快、更轻松地将Microsoft Dynamics和Salesforce配置为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)。
 
-* **使用DocuSign对自适应表单进行电子签名：** 您可以使用DocuSign对自适应表单进行电子签名。该服务提供自定义提交操作，以便将DocuSign与自适应表单结合使用。
+* **使用DocuSign对自适应表单进行电子签名：** [您可以使用DocuSign对自适应表单进行电子签名](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html)。该服务提供自定义提交操作，以便将DocuSign与自适应表单结合使用。
 
 ### [!DNL Forms]的测试版功能 {#sep-what-is-new-forms-prerelease}
 
