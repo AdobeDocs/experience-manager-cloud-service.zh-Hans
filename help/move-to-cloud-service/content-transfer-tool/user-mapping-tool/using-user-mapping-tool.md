@@ -1,10 +1,10 @@
 ---
 title: 使用用户映射工具
 description: 使用用户映射工具
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +71,10 @@ ht-degree: 2%
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. 单击对话框中的&#x200B;**启动**&#x200B;以启动“用户映射”进程。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. 完成用户映射后，单击&#x200B;**Results**&#x200B;以查看摘要。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ ht-degree: 2%
 * 访问令牌在过程中过期，或
 * 其他原因
 
-进程从进程停止的位置保存。 查看用户映射日志以检查保存的进度。 再次单击&#x200B;**开始用户映射**&#x200B;按钮以从其停止的位置恢复。 在重新启动之前，请确保访问令牌仍然有效或已刷新。
+   >[!NOTE]
+   >进程从进程停止的位置保存。
+
+请按照以下步骤继续用户映射过程：
+
+1. 单击&#x200B;**查看日志**&#x200B;以查看用户映射日志以检查保存的进度。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. 再次单击&#x200B;**开始用户映射**&#x200B;按钮以从其停止的位置恢复。
+
+   >[!NOTE]
+   >在重新启动之前，请确保访问令牌仍然有效或已刷新。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. 单击对话框中的&#x200B;**开始**&#x200B;以继续“用户映射”进程。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
