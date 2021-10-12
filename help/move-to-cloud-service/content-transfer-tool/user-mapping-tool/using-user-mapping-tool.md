@@ -1,9 +1,9 @@
 ---
 title: 使用用户映射工具
 description: 使用用户映射工具
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 3%
    >[!NOTE]
    >进程从进程停止的位置保存。
 
-请按照以下步骤继续用户映射过程：
+请按照以下步骤继续用户映射流程：
 
 1. 单击&#x200B;**查看日志**&#x200B;以查看用户映射日志以检查保存的进度。
 
@@ -115,3 +115,7 @@ ht-degree: 3%
 1. 单击对话框中的&#x200B;**开始**&#x200B;以继续“用户映射”进程。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   用户映射过程完成后，您将查看该特定配置的&#x200B;**状态**&#x200B;作为&#x200B;**已完成**。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
