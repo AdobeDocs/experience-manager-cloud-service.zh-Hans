@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
+source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 3%
+source-wordcount: '1508'
+ht-degree: 2%
 
 ---
 
@@ -197,12 +197,12 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 通过简化的用户体验改进了用户映射，其中包括以下功能。 有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)。
+* 通过简化的用户体验改进了用户映射工具，其中包括以下功能。 有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)。
    * 在运行用户映射之前，测试与用户管理API的连接
    * 优雅地跳过错误并继续用户映射活动
-   * 如果访问令牌过期（24小时后），用户映射不再失败。 可以从上次停止的位置重新运行用户映射。
+   * 如果&#x200B;**访问令牌**&#x200B;在24小时后过期，则用户映射不再失败。 可以从上次停止的位置重新运行用户映射。
 
-* 为了提高CTT稳健性，一次可以将内容摄取到创作实例或发布实例。
+* 为了提高内容传输工具的稳健性，可以一次将内容摄取到创作实例或发布实例。 有关更多详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en)。
 
 * 包含版本后，将自动包含路径`/var/audit`以迁移审核事件。
 
