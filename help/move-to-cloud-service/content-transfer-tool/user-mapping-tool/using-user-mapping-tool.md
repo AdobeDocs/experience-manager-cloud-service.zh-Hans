@@ -1,9 +1,9 @@
 ---
 title: 使用用户映射工具
 description: 使用用户映射工具
-source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
+source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '734'
 ht-degree: 3%
 
 ---
@@ -74,6 +74,11 @@ ht-degree: 3%
 1. 单击对话框中的&#x200B;**启动**&#x200B;以启动“用户映射”进程。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   它将&#x200B;**Status**&#x200B;显示为&#x200B;**RUNNING**。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+
 
 1. 完成用户映射后，单击&#x200B;**Results**&#x200B;以查看摘要。
 
