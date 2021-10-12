@@ -1,7 +1,7 @@
 ---
 title: 使用用户映射工具
 description: 使用用户映射工具
-source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
+source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 2%
@@ -79,12 +79,12 @@ ht-degree: 2%
    >* 完成用户映射后，您可以使用痕迹导航导航导航导航回内容迁移页面。 用户映射卡显示状态和时间戳。 单击&#x200B;**内容传输**&#x200B;以创建要运行提取的迁移集。 有关更多详细信息，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)。
 
 
-### 恢复用户映射过程 {#resume-user-mapping}
+### 恢复用户映射过程 {#resume-user-mapping-process}
 
 如果由于以下任何原因而停止了用户映射过程：
 
 * 用户选择了&#x200B;**停止用户映射**
 * 访问令牌在过程中过期，或
-* 还有别的原因。
+* 其他原因
 
 进程从进程停止的位置保存。 查看用户映射日志以检查保存的进度。 再次单击&#x200B;**开始用户映射**&#x200B;按钮以从其停止的位置恢复。 在重新启动之前，请确保访问令牌仍然有效或已刷新。
