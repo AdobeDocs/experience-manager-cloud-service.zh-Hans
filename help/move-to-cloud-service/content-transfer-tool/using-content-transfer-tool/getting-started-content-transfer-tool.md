@@ -2,7 +2,7 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 32%
@@ -102,7 +102,7 @@ ht-degree: 32%
 
 1. 您将在&#x200B;**内容传输**&#x200B;向导中查看迁移集，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    所有现有迁移集及其当前状态和状态信息都会显示在&#x200B;**内容传输**&#x200B;向导中。 您可能会看到下面描述的一些图标。
 
