@@ -1,7 +1,7 @@
 ---
 title: 在内容传输工具中将内容摄取到目标
 description: 在内容传输工具中将内容摄取到目标
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 34%
@@ -33,7 +33,7 @@ ht-degree: 34%
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   此外，单击&#x200B;**客户关怀**&#x200B;记录票证，如上图所示。 另请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以了解更多信息。
+   此外，单击&#x200B;**客户关怀**&#x200B;记录票证，如上图所示。 另请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations)以了解更多信息。
 
 1. 完成摄取后，状态将更新为&#x200B;**FINISHED**。
 

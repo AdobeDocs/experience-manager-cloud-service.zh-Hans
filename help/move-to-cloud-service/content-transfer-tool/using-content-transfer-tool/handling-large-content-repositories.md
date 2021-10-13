@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1282'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ CTT 1.5.4版本中包含AzCopy支持。 您可以从[Software Distribution](http
 
 ### 3.配置azcopy.config文件 {#configure-azcopy-config-file}
 
-在源AEM实例上的crx-quickstart/cloud-migration中，创建一个名为azcopy.config的新文件。
+在源AEM实例的`crx-quickstart/cloud-migration`中，创建一个名为azcopy.config的新文件。
 
 此配置文件的内容将因源AEM实例是使用Azure还是Amazon S3数据存储而异。
 
@@ -106,7 +106,8 @@ s3SecretKey=--REDACTED--
 
 在上述配置文件就位后，AzCopy预复制阶段将作为后续提取的一部分运行。 要阻止其运行，您可以重命名此文件或将其删除。
 
-1. 从CTT UI开始提取。 有关更多详细信息，请参阅[运行内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)和[提取流程](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process)。
+1. 从CTT UI开始提取。 有关更多详细信息，请参阅[内容传输工具入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)和[提取流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en)。
+
 1. 确认提取日志中打印了以下行：
 
 ```
@@ -143,7 +144,7 @@ AzCopy会在后续运行中自动跳过在错误之前复制的任何Blob，而�
 
 要在摄取期间利用AzCopy，我们要求您使用至少为2021.6.5561版的AEMas a Cloud Service版本。
 
-从CTT UI开始创作摄取。 有关更多详细信息，请参阅[摄取流程](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process)。
+从CTT UI开始创作摄取。 有关更多详细信息，请参阅[摄取流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en)。
 AzCopy中的日志条目将显示在摄取日志中。 它们将如下所示：
 
 ```

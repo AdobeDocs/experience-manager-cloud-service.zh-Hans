@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
    * 优雅地跳过错误并继续用户映射活动
    * 如果&#x200B;**访问令牌**&#x200B;在24小时后过期，则用户映射不再失败。 可以从上次停止的位置重新运行用户映射。
 
-* 为了提高内容传输工具的稳健性，可以一次将内容摄取到创作实例或发布实例。 有关更多详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en)。
+* 为了提高内容传输工具的稳健性，可以一次将内容摄取到创作实例或发布实例。 有关更多详细信息，请参阅[内容传输工具入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)。
 
 * 包含版本后，将自动包含路径`/var/audit`以迁移审核事件。
 
