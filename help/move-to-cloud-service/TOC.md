@@ -5,10 +5,10 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
+source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 45%
+source-wordcount: '177'
+ht-degree: 40%
 
 ---
 
@@ -35,9 +35,15 @@ ht-degree: 45%
       + [概述](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [使用最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 内容传输工具 {#content-transfer-tool}
-      + [概述](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [内容传输工具的先决条件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-      + [处理大型内容存储库](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [概述](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+      + [内容传输工具的先决条件](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [使用内容传输工具的准则和最佳实践](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+      + [内容传输工具快速入门](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+      + [处理大型内容存储库](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [在内容传输工具中从源提取内容](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [在内容传输工具中将内容摄取到目标](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [查看迁移集的日志](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+      + [删除迁移集](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [使用内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + 用户映射工具{#user-mapping-tool}
          + [概述](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
