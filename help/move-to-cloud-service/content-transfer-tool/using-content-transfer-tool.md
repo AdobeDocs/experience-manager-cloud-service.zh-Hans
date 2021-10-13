@@ -2,9 +2,9 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
+source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3193'
 ht-degree: 36%
 
 ---
@@ -83,26 +83,24 @@ ht-degree: 36%
 
 1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **内容迁移**。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. 从&#x200B;**内容迁移**&#x200B;向导中选择&#x200B;**内容传输**&#x200B;选项。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. 创建第一个迁移集时，将显示以下控制台。 单击&#x200B;**创建迁移集**&#x200B;以创建新的迁移集。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >如果您有现有迁移集，控制台将显示现有迁移集的列表及其当前状态。
 
-   此外，单击&#x200B;**创建用户映射配置**&#x200B;以访问[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
 
 1. 按如下所述填充&#x200B;**创建迁移集**&#x200B;屏幕中的字段。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **名称**：输入迁移集的名称。
       >[!NOTE]
@@ -122,6 +120,9 @@ ht-degree: 36%
    1. **参数**：选择以下参数以创建迁移集：
 
       1. **包含版本**：根据需要选择。包含版本后，将自动包含路径`/var/audit`以迁移审核事件。
+
+      ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >如果您打算将版本作为迁移集的一部分包含在内，并且正在通过`wipe=false`执行增补，则由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望启用版本清除，并在迁移集中执行增补，则必须将摄取作为`wipe=true`执行。
 
@@ -135,6 +136,7 @@ ht-degree: 36%
          >* `/libs`
          >* `/home`
          >* `/etc` (允许 `/etc` 在CTT中选择某些路径)
+
 
 
 
