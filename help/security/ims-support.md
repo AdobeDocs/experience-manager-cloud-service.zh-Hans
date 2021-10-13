@@ -2,9 +2,9 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2022'
 ht-degree: 90%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->请参阅我们的Experience League课程[为管理员配置对AEM的访问权限](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，以了解用户如何使用Adobe IMS对AEM as a Cloud Service进行身份验证，以及如何使用Adobe IMS用户、用户组和产品配置文件来控制对AEM及其特性和功能的访问权限。 Adobe ID必需。
+>请参阅我们的Experience League课程[为管理员配置对AEM的访问权限](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，以了解用户如何使用Adobe IMS对AEMas a Cloud Service进行身份验证，以及如何使用Adobe IMS用户、用户组和产品配置文件来控制对AEM及其特性和功能的访问。 Adobe ID必需。
 
 >[!NOTE]
 >
->AEM作为Cloud Service的IMS登录不支持Admin Console中的嵌套组。
+>AEM当前不支持将组分配给用户档案。 应该单独添加用户。
 
 ## 主要亮点 {#key-highlights}
 
@@ -132,7 +132,7 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 ### 在 Admin Console 中管理产品和用户访问权限 {#managing-products-and-user-access-in-admin-console}
 
-当产品管理员登录到Admin Console时，他们将看到多个AEM实例作为Cloud Service产品上下文，如下所示。 例如，从&#x200B;**Overview**&#x200B;页面中选择任意产品：
+当产品管理员登录到Admin Console时，他们将看到AEMas a Cloud Service产品上下文的多个实例，如下所示。 例如，从&#x200B;**Overview**&#x200B;页面中选择任意产品：
 
 ![实例登录](/help/security/assets/ims6.png)
 
