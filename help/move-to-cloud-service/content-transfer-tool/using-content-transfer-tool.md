@@ -2,10 +2,10 @@
 title: 使用内容传输工具
 description: 使用内容传输工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
+source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
 workflow-type: tm+mt
-source-wordcount: '3193'
-ht-degree: 36%
+source-wordcount: '3199'
+ht-degree: 35%
 
 ---
 
@@ -142,17 +142,19 @@ ht-degree: 36%
 
 1. 在填充&#x200B;**创建迁移集**&#x200B;详细信息屏幕中的所有字段后，单击&#x200B;**Save**。
 
-1. 您将在&#x200B;*概述*&#x200B;页面中查看迁移集。
+1. 您将在&#x200B;**内容传输**&#x200B;向导中查看迁移集，如下图所示。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   此屏幕上的所有现有迁移集及其当前状态和状态信息都会显示在&#x200B;*概述*&#x200B;页面上。 您可能会看到下面描述的一些图标。
+   所有现有迁移集及其当前状态和状态信息都会显示在&#x200B;**内容传输**&#x200B;向导中。 您可能会看到下面描述的一些图标。
 
    * *红色云*&#x200B;表示您无法完成提取流程。
    * *绿色云*&#x200B;表示您可以完成提取流程。
    * *黄色图标*&#x200B;表示您没有创建现有迁移集，而特定迁移集是由同一实例中的其他用户创建的。
 
-1. 从“概述”页面中选择一个迁移集，然后单击&#x200B;**属性**&#x200B;以查看或编辑迁移集属性。编辑属性时，无法更改容器名称或服务URL。
+1. 选择迁移集并单击&#x200B;**属性**&#x200B;以查看或编辑迁移集属性。 在编辑属性时，无法更改&#x200B;**迁移集名称**&#x200B;或&#x200B;**服务URL**。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### 内容传输中的提取流程 {#extraction-process}
