@@ -1,10 +1,10 @@
 ---
 title: 在内容传输工具中从源提取内容
 description: 在内容传输工具中从源提取内容
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 53%
+source-wordcount: '526'
+ht-degree: 48%
 
 ---
 
@@ -60,3 +60,7 @@ ht-degree: 53%
    >您应该禁用&#x200B;**在提取期间覆盖暂存容器**&#x200B;选项。
    >
    >![图像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## 下一步 {#whats-next}
+
+在内容传输工具中学习了从源提取内容后，您现在便可以学习内容传输工具中的摄取流程。 请参阅内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)中的[将内容摄取到目标，以了解如何从内容传输工具中摄取迁移集。
