@@ -1,10 +1,10 @@
 ---
 title: 在内容传输工具中将内容摄取到目标
 description: 在内容传输工具中将内容摄取到目标
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 34%
+source-wordcount: '554'
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 34%
 
 1. 完成摄取后，位于&#x200B;**创作摄取**&#x200B;下的状态将更新为&#x200B;**已完成**。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## 增补摄取 {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ ht-degree: 34%
 
 完成摄取流程后，可以使用增补摄取方法传输增量内容。应遵循以下步骤：
 
-1. 导航到&#x200B;*概述*&#x200B;页面，然后选择要对其执行增补摄取的迁移集。单击&#x200B;**摄取**&#x200B;以开始增补提取。此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
+1. 导航到&#x200B;**内容传输**&#x200B;向导，然后选择要对其执行增补摄取的迁移集。 单击&#x200B;**摄取**&#x200B;以开始增补提取。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >您应该禁用&#x200B;**在摄取**&#x200B;之前擦除云实例上的现有内容选项，以防止从上一个摄取活动中删除现有内容。 此外，单击&#x200B;**客户关怀**&#x200B;记录票证，如上图所示。
+
+## 下一步 {#whats-next}
+
+在内容传输工具中了解将内容摄取到目标后，您便可以在每个步骤（提取和摄取）完成后查看日志并查找错误。 请参阅[查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en)以了解更多信息。
