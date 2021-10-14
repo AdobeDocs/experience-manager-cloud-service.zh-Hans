@@ -2,9 +2,9 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 0%
 
    有关更多详细信息，请参阅[仅限生产和代码质量管道](configure-pipeline.md#non-production-pipelines)。
 
->[!NOTE]
->要配置管道，必须：
-> * 定义将启动管道的触发器。
-> * 定义控制生产部署的参数。
-> * 配置性能测试参数。
+   >[!NOTE]
+   >要配置管道，必须：
+   > * 定义将启动管道的触发器。
+   > * 定义控制生产部署的参数。
+   > * 配置性能测试参数。
 
 
 ## 设置生产管道 {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ ht-degree: 0%
 
 1. 从&#x200B;**程序概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;卡。
 
-1. 单击&#x200B;**Pipelines**&#x200B;卡中的&#x200B;**编辑**。
+1. 单击&#x200B;**...从**&#x200B;管道&#x200B;**卡中单击**&#x200B;编辑&#x200B;**，如下图所示。**
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. **源代码**&#x200B;选项卡允许您更新存储库。 单击&#x200B;**访问存储库信息**&#x200B;以更新存储库。
+1. 此时将显示&#x200B;**编辑生产管道**&#x200B;对话框。
 
-   >[!NOTE]
-   >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，以了解如何在Cloud Manager中添加和管理存储库。
+   1. 通过&#x200B;**Configuration**&#x200B;选项卡，可更新&#x200B;**管道名称**、**部署触发器**&#x200B;和&#x200B;**重要量度失败行为**。
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，以了解如何在Cloud Manager中添加和管理存储库。
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. **Environments**&#x200B;选项卡允许您更新暂存和生产选项。
+   1. **源**&#x200B;选项卡允许忽略Web层配置，并从&#x200B;**生产部署选项**&#x200B;进行更新。
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. 通过&#x200B;**体验审核**&#x200B;选项，您可以更新或添加新页面。
+   1. 通过&#x200B;**体验审核**&#x200B;选项，您可以更新或添加新页面。
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. 编辑完管道后，单击&#x200B;**保存**。
+1. 编辑完管道后，单击&#x200B;**更新**。
 
 ## 仅限非生产和代码质量管道 {#non-production-pipelines}
 
-除了部署到暂存和生产的主管道之外，客户还能够设置其他管道，称为&#x200B;**非生产管道**。 这些管道始终执行生成和代码质量步骤。 它们也可以选择部署到AEM作为Cloud Service环境。
+除了部署到暂存和生产的主管道之外，客户还能够设置其他管道，称为&#x200B;**非生产管道**。 这些管道始终执行生成和代码质量步骤。 它们还可以选择部署到AEMas a Cloud Service环境。
 
 在主屏幕上，这些管道将列在新卡中：
 

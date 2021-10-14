@@ -3,9 +3,9 @@ title: AEMas a Cloud Service版本2021.10.0中的Cloud Manager发行说明
 description: AEMas a Cloud Service版本2021.10.0中的Cloud Manager发行说明
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 3b1ff5f1715cd18228a9b7e5c57b0f3d84ee0eb0
+source-git-commit: 62e9466fdfd6d6ac63dad9a2bc19693f7dc8d098
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '381'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ AEMas a Cloud Service中Cloud Manager的发行日期为2021.10.0 2021年10月14�
 
 * 现在，“添加IP允许列表”向导将通知用户是否已达到允许的最大IP允许列表数。
 
-* Cloud Manager API文档现在包含一个交互式操场，允许已登录的用户从其浏览器中试用该API。 请参阅[Cloud Manager API操场](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)
+* Cloud Manager API文档现在包含一个交互式操场，允许已登录的用户从其浏览器中试用该API。 有关更多详细信息，请参阅[Cloud Manager API Playport](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)。
 
 * 如果禁用了“导航到”下的选择选项，则程序卡上的工具提示更具描述性。 此时会显示“生产环境不存在”。
 
