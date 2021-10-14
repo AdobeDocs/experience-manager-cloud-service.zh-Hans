@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
@@ -100,6 +100,10 @@ At the very start you need to enable Content Fragment Models for your site, this
 >[!NOTE]
 >
 >如果作者尝试发布模型尚未发布的内容片段，则会显示一个选择列表以指示该情况，并且模型将随该片段一起发布。
+
+>[!NOTE]
+>
+>锁定（已发布）内容片段模型功能处于测试阶段。
 
 发布模型后，该模型会立即&#x200B;*locked*&#x200B;进入创作的只读模式。 这旨在防止更改会导致现有GraphQL架构和查询出错，尤其是在发布环境中。 该参数在控制台中由&#x200B;**Locked**&#x200B;指示。
 
