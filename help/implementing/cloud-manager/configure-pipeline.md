@@ -2,16 +2,16 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 配置 CI-CD 管道 {#configure-ci-cd-pipeline}
 
-在Cloud Manager中，有两种类型的管道：
+在Cloud Manager中，管道有两种类型：
 
 * **生产管道**:
 
@@ -129,7 +129,10 @@ ht-degree: 0%
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. **源**&#x200B;选项卡允许忽略Web层配置，并从&#x200B;**生产部署选项**&#x200B;进行更新。
+   1. **Source**&#x200B;选项卡提供了一个选项，用于忽略管道的Web层配置，并选中或取消选中&#x200B;**Pause before deploying to Production**&#x200B;和&#x200B;**Scheduled**&#x200B;选项，这些选项来自&#x200B;**Production Deployment Options**。
+
+      >[!NOTE]
+      >如果未选中&#x200B;**忽略Web层配置** ，则管道也将部署Web层配置。
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
