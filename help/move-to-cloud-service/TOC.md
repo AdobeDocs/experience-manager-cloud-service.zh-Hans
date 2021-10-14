@@ -5,10 +5,10 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 29211dd24346c10ffc634073c66881709990c6b7
+source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 36%
+source-wordcount: '178'
+ht-degree: 38%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 36%
       + [使用内容传输工具的准则和最佳实践](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [内容传输工具快速入门](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [处理大型内容存储库](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [在内容传输工具中从源提取内容](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-      + [在内容传输工具中将内容摄取到目标](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [从源提取内容](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [将内容摄取到目标](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [查看迁移集的日志](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [删除迁移集](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [在发布实例上运行内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
