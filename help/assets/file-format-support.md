@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 33%
+source-wordcount: '775'
+ht-degree: 32%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 33%
 
 使用资产微服务进行资产转换的功能亮点包括：
 
-* 键[由Adobe应用程序和服务（包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF）生成的Adobe文件格式](#adobe-formats)。
+* 键[由Adobe应用程序和服务(包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF)生成的Adobe文件格式](#adobe-formats)。
 * 键[映像文件格式](#image-formats)。
 * [Camera Raw文](#camera-raw-formats) 件格式，适用于各种相机，包括佳能、尼康、富士胶片、奥林巴斯和其他制造商(由Adobe Camera Raw提供支持)。
 * 常用的[文档格式](#document-formats)，包括Microsoft Office和Open Document格式。
@@ -86,10 +86,10 @@ ht-degree: 33%
 
 * IDAT区块大于100 MB的PNG文件。
 * PSB文件。
-* 不支持具有非CMYK、RGB、灰度或位图的色彩空间的PSD文件。 不支持DuoTone、Lab和索引色彩空间。
-* 位深度大于16的PSD文件。
-* 具有浮点数据的TIFF文件。
-* 具有Lab色彩空间的TIFF文件。
+* 不支持具有CMYK、RGB、灰度或位图以外的色彩空间的PSD文件。 不支持DuoTone、Lab和索引色彩空间。
+* PSD位深度大于16的文件。
+* TIFF具有浮点数据的文件。
+* TIFF具有Lab色彩空间的文件。
 
 ## 3D格式 {#support-3d-formats}
 
@@ -214,8 +214,6 @@ ht-degree: 33%
 | WebM | WebM | Google VP8 | - |
 | OGV、OGG | Ogg | Theora、VP3、Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM、RM | RealVideo | 不支持 | Real G2 (RV20)、Real 8 (RV30)、Real 10 (RV40) |
-| MJ2 | Motion JPEG2000 | Motion JPEG 2000编解码器 | - |
 
 ## 音频格式 {#audio-formats}
 
