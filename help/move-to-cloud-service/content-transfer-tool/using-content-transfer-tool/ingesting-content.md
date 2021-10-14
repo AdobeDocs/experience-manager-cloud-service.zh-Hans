@@ -1,9 +1,9 @@
 ---
 title: 在内容传输工具中将内容摄取到目标
 description: 在内容传输工具中将内容摄取到目标
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '502'
 ht-degree: 34%
 
 ---
@@ -23,7 +23,13 @@ ht-degree: 34%
 >[!NOTE]
 >如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快摄取阶段。 有关更多详细信息，请参阅[使用AzCopy摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 。
 
-1. 从&#x200B;*概述*&#x200B;页面中选择迁移集，然后单击&#x200B;**摄取**&#x200B;以开始摄取。 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。一次可以将内容摄取到创作实例或发布实例。 选择要将内容摄取到的实例。 单击&#x200B;**摄取**&#x200B;以开始摄取阶段。
+1. 从&#x200B;**内容传输**&#x200B;页面中选择迁移集，然后单击&#x200B;**摄取**&#x200B;以开始摄取。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+1. 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。一次可以将内容摄取到创作实例或发布实例。 选择要将内容摄取到的实例。 单击&#x200B;**摄取**&#x200B;以开始摄取阶段。
+
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-02.png)
 
    >[!IMPORTANT]
    >如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
@@ -31,11 +37,15 @@ ht-degree: 34%
    >[!IMPORTANT]
    >启用&#x200B;**在摄取**&#x200B;之前擦除云实例上的现有内容选项后，它将删除整个现有存储库并创建新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到&#x200B;**administrators**&#x200B;组的管理员用户，也是如此。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-03.png)
 
-   此外，单击&#x200B;**客户关怀**&#x200B;记录票证，如上图所示。 另请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations)以了解更多信息。
+   此外，单击&#x200B;**客户关怀**&#x200B;记录票证，如下图所示。
 
-1. 完成摄取后，状态将更新为&#x200B;**FINISHED**。
+   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-04.png)
+
+   另请参阅[使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations)以了解更多信息。
+
+1. 完成摄取后，位于&#x200B;**创作摄取**&#x200B;下的状态将更新为&#x200B;**已完成**。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -44,7 +54,6 @@ ht-degree: 34%
 内容传输工具具备支持差异内容&#x200B;*增补*&#x200B;的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
 
 >[!NOTE]
->
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
 
 完成摄取流程后，可以使用增补摄取方法传输增量内容。应遵循以下步骤：
