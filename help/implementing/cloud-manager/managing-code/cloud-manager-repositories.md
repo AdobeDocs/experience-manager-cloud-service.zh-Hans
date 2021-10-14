@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager存储库
 description: Cloud Manager存储库
-source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
+source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -118,4 +118,5 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 * Git URL必须完全采用上述语法。 出于安全考虑，请勿在这些URL中嵌入凭据。
 * 仅支持位于分支根的子模块。
 * Git子模块引用存储到特定的git提交中。 因此，当对子模块存储库进行更改时，例如，使用`git submodule update --remote` ，需要更新引用的提交。
+* 除非另有必要，否则强烈建议使用“浅层”子模块。 为此，请为每个子模块运行`git config -f .gitmodules submodule.<submodule path>.shallow true`。
 

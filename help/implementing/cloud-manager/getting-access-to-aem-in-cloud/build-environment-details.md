@@ -2,9 +2,9 @@
 title: 构建环境详细信息
 description: 构建环境详细信息 — Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: f39cc7bcbfe11c64a0fc7bb673f9e9286214106d
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。 此环
 * 构建环境基于Linux，源自Ubuntu 18.04。
 * 已安装Apache Maven 3.6.0。
 * 安装的Java版本包括OracleJDK 8u202、Azul Zulu 8u292、OracleJDK 11.0.2和Azul Zulu 11.0.11。
+* 默认情况下，`JAVA_HOME`环境变量设置为`/usr/lib/jvm/jdk1.8.0_202`，其中包含OracleJDK 8u202。 有关更多详细信息，请参阅[备用Maven执行JDK版本](#alternate-maven-jdk-version)部分。
 * 安装了一些其他系统包，这是必需的：
 
    * bzip2
@@ -71,7 +72,7 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。 此环
 
 这将导致所有具有工具链感知的Maven插件都使用OracleJDK版本11。
 
-使用此方法时，Maven本身仍使用默认的JDK(Oracle8)运行。 因此，通过Apache Maven Enforcer插件等插件检查或强制实施Java版本不起作用，因此不得使用此类插件。
+使用此方法时，Maven本身仍使用默认的JDK(Oracle8)运行，并且JAVA_HOME环境变量未发生更改。 因此，通过Apache Maven Enforcer插件等插件检查或强制实施Java版本不起作用，因此不得使用此类插件。
 
 当前可用的供应商/版本组合包括：
 
@@ -89,11 +90,7 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。 此环
 
 还可以选择Azul 8或Azul 11作为整个Maven执行的JDK。 与工具链选项不同，这会更改所有插件所使用的JDK，除非还设置了工具链配置，在这种情况下，仍然会将工具链配置应用于具有工具链感知功能的Maven插件。 因此，使用[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)检查并强制实施Java版本将有效。
 
-为此，请在管道使用的Git存储库分支中创建名为`.cloudmanager/java-version`的文件。 此文件可以包含内容11或8。 任何其他值都将被忽略。 如果指定了11，则使用Azul 11。 如果指定8，则使用Azul 8。
-
->[!NOTE]
->在Cloud Manager的未来版本中，默认JDK将被更改，默认JDK将为Azul 11。 与Java 11不兼容的项目应尽快创建包含内容8的此文件，以确保它们不受此开关的影响。
-
+为此，请在管道使用的Git存储库分支中创建名为`.cloudmanager/java-version`的文件。 此文件可以包含内容11或8。 任何其他值都将被忽略。 如果指定了11，则使用Azul 11，并将JAVA_HOME环境变量设置为`/usr/lib/jvm/jdk-11.0.11`。 如果指定了8，则使用Azul 8并将JAVA_HOME环境变量设置为`/usr/lib/jvm/jdk-8.0.292`。
 
 ## 环境变量 {#environment-variables}
 
