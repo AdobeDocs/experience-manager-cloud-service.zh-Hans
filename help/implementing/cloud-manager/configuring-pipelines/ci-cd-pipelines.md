@@ -2,9 +2,9 @@
 title: CI-CD管线
 description: CI-CD管线
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,17 @@ ht-degree: 0%
 
 # Cloud Manager CI-CD管道 {#intro-cicd}
 
-在Cloud Manager中，管道有两种类型：
+## 简介 {#introduction}
+
+>[!NOTE]
+>Cloud Manager中的CI/CD管道由事件触发，例如来自源代码存储库的拉取请求（即代码更改），或与发行频率匹配的常规计划。
+
+要配置管道，必须：
+* 定义将启动管道的触发器
+* 定义控制生产部署的参数
+* 配置性能测试参数
+
+在Cloud Manager中，有两种类型的管道：
 
 * [生产管道](#prod-pipeline)
 * [非生产管道](#non-prod-pipeline)
@@ -31,19 +41,3 @@ ht-degree: 0%
 
 >[!NOTE]
 >有关更多详细信息，请参阅非生产和代码仅质量管道。
-
-Cloud Manager中生产管道和非生产管道中支持的部署和代码质量分为两种不同类型：
-
-* 前端
-* 完整堆栈
-
-下表汇总了管道：
-
-
->[!NOTE]
->Cloud Manager中的CI/CD管道由事件触发，例如来自源代码存储库的拉取请求（即代码更改），或与发行频率匹配的常规计划。
->
->要配置管道，必须：
->* 定义将启动管道的触发器
->* 定义控制生产部署的参数
->* 配置性能测试参数
