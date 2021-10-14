@@ -2,16 +2,16 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
+source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
 
 # 配置 CI-CD 管道 {#configure-ci-cd-pipeline}
 
-在Cloud Manager中，管道有两种类型：
+在Cloud Manager中，有两种类型的管道：
 
 * **生产管道**:
 
@@ -45,44 +45,47 @@ ht-degree: 0%
 >
 >在初始设置后，可以更改管道设置。
 
-## 从[!UICONTROL Cloud Manager]配置管道设置 {#configuring-the-pipeline-settings-from-cloud-manager}
+## 添加新的生产管道 {#adding-production-pipeline}
 
-在使用[!UICONTROL Cloud Manager] UI设置程序并至少有一个环境后，您就可以设置部署管道了。
+在使用[!UICONTROL Cloud Manager] UI设置程序并至少有一个环境后，您就可以添加生产管道。
 
-请按照以下步骤配置管道的行为和首选项：
+请按照以下步骤配置生产管道的行为和首选项：
 
-1. 单击&#x200B;**设置管道**&#x200B;以设置和配置管道。
+1. 从&#x200B;**程序概述**&#x200B;页面导航到&#x200B;**Pipelines**卡。
+单击**+Add**&#x200B;并选择&#x200B;**添加生产管道**。
 
-   ![](assets/set-up-pipeline1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
 
-1. 此时将显示&#x200B;**设置管道**&#x200B;屏幕。 选择分支并单击&#x200B;**Next**。
+1. **此时会显** 示“添加生产管道”对话框。输入管道名称。
 
-   ![](assets/setup-1.png)
+   此外，您还可以从&#x200B;**部署选项**&#x200B;中设置&#x200B;**部署触发器**&#x200B;和&#x200B;**重要失败行为**。 单击&#x200B;**继续**。
 
-1. 配置部署选项。
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
-   ![](assets/setup-pipeline.png)
 
    您可以定义启动管道的触发器：
 
    * **手动**  — 使用UI手动启动管道。
    * **在Git更改中**  — 每当向配置的git分支添加提交时，都会启动CI/CD管道。即使选择此选项，也始终可以手动启动管道。
 
-   在管道设置或编辑期间，部署管理器可以选择在任何质量门中遇到重要故障时定义管道的行为。
+      在管道设置或编辑期间，部署管理器可以选择在任何质量门中遇到重要故障时定义管道的行为。
 
-   这对于希望实现更自动化流程的客户非常有用。 可用选项包括：
+      这对于希望实现更自动化流程的客户非常有用。 可用选项包括：
 
-   * **每次提问**  — 这是默认设置，需要对任何重要故障进行手动干预。
-   * **立即取消**  — 如果选中此选项，则每当发生重要故障时，管道都将被取消。这实质上是在模拟用户手动拒绝每个故障。
-   * **立即批准**  — 如果选中此选项，则每当发生重要故障时，管道将自动继续。这实质上是在模拟用户手动批准每次失败。
+      * **每次提问**  — 这是默认设置，需要对任何重要故障进行手动干预。
+      * **立即取消**  — 如果选中此选项，则每当发生重要故障时，管道都将被取消。这实质上是在模拟用户手动拒绝每个故障。
+      * **立即批准**  — 如果选中此选项，则每当发生重要故障时，管道将自动继续。这实质上是在模拟用户手动批准每次失败。
 
+1. **已选择完** 整堆栈代码。您可以选择&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 单击&#x200B;**Save**。
 
-1. 生产管道设置包含第三个选项卡，标记为&#x200B;**体验审核**。 此选项为应始终包含在体验审核中的URL路径提供了一个表。
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+
+1. **添加生产管道**&#x200B;对话框包含第三个标记为&#x200B;**体验审核**&#x200B;的选项卡。 此选项为应始终包含在体验审核中的URL路径提供了一个表。
 
    >[!NOTE]
-   >必须单击&#x200B;**添加新页面**&#x200B;以定义您自己的自定义链接。
+   >必须单击&#x200B;**Add Page**&#x200B;以定义您自己的自定义链接。
 
-   ![](assets/setup-3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
 
    单击&#x200B;**添加新页面**&#x200B;以提供要包含在体验审核中的URL路径。
 
@@ -103,9 +106,13 @@ ht-degree: 0%
    >[!NOTE]
    > 将配置的页面提交到服务，并根据性能、辅助功能、SEO（搜索引擎优化）、最佳实践和PWA（渐进式Web应用程序）测试进行评估。
 
-1. 单击&#x200B;**编辑管道**&#x200B;屏幕中的&#x200B;**保存**。 现在， **概述**&#x200B;页面会显示&#x200B;**部署程序**&#x200B;卡。 单击&#x200B;**部署**&#x200B;按钮以部署程序。
+1. 单击&#x200B;**Save**。 现在，新创建的生产管道显示在&#x200B;**Pipelines**&#x200B;卡中。
 
-   ![](assets/configure-pipeline5.png)
+   管道显示在主屏幕的卡片上，带有三个操作，如下所示：
+
+   * **添加**  — 允许添加新管道。
+   * **访问存储库信息**  — 允许用户获取访问Cloud Manager Git存储库所需的信息。
+   * **了解更多**  — 导航到了解CI/CD管线文档资源。
 
 ### 编辑生产管道 {#editing-prod-pipeline}
 
