@@ -4,7 +4,7 @@ description: 了解如何管理工作流实例
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
+source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -170,20 +170,21 @@ ht-degree: 0%
 
 ## 为客户拥有的数据存储使用工作流变量 {#using-workflow-variables-customer-datastore}
 
-工作流中使用的数据存储在Adobe提供的存储(JCR)中。 此数据在性质上可能是敏感的。 您可能希望将所有用户定义的元数据/数据保存在您自己的托管存储中，而不是Adobe提供的存储中。 本节介绍如何为外部存储设置这些变量。
+由工作流处理的数据存储在Adobe提供的存储(JCR)中。 此数据在性质上可能是敏感的。 您可能希望将所有用户定义的元数据/数据保存在您自己的托管存储中，而不是Adobe提供的存储中。 以下部分介绍如何为外部存储设置这些变量。
 
 ### 设置模型以使用元数据的外部存储 {#set-model-for-external-storage}
 
-在工作流模型级别，计划引入一个标记来指示模型（及其运行时实例）具有元数据的外部存储。 对于标记为外部存储的模型的工作流实例，不会在JCR中保留用户元数据。
+在工作流模型的级别，提供一个标记来指示模型（及其运行时实例）具有元数据的外部存储。 对于标记为外部存储的模型的工作流实例，不会在JCR中保留工作流变量。
 
-要激活此功能，必须启用外部持久性标记：**userMetaDataCustomPersistenceEnabled = &quot;true&quot;**。
-属性*userMetadataPersistenceEnabled*&#x200B;将存储在工作流模型的&#x200B;*jcr:content节点*&#x200B;上。 此标记将作为&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流元数据中。
+属性&#x200B;*userMetadataPersistenceEnabled*&#x200B;将存储在工作流模型的&#x200B;*jcr:content节点*&#x200B;上。 此标记将作为&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流元数据中。
 
 下图显示了必须在工作流中设置标记。
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### 外部存储中元数据的API {#apis-for-metadata-external-storage}
+
+要在外部存储变量，您必须实施工作流公开的API。
 
 UserMetaDataPersistenceContext
 
