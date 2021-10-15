@@ -2,9 +2,9 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -147,6 +147,32 @@ ht-degree: 0%
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. 编辑完管道后，单击&#x200B;**更新**。
+
+### 其他生产管道操作 {#additional-prod-actions}
+
+#### 运行生产管道 {#run-prod}
+
+可以从管道卡运行生产管道：
+
+1. 从&#x200B;**程序概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;卡。
+
+1. 单击&#x200B;**...从**&#x200B;管道&#x200B;**卡中单击**&#x200B;运行&#x200B;**，如下图所示。**
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### 删除生产管道 {#delete-prod}
+
+可以从管道卡中删除生产管道：
+
+1. 从&#x200B;**程序概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;卡。
+
+1. 单击&#x200B;**...从**&#x200B;管道&#x200B;**卡中单击**&#x200B;删除&#x200B;**，如下图所示。**
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >具有部署管理器角色的用户现在可以通过Pipeline卡中的&#x200B;**Delete**&#x200B;选项以自助方式删除生产管道。
+
 
 ## 仅限非生产和代码质量管道 {#non-production-pipelines}
 
