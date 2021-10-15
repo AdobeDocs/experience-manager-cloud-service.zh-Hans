@@ -2,16 +2,16 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
+source-git-commit: eb8fb1f4134ceb9117773d01f4d97c68bd8c41a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
 
 # 配置 CI-CD 管道 {#configure-ci-cd-pipeline}
 
-在Cloud Manager中，管道有两种类型：
+在Cloud Manager中，有两种类型的管道：
 
 * **生产管道**:
 
@@ -89,22 +89,24 @@ ht-degree: 0%
 
 1. **添加生产管道**&#x200B;对话框包含第三个标签为&#x200B;**体验审核**&#x200B;的选项卡。 此选项为应始终包含在体验审核中的URL路径提供了一个表。
 
-   >[!NOTE]
-   >必须单击&#x200B;**Add Page**&#x200B;以定义您自己的自定义链接。
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+
+   >[!IMPORTANT]
+   >必须单击&#x200B;**Add Page**&#x200B;以定义您自己的自定义链接。 页面路径必须以`/`开头。
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+
 
    单击&#x200B;**添加新页面**&#x200B;以提供要包含在体验审核中的URL路径。
 
-   例如，如果要在体验审核中包含`https://wknd.site/us/en/about-us.html`，请在此字段中输入路径`us/en/about-us.html`，然后单击&#x200B;**Save**。
+   例如，如果要在体验审核中包含`https://wknd.site/us/en/about-us.html`，请在此字段中输入路径`/us/en/about-us.html`，然后单击&#x200B;**Save**。
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    表中显示的URL将为：
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    最多可包含25行。 如果用户在此部分中未提交页面，则默认情况下网站的主页将包含在体验审核中。
 
