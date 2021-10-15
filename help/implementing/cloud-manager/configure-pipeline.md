@@ -2,9 +2,9 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,11 @@ ht-degree: 0%
 1. 从&#x200B;**程序概述**&#x200B;页面导航到&#x200B;**Pipelines**卡。
 单击**+Add**&#x200B;并选择&#x200B;**添加生产管道**。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **此时会显** 示“添加生产管道”对话框。输入管道名称。
 
-   此外，您还可以从&#x200B;**部署选项**&#x200B;中设置&#x200B;**部署触发器**&#x200B;和&#x200B;**重要失败行为**。 单击&#x200B;**继续**。
+   此外，您还可以从&#x200B;**部署选项**&#x200B;中设置&#x200B;**部署触发器**&#x200B;和&#x200B;**重要量度失败行为**。 单击&#x200B;**继续**。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -78,16 +78,21 @@ ht-degree: 0%
    * **立即继续**  — 如果选中此选项，则每当发生重要故障时，管道将自动继续。这实质上是在模拟用户手动批准每次失败。
 
 
-1. **添加生产管道**&#x200B;对话框包括标有&#x200B;**源代码**&#x200B;的第二个选项卡。 **已选择完** 整堆栈代码。您可以选择&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 单击&#x200B;**Save**。
+1. **添加生产管道**&#x200B;对话框包括标有&#x200B;**源代码**&#x200B;的第二个选项卡。 **已选择完** 整堆栈代码。您可以选择&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 选择生产部署选项，如下所述。 单击&#x200B;**继续**。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   生产部署选项：
+
+   * **部署到生产之前暂停**:此选项允许部署在生产之前暂停。
+   * **已计划**:此选项允许用户启用计划的生产部署。
 
 1. **添加生产管道**&#x200B;对话框包含第三个标签为&#x200B;**体验审核**&#x200B;的选项卡。 此选项为应始终包含在体验审核中的URL路径提供了一个表。
 
    >[!NOTE]
    >必须单击&#x200B;**Add Page**&#x200B;以定义您自己的自定义链接。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    单击&#x200B;**添加新页面**&#x200B;以提供要包含在体验审核中的URL路径。
 
@@ -234,6 +239,28 @@ ht-degree: 0%
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. 编辑完非生产管道后，单击&#x200B;**更新**。
+
+### 其他非生产管道操作 {#additional-nonprod-actions}
+
+#### 运行非生产管道 {#run-nonprod}
+
+可以从管道卡运行生产管道：
+
+1. 从&#x200B;**程序概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;卡。
+
+1. 单击&#x200B;**...从**&#x200B;管道&#x200B;**卡中单击**&#x200B;运行&#x200B;**，如下图所示。**
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### 删除非生产管道 {#delete-nonprod}
+
+可以从管道卡中删除生产管道：
+
+1. 从&#x200B;**程序概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;卡。
+
+1. 单击&#x200B;**...从**&#x200B;管道&#x200B;**卡中单击**&#x200B;删除&#x200B;**，如下图所示。**
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## 后续步骤 {#the-next-steps}
