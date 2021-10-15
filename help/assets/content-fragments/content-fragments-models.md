@@ -4,9 +4,9 @@ description: 了解内容片段模型如何作为AEM中无头内容的基础，�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2850'
 ht-degree: 6%
 
 ---
@@ -77,6 +77,9 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
       * 许多属性都不言而喻，有关更多详细信息，请参阅[属性](#properties)。
       * 键入&#x200B;**字段标签**&#x200B;将自动完成&#x200B;**属性名称** — 如果为空，随后可手动更新。
 
+         >[!CAUTION]
+         手动更新数据类型&#x200B;**属性名称**&#x200B;时，请注意，名称必须仅包含拉丁字符、数字和下划线“_”作为特殊字符。
+         如果在AEM早期版本中创建的模型包含非法字符，请删除或更新这些字符。
       例如：
 
       ![字段属性](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ AEM中的内容片段模型定义[内容片段的内容结构，](/help/assets/c
 ## 属性 {#properties}
 
 许多属性不言而喻，对于某些属性，其他详细信息如下：
+
+>[!CAUTION]
+手动更新&#x200B;**属性名称**&#x200B;时，请注意，名称必须仅包含拉丁字符、数字和下划线“_”作为特殊字符。
+如果在AEM早期版本中创建的模型包含非法字符，请删除或更新这些字符。
 
 * **呈现**
 方式用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者将看到字段的单个实例，还是允许创建多个实例。
