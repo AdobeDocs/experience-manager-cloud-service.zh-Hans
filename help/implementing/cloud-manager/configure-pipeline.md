@@ -2,16 +2,16 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
+source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
 
 # 配置 CI-CD 管道 {#configure-ci-cd-pipeline}
 
-在Cloud Manager中，有两种类型的管道：
+在Cloud Manager中，管道有两种类型：
 
 * **生产管道**:
 
@@ -63,7 +63,7 @@ ht-degree: 0%
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   您可以定义启动管道的触发器：
+   您可以定义部署触发器以启动管道。
 
    * **手动**  — 使用UI手动启动管道。
    * **在Git更改中**  — 每当向配置的git分支添加提交时，都会启动CI/CD管道。即使选择此选项，也始终可以手动启动管道。
@@ -71,16 +71,18 @@ ht-degree: 0%
       在管道设置或编辑期间，部署管理器可以选择在任何质量门中遇到重要故障时定义管道的行为。
 
       这对于希望实现更自动化流程的客户非常有用。 可用选项包括：
+   您可以定义重要的失败量度行为以启动管道。
 
-      * **每次提问**  — 这是默认设置，需要对任何重要故障进行手动干预。
-      * **立即取消**  — 如果选中此选项，则每当发生重要故障时，管道都将被取消。这实质上是在模拟用户手动拒绝每个故障。
-      * **立即批准**  — 如果选中此选项，则每当发生重要故障时，管道将自动继续。这实质上是在模拟用户手动批准每次失败。
+   * **每次提问**  — 这是默认设置，需要对任何重要故障进行手动干预。
+   * **立即失败**  — 如果选中此选项，则每当发生重要故障时，将取消管道。这实质上是在模拟用户手动拒绝每个故障。
+   * **立即继续**  — 如果选中此选项，则每当发生重要故障时，管道将自动继续。这实质上是在模拟用户手动批准每次失败。
 
-1. **已选择完** 整堆栈代码。您可以选择&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 单击&#x200B;**Save**。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+1. **添加生产管道**&#x200B;对话框包括标有&#x200B;**源代码**&#x200B;的第二个选项卡。 **已选择完** 整堆栈代码。您可以选择&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 单击&#x200B;**Save**。
 
-1. **添加生产管道**&#x200B;对话框包含第三个标记为&#x200B;**体验审核**&#x200B;的选项卡。 此选项为应始终包含在体验审核中的URL路径提供了一个表。
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+1. **添加生产管道**&#x200B;对话框包含第三个标签为&#x200B;**体验审核**&#x200B;的选项卡。 此选项为应始终包含在体验审核中的URL路径提供了一个表。
 
    >[!NOTE]
    >必须单击&#x200B;**Add Page**&#x200B;以定义您自己的自定义链接。
@@ -150,6 +152,8 @@ ht-degree: 0%
 
 除了部署到暂存和生产的主管道之外，客户还能够设置其他管道，称为&#x200B;**非生产管道**。 这些管道始终执行生成和代码质量步骤。 它们还可以选择部署到AEMas a Cloud Service环境。
 
+### 添加新的非生产管道 {#adding-non-production-pipeline}
+
 在主屏幕上，这些管道将列在新卡中：
 
 1. 从Cloud Manager主屏幕中访问&#x200B;**Pipelines**&#x200B;卡。 单击&#x200B;**+Add**&#x200B;并选择&#x200B;**添加非生产管道**。
@@ -158,7 +162,7 @@ ht-degree: 0%
 
 1. **此时将显示“添加非生**  产管道”对话框。选择要创建的管道类型，包括&#x200B;**代码质量管道**&#x200B;或&#x200B;**部署管道**。
 
-   此外，您还可以从&#x200B;**部署选项**&#x200B;中设置&#x200B;**部署触发器**&#x200B;和&#x200B;**重要失败行为**。 单击&#x200B;**继续**。
+   此外，您还可以从&#x200B;**部署选项**&#x200B;中设置&#x200B;**部署触发器**&#x200B;和&#x200B;**重要量度失败行为**。 单击&#x200B;**继续**。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
