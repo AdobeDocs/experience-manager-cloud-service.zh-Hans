@@ -2,7 +2,7 @@
 title: 配置CI/CD管线 — Cloud Services
 description: 配置CI/CD管线 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
+source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 >
 >在初始设置后，可以更改管道设置。
 
-## 添加新的生产管道 {#adding-production-pipeline}
+### 添加新的生产管道 {#adding-production-pipeline}
 
 在使用[!UICONTROL Cloud Manager] UI设置程序并至少有一个环境后，您就可以添加生产管道。
 
