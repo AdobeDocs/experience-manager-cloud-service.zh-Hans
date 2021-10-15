@@ -3,16 +3,17 @@ title: 入门流程快速入门
 description: 阅读本页以了解如何开始入门历程
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
+source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 1%
 
 ---
 
 # 入门流程 {#getting-started}
 
-载入是指指定的[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)将AEM设置为贵组织Cloud Service的过程。 这包括初始配置云资源，并根据用户的工作职责为用户分配角色。 因此，每个成员都能够登录并访问其AEM作为Cloud Service资源。
+载入是指指定的[系统管理员](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)为您的组织设置AEMas a Cloud Service的过程。 这包括初始配置云资源，并根据用户的工作职责为用户分配角色。 因此，每个成员都能够登录并访问其AEMas a Cloud Service资源。
 
 ## 目标 {#objective}
 
@@ -26,6 +27,11 @@ ht-degree: 0%
 >[!NOTE]
 >在开始载入流程之前，请确保了解Adobe Admin Console。 Adobe管理控制台是管理和管理Adobe产品许可证和用户的中心位置。 系统管理员将登录到Adobe管理控制台以添加或删除用户等。 请参阅[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)以了解更多信息。
 
+## AEM as a Cloud Service 入门 {#onboarding-process}
+
+了解从合同阶段开始，通过使用Cloud Manager设置环境，从头到尾AEMas a Cloud Service入门。
+
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 ## 登录到Admin Console {#steps-admin-console}
 
@@ -67,4 +73,3 @@ ht-degree: 0%
 ## 下一步 {#whats-next}
 
 现在，您已登录Admin Console并以系统管理员身份查看配置文件，接下来应该通过查看文档[将团队成员分配给Cloud Manager产品配置文件](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)来继续入门历程。
-
