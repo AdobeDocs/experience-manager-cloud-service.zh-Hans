@@ -1,24 +1,24 @@
 ---
-title: 将AEM作为Cloud Service记录
-description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置，或如何在AEM中作为Cloud Service请求数据日志记录。
+title: 记录AEMas a Cloud Service
+description: 了解如何使用AEM Logging为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2314'
 ht-degree: 2%
 
 ---
 
-# 将AEM作为Cloud Service{#logging-for-aem-as-a-cloud-service}进行日志记录
+# 记录AEMas a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service是客户包含自定义代码以为其客户群创建独特体验的平台。 考虑到这一点，日志记录服务是调试和了解本地开发和云环境(特别是AEM as a Cloud Service的开发环境)中代码执行的关键功能。
+AEMas a Cloud Service是一个平台，可让客户包含自定义代码，以为其客户群创建独特体验。 考虑到这一点，日志记录服务是调试和了解本地开发和云环境(特别是AEMas a Cloud Service的开发环境)中代码执行的关键功能。
 
-AEM日志记录设置和日志级别在配置文件中进行管理，这些配置文件作为AEM项目的一部分存储在Git中，并通过Cloud Manager部署为AEM项目的一部分。 以Cloud Service身份登录AEM可以划分为两个逻辑集：
+AEMas a Cloud Service日志记录设置和日志级别在配置文件中进行管理，这些配置文件作为AEM项目的一部分存储在Git中，并通过Cloud Manager部署为AEM项目的一部分。 登录AEMas a Cloud Service可以划分为两个逻辑集：
 
 * AEM日志记录，在AEM应用程序级别执行日志记录
 * Apache HTTPD Web Server/Dispatcher日志记录，用于在发布层上执行Web服务器和Dispatcher的日志记录。
 
-## AEM日志记录{#aem-loggin}
+## AEM日志记录 {#aem-logging}
 
 AEM应用程序级别的日志记录由三个日志处理：
 
@@ -30,9 +30,9 @@ AEM应用程序级别的日志记录由三个日志处理：
 >
 >从发布层的Dispatcher缓存或上游CDN提供的HTTP请求不会反映在这些日志中。
 
-## AEM Java日志记录{#aem-java-logging}
+## AEM Java日志记录 {#aem-java-logging}
 
-AEM as aCloud Service提供对Java log语句的访问。 AEM应用程序的开发人员应遵循以下日志级别的一般Java日志记录最佳实践，记录有关自定义代码执行的相关语句：
+AEM as a Cloud Service提供对Java log语句的访问。 AEM应用程序的开发人员应遵循以下日志级别的一般Java日志记录最佳实践，记录有关自定义代码执行的相关语句：
 
 <table>
 <tr>
@@ -92,9 +92,9 @@ AEM as aCloud Service提供对Java log语句的访问。 AEM应用程序的开�
 </tr>
 </table>
 
-虽然Java日志记录支持其他几个级别的日志记录粒度，但AEM as a Cloud Service建议使用上述三个级别。
+虽然AEM日志记录支持其他几个级别的日志记录粒度，但Java日志as a Cloud Service建议使用上述三个级别。
 
-AEM日志级别是通过OSGi配置按环境类型设置的，OSGi配置又将提交到Git，并通过Cloud Manager部署到AEM作为Cloud Service。 因此，最好保持日志语句一致且环境类型已知，以确保通过AEM作为Cloud Service提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
+AEM日志级别是通过OSGi配置按环境类型设置的，OSGi配置反过来会提交到Git，并通过Cloud Manager部署到AEMas a Cloud Service。 因此，最好保持日志语句一致且环境类型已知，以确保通过AEM作为Cloud Service提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
 
 **日志输出示例**
 
@@ -115,7 +115,7 @@ AEM日志级别是通过OSGi配置按环境类型设置的，OSGi配置又将提
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>AEM as a Cloud Service节点ID</td>
+<td>AEMas a Cloud Service节点ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -137,9 +137,9 @@ AEM日志级别是通过OSGi配置按环境类型设置的，OSGi配置又将提
 </tbody>
 </table>
 
-### 配置日志记录器{#configuration-loggers}
+### 配置记录器 {#configuration-loggers}
 
-AEM Java日志被定义为OSGi配置，因此可使用运行模式文件夹将特定AEM定位为Cloud Service环境。
+AEM Java日志被定义为OSGi配置，因此可使用运行模式文件夹定位特定的AEMas a Cloud Service环境。
 
 通过Sling LogManager工厂的OSGi配置为自定义Java包配置Java日志记录。 支持以下两个配置属性：
 
@@ -148,9 +148,9 @@ AEM Java日志被定义为OSGi配置，因此可使用运行模式文件夹将�
 | org.apache.sling.commons.log.names | 要收集日志语句的Java包。 |
 | org.apache.sling.commons.log.level | 记录Java包的日志级别，由org.apache.sling.commons.log.names指定 |
 
-更改其他LogManager OSGi配置属性可能会导致AEM as a Cloud Service中出现可用性问题。
+更改其他LogManager OSGi配置属性可能会导致AEMas a Cloud Service中出现可用性问题。
 
-以下是三个AEM作为Cloud Service环境类型的推荐日志记录配置示例（使用`com.example`的占位符Java包）。
+以下是针对三种AEMas a Cloud Service环境类型推荐的日志记录配置示例（使用`com.example`的占位符Java包）。
 
 ### 开发 {#development}
 
@@ -185,9 +185,9 @@ AEM Java日志被定义为OSGi配置，因此可使用运行模式文件夹将�
 }
 ```
 
-## AEM HTTP请求日志记录{#aem-http-request-logging}
+## AEM HTTP请求日志记录 {#aem-http-request-logging}
 
-AEM as aCloud Service的HTTP请求日志记录可以深入分析对AEM发出的HTTP请求及其按时间顺序的HTTP响应。 此日志有助于了解对AEM发出的HTTP请求以及这些请求的处理和响应顺序。
+AEMas a Cloud Service的HTTP请求日志记录可以深入分析对AEM发出的HTTP请求及其按时间顺序的HTTP响应。 此日志有助于了解对AEM发出的HTTP请求以及这些请求的处理和响应顺序。
 
 了解此日志的键值是用ID映射HTTP请求和响应对，由括号中的数值表示。 请注意，请求及其相应响应通常会在日志中插入其他HTTP请求和响应。
 
@@ -209,7 +209,7 @@ AEM as aCloud Service的HTTP请求日志记录可以深入分析对AEM发出的H
 <tbody>
 <tr>
 <td>日期和时间</td>
-<td>2000年4月29日2020:19:14:21 +000</td>
+<td>2020年4月29日:19:14:21 +0000</td>
 </tr>
 <tr>
 <td>请求/响应对ID</td>
@@ -229,17 +229,17 @@ AEM as aCloud Service的HTTP请求日志记录可以深入分析对AEM发出的H
 </td>
 </tr>
 <tr>
-<td>AEM as a Cloud Service节点ID</td>
+<td>AEMas a Cloud Service节点ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
 </table>
 
-### 配置日志{#configuring-the-log}
+### 配置日志 {#configuring-the-log}
 
-AEM HTTP请求日志在AEM中不可配置为Cloud Service。
+AEM HTTP请求日志在AEMas a Cloud Service中不可配置。
 
-## AEM HTTP访问日志记录{#aem-http-access-logging}
+## AEM HTTP访问日志记录 {#aem-http-access-logging}
 
 AEM asCloud ServiceHTTP访问日志记录按时间顺序显示HTTP请求。 每个日志条目表示用于访问AEM的HTTP请求。
 
@@ -253,11 +253,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEM as a Cloud Service节点ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| AEMas a Cloud Service节点ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | 客户端的IP地址 | - |
 | 用户 | myuser@adobe.com |
-| 日期和时间 | 2000年4月30日2020:17:37:14 +000 |
+| 日期和时间 | 2020年4月30日:17:37:14 +0000 |
 | HTTP方法 | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | 协议 | HTTP/1.1 |
@@ -266,13 +266,13 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | 引用 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | 用户代理 | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
-### 配置HTTP访问日志{#configuring-the-http-access-log}
+### 配置HTTP访问日志 {#configuring-the-http-access-log}
 
-HTTP访问日志在AEM中不可配置为Cloud Service。
+无法在AEMas a Cloud Service中配置HTTP访问日志。
 
-## Apache Web服务器和调度程序日志记录{#apache-web-server-and-dispatcher-logging}
+## Apache Web Server和Dispatcher日志记录 {#apache-web-server-and-dispatcher-logging}
 
-AEM as a Publish中为Apache Web Server和调度程序层提供了三个日志：
+AEM as a Cloud Service为Apache Web Server和Dispatcher层在发布上提供了三个日志：
 
 * Apache HTTPD Web服务器访问日志
 * Apache HTTPD Web服务器错误日志
@@ -280,9 +280,9 @@ AEM as a Publish中为Apache Web Server和调度程序层提供了三个日志�
 
 请注意，这些日志仅可用于发布层。
 
-此日志集可在AEM应用程序收到HTTP请求之前，将HTTP请求作为Cloud Service发布层提供分析。 理想情况下，对发布层服务器的大多数HTTP请求都由Apache HTTPD Web Server和AEM Dispatcher缓存的内容提供，并且永远无法访问AEM应用程序本身，这一点非常重要。 因此，AEM Java、Request或Access日志中没有这些请求的log语句。
+此日志集可在AEMas a Cloud Service发布层收到HTTP请求之前，对这些请求进行分析。 理想情况下，对发布层服务器的大多数HTTP请求都由Apache HTTPD Web Server和AEM Dispatcher缓存的内容提供，并且永远无法访问AEM应用程序本身，这一点非常重要。 因此，AEM Java、Request或Access日志中没有这些请求的log语句。
 
-### Apache HTTPD Web服务器访问日志{#apache-httpd-web-server-access-log}
+### Apache HTTPD Web服务器访问日志 {#apache-httpd-web-server-access-log}
 
 Apache HTTP Web Server访问日志为到达发布层的Web服务器/调度程序的每个HTTP请求提供语句。 请注意，来自上游CDN的请求不会反映在这些日志中。
 
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>日期和时间</td>
-<td>2000年5月01日2020:00:09:46 +000</td>
+<td>2020年5月01日:00:09:46 +0000</td>
 </tr>
 <tr>
 <td>HTTP 方法</td>
@@ -347,11 +347,11 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tbody>
 </table>
 
-### 配置Apache HTTPD Web服务器访问日志{#configuring-the-apache-httpd-webs-server-access-log}
+### 配置Apache HTTPD Web服务器访问日志 {#configuring-the-apache-httpd-webs-server-access-log}
 
-此日志在AEM中不可配置为Cloud Service。
+无法在AEMas a Cloud Service中配置此日志。
 
-## Apache HTTPD Web服务器错误日志{#apache-httpd-web-server-error-log}
+## Apache HTTPD Web服务器错误日志 {#apache-httpd-web-server-error-log}
 
 Apache HTTP Web Server错误日志为发布层的Web服务器/调度程序中的每个错误提供语句。
 
@@ -371,7 +371,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>日期和时间</td>
-<td>星期五2020年7月17日02:16:42.608913</td>
+<td>2020年7月17日星期五02:16:42.608913 2020</td>
 </tr>
 <tr>
 <td>事件级别</td>
@@ -392,7 +392,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tbody>
 </table>
 
-### 配置Apache HTTPD Web服务器错误日志{#configuring-the-apache-httpd-web-server-error-log}
+### 配置Apache HTTPD Web服务器错误日志 {#configuring-the-apache-httpd-web-server-error-log}
 
 mod_rewrite日志级别由文件`conf.d/variables/global.var`中的变量REWRITE_LOG_LEVEL定义。
 
@@ -417,7 +417,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## 调度程序日志{#dispatcher-log}
+## 调度程序日志 {#dispatcher-log}
 
 **示例**
 
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>日期和时间</td>
-<td>[2000年7月17日2020:23:48:16 +000]</td>
+<td>[2020年7月17日:23:48:16 +0000]</td>
 </tr>
 <tr>
 <td>面板名称</td>
@@ -470,13 +470,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### 配置调度程序错误日志{#configuring-the-dispatcher-error-log}
+### 配置调度程序错误日志 {#configuring-the-dispatcher-error-log}
 
 调度程序日志级别由文件`conf.d/variables/global.var`中的变量DISP_LOG_LEVEL定义。
 
 它可以设置为“错误”、“警告”、“信息”、“调试”和“跟踪”1，其默认值为“警告”。
 
-虽然AEM日志记录支持其他几个级别的日志记录粒度，但Dispatcher as a Dispatcher建议使用下述级别。
+虽然AEM日志记录支持其他几个级别的日志记录粒度，但Dispatcheras a Cloud Service建议使用下述级别。
 
 要设置每个环境的日志级别，请在`global.var`文件中使用相应的条件分支，如下所述：
 
@@ -495,15 +495,15 @@ Define DISP_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## 如何访问日志{#how-to-access-logs}
+## 如何访问日志 {#how-to-access-logs}
 
-### 云环境{#cloud-environments}
+### 云环境 {#cloud-environments}
 
-AEM as a cloud services的Cloud Service日志可以通过以下两种方式访问：通过Cloud Manager界面下载，或使用Adobe I/O命令行界面跟踪命令行上的日志。 有关更多信息，请参阅[Cloud Manager日志记录文档](/help/implementing/cloud-manager/manage-logs.md)。
+AEM云服务的as a Cloud Service日志可以通过以下两种方式访问：通过Cloud Manager界面下载，或使用Adobe I/O命令行界面跟踪命令行上的日志。 有关更多信息，请参阅[Cloud Manager日志记录文档](/help/implementing/cloud-manager/manage-logs.md)。
 
-### 本地SDK {#local-sdk}
+### 本地 SDK {#local-sdk}
 
-AEM as a Cloud ServiceSDK提供日志文件以支持本地开发。
+AEMas a Cloud ServiceSDK提供日志文件以支持本地开发。
 
 AEM日志位于文件夹`crx-quickstart/logs`中，可在该文件夹中查看以下日志：
 
@@ -528,24 +528,24 @@ Apache层日志（包括调度程序）位于包含调度程序的Docker容器�
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-## 调试生产和暂存{#debugging-production-and-stage}
+## 调试生产和暂存 {#debugging-production-and-stage}
 
 在特殊情况下，需要更改日志级别，以便在暂存或生产环境中以更精细的粒度进行登录。
 
-虽然这是可能的，但是它需要对Git中配置文件中的日志级别进行从“警告”和“错误”到“调试”的更改，并执行到AEM的部署作为Cloud Service，以在环境中注册这些配置更改。
+虽然这是可能的，但它需要对Git中配置文件中的日志级别从“警告”和“错误”更改为“调试”，然后执行到AEMas a Cloud Service的部署，以在环境中注册这些配置更改。
 
 根据Debug编写的流量和日志语句的数量，这可能会对环境产生不利的性能影响，因此建议对暂存和生产调试级别进行以下更改：
 
 * 要谨慎行事，而且必须绝对必要
 * 还原到相应级别并尽快重新部署
 
-## Splunk日志{#splunk-logs}
+## Splunk日志 {#splunk-logs}
 
-拥有Splunk帐户的客户可以通过客户支持票证请求将其AEMCloud Service日志转发到相应的索引。 日志记录数据等同于Cloud Manager日志下载中提供的内容，但客户可能会发现利用Splunk产品中提供的查询功能非常方便。
+拥有Splunk帐户的客户可以通过客户支持票证请求将其AEM Cloud Service日志转发到相应的索引。 日志记录数据等同于Cloud Manager日志下载中提供的内容，但客户可能会发现利用Splunk产品中提供的查询功能非常方便。
 
 与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
 
-### 启用Splunk转发{#enabling-splunk-forwarding}
+### 启用Splunk转发 {#enabling-splunk-forwarding}
 
 在支持请求中，客户应指示：
 
