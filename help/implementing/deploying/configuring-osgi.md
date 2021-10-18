@@ -1,16 +1,16 @@
 ---
-title: 为Adobe Experience Manager配置OSGi作为Cloud Service
+title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有密钥值和环境特定值的OSGi配置 '
-feature: 部署
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
 
-# 为Adobe Experience Manager配置OSGi作为Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# 为Adobe Experience Manager as a Cloud Service配置OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [](https://www.osgi.org/) OSG是Adobe Experience Manager(AEM)技术堆栈中的一个基本元素。它用于控制AEM及其配置的复合包。
 
@@ -62,7 +62,7 @@ OSGi配置文件在以下位置定义：
 
 ## OSGi配置值的类型 {#types-of-osgi-configuration-values}
 
-有三种OSGi配置值，可将Adobe Experience Manager用作Cloud Service。
+有三种OSGi配置值可与Adobe Experience Manager as a Cloud Service一起使用。
 
 1. **内联值**，这些值是在OSGi配置中硬编码并存储在Git中的值。例如：
 
@@ -80,7 +80,7 @@ OSGi配置文件在以下位置定义：
    } 
    ```
 
-1. **特定于环境的值**，这些值在各个开发环境中有所不同，因此无法按运行模式准确定位(因为在Adobe Experience Manager `dev` 作为Cloud Service中只有一个运行模式)。例如：
+1. **特定于环境的值**，这些值在开发环境中有所不同，因此无法按运行模式准确定位(因为Adobe Experience Manager as a Cloud Service中只 `dev` 有一个运行模式)。例如：
 
    ```json
    {
@@ -120,16 +120,16 @@ OSGi的常见用例使用内联OSGi配置值。 特定于环境的配置仅用�
 
 ### 何时使用非机密环境特定的配置值 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-当预览层的值不同或开发环境不同时，仅将特定于环境的配置(`$[env:ENV_VAR_NAME]`)用于非机密配置值。 这包括本地开发实例和任何作为Cloud Service开发环境的Adobe Experience Manager。 除了为预览层设置唯一值之外，请避免将Adobe Experience Manager的非机密环境特定配置用作Cloud Service暂存或生产环境。
+当预览层的值不同或开发环境不同时，仅将特定于环境的配置(`$[env:ENV_VAR_NAME]`)用于非机密配置值。 这包括本地开发实例和任何Adobe Experience Manager as a Cloud Service开发环境。 除了为预览层设置唯一值之外，还应避免在Adobe Experience Manager as a Cloud Service暂存或生产环境中使用非机密环境特定配置。
 
 * 仅对发布层和预览层之间存在差异的配置值，或对于开发环境（包括本地开发实例）之间存在差异的值，使用非机密环境特定配置。
 * 除了预览层需要与发布层不同的情况外，在OSGi配置中为暂存值和生产非机密值使用标准内联值。 关于此问题，不建议使用特定于环境的配置来便于在运行时对暂存和生产环境进行配置更改；应通过源代码管理引入这些更改。
 
 ### 何时使用特定于环境的机密配置值 {#when-to-use-secret-environment-specific-configuration-values}
 
-Adobe Experience Manager as aCloud Service要求将特定于环境的配置(`$[secret:SECRET_VAR_NAME]`)用于任何秘密OSGi配置值，例如密码、专用API密钥，或出于安全原因无法存储在Git中的任何其他值。
+Adobe Experience Manager as a Cloud Service要求对任何秘密OSGi配置值（例如密码、专用API密钥或出于安全原因无法存储在Git中的任何其他值）使用特定于环境的配置(`$[secret:SECRET_VAR_NAME]`)。
 
-使用特定于密钥环境的配置，将机密值存储在所有Adobe Experience Manager作为Cloud Service环境（包括暂存和生产环境）上。
+使用特定于密钥环境的配置，在所有Adobe Experience Manager as a Cloud Service环境（包括暂存和生产环境）中存储密钥的值。
 
 ## 创建OSGi配置 {#creating-sogi-configurations}
 
@@ -140,9 +140,9 @@ Adobe Experience Manager as aCloud Service要求将特定于环境的配置(`$[s
 JSON格式的OSGi配置文件可以直接手动写入AEM项目。 这通常是为知名OSGi组件创建OSGi配置的最快捷方式，尤其是由定义配置的相同开发人员设计和开发的自定义OSGi组件。 此方法还可用于在不同运行模式文件夹中复制/粘贴和更新同一OSGi组件的配置。
 
 1. 在IDE中，打开`ui.apps`项目，找到或创建配置文件夹(`/apps/.../config.<runmode>`)，该文件夹定位新OSGi配置需要生效的运行模式
-1. 在此配置文件夹中，创建一个新的`<PID>.cfg.json`文件。 PID是OSGi组件的永久标识，通常是OSGi组件实现的全类名称。 例如：
+1. 在此配置文件夹中，创建一个新的`<PID>.cfg.json`文件。 PID是OSGi组件的永久标识。 它通常是OSGi组件实现的全类名称。 例如：
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-请注意，OSGi配置工厂文件名使用命 `<PID>-<factory-name>.cfg.json` 名约定
+请注意，OSGi配置工厂文件名使用命 `<factoryPID>-<name>.cfg.json` 名约定
 1. 打开新的`.cfg.json`文件，并按照[JSON OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)定义OSGi属性和值对的键/值组合。
 1. 保存对新`.cfg.json`文件所做的更改
 1. 将新的OSGi配置文件添加到Git并将其提交到Git
@@ -283,7 +283,7 @@ OSGI属性`my_var1`的值对于暂存和生产而言是相同的，但对于三�
 </tr>
 <tr>
 <td>
-配置
+config
 </td>
 <td>
 <pre>
@@ -537,7 +537,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## 有关密钥和特定于环境的配置值的部署注意事项 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-由于特定于密钥和环境的配置值位于Git之外，因此不是正式的Adobe Experience Manager(作为Cloud Service部署机制)的一部分，因此客户应该将管理、管理和集成到Adobe Experience Manager(作为Cloud Service部署过程)中。
+由于特定于机密和环境的配置值位于Git之外，因此不属于正式的Adobe Experience Manager as a Cloud Service部署机制，因此客户应该管理、管理并集成到Adobe Experience Manager as a Cloud Service部署过程中。
 
 如上所述，调用API会将新变量和值部署到云环境，类似于典型的客户代码部署管道。 创作和发布服务将重新启动并引用新值，通常需要几分钟时间。 请注意，在常规代码部署期间，Cloud Manager执行的质量门和测试在此过程中不会执行。
 
