@@ -2,9 +2,9 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '752'
 ht-degree: 33%
 
 ---
@@ -114,4 +114,4 @@ ht-degree: 33%
 
 ## 下一步 {#whats-next}
 
-了解如何创建迁移集后，您现在便可以了解内容传输工具中的提取和摄取流程。 在了解这些流程之前，您必须查看[处理大型内容存储库](help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)以显着加快内容传输活动的提取和摄取阶段，以便将内容移动到AEMas a Cloud Service。
+了解如何创建迁移集后，您现在便可以了解内容传输工具中的提取和摄取流程。 在了解这些流程之前，您必须查看[处理大型内容存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)以显着加快内容传输活动的提取和摄取阶段，以便将内容移动到AEMas a Cloud Service。

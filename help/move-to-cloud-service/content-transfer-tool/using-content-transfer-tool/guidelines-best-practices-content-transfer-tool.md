@@ -1,7 +1,7 @@
 ---
 title: 使用内容传输工具的准则和最佳实践
 description: 使用内容传输工具的准则和最佳实践
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 25%
@@ -82,4 +82,4 @@ ht-degree: 25%
 
 ## 下一步 {#whats-next}
 
-了解了使用内容传输工具的准则、最佳实践和重要注意事项后，您现在可以从创建迁移集开始，安装和使用该工具。 请参阅[内容传输入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)以了解更多信息。
+了解了使用内容传输工具的准则、最佳实践和重要注意事项后，您现在可以从创建迁移集开始，安装和使用该工具。 请参阅[内容传输工具入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)以了解更多信息。

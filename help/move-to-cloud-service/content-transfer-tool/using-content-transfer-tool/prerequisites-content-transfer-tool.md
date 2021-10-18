@@ -2,9 +2,9 @@
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请参阅[使用内容传输工具时使用内容传输工具的准则和最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en)。
+查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请参阅[使用内容传输工具的准则和最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en)。
