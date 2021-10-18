@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 5%
 
 ---
@@ -67,11 +67,17 @@ ht-degree: 5%
    >[!NOTE]
    >上传新报表会重置所有评估。
 
+### 使用打印预览 {#print-preview-cam}
+
+您可以在Cloud Acceleration Manager中选择打印预览选项以预览报表，或将报表打印为PDF格式以便于共享。
+
+应遵循以下步骤：
+
 1. 单击&#x200B;**打印预览**&#x200B;图标，如下所示。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. 单击&#x200B;**打印预览**&#x200B;会打开一个新选项卡，其中报告显示在可打印预览中。 单击&#x200B;**Print**&#x200B;以将报表打印为PDF格式，以便轻松共享。
+1. 单击&#x200B;**打印预览**&#x200B;会打开一个新选项卡，其中报告显示在可打印预览中。 单击&#x200B;**Print**&#x200B;以将报表打印为PDF格式。
 
    >[!IMPORTANT]
    >* 建议并支持选项&#x200B;**另存为PDF**&#x200B;来实现上述功能。

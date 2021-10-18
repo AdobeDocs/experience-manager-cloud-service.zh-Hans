@@ -1,7 +1,7 @@
 ---
 title: 在发布实例上运行内容传输工具
 description: 在发布实例上运行内容传输工具
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -28,7 +28,10 @@ ht-degree: 1%
 
 * 创建迁移集时，请使用创作AEMas a Cloud Service环境的URL。
 
-* 在摄取到发布期间，不会缩小发布层（与作者不同）。 为防患于未然，请避免任何用户启动写操作，例如：
+* 在摄取以发布期间，不会缩小发布层（与作者不同）。
 
-   * 在该环境中从AEMas a Cloud Service作者到发布的内容分发
-   * 发布实例之间的用户同步
+   >[!IMPORTANT]
+   >为防患于未然，请避免任何用户启动写操作，例如：
+   > * 在该环境中从AEMas a Cloud Service作者到发布的内容分发
+   > * 发布实例之间的用户同步
+
