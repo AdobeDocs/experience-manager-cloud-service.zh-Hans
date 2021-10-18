@@ -1,15 +1,15 @@
 ---
 title: 从源提取内容
 description: 从源提取内容
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 42%
+source-wordcount: '549'
+ht-degree: 39%
 
 ---
 
 
-# Extracting Content from Source {#extracting-content}
+# 从源提取内容 {#extracting-content}
 
 ## 内容传输工具中的提取流程 {#extraction-process}
 
@@ -19,22 +19,25 @@ ht-degree: 42%
 >abstract="提取是指将内容从源AEM实例提取到称为迁移集的临时区域。 迁移集是 Adobe 提供的云存储区域，用于临时存储源 AEM 实例和云服务 AEM 实例之间的传输内容。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="增补提取"
 
+>[!IMPORTANT]
+>在从源中提取内容之前，应运行用户映射工具。 请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以了解更多详细信息。
+
 请按照以下步骤从内容传输工具中提取迁移集：
 >[!NOTE]
->如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快提取阶段。 To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details.
+>如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快提取阶段。 为此，您需要配置 `azcopy.config` 文件之前，请执行提取。 请参阅 [处理大型内容存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 以了解更多详细信息。
 
-1. 从&#x200B;**内容传输**&#x200B;向导中选择迁移集，然后单击&#x200B;**提取**&#x200B;以开始提取。
+1. 从中选择迁移集 **内容传输** 向导，单击 **Extract** 开始提取。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png)
 
-1. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
+1. 的 **迁移集提取** 对话框，单击 **Extract** 开始提取阶段。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
    >您可以选择在提取阶段覆盖暂存容器。
 
-1. 现在， **Extraction**&#x200B;字段显示&#x200B;**RUNNING**&#x200B;状态，以指示提取正在进行中。
+1. 的 **提取** 字段 **正在运行** 状态，指示提取正在进行中。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png)
 
@@ -43,7 +46,7 @@ ht-degree: 42%
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >UI具有自动重新加载功能，该功能每30秒重新加载一次&#x200B;**内容传输**向导。
+   >UI具有自动重新加载功能，可重新加载 **内容传输** 向导。
    >提取阶段启动后，将创建写锁定并在 *60* 秒后将其释放。因此，如果停止提取，则需要等待一分钟以便释放锁定，之后才能再次开始提取。
 
 ## 增补提取 {#top-up-extraction-process}
@@ -52,17 +55,17 @@ ht-degree: 42%
 
 >[!NOTE]
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
->Additionally, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. 请确保在迁移过程中限制此操作。
+>此外，必须从采用初始提取到运行增补提取时，不要更改现有内容的内容结构。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中限制此操作。
 
 完成提取流程后，可以使用增补提取方法传输增量内容。
 
 应遵循以下步骤：
 
-1. 导航到&#x200B;**内容传输**&#x200B;向导，然后选择要对其执行增补提取的迁移集。 单击&#x200B;**提取**&#x200B;以开始增补提取。
+1. 导航到 **内容传输** 向导，然后选择要对其执行增补提取的迁移集。 单击&#x200B;**提取**&#x200B;以开始增补提取。
 
    ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
 
-1. 此时将显示&#x200B;**迁移集提取**&#x200B;对话框。单击&#x200B;**Extract**。
+1. 的 **迁移集提取** 对话框。单击 **Extract**.
 
    >[!IMPORTANT]
    >您应该禁用&#x200B;**在提取期间覆盖暂存容器**选项。
@@ -71,4 +74,4 @@ ht-degree: 42%
 
 ## 下一步 {#whats-next}
 
-在内容传输工具中学习了从源提取内容后，您现在便可以学习内容传输工具中的摄取流程。 请参阅[将内容摄取到Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) ，了解如何从内容传输工具中摄取迁移集。
+在内容传输工具中学习了从源提取内容后，您现在便可以学习内容传输工具中的摄取流程。 请参阅 [将内容摄取到目标](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 了解如何从内容传输工具中摄取迁移集。
