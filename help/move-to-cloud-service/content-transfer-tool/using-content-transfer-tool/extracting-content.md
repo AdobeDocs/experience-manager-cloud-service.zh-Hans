@@ -1,10 +1,10 @@
 ---
 title: 从源提取内容
 description: 从源提取内容
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 39%
+source-wordcount: '596'
+ht-degree: 36%
 
 ---
 
@@ -36,6 +36,10 @@ ht-degree: 39%
 
    >[!NOTE]
    >您可以选择在提取阶段覆盖暂存容器。
+
+   >[!IMPORTANT]
+   >如果在从源中提取内容之前尚未对此迁移集运行用户映射，您将看到一条警告，显示“用户映射”步骤处于待处理状态，如下图所示。 单击 **映射用户** 以运行用户映射工具。
+   >![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. 的 **提取** 字段 **正在运行** 状态，指示提取正在进行中。
 
