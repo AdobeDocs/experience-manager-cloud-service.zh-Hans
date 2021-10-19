@@ -1,9 +1,9 @@
 ---
 title: 从源提取内容
 description: 从源提取内容
-source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
+source-git-commit: f549a7d9e1a5732d75489bc327a8cb67876a4483
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '596'
 ht-degree: 36%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 36%
 >[!NOTE]
 >如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快提取阶段。 为此，您需要配置 `azcopy.config` 文件之前，请执行提取。 请参阅 [处理大型内容存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 以了解更多详细信息。
 
-**从源提取内容之前**
-在从源中提取内容之前，应运行用户映射工具。 请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以了解更多详细信息。
+>[!IMPORTANT]
+>在从源中提取内容之前，应运行用户映射工具。 请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以了解更多详细信息。
 
 1. 从中选择迁移集 **内容传输** 向导，单击 **Extract** 开始提取。
 
