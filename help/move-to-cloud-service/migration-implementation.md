@@ -2,10 +2,10 @@
 title: 实施阶段
 description: 实施阶段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 >[!NOTE]
 >建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
 
-有关更多信息，请参阅[内容传输工具](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)。
+有关更多信息，请参阅[内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)。
 
 >[!IMPORTANT]
 >内容传输工具的最低系统要求为 AEM 6.3 + 和 JAVA 8。如果您使用的是较低版本的 AEM，则需要将内容存储库升级到 AEM 6.5，才能使用内容传输工具。
