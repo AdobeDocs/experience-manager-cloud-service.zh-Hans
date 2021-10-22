@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
+source-git-commit: b71299a08c6dec8e88c4259b3d03481b20b310cb
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 8%
@@ -33,7 +33,7 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
 默认情况下，对于AEM托管CDN设置，所有公共流量都可以进入生产环境和非生产（开发和暂存）环境的发布服务。 如果您希望限制给定环境的发布服务的流量（例如，限制按IP地址范围进行暂存），则可以通过Cloud Manager UI以自助方式执行此操作。
 
-请参阅[管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)以了解更多信息。
+请参阅 [管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 以了解更多。
 
 >[!CAUTION]
 >
@@ -50,7 +50,7 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
 * 客户必须拥有现有的CDN，这样的CDN更换将非常繁琐。
 * 客户必须管理它。
-* 客户必须能够配置CDN才能将AEM作为Cloud Service使用 — 请参阅下面的配置说明。
+* 客户必须能够配置CDN以使用AEMas a Cloud Service — 请参阅下面的配置说明。
 * 客户必须有工程CDN专家随时待命，以防出现相关问题。
 * 客户必须先执行并成功通过负载测试，然后才能转到生产环境。
 
@@ -59,24 +59,24 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 1. 将您的CDN指向AdobeCDN的入口作为其源域。 例如, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI还必须设置为AdobeCDN的入口
 1. 将主机标头设置为源域。 例如: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如: `X-Forwarded-Host:example.com`.
+1. 设置 `X-Forwarded-Host` 标头，以便AEM可以确定主机标头。 例如: `X-Forwarded-Host:example.com`.
 1. 套 `X-AEM-Edge-Key`. 值应来自Adobe。
-   * 这是需要的，以便AdobeCDN能够验证请求源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，由受信任的呼叫者（即客户管理的CDN）负责确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。
-   * 或者，当`X-AEM-Edge-Key`不存在时，可能会阻止对AdobeCDN入口的访问。 如果您需要直接访问AdobeCDN的入口（待阻止），请通知Adobe。
+   * 这是AdobeCDN验证请求源并传递 `X-Forwarded-*` 标头。 例如，`X-Forwarded-For` 用于确定客户端IP。 因此，它成为可信呼叫者（即客户管理的CDN）的责任，来确保 `X-Forwarded-*` 标题（请参阅下面的注释）。
+   * 或者，当Adobe `X-AEM-Edge-Key` 不存在。 如果您需要直接访问AdobeCDN的入口（待阻止），请通知Adobe。
 
 在接受实时流量之前，您应该通过Adobe的客户支持验证端到端流量路由是否正确运行。
 
-在获取`X-AEM-Edge-Key`后，您可以测试请求是否正确路由，如下所示：
+获取 `X-AEM-Edge-Key`，则可以测试请求是否正确路由，如下所示：
 
 ```
-curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
-请注意，使用您自己的CDN时，无需在Cloud Manager中安装域和证书。 AdobeCDN中的路由将使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成。
+请注意，使用您自己的CDN时，无需在Cloud Manager中安装域和证书。 AdobeCDN中的路由将使用默认域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
->管理自己CDN的客户应确保发送到AEM CDN的标头的完整性。 例如，建议客户清除所有`X-Forwarded-*`标头，并将其设置为已知和受控值。 例如，`X-Forwarded-For`应包含客户端的IP地址，而`X-Forwarded-Host`应包含站点的主机。
+>管理自己CDN的客户应确保发送到AEM CDN的标头的完整性。 例如，建议客户清除所有 `X-Forwarded-*` 标头，并将其设置为已知和受控值。 例如， `X-Forwarded-For` 应包含客户端的IP地址，而 `X-Forwarded-Host` 应包含网站的主机。
 
 >[!NOTE]
 >
@@ -90,10 +90,10 @@ curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: exa
 
 AEM Managed CDN会通过以下方式向每个请求添加标头：
 
-* 国家/地区代码：`x-aem-client-country`
-* 大陆代码：`x-aem-client-continent`
+* 国家/地区代码： `x-aem-client-country`
+* 大陆代码： `x-aem-client-continent`
 
-国家/地区代码的值是[此处](https://en.wikipedia.org/wiki/ISO_3166-1)描述的Alpha-2代码。
+国家/地区代码的值是所述的Alpha-2代码 [此处](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 大陆代码的值包括：
 
@@ -105,4 +105,4 @@ AEM Managed CDN会通过以下方式向每个请求添加标头：
 * 大洋州奥克
 * 南美洲
 
-此信息可能对以下用例有用：根据请求的来源（国家/地区）重定向到其他url。 使用Vary标头来缓存依赖于地理信息的响应。 例如，重定向到特定国家/地区登录页面时应始终包含`Vary: x-aem-client-country`。 如果需要，可以使用`Cache-Control: private`来阻止缓存。 另请参阅[缓存](/help/implementing/dispatcher/caching.md#html-text)。
+此信息可能对以下用例有用：根据请求的来源（国家/地区）重定向到其他url。 使用Vary标头来缓存依赖于地理信息的响应。 例如，重定向到特定国家/地区登录页面时应始终包含 `Vary: x-aem-client-country`. 如果需要，您可以使用 `Cache-Control: private` 以防止缓存。 另请参阅 [缓存](/help/implementing/dispatcher/caching.md#html-text).
