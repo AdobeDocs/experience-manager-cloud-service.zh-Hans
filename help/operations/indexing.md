@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: abaee9b289bbcd6a7d201f4b17ef860799fe68aa
+source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 1%
+source-wordcount: '2150'
+ht-degree: 2%
 
 ---
 
@@ -217,7 +217,7 @@ Apache Jackrabbit Oak支持灵活的索引配置，以高效处理搜索查询�
 
 ### AEMas a Cloud Service上的Lucene全文索引 {#index-lucene}
 
-全文索引 `/oak:index/lucene-2` 可能会变得非常大，因为默认情况下，它会为AEM存储库中的所有节点编制索引。  在Adobe计划停用此索引后，自2021年9月起，将不再部署在AEMas a Cloud Service中。 因此，它不再在AEMas a Cloud Service的产品端使用，也不应要求运行客户代码。 对于具有常用Lucene索引的AEMas a Cloud Service环境，Adobe正在与客户单独合作，以采用协调的方法来弥补此索引，并使用更好、优化的索引。 客户无需执行任何操作，而无需进一步通知Adobe。 AEMas a Cloud Service客户在需要对此优化采取行动时，将会收到Adobe通知。 如果自定义查询需要此索引，则作为临时解决方案，应使用其他名称(例如， `/oak:index/acme.lucene-1-custom-1`，如所述 [此处](/help/operations/indexing.md).
+全文索引 `/oak:index/lucene-2` 可能会变得非常大，因为默认情况下，它会为AEM存储库中的所有节点编制索引。  在Adobe计划停用此索引后，将不再在AEMas a Cloud Service的产品端使用此索引，因此不应要求运行客户代码。 对于具有常用Lucene索引的AEMas a Cloud Service环境，Adobe正在与客户单独合作，以采用协调的方法来弥补此索引，并使用更好、优化的索引。 客户无需执行任何操作，而无需进一步通知Adobe。 AEMas a Cloud Service客户在需要对此优化采取行动时，将会收到Adobe通知。 如果自定义查询需要此索引，则作为临时解决方案，应使用其他名称(例如， `/oak:index/acme.lucene-1-custom-1`，如所述 [此处](/help/operations/indexing.md).
 默认情况下，此优化不适用于在内部托管或由Adobe Managed Services管理的其他AEM环境。
 
 ## 查询优化 {#index-query}
