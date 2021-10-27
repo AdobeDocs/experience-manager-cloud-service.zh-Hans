@@ -2,7 +2,7 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,7 +11,7 @@ ht-degree: 29%
 
 # 内容传输工具快速入门 {#getting-started-content-transfer-tool}
 
-## 源环境连接
+## 源环境连接 {#source-environment-connectivity}
 
 源AEM实例可能在防火墙后运行，在防火墙中，它只能访问已添加到允许列表的特定主机。 要成功运行提取，需要从运行AEM的实例访问以下端点：
 
@@ -30,6 +30,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >如果 `HTTP/2 200` 已收到，连接到AEMas a Cloud Service成功。
+
 
 ## 可用性 {#availability}
 
