@@ -2,10 +2,10 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 4d71cd5f2376d7cf5ea201410890259ae19f2846
+source-git-commit: a8635ce39e2a8f8769975be22cdc431dd7f9423a
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 27%
+source-wordcount: '860'
+ht-degree: 29%
 
 ---
 
@@ -21,12 +21,22 @@ ht-degree: 27%
 
 要测试与目标AEMas a Cloud Service环境的连接，请从源实例的shell发出以下cURL命令(替换 `program_id`, `environment_id`和 `migration_token`):
 
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
 
 >[!NOTE]
 >如果 `HTTP/2 200` 已收到，连接到AEMas a Cloud Service成功。
 
 ## 可用性 {#availability}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_download"
+>title="下载"
+>abstract="内容传输工具可以从软件分发门户以zip文件的形式下载。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。确保下载最新版本。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="发行说明"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="软件分发门户"
 
 内容传输工具可以从软件分发门户以zip文件的形式下载。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。确保下载最新版本。 有关最新版本的更多详细信息，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
 
