@@ -2,7 +2,7 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d8c9373da79b46d32f8da37b4dfeae815348ae8a
+source-git-commit: ce0c9349cf6b52f7cba27397f1b85896ee156a35
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,21 +11,6 @@ ht-degree: 29%
 
 # 内容传输工具快速入门 {#getting-started-content-transfer-tool}
 
-## 源环境连接 {#source-environment-connectivity}
-
-源AEM实例可能在防火墙后运行，在防火墙中，它只能访问已添加到允许列表的特定主机。 要成功运行提取，需要从运行AEM的实例访问以下端点：
-
-* 目标AEMas a Cloud Service环境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure Blob存储服务： `*.blob.core.windows.net`
-* 用户映射IO端点： `usermanagement.adobe.io`
-
-要测试与目标AEMas a Cloud Service环境的连接，请从源实例的shell发出以下cURL命令(替换 `program_id`, `environment_id`和 `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
-
->[!NOTE]
->如果 `HTTP/2 200` 已收到，连接到AEMas a Cloud Service成功。
 
 ## 可用性 {#availability}
 
@@ -40,6 +25,21 @@ ht-degree: 29%
 
 >[!NOTE]
 >从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载内容传输工具。
+
+## 源环境连接 {#source-environment-connectivity}
+
+源AEM实例可能在防火墙后运行，在防火墙中，它只能访问已添加到允许列表的特定主机。 要成功运行提取，需要从运行AEM的实例访问以下端点：
+
+* 目标AEMas a Cloud Service环境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Azure Blob存储服务： `*.blob.core.windows.net`
+* 用户映射IO端点： `usermanagement.adobe.io`
+
+要测试与目标AEMas a Cloud Service环境的连接，请从源实例的shell发出以下cURL命令(替换 `program_id`, `environment_id`和 `migration_token`):
+
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
+
+>[!NOTE]
+>如果 `HTTP/2 200` 已收到，连接到AEMas a Cloud Service成功。
 
 ## 运行内容传输工具 {#running-tool}
 
