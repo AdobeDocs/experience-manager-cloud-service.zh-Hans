@@ -2,7 +2,7 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: a8635ce39e2a8f8769975be22cdc431dd7f9423a
+source-git-commit: d8c9373da79b46d32f8da37b4dfeae815348ae8a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -21,9 +21,7 @@ ht-degree: 29%
 
 要测试与目标AEMas a Cloud Service环境的连接，请从源实例的shell发出以下cURL命令(替换 `program_id`, `environment_id`和 `migration_token`):
 
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 
 >[!NOTE]
