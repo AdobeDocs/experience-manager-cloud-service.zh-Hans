@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
+source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1058'
 ht-degree: 5%
 
 ---
@@ -125,9 +125,12 @@ ht-degree: 5%
    >您可以通过下拉菜单添加或更改图形视图，如下图所示：
    >![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### 删除趋势线报表 {#delete-trendline}
+#### 删除报表 {#delete-trendline}
 
 按照以下步骤从趋势线视图中删除报表：
+
+>[!IMPORTANT]
+>仅当一个项目中上载了多个报表时，才能删除报表。
 
 1. 导航到您的项目并单击 **审阅** 从 **最佳实践分析** 卡 **就绪** 阶段。
 
