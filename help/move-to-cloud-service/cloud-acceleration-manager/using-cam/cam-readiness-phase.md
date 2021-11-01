@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1042'
 ht-degree: 5%
 
 ---
@@ -88,9 +88,9 @@ ht-degree: 5%
 
 ### 使用查看趋势线 {#trendline-view-cam}
 
-当您在一个项目中上传多个最佳实践分析器(BPA)报告时，可以选择 **查看趋势线** 选项来查看和比较旧BPA报表的结果。
+在一个项目中上传多个最佳实践分析器(BPA)报告时，您可以选择 **查看趋势线** 选项来查看和比较旧BPA报表的结果。
 
-请按照以下步骤查看趋势线：
+请按照以下步骤从趋势线选项查看报表：
 
 >[!NOTE]
 >在一个项目中上传多个BPA报表时，您将看到该图标 **...**.
@@ -104,7 +104,7 @@ ht-degree: 5%
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >显示的报表始终是具有最新报表日期的报表。
+   >报表显示在 **趋势线报表屏幕** 总是具有最近报表日期的报表。
 
 1. 单击 **查看趋势线**，如下图所示。
 
@@ -116,12 +116,14 @@ ht-degree: 5%
 
    >[!NOTE]
    >趋势线报表以图形形式显示历史BPA报表的结果。
+   >
    >您将看到两个图表，其中显示了以下趋势：
-   >1. 报告发现趋势
-   >1. 自定义组件和模板趋势
-      >您可以通过下拉菜单添加或更改图形视图，如下所示。
-      >![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **报告发现趋势**
+   >1. **自定义组件和模板趋势**
 
+   >
+   >您可以通过下拉菜单添加或更改图形视图，如下图所示：
+   >![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### 删除趋势线报表 {#delete-trendline}
 
