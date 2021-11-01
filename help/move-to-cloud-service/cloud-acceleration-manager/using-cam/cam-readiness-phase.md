@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 5%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 5%
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >报表显示在 **趋势线报表屏幕** 总是具有最近报表日期的报表。
+   >显示的报表始终为具有最新报表日期的报表。
 
 1. 单击 **查看趋势线**，如下图所示。
 
@@ -124,33 +124,6 @@ ht-degree: 5%
    >
    >您可以通过下拉菜单添加或更改图形视图，如下图所示：
    >![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### 删除报表 {#delete-trendline}
-
-按照以下步骤从趋势线视图中删除报表：
-
->[!IMPORTANT]
->仅当一个项目中上载了多个报表时，才能删除报表。
-
-1. 导航到您的项目并单击 **审阅** 从 **最佳实践分析** 卡 **就绪** 阶段。
-
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. 单击 **...** 图标来显示下拉菜单。
-
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. 单击 **查看趋势线**，如下图所示。
-
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. 单击 **趋势线报表** 屏幕。
-
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. 单击 **删除** 以确认删除。
-
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### 查看最佳实践分析报表 {#analysis-report}
@@ -222,6 +195,33 @@ ht-degree: 5%
 1. 内容轮播显示迁移历程这一阶段的所有相关信息。
 
    ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### 删除最佳实践分析报表 {#delete-trendline}
+
+按照以下步骤从趋势线视图中删除报表：
+
+>[!IMPORTANT]
+>仅当一个项目中上载了多个报表时，才能删除报表。
+
+1. 导航到您的项目并单击 **审阅** 从 **最佳实践分析** 卡 **就绪** 阶段。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. 单击 **...** 图标来显示下拉菜单。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. 单击 **查看趋势线**，如下图所示。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. 单击 **趋势线报表** 屏幕。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. 单击 **删除** 以确认删除。
+
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## 下一步 {#whats-next}
 
