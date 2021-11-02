@@ -3,7 +3,7 @@ title: AEMas a Cloud Service版本2021.10.0中迁移工具的发行说明
 description: AEMas a Cloud Service版本2021.10.0中的Cloud Manager发行说明
 feature: Release Information
 exl-id: null
-source-git-commit: c7cee58a465887b15994a963448fcba8d546673a
+source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 6%
@@ -17,24 +17,6 @@ ht-degree: 6%
 
 >[!NOTE]
 >要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
-
-## 内容传输工具 {#ctt-release}
-
-### 发布日期 {#release-date-ctt-latest}
-
-内容传输工具v1.6.0的发布日期是2021年10月4日。
-
-### 新增功能 {#what-is-new-ctt-oct}
-
-* 通过简化的用户体验改进了用户映射工具，其中包括以下功能。 有关更多详细信息，请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * 在运行用户映射之前，测试与用户管理API的连接
-   * 优雅地跳过错误并继续用户映射活动
-   * 如果 **访问令牌** 24小时后过期。 可以从上次停止的位置重新运行用户映射。
-
-* 为了提高内容传输工具的稳健性，可以一次将内容摄取到创作实例或发布实例。 请参阅 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 以了解更多详细信息。
-
-* 包含版本时，路径 `/var/audit` 会自动包含在内以迁移审核事件。
-
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -53,6 +35,24 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 ### 新增功能 {#what-is-new-cam-oct}
 
 Cloud Acceleration Manager现在为用户提供了以可打印预览方式查看BPA报表的功能，从而允许简单的打印或打印以PDF以方便共享。 请参阅 [使用最佳实践分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
+## 内容传输工具 {#ctt-release}
+
+### 发布日期 {#release-date-ctt-latest}
+
+内容传输工具v1.6.0的发布日期是2021年10月4日。
+
+### 新增功能 {#what-is-new-ctt-oct}
+
+* 通过简化的用户体验改进了用户映射工具，其中包括以下功能。 有关更多详细信息，请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+   * 在运行用户映射之前，测试与用户管理API的连接
+   * 优雅地跳过错误并继续用户映射活动
+   * 如果 **访问令牌** 24小时后过期。 可以从上次停止的位置重新运行用户映射。
+
+* 为了提高内容传输工具的稳健性，可以一次将内容摄取到创作实例或发布实例。 请参阅 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 以了解更多详细信息。
+
+* 包含版本时，路径 `/var/audit` 会自动包含在内以迁移审核事件。
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
