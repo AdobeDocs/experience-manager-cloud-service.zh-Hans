@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -88,7 +88,7 @@ ht-degree: 5%
 
 ### 使用查看趋势线 {#trendline-view-cam}
 
-在一个项目中上传多个最佳实践分析器(BPA)报告时，您可以选择 **查看趋势线** 选项来查看和比较旧BPA报表的结果。
+在一个项目中上传多个最佳实践分析器(BPA)报告时，您可以选择 **查看趋势线** 选项来查看和比较历史BPA报表的结果。
 
 请按照以下步骤从趋势线选项查看报表：
 

@@ -5,10 +5,10 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 38%
+source-wordcount: '190'
+ht-degree: 39%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 38%
 # 移动到 AEM as a Cloud Service 指南 {#moving}
 
 + [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ 迁移工具的发行说明 {#release-notes-migration-tools}
+   + [最新发行说明（2021.11.0 版）](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + 2021年 {#2021}
+      + [2021.10.0 版发行说明](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + 过渡历程的阶段 {#phases}
    + [就绪](/help/move-to-cloud-service/migration-readiness.md)
    + [实施](/help/move-to-cloud-service/migration-implementation.md)
    + [上线](/help/move-to-cloud-service/migration-go-live.md)
    + [上线后](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
-   + Cloud Acceleration Manager {#introduction-cam}简介
+   + Cloud Acceleration Manager简介 {#introduction-cam}
       + [概述](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
       + [优点](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
    + 使用Cloud Acceleration Manager {#using-cam}
@@ -31,7 +35,7 @@ ht-degree: 38%
       + [实施阶段](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
       + [上线阶段](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + 云过渡工具{#cloud-migration}
-   + 最佳实践分析器{#best-practices-analyzer}
+   + Best Practices Analyzer {#best-practices-analyzer}
       + [概述](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [使用最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 内容传输工具 {#content-transfer-tool}
@@ -46,7 +50,7 @@ ht-degree: 38%
       + [删除迁移集](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [在发布实例上运行内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
       + [内容传输工具故障诊断](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-      + 用户映射工具{#user-mapping-tool}
+      + 用户映射工具 {#user-mapping-tool}
          + [概述](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
          + [重要注意事项](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
          + [使用用户映射工具](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
