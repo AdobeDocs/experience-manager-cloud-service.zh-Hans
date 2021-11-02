@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -112,7 +112,8 @@ ht-degree: 5%
 
 1. 单击 **查看趋势线** 打开报表的趋势线视图，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >趋势线报表以图形形式显示历史BPA报表的结果。
@@ -217,11 +218,11 @@ ht-degree: 5%
 
 1. 单击 **趋势线报表** 屏幕。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. 单击 **删除** 以确认删除。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## 下一步 {#whats-next}
 
