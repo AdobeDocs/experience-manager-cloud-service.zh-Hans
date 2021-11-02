@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 35%
+source-wordcount: '1051'
+ht-degree: 37%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 35%
 
 + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
 + 使用 Cloud Manager {#using-cloud-manager}
-   + Cloud Manager {#release-notes-cloud-manager}发行说明
+   + Cloud Manager发行说明 {#release-notes-cloud-manager}
       + [最新发行说明（2021.10.0 版）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2021年{#2021}
+      + 2021年 {#2021}
          + [2021.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [2021.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [2021.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -29,7 +29,7 @@ ht-degree: 35%
          + [2021.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
          + [2021.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
          + [2021.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020年{#2020}
+      + 2020年 {#2020}
          + [2020.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
          + [2020.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
          + [2020.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -42,7 +42,7 @@ ht-degree: 35%
          + [2020.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
          + [2020.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
    + [了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
-   + 生产程序{#production-programs}
+   + 生产计划 {#production-programs}
       + [简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
       + [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
       + [编辑生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
@@ -76,14 +76,14 @@ ht-degree: 35%
    + [访问和管理日志](cloud-manager/manage-logs.md)
    + [SLA报告](cloud-manager/sla-reporting.md)
    + [了解通知](cloud-manager/notifications.md)
-   + 管理SSL证书{#manage-ssl-certificates}
+   + 管理SSL证书 {#manage-ssl-certificates}
       + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [获取SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [查看、更新和替换SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [检查SSL证书的状态](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [删除SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + 管理自定义域名{#custom-domain-names}
+   + 管理自定义域名 {#custom-domain-names}
       + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [获取自定义域名](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -94,7 +94,7 @@ ht-degree: 35%
       + [查看、更新和替换自定义域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [更新自定义域名的SSL证书](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + 管理IP允许列表{#ip-allow-lists}
+   + 管理IP允许列表 {#ip-allow-lists}
       + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [查看和更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
@@ -114,7 +114,7 @@ ht-degree: 35%
    + [API参考资料](/help/implementing/developing/reference-materials.md)
    + [为服务器端API生成访问令牌](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM中的Headful和Headless](developing/headful-headless.md)
-   + 完整堆栈AEM开发{#full-stack}
+   + 全栈AEM开发 {#full-stack}
       + [AEM Sites 开发入门- WKND 教程](developing/introduction/develop-wknd-tutorial.md)
       + [AEM UI的结构](developing/introduction/ui-structure.md)
       + [Sling 备忘单](developing/introduction/sling-cheatsheet.md)
@@ -125,7 +125,7 @@ ht-degree: 35%
       + [页面差异](/help/implementing/developing/introduction/page-diff.md)
       + [编辑器限制](/help/implementing/developing/introduction/editor-limitations.md)
       + [命名约定](/help/implementing/developing/introduction/naming-conventions.md)
-      + 组件和模板{#components-templates}
+      + 组件和模板 {#components-templates}
          + [组件概述](developing/components/overview.md)
          + [模板](developing/components/templates.md)
          + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
@@ -147,7 +147,7 @@ ht-degree: 35%
    + 无外设体验管理 {#headless}
       + [无头和AEM](developing/headless/introduction.md)
       + [无头文档历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
-      + 入门指南{#getting-started}
+      + 入门指南 {#getting-started}
          + [简介](developing/headless/getting-started/introduction.md)
          + [创建配置](developing/headless/getting-started/create-configuration.md)
          + [创建内容片段模型](developing/headless/getting-started/create-content-model.md)
@@ -171,7 +171,7 @@ ht-degree: 35%
          + [内容片段GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [包含内容片段的AEM GraphQL API — 示例内容和查询](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [对内容片段的远程AEM GraphQL查询进行身份验证](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
-   + 混合和SPA AEM开发{#hybrid}
+   + 混合和SPA AEM开发 {#hybrid}
       + [混合和SPA与AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA简介和演练](developing/hybrid/introduction.md)
@@ -198,6 +198,7 @@ ht-degree: 35%
    + [内容包Maven插件](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo 工具](/help/implementing/developing/tools/repo-tool.md)
    + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [包管理器](/help/implementing/developing/tools/package-manager.md)
    + [链接外部器](/help/implementing/developing/tools/externalizer.md)
 + 个性化 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)

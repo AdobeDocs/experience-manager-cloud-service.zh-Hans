@@ -3,7 +3,7 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '3334'
 ht-degree: 1%
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ### 通过Cloud Manager进行部署 {#deployments-via-cloud-manager}
 
-客户可通过Cloud Manager将自定义代码部署到云环境。 应该注意的是，Cloud Manager会将本地装配的内容包转换为符合Sling特征模型的对象，该模型是在云环境中运行AEMas a Cloud Service应用程序时对该应用程序的描述方式。 因此，在云环境的包管理器中查看包时，名称将包含“cp2fm”，并且转换的包将删除所有元数据。 它们不能进行交互，这意味着无法下载、复制或打开它们。 有关转换器的详细文档可以是 [此处](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+客户可通过Cloud Manager将自定义代码部署到云环境。 应该注意的是，Cloud Manager会将本地装配的内容包转换为符合Sling特征模型的对象，该模型是在云环境中运行AEMas a Cloud Service应用程序时对该应用程序的描述方式。 因此，在查看 [包管理器](/help/implementing/developing/tools/package-manager.md) 在云环境中，名称将包含“cp2fm”，且转换的包已删除所有元数据。 它们不能进行交互，这意味着无法下载、复制或打开它们。 有关转换器的详细文档可以是 [此处](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 为AEMas a Cloud Service应用程序编写的内容包必须在不可变内容和可变内容之间保持清晰的隔离，Cloud Manager将只安装可变内容，并输出如下消息：
 
@@ -109,7 +109,7 @@ ht-degree: 1%
 可以通过将包嵌入install.author或install.publish文件夹(位于 `/apps`. 为了反映这一分离，已在AEM 6.5中完成了重组，有关推荐项目重组的详细信息，请参阅 [AEM 6.5文档。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->内容包将部署到所有环境类型（开发、暂存、生产）。 无法将部署限制到特定环境。 此限制旨在确保自动执行的测试运行选项。 特定于环境的内容需要通过包管理器手动安装。
+>内容包将部署到所有环境类型（开发、暂存、生产）。 无法将部署限制到特定环境。 此限制旨在确保自动执行的测试运行选项。 特定于环境的内容需要通过手动安装 [包管理器。](/help/implementing/developing/tools/package-manager.md)
 
 此外，在应用可变内容包更改后，没有回滚这些更改的机制。 如果客户检测到问题，他们可以选择在下一个代码版本中解决该问题，或者作为最后手段，在部署之前将整个系统恢复到某个时间点。
 
@@ -173,7 +173,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="探索包管理器的用例，了解应将内容包作为“一次性”安装的用例，其中包括将特定内容从生产导入到暂存，以调试生产问题、将小内容包从内部部署环境传输到AEM云环境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="内容传输工具"
 
-在某些用例中，应将内容包安装为“一次性”。 例如，将特定内容从生产导入到暂存，以调试生产问题。 对于这些情况，包管理器可用于AEMas a Cloud Service环境。
+在某些用例中，应将内容包安装为“一次性”。 例如，将特定内容从生产导入到暂存，以调试生产问题。 对于这些情况， [包管理器](/help/implementing/developing/tools/package-manager.md) 可在AEMas a Cloud Service环境中使用。
 
 由于包管理器是一个运行时概念，因此无法将内容或代码安装到不可变存储库中，因此这些内容包应该只包含可变内容(主要是 `/content` 或 `/conf`)。 如果内容包包含混合内容（可变内容和不可变内容），则只会安装可变内容。
 

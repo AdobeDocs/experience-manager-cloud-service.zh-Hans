@@ -1,30 +1,30 @@
 ---
 title: 变量 - 创作片段内容
 description: 了解变量如何允许您为片段创作内容，然后根据目的创建该内容的变量，从而使AEM中的无头内容更加灵活。
-feature: 内容片段
+feature: Content Fragments
 role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3c7358aa8db925e8f2493896a9d57ae13788bf8d
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2283'
 ht-degree: 13%
 
 ---
 
 # 变量 - 创作片段内容{#variations-authoring-fragment-content}
 
-[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 变量是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本以用于特定渠道和/或方案，从而更加灵活地交付无头内容。
+[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本以用于特定渠道和/或方案，从而更加灵活地交付无头内容。
 
-在&#x200B;**Variations**&#x200B;选项卡中，您可以：
+从 **变体** 选项卡：
 
-* [输入片](#authoring-your-content) 段的内容，
-* [创建和管理](#managing-variations) 主内容的 **** 变量，
+* [输入内容](#authoring-your-content) 对于片段，
+* [创建和管理变体](#managing-variations) 的 **主控** 内容，
 
 根据所编辑的数据类型执行一系列其他操作；例如：
 
-* [将可视资产插入片段](#inserting-assets-into-your-fragment) （图像）
+* [将可视化资产插入片段](#inserting-assets-into-your-fragment) （图像）
 
-* 在[富文本](#rich-text)、[纯文本](#plain-text)和[Markdown](#markdown)之间进行选择以进行编辑
+* 在 [富文本](#rich-text), [纯文本](#plain-text) 和 [Markdown](#markdown) 编辑
 
 * [上传内容](#uploading-content)
 
@@ -40,24 +40,24 @@ ht-degree: 13%
 
 ## 创作内容 {#authoring-your-content}
 
-打开内容片段进行编辑时，默认情况下将打开&#x200B;**变量**&#x200B;选项卡。 在此，您可以为主控或您拥有的任何变体创作内容。 结构化片段包含在内容模型中定义的各种数据类型的字段。
+当您打开内容片段进行编辑时， **变体** 选项卡。 在此，您可以为主控或您拥有的任何变体创作内容。 结构化片段包含在内容模型中定义的各种数据类型的字段。
 
 例如：
 
-![全屏编](assets/cfm-variations-02.png)
-辑器您可以：
+![全屏编辑器](assets/cfm-variations-02.png)
+您可以：
 
-* 直接在&#x200B;**变量**&#x200B;选项卡中进行编辑
+* 直接在中进行编辑 **变体** 选项卡
 
    * 每种数据类型提供不同的编辑选项
 
-* 对于&#x200B;**多行文本**&#x200B;字段，还可以打开[全屏编辑器](#full-screen-editor)以：
+* 表示 **多行文本** 字段 [全屏编辑器](#full-screen-editor) 至：
 
-   * 选择[格式](#formats)
-   * 查看更多编辑选项（对于[富文本](#rich-text)格式）
-   * 访问[操作](#actions)的范围
+   * 选择 [格式](#formats)
+   * 请参阅更多编辑选项( [富文本](#rich-text) format)
+   * 访问 [操作](#actions)
 
-* 对于&#x200B;**片段引用**&#x200B;字段，根据模型定义，可以使用&#x200B;**[编辑内容片段](#fragment-references-edit-content-fragment)**&#x200B;选项。
+* 对于 **片段引用** 字段 **[编辑内容片段](#fragment-references-edit-content-fragment)** 选项可用，具体取决于模型定义。
 
 ### 全屏编辑器 {#full-screen-editor}
 
@@ -71,14 +71,14 @@ ht-degree: 13%
 
 全屏文本编辑器提供：
 
-* 访问各种[操作](#actions)
-* 根据[format](#formats)，其他格式选项（[富文本](#rich-text)）
+* 访问各种 [操作](#actions)
+* 根据 [格式](#formats)，其他格式选项([富文本](#rich-text))
 
 ### 操作 {#actions}
 
-当全屏编辑器（即多行文本）打开时，还可以执行以下操作（适用于所有[formats](#formats)）：
+以下操作也可用(适用于 [格式](#formats)):
 
-* 选择[format](#formats)（[富文本](#rich-text), [纯文本，](#plain-text) [Markdown](#markdown)）
+* 选择 [格式](#formats) ([富文本](#rich-text), [纯文本，](#plain-text) [Markdown](#markdown))
 
 * [上传内容](#uploading-content)
 
@@ -119,13 +119,13 @@ ht-degree: 13%
    * 查找/替换
    * 拼写检查程序
    * [注释](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [插入内容片段](#inserting-content-fragment-into-your-fragment);当使用允许片 **段引** 用配置多行文本字段 **时可用**。
+* [插入内容片段](#inserting-content-fragment-into-your-fragment);在 **多行文本** 字段配置为 **允许片段引用**.
 
-[actions](#actions)也可从全屏编辑器访问。
+的 [操作](#actions) 也可以从全屏编辑器访问。
 
 ### 纯文本 {#plain-text}
 
-纯文本允许快速输入内容，而无需设置格式或标记信息。 您还可以打开全屏编辑器以进一步[操作](#actions)。
+纯文本允许快速输入内容，而无需设置格式或标记信息。 您还可以打开全屏编辑器以进一步 [操作](#actions).
 
 >[!CAUTION]
 >
@@ -135,7 +135,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->有关完整信息，请参阅[Markdown](/help/assets/content-fragments/content-fragments-markdown.md)文档。
+>有关完整信息，请参阅 [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) 文档。
 
 这允许您使用标记设置文本格式。 您可以定义：
 
@@ -149,7 +149,7 @@ ht-degree: 13%
 * 代码块
 * 反斜线转义
 
-您还可以打开全屏编辑器以进一步[操作](#actions)。
+您还可以打开全屏编辑器以进一步 [操作](#actions).
 
 >[!CAUTION]
 >
@@ -166,25 +166,25 @@ ht-degree: 13%
 
 #### 编辑内容片段 {#fragment-references-edit-content-fragment}
 
-选项&#x200B;**编辑内容片段**&#x200B;将在新编辑器选项卡（在同一浏览器选项卡中）中打开该片段。
+选项 **编辑内容片段** 将在新编辑器选项卡中（在同一浏览器选项卡中）打开该片段。
 
-再次选择原始选项卡（例如，**Little Pony Inc.**），将关闭此辅助选项卡（在本例中为&#x200B;**Adam Smith**）。
+再次选择原始选项卡(例如， **小马公司**)，将关闭此辅助选项卡(在本例中， **亚当·斯密**)。
 
 ![片段引用](assets/cfm-variations-editreference.png)
 
 #### 新内容片段 {#fragment-references-new-content-fragment}
 
-选项&#x200B;**新内容片段**&#x200B;将允许您创建一个全新片段。 要实现此目的，将在编辑器中打开创建内容片段向导的变体。
+选项 **新内容片段** 将允许您创建一个全新的片段。 要实现此目的，将在编辑器中打开创建内容片段向导的变体。
 
 然后，您将能够通过以下方式创建新片段：
 
 1. 导航到所需的文件夹，然后选择该文件夹。
-1. 选择&#x200B;**Next**。
-1. 指定属性；例如&#x200B;**标题**。
-1. 选择&#x200B;**创建**。
+1. 选择 **下一个**.
+1. 指定属性；例如 **标题**.
+1. 选择 **创建**.
 1. 最后：
-   1. **** Donewill返回（到原始片段）并引用新片段。
-   1. **** Open将引用新片段，以及在新的浏览器选项卡中打开新片段进行编辑。
+   1. **完成** 将返回（到原始片段）并引用新片段。
+   1. **打开** 将引用新片段，以及在新浏览器选项卡中打开新片段进行编辑。
 
 ### 查看关键统计信息 {#viewing-key-statistics}
 
@@ -192,7 +192,7 @@ ht-degree: 13%
 
 例如：
 
-![统计](assets/cfm-variations-04.png)
+![statistics](assets/cfm-variations-04.png)
 
 ### 上传内容 {#uploading-content}
 
@@ -204,49 +204,48 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->在更为技术的层面上，系统根据特定算法保留其评分为&#x200B;*信息密度和唯一性的最佳比率*&#x200B;的句子。
+>在更技术性的层面上，系统保留它评分的句子作为提供 *信息密度和唯一性的最佳比率* 根据具体算法。
 
 >[!CAUTION]
 >
 >内容片段必须具有有效的语言文件夹（ISO代码）作为上级；用于确定要使用的语言模型。
 >
->例如，`en/`如下路径所示：
+>例如， `en/` 与以下路径一样：
 >
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
 现成提供英语。
-其他语言作为包共享中的语言模型包提供：
+其他语言作为Software Distribution中的语言模型包提供：
 * [法语(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [德语(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [意大利语(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [西班牙语(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
-
-1. 选择&#x200B;**主控**&#x200B;或所需的变量。
+1. 选择 **主控** 或所需的变量。
 1. 打开全屏编辑器。
 
-1. 从工具栏中选择&#x200B;**摘要文本**。
+1. 选择 **摘要文本** 中。
 
    ![总结](assets/cfm-variations-05.png)
 
-1. 指定目标字数，然后选择&#x200B;**开始**:
+1. 指定目标词语数并选择 **开始**:
 1. 原始文本与建议的摘要并排显示：
 
    * 任何要删除的句子都以红色突出显示，并带有点进。
    * 单击任何高亮显示的句子以将其保留在摘要内容中。
    * 单击任何未突出显示的句子以将其删除。
 
-1. 选择&#x200B;**Amsuraize**&#x200B;以确认更改。
+1. 选择 **概述** 以确认更改。
 
 1. 原始文本与建议的摘要并排显示：
 
    * 任何要删除的句子都以红色突出显示，并带有点进。
    * 单击任何高亮显示的句子以将其保留在摘要内容中。
    * 单击任何未突出显示的句子以将其删除。
-   * 显示了总结统计信息：**实际**&#x200B;和&#x200B;**目标**-
-   * 您可以&#x200B;**预览**&#x200B;更改。
+   * 显示了总结统计信息： **实际** 和 **Target**-
+   * 您可以 **预览** 更改。
 
    ![总结比较](assets/cfm-variations-06.png)
 
@@ -254,11 +253,11 @@ ht-degree: 13%
 
 要对片段添加注释：
 
-1. 选择&#x200B;**主控**&#x200B;或所需的变量。
+1. 选择 **主控** 或所需的变量。
 
 1. 打开全屏编辑器。
 
-1. 顶部工具栏中提供了&#x200B;**注释**&#x200B;图标。 您可以根据需要选择一些文本。
+1. 的 **注释** 图标。 您可以根据需要选择一些文本。
 
    ![注释](assets/cfm-variations-07.png)
 
@@ -266,7 +265,7 @@ ht-degree: 13%
 
    ![注释](assets/cfm-variations-07a.png)
 
-1. 在对话框中选择&#x200B;**Apply**。
+1. 选择 **应用** 对话框。
 
    ![注释](assets/cfm-variations-annotations-apply-icon.png)
 
@@ -293,24 +292,24 @@ ht-degree: 13%
 
 * 删除应用了注释的整个文本时，也会删除注释。
 
-* 通过在片段编辑器中选择&#x200B;**注释**&#x200B;选项卡，可以列出和删除这些注释。
+* 可以通过选择 **批注** 选项卡。
 
    ![批注](assets/cfm-variations-08.png)
 
-* 可以在[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中查看和删除选定片段。
+* 可在 [时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 的值。
 
 ### 将资产插入片段 {#inserting-assets-into-your-fragment}
 
-要简化内容片段创作过程，您可以直接将[Assets](/help/assets/manage-digital-assets.md)（图像）添加到片段中。
+要简化创作内容片段的过程，您可以添加 [资产](/help/assets/manage-digital-assets.md) （图像）直接到片段。
 
-将它们添加到片段的段落序列中，且不加任何格式；在页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)上使用/引用[片段时，可以完成格式设置。
+将它们添加到片段的段落序列中，且不加任何格式；格式设置 [片段在页面上使用/引用](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中完成资产的格式设置（如大小）。 资产在片段编辑器中的表示形式仅用于创作内容流。
+但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的表示形式仅用于创作内容流。
 
 >[!NOTE]
-有多种方法可将[images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面。
+添加的方法有多种 [图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 到片段和/或页面。
 
 1. 将光标定位到要添加图像的位置。
 1. 使用插入 **资产图标** ，打开搜索对话框。
@@ -339,17 +338,17 @@ ht-degree: 13%
 它们将作为引用添加到片段中的当前位置。
 
 >[!NOTE]
-当使用&#x200B;**允许片段引用**&#x200B;配置了&#x200B;**多行文本**&#x200B;时，此选项可用。
+此选项在 **多行文本** 已配置 **允许片段引用**.
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中完成资产的格式设置（如大小）。 资产在片段编辑器中的表示形式仅用于创作内容流。
+但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的表示形式仅用于创作内容流。
 
 >[!NOTE]
-有多种方法可将[images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面。
+添加的方法有多种 [图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 到片段和/或页面。
 
 1. 将光标放在要添加片段的位置。
-1. 使用&#x200B;**插入内容片段**&#x200B;图标打开搜索对话框。
+1. 使用 **插入内容片段** 图标以打开搜索对话框。
 
    ![“插入内容片段”图标](assets/cfm-variations-13.png)
 
@@ -360,7 +359,7 @@ ht-degree: 13%
 
    找到后，单击缩略图以选择所需的片段。
 
-1. 使用&#x200B;**Select**&#x200B;将对所选内容片段的引用添加到当前内容片段（在当前位置）。
+1. 使用 **选择** 将对所选内容片段的引用添加到当前内容片段（在当前位置）。
 
    >[!CAUTION]
    如果在添加对其他片段的引用后，您将格式更改为：
@@ -372,24 +371,24 @@ ht-degree: 13%
 
 ### 创建变体 {#creating-a-variation}
 
-变体允许您获取&#x200B;**主控**&#x200B;内容，并根据不同用途（如果需要）对其进行更改。
+各种变量允许您 **主控** 内容，并根据不同目的（如有需要）进行更改。
 
 要创建新变体，请执行以下操作：
 
 1. 打开片段并确保侧面板可见。
-1. 从侧面板的图标栏中选择&#x200B;**变体**。
-1. 选择&#x200B;**创建变量**。
+1. 选择 **变体** 图标栏。
+1. 选择 **创建变量**.
 1. 将打开一个对话框，为新变 **体指** 定 **标题和说** 明。
 1. 选择 **添加**;片段 **主** (Master)将被复制到新变体中，该变体现在打开进行 [编辑](#editing-a-variation)。
 
    >[!NOTE]
-   创建新变体时，复制的变量始终为&#x200B;**主控**，而不是当前打开的变体。
+   创建新变体时，始终 **主控** 而不是当前打开的变量。
 
 ### 编辑变量 {#editing-a-variation}
 
 在执行以下任一操作后，您可以对变体内容进行更改：
 
-* [创建变体](#creating-a-variation)。
+* [创建变体](#creating-a-variation).
 * 打开现有片段，然后从侧面板中选择所需的变量。
 
 ![编辑变量](assets/cfm-variations-10.png)
@@ -398,33 +397,33 @@ ht-degree: 13%
 
 要重命名现有变量，请执行以下操作：
 
-1. 打开片段，然后从侧面板中选择&#x200B;**变量**。
+1. 打开片段并选择 **变体** 的上界。
 1. 选择所需的变量。
-1. 从&#x200B;**操作**&#x200B;下拉列表中选择&#x200B;**重命名**。
+1. 选择 **重命名** 从 **操作** 下拉。
 
 1. 在生成的对 **话框中** ，输入新的 **标题和** /或说明。
 
-1. 确认&#x200B;**Rename**&#x200B;操作。
+1. 确认 **重命名** 操作。
 
 >[!NOTE]
-这仅影响变量&#x200B;**Title**。
+这仅影响变量 **标题**.
 
 ### 删除变量 {#deleting-a-variation}
 
 要删除现有变量，请执行以下操作：
 
-1. 打开片段，然后从侧面板中选择&#x200B;**变量**。
+1. 打开片段并选择 **变体** 的上界。
 1. 选择所需的变量。
-1. 从&#x200B;**操作**&#x200B;下拉菜单中选择&#x200B;**删除**。
+1. 选择 **删除** 从 **操作** 下拉。
 
-1. 在对话框中确认&#x200B;**Delete**&#x200B;操作。
+1. 确认 **删除** 操作。
 
 >[!NOTE]
-无法删除&#x200B;**主控**。
+无法删除 **主控**.
 
 ### 与主控同步 {#synchronizing-with-master}
 
-**** 母版是内容片段的一个组成部分，从定义上讲，它包含内容的主控副本，而变体则包含该内容的各个更新和定制版本。更新主控时，这些更改可能也与变体相关，因此需要传播到这些变体中。
+**主控** 是内容片段的一个组成部分，从定义上讲，它包含内容的主控副本，而变体则包含该内容的单独更新和定制版本。 更新主控时，这些更改可能也与变体相关，因此需要传播到这些变体中。
 
 在编辑变体时，您有权使用将变体的当前元素与主控同步的操作。 这样，您就可以自动将对主控所做的更改复制到所需的变量。
 
@@ -434,15 +433,15 @@ ht-degree: 13%
 同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
 不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 
-1. 在片段编辑器中打开内容片段。 确保已编辑&#x200B;**主控**。
+1. 在片段编辑器中打开内容片段。 确保 **主控** 已编辑。
 
 1. 选择一个特定的变体，然后从以下任一位置选择相应的同步操作：
 
-   * **操作**&#x200B;下拉选择器 — **将当前元素与主控**&#x200B;同步
+   * the **操作** 下拉选择器 —  **将当前元素与主控**
 
       ![与主控同步](assets/cfm-variations-11a.png)
 
-   * 全屏编辑器的工具栏 — **与主控**&#x200B;同步
+   * 全屏编辑器的工具栏 —  **与主控同步**
 
       ![与主控同步](assets/cfm-variations-11b.png)
 
@@ -454,4 +453,4 @@ ht-degree: 13%
 
    ![与主控同步](assets/cfm-variations-11c.png)
 
-1. 选择&#x200B;**Synchronize**，将更新并显示变量。
+1. 选择 **同步**，则将更新并显示变量。

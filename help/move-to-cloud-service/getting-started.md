@@ -2,9 +2,9 @@
 title: Experience Manager合作伙伴as a Cloud Service的迁移指南
 description: Experience Manager合作伙伴as a Cloud Service的迁移指南
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
+source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2092'
 ht-degree: 10%
 
 ---
@@ -151,8 +151,8 @@ Cloud Manager允许组织在云中自行管理Experience Manager。 它包括持
 
 #### 内容迁移
 
-1. [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) :用于将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例。
-2. [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) :用于导入和导出存储库的可变内容。
+1. [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration)  — 用于将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例。
+2. 包管理器 — 用于导入和导出存储库的可变内容。
 
 
 #### 重构/优化
@@ -195,7 +195,7 @@ Cloud Manager允许组织在云中自行管理Experience Manager。 它包括持
 
 | 评估 | 重构 | Experience Manager现代化 | 内容迁移 |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[统一体验插件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[静态模板到可编辑模板](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[设计配置到策略](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[基础组件到核心组件](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[经典 UI 到触控式 UI](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)</li></ul> |
+| <ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[统一体验插件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[静态模板到可编辑模板](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[设计配置到策略](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[基础组件到核心组件](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[经典 UI 到触控式 UI](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[包管理器](/help/implementing/developing/tools/package-manager.md)</li></ul> |
 
 >[!NOTE]
 > 如需其他帮助，您可能需要：

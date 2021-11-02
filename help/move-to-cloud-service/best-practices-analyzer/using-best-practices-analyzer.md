@@ -2,10 +2,10 @@
 title: 使用最佳实践分析器
 description: 使用最佳实践分析器
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2522'
-ht-degree: 42%
+ht-degree: 41%
 
 ---
 
@@ -15,25 +15,25 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
 请阅读以下章节，了解运行最佳实践分析器(BPA)的重要注意事项：
 
-* BPA报告是使用Adobe Experience Manager(AEM)[模式检测器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)的输出生成的。 BPA使用的模式检测器版本包含在BPA安装包中。
+* BPA报告是使用Adobe Experience Manager(AEM)的输出生成的 [图案检测器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA使用的模式检测器版本包含在BPA安装包中。
 
-* BPA只能由&#x200B;**admin**&#x200B;用户或&#x200B;**administrators**&#x200B;组中的用户运行。
+* BPA只能由 **管理员** 用户或 **管理员** 群组。
 
 * 版本6.1及更高版本的AEM实例支持BPA。
 
    >[!NOTE]
-有关在AEM  [6.1上安装BPA的特殊要求，请参阅在AEM 6.1上安装](#installing-on-aem61) 。
+请参阅 [在AEM 6.1上安装](#installing-on-aem61) 在AEM 6.1上安装BPA的特殊要求。
 
-* BPA可以在任何环境中运行，但最好在&#x200B;*Stage*&#x200B;环境中运行。
+* BPA可在任何环境中运行，但最好在 *阶段* 环境。
 
    >[!NOTE]
-为避免对业务关键型实例产生影响，建议您在自定义、配 ** 置、内容和用户应用程序方面尽可能接近 ** 生产环境的创作环境中运行BPA。或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
+为避免对业务关键型实例产生影响，建议您在 *作者* 尽可能靠近的环境 *生产* 环境中的自定义、配置、内容和用户应用程序。 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
 
 * 生成BPA报告内容可能需要相当长的时间，从几分钟到几小时不等。 具体所需的时间长短很大程度上取决于 AEM 存储库内容的大小和性质、AEM 版本以及其他因素。
 
@@ -46,10 +46,10 @@ id="aemcloud_bpa_download"
 title="下载Best Practices Analyzer"
 abstract="可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。"
 
-可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。
+可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过 [包管理器](/help/implementing/developing/tools/package-manager.md) 在源Adobe Experience Manager(AEM)实例上。
 
 >[!NOTE]
-从软件分发门户下载最佳实践 [分析](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 器。
+从下载最佳实践分析器 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
 
 ## 查看最佳实践分析器报告 {#viewing-report}
 
@@ -57,11 +57,11 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
 
 请阅读本节内容，了解如何查看“最佳实践分析器”报告：
 
-1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **最佳实践分析器**。
+1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **Best Practices Analyzer**.
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. 单击&#x200B;**生成报告**&#x200B;以执行最佳实践分析器。
+1. 单击 **生成报表** 以执行最佳实践分析器。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -78,12 +78,12 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. 您可以通过单击&#x200B;**导出到CSV**，选择下载逗号分隔值(CSV)格式的报表，如下图所示。
+1. 您可以通过单击 **导出到CSV**，如下图所示。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-您可以通过单击“刷新报告” **，强制BPA清除其缓存并重新生**&#x200B;成报告。
+您可以通过单击 **刷新报表**.
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -96,21 +96,21 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
 
 #### 在“最佳实践分析器”报告中使用过滤器 {#bpa-filters}
 
-要筛选与[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)相关的发现结果，请执行以下步骤：
+筛选与 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请执行以下步骤：
 
-1. 单击页面左侧的左边栏图标。 这将显示&#x200B;**ACS Commons Filter**。 单击&#x200B;**ACS Commons Filter**&#x200B;以显示交互式复选框，如下图所示。
+1. 单击页面左侧的左边栏图标。 这将显示 **ACS Commons过滤器**. 单击 **ACS Commons过滤器** 以显示交互式复选框，如下图所示。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 仅当BPA检测到ACS Commons的使用情况时，才会显示左边栏图标。
 
-1. 取消选中该框可筛选与ACS Commons相关的所有发现结果。 您应会在报表中看到&#x200B;**筛选的发现结果计数**，如下图所示。 以逗号分隔值(CSV)格式导出报表时，该过滤器也会应用于报表。
+1. 取消选中该框可筛选与ACS Commons相关的所有发现结果。 您应会看到 **筛选的发现结果计数** 如下图所示。 以逗号分隔值(CSV)格式导出报表时，该过滤器也会应用于报表。
 
    ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-不应忽视ACS Commons的调查结果。请参阅[文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以确定与AEMas a Cloud Service的兼容性。
+不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
 
 
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
@@ -145,7 +145,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。
 
 >[!NOTE]
-要了解有关每个发现结果类别的更多信息，请参阅 [模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
+要详细了解每个“查找”类别，请参阅 [模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 请参阅下表，了解重要性级别：
 
@@ -159,7 +159,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 
 ## 解释最佳实践分析器CSV报告 {#cra-csv-report}
 
-当您从AEM实例单击&#x200B;**CSV**&#x200B;选项时，“最佳实践分析器”报告的CSV格式将从内容缓存生成，并返回到您的浏览器。 根据您的浏览器设置，此报告将自动下载为默认名称为 `results.csv` 的文件。
+当您单击 **CSV** 选项，则“最佳实践分析器”报告的CSV格式将从内容缓存生成，并返回到您的浏览器。 根据您的浏览器设置，此报告将自动下载为默认名称为 `results.csv` 的文件。
 
 如果缓存已过期，则将重新生成报告，然后再生成并下载 CSV 文件。
 
@@ -183,7 +183,7 @@ CSV 格式的报告包含以下列：
 
 BPA提供了HTTP接口，可用作AEM中用户界面的替代方法。 该接口支持 HEAD 和 GET 命令。它可用于生成BPA报告，并以三种格式之一返回：JSON、CSV和制表符分隔值(TSV)。
 
-以下URL可用于HTTP访问，其中`<host>`是安装BPA的服务器的主机名和端口（如果需要）：
+以下URL可用于HTTP访问，其中 `<host>` 是安装BPA的服务器的主机名和端口（如果需要）：
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json`（对于 JSON 格式）
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv`（对于 CSV 格式）
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`（对于 TSV 格式）
@@ -203,17 +203,17 @@ HTTP 接口可用于多种方法。
 
 此接口使用以下 HTTP 标头：
 
-* `Cache-Control: max-age=<seconds>`:以秒为单位指定缓存刷新生命周期。（请参阅 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。）
-* `Prefer: respond-async`:指定服务器应异步响应。（请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。）
-* `Prefer: return=minimal`:指定服务器应返回最小响应。（请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。）
+* `Cache-Control: max-age=<seconds>`:以秒为单位指定缓存刷新生命周期。 （请参阅 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。）
+* `Prefer: respond-async`:指定服务器应异步响应。 （请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。）
+* `Prefer: return=minimal`:指定服务器应返回最小响应。 （请参阅 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。）
 
 当不能轻松使用 HTTP 标头时，可以方便地使用以下 HTTP 查询参数：
 
-* `max-age` （数字，可选）：以秒为单位指定缓存刷新生命周期。此数字必须为 0 或更大。默认的刷新生命周期为86400秒。 如果没有此参数或相应的标头，则新的缓存将用于在24小时内为请求提供服务，此时必须重新生成缓存。 使用`max-age=0`将强制清除缓存并启动报告的重新生成，同时使用新生成的缓存之前的非零刷新生命周期。
-* `respond-async` （布尔，可选）：指定应异步提供响应。当缓存失效时，使用`respond-async=true`将导致服务器返回`202 Accepted`响应，而无需等待缓存刷新和报告生成。 如果缓存是新的，则此参数不起作用。默认值为`false`。如果没有此参数或相应的标头，服务器将同步响应，这可能需要大量时间，并且需要调整HTTP客户端的最大响应时间。
-* `may-refresh-cache` （布尔，可选）：指定当前缓存为空、失效或即将失效时，服务器可以响应请求刷新缓存。如果`may-refresh-cache=true`，或者未指定，则服务器可以启动后台任务，该任务将调用模式检测器并刷新缓存。 如果`may-refresh-cache=false`，则服务器将不会启动任何刷新任务，否则，如果缓存为空或失效，则会启动任何刷新任务，在这种情况下，报表将为空。 任何已在处理中的刷新任务将不会受到此参数的影响。
-* `return-minimal` （布尔，可选）：指定来自服务器的响应应仅包含包含JSON格式进度指示和缓存状态的状态。如果`return-minimal=true`，则响应主体将限制为状态对象。 如果`return-minimal=false`，或者未指定，则将提供完整响应。
-* `log-findings` （布尔，可选）：指定服务器应在首次构建或刷新缓存时记录缓存的内容。缓存中的每个发现结果都将记录为JSON字符串。 仅当`log-findings=true`并且请求生成新缓存时，才会发生此日志记录。
+* `max-age` （数字，可选）：以秒为单位指定缓存刷新生命周期。 此数字必须为 0 或更大。默认的刷新生命周期为86400秒。 如果没有此参数或相应的标头，则新的缓存将用于在24小时内为请求提供服务，此时必须重新生成缓存。 使用 `max-age=0` 将使用新生成的缓存之前的非零刷新生命周期，强制清除缓存并开始重新生成报告。
+* `respond-async` （布尔，可选）：指定应异步提供响应。 使用 `respond-async=true` 当缓存失效时，将导致服务器返回 `202 Accepted` 无需等待缓存刷新和报告生成。 如果缓存是新的，则此参数不起作用。默认值为 `false`.如果没有此参数或相应的标头，服务器将同步响应，这可能需要大量时间，并且需要调整HTTP客户端的最大响应时间。
+* `may-refresh-cache` （布尔，可选）：指定当前缓存为空、失效或即将失效时，服务器可以响应请求刷新缓存。 如果 `may-refresh-cache=true`或者，如果未指定，则服务器可以启动后台任务，该任务将调用模式检测器并刷新缓存。 如果 `may-refresh-cache=false` 那么，服务器将不会启动任何刷新任务，否则，如果缓存为空或失效，则会执行该任务，在这种情况下，报表将为空。 任何已在处理中的刷新任务将不会受到此参数的影响。
+* `return-minimal` （布尔，可选）：指定来自服务器的响应应仅包含包含JSON格式进度指示和缓存状态的状态。 如果 `return-minimal=true`，则响应主体将限制为状态对象。 如果 `return-minimal=false`，或者如果未指定，则将提供完整响应。
+* `log-findings` （布尔，可选）：指定服务器应在首次构建或刷新缓存时记录缓存的内容。 缓存中的每个发现结果都将记录为JSON字符串。 仅当 `log-findings=true` 并且该请求会生成一个新缓存。
 
 当同时存在 HTTP 标头和相应的查询参数时，将优先采用查询参数。
 
@@ -227,8 +227,8 @@ HTTP 接口可用于多种方法。
 可以使用以下响应值：
 
 * `200 OK`:指示响应包含来自模式检测器的发现结果，这些发现结果在缓存的刷新生命周期内生成。
-* `202 Accepted`:用于指示缓存已失效。当`respond-async=true`和`may-refresh-cache=true`时，此响应表示正在执行刷新任务。 当`may-refresh-cache=false`时，此响应仅指示缓存已失效。
-* `400 Bad Request`：指示请求出错。以“问题详细信息”格式显示的消息（请参阅[RFC 7807](https://tools.ietf.org/html/rfc7807)）提供了更多详细信息。
+* `202 Accepted`:用于指示缓存已失效。 When `respond-async=true` 和 `may-refresh-cache=true` 此响应表示正在执行刷新任务。 When `may-refresh-cache=false` 此响应仅表示缓存已失效。
+* `400 Bad Request`：指示请求出错。以“问题详细信息”格式显示的消息(请参阅 [RFC 7807](https://tools.ietf.org/html/rfc7807))提供更多详细信息。
 * `401 Unauthorized`:表示请求未获得授权。
 * `500 Internal Server Error`：指示发生内部服务器错误。以“问题详细信息”格式显示的消息提供了更多详细信息。
 * `503 Service Unavailable`：指示服务器正忙于其他响应，无法及时为此请求提供服务。仅当发出同步请求时，才可能出现此响应。以“问题详细信息”格式显示的消息提供了更多详细信息。
@@ -246,7 +246,7 @@ HTTP 接口可用于多种方法。
 
 ### 在 AEM 6.1 上安装 {#installing-on-aem61}
 
-BPA利用名为`repository-reader-service`的系统服务用户帐户来执行模式检测器。 此帐户在 AEM 6.2 和更高版本上可用。在AEM 6.1上，必须在&#x200B;*安装BPA之前通过执行以下步骤创建此帐户：*
+BPA利用名为的系统服务用户帐户 `repository-reader-service` 以执行模式检测器。 此帐户在 AEM 6.2 和更高版本上可用。在AEM 6.1上，必须创建此帐户 *之前* 安装BPA，方法如下：
 
 1. 按照[创建新服务用户](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的说明创建用户。将用户 ID 设置为 `repository-reader-service`，并将“中间路径”留空，然后单击绿色复选标记。
 
