@@ -1,9 +1,9 @@
 ---
 title: AEMas a Cloud Service版本2021.10.0中迁移工具的发行说明
-description: AEMas a Cloud Service版本2021.10.0中的Cloud Manager发行说明
+description: AEMas a Cloud Service版本2021.11.0中迁移工具的发行说明
 feature: Release Information
 exl-id: null
-source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
+source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 6%
