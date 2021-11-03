@@ -1,10 +1,10 @@
 ---
 title: CI-CD管线
-description: CI-CD管线
+description: 可查看本页以了解有关Cloud Manager CI-CD管道的信息
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,14 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 生产管道是用于构建管道的目的，管道包括一系列经过编排的步骤，以将源代码一直引入生产环境。 这些步骤包括首先构建、打包、测试、验证并部署到所有Stage环境中。 不用说，只有在创建生产和暂存环境集后，才能添加生产管道。
 
-有关更多详细信息，请参阅配置生产管道。
+请参阅 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 以了解更多详细信息。
 
 
 ## 非生产管道 {#non-prod-pipeline}
 
 非生产管道旨在运行代码质量扫描或将源代码部署到开发环境。
 
-有关更多详细信息，请参阅非生产和代码仅质量管道。
+请参阅 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以了解更多详细信息。
 
 ## 了解Cloud Manager中的CI-CD管道 {#understand-pipelines}
 
@@ -47,10 +47,14 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 | 管道类型 | 部署或代码质量 | 源代码 | 使用时间 | 何时或为何应使用？ |
 |--- |--- |--- |---|---|---|
-| 生产或非生产 | 部署 | 前端 | 部署前端代码。 前端代码是用作静态文件的任何代码。 它与AEM提供的UI代码不同。 它包括Sites主题、客户定义的SPA、Firefly SPA和任何其他解决方案。 必须为AEM版本。 | 部署时间快。<br> 可以为每个环境同时配置和运行多个前端管道。 |
-|  | 部署 | 完整堆栈 | 以同时部署后端、前端和HTTPD/调度程序配置。 注意：有些限制适用。 | 当前端或Web层配置管道尚未采用时。 |
-|  | 部署 | 网层配置 | 在几分钟内完全部署HTTPD/调度程序配置。  这种简化的管道为希望仅部署调度程序配置更改的用户提供了一种加速方法。 注意：必须为AEM版本 [版本] | 部署时间快。 |
+| 生产或非生产 | 部署 | 前端 | 部署前端代码。 前端代码是用作静态文件的任何代码。 它与AEM提供的UI代码不同。 它包括Sites主题、客户定义的SPA、Firefly SPA和任何其他解决方案。 必须为AEM版本。 | 快速部署时间<br> 可以为每个环境同时配置和运行多个前端管道 |
+|  | 部署 | 完整堆栈 | 以同时部署后端、前端和HTTPD/调度程序配置。 有些限制适用。 | 当前端管道尚未采用时。 |
+| 非生产 | 代码质量 | 前端 | 在前端代码上运行代码质量扫描 | 快速部署时间<br> 可以配置和运行多个管道 |
+|  | 代码质量 | 完整堆栈 | 对完整堆栈代码运行代码质量扫描 | 快速部署时间<br> 可以配置和运行多个管道 |
 
+下图说明了Cloud Manager管道配置采用传统的单一前端存储库或独立的前端存储库设置：
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
 
 ## Cloud Manager前端管道 {#front-end}
 
@@ -59,10 +63,7 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 >[!NOTE]
 >以部署管理员角色登录的用户可以同时创建和运行多个前端管道。 但是，每个程序最多有300条管道（跨所有类型）。
 
-前端管道有两种类型：
-
-* 前端代码质量
-* 前端部署
+这些类型可以是前端代码质量或前端部署管道类型。
 
 ### 配置前端管道之前 {#before-start}
 
@@ -89,10 +90,7 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 1. 如果环境的相应Web层配置管道存在，则环境的完整堆栈管道将忽略调度程序配置。
 
-有两种类型的完整堆栈管道：
-
-* 全栈代码质量管道
-* 完整堆栈部署管道
+这些类型可以是“完整堆栈 — 代码质量”或“完整堆栈 — 部署”管道。
 
 ### 配置完整堆栈管道 {#configure-full-stack}
 
