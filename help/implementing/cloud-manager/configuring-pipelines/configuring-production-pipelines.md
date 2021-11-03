@@ -2,9 +2,9 @@
 title: 配置生产管道
 description: 配置生产管道
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,12 @@ ht-degree: 0%
    * **立即继续**  — 如果选中，则每当发生重要故障时，管道将自动继续。 这实质上是在模拟用户手动批准每次失败。
 
 
-1. 的 **添加生产管道** 对话框包括标记为 **源代码**. 您可以选择 **完整堆栈代码**, **前端代码** 或 **网层配置**. 您可以选择 **存储库** 和 **Git分支**. 选择生产部署选项，如下所述。 单击 **继续**.
+1. 的 **添加生产管道** 对话框包括标记为 **源代码**. 您可以选择 **完整堆栈代码** 和 **前端代码**. 您可以选择 **存储库** 和 **Git分支**. 选择生产部署选项，如下所述。 单击 **继续**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   >[!NOTE]
+   >在开始配置前端管道之前，请通过易于使用的AEM快速站点创建工具，查看端到端工作流的AEM快速站点创建历程。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
 
    生产部署选项：
 
@@ -99,7 +102,5 @@ ht-degree: 0%
    * **添加**  — 允许添加新管道。
    * **访问存储库信息**  — 允许用户获取访问Cloud Manager Git存储库所需的信息。
    * **了解更多**  — 导航到了解CI/CD管道文档资源。
-
-
 
 
