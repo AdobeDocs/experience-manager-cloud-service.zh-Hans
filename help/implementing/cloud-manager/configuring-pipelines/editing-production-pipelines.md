@@ -2,9 +2,9 @@
 title: 编辑生产管道
 description: 编辑生产管道
 index: false
-source-git-commit: b9d28088ad18a389108ebfb81aa750c63e637922
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 编辑生产管道 {#edit-prod-pipeline}
 
 可以通过 **计划概述** 页面。
+
+>[!IMPORTANT]
+>无法编辑正在运行的管道。
 
 请按照以下步骤编辑已配置的管道：
 

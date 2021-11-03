@@ -2,9 +2,9 @@
 title: 编辑非生产管道
 description: 编辑非生产管道
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 编辑非生产管道 {#edit-non-prod-pipeline}
 
 可以通过 **管道卡** 从 **计划概述** 页面。
+
+>[!IMPORTANT]
+>无法编辑正在运行的管道。
 
 请按照以下步骤编辑配置的非生产管道：
 
