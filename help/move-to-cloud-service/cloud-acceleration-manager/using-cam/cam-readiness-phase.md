@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
+source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -124,7 +124,7 @@ ht-degree: 5%
 
    >
    >您可以通过下拉菜单添加或更改图形视图，如下图所示：
-   >![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### 查看最佳实践分析报表 {#analysis-report}

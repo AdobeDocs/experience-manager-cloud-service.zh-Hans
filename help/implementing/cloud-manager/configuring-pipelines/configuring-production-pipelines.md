@@ -2,9 +2,9 @@
 title: 配置生产管道
 description: 配置生产管道
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
    * **立即继续**  — 如果选中，则每当发生重要故障时，管道将自动继续。 这实质上是在模拟用户手动批准每次失败。
 
 
-1. 的 **添加生产管道** 对话框包括标记为 **源代码**. **完整堆栈代码** 中。 您可以选择 **存储库** 和 **Git分支**. 选择生产部署选项，如下所述。 单击 **继续**.
+1. 的 **添加生产管道** 对话框包括标记为 **源代码**. 您可以选择 **完整堆栈代码**, **前端代码** 或 **网层配置**. 您可以选择 **存储库** 和 **Git分支**. 选择生产部署选项，如下所述。 单击 **继续**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 

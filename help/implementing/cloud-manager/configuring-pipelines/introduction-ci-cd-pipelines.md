@@ -2,9 +2,9 @@
 title: CI-CD管线
 description: CI-CD管线
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -43,14 +43,13 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 ## 了解Cloud Manager中的CI-CD管道 {#understand-pipelines}
 
-下表对Cloud Manager中的管道及其用法进行了分类。
+下表汇总了Cloud Manager中的所有管道及其用法。
 
 | 管道类型 | 部署或代码质量 | 源代码 | 使用时间 | 何时或为何应使用？ |
 |--- |--- |--- |---|---|---|
 | 生产或非生产 | 部署 | 前端 | 部署前端代码。 前端代码是用作静态文件的任何代码。 它与AEM提供的UI代码不同。 它包括Sites主题、客户定义的SPA、Firefly SPA和任何其他解决方案。 必须为AEM版本。 | 部署时间快。<br> 可以为每个环境同时配置和运行多个前端管道。 |
 |  | 部署 | 完整堆栈 | 以同时部署后端、前端和HTTPD/调度程序配置。 注意：有些限制适用。 | 当前端或Web层配置管道尚未采用时。 |
 |  | 部署 | 网层配置 | 在几分钟内完全部署HTTPD/调度程序配置。  这种简化的管道为希望仅部署调度程序配置更改的用户提供了一种加速方法。 注意：必须为AEM版本 [版本] | 部署时间快。 |
-
 
 
 ## Cloud Manager前端管道 {#front-end}
@@ -65,10 +64,20 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 * 前端代码质量
 * 前端部署
 
+### 配置前端管道之前 {#before-start}
+
+在开始配置前端管道之前，请通过易于使用的AEM快速站点创建工具，查看端到端工作流的AEM快速站点创建历程。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
+
+### 配置前端管道 {#configure-front-end}
+
+要了解如何配置前端管道，请参阅：
+
+* 添加生产管道
+* 添加非生产管道
+
 ## 完整堆栈管道 {#full-stack-pipeline}
 
 完整堆栈管道为用户提供了同时部署后端、前端和HTTPD/调度程序配置的选项。  它将代码和内容部署到AEM运行时，包括打包为AEM客户端库的前端代码(JavaScript/CSS)。 如果未配置网层管道，则可以部署网层配置。 这表示“uber”管道，同时为用户提供了通过前端管道和Web层配置管道分别专门部署其前端代码或调度程序配置的选项。
-
 
 将应用以下限制：
 
@@ -85,3 +94,9 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 * 全栈代码质量管道
 * 完整堆栈部署管道
 
+### 配置完整堆栈管道 {#configure-full-stack}
+
+要了解如何配置完整堆栈管道，请参阅：
+
+* 添加生产管道
+* 添加非生产管道
