@@ -1,9 +1,9 @@
 ---
 title: 为AEMas a Cloud Service配置高级网络
 description: 了解如何为AEMas a Cloud Service配置高级网络功能（如VPN）或灵活或专用的出口IP地址
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 1%
 
 ---
@@ -15,10 +15,6 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
->[!INFO]
->
->2021.9.0版中提供了高级联网功能，该功能将于10月中旬为客户启用。
-
 AEM as a Cloud Service提供了多种类型的高级网络功能，这些功能可由使用Cloud Manager API的客户进行配置。 这些 Cookie 包括：
 
 * [灵活的端口出口](#flexible-port-egress)  — 配置AEMas a Cloud Service以允许非标准端口外的出站流量
@@ -27,11 +23,12 @@ AEM as a Cloud Service提供了多种类型的高级网络功能，这些功能�
 
 本文详细介绍了其中每个选项，包括如何配置它们。 作为一般配置策略， `/networkInfrastructures` 在程序级别调用API端点以声明所需类型的高级网络，然后调用 `/advancedNetworking` 每个环境的端点，以启用基础结构并配置特定于环境的参数。 请引用Cloud Manager API文档中每个正式语法的相应端点以及示例请求和响应。
 
-在决定灵活端口出口和专用出口IP地址时，如果不需要特定的IP地址，建议选择灵活的端口出口，因为Adobe可以优化灵活端口出口流量的性能。
+计划可以配置单个高级网络变体。 在决定灵活端口出口和专用出口IP地址时，如果不需要特定的IP地址，建议选择灵活的端口出口，因为Adobe可以优化灵活端口出口流量的性能。
 
 >[!INFO]
 >
 >沙盒项目不提供高级网络。
+>此外，环境必须升级到AEM版本5958或更高版本。
 
 >[!NOTE]
 >
@@ -49,9 +46,9 @@ AEM as a Cloud Service提供了多种类型的高级网络功能，这些功能�
 
 每个项目一次，POST `/program/<programId>/networkInfrastructures` 会调用端点，只需传递 `flexiblePortEgress` 对于 `kind` 参数和区域。 端点将使用 `network_id`，以及其他信息（包括状态）。 API文档中应引用完整的参数和确切语法。
 
-调用后，配置网络基础架构通常需要大约15分钟。 对Cloud Manager的调用 [环境GET端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) 将显示状态为“ready”。
+调用后，配置网络基础架构通常需要大约15分钟。 对Cloud Manager的调用 [网络基础架构GET端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 将显示状态为“ready”。
 
-如果程序范围的灵活端口出口配置已准备就绪，则 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 必须按环境调用端点，以在环境级别启用网络并声明任何端口转发规则。 为了提供灵活性，可以按环境配置参数。
+如果程序范围的灵活端口出口配置已准备就绪，则 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 必须按环境调用端点，以在环境级别启用网络，并可选地声明任何端口转发规则。 为了提供灵活性，可以按环境配置参数。
 
 应通过指定目标主机集（名称或IP，以及端口）来为80/443以外的任何端口声明端口转发规则。 对于每个目标主机，客户必须将目标端口映射到从30000到30999的端口。
 
