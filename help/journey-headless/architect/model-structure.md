@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在[AEM无头内容创作历程](overview.md)的开头， [使用AEM的无头内容建模基础知识](basics.md)介绍了与无头创作相关的基本概念和术语。
+于 [AEM Headless内容创作历程](overview.md) the [使用AEM实现无头的内容建模基础知识](basics.md) 介绍了与无头创作相关的基本概念和术语。
 
 本文以这些内容为基础，以便您了解如何为您的AEM无头项目创建您自己的内容片段模型。
 
@@ -46,27 +46,27 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![工具中的内容片段模型](assets/cfm-tools.png)
 
-选择此选项后，导航到模型的位置，然后选择&#x200B;**创建**。 您可以在此输入各种关键详细信息。
+选择此选项后，导航到模型的位置并选择 **创建**. 您可以在此输入各种关键详细信息。
 
-默认情况下，会激活选项&#x200B;**启用模型**。 这意味着，当您保存模型后，即可使用（在创建内容片段时）。 如果需要，您可以停用此模型 — 有机会稍后启用（或禁用）现有模型。
+选项 **启用模型** 默认情况下，处于激活状态。 这意味着，当您保存模型后，即可使用（在创建内容片段时）。 如果需要，您可以停用此模型 — 有机会稍后启用（或禁用）现有模型。
 
 ![创建内容片段模型](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-使用&#x200B;**创建**&#x200B;确认，然后可以&#x200B;**打开**&#x200B;模型以开始定义结构。
+使用确认 **创建** 你可以 **打开** 模型以开始定义结构。
 
 ## 定义内容片段模型 {#defining-content-fragment-models}
 
-首次打开新模型时，您将看到：左侧有一个较大的空白，右侧有一长串&#x200B;**数据类型**:
+首次打开新模型时，您将看到 — 左侧有一个较大的空白，以及 **数据类型** 在右侧：
 
 ![空模型](/help/assets/content-fragments/assets/cfm-models-03.png)
 
 那么，该怎么办？
 
-您可以将&#x200B;**数据类型**&#x200B;的实例拖动到左侧空格上 — 您已经在定义模型！
+您可以拖动 **数据类型** 在左边空格上 — 您已经在定义模型了！
 
 ![定义字段](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-添加数据类型后，将需要为该字段定义&#x200B;**属性**。 具体取决于所使用的类型。 例如：
+添加数据类型后，您将需要定义 **属性** 对于该字段。 具体取决于所使用的类型。 例如：
 
 ![数据属性](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,13 +101,9 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >如果作者尝试发布模型尚未发布的内容片段，则会显示一个选择列表以指示该情况，并且模型将随该片段一起发布。
 
->[!NOTE]
->
->锁定（已发布）内容片段模型功能处于测试阶段。
+模型一经发布，就会 *锁定* 在创作时进入只读模式。 这旨在防止更改会导致现有GraphQL架构和查询出错，尤其是在发布环境中。 它在控制台中由 **已锁定**.
 
-发布模型后，该模型会立即&#x200B;*locked*&#x200B;进入创作的只读模式。 这旨在防止更改会导致现有GraphQL架构和查询出错，尤其是在发布环境中。 该参数在控制台中由&#x200B;**Locked**&#x200B;指示。
-
-当模型为&#x200B;**Locked**（在只读模式下）时，可以查看模型的内容和结构，但不能直接编辑它们；但是，您可以从控制台或模型编辑器中管理&#x200B;**锁定的**&#x200B;模型。
+当模型为 **已锁定** （在只读模式下），您可以查看模型的内容和结构，但不能直接对其进行编辑；但您可以 **已锁定** 从控制台或模型编辑器中选择模型。
 
 ## 下一步 {#whats-next}
 
@@ -117,7 +113,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此页面主要基于站点控制台，但许多/大多数功能也与导航到“资产”控制台下的内容片段模型并对其 **** 执行 **操作相关**  **** 联。
+* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此页面主要基于 **站点** 控制台，但许多/大多数功能也与导航到并对其执行操作相关， **内容片段模型** 下 **资产** 控制台。
 
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 

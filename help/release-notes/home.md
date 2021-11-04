@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 98c6207e84fda0d4bab3141c84507498f3527337
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 42%
@@ -13,18 +13,18 @@ ht-degree: 42%
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2021.09.0 |
+| 版本 | 2021.10.0 |
 | 类型 | 持续更新 |
 | 发行日期 | 持续更新 |
 
 ## 如何准备发行 {#how-to-prepare}
 
-使用[!DNL Adobe Experience Manager]as a Cloud Service的连续发布模型，应用程序会持续自动更新。 更新分为两种类型：功能发布和关键更新：
+使用 [!DNL Adobe Experience Manager] as a Cloud Service，应用程序会持续自动更新。 更新分为两种类型：功能发布和关键更新：
 
 * 功能发布以可预测的每月频率完成，重点关注新功能和产品创新。
-* 关键更新操作频繁进行，重点关注安全更新、错误修复和性能增强。 这可确保[!DNL Adobe Experience Manager]as a Cloud Service始终与任何关键修复保持最新。
+* 关键更新操作频繁进行，重点关注安全更新、错误修复和性能增强。 这可确保 [!DNL Adobe Experience Manager] as a Cloud Service始终是所有关键修复的最新信息。
 
-除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service还提供了在功能发布到生产之前提前整整一个月预览即将推出的功能的灵活性。 这允许您通过测试在您自己的自定义环境中驱动这些功能来评估即将发布的版本对其组织的影响，并提前对内部用户进行培训/准备。
+除了创新速度， [!DNL Adobe Experience Manager] as a Cloud Service还允许在即将推出的功能发布到生产环境之前，提前整个月灵活预览即将推出的功能。 这允许您通过测试在您自己的自定义环境中驱动这些功能来评估即将发布的版本对其组织的影响，并提前对内部用户进行培训/准备。
 
 >[!NOTE]
 >
@@ -32,9 +32,9 @@ ht-degree: 42%
 
 要准备发布，请执行以下操作：
 
-1. 标记日历：检查[Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)上月度版本的关键日期，并标记日历，为准备发行的关键活动做好准备。
-1. 查看发行说明：请阅读[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)，以熟悉发行和预发行功能。
-1. 访问并尝试新功能：在非生产环境中启用[预发行渠道](/help/release-notes/prerelease.md)，然后开始尝试在自定义环境中评估这些功能。
+1. 标记日历：在 [Experience Manager版路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 并标上日历，为关键活动做好准备，以便准备发行。
+1. 查看发行说明：阅读 [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md) 以了解发行和预发行功能。
+1. 访问并尝试新功能：启用 [预发行渠道](/help/release-notes/prerelease.md) ，然后开始尝试在自定义环境中评估这些功能。
 1. 培训用户：使用文档和Experience League资源，让用户快速了解新增功能并熟悉这些功能。
 
 ## 关键发行信息 {#key-articles}
@@ -66,7 +66,7 @@ ht-degree: 42%
 
 * [近期文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
-* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
+* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
