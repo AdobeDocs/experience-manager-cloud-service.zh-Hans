@@ -2,9 +2,9 @@
 title: CI-CD管线
 description: 可查看本页以了解有关Cloud Manager CI-CD管道的信息
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 | 管道类型 | 部署或代码质量 | 源代码 | 使用时间 | 何时或为何应使用？ |
 |--- |--- |--- |---|---|---|
-| 生产或非生产 | 部署 | 前端 | 部署前端代码。 前端代码是用作静态文件的任何代码。 它与AEM提供的UI代码不同。 它包括Sites主题、客户定义的SPA、Firefly SPA和任何其他解决方案。 必须为AEM版本。 | 快速部署时间<br> 可以为每个环境同时配置和运行多个前端管道 |
-|  | 部署 | 完整堆栈 | 以同时部署后端、前端和HTTPD/调度程序配置。 有些限制适用。 | 当前端管道尚未采用时。 |
-| 非生产 | 代码质量 | 前端 | 在前端代码上运行代码质量扫描 | 快速部署时间<br> 可以配置和运行多个管道 |
-|  | 代码质量 | 完整堆栈 | 对完整堆栈代码运行代码质量扫描 | 快速部署时间<br> 可以配置和运行多个管道 |
+| 生产或非生产 | 部署 | 前端 | 部署时间快。<br>可以为每个环境同时配置和运行多个前端管道。<br>前端管道构建将内部版本推出到存储。 提供html页面时，可能会引用前端代码静态文件，CDN将使用此存储作为源提供这些文件。 | 专门部署包含一个或多个客户端UI应用程序的前端代码。 前端代码是用作静态文件的任何代码。 它与AEM提供的UI代码不同。 它包括Sites主题、客户定义的SPA、Firefly SPA和任何其他解决方案。<br>必须为AEM版本 `2021.10.5933.20211012T154732Z` |
+| 生产或非生产 | 部署 | 完整堆栈 | 当前端管道尚未采用时。<br>如果前端代码必须与AEM Server代码完全同时部署，则 | 要部署AEM服务器代码（不可变内容、Java代码、OSGi配置、HTTPD/调度程序配置、重新指向、可变内容、字体） — 同时包含一个或多个AEM服务器应用程序。 |
+| 非生产 | 代码质量 | 前端 | 让Cloud Manager在不进行部署的情况下评估您的构建成功和代码质量。<br>可以配置和运行多个管道。 | 对前端代码运行代码质量扫描。 |
+| 非生产 | 代码质量 | 完整堆栈 | 让Cloud Manager在不进行部署的情况下评估您的构建成功和代码质量。<br>可以配置和运行多个管道。 | 对完整堆栈代码运行代码质量扫描。 |
 
 下图说明了Cloud Manager管道配置采用传统的单一前端存储库或独立的前端存储库设置：
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Cloud Manager前端管道 {#front-end}
 
@@ -72,12 +72,12 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 在开始配置前端管道之前，请通过易于使用的AEM快速站点创建工具，查看端到端工作流的AEM快速站点创建历程。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
 
-### 配置前端管道 {#configure-front-end}
+### 配置前端管线 {#configure-front-end}
 
 要了解如何配置前端管道，请参阅：
 
-* 添加生产管道
-* 添加非生产管道
+* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## 完整堆栈管道 {#full-stack-pipeline}
 
@@ -99,5 +99,5 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 要了解如何配置完整堆栈管道，请参阅：
 
-* 添加生产管道
-* 添加非生产管道
+* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
