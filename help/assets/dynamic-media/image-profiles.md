@@ -4,9 +4,9 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: f5758056565286015fe115677800310f6bf43e69
+source-git-commit: 5360e5fb673047966dd886dcac3b5fa04feedbfb
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3233'
 ht-degree: 9%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 9%
 | **[!UICONTROL 像素裁剪]** | 仅基于维度批量裁剪图像。 | 从 **[!UICONTROL 裁剪选项]** 下拉列表中，选择 **[!UICONTROL 像素裁剪]**.<br>要从图像的侧边进行裁剪，请输入要从图像的任意侧边或每侧进行裁剪的像素数。裁剪图像的多少取决于图像文件中的ppi（像素/英寸）设置。<br>图像配置文件像素裁切按以下方式呈现：<br>·值包括顶部、底部、左侧和右侧。·考虑左上角 `0,0` 像素裁切就从此计算。<br>·裁剪起点：左为X，上为Y<br>·水平计算：原始图像的水平像素大小减去“左”，然后减去“右”。<br>·垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。<br>例如，假定您的图像为4000 x 3000像素。 您使用以下值：顶=250，底=500，左=300，右=700。<br>从左上角(300,250)使用填充空间(4000-300-700、3000-250-500或3000,2250)进行裁剪。 |
 | **[!UICONTROL 智能裁剪]** | 根据图像的可视焦点批量裁剪图像。 | Smart Crop利用Adobe Sensei中人工智能的强大功能，快速批量自动裁剪图像。 智能裁剪可自动检测并裁剪到任何图像中的焦点以获取预期的目标点，而不管屏幕大小。<br>从 **[!UICONTROL 裁剪选项]** 下拉列表中，选择 **[!UICONTROL 智能裁剪]**，则位于的右侧 **[!UICONTROL 响应式图像裁剪]**，启用（打开）该功能。<br>默认断点大小(**[!UICONTROL 大]**, **[!UICONTROL 中]**, **[!UICONTROL 小]**)涵盖大多数图像在移动和平板电脑设备、台式机和横幅上使用的所有大小。 如果需要，您可以编辑默认名称“大”、“中”和“小”。<br>要添加更多断点，请选择 **[!UICONTROL 添加裁剪]**;要删除裁剪，请选择垃圾箱图标。 |
 | **[!UICONTROL 颜色和图像样本]** | 批量会为每个图像生成一个图像样本。 | **注意**:Dynamic Media Classic不支持智能色板。<br>自动从显示颜色或纹理的产品图像中定位并生成高质量样本。<br>从 **[!UICONTROL 裁剪选项]** 下拉列表中，选择 **[!UICONTROL 智能裁剪]**. 在右侧 **[!UICONTROL 颜色和图像色板]**，启用（打开）该功能。 在 **[!UICONTROL 宽度]** 和 **[!UICONTROL 高度]** 框中。<br>虽然所有图像裁剪都可以从演绎版边栏中获取，但样本仅通过 **[!UICONTROL 复制URL]** 功能。 使用您自己的查看组件在网站上渲染色板。 此规则的例外是传送横幅。 Dynamic Media为轮播横幅中使用的色板提供查看组件。<br><br>**使用图像色板**<br>&#x200B;图像样本的URL非常简单：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中 `:Swatch` 会附加到资产请求中。<br><br>**使用颜色色板**<br>&#x200B;要使用颜色色板，请 `req=userdata` 请求，其中包含以下内容：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资产：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>下面是样本资产的对应 `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>的 `req=userdata` 响应如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您还可以请求 `req=userdata` XML或JSON格式的响应，如以下各个URL示例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**:您必须创建自己的WCM组件才能请求颜色样本并解析 `SmartSwatchColor` 属性，由24位RGB十六进制值表示。<br>另请参阅 [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) （在查看器参考指南中）。 |
-| **[!UICONTROL 在目标分辨率间保留裁切内容]** | 在相同的宽高比中维护裁剪内容 | 在创建智能裁剪配置文件时使用。<br>取消选中此框后，会针对不同分辨率的给定宽高比生成新的裁剪内容（同时仍保持焦点）。<br>如果决定取消勾选此框，请确保原始图像分辨率大于您为智能裁剪配置文件定义的分辨率。<br><br>例如，假定您已将宽高比设置为600 x 600（大）、400 x 400（中）和300 x 300（小）。 <br>使用 **[!UICONTROL 跨目标分辨率保留裁剪内容]** 选项 *已检查*，则所有三个分辨率都会看到相同的裁剪，从而产生以下输出：<br>![选中选项](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>使用 **[!UICONTROL 跨目标分辨率保留裁剪内容]** 选项 *未选中*，则裁剪内容对于所有三种分辨率都是新的，从而产生以下输出：<br>![未选中选项](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
+| **[!UICONTROL 在目标分辨率间保留裁切内容]** | 在相同的宽高比中维护裁剪内容 | 在创建智能裁剪配置文件时使用。<br>取消选中此框后，会针对不同分辨率的给定宽高比生成新的裁剪内容（同时仍保持焦点）。<br>如果决定取消勾选此框，请确保原始图像分辨率大于您为智能裁剪配置文件定义的分辨率。<br><br>例如，假定您已将宽高比设置为600 x 600（大）、400 x 400（中）和300 x 300（小）。 <br>使用 **[!UICONTROL 跨目标分辨率保留裁剪内容]** 选项 *已检查*，则会在所有三个分辨率中看到相同的裁剪，从而生成以下图像示例输出（仅供说明性用途）：<br>![选中选项](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>使用 **[!UICONTROL 跨目标分辨率保留裁剪内容]** 选项 *未选中*，则所有三种分辨率都新增了裁剪内容，从而生成了以下图像示例输出（仅供说明用途）：<br>![未选中选项](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### 智能裁切和颜色色板支持的图像文件格式
 
