@@ -1,10 +1,10 @@
 ---
 title: 配置生产管道
 description: 配置生产管道
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,14 @@ ht-degree: 0%
 
 1. 的 **添加生产管道** 对话框包括标记为 **源代码**. 您可以选择 **[完整堆栈代码](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 或 **[前端代码](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 您可以选择 **存储库** 和 **Git分支**. 选择生产部署选项，如下所述。 单击 **继续**.
 
-   >[!IMPORTANT]
-   >如果所选环境已存在完整堆栈代码管道，则将禁用此选择。
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
+   >[!IMPORTANT]
+   >如果所选环境已存在完整堆栈代码管道，则将禁用此选择。
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+
    >[!NOTE]
-   >在开始配置前端管道之前，请通过易于使用的AEM快速站点创建工具，查看端到端工作流的AEM快速站点创建历程。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
+   >在开始配置前端管线之前，请参阅 [AEM快速网站创建历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 通过易于使用的AEM快速站点创建工具实现端到端工作流。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
 
    生产部署选项：
 

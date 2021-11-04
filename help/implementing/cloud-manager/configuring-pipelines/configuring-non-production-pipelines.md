@@ -1,10 +1,10 @@
 ---
 title: 配置非生产管道
 description: 可查看本页以了解有关在Cloud Manager中配置非生产管道的信息
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ ht-degree: 0%
    >[!IMPORTANT]
    >如果所选环境已存在完整堆栈代码管道，则将禁用此选择。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
 
    >[!NOTE]
-   >在开始配置前端管道之前，请通过易于使用的AEM快速站点创建工具，查看端到端工作流的AEM快速站点创建历程。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
+   >在开始配置前端管线之前，请参阅 [AEM快速网站创建历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 通过易于使用的AEM快速站点创建工具实现端到端工作流。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
 
 1. 现在，新创建的非生产管道将显示在 **管道** 卡。
 
