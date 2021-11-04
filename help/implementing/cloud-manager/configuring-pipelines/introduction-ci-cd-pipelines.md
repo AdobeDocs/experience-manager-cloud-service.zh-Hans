@@ -2,7 +2,7 @@
 title: CI-CD管线
 description: 可查看本页以了解有关Cloud Manager CI-CD管道的信息
 index: true
-source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -86,6 +86,7 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 ## 完整堆栈管道 {#full-stack-pipeline}
 
 完整堆栈管道为用户提供了同时部署后端、前端和HTTPD/调度程序配置的选项。  它将代码和内容部署到AEM运行时，包括打包为AEM客户端库的前端代码(JavaScript/CSS)。 如果未配置网层管道，则可以部署网层配置。 这表示“uber”管道，同时为用户提供了通过前端管道和Web层配置管道分别专门部署其前端代码或调度程序配置的选项。
+这些类型可以是“完整堆栈 — 代码质量”或“完整堆栈 — 部署”管道。
 
 将应用以下限制：
 
@@ -97,7 +98,6 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 1. 如果环境的相应Web层配置管道存在，则环境的完整堆栈管道将忽略调度程序配置。
 
-这些类型可以是“完整堆栈 — 代码质量”或“完整堆栈 — 部署”管道。
 
 ### 配置完整堆栈管道 {#configure-full-stack}
 

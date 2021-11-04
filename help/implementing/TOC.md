@@ -5,7 +5,7 @@ breadcrumb-title: Implementing 指南
 user-guide-description: 了解如何自定义 Experience Manager as a Cloud Service 部署，包括开发和部署主题。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
+source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 36%
@@ -68,8 +68,8 @@ ht-degree: 36%
    + Cloud Manager CI-CD管道 {#cicd-pipelines}
       + [简介](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + 生产管道 {#production-pipelines}
-         + [配置生产管道](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + [编辑生产管道](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [配置生产管道](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [编辑生产管道](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
       + 非生产管道 {#non-production-pipelines}
          + [配置非生产管道](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [编辑非生产管道](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
