@@ -3,10 +3,10 @@ title: AEMas a Cloud Service版本2021.11.0中的Cloud Manager发行说明
 description: AEMas a Cloud Service版本2021.11.0中的Cloud Manager发行说明
 feature: Release Information
 exl-id: null
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '461'
+ht-degree: 2%
 
 ---
 
@@ -40,6 +40,8 @@ AEMas a Cloud Service中Cloud Manager的发行日期为2021.11.0 2021年11月4�
 * 的 `x-request-id` 响应标头现在在API操场上可见 [www.adobe.io](https://www.adobe.io/). 提交客户关怀问题以进行疑难解答时，此标题非常有用。
 
 * 作为用户，我看到带零管道的管道卡为我提供了适当的指导。
+
+* 现在提供了新的活动页面，可在其中查看管道和代码执行等活动及其关联的详细信息。 随着时间的推移，此页面中列出的活动范围将会扩展，并且还会扩展提供的详细信息。
 
 * 现在提供了一个新的“管道”页面，该页面上提供了悬停时的状态弹出窗口，以便轻松查看详细信息摘要。 可以查看管道执行及其关联的详细信息。
 

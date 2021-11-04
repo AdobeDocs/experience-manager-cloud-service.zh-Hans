@@ -2,9 +2,9 @@
 title: 配置生产管道
 description: 配置生产管道
 index: true
-source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -55,14 +55,14 @@ ht-degree: 0%
    * **立即继续**  — 如果选中，则每当发生重要故障时，管道将自动继续。 这实质上是在模拟用户手动批准每次失败。
 
 
-1. 的 **添加生产管道** 对话框包括标记为 **源代码**. 您可以选择 **[完整堆栈代码](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 或 **[前端代码](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 您可以选择 **存储库** 和 **Git分支**. 选择生产部署选项，如下所述。 单击 **继续**.
+1. 的 **添加生产管道** 对话框包括标记为 **源代码**. 您可以选择 **[前端代码](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** 或 **[完整堆栈代码](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. 您可以选择 **存储库** 和 **Git分支**. 选择生产部署选项，如下所述。 单击 **继续**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
    如果已选择 **前端代码**，则必须选择 **存储库**, **Git分支** 和 **代码位置**，如下图所示：
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   如果已选择 **完整堆栈代码**，则必须选择 **存储库**, **Git分支** 和 **生产部署选项**，如下图所示：
+   如果已选择 **完整堆栈代码**，则必须选择 **存储库**, **Git分支** 和 **生产部署选项** （详情如下），如图所示：
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
 
    **生产部署选项：**
@@ -76,9 +76,6 @@ ht-degree: 0%
 
    >[!NOTE]
    >在开始配置前端管线之前，请参阅 [AEM快速网站创建历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 通过易于使用的AEM快速站点创建工具实现端到端工作流。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
-
-
-
 
 
 1. 的 **添加生产管道** 对话框包含第三个标签为 **体验审核**. 此选项为应始终包含在体验审核中的URL路径提供了一个表。
