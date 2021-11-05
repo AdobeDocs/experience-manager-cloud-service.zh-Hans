@@ -3,9 +3,9 @@ title: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a0bf314ff8f994dd77c2c124db1ab604dcae74b6
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 ### 的新增功能 [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] 现在，支持使用内置连接器从支持的音频和视频资产自动生成文本记录 [!DNL Azure Media Services]. 支持的文件会自动转录，文本以WebVTT格式存储。 WebVTT字幕用于更有效的搜索、字幕或翻译。 此外，该功能还改进了资产的辅助功能、可发现性和本地化。
+* [!DNL Experience Manager] 现在，支持使用内置连接器从支持的音频和视频资产自动生成文本记录 [!DNL Azure Media Services]. 的 [支持的文件类型](/help/assets/file-format-support.md#audio-video-transcription-formats) 文本以WebVTT格式存储。 WebVTT字幕用于更有效的搜索、字幕或翻译。 此外，该功能还改进了资产的辅助功能、可发现性和本地化。
 
 ### 的新增功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
 
