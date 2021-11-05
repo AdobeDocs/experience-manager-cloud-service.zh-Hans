@@ -2,9 +2,9 @@
 title: 编辑非生产管道
 description: 编辑非生产管道
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### 删除非生产管道 {#delete-nonprod}
+### 删除非生产管道 {#delete-nonprod}
 
 可以从管道卡中删除生产管道：
 
