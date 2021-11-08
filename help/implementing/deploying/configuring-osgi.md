@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有密钥值和环境特定值的OSGi配置 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f1ad12d308319ecfff6c0138ca77862976594e42
+source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
 workflow-type: tm+mt
-source-wordcount: '2938'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -224,9 +224,15 @@ use $[secret:SECRET_VAR_NAME]
 
 >[!CAUTION]
 >
->变量名称前缀为 `INTERNAL_`, `ADOBE_`或 `CONST_` 由Adobe保留。 任何以这些前缀开头的客户集变量都将被忽略。
+>有一些规则与对变量名称使用某些前缀有关：
 >
->客户不得引用前缀为的变量 `INTERNAL_` 或 `ADOBE_` 要么。
+>1. 变量名称前缀为 `INTERNAL_`, `ADOBE_`或 `CONST_` 由Adobe保留。 任何以这些前缀开头的客户集变量都将被忽略。
+>
+>1. 客户不得引用前缀为的变量 `INTERNAL_` 或 `ADOBE_` 要么。
+>
+>1. 带前缀的环境变量 `AEM_` 由产品定义为客户要使用的公共API和设置。
+   >   而客户可以使用并设置以前缀开头的环境变量 `AEM_` 他们不应使用此前缀来定义自己的变量。
+
 
 ### 默认值 {#default-values}
 
