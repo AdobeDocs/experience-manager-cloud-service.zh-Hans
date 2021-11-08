@@ -48,16 +48,7 @@ AEM快速站点创建工具允许非开发人员使用站点模板从头开始�
 
 您将在此历程中探索许多主题。 以下文章为您提供有关使用快速网站创建工具创建和自定义AEM网站的基本知识，并链接到详细的技术文档。
 
-|#|文章|描述|负责角色|
-|---|---|---|---|
-|0|AEM快速网站创建历程|本文档|AEM和Cloud Manager管理员|
-|1|[了解Cloud Manager和快速网站创建工作流程](cloud-manager.md)|了解Cloud Manager以及它如何将新的快速网站创建过程联系起来。|AEM管理员|
-|2|[从模板创建网站](create-site.md)|了解如何使用网站模板快速创建新的AEM网站。|AEM管理员|
-|3|[设置管道](pipeline-setup.md)|创建前端管道以管理网站主题的自定义。|Cloud Manager管理员|
-|4|[授予对前端开发人员的访问权限](grant-access.md)|将前端开发人员载入Cloud Manager，以便他们能够访问您的AEM站点git存储库和管道。|Cloud Manager管理员|
-|5|[检索Git存储库访问信息](retrieve-access.md)|了解前端开发人员如何使用Cloud Manager访问git存储库信息。|前端开发人员|
-|6|[自定义网站主题](customize-theme.md)|了解如何构建网站主题、如何对其进行自定义，以及如何使用实时AEM内容对其进行测试。|前端开发人员|
-|7|[部署自定义主题](deploy-theme.md)|了解如何使用管道部署网站主题。|前端开发人员|
+|#|文章|描述|负责角色| |—|—|—|— |0|AEM快速网站创建历程|本文档|AEM和Cloud Manager管理员| |1|[了解Cloud Manager和快速网站创建工作流程](cloud-manager.md)|了解Cloud Manager以及它如何将新的快速网站创建过程联系起来。|AEM管理员| |2|[从模板创建网站](create-site.md)|了解如何使用网站模板快速创建新的AEM网站。|AEM管理员| |3|[设置管道](pipeline-setup.md)|创建前端管道以管理网站主题的自定义。|Cloud Manager管理员| |4|[授予对前端开发人员的访问权限](grant-access.md)|将前端开发人员载入Cloud Manager，以便他们能够访问您的AEM站点git存储库和管道。|Cloud Manager管理员| |5|[检索Git存储库访问信息](retrieve-access.md)|了解前端开发人员如何使用Cloud Manager访问git存储库信息。|前端开发人员| |6|[自定义网站主题](customize-theme.md)|了解如何构建网站主题、如何对其进行自定义，以及如何使用实时AEM内容对其进行测试。|前端开发人员| |7|[部署自定义主题](deploy-theme.md)|了解如何使用管道部署网站主题。|前端开发人员|
 
 ## 下一步 {#what-is-next}
 
