@@ -1,9 +1,9 @@
 ---
 title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 将主题自定义更改提交到AEM git存储库后，即可运行 [管理员创建的管道](pipeline-setup.md) 以部署更改。
 
-1. 访问Cloud Manager [与检索git访问信息时一样。](retrieve-access.md) 在 **概述** 选项卡，您将看到 **管道**.
+1. 登录Cloud Manager [与您检索git访问信息时一样](retrieve-access.md) 并访问您的程序。 在 **概述** 选项卡，您将看到 **管道**.
 
    ![Cloud Manager概述](assets/cloud-manager-overview.png)
 

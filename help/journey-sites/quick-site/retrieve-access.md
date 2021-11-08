@@ -1,10 +1,10 @@
 ---
 title: 检索Git存储库访问信息
 description: 了解前端开发人员如何使用Cloud Manager访问git存储库信息。
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '928'
+ht-degree: 4%
 
 ---
 
@@ -82,19 +82,11 @@ Cloud Manager管理员将以Cloud Manager用户的身份载入您。 您应该�
 
 1. 登录Adobe Experience Cloud(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 或单击欢迎电子邮件中提供的链接。
 
-1. 登录后，通过选中屏幕右上角的组织，确保您处于正确的组织中。 如果您只是一个组织的成员，则无需执行此步骤。 然后，点按或单击 **Experience Manager**.
-
-   ![Experience Cloud概述](assets/experience-cloud-overview.png)
-
-1. 在下一页，点按或单击 **Launch** 按钮 **Cloud Manager** 应用程序。
-
-   ![Experience Manager应用程序](assets/experience-manager-apps.png)
-
-1. 下一页列出了各种可用程序。 点按或单击Cloud Manager管理员提供的您需要访问的页面。 如果这是您的AEMaaCS的第一个前端项目，则您可能只有一个项目可用。
+1. Cloud Manager列出了各种可用的程序。 点按或单击Cloud Manager管理员提供的您需要访问的页面。 如果这是您的AEMaaCS的第一个前端项目，则您可能只有一个项目可用。
 
    ![在Cloud Manager中选择项目](assets/cloud-manager-select-program.png)
 
-您现在可以看到Cloud Manager的概述。 您的页面将有所不同，但与以下示例类似。
+您现在可以看到项目的概述。 您的页面将有所不同，但与以下示例类似。
 
 ![Cloud Manager概述](assets/cloud-manager-overview.png)
 

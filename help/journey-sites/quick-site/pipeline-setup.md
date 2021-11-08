@@ -1,9 +1,9 @@
 ---
 title: 设置管道
 description: 创建前端管道以管理网站主题的自定义。
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -59,21 +59,13 @@ ht-degree: 0%
 
 ## 访问Cloud Manager {#login}
 
-1. 登录Adobe Experience Cloud(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. 登录AdobeCloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. 登录后，通过选中屏幕右上角的组织，确保您处于正确的组织中。 如果您只是一个组织的成员，则无需执行此步骤。 然后，点按或单击 **Experience Manager**.
-
-   ![Experience Cloud概述](assets/experience-cloud-overview.png)
-
-1. 在下一页，点按或单击 **Launch** 开始 **Cloud Manager** 应用程序。
-
-   ![Experience Manager应用程序](assets/experience-manager-apps.png)
-
-1. 下一页列出了各种可用程序。 点按或单击要管理的。 如果您刚刚开始使用AEMas a Cloud Service，则可能只有一个可用程序。
+1. Cloud Manager列出了各种可用的程序。 点按或单击要管理的。 如果您刚刚开始使用AEMas a Cloud Service，则可能只有一个可用程序。
 
    ![在Cloud Manager中选择项目](assets/cloud-manager-select-program.png)
 
-您现在可以看到Cloud Manager的概述。 您的页面将有所不同，但与以下示例类似。
+您现在可以看到项目的概述。 您的页面将有所不同，但与以下示例类似。
 
 ![Cloud Manager概述](assets/cloud-manager-overview.png)
 
