@@ -6,10 +6,10 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 70%
+source-wordcount: '325'
+ht-degree: 68%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 70%
    + 创作基础知识 {#fundamentals}
       + [环境和工具](authoring/fundamentals/environment-tools.md)
       + [添加页面注释](authoring/fundamentals/annotations.md)
+      + [创建新站点](authoring/fundamentals/create-site.md)
       + [创建和组织页面](authoring/fundamentals/organizing-pages.md)
       + [编辑页面内容](authoring/fundamentals/editing-content.md)
       + [富文本编辑器](authoring/fundamentals/rich-text-editor.md)
@@ -82,8 +83,12 @@ ht-degree: 70%
       + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [注册、登录和用户配置文件](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
+   + 网站创建 {#site-creation}
+      + [创建新站点](administering/site-creation/create-site.md)
+      + [站点模板](administering/site-creation/site-templates.md)
+      + [站点主题](administering/site-creation/site-themes.md)
    + [管理工作流](administering/workflows-administering.md)
-   + 重用内容{#reusing-content}
+   + 重用内容 {#reusing-content}
       + [MSM和翻译](administering/msm-and-translation.md)
       + 多站点管理器 {#msm}
          + [MSM和Live Copy概述](administering/msm/overview.md)
