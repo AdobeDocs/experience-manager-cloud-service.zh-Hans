@@ -1,9 +1,9 @@
 ---
 title: AEM快速网站创建历程
 description: 从此处开始，逐步了解易于使用的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,9 @@ AEM快速站点创建工具允许非开发人员使用站点模板从头开始�
 
 ## 视频概述 {#video-overview}
 
-要快速了解此功能的实际操作情况，您可以观看这五分钟的简介。
+要快速了解此功能的实际操作情况，请 [你可以观看这五分钟的介绍。](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-此文档历程将使您逐步详细了解视频中的所有功能，以便您了解该过程，并可以在自己的环境中重新创建该过程。
+本文档历程将逐步和详细地介绍视频中的所有功能，以便您了解工作流，并可以在自己的环境中重新创建该流程。
 
 ## AEM文档历程 {#documentation-journeys}
 
