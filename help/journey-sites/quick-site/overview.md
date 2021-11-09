@@ -1,9 +1,9 @@
 ---
 title: AEM快速网站创建历程
 description: 从此处开始，逐步了解易于使用的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1060'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,16 @@ AEM Sites是用于创建和管理数字体验的强大工具集。 内容作者�
 AEM快速站点创建工具允许非开发人员使用站点模板从头开始快速创建新站点。 创建网站后，快速创建工具还允许快速自定义AEM网站（JavaScript、CSS和静态资源）的主题和样式。 这允许需要零AEM知识的前端开发人员与内容创建者分开工作并与之并行工作。 AEM管理员只需下载网站主题并将其提供给前端开发人员，该开发人员使用自己喜爱的工具对其进行自定义，然后将更改提交到AEM代码存储库，然后将其部署。
 
 通过消除网站创建方面的任何开发人员知识、消除前端开发的AEM知识要求，并允许主题开发与内容创建并行进行，AEM快速网站创建工具极大地加快了网站的价值实现时间，并提高了网站的自定义和部署敏捷性。
+
+## 视频概述 {#video-overview}
+
+要快速了解此功能的实际操作情况，您可以观看这五分钟的简介。
+
+>[!VIDEO]
+>
+>https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
+
+此文档历程将使您逐步详细了解视频中的所有功能，以便您了解该过程，并可以在自己的环境中重新创建该过程。
 
 ## AEM文档历程 {#documentation-journeys}
 
@@ -48,16 +58,7 @@ AEM快速站点创建工具允许非开发人员使用站点模板从头开始�
 
 您将在此历程中探索许多主题。 以下文章为您提供有关使用快速网站创建工具创建和自定义AEM网站的基本知识，并链接到详细的技术文档。
 
-|#|文章|描述|负责角色|
-|---|---|---|---|
-|0|AEM快速网站创建历程|本文档|AEM和Cloud Manager管理员|
-|1|[了解Cloud Manager和快速网站创建工作流程](cloud-manager.md)|了解Cloud Manager以及它如何将新的快速网站创建过程联系起来。|AEM管理员|
-|2|[从模板创建网站](create-site.md)|了解如何使用网站模板快速创建新的AEM网站。|AEM管理员|
-|3|[设置管道](pipeline-setup.md)|创建前端管道以管理网站主题的自定义。|Cloud Manager管理员|
-|4|[授予对前端开发人员的访问权限](grant-access.md)|将前端开发人员载入Cloud Manager，以便他们能够访问您的AEM站点git存储库和管道。|Cloud Manager管理员|
-|5|[检索Git存储库访问信息](retrieve-access.md)|了解前端开发人员如何使用Cloud Manager访问git存储库信息。|前端开发人员|
-|6|[自定义网站主题](customize-theme.md)|了解如何构建网站主题、如何对其进行自定义，以及如何使用实时AEM内容对其进行测试。|前端开发人员|
-|7|[部署自定义主题](deploy-theme.md)|了解如何使用管道部署网站主题。|前端开发人员|
+|#|文章|描述|负责角色| |—|—|—|— |0|AEM快速网站创建历程|本文档|AEM和Cloud Manager管理员| |1|[了解Cloud Manager和快速网站创建工作流程](cloud-manager.md)|了解Cloud Manager以及它如何将新的快速网站创建过程联系起来。|AEM管理员| |2|[从模板创建网站](create-site.md)|了解如何使用网站模板快速创建新的AEM网站。|AEM管理员| |3|[设置管道](pipeline-setup.md)|创建前端管道以管理网站主题的自定义。|Cloud Manager管理员| |4|[授予对前端开发人员的访问权限](grant-access.md)|将前端开发人员载入Cloud Manager，以便他们能够访问您的AEM站点git存储库和管道。|Cloud Manager管理员| |5|[检索Git存储库访问信息](retrieve-access.md)|了解前端开发人员如何使用Cloud Manager访问git存储库信息。|前端开发人员| |6|[自定义网站主题](customize-theme.md)|了解如何构建网站主题、如何对其进行自定义，以及如何使用实时AEM内容对其进行测试。|前端开发人员| |7|[部署自定义主题](deploy-theme.md)|了解如何使用管道部署网站主题。|前端开发人员|
 
 ## 下一步 {#what-is-next}
 
