@@ -1,24 +1,24 @@
 ---
-title: ' [!DNL Assets]的开发人员引用'
+title: 的开发人员参考 [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1434'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] 开发人员用例、 API和参考资料 {#assets-cloud-service-apis}
 
-本文包含针对[!DNL Assets]作为[!DNL Cloud Service]的开发人员的建议、参考材料和资源。 它包括新的资产上传模块、API引用，以及有关后处理工作流中提供支持的信息。
+本文包含面向 [!DNL Assets] as a [!DNL Cloud Service]. 它包括新的资产上传模块、API引用，以及有关后处理工作流中提供支持的信息。
 
 ## [!DNL Experience Manager Assets] API和操作 {#use-cases-and-apis}
 
-[!DNL Assets] as a提供 [!DNL Cloud Service] 了多个API以编程方式与数字资产交互。每个API都支持特定的用例，如下表所述。 [!DNL Assets]用户界面、[!DNL Experience Manager]桌面应用程序和[!DNL Adobe Asset Link]支持所有或部分操作。
+[!DNL Assets] as a [!DNL Cloud Service] 提供了多个API以编程方式与数字资产交互。 每个API都支持特定的用例，如下表所述。 的 [!DNL Assets] 用户界面， [!DNL Experience Manager] 桌面应用程序和 [!DNL Adobe Asset Link] 支持所有或部分操作。
 
 >[!CAUTION]
 >
@@ -30,7 +30,7 @@ ht-degree: 2%
 | × | 不受支持. 请勿使用。 |
 | - | 不可用 |
 
-| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（预览）_ |
+| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（预览）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二进制** |  |  |  |  |  |  |
 | 创建原始 | ✓ | × | - | × | × | - |
@@ -66,35 +66,35 @@ ht-degree: 2%
 
 ## 资产上传 {#asset-upload}
 
-在[!DNL Experience Manager]中，作为[!DNL Cloud Service]，您可以使用HTTP API直接将资产上传到云存储。 下面是上载二进制文件的步骤。 在外部应用程序中而不是在[!DNL Experience Manager] JVM中执行这些步骤。
+在 [!DNL Experience Manager] as a [!DNL Cloud Service]，您可以使用HTTP API直接将资产上传到云存储。 下面是上载二进制文件的步骤。 在外部应用程序中执行这些步骤，而不是在 [!DNL Experience Manager] JVM。
 
-1. [提交HTTP请求](#initiate-upload)。它会通知[!DNL Experience Manage]r部署您上传新二进制文件的意图。
-1. [PUT由启动请](#upload-binary) 求提供的一个或多个URI的二进制内容。
-1. [提交HTTP请](#complete-upload) 求，以通知服务器二进制文件的内容已成功上传。
+1. [提交HTTP请求](#initiate-upload). 它会通知 [!DNL Experience Manage]或部署您上传新二进制文件的意图。
+1. [PUT二进制文件的内容](#upload-binary) 到由启动请求提供的一个或多个URI。
+1. [提交HTTP请求](#complete-upload) 通知服务器二进制文件的内容已成功上传。
 
 ![直接二进制上传协议概述](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-在外部应用程序中而不是在[!DNL Experience Manager] JVM中执行上述步骤。
+在外部应用程序中而不是 [!DNL Experience Manager] JVM。
 
-该方法可以对资产上传进行可伸缩、更高性能的处理。 与[!DNL Experience Manager] 6.5相比的区别如下：
+该方法可以对资产上传进行可伸缩、更高性能的处理。 与 [!DNL Experience Manager] 6.5为：
 
-* 二进制文件不会通过[!DNL Experience Manager]，现在，它只是将上传过程与为部署配置的二进制云存储进行协调。
+* 二进制文件不会通过 [!DNL Experience Manager]，现在只需将上传过程与为部署配置的二进制云存储进行协调即可。
 * 二进制云存储可与内容交付网络(CDN)或边缘网络配合使用。 CDN会选择更接近客户端的上传端点。 当数据传输到附近端点的距离较短时，上传性能和用户体验会得到改善，尤其是对于地理上分散的团队而言。
 
 >[!NOTE]
-请参阅客户端代码以在开源[aem-upload库](https://github.com/adobe/aem-upload)中实施此方法。
+请参阅客户端代码以在开源环境中实施此方法 [aem上传库](https://github.com/adobe/aem-upload).
 
 ### 启动上传 {#initiate-upload}
 
-将HTTPPOST请求提交到所需的文件夹。 资产会在此文件夹中创建或更新。 包括选择器`.initiateUpload.json`以指示请求启动二进制文件的上传。 例如，应创建资产的文件夹路径为`/assets/folder`。 POST请求为`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
+将HTTPPOST请求提交到所需的文件夹。 资产会在此文件夹中创建或更新。 包含选择器 `.initiateUpload.json` 以指示请求启动二进制文件的上传。 例如，应创建资产的文件夹的路径是 `/assets/folder`. POST请求为 `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
-请求正文的内容类型应为`application/x-www-form-urlencoded`表单数据，其中包含以下字段：
+请求正文的内容类型应为 `application/x-www-form-urlencoded` 表单数据，包含以下字段：
 
-* `(string) fileName`: 必填. 资产在[!DNL Experience Manager]中显示的名称。
+* `(string) fileName`: 必填. 资产在中显示的名称 [!DNL Experience Manager].
 * `(number) fileSize`: 必填. 上传资产的文件大小（以字节为单位）。
 
-只要每个二进制文件包含必填字段，就可以使用单个请求启动多个二进制文件的上传。 如果成功，请求将以下格式响应`201`状态代码和包含JSON数据的正文：
+只要每个二进制文件包含必填字段，就可以使用单个请求启动多个二进制文件的上传。 如果成功，请求将以 `201` 状态代码和包含以下格式JSON数据的正文：
 
 ```json
 {
@@ -113,15 +113,15 @@ ht-degree: 2%
 }
 ```
 
-* `completeURI` （字符串）：在二进制文件完成上传时调用此URI。URI可以是绝对URI或相对URI，客户端应该能够处理这两个URI。 即，该值可以是`"https://[aem_server]:[port]/content/dam.completeUpload.json"`或`"/content/dam.completeUpload.json"`。请参阅[完成上载](#complete-upload)。
+* `completeURI` （字符串）：在二进制文件完成上传时调用此URI。 URI可以是绝对URI或相对URI，客户端应该能够处理这两个URI。 即，值可以是 `"https://[aem_server]:[port]/content/dam.completeUpload.json"` 或 `"/content/dam.completeUpload.json"` 请参阅 [完成上载](#complete-upload).
 * `folderPath` （字符串）：上传二进制文件的文件夹的完整路径。
 * `(files)` （数组）：元素列表，其长度和顺序与启动请求中提供的二进制信息列表的长度和顺序相匹配。
-* `fileName` （字符串）：相应二进制文件的名称，在启动请求中提供。此值应包含在完整请求中。
-* `mimeType` （字符串）：相应二进制文件的mime类型，在启动请求中提供。此值应包含在完整请求中。
-* `uploadToken` （字符串）：对应二进制文件的上传令牌。此值应包含在完整请求中。
-* `uploadURIs` （数组）：其值是应将二进制内容上传到的完整URI的字符串列表(请参阅 [上传二进制](#upload-binary))。
-* `minPartSize` （数字）：如果有多个URI，则可能提供给其中任一URI的数据的最 `uploadURIs`小长度（以字节为单位）。
-* `maxPartSize` （数字）：如果有多个URI，则可能提供给其中任何一个的数据的最大长度(以字 `uploadURIs`节为单位)。
+* `fileName` （字符串）：相应二进制文件的名称，在启动请求中提供。 此值应包含在完整请求中。
+* `mimeType` （字符串）：相应二进制文件的mime类型，在启动请求中提供。 此值应包含在完整请求中。
+* `uploadToken` （字符串）：对应二进制文件的上传令牌。 此值应包含在完整请求中。
+* `uploadURIs` （数组）：其值是应将二进制内容上传到的完整URI的字符串列表(请参阅 [上载二进制文件](#upload-binary))。
+* `minPartSize` （数字）：可提供给任何 `uploadURIs`，如果有多个URI。
+* `maxPartSize` （数字）：可提供给 `uploadURIs`，如果有多个URI。
 
 ### 上载二进制文件 {#upload-binary}
 
@@ -133,59 +133,59 @@ ht-degree: 2%
 * POST字节范围0-9,999（二进制）到上传URI列表中的第一个URI。
 * POST字节范围10,000 - 19,999（二进制到上传URI列表中的第二个URI）。
 
-如果上传成功，服务器将使用`201`状态代码响应每个请求。
+如果上传成功，服务器将使用 `201` 状态代码。
 
 ### 完成上传 {#complete-upload}
 
-上传二进制文件的所有部分后，将HTTPPOST请求提交到初始数据提供的完整URI。 请求正文的内容类型应为`application/x-www-form-urlencoded`表单数据，其中包含以下字段。
+上传二进制文件的所有部分后，将HTTPPOST请求提交到初始数据提供的完整URI。 请求正文的内容类型应为 `application/x-www-form-urlencoded` 表单数据，包含以下字段。
 
 | 字段 | 类型 | 必需或不需要 | 描述 |
 |---|---|---|---|
 | `fileName` | 字符串 | 必填 | 初始数据提供的资产名称。 |
 | `mimeType` | 字符串 | 必填 | 二进制文件的HTTP内容类型，由启动数据提供。 |
 | `uploadToken` | 字符串 | 必填 | 初始化数据提供的二进制文件的上载令牌。 |
-| `createVersion` | 布尔型 | 可选 | 如果存在`True`且资产存在指定的名称，则[!DNL Experience Manager]会创建资产的新版本。 |
+| `createVersion` | 布尔型 | 可选 | 如果 `True` ，且存在具有指定名称的资产，则 [!DNL Experience Manager] 创建资产的新版本。 |
 | `versionLabel` | 字符串 | 可选 | 如果创建了新版本，则会显示与资产新版本关联的标签。 |
 | `versionComment` | 字符串 | 可选 | 如果创建了新版本，则与该版本关联的注释。 |
-| `replace` | 布尔型 | 可选 | 如果存在`True`且具有指定名称的资产，则[!DNL Experience Manager]会删除该资产，然后重新创建该资产。 |
+| `replace` | 布尔型 | 可选 | 如果 `True` 并且存在具有指定名称的资产， [!DNL Experience Manager] 删除资产，然后重新创建资产。 |
 
 >[!NOTE]
-如果资产存在且未指定`createVersion`和`replace`，则[!DNL Experience Manager]会使用新二进制文件更新资产的当前版本。
+如果资产存在且 `createVersion` nor `replace` ，则 [!DNL Experience Manager] 使用新的二进制文件更新资产的当前版本。
 
 与启动过程一样，完整的请求数据可能包含多个文件的信息。
 
-只有在为文件调用完整URL后，才会完成上传二进制文件的过程。 上传过程完成后，会处理资产。 即使资产的二进制文件已完全上传，但上传过程未完成，处理也不会开始。 如果上传成功，服务器将回复`200`状态代码。
+只有在为文件调用完整URL后，才会完成上传二进制文件的过程。 上传过程完成后，会处理资产。 即使资产的二进制文件已完全上传，但上传过程未完成，处理也不会开始。 如果上传成功，服务器将回复 `200` 状态代码。
 
 ### 开源上载库 {#open-source-upload-library}
 
 要了解有关上传算法的更多信息或构建您自己的上传脚本和工具，Adobe提供了开源库和工具：
 
-* [开源aem上传库](https://github.com/adobe/aem-upload)。
-* [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)。
+* [开源aem上传库](https://github.com/adobe/aem-upload).
+* [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem).
 
 ### 已弃用的资产上传API {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-仅[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]支持新的上载方法。 [!DNL Adobe Experience Manager] 6.5中的API已弃用。 以下API中弃用了与上传或更新资产或演绎版（任何二进制上传）相关的方法：
+仅支持 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. 来自的API [!DNL Adobe Experience Manager] 6.5已弃用。 以下API中弃用了与上传或更新资产或演绎版（任何二进制上传）相关的方法：
 
-* [Experience Manager资产HTTP API](mac-api-assets.md)
-* `AssetManager` Java API，例如  `AssetManager.createAsset(..)`
+* [Experience Manager Assets HTTP API](mac-api-assets.md)
+* `AssetManager` Java API，例如 `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [开源aem上传库](https://github.com/adobe/aem-upload)。
-* [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)。
+* [开源aem上传库](https://github.com/adobe/aem-upload).
+* [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## 资产处理和后处理工作流 {#post-processing-workflows}
 
-在[!DNL Experience Manager]中，资产处理基于使用[资产微服务](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)的&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;配置。 处理不需要开发人员扩展。
+在 [!DNL Experience Manager]，则资产处理基于 **[!UICONTROL 处理配置文件]** 使用 [资产微服务](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). 处理不需要开发人员扩展。
 
 对于后处理工作流配置，请使用带有自定义步骤的扩展的标准工作流。
 
 ## 在后处理工作流中支持工作流步骤 {#post-processing-workflows-steps}
 
-如果您从以前的[!DNL Experience Manager]版本进行升级，则可以使用资产微服务来处理资产。 云原生资产微服务的配置和使用更简单。 不支持在以前版本的[!UICONTROL DAM更新资产]工作流中使用的一些工作流步骤。 有关支持类的更多信息，请参阅[Java API引用或Javaocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)。
+如果您从以前的 [!DNL Experience Manager]，则可以使用资产微服务处理资产。 云原生资产微服务的配置和使用更简单。 在 [!UICONTROL DAM更新资产] 不支持以前版本中的工作流。 有关支持类的更多信息，请参阅 [Java API引用或Javaocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 以下技术工作流模型已被资产微服务取代，或者无法获得支持：
 
