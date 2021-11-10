@@ -3,9 +3,9 @@ title: 包管理器
 description: 了解AE的基础知识；包管理。
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,11 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->包管理器UI可能会返回 **未定义** 安装包需要超过10分钟时出现错误消息。 如果发生这种情况，请不要重试安装，因为安装在后台正常进行，并且多个并发导入进程可能会引发某些冲突。
+>包管理器UI可能会返回 **未定义** 安装包需要超过10分钟时出现错误消息。
+>
+>这不是由于安装错误，而是由于Cloud Service对所有请求具有的超时。
+>
+>如果看到此类错误，请不要重试安装。 安装在后台正常进行。 如果重新启动安装，则多个并发导入进程可能会引发一些冲突。
 
 有关如何管理AEMaaCS包的更多详细信息，请查看此文档 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md) （位于部署用户指南中）。
 
@@ -549,7 +553,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. [访问包管理器。](#accessing)
 
-1. 通过单击资源包名称，从资源包列表中打开要复制的资源包详细信息。
+1. 通过单击包名称，从包列表中打开要复制的包的包详细信息。
 
 1. 单击 **更多** -> **复制**.
 

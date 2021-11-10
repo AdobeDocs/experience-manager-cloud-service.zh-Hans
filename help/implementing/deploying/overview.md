@@ -3,9 +3,9 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 与AEM On Premise和Managed Services解决方案相比，AEM as a Cloud Service中代码开发的基础知识相似。 开发人员编写代码并在本地进行测试，然后将代码推送到远程AEMas a Cloud Service环境。 Cloud Manager是Managed Services的可选内容交付工具，它是必需的。 现在，这是将代码部署到AEMas a Cloud Service环境的唯一机制。
 
-更新 [AEM版本](/help/implementing/deploying/aem-version-updates.md) 始终是与推送分开的部署事件 [自定义代码](#customer-releases). 换种方式看，应针对生产上的AEM版本测试自定义代码发布，因为这是将在顶部部署的版本。 AEM版本更新之后发生的事件，该版本将会频繁进行并自动应用。 它们旨在向后兼容已部署的客户代码。
+更新 [AEM版本](/help/implementing/deploying/aem-version-updates.md) 始终是与推送分开的部署事件 [自定义代码](#customer-releases). 换种方式看，应针对生产上的AEM版本测试自定义代码版本，因为这是将在顶部部署的版本。 AEM版本更新之后发生的事件，该版本将会频繁进行并自动应用。 它们旨在向后兼容已部署的客户代码。
 
 本文档的其余部分将介绍开发人员如何调整其实践，以便与AEM as a Cloud Service的版本更新和客户更新结合使用。
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 与现有非云AEM版本一样，将支持基于特定快速入门的本地离线开发，在大多数情况下，该开发工具有望成为调试的首选工具。
 
 >[!NOTE]
->与Adobe云相比，应用程序在本地计算机上的行为方式存在细微的操作差异。 在本地开发过程中，必须遵守这些体系结构差异，并且在云基础架构上部署时，可能会导致不同的行为。 由于这些差异，在生产中推出新的自定义代码之前，必须对开发环境和暂存环境执行详尽的测试。
+>与Adobe云相比，应用程序在本地计算机上的行为方式存在细微的操作差异。 在本地开发过程中，必须遵守这些架构差异，并且在云基础架构上部署时，可能会导致不同的行为。 由于这些差异，在生产中推出新的自定义代码之前，必须对开发环境和暂存环境执行详尽的测试。
 
 为了为内部版本开发自定义代码，请使用 [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 应下载并安装。 有关使用AEMas a Cloud ServiceDispatcher工具的其他信息，请参阅 [本页](/help/implementing/dispatcher/disp-overview.md).
 
@@ -179,7 +179,11 @@ above appears to be internal, to confirm with Brian -->
 
 >[!IMPORTANT]
 >
->包管理器UI可能会返回 **未定义** 安装包需要超过10分钟时出现错误消息。 如果发生这种情况，请不要重试安装，因为安装在后台正常进行，并且多个并发导入进程可能会引发某些冲突。
+>包管理器UI可能会返回 **未定义** 安装包需要超过10分钟时出现错误消息。
+>
+>这不是由于安装错误，而是由于Cloud Service对所有请求具有的超时。
+>
+>如果看到此类错误，请不要重试安装。 安装在后台正常进行。 如果重新启动安装，则多个并发导入进程可能会引发一些冲突。
 
 通过Cloud Manager安装的任何内容包（可变和不可变）都将在AEM Package Manager的用户界面中显示为冻结状态。 无法重新安装、重新构建或甚至下载这些包，这些包将随 **&quot;cp2fm&quot;** 后缀，表示其安装由Cloud Manager管理。
 
