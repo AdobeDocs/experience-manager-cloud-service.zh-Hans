@@ -3,21 +3,23 @@ title: 用户访问新旧版
 description: 用户访问新旧版
 index: false
 hide: true
-source-git-commit: e8f5a0ca99b3772665613e24b73d4ab7525a22be
+source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
 
-# New Relic APM for AEMas a Cloud Service {#new-relic}
+# 新的AEM应用性能监控 {#new-relic}
 
 ## 简介 {#introduction}
 
-Adobe高度重视应用程序的监控、可用性和性能。 为帮助实现此目标，AEM as a Cloud Service提供了对自定义New Relic监控包的访问，这是标准产品产品的一部分，可确保您的团队能够最大程度地了解您的Adobe Experience ManagerCloud Service系统和环境性能指标。 本白皮书介绍了在您的AEMas a Cloud Service环境中启用的New Relic监控功能，以帮助提高性能并让您充分利用AEMas a Cloud Service。
+Adobe高度重视应用程序的监控、可用性和性能。 为帮助实现此目标，AEM as a Cloud Service提供了对自定义New Relic监控包的访问，这是标准产品产品的一部分，可确保您的团队能够最大程度地了解您的Adobe Experience ManagerCloud Service系统和环境性能指标。 本节介绍在您的AEMas a Cloud Service环境中启用的New Relic监控功能，以帮助提高性能并让您充分利用AEMas a Cloud Service。
 
 ## AEMas a Cloud Service通过New Relic监控交易 {#transaction-monitoring}
+
+以下是New Relic Application Performance Monitoring for AEMas a Cloud Service的主要功能：
 
 * 直接访问专用的New Relic One帐户(由Adobe支持管理的访问)。
 
@@ -31,11 +33,18 @@ Adobe高度重视应用程序的监控、可用性和性能。 为帮助实现�
 
 您的专用New Relic帐户将通过客户关怀团队的参与由Adobe进行配置和管理。 Adobe将仍然是所有者和管理员，并将代表您配置帐户以提供对专用子帐户的访问权限。
 
-要访问与您的AEMas a Cloud Service计划关联的New Relic子帐户，请访问Admin Console中的“支持”选项卡以打开请求。 确保您的票证中包含项目ID的详细信息以及请求Adobe团队打开新旧版物访问权限的用户列表。 必须向所有用户提供全名和有效的电子邮件地址。  有关AEM支持门户的更多详细信息，请支持以Experience Cloud。
+要访问与您的AEMas a Cloud Service计划关联的New Relic子帐户，请执行以下操作：
+
+* 请访问Admin Console中的支持选项卡以打开请求。
+* 确保您的票证中包含项目ID的详细信息以及请求Adobe团队打开新旧版物访问权限的用户列表。
+* 必须向所有用户提供全名和有效的电子邮件地址。
+
+   >[!NOTE]
+   >有关AEM支持门户的更多详细信息，请支持以Experience Cloud。
 
 提供访问权限后，New Relic会向每个用户发送确认电子邮件，以便他们完成设置过程并登录。 如果找不到原始帐户确认电子邮件，请执行以下操作：
 
-1. 转到New Relic的登录页面，网址为login.newrelic.com/login。
+1. 导航到New Relic的登录页面： login.newrelic.com/login。
 
 1. 选择忘记密码。
 
@@ -64,9 +73,13 @@ AEM as a Cloud Service仅将产品重点放在New Relic APM解决方案上，不
 
 ### Adobe用New Relic监视什么？ {#adobe-monitor}
 
-Adobe通过New Relic APM Java插件监控AEMas a Cloud Service创作、发布和预览（如果可用）服务。 Adobe支持跨非生产和生产AEMas a Cloud Service环境的自定义New Relic APM遥测和监控。 您的New Relic帐户已附加到主Adobe维护帐户，并有多个应用程序报告到该帐户中。 每个AEMas a Cloud Service环境各3个：
+Adobe通过New Relic APM Java插件监控AEMas a Cloud Service创作、发布和预览（如果可用）服务。 Adobe支持跨非生产和生产AEMas a Cloud Service环境的自定义New Relic APM遥测和监控。 您的New Relic帐户已附加到主Adobe维护帐户，并有多个应用程序报告到该帐户中。
 
-每个环境的创作服务的一个应用程序每个环境发布服务的一个应用程序（包括Golden Publish）每个环境预览服务的一个应用程序每个应用程序使用一个许可证密钥，AEMas a Cloud Service环境将仅报告给一个New Relic帐户。 New Relic APM和基础架构的完全监控量度和事件将保留7天。
+每个AEMas a Cloud Service环境各3个：
+
+* 每个环境有一个用于创作服务的应用程序
+* 每个环境（包括Golden Publish）有一个用于发布服务的应用程序
+* 每个环境有一个用于预览服务的应用程序每个应用程序使用一个许可证密钥，AEMas a Cloud Service环境将只报告给一个New Relic帐户。 New Relic APM和基础架构的完全监控量度和事件将保留7天。
 
 ### 谁可以访问New RelicCloud Service数据？ {#access-new-relic-cloud}
 
