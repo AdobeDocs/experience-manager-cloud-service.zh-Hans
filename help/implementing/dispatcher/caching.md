@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
+source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -134,7 +134,12 @@ Define DISABLE_DEFAULT_CACHING
 >
 >调度程序的 `invalidate.cache` 不再支持API方法，因为它只处理特定的调度程序节点。 AEMas a Cloud Service在服务级别运行，而不是在单个节点级别运行，因此 [使从AEM中缓存的页面失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) 页面对AEMas a Cloud Service无效。
 
-应使用复制刷新代理。 可以使用复制API完成此操作。 的 [提供了复制API文档](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)，以及刷新缓存的示例，请参阅 [API示例页面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (特别是 `CustomStep` 向所有可用代理发出类型为“激活”的复制操作的示例)。 无法配置刷新代理端点，但已预配置为指向与运行刷新代理的发布服务匹配的调度程序。 刷新代理通常可以由OSGi事件或工作流触发。
+应使用复制刷新代理。 可以使用 [复制API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). 无法配置刷新代理端点，但已预配置为指向与运行刷新代理的发布服务匹配的调度程序。 刷新代理通常可以由OSGi事件或工作流触发。
+
+<!-- Need to find a new link and/or example -->
+<!-- 
+and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
+-->
 
 下图说明了这一点。
 
