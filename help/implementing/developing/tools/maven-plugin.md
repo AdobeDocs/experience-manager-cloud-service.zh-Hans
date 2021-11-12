@@ -2,7 +2,7 @@
 title: Adobe内容包Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 5%
@@ -117,7 +117,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 除了以下参数之外，请参阅 [常用参数](#common-parameters) 中。
 
 | 名称 | 类型 | 必填 | 默认值 | 描述 |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | 否 | 的值 `artifactId` Maven项目的属性 | 表单的字符串 `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | 否 | 无 | 要安装的对象的ID |
 | `groupId` | `String` | 否 | 无 | 的 `groupId` 要安装的物品 |
