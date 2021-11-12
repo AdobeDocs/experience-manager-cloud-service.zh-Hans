@@ -3,7 +3,7 @@ title: AEMas a Cloud Service版本2021.11.0中的Cloud Manager发行说明
 description: AEMas a Cloud Service版本2021.11.0中的Cloud Manager发行说明
 feature: Release Information
 exl-id: null
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: ec2719fca19f366e0021fea7429e93c15e9579df
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 发布日期 {#release-date}
 
 AEMas a Cloud Service中Cloud Manager的发行日期为2021.11.0 2021年11月4日。
-下一版本计划于2021年12月9日发布。
+下一版本计划于2021年12月16日发布。
 
 ### 新增功能 {#what-is-new}
 
