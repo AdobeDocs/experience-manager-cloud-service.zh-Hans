@@ -1,10 +1,9 @@
 ---
 title: 创作商务体验
 description: 工作商务体验
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -63,9 +62,9 @@ CIF附加组件通过特定于商务的功能，扩展了AEM创作。 这样，�
 
 与资产类似，产品可以在页面（默认创建Product Teaser组件）或组件（当前支持的是Product Teaser和Product Carousel）上进行分发。
 
-### 使用RTE（富文本编辑器）在文本字段中添加指向产品或类别页面的链接  {#rte}
+### 使用RTE在文本字段中添加链接 {#rte}
 
-CIF产品目录页面是即时呈现的虚拟页面。 因此，无法嵌入超链接(如常规AEM页面的超链接)。 CIF会向RTE中添加一个新操作“商务链接”。 此操作的工作方式与常规“超链接”操作完全相似，但允许作者使用选取器选择产品或类别。
+CIF产品目录页面是即时呈现的虚拟页面。 因此，无法嵌入超链接(如常规AEM页面的超链接)。 CIF会向RTE（富文本编辑器）中添加一个新操作“商务链接”。 此操作的工作方式与常规“超链接”操作完全相似，但允许作者使用选取器选择产品或类别。
 
 ![RTE](../assets/authoring/RTE.png)
 

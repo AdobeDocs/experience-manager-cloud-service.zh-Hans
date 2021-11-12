@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ea4009b7ab99ea8fd9def4157302b942794aa283
+source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 创建多个类别和产品页面
+# 创建多个类别和产品页面 {#multiple}
 
     >[!NOTE]
     >
@@ -31,6 +31,6 @@ ht-degree: 2%
 
 - [AEM CIF核心组件 — 多目录页面配置](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## 相关资源
+## 相关资源 {#related}
 
 还可以动态定位页面的特定区域并重复使用同一模板。 了解如何 [使用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md).
