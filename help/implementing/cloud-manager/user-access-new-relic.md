@@ -1,9 +1,9 @@
 ---
 title: 用户访问新旧版
 description: 请阅读本页，了解New Relic Application Performance Monitoring for AEMas a Cloud Service
-source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Adobe通过New Relic APM Java插件监控AEMas a Cloud Service创作、发布和
 * 每个环境（包括Golden Publish）有一个用于发布服务的应用程序
 * 每个环境有一个用于预览服务的应用程序
    >[!IMPORTANT]
-   >每个应用程序使用一个许可证密钥，AEMas a Cloud Service环境将仅报告给一个New Relic帐户。 New Relic APM和基础架构的完全监控量度和事件将保留7天。
+   >每个应用程序使用一个许可证密钥，AEMas a Cloud Service环境将仅报告给一个New Relic帐户。 New Relic APM的完整监控量度和事件将保留7天。
 
 ### 谁可以访问New RelicCloud Service数据？ {#access-new-relic-cloud}
 
