@@ -1,9 +1,9 @@
 ---
 title: 用户访问新旧版
-description: 用户访问新旧版
-source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
+description: 请阅读本页，了解New Relic Application Performance Monitoring for AEMas a Cloud Service
+source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
