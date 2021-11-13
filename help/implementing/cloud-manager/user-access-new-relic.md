@@ -1,9 +1,9 @@
 ---
 title: 用户访问新旧版
 description: 请阅读本页，了解New Relic Application Performance Monitoring for AEMas a Cloud Service
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Adobe高度重视应用程序的监控、可用性和性能。 为帮助实现�
    >[!NOTE]
    >如果您没有收到New Relic发送的电子邮件：
    >检查 [垃圾过滤器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). 如果适用， [将新旧内容添加到电子邮件允许列表](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >请提供有关支持票证的反馈，我们的团队将帮助您进一步
+   >请提供有关支持票证的反馈，Adobe支持团队将进一步帮助您。
 
 1. 如果您完成注册过程，并且由于电子邮件或密码错误消息而无法登录帐户，请通过记录支持票证 [Admin Console](https://adminconsole.adobe.com/).
 
