@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
+source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ ht-degree: 1%
 
 ## 后台任务和长时间运行的作业 {#background-tasks-and-long-running-jobs}
 
-作为后台任务执行的代码必须假定它正在运行的实例可以随时关闭。 因此，代码必须具有弹性，且导入次数最多可恢复。 这意味着如果重新执行代码，则不应再次从开头开始，而应从离开的位置开始。 虽然这不是此类代码的新要求，但在AEMas a Cloud Service中，更有可能发生实例停用。
+作为后台任务执行的代码必须假定它正在运行的实例可以随时关闭。 因此，代码必须是可复原的，最重要的是，它是可恢复的。 这意味着如果重新执行代码，则不应再次从开头开始，而应从离开的位置开始。 虽然这不是此类代码的新要求，但在AEMas a Cloud Service中，更有可能发生实例停用。
 
-为了将问题降至最低，应尽可能避免长时间运行的作业，并且应至少恢复这些作业。 要执行此类作业，请使用Sling作业，Sling作业可至少保证一次，因此，如果中断，将尽快重新执行。 但它们或许不应该从头开始。 对于安排此类作业，最好使用 [Sling作业](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 调度程序，这样至少执行一次。
+为了将问题降至最低，应尽可能避免长时间运行的作业，并且应至少恢复这些作业。 要执行此类作业，请使用Sling作业，Sling作业可至少保证一次，因此，如果中断，将尽快重新执行。 但它们或许不应该从头开始。 对于安排此类作业，最好使用 [Sling作业](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 这样，调度程序可确保至少执行一次。
 
 不应使用Sling Commons Scheduler进行计划，因为无法保证执行。 只是更有可能会安排时间。
 
