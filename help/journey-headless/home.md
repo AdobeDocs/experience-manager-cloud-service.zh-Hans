@@ -1,7 +1,8 @@
 ---
 title: AEM无头历程
-description: 从此处开始，概述可用于了解AEM强大无头功能的引导式历程。
-source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
+description: 文档历程集合介绍了如何将Adobe Experience Manager用作无头CMS。
+exl-id: 6645d061-e3bc-4ca2-976a-9c603f2363bc
+source-git-commit: a5af9927bf25968d0e7d28d09d815589fb3967f1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 1%
@@ -22,7 +23,7 @@ ht-degree: 1%
 
 ## AEM文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和功能结合在一起，提供了一种说明，帮助对AEM不熟悉、从头到尾理解和解决业务问题的读者，同时尽可能少地了解以前的主题或AEM知识。
+[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和特性联系起来，提供一种说明，帮助读者从头到尾理解和解决业务问题(对AEM而言，读者可能是新手)，同时尽量少地了解以前的主题或AEM知识。
 
 文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
 
@@ -45,6 +46,6 @@ ht-degree: 1%
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 了解无头技术、它们为用户体验带来了什么、AEM如何支持无头模型，以及如何实施您自己从A到Z的无头开发项目。 | 开发人员 |
 | [无头翻译历程](/help/journey-headless/translation/overview.md) | 了解无头技术、在您的项目中使用这些技术的原因，以及如何在AEM中从A到Z创建和更新翻译项目。 | 翻译专家 |
 | [无外设创作历程](/help/journey-headless/author/overview.md) | 从此处开始，您可以体验AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。 | 架构师 |
-| [无外设架构师历程](/help/journey-headless/architect/overview.md) | 从此处开始，介绍Adobe Experience Manager作为Cloud Service的强大、灵活、无头的功能，以及如何为您的项目建立内容模型。 | 内容创建者和作者 |
+| [无外设架构师历程](/help/journey-headless/architect/overview.md) | 从此处开始，您可以了解Adobe Experience Manager as a Cloud Service强大而灵活且无头的功能，以及如何为您的项目建立内容模型。 | 内容创建者和作者 |
 
-请继续关注即将发布的涉及其他角色的历程。](/help/journey-documentation/home.md#journeys)[
+敬请关注 [即将推出的旅程，涵盖其他角色。](/help/journey-documentation/home.md#journeys)
