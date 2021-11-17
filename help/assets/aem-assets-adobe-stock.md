@@ -1,13 +1,13 @@
 ---
 title: 管理 [!DNL Adobe Stock] 资产 [!DNL Assets].
 description: 搜索、获取、许可和管理 [!DNL Adobe Stock] 资产 [!DNL Adobe Experience Manager]. 将授权资产用作任何其他数字资产。
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ea1b2d58c04937304bddd528a9839bdf627f1ae9
+source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2426'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 8%
 
 该集成要求：
 
+* 启动并运行 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 实例
 * 安 [企业 [!DNL Adobe Stock] 计划](https://stockenterprise.adobe.com/)
 * 具有Admin Console到默认Stock产品配置文件的权限的用户
 * 具有开发人员访问配置文件权限的用户，用于在Adobe开发人员控制台中创建集成
@@ -39,7 +40,7 @@ ht-degree: 8%
 * 在中启用服务帐户(JWT)身份验证 [!DNL Adobe Developer Console] 您的股票权利
 * 允许从内部在全局范围内管理学分和许可 [!DNL Adobe Admin Console]
 
-在授权内，默认的产品配置文件 [!DNL Adobe Stock] 存在于 [!DNL Admin Console]. 可以创建多个配置文件，并且这些配置文件可确定谁可以授权Stock资产。 直接访问产品配置文件的用户可以访问 [https://stock.adobe.com/](https://stock.adobe.com/) 和许可Stock资产。 而有另一种方法使用开发人员访问创建集成(API)来验证之间的通信 [!DNL Experience Manager] 和 [!DNL Adobe Stock].
+在授权内，默认的产品配置文件 [!DNL Adobe Stock] 存在于 [!DNL Admin Console]. 可以创建多个配置文件，并且这些配置文件可确定谁可以授权Stock资产。 直接访问产品配置文件的用户可以访问 [https://stock.adobe.com/](https://stock.adobe.com/) 和许可Stock资产。 而有另一种使用开发人员访问创建集成(API)的方法。 此集成验证了之间的通信 [!DNL Experience Manager Assets] 和 [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ IMS 配置包括两个步骤：
 
 公钥（证书）在Adobe开发人员控制台中对您的产品用户档案进行身份验证。
 
-1. 登录到 [!DNL Experience Manager Assets] 创作实例。 默认URL为 `http://localhost:4502/aem/start.html`.
+1. 登录到 [!DNL Experience Manager Assets] 云实例。
 
 1. 从 **[!UICONTROL 工具]** 面板，导航到 **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**.
 
