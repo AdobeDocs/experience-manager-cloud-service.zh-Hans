@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
+source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2441'
 ht-degree: 8%
 
 ---
@@ -314,9 +314,9 @@ IMS 配置包括两个步骤：
 | 用户 | 组 | 权限 | 在用户首选项中接受库存配置 | 访问资产 | 访问Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | 管理员 | 不适用 | 所有 | 不适用 | 是 | 是 |
-| test-doc1 | DAM 用户 | `/conf/global/settings/stock/cloud-config` | 是 | 是 | 是 |
-| test-doc1 | DAM 用户 | `/conf/global/settings/stock/cloud-config` | 否 | 错误：无法加载数据 | 否 |
-| test-doc1 | DAM 用户 | 允许： `/conf/global/settings/stock` 拒绝： `/cloud-config` | 库配置不可见 | 是 | 否 |
+| test-doc1 | DAM 用户 | /conf/global/settings/stock/cloud-config | 是 | 是 | 是 |
+| test-doc1 | DAM 用户 | /conf/global/settings/stock/cloud-config | 否 | 错误：无法加载数据 | 否 |
+| test-doc1 | DAM 用户 | **允许**:/conf/global/settings/stock **拒绝**:/cloud-config | 库配置不可见 | 是 | 否 |
 
 ## 使用和管理 [!DNL Adobe Stock] 资产 [!DNL Experience Manager] {#usemanage}
 
