@@ -2,9 +2,9 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2877'
 ht-degree: 12%
 
 ---
@@ -97,7 +97,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 + 的 `ui.content` 包包含所有内容和配置。 内容包包含所有节点定义，这些定义不在 `ui.apps` 或 `ui.config` 包，换言之， `/apps` 或 `/oak:index`. 的常见元素 `ui.content` 包包含，但不限于：
    + 上下文感知配置
       + `/conf`
-   + 必需且复杂的内容结构(即 内容构建基于并扩展到在存储库初始化中定义的基准内容结构之后。)
+   + 必需且复杂的内容结构(即 内容构建，该构建基于并扩展了在存储库初始化中定义的过去基线内容结构。)
       + `/content`, `/content/dam`, 等.
    + 受管制的标记分类
       + `/content/cq:tags`
@@ -164,7 +164,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 ## Repo Init{#repo-init}
 
-Repo Init提供了定义JCR结构的说明或脚本，这些结构从常见的节点结构（如文件夹树）到用户、服务用户、组和ACL定义。
+Repo Init提供了定义JCR结构的指令或脚本，这些结构从常见的节点结构（如文件夹树）到用户、服务用户、组和ACL定义。
 
 Repo Init的主要优势在于它们具有执行其脚本定义的所有操作的隐式权限，并且可在部署生命周期的早期调用，以确保执行时间代码时存在所有必需的JCR结构。
 

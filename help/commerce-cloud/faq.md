@@ -2,9 +2,9 @@
 title: AEM — 使用商务集成框架的商务集成常见问题解答
 description: AEM — 使用商务集成框架的商务集成常见问题解答
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Adobe已采用Magento的GraphQL API作为其官方商务API，用于所有与商务相关的数据。 因此，AEM使用GraphQL通过I/O运行时与Magento和任何商务引擎交换商务数据。 此GraphQL API与AEM GraphQL API无关，可用于访问内容片段。
 
-## 2.能否通过Adobe商务(Magento)管理员从AEM中存储和引用产品资产（图像）？ 如何使用Dynamic Media中的资产？
+## 2.能否通过Adobe Commerce(Magento)管理员从AEM中存储和引用产品资产（图像）？ 如何使用Dynamic Media中的资产？
 
-没有正式的AEM Assets -Magento集成可用。 [marketplace](https://marketplace.magento.com/bounteous-dam.html)上有一个合作伙伴连接器。
+没有正式的AEM Assets -Magento集成可用。 在 [市场](https://marketplace.magento.com/bounteous-dam.html).
 
 或者，作为解决方法，您可以在AEM Assets中存储产品资产（图像），但您必须手动将资产URL存储在Magento中。 Dynamic Media现在是AEM Assets的一部分，将以同样的方式工作。
 
@@ -31,7 +31,7 @@ Adobe已采用Magento的GraphQL API作为其官方商务API，用于所有与商
 
 ## 5.在商务解决方案中更新产品数据时，是否是实时推送到AEM? 还是批量处理？
 
-与AEMCloud Service一起使用的CIF附加组件允许数据从商务解决方案流向AEM按需。 因此，当您的商务解决方案中存在更新时，这不是实时推送或批量处理流程。
+与AEM Cloud Service一起使用的CIF附加组件允许数据从商务解决方案流向AEM按需。 因此，当您的商务解决方案中存在更新时，这不是实时推送或批量处理流程。
 
 ## 6. CIF支持的AEM目录大小是多少？
 
@@ -47,7 +47,7 @@ PIM数据将通过GraphQL请求公开给AEM和客户端。 我们的建议是将
 
 ## 9. AEM Dispatcher的缓存失效如何与AEM和商务一起使用？
 
-我们建议为Dispatcher上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议渲染客户端日期。 有关基于TTL的缓存失效的更多信息，请参阅[AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+我们建议为Dispatcher上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议在客户端渲染数据。 有关基于TTL的缓存失效的详细信息，请参阅 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10.是否建议使用商务在AEM内容中进行统一搜索？
 
@@ -67,7 +67,7 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件向商务解决方案�
 
 ## 14.在整个表示层使用AEM时，我们如何确保PCI合规性？
 
-我们建议使用抽象的支付方法。 这使得浏览器客户端与支付网关提供商直接通信，从而Adobe或商业解决方案都不能保存或传递持卡人数据。 这种方法只需要3级PCI合规性。 但是，还有一些其他事项需要考虑完全符合PCI标准，例如员工如何与系统和数据交互。 有关MagentoPCI合规性的详细信息，请参阅<https://magento.com/pci-compliance>
+我们建议使用抽象的支付方法。 这使得浏览器客户端与支付网关提供商直接通信，从而Adobe或商业解决方案都不能保存或传递持卡人数据。 这种方法只需要3级PCI合规性。 但是，还有一些其他事项需要考虑完全符合PCI标准，例如员工如何与系统和数据交互。 有关MagentoPCI合规性的详细信息，请参阅 [PCI合规性要求](https://magento.com/pci-compliance).
 
 ## 15.如果我使用AEM和Magento云版本，此联合解决方案是否符合PCI标准？
 
@@ -75,4 +75,4 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件向商务解决方案�
 
 ## 16.如何请求I/O运行时试用许可证？
 
-您可以在此处](https://adobeio.typeform.com/to/obqgRm)请求试用许可证以使用I/O运行时[。
+您可以请求试用许可证以使用I/O运行时 [此处](https://adobeio.typeform.com/to/obqgRm).
