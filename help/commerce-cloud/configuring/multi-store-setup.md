@@ -1,23 +1,23 @@
 ---
 title: 商务多商店设置
 description: 了解如何将多个商店视图从Magento映射到AEM。 这允许项目支持多租户和多语言用例。
-sub-product: 商务
+sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: 商务集成框架
+feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
-# 商务多商店设置{#multi-store}
+# 商务多商店设置 {#multi-store}
 
 AEM CIF核心组件可用于多个AEM站点结构，并且基础GraphQL客户端实施可以连接到不同的Magento存储/存储视图。 这允许项目实施复杂的多存储/多站点设置。
 
@@ -33,13 +33,13 @@ AEM Live Copy和语言副本的多站点管理功能与商务集成框架结合�
 
 ## 配置 {#configuration}
 
-1. 根据[Magento网站、商店和视图](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)中描述的模式配置多个商店和商店视图
+1. 根据 [Magento网站、商店和视图](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
 2. 确保AEM和Magento之间的连接正常工作。
 
 3. 按照以下步骤创建CIFCloud Service配置的子配置：
 
-   * 在AEM中，转到Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * 在AEM中，转到“工具” — >“常规” — > [配置浏览器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 选择您创建的基本配置
    * 使用上面第2点所述的步骤创建新配置
 
@@ -52,10 +52,10 @@ AEM Live Copy和语言副本的多站点管理功能与商务集成框架结合�
 4. 将子配置分配给AEM站点
 
    * 转到AEM Sites控制台
-   * 导航到站点结构的区域或语言根，例如用于Venia示例页面的/content/venia/us _或_ /content/venia/us/en
+   * 导航到站点结构的区域或语言根，例如/content/venia/us _或_ /content/venia/us/en（用于Venia示例页面）
    * 选择页面并打开页面属性
    * 选择高级选项卡
-   * 在`Configuration`部分中，选择您在步骤中创建的配置
+   * 在 `Configuration` 部分选择您在步骤3中创建的配置
 
 ## 其他资源
 
