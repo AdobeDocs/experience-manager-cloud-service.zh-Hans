@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 42%
+source-wordcount: '488'
+ht-degree: 41%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 42%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概述和新增功能](overview.md)
-+ [对 [!DNL Assets] as a [!DNL Cloud Service]的显着更改](assets-cloud-changes.md)
++ [对 [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 架构](architecture.md)
 + [支持的文件格式](file-format-support.md)
 + [资产微服务概述](asset-microservices-overview.md)
-+ [ [!DNL Assets]中的辅助功能](accessibility.md)
-+ 管理数字资产{#manage}
++ [中的辅助功能 [!DNL Assets]](accessibility.md)
++ 管理数字资产 {#manage}
    + [共享资产](share-assets.md)
    + [监测活动和 DAM 任务](assets-activity-history.md)
    + [开始使用资产微服务](asset-microservices-configure-and-use.md)
@@ -31,10 +31,10 @@ ht-degree: 42%
    + [图像智能标记](smart-tags.md)
    + [智能标记视频资产](smart-tags-video-assets.md)
    + [如何组织资产](organize-assets.md)
-   + [使用 [!DNL Adobe Stock] assets](aem-assets-adobe-stock.md)
+   + [使用 [!DNL Adobe Stock] 资产](aem-assets-adobe-stock.md)
    + [管理收藏集](manage-collections.md)
    + [元数据概述](manage-metadata.md)
-   + [与 [!DNL Adobe Creative Cloud]集成](aem-cc-integration-best-practices.md)
+   + [集成 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [如何添加或编辑元数据](meta-edit.md)
    + [审核文件夹资产和收藏集](bulk-approval.md)
    + [使用和配置资产分析](assets-insights.md)
@@ -46,8 +46,8 @@ ht-degree: 42%
    + [签入和签出要编辑的资产](check-out-and-submit-assets.md)
    + [Digital Rights Management资产](drm.md)
    + [对资产添加水印](watermark-assets.md)
-   + [使用 [!DNL Creative Cloud] API处理资产](cc-api-integration.md)
-+ 配置、管理和扩展[!DNL Assets] {#admin}
+   + [使用处理资产 [!DNL Creative Cloud] API](cc-api-integration.md)
++ 配置、管理和扩展 [!DNL Assets] {#admin}
    + [开发人员文档和API参考](developer-reference-material-apis.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
    + [使用图像和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -66,9 +66,9 @@ ht-degree: 42%
    + [媒体库功能](medialibrary.md)
    + [导入和导出资产元数据](metadata-import-export.md)
 + 共享和分发资产 {#brand-portal}
-   + [使用 [!DNL Brand Portal]配置 [!DNL Assets] ](configure-aem-assets-with-brand-portal.md)
+   + [配置 [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [将资产发布到 [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [将资产从发 [!DNL Brand Portal] 布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+   + [从发布资产 [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + 内容片段 {#content-fragments}
    + [使用内容片段](content-fragments/content-fragments.md)
    + [使用内容片段和GraphQL进行无头交付](content-fragments/content-fragments-graphql.md)
@@ -127,3 +127,7 @@ ht-degree: 42%
    + [HTTP2 内容交付常见问题解答](dynamic-media/http2faq.md)
    + [Flash查看器生命周期终止](dynamic-media/flash-viewers-eol.md)
    + [DHTML查看器生命周期终止](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ 与其他解决方案集成 {#integrations}
+   + [集成 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [安装 [!DNL enhanced connector] 表示 [!DNL Workfront]](workfront-connector-install.md)
+   + [配置 [!DNL enhanced connector] 表示 [!DNL Workfront]](workfront-connector-configure.md)
