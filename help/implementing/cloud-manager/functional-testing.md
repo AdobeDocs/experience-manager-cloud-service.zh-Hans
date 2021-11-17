@@ -2,9 +2,9 @@
 title: 功能测试 — Cloud Services
 description: 功能测试 — Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '946'
 ht-degree: 3%
 
 ---
@@ -119,9 +119,11 @@ AEM为其客户提供了一套集成的Cloud Manager质量门户，以确保顺�
     </plugins>
 ```
 
-在此JAR文件中，要执行的实际测试的类名必须以IT结尾。
+在此JAR文件中，要执行的实际测试的类名必须在 `IT`.
 
-例如，名为 `com.myco.tests.aem.ExampleIT` 将被执行，但是一个名为 `com.myco.tests.aem.ExampleTest` 不会。
+例如，名为 `com.myco.tests.aem.it.ExampleIT` 会被执行，但是一个名为 `com.myco.tests.aem.it.ExampleTest` 不会。
+
+此外，要从代码扫描的覆盖范围检查中排除测试代码，测试代码必须位于名为 `it` (覆盖范围排除过滤器为 `**/it/**/*.java`)。
 
 测试类必须是常规的JUnit测试。 测试基础架构经过设计和配置，可与aem测试客户端测试库使用的惯例兼容。 我们强烈鼓励开发人员使用此库并遵循其最佳实践。 请参阅 [Git链接](https://github.com/adobe/aem-testing-clients) 以了解更多详细信息。
 
