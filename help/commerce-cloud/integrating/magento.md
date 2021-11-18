@@ -3,7 +3,7 @@ title: AEM和Adobe Commerce(Magento)集成使用商务集成框架
 description: AEM和Adobe Commerce(Magento)可使用商务集成框架(CIF)无缝集成。 CIF允许AEM访问Magento实例，并通过GraphQL与Magento通信。 它还允许AEM作者使用产品和类别选取器以及产品控制台来浏览从Magento中按需获取的产品和类别数据。 此外，CIF还提供开箱即用的店面，可加快商业项目的进度。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 52cfd60cde3165fde6b0167783c16b0fc1efc950
+source-git-commit: 96e7a7c38dd1275c9b0d291d12a0f768ab183c38
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Experience Manager和Adobe Commerce(Magento)可使用商务集成框架(CIF)无�
 ![CIF架构概述](../assets/AEM_Magento_Architecture.png)
 
 在CIF中，支持服务器端和客户端通信模式。
-服务器端API调用是使用内置的通用API调用来实现的 [GraphQL客户端](https://github.com/adobe/commerce-cif-graphql-client) 与 [生成的数据模型集](https://github.com/adobe/commerce-cif-magento-graphql) 此外，对于商务GraphQL模式，可以使用GQL格式的任何GraphQL查询或变异。
+服务器端API调用是使用内置的通用API调用来实现的 [GraphQL客户端](https://github.com/adobe/commerce-cif-graphql-client) 与 [生成的数据模型集](https://github.com/adobe/commerce-cif-magento-graphql) （商务GraphQL架构）。 此外，还可以使用GQL格式的任何GraphQL查询或变异。
 
 对于客户端组件，这些组件是使用 [React](https://reactjs.org/), [阿波罗客户](https://www.apollographql.com/docs/react/) 中，将使用。
 

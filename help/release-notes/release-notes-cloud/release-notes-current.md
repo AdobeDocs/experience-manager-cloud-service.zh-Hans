@@ -3,7 +3,7 @@ title: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
+source-git-commit: f542d9423450086fcc4c0ba62f0e6f178df462e3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了当前（最新）版本的常规发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * CIF附加组件支持最新的Commerce v2.4.3和新的GraphQL API和架构
 
-* 作者可以使用富文本编辑器(RTE)在文本字段中添加指向产品和目录页面的链接。 CIF图标已添加到RTE工具栏，该工具栏将打开选取器，以便快速搜索并选择产品或类别，而无需离开上下文。
+* 作者可以使用富文本编辑器(RTE)在文本字段中添加指向产品和目录页面的链接。 CIF图标已添加到RTE工具栏中，该工具栏将打开选取器，以便快速搜索并选择产品或类别，而无需离开上下文。
 
 * 现有的弹出式购物车和结帐已替换为专用的AEM购物车和结帐页面。 这些页面上的组件是使用Magento的可扩展Peregrine组件构建的
 
@@ -146,7 +146,7 @@ AEMas a Cloud Service中Cloud Manager的发行日期为2021.10.0 2021年10月14�
 
 ### 新增功能 {#what-is-new-cm-oct}
 
-* 为了准备一些即将发生的更改，现在将在用户界面中引用现有部署管道，并将其标记为 **完整堆栈** 管道。
+* 为了准备一些即将发生的更改，现在将在用户界面中引用现有部署管道，并将其标记为 **完全堆栈** 管道。
 
 * 管道卡已刷新，现在可显示单个集成的表面，该表面既显示生产管道，也显示非生产管道，用户可以直接从与每个管道关联的操作菜单中选择“运行/暂停/恢复”。
 

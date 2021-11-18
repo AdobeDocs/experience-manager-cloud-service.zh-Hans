@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
+source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
 workflow-type: tm+mt
 source-wordcount: '2877'
 ht-degree: 12%
@@ -542,7 +542,7 @@ scripts=["
 <filter root="/apps/my-app-packages"/>
 ```
 
-如果为多个 `/apps/*-packages` 在嵌入目标中使用，则必须在此处枚举所有这些目标。
+如果为多个 `/apps/*-packages` 在嵌入的目标中使用，则必须在此处枚举所有这些目标。
 
 ### 第三方Maven存储库 {#xml-3rd-party-maven-repositories}
 

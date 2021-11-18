@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 7%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
-> 自AEM CIF核心组件版本2.0.0起，URL提供程序配置仅提供预定义的URL格式，而不提供1.x版本中可配置的自由文本格式。 此外，使用选择器在URL中传递数据的方法已被替换为后缀。
+> 自AEM CIF核心组件版本2.0.0起，URL提供程序配置仅提供预定义的URL格式，而不提供1.x版本中已知的可配置自由文本的格式。 此外，使用选择器在URL中传递数据的方法已被替换为后缀。
 
 ### 产品页面URL格式 {#product}
 
@@ -93,7 +93,7 @@ ht-degree: 7%
 
 还可以通过将AEM Dispatcher HTTP服务器与 `mod_rewrite` 模块。 的 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 提供引用AEM Dispatcher配置，该配置已包含基本 [重写规则](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 的值。
 
-## 示例
+## 示例 {#example}
 
 的 [Venia参考存储](https://github.com/adobe/aem-cif-guides-venia) 项目包含用于演示产品和类别页面使用自定义URL的示例配置。 这允许每个项目根据其SEO需求为产品和类别页面设置单个URL模式。 CIF的组合 `UrlProvider` 和Sling映射（如上所述）。
 
@@ -101,7 +101,7 @@ ht-degree: 7%
 >
 >此配置必须使用项目使用的外部域进行调整。 Sling映射基于主机名和域运行。 因此，此配置默认处于禁用状态，且必须在部署之前启用。 为此，请重命名Sling映射 `hostname.adobeaemcloud.com` 文件夹 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 根据使用的域名，并通过添加 `resource.resolver.map.location="/etc/map.publish"` 到 `JcrResourceResolver` 项目的配置。
 
-## 其他资源
+## 其他资源 {#additional}
 
 * [Venia参考存储](https://github.com/adobe/aem-cif-guides-venia)
 * [AEM资源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)

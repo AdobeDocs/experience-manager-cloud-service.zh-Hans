@@ -1,7 +1,7 @@
 ---
 title: CIF创作入门
 description: CIF创作入门
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+source-git-commit: e497b5b4439cf91ec7ea698d9bedcb4210802414
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何将CIF用于特定于内容和商务的创作。 阅读后，您应该：
+本文档可帮助您了解如何将CIF用于特定于内容和商务的创作。 阅读后，您应：
 
 * 使用通用编辑器了解CIF创作的概念
 * 如何使用产品和类别选取器在AEM中访问产品目录数据
