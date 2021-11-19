@@ -3,9 +3,9 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screensas a Cloud Service
 breadcrumb-title: AEM Screensas a Cloud Service
 user-guide-description: 了解AEM Screensas a Cloud Service。
-source-git-commit: 5e2d3df282addcb42072f577f32e9b8b299af346
+source-git-commit: fc3c047c6ad08db6e992a2aedc58c9cc1478b99f
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '203'
 ht-degree: 1%
 
 ---
@@ -44,4 +44,5 @@ ht-degree: 1%
    + [视频的缩略图支持](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
 + 在屏幕中开发as a Cloud Service {#developing-screens-cloud}
    + [为Screens开发自定义组件as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
+   + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
 + [Screensas a Cloud Service常见问题解答](/help/screens-cloud/screens-cloud-faqs.md)
