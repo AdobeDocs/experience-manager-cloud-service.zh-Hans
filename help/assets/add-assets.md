@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2192'
 ht-degree: 1%
 
 ---
@@ -156,6 +156,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 按最大大小过滤]:以MB为单位提供资产的最大文件大小。
    * [!UICONTROL 排除Mime类型]:要从摄取中排除的MIME类型列表（以逗号分隔）。 例如, `image/jpeg, image/.*, video/mp4`. 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
    * [!UICONTROL 包括Mime类型]:要包含在摄取中的MIME类型列表（以逗号分隔）。 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
+   * [!UICONTROL 导入后删除源文件]:选择此选项可在将文件导入到 [!DNL Experience Manager].
    * [!UICONTROL 导入模式]:选择跳过、替换或创建版本。 跳过模式是默认模式，在此模式下，摄取者会跳过以导入资产（如果资产已存在）。 查看 [替换和创建版本选项](#handling-upload-existing-file).
    * [!UICONTROL Assets Target文件夹]:在DAM中导入资产的导入文件夹。 例如, `/content/dam/imported_assets`
    * [!UICONTROL 元数据文件]:要导入的元数据文件，以CSV格式提供。 您可以在源Blob位置中提供此CSV文件，并引用批量摄取工具配置中的路径。
