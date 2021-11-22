@@ -1,19 +1,19 @@
 ---
 title: 已知问题
-description: 特定于 Adobe Experience Manager as a Cloud Service 已知问题的发行说明
+description: Adobe Experience Manager as a Cloud Service的已知问题
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 100%
+source-wordcount: '111'
+ht-degree: 33%
 
 ---
 
 # 已知问题 {#known-issues}
 
-本文列出了 Adobe Experience Manager as a Cloud Service 产品的已知问题。该列表会随每次连续发行的 Experience Manager 进行修订和更新。
+本文列出了 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 服务。 该列表会随每次连续发布的 [!DNL Experience Manager].
 
-有关已知问题的详细信息，请[联系支持人员](https://helpx.adobe.com/cn/support/experience-manager.html)。
+有关已知问题的详细信息，请[联系支持人员](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support)。
 
 <!-- 
 ## Platform {#platform}
@@ -21,28 +21,36 @@ ht-degree: 100%
 ## Sites {#sites}
 -->
 
-## 资产 {#assets}
+## [!DNL Assets] {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-一些已知问题包括：
+中的一些已知问题 [!DNL Assets] 为：
+
+* **下载**:如果下载空文件夹， [!DNL Experience Manager] 传达了有关创建ZIP存档的成功消息，但未创建存档。
 
 * **元数据架构**：资产评级小部件曾导致 JSP 编译错误。已从元数据架构将其删除。<!-- CQ-4282865, CQ-4284633 -->
 
-### 即将推出的资产功能 {#upcoming-assets-capabilities}
+另请参阅 [显着更改 [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
 
-Adobe Experience Manager Assets 中有一些依赖于基础功能的功能在 Experience Manager as a Cloud Service 部署架构尚不可用，这些功能预计将在稍后的阶段中启用：
+<!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 
-* 由于依赖于商务集成框架 API，当前未启用以下功能：
-   * 照片拍摄工作流模型。
-   * 未填充资产属性用户界面中的“产品信息”选项卡。
-* 由于依赖于 InDesign 服务器集成，当前未启用以下功能：
-   * 资产模板和资产目录。
-   * Adobe InDesign 文件的多页预览。
+### Upcoming Assets capabilities {#upcoming-assets-capabilities}
+
+A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
+
+* Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
+  * Photoshoot workflow models.
+  * Product information tab in the asset properties user interface is not populated.
+
+* Capabilities not enabled at this stage due to dependency on InDesign Server integration:
+  * Asset Templates and Asset Catalogs.
+  * Multi-page preview of Adobe InDesign files.
+-->
 
 >[!MORELIKETHIS]
 >
->* [AEM 中的主要更改](aem-cloud-changes.md)
-* [已弃用和已删除的功能](deprecated-removed-features.md)
-* [发行说明](home.md)
+>* [中的主要更改 [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [已弃用和已删除的功能](deprecated-removed-features.md)
+>* [发行说明](home.md)
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 10%
+source-wordcount: '661'
+ht-degree: 9%
 
 ---
 
@@ -24,10 +24,9 @@ Adobe Experience Manager Assets允许您使用CSV文件批量导入资产元数�
 >
 >要导入自定义命名空间的元数据，请首先注册命名空间。
 
-1. 导航到Assets用户界面，然后点按/单击 **[!UICONTROL 创建]** 中。
-1. 从菜单中，选择 **[!UICONTROL 元数据]**.
-1. 在&#x200B;**[!UICONTROL 元数据导入]**&#x200B;页面中，点按/单击&#x200B;**[!UICONTROL 选择文件]**。选择包含元数据的 CSV 文件。
-1. 指定以下参数：
+1. 导航到 [!DNL Assets] 用户界面，选择 **[!UICONTROL 创建]** ，然后选择 **[!UICONTROL 元数据]** 中。
+1. 在 **[!UICONTROL 元数据导入]** 页面，单击 **[!UICONTROL 选择文件]**. 选择包含元数据的 CSV 文件。
+1. 提供以下参数：
 
    | 参数 | 描述 |
    | ---------------------- | ------- |
@@ -37,13 +36,19 @@ Adobe Experience Manager Assets允许您使用CSV文件批量导入资产元数�
    | 启动工作流 | 默认为False。 当设置为 `true` 和默认设置对DAM元数据回写工作流(将元数据写入二进制XMP数据)有效。 启用工作流会减慢系统速度。 |
    | 资产路径列名称 | 为包含资产的CSV文件定义列名称。 |
 
-1. 单击 **[!UICONTROL 导入]** 中。 导入元数据后，系统会向您的通知收件箱发送通知。 导航到资产属性页面，并验证是否为资产正确导入了元数据值。
+1. 选择 **[!UICONTROL 导入]** 中。 导入元数据后，系统会向您的通知收件箱发送通知。 导航到资产属性页面，并验证是否为资产正确导入了元数据值。
 
-要在导入元数据时添加日期和时间戳，请使用 `YYYY-MM-DDThh:mm:ss.fff-00:00` 日期和时间的格式。 日期和时间以 `T`, `hh` 是24小时格式， `fff` 为纳秒，并且 `-00:00` 是时区偏移。 例如， `2020-03-26T11:26:00.000-07:00` 于2020年3月26日11时:26:太平洋标准时间上午00点。
+1. 要添加日期和时间戳以导入元数据，请使用 `YYYY-MM-DDThh:mm:ss.fff-00:00` 日期和时间的格式。 日期和时间以 `T`, `hh` 是24小时格式， `fff` 为纳秒，并且 `-00:00` 是时区偏移。 例如， `2020-03-26T11:26:00.000-07:00` 于2020年3月26日11时:26:上午00点（太平洋标准时间）。
+
+   * 日期格式取决于列标题及其格式。 例如，如果日期是带有格式的投诉 `yyyy-MM-dd'T'HH:mm:ssXXX` 则相应的列标题必须为 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * 默认日期格式为 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->如果日期格式不匹配 `YYYY-MM-DDThh:mm:ss.fff-00:00`，则不会设置日期值。 导出的元数据CSV文件的日期格式为 `YYYY-MM-DDThh:mm:ss-00:00`. 如果要导入该值，请通过添加表示为的纳秒值，将其转换为可接受的格式 `fff`.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## 导出元数据 {#export-metadata}
 
