@@ -2,7 +2,7 @@
 title: 添加TXT记录
 description: 添加自定义域名
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 26ac0c63e4fba167206f43f64f046452c922c10e
+source-git-commit: 1427873fcc825a7321c96cbcb41f7839b6e78056
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -27,7 +27,7 @@ DNS TXT记录可授权域在CDN服务中托管。 客户必须在区域中创建
 | 域 | 名称 | TXT值 |
 |--- |--- |---|
 | `example.com` | `_aemverification.example.com` | 复制Cloud Manager UI中显示的整个值。 这特定于域和环境。 `Ex:adobe-aem-verification=example.com/[program]/[env]/..` |
-| `test.example.com`<br>`www.example.com` | `_aemverification.www.example.com` | 复制Cloud Manager UI中显示的整个值。 这特定于域和环境。 `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
+| `www.example.com` | `_aemverification.www.example.com` | 复制Cloud Manager UI中显示的整个值。 这特定于域和环境。 `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
 
 完成后，您可以运行以验证结果： `dig _aemverification.[yourdomainname] -t txt`.
 预期结果应显示Cloud Manager UI中提供的TXT值。
