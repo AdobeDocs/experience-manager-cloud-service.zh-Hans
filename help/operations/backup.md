@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service中备份和恢复
 description: 在AEMas a Cloud Service中备份和恢复
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: cac25668240a87ecbf86c4f71881310b3c3d17d2
+source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ AEMas a Cloud Service支持：
 
 在所有情况下，自定义代码版本都将从恢复点之前的上次成功部署中获取。
 
-恢复时间目标(RTO)将因存储库的大小而异，但作为一般准则，恢复序列一旦开始，则大约需要30分钟。
+恢复时间目标(RTO)将因存储库的大小而异，但作为一般准则，恢复顺序应该需要30分钟到几小时的时间。
 
 恢复后，AEM版本将更新为最新版本。
 
