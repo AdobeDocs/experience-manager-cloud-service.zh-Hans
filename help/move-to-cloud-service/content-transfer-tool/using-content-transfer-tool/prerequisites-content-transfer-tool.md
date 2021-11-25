@@ -2,9 +2,9 @@
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 1%
 
 | 注意事项 | 当前支持的内容 |
 |--- |--- |
-| AEM 版本 | 内容传输工具只能在AEM 6.3或更高版本上运行。 要将内容传输工具与AEM 6.2或更早版本结合使用，需要将内容存储库就地升级到AEM 6.5。 无需将代码升级到AEM 6.5即可实现此目的。 |
-| 区段存储的大小 | 当前支持现有存储库，该存储库的JCR节点少于5500万，在&#x200B;*Author*&#x200B;上最多83 GB（在线压缩大小），在&#x200B;*Publish*&#x200B;上最多31 GB。 与Adobe客户关怀团队一起创建支持票证，以讨论区段存储大小超过这些限制的选项。 |
-| 内容存储库的总大小&#x200B;<br>*（区段存储+数据存储）* | 内容传输工具旨在为文件数据存储类型的数据存储传输高达10 TB的内容。 当前不支持任何高于10 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于10 TB的内容选项。 <br>对于Amazon S3和Azure Data Store类型的数据存储，可使用可选的 [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 复制前步骤来显着加快内容传输过程，并支持大于10TB的数据存储大小。 |
+| AEM 版本 | 内容传输工具只能在AEM 6.3或更高版本上运行。 |
+| 区段存储的大小 | 现有存储库，其JCR节点数少于5500万，且在 *作者* 和31 GB on *发布* 当前支持。 与Adobe客户关怀团队一起创建支持票证，以讨论区段存储大小超过这些限制的选项。 |
+| 内容存储库的总大小 <br>*（区段存储+数据存储）* | 内容传输工具旨在为文件数据存储类型的数据存储传输高达10 TB的内容。 当前不支持任何高于10 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于10 TB的内容选项。 <br>对于Amazon S3和Azure数据存储类型，可选 [预拷贝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 步骤可以显着加快内容传输过程，并支持超过10 TB的数据存储大小。 |
 | 总索引大小 | 当前支持最大25GB的索引总大小。 与Adobe客户关怀团队一起创建支持票证，以讨论索引大小超过此限制的选项。 |
 | 节点名称长度 | 节点名称的长度必须小于或等于150字节。 长度超过150字节的节点名称必须缩短为&lt;= 150字节，才能在AEMas a Cloud Service中由文档节点存储支持。 如果未修复这些长节点名称，则摄取将失败。 |
-| 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径中的内容。 要从`/etc`传输内容，只允许选择某些`/etc`路径，但仅支持[AEM Forms到AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)。 有关所有其他用例，请参阅[通用存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) ，了解有关存储库重组的更多信息。 |
-| MongoDB中的节点属性值 | MongoDB中存储的节点属性值不能超过16MB。 这由MongoDB强制执行。 如果存在大于此限制的属性值，则摄取将失败。 运行提取之前，请运行此[oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar)脚本。 检查所有大属性值，并验证是否需要它们。 超过16MB的数据需要转换为二进制值。 |
+| 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径中的内容。 从 `/etc` 仅限于 `/etc` 允许选择路径，但仅支持 [AEM Forms至AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). 有关所有其他用例，请参阅 [公共存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 以了解有关存储库重组的更多信息。 |
+| MongoDB中的节点属性值 | MongoDB中存储的节点属性值不能超过16MB。 这由MongoDB强制执行。 如果存在大于此限制的属性值，则摄取将失败。 运行提取之前，请运行此 [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) 脚本。 检查所有大属性值，并验证是否需要它们。 超过16MB的数据需要转换为二进制值。 |
 
 ## 下一步 {#whats-next}
 
-查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请参阅[使用内容传输工具的准则和最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en)。
+查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请参阅 [使用内容传输工具的准则和最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).

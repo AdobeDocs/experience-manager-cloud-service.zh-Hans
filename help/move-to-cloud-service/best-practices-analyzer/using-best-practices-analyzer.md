@@ -2,9 +2,9 @@
 title: 使用最佳实践分析器
 description: 使用最佳实践分析器
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2470'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
@@ -113,13 +113,16 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
 不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
 
 
-### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-Adobe Experience Manager 6.2中的“最佳实践分析器”工具仅限于生成和下载CSV报告的链接。
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
-在 Adobe Experience Manager 6.1 中，该工具无法正常运行，只能使用 HTTP 接口。
-
->[!NOTE]在所有版本中，包含的模式检测器可以独立运行。
+>[!NOTE]
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## 解释最佳实践分析器报告 {#cra-report}
 
