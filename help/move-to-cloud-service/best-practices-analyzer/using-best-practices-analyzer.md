@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url=""
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
