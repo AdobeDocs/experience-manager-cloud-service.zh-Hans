@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: b7ed0d16b9cd4ba9fdfaa20e17f3c3c73659f914
+source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
-source-wordcount: '3641'
-ht-degree: 79%
+source-wordcount: '3787'
+ht-degree: 76%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 79%
 
    * 有时，网站会通过 `http` 提供，直到用户访问包含结账或登录表单等内容的页面时为止，此时网站将切换成 `https`。当从这个页面进行链接时，如果用户可以返回到 `http` 页面并通过 `https` 进行访问，则搜索引擎会将二者作为两个单独的页面进行跟踪。
 
-   * 目前，Google 首选的页面是 `https` 而不是 `http`。因此，通过`https`提供整个站点，往往会为人们的生活带来便利。
+   * 目前，Google 首选的页面是 `https` 而不是 `http`。因此，通过提供整个站点，往往会为人们的生活带来便利 `https`.
 
 ### 服务器配置 {#server-configuration}
 
@@ -356,11 +356,11 @@ Disallow: /
 
 爬取程序使用 XML 站点地图来更好地理解网站的结构。虽然提供站点地图无法保证会提高 SEO 排名，但这是公认的最佳实践。您可以在 Web 服务器上手动维护要用作站点地图的 XML 文件，但我们建议以编程方式生成站点地图，这种方法可确保当作者创建新内容时，站点地图会自动反映内容更改。
 
-AEM使用[Apache Sling站点地图模块](https://github.com/apache/sling-org-apache-sling-sitemap)生成XML站点地图，该模块为开发人员和编辑人员提供了多种选项来保持站点XML站点地图处于最新状态。
+AEM使用 [Apache Sling Sitemap模块](https://github.com/apache/sling-org-apache-sling-sitemap) 用于生成XML站点地图，它为开发人员和编辑人员提供了多种选项来使站点XML站点地图保持最新。
 
-Apache Sling站点地图模块区分顶级站点地图和嵌套站点地图，这两者都是为将`sling:sitemapRoot`属性设置为`true`的任何资源生成的。 通常，站点地图使用树顶级站点地图路径（即没有其他站点地图根父级的资源）中的选择器来呈现。 此顶级站点地图根目录还会公开站点地图索引，该索引通常是站点所有者在搜索引擎的配置门户中配置的索引，或添加到站点的`robots.txt`的索引。
+Apache Sling站点地图模块区分顶级站点地图和嵌套站点地图，这两者都是为具有 `sling:sitemapRoot` 属性设置为 `true`. 通常，站点地图使用树顶级站点地图路径（即没有其他站点地图根父级的资源）中的选择器来呈现。 此顶级站点地图根目录还会公开站点地图索引，该索引通常是站点所有者在搜索引擎的配置门户中配置或添加到站点的索引 `robots.txt`.
 
-例如，假定某个站点定义了位于`my-page`的顶级站点地图根目录和位于`my-page/news`的嵌套站点地图根目录，以便为新闻子树中的页面生成专用站点地图。 由此产生的相关URL将是
+例如，假定某个站点在 `my-page` 和位于 `my-page/news`，以便为新闻子树中的页面生成专用站点地图。 由此产生的相关URL将是
 
 * https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
 * https://www.mydomain.com/my-brand/my-page.sitemap.xml
@@ -368,22 +368,99 @@ Apache Sling站点地图模块区分顶级站点地图和嵌套站点地图，�
 
 >[!NOTE]
 >
-> 选择器`sitemap`和`sitemap-index`可能会干扰自定义实施。 如果您不想使用产品功能，请配置您自己的Servlet，以使用大于0的`service.ranking`来提供这些选择器。
+> 选择器 `sitemap` 和 `sitemap-index` 可能会干扰自定义实施。 如果您不想使用产品功能，请配置您自己的Servlet，以通过 `service.ranking` 大于0。
 
-在默认配置中，“页面属性”对话框提供了一个选项，用于将页面标记为站点地图根，因此，如上所述，可生成其自身及其子体的站点地图。 此行为由`SitemapGenerator`接口的实现来实施，并可通过添加其他实现来扩展。 但是，由于重新生成XML站点地图的频率高度取决于内容创作工作流和工作负载，因此产品不提供任何`SitemapScheduler`配置。 这可以有效地使该功能选择加入。
+在默认配置中，“页面属性”对话框提供了一个选项，用于将页面标记为站点地图根，因此，如上所述，可生成其自身及其子体的站点地图。 此行为由的实施实施 `SitemapGenerator` 界面和，可通过添加其他实施来扩展。 但是，由于重新生成XML站点地图的频率高度取决于内容创作工作流程和工作负载，因此产品不会发送任何 `SitemapScheduler` 配置。 这可以有效地使该功能选择加入。
 
-要启用生成XML站点地图的后台作业，必须配置`SitemapScheduler`。 为此，请为PID `org.apache.sling.sitemap.impl.SitemapScheduler`创建OSGI配置。 调度程序表达式`0 0 0 * * ?`可用作在午夜每天重新生成所有XML站点地图的起点。
+为了启用生成XML站点地图的后台作业， `SitemapScheduler` 必须进行配置。 为此，请为PID创建OSGI配置 `org.apache.sling.sitemap.impl.SitemapScheduler`. 调度程序表达式 `0 0 0 * * ?` 可用作在午夜每天重新生成一次所有XML站点地图的起点。
 
 ![Apache Sling站点地图 — 调度程序](assets/sling-sitemap-scheduler.png)
 
-站点地图生成作业可以在创作层和发布层实例上运行。 在大多数情况下，建议在发布层实例上运行生成，因为只能生成正确的规范URL（因为Sling资源映射规则通常仅存在于发布层实例上）。 但是，可以通过实施`SitemapLinkExternalizer`接口来插入用于生成规范URL的外部化机制的自定义实现。 如果自定义实施能够在创作层实例上生成站点地图的规范URL，则可以为创作运行模式配置`SitemapScheduler` ，并且XML站点地图生成工作量可以分布在创作服务群集的实例中。 在此方案中，在处理尚未发布、已修改或仅对受限用户组可见的内容时必须特别谨慎。
+站点地图生成作业可以在创作层和发布层实例上运行。 在大多数情况下，建议在发布层实例上运行生成，因为只能在此生成正确的规范URL（因为Sling资源映射规则通常仅存在于发布层实例上）。 但是，可以通过实施 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 界面。 如果自定义实施能够在创作层实例上生成站点地图的规范URL，则 `SitemapScheduler` 可以为创作运行模式配置，并且XML站点地图生成工作量可以分布在创作服务群集的实例中。 在此方案中，在处理尚未发布、已修改或仅对受限用户组可见的内容时必须特别谨慎。
 
-除了上述Apache Sling Sitemap扩展点[SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html)和[SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html)以及[SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html)之外，AEM特定实施还定义了几个扩展点：
+AEM Sites包含 `SitemapGenerator` 遍历页面树以生成站点地图的路径。 它已预配置为仅输出网站的规范URL和任何语言替代语言（如果可用）。 此外，还可以根据需要将其配置为包含页面的上次修改日期。 为此，请启用 _添加上次修改时间_ 的 _AdobeAEM SEO — 页面树站点地图生成器_ 配置并选择 _上次修改的源_. 在发布层上生成站点地图时，建议使用 `cq:lastModified` 日期。
 
-* 可以实施[SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) ，以从由AEM Sites特定页面树站点地图生成器生成的XML站点地图中删除页面
-* 可以实施[SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html)或[SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)，以从由[商务集成框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)特定站点地图生成器生成的XML站点地图中筛选出产品或类别。
+![AdobeAEM SEO — 页面树站点地图生成器配置](assets/sling-sitemap-pagetreegenerator.png)
 
-此外，为XML站点地图实现的功能也可用于不同的用例，例如，将规范链接或语言替代添加到页面标题中。 有关详细信息，请参阅[SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)界面。
+要限制站点地图的内容，可以根据需要实施以下服务界面：
+
+* the [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) 可以实施来隐藏由AEM Sites特定站点地图生成器生成的XML站点地图中的页面
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) 可以实施以从由XML站点地图生成的产品或类别中过滤掉 [商务集成框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 特定站点地图生成器
+
+如果默认实施不适用于特定用例，或者如果扩展点不够灵活，则自定义 `SitemapGenerator` 可以实施以完全控制生成的站点地图的内容。 以下示例演示了如何执行此操作，同时利用了默认实施的AEM Sites逻辑。 它使用 [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) 作为遍历页面树的起点：
+
+```
+import java.util.Optional;
+
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.sitemap.SitemapException;
+import org.apache.sling.sitemap.builder.Sitemap;
+import org.apache.sling.sitemap.builder.Url;
+import org.apache.sling.sitemap.spi.common.SitemapLinkExternalizer;
+import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
+import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
+import org.jetbrains.annotations.NotNull;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import com.day.cq.wcm.api.Page;
+
+@Component(
+    service = SitemapGenerator.class,
+    property = { "service.ranking:Integer=20" }
+)
+public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SitemapGeneratorImpl.class);
+
+    @Reference
+    private SitemapLinkExternalizer externalizer;
+    @Reference
+    private PageTreeSitemapGenerator defaultGenerator;
+
+    @Override
+    protected void addResource(@NotNull String name, @NotNull Sitemap sitemap, Resource resource) throws SitemapException {
+        Page page = resource.adaptTo(Page.class);
+        if (page == null) {
+            LOG.debug("Skipping resource at {}: not a page", resource.getPath());
+            return;
+        }
+        String location = externalizer.externalize(resource);
+        Url url = sitemap.addUrl(location + ".html");
+        // add any additional content to the Url like lastmod, change frequency, etc
+    }
+
+    @Override
+    protected final boolean shouldFollow(@NotNull Resource resource) {
+        return super.shouldFollow(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldFollow).orElse(Boolean.TRUE);
+    }
+
+    private boolean shouldFollow(Page page) {
+        // add additional conditions to stop traversing some pages
+        return !defaultGenerator.isProtected(page);
+    }
+
+    @Override
+    protected final boolean shouldInclude(@NotNull Resource resource) {
+        return super.shouldInclude(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldInclude).orElse(Boolean.FALSE);
+    }
+
+    private boolean shouldInclude(Page page) {
+        // add additional conditions to stop including some pages
+        return defaultGenerator.isPublished(page)
+            && !defaultGenerator.isNoIndex(page)
+            && !defaultGenerator.isRedirect(page)
+            && !defaultGenerator.isProtected(page);
+    }
+}
+```
+
+此外，为XML站点地图实现的功能也可用于不同的用例，例如，将规范链接或语言替代添加到页面标题中。 请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 界面以了解更多信息。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 
