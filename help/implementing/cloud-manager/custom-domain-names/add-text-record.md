@@ -2,9 +2,9 @@
 title: 添加TXT记录
 description: 添加自定义域名
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 12849a79975f70dafd59f4b6ebf4b4ff24145cbf
+source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ DNS TXT记录可授权域在CDN服务中托管。 客户必须在区域中创建
 
 | 域 | 名称 | TXT值 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | 复制Cloud Manager UI中显示的整个值。 这特定于域和环境。 示例：<br>*adobe-aem-verification=example.com/[项目]/[env]/..* |
-| `www.example.com` | `_aemverification.www.example.com` | 复制Cloud Manager UI中显示的整个值。 这特定于域和环境。 示例：<br>*adobe-aem-verification=www.example.com/[项目]/[env]/..* |
+| `example.com` | `_aemverification.example.com` | 复制Cloud Manager UI中显示的整个值。 这特定于域和环境。 例如：<br>*adobe-aem-verification=<br>example.com/[项目]/[env]/..* |
+| `www.example.com` | `_aemverification.www.example.com` | 复制Cloud Manager UI中显示的整个值。 这特定于域和环境。 例如：<br>*adobe-aem-verification=<br>www.example.com/[项目]/[env]/..* |
 
 完成后，您可以运行以验证结果： `dig _aemverification.[yourdomainname] -t txt`.
 预期结果应显示Cloud Manager UI中提供的TXT值。
