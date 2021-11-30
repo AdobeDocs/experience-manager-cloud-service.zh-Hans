@@ -2,7 +2,7 @@
 title: 在屏幕中注册播放器as a Cloud Service
 description: 本页介绍如何在Screens中as a Cloud Service注册播放器。
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -63,9 +63,9 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/player/register-player6.png)
 
->[!IMPORTANT]
->**使用注册代码时的安全最佳实践建议
->作为最佳实践，您可以限制注册代码的使用。 如果注册代码被攻破，但注册数量限制为100个，则攻击者只能注册到该号码，但注册数量不能超过该号码。 您始终可以在创建注册代码并且已注册客户的某些播放器后更新使用限制。 如果客户发现特定注册代码存在异常注册活动，则他们可以在调查时实时降低该限制，如果是虚警，则可以增加返回数量，而不会影响已注册的播放器。
+   >[!IMPORTANT]
+   >**使用注册代码时的安全最佳实践建议**
+   >作为最佳实践，您可以限制注册代码的使用。 如果注册代码被攻破，但注册数量限制为100个，则攻击者只能注册到该号码，但注册数量不能超过该号码。 您始终可以在创建注册代码并且已注册客户的某些播放器后更新使用限制。 如果客户发现特定注册代码存在异常注册活动，则他们可以在调查时实时降低该限制，如果是虚警，则可以增加返回数量，而不会影响已注册的播放器。
 
 
 ## 下一步 {#whats-next}

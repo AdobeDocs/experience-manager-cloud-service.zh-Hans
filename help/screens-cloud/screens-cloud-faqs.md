@@ -2,9 +2,9 @@
 title: Screensas a Cloud Service常见问题解答
 description: 本页介绍屏幕as a Cloud Service常见问题解答。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ scripts=[
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
 
-## 注册代码限制的用法是什么？
+## 注册代码限制的用途是什么？
 
 作为最佳实践，您可以限制注册代码的使用。 如果注册代码被攻破，但注册数量限制为100个，则攻击者只能注册到该号码，但注册数量不能超过该号码。 您始终可以在创建注册代码并且已注册客户的某些播放器后更新使用限制。 如果客户发现特定注册代码存在异常注册活动，则他们可以在调查时实时降低该限制，如果是虚警，则可以增加返回数量，而不会影响已注册的播放器。
