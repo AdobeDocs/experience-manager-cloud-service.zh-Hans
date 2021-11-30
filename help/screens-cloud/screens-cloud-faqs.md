@@ -1,8 +1,8 @@
 ---
 title: Screensas a Cloud Service常见问题解答
-description: 本页介绍屏幕as a Cloud Service常见问题解答。
+description: 本页介绍Screensas a Cloud Service常见问题解答。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
+source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
