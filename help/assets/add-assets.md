@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
@@ -159,7 +159,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 导入后删除源文件]:选择此选项可在将文件导入到 [!DNL Experience Manager].
    * [!UICONTROL 导入模式]:选择跳过、替换或创建版本。 跳过模式是默认模式，在此模式下，摄取者会跳过以导入资产（如果资产已存在）。 查看 [替换和创建版本选项](#handling-upload-existing-file).
    * [!UICONTROL Assets Target文件夹]:在DAM中导入资产的导入文件夹。 例如, `/content/dam/imported_assets`
-   * [!UICONTROL 元数据文件]:要导入的元数据文件，以CSV格式提供。 您可以在源Blob位置中提供此CSV文件，并引用批量摄取工具配置中的路径。
+   * [!UICONTROL 元数据文件]:要导入的元数据文件，以CSV格式提供。 在配置批量摄取工具时，在源Blob位置中指定CSV文件并引用路径。 此字段中引用的CSV文件格式与您 [批量导入和导出资产元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您选择 **导入后删除源文件** 选项，可使用 **排除** 或 **包含MIME类型** 或 **按路径/文件过滤** 字段。 您可以使用正则表达式在这些字段中过滤CSV文件。
 
 1. 您可以删除、修改、执行和执行创建的引擎配置，并执行更多操作。 选择批量导入引入配置时，工具栏中提供了以下选项。
 
