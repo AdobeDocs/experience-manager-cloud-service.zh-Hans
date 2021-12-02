@@ -5,10 +5,10 @@ breadcrumb-title: Move 指南
 user-guide-description: 了解过渡到云服务的历程。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: e91dcb74cfcb478309e863241c2d96b4d8bb1591
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 39%
+source-wordcount: '193'
+ht-degree: 40%
 
 ---
 
@@ -17,8 +17,9 @@ ht-degree: 39%
 
 + [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + 迁移工具的发行说明 {#release-notes-migration-tools}
-   + [最新发行说明（2021.11.0 版）](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + [最新发行说明（2021.12.0 版）](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
    + 2021年 {#2021}
+      + [2021.11.0 版发行说明](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [2021.10.0 版发行说明](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + 过渡历程的阶段 {#phases}
    + [就绪](/help/move-to-cloud-service/migration-readiness.md)
