@@ -2,9 +2,9 @@
 title: UI测试 — Cloud Services
 description: UI测试 — Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
+source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1617'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ AEM为其客户提供了一套集成的Cloud Manager质量门户，以确保顺�
 
 如果不在内置中 `tar.gz` 文件中，将跳过生成和执行UI测试的过程
 
-添加 `testing.properties` 文件，添加 `include` 语句 `assembly-ui-test-docker-context.xml` 文件（在UI测试子模块中）：
+添加 `testing.properties` 文件，添加 `include` 语句 `assembly-ui-test-docker-context.xml` 文件（在UI中测试子模块）。 如果您的项目不包含该行，则您将需要编辑此文件以选择加入UI测试。 如果文件可能有一行建议不编辑，请忽略该建议。
 
     &quot;
     [...]
