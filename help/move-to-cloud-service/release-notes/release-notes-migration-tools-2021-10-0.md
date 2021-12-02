@@ -2,8 +2,7 @@
 title: AEMas a Cloud Service版本2021.10.0中迁移工具的发行说明
 description: AEMas a Cloud Service版本2021.11.0中迁移工具的发行说明
 feature: Release Information
-exl-id: null
-source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
+source-git-commit: 587258a831fb5cd3b3a23d1f891db8c2254a8d6b
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 6%
@@ -47,7 +46,7 @@ Cloud Acceleration Manager现在为用户提供了以可打印预览方式查看
 
 * 通过简化的用户体验改进了用户映射工具，其中包括以下功能。 有关更多详细信息，请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * 在运行用户映射之前，测试与用户管理API的连接
-   * 优雅地跳过错误并继续用户映射活动
+   * 优雅地跳过错误并继续“用户映射”活动
    * 如果 **访问令牌** 24小时后过期。 可以从上次停止的位置重新运行用户映射。
 
 * 为了提高内容传输工具的稳健性，可以一次将内容摄取到创作实例或发布实例。 请参阅 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 以了解更多详细信息。
