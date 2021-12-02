@@ -2,14 +2,14 @@
 title: 在AEMas a Cloud Service中备份和恢复
 description: 在AEMas a Cloud Service中备份和恢复
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# 在AEMas a Cloud Service中备份和恢复
+# 在AEMas a Cloud Service中备份和恢复 {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >仅当代码或内容存在严重问题时，才应使用此功能。 从还原备份到当前备份之间的最近数据将丢失。 暂存版本也将还原到旧版本。
 
-## 使用方法
+## 使用方法 {#how-to-use}
 
 客户应提交支持票证，描述遇到的问题。 这将导致Adobe支持部门进行调查，调查人员将确定是否需要恢复。
 
@@ -41,3 +41,9 @@ AEMas a Cloud Service支持：
 >[!CAUTION]
 >
 >来自已删除环境的数据将永久丢失且无法恢复。
+
+## 异地备份 {#offsite-backup}
+
+常规备份涵盖AEM云服务中意外删除或技术故障的风险，但也必须涵盖区域故障可能引起的风险。 除了可用性，此类数据区域中断的最大风险主要是数据丢失。
+AEM as a Cloud Service通过连续将整个AEM内容复制到远程区域并使其可用于3个月的恢复，将此风险作为所有AEM生产环境的标准。 我们称此功能为“非现场备份”。
+在数据区域发生中断时，AEM Service Reliability Engineering会恢复用于暂存和生产环境的AEM云服务。
