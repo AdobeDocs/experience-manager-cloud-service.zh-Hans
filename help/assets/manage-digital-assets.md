@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
+source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
 workflow-type: tm+mt
-source-wordcount: '4268'
+source-wordcount: '4287'
 ht-degree: 16%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 16%
 启用后，Experience Manager会将重复资产的通知发送到Experience Manager收件箱。 它是多个重复项的汇总结果。 用户可以根据结果选择删除资产。
 
 ![重复资产的收件箱通知](assets/duplicate-detect-inbox-notification.png)
+
+>[!NOTE]
+>
+>将资产上传到存储库时，Experience Manager会检测到重复项，并通知您前100个重复资产。
 
 ## 预览资产 {#previewing-assets}
 
