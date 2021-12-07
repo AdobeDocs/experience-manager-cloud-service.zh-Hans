@@ -1,7 +1,7 @@
 ---
 title: 为AEMas a Cloud Service配置高级网络
 description: 了解如何为AEMas a Cloud Service配置高级网络功能（如VPN）或灵活或专用的出口IP地址
-source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
+source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
 workflow-type: tm+mt
 source-wordcount: '2836'
 ht-degree: 1%
@@ -159,7 +159,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 AEM Cloud Service Apache/Dispatcher层 `mod_proxy` 可以使用上述属性配置指令。
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -167,7 +167,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -481,7 +481,7 @@ API应在几秒内做出响应，表示状态为 `updating` 大约10分钟后，
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
-    <td>从VPN的AEM端到客户端的流量IP。 可以在客列入允许列表户配置中进行此操作，以确保只能从AEM建立连接。</td>
+    <td>从VPN的AEM端到客户端的流量IP。 可以在客列入允许列表户的配置中进行此操作，以确保只能从AEM建立连接。</td>
     <td>如果客户希望仅允许VPN访问AEM，则应将CNAME DNS条目配置为映射 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 到这个。</td>
   </tr>
 </tbody>
@@ -491,7 +491,7 @@ API应在几秒内做出响应，表示状态为 `updating` 大约10分钟后，
 
 如果您希望仅允许VPN访问AEM，则可以在Cloud 允许列表 Manager中配置环境，以便仅允许 `p{PROGRAM_ID}.external.adobeaemcloud.com` 允许与环境交谈。 此操作方式与Cloud Manager中任何其他基于IP的允许列表相同。
 
-如果规则必须基于路径，请在调度程序级别使用标准http指令来拒绝或允许某些IP。 他们应确保CDN也无法缓存所需的路径，以便始终将请求置于原点。
+如果规则必须基于路径，请在调度程序级别使用标准http指令来拒绝或允许某些IP。 它们应确保CDN中也不会缓存所需的路径，以便始终将请求置于原点。
 
 **Httpd配置示例**
 
