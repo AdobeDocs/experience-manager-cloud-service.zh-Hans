@@ -1,10 +1,11 @@
 ---
 title: 合规
-description: 合规
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+description: 本页列出了提供有关Experience Manageras a Cloud Service合规性的信息的自助资源。
+landing-page-description: 有关AEM as a Cloud Service合规性（包括隐私和辅助功能）的概述，请单击此处开始。
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 75%
+source-wordcount: '394'
+ht-degree: 68%
 
 ---
 

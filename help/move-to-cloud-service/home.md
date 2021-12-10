@@ -1,10 +1,11 @@
 ---
 title: 移动到 AEM as a Cloud Service
 description: 有关将 Adobe Experience Manager as a Cloud Service 作为云服务移动到 AEM 的自助资源和文档链接
+landing-page-description: 了解过渡到云服务的历程。
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '685'
 ht-degree: 52%
 
 ---

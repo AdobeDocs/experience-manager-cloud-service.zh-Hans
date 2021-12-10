@@ -1,10 +1,11 @@
 ---
 title: 简介 [!DNL AEM Forms] as a Cloud Service
 description: Adobe Experience Manager Formsas a Cloud Service自助资源和文档链接
+landing-page-description: 了解如何在AEMas a Cloud Service中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
