@@ -2,7 +2,7 @@
 title: AEM Headless开发人员历程
 description: AEM无头CMS文档。 从此处开始，您可以逐步了解AEM强大而灵活的无外设功能、其功能，以及如何在您的第一个开发项目中利用这些功能。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d683b71d823fb6cc756f8fcf04e7393e7bf71c14
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 1%
@@ -25,11 +25,11 @@ ht-degree: 1%
 
 ## AEM文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和特性联系起来，提供一种说明，帮助读者从头到尾理解和解决业务问题(对AEM而言，读者可能是新手)，同时尽量少地了解以前的主题或AEM知识。
+[文档历程](/help/journey-documentation/documentation-journeys.md) 将许多不同且可能复杂的主题和特性联系起来，提供一种说明，帮助读者从头到尾理解和解决业务问题(对AEM而言，读者可能是新手)，同时尽量少地了解以前的主题或AEM知识。
 
 文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
 
-如果您想了解Adobe如何建议如何使用AEM解决无头业务案例， [AEM无头历程](/help/journey-headless/home.md) 是开始的位置。
+如果您想了解Adobe如何建议如何使用AEM解决无头业务案例， [AEM无头历程](/help/journey-documentation/documentation-journeys.md) 是开始的位置。
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ ht-degree: 1%
 | 管理员 | 管理AEM的基本设置和配置 | 开发人员与管理员合作，进行开发所需的配置更改。 |
 | 内容架构师 | 对必须无头传送的数据要求进行分析，并定义此数据的结构 | 开发人员与内容架构师合作，以了解数据的结构和无头提供数据的要求。 |
 
-此历程中的信息当然对所有角色都有用，但某些信息对某些角色可能是多余的。 敬请关注 [即将推出的旅程，涵盖其他角色。](/help/journey-documentation/home.md#journeys)
+此历程中的信息当然对所有角色都有用，但某些信息对某些角色可能是多余的。 敬请关注 [即将推出的旅程，涵盖其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## 无头开发人员历程 {#the-journey}
 

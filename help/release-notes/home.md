@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 98c6207e84fda0d4bab3141c84507498f3527337
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 42%
+source-wordcount: '615'
+ht-degree: 40%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 42%
 使用 [!DNL Adobe Experience Manager] as a Cloud Service，应用程序会持续自动更新。 更新分为两种类型：功能发布和关键更新：
 
 * 功能发布以可预测的每月频率完成，重点关注新功能和产品创新。
-* 关键更新操作频繁进行，重点关注安全更新、错误修复和性能增强。 这可确保 [!DNL Adobe Experience Manager] as a Cloud Service始终是所有关键修复的最新信息。
+* 关键更新操作频繁，重点关注安全更新、错误修复和性能增强。 这可确保 [!DNL Adobe Experience Manager] as a Cloud Service始终是所有关键修复的最新信息。
 
 除了创新速度， [!DNL Adobe Experience Manager] as a Cloud Service还允许在即将推出的功能发布到生产环境之前，提前整个月灵活预览即将推出的功能。 这允许您通过测试在您自己的自定义环境中驱动这些功能来评估即将发布的版本对其组织的影响，并提前对内部用户进行培训/准备。
 
@@ -49,7 +49,6 @@ ht-degree: 42%
 
 | 用户指南 | 描述 |
 |---|---|
-| [Experience Manager as a Cloud Service 主页](/help/landing/home.md) | 有关 Experience Manager as a Cloud Service 文档的概述，请单击此处开始。 |
 | [概述](/help/overview/home.md) | 本指南提供了 Experience Manager as a Cloud Service 的概述，包括简介、术语等。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用Experience Manageras a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |

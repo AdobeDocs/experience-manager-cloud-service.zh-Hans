@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: AEM内容和商务自助资源和文档链接
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 64%
+source-wordcount: '350'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->有关AEM 6.5和Classic CIF的AEM内容和商务，请参阅[AEM 6.5内容和商务](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)。
+>有关AEM 6.5和经典CIF的AEM内容和商务，请参阅 [AEM 6.5内容与商务](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
 ## 关键内容和商务文章 {#key-articles}
 
@@ -27,7 +27,6 @@ ht-degree: 64%
 
 | 用户指南 | 描述 |
 |---|---|
-| [Experience Manager as a Cloud Service 主页](/help/landing/home.md) | 有关 Experience Manager as a Cloud Service 文档的概述，请单击此处开始。 |
 | [概述](/help/overview/home.md) | 本指南概述了Experience Manageras a Cloud Service，包括简介、术语、架构等。 |
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
@@ -42,7 +41,7 @@ ht-degree: 64%
 ## 其他 Experience Manager 资源 {#other-resources}
 
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
-* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
+* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)

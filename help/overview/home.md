@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 概述
 description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: ea4e017be8f15782582ce1fac88d0c4b5c031d1e
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 82%
+source-wordcount: '362'
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 82%
 
 | 用户指南 | 描述 |
 |---|---|
-| [Experience Manager as a Cloud Service 主页](/help/landing/home.md) | 有关 Experience Manager as a Cloud Service 文档的概述，请单击此处开始。 |
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
@@ -35,13 +34,13 @@ ht-degree: 82%
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Commerce Integration FrameworkCloud Service。 |
+| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Cloud Service上的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
 * [近期文档更新](https://helpx.adobe.com/cn/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
-* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
+* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)

@@ -4,13 +4,13 @@ description: 从此处开始，您可以体验AEM强大而灵活的无头功能�
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
+exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
-
 
 # AEM Headless Content Architect历程 {#aem-headless-content-architect-journey}
 
@@ -30,11 +30,11 @@ ht-degree: 1%
 
 ## AEM文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和功能结合在一起，提供了一种说明，帮助对AEM不熟悉、从头到尾理解和解决业务问题的读者，同时尽可能少地了解以前的主题或AEM知识。
+[文档历程](/help/journey-documentation/documentation-journeys.md) 将许多不同且可能复杂的主题和特性联系起来，提供一种说明，帮助读者从头到尾理解和解决业务问题(对AEM而言，读者可能是新手)，同时尽量少地了解以前的主题或AEM知识。
 
 文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
 
-如果您想了解Adobe如何建议如何使用AEM解决无头业务案例，请从[AEM无头历程](/help/journey-headless/home.md)开始。
+如果您想了解Adobe如何建议如何使用AEM解决无头业务案例， [AEM无头历程](/help/journey-documentation/documentation-journeys.md) 是开始的位置。
 
 ## 受众 {#audience}
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 下一步 {#what-is-next}
 
-现在，您已准备好开始AdobeHeadless历程。 我们建议您继续进入历程的下一部分，并阅读文章[使用AEM进行无头内容建模 — 简介](introduction.md)。
+现在，您已准备好开始AdobeHeadless历程。 我们鼓励您继续访问历程的下一部分并阅读文章 [使用AEM实现无头内容建模 — 简介](introduction.md).
 
 ## 其他资源 {#additional-resources}
 
@@ -67,8 +67,8 @@ ht-degree: 1%
 
 因此，这些旅程旨在独立进行。 但是，其中的许多内容可以相互关联。 请查看这些其他历程，了解有关AEM强大功能如何协同工作的更多信息。
 
-* [AEM无头翻译历程](/help/journey-headless/translation/overview.md)  — 此文档历程让您对无头技术、AEM如何提供无头内容以及如何翻译这些内容有了广泛的了解。
-* [无头创作历程](/help/journey-headless/author/overview.md)  — 从此处开始，一段引导式旅程，逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。
-* [AEM无头开发人员历程](/help/journey-headless/developer/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个开发项目中利用这些功能。
-* [AEM as a Cloud Service技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已经对AEM和无头技术有了很深的了解，您可能希望直接查阅我们的深入技术文档。
-* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您希望通过学习和技术上的倾向，请学习我们由API和框架组织的动手实践教程，这些教程探讨如何创建和使用基于AEM Headless构建的应用程序。
+* [AEM无头翻译历程](/help/journey-headless/translation/overview.md)  — 此文档历程使您能够广泛了解无头技术、AEM如何提供无头内容以及如何翻译无头内容。
+* [无外设创作历程](/help/journey-headless/author/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。
+* [AEM Headless开发人员历程](/help/journey-headless/developer/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无外设功能、其功能，以及如何在您的第一个开发项目中利用这些功能。
+* [AEMas a Cloud Service技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已经对AEM和无外设技术有了很深的了解，您可能需要直接查阅我们的深入技术文档。
+* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您喜欢通过学习来学习，而且在技术上有倾向，请学习我们由API和框架组织的动手实践教程，这些教程将探索如何创建和使用基于AEM Headless构建的应用程序。

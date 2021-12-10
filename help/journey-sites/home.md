@@ -2,7 +2,7 @@
 title: AEM Sites历程
 description: 从此处开始，概述可用于了解AEM强大网站功能的引导式历程。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: e69d3efbb45f95cbb5f84724c86c3cbd1255b8fb
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## AEM文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/home.md) 将许多不同且可能复杂的主题和特性联系起来，提供一种说明，帮助读者从头到尾理解和解决业务问题(对AEM而言，读者可能是新手)，同时尽量少地了解以前的主题或AEM知识。
+[文档历程](/help/journey-documentation/documentation-journeys.md) 将许多不同且可能复杂的主题和特性联系起来，提供一种说明，帮助读者从头到尾理解和解决业务问题(对AEM而言，读者可能是新手)，同时尽量少地了解以前的主题或AEM知识。
 
 文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
 
@@ -42,4 +42,4 @@ ht-degree: 1%
 | [站点翻译历程](/help/journey-sites/translation/overview.md) | 了解AEM Sites技术、如何在您的项目中使用这些技术，以及如何在AEM中从A到Z创建和更新翻译项目。 | 翻译专家 |
 | [快速网站创建历程](/help/journey-sites/quick-site/overview.md) | 从此处开始，逐步了解易于使用的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。 | 前端开发人员 |
 
-敬请关注 [即将推出的旅程，涵盖其他角色。](/help/journey-documentation/home.md#journeys)
+敬请关注 [即将推出的旅程，涵盖其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
