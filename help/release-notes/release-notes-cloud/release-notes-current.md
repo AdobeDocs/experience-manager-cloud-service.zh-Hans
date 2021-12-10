@@ -3,9 +3,9 @@ title: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
+source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1619'
 ht-degree: 2%
 
 ---
@@ -205,3 +205,14 @@ Best Practices Analyzer v2.1.22的发布日期是2021年12月1日。
 
 * 对基础组件的检测进行了细化，以减少漏报。
 * 对于AEM Forms客户，与 `EMAIL_PDF_SUBMIT_ACTION` 已修复在AEMas a Cloud Service上不可用的问题。
+
+## 内容传输工具 {#ctt-release}
+
+### 发布日期 {#release-date-ctt}
+
+内容传输工具v1.7.10的发布日期是2021年12月8日。
+
+### 新增功能 {#what-is-new-ctt}
+
+* 在内容传输工具的摄取阶段添加切换以允许用户禁用 [预拷贝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 在摄取期间。 为了获得最佳摄取速度，对于较小的迁移集，或者自上次摄取后仅添加了几个Blob，应禁用摄取期间的预复制。
+* 更新了用户映射，以使用经过改进的用户管理API，该API可以同时吸引2000个用户，从而显着提升性能。
