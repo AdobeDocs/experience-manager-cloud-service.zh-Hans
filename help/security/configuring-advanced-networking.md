@@ -1,9 +1,9 @@
 ---
 title: 为AEMas a Cloud Service配置高级网络
 description: 了解如何为AEMas a Cloud Service配置高级网络功能（如VPN）或灵活或专用的出口IP地址
-source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
+source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2982'
 ht-degree: 1%
 
 ---
@@ -78,17 +78,17 @@ API应在几秒后做出响应，指示更新状态，大约10分钟后，端点
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
-通过端口80或443到达目标的HTTP或HTTPS流量将通过预配置的代理（假定已使用标准Java网络库）。 对于通过其他端口的http或https流量，应使用以下属性配置代理。
+对于流向80或443以外端口的http或https流量，应使用以下主机和端口环境变量配置代理：
 
-* `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
-* `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
+* 对于HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (默认为 `proxy.tunnel:3128` 在AEM版本&lt; 6094中)
+* 对于HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (默认为 `proxy.tunnel:3128` 在AEM版本&lt; 6094中)
 
 例如，以下是向发送请求的示例代码 `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
-var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
+int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
       .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
       .build();
@@ -114,7 +114,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
     <th>目标条件</th>
     <th>端口</th>
     <th>连接</th>
-    <th>示例</th>
+    <th>外部目标示例</th>
   </tr>
 </thead>
 <tbody>
@@ -127,12 +127,13 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>使用以下环境变量配置的非标准流量（在80或443以外的其他端口上）通过http代理：<br><ul>
-     <li>AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST</li>
-     <li>AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT</li>
+    <td>使用以下环境变量和代理端口号配置的通过http代理的非标准流量（在80或443以外的其他端口上）。 请勿在Cloud Manager API调用的portForwards参数中声明目标端口：<br><ul>
+     <li>AEM_PROXY_HOST(在AEM版本&lt; 6094中默认为“proxy.tunnel”)</li>
+     <li>AEM_HTTPS_PROXY_PORT(在AEM版本&lt; 6094中默认为端口3128)</li>
     </ul>
     <td>80或443以外的端口</td>
     <td>允许</td>
+    <td>example.com:8443</td>
   </tr>
   <tr>
     <td></td>
@@ -163,15 +164,15 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 AEM Cloud Service Apache/Dispatcher层 `mod_proxy` 可以使用上述属性配置指令。
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
-ProxyPass "/somepath" "http://example.com"
-ProxyPassReverse "/somepath" "http://example.com"
+ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
+ProxyPass "/somepath" "http://example.com:8080"
+ProxyPassReverse "/somepath" "http://example.com:8080"
 ```
 
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
+ProxyRemote "https://example.com:8443" "http://${AEM_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -204,6 +205,36 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 流量路由 {#dedcated-egress-ip-traffic-routing}
 
+通过端口80或443到达目标的HTTP或HTTPS流量将通过预配置的代理（假定已使用标准Java网络库）。 对于通过其他端口的http或https流量，应使用以下属性配置代理。
+
+```
+AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
+AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
+```
+
+例如，以下是向发送请求的示例代码 `www.example.com:8443`:
+
+```java
+String url = "www.example.com:8443"
+String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
+ 
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+```
+
+如果使用非标准Java网络库，请使用上述属性为所有流量配置代理。
+
+通过 `portForwards` 参数应引用名为 `AEM_PROXY_HOST`，以及映射的端口。 例如：
+
+```java
+DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
+```
+
 <table>
 <thead>
   <tr>
@@ -211,7 +242,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
     <th>目标条件</th>
     <th>端口</th>
     <th>连接</th>
-    <th>示例</th>
+    <th>外部目标示例</th>
   </tr>
 </thead>
 <tbody>
@@ -380,7 +411,7 @@ API应在几秒内做出响应，表示状态为 `updating` 大约10分钟后，
     <th>目标条件</th>
     <th>端口</th>
     <th>连接</th>
-    <th>示例</th>
+    <th>外部目标示例</th>
   </tr>
 </thead>
 <tbody>
