@@ -2,7 +2,7 @@
 title: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 description: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 131b17f53b364138d2cea7648d4c23a8480740bf
 workflow-type: tm+mt
 source-wordcount: '2647'
 ht-degree: 2%
@@ -251,7 +251,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    打开命令提示符并运行以下命令以创建 [!DNL Experience Manager Forms] as a Cloud Service项目。 包含 [!DNL Forms] 特定配置、主题和模板，设置 `includeFormsenrollment=y`.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y"
    ```
 
    此外，更改 `appTitle`, `appId`和 `groupId`，以反映您的环境。
