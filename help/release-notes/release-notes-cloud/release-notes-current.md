@@ -3,9 +3,9 @@ title: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
+source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1591'
 ht-degree: 2%
 
 ---
@@ -47,14 +47,6 @@ ht-degree: 2%
 ### 的新增功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] 图像智能裁剪和色板现在由最新的Sensei服务提供支持，该服务可生成经过改进的裁剪和色板。 此外，还推出了增强功能，以生成不同的裁剪内容，适用于相同的宽高比，但也适用于不同的分辨率。 此外，如果图像配置文件的宽度和高度没有变化，则在重新处理时将保留任何手动编辑。
-
-* 智能标记会使用资产微服务而不是智能内容服务自动应用于资产。 更新基础模型以改进标记结果并减少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
-
-<!-- Leave this commented.
-### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
-
-No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
