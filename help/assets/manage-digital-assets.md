@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4287'
+source-wordcount: '4320'
 ht-degree: 16%
 
 ---
@@ -244,7 +244,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。此外，该功能支持不同的视频格式，具体视浏览器而定。
+   >视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。此外，该功能支持不同的视频格式，具体视浏览器而定。但是，视频批注尚不支持MXF视频格式。
 
 ## 删除资产 {#delete-assets}
 
@@ -410,7 +410,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 注释是指添加到图像或视频的评论或解释性说明。通过注释，营销人员能够协作并提供有关资产的反馈。
 
-视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。资产支持的视频格式取决于浏览器。
+视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。资产支持的视频格式取决于浏览器。 但是，视频批注尚不支持MXF视频格式。
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    >[!NOTE]
    >
-   >您也可以对视频资产添加注释。在对视频添加注释时，播放器会暂停，以允许您对帧添加注释。 有关详细信息，请参阅 [管理视频资产](manage-video-assets.md).
+   >您也可以对视频资产添加注释。在对视频添加注释时，播放器会暂停，以允许您对帧添加注释。 有关详细信息，请参阅 [管理视频资产](manage-video-assets.md). 但是，视频批注尚不支持MXF视频格式。
 
 1. 要选择不同的颜色以便区分不同的用户，请单击/点按配置文件图标，然后单击/点按 **[!UICONTROL 我的首选项]**.
 
