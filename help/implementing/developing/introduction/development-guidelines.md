@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
+source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,7 @@ AEM中的电子邮件应使用 [Day CQ Mail Service OSGi服务](https://experien
 
 请参阅 [AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 有关配置电子邮件设置的详细信息。 对于AEMas a Cloud Service，请注意 `com.day.cq.mailer.DefaultMailService OSGI` 服务：
 
-* SMTP服务器主机名应设置为$[env:AEM_PROXY_HOST]
+* SMTP服务器主机名应设置为$[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * 配置高级网络时，SMTP服务器端口应设置为在API调用中使用的portForwards参数中设置的原始代理端口值。 例如，30465（而不是465）
 
 如果已请求端口465，则还建议：
