@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
+source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
 workflow-type: tm+mt
-source-wordcount: '3354'
+source-wordcount: '3362'
 ht-degree: 33%
 
 ---
@@ -292,6 +292,7 @@ ht-degree: 33%
       + [使用MSM重复使用资产](/help/assets/reuse-assets-using-msm.md)
       + [下载资产](/help/assets/download-assets-from-aem.md)
       + [签入和签出要编辑的资产](/help/assets/check-out-and-submit-assets.md)
+      + [创建和共享专用文件夹](/help/assets/private-folder.md)
       + [Digital Rights Management资产](/help/assets/drm.md)
       + [对资产添加水印](/help/assets/watermark-assets.md)
       + [使用处理资产 [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
@@ -435,7 +436,7 @@ ht-degree: 33%
       + [配置数据源](/help/forms/configure-data-sources.md)
       + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
-      + [配置 [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] 云服务](/help/forms/configure-msdynamics-salesforce.md)
+      + [配置 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 云服务](/help/forms/configure-msdynamics-salesforce.md)
       + [创建表单数据模型](/help/forms/create-form-data-models.md)
       + [使用表单数据模型](/help/forms/work-with-form-data-model.md)
       + [使用表单数据模型](/help/forms/using-form-data-model.md)

@@ -4,9 +4,9 @@ description: 了解如何在 [!DNL Adobe Experience Manager Assets] 并与其他
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: 2a05822588cdb031a1fe25429910dd44f67f2d36
+source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >专用文件夹至少具有一个具有“所有者”角色的成员。
 >
->要创建专用文件夹，您需要读取并修改 [访问控制权限](/help/sites-administering/security.md#permissions-in-aem) 在要创建专用文件夹的父文件夹上。 如果您不是管理员，则在 `/content/dam`. 在这种情况下，请先获取用户ID/组的这些权限，然后再尝试创建专用文件夹。
+>要创建专用文件夹，您需要 `Read` 和 `Modify` 对要在其中创建专用文件夹的父文件夹的权限。 如果您不是管理员，则在 `/content/dam`. 在这种情况下，请先获取用户ID/组的这些权限，然后再尝试创建专用文件夹。
 
 ## 创建和共享专用文件夹  {#create-share-private-folder}
 
