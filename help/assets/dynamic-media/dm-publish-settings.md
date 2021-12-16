@@ -7,18 +7,19 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
-hide: true
-hidefromtoc: true
 mini-toc-levels: 4
-source-git-commit: 5c5588179d4ebcfb3bd16a63a273f686e348d50e
+exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
+source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 4%
 
 ---
 
-
 # 为图像服务器配置Dynamic Media发布设置
+
+<!-- hide: yes
+hidefromtoc: yes -->
 
 配置Dynamic Media发布设置仅在以下情况下可用：
 

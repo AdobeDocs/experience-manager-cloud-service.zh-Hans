@@ -3,10 +3,10 @@ title: 配置Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 3f90ce1b9325d4dabcd97b515cebffe008b199c7
+source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
-source-wordcount: '4067'
-ht-degree: 4%
+source-wordcount: '3514'
+ht-degree: 3%
 
 ---
 
@@ -207,46 +207,19 @@ Dynamic Media中的密码过期时间设置为从当前系统日期起100年。
 * [编辑支持的格式的MIME类型](#editing-mime-types-for-supported-formats)
 * [为不支持的格式添加MIME类型](#adding-mime-types-for-unsupported-formats)
 
-<!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+<!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+#### 为图像服务器配置Dynamic Media发布设置 {#publishing-setup-for-image-server}
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+“Dynamic Media发布设置”页面可建立默认设置，以确定如何将资产从Dynamic MediaAdobe服务器交付到网站或应用程序。
 
-See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
+请参阅 [为图像服务器配置Dynamic Media发布设置](/help/assets/dynamic-media/dm-publish-settings.md).
 
-#### 为图像服务器发布设置 {#publishing-setup-for-image-server}
+#### 配置Dynamic Media常规设置 {#configuring-application-general-settings}
 
-“发布设置”设置可确定默认情况下如何从Dynamic Media交付资产。 如果未指定任何设置，Dynamic Media会根据发布设置中定义的默认设置来传送资产。 例如，如果请求传送的图像不包含分辨率属性，则会生成一个具有默认对象分辨率设置的图像。
+配置Dynamic Media **[!UICONTROL 发布服务器名称]** URL和 **[!UICONTROL 源服务器名称]** URL。 您还可以指定 **[!UICONTROL 上传到应用程序]** 设置和 **[!UICONTROL 默认上传选项]** 所有这些都基于您的特定用例。
 
-要配置发布设置，请执行以下操作：在Dynamic Media Classic，转到 **[!UICONTROL 设置>应用程序设置>发布设置>图像服务器]**.
-
-“图像服务器”屏幕为传送图像建立了默认设置。 有关每个设置的说明，请参阅UI屏幕。
-
-**[!UICONTROL 请求属性]**  — 这些设置对可从服务器传送的图像施加了限制。
-**[!UICONTROL 默认请求属性]**  — 这些设置与图像的默认外观有关。
-**[!UICONTROL 常见缩略图属性]**  — 这些设置与缩略图图像的默认外观有关。
-**[!UICONTROL 目录字段的默认值]** — 这些设置与图像的分辨率和默认缩略图类型有关。
-**[!UICONTROL 色彩管理属性]**  — 这些设置确定使用的ICC颜色配置文件。
-**[!UICONTROL 兼容性属性]**  — 为了向后兼容，此设置允许文本层中的前导和尾随段落与版本3.6中的段落一样进行处理。
-**[!UICONTROL 本地化支持]**  — 这些设置允许您管理多个区域设置属性。 它还允许您指定区域设置映射字符串，以便定义要在查看器中支持各种工具提示的语言。 有关设置的更多信息 **[!UICONTROL 本地化支持]**，请参阅 [设置资产本地化时的注意事项](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
-
-<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
-
-Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
-
-See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
-
-#### 配置应用程序常规设置 {#configuring-application-general-settings}
-
-要打开“应用程序常规设置”页面，请在Dynamic Media Classic全局导航栏中，转到 **[!UICONTROL 设置>应用程序设置>常规设置]**.
-
-**[!UICONTROL 服务器]**  — 在进行帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非通过Experience Manageras a Cloud Service支持明确指示，否则请勿更改任何服务器名称。
-**[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须唯一。 以下选项指定了如何上传替换资产：是替换原始内容还是变为重复内容。 重复资产将使用“–1”重命名（例如，chair.tif将chair-1.tif重命名）。 这些选项会影响上传到与原始资产不同的其他文件夹的资产，或者会影响文件扩展名与原始资产不同的资产。
-**[!UICONTROL 在当前文件夹中覆盖，基本图像名称/扩展名相同]**  — 此选项是最严格的替换规则。 它要求您将替换图像上传到与原始图像相同的文件夹，并且其文件扩展名与原始图像相同。 如果不满足这些要求，则会创建重复项。 要保持与Experience Manageras a Cloud Service的一致性，请始终选择 **[!UICONTROL 在当前文件夹中覆盖，基本图像名称/扩展名相同]**.
-**[!UICONTROL 在任何文件夹中覆盖相同的基本资产名称/扩展名]**  — 要求替换图像的文件扩展名与原始图像相同。 例如， chair.jpg必须替换chair.jpg，而不是chair.tif。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新后的图像位于新文件夹中；在文件的原始位置中无法再找到该文件。
-**[!UICONTROL 在任意文件夹中覆盖相同的基本资产名称，而不考虑扩展名]**  — 此选项是包含性最强的替换规则。 您可以将替换图像上传到与原始图像不同的文件夹，以其他文件扩展名上传文件，然后替换原始文件。 如果原始文件位于其他文件夹中，则替换图像将位于上传到的新文件夹中。
-**[!UICONTROL 默认颜色配置文件]**  — 请参阅 [配置色彩管理](#configuring-color-management) 以了解其他信息。 默认情况下，当您选择&#x200B;**[!UICONTROL 呈现]**&#x200B;时，系统会显示 15 种呈现形式，当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 查看器]**&#x200B;时，系统会显示 15 个查看器预设。您可以提高此限制。请参阅 [增加或减少显示的图像预设数](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 或 [增加或减少显示的查看器预设数](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+请参阅 [配置Dynamic Media常规设置](/help/assets/dynamic-media/dm-general-settings.md).
 
 #### 配置色彩管理 {#configuring-color-management}
 
@@ -330,17 +303,17 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 在页面上，向下滚动到名称 *Adobe CQ Scene7 Asset MIME 类型服务*，如下面的屏幕截图所示。在名称的右侧，点按&#x200B;**[!UICONTROL 编辑配置值]**（铅笔图标）。
 
-   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
+   ![编辑配置值](assets/2019-08-02_16-44-56.png)
 
 1. 在 **Adobe CQ Scene7资产MIME类型服务** ，请选择任意加号图标&lt;+>。 在表格中选择加号以添加新MIME类型的位置很琐碎。
 
-   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
+   ![Adobe CQ Scene7资产Mime类型服务](assets/2019-08-02_16-27-27.png)
 
 1. 类型 `DWG=image/vnd.dwg` 的空文本字段中。
 
    的 `DWG=image/vnd.dwg` MIME类型仅用于示例。 您在此处添加的MIME类型可以是任何其他不支持的格式。
 
-   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![添加DWG mime类型](assets/2019-08-02_16-36-36.png)
 
 1. 在页面的右下角，选择 **[!UICONTROL 保存]**.
 
@@ -349,7 +322,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 1. 返回到具有打开的Experience Manageras a Cloud Service控制台的浏览器选项卡。
 1. 从Experience Manageras a Cloud Service，转到 **[!UICONTROL 工具>常规>CRXDE Lite]**.
 
-   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
+   ![工具>常规>CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
 1. 在左边栏中，导航到以下内容：
 
@@ -357,12 +330,12 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 拖动MIME类型 `image_vnd.dwg` 直接放在上面 `image_` 在树中，如以下屏幕截图所示。
 
-   ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
+   ![在CRXDE Lite中编辑DWG文件](assets/crxdelite_cqdoc-14627.png)
 
 1. 具有MIME类型 `image_vnd.dwg` 仍选定， **[!UICONTROL 属性]** 选项卡 **[!UICONTROL 已启用]** 行，在 **[!UICONTROL 值]** 列标题中，双击值。 的 **[!UICONTROL 值]** 下拉列表已打开。
 1. 类型 `false` (或选择 **[!UICONTROL false]** )。
 
-   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![在CRXDE Lite中编辑mime类型](assets/2019-08-02_16-60-30.png)
 
 1. 在CRXDE Lite页面的左上角附近，选择 **[!UICONTROL 全部保存]**.
 
@@ -415,7 +388,7 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它使�
 
    对于大多数用例，0.5的默认设置已足够。
 
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+   ![作业处理队列的配置](assets/chlimage_1-1.jpeg)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -459,7 +432,7 @@ Dynamic Media Classic(Scene7)上传连接设置可将Experience Manager资产同
 
    对于大多数用例，设置2100便已足够。
 
-   ![chlimage_1-2](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7上传服务](assets/chlimage_1-2.jpeg)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
