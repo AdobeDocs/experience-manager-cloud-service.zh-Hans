@@ -1,64 +1,48 @@
 ---
-title: AEMas a Cloud Service版本2021.11.0中的Cloud Manager发行说明
-description: AEMas a Cloud Service版本2021.11.0中的Cloud Manager发行说明
+title: AEMas a Cloud Service版本2021.12.0中的Cloud Manager发行说明
+description: 以下是AEMas a Cloud Service版本2021.12.0中Cloud Manager的发行说明。
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service中的Cloud Manager发行说明2021.11.0 {#release-notes}
 
-本页概述了AEM as a Cloud Service 2021.11.0中Cloud Manager的发行说明。
+# Adobe Experience Manager as a Cloud Service中的Cloud Manager发行说明2021.12.0 {#release-notes}
+
+本页面概述了AEMas a Cloud Service中Cloud Manager的发行说明2021.12.0。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
+>
+>请参阅 [本页](/help/release-notes/release-notes-cloud/release-notes-current.md) ，以了解最新的Adobe Experience Manager as a Cloud Service发行说明。
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager的发行日期为2021.11.0 2021年11月4日。
-下一版本计划于2021年12月16日发布。
+AEM Manager在as a Cloud Service中的发布日期为2021.12.0 2021年12月16日。 下一版本计划于2022年1月发布。
 
 ### 新增功能 {#what-is-new}
 
-* 用户现在可以利用新的前端管道以加速的方式专门部署前端代码。 请参阅 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 以了解更多。
-
-   >[!IMPORTANT]
-   >您必须使用AEM版本 `2021.10.5933.20211012T154732Z` 利用新的前端管道。
-
-* 通过以更有效的方式执行代码分析，无需构建整个AEM图像，代码质量管道持续时间显着缩短。 此更改将在发布后的几周内逐步推出。
-
-* Git提交ID现在将显示在管道执行详细信息中，从而更便于跟踪已构建的代码。
-
-* 现在，可通过公开的API创建项目。
-
-* 现在，可通过公开的API创建环境。
-
-* 的 `x-request-id` 响应标头现在在API操场上可见 [www.adobe.io](https://www.adobe.io/). 提交客户关怀问题以进行疑难解答时，此标题非常有用。
-
-* 作为用户，我看到带零管道的管道卡为我提供了适当的指导。
-
-* 现在提供了新的活动页面，可在其中查看管道和代码执行等活动及其关联的详细信息。 随着时间的推移，此页面中列出的活动范围将会扩展，并且还会扩展提供的详细信息。
-
-* 现在提供了一个新的“管道”页面，该页面上提供了悬停时的状态弹出窗口，以便轻松查看详细信息摘要。 可以查看管道执行及其关联的详细信息。
-
-* 编辑管道API现在支持更改部署阶段中使用的环境。
-
-* OakPal扫描过程中对大型包进行了优化。
-
-* 质量问题CSV文件现在将包含每个质量问题的时间戳。
+* 提交哈希（已在UI中可见）现在也在API中提供。
+* “活动”页面现在包含一个用于运行管道的弹出窗口，该弹出窗口提供了管道详细信息概览摘要。
+* 添加了更新，以包含“活动”页面中显示的其他详细信息。
+* Cloud Manager中的“学习”选项卡现在包含对API指南和相关资源的快速访问。
+* 现在，具有部署管理器角色的用户可以从“存储库”页面的“操作”菜单中为没有分支的存储库启动项目/分支创建向导。
+* 现在，将通知处于添加或编辑管道工作流中的部署管理器在选定的存储库没有分支时如何创建分支或项目。
+* 新增了Cloud Manager自助服务功能，允许 [在环境级别添加自由格式变量和密钥。](/help/implementing/cloud-manager/environment-variables.md)
+* 通过新的参考演示附加组件（于2021年12月17日提供），可以安装AEM产品的最新演示代码库，并准备通过新的 [快速网站创建工具](/help/journey-sites/quick-site/overview.md) 中。
+* 前端管道现在支持管道变量。
+* 现在，可以在“程序编辑”对话框中为所有沙箱启用屏幕。
+* 概述页面中由行动动员卡提供的指南已刷新，以准确反映它与生产完整堆栈管道的关联。
+* 添加了“活动”页面的增强功能，以显示适用于管道的其他详细信息，包括源代码、提交ID等。
+* 在复制TXT条目（“TXT值”而不是“TXT记录”）时，对UI进行了次要更新，以删除潜在的混淆。
+* [与证书错误相关的文档](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) 更新了，以涵盖其他示例以及故障排除步骤。
+* 前端管道执行中现在有一个选项，可在部署到生产之前拒绝或批准。
 
 ### 错误修复 {#bug-fixes}
 
-* 某些非正统的生成配置会导致不必要的文件存储在管道的Maven对象缓存中，这会在启动和停止生成容器时导致不重要的网络I/O。
-
-* 如果部署阶段不存在，则管道PATCHAPI会失败。
-
-* 的 `ClientlibProxyResourceCheck` 当存在具有通用基本路径的客户端库时，质量规则会产生误报问题。
-
-* 达到最大存储库数时的错误消息未指定错误原因。
-
-* 在极少数情况下，管道因某些响应代码的重试处理不当而失败。
-
+* 构建步骤日志中未包含功能和UI测试对象。
+* 无法通过公共API访问产品、功能和UI测试步骤的日志。
+* 在极少数情况下，从环境详细信息页面到发布或预览服务的链接将无法正常工作。
+* 即使用户在名称字段中输入不同的名称，完整堆栈生产管道仍将保留为“生产管道”。

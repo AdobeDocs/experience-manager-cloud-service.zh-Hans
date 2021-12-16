@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7b636396dd9ca34955d2f40a7191821e43cb30f9
+source-git-commit: 8066635a11712f942fc4df813b5a4343c3ff8e87
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3370'
 ht-degree: 33%
 
 ---
@@ -532,8 +532,9 @@ ht-degree: 33%
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + Cloud Manager发行说明 {#release-notes-cloud-manager}
-         + [最新发行说明（2021.11.0 版）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2021年 {#2021}
+            + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
             + [2021.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
             + [2021.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
@@ -579,6 +580,7 @@ ht-degree: 33%
          + [将 Git 与 Adobe Cloud Manager 集成](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个源Git存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [AEM Team Development Setup for as a Cloud Service Development Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [环境变量](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD管道 {#cicd-pipelines}
          + [简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + 生产管道 {#production-pipelines}
