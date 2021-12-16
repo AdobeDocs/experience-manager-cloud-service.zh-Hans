@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版的发行说明。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service的2020.10.0发行说明。'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
+source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 17%
@@ -43,7 +43,7 @@ ht-degree: 17%
 
 * **[!DNL Assets]WebP文件支持**: [!DNL Assets] as a Cloud Service现在支持WebP图像格式。 WebP是由Google创建的一种新兴图像格式。 WebP文件格式的图像与JPG或PNG文件在视觉上没有区别，而且文件要小得多。 降低资产的文件大小缩短了页面加载时间，并帮助内容创建者提供更快的Web体验。 了解如何在 [创建处理配置文件](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
 ### 的新增功能 [!DNL Forms] {#what-is-new-forms-oct-2021}
 
