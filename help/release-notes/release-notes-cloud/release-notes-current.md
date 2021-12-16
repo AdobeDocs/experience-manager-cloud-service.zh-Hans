@@ -3,9 +3,9 @@ title: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 994ecec88f2724a75d9b11ba38c9c854a6983066
+source-git-commit: edb547fa31158e1608b57231d9705d24f008b12e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ AEMas a Cloud Service中Cloud Manager的发行日期为2021.11.0 2021年11月4�
 * 用户现在可以利用新的前端管道以加速的方式专门部署前端代码。 请参阅 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 以了解更多。
 
    >[!IMPORTANT]
-   >您必须使用AEM版本 `2021.10.5933.20211012T154732Z` 利用新的前端管道。
+   >您必须使用AEM版本 `2021.10.5933.20211012T154732Z` 或更高版本，以利用新的前端管道。
 
 * 通过以更有效的方式执行代码分析，无需构建整个AEM图像，代码质量管道持续时间显着缩短。 此更改将在发布后的几周内逐步推出。
 
