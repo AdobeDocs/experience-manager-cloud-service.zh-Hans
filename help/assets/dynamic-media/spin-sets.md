@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用旋转集。
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1847'
 ht-degree: 27%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 27%
 
 旋转集模拟360°的查看体验。 Dynamic Media 提供单轴旋转集，查看者可在该旋转集中旋转项目。另外，用户可以自由缩放和平移任何视图，只需几次简单的鼠标单击操作即可实现。这样，用户就可以从任何特定视角更仔细地检查项目。
 
-旋转集由带有&#x200B;**[!UICONTROL SPINSET]**&#x200B;字样的横幅来指定。此外，如果旋转集已发布，则横幅上会显示发布日期（由&#x200B;**[!UICONTROL World]**&#x200B;图标指示）以及上次修改日期（由&#x200B;**[!UICONTROL Pencil]**&#x200B;图标指示）。
+旋转集由带有单词的横幅来指定 **[!UICONTROL 旋转集]**.此外，如果旋转集已发布，则发布日期(由 **[!UICONTROL 世界]** 图标，以及上次修改日期(由 **[!UICONTROL 铅笔]** 图标。
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
 >[!NOTE]
 >
->有关Assets用户界面的信息，请参阅[使用触屏UI管理资产](/help/assets/manage-digital-assets.md)，并将其应用到上传图像集资产的新文件夹。
+>有关Assets用户界面的信息，请参阅 [使用触屏UI管理资产](/help/assets/manage-digital-assets.md) 并将其应用到上传图像集资产的新文件夹。
 
 ## 快速入门：旋转集 {#quick-start-spin-sets}
 
 要快速设置并运行旋转集，请执行以下步骤：
 
-1. 可选。[创建批集预设](/help/assets/dynamic-media/batch-set-presets-dm.md) ，并将其应用到新的资产文件夹。
+1. 可选。[创建批集预设](/help/assets/dynamic-media/batch-set-presets-dm.md) 并将其应用到新的资产文件夹。
 
    批集预设可以帮助您自动创建旋转集。
 
@@ -37,33 +37,35 @@ ht-degree: 27%
    >
    >批量集由IPS（图像生产系统）作为资产摄取的一部分创建。
 
-1. [为多个视图上传图像](#uploading-assets-for-spin-sets)。
+1. [为多个视图上传图像](#uploading-assets-for-spin-sets).
 
    对于一维旋转集，您至少需要一个项目8-12张拍照；对于二维旋转集，您至少需要16-24张拍照。必须定期拍摄这些照片，以给人以项目正在旋转和被翻动的印象。 例如，如果一维旋转集包含12张照片，则对于每张照片，旋转项目30° (360/12)。
 
-1. [创建旋转集](#creating-spin-sets)。
+   请参阅 [Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media) 以获取旋转集支持的格式列表。
 
-   要创建旋转集，请选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 旋转集]**，然后命名旋转集，选择资产，并选择图像的显示顺序。
+1. [创建旋转集](#creating-spin-sets).
 
-   请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
+   要创建旋转集，请选择 **[!UICONTROL 创建]** > **[!UICONTROL 旋转集]** 然后命名该集，选择资产，然后选择图像的显示顺序。
+
+   请参阅 [使用选择器](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. 根据需要设置[旋转集查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
    管理员可以创建或修改旋转集查看器预设。要查看带有查看器预设的旋转集，请选择旋转集，然后在左边栏下拉菜单中，选择&#x200B;**查看器**。
 
-   要创建或编辑查看器预设，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**。
+   要创建或编辑查看器预设，请参阅 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**.
 
-   请参阅[添加和编辑查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
+   请参阅 [添加和编辑查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-   您可以通过三种不同方式查看和访问通过批集预设方式创建的集。 （使用批集预设创建的集，请在用户界面中显示&#x200B;*不*。）
+   您可以通过三种不同方式查看和访问通过批集预设方式创建的集。 (使用批集预设创建的集，可以 *not* 显示在用户界面中。)
 
-1. [预览旋转集](/help/assets/dynamic-media/previewing-assets.md)。
+1. [预览旋转集](/help/assets/dynamic-media/previewing-assets.md).
 
-   选择旋转集，之后您便可以进行预览。旋转该旋转集。您可以从左边栏下拉菜单的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
+   选择旋转集，之后您便可以进行预览。旋转该旋转集。您可以从 **[!UICONTROL 查看器]** 菜单（可从左边栏下拉菜单中访问）。
 
-1. [发布旋转集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. [发布旋转集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-   发布旋转集时，将会激活 URL 和嵌入字符串。此外，您还必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
+   发布旋转集时，将会激活 URL 和嵌入字符串。此外，您还必须 [发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 1. [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或者[嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
 
@@ -71,15 +73,17 @@ ht-degree: 27%
 
    选择旋转集，然后在左边栏下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**。
 
-   请参阅[将旋转集关联到网页](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)和[嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
+   请参阅 [将旋转集关联到网页](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 和 [嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
 
-如有必要，您可以[编辑旋转集](#editing-spin-sets)。 此外，您还可以查看和修改[旋转集属性](/help/assets/manage-digital-assets.md#editing-properties)。
+如有必要，您可以 [编辑旋转集](#editing-spin-sets). 此外，您还可以查看和修改 [旋转集属性](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## 上传旋转集的资产 {#uploading-assets-for-spin-sets}
 
 对于一维旋转集，您至少需要一个项目的8-12张照片。必须定期拍摄这些照片，以给人以项目正在旋转和被翻动的印象。 例如，如果一维旋转集包含12张照片，则对于每张照片，旋转项目30° (360/12)。
 
-您可以像[上传Experience Manager资产](/help/assets/manage-digital-assets.md)中的任何其他资产一样，上传旋转集的图像。
+请参阅 [Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media) 以获取旋转集支持的格式列表。
+
+您可以像上传一样上传旋转集的图像 [上传Experience Manager Assets中的任何其他资产](/help/assets/manage-digital-assets.md).
 
 ### 为旋转集捕获图像的准则 {#guidelines-for-shooting-spin-set-images}
 
@@ -99,7 +103,7 @@ ht-degree: 27%
 >
 >您还可以通过[批量集预设](/help/assets/dynamic-media/config-dm.md)自动创建旋转集。**重要信息：**&#x200B;批量集由 IPS（图像制作系统）作为资产引入的一部分创建。
 >
->请参阅[配置Dynamic Media](/help/assets/dynamic-media/config-dm.md)中的“创建批集预设以自动生成图像集和旋转集”。
+>请参阅 [配置Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
 >[!NOTE]
 >
@@ -107,28 +111,28 @@ ht-degree: 27%
 
 **要创建旋转集，请执行以下操作：**
 
-1. 在资产中，导航到要创建旋转集的位置，选择&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 旋转集]**。 您还可以从包含资产的文件夹中创建旋转集。
+1. 在资产中，导航到要创建旋转集的位置，选择 **[!UICONTROL 创建]**，然后选择 **[!UICONTROL 旋转集]**. 您还可以从包含资产的文件夹中创建旋转集。
 
    ![6_5_spinset_createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
-1. 在旋转集编辑器的&#x200B;**[!UICONTROL Title]**&#x200B;字段中，输入旋转集的名称。 该名称会显示在旋转集的横幅中。（可选）输入说明。
+1. 在旋转集编辑器中， **[!UICONTROL 标题]** 字段，输入旋转集的名称。 该名称会显示在旋转集的横幅中。（可选）输入说明。
 
    ![6_5_spinset_spinseteditortitle](assets/6_5_spinset-spinseteditortitle.png)
 
    >[!NOTE]
    >
-   >创建旋转集时，您可以更改旋转集缩略图，或允许Experience Manager根据旋转集中的资产自动选择缩略图。 要选择缩略图，请选择&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;并选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从旋转集中生成缩略图，请选择&#x200B;**[!UICONTROL 切换到自动缩略图]**。
+   >创建旋转集时，您可以更改旋转集缩略图，或允许Experience Manager根据旋转集中的资产自动选择缩略图。 要选择缩略图，请选择 **[!UICONTROL 更改缩略图]** 并选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从旋转集中生成缩略图，请选择 **[!UICONTROL 切换到自动缩略图]**.
 
 1. 执行以下操作之一：
 
-   * 在“旋转集编辑器”页面的左上角附近，选择&#x200B;**[!UICONTROL 添加资产]**。
+   * 在“旋转集编辑器”页面的左上角附近，选择 **[!UICONTROL 添加资产]**.
 
-   * 在“旋转集编辑器”页面的中间附近，选择&#x200B;**[!UICONTROL 点按以打开资产选择器]**。
-   选择要包含在旋转集中的资产。 选定资产上有一个复选标记图标。完成后，在页面的右上角附近，选择&#x200B;**[!UICONTROL 选择]**。
+   * 在“旋转集编辑器”页面的中间附近，选择 **[!UICONTROL 点按以打开资产选择器]**.
+   选择要包含在旋转集中的资产。 选定资产上有一个复选标记图标。完成后，在页面的右上角附近，选择 **[!UICONTROL 选择]**.
 
-   借助资产选择器，您可以通过键入关键字并点按&#x200B;**[!UICONTROL 返回]**&#x200B;来搜索资产。您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后选择工具栏上的&#x200B;**[!UICONTROL 过滤器]**&#x200B;图标。 点按“视图”图标并选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;可更改视图。
+   借助资产选择器，您可以通过键入关键字并点按&#x200B;**[!UICONTROL 返回]**&#x200B;来搜索资产。您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后选择 **[!UICONTROL 过滤器]** 图标。 点按“视图”图标并选择&#x200B;**[!UICONTROL 列视图]**、**[!UICONTROL 卡片视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**&#x200B;可更改视图。
 
-   请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
+   请参阅 [使用选择器](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
@@ -142,33 +146,33 @@ ht-degree: 27%
 
 1. （可选）执行以下操作之一：
 
-   * 要删除图像，请选择该图像，然后选择&#x200B;**[!UICONTROL 删除资产]**。
+   * 要删除图像，请选择该图像并选择 **[!UICONTROL 删除资产]**.
 
-   * 要应用预设，请在页面右上角附近选择&#x200B;**[!UICONTROL 预设]**，然后选择要同时应用于所有资产的预设。
+   * 要应用预设，请在页面的右上角附近，选择 **[!UICONTROL 预设]**，然后选择要同时应用于所有资产的预设。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。您新创建的旋转集会显示在创建时所用的文件夹中。
 
 ## 查看旋转集 {#viewing-spin-sets}
 
-您可以在用户界面中创建旋转集，也可以使用[批集预设](/help/assets/dynamic-media/config-dm.md)自动创建旋转集。 但是，使用批集预设创建的集合，请&#x200B;*不*&#x200B;显示在用户界面中。 您可以通过三种不同方式访问通过批集预设创建的集。 （即使您是在用户界面中创建旋转集，这些方法也可用）。
+您可以在用户界面中创建旋转集，也可以使用 [批次集预设](/help/assets/dynamic-media/config-dm.md). 但是，使用批集预设创建的集，请执行 *not* 显示在用户界面中。 您可以通过三种不同方式访问通过批集预设创建的集。 （即使您是在用户界面中创建旋转集，这些方法也可用）。
 
 >[!NOTE]
 >
->您还可以通过用户界面查看集，如[编辑旋转集](#editing-spin-sets)中所述。
+>您还可以通过用户界面查看集，如 [编辑旋转集](#editing-spin-sets).
 
 **要查看旋转集，请执行以下操作：**
 
-1. 打开单个资产的属性时。 属性指示所选资产是的成员（位于&#x200B;**[!UICONTROL 集的成员]**&#x200B;下）。 要查看整个集，请选择集的名称。
+1. 打开单个资产的属性时。 属性指示所选资产是的成员集(在 **[!UICONTROL 集成员]**)。 要查看整个集，请选择集的名称。
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
-1. 来自任何集的成员图像。选择&#x200B;**[!UICONTROL 集]**&#x200B;菜单以显示资产所属的集。
+1. 来自任何集的成员图像。选择 **[!UICONTROL 集]** 菜单，以显示资产所属的集。
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
 1. 从搜索中，您可以选择&#x200B;**[!UICONTROL 过滤器]**，然后展开 **[!UICONTROL Dynamic Media]**，并选择&#x200B;**[!UICONTROL 集]**。
 
-   搜索会返回在UI中手动创建的匹配集，或通过批集预设自动创建的匹配集。 对于自动集，搜索查询使用`Starts with`搜索标准进行，该搜索标准与基于使用`Contains`搜索标准的Experience Manager搜索不同。 将筛选器设置为&#x200B;**[!UICONTROL Sets]**&#x200B;是搜索自动集的唯一方法。
+   搜索会返回在UI中手动创建的匹配集，或通过批集预设自动创建的匹配集。 对于自动集，使用 `Starts with` 搜索标准，与基于使用的Experience Manager搜索不同 `Contains` 搜索标准。 将过滤器设置为 **[!UICONTROL 集]** 是搜索自动集的唯一方法。
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -186,31 +190,31 @@ ht-degree: 27%
 
 1. 执行以下任一操作：
 
-   * 将鼠标悬停在旋转集资产上，然后选择&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
-   * 将鼠标悬停在旋转集资产上，选择&#x200B;**[!UICONTROL 选择]**（复选标记图标），然后选择工具栏上的&#x200B;**[!UICONTROL 编辑]**。
+   * 将鼠标悬停在旋转集资产上，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
+   * 将鼠标悬停在旋转集资产上，选择 **[!UICONTROL 选择]** （复选标记图标），然后选择 **[!UICONTROL 编辑]** 中。
 
-   * 选择旋转集资产，然后选择工具栏上的&#x200B;**[!UICONTROL 编辑]**（铅笔图标）。
+   * 选择旋转集资产，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
 
 1. 要编辑旋转集，请执行以下任一操作：
 
    * 要对图像重新排序，请将图像拖到新位置（选择重新排序图标以移动项目）。
    * 要按升序或降序对项目进行排序，请选择列标题。
-   * 要添加资产或更新现有资产，请选择&#x200B;**[!UICONTROL 添加资产]**。 导航到资产，将其选中，然后选择右上角附近的&#x200B;**[!UICONTROL 选择]**。
+   * 要添加资产或更新现有资产，请选择 **[!UICONTROL 添加资产]**. 导航到资产，选择该资产，然后选择 **[!UICONTROL 选择]** 在右上角附近。
 如果您通过将Experience Manager用作缩略图的图像替换为其他图像来删除图像，则仍会显示原始资产。
-   * 要删除资产，请选择该资产，然后选择&#x200B;**[!UICONTROL 删除资产]**。
+   * 要删除资产，请选择资产，然后选择 **[!UICONTROL 删除资产]**.
    * 要应用预设，请选择预设图标，然后选择预设。
-   * 要删除整个旋转集，请导航到旋转集，将其选中，然后选择&#x200B;**[!UICONTROL Delete]**
+   * 要删除整个旋转集，请导航到旋转集，将其选中，然后选择 **[!UICONTROL 删除]**
 
    >[!NOTE]
    >
-   >您可以导航到旋转集，选择左边栏中的&#x200B;**[!UICONTROL Set Members]** ，然后选择单个资产上的“铅笔”图标以打开编辑窗口，来编辑旋转集中的图像。
+   >您可以通过导航到旋转集并选择 **[!UICONTROL 设置成员]** ，然后选择单个资产上的铅笔图标以打开编辑窗口。
 
-1. 完成编辑后，选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择 **[!UICONTROL 保存]** 完成编辑时。
 
 ## 预览旋转集 {#previewing-spin-sets}
 
-请参阅[预览资产](/help/assets/dynamic-media/previewing-assets.md)。
+请参阅 [预览资产](/help/assets/dynamic-media/previewing-assets.md).
 
 ## 发布旋转集 {#publishing-spin-sets}
 
-请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+请参阅 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

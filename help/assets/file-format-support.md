@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 30%
+source-wordcount: '985'
+ht-degree: 26%
 
 ---
 
@@ -66,30 +66,6 @@ ht-degree: 30%
 | SGI | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
-
-## 中的图像格式 [!DNL Dynamic Media] {#image-support-dynamic-media}
-
-| 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PSD   ‡ | ✓ | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-从PSD文件中提取合并的图像。 它是由 [!DNL Adobe Photoshop] 和包含在PSD文件中。 根据设置，合并的图像可能是实际的图像，也可能不是实际的图像。
-
-不支持的栅格图像文件格式的以下子类型 [!DNL Dynamic Media]:
-
-* IDAT区块大于100 MB的PNG文件。
-* PSB文件。
-* 不支持具有CMYK、RGB、灰度或位图以外的色彩空间的PSD文件。 不支持DuoTone、Lab和索引色彩空间。
-* PSD位深度大于16的文件。
-* TIFF具有浮点数据的文件。
-* TIFF具有Lab色彩空间的文件。
 
 ## 3D格式 {#support-3d-formats}
 
@@ -164,14 +140,6 @@ ht-degree: 30%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## 文档格式 [!DNL Dynamic Media] {#document-support-dynamic-media}
-
-| 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
-| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| 人工智能 | ✓ | - | - | - | - |
-| INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
 ## 视频格式 {#video-formats}
 
 | 文件格式 | 缩略图生成 | 元数据提取 | 宽度/高度 |
@@ -200,24 +168,6 @@ ht-degree: 30%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## 中的视频格式 [!DNL Dynamic Media] 用于转码 {#video-dynamic-media-transcoding}
-
-| 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
-| --- | --- | --- | --- |
-| AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
-| FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | Matroska | H264/AVC | - |
-| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
-| MP4 | MPEG-4 | H264/AVC（所有配置文件） | - |
-| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
-| OGV、OGG | Ogg | Theora、VP3、Dirac | - |
-| WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen (MSS2)、Microsoft Photo Story (WVP2) |
-
-‡尚不支持在Dynamic Media中将此视频格式用于交互式视频，或在Experience Manager Assets中将其与“注释”一起使用。
-
 ## 音频格式 {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] 为AIF、ASF、M4A、MP3、WAV和WMA音频格式提供XMP元数据提取支持。
@@ -238,6 +188,69 @@ ht-degree: 30%
 ## 提示和限制 {#limitations-and-tips}
 
 * 目前，元数据提取的文件大小限制约为15 GB。 上传超大型资产时，有时元数据提取操作会失败。
+
+## Dynamic Media — 支持的用于转码的输入视频格式 {#video-dynamic-media-transcoding}
+
+| 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
+| --- | --- | --- | --- |
+| AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
+| FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
+| M4V | Apple iTunes | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
+| MP4 | MPEG-4 | H264/AVC（所有配置文件） | - |
+| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
+| MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
+| OGV、OGG | Ogg | Theora、VP3、Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen (MSS2)、Microsoft Photo Story (WVP2) |
+
+‡尚不支持在Dynamic Media中将此视频格式用于交互式视频，或在Experience Manager Assets中将其与“注释”一起使用。
+
+## Dynamic Media — 支持的文档格式 {#document-support-dynamic-media}
+
+| 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| 人工智能 | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+## Dynamic Media — 支持的栅格图像格式 {#image-support-dynamic-media}
+
+| 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 | 设置支持此格式的类型 |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+| BMP | ✓ | - | - | - | - | [图像](/help/assets/dynamic-media/image-sets.md), [混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和 [旋转](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md), [混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和 [旋转](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md), [混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和 [旋转](/help/assets/dynamic-media/spin-sets.md) |
+| PSD   ‡ | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md), [混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和 [旋转](/help/assets/dynamic-media/spin-sets.md) |
+
+从PSD文件中提取合并的图像。 它是由 [!DNL Adobe Photoshop] 和包含在PSD文件中。 根据设置，合并的图像可能是实际的图像，也可能不是实际的图像。
+
+## Dynamic Media — 不支持的栅格图像格式 {#unsupported-raster-image-formats-dm}
+
+以下栅格图像文件格式的子类型： *not* 支持 [!DNL Dynamic Media]:
+
+* IDAT区块大于100 MB的PNG文件。
+* PSB文件。
+* 不支持具有CMYK、RGB、灰度或位图以外的色彩空间的PSD文件。 不支持DuoTone、Lab和索引色彩空间。
+* PSD位深度大于16的文件。
+* TIFF具有浮点数据的文件。
+* TIFF具有Lab色彩空间的文件。
+
+## Dynamic Media — 支持的3D文件格式 {#support-3d-formats-dynamic-media}
+
+另请参阅 [支持的3D格式](/help/assets/file-format-support.md#support-3d-formats)
+
+| 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
+|---|---|---|---|
+| GLB | 二进制GL传输 | model/gltf-binary | 将材料和纹理作为单个资产包含在内。 |
+| OBJ | WaveFront 3D对象文件 | application/x-tgif |  |
+| STL | 立体成形 | application/vnd.ms-pki.stl |  |
+| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | *仅支持摄取；无法查看或进行交互。* USDZ是一种专有的3D格式，Safari或iOS可在本地查看。 |
 
 >[!MORELIKETHIS]
 >
