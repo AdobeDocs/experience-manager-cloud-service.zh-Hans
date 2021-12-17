@@ -3,9 +3,9 @@ title: 站点模板
 description: 了解如何使用AEM网站模板来预定义网站结构和初始内容，以便快速创建网站。
 feature: Administering
 role: Admin
-source-git-commit: 2dd35f1ea25f6bfc515d7b50fd53cf4638af4026
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 站点模板 {#site-templates}
 
 了解如何使用AEM网站模板来预定义网站结构和初始内容，以便快速创建网站。
-
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
 
 ## 概述 {#overview}
 

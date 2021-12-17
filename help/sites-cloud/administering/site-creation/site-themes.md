@@ -3,9 +3,9 @@ title: 站点主题
 description: 了解如何使用AEM网站主题自定义网站的样式和设计。
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 站点主题 {#site-themes}
 
 了解如何使用AEM网站主题自定义网站的样式和设计。
-
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
 
 ## 概述 {#overview}
 
@@ -55,6 +51,6 @@ Adobe提供了最佳实践参考主题，您可以将其用作创建自己主题
 
 ## 开发网站主题 {#developing-themes}
 
-Adobe将和AEM网站主题生成器作为一组用于创建新网站主题的脚本。
+Adobe将AEM网站主题生成器作为一组用于创建新网站主题的脚本。
 
 [提供了AEM Site Theme Builder以及GitHub上的使用文档。](https://github.com/adobe/aem-site-theme-builder) 自定义主题需要具备前端开发体验。

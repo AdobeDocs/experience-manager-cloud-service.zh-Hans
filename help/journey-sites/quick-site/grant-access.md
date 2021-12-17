@@ -1,9 +1,9 @@
 ---
 title: 授予对前端开发人员的访问权限
 description: 将前端开发人员载入Cloud Manager，以便他们能够访问您的AEM站点git存储库和管道。
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 授予对前端开发人员的访问权限 {#grant-fed-access}
 
 将前端开发人员载入Cloud Manager，以便他们能够访问您的AEM站点git存储库和管道。
-
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
 
 ## 迄今为止的故事 {#story-so-far}
 

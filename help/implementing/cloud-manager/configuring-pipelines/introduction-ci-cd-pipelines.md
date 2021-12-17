@@ -2,9 +2,9 @@
 title: CI-CD管线
 description: 可查看本页以了解有关Cloud Manager CI-CD管道的信息
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -51,9 +51,9 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 | 管道类型 | 部署或代码质量 | 源代码 | 使用时间 | 何时或为何应使用？ |
 |--- |--- |--- |---|---|
 | 生产或非生产 | 部署 | 前端 | 部署时间快。<br>可以为每个环境同时配置和运行多个前端管道。<br>前端管道构建将内部版本推出到存储。 提供html页面时，可能会引用前端代码静态文件，CDN将使用此存储作为源提供这些文件。 | 专门部署包含一个或多个客户端UI应用程序的前端代码。 前端代码是用作静态文件的任何代码。 它与AEM提供的UI代码不同。 它包括Sites主题、客户定义的SPA、Firefly SPA和任何其他解决方案。<br>必须为AEM版本2021.10.5933.20211012T154732Z<br>必须启用站点。 |
-| 生产或非生产 | 部署 | 完整堆栈 | 当前端管道尚未采用时。<br>如果前端代码必须与AEM Server代码完全同时部署，则 | 要部署AEM服务器代码（不可变内容、Java代码、OSGi配置、HTTPD/调度程序配置、重新指向、可变内容、字体） — 同时包含一个或多个AEM服务器应用程序。 |
+| 生产或非生产 | 部署 | 完全堆栈 | 当前端管道尚未采用时。<br>如果前端代码必须与AEM Server代码完全同时部署，则 | 要部署AEM服务器代码（不可变内容、Java代码、OSGi配置、HTTPD/调度程序配置、重新指向、可变内容、字体） — 同时包含一个或多个AEM服务器应用程序。 |
 | 非生产 | 代码质量 | 前端 | 以便Cloud Manager进行评估。 无需进行部署，即可获得构建成功和代码质量。<br>可以配置和运行多个管道。 | 对前端代码运行代码质量扫描。 |
-| 非生产 | 代码质量 | 完整堆栈 | 以便Cloud Manager进行评估。 无需进行部署，即可获得构建成功和代码质量。<br>可以配置和运行多个管道。 | 对完整堆栈代码运行代码质量扫描。 |
+| 非生产 | 代码质量 | 完全堆栈 | 以便Cloud Manager进行评估。 无需进行部署，即可获得构建成功和代码质量。<br>可以配置和运行多个管道。 | 对完整堆栈代码运行代码质量扫描。 |
 
 
 下图说明了Cloud Manager管道配置采用传统的单一前端存储库或独立的前端存储库设置：
@@ -74,7 +74,7 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 ### 配置前端管道之前 {#before-start}
 
-在开始配置前端管线之前，请参阅 [AEM快速网站创建历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 通过易于使用的AEM快速站点创建工具实现端到端工作流。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
+在开始配置前端管线之前，请参阅 [AEM快速网站创建历程](/help/journey-sites/quick-site/overview.md) 通过易于使用的AEM快速站点创建工具实现端到端工作流。 此文档网站将帮助您简化AEM网站的前端开发，并在不了解AEM后端知识的情况下快速自定义您的网站。
 
 ### 配置前端管线 {#configure-front-end}
 
@@ -82,6 +82,12 @@ Cloud Manager中的CI/CD管道可由某种事件触发，例如源代码存储�
 
 * [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### 利用前端管道开发站点 {#developing-with-front-end-pipeline}
+
+利用前端管道，使前端开发者更加独立，开发过程可以获得较大的速度。
+
+请参阅 [本文档](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此过程的工作方式以及需要注意的一些事项，以便充分挖掘此过程的潜力。
 
 ## 完整堆栈管道 {#full-stack-pipeline}
 

@@ -1,9 +1,9 @@
 ---
 title: 检索Git存储库访问信息
 description: 了解前端开发人员如何使用Cloud Manager访问git存储库信息。
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 4%
 
 ---
@@ -13,13 +13,9 @@ ht-degree: 4%
 
 了解前端开发人员如何使用Cloud Manager访问git存储库信息。
 
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
-
 ## 迄今为止的故事 {#story-so-far}
 
-如果您是仅负责自定义网站主题的前端开发人员，则无需了解AEM的设置方式，即可跳转到 [目标](#objective) 文档的部分。
+如果您是仅负责自定义网站主题的前端开发人员，则无需了解AEM的设置方式，即可跳转到 [目标](#objective) 部分。
 
 如果您还担任Cloud Manager或AEM管理员以及前端开发人员的角色，则您在AEM快速网站创建历程的上一文档中了解到， [授予对前端开发人员的访问权限，](grant-access.md) 如何载入前端开发人员，以便他们能够访问git存储库，您现在应该知道：
 

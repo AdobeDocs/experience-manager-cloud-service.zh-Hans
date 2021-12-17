@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
+source-git-commit: f333294f1bb13291a8d947c3fbfd99b5e7b4a9d6
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3415'
 ht-degree: 33%
 
 ---
@@ -639,6 +639,8 @@ ht-degree: 33%
       + [AEM技术基础](/help/implementing/developing/introduction/aem-technologies.md)
       + [API参考资料](/help/implementing/developing/reference-materials.md)
       + [为服务器端API生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [快速创建站点和前端定制](/help/implementing/developing/introduction/quick-site-creation.md)
+      + [利用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自定义网站模板和主题](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md)
       + 全栈AEM开发 {#full-stack}

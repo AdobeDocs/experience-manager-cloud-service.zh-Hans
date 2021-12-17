@@ -1,9 +1,9 @@
 ---
 title: 从模板创建网站
 description: 了解如何使用网站模板快速创建新的AEM网站。
-source-git-commit: 73e9d1debe70aff7f53d658bbac074fc53d8f1ae
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 从模板创建网站 {#create-site-from-template}
 
 了解如何使用网站模板快速创建新的AEM网站。
-
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
 
 ## 迄今为止的故事 {#story-so-far}
 

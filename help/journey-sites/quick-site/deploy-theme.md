@@ -1,9 +1,9 @@
 ---
 title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # 部署自定义主题 {#deploy-your-customized-theme}
 
 了解如何使用管道部署站点主题。
-
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -95,11 +91,16 @@ ht-degree: 1%
 * 如何使用代理的AEM内容自定义和测试主题，并将这些更改提交到AEM git。
 * 如何使用管道部署前端自定义。
 
-现在，您可以自定义自己AEM网站的主题。 但是，AEM是一款功能强大的工具，还有许多其他选项可供使用。 请查看 [“其他资源”部分](#additional-resources) 以进一步了解您在此历程中看到的功能。
+现在，您可以自定义自己AEM网站的主题。 但是，在开始使用多个前端管道创建不同的工作流之前，请先查看此文档 [使用前端管道开发站点。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 它将通过以下方式帮助您充分利用前端开发：
+
+* 保持单一的真相。
+* 维持关注的分离。
+
+AEM是一款功能强大的工具，还有许多其他选项可供使用。 请查看 [“其他资源”部分](#additional-resources) 以进一步了解您在此历程中看到的功能。
 
 ## 其他资源 {#additional-resources}
 
-同时，建议您通过审阅文档来转到快速网站创建历程的下一部分 [部署您的自定义主题，](deploy-theme.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续访问这些概念。
+以下是一些其他资源，可更深入地了解本文档中提到的一些概念。
 
 * [AEMas a Cloud Service技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已经对AEM有了很深的了解，则可能需要直接查阅深入的技术文档。
 * [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html)  — 如果您希望了解有关Cloud Manager功能的更多详细信息，则可能需要直接查阅深入的技术文档。
@@ -115,3 +116,4 @@ ht-degree: 1%
 * [入门历程](/help/journey-onboarding/home.md)  — 本指南将作为您的起点，确保您的团队已设置并有权访问AEMas a Cloud Service。
 * [Adobe Experience Manager Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans)  — 浏览Cloud Manager文档，以获取其功能的完整详细信息。
 * [站点管理文档](/help/sites-cloud/administering/site-creation/create-site.md)  — 有关快速网站创建工具功能的更多详细信息，请参阅网站创建技术文档。
+* [利用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 本文档介绍了一些需要注意的事项，以便利用前端管道充分利用前端开发流程。

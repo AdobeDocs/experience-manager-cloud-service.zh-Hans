@@ -1,9 +1,9 @@
 ---
 title: 自定义网站主题
 description: 了解如何构建网站主题、如何自定义以及如何使用实时AEM内容进行测试。
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 自定义网站主题 {#customize-the-site-theme}
 
 了解如何构建网站主题、如何自定义以及如何使用实时AEM内容进行测试。
-
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -72,7 +68,7 @@ ht-degree: 0%
 
    ![在本地登录](assets/sign-in-locally.png)
 
-1. 登录后，请更改浏览器中的URL，以指向AEM管理员向您提供的示例内容的路径。
+1. 登录后，请更改浏览器中的URL，以指向AEM管理员为您提供的示例内容的路径。
 
    * 例如，如果提供的路径是 `/content/<your-site>/en/home.html?wcmmode=disabled`
    * 您将URL更改为 `http://localhost:7001/content/<your-site>/en/home.html?wcmmode=disabled`

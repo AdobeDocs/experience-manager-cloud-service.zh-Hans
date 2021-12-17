@@ -1,9 +1,9 @@
 ---
 title: 了解Cloud Manager和快速网站创建工作流程
 description: 了解Cloud Manager以及它如何将新的快速站点创建过程联系起来。
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 了解Cloud Manager和快速网站创建工作流程 {#understand-cloud-manager}
 
 了解Cloud Manager以及它如何将新的快速站点创建过程联系起来。
-
->[!CAUTION]
->
->快速网站创建工具当前为技术预览。 它可用于测试和评估目的，并且除非与Adobe支持部门达成协议，否则不会用于生产。
 
 >[!TIP]
 >
