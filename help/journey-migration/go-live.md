@@ -1,9 +1,9 @@
 ---
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ ht-degree: 0%
 * 根据您在克隆上执行AEMas a Cloud Service阶段迁移期间获得的经验，从生产中启动迁移：
    * 作者 — 作者
    * 发布 — 发布
-
->[!NOTE]
->
->Aemas a Cloud Service作者将在摄取期间显示，但AEMas a Cloud Service发布将在摄取期间显示。
 
 * 验证已摄取到AEMas a Cloud Service创作层和发布层的内容。
 * 指示内容创作团队在摄取完成之前，避免在源和目标上移动内容
