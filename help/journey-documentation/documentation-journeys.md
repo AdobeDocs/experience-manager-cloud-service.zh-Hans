@@ -3,9 +3,9 @@ title: AEM文档历程
 description: 文档历程通过将复杂和不同的功能捆绑在一起，以最佳做法方式解决业务目标，从而在AEM文档中提供了一种叙述性结构。 在设计时考虑了AEM初学者，历程将介绍概念和功能，以实现从A到Z的目标。
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -93,6 +93,6 @@ AEM文档历程的主要目标是帮助初次接触AEM的读者了解系统中�
 | [AEM载入历程](/help/journey-onboarding/home.md) | 从此处开始，快速启动并运行新的AEMas a Cloud Service环境！ |
 | [AEM快速网站创建历程](/help/journey-sites/quick-site/overview.md) | 从此处开始，逐步了解使用简单的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。 |
 | AEM Commerce历程 | 即将推出！ |
-| AEMaaCS迁移历程 | 即将推出！ |
+| [AEMas a Cloud Service迁移历程](/help/journey-migration/getting-started.md) | 从此处开始，逐步了解如何从内部部署或Adobe管理的AEM安装迁移到完全基于云的AEMas a Cloud Service，并介绍其多项优势。 |
 
 当新历程可用时，请回访以了解更多内容。

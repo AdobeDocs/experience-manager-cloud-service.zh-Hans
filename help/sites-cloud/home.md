@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 站点
 description: Adobe Experience Manager as a Cloud Service 站点自助资源和文档链接
 landing-page-description: 了解如何使用进行创作并管理AEM Sitesas a Cloud Service。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 76%
@@ -36,7 +36,7 @@ ht-degree: 76%
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门](/help/onboarding/home.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
-| [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解过渡到云服务的历程。 |
+| [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到云服务的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |

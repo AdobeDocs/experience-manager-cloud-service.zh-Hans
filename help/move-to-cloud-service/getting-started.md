@@ -2,7 +2,7 @@
 title: Experience Manager合作伙伴as a Cloud Service的迁移指南
 description: Experience Manager合作伙伴as a Cloud Service的迁移指南
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 10%
@@ -114,7 +114,7 @@ Cloud Manager是Managed Services的可选内容交付工具，它是必需的。
 
 下图显示了推荐的过渡到云服务的历程的示意图。
 
-![图像](/help/move-to-cloud-service/assets/home-img1.png)
+![图像](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
@@ -170,7 +170,7 @@ Cloud Manager允许组织在云中自行管理Experience Manager。 它包括持
 1. [部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) git
 2. 通过 [Cloud Manager质量管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
 3. [部署到开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**仅迁移**] 使用包或 [内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
+4. [**仅迁移**] 使用包或 [内容传输工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
 5. 执行建议的测试周期（烟度、QA等）
 6. 提升到Cloud Manager生产管道
 7. 烟度测试验证

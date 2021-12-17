@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -22,11 +22,11 @@ ht-degree: 5%
 
 1. 单击您的项目卡片上的以打开项目登录页面。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. 导航到 **就绪** 部分，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >请参阅在Cloud Acceleration Manager中创建和管理项目，以了解更多信息。
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 1. 单击 **审阅** 按钮 **最佳实践分析** 卡。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. 请按照以下步骤下载Best Practices Analyzer(BPA)。
 
@@ -53,14 +53,14 @@ ht-degree: 5%
 
 1. 单击 **上载新报表** 以在CAM中上传BPA报告。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
    >如果您处于浏览器的“隐身”模式，则无法上传报表。
 
 1. 上传新报表后，您将看到“最佳实践分析”报表。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 1. 查看并浏览CAM中的“最佳实践分析”功能板。 请参阅以下章节 [查看最佳实践分析报表](#analysis-report) 以了解更多详细信息。
 
@@ -75,7 +75,7 @@ ht-degree: 5%
 
 1. 单击 **打印预览** 图标（如下所示）。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
 1. 单击 **打印预览** 打开一个新选项卡，其中报告以可打印预览显示。 单击 **打印** 将报表打印为PDF格式。
 
@@ -84,7 +84,7 @@ ht-degree: 5%
    >* 如果使用浏览器的打印按钮，则将仅打印一页。
 
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 使用查看趋势线 {#trendline-view-cam}
 
@@ -97,22 +97,22 @@ ht-degree: 5%
 
 1. 导航到您的项目并单击 **审阅** 从 **最佳实践分析** 卡 **就绪** 阶段。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. 单击 **...** 图标来显示下拉菜单。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >显示的报表始终为具有最新报表日期的报表。
 
 1. 单击 **查看趋势线**，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. 单击 **查看趋势线** 打开报表的趋势线视图，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -124,14 +124,14 @@ ht-degree: 5%
 
    >
    >您可以通过下拉菜单添加或更改图形视图，如下图所示：
-   >![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![图像](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### 查看最佳实践分析报表 {#analysis-report}
 
 浏览“最佳实践分析报表”页面中提供的以下信息卡：
 
-![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > 通过每张卡，您能够：
@@ -144,21 +144,21 @@ ht-degree: 5%
 
 的 **报表属性** 卡片提供有关报表属性的信息，例如报表日期、持续时间、过滤器、上传日期和Adobe Experience Manager(AEM)详细信息。
 
-![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
+![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### 报表概述 {#report-overview}
 
 此 **报表概述** 卡片提供在评估是否准备好迁移到AEMas a Cloud Service时适用的报告发现结果和严重性级别，如下图所示。
 
-![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 单击此报表可打开 **报表** 选项卡。
 
-![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 您可以根据重要性、子类型或计数来过滤报表。
 
-![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >请参阅 [解释最佳实践分析器报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 了解调查结果类别和重要性级别。
@@ -183,7 +183,7 @@ ht-degree: 5%
 * 评估
 * 内容迁移注意事项
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 使用计划和设置卡 {#planning-setup}
 
@@ -191,11 +191,11 @@ ht-degree: 5%
 
 1. 单击 **查看** 按钮 **规划和设置** 卡。 此卡提供所有相关内容，可帮助您规划和设置AEM迁移。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. 内容轮播显示迁移历程这一阶段的所有相关信息。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### 删除最佳实践分析报表 {#delete-trendline}
 
@@ -206,23 +206,23 @@ ht-degree: 5%
 
 1. 导航到您的项目并单击 **审阅** 从 **最佳实践分析** 卡 **就绪** 阶段。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. 单击 **...** 图标来显示下拉菜单。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. 单击 **查看趋势线**，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. 单击 **趋势线报表** 屏幕。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. 单击 **删除** 以确认删除。
 
-   ![图像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
+   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## 下一步 {#whats-next}
 

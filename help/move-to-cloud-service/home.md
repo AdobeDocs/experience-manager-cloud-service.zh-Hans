@@ -3,7 +3,7 @@ title: 移动到 AEM as a Cloud Service
 description: 有关将 Adobe Experience Manager as a Cloud Service 作为云服务移动到 AEM 的自助资源和文档链接
 landing-page-description: 了解过渡到云服务的历程。
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 52%
@@ -31,7 +31,7 @@ AEM as a Cloud Service为Experience Manager Assets、Forms和Screens提供了可
 
 下图显示了推荐的过渡到AEMas a Cloud Service历程的示意图。
 
-![图像](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![图像](/help/journey-migration/assets/move-aemcloud-process.png)
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}

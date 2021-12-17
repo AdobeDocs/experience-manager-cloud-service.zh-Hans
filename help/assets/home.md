@@ -5,10 +5,10 @@ landing-page-description: 了解如何使用和管理 Experience Manager Assets 
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '287'
+ht-degree: 35%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 36%
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用进行创作并管理 [!DNL Experience Manager Sites] as a [!DNL Cloud Service]. |
 | [实施用户指南](/help/implementing/home.md) | 了解如何通过探索这些开发和部署主题，使用Experience Manager的强大功能构建和自定义体验。 |
 | [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式旅程，体验Experience Manager强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
-| [迁移到 [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | 了解向 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
+| [迁移到 [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/journey-migration/getting-started.md) | 了解向 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [操作用户指南](/help/operations/home.md) | 了解的后端操作 [!DNL Experience Manager] as a [!DNL Cloud Service]，如索引和维护任务。 |
 | [Commerce用户指南](/help/commerce-cloud/home.md) | 了解商务集成框架 [!DNL Experience Manager] as a [!DNL Cloud Service]. |

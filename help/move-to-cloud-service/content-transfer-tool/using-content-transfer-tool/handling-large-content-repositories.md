@@ -2,7 +2,7 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 1%
@@ -70,14 +70,14 @@ ht-degree: 1%
 
 从Azure门户的容器属性页面中，使用 **计算大小** 按钮以确定容器中所有内容的大小。 例如：
 
-![图像](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![图像](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3数据存储 {#amazon-data}
 
 您可以使用容器的“量度”选项卡确定容器中所有内容的大小。 例如：
 
 
-![图像](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![图像](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### 文件数据存储 {#file-data-store-determine-size}
 
@@ -243,4 +243,4 @@ Final Job Status: CompletedWithSkipped
 
 ## 下一步 {#whats-next}
 
-学习了处理大型内容存储库以显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service后，您便可以学习内容传输工具中的提取流程。 请参阅 [在内容传输工具中从源提取内容](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何从内容传输工具中提取迁移集。
+学习了处理大型内容存储库以显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service后，您便可以学习内容传输工具中的提取流程。 请参阅 [在内容传输工具中从源提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何从内容传输工具中提取迁移集。

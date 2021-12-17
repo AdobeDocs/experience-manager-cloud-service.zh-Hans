@@ -2,7 +2,7 @@
 title: 准备阶段
 description: 准备阶段
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 87%
@@ -37,7 +37,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 下图显示了“规划”阶段所包含的关键步骤：
 
-![图像](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![图像](/help/journey-migration/assets/planning-phaseimg1.png)
 
 ### 评估云服务准备情况 {#access-cloud-readiness}
 
@@ -45,7 +45,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 您需要根据显著更改和已弃用功能对当前 AEM 源代码进行全面评估，以确定过渡历程中预期的工作量。
 
-您可以通过在当前AEM版本上运行最佳实践分析器来加快评估步骤。 有关更多详细信息，请参阅[Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
+您可以通过在当前AEM版本上运行最佳实践分析器来加快评估步骤。 有关更多详细信息，请参阅 [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >如果您已经有权访问 Cloud Manager 和云服务环境，则建议在 Cloud Manager 代码质量管道中运行当前代码，以评估与云服务兼容所需的代码更改。

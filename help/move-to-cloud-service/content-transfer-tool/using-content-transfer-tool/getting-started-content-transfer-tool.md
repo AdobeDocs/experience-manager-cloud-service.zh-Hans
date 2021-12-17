@@ -2,7 +2,7 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 27%
@@ -57,16 +57,16 @@ ht-degree: 27%
 
 1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **内容迁移**.
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. 选择 **内容传输** 选项自 **内容迁移** 向导。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. 创建第一个迁移集时，将显示以下控制台。 单击&#x200B;**创建迁移集**&#x200B;以创建新的迁移集。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >如果您有现有迁移集，控制台将显示现有迁移集的列表及其当前状态。
@@ -74,7 +74,7 @@ ht-degree: 27%
 
 1. 填充 **创建迁移集** 屏幕，如下所述。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **名称**：输入迁移集的名称。
       >[!NOTE]
@@ -95,7 +95,7 @@ ht-degree: 27%
 
       1. **包含版本**：根据需要选择。包含版本时，路径 `/var/audit` 会自动包含在内以迁移审核事件。
 
-         ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >如果您打算将版本作为迁移集的一部分，并且要通过 `wipe=false`，则由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望保持启用版本清除，并在迁移集中执行增补，则必须将摄取作为 `wipe=true`.
@@ -115,7 +115,7 @@ ht-degree: 27%
 
 1. 您将在 **内容传输** 向导，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    所有现有迁移集都显示在 **内容传输** 向导及其当前状态和状态信息。 您可能会看到下面描述的一些图标。
 
@@ -125,7 +125,7 @@ ht-degree: 27%
 
 1. 选择迁移集并单击 **属性** 查看或编辑迁移集属性。 在编辑属性时，无法更改 **迁移集名称** 或 **服务URL**.
 
-   ![图像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## 下一步 {#whats-next}

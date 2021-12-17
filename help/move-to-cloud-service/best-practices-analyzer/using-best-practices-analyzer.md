@@ -2,7 +2,7 @@
 title: 使用最佳实践分析器
 description: 使用最佳实践分析器
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 41%
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
@@ -59,38 +59,38 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
 
 1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **Best Practices Analyzer**.
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. 单击 **生成报表** 以执行最佳实践分析器。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. 当BPA生成报表时，您可以在屏幕上看到该工具取得的进展。 它显示分析的项目数，还显示找到的发现结果数。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. 生成BPA报告后，它会以表格形式显示调查结果的摘要和数量，按调查结果类型和重要性级别进行组织。 要获取有关特定查找结果的更多详细信息，您可以单击表中与查找结果类型对应的编号。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    上述操作将自动滚动到该发现结果在报表中的位置。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. 您可以通过单击 **导出到CSV**，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
 您可以通过单击 **刷新报表**.
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
 在重新生成报告时，报告会以完成百分比显示进度，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -100,14 +100,14 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
 
 1. 单击页面左侧的左边栏图标。 这将显示 **ACS Commons过滤器**. 单击 **ACS Commons过滤器** 以显示交互式复选框，如下图所示。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 仅当BPA检测到ACS Commons的使用情况时，才会显示左边栏图标。
 
 1. 取消选中该框可筛选与ACS Commons相关的所有发现结果。 您应会看到 **筛选的发现结果计数** 如下图所示。 以逗号分隔值(CSV)格式导出报表时，该过滤器也会应用于报表。
 
-   ![图像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6e78e3c72bd67ca63503cf4d1710826b53994675
+source-git-commit: 0c079a38f7137a8bb469f4a45df70ffcb13cca76
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3433'
 ht-degree: 33%
 
 ---
@@ -93,55 +93,54 @@ ht-degree: 33%
       + [创建程序](/help/journey-sites/demos-add-on/create-program.md)
       + [创建演示网站](/help/journey-sites/demos-add-on/create-site.md)
       + [管理演示网站](/help/journey-sites/demos-add-on/manage.md)
-+ 移动到AEMaCS {#moving}
-   + [迁移到 AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ AEMas a Cloud Service迁移历程 {#migration-journey}
+   + [移动AEMas a Cloud Service入门](/help/journey-migration/getting-started.md)
+   + [就绪](/help/journey-migration/readiness.md)
+   + [实施](/help/journey-migration/implementation.md)
+   + [上线](/help/journey-migration/go-live.md)
+   + [上线后](/help/journey-migration/post-go-live.md)
+   + [Experience Manager合作伙伴as a Cloud Service的迁移指南](/help/journey-migration/getting-started-partners.md)
    + 迁移工具的发行说明 {#release-notes-migration-tools}
-      + [最新发行说明（2021.12.0 版）](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+      + [最新发行说明（2021.12.0 版）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021年 {#2021}
-         + [2021.11.0 版发行说明](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [2021.10.0 版发行说明](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + 过渡历程的阶段 {#phases}
-      + [就绪](/help/move-to-cloud-service/migration-readiness.md)
-      + [实施](/help/move-to-cloud-service/migration-implementation.md)
-      + [上线](/help/move-to-cloud-service/migration-go-live.md)
-      + [上线后](/help/move-to-cloud-service/migration-post-go-live.md)
+         + [2021.11.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [2021.10.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Cloud Acceleration Manager简介 {#introduction-cam}
-         + [概述](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
-         + [优点](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+         + [概述](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [优点](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + 使用Cloud Acceleration Manager {#using-cam}
-         + [Cloud Acceleration Manager快速入门](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
-         + [准备阶段](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-         + [实施阶段](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
-         + [上线阶段](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
+         + [Cloud Acceleration Manager快速入门](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+         + [准备阶段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+         + [实施阶段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+         + [上线阶段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 云过渡工具{#cloud-migration}
       + Best Practices Analyzer {#best-practices-analyzer}
-         + [概述](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
-         + [使用最佳实践分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
+         + [概述](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [使用最佳实践分析器](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + 内容传输工具 {#content-transfer-tool}
-         + [概述](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-         + [内容传输工具的先决条件](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-         + [使用内容传输工具的准则和最佳实践](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-         + [内容传输工具快速入门](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
-         + [处理大型内容存储库](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [从源提取内容](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [将内容摄取到目标](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-         + [查看迁移集的日志](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
-         + [删除迁移集](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
-         + [在发布实例上运行内容传输工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [内容传输工具故障诊断](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [概述](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+         + [使用内容传输工具的准则和最佳实践](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+         + [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+         + [从源提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+         + [将内容摄取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [查看迁移集的日志](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+         + [删除迁移集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
+         + [在发布实例上运行内容传输工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [内容传输工具故障诊断](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 用户映射工具 {#user-mapping-tool}
-            + [概述](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-            + [重要注意事项](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-            + [使用用户映射工具](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+            + [概述](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+            + [重要注意事项](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+            + [使用用户映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
    + 代码重构工具 {#refactoring-tools}
-      + [统一体验](/help/move-to-cloud-service/unified-experience.md)
-      + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
-      + [索引转换器](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
-      + [资产工作流迁移](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-      + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-      + [AEM 现代化工具](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-   + [Experience Manager合作伙伴as a Cloud Service的迁移指南](/help/move-to-cloud-service/getting-started.md)
+      + [统一体验](/help/journey-migration/unified-experience.md)
+      + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+      + [索引转换器](/help/journey-migration/refactoring-tools/index-converter.md)
+      + [资产工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [AEM Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+      + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + 站点 {#sites}
    + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [对 AEM 云服务中 AEM Sites 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
@@ -467,7 +466,7 @@ ht-degree: 33%
       + [安装和配置](/help/forms/troubleshooting-installation-and-configuration.md)
       + [调度程序和CDN缓存 ](/help/forms/troubleshooting-caching-performance.md)
 + 屏幕 {#screens-as-cloud-service}
-   + [AEM Screensas a Cloud Service](/help/screens-cloud/home.md)
+   + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + 屏幕概述as a Cloud Service {#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定义](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -813,7 +812,7 @@ ht-degree: 33%
    + [备份和恢复](/help/operations/backup.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
 + 合规 {#compliance}
-   + [AEMas a Cloud Service中的合规性](/help/compliance/home.md)
+   + [AEM as a Cloud Service 中的合规性](/help/compliance/home.md)
    + 数据隐私和保护已准备就绪 {#data-privacy}
       + [用于数据保护和数据隐私法规的 AEM 已准备就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [用于数据保护和数据隐私法规的 AEM 基础已准备就绪](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
