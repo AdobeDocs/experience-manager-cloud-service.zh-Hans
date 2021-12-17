@@ -2,9 +2,9 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
+source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2877'
+source-wordcount: '2930'
 ht-degree: 12%
 
 ---
@@ -72,21 +72,6 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
       + 任意 `rep:policy` 对于 `/apps`
    + [预编译的捆绑脚本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ 的 `ui.config` 包，包含全部 [OSGi配置](/help/implementing/deploying/configuring-osgi.md):
-   + 包含特定于运行模式的OSGi配置定义的组织文件夹
-      + `/apps/my-app/osgiconfig`
-   + 通用OSGi配置文件夹，其中包含适用于所有目标AEMas a Cloud Service部署目标的默认OSGi配置
-      + `/apps/my-app/osgiconfig/config`
-   + 运行特定于模式的OSGi配置文件夹，其中包含应用于所有目标AEMas a Cloud Service部署目标的默认OSGi配置
-      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
-   + Repo Init OSGi配置脚本
-      + [Repo Init](#repo-init) 是部署（可变）内容(从逻辑上讲，这些内容是AEM应用程序的一部分)的推荐方法。 Repo Init OSGi配置应位于相应的 `config.<runmode>` 文件夹（如上所述），并用于定义：
-         + 基线内容结构
-         + 用户
-         + 服务用户
-         + 组
-         + ACL（权限）
-
 >[!NOTE]
 >
 >必须将相同的代码部署到所有环境。 为确保在生产环境中也进行置信度验证，需要此功能。 有关更多信息，请参阅 [运行模式](/help/implementing/deploying/overview.md#runmodes).
@@ -125,6 +110,22 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
       + `site-b.ui.config` 部署站点B所需的OSGi配置
       + `site-b.ui.content` 部署站点B所需的内容和配置
 
++ 的 `ui.config` 包包含所有 [OSGi配置](/help/implementing/deploying/configuring-osgi.md):
+   + 考虑了代码，属于OSGi包，但不包含常规内容节点。 因此，它被标记为容器包
+   + 包含特定于运行模式的OSGi配置定义的组织文件夹
+      + `/apps/my-app/osgiconfig`
+   + 通用OSGi配置文件夹，其中包含适用于所有目标AEMas a Cloud Service部署目标的默认OSGi配置
+      + `/apps/my-app/osgiconfig/config`
+   + 运行特定于模式的OSGi配置文件夹，其中包含应用于所有目标AEMas a Cloud Service部署目标的默认OSGi配置
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Repo Init OSGi配置脚本
+      + [Repo Init](#repo-init) 是部署（可变）内容(从逻辑上讲，这些内容是AEM应用程序的一部分)的推荐方法。 Repo Init OSGi配置应位于相应的 `config.<runmode>` 文件夹（如上所述），并用于定义：
+         + 基线内容结构
+         + 用户
+         + 服务用户
+         + 组
+         + ACL（权限）
+
 ### 其他应用程序包{#extra-application-packages}
 
 如果AEM部署使用了其他AEM项目（这些项目本身由它们自己的代码和内容包组成），则应将其容器包嵌入项目的 `all` 包。
@@ -141,14 +142,14 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 ## 包类型 {#package-types}
 
-将使用其声明的包类型标记包。
+将使用其声明的包类型标记包。 包类型有助于阐明包的用途和部署。
 
-+ 容器包必须设置 `packageType` to `container`. 容器包不得直接包含OSGi包、OSGi配置，并且不允许使用 [安装挂钩](http://jackrabbit.apache.org/filevault/installhooks.html).
++ 容器包必须设置 `packageType` to `container`. 容器包不得包含常规节点。 只允许使用OSGi包、配置和子包。 AEMas a Cloud Service中的容器不允许使用 [安装挂钩](http://jackrabbit.apache.org/filevault/installhooks.html).
 + 代码（不可变）包必须设置其 `packageType` to `application`.
 + 内容（可变）包必须设置其 `packageType` to `content`.
 
 
-有关详细信息，请参阅 [Apache Jackrabbit FileVault — 包Maven插件文档](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) 和 [FileVault Maven配置代码段](#marking-packages-for-deployment-by-adoube-cloud-manager) 下。
+有关详细信息，请参阅 [Apache Jackrabbit FileVault — 包Maven插件文档](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit包类型](http://jackrabbit.apache.org/filevault/packagetypes.html)和 [FileVault Maven配置代码段](#marking-packages-for-deployment-by-adoube-cloud-manager) 下。
 
 >[!TIP]
 >
