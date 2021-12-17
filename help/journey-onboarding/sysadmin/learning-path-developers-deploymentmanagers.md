@@ -3,10 +3,11 @@ title: 面向开发人员和部署经理的学习路径
 description: 如果您是开发人员或部署管理员，请阅读本页以了解获取访问权限后的后续步骤
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 2%
+source-wordcount: '607'
+ht-degree: 4%
 
 ---
 
@@ -26,8 +27,8 @@ ht-degree: 2%
 如果您正在阅读此部分，则可能会将您分配到开发人员或部署经理产品配置文件，并准备好载入并继续学习路径。
 
 >[!NOTE]
->* 作为&#x200B;*开发人员*，您将需要登录到Cloud Manager并熟悉如何访问Git。
->* 作为&#x200B;*部署管理器*，您将需要熟悉如何设置管道，甚至是部署代码。
+>* As a *开发人员*，您将需要登录到Cloud Manager并熟悉对Git的访问。
+>* As a *部署管理器*，您将需要熟悉如何设置管道甚至部署代码。
 
 
 ## 先决条件 {#prerequisites}
@@ -41,24 +42,28 @@ ht-degree: 2%
 ## 管理GitHub {#manage-git}
 
 您可以使用Cloud Manager UI中的Git自助服务帐户管理来访问和管理Git存储库。
-要了解有关此主题的更多信息，请参阅[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
+要了解有关此主题的更多信息，请参阅 [访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## 设置管道 {#setup-pipeline}
 
 您可以从Cloud Manager UI配置生产管道或非生产管道。
-要了解有关此主题的更多信息，请参阅[配置CI-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)。
+要了解有关此主题的更多信息，请参阅 [配置CI-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## 下一步 {#whats-next}
 
-开发人员和部署经理现在已准备好了解如何在AEM as a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。 要了解内容作者的学习历程，请参阅[AEM作者的学习路径](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)。
+开发人员和部署管理人员现在已准备好了解如何在AEMas a Cloud Service中开发代码。 请在下面的“其他资源”部分下了解更多或查找更多学习路径。 要了解内容作者的学习历程，请参阅 [AEM作者学习路径](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>现在，您已载入， [了解如何轻松添加AEM参考演示附加组件](/help/journey-sites/demos-add-on/overview.md) 沙盒环境中配置的AEM最少，并且能够根据最佳实践通过丰富的示例测试AEM的强大功能。
 
 ## 其他资源 {#additional-resources}
 
 * [从Cloud Manager访问Git和Git帐户管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [AEM as a A Service的本地开发环境Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [AEMas a Cloud Service的本地开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* [AEM Sites入门（教程）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [AEM Sites入门（教程）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 
 * [AEM SPA Editor和React快速入门 | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 

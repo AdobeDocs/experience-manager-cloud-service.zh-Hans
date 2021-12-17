@@ -2,10 +2,10 @@
 title: AEM Sites历程
 description: 从此处开始，概述可用于了解AEM强大网站功能的引导式历程。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,8 @@ ht-degree: 1%
 
 | 标题 | 描述 | 主受众 |
 |---|---|---|
-| [站点翻译历程](/help/journey-sites/translation/overview.md) | 了解AEM Sites技术、如何在您的项目中使用这些技术，以及如何在AEM中从A到Z创建和更新翻译项目。 | 翻译专家 |
 | [快速网站创建历程](/help/journey-sites/quick-site/overview.md) | 从此处开始，逐步了解易于使用的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。 | 前端开发人员 |
+| [参考演示附加组件历程](/help/journey-sites/demos-add-on/overview.md) | 此处开始一段引导式旅程，了解如何以最小的AEM配置轻松地将AEM参考演示加载项添加到沙盒环境，并能够根据最佳实践通过丰富的示例测试AEM的强大功能。 | 系统管理员 |
+| [站点翻译历程](/help/journey-sites/translation/overview.md) | 了解AEM Sites技术、如何在您的项目中使用这些技术，以及如何在AEM中从A到Z创建和更新翻译项目。 | 翻译专家 |
 
 敬请关注 [即将推出的旅程，涵盖其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)

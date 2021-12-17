@@ -2,7 +2,7 @@
 title: AEMas a Cloud Service版本2021.12.0中的Cloud Manager发行说明
 description: 以下是AEMas a Cloud Service版本2021.12.0中Cloud Manager的发行说明。
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -31,7 +31,7 @@ AEM Manager在as a Cloud Service中的发布日期为2021.12.0 2021年12月16日
 * 现在，具有部署管理器角色的用户可以从“存储库”页面的“操作”菜单中为没有分支的存储库启动项目/分支创建向导。
 * 现在，将通知处于添加或编辑管道工作流中的部署管理器在选定的存储库没有分支时如何创建分支或项目。
 * 新增了Cloud Manager自助服务功能，允许 [在环境级别添加自由格式变量和密钥。](/help/implementing/cloud-manager/environment-variables.md)
-* 通过新的参考演示附加组件（于2021年12月17日提供），可以安装AEM产品的最新演示代码库，并准备通过新的 [快速网站创建工具](/help/journey-sites/quick-site/overview.md) 中。
+* 使用 [参考演示附加组件](/help/journey-sites/demos-add-on/overview.md) （于2021年12月17日提供），可安装AEM产品的最新演示代码库，并准备通过 [快速网站创建工具](/help/journey-sites/quick-site/overview.md) 中。
 * 前端管道现在支持管道变量。
 * 现在，可以在“程序编辑”对话框中为所有沙箱启用屏幕。
 * 概述页面中由行动动员卡提供的指南已刷新，以准确反映它与生产完整堆栈管道的关联。
