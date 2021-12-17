@@ -3,7 +3,7 @@ title: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
@@ -44,13 +44,11 @@ ht-degree: 2%
 
 * [!DNL Dynamic Media] 现在支持MXF视频的摄取、预览、播放和发布。 尚不支持MXF视频的注释和购物视频。
 
-* 在远程DAM与Sites部署之间配置连接后，远程DAM上的资产将在Sites部署中可用。 您现在可以对远程DAM资产或文件夹执行更新、删除、重命名和移动操作。 更新（如果延迟）将在站点部署中自动提供。
+* 在远程DAM与Sites部署之间配置连接后，远程DAM上的资产将在Sites部署中可用。 您现在可以执行 [更新、删除、重命名和移动操作](../../assets/use-assets-across-connected-assets-instances.md) 在远程DAM资产或文件夹上。 更新（如果延迟）将在站点部署中自动提供。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### 的新增功能 [!DNL Forms] {#what-is-new-forms}
-
-* **Forms门户**:您可以使用 [Forms门户](/help/forms/configure-forms-portal.md) 可在AEM Sites页面上列出已发布的自适应表单。 它有助于网站访客发现所有可用的表单。 此外，访客还可以使用表单门户保存和访问自适应表单的草稿，并查看已提交的自适应表单的PDF版本。
 
 * **将AEM工作流数据外部化以进行安全处理**:您可以在客户管理的存储库中存储包含敏感个人数据(SPD)元素的正在处理的AEM工作流数据(AEM工作流变量数据)，以便进行安全处理。 数据元素和工作流变量不存储在AEM存储库中，在处理工作流时，它们会根据需要从客户管理的存储库获取。
 
@@ -62,6 +60,8 @@ ht-degree: 2%
    * 以各种格式生成输出表单，包括非交互式PDF打印流。
 
 * **为使用通信API创建的记录文档和PDF文档自定义字体**:现在，您可以在使用通信API生成的PDF文档中使用品牌批准的字体，以符合您的组织要求。
+
+* **Forms门户**:您可以使用 [Forms门户](/help/forms/configure-forms-portal.md) 可在AEM Sites页面上列出已发布的自适应表单。 它有助于网站访客发现所有可用的表单。 此外，访客还可以使用表单门户保存和访问自适应表单的草稿，并查看已提交的自适应表单的PDF版本。
 
 ## CIF附加组件 {#cloud-services-cif}
 

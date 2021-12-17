@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -132,49 +132,77 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):对于从本地文件系统上传资产的创意专业人士和营销人员非常有用。 使用它可上载本地可用的嵌套文件夹。
 * [批量摄取工具](#asset-bulk-ingestor):在部署时，有时或最初会使用摄取大量资产 [!DNL Experience Manager].
 
-### 资产批量摄取工具 {#asset-bulk-ingestor}
+### 资产批量导入工具 {#asset-bulk-ingestor}
 
 该工具仅提供给管理员组，用于从Azure或S3数据存储中大规模摄取资产。 请观看配置和摄取的视频演示。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-要配置该工具，请执行以下步骤：
+下图说明了从数据存储中摄取资产以Experience Manager时的各个阶段：
+
+![批量摄取工具](assets/bulk-ingestion.png)
+
+#### 前提条件 {#prerequisites-bulk-ingestion}
+
+您必须具有源blob存储详细信息才能将Experience Manager实例连接到数据存储。
+
+#### 配置批量导入工具 {#configure-bulk-ingestor-tool}
+
+要配置批量导入工具，请执行以下步骤：
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]**. 选择 **[!UICONTROL 创建]** 选项。
 
-![批量导入程序的配置](assets/bulk-import-config.png)
+1. 在 **[!UICONTROL 标题]** 字段。
 
-1. 开 **[!UICONTROL 批量导入配置]** ，请提供所需的值，然后选择 **[!UICONTROL 保存]**.
+1. 从 **[!UICONTROL 导入源]** 下拉列表。
 
-   * [!UICONTROL 标题]:描述性标题。
-   * [!UICONTROL 导入源]:选择适用的数据源。
-   * [!UICONTROL Azure存储帐户]:提供 [!DNL Azure] 存储帐户。
-   * [!UICONTROL Azure Blob容器]:提供 [!DNL Azure] 存储容器。
-   * [!UICONTROL Azure访问密钥]:提供的访问密钥 [!DNL Azure] 帐户。
-   * [!UICONTROL 源文件夹]:Azure和AWS云存储提供程序通常支持此过滤器。
-   * [!UICONTROL 按最小大小筛选]:以MB为单位提供资产的最小文件大小。
-   * [!UICONTROL 按最大大小过滤]:以MB为单位提供资产的最大文件大小。
-   * [!UICONTROL 排除Mime类型]:要从摄取中排除的MIME类型列表（以逗号分隔）。 例如, `image/jpeg, image/.*, video/mp4`. 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
-   * [!UICONTROL 包括Mime类型]:要包含在摄取中的MIME类型列表（以逗号分隔）。 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
-   * [!UICONTROL 导入后删除源文件]:选择此选项可在将文件导入到 [!DNL Experience Manager].
-   * [!UICONTROL 导入模式]:选择跳过、替换或创建版本。 跳过模式是默认模式，在此模式下，摄取者会跳过以导入资产（如果资产已存在）。 查看 [替换和创建版本选项](#handling-upload-existing-file).
-   * [!UICONTROL Assets Target文件夹]:在DAM中导入资产的导入文件夹。 例如, `/content/dam/imported_assets`
-   * [!UICONTROL 元数据文件]:要导入的元数据文件，以CSV格式提供。 在配置批量摄取工具时，在源Blob位置中指定CSV文件并引用路径。 此字段中引用的CSV文件格式与您 [批量导入和导出资产元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您选择 **导入后删除源文件** 选项，可使用 **排除** 或 **包含MIME类型** 或 **按路径/文件过滤** 字段。 您可以使用正则表达式在这些字段中过滤CSV文件。
+1. 提供值以创建与数据源的连接。 例如，如果您选择 **Azure Blob存储** 作为数据源，指定Azure存储帐户、Azure blob容器和Azure访问密钥的值。
 
-1. 您可以删除、修改、执行和执行创建的引擎配置，并执行更多操作。 选择批量导入引入配置时，工具栏中提供了以下选项。
+1. 提供根文件夹的名称，该根文件夹包含 **[!UICONTROL 源文件夹]** 字段。
 
-   * [!UICONTROL 编辑]:编辑所选配置。
-   * [!UICONTROL 删除]:删除所选配置。
-   * [!UICONTROL 检查]:验证与数据存储的连接。
-   * [!UICONTROL 干流]:调用批量摄取的测试运行。
-   * [!UICONTROL 运行]:执行所选配置。
-   * [!UICONTROL 停止]:终止活动配置。
-   * [!UICONTROL 计划]:设置一次性或定期计划以摄取资产。
-   * [!UICONTROL 作业状态]:当配置用于持续的导入作业或用于已完成的作业时，查看配置的状态。
-   * [!UICONTROL 作业历史记录]:作业的先前实例。
-   * [!UICONTROL 查看资产]:查看目标文件夹（如果存在）。
+1. （可选）提供资产的最小文件大小（以MB为单位），以将其包含在 **[!UICONTROL 按最小大小筛选]** 字段。
 
-   ![引入配置的工具栏选项](assets/bulk-ingest-toolbar-options.png)
+1. （可选）提供资产的最大文件大小（以MB为单位），以将其包含在 **[!UICONTROL 按最大大小过滤]** 字段。
+
+1. （可选）指定要从 **[!UICONTROL 排除MIME类型]** 字段。 例如, `image/jpeg, image/.*, video/mp4`. 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
+
+1. 指定要从的摄取中包含的MIME类型列表（以逗号分隔） **[!UICONTROL 包括MIME类型]** 字段。 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
+
+1. 选择 **[!UICONTROL 导入后删除源文件]** 将原始文件导入到 [!DNL Experience Manager].
+
+1. 选择 **[!UICONTROL 导入模式]**. 选择 **跳过**, **替换**&#x200B;或 **创建版本**. 跳过模式是默认模式，在此模式下，摄取者会跳过以导入资产（如果资产已存在）。 查看 [替换和创建版本选项](#handling-upload-existing-file).
+
+1. 指定一个路径，以在DAM中定义要使用导入资产的位置 **[!UICONTROL Assets Target文件夹]** 字段。 例如, `/content/dam/imported_assets`.
+
+1. （可选）在 **[!UICONTROL 元数据文件]** 字段。 在配置批量导入工具时，在源Blob位置中指定CSV文件并引用路径。 此字段中引用的CSV文件格式与您 [批量导入和导出资产元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您选择 **导入后删除源文件** 选项，可使用 **排除** 或 **包含MIME类型** 或 **按路径/文件过滤** 字段。 您可以使用正则表达式在这些字段中过滤CSV文件。
+
+1. 单击 **[!UICONTROL 保存]** 以保存配置。
+
+#### 管理批量导入工具配置 {#manage-bulk-import-configuration}
+
+创建批量导入工具配置后，您可以先执行任务以评估配置，然后再将资产批量摄取到Experience Manager实例。 选择 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]** 查看用于管理批量导入工具配置的可用选项。
+
+##### 编辑配置 {#edit-configuration}
+
+选择配置并单击 **[!UICONTROL 编辑]** 修改配置详细信息。 执行编辑操作时，无法编辑配置和导入数据源的标题。
+
+##### 删除配置 {#delete-configuration}
+
+选择配置并单击 **[!UICONTROL 删除]** 删除批量导入配置。
+
+##### 验证与数据源的连接 {#validate-connection}
+
+选择配置并单击 **[!UICONTROL check]** 验证与数据源的连接。 如果连接成功，Experience Manager将显示以下消息：
+
+![批量导入成功消息](assets/bulk-import-success-message.png)
+
+##### 为批量导入作业调用测试运行 {#invoke-test-run-bulk-import}
+
+选择配置并单击 **[!UICONTROL 干流]** 为批量导入作业调用测试运行。 Experience Manager显示有关批量导入作业的以下详细信息：
+
+![练习结果](assets/dry-assets-result.png)
+
+##### 计划一次性或定期批量导入 {#schedule-bulk-import}
 
 要计划一次性导入或定期批量导入，请执行以下步骤：
 
@@ -183,6 +211,32 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 1. 设置一次性摄取或计划每小时、每天或每周计划。 单击 **[!UICONTROL 提交]**.
 
    ![计划批量摄取作业](assets/bulk-ingest-schedule1.png)
+
+
+##### 查看Assets目标文件夹 {#view-assets-target-folder}
+
+选择配置并单击 **[!UICONTROL 查看资产]** 以在执行批量导入作业后查看导入资产的Assets目标位置。
+
+#### 运行批量导入工具 {#run-bulk-import-tool}
+
+之后 [配置批量导入工具](#configure-bulk-ingestor-tool) （可选） [管理批量导入工具配置](#manage-bulk-import-configuration)，则可以运行配置作业以开始批量摄取资产。
+
+导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]**，选择 [批量导入配置](#configure-bulk-ingestor-tool) 单击 **[!UICONTROL 运行]** 启动批量导入过程。 单击 **[!UICONTROL 运行]** 再次确认。
+
+Experience Manager将作业的状态更新为 **处理** 和 **成功** 成功完成作业后。 单击 **查看资产** 查看导入的Experience Manager。
+
+当作业正在进行时，您还可以选择配置并单击 **停止** 以停止批量摄取过程。 单击 **运行** 以继续该过程。 您还可以单击 **干流** 以了解仍在等待导入的资产的详细信息。
+
+#### 执行后管理作业 {#manage-jobs-after-execution}
+
+Experience Manager允许您查看批量导入作业的历史记录。 作业历史记录包括作业的状态、作业创建者、日志，以及其他详细信息（如开始日期和时间、创建日期和时间、完成日期和时间）。
+
+要访问配置的作业历史记录，请选择配置并单击 **[!UICONTROL 作业历史记录]**. 选择作业并单击 **打开**.
+
+![计划批量摄取作业](assets/job-history-bulk-import.png)
+
+Experience Manager显示作业历史记录。 在“批量导入作业历史记录”页上，您还可以单击 **删除** 删除批量导入配置的作业。
+
 
 ## 使用桌面客户端上传资产 {#upload-assets-desktop-clients}
 
