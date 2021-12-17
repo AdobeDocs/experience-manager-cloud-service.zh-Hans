@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0c079a38f7137a8bb469f4a45df70ffcb13cca76
+source-git-commit: 0e1d43f98d89cbc7534366d2a0546f04ba4b2498
 workflow-type: tm+mt
-source-wordcount: '3433'
+source-wordcount: '3435'
 ht-degree: 33%
 
 ---
@@ -95,8 +95,8 @@ ht-degree: 33%
       + [管理演示网站](/help/journey-sites/demos-add-on/manage.md)
 + AEMas a Cloud Service迁移历程 {#migration-journey}
    + [移动AEMas a Cloud Service入门](/help/journey-migration/getting-started.md)
-   + [就绪](/help/journey-migration/readiness.md)
-   + [实施](/help/journey-migration/implementation.md)
+   + [准备阶段](/help/journey-migration/readiness.md)
+   + [实施阶段](/help/journey-migration/implementation.md)
    + [上线](/help/journey-migration/go-live.md)
    + [上线后](/help/journey-migration/post-go-live.md)
    + [Experience Manager合作伙伴as a Cloud Service的迁移指南](/help/journey-migration/getting-started-partners.md)
