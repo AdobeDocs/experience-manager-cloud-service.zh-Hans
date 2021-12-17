@@ -1,37 +1,37 @@
 ---
-title: '[!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道'
-description: '[!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道'
+title: '[!DNL Adobe Experience Manager] as a Cloud Service预发行渠道'
+description: '[!DNL Adobe Experience Manager] as a Cloud Service预发行渠道'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager] 作为Cloud Service预发行渠道 {#prerelease-channel}
+# [!DNL Adobe Experience Manager] as a Cloud Service预发行渠道 {#prerelease-channel}
 
 
 ## 简介 {#introduction}
 
-[!DNL Adobe Experience Manager] as aCloud Service根据Experience Manager版路线图计划，在每月的频率下提 [供新功能](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)。为了熟悉计划在下月上线的功能，客户可以订阅预发行渠道，该渠道可通过在标准项目开发环境或任何沙盒项目环境中进行适当配置来访问。 客户可以预览站点控制台的更改，并针对任何新的预发行API构建代码。
+[!DNL Adobe Experience Manager] as a Cloud Service根据 [Experience Manager版路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). 为了熟悉计划在下月上线的功能，客户可以订阅预发行渠道，该渠道可通过在标准项目开发环境或任何沙盒项目环境中进行适当配置来访问。 客户可以预览站点控制台的更改，并针对任何新的预发行API构建代码。
 
-给定月份的预发行功能列表将发布在[月度发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中。
+给定月份的预发行功能列表将发布在 [月度发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
->[！视频](/help/release-notes/assets/prerelease-overview.mp4)
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## 如何启用预发行版 {#enable-prerelease}
 
 预发行功能的体验方式不同：
 
 * 云环境（标准项目开发环境或任何沙盒项目环境类型）
-* 本地SDK
+* 本地 SDK
 
 ### 云环境 {#cloud-environments}
 
 要在云开发环境的站点控制台中查看新增功能以及任何项目自定义的结果，请执行以下操作：
 
-* 使用[Cloud Manager API的环境变量端点](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)，将&#x200B;**AEM_RELEASE_CHANNEL**&#x200B;环境变量设置为值&#x200B;**prerelease**。
+* 使用 [Cloud Manager API的环境变量端点](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)，请设置 **AEM_RELEASE_CHANNEL** 环境变量到值 **预发行**.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -44,19 +44,21 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 ]
 ```
 
-按照[https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)中的说明，也可以使用Cloud Manager CLI
+按照 [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
 ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
 如果您希望将环境恢复为常规（非预发行）渠道的行为，则可以删除该变量或将其重新设置为其他值
 
-### 本地SDK {#local-sdk}
+* 或者，您也可以通过 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
 
-您可以在本地快速入门SDK的站点控制台中看到新功能，并通过让您的Maven项目引用预发行版`API Jar`（位于Maven Central）来在预发行版中针对新API编码。 您还可以通过在预发行模式下启动常规快速启动SDK，在本地计算机上查看以下预发行功能：
+### 本地 SDK {#local-sdk}
 
-* 从软件分发门户下载SDK并安装，如[访问AEM as a Software SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)中所述。
-* 启动SDK快速启动时，请包含参数`-r prerelease`。
-* 该值为&#x200B;*sticky*，因此只能在首次启动时选择该值。 重新安装SDK以更改命令行选项。
+您可以在本地快速入门SDK的站点控制台中看到新增功能，并通过让您的Maven项目引用预发行版来针对预发行版中的新API进行代码 `API Jar` 位于Maven Central。 您还可以通过在预发行模式下启动常规快速启动SDK，在本地计算机上查看以下预发行功能：
+
+* 从软件分发门户下载SDK并安装，如 [访问AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* 启动SDK快速启动时，请包含参数 `-r prerelease`.
+* 值为 *置顶* 因此，只能在首次启动时选择它。 重新安装SDK以更改命令行选项。
 
 由于每月发布的功能之间可能有多个AEM维护版本，因此您可以下载这些新的SDK并在Maven项目中引用新的SDK API Jar版本。 维护版本不会添加其他预发行功能，但可能会包含其他较小的更改，例如错误修复、安全修复和性能增强。
 Javaoc将发布到Maven Central。
@@ -88,7 +90,7 @@ Javaoc将发布到Maven Central。
      </dependency>
    ```
 
-   要更改到预发行SDK，只需将依赖项从`com.adobe.aem:aem-sdk-api`更改为`com.adobe.aem:aem-prerelease-sdk-api`，如下所述：
+   要更改为预发行SDK，只需将依赖项从 `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` 如下所述：
 
    ```
    <dependencyManagement>
@@ -112,9 +114,10 @@ Javaoc将发布到Maven Central。
 1. 如果满意地在本地可以按预期工作，请将代码提交到开发分支，然后使用Cloud Manager非生产管道部署到订阅预发行渠道的环境
 
 >[!CAUTION]
-部署到Stage或Production时，不得使用`aem-prerelease-sdk-api` artifactId。 在通过生产管道部署时，始终使用aem-sdk-api。 同样，引用预发行API的代码也不应通过生产管道进行部署。
+> 
+> 的 `aem-prerelease-sdk-api` 部署到暂存或生产时，不得使用artifactId。 在通过生产管道部署时，始终使用aem-sdk-api。 同样，引用预发行API的代码也不应通过生产管道进行部署。
 
-[AEM CS SDK构建分析器maven插件v1.0及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)将通过检查依赖关系来检测项目中是否使用了预发行api。 如果分析器找到它，则将使用预发行sdk api来分析项目。
+的 [AEM CS SDK内部版本分析器maven插件v1.0及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) 将通过检查依赖关系来检测项目中是否使用了预发行api。 如果分析器找到它，则将使用预发行sdk api来分析项目。
 
 ## 注意事项 {#considerations}
 
@@ -122,6 +125,6 @@ Javaoc将发布到Maven Central。
 
 * 下月版本中将推出的某些功能可能未包含在预发行渠道中。
 * 预发行版中的功能经过严格的质量保证，旨在实现功能完整而不是测试版质量。 如果您发现任何问题，请像报告常规AEM版本中的功能中存在错误一样报告这些问题。
-* 要确定是否为预发行渠道配置了环境，请转到AEM控制台的&#x200B;**关于**&#x200B;页面，并检查AEM版本号是否包含&#x200B;*预发行*&#x200B;后缀，如```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```。
+* 要确定是否为预发行渠道配置了环境，请转到AEM Console的 **关于** 页面，并检查AEM版本号是否包含 *预发行* 后缀，如 ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
 
 ![关于](/help/release-notes/assets/about.png)

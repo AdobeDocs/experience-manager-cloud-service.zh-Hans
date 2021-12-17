@@ -3,14 +3,18 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有密钥值和环境特定值的OSGi配置 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # 为Adobe Experience Manager as a Cloud Service配置OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
+
+>[!NOTE]
+>
+>AEM在2021.12.0版本中引入了使用Cloud Manager用户界面配置标准环境变量的功能。 有关更多信息，请参阅此文档 [此处](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技术堆栈中的一个基本元素。 它用于控制AEM及其配置的复合包。
 
@@ -120,7 +124,7 @@ OSGi的常见用例使用内联OSGi配置值。 特定于环境的配置仅用�
 
 ### 何时使用非机密环境特定的配置值 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-仅使用特定于环境的配置(`$[env:ENV_VAR_NAME]`)，以在预览层的值不同或开发环境不同时使用非密钥配置值。 这包括本地开发实例和任何Adobe Experience Manager as a Cloud Service开发环境。 除了为预览层设置唯一值之外，还应避免在Adobe Experience Manager as a Cloud Service暂存或生产环境中使用非机密环境特定配置。
+仅使用特定于环境的配置(`$[env:ENV_VAR_NAME]`)，以表示非机密配置值。 这包括本地开发实例和任何Adobe Experience Manager as a Cloud Service开发环境。 除了为预览层设置唯一值之外，还应避免在Adobe Experience Manager as a Cloud Service暂存或生产环境中使用非机密环境特定配置。
 
 * 仅对发布层和预览层之间存在差异的配置值，或对于开发环境（包括本地开发实例）之间存在差异的值，使用非机密环境特定配置。
 * 除了预览层需要与发布层不同的情况外，在OSGi配置中为暂存值和生产非机密值使用标准内联值。 关于此问题，不建议使用特定于环境的配置来便于在运行时对暂存和生产环境进行配置更改；应通过源代码管理引入这些更改。
@@ -507,7 +511,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 每个环境最多可声明200个变量。
 
-## 有关密钥和特定于环境的配置值的部署注意事项 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+## 有关特定于密钥和环境的配置值的部署注意事项 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
 由于特定于机密和环境的配置值位于Git之外，因此不属于正式的Adobe Experience Manager as a Cloud Service部署机制，因此客户应该管理、管理并集成到Adobe Experience Manager as a Cloud Service部署过程中。
 
