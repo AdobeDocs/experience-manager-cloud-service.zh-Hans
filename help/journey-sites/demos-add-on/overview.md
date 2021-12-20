@@ -1,10 +1,10 @@
 ---
 title: AEM参考演示附加历程
 description: 此处开始一段引导式旅程，了解如何以最小的AEM配置轻松地将AEM参考演示加载项添加到沙盒环境，并能够根据最佳实践通过丰富的示例测试AEM的强大功能。
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '813'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,13 @@ AEM Sites是用于创建和管理数字体验的强大工具集。 内容作者�
 
 您将在此历程中探索多个主题。 以下文章为您提供了创建新计划以及设置和使用AEM参考演示附加组件的基本知识，这些内容将按顺序阅读。 它们会根据需要链接到详细的技术文档。
 
-|#|文章|描述| |—|—|—|— |0|AEM参考演示附加历程|本文档| |1|[了解参考演示附加组件安装](installation.md)|了解Cloud Manager以及如何使用它安装加载项。| |2|[创建程序和管道](create-program.md)|了解如何设置新程序和管道以部署加载项。| |3|[创建演示网站](create-site.md)|根据预配置模板库在AEM中创建演示网站。| |4|[管理演示网站](manage.md)|了解可用于帮助您管理演示网站的工具以及如何删除它们。|
+| # | 文章 | 描述 |
+|---|---|---|
+| 0 | AEM参考演示附加历程 | 本文档 |
+| 1 | [了解参考演示附加组件安装](installation.md) | 了解Cloud Manager以及如何使用它安装附加组件。 |
+| 2 | [创建程序和管道](create-program.md) | 了解如何设置新项目和管道以部署加载项。 |
+| 3 | [创建演示网站](create-site.md) | 在AEM中根据预配置模板库创建演示网站。 |
+| 4 | [管理演示网站](manage.md) | 了解可用于帮助您管理演示网站的工具以及如何删除它们。 |
 
 ## 下一步 {#what-is-next}
 
