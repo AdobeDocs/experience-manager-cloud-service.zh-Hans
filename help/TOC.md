@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
+source-git-commit: 9dc60e627a6770ee636ad5f8a8e0a8eb81adae9b
 workflow-type: tm+mt
-source-wordcount: '3437'
+source-wordcount: '3438'
 ht-degree: 32%
 
 ---
@@ -282,7 +282,7 @@ ht-degree: 32%
       + [添加和上传资产](/help/assets/add-assets.md)
       + [搜索资产](/help/assets/search-assets.md)
       + [常见资产管理任务](/help/assets/manage-digital-assets.md)
-      + [预览3d资产](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [预览3D资产](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [图像智能标记](/help/assets/smart-tags.md)
       + [智能标记视频资产](/help/assets/smart-tags-video-assets.md)
       + [如何组织资产](/help/assets/organize-assets.md)
@@ -347,7 +347,7 @@ ht-degree: 32%
       + [可选 — 配置Dynamic Media、发布设置](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media故障诊断](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [Dynamic Media 中的辅助功能](/help/assets/dynamic-media/accessibility-dm.md)
-      + [管理 Dynamic Media 资产](/help/assets/dynamic-media/managing-assets.md)
+      + [管理Dynamic Media资产](/help/assets/dynamic-media/managing-assets.md)
       + [优化图像质量的最佳实践](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [图像配置文件](/help/assets/dynamic-media/image-profiles.md)
       + [视频配置文件](/help/assets/dynamic-media/video-profiles.md)

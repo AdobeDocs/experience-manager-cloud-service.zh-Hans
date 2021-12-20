@@ -1,9 +1,9 @@
 ---
-title: 预览 3D 资产
-description: 了解如何在Dynamic Media中预览3D资产。
+title: 预览3D资产
+description: 了解如何在Experience Manager中预览3D资产。
 feature: 3D Assets
 role: User
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 9ecfb0c5dceb0574114aa1acbdda2ac9c3ce2675
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 10%
