@@ -1,133 +1,131 @@
 ---
-title: AEM无头翻译入门
-description: 了解如何组织无头内容以及AEM翻译工具的工作方式。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Get started with AEM headless translation
+description: Get to know how to organize your headless content and how AEM's translation tools work.
+exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 0%
 
 ---
 
-# AEM Headless翻译入门 {#getting-started}
+# Get Started with AEM Headless Translation {#getting-started}
 
-了解如何组织无头内容以及AEM翻译工具的工作方式。
+Get to know how to organize your headless content and how AEM&#39;s translation tools work.
 
-## 迄今为止的故事 {#story-so-far}
+## The Story So Far {#story-so-far}
 
-在AEM无头翻译历程的上一个文档中， [了解无头内容和如何在AEM中进行翻译](learn-about.md)您学习了无头CMS的基本理论，您现在应该：
+[](learn-about.md)
 
-* 了解无头内容交付的基本概念。
-* 熟悉AEM如何支持无头和翻译。
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-本文基于这些基础知识，以便您了解AEM如何存储和管理无标题内容，以及如何使用AEM翻译工具翻译该内容。
+This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM&#39;s translation tools to translate that content.
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何开始在AEM中翻译无标题内容。 阅读后，您应该：
+This document helps you understand how to get started translating headless content in AEM. After reading you should:
 
-* 了解内容结构对翻译的重要性。
-* 了解AEM如何存储无头内容。
-* 熟悉AEM翻译工具。
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-## 要求和先决条件 {#requirements-prerequisites}
+## Requirements and Prerequisites {#requirements-prerequisites}
 
-在开始翻译无头AEM内容之前，需要满足一些要求。
+There are a number of requirements before you begin translating your headless AEM content.
 
-### 知识 {#knowledge}
+### Knowledge {#knowledge}
 
-* 在CMS中翻译内容的体验
-* 使用大型CMS基本功能的经验
-* 具有AEM基本操作的工作知识
-* 了解您使用的翻译服务
-* 基本了解您翻译的内容
+* Experience translating content in a CMS
+* Experience using the basic features of a large-scale CMS
+* Have a working knowledge of AEM basic handling
+* Understanding of the translation service you are using
+* Have a basic understanding of the content you are translating
 
 >[!TIP]
 >
->如果您不熟悉使用大型CMS(如AEM)，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。 基本处理文档未包含在历程中，因此，完成后请返回本页。
+>[](/help/sites-cloud/authoring/getting-started/basic-handling.md)The Basic Handling documentation is not part of the journey, so please return to this page when complete.
 
 ### 工具 {#tools}
 
-* 用于测试内容翻译的沙盒访问权限
-* 连接到首选翻译服务的凭据
-* 是AEM中`project-administrators`组的成员
+* Sandbox access for testing translating your content
+* Credentials to connect to your preferred translation service
+* `project-administrators`
 
-## 结构是关键 {#content-structure}
+## Structure is Key {#content-structure}
 
-AEM内容（无头网页或传统网页）由其结构驱动。 AEM对内容结构要求很少，但在项目规划中仔细考虑内容层次结构可以使翻译更简单。
+AEM&#39;s content, be it headless or traditional web pages, is driven by its structure. AEM imposes few requirements on the content structure, but careful consideration of your content hierarchy as part of the project planning can make translation much simpler.
 
 >[!TIP]
 >
->在无头项目开始时计划翻译。 及早与项目经理和内容架构师密切合作。
+>Plan for translation at the very beginning of the headless project. Work closely with the project manager and content architects early.
 >
->国际化项目经理可以作为单独的角色，其职责是定义哪些内容应翻译、哪些不翻译，哪些翻译内容可由区域或本地内容制作者修改。
+>An Internationalization Project Manager may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
 
-## AEM如何存储无标题内容 {#headless-content-in-aem}
+## How AEM Stores Headless Content {#headless-content-in-aem}
 
-对于翻译专家而言，深入了解AEM如何管理无头内容并不重要。 但是，熟悉基本概念和术语后来使用AEM翻译工具时将会很有帮助。 最重要的是，您需要了解您自己的内容及其结构，以便有效地翻译内容。
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM&#39;s translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
 
-### 内容模型 {#content-models}
+### Content Models {#content-models}
 
-为了能够跨渠道、区域和语言一致地交付无头内容，内容必须高度结构化。 AEM使用内容模型来强制实施此结构。 将内容模型视为一种用于创建无标题内容的模板或模式。 由于每个项目都有自己的需求，因此每个项目都定义自己的内容片段模型。 AEM对此类模型没有固定要求或结构。
+In order for headless content to be delivered consistently across channels, regions, and languages, content must be highly structured. AEM uses Content Models to enforce this structure. Think of Content Models as a kind of template or pattern for creating headless content. Because every project has its own needs, every project defines its own Content Fragment Models. AEM has no fixed requirements or structure for such models.
 
-内容架构师在项目早期就可以定义此结构。 作为翻译专家，您应与内容架构师密切合作，以了解和组织内容。
+The content architect works early in the project to define this structure. As the translation specialist, you should work closely with the content architect to understand and organize the content.
 
 >[!NOTE]
 >
->内容架构师负责定义内容模型。 翻译专家只应熟悉其结构，如以下步骤所述。
+>It is the responsibility of the content architect to define the Content Models. The translation specialist should only be familiar with their structure as outlined in the following steps.
 
-由于内容模型定义了内容的结构，因此您需要知道必须翻译模型的哪些字段。 通常，您会与内容架构师合作来定义此内容。 要浏览内容模型的字段，请执行以下步骤。
+Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
-1. 导航到&#x200B;**工具** -> **资产** -> **内容片段模型**。
-1. 内容片段模型通常存储在文件夹结构中。 点按或单击您项目的文件夹。
-1. 列出了模型。 点按或单击模型以查看详细信息。
+1. ************
+1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
+1. The models are listed. Tap or click on the model to see the details.
    ![内容片段模型](assets/content-fragment-models.png)
-1. 将打开&#x200B;**内容片段模型编辑器**。
-   1. 左列包含模型的字段。 这篇专栏文章让我们感兴趣。
-   1. 右列包含可添加到模型的字段。 我们可以忽略此列。
+1. ****
+   1. The left column contains the fields of the model. This column interests us.
+   1. The right column contains the fields that can be added to the model. This column we can ignore.
       ![内容片段模型编辑器](assets/content-fragment-model-editor.png)
-1. 点按或单击模型的一个字段。 AEM标记该字段，该字段的详细信息将显示在右列中。
-   ![内容片段模型编辑器详细信息](assets/content-fragment-model-editor-detail.png)
+1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
+   ![](assets/content-fragment-model-editor-detail.png)
 
-对于必须翻译的所有字段，请注意字段&#x200B;**属性名称**。 您稍后将在历程中需要此信息。 需要使用这些&#x200B;**属性名称**&#x200B;来通知AEM必须翻译您内容的哪些字段。
+**** You will need this information later in the journey. ****
 
 >[!TIP]
 >
->通常，内容架构师会为翻译专家提供翻译所需所有字段的&#x200B;**属性名称** s。 在历程的后续阶段需要这些字段名称。 为了了解翻译专家，提供了以前的步骤。
+>**** These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
 
 ### 内容片段 {#content-fragments}
 
-内容作者使用内容模型来创建实际的无标题内容。 内容作者选择要基于的内容的模型，然后创建内容片段。 内容片段是模型的实例，表示要无头地交付的实际内容。
+Content Models are used by the content authors to create the actual headless content. Content authors select which model to base their content on an then create Content Fragments. Content Fragments are instances of the models and represent actual content to be delivered headlessly.
 
-如果内容模型是内容的模式，则内容片段是基于这些模式的实际内容。 内容片段表示必须翻译的内容。
+If the Content Models are the patterns for the content, the Content Fragments are the actual content based on those patterns. The Content Fragments represent the content that must be translated.
 
-内容片段作为数字资产管理(DAM)的一部分，作为AEM中的资产进行管理。 这一点很重要，因为它们都位于路径`/content/dam`下。
+Content Fragments are managed as assets in AEM as part of digital asset management (DAM). `/content/dam`
 
-## 推荐的内容结构 {#recommended-structure}
+## Recommended Content Structure {#recommended-structure}
 
-如前所建议，请与您的内容架构师合作，为您自己的项目确定适当的内容结构。 但是，下面是一个经过验证、简单且直观的结构，它非常有效。
+As previously recommended, work with your content architect to determine the appropriate content structure for your own project. However the following is a proven, simple, and intuitive structure which is quite effective.
 
-在`/content/dam`下为项目定义基本文件夹。
+`/content/dam`
 
 ```text
 /content/dam/<your-project>
 ```
 
-创作内容的语言称为语言根。 在我们的示例中，它是英语，它应位于此路径下方。
+The language in which your content is authored is called the language root. In our example it is English and it should be below this path.
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-所有可能需要本地化的项目内容都应置于语言根目录下。
+All project content that may need to be localized should be placed under the language root.
 
 ```text
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-翻译应创建为同级文件夹，并位于语言根目录旁边，其文件夹名称代表语言的ISO-2语言代码。 例如，德语将具有以下路径。
+Translations should be created as sibling folders alongside the language root with their folder name representing the ISO-2 language code of the language. For example, German would have the following path.
 
 ```text
 /content/dam/<your-project>/de
@@ -135,9 +133,9 @@ AEM内容（无头网页或传统网页）由其结构驱动。 AEM对内容结�
 
 >[!NOTE]
 >
->内容架构师通常负责创建这些语言文件夹。 如果未创建翻译作业，AEM将无法在以后创建翻译作业。
+>The content architect generally is responsible for creating these language folders. If they are not created, AEM will not be able to later create translation jobs.
 
-最终结构可能如下所示。
+The final structure may look something like the following.
 
 ```text
 /content
@@ -156,39 +154,39 @@ AEM内容（无头网页或传统网页）由其结构驱动。 AEM对内容结�
         |- ...
 ```
 
-您应该注意内容的特定路径，因为以后配置翻译时需要该路径。
+You should take note of the specific path of your content as it will be required later to configure your translation.
 
 >[!NOTE]
 >
->内容架构师通常负责定义内容结构，但可以与翻译专家协作。
+>It is generally the responsibility of the content architect to define the content structure, but can collaborate with the translation specialist.
 >
->此处详细说明了完整性。
+>It is detailed here for completeness.
 
-## AEM翻译工具 {#translation-tools}
+## AEM Translation Tools {#translation-tools}
 
-现在，您已了解内容片段是什么以及内容结构的重要性，接下来我们可以看一看如何翻译此内容。 AEM中的翻译工具非常强大，但在高级别上很容易理解。
+Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
 
-* **翻译连接器**  — 连接器是AEM与您使用的翻译服务之间的链接。
-* **翻译规则**  — 规则定义特定路径下应翻译的内容。
-* **翻译项目**  — 翻译项目收集应作为单次翻译工作处理的内容，并跟踪翻译的进度，与连接器连接以传输要翻译的内容并从翻译服务接收回该内容。
+* ****
+* ****
+* ****
 
-通常，您只为实例设置一次连接器，并为每个无头项目设置规则。 然后，您使用翻译项目来翻译内容并持续更新其翻译。
+You generally only set up your connector once for your instance and rules per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
 
-## 下一步 {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-现在，您已完成此部分无标题翻译历程，您应该：
+Now that you have completed this part of the headless translation journey you should:
 
-* 了解内容结构对翻译的重要性。
-* 了解AEM如何存储无头内容。
-* 熟悉AEM翻译工具。
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-在此知识的基础上，继续您的AEM无头翻译历程，方法是接下来查看文档[配置翻译连接器](configure-connector.md) ，您将在其中学习如何将AEM连接到翻译服务。|
+[](configure-connector.md)
 
 ## 其他资源 {#additional-resources}
 
-虽然建议您通过查看文档[配置翻译连接器](configure-connector.md)进入无头翻译历程的下一部分，但是以下是一些额外的可选资源，这些资源可以更深入地了解本文档中提到的某些概念，但不需要继续在无头翻译历程中继续。
+[](configure-connector.md)
 
-* [AEM基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 了解AEM UI的基础知识，以便能够轻松导航并执行基本任务，如查找内容。
-* [识别要翻译的内容](/help/sites-cloud/administering/translation/rules.md)  — 了解翻译规则如何识别需要翻译的内容。
-* [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md)  — 了解如何配置翻译集成框架以与第三方翻译服务相集成。
-* [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)  — 了解如何在AEM中创建和管理机器翻译项目和人工翻译项目。
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [](/help/sites-cloud/administering/translation/rules.md)
+* [](/help/sites-cloud/administering/translation/integration-framework.md)
+* [](/help/sites-cloud/administering/translation/managing-projects.md)

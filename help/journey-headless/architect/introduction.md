@@ -1,86 +1,83 @@
 ---
-title: AEM Headless Content Architect历程
-description: 介绍Adobe Experience Manager作为Cloud Service的强大、灵活、无头的功能，以及如何为项目建立内容模型。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: AEM Headless Content Architect Journey
+description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
+exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
 
 ---
 
+# Content Modeling for Headless with AEM - An Introduction {#architect-headless-introduction}
 
-# 使用AEM实现无头内容建模 — 简介 {#architect-headless-introduction}
+[](overview.md)
 
-在[AEM Headless Content Architect历程](overview.md)的这一部分中，您可以学习必要的（基本）概念和术语，以了解将Adobe Experience Manager(AEM)作为Cloud Service进行无头内容交付的内容建模。
+This document helps you understand headless content delivery, how AEM supports headless, and how content is modeled for headless. After reading you should:
 
-本文档可帮助您了解无头内容交付、AEM如何支持无头，以及如何为无头内容建模。 阅读后，您应该：
-
-* 了解无头内容交付的基本概念。
-* 熟悉AEM如何支持无头和内容建模。
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and content modeling.
 
 ## 目标 {#objective}
 
-* **受众**:初学者
-* **目标**:介绍与无头内容建模相关的概念和术语。
+* ****
+* ****
 
-## 全栈内容交付 {#full-stack}
+## Full-Stack Content Delivery {#full-stack}
 
-自从易于使用的大型内容管理系统(CMS)兴起以来，各公司一直利用它们作为管理报文传送、品牌推广和通信的中心位置。 将CMS用作管理体验的中心点，通过消除在不同系统中重复任务的需要，提高了效率。
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
-![经典的全栈CMS](/help/journey-headless/developer/assets/full-stack.png)
+![](/help/journey-headless/developer/assets/full-stack.png)
 
-在全栈CMS中，用于处理内容的所有功能都在CMS中。 系统的功能构成了CMS堆栈的不同组件。 全栈解决方案具有许多优势。
+In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
-* 有一个系统需要维护。
-* 内容是集中管理的。
-* 系统的所有服务都已集成。
-* 内容创作是无缝的。
+* There is one system to maintain.
+* Content is managed centrally.
+* All services of the system are integrated.
+* Content authoring is seamless.
 
-因此，如果需要添加新渠道或支持新类型的体验，则可以在堆栈中插入一个（或多个）新组件，并且只有一个位置进行更改。
+So if new channel needs to be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
-![向堆栈中添加新渠道](/help/journey-headless/developer/assets/adding-channel.png)
+![](/help/journey-headless/developer/assets/adding-channel.png)
 
-但是，堆栈中依赖项的复杂性会很快变得明显，因为堆栈中的其他项目需要调整以适应更改。
+However the complexity of the dependencies within the stack quickly become apparent as other items in the stack need to be adjusted to accommodate the changes.
 
-## 无头的头 {#the-head}
+## The Head in Headless {#the-head}
 
-任何系统的头通常是该系统的输出渲染器，通常以GUI或其他图形输出的形式。
+The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
 
-当我们讨论无头CMS时，CMS会管理内容并继续向消费者提供内容。 但是，无头CMS仅以标准化方式传送&#x200B;**内容**，从而忽略最终输出渲染，将内容的&#x200B;**表示**&#x200B;保留给消费服务。
+When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. ********
 
-![无头CMS](/help/journey-headless/developer/assets/headless-cms.png)
+![](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费性服务(无论是AR体验、网店、移动体验、渐进式Web应用程序(PWA)等)从无头CMS中获取内容并提供自己的呈现。 他们负责为您的内容提供自己的头脑。
+The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
-省略头部通过消除复杂性来简化CMS。 这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务上。
+Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
-## 内容建模 {#content-modeling}
+## Content Modeling {#content-modeling}
 
-内容建模（也称为数据建模）是您的专长，因此在为无头进行建模时需要考虑哪些因素？
+Content Modeling (also known as data modeling) is your specialty, so what needs to be considered when modeling for headless?
 
-要使无头应用程序能够访问您的内容并使用它执行一些操作，内容真正需要具有预定义的结构。 您的内容可以自由格式，但这会使应用程序的生活&#x200B;*非常*&#x200B;变得复杂。
+For the headless applications to be able to access your content, and do something with it, the content really needs to have a predefined structure. **
 
-对于AEM，作为内容架构师，您将执行内容建模以设计一系列&#x200B;**内容片段模型**。 这些属性定义了内容作者创建包含内容的&#x200B;**内容片段**&#x200B;时使用的结构。
+********
 
-### 访问内容 {#access-content}
+### Accessing the Content {#access-content}
 
-这更像是一个开发细节 — 但你可能会感兴趣，只是为了完成故事。
+This is more of a development detail - but it might interest you, just to complete the story.
 
-创建内容片段模型并且作者使用它们生成内容后，无标题应用程序将需要访问此内容。
+Once you&#39;ve created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content.
 
-Adobe Experience Manager(AEM)作为Cloud Service，可以使用AEM GraphQL API有选择地访问您的内容片段，以仅返回所需的内容。 使用API，开发人员可以制定用于选择特定内容的查询。此选择过程基于&#x200B;*您的*&#x200B;内容片段模型。
+Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. **
 
-这意味着您的项目可以实现结构化内容的无头交付，以供在您的应用程序中使用。
+This means your project can realize headless delivery of structured content for use in your applications.
 
-## 下一步 {#whats-next}
+## What&#39;s Next {#whats-next}
 
-现在，您已经学习了概念和术语，接下来的步骤是[了解使用内容片段模型进行建模的基础知识](basics.md)。
+[](basics.md)
 
 ## 其他资源 {#additional-resources}
 
-* AEM Headless开发人员历程
-   * [了解CMS无头开发](/help/journey-headless/developer/learn-about.md)
-   * [了解如何对内容进行建模](/help/journey-headless/developer/model-your-content.md)
+* AEM Headless Developer Journey
+   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
+   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)

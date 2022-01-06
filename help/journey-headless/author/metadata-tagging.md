@@ -1,49 +1,46 @@
 ---
-title: 了解如何为内容片段定义元数据和标记
-description: 了解如何为内容片段定义元数据和标记
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about defining Metadata and Tagging for Content Fragments
+description: Learn about defining Metadata and Tagging for Content Fragments
+exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 3%
 
 ---
 
+# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 
-# 了解如何为内容片段定义元数据和标记 {#author-headless-metadata-tagging}
+## The Story so Far {#story-so-far}
 
-## 迄今为止的故事 {#story-so-far}
+[](overview.md)[](introduction.md)
 
-在[AEM无头内容创作历程](overview.md)的开头， [简介](introduction.md)介绍了与无头创作相关的基本概念和术语。
+In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
 
-在上一步中，我们介绍了如何使用引用进行无头CMS创作。 您了解了哪些类型的参考资料可用，以及其用途：内容引用、资产/媒体引用和片段引用。
-
-本文以这些内容为基础，以便您了解如何使用元数据和标记为您的AEM无头项目创作您自己的内容。
+This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
 
 ## 目标 {#objective}
 
-* **受众**:高级
-* **目标**:介绍如何在无头CMS创作中使用元数据和标记。
+* ****
+* ****
 
-## 添加元数据和标记 {#adding-metadata-and-tags}
+## Adding Metadata and Tags {#adding-metadata-and-tags}
 
-可以使用以下三种方法来添加元数据和标记：
+There are three methods that you can use to add metadata and tags:
 
-* 首次创建片段时：
+* When first creating your fragment:
 
-   ![创建内容片段 — 提供名称](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* 使用内容片段编辑器的&#x200B;**Metadata**&#x200B;选项卡，可添加各种元数据字段，以及从项目中预定义的&#x200B;**Tags**:
+* ********
 
-   ![内容片段编辑器 — 元数据](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * 此外，您还可以使用“资产”控制台工具栏中的&#x200B;**属性**&#x200B;选项直接访问该设置。
+   * ****
 
-## 下一步 {#whats-next}
+## What&#39;s Next {#whats-next}
 
-现在，您可以运用所有这些知识为项目使用并开始创建内容片段。
+Now you can put all this knowledge to use and start creating Content Fragments for your project.
 
 ## 其他资源 {#additional-resources}
 
@@ -51,4 +48,4 @@ ht-degree: 3%
 
 * [使用标记](/help/sites-cloud/authoring/features/tags.md)
 
-* [内容片段模型 — 允许在Assets文件夹中使用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

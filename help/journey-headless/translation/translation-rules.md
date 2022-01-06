@@ -1,103 +1,101 @@
 ---
-title: 配置翻译规则
-description: 了解如何定义翻译规则以识别翻译内容。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Configure Translation Rules
+description: Learn how to define translation rules to identify content for translation.
+exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
-# 配置翻译规则 {#configure-translation-rules}
+# Configure Translation Rules {#configure-translation-rules}
 
-了解如何定义翻译规则以识别翻译内容。
+Learn how to define translation rules to identify content for translation.
 
-## 迄今为止的故事 {#story-so-far}
+## The Story So Far {#story-so-far}
 
-在AEM无头翻译历程的上一个文档中， [配置翻译连接器](configure-connector.md)您学习了如何安装和配置翻译连接器，现在应该：
+[](configure-connector.md)
 
-* 了解AEM中翻译集成框架的重要参数。
-* 能够设置您自己与翻译服务的连接。
+* Understand the important parameters of the Translation Integration Framework in AEM.
+* Be able to set up your own connection to your translation service.
 
-现在，您的连接器已设置完成，本文将引导您完成确定需要翻译的内容的下一步。
+Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何使用AEM翻译规则来识别翻译内容。 阅读本文档后，您应：
+This document helps you understand how to use AEM&#39;s translation rules to identify your translation content. After reading this document you should:
 
-* 了解翻译规则的用途。
-* 能够定义您自己的翻译规则。
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-## 翻译规则 {#translation-rules}
+## Translation Rules {#translation-rules}
 
-内容片段（表示您的无头内容）可以包含许多由结构化字段组织的信息。 根据您的项目需求，可能并非内容片段中的所有字段都必须进行翻译。
+Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
 
-翻译规则可识别翻译项目中包含或排除的内容。 翻译内容后，AEM会根据这些规则提取或收集内容。 这样，只有必须翻译的内容才会被发送到翻译服务。
+Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
 
-翻译规则包括以下信息：
+Translation rules include the following information:
 
-* 应用规则的内容路径
-   * 该规则也适用于内容的子项
-* 包含要翻译的内容的属性的名称
-   * 该属性可以特定于特定资源类型或所有资源类型
+* The path of the content to which the rule applies
+   * The rule also applies to the descendants of the content
+* The names of the properties that contain the content to translate
+   * The property can be specific to a specific resource type or to all resource types
 
-由于定义内容片段结构的内容片段模型对于您自己的项目是唯一的，因此设置翻译规则至关重要，这样AEM才能知道要翻译的内容模型中的哪些元素。
+Because Content Fragment Models, which define the structure of your Content Fragments, are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
 
 >[!TIP]
 >
->通常，内容架构师会为翻译专家提供翻译所需的所有字段的&#x200B;**属性名称** s。 配置翻译规则时需要这些名称。 作为翻译专家，您[可以按照此历程中先前所述找到这些&#x200B;**属性名称**&#x200B;自己](getting-started.md#content-modlels)。
+>**** These names are needed to configure translation rules. [****](getting-started.md#content-modlels)
 
-## 创建翻译规则 {#creating-rules}
+## Creating Translation Rules {#creating-rules}
 
-可以创建多个规则以支持复杂的翻译要求。 例如，您可能正在处理的一个项目要求翻译模型的所有字段，但在另一个项目上，只有描述字段必须翻译，而标题仍未翻译。
+Multiple rules can be created to support complex translation requirements. For example, one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
 
-翻译规则旨在处理此类情景。 但是，在本示例中，我们通过重点介绍简单的单一配置来说明如何创建规则。
+Translation rules are designed to handle such scenarios. However in this example we illustrate how to create rules by focusing on a simple, single configuration.
 
-有一个&#x200B;**翻译配置**&#x200B;控制台可用于配置翻译规则。 要访问它，请执行以下操作：
+**** To access it:
 
-1. 导航到&#x200B;**Tools** -> **General**。
-1. 点按或单击&#x200B;**翻译配置**。
+1. ********
+1. ****
 
-在&#x200B;**翻译配置** UI中，有许多选项可用于您的翻译规则。 这里，我们重点介绍了基本无头本地化配置所需的最必要和最典型的步骤。
+**** Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
 
-1. 点按或单击&#x200B;**添加上下文**，用于添加路径。 这是受规则影响的内容路径。
-   ![添加上下文](assets/add-translation-context.png)
-1. 使用路径浏览器选择所需的路径，然后点按或单击要保存的&#x200B;**Confirm**&#x200B;按钮。 请记住，包含无标题内容的内容片段通常位于`/content/dam/<your-project>`下。
-   ![选择路径](assets/select-context.png)
-1. AEM保存配置。
-1. 必须选择之前创建的上下文，然后点按或单击&#x200B;**编辑**。 此操作将打开&#x200B;**翻译规则编辑器**以配置属性。
-   ![翻译规则编辑器](assets/translation-rules-editor.png)
-1. 默认情况下，所有配置都继承自父路径，在此例中为`/content/dam`。 取消选中选项&#x200B;**从`/content/dam`**&#x200B;继承，以向配置添加其他字段。
-1. 取消选中后，在列表的&#x200B;**General**&#x200B;部分下，添加您之前标识为翻译字段的内容片段模型的属性名称。](getting-started.md#content-models)[
-   1. 在&#x200B;**New Property**&#x200B;字段中输入属性名称。
-   1. 将自动选中选项&#x200B;**Translate**&#x200B;和&#x200B;**Inherit**。
-   1. 点按或单击&#x200B;**添加**。
-   1. 对必须翻译的所有字段重复这些步骤。
-   1. 点按或单击&#x200B;**Save**。
-      ![添加属性](assets/add-property.png)
+1. ****This is the path of the content that is be affected by the rule.
+   ![](assets/add-translation-context.png)
+1. ****`/content/dam/<your-project>`
+   ![](assets/select-context.png)
+1. AEM saves the configuration.
+1. ********
+   ![](assets/translation-rules-editor.png)
+1. `/content/dam`**`/content/dam`**
+1. ****[](getting-started.md#content-models)
+   1. ****
+   1. ********
+   1. ****
+   1. Repeat these steps for all of the fields that you must translate.
+   1. ****
+      ![](assets/add-property.png)
 
-您现在已配置翻译规则。
+You have now configured your translation rules.
 
-## 高级使用 {#advanced-usage}
+## Advanced Usage {#advanced-usage}
 
-还有许多其他属性可以配置为翻译规则的一部分。 此外，您还可以手动将规则指定为XML，这样可以更加专一和灵活。
+There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
 
-通常，开始本地化无头内容并不需要此类功能，但如果您感兴趣，可以在[Additional Resources](#additional-resources)部分进一步阅读相关内容。
+[](#additional-resources)
 
-## 下一步 {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-现在，您已完成此部分无标题翻译历程，您应该：
+Now that you have completed this part of the headless translation journey you should:
 
-* 了解翻译规则的用途。
-* 能够定义您自己的翻译规则。
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-在此知识的基础上，继续您的AEM无头翻译历程，方法是接下来查看文档[翻译内容](translate-content.md) ，您将在其中了解连接器和规则如何协同工作来翻译无头内容。
+[](translate-content.md)
 
 ## 其他资源 {#additional-resources}
 
-虽然建议您通过查看文档[翻译内容来进入无头翻译历程的下一部分，但是](translate-content.md)以下是一些额外的可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头翻译历程。
+[](translate-content.md)
 
-* [识别要翻译的内容](/help/sites-cloud/administering/translation/rules.md)  — 了解翻译规则如何识别需要翻译的内容。
+* [](/help/sites-cloud/administering/translation/rules.md)

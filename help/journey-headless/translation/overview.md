@@ -1,91 +1,88 @@
 ---
-title: AEM无头翻译历程
-description: 从此处开始，使用AEM功能强大的翻译工具引导您翻译无头内容。
-index: true
-hide: false
-hidefromtoc: false
+title: AEM Headless Translation Journey
+description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 1%
 
 ---
 
-# AEM无头翻译历程 {#aem-headless-translation-journey}
+# AEM Headless Translation Journey {#aem-headless-translation-journey}
 
-从此处开始，使用AEM功能强大的翻译工具引导您翻译无头内容。
+Start here for a guided journey through translating your headless content using AEM&#39;s powerful translation tools.
 
 ## 简介 {#introduction}
 
-无头实施对于向受众提供体验越来越重要，无论这些体验位于何处，也不管渠道、区域或区域设置如何。
+Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel, region, or locale.
 
-与全栈解决方案中的传统方式一样，无头实施可用于页面和组件管理，并且重点关注创建不依赖于渠道、可重复使用的内容片段及其跨渠道交付。 通过使用AEM功能强大的翻译工具，这些可重复使用的片段可以轻松翻译并交付给受众，而无论其身在何处。
+Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. By using AEM&#39;s powerful translation tools, these reusable fragments can be easily translated and delivered to your audience wherever it may be.
 
-本指南将引导您完成最重要的无标题翻译主题，以便您在完成该工作后：
+This guide leads you through the most important headless translation topics so that on completion you:
 
-* 概述什么是无标题内容交付。
-* 基本了解AEM无头功能。
-* 了解AEM翻译功能以及它们与无标题内容的相关性。
-* 能够开始翻译您自己的无头内容。
+* Have an overview of what headless content delivery is.
+* Have a basic understanding AEM&#39;s headless features.
+* Understand AEM&#39;s translation features and how they related to headless content.
+* Have the ability to start translating your own headless content.
 
-其目标是让您广泛了解无头技术、AEM如何提供无头内容以及如何翻译无头内容。 如果您不熟悉其中的任何主题，那么这里就是您的理想起点。
+The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
 
-如果您已经熟悉AEM、无头和翻译，则可能已经拥有此历程的基本知识。 请考虑在 [其他资源部分。](#additional-resources)
+If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. [](#additional-resources)
 
-## AEM文档历程 {#documentation-journeys}
+## AEM Documentation Journeys {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/documentation-journeys.md) 将许多不同且可能复杂的主题和特性联系起来，提供一种说明，帮助读者从头到尾理解和解决业务问题(对AEM而言，读者可能是新手)，同时尽量少地了解以前的主题或AEM知识。
+[](/help/journey-documentation/documentation-journeys.md)
 
-文档历程围绕最佳实践原则进行设计，根据Adobe的最新研究、Adobe顾问的成熟实施经验以及客户项目的反馈提供信息。
+Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
-如果您想了解Adobe如何建议如何使用AEM解决无头业务案例， [AEM无头历程](/help/journey-documentation/documentation-journeys.md) 是开始的位置。
+[](/help/journey-documentation/documentation-journeys.md)
 
 ## 受众 {#audience}
 
-此历程专为翻译专家角色而设计，通常称为翻译项目管理器或TPM。 此历程阐述了在AEM中翻译无标题内容的要求、步骤和方法。 历程可以定义翻译专家必须与之交互的其他角色，但历程的视角是翻译专家。
+This journey is designed for the translation specialist persona, often referred to as the Translation Project Manager or TPM. This journey lays out the requirements, steps, and approach to translate headless content in AEM. The journey may define additional personas with which the translation specialist must interact, but the point-of-view for the journey is that of the translation specialist.
 
-此历程假定读者在大型CMS系统上具有翻译内容的经验，但不了解无头技术或AEM。
+This journey assumes the reader has experience translating content on a large CMS system, but assumes no knowledge of headless technology or AEM.
 
-以下是此历程中交互的角色。
+The following are the personas that interact in this journey.
 
-| 角色 | 描述 | 角色在历程 |
+| 角色 | 描述 | Role in Journey |
 |---|---|---|
-| 翻译专家 | 定义应翻译的内容并管理这些工作流 | 此历程的受众 |
-| 内容作者 | 创建并管理无头投放的内容 | 内容作者创建翻译专家必须翻译的内容。 |
-| 管理员 | 管理AEM的基本设置和配置 | 翻译专家与管理员合作，进行翻译所需的配置更改，如安装翻译连接器。 |
-| 内容架构师 | 对必须无头传送的数据要求进行分析，并定义此数据的结构 | 翻译专家与内容架构师合作，共同定义内容的组织，以便轻松进行翻译。 |
+| Translation Specialist | Defines what content should be translated and manages those workflows | Audience of this journey |
+| Content Author | Creates and manage content that is delivered headlessly | Content Authors create content that the translation specialist must translate. |
+| 管理员 | Manages the base setup and configuration of AEM | The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector. |
+| Content Architect | Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data | Translation specialists work with the content architect to define the organization of the content so it can be easily translated. |
 
-此历程中的信息当然对所有角色都有用，但某些信息对某些角色可能是多余的。 敬请关注 [即将推出的旅程，涵盖其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
+Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. [](/help/journey-documentation/documentation-journeys.md#journeys)
 
-## 无头翻译历程 {#the-journey}
+## The Headless Translation Journey {#the-journey}
 
-您将在此历程中探索许多主题。 以下文章为您提供了在AEM中翻译无标题内容并链接到详细技术文档的基本知识。
+You will explore many topics in this journey. The following articles give you foundational knowledge of translating headless content in AEM and link out to detailed technical documentation.
 
-尽管您可以直接转到历程的特定部分，但许多概念都基于之前文章中的概念进行构建。 因此，如果您是初次使用AEM中的无标题翻译，我们建议您从头开始，然后按顺序进行。
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless translation in AEM, we recommend that you start at the beginning and progress sequentially.
 
 | # | 文章 | 描述 |
 |---|---|---|
-| 0 | AEM无头翻译历程 | 本文档 |
-| 1 | [了解无标题内容以及如何在AEM中翻译](learn-about.md) | 了解无头概念、它们如何映射到AEM以及AEM翻译理论。 |
-| 2 | [AEM无头翻译入门](getting-started.md) | 了解如何组织无头内容以及AEM翻译工具的工作方式。 |
-| 3 | [配置翻译连接器](configure-connector.md) | 了解如何将AEM连接到翻译服务。 |
-| 4 | [配置翻译规则](translation-rules.md) | 了解如何定义翻译规则以识别翻译内容。 |
-| 5 | [翻译内容](translate-content.md) | 使用翻译连接器和规则翻译无头内容。 |
-| 6 | [发布翻译内容](publish-content.md) | 了解如何在更新基础内容时发布翻译内容并更新翻译。 |
+| 0 | AEM Headless Translation Journey | This document |
+| 1 | [](learn-about.md) | Learn headless concepts, how they map to AEM, and the theory of AEM translation. |
+| 2 | [](getting-started.md) | Get to know how to organize your headless content and how AEM&#39;s translation tools work. |
+| 3 | [](configure-connector.md) | Learn how to connect AEM to a translation service. |
+| 4 | [](translation-rules.md) | Learn how to define translation rules to identify content for translation. |
+| 5 | [](translate-content.md) | Use the translation connector and rules to translate your headless content. |
+| 6 | [](publish-content.md) | Learn how to publish your translated content and update the translation when the underlying content is updated. |
 
-## 下一步 {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-现在，您已准备好开始Adobe无头翻译历程。 我们鼓励您继续访问历程的下一部分并阅读文章 [了解无标题内容以及如何在AEM中翻译](learn-about.md)
+You are now ready to get started on your Adobe headless translation journey. [](learn-about.md)
 
 ## 其他资源 {#additional-resources}
 
-文档历程向您展示了AEM如何通过提供说明来解决业务问题，说明如何指导您完成复杂且相互关联的流程和功能。 历程说明了多个功能如何协同工作来满足单个业务需求。
+Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
 
-因此，这些旅程旨在独立进行。 但是，其中的许多内容可以相互关联。 请查看这些其他历程，了解有关AEM强大功能如何协同工作的更多信息。
+As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
 
-* [无外设创作历程](/help/journey-headless/author/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。
-* [无外设架构师历程](/help/journey-headless/architect/overview.md)  — 从此处开始，介绍Adobe Experience Manager as a Cloud Service强大而灵活的无头功能，以及如何为您的项目建立内容模型。
-* [AEM Headless开发人员历程](/help/journey-headless/developer/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无外设功能、其功能，以及如何在您的第一个开发项目中利用这些功能。
-* [AEMas a Cloud Service技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已经对AEM和无外设技术有了很深的了解，您可能需要直接查阅我们的深入技术文档。
-* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您喜欢通过学习来学习，而且在技术上有倾向，请学习我们由API和框架组织的动手实践教程，这些教程将探索如何创建和使用基于AEM Headless构建的应用程序。
+* [](/help/journey-headless/author/overview.md)
+* [](/help/journey-headless/architect/overview.md)
+* [](/help/journey-headless/developer/overview.md)
+* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

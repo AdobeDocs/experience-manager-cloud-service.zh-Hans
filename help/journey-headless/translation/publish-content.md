@@ -1,169 +1,167 @@
 ---
-title: 发布翻译后的内容
-description: 了解如何在内容更新时发布翻译内容和更新翻译。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Publish Translated Content
+description: Learn how to publish your translated content and update the translations as the content updates.
+exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 0%
 
 ---
 
-# 发布翻译后的内容 {#publish-content}
+# Publish Translated Content {#publish-content}
 
-了解如何在内容更新时发布翻译内容和更新翻译。
+Learn how to publish your translated content and update the translations as the content updates.
 
-## 迄今为止的故事 {#story-so-far}
+## The Story So Far {#story-so-far}
 
-在AEM无头翻译历程的上一个文档[翻译内容](configure-connector.md)中，您学习了如何使用AEM翻译项目翻译您的无头内容。 您现在应该：
+[](configure-connector.md)You should now:
 
-* 了解翻译项目是什么。
-* 能够创建新的翻译项目。
-* 使用翻译项目来翻译您的无头内容。
+* Understand what a translation project is.
+* Be able to create new translation projects.
+* Use translation projects to translate your headless content.
 
-现在，您的初始翻译已完成，本文将引导您完成发布该内容的下一步，以及在语言根目录更改中的基础内容时如何更新您的翻译。
+Now that your initial translation is complete, this article takes you through the next step of publishing that content and what to do to update your translations as the underlying content in the language root  changes.
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何在AEM中发布无标题内容，以及如何创建持续工作流以保持翻译处于最新状态。 阅读本文档后，您应：
+This document helps you understand how to publish headless content in AEM and how to create a continual workflow to keep your translations up-to-date. After reading this document, you should:
 
-* 了解AEM的创作 — 发布模型。
-* 了解如何发布翻译后的内容。
-* 能够为翻译内容实施持续更新模型。
+* Understand the author-publish model of AEM.
+* Know how to publish your translated content.
+* Be able to implement a continual update model for your translated content.
 
-## AEM创作 — 发布模型 {#author-publish}
+## AEM&#39;s Author-Publish Model {#author-publish}
 
-在发布内容之前，最好了解AEM创作 — 发布模型。 按照简化的术语，AEM会将系统的用户分成两组。
+Before you publish your content, it is a good idea to understand AEM&#39;s author-publish model. In simplified terms, AEM divides users of the system into two groups.
 
-1. 创建和管理内容和系统的用户
-1. 从系统中使用内容的用户
+1. Those who create and manage the content and the system
+1. Those who consume the content from the system
 
-因此，AEM将实际分为两个实例。
+AEM is therefore physically separated into two instances.
 
-1. **author**&#x200B;实例是内容作者和管理员在其中创建和管理内容的系统。
-1. **publish**&#x200B;实例是将内容交付给用户的系统。
+1. ****
+1. ****
 
-在创作实例上创建内容后，必须将其传输到发布实例，才能供使用。 从创作到发布的转移过程称为&#x200B;**publication**。
+Once content is created on the author instance, it must be transferred to the publish instance for it to be available for consumption. ****
 
-## 发布翻译内容 {#publishing}
+## Publishing Your Translated Content {#publishing}
 
-一旦您对翻译内容的状态感到满意，就必须发布该内容，以便无头服务能够使用该内容。 此任务通常不由翻译专家负责，但此处记录了此任务以说明完整的工作流。
+Once you are happy with the state of your translated content, it must be published so headless services can consume it. This task is usually not the responsibility of the translation specialist, but is documented here to illustrate the complete workflow.
 
 >[!NOTE]
 >
->通常，翻译完成后，翻译专家会通知内容所有者翻译已准备好发布。 然后，内容所有者发布这些内容。
+>Generally when the translation is complete, the translations specialist informs the content owners that the translations are ready for publication. The content owners then publish them.
 >
->为完整起见，提供了以下步骤。
+>The following steps are provided for completeness.
 
-发布翻译的最简单方法是导航到项目资产文件夹。
+The simplest way to publish the translations is to navigate to the project assets folder.
 
 ```text
 /content/dam/<your-project>/
 ```
 
-在此路径下，您拥有每个翻译语言的子文件夹，并可以选择要发布的。
+Under this path you have sub-folders for each translation language and can choose which to publish.
 
-1. 转到&#x200B;**Navigation** -> **Assets** -> **Files**&#x200B;并打开项目文件夹。
-1. 此处显示语言根文件夹和所有其他语言文件夹。 选择要发布的本地化语言。
-   ![选择语言文件夹](assets/select-language-folder.png)
-1. 点按或单击&#x200B;**管理发布**。
-1. 在&#x200B;**管理发布**&#x200B;窗口中，确保在&#x200B;**操作**&#x200B;下自动选择&#x200B;**发布**，并在&#x200B;**计划**&#x200B;下选择&#x200B;**Now**。 单击或点按&#x200B;**下一步**。
-   ![管理发布选项](assets/manage-publication-options.png)
-1. 在下一个&#x200B;**管理发布**&#x200B;窗口中，确认已选择/已选择正确的路径。 点按或单击&#x200B;**发布**。
-   ![管理发布范围](assets/manage-publication-scope.png)
-1. AEM会在屏幕底部显示一条弹出消息，以确认发布操作。
-   ![资源已发布的横幅](assets/resources-published-message.png)
+1. ************
+1. Here you see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
+   ![](assets/select-language-folder.png)
+1. ****
+1. ********************&#x200B;单击或点按&#x200B;**下一步**。
+   ![](assets/manage-publication-options.png)
+1. ********
+   ![](assets/manage-publication-scope.png)
+1. AEM confirms the publish action with a pop-up message at the bottom of the screen.
+   ![](assets/resources-published-message.png)
 
-您翻译的无标题内容现已发布！ 现在，您的无头服务可以访问并使用它。
-
->[!TIP]
->
->发布时，您可以选择多个项目（即多个语言文件夹），以便一次发布多个翻译。
-
-发布内容时还有其他选项，例如计划发布时间，这些选项不在此历程的范围之内。 有关详细信息，请参阅文档末尾的[其他资源](#additional-resources)部分。
-
-## 更新翻译的内容 {#updating-translations}
-
-翻译很少是一次性的练习。 通常，初始翻译完成后，内容作者会继续在语言根目录中添加和修改内容。 这意味着您还需要更新翻译内容。
-
-具体的项目要求定义您执行更新之前需要更新翻译的频率以及遵循的决策过程。 一旦您决定更新翻译，AEM中的过程将非常简单。 由于初始翻译基于翻译项目，因此任何更新也是如此。
-
-但是，与之前一样，如果您选择自动创建翻译项目或手动创建翻译项目，则该过程会略有不同。
-
-### 更新自动创建的翻译项目 {#updating-automatic-project}
-
-1. 导航到&#x200B;**导航** -> **资产** -> **文件**。 请记住，AEM中的无标题内容存储为称为内容片段的资产。
-1. 选择项目的语言根。 在本例中，我们选择了`/content/dam/wknd/en`。
-1. 点按或单击边栏选择器，并显示&#x200B;**引用**&#x200B;面板。
-1. 点按或单击&#x200B;**语言副本**。
-1. 选中&#x200B;**语言副本**&#x200B;复选框。
-1. 展开引用面板底部的&#x200B;**更新语言副本**&#x200B;部分。
-1. 在&#x200B;**项目**&#x200B;下拉列表中，选择&#x200B;**添加到现有翻译项目**。
-1. 在&#x200B;**现有翻译项目**&#x200B;下拉列表中，选择为初始翻译创建的项目。
-1. 点按或单击&#x200B;**开始**。
-
-![将项目添加到现有翻译项目](assets/add-to-existing-project.png)
-
-内容会添加到现有翻译项目。 要查看翻译项目，请执行以下操作：
-
-1. 导航到&#x200B;**Navigation** -> **Projects**。
-1. 点按或单击您刚刚更新的项目。
-1. 点按或单击您更新的语言之一。
-
-您会看到项目中添加了新的工作卡。 在此示例中，添加了另一个西班牙语翻译。
-
-![添加了其他翻译作业](assets/additional-translation-job.png)
-
-您可能会注意到新信息卡中列出的统计信息（资产数量和内容片段数）不同。 这是因为AEM可识别自上次翻译后发生的更改，并且仅包含需要翻译的内容。 这包括对更新内容进行重新翻译，以及首次翻译新内容。
-
-从这一刻起，您[开始并管理翻译作业，就像您对原作一样。](translate-content.md#using-translation-project)
-
-### 更新手动创建的翻译项目 {#updating-manual-project}
-
-要更新翻译，您可以向现有项目添加新作业，该作业负责翻译更新的内容。
-
-1. 导航到&#x200B;**Navigation** -> **Projects**。
-1. 点按或单击您需要更新的项目。
-1. 点按或单击窗口顶部的&#x200B;**Add**&#x200B;按钮。
-1. 在&#x200B;**添加磁贴**&#x200B;窗口中，点按或单击&#x200B;**翻译作业**，然后单击&#x200B;**提交**。
-
-   ![添加拼贴](assets/add-translation-job-tile.png)
-
-1. 在新翻译作业的卡片上，点按或单击卡片顶部的V形按钮，然后选择&#x200B;**更新Target**&#x200B;以定义新作业的目标语言。
-
-   ![更新目标](assets/update-target.png)
-
-1. 在&#x200B;**选择目标语言**&#x200B;对话框中，使用下拉菜单选择语言，然后点按或单击&#x200B;**完成**。
-
-   ![选择目标语言](assets/select-target-language.png)
-
-1. 设置新翻译作业的目标语言后，点按或单击作业卡片底部的省略号按钮以查看作业的详细信息。
-1. 首次创建时，作业为空。 通过点按或单击&#x200B;**Add**&#x200B;按钮，并使用路径浏览器[向作业中添加内容，这与最初创建翻译项目时的操作相同。](translate-content.md##manually-creating)
+Your translated headless content is now published! It can now be accessed and consumed by your headless services.
 
 >[!TIP]
 >
->路径浏览器功能强大的过滤器对于仅查找已更新的内容同样非常有用。
+>You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple translations at one time.
+
+There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. [](#additional-resources)
+
+## Updating Your Translated Content {#updating-translations}
+
+Translation is rarely a one-off exercise. Typically your content authors continue to add to and modify your content in the language root after initial translation is complete. This means that you need to also update your translated content.
+
+Specific project requirements define how often you need to update your translations and what decision process is followed before performing an update. Once you have decided to update your translations, the process in AEM is very simple. As the initial translation was based on a translation project, so too are any updates.
+
+However as before, the process differs slightly if you chose to automatically create your translation project or manually create your translation project.
+
+### Updating an Automatically Created Translation Project {#updating-automatic-project}
+
+1. ************ Remember that headless content in AEM is stored as assets known as Content Fragments.
+1. Select the language root of your project. `/content/dam/wknd/en`
+1. ****
+1. ****
+1. ****
+1. ****
+1. ********
+1. ****
+1. ****
+
+![](assets/add-to-existing-project.png)
+
+The content is added to the existing translation project. To view the translation project:
+
+1. ********
+1. Tap or click the project that you just updated.
+1. Tap or click the language or one of the languages that you updated.
+
+You see that a new job card was added to the project. In this example, another Spanish translation was added.
+
+![](assets/additional-translation-job.png)
+
+You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+
+[](translate-content.md#using-translation-project)
+
+### Updating a Manually Created Translation Project {#updating-manual-project}
+
+To update a translation you can add a new job to your existing project that is responsible for translating the updated content.
+
+1. ********
+1. Tap or click the project that you need to update.
+1. ****
+1. ************
+
+   ![](assets/add-translation-job-tile.png)
+
+1. ****
+
+   ![](assets/update-target.png)
+
+1. ********
+
+   ![](assets/select-target-language.png)
+
+1. Once your new translation job&#39;s target language is set, tap or click on the ellipsis button at the bottom of the job card to view the details of the job.
+1. The job is empty when first created. ****[](translate-content.md##manually-creating)
+
+>[!TIP]
 >
->您可以在[其他资源部分中了解有关路径浏览器的更多信息。](#additional-resources)
+>The path browser&#39;s powerful filters can again be useful to find just the content that has been updated.
+>
+>[](#additional-resources)
 
-从这一刻起，您[开始并管理翻译作业，就像您对原作一样。](translate-content.md#using-translation-project)
+[](translate-content.md#using-translation-project)
 
-## 历程结束？ {#end-of-journey}
+## End of the Journey? {#end-of-journey}
 
-恭喜！ 您已完成无头翻译历程！ 您现在应该：
+Congratulations! You have completed the headless translation journey! You should now:
 
-* 概述什么是无标题内容交付。
-* 了解AEM的无头功能。
-* 了解AEM翻译功能以及它们与无标题内容的相关性。
-* 能够开始翻译您自己的无头内容。
+* Have an overview of what headless content delivery is.
+* Have a basic Understanding AEM&#39;s headless features.
+* Understand AEM&#39;s translation features and how they related to headless content.
+* Have the ability to start translating your own headless content.
 
-现在，您可以在AEM中翻译自己的无头内容。 但是，AEM是一款功能强大的工具，还有许多其他选项可供使用。 查看[其他资源部分](#additional-resources)中提供的一些其他资源，了解有关您在此历程中看到的功能的更多信息。
+You are now ready to translate your own headless content in AEM. However AEM is a powerful tool and there are many additional options available. [](#additional-resources)
 
 ## 其他资源 {#additional-resources}
 
-* [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)  — 了解翻译项目和其他功能（如人文翻译工作流和多语言项目）的详细信息。
-* [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)  — 更详细地了解AEM的创作和发布模型。本文档重点介绍页面创作，而不是内容片段，但该理论仍适用。
-* [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — 了解发布内容时可用的其他功能。本文档重点介绍页面创作，而不是内容片段，但该理论仍适用。
-* [创作环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)  - AEM提供了各种可用于组织和编辑内容的机制，包括强大的路径浏览器。
+* [](/help/sites-cloud/administering/translation/managing-projects.md)
+* [](/help/sites-cloud/authoring/getting-started/concepts.md)This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)
