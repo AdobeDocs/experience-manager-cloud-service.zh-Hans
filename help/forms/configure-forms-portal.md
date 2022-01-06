@@ -1,9 +1,9 @@
 ---
-title: 如何在Forms页面上创建Experience Manager Sites门户？
+title: 如何在Forms页面上创建Experience Manager Sites门户
 description: 了解如何在Forms页面上创建AEM Sites门户并使用现成的核心组件。
-source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
+source-git-commit: 50eeb2c1e6925b39b03bbbdd627169453ea1c1d8
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1784'
 ht-degree: 1%
 
 ---
@@ -59,22 +59,15 @@ AEM Forms开箱即用地提供以下门户组件：
 
    此外，更改 `appTitle`, `appId`和 `groupId`，以反映您的环境。
 
+1. **在预发行版本中，执行以下步骤以使用Forms Portal组件：**
+   * [启用预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * 替换 `core-forms-components-*` 的预发行版本(例如，1.0.4-PRERELEASE-20211223) `Cloud Manager/AEM Archetype` 通过更新项目 `<core.forms.components.version>x.y.z</core.forms.components.version>` 顶级属性 `pom.xml` 原型项目。
+
 1. **将项目部署到本地开发环境：** 您可以使用以下命令部署到本地开发环境
 
    `mvn -PautoInstallPackage clean install`
 
    有关命令的完整列表，请参阅 [构建和安装](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
-
-1. [包括核心组件工件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) 依赖关系如下：
-
-   ```shell
-   <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>{TBD}</artifactId>
-               <type>content-package</type>
-               <version>{TBD}</version>
-   </dependency>
-   ```
 
 1. [将代码部署到 [!DNL AEM Forms] as a Cloud Service环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
@@ -85,7 +78,7 @@ AEM Forms开箱即用地提供以下门户组件：
 
 ### 创建 Azure 存储配置 {#create-azure-storage-configuration}
 
-在执行这些步骤之前，请确保您具有 [!DNL Azure] 存储帐户和访问密钥，以授权访问 [!DNL Azure] 存储帐户。
+在执行这些步骤之前，请确保您拥有Azure存储帐户和访问密钥，以授权访问 [!DNL Azure] 存储帐户。
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure存储]**.
 1. 选择要创建配置的文件夹，然后点按 **[!UICONTROL 创建]**.
