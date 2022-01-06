@@ -1,12 +1,12 @@
 ---
-title: AEM Screensas a Cloud Service
-description: Adobe Experience Manager Screensas a Cloud Service自助资源和文档链接
-landing-page-description: 了解AEM Screensas a Cloud Service。
+title: AEM Screens as a Cloud Service
+description: Adobe Experience Manager Screens as a Cloud Service 自助资源和文档链接
+landing-page-description: 了解 AEM Screens as a Cloud Service。
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 51%
+source-wordcount: '408'
+ht-degree: 60%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 51%
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 文档](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

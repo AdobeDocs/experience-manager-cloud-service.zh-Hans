@@ -1,12 +1,12 @@
 ---
 title: 实施 Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service 实施自助资源和文档链接
-landing-page-description: 了解如何自定义AEMas a Cloud Service部署，包括开发和部署主题。
+landing-page-description: 了解如何自定义您的 AEM as a Cloud Service 部署，包括开发和部署主题。
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 77%
+source-wordcount: '409'
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 77%
 * [调度程序文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 文档](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
