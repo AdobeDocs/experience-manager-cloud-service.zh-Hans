@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 3ea19210049e49401da892021f098005759542a3
+source-git-commit: dadf4f21ebaac12386153b2a9c69dc8f10951e9c
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 7%
+source-wordcount: '916'
+ht-degree: 6%
 
 ---
 
@@ -53,6 +53,8 @@ ht-degree: 7%
 * `{{url_path}}` 将被产品的 `url_path`，例如 `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` 将被替换为当前选定的变体，例如 `VP09-KH-S`
 
+自 `url_path` 已弃用，预定义的产品URL格式使用 `url_rewrites` 并选择路径段最多的路径段，如果 `url_path` 不可用。
+
 对于上述示例数据，使用默认URL格式设置的产品变体URL将如下所示 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### 类别页面URL格式 {#product-list}
@@ -74,16 +76,19 @@ ht-degree: 7%
 > 
 > 的 `url_path` 是 `url_keys` 产品或类别的祖先和产品或类别的 `url_key` 分隔 `/` 斜线。
 
+### 特定类别/产品页面 {#specific-pages}
+
+可以创建 [多类别和产品页面](../authoring/multi-template-usage.md) 仅适用于目录类别或产品的特定子集。
+
+的 `UrlProvider` 已预配置为在创作层实例上生成指向此类页面的深层链接。 对于使用“预览”模式浏览网站、导航到特定产品或类别页面并切换回“编辑”模式以编辑页面的编辑器而言，此操作非常有用。
+
+另一方面，在发布层实例上，目录页面URL应保持稳定，以免在搜索引擎排名上丢失增益。 由于该发布层实例默认不会呈现指向特定目录页面的深层链接。 要更改此行为，请 _CIF URL提供商特定的页面策略_ 可以配置为始终生成特定的页面url。
+
 ## 自定义URL格式 {#custom-url-format}
 
-要提供自定义URL格式，项目可以实施 [`UrlFormat` 界面](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) 并将实施注册为OSGI服务，将其用作类别页面或产品页面url格式。 的 `UrlFormat#PROP_USE_AS` 服务属性指示，其中要替换的已配置预定义格式：
+要提供自定义URL格式，项目可以在 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 或 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 服务接口，并将实现注册为OSGI服务。 这些实施（如果可用）将替换已配置的预定义格式。 如果注册了多个实施，则具有较高服务排名的实施将替换具有较低服务排名的实施。
 
-* `useAs=productPageUrlFormat`，将替换配置的产品页面url格式
-* `useAs=categoryPageUrlFormat`，将替换已配置的类别页面url格式
-
-如果 `UrlFormat` 注册为OSGI服务，具有较高服务排名的服务取代具有较低服务排名的服务。
-
-的 `UrlFormat` 必须实施一对方法，以根据给定的参数映射构建URL，并解析URL以返回相同的参数映射。 参数与上述内容相同，只适用于类别和其他 `{{uid}}` 参数 `UrlFormat`.
+自定义URL格式实施必须实施一对方法，以根据给定参数构建URL，并解析URL以分别返回相同的参数。
 
 ## 与Sling映射结合使用 {#sling-mapping}
 
