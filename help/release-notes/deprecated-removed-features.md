@@ -2,9 +2,9 @@
 title: 已弃用和已删除的功能
 description: 发行说明特定于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
+source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '582'
 ht-degree: 32%
 
 ---
@@ -53,7 +53,8 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Sites] | Portal Director 和 Portlet 组件 | 在 [!DNL Experience Manager] 6.4，现已从 [!DNL Experience Manager]. |
 | [!DNL Sites] | 设计导入程序 | 此功能已作为 [!DNL Experience Manager] 存储库在运行时无法访问。 |
 | [!DNL Assets] | [!DNL Assets] 与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务共享功能不可用。 | 与集成 [!DNL Adobe Creative Cloud]，使用 [Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | 支持Apache Sling数据源（OSGi包org.apache.sling.datasource）。 | 不适用 |
+| [!DNL Foundation] | 支持Apache Sling数据源（OSGi包org.apache.sling.datasource） | 不适用 |
+| [!DNL Foundation] | 支持JST脚本模板（OSGi包org.apache.sling.scripting.jst） | 不适用 |
 
 ## Java API {#java-api}
 
