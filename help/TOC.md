@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
+source-git-commit: 98862df8b69657cf3a8a4a0f54d1285b3cab526f
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -322,7 +322,7 @@ ht-degree: 32%
       + [媒体库功能](/help/assets/medialibrary.md)
       + [导入和导出资产元数据](/help/assets/metadata-import-export.md)
    + 共享和分发资产 {#brand-portal}
-      + [配置 [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [使用  [!DNL Brand Portal] 配置 [!DNL Assets] ](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [将资产发布到 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
       + [从发布资产 [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
    + 内容片段 {#content-fragments}
@@ -664,7 +664,7 @@ ht-degree: 32%
             + [组件概述](/help/implementing/developing/components/overview.md)
             + [模板](/help/implementing/developing/components/templates.md)
             + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/features/style-system.html)
+            + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [内容服务的JSON导出程序](/help/implementing/developing/components/json-exporter.md)
             + [为组件启用JSON导出](/help/implementing/developing/components/enabling-json-exporter.md)
             + [图像编辑器](/help/implementing/developing/components/image-editor.md)
@@ -724,7 +724,7 @@ ht-degree: 32%
             + [对内容片段的远程AEM GraphQL查询进行身份验证](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
       + 混合和SPA开发 {#hybrid}
          + [混合和SPA与AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [SPA简介和演练](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND教程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [开始使用React](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -740,7 +740,7 @@ ht-degree: 32%
          + [在AEM中编辑外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [组合组件在SPA中](/help/implementing/developing/hybrid/composite-components.md)
          + [服务器端渲染](/help/implementing/developing/hybrid/ssr.md)
-         + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [Launch集成](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA参考文档](/help/implementing/developing/hybrid/reference-materials.md)
    + 开发人员工具 {#developer-tools}
@@ -760,7 +760,7 @@ ht-degree: 32%
       + [ContextHub诊断](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [扩展ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [使用ContextHub配置分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
+      + [使用ContextHub配置分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + 配置和扩展 AEM as a Cloud Service {#configuring-and-extending}
       + 使用App Builder扩展AEM{#app-builder}
          + [使用Adobe开发人员应用程序生成器扩展AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
