@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service版本2021.12.0中的Cloud Manager发行说明
 description: 以下是AEMas a Cloud Service版本2021.12.0中Cloud Manager的发行说明。
 feature: Release Information
-source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
+source-git-commit: 6389dfaf1e4569a0e7bf2c6dbfa30bb003c4db5b
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ AEM Manager在as a Cloud Service中的发布日期为2021.12.0 2021年12月16日
 * 在复制TXT条目（“TXT值”而不是“TXT记录”）时，对UI进行了次要更新，以删除潜在的混淆。
 * [与证书错误相关的文档](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) 更新了，以涵盖其他示例以及故障排除步骤。
 * 前端管道执行中现在有一个选项，可在部署到生产之前拒绝或批准。
+* Cloud Manager使用的AEM项目原型版本已更新至版本32。
+
 
 ### 错误修复 {#bug-fixes}
 
