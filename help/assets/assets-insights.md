@@ -2,13 +2,13 @@
 title: 资产分析
 description: 跟踪在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的用户评级和使用情况统计信息。
 contentOwner: AG
-feature: 资产分析，资产报表
+feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
+source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 9%
+source-wordcount: '853'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 要使资产分析能够从网站捕获图像的使用情况统计信息，您必须在网站代码中包含图像的嵌入代码。
 
-要让资产分析显示资产的使用情况统计信息，请首先配置功能以从[!DNL Adobe Analytics]获取报表数据。 有关详细信息，请参阅[配置资产分析](#configure-asset-insights)。 要使用此功能，请单独购买[!DNL Adobe Analytics]许可证。
+要让资产分析显示资产的使用情况统计信息，请首先配置功能，以从 [!DNL Adobe Analytics]. 有关详细信息，请参阅 [配置资产分析](#configure-asset-insights). 要使用此功能，请购买 [!DNL Adobe Analytics] 单独许可。
 
 >[!NOTE]
 >
@@ -30,26 +30,26 @@ ht-degree: 9%
 
 您可以从元数据页面查看资产分析得分。
 
-1. 从Assets用户界面中，选择图像，然后单击工具栏中的&#x200B;**[!UICONTROL 属性]** 。
-1. 在属性页面中，单击&#x200B;**[!UICONTROL 分析]**。
-1. 在&#x200B;**[!UICONTROL 分析]**&#x200B;选项卡中查看资产的使用情况详细信息。 **[!UICONTROL 分数]**&#x200B;部分描述资产的资产使用总数和性能存储。
+1. 从Assets用户界面中，选择图像，然后单击 **[!UICONTROL 属性]** 中。
+1. 在属性页面中，单击 **[!UICONTROL 分析]**.
+1. 在 **[!UICONTROL 分析]** 选项卡。 的 **[!UICONTROL 得分]** 部分介绍资产的资产使用总数和性能存储。
 
    使用情况分数描述了资产在各种解决方案中使用的次数。
 
-   **[!UICONTROL 展示次数]**&#x200B;分数是资产在网站上加载的次数。 在&#x200B;**[!UICONTROL Clicks]**&#x200B;下显示的数字是点击资产的次数。
+   的 **[!UICONTROL 展示次数]** score是资产在网站上加载的次数。 显示在 **[!UICONTROL 点击次数]** 是点击资产的次数。
 
-1. 查看&#x200B;**[!UICONTROL 使用统计信息]**&#x200B;部分，了解资产所属的实体以及最近使用过的创意解决方案。 使用率越高，资产在用户中受欢迎的可能性就越大。 使用情况数据显示在以下标题下：
+1. 查看 **[!UICONTROL 使用情况统计信息]** 部分以了解资产所属的实体以及最近使用过的创意解决方案。 使用率越高，资产在用户中受欢迎的可能性就越大。 使用情况数据显示在以下标题下：
 
    * **[!UICONTROL 资产]**:资产属于收藏集或复合资产的一部分的次数。
    * **[!UICONTROL Web和移动设备]**:资产成为网站和应用程序一部分的次数。
-   * **[!UICONTROL 社交]**:资产在其他解决方案（如）中使用的次 [!DNL Adobe Campaign]数。
+   * **[!UICONTROL 社交]**:资产在其他解决方案(如 [!DNL Adobe Campaign].
    * **[!UICONTROL 电子邮件]**:资产在电子邮件促销活动中使用的次数。
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >由于资产分析功能通常会定期从[!DNL Adobe Analytics]中获取解决方案数据，因此解决方案部分可能不会显示最新的数据。 显示数据的时间段取决于资产分析为检索Analytics数据而运行的获取操作的计划。
+   >由于资产分析功能通常从 [!DNL Adobe Analytics] 解决方案部分可能会定期显示最新数据。 显示数据的时间段取决于资产分析为检索Analytics数据而运行的获取操作的计划。
 
 1. 要以图形方式查看一段时间内资产的性能统计信息，请在&#x200B;**[!UICONTROL 性能统计信息]**&#x200B;部分中选择时间段。包括点击次数和印象在内的详细信息将显示为图形的趋势线。
 
@@ -59,7 +59,7 @@ ht-degree: 9%
    >
    >与“解决方案”部分中的数据不同，“性能统计”部分显示最新的数据。
 
-1. 要获取您包含在网站中的资产的嵌入代码以获取性能数据，请单击资产缩略图下方的&#x200B;**[!UICONTROL 获取嵌入代码]**。<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. 要获取您包含在网站中的资产的嵌入代码以获取性能数据，请单击 **[!UICONTROL 获取嵌入代码]** 资产缩略图下方。 <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -68,7 +68,7 @@ ht-degree: 9%
 您可以使用&#x200B;**[!UICONTROL 分析视图]**&#x200B;同时查看文件夹中所有资产的分数。
 
 1. 在Assets用户界面中，导航到要查看其分析的资产所在的文件夹。
-1. 单击工具栏中的&#x200B;**[!UICONTROL 布局]**&#x200B;选项，然后选择&#x200B;**[!UICONTROL 分析视图]**。
+1. 单击 **[!UICONTROL 布局]** 选项，然后选择 **[!UICONTROL 分析视图]**.
 1. 页面会显示资产的使用情况分数。 比较各个资产的评级并进行分析。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -87,36 +87,44 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 ## 配置资产分析 {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] 从获取第三方网站使用的数字资产的使用情况数 [!DNL Adobe Analytics]据。要使资产分析能够检索此数据并生成分析，请首先配置该功能以与[!DNL Adobe Analytics]集成。
+[!DNL Experience Manager Assets] 从获取第三方网站使用的数字资产的使用情况数据 [!DNL Adobe Analytics]. 要使资产分析能够检索此数据并生成分析，请首先配置该功能以与 [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
 >仅支持并提供图像分析。
 
-1. 在[!DNL Experience Manager]中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]**。
+1. 在 [!DNL Experience Manager]，单击 **[!UICONTROL 工具]** > **[!UICONTROL 资产]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. 单击&#x200B;**[!UICONTROL 分析配置]**&#x200B;卡。
-1. 在向导中，选择一个数据中心并提供您的凭据，包括您的组织名称、用户名和共享密钥。
 
-   ![在中为资产分析配置Adobe Analytics  [!DNL Experience Manager]](assets/insights_config2.png)
+1. 有关Analytics Web服务访问信息，请转到 **[!UICONTROL Analytics]** > **[!UICONTROL 管理员]** > **[!UICONTROL 管理工具]** > **[!UICONTROL 公司设置]** > **[!UICONTROL Web服务]** 并复制 **[!UICONTROL 共享密钥]** 键。
+
+   在向导中，选择 **[!UICONTROL 数据中心]**，并提供 **[!UICONTROL 公司]**, Web服务 **[!UICONTROL 用户名]**，并粘贴 **[!UICONTROL 共享密钥]** 键。
+
+   单击 **[!UICONTROL 身份验证]**.
+
+   ![在中为资产分析配置Adobe Analytics [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
    *图：在中为资产分析配置Adobe Analytics[!DNL Experience Manager]*
 
-1. 单击&#x200B;**[!UICONTROL Authenticate]**。 在[!DNL Experience Manager]验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择一个Adobe Analytics报表包，您可以从中获取资产分析数据。 单击&#x200B;**[!UICONTROL 添加]**。
-1. 在[!DNL Experience Manager]设置报表包后，单击&#x200B;**[!UICONTROL 完成]**。
+1. 成功身份验证后，您将获得下拉列表中列出的报表包。 选择Adobe Analytics **[!UICONTROL 报表包]** 从中获取资产分析数据。 单击&#x200B;**[!UICONTROL 添加]**。
+
+1. 之后 [!DNL Experience Manager] 设置报表包时，单击 **[!UICONTROL 完成]**.
+
+有关更多信息，请参阅 [Adobe Analytics Web服务](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### 页面跟踪器 {#page-tracker}
 
-配置Adobe Analytics帐户后，将为您生成页面跟踪器代码。 要启用资产分析以跟踪第三方网站中使用的[!DNL Experience Manager]资产，请在网站代码中包含页面跟踪器代码。 在Assets中使用页面跟踪器实用程序生成页面跟踪器代码。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+配置Adobe Analytics帐户后，将为您生成页面跟踪器代码。 启用资产分析以跟踪 [!DNL Experience Manager] 第三方网站中使用的资产，请在网站代码中包含页面跟踪器代码。 在Assets中使用页面跟踪器实用程序生成页面跟踪器代码。 <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. 在[!DNL Experience Manager]中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]**。
+1. 在 [!DNL Experience Manager]，单击 **[!UICONTROL 工具]** > **[!UICONTROL 资产]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. 从&#x200B;**[!UICONTROL 导航]**&#x200B;页面中，单击&#x200B;**[!UICONTROL 分析页面跟踪器]**&#x200B;卡。
-1. 单击&#x200B;**[!UICONTROL 下载]**&#x200B;以下载页面跟踪器代码。
+1. 单击 **[!UICONTROL 下载]** 下载页面跟踪器代码。
 
 <!--
 Add page tracker code, CQDOC-18045, 30/07/2021
