@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中处理视频，例如，对视频进
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
+source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
 workflow-type: tm+mt
-source-wordcount: '9458'
+source-wordcount: '9476'
 ht-degree: 19%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 19%
       * 详细了解 [组织数字资产](/help/assets/organize-assets.md).
    * 将主源视频上传到文件夹。 将视频添加到文件夹后，这些视频会根据您分配给文件夹的视频处理配置文件进行编码。
 
-      * Dynamic Media主要支持长度为30分钟的简短视频。
+      * Dynamic Media主要支持长度最长为30分钟且最小分辨率大于50 x 50的短格式视频。
       * 您可以上传每个最大15 GB的视频文件。
       * [上传视频](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 了解有关[支持的输入文件格式](/help/assets/file-format-support.md)的更多信息。
@@ -165,7 +165,7 @@ Dynamic MediaHTML5视频查看器预设是强大的视频播放器。您可以�
 
 对于桌面和移动设备自适应视频流播放，用于比特率切换的视频基于自适应视频集中的所有MP4视频。
 
-使用HLS或渐进式视频下载时出现视频播放。 在以前版本的Experience Manager（如6.0、6.1和6.2）中，视频通过HTTP进行流处理。
+使用HLS或渐进式视频下载发生视频播放。 在以前版本的Experience Manager（如6.0、6.1和6.2）中，视频通过HTTP进行流处理。
 
 但是，在Experience Manager6.3及更高版本中，视频现在通过HTTPS（即HLS）进行流处理，因为DM网关服务URL也始终使用HTTPS。 此默认行为不会对客户造成任何影响。 也就是说，除非浏览器不支持，否则视频流将始终通过HTTPS进行。 （请参阅下表）。 因此，
 
@@ -273,7 +273,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
 
 在对视频文件进行编码时，请尽可能使用最高质量的源视频文件。避免使用先前已编码的视频文件，因为这样的文件已经压缩，进一步编码会导致创建的视频质量不佳。
 
-* Dynamic Media主要支持长度为30分钟的简短视频。
+* Dynamic Media主要支持长度最长为30分钟且最小分辨率大于50 x 50的短格式视频。
 * 您可以上载每个最大15 GB的主源视频文件。
 
 下表描述了源视频文件在编码之前必须具有的推荐大小、宽高比和最小比特率：
