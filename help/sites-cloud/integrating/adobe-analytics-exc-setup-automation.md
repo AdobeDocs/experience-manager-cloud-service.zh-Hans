@@ -1,12 +1,12 @@
 ---
-title: 与 Adobe Analytics 集成
-description: '与 Adobe Analytics 集成 '
+title: 将Adobe Analytics与Experience Cloud设置自动化集成
+description: Experience Cloud设置自动化提供了一种简单且自动的方式，通过简单的UI向导界面将Experience Manager Sites与Experience Platform Launch和Adobe Analytics集成并设置仪器。 了解如何在您自己的网站中使用自动设置。
 feature: Administering
 role: Admin
-source-git-commit: 4bf5ee1218f775efdc7829b790360033ad756c9a
+source-git-commit: 75d8f2a14ea97216c48c3bf242aa6186d97d4490
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 2%
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
