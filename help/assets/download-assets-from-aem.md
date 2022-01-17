@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1194'
 ht-degree: 3%
 
 ---
@@ -33,16 +33,45 @@ ht-degree: 3%
 
 ## 使用下载资产 [!DNL Experience Manager] 界面 {#download-assets}
 
-异步下载服务为无缝下载大型资产提供了一个框架。 从用户界面实时下载较小的文件。 [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。 此功能可加快下载速度。 大文件是异步下载的，并且 [!DNL Experience Manager] 通过收件箱中的通知通知完成。 请参阅 [了解 [!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md).
+异步下载服务为无缝下载大型资产提供了一个框架。 从用户界面实时下载较小的文件。 [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。 此功能可加快下载速度。
 
-![下载通知](assets/download-notification.png)
+默认情况下，Experience Manager会在下载工作流完成后触发通知。 下载通知将显示在  [[!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-*图：通过下载通知 [!DNL Experience Manager] 收件箱。*
+![收件箱通知](assets/inbox-notification-for-large-downloads.png)
 
-在以下任一情况下，都会触发异步下载：
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-* 如果要下载的资产超过10个或超过100 MB，则。
-* 如果下载需要超过30秒才能准备。
+![Download notification](assets/download-notification.png)
+
+*Figure: Download notification via [!DNL Experience Manager] Inbox.*
+
+Asynchronous downloads are triggered in either of the following case:
+
+* If there are more than 10 assets or more than 100 MB to be downloaded.
+* If the download takes more than 30 seconds to prepare.
+-->
+
+### 为大型下载启用电子邮件通知 {#enable-emails-for-large-downloads}
+
+在以下任何情况下，都会触发异步下载：
+
+* 如果资产超过10个
+* 如果下载大小超过100 MB
+* 如果下载需要超过30秒才能准备
+
+虽然异步下载在后端运行，但用户可以继续在后端浏览并进一步Experience Manager。 下载过程完成后，需要一个现成的机制通知用户。 要实现此目标，管理员可以通过设置SMTP服务器来配置电子邮件服务。 请参阅 [配置邮件服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+配置电子邮件服务后，管理员和用户可以从Experience Manager界面启用电子邮件通知。
+
+要启用电子邮件通知，请执行以下操作：
+
+1. 登录到 [!DNL Experience Manager Assets].
+1. 单击右上角的用户图标，然后单击 **[!UICONTROL 我的首选项]**. 将打开“用户首选项”窗口。
+1. 选择 **[!UICONTROL 资产下载电子邮件通知]** 复选框，单击 **[!UICONTROL 接受]**.
+
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 要下载资产，请执行以下步骤：
 
@@ -50,8 +79,6 @@ ht-degree: 3%
 1. 导航到要下载的资产。 选择文件夹，或在文件夹中选择一个或多个资产。 在工具栏中，单击 **[!UICONTROL 下载]**.
 
    ![从下载资产时可用的选项 [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *图：下载对话框选项。*
 
 1. 在下载对话框中，选择所需的下载选项。
 
@@ -66,13 +93,23 @@ ht-degree: 3%
 
 1. 在对话框中，单击 **[!UICONTROL 下载]**.
 
+   如果为大型下载启用了电子邮件通知，则您的收件箱中会显示一封包含已存档zip文件夹下载URL的电子邮件。 单击电子邮件中的下载链接以下载zip文件夹。
+
+   ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
+
+   您还可以在 [!DNL Experience Manager] 收件箱。
+
+   ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## 下载使用链接共享共享的资产 {#link-share-download}
 
+<!--
 >[!NOTE]
 >
->此功能在Experience Manager预发行渠道中可用。
+>This functionality is available in the Experience Manager prerelease channel.
+-->
 
-使用链接共享资产是一种非常方便的方式，可让感兴趣的人不必先登录即可使用它 [!DNL Assets]. 要生成用于共享资产的URL，请使用 [链接共享功能](/help/assets/share-assets.md#sharelink).
+使用链接共享资产是一种非常方便的方式，可让感兴趣的人不必先登录即可使用它 [!DNL Assets]. 请参阅 [链接共享功能](/help/assets/share-assets.md#sharelink).
 
 当用户从共享链接下载资产时， [!DNL Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于非常大的下载，下载内容将分块为大小为100 GB的文件。
 

@@ -1,45 +1,58 @@
 ---
 title: 分发和共享资产、文件夹和收藏集
-description: 使用共享作为链接、下载和通过 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]等方法分发数字资产。
+description: 使用共享作为链接、下载和通过之类的方法分发数字资产 [!DNL Brand Portal], [!DNL desktop app]和 [!DNL Asset Link].
 contentOwner: AG
-feature: 资产管理、协作、资产分发
+feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '893'
 ht-degree: 2%
 
 ---
 
-# 共享和分发[!DNL Experience Manager]中管理的资产 {#share-assets-from-aem}
+# 共享和分发在 [!DNL Experience Manager] {#share-assets-from-aem}
 
-[!DNL Adobe Experience Manager Assets] 允许您与组织成员以及外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。使用以下方法将[!DNL Experience Manager Assets]中的资产共享为[!DNL Cloud Service]:
+[!DNL Adobe Experience Manager Assets] 允许您与组织成员以及外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法从共享资产 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
-* [共享为链接](#sharelink)。
-* [下载资](/help/assets/download-assets-from-aem.md) 产并单独共享。
-* 使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)共享。
-* 使用[[!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)共享。
-* 使用[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)共享。
+* [共享为链接](#sharelink).
+* [下载资产](/help/assets/download-assets-from-aem.md) 并单独共享。
+* 共享方式 [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* 共享方式 [[!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html).
+* 共享方式 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## 以链接方式共享资产 {#sharelink}
 
-要为要与用户共享的资产生成URL，请使用链接共享对话框。 具有管理员权限或在`/var/dam/share`位置具有读取权限的用户能够查看与其共享的链接。 通过链接共享资产是使外部各方无需首先登录[!DNL Assets]即可获得资源的一种便捷方式。
+通过链接共享资产是使外部各方无需首先登录即可获得资源的一种便捷方式 [!DNL Assets]. 具有管理员权限或具有读取权限的用户位于 `/var/dam/share` 位置可以查看与其共享的链接。
 
 ![链接共享对话框](assets/link-share-dialog.png)
 
 >[!NOTE]
 >
 >* 您需要对要作为链接共享的文件夹或资产具有编辑ACL权限。
->* 在与用户共享链接之前，[启用出站电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。 否则，会发生错误。
+>* 在与用户共享链接之前， [启用出站电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email). 否则，会发生错误。
 
 
-1. 在[!DNL Assets]用户界面中，选择要作为链接共享的资产。
-1. 在工具栏中，单击&#x200B;**[!UICONTROL 共享链接]**。 将在&#x200B;**[!UICONTROL 共享链接]**&#x200B;字段中自动创建资产链接。 复制此链接并与用户共享。 链接的默认过期时间为一天。
+1. 在 [!DNL Assets] 用户界面中，选择要作为链接共享的资产。
+1. 在工具栏中，单击 **[!UICONTROL 共享链接]**. 的 [!UICONTROL 链接共享] 对话框中，其中包含一个自动生成的资产链接，位于 **[!UICONTROL 共享链接]** 字段。
 
-   >[!NOTE]
-   >
-   >如果共享资产被移动到其他位置，则其链接会停止工作。 重新创建链接并与用户重新共享。
+   * 在电子邮件地址框中，键入要与其共享链接的用户的电子邮件ID。 您可以与多个用户共享该链接。 如果用户是您组织的成员，请从下拉列表中显示的建议中选择其电子邮件ID。 如果用户是外部用户，请键入完整的电子邮件ID并按 **[!UICONTROL 输入]**;电子邮件ID会添加到用户列表。
+
+   * 在 **[!UICONTROL 主题]** 框中，键入要共享的资产的主题。
+   * 在 **[!UICONTROL 消息]** 框中，根据需要键入消息。
+   * 在 **[!UICONTROL 过期]** 字段中，使用日期选取器指定链接的过期日期和时间。 默认情况下，过期日期会设置为自您共享链接之日起7天。
+   * 启用 **[!UICONTROL 允许下载原始文件]** 复选框以允许收件人下载原始演绎版。
+
+1. 单击&#x200B;**[!UICONTROL 共享]**。系统会显示一条消息，确认已与用户共享该链接。 用户会收到包含共享链接的电子邮件。
+
+<!--
+You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
+-->
+
+>[!NOTE]
+>
+>如果共享资产被移动到其他位置，则其链接会停止工作。 重新创建链接并与用户重新共享。
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -110,15 +123,15 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## 下载和共享资产 {#download-and-share-assets}
 
-用户可以下载所需的资产，并在[!DNL Experience Manager]以外共享这些资产。 有关更多信息，请参阅[如何搜索资产](/help/assets/search-assets.md)、[如何下载资产](/help/assets/download-assets-from-aem.md)和[如何下载收藏集](manage-collections.md#download-a-collection)
+用户可以下载所需的资产，并在 [!DNL Experience Manager]. 有关更多信息，请参阅 [如何搜索资产](/help/assets/search-assets.md), [如何下载资产](/help/assets/download-assets-from-aem.md)和 [如何下载收藏集](manage-collections.md#download-a-collection)
 
 ## 与创意专业人士共享资产 {#share-with-creatives}
 
 营销人员和业务线用户可以使用
 
-* **Experience Manager桌面应用程序**:该应用程序在Windows和Mac上运行。请参阅[桌面应用程序概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权的桌面用户如何轻松访问共享的资产，请参阅[浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资产并将其与作为Experience Manager用户的对应用户共享，例如，通过上传新图像。 请参阅[使用桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)上传资产。
+* **Experience Manager桌面应用程序**:该应用程序在Windows和Mac上工作。 请参阅 [桌面应用程序概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). 要了解任何授权桌面用户如何轻松访问共享资产，请参阅 [浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). 桌面用户可以创建资产并将其与作为Experience Manager用户的对应用户共享，例如，通过上传新图像。 请参阅 [使用桌面应用程序上传资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe资产链接**:创意专业人士可以直接从、和中搜索 [!DNL Adobe InDesign]和使 [!DNL Adobe Illustrator]用资 [!DNL Adobe Photoshop]产。
+* **Adobe资产链接**:创意专业人士可以直接从内部搜索和使用资产 [!DNL Adobe InDesign], [!DNL Adobe Illustrator]和 [!DNL Adobe Photoshop].
 
 ## 配置资产共享 {#configure-sharing}
 
@@ -128,11 +141,11 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-要为要与用户共享的资产生成URL，请使用链接共享对话框。 具有管理员权限或在`/var/dam/share`位置具有读取权限的用户能够查看与其共享的链接。 通过链接共享资产是使外部各方无需首先登录[!DNL Assets]即可获得资源的一种便捷方式。
+要为要与用户共享的资产生成URL，请使用链接共享对话框。 具有管理员权限或具有读取权限的用户位于 `/var/dam/share` 位置可以查看与其共享的链接。 通过链接共享资产是使外部各方无需首先登录即可获得资源的一种便捷方式 [!DNL Assets].
 
 >[!NOTE]
 >
->如果要将来自创作实例的链接共享到外部实体，请确保仅显示`GET`请求的以下URL。 阻止其他URL以确保创作实例的安全。
+>如果要将来自创作实例的链接共享到外部实体，请确保仅显示以下URL `GET` 请求。 阻止其他URL以确保创作实例的安全。
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -172,22 +185,22 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 允许桌面操作与桌面应用程序一起使用 {#desktop-actions}
 
-在浏览器的[!DNL Assets]用户界面中，您可以浏览资产位置或签出并打开资产，以在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参阅 [!DNL Assets] web界面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)中的[启用桌面操作。
+从 [!DNL Assets] 用户界面中，您可以浏览资产位置或签出，然后打开资产以在桌面应用程序中进行编辑。 这些选项称为桌面操作，要启用它，请参阅 [启用桌面操作 [!DNL Assets] web界面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![使用桌面应用程序时，允许桌面操作用作快捷方式](assets/enable_desktop_actions.png)
 
-### 使用[!DNL Adobe Asset Link]的配置 {#configure-asset-link}
+### 要使用的配置 [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe资产链接可简化内容创建过程中创意人员与营销人员之间的协作。 它将[!DNL Adobe Experience Manager Assets]与[!DNL Creative Cloud]桌面应用程序[!DNL Adobe InDesign]、[!DNL Adobe Photoshop]和[!DNL Adobe Illustrator]连接。 通过[!DNL Adobe Asset Link]面板，创意人员无需离开他们最熟悉的创意应用程序即可访问和修改存储在[!DNL Assets]中的内容。
+Adobe资产链接可简化内容创建过程中创意人员与营销人员之间的协作。 它连接 [!DNL Adobe Experience Manager Assets] with [!DNL Creative Cloud] 桌面应用程序 [!DNL Adobe InDesign], [!DNL Adobe Photoshop]和 [!DNL Adobe Illustrator]. 的 [!DNL Adobe Asset Link] 面板允许创意人员访问和修改 [!DNL Assets] 不离开他们最熟悉的创意应用程序。
 
-请参阅[如何配置 [!DNL Assets] 以将其与 [!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)一起使用。
+请参阅 [如何配置 [!DNL Assets] 使用 [!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## 最佳实践和疑难解答 {#bestpractices}
 
 * 名称中包含空格的资产文件夹或收藏集可能无法共享。
-* 如果用户无法下载共享资产，请与Experience Manager管理员确认下载限制[是什么。](#maxdatasize)
-* 要使用户预览使用链接共享共享的视频，该视频必须具有静态视频呈现，该视频呈现位于视频节点存储库中`/jcr:content/renditions`位置。 预览不取决于[!DNL Dynamic Media]演绎版的可用性。
-* 通过链接共享下载视频资产时，下载的存档中不包含[!DNL Dynamic Media]演绎版。
+* 如果用户无法下载共享的资产，请与Experience Manager管理员确认 [下载限制](#maxdatasize) 。
+* 要使用户预览使用链接共享共享的视频，该视频必须在 `/jcr:content/renditions` 在存储库中视频节点的位置。 预览的可用性不取决于 [!DNL Dynamic Media] 演绎版。
+* 通过链接共享下载视频资产时， [!DNL Dynamic Media] 下载的存档中不包含演绎版。
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
