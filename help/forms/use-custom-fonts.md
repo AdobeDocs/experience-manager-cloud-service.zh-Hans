@@ -1,9 +1,9 @@
 ---
 title: '使用自定义字体 '
 description: '使用自定义字体 '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **Cloud Service通信文档处于测试阶段**
 
-您可以使用Formsas a Cloud Service通信将XDP模板、基于XDP的PDF文档或Acrobat Forms(AcroForm)与XML数据结合使用来生成PDF文档。 您可以使用系统字体(Cloud Service中包含的字体)或自定义字体（组织批准的字体）来呈现生成的PDF文档。
-
-系统字体已在Cloud Service中可用。 您可以使用Cloud Service开发项目向Cloud Service环境添加自定义字体。
+您可以使用Formsas a Cloud Service通信将XDP模板、基于XDP的PDF文档或Acrobat表单(AcroForm)与XML数据结合使用以生成PDF文档。 您可以使用Cloud Service或自定义字体（组织批准的字体）中包含的字体来呈现生成的PDF文档。 您可以使用Cloud Service开发项目向Cloud Service环境添加自定义字体。
 
 ## PDF文档的行为
 
-您可以 [嵌入字体](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) PDF文档或仅指定字体名称。 嵌入字体后，PDF文档在所有平台上都会显示（外观）相同。 它使用嵌入字体来确保外观和感觉一致。 当字体未嵌入时，PDF呈现客户端在客户端计算机上搜索该字体。 如果客户机上提供字体，则PDF会使用指定的字体，否则PDF会以回退字体呈现。
+您可以 [嵌入字体](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) 到PDF文档。 嵌入字体后，PDF文档在所有平台上都会显示（外观）相同。 它使用嵌入字体来确保外观和感觉一致。 未嵌入字体时，字体渲染取决于PDF查看器客户端的渲染设置。 如果客户机上提供字体，则PDF会使用指定的字体，否则PDF会以回退字体呈现。
 
 ## 将自定义字体添加到Formsas a Cloud Service环境
 
