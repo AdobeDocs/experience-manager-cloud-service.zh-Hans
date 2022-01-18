@@ -1,13 +1,13 @@
 ---
 title: 下载资产
 description: 从下载资产 [!DNL Adobe Experience Manager Assets] 以及启用或禁用下载功能。
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1196'
 ht-degree: 3%
 
 ---
@@ -56,11 +56,11 @@ Asynchronous downloads are triggered in either of the following case:
 
 在以下任何情况下，都会触发异步下载：
 
-* 如果资产超过10个
+* 如果资产超过十个
 * 如果下载大小超过100 MB
 * 如果下载需要超过30秒才能准备
 
-虽然异步下载在后端运行，但用户可以继续在后端浏览并进一步Experience Manager。 下载过程完成后，需要一个现成的机制通知用户。 要实现此目标，管理员可以通过设置SMTP服务器来配置电子邮件服务。 请参阅 [配置邮件服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+当异步下载在后端运行时，用户可以继续浏览并在Experience Manager中进一步工作。 下载过程完成后，需要一个现成的机制通知用户。 要实现此目标，管理员可以通过设置SMTP服务器来配置电子邮件服务。 请参阅 [配置邮件服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 配置电子邮件服务后，管理员和用户可以从Experience Manager界面启用电子邮件通知。
 

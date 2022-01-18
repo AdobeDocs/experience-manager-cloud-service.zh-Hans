@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 2%
 
    * 在 **[!UICONTROL 主题]** 框中，键入要共享的资产的主题。
    * 在 **[!UICONTROL 消息]** 框中，根据需要键入消息。
-   * 在 **[!UICONTROL 过期]** 字段中，使用日期选取器指定链接的过期日期和时间。 默认情况下，过期日期会设置为自您共享链接之日起7天。
+   * 在 **[!UICONTROL 过期]** 字段中，使用日期选取器指定链接的过期日期和时间。 链接的默认过期时间为一天。
    * 启用 **[!UICONTROL 允许下载原始文件]** 复选框以允许收件人下载原始演绎版。
 
 1. 单击&#x200B;**[!UICONTROL 共享]**。系统会显示一条消息，确认已与用户共享该链接。 用户会收到包含共享链接的电子邮件。
