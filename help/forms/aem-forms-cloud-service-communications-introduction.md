@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1869'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,12 @@ ht-degree: 1%
 
 * 简化的按需和批量文档生成功能
 
-* 提供HTTP API，以便与现有系统更轻松地集成
+* HTTP API，可更轻松地与现有系统集成。 包括单独的API，用于按需（低延迟）和批处理操作（高吞吐量操作）。 它使文档生成成为一项高效的任务。
 
 * 安全访问数据。 通信API仅连接到客户指定的数据存储库并从中访问数据，不生成数据的本地副本，从而使通信高度安全。
 
-* 用于低延迟和高吞吐量操作的单独API使文档生成成为一项高效的任务。
-
 ![信用卡对帐单示例](assets/statement.png)
+可以使用通信API创建信用卡对帐单示例。 报表使用相同的模板，但根据每个客户对信用卡的使用情况，将其数据分开。
 
 ## 工作原理如何？
 
@@ -143,16 +142,15 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 表单数据 {#form-data}
 
-通信API接受通常在 [Designer](use-forms-designer.md) 和XML表单数据作为输入。 要使用数据填充文档，每个要填充的表单字段的XML表单数据中必须存在XML元素。 XML元素名称必须与字段名称匹配。 如果XML元素与表单字段不对应，或XML元素名称与字段名称不匹配，则忽略该元素。 不必与XML元素的显示顺序匹配。 重要因素是XML元素是使用相应值指定的。
+通信API接受通常在 [Designer](use-forms-designer.md) 和XML表单数据作为输入。 要使用数据填充文档，每个要填充的表单字段的XML表单数据中必须存在XML元素。 XML元素名称必须与字段名称匹配。 如果XML元素与表单字段不对应，或者如果XML元素名称与字段名称不匹配，则忽略XML元素。 不必与XML元素的显示顺序匹配。 重要因素是XML元素是使用相应值指定的。
 
 请考虑以下贷款申请表示例：
 
 ![贷款申请表](assets/loanFormData.png)
 
-要将数据合并到此表单设计中，请创建与表单对应的XML数据源。 以下XML表示与示例抵押申请表单对应的XML数据源。
+要将数据合并到此表单设计中，请创建与表单层次结构、字段命名和数据类型对应的XML数据源。 以下XML表示与示例抵押申请表单对应的XML数据源。
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### 可打印区域 {#printable-areas}
 
-默认的0.25英寸不可打印边距对于标签打印机不精确，因而会因打印机和打印机以及标签大小和标签大小而异。 建议您保持0.25英寸的边距或减小它。 但是，建议不要增加不可打印的边距。 否则，可打印区域中的信息无法正确打印。
+默认的0.25英寸不可打印边距对于标签打印机不精确，因而会因打印机和打印机的不同而异，从标签大小到标签大小，但建议保留0.25英寸边距或将其减小。 但是，建议不要增加不可打印的边距。 否则，可打印区域中的信息无法正确打印。
 
 始终确保为打印机使用正确的XDC文件。 例如，避免为300 dpi打印机选择XDC文件，并将文档发送到200 dpi打印机。
 
-### 脚本 {#scripts}
+### XFA表单的脚本(仅限XDP/PDF) {#scripts}
 
 与通信API一起使用的表单设计可以包含在服务器上运行的脚本。 确保表单设计不包含在客户端上运行的脚本。 有关创建表单设计脚本的信息，请参阅 [Designer帮助](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Type-1和OpenType®字体未嵌入到PCL输出中。 使用Type-1和Adobe Analyt
 * dpl600.xdc
 
 您可以使用提供的XDC文件来生成打印文档或根据您的要求对其进行修改。
-&lt;!-*无需修改这些文件即可创建文档。 但是，您可以修改它们以满足您的业务需求。 —>
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 这些文件是支持特定打印机功能（如驻留字体、纸盘和订书机）的引用XDC文件。 这些参考旨在帮助您了解如何使用设备配置文件来设置您自己的打印机。 参考也是同一产品线中类似打印机的起点。
 
