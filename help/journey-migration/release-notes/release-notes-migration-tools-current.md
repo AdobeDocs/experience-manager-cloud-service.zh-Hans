@@ -1,47 +1,33 @@
 ---
-title: AEMas a Cloud Service版本2021.12.0中迁移工具的发行说明
-description: AEMas a Cloud Service版本2021.12.0中迁移工具的发行说明
+title: AEMas a Cloud Service版本2022.1.0中迁移工具的发行说明
+description: AEMas a Cloud Service版本2022.1.0中迁移工具的发行说明
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
+source-wordcount: '157'
+ht-degree: 10%
 
 ---
 
 
-# AEMas a Cloud Service版本2021.12.0中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service版本2022.1.0中迁移工具的发行说明 {#release-notes}
 
-本页概述了AEM 2021.12.0中迁移工具的发行说明。
+本页概述了AEM 2022.1.0as a Cloud Service中迁移工具的发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
-
-## Best Practices Analyzer {#bpa-release}
-
-### 发布日期 {#release-date-bpa}
-
-Best Practices Analyzer v2.1.22的发布日期是2021年12月1日。
-
-### 新增功能 {#what-is-new-bpa}
-
-* 能够检测并报告所使用的ACS Commons版本。
-* 能够检测并报告群组中的用户和子群组的数量。
-* 能够检测并报告MongoDB中超过16MB的节点属性值。
-
-### 错误修复 {#bug-fixes-bpa}
-
-* 对基础组件的检测进行了细化，以减少漏报。
-* 对于AEM Forms客户，与 `EMAIL_PDF_SUBMIT_ACTION` 已修复在AEMas a Cloud Service上不可用的问题。
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 
 ## 内容传输工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具v1.7.10的发布日期是2021年12月8日。
+内容传输工具v1.7.18的发布日期是2022年1月18日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 在内容传输工具的摄取阶段添加切换以允许用户禁用 [预拷贝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 在摄取期间。 为了获得最佳摄取速度，对于较小的迁移集，或者自上次摄取后仅添加了几个Blob，应禁用摄取期间的预复制。
-* 更新了用户映射，以使用经过改进的用户管理API，该API可以同时吸引2000个用户，从而显着提升性能。
+* 切换添加到内容传输工具中的提取阶段，以允许用户禁用 [预拷贝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 提取期间。 为了获得最佳提取速度，对于较小的迁移集，或者自上次提取后仅添加了几个Blob，应在提取期间禁用预复制。
+
+### 错误修复 {#bug-fixes-ctt}
+
+* 更新了默认配置，以减少提取期间的执行超时。
