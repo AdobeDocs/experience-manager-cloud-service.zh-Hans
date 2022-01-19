@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service版本2022.1.0中迁移工具的发行说明
 description: AEMas a Cloud Service版本2022.1.0中迁移工具的发行说明
 feature: Release Information
-source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
+source-git-commit: 0bc2dedd9bfbf138fddf9fe112ba0d66444fcb41
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 10%
+source-wordcount: '134'
+ht-degree: 6%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 10%
 # AEMas a Cloud Service版本2022.1.0中迁移工具的发行说明 {#release-notes}
 
 本页概述了AEM 2022.1.0as a Cloud Service中迁移工具的发行说明。
-
->[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
-
 
 ## 内容传输工具 {#ctt-release}
 
