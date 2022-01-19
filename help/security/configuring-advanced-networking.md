@@ -1,89 +1,89 @@
 ---
-title: 为AEMas a Cloud Service配置高级网络
-description: 了解如何为AEMas a Cloud Service配置高级网络功能（如VPN）或灵活或专用的出口IP地址
+title: 为 AEM as a Cloud Service 配置高级联网功能
+description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2982'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# 为AEMas a Cloud Service配置高级网络 {#configuring-advanced-networking}
+# 为 AEM as a Cloud Service 配置高级联网功能 {#configuring-advanced-networking}
 
-本文旨在介绍AEMas a Cloud Service中的不同高级网络功能，包括VPN的自助配置、非标准端口和专用出口IP地址。
+本文意在介绍 AEM as a Cloud Service 中的各种高级联网功能，包括 VPN 的自助预配、非标准端口以及专用出口 IP 地址。
 
 >[!INFO]
 >
->您还可以找到一系列文章，旨在指导您逐步了解此处的各个高级网络选项 [位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+>您还可以在此[位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-hans)找到一系列旨在引导您了解各个高级联网选项的文章。
 
 ## 概述 {#overview}
 
-AEM as a Cloud Service提供了多种类型的高级网络功能，这些功能可由使用Cloud Manager API的客户进行配置。 这些 Cookie 包括：
+AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cloud Manager API 配置这些功能。这些功能包括：
 
-* [灵活的端口出口](#flexible-port-egress)  — 配置AEMas a Cloud Service以允许非标准端口外的出站流量
-* [专用出口IP地址](#dedicated-egress-IP-address)  — 将AEMas a Cloud Service的流量配置为源自唯一IP
-* [虚拟专用网(VPN)](#vpn)  — 为具有VPN技术的客户确保客户基础架构与AEMas a Cloud Service之间的流量
+* [灵活端口出口](#flexible-port-egress) - 将 AEM as a Cloud Service 配置为允许从非标准端口传出流量
+* [专用出口 IP 地址](#dedicated-egress-IP-address) - 配置从唯一 IP 传出 AEM as a Cloud Service 的流量
+* [虚拟专用网络 (VPN)](#vpn) - 面向采用 VPN 技术的客户，保护客户的基础设施与 AEM as a Cloud Service 之间的流量
 
-本文详细介绍了其中每个选项，包括如何配置它们。 作为一般配置策略， `/networkInfrastructures` 在程序级别调用API端点以声明所需类型的高级网络，然后调用 `/advancedNetworking` 每个环境的端点，以启用基础结构并配置特定于环境的参数。 请引用Cloud Manager API文档中每个正式语法的相应端点以及示例请求和响应。
+此文章详细介绍了上述各个选项，包括如何对它们进行配置。作为常规配置策略，在程序级别调用 `/networkInfrastructures` API 端点，以声明所需的高级联网类型，接着调用每个环境的 `/advancedNetworking` 端点，以启用基础设施并配置特定于环境的参数。要了解每个正式语法以及请求和响应示例，请参考 Cloud Manager API 文档中的相应端点。
 
-计划可以配置单个高级网络变体。 在决定灵活端口出口和专用出口IP地址时，如果不需要特定的IP地址，建议选择灵活的端口出口，因为Adobe可以优化灵活端口出口流量的性能。
+一个程序可以预配一个高级联网变体。在灵活端口出口和专用出口 IP 地址之间进行选择时，如果无需特定 IP 地址，则建议您选择灵活端口出口，因为 Adobe 可以优化灵活端口出口流量的性能。
 
 >[!INFO]
 >
->沙盒项目不提供高级网络。
->此外，环境必须升级到AEM版本5958或更高版本。
+>高级联网对沙盒程序不可用。
+>此外，环境必须升级到 AEM 版本 5958 或更高版本。
 
 >[!NOTE]
 >
->已使用旧版专用出口技术配置、需要配置其中一个选项的客户不应这样做，否则站点连接可能会受到影响。 请联系Adobe支持以寻求帮助。
+>对于已经预配了旧版专用出口技术的客户，在需要配置这些选项之一时，不应这样操作，否则网站连接可能会受到影响。如需帮助，请与 Adobe 支持部门联系。
 
-## 灵活的端口出口 {#flexible-port-egress}
+## 灵活端口出口 {#flexible-port-egress}
 
-此高级网络功能允许您配置AEMas a Cloud Service，以通过默认打开的HTTP（端口80）和HTTPS（端口443）以外的端口输出流量。
+此高级联网功能允许您对 AEM as a Cloud Service 进行配置，通过默认打开的 HTTP（端口 80）和 HTTPS（端口 443）以外的端口来传入流量。
 
 ### 注意事项 {#flexible-port-egress-considerations}
 
-如果您不需要VPN并且不需要专用出口IP地址，则建议选择灵活的端口出口，因为不依赖专用出口的流量可以获得更高的吞吐量。
+如果流量不依赖于专用出口就可以实现较高的吞吐量，因而您不需要 VPN 和专用出口 IP 地址，那么推荐选择灵活端口出口。
 
 ### 配置 {#configuring-flexible-port-egress-provision}
 
-每个项目一次，POST `/program/<programId>/networkInfrastructures` 会调用端点，只需传递 `flexiblePortEgress` 对于 `kind` 参数和区域。 端点将使用 `network_id`，以及其他信息（包括状态）。 API文档中应引用完整的参数和确切语法。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。要查看完整的参数集和确切的语法，可参阅 API 文档。
 
-调用后，配置网络基础架构通常需要大约15分钟。 对Cloud Manager的调用 [网络基础架构GET端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 将显示状态为“ready”。
+在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础设施 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 的调用将显示状态“就绪”。
 
-如果程序范围的灵活端口出口配置已准备就绪，则 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 必须按环境调用端点，以在环境级别启用网络，并可选地声明任何端口转发规则。 为了提供灵活性，可以按环境配置参数。
+如果整个程序的灵活端口出口配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网，并可以选择声明任何端口转发规则。可以根据各个环境来配置参数以提供灵活性。
 
-应通过指定目标主机集（名称或IP，以及端口）来为80/443以外的任何端口声明端口转发规则。 对于每个目标主机，客户必须将目标端口映射到从30000到30999的端口。
+对于 80/443 之外的任何端口，均应通过指定目标主机集（名称或 IP 以及端口）来声明端口转发规则。对于每个目标主机，必须将指向的目标端口映射到 30000 到 30999 之间的端口。
 
-API应在几秒后做出响应，指示更新状态，大约10分钟后，端点的 `GET` 方法应指示已启用高级联网。
+API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后，端点的 `GET` 方法应指示高级联网已启用。
 
 ### 更新 {#updating-flexible-port-egress-provision}
 
-可以通过调用 `PUT /api/program/<program_id>/network/<network_id>` 和将在几分钟内生效。
+程序级别的配置可以通过调用 `PUT /api/program/<program_id>/network/<network_id>` 端点来更新，并将在几分钟内生效。
 
 >[!NOTE]
 >
-> “kind”参数(`flexiblePortEgress`, `dedicatedEgressIP` 或 `VPN`)。 请联系客户支持以获取帮助，介绍已创建的内容和更改的原因。
+> “kind”参数（`flexiblePortEgress`、`dedicatedEgressIP` 或 `VPN`）无法修改。如需帮助，请联系客户支持，说明已经创建的内容以及进行更改的原因。
 
-通过再次调用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端点，确保包含完整的配置参数集，而不是子集。
+每个环境的端口转发规则同样可以通过调用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端点进行更新，确保包括完整的配置参数集而不是其子集。
 
 ### 删除或禁用灵活端口出口 {#deleting-disabling-flexible-port-egress-provision}
 
-为了 **删除** 网络基础架构，提交客户支持票证，说明已创建的内容以及删除原因。
+要&#x200B;**删除**&#x200B;网络基础设施，请提交客户支持工单，说明已经创建的内容以及需要删除内容的原因。
 
-为了 **禁用** 从特定环境发出灵活的端口出口，调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+要&#x200B;**禁用**&#x200B;特定环境的灵活端口出口，请调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
-有关更多信息，请参阅 [Cloud Manager API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+有关详细信息，请参阅 [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
-对于流向80或443以外端口的http或https流量，应使用以下主机和端口环境变量配置代理：
+对于流向 80 或 443 端口以外端口的 http 或 https 流量，应使用以下主机和端口环境变量来配置代理。
 
-* 对于HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (默认为 `proxy.tunnel:3128` 在AEM版本&lt; 6094中)
-* 对于HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (默认为 `proxy.tunnel:3128` 在AEM版本&lt; 6094中)
+* 对于 HTTP：`AEM_PROXY_HOST`/`AEM_HTTP_PROXY_PORT `（在 AEM 版本 6094 之前，默认为 `proxy.tunnel:3128`）
+* 对于 HTTPS：`AEM_PROXY_HOST`/`AEM_HTTPS_PROXY_PORT `（在 AEM 版本 6094 之前，默认为 `proxy.tunnel:3128`）
 
-例如，以下是向发送请求的示例代码 `www.example.com:8443`:
+例如，以下是发送请求到 `www.example.com:8443` 的示例代码：
 
 ```java
 String url = "www.example.com:8443"
@@ -97,9 +97,9 @@ HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
 HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
-如果使用非标准Java网络库，请使用上述属性为所有流量配置代理。
+如果使用非标准 Java 联网库，请使用以上属性为所有流量配置代理。
 
-通过 `portForwards` 参数应引用名为 `AEM_PROXY_HOST`，以及映射的端口。 例如：
+如果非 http/https 流量流经 `portForwards` 参数中声明的端口，应该引用名为 `AEM_PROXY_HOST` 的属性以及映射的端口。例如：
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -119,39 +119,39 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </thead>
 <tbody>
   <tr>
-    <td><b>Http或https协议</b></td>
-    <td>标准http/s流量</td>
-    <td>80或443</td>
+    <td><b>Http 或 https 协议</b></td>
+    <td>标准 http/https 流量</td>
+    <td>80 或 443</td>
     <td>允许</td>
     <td></td>
   </tr> 
   <tr>
     <td></td>
-    <td>使用以下环境变量和代理端口号配置的通过http代理的非标准流量（在80或443以外的其他端口上）。 请勿在Cloud Manager API调用的portForwards参数中声明目标端口：<br><ul>
-     <li>AEM_PROXY_HOST(在AEM版本&lt; 6094中默认为“proxy.tunnel”)</li>
-     <li>AEM_HTTPS_PROXY_PORT(在AEM版本&lt; 6094中默认为端口3128)</li>
+    <td>非标准流量（在 80 或 443 以外的端口上），这些流量流经使用以下环境变量和代理端口号配置的 http 代理。不要在 Cloud Manager API 调用的 portForwards 参数中声明目标端口：<br><ul>
+     <li>AEM_PROXY_HOST（在 AEM 版本 6094 之前，默认为“proxy.tunnel”）</li>
+     <li>AEM_HTTPS_PROXY_PORT（在 AEM 版本 6094 之前，默认为端口 3128）</li>
     </ul>
-    <td>80或443以外的端口</td>
+    <td>80 或 443 以外的端口</td>
     <td>允许</td>
     <td>example.com:8443</td>
   </tr>
   <tr>
     <td></td>
-    <td>非标准流量（在端口80或443以外的其他端口上）不使用http代理</td>
-    <td>80或443以外的端口</td>
+    <td>不使用 http 代理的非标准流量（位于端口 80 或 443 之外的其他端口）</td>
+    <td>80 或 443 以外的端口</td>
     <td>已阻止</td>
     <td></td>
   </tr>
   <tr>
-    <td><b>非http或非https</b></td>
-    <td>客户端连接到 <code>AEM_PROXY_HOST</code> 使用 <code>portOrig</code> 在 <code>portForwards</code> API参数。</td>
+    <td><b>非 http 或非 https</b></td>
+    <td>客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量。</td>
     <td>任意</td>
     <td>允许</td>
     <td><code>mysql.example.com:3306</code></td>
   </tr>
   <tr>
     <td></td>
-    <td>其他所有内容</td>
+    <td>其他所有条件</td>
     <td>任意</td>
     <td>已阻止</td>
     <td><code>db.example.com:5555</code></td>
@@ -159,9 +159,9 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-**Apache/Dispatcher配置**
+**Apache/Dispatcher 配置**
 
-AEM Cloud Service Apache/Dispatcher层 `mod_proxy` 可以使用上述属性配置指令。
+AEM Cloud Service Apache/Dispatcher 层的 `mod_proxy` 指令可以使用上述属性进行配置。
 
 ```
 ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
@@ -177,42 +177,42 @@ ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
 
-## 专用出口IP地址 {#dedicated-egress-IP-address}
+## 专用出口 IP 地址 {#dedicated-egress-IP-address}
 
 >[!NOTE]
 >
->如果您在2021年9月版本(10/6/21)之前已使用专用出口IP进行配置，请参阅 [旧版专用出口地址客户](#legacy-dedicated-egress-address-customers).
+>如果您已在 2021 年 9 月发布 (10/6/21) 之前预配了专用出口 IP，请参阅[旧版专用出口地址客户](#legacy-dedicated-egress-address-customers)。
 
-### 优点 {#benefits}
+### 好处 {#benefits}
 
-当与SaaS供应商（如CRM供应商）集成或AEMas a Cloud Service之外提供IP地址的其他集成时，此专用IP地址可允许列表以增强安全性。 通过向添加专用IP地允许列表址，它可确保仅允许来自客户AEM Cloud Service的流量流入外部服务。 除了允许的来自任何其他IP的流量之外，
+在与 SaaS 供应商（例如 CRM 供应商）集成时，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成，此专用 IP 地址可以增强安全性。通过将专用 IP 地址添加到允许列表，可以确保只有来自客户的 AEM Cloud Service 的流量允许流向外部服务。这是在允许的其他所有 IP 之外的流量。
 
-如果未启用专用IP地址功能，则来自AEMas a Cloud Service的流量将通过一组与其他客户共享的IP来流动。
+未启用专用 IP 地址功能时，传出 AEM as a Cloud Service 的流量会流经与其他客户共享的一组 IP。
 
 ### 配置 {#configuring-dedicated-egress-provision}
 
 >[!INFO]
 >
->无法从专用出口IP地址获取Splunk转发功能。
+>无法对专用出口 IP 地址使用 Splunk 转发功能。
 
-配置专用出口IP地址与 [灵活的端口出口](#configuring-flexible-port-egress-provision).
+专用出口 IP 地址的配置方法与[灵活端口出口](#configuring-flexible-port-egress-provision)相同。
 
-主要区别在于，流量将始终从专用的唯一IP中流出。 要查找该IP，请使用DNS解析程序来识别与 `p{PROGRAM_ID}.external.adobeaemcloud.com`. IP地址不会发生更改，但如果将来需要更改，将提供高级通知。
+主要差别在于，该流量始终从专用的唯一 IP 地址传出。要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。该 IP 地址不应改变，但如果未来需要改变，则会提供高级通知。
 
-除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，专用出口IP地址支持 `nonProxyHosts` 参数。 这允许您声明一组应通过共享IP地址范围而不是专用IP路由的主机，由于通过共享IP的流量分配可能会进一步优化，因此这些主机可能非常有用。 的 `nonProxyHost` URL可能遵循 `example.com` 或 `*.example.com`，其中仅在域开头支持通配符。
+除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点中的灵活端口出口支持的路由规则之外，专用出口 IP 地址还支持 `nonProxyHosts` 参数。这使得您可以声明一组主机，并且这组主机应通过共享 IP 地址范围而不是专用 IP 进行路由，由于通过共享 IP 传出的流量可能会进一步进行优化，此功能可能会很有用。`nonProxyHost` URL 可能会遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
 
-在决定灵活端口出口和专用出口IP地址之间时，如果不需要特定的IP地址，则客户应选择灵活的端口出口，因为Adobe可以优化灵活端口出口流量的性能。
+在灵活端口出口和专用出口 IP 地址之间进行选择时，如果无需特定 IP 地址，客户应选择灵活端口出口，因为 Adobe 可以优化灵活端口出口流量的性能。
 
 ### 流量路由 {#dedcated-egress-ip-traffic-routing}
 
-通过端口80或443到达目标的HTTP或HTTPS流量将通过预配置的代理（假定已使用标准Java网络库）。 对于通过其他端口的http或https流量，应使用以下属性配置代理。
+通过端口 80 或 443 传输到目标的 http 或 https 流量将流过预先配置的代理（假定使用标准 Java 联网库）。对于流经其他端口的 http 或 https 流量，应使用以下属性来配置代理。
 
 ```
 AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
 AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
 ```
 
-例如，以下是向发送请求的示例代码 `www.example.com:8443`:
+例如，以下是发送请求到 `www.example.com:8443` 的示例代码：
 
 ```java
 String url = "www.example.com:8443"
@@ -227,9 +227,9 @@ HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
 HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
-如果使用非标准Java网络库，请使用上述属性为所有流量配置代理。
+如果使用非标准 Java 联网库，请使用以上属性为所有流量配置代理。
 
-通过 `portForwards` 参数应引用名为 `AEM_PROXY_HOST`，以及映射的端口。 例如：
+如果非 http/https 流量流经 `portForwards` 参数中声明的端口，应该引用名为 `AEM_PROXY_HOST` 的属性以及映射的端口。例如：
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -247,57 +247,57 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </thead>
 <tbody>
   <tr>
-    <td><b>Http或https协议</b></td>
-    <td>Azure或Adobe服务的流量</td>
+    <td><b>Http 或 https 协议</b></td>
+    <td>流向 Azure 或 Adobe 服务的流量</td>
     <td>任意</td>
-    <td>通过共享群集IP（而非专用IP）</td>
+    <td>通过共享集群 IP（而非专用 IP）</td>
     <td>adobe.io<br>api.windows.net</td>
   </tr>
   <tr>
     <td></td>
-    <td>与 <code>nonProxyHosts</code> 参数</td>
-    <td>80或443</td>
-    <td>通过共享群集IP</td>
+    <td>主机匹配 <code>nonProxyHosts</code> 参数</td>
+    <td>80 或 443</td>
+    <td>通过共享集群 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>与 <code>nonProxyHosts</code> 参数</td>
-    <td>80或443以外的端口</td>
+    <td>主机匹配 <code>nonProxyHosts</code> 参数</td>
+    <td>80 或 443 以外的端口</td>
     <td>已阻止</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>通过http代理配置，默认情况下使用标准Java HTTP客户端库为http/s流量配置</td>
+    <td>通过 http 代理配置，默认情况下使用标准 Java HTTP 客户端库为 http/https 流量进行配置。</td>
     <td>任意</td>
-    <td>通过专用出口IP</td>
+    <td>通过专用出口 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>忽略http代理配置（例如，如果从标准Java HTTP客户端库中显式删除，或者如果使用忽略标准代理配置的Java库）</td>
-    <td>80或443</td>
-    <td>通过共享群集IP</td>
+    <td>忽略 http 代理配置（例如，如果明确从标准 Java HTTP 客户端库中删除，或者如果使用的 Java 库忽略标准代理配置）</td>
+    <td>80 或 443</td>
+    <td>通过共享集群 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>忽略http代理配置（例如，如果从标准Java HTTP客户端库中显式删除，或者如果使用忽略标准代理配置的Java库）</td>
-    <td>80或443以外的端口</td>
+    <td>忽略 http 代理配置（例如，如果明确从标准 Java HTTP 客户端库中删除，或者如果使用的 Java 库忽略标准代理配置）</td>
+    <td>80 或 443 以外的端口</td>
     <td>已阻止</td>
     <td></td>
   </tr>
   <tr>
-    <td><b>非http或非https</b></td>
-    <td>客户端连接到 <code>AEM_PROXY_HOST</code> 使用 <code>portOrig</code> 在 <code>portForwards</code> API参数</td>
+    <td><b>非 http 或非 https</b></td>
+    <td>客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量</td>
     <td>任意</td>
-    <td>通过专用出口IP</td>
+    <td>通过专用出口 IP</td>
     <td><code>mysql.example.com:3306</code></td>
   </tr>
   <tr>
     <td></td>
-    <td>任何其他内容</td>
+    <td>其他所有条件</td>
     <td></td>
     <td>已阻止</td>
     <td></td>
@@ -307,13 +307,13 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ## 旧版专用出口地址客户 {#legacy-dedicated-egress-address-customers}
 
-如果您在2021.09.30之前已使用专用出口IP进行配置，则您的专用出口IP功能将按如下所述工作。
+如果您已在 2021 年 9 月 30 日之前预配了专用出口 IP，您的专用出口 IP 功能会按如下所述工作。
 
-### 功能使用 {#feature-usage}
+### 功能用法 {#feature-usage}
 
-该功能与导致出站流量的Java代码或库兼容，前提是它们使用标准Java系统属性进行代理配置。 实际上，这应该包括大多数常用的库。
+该功能与产生传出流量的 Java 代码或库兼容，前提是它们的代理配置使用了标准 Java 系统属性。实际上，这应该包括了大多数常用库。
 
-以下是代码示例：
+下面是代码示例：
 
 ```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -329,11 +329,11 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-某些库需要显式配置才能将标准Java系统属性用于代理配置。
+一些库需要明确配置，以便为代理配置使用标准 Java 系统属性。
 
-使用Apache HttpClient的示例，需要显式调用
+使用 Apache HttpClient 的示例，其中需要明确调用 
 [`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 或使用
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem())：
 
 ```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -349,56 +349,56 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-同一专用IP适用于其Adobe组织中的所有客户计划，也适用于其每个计划中的所有环境。 它适用于创作和发布服务。
+相同的专用 IP 应用到客户在其 Adobe 组织中的所有程序，并用于其各个程序的所有环境。它适用于创作和发布服务。
 
-仅支持HTTP和HTTPS端口。 这包括加密后的HTTP/1.1和HTTP/2。
+只支持 HTTP 和 HTTPS 端口。这包括 HTTP/1.1 以及加密的 HTTP/2。
 
 ### 调试注意事项 {#debugging-considerations}
 
-要验证流量是否确实在预期的专用IP地址上传出，请检查目标服务中的日志（如果可用）。 否则，调用调试服务(例如 [https://ifconfig.me/IP](https://ifconfig.me/IP)，将返回调用的IP地址。
+为了验证该流量是否确实在预期的专用 IP 地址上传出，请查看目标服务中的日志（如果可用）。否则，调用 [https://ifconfig.me/IP](https://ifconfig.me/IP) 等调试服务可能会有帮助，调试服务会返回调用 IP 地址。
 
-## 虚拟专用网(VPN) {#vpn}
+## 虚拟专用网络 (VPN) {#vpn}
 
-VPN允许从创作、发布或预览连接到内部部署基础架构或数据中心。 例如，用于访问数据库的方式。
+利用 VPN 可从创作、发布或预览服务连接到内部部署基础设施或数据中心。例如，用于访问数据库。
 
-它还允许连接到支持VPN的SaaS供应商（如CRM供应商），或从企业网络连接到AEMas a Cloud Service创作、预览或发布。
+它还允许连接到 SaaS 供应商（例如支持 VPN 的 CRM 供应商），或者允许从公司网络连接到 AEM as a Cloud Service 的创作、预览或发布服务。
 
-大多数采用IPSec技术的VPN设备都受支持。 请参阅 [本页](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)，基于 **基于路由的配置说明** 列。 按照表中所述配置设备。
+支持大部分采用 IPSec 技术的 VPN 设备。请根据 **RouteBased 配置说明**&#x200B;列的信息，查阅[此页面](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)中的设备列表。按表中所述配置设备。
 
-### 一般注意事项 {#general-vpn-considerations}
+### 常规注意事项 {#general-vpn-considerations}
 
-* 仅支持单个VPN连接
-* 无法通过VPN连接实现Splunk转发功能。
+* 仅限于支持单个 VPN 连接
+* 无法在 VPN 连接上使用 Splunk 转发功能。
 
-### 作品 {#vpn-creation}
+### 创建 {#vpn-creation}
 
-每个项目一次，POST `/program/<programId>/networkInfrastructures` 将调用端点，从而传递配置信息的有效负载，包括：“vpn”的值 `kind` 参数、区域、地址空间（CIDR列表 — 请注意，以后无法修改）、 DNS解析器（用于解析客户网络中的名称）和VPN连接信息（如网关配置、共享VPN密钥和IP安全策略）。 端点将使用 `network_id`，以及其他信息（包括状态）。 在 [API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，传入配置信息的负载，包括：`kind` 参数的“VPN”值、区域、地址空间（CIDR 列表，请注意此项以后不可修改）、DNS 解析器（用于解析客户网络中的名称）以及 VPN 连接信息（例如网关配置、共享 VPN 密钥以及 IP 安全策略）。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。要查看完整的参数集和确切的语法，可参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)。
 
-调用后，配置网络基础架构通常需要45到60分钟。 可以调用API的GET方法以返回当前状态，该状态最终将从 `creating` to `ready`. 请查阅API文档，了解所有状态。
+在调用后，通常需要 45 到 60 分钟来预配联网基础设施。可以调用 API 的 GET 方法以返回当前状态，这最终会从 `creating` 翻转到 `ready`。请参考 API 文档来了解所有状态。
 
-如果程序范围的VPN配置已准备就绪，则 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 必须按环境调用端点，以在环境级别启用网络并声明任何端口转发规则。 为了提供灵活性，可以按环境配置参数。
+如果整个程序的 VPN 配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网并声明任何端口转发规则。可以根据各个环境来配置参数以提供灵活性。
 
-请参阅 [API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 以了解更多信息。
+有关详细信息，请参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)。
 
-应为任何非http/s协议TCP通信声明端口转发规则，这些通信应通过指定目标主机集（名称或IP，以及端口）通过VPN进行路由。 对于每个目标主机，客户必须将目标目标端口映射到从30000到30999的端口，在该端口中，值在程序中的各个环境中必须唯一。 客户还可以在 `nonProxyHosts` 参数，该参数声明流量应绕过VPN路由的URL，而是通过共享IP范围。 它遵循 `example.com` 或 `*.example.com`，其中仅在域开头支持通配符。
+对于应通过 VPN 路由的任何非 http/https TCP 流量，应通过指定目标主机集（名称或 IP 以及端口）来声明端口转发规则。对于每个目标主机，必须将指向的目标端口映射到 30000 到 30999 之间的端口，该值必须在程序的所有环境中唯一。客户还可以在 `nonProxyHosts` 参数中列出一组 URL，这会声明其流量应绕开 VPN 路由的 URL，改为通过共享 IP 范围进行传输。它遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
 
-API应在几秒内做出响应，表示状态为 `updating` 大约10分钟后，对Cloud Manager环境GET端点的调用将显示状态为 `ready`，表示已应用环境更新。
+API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分钟后，对 Cloud Manager 环境 GET 端点的调用将显示状态 `ready`，指示对环境的更新已应用。
 
-请注意，即使不存在环境流量路由规则（主机或绕过）， `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 仍必须调用，只是使用空的有效负载。
+请注意，即使没有环境流量路由规则（托管或绕过），仍必须调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`，只不过在调用时使用空负载。
 
-### 更新VPN {#updating-the-vpn}
+### 更新 VPN {#updating-the-vpn}
 
-通过调用 `PUT /api/program/<program_id>/network/<network_id>` 端点。
+程序级别的 VPN 可以通过调用 `PUT /api/program/<program_id>/network/<network_id>` 端点来更新。
 
-请注意，在初始VPN配置后，地址空间无法更改。 如有必要，请联系客户支持。 此外， `kind` 参数(`flexiblePortEgress`, `dedicatedEgressIP` 或 `VPN`)。 请联系客户支持以获取帮助，介绍已创建的内容和更改的原因。
+请注意，在初始预配 VPN 之后，无法更改地址空间。如果必须要更改，请联系客户支持。此外，无法修改 `kind` 参数（`flexiblePortEgress`、`dedicatedEgressIP` 或 `VPN`）。如需帮助，请联系客户支持，说明已经创建的内容以及进行更改的原因。
 
-通过再次调用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端点，确保包含完整的配置参数集，而不是子集。 环境更新通常需要5到10分钟才能应用。
+每个环境的路由规则同样可以通过调用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端点进行更新，确保包括完整的配置参数集而不是其子集。环境更新的应用通常需要 5 到 10 分钟。
 
-### 删除或禁用VPN {#deleting-or-disabling-the-vpn}
+### 删除或禁用 VPN {#deleting-or-disabling-the-vpn}
 
-要删除网络基础结构，请提交客户支持票证，说明已创建的内容以及需要删除的原因。
+要删除网络基础设施，请提交客户支持工单，说明已经创建的内容以及需要删除内容的原因。
 
-要为特定环境禁用VPN，请调用 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. 有关 [API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+要禁用特定环境的 VPN，请调用 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`。有关详细信息，请参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
 ### 流量路由 {#vpn-traffic-routing}
 
@@ -416,72 +416,72 @@ API应在几秒内做出响应，表示状态为 `updating` 大约10分钟后，
 </thead>
 <tbody>
   <tr>
-    <td><b>Http或https协议</b></td>
-    <td>Azure或Adobe服务的流量</td>
+    <td><b>Http 或 https 协议</b></td>
+    <td>流向 Azure 或 Adobe 服务的流量</td>
     <td>任意</td>
-    <td>通过共享群集IP（而非专用IP）</td>
+    <td>通过共享集群 IP（而非专用 IP）</td>
     <td>adobe.io<br>api.windows.net</td>
   </tr>
   <tr>
     <td></td>
-    <td>与 <code>nonProxyHosts</code> 参数</td>
-    <td>80或443</td>
-    <td>通过共享群集IP</td>
+    <td>主机匹配 <code>nonProxyHosts</code> 参数</td>
+    <td>80 或 443</td>
+    <td>通过共享集群 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>与 <code>nonProxyHosts</code> 参数</td>
-    <td>80或443以外的端口</td>
+    <td>主机匹配 <code>nonProxyHosts</code> 参数</td>
+    <td>80 或 443 以外的端口</td>
     <td>已阻止</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>如果IP位于 <i>VPN网关地址</i> 空间范围和通过http代理配置（默认情况下使用标准Java HTTP客户端库为http/s流量配置）</td>
+    <td>如果 IP 处于 <i>VPN 网关地址</i>空间范围内，并且通过 http 代理配置传输流量（默认情况下使用标准 Java HTTP 客户端库为 http/https 流量进行配置）</td>
     <td>任意</td>
-    <td>通过VPN</td>
-    <td><code>10.0.0.1:443</code>它也可以是主机名。</td>
+    <td>通过 VPN</td>
+    <td><code>10.0.0.1:443</code>这也可以是主机名。</td>
   </tr>
   <tr>
     <td></td>
-    <td>如果IP不在 <i>VPN网关地址空间</i> 范围，以及通过http代理配置（默认情况下使用标准Java HTTP客户端库为http/s流量配置）</td>
+    <td>如果 IP 没有处于 <i>VPN 网关地址</i>空间范围内，并且通过 http 代理配置传输流量（默认情况下使用标准 Java HTTP 客户端库为 http/https 流量进行配置）</td>
     <td>任意</td>
-    <td>通过专用出口IP</td>
+    <td>通过专用出口 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>忽略http代理配置（例如，如果从标准Java HTTP客户端库中显式删除，或者如果使用忽略标准代理配置的Java库）
+    <td>忽略 http 代理配置（例如，如果明确从标准 Java HTTP 客户端库中删除，或者如果使用省略了标准代理配置的 Java 库）
 </td>
-    <td>80或443</td>
-    <td>通过共享群集IP</td>
+    <td>80 或 443</td>
+    <td>通过共享集群 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>忽略http代理配置（例如，如果从标准Java HTTP客户端库中显式删除，或者如果使用忽略标准代理配置的Java库）</td>
-    <td>80或443以外的端口</td>
+    <td>忽略 http 代理配置（例如，如果明确从标准 Java HTTP 客户端库中删除，或者如果使用省略了标准代理配置的 Java 库）</td>
+    <td>80 或 443 以外的端口</td>
     <td>已阻止</td>
     <td></td>
   </tr>
   <tr>
-    <td><b>非http或非https</b></td>
-    <td>如果IP位于 <i>VPN网关地址空间</i> 范围和客户端连接到 <code>AEM_PROXY_HOST</code> 使用 <code>portOrig</code> 在 <code>portForwards</code> API参数</td>
+    <td><b>非 http 或非 https</b></td>
+    <td>如果 IP 处于 <i>VPN 网关地址空间</i>范围内，并且客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量</td>
     <td>任意</td>
-    <td>通过VPN</td>
-    <td><code>10.0.0.1:3306</code>它也可以是主机名。</td>
+    <td>通过 VPN</td>
+    <td><code>10.0.0.1:3306</code>这也可以是主机名。</td>
   </tr>
   <tr>
     <td></td>
-    <td>如果IP不在 <i>VPN网关地址空间</i> 范围和客户端连接到 <code>AEM_PROXY_HOST</code> 使用 <code>portOrig</code> 在 <code>portForwards</code> API参数</td>
+    <td>如果 IP 没有处于 <i>VPN 网关地址空间</i>范围内，并且客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量</td>
     <td>任意</td>
-    <td>通过专用出口IP</td>
+    <td>通过专用出口 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>任何其他内容</td>
+    <td>其他所有条件</td>
     <td>任意</td>
     <td>已阻止</td>
     <td></td>
@@ -489,46 +489,46 @@ API应在几秒内做出响应，表示状态为 `updating` 大约10分钟后，
 </tbody>
 </table>
 
-### 配置的有用域{#vpn-useful-domains-for-configuration}
+### 在配置时非常有用的域{#vpn-useful-domains-for-configuration}
 
-下图直观地显示了一组对配置和开发有用的域和关联的IP。 下图的下表进一步描述了这些域和IP。
+下图直观地展示了在配置和开发时非常有用的一组域和关联 IP。该图下方的表进一步说明了这些域和 IP。
 
-![VPN域配置](/help/security/assets/AdvancedNetworking.jpg)
+![VPN 域配置](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
   <tr>
     <th>域模式</th>
-    <th>出口(来自AEM)表示</th>
-    <th>入口(到AEM)表示</th>
+    <th>出口（自 AEM）含义</th>
+    <th>入口（至 AEM）含义</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td><code>p{PROGRAM_ID}.external.adobeaemcloud.com</code></td>
-    <td>专用出口IP地址，用于访问Internet的流量，而不是通过专用网络。 </td>
-    <td>来自VPN的连接将在CDN中显示为来自此IP。 要仅允许来自VPN的连接进入AEM，请配置Cloud Manager以仅允许此IP并阻止其他所有内容。 有关更多详细信息，请参阅“限制进入VPN连接”部分。</td>
+    <td>专用出口 IP 地址用于流向 Internet 的流量，而非通过专用网络的流量 </td>
+    <td>来自 VPN 的连接将在 CDN 上显示为来自此 IP。要仅允许来自 VPN 的连接进入 AEM，请将 Cloud Manager 配置为仅允许此 IP 并阻止其他所有流量。有关详细信息，请参阅“将传入限制为 VPN 连接”。</td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
     <td>不适用</td>
-    <td>AEM端VPN网关的IP。 客户的网络工程团队可以使用此功能，仅允许从特定IP地址到其VPN网关的VPN连接。 </td>
+    <td>AEM 侧 VPN 网关的 IP。客户的网络工程团队可以使用此项来仅允许源自特定 IP 地址的 VPN 连接进入其 VPN 网关。 </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
-    <td>从VPN的AEM端到客户端的流量IP。 可以在客列入允许列表户的配置中进行此操作，以确保只能从AEM建立连接。</td>
-    <td>如果客户希望仅允许VPN访问AEM，则应将CNAME DNS条目配置为映射 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 到这个。</td>
+    <td>流量从 AEM 端的 VPN 流向客户端时使用的 IP。这可以列入客户配置的允许列表中，以确保只接受来自 AEM 的连接。</td>
+    <td>如果客户希望只允许通过 VPN 访问 AEM，他们应该配置 CNAME DNS 条目以将 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 映射到此项。</td>
   </tr>
 </tbody>
 </table>
 
-### 将VPN限制为入口连接 {#restrict-vpn-to-ingress-connections}
+### 将传入限制为 VPN 连接 {#restrict-vpn-to-ingress-connections}
 
-如果您希望仅允许VPN访问AEM，则可以在Cloud 允许列表 Manager中配置环境，以便仅允许 `p{PROGRAM_ID}.external.adobeaemcloud.com` 允许与环境交谈。 此操作方式与Cloud Manager中任何其他基于IP的允许列表相同。
+如果您希望只允许通过 VPN 访问 AEM，则可以在 Cloud Manager 中配置环境允许列表，这样可以只允许 `p{PROGRAM_ID}.external.adobeaemcloud.com` 定义的 IP 与环境通信。此操作与在 Cloud Manager 中定义其他任何基于 IP 的允许列表相同。
 
-如果规则必须基于路径，请在调度程序级别使用标准http指令来拒绝或允许某些IP。 它们应确保CDN中也不会缓存所需的路径，以便始终将请求置于原点。
+如果规则必须基于路径，则在 Dispatcher 级别使用标准 http 指令来拒绝或允许特定 IP。它们可以确保所需路径在 CDN 上不可缓存，因此请求始终将获取到来源。
 
-**Httpd配置示例**
+**Httpd 配置示例**
 
 ```
 Order deny,allow
@@ -537,6 +537,6 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
-## 在高级网络类型之间进行转换 {#transitioning-between-advanced-networking-types}
+## 高级联网类型之间的转换 {#transitioning-between-advanced-networking-types}
 
-自 `kind` 无法修改参数，请联系客户支持以获取帮助，说明已创建的内容和更改的原因。
+由于 `kind` 参数无法修改，如需帮助，请联系客户支持，说明已经创建的内容以及进行更改的原因。
