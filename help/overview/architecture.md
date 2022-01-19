@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1782'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -12,8 +12,8 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
->title="AEM as a A A Service Architecture简介"
->abstract="在此选项卡中，您可以查看AEM的新架构作为Cloud Service，并了解所做的更改。 AEM生成了一个具有可变图像数的动态架构，因此花时间了解该架构非常重要。云架构"
+>title="AEM as a Cloud Service 架构简介"
+>abstract="在此选项卡中，您可以查看 AEM as a Cloud Service 的新架构并了解更改。AEM 带来了具有可变数量图像的动态架构，因此花时间了解云架构是很重要的"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="架构概述"
 
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service 基于使用一个编排引擎，该引擎可以：
 
 AEM as a Cloud Service 可用作单个实例，每个实例代表一个完整的 AEM 环境。
 
-AEM as a Cloud Service有三种类型的环境：
+AEM as a Cloud Service 可提供三种类型的环境：
 
 * **生产环境**：为业务从业者托管应用程序。
 
@@ -76,7 +76,7 @@ AEM as a Cloud Service有三种类型的环境：
 
 * **开发环境**：允许开发人员在与暂存环境和生产环境相同的运行时条件下实施 AEM 应用程序。
 
-   有关更多详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) 。
+   有关更多详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-hans#using-cloud-manager)。
 
 ## 程序 {#programs}
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service 最初提供两种类型的程序：
 
 * AEM 云资产服务
 
-这两类程序都允许访问许多特性和功能。创作层将包含所有程序的所有站点和资产功能，但资产程序默认将没有发布层或预览层。
+这两类程序都允许访问许多特性和功能。所有程序的创作层将包含所有 Sites 和 Assets 功能，但 Assets 程序默认将没有发布层和预览层。
 
 ## 运行时架构 {#runtime-architecture}
 
@@ -116,10 +116,10 @@ AEM as a Cloud Service 最初提供两种类型的程序：
 
       * 内容作者/创建者可登录 AEM 创作层来创建、编辑和管理内容。
 
-      * 登录到创作层由 Adobe 身份管理服务 (IMS) 进行管理。
+      * 登录到创作层由 Adobe Identity Management Services (IMS) 进行管理。
 
       * 资产集成和处理会使用专用的资产计算服务。
-   * 预览层由单个预览节点组成。 在发布到发布层之前，此插件用于内容的质量保证。
+   * 预览层由单个预览节点构成。这用于在发布到发布层之前保证内容质量。
 
    * 发布层由单个发布场中的两个或多个节点组成：它们可以相互独立地运作。每个节点均由一个 AEM 发布者和一个配备 AEM 调度程序模块的 Web 服务器组成。它可根据站点流量需求自动缩放。
 
@@ -130,15 +130,15 @@ AEM as a Cloud Service 最初提供两种类型的程序：
 
    * 该架构仅包括创作环境。
 
-* 创作层、预览层和发布层均可读取内容并将内容从内容存储库服务保留下来。
+* 创作层、预览层和发布层均可读取和保留往来于内容存储库服务的内容。
 
-   * 发布层和预览层仅从持久层读取内容。
+   * 发布层和预览层只从持久层读取内容。
 
    * 创作层可读写往来于持久层的内容。
 
-   * blob存储在发布层、预览层和创作层之间共享；文件未&#x200B;*被移动*。
+   * blob 存储可在发布层、预览层和创作层之间共享；不会&#x200B;*移动*&#x200B;文件。
 
-   * 当内容从创作层获得批准时，这表示内容可以激活，因此可以推送到发布层持久层；或（可选）添加到预览层。 此操作可通过复制服务（一个中间件管道）实现。此管道通过订阅推送到管道的内容的单个发布服务（或预览服务）节点接收新内容。
+   * 内容获得创作层的批准即表示内容可以被激活，因此可以推送到发布层持久层，或（可选）推送到预览层。此操作可通过复制服务（一个中间件管道）实现。该管道通过订阅了推送到管道的内容的单独发布服务（或预览服务）节点接收新内容。
 
       >[!NOTE]
       >
@@ -148,15 +148,15 @@ AEM as a Cloud Service 最初提供两种类型的程序：
 
    * 始终通过负载平衡器访问创作层和发布层。该程序始终与每个层中的活动节点保持同步。
 
-   * 对于发布层和预览层，连续交付网络(CDN)服务也作为第一个入口点提供。
+   * 对于发布层和预览层，连续交付网络 (CDN) 服务也可用作第一个入口点。
 
 * 对于 AEM as a Cloud Service 的演示实例，架构被简化为单个创作节点。因此，该架构并不具有标准开发、暂存或生产环境的所有特点。这也意味着系统可能会出现一段时间的停机，并且不支持备份/恢复操作。
 
 ## 部署架构 {#deployment-architecture}
 
-Cloud Manager 将管理 AEM as a Cloud Service 实例的所有更新。它是强制性的，是构建、测试和部署客户应用程序的唯一方法，同时适用于作者层、预览层和发布层。 这些更新可由 Adobe（当 AEM 云服务的新版本准备就绪时）或客户（当其应用程序的新版本准备就绪时）触发。
+Cloud Manager 将管理对 AEM as a Cloud Service 实例的所有更新。这是强制性的，且是构建、测试和部署客户应用程序的唯一方法，同时适用于创作层、预览层和发布层。这些更新可由 Adobe（当 AEM 云服务的新版本准备就绪时）或客户（当其应用程序的新版本准备就绪时）触发。
 
-从技术上讲，之所有这样实施，主要出于与程序内每个环境耦合的部署管道的概念原因。当Cloud Manager管道运行时，它会为创作层、预览层和发布层创建客户应用程序的新版本。 这可通过将最新的客户包与最新的基准 Adobe 图像相结合来实现。成功构建和测试新图像后，Cloud Manager 会通过使用滚动更新模式更新所有服务节点，从而完全自动转换为最新版本的图像。这不会导致创作或发布服务出现停机。
+从技术上讲，之所有这样实施，主要出于与程序内每个环境耦合的部署管道的概念原因。当 Cloud Manager 管道运行时，它将为创作层、预览层和发布层创建客户应用程序的新版本。这可通过将最新的客户包与最新的基准 Adobe 图像相结合来实现。成功构建和测试新图像后，Cloud Manager 会通过使用滚动更新模式更新所有服务节点，从而完全自动转换为最新版本的图像。这不会导致创作或发布服务出现停机。
 
 <!--- needs reworking -->
 
