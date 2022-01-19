@@ -1,31 +1,31 @@
 ---
-title: 与Adobe Experience ManagerCloud Service支持相同的网站Cookie
-description: 与Adobe Experience ManagerCloud Service支持相同的网站Cookie
+title: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
+description: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 对Adobe Experience Manager与Cloud Service{#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}的相同站点Cookie支持
+# 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持 {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-自版本80、Chrome及更高版本的Safari以来，为Cookie安全引入了新模型。 此模式旨在通过名为`SameSite`的设置，对Cookie的可用性引入安全控制。 有关更多详细信息，请参阅此[文章](https://web.dev/samesite-cookies-explained/)。
+从 80 版开始，Chrome 和后来的 Safari 都引入了一种新的 Cookie 安全模型。此模式旨在通过名为 `SameSite` 的设置向第三方站点引入有关 Cookie 可用性的安全控制措施。有关更多详细信息，请参阅[本文](https://web.dev/samesite-cookies-explained/)。
 
-此设置的默认值(`SameSite=Lax`)可能会导致AEM实例或服务之间的身份验证无法工作。 这是因为这些服务的域或URL结构可能不受此Cookie策略的约束。
+此设置的默认值 (`SameSite=Lax`) 可能会导致 AEM 实例或服务之间的身份验证不起作用。这是因为这些服务的域或 URL 结构可能不受此 Cookie 策略的约束。
 
-为了解决此问题，您需要将登录令牌的SameSite Cookie属性设置为`None`。
+要解决此问题，您需要将登录令牌的 SameSite Cookie 属性设置为 `None`。
 
-您可以按照以下步骤执行操作：
+可执行以下步骤来做到这一点：
 
-1. 在本地安装AEM SDK快速启动版本
-1. 转到位于`http://serveraddress:serverport/system/console/configMgr`的Web控制台
-1. 搜索并单击&#x200B;**AdobeGranite令牌身份验证处理程序**
-1. 将登录令牌Cookie **的** SameSite属性设置为`None`，如下图所示
+1. 在本地安装 AEM SDK 快速入门版本
+1. 转至位于 `http://serveraddress:serverport/system/console/configMgr` 的 Web 控制台
+1. 搜索找到 **Adobe Granite Token Authentication Handler** 并单击它
+1. 将&#x200B;**登录令牌 Cookie 的 SameSite 属性**&#x200B;设置为 `None`，如下图所示
    ![samesite](/help/security/assets/samesite1.png)
-1. 单击Save
-1. 按照[使用AEM SDK快速入门生成OSGi配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中所述的步骤，为此特定设置生成JSON格式配置
-1. 按照[Cloud Manager API格式中的步骤来应用设置，以设置属性](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi文档。
+1. 单击“保存”
+1. 执行[使用 AEM SDK 快速入门生成 OSGi 配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中概述的步骤，为此特定设置生成 JSON 格式配置
+1. 按照[用于设置属性的 Cloud Manager API 格式](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 文档中的步骤来应用设置。
 
-更新此设置后，用户将注销并再次登录， `login-token` Cookie将设置`None`属性，并将包含在跨站点请求中。
+在更新此设置且用户注销并再次登录后，`login-token` Cookie 将具有 `None` 属性集，并且将包含在跨站点请求中。
