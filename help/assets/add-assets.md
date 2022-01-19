@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
+source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2720'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 您可以上传与现有资产路径相同（名称相同，位置相同）的资产。 但是，将显示一个警告对话框，其中包含以下选项：
 
 * 替换现有资产：如果替换现有资产，则资产的元数据以及您对现有资产所做的任何先前修改（例如注释、裁剪等）都将被删除。
+
+   >[!NOTE]
+   >
+   >如果资产被锁定或签出，则用于替换资产的选项将不可用。
+
 * 创建其他版本：将在存储库中创建现有资产的新版本。 您可以在 [!UICONTROL 时间轴] 和可以根据需要还原到以前现有的版本。
 * 同时保留以下两项：如果您选择保留这两个资产，则会重命名新资产。
 
