@@ -5,48 +5,48 @@ exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 50%
+ht-degree: 93%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 简介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/cn/marketing/experience-manager.html) (AEM) 现已作为 Cloud Service 提供。
+[Adobe Experience Manager](https://www.adobe.com/cn/marketing/experience-manager.html) (AEM) 现已作为云服务提供。
 
-Adobe Experience Manager(AEM)as a Cloud Service是AEM产品线的最新产品，可帮助您继续为客户提供以内容为导向的个性化体验。 它提供了云原生的敏捷性，可加快实现价值的时间，并且具有可扩展性，可满足您独特的业务需求。 您可以通过保留和扩展所有用例和功能，以过去的投资和创新为基础。
+Adobe Experience Manager (AEM) as a Cloud Service 是 AEM 产品线中的最新产品，帮助您向客户提供以内容引导的个性化体验。它提供了云原生的敏捷性，可以加快实现价值的速度，并可扩展以满足独特的业务需求。您可以在过去的投资基础上进行构建，保留并扩展所有用例和功能。
 
-AEM as a Cloud Service允许您以云原生方式利用AEM应用程序，以便：
+AEM as a Cloud Service 可帮助您以云原生的方式将 AEM 应用程序资本化，这样您就可以：
 
-* 使用Cloud Manager扩展您的DevOps工作：CI/CD框架、自动缩放、API连接、灵活的部署模式、代码质量门、服务交付透明度和引导式更新。
+* 通过 Cloud Manager 扩展 DevOps 工作：CI/CD 框架、自动扩展、API 连接、灵活部署模式、代码质量审核、服务交付透明度和引导式更新。
 
-* 允许开发人员将自动化添加到应用程序开发实践中。
+* 使开发人员能够在应用程序开发实践中引入自动化。
 
-* 使用内置的内容交付网络(CDN)和其他网络层最佳实践，在全球范围快速高效地交付内容。
+* 使用内置的 Content Delivery Network (CDN) 和其他网络层最佳实践，快速高效地在全球范围内提供内容。
 
-* 利用可自动扩展的动态架构，从而消除基础架构注意事项。
+* 利用自动扩展的动态架构，从而消除对基础设施的担忧。
 
-* 通过自动测试来扫描常见漏洞，保持对威胁和安全风险缓解的掌控。
+* 使用自动化测试扫描常见漏洞，保持对威胁和安全风险的控制。
 
-* 确保通过优化的性能拓扑实现最大的可复原性和效率。
+* 以优化性能技术为后盾，确保最大限度的弹性和效率。
 
-* 利用AEM as a Cloud Service与Adobe Experience Cloud的深度集成，通过在线营销和Web分析产品提供更好的客户体验。
+* 利用 AEM as a Cloud Service 与 Adobe Experience Cloud 的深度集成，通过在线营销和网站分析产品提供更好的客户体验。
 
-* 利用有助于加速迁移任务的工具，例如代码重构、内容传输等。
+* 利用帮助加快迁移任务的工具，例如代码重构、内容传输等等。
 
-使用AEMas a Cloud Service,
+利用 AEM as a Cloud Service，
 
-* 开发人员可以专注于使用新的基于云的开发模式配置和扩展AEM。
+* 开发人员可以专注于利用新的云端开发模式来配置和扩展 AEM。
 
-* 内容作者可以利用定期向他们提供的最新创新。
+* 内容作者可以利用定期交付给他们的最新创新。
 
-* 系统管理员可以在配置和基础架构维护中最大限度地减少手动任务。
+* 系统管理员可以尽可能减少配置和基础设施维护中的手动任务。
 
-* 营销专业人士可以更快地实现价值。
+* 市场营销专家可以更快地实现价值。
 
 >[!NOTE]
 >请参阅[术语](terminology.md)，了解 AEM as a Cloud Service 引入的某些新术语。
 
-## 作为 Cloud Service 的附加价值 {#value-added-as-a-cloud-service}
+## 云服务的附加价值 {#value-added-as-a-cloud-service}
 
 AEM 通过采用现代云服务的主要特点来实现这些目标：
 
@@ -69,10 +69,10 @@ AEM 通过采用现代云服务的主要特点来实现这些目标：
 ## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
 * 与先前版本相比，Adobe Experience Manager as a Cloud Service 具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
-* Adobe Experience Manager as a Cloud Service[架构](/help/overview/architecture.md)
-* [对 AEM as a Cloud Service 的显著更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
-* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
-* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
+* Adobe Experience Manager as a Cloud Service 的[架构](/help/overview/architecture.md)
+* [对 AEM as a Cloud Service 的重要更改（发行说明）](/help/release-notes/aem-cloud-changes.md)
+* [对 AEM Sites as a Cloud Service 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
+* [对 AEM Assets as a Cloud Service 的重要更改](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 简介](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
