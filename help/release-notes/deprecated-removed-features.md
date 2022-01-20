@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的功能的发行说明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
+source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 97%
+source-wordcount: '592'
+ht-degree: 95%
 
 ---
 
@@ -55,6 +55,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Assets] | [!DNL Assets] 无法与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务进行共享。 | 要与 [!DNL Adobe Creative Cloud] 集成，请使用 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。 |
 | [!DNL Foundation] | 支持Apache Sling数据源（OSGi包org.apache.sling.datasource） | 不适用 |
 | [!DNL Foundation] | 支持JST脚本模板（OSGi包org.apache.sling.scripting.jst） | 不适用 |
+| [!DNL Foundation] | 支持Apache Felix Http白板 | OSGi Http白板 |
 
 ## Java API {#java-api}
 
