@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
+source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 2%
+source-wordcount: '2224'
+ht-degree: 1%
 
 ---
 
@@ -41,13 +41,23 @@ ht-degree: 2%
 
 ## 使用方法 {#how-to-use}
 
-定义索引可包括以下三个用例：
+定义索引可以包括以下三个用例：
 
-1. 添加新的客户索引定义
-1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本
+1. 添加新的客户索引定义。
+1. 更新现有索引定义。 这实际上意味着添加现有索引定义的新版本。
 1. 删除冗余或过时的现有索引。
 
 对于以上第1点和第2点，您需要在相应的Cloud Manager发行计划中创建新的索引定义，以作为自定义代码库的一部分。 有关更多信息，请参阅 [部署到AEMas a Cloud Service文档](/help/implementing/deploying/overview.md).
+
+## 索引名称 {#index-names}
+
+索引定义可以是：
+
+1. 一个现成的索引。 例如 `/oak:index/cqPageLucene-2`.
+1. 自定义现成索引。 此类自定义由客户定义。 例如 `/oak:index/cqPageLucene-2-custom-1`.
+1. 完全自定义的索引。 例如 `/oak:index/acme.product-1-custom-2`. 为避免命名冲突，我们要求完全自定义索引具有前缀，例如 `acme.`
+
+请注意，对现成索引以及完全自定义索引的自定义都需要包含 `-custom-`. 只有完全自定义的索引必须以前缀开头。
 
 ### 准备新的索引定义 {#preparing-the-new-index-definition}
 
