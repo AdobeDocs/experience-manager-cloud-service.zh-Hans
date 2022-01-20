@@ -1,16 +1,16 @@
 ---
-title: 使用Dispatcher工具验证和调试
-description: 使用Dispatcher工具验证和调试
+title: 使用 Dispatcher 工具进行验证和调试
+description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
+source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
 workflow-type: tm+mt
 source-wordcount: '2413'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 使用Dispatcher工具验证和调试 {#Dispatcher-in-the-cloud}
+# 使用 Dispatcher 工具进行验证和调试 {#Dispatcher-in-the-cloud}
 
 ## 简介 {#apache-and-dispatcher-configuration-and-testing}
 
@@ -349,7 +349,7 @@ Cloud manager validator 2.0.xx
 >
 >Windows用户需要使用支持Docker的Windows 10专业版或其他发行版。 这是在本地计算机上运行和调试Dispatcher的先决条件。
 
-此阶段也可以单独运行 `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
+此阶段也可以单独运行 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
 在Cloud Manager部署期间， `httpd -t` 语法检查也会执行，并且任何错误都将包含在Cloud Manager“生成图像”步骤失败日志中。
 
