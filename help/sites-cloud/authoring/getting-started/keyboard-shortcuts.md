@@ -2,7 +2,7 @@
 title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
@@ -25,7 +25,7 @@ ht-degree: 100%
 | 控制台 | `?` | 键盘快捷键帮助 |
 |  | `/` | 调用[搜索](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | 切换要查看的[边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)选项 |
-|  | &grave; | 隐藏边栏 |
+|  | ``` ` ``` | 隐藏边栏 |
 |  | `e` | 编辑 |
 |  | `p` | 属性 |
 |  | `m` | 移动 |
