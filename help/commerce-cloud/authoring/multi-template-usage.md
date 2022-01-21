@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
+source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 4%
+source-wordcount: '187'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +27,11 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
+可以按SKU或产品类别选择特定产品页面。 仅某些可用的默认产品页面URL格式支持后者，因为它要求在产品URL中对类别信息进行编码。
+
 您可以从以下资源找到有关此主题的更多信息：
 
+- [高级URL配置](../configuring/advanced-url-configuration.md)
 - [AEM CIF核心组件 — 多目录页面配置](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## 相关资源 {#related}
