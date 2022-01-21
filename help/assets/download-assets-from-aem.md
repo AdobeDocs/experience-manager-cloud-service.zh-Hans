@@ -1,13 +1,13 @@
 ---
-title: 下载资产
+title: 下载资源
 description: 从下载资产 [!DNL Adobe Experience Manager Assets] 以及启用或禁用下载功能。
 contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
+source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 3%
 
 您可以下载资产，包括静态和动态演绎版。 或者，您也可以直接从发送包含指向资产链接的电子邮件 [!DNL Adobe Experience Manager Assets]. 下载的资产捆绑在ZIP文件中。 <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
+<!--
 >[!NOTE]
 >
->电子邮件的收件人必须是 `dam-users` 群组，访问电子邮件中的ZIP下载链接。 要能够下载资产，成员必须有权启动可触发资产下载的工作流。
+>Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
+-->
 
 无法下载资产类型图像集、旋转集、混合媒体集和轮播集。
 
@@ -33,9 +35,9 @@ ht-degree: 3%
 
 ## 使用下载资产 [!DNL Experience Manager] 界面 {#download-assets}
 
-异步下载服务为无缝下载大型资产提供了一个框架。 从用户界面实时下载较小的文件。 [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。 此功能可加快下载速度。
+异步下载服务为无缝下载大型资产提供了一个框架。 大于100 GB的下载存档将拆分为多个zip存档，每个存档的最大大小为100 GB。 可以单独下载这些内容。 从用户界面实时下载较小的文件。 [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。 此功能可加快下载速度。
 
-默认情况下，Experience Manager会在下载工作流完成后触发通知。 下载通知将显示在  [[!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md).
+默认情况下， [!DNL Experience Manager] 完成下载工作流后会触发通知。 下载通知将显示在  [[!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![收件箱通知](assets/inbox-notification-for-large-downloads.png)
 
@@ -85,7 +87,7 @@ Asynchronous downloads are triggered in either of the following case:
    | 下载选项 | 描述 |
    |---|---|
    | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可将您下载的每个资产（包括嵌套在资产父文件夹下的子文件夹中的资产）包含到本地计算机上的一个文件夹中。 当此选项为 *not* 默认情况下，选择文件夹层次结构将被忽略，所有资产都会下载到本地计算机的一个文件夹中。 |
-   | **[!UICONTROL 电子邮件]** | 选择此选项可向收件人发送电子邮件通知。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 在部署过程中自定义的模板可在以下位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL 电子邮件]** | 选择此选项可向其他用户发送电子邮件通知（包含到您下载的链接）。 收件人用户必须是 `dam-users` 群组。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 在部署过程中自定义的模板可在以下位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 资产]** | 选择此选项可下载其原始形式的资产，而不包含任何演绎版。<br>如果原始资产具有子资产，则子资产选项可用。 |
    | **[!UICONTROL 演绎版]** | 演绎版是资产的二进制表示形式。资产具有主要表示形式 — 上传文件的表示形式。 它们可以有任意数量的表示形式。 <br> 通过此选项，您可以选择要下载的演绎版。 可用的演绎版取决于您选择的资产。 |
    | **[!UICONTROL 智能裁剪]** | 选择此选项可从以下位置下载选定资产的所有智能裁剪演绎版 [!DNL Experience Manager]. 系统会创建一个包含智能裁剪呈现版本的zip文件，并将其下载到您的本地计算机。 |
