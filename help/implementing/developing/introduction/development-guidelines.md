@@ -2,14 +2,20 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 1%
+source-wordcount: '2222'
+ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service 开发准则 {#aem-as-a-cloud-service-development-guidelines}
+
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="AEM as a Cloud Service 开发准则"
+>abstract="在此选项卡中，您可以查看在AEMas a Cloud Service中编码的推荐最佳实践。 编码可能与AMS或On-Prem部署存在显着差异。"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="包结构演示"
 
 在AEMas a Cloud Service中运行的代码必须知道它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。代码必须具有弹性，尤其是当实例可能在任何时间点停止时。
 
@@ -123,7 +129,7 @@ AEMas a Cloud Service不支持从“发布到作者”进行反向复制。 如�
 
 ## CRX/DE Lite和开发人员控制台 {#crxde-lite-and-developer-console}
 
-### 地方发展 {#local-development}
+### 本地开发 {#local-development}
 
 对于本地开发，开发人员拥有对CRXDE Lite(`/crx/de`)和AEM Web控制台(`/system/console`)。
 
