@@ -2,10 +2,10 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service通信批处理
 description: 如何创建以品牌为导向的个性化通信？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
-ht-degree: 0%
+source-wordcount: '2297'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 您可以使用批处理操作以计划的间隔生成多个文档。
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 您可以观看视频或执行以下说明，了解如何使用批处理操作生成文档。 视频中使用的API引用文档采用.yaml格式。 您可以下载 [批量API](assets/batch-api.yaml) 文件并上传到Postman，以检查API的功能，并观看视频。
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 要创建配置，请执行以下操作：
 
-1. 转到工具> Forms >输出批处理 — 统一存储连接器。
+1. 转到工具> Forms > Unified Storage Connector 。
 1. 打开用于托管配置的文件夹，然后单击创建。 使用全局文件夹或创建文件夹。
 1. 指定配置的标题和名称。 在“存储”中，选择Microsoft Azure存储。
 1. 在存储配置路径中，浏览并选择云配置，该配置包含客户拥有的Azure存储帐户的凭据。

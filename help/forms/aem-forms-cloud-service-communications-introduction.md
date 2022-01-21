@@ -2,7 +2,7 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 * 安全访问数据。 通信API仅连接到客户指定的数据存储库并从中访问数据，不生成数据的本地副本，从而使通信高度安全。
 
 ![信用卡对帐单示例](assets/statement.png)
-可以使用通信API创建信用卡对帐单示例。 报表使用相同的模板，但根据每个客户对信用卡的使用情况，将其数据分开。
+可以使用通信API创建信用卡对帐单。 此示例报表使用相同的模板，但会根据每个客户对信用卡的使用情况，将其数据分开。
 
 ## 工作原理如何？
 
