@@ -1,10 +1,10 @@
 ---
 title: 配置过程 — 概述
 description: 配置过程 — 概述
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 7%
 
 ### 资源和链接
 
-• [AEM as a Cloud Service 的 IMS 支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)\
-· [Cloud Manager中基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)\
-• [访问 Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
+* [AEM as a Cloud Service 的 IMS 支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)
+* [Cloud Manager中基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)
+* [访问 Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
 ## Adobe Experience Manager as a Cloud Service载入流程
@@ -49,8 +49,9 @@ ht-degree: 7%
 
 ### 2.将组织载入Adobe Admin Console:
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
-* 系统管理员：
+![processoverview2.jpg](./assets/processOverview2.jpg)
+
+* 系统管理员:
    * 配置AEM程序和环境。
    * 导航到管理任务的Admin Console。
    * 声明域以确认各个域的所有权
@@ -61,7 +62,7 @@ ht-degree: 7%
 
 ### 3.载入用户并管理Admin Console中的访问：
 
->   ![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](./assets/processOverview3.jpg)
 
 根据用户大小和偏好，可使用三种载入用户的方法：
 * 在Admin Console中手动创建用户
