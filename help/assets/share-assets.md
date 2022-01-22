@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 2%
+source-wordcount: '1295'
+ht-degree: 1%
 
 ---
 
@@ -24,27 +24,72 @@ ht-degree: 2%
 
 ## 以链接方式共享资产 {#sharelink}
 
-通过链接共享资产是使外部各方无需首先登录即可获得资源的一种便捷方式 [!DNL Assets]. 具有管理员权限或具有读取权限的用户位于 `/var/dam/share` 位置可以查看与其共享的链接。
+通过链接共享资产是让外部各方无需登录即可获取资源的一种便捷方式 [!DNL Assets]. 利用功能，匿名用户可以访问和下载与他们共享的资产。 当用户从共享链接下载资产时， [!DNL Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于非常大的下载，下载内容会捆绑到大小为100 GB的文件中。
 
-![链接共享对话框](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* 您需要对要作为链接共享的文件夹或资产具有编辑ACL权限。
->* 在与用户共享链接之前， [启用出站电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email). 否则，会发生错误。
+>* [启用出站电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email) 链接。
 
 
-1. 在 [!DNL Assets] 用户界面中，选择要作为链接共享的资产。
-1. 在工具栏中，单击 **[!UICONTROL 共享链接]**. 的 [!UICONTROL 链接共享] 对话框中，其中包含一个自动生成的资产链接，位于 **[!UICONTROL 共享链接]** 字段。
+可使用链接共享功能通过两种方式共享资产：
+
+1. 生成共享链接， [复制和共享资产链接](#copy-and-share-assets-link) 其他用户。 链接的默认过期时间为一天。 与其他用户共享复制的链接时，无法更改过期时间。
+
+1. 生成共享链接并 [通过电子邮件共享资产链接](#share-assets-link-through-email). 在这种情况下，您可以修改默认值（如过期日期和时间），并允许下载原始资产及其演绎版。 您可以通过添加多个用户的电子邮件地址，向其发送电子邮件。
+
+![链接共享对话框](assets/link-sharing-dialog.png)
+
+### 复制并共享资产链接{#copy-and-share-asset-link}
+
+要将资产共享为公共URL，请执行以下操作：
+
+1. 登录到 [!DNL Experience Manager Assets] 并导航到 **[!UICONTROL 文件]**.
+1. 选择资产或包含资产的文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
+1. 的 **[!UICONTROL 链接共享]** 对话框中，其中包含一个自动生成的资产链接，位于 **[!UICONTROL 共享链接]** 字段。
+1. 复制资产链接并将其与用户共享。
+
+### 通过电子邮件通知共享资产链接 {#share-assets-link-through-email}
+
+要通过电子邮件共享资产，请执行以下操作：
+
+1. 选择资产或包含资产的文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
+1. 的 **[!UICONTROL 链接共享]** 对话框中，其中包含一个自动生成的资产链接，位于 **[!UICONTROL 共享链接]** 字段。
 
    * 在电子邮件地址框中，键入要与其共享链接的用户的电子邮件ID。 您可以与多个用户共享该链接。 如果用户是您组织的成员，请从下拉列表中显示的建议中选择其电子邮件ID。 如果用户是外部用户，请键入完整的电子邮件ID并按 **[!UICONTROL 输入]**;电子邮件ID会添加到用户列表。
 
-   * 在 **[!UICONTROL 主题]** 框中，键入要共享的资产的主题。
+   * 在 **[!UICONTROL 主题]** 框中，键入一个主题以指定共享资产的用途。
    * 在 **[!UICONTROL 消息]** 框中，根据需要键入消息。
-   * 在 **[!UICONTROL 过期]** 字段中，使用日期选取器指定链接的过期日期和时间。 链接的默认过期时间为一天。
+   * 在 **[!UICONTROL 过期]** 字段中，使用日期选取器指定链接的过期日期和时间。
    * 启用 **[!UICONTROL 允许下载原始文件]** 复选框以允许收件人下载原始演绎版。
 
-1. 单击&#x200B;**[!UICONTROL 共享]**。系统会显示一条消息，确认已与用户共享该链接。 用户会收到包含共享链接的电子邮件。
+1. 单击&#x200B;**[!UICONTROL 共享]**。系统会显示一条消息，确认已与用户共享该链接。 用户会收到一封包含共享链接的电子邮件。
+
+![链接共享电子邮件](assets/link-sharing-email-notification.png)
+
+### 使用资产链接下载资产
+
+任何有权访问共享资产链接的用户都可以下载zip文件夹中捆绑的资产。 无论用户是访问复制的资产链接，还是使用通过电子邮件共享的资产链接，下载过程都是相同的。
+
+* 单击资产链接或将URL粘贴到浏览器中。 的 [!UICONTROL 链接共享] 接口打开，您可以在其中切换到 [!UICONTROL 卡片视图] 或 [!UICONTROL 列表视图].
+
+* 在 [!UICONTROL 卡片视图]，您可以将鼠标悬停在共享资产或共享资产文件夹上，以选择资产或将其排入队列进行下载。
+
+* 默认情况下，用户界面会显示 **[!UICONTROL 下载收件箱]** 选项。 它反映已排队等待下载的所有共享资产或文件夹的列表及其状态。
+
+* 选择资产或文件夹时， **[!UICONTROL 队列下载]** 选项。 单击 **[!UICONTROL 队列下载]** 选项启动下载过程。
+
+   ![队列下载](assets/queue-download.png)
+
+* 准备下载文件时，单击 **[!UICONTROL 下载收件箱]** 选项来查看下载的状态。 对于大型下载，请单击 **[!UICONTROL 刷新]** 按钮以更新状态。
+
+   ![下载收件箱](assets/link-sharing-download-inbox.png)
+
+* 处理完成后，单击 **[!UICONTROL 下载]** 按钮下载zip文件。
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >[!NOTE]
 >
 >如果要将来自创作实例的链接共享到外部实体，请确保仅显示以下URL `GET` 请求。 阻止其他URL以确保创作实例的安全。
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`

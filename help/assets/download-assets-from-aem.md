@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1032'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,10 @@ Asynchronous downloads are triggered in either of the following case:
 
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -114,13 +118,13 @@ To enable email notifications:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-使用链接共享资产是一种非常方便的方式，可让感兴趣的人不必先登录即可使用它 [!DNL Assets]. 请参阅 [链接共享功能](/help/assets/share-assets.md#sharelink).
+使用链接共享资产是一种非常方便的方式，可让感兴趣的人无需登录即可使用该链接 [!DNL Assets]. 请参阅 [链接共享功能](/help/assets/share-assets.md#sharelink).
 
 当用户从共享链接下载资产时， [!DNL Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于非常大的下载，下载内容将分块为大小为100 GB的文件。
 
-收件箱会显示每个存档的处理状态。 处理完成后，您可以从收件箱中下载存档。
+的 [!UICONTROL 下载收件箱] 显示每个存档的处理状态。 处理完成后，您可以从收件箱中下载存档。
 
-![下载收件箱](assets/download-inbox.png)
+![下载收件箱](assets/link-sharing-download-inbox.png)
 
 ## 启用资产下载Servlet {#enable-asset-download-servlet}
 
