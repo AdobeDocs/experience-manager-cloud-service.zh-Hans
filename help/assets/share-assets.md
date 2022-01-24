@@ -1,11 +1,11 @@
 ---
 title: 分发和共享资产、文件夹和收藏集
 description: 使用共享作为链接、下载和通过之类的方法分发数字资产 [!DNL Brand Portal], [!DNL desktop app]和 [!DNL Asset Link].
-contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
-role: User,Admin
+contentOwner: Vishabh Gupta
+feature: Asset Management, Collaboration, Asset Distribution
+role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
+source-git-commit: 3eb12e6e6a539a8f6b3cb4ccddba9d1971268c13
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
