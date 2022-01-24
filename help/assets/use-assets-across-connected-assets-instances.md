@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
+source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 23%
@@ -139,7 +139,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 1. 配置 [!DNL Dynamic Media] 本地 [!DNL Sites] 远程 [!DNL Assets] 部署。 按照 [配置 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * 在所有配置中使用相同的公司名称。
-   * 在本地 [!DNL Sites]，在 [!UICONTROL Dynamic Media同步模式]，选择 **[!UICONTROL 默认情况下处于禁用状态]**. 的 [!DNL Sites] 部署只需对 [!DNL Dynamic Media] 帐户。
+   * 在本地 [!DNL Sites]，在 [!UICONTROL Dynamic Media同步模式]，选择 **[!UICONTROL 默认情况下处于禁用状态]**. 的 [!DNL Sites] 部署必须具有对 [!DNL Dynamic Media] 帐户。
    * 在本地 [!DNL Sites]，在 **[!UICONTROL 发布资产]** 选项，选择 **[!UICONTROL 选择性发布]**. 不选择 **[!UICONTROL 同步所有内容]**.
    * 在远程 [!DNL Assets] 部署，在 [!UICONTROL Dynamic Media同步模式]，选择 **[!UICONTROL 默认启用]**.
 
@@ -218,7 +218,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 >
 >此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 以了解为环境启用该功能的信息。
 
-之后 [配置连接](#configure-a-connection-between-sites-and-assets-deployments) 在远程DAM和Sites部署之间，远程DAM上的资产可在Sites部署中使用。 然后，您可以对远程DAM资产或文件夹执行更新、删除、重命名和移动操作。 更新（如果延迟）将在站点部署中自动提供。 此外，如果在本地Experience Manager Sites页面上使用远程DAM上的资产，则对远程DAM上资产的更新会显示在站点页面上。
+之后 [配置连接](#configure-a-connection-between-sites-and-assets-deployments) 在远程DAM和Sites部署之间，远程DAM上的资产可在Sites部署中使用。 然后，您可以对远程DAM资产或文件夹执行更新、删除、重命名和移动操作。 更新会在 Sites 部署中自动提供，但会有一些延迟。此外，如果在本地Experience Manager Sites页面上使用远程DAM上的资产，则对远程DAM上资产的更新会显示在站点页面上。
 
 将资产从一个位置移动到另一个位置时，请确保 [调整参照](manage-digital-assets.md) 以便资产显示在站点页面上。 如果将资产移动到无法从本地Sites部署访问的位置，则该资产无法在Sites部署中显示。
 
