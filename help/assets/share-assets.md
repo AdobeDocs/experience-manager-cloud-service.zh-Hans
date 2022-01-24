@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 以链接方式共享资产 {#sharelink}
 
-通过链接共享资产是让外部各方无需登录即可获取资源的一种便捷方式 [!DNL Assets]. 利用功能，匿名用户可以访问和下载与他们共享的资产。 当用户从共享链接下载资产时， [!DNL Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于非常大的下载，下载内容会捆绑到大小为100 GB的文件中。
+通过链接共享资产是让外部各方无需登录即可获取资源的一种便捷方式 [!DNL Assets]. 利用功能，匿名用户可以访问和下载与他们共享的资产。 当用户从共享链接下载资产时， [!DNL Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于大型下载，下载内容捆绑为100 GB的文件。
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -38,7 +38,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 可使用链接共享功能通过两种方式共享资产：
 
-1. 生成共享链接， [复制和共享资产链接](#copy-and-share-assets-link) 其他用户。 链接的默认过期时间为一天。 与其他用户共享复制的链接时，无法更改过期时间。
+1. 生成共享链接， [复制并共享资产链接](#copy-and-share-assets-link) 其他用户。 链接的默认过期时间为一天。 与其他用户共享复制的链接时，无法更改过期时间。
 
 1. 生成共享链接并 [通过电子邮件共享资产链接](#share-assets-link-through-email). 在这种情况下，您可以修改默认值（如过期日期和时间），并允许下载原始资产及其演绎版。 您可以通过添加多个用户的电子邮件地址，向其发送电子邮件。
 
@@ -49,7 +49,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 要将资产共享为公共URL，请执行以下操作：
 
 1. 登录到 [!DNL Experience Manager Assets] 并导航到 **[!UICONTROL 文件]**.
-1. 选择资产或包含资产的文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
+1. 选择包含资产的资产或文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
 1. 的 **[!UICONTROL 链接共享]** 对话框中，其中包含一个自动生成的资产链接，位于 **[!UICONTROL 共享链接]** 字段。
 1. 复制资产链接并将其与用户共享。
 
@@ -57,7 +57,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 要通过电子邮件共享资产，请执行以下操作：
 
-1. 选择资产或包含资产的文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
+1. 选择包含资产的资产或文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
 1. 的 **[!UICONTROL 链接共享]** 对话框中，其中包含一个自动生成的资产链接，位于 **[!UICONTROL 共享链接]** 字段。
 
    * 在电子邮件地址框中，键入要与其共享链接的用户的电子邮件ID。 您可以与多个用户共享该链接。 如果用户是您组织的成员，请从下拉列表中显示的建议中选择其电子邮件ID。 如果用户是外部用户，请键入完整的电子邮件ID并按 **[!UICONTROL 输入]**;电子邮件ID会添加到用户列表。
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >如果共享资产被移动到其他位置，则其链接会停止工作。 重新创建链接并与用户重新共享。
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 下载和共享资产 {#download-and-share-assets}
+## 单独下载资产和共享 {#download-and-share-assets}
 
 用户可以下载所需的资产，并在 [!DNL Experience Manager]. 有关更多信息，请参阅 [如何搜索资产](/help/assets/search-assets.md), [如何下载资产](/help/assets/download-assets-from-aem.md)和 [如何下载收藏集](manage-collections.md#download-a-collection)
 
