@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
+source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1287'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 以链接方式共享资产 {#sharelink}
 
-通过链接共享资产是向外部各方、营销人员和其他人员提供资源的一种便捷方式 [!DNL Experience Manager] 用户。 利用功能，匿名用户可以访问和下载与他们共享的资产。 从共享链接下载资产时， [!DNL Experience Manager Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于大型下载，下载内容会捆绑到多个文件中，每个文件大小为100 GB。
+通过链接共享资产是向外部各方、营销人员和其他人员提供资源的一种便捷方式 [!DNL Experience Manager] 用户。 利用功能，匿名用户可以访问和下载与他们共享的资产。 从共享链接下载资产时， [!DNL Experience Manager Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台排入可管理文件大小的ZIP存档中。 对于大型下载，下载内容会捆绑到多个文件中，每个文件大小为100 GB。
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
