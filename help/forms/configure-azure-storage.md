@@ -2,14 +2,14 @@
 title: 如何配置Azure存储？
 description: 了解如何将表单与Azure存储服务器集成。
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
 
-# 配置 [!DNL Azure] 存储 {#configure-azure-storage}
+# 配置[!DNL Azure]存储 {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Azure] 存储配置，将表单与 [!DNL Azure] 存储服务。 表单数据模型可用于创建与交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。 例如：
 
@@ -93,4 +93,8 @@ ht-degree: 1%
 1. 切换 **[!UICONTROL 搜索键]** 将选项切换为“开”状态。 此选项仅适用于主数据类型。
 1. 点按 **[!UICONTROL 完成]** 然后点按 **[!UICONTROL 保存]** 保存表单数据模型。
 
-将数据模型对象属性定义为搜索键后，这些键将作为元数据保存在Azure存储中。
+将数据模型对象属性定义为搜索键后，哈希值将存储在Azure索引标记中，Base64编码值将存储在Azure元数据中。
+
+>[!NOTE]
+>
+>每个Azure实体仅允许10个搜索键，因为Azure仅允许每个Blob有10个标记，并且标记为搜索键的属性值在进行哈希处理后存储在Azure索引标记中。
