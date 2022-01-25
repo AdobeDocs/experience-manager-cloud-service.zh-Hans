@@ -2,10 +2,10 @@
 title: 如何为自适应表单配置提交操作
 description: 自适应表单提供了多个提交操作。 提交操作定义提交后如何处理自适应表单。 您可以使用内置的提交操作或创建您自己的操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 0%
+source-wordcount: '1886'
+ht-degree: 3%
 
 ---
 
@@ -145,13 +145,15 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 调用AEM工作流 {#invoke-an-aem-workflow}
 
-的 **[!UICONTROL 调用AEM工作流]** 提交操作将自适应表单与 [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 提交表单后，关联的工作流将自动在创作实例上启动。 提交操作会将以下内容放在工作流的有效负荷位置：
+的 **[!UICONTROL 调用AEM工作流]** 提交操作将自适应表单与 [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 提交表单后，关联的工作流将自动在创作实例上启动。 您可以将数据文件、附件和记录文档保存到工作流的有效负荷位置或变量中。 如果为外部数据存储标记了工作流并为外部数据存储配置了工作流，则只有变量选项可用。 您可以从可用于工作流模型的变量列表中进行选择。 如果在以后阶段而不是在创建工作流时将工作流标记为外部数据存储，请确保已设置所需的变量配置。
 
-* **数据文件**:它包含提交到自适应表单的数据。 您可以使用 **[!UICONTROL 数据文件路径]** 选项，以指定文件的名称和相对于有效负载的文件路径。 例如， `/addresschange/data.xml` 路径会创建名为 `addresschange` 并将其放置在有效载荷上。 您还可以仅指定 `data.xml` ，以便在不创建文件夹层次结构的情况下仅发送提交的数据。
+提交操作会将以下内容放置在工作流的有效负载位置，或者如果将工作流标记为外部数据存储，则放置变量：
 
-* **附件**:您可以使用 **[!UICONTROL 附件路径]** 选项，以指定用于存储上传到自适应表单的附件的文件夹名称。 文件夹是相对于有效负载创建的。
+* **数据文件**:它包含提交到自适应表单的数据。 您可以使用 **[!UICONTROL 数据文件路径]** 选项，以指定文件的名称和相对于有效负载的文件路径。 例如， `/addresschange/data.xml` 路径会创建名为 `addresschange` 并将其放置在有效载荷上。 您还可以仅指定 `data.xml` ，以便在不创建文件夹层次结构的情况下仅发送提交的数据。 如果工作流标记为外部数据存储，请使用变量选项，然后从可用于工作流模型的变量列表中选择变量。
 
-* **记录文档**:它包含为自适应表单生成的记录文档。 您可以使用 **[!UICONTROL 记录路径文档]** 选项，指定记录文档的名称和相对于有效负荷的文件路径。 例如， `/addresschange/DoR.pdf` 路径会创建名为 `addresschange` 相对于有效负载，并将 `DoR.pdf` 相对于有效载荷。 您还可以仅指定 `DoR.pdf` 以仅保存记录文档，而不创建文件夹层次结构。
+* **附件**:您可以使用 **[!UICONTROL 附件路径]** 选项，以指定用于存储上传到自适应表单的附件的文件夹名称。 文件夹是相对于有效负载创建的。 如果工作流标记为外部数据存储，请使用变量选项，然后从可用于工作流模型的变量列表中选择变量。
+
+* **记录文档**:它包含为自适应表单生成的记录文档。 您可以使用 **[!UICONTROL 记录路径文档]** 选项，指定记录文档的名称和相对于有效负荷的文件路径。 例如， `/addresschange/DoR.pdf` 路径会创建名为 `addresschange` 相对于有效负载，并将 `DoR.pdf` 相对于有效载荷。 您还可以仅指定 `DoR.pdf` 以仅保存记录文档，而不创建文件夹层次结构。 如果工作流标记为外部数据存储，请使用变量选项，然后从可用于工作流模型的变量列表中选择变量。
 
 在使用 **[!UICONTROL 调用AEM工作流]** 提交操作为 **[!UICONTROL AEM DS设置服务]** 配置：
 
@@ -161,7 +163,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 * **[!UICONTROL 处理服务器密码]**:工作流用户的密码
 
-要设置配置的值， [使用AEM SDK生成OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)和 [部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) 到Cloud Service实例。
+要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)。
 
 ## 使用同步或异步提交 {#use-synchronous-or-asynchronous-submission}
 

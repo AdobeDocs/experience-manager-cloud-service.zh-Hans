@@ -2,10 +2,10 @@
 title: '如何向其他用户分配工作流、发送电子邮件、在工作流中使用Adobe Sign? '
 description: 以Forms为中心的工作流允许您快速构建基于Forms的自适应工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将其发送到多个数据源，以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '5377'
-ht-degree: 0%
+source-wordcount: '5467'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,10 @@ ht-degree: 0%
 * 将工作流模型与各种数据源连接起来，以便轻松保存和检索数据。
 
 * 使用电子邮件步骤，在完成操作并在工作流开始或完成时发送通知电子邮件和其他附件。
+
+>[!NOTE]
+>
+>如果为外部存储标记了工作流模型，则对于所有Forms工作流步骤，您只能选择变量选项来存储或检索数据文件和附件。
 
 
 ## 分配任务步骤 {#assign-task-step}
@@ -66,7 +70,7 @@ ht-degree: 0%
 * **[!UICONTROL 预填充]**:下面列出的字段用作任务的输入：
 
    * **[!UICONTROL 使用选择输入数据文件]**:输入数据文件（.json、.xml、.doc或表单数据模型）的路径。 您可以使用相对于有效负载的路径检索输入数据文件，或检索存储在Document、XML或JSON数据类型变量中的文件。 例如，文件包含通过AEM收件箱应用程序为表单提交的数据。 示例路径为 [Payload_Directory]/workflow/data.
-   * **[!UICONTROL 使用]**:该位置可用的附件会附加到与任务关联的表单。 路径始终相对于有效负载。 示例路径为 [Payload_Directory]/attachments/. 您可以指定相对于有效负载放置的附件，或使用文档类型（数组列表>文档）变量为自适应表单指定输入附件
+   * **[!UICONTROL 使用]**:该位置可用的附件会附加到与任务关联的表单。 该路径可以相对于有效负荷，或检索存储在文档变量中的附件。 示例路径为 [Payload_Directory]/attachments/. 您可以指定相对于有效负载放置的附件，或使用文档类型（数组列表>文档）变量为自适应表单指定输入附件。
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ ht-degree: 0%
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL 被分派人]** > **[!UICONTROL 分配选项]**:指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或将任务分配给特定的AEM用户或组。
-* **[!UICONTROL 参与者选择器]**:当 **[!UICONTROL 动态发送给用户或组]** 选项。 您可以使用ECMAScript或服务动态选择用户或组。 有关更多信息，请参阅 [动态地为用户分配工作流](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 和 [创建自定义Adobe Experience Manager动态参与者步骤。](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **[!UICONTROL 参与者选择器]**:当 **[!UICONTROL 动态发送给用户或组]** 选项。 您可以使用ECMAScript或服务动态选择用户或组。 有关更多信息，请参阅 [动态地为用户分配工作流](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 和 [创建自定义Adobe Experience Manager动态参与者步骤。](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL 参与者]**:当 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 选项 **[!UICONTROL 参与者选择器]** 字段。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 
@@ -130,6 +134,10 @@ ht-degree: 0%
 * **[!UICONTROL 显示前一步骤的数据]**:选择此选项可使受分配人能够查看以前的受分配人、已对任务执行的操作、添加到任务的注释以及已完成任务的记录文档（如果可用）。
 * **[!UICONTROL 显示后续步骤的数据]**:选择此选项可使当前代理人能够查看由后续代理人执行的操作和添加到任务的注释。 它还允许当前受让人查看已完成任务的记录文档（如果可用）。
 * **[!UICONTROL 数据类型的可见性]**:默认情况下，代理人可以查看记录文档、受让人、已采取的操作以及先前和后续受让人已添加的注释。 使用数据类型的可见性选项限制受让人可见的数据类型。
+
+>[!NOTE]
+>
+>在为外部数据存储配置AEM工作流模型时，将“分配任务”步骤另存为草稿并检索“分配任务”步骤历史记录的选项会被禁用。 此外，在收件箱中，用于保存的选项处于禁用状态。
 
 ## 发送电子邮件步骤 {#send-email-step}
 
@@ -294,9 +302,9 @@ ht-degree: 0%
 
 ## “签名文档”步骤 {#sign-document-step}
 
-使用“签名文档”步骤，您可以使用 [!DNL Adobe Sign] 来签署文档。 使用 [!DNL Adobe Sign] 工作流步骤：对自适应表单进行签名，表单可以依次传递给签名者，也可以同时发送给所有签名者，具体取决于工作流步骤的配置。 [!DNL Adobe Sign] 启用的Adaptive Forms仅在所有签名者完成签名过程后才会提交到Experience Manager Forms Server。
+使用“签名文档”步骤，您可以使用 [!DNL Adobe Sign] 来签署文档。 在使用 [!DNL Adobe Sign] Workflow 步骤对自适应表单进行签名时，可以将表单逐个传送给签名者，也可以将表单同时发送给所有签名者，具体取决于工作流步骤的配置。仅在所有签名者完成签名过程后，[!DNL Adobe Sign] 支持的自适应表单才提交到 Experience Manager Forms Server。
 
-默认情况下， [!DNL Adobe Sign] 计划程序服务每24小时检查（轮询）签名者响应。 您可以 [更改环境的默认间隔](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
+默认情况下，[!DNL Adobe Sign] 调度程序服务每 24 小时检查（轮询）一次签名者响应。您可以 [更改环境的默认间隔](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
 “签名文档”步骤具有以下属性：
 

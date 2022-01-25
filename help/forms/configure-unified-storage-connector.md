@@ -1,9 +1,9 @@
 ---
 title: 如何为AEM Forms配置统一存储连接器？
 description: 了解如何管理AEM Forms的统一存储连接器。 使用统一存储连接器将AEM Forms连接到外部数据存储。
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -53,16 +53,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在为外部数据存储配置AEM工作流模型时，将“分配任务”步骤另存为草稿并检索“分配任务”步骤历史记录的选项不可用。
+>在为外部数据存储配置AEM工作流模型时，将“分配任务”步骤另存为草稿并检索“分配任务”步骤历史记录的选项会被禁用。
 
 ### AEM外部数据存储工作流准则 {#guidelines-workflows-external-data-storage}
 
 以下是使用AEM工作流将数据存储到外部数据存储(如Microsoft Azure存储服务器)时的准则：
 
-* 在工作流模型步骤中定义输入和输出数据文件及附件时，使用变量存储数据。 不选择 **[!UICONTROL 相对于有效负载]** 和 **[!UICONTROL 在绝对路径下可用]** 选项。 的 **[!UICONTROL 相对于有效负载]** 和 **在绝对路径下可用** 选项在您 [为外部数据存储配置AEM工作流模型](#configure-workflow-external-data-storage).
+* 在工作流模型步骤中定义输入和输出数据文件及附件时，使用变量存储数据。 不选择 **[!UICONTROL 相对于有效负载]** 和 **[!UICONTROL 在绝对路径下可用]** 选项。 的 **[!UICONTROL 相对于有效负载]** 和 **[!UICONTROL 在绝对路径下可用]** 选项在您 [为外部数据存储配置AEM工作流模型](#configure-workflow-external-data-storage).
 
 * 在向AEM工作流提交自适应表单时，使用变量存储数据文件和附件。 不选择 **[!UICONTROL 相对于有效负载]** 选项。 的 **[!UICONTROL 相对于有效负载]** 选项不会自动显示 [为外部数据存储配置AEM工作流模型](#configure-workflow-external-data-storage).
 
 * 请勿在工作流模型中使用自定义AEM工作流步骤来将数据存储在CRX DE存储库中。
 
-* 当您 [为外部数据存储配置AEM工作流模型](#configure-workflow-external-data-storage)，请勿根据工作流的数据为AEM收件箱创建自定义列。
+* 当您 [为外部数据存储配置AEM工作流模型](#configure-workflow-external-data-storage)，请勿为AEM收件箱创建自定义列，因为如果AEM收件箱中的工作项属于标记为外部存储的工作流，则不会获取自定义列的值。
