@@ -10,7 +10,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
+source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -29,11 +29,11 @@ Dynamic Media公司别名帐户可确保用户界面中所有现成的Dynamic Me
 
 配置Dynamic Media公司别名帐户时，请注意以下事项：
 
-* 在 **[!UICONTROL 编辑Dynamic Media配置]** 页面，要使缓存失效成功，您必须使 *both* the **[!UICONTROL 公司]** 帐户和 **[!UICONTROL 公司别名]** 帐户，同时。
 * 您的任何现有Dynamic Media URL或查看器嵌入代码 *live* 必须手动更新数字属性，以反映新的别名。 但是，任何具有您原始Dynamic Media公司名称的URL或查看器嵌入代码都将继续适用于现有资产或新资产。
 * Dynamic Media公司别名帐户功能仅限于Experience Manager Assets创作模式和交付。 公司别名不适用于Experience Manager Sites。 WCM（Web内容管理）组件不会因此更改而更新。 这些组件将继续使用原始Dynamic Media公司名称来获取Dynamic Media资产。
 * 您只能在 **[!UICONTROL 编辑Dynamic Media配置]** 页面。 但是，您可以通过支持案例创建任意数量的公司别名帐户，并在Dynamic Media URL或查看器嵌入代码中手动反映必要的别名。
 * 开箱即用 [缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) Dynamic Media的功能使在“Dynamic Media配置”页面中配置的公司帐户和公司别名帐户在Cloud Services中都无效的URL。
+* 在 **[!UICONTROL 编辑Dynamic Media配置]** 页面，要使缓存失效成功，您必须使 *both* the **[!UICONTROL 公司]** 帐户和 **[!UICONTROL 公司别名]** 帐户，同时。
 
 另请参阅 [在Cloud Services中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
