@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 72ddcbcc714bcd33de8f4f681db57872f5ca69ac
+source-git-commit: fb75c9099b77a397fa451b72ee997463a3f4f11e
 workflow-type: tm+mt
-source-wordcount: '3460'
-ht-degree: 96%
+source-wordcount: '3466'
+ht-degree: 99%
 
 ---
 
@@ -68,9 +68,9 @@ ht-degree: 96%
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
-+ 载入 {#onboarding}
-   + [载入 AEM as a Cloud Service](/help/onboarding/home.md)
-   + 学习载入概念 {#onboarding-concepts}
++ 入门 {#onboarding}
+   + [AEM as a Cloud Service 入门培训](/help/onboarding/home.md)
+   + 学习入门概念 {#onboarding-concepts}
       + [系统管理员](/help/onboarding/learn-concepts/system-administrator.md)
       + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
       + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
@@ -78,23 +78,23 @@ ht-degree: 96%
       + [Cloud Manager 简介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
       + [Adobe 支持](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-   + 载入历程 {#journey}
-      + [载入历程](/help/journey-onboarding/home.md)
-      + [载入历程概述](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-      + [载入流程快速入门](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
+   + 入门培训历程 {#journey}
+      + [入门培训历程](/help/journey-onboarding/home.md)
+      + [入门培训历程概述](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
+      + [开始入门培训流程](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
       + [将团队成员分配给 Cloud Manager 产品配置文件](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
       + [通过 Cloud Manager 设置云资源](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
       + [将团队成员分配给 AEM as a Cloud Service 产品配置文件](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
       + [开发人员和部署经理的学习路径](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
       + [AEM 用户的学习路径](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-   + AEM参考演示附加历程 {#demo-add-on}
+   + AEM 参考演示加载项历程 {#demo-add-on}
       + [概述](/help/journey-sites/demos-add-on/overview.md)
       + [安装](/help/journey-sites/demos-add-on/installation.md)
-      + [创建程序](/help/journey-sites/demos-add-on/create-program.md)
-      + [创建演示网站](/help/journey-sites/demos-add-on/create-site.md)
-      + [管理演示网站](/help/journey-sites/demos-add-on/manage.md)
-+ AEMas a Cloud Service迁移历程 {#migration-journey}
-   + [移动AEMas a Cloud Service入门](/help/journey-migration/getting-started.md)
+      + [创建项目](/help/journey-sites/demos-add-on/create-program.md)
+      + [创建演示站点](/help/journey-sites/demos-add-on/create-site.md)
+      + [管理您的演示站点](/help/journey-sites/demos-add-on/manage.md)
++ AEM as a Cloud Service 迁移历程 {#migration-journey}
+   + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
    + [实施阶段](/help/journey-migration/implementation.md)
    + [上线](/help/journey-migration/go-live.md)
@@ -267,7 +267,7 @@ ht-degree: 96%
             + [翻译最佳实践](/help/sites-cloud/administering/translation/best-practices.md)
    + 与 AEM as a Cloud Service 集成 {#integrations}
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [与Adobe Analytics自动设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
 + 资源 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -284,7 +284,7 @@ ht-degree: 96%
       + [添加和上传资源](/help/assets/add-assets.md)
       + [搜索资源](/help/assets/search-assets.md)
       + [常见资源管理任务](/help/assets/manage-digital-assets.md)
-      + [预览3D资产](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [预览 3D 资源](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [图像的智能标记](/help/assets/smart-tags.md)
       + [为视频资源添加智能标记](/help/assets/smart-tags-video-assets.md)
       + [如何组织资源](/help/assets/organize-assets.md)
@@ -326,7 +326,7 @@ ht-degree: 96%
    + 共享和分发资源 {#brand-portal}
       + [使用 [!DNL Brand Portal] 配置 [!DNL Assets] ](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [将资源发布到 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [将资源从 [!DNL Brand Portal] 发布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+      + [将资源从 [!DNL Brand Portal] 发布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans)
    + 内容片段 {#content-fragments}
       + [使用内容片段](/help/assets/content-fragments/content-fragments.md)
       + [使用内容片段和 GraphQL 进行 Headless 交付](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -348,9 +348,9 @@ ht-degree: 96%
       + [可选 - 配置 Dynamic Media，一般设置](/help/assets/dynamic-media/dm-general-settings.md)
       + [可选 - 配置 Dynamic Media，发布设置](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media 疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md)
-      + [配置Dynamic Media别名帐户](/help/assets/dynamic-media/dm-alias-account.md)
+      + [配置 Dynamic Media 别名帐户](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media 中的辅助功能](/help/assets/dynamic-media/accessibility-dm.md)
-      + [管理Dynamic Media资产](/help/assets/dynamic-media/managing-assets.md)
+      + [管理 Dynamic Media 资源](/help/assets/dynamic-media/managing-assets.md)
       + [优化图像质量的最佳实践](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [图像配置文件](/help/assets/dynamic-media/image-profiles.md)
       + [视频配置文件](/help/assets/dynamic-media/video-profiles.md)
@@ -397,7 +397,7 @@ ht-degree: 96%
    + [关键功能](/help/forms/key-features.md)
    + [重要更改](/help/forms/notable-changes.md)
    + 设置和配置服务 {#setup-environment}
-      + [载入 Cloud Service 环境](/help/forms/setup-forms-cloud-service.md)
+      + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
       + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
@@ -405,9 +405,9 @@ ht-degree: 96%
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
    + 将 PDF 表单转换为自适应表单 {#afcs}
-      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-      + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
-      + [审阅并修正转换后的表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
+      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
+      + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
+      + [审阅并修正转换后的表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-Hans#welcome-to-review-and-correct-editor)
    + 创建和发布自适应表单 {#create-an-adaptive-form}
       + 开始之前 {#before-you-start}
          + [创建模板](/help/forms/template-editor.md)
@@ -453,7 +453,7 @@ ht-degree: 96%
       + [使用表单数据模型](/help/forms/using-form-data-model.md)
    + [与 Adobe Sign 集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [与 DocuSign 集成](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [与站点集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [与 Sites 集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + 创建和使用工作流 {#create-form-centric-workflows}
       + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
@@ -462,8 +462,8 @@ ht-degree: 96%
    + 使用通信 {#using-communications}
       + [简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通信 API](/help/forms/aem-forms-cloud-service-communications.md)
-      + [通信API批量处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-      + [在PDF文档中使用自定义字体](/help/forms/use-custom-fonts.md)
+      + [Communications API 批次处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
    + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [常见问题](/help/forms/faq.md)
    + [已知问题](/help/forms/known-issues.md)
@@ -475,7 +475,7 @@ ht-degree: 96%
    + Screens as a Cloud Service 概述{#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定义](/help/screens-cloud/introduction/personas-screens-cloud.md)
-   + 载入 Screens as a Cloud Service {#onboarding-screens-cloud}
+   + Screens as a Cloud Service 入门培训 {#onboarding-screens-cloud}
       + [首次登录](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + 在 Cloud Manager 中添加 Screens 程序作为加载项 {#adding-screens-addon}
          + [将 Screens 程序作为加载项添加到新程序](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)
@@ -649,8 +649,8 @@ ht-degree: 96%
       + [AEM 技术基础](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 参考材料](/help/implementing/developing/reference-materials.md)
       + [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [快速创建站点和前端定制](/help/implementing/developing/introduction/quick-site-creation.md)
-      + [利用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+      + [快速站点创建和前端自定义](/help/implementing/developing/introduction/quick-site-creation.md)
+      + [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自定义站点模板和主题](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
       + 全栈 AEM 开发 {#full-stack}
@@ -668,7 +668,7 @@ ht-degree: 96%
             + [组件概述](/help/implementing/developing/components/overview.md)
             + [模板](/help/implementing/developing/components/templates.md)
             + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
+            + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=zh-Hans)
             + [内容服务的 JSON 导出器](/help/implementing/developing/components/json-exporter.md)
             + [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md)
             + [图像编辑器](/help/implementing/developing/components/image-editor.md)
@@ -710,25 +710,25 @@ ht-degree: 96%
             + [创建内容片段](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
             + [访问和交付内容片段](/help/implementing/developing/headless/getting-started/create-api-request.md)
          + 内容片段 {#content-fragments}
-            + [使用内容片段和 GraphQL 进行 Headless 交付](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-            + [使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-            + [为您的实例启用内容片段功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
-            + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-            + [管理内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
-            + [变量 - 创作片段内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-            + [使用关联内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-            + [元数据 - 片段属性](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-            + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-            + [预览 - JSON 呈现](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+            + [使用内容片段和 GraphQL 进行 Headless 交付](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=zh-Hans)
+            + [使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=zh-Hans)
+            + [为您的实例启用内容片段功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html?lang=zh-Hans)
+            + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=zh-Hans)
+            + [管理内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=zh-Hans)
+            + [变量 - 创作片段内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=zh-Hans)
+            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=zh-Hans)
+            + [使用关联内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=zh-Hans)
+            + [元数据 - 片段属性](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=zh-Hans)
+            + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=zh-Hans)
+            + [预览 - JSON 呈现](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hans)
          + 投放 API{#delivery-api}
             + [内容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hans)
             + [内容片段 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=zh-Hans)
-            + [带内容片段的 AEM GraphQL API - 示例内容和查询](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+            + [带内容片段的 AEM GraphQL API - 示例内容和查询](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=zh-Hans)
             + [对内容片段的远程 AEM GraphQL 查询的身份验证](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=zh-Hans)
       + 混合和 SPA 开发 {#hybrid}
          + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-Hans)
          + [SPA 简介和演练](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND 教程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [使用 React 快速入门](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -764,17 +764,17 @@ ht-degree: 96%
       + [ContextHub 诊断](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [扩展 ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [使用 ContextHub 配置分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
+      + [使用 ContextHub 配置分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=zh-Hans)
    + 配置和扩展 AEM as a Cloud Service {#configuring-and-extending}
-      + 使用App Builder扩展AEM{#app-builder}
+      + 使用 App Builder 扩展 AEM{#app-builder}
          + [使用 Adobe Developer App Builder 扩展 AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-         + [应用程序生成器简介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
-         + [Adobe开发人员控制台](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
-         + [SDK和CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [App Builder 简介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [SDK 和 CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [创建应用程序](/help/implementing/developing/extending/app-builder/videos/create.md)
          + [操作](/help/implementing/developing/extending/app-builder/videos/actions.md)
          + [存储库](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
-         + [事件驱动应用程序](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
+         + [事件驱动型应用程序](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
          + [前端应用程序](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
          + [安全性](/help/implementing/developing/extending/app-builder/videos/security.md)
          + [部署应用程序](/help/implementing/developing/extending/app-builder/videos/deploy.md)
@@ -816,6 +816,7 @@ ht-degree: 96%
    + [维护任务](/help/operations/maintenance.md)
    + [备份和恢复](/help/operations/backup.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
+   + [删除通用lucene索引](/help/operations/removal-generic-lucene-index.md)
 + 合规性 {#compliance}
    + [AEM as a Cloud Service 中的合规性](/help/compliance/home.md)
    + 数据隐私和保护就绪性 {#data-privacy}
