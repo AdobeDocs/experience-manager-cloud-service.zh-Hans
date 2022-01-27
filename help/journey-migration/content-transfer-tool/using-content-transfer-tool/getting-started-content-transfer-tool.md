@@ -1,10 +1,10 @@
 ---
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 27%
+source-wordcount: '859'
+ht-degree: 29%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 27%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="发行说明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="软件分发门户"
 
-内容传输工具可以从软件分发门户以zip文件的形式下载。 您可以通过 [包管理器](/help/implementing/developing/tools/package-manager.md) 在源Adobe Experience Manager(AEM)实例上。 确保下载最新版本。 有关最新版本的更多详细信息，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
+内容传输工具可以从软件分发门户以zip文件的形式下载。 您可以通过 [包管理器](/help/implementing/developing/tools/package-manager.md) 在源Adobe Experience Manager(AEM)实例上。 确保下载最新版本。 有关最新版本的更多详细信息，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载内容传输工具。
@@ -88,7 +88,7 @@ ht-degree: 27%
    1. **访问令牌**：输入访问令牌。
 
       >[!NOTE]
-      >您可以使用 **打开访问令牌** 按钮。 您需要确保属于目标Cloud Service实例中的AEM管理员组。
+      >您可以使用 **打开访问令牌** 按钮。 您需要确保属于目标Cloud Service实例中的“管理员”组。
 
    1. **参数**：选择以下参数以创建迁移集：
 
