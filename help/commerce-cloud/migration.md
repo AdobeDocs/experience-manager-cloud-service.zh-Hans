@@ -2,40 +2,40 @@
 title: 迁移到AEM Commerce Integration Framework(CIF)附加组件
 description: 如何从旧版本迁移到AEM Commerce Integration Framework(CIF)加载项
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 0%
+source-wordcount: '490'
+ht-degree: 3%
 
 ---
 
-# {#cif-migration}Experience Manager Cloud Service的迁移指南
+# 适用于Experience Manager Cloud Service的迁移指南 {#cif-migration}
 
 本指南可帮助确定您需要更新哪些区域才能进行Experience Manager Cloud Service迁移。
 
 ## CIF附加组件
 
-对于Experience Manager作为Cloud Service,CIF加载项是Adobe商务和第三方商务解决方案唯一支持的商务集成解决方案。 CIF附加组件是作为Cloud Service在Experience Manager时自动为客户部署的，无需手动部署。 请参阅[AEM Commerce as a Cloud Service入门](getting-started.md)。
+对于Experience Manageras a Cloud Service,CIF加载项是Adobe Commerce和第三方商务解决方案唯一支持的商务集成解决方案。 在Experience Manageras a Cloud Service时，会为客户自动部署CIF加载项，无需手动部署。 请参阅 [AEM Commerce入门as a Cloud Service](getting-started.md).
 
-要支持部署CIFAdobe的项目，请提供[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)。
+支持部署CIFAdobe的项目 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components).
 
-AEM 6.5也可通过[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)获取CIF附加组件。 它兼容，并且提供与Experience Manager的CIF加载项相同的功能 — 无需任何调整。
+CIF附加组件也可用于AEM 6.5，它还可通过 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 它兼容，并且提供与CIF附加组件相同的功能，用于Experience Manageras a Cloud Service — 无需进行任何调整。
 
-经典CIF及其依赖项不再可用。 必须根据使用`com.adobe.cq.commerce.api` Java API的此CIF版本的代码，将其调整为CIF附加组件及其原则。
+经典CIF及其依赖项不再可用。 依赖此CIF版本的代码使用 `com.adobe.cq.commerce.api` 必须根据CIF附加组件及其原则调整Java API。
 
 无法再安装以前可用的CIF连接器。 依赖此连接器的代码需要根据CIF附加组件及其原则进行调整。
 
 ## 项目结构
 
-了解[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)以及AEM作为Cloud Service的特性。 将项目设置作为Cloud Service布局调整为AEM。
+了解 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 以及AEMas a Cloud Service的特性。 将项目设置调整为AEMas a Cloud Service布局。
 与AEM 6.5部署相比，以下两个主要区别：
 
-* GraphQL客户端OSGI包&#x200B;**不能再**&#x200B;包含在AEM项目中，而是通过CIF附加组件进行部署
-* GraphQL客户端和Graphql数据服务&#x200B;**的OSGI配置不能再**&#x200B;包含到AEM项目中
+* GraphQL客户端OSGI包 **必须** 包含到AEM项目中，则会通过CIF附加组件进行部署
+* GraphQL客户端和Graphql数据服务的OSGI配置 **必须** 已包含到AEM项目中
 
 >[!TIP]
 >
->在GitHub上查看[AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)项目。 此项目为AEM提供了Maven配置文件作为Cloud Service和内部部署，其中考虑了不同的框架条件。
+>查看 [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) 项目。 此项目为AEMas a Cloud Service部署和内部部署提供了Maven配置文件，这些部署考虑了不同的框架条件。
 
 ## 产品目录
 
@@ -43,7 +43,7 @@ AEM 6.5也可通过[软件分发门户](https://experience.adobe.com/#/downloads
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用包含API的外部产品缓存进行集成。 示例[Magento开源](https://magento.com/products/magento-open-source)。
+>如果没有可用的实时API，则应使用包含API的外部产品缓存进行集成。 示例 [Magento开源](https://business.adobe.com/products/magento/open-source.html).
 
 ## 具有AEM渲染的产品目录体验
 

@@ -1,6 +1,6 @@
 ---
 title: 商务多商店设置
-description: 了解如何将多个商店视图从Magento映射到AEM。 这允许项目支持多租户和多语言用例。
+description: 了解如何将多个商店视图从Adobe Commerce映射到AEM。 这允许项目支持多租户和多语言用例。
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -10,32 +10,32 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # 商务多商店设置 {#multi-store}
 
-AEM CIF核心组件可用于多个AEM站点结构，并且基础GraphQL客户端实施可以连接到不同的Magento存储/存储视图。 这允许项目实施复杂的多存储/多站点设置。
+AEM CIF核心组件可用于多个AEM站点结构，并且基础GraphQL客户端实施可以连接到不同的Adobe Commerce存储/存储视图。 这允许项目实施复杂的多存储/多站点设置。
 
-一个视频演练，详细介绍用于将多个Magento商店视图与Adobe Experience Manager Sites集成的选项。
+一个视频演练，详细介绍用于将多个Adobe Commerce商店视图与Adobe Experience Manager Sites集成的选项。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 AEM Live Copy和语言副本的多站点管理功能与商务集成框架结合使用，以全局管理跨区域和区域设置的站点。
 
-建议的设置是在AEM网站与Magento存储视图之间使用1:1的关系。
+建议的设置是在AEM网站与Adobe Commerce商店视图之间使用1:1的关系。
 
 要将AEM网站和AEM CIF核心组件连接到专用商店视图，请执行以下步骤：
 
 ## 配置 {#configuration}
 
-1. 根据 [Magento网站、商店和视图](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. 根据 [Adobe Commerce网站、商店和视图](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
-2. 确保AEM和Magento之间的连接正常工作。
+2. 确保AEM和Adobe Commerce之间的连接正常工作。
 
 3. 按照以下步骤创建CIFCloud Service配置的子配置：
 
@@ -47,7 +47,7 @@ AEM Live Copy和语言副本的多站点管理功能与商务集成框架结合�
 
    >[!TIP]
    >
-   > 可以使用ID或UID来寻址商务目录。 在Magento2.4.2中引入了UID。仅当商务后端支持版本2.4.2或更高版本的GraphQL架构时，才启用此功能。
+   > 可以使用ID或UID来寻址商务目录。 在Adobe Commerce 2.4.2中引入的UID。仅当商务后端支持版本2.4.2或更高版本的GraphQL架构时，才启用此设置。
 
 4. 将子配置分配给AEM站点
 
@@ -59,7 +59,7 @@ AEM Live Copy和语言副本的多站点管理功能与商务集成框架结合�
 
 ## 其他资源
 
-* [Magento网站、商店和视图](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [Adobe Commerce网站、商店和视图](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF核心组件 — 多商店/站点配置](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [使用多站点管理器](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [重用内容：多站点管理器和Live Copy](/help/sites-cloud/administering/msm/overview.md)

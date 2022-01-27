@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1004'
 ht-degree: 7%
 
 ---
@@ -68,25 +68,25 @@ CIF附加组件可以从 [软件分发门户](https://experience.adobe.com/#/dow
 
    CIF附加组件zip文件包含两个Sling功能存档 `.far` 文件。 确保为AEM创作或AEM发布使用正确的SDK，具体取决于您计划如何运行本地AEMas a Cloud ServiceSDK。
 
-1. 创建名为的本地操作系统环境变量 `COMMERCE_ENDPOINT` 保留MagentoGraphQL端点。
+1. 创建名为的本地操作系统环境变量 `COMMERCE_ENDPOINT` 保留Adobe Commerce GraphQL端点。
 
    Mac OSX示例：
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    示例窗口：
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    AEM使用此变量连接到您的商务系统。 此外，CIF附加组件包含本地反向代理，以使Commerce GraphQL端点在本地可用。 CIF创作工具（产品控制台和选取器）以及执行直接GraphQL调用的CIF客户端组件均使用此功能。
 
    还必须为AEMas a Cloud Service环境设置此变量。 有关变量的更多信息，请参阅 [为AEMas a Cloud Service配置OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. （可选）要启用暂存目录功能，您必须为Magento实例创建集成令牌。 请按照 [快速入门](./getting-started.md#staging) 创建令牌。
+1. （可选）要启用暂存目录功能，您必须为Adobe Commerce实例创建集成令牌。 请按照 [快速入门](./getting-started.md#staging) 创建令牌。
 
    使用名称设置OSGi密钥 `COMMERCE_AUTH_HEADER` 值：
 

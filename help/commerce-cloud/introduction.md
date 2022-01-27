@@ -1,16 +1,16 @@
 ---
 title: 简介和概述
-description: 内容和商务的简介和概述。 Experience Manager商务集成框架(CIF)是Adobe推荐的模式，用于将Magento和其他第三方商务解决方案中的商务服务与Experience Cloud集成和扩展。
+description: 内容和商务的简介和概述。 Experience Manager商务集成框架(CIF)是Adobe推荐的模式，用于将Adobe Commerce和其他第三方商务解决方案的商务服务与Experience Cloud集成和扩展。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 0%
+source-wordcount: '894'
+ht-degree: 1%
 
 ---
 
-# 内容和商务 {#content-commerce}
+# Content and Commerce {#content-commerce}
 
 借助Adobe Experience Manager内容和商务，品牌可以更快地扩展和创新，以区分商务体验并捕获加速的在线支出。 AEM内容与商务将Experience Manager中沉浸式、全方位和个性化的体验与任意数量的商务解决方案结合在一起，为购物历程的所有部分提供差异化的体验，缩短实现价值的时间并提高转化率。
 
