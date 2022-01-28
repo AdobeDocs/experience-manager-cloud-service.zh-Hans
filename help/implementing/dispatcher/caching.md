@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
+source-git-commit: 265999e5e92fc7b0f78f41bee4545ca6cee618a5
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1547'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,8 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 在激活/停用期间使调度程序缓存失效 {#cache-activation-deactivation}
 
-与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面。
+与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面，并确保虚拟主机与ServerAlias localhost匹配，Dispatcher缓存失效需要该ServerAlias localhost。
+
 
 当发布实例收到作者提供的页面或资产的新版本时，它会使用刷新代理使其调度程序上的相应路径失效。 更新的路径将从调度程序缓存及其父缓存中删除，最高级别为(您可以使用 [stafileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
