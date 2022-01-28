@@ -1,20 +1,20 @@
 ---
 title: 如何从AEM 6.5 Forms和AEM 6.4 Forms迁移到 [!DNL AEM Forms] as a Cloud Service环境？
-description: 从 [!DNL AEM Forms] On-Premise environment to [!DNL AEM Forms] as a Cloud Service环境
+description: 从 [!DNL AEM Forms] 内部部署环境 [!DNL AEM Forms] as a Cloud Service环境
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 2%
+source-wordcount: '1219'
+ht-degree: 3%
 
 ---
 
-# 迁移到 [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# 迁移到[!DNL AEM Forms]as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 您可以从以下位置迁移自适应Forms、主题、模板和云配置： <!-- AEM 6.3 Forms--> AEM 6.4 Forms on OSGi和AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service。 在迁移这些资产之前，请使用迁移实用程序将早期版本中使用的格式转换为 [!DNL AEM] as a Cloud Service。 运行迁移实用程序时，将更新以下资产：
 
@@ -30,6 +30,10 @@ ht-degree: 2%
 * (仅适用于升级到AEM 6.4 Forms或AEM 6.5 Forms的AEM 6.3 Forms或以前版本环境)[!DNL不支持基于AEM 6.3 Forms或以前版本中可用现成模板和主题的自适应Forms [!DNL AEM Forms]as a Cloud Service。
 
 ## 前提条件 {#prerequisites}
+
+* [启用Forms — 数字注册](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) 的选项，并且 [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+
+![练习结果](assets/enable-add-on.png)
 
 * 在Cloud Service环境中，迁移实用程序与用户映射工具和内容传输工具结合使用。 迁移实用程序将 [!DNL AEM Forms] 与Cloud Service兼容的资产和内容传输工具可将内容从 [!DNL AEM Forms] 环境 [!DNL AEM] as a Cloud Service环境。 在使用迁移实用程序之前，请了解 [移动到AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). 该过程有两种工具：
    * [用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration):用户映射工具可帮助您将用户映射到相应的Adobe IMS用户帐户。
