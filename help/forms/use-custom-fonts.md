@@ -1,9 +1,9 @@
 ---
 title: '使用自定义字体 '
 description: '使用自定义字体 '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 您可以 [嵌入字体](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) 到PDF文档。 嵌入字体后，PDF文档在所有平台上都会显示（外观）相同。 它使用嵌入字体来确保外观和感觉一致。 未嵌入字体时，字体渲染取决于PDF查看器客户端的渲染设置。 如果客户机上提供字体，则PDF会使用指定的字体，否则PDF会以回退字体呈现。
 
-## 将自定义字体添加到Formsas a Cloud Service环境
+## 将自定义字体添加到Formsas a Cloud Service环境 {#custom-fonts-cloud-service}
 
 要向Cloud Service环境添加自定义字体，请执行以下操作：
 
-1. 设置并打开本地开发项目。 您可以使用您选择的任何IDE。
+1. 设置并打开 [地方开发项目](setup-local-development-environment.md). 您可以使用您选择的任何IDE。
 1. 在项目的顶级文件夹结构中，创建一个文件夹以保存自定义字体，并向该文件夹添加自定义字体。 例如， fonts/src/main/resources
    ![字体文件夹](assets/fonts.png)
 
@@ -71,3 +71,21 @@ ht-degree: 0%
    ```
 
 1. 签入更新的代码和 [运行管道](/help/implementing/cloud-manager/deploy-code.md) 以将字体部署到Cloud Service环境。
+
+1. 打开命令提示符，导航到本地项目文件夹，然后运行以下命令。 它会在.jar文件中创建字体包。 您可以使用.jar文件进行项目的本地部署。
+
+```shell
+mvn clean install
+```
+
+## 将自定义字体添加到本地FormsCloud Service开发环境 {#custom-fonts-cloud-service-sdk}
+
+1. 启动本地开发环境。
+1. 导航到 [crx-repository]\安装文件夹
+1. 将包含自定义字体和相关部署代码的.jar文件放入安装文件夹。 如果您没有.jar文件，请执行 [将自定义字体添加到Formsas a Cloud Service环境](#custom-fonts-cloud-service) 部分来生成文件。
+1. 运行 [基于文档的SDK环境](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >每当您部署更新的.jar文件以向本地部署环境添加或删除自定义字体时，请停止并启动基于Docker的SDK环境。
