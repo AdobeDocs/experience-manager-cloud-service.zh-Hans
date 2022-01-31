@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service通信批处理
 description: 如何创建以品牌为导向的个性化通信？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -168,55 +168,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >根据输入记录的数量和模板的复杂性，处理批处理可能需要一些时间，在检查输出文件的目标文件夹之前需要等待几分钟。
-
-## 注意事项  {#considerations-for-communications-apis}
-
-### 表单数据 {#form-data}
-
-通信API接受通常在Designer中创建的表单设计和作为输入的XML表单数据。 要使用数据填充文档，每个要填充的表单字段的XML表单数据中必须存在XML元素。 XML元素名称必须与字段名称匹配。 如果XML元素与表单字段不对应，或XML元素名称与字段名称不匹配，则忽略该元素。 不必与XML元素的显示顺序匹配。 重要因素是XML元素是使用相应值指定的。
-
-请考虑以下贷款申请表示例：
-
-![贷款申请表](assets/loanFormData.png)
-
-要将数据合并到此表单设计中，请创建与表单对应的XML数据源。 以下XML表示与示例抵押申请表单对应的XML数据源。
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### 支持的文档类型 {#supported-document-types}
-
-要完全访问通信API的渲染功能，建议使用XDP文件作为输入。 有时，可以使用PDF文件。 但是，使用PDF文件作为输入具有以下限制：
-
-不包含XFA流的PDF文档无法呈现为PostScript、PCL或ZPL。 通信API可以将具有XFA流（即在Designer中创建的表单）的PDF文档渲染为激光和标签格式。 如果PDF文档已签名、已认证或包含使用权限(使用AEM FormsReader扩展服务应用)，则无法将其呈现为这些打印格式。
 
 ## API参考文档
 
