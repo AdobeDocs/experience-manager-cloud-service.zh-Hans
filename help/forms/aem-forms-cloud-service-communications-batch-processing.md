@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service通信批处理
 description: 如何创建以品牌为导向的个性化通信？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -221,44 +221,3 @@ ht-degree: 0%
 ## API参考文档
 
 API参考文档提供了有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API引用文档以.yaml格式提供。 您可以下载 [批量API](assets/batch-api.yaml) 并将其上传到Postman以检查API的功能。
-
-## 已知问题 {#known-issues}
-
-* 指定PRINT时，在打印选项列表中只能指定一次特定渲染类型。 例如，您不能有两个打印选项，每个选项都指定PCL呈现类型。
-
-* 在运行批处理时，请勿修改批处理配置中使用的数据源USC配置/Azure云配置。 即使在执行后，如果需要进行任何更新，也应创建配置副本，而不是更新现有批量配置中使用的配置副本。
-
-## 最佳实践 {#best-practices}
-
-* Adobe建议将数据文件blob容器存储在Experience Manager Cloud Service使用的云区域中。
-
-## 常见问题 {#faq}
-
-**我是否可以使用监视文件夹或其他存储机制来存储输入和输出？**
-
-目前，您可以使用Microsoft Azure Storage保存输入数据和生成的文档。 Microsoft Azure存储提供了多种 [自动化数据移动操作](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
-
-**Experience Manager FormsCloud Service许可证中是否包含Microsoft Azure存储帐户？**
-
-Microsoft Azure存储帐户独立于Experience Manager FormsCloud Service许可证。
-
-**通信API是否在Experience Manager FormsCloud Service服务器上存储数据？**
-
-输入和输出数据仅保存在Microsoft Azure存储中。
-
-**通信API是否仅可用于Experience Manager FormsCloud Service? 我能否在内部部署环境中获得类似的功能？**
-
-您可以使用AEM Forms输出服务将模板(XFA或PDF)与客户数据结合，以生成PDF、PS、PCL和ZPL格式的文档。
-
-与内部部署环境相比，本Cloud Service提供了自动扩展和成本效益的额外优势。
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**我是否可以同时运行多个批处理操作？**
-是，您可以简单地运行多个批处理操作。 请始终对每个操作使用不同的源文件夹和目标文件夹，以避免任何冲突。

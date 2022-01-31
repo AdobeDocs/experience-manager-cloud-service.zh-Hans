@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3480'
 ht-degree: 99%
 
 ---
@@ -465,6 +465,7 @@ ht-degree: 99%
       + [通信 API](/help/forms/aem-forms-cloud-service-communications.md)
       + [Communications API 批次处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
+      + [已知问题、最佳实践和常见问题解答](/help/forms/communications-known-issues-limitations.md)
    + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [常见问题](/help/forms/faq.md)
    + [已知问题](/help/forms/known-issues.md)

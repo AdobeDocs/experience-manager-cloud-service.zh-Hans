@@ -2,9 +2,9 @@
 title: AEM Formsas a Cloud Service — 通信
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2250'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 通信API可帮助您将XDP模板、基于XDP的PDF文档以及Acrobat Forms(AcroForm)与XML数据结合使用，以生成各种格式的打印文档，并使您能够创建应用程序，以便：
 
-- 使用XML数据填充模板文件，以生成文档。
+- 使用 XML 数据填充模板文件来生成文档。
 
 - 以各种格式生成表单，包括非交互式PDF打印流。
 
-- 从XFA表单PDF中生成打印PDF。
+- 从 XFA 表单 PDF 生成打印 PDF。
 
 - 通过将多组数据与源模板合并，批量生成PDF、 PostScript、PCL和ZPL文档。
 
@@ -267,24 +267,8 @@ Type-1和OpenType®字体未嵌入到PCL输出中。 使用Type-1和Adobe Analyt
 | config/present/pdf/tagged | 控制在输出PDF文档中包含标记。 PDF中的标记是文档中包含的用于显示文档逻辑结构的附加信息。 标记有助于辅助辅助功能和重新设置格式。 例如，页码可以标记为项目，以便屏幕阅读器不会在文本的中间发音它。 尽管标记使文档更有用，但标记也会增加文档的大小和创建文档的处理时间。 |
 | config/present/pdf/version | 指定要生成的PDF文档的版本。 |
 
-### 已知问题
-
-- 确保模板和XCI配置文件的大小大于16KB。
-
-- 确保数据xml文件不包含XML声明标头。 例如, `<?xml version="1.0" encoding="UTF-8"?>`
-
-- 对于批量配置，只有OutputType(PDF、打印)和RenderType（PostScript、PCL、IPL、ZPL等）值组合的一个实例 中的“禁止页面加载闪烁”。
-
-- 在运行批处理时，请勿修改批处理配置中使用的数据源USC配置/Azure云配置。 即使在执行后，如果需要进行任何更新，也应创建配置副本，而不是更新现有批量配置中使用的配置副本。
-
-### 最佳实践
-
-- Adobe建议将数据文件blob容器存储托管在AEM Cloud Service使用的云区域中。
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-
