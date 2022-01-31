@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 7306afb0ff2e84077673bbd9c728028e0933ebb1
+source-git-commit: ddc49ef1eed491a4464d17b6a47f924c42381e7f
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2518'
 ht-degree: 2%
 
 ---
@@ -440,6 +440,8 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
   { "${VIRTUALHOST}" }
 }
 ```
+
+或者，您也可以在httpd/dispatcher配置中使用Cloud Manager环境变量。 如果某个程序具有多个开发环境，并且其中某些开发环境的httpd/dispatcher配置值不同，则此方法尤为重要。 与上面的示例一样，会使用相同的${VIRTUALHOST}语法，但不会使用上述变量文件中的Define声明。 阅读 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en) 有关配置Cloud Manager环境变量的说明。
 
 在本地测试配置时，您可以通过传递变量来模拟不同的环境类型 `DISP_RUN_MODE` 到 `docker_run.sh` 直接脚本：
 
