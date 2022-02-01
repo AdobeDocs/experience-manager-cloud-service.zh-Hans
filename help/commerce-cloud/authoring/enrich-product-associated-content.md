@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: 0194c7edebfc49fd0cf98779100424e3c5272981
+source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-数字资产可以与一个或多个产品SKU关联。 关联后，即可根据SKU搜索关键词，以发现数字资产。 在编辑包含相关产品的页面时，资产也会自动显示为关联内容，从而更轻松地创建下一个数字体验
+数字资产可以与一个或多个产品SKU关联。 关联后，即可根据SKU搜索关键词，以发现数字资产。 在编辑包含相关产品的页面时，资产也会自动显示为关联内容，从而更便于创建下一个数字体验。
 
 ## 体验片段
 
