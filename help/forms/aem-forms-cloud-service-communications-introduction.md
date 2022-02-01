@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dbc0ef92b0b61945ee195971aacab3bc8781b01c
+source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1026'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 您可以按需生成文档或创建批处理作业，以按定义的间隔生成多个文档。 通信API提供：
 
-* 简化的按需和批量文档生成功能
+* 简化了按需和批量文档生成功能。
 
-* HTTP API，可更轻松地与现有系统集成。 包括单独的API，用于按需（低延迟）和批处理操作（高吞吐量操作）。 它使文档生成成为一项高效的任务。
+* HTTP API，更便于与外部系统集成。 包括单独的API，用于按需（低延迟）和批处理操作（高吞吐量操作）。 它使文档生成成为一项高效的任务。
 
 * 安全访问数据。 通信API仅连接到客户指定的数据存储库并从中访问数据，不生成数据的本地副本，从而使通信高度安全。
 
@@ -43,9 +43,9 @@ ht-degree: 1%
 
 通信为按需和批量文档生成提供了HTTP API:
 
-* **[同步API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** 适用于按需、低延迟和单记录文档生成场景。 这些API更适合基于用户操作的用例。 例如，在用户完成填写表单后生成文档。
+* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于按需、低延迟和单记录文档生成场景。 这些API更适合基于用户操作的用例。 例如，在用户完成填写表单后生成文档。
 
-* **[批量API（异步API）](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** 适用于计划、高吞吐量和多文档生成场景。 这些API可批量生成文档。 例如，每月生成的电话账单、信用卡报表和福利报表。
+* **[批量API（异步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于计划、高吞吐量和多文档生成场景。 这些API可批量生成文档。 例如，每月生成的电话账单、信用卡报表和福利报表。
 
 通信API的一些主要用途包括：
 
@@ -100,7 +100,6 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 交互式PDF文档包含构成表单的各种元素。 这些元素可能包括字段（用于接受或显示数据）、按钮（用于触发事件）和脚本（用于执行特定操作的命令）。 单击按钮可能会触发更改字段状态的事件。 例如，选择性别选项可能会更改字段的颜色或表单的外观。 这是导致表单状态更改的手动事件示例。
 
 如果使用通信API对此类交互式PDF文档进行扁平化处理，则不会保留表单的状态。 要确保即使对表单进行扁平化处理后仍保留表单状态，请设置布尔值 _retainFormState_ 设置为True可保存并保留表单的状态。
-
 
 ## 入门
 
