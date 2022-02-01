@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 4%
@@ -43,11 +43,11 @@ Dynamic Media发布设置适用于经验丰富的网站开发人员和程序员�
 1. 在“图像服务器”页面中，设置图像服务器 — 发布上下文，然后使用五个选项卡配置默认的发布设置。
 
    * [图像服务器](#image-server)
-   * [安全性](#security-tab) 选项卡
-   * [目录管理](#catalog-management-tab) 选项卡
-   * [请求属性](#request-attributes-tab) 选项卡
-   * [常见缩略图属性](#common-thumbnail-attributes-tab) 选项卡
-   * [色彩管理属性](#color-management-attributes-tab) 选项卡
+      * [安全性](#security-tab) 选项卡
+      * [目录管理](#catalog-management-tab) 选项卡
+      * [请求属性](#request-attributes-tab) 选项卡
+      * [常见缩略图属性](#common-thumbnail-attributes-tab) 选项卡
+      * [色彩管理属性](#color-management-attributes-tab) 选项卡
 
    ![Dynamic Media发布设置页面](/help/assets/assets-dm/dm-publish-setup.png)
    *Dynamic Media发布设置页面，其中&#x200B;**[!UICONTROL 请求属性]**选项卡。*<br><br>
