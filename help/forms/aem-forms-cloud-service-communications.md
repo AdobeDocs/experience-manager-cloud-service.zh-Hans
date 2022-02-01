@@ -2,9 +2,9 @@
 title: AEM Formsas a Cloud Service — 通信
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
