@@ -2,39 +2,43 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
+source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1404'
 ht-degree: 1%
 
 ---
 
 # 使用AEM Formsas a Cloud Service通信 {#frequently-asked-questions}
 
-**AEM Formsas a Cloud Service通信文档处理API处于测试阶段，在实际发布之前可能会发生显着变化。**
+**AEM Formsas a Cloud Service — 通信文档处理API处于测试阶段，在实际发布之前可能会发生显着变化。**
 
-通信功能可帮助您创建品牌认可、个性化且标准化的文档，如业务信函、报表、报销申请处理信函、福利通知、每月账单或欢迎资料包。 该功能提供了用于生成和操作文档的API。 您可以根据需要生成或操作文档，或创建批处理作业以按定义的间隔生成多个文档。 通信API提供：
+通信功能可帮助您创建品牌认可、个性化且标准化的文档，如业务信函、报表、报销申请处理信函、福利通知、每月账单或欢迎资料包。
+
+该功能提供了用于生成和操作文档的API。 您可以根据需要生成或操作文档，或创建批处理作业以按定义的间隔生成多个文档。 通信API提供：
 
 * 简化了按需和批量文档生成功能。
 
-* 合并、重新排列和验证PDF文档。
+* 能够按需组合、重新排列和验证PDF文档。
 
 * HTTP API，更便于与外部系统集成。 包括单独的API，用于按需（低延迟）和批处理操作（高吞吐量操作）。 它使文档生成成为一项高效的任务。
 
 * 安全访问数据。 通信API仅连接到客户指定的数据存储库并从中访问数据，不生成数据的本地副本，从而使通信高度安全。
 
 ![信用卡对帐单示例](assets/statement.png)
-可以使用通信API创建信用卡对帐单。 此示例报表使用相同的模板，但会根据每个客户对信用卡的使用情况，将其数据分开。
+可以使用通信API创建信用卡对帐单。 此示例报表使用相同的模板，但会根据每个客户对信用卡的使用情况，为其分开数据。
 
 ## 文档生成
 
-通信文档生成API有助于将模板(XFA或PDF)与客户数据([XML数据](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文档。 这些API利用 [PDF和XFA模板](#supported-document-types) with [XML数据](communications-known-issues-limitations.md#form-data) 按需生成单个文档，或在定义的间隔内使用批处理作业生成多个文档。
+通信文档生成API有助于将模板(XFA或PDF)与客户数据([XML数据](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文档。 这些API利用 [PDF和XFA模板](#supported-document-types) with [XML数据](communications-known-issues-limitations.md#form-data) 用于按需生成单个文档或使用批处理作业生成多个文档。
 
 通常，您使用 [Designer](use-forms-designer.md) 和使用通信API将数据与模板合并。 您的应用程序可以将输出文档发送到网络打印机、本地打印机或存储系统以进行存档。 典型的开箱即用工作流和自定义工作流如下所示：
 
 ![通信文档生成工作流](assets/communicaions-workflow.png)
 
-根据用例的不同，您还可以通过网站或存储服务器下载这些文档。 文档生成API的一些示例包括：
+根据用例的不同，您还可以通过网站或存储服务器下载这些文档。
+
+文档生成API的一些示例包括：
 
 ### 创建PDF文档 {#create-pdf-documents}
 
@@ -96,11 +100,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ## 文档操作
 
-通信文档处理API有助于合并、重新排列和验证PDF文档。 通常，您会创建一个DDX并将其提交到文档管理API以组合或重新排列文档。 DDX文档提供了如何使用源文档生成一组必需文档的说明。 DDX参考文档提供了有关所有受支持操作的详细信息。 文档操作的一些示例包括：
+通信文档处理API有助于合并、重新排列和验证PDF文档。 通常，您会创建DDX并将其提交到文档处理API以组合或重新排列文档。 DDX文档提供了如何使用源文档生成一组必需文档的说明。 DDX参考文档提供了有关所有受支持操作的详细信息。 文档操作的一些示例包括：
 
 ### 组合PDF文档
 
-您可以使用文档制造API将两个或多个PDF文档组合到一个PDF文档或PDFPortfolio中。 您还可以将有助于导航或增强安全性的功能应用于PDF文档。 以下是组合PDF文档的一些方法：
+您可以使用文档制造API将两个或多个PDF文档组合到一个PDF文档或PDFPortfolio中。 以下是组合PDF文档的一些方法：
 
 * 组合简单的PDF文档
 * 创建PDFPortfolio
@@ -113,7 +117,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### 反汇编PDF文档
 
-可以使用文档制造API来拆解PDF文档。 该服务可以从源文档中提取页面或基于书签划分源文档。 通常，如果PDF文档最初是从许多单独的文档（如语句集合）中创建，则此任务会很有用。
+可以使用文档制造API来拆解PDF文档。 API可以从源文档中提取页面或基于书签划分源文档。 通常，如果PDF文档最初是从许多单独的文档（如语句集合）中创建，则此任务会很有用。
 
 * 从源文档提取页面
 * 根据书签划分源文档
@@ -123,7 +127,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### 转换并验证符合PDF/A的文档
 
-您可以使用文档制造API将PDF文档转换为符合PDF/A的版本，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
+您可以使用文档制造API将PDF文档转换为符合PDF/A的文档，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
 
 
 ## 通信API的类型
@@ -136,9 +140,9 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ## 入门
 
-通信可作为Formsas a Cloud Service用户的独立附加模块。 您可以联系Adobe销售团队或Adobe代表以请求获取访问权限。 Adobe 可为贵企业开启访问通道，并为您指定的管理员提供各种所需权限。 管理员可以向贵组织的AEM Forms开发人员（用户）授予使用API的访问权限。
+通信功能可作为Formsas a Cloud Service用户的独立附加模块使用。 您可以联系Adobe销售团队或Adobe代表以请求获取访问权限。 Adobe 可为贵企业开启访问通道，并为您指定的管理员提供各种所需权限。 管理员可以向贵组织的Formsas a Cloud Service开发人员（用户）授予使用API的访问权限。
 
-在联机后，要为Formsas a Cloud Service环境启用通信，请执行以下操作：
+入门后，要为Formsas a Cloud Service环境启用通信功能，请执行以下操作：
 
 1. 登录到Cloud Manager并打开AEM Formsas a Cloud Service实例。
 
@@ -152,9 +156,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 1. 单击 **[!UICONTROL 更新]**.
 
-1. 运行生成管道。
-
-构建配置成功后，将为您的环境启用通信API。
+1. 运行生成管道。 构建管道成功后，将为您的环境启用通信API。
 
 
 <!--
