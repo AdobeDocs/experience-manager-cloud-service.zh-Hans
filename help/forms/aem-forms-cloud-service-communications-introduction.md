@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fcde70f424d8e798469563397ba091547163bd77
+source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1410'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 * 简化了按需和批量文档生成功能。
 
-* 合并、重新排列和扩充PDF和XDP文档，并获取有关PDF文档的信息
+* 合并、重新排列和验证PDF文档。
 
 * HTTP API，更便于与外部系统集成。 包括单独的API，用于按需（低延迟）和批处理操作（高吞吐量操作）。 它使文档生成成为一项高效的任务。
 
@@ -26,33 +26,22 @@ ht-degree: 1%
 ![信用卡对帐单示例](assets/statement.png)
 可以使用通信API创建信用卡对帐单。 此示例报表使用相同的模板，但会根据每个客户对信用卡的使用情况，将其数据分开。
 
-## 工作原理如何？
+## 文档生成
 
-通信利用 [PDF和XFA模板](#supported-document-types) with [XML数据](#form-data) 按需生成单个文档，或在定义的间隔内使用批处理作业生成多个文档。
-
-通信API可帮助将模板(XFA或PDF)与客户数据([XML数据](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文档。
+通信文档生成API有助于将模板(XFA或PDF)与客户数据([XML数据](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文档。 这些API利用 [PDF和XFA模板](#supported-document-types) with [XML数据](communications-known-issues-limitations.md#form-data) 按需生成单个文档，或在定义的间隔内使用批处理作业生成多个文档。
 
 通常，您使用 [Designer](use-forms-designer.md) 和使用通信API将数据与模板合并。 您的应用程序可以将输出文档发送到网络打印机、本地打印机或存储系统以进行存档。 典型的开箱即用工作流和自定义工作流如下所示：
 
-![通信工作流](assets/communicaions-workflow.png)
+![通信文档生成工作流](assets/communicaions-workflow.png)
 
-根据用例的不同，您还可以通过网站或存储服务器下载这些文档。
-
-## 通信API
-
-通信为按需和批量文档生成提供了HTTP API:
-
-* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于按需、低延迟和单记录文档生成场景。 这些API更适合基于用户操作的用例。 例如，在用户完成填写表单后生成文档。
-
-* **[批量API（异步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于计划、高吞吐量和多文档生成场景。 这些API可批量生成文档。 例如，每月生成的电话账单、信用卡报表和福利报表。
-
-通信API的一些主要用途包括：
+根据用例的不同，您还可以通过网站或存储服务器下载这些文档。 文档生成API的一些示例包括：
 
 ### 创建PDF文档 {#create-pdf-documents}
 
 您可以使用文档生成API创建基于表单设计和XML表单数据的PDF文档。 输出是非交互式PDF文档。 即用户无法输入或修改表单数据。 基本的工作流程是将XML表单数据与表单设计合并，以创建PDF文档。 下图显示了表单设计和XML表单数据的合并，以生成PDF文档。
 
 ![创建PDF文档](assets/outPutPDF_popup.png)
+图：创建PDF文档的典型工作流
 
 ### 创建PostScript(PS)、打印机命令语言(PCL)、Zebra打印语言(ZPL)文档 {#create-PS-PCL-ZPL-documents}
 
@@ -70,7 +59,11 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### 处理批量数据以创建多个文档 {#processing-batch-data-to-create-multiple-documents}
 
-您可以使用文档生成API为XML批量数据源中的每个记录创建单独的文档。 您可以在批量和异步模式下生成文档。 您可以为转换配置各种参数，然后启动批处理。 <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+您可以使用文档生成API为XML批量数据源中的每个记录创建单独的文档。 您可以在批量和异步模式下生成文档。 您可以为转换配置各种参数，然后启动批处理。
+
+![创建PDF文档](assets/ou_OutputBatchMany_popup.png)
+
+<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -100,6 +93,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 如果使用通信API对此类交互式PDF文档进行扁平化处理，则不会保留表单的状态。 要确保即使对表单进行扁平化处理后仍保留表单状态，请设置布尔值 _retainFormState_ 设置为True可保存并保留表单的状态。
 
+
+## 文档操作
+
+通信文档处理API有助于合并、重新排列和验证PDF文档。 通常，您会创建一个DDX并将其提交到文档管理API以组合或重新排列文档。 DDX文档提供了如何使用源文档生成一组必需文档的说明。 DDX参考文档提供了有关所有受支持操作的详细信息。 文档操作的一些示例包括：
+
 ### 组合PDF文档
 
 您可以使用文档制造API将两个或多个PDF文档组合到一个PDF文档或PDFPortfolio中。 您还可以将有助于导航或增强安全性的功能应用于PDF文档。 以下是组合PDF文档的一些方法：
@@ -110,6 +108,9 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 * 使用Bates编号来组合文档
 * 拼合和组合文档
 
+![从多个PDF文档组合简单的PDF文档](assets/as_document_assembly.png)
+图：从多个PDF文档组合简单的PDF文档
+
 ### 反汇编PDF文档
 
 可以使用文档制造API来拆解PDF文档。 该服务可以从源文档中提取页面或基于书签划分源文档。 通常，如果PDF文档最初是从许多单独的文档（如语句集合）中创建，则此任务会很有用。
@@ -117,9 +118,21 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 * 从源文档提取页面
 * 根据书签划分源文档
 
+![将基于书签的源文档划分为多个文档](assets/as_intro_pdfsfrombookmarks.png)
+图：将基于书签的源文档划分为多个文档
+
 ### 转换并验证符合PDF/A的文档
 
 您可以使用文档制造API将PDF文档转换为符合PDF/A的版本，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
+
+
+## 通信API的类型
+
+通信为按需和批量文档生成提供了HTTP API:
+
+* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于按需、低延迟和单记录文档生成场景。 这些API更适合基于用户操作的用例。 例如，在用户完成填写表单后生成文档。
+
+* **[批量API（异步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于计划、高吞吐量和多文档生成场景。 这些API可批量生成文档。 例如，每月生成的电话账单、信用卡报表和福利报表。
 
 ## 入门
 
