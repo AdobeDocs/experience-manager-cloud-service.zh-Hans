@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 80483d812d8f8ee6a942d21a87a281a98feddbdd
+source-git-commit: 8c4261b91c16127ac86f5f469d8f309858d2f617
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 99%
 
 ---
@@ -528,6 +528,7 @@ ht-degree: 99%
          + [产品 Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
          + [多模板使用](/help/commerce-cloud/authoring/multi-template-usage.md)
          + [用关联内容扩充产品数据](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
+         + [产品推荐](/help/commerce-cloud/authoring/product-recommendations.md)
       + 管理 {#administering}
          + [多存储设置](/help/commerce-cloud/configuring/multi-store-setup.md)
          + [配置 SEO 的 URL](/help/commerce-cloud/configuring/advanced-url-configuration.md)
