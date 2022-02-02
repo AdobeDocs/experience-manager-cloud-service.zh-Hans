@@ -2,23 +2,22 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
+source-git-commit: fcde70f424d8e798469563397ba091547163bd77
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
 # 使用AEM Formsas a Cloud Service通信 {#frequently-asked-questions}
 
-**AEM Formsas a Cloud Service通信功能处于测试阶段。**
+**AEM Formsas a Cloud Service通信文档处理API处于测试阶段，在实际发布之前可能会发生显着变化。**
 
-通信功能可帮助您创建面向品牌、个性化且标准化的文档，如业务信函、报表、报销申请处理信函、福利通知、月费或欢迎资料包。
-
-
-您可以按需生成文档或创建批处理作业，以按定义的间隔生成多个文档。 通信API提供：
+通信功能可帮助您创建品牌认可、个性化且标准化的文档，如业务信函、报表、报销申请处理信函、福利通知、每月账单或欢迎资料包。 该功能提供了用于生成和操作文档的API。 您可以根据需要生成或操作文档，或创建批处理作业以按定义的间隔生成多个文档。 通信API提供：
 
 * 简化了按需和批量文档生成功能。
+
+* 合并、重新排列和扩充PDF和XDP文档，并获取有关PDF文档的信息
 
 * HTTP API，更便于与外部系统集成。 包括单独的API，用于按需（低延迟）和批处理操作（高吞吐量操作）。 它使文档生成成为一项高效的任务。
 
@@ -51,13 +50,13 @@ ht-degree: 1%
 
 ### 创建PDF文档 {#create-pdf-documents}
 
-您可以使用通信API创建基于表单设计和XML表单数据的PDF文档。 输出是非交互式PDF文档。 即用户无法输入或修改表单数据。 基本的工作流程是将XML表单数据与表单设计合并，以创建PDF文档。 下图显示了表单设计和XML表单数据的合并，以生成PDF文档。
+您可以使用文档生成API创建基于表单设计和XML表单数据的PDF文档。 输出是非交互式PDF文档。 即用户无法输入或修改表单数据。 基本的工作流程是将XML表单数据与表单设计合并，以创建PDF文档。 下图显示了表单设计和XML表单数据的合并，以生成PDF文档。
 
 ![创建PDF文档](assets/outPutPDF_popup.png)
 
 ### 创建PostScript(PS)、打印机命令语言(PCL)、Zebra打印语言(ZPL)文档 {#create-PS-PCL-ZPL-documents}
 
-您可以使用通信API创建基于XDP表单设计或PDF文档的PostScript(PS)、打印机命令语言(PCL)和Zebra打印语言(ZPL)文档。 这些API有助于将表单设计与表单数据合并以生成文档。 您可以将文档保存到文件并开发一个自定义流程以将其发送到打印机。
+您可以使用文档生成API创建基于XDP表单设计或PDF文档的PostScript(PS)、打印机命令语言(PCL)和Zebra打印语言(ZPL)文档。 这些API有助于将表单设计与表单数据合并以生成文档。 您可以将文档保存到文件并开发一个自定义流程以将其发送到打印机。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -71,7 +70,7 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### 处理批量数据以创建多个文档 {#processing-batch-data-to-create-multiple-documents}
 
-您可以为XML批量数据源中的每个记录创建单独的文档。 您可以在批量和异步模式下生成文档。 您可以为转换配置各种参数，然后启动批处理。 <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+您可以使用文档生成API为XML批量数据源中的每个记录创建单独的文档。 您可以在批量和异步模式下生成文档。 您可以为转换配置各种参数，然后启动批处理。 <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -85,7 +84,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### 扁平化交互式PDF文档 {#flatten-interactive-pdf-documents}
 
-您可以使用通信API将交互式PDF文档（例如，表单）转换为非交互式PDF文档。 交互式PDF文档允许用户输入或修改位于PDF文档字段中的数据。 将交互式PDF文档转换为非交互式PDF文档的过程称为拼合。 对PDF文档进行扁平化处理后，用户无法修改位于文档字段中的数据。 扁平化PDF文档的一个原因是要确保数据无法修改。
+您可以使用文档生成API将交互式PDF文档（例如，表单）转换为非交互式PDF文档。 交互式PDF文档允许用户输入或修改位于PDF文档字段中的数据。 将交互式PDF文档转换为非交互式PDF文档的过程称为拼合。 对PDF文档进行扁平化处理后，用户无法修改位于文档字段中的数据。 扁平化PDF文档的一个原因是要确保数据无法修改。
 
 您可以拼合以下类型的PDF文档：
 
@@ -101,11 +100,30 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 如果使用通信API对此类交互式PDF文档进行扁平化处理，则不会保留表单的状态。 要确保即使对表单进行扁平化处理后仍保留表单状态，请设置布尔值 _retainFormState_ 设置为True可保存并保留表单的状态。
 
+### 组合PDF文档
+
+您可以使用文档制造API将两个或多个PDF文档组合到一个PDF文档或PDFPortfolio中。 您还可以将有助于导航或增强安全性的功能应用于PDF文档。 以下是组合PDF文档的一些方法：
+
+* 组合简单的PDF文档
+* 创建PDFPortfolio
+* 组合加密文档
+* 使用Bates编号来组合文档
+* 拼合和组合文档
+
+### 反汇编PDF文档
+
+可以使用文档制造API来拆解PDF文档。 该服务可以从源文档中提取页面或基于书签划分源文档。 通常，如果PDF文档最初是从许多单独的文档（如语句集合）中创建，则此任务会很有用。
+
+* 从源文档提取页面
+* 根据书签划分源文档
+
+### 转换并验证符合PDF/A的文档
+
+您可以使用文档制造API将PDF文档转换为符合PDF/A的版本，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
+
 ## 入门
 
-通信可作为Formsas a Cloud Service用户的独立附加模块。 您可以联系Adobe销售团队或Adobe代表以请求获取访问权限。
-
-Adobe 可为贵企业开启访问通道，并为您指定的管理员提供各种所需权限。 管理员可以向贵组织的AEM Forms开发人员（用户）授予使用API的访问权限。
+通信可作为Formsas a Cloud Service用户的独立附加模块。 您可以联系Adobe销售团队或Adobe代表以请求获取访问权限。 Adobe 可为贵企业开启访问通道，并为您指定的管理员提供各种所需权限。 管理员可以向贵组织的AEM Forms开发人员（用户）授予使用API的访问权限。
 
 在联机后，要为Formsas a Cloud Service环境启用通信，请执行以下操作：
 
