@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3358'
-ht-degree: 23%
+source-wordcount: '3328'
+ht-degree: 24%
 
 ---
 
@@ -213,10 +213,6 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
    ![强制删除警告](assets/delete-referenced-asset.png)
 
 ### 管理远程DAM中资产的更新 {#handling-updates-to-remote-assets}
-
->[!NOTE]
->
->此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 以了解为环境启用该功能的信息。
 
 之后 [配置连接](#configure-a-connection-between-sites-and-assets-deployments) 在远程DAM和Sites部署之间，远程DAM上的资产可在Sites部署中使用。 然后，您可以对远程DAM资产或文件夹执行更新、删除、重命名和移动操作。 更新会在 Sites 部署中自动提供，但会有一些延迟。此外，如果在本地Experience Manager Sites页面上使用远程DAM上的资产，则对远程DAM上资产的更新会显示在站点页面上。
 
