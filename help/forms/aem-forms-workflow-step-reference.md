@@ -2,7 +2,7 @@
 title: '如何向其他用户分配工作流、发送电子邮件、在工作流中使用Adobe Sign? '
 description: 以Forms为中心的工作流允许您快速构建基于Forms的自适应工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将其发送到多个数据源，以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 1%
@@ -92,7 +92,7 @@ ht-degree: 1%
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL 被分派人]** > **[!UICONTROL 分配选项]**:指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或将任务分配给特定的AEM用户或组。
-* **[!UICONTROL 参与者选择器]**:当 **[!UICONTROL 动态发送给用户或组]** 选项。 您可以使用ECMAScript或服务动态选择用户或组。 有关更多信息，请参阅 [动态地为用户分配工作流](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 和 [创建自定义Adobe Experience Manager动态参与者步骤。](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL 参与者选择器]**:当 **[!UICONTROL 动态发送给用户或组]** 选项。 您可以使用ECMAScript或服务动态选择用户或组。 有关更多信息，请参阅 [动态地为用户分配工作流](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 和 [创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL 参与者]**:当 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 选项 **[!UICONTROL 参与者选择器]** 字段。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 

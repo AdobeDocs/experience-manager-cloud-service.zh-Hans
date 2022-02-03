@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 523b90a8f536a7ceea3caf11dc71f5ea9abe6844
+source-git-commit: 13aa3d34a6e81c7711665dcf974008d9324c6753
 workflow-type: tm+mt
-source-wordcount: '3489'
+source-wordcount: '3495'
 ht-degree: 99%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 99%
    + 发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
+         + [2021.11.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [2021.10.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [2021.9.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [2021.8.0 版发行说明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -124,6 +125,7 @@ ht-degree: 99%
          + [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [有关使用内容传输工具的指南和最佳实践](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [验证内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [从源中提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)

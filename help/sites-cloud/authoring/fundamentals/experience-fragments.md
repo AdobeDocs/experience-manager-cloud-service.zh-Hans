@@ -2,16 +2,17 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 99%
+source-wordcount: '1522'
+ht-degree: 95%
 
 ---
 
 # 体验片段 {#experience-fragments}
 
 在 Adobe Experience Manager as a Cloud Service 中，体验片段：
+
 * 是包含一个或多个组件的组
 * 包括内容和布局
 * 可以在页面中引用
@@ -22,10 +23,12 @@ ht-degree: 99%
 * 体验的一部分（页面）。
 * 可以跨多个页面使用。
 * 基于模板（仅可编辑）来定义结构和组件。
+* 此模板用于创建 *根页面* 体验片段的URL。
 * 由段落系统中的一个或多个的组件及布局构成。
 * 可以包含其他体验片段。
 * 可以与其他组件（包括其他体验片段）结合使用来构成完整的页面（体验）。
-* 可以具有不同的变体，可共享内容和/或组件。
+* 可以基于根页面创建一个或多个变量。
+* 这些变体可能共享内容和/或组件。
 * 可以划分为可在片段的多个变体中使用的构建基块。
 
 您可以使用体验片段：
@@ -55,7 +58,6 @@ ht-degree: 99%
    * 特定于渠道或上下文的变体。
    * 一些对组有意义的体验（例如，在各渠道间具有不同体验的营销活动）。
 * 当您使用全渠道商业时。
-   * 在[社交媒体](/help/implementing/developing/extending/experience-fragments.md#social-variations)渠道中大规模共享商业相关内容。
    * 使触点具有事务性。
 
 ## 组织您的体验片段 {#organizing-your-experience-fragments}
@@ -149,7 +151,6 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 1. 选择&#x200B;**保存**。
 
-
 ## 创建体验片段 {#creating-an-experience-fragment}
 
 要创建体验片段，请执行以下操作：
@@ -174,6 +175,12 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
    **标题**&#x200B;是必填项。如果&#x200B;**名称**&#x200B;留空，将从&#x200B;**标题**&#x200B;派生名称。
 
    ![体验片段属性](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >体验片段模板中的标记将不会与此体验片段根页面上的标记合并。
+   >
+   >这些是完全分开的。
 
 1. 单击&#x200B;**创建**。
 
@@ -230,6 +237,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
    ![变量属性](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. 使用&#x200B;**完成**&#x200B;确认，新的变量将显示在面板中。
 
 ## 使用您的体验片段 {#using-your-experience-fragment}
@@ -281,7 +289,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 您的构建基块会显示在&#x200B;**构建基块**&#x200B;选项卡中。对于每个基块，可执行以下操作：
 
-* ****&#x200B;转至母版：在新选项卡中打开母版变体
+* **转到主控**:在新选项卡中打开根页面变量
 * **重命名**
 * **删除**
 
@@ -336,8 +344,6 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
       * **Pinterest 钉板**
    * **引用**
       * 引用列表
-   * **社交媒体状态**
-      * 社交媒体变体的详细信息
 
 ## 纯 HTML 演绎版 {#the-plain-html-rendition}
 
