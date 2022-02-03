@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] as a Cloud Service 预发行版渠道'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 预发行版渠道'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 ## 简介 {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-hans#aem-as-cloud-service)上的时间表，每月提供新功能。要熟悉计划于下个月推出的功能，客户可以订阅预发行版渠道。要访问该渠道，可通过在标准程序开发环境或任何沙盒程序环境中进行适当的配置。客户可以预览对 Sites 控制台的更改，以及针对任何新的预发行版 API 的生成代码的更改。
+[!DNL Adobe Experience Manager] as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)上的时间表，每月提供新功能。要熟悉计划于下个月推出的功能，客户可以订阅预发行版渠道。要访问该渠道，可通过在标准程序开发环境或任何沙盒程序环境中进行适当的配置。客户可以预览对 Sites 控制台的更改，以及针对任何新的预发行版 API 的生成代码的更改。
 
 [每月发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中发布了给定月份的预发行版功能的列表。
 
@@ -50,7 +50,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 如果要让环境恢复到常规（非预发行版）渠道的表现，可以删除该变量或者将其设置为其他值。
 
-* 或者，您也可以通过 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
+* 或者，您也可以从 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md) 配置环境变量。
 
 ### 本地 SDK {#local-sdk}
 
@@ -110,14 +110,14 @@ Javadocs 将发布到 Maven Central。
 
    像往常一样，单个项目可以使用依赖关系。
 
-1. 部署到您的本地服务器
+1. 部署到您的本地服务器。
 1. 如果对它在本地按预期方式工作感到满意，请将代码提交到开发分支，并使用 Cloud Manager 非生产管道部署到订阅预发行版渠道的环境。
 
 >[!CAUTION]
 > 
 > 在部署到暂存或生产环境时，绝不能使用 `aem-prerelease-sdk-api` artifactId。在通过生产管道进行部署时，始终使用 aem-sdk-api。同样，不应通过生产管道部署引用预发行版 API 的代码。
 
-[AEM CS SDK 构建分析器 Maven 插件 v1.0 和更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-hans#developing)将通过检查依赖关系，检测项目中是否使用了预发行版 API。如果分析器找到它，将使用预发行版 SDK API 来分析项目。
+[AEM CS SDK 构建分析器 Maven 插件 v1.0 和更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing)将通过检查依赖关系，检测项目中是否使用了预发行版 API。如果分析器找到它，将使用预发行版 SDK API 来分析项目。
 
 ## 注意事项 {#considerations}
 
