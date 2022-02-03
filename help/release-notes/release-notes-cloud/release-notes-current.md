@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 34%
@@ -52,10 +52,10 @@ ht-degree: 34%
 
    * 配置向图像添加数字水印。
 
-* 管理员现在可以配置电子邮件服务以进行大量下载。 它允许用户从 [!DNL Experience Manager Assets] 界面。 用户在下载过程完成后会收到一封电子邮件通知，其中包含已存档zip文件夹的下载链接。
+* 管理员现在可以配置电子邮件服务以进行大量下载。 它允许用户 [为大量下载启用电子邮件通知](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) 从 [!DNL Experience Manager Assets] 界面。 用户在下载过程完成后会收到一封电子邮件通知，其中包含已存档zip文件夹的下载链接。
 
 
-* “管理发布”功能通过改进的用户界面得到了增强。 用户可以向选定目标发布或取消发布内容，从DAM存储库中将内容添加到发布列表，包含文件夹设置以发布选定文件夹的内容并应用过滤器，以及计划在以后的日期或时间发布内容。
+* 的 [管理发布](/help/assets/manage-publication.md) 通过改进的用户界面增强了功能。 用户可以向选定目标发布或取消发布内容， [添加内容](/help/assets/manage-publication.md#add-content) 从DAM存储库的发布列表， [包含文件夹设置](/help/assets/manage-publication.md#include-folder-settings) 发布选定文件夹的内容并应用过滤器，以及 [计划发布](/help/assets/manage-publication.md#publish-assets-later) 日期或时间。
 
 ### 错误修复 {#bug-fixes}
 
