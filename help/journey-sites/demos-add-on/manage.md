@@ -1,9 +1,9 @@
 ---
 title: 管理演示网站
 description: 了解可用于帮助您管理演示网站的工具以及如何删除它们。
-source-git-commit: cb04570664188635d6dc0237eb4ab0a9d347aaf2
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,17 @@ ht-degree: 0%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM快速网站创建历程的上一文档中， [创建站点、](create-site.md) 您基于“参考演示加载项”的模板创建了一个新的演示网站。 您现在应该：
+在AEM参考演示附加组件历程的上一文档中， [创建站点、](create-site.md) 您基于“参考演示加载项”的模板创建了一个新的演示网站。 您现在应该：
 
 * 了解如何访问AEM创作环境。
 * 了解如何根据模板创建网站。
 * 了解导航网站结构和编辑页面的基础知识。
+
+如果您还 [为您的演示网站启用AEM Screens,](screens.md) 您还应该：
+
+* 了解AEM Screens的基础知识。
+* 了解We.Cafe演示内容。
+* 了解如何为We.Cafe配置AEM Screens。
 
 现在，您有自己的演示网站可供浏览，本文介绍了可用于帮助您管理演示网站的工具以及如何删除这些工具。
 

@@ -1,21 +1,21 @@
 ---
-title: 创建程序
+title: 创建项目
 description: 了解如何设置新项目和管道以部署加载项。
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 0%
+source-wordcount: '715'
+ht-degree: 1%
 
 ---
 
 
-# 创建程序 {#creating-a-program}
+# 创建项目 {#creating-a-program}
 
 了解如何设置新项目和管道以部署加载项。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM快速网站创建历程的上一文档中， [了解参考演示附加组件安装，](installation.md) 您学习了参考演示附加组件的安装过程如何工作，展示了不同部分如何协同工作。 您现在应该：
+在AEM参考演示附加组件历程的上一文档中， [了解参考演示附加组件安装，](installation.md) 您学习了参考演示附加组件的安装过程如何工作，展示了不同部分如何协同工作。 您现在应该：
 
 * 对Cloud Manager有基本的了解。
 * 了解管道如何将内容和配置交付到AEM。
@@ -76,7 +76,7 @@ ht-degree: 0%
 
    ![编辑程序对话框](assets/edit-program-dialog.png)
 
-1. 在 **解决方案和附加组件** 选项卡，展开 **站点** 条目，然后检查 **参考演示**. 点按或单击 **更新**.
+1. 在 **解决方案和附加组件** 选项卡，展开 **站点** 条目，然后检查 **参考演示**. 如果您还希望为AEM Screens创建演示，请查看 **Screens** 选项。 点按或单击 **更新**.
 
    ![查看参考演示选项](assets/edit-program-add-on.png)
 
