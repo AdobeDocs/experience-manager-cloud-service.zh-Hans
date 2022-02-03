@@ -2,17 +2,15 @@
 title: AEM Formsas a Cloud Service — 通信
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
 
 
-# 使用AEM Formsas a Cloud Service通信API — 同步处理 {#frequently-asked-questions}
-
-**“通信”功能处于测试阶段。**
+# 使用同步处理 {#sync-processing-introduction}
 
 通信允许您创建、组合和提供以品牌为导向的个性化通信，如商务信函、文档、报表、理赔处理信函、福利通知、理赔处理信函、每月账单和欢迎资料包。 您可以使用通信API将模板(XFA或PDF)与客户数据结合，以PDF、PS、PCL、DPL、IPL和ZPL格式生成文档。
 
