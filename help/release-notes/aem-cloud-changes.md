@@ -3,9 +3,9 @@ title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '819'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="对AEM作为Cloud Service的显着更改"
->abstract="在此选项卡中，您可以查看有助于您了解内部部署版AEM之间或与Adobe Managed Services中的AEM as a Cloud Service相比有何差异的内容。"
->additional-url="https://video.tv.adobe.com/v/330543" text="AEM作为Cloud Service的演变"
+>title="AEM as a Cloud Service 中的重大更改"
+>abstract="在此选项卡中，您可以查看相关内容来帮助您了解内部部署 AEM 或 Adobe Managed Services 中的 AEM 与 AEM as a Cloud Service 之间的差异。"
+>additional-url="https://video.tv.adobe.com/v/330543" text="AEM as a Cloud Service 的演变"
 
 
 >[!NOTE]
->本文档重点介绍了对 AEM 整体的显著更改。有关更多信息和特定于解决方案的更改，请参阅：
+>本文档重点介绍了对 AEM 整体的重大更改。有关更多信息和特定于解决方案的更改，请参阅：
 >
 >* [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)
 >* 与先前版本相比，Adobe Experience Manager as a Cloud Service 具有的[新增功能和不同之处](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service[架构](/help/overview/architecture.md)
+>* Adobe Experience Manager as a Cloud Service 的[架构](/help/overview/architecture.md)
 >* [对 AEM Sites as a Cloud Service 的显著更改](/help/sites-cloud/sites-cloud-changes.md)
 >* [对 AEM Assets as a Cloud Service 的显著更改](/help/assets/assets-cloud-changes.md)
 
@@ -71,7 +71,7 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 
 ## 不允许更改发布存储库 {#changes-to-publish-repo}
 
-除了发布层`/home`文件夹下的更改之外，还不允许在AEMCloud Service上直接更改发布存储库。 在On-Premise AEM或AEM on AMS的先前版本中，可以直接对发布存储库进行代码更改。 可通过以下方式缓解某些限制：
+除了发布层上的 `/home` 文件夹下的更改外，不允许在 AEM Cloud Service 上直接更改发布存储库。在内部部署 AEM 或 AEM on AMS 的早期版本中，可以直接对发布存储库进行代码更改。可以通过以下方式减少一些限制：
 
 * 对于内容和基于内容的配置：对创作实例进行更改并将其发布。
 * 对于代码和配置：在 GIT 存储库中进行更改，然后运行 CI/CD 管道以将其推出。
@@ -104,7 +104,7 @@ AEM 云服务中不能使用其他运行模式或自定义运行模式。
 
 ## 删除了经典 UI {#classic-ui}
 
-经典 UI 在 AEM 云服务中不再可用。
+经典 UI 在 AEM Cloud Service 中不再可用。
 
 ## 发布端交付 {#publish-side-delivery}
 
@@ -114,4 +114,4 @@ AEM 云服务中不能使用其他运行模式或自定义运行模式。
 
 ## 资产处理和交付 {#asset-handling}
 
-在[!DNL Experience Manager Assets]中，资产上传、处理和下载已优化为[!DNL Cloud Service]。 [!DNL Assets] 现在更高效，可进行更大的扩展，并且允许您以更快的速度上传和下载。此外，它还会影响现有的自定义代码和某些操作。 有关更改列表以及与[!DNL Experience Manager] 6.5功能对等的信息，请参阅[对 [!DNL Assets]](/help/assets/assets-cloud-changes.md)的更改。
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 中已优化资产上传、处理和下载。[!DNL Assets] 现在更高效，支持更多扩展，并可让您以更快的速度上传和下载。此外，它会影响现有的自定义代码和一些操作。有关更改列表以及与 [!DNL Experience Manager] 6.5 功能的等同性，请参阅[更改 [!DNL Assets]](/help/assets/assets-cloud-changes.md)。
