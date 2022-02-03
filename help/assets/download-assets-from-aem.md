@@ -1,13 +1,13 @@
 ---
 title: 下载资源
 description: 从下载资产 [!DNL Adobe Experience Manager Assets] 以及启用或禁用下载功能。
-contentOwner: VG
+contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: ddc79a163e328d560912550900242cc089df3958
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1220'
 ht-degree: 3%
 
 ---
@@ -41,46 +41,31 @@ ht-degree: 3%
 
 ![收件箱通知](assets/inbox-notification-for-large-downloads.png)
 
-<!--
-The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-![Download notification](assets/download-notification.png)
-
-*Figure: Download notification via [!DNL Experience Manager] Inbox.*
-
-Asynchronous downloads are triggered in either of the following case:
-
-* If there are more than 10 assets or more than 100 MB to be downloaded.
-* If the download takes more than 30 seconds to prepare.
--->
-
-
-<!-- Go live is on 27th Jan 2022
-### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+### 为大型下载启用电子邮件通知 {#enable-emails-for-large-downloads}
 
 >[!NOTE]
 >
->This functionality is available in the Experience Manager prerelease channel.
+>此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 以了解为环境启用该功能的信息。
 
-Asynchronous downloads are triggered in any of the following cases:
+在以下任何情况下，都会触发异步下载：
 
-* If there are more than ten assets 
-* If the download size is more than 100 MB
-* If the download takes more than 30 seconds to prepare
+* 如果资产超过十个
+* 如果下载大小超过100 MB
+* 如果下载需要超过30秒才能准备
 
-While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+当异步下载在后端运行时，用户可以继续浏览并在Experience Manager中进一步工作。 下载过程完成后，需要一个现成的机制通知用户。 要实现此目标，管理员可以通过设置SMTP服务器来配置电子邮件服务。 请参阅 [配置邮件服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
+配置电子邮件服务后，管理员和用户可以从Experience Manager界面启用电子邮件通知。
 
-To enable email notifications:
+要启用电子邮件通知，请执行以下操作：
 
-1. Log in to [!DNL Experience Manager Assets].
-1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The User Preferences window opens.
-1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
+1. 登录到 [!DNL Experience Manager Assets].
+1. 单击右上角的用户图标，然后单击 **[!UICONTROL 我的首选项]**. 将打开“用户首选项”窗口。
+1. 选择 **[!UICONTROL 资产下载电子邮件通知]** 复选框，单击 **[!UICONTROL 接受]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
--->
 
 要下载资产，请执行以下步骤：
 
@@ -111,12 +96,6 @@ To enable email notifications:
    ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## 下载使用链接共享共享的资产 {#link-share-download}
-
-<!--
->[!NOTE]
->
->This functionality is available in the Experience Manager prerelease channel.
--->
 
 使用链接共享资产是一种非常方便的方式，可让感兴趣的人无需登录即可使用该链接 [!DNL Assets]. 请参阅 [链接共享功能](/help/assets/share-assets.md#sharelink).
 

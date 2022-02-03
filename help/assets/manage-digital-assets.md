@@ -1,14 +1,14 @@
 ---
-title: 管理数字资产
+title: 管理数字资源
 description: 了解各种资产管理和编辑方法
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: c49352926c67587096b8c60840e00bf379b92075
 workflow-type: tm+mt
-source-wordcount: '4320'
+source-wordcount: '4063'
 ht-degree: 16%
 
 ---
@@ -272,33 +272,41 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >要解析或删除其他页面中的传入引用，请在删除资产之前更新相关引用。 您可以禁止删除引用的资产，因为它会导致链接断开。 使用叠加禁用强制删除按钮。
 
-## 下载资产 {#download-assets}
+## 下载资源 {#download-assets}
 
 请参阅 [下载资产 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## 发布或取消发布资产 {#publish-assets}
 
-1. 导航到要发布或要从发布环境中删除的资产文件夹（取消发布）的位置。
+您可以将包含资产的资产和文件夹从创作实例发布到 [!DNL Experience Manager Assets], [!DNL Dynamic Media]和 [!DNL Brand Portal]. 您可以使用以下任一方式在资产或文件夹级别发布或取消发布资产 **[!UICONTROL 快速发布]** 或 **[!UICONTROL 管理发布]** 选项 [!DNL Experience Manager Assets] 界面。
 
-1. 选择要发布或取消发布的资产或文件夹，然后选择 **[!UICONTROL 管理发布]** ![管理发布选项](assets/do-not-localize/globe-publication.png) 选项。 或者，要快速发布，请选择 **[!UICONTROL 快速发布]** 选项。 如果要发布的文件夹包含空文件夹，则不会发布空文件夹。
+请参阅 [管理发布自 [!DNL Experience Manager]](/help/assets/manage-publication.md)
 
-1. 选择 **[!UICONTROL 发布]** 或 **[!UICONTROL 取消发布]** 选项。
+<!--
 
-   ![取消发布操作](assets/unpublish_action.png)
-   *图：发布和取消发布选项和计划选项。*
+1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
-1. 选择 **[!UICONTROL 现在]** 立即对资产执行操作或选择 **[!UICONTROL 稍后]** 以计划操作。 如果选择 **[!UICONTROL 稍后]** 选项。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
 
-1. 发布时，如果资产引用了其他资产，则向导中会列出其引用。 只会显示那些自上次发布以来未发布或修改的引用。 选择要发布的引用。
+1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
 
-1. 取消发布时，如果资产引用了其他资产，请选择要取消发布的引用。 单击 **[!UICONTROL 取消发布]**. 在确认对话框中，单击 **[!UICONTROL 取消]** 停止操作或单击 **[!UICONTROL 取消发布]** ，以确认将在指定的日期取消发布资产。
+   ![Unpublish action](assets/unpublish_action.png)
+   *Figure: Publish and unpublish options and the scheduling option.*
 
-了解以下与发布或取消发布资产或文件夹相关的限制和提示：
+1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
 
-* 选项 [!UICONTROL 管理发布] 仅对具有复制权限的用户帐户可用。
-* 取消发布复杂资产时，仅取消发布该资产。请避免取消发布引用，因为其他已发布的资产可能会引用这些引用。
-* 未发布空文件夹。
-* 如果您发布的资产正在处理，则只会发布原始内容。 缺少演绎版。 等待处理完成，然后在处理完成后发布或重新发布资产。
+1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
+
+1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
+
+Understand the following limitations and tips related to publishing or unpublishing assets or folders:
+
+* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
+* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
+* Empty folders are not published.
+* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+
+-->
 
 ## 已关闭的用户组 {#closed-user-group}
 
@@ -322,7 +330,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 1. 发布文件夹，然后尝试从发布实例访问该文件夹。 将显示登录屏幕。
 1. 如果您是CUG成员，请输入您的安全凭据。 文件夹在 [!DNL Experience Manager] 验证你。
 
-## 搜索资产 {#search-assets}
+## 搜索资源 {#search-assets}
 
 搜索资产是使用数字资产管理系统的核心 — 无论是供创意人员进一步使用，还是由业务用户和营销人员对资产进行稳健管理，还是由DAM管理员进行管理。
 
