@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
+source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2039'
 ht-degree: 3%
 
 ---
@@ -92,27 +92,27 @@ ht-degree: 3%
 >
 > URL格式的存储特定配置需要 [CIF核心组件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 和最新版本的Adobe Experience Manager Content and Commerce加载项。
 
-## 类别感知产品URL {#context-aware-pdps}
+## 类别识别产品页面URL {#context-aware-pdps}
 
 由于可以对产品URL中的类别信息进行编码，因此属于多个类别的产品也可能会使用多个产品URL进行编码。
 
-在默认配置中，默认URL格式将使用以下方案选择一个可能的替代方案：
+默认URL格式将使用以下方案选择一个可能的替代方案：
 
 * 如果 `url_path` 由电子商务后端使用它来定义（已弃用）
 * 从 `url_rewrites` 使用以产品 `url_key` 作为替代项
 * 形成这些替代方案时，会使用路径区段最多的替代方案
 * 如果有多个，请按照电子商务后端提供的顺序获取第一个
 
-此方案将选择 `url_path` 具有最先辈的子代，基于子代类别比其父代类别更具体的假设。 选定的 `url_path` 被视为 _正则_ 和将始终用于产品页面或产品站点地图中的规范链接。
+此方案将选择 `url_path` 具有最先辈，基于子类别比其父类别更具体的假设。 选定的 `url_path` 被视为 _正则_ 和将始终用作产品页面或产品站点地图中的规范链接。
 
 但是，当购物者从类别页面导航到产品页面，或从一个产品页面导航到同一类别中的其他相关产品页面时，应保留当前类别上下文。 在本例中， `url_path` 与当前类别上下文相比，所选内容应更偏向于替代内容 _正则_ 上述选择。
 
 此功能必须在 _CIF URL提供程序配置_. 如果启用，则在
 
-* 它们与给定类别的部分匹配 `url_paths` 从开头（模糊前缀匹配）
-* 或与给定类别匹配 `url_key` 任意位置（精确的部分匹配）
+* 它们与给定类别的部分匹配 `url_path` 从开头（模糊前缀匹配）
+* 或与给定类别的匹配 `url_key` 任意位置（精确的部分匹配）
 
-例如，请考虑 [产品查询](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 下。 如果用户位于“2022年夏季推出的新产品/新产品”类别页面上，且商店使用的是默认类别页面URL格式，则替代的“new-products/new-in-summer-2022/gold-cirque-earrings.html”将匹配上下文从头开始的2个路径区段：“新产品”和“2022年夏季新产品”。 如果存储使用的类别页面URL格式仅包含 `url_key`，则仍将选择相同的替代方法，因为它与上下文的 `url_key` 任何地方。 在这两种情况下，都将为“new-products/new-in-summer-2022/gold-cirque-earrings.html”创建产品页面URL `url_path`.
+例如，请考虑 [产品查询](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 下。 如果用户位于“2022年夏季的新产品/新产品”类别页面上，且商店使用默认类别页面URL格式，则替代的“new-products/new-in-summer-2022/gold-cirque-earrings.html”将匹配上下文从头开始的2个路径区段：“新产品”和“2022年夏季新产品”。 如果商店使用仅包含类别的类别页面URL格式 `url_key`，则仍将选择相同的替代方法，因为它与上下文的 `url_key` 任何地方。 在这两种情况下，都将为“new-products/new-in-summer-2022/gold-cirque-earrings.html”创建产品页面URL `url_path`.
 
 ```
 {
@@ -203,29 +203,29 @@ ht-degree: 3%
 
 ### 选择最佳URL格式 {#choose-url-format}
 
-正如在选择一种可用的默认格式之前所述，甚至实施自定义格式，都高度取决于存储的需求和要求。 以下建议可能有助于作出有根据的决策。
+正如在选择一种可用的默认格式或甚至实施自定义格式之前所提到的，这高度取决于商店的需求和要求。 以下建议可能有助于作出有根据的决策。
 
 _**使用包含SKU的产品页面URL格式。**_
 
-CIF核心组件会将SKU用作所有组件中的主要标识符。 如果产品页面URL格式不包含SKU，则需要使用GraphQL查询才能从 `url_key`，这可能会影响到时间到第一字节量度。 此外，购物者可能希望在搜索引擎中按SKU查找产品。
+CIF核心组件会将SKU用作所有组件中的主要标识符。 如果产品页面URL格式不包含SKU，则需要使用GraphQL查询来解析该格式。 这可能会影响到时间到第一字节。 此外，购物者可能还希望使用搜索引擎通过SKU查找产品。
 
 _**使用包含类别上下文的产品页面URL格式。**_
 
-CIF URL提供程序的某些功能仅在使用对类别上下文（如类别）进行编码的产品URL格式时可用 `url_key` 或类别 `url_path`. 即使新存储可能不需要这些功能，但在开头使用其中一种URL格式有助于减少将来的迁移工作。
+CIF URL提供程序的某些功能仅在使用产品URL格式（对类别上下文进行编码，如类别）时可用 `url_key` 或类别 `url_path`. 即使新商店可能不需要这些功能，但在开头使用其中一种URL格式有助于减少将来的迁移工作。
 
 _**在URL长度和编码信息之间实现平衡。**_
 
-根据目录大小，特别是类别树的大小和深度，可能不合理对全部进行编码 `url_path` 类别。 在这种情况下，可以通过包含类别的 `url_key` 中。 这将启用使用类别时几乎所有可用的功能 `url_path`.
+根据目录大小，特别是类别树的大小和深度，可能不合理对全部进行编码 `url_path` 类别。 在这种情况下，只需包含类别的 `url_key` 中。 这将支持使用类别时可用的大多数功能 `url_path`.
 
 此外，请使用 [Sling映射](#sling-mapping) 以便将sku与产品结合 `url_key`. 在大多数电子商务系统中，SKU遵循特定格式，并将SKU与 `url_key` 对于传入的请求，应该可能。 考虑到这一点，可以将产品页面URL重写为 `/p/{{category}}/{{sku}}-{{url_key}}.html`，以及 `/c/{{url_key}}.html` 相应地。 的 `/p` 和 `/c` 为了将产品和类别页面与其他内容页面区分开，仍需要使用前缀。
 
-### 从一种URL格式迁移到另一种URL格式 {#migrate-url-formats}
+### 迁移到新URL格式 {#migrate-url-formats}
 
 许多默认URL格式之间以某种方式相互兼容，这意味着由一个URL格式映射的URL可能会被另一个URL格式解析。 这有助于在URL格式之间迁移。
 
 另一方面，搜索引擎将需要一些时间来使用新的URL格式重新爬网所有目录页面。 为支持此过程并改善最终用户体验，建议提供重定向，以将用户从旧URL转发到新URL。
 
-一种方法是，将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 之后获取 [由CIF产品站点地图生成器生成的产品站点地图](../../overview/seo-and-url-management.md) 对于暂存环境和生产环境，并使用它们创建 [Apache httpd rewrite map](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 无法将此重写映射与新URL格式的转出一起部署到调度程序。
+一种方法是，将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 之后获取 [由CIF产品站点地图生成器生成的产品站点地图](../../overview/seo-and-url-management.md) 用于暂存和生产环境，并使用它们创建 [Apache httpd rewrite map](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 无法将此重写映射与新URL格式的转出一起部署到调度程序。
 
 ## 示例 {#example}
 
