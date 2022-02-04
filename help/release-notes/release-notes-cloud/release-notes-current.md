@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
+source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 34%
+source-wordcount: '1024'
+ht-degree: 33%
 
 ---
 
@@ -95,12 +95,6 @@ ht-degree: 34%
 
 ## Cloud Manager {#cloud-manager}
 
-本页面概述了AEMas a Cloud Service中Cloud Manager的发行说明2022.01.0。
-
->[!NOTE]
->
->请参阅 [本页](/help/release-notes/release-notes-cloud/release-notes-current.md) ，以了解Adobe Experience Manager as a Cloud Service的最新发行说明。
-
 ### 发布日期 {#release-date-cm}
 
 AEM Manager在as a Cloud Service中的发布日期为2022.01.0 2022年1月20日。 下一版本计划于2022年2月10日发布。
@@ -118,6 +112,20 @@ AEM Manager在as a Cloud Service中的发布日期为2022.01.0 2022年1月20日�
 * 现在，当环境运行的AEM版本已过时时，可以添加、更新和删除环境变量。
 * 对于在某些极少数情况下使用计划步骤的管道，构建图像步骤将不再被标记为“错误”。
 * 对于仅具有一个存储库的程序，管道执行屏幕现在将显示存储库名称。
+
+## 内容传输工具 {#ctt-release}
+
+### 发布日期 {#release-date-ctt}
+
+内容传输工具v1.8.6的发布日期是2022年2月3日。
+
+### 新增功能 {#what-is-new-ctt}
+
+* 内容验证 — 用户能够可靠地确定是否已将内容传输工具提取的所有内容成功摄取到目标实例。 要使用此功能，您需要在 `System Console` 源AEM环境的。 请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以了解更多详细信息。
+
+### 错误修复 {#bug-fixes-ctt}
+
+* 由于用户映射区分大小写，因此未映射某些用户。 此问题已修复。 用户映射不再区分大小写。
 
 ## Best Practices Analyzer {#bpa-release}
 
