@@ -2,7 +2,7 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
+source-git-commit: 319f92e04998c484c4b1834973c231be28aa23c7
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 1%
@@ -129,14 +129,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 您可以使用文档制造API将PDF文档转换为符合PDF/A的文档，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
 
->[!NOTE]
->
-> 要启用和配置文档操作API，请将以下规则添加到 [调度程序配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
->
-> `# Allow Forms Doc Generation requests`
-> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
-
-
 ## 通信API的类型
 
 通信为按需和批量文档生成提供了HTTP API:
@@ -164,6 +156,13 @@ When such an interactive PDF document is flattened using the Communications APIs
 1. 单击 **[!UICONTROL 更新]**.
 
 1. 运行生成管道。 构建管道成功后，将为您的环境启用通信API。
+
+>[!NOTE]
+>
+> 要启用和配置文档操作API，请将以下规则添加到 [调度程序配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 <!--

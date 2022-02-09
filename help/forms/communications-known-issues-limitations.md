@@ -1,9 +1,9 @@
 ---
 title: '已知问题 '
 description: 通信最佳实践、已知问题和限制
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: bf7ce5850700141a8a6d1eeb90ea0fd21ff811e7
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -162,6 +162,12 @@ Type-1和OpenType®字体未嵌入到PCL输出中。 使用Type-1和Adobe Analyt
 * 在打印选项列表中，您只能使用一次特定渲染类型(PDF、打印)。 例如，您不能有两个PRINT选项，每个选项指定PCL呈现类型。
 
 * 对于批量配置，只有OutputType(PDF、打印)和RenderType（PostScript、PCL、IPL、ZPL等）值组合的一个实例 中的“禁止页面加载闪烁”。
+
+* 对于异步API（批处理），默认记录级别设置为2。 您可以使用自定义XCI将记录级别更改为1。
+
+* 配置默认XCI后，它在原始呈现版本之前包含路径。 例如 `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+
+
 
 ## 最佳实践
 
