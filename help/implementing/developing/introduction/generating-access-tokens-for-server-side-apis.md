@@ -2,9 +2,9 @@
 title: 为服务器端 API 生成访问令牌
 description: 了解如何通过生成安全的JWT令牌来促进第三方服务器与AEMas a Cloud Service之间的通信
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 1b2f1f50832bb06fa5d4cc9a540ebc68cbebf7c8
+source-git-commit: c4f4ce968c17db1f1185ce7be9cad833eaf0b91b
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
-具有IMS组织管理员角色的用户，以及AEM作者上AEM用户或AEM管理员产品配置文件的成员，可以生成AEMas a Cloud Service凭据。 随后，具有AEMas a Cloud Service环境管理员角色的用户可检索该凭据，该凭据应安装在服务器上，并且需要谨慎处理为密钥。 此JSON格式文件包含与AEMas a Cloud ServiceAPI集成所需的所有数据。 数据用于创建已签名的JWT令牌，该令牌与IMS交换以获取IMS访问令牌。 然后，此访问令牌可用作承载身份验证令牌，以向AEMas a Cloud Service发出请求。 默认情况下，凭据会在一年后过期，但可以根据需要刷新凭据，并按照说明进行生成 [此处](#refresh-credentials).
+具有IMS组织管理员角色的用户，以及AEM作者上AEM用户或AEM管理员产品配置文件的成员，可以生成AEMas a Cloud Service凭据。 随后，具有AEMas a Cloud Service环境管理员角色的用户可检索该凭据，该凭据应安装在服务器上，并且需要谨慎处理为密钥。 此JSON格式文件包含与AEMas a Cloud ServiceAPI集成所需的所有数据。 数据用于创建已签名的JWT令牌，该令牌与IMS交换以获取IMS访问令牌。 然后，此访问令牌可用作承载身份验证令牌，以向AEMas a Cloud Service发出请求。 默认情况下，凭据会在一年后过期，但可以根据需要刷新凭据，如所述 [此处](#refresh-credentials).
 
 服务器到服务器流程涉及以下步骤：
 
