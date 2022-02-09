@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 4%
 
 ---
@@ -66,6 +66,9 @@ Dynamic Media发布设置适用于经验丰富的网站开发人员和程序员�
 ### “安全”选项卡 {#security-tab}
 
 **[!UICONTROL 客户端地址]**  — 用于指定一个或多个IP地址或IP地址范围。 指定后，对此图像目录的请求将被拒绝，这些请求源自位于未列出IP地址的客户端。 此规则同时适用于图像和已渲染图像的交付。
+
+![“安全”选项卡&#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*显示IP“允许”字段的“安全”选项卡。*
+
 
 ### “目录管理”选项卡 {#catalog-management-tab}
 
