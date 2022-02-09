@@ -1,10 +1,10 @@
 ---
 title: 验证内容传输
 description: 使用内容传输工具验证内容传输
-source-git-commit: 9705af35d4a6064c0b4ad35086d98f4b43158dec
+source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 1%
+source-wordcount: '948'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->此功能将自内容传输工具(CTT)版本1.8.x起提供。 AEM Cloud Service目标环境必须至少运行版本6158或更高版本。
+>此功能将自内容传输工具(CTT)版本1.8.x起提供。 AEM Cloud Service目标环境必须至少运行版本6158或更高版本。 它还要求设置源环境以运行 [预拷贝](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 验证功能在源上查找azcopy.config文件。 如果找不到此文件，则不会运行验证。 要详细了解如何配置azcopy.config文件，请参阅 [本页](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 验证内容传输是一项可选功能。 启用此功能将增加执行提取和摄取所花费的时间。 要使用该功能，请按照以下步骤在源AEM环境的系统控制台中启用该功能：
 
