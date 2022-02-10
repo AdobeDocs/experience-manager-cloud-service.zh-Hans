@@ -1,18 +1,18 @@
 ---
-title: AEMas a Cloud Service版本2022.01.0中的Cloud Manager发行说明
-description: 以下是AEMas a Cloud Service版本2022.01.0中Cloud Manager的发行说明。
+title: AEMas a Cloud Service版本2022.02.0中的Cloud Manager发行说明
+description: 以下是AEMas a Cloud Service版本2022.02.0中Cloud Manager的发行说明。
 feature: Release Information
-source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service中的Cloud Manager发行说明2022.01.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service中的Cloud Manager发行说明2022.02.0 {#release-notes}
 
-本页面概述了AEMas a Cloud Service中Cloud Manager的发行说明2022.01.0。
+本页面概述了AEMas a Cloud Service中Cloud Manager的发行说明2022.02.0。
 
 >[!NOTE]
 >
@@ -20,18 +20,20 @@ ht-degree: 2%
 
 ## 发布日期 {#release-date}
 
-AEM Manager在as a Cloud Service中的发布日期为2022.01.0 2022年1月20日。 下一版本计划于2022年2月10日发布。
+AEM Manager在as a Cloud Service中的发布日期为2022.02.0 2022年2月10日。 下一版本计划于2022年3月10日发布。
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager将 [当检测到使用了相同的git提交时，请避免重建代码库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 执行多个全栈管道。
-* 访问AEM环境日志现在需要 **部署管理器** 产品配置文件。 没有此配置文件的用户将在用户界面中看到一个禁用的按钮。
-* UI将不允许为未启用站点作为解决方案的程序配置前端管道。
-* 生成git密码后，将显示过期日期。
+* 新加速 [网层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 已引入以专门部署HTTPD/调度程序配置
+   * 您必须使用AEM版本 `2021.12.6151.20211217T120950Z` 以使用此功能。
+   * 此功能将在2022.02.0版后的两周内分阶段推出。
+* Cloud Manager登陆页面体验已刷新，以提供改进的导航、在网格/图块视图之间轻松切换，以及用于快速获取项目摘要的弹出窗口。
+* 新的失败阈值(`< D`) [可靠性评级量度。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * 存在严重质量问题且影响系统稳定性的客户（主要与无效索引和工作流程相关）在这些问题得到解决之前将无法部署。
+* 的严重性 `BannedPath` [质量规则](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) 已从阻止程序更改为关键。
+* 在配置 [网层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 关联。
 
 ## 错误修复 {#bug-fixes}
 
-* 已更正某些前端管道部署遇到的空指针异常。
-* 现在，当环境运行的AEM版本已过时时，可以添加、更新和删除环境变量。
-* 对于在某些极少数情况下使用计划步骤的管道，构建图像步骤将不再被标记为“错误”。
-* 对于仅具有一个存储库的程序，管道执行屏幕现在将显示存储库名称。
+* 现在，在生成新密码时，旧的Git存储库密码始终无效。
+* 在极少数情况下，通过API更新环境变量不再会妨碍管道执行。

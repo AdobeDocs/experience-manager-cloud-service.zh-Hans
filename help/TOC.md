@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c135f7c0c5265110774d145bf8c5a73d44d660b1
+source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
 workflow-type: tm+mt
-source-wordcount: '3500'
-ht-degree: 98%
+source-wordcount: '3494'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 98%
       + [安装](/help/journey-sites/demos-add-on/installation.md)
       + [创建项目](/help/journey-sites/demos-add-on/create-program.md)
       + [创建演示站点](/help/journey-sites/demos-add-on/create-site.md)
-      + [启用屏幕](/help/journey-sites/demos-add-on/screens.md)
+      + [启用 Screens](/help/journey-sites/demos-add-on/screens.md)
       + [管理您的演示站点](/help/journey-sites/demos-add-on/manage.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
@@ -273,7 +273,7 @@ ht-degree: 98%
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [将体验片段导出到Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + 资源 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概述和新增功能](/help/assets/overview.md)
@@ -466,11 +466,11 @@ ht-degree: 98%
       + [在以表单为中心的工作流中使用变量](/help/forms/variable-in-aem-workflows.md)
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
    + 使用通信 {#using-communications}
-      + [简介 到通信API](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [通信API — 同步处理](/help/forms/aem-forms-cloud-service-communications.md)
-      + [通信API — 批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Communications API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Communications API - 同步处理](/help/forms/aem-forms-cloud-service-communications.md)
+      + [Communications API - 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
-      + [已知问题、最佳实践和常见问题解答](/help/forms/communications-known-issues-limitations.md)
+      + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
    + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [常见问题](/help/forms/faq.md)
    + [已知问题](/help/forms/known-issues.md)
@@ -552,6 +552,8 @@ ht-degree: 98%
    + 使用 Cloud Manager {#using-cloud-manager}
       + Cloud Manager 发行说明 {#release-notes-cloud-manager}
          + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + 2022年 {#2022}
+            + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021年 {#2021}
             + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -602,12 +604,9 @@ ht-degree: 98%
       + [环境变量](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + 生产管道 {#production-pipelines}
-            + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-            + [编辑生产管道](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + 非生产管道 {#non-production-pipelines}
-            + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-            + [编辑非生产管道](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+         + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [部署代码](/help/implementing/cloud-manager/deploy-code.md)
       + 了解测试结果 {#test-results}
          + [概述](/help/implementing/cloud-manager/overview-test-results.md)
@@ -824,7 +823,7 @@ ht-degree: 98%
    + [维护任务](/help/operations/maintenance.md)
    + [备份和恢复](/help/operations/backup.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
-   + [删除通用lucene索引](/help/operations/removal-generic-lucene-index.md)
+   + [删除通用 lucene 索引](/help/operations/removal-generic-lucene-index.md)
 + 合规性 {#compliance}
    + [AEM as a Cloud Service 中的合规性](/help/compliance/home.md)
    + 数据隐私和保护就绪性 {#data-privacy}
