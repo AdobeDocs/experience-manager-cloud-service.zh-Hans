@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ AEM Commerceas a Cloud Service的入门过程分为两步：
 
 每个AEMas a Cloud Service环境都可以使用不同的GraphQL端点URL。 这样，项目就可以将AEM暂存环境与商务暂存系统和AEM生产环境连接到商务生产系统。 必须公开提供该GraphQL端点，不支持专用VPN或本地连接。 可选地，可以提供验证标头以使用需要验证的附加CIF功能。
 
-CIF附加组件（可选）仅适用于Adobe Commerce Enterprise / Cloud，它支持为AEM作者使用分阶段目录数据。 这需要配置授权令牌。 配置的授权令牌仅可用，并且出于安全原因用在AEM创作实例上。 AEM发布实例无法显示暂存数据。
+（可选）仅对于Adobe Commerce Enterprise / Cloud，CIF附加组件支持为AEM作者使用分阶段目录数据。 这要求配置授权标头。 出于安全考虑，此标头仅可用，并用于AEM创作实例。 AEM发布实例无法显示暂存数据。
 
 有两个选项可配置端点：
 
@@ -59,7 +59,7 @@ CIF附加组件（可选）仅适用于Adobe Commerce Enterprise / Cloud，它�
 
 ![CM Commerce端点](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-设置终结点（可选是用于暂存目录支持的身份验证令牌）后，该终结点将显示在详细信息页面上。 单击编辑图标将打开相同的对话框，如有必要，可以在该对话框中修改端点。
+在设置了用于暂存目录支持的端点和授权标头（可选）后，将在详细信息页面上显示该端点。 单击编辑图标将打开相同的对话框，如有必要，可以在该对话框中修改端点。
 
 ![CM环境信息](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
