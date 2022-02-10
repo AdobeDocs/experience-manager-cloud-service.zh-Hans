@@ -5,8 +5,8 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
 source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 33%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,12 +25,11 @@ ht-degree: 33%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.1.0)是2022年2月3日发行的。
-以下版本(2022.2.0)发布于2022年2月24日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本 (2022.1.0) 的发布日期为 2022 年 2 月 3 日。下一个版本 (2022.2.0) 的发布日期为 2022 年 2 月 24 日。
 
 ## 发布视频 {#release-video}
 
-请查看 [2022年1月版概述](https://video.tv.adobe.com/v/340120) 视频，了解2022.1.0版本中添加的功能摘要。
+观看 [2022 年 1 月版概述](https://video.tv.adobe.com/v/340120)视频，大致了解 2022.1.0 版的新增功能。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -40,26 +39,26 @@ ht-degree: 33%
 
 * [!DNL Dynamic Media] 现在支持 MXF 视频的提取、预览、播放和发布。尚不支持 MXF 视频的注释和可购买视频。
 
-* 在配置远程 DAM 和 Sites 部署之间的连接后，远程 DAM 上的资源即可用于 Sites 部署。您现在可以对远程 DAM 资源或文件夹执行[更新、删除、重命名和移动操作](/help/assets/use-assets-across-connected-assets-instances.md)。更新会在 Sites 部署中自动提供，但会有一些延迟。
+* 在配置远程 DAM 和 Sites 部署之间的连接后，远程 DAM 上的资源即可用于 Sites 部署。您现在可以对远程 DAM 资源或文件夹执行[更新、删除、重命名和移动操作](/help/assets/use-assets-across-connected-assets-instances.md)。相关更新会在 Sites 部署中自动提供，但会有一些延迟。
 
 ### [!DNL Assets] 预发行渠道中的新功能 {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] 现在可以灵活地 [配置一个别名帐户](../../assets/dynamic-media/dm-alias-account.md) ，从而确保更新现成的Dynamic Media URL和查看器嵌入代码。 这对SEO产生了积极影响，可反映对您的业务上下文所做的更新，如品牌重新定位。
+* [!DNL AEM Dynamic Media] 现在提供了灵活性，让您可以在用户界面中[配置一个别名账户](../../assets/dynamic-media/dm-alias-account.md)，从而确保开箱即用的 Dynamic Media URL 和查看器嵌入代码获得更新。这会对 SEO 产生积极影响，以反映对您的业务环境（如品牌再造）所做的更新。
 
-* 您现在可以使用 [!DNL Experience Manager Assets] 用户界面：
+* 您现在可以使用 [!DNL Experience Manager Assets] 用户界面执行以下操作：
 
-   * 配置存储库中重复资产的检测。
+   * 配置对存储库中重复资源的检测。
 
    * 配置向图像添加数字水印。
 
-* 管理员现在可以配置电子邮件服务以进行大量下载。 它允许用户 [为大量下载启用电子邮件通知](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) 从 [!DNL Experience Manager Assets] 界面。 用户在下载过程完成后会收到一封电子邮件通知，其中包含已存档zip文件夹的下载链接。
+* 管理员现在可以为大型下载配置电子邮件服务。它让用户可以从 [!DNL Experience Manager Assets] 界面[为大型下载启用电子邮件通知](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)。下载过程完成后，用户会收到电子邮件通知，其中包含已存档 zip 文件夹的下载链接。
 
 
-* 的 [管理发布](/help/assets/manage-publication.md) 通过改进的用户界面增强了功能。 用户可以向选定目标发布或取消发布内容， [添加内容](/help/assets/manage-publication.md#add-content) 从DAM存储库的发布列表， [包含文件夹设置](/help/assets/manage-publication.md#include-folder-settings) 发布选定文件夹的内容并应用过滤器，以及 [计划发布](/help/assets/manage-publication.md#publish-assets-later) 日期或时间。
+* [管理发布](/help/assets/manage-publication.md)功能通过改进的用户界面得到增强。用户可以向所选目标发布内容或从中取消发布内容，可以从 DAM 存储库[添加内容](/help/assets/manage-publication.md#add-content)至发布列表，可以[包含文件夹设置](/help/assets/manage-publication.md#include-folder-settings)以发布选定文件夹的内容和应用筛选器，还可以[安排发布](/help/assets/manage-publication.md#publish-assets-later)到晚一点的日期或时间。
 
 ### 错误修复 {#bug-fixes}
 
-* 将资产从AEM内部部署迁移到云服务时，不含原始呈现版本的未处理资产会发送到Asset compute进行处理。
+* 将资源从本地 AEM 迁移到云服务时，没有原始演绎版的未处理资源将被发送到 Asset Compute 进行处理。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -68,28 +67,28 @@ ht-degree: 33%
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[Communication API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务允许您以同步模式和批处理模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
    * 使用 XML 数据填充模板文件来生成文档。
-   * 以各种格式生成表单，包括非交互式PDF打印流。
+   * 生成各种格式的表单，包括非交互式 PDF 打印流。
    * 从 XFA 表单 PDF 生成打印 PDF。
-   * 通过将多组数据与源模板合并，批量生成PDF、 PostScript、PCL和ZPL文档。
+   * 通过将多组数据与源模板合并，批量生成 PDF、PostScript、PCL 和 ZPL 文档。
 
 * **使用 Communications API 创建的记录文档和 PDF 文档的自定义字体**：您现在可以在使用 Communications API 生成的 PDF 文档中使用品牌批准的字体，以满足贵企业的要求。
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
-* **[汇编程序API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**:汇编程序API，用于组合、重新排列、扩充和获取有关PDF文档的信息。
+* **[Assembler API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**：Assembler API 用于组合、重新排列、扩充和获取有关 PDF 文档的信息。
 
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 增强的myAccount组件
-* 产品推荐组件支持其他页面类型（主页、购物车、订单确认）
+* 增强的 myAccount 组件
+* “产品推荐”组件支持额外的页面类型（主页、购物车、订单确认）
 * **愿望清单**
-   * 已登录的访客可以将产品添加到愿望列表
-   * 通过myAccount可以修改该愿望清单及其产品
-   * 可以通过策略（示例产品预告、产品详细信息）在组件级别启用/禁用“添加到愿望列表”按钮
-   * 可作为核心组件和在AEM Venia Storefront中使用
+   * 登录的访客可以将产品添加到愿望清单
+   * 可以通过 myAccount 管理愿望清单及其产品
+   * 可以通过策略（例如产品预告片、产品详细信息）在组件级别启用/禁用“添加到愿望清单”按钮
+   * 作为核心组件提供，位于 AEM Venia Storefront 中
 
 ![愿望清单](/help/assets/CIF/wishlist.png)
 
@@ -97,49 +96,49 @@ ht-degree: 33%
 
 ### 发布日期 {#release-date-cm}
 
-AEM Manager在as a Cloud Service中的发布日期为2022.01.0 2022年1月20日。 下一版本计划于2022年2月10日发布。
+AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 年 1 月 20 日。下一个版本计划于 2022 年 2 月 10 日发布。
 
 ### 新增功能 {#what-is-new-cm}
 
-* Cloud Manager将 [当检测到使用了相同的git提交时，请避免重建代码库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 执行多个全栈管道。
-* 访问AEM环境日志现在需要 **部署管理器** 产品配置文件。 没有此配置文件的用户将在用户界面中看到一个禁用的按钮。
-* UI将不允许为未启用站点作为解决方案的程序配置前端管道。
-* 生成git密码后，将显示过期日期。
+* 当检测到在多个全栈管道执行中使用了相同的 git commit 时，Cloud Manager 将[避免重建代码库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
+* 访问 AEM 环境日志现在需要 **Deployment Manager** 产品配置文件。没有此配置文件的用户将在用户界面中看到一个禁用的按钮。
+* 对于未将 Sites 作为解决方案启用的程序，该 UI 不允许进行前端管道配置。
+* 生成 git 密码时，将显示到期日期。
 
 ### 错误修复 {#bug-fixes-cm}
 
-* 已更正某些前端管道部署遇到的空指针异常。
-* 现在，当环境运行的AEM版本已过时时，可以添加、更新和删除环境变量。
-* 对于在某些极少数情况下使用计划步骤的管道，构建图像步骤将不再被标记为“错误”。
-* 对于仅具有一个存储库的程序，管道执行屏幕现在将显示存储库名称。
+* 某些前端管道部署遇到的空指针异常已得到纠正。
+* 现在可以在环境运行过时版本的 AEM 时添加、更新和删除环境变量。
+* 对于在某些极少数情况下使用计划步骤的管道，“构建映像”步骤不再被标记为错误。
+* 对于只有一个存储库的程序，管道执行屏幕现在将显示存储库名称。
 
 ## 内容传输工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具v1.8.6的发布日期是2022年2月3日。
+内容传输工具版本 1.8.6 的发布日期为 2022 年 2 月 3 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容验证 — 用户能够可靠地确定是否已将内容传输工具提取的所有内容成功摄取到目标实例。 要使用此功能，您需要在 `System Console` 源AEM环境的。 请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以了解更多详细信息。
+* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，您需要在源 AEM 环境的 `System Console` 中启用它。有关更多详细信息，请参阅[验证内容传输 - 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started)。
 
 ### 错误修复 {#bug-fixes-ctt}
 
-* 由于用户映射区分大小写，因此未映射某些用户。 此问题已修复。 用户映射不再区分大小写。
+* 某些用户未被映射，因为用户映射区分大小写。此问题已得到修复。用户映射不再区分大小写。
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.24的发布日期是2022年2月1日。
+Best Practices Analyzer v2.1.24 的发布日期是 2022 年 2 月 1 日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* 能够检测和报告具有和不具有智能标记的资产数量。
-* 能够检测并报告所使用的核心组件版本。
-* 能够检测并报告执行BPA的源层（创作或发布）类型。
+* 能够检测和报告带有和不带有智能标签的资源的数量。
+* 能够检测和报告所使用的核心组件版本。
+* 能够检测和报告执行 BPA 的源层的类型（创作或发布）。
 
 ### 错误修复 {#bug-fixes-bpa}
 
-* BPA大小调整逻辑的制作速度更快、效率更高。
-* 在某些情况下，BPA在运行时不会递增分析计数。 此问题已修复。
+* BPA 大小调整逻辑变得更快、更高效。
+* 在某些情况下，BPA 在运行时没有增加分析的计数。此问题已得到修复。
