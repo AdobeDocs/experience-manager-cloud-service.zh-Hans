@@ -2,9 +2,9 @@
 title: CI/CD管线
 description: 了解Cloud Manager的CI/CD管道，以及如何使用这些管道高效地部署代码。
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 1%
 
 ---
@@ -147,16 +147,18 @@ Cloud Manager提供两种类型的管道：
 
 Web层配置管道通过将HTTPD/Dispatcher配置与其他代码更改分离，可以将其独占部署到AEM运行时。 它是一个简化的管道，为希望仅部署调度程序配置更改的用户提供了支持，这是一种在几分钟内即可完成部署的加速方法。
 
->[!IMPORTANT]
+>[!TIP]
 >
->您必须使用AEM版本 `X` 或更高版本，以利用web层配置管道。
+>使用Web层配置管道，您可以选择将Web配置存储在与完整堆栈管道相同的源位置，还是存储在不同的位置，具体取决于哪个结构更适合您的项目。
 
 以下限制适用。
 
+* 您必须使用AEM版本 `2021.12.6151.20211217T120950Z` 或更新版本，以利用web层配置管道。
+* 您必须 [选择启用调度程序工具的灵活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug) 来利用web层配置管道。
 * 用户必须使用 **部署管理器** 角色来配置或运行管道。
 * 在任何时候，每个环境只能有一个Web层配置管道。
 * 当用户运行相应的全栈管道时，用户无法配置Web层配置管道。
-* Web层结构必须遵循文档中定义的灵活模式结构 [云中的调度程序](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* Web层结构必须遵循文档中定义的灵活模式结构 [云中的调度程序。](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 此外，请注意 [全栈管道](#full-stack-pipeline) 引入web层管道时将会有所行为。
 

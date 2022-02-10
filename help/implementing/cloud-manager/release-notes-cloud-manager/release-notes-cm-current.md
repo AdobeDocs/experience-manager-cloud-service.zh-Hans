@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service版本2022.02.0中的Cloud Manager发行说明
 description: 以下是AEMas a Cloud Service版本2022.02.0中Cloud Manager的发行说明。
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,8 @@ AEM Manager在as a Cloud Service中的发布日期为2022.02.0 2022年2月10日�
 
 ## 新增功能 {#what-is-new}
 
-* 新加速 [网层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 已引入以专门部署HTTPD/调度程序配置
-   * 您必须使用AEM版本 `2021.12.6151.20211217T120950Z` 以使用此功能。
+* 新加速 [网层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 已引入以专门部署HTTPD/调度程序配置。
+   * 您必须使用AEM版本 `2021.12.6151.20211217T120950Z` 或较新和 [选择启用调度程序工具的灵活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug) 以使用此功能。
    * 此功能将在2022.02.0版后的两周内分阶段推出。
 * Cloud Manager登陆页面体验已刷新，以提供改进的导航、在网格/图块视图之间轻松切换，以及用于快速获取项目摘要的弹出窗口。
 * 新的失败阈值(`< D`) [可靠性评级量度。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
