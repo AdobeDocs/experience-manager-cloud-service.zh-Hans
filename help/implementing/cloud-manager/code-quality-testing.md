@@ -27,13 +27,13 @@ ht-degree: 2%
 代码质量测试会扫描源代码，以确保它符合特定质量标准。 这是通过SonarQube与使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则组合了通用Java规则和特定于AEM的规则。 某些特定于AEM的规则是根据AEM Engineering中的最佳实践创建的，称为 [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-You can download the complete list of rules [with this link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+您可以下载规则的完整列表 [链接。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
-### Three-Tiered Ratings {#three-tiered-gate}
+### 三级评级 {#three-tiered-gate}
 
-Issues identified by code quality testing are assigned to one of three categories.
+由代码质量测试确定的问题将分配给三个类别中的一个。
 
-* **Critical** - These are issues which cause an immediate failure of the pipeline.
+* **关键**  — 这些是导致管道立即失败的问题。
 
 * **重要信息**  — 这些问题导致管道进入暂停状态。 部署经理、项目经理或业务所有者可以覆盖问题（在这种情况下管道会继续），也可以接受问题（在这种情况下，管道会因故障而停止）。
 
@@ -64,7 +64,7 @@ Issues identified by code quality testing are assigned to one of three categorie
 
 质量扫描过程并不完美，有时会错误地识别实际上没有问题的问题。 这称为 **误报**.
 
-在这些情况下，可以使用标准Java对源代码进行注释 `@SuppressWarnings` 将规则ID指定为注释属性的注释。 For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
+在这些情况下，可以使用标准Java对源代码进行注释 `@SuppressWarnings` 将规则ID指定为注释属性的注释。 例如，一个常见的误报是，用于检测硬编码密码的SonarQube规则在识别硬编码密码的方式上可能过于激进。
 
 以下代码在AEM项目中相当常见，该项目中有用于连接到某些外部服务的代码。
 
@@ -102,13 +102,13 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` （跳过的内容包）
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` （跳过的内容包）
 
 如果 `myco-all-1.0.0-SNAPSHOT.zip` 是两个跳过的内容包，则将扫描两个嵌入的包，而不是“所有”内容包。
 
-For projects that produce dozens of embedded packages, this optimization has been shown to save upwards of 10 minutes per pipeline execution.
+对于生成数十个嵌入式包的项目，显示此优化后，每个管道执行最多可节省10分钟。
 
-A special case can occur when the &quot;all&quot; content package contains a combination of skipped content packages and OSGi bundles. 例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 包含先前提到的两个嵌入式包以及一个或多个OSGi包，然后仅使用OSGi包构建一个新的、最小的内容包。 此包始终名为 `cloudmanager-synthetic-jar-package` 包装的包装在 `/apps/cloudmanager-synthetic-installer/install`.
+当“所有”内容包包含跳过的内容包和OSGi包的组合时，可能会出现特殊情况。 例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 包含先前提到的两个嵌入式包以及一个或多个OSGi包，然后仅使用OSGi包构建一个新的、最小的内容包。 此包始终名为 `cloudmanager-synthetic-jar-package` 包装的包装在 `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 * 此优化不会影响部署到AEM的包。
