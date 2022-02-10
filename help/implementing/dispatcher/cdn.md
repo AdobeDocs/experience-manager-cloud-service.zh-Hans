@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
+source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 8%
+source-wordcount: '946'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
 请按照以下部分，使用Cloud Manager自助服务UI，通过现成的CDN为内容交付做好准备：
 
-1. [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **限制流量**
@@ -52,6 +52,10 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 * 客户必须能够配置CDN以使用AEMas a Cloud Service — 请参阅下面提供的配置说明。
 * 客户必须有工程CDN专家随时待命，以防出现相关问题。
 * 客户必须先执行并成功通过负载测试，然后才能转到生产环境。
+
+>[!NOTE]
+>
+>AdobeCDN不是可选的。 客户自带CDN必须将其指向AEM Managed CDN。
 
 配置说明：
 
