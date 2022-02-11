@@ -2,9 +2,9 @@
 title: 自定义代码质量规则
 description: 本页介绍作为[代码质量测试]的一部分由Cloud Manager执行的自定义代码质量规则。 这些建议基于AEM工程部门的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 4567581eb02c928f1493defdab667cc713fc222a
+source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3495'
 ht-degree: 3%
 
 ---
@@ -12,15 +12,15 @@ ht-degree: 3%
 # 自定义代码质量规则 {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="Custom Code Quality Rules"
->abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
+>title="自定义代码质量规则"
+>abstract="本页介绍在代码质量测试中由Cloud Manager执行的自定义代码质量规则。 这些建议基于AEM工程部门的最佳实践。"
 
 本页介绍由Cloud Manager作为 [代码质量测试。](/help/implementing/cloud-manager/code-quality-testing.md) 这些建议基于AEM工程部门的最佳实践。
 
 >[!NOTE]
-此处提供的代码示例仅供说明性用途。 看声呐 [概念文档](https://docs.sonarqube.org/7.4/user-guide/concepts/) 了解SonarQube概念和质量规则。
+>
+>此处提供的代码示例仅供说明性用途。 看声呐 [概念文档](https://docs.sonarqube.org/7.4/user-guide/concepts/) 了解SonarQube概念和质量规则。
 
 ## SonarQube规则 {#sonarqube-rules}
 
@@ -315,7 +315,8 @@ public void doThis() throws Exception {
 通常，应使用“信息”日志级别来标定重要操作，并且默认情况下，AEM配置为在“信息”级别或更高级别登录。 GET和HEAD方法只应是只读操作，因此不构成重要操作。 响应GET或HEAD请求在“信息”级别进行日志记录可能会产生严重的日志噪声，从而更难识别日志文件中的有用信息。 处理GET或HEAD请求时的日志记录应位于出现问题时的“警告”或“错误”级别，或者位于“调试”或“TRACE”级别（如果更深入的故障诊断信息会有所帮助）。
 
 >[!NOTE]
-这不适用于 `access.log`-type日志记录。
+>
+>这不适用于 `access.log`-type日志记录。
 
 #### 不符合代码 {#non-compliant-code-8}
 
@@ -520,7 +521,8 @@ AEM API表面处于不断修订的状态，可识别不鼓励使用并因此被�
 以下部分详细介绍了Cloud Manager执行的OakPAL检查。
 
 >[!NOTE]
-OakPAL是一个框架，它使用独立的Oak存储库来验证内容包。 它由AEM Partner和2019年AEM Rockstar北美奖得主开发。
+>
+>OakPAL是一个框架，它使用独立的Oak存储库来验证内容包。 它由AEM Partner和2019年AEM Rockstar北美奖得主开发。
 
 ### 客户不应实施或扩@ProviderType带有注释的产品API {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -681,9 +683,12 @@ public class DontDoThis implements Page {
 复杂项目中出现的常见问题是多次配置同一OSGi组件。 这会造成一个模糊，即哪种配置适用。 此规则“支持运行模式”，因为它将仅识别在同一运行模式或运行模式组合中多次配置同一组件的问题。
 
 >[!NOTE]
-此规则将产生在多个包中定义相同配置（位于同一路径）的问题，包括在同一包的整个列表中复制相同包的情况。
-例如，如果内部版本生成名为的包 `com.myco:com.myco.ui.apps` 和 `com.myco:com.myco.all` where `com.myco:com.myco.all` 嵌入 `com.myco:com.myco.ui.apps`，然后是 `com.myco:com.myco.ui.apps` 将被报告为重复项。
-这通常是不遵循 [内容包结构指南。](/help/implementing/developing/introduction/aem-project-content-package-structure.md). 在此特定示例中，包 `com.myco:com.myco.ui.apps` 缺少 `<cloudManagerTarget>none</cloudManagerTarget>` 属性。
+>
+>此规则将产生在多个包中定义相同配置（位于同一路径）的问题，包括在同一包的整个列表中复制相同包的情况。
+>
+>例如，如果内部版本生成名为的包 `com.myco:com.myco.ui.apps` 和 `com.myco:com.myco.all` where `com.myco:com.myco.all` 嵌入 `com.myco:com.myco.ui.apps`，然后是 `com.myco:com.myco.ui.apps` 将被报告为重复项。
+>
+>这通常是不遵循 [内容包结构指南。](/help/implementing/developing/introduction/aem-project-content-package-structure.md). 在此特定示例中，包 `com.myco:com.myco.ui.apps` 缺少 `<cloudManagerTarget>none</cloudManagerTarget>` 属性。
 
 #### 不符合代码 {#non-compliant-code-osgi}
 
@@ -779,7 +784,8 @@ AEM现代化工具文档提供了有关如何将组件从经典UI转换为触屏
 为了与Cloud Service部署模型兼容，单个内容包必须包含存储库不可变区域(即 `/apps` 和 `/libs`)或可变区域(即 `/apps` 或 `/libs`)，但不能两者兼有。 例如，包中同时包含这两者 `/apps/myco/components/text and /etc/clientlibs/myco` 与Cloud Service不兼容，将导致报告问题。
 
 >[!NOTE]
-规则 [客户包不应在/libs下创建或修改节点](#oakpal-customer-package) 始终适用。
+>
+>规则 [客户包不应在/libs下创建或修改节点](#oakpal-customer-package) 始终适用。
 
 请参阅 [AEM项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md) 以了解更多详细信息。
 

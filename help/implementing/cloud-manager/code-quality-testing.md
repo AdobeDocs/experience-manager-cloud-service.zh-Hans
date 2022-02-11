@@ -2,9 +2,9 @@
 title: 代码质量测试
 description: 了解管道的代码质量测试的工作原理，以及它如何提高部署质量。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,9 @@ ht-degree: 2%
 了解管道的代码质量测试的工作原理，以及它如何提高部署质量。
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="代码质量测试"
+>abstract="代码质量测试根据一组质量规则来评估应用程序代码。 它是仅代码质量管道的主要目的，将在所有生产和非生产管道中的构建步骤之后立即执行。"
 
 ## Communications API {#introduction}
 
@@ -30,7 +29,8 @@ ht-degree: 2%
 代码质量测试会扫描源代码，以确保它符合特定质量标准。 这是通过SonarQube与使用OakPAL的内容包级别检查的组合来实现的。 有100多个规则，这些规则组合了通用Java规则和特定于AEM的规则。 某些特定于AEM的规则是根据AEM Engineering中的最佳实践创建的，称为 [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-您可以下载规则的完整列表 [链接。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>您可以下载规则的完整列表 [链接。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### 三级评级 {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ ht-degree: 2%
 | Cloud Service兼容性 | 已识别的云服务兼容性问题的数量 | 信息 | > 0 |
 
 >[!NOTE]
-请参阅 [SonarQube的度量定义](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，以了解更详细的定义。
+>
+>请参阅 [SonarQube的度量定义](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，以了解更详细的定义。
 
 >[!NOTE]
-了解有关执行的自定义代码质量规则的更多信息 [!UICONTROL Cloud Manager]，请参阅此文档 [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>了解有关执行的自定义代码质量规则的更多信息 [!UICONTROL Cloud Manager]，请参阅此文档 [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## 处理误报 {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 那么，正确的解决方案就是删除硬编码密码。
 
 >[!NOTE]
-虽然最好的做法是 `@SuppressWarnings` 尽可能具体的注释（即仅对导致问题的特定语句或块添加注释）可以在类级别添加注释。
+>
+>虽然最好的做法是 `@SuppressWarnings` 尽可能具体的注释（即仅对导致问题的特定语句或块添加注释）可以在类级别添加注释。
 
 >[!NOTE]
-虽然没有明确的安全测试步骤，但在代码质量步骤中会评估与安全相关的代码质量规则。 请参阅文档 [AEMas a Cloud Service安全概述](/help/security/cloud-service-security-overview.md) 了解有关Cloud Service安全性的更多信息。
+>虽然没有明确的安全测试步骤，但在代码质量步骤中会评估与安全相关的代码质量规则。 请参阅文档 [AEMas a Cloud Service安全概述](/help/security/cloud-service-security-overview.md) 了解有关Cloud Service安全性的更多信息。
 
 ## 内容包扫描优化 {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 当“所有”内容包包含跳过的内容包和OSGi包的组合时，可能会出现特殊情况。 例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 包含先前提到的两个嵌入式包以及一个或多个OSGi包，然后仅使用OSGi包构建一个新的、最小的内容包。 此包始终名为 `cloudmanager-synthetic-jar-package` 包装的包装在 `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* 此优化不会影响部署到AEM的包。
-* 由于嵌入的内容包与跳过的内容包之间的匹配基于文件名，因此如果多个跳过的内容包具有相同的文件名，或者在嵌入时更改了文件名，则无法执行此优化。
+>
+>* 此优化不会影响部署到AEM的包。
+>* 由于嵌入的内容包与跳过的内容包之间的匹配基于文件名，因此如果多个跳过的内容包具有相同的文件名，或者在嵌入时更改了文件名，则无法执行此优化。
 
