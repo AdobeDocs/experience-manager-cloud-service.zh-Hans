@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
+source-git-commit: 7076b5b7db75ebe4f6b381ab2330769f7dcd6904
 workflow-type: tm+mt
-source-wordcount: '3494'
-ht-degree: 99%
+source-wordcount: '3444'
+ht-degree: 98%
 
 ---
 
@@ -158,12 +158,7 @@ ht-degree: 99%
          + [配置帐户环境](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + Headless 内容创作历程 {#headless-journey}
-         + [AEM Headless 内容创作历程 - 概述](/help/journey-headless/author/overview.md)
-         + [使用 AEM 为 Headless 创作 - 简介](/help/journey-headless/author/introduction.md)
-         + [使用 AEM 为 Headless 创作基本内容](/help/journey-headless/author/basics.md)
-         + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
-         + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
+      + [Headless 内容创作历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + 创作基础知识 {#fundamentals}
          + [环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [添加页面注释](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -253,14 +248,7 @@ ht-degree: 99%
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
                + [翻译内容](/help/journey-sites/translation/translate-content.md)
                + [发布翻译的内容](/help/journey-sites/translation/publish-content.md)
-            + Headless 翻译历程 {#headless}
-               + [了解 AEM 中的 Headless 翻译](/help/journey-headless/translation/overview.md)
-               + [AEM Headless 翻译快速入门](/help/journey-headless/translation/getting-started.md)
-               + [了解 AEM 中的 Headless 内容和翻译方法](/help/journey-headless/translation/learn-about.md)
-               + [配置翻译连接器](/help/journey-headless/translation/configure-connector.md)
-               + [配置翻译规则](/help/journey-headless/translation/translation-rules.md)
-               + [翻译内容](/help/journey-headless/translation/translate-content.md)
-               + [发布翻译的内容](/help/journey-headless/translation/publish-content.md)
+            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻译多语言站点的内容](/help/sites-cloud/administering/translation/overview.md)
             + [准备内容以进行翻译](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -319,9 +307,6 @@ ht-degree: 99%
       + [搜索 Facet](/help/assets/search-facets.md)
       + [资源 HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [内容片段的 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-      + [对内容片段的远程 GraphQL 查询的身份验证](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-      + [带内容片段的 GraphQL API - 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
       + [连接的资源](/help/assets/use-assets-across-connected-assets-instances.md)
       + [生成仅用于放置的演绎版](/help/assets/configure-fpo-renditions.md)
       + [资源报表](/help/assets/asset-reports.md)
@@ -547,6 +532,73 @@ ht-degree: 99%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
++ 无头 {#headless}
+   + [AEM Headless简介](/help/headless/introduction.md)
+   + 设置 {#setup}
+      + [Communications API](/help/headless/setup/introduction.md)
+      + [配置](/help/headless/setup/create-configuration.md)
+      + [内容片段模型](/help/headless/setup/create-content-model.md)
+      + [资产文件夹](/help/headless/setup/create-assets-folder.md)
+      + [内容片段](/help/headless/setup/create-content-fragment.md)
+      + [GraphQL端点](/help/headless/setup/create-api-request.md)
+   + 内容片段 {#content-fragments}
+      + [概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=zh-Hans)
+      + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=zh-Hans)
+      + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=zh-Hans)
+      + 创作{#authoring}
+         + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=zh-Hans)
+         + [文本编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=zh-Hans)
+         + [关联的内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=zh-Hans)
+         + [变量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+      + [元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=zh-Hans)
+      + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=zh-Hans)
+      + [JSON预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hans)
+   + GraphQL API {#graphql-api}
+      + [内容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
+      + [管理 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [示例GraphQL查询](/help/headless/graphql-api/sample-queries.md)
+      + [持久GraphQL查询](/help/headless/graphql-api/persisted-queries.md)
+   + [内容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hans)
+   + 安全性 {#security}
+      + [权限](/help/headless/security/permissions.md)
+      + [身份验证](/help/headless/security/authentication.md)
+   + 部署 {#deployment}
+      + [架构](/help/headless/deployment/architecture.md)
+      + [Dispatcher](/help/headless/deployment/dispatcher.md)
+      + [CORS配置](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [反向链接过滤器](/help/headless/deployment/referrer-filter.md)
+   + Headless 历程 {#journeys}
+      + Headless 开发人员历程 {#developer}
+         + [了解 AEM 中的 Headless](/help/journey-headless/developer/overview.md)
+         + [了解 CMS Headless 开发](/help/journey-headless/developer/learn-about.md)
+         + [AEM Headless as a Cloud Service 快速入门](/help/journey-headless/developer/getting-started.md)
+         + [首次 AEM Headless 使用体验的路径](/help/journey-headless/developer/path-to-first-experience.md)
+         + [如何将内容建模为 AEM 内容模型](/help/journey-headless/developer/model-your-content.md)
+         + [如何通过 AEM 交付 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
+         + [如何通过 AEM Assets API 更新您的内容](/help/journey-headless/developer/update-your-content.md)
+         + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
+         + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
+         + [可选 - 如何使用 AEM 创建单页应用程序](/help/journey-headless/developer/create-spa.md)
+      + Headless 内容架构师历程 {#architect}
+         + [AEM Headless 内容架构师历程概述](/help/journey-headless/architect/overview.md)
+         + [使用 AEM 对 Headless 进行内容建模 - 简介](/help/journey-headless/architect/introduction.md)
+         + [了解使用 AEM 对 Headless 进行内容建模的基础知识](/help/journey-headless/architect/basics.md)
+         + [了解如何在 AEM 中创建内容片段模型](/help/journey-headless/architect/model-structure.md)
+      + Headless 翻译历程 {#translation}
+         + [了解 AEM 中的 Headless 翻译](/help/journey-headless/translation/overview.md)
+         + [AEM Headless 翻译快速入门](/help/journey-headless/translation/getting-started.md)
+         + [了解 AEM 中的 Headless 内容和翻译方法](/help/journey-headless/translation/learn-about.md)
+         + [配置翻译连接器](/help/journey-headless/translation/configure-connector.md)
+         + [配置翻译规则](/help/journey-headless/translation/translation-rules.md)
+         + [翻译内容](/help/journey-headless/translation/translate-content.md)
+         + [发布翻译的内容](/help/journey-headless/translation/publish-content.md)
+      + Headless 内容创作历程 {#author}
+         + [AEM Headless 内容创作历程 - 概述](/help/journey-headless/author/overview.md)
+         + [使用 AEM 为 Headless 创作 - 简介](/help/journey-headless/author/introduction.md)
+         + [使用 AEM 为 Headless 创作基本内容](/help/journey-headless/author/basics.md)
+         + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
+         + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
@@ -690,49 +742,7 @@ ht-degree: 99%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + Headless 体验管理 {#headless}
-         + [Headless 和 AEM](/help/implementing/developing/headless/introduction.md)
-         + Headless 历程 {#journeys}
-            + Headless 开发人员历程 {#developer}
-               + [了解 AEM 中的 Headless](/help/journey-headless/developer/overview.md)
-               + [了解 CMS Headless 开发](/help/journey-headless/developer/learn-about.md)
-               + [AEM Headless as a Cloud Service 快速入门](/help/journey-headless/developer/getting-started.md)
-               + [首次 AEM Headless 使用体验的路径](/help/journey-headless/developer/path-to-first-experience.md)
-               + [如何将内容建模为 AEM 内容模型](/help/journey-headless/developer/model-your-content.md)
-               + [如何通过 AEM 交付 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
-               + [如何通过 AEM Assets API 更新您的内容](/help/journey-headless/developer/update-your-content.md)
-               + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
-               + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
-               + [可选 - 如何使用 AEM 创建单页应用程序](/help/journey-headless/developer/create-spa.md)
-            + AEM Headless 内容架构师历程 {#architect}
-               + [AEM Headless 内容架构师历程概述](/help/journey-headless/architect/overview.md)
-               + [使用 AEM 对 Headless 进行内容建模 - 简介](/help/journey-headless/architect/introduction.md)
-               + [了解使用 AEM 对 Headless 进行内容建模的基础知识](/help/journey-headless/architect/basics.md)
-               + [了解如何在 AEM 中创建内容片段模型](/help/journey-headless/architect/model-structure.md)
-         + Headless 快速入门指南 {#getting-started}
-            + [简介](/help/implementing/developing/headless/getting-started/introduction.md)
-            + [创建配置](/help/implementing/developing/headless/getting-started/create-configuration.md)
-            + [创建内容片段模型](/help/implementing/developing/headless/getting-started/create-content-model.md)
-            + [创建资源文件夹](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-            + [创建内容片段](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-            + [访问和交付内容片段](/help/implementing/developing/headless/getting-started/create-api-request.md)
-         + 内容片段 {#content-fragments}
-            + [使用内容片段和 GraphQL 进行 Headless 交付](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=zh-Hans)
-            + [使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=zh-Hans)
-            + [为您的实例启用内容片段功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html?lang=zh-Hans)
-            + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=zh-Hans)
-            + [管理内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=zh-Hans)
-            + [变量 - 创作片段内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=zh-Hans)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=zh-Hans)
-            + [使用关联内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=zh-Hans)
-            + [元数据 - 片段属性](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=zh-Hans)
-            + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=zh-Hans)
-            + [预览 - JSON 呈现](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hans)
-         + 投放 API{#delivery-api}
-            + [内容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hans)
-            + [内容片段 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=zh-Hans)
-            + [带内容片段的 AEM GraphQL API - 示例内容和查询](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=zh-Hans)
-            + [对内容片段的远程 AEM GraphQL 查询的身份验证](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=zh-Hans)
+      + [Headless 体验管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 混合和 SPA 开发 {#hybrid}
          + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-Hans)

@@ -3,7 +3,7 @@ title: AEM和Adobe Commerce集成（使用商务集成框架）
 description: AEM和Adobe Commerce可使用商务集成框架(CIF)无缝集成。 CIF允许AEM访问Adobe Commerce实例，并通过GraphQL与Adobe Commerce通信。 它还允许AEM作者使用产品和类别选取器以及产品控制台来浏览从Adobe Commerce按需获取的产品和类别数据。 此外，CIF还提供开箱即用的店面，可加快商业项目的进度。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Experience Manager和Adobe Commerce可使用商务集成框架(CIF)无缝集成�
 >GraphQL当前用于Adobe Experience Manager(AEM)as a Cloud Service的两个（单独）方案：
 >
 >* 在这种情况下，CIF会通过GraphQL与商务通信。
->* [AEM内容片段可与AEM GraphQL API（一种基于标准GraphQL的自定义实施）一起使用，来提供结构化内容以供在应用程序中使用](/help/assets/content-fragments/graphql-api-content-fragments.md).
+>* [AEM内容片段可与AEM GraphQL API（一种基于标准GraphQL的自定义实施）一起使用，来提供结构化内容以供在应用程序中使用](/help/headless/graphql-api/content-fragments.md).
 
 
 ## 架构概述 {#overview}

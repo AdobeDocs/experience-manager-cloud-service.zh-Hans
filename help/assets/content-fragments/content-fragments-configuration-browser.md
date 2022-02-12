@@ -4,7 +4,7 @@ description: 了解如何在配置浏览器中启用某些内容片段功能，�
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 20%
@@ -27,7 +27,7 @@ ht-degree: 20%
 >如果未启用 **内容片段模型**:
 >
 >* the **创建** 选项将不可用于创建新模型。
->* 你将无法 [选择站点配置以创建相关的端点](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* 你将无法 [选择站点配置以创建相关的端点](/help/headless/graphql-api/graphql-endpoint.md).
 
 
 要启用内容片段功能，您需要：

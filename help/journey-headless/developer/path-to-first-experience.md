@@ -2,20 +2,20 @@
 title: 使用AEM Headless获得首个体验的路径
 description: 在AEM无头开发人员历程的这一部分中，您将了解在AEM中实施首个无头体验的步骤（包括规划注意事项），并了解尽可能使路径顺畅的最佳实践。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
 # 使用AEM Headless获得首个体验的路径 {#path-to-first-experience}
 
-在[AEM无头开发人员历程](overview.md)的这一部分中，您将了解在AEM中实施首个无头体验的步骤，包括规划注意事项，并了解使路径尽可能顺畅的最佳实践。
+在 [AEM Headless开发人员历程,](overview.md) 您将了解在AEM中实施首个无头体验的步骤（包括规划注意事项），并了解如何尽可能顺利地实现路径的最佳实践。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM无头历程的上一个文档中， [AEM无头作为Cloud Service入门](getting-started.md)您学习了无头CMS的基本理论，您现在应该：
+在AEM无头历程的上一个文档中， [AEM Headless入门as a Cloud Service](getting-started.md) 您学习了无头CMS的基本理论，您现在应该：
 
 * 了解AEM无头功能的基础知识。
 * 了解使用AEM无头功能的先决条件。
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 要求 {#requirements}
 
-在继续阅读本文档之前，请确保您已查看了AEM Headless开发人员历程[AEM Headless as a Cloud Service快速入门](getting-started.md)中的上一文档，并确保：
+在继续阅读本文档之前，请确保您已审阅了AEM Headless Developer历程中的上一文档， [AEM Headless入门as a Cloud Service](getting-started.md) 确保您：
 
 * 满足所列要求。
 * 已考虑过您自己的项目定义，包括范围、角色和性能。
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 要启动您的第一个AEM无头项目，您需要确保拥有一个内容模型，该模型将支持您要在所有渠道中进行的个性化和更新。
 
-除了AEM之外，如果您要构建客户端应用程序，以便能够针对对AEM作为Cloud Service的API调用测试客户端，则还需要确保设置了正确的开发环境。
+与AEM不同，如果您要构建客户端应用程序，则还要确保设置了正确的开发环境，以便能够针对对AEMas a Cloud Service的API调用测试客户端。
 
 ### 定义内容模型和API {#defining-models}
 
@@ -74,9 +74,9 @@ ht-degree: 0%
 
 ## 设置 {#setup}
 
-在AEM中开始使用无头功能之前，您需要确保已启用所有必需的功能。 此部分概述了所需内容。 [AEM Headless Developer历程中详细描述了完成这些步骤的实际步骤。](#overview.md)
+在AEM中开始使用无头功能之前，您需要确保已启用所有必需的功能。 此部分概述了所需内容。 在 [AEM Headless开发人员历程。](#overview.md)
 
-您还可以选择参阅[其他资源](#additional-resources) ，以了解有关各个主题的更多信息。
+您还可以选择将 [其他资源](#additional-resources) ，以了解有关各个主题的详细信息。
 
 ### 配置 {#configuration}
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 * 当您具有访问权限要求时，这些要求应会驱动您的内容层次结构。 将内容分组在一起，由同一组人员编辑。
 * 将类似内容分组到文件夹中。
    * 内容作者更有可能复制并粘贴现有内容以创建新内容。 因此，在同一文件夹中执行此操作会提高效率。
-   * AEM允许按文件夹设置允许的模型，因此&#x200B;**新建**&#x200B;按钮将仅显示该位置支持的模型。
+   * AEM允许按文件夹设置允许的模型，以便 **新建** 按钮将仅显示该位置支持的模型。
 * 如果在模型中设置了根文件夹，则可以简化新内容片段的内联内容片段编辑器创建过程。 然后，从业者不必选择位置，只需提供名称，即可开始编辑新引用。
 
 ### 创作内容 {#authoring}
@@ -135,20 +135,20 @@ ht-degree: 0%
 
 无论您的学习风格如何，Adobe都希望您在开始使用AEM Headless项目时取得成功。
 
-* 如果您希望继续&#x200B;**了解无头概念和AEM无头技术**，则应继续您的AEM无头历程，方法是下一步查看文档[如何将内容建模为AEM内容模型](model-your-content.md)，在该文档中，您将了解如何在AEM中对内容结构进行建模。
-* 如果您希望通过执行&#x200B;**来学习**，则可以跳转到[AEM Headless动手入门教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)，在该教程中，您将通过实施一个简单的项目来公开AEM Headless内容，直接进入AEM Headless开发。
+* 如果您希望继续 **了解无头概念和AEM无头技术**，则您应该通过下一步审阅文档来继续您的AEM无头历程 [如何将内容建模为AEM内容模型](model-your-content.md) 其中，您了解如何在AEM中构建内容结构模型。
+* 如果您愿意 **学习**，您可以跳转到 [AEM Headless动手操作入门教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) 在这里，您将通过实施一个简单的项目来公开AEM无头内容，从而直接进入AEM开发。
 
 ## 其他资源 {#additional-resources}
 
-虽然建议您通过查看文档[如何将您的内容建模为AEM内容模型来进入无头开发历程的下一部分，但是](model-your-content.md)以下是一些额外的可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头开发历程。
+虽然建议您通过审阅文档来进入无头开发历程的下一部分 [如何将内容建模为AEM内容模型，](model-your-content.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头历程。
 
-* [AEM无头翻译历程](/help/journey-headless/translation/overview.md)  — 此文档历程让您对无头技术、AEM如何提供无头内容以及如何翻译这些内容有了广泛的了解。
-* [AEM Sites作为Cloud Service的无头开发](/help/implementing/developing/headless/introduction.md)  — 简要介绍如何为AEM无头开发人员提供必要的功能
-* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 通过这些动手实践教程，了解如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。
-* [使用GraphQL API的无头内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  — 请阅读本课程，概述在AEM中实施的GraphQL API。需要通过AdobeID进行身份验证。
+* [AEM无头翻译历程](/help/journey-headless/translation/overview.md)  — 此文档历程使您能够广泛了解无头技术、AEM如何提供无头内容以及如何翻译无头内容。
+* [AEM Sitesas a Cloud Service的无头开发](/help/headless/introduction.md)  — 简要介绍AEM Headless开发人员的发展方向以及必要的功能
+* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 使用这些动手实践教程探索如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。
+* [使用GraphQL API的无头内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  — 请阅读本课程，概述在AEM中实施的GraphQL API。 需要通过AdobeID进行身份验证。
 * [AEM指南WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  — 此GitHub项目包括高亮显示AEM GraphQL API的示例应用程序。
-* [Adobe Experience Manager as a Cloud Service的架构简介](/help/overview/architecture.md)  - AEM架构的完整概述
-* [无头入门指南](/help/implementing/developing/headless/introduction.md#getting-started)  — 快速介绍AEM无头功能，适用于已经了解AEM的用户。
+* [Adobe Experience Manager as a Cloud Service建筑简介](/help/overview/architecture.md) - AEM架构的完整概述
+* [无头设置](/help/headless/introduction.md#getting-started)  — 为已了解AEM的用户快速介绍AEM无头功能。
 * [创建内容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 有关内容片段模型的技术文档
 * [创建内容片段](/help/assets/content-fragments/content-fragments.md)  — 有关内容片段的技术文档
-* [使用GraphQL查询内容](/help/assets/content-fragments/graphql-api-content-fragments.md)  - GraphQL API技术文档
+* [使用GraphQL查询内容](/help/headless/graphql-api/content-fragments.md)  — 有关GraphQL API的技术文档

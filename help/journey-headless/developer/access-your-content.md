@@ -1,21 +1,21 @@
 ---
 title: 如何通过AEM交付API访问您的内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用GraphQL查询访问内容片段内容。
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
 
 ---
 
+# 如何通过AEM交付API访问您的内容 {#access-your-content}
 
-# 如何通过AEM交付API访问您的内容{#access-your-content}
+在 [AEM Headless开发人员历程,](overview.md) 您可以了解如何使用GraphQL查询访问内容片段的内容并将其馈送到您的应用程序（无头交付）。
 
-在[AEM无头开发人员历程](overview.md)的这一部分中，您可以了解如何使用GraphQL查询访问内容片段的内容并将其馈送到您的应用程序（无头交付）。
+## 迄今为止的故事 {#story-so-far}
 
-## 到目前为止{#story-so-far}
-
-在AEM无标题历程的上一个文档中， [如何对内容建模](model-your-content.md)您学习了AEM中内容建模的基础知识，因此您现在应该了解如何对内容结构进行建模，然后使用AEM内容片段模型和内容片段实现该结构：
+在AEM无头历程的上一个文档中， [如何对内容进行建模](model-your-content.md) 您学习了AEM中内容建模的基础知识，因此现在应该了解如何对内容结构进行建模，然后使用AEM内容片段模型和内容片段来实现该结构：
 
 * 识别与内容建模相关的概念和术语。
 * 了解为何需要内容建模才能交付无头内容。
@@ -28,28 +28,28 @@ ht-degree: 1%
 * **目标**:了解如何使用AEM GraphQL查询访问内容片段的内容：
    * 引入GraphQL和AEM GraphQL API。
    * 深入了解AEM GraphQL API的详细信息。
-   * 请查看一些示例查询，以了解实际操作情况。
+   * 请查看一些示例查询，以了解实际操作方式。
 
-## 您想访问您的内容吗？{#so-youd-like-to-access-your-content}
+## 您想访问您的内容吗？ {#so-youd-like-to-access-your-content}
 
 所以……您拥有所有这些内容，其结构清晰（位于内容片段中），只需等待您的新应用程序提供信息。 问题是，如何实现它？
 
 您需要一种方法来定位特定内容，选择您需要的内容，并将其返回给应用程序以进行进一步处理。
 
-将Adobe Experience Manager(AEM)作为Cloud Service，您可以使用AEM GraphQL API有选择地访问内容片段，以仅返回所需的内容。 这意味着您可以实现结构化内容的无头交付，以供在应用程序中使用。
+借助Adobe Experience Manager(AEM)as a Cloud Service，您可以使用AEM GraphQL API有选择地访问内容片段，以仅返回所需的内容。 这意味着您可以实现结构化内容的无头交付，以供在应用程序中使用。
 
 >[!NOTE]
 >
 >AEM GraphQL API是一种基于标准GraphQL API规范的自定义实施。
 
-## GraphQL — 简介{#graphql-introduction}
+## GraphQL — 简介 {#graphql-introduction}
 
 GraphQL是一种开源规范，它提供：
 
 * 一种查询语言，用于从结构化对象中选择特定内容。
 * 用于对结构化内容执行这些查询的运行时。
 
-GraphQL是&#x200B;*trongly*&#x200B;类型的API。 这意味着&#x200B;*所有*&#x200B;内容必须按类型清晰地结构和组织，以便GraphQL *了解*&#x200B;要访问的内容和访问方式。 数据字段在GraphQL架构中定义，该架构用于定义内容对象的结构。
+GraphQL是 *强烈* 键入的API。 这意味着 *全部* 必须按类型清晰地构建和组织内容，以便GraphQL *理解* 访问内容和操作方式。 数据字段在GraphQL架构中定义，该架构用于定义内容对象的结构。
 
 然后，GraphQL端点提供响应GraphQL查询的路径。
 
@@ -57,7 +57,7 @@ GraphQL是&#x200B;*trongly*&#x200B;类型的API。 这意味着&#x200B;*所有*&
 
 >[!NOTE]
 >
->请参阅&#x200B;*GraphQL*.org和&#x200B;*GraphQL*.com 。
+>请参阅 *GraphQL*.org和 *GraphQL*.com。
 
 <!--
 ## AEM and GraphQL {#aem-graphql}
@@ -111,7 +111,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
     * The REST API can be used for CR(u)D operations.
 -->
 
-## 用于AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}的内容片段
+## 用于AEM GraphQL API的内容片段 {#content-fragments-use-with-aem-graphql-api}
 
 内容片段可用作AEM架构和查询的GraphQL的基础，如下所示：
 
@@ -123,25 +123,25 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 以下内容片段模型：
 
-* **Enabled**&#x200B;后，用于生成架构。
+* 用于生成架构一次 **已启用**.
 * 提供GraphQL所需的数据类型和字段。 它们确保您的应用程序仅请求可能的内容，并接收预期内容。
-* 数据类型&#x200B;**片段引用**&#x200B;可在模型中使用以引用其他内容片段，因此可引入其他级别的结构。
+* 数据类型 **片段引用** 可在模型中使用来引用其他内容片段，因此可引入其他级别的结构。
 
-### 片段引用{#fragment-references}
+### 片段引用 {#fragment-references}
 
-**片段引用**:
+的 **片段引用**:
 
 * 是在定义内容片段模型时可用的特定数据类型。
 * 引用另一个片段，具体取决于特定的内容片段模型。
 * 允许您创建并检索结构化数据。
 
-   * 当定义为&#x200B;**多源**&#x200B;时，主片段可以引用（检索）多个子片段。
+   * 定义为 **多源**，则主片段可以引用（检索）多个子片段。
 
-### JSON预览{#json-preview}
+### JSON预览 {#json-preview}
 
 为帮助设计和开发内容片段模型，您可以在内容片段编辑器中预览JSON输出。
 
-![JSON预](assets/cfm-model-json-preview.png "览JSON预览")
+![JSON预览](assets/cfm-model-json-preview.png "JSON预览")
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
@@ -237,19 +237,19 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ## 实际使用AEM GraphQL API {#actually-using-aem-graphiql}
 
-### 初始设置{#initial-setup}
+### 初始设置 {#initial-setup}
 
 在开始查询内容之前，您需要：
 
 * 启用您的端点
    * 使用工具 — >资产 — > GraphQL
-   * [启用GraphQL端点](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [启用GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md)
 
 * 安装GraphiQL（如果需要）
    * 安装为专用包
-   * [安装AEM GraphiQL界面](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
+   * [安装AEM GraphiQL界面](/help/headless/graphql-api/graphiql-ide.md)
 
-### 示例结构{#sample-structure}
+### 示例结构 {#sample-structure}
 
 要在查询中实际使用AEM GraphQL API，我们可以使用两个非常基本的内容片段模型结构：
 
@@ -268,15 +268,15 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 * 在内容片段编辑器中创建内容时
 * 生成要查询的GraphQL架构
 
-### 在何处测试查询{#where-to-test-your-queries}
+### 在何处测试查询 {#where-to-test-your-queries}
 
 查询可以在GraphiQL界面中输入，例如：
 
 * `http://localhost:4502/content/graphiql.html`
 
-![GraphiQL接](assets/graphiql-interface.png "口GraphiQL接口")
+![GraphiQL接口](assets/graphiql-interface.png "GraphiQL接口")
 
-### 查询入门{#getting-Started-with-queries}
+### 查询入门 {#getting-Started-with-queries}
 
 简单的查询是返回公司架构中所有条目的名称。 在此，您需要列出所有公司名称：
 
@@ -352,9 +352,9 @@ query {
 * 示例内容片段结构
 * 了解如何将GraphQL与AEM结合使用 — 示例内容和查询
 
-## 下一步是什么{#whats-next}
+## 下一步 {#whats-next}
 
-现在，您已了解如何使用AEM GraphQL API访问和查询无头内容，接下来您可以[了解如何使用REST API访问和更新内容片段的内容](update-your-content.md)。
+现在，您已了解如何使用AEM GraphQL API访问和查询无头内容，您现在可以 [了解如何使用REST API访问和更新内容片段的内容](update-your-content.md).
 
 ## 其他资源 {#additional-resources}
 
@@ -363,18 +363,18 @@ query {
    * [变量](https://graphql.org/learn/queries/#variables)
    * [GraphQL Java库](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [了解如何将GraphQL与AEM结合使用](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [启用GraphQL端点](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-   * [安装AEM GraphiQL界面](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [示例内容片段结构](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [了解如何将GraphQL与AEM结合使用 — 示例内容和查询](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-   * [示例查询 — 单个特定城市片段](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [元数据查询示例 — 列出标题为GB的奖项的元数据](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [示例查询 — 具有命名变体的所有城市](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [了解如何将GraphQL与AEM结合使用](/help/headless/graphql-api/content-fragments.md)
+   * [启用GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md)
+   * [安装AEM GraphiQL界面](/help/headless/graphql-api/graphiql-ide.md)
+* [示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [了解如何将GraphQL与AEM结合使用 — 示例内容和查询](/help/headless/graphql-api/sample-queries.md)
+   * [示例查询 — 单个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+   * [元数据查询示例 — 列出标题为GB的奖项的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [示例查询 — 具有命名变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [在配置浏览器中启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
    * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
-   * [JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md)
+   * [JSON 输出](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [了解跨源资源共享(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
-* [为服务器端API生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [AEM无头入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无头功能，包括内容建模和GraphQL。
+* [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+* [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL。

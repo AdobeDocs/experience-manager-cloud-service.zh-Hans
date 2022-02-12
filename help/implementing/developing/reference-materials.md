@@ -1,15 +1,15 @@
 ---
-title: API参考资料
+title: API 参考材料
 description: AEM具有广泛而功能强大的API，您可以将其用于数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# API参考资料 {#api-reference-materials}
+# API 参考材料 {#api-reference-materials}
 
 Adobe Experience Manager(AEM)提供了许多用于开发应用程序和扩展AEM的API。 AEM基于许多开源技术构建，这些技术也可以利用。
 
@@ -53,7 +53,7 @@ AEM基于以下四个主要Java API集以首选项的降序顺序构建。
 
 >[!TIP]
 >
->有关这些准则的详细信息，请参阅文档[了解Java API最佳实践。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>有关这些准则的详细信息，请参阅此文档 [了解Java API最佳实践。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ## AEM交付和内容管理服务和API {#delivery-apis}
 
@@ -63,10 +63,10 @@ AEM提供了可自定义的组件和内容交付选项。
 |---|---|
 | [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 针对AEM的标准化Web内容管理(WCM)组件，可加快开发时间并降低网站的维护成本 |
 | [JSON导出程序](/help/implementing/developing/components/json-exporter.md) | 以JSON数据模型格式交付任何AEM页面的内容 |
-| [为组件启用JSON导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
+| [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
 | [资产API](/help/assets/mac-api-assets.md) | 允许对资产（包括二进制文件、元数据、演绎版和注释）执行创建 — 读取 — 更新 — 删除(CRUD)操作。 请参阅AEM Assets HTTP API |
 | [内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 通过CRUD操作直接通过HTTP API访问内容片段内容 |
-| [内容片段GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) | 在无头CMS实施中，支持将内容片段高效交付到JavaScript客户端 |
+| [内容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在无头CMS实施中，支持将内容片段高效交付到JavaScript客户端 |
 | [内容片段资产HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支持的HTTP资产请求的确切格式 |
 
 ## SPA特定的API {#spa-apis}
@@ -82,4 +82,4 @@ AEM单页应用程序(SPA)编辑器SDK框架提供了特定的JavaScript API引�
 
 >[!TIP]
 >
->有关单页应用程序的更多信息，请参阅[SPA简介和演练](/help/implementing/developing/hybrid/introduction.md)。
+>查看 [SPA简介和演练](/help/implementing/developing/hybrid/introduction.md) 有关单页应用程序的详细信息。
