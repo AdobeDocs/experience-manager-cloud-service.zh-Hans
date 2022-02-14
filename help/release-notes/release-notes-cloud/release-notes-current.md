@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
+source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1083'
+ht-degree: 95%
 
 ---
 
@@ -30,6 +30,10 @@ ht-degree: 0%
 ## 发布视频 {#release-video}
 
 观看 [2022 年 1 月版概述](https://video.tv.adobe.com/v/340120)视频，大致了解 2022.1.0 版的新增功能。
+
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* 的 **[启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 按钮 **网站** 站点控制台的边栏，用于使用页面核心组件v2的站点。 此按钮将站点配置为加载与现有客户端库一起部署的前端管道的主题。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

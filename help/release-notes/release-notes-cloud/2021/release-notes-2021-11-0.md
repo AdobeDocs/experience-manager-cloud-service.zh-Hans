@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版的发行说明。'
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 95%
+source-wordcount: '1055'
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,6 @@ ht-degree: 95%
 ## 发布视频 {#release-video}
 
 观看 [2021 年 12 月版概述](https://video.tv.adobe.com/v/339278)视频，大致了解 2021.11.0（2021 年 11 月）版的新增功能。
-
-## Adobe Experience Manager Sites as a Cloud Service {#sites}
-
-* 的 **[启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 按钮 **网站** 站点控制台的边栏，用于使用页面核心组件v2的站点。 此按钮将站点配置为加载与现有客户端库一起部署的前端管道的主题。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
