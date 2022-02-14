@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版的发行说明。'
-source-git-commit: 16c4b6b694ddad7854906c0d18880dd72159c02a
+source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 99%
+source-wordcount: '1114'
+ht-degree: 95%
 
 ---
 
@@ -24,11 +24,15 @@ ht-degree: 99%
 ## 发布日期 {#release-date}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本 (2021.11.0) 的发布日期为 2021 年 12 月 16 日。
-以下版本(2022.1.0)发布于2022年2月3日。
+下一个版本 (2022.1.0) 的发布日期为 2022 年 2 月 3 日。
 
 ## 发布视频 {#release-video}
 
 观看 [2021 年 12 月版概述](https://video.tv.adobe.com/v/339278)视频，大致了解 2021.11.0（2021 年 11 月）版的新增功能。
+
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* 的 **[启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 按钮 **网站** 站点控制台的边栏，用于使用页面核心组件v2的站点。 此按钮将站点配置为加载与现有客户端库一起部署的前端管道的主题。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -42,7 +46,7 @@ ht-degree: 99%
 
 * [!DNL Dynamic Media] 现在支持 MXF 视频的提取、预览、播放和发布。尚不支持 MXF 视频的注释和可购买视频。
 
-* 在配置远程 DAM 和 Sites 部署之间的连接后，远程 DAM 上的资源即可用于 Sites 部署。您现在可以对远程 DAM 资源或文件夹执行[更新、删除、重命名和移动操作](/help/assets/use-assets-across-connected-assets-instances.md)。更新会在 Sites 部署中自动提供，但会有一些延迟。
+* 在配置远程 DAM 和 Sites 部署之间的连接后，远程 DAM 上的资源即可用于 Sites 部署。您现在可以对远程 DAM 资源或文件夹执行[更新、删除、重命名和移动操作](/help/assets/use-assets-across-connected-assets-instances.md)。相关更新会在 Sites 部署中自动提供，但会有一些延迟。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
