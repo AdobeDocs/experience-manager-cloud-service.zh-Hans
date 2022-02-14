@@ -2,7 +2,7 @@
 title: AEMas a Cloud Service中的维护任务
 description: AEMas a Cloud Service中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
+source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 >
 >Adobe保留覆盖客户维护任务配置设置以缓解性能下降等问题的权限。
 
-下表说明了在AEMas a Cloud Service发布时可用的维护任务。
+下表说明了在发布AEMas a Cloud Service时可用的维护任务。
 
 | 维护任务 | 配置的所有者 | 如何配置（可选） |
 |---|---|---|
@@ -34,13 +34,13 @@ ht-degree: 2%
 | 版本清除 | Adobe | 完全由Adobe拥有，但将来，客户将能够配置某些参数。 |
 | 审核日志清除 | Adobe | 完全由Adobe拥有，但将来，客户将能够配置某些参数。 |
 | Lucene 二进制文件清理 | Adobe | 未使用，因此被Adobe禁用。 |
-| 临时任务清除 | 客户 | 必须在github中完成。 <br> 通过在文件夹或下创建属性，覆盖下 `/libs` 的现成维护窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置节 `granite_daily`点。有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上面的节点（将其命名为）下添加另一个具有相应属性的节 `granite_TaskPurgeTask`点，来启用维护任务。<br> 配置OSGi属性，请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 工作流清除 | 客户 | 必须在github中完成。 <br> 通过在文件夹下创建属性，覆盖下 `/libs` 的现成维护窗口配`/apps/settings/granite/operations/maintenance/granite_weekly` 置节 `granite_daily`点。有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上面的节点（将其命名为）下添加另一个具有相应属性的节 `granite_WorkflowPurgeTask`点，来启用维护任务。<br> 配置OSGi属性，请参 [阅AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 项目清除 | 客户 | 必须在github中完成。 <br> 通过在文件夹或下创建属性，覆盖下 `/libs` 的现成维护窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置节 `granite_daily`点。有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点（将其命名为）下添加具有相应属性的节点， `granite_ProjectPurgeTask`来启用维护任务。<br> 配置OSGi属性请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 临时任务清除 | 客户 | 必须在github中完成。 <br> 覆盖下的现成维护窗口配置节点 `/libs` 通过在文件夹下创建属性 `/apps/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`. 有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 `granite_TaskPurgeTask`)来访问Advertising Cloud的帮助。 <br> 配置OSGI属性，请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 工作流清除 | 客户 | 必须在github中完成。 <br> 覆盖下的现成维护窗口配置节点 `/libs` 通过在文件夹下创建属性`/apps/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`. 有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 `granite_WorkflowPurgeTask`)来访问Advertising Cloud的帮助。 <br> 配置OSGI属性，请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 项目清除 | 客户 | 必须在github中完成。 <br> 覆盖下的现成维护窗口配置节点 `/libs` 通过在文件夹下创建属性 `/apps/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`. 有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点下添加节点（将其命名为）来启用维护任务 `granite_ProjectPurgeTask`)来访问Advertising Cloud的帮助。 <br> 配置OSGI属性请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 客户可以安排在每日、每周或每月维护时段执行每个工作流清除、临时任务清除和项目清除维护任务。 应直接在源代码管理中编辑这些配置。 下表描述了可用于每个窗口的配置参数。 另外，请参阅表后面提供的位置和代码示例。
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
     <th>维护窗口配置</th>
@@ -54,8 +54,8 @@ ht-degree: 2%
     <td>JCR节点定义</td>
   <td>
   <p><strong>windowSchedule=daily</strong> （不应更改此值）</p>
-  <p><strong>windowStartTime=HH:</strong> 用作24小时制。定义与每日维护窗口关联的维护任务应何时开始执行。</p>
-  <p><strong>windowEndTime=HH:</strong> 用作24小时制。定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
+  <p><strong>windowStartTime=HH:MM</strong> 用作24小时钟。 定义与每日维护窗口关联的维护任务应何时开始执行。</p>
+  <p><strong>windowEndTime=HH:MM</strong> 用作24小时钟。 定义与每日维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
   </td> 
   </tr>
   <tr>
@@ -64,9 +64,9 @@ ht-degree: 2%
     <td>JCR节点定义</td>
     <td>
     <p><strong>windowSchedule=weekly</strong> （不应更改此值）</p>
-    <p><strong>windowStartTime=HH:</strong> 用作24小时制。定义与每周维护窗口关联的维护任务应何时开始执行。</p>
-    <p><strong>windowEndTime=HH:</strong> 用作24小时制。定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
-    <p><strong>windowScheduleWeekdays=1-7之间的2个值的数组(例如，[5,5])</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。开始和结束的确切时间分别受windowStartTime和windowEndTime的约束。</p>
+    <p><strong>windowStartTime=HH:MM</strong> 用作24小时钟。 定义与每周维护窗口关联的维护任务应何时开始执行。</p>
+    <p><strong>windowEndTime=HH:MM</strong> 用作24小时钟。 定义与每周维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
+    <p><strong>windowScheduleWeekdays=1-7之间的2个值的数组(例如，[5,5])</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别受windowStartTime和windowEndTime的约束。</p>
     </td>
   </tr>
   <tr>
@@ -75,10 +75,10 @@ ht-degree: 2%
     <td>JCR节点定义</td>
     <td>
     <p><strong>windowSchedule=daily</strong> （不应更改此值）</p>
-    <p><strong>windowStartTime=HH:</strong> 用作24小时制。定义与每月维护窗口关联的维护任务应何时开始执行。</p>
-    <p><strong>windowEndTime=HH:</strong> 用作24小时制。定义与每月维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
-    <p><strong>windowScheduleWeekdays=1-7之间的2个值的数组(例如，[5,5])</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。开始和结束的确切时间分别受windowStartTime和windowEndTime的约束。</p>
-    <p><strong>windowFirstLastStartDay= 0/1 </strong> 0，用于在月的第一周进行计划，或在月的最后一周进行计划。如果没有值，则实际上会按照每月windowScheduleWeekdays的规定，每天计划作业。</p>
+    <p><strong>windowStartTime=HH:MM</strong> 用作24小时钟。 定义与每月维护窗口关联的维护任务应何时开始执行。</p>
+    <p><strong>windowEndTime=HH:MM</strong> 用作24小时钟。 定义与每月维护窗口关联的维护任务在尚未完成时应停止执行的时间。</p>
+    <p><strong>windowScheduleWeekdays=1-7之间的2个值的数组(例如，[5,5])</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别受windowStartTime和windowEndTime的约束。</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0表示在当月的第一周计划，1表示在当月的最后一周计划。 如果没有值，则实际上会按照每月windowScheduleWeekdays的规定，每天计划作业。</p>
     </td> 
     </tr>
     </tbody>
