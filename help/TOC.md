@@ -605,7 +605,7 @@ ht-degree: 98%
    + 使用 Cloud Manager {#using-cloud-manager}
       + Cloud Manager 发行说明 {#release-notes-cloud-manager}
          + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022年 {#2022}
+         + 2022 {#2022}
             + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021年 {#2021}
             + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
