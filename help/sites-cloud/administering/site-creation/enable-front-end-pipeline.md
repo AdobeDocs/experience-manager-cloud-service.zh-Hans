@@ -3,9 +3,9 @@ title: 启用前端管道
 description: 了解如何为现有网站启用前端管道，以便利用网站主题更快地自定义您的网站。
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ ht-degree: 0%
 >如果您不熟悉前端管道以及如何使用前端管道和站点模板快速部署站点，请查看 [快速网站创建历程](/help/journey-sites/quick-site/overview.md) 介绍。
 
 如果您尚未基于网站模板和主题创建现有网站，则AEM可以将您的网站配置为在现有客户端库的基础上加载通过前端管道部署的主题。
+
+## 技术详细信息 {#technical-details}
+
+在激活站点的前端管道时，AEM会对您的站点结构进行以下更改。
+
+* 网站的所有页面都将包含一个额外的CSS和JS文件，可通过专用的Cloud Manager前端管道部署更新来修改该文件。
+* 添加的CSS和JS文件最初将为空，但可以下载“主题源”文件夹以引导文件夹结构，该结构允许通过该管道部署CSS和JS代码更新。
+* 此更改只能由开发人员通过删除 `SiteConfig` 和 `HtmlPageItemsConfig` 此操作将在下面创建的节点 `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>此操作不会自动转换站点的现有客户端库以使用字体端管道。 将这些源从客户端库文件夹移动到前端管道文件夹是一项需要前端开发人员手动完成的任务。
 
 ## 要求 {#requirements}
 
