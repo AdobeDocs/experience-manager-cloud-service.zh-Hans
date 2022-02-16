@@ -2,7 +2,7 @@
 title: 配置非生产管道
 description: 了解如何在部署到生产环境之前配置非生产管道以测试代码质量。
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -124,7 +124,7 @@ Web层配置管道部署HTTPD/Dispatcher配置。 查看文档 [CI/CD管线](/he
 >
 >如果所选环境已存在Web层代码管道，则将禁用此选择。
 
-要完成全栈代码非生产管道的配置，请执行以下步骤。
+要完成Web层代码非生产管道的配置，请执行以下步骤。
 
 1. 在 **源代码** 选项卡，则必须定义以下选项。
 
