@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service中的维护任务
 description: AEMas a Cloud Service中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
+source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '1211'
 ht-degree: 2%
 
 ---
@@ -39,6 +39,64 @@ ht-degree: 2%
 | 项目清除 | 客户 | 必须在github中完成。 <br> 覆盖下的现成维护窗口配置节点 `/libs` 通过在文件夹下创建属性 `/apps/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`. 有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点下添加节点（将其命名为）来启用维护任务 `granite_ProjectPurgeTask`)来访问Advertising Cloud的帮助。 <br> 配置OSGI属性请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 客户可以安排在每日、每周或每月维护时段执行每个工作流清除、临时任务清除和项目清除维护任务。 应直接在源代码管理中编辑这些配置。 下表描述了可用于每个窗口的配置参数。 另外，请参阅表后面提供的位置和代码示例。
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>维护任务</th>
+    <th>配置的所有者</th>
+    <th>如何配置（可选）</th>
+  </tr>  
+  <tr>
+    <td>数据存储垃圾收集</td>
+    <td>Adobe</td>
+    <td>不适用 — 完全Adobe拥有</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>版本清除</td>
+    <td>Adobe</td>
+    <td>完全由Adobe拥有，但将来，客户将能够配置某些参数。</td>
+  </td>
+  </tr>
+  <tr>
+    <td>审核日志清除</td>
+    <td>Adobe</td>
+    <td>完全由Adobe拥有，但将来，客户将能够配置某些参数。</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Lucene 二进制文件清理</td>
+    <td>Adobe</td>
+    <td>未使用，因此被Adobe禁用。</td>
+  </td>
+  </tr>
+  <tr>
+    <td>临时任务清除</td>
+    <td>客户</td>
+    <td>
+    <p>必须在github中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>.</p>
+    <p>有关其他配置详细信息，请参阅下面的“维护窗口”表。 通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 <code>granite_TaskPurgeTask</code>)来访问Advertising Cloud的帮助。 配置OSGI属性，请参阅 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5维护任务文档</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>工作流清除</td>
+    <td>客户</td>
+    <td>
+    <p>必须在github中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有关其他配置详细信息，请参阅下面的“维护窗口”表。</p>
+    <p>通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 <code>granite_WorkflowPurgeTask</code>)来访问Advertising Cloud的帮助。 配置OSGI属性，请参阅 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5维护任务文档</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>项目清除</td>
+    <td>客户</td>
+    <td>
+    <p>必须在github中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有关其他配置详细信息，请参阅下面的“维护窗口”表。</p>
+    <p>通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 <code>granite_ProjectPurgeTask</code>)来访问Advertising Cloud的帮助。 配置OSGI属性，请参阅 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5维护任务文档</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table style="table-layout:auto">
  <tbody>
