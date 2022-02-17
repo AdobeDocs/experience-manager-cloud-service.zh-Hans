@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service中的维护任务
 description: AEMas a Cloud Service中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
+source-git-commit: a5e4f4617e16e0f7ee36623b41fdd5197eca7178
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -28,17 +28,17 @@ ht-degree: 2%
 
 下表说明了在发布AEMas a Cloud Service时可用的维护任务。
 
-| 维护任务 | 配置的所有者 | 如何配置（可选） |
+<!--| Maintenance Task | Who owns the configuration | How to configure (optional)  |
 |---|---|---|
-| 数据存储垃圾收集 | Adobe | 不适用 — 完全Adobe拥有 |
-| 版本清除 | Adobe | 完全由Adobe拥有，但将来，客户将能够配置某些参数。 |
-| 审核日志清除 | Adobe | 完全由Adobe拥有，但将来，客户将能够配置某些参数。 |
-| Lucene 二进制文件清理 | Adobe | 未使用，因此被Adobe禁用。 |
-| 临时任务清除 | 客户 | 必须在github中完成。 <br> 覆盖下的现成维护窗口配置节点 `/libs` 通过在文件夹下创建属性 `/apps/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`. 有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 `granite_TaskPurgeTask`)来访问Advertising Cloud的帮助。 <br> 配置OSGI属性，请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 工作流清除 | 客户 | 必须在github中完成。 <br> 覆盖下的现成维护窗口配置节点 `/libs` 通过在文件夹下创建属性`/apps/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`. 有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 `granite_WorkflowPurgeTask`)来访问Advertising Cloud的帮助。 <br> 配置OSGI属性，请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 项目清除 | 客户 | 必须在github中完成。 <br> 覆盖下的现成维护窗口配置节点 `/libs` 通过在文件夹下创建属性 `/apps/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`. 有关其他配置详细信息，请参阅下面的“维护窗口”表。 <br> 通过在上述节点下添加节点（将其命名为）来启用维护任务 `granite_ProjectPurgeTask`)来访问Advertising Cloud的帮助。 <br> 配置OSGI属性请参阅 [AEM 6.5维护任务文档](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Datastore garbage collection | Adobe | N/A - fully Adobe owned |
+| Version Purge | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
+| Audit Log Purge  | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
+| Lucene Binaries Cleanup | Adobe | Unused and therefore disabled by Adobe. |
+| Ad-hoc Task Purge | Customer | Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_TaskPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see the [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)|
+| Workflow Purge | Customer |  Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder`/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_WorkflowPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Project Purge | Customer |  Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding a node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. <br> Configure OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-客户可以安排在每日、每周或每月维护时段执行每个工作流清除、临时任务清除和项目清除维护任务。 应直接在源代码管理中编辑这些配置。 下表描述了可用于每个窗口的配置参数。 另外，请参阅表后面提供的位置和代码示例。
+Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project Purge Maintenance tasks to be executed during the daily, weekly, or monthly maintenance windows. These configurations should be edited directly in source control. The table below describes the configuration parameters available for each of the window. Also, see the locations and code samples provided after the table.-->
 
 <table style="table-layout:auto">
  <tbody>
