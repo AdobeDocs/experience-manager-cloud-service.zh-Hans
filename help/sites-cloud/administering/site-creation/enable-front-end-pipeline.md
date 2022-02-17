@@ -3,9 +3,9 @@ title: 启用前端管道
 description: 了解如何为现有网站启用前端管道，以便利用网站主题更快地自定义您的网站。
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ AEM可以自动调整您的现有站点以使用前端管道。 要执行此操�
 
 ## 启用前端管道 {#enabling}
 
-可从站点控制台中启用您的站点。
+可通过从“站点”控制台中使用 [站点边栏。](site-rail.md)
 
 1. 登录AEM，然后通过 **全局导航** > **站点**.
 1. 在控制台中选择您的站点。 必须选择站点的根，而不是任何子页面。
@@ -58,7 +58,8 @@ AEM可以自动调整您的现有站点以使用前端管道。 要执行此操�
 
 1. AEM会提示您进行确认，并概述将要进行的更改。 确认并调整您的网站。
 
-现在，您的站点已准备好使用前端管道。 要了解有关前端管道的更多信息，请参阅：
+现在，您的站点已准备好使用前端管道。 要了解有关前端管道和管理站点主题的更多信息，请参阅：
 
+* [使用站点边栏管理站点主题](site-rail.md)
 * [快速网站创建历程](/help/journey-sites/quick-site/overview.md)  — 此文档历程从头到尾概述了使用前端管道和快速站点创建工具快速部署站点的过程。
 * [CI/CD管线](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)  — 本文档介绍全栈和Web层管道上下文中的前端管道。

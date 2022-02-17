@@ -1,9 +1,9 @@
 ---
 title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -102,6 +102,7 @@ AEM是一款功能强大的工具，还有许多其他选项可供使用。 请�
 
 以下是一些其他资源，可更深入地了解本文档中提到的一些概念。
 
+* [使用站点边栏管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md)  — 了解站点边栏的强大功能，帮助您轻松自定义和管理站点主题，包括下载主题源和管理主题版本。
 * [AEMas a Cloud Service技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已经对AEM有了很深的了解，则可能需要直接查阅深入的技术文档。
 * [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html)  — 如果您希望了解有关Cloud Manager功能的更多详细信息，则可能需要直接查阅深入的技术文档。
 * [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已预先配置了具有相应权限的角色。 有关这些角色以及如何管理这些角色的详细信息，请参阅本文档。
