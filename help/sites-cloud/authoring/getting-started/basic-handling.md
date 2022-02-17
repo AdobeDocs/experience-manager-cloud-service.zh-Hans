@@ -2,14 +2,14 @@
 title: 基本操作
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 96%
+source-wordcount: '2954'
+ht-degree: 95%
 
 ---
 
-# 基本操作 {#basic-handling}
+# 基本处理 {#basic-handling}
 
 此文档旨在概述使用 AEM 创作环境时的基本操作。它使用&#x200B;**站点**&#x200B;控制台作为基础。
 
@@ -467,7 +467,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![站点边栏](../assets/site-rail.png)
 
-点按或单击 **下载主题源** 自定义 [主题。](/help/sites-cloud/administering/site-creation/site-themes.md)
+查看文档 [使用站点边栏管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md) 有关如何使用边栏管理 [主题。](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
