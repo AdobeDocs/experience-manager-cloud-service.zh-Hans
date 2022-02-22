@@ -2,8 +2,8 @@
 title: 不同功能与新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
-workflow-type: ht
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ Cloud Manager：
 
 Cloud Manager 已经演变成为自助服务门户，在其中可以创建和配置 AEM as a Cloud Service 的主要组件：
 
-* 创建和管理新程序。有关详细信息，请参阅[了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)。
+* 创建和管理新程序。有关详细信息，请参阅[了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
 
 * 在这些程序中创建和管理 AEM 环境。有关详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)。
 

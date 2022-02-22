@@ -1,49 +1,67 @@
 ---
 title: '沙盒程序简介 '
-description: 沙盒程序简介
+description: 了解与生产程序有何不同的沙盒程序。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 1892900ea3f365e1b5f7d31ffae64d45256d2a3a
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
+
 # 沙盒程序简介 {#sandbox-programs}
 
-## 简介 {#introduction}
+了解与生产程序有何不同的沙盒程序。
 
-沙盒项目是AEM Cloud Service中可用的两种程序类型之一，另一种是生产程序。
+## Communications API {#introduction}
 
-通常创建沙盒是为了用于培训、运行演示、启用或概念验证(POC)。它们不能载上实时流量。 它们不受 [AEMas a Cloud Service承诺](https://www.adobe.com/legal/service-commitments.html).
+沙盒项目通常用于提供培训、运行演示、支持或概念验证(POC)目的，因此不能用于传输实时流量。
 
-在沙盒中创建的环境未配置为自动缩放。 因此，这些环境不适合进行性能或负载测试。
+沙盒项目是AEM Cloud Service中可用的两种类型的项目之一，另一种是 [生产计划。](introduction-production-programs.md) 请参阅该文档 [了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 了解有关程序类型的更多信息。
 
-沙盒程序包括 [!DNL Sites] 和 [!DNL Assets] 和会自动填充Git存储库、开发环境和非生产管道。  Git存储库会使用基于AEM项目原型的示例项目填充。
+## 自动创建 {#auto-creation}
 
->[!IMPORTANT]
->沙盒项目将只有一个开发环境。
+沙盒程序具有自动创建功能。 每当您自动创建新的沙盒项目时，Cloud Manager都会：
 
->[!NOTE]
->自定义域和IP允许列表在沙盒项目中不可用。
+* 将AEM Sites和AEM Assets作为解决方案添加到您的计划中。
+* 设置项目git存储库，其中包含基于 [AEM项目原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* 创建开发环境。
+* 创建部署到开发环境的非生产管道。
 
-请参阅 [了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) 以详细了解程序类型。
+沙盒项目将只有一个开发环境。
 
-### 沙盒程序的属性 {#attributes-sandbox}
+## 限制和条件 {#limitations}
 
-沙盒程序具有以下属性：
+由于沙盒程序不适用于实时流量，因此对于它们的使用存在某些限制和条件，这会将它们与生产程序区分开来。
 
-1. **程序创建：** 沙盒项目创建包括自动：
-   * 使用示例代码和内容设置项目
-   * 开发环境的创造
-   * 创建非生产管道部署到开发环境(主控的分支部署到开发环境)
+### 无实时流量 {#live-traffic}
 
-1. **解决方案：** 沙盒程序包括AEM [!DNL Sites] 和 [!DNL Assets].
+沙盒程序不用于传输实时流量，因此不受 [AEMas a Cloud Service承诺。](https://www.adobe.com/legal/service-commitments.html)
 
-1. **AEM更新：** AEM更新可以手动应用于沙盒项目中的环境，而不会自动推送。
-请参阅 [AEM对沙盒环境的更新](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) 以了解更多详细信息。
+### 无自动缩放 {#auto-scaling}
 
-1. **休眠：** 如果在某段时间内未检测到活动，则沙盒项目中的环境会自动休眠。 沙盒在处于非活动状态8小时后会进入休眠节点，在此之后，它们可以解除休眠。 可以手动解除休眠环境。
-请参阅 [休眠和解除休眠沙盒环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) 以了解更多详细信息。
+在沙盒项目中创建的环境未配置为自动缩放。 因此，这些环境不适合进行性能或负载测试。
 
-1. **删除**:沙箱在连续休眠模式下6个月后被删除，之后可以重新创建。
+### 无自定义域或IP允许列表 {#ip-allow}
+
+自定义域和IP允许列表在沙盒项目中不可用。
+
+### 手动AEM更新 {#updates}
+
+AEM更新不会自动推送到沙盒程序，但可以手动应用于沙盒程序中的环境。
+
+* 只有在目标环境具有正确配置的管道时，才能运行手动更新。
+* 手动更新生产或暂存环境将自动更新另一个环境。 生产+暂存环境集必须位于同一AEM版本上。
+
+请参阅该文档 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md) 以了解更多详细信息。
+
+请参阅该文档 [更新环境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) 了解如何更新环境。
+
+### 休眠和删除 {#hibernation}
+
+沙盒项目中的环境在处于不活动状态8小时后会自动休眠。 休眠后，可以手动解除休眠。
+
+沙盒项目在处于连续休眠模式6个月后被删除，之后可以重新创建它们。
+
+请参阅 [休眠和解除休眠沙盒环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) 以了解更多详细信息。

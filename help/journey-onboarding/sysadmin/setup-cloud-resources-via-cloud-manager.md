@@ -3,7 +3,7 @@ title: 通过 Cloud Manager 设置云资源
 description: 了解如何使用Cloud Manager来设置和管理您自己的云资源。
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * 您应该熟悉 [Cloud Manager产品配置文件。](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* 您应该了解Cloud Manager的概念 [项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) 和 [环境。](/help/implementing/cloud-manager/manage-environments.md)
+* 您应该了解Cloud Manager的概念 [项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 和 [环境。](/help/implementing/cloud-manager/manage-environments.md)
 
 ## 以系统管理员和业务所有者身份访问Cloud Manager {#access-sysadmin-bo}
 
@@ -141,7 +141,7 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   >有关如何使用“添加程序”向导的分步说明，请参阅此文档 [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) 或者看这个 [视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) 了解如何创建AEM as a Cloud计划，并在创建计划之前了解重要注意事项。
+   >有关如何使用“添加程序”向导的分步说明，请参阅此文档 [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 或者看这个 [视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) 了解如何创建AEM as a Cloud计划，并在创建计划之前了解重要注意事项。
 
 
 1. 成功创建云程序后，您可以从Cloud Manager登录页面导航到程序，以查看 **概述** 页面。
