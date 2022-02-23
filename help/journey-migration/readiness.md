@@ -1,14 +1,14 @@
 ---
-title: 准备阶段
-description: 了解您需要采取哪些步骤来确保您的AEM安装已准备就绪，可以将其移至云
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+title: 就绪阶段
+description: 了解您需要采取哪些步骤来确保AEM安装已准备就绪，可将其移至云
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 6%
 
 ---
 
-# 准备阶段 {#readiness-phase}
+# 就绪阶段 {#readiness-phase}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
@@ -114,7 +114,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
   <tr>
     <td>工作流启动器</td>
     <td></td>
-    <td>从您的代码中删除任何触发OOTB或自定义DAM更新资产工作流的工作流启动器。</br>上传到AEMas a Cloud Service的所有资产都将由资产处理服务进行处理。 有一个工作流后处理OSGi配置，可用于触发其他自定义处理步骤。</td>
+    <td>从您的代码中删除任何触发OOTB或自定义DAM更新资产工作流的工作流启动器。</br>上传到AEMas a Cloud Service的所有资产都将由资产处理服务进行处理。 有关自定义步骤，请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 后处理工作流</a> 了解如何设置和配置后处理工作流。</td>
   </tr>
   <tr>
     <td>自定义演绎版步骤</td>
