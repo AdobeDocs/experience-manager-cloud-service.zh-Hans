@@ -1,11 +1,11 @@
 ---
 title: 'Adobe Experience Manager(AEM)Formsas a Cloud Service的主要特性和功能 '
-description: '[!DNL AEM Forms] as a Cloud Service 是一个用于创建、管理、发布企业级表单和业务流程的平台。'
+description: '"[!DNL AEM Forms] as a Cloud Service是创建、管理、发布企业级表单和业务流程的平台。”'
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 * [创建像素完美PDF forms](use-forms-designer.md#create-an-adaptive-form) 看起来像纸。
 
-* 使用 [automated forms conversion服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 将PDF表单转换为自适应表单。 它可帮助您加快组织数据捕获体验的数字化和现代化。
+* 使用 [automated forms conversion服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans) 将PDF表单转换为自适应表单。 它可帮助您加快组织数据捕获体验的数字化和现代化。
 
    ![automated forms conversion服务](assets/pdf-to-adaptive-form-gitx50.gif)
 

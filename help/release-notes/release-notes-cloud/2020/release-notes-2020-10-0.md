@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版的发行说明。'
-description: '[!DNL Adobe Experience Manager] as a Cloud Service的2020.10.0发行说明。'
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.10.0发行说明。”'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 17%
+ht-degree: 20%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 17%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### 的新增功能 [!DNL Sites] {#what-is-new-sites}
+### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
 * **[核心组件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)**:Adobe Experience Manager as a Cloud Service从最新版本的核心组件自动更新中受益。 第2.12.0版包括社区贡献的最新改进。 改进包括 [新的POST表单处理程序；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 包含自定义CSS、JavaScript和元数据的功能 [标记；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 用于简化自定义组件中Adobe数据层集成的实用程序。 请参阅 [更改列表](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 在2.12.0中。
 
@@ -45,19 +45,19 @@ ht-degree: 17%
 
 ## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
-### 的新增功能 [!DNL Forms] {#what-is-new-forms-oct-2021}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
 * **适用于自适应Forms的Analytics**:现在，您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）的行为，以收集最终用户分析。 它有助于企业用户根据收集到的洞察信息，就自适应表单内容、布局和样式做出明智的决策。
 
-### 的新增功能 [!DNL Forms] 预发行渠道 {#prerelease-features-forms-oct-2021}
+### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms-oct-2021}
 
 * **将AEM工作流数据外部化以进行安全处理**:您可以将包含敏感个人数据(SPD)元素的正在处理的AEM工作流变量数据存储在客户管理的存储库中，以便进行安全处理。 处理工作流时，存储在工作流变量中的数据不会保留在AEM存储库中。 它是按需从客户管理的存储库获取的。
 
-### 的测试版功能 [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
+### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) 帮助您将模板和XML数据结合起来，以生成各种格式的文档。 该服务允许您以同步和批处理模式生成文档。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=zh-Hans) 帮助您将模板和XML数据结合起来，以生成各种格式的文档。 该服务允许您以同步和批处理模式生成文档。
 
-您可以写入 [!DNL formscsbeta@adobe.com] 注册测试版计划。
+您可以将电子邮件发送到 [!DNL formscsbeta@adobe.com] 以注册 Beta 项目。
 
 ## Adobe Experience Manager商务as a Cloud Service {#cloud-services-commerce}
 
@@ -79,7 +79,7 @@ ht-degree: 17%
 
 Cloud Manager在Experience Manageras a Cloud Service中的发布日期为2020.10.0 2020年10月2日。
 
-### 的新增功能 [!DNL Cloud Manager] {#what-is-new-cm}
+### [!DNL Cloud Manager] 的新增功能 {#what-is-new-cm}
 
 * “环境”页面已重新设计。
 

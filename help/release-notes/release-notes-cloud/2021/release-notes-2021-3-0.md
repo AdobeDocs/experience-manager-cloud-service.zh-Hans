@@ -1,8 +1,8 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版的发行说明。'
-description: '[!DNL Adobe Experience Manager] as a Cloud Service的2021.3.0发行说明。'
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service2021.3.0发行说明。”'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 9%
@@ -138,7 +138,7 @@ AEM 2021.3.0版中Cloud Manager的发布日期是2021年3月11日。
 
 ### 错误修复 {#bug-fixes-ctt}
 
-* CTT正在跳过具有相同名称但名称中带有连字符的文件夹中的内容。 此问题已修复。
+* CTT正在跳过具有相同名称但名称中带有连字符的文件夹中的内容。 此问题已得到修复。
 
 ### 发布日期 {#release-date-ctt-march}
 
