@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
+source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1737'
 ht-degree: 3%
 
 ---
@@ -127,23 +127,25 @@ ht-degree: 3%
 
 ### 上载二进制文件 {#upload-binary}
 
-启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端可以将二进制文件拆分为多个部分，并按顺序向提供的上传URI发出每个部分的PUT请求。 如果选择将二进制文件拆分为多个部分，请务必遵循以下准则：
+启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端可以将二进制文件拆分为多个部分，并按顺序向提供的上传URI发出每个部分的PUT请求。 如果选择将二进制文件拆分为多个部分，请遵循以下准则：
+
 * 除最后一个部件外，每个部件的大小必须大于或等于 `minPartSize`.
 * 每个零件的大小必须小于或等于 `maxPartSize`.
-* 如果二进制文件的大小超过 `maxPartSize`，则必须将二进制文件拆分为多个部分才能上载。
+* 如果二进制文件的大小超过 `maxPartSize`，将二进制文件拆分为多个部分以上传。
 * 您不必使用所有URI。
 
 如果二进制文件的大小小于或等于 `maxPartSize`，您可以将整个二进制文件上传到单个上传URI。 如果提供了多个上传URI，请使用第一个URI并忽略其余URI。 您不必使用所有URI。
 
 CDN边缘节点有助于加快请求的二进制文件上传。
 
-要实现此目的，最简单的方法是使用 `maxPartSize` 作为零件尺寸。 如果将此值用作部件大小，则API合同可保证有足够的上传URI来上传二进制文件。 要实现此目的，请将二进制文件拆分为部分大小 `maxPartSize`，按顺序为每个部件使用一个URI。 最终零件可以是小于或等于的任意大小 `maxPartSize`. 例如，假定二进制文件的总大小为20,000字节， `minPartSize` 是5,000字节， `maxPartSize` 为8,000字节，上传URI的数量为5。 然后，执行以下步骤：
+要实现此目的，最简单的方法是使用 `maxPartSize` 作为零件尺寸。 如果将此值用作部件大小，则API合同可保证有足够的上传URI来上传二进制文件。 要实现此目的，请将二进制文件拆分为部分大小 `maxPartSize`，按顺序为每个部件使用一个URI。 最终零件可以是小于或等于的任意大小 `maxPartSize`. 例如，假定二进制文件的总大小为20,000字节， `minPartSize` 是5,000字节， `maxPartSize` 为8,000字节，上传URI的数量为5。 执行以下步骤：
+
 * 使用第一个上传URI上传二进制文件的前8,000字节。
 * 使用第二个上传URI上传二进制文件的第二个8,000字节。
 * 使用第三个上传URI上传二进制文件的最后4,000字节。 由于这是最后一部分，因此它不必大于 `minPartSize`.
-* 您无需使用最后两个上传URI。 别理他们。
+* 您无需使用最后两个上传URI。 你可以忽略它们。
 
-一个常见错误是根据API提供的上传URI数量计算部件大小。 API合同不保证此方法有效，实际上可能会产生超出这两种方法之间范围的部件大小 `minPartSize` 和 `maxPartSize`. 这可能会导致二进制上传失败。
+一个常见错误是，根据API提供的上传URI数量计算部件大小。 API合同不保证此方法有效，实际上可能会产生超出这两种方法之间范围的部件大小 `minPartSize` 和 `maxPartSize`. 这可能会导致二进制上传失败。
 
 同样，最简单、最安全的方法是简单地使用大小等于 `maxPartSize`.
 
