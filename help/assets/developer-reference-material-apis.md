@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 4%
+source-wordcount: '1744'
+ht-degree: 3%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 4%
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -107,7 +107,9 @@ ht-degree: 4%
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -125,15 +127,30 @@ ht-degree: 4%
 
 ### 上载二进制文件 {#upload-binary}
 
-启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端会将二进制文件拆分为多个部分，并按顺序对每个URI发出每个部分的PUT请求。 使用所有URI。 确保每个部件的大小在启动响应中指定的最小和最大大小范围内。 CDN边缘节点有助于加快请求的二进制文件上传。
+启动上传的输出包括一个或多个上传URI值。 如果提供了多个URI，则客户端可以将二进制文件拆分为多个部分，并按顺序向提供的上传URI发出每个部分的PUT请求。 如果选择将二进制文件拆分为多个部分，请务必遵循以下准则：
+* 除最后一个部件外，每个部件的大小必须大于或等于 `minPartSize`.
+* 每个零件的大小必须小于或等于 `maxPartSize`.
+* 如果二进制文件的大小超过 `maxPartSize`，则必须将二进制文件拆分为多个部分才能上载。
+* 您不必使用所有URI。
 
-实现此目的的一种潜在方法是，根据API提供的上传URI数量计算部件大小。 例如，假设二进制文件的总大小为20,000字节，并且上传URI的数量为2。 然后，执行以下步骤：
+如果二进制文件的大小小于或等于 `maxPartSize`，您可以将整个二进制文件上传到单个上传URI。 如果提供了多个上传URI，请使用第一个URI并忽略其余URI。 您不必使用所有URI。
 
-* 通过将总大小除以URI数来计算部件大小：20,000 / 2 = 10,000。
-* POST字节范围0-9,999（二进制）到上传URI列表中的第一个URI。
-* POST字节范围10,000 - 19,999（二进制到上传URI列表中的第二个URI）。
+CDN边缘节点有助于加快请求的二进制文件上传。
+
+要实现此目的，最简单的方法是使用 `maxPartSize` 作为零件尺寸。 如果将此值用作部件大小，则API合同可保证有足够的上传URI来上传二进制文件。 要实现此目的，请将二进制文件拆分为部分大小 `maxPartSize`，按顺序为每个部件使用一个URI。 最终零件可以是小于或等于的任意大小 `maxPartSize`. 例如，假定二进制文件的总大小为20,000字节， `minPartSize` 是5,000字节， `maxPartSize` 为8,000字节，上传URI的数量为5。 然后，执行以下步骤：
+* 使用第一个上传URI上传二进制文件的前8,000字节。
+* 使用第二个上传URI上传二进制文件的第二个8,000字节。
+* 使用第三个上传URI上传二进制文件的最后4,000字节。 由于这是最后一部分，因此它不必大于 `minPartSize`.
+* 您无需使用最后两个上传URI。 别理他们。
+
+一个常见错误是根据API提供的上传URI数量计算部件大小。 API合同不保证此方法有效，实际上可能会产生超出这两种方法之间范围的部件大小 `minPartSize` 和 `maxPartSize`. 这可能会导致二进制上传失败。
+
+同样，最简单、最安全的方法是简单地使用大小等于 `maxPartSize`.
 
 如果上传成功，服务器将使用 `201` 状态代码。
+
+>[!NOTE]
+有关上传算法的更多信息，请参阅 [官方功能文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 和 [API文档](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) 在Apache Jackrabbit Oak项目中。
 
 ### 完成上传 {#complete-upload}
 
@@ -175,6 +192,7 @@ ht-degree: 4%
 >[!MORELIKETHIS]
 * [开源aem上传库](https://github.com/adobe/aem-upload).
 * [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem).
+* [Apache Jackrabbit Oak文档，可直接上传](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## 资产处理和后处理工作流 {#post-processing-workflows}
@@ -259,7 +277,7 @@ ht-degree: 4%
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
