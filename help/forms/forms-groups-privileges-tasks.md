@@ -1,17 +1,15 @@
 ---
 title: '内置 [!DNL AEM Forms] as a Cloud Service组 '
-seo-title: [!DNL AEM Forms] as a Cloud Service User Groups
 description: '现成用户组和分配给每个组的权限列表 '
-seo-description: List of out of the box user groups and permissions assigned to each group
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
-source-wordcount: 139
-ht-degree: 2%
+source-wordcount: '139'
+ht-degree: 5%
 
 ---
 
-# 群组和权限 {#aem-forms-on-osgi-groups-and-privileges}
+# 组和权限 {#aem-forms-on-osgi-groups-and-privileges}
 
 您可以 [创建组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 并分配策略和 [用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 组。 这些策略控制属于组的用户的权限。
 
