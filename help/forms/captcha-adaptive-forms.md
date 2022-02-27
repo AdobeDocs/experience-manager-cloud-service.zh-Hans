@@ -10,10 +10,10 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 0%
+source-wordcount: '1415'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,6 @@ CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apa
 >
 >* [!DNL AEM Forms] 仅支持reCaptcha v2。 不支持任何其他版本。
 >* 自适应Forms中的验证码，在 [!DNL AEM Forms] 应用程序。
-
 >
 
 
@@ -57,7 +56,7 @@ CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apa
 
 1. 为reCAPTCHA配置云服务。
 
-   1. 在您的AEM创作实例中，转到 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. 在您的Experience Manager创作实例中，转到 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. 点按 **[!UICONTROL reCAPTCHA]**. 此时将打开“配置”页面。 选择在上一步中创建的配置容器，然后点按 **[!UICONTROL 创建]**.
    1. 为reCAPTCHA服务指定名称、站点密钥和密钥，然后点按 **[!UICONTROL 创建]** 创建云服务配置。
    1. 在编辑组件对话框中，指定在步骤1中获取的站点和密钥。 点按 **[!UICONTROL 保存设置]** 然后点按 **[!UICONTROL 确定]** 以完成配置。
@@ -86,11 +85,14 @@ CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apa
 
 1. 选择您添加的Captcha组件，然后点按 ![cppr](assets/configure-icon.svg) 以编辑其属性。
 1. 指定CAPTCHA小组件的标题。 默认值为 **[!UICONTROL 验证码]**. 选择 **[!UICONTROL 隐藏标题]** 如果您不希望显示标题，请执行以下操作：
-1. 从 **[!UICONTROL 验证码服务]** 下拉列表，选择 **[!UICONTROL reCaptcha]** 启用reCAPTCHA服务(如果您按照 [ReCAPTCHA服务，由Google提供](#google-recaptcha). 从设置下拉列表中选择配置。 此外，将大小选择为 **[!UICONTROL 正常]** 或 **[!UICONTROL 紧凑]** 用于reCAPTCHA小组件。
+1. 从 **[!UICONTROL 验证码服务]** 下拉列表，选择 **[!UICONTROL reCaptcha]** 启用reCAPTCHA服务(如果您按照 [ReCAPTCHA服务，由Google提供](#google-recaptcha). 从设置下拉列表中选择配置。
+1. 将类型选择为 **[!UICONTROL 正常]** 或 **[!UICONTROL 紧凑]** 用于reCAPTCHA小组件。 您还可以选择 **[!UICONTROL 不可见]** 仅在可疑活动时显示验证码挑战的选项。 受reCAPTCHA保护的徽章（如下所示）显示在受保护的表单上。
+
+   ![Google通过reCAPTCHA徽章处理](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >不选择 **[!UICONTROL 默认]** 从Captcha服务下拉列表中，作为默认的AEM CAPTCHA服务已弃用。
+   >不选择 **[!UICONTROL 默认]** 从Captcha服务下拉列表中，弃用默认Experience ManagerCAPTCHA服务。
 
 1. 保存属性。
 
@@ -132,7 +134,7 @@ reCAPTCHA服务在自适应表单上启用。 您可以预览表单并查看CAPT
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+     GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
@@ -216,4 +218,4 @@ reCAPTCHA服务使用 `https://www.recaptcha.net/` 作为默认域。 您可以�
 }
 ```
 
-要设置配置的值， [使用AEM SDK生成OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)和 [部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) 到Cloud Service实例。
+要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)。
