@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
+source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
 workflow-type: tm+mt
-source-wordcount: '3856'
+source-wordcount: '3796'
 ht-degree: 19%
 
 ---
@@ -148,11 +148,9 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 >
 >具有连接的资产和 [!DNL Dynamic Media] 配置，您不能使用 [!DNL Dynamic Media] 以处理 [!DNL Sites] 部署。
 
-## 在 [!DNL Sites] 和 [!DNL Dynamic Media] 部署 {#sites-dynamic-media-connected-assets}
+## 配置 [!DNL Dynamic Media] {#configure-dynamic-media}
 
-您可以配置 [!DNL Sites] 部署和 [!DNL Dynamic Media] 允许网页作者使用的部署 [!DNL Dynamic Media] 图像。 在创作网页时，使用远程资产和远程资产的体验 [!DNL Dynamic Media] 部署保持不变。 这样，您就可以利用 [!DNL Dynamic Media] 功能（例如智能裁剪和图像预设）。
-
-要配置连接，请执行以下步骤：
+配置 [!DNL Dynamic Media] on [!DNL Assets] 和 [!DNL Sites] 部署：
 
 1. 按如上所述创建连接的资产配置（配置功能时除外），请选择 **[!UICONTROL 获取Dynamic Media连接的资产的原始演绎版]** 选项。
 
