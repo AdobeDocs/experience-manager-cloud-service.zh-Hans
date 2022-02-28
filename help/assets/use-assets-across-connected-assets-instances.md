@@ -5,12 +5,13 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
+source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3856'
 ht-degree: 19%
 
 ---
+
 
 # 在 中，使用连接的资产共享 DAM 资产 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -132,22 +133,24 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
+## 使用Dynamic Media资产 {#dynamic-media-assets}
+
+
+通过连接的资产，您可以使用由 [!DNL Dynamic Media] 从站点页面上的远程DAM部署，并利用Dynamic Media功能，如智能裁剪和图像预设。
+
+使用 [!DNL Dynamic Media] 与连接的资产：
+
+1. 配置 [!DNL Dynamic Media] 在启用了同步模式的远程DAM部署中。
+1. 配置 [连接的资产](#configure-a-connection-between-sites-and-assets-deployments).
+1. 配置 [!DNL Dynamic Media] 在与远程DAM中配置的公司名称相同的Sites实例上。 Sites部署必须具有Dynamic Media帐户的只读访问权限才能处理连接的资产。 因此，请确保在Sites实例上的Dynamic Media配置中禁用同步模式。
+
+>[!CAUTION]
+>
+>具有连接的资产和 [!DNL Dynamic Media] 配置，您不能使用 [!DNL Dynamic Media] 以处理 [!DNL Sites] 部署。
+
 ## 在 [!DNL Sites] 和 [!DNL Dynamic Media] 部署 {#sites-dynamic-media-connected-assets}
 
 您可以配置 [!DNL Sites] 部署和 [!DNL Dynamic Media] 允许网页作者使用的部署 [!DNL Dynamic Media] 图像。 在创作网页时，使用远程资产和远程资产的体验 [!DNL Dynamic Media] 部署保持不变。 这样，您就可以利用 [!DNL Dynamic Media] 功能（例如智能裁剪和图像预设）。
-
-通过连接的资产，您可以 [!DNL Dynamic Media] 在远程DAM部署中处理图像资产。
-
-使用 [!DNL Dynamic Media] 远程DAM部署中的映像 [!DNL Sites] 部署：
-
-1. 配置 [!DNL Dynamic Media] 在远程DAM部署中，使用以下选项：
-   * 同步模式：默认启用
-   * 发布资产：同步所有内容
-1. 开 [!DNL Sites] 部署：
-   1. 配置 [!DNL Dynamic Media] 使用与步骤1中相同的公司（禁用同步模式）。
-   1. 配置连接的资产。
-
-   [!DNL Dynamic Media] 资产可用于 [!DNL Sites] 以只读模式部署。 因此，您无法使用 [!DNL Dynamic Media] 处理 [!DNL Sites] 部署。
 
 要配置连接，请执行以下步骤：
 
