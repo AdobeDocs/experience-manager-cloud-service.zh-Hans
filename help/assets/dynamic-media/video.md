@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中处理视频，例如，对视频进
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 19%
 
 ---
@@ -447,9 +447,6 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 1. 在功能板页面的右侧， **[!UICONTROL Google Cloud平台]**，选择项目下拉列表以打开 **[!UICONTROL 选择项目]** 对话框。
 1. 在 **[!UICONTROL 选择项目]** 对话框，选择 **[!UICONTROL 新建项目]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. 在 **[!UICONTROL 新建项目]** 对话框中 **[!UICONTROL 项目名称]** 字段中，键入新项目的名称。
 
    您的项目ID基于您的项目名称。 因此，请仔细选择项目名称；创建后无法更改。 此外，当您稍后在Experience Manager中设置YouTube时，必须再次输入相同的项目ID。 所以，把它写下来。
@@ -460,8 +457,6 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    * 在项目的功能板中， **[!UICONTROL 快速入门]** 卡片，选择 **[!UICONTROL 探索并启用API]**.
    * 在项目的功能板中， **[!UICONTROL API]** 卡片，选择 **[!UICONTROL 转到API概述]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. 在 **[!UICONTROL API和服务]** 页面，选择 **[!UICONTROL 启用API和服务]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. 在 **[!UICONTROL API库]** 页面的左侧，下 **[!UICONTROL 类别]**，选择 **[!UICONTROL YouTube]**. 在页面右侧，选择 **[!UICONTROL YouTube]**.
