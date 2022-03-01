@@ -1,10 +1,10 @@
 ---
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 29%
+source-wordcount: '1069'
+ht-degree: 24%
 
 ---
 
@@ -125,6 +125,44 @@ ht-degree: 29%
 1. 选择迁移集并单击 **属性** 查看或编辑迁移集属性。 在编辑属性时，无法更改 **迁移集名称** 或 **服务URL**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### 确定迁移集大小和磁盘空间 {#migration-set-size}
+
+创建迁移集后，强烈建议在开始提取流程之前对迁移集运行大小检查。
+通过对迁移集运行大小检查，您将能够：
+* 确定 `crx-quickstart` 子目录成功完成提取。
+* 确定迁移集大小是否在支持的产品限制范围内，并避免内容摄取失败。
+
+请按照以下步骤运行大小检查：
+
+1. 选择迁移集并单击 **检查大小**.
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. 这将打开 **检查大小** 对话框。
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. 单击 **检查大小** 以启动该过程。 然后，您将返回到迁移集列表视图，并且您应会看到一条消息，指示 **检查大小** 正在运行。
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. 一次 **检查大小** 处理完成后，状态将更改为 **已完成**. 选择同一迁移集并单击 **检查大小** 查看结果。
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   以下示例 **检查大小** 结果没有警告。
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. 如果 **检查大小** 结果表明，磁盘空间不足和/或迁移集超出产品限制， **警告** 将显示状态。
+
+![图像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+以下示例 **检查大小** 结果中显示警告。
+
+![图像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## 下一步 {#whats-next}
