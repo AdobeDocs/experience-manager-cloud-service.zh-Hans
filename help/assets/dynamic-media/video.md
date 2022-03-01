@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中处理视频，例如，对视频进
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
+source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
 workflow-type: tm+mt
-source-wordcount: '9361'
+source-wordcount: '9368'
 ht-degree: 19%
 
 ---
@@ -443,11 +443,11 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
    如果您已经拥有Google帐户，则可以跳到下一步。
 
 1. 转到 [https://cloud.google.com/](https://cloud.google.com/).
-1. 在Google云页面的右上角附近，选择 **[!UICONTROL 控制台]**.
+1. 在 **[!UICONTROL Google Cloud]** 页面的右上角附近，选择 **[!UICONTROL 控制台]**.
 
    如有必要， **[!UICONTROL 登录]** 使用您的Google帐户凭据查看 **[!UICONTROL 控制台]** 选项。
 
-1. 在功能板页面的右侧， **[!UICONTROL Google Cloud平台]**，选择 **[!UICONTROL 项目]** 用于打开 **[!UICONTROL 选择项目]** 对话框。
+1. 在 **[!UICONTROL 功能板]** 页面右侧 **[!UICONTROL Google Cloud平台]**，选择 **[!UICONTROL 项目]** 用于打开 **[!UICONTROL 选择项目]** 对话框。
 1. 在 **[!UICONTROL 选择项目]** 对话框，选择 **[!UICONTROL 新建项目]**.
 1. 在 **[!UICONTROL 新建项目]** 对话框中 **[!UICONTROL 项目名称]** 字段中，键入新项目的名称。
 
@@ -467,8 +467,8 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. 要使用API，您需要凭据。 如有必要，在API和服务页面的左侧，选择 **[!UICONTROL 凭据]**.
-1. 在“凭据”页面顶部附近，选择 **[!UICONTROL 创建凭据]**，然后选择 **[!UICONTROL OAuth客户端ID]**.
+1. 要使用API，您需要凭据。 如有必要，请在 **[!UICONTROL API和服务]** 页面，选择 **[!UICONTROL 凭据]**.
+1. 在 **[!UICONTROL 凭据]** 页面，在顶部附近，选择 **[!UICONTROL 创建凭据]**，然后选择 **[!UICONTROL OAuth客户端ID]**.
 1. 在 **[!UICONTROL 创建OAuth客户端ID]** 页面，在 **[!UICONTROL 应用程序类型]** 下拉列表中，选择 **[!UICONTROL Web应用程序]**.
 
    ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -488,9 +488,9 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    例如，`https://1a2b3c.mycompany.com:4321`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >上面的示例路径是假设的，仅供说明。
+   >上面的URI路径示例是假设的，仅供说明。
 
 1. 在 **[!UICONTROL 授权的重定向URI]** 标题中，选择“添加URI”。
 1. 在 **[!UICONTROL URI]** 文本字段，输入以下路径，在路径中替换您自己的域和端口号，然后按 **[!UICONTROL 输入]** 要添加列表路径，请执行以下操作：
@@ -499,14 +499,14 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    例如，`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >上面的示例路径是假设的，仅供说明。
+   >上面的URI路径示例是假设的，仅供说明。
 
 1. 在 **[!UICONTROL 创建OAuth客户端ID]** 页面，选择 **[!UICONTROL 创建]**.
 1. 在 **[!UICONTROL 已创建OAuth客户端]** 对话框中，执行以下操作：
 
-   * （可选）复制您的客户端ID和客户端密钥并保存。
+   * （可选）复制 **[!UICONTROL 您的客户ID]** 和 **[!UICONTROL 您的客户端密钥]** 字段，然后保存。
    * 选择 **[!UICONTROL 下载JSON]**，然后保存JSON文件。
 
    稍后在Adobe Experience Manager中设置YouTube时，您需要此下载的JSON文件。
