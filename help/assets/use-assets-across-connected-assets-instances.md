@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
+source-git-commit: 8457a6eb81b5d28c264e7f75793724b40fe7eb1d
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 19%
@@ -266,7 +266,7 @@ Experience Manager显示 `expired` 远程资产内容查找器中资产状态可
 
 ### 能否从 [!DNL Sites] 是否在配置连接的资产后进行部署？
 
-配置连接的资产后， [!DNL Dynamic Media] 资产可用于 [!DNL Sites] 以只读模式部署。 因此，您无法使用 [!DNL Dynamic Media] 处理 [!DNL Sites] 部署。 有关更多信息，请参阅 [在Sites与Dynamic Media部署之间配置连接](#sites-dynamic-media-connected-assets).
+配置连接的资产后， [!DNL Dynamic Media] 资产可用于 [!DNL Sites] 以只读模式部署。 因此，您无法使用 [!DNL Dynamic Media] 处理 [!DNL Sites] 部署。 有关更多信息，请参阅 [在Sites与Dynamic Media部署之间配置连接](#dynamic-media-assets).
 
 ### 能否在 [!DNL Sites] 是否在配置连接的资产后进行部署？
 
@@ -278,7 +278,7 @@ Experience Manager显示 `expired` 远程资产内容查找器中资产状态可
 
 ### 能否在上的远程DAM部署中使用Dynamic Media资产 [!DNL Sites] 是否在配置连接的资产后进行部署？
 
-能，您可以在上的远程DAM部署中配置和使用Dynamic Media资产 [!DNL Sites] 配置连接的资产后进行部署。 有关更多信息，请参阅 [在Sites与Dynamic Media部署之间配置连接](#sites-dynamic-media-connected-assets).
+能，您可以在上的远程DAM部署中配置和使用Dynamic Media资产 [!DNL Sites] 配置连接的资产后进行部署。 有关更多信息，请参阅 [在Sites与Dynamic Media部署之间配置连接](#dynamic-media-assets).
 
 ### 配置连接的资产后，能否对远程DAM资产或文件夹执行更新、删除、重命名和移动操作？
 
