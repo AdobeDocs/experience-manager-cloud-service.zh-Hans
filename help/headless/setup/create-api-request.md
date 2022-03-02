@@ -1,62 +1,62 @@
 ---
-title: 创建API请求 — 无头设置
-description: 了解如何使用GraphQL API无头交付内容片段内容，以及使用AEM Assets REST API管理内容片段。
+title: 创建 API 请求 - Headless 设置
+description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# 创建API请求 — 无头设置 {#accessing-delivering-content-fragments}
+# 创建 API 请求 - Headless 设置 {#accessing-delivering-content-fragments}
 
-了解如何使用GraphQL API无头交付内容片段内容，以及使用AEM Assets REST API管理内容片段。
+了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 
-## 什么是GraphQL和资产REST API? {#what-are-the-apis}
+## 什么是 GraphQL 和 Assets REST API？ {#what-are-the-apis}
 
-[现在，您已创建了一些内容片段，](create-content-fragment.md) 您可以使用AEM API无头地提供它们。
+[现在您已经创建了一些内容片段，](create-content-fragment.md)您可以使用 AEM 的 API 以 Headless 的方式交付它们。
 
-* [GraphQL API](/help/headless/graphql-api/content-fragments.md) 允许您创建访问和交付内容片段的请求。 此API提供了一组最强大的功能，用于查询和使用内容片段内容。
-   * 要使用此功能， [端点需要在AEM中定义和启用](/help/headless/graphql-api/graphql-endpoint.md)，如果需要， [已安装GraphiQL界面](/help/headless/graphql-api/graphiql-ide.md).
-* [资产REST API](/help/assets/content-fragments/assets-api-content-fragments.md) 允许您创建和修改内容片段（和其他资产）。
+* [GraphQL API](/help/headless/graphql-api/content-fragments.md) 允许您创建请求来访问和交付内容片段。此 API 提供了最可靠的一组功能用于查询和使用内容片段内容。
+   * 要使用此项，[需要在 AEM 中定义和启用端点](/help/headless/graphql-api/graphql-endpoint.md)，并且在需要时[应安装 GraphiQL 接口](/help/headless/graphql-api/graphiql-ide.md)。
+* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) 允许您创建和修改内容片段（及其他资源）。
 
-本指南的其余部分将重点介绍GraphQL访问和内容片段交付。
+本指南的剩余部分侧重于 GraphQL 访问和内容片段投放。
 
-## 启用GraphQL端点
+## 启用 GraphQL 端点
 
-必须先创建GraphQL端点，然后才能使用GraphQL API。
+必须先创建 GraphQL 端点，然后才能使用 GraphQL API。
 
-1. 导航到 **工具**, **资产**，然后选择 **GraphQL**.
+1. 导航到&#x200B;**工具**、**资源**，然后选择 **GraphQL**。
 1. 选择&#x200B;**创建**。
-1. 的 **创建新GraphQL端点** 对话框。 您可以在此指定：
-   * **名称**:端点名称；您可以输入任何文本。
-   * **使用由提供的GraphQL模式**:使用下拉菜单选择所需的配置。
-1. 使用确认 **创建**.
-1. 在控制台中， **路径** 现在将根据之前创建的配置显示。 这是用于执行GraphQL查询的路径。
+1. 此时将打开&#x200B;**创建新 GraphQL 端点**&#x200B;对话框。在其中可以指定：
+   * **名称**：端点的名称，您可以输入任意文本。
+   * **使用的 GraphQL 架构提供自**：使用下拉菜单选择所需的配置。
+1. 选择&#x200B;**创建**&#x200B;来确认。
+1. 在控制台中，此时将根据之前创建的配置显示一条&#x200B;**路径**。这是用于执行 GraphQL 查询的路径。
 
    ```
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-有关启用的更多详细信息 [可在此处找到GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md).
+有关启用 [GraphQL 端点的更多详细信息见此处](/help/headless/graphql-api/graphql-endpoint.md)。
 
-## 使用带有GraphiQL的GraphQL查询内容
+## 使用 GraphQL 及 GraphiQL 查询内容
 
-信息架构师需要为其渠道端点设计查询才能交付内容。 通常，每个模型的每个端点只需要考虑一次这些查询。 在本快速入门指南中，我们只需创建一个。
+信息架构师需要为其渠道端点设计查询来交付内容。这些查询通常只需要为每个模型的每个端点考虑一次。对于本指南快速入门，我们只需要创建一个。
 
-GraphiQL是可安装在AEM环境中的IDE。 按照 [使用GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 以在AEM环境中安装。
+GraphiQL 是可以安装在 AEM 环境中的 IDE。按照[使用 GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 中的步骤操作来安装 AEM 环境。
 
-1. 登录AEMas a Cloud Service并访问GraphiQL界面：
-   * 例如: `https://<host>:<port>/content/graphiql.html`.
+1. 登录 AEM as a Cloud Service 并访问 GraphiQL 接口：
+   * 例如：`https://<host>:<port>/content/graphiql.html`。
 
-1. GraphiQL IDE是GraphQL的浏览器内查询编辑器。 您可以使用它来构建查询以检索内容片段，以JSON形式直接交付它们。
-   * 利用左侧面板，可构建查询。
-   * 右侧面板会显示结果。
-   * 查询编辑器具有代码完成和热键功能，可轻松执行查询。
-      ![GraphiQL编辑器](../assets/graphiql.png)
+1. GraphiQL IDE 是用于 GraphQL 的浏览器中查询编辑器。您可以使用它来构建查询，检索内容片段，以便通过 JSON 格式以 Headless 方式交付。
+   * 左侧窗格允许您构建查询。
+   * 右侧窗格显示结果。
+   * 查询编辑器具备代码完成和热键功能，可以轻松地执行查询。
+      ![GraphiQL 编辑器](../assets/graphiql.png)
 
-1. 假设我们创建的模型名为 `person` 带字段 `firstName`, `lastName`和 `position`，我们可以构建一个简单查询，以检索内容片段的内容。
+1. 假定我们创建的模型名为 `person`，带有字段 `firstName`、`lastName` 和 `position`，我们可以构建简单的查询来检索内容片段的内容。
 
    ```text
    query 
@@ -73,22 +73,22 @@ GraphiQL是可安装在AEM环境中的IDE。 按照 [使用GraphiQL IDE](/help/h
    ```
 
 1. 在左侧面板中输入查询。
-   ![GraphiQL查询](../assets/graphiql-query.png)
+   ![GraphiQL 查询](../assets/graphiql-query.png)
 
-1. 单击 **执行查询** 按钮或使用 `Ctrl-Enter` 热键和结果在右侧面板中显示为JSON。
-   ![GraphiQL结果](../assets/graphiql-results.png)
+1. 单击&#x200B;**执行查询**&#x200B;按钮或者使用 `Ctrl-Enter` 热键，结果将在右侧面板中以 JSON 格式显示。
+   ![GraphiQL 结果](../assets/graphiql-results.png)
 
-1. 单击 **文档** 链接（位于页面右上方）以显示上下文文档，以帮助您构建可适应您自己模型的查询。
-   ![GraphiQL文档](../assets/graphiql-documentation.png)
+1. 单击页面右侧的&#x200B;**文档**链接以显示上下文中的文档，帮助您构建适应您自己的模型的查询。
+   ![GraphiQL 文档](../assets/graphiql-documentation.png)
 
-GraphQL支持结构化查询，这些查询不仅可以定向特定数据集或单个数据对象，还可以提供对象的特定元素、嵌套结果、支持查询变量等。
+GraphQL 启用结构化查询，不仅针对特定数据集或者单独的数据对象，而且还可以提供对象的特定元素，嵌套结果，提供查询变量支持，以及诸多功能。
 
-GraphQL可以避免迭代API请求和过度交付，相反，允许批量交付呈现为单个API查询响应所需的确切内容。 生成的JSON可用于将数据交付到其他网站或应用程序。
+GraphQL 可以避免迭代 API 以及过度投放，而是允许作为对单个 API 查询的响应，批量精确投放所需呈现的内容。生成的 JSON 可用于向其他站点或应用程序提供数据。
 
 ## 后续步骤 {#next-steps}
 
-就是这样！现在，您对AEM中的无外设内容管理有了基本的了解。 当然，您还可以使用更多资源来更深入地了解可用功能。
+就是这样！现在，您已对 AEM 中的 Headless 内容管理有了基本了解。当然，其中还有很多资源供您深入研究，以全面了解可用的功能。
 
-* **[内容片段](/help/assets/content-fragments/content-fragments.md)**  — 有关创建和管理内容片段的详细信息
-* **[AEM Assets HTTP API中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)**  — 有关通过CRUD操作（创建、读取、更新、删除）直接通过HTTP API访问AEM内容的详细信息
-* **[GraphQL API](/help/headless/graphql-api/content-fragments.md)**  — 有关如何无头提交内容片段的详细信息
+* **[内容片段](/help/assets/content-fragments/content-fragments.md)** - 提供有关创建和管理内容片段的详细信息
+* **[AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)** - 提供直接通过 HTTP API 使用 CRUD 操作（创建、读取、更新、删除）访问 AEM 内容的详细信息
+* **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - 提供有关如何以 Headless 方式交付内容片段的详细信息
