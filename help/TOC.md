@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 86b1677b79f64c2d4ddfa260f17021da068283c9
 workflow-type: tm+mt
 source-wordcount: '3434'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -104,8 +104,8 @@ ht-degree: 97%
    + [面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南](/help/journey-migration/getting-started-partners.md)
    + 迁移工具的发行说明 {#release-notes-migration-tools}
       + [最新发行说明（2022.2.0 版）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [2022.1.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021年 {#2021}
-         + [2022.1.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
          + [2021.12.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -534,33 +534,33 @@ ht-degree: 97%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
-+ 无头 {#headless}
-   + [AEM Headless简介](/help/headless/introduction.md)
++ Headless {#headless}
+   + [AEM Headless 简介](/help/headless/introduction.md)
    + 设置 {#setup}
-      + [Communications API](/help/headless/setup/introduction.md)
+      + [简介](/help/headless/setup/introduction.md)
       + [配置](/help/headless/setup/create-configuration.md)
       + [内容片段模型](/help/headless/setup/create-content-model.md)
-      + [资产文件夹](/help/headless/setup/create-assets-folder.md)
+      + [资源文件夹](/help/headless/setup/create-assets-folder.md)
       + [内容片段](/help/headless/setup/create-content-fragment.md)
-      + [GraphQL端点](/help/headless/setup/create-api-request.md)
+      + [GraphQL 端点](/help/headless/setup/create-api-request.md)
    + 内容片段 {#content-fragments}
-      + [概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=zh-Hans)
+      + [概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
       + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=zh-Hans)
       + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=zh-Hans)
       + 创作{#authoring}
          + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=zh-Hans)
          + [文本编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=zh-Hans)
          + [关联的内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=zh-Hans)
-         + [变量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+         + [变体](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
       + [元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=zh-Hans)
       + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=zh-Hans)
-      + [JSON预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hans)
+      + [JSON 预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hans)
    + GraphQL API {#graphql-api}
       + [内容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-      + [示例GraphQL查询](/help/headless/graphql-api/sample-queries.md)
-      + [持久GraphQL查询](/help/headless/graphql-api/persisted-queries.md)
+      + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
+      + [持久 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md)
    + [内容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hans)
    + 安全性 {#security}
       + [权限](/help/headless/security/permissions.md)
@@ -568,8 +568,8 @@ ht-degree: 97%
    + 部署 {#deployment}
       + [架构](/help/headless/deployment/architecture.md)
       + [Dispatcher](/help/headless/deployment/dispatcher.md)
-      + [CORS配置](/help/headless/deployment/cross-origin-resource-sharing.md)
-      + [反向链接过滤器](/help/headless/deployment/referrer-filter.md)
+      + [CORS 配置](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [反向链接筛选条件](/help/headless/deployment/referrer-filter.md)
    + Headless 历程 {#journeys}
       + Headless 开发人员历程 {#developer}
          + [了解 AEM 中的 Headless](/help/journey-headless/developer/overview.md)
