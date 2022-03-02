@@ -1,101 +1,101 @@
 ---
-title: '无标题内容的权限注意事项 '
-description: 了解使用Adobe Experience Manager进行无头实施的不同权限和ACL注意事项。 了解创作和发布环境所需的不同角色和潜在权限级别。
+title: 'Headless 内容的权限注意事项 '
+description: 了解使用 Adobe Experience Manager 的 Headless 实施的不同权限和 ACL 注意事项。了解创作环境和发布环境所需的不同角色和潜在权限级别。
 feature: Content Fragments,GraphQL API
 source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 无标题内容的权限注意事项
+# Headless 内容的权限注意事项
 
-通过无头实施，应解决多个安全和权限方面的问题。 权限和角色的考虑范围很广，这取决于AEM环境 **作者** 或 **发布**. 每个环境包含不同的角色和不同的需求。
+使用 Headless 实施，需要解决多个不同的安全和权限领域。根据 AEM 环境&#x200B;**创作**&#x200B;或&#x200B;**发布**，可以广泛地考虑权限和角色。每个环境包含不同的角色并有不同的需求。
 
-## 创作服务注意事项
+## Author 服务注意事项
 
-“创作”服务是内部用户创建、管理和发布内容的位置。 权限取决于管理内容的不同角色。
+Author 服务是内部用户创建、管理和发布内容的地方。权限以管理内容的不同角色为中心。
 
-### 在群组级别管理权限
+### 管理组级别权限
 
-作为最佳实践，应在AEM的群组中设置权限。 这些组也称为本地组，可在AEM创作环境中管理。
+作为最佳实践，应在 AEM 中设置组级别权限。这些组也称为本地组，可以在 AEM 创作环境中管理。
 
-管理组成员资格的最简单方法是使用AdobeIdentity Management系统(IMS)组并分配 [将IMS组到本地AEM组](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en#managing-permissions-in-aem).
+管理组成员资格的最简单方式是使用 Adobe Identity Management System (IMS) 组，并将 [IMS 组分配到本地 AEM 组](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hans#managing-permissions-in-aem)。
 
-![管理控制台权限流程](assets/admin-console-aem-group-permissions.png)
+![Admin console 权限流](assets/admin-console-aem-group-permissions.png)
 
-在高层面，该过程是：
+在较高级别，流程为：
 
-1. 使用 [Admin Console](https://adminconsole.adobe.com/)
-1. 当用户登录时，IMS组会与AEM同步。
-1. 将IMS组分配给AEM组。
-1. 设置AEM群组的权限。
-1. 当用户登录AEM并通过IMS验证后，他们将继承AEM组的权限。
+1. 使用 [Admin Console](https://adminconsole.adobe.com/) 添加 IMS 用户到新的或现有的 IMS 用户组。
+1. IMS 组在用户登录时与 AEM 同步。
+1. 分配 IMS 组到 AEM 组。
+1. 在 AEM 组上设置权限。
+1. 用户登录 AEM 并通过 IMS 进行了身份验证后，他们继承 AEM 组的权限。
 
 >[!TIP]
 >
-> 有关管理IMS和AEM用户和组的详细视频演练，请参阅 [此处](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
+> 管理 IMS 和 AEM 用户及组的详细视频演练见[此处](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hans)。
 
-管理 **组** 在AEM中，导航到 **工具** > **安全性** > **群组**.
+要在 AEM 中管理&#x200B;**组**，请导航到&#x200B;**工具** > **安全** > **组**。
 
-要在AEM中管理群组的权限，请导航到 **工具** > **安全性** > **权限**.
+要在 AEM 中管理组的权限，请导航到&#x200B;**工具** > **安全** > **组**。
 
-### DAM用户
+### DAM 用户
 
-在这种情况下，“DAM”表示数字资产管理。 的 **DAM用户** 是AEM中一个开箱即用的组，可用于管理数字资产和内容片段的“日常”用户。 此组提供 **视图**, **添加**, **更新**, **删除**&#x200B;和 **发布** 内容片段和AEM Assets中的所有其他文件。
+在此上下文中，“DAM”表示数字资产管理。**DAM 用户**&#x200B;是 AEM 中现成可用的组，可用于管理数字资产和内容片段的“日常”用户。此组提供权限以&#x200B;**查看**、**添加**、**更新**、**删除**&#x200B;和&#x200B;**发布**&#x200B;内容片段及 AEM Assets 中的所有其他文件。
 
-如果将IMS用于组成员身份，请将相应的IMS组添加为 **DAM用户** 群组。 登录AEM环境时，IMS组的成员将继承DAM用户组的权限。
+如果为组成员资格使用 IMS，请添加相应的 IMS 组作为 **DAM 用户**&#x200B;组的成员。登录 AEM 环境时，IMS 组的成员继承了 DAM 用户组的权限。
 
-#### 自定义DAM用户组
+#### 自定义 DAM 用户组
 
-最好不要直接修改现成群组的权限。 您也可以创建自己的组，这些组建在 **DAM用户** 群组权限，并进一步限制对不同群组的访问权限 **文件夹** 在AEM Assets。
+最好不要直接修改现成可用组的权限。而是应该创建自己的组，按照 **DAM 用户**&#x200B;组权限建模，然后进一步限制对 AEM Assets 中不同&#x200B;**文件夹**&#x200B;的访问权限。
 
-如需更细的权限，请使用 **权限** 在AEM中控制台，并从 `/content/dam` 到更具体的路径，例如 `/content/dam/mycontentfragments`.
+有关更细粒度的权限，请使用 AEM 中的&#x200B;**权限**&#x200B;控制台，并将路径从 `/content/dam` 更新为更具体的路径，即 `/content/dam/mycontentfragments`。
 
-可能需要为此组用户授予创建和编辑内容片段的权限，但不要删除。 要查看和分配用于编辑的权限，但不要删除，请参阅 [内容片段 — 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md).
+可能最好向此组提供用户创建和编辑内容片段的权限，但不提供删除权限。要查看和分配编辑的权限而不分配删除权限，请参阅[内容片段 - 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md)。
 
 ### 模型编辑器
 
-能够修改 **内容片段模型** 应留给管理员或 **小组** 具有提升权限的用户数量。 修改内容片段模型具有许多下游效果。
+修改&#x200B;**内容片段模型**&#x200B;的能力应该留给管理员或者&#x200B;**一小部分**&#x200B;具有更高权限的用户。修改内容片段模型会对下游产生许多影响。
 
 >[!CAUTION]
 >
->对内容片段模型的修改会更改无头应用程序所依赖的基础GraphQL API。
+>对内容片段模型的修改会变更 Headless 应用程序依赖的底层 GraphQL API。
 
-如果您希望创建一个管理内容片段模型但没有完全管理员访问权限的组，则可以创建具有以下访问控制条目的组：
+如果您希望创建一个组来管理内容片段模型，但不提供完整的管理员访问权限，您可以创建具有以下访问控制条目的组：
 
-| 路径 | 权限 | 权限 |
+| 路径 | 权限 | 特权 |
 |-----| -------------| ---------|
 | `/conf` | **允许** | `jcr:read` |
-| `/conf/<config-name>/settings/dam/cfm` | **允许** | `rep:write`, `crx:replicate` |
+| `/conf/<config-name>/settings/dam/cfm` | **允许** | `rep:write`、`crx:replicate` |
 
-## 发布服务权限
+## Publish 服务权限
 
-发布服务被视为“实时”环境，通常是GraphQL API用户与之交互的环境。 内容在创作服务上经过编辑和批准后，会发布到发布服务。 然后，无头应用程序会通过GraphQL API使用发布服务中的已批准内容。
+Publish 服务被视为“实时”环境，通常是 GraphQL API 使用者与之交互的对象。在 Author 服务上编辑和审批之后的内容，发布到 Publish 服务。然后，Headless 应用程序通过 GraphQL API 使用来自 Publish 服务的已批准内容。
 
-默认情况下，通过AEM发布服务的GraphQL端点公开的内容可供每个人访问，包括未经身份验证的用户。
+默认情况下，通过 AEM Publish 服务的 GraphQL 端点公开的内容可供所有人访问，包括未经身份验证的用户。
 
 ### 内容权限
 
-通过AEM GraphQL API公开的内容可以使用 [封闭用户组(CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) 在assets文件夹中设置，以指定哪些AEM用户组（及其成员）可以访问Assets文件夹的内容。
+通过 AEM 的 GraphQL API 公开的内容，可以使用资源文件夹上的[封闭用户组 (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=zh-Hans) 设置进行限制，这指定了哪些 AEM 用户组（及其成员）可以访问资源文件夹的内容。
 
-资产CUG的工作方式：
+资源 CUG 的工作方式如下：
 
 * 首先，拒绝对文件夹和子文件夹的所有访问权限
-* 然后，允许读取CUG列表中列出的所有AEM用户组的文件夹和子文件夹
+* 然后，对于在 CUG 列表中列出的所有 AEM 用户组，允许对文件夹和子文件夹的只读访问权限
 
-可以对包含通过GraphQL API公开的内容的资产文件夹设置CUG。 在AEM发布中，对资产文件夹的访问应通过用户组进行控制，而不是直接通过用户进行控制。 创建（或重复使用）AEM用户组，以授予对包含由GraphQL API公开的内容的资产文件夹的访问权限。
+在包含通过 GraphQL API 公开的内容的资源文件夹上，可以设置 CUG。对 AEM Publish 上资源文件夹的访问应通过用户组进行控制，而不是直接通过用户。创建（或重用）AEM 用户组，授予对包含 GraphQL API 所公开内容的资源文件夹的访问权限。
 
 #### 选择身份验证方案{#publish-permissions-users}
 
-的 [AEM Headless SDK](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) 支持两种类型的身份验证：
+[AEM Headless SDK](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) 支持两种类型的身份验证：
 
-* [基于令牌的身份验证](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 使用绑定到单个技术帐户的服务凭据。
-* 使用AEM用户进行基本身份验证。
+* [基于令牌的身份验证](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)使用绑定到单个技术帐户的服务凭据。
+* 使用 AEM 用户的基本身份验证。
 
-### 访问GraphQL API
+### 访问 GraphQL API
 
-提供 [适当的身份验证凭据](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) 对于AEM发布服务的GraphQL API端点，包括凭据有权读取的内容以及可匿名访问的内容。 GraphQL API的其他用户无法读取受CUG保护的文件夹中的内容。
+HTTP 请求向 AEM Publish 服务的 GraphQL API 端点提供[相应的身份验证凭据](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client)，包括凭据授权可以读取的内容，以及可匿名访问内容。GraphQL API 的其他使用者不能读取 CUG 保护的文件夹中的内容。
 
