@@ -6,12 +6,12 @@ mini-toc-levels: 1
 source-git-commit: 2693022e5745b5c2bb2166f0833c6b1af4337815
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 的最新发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
 以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的一般发行说明。
 
@@ -33,7 +33,7 @@ ht-degree: 94%
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* 的 **[启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 按钮 **网站** 站点控制台的边栏，用于使用页面核心组件v2的站点。 此按钮将站点配置为加载与现有客户端库一起部署的前端管道的主题。
+* 对于使用页面核心组件 v2 的站点，**[启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)**&#x200B;按钮在 Sites 控制台的&#x200B;**站点**&#x200B;侧边栏中可用。使用此按钮可配置站点，以加载使用前端管道部署在现有客户端库之上的主题。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -124,7 +124,7 @@ AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 �
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，您需要在源 AEM 环境的 `System Console` 中启用它。有关更多详细信息，请参阅[验证内容传输 - 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started)。
+* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，您需要在源 AEM 环境的 `System Console` 中启用它。有关更多详细信息，请参阅[验证内容传输 - 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started)。
 
 ### 错误修复 {#bug-fixes-ctt}
 
