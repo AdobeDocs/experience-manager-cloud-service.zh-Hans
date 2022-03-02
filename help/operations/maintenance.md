@@ -1,15 +1,15 @@
 ---
-title: AEMas a Cloud Service中的维护任务
-description: AEMas a Cloud Service中的维护任务
+title: AEM as a Cloud Service 中的维护任务
+description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: a5e4f4617e16e0f7ee36623b41fdd5197eca7178
+source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
 workflow-type: tm+mt
 source-wordcount: '881'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# AEMas a Cloud Service中的维护任务
+# AEM as a Cloud Service 中的维护任务
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
@@ -34,9 +34,9 @@ ht-degree: 2%
 | Version Purge | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
 | Audit Log Purge  | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
 | Lucene Binaries Cleanup | Adobe | Unused and therefore disabled by Adobe. |
-| Ad-hoc Task Purge | Customer | Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_TaskPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see the [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)|
-| Workflow Purge | Customer |  Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder`/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_WorkflowPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Project Purge | Customer |  Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding a node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. <br> Configure OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Ad-hoc Task Purge | Customer | Must be done in git. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_TaskPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see the [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)|
+| Workflow Purge | Customer |  Must be done in git. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder`/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_WorkflowPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Project Purge | Customer |  Must be done in git. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding a node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. <br> Configure OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project Purge Maintenance tasks to be executed during the daily, weekly, or monthly maintenance windows. These configurations should be edited directly in source control. The table below describes the configuration parameters available for each of the window. Also, see the locations and code samples provided after the table.-->
 
@@ -75,7 +75,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>临时任务清除</td>
     <td>客户</td>
     <td>
-    <p>必须在github中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>.</p>
+    <p>必须在git中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>.</p>
     <p>有关其他配置详细信息，请参阅下面的“维护窗口”表。 通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 <code>granite_TaskPurgeTask</code>)来访问Advertising Cloud的帮助。 配置OSGI属性，请参阅 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5维护任务文档</a>.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>工作流清除</td>
     <td>客户</td>
     <td>
-    <p>必须在github中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有关其他配置详细信息，请参阅下面的“维护窗口”表。</p>
+    <p>必须在git中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有关其他配置详细信息，请参阅下面的“维护窗口”表。</p>
     <p>通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 <code>granite_WorkflowPurgeTask</code>)来访问Advertising Cloud的帮助。 配置OSGI属性，请参阅 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5维护任务文档</a>.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>项目清除</td>
     <td>客户</td>
     <td>
-    <p>必须在github中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有关其他配置详细信息，请参阅下面的“维护窗口”表。</p>
+    <p>必须在git中完成。 覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有关其他配置详细信息，请参阅下面的“维护窗口”表。</p>
     <p>通过在上述节点下添加另一个节点（将其命名为）来启用维护任务 <code>granite_ProjectPurgeTask</code>)来访问Advertising Cloud的帮助。 配置OSGI属性，请参阅 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5维护任务文档</a>.</p>
   </td>
   </tr>
