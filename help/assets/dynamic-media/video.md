@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中处理视频，例如，对视频进
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
+source-git-commit: 6ab9ec4efdefd6fb850fd59966b2424e6a19a9ab
 workflow-type: tm+mt
-source-wordcount: '9368'
+source-wordcount: '9349'
 ht-degree: 19%
 
 ---
@@ -425,7 +425,7 @@ YouTube自行编码。 因此，上传到Experience Manager的原始视频文件
 
 ### 配置Google Cloud设置 {#configuring-google-cloud-settings}
 
-要发布到YouTube，您需要Google帐户。 如果你有Gmail账户，那么你已经有Google账户；如果您没有Google帐户，则可以轻松创建一个帐户。 您需要该帐户，因为您需要凭据才能将视频资产发布到YouTube。 如果已创建帐户，请跳过此任务并直接转到 [创建YouTube渠道](#creating-a-youtube-channel).
+要发布到YouTube，您需要Google帐户。 如果你有Gmail账户，那么你已经有Google账户；如果您没有Google帐户，则可以轻松创建一个帐户。 您需要该帐户，因为您需要凭据才能将视频资产发布到YouTube。 <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 与Google Cloud一起使用的帐户和用于YouTube的Google帐户不必相同。
 
