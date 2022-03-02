@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
+source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 3%
@@ -177,7 +177,7 @@ ht-degree: 3%
 >
 > 需要按类别选择特定产品页面 [CIF核心组件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新版本。
 
-### 深层链接 {#specific-pages-deep-linking}
+### 深度链接 {#specific-pages-deep-linking}
 
 的 `UrlProvider` 已预配置为生成指向创作层实例中特定类别和产品页面的深层链接。 对于使用“预览”模式浏览网站、导航到特定产品或类别页面并切换回“编辑”模式以编辑页面的编辑器而言，此操作非常有用。
 
