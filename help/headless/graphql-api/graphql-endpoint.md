@@ -1,70 +1,70 @@
 ---
-title: 在AEM中管理GraphQL端点
-description: 了解如何在Adobe Experience Manager as a Cloud Service中管理GraphQL端点以进行无头内容交付。
+title: 在 AEM 中管理 GraphQL 端点
+description: 了解如何在 Adobe Experience Manager as a Cloud Service 中针对 Headless 内容投放管理 GraphQL 端点。
 feature: Content Fragments,GraphQL API
 source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
-# 在AEM中管理GraphQL端点 {#graphql-aem-endpoint}
+# 在 AEM 中管理 GraphQL 端点 {#graphql-aem-endpoint}
 
-端点是用于访问GraphQL for AEM的路径。 使用此路径，您（或您的应用程序）可以：
+端点是 AEM 用于访问 GraphQL 的路径。您（或您的应用程序）可以使用此路径来：
 
-* 访问GraphQL模式，
-* 发送GraphQL查询，
-* 接收响应（对您的GraphQL查询）。
+* 访问 GraphQL 架构，
+* 发送 GraphQL 查询，
+* 接收（对您 GraphQL 查询的）响应。
 
-AEM中有两种类型的端点：
+AEM 中有两种类型的端点：
 
 * 全局
    * 可供所有站点使用。
-   * 此端点可以使用所有站点配置(在 [配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser))。
-   * 如果有任何内容片段模型应在站点配置之间共享，则应在全局站点配置下创建这些模型。
-* 站点配置：
-   * 对应于站点配置，如 [配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
-   * 特定于指定的站点/项目。
-   * 特定于站点配置的端点将使用该特定站点配置中的内容片段模型以及全局站点配置中的内容片段模型。
+   * 此端点可以使用所有 Sites 配置的所有内容片段模型（在[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定义）。
+   * 如果有任何应该在 Sites 配置中共享的内容片段模型，则这些内容应该在全局 Sites 配置下创建。
+* Sites 配置：
+   * 对应于 Sites 配置，如[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中的定义。
+   * 特定于指定站点/项目。
+   * Sites 配置特定的端点将来自特定 Sites 配置与来自全局 Sites 配置的内容片段模型结合使用。
 
 >[!CAUTION]
 >
->内容片段编辑器允许一个站点配置的内容片段引用另一个站点配置的内容片段（通过策略）。
+>内容片段编辑器可以允许一个 Sites 配置的内容片段引用另一个 Sites 配置（通过策略）的内容片段。
 >
->在这种情况下，并非所有内容都可以使用特定于Sites配置的端点进行检索。
+>在这种情况下，所有内容将可使用 Sites 配置特定的端点检索。
 >
->内容作者应控制此情景；例如，考虑将共享的内容片段模型置于全局站点配置下可能会非常有用。
+>内容作者应控制这种情境；例如，在考虑将共享内容片段模型放在全局 Sites 配置下时，它会很有用。
 
-用于AEM全局端点的GraphQL的存储库路径是：
+AEM 全局端点的 GraphQL 的存储库路径为：
 
 `/content/cq:graphql/global/endpoint`
 
-您的应用程序可以在请求URL中对其使用以下路径：
+对于此项，您的应用程序可以在请求 URL 中使用以下路径：
 
 `/content/_cq_graphql/global/endpoint.json`
 
-要为AEM启用GraphQL的端点，您需要：
+要为 AEM 的 GraphQL 启用端点，您需要：
 
-* [启用GraphQL端点](#enabling-graphql-endpoint)
-* [发布GraphQL端点](#publishing-graphql-endpoint)
+* [启用 GraphQL 端点](#enabling-graphql-endpoint)
+* [发布 GraphQL 端点](#publishing-graphql-endpoint)
 
-## 启用GraphQL端点 {#enabling-graphql-endpoint}
+## 启用 GraphQL 端点 {#enabling-graphql-endpoint}
 
-要启用GraphQL端点，您首先需要具有适当的配置。 请参阅 [内容片段 — 配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+要启用 GraphQL 端点，您首先需要具有合适的配置。请参阅[内容片段 - 配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
 
 >[!CAUTION]
 >
->如果 [尚未启用内容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md), **创建** 选项将不可用。
+>如果[未启用内容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
 
-要启用相应的端点，请执行以下操作：
+要启用对应的端点，请执行以下操作：
 
-1. 导航到 **工具**, **资产**，然后选择 **GraphQL**.
+1. 导航到&#x200B;**工具**、**资源**，然后选择 **GraphQL**。
 1. 选择&#x200B;**创建**。
-1. 的 **创建新GraphQL端点** 对话框。 您可以在此指定：
-   * **名称**:端点名称；您可以输入任何文本。
-   * **使用由提供的GraphQL模式**:使用下拉菜单选择所需的站点/项目。
+1. 此时将打开&#x200B;**创建新 GraphQL 端点**&#x200B;对话框。在其中可以指定：
+   * **名称**：端点的名称，您可以输入任意文本。
+   * **使用的 GraphQL 架构提供自**：使用下拉菜单选择所需的站点/项目。
 
    >[!NOTE]
    >
@@ -73,23 +73,23 @@ AEM中有两种类型的端点：
    >* *如果不对 GraphQL 端点仔细管理，则可能会带来数据安全和性能问题。请确保在创建端点后设置适当的权限。*
 
 
-1. 使用确认 **创建**.
-1. 的 **后续步骤** 对话框将提供指向安全控制台的直接链接，以便您能够确保新创建的端点具有适当的权限。
+1. 选择&#x200B;**创建**&#x200B;来确认。
+1. **后续步骤**&#x200B;对话框将提供直接指向安全控制台的链接，这样您可以确保新创建的端点具有合适的权限。
 
    >[!CAUTION]
    >
-   >每个人都可以访问该端点。 这可能会（尤其是在发布实例上）带来安全问题，因为GraphQL查询可能会给服务器带来沉重的负载。
+   >端点可供所有人访问。这会带来安全问题，特别是在发布实例上，因为 GraphQL 查询会对服务器施加大量负载。
    >
-   >您可以在端点上设置与用例相应的ACL。
+   >您可在端点上设置适合您的用例的 ACL。
 
-## 发布GraphQL端点 {#publishing-graphql-endpoint}
+## 发布 GraphQL 端点 {#publishing-graphql-endpoint}
 
-选择新端点并 **发布** 以使其在所有环境中完全可用。
+选择新端点和&#x200B;**发布**&#x200B;以使其在所有环境中完全可用。
 
 >[!CAUTION]
 >
->每个人都可以访问该端点。
+>端点可供所有人访问。
 >
->在发布实例上，这可能会引起安全问题，因为GraphQL查询可能会给服务器带来沉重的负载。
+>在发布实例上，这会带来安全问题，因为 GraphQL 查询会对服务器施加大量负载。
 >
->您必须设置 [适合您的用例的ACL](/help/headless/security/permissions.md) 在端点上。
+>您必须在端点上设置[适合您的用例的 ACL](/help/headless/security/permissions.md)。
