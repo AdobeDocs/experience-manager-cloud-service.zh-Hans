@@ -227,7 +227,6 @@ ht-degree: 100%
 >
 >例如，在请求中执行持久查询：
 >
->
-```xml
+>```xml
 >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
 >```
