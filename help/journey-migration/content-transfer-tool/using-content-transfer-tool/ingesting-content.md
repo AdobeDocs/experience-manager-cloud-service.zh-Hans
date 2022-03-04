@@ -1,15 +1,15 @@
 ---
-title: 将内容摄取到目标
-description: 将内容摄取到目标
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: 将内容提取到目标
+description: 将内容提取到目标
+source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 28%
+source-wordcount: '527'
+ht-degree: 31%
 
 ---
 
 
-# 将内容摄取到目标 {#ingesting-content}
+# 将内容提取到目标 {#ingesting-content}
 
 ## 内容传输工具中的摄取流程 {#ingestion-process}
 
@@ -21,7 +21,7 @@ ht-degree: 28%
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 >[!NOTE]
->如果使用Amazon S3或Azure Data Store作为数据存储的类型，则可以运行可选的预复制步骤以显着加快摄取阶段。 请参阅 [使用AzCopy摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 以了解更多详细信息。
+>您可以运行可选的预复制步骤以显着加快摄取阶段。 请参阅 [使用AzCopy摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 以了解更多详细信息。
 
 1. 从中选择迁移集 **内容传输** 页面，单击 **摄取** 开始摄取。
 
