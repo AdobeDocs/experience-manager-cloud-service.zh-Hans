@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 08ed7f06b60ab65a0060c4fa00f902006f3afbdd
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本 (2022.1.0) 的发布日期为 2022 年 2 月 3 日。以下版本(2022.2.0)发布于2022年3月10日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本 (2022.1.0) 的发布日期为 2022 年 2 月 3 日。以下版本 (2022.2.0) 的发布日期为 2022 年 10 月 3 日。
 
 ## 发布视频 {#release-video}
 

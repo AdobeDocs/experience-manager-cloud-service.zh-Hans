@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
 workflow-type: tm+mt
 source-wordcount: '3436'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -639,7 +639,7 @@ ht-degree: 99%
          + [沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [休眠环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 创建 AEM 应用程序项目 {#create-application-project}
          + [使用向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [设置项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
