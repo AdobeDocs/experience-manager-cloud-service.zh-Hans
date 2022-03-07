@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本 (2022.1.0) 的发布日期为 2022 年 2 月 3 日。以下版本 (2022.2.0) 的发布日期为 2022 年 10 月 3 日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本 (2022.1.0) 的发布日期为 2022 年 2 月 3 日。2022 年 3 月 10 日推出以下版本 (2022.2.0)。
 
 ## 发布视频 {#release-video}
 
