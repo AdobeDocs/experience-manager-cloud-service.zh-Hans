@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2366'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,9 @@ ht-degree: 1%
 1. 客户可以在Cloud Manager内部版本页面上查看索引作业是否已完成，并在新版本准备好接收流量时收到通知。
 
 1. 限制:
-* 目前，AEMas a Cloud Service的索引仅支持lucene类型的索引的索引管理。
+* 目前，只支持类型为的索引，对AEMas a Cloud Service的索引管理 `lucene`.
 * 仅支持标准分析程序（即随产品一起提供的分析程序）。 不支持自定义分析程序。
+* 在内部，可以配置其他索引并用于查询。 例如，针对 `damAssetLucene` 实际上，在Skyline上，可能会针对此索引的Elasticsearch版本执行索引。 此差异通常对应用程序和用户不可见，但某些工具(如 `explain` 功能将报告其他索引。 有关Lucene索引和Elastic索引之间的差异，请参阅 [Apache Jackrabbit Oak中的弹性文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客户无需也无法直接配置Elasticsearch索引。
 
 ## 使用方法 {#how-to-use}
 
@@ -129,7 +130,9 @@ ht-degree: 1%
 
 ### 使用蓝绿色部署进行索引管理 {#index-management-with-blue-green-deployment}
 
-使用蓝绿色部署时，不会出现停机。 但是，对于索引管理，这要求索引仅供某些版本的应用程序使用。 例如，在应用程序版本2中添加索引时，您不希望该索引被应用程序版本1使用。 而删除索引的情况则相反：在版本1中，仍需要在版本2中删除索引。 在更改索引定义时，我们希望旧版本的索引仅用于版本1，新版本的索引仅用于版本2。
+使用蓝绿色部署时，不会出现停机。 在升级过程中，在一段时间内，同一存储库上同时运行的是应用程序的旧版本（例如，版本1）和新版本（版本2）。 如果版本1要求使用特定索引，则在版本2中不得删除此索引：以后应该删除索引，例如在版本3中，此时应保证应用程序版本1不再运行。 此外，应编写应用程序，以便即使版本2正在运行，并且版本2的索引可用，版本1仍能正常工作。
+
+升级到新版本后，系统可能会垃圾回收旧索引。 为了加快回滚速度（如果需要回滚），旧的索引可能仍会保留一段时间。
 
 下表显示了五个索引定义：索引 `cqPageLucene` 在两个版本中使用，而索引 `damAssetLucene-custom-1` 仅在版本2中使用。
 
@@ -160,7 +163,7 @@ Adobe更改现成索引（如“damAssetLucene”或“cqPageLucene”）后，�
 
 ### 当前限制 {#current-limitations}
 
-目前，仅支持类型索引的索引管理 `lucene`.
+目前，仅支持类型索引的索引管理 `lucene`. 在内部，其他索引可以配置并用于查询，例如弹性索引。
 
 ### 添加索引 {#adding-an-index}
 
