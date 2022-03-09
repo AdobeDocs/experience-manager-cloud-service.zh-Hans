@@ -1,12 +1,12 @@
 ---
 title: 交互式图像
 description: 了解如何在Dynamic Media中使用交互式图像。
-feature: 交互式图像
+feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
-source-wordcount: '4178'
+source-wordcount: '4176'
 ht-degree: 15%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 15%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-请参阅上图网页上的[交互式图像操作中的](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)。
+请参阅 [交互式图像的实际操作情况](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) 上图的网页。
 
 ## 观看如何创建交互式图像横幅 {#watch-how-interactive-image-banners-are-created}
 
-观看有关如何创建交互式图像横幅的演练](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)（10分33秒）。 [您还可以了解如何预览、编辑和传送交互式图像横幅。
+观看 [交互式图像横幅的创建方式](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) （10分33秒）。 您还会了解如何预览、编辑和传送交互式图像横幅。
 
 ## 快速入门：交互式图像 {#quick-start-interactive-images}
 
 以下工作流分步描述旨在帮助您快速启动并运行Adobe Experience Manager Assets中的交互式图像。
 
-请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。本教程包含一个基于[尚未向其添加交互式图像的网页示例的简短教程](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
+请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。它包含一个基于 [尚未向其添加交互式图像的网页示例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 
 
@@ -37,23 +37,23 @@ ht-degree: 15%
 
 交互式图像步骤：
 
-1. **（可选）识别热点变量**。如果您使用Adobe Experience Manager Assets和Dynamic Media独立版，请识别现有概览实施中使用的动态变量。 这样做可确保您在创建交互式图像时输入热点数据。 请参阅[（可选）识别热点变量](#optional-identifying-hotspot-variables)。
-但是，如果您使用Experience Manager网站或Experience Manager电子商务，或者同时使用这两者，则无需执行此步骤。
+1. **（可选）识别热点变量**. 如果您使用Adobe Experience Manager Assets和Dynamic Media独立版，请识别现有概览实施中使用的动态变量。 这样做可确保您在创建交互式图像时输入热点数据。 请参阅 [（可选）识别热点变量](#optional-identifying-hotspot-variables).
+但是，如果您使用Experience Manager Sites或Experience Manager电子商务，或者同时使用这两者，则无需执行此步骤。
 
-1. **（可选）创建交互式图像查看器预设**。自定义用于表示热点的图形图像。 如果您打算改用名为`Shoppable_Banner`的现成交互式图像查看器预设，则无需创建您自己的交互式图像查看器预设。
-请参阅[（可选）创建交互式图像查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)。
+1. **（可选）创建交互式图像查看器预设**. 自定义用于表示热点的图形图像。 如果您打算使用名为的现成交互式图像查看器预设，则无需创建您自己的交互式图像查看器预设 `Shoppable_Banner` 中。
+请参阅 [（可选）创建交互式图像查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **上传图像横幅**。上传您要实现交互的图像横幅。请参阅[上传图像横幅](#uploading-an-image-banner)。
+1. **上传图像横幅**. 上传您要实现交互的图像横幅。请参阅[上传图像横幅](#uploading-an-image-banner)。
 
 
-1. **将热点添加到图像横幅**。向图像横幅添加一个或多个热点。 将每个链接与操作关联，如超链接、概览或体验片段。 添加热点后，您将通过发布交互式图像来完成此任务。
-请参阅[将热点添加到图像横幅](#adding-hotspots-to-an-image-banner)。
-请参阅[预览交互式图像](#optional-previewing-interactive-images) — 可选。 如果需要，您可以查看购物横幅的呈现形式并测试其交互性。
-有关如何发布交互式图像资产的详细信息，请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. **将热点添加到图像横幅**. 向图像横幅添加一个或多个热点。 将每个链接与操作关联，如超链接、概览或体验片段。 添加热点后，您将通过发布交互式图像来完成此任务。
+请参阅 [将热点添加到图像横幅](#adding-hotspots-to-an-image-banner).
+请参阅 [预览交互式图像](#optional-previewing-interactive-images)  — 可选。 如果需要，您可以查看购物横幅的呈现形式并测试其交互性。
+请参阅 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 有关如何发布交互式图像资产的详细信息。
 
-1. **以Experience Manager**&#x200B;将交互式图像添加到您的网站或您的网站。如果您使用“站点”、“电子商务”或两者，则可以在Experience Manager中直接将交互式图像添加到网页。 将交互式媒体组件拖动到页面上。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
-如果您使用Experience ManagerAssets和Dynamic Media独立版本，请复制您网站上的嵌入代码。 然后，将其与现有概览相集成。 请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
-如果您使用第三方WCM（Web内容管理器），请将新的交互式视频与您网站上使用的现有概览相集成。 请参阅[将交互式图像与现有概览](#integrating-an-interactive-image-with-an-existing-quickview)集成。
+1. **以Experience Manager方式将交互式图像添加到您的网站或您的网站**. 如果您使用“站点”、“电子商务”或两者，则可以在Experience Manager中直接将交互式图像添加到网页。 将交互式媒体组件拖动到页面上。 请参阅 [将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+如果您使用Experience ManagerAssets和Dynamic Media独立版本，请复制您网站上的嵌入代码。 然后，将其与现有概览相集成。 请参阅 [将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website).
+如果您使用第三方WCM（Web内容管理器），请将新的交互式视频与您网站上使用的现有概览相集成。 请参阅 [将交互式图像与现有概览集成](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## （可选）识别热点变量 {#optional-identifying-hotspot-variables}
 
@@ -62,15 +62,13 @@ ht-degree: 15%
 >仅当满足以下条件时，才需要执行此任务：
 >
 >* 您希望通过触发概览来增加图像的交互性。
->* 您的Experience Manager实施&#x200B;*not*&#x200B;使用电子商务集成框架将产品数据从任何电子商务解决方案拉入Experience Manager。 此类解决方案包括IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop。
-
+>* 您的Experience Manager实施可以 *not* 使用电子商务集成框架将产品数据从任何电子商务解决方案拉入Experience Manager。 此类解决方案包括IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop。
 >
->
-如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
+>如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
 
 首先，识别现有概览实施所使用的动态变量，以便您输入热点数据以创建交互式图像。
 
-在Experience Manager资产中向横幅图像添加热点时，请分配一个SKU（库存单位）。 SKU是您提供的每个不同产品或服务的唯一标识符。 然后，向每个热点添加任何额外的可选变量。 此类热点变量稍后会用于将热点与概览内容进行匹配。
+在Experience Manager Assets中将热点添加到横幅图像时，请分配一个SKU（库存单位）。 SKU是您提供的每个不同产品或服务的唯一标识符。 然后，向每个热点添加任何额外的可选变量。 此类热点变量稍后会用于将热点与概览内容进行匹配。
 
 必须准确地识别要与热点数据相关联的变量数量及类型，这一点很重要。而且，添加到横幅图像的每个热点都必须附带足够的信息，以便能够在现有的后端系统中明确地识别产品。
 
@@ -89,7 +87,7 @@ ht-degree: 15%
 
 通常情况下，您不需要使用任何专业的调试工具。现代的 Web 浏览器具备 Web 检查器，可以实现相同的功能。下面列举了一些具备 Web 检查器的 Web 浏览器：
 
-* 要在Google Chrome中查看所有传出HTTP请求，请按F12打开“开发人员工具”面板，然后选择“网络”选项卡。
+* 要在Google Chrome中查看所有传出的HTTP请求，请按F12打开“开发人员工具”面板，然后选择“网络”选项卡。
 在Mac上，按Command+Option+I打开“开发人员工具”面板，然后选择“网络”选项卡。
 
 * 在Firefox中，您可以通过按F12并使用其“网络”选项卡来激活Firebug插件。 或者，您也可以使用内置的检查器工具及其“网络”选项卡。
@@ -97,13 +95,13 @@ ht-degree: 15%
 
 在浏览器中打开网络监控时，会触发页面上的概览。
 
-现在，在网络日志中找到Quickview Ajax URL，并复制记录的URL以供将来分析。 通常，在触发概览时，会向服务器发送大量请求。 通常，Quickview Ajax URL是列表中最先使用的URL之一。 它具有复杂的查询字符串部分或路径，其响应MIME类型为`text/html`、`text/xml`或`text/javascript`。
+现在，在网络日志中找到Quickview Ajax URL，并复制记录的URL以供将来分析。 通常，在触发概览时，会向服务器发送大量请求。 通常，Quickview Ajax URL是列表中最先使用的URL之一。 它具有复杂的查询字符串部分或路径，其响应MIME类型为 `text/html`, `text/xml`或 `text/javascript`.
 
 在此过程中，访问网站中具有不同产品类别和类型的不同区域非常重要。 其原因是，概览URL可能包含给定网站类别中通用的部分。 但是，仅当您访问网站的其他区域时，这些值才会发生更改。
 
 在最简单的情况下，概览URL中唯一的变量部分是产品SKU。 在这种情况下，SKU 值就是您将热点添加到横幅图像时唯一需要提供的数据。
 
-但是，在复杂情况下，除SKU之外，快速视图URL还具有不同的可变元素。 例如，可变元素可能包括类别ID、颜色代码和大小代码。 在这种情况下，在Experience Manager资产的交互式购物图像功能中，每个元素都是热点数据定义中的一个单独变量。
+但是，在复杂情况下，除SKU之外，快速视图URL还具有不同的可变元素。 例如，可变元素可能包括类别ID、颜色代码和大小代码。 在这种情况下，在Experience Manager Assets的交互式购物图像功能中，每个元素都是热点数据定义中的一个单独变量。
 
 请考虑以下概览URL及其生成的热点变量示例：
 
@@ -117,7 +115,7 @@ ht-degree: 15%
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>URL 中唯一的变量部分是 productId= 查询字符串参数的值，很明显它就是 SKU 值。因此，热点只需要在SKU字段中填充<strong><code>866558</code></strong>、<strong><code>1196184</code></strong>、<strong><code>1081492</code></strong>、<strong><code>1898294</code></strong>等值即可。</p> </td>
+    </ul> <p>URL 中唯一的变量部分是 productId= 查询字符串参数的值，很明显它就是 SKU 值。因此，热点只需要在SKU字段中填充如下值即可 <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>单个 SKU，位于 URL 路径中。</p> </td>
@@ -126,7 +124,7 @@ ht-degree: 15%
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>变量部分位于路径的最后一部分，它将成为热点的SKU值：<strong><code>6422350843</code></strong>、<strong><code>1607745002</code></strong>、<strong><code>0086724882</code></strong>。</p> </td>
+    </ul> <p>变量部分位于路径的最后一部分，它将成为热点的SKU值： <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU 和类别 ID，位于查询字符串中。</p> </td>
@@ -135,11 +133,11 @@ ht-degree: 15%
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>在这种情况下，URL 中有两个可变部分。SKU存储在<code>prodId</code>参数中，类别ID<code></code>存储在<code>category=</code>参数中。</p> <p>因此，热点定义是成对存在的，即，SKU值和一个名为<code>categoryId</code>的额外变量。 生成的各对如下所示：</p>
+    </ul> <p>在这种情况下，URL 中有两个可变部分。SKU存储在 <code>prodId</code> 参数和类别ID<code></code> 存储在 <code>category=</code> 参数。</p> <p>因此，热点定义是成对存在的，即，一个SKU值和一个名为 <code>categoryId</code>. 生成的各对如下所示：</p>
     <ul>
-      <li><p>SKU为<strong><code>305466</code></strong>, <code>categoryId</code>为<code>1100004</code>。</p> </li>
-      <li><p>SKU为<strong><code>310181</code></strong>, <code>categoryId</code>为<strong><code>1100004</code></strong>。</p> </li>
-      <li><p>SKU为<strong><code>308706</code></strong>, <code>categoryId</code>为<strong><code>1740148</code></strong>。</p> </li>
+      <li><p>SKU是 <strong><code>305466</code></strong> 和 <code>categoryId</code> is <code>1100004</code>.</p> </li>
+      <li><p>SKU是 <strong><code>310181</code></strong> 和 <code>categoryId</code> is <strong><code>1100004</code></strong>.</p> </li>
+      <li><p>SKU是 <strong><code>308706</code></strong> 和 <code>categoryId</code> is <strong><code>1740148</code></strong>.</p> </li>
     </ul> <p> </p> </td>
   </tr>
   </tbody>
@@ -147,7 +145,7 @@ ht-degree: 15%
 
 **示例**
 
-您可以将上述三个示例中使用的相同方法应用到[演示网页](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
+您可以将上述三个示例中使用的相同方法应用到 [演示网页](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 演示网页包含多个产品缩略图，每个缩略图都有一个标有“查看更多”的“概览”按钮。 如果Web浏览器的调试工具仍处于激活状态，请选择每个按钮并记下记录的概览URL。 激活页面上所有四个可用的产品概览后，您会向后端发出以下概览请求列表：
 
@@ -167,20 +165,20 @@ ht-degree: 15%
 
 依据上述分析，您可以在热点中使用 `categoryId` 和 `SKU`。
 
-现在，您可以使用Experience Manager资产中的交互式购物图像功能，上传图像横幅并向其添加热点。
+现在，您可以使用Experience Manager Assets中的交互式购物图像功能上传图像横幅并向其添加热点。
 
 ## （可选）创建交互式图像查看器预设 {#optional-creating-an-interactive-image-viewer-preset}
 
-您可以选择使用默认的名为`Shoppable_Banner`且随Experience Manager资产一起提供的现成交互式图像查看器预设。 或者，您也可以创建自己的自定义查看器预设，以用于交互式图像。
+您可以选择使用名为的默认现成交互式图像查看器预设 `Shoppable_Banner` Experience Manager Assets。 或者，您也可以创建自己的自定义查看器预设，以用于交互式图像。
 
 创建自定义交互式图像查看器预设时，您可以确定图像横幅上热点的外观。 在创建查看器预设的过程中，您可以选择使用预定义图像库中提供的热点图形。
 
-在保存查看器预设后，查看器预设会在“Experience Manager资产”的“查看器预设”列表页面上自动激活（打开）。 此功能意味着无论您何时查看资产，都可以在交互式媒体组件中看到该内容。 但是，要使用此查看器预设交付&#x200B;**&#x200B;交互式横幅，请&#x200B;*发布*&#x200B;您的查看器预设。 对于自定义或现成查看器预设，此规则为true。
+保存查看器预设后，该查看器预设会在Experience Manager Assets的“查看器预设”列表页面上自动激活（打开）。 此功能意味着无论您何时查看资产，都可以在交互式媒体组件中看到该内容。 但是， *交付* 具有此查看器预设的交互式横幅， *发布* 查看器预设。 对于自定义或现成查看器预设，此规则为true。
 
 **要创建交互式图像查看器预设，请执行以下操作：**
 
-1. 在左边栏中，转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**。
-1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 创建]**。
+1. 在左边栏中，转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**.
+1. 在页面的右上角附近，点按 **[!UICONTROL 创建]**.
 1. 在“新查看器预设”对话框中，键入一个用于描述该交互式横幅查看器预设的名称。
 
 
@@ -198,13 +196,13 @@ ht-degree: 15%
 
    请确保您发布了新查看器预设。
 
-   请参阅[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
+   请参阅 [发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
    现在，您便可以上传图像横幅。
 
 ## 上传图像横幅 {#uploading-an-image-banner}
 
-如果您已上传要使用的图像，请前进到下一步[将热点添加到图像横幅](#adding-hotspots-to-an-image-banner)。
+如果您已上传要使用的图像，请前进到下一步， [将热点添加到图像横幅](#adding-hotspots-to-an-image-banner).
 
 **要上传图像横幅，请执行以下操作：**
 
@@ -221,7 +219,7 @@ ht-degree: 15%
 
 添加热点时，您可以将热点定义为“概览”弹出显示、超链接或体验片段。
 
-请参阅[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)。
+请参阅 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
 >
@@ -231,13 +229,13 @@ ht-degree: 15%
 
 创建完交互式图像后，您可以使用“预览”来查看交互式图像在客户中的显示方式。
 
-请参阅[（可选）预览交互式图像](#optional-previewing-interactive-images)。
+请参阅 [（可选）预览交互式图像](#optional-previewing-interactive-images).
 
 >[!NOTE]
 >
 >在交互式图像或轮播横幅中向图像添加热点时，热点信息会存储在同一元数据位置。 此位置是相对于图像位置的，无论它是交互式图像还是轮播横幅。 此功能意味着您可以在任意查看器中轻松重复使用同一图像及其定义的热点数据。
 但是，请注意，传送横幅支持图像映射的图像也可能包含热点；交互式图像不会。 如果您打算创建使用相同图像的交互式图像或轮播横幅，请牢记这一点。 您可以使用同一图像的不同副本来创建交互式图像和传送横幅。
-另请参阅[传送横幅](/help/assets/dynamic-media/carousel-banners.md)。
+另请参阅 [传送横幅](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
 如果您正在使用热点编辑交互式图像并裁剪图像，则热点会被删除。
@@ -247,44 +245,44 @@ ht-degree: 15%
 1. 在“资产”视图中，导航到要进行交互的图像横幅。
 1. 执行下列操作之一：
 
-   * 将鼠标悬停在图像上，然后点按&#x200B;**[!UICONTROL 选择]**（复选标记图标）。 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
+   * 将鼠标悬停在图像上，然后点按 **[!UICONTROL 选择]** （复选标记图标）。 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
 
-   * 将鼠标悬停在图像上，然后点按&#x200B;**[!UICONTROL 更多操作]**（三个圆点图标）**[!UICONTROL >编辑]**。
+   * 将鼠标悬停在图像上，然后点按 **[!UICONTROL 更多操作]** （三个圆点图标） **[!UICONTROL >编辑]**.
 
-   * 要在“详细信息视图”页面中将其打开，请点按图像。 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
+   * 要在“详细信息视图”页面中将其打开，请点按图像。 在工具栏中，点按 **[!UICONTROL 编辑]**.
 
 1. 在页面的左上角附近，点按&#x200B;**[!UICONTROL 添加热点]**（手指点按图标）以打开热点管理页面。
-1. 在页面的左上角附近，点按&#x200B;**[!UICONTROL 热点]**。
+1. 在页面的左上角附近，点按 **[!UICONTROL 热点]**.
 
-   1. 在“热点管理”页面的左上角附近，点按&#x200B;**[!UICONTROL 热点]**。
+   1. 在“热点管理”页面的左上角附近，点按 **[!UICONTROL 热点]**.
    1. 在图像上，点按您希望显示热点的位置。如有必要，可拖动热点以调整其位置。或者，使用键盘箭头键控制所选热点的位置。
    1. 重复步骤a和b，根据需要添加更多热点。
-   1. （可选）要删除热点，请在图像上将其选中，然后点按&#x200B;**[!UICONTROL 热点]**&#x200B;标题下的&#x200B;**[!UICONTROL 删除]**（垃圾桶图标）。
+   1. （可选）要删除热点，请在图像上选择它，然后点按 **[!UICONTROL 删除]** （垃圾桶图标） **[!UICONTROL 热点]** 标题。
 
 1. 在“名称”文本字段中，键入热点的名称。此名称也会显示在“选定的热点”下拉列表中。
 1. 执行下列操作之一：
 
-   * 选择&#x200B;**[!UICONTROL Quickview]**。
+   * 选择 **[!UICONTROL 概览]**.
 
-      * 如果您是Experience Manager站点或电子商务客户，请选择产品选取器图标（放大镜）以打开选择产品页面。 选择要使用的产品，然后点按页面右上角的&#x200B;**选择**。 您将返回到热点管理页面。
-      * 如果您是&#x200B;*not* Experience Manager站点或电子商务客户
+      * 如果您是Experience Manager Sites或电子商务客户，请选择产品选取器图标（放大镜）以打开选择产品页面。 选择要使用的产品，然后点按 **选择** 的双曲余切值。 您将返回到热点管理页面。
+      * 如果您 *not* Experience Manager Sites或电子商务客户
 
-         * 请参阅[识别热点变量](#optional-identifying-hotspot-variables);您必须定义这些变量。
+         * 请参阅 [识别热点变量](#optional-identifying-hotspot-variables);您必须定义这些变量。
          * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU。 输入的SKU值会自动填充概览模板的变量部分。 它可确保系统知道将点按的热点与特定SKU的概览相关联。
-         * （可选）如果概览中有其他变量用于进一步识别产品，请点按&#x200B;**[!UICONTROL 添加常规变量]**。 在文本字段中，指定一个额外的变量。 例如，`category=Mens` 就是一个添加的变量。
-   * 选择&#x200B;**[!UICONTROL 超链接]**。
+         * （可选）如果概览中有其他变量用于进一步识别产品，请点按 **[!UICONTROL 添加常规变量]**. 在文本字段中，指定一个额外的变量。 例如，`category=Mens` 就是一个添加的变量。
+   * 选择 **[!UICONTROL 超链接]**.
 
-      * 如果您是Experience Manager站点客户，请点按站点选择器图标（文件夹）。 导航到URL。 如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
+      * 如果您是Experience Manager Sites客户，请点按站点选择器图标（文件夹）。 导航到URL。 如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager Sites页面的链接，则无法使用基于URL的链接方法。
       * 如果您是独立客户，请在“HREF”文本字段中，指定链接网页的完整URL路径。
 
    请确保指定是在新的浏览器选项卡（推荐为默认选项卡）还是在同一选项卡中打开链接。
 
-   有关更多信息，请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
+   请参阅 [使用选择器](/help/assets/dynamic-media/working-with-selectors.md) 以了解更多信息。
 
-   * 选择&#x200B;**[!UICONTROL 体验片段]**。
+   * 选择 **[!UICONTROL 体验片段]**.
 
-      * 如果您是Experience Manager站点客户，请选择搜索图标（放大镜）以打开体验片段页面。 选择要使用的体验片段。 然后点按页面右上角的&#x200B;**[!UICONTROL 选择]**。 您将返回到热点管理页面。
-请参阅[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)。
+      * 如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。 选择要使用的体验片段。 然后点按 **[!UICONTROL 选择]** 的双曲余切值。 您将返回到热点管理页面。
+请参阅 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * 指定您希望在横幅上显示的体验片段的宽度和高度。
 
@@ -293,14 +291,14 @@ ht-degree: 15%
 
 
 
-1. 选择&#x200B;**[!UICONTROL Save]**&#x200B;以保存您的工作并返回到“浏览”页面。
+1. 选择 **[!UICONTROL 保存]** 以保存您的工作并返回到浏览页面。
 1. 发布交互式图像。 发布功能可通过云交付横幅，还会生成嵌入代码，以便您与第三方网站集成。
 
-   请参阅[发布资产](/help/assets/manage-digital-assets.md#publish-assets)。
+   请参阅 [发布资产](/help/assets/manage-digital-assets.md#publish-assets).
 
    添加热点并发布交互式图像后，您现在可以将其添加到现有网站。
 
-   请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
+   请参阅 [将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
    如果您正在使用热点编辑交互式图像并裁剪图像，则热点会被删除。
@@ -310,49 +308,49 @@ ht-degree: 15%
 您可以使用“预览”来查看交互式图像在客户中的显示方式。 通过“预览”功能，您还可以测试图像的热点，以确保这些热点按预期运行。
 
 如果您对交互式图像满意，可以发布该图像。
-请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
-请参阅[将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager站点页面的链接，则无法使用基于URL的链接方法。
-请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+请参阅 [在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
+请参阅 [将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager Sites页面的链接，则无法使用基于URL的链接方法。
+请参阅 [将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **要预览交互式图像，请执行以下操作：**
 
 1. 在“资产”视图中，导航到您创建的现有交互式图像，然后点按以在预览中打开该图像。
-1. 在“预览”页面的左上角附近，在“内容”下拉列表中，点按&#x200B;**[!UICONTROL 查看器]**。
-1. 在“查看器”列表中，点按&#x200B;**[!UICONTROL Shoppable_Banner]**&#x200B;或您创建的交互式图像查看器预设的名称。
+1. 在“预览”页面的左上角附近，在“内容”下拉列表中，点按 **[!UICONTROL 查看器]**.
+1. 在查看器列表中，点按 **[!UICONTROL Shoppable_Banner]** 或您创建的交互式图像查看器预设的名称。
 1. 要测试热点的相关操作，请点按图像上的热点。
 
 ## 发布交互式图像资产 {#publishing-interactive-image-assets}
 
-有关如何发布交互式图像资产的详细信息，请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+请参阅 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 有关如何发布交互式图像资产的详细信息。
 
 ## 将交互式图像与您的网站集成 {#integrating-an-interactive-image-with-your-website}
 
 在上传横幅图像、向其添加热点以及发布交互式图像后，您便可以将其添加到网站页面。
 
-如果您是Experience Manager站点客户，则可以通过将交互式媒体组件拖动到您的页面上来添加交互式图像。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+如果您是Experience Manager Sites客户，则可以通过将交互式媒体组件拖动到页面上来添加交互式图像。 请参阅 [将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-如果您是独立的Experience Manager资产客户，则可以按照此部分中的所述，手动将交互式图像添加到您的网站。
+如果您是独立的Experience Manager Assets客户，则可以按照此部分所述，手动将交互式图像添加到您的网站。
 
 1. 复制已发布的交互式图像的嵌入代码。
-请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md)。
+请参阅 [在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
 
 1. 将复制的嵌入代码添加到网页中的所需位置。
 复制的嵌入代码是为响应式环境设置的，以便自动适合分配的区域。
 
 **示例**
 
-以[演示网站为例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)，请注意三个人的图片是一个静态`IMG`标记：
+使用 [示例演示网站](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)，请注意，这三个人的图片是静态的 `IMG` 标记：
 
-```xml
+```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-集成过程很简单，只需删除`IMG`标记并将其替换为从Experience Manager资产中复制的嵌入代码即可。 您可以看到结果[在页面上显示交互式购物图像，该图像具有三个圆形热点](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)。
+集成过程与删除 `IMG` 标记并将其替换为从Experience Manager Assets复制的嵌入代码。 您可以看到结果 [在页面上显示交互式购物图像，其中包含三个圆形热点](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 因此，演示网站交互式购物图像上的热点仅用于显示目的。它们尚未与现有概览相集成。
 
-要为响应式环境对交互式购物图像应用“裁剪”，请将交互式图像配置属性`ZoomView.iscommand`包含到路径中。 在这种情况下，将调用`ZoomView`组件，并且`iscommand`是您应用的“裁剪”图像服务命令。
+要为响应式环境对交互式购物图像应用“裁剪”，请包括交互式图像配置属性 `ZoomView.iscommand` 到路上。 在本例中， `ZoomView` 组件调用， `iscommand` 是您应用的“裁剪”图像服务命令。
 
 请参阅 [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 配置属性。
 
@@ -363,7 +361,7 @@ ht-degree: 15%
 ## 将交互式图像与现有概览相集成 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
-此任务仅在您是独立Experience Manager资产客户时才适用。
+此任务仅在您是独立的Experience Manager Assets客户时才适用。
 
 此过程的最后一步是，将交互式图像与您网站上的现有概览实施相集成。 但是，没有任何一种集成解决方案是在所有情况下都适用的。每个概览实施都是独一无二的，需要一种特定的方法。 因此，在前端IT人员的协助下工作非常有帮助。
 
@@ -374,12 +372,12 @@ ht-degree: 15%
 1. 前端代码使用在第 2 步获取的 URL 发送一个 Ajax 请求。
 1. 后端逻辑会将相应的概览数据或内容返回到前端代码。
 1. 前端代码加载概览数据或内容。
-1. 或者，前端代码会将加载的概览数据转换为HTML表示形式。
+1. 或者，前端代码会将加载的概览数据转换为HTML表示。
 1. 前端代码显示一个模态对话框或面板，并将 HTML 内容呈现在屏幕上以供最终用户查看。
 
 这些调用不一定表示网页逻辑从任意步骤调用的独立公共API调用。 相反，这些调用属于链式调用，即，每个后续步骤都隐藏在前一步的最后阶段（回调）。
 
-当交互式购物图像替换第1步和第2步部分时，用户点按购物图像中的热点。 此类用户交互由查看者处理。 查看器会向网页返回一个事件，其中包含之前添加到Experience Manager资产的所有热点数据。
+当交互式购物图像替换第1步和第2步部分时，用户点按购物图像中的热点。 此类用户交互由查看者处理。 查看器会向网页返回一个事件，其中包含之前添加到Experience Manager Assets的所有热点数据。
 
 在此类事件处理程序中，前端代码会执行下列操作：
 
@@ -387,9 +385,9 @@ ht-degree: 15%
 * 根据热点数据构建概览URL。
 * 触发从后端加载概览并在屏幕上呈现概览以供显示的过程。
 
-Experience Manager资产返回的嵌入代码具有一个已注释掉的即用事件处理程序，如以下高亮显示的代码片段所示：
+Experience Manager Assets返回的嵌入代码具有一个已注释掉的即用事件处理程序，如以下高亮显示的代码片段所示：
 
-```xml
+```xml {.line-numbers}
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
             "containerId" : "s7interactiveimage_div",
             "params" : {
@@ -415,7 +413,7 @@ Experience Manager资产返回的嵌入代码具有一个已注释掉的即用�
 
 构建概览URL的过程与识别前面介绍的热点变量的过程相反。
 
-请参阅[识别热点变量](#optional-identifying-hotspot-variables)。
+请参阅 [识别热点变量](#optional-identifying-hotspot-variables).
 
 使用前面的概览URL示例，您可以在以下示例中看到如何在每种情况下构建概览URL:
 
@@ -452,27 +450,27 @@ Experience Manager资产返回的嵌入代码具有一个已注释掉的即用�
 
 您可以了解如何将这些步骤应用到演示网站，以便将交互式购物图像与概览代码完全集成。 以前，概览URL的结构如下所示：
 
-```xml
+```xml {.line-numbers}
 /datafeed/$categoryId$-$SKU$.json
 ```
 
-要在`quickViewActivate`处理程序中重建此URL，可以使用`categoryId`和`SKU`字段。 在`inData`对象中，这些字段可用，该对象通过查看器的代码传递到处理程序：
+在 `quickViewActivate` 处理程序中，您可以使用 `categoryId` 和 `SKU` 字段。 这些字段在 `inData` 由查看器代码传递到处理程序的对象：
 
-```xml
+```xml {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-演示网站使用简单的`loadQuickView()`函数调用触发“概览”对话框。 此函数仅采用一个参数，即概览数据URL。 因此，集成交互式购物图像的最后一步是将下面一行代码添加到`quickViewActivate`处理程序：
+演示网站使用一个简单的 `loadQuickView()` 函数调用。 此函数仅采用一个参数，即概览数据URL。 因此，集成交互式购物图像的最后一步是，将下面一行代码添加到 `quickViewActivate` 处理程序：
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 下面是完整的源代码：
 
-```xml
+```xml {.line-numbers}
  var s7interactiveimageviewer = new s7viewers.InteractiveImage({
   "containerId" : "s7interactiveimage_div",
   "params" : {
@@ -492,8 +490,8 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-具有完全集成的交互式图像的[最终演示网站](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)。
+的 [完全集成的交互式图像最终演示网站](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
-## 使用概览创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
+## 使用 Quickview 创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 
-请参阅[使用Quickview](/help/assets/dynamic-media/custom-pop-ups.md)创建自定义弹出窗口Windows®。
+请参阅 [使用概览创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md).

@@ -4,7 +4,7 @@ description: 了解如何在Dynamic Media中使用交互式视频和购物视频
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 16%
@@ -101,7 +101,6 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >* 您希望通过触发概览来为视频添加交互性。
 >* 您的Experience Manager实施可以 *not* 使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager中。 <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
-
 >
 >如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
 
@@ -549,7 +548,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 请注意，视频嵌入代码是标准代码：
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7video_div.s7videoviewer{
    width:100%;
@@ -610,7 +609,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 由Experience Manager返回的嵌入代码已拥有一个现成的事件处理程序。 如以下高亮显示的代码片段所示，该代码片段被注释掉：
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -694,13 +693,13 @@ There was a link here that showed the video frame of an interactive video and wh
 
 您可以了解如何将这些步骤应用到演示网站，以便将交互式视频与概览代码完全集成。 在本主题的前面，快速视图URL的结构如下所示：
 
-```xml
+```xml {.line-numbers}
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
 在 `quickViewActivate` 使用处理程序 `categoryId` 和 `sku` 字段 `inData` 通过查看器代码传递到处理程序的对象，如下所示：
 
-```xml
+```js {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -708,13 +707,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 演示网站使用一个简单的 `loadQuickView()` 函数调用。 此函数仅采用一个参数，即概览数据URL。 因此，集成交互式视频的最后一步是将下面一行代码添加到 `quickViewActivate` 处理程序：
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 最后，确保将“快速查看”对话框附加到查看器的容器元素。 默认的嵌入代码提供了实现此功能的示例步骤。 要获取对查看器容器元素的引用，可以使用以下代码行：
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 ```
@@ -725,7 +724,7 @@ var inner_container = document.getElementById(sdkContainerId);
 
 对于示例网站，“快速查看”模式对话框以 `DIV` 并直接附加到文档的quickview-modal ID `BODY`. 因此，将该对话框移动到查看器容器的代码与以下代码一样简单：
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 inner_container.appendChild(document.getElementById("quickview-modal"));
@@ -733,7 +732,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 完整的源代码如下：
 
-```xml
+```javascript {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -780,4 +779,4 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 ## 使用概览创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-请参阅 [使用概览创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md).—>
+请参阅 [使用概览创建自定义弹出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
