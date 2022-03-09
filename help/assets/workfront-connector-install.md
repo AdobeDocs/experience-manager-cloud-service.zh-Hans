@@ -3,13 +3,13 @@ title: 安装 [!DNL Workfront for Experience Manager enhanced connector]
 description: 安装 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8ca25f86a8d0d61b40deaff0af85e56e438efbdc
+exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
+source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 0%
+source-wordcount: '554'
+ht-degree: 1%
 
 ---
-
 
 # 安装 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -42,6 +42,23 @@ ht-degree: 0%
 
 要在 [!DNL Experience Manager] as a [!DNL Cloud Service]，请执行以下步骤：
 
+1. 从下载增强的连接器 [AdobeSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. [访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) 和从Cloud Manager克隆AEMas a Cloud Service存储库。
+
+1. 使用您选择的IDE打开克隆的AEMas a Cloud Service存储库。
+
+1. 将步骤1中下载的增强型连接器zip文件放置在以下路径中：
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >如果 `resources` 文件夹不存在，请创建文件夹。
+
+
 1. 添加 `pom.xml` 依赖关系：
 
    1. 在父项中添加依赖项 `pom.xml`.
@@ -51,47 +68,28 @@ ht-degree: 0%
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. 在所有模块中添加依赖项 [!DNL pom.xml].
+      >[!NOTE]
+      >
+      >确保在将依赖项复制到父项之前更新增强的连接器版本号 `pom.xml`.
+
+   1. 在中添加依赖项 `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. 添加 `pom.xml` 身份验证。
-
-   1. 在adobe-public配置文件的pom.xml中包含以下存储库配置，以便在生成时（本地和Cloud Manager）可以解析连接器依赖项（上述）。 购买许可证后，将提供存储库访问凭据。 需要将凭据添加到服务器部分的settings.xml文件中。
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. 创建名为 `./cloudmanager/maven/settings.xml` 在项目根目录中。 要支持受密码保护的Maven存储库，请参阅 [如何设置项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). 此外，还有一个示例 `settings.xml` 文件以供参考。 最后，更新您的本地 `settings.xml` 本地编译。
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. 添加 `pom.xml` 嵌入。 添加 [!DNL Workfront for Experience Manager enhanced connector] 包到 `embeddeds` 部分 `pom.xml` 所有子项目。 需要将其嵌入到所有模块中 `pom.xml`.
 
@@ -104,6 +102,12 @@ ht-degree: 0%
       <target>/apps/<path-to-project-install-folder>/install</target>
    </embedded>
    ```
+
+   嵌入部分的目标设置为 `/apps/<path-to-project-install-folder>/install`. 此JCR路径 `/apps/<path-to-project-install-folder>` 必须包含在 `all/src/main/content/META-INF/vault/filter.xml` 文件。 存储库的筛选规则通常从程序名称派生。 在现有规则中使用文件夹的名称作为目标。
+
+1. 将更改推送到存储库。
+
+1. 运行管道以 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. 要创建系统用户配置，请创建 `wf-workfront-users` in [!DNL Experience Manager] 用户组并分配权限 `jcr:all` to `/content/dam`. 系统用户 `workfront-tools` 将自动创建，并自动管理所需的权限。 所有用户 [!DNL Workfront] 使用enhanced连接器的用户将自动添加到此组中。
 
