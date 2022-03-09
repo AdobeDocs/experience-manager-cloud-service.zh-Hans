@@ -2,9 +2,9 @@
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3678'
 ht-degree: 2%
 
 ---
@@ -406,7 +406,7 @@ When you select a form model, configure Document of Record using options availab
 
 >[!NOTE]
 >
-> 此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 以了解为环境启用该功能的信息。
+> 此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](/help/release-notes/prerelease.md#enable-prerelease) 以了解为环境启用该功能的信息。
 
 XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有一个主控的XCI文件。 您可以使用自定义XCI文件覆盖在主控XCI文件中指定的一个或多个默认属性。 例如，您可以选择将字体嵌入文档或为所有文档启用标记属性。 下表指定了XCI选项：
 
