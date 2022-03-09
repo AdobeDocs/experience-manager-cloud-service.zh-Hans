@@ -1,61 +1,62 @@
 ---
-title: 管理日志 — Cloud Service
-description: 管理日志 — Cloud Service
+title: 访问和管理日志
+description: 了解如何在AEM as a Cloud Service中访问和管理日志，以帮助您的开发流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 10%
+source-wordcount: '272'
+ht-degree: 3%
 
 ---
 
+
 # 访问和管理日志 {#manage-logs}
 
-用户可以使用&#x200B;**概述**&#x200B;页面或“环境详细信息”页面中的&#x200B;**Environments**&#x200B;卡访问选定环境的可用日志文件列表。
+了解如何在AEM as a Cloud Service中访问和管理日志，以帮助您的开发流程。
+
+您可以使用 **环境** 卡 **概述** 页面或环境详细信息页面。
 
 ## 下载日志 {#download-logs}
 
-请按照以下步骤下载日志。
+按照以下步骤下载日志。
 
-1. 从&#x200B;**Overview**&#x200B;页面导航到&#x200B;**Environments**&#x200B;卡。
+1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织和程序。
 
-1. 从&#x200B;**中选择**&#x200B;下载日志&#x200B;**..**&#x200B;菜单。
+1. 导航到 **环境** 卡 **概述** 页面。
 
-   ![](assets/download-logs1.png)
+1. 选择 **下载日志** 省略号菜单中。
 
-   *或者*,
+   ![下载日志菜单项](assets/download-logs1.png)
 
-   从环境详细信息页面：
+1. 在 **下载日志** 对话框，选择相应的 **服务** 从下拉菜单
 
-   ![](assets/download-logs.png)
+   ![“下载日志”对话框](assets/download-preview.png)
 
-   >[!NOTE]
-   >无论该日志文件在何处打开，都会显示相同的对话框，允许下载单个日志文件。
+1. 选择服务后，单击要检索的日志旁边的下载图标。
 
-1. 从&#x200B;**Service**&#x200B;下拉菜单中，选择诸如&#x200B;**Preview**&#x200B;或&#x200B;**Preview Dispatcher**&#x200B;等选项，然后单击下载图标。
+您还可以从 **环境** 页面。
 
-   ![](assets/download-preview.png)
-
+![从“环境”屏幕中记录日志](assets/download-logs.png)
 
 ## 通过API记录 {#logs-through-api}
 
-除了通过UI下载日志外，日志还可通过API和命令行界面使用。
+除了通过UI下载日志之外，还可通过API和命令行界面使用日志。
 
-例如，要下载特定环境的日志文件，该命令应是
+要下载特定环境的日志文件，该命令类似于以下内容。
 
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-以下命令允许跟踪日志：
+您还可以通过命令行界面跟踪日志。
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-为了获取环境ID（在本例中为1884）以及您可以使用的可用服务或日志名称选项：
+为了获取环境ID（本例中为1884）以及可用的服务或日志名称选项，您可以使用以下命令。
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->虽然 **日志下载** (Log Downloads **)可通过UI和API使用，但** Log Tailing（日志跟踪）是仅限API/CLI的。
 
 ### 其他资源 {#resources}
 

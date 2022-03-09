@@ -1,39 +1,44 @@
 ---
-title: 通知 — Cloud Service
-description: 通知 — Cloud Service
+title: 通知
+description: 了解如何使用Adobe Experience Cloud通知系统接收有关管道部署的信息。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
-# 了解通知 {#notifications}
+# 通知 {#notifications}
 
-[!UICONTROL Cloud ] Manager允许用户在生产部署开始时，在生产管道启动并完成（成功或失败）时接收通知。这些通知通过Adobe[!UICONTROL Experience Cloud]通知系统发送。
+[!UICONTROL Cloud Manager] 允许用户在生产部署期间，当生产管道开始和完成（成功或失败）时接收通知。
 
->[!NOTE]
->
->批准和计划通知仅发送给“业务所有者”、“项目经理”和“部署经理”角色的用户。
+这些通知通过Adobe发送 [!UICONTROL Experience Cloud] 向具有角色的用户发送通知系统 **业务所有者**, **项目经理**&#x200B;和 **部署管理器**.
 
-通知显示在[!UICONTROL Cloud Manager] UI（用户界面）的侧栏中，以及整个Adobe[!UICONTROL Experience Cloud]中。
-![](assets/notify-1.png)
+通知显示在 [!UICONTROL Cloud Manager] UI和整个Adobe [!UICONTROL Experience Cloud].
 
-单击标题中的铃铛图标以打开侧栏并查看通知，如下图所示：
+![菜单栏中的“通知”图标](assets/notify-1.png)
 
-![](assets/notify-2.png)
+当有新通知时，铃铛图标出现标记。 单击该面板可打开一个面板以查看通知。
 
-侧栏列出了最新通知。
+![查看通知](assets/notify-2.png)
 
+该面板仅列出最新通知。 单击 **查看全部** 来查看所有通知。
 
-## 电子邮件通知{#email-notifications}
+## 电子邮件通知 {#email-notifications}
 
-默认情况下，Web用户界面中可以跨Adobe[!UICONTROL Experience Cloud]解决方案发送通知。 个人用户还可以选择立即或摘要方式通过电子邮件发送这些通知。
+默认情况下，通知可在跨Adobe的用户界面中使用 [!UICONTROL Experience Cloud] 解决方案。 个人用户也可以选择按照以下步骤通过电子邮件发送这些通知。
 
-这会将用户带到Adobe[!UICONTROL Experience Cloud]中的“通知首选项”屏幕。
+1. 单击铃铛图标以显示通知。
+1. 单击 **编辑首选项** 图标（形状类似齿轮）。
+1. 在打开的窗口中，单击 **通知** 中。
+   ![编辑首选项窗口](assets/notification-preferences.png)
+1. 向下滚动到 **电子邮件** 标题。
+   ![电子邮件选项](assets/email-preferences.png)
+1. 选择接收电子邮件的方式。
+   * 不发送电子邮件（默认）
+   * 即时通知
+   * 每日摘要
+   * 每周摘要
 
-用户可以打开电子邮件通知，（可选）选择要通过电子邮件接收的通知类型。
-
->[!NOTE]
->您还可以从Adobe[!UICONTROL Experience Cloud]启用消化功能。
+进行选择后，您的选择将自动保存，而无需单击保存或应用按钮。

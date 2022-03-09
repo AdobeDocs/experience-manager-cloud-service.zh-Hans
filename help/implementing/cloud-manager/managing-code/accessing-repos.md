@@ -1,45 +1,42 @@
 ---
 title: 访问存储库
-seo-title: Accessing Repositories
-description: 本页介绍如何访问和管理Git存储库。
-seo-description: Follow this page to learn how to access and manage your Git repository.
+description: 了解如何使用Cloud Manager中的自助式git帐户管理来访问和管理您的git存储库。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
+source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '229'
+ht-degree: 1%
 
 ---
 
 # 访问存储库 {#accessing-repos}
 
-您可以使用Cloud Manager UI中的Git自助服务帐户管理来访问和管理Git存储库。
+了解如何使用Cloud Manager中的自助式git帐户管理来访问和管理您的git存储库。
 
 ## 使用自助存储库帐户管理 {#self-service-repos}
 
-使用Cloud Manager UI中提供的&#x200B;**访问存储库信息**&#x200B;按钮，其中最突出的是管道卡。
+Cloud Manager允许您轻松地使用 **访问存储库信息** 按钮。
 
-1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**Pipelines**&#x200B;卡。
+1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织和程序。
 
-1. 您将查看&#x200B;**访问存储库信息**&#x200B;选项，以访问和管理您的Git存储库。
+1. 导航到 **管道** 卡片 **计划概述** 页面并查找 **访问存储库信息** 按钮以访问和管理您的git存储库。
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![“环境”卡上的“访问Repo信息”按钮](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   此外，如果选择&#x200B;**非生产**&#x200B;管道选项卡，您还将在此处查看&#x200B;**访问存储库信息**&#x200B;选项。
+1. 单击 **查看存储库信息** 按钮以打开要查看的对话框：
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >在“开发人员”或“部署管理器”角色中，用户可以看到&#x200B;**访问存储库信息**&#x200B;选项。 单击此按钮会打开一个对话框，通过该对话框，用户可以查找其Cloud Manager Git存储库的URL及其用户名和密码。
+   * 指向Cloud Manager git存储库的URL。
+   * git用户名。
+   * git密码，其值在 **生成密码** 按钮。
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   在Cloud Manager中管理Git的重要注意事项包括：
+使用这些凭据，用户可以克隆存储库的本地副本，并在该本地存储库中进行更改，准备就绪后，可以将任何代码更改提交回Cloud Manager中的远程代码存储库。
 
-   * **URL**:存储库URL
-   * **用户名**:用户名
-   * **密码**:单击“生成口令 **”按钮时显示** 的值。
+的 **访问存储库信息** 选项 **非生产** 管道选项卡 **管道** 卡。
 
+![“访问存储库信息”按钮（位于非生产选项卡中）](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >用户可以签出其代码的副本，并在本地代码存储库中进行更改。 准备就绪后，用户可以将其代码更改提交回Cloud Manager中的远程代码存储库。
+>[!NOTE]
+>
+>的 **访问存储库信息** 选项对具有 **开发人员** 或 **部署管理器** 角色。

@@ -1,67 +1,70 @@
 ---
-title: 体验审核测试 — Cloud Services
-description: 体验审核测试 — Cloud Services
+title: 体验审核测试
+description: 了解体验审核如何验证您的部署流程，并帮助确保部署的更改符合性能、辅助功能、最佳实践和SEO的基准标准。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 0%
+source-wordcount: '536'
+ht-degree: 1%
 
 ---
 
-# 体验审核测试{#experience-audit-testing}
+
+# 体验审核测试 {#experience-audit-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_expaudittesting"
 >title="体验审核测试"
->abstract="体验审核是Cloud Manager Sites Production Pipelines中提供的一项功能，由Google Lighthouse（Google的开源工具）提供支持。 此功能在所有Cloud Manager Production管道中都已启用。"
+>abstract="了解体验审核如何验证您的部署流程，并帮助确保部署的更改符合性能、辅助功能、最佳实践和SEO的基准标准。"
 
-体验审核是Cloud Manager Sites Production Pipelines中提供的一项功能，由Google Lighthouse（Google的开源工具）提供支持。 此功能在所有Cloud Manager Production管道中都已启用。
+了解体验审核如何验证您的部署流程，并帮助确保部署的更改符合性能、辅助功能、最佳实践和SEO的基准标准。
 
-它将验证部署流程并帮助确保部署了以下更改：
+## 概述 {#overview}
+
+体验审核是Cloud Manager Sites生产管道中提供的一项功能，可验证部署流程并帮助确保部署更改：
 
 1. 符合性能、辅助功能、最佳实践、SEO（搜索引擎优化）和PWA（渐进式Web应用程序）的基准标准。
 
-1. 请勿在这些维度中包含回归。
+1. 不要引入回归。
 
-Cloud Manager中的体验审核可确保最终用户在网站上的数字体验可以按照最高标准进行维护。 结果是信息性的，允许用户查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否引入回归参数非常有价值。
+Cloud Manager中的体验审核可确保最终用户在网站上的体验符合最高标准。
 
-## 了解体验审核结果{#understanding-experience-audit-results}
+审核结果是信息性的，它允许部署管理器查看当前得分和先前得分之间的变化。 此洞察对于确定当前部署中是否引入回归参数非常有价值。
 
-体验审核通过生产管道执行页面提供汇总的详细页面级测试结果。
+Experience Audit由Google Lighthouse提供支持，Google提供的一款开源工具，在所有Cloud Manager生产管道中均启用。
 
-* 汇总级别量度测量经过审核的页面中的平均分数，这些分数旨在获取性能、辅助功能、最佳实践、SEO（搜索引擎优化）。
-   >[!NOTE]
-   >渐进式Web应用程序(PWA)分数未包含在摘要分数中，并且只会显示在页面级别的报表详细信息屏幕中。
+## 了解体验审核结果 {#understanding-experience-audit-results}
+
+体验审核通过 [生产管道执行页面。](/help/implementing/cloud-manager/deploy-code.md)
+
+* 聚合量度衡量经过审核的页面中的平均分数，这些分数是为了获得性能、辅助功能、最佳实践、SEO（搜索引擎优化）。
 * 单个页面级别的得分也可通过向下钻取获得。
-* 可以使用得分的详细信息来查看各个测试的结果，以及有关如何修正在体验审核期间发现的任何问题的指导。
-* 测试结果的历史记录将保留在Cloud Manager中，以便客户能够查看在管道运行中引入的更改是否包含来自上次运行的任何回归。
+* 有关分数的详细信息，可查看各个测试的结果，以及有关如何修正已识别的任何问题的指导。
+* 测试结果的历史记录将保留在Cloud Manager中，用于确定管道中引入的更改是否包含来自上次运行的任何回归。
 
-### 总分{#aggregate-scores}
-
-每种测试类型（如性能、辅助功能、SEO和最佳实践）都有一个汇总级别得分。
->[!NOTE]
->渐进式Web应用程序(PWA)分数未包含在摘要分数中，并且只会显示在页面级别的报表详细信息屏幕中。
+### 总分 {#aggregate-scores}
 
 聚合级别分数采用运行中包含的页面的平均分数。 聚合级别的更改表示当前运行中页面的平均分数与上次运行中得分的平均值，即使配置为包含的页面集合在两次运行之间发生了更改也是如此。
 
-“更改值”量度可以是以下量度之一：
+每种测试类型（如性能、辅助功能、SEO和最佳实践）都有一个汇总级别得分。
 
-* **正值**  — 自上次生产管道运行以来，所选测试中的页面已得到改进
+更改量度可以具有以下值之一。
 
-* **负值**  — 自上次生产管道运行以来，页面在所选测试中已回调
+* **正值**  — 自上次运行生产管道以来，所选测试的页面已得到改进。
 
-* **无更改**  — 自上次运行生产管道以来，页面的得分相同
+* **负值**  — 自上次生产管道运行以来，页面在所选测试中出现了倒退。
 
-* **不适用**  — 之前没有可供比较的得分
+* **无更改**  — 自上次运行生产管道以来，页面的得分相同。
 
-   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+* **不适用**  — 之前没有可供比较的得分。
+
+![体验审核结果](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 
-### 页面级别得分{#page-level-scores}
+### 页面级别得分 {#page-level-scores}
 
-通过深入任何测试，可以查看更详细的页面级别评分。 用户将能够查看各个页面对特定测试的得分情况以及与上次运行测试时相比的变化。
+通过深入任何测试，可获得更详细的页面级别评分。 您可以查看各个页面对特定测试的得分情况，以及与上次测试运行相比的更改。
 
-单击任意单个页面的详细信息将提供有关已评估页面元素的信息，并在检测到改进机会时提供修复问题的指导。 Google Lighthouse提供了测试和相关指导的详细信息。
+单击任意单个页面的详细信息可提供有关已评估页面元素的信息，并在检测到改进机会时提供修复问题的指导。
 
-![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
+![页面级别得分](/help/implementing/cloud-manager/assets/exp-audit-2.png)

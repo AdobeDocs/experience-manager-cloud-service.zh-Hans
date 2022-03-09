@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 100%
+source-wordcount: '3419'
+ht-degree: 99%
 
 ---
 
@@ -641,17 +641,17 @@ ht-degree: 100%
          + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 创建 AEM 应用程序项目 {#create-application-project}
-         + [使用向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [设置项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [了解生成环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理代码 {#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager 中的存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [将 Git 与 Adobe Cloud Manager 集成](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [使用多个源 Git 存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [AEM as a Cloud Service 的企业团队开发设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [在Cloud Manager中使用Git](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [环境变量](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -668,8 +668,8 @@ ht-degree: 100%
          + [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
       + [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
-      + [用户对 New Relic 的访问权限](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [了解通知](/help/implementing/cloud-manager/notifications.md)
+      + [新遗迹一号](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [通知](/help/implementing/cloud-manager/notifications.md)
       + 管理 SSL 证书 {#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [获取 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)

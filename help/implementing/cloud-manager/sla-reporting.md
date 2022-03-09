@@ -1,51 +1,51 @@
 ---
-title: SLA报告 — Cloud Service
-description: SLA报告 — Cloud Service
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+title: SLA 报告
+description: 了解如何查看生产AEM环境相对于已签订合同的服务级别协议(SLA)的性能。
+exl-id: 03932415-a029-4703-b44a-f86a87edb328
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 0%
+source-wordcount: '248'
+ht-degree: 2%
 
 ---
 
-# SLA报告 {#sla-reporting}
 
-请阅读以下各节，了解AEMas a Cloud Service中的SLA报告。
+# SLA 报告 {#sla-reporting}
+
+了解如何查看生产AEM环境相对于已签订合同的服务级别协议(SLA)的性能。
 
 ## 简介 {#introduction}
 
-客户能够看到其生产AEM环境相对于其合同的服务级别协议(SLA)的性能。 可通过“报表”选项卡上的菜单进行访问，可从主标题访问该菜单。
+SLA报告数据可通过 **报表** 选项卡。 请按照以下步骤访问。
 
-请参阅以下示例，该图显示了2021年的月度SLA达到情况。
+1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织和程序。
 
-![](assets/sla-reporting-1.png)
+1. 导航到 **报表** 选项卡 **概述** 页面。
 
+1. 单击所需的年份，以查看绘制的SLA数据图。
 
-滚动到数据点会显示该月的特定值。
+![SLA图示例](assets/sla-reporting-1.png)
 
-![](assets/sla-reporting-b.png)
+将光标置于数据点上以显示该点的特定值。
 
->[!NOTE]
->这些报表将逐步提供给客户。 如果在主导航中未看到“报表”选项，请联系您的Adobe代表以了解何时提供您的报表。
-
-此图表下的“事件分析”部分显示在当前选定年份中针对该程序发生的事件集。
-
-每个事件都有一个时间范围、原因和一组注释，如下图所示。
-
-![](assets/sla-reporting-c.png)
-
+![显示详细数据](assets/sla-reporting-b.png)
 
 ## SLA量度 {#sla-metrics}
 
-* **发布层合**
-同这是在您与发布层Adobe签订的合同中定义的SLA。
+选定年份的图表包含许多数据集。
 
-* **发布层实**
-际值这是由Adobe或我们的供应商造成的生产发布层保理事件的测量正常运行时间。
+* **发布层合同**  — 这是您与发布层Adobe签订的合同中定义的SLA。
 
-* **创作**
-层合同这是在您的合同中为创作层定义的与Adobe的SLA。
+* **发布层实际**  — 这是由Adobe或Adobe供应商导致的生产发布层保理事件的正常运行时间。
 
-* **创作层实**
-际值这是由Adobe或我们的供应商造成的生产创作层保理事件的测量正常运行时间。
+* **创作层合同**  — 这是您与创作层Adobe签订的合同中定义的SLA。
 
+* **创作层实际值**  — 这是由Adobe或Adobe供应商导致的生产创作层保理事件的正常运行时间。
+
+## 事件分析 {#event-analysis}
+
+的 **事件分析** 图表下的部分显示选定年份中针对该程序发生的事件集。
+
+每个事件都有一个时间范围、原因和一组评论。
+
+![事件分析示例](assets/sla-reporting-c.png)
