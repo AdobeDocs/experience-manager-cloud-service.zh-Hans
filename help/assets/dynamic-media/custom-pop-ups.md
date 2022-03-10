@@ -1,17 +1,17 @@
 ---
 title: 使用 Quickview 创建自定义弹出窗口
-description: “了解在电子商务体验中如何使用默认的概览，在该体验中会显示一个弹出窗口，其中包含产品信息以促进购买。 您可以触发要在弹出窗口Windows®中显示的自定义内容。”
+description: “了解在电子商务体验中如何使用默认的概览，在该体验中会显示一个弹出窗口，其中包含产品信息以促进购买。 您可以触发要在弹出窗口中显示的自定义内容。”
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 2%
+source-wordcount: '1002'
+ht-degree: 3%
 
 ---
 
-# 使用概览创建自定义弹出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
+# 使用 Quickview 创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 
 默认的概览用于电子商务体验，其中会显示一个弹出窗口，其中包含产品信息以促进购买。 但是，您可以触发要在弹出窗口中显示的自定义内容。 根据您使用的查看器，客户可以选择热点、缩略图或图像映射，以查看信息或相关内容。
 
@@ -23,11 +23,11 @@ Dynamic Media中的以下查看器支持快速查看：
 
 虽然每个查看器的功能不同，但在所有三个受支持的查看器中，创建概览的过程都是相同的。
 
-**要使用概览创建自定义弹出窗口Windows®，请执行以下操作：**
+**要使用概览创建自定义弹出窗口，请执行以下操作：**
 
 1. 为上传的资产创建概览。
 
-   通常，在编辑资产以用于所使用的查看器的同时，会创建一个概览。
+   您通常会在编辑资产以用于所使用的查看器的同时创建概览。
 
    <table>
     <tbody>
