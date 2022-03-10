@@ -2,13 +2,13 @@
 title: 配置非生产管道
 description: 了解如何在部署到生产环境之前配置非生产管道以测试代码质量。
 index: true
-source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
+source-wordcount: '1058'
+ht-degree: 0%
 
 ---
-
 
 # 配置非生产管道 {#configuring-non-production-pipelines}
 
@@ -47,12 +47,6 @@ ht-degree: 1%
 
       * **手动**  — 使用此选项手动启动管道。
       * **在Git更改时**  — 只要将提交添加到配置的git分支，此选项就会启动CI/CD管道。 通过此选项，您仍可以根据需要手动启动管道。
-   * **重要量度失败行为**  — 在管道设置或编辑期间， **部署管理器** 具有在任何质量门中遇到重要故障时定义管道行为的选项。 您可以选择以下选项.
-
-      * **每次提问**  — 这是默认设置，需要对任何重要故障进行手动干预。
-      * **立即失败**  — 如果选中，则每当发生重要故障时，将取消管道。 这实质上是在模拟用户手动拒绝每个故障。
-      * **立即继续**  — 如果选中，则每当发生重要故障时，管道将自动继续。 这实质上是在模拟用户手动批准每次失败。
-
 
 1. 单击 **继续**.
 
