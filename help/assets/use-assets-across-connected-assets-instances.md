@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 9f90c343aad8a8eaa8624d388e31ad21ef5c02f6
+source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
 workflow-type: tm+mt
 source-wordcount: '3770'
 ht-degree: 16%
@@ -249,45 +249,65 @@ Experience Manager显示 `expired` 远程资产内容查找器中资产状态可
 
 ## 常见问题解答 {#frequently-asked-questions}
 
-### 如果您需要使用 [!DNL Sites] 部署？
++++**如果您需要使用 [!DNL Sites] 部署？**
 
 在这种情况下，无需配置“连接的资产”。 您可以在 [!DNL Sites] 部署。
 
-### 您何时需要配置“连接的资产”功能？
++++
+
++++**您何时需要配置“连接的资产”功能？**
 
 仅当您需要使用 [!DNL Sites] 部署。
 
-### 多少 [!DNL Sites] 部署在配置“连接的资产”后，是否可以连接到远程DAM部署？
++++
+
++++**多少 [!DNL Sites] 部署在配置“连接的资产”后，是否可以连接到远程DAM部署？**
 
 最多可连接4个 [!DNL Sites] 部署到远程DAM部署。 有关更多信息，请参阅 [连接的资产架构](#connected-assets-architecture).
 
-### 您可以连接多少个远程DAM部署 [!DNL Sites] 是否在配置连接的资产后进行部署？
++++
+
++++**您可以连接多少个远程DAM部署 [!DNL Sites] 是否在配置连接的资产后进行部署？**
 
 您可以将一个远程DAM部署连接到 [!DNL Sites] 配置连接的资产后进行部署。 有关更多信息，请参阅 [连接的资产架构](#connected-assets-architecture).
 
-### 能否从 [!DNL Sites] 是否在配置连接的资产后进行部署？
++++
+
++++**能否从 [!DNL Sites] 是否在配置连接的资产后进行部署？**
 
 配置连接的资产后， [!DNL Dynamic Media] 资产可用于 [!DNL Sites] 以只读模式部署。 因此，您无法使用 [!DNL Dynamic Media] 处理 [!DNL Sites] 部署。 有关更多信息，请参阅 [在Sites与Dynamic Media部署之间配置连接](#dynamic-media-assets).
 
-### 能否在 [!DNL Sites] 是否在配置连接的资产后进行部署？
++++
+
++++**能否在 [!DNL Sites] 是否在配置连接的资产后进行部署？**
 
 是，您可以在 [!DNL Sites] 配置连接的资产后进行部署。
 
-### 能否在 [!DNL Sites] 是否在配置连接的资产后进行部署？
++++
+
++++**能否在 [!DNL Sites] 是否在配置连接的资产后进行部署？**
 
 不能，您不能在 [!DNL Sites] 配置连接的资产后进行部署。
 
-### 能否在上的远程DAM部署中使用Dynamic Media资产 [!DNL Sites] 是否在配置连接的资产后进行部署？
++++
+
++++**能否在上的远程DAM部署中使用Dynamic Media资产 [!DNL Sites] 是否在配置连接的资产后进行部署？**
 
 能，您可以在 [!DNL Sites] 配置连接的资产后进行部署。 有关更多信息，请参阅 [在Sites与Dynamic Media部署之间配置连接](#dynamic-media-assets).
 
-### 配置连接的资产后，能否对远程DAM资产或文件夹执行更新、删除、重命名和移动操作？
++++
+
++++**配置连接的资产后，能否对远程DAM资产或文件夹执行更新、删除、重命名和移动操作？**
 
 是，在配置连接的资产后，您可以对远程DAM资产或文件夹执行更新、删除、重命名和移动操作。 相关更新会在 Sites 部署中自动提供，但会有一些延迟。有关更多信息，请参阅 [管理远程DAM中资产的更新](#handling-updates-to-remote-assets).
 
-### 配置连接的资产后，您可以在 [!DNL Sites] 部署，并在远程DAM部署中使用？
++++
+
++++**配置连接的资产后，您可以在 [!DNL Sites] 部署，并在远程DAM部署中使用？**
 
 您可以将资产添加到 [!DNL Sites] 但是，无法将这些资产用于远程DAM部署。
+
++++
 
 
 ## 限制和最佳实践 {#tip-and-limitations}
