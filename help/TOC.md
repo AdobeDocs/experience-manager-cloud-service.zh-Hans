@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 279b263b72f8b99aed3fb55c7625a3b54dd6a370
 workflow-type: tm+mt
 source-wordcount: '3428'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -645,13 +645,13 @@ ht-degree: 98%
       + 创建 AEM 应用程序项目 {#create-application-project}
          + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [生成环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理代码 {#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager 中的存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [在Cloud Manager中使用Git](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [将 git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [环境变量](/help/implementing/cloud-manager/environment-variables.md)
@@ -670,7 +670,7 @@ ht-degree: 98%
          + [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
       + [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
-      + [新遗迹一号](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + 管理 SSL 证书 {#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
