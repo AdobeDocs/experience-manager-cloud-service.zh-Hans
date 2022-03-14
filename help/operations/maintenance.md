@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
+source-git-commit: cd48b78383974027d8980397632c395a5958edbf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## 配置维护任务
 
-在AEM的早期版本中，您可以使用维护卡（工具>操作>维护）配置维护任务。 对于AEMas a Cloud Service，维护卡不再可用，因此应将配置提交到源控件并使用Cloud Manager进行部署。 Adobe将管理不需要客户决策的维护任务（例如，数据存储垃圾收集），而客户可以配置其他维护任务（请参阅下表）。
+在AEM的早期版本中，您可以使用维护卡（工具>操作>维护）配置维护任务。 对于AEMas a Cloud Service，维护卡不再可用，因此应将配置提交到源控件并使用Cloud Manager进行部署。 Adobe会管理那些具有客户无法配置的设置的维护任务（例如，数据存储垃圾收集、审核日志清除、版本清除）。 其他维护任务可由客户配置，如下表所述。
 
 >[!CAUTION]
 >
@@ -56,14 +56,22 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>完全由Adobe拥有，但将来，客户将能够配置某些参数。</td>
+    <td>为了使创作层保持性能， <code>/content</code> 将根据以下行为清除存储库的节点：<br><ol>
+  <li>30天以上的版本将被删除</li>
+  <li>过去30天中最新的5个版本将保留</li>
+  <li>无论上述规则如何，都会保留最新版本。</li>
+</ol><br>注意：自2022年3月14日起，上述行为将对新环境强制执行，并将于2022年4月21日对现有环境（那些是在2022年3月14日之前创建的环境）强制执行。</td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
     <td>Adobe</td>
-    <td>完全由Adobe拥有，但将来，客户将能够配置某些参数。</td>
-  </td>
+    <td>为了使创作层保持性能， <code>/content</code> 将根据以下行为清除存储库的节点：<br><ol>
+  <li>对于复制审核，将删除3天以前的审核日志</li>
+  <li>对于DAM（资产）审核，将删除超过30天的审核日志</li>
+  <li>对于页面审核，将删除3天以前的日志。<br></li>
+</ol><br>注意：自2022年3月14日起，上述行为将对新环境强制执行，并将于2022年4月21日对现有环境（那些是在2022年3月14日之前创建的环境）强制执行。</td>
+   </td>
   </tr>
   <tr>
     <td>Lucene 二进制文件清理</td>
