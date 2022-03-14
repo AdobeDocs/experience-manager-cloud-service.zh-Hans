@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
+source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2306'
 ht-degree: 2%
 
 ---
@@ -158,6 +158,8 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 客户可以在创作层的开发环境中访问CRXDE lite，但不能在暂存或生产环境中访问。 不可变存储库(`/libs`, `/apps`)无法在运行时写入，因此尝试执行此操作将导致错误。
 
+相反，可以从开发人员控制台启动存储库浏览器，为创作层、发布层和预览层上的所有环境提供对存储库的只读视图。 阅读有关存储库浏览器的更多信息 [此处](/help/implementing/developing/tools/repository-browser.md).
+
 开发人员控制台中提供了一组用于调试AEMas a Cloud Service开发人员环境的工具，可用于开发、暂存和生产环境。 可通过调整创作或发布服务URL来确定该URL，如下所示：
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
@@ -184,11 +186,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于生产程序，开发人员控制台的访问权限由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙盒程序，任何具有产品配置文件且有权访问AEMas a Cloud Service的用户都可以使用开发人员控制台。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义用户，才能查看两个服务中的状态转储数据。 有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-### AEM Staging和Production Service {#aem-staging-and-production-service}
-
-客户将无法访问用于暂存和生产环境的开发人员工具。
+对于生产程序，开发人员控制台的访问权限由Admin Console中的“云管理器 — 开发人员角色”定义，而对于沙盒程序，任何具有产品配置文件且有权访问AEMas a Cloud Service的用户都可以使用开发人员控制台。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义存储库浏览器和用户，才能查看两项服务的数据。 有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### 性能监控 {#performance-monitoring}
 
