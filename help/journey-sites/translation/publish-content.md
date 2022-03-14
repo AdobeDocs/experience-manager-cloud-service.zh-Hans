@@ -4,13 +4,13 @@ description: 了解如何在内容更新时发布翻译内容和更新翻译。
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 0%
 
 ---
-
 
 # 发布翻译后的内容 {#publish-content}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM Sites翻译历程的上一个文档[翻译内容](configure-connector.md)中，您学习了如何使用AEM翻译项目来翻译内容。 您现在应该：
+在AEM Sites翻译历程的上一个文档中， [翻译内容、](configure-connector.md) 您学习了如何使用AEM翻译项目来翻译您的内容。 您现在应该：
 
 * 了解翻译项目是什么。
 * 能够创建新的翻译项目。
@@ -43,10 +43,10 @@ ht-degree: 0%
 
 因此，AEM将实际分为两个实例。
 
-1. **author**&#x200B;实例是内容作者和管理员在其中创建和管理内容的系统。
-1. **publish**&#x200B;实例是将内容交付给用户的系统。
+1. 的 **作者** 实例是内容作者和管理员创建和管理内容的系统。
+1. 的 **发布** 实例是向用户交付内容的系统。
 
-在创作实例上创建内容后，必须将其传输到发布实例，才能供使用。 从创作到发布的转移过程称为&#x200B;**publication**。
+在创作实例上创建内容后，必须将其传输到发布实例，才能供使用。 从作者转移到发布的过程称为 **出版物**.
 
 ## 发布翻译内容 {#publishing}
 
@@ -66,13 +66,13 @@ ht-degree: 0%
 
 在此路径下，您拥有每个翻译语言的子文件夹，并可以选择要发布的。
 
-1. 转到&#x200B;**Navigation** -> **Sites** -> **Files**&#x200B;并打开项目文件夹。
+1. 转到 **导航** -> **站点** -> **文件** 并打开项目文件夹。
 1. 此处显示语言根文件夹和所有其他语言文件夹。 选择要发布的本地化语言。
    ![选择语言文件夹](assets/select-language-folder.png)
-1. 点按或单击&#x200B;**管理发布**。
-1. 在&#x200B;**管理发布**&#x200B;窗口中，确保在&#x200B;**操作**&#x200B;下自动选择&#x200B;**发布**，并在&#x200B;**计划**&#x200B;下选择&#x200B;**Now**。 单击或点按&#x200B;**下一步**。
+1. 点按或单击 **管理发布**.
+1. 在 **管理发布** 窗口，确保 **发布** 在下自动选择 **操作** 和 **现在** 在下选择 **计划**. 单击或点按&#x200B;**下一步**。
    ![管理发布选项](assets/manage-publication-options.png)
-1. 在下一个&#x200B;**管理发布**&#x200B;窗口中，确认已选择/已选择正确的路径。 点按或单击&#x200B;**发布**。
+1. 下一步 **管理发布** ，请确认已选择正确的路径。 点按或单击 **发布**.
    ![管理发布范围](assets/manage-publication-scope.png)
 1. AEM会在屏幕底部显示一条弹出消息，以确认发布操作。
    ![资源已发布的横幅](assets/resources-published-message.png)
@@ -83,7 +83,7 @@ ht-degree: 0%
 >
 >发布时，您可以选择多个项目（即多个语言文件夹），以便一次发布多个翻译。
 
-发布内容时还有其他选项，例如计划发布时间，这些选项不在此历程的范围之内。 有关详细信息，请参阅文档末尾的[其他资源](#additional-resources)部分。
+发布内容时还有其他选项，例如计划发布时间，这些选项不在此历程的范围之内。 请参阅 [其他资源](#additional-resources) 文档末尾的部分以了解详细信息。
 
 ## 更新翻译的内容 {#updating-translations}
 
@@ -95,21 +95,21 @@ ht-degree: 0%
 
 ### 更新自动创建的翻译项目 {#updating-automatic-project}
 
-1. 导航到&#x200B;**导航** -> **资产** -> **文件**。 请记住，AEM中的内容存储在`/content`下。
-1. 选择项目的语言根。 在本例中，我们选择了`/content/wknd/en`。
-1. 点按或单击边栏选择器，并显示&#x200B;**引用**&#x200B;面板。
-1. 点按或单击&#x200B;**语言副本**。
-1. 选中&#x200B;**语言副本**&#x200B;复选框。
-1. 展开引用面板底部的&#x200B;**更新语言副本**&#x200B;部分。
-1. 在&#x200B;**项目**&#x200B;下拉列表中，选择&#x200B;**添加到现有翻译项目**。
-1. 在&#x200B;**现有翻译项目**&#x200B;下拉列表中，选择为初始翻译创建的项目。
-1. 点按或单击&#x200B;**Update**。
+1. 导航到 **导航** -> **资产** -> **文件**. 请记住，AEM中的内容存储在 `/content`.
+1. 选择项目的语言根。 在本例中，我们已选择 `/content/wknd/en`.
+1. 点按或单击边栏选择器，并显示 **引用** 的上界。
+1. 点按或单击 **语言副本**.
+1. 检查 **语言副本** 复选框。
+1. 展开部分 **更新语言副本** 的双曲余切值。
+1. 在 **项目** 下拉列表，选择 **添加到现有翻译项目**.
+1. 在 **现有翻译项目** 下拉列表，选择为初始翻译创建的项目。
+1. 点按或单击 **更新**.
 
 ![将项目添加到现有翻译项目](assets/add-to-existing-project.png)
 
 内容会添加到现有翻译项目。 要查看翻译项目，请执行以下操作：
 
-1. 导航到&#x200B;**Navigation** -> **Projects**。
+1. 导航到 **导航** -> **项目**.
 1. 点按或单击您刚刚更新的项目。
 1. 点按或单击您更新的语言之一。
 
@@ -119,37 +119,37 @@ ht-degree: 0%
 
 您可能会注意到新卡上列出的统计信息不同。 这是因为AEM可识别自上次翻译后发生的更改，并且仅包含需要翻译的内容。 这包括对更新内容进行重新翻译，以及首次翻译新内容。
 
-从这一刻起，您[开始并管理翻译作业，就像您对原作一样。](translate-content.md#using-translation-project)
+从此，你 [像原稿一样，开始并管理翻译作业。](translate-content.md#using-translation-project)
 
 ### 更新手动创建的翻译项目 {#updating-manual-project}
 
 要更新翻译，您可以向现有项目添加新作业，该作业负责翻译更新的内容。
 
-1. 导航到&#x200B;**Navigation** -> **Projects**。
+1. 导航到 **导航** -> **项目**.
 1. 点按或单击您需要更新的项目。
-1. 点按或单击窗口顶部的&#x200B;**Add**&#x200B;按钮。
-1. 在&#x200B;**添加磁贴**&#x200B;窗口中，点按或单击&#x200B;**翻译作业**，然后单击&#x200B;**提交**。
+1. 点按或单击 **添加** 按钮。
+1. 在 **添加拼贴** 窗口，点按或单击 **翻译作业** 然后 **提交**.
 
    ![添加拼贴](assets/add-translation-job-tile.png)
 
-1. 在新翻译作业的卡片上，点按或单击卡片顶部的V形按钮，然后选择&#x200B;**更新Target**&#x200B;以定义新作业的目标语言。
+1. 在新翻译作业的卡片上，点按或单击卡片顶部的V形按钮，然后选择 **更新Target** 定义新作业的目标语言。
 
    ![更新目标](assets/update-target.png)
 
-1. 在&#x200B;**选择目标语言**&#x200B;对话框中，使用下拉菜单选择语言，然后点按或单击&#x200B;**完成**。
+1. 在 **选择目标语言** 对话框中，使用下拉菜单选择语言，然后点按或单击 **完成**.
 
    ![选择目标语言](assets/select-target-language.png)
 
 1. 设置新翻译作业的目标语言后，点按或单击作业卡片底部的省略号按钮以查看作业的详细信息。
-1. 首次创建时，作业为空。 通过点按或单击&#x200B;**Add**&#x200B;按钮，并使用路径浏览器[向作业中添加内容，这与最初创建翻译项目时的操作相同。](translate-content.md##manually-creating)
+1. 首次创建时，作业为空。 通过点按或单击 **添加** 按钮和使用路径浏览器 [与最初创建翻译项目时一样。](translate-content.md##manually-creating)
 
 >[!TIP]
 >
 >路径浏览器功能强大的过滤器对于仅查找已更新的内容同样非常有用。
 >
->您可以在[其他资源部分中了解有关路径浏览器的更多信息。](#additional-resources)
+>您可以在 [其他资源部分。](#additional-resources)
 
-从这一刻起，您[开始并管理翻译作业，就像您对原作一样。](translate-content.md#using-translation-project)
+从此，你 [像原稿一样，开始并管理翻译作业。](translate-content.md#using-translation-project)
 
 ## 历程结束？ {#end-of-journey}
 
@@ -159,11 +159,11 @@ ht-degree: 0%
 * 了解AEM翻译功能及其与网站内容的相关性。
 * 能够开始翻译您自己的内容。
 
-现在，您可以在AEM中翻译自己的内容。 但是，AEM是一款功能强大的工具，还有许多其他选项可供使用。 查看[其他资源部分](#additional-resources)中提供的一些其他资源，了解有关您在此历程中看到的功能的更多信息。
+现在，您可以在AEM中翻译自己的内容。 但是，AEM是一款功能强大的工具，还有许多其他选项可供使用。 请查看 [“其他资源”部分](#additional-resources) 以进一步了解您在此历程中看到的功能。
 
 ## 其他资源 {#additional-resources}
 
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)  — 了解翻译项目和其他功能（如人文翻译工作流和多语言项目）的详细信息。
-* [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)  — 更详细地了解AEM的创作和发布模型。本文档重点介绍页面创作，而不是内容片段，但该理论仍适用。
-* [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — 了解发布内容时可用的其他功能。本文档重点介绍页面创作，而不是内容片段，但该理论仍适用。
-* [创作环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)  - AEM提供了各种可用于组织和编辑内容的机制，包括强大的路径浏览器。
+* [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)  — 更详细地了解AEM的创作和发布模型。 本文档重点介绍页面创作，而不是内容片段，但该理论仍适用。
+* [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — 了解发布内容时可用的其他功能。 本文档重点介绍页面创作，而不是内容片段，但该理论仍适用。
+* [创作环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM提供了各种可用于组织和编辑内容的机制，包括强大的路径浏览器。

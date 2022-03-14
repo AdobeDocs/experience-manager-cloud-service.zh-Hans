@@ -156,7 +156,7 @@ ht-degree: 100%
 
 1. 选定的组件将添加到页面底部。根据需要[编辑](#edit-content)组件。
 
-### 使用资产浏览器插入组件  {#inserting-a-component-using-the-assets-browser}
+### 使用资产浏览器插入组件 {#inserting-a-component-using-the-assets-browser}
 
 您还可以通过从[资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)拖动资产来向页面添加新组件。这将自动创建相应类型的新组件（并且包含资产）。
 
@@ -269,7 +269,7 @@ ht-degree: 100%
 * 打开[组件编辑对话框](#component-edit-dialog)。
 * 通过从资产浏览器中[拖放资产](#drag-and-drop-assets-into-component)来直接添加内容。
 
-### 组件编辑对话框  {#component-edit-dialog}
+### 组件编辑对话框 {#component-edit-dialog}
 
 您可以打开一个组件以使用[组件工具栏的编辑（铅笔）图标](#component-toolbar)来编辑内容。
 
@@ -391,9 +391,9 @@ ht-degree: 100%
 
 您可以通过在[“页面信息”菜单](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)中选择&#x200B;**编辑模板**&#x200B;来轻松切换到[模板编辑器](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors)。
 
-您在[列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)或[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)中选择页面时，可以轻松地查看该页面所基于的模板。
+在列视图或列表视图中选择页面时，您可以轻松查看该页面所基于 [的模](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)[板](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)。
 
-## Live Copy 状态  {#live-copy-status}
+## Live Copy 状态 {#live-copy-status}
 
 [“Live Copy 状态”页面模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)允许快速查看 Live Copy 状态以及继承/未继承的组件。
 
@@ -408,7 +408,7 @@ ht-degree: 100%
 
 [注释](/help/sites-cloud/authoring/fundamentals/annotations.md)允许审核者和其他作者对内容提出反馈。该功能通常作审核和验证之用。
 
-## 预览页面  {#previewing-pages}
+## 预览页面 {#previewing-pages}
 
 可通过以下两个选项预览页面：
 

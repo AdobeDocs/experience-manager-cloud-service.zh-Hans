@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '1353'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
@@ -137,7 +137,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
    * 定义为 **多源**，则主片段可以引用（检索）多个子片段。
 
-### JSON预览 {#json-preview}
+### JSON 预览 {#json-preview}
 
 为帮助设计和开发内容片段模型，您可以在内容片段编辑器中预览JSON输出。
 
@@ -243,7 +243,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 * 启用您的端点
    * 使用工具 — >资产 — > GraphQL
-   * [启用GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md)
+   * [启用 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
 
 * 安装GraphiQL（如果需要）
    * 安装为专用包
@@ -258,7 +258,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
    * 首席执行官（人员） — 片段参考
    * 员工（人员） — 片段参考
 * 人员
-   * 名称 — 文本
+   * 姓名 - 文本
    * 名字 — 文本
 
 如您所见，CEO和Employees字段引用“人员”片段。
@@ -274,7 +274,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 * `http://localhost:4502/content/graphiql.html`
 
-![GraphiQL接口](assets/graphiql-interface.png "GraphiQL接口")
+![GraphiQL 接口](assets/graphiql-interface.png "GraphiQL 接口")
 
 ### 查询入门 {#getting-Started-with-queries}
 
@@ -350,7 +350,7 @@ query {
 
 * 了解如何将GraphQL与AEM结合使用
 * 示例内容片段结构
-* 了解如何将GraphQL与AEM结合使用 — 示例内容和查询
+* 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询
 
 ## 下一步 {#whats-next}
 
@@ -364,17 +364,17 @@ query {
    * [GraphQL Java库](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [了解如何将GraphQL与AEM结合使用](/help/headless/graphql-api/content-fragments.md)
-   * [启用GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md)
+   * [启用 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
    * [安装AEM GraphiQL界面](/help/headless/graphql-api/graphiql-ide.md)
 * [示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [了解如何将GraphQL与AEM结合使用 — 示例内容和查询](/help/headless/graphql-api/sample-queries.md)
-   * [示例查询 — 单个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
-   * [元数据查询示例 — 列出标题为GB的奖项的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
-   * [示例查询 — 具有命名变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+* [了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询](/help/headless/graphql-api/sample-queries.md)
+   * [示例查询 - 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+   * [元数据的示例查询 - 列出标题为 GB 的奖项的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [示例查询 - 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [在配置浏览器中启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
    * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON 输出](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [了解跨源资源共享(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL。
+* [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL。

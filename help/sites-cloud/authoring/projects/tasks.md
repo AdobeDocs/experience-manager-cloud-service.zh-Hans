@@ -47,7 +47,7 @@ ht-degree: 94%
 
 #### 任务详细信息 {#task-details}
 
-有关特定任务的详细信息，请在任务列表中，点按/单击该任务，然后&#x200B;**打开**。
+有关特定任务的详细信息，请点按/单击任务列表，然后 **打开**.
 
 ![任务详细信息](/help/sites-cloud/authoring/assets/projects-task-details.png)
 

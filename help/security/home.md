@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service 安全性自助资源�
 landing-page-description: 了解有关 Experience Manager as a Cloud Service 的重要安全主题。
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 100%
 

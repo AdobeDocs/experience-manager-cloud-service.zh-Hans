@@ -9,6 +9,6 @@ ht-degree: 1%
 ---
 
 
-# Communications API {#introduction}
+# 简介 {#introduction}
 
 Adobe Experience Manager Forms as a Cloud Service为企业提供云原生的Platform as a Service(PaaS)解决方案，用于创建、管理、发布和更新复杂的数字表单，同时将提交的数据与后端流程、业务规则进行集成，并将数据保存到外部数据存储中。 该服务始终是最新的，始终可用，并且始终学习。

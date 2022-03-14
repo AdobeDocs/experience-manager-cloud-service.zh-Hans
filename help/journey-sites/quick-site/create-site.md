@@ -1,13 +1,13 @@
 ---
 title: 从模板创建网站
 description: 了解如何使用网站模板快速创建新的AEM网站。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 0%
 
 ---
-
 
 # 从模板创建网站 {#create-site-from-template}
 
@@ -162,7 +162,7 @@ ht-degree: 0%
 
    ![添加到群组](assets/add-to-group.png)
 
-1. 点按或单击 **保存并关闭**.
+1. 点击或单击&#x200B;**保存并关闭**。
 
 您现在已完成配置。 内容作者现在可以在站点上开始准备内容，以便在历程的下一步中开始进行前端自定义。
 

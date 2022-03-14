@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# AEM as a Cloud Service 2020.2.0 版发行说明 {#release-notes}
+# AEM as a Cloud Service 2020.2.0 发行说明 {#release-notes}
 
 本页面概述了 Experience Manager as a Cloud Service 2020.2.0 版的常规发行说明。
 
@@ -30,7 +30,7 @@ Experience Manager as a Cloud Service 2020.2.0 的发布日期是 2020 年 2 月
 * 现在，“代码扫描”步骤有可下载的日志。
 * 现在，包含代码扫描过程所发现问题的电子表格有这样一列：该列包含指向特定规则文档的链接。
 
-### 错误修复 {#bug-fixes}
+### 错误修复  {#bug-fixes}
 
 * 有时，浏览器安全策略会妨碍管道执行屏幕中的某些按钮正常工作。
 * 有时，Cloud Manager 登陆页面上会提供“概述”、“环境”和“活动”链接。

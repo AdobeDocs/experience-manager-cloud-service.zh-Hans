@@ -5,11 +5,11 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 添加SSL证书 {#adding-an-ssl-certificate}
+# 添加 SSL 证书 {#adding-an-ssl-certificate}
 
 >[!NOTE]
 >AEM as a Cloud Service将仅接受符合OV（组织验证）或EV（扩展验证）策略的证书。 DV（域验证）策略将不被接受。 此外，任何证书都必须是来自受信任的认证中心(CA)的X.509 TLS证书，且具有匹配的2048位RSA私钥。 AEMas a Cloud Service将接受域的通配符SSL证书。

@@ -7,7 +7,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->GraphQL当前用于Adobe Experience Manager(AEM)as a Cloud Service的两个（单独）方案：
+>GraphQL 当前用于 Adobe Experience Manager (AEM) as a Cloud Service 中的两种（分隔的）场景：
 >
 >* [AEM Commerce通过GraphQL从商务平台使用数据](/help/commerce-cloud/integrating/magento.md).
 >* [AEM内容片段可与AEM GraphQL API（一种基于标准GraphQL的自定义实施）一起使用，来提供结构化内容以供在应用程序中使用](/help/headless/graphql-api/content-fragments.md).
@@ -43,11 +43,11 @@ ht-degree: 0%
 
 ## GraphQL — 概述 {#graphql-overview}
 
-GraphQL是：
+GraphQL 是：
 
 * &quot;*...API的查询语言以及用于使用现有数据执行这些查询的运行时。*&quot;
 
-   请参阅 [GraphQL.org](https://graphql.org)
+   请参阅 [GraphQL.org](https://graphql.org)。
 
 的 [AEM GraphQL API](#aem-graphql-api) 允许您对 [内容片段](/help/assets/content-fragments/content-fragments.md);每个查询都根据特定的模型类型。 然后，您的应用程序可以使用返回的内容。
 
@@ -99,14 +99,14 @@ AEM GraphQL API实施基于 [GraphQL Java库](https://graphql.org/code/#java).
 
    * 定义为 **多源**，则主片段可以引用（检索）多个子片段。
 
-### JSON预览 {#json-preview}
+### JSON 预览 {#json-preview}
 
 要帮助设计和开发内容片段模型，您可以预览 [JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md).
 
-## 了解如何将GraphQL与AEM结合使用 — 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
+## 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
 
 请参阅 [了解如何将GraphQL与AEM结合使用 — 示例内容和查询](/help/headless/graphql-api/sample-queries.md) 有关使用AEM GraphQL API的简介。
 
-## 教程 — AEM Headless和GraphQL快速入门
+## 教程 - AEM Headless 和 GraphQL 快速入门
 
-正在查找动手实践教程？ 查看 [AEM无头和GraphQL快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 端到端教程，演示如何在无头CMS场景中使用AEM GraphQL API构建和公开内容，这些内容由外部应用程序使用。
+正在寻找实践教程？请查看 [AEM Headless 和 GraphQL 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)端到端教程，其中说明了在 Headless CMS 场景中，如何使用 AEM GraphQL API 构建和公开内容并由外部应用程序使用。

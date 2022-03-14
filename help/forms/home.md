@@ -1,12 +1,12 @@
 ---
 title: 简介 [!DNL AEM Forms] as a Cloud Service
-description: Adobe Experience Manager Formsas a Cloud Service自助资源和文档链接
-landing-page-description: 了解如何在AEMas a Cloud Service中使用表单。
+description: Adobe Experience Manager Forms as a Cloud Service 自助资源和文档链接
+landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -20,6 +20,6 @@ Adobe Experience Manager Forms as a Cloud Service为企业提供云原生的Plat
 
 组织可以使用 [!DNL AEM Forms] as a Cloud Service，并在云中获取所有这些功能，而无需任何本地基础架构。 该服务还使组织免于使用复杂的升级周期，因为升级周期始终保持最新并具备最新功能。 要了解有关该服务的更多信息，请参阅：
 
-* [主要功能](key-features.md)
-* [与AEM 6.5 Forms相比，有显着更改](notable-changes.md)
+* [关键功能](key-features.md)
+* [重要更改 与AEM 6.5 Forms相比](notable-changes.md)
 * [常见问题](faq.md)

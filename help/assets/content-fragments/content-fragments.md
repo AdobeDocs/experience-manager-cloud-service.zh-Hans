@@ -7,7 +7,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '2033'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 6%
 >* [自定义和扩展内容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [内容片段配置用于渲染的组件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM GraphQL API，用于内容片段](/help/headless/graphql-api/content-fragments.md)
+>* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 
 通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
@@ -236,7 +236,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 主控不是此变体，而是所有变体的基础。
 
 
-* **变量**
+* **变体**
 
    * 特定于编辑目的的片段文本的呈现；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
    * 创建为的副本 **主控**，但随后可以根据需要进行编辑；变体本身之间通常存在内容重叠。
@@ -295,8 +295,8 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 WKND项目包括：
 
-* 可在以下位置获取的内容片段模型：
+* 在以下位置提供的内容片段模型：
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* 可在以下位置获取的内容片段（和其他内容）：
+* 在以下位置提供的内容片段（和其他内容）：
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

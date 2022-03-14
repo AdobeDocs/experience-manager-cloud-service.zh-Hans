@@ -1,16 +1,16 @@
 ---
-title: OSGi配置API
+title: OSGi 配置 API
 description: AEMas a Cloud ServiceOSGi配置曲面的描述
 feature: Deploying
 exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# OSGi配置API
+# OSGi 配置 API
 
 以下两个列表反映了AEMas a Cloud ServiceOSGi配置界面，描述了客户可以配置的内容。
 

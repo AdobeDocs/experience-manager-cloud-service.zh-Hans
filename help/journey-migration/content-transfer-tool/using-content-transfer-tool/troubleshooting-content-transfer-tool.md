@@ -1,15 +1,15 @@
 ---
-title: 内容传输工具故障诊断
-description: 内容传输工具故障诊断
-source-git-commit: 9e290ac1b62bdaa2a0aaee109ef959af549aa5bd
+title: 内容传输工具疑难解答
+description: 内容传输工具疑难解答
+exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-
-# 内容传输工具故障诊断 {#troubleshoot-content-transfer-tool}
+# 内容传输工具疑难解答 {#troubleshoot-content-transfer-tool}
 
 
 ## 缺少 Blob ID {#missing-blobs}

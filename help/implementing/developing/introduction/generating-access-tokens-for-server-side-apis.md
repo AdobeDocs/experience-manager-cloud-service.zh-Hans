@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Communications API {#introduction}
+# 简介 {#introduction}
 
 某些架构依赖于从AEM基础架构外的服务器上托管的应用程序as a Cloud Service调用AEM。 例如，一个移动设备应用程序，它调用服务器，然后向AEM发出API请求as a Cloud Service。
 

@@ -37,7 +37,7 @@ ht-degree: 97%
 
 对于基于文本的组件，单击[工具栏](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)中的全屏模式 ![RTE 全屏按钮](/help/sites-cloud/authoring/assets/editing-full-screen.png) 以打开富文本编辑器，并隐藏页面内容的其余部分。
 
-全屏模式会显示可用于创作的所有已配置选项。选项[的可用性取决于配置](/help/implementing/developing/extending/rich-text-editor.md)。
+全屏模式会显示可用于创作的所有已配置选项。选项的可用性 [取决于配置](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![全屏模式下的 RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 

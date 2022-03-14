@@ -1,21 +1,22 @@
 ---
-title: AEM as a Cloud Manager版本2021.4.0的发行说明
-description: AEM as a Cloud Manager版本2021.4.0的发行说明
+title: AEM 2021.4.0版中Cloud Manageras a Cloud Service的发行说明
+description: AEM 2021.4.0版中Cloud Manageras a Cloud Service的发行说明
 feature: Release Information
-source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
+exl-id: a11ebe0e-2872-4fde-acc0-5babc6b01e1a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager as a Cloud 2021.4.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.4.0版中的Cloud Manager发行说明 {#release-notes}
 
-本页面概述了AEM as a Cloud 2021.4.0中Cloud Manager的发行说明。
+本页概述了AEM 2021.4.0版中Cloud Manager的发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud ManagerCloud Service2021.4.0的发布日期是2021年4月8日。
+AEM 2021.4.0版中Cloud Manager的发布日期是2021年4月8日。
 下一版本计划于2021年5月6日发布。
 
 ### 新增功能 {#what-is-new-april}
@@ -24,9 +25,9 @@ AEM as a Cloud ManagerCloud Service2021.4.0的发布日期是2021年4月8日。
 
 * 现在，具有必需权限的用户可以通过UI提交商务端点。
 
-* 现在，环境变量的范围可以是特定服务（创作或发布）。 需要AEM版本`2021.03.5104.20210328T185548Z`或更高版本。
+* 现在，环境变量的范围可以是特定服务（创作或发布）。 需要AEM版本 `2021.03.5104.20210328T185548Z` 或更高版本。
 
-* 即使未配置管道，**管理Git**&#x200B;按钮也会显示在Pipelines卡上。
+* 的 **管理Git** 按钮，即使尚未配置管道，该按钮也会显示在管道卡上。
 
 * Cloud Manager使用的AEM项目原型版本已更新至版本27。
 
@@ -38,14 +39,14 @@ AEM as a Cloud ManagerCloud Service2021.4.0的发布日期是2021年4月8日。
 
 * 澄清了在删除环境时启动管道时的错误消息。
 
-* 现在，由Eclipse项目提供的OSGi包已从规则`CQBP-84--dependencies`中排除。
+* 现在，Eclipse项目提供的OSGi包已从规则中排除 `CQBP-84--dependencies`.
 
 ### 错误修复 {#bug-fixes-cm-april}
 
-* 编辑管道的体验审核页面时，以斜杠`( / )`开头的输入路径将不再导致该步骤卡在待处理状态中。
+* 编辑管道的体验审核页面时，输入路径以斜杠开头 `( / )` 将不再导致步骤卡在“待定”状态中。
 
 * 创建新生产管道时，如果用户未添加内容审核覆盖，则不会审核默认主页。
 
-* `CloudServiceIncompatibleWorkflowProcess`的问题在可下载的问题CSV文件中的严重性不正确。
+* 的问题 `CloudServiceIncompatibleWorkflowProcess` 的可下载问题CSV文件中的严重性不正确。
 
-* `Runmode`检查对非文件夹节点产生误报。
+* 的 `Runmode` 检查在非文件夹节点上产生误报。

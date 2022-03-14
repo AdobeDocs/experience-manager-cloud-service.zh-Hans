@@ -1,10 +1,11 @@
 ---
-title: CIF创作入门
-description: CIF创作入门
-source-git-commit: e497b5b4439cf91ec7ea698d9bedcb4210802414
+title: CIF 创作快速入门
+description: CIF 创作快速入门
+exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -62,7 +63,7 @@ CIF扩展了通用编辑器，使其能够在不离开上下文的情况下访�
 浏览左侧的目录结构并选择类别。
 ![类别选取器](assets/category-picker-folders.png)
 
-## 产品座舱 {#cockpit}
+## 产品 Cockpit {#cockpit}
 
 产品驾驶舱是快速访问产品目录及其所有扩充内容的中心位置。 您将在下一个模块中学习如何使用内容扩充产品数据。 现在，我们将重点放在访问产品数据上。
 

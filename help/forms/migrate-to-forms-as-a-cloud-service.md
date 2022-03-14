@@ -97,7 +97,7 @@ ht-degree: 3%
 ## 各种特定于AEM Forms的资产的路径
 
 * **自适应Forms**:您可以在 `/content/dam/formsanddocuments/`和/content/forms/af。 例如，对于标题为WKND Registration的自适应表单，添加路径 `/content/dam/formsanddocuments/wknd-registration` 和 `/content/forms/af/wknd-registration`.
-* **表单数据模式**:您可以在 `/content/dam/formsanddocuments-fdm`. 例如, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **表单数据模式**:您可以在 `/content/dam/formsanddocuments-fdm`. 例如， `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **客户端库**:客户端库的默认路径为 `/etc/clientlibs/fd/theme`.
 

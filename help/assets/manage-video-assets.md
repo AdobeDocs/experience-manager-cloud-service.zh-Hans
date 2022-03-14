@@ -1,5 +1,5 @@
 ---
-title: 管理视频资产
+title: 管理视频资源
 description: 在 [!DNL Adobe Experience Manager].
 contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
@@ -12,7 +12,7 @@ ht-degree: 9%
 
 ---
 
-# 管理视频资产 {#manage-video-assets}
+# 管理视频资源 {#manage-video-assets}
 
 视频格式是组织中数字资产的关键部分。 [!DNL Adobe Experience Manager] 提供了成熟的产品和功能，用于在视频资产创建后管理其整个生命周期。
 

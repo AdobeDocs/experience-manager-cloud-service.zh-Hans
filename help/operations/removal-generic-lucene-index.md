@@ -1,14 +1,13 @@
 ---
 title: 删除通用Lucene索引
 description: 了解计划删除通用Lucene索引以及您可能受到的影响。
-exl-id: fe0e00ac-f9c8-43cf-83c2-5a353f5eaeab
-source-git-commit: 7a3c8b59a5a642ffc335fc80898fb956221cfcc2
+exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 0%
 
 ---
-
 
 # 删除通用Lucene索引 {#generic-lucene-index-removal}
 
@@ -31,7 +30,7 @@ Adobe打算删除“通用Lucene”索引(`/oak:index/lucene-*`)来自Adobe Expe
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Please change the query or the index definitions.
 ```
 
-In recent AEM versions, the generic Lucene index has been used to support a very small number of features. 这些索引正在重新工作以使用其他索引，或者正在修改以删除对此索引的依赖关系。
+在最新的AEM版本中，使用通用Lucene索引来支持非常少的功能。 这些索引正在重新工作以使用其他索引，或者正在修改以删除对此索引的依赖关系。
 
 例如，引用查找查询（如以下示例中的）现在应使用 `/oak:index/pathreference`，仅对其进行索引 `String` 与查找JCR路径的正则表达式匹配的属性值。
 
@@ -43,7 +42,7 @@ In recent AEM versions, the generic Lucene index has been used to support a very
 
 Adobe已通过 `costPerEntry` 和 `costPerExecution` 属性，以确保其他索引，例如 `/oak:index/pathreference` 会尽可能优先使用。
 
-Customer applications which use queries which still depend on this index should be updated immediately to leverage other existing indexes, which can be customized if required. 或者，也可以将新的自定义索引添加到客户应用程序。 有关AEMas a Cloud Service中索引管理的完整说明，请参阅 [索引文档。](/help/operations/indexing.md)
+使用仍依赖于此索引的查询的客户应用程序应立即更新，以利用其他现有索引，如果需要，可以自定义这些索引。 或者，也可以将新的自定义索引添加到客户应用程序。 有关AEMas a Cloud Service中索引管理的完整说明，请参阅 [索引文档。](/help/operations/indexing.md)
 
 ## 你受影响了吗？ {#are-you-affected}
 
@@ -96,7 +95,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 >
 >上述查询应修改为使用相应的节点类型，如以下章节所述。
 
-For example, the queries can be modified to return results matching pages or any of the aggregates beneath the `cq:Page node`. 因此，查询可能变为：
+例如，可以修改查询以返回与页面匹配的结果或 `cq:Page node`. 因此，查询可能变为：
 
 ```text
 /jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
@@ -130,7 +129,7 @@ For example, the queries can be modified to return results matching pages or any
 
 #### 路径字段选取器搜索 {#picker-search}
 
-AEM includes a custom dialog component with the Sling resource type `granite/ui/components/coral/foundation/form/pathfield`, which provides a browser/picker for selecting another AEM path. 默认路径字段选取器，在无自定义时使用 `pickerSrc` 属性在内容结构中定义，在弹出式对话框中呈现搜索栏。
+AEM包含具有Sling资源类型的自定义对话框组件 `granite/ui/components/coral/foundation/form/pathfield`，提供了用于选择其他AEM路径的浏览器/选取器。 默认路径字段选取器，在无自定义时使用 `pickerSrc` 属性在内容结构中定义，在弹出式对话框中呈现搜索栏。
 
 可使用指定要搜索的节点类型 `nodeTypes` 属性。
 
@@ -140,7 +139,7 @@ AEM includes a custom dialog component with the Sling resource type `granite/ui/
 20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Please change the query or the index definitions.
 ```
 
-Prior to removal of the generic Lucene index, the `pathfield` component will be updated so that the search box is hidden for components using the default picker, which do not provide a `nodeTypes` property.
+在删除通用Lucene索引之前， `pathfield` 组件将进行更新，以便使用默认选取器(不提供 `nodeTypes` 属性。
 
 | 搜索路径字段选取器 | 不搜索的路径字段选取器 |
 |---|---|
@@ -169,6 +168,6 @@ Adobe将采取两阶段方法来删除通用Lucene索引。
 
 Adobe将监控上述日志消息，并尝试联系仍依赖通用Lucene索引的客户。
 
-As a short term mitigation, Adobe will add custom index definitions directly to customer systems to prevent functional or performance issues as a result of the removal of the generic Lucene index as necessary.
+为了在短期内减轻影响，Adobe将直接将自定义索引定义添加到客户系统，以防止因删除通用Lucene索引而出现功能或性能问题。
 
 在这种情况下，客户将获得更新的索引定义，并建议通过Cloud Manager将其包含在其应用程序的未来版本中。

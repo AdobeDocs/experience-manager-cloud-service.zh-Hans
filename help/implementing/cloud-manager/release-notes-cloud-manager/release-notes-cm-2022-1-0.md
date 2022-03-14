@@ -2,13 +2,13 @@
 title: AEMas a Cloud Service版本2022.01.0中的Cloud Manager发行说明
 description: 以下是AEMas a Cloud Service版本2022.01.0中Cloud Manager的发行说明。
 feature: Release Information
-source-git-commit: 6b0fd14fb2038e09b59fa487427b3202d8f129dc
+exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 70%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service中的Cloud Manager发行说明2022.01.0 {#release-notes}
 

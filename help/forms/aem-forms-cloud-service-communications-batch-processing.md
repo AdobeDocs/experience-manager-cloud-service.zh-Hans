@@ -127,11 +127,11 @@ ht-degree: 0%
 
 要创建批，请使用 `POST /config` API。 在HTTP请求正文中包含以下必需属性：
 
-* **configName**:指定批的唯一名称。 例如, `wknd-job`
+* **configName**:指定批的唯一名称。 例如，`wknd-job`
 * **dataSourceConfigUri**:指定批量数据存储配置的位置。 它可以是配置的相对路径或绝对路径。 例如：`/conf/global/settings/forms/usc/batch/wknd-batch`
 * **outputTypes**:指定输出格式：PDF和打印。 如果使用PRINT输出类型，请在 `printedOutputOptionsList` 属性中，请至少指定一个打印选项。 打印选项通过其渲染类型进行标识，因此当前不允许使用具有相同渲染类型的多个打印选项。 支持的格式为PS、PCL、DPL、IPL和ZPL。
 
-* **模板**:指定模板的绝对或相对路径。 例如, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
+* **模板**:指定模板的绝对或相对路径。 例如，`crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
 如果指定相对路径，则还应提供内容根。 有关内容根的详细信息，请参阅API文档。
 

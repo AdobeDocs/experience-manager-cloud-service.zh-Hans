@@ -9,7 +9,7 @@ exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
@@ -32,5 +32,5 @@ ht-degree: 1%
 
 ## 限制 {#limitations}
 
-* 不能开箱即用地支持基于XFA的自适应Forms。 如果您打算使用基于XFA的自适应Forms，请联系Adobe支持，并提供用例和特定要求的详细信息。
+* 对基于 XFA 的自适应表单的支持并非现成可用。如果您需要使用基于 XFA 的自适应表单，请联系 Adobe 支持部门并提供您用例的详细信息和具体要求。
 

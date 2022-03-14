@@ -3,7 +3,7 @@ title: 调整 KPI
 description: 调整 KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 100%
 

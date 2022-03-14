@@ -1,13 +1,13 @@
 ---
 title: 中的显着更改 [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
-description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5。
+description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 与 [!DNL Adobe Experience Manager] 6.5。
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 5%
+source-wordcount: '1032'
+ht-degree: 6%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 5%
 
 [!DNL Experience Manager] as a [!DNL Cloud Service] 为现有功能引入了许多新功能和性能更高的使用方式。 但是，当从 [!DNL Experience Manager] 6.5至 [!DNL Experience Manager] as a [!DNL Cloud Service]，您可能会注意到某些功能的工作方式不同、不可用或部分可用。 以下是此类功能的列表。 此外，请参阅 [已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md).
 
-| 功能或用例 | 状态 [!DNL Experience Manager] as a [!DNL Cloud Service] | 评论 |
+| 功能或用例 | 状态 [!DNL Experience Manager] as a [!DNL Cloud Service] | 批注 |
 |-----|-----|-----|
 | [重复的资产检测](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 工作方式不同 | 请参阅 [工作原理 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [仅用于放置(FPO)演绎版](/help/assets/configure-fpo-renditions.md) | 工作方式不同 | 处理配置文件使用资产微服务生成FPO演绎版。 在Experience Manager6.5中，第三方解决方案，例如 [!DNL ImageMagick] 可用于生成演绎版。 |
@@ -76,7 +76,7 @@ ht-degree: 5%
 >* [简介](/help/overview/introduction.md)
 >* [新增功能和不同功能](/help/overview/what-is-new-and-different.md)
 >* [架构](/help/overview/architecture.md)
->* [显着更改](/help/release-notes/aem-cloud-changes.md)
->* [显着更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [重要更改](/help/release-notes/aem-cloud-changes.md)
+>* [重要更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hans)
 

@@ -7,7 +7,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
 source-wordcount: '2838'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/
 
    >[!CAUTION]
    >
-   >如果 [尚未启用内容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md), **创建** 选项将不可用。
+   >如果[未启用内容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
 
 1. 指定&#x200B;**模型标题**。您还可以添加 **标记**, a **描述**，然后选择 **启用模型** to [启用模型](#enabling-disabling-a-content-fragment-model) （如果需要）。
 

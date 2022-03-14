@@ -2,19 +2,19 @@
 title: CI/CD管线
 description: 了解Cloud Manager的CI/CD管道，以及如何使用这些管道高效地部署代码。
 index: true
-source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
+exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 1%
 
 ---
 
-
 # Cloud Manager CI/CD管道 {#intro-cicd}
 
 了解Cloud Manager的CI/CD管道，以及如何使用这些管道高效地部署代码。
 
-## Communications API {#introduction}
+## 简介 {#introduction}
 
 Cloud Manager中的CI/CD管道是一种从源存储库构建代码并将其部署到环境的机制。 管道可以由事件触发，例如来自源代码存储库的拉取请求（即代码更改），或者按照与发行频率匹配的常规计划触发。
 

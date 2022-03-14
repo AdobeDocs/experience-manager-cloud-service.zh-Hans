@@ -1,13 +1,13 @@
 ---
 title: AEM 参考演示加载项历程
 description: 此处开始一段引导式旅程，了解如何以最小的AEM配置轻松地将AEM参考演示加载项添加到沙盒环境，并能够根据最佳实践通过丰富的示例测试AEM的强大功能。
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 3%
 
 ---
-
 
 # AEM 参考演示加载项历程 {#reference-demos-add-on-journey}
 

@@ -1,13 +1,13 @@
 ---
 title: 上线后
 description: 了解如何监控问题并提高性能
-source-git-commit: c9143d77e70476beb7f7dd162c36aeda8d1be506
+exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
-
 
 # 上线后 {#post-go-live}
 
@@ -61,7 +61,7 @@ ht-degree: 20%
 >abstract="请联系我们的AEM支持团队，以获取说明或解决任何问题。"
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="支持Experience Cloud"
 
-如果您对访问Cloud Service有任何疑问，请联系您的Adobe代表或 [支持Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 以了解更多详细信息。
+如果您对访问Cloud Service有任何疑问，请联系您的Adobe代表或 [支持Experience Cloud](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 以了解更多详细信息。
 
 ## 文档学习 {#document-learnings}
 

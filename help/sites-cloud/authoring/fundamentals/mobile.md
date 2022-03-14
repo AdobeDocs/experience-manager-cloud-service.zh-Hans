@@ -9,7 +9,7 @@ ht-degree: 98%
 
 ---
 
-# 创作适用于移动设备的页面  {#authoring-a-page-for-mobile-devices}
+# 创作适用于移动设备的页面 {#authoring-a-page-for-mobile-devices}
 
 Adobe Experience Manager 页面基于响应式布局。[响应式布局可自动调整内容以适合目标设备，而无需为特定设备创作内容。](/help/sites-cloud/authoring/features/responsive-layout.md)
 
@@ -19,7 +19,7 @@ Adobe Experience Manager 页面基于响应式布局。[响应式布局可自动
 
 >[!NOTE]
 >
->要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。请参阅[创建Live Copy。](/help/sites-cloud/administering/msm/creating-live-copies.md)
+>要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。请参阅 [创建Live Copy。](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >AEM 开发人员可以创建新设备组。请参阅“创建设备组筛选器”。
 

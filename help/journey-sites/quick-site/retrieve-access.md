@@ -1,13 +1,13 @@
 ---
 title: 检索Git存储库访问信息
 description: 了解前端开发人员如何使用Cloud Manager访问git存储库信息。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 4%
 
 ---
-
 
 # 检索Git存储库访问信息 {#retrieve-access}
 

@@ -3,13 +3,13 @@ title: 包管理器
 description: 了解AE的基础知识；包管理。
 feature: Administering
 role: Admin
-source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
+exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '3584'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # 包管理器 {#working-with-packages}
 

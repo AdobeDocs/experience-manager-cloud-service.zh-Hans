@@ -1,5 +1,5 @@
 ---
-title: 面向开发人员和部署经理的学习路径
+title: 开发人员和部署经理的学习路径
 description: 如果您是开发人员或部署管理员，请阅读本页以了解获取访问权限后的后续步骤
 feature: Onboarding
 role: Admin, User, Developer
@@ -7,11 +7,11 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# 面向开发人员和部署经理的学习路径 {#learn-path-developers-deployment}
+# 开发人员和部署经理的学习路径 {#learn-path-developers-deployment}
 
 ## 目标 {#objective}
 
@@ -81,6 +81,6 @@ ht-degree: 4%
 
 * [SPA编辑器](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-* [无头](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 * [商务](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)

@@ -4,13 +4,13 @@ description: 了解如何组织AEM Sites内容以及AEM翻译工具的工作方�
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
 
 ---
-
 
 # AEM Sites翻译入门 {#getting-started}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM Sites翻译历程的上一个文档中， [了解AEM Sites内容以及如何在AEM中进行翻译](learn-about.md)您学习了AEM Sites的基本理论，现在您应该：
+在AEM Sites翻译历程的上一个文档中， [了解AEM Sites内容以及如何在AEM中翻译](learn-about.md) 你学习了AEM Sites的基本理论，现在应该：
 
 * 了解AEM Sites内容创建的基本概念。
 * 熟悉AEM如何支持翻译。
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您不熟悉使用大型CMS(如AEM)，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。 基本处理文档未包含在历程中，因此，完成后请返回本页。
+>如果您不熟悉使用大型CMS(如AEM)，请考虑查看 [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) 文档，然后再继续。 基本处理文档未包含在历程中，因此，完成后请返回本页。
 
 ### 工具 {#tools}
 
 * 用于测试内容翻译的沙盒访问权限
 * 连接到首选翻译服务的凭据
-* 是AEM中`project-administrators`组的成员
+* 是 `project-administrators` AEM中的群组
 
 ## AEM如何存储内容 {#content-in-aem}
 
@@ -65,9 +65,9 @@ ht-degree: 0%
 
 要访问站点控制台，请执行以下操作：
 
-1. 在全局导航菜单中，单击或点按&#x200B;**导航** -> **站点**。
+1. 在全局导航菜单中，单击或点按 **导航** -> **站点**.
 1. 站点控制台将打开到内容的顶级。
-1. 确保使用窗口右上角的视图选择器选择&#x200B;**列视图**。
+1. 确保 **列视图** ，则使用窗口右上角的视图选择器来选择此选项。
 
    ![选择列视图](assets/selecting-column-view.png)
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    ![内容选择](assets/sites-console-selection.png)
 
-1. 通过点按或单击左上角的边栏选择器，还可以显示&#x200B;**内容树**&#x200B;视图，以获取内容的树概述。
+1. 通过点按或单击左上角的边栏选择器，您还可以显示 **内容树** 查看内容的树概述。
 
    ![内容树视图](assets/sites-console-content-tree.png)
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
    ![选择要编辑的页面](assets/sites-editor-select-page.png)
 
-1. 点按工具栏中的&#x200B;**编辑**&#x200B;选项。
+1. 点按 **编辑** 的双曲余切值。
 1. 站点编辑器随即会打开，并且选定的页面会加载以在新的浏览器选项卡中进行编辑。
 1. 将鼠标悬停或点按内容会显示适用于各个组件的选择器。 组件是构成页面的拖放构建基块。
 
@@ -123,13 +123,13 @@ AEM内容由其结构驱动。 AEM对内容结构要求很少，但在项目规�
 >
 >在您的AEM项目开始时计划翻译。 及早与项目经理和内容架构师密切合作。
 >
->国际化项目经理可以作为单独的角色，其职责是定义哪些内容应翻译、哪些不翻译，哪些翻译内容可由区域或本地内容制作者修改。
+>国际化项目经理可能需要作为单独的角色，其职责是定义哪些内容应翻译、哪些不翻译，哪些翻译内容可由区域或本地内容制作者修改。
 
 ## 推荐的内容结构 {#recommended-structure}
 
 如前所建议，请与您的内容架构师合作，为您自己的项目确定适当的内容结构。 但是，下面是一个经过验证、简单且直观的结构，它非常有效。
 
-在`/content`下为项目定义基本文件夹。
+在下为项目定义基文件夹 `/content`.
 
 ```text
 /content/<your-project>
@@ -189,7 +189,7 @@ AEM内容由其结构驱动。 AEM对内容结构要求很少，但在项目规�
 
 * **翻译连接器**  — 连接器是AEM与您使用的翻译服务之间的链接。
 * **翻译规则**  — 规则定义特定路径下应翻译的内容。
-* **翻译项目**  — 翻译项目收集应作为单次翻译工作处理的内容，并跟踪翻译的进度，与连接器连接以传输要翻译的内容并从翻译服务接收回该内容。
+* **翻译项目**  — 翻译项目收集应作为单笔翻译工作处理的内容，并跟踪翻译的进度，与连接器连接以传输待翻译内容并从翻译服务接收回来。
 
 通常，您只为实例设置一次连接器，并为每个项目设置规则。 然后，您使用翻译项目来翻译内容并持续更新其翻译。
 
@@ -201,13 +201,13 @@ AEM内容由其结构驱动。 AEM对内容结构要求很少，但在项目规�
 * 了解AEM如何存储内容。
 * 熟悉AEM翻译工具。
 
-在此知识的基础上，通过下一步查看文档[配置翻译连接器](configure-connector.md)来继续您的AEM Sites翻译历程，您将在其中了解如何将AEM连接到翻译服务。|
+在此知识的基础上，通过下一步审阅文档，继续您的AEM Sites翻译历程 [配置翻译连接器](configure-connector.md) 您将在此处学习如何将AEM连接到翻译服务。|
 
 ## 其他资源 {#additional-resources}
 
-虽然建议您通过查看文档[配置翻译连接器](configure-connector.md)来继续翻译历程的下一部分，但以下是一些其他的可选资源，可更深入地了解本文档中提到的一些概念，但不需要继续这些概念。
+但建议您通过审阅文档来继续进入翻译历程的下一部分 [配置翻译连接器](configure-connector.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续访问这些概念。
 
 * [AEM基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 了解AEM UI的基础知识，以便能够轻松导航并执行基本任务，如查找内容。
 * [识别要翻译的内容](/help/sites-cloud/administering/translation/rules.md)  — 了解翻译规则如何识别需要翻译的内容。
 * [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md)  — 了解如何配置翻译集成框架以与第三方翻译服务相集成。
-* [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)  — 了解如何在AEM中创建和管理机器翻译项目和人工翻译项目。
+* [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)  — 了解如何在AEM中创建和管理机器和人类翻译项目。

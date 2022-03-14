@@ -9,7 +9,7 @@ ht-degree: 9%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 的最新发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
 以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的一般发行说明。
 

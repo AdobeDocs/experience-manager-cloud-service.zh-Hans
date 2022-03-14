@@ -1,14 +1,14 @@
 ---
-title: 'Headless 内容的权限注意事项 '
+title: Headless 内容的权限注意事项
 description: 了解使用 Adobe Experience Manager 的 Headless 实施的不同权限和 ACL 注意事项。了解创作环境和发布环境所需的不同角色和潜在权限级别。
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
-workflow-type: ht
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
 
 ---
-
 
 # Headless 内容的权限注意事项
 
@@ -98,4 +98,3 @@ Publish 服务被视为“实时”环境，通常是 GraphQL API 使用者与�
 ### 访问 GraphQL API
 
 HTTP 请求向 AEM Publish 服务的 GraphQL API 端点提供[相应的身份验证凭据](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client)，包括凭据授权可以读取的内容，以及可匿名访问内容。GraphQL API 的其他使用者不能读取 CUG 保护的文件夹中的内容。
-

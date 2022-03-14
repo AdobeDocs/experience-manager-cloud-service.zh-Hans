@@ -13,7 +13,7 @@ ht-degree: 86%
 
 下图显示了如何构建目标内容的多站点支持。
 
-区域显示在&#x200B;**/content/campaigns/&lt;brand>**&#x200B;下方，默认情况下，每个品牌都有一个主控区域，该区域会自动创建。 每个区域都包含自身的一组活动、体验和选件。
+下面显示区域 **/content/campaigns/&lt;brand>** 默认情况下，每个品牌都有一个主控区域，该区域会自动创建。 每个区域都包含自身的一组活动、体验和选件。
 
 ![多站点结构](/help/sites-cloud/authoring/assets/multisite-structure.png)
 

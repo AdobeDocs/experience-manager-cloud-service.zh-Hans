@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Assets HTTP API中的内容片段支持
-description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
+description: 了解资产HTTP API中对内容片段的支持，HTTP API是AEM的一项重要无头交付功能。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
@@ -18,17 +18,16 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->The [Assets HTTP API](/help/assets/mac-api-assets.md) encompasses the:
+>的 [资产HTTP API](/help/assets/mac-api-assets.md) 包括：
 >
 >* 资产REST API
 >* 包括对内容片段的支持
-
 >
 >资产HTTP API的当前实施基于 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 建筑风格。
 
 的 [资产REST API](/help/assets/mac-api-assets.md) 允许开发人员通过CRUD操作（创建、读取、更新、删除），直接通过HTTP API访问内容(存储在AEM中)。
 
-The API allows you to operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
+该API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager as a Cloud Service作为无头CMS（内容管理系统）进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
 
 例如， [单页应用程序(SPA)](/help/implementing/developing/hybrid/introduction.md)、基于框架或自定义的HTTP API中提供的内容，通常采用JSON格式。
 
@@ -123,7 +122,7 @@ HTTP方法确定要执行的操作：
   <tr>
    <td>安全性</td>
    <td><p>可以使用多个选项。</p> <p>OAuth是提出的；可以与标准设置分开配置。</p> </td>
-   <td>Uses AEM's standard setup.</td>
+   <td>使用AEM标准设置。</td>
   </tr>
   <tr>
    <td>建筑备注</td>
@@ -148,7 +147,6 @@ HTTP方法确定要执行的操作：
 >
 >* [CORS/AEM说明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [视频 — 使用AEM开发CORS](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
@@ -291,7 +289,7 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 
 正文必须包含要为给定内容片段更新内容的JSON表示形式。
 
-This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata.
+这可以只是内容片段、单个元素或所有元素值和/或元数据的标题或描述。
 
 ### 删除 {#delete}
 

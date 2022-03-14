@@ -8,11 +8,11 @@ exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 导入、导出和组织自适应Forms、PDF forms和其他资产{#importing-and-exporting-assets-to-aem-forms}
+# 导入、导出和组织自适应表单、PDF 表单和其他资源{#importing-and-exporting-assets-to-aem-forms}
 
 您可以在以下两种资产之间移动自适应Forms和相关资产：自适应表单主题、表单数据模型、自适应表单模板、文档片段和PDF forms [!DNL AEM Forms] 实例。 您可以以CRX包或二进制文件格式导入和导出资产。
 

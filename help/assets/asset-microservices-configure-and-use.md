@@ -229,8 +229,8 @@ asset compute服务集成允许Experience Manager使用 [!UICONTROL 服务参数
 
 您可以为无法通过将工作流应用到文件夹轻松完成的高级配置配置配置自定义工作流运行器服务。 例如，使用正则表达式的工作流。 Adobe CQ DAM自定义工作流运行程序(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服务。 它提供了以下两个配置选项：
 
-* 按路径(`postProcWorkflowsByPath`):可以根据不同的存储库路径列出多个工作流模型。 使用冒号分隔路径和模型。 支持简单的存储库路径。 将这些工作流映射到 `/var` 路径。 例如: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 按表达式划分的后处理工作流(`postProcWorkflowsByExpression`):可以根据不同的正则表达式列出多个工作流模型。 表达式和模型应使用冒号分隔。 正则表达式应直接指向“资产”节点，而不是任何演绎版或文件。 例如: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 按路径(`postProcWorkflowsByPath`):可以根据不同的存储库路径列出多个工作流模型。 使用冒号分隔路径和模型。 支持简单的存储库路径。 将这些工作流映射到 `/var` 路径。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 按表达式划分的后处理工作流(`postProcWorkflowsByExpression`):可以根据不同的正则表达式列出多个工作流模型。 表达式和模型应使用冒号分隔。 正则表达式应直接指向“资产”节点，而不是任何演绎版或文件。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
 要了解如何部署OSGi配置，请参阅 [部署到 [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 

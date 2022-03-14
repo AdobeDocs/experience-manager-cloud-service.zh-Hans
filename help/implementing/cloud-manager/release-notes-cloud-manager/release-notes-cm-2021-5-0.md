@@ -1,25 +1,25 @@
 ---
-title: AEM as a Cloud Manager版本2021.5.0的发行说明
-description: AEM as a Cloud Manager版本2021.5.0的发行说明
-feature: 版本信息
+title: AEM 2021.5.0版中Cloud Manager的发行说明
+description: AEM 2021.5.0版中Cloud Manager的发行说明
+feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '377'
 ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager as a Cloud 2021.5.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.5.0版中的Cloud Manager发行说明 {#release-notes}
 
-本页面概述了AEM as a Cloud 2021.5.0中Cloud Manager的发行说明。
+本页概述了AEM 2021.5.0版中Cloud Manager的发行说明。
 
 >[!NOTE]
->要查看Adobe Experience Manager as a Cloud Service的最新发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans)。
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6日。
+AEM 2021.5.0版中Cloud Manager的发布日期是2021年5月6日。
 
 ### 新增功能 {#what-is-new}
 
@@ -33,11 +33,11 @@ AEM as a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6�
 
 * 现在，可以在编辑项目工作流期间将商务加载项应用于沙盒项目。
 
-* *编辑程序*&#x200B;体验已刷新。
+* 的 *编辑程序* 体验已刷新。
 
 * “环境详细信息”页面中的“域名”表将通过分页显示多达250个域名。
 
-* 在&#x200B;**Add Program**&#x200B;和&#x200B;**Edit Program**&#x200B;工作流中，**Solutions &amp; Add-ons**&#x200B;选项卡将显示解决方案，即使只有一个解决方案可用于该程序。
+* 的 **解决方案和附加组件** 选项卡 **添加程序** 和 **编辑程序** 工作流将显示解决方案，即使只有一个解决方案可供计划使用。
 
 * 生成步骤日志中未生成任何已部署的内容包时的错误消息不明确。
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6�
 
 * 有时，即使未部署该配置，用户也可能会在IP允许列表旁边看到绿色的“活动”状态。
 
-* 管道变量API不会删除“已删除”变量，而是仅以状态&#x200B;**DELETED**&#x200B;标记它们。
+* 管道变量API将只用状态标记它们，而不删除“已删除”变量 **已删除**.
 
 * 某些代码气味类型的质量问题错误地影响了可靠性评级。
 

@@ -1,13 +1,13 @@
 ---
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
-source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
+exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 0%
 
 ---
-
 
 # 上线 {#go-live}
 

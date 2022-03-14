@@ -1,15 +1,15 @@
 ---
-title: 快速创建站点和前端定制
+title: 快速站点创建和前端自定义
 description: 了解快速站点创建工具如何使用站点模板、主题和前端管道来实现新站点的快速部署，并实现前端开发的解耦。
-source-git-commit: 9a3e9e959f0cfb6ee5426190e2afd6894e76f964
+exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-
-# 快速创建站点和前端定制 {#quick-site-creation}
+# 快速站点创建和前端自定义 {#quick-site-creation}
 
 了解快速站点创建工具如何使用站点模板、主题和前端管道来实现新站点的快速部署，并实现前端开发的解耦。
 

@@ -1,13 +1,13 @@
 ---
 title: 如何配置 [!DNL Microsoft Dynamics] OData?
-description: 了解如何根据 [!DNL Microsoft Dynamics] service. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Microsoft Dynamics] 服务器启用业务工作流。
+description: 了解如何根据 [!DNL Microsoft Dynamics] 服务。 表单数据模型可用于创建与交互的自适应Forms [!DNL Microsoft Dynamics] 服务器启用业务工作流。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 1%
    * [!DNL Microsoft Dynamics] 365本地
    * [!DNL Microsoft Dynamics] 2016年内部部署
 
-* [已注册 [!DNL Microsoft Dynamics] online service with [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 记下注册服务的客户端ID（也称为应用程序ID）值和客户端密钥。 这些值在 [为 [!DNL Microsoft Dynamics] 服务](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [已注册 [!DNL Microsoft Dynamics] 在线服务 [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 记下注册服务的客户端ID（也称为应用程序ID）值和客户端密钥。 这些值在 [为 [!DNL Microsoft Dynamics] 服务](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## 设置已注册的回复URL [!DNL Microsoft Dynamics] 应用程序 {#set-reply-url-for-registered-microsoft-dynamics-application}
 

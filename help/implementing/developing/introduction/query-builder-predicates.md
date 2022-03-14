@@ -1,15 +1,15 @@
 ---
-title: 查询生成器谓词引用
+title: 查询生成器谓词参考
 description: 查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2218'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 查询生成器谓词引用 {#query-builder-predicate-reference}
+# 查询生成器谓词参考 {#query-builder-predicate-reference}
 
 ## 常规 {#general}
 
@@ -23,16 +23,16 @@ ht-degree: 1%
 
 * **`p.offset`**  — 表示结果页面开始的数字，即要跳过的项目数
 * **`p.limit`**  — 表示页面大小的数字
-* **`p.guessTotal`**  — 建议：避免计算可能代价高昂的全部结果总数；一个数字，表示最多计数的总数（例如1000，表示用户对粗细大小和精确数量有足够反馈，以获得较小结果），或 `true` 者仅计数最多所需的最 `p.offset` 小值+  `p.limit`
-* **`p.excerpt`**  — 如果设置为，则 `true`在结果中包含全文摘录
+* **`p.guessTotal`**  — 建议：避免计算可能代价高昂的全部结果总数；表示最多总计的数字（例如1000，该数字可为用户提供对粗细大小和精确数字的足够反馈，以获得较小的结果）或 `true` 只计算最少所需的 `p.offset` + `p.limit`
+* **`p.excerpt`**  — 如果设置为 `true`，在结果中包含全文摘录
 * **`p.hits`**  — （仅适用于JSON Servlet）选择点击以JSON形式写入的方式，并使用这些标准点击（可通过ResultHitWriter服务扩展）：
-   * **`simple`**  — 最小项 `path`目，  `title`、  `lastmodified`、  `excerpt` （如果已设置）
-   * **`full`**  — 节点的sling JSON渲染，并 `jcr:path` 指示点击的路径：默认情况下，仅列出节点的直接属性，包括包含更深层的树，其中 `p.nodedepth=N`0表示整个无限子树；添加 `p.acls=true` 以包含当前会话对给定结果项的JCR权限(映射： `create` =  `add_node`,  `modify`  =  `set_property`,  `delete`  =  `remove`)
-   * **`selective`**  — 仅限中指定的属 `p.properties`性，该属性为相对路径的空格分 `+` 隔（在URL中使用）列表；如果相对路径具有深度， `>1` 则这些路径将表示为子对象；特殊属 `jcr:path` 性包括点击的路径
+   * **`simple`**  — 最小项目，例如 `path`, `title`, `lastmodified`, `excerpt` （如果已设置）
+   * **`full`**  — 节点的sling JSON渲染，以及 `jcr:path` 指示点击的路径：默认情况下，仅列出节点的直接属性，包括包含更深层的树，其中包含 `p.nodedepth=N`，其中0表示整个无限子树；添加 `p.acls=true` 在给定结果项上包含当前会话的JCR权限(映射： `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+   * **`selective`**  — 仅在 `p.properties`，表示分隔(使用 `+` （在URL中）相对路径列表；如果相对路径具有深度 `>1` 这些对象将表示为子对象；特殊 `jcr:path` 属性包含点击的路径
 
 ### 组 {#group}
 
-此谓词允许生成嵌套条件。 组可以包含嵌套组。 查询生成器查询中的所有内容都隐含在根组中，该根组也可以具有`p.or`和`p.not`参数。
+此谓词允许生成嵌套条件。 组可以包含嵌套组。 查询生成器查询中的所有内容都隐式位于根组中，根组可以具有 `p.or` 和 `p.not` 参数。
 
 以下示例用于将两个属性中的任一属性与值进行匹配：
 
@@ -44,7 +44,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-从概念上讲，这是`(1_property`或`2_property)`。
+从概念上讲 `(1_property` 或 `2_property)`.
 
 以下是嵌套群组的示例：
 
@@ -57,41 +57,41 @@ group.2_group.path=/content/dam/wknd
 group.2_group.type=dam:Asset
 ```
 
-这会在`/content/wknd/ch/de`的页面或`/content/dam/wknd`的资产中搜索术语&#x200B;**Management**。
+这会搜索术语 **管理** 在页面内 `/content/wknd/ch/de` 或 `/content/dam/wknd`.
 
-从概念上讲，这是`fulltext AND ( (path AND type) OR (path AND type) )`。 请注意，出于性能原因，此类OR连接需要良好的索引。
+从概念上讲 `fulltext AND ( (path AND type) OR (path AND type) )`. 请注意，出于性能原因，此类OR连接需要良好的索引。
 
 #### 属性 {#properties-6}
 
-* **`p.or`**  — 如果设置为， `true`则组中只能有一个谓词匹配。此值默认为`false`，这表示所有值必须匹配
+* **`p.or`**  — 如果设置为 `true`，组中只能有一个谓词匹配。 默认为 `false`表示必须匹配
 * **`p.not`**  — 如果设置为 `true`，则会否定群组(默认为 `false`)
 * **`<predicate>`**  — 添加嵌套谓词
-* **`N_<predicate>`**  — 添加多个同时的嵌套谓词，如  `1_property, 2_property, ...`
+* **`N_<predicate>`**  — 添加多个同时的嵌套谓词，如 `1_property, 2_property, ...`
 
 ### orderby {#orderby}
 
-此谓词允许对结果进行排序。 如果需要按多个属性进行排序，则需要使用数字前缀多次添加此谓词，如`1_orderby=first`、`2_oderby=second`。
+此谓词允许对结果进行排序。 如果需要按多个属性进行排序，则需要使用数字前缀多次添加此谓词，例如 `1_orderby=first`, `2_oderby=second`.
 
 #### 属性 {#properties-13}
 
-* **`orderby`** - JCR属性名称(例如，由前导@ `@jcr:lastModified` 表示)或 `@jcr:content/jcr:title`，或查询中的其他谓词(例如， `2_property`要对其排序)
-* **`sort`**  — 排序方向， `desc` 降序或升 `asc` 序（默认）
-* **`case`**  — 如果设置为， `ignore` 则会使排序不区分大小写，即 `a` 在 `B`之前；如果为空或忽略，则排序区分大小写，这表示排 `B` 序在  `a`
+* **`orderby`**  — 例如，由前导@指示的JCR属性名称 `@jcr:lastModified` 或 `@jcr:content/jcr:title`，或查询中的其他谓词，例如 `2_property`，排序对象
+* **`sort`**  — 排序方向 `desc` 为降序或 `asc` 升序（默认）
+* **`case`**  — 如果设置为 `ignore` 将不区分大小写，这表示 `a` 先于 `B`;如果为空或遗漏，则排序区分大小写，这表示 `B` 先于 `a`
 
 ## 谓语 {#predicates}
 
 ### 布尔属性 {#boolproperty}
 
-此谓词与JCR布尔属性匹配。 仅接受值`true`和`false`。 对于`false`，如果属性具有值`false`，或者该属性根本不存在，则匹配。 这可用于检查仅在启用时设置的布尔标记。
+此谓词与JCR布尔属性匹配。 仅接受值 `true` 和 `false`. 如果 `false`，则当属性具有值时，该参数将匹配 `false` 或者，如果它根本不存在。 这可用于检查仅在启用时设置的布尔标记。
 
-继承的`operation`参数没有意义。
+继承 `operation` 参数没有意义。
 
-此谓词支持Facet提取，并为每个`true`或`false`值提供存储段，但仅为现有属性提供存储段。
+此谓词支持Facet提取，并为每个Facet提供存储段 `true` 或 `false` 值，但仅适用于现有属性。
 
 #### 属性 {#properties}
 
-* **`boolproperty`**  — 属性的相对路径，例如 `myFeatureEnabled` 或  `jcr:content/myFeatureEnabled`
-* **`value`**  — 用于检查属性的值， `true` 或  `false`
+* **`boolproperty`**  — 属性的相对路径，例如 `myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
+* **`value`**  — 值检查属性， `true` 或 `false`
 
 ### contentfragment {#contentfragment}
 
@@ -117,28 +117,27 @@ group.2_group.type=dam:Asset
 * **`operation`**
    * `=` （默认）
    * `!=` 不等式比较
-   * `>` 表示 `property1` 大于  `property2`
-   * `>=` 表示 `property1` 大于或等于  `property2`
+   * `>` 表示 `property1` 大于 `property2`
+   * `>=` 表示 `property1` 大于或等于 `property2`
 
 ### 达特朗日 {#daterange}
 
-此谓词将JCR日期属性与日期/时间间隔相匹配。 它使用ISO8601
-日期和时间的格式(`YYYY-MM-DDTHH:mm:ss.SSSZ`)，并允许部分表示形式，如`YYYY-MM-DD`。 或者，可以将时间戳作为POSIX时间提供。
+此谓词将JCR日期属性与日期/时间间隔相匹配。 日期和时间采用ISO8601格式(`YYYY-MM-DDTHH:mm:ss.SSSZ`)，并允许部分表示，例如 `YYYY-MM-DD`. 或者，可以将时间戳作为POSIX时间提供。
 
 您可以查找两个时间戳之间的任何内容，即比给定日期晚或早的任何内容，也可以在包含时间戳和打开时间戳之间进行选择。
 
-它支持Facet提取，并提供存储段`today`、`this week`、`this month`、`last 3 months`、`this year`、`last year`和`earlier than last year`。
+它支持Facet提取并提供存储段 `today`, `this week`, `this month`, `last 3 months`, `this year`, `last year`和 `earlier than last year`.
 
 它不支持过滤。
 
 #### 属性 {#properties-3}
 
-* **`property`**  — 例如属性的 `DATE` 相对路径  `jcr:lastModified`
-* **`lowerBound`**  — 例如，下限日期将检查属性  `2014-10-01`
-* **`lowerOperation`** -( `>` 较新)或 `>=` （at或较新）适用于 `lowerBound`。默认为 `>`
-* **`upperBound`**  — 例如，检查属性的上限  `2014-10-01T12:15:00`
-* **`upperOperation`** -( `<` 旧)或 `<=` （旧）适用于 `upperBound`。默认为 `<`
-* **`timeZone`**  — 未作为ISO-8601日期字符串提供时使用的时区ID。默认时区是系统的默认时区。
+* **`property`**  — 相对路径 `DATE` 属性，例如 `jcr:lastModified`
+* **`lowerBound`**  — 例如，下限日期将检查属性 `2014-10-01`
+* **`lowerOperation`** - `>` （较新）或 `>=` （at或更高版本）适用于 `lowerBound`. 默认为 `>`
+* **`upperBound`**  — 例如，检查属性的上限 `2014-10-01T12:15:00`
+* **`upperOperation`** - `<` （旧）或 `<=` （在或更早版本） `upperBound`. 默认为 `<`
+* **`timeZone`**  — 未作为ISO-8601日期字符串指定时使用的时区ID。 默认时区是系统的默认时区。
 
 ### 排除路径 {#excludepaths}
 
@@ -163,17 +162,17 @@ group.2_group.type=dam:Asset
 #### 属性 {#properties-5}
 
 * **`fulltext`**  — 全文搜索词
-* **`relPath`**  — 属性或子节点中要搜索的相对路径。此属性是可选的。
+* **`relPath`**  — 属性或子节点中要搜索的相对路径。 此属性是可选的。
 
 ### hasPermission {#haspermission}
 
-此谓词将结果限制为当前会话具有指定[JCR权限的项目。](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+此谓词将结果限制为当前会话具有指定的项目 [JCR权限。](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 这是仅限过滤的谓词，无法利用搜索索引。 它不支持面提取。
 
 #### 属性 {#properties-7}
 
-* **`hasPermission`**  — 以逗号分隔的JCR权限，当前用户会话必须对相关节点具有ALL权限；例如 `jcr:write`,  `jcr:modifyAccessControl`
+* **`hasPermission`**  — 以逗号分隔的JCR权限，当前用户会话必须对相关节点具有ALL权限；例如 `jcr:write`, `jcr:modifyAccessControl`
 
 ### 语言 {#language}
 
@@ -185,11 +184,11 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-8}
 
-* **`language`**  — 例如ISO语言代码  `de`
+* **`language`**  — 例如ISO语言代码 `de`
 
 ### 主资产 {#mainasset}
 
-此谓词检查节点是否是DAM主资产而不是子资产。 这基本上是子资产节点内部的每个节点。 请注意，这不检查`dam:Asset`节点类型。 要使用此谓词，只需设置`mainasset=true`或`mainasset=false`。 没有其他属性。
+此谓词检查节点是否是DAM主资产而不是子资产。 这基本上是子资产节点内部的每个节点。 请注意，这不会检查 `dam:Asset` 节点类型。 要使用此谓词，只需设置 `mainasset=true` 或 `mainasset=false`. 没有其他属性。
 
 这是仅限过滤的谓词，无法利用搜索索引。
 
@@ -201,7 +200,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-此谓词会查找属于特定[sling资源集合](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)的成员的项目。
+此谓词会查找属于特定 [sling资源收集](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 这是仅限过滤的谓词，无法利用搜索索引。
 
@@ -219,20 +218,20 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-11}
 
-* **`nodename`**  — 允许使用通配符的节点名称模式： `*` =任何或无字符， `?`  =任何字符， `[abc]`  =仅括号中的字符
+* **`nodename`**  — 允许使用通配符的节点名称模式： `*` =任何字符或无字符， `?` =任意字符， `[abc]` =仅在括号中显示字符
 
 ### notexpired {#notexpired}
 
-此谓词通过检查JCR日期属性是否大于或等于当前服务器时间来匹配项。 这可用于检查`expiresAt`值，并将结果限制为只有那些尚未过期(`notexpired=true`)或已过期(`notexpired=false`)的值。
+此谓词通过检查JCR日期属性是否大于或等于当前服务器时间来匹配项。 这可用于检查 `expiresAt` 值并将结果限制为仅限那些尚未过期(`notexpired=true`)或已过期(`notexpired=false`)。
 
 它不支持过滤。
 
-它支持与[`daterange`](#daterange)谓词相同的方面提取。
+它支持与 [`daterange`](#daterange) 谓词。
 
 #### 属性 {#properties-12}
 
-* **`notexpired`**  — 布尔值， `true` 对于尚未过期（未来日期或等于日期）、 `false` 对于过期（过去日期）（必需）
-* **`property`**  — 要检查的属 `DATE` 性的相对路径（必需）
+* **`notexpired`**  — 布尔值， `true` （日期为未来或等于）， `false` （过去的日期）（必需）
+* **`property`**  — 相对路径 `DATE` 要检查的属性（必需）
 
 ### 路径 {#path}
 
@@ -243,11 +242,11 @@ group.2_group.type=dam:Asset
 #### 属性 {#properties-14}
 
 * **`path`**  — 这定义路径模式。
-   * 根据`exact`属性，整个子树将匹配（例如在xpath中附加`//*`，但请注意，这不包括基本路径），或者仅匹配精确的路径，该路径可以包含通配符(`*`)。
+   * 根据 `exact` 属性，则整个子树都将匹配(例如，附加 `//*` 在xpath中，但请注意，这不包括基本路径)，或者只有精确的路径匹配项，该匹配项可以包含通配符(`*`)。
       * 默认为 `true`
-   * 如果设置了`self`属性，则将搜索包含基节点的整个子树。
-* **`exact`**  — 如果 `exact` 为 `true`，则精确路径必须匹配，但可以包含简单的通配符(`*`)，该通配符匹配名称，但不匹配 `/`;如果为(默 `false` 认)，则包含所有子体（可选）
-* **`flat`**  — 仅搜索直接子项(例如附加 `/*` 到xpath中)(仅在 `exact` 不为true时使用，可选)
+   * 如果 `self`属性设置后，将搜索包含基础节点的整个子树。
+* **`exact`**  — 如果 `exact` is `true`，则路径必须完全匹配，但可以包含简单的通配符(`*`)，匹配名称，但不匹配 `/`;如果为 `false` （默认）包含所有子体（可选）
+* **`flat`**  — 仅搜索直接子项(例如附加 `/*` (仅在 `exact` 不为true，可选)
 * **`self`**  — 搜索子树，但包含作为路径给定的基节点（无通配符）
 
 ### 属性 {#property}
@@ -258,23 +257,23 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-15}
 
-* **`property`**  — 属性的相对路径，例如  `jcr:title`
+* **`property`**  — 属性的相对路径，例如 `jcr:title`
 * **`value`**  — 值，用于检查属性；将JCR属性类型跟踪到字符串转化
-* **`N_value`**  — 使 `1_value`用、  `2_value`、...检查多个值(默认情况下 `OR` 与结合使用， `AND` if  `and=true`)
-* **`and`**  — 设置为 `true` ，以将多个值(`N_value`)与  `AND`
+* **`N_value`**  — 使用 `1_value`, `2_value`,...检查多个值(与 `OR` 默认情况下，使用 `AND` if `and=true`)
+* **`and`**  — 设置为 `true` 用于组合多个值(`N_value`)与 `AND`
 * **`operation`**
    * `equals` （默认）
    * `unequals` 不等式比较
-   * `like` （可选） `jcr:like` 以使用xpath函数
-   * `not` 对于不匹配(例如，在 `not(@prop)` xpath中，值参数将被忽略)
+   * `like` 用于 `jcr:like` xpath函数（可选）
+   * `not` (例如， `not(@prop)` 在xpath中，值参数将被忽略)
    * `exists` 是否存在检查
       * `true` 属性必须存在
-      * `false` 与相同， `not` 且为默认值
-* **`depth`**  — 属性/相对路径可存在的通配符级别数(例如， `property=size depth=2` 将检 `node/size`查 `node/*/size` 和 `node/*/*/size`)
+      * `false` 与相同 `not` 和为默认值
+* **`depth`**  — 属性/相对路径可存在的通配符级别数(例如， `property=size depth=2` 将检查 `node/size`, `node/*/size` 和 `node/*/*/size`)
 
 ### rangproperty {#rangeproperty}
 
-此谓词将JCR属性与间隔匹配。 这适用于具有线性类型（如`LONG`、`DOUBLE`和`DECIMAL`）的属性。 对于`DATE`，请参阅[`daterange`](#daterange)谓词，该谓词已优化了日期格式输入。
+此谓词将JCR属性与间隔匹配。 这适用于具有线性类型(如 `LONG`, `DOUBLE` 和 `DECIMAL`. 对于 `DATE` 请参见 [`daterange`](#daterange) 谓词，已优化日期格式输入。
 
 您可以定义下限、上限或两者。 也可以单独为下界和上界指定操作（例如小于或等于）。
 
@@ -284,33 +283,33 @@ group.2_group.type=dam:Asset
 
 * **`property`**  — 属性的相对路径
 * **`lowerBound`**  — 下限检查属性
-* **`lowerOperation`** -  `>` （默认）或 `>=`，适用于  `lowerValue`
+* **`lowerOperation`** - `>` （默认）或 `>=`，适用于 `lowerValue`
 * **`upperBound`**  — 上界检查属性
-* **`upperOperation`** -  `<` （默认）或 `<=`，适用于  `lowerValue`
-* **`decimal`**  — 如 `true` 果选中的属性类型为“小数”
+* **`upperOperation`** - `<` （默认）或 `<=`，适用于 `lowerValue`
+* **`decimal`** - `true` 如果选中的属性类型为“小数”
 
 ### 相对变量 {#relativedaterange}
 
-此谓词使用相对于当前服务器时间的时间偏移，将`JCR DATE`属性与日期/时间间隔匹配。 您可以使用毫秒值或Bugzilla语法`1s 2m 3h 4d 5w 6M 7y`（一秒、二分钟、三小时、四天、五周、六个月、七年）来指定`lowerBound`和`upperBound`。 前缀为`-` ，表示当前时间之前的负偏移。 如果仅指定`lowerBound`或`upperBound`，则另一个默认值为`0`，表示当前时间。
+此谓词匹配 `JCR DATE` 使用相对于当前服务器时间的时间偏移对日期/时间间隔进行属性。 您可以指定 `lowerBound` 和 `upperBound` 使用毫秒值或Bugzilla语法 `1s 2m 3h 4d 5w 6M 7y` （一秒、二分钟、三小时、四天、五个星期、六个月、七年）。 前缀为 `-` 表示当前时间之前的负偏移。 如果仅指定 `lowerBound` 或 `upperBound`，另一个默认设置为 `0`，表示当前时间。
 
 例如：
 
-* `upperBound=1h` （没有）在 `lowerBound`接下来的一小时内选择任何内容
-* `lowerBound=-1d` （没有） `upperBound`在过去24小时内选择任何内容
-* `lowerBound=-6M` 在过 `upperBound=-3M` 去3到6个月里选择任何东西
-* `lowerBound=-1500` 和会 `upperBound=5500` 选择1500毫秒到5500毫秒之间的任何值
-* `lowerBound=1d` 然后 `upperBound=2d` 在后天选择任何内容
+* `upperBound=1h` （否） `lowerBound`)会在下一小时内选择任何内容
+* `lowerBound=-1d` （否） `upperBound`)会选择过去24小时内的任何内容
+* `lowerBound=-6M` 和 `upperBound=-3M` 在过去3到6个月里选择了任何东西
+* `lowerBound=-1500` 和 `upperBound=5500` 选择1500毫秒到5500毫秒之间的任何内容
+* `lowerBound=1d` 和 `upperBound=2d` 选择后天的任何内容
 
 请注意，考虑时间不需要多年，所有月份都为30天。
 
 它不支持过滤。
 
-它支持与[`daterange`](#daterange)谓词相同的方面提取。
+它支持与 [`daterange`](#daterange) 谓词。
 
 #### 属性 {#properties-17}
 
-* **`upperBound`**  — 相对于当前服务器时 `1s 2m 3h 4d 5w 6M 7y` 间以毫秒或（1秒、2分钟、3小时、4天、5周、6个月、7年）为上限，使用负偏移 `-` 值
-* **`lowerBound`**  — 相对于当前服务器时 `1s 2m 3h 4d 5w 6M 7y` 间，以毫秒或（1秒、2分钟、3小时、4天、5周、6个月、7年）为下限，使用负偏移 `-` 值
+* **`upperBound`**  — 以毫秒或以毫秒为单位的上限日期 `1s 2m 3h 4d 5w 6M 7y` （一秒、二分钟、三小时、四天、五周、六个月、七年） `-` 为负偏移
+* **`lowerBound`**  — 以毫秒或以毫秒为单位的下限日期 `1s 2m 3h 4d 5w 6M 7y` （一秒、二分钟、三小时、四天、五周、六个月、七年） `-` 为负偏移
 
 ### savedquery {#savedquery}
 
@@ -318,24 +317,24 @@ group.2_group.type=dam:Asset
 
 请注意，这不会执行额外的查询，而是扩展当前查询。
 
-可以使用`QueryBuilder#storeQuery()`以编程方式保留查询。 格式可以是多行`String`属性，也可以是`nt:file`节点，该节点将查询作为Java属性格式的文本文件。
+查询可以使用以编程方式持久保留 `QueryBuilder#storeQuery()`. 格式可以是多行 `String` 属性或 `nt:file` 节点，该节点将查询作为Java属性格式的文本文件。
 
 它不支持对保存查询的谓词进行分面提取。
 
 #### 属性 {#properties-19}
 
-* **`savedquery`**  — 保存查询的路径(属`String` 性或节 `nt:file` 点)
+* **`savedquery`**  — 保存查询的路径(`String` 属性或 `nt:file` node)
 
 ### 相似 {#similar}
 
-此谓词是使用JCR XPath的`rep:similar()`进行的相似性搜索。
+此谓词是使用JCR XPath的 `rep:similar()`.
 
 它不支持过滤，也不支持分面提取。
 
 #### 属性 {#properties-20}
 
 * **`similar`**  — 要查找相似节点的节点的绝对路径
-* **`local`**  — 子节点或当前节点的相 `.` 对路径(可选，默认为 `.`)
+* **`local`**  — 子节点或子节点的相对路径 `.` 对于当前节点(可选，默认值为 `.`)
 
 ### 标记 {#tag}
 
@@ -345,9 +344,9 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-21}
 
-* **`tag`**  — 例如，要查找的标记标题路径  `properties:orientation/landscape`
-* **`N_value`**  — 使用、  `1_value`、  `2_value`...检查多个标记(默认情况下 `OR` 与结合， `AND` 如果 `and=true`)
-* **`property`**  — 要查看的属性（或属性的相对路径）(默认 `cq:tags`)
+* **`tag`**  — 例如，要查找的标记标题路径 `properties:orientation/landscape`
+* **`N_value`**  — 使用 `1_value`, `2_value`,...检查多个标记(与 `OR` 默认情况下，使用 `AND` if `and=true`)
+* **`property`**  — 要查看的属性（或属性的相对路径）（默认） `cq:tags`)
 
 ### tagid {#tagid}
 
@@ -357,9 +356,9 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-22}
 
-* **`tagid`**  — 例如要查找的标记ID  `properties:orientation/landscape`
-* **`N_value`**  — 使用、  `1_value`、  `2_value`...检查多个标记ID(默认情况下，与 `OR` 一起使用， `AND` 如果 `and=true`)
-* **`property`**  — 要查看的属性（或属性的相对路径）(默认 `cq:tags`)
+* **`tagid`**  — 例如要查找的标记ID `properties:orientation/landscape`
+* **`N_value`**  — 使用 `1_value`, `2_value`, ...检查多个标记ID(与 `OR` 默认情况下，使用 `AND` if `and=true`)
+* **`property`**  — 要查看的属性（或属性的相对路径）（默认） `cq:tags`)
 
 ### tagsearch {#tagsearch}
 
@@ -370,9 +369,9 @@ group.2_group.type=dam:Asset
 #### 属性 {#Properties-1}
 
 * **`tagsearch`**  — 在标记标题中搜索的关键字
-* **`property`**  — 要考虑的属性（或属性的相对路径）(默认 `cq:tags`)
+* **`property`**  — 要考虑的属性（或属性的相对路径）（默认） `cq:tags`)
 * **`lang`**  — 仅在特定本地化的标记标题中搜索(例如， `de`)
-* **`all`**  — 用于搜索整个标记全文（即所有标题、描述等）的布尔值。（优先于`lang`）
+* **`all`**  — 用于搜索整个标记全文（即所有标题、描述等）的布尔值。 (优先于 `lang`)
 
 ### 类型 {#type}
 
@@ -382,4 +381,4 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#Properties-2}
 
-* **`type`**  — 要搜索的节点类型或混合名称，例如  `cq:Page`
+* **`type`**  — 要搜索的节点类型或混合名称，例如 `cq:Page`

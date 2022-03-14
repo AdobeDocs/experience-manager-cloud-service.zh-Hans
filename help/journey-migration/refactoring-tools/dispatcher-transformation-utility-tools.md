@@ -1,18 +1,19 @@
 ---
 title: AEM Dispatcher Converter 工具
 description: AEM Dispatcher Converter 工具
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 48%
 
 ---
 
-# AEM Dispatcher Converter {#introduction}
+# AEM Dispatcher 转换器 {#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispconverter"
->title="AEM Dispatcher Converter"
+>title="AEM Dispatcher 转换器"
 >abstract="Adobe Experience Manager Dispatcher Converter将现有AEM Dispatcher配置转换为AEMas a Cloud ServiceDispatcher配置。"
 
 Adobe Experience Manager Dispatcher Converter将现有AEM Dispatcher配置转换为AEMas a Cloud ServiceDispatcher配置。
@@ -24,7 +25,7 @@ Dispatcher 是 Adobe Experience Manager 的缓存和/或负载平衡工具。使
 >[!NOTE]
 >Dispatcher 最常见的用法是缓存来自 **AEM 发布实例**&#x200B;的响应，从而提高面向外部发布的网站的响应速度和安全性。
 
-请参阅 [Dispatcher 概述](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)，了解有关 Dispatcher 如何执行缓存，返回文档和执行负载平衡的信息。
+请参阅 [Dispatcher 概述](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)，了解有关 Dispatcher 如何执行缓存，返回文档和执行负载平衡的信息。
 
 ### Apache 和 Dispatcher 配置和测试 {#dispatcher-configurations-cloud}
 
@@ -32,7 +33,7 @@ Dispatcher 是 Adobe Experience Manager 的缓存和/或负载平衡工具。使
 
 有关更多信息，请参阅[云中的 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
-## AEM Dispatcher Converter {#aem-dispatcher-converter}
+## AEM Dispatcher 转换器 {#aem-dispatcher-converter}
 
 AEM Dispatcher Converter提供了重构现有的内部部署或Adobe Managed Services Dispatcher配置到与AEMas a Cloud Service兼容的Dispatcher配置的功能。
 

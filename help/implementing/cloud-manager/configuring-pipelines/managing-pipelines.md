@@ -2,13 +2,13 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除这些管道。
 index: true
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 管理管道 {#managing-pipelines}
 

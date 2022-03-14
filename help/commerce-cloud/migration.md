@@ -5,23 +5,23 @@ exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 3%
+ht-degree: 27%
 
 ---
 
 # 适用于Experience Manager Cloud Service的迁移指南 {#cif-migration}
 
-本指南可帮助确定您需要更新哪些区域才能进行Experience Manager Cloud Service迁移。
+本指南帮助确定您需要为 Experience Manager Cloud Service 迁移而更新的领域。
 
 ## CIF附加组件
 
-对于Experience Manageras a Cloud Service,CIF加载项是Adobe Commerce和第三方商务解决方案唯一支持的商务集成解决方案。 在Experience Manageras a Cloud Service时，会为客户自动部署CIF加载项，无需手动部署。 请参阅 [AEM Commerce入门as a Cloud Service](getting-started.md).
+对于 Experience Manager as a Cloud Service，CIF 加载项是 Adobe Commerce 和第三方 Commerce 唯一支持的 Commerce 集成解决方案。CIF 加载项自动为 Experience Manager as a Cloud Service 上的客户部署，无需手动部署。请参阅 [AEM Commerce as a Cloud Service 快速入门](getting-started.md)。
 
 支持部署CIFAdobe的项目 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components).
 
-CIF附加组件也可用于AEM 6.5，它还可通过 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 它兼容，并且提供与CIF附加组件相同的功能，用于Experience Manageras a Cloud Service — 无需进行任何调整。
+CIF 加载项可用于 AEM 6.5 以及通过[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)使用。它是兼容的，提供了与 Experience Manager as a Cloud Service 的 CIF 加载项相同的功能，无需调整。
 
-经典CIF及其依赖项不再可用。 依赖此CIF版本的代码使用 `com.adobe.cq.commerce.api` 必须根据CIF附加组件及其原则调整Java API。
+Classic CIF 及其依赖项不再可用。依赖此CIF版本的代码使用 `com.adobe.cq.commerce.api` 必须根据CIF附加组件及其原则调整Java API。
 
 无法再安装以前可用的CIF连接器。 依赖此连接器的代码需要根据CIF附加组件及其原则进行调整。
 

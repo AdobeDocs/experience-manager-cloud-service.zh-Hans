@@ -1,13 +1,13 @@
 ---
 title: 创建组件
 description: AEM组件用于保存、格式化和渲染网页上提供的内容。 可查看本页以了解有关创作渠道和渲染组件的信息。
-source-git-commit: 34a072bd8e936a7cdf6c37ad7b3eea704d644fd9
+exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # 创建组件 {#creating-components}
 
@@ -19,7 +19,7 @@ AEM组件用于保存、格式化和渲染网页上提供的内容。
 
 但是，由于渠道中的组件通常呈现全屏，因此在尝试编辑单个组件或撰写新订单时，创作体验将会受损。 因此，渠道将依赖选择器来呈现组件的不同视图。 创作环境将利用编辑选择器来激活自定义渠道渲染。
 
-例如, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
+例如，`http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
 在编辑时，用户不必负责将选择器添加到URL。 客户端逻辑正在侦听层交换事件，并在信道具有专用资源类型时添加选择器 *screens/core/components/channel.*
 

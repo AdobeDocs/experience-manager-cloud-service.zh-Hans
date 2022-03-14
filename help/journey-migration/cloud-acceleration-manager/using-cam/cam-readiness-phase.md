@@ -1,7 +1,8 @@
 ---
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述Cloud Acceleration Manager中的就绪阶段。
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%

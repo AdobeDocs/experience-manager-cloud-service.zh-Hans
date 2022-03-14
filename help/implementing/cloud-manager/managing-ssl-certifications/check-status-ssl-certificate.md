@@ -5,11 +5,11 @@ exl-id: 59d81356-2fa9-43db-bfa5-c2896c530eaa
 source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 检查SSL证书的状态 {#checking-status-an-ssl-certificate}
+# 检查 SSL 证书的状态 {#checking-status-an-ssl-certificate}
 
 可以从SSL证书页面一目了然地了解SSL证书的状态。
 

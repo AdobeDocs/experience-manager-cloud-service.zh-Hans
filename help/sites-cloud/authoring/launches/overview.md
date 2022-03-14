@@ -5,7 +5,7 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 80%
 * 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
-本节将介绍如何在站点控制台或[启动项控制台](#the-launches-console)中创建、编辑和提升（以及如有必要，还可以[delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）启动页面：
+本节将介绍如何创建、编辑和提升（如有必要） [删除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch))从站点控制台中启动页面，或 [启动项控制台](#the-launches-console):
 
 * [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
 * [编辑启动项](/help/sites-cloud/authoring/launches/editing.md)
@@ -84,15 +84,15 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->创建和编辑启动项需要具有`/content/launches`的访问权限 — 与默认组`content-authors`的访问权限相同。
+>创建和编辑启动项时，需要具有 `/content/launches`  — 与默认组一样 `content-authors`.
 >
 >如果您遇到任何问题，请联系您的系统管理员。
 
-## 引用（站点控制台）{#launches-in-references-sites-console}中的启动项
+## “引用”（“站点”控制台）中的启动项 {#launches-in-references-sites-console}
 
 1. 在&#x200B;**站点**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
-1. 选择&#x200B;**启动项**，将列出现有的启动项，以及对&#x200B;**启动项控制台**&#x200B;的访问：
+1. 选择 **启动项**，则会列出现有的启动项，以及对 **启动项控制台**:
 
    ![站点控制台中启动项的引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -100,17 +100,17 @@ ht-degree: 80%
 
    ![在站点控制台中对启动项执行的操作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
-## “启动项”控制台{#the-launches-console}
+## “启动项”控制台 {#the-launches-console}
 
 “启动项”控制台提供了启动项的概览，并允许您对列出的启动项执行操作。该控制台可以通过以下方式访问：
 
 * **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
 
-* **在站** 点控制台中导 **** 航源内容时， **** 启动“参考”边栏的“启动项”部分的底部。
+* **启动项控制台** 在 **启动项** 部分 **引用** 在站点控制台中导航源内容时进行边栏。
 
    ![“站点”控制台中启动项引用的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* 在站点控制台中导航启动项内容时， **启动项**&#x200B;按钮位于右上方的：
+* 的 **启动项** 按钮，在站点控制台中导航启动项内容时：
 
    ![站点控制台中的启动项选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 

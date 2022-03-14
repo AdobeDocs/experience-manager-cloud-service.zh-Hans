@@ -1,16 +1,16 @@
 ---
-title: 使用Dynamic Media
+title: 使用 Dynamic Media
 description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上使用。
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
-# 使用Dynamic Media {#working-with-dynamic-media}
+# 使用 Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media 有助于按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况。](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)Dynamic Media使用一组主源资产，通过其全球、可扩展、性能优化的网络，实时生成并传送多种丰富内容变体。
 
@@ -39,7 +39,7 @@ Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频�
 * [管理资产](managing-assets.md)
 * [使用概览创建自定义弹出窗口®](custom-pop-ups.md)
 
-另请参阅[设置Dynamic Media](administering-dynamic-media.md)。
+另请参阅 [设置Dynamic Media](administering-dynamic-media.md).
 
 <!-- 
 
@@ -74,13 +74,13 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ### PTIFF演绎版 {#ptiff-renditions}
 
-Dynamic Media启用的资产包括`pyramid.tiffs`。
+Dynamic Media启用的资产包括 `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### 资产视图更改 {#asset-views-change}
 
-启用Dynamic Media后，您可以通过单击`+`和`-`按钮来放大和缩小。您还可以单击/点按以放大特定区域。还原后，您可以转到原始版本，并通过单击对角箭头来使图像全屏显示。 启用Dynamic Media后，如下所示：
+启用Dynamic Media后，您可以通过单击 `+` 和 `-` 按钮。您还可以单击/点按以放大特定区域。还原后，您可以转到原始版本，并通过单击对角箭头来使图像全屏显示。 启用Dynamic Media后，如下所示：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

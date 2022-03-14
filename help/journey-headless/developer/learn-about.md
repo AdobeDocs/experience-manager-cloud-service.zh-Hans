@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 了解CMS无头开发 {#learn-about}
 
-在[AEM无头开发人员历程的这一部分中，](overview.md)了解无头技术以及使用无头技术的原因。
+在 [AEM Headless开发人员历程,](overview.md) 了解无头技术，以及您为何使用它。
 
 ## 目标 {#objective}
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 例如，无头服务器可能位于服务器机房的机架中，且未连接显示器。 要访问它，您必须远程连接到它。 在这种情况下，监视器是负责呈现服务器输出的头。 作为服务的使用者，在远程连接到该服务时，请提供您自己的头（显示器）。
 
-当我们讨论无头CMS时，CMS会管理内容并继续向消费者提供内容。 但是，无头CMS仅以标准化方式传送&#x200B;**内容**，从而忽略最终输出渲染，将内容的&#x200B;**表示**&#x200B;保留给消费服务。
+当我们讨论无头CMS时，CMS会管理内容并继续向消费者提供内容。 但是，通过仅提供 **内容** 无头CMS以标准化方式忽略最终输出渲染，从而将 **演示文稿** 内容到消费服务。
 
 ![无头CMS](assets/headless-cms.png)
 
@@ -120,11 +120,11 @@ ht-degree: 0%
 * 了解为何以及何时需要无头。
 * 在高级别了解无头概念的使用方式及其相互关系。
 
-在此知识的基础上，继续您的AEM无头历程，方法是接下来阅读文档[AEM无头Cloud Service入门](getting-started.md)，您将在该文档中了解如何设置必要工具，以及如何开始考虑AEM如何处理无头内容交付及其先决条件。
+在此知识的基础上，通过下一步审阅文档来继续您的AEM无头历程 [AEM Headless入门as a Cloud Service](getting-started.md) 您将在此处了解如何设置必要的工具，以及如何开始考虑AEM如何处理无外设内容交付及其先决条件。
 
 ## 其他资源 {#additional-resources}
 
-虽然建议您通过查看文档[AEM Headless as a Cloud Service快速入门，继续进入无头开发历程的下一部分，但是](getting-started.md)以下是一些额外的可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头开发历程。
+虽然建议您通过审阅文档来进入无头开发历程的下一部分 [AEM Headless入门as a Cloud Service,](getting-started.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头历程。
 
-* [Adobe Experience ManagerCloud Service架构简介](/help/overview/architecture.md)  — 了解AEM作为Cloud Service的结构
-* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 通过这些动手实践教程，了解如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。
+* [Adobe Experience Manager as a Cloud Service建筑简介](/help/overview/architecture.md)  — 了解AEMas a Cloud Service的结构
+* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)  — 使用这些动手实践教程探索如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。

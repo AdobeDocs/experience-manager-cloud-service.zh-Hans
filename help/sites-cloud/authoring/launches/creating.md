@@ -9,11 +9,11 @@ ht-degree: 80%
 
 ---
 
-# 创建启动项  {#creating-launches}
+# 创建启动项 {#creating-launches}
 
 可创建启动项，以允许更新现有网页的新版本，以便将来激活。创建启动项时，需要指定标题和源页面：
 
-* 标题会显示在[引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)边栏中，作者可以从中访问这些标题以对其进行处理。
+* 标题将显示在 [引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 边栏，作者可以从中访问这些页面以对其进行处理。
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，[Live Copy](/help/sites-cloud/administering/msm/overview.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
 
@@ -25,8 +25,7 @@ ht-degree: 80%
 >
 >* `/libs/launches/templates/outofscope`
 >
->
-无法编辑这些页面。 您将看到以下消息：
+>无法编辑这些页面。 您将看到以下消息：
 >
 >* **此页面未包含在启动项中。转到生产页面**
 
@@ -83,7 +82,7 @@ ht-degree: 80%
    * **启动项标题**：启动项的名称。该名称应当体现出作者的相关信息。
    * **包含现有内容**：将使用原始内容创建启动项。
    * **使用新模板替换页面**：有关更多详细信息，请参阅[使用新模板创建启动项](#create-launch-with-new-template)。
-   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为[Live Copy](/help/sites-cloud/administering/msm/overview.md)来实现此目的。 默认情况下，此选项处于选中状态。—>
+   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为 [Live Copy](/help/sites-cloud/administering/msm/overview.md). 默认情况下，此选项处于选中状态。—>
    * **启动日期**：激活启动副本的日期和时间（取决于&#x200B;**生产就绪**&#x200B;标记；请参阅[启动项 - 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)）。
 
    ![启动项属性](/help/sites-cloud/authoring/assets/launches-properties.png)
@@ -92,8 +91,8 @@ ht-degree: 80%
 
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 
-   * [**启动项**&#x200B;控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * **站点**&#x200B;控制台](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)中的&#x200B;[**引用**
+   * 的 [**启动项** 控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * 的 [**引用** 在 **站点** 控制台](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### 使用新模板创建启动项 {#create-launch-with-new-template}
 
@@ -118,7 +117,7 @@ ht-degree: 80%
 >
 >此机制可用于更改[现有页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)的模板，但必须考虑到内容丢失情况。
 
-### 创建嵌套启动项  {#creating-a-nested-launch}
+### 创建嵌套启动项 {#creating-a-nested-launch}
 
 通过创建嵌套启动项（一个启动项嵌套在另一个启动项中），您能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
@@ -128,18 +127,18 @@ ht-degree: 80%
 
 #### 创建嵌套启动项 -“启动项”控制台 {#creating-a-nested-launch-launches-console}
 
-从&#x200B;**启动项**&#x200B;控制台创建嵌套启动项与创建任何其他形式的启动项基本相同，但需要导航到启动项分支`/content/launches`的情况除外：
+从 **启动项** 控制台与创建任何其他形式的启动基本相同，但您需要导航到启动项分支 `/content/launches`:
 
 1. 在&#x200B;**启动项**&#x200B;控制台中，选择&#x200B;**创建**。
-1. 选择&#x200B;**添加页面**，然后通过在&#x200B;**筛选器**&#x200B;边栏中指定`/content/launches`，导航到启动项分支。 选择所需的启动项，并通过选择进 **行确认**:
+1. 选择 **添加页面**，然后通过指定 `/content/launches` 在 **过滤器** 边栏。 选择所需的启动项，并通过选择进 **行确认**:
 
    ![创建嵌套启动项](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
 1. 单击&#x200B;**下一步**&#x200B;以继续。
 
-1. 与任何其他启动项一样，完成&#x200B;**属性**。
+1. 完成 **属性** 与任何其他启动项一样。
 
-1. 使用&#x200B;**Create**&#x200B;完成。
+1. 完成 **创建**.
 
 #### 创建嵌套启动项 -“站点”控制台 {#creating-a-nested-launch-sites-console}
 

@@ -5,7 +5,7 @@ exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1557'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -129,16 +129,16 @@ AEM Formsas a Cloud Service为DocuSign提供自定义提交操作。 提交操�
 1. 在配置页面上，点按 **[!UICONTROL 创建]** 创建 [!DNL DocuSign] 配置AEM Forms。
 1. 在 **[!UICONTROL 常规]** 选项卡 **[!UICONTROL 创建DocuSign配置]** 页面，指定 **[!UICONTROL 名称]** 对于配置，请点按 **[!UICONTROL 下一个]**. 您可以选择指定 **[!UICONTROL 标题]**.
 
-1. 将当前浏览器窗口中的URL复制到记事本。 需要URL才能配置 [!DNL DocuSign] 应用程序 [!DNL AEM Forms] 在后续步骤中。
+1. 将当前浏览器窗口中的 URL 复制到记事本。在下一个步骤中使用 [!DNL AEM Forms] 配置 [!DNL DocuSign] 应用程序时需要此 URL。
 
-1. 为 [!DNL DocuSign] 应用程序：
+1. 配置 [!DNL DocuSign] 应用程序的 OAuth 设置：
 
    1. 打开浏览器窗口并登录到 [!DNL DocuSign] [开发人员帐户](https://admindemo.docusign.com/apps-and-keys).
    1. 打开为 [!DNL AEM Forms].
    1. 在 **[!UICONTROL 重定向URI]** 框中，添加在上一步中复制的URL并单击 **[!UICONTROL 保存]**.
    1. 记下集成密钥和密钥。
 
-   有关为 [!DNL DocuSign] 应用程序和获取密钥，请参阅 [为应用程序配置oAuth设置](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys) 开发人员文档。
+   有关为 [!DNL DocuSign] 应用程序配置 OAuth 设置并获取密钥的分步信息，请参阅[为应用程序配置 OAuth 设置](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys)开发人员文档。
 
 1. 返回到 **[!UICONTROL 创建DocuSign配置]** 页面。 在 **[!UICONTROL 设置]** 选项卡 **[!UICONTROL OAuth URL]** 字段会提及以下默认URL:
 
@@ -146,15 +146,15 @@ AEM Formsas a Cloud Service为DocuSign提供自定义提交操作。 提交操�
 
 1. 指定 **[!UICONTROL 客户端ID]** （DocuSign集成密钥）和 **[!UICONTROL 客户端密钥]** （DocuSign密钥）。
 
-1. 点按 **[!UICONTROL 连接到DocuSign]**. 提示输入凭据时，请提供创建时所用帐户的用户名和密码 [!DNL DocuSign] 应用程序。 当要求确认访问 `your developer account`，单击 **[!UICONTROL 允许访问]**. 如果凭据正确，则会显示成功消息。
+1. 点按 **[!UICONTROL 连接到DocuSign]**. 在系统提示输入凭据时，提供在创建 [!DNL DocuSign] 应用程序时所用帐户的用户名和密码。当要求确认访问 `your developer account`，单击 **[!UICONTROL 允许访问]**. 如果凭据正确，则会显示成功消息。
 
 1. 点按 **[!UICONTROL 创建]** 创建 [!DNL DocuSign] 配置。
 
-1. 选择配置并单击 **[!UICONTROL 发布]**，选择配置，然后单击 **[!UICONTROL 发布]**. 它会将配置复制到相应的发布环境。
+1. 选择配置并单击 **[!UICONTROL 发布]**，选择配置，然后单击 **[!UICONTROL 发布]**. 这会将配置复制到相应的发布环境。
 
-1. 对您的开发人员、暂存和生产实例（以左者为准）重复上述所有步骤以完成配置 [!DNL DocuSign] with [!DNL AEM Forms] 的URL。
+1. 在开发人员实例、暂存实例和生产实例（以剩下的实例为准）上重复上述所有步骤以使用 [!DNL AEM Forms] 为环境配置 [!DNL DocuSign]。
 
-现在，您的AEM Forms环境已配置为使用DocuSign。 确保将用于Cloud Service的配置容器添加到要启用的所有自适应Forms [!DNL DocuSign]. 您可以从自适应表单的属性中指定配置容器。
+现在，您的AEM Forms环境已配置为使用DocuSign。 确保将用于 Cloud Service 的配置容器添加到为 [!DNL DocuSign] 启用的所有自适应表单。您可以在自适应表单的属性中指定配置容器。
 
 ### 使用 [!DNL DocuSign] 在自适应表单中 {#enabledocusign}
 

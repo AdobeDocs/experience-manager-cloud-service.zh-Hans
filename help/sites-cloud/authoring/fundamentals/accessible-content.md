@@ -78,7 +78,7 @@ ht-degree: 98%
 >
 >某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
->在为AEM实例实施这些版本时，开发团队将需要配置这些组件以支持`alt`属性，以便作者可以将其添加到内容中（请参阅[添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
+>在为AEM实例实施这些版本时，开发团队将需要配置这些组件以支持 `alt` 属性，以便作者可以将其添加到内容中(请参阅 [添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
 默认情况下，AEM 要求填写&#x200B;**替换文本**&#x200B;字段。如果图像是纯粹的装饰并且不需要替换文本，则可以选中&#x200B;**图像具有装饰性**&#x200B;选项。
 
@@ -339,7 +339,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
    >[!NOTE]
    >
-   >默认情况下，这些元素和属性并非直接可用，但系统管理员可以在&#x200B;**表属性**&#x200B;对话框中添加对这些值的支持（请参阅[添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
+   >默认情况下，这些元素和属性并非直接可用，不过系统管理员可以在 **表属性** 对话框(请参阅 [添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
    要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
 
@@ -361,7 +361,6 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
       >
       >尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
-
 
 * **复杂数据表**：在某些情况下，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。
 
@@ -1038,7 +1037,7 @@ John Smith’s publications
 >
 >如果包含使用不同语言的人名或城市，或者使用默认语言中常用的外来词或短语（如英语中的 *schadenfreude*），则不必遵循此成功标准。
 
-要添加包含相应语言的 span 元素，可以在 RTE 的源代码编辑模式下手动编辑 HTML 标记，以将其写成如上显示的方式。或者，也可以由系统管理员将`lang`属性包含在RTE中（请参阅[添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
+要添加包含相应语言的 span 元素，可以在 RTE 的源代码编辑模式下手动编辑 HTML 标记，以将其写成如上显示的方式。或者， `lang` 属性可由系统管理员包含在RTE中(请参阅 [添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
 #### 更多信息 - 局部语言 (3.1.2) {#more-information-language-of-parts}
 
@@ -1280,7 +1279,7 @@ John Smith’s publications
 
 [原则 4：强健 - 内容必须足够强健，以供包括辅助技术在内的各种用户代理进行解读。](https://www.w3.org/TR/WCAG/#robust)
 
-### 兼容 (4.1) {#compatible}
+### 兼容(4.1) {#compatible}
 
 [准则 4.1 兼容：最大限度地兼容当前和未来用户代理，包括辅助技术。](https://www.w3.org/TR/WCAG/#compatible)
 

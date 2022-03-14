@@ -1,12 +1,12 @@
 ---
 title: 内容片段 - 删除注意事项
 description: 在AEM中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于交付无头内容的强大工具，必须仔细考虑删除这些片段的影响。
-feature: 内容片段
+feature: Content Fragments
 role: User
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 10%
 
 ---
@@ -23,19 +23,19 @@ ht-degree: 10%
 
 1. **内容片段作为单个实体。**
 
-   * **用例**:需要编辑/更新内容片段 — 和删除 **整个片段的用户**。
-   * **权限**:可以通过“用户”和/或“群组管理”来分配“删除”权限。  <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **用例**:需要编辑/更新内容片段的用户 —  **并删除整个片段**.
+   * **权限**:可以通过“用户”和/或“群组管理”来分配“删除”权限。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **构成内容片段的多个子实体；例如，变体、子节点。**
 
    内容片段编辑器的基本操作要求可以删除此类临时子元素。 例如，在处理变量时；在编辑元数据或管理关联的内容时，也可以。
 
-   * **用例**:需要编辑/更新内容片段的用户 —  **不允许删除整个片段**。
-   * **权限**:请参 [阅仅编辑器功能所需的权限](#permissions-required-for-editor-functionality-only)。
+   * **用例**:需要编辑/更新内容片段的用户 —  **不允许删除整个片段**.
+   * **权限**:请参阅 [仅编辑器功能所需的权限](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->当用户没有任何“删除”权限时，内容片段编辑器将以&#x200B;*只读*&#x200B;模式运行。<!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>当用户没有任何“删除”权限时，内容片段编辑器将在 *只读* 模式。 <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -49,9 +49,9 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->编辑/更新内容片段所需的删除权限包含在通过用户和/或群组管理分配的“删除”权限中。<!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+>编辑/更新内容片段所需的删除权限包含在通过用户和/或群组管理分配的“删除”权限中。 <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-编辑/更新片段所需的权限需要应用于包含内容片段的节点或相应的父节点（在`/content/dam`下的任何级别）。 当分配给此类父节点时，权限将应用于该分支中的所有节点。
+编辑/更新片段所需的权限需要应用于包含内容片段的节点或相应的父节点(位于 `/content/dam`)。 当分配给此类父节点时，权限将应用于该分支中的所有节点。
 
 例如，将包含所有内容片段的文件夹，例如：
 
@@ -59,9 +59,9 @@ ht-degree: 10%
 
 >[!CAUTION]
 >
->也可以对`/content/dam`设置权限，因为此处存储了所有内容片段。
+>在 `/content/dam` 也是可能的，因为此处存储了所有内容片段。
 >
->但是，此操作也会将相同的删除权限应用于&#x200B;*所有*&#x200B;其他资产类型。
+>但是，此操作会将相同的删除权限应用到 *全部* 其他资产类型。
 
 允许特定用户和/或群组编辑/更新内容片段的先决条件是：
 
@@ -71,15 +71,15 @@ ht-degree: 10%
 
 * 对于内容片段节点或文件夹：
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+   * `jcr:addChildNodes`、`jcr:modifyProperties`
 
-* 对于所有内容片段的`jcr:content`节点：
+* 对于 `jcr:content`所有内容片段的节点：
 
-   * `jcr:addChildNodes`、 `jcr:modifyProperties` 和  `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`
 
-* 对于所有内容片段的`jcr:content`以下的所有节点：
+* 适用于以下所有节点 `jcr:content` 所有内容片段的以下内容：
 
-   * `jcr:addChildNodes`、 `jcr:modifyProperties` 和 `jcr:removeChildNodes`、  `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`, `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 

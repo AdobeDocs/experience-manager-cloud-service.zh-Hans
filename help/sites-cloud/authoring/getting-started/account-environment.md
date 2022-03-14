@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# 配置帐户环境  {#configuring-your-account-environment}
+# 配置帐户环境 {#configuring-your-account-environment}
 
 AEM 提供了配置帐户和创作环境某些方面的功能。
 

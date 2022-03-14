@@ -1,5 +1,5 @@
 ---
-title: 使用CRXDE Lite
+title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入门的一部分，您可以在浏览器中的本地开发环境中访问和修改存储库。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
@@ -9,7 +9,7 @@ ht-degree: 3%
 
 ---
 
-# 使用CRXDE Lite {#using-crxde-lite}
+# 使用 CRXDE Lite {#using-crxde-lite}
 
 CRXDE Lite是AEM快速入门的一部分，您可以在浏览器中的本地开发环境中访问和修改存储库。 通过CRXDE Lite，您可以编辑文件、文件夹、节点和属性。 您可以在这个易于使用的界面中访问整个存储库。
 

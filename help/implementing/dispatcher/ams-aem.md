@@ -1,47 +1,46 @@
 ---
-title: 将Dispatcher配置从AMS迁移到AEM as aCloud Service
-description: '将Dispatcher配置从AMS迁移到AEM as aCloud Service '
+title: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
+description: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 14%
+source-wordcount: '1446'
+ht-degree: 17%
 
 ---
 
-# 将Dispatcher配置从AMS迁移到AEM as aCloud Service {#Dispatcher-in-the-cloud}
+# 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service {#Dispatcher-in-the-cloud}
 
-## AMS Dispatcher与AEM as a Target的主要区别Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
+## AMS Dispatcher与AEMas a Cloud Service的主要区别 {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-AEM as aCloud Service中的Apache和Dispatcher配置与AMS配置非常相似。 主要区别包括：
+AEMas a Cloud Service中的Apache和Dispatcher配置与AMS配置非常相似。 主要区别包括：
 
-* 在AEM as aCloud Service中，不能使用某些Apache指令（例如`Listen`或`LogLevel`）
-* 在AEM as a Cloud Service中，只能将部分Dispatcher配置放入包含文件中，其命名很重要。 例如，要在不同主机之间重复使用的过滤器规则必须放入名为`filters/filters.any`的文件中。 有关更多信息，请参阅参考页面。
-* 在AEM as aCloud Service中，有额外的验证来禁止使用`/glob`编写的过滤器规则，以防止出现安全问题。 由于将使用`deny *`而不是`allow *`（不能使用），因此客户将从在本地运行Dispatcher以及执行试用和错误中受益，查看日志可准确了解Dispatcher过滤器为了添加这些过滤器而阻止的路径。
+* 在AEMas a Cloud Service中，某些Apache指令可能不被使用(例如 `Listen` 或 `LogLevel`)
+* 在AEMas a Cloud Service中，只能将部分Dispatcher配置放入包含文件中，其命名很重要。 例如，要在不同主机之间重复使用的过滤器规则必须放入名为 `filters/filters.any`. 有关更多信息，请参阅参考页面。
+* 在AEMas a Cloud Service中，存在额外的验证，以禁止使用编写的过滤器规则 `/glob` 以防止出现安全问题。 自 `deny *` 将使用而不是 `allow *` （不能使用），客户将从在本地运行Dispatcher以及执行试用和错误中受益，通过查看日志可准确了解Dispatcher过滤器为了添加这些过滤器而阻止的路径。
 
-## 将调度程序配置从AMS迁移到AEM as aCloud Service的准则
+## 将调度程序配置从AMS迁移到AEMas a Cloud Service的准则
 
-Dispatcher配置结构在Managed Services与AEM as a Dispatcher之间存在差异。 下面提供了关于如何从AMS Dispatcher配置版本2迁移到AEM as aCloud Service的分步指南。
+Dispatcher配置结构在Managed Services和AEMas a Cloud Service之间存在差异。 下面提供了有关如何从AMS Dispatcher配置版本2迁移到AEMas a Cloud Service的分步指南。
 
 ## 如何将AMS转换为AEM as a Cloud Service Dispatcher配置
 
-以下部分提供了有关如何转换AMS配置的分步说明。 它假定
-具有与[Cloud Manager Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述结构类似的存档
+以下部分提供了有关如何转换AMS配置的分步说明。 它假定您有一个存档，其结构与 [Cloud Manager Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### 提取存档并删除最后的前缀
 
-将存档解压缩到文件夹中，并确保子文件夹的直接开头为`conf`、`conf.d`、
-`conf.dispatcher.d`和`conf.modules.d`。 如果没有，请在层级中向上移动。
+将存档解压缩到文件夹，并确保子文件夹的直接开头为 `conf`, `conf.d`,
+`conf.dispatcher.d` 和 `conf.modules.d`. 如果没有，请在层级中向上移动。
 
 ### 删除未使用的子文件夹和文件
 
-删除子文件夹`conf`和`conf.modules.d`，以及与`conf.d/*.conf`匹配的文件。
+删除子文件夹 `conf` 和 `conf.modules.d`，以及文件匹配 `conf.d/*.conf`.
 
 ### 删除所有未发布的虚拟主机
 
-删除`conf.d/enabled_vhosts`中具有`author`、`unhealthy`、`health`的所有虚拟主机文件，
-`lc`或`flush`。 `conf.d/available_vhosts`中所有非虚拟主机文件
-也可以删除链接到的。
+删除 `conf.d/enabled_vhosts` 具有 `author`, `unhealthy`, `health`,
+`lc` 或 `flush` 以它的名称。 中的所有虚拟主机文件 `conf.d/available_vhosts` 也可以删除未链接到的访客。
 
 ### 移除或注释未引用端口 80 的虚拟主机部分
 
@@ -58,45 +57,38 @@ Dispatcher配置结构在Managed Services与AEM as a Dispatcher之间存在差�
 
 ### 检查 rewrites
 
-进入目录`conf.d/rewrites`。
+进入目录 `conf.d/rewrites`.
 
-移除任何名为`base_rewrite.rules`和`xforwarded_forcessl_rewrite.rules`的文件，并记住
-删除虚拟主机文件中引用`Include`语句。
+删除任何名为 `base_rewrite.rules` 和 `xforwarded_forcessl_rewrite.rules` 并记住删除 `Include` 虚拟主机文件中引用这些语句的语句。
 
-如果`conf.d/rewrites`现在包含单个文件，则应将其重命名为`rewrite.rules`，但不应
-也请忘记修改虚拟主机文件中引用该文件的`Include`语句。
+如果 `conf.d/rewrites` 现在包含单个文件，应将其重命名为 `rewrite.rules` 别忘了调整 `Include` 语句引用虚拟主机文件中该文件。
 
-但是，如果文件夹包含多个特定于虚拟主机的文件，则其内容应为
-复制到虚拟主机文件中引用`Include`语句的。
+但是，如果文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到 `Include` 在虚拟主机文件中引用它们的语句。
 
 ### 检查 variables
 
-进入目录`conf.d/variables`。
+进入目录 `conf.d/variables`.
 
-移除任何名为`ams_default.vars`的文件，并记住移除虚拟中的`Include`语句
-主机文件。
+删除任何名为 `ams_default.vars` 并记住删除 `Include` 虚拟主机文件中引用这些语句的语句。
 
-如果`conf.d/variables`现在包含单个文件，则应将其重命名为`custom.vars`，但不应
-也请忘记修改虚拟主机文件中引用该文件的`Include`语句。
+如果 `conf.d/variables` 现在包含单个文件，应将其重命名为 `custom.vars` 别忘了调整 `Include` 语句引用虚拟主机文件中该文件。
 
-但是，如果文件夹包含多个特定于虚拟主机的文件，则其内容应为
-复制到虚拟主机文件中引用`Include`语句的。
+但是，如果文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到 `Include` 在虚拟主机文件中引用它们的语句。
 
 ### 删除允许列表
 
-删除文件夹`conf.d/whitelists`，并删除虚拟主机文件中引用的`Include`语句
-子文件夹中的一些文件。
+删除文件夹 `conf.d/whitelists` 删除 `Include` 虚拟主机文件中引用该子文件夹中某个文件的语句。
 
 ### 替换任何不再可用的变量
 
 在所有虚拟主机文件中：
 
-将`PUBLISH_DOCROOT`重命名为`DOCROOT`
-删除引用名为`DISP_ID`、`PUBLISH_FORCE_SSL`或`PUBLISH_WHITELIST_ENABLED`的变量的部分
+重命名 `PUBLISH_DOCROOT` to `DOCROOT`
+删除引用名为 `DISP_ID`, `PUBLISH_FORCE_SSL` 或 `PUBLISH_WHITELIST_ENABLED`
 
 ### 通过运行验证器检查状态
 
-使用`httpd`子命令在目录中运行Dispatcher验证器：
+在目录中使用 `httpd` 子命令：
 
 ```
 $ validator httpd .
@@ -108,41 +100,32 @@ $ validator httpd .
 
 ### 删除所有未发布的场
 
-删除`conf.dispatcher.d/enabled_farms`中具有`author`、`unhealthy`、`health`、
-`lc`或`flush`。 `conf.dispatcher.d/available_farms`中所有非
-也可以删除链接到的。
+删除 `conf.dispatcher.d/enabled_farms` 具有 `author`, `unhealthy`, `health`,
+`lc` 或 `flush` 以它的名称。 中的所有场文件 `conf.dispatcher.d/available_farms` 也可以删除未链接到的访客。
 
 ### 重命名场文件
 
-必须重命名`conf.d/enabled_farms`中的所有场以匹配模式`*.farm`，例如
-名为`customerX_farm.any`的场文件应重命名为`customerX.farm`。
+所有农场 `conf.d/enabled_farms` 必须重命名以匹配模式 `*.farm`，例如名为的场文件 `customerX_farm.any` 应重命名 `customerX.farm`.
 
 ### 检查 cache
 
-进入目录`conf.dispatcher.d/cache`。
+进入目录 `conf.dispatcher.d/cache`.
 
 移除所有前缀为 `ams_` 的文件。
 
-如果`conf.dispatcher.d/cache`现在为空，请复制文件`conf.dispatcher.d/cache/rules.any`
-从标准Dispatcher配置到此文件夹。 标准Dispatcher
-可在此SDK的文件夹`src`中找到配置。 不要忘记调整
-引用场文件中`ams_*_cache.any`规则文件的`$include`语句
-也是。
+如果 `conf.dispatcher.d/cache` 现在为空，请复制文件 `conf.dispatcher.d/cache/rules.any`
+从标准Dispatcher配置到此文件夹。 标准Dispatcher配置可在文件夹中找到 `src` 的SDK。 不要忘记调整
+`$include` 引用 `ams_*_cache.any` 场文件中的规则文件。
 
-相反，如果`conf.dispatcher.d/cache`现在包含一个后缀为`_cache.any`的文件，
-它应重命名为`rules.any`，并且不要忘记修改`$include`语句
-在场文件中也引用该文件。
+如果 `conf.dispatcher.d/cache` 现在包含带后缀的单个文件 `_cache.any`，则应将其重命名为 `rules.any` 别忘了调整 `$include` 语句，引用场文件中该文件。
 
-但是，如果文件夹包含多个具有该模式且特定于场的文件，则其内容为
-应该复制到场文件中引用它们的`$include`语句中。
+但是，如果文件夹包含多个具有该模式且特定于场的文件，则应将其内容复制到 `$include` 在场文件中引用它们的语句。
 
-移除所有后缀为`_invalidate_allowed.any`的文件。
+移除所有带后缀的文件 `_invalidate_allowed.any`.
 
-从默认位置复制文件`conf.dispatcher.d/cache/default_invalidate_any`
-AEM中的。
+复制文件 `conf.dispatcher.d/cache/default_invalidate_any` 从云调度程序配置中的默认AEM到该位置。
 
-在每个场文件中，删除`cache/allowedClients`部分中的所有内容并将其替换
-与：
+在每个场文件中，删除 `cache/allowedClients` 部分，替换为：
 
 ```
 $include "../cache/default_invalidate.any"
@@ -150,19 +133,15 @@ $include "../cache/default_invalidate.any"
 
 ### 检查 client headers
 
-进入目录`conf.dispatcher.d/clientheaders`。
+进入目录 `conf.dispatcher.d/clientheaders`.
 
 移除所有前缀为 `ams_` 的文件。
 
-如果`conf.dispatcher.d/clientheaders`现在包含一个后缀为`_clientheaders.any`的文件，
-它应重命名为`clientheaders.any`，并且不要忘记修改`$include`语句
-在场文件中也引用该文件。
+如果 `conf.dispatcher.d/clientheaders` 现在包含带后缀的单个文件 `_clientheaders.any`，则应将其重命名为 `clientheaders.any` 别忘了调整 `$include` 语句，引用场文件中该文件。
 
-但是，如果文件夹包含多个具有该模式且特定于场的文件，则其内容为
-应该复制到场文件中引用它们的`$include`语句中。
+但是，如果文件夹包含多个具有该模式且特定于场的文件，则应将其内容复制到 `$include` 在场文件中引用它们的语句。
 
-从默认位置复制文件`conf.dispatcher/clientheaders/default_clientheaders.any`
-AEM作为该位置的Cloud ServiceDispatcher配置。
+复制文件 `conf.dispatcher/clientheaders/default_clientheaders.any` 从默认的AEMas a Cloud ServiceDispatcher配置到该位置。
 
 在每个场文件中，将如下所示的任何clientheader include语句：
 
@@ -179,19 +158,16 @@ $include "../clientheaders/default_clientheaders.any"
 
 ### 检查 filter
 
-进入目录`conf.dispatcher.d/filters`。
+进入目录 `conf.dispatcher.d/filters`.
 
 移除所有前缀为 `ams_` 的文件。
 
-如果`conf.dispatcher.d/filters`现在包含单个文件，则应将其重命名为
-`filters.any`，并且不要忘记修改引用该变量的`$include`语句
-文件。
+如果 `conf.dispatcher.d/filters` 现在包含单个文件，应将其重命名为
+`filters.any` 别忘了调整 `$include` 语句，引用场文件中该文件。
 
-但是，如果文件夹包含多个具有该模式且特定于场的文件，则其内容为
-应该复制到场文件中引用它们的`$include`语句中。
+但是，如果文件夹包含多个具有该模式且特定于场的文件，则应将其内容复制到 `$include` 在场文件中引用它们的语句。
 
-从默认位置复制文件`conf.dispatcher/filters/default_filters.any`
-AEM作为该位置的Cloud ServiceDispatcher配置。
+复制文件 `conf.dispatcher/filters/default_filters.any` 从默认的AEMas a Cloud ServiceDispatcher配置到该位置。
 
 在每个场文件中，将如下所示的任何filter include语句：
 
@@ -207,15 +183,13 @@ $include "../filters/default_filters.any"
 
 ### 检查 renders
 
-进入目录`conf.dispatcher.d/renders`。
+进入目录 `conf.dispatcher.d/renders`.
 
 移除该文件夹中的所有文件。
 
-从默认位置复制文件`conf.dispatcher.d/renders/default_renders.any`
-AEM作为该位置的Cloud ServiceDispatcher配置。
+复制文件 `conf.dispatcher.d/renders/default_renders.any` 从默认的AEMas a Cloud ServiceDispatcher配置到该位置。
 
-在每个场文件中，删除`renders`部分中的所有内容并将其替换
-与：
+在每个场文件中，删除 `renders` 部分，替换为：
 
 ```
 $include "../renders/default_renders.any"
@@ -223,19 +197,16 @@ $include "../renders/default_renders.any"
 
 ### 检查 virtualhosts
 
-将目录`conf.dispatcher.d/vhosts`重命名为`conf.dispatcher.d/virtualhosts`并输入。
+重命名目录 `conf.dispatcher.d/vhosts` to `conf.dispatcher.d/virtualhosts` 然后输入。
 
 移除所有前缀为 `ams_` 的文件。
 
-如果`conf.dispatcher.d/virtualhosts`现在包含单个文件，则应将其重命名为
-`virtualhosts.any`，并且不要忘记修改引用该变量的`$include`语句
-文件。
+如果 `conf.dispatcher.d/virtualhosts` 现在包含单个文件，应将其重命名为
+`virtualhosts.any` 别忘了调整 `$include` 语句，引用场文件中该文件。
 
-但是，如果文件夹包含多个具有该模式且特定于场的文件，则其内容为
-应该复制到场文件中引用它们的`$include`语句中。
+但是，如果文件夹包含多个具有该模式且特定于场的文件，则应将其内容复制到 `$include` 在场文件中引用它们的语句。
 
-从默认位置复制文件`conf.dispatcher/virtualhosts/default_virtualhosts.any`
-AEM作为该位置的Cloud ServiceDispatcher配置。
+复制文件 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 从默认的AEMas a Cloud ServiceDispatcher配置到该位置。
 
 在每个场文件中，将如下所示的任何filter include语句：
 
@@ -251,7 +222,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### 通过运行验证器检查状态
 
-使用`dispatcher`子命令在目录中将AEM作为Cloud ServiceDispatcher验证器运行：
+在目录中使用 `dispatcher` 子命令：
 
 ```
 $ validator dispatcher .
@@ -265,9 +236,7 @@ $ validator dispatcher .
 
 ### 在本地部署中测试您的配置（需要安装Docker）
 
-使用AEM中的脚本`docker_run.sh`作为Cloud Service调度程序工具，您可以测试
-您的配置不包含只会在
-部署：
+使用脚本 `docker_run.sh` 在AEMas a Cloud ServiceDispatcher工具中，您可以测试配置不包含只会在部署中显示的任何其他错误：
 
 ### 步骤1:使用验证器生成部署信息
 
@@ -280,8 +249,7 @@ validator full -d out .
 
 ### 步骤2:使用该部署信息在Docker映像中启动Dispatcher
 
-当您的AEM发布服务器在macOS计算机上运行，监听端口4503时，
-您可以在该服务器前面运行启动Dispatcher，如下所示：
+如果AEM发布服务器在macOS计算机上运行，并监听端口4503，则可以在该服务器前面运行启动Dispatcher，如下所示：
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -291,9 +259,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 使用新的Dispatcher配置
 
-恭喜！ 如果验证器不再报告任何问题，并且
-docker容器启动时没有出现任何故障或警告，您
-已准备好将配置移动到`dispatcher/src`子目录
-的URL。
+恭喜！ 如果验证器不再报告任何问题，并且Docker容器启动时没有出现任何故障或警告，则可以将配置移动到 `dispatcher/src` git存储库的子目录。
 
 **使用AMS Dispatcher配置版本1的客户应联系客户支持，以帮助他们从版本1迁移到版本2，以便按照上述说明操作。**

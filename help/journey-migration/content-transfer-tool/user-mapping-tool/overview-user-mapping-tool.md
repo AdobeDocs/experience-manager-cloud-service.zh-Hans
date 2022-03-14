@@ -1,13 +1,13 @@
 ---
 title: 用户映射工具概述
 description: 用户映射工具概述
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
-
 
 # 用户映射工具概述 {#overview-user-mapping-tool}
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 在过渡到Adobe Experience Manager(AEM)as a Cloud Service的历程中，您需要将用户和组从现有AEM系统移至AEMas a Cloud Service。 这由内容传输工具完成。
 
-AEMas a Cloud Service的一项主要更改是完全集成地使用AdobeID访问创作层。  这需要使用 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 用于管理用户和用户组。 AdobeIdentity Management系统(IMS)中集中了用户配置文件信息，该系统可在所有Adobe云应用程序中提供单点登录。 有关更多详细信息，请参阅 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). 由于进行了这项更改，现有用户和组需要映射到其IMS ID，以避免Cloud Service创作实例上出现重复的用户和组。
+对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。这需要使用 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 用于管理用户和用户组。 AdobeIdentity Management系统(IMS)中集中了用户配置文件信息，该系统可在所有Adobe云应用程序中提供单点登录。 有关更多详细信息，请参阅 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). 由于进行了这项更改，现有用户和组需要映射到其IMS ID，以避免Cloud Service创作实例上出现重复的用户和组。
 
 ## 用户映射工具 {#mapping-tool}
 

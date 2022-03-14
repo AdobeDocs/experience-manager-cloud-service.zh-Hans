@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# WKND SPA项目{#wknd-spa-project}
+# WKND SPA项目 {#wknd-spa-project}
 
 通过本多部分教程，您可以领导您完成项目设置、组件映射、前端开发工具和应用程序路由来实施您自己的SPA，从而沉浸在SPA开发中。
 
@@ -20,4 +20,4 @@ ht-degree: 0%
 * [在AEM中创建您的第一个AngularSPA](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [在AEM中创建您的第一个React SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
 
-但是，在开始您自己的AEM SPA项目之前，您可能还希望查看[开发AEM for SPA](developing.md)文档。
+但是，在开始您自己的AEMSPA项目之前，您可能还需要查看 [开发SPA for AEM](developing.md) 文档。

@@ -81,7 +81,7 @@ AEM Commerceas a Cloud Service的入门过程分为两步：
 
    请参阅 [CLI文档](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 以了解详细信息。
 
-   商务GraphQL端点URL必须指向商务的GraphQl服务，并使用安全的HTTPS连接。 例如: `https://<yourcommercesystem>/graphql`.
+   商务GraphQL端点URL必须指向商务的GraphQl服务，并使用安全的HTTPS连接。 例如：`https://<yourcommercesystem>/graphql`。
 
 4. 启用需要身份验证的暂存目录功能（可选）
 

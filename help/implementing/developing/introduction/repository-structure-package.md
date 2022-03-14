@@ -1,6 +1,6 @@
 ---
 title: 'AEM 项目存储库结构包  '
-description: Adobe Experience Manager as a Cloud ServiceMaven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。
+description: Adobe Experience Manager as a Cloud Service Maven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,29 +11,29 @@ ht-degree: 9%
 
 # AEM 项目存储库结构包
 
-将Adobe Experience Manager作为Cloud Service的Maven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。 这可以确保在Experience Manager中安装包，因为Cloud Service是按JCR资源依赖项自动排序的。 缺少依赖项可能会导致子结构在其父结构之前安装，从而意外删除，从而破坏部署的情况。
+Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。 这可确保在Experience Manageras a Cloud Service中安装包时按JCR资源依赖项自动排序。 缺少依赖项可能会导致子结构在其父结构之前安装，从而意外删除，从而破坏部署的情况。
 
 如果您的代码包部署到代码包&#x200B;**未涵盖**&#x200B;的位置，则必须在存储库结构包中枚举任何上级资源（比较靠近 JCR 根的 JCR 资源），以建立这些依赖关系。
 
 ![存储库结构包](./assets/repository-structure-packages.png)
 
-存储库结构包定义`/apps`的预期公共状态，包验证器使用该状态确定区域“避免潜在冲突”，因为它们是标准根。
+存储库结构包定义 `/apps` 包验证器用于确定区域“不会发生潜在冲突”（因为它们是标准根）的区域。
 
 要包含在存储库结构包中的最典型路径包括：
 
 + `/apps` 是系统提供的节点
-+ `/apps/cq/...`、 `/apps/dam/...`、 `/apps/wcm/...`和 `/apps/sling/...` ，为提供通用叠加 `/libs`图。
++ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`和 `/apps/sling/...` 为 `/libs`.
 + `/apps/settings` 共享的上下文感知配置根路径
 
-请注意，此子包&#x200B;**没有**&#x200B;任何内容，只由定义过滤器根的`pom.xml`组成。
+请注意，此子包 **没有** 任何内容，仅由 `pom.xml` 定义过滤器根。
 
 ## 创建存储库结构包
 
-要为Maven项目创建存储库结构包，请使用以下`pom.xml`创建新的空Maven子项目，以更新项目元数据以符合父Maven项目。
+要为Maven项目创建存储库结构包，请新建一个空的Maven子项目，具有以下内容 `pom.xml`，更新项目元数据以符合父Maven项目。
 
-更新`<filters>`以包含您部署到的代码包的所有JCR存储库路径根。
+更新 `<filters>` 要包含您部署到的代码包的所有JCR存储库路径根。
 
-确保将此新的Maven子项目添加到父项目`<modules>`列表中。
+确保将此新的Maven子项目添加到父项目 `<modules>` 列表。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -116,9 +116,9 @@ ht-degree: 9%
 
 ## 引用存储库结构包
 
-要使用存储库结构包，请通过所有代码包（部署到`/apps`的子包）通过FileVault内容包Maven插件`<repositoryStructurePackage>`配置引用它。
+要使用存储库结构包，请通过所有代码包(部署到 `/apps`)通过FileVault内容包Maven插件创建Maven项目 `<repositoryStructurePackage>` 配置。
 
-在`ui.apps/pom.xml`和任何其他代码包`pom.xml`s中，将对项目存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件。
+在 `ui.apps/pom.xml`，以及任何其他代码包 `pom.xml`s，将对项目的存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件。
 
 ```xml
 ...
@@ -159,15 +159,15 @@ ht-degree: 9%
 
 例如：
 
-+ 代码包A部署到`/apps/a`中
-+ 代码包B部署到`/apps/a/b`中
++ 代码包A部署到中 `/apps/a`
++ 代码包B部署到中 `/apps/a/b`
 
-如果未从代码包A上的代码包B建立包级别依赖关系，则代码包B可以先部署到`/apps/a`中，然后部署到`/apps/a`中的代码包B，从而删除之前安装的`/apps/a/b`。
+如果未从代码包A上的代码包B建立包级别依赖关系，则代码包B可以先部署到 `/apps/a`，然后是代码包B，该代码包将部署到 `/apps/a`，从而删除之前安装的 `/apps/a/b`.
 
 在这种情况下：
 
-+ 代码包A应在项目的存储库结构包（应具有`/apps`的过滤器）上定义`<repositoryStructurePackage>`。
-+ 代码包B应在代码包A上定义`<repositoryStructurePackage>`，因为代码包B部署到由代码包A共享的空间中。
++ 代码包A应定义 `<repositoryStructurePackage>` 的存储库结构包(应具有 `/apps`)。
++ 代码包B应定义 `<repositoryStructurePackage>` 在代码包A上，因为代码包B部署到由代码包A共享的空间中。
 
 ## 错误和调试
 
@@ -178,7 +178,7 @@ ht-degree: 9%
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-这表示中断代码包的过滤器列表中没有列出`/apps/some/path`的`<repositoryStructurePackage>`。
+这表示中断代码包没有 `<repositoryStructurePackage>` 列表 `/apps/some/path` 中。
 
 ## 其他资源
 

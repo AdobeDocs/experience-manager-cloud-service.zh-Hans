@@ -2,12 +2,12 @@
 title: 查看文件夹和收藏集中的资产
 description: 为文件夹或收藏集中的资产设置审核工作流，并与审阅人或创意合作伙伴共享该工作流，以寻求反馈。
 contentOwner: AG
-feature: 收藏集，协作
+feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '793'
 ht-degree: 24%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 24%
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. （可选）从&#x200B;**[!UICONTROL 项目]**&#x200B;列表中，选择要将审核任务关联到的项目。 默认情况下，选中&#x200B;**[!UICONTROL None]**&#x200B;选项。 如果不想将任何项目与审核任务关联，请保留此选择。
+1. （可选）从 **[!UICONTROL 项目]** 列表中，选择要将审核任务关联到的项目。 默认情况下， **[!UICONTROL 无]** 选项。 如果不想将任何项目与审核任务关联，请保留此选择。
 
    >[!NOTE]
    >
-   >只有您具有编辑器级别权限（或更高级别）的项目才会显示在&#x200B;**[!UICONTROL 项目]**&#x200B;列表中。
+   >只有您具有编辑者级别权限（或更高级别）的项目才会显示在 **[!UICONTROL 项目]** 列表。
 
-1. 输入审核任务的名称，然后从&#x200B;**[!UICONTROL 分配给]**&#x200B;列表中选择审批者。
+1. 输入审核任务的名称，然后从 **[!UICONTROL 分配给]** 列表。
 
    >[!NOTE]
    >
-   >在&#x200B;**[!UICONTROL Assign To]**&#x200B;列表中，选定项目的成员/组可作为批准者。
+   >选定项目的成员/组在 **[!UICONTROL 分配给]** 列表。
 
 1. 输入审核任务的说明、任务优先级和到期日期。
 
@@ -48,7 +48,7 @@ ht-degree: 24%
    ![review_name](assets/review_name.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以审批者身份登录到[!DNL Experience Manager Assets]，然后导航到资产UI。 要批准资产，请单击/点按&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 登录到 [!DNL Experience Manager Assets] 作为审批者，并导航到资产UI。 要批准资产，请单击/点按 **[!UICONTROL 通知]** 图标，然后从列表中选择审核任务。
 
    ![通知](assets/notification.png)
 
@@ -57,7 +57,7 @@ ht-degree: 24%
 
    ![review_task](assets/review_task.png)
 
-1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入注释，然后点按/单击&#x200B;**[!UICONTROL 完成]**&#x200B;以确认。
+1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入评论，然后点按/单击  **[!UICONTROL 完成]** 确认。
 1. 导航到资产UI，然后打开文件夹。 资产的批准状态图标会同时显示在卡片视图和列表视图中。
 
    **卡片视图**
@@ -75,30 +75,30 @@ ht-degree: 24%
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. （可选）从&#x200B;**[!UICONTROL 项目]**&#x200B;列表中，选择要将审核任务关联到的项目。 默认情况下，选中&#x200B;**[!UICONTROL None]**&#x200B;选项。 如果不想将任何项目与审核任务关联，请保留此选择。
+1. （可选）从 **[!UICONTROL 项目]** 列表中，选择要将审核任务关联到的项目。 默认情况下， **[!UICONTROL 无]** 选项。 如果不想将任何项目与审核任务关联，请保留此选择。
 
    >[!NOTE]
    >
-   >只有您具有编辑器级别权限（或更高级别）的项目才会显示在&#x200B;**[!UICONTROL 项目]**&#x200B;列表中。
+   >只有您具有编辑者级别权限（或更高级别）的项目才会显示在 **[!UICONTROL 项目]** 列表。
 
-1. 输入审核任务的名称，然后从&#x200B;**[!UICONTROL 分配给]**&#x200B;列表中选择审批者。
+1. 输入审核任务的名称，然后从 **[!UICONTROL 分配给]** 列表。
 
    >[!NOTE]
    >
-   >在&#x200B;**[!UICONTROL Assign To]**&#x200B;列表中，选定项目的成员/组可作为批准者。
+   >选定项目的成员/组在 **[!UICONTROL 分配给]** 列表。
 
 1. 输入审核任务的说明、任务优先级和到期日期。
 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以审批者身份登录到[!DNL Experience Manager Assets]，然后导航到资产控制台。 要批准资产，请点按/单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 登录到 [!DNL Experience Manager Assets] 作为审批者，并导航到资产控制台。 要批准资产，请点按/单击 **[!UICONTROL 通知]** 图标，然后从列表中选择审核任务。
 1. 在&#x200B;**[!UICONTROL 审查任务]**&#x200B;页面中，检查审查任务的详细信息，然后点按/单击&#x200B;**[!UICONTROL 审查]**。
-1. 收藏集中的所有资产都会在审核页面上可见。 选择资产，然后点按/单击&#x200B;**[!UICONTROL 批准/拒绝]**&#x200B;图标，以批准或拒绝资产（根据需要）。
+1. 收藏集中的所有资产都会在审核页面上可见。 选择资产，然后点按/单击 **[!UICONTROL 批准/拒绝]** 图标以批准或拒绝资产。
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入注释，然后点按/单击&#x200B;**[!UICONTROL 完成]**&#x200B;以确认。
+1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入评论，然后点按/单击 **[!UICONTROL 完成]** 确认。
 1. 导航到收藏集控制台并打开收藏集。 资产的批准状态图标会同时显示在卡片视图和列表视图中。
 
    **卡片视图**

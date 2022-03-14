@@ -1,58 +1,58 @@
 ---
 title: 启用前端管道
-description: 了解如何为现有网站启用前端管道，以便利用网站主题更快地自定义您的网站。
+description: Learn how you can enable the front-end pipeline for existing sites to leverage site themes to more quickly customize your site.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
-
 # 启用前端管道 {#enable-front-end-pipeline}
 
-了解如何为现有网站启用前端管道，以便利用网站主题更快地自定义您的网站。
+Learn how you can enable the front-end pipeline for existing sites to leverage site themes to more quickly customize your site.
 
 ## 概述 {#overview}
 
-前端管道是一种机制，可根据 [网站主题](site-themes.md) 和 [网站模板。](site-templates.md)
+The front-end pipeline is a mechanism that can quickly deploy just the front-end code of your websites based on [site themes](site-themes.md) and [site templates.](site-templates.md)
 
 此管道不部署全栈，而是仅处理前端代码，从而加快了处理过程，并且前端开发人员无需了解AEM即可轻松、快速地自定义您的网站。
 
-默认情况下，基于站点模板的站点可以利用前端管道。 本文档介绍如何调整现有站点以利用前端管道。
+Sites based on site templates can leverage the front-end pipeline by default. 本文档介绍如何调整现有站点以利用前端管道。
 
 >[!TIP]
 >
->如果您不熟悉前端管道以及如何使用前端管道和站点模板快速部署站点，请查看 [快速网站创建历程](/help/journey-sites/quick-site/overview.md) 介绍。
+>If you are not familiar with the front-end pipeline and how to quickly deploy sites using it and site templates, please review the [Quick Site Creation journey](/help/journey-sites/quick-site/overview.md) for an introduction.
 
-如果您尚未基于网站模板和主题创建现有网站，则AEM可以将您的网站配置为在现有客户端库的基础上加载通过前端管道部署的主题。
+If you have not created your existing site based on site templates and themes, AEM can configure your site to load the themes that are deployed with the Front End Pipeline on top of the existing client libraries.
 
 ## 技术详细信息 {#technical-details}
 
 在激活站点的前端管道时，AEM会对您的站点结构进行以下更改。
 
-* 网站的所有页面都将包含一个额外的CSS和JS文件，可通过专用的Cloud Manager前端管道部署更新来修改该文件。
+* All pages of the site will include one additional CSS and JS file, which can be modified by deploying updates through a dedicated Cloud Manager front-end pipeline.
 * 添加的CSS和JS文件最初将为空，但可以下载“主题源”文件夹以引导文件夹结构，该结构允许通过该管道部署CSS和JS代码更新。
 * 此更改只能由开发人员通过删除 `SiteConfig` 和 `HtmlPageItemsConfig` 此操作将在下面创建的节点 `/conf/<site-name>/sling:configs`.
 
 >[!NOTE]
 >
->此操作不会自动转换站点的现有客户端库以使用字体端管道。 将这些源从客户端库文件夹移动到前端管道文件夹是一项需要前端开发人员手动完成的任务。
+>此操作不会自动转换站点的现有客户端库以使用字体端管道。 Moving these sources from the client library folder to the front-end pipeline folder is a task that requires manual work by a front-end developer.
 
 ## 要求 {#requirements}
 
-AEM可以自动调整您的现有站点以使用前端管道。 要执行此操作，您的网站必须使用 [核心组件的页面组件的v2或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/page.html)
+AEM can automatically adapt your existing site to use the front-end pipeline. To be able to do this, your site must use [v2 or newer of the Page Component of the Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/page.html)
 
 ## 启用前端管道 {#enabling}
 
-可通过从“站点”控制台中使用 [站点边栏。](site-rail.md)
+Enabling your site is done from the Sites console using the [Site rail.](site-rail.md)
 
-1. 登录AEM，然后通过 **全局导航** > **站点**.
-1. 在控制台中选择您的站点。 必须选择站点的根，而不是任何子页面。
-1. 选择您的网站后，打开 [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) 选择 **网站**.
-1. 在 **网站** 边栏，单击按钮 **启用前端管道**.
+1. Log into AEM and navigate to your site via **Global Navigation** > **Sites**.
+1. Select your site in the console. You must select the root of the site and not any child pages.
+1. With your site selected, open the [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) at the left and choose **Site**.
+1. In the **Site** rail, click the button **Enable Front End Pipeline**.
 
    ![启用前端管道](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 

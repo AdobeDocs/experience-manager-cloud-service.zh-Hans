@@ -1,14 +1,15 @@
 ---
 title: 管理分阶段产品目录体验
 description: 了解如何管理分阶段产品目录体验。
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 构建分阶段产品目录体验 {#building-experiences}
+# 构建分阶段的产品目录体验 {#building-experiences}
 
 了解如何管理分阶段产品目录体验。
 
@@ -67,6 +68,6 @@ AEM Launches允许您为暂存产品数据创建内容。 如果您不熟悉启�
 
 ## 其他资源 {#additional-resources}
 
-* [产品座舱](/help/commerce-cloud/authoring/product-cockpit.md)
+* [产品 Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [快速入门](/help/commerce-cloud/getting-started.md)
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)

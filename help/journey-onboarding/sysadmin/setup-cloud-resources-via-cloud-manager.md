@@ -21,7 +21,7 @@ ht-degree: 1%
 * 分配给 **业务所有者** 角色必须是您组织中第一个登录并访问Cloud Manager的用户。
 * 如何创建云程序和环境。
 
-## Communications API {#introduction}
+## 简介 {#introduction}
 
 通过Cloud Manager，由分配给的团队成员通过 **业务所有者** 产品配置文件。 此人员通常是了解业务需求并完成初始Cloud Manager设置的人员。
 

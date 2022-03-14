@@ -2,13 +2,13 @@
 title: 在 AEM 中管理 GraphQL 端点
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中针对 Headless 内容投放管理 GraphQL 端点。
 feature: Content Fragments,GraphQL API
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: ht
+exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 100%
 
 ---
-
 
 # 在 AEM 中管理 GraphQL 端点 {#graphql-aem-endpoint}
 

@@ -1,17 +1,17 @@
 ---
 title: 对商务集成框架(CIF)附加组件的显着更改
 description: 与旧的CIF版本相比，商务集成框架(CIF)发生了显着更改。
-exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 对商务集成框架(CIF)附加组件{#notable-changes}的显着更改
+# 对商务集成框架(CIF)附加组件的显着更改{#notable-changes}
 
-Adobe Experience Manager as aCloud Service为管理AEM项目提供了许多新功能和可能性。 要进一步了解这些功能，请访问[更改链接，以Experience Manager为Cloud Service](/help/release-notes/aem-cloud-changes.md)。
+Adobe Experience Manager as a Cloud Service为管理AEM项目提供了许多新功能和可能性。 要进一步了解这些功能，请访问 [更改Experience Manageras a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 本文档重点介绍了商务集成框架(CIF)附加组件与旧CIF版本(主要称为CIF Classic（快速入门）和CIF开源版本)之间的重要区别。
 
@@ -19,13 +19,13 @@ Adobe Experience Manager as aCloud Service为管理AEM项目提供了许多新�
 
 AEM CIF加载项将通过Cloud Manager安装。 安装需要CIF信用，但沙箱除外，在沙箱中，CIF可以安装，而无信用。 通过在您的AEM合同中预配CIF附加组件，可自动接收点数。
 
-此加载项将作为常规AEM更新的一部分自动更新，作为Cloud Service更新。
+该加载项将作为常规AEMas a Cloud Service更新的一部分自动更新。
 
 **早期CIF版本**
 
 * CIF Classic:无需安装，CIF是快速入门的一部分。 CIF更新是常规AEM或Service Pack更新的一部分
 * AEM内部部署的CIF开源：通过GitHub进行安装。 更新是手动更新/维护工作的一部分。
-* 适用于AEM Adobe Managed Services的CIF开源：通过客户成功经理进行安装。 更新是手动更新/维护工作的一部分。
+* 适用于AEM Adobe Managed Services的CIF开源版本：通过客户成功经理进行安装。 更新是手动更新/维护工作的一部分。
 
 ## 端点配置
 
@@ -38,12 +38,12 @@ AEM CIF加载项将通过Cloud Manager安装。 安装需要CIF信用，但沙�
 
 ## 部署CIF维尼亚项目
 
-在[Cloud Manager Git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)中提供的项目，并通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)完成部署
+中可用的项目 [Cloud Manager Git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) 通过 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)
 
 **早期CIF版本**
 
 * CIF Classic:通过AEM包安装
-* CIF开源：通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans)
+* CIF开源：通过 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans)
 
 ## 产品目录数据
 
@@ -63,4 +63,4 @@ AEM使用已分配给产品和类别的AEM目录模板即时渲染产品目录�
 
 >[!NOTE]
 >
->有关如何将CIF与AEM Managed Service或AEM On-premise结合使用的其他文档，请参阅[Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>有关如何将CIF与AEM托管服务或AEM On-premise结合使用的其他文档，请参阅 [商务集成框架](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

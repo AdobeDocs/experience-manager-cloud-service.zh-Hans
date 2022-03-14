@@ -2,10 +2,11 @@
 title: AEMas a Cloud Service版本2021.10.0中的Cloud Manager发行说明
 description: AEMas a Cloud Service版本2021.10.0中的Cloud Manager发行说明
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+exl-id: f8a87b00-52ce-42a6-a955-45cb14703b40
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '398'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 0%
 本页概述了AEM as a Cloud Service 2021.10.0中Cloud Manager的发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## 发布日期 {#release-date}
 
@@ -50,4 +51,3 @@ AEMas a Cloud Service中Cloud Manager的发行日期为2021.10.0 2021年10月14�
 * 在环境创建期间发出的某些内部请求未重试。
 
 * 如果在域名验证后发生部署失败错误，则错误消息已被更正，以请求客户联系其Adobe代表。
-

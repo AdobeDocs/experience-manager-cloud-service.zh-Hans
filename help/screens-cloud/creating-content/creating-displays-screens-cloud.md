@@ -1,15 +1,15 @@
 ---
-title: 创建和管理屏幕中的显示屏作为Cloud Service
-description: 本页介绍如何创建和管理Screens中的显示屏作为Cloud Service。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+title: 在Screens中创建和管理显示屏as a Cloud Service
+description: 本页介绍如何创建和管理Screens中的显示屏as a Cloud Service。
+exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 13%
 
 ---
 
-
-# 创建和管理屏幕中的显示屏作为Cloud Service {#create-displays-screens-cloud}
+# 在Screens中创建和管理显示屏as a Cloud Service {#create-displays-screens-cloud}
 
 发布渠道后，现在该在Screens服务提供商中创建显示屏了。
 
@@ -25,20 +25,20 @@ ht-degree: 13%
 
 请按照以下步骤从Screens服务提供商创建显示屏：
 
-1. 从您的AEMCloud Service实例导航到Screens服务提供商。
-1. 从左侧导航面板中选择&#x200B;**显示** ，然后单击屏幕右上角的&#x200B;**创建**。
+1. 从您的AEM Cloud Service实例导航到Screens服务提供商。
+1. 选择 **显示** 在左侧导航面板中，单击 **创建** 中。
 
    ![图像](/help/screens-cloud/assets/display/disp-1.png)
 
-1. 从操作栏中选择&#x200B;**显示**。
+1. 选择 **显示** 中。
 
    ![图像](/help/screens-cloud/assets/display/disp-2.png)
 
-1. 在&#x200B;**显示名称**&#x200B;中输入&#x200B;**LoopingChannelDisplay**&#x200B;标题，然后单击&#x200B;**创建**。
+1. 在标题中输入 **LoopingChannelDisplay** in **显示名称** 单击 **创建**.
 
    ![图像](/help/screens-cloud/assets/display/disp3.png)
 
-1. 标题为&#x200B;**LoopingChannelDisplay**&#x200B;的显示现在将在显示列表中可见。
+1. 标题为的显示 **LoopingChannelDisplay** 现在将显示在显示列表中。
 
    ![图像](/help/screens-cloud/assets/display/disp-4.png)
 
@@ -46,10 +46,10 @@ ht-degree: 13%
 
 您可以从Screens服务提供商中删除显示屏。
 
-选择显示屏并单击面板底部的&#x200B;**Delete**，如下图所示。
+选择显示内容并单击 **删除** ，如下图所示。
 
 ![图像](/help/screens-cloud/assets/display/disp-5.png)
 
 ## 下一步 {#whats-next}
 
-现在，您已学会如何为项目创建和管理显示屏，接下来应继续将屏幕作为Cloud Service历程，方法是查看文档[将渠道分配给Screens中显示屏作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en)。
+现在，您已经学习了如何为项目创建和管理显示屏，接下来应通过审阅文档来继续您的Screensas a Cloud Service历程 [将渠道分配给屏幕中的显示屏as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).

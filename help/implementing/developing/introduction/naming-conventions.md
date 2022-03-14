@@ -5,7 +5,7 @@ exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 8%
 
 这些命名约定在不同级别实施：
 
-* JcrUtil:[JCR实用程序](#jcr-utilities)的AEM实现。
-* PageManager:[页面管理器](#page-manager)提供了页面级别操作的方法。
-* 在AEM UI {#ui-behavior}中
+* JcrUtil:的AEM实施 [JCR实用程序](#jcr-utilities).
+* PageManager:the [页面管理器](#page-manager) 提供页面级操作的方法。
+* 在AEM UI中 {#ui-behavior}
 
 ### JCR实用程序 {#jcr-utilities}
 
-[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis是JCR实用程序的AEM实施。验证名称时特别需要注意的是它所控制的字符映射和以下验证：
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) 是JCR实用程序的AEM实施。 验证名称时特别需要注意的是它所控制的字符映射和以下验证：
 
 * `isValidName`
    * 检查名称是否不为空，并且只包含有效字符。
@@ -34,7 +34,7 @@ ht-degree: 8%
 
 ### 页面管理器 {#page-manager}
 
-[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager根据JCRUtil [提供页面级操作](#jcr-utilities)方法。
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 提供页面级别操作的方法，具体依据 [JCRUtil](#jcr-utilities).
 
 ### AEM UI行为 {#ui-behavior}
 

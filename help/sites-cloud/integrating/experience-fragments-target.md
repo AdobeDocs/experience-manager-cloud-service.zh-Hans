@@ -1,14 +1,15 @@
 ---
-title: 将体验片段导出到Adobe Target
-description: 将体验片段导出到Adobe Target
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+title: 将体验片段导出到 Adobe Target
+description: 将体验片段导出到 Adobe Target
+exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 将体验片段导出到Adobe Target{#exporting-experience-fragments-to-adobe-target}
+# 将体验片段导出到 Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
 >

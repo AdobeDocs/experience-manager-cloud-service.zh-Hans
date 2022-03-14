@@ -143,6 +143,6 @@ AEM 每天 01:00 运行清除作业，以删除已完成的已超过一天的异
 >[!MORELIKETHIS]
 >
 >* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-* [批量导入和导出资产元数据](/help/assets/metadata-import-export.md)。
-* [使用“连接的资产”从远程部署中共享 DAM 资产](/help/assets/use-assets-across-connected-assets-instances.md)。
+>* [批量导入和导出资产元数据](/help/assets/metadata-import-export.md)。
+>* [使用“连接的资产”从远程部署中共享 DAM 资产](/help/assets/use-assets-across-connected-assets-instances.md)。
 

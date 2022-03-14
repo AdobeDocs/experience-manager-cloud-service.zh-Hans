@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -64,11 +64,11 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的前端资产
 
 完整的AEM环境由创作、发布和调度程序组成。 这些相同的组件将在本地开发运行时中提供，以便您在上线之前更轻松地预览代码和内容。
 
-* **创作服务** 是内部用户创建、管理和预览内容的位置。
+* **Author 服务**&#x200B;是内部用户创建、管理和预览内容的地方。
 
-* **发布服务** 被视为“实时”环境，通常是最终用户与之交互的环境。 内容在创作服务上进行编辑和批准后，会分发到发布服务。 AEM无头应用程序的最常见部署模式是，将应用程序的生产版本连接到AEM发布服务。
+* **Publish 服务**&#x200B;被视为“实时”环境，通常是最终用户与之交互的对象。在 Author 服务上编辑和审批之后的内容，分发到 Publish 服务。AEM Headless 应用程序最常见的部署模式是将应用程序的生产版本连接到 AEM Publish 服务。
 
-* **调度程序** 是一种随AEM dispatcher模块一起增强的静态web服务器。 它会缓存由发布实例生成的网页，以提高性能。
+* **Dispatcher** 是一个通过 AEM Dispatcher 模块增强的静态 Web 服务器。它会缓存由发布实例生成的网页，以提高性能。
 
 ## 本地开发工作流 {#the-local-development-workflow}
 

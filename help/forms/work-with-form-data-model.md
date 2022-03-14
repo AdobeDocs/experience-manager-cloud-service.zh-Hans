@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# 使用表单数据模型 {#work-with-form-data-model}
+# 处理表单数据模型 {#work-with-form-data-model}
 
 ![数据集成](do-not-localize/data-integeration.png)
 

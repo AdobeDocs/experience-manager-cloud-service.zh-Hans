@@ -1,5 +1,5 @@
 ---
-title: 新遗迹一号
+title: New Relic One
 description: 了解用于AEMas a Cloud Service的New Relic One应用程序性能监控(APM)服务以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1

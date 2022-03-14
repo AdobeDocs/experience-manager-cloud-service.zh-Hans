@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
 source-wordcount: '3364'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 例如，对这些代码包还存在一些其他限制 [安装挂钩](http://jackrabbit.apache.org/filevault/installhooks.html) 不受支持。
 
-## OSGI配置 {#osgi-configuration}
+## OSGI 配置 {#osgi-configuration}
 
 如上所述，OSGI配置应提交给源代码控制，而不是通过Web控制台。 实现此目的的技术包括：
 

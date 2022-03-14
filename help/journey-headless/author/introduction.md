@@ -1,82 +1,84 @@
 ---
-title: AEM Headless Content Author Journey
-description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.
+title: AEM Headless内容创作历程
+description: 介绍Adobe Experience Manager as a Cloud Service强大、灵活、无头的功能，以及如何为项目创作内容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
+# 使用 AEM 为 Headless 创作 - 简介 {#author-headless-introduction}
 
-[](overview.md)
+在 [AEM Headless内容创作历程](overview.md)，您可以学习必要的（基本）概念和术语，以了解使用Adobe Experience Manager(AEM)as a Cloud Service进行无头内容交付的创作内容。
 
 ## 目标 {#objective}
 
-* ****
-* ****
+* **受众**:初学者
+* **目标**:介绍与无头创作相关的概念和术语。
 
-## Content Management System (CMS) {#content-management-system}
+## 内容管理系统(CMS) {#content-management-system}
 
-What is a Content Management System?
+什么是内容管理系统？
 
-A Content Management System (CMS) is just what it says it is - a computer system used to manage content. That&#39;s a bit general, so to be more precise, it is (typically) used for managing content that you want to make available on your website(s).
+A Content Management System (CMS) is just what it says it is - a computer system used to manage content. 这有些笼统，因此更确切地说，它通常用于管理您希望在网站上提供的内容。
 
-## Headless CMS {#headless-cms}
+## 无头CMS {#headless-cms}
 
-Headless is a term used to describe systems that effectively detaches the content from the manner of displaying that content on the web.
+“无头”是一个术语，用于描述从在Web上显示内容的方式中有效分离内容的系统。
 
 Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
 
-Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more, (independent) applications.
+现在，无头意味着可以在CMS中管理内容集，然后由一个或多个（独立）应用程序访问。
 
-This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
+这意味着您的内容可以以各种格式传送到任何设备。 This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
 
 >[!NOTE]
 >
->If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
+>如果您想进一步了解无头CMS的技术详细信息，可以在“了解CMS无头开发”中阅读更多信息。
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
 So what is AEM?
 
-First and foremost, AEM is a Content Management System with a wide range of features that can also be customized to meet your requirements.
+首先，AEM是一个内容管理系统，具有多种功能，还可以根据您的需求进行自定义。
 
-This all means that it can be used as a:
+这一切都意味着它可用作：
 
-* Headless CMS
-   * ********This means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
-(And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
+* 无头CMS
+   * 对于无头，您的内容可以创作为 **内容片段**.
+这些是自包含的内容项，可由一系列应用程序直接访问，因为它们具有基于的预定义结构 **内容片段模型**.
+这意味着您的内容可以访问各种设备、各种格式和多种功能。
+(此外，如果您需要，还可以在构建AEM网页时使用这些片段，这是双重打击。)
 
-* &quot;Traditional&quot; CMS
-   * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
+* “传统”CMS
+   * 内容是使用一系列组件为网页创作的，这些组件定义了内容在您的网站上的呈现方式。 即使在此，AEM也非常灵活，因为您的项目团队可以开发自定义组件。
 
-## Content Modeling {#content-modeling}
+## 内容建模 {#content-modeling}
 
-So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
+因此，内容建模（也称为数据建模）是另一个技术术语，为什么作为作者，它会让您感兴趣？
 
-For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. **
+For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
 Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling.
 
-********
+For AEM the Content Architect role (often a different person) will perform the data modeling to design a range of **Content Fragment Models** - that you then use as a basis for your content by using **Content Fragments**.
 
 >[!NOTE]
 >
->If you want to learn more about data modeling you can read more under the AEM Headless Content Architect Journey.
+>如果您想进一步了解数据建模，可以在AEM Headless Content Architect历程下阅读更多内容。
 
-## What&#39;s Next {#whats-next}
+## 下一步 {#whats-next}
 
-[](basics.md)This will introduce the basic handling of AEM together with how to author Content Fragments.
+既然您已经学习了概念和术语，下一步就是 [了解创作内容片段的基础知识](basics.md). 这将介绍AEM的基本操作以及如何创作内容片段。
 
 ## 其他资源 {#additional-resources}
 
-* AEM Headless Developer Journey
-   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
-   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
+* AEM Headless开发人员历程
+   * [了解CMS无头开发](/help/journey-headless/developer/learn-about.md)
+   * [了解如何对内容进行建模](/help/journey-headless/developer/model-your-content.md)
 
-* AEM Headless Content Architect Journey
+* AEM Headless 内容架构师历程
 
-* AEM Headless Content Translation Journey
+* AEM Headless内容翻译历程

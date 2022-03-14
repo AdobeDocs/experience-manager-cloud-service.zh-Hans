@@ -1,14 +1,15 @@
 ---
-title: Repository Modernizer
-description: Repository Modernizer
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: 存储库现代化器
+description: 存储库现代化器
+exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# Repository Modernizer {#repo-modernizer}
+# 存储库现代化器 {#repo-modernizer}
 
 Repository Modernizer是一个实用程序，旨在通过将内容和代码分离为离散的包来重构现有项目包，以便与为Adobe Experience Manager as a Cloud Service定义的项目结构兼容。
 

@@ -3,13 +3,13 @@ title: 使用站点边栏管理站点主题
 description: 了解网站边栏的强大功能，帮助您轻松自定义和管理网站主题。
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # 使用站点边栏管理站点主题 {#site-rail}
 

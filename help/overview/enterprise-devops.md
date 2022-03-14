@@ -2,7 +2,7 @@
 title: 企业 DevOps
 description: 了解轻松部署和简化协作所需的流程、方法和通信。
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

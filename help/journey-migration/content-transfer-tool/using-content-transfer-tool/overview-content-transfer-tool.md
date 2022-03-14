@@ -1,7 +1,8 @@
 ---
 title: 内容传输工具概述
 description: 内容传输工具概述
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 58%
@@ -58,4 +59,3 @@ ht-degree: 58%
 ## 下一步 {#whats-next}
 
 了解内容传输工具及其对该工具进行描述的概述后，您便可以使用该工具将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例，您必须查看 [内容传输工具的先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
-

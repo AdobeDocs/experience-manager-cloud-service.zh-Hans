@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -30,9 +30,9 @@ IP允许列表可添加一次，并作为单位或实体多次应用/取消应�
 
 使用Cloud Manager UI IP允许列表页面或环境详细信息页面，具有权限的用户可以执行多项任务来管理环境的IP允许列表，包括：
 
-* [添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+* [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > 您可以在项目中的跨环境服务添加一次并重复使用或应用规则任意次数。
 * [查看或更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
 * [应用或取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [删除IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* [删除 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)

@@ -4,7 +4,7 @@ description: 'AdobeAEM Target HTTP窗口 '
 source-git-commit: c193b38718622cd2e960a8e8833c2d295822dc33
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## 参数 {#parameters}
 
-![目标HTTP ](assets/httpwindow.png "WindowTarget HTTP窗口")
+![目标HTTP窗口](assets/httpwindow.png "目标HTTP窗口")
 
 窗口包含以下可配置参数：
 

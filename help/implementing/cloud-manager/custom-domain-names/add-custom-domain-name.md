@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 98c137645351c86da8680a31b4929c588863a981
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 | 步骤 |  | 责任 | 了解更多信息 |
 |--- |--- |--- |---|
-| 添加SLL证书 | 添加SLL证书 | 客户 | [添加SSL证书](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
-| 域验证 | 添加TXT记录 | 客户 | [添加TXT记录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
+| 添加SLL证书 | 添加SLL证书 | 客户 | [添加 SSL 证书](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| 域验证 | 添加TXT记录 | 客户 | [添加 TXT 记录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
 | 查看域验证状态 |  | 客户 |  |
 |  | 状态：域验证失败 | 客户 | [正在检查域名状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
 |  | 状态：已验证，部署失败 | 联系Adobe代表 | [正在检查域名状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
-| 通过添加CNAME或APEX记录，添加指向AEMas a Cloud Service的DNS记录 | 配置DNS设置 | 客户 | [配置DNS设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
-| 检查DNS记录状态 |  | 客户 | [正在检查DNS记录状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
-|  | 状态：未检测到DNS状态 | 客户 | [正在检查DNS记录状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+| 通过添加CNAME或APEX记录，添加指向AEMas a Cloud Service的DNS记录 | 配置DNS设置 | 客户 | [配置 DNS 设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
+| 检查DNS记录状态 |  | 客户 | [检查 DNS 记录状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | 状态：未检测到DNS状态 | 客户 | [检查 DNS 记录状态](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
 |  | 状态：DNS解析不正确 | 客户 |  |
 
 

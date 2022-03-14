@@ -21,11 +21,11 @@ ht-degree: 1%
 >
 >智能成像要求您使用与Adobe Experience Manager - Dynamic Media捆绑在一起的现成CDN（内容交付网络）。 此功能不支持任何其他自定义CDN。
 
-智能成像还得益于与Adobe一流的高级CDN（内容交付网络）服务完全集成而带来的额外性能提升。 此服务可在服务器、网络和对等点之间找到最佳的Internet路由。 它会找到延迟最低且丢包率最低的路由，而不是使用Internet上的默认路由。
+智能成像还得益于与Adobe一流的高级CDN（内容交付网络）服务完全集成而带来的性能提升。 此服务可在服务器、网络和对等点之间找到最佳的Internet路由。 它会找到延迟最低且丢包率最低的路由，而不是使用Internet上的默认路由。
 
 以下图像资产示例介绍了新增的智能成像优化功能：
 
-| 图像<br>(URL) | 缩略图 | 大小<br>(JPEG) | 大小(WebP)<br>（带智能成像） | 减少百分比 |
+| 图像<br>(URL) | 缩略图 | 大小<br> (JPEG) | 大小(WebP)<br> （使用智能成像） | 减少百分比 |
 |---|---|---|---|---|
 | [图像1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [图2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
@@ -53,11 +53,11 @@ ht-degree: 1%
 | 图像URL中允许的值 | 描述 |
 |---|---|
 | `dpr=off` | 在单个图像URL级别关闭DPR优化。 |
-| `dpr=on,dprValue` | 使用自定义值覆盖由智能成像检测的DPR值（由任何客户端逻辑或其他方式检测）。 `dprValue`的允许值是大于0的任意数字。 指定的值1.5、2或3是典型值。 |
+| `dpr=on,dprValue` | 使用自定义值覆盖由智能成像检测的DPR值（由任何客户端逻辑或其他方式检测）。 的允许值 `dprValue` 是大于0的任意数字。 指定的值1.5、2或3是典型值。 |
 
 >[!NOTE]
 >
->* 即使关闭公司级别DPR设置，您也可以使用`dpr=on,dprValue`。
+>* 您可以使用 `dpr=on,dprValue` 即使公司级别的DPR设置为关闭也是如此。
 >* 由于DPR优化，当生成的图像大于MaxPix Dynamic Media设置时，始终通过保持图像的宽高比来识别MaxPix宽度。
 
 
@@ -66,13 +66,13 @@ ht-degree: 1%
 | 816x500 | 1 | 816x500 |
 | 816x500 | 2 | 1632x1000 |
 
-另请参阅[使用图像](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[使用智能裁剪](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)时。
+另请参阅 [使用图像时](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 和 [使用智能裁剪时](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 ### 关于网络带宽优化 {#network-bandwidth-optimization}
 
 打开网络带宽可根据实际网络带宽自动调整提供的图像质量。 对于较差的网络带宽，即使DPR优化已打开，DPR优化也会自动关闭。
 
-如有需要，贵公司可以通过在图像的URL后附加`network=off` ，在单个图像级别选择退出网络带宽优化。
+如果需要，贵公司可以通过附加 `network=off` 到图像的URL。
 
 | 图像URL中允许的值 | 描述 |
 |---|---|
@@ -90,11 +90,11 @@ ht-degree: 1%
 
 * 改进了使用最新智能成像的网页的Google SEO排名。
 * 立即提供优化内容（在运行时）。
-* 使用Adobe Sensei技术根据图像请求中指定的质量(`qlt`)进行转换。
-* 可以使用`bfc` URL参数关闭智能成像。
+* 使用Adobe Sensei技术根据质量进行转换(`qlt`)。
+* 可以使用 `bfc` URL参数。
 * TTL（生存时间）独立。 以前，智能成像的工作TTL必须至少为12小时。
 * 以前，原始图像和派生图像都会缓存，而且使缓存失效需分两步进行。 在最新的智能成像中，只缓存派生项，从而允许单步缓存失效过程。
-* 在其规则集中使用自定义标头的客户可以从最新的智能成像中受益，因为这些标头不会被阻止，这与以前版本的智能成像不同。 例如， [向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建议的“Timing Allow Origin”、“X-Robot”。
+* 在其规则集中使用自定义标头的客户可以从最新的智能成像中受益，因为这些标头不会被阻止，这与以前版本的智能成像不同。 例如，“Timing Allow Origin”、“X-Robot”(如 [向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## 是否存在与智能成像相关的许可成本？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -145,7 +145,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 智能成像如何与已在使用的现有图像预设配合使用？ {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-智能成像可与您现有的“图像预设”配合使用。 如果请求的文件格式为JPEG或PNG，则它会遵循除质量(`qlt`)和格式(`fmt`)之外的所有图像设置。 对于格式转换，“智能成像”可根据图像预设设置的定义，保持完整的视觉保真度，但文件大小较小。 如果原始图像大小小于智能成像生成的图像大小，则会提供原始图像。
+智能成像可与您现有的“图像预设”配合使用。 它会观察除质量外的所有图像设置(`qlt`)和格式(`fmt`)(如果请求的文件格式为JPEG或PNG)。 对于格式转换，“智能成像”可根据图像预设设置的定义，保持完整的视觉保真度，但文件大小较小。 如果原始图像大小小于智能成像生成的图像大小，则会提供原始图像。
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
@@ -155,7 +155,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 如果必须配置新的自定义域才能使用智能成像，则必须更新URL以反映此自定义域。
 
-要了解智能成像的先决条件，请参阅[我是否有资格使用智能成像？](#am-i-eligible-to-use-smart-imaging)
+要了解智能成像的先决条件，请参阅 [我是否有资格使用智能成像？](#am-i-eligible-to-use-smart-imaging)
 
 <!-- OLD No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -170,11 +170,11 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 要使用智能成像，贵公司的Dynamic Media Classic或Dynamic MediaExperience Manager帐户必须满足以下要求：
 
 * 将Adobe捆绑的CDN（内容交付网络）用作许可证的一部分。
-* 使用专用域（例如`images.company.com`或`mycompany.scene7.com`），而不使用通用域（例如`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
+* 使用专用域(例如， `images.company.com` 或 `mycompany.scene7.com`)，而不是通用域(例如， `s7d1.scene7.com`, `s7d2.scene7.com`或 `s7d13.scene7.com`)。
 
-要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
+要查找您的域，请打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
-转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用域，则可以请求移至您自己的自定义域。 在提交技术支持票证时，发出此过渡请求。
+转到 **[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**. 查找标记为 **[!UICONTROL 已发布的服务器名称]**. 如果您当前使用的是通用域，则可以请求移至您自己的自定义域。 在提交技术支持票证时，发出此过渡请求。
 
 使用Dynamic Media许可证，您的第一个自定义域无需额外付费。
 
@@ -192,25 +192,25 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [使用Admin Console创建支持案例](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)。
+1. [使用Admin Console创建支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html).
 1. 在支持案例中提供以下信息：
 
    1. 主要联系人姓名、电子邮件、电话。
-   1. 要启用智能成像的所有域（即`images.company.com`或`mycompany.scene7.com`）。
+   1. 要启用智能成像的所有域(即 `images.company.com` 或 `mycompany.scene7.com`)。
 
-      要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
+      要查找您的域，请打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
-      转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
+      转到 **[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**.
 
-      查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。
+      查找标记为 **[!UICONTROL 已发布的服务器名称]**.
    1. 确认您通过Adobe使用CDN，而不是通过直接关系进行管理。
-   1. 验证您使用的是专用域（如`images.company.com`或`mycompany.scene7.com`），而不是通用域（如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`）。
+   1. 验证您使用的是专用域，例如 `images.company.com` 或 `mycompany.scene7.com`，而不是通用域，例如 `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
+      要查找您的域，请打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。
 
-      转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
+      转到 **[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**.
 
-      查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media Classic域，则可以在此过渡中请求移至您自己的自定义域。
+      查找标记为 **[!UICONTROL 已发布的服务器名称]**. 如果您当前使用的是通用Dynamic Media Classic域，则可以在此过渡中请求移至您自己的自定义域。
    1. 指示您是否希望它通过HTTP/2运行。
 
 1. Adobe客户支持根据请求的提交顺序将您添加到智能图像处理客户等待列表。
@@ -219,8 +219,8 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 1. 客户支持部门在完成后会通知您。
 1. 为了最大限度地提高智能成像的性能，Adobe建议将生存时间(TTL)设置为24小时或更长。 TTL定义CDN缓存资产的时长。 要更改此设置，请执行以下操作：
 
-   1. 如果您使用Dynamic Media Classic，请转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。 将&#x200B;**[!UICONTROL 默认客户端缓存时间设置为Live]**&#x200B;值24或更长。
-   1. 如果您使用Dynamic Media，请按照[这些说明](config-dm.md)操作。 将&#x200B;**[!UICONTROL Expiration]**&#x200B;值设置为24小时或更长。
+   1. 如果您使用Dynamic Media Classic，请转到 **[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**. 设置 **[!UICONTROL 默认客户端缓存的存留时间]** 值为24或更长时间。
+   1. 如果您使用Dynamic Media，请 [这些说明](config-dm.md). 设置 **[!UICONTROL 过期]** 值24小时或更长时间。
 
 ## 我何时才能通过智能成像启用我的帐户？ {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -239,12 +239,12 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 ## 如何验证智能成像是否按预期工作？{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. 在您的帐户配置了“智能成像”功能后，请在浏览器中加载Dynamic Media Classic或Adobe Experience Manager - Dynamic Media图像URL。
-1. 在浏览器中，通过转到&#x200B;**[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]**&#x200B;打开Chrome开发人员窗格。 或者，选择您选择的任何浏览器开发人员工具。
+1. 通过转到 **[!UICONTROL 查看]** > **[!UICONTROL 开发人员]** > **[!UICONTROL 开发人员工具]** 中。 或者，选择您选择的任何浏览器开发人员工具。
 
 1. 确保在开发人员工具打开时禁用缓存。
 
-   * 在Windows®上，导航到开发人员工具窗格中的设置，然后选中&#x200B;**[!UICONTROL 禁用缓存（在设备工具打开时）]**&#x200B;复选框。
-   * 在macOS上，在开发人员窗格的&#x200B;**[!UICONTROL Network]**&#x200B;选项卡下，选择&#x200B;**[!UICONTROL disable cache]**。
+   * 在Windows®上，导航到开发人员工具窗格中的设置，然后选择 **[!UICONTROL 禁用缓存（在devtools打开时）]** 复选框。
+   * 在macOS上，在开发人员窗格的 **[!UICONTROL 网络]** 选项卡，选择 **[!UICONTROL 禁用缓存]**.
 
 1. 观察内容类型已转换为相应的格式。 以下屏幕截图显示了在Chrome上动态转换为WebP的PNG图像。
 1. 在不同的浏览器和用户条件上重复此测试。
@@ -257,7 +257,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 是否可以针对任何请求关闭智能成像？{#turning-off-smart-imaging}
 
-是。您可以通过向URL添加修饰符`bfc=off`来关闭智能成像。
+是。您可以通过添加修饰符来关闭“智能成像” `bfc=off` 到URL。
 
 ## 我是否可以请求在公司级别关闭DPR和网络优化？ {#dpr-companylevel-turnoff}
 
@@ -277,11 +277,11 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 智能成像DPR优化如何与Adobe Experience Manager Sites组件和Dynamic Media查看器一起使用？
 
-* Experience Manager Sites核心组件默认配置，以优化DPR。 为避免因服务器端智能成像DPR优化而出现超大图像，始终将`dpr=off`添加到Experience Manager Sites核心组件Dynamic Media图像中。
-* 默认情况下，为了优化DPR，配置了Dynamic Media Foundation组件，以避免因服务器端智能成像DPR优化而出现过大的图像，将始终向Dynamic Media Foundation组件图像中添加`dpr=off`。 即使客户在DM Foundation组件中取消选择DPR优化，服务器端智能成像DPR也不会生效。 总之，在DM Foundation组件中，DPR优化仅基于DM Foundation组件级别设置生效。
+* Experience Manager Sites核心组件默认配置，以优化DPR。 为避免因服务器端智能成像DPR优化而出现超大图像， `dpr=off` 将始终添加到Experience Manager Sites核心组件Dynamic Media图像中。
+* 默认情况下，为优化DPR配置了Dynamic Media Foundation组件，以避免因服务器端智能成像DPR优化而出现过大的图像； `dpr=off` 始终将添加到Dynamic Media Foundation组件图像。 即使客户在DM Foundation组件中取消选择DPR优化，服务器端智能成像DPR也不会生效。 总之，在DM Foundation组件中，DPR优化仅基于DM Foundation组件级别设置生效。
 * 任何查看器端DPR优化都与服务器端智能成像DPR优化协同工作，并且不会导致图像过大。 换言之，无论DPR由查看器处理（例如仅在启用了缩放功能的查看器中的主视图），都不会触发服务器端智能成像DPR值。 同样，无论查看器元素（如色板和缩略图）没有DPR处理，都会触发服务器端智能成像DPR值。
 
-另请参阅[使用图像](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[使用智能裁剪](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)时。
+另请参阅 [使用图像时](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 和 [使用智能裁剪时](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 >[!MORELIKETHIS]
 >

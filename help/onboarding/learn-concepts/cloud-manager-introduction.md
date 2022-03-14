@@ -11,32 +11,32 @@ ht-degree: 3%
 
 # Cloud Manager 简介 {#intro-cloud-manager}
 
-Cloud Manager是AEM作为Cloud Service的基本组件，是您团队的单个入口点。
+Cloud Manager是AEMas a Cloud Service的一个基本组件，是您团队的单个入口点。
 
-为了支持具有企业开发设置的客户，AEM as a Manager与Cloud Manager及其专门构建的CI/CD管道充分集成，这些管道旨在确保彻底的测试和最高的代码质量，以提供卓越的体验。
+为了支持具有企业开发设置的客户，AEM  as a Cloud Service与Cloud Manager及其专门构建的CI/CD管道充分集成，这些管道旨在确保彻底的测试和最高的代码质量，以提供卓越的体验。
 
-为确保客户能够以AEM as a Cloud Service的方式快速入门，Cloud Manager以自助服务方式提供了开始所需的一切功能，包括创建云资源和环境的功能。 通过这种方式，您的AEM开发人员可以通过Cloud Manager访问Git存储库。 使用Cloud Manager，开发团队可以努力以自助方式频繁提交更改。
+为确保客户能够快速开始使用AEMas a Cloud Service,Cloud Manager以自助服务方式提供开始使用所需的一切功能，包括创建云资源和环境的功能。 通过这种方式，您的AEM开发人员可以通过Cloud Manager访问Git存储库。 使用Cloud Manager，开发团队可以努力以自助方式频繁提交更改。
 
-您的系统管理员将负责设置您的Cloud Manager团队，该团队将包括将创建您的云资源和开发人员的个人。 请参阅[AEM as a Cloud Service的企业团队开发设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) ，了解Cloud Manager如何在企业团队开发设置中支持。
+您的系统管理员将负责设置您的Cloud Manager团队，该团队将包括将创建您的云资源和开发人员的个人。 请参阅 [AEM Team Development Setup for as a Cloud Service Development Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) 了解Cloud Manager如何在企业团队开发设置中支持。
 
 ## 导航到Cloud Manager的概述页面 {#navigate-cloud-manager}
 
 按照以下步骤导航到Cloud Manager:
 
-1. 从[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接导航到Cloud Manager的登录页面。
+1. 从直接导航到Cloud Manager的登录页面 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
    >请将此页面加入书签以供将来参考，并帮助您直接导航到Cloud Manager的登陆页面。
 
-1. 从Cloud Manager的&#x200B;**程序和产品**&#x200B;页面中选择程序，以启动&#x200B;**概述**&#x200B;页面。
+1. 从Cloud Manager的 **计划和产品** 页面 **概述** 页面。
 
 此外，您还可以从Adobe Experience Cloud主页导航到Cloud Manager的“程序和产品”页面。 应遵循以下步骤：
 
-1. 直接导航到[Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)，然后使用Adobe ID登录。
+1. 直接导航到 [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) 和使用Adobe ID登录。
 
-1. 选择&#x200B;**Experience Manager**。
+1. 选择 **Experience Manager**.
 
-1. 从Cloud Manager卡片中单击&#x200B;**Launch**。 成功登录到Cloud Manager后，即可使用用户界面(UI)。
+1. 单击 **Launch** 从Cloud Manager卡中。 成功登录到Cloud Manager后，即可使用用户界面(UI)。
 
    成功登录后，系统会将您定向到Cloud Manager的登陆页面。
 
@@ -62,15 +62,15 @@ Cloud Manager是AEM作为Cloud Service的基本组件，是您团队的单个入
 
 ## Cloud Manager程序 {#cloud-manager-programs}
 
-Cloud Manager计划表示一组Cloud Manager环境，这些环境支持业务计划的逻辑集，通常对应于购买的服务级别协议(SLA)。 例如，一个项目可以表示支持全球公共网站的AEM资源，而另一个项目则表示内部中央DAM。 请观看此[视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)，了解有关使用Cloud Manager程序的更多信息。
+Cloud Manager计划表示一组Cloud Manager环境，这些环境支持业务计划的逻辑集，通常对应于购买的服务级别协议(SLA)。 例如，一个项目可以表示支持全球公共网站的AEM资源，而另一个项目则表示内部中央DAM。 看这个 [视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) 了解有关使用Cloud Manager程序的更多信息。
 
-用户可以创建&#x200B;**Sandbox**&#x200B;或&#x200B;**Production**&#x200B;程序。
+用户可以创建 **沙盒** 或 **生产** 项目。
 
-* 创建&#x200B;*生产程序*以在将来的适当时间启用实时流量。
-有关更多详细信息，请参阅[生产程序简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en)。
+* A *生产计划* 用于在将来的适当时间启用实时流量。
+请参阅 [生产计划简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) 以了解更多详细信息。
 
-* 通常，创建&#x200B;*沙盒项目*是为了用于培训、运行演示、启用、POC或文档目的。 它不用于传输实时流量，并且将具有生产程序不会受到的限制。 它将包含站点和资产，并且将使用自动填充的Git分支来交付，该分支包含示例代码、开发环境和非生产管道。
-有关更多详细信息，请参阅[沙盒程序简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en)。
+* A *沙盒项目* 通常创建用于提供培训、运行演示、启用、POC或文档目的。 它不用于传输实时流量，并且将具有生产程序不会受到的限制。 它将包含站点和资产，并且将使用自动填充的Git分支来交付，该分支包含示例代码、开发环境和非生产管道。
+请参阅 [沙盒程序简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) 以了解更多详细信息。
 
 ## Cloud Manager环境 {#cloud-manager-environments}
 
@@ -81,7 +81,7 @@ Cloud Manager计划表示一组Cloud Manager环境，这些环境支持业务计
 * [Dispatcher Services](#dispatcher-services)
 
    >[!NOTE]
-   > 请参阅视频[使用Cloud Manager环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) ，了解有关可用环境的更多信息。 此外，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) ，了解有关用户可以创建的环境类型以及用户如何创建环境的更多信息。
+   > 请参阅视频 [使用AdobeCloud Manager环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) 了解有关可用环境的更多信息。 此外，请参阅 [管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) 要进一步了解用户可以创建的环境类型以及用户如何创建环境。
 
 ### AEM创作服务 {#author-services}
 
@@ -93,4 +93,4 @@ AEM发布服务包含在托管最终用户体验的环境中，如网站。 这�
 
 ### AEM Dispatcher Service {#dispatcher-services}
 
-Dispatcher是一个`Apache HTTP Web server`模块，提供位于AEM发布服务前面的安全性和性能层。
+调度程序是 `Apache HTTP Web server` 提供位于AEM发布服务之前的安全和性能层的模块。

@@ -3,7 +3,7 @@ title: 不同功能与新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 100%
 

@@ -14,7 +14,7 @@ ht-degree: 96%
 标记是用于对网站中的内容进行分类的简单快捷方法。可以将标记视为可附加到页面、资产或其他内容，以便在进行搜索时能够找到该内容及相关内容的关键字或标签。
 
 * 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅“管理标记”。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* 请参阅[面向开发人员的标记](/help/implementing/developing/introduction/tagging-framework.md) ，以了解有关标记框架以及在自定义应用程序中包括和扩展标记的信息。
+* 请参阅 [面向开发人员的标记](/help/implementing/developing/introduction/tagging-framework.md) 有关标记框架以及在自定义应用程序中包含和扩展标记的信息。
 
 ## 使用标记的十大理由 {#ten-reasons-to-use-tagging}
 
@@ -31,7 +31,7 @@ ht-degree: 96%
 
 在设计站点的内容结构和资产的元数据架构时，请考虑使用标记提供的轻量级可行方法。
 
-## 应用标记  {#applying-tags}
+## 应用标记 {#applying-tags}
 
 在创作环境中，作者可以通过访问页面属性并在&#x200B;**标记/关键字**&#x200B;字段中输入一个或多个标记来应用标记。
 

@@ -1,13 +1,13 @@
 ---
 title: 验证内容传输
 description: 使用内容传输工具验证内容传输
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 2%
 
 ---
-
 
 # 验证内容传输 {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Migration validation took 0 minutes
 有目的地排除提取和摄取摘要中的某些路径，以便保持这些文件的大小可管理，其目标是能够在摄取完成后的两小时内计算迁移验证结果。
 
 我们当前从摘要中排除的路径包括： `cqdam.text.txt` 演绎版，节点在 `/home`和中的节点 `/jcr:system`.
-
-
-
-

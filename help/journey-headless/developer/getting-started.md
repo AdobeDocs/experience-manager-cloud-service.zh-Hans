@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
 workflow-type: tm+mt
 source-wordcount: '3058'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -66,20 +66,20 @@ AEM的无头功能基于一些关键特性。 在历程的后半部分中对这�
 
 ### 内容片段模型 {#content-fragment-models}
 
-内容片段模型定义您在AEM中创建和管理的数据和内容的结构。 它们是你内容的脚手架。 选择创建内容时，作者从您定义的内容片段模型中进行选择，这将指导他们创建内容。
+内容片段模型定义您在AEM中创建和管理的数据和内容的结构。 它们在某种程度上用作内容的基架。选择创建内容时，作者从您定义的内容片段模型中进行选择，这将指导他们创建内容。
 
 ### 内容片段 {#content-fragments}
 
-内容片段允许您设计、创建、策划和发布独立于页面的内容。 利用这些功能，可准备内容以准备在多个位置和多个渠道上使用。
+您可使用内容片段设计、创建、管理和发布独立于页面的内容。利用它们，您可以准备内容以用于多个位置和多个渠道。
 
-内容片段包含结构化内容，可以采用JSON格式交付。
+内容片段包含结构化内容，可以采用 JSON 格式交付。
 
 ### GraphQL和REST API {#apis}
 
 为了无拘无束地修改内容，AEM提供了两个强大的API。
 
-* GraphQL API允许您创建访问和交付内容片段的请求。
-* 资产REST API允许您创建和修改内容片段（和其他资产）。
+* GraphQL API 允许您创建请求来访问和交付内容片段。
+* Assets REST API 允许您创建和修改内容片段（及其他资源）。
 
 您将在AEM无头历程的后续部分中了解这些API以及如何使用它们。 或者，请参阅 [其他资源](#additional-resources) 部分以了解其他文档。
 
@@ -277,7 +277,7 @@ GraphQL充当AEM与无头内容使用者之间的“胶水”。 GraphQL是用�
 
 * [AEM无头翻译历程](/help/journey-headless/translation/overview.md)  — 此文档历程使您能够广泛了解无头技术、AEM如何提供无头内容以及如何翻译无头内容。
 * [Adobe Experience Manager as a Cloud Service建筑简介](/help/overview/architecture.md)  — 了解AEMas a Cloud Service的结构
-* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 使用这些动手实践教程探索如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。
+* [AEM无头Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)  — 使用这些动手实践教程探索如何使用各种选项通过AEM将内容交付到无头端点，并选择适合您的选项。
 * [使用GraphQL API的无头内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  — 请阅读本课程，概述在AEM中实施的GraphQL API。 需要通过AdobeID进行身份验证。
 * [AEM指南WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  — 此GitHub项目包括高亮显示AEM GraphQL API的示例应用程序。
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)  — 有关AEM创作环境的技术文档，包括有关创作 — 发布设置的详细信息

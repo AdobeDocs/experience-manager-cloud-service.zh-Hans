@@ -1,21 +1,21 @@
 ---
-title: Screens中的调度程序配置作为Cloud Service
-description: 本页介绍Screens中的调度程序配置作为Cloud Service。
-source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
+title: Screens中的调度程序配置as a Cloud Service
+description: 本页介绍Screens中的调度程序配置as a Cloud Service。
+exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
+# Screens中的调度程序配置as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-# Screens中的调度程序配置作为Cloud Service {#dispatcher-configurations-screens-cloud}
+本节介绍Screens的调度程序配置as a Cloud Service。
 
-本节将介绍Screens的调度程序配置作为Cloud Service。
+## 在Dispatcher for Screensas a Cloud Service部署中添加过滤器和缓存规则 {#deployment}
 
-## 在Dispatcher for Screens中添加过滤器和缓存规则作为Cloud Service部署 {#deployment}
-
-在Screens中，为发布实例允许以下过滤器和缓存规则作为Cloud Service。
+在Screensas a Cloud Service中，为发布实例在调度程序中允许以下过滤器和缓存规则。
 
 ### AEM Screens过滤器 {#filters}
 
@@ -32,12 +32,12 @@ ht-degree: 0%
 
 ### 缓存规则 {#cache-rules}
 
-* 将`/statfileslevel "10"`添加到`publish_farm.any`/中的`/cache`部分。
+* 添加 `/statfileslevel "10"` to `/cache` 部分 `publish_farm.any`/.
 
    >[!NOTE]
    >此缓存规则支持从缓存域缓存多达10个级别，并在内容发布时使其失效，而不是使所有内容失效。 您可以根据内容结构的设置深度更改此级别。
 
-* 在`publish_farm.any`的`/invalidate`部分添加以下内容。
+* 将以下内容添加到 `/invalidate` 部分 `publish_farm.any`.
 
    ```
    /0003 {
@@ -46,7 +46,7 @@ ht-degree: 0%
    }
    ```
 
-* 将以下规则添加到publish_farm.any中`/cache`部分或`publish_farm.any`所包含文件中的`/rules`部分。
+* 将以下规则添加到 `/rules` 部分 `/cache` 在publish_farm.any或 `publish_farm.any`.
 
    ```
    ## Allow Dispatcher Cache for Screens channels

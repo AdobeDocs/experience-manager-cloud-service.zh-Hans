@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager环境变量
 description: 标准环境变量可以通过Cloud Manager进行配置和管理，并提供给运行时环境，以用于OSGi配置。
-source-git-commit: 58db4323ed292109398f7a7ffbdaaaf50e800983
+exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
-
 
 # Cloud Manager环境变量 {#environment-variables}
 

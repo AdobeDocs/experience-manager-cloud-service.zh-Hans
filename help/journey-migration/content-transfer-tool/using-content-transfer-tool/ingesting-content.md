@@ -1,13 +1,13 @@
 ---
 title: 将内容提取到目标
 description: 将内容提取到目标
-source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
+exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 31%
 
 ---
-
 
 # 将内容提取到目标 {#ingesting-content}
 

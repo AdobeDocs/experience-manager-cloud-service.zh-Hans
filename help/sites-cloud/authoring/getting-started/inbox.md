@@ -42,7 +42,7 @@ ht-degree: 100%
 >
 >某些操作也将显示在[相应资源的卡片视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)中。
 
-## 打开收件箱  {#opening-the-inbox}
+## 打开收件箱 {#opening-the-inbox}
 
 打开 AEM 通知收件箱：
 
@@ -133,6 +133,7 @@ ht-degree: 100%
    >[!NOTE]
    >
    >有关更多信息，请参阅：
+   >
    >* 工作流项目 - [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
 
@@ -181,7 +182,7 @@ ht-degree: 100%
 
 1. 选择&#x200B;**提交**。
 
-## 创建项目  {#creating-a-project}
+## 创建项目 {#creating-a-project}
 
 对于某些任务，您可以创建一个基于该任务的[项目](/help/sites-cloud/authoring/projects/overview.md)：
 
@@ -190,6 +191,7 @@ ht-degree: 100%
    >[!NOTE]
    >
    >只有使用&#x200B;**收件箱**&#x200B;的&#x200B;**创建**&#x200B;选项创建的任务才能用于创建项目。
+   >
    >不能使用工作项（来自工作流）创建项目。
 
 1. 从工具栏中选择“**创建项目**”以打开向导。
@@ -206,7 +208,6 @@ ht-degree: 100%
    * **高级**
 
       * **名称**
-
    >[!NOTE]
    >
    >有关完整信息，请参阅[创建项目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)。

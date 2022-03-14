@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# 使用时间扭曲{#preview-with-timewarp}进行预览
+# 使用时间扭曲预览 {#preview-with-timewarp}
 
-[](/help/sites-cloud/authoring/features/page-versions.md#timewarp) Timewarp可用于启动项中也包含的页面：
+[时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) 可以与启动项中还包含的页面一起使用：
 
-1. 从页面编辑器中选择&#x200B;**时间扭曲**模式时，将要求您指定日期。 选择启动项的促销日期之后的日期：
+1. 选择 **时间扭曲** 模式时，系统会要求您指定日期。 选择启动项的促销日期之后的日期：
    ![从页面编辑器中导航启动项](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
 1. 将显示该日期的相应内容：

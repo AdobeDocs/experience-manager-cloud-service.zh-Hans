@@ -9,7 +9,7 @@ ht-degree: 97%
 
 ---
 
-# 创建页面模板  {#creating-page-templates}
+# 创建页面模板 {#creating-page-templates}
 
 创建页面时，您必须选择一个模板，以用作创建新页面的基础。模板可定义生成页面的结构、任何初始内容以及可使用的组件。
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
 
-有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md)以获取更多信息。
+有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档 [页面模板](/help/implementing/developing/components/templates.md) 以了解更多信息。
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ ht-degree: 97%
 
 ### 创建模板文件夹 - 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在文档[页面模板](/help/implementing/developing/components/templates.md#template-folders)中有相关说明。—>
+您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在文档中有相关说明 [页面模板](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### 创建新模板 - 模板作者 {#creating-a-new-template-template-author}
 
@@ -113,7 +113,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md#template-type).—>
+   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关更多信息，请参阅开发人员文档 [页面模板](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. 填写&#x200B;**模板详细信息**：
 
@@ -167,7 +167,7 @@ ht-degree: 97%
    * 如果对缩略图不满意，请单击或点按&#x200B;**清除**&#x200B;以上传其他图像，或重新生成缩略图。
 1. 如果对缩略图满意，请单击或点按&#x200B;**保存并关闭**。
 
-### 启用并允许模板 - 模板作者  {#enabling-and-allowing-a-template-template-author}
+### 启用并允许模板 - 模板作者 {#enabling-and-allowing-a-template-template-author}
 
 为了能够在创建页面时使用模板，您需要执行以下操作：
 
@@ -209,7 +209,7 @@ ht-degree: 97%
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
    >
-   >请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability) — 对允许的模板适用的原则与此相同。
+   >请参阅 [模板可用性](/help/implementing/developing/components/templates.md#template-availability)  — 允许的模板的原则保持不变。
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
@@ -226,7 +226,7 @@ ht-degree: 97%
 1. 选择要一同发布的&#x200B;**内容策略**。
 1. 从工具栏中选择&#x200B;**发布**&#x200B;以完成操作。
 
-## 编辑模板 - 模板作者  {#editing-templates-template-authors}
+## 编辑模板 - 模板作者 {#editing-templates-template-authors}
 
 创建或编辑模板时，您可以定义模板的多个方面。编辑模板类似于页面创作。
 
@@ -337,7 +337,7 @@ ht-degree: 97%
 
 在&#x200B;**结构**&#x200B;模式下工作时，橙色边框指示当前选定的组件。虚线指示父组件。
 
-#### 策略和属性（常规）{#policy-and-properties-general}
+#### 策略和属性（常规） {#policy-and-properties-general}
 
 内容（或设计）策略可定义组件的设计属性。例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。
 
@@ -421,7 +421,7 @@ ht-degree: 97%
 >
 >[](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
 
-#### 策略和属性（布局容器）{#policy-and-properties-layout-container}
+#### 策略和属性（布局容器） {#policy-and-properties-layout-container}
 
 布局容器的策略和属性设置与常规用法类似，只存在些许不同之处。
 

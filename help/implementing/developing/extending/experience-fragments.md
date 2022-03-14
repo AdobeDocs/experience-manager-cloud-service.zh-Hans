@@ -5,7 +5,7 @@ exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 975bbe809da1b34af8b8cab3b10ae2594133cf6d
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -190,7 +190,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 此服务将用于插入体验片段导出到Target的重写，以便能够访问各种链接。
 
-例如, `ComponentService`:
+例如， `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;

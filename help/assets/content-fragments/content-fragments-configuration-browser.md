@@ -7,7 +7,7 @@ exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 20%
    1. 指定 **标题**.
    1. 要启用其用法，请选择
       * **内容片段模型**
-      * **GraphQL永久查询**
+      * **GraphQL 持久查询**
 
       ![定义配置](assets/cfm-conf-01.png)
 

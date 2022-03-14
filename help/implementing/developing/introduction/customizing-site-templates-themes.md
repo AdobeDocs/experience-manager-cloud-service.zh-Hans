@@ -1,17 +1,17 @@
 ---
-title: 自定义网站模板和主题
+title: 自定义站点模板和主题
 description: 了解如何使用AEM网站模板来预定义网站结构和初始内容，以及如何使用主题来定义网站样式以快速创建网站。
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-
-# 自定义网站模板和主题 {#customizing-site-templates-themes}
+# 自定义站点模板和主题 {#customizing-site-templates-themes}
 
 了解如何使用AEM网站模板来预定义网站结构和初始内容，以及如何使用主题来定义网站样式以快速创建网站。
 

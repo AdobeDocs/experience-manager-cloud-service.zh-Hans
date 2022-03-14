@@ -9,7 +9,7 @@ exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '3100'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 >在自适应表单中使用Adobe Sign角色的功能在2021年8月的预发行渠道中提供。 该功能将在2021年9月版中正式发布。
 
 
-[!DNL Adobe Sign] 为自适应Forms启用电子签名工作流。 电子签名可改进工作流程，以处理法律、销售、工资、人力资源管理等领域的文档。
+[!DNL Adobe Sign] 支持自适应表单的电子签名工作流。电子签名可改进工作流程，以处理法律、销售、工资、人力资源管理等领域的文档。
 
 在 [!DNL Adobe Sign] 和自适应Forms方案中，用户填写自适应表单以申请需要一个或多个方签名的服务。 例如，抵押贷款和信用卡申请要求所有借款人和共同申请人签名。 要为类似情景启用电子签名工作流，您可以集成 [!DNL Adobe Sign] 自适应表单。 例如，您可以使用 [!DNL Adobe Sign] 至：
 
@@ -340,7 +340,7 @@ Adobe Sign协议ID(agreementId)包含在自适应表单的提交数据中。 默
 **问：** 我能用一下吗 [!DNL Adobe Sign] 自适应表单的静态文本组件中的文本标记？
 **答：** 是，您可以在文本组件中使用文本标记来添加 [!DNL Adobe Sign] “记录文档”（仅“自动生成的记录文档”选项）的字段。 要了解创建文本标记的过程和规则，请参阅 [Adobe Sign文档](https://helpx.adobe.com/sign/using/text-tag.html). 另请注意，自适应Forms对文本标记的支持有限。 您可以使用文本标记仅创建那些满足以下条件的字段 [Adobe Sign块](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) 支持。
 
-## 故障诊断 {#troubleshoot}
+## 疑难解答 {#troubleshoot}
 
 ### [!DNL Adobe Sign] 协议失败 {#adobe-sign-agreement-failures}
 

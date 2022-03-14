@@ -180,7 +180,7 @@ AEM提供了以下数据类型来为内容建模：
 
 * 单行文本
 * 多行文本
-* 数字
+* 数值
 * 布尔型
 * 日期和时间
 * 枚举
@@ -276,5 +276,5 @@ tbc...
    * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 创建和创作内容片段；此页面将引导您查看其他详细章节
 * [AEM GraphQL架构](access-your-content.md) - GraphQL如何实现模型
 * [示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL
+* [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL
    * [GraphQL建模基础知识](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  — 了解如何在Adobe Experience Manager(AEM)中定义和使用内容片段，以与GraphQL一起使用。

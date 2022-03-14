@@ -105,7 +105,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 * `filters` （字符串值，默认表示激活所有路径）。 可用值包括：
    * `onlyActivated`  — 将只激活未标记为已激活的路径。
    * `onlyModified`  — 仅激活已激活且修改日期晚于激活日期的路径。
-   * 上面可以用管道字符“|”进行OR。 例如, `onlyActivated|onlyModified`.
+   * 上面可以用管道字符“|”进行OR。 例如， `onlyActivated|onlyModified`.
 
 **记录**
 

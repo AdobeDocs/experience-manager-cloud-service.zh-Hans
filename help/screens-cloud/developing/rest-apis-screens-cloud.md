@@ -1,10 +1,11 @@
 ---
 title: REST API
 description: Screensas a Cloud Service提供了一个简单的RESTful API，它遵循Siren规范。 可查看本页以了解如何导航内容结构以及如何向环境中的设备发送命令。
-source-git-commit: fc3c047c6ad08db6e992a2aedc58c9cc1478b99f
+exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

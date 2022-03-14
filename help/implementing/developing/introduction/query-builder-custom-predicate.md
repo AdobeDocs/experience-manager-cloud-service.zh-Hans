@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # 为查询生成器实施自定义谓词计算器 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-本文档介绍如何通过实施自定义谓词计算器来扩展[查询生成器](query-builder-api.md)。
+本文档介绍如何扩展 [查询生成器](query-builder-api.md) 通过实施自定义谓词计算器。
 
 ## 概述 {#overview}
 
-[查询生成器](query-builder-api.md)提供了一种查询内容存储库的简单方法。 AEM附带一组[谓词计算器](#query-builder-predicates.md)，可帮助您查询数据。
+的 [查询生成器](query-builder-api.md) 提供了一种查询内容存储库的简单方法。 AEM附带 [一组谓词评估器](#query-builder-predicates.md) 以帮助您查询数据。
 
 但是，您可能希望通过实施自定义谓词计算器来简化查询，该计算器可隐藏一些复杂性并确保更好的语义。
 
@@ -30,14 +30,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->您可以在[查询生成器](query-builder-api.md)文档中找到查询示例。
+>您可以在 [查询生成器](query-builder-api.md) 文档。
 
 >[!TIP]
 >
 >您可以在GitHub上找到此页面的代码
 >
 >* [在GitHub上打开aem-search-custom-predicate-evaluator项目](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
->* 将项目下载为[a ZIP文件](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
+>* 将项目下载为 [ZIP文件](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 
 >[!NOTE]
@@ -48,11 +48,11 @@ ht-degree: 0%
 
 谓词计算器处理特定谓词的计算，这些谓词是查询的定义约束。
 
-它会将更高级别的搜索约束（如`width>200`）映射到与实际内容模型(如`metadata/@width > 200`)。 或者，它可以手动筛选节点并检查其约束。
+它会映射更高级别的搜索约束(例如 `width>200`)到符合实际内容模型(例如， `metadata/@width > 200`)。 或者，它可以手动筛选节点并检查其约束。
 
 >[!TIP]
 >
->有关`PredicateEvaluator`和`com.day.cq.search`包的更多信息，请参阅[Java文档](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html)。
+>有关 `PredicateEvaluator` 和 `com.day.cq.search` 包请参阅 [Java文档](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### 为复制元数据实施自定义谓词计算器 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 #### 使用默认谓词计算器查询复制元数据 {#querying-replication-metadata-with-default-predicate-evaluators}
 
-以下查询将获取自年初以来由`admin`激活的`/content`分支中的节点列表。
+以下查询将获取 `/content` 已激活的分支 `admin` 从年初开始。
 
 ```xml
 path=/content
@@ -84,7 +84,7 @@ daterange.lowerOperation=>=
 
 #### 目标 {#objectives}
 
-`ReplicationPredicateEvaluator`的目标是使用以下语法支持上述查询。
+目标 `ReplicationPredicateEvaluator` 使用以下语法支持上述查询。
 
 ```xml
 path=/content
@@ -100,15 +100,15 @@ replic.action=Activate
 
 >[!TIP]
 >
->[WKND教程中对新AEM项目（包括使用maven）的设置进行了详细说明。](develop-wknd-tutorial.md)
+>新的AEM项目（包括使用maven）的设置详见 [WKND教程。](develop-wknd-tutorial.md)
 
-首先，您需要更新项目的Maven依赖项。 `PredicateEvaluator`是`cq-search`项目的一部分，因此需要将其添加到Maven pom文件中。
+首先，您需要更新项目的Maven依赖项。 的 `PredicateEvaluator` 是 `cq-search` 项目，因此需要将其添加到Maven pom文件中。
 
 >[!NOTE]
 >
->`cq-search`依赖项的范围设置为`provided`，因为`cq-search`容器将提供`OSGi`。
+>的范围 `cq-search` 依赖关系设置为 `provided` 因为 `cq-search` 将由 `OSGi` 容器。
 
-以下代码片段显示了`pom.xml`文件中[统一差异格式](https://en.wikipedia.org/wiki/Diff#Unified_format)的差异
+以下代码片段显示了 `pom.xml` 文件，在 [统一差异格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
@@ -127,14 +127,14 @@ replic.action=Activate
 
 #### 编写ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-`cq-search`项目包含`AbstractPredicateEvaluator`抽象类。 可通过以下步骤来扩展该函数，以实施您自己的自定义谓词计算器`(PredicateEvaluator`。
+的 `cq-search` 项目包含 `AbstractPredicateEvaluator` 抽象类。 可以通过以下步骤来扩展此功能，以实施您自己的自定义谓词计算器 `(PredicateEvaluator`)。
 
 >[!NOTE]
 >
->以下过程说明如何构建`Xpath`表达式以过滤数据。 另一个选项是实施`includes`方法，该方法可逐行选择数据。 有关更多信息，请参阅[Java文档](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
+>以下过程说明如何构建 `Xpath` 过滤数据的表达式。 另一种选择是实施 `includes` 方法。 请参阅 [Java文档](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) 以了解更多信息。
 
-1. 创建扩展`com.day.cq.search.eval.AbstractPredicateEvaluator`的新Java类
-1. 使用`@Component`统一差异格式](https://en.wikipedia.org/wiki/Diff#Unified_format)中显示的类似代码片段对类添加注释[
+1. 创建新的Java类，该类扩展 `com.day.cq.search.eval.AbstractPredicateEvaluator`
+1. 使用 `@Component` 与 [统一差异格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
    ```text
    @@ -19,8 +19,11 @@
@@ -152,11 +152,11 @@ replic.action=Activate
 
    >[!NOTE]
    >
-   >`factory`必须是以`com.day.cq.search.eval.PredicateEvaluator/`开头并以自定义`PredicateEvaluator`名称结尾的唯一字符串。
+   >的 `factory`必须是以开头的唯一字符串 `com.day.cq.search.eval.PredicateEvaluator/`并以自定义名称结尾 `PredicateEvaluator`.
 
    >[!NOTE]
    >
-   >`PredicateEvaluator`的名称是谓词名称，用于生成查询。
+   >的名称 `PredicateEvaluator` 是谓词名称，用于生成查询。
 
 1. 替代:
 
@@ -164,11 +164,11 @@ replic.action=Activate
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   在覆盖方法中，您可以根据参数中给定的`Predicate`构建`Xpath`表达式。
+   在覆盖方法中，您生成 `Xpath` 基于的表达式 `Predicate` 在论据中给出。
 
 ### 复制元数据的自定义谓词计算器示例 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
-此`PredicateEvaluator`的完整实现可能类似于以下类。
+此功能的完整实施 `PredicateEvaluator` 可能与以下类类似。
 
 ```java
 /*

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 了解与生产程序有何不同的沙盒程序。
 
-## Communications API {#introduction}
+## 简介 {#introduction}
 
 沙盒项目通常用于提供培训、运行演示、支持或概念验证(POC)目的，因此不能用于传输实时流量。
 

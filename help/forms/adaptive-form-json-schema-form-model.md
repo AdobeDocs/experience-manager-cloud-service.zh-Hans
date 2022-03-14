@@ -1,5 +1,5 @@
 ---
-title: 为自适应表单设计JSON模式
+title: 为自适应表单设计 JSON 架构
 description: 了解如何使用JSON模式作为表单模型来创建自适应Forms。 您可以使用现有JSON架构创建自适应Forms。 使用JSON模式的示例深入挖掘，在JSON模式定义中预配置字段，限制自适应表单组件的可接受值，以及了解不受支持的结构。
 feature: Adaptive Forms
 role: User, Developer
@@ -8,11 +8,11 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# 为自适应表单设计JSON模式 {#creating-adaptive-forms-using-json-schema}
+# 为自适应表单设计 JSON 架构 {#creating-adaptive-forms-using-json-schema}
 
 ## 前提条件 {#prerequisites}
 

@@ -1,6 +1,6 @@
 ---
-title: 在屏幕中安装和配置播放器作为Cloud Service
-description: 本页介绍如何在Screens中作为Cloud Service安装和配置播放器。
+title: 在屏幕中安装和配置播放器as a Cloud Service
+description: 本页介绍如何在Screensas a Cloud Service安装和配置播放器。
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# 在屏幕中安装和配置播放器作为Cloud Service {#installing-players-screens-cloud}
+# 在屏幕中安装和配置播放器as a Cloud Service {#installing-players-screens-cloud}
 
-本节介绍如何安装已注册到内部部署AEM实例的AEM Screens播放器。 此外，您还必须对现有播放器进行工厂重置，然后针对AEM Screens注册新播放器作为Cloud Service。
+本节介绍如何安装已注册到内部部署AEM实例的AEM Screens播放器。 此外，您还必须对现有播放器进行工厂重置，然后针对AEM Screens as a Cloud Service注册新播放器。
 
 ## 目标 {#objective}
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 将播放器设置为云模式的步骤 {#cloud-mode-setup}
 
-从[AEM Screens Player Downloads](https://download.macromedia.com/screens/)下载最新播放器后，您现在可以将播放器更新为云模式。
+从下载最新播放器后 [AEM Screens Player下载](https://download.macromedia.com/screens/)，您现在可以将播放器更新为云模式。
 
 请按照以下步骤更新您的播放器：
 
@@ -31,21 +31,21 @@ ht-degree: 1%
    >[!NOTE]
    >您可以选择使用专用硬件设备或在您自己的播放器上使用Web扩展进行测试。
 
-1. 单击&#x200B;**配置**&#x200B;选项卡，然后单击&#x200B;**重置**&#x200B;选项下的&#x200B;**工厂**&#x200B;按钮。
+1. 单击 **配置** 选项卡，单击 **到工厂** 按钮 **重置** 选项。
 
    ![图像](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. 单击&#x200B;**Confirm**&#x200B;以重置播放器。
+1. 单击 **确认** 来重置您的播放器。
 
-1. 再次从&#x200B;**配置**&#x200B;选项卡中，单击&#x200B;**切换运行模式**&#x200B;选项下的&#x200B;**更改为云模式**&#x200B;按钮。
+1. 再次从 **配置** 选项卡，单击 **更改为云模式** 按钮 **切换运行模式** 选项。
 
    ![图像](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. 单击&#x200B;**Confirm**，在切换到云模式时，会提示取消注册播放器。
+1. 单击 **确认** 切换到云模式时，将会提示取消注册播放器。
 
 ## 基本播放监控 {#playback-monitoring}
 
-播放器会报告各种播放量度，每个量度的默认值为30秒。 `ping`根据这些量度，我们可以检测各种边缘情况，如体验卡住、空白屏幕和计划问题。 这样，我们便可以了解设备上的问题并排除其故障，从而加快调查和纠正措施的实施。
+播放器会根据每个 `ping` 默认为30秒。 根据这些量度，我们可以检测各种边缘情况，如体验卡住、空白屏幕和计划问题。 这样，我们便可以了解设备上的问题并排除其故障，从而加快调查和纠正措施的实施。
 
 AEM Screens播放器中的基本播放监控允许我们：
 
@@ -57,7 +57,7 @@ AEM Screens播放器中的基本播放监控允许我们：
 
 ### 了解属性 {#understand-properties}
 
-每个`ping`中包含以下属性：
+每个 `ping`:
 
 | 属性 | 描述 |
 |---|---|
@@ -80,7 +80,7 @@ AEM Screens播放器中的基本播放监控允许我们：
 
 * 播放器会向服务器报告其自身的播放状态，因此需要活动连接。
 
-* 默认情况下，用于检查GPU的`isContentRendering`属性当前占用的资源过多，无法启用，并且需要从播放器首选项中明确选择加入。 建议不要将其与生产中的视频结合使用。
+* 的 `isContentRendering` 默认情况下，用于检查GPU的属性当前占用的资源太多，无法启用，并且需要从播放器首选项明确选择加入。 建议不要将其与生产中的视频结合使用。
 
 * 此功能仅支持序列渠道，尚不涵盖交互式渠道(SPA)用例。
 
@@ -88,4 +88,4 @@ AEM Screens播放器中的基本播放监控允许我们：
 
 ## 下一步 {#whats-next}
 
-现在，您已安装播放器并将其配置为云模式，接下来应继续将Screens作为Cloud Service历程，方法是：接下来查看文档[从Screens服务提供商将Screens中的播放器注册为Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)。
+现在，您已将播放器安装并配置为云模式，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中注册播放器as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) 从Screens服务提供商。

@@ -4,7 +4,7 @@ description: 了解的架构 [!DNL AEM Forms] as a Cloud Service了解该平台�
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -49,8 +49,9 @@ AEM QuickStart之前包含的某些界面不再可供AEMas a Cloud Service环境
 此外，开发人员最常见的要求之一是快速访问各种环境的日志文件。 使用 [!DNL AEM Cloud Service]，创作发布中不同节点的日志文件可通过Cloud Manager使用（可下载的文件形式或通过API跟踪日志）。 由于代码和内容之间有着明确的分离，开发人员可以利用特定流程在部署中更新内容。 可变内容的典型用例包括：
 * 属于客户项目的标准“默认”内容（例如文件夹、模板、工作流……）
 * 搜索索引定义
-* ACL和权限
-* 服务用户和用户组设置开发环境， [配置CI/CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)，并学习 [部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 在环境中。
+* ACL 和权限
+* 服务用户和用户组
+设置开发环境， [配置CI/CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)，并学习 [部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 在环境中。
 
 ## 地方发展 {#local-development}
 

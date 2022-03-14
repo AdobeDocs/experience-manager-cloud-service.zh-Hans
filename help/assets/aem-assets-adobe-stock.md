@@ -243,7 +243,7 @@ IMS 配置包括两个步骤：
 以下是用户搜索和许可Adobe Stock资产所需的权限：
 
 * 配置路径： `/conf/global/settings/stock`
-* 权限: `jcr:read`
+* 特权: `jcr:read`
 * 权限类型: `Allow`
 
 您可以创建用户群组或将权限分配给现有用户群组。 权限可从 [!DNL Experience Manager Assets] 界面或 [!DNL User Admin] 控制台。
@@ -257,7 +257,7 @@ IMS 配置包括两个步骤：
 1. 在左侧面板中搜索用户组并添加新 **[!UICONTROL 访问控制条目(ACE)]** Adobe Stock。
 
    * 配置路径： `/conf/global/settings/stock`
-   * 权限: `jcr:read`
+   * 特权: `jcr:read`
    * 权限类型: `Allow`
 
    单击&#x200B;**[!UICONTROL 添加]**。

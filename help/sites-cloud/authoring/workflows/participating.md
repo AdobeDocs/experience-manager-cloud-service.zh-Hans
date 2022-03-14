@@ -5,7 +5,7 @@ exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1545'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 71%
 
    >[!NOTE]
    >
-   >状态栏仅对具有工作流权限的用户可见；例如，`workflow-users`组的成员。
+   >状态栏仅对具有工作流权限的用户可见；例如， `workflow-users` 群组。
    >
    >
    >如果当前用户直接参与工作流的当前步骤，则会显示相应的操作。
@@ -66,7 +66,7 @@ ht-degree: 71%
 * [收件箱](#completing-a-participant-step-inbox)
 * [页面编辑器](#completing-a-participant-step-page-editor)
 * [时间轴](#completing-a-participant-step-timeline)
-* [打开工作流项目以查看详细信息时](#opening-a-workflow-item-to-view-details-and-take-actions)。
+* When [打开工作流项目以查看详细信息](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### 完成参与者步骤 - 收件箱 {#completing-a-participant-step-inbox}
 
@@ -74,24 +74,24 @@ ht-degree: 71%
 
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
-1. 从工具栏中选择&#x200B;**Complete**。
-1. 此时将打开&#x200B;**完成工作项目**&#x200B;对话框。从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**注释**。
-1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止该操作）。
+1. 选择 **完成** 中。
+1. 此时将打开&#x200B;**完成工作项目**&#x200B;对话框。选择 **下一步** 从下拉选择器中，添加 **注释** （如果需要）。
+1. 使用 **确定** 完成步骤(或 **取消** 中止操作)。
 
 #### 完成参与者步骤 - 页面编辑器 {#completing-a-participant-step-page-editor}
 
 请按照以下过程完成工作项：
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
-1. 从顶部的状态栏中选择&#x200B;**Complete**。
-1. 此时将打开&#x200B;**完成工作项目**&#x200B;对话框。从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**注释**。
-1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止该操作）。
+1. 选择 **完成** 中。
+1. 此时将打开&#x200B;**完成工作项目**&#x200B;对话框。选择 **下一步** 从下拉选择器中，添加 **注释** （如果需要）。
+1. 使用 **确定** 完成步骤(或 **取消** 中止操作)。
 
 #### 完成参与者步骤 - 时间轴 {#completing-a-participant-step-timeline}
 
 您也可以使用时间轴来完成并推进步骤：
 
-1. 选择所需的页面并打开&#x200B;**时间轴**（或打开&#x200B;**时间轴**&#x200B;并选择该页面）：
+1. 选择所需的页面并打开 **时间轴** (或打开 **时间轴** 并选择页面):
 
    ![完成步骤](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
@@ -105,7 +105,7 @@ ht-degree: 71%
 
 1. 选择&#x200B;**前进**&#x200B;以确认操作。
 
-### 委派参与者步骤  {#delegating-a-participant-step}
+### 委派参与者步骤 {#delegating-a-participant-step}
 
 如果某个步骤已分配给您，但由于某种原因您无法采取操作，则您可以将该步骤委派给其他用户或组。
 
@@ -125,7 +125,7 @@ ht-degree: 71%
 * [收件箱](#delegating-a-participant-step-inbox)
 * [页面编辑器](#delegating-a-participant-step-page-editor)
 * [时间轴](#delegating-a-participant-step-timeline)
-* [打开工作流项目以查看详细信息时](#opening-a-workflow-item-to-view-details-and-take-actions)。
+* When [打开工作流项目以查看详细信息](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### 委派参与者步骤 - 收件箱 {#delegating-a-participant-step-inbox}
 
@@ -133,24 +133,24 @@ ht-degree: 71%
 
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
-1. 从工具栏中选择&#x200B;**委派**。
-1. 此时将打开一个对话框。从下拉选择器中指定&#x200B;**User**（这也可以是组），并根据需要添加&#x200B;**Comment**。
-1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止该操作）。
+1. 选择 **委派** 中。
+1. 此时将打开一个对话框。指定 **用户** 从下拉选择器（这也可以是组）中，添加 **注释** （如果需要）。
+1. 使用 **确定** 完成步骤(或 **取消** 中止操作)。
 
 #### 委派参与者步骤 - 页面编辑器 {#delegating-a-participant-step-page-editor}
 
 请按照以下过程委派工作项：
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
-1. 从顶部的状态栏中选择&#x200B;**委派**。
-1. 此时将打开一个对话框。从下拉选择器中指定&#x200B;**User**（这也可以是组），并根据需要添加&#x200B;**Comment**。
-1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止该操作）。
+1. 选择 **委派** 中。
+1. 此时将打开一个对话框。指定 **用户** 从下拉选择器（这也可以是组）中，添加 **注释** （如果需要）。
+1. 使用 **确定** 完成步骤(或 **取消** 中止操作)。
 
 #### 委派参与者步骤 - 时间轴 {#delegating-a-participant-step-timeline}
 
 您也可以使用时间轴来委派和/或分配步骤：
 
-1. 选择所需的页面并打开&#x200B;**时间轴**（或打开&#x200B;**时间轴**&#x200B;并选择该页面）。
+1. 选择所需的页面并打开 **时间轴** (或打开 **时间轴** ，然后选择页面)。
 1. 单击/点按警报横幅以显示可用的操作。选择&#x200B;**更改被分派人**：
 
    ![委派步骤](/help/sites-cloud/authoring/assets/workflows-delegate.png)
@@ -159,7 +159,7 @@ ht-degree: 71%
 
    ![更改被分派人](/help/sites-cloud/authoring/assets/workflows-assignee.png)
 
-1. 选择&#x200B;**分配**&#x200B;以确认操作。
+1. 选择 **分配** 以确认操作。
 
 ### 对参与者步骤执行回退 {#performing-step-back-on-a-participant-step}
 
@@ -175,7 +175,7 @@ ht-degree: 71%
 * [收件箱](#performing-step-back-on-a-participant-step-inbox)
 * [页面编辑器](#performing-step-back-on-a-participant-step-page-editor)
 * [时间轴](#performing-step-back-on-a-participant-step-timeline)
-* [打开工作流项目以查看详细信息时](#opening-a-workflow-item-to-view-details-and-take-actions)。
+* When [打开工作流项目以查看详细信息](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### 对参与者步骤执行回退 - 收件箱 {#performing-step-back-on-a-participant-step-inbox}
 
@@ -183,24 +183,24 @@ ht-degree: 71%
 
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
-1. 选择&#x200B;**回退**&#x200B;以打开对话框。
+1. 选择 **回退** 打开对话框。
 1. 指定&#x200B;**上一步**，并根据需要添加&#x200B;**评论**。
-1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止该操作）。
+1. 使用 **确定** 完成步骤(或 **取消** 中止操作)。
 
 #### 对参与者步骤执行回退 - 页面编辑器 {#performing-step-back-on-a-participant-step-page-editor}
 
 请按照以下过程执行回退：
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
-1. 从顶部的状态栏中选择&#x200B;**回退** 。
+1. 选择 **回退** 中。
 1. 指定&#x200B;**上一步**，并根据需要添加&#x200B;**评论**。
-1. 使用&#x200B;**OK**&#x200B;完成该步骤（或使用&#x200B;**Cancel**&#x200B;中止该操作）。
+1. 使用 **确定** 完成步骤(或 **取消** 中止操作)。
 
 #### 对参与者步骤执行回退 - 时间轴 {#performing-step-back-on-a-participant-step-timeline}
 
 您也可以使用时间轴来回滚（回退）到上一步：
 
-1. 选择所需的页面并打开&#x200B;**时间轴**（或打开&#x200B;**时间轴**&#x200B;并选择该页面）。
+1. 选择所需的页面并打开 **时间轴** (或打开 **时间轴** ，然后选择页面)。
 1. 单击/点按警报横幅以显示可用的操作。选择&#x200B;**回滚**：
 
    ![回滚步骤](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
@@ -209,9 +209,9 @@ ht-degree: 71%
 
    ![指定步骤](/help/sites-cloud/authoring/assets/workflows-roll-back-step.png)
 
-1. 选择&#x200B;**回滚**&#x200B;以确认操作。
+1. 选择 **回滚** 以确认操作。
 
-### 打开工作流项目以查看详细信息（并执行操作）{#opening-a-workflow-item-to-view-details-and-take-actions}
+### 打开工作流项目以查看详细信息（并执行操作） {#opening-a-workflow-item-to-view-details-and-take-actions}
 
 查看工作流工作项的详细信息并执行相应的操作。
 
@@ -221,15 +221,15 @@ ht-degree: 71%
 
    ![“工作项”选项卡](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
-* **工作流** 信息选项卡：
+* **工作流信息** 选项卡：
 
    ![“工作流”选项卡](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   如果为模型配置了工作流阶段，则可以根据以下内容查看进度：<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+   如果为模型配置了工作流阶段，则可以根据以下内容查看进度： <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
    ![工作流阶段](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
-* **** “注释”选项卡：
+* **评论** 选项卡：
 
    ![“注释”选项卡](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
@@ -244,20 +244,20 @@ ht-degree: 71%
 
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
-1. 选择&#x200B;**打开**&#x200B;以打开信息选项卡。
+1. 选择 **打开** 打开信息选项卡。
 1. 如果需要，选择相应的操作，提供任何详细信息，然后单击&#x200B;**确定**&#x200B;进行确认（或单击&#x200B;**取消**）。
-1. 使用&#x200B;**Save**&#x200B;或&#x200B;**Cancel**&#x200B;退出。
+1. 使用 **保存** 或 **取消** 退出。
 
 #### 打开工作流详细信息 - 页面编辑器 {#opening-workflow-details-page-editor}
 
 要打开工作流项目并查看其详细信息，请执行以下操作：
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
-1. 从状态栏中选择&#x200B;**查看详细信息**&#x200B;以打开信息选项卡。
+1. 选择 **查看详细信息** 从状态栏中打开信息选项卡。
 1. 如果需要，选择相应的操作，提供任何详细信息，然后单击&#x200B;**确定**&#x200B;进行确认（或单击&#x200B;**取消**）。
-1. 使用&#x200B;**Save**&#x200B;或&#x200B;**Cancel**&#x200B;退出。
+1. 使用 **保存** 或 **取消** 退出。
 
-### 查看工作流负载（多个资源）{#viewing-the-workflow-payload-multiple-resources}
+### 查看工作流有效负荷（多个资源） {#viewing-the-workflow-payload-multiple-resources}
 
 您可以查看与工作流实例关联的有效负荷的详细信息。最初会显示资源包，之后您可以深入查看各个页面。
 
@@ -265,6 +265,6 @@ ht-degree: 71%
 
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
-1. 从工具栏中选择&#x200B;**查看负载**&#x200B;以打开对话框。
+1. 选择 **查看有效负载** 来打开对话框。
    * 由于工作流包只是存储库中路径的指针集合，因此您可以在此处添加/删除/修改条目以调整工作流包所引用的内容。使用&#x200B;**资源定义**&#x200B;组件可添加新条目。
 1. 可以使用这些链接打开各个页面。

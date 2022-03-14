@@ -1,23 +1,23 @@
 ---
-title: '管理发布 '
+title: 管理发布
 description: 将资产发布或取消发布到Experience Manager Assets、Dynamic Media和Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 8%
 
 ---
 
-
 # 在Experience Manager Assets中管理发布 {#manage-publication-in-aem}
 
 作为 [!DNL Adobe Experience Manager Assets] 管理员，您可以将资产和包含资产的文件夹从创作实例发布到 [!DNL Experience Manager Assets], [!DNL Dynamic Media]和 [!DNL Brand Portal]. 此外，您还可以安排在稍后的日期或时间执行资产或文件夹的发布工作流。发布后，用户可以访问资产并将其进一步分发给其他用户。 默认情况下，您可以将资产和文件夹发布到 [!DNL Experience Manager Assets]. 但是，您可以配置 [!DNL Experience Manager Assets] 启用发布到 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 和 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-您可以使用以下任一方式在资产或文件夹级别发布或取消发布资产 **[!UICONTROL 快速发布]** 或 **[!UICONTROL 管理发布]** 选项 [!DNL Experience Manager Assets] 界面。 如果您随后在 [!DNL Experience Manager Assets]，则在从中重新发布之前，所做的更改不会反映在发布实例中 [!DNL Experience Manager Assets]. 它可确保在发布实例中不提供正在进行的更改。 只有管理员发布的已批准更改才能在发布实例中可用。
+您可以使用以下任一方式在资产或文件夹级别发布或取消发布资产 **[!UICONTROL 快速发布]** 或 **[!UICONTROL 管理发布]** 选项 [!DNL Experience Manager Assets] 界面。 如果您随后在 [!DNL Experience Manager Assets]，则在从重新发布之前，所做的更改不会反映在发布实例中 [!DNL Experience Manager Assets]. 它可确保在发布实例中不提供正在进行的更改。 只有管理员发布的已批准更改才能在发布实例中可用。
 
 * [使用快速发布发布发布资产](#quick-publish)
 * [使用管理发布发布资产](#manage-publication)
@@ -191,4 +191,3 @@ Only the selected folder content and references are published.
 * 未发布空文件夹。
 * 如果您发布的资产正在处理，则只会发布原始内容。 缺少演绎版。 等待处理完成，然后在处理完成后发布或重新发布资产。
 * 取消发布复杂资产时，仅取消发布该资产。请避免取消发布引用，因为其他已发布的资产可能会引用这些引用。
-

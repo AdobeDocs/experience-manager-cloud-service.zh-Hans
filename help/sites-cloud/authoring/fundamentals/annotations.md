@@ -23,7 +23,7 @@ ht-degree: 35%
 
 >[!TIP]
 >
->根据您的要求，您还可以开发[工作流](/help/sites-cloud/authoring/workflows/overview.md)，以在添加、更新或删除注释时发送通知。
+>根据您的要求，您还可以开发 [工作流](/help/sites-cloud/authoring/workflows/overview.md) 添加、更新或删除注释时发送通知。
 
 ## 注释指示器 {#annotation-indicator}
 
@@ -31,7 +31,7 @@ ht-degree: 35%
 
 ![注释指示器](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-## 注释模式{#annotate-mode}
+## 注释模式 {#annotate-mode}
 
 注释仅在“注释”模式下可见。
 
@@ -49,11 +49,11 @@ ht-degree: 35%
 
 1. 要退出“注释”模式并返回到之前使用的模式，请点按/单击顶部工具栏右侧的x按钮。
 
-## 添加和编辑注释{#annotating-a-component}
+## 添加和编辑注释 {#annotating-a-component}
 
 除了查看注释之外，在注释模式下，您还可以创建、编辑、移动或删除内容的注释
 
-1. [在页面上](#annotate-mode) 开始注释模式。
+1. [开始注释模式](#annotate-mode) 页面上。
 
 1. 单击或点按“添加注释”图标（工具栏左侧的加号）以开始添加注释。
 
@@ -81,7 +81,7 @@ ht-degree: 35%
 
 1. 完成特定注释编辑之后，您可以：
 
-   * 单击或点按文本标记以打开注释。 打开后，您可以查看全文，进行更改，或[删除注释。](#deleting-annotations)
+   * 单击或点按文本标记以打开注释。 打开后，您可以查看全文、进行更改，或 [删除注释。](#deleting-annotations)
    * 调整文本标记位置。
    * 单击或点按草图线以选择该草图，然后将其拖动到所需位置。
    * 移动或复制组件
@@ -96,11 +96,11 @@ ht-degree: 35%
 >
 >单个组件类型的定义决定是否可在该组件的实例中添加注释。
 
-## 删除注释和草图{#deleting-annotations}
+## 删除注释和草图 {#deleting-annotations}
 
 可以删除注释及其关联的草图。
 
-1. [在页面上](#annotate-mode) 开始注释模式。
+1. [开始注释模式](#annotate-mode) 页面上。
 
 1. 单击/点按文本标记以打开注释。
 
@@ -114,11 +114,11 @@ ht-degree: 35%
 >
 >删除组件会删除附加到该资源的所有注释和草图，无论这些注释和草图处于整个页面的什么位置，均将如此。
 
-## 仅删除草图{#deleting-sketches}
+## 仅删除草图 {#deleting-sketches}
 
 只能删除特定草图，而不能删除包含所有关联草图的整个注释。
 
-1. [在页面上](#annotate-mode) 开始注释模式。
+1. [开始注释模式](#annotate-mode) 页面上。
 
 1. 单击或点按草图。 AEM用较深的蓝色框突出显示它。
 

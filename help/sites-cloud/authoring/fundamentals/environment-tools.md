@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
 source-wordcount: '2154'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -190,7 +190,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可�
 
    ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 属于[Live Copy](/help/sites-cloud/administering/msm/overview.md)的一部分的页面，其中组件继承自其他页面。
+* 属于 [livecopy](/help/sites-cloud/administering/msm/overview.md)，其中组件继承自其他页面。
 
 >[!NOTE]
 >
@@ -283,7 +283,6 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可�
 >* 某些模式需要相应的许可/权限才能访问。
 >* 由于空间限制，“开发人员”模式在移动设备上不可用。
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) 可以在&#x200B;**预览**&#x200B;模式和当前选定的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
-
 >
 
 

@@ -2,13 +2,13 @@
 title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
-source-git-commit: 0912cadeae13050c9cfc606d1c2b8f4236cd78ed
-workflow-type: ht
+exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 100%
 
 ---
-
 
 # 持久 GraphQL 查询 {#persisted-queries-caching}
 
@@ -227,6 +227,7 @@ ht-degree: 100%
 >
 >例如，在请求中执行持久查询：
 >
->```xml
+>
+```xml
 >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
 >```

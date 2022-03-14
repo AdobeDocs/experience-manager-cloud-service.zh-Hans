@@ -1,15 +1,15 @@
 ---
-title: Screensas a Cloud Service常见问题解答
+title: Screens as a Cloud Service 常见问题解答
 description: 本页介绍Screensas a Cloud Service常见问题解答。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Screensas a Cloud Service常见问题解答 {#screens-cloud-faqs}
+# Screens as a Cloud Service 常见问题解答 {#screens-cloud-faqs}
 
 以下部分提供了与Screensas a Cloud Service项目相关的常见问题解答(FAQ)的答案。
 

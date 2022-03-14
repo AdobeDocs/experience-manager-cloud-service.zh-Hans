@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -43,8 +43,8 @@ Cloud Manager支持以下客户SSL证书要求：
 
 使用Cloud Manager UI SSL证书页面，具有权限的用户可以执行多项任务来管理程序的SSL证书：
 
-* [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [查看、更新或替换SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
    >这些操作允许您查看详细信息或替换即将过期的证书。
-* [删除SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+* [删除 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)

@@ -1,15 +1,15 @@
 ---
-title: 入门历程
+title: 入门培训历程
 description: 单击此处开始，概述可用于了解载入体验的引导式载入历程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 入门历程 {#onboarding-journey}
+# 入门培训历程 {#onboarding-journey}
 
 恭喜您开始使用AEM as a Cloud Service Journey! 我们很高兴您能来这里，并且迫不及待地想要开始您的入门历程。 无论您是要部署新应用程序还是迁移现有应用程序，本指南都将作为您的起点，确保您的团队已设置并有权访问AEMas a Cloud Service。
 

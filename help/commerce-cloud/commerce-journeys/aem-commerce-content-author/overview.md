@@ -1,14 +1,15 @@
 ---
 title: AEM Commerce内容创作历程
 description: 在此处开始引导式的AEM Commerce创作历程
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
-# AEM内容和商务内容创作历程 {#aem-commerce-author-journey}
+# AEM Content and Commerce 内容创作历程 {#aem-commerce-author-journey}
 
 从此处开始，逐步引导您了解AEM内容和商务，以了解如何管理产品体验。
 

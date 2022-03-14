@@ -1,7 +1,8 @@
 ---
 title: 代码重构工具的统一体验
 description: 代码重构工具的统一体验
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 我们开发了一些工具来自动执行与AEMas a Cloud Service兼容所需的一些代码重构任务。 为了降低与安装和配置不同代码重构工具相关的复杂性，我们开发了一个插件来统一在代码和存储库上运行的工具。
 
-## 优点 {#benefits}
+## 好处 {#benefits}
 
 统一体验插件具有以下优势：
 

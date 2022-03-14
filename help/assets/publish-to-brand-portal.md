@@ -2,13 +2,13 @@
 title: 将资产、文件夹和收藏集发布到 Brand Portal
 description: 将资产、文件夹和收藏集发布到 Brand Portal。
 contentOwner: Vishabh Gupta
-feature: Brand Portal,Asset Distribution，配置
+feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 97%
+source-wordcount: '1153'
+ht-degree: 98%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: 管理演示网站
 description: 了解可用于帮助您管理演示网站的工具以及如何删除它们。
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # 管理演示网站 {#manage-demo-sites}
 

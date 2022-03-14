@@ -1,10 +1,11 @@
 ---
 title: 内容传输工具的先决条件
 description: 内容传输工具的先决条件
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 

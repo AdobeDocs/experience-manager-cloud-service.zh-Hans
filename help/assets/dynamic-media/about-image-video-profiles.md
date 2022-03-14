@@ -113,7 +113,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![“属性”对话框](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. 在的 **[!UICONTROL 批量上传到Scene7 — 步骤属性]** 对话框，选择 **[!UICONTROL 完成]**.
+1. 位于的右上角 **[!UICONTROL 批量上传到Scene7 — 步骤属性]** 对话框，选择 **[!UICONTROL 完成]**.
 
 1. 位于Scene7的右上角：重新处理资产工作流模型页面，选择 **[!UICONTROL 同步]**. 当您看到 **[!UICONTROL 已同步]**，则工作流运行时模型已成功同步并可重新处理文件夹中的资产。
 

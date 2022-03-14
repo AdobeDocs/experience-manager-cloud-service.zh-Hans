@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 * 城市
 * 公司
 * 人员
-* 奖项
+* 奖励
 
 看起来很简单，但公司当然有CEO和员工…….这些都是人，每个人都定义为人。
 
@@ -127,7 +127,7 @@ ht-degree: 5%
 
 
 * 入门指南
-   * [创建资产文件夹 — 无头设置](/help/headless/setup/create-assets-folder.md)
+   * [创建资源文件夹 - Headless 设置](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless 内容架构师历程
 

@@ -1,15 +1,15 @@
 ---
-title: 从源提取内容
-description: 从源提取内容
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: 从源中提取内容
+description: 从源中提取内容
+exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
-
-# 从源提取内容 {#extracting-content}
+# 从源中提取内容 {#extracting-content}
 
 ## 内容传输工具中的提取流程 {#extraction-process}
 

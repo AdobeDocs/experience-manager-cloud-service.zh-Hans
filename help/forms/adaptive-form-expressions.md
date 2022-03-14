@@ -18,7 +18,7 @@ JavaScript™是自适应Forms的表达式语言。 所有表达式都是有效�
 
 ## 编写表达式的最佳实践 {#best-practices-for-writing-expressions}
 
-* 在编写表达式时，要访问字段和面板，可以使用字段或面板的名称。 要访问字段的值，请使用value属性。 例如, `field1.value`
+* 在编写表达式时，要访问字段和面板，可以使用字段或面板的名称。 要访问字段的值，请使用value属性。 例如，`field1.value`
 * 在表单中为字段和面板使用唯一的名称。 它有助于避免与编写表达式时使用的字段名称发生任何可能的冲突。
 * 编写多行表达式时，使用分号终止语句。
 
@@ -64,7 +64,7 @@ JavaScript™是自适应Forms的表达式语言。 所有表达式都是有效�
 
 ### 计算表达式 {#calculate-expression}
 
-计算表达式用于使用表达式自动计算字段的值。 通常，此表达式使用其他字段的value属性。 例如, `field2.value + field3.value`. 只要 `field2`或 `field3`更改后，将检索表达式并重新计算值。
+计算表达式用于使用表达式自动计算字段的值。 通常，此表达式使用其他字段的value属性。 例如， `field2.value + field3.value`. 只要 `field2`或 `field3`更改后，将检索表达式并重新计算值。
 
 **适用于**:字段
 
@@ -139,7 +139,7 @@ JavaScript™是自适应Forms的表达式语言。 所有表达式都是有效�
 
 >[!NOTE]
 >
->如果为非必填或必填字段编写验证表达式，则无论该字段的可见性状态如何，都会计算该表达式。 要停止对隐藏字段的验证，请将Initialization或Value Commit脚本中的validationsDisabled属性设置为true。 例如, `this.validationsDisabled=true`
+>如果为非必填或必填字段编写验证表达式，则无论该字段的可见性状态如何，都会计算该表达式。 要停止对隐藏字段的验证，请将Initialization或Value Commit脚本中的validationsDisabled属性设置为true。 例如，`this.validationsDisabled=true`
 
 ### 值提交脚本 {#value-commit-script}
 

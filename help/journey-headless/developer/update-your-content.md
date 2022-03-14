@@ -5,17 +5,17 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 如何通过AEM Assets API更新您的内容 {#update-your-content}
 
-在[AEM无头开发人员历程的这一部分中，](overview.md)了解如何使用REST API访问和更新内容片段的内容。
+在 [AEM Headless开发人员历程,](overview.md) 了解如何使用REST API访问和更新内容片段的内容。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM无头历程的上一个文档中， [如何通过AEM交付API访问您的内容](access-your-content.md)您学习了如何通过AEM GraphQL API在AEM中访问无头内容，您现在应该：
+在AEM无头历程的上一个文档中， [如何通过AEM交付API访问您的内容](access-your-content.md) 您学习了如何通过AEM GraphQL API在AEM中访问无头内容，现在应该：
 
 * 深入了解GraphQL。
 * 了解AEM GraphQL API的工作方式。
@@ -41,18 +41,18 @@ ht-degree: 2%
 
 那么，为何需要其他API?
 
-资产HTTP API允许您&#x200B;**读取**&#x200B;内容，但也允许您&#x200B;**创建**、**更新**&#x200B;和&#x200B;**删除**&#x200B;内容 — GraphQL API不可能执行的操作。
+资产HTTP API允许您 **读取** 您的内容，但它也允许您 **创建**, **更新** 和 **删除** 内容 — GraphQL API无法执行的操作。
 
 在最新Adobe Experience Manager as a Cloud Service版本的每次现成安装中，都提供Assets REST API。
 
-## 资产 HTTP API {#assets-http-api}
+## 资源 HTTP API {#assets-http-api}
 
 资产HTTP API包括：
 
 * 资产REST API
 * 包括对内容片段的支持
 
-资产HTTP API的当前实施基于&#x200B;**REST**&#x200B;架构样式，允许您通过&#x200B;**CRUD**&#x200B;操作（创建、读取、更新、删除）访问内容(存储在AEM中)。
+资产HTTP API的当前实施基于 **REST** 架构样式，并允许您通过 **CRUD** 操作（创建、读取、更新、删除）。
 
 通过这些操作，API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager as a Cloud Service作为无头CMS（内容管理系统）进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。 例如，单页应用程序(SPA)（基于框架或自定义）需要通过API提供的内容，通常采用JSON格式。
 
@@ -209,20 +209,20 @@ Associated content is currently not exposed.
 
 ### 访问 {#access}
 
-资产REST API使用`/api/assets`端点，并需要资产的路径才能访问该端点（不带前导`/content/dam`）。
+资产REST API使用 `/api/assets` 端点，并且需要资产的路径才能访问该资产(不具有前导 `/content/dam`)。
 
 * 这意味着要在以下位置访问资产：
    * `/content/dam/path/to/asset`
 * 您需要请求：
    * `/api/assets/path/to/asset`
 
-例如，要访问`/content/dam/wknd/en/adventures/cycling-tuscany`，请求`/api/assets/wknd/en/adventures/cycling-tuscany.json`
+例如，要访问 `/content/dam/wknd/en/adventures/cycling-tuscany`，请求 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >访问：
 >
->* `/api/assets` **不** 需要使用选择 `.model` 器。
->* `/content/path/to/page` **** 需要使用选择 `.model` 器。
+>* `/api/assets` **不** 需要使用 `.model` 选择器。
+>* `/content/path/to/page` **does** 要求使用 `.model` 选择器。
 
 
 ### 操作 {#operation}
@@ -236,7 +236,7 @@ HTTP方法确定要执行的操作：
 
 >[!NOTE]
 >
->请求正文和/或URL参数可用于配置其中的一些操作；例如，定义文件夹或资产应由&#x200B;**POST**&#x200B;请求创建。
+>请求正文和/或URL参数可用于配置其中的一些操作；例如，定义文件夹或资产应由 **POST** 请求。
 
 支持的请求的确切格式在API引用文档中定义。
 
@@ -251,11 +251,11 @@ HTTP方法确定要执行的操作：
 
 >[!CAUTION]
 >
->AEM云实例上的调度程序配置可能会阻止对`/api`的访问。
+>AEM云实例上的调度程序配置可能会阻止访问 `/api`.
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅API引用。 尤其是[Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>有关更多详细信息，请参阅API引用。 特别是， [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### 读取/投放 {#read-delivery}
 
@@ -280,7 +280,7 @@ HTTP方法确定要执行的操作：
 
 `POST /{cfParentPath}/{cfName}`
 
-主体必须包含要创建的内容片段的JSON表示形式，包括应在内容片段元素中设置的任何初始内容。 必须设置`cq:model`属性，并且必须指向有效的内容片段模型。 如果不这样做，则会导致错误。 还需要添加一个标头`Content-Type`，该标头设置为`application/json`。
+主体必须包含要创建的内容片段的JSON表示形式，包括应在内容片段元素中设置的任何初始内容。 必须将 `cq:model` 属性，且必须指向有效的内容片段模型。 如果不这样做，则会导致错误。 还需要添加标头 `Content-Type` 将设置为 `application/json`.
 
 ### 更新 {#update}
 
@@ -318,12 +318,12 @@ HTTP方法确定要执行的操作：
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-您应该继续您的AEM无头历程，方法是接下来查看文档[如何使用您的无头应用程序上线](go-live.md)，您实际将AEM无头项目上线！
+您应该通过下一步审阅文档来继续您的AEM无头历程 [如何使用您的无头应用程序](go-live.md) 您实际将AEM Headless项目上线！
 
 ## 其他资源 {#additional-resources}
 
-* [资产 HTTP API](/help/assets/mac-api-assets.md)
-* [内容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
+* [资源 HTTP API](/help/assets/mac-api-assets.md)
+* [内容片段 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)

@@ -1,18 +1,18 @@
 ---
-title: 在Screens中创建和管理渠道作为Cloud Service
-description: 本页介绍如何在Screens中作为Cloud Service创建和管理渠道。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+title: 在Screens中创建和管理渠道as a Cloud Service
+description: 本页介绍如何在Screens中创建和管理渠道as a Cloud Service。
+exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 7%
 
 ---
 
-
-# 在Screens中创建和管理渠道作为Cloud Service {#creating-channels-screens-cloud}
+# 在Screens中创建和管理渠道as a Cloud Service {#creating-channels-screens-cloud}
 
 创建AEM Screens项目后，必须创建渠道。
-***渠道***、显示一系列内容（图像和视频）、网站或单页应用程序。
+***渠道***、显示内容序列（图像和视频）、网站或单页应用程序。
 
 ## 目标 {#objective}
 
@@ -21,35 +21,35 @@ ht-degree: 7%
 * 了解如何创建Screens内容提供商的渠道
 * 管理和编辑渠道中的内容
 
-## 在Screens中作为Cloud Service创建新序列渠道的步骤 {#create-new-channel}
+## 在Screens中创建新序列渠道的步骤as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**前提条件**
->在开始本指南的此部分之前，请查看[在Screens中作为Cloud Service创建和管理项目](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
+>在开始本指南的本节之前，请查阅 [在Screens中创建和管理项目as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-请按照以下步骤在Screens中作为Cloud Service创建新序列渠道：
+请按照以下步骤在Screens中as a Cloud Service创建新序列渠道：
 
 1. 导航到Screens内容提供商。
 
-1. 导航到您的AEM Screens项目，如&#x200B;*FirstDigitalExperience*。
+1. 导航到您的AEM Screens项目，例如 *FirstDigitalExperience*.
 
-1. 从项目中选择&#x200B;**渠道**&#x200B;文件夹，如&#x200B;**FirstDigitalExperience** —> **渠道**，然后单击操作栏中的&#x200B;**创建**。
+1. 选择 **渠道** 文件夹，例如 **FirstDigitalExperience** —> **渠道** 单击 **创建** 中。
 
    ![](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. 从&#x200B;**创建**&#x200B;向导中选择模板，例如&#x200B;**序列渠道**，然后单击&#x200B;**下一步**。
+1. 选择模板，例如 **序列渠道** 从 **创建** 向导，单击 **下一个**.
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > 创建渠道时， **创建**&#x200B;向导会提供不同类型的模板。 有关更多详细信息，请参阅创建向导中的[可用模板](#available-templates)一节。
+   > 的 **创建** 向导在创建渠道时提供不同类型的模板。 请参阅章节 [可用模板](#available-templates) ，以了解更多详细信息。
 
-1. 输入序列渠道的名称，如&#x200B;**LoopingChannelOne** ，然后单击&#x200B;**Create**。
+1. 输入序列渠道的名称，例如 **LoopingChannelOne** 单击 **创建**.
 
    ![](/help/screens-cloud/assets/create-content/channel-create3.png)
 
-   现在，您将在AEM Screens项目的“渠道”文件夹中看到&#x200B;**LoopingChannelOne**。
+   您现在将看到 **LoopingChannelOne** 的渠道文件夹中。AEM Screens项目。
 
-   创建渠道后，您现在可以向渠道中添加内容。 请参阅[向渠道添加内容](#add-content) ，了解如何向渠道添加资产（图像/视频）。
+   创建渠道后，您现在可以向渠道中添加内容。 请参阅 [向渠道添加内容](#add-content) 了解如何将资产（图像/视频）添加到渠道。
 
 ## 管理渠道 {#managing-channels}
 
@@ -63,7 +63,7 @@ ht-degree: 7%
 
 要在渠道中添加或编辑内容，请按照以下步骤操作：
 
-1. 选择要编辑的渠道，如下图所示。 单击操作栏左上角的&#x200B;**编辑**&#x200B;以打开编辑器。
+1. 选择要编辑的渠道，如下图所示。 单击 **编辑** 从操作栏的左上角打开编辑器。
 
    ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -74,12 +74,12 @@ ht-degree: 7%
    ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >单击&#x200B;**预览**以预览渠道的内容。
+   >单击 **预览** 以预览渠道的内容。
    >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 创建向导中的可用模板 {#available-templates}
 
-使用&#x200B;**创建**&#x200B;渠道向导时，可以使用以下模板：
+使用 **创建** 渠道向导：
 
 | 可用模板 | 描述 |
 |--- |--- |
@@ -90,4 +90,4 @@ ht-degree: 7%
 
 ## 下一步 {#whats-next}
 
-现在，您已在项目中设置AEM Screens渠道，因此需要发布渠道。 在从Screens服务提供商管理您的播放器之前，请参阅[以Cloud Service身份发布Screens中的渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en)。
+现在，您已在项目中设置AEM Screens渠道，因此需要发布渠道。 请参阅 [在屏幕中发布渠道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) 从Screens服务提供商管理您的播放器之前，请执行以下操作：

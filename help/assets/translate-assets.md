@@ -100,7 +100,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 如果您使用此选项，则要翻译的资产将会复制到您要翻译的语言的语言根目录中。 根据您选择的选项，将在“项目”控制台中为资产创建一个翻译项目。 翻译项目可以手动启动，也可以在翻译项目创建后立即自动运行，具体取决于设置。
 
 1. 在资产UI中，选择要为其创建语言副本的源文件夹。
-1. 打开&#x200B;**[!UICONTROL 引用]**&#x200B;窗格，然后单击/点按&#x200B;**[!UICONTROL 副本]**&#x200B;下的&#x200B;**[!UICONTROL 语言副本]**。
+1. 打开&#x200B;**[!UICONTROL 引用]**&#x200B;窗格，单击/点按&#x200B;**[!UICONTROL 副本]**&#x200B;下的&#x200B;**[!UICONTROL 语言副本]**。
 1. 单击/点按 **[!UICONTROL 创建和翻译]** 在底部。
 1. 从&#x200B;**[!UICONTROL 目标语言]**&#x200B;列表中，选择要为其创建文件夹结构的语言。
 1. 从 **[!UICONTROL 项目]** 列表，选择 **[!UICONTROL 创建新的翻译项目]**.
@@ -225,7 +225,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 使用“ **仅创建结构** ”选项可在目标语言根目录中创建目标文件夹层次结构，以匹配源语言根目录中源文件夹的层次结构。 在这种情况下，源资产会复制到目标文件夹。 但是，不会生成翻译项目。
 
 1. 在资产UI中，选择要在目标语言根目录中为其创建结构的源文件夹。
-1. 打开&#x200B;**[!UICONTROL 引用]**&#x200B;窗格，然后单击/点按&#x200B;**[!UICONTROL 副本]**&#x200B;下的&#x200B;**[!UICONTROL 语言副本]**。
+1. 打开&#x200B;**[!UICONTROL 引用]**&#x200B;窗格，单击/点按&#x200B;**[!UICONTROL 副本]**&#x200B;下的&#x200B;**[!UICONTROL 语言副本]**。
 1. 单击/点按 **[!UICONTROL 创建和翻译]** 在底部。
 1. 从 **[!UICONTROL 目标语言]** 列表中，选择要为其创建文件夹结构的语言。
 1. 从&#x200B;**[!UICONTROL 项目]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 仅创建结构]**。
@@ -273,6 +273,6 @@ Adobe Experience Manager允许您使用所选翻译提供商提供的基于云�
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
 1. 指定连接器的标题和名称，然后单击/点按&#x200B;**[!UICONTROL 创建]**。自定义连接器位于[应用翻译服务](#applying-the-translation-services)步骤 5 中所述的&#x200B;**[!UICONTROL 云服务]**&#x200B;选项卡的连接器列表中。
-1. 在应用自定义连接器后，运行创建翻译项目中描述的任何翻译工作流。 在“项目”控制台中验证翻译项 **[!UICONTROL 目的“翻译摘要]** ”拼贴中连接器的 **[!UICONTROL 详细信息]** 。
+1. 在应用自定义连接器后，运行创建翻译项目中描述的任何翻译工作流。 在&#x200B;**[!UICONTROL 项目]**&#x200B;控制台中验证翻译项目的&#x200B;**[!UICONTROL 翻译摘要]**&#x200B;拼贴中连接器的详细信息。
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

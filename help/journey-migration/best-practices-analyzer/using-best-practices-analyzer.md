@@ -1,20 +1,21 @@
 ---
-title: 使用最佳实践分析器
-description: 使用最佳实践分析器
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: 使用 Best Practices Analyzer
+description: 使用 Best Practices Analyzer
+exl-id: e8498e17-f55a-4600-87d7-60584d947897
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2470'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
-# 使用最佳实践分析器 {#using-best-practices-analyzer}
+# 使用 Best Practices Analyzer {#using-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 

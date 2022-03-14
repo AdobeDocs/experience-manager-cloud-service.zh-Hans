@@ -125,7 +125,7 @@ AEM 允许您根据设备的宽度定义布局：
    * 显示折页是为了方便作者查看，在已发布的页面上则不会显示折页。
 
 
-## 添加布局容器及其内容（编辑模式）{#adding-a-layout-container-and-its-content-edit-mode}
+## 添加布局容器及其内容（编辑模式） {#adding-a-layout-container-and-its-content-edit-mode}
 
 **布局容器**&#x200B;是一个段落系统，该系统：
 
@@ -142,7 +142,7 @@ AEM 允许您根据设备的宽度定义布局：
 
    ![布局容器](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
-## 选择布局容器并对其执行操作（编辑模式）{#selecting-and-taking-action-on-a-layout-container-edit-mode}
+## 选择布局容器并对其执行操作（编辑模式） {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
 与其他组件一样，您可以先选择布局容器，然后再对其执行剪切、复制、删除等操作（在&#x200B;**编辑**&#x200B;模式下）：
 
@@ -169,7 +169,7 @@ AEM 允许您根据设备的宽度定义布局：
 
 1. 此时将突出显示整个网格及其内容。在显示的操作工具栏中，您可以选择一项操作，例如&#x200B;**删除**。
 
-## 定义布局（布局模式）{#defining-layouts-layout-mode}
+## 定义布局（布局模式） {#defining-layouts-layout-mode}
 
 >[!NOTE]
 >
@@ -230,9 +230,9 @@ AEM 允许您根据设备的宽度定义布局：
    >
    >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
 
-   * **取消隐**
-藏组件选择父组件可显示包含 
-**显示隐藏的** 组件选项。在此示例中，隐藏了两个组件。
+   * **取消隐藏组件**
+选择父组件以显示包含 
+**显示隐藏的组件** 选项。 在此示例中，隐藏了两个组件。
 
       ![取消隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    选择&#x200B;**显示隐藏的组件**&#x200B;选项时，当前隐藏的组件将以蓝色显示在它们的原始位置。

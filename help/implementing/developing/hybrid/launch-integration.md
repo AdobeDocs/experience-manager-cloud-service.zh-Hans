@@ -9,13 +9,13 @@ ht-degree: 0%
 
 ---
 
-# SPA与Adobe Experience Platform Launch集成{#spa-and-adobe-experience-platform-launch-integration}
+# SPA和Adobe Experience Platform Launch集成 {#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch是在单页应用程序(SPA)中实施Analytics、Target和Audience Manager的推荐方法。
 
 ## 教程 {#tutorial}
 
-要了解如何将SPA与Adobe Experience Platform Launch集成，请参阅[此知识库文章和教程](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)，其中将指导您完成Launch设置，以及在中使用Angular或React构建Experience Cloud。
+要了解如何将SPA与Adobe Experience Platform Launch集成，请参阅 [本知识库文章和教程](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)，它将指导您完成Launch设置，以及在中实施使用Angular或React构建的Experience Cloud。
 
 >[!NOTE]
 >

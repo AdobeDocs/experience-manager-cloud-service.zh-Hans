@@ -1,15 +1,15 @@
 ---
-title: 利用前端管道开发站点
+title: 使用前端管道开发站点
 description: 利用前端管道，使前端开发者获得更大的独立性，使开发过程获得大量的速度。
-source-git-commit: fd6a17a199b6cae03e91eba2ee938a03a326e612
+exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# 利用前端管道开发站点 {#developing-site-with-front-end-pipeline}
+# 使用前端管道开发站点 {#developing-site-with-front-end-pipeline}
 
 [通过前端管道，](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 前端开发者具有更大的独立性，开发过程可以获得大量的速度。 本文档介绍了此过程的工作方式以及需要注意的一些注意事项，以便充分挖掘此过程的潜力。
 

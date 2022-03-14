@@ -1,15 +1,15 @@
 ---
-title: 添加TXT记录
+title: 添加 TXT 记录
 description: 添加自定义域名
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# 添加TXT记录 {#adding-txt}
+# 添加 TXT 记录 {#adding-txt}
 
 DNS TXT记录可授权域在CDN服务中托管。 客户必须在区域中创建DNS TXT记录，以授权Cloud Manager将CDN服务与自定义域进行部署，并将其与后端服务相关联。 此关联完全由客户控制，并强烈授权Cloud Manager将服务中的内容提供到域。 该授权既可以授予，也可以撤回。
 

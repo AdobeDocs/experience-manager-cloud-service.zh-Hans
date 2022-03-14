@@ -13,7 +13,7 @@ ht-degree: 2%
 
 设置和配置 [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 环境中，您可以在云上设置开发、暂存和生产环境。 此外，您还可以设置和配置本地开发环境。
 
-您可以使用本地开发环境创建表单和相关资产（主题、模板、自定义提交操作等）以及 [将PDF forms转换为自适应Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) 无需登录到云开发环境。 在本地开发实例上准备好自适应表单或相关资产后，您可以将自适应表单和相关资产从本地开发环境导出到Cloud Service环境，以进一步测试和发布。
+您可以使用本地开发环境创建表单和相关资产（主题、模板、自定义提交操作等）以及 [将PDF forms转换为自适应Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans) 无需登录到云开发环境。 在本地开发实例上准备好自适应表单或相关资产后，您可以将自适应表单和相关资产从本地开发环境导出到Cloud Service环境，以进一步测试和发布。
 
 您还可以在本地开发环境中开发和测试自定义代码（如自定义组件和预填充服务）。 测试并准备好自定义代码后，您可以使用Cloud Service开发环境的Git存储库来部署自定义代码。
 
@@ -132,8 +132,8 @@ Adobe Experience Manager Formsas a Cloud Service功能存档提供了用于在�
 |---|---|
 | 从业人员/ | [!DNL forms-users] (AEM Forms用户)、 [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors]和 [!DNL fdm-authors] |
 | 表单开发人员 | [!DNL forms-users] (AEM Forms用户)、 [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors]和 [!DNL fdm-authors] |
-| 客户体验潜在客户或UX设计人员 | [!DNL forms-users], [!DNL template-authors] |
-| AEM 管理员 | [!DNL aem-administrators], [!DNL fd-administrators] |
+| 客户体验潜在客户或UX设计人员 | [!DNL forms-users]、[!DNL template-authors] |
+| AEM 管理员 | [!DNL aem-administrators]、[!DNL fd-administrators] |
 | 最终用户 | 当用户必须登录才能查看和提交自适应表单时，请将此类用户添加到 [!DNL forms-users] 群组。 </br> 当访问自适应Forms时不需要用户身份验证时，请勿向此类用户分配任何组。 |
 
 <!--  
@@ -285,7 +285,7 @@ Dispatcher是一个Apache HTTP Web服务器模块，在CDN和AEM发布层之间�
 请执行以下步骤来为Experience Manager Formsas a Cloud Service配置Dispatcher缓存：
 
 1. 打开您的AEM项目，然后导航到 `\src\conf.dispatcher.d\available_farms`
-1. 创建 `default.farm` 文件。 例如, `forms.farm`.
+1. 创建 `default.farm` 文件。 例如， `forms.farm`.
 1. 打开新创建的 `forms.farm` 文件进行编辑并替换以下代码：
 
    ```json

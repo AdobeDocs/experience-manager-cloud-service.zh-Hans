@@ -15,7 +15,7 @@ ht-degree: 97%
 
 使用样式系统，您无需为每种样式开发自定义组件，也无需自定义组件对话框来启用此类样式功能。样式系统允许使用更多可重用组件，可以快速轻松地调整这些组件以满足内容作者的需求，而无需进行任何 AEM 后端开发。
 
-## 用例  {#use-case}
+## 用例 {#use-case}
 
 模板作者不仅需要能够为内容作者配置组件的使用方式，还需要能够配置组件的多种替代可视化变量。
 
@@ -54,9 +54,9 @@ ht-degree: 97%
 
 ![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## 用法 {#use}
+## 使用 {#use}
 
-为了演示该功能，我们将使用核心组件的[标题组件](https://www.adobe.com/go/aem_cmp_title_v2_cn)的 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 实施作为示例。
+为了演示该功能，我们将使用核心组件的[标题组件](https://www.adobe.com/go/aem_cmp_title_v2_cn)的 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans) 实施作为示例。
 
 下面的[作为内容作者](#as-a-content-author)和[作为模板作者](#as-a-template-author)部分介绍了如何使用 WKND 样式系统来测试样式系统的功能。
 
@@ -66,7 +66,7 @@ ht-degree: 97%
 1. 按照[作为模板作者](#as-a-template-author)部分中的所述，配置您要向内容作者提供的 CSS 类。
 1. 然后，内容作者可以按照[作为内容作者](#as-a-content-author)部分中的所述使用样式。
 
-### 作为内容作者  {#as-a-content-author}
+### 作为内容作者 {#as-a-content-author}
 
 1. 安装 WKND 项目后，导航到 WKND 的英语母版主页 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`，然后编辑该页面。
 1. 选择该页面下方的&#x200B;**标题**&#x200B;组件
@@ -79,9 +79,9 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >在此示例中，**颜色**&#x200B;样式（**黑色**、**白色**&#x200B;和&#x200B;**灰色**）是互斥的，而&#x200B;**样式**&#x200B;选项（**下划线**、**右对齐**&#x200B;和&#x200B;**最小间距**）则可以组合使用。这可以[在模板中由模板作者进行配置](#as-a-template-author)。
+   >在此示例中，**颜色**&#x200B;样式（**黑色**、**白色**&#x200B;和&#x200B;**灰色**）是互斥的，而&#x200B;**样式**&#x200B;选项（**下划线**、**右对齐**&#x200B;和&#x200B;**最小间距**）则可以组合使用。这可以在[模板中配置为模板作者](#as-a-template-author)。
 
-### 作为模板作者  {#as-a-template-author}
+### 作为模板作者 {#as-a-template-author}
 
 1. 编辑 WKND 的英语母版主页 `http://<host>:<port>/sites.html/content/wknd/language-masters/en` 时，通过&#x200B;**页面信息 > 编辑模板**&#x200B;来编辑该页面的模板。
 
@@ -104,7 +104,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的CSS类（以及任何必需的Javascript）必须部署为[客户端库](/help/implementing/developing/introduction/clientlibs.md)才能正常工作。
+>配置为组件策略的样式属性的CSS类（以及任何必需的Javascript）必须部署为 [客户端库](/help/implementing/developing/introduction/clientlibs.md) 以便工作。
 
 ## 设置 {#setup}
 
@@ -157,7 +157,6 @@ ht-degree: 97%
 >1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
 
 >
-
 
 
 这种定义样式名称的功能对于极其通用的组件（如布局容器或内容片段组件）非常有用，可为它们提供更多含义。

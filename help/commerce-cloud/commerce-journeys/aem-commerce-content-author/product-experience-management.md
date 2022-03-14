@@ -1,10 +1,11 @@
 ---
 title: 构建产品体验
 description: 了解如何构建产品体验。
-source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
+exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -52,7 +53,7 @@ ht-degree: 0%
 
 ![pem cf](assets/pem-cf.png)
 
-### 产品座舱 {#product-cockpit}
+### 产品 Cockpit {#product-cockpit}
 
 我们已在以前的一个模块中引入了产品驾驶舱（或控制台）。 驾驶舱不仅是浏览产品目录的简便方法，而且是在一个位置查看所有相关AEM内容的简便方法。 转到产品控制台并打开具有关联内容的产品的属性。 切换到相应的选项卡以查看关联的内容。
 
@@ -113,5 +114,5 @@ ht-degree: 0%
 ## 其他资源 {#additional-resources}
 
 * [创作商务体验](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-* [产品座舱](/help/commerce-cloud/authoring/product-cockpit.md)
+* [产品 Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)

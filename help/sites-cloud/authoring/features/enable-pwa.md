@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 0%
 >* 了解您的网站和内容结构
 >* 了解缓存策略
 >* 开发团队的支持
-
 >
 >在使用此功能之前，建议您与开发团队讨论此问题，以定义将其用于项目的最佳方式。
 
@@ -125,7 +124,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
       ![定义PWA离线路径](../assets/pwa-offline.png)
 
 
-1. 点按或单击 **保存并关闭**.
+1. 点击或单击&#x200B;**保存并关闭**。
 
 您的网站现已配置完成，您可以 [将其作为本地应用程序进行安装。](#using-pwa-enabled-site)
 

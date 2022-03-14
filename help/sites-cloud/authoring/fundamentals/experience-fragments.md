@@ -360,4 +360,4 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 要导出到 Adobe Target，还可以使用 JSON。请参阅：
 
 * [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
-* [将体验片段导出到Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+* [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

@@ -1,15 +1,15 @@
 ---
-title: 在Screens中将渠道作为Cloud Service发布
-description: 本页介绍如何在Screens中将渠道作为Cloud Service发布。
-source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
+title: 在Screens中发布渠道as a Cloud Service
+description: 本页介绍如何在Screens中发布渠道as a Cloud Service。
+exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
 
-
-# 在Screens中将渠道作为Cloud Service发布 {#publish-channel-screens-cloud}
+# 在屏幕中发布渠道as a Cloud Service {#publish-channel-screens-cloud}
 
 ## 简介 {#introduction}
 
@@ -29,24 +29,24 @@ ht-degree: 0%
 
 按照以下步骤发布渠道：
 
-1. 从项目中导航并选择渠道，如&#x200B;**FirstDigitalExperience** —> **渠道** —> **LoopingChannelOne**。
+1. 从您的项目中导航并选择渠道，例如 **FirstDigitalExperience** —> **渠道** —> **LoopingChannelOne**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. 单击操作栏中的&#x200B;**管理发布** 。
+1. 单击 **管理发布** 中。
 
-1. 从&#x200B;**管理发布向导**&#x200B;中选择&#x200B;**Action**&#x200B;作为&#x200B;**Publish**&#x200B;和&#x200B;**Scheduling**&#x200B;作为&#x200B;**Now**，然后单击&#x200B;**Next**。
+1. 选择 **操作** as **发布** 和 **计划** as **现在** 从 **管理发布向导** 单击 **下一个**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >单击操作栏中的&#x200B;**+包含子项** ，然后取消选中所有选项以发布项目中的所有模块，然后单击添加以发布。 默认情况下，将选中所有框，您必须手动取消选中这些框才能发布项目中的所有模块。
+   >单击 **+包含子项** 在操作栏中，取消选中所有选项以发布项目中的所有模块，然后单击添加以发布。 默认情况下，将选中所有框，您必须手动取消选中这些框才能发布项目中的所有模块。
 
-1. 从&#x200B;**管理发布**&#x200B;向导中选择渠道后，单击&#x200B;**发布**&#x200B;以发布该渠道。
+1. 从 **管理发布** 向导，单击 **发布** 以发布渠道。
 
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 下一步 {#whats-next}
 
-现在，您已在项目中发布了渠道，接下来应继续将Screens作为Cloud Service历程，方法是接下来查看文档[在Screens中安装和配置播放器作为Cloud Service](/help/screens-cloud/creating-content/manage-publish.md)。
+现在，您已在项目中发布了渠道，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中安装和配置播放器as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).

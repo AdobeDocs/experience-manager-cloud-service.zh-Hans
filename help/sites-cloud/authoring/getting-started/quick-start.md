@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# 页面创作快速入门指南 {#quick-guide-to-authoring-pages}
+# 创作页面快速入门指南 {#quick-guide-to-authoring-pages}
 
 本文档旨在作为 AEM 中关键页面创作操作的概要性快速入门指南。本文档：
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 有关使用 AEM 进行创作的完整详细信息，请参阅：
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
-* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 
 ## 一些快速提示 {#a-few-quick-hints}
 
@@ -83,7 +83,7 @@ ht-degree: 100%
 
 1. 这将打开向导，逐步指导您收集[创建新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时所需的信息。按照屏幕上的说明操作。
 
-### 选择页面以执行其他操作  {#selecting-your-page-for-further-action}
+### 选择页面以执行其他操作 {#selecting-your-page-for-further-action}
 
 您可以选择一个页面，以对其执行操作。选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
 
@@ -107,7 +107,7 @@ ht-degree: 100%
 
    ![示例卡片](/help/sites-cloud/authoring/assets/card.png)
 
-### 快速操作（仅限卡片视图/桌面）{#quick-actions-card-view-desktop-only}
+### 快速操作（仅限卡片视图/桌面） {#quick-actions-card-view-desktop-only}
 
 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)可用：
 
@@ -159,7 +159,6 @@ ht-degree: 100%
    * [复制（并粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
-
    >[!NOTE]
    >
    >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
@@ -181,7 +180,7 @@ ht-degree: 100%
    >
    >要使用内容中的链接导航，您必须使用[预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
 
-### 编辑页面属性  {#editing-the-page-properties}
+### 编辑页面属性 {#editing-the-page-properties}
 
 [编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)的方法（主要）有两种：
 
@@ -205,7 +204,7 @@ ht-degree: 100%
 
       ![“页面信息”按钮](/help/sites-cloud/authoring/assets/page-information.png)
 
-### 发布页面（或取消发布）{#publishing-your-page-or-unpublishing}
+### 发布页面（或取消发布） {#publishing-your-page-or-unpublishing}
 
 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)（和取消发布）的方法主要有两种：
 
@@ -233,7 +232,7 @@ ht-degree: 100%
 
    请参阅[发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)以了解更多信息。
 
-### 移动、复制并粘贴或删除页面  {#move-copy-and-paste-or-delete-your-page}
+### 移动、复制并粘贴或删除页面 {#move-copy-and-paste-or-delete-your-page}
 
 这些操作全部可以通过以下项触发：
 
@@ -254,12 +253,11 @@ ht-degree: 100%
    * 删除：
 
       * 系统将要求您确认该操作。
-
    >[!NOTE]
    >
    >快速操作中并未提供“删除”操作。
 
-### 锁定页面（然后解锁）{#locking-your-page-then-unlocking}
+### 锁定页面（然后解锁） {#locking-your-page-then-unlocking}
 
 [锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。 可以找到“锁定”（和“解锁”）图标／按钮：
 
@@ -285,7 +283,7 @@ ht-degree: 100%
 
 1. 点按/单击所需的引用类型，以显示更多详细信息并（视需要）执行进一步操作。
 
-### 创建页面版本  {#creating-a-version-of-your-page}
+### 创建页面版本 {#creating-a-version-of-your-page}
 
 要创建页面的[版本](/help/sites-cloud/authoring/features/page-versions.md)：
 

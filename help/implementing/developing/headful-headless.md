@@ -21,7 +21,7 @@ AEM还可用于简单地管理内容，从而允许由其他平台管理内容�
 
 但这不一定是二选一。 AEM提供了前所未有的灵活性，允许您利用这两个模型在项目中的优势。
 
-![AEM实施模型](/help/headless/assets/aem-implementation-models.png)
+![AEM 实施模型](/help/headless/assets/aem-implementation-models.png)
 
 在标题式或全堆栈式模型中，内容基于Java、HTL等在AEM存储库和AEM组件中进行管理。 用于呈现用户体验的内容。 在此模型中，可在AEM中创建内容、为其设置样式、演示内容并交付所有内容。
 

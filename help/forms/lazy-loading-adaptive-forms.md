@@ -8,11 +8,11 @@ exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 通过延迟加载提高大型表单的性能{#improve-performance-of-large-forms-with-lazy-loading}
+# 使用延迟加载改进大型表单的性能{#improve-performance-of-large-forms-with-lazy-loading}
 
 ## 延迟加载简介 {#introduction-to-lazy-loading}
 

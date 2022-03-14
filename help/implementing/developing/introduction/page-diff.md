@@ -9,17 +9,17 @@ ht-degree: 11%
 
 ---
 
-# 开发和页面差异{#developing-and-page-diff}
+# 开发和页面差异 {#developing-and-page-diff}
 
-## 功能概述{#feature-overview}
+## 功能概述 {#feature-overview}
 
 内容创建是一个迭代过程。要进行高效创作，需要能够发现从一次迭代到另一次迭代所发生的更改。逐个查看页面版本的方式效率低下且容易出错。作者希望能够并排比较当前页面与之前版本之间的差异。
 
-页面差异允许用户将当前页面与启动项、先前版本等进行比较。 有关此用户功能的详细信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
+页面差异允许用户将当前页面与启动项、先前版本等进行比较。 有关此用户功能的详细信息，请参阅 [页面差异](/help/sites-cloud/authoring/features/page-diff.md).
 
-## 操作详细信息{#operation-details}
+## 操作详细信息 {#operation-details}
 
-比较页面版本时，用户希望比较的先前版本由AEM在后台重新创建，以便进行比较。 需要此参数才能呈现内容[，以便并排比较](/help/sites-cloud/authoring/features/page-diff.md)。
+比较页面版本时，用户希望比较的先前版本由AEM在后台重新创建，以便进行比较。 需要此参数才能渲染内容 [并排比较](/help/sites-cloud/authoring/features/page-diff.md).
 
 此娱乐操作由AEM内部完成，对用户是透明的，无需干预。 但是，如果管理员在CRX DE Lite中查看存储库（例如，查看存储库），则会在内容结构中看到这些重新创建的版本。
 

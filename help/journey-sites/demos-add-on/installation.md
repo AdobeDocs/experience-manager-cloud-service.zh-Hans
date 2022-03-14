@@ -1,13 +1,13 @@
 ---
 title: 了解参考演示附加组件安装
 description: 了解Cloud Manager以及如何使用它安装附加组件。
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%
 
 ---
-
 
 # 了解参考演示附加组件安装 {#understand-installation}
 

@@ -1,22 +1,22 @@
 ---
-title: AEM as a Cloud Manager版本2020.9.0的发行说明
-description: AEM as a Cloud Manager版本2020.9.0的发行说明
-feature: 版本信息
+title: AEM 2020.9.0版中Cloud Manageras a Cloud Service的发行说明
+description: AEM 2020.9.0版中Cloud Manageras a Cloud Service的发行说明
+feature: Release Information
 exl-id: 874ece8d-206a-4081-94c4-c82a375720c5
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 6%
+source-wordcount: '125'
+ht-degree: 4%
 
 ---
 
-# Adobe Experience Manager as a Cloud 2020.9.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.9.0版中的Cloud Manager发行说明 {#release-notes}
 
-本页面概述了AEM as a Cloud 2020.9.0中的Cloud Manager发行说明。
+本页面概述了AEM 2020.9.0版中Cloud Manager的发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Manager 2020.9.0Cloud Service中Cloud Manager的发布日期是2020年9月3日。
+AEM 2020.9.0版中Cloud Manager的发布日期是2020年9月3日。
 
 ## 新增功能 {#whats-new-cloud-manager}
 
@@ -26,4 +26,4 @@ AEM as a Cloud Manager 2020.9.0Cloud Service中Cloud Manager的发布日期是20
 
 ### 错误修复 {#bug-fixes-cm}
 
-* “内容审核”选项卡使用创作域而不是发布域错误地显示基本URL。
+* “内容审核”选项卡使用创作域而不是发布域错误地显示了基本URL。

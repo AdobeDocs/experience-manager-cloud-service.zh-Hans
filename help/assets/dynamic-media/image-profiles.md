@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -229,7 +229,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->手动重新调整多个资产的智能裁剪窗口大小或调整其大小时，即使您稍后决定重新处理这些资产，也会维护并保留这些编辑。 但是，如果您在 **[!UICONTROL 响应式图像裁剪]** ，则会重新处理这些资产。
+>手动重新调整多个资产的智能裁剪窗口大小或调整其大小时，即使您稍后决定重新处理这些资产，也会维护并保留这些编辑。 不过，如果您在图像配置文件的&#x200B;**[!UICONTROL 响应式图像裁切]**区域中编辑宽度和/或高度，则这些资源需要重新处理。
 >请参阅 [在文件夹中重新处理Dynamic Media资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 如有必要，您可以重新运行智能裁剪以再次生成其他裁剪。

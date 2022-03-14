@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
 source-wordcount: '3020'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -250,7 +250,7 @@ $[env:ENV_VAR_NAME;default=<value>]
 
 如果提供了默认值，则占位符将替换为每个环境的值（如果提供）或提供的默认值。
 
-### 地方发展 {#local-development}
+### 本地开发 {#local-development}
 
 以下内容适用于特定于环境的配置值和密钥配置值。
 

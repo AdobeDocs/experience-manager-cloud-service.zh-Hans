@@ -40,7 +40,7 @@ ht-degree: 100%
 * “活动”页面和管道执行列表 API 的性能已得到改进。
 * 代码质量日志现在包含完整的异常堆栈追踪。
 
-### 错误修复 {#bug-fixes}
+### 错误修复  {#bug-fixes}
 
 * 生产管道运行时，概述页面上显示误导性信息卡。
 * *DontImplementOrExtendProviderTypesPomCheck* 代码质量规则有时可能会产生“空指针异常”。

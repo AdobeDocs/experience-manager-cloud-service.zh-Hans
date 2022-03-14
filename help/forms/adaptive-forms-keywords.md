@@ -129,7 +129,7 @@ ht-degree: 5%
   <tr>
    <td><p>宽度</p> </td>
    <td><p>buttonText</p> </td>
-   <td><p>索引</p> </td>
+   <td><p>index</p> </td>
   </tr>
   <tr>
    <td><p>高度</p> </td>

@@ -7,7 +7,7 @@ exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,11 +20,11 @@ Adobe Experience Manager内置的多站点管理器和翻译工具简化了内�
 * 翻译允许您自动翻译页面内容以创建和维护多语言网站：
    * [翻译多语言站点的内容](translation/overview.md)
 
-这两项功能可以结合使用，以满足[跨国网站和多语言网站](#multinational-and-multilingual-sites)的需求。
+这两项功能可结合使用，以满足两者均为 [多语种](#multinational-and-multilingual-sites).
 
 >[!TIP]
 >
->如果您是初次翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md) ，该是使用AEM功能强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
+>如果您是翻译内容的新用户，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 这是使用AEM强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
 
 ## 多国和多语言站点 {#multinational-and-multilingual-sites}
 
@@ -32,8 +32,8 @@ Adobe Experience Manager内置的多站点管理器和翻译工具简化了内�
 
 通常，您会使用一种语言和特定国家/地区创建一个主控网站，然后根据需要使用翻译将该内容用作其他网站的基础。
 
-1. [](translation/overview.md) 将主控站点翻译成不同的语言。
-1. 使用[多站点管理器](msm/overview.md)可以：
+1. [翻译](translation/overview.md) 主控网站的不同语言版本。
+1. 使用 [多站点管理器](msm/overview.md) 至：
    1. 重新使用主控网站及其翻译中的内容，为其他国家和文化创建网站。
    1. 根据需要，分离Live Copy的元素以添加本地化详细信息。
 
@@ -49,8 +49,8 @@ Adobe Experience Manager内置的多站点管理器和翻译工具简化了内�
 
 在此类情况和类似情况下，MSM不会管理不同的语言版本。
 
-* [](msm/overview.md) MSM可管理语言边界内将已翻译内容从Blueprint(即全局主控)部署到Live Copy（即本地站点）。
-* AEM的[翻译](translation/overview.md)集成功能与第三方翻译管理服务一起管理语言并将内容翻译成这些不同的语言。
+* [MSM](msm/overview.md) 管理语言边界内将已翻译内容从Blueprint(即全局主控)部署到Live Copy（即本地站点）。
+* 的 [翻译](translation/overview.md) AEM的集成功能与第三方翻译管理服务相结合，可管理语言并将内容翻译成这些不同的语言。
 
 对于更高级的用例，也可以跨语言母版使用MSM。
 

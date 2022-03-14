@@ -6,7 +6,7 @@ exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -85,7 +85,7 @@ Custom parameters are planned for an upcoming release. -->
 
 * **我能用一下吗 [!DNL AEM Forms] 应用程序 [!DNL AEM Forms] as a Cloud Service?**
 
-   自适应Forms提供响应式设计。 这些表单会根据底层设备更改外观、设计和交互性。 您可以在移动设备上继续使用自适应Forms，同时在每月的发行说明中关注这些功能的可用性。
+   自适应表单提供了响应式设计。这些表单会根据底层设备更改外观、设计和交互性。您可以在移动设备上继续使用自适应Forms，同时在每月的发行说明中关注这些功能的可用性。
 
 * **哪些功能未包含在初始GA版本中？**
 Forms门户网站， [!DNL AEM Forms] 应用程序、与Adobe Analytics集成以及与Adobe Target集成未包含在初始GA版本中。 有关新增功能的信息，请查看月度发行说明。

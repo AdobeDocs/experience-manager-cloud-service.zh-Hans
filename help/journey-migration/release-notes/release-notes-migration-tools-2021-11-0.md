@@ -2,20 +2,20 @@
 title: AEMas a Cloud Service版本2021.11.0中迁移工具的发行说明
 description: AEMas a Cloud Service版本2021.11.0中迁移工具的发行说明
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
 
 ---
 
-
 # AEMas a Cloud Service版本2021.11.0中迁移工具的发行说明 {#release-notes}
 
 本页概述了AEM 2021.11.0中迁移工具的发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## 内容传输工具 {#ctt-release}
 

@@ -1,19 +1,19 @@
 ---
-title: Live Copy概述控制台
+title: Live Copy 概述控制台
 description: 了解Live Copy概述控制台的基础知识，以便快速了解Live Copy的状态以同步内容。
-feature: 多站点管理器
+feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 1%
+source-wordcount: '735'
+ht-degree: 2%
 
 ---
 
-# Live Copy概述控制台 {#live-copy-overview-console}
+# Live Copy 概述控制台 {#live-copy-overview-console}
 
-通过&#x200B;**Live Copy概述**&#x200B;控制台，您可以：
+的 **Live Copy概述** 通过控制台，您可以：
 
 * 查看/管理站点中的继承。
    * 查看Blueprint树和相应的Live Copy结构及其继承状态
@@ -30,10 +30,10 @@ ht-degree: 1%
 
 ### 对Blueprint页面的引用 {#references-to-a-blueprint-page}
 
-**Live Copy概述**&#x200B;可以从&#x200B;**Sites**&#x200B;控制台的&#x200B;**References**&#x200B;侧面板中打开：
+的 **Live Copy概述** 可从 **引用** 侧面板 **站点** 控制台：
 
-1. 在&#x200B;**站点**&#x200B;控制台中， [导航到您的Blueprint页面并将其选中。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
-1. 打开&#x200B;**[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;边栏，然后选择&#x200B;**Live Copy**。
+1. 在 **站点** 控制台， [导航到您的blueprint页面并将其选中。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. 打开 **[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 边栏和选择 **Live Copy**.
 
    ![引用边栏中的Live Copy](../assets/live-copy-references.png)
 
@@ -41,25 +41,25 @@ ht-degree: 1%
    >
    >您还可以先打开引用，然后选择Blueprint。
 
-1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与选定Blueprint相关的所有Live Copy的概述。
-1. 使用&#x200B;**Close**&#x200B;退出并返回到&#x200B;**Sites**&#x200B;控制台。
+1. 选择 **Live Copy概述** 显示和使用与选定Blueprint相关的所有Live Copy的概述。
+1. 使用 **关闭** 退出并返回到 **站点** 控制台。
 
 ### Blueprint页面的属性 {#properties-of-a-blueprint-page}
 
-在查看Blueprint页面的属性时，可以打开&#x200B;**Live Copy概述**:
+的 **Live Copy概述** 在查看blueprint页面的属性时可以打开：
 
-1. 打开相应Blueprint页面的&#x200B;**属性** 。
-1. 打开&#x200B;**Blueprint**&#x200B;选项卡 — **Live Copy概述**&#x200B;选项将显示在顶部工具栏中：
+1. 打开 **属性** ，用于相应的Blueprint页面。
+1. 打开 **Blueprint** 选项卡 —  **Live Copy概述** 选项：
 
    ![“Blueprint属性”选项卡](../assets/live-copy-blueprint-tab.png)
 
-1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与当前Blueprint相关的所有Live Copy的概述。
+1. 选择 **Live Copy概述** 显示和使用与当前Blueprint相关的所有Live Copy的概述。
 
-1. 使用&#x200B;**Close**&#x200B;退出并返回到&#x200B;**Sites**&#x200B;控制台。
+1. 使用 **关闭** 退出并返回到 **站点** 控制台。
 
 ## 使用Live Copy概述 {#using-the-live-copy-overview}
 
-**Live Copy概述**&#x200B;窗口提供并概述与选定页面相关的Live Copy的状态。
+的 **Live Copy概述** 窗口提供和概述与选定页面相关的Live Copy的状态。
 
 ![Live Copy概述窗口](../assets/live-copy-overview.png)
 
@@ -67,12 +67,12 @@ ht-degree: 1%
 
 状态字段还取决于特定转出配置中定义的同步操作，并指示自上次成功转出以来Blueprint或Live Copy是否存在任何此类操作。 状态字段将仅反映特定转出配置中的操作。 如果尚未对Live Copy执行任何成功转出，则状态将始终显示为最新。
 
-例如，转出配置被定义为`targetActivate`。 因此，转出将仅依赖于激活事件。 状态字段将仅指示自上次成功转出后是否发生了任何激活事件。
+例如，转出配置定义为 `targetActivate`. 因此，转出将仅依赖于激活事件。 状态字段将仅指示自上次成功转出后是否发生了任何激活事件。
 
-**Live Copy概述**&#x200B;还可用于对Live Copy执行以下操作：
+的 **Live Copy概述** 也可用于对Live Copy执行以下操作：
 
-1. 打开&#x200B;**Live Copy概述**。
-1. 选择所需的Blueprint或Live Copy页面，此时工具栏将更新以显示可用的操作。 可用的[操作](overview.md#terms-used)取决于您是选择[blueprint](#actions-for-a-blueprint-page)还是[Live Copy](#actions-for-a-live-copy-page)页面。
+1. 打开 **Live Copy概述**.
+1. 选择所需的Blueprint或Live Copy页面，此时工具栏将更新以显示可用的操作。 的 [操作](overview.md#terms-used) 可用取决于您是否选择 [Blueprint](#actions-for-a-blueprint-page) 或 [Live Copy](#actions-for-a-live-copy-page) 页面。
 
 ### Blueprint页面的操作 {#actions-for-a-blueprint-page}
 
@@ -93,13 +93,13 @@ ht-degree: 1%
 * **[关系状态](#relationship-status)**  — 查看有关状态和继承的信息。
 * **[同步](overview.md#rollout-and-synchronize)**  — 同步Live Copy以将更改从源提取到Live Copy。
 * **[重置](creating-live-copies.md#resetting-a-live-copy-page)**  — 重置Live Copy页面可删除所有继承取消，并将页面返回到与源页面相同的状态。
-* **[暂停](overview.md#suspending-and-cancelling-inheritance-and-synchronization)**  — 暂时停用Live Copy及其Blueprint页面之间的Live关系。
-* **[恢复](creating-live-copies.md#resuming-inheritance-for-a-page)**  — 恢复可用于恢复已暂停的关系。
+* **[暂停](overview.md#suspending-and-cancelling-inheritance-and-synchronization)**  — 临时停用Live Copy及其Blueprint页面之间的Live关系。
+* **[恢复](creating-live-copies.md#resuming-inheritance-for-a-page)**  — 恢复允许您恢复暂停的关系。
 * **[分离](overview.md#detaching-a-live-copy)**  — 永久删除Live Copy及其Blueprint页面之间的Live关系。
 
 ## 关系状态 {#relationship-status}
 
-**关系状态**&#x200B;控制台具有两个选项卡，提供了一系列功能。
+的 **关系状态** 控制台有两个选项卡，提供了一系列功能。
 
 * [关系状态](#relationship-status-tab)
 * [Live Copy](#live-copy-tab)

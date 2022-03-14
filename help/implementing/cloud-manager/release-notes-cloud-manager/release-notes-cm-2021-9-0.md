@@ -15,7 +15,7 @@ ht-degree: 5%
 本页面概述了AEM 2021.9.0版中Cloud Manager的发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans)。
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## 发布日期 {#release-date}
 
@@ -29,9 +29,9 @@ AEM 2021.9.0版中Cloud Manager的发布日期是2021年9月9日。
 
 * 代码质量步骤日志现在包含有关OakPal扫描过程的详细日志记录信息。
 
-* 现在，“活动”页面菜单选项中将包含一个用于&#x200B;**下载日志**&#x200B;的选项，以执行已完成的代码生成器。 选择此选项将下载生成步骤的日志。
+* “活动”页面菜单选项现在将包含 **下载日志** 代码生成器执行完成。 选择此选项将下载生成步骤的日志。
 
-* 现在，直接在项目卡上单击将导航到Cloud Manager的&#x200B;**概述**&#x200B;页面。 有关更多详细信息，请参阅[创建生产程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)。
+* 现在，直接单击项目卡片将导航到Cloud Manager的 **概述** 页面。 请参阅 [创建生产程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) 以了解更多详细信息。
 
 ### 错误修复 {#bug-fixes}
 

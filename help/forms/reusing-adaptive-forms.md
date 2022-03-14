@@ -1,5 +1,5 @@
 ---
-title: 重复使用自适应表单的元数据属性
+title: 重用自适应表单的元数据属性
 seo-title: Reuse metadata properties of an Adaptive Form
 description: 您可以重复使用现有的自适应表单来创建新的自适应Forms。
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
@@ -7,11 +7,11 @@ exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 重复使用自适应表单的元数据属性 {#reusing-adaptive-forms}
+# 重用自适应表单的元数据属性 {#reusing-adaptive-forms}
 
 如果要使用现有自适应表单的某些属性生成新属性，您只需使用复制粘贴功能即可。 此外，您还可以将新的自适应表单粘贴到所需的文件夹路径中。 将复制所有元数据属性，并且还会复制基于XFA和XSD的自适应Forms的XFA和XSD。
 

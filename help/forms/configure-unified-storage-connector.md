@@ -1,13 +1,13 @@
 ---
 title: 如何为AEM Forms配置统一存储连接器？
 description: 了解如何管理AEM Forms的统一存储连接器。 使用统一存储连接器将AEM Forms连接到外部数据存储。
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%
 
 ---
-
 
 # 管理AEM Forms的统一存储连接器 {#manage-unified-storage-connector}
 

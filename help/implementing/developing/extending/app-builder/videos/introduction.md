@@ -1,5 +1,5 @@
 ---
-title: 应用程序生成器简介
+title: App Builder 简介
 description: 了解App Builder的基础知识，从其业务价值到其架构。
 version: Cloud Service
 feature: App Builder
@@ -8,15 +8,15 @@ role: Developer, Architect
 level: Beginner
 kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
-source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 3%
+ht-degree: 11%
 
 ---
 
-
-# 应用程序生成器简介
+# App Builder 简介
 
 >[!IMPORTANT]
 >

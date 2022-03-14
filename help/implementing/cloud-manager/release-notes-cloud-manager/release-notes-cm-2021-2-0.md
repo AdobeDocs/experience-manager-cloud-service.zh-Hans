@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Manager版本2021.2.0的发行说明
-description: AEM as a Cloud Manager版本2021.2.0的发行说明
+title: AEM 2021.2.0版中Cloud Manageras a Cloud Service的发行说明
+description: AEM 2021.2.0版中Cloud Manageras a Cloud Service的发行说明
 exl-id: 281f9523-dec2-44f1-9459-5a45d48489d9
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
@@ -9,13 +9,13 @@ ht-degree: 2%
 
 ---
 
-# Adobe Experience Manager as a Cloud 2021.6.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.2.0版中的Cloud Manager发行说明 {#release-notes}
 
-本页面概述了AEM as a Cloud 2021.2.0中Cloud Manager的发行说明。
+本页概述了AEM 2021.2.0版中Cloud Manager的发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service2021.2.0中的Cloud Manager的发布日期是2021年2月11日。
+AEM 2021.2.0版中Cloud Manager的发布日期是2021年2月11日。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service2021.2.0中的Cloud Manager的发布日期是2021年2月11
 
 * Cloud Manager UI将通知那些暂时无法添加/更新域名的用户，因为关联的环境要么具有附加在其上的正在运行的管道，要么当前正在等待批准步骤。
 
-* 现在，将动态删除客户`pom.xml`文件中设置的带声纳前缀的属性，以避免生成和质量扫描失败。
+* 客户中设置的属性 `pom.xml` 现在将动态删除带有声纳前缀的文件，以避免生成和质量扫描失败。
 
 * Cloud Manager UI将通知用户，如果当前正在部署的域名正在使用SSL证书，则用户可能暂时无法选择该证书。
 

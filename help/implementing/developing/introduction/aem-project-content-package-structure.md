@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -60,7 +60,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 + 将生成OSGi包Jar文件，并直接嵌入到所有项目中。
 
 + 的 `ui.apps` 包中包含要部署的所有代码，并且只部署到 `/apps`. 的常见元素 `ui.apps` 包包含，但不限于：
-   + [组件定义和HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) 脚本
+   + [组件定义和HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans) 脚本
       + `/apps/my-app/components`
    + JavaScript和CSS(通过 [客户端库](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -207,7 +207,7 @@ Repo Init脚本存储为 `scripts` 条目 `RepositoryInitializer` 因此，OSGi�
 >
 >请参阅 [POM XML片段](#xml-repository-structure-package) 部分以了解完整的代码片段。
 
-## 在容器包中嵌入子包{#embeddeds}
+## 在容器软件包中嵌入子软件包{#embeddeds}
 
 内容或代码包放置在特殊的“侧车”文件夹中，并且可以定位在AEM作者、AEM发布或两者上，使用FileVault Maven插件进行安装 `<embeddeds>` 配置。 请注意， `<subPackages>` 不应使用配置。
 
@@ -457,7 +457,7 @@ scripts=["
     ...
 ```
 
-### 在容器包中嵌入子包 {#xml-embeddeds}
+### 在容器软件包中嵌入子软件包 {#xml-embeddeds}
 
 在 `all/pom.xml`，添加以下内容 `<embeddeds>` 指令 `filevault-package-maven-plugin` 插件声明。 记住， **不** 使用 `<subPackages>` 配置，因为这将包含 `/etc/packages` 而不是 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 

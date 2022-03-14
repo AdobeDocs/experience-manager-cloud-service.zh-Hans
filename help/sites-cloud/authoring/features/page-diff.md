@@ -23,7 +23,7 @@ ht-degree: 97%
 >
 >请参阅[开发和页面差异](/help/implementing/developing/introduction/page-diff.md#operation-details)，以了解有关此功能的更多技术详细信息。
 
-## 用法 {#use}
+## 使用 {#use}
 
 可以并排比较以下内容：
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 请参阅有关如何在这些情况下启动差异比较的相关主题。
 
-### 差异表示形式  {#presentation-of-differences}
+### 差异表示形式 {#presentation-of-differences}
 
 无论比较何种内容，差异的表示形式都保持相同。
 
@@ -63,7 +63,7 @@ ht-degree: 97%
 >
 >在比较语言副本时，会取消激活突出显示功能，因为在翻译中，所有内容都会发生更改，突出显示没有任何用处。
 
-### 全屏和退出  {#fullscreen-and-exiting}
+### 全屏和退出 {#fullscreen-and-exiting}
 
 为了集中查看特定内容，您可以单击并排差异比较任何一侧的全屏图标，以将其放大到整个浏览器窗口。
 

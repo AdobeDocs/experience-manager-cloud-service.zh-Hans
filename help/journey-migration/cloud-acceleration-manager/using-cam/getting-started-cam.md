@@ -1,14 +1,15 @@
 ---
-title: Cloud Acceleration Manager快速入门
+title: Cloud Acceleration Manager 快速入门
 description: 本页概述如何使用和开始使用Cloud Acceleration Manager。
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
-# Cloud Acceleration Manager快速入门 {#get-started-cam}
+# Cloud Acceleration Manager 快速入门 {#get-started-cam}
 
 Cloud Acceleration Manager是一个基于云的应用程序，旨在引导您的IT团队完成从规划到上线的整个过渡历程。Cloud Service 通过Adobe推荐的最佳实践、提示、文档和工具，为成功的迁移设置团队，以便在到AEM作为Cloud Service的历程的每个阶段提供帮助。
 
@@ -19,7 +20,7 @@ Cloud Acceleration Manager是一个基于云的应用程序，旨在引导您的
 * 了解如何登录CAM
 * 从CAM的UI创建项目
 
-## 使用Cloud Acceleration Manager {#using-cam}
+## 使用 Cloud Acceleration Manager {#using-cam}
 
 Cloud Acceleration Manager(CAM)提供了引导式旅程形式的一站式迁移体验，方法是提供初始评估，并指向正确的工具、文档和最佳实践，以确保在AEMas a Cloud Service上成功上线。
 
@@ -39,7 +40,7 @@ Cloud Acceleration Manager(CAM)提供了引导式旅程形式的一站式迁移�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_gettingstarted"
->title="Cloud Acceleration Manager快速入门"
+>title="Cloud Acceleration Manager 快速入门"
 >abstract="创建项目并启动您的AEMas a Cloud Service历程。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="使用Cloud Acceleration Manager的好处"
 

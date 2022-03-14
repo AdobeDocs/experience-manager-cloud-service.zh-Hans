@@ -3,13 +3,13 @@ title: 创建网站
 description: 了解如何使用AEM通过网站模板创建网站，以定义网站的样式和结构。
 feature: Administering
 role: Admin
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
 
 ---
-
 
 # 创建网站 {#creating-site}
 

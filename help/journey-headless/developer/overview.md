@@ -1,12 +1,12 @@
 ---
 title: AEM Headless开发人员历程
-description: AEM无头CMS文档。 从此处开始，您可以逐步了解AEM强大而灵活的无外设功能、其功能，以及如何在您的第一个开发项目中利用这些功能。
-landing-page-description: 从此处开始，逐步了解AEM的无头功能、其功能以及如何在您的第一个开发项目中利用这些功能。
+description: AEM Headless CMS 文档。从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
+landing-page-description: 从这里开始，引导您了解 AEM 的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -60,14 +60,14 @@ ht-degree: 1%
 | # | 文章 | 描述 |
 |---|---|---|
 | 0 | AEM Headless开发人员历程 | 本文档 |
-| 1 | [了解CMS无头开发](learn-about.md) | 了解无头技术以及何时使用它。 |
-| 2 | [AEM Headless入门as a Cloud Service](getting-started.md) | 了解AEM Headless先决条件 |
-| 3 | [使用AEM Headless获得首个体验的路径](path-to-first-experience.md) | 设置开发环境，并了解如何将简单的应用程序与AEM Headless集成 |
+| 1 | [了解 CMS Headless 开发](learn-about.md) | 了解无头技术以及何时使用它。 |
+| 2 | [AEM Headless as a Cloud Service 快速入门](getting-started.md) | 了解AEM Headless先决条件 |
+| 3 | [首次 AEM Headless 使用体验的路径](path-to-first-experience.md) | 设置开发环境，并了解如何将简单的应用程序与AEM Headless集成 |
 | 4 | [如何对内容进行建模](model-your-content.md) | 了解如何对内容结构进行建模。 然后，使用内容片段模型和内容片段实现Adobe Experience Manager(AEM)的结构，以便跨渠道重复使用。 |
-| 5 | [如何通过AEM交付API访问您的内容](access-your-content.md) | 了解如何使用GraphQL查询访问内容片段内容。 |
-| 6 | [如何通过AEM Assets API更新内容](update-your-content.md) | 了解如何使用REST API访问和更新内容片段内容。 |
+| 5 | [如何通过 AEM 交付 API 访问您的内容](access-your-content.md) | 了解如何使用GraphQL查询访问内容片段内容。 |
+| 6 | [如何通过 AEM Assets API 更新您的内容](update-your-content.md) | 了解如何使用REST API访问和更新内容片段内容。 |
 | 7 | [如何将所有内容整合在一起 — 在AEM Headless中查看您的应用程序和内容](put-it-all-together.md) | 了解如何获取您的AEM项目并为使用AEM Headless SDK进行上线做准备。 |
-| 8 | [如何使用无头应用程序](go-live.md) | 了解如何在Git中实时部署应用程序并获取本地代码，然后将其移至Cloud Manager Git for CI/CD管道。 |
+| 8 | [如何使用 Headless 应用程序上线](go-live.md) | 了解如何在Git中实时部署应用程序并获取本地代码，然后将其移至Cloud Manager Git for CI/CD管道。 |
 | 9 | [可选 — 如何使用AEM创建单页应用程序(SPA)](create-spa.md) | 了解AEM无标题功能后，请了解如何结合使用无标题和无标题交付，并了解如何使用AEM SPA编辑器框架创建可编辑的SPA。 |
 
 ## 下一步 {#what-is-next}
@@ -79,7 +79,7 @@ ht-degree: 1%
 但是，无论您的学习风格如何，Adobe都希望您在开始使用AEM Headless项目时取得成功。 所以请考虑这两个选项。
 
 * 如果您希望继续 **了解无头概念和AEM无头技术**，则您应该继续您的AEM无头历程，方法是接下来查看文档 [如何将内容建模为AEM内容模型](model-your-content.md) 其中，您了解如何在AEM中构建内容结构模型。
-* 如果您愿意 **学习**，您可以跳转到 [AEM Headless动手操作入门教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) 在这里，您将通过实施一个简单的项目来公开AEM无头内容，从而直接进入AEM开发。
+* 如果您愿意 **学习**，您可以跳转到 [AEM Headless动手操作入门教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=zh-Hans) 在这里，您将通过实施一个简单的项目来公开AEM无头内容，从而直接进入AEM开发。
 
 ## 其他资源 {#additional-resources}
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 因此，这些旅程旨在独立进行。 但是，其中的许多内容可以相互关联。 请查看这些其他历程，了解有关AEM强大功能如何协同工作的更多信息。
 
-* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您喜欢通过实践来学习，并且有技术倾向，请学习我们由API和框架组织的动手实践教程，这些教程将探索如何创建和使用基于AEM Headless构建的应用程序。
+* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)  — 如果您喜欢通过实践来学习，并且有技术倾向，请学习我们由API和框架组织的动手实践教程，这些教程将探索如何创建和使用基于AEM Headless构建的应用程序。
 * [AEM无头翻译历程](/help/journey-headless/translation/overview.md)  — 此文档历程使您能够广泛了解无头技术、AEM如何提供无头内容以及如何翻译无头内容。
 * [无外设创作历程](/help/journey-headless/author/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。
 * [无外设架构师历程](/help/journey-headless/architect/overview.md)  — 从此处开始，介绍Adobe Experience Manager as a Cloud Service强大而灵活的无头功能，以及如何为您的项目建立内容模型。

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 工作流控制台提供了多种用于管理工作流实例的工具，以确保它们按预期执行。
 
-一系列控制台可用于管理您的工作流。 使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**:
+一系列控制台可用于管理您的工作流。 使用 [全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 打开 **工具** 窗格，然后选择 **工作流**:
 
 * **模型**:管理工作流定义
 * **实例**:查看和管理正在运行的工作流实例
@@ -26,16 +26,16 @@ ht-degree: 0%
 
 ## 监控工作流实例的状态 {#monitoring-the-status-of-workflow-instances}
 
-1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
-1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例列表。
+1. 使用导航选择 **工具**，则 **工作流**.
+1. 选择 **实例** 以显示当前正在进行的工作流实例列表。
 
    ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
 
 
 ## 搜索工作流实例 {#search-workflow-instances}
 
-1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
-1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例列表。 在左上角的上边栏中，选择&#x200B;**过滤器**。 或者，您也可以使用alt+1键击。 将显示以下对话框：
+1. 使用导航选择 **工具**，则 **工作流**.
+1. 选择 **实例** 以显示当前正在进行的工作流实例列表。 在左角的上边栏中，选择 **过滤器**. 或者，您也可以使用alt+1键击。 将显示以下对话框：
 
    ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
 
@@ -54,54 +54,54 @@ ht-degree: 0%
 
 ## 暂停、恢复和终止工作流实例 {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
-1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例列表。
+1. 使用导航选择 **工具**，则 **工作流**.
+1. 选择 **实例** 以显示当前正在进行的工作流实例列表。
 
    ![wf-96-1](/help/sites-cloud/administering/assets/wf-96-1.png)
 
-1. 选择特定项目，然后根据需要使用&#x200B;**终止**、**暂停**&#x200B;或&#x200B;**恢复**;确认，和/或需要提供更多详细信息：
+1. 选择特定项目，然后使用 **终止**, **暂停**&#x200B;或 **恢复**，酌情；确认，和/或需要提供更多详细信息：
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
 ## 查看存档的工作流 {#viewing-archived-workflows}
 
-1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
+1. 使用导航选择 **工具**，则 **工作流**.
 
-1. 选择&#x200B;**Archive**&#x200B;以显示成功完成的工作流实例列表。
+1. 选择 **存档** 以显示成功完成的工作流实例列表。
 
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
    >中止状态被视为由于用户操作而发生的成功终止；例如：
    >
-   >* 使用&#x200B;**Terminate**&#x200B;操作
+   >* 使用 **终止** 操作
    >* 当受工作流约束的页面被（强制）删除时，工作流将被终止
 
 
-1. 选择特定项目，然后选择&#x200B;**打开历史记录**&#x200B;以查看更多详细信息：
+1. 选择特定项目，然后 **打开历史记录** 要查看更多详细信息，请执行以下操作：
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
 
 ## 修复工作流实例失败 {#fixing-workflow-instance-failures}
 
-当工作流失败时，AEM会提供&#x200B;**Failures**&#x200B;控制台，以便您在处理原始原因后调查并采取适当的操作：
+当工作流失败时，AEM会提供 **失败** 控制台允许您在处理原始原因后进行调查并采取适当措施：
 
-* **失败详**
-细信息打开一个窗口以显示 
-**失败消息**、 **** 步骤 **和失败堆栈**。
+* **失败详细信息**
+打开一个窗口以显示 
+**失败消息**, **步骤** 和 **失败堆栈**.
 
-* **打开**
-历史记录显示工作流历史记录的详细信息。
+* **打开历史记录**
+显示工作流历史记录的详细信息。
 
-* **重试** 步骤再次执行脚本步骤组件实例。修复了原始错误的原因后，请使用“重试步骤”命令。 例如，在修复了脚本中执行流程步骤的错误后，请重试该步骤。
-* **** 终止如果错误导致工作流出现不可调和的情况，则终止工作流。例如，工作流可以依赖于环境条件，例如存储库中对工作流实例不再有效的信息。
-* **终止和重** 试与 **** 终止类似，不同之处在于新的工作流实例是使用原始有效负载、标题和描述启动的。
+* **重试步骤** 再次执行脚本步骤组件实例。 修复了原始错误的原因后，请使用“重试步骤”命令。 例如，在修复了脚本中执行流程步骤的错误后，请重试该步骤。
+* **终止** 如果错误导致工作流出现不可调和的情况，则终止工作流。 例如，工作流可以依赖于环境条件，例如存储库中对工作流实例不再有效的信息。
+* **终止并重试** 类似于 **终止** 除了使用原始有效负载、标题和描述启动新的工作流实例之外。
 
 要调查失败，然后恢复或终止工作流，请执行以下步骤：
 
-1. 使用导航选择&#x200B;**工具**，然后选择&#x200B;**工作流**。
+1. 使用导航选择 **工具**，则 **工作流**.
 
-1. 选择&#x200B;**失败**&#x200B;以显示未成功完成的工作流实例列表。
+1. 选择 **失败** 以显示未成功完成的工作流实例列表。
 1. 选择特定项目，然后执行相应的操作：
 
    ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
@@ -110,16 +110,16 @@ ht-degree: 0%
 
 最大限度地减少工作流实例数会提高工作流引擎的性能，因此您可以定期从存储库中清除已完成或正在运行的工作流实例。
 
-配置&#x200B;**AdobeGranite工作流清除配置** ，以根据工作流实例的年龄和状态清除其实例。 您还可以清除所有模型或特定模型的工作流实例。
+配置 **AdobeGranite工作流清除配置** 根据工作流实例的年龄和状态清除工作流实例。 您还可以清除所有模型或特定模型的工作流实例。
 
 您还可以创建服务的多个配置，以清除满足不同标准的工作流实例。 例如，创建一个配置，在特定工作流模型的实例运行时间比预期时间长得多时清除这些实例。 创建另一个配置，该配置会在特定天数后清除所有已完成的工作流，以最大限度地减少存储库的大小。
 
-要配置服务，您可以配置OSGi配置文件，请参见[OSGi配置文件](/help/implementing/deploying/configuring-osgi.md)。 下表介绍了任一方法所需的属性。
+要配置服务，您可以配置OSGi配置文件，请参阅 [OSGi配置文件](/help/implementing/deploying/configuring-osgi.md). 下表介绍了任一方法所需的属性。
 
 >[!NOTE]
 >要将配置添加到存储库，服务PID为：
 >`com.adobe.granite.workflow.purge.Scheduler`
->由于服务是工厂服务，因此`sling:OsgiConfig`节点的名称需要一个标识符后缀，例如：
+>由于服务是工厂服务，因此 `sling:OsgiConfig` 节点需要使用标识符后缀，例如：
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -146,7 +146,7 @@ ht-degree: 0%
   <tr>
    <td>要清除的模型</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>要清除的工作流模型的ID。 ID是模型节点的路径，例如：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br />指定不值以清除所有工作流模型的实例。</p> <p>要指定多个模型，请单击Web控制台中的+按钮。 </p> </td>
+   <td><p>要清除的工作流模型的ID。 ID是模型节点的路径，例如：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> 指定不值以清除所有工作流模型的实例。</p> <p>要指定多个模型，请单击Web控制台中的+按钮。 </p> </td>
   </tr>
   <tr>
    <td>工作流年龄</td>
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 ## 设置收件箱的最大大小 {#setting-the-maximum-size-of-the-inbox}
 
-您可以通过配置&#x200B;**AdobeGranite工作流服务**&#x200B;来设置收件箱的最大大小，请参阅[将OSGi配置添加到存储库](/help/implementing/deploying/configuring-osgi.md)。 下表介绍了您配置的属性。
+您可以通过配置 **AdobeGranite工作流服务**，请参阅 [将OSGi配置添加到存储库](/help/implementing/deploying/configuring-osgi.md). 下表介绍了您配置的属性。
 
 >[!NOTE]
 >要将配置添加到存储库，服务PID为：
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 在工作流模型的级别，提供一个标记来指示模型（及其运行时实例）具有元数据的外部存储。 对于标记为外部存储的模型的工作流实例，不会在JCR中保留工作流变量。
 
-属性&#x200B;*userMetadataPersistenceEnabled*&#x200B;将存储在工作流模型的&#x200B;*jcr:content节点*&#x200B;上。 此标记将作为&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流元数据中。
+资产 *userMetadataPersistenceEnabled* 将存储在 *jcr:content节点* 工作流模型的子目录访问。 此标记将作为 *cq:userMetaDataCustomPersistenceEnabled*.
 
 下图显示了必须在工作流中设置标记。
 

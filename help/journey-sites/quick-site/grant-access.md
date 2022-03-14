@@ -1,13 +1,13 @@
 ---
 title: 授予对前端开发人员的访问权限
 description: 将前端开发人员载入Cloud Manager，以便他们能够访问您的AEM站点git存储库和管道。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
 
 ---
-
 
 # 授予对前端开发人员的访问权限 {#grant-fed-access}
 
@@ -105,5 +105,3 @@ ht-degree: 0%
 同时，建议您通过审阅文档来转到快速网站创建历程的下一部分 [检索前端开发人员凭据，](retrieve-access.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续访问这些概念。
 
 * [入门历程](/help/journey-onboarding/home.md)  — 本指南将作为您的起点，确保您的团队已设置并有权访问AEMas a Cloud Service。
-
-

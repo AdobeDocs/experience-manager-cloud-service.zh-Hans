@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 连接器
 description: Adobe Experience Manager as a Cloud Service 连接器自助资源和文档链接
-landing-page-description: 了解如何将连接器集成到AEMas a Cloud Service。
+landing-page-description: 了解如何将 Connectors 集成到 AEM as a Cloud Service 中。
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 77%
+ht-degree: 94%
 
 ---
 
@@ -31,19 +31,19 @@ ht-degree: 77%
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到云服务的历程。 |
-| [实施用户指南](/help/implementing/home.md) | 了解如何通过浏览这些开发和部署主题，使用AEM强大功能构建和自定义体验。 |
-| [无头开发人员历程](/help/journey-headless/developer/overview.md) | 探索这一引导式旅程，了解AEM强大而灵活的无头功能，为您的第一个无头项目做好准备。 |
+| [实施用户指南](/help/implementing/home.md) | 通过探索这些开发和部署主题，了解如何使用 AEM 的强大功能来构建和自定义体验。 |
+| [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式历程，了解如何通过 AEM 强大而灵活的 Headless 特性构建自己的第一个 Headless 项目。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
-| [Commerce用户指南](/help/commerce-cloud/home.md) | 了解AEM as a Cloud Service上的Commerce Integration Framework。 |
+| [Commerce 用户指南](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 上的 Commerce 集成框架。 |
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
 * [近期文档更新](https://helpx.adobe.com/cn/experience-manager/documentation-updates.html#AEMasaCloudService)
-* [调度程序文档](/help/implementing/dispatcher/overview.md)
-* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [Dispatcher 文档](/help/implementing/dispatcher/overview.md)
+* [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hans)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社区论坛](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

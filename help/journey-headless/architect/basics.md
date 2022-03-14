@@ -1,84 +1,85 @@
 ---
-title: Learn Content Modeling Basics
-description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+title: 了解内容建模基础知识
+description: 了解使用内容片段为无头CMS建模内容的基本知识。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
+# 了解使用 AEM 对 Headless 进行内容建模的基础知识 {#content-modeling-headless-basics}
 
-## The Story so Far {#story-so-far}
+## 迄今为止的故事 {#story-so-far}
 
-[](overview.md)[](introduction.md)
+于 [AEM Headless Content Architect历程](overview.md) the [简介](introduction.md) 介绍了与无头内容建模相关的基本概念和术语。
 
-This article builds on these so you understand how to model your content for your AEM headless project.
+本文以这些内容为基础，以便您了解如何为AEM无头项目构建内容模型。
 
 ## 目标 {#objective}
 
-* ****
-* ****
+* **受众**:初学者
+* **目标**:介绍无头CMS内容建模的概念
 
-## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
+## 使用内容片段模型进行内容建模 {#architect-content-fragment-models}
 
-Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
+内容（数据）建模是一组已建立的技术，通常在开发关系数据库时使用，因此内容建模对AEM Headless意味着什么？
 
-### Why? {#why}
+### 为什么？ {#why}
 
-To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured.
+要确保您的应用程序能够始终如一地高效地从AEM请求和接收所需内容，必须对此内容进行结构化。
 
-This means that your application knows in advance the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
+这意味着您的应用程序事先知道响应的形式，因此知道如何处理。 这比接收自由格式内容要容易得多，后者必须进行解析以确定内容包含的内容，因此，还要确定内容的使用方式。
 
-### Introduction to How? {#how}
+### 如何介绍？ {#how}
 
-AEM uses Content Fragments to provide the structures needed for Headless delivery of your content to your applications.
+AEM使用内容片段来提供向应用程序无头交付内容所需的结构。
 
-The structure of your content model is:
+内容模型的结构是：
 
-* realized by the definition of your Content Fragment Model,
-* used as a basis of the Content Fragments used for your content generation.
+* 通过定义内容片段模型实现，
+* 用作内容生成所用内容片段的基础。
 
 >[!NOTE]
 >
->The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
+>内容片段模型还用作AEM GraphQL架构的基础，用于检索内容 — 有关更多信息，请参阅开发人员历程。
 
-Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows applications to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
+对内容的请求使用AEM GraphQL API（标准GraphQL API的自定义实施）进行。 AEM GraphQL API允许应用程序对内容片段执行（复杂）查询，每个查询均根据特定的模型类型。
 
-The content returned can then be used by your applications.
+然后，您的应用程序可以使用返回的内容。
 
-## Creating the Structure with Content Fragment Models {#create-structure-content-fragment-models}
+## 使用内容片段模型创建结构 {#create-structure-content-fragment-models}
 
-Content Fragment Models provide various mechanisms that allow you to define the structure of your content.
+内容片段模型提供了多种机制，允许您定义内容的结构。
 
-A Content Fragment Model describes an entity.
+内容片段模型描述实体。
 
 >[!NOTE]
->Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
+>必须在配置浏览器中启用内容片段功能，才能创建新模型。
 
 >[!TIP]
 >
->The model should be named so that the content author knows which model to select when creating a Content Fragment.
+>应该命名模型，以便内容作者知道在创建内容片段时要选择的模型。
 
-Within a model:
+在模型中：
 
-1. ************
-1. ********
-1. **** This is vital for your content modeling.
+1. **数据类型** 允许您定义单个属性。
+例如，将包含教师姓名的字段定义为 **文本** 和他们服役的年月 **数值**.
+1. 数据类型 **内容参考** 和 **片段引用** 允许您创建与AEM中其他内容的关系。
+1. 的 **片段引用** 数据类型允许您通过嵌套内容片段（根据模型类型）来实现多级结构。 这对于内容建模至关重要。
 
 例如：
 
-![](assets/headless-modeling-01.png "")
+![使用内容片段进行内容建模](assets/headless-modeling-01.png "使用内容片段进行内容建模")
 
 ## 数据类型 {#data-types}
 
-AEM provides the following data types for you to model your content:
+AEM提供了以下数据类型来为内容建模：
 
 * 单行文本
 * 多行文本
-* 数字
+* 数值
 * 布尔型
 * 日期和时间
 * 枚举
@@ -89,67 +90,71 @@ AEM provides the following data types for you to model your content:
 
 >[!NOTE]
 >
->Further details are available under Content Fragment Models - Data Types.
+>有关更多详细信息，请参阅内容片段模型 — 数据类型。
 
-## References and Nested Content {#references-nested-content}
+## 引用和嵌套内容 {#references-nested-content}
 
-Two data types provide references to content outside a specific fragment:
+两种数据类型提供对特定片段外部内容的引用：
 
-* **** For example, you can reference an image at a specified location.
+* **内容参考**
+这为任何类型的其他内容提供了简单的引用。
+例如，您可以引用指定位置的图像。
 
-* ****This type of reference is used to create nested content, introducing the relationships needed to model your content.
-The data type can be configured to allow fragment authors to:
-   * Edit the referenced fragment directly.
-   * Create a new content fragment, based on the appropriate model
-
->[!NOTE]
->
->You can also create ad hoc references by using links within Text blocks.
-
-## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
-
-****
-
-** This allows the headless application to follow the connections and access the content as necessary.
+* **片段引用**
+这提供了对其他内容片段的引用。
+此类引用用于创建嵌套内容，其中介绍了为内容建模所需的关系。
+数据类型可配置为允许片段作者执行以下操作：
+   * 直接编辑引用的片段。
+   * 根据相应的模型创建新内容片段
 
 >[!NOTE]
 >
->**
+>您还可以使用文本块中的链接来创建临时引用。
 
-Fragment References do just that - they allow you to reference another fragment.
+## 结构级别（嵌套片段） {#levels-of-structure-nested-fragments}
 
-For example, you might have the following Content Fragment Models defined:
+对于内容建模 **片段引用** 数据类型允许您创建多个级别的结构和关系。
+
+通过此参考，您可以 *connect* 用于表示相互关系的各种内容片段模型。 这允许无头应用程序跟踪连接并根据需要访问内容。
+
+>[!NOTE]
+>
+>应谨慎使用，最佳做法可定义为 *尽可能少地嵌套*.
+
+片段引用就是这样做的 — 它们允许您引用其他片段。
+
+例如，您可能定义了以下内容片段模型：
 
 * 城市
 * 公司
 * 人员
-* Awards
+* 奖励
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+看起来很简单，但公司当然有CEO和员工…….这些都是人，每个人都定义为人。
 
-And a Person can have an Award (or maybe two).
+一个人可以获得一个奖（或两个奖）。
 
-* My Company - Company
-   * CEO - Person
-   * Employee(s) - Person
-      * Personal Award(s) - Award
+* 我的公司 — 公司
+   * 首席执行官 — 人员
+   * 员工 — 人员
+      * 个人奖 — 奖
 
-And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+这只是开始。 根据复杂性，奖项可以是特定于公司的，或者公司可以在特定的金融城设立其主要办事处。
 
-Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
+使用片段引用可以表示这些相互关系，正如您（架构师）、内容作者和无标题应用程序所理解的那样。
 
-## What&#39;s Next {#whats-next}
+## 下一步 {#whats-next}
 
-[](model-structure.md)This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
+既然您已经学习了基础知识，下一步就是 [了解如何在AEM中创建内容片段模型](model-structure.md). 这将介绍和讨论各种可用的参照，以及如何使用片段引用创建结构级别 — 无头建模的关键部分。
 
 ## 其他资源 {#additional-resources}
 
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [内容片段模型 — 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
+* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此页面主要基于 **站点** 控制台，但许多/大多数功能也与创作相关 **内容片段** 下 **资产** 控制台。
 
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)

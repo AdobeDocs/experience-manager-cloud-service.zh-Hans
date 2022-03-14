@@ -1,15 +1,15 @@
 ---
-title: 构建环境
+title: 生成环境
 description: 了解Cloud Manager的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3bf8764500d2b0068b808a42ecfd1400f78b1d13
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 构建环境 {#build-environment}
+# 生成环境 {#build-environment}
 
 了解Cloud Manager的构建环境以及它如何构建和测试您的代码。
 

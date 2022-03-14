@@ -1,7 +1,8 @@
 ---
 title: 就绪阶段
 description: 了解您需要采取哪些步骤来确保AEM安装已准备就绪，可将其移至云
-source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
+exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 7%
@@ -41,7 +42,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
 <thead>
   <tr>
     <th>更改了哪些内容？</th>
-    <th>针对开发人员的 Adobe AIR API 参考</th>
+    <th>引用</th>
     <th>主要优点</th>
   </tr>
 </thead>
@@ -148,7 +149,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
   </tr>
   <tr>
     <td>对身份验证的更改</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service 的 IMS 支持</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hans">AEM as a Cloud Service 的 IMS 支持</td>
     <td>如果您之前在移动到Cloud Service之前在创作和发布中都使用了SAML 2.0集成，则主要更改是AEMas a Cloud Service作者仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍然可以利用SAML或其他身份验证集成。 AEM as a Cloud Service 仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。IMS身份验证不为客户站点（如站点访客）的外部最终用户提供支持。</td>
   </tr>
 </tbody>

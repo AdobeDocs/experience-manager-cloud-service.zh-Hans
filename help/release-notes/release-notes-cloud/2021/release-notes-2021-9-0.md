@@ -1,33 +1,32 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版的发行说明。'
-source-git-commit: bef02a7e72d54b7c9eb5726bb046460c5902fb84
+exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 4%
+ht-degree: 29%
 
 ---
 
+# [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
-
-# 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的一般发行说明。
 
 >[!NOTE]
 >
->从此处，您可以导航到以前版本的发行说明；例如，2020年、2021年，等等。
+>您可以在此部分中导航到早期版本的发行说明；例如，2020 版、2021 版等的发行说明。
 
 >[!NOTE]
 >
->请参阅 [近期文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 有关与版本不直接相关的文档更新的详细信息。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
 的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2021.9.0)是2021年10月6日发行的。
 以下版本(2021.10.0)发布于2021年11月4日。
 
-## 发行视频 {#release-video}
+## 发布视频 {#release-video}
 
 请查看 [2021年9月版概述](https://video.tv.adobe.com/v/337381) 视频，了解添加的功能摘要。
 
@@ -39,7 +38,7 @@ ht-degree: 4%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 的新增功能 [!DNL Assets] {#assets-features}
+### [!DNL Assets] 中的新增功能 {#assets-features}
 
 * 用户现在可以对列视图和卡片视图中搜索结果中显示的资产进行排序。 排序适用于“名称”、“已创建”、“已修改”或“无”列。
 
@@ -63,30 +62,30 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 的新增功能 [!DNL Forms] {#what-is-new-forms-sep-2021}
+### [!DNL Forms] 的新增功能 {#what-is-new-forms-sep-2021}
 
-* **在自适应表单中使用Adobe Sign角色**:Adobe Sign的业务和企业服务级别可以选择扩展协议收件人的角色，而不仅仅是签名者，以更好地满足其工作流要求。 您现在可以 [允许每个协议收件人在自适应表单中配置其角色](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)，默认角色为签名者。
+* **在自适应表单中使用 Adobe Sign 角色**：用于商业和企业服务级别的 Adobe Sign 可让您选择扩展协议接收者的角色（不仅限于签名者），以便更好地匹配他们的工作流要求。您现在可以[允许每个协议接收者在自适应表单中配置自己的角色](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)，签名者是默认角色。
 
-* **适用于自适应Forms的Analytics**:您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪最终用户行为，以收集最终用户分析。 它有助于根据数据做出明智的决策，以改善最终用户体验。
+* **Analytics for Adaptive Forms**：您现在可以通过 Adobe Analytics for Adaptive Forms 捕获和跟踪最终用户行为，从而收集最终用户洞察。这有助于根据数据做出明智的决策，从而改善最终用户体验。
 
-* **轻松将AEM Forms与Microsoft Dynamics和Salesforce连接起来**:该服务为Microsoft Dynamics和Salesforce提供开箱即用的数据源配置和数据模型，使其成为现成版本 [开发人员可以更快、更轻松地将Microsoft Dynamics和Salesforce配置为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
+* **轻松地将 AEM Forms 与 Microsoft Dynamics 和 Salesforce 连接**：此服务为 Microsoft Dynamics 和 Salesforce 提供现成的数据源配置和数据模型，使得[开发人员可以更快、更轻松地配置 Microsoft Dynamics 和 Salesforce 作为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)。
 
-* **使用DocuSign对自适应表单进行电子签名：** 您可以使用DocuSign对自适应表单进行电子签名。 该服务提供自定义提交操作，以便将DocuSign与自适应表单结合使用。 您可以安装Software Distribution上提供的包以导入提交操作。
+* **使用 DocuSign 对自适应表单进行电子签名：**&#x200B;您可以使用 DocuSign 对自适应表单进行电子签名。此服务提供了自定义提交操作，可将 DocuSign 与自适应表单结合使用。您可以安装Software Distribution上提供的包以导入提交操作。
 
-### 的测试版功能 [!DNL Forms] {#sep-what-is-new-forms-prerelease}
+### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
-* **统一存储连接器：** 使用统一存储连接器将客户管理的存储库中的进程中数据外部化。 例如，您可以
-   * 启用Forms Portal的保存和恢复功能，并将自适应表单草稿存储在客户管理的数据存储库中。
-   * 将包含敏感个人数据(SPD)的正在处理的AEM工作流数据(AEM工作流变量数据)存储在客户管理的存储库中。
+* **统一存储连接器：**&#x200B;使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以
+   * 启用 Forms Portal 的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
+   * 将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) 帮助您结合XDP模板和XML数据，以生成各种格式的打印文档。 该服务允许您以同步模式生成文档。 利用API，可创建应用程序，以便：
-   * 使用XML数据填充模板文件，以生成文档。
-   * 以各种格式生成输出表单，包括非交互式PDF打印流。
-   * 从XFA表单PDF和Adobe Acrobat表单生成打印PDF文件。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
+   * 使用 XML 数据填充模板文件来生成文档。
+   * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
+   * 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
 
-您可以写入 [!DNL formscsbeta@adobe.com] 注册测试版计划。
+您可以将电子邮件发送到 [!DNL formscsbeta@adobe.com] 以注册 Beta 项目。
 
-## CIF附加组件 {#cloud-services-cif}
+## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
@@ -128,7 +127,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### 的新增功能 [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+### [!DNL Experience Manager as a Cloud Service] 中的新增功能 {#foundation-features}
 
 **高级网络**
 
@@ -195,7 +194,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 * 通过简化的用户体验改进了用户映射，其中包括以下功能。 有关更多详细信息，请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
    * 在运行用户映射之前，测试与用户管理API的连接
-   * 优雅地跳过错误并继续用户映射活动
+   * 优雅地跳过错误并继续“用户映射”活动
    * 如果访问令牌过期（24小时后），用户映射不再失败。 可以从上次停止的位置重新运行用户映射。
 
 * 为了提高CTT稳健性，一次可以将内容摄取到创作实例或发布实例。

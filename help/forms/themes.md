@@ -384,7 +384,7 @@ ht-degree: 1%
  <tbody>
   <tr>
    <td><strong>属性</strong></td>
-   <td><strong>用法</strong></td>
+   <td><strong>使用</strong></td>
   </tr>
   <tr>
    <td><p>尺寸及位置</p> </td>

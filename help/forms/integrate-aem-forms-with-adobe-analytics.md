@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# 集成 [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# 与[!DNL Adobe Analytics] 集成  {#integrate-aem-forms-with-adobe-analytics}
 
 AEM Forms集成 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) 以捕获和跟踪已发布表单的性能量度。 分析这些量度的目的在于使业务用户能够深入了解最终用户的行为并优化数据捕获体验。 您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）用户的行为。
 

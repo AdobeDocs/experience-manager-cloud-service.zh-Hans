@@ -1,13 +1,13 @@
 ---
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
-source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
-workflow-type: ht
+exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '2982'
 ht-degree: 100%
 
 ---
-
 
 # 为 AEM as a Cloud Service 配置高级联网功能 {#configuring-advanced-networking}
 

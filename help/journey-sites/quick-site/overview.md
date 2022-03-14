@@ -1,15 +1,15 @@
 ---
-title: AEM快速网站创建历程
+title: AEM 快速站点创建历程
 description: 从此处开始，逐步了解易于使用的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b8218232-0298-4b16-9dab-fa59be592a24
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# AEM快速网站创建历程 {#quick-site-creation-journey}
+# AEM 快速站点创建历程 {#quick-site-creation-journey}
 
 从此处开始，逐步了解易于使用的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。
 

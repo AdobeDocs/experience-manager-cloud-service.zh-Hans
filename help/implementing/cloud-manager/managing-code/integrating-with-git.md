@@ -1,15 +1,15 @@
 ---
-title: 在Cloud Manager中使用Git
+title: 将 git 用于 Cloud Manager
 description: 了解如何使用Cloud Manager的git存储库，以及如何将您自己的内部部署客户管理的git存储库与Cloud Manager集成。
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 在Cloud Manager中使用Git {#git-integration}
+# 将 git 用于 Cloud Manager {#git-integration}
 
 AdobeCloud Manager配置了单个git存储库，该存储库用于使用Cloud Manager的CI/CD管道部署代码。
 
