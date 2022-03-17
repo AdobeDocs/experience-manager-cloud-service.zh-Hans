@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1188'
+ht-degree: 85%
 
 ---
 
@@ -134,15 +134,17 @@ AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 �
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.24 的发布日期是 2022 年 2 月 1 日。
+Best Practices Analyzer v2.1.26的发布日期是2022年3月16日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* 能够检测和报告带有和不带有智能标签的资源的数量。
-* 能够检测和报告所使用的核心组件版本。
-* 能够检测和报告执行 BPA 的源层的类型（创作或发布）。
+* 能够检测未处理的资产。 如果检测到未处理的资产，则需要将这些资产设置为已处理，或需要在内容传输期间从迁移集中删除，以避免在内容摄取期间遇到问题。
+* 能够检测内容中是否有1000个以上的虚URL。 使用大量虚URL不是最佳做法，因为它会给调度程序和发布服务器带来负载。
+* 能够识别与Oak索引定义相关的问题并检测与AEMas a Cloud Service的不兼容性。
+* 能够检测并报告外部器配置的使用情况。 在AEMas a Cloud Service外部器配置由Cloud Manager设置，因此需要重构现有外部器配置以保持兼容性。
 
 ### 错误修复 {#bug-fixes-bpa}
 
-* BPA 大小调整逻辑变得更快、更高效。
-* 在某些情况下，BPA 在运行时没有增加分析的计数。此问题已得到修复。
+* 在某些情况下，由于FormsSelectiveFeaturesAnalysis引发断言错误，BPA无法运行。 此问题已得到修复。
+* BPA报告与MAJOR而不是CRITICAL的工作模式有关的调查结果。 此问题已得到修复。
+* BPA错误地将与ui.apps中的OAK索引定义相关的发现结果报告为关键。 此问题已修复

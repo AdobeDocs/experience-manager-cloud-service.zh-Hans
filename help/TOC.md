@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5e71b569280f486a50da0148b745200a6bbdc991
-workflow-type: ht
-source-wordcount: '3431'
-ht-degree: 100%
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+workflow-type: tm+mt
+source-wordcount: '3434'
+ht-degree: 99%
 
 ---
 
@@ -103,9 +103,10 @@ ht-degree: 100%
    + [Post 上线](/help/journey-migration/post-go-live.md)
    + [面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南](/help/journey-migration/getting-started-partners.md)
    + 迁移工具的发行说明 {#release-notes-migration-tools}
-      + [最新发行说明（2022.2.0 版）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [最新发行说明（2022.3.0 版）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [2022.2.0版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [2022.1.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021 {#2021}
+      + 2021年 {#2021}
          + [2021.12.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -610,7 +611,7 @@ ht-degree: 100%
          + 2022 {#2022}
             + [2022.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
             + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-         + 2021 {#2021}
+         + 2021年 {#2021}
             + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
             + [2021.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -622,7 +623,7 @@ ht-degree: 100%
             + [2021.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
             + [2021.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
             + [2021.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-         + 2020 {#2020}
+         + 2020年 {#2020}
             + [2020.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
             + [2020.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
             + [2020.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -727,7 +728,7 @@ ht-degree: 100%
          + 组件和模板 {#components-templates}
             + [组件概述](/help/implementing/developing/components/overview.md)
             + [模板](/help/implementing/developing/components/templates.md)
-            + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+            + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=zh-Hans)
             + [内容服务的 JSON 导出器](/help/implementing/developing/components/json-exporter.md)
             + [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md)
@@ -762,7 +763,7 @@ ht-degree: 100%
          + [在 AEM 中编辑外部 SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA 中的复合组件](/help/implementing/developing/hybrid/composite-components.md)
          + [服务器端渲染](/help/implementing/developing/hybrid/ssr.md)
-         + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-Hans)
+         + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [启动集成](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 参考文档](/help/implementing/developing/hybrid/reference-materials.md)
    + 开发人员工具 {#developer-tools}
