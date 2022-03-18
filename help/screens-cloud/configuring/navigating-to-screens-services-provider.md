@@ -2,10 +2,10 @@
 title: 导航到 Screens Services Provider
 description: 本页介绍如何导航到Screens服务提供商。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
+source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 5%
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,8 @@ ht-degree: 5%
    ![图像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. 在“编辑设置”对话框中输入以下详细信息。
-o **基本Url** - AEM发布URL o **作者Url** - AEM创作URL o **渠道提供程序路径** - /screens/channels.json
+   * **发布Url** - AEM发布URL(例如， `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **作者Url** - AEM作者URL(例如， `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![图像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
