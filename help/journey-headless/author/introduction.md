@@ -1,11 +1,11 @@
 ---
-title: AEM Headless内容创作历程
+title: 使用 AEM 为 Headless 创作 - 简介
 description: 介绍Adobe Experience Manager as a Cloud Service强大、灵活、无头的功能，以及如何为项目创作内容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 3%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 3%
 
 什么是内容管理系统？
 
-A Content Management System (CMS) is just what it says it is - a computer system used to manage content. 这有些笼统，因此更确切地说，它通常用于管理您希望在网站上提供的内容。
+内容管理系统(CMS)就是它所说的 — 用于管理内容的计算机系统。 这有些笼统，因此更确切地说，它通常用于管理您希望在网站上提供的内容。
 
 ## 无头CMS {#headless-cms}
 
 “无头”是一个术语，用于描述从在Web上显示内容的方式中有效分离内容的系统。
 
-Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
+传统上，您会在CMS中管理内容，而同一CMS则负责在您的网页上渲染该内容。
 
 现在，无头意味着可以在CMS中管理内容集，然后由一个或多个（独立）应用程序访问。
 
-这意味着您的内容可以以各种格式传送到任何设备。 This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
+这意味着您的内容可以以各种格式传送到任何设备。 这使整个过程更加灵活，并且还意味着您无需担心布局和格式设置问题。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Traditionally you would manage your content in a CMS, and the same CMS would be 
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-So what is AEM?
+那么什么是AEM?
 
 首先，AEM是一个内容管理系统，具有多种功能，还可以根据您的需求进行自定义。
 
@@ -59,11 +59,11 @@ So what is AEM?
 
 因此，内容建模（也称为数据建模）是另一个技术术语，为什么作为作者，它会让您感兴趣？
 
-For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
+要使无头应用程序能够访问您的内容并使用它执行一些操作，您的内容真正需要有一个预定义的结构。 你的内容可以是自由形式的，但它可以让你的生活 *非常* 应用程序非常复杂。
 
-Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling.
+基本上，定义内容要遵循的结构的过程涉及设计模型 — 这称为数据建模。
 
-For AEM the Content Architect role (often a different person) will perform the data modeling to design a range of **Content Fragment Models** - that you then use as a basis for your content by using **Content Fragments**.
+对于AEM，内容架构师角色（通常是不同的人员）将执行数据建模以设计一系列 **内容片段模型**  — 然后，使用 **内容片段**.
 
 >[!NOTE]
 >

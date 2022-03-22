@@ -1,10 +1,10 @@
 ---
-title: 入门培训历程
+title: 入门历程简介
 description: 单击此处开始，概述可用于了解载入体验的引导式载入历程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '463'
 ht-degree: 2%
 
 ---

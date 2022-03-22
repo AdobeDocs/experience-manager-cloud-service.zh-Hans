@@ -1,10 +1,10 @@
 ---
-title: 配置翻译规则
+title: 配置翻译规则(AEM无标题)
 description: 了解如何定义翻译规则以识别翻译内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
