@@ -2,9 +2,9 @@
 title: 生成环境
 description: 了解Cloud Manager的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3bf8764500d2b0068b808a42ecfd1400f78b1d13
+source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。
 
 * 构建环境基于Linux，源自Ubuntu 18.04。
 * 已安装Apache Maven 3.6.0。
-* 安装的Java版本包括OracleJDK 8u202、Azul Zulu 8u292、OracleJDK 11.0.2和Azul Zulu 11.0.11。
+* 安装的Java版本包括OracleJDK 8u202和OracleJDK 11.0.2。
 * 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_202`  其中包含OracleJDK 8u202。 请参阅 [备用Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他系统包，这是必要的。
 
@@ -90,15 +90,10 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。
 | `sun` | `1.8` |
 | `sun` | `1.11` |
 | `sun` | `11` |
-| `azul` | `1.8` |
-| `azul` | `1.11` |
-| `azul` | `8` |
 
-#### 备用Maven执行JDK版本 {#alternate-maven-jdk-version}
-
-还可以选择Azul 8或Azul 11作为整个Maven执行的JDK。 与工具链选项不同，这会更改所有插件所使用的JDK，除非还设置了工具链配置，在这种情况下，仍然会将工具链配置应用于具有工具链感知功能的Maven插件。 因此，请使用 [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 都行。
-
-为此，请创建一个名为 `.cloudmanager/java-version` 在管道使用的git存储库分支中。 此文件可以包含内容11或8。 任何其他值都将被忽略。 如果指定了11，则使用Azul 11，并且 `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk-11.0.11`. 如果指定8，则使用Azul 8，并且 `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk-8.0.292`.
+>[!NOTE]
+>
+>从2022年4月开始，OracleJDK将成为用于开发和操作AEM应用程序的默认JDK。 即使在Maven工具链中明确选择了替代选项，Cloud Manager的构建过程也会自动切换到使用OracleJDK。 有关更多详细信息，请参阅发布后的4月发行说明。
 
 ## 环境变量 {#environment-variables}
 
