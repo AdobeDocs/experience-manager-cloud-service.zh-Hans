@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 100%
+source-wordcount: '2976'
+ht-degree: 99%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## 旧版专用出口地址客户 {#legacy-dedicated-egress-address-customers}
-
-如果您已在 2021 年 9 月 30 日之前预配了专用出口 IP，您的专用出口 IP 功能会按如下所述工作。
-
-### 功能用法 {#feature-usage}
+## 功能用法 {#feature-usage}
 
 该功能与产生传出流量的 Java 代码或库兼容，前提是它们的代理配置使用了标准 Java 系统属性。实际上，这应该包括了大多数常用库。
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 相同的专用 IP 应用到客户在其 Adobe 组织中的所有程序，并用于其各个程序的所有环境。它适用于创作和发布服务。
 
-只支持 HTTP 和 HTTPS 端口。这包括 HTTP/1.1 以及加密的 HTTP/2。
-
 ### 调试注意事项 {#debugging-considerations}
 
 为了验证该流量是否确实在预期的专用 IP 地址上传出，请查看目标服务中的日志（如果可用）。否则，调用 [https://ifconfig.me/IP](https://ifconfig.me/IP) 等调试服务可能会有帮助，调试服务会返回调用 IP 地址。
+
+## 旧版专用出口地址客户 {#legacy-dedicated-egress-address-customers}
+
+如果您在2021.09.30之前已使用专用出口IP进行配置，则您的专用出口IP功能仅支持HTTP和HTTPS端口。
+这包括 HTTP/1.1 以及加密的 HTTP/2。
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
