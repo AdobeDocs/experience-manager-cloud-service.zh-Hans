@@ -4,9 +4,9 @@ description: 了解如何使CDN（内容分发网络）缓存内容失效，以�
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '676'
 ht-degree: 15%
 
 ---
@@ -23,7 +23,7 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付。 
 >
 >这些步骤仅适用于Adobe Experience Manager 6.5 Service Pack 5或更早版本中的Dynamic Media。 <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
-另请参阅 [Dynamic Media Classic中的缓存概述](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
 **要通过Dynamic Media Classic使CDN缓存失效，请执行以下操作：**
 
