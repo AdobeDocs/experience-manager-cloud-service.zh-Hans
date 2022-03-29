@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service2021.3.0发行说明。”'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '1319'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -90,7 +90,7 @@ AEM 2021.3.0版中Cloud Manager的发布日期是2021年3月11日。
 
 ### 新增功能 {#what-is-new-march}
 
-* 具有以下客户： [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) 和 [自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 将看到有关其以前现有配置的消息，并能够通过UI自助服务。
+* 具有以下客户： [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 和 [自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 将看到有关其以前现有配置的消息，并能够通过UI自助服务。
 
 * 具有必需权限的用户现在可以编辑程序，允许他们以自助方式执行以下操作：
 
@@ -151,13 +151,13 @@ AEM 2021.3.0版中Cloud Manager的发布日期是2021年3月11日。
 
 ### 错误修复 {#bug-fixes-ctt-march}
 
-* 从特定路径迁移内容时，CTT正在提取不相关的资源。 此问题已修复
+* 从特定路径迁移内容时，CTT正在提取不相关的资源。 此问题已得到修复
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.8的发布日期是2021年3月22日。
+Best Practices Analyzer v2.1.8 的发布日期是 2021 年 3 月 22 日。
 
 ### Best Practices Analyzer的新增功能 {#what-is-new-bpa}
 

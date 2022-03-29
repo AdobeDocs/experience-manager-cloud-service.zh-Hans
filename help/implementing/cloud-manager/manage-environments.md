@@ -2,7 +2,7 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为Cloud Manager项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 409bd3d701c50f40c6d4e0d85228ea183c6a2764
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 1%
@@ -220,7 +220,7 @@ Cloud Manager的站点程序支持发布和预览服务的自定义域名。 每
 
 * [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-* [检查自定义域名的状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 或 [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+* [检查自定义域名的状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 或 [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
 * [检查IP允许列表的状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 

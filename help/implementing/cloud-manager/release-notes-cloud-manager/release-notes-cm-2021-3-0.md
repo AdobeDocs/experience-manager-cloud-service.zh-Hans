@@ -3,7 +3,7 @@ title: AEM 2021.3.0版中Cloud Manageras a Cloud Service的发行说明
 description: AEM 2021.3.0版中Cloud Manageras a Cloud Service的发行说明
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -22,7 +22,7 @@ AEM 2021.3.0版中Cloud Manager的发布日期是2021年3月11日。
 
 ### 新增功能 {#what-is-new}
 
-* 具有以下客户： [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) 和 [自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 将看到有关其以前现有配置的消息，并能够通过UI自助服务。
+* 具有以下客户： [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 和 [自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 将看到有关其以前现有配置的消息，并能够通过UI自助服务。
 
 * 具有必需权限的用户现在可以编辑程序，允许他们以自助方式执行以下操作：
    * 将站点解决方案添加到包含资产的现有项目中，反之亦然。
