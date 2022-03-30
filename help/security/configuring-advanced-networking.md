@@ -3,9 +3,9 @@ title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2976'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -353,8 +353,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 旧版专用出口地址客户 {#legacy-dedicated-egress-address-customers}
 
-如果您在2021.09.30之前已使用专用出口IP进行配置，则您的专用出口IP功能仅支持HTTP和HTTPS端口。
-这包括 HTTP/1.1 以及加密的 HTTP/2。
+如果在 2021 年 9 月 30 日之前已为您配置了专用出口 IP，则您的专用出口 IP 功能仅支持 HTTP 和 HTTPS 端口。这包括 HTTP/1.1 以及加密的 HTTP/2。
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
@@ -362,7 +361,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 它还允许连接到 SaaS 供应商（例如支持 VPN 的 CRM 供应商），或者允许从公司网络连接到 AEM as a Cloud Service 的创作、预览或发布服务。
 
-支持大部分采用 IPSec 技术的 VPN 设备。请根据 **RouteBased 配置说明**&#x200B;列的信息，查阅[此页面](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)中的设备列表。按表中所述配置设备。
+支持大部分采用 IPSec 技术的 VPN 设备。请根据 **RouteBased 配置说明**&#x200B;列的信息，查阅[此页面](https://docs.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)中的设备列表。按表中所述配置设备。
 
 ### 常规注意事项 {#general-vpn-considerations}
 
