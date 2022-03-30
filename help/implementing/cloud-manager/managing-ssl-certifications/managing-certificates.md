@@ -1,13 +1,13 @@
 ---
 title: 管理 SSL 证书
 description: 了解如何使用Cloud Manager检查SSL证书的状态，以及如何编辑、替换、更新和删除这些证书。
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
+source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 1%
 
 ---
-
 
 # 管理 SSL 证书 {#managing-ssl-certificates}
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 从Cloud Manager中删除证书是一项无法撤消的永久性操作。 作为最佳实践，Adobe建议先将SSL文件保存在本地，然后再在Cloud Manager中删除它们。
 
-Cloud Manager将不允许您删除一个SSL证书，该证书具有一个或多个与其关联的域。 删除SSL证书之前，必须删除所有关联的域。 请参阅该文档 [删除自定义域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) 以了解更多。
+Cloud Manager将不允许您删除一个SSL证书，该证书具有一个或多个与其关联的域。 删除SSL证书之前，必须删除所有关联的域。 请参阅该文档 [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) 以了解更多。
 
 按照以下步骤删除SSL证书。
 
