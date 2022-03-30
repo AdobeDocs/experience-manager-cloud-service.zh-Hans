@@ -3,19 +3,23 @@ title: 存储库浏览器
 seo-title: Repository Browser
 description: 存储库浏览器为创作层、发布层和预览层上的所有环境提供了对存储库的只读视图。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
-source-git-commit: 76e28ca5628fb985df21f53d1c3e9898985dc736
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
+source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
-
 
 # 存储库浏览器 {#repository-browser}
 
 >[!NOTE]
 >
 >存储库浏览器在AEM版本6582及更高版本上可用。
+
+>[!INFO]
+>
+>您还可以观看 [这个剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) 有关如何使用存储库浏览器调试AEMas a Cloud Service的快速视频介绍。
 
 ## 简介 {#introduction}
 
