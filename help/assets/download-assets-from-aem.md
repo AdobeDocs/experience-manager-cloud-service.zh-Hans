@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: ddc79a163e328d560912550900242cc089df3958
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1192'
 ht-degree: 3%
 
 ---
@@ -43,10 +43,6 @@ ht-degree: 3%
 
 
 ### 为大型下载启用电子邮件通知 {#enable-emails-for-large-downloads}
-
->[!NOTE]
->
->此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 以了解为环境启用该功能的信息。
 
 在以下任何情况下，都会触发异步下载：
 
@@ -139,5 +135,5 @@ ht-degree: 3%
 >
 >* [下载受DRM保护的资产](drm.md)
 >* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [从支持的Adobe Creative Cloud应用程序中使用Adobe资产链接下载资产](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [从支持的Adobe Creative Cloud应用程序中使用Adobe资产链接下载资产](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
 

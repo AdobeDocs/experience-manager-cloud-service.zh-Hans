@@ -4,9 +4,9 @@ description: 本文介绍了如何在Experience Manager中创建、修改和使�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2397'
 ht-degree: 32%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 32%
 
 ## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
-的 `Multi Value Property` 此谓词允许您搜索资产以获取多个值。 假设您在 [!DNL Assets] 并且每个图像的元数据都包含与产品关联的SKU号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
+的 `Multi Value Property` 此谓词允许您搜索资产以获取多个值。 假设您在 [!DNL Assets] 并且每个图像的元数据都包含与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
 1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
 1. 在搜索Forms页面上，选择 **[!UICONTROL 资产管理搜索边栏]**，点按 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
@@ -144,6 +144,11 @@ ht-degree: 32%
 1. 导航到“搜索”面板。 的 **[!UICONTROL 标记]** 谓词已添加到“搜索”面板。
 1. 指定要根据哪些标记来搜索资产，或从建议列表中进行选择。
 1. 选择 **[!UICONTROL 全部匹配]** 搜索包含您指定的所有标记的匹配项。
+
+您可以根据 **[!UICONTROL 名称]** （按字母顺序）， **[!UICONTROL 已创建]** 日期，或 **[!UICONTROL 已修改]** 日期。 在下图中，标签结构根据 **[!UICONTROL 名称]**.
+
+![添加标记](assets/add-tags-to-asset.png)
+
 
 ## 添加其他谓词 {#adding-other-predicates}
 

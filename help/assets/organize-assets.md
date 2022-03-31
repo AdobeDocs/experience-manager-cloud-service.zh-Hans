@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -74,14 +74,45 @@ Date24/08/2021
 
 ## 使用标记组织资产 {#use-tags-to-organize-assets}
 
-使用标记作为元数据，您可以轻松搜索资产、使用搜索结果创建收藏集、提升某些资产的搜索排名，以及将Adobe Sensei的AI算法应用于资产发现。
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] 使用自学算法创建高度描述性的标记，以便您只需单击几下即可找到正确的资产。 智能标记使用Adobe Sensei、人工智能和机器学习框架，经过培训后，该框架可以识别标准标记和特定于业务的标记并将其应用于图像。 智能标记还可以识别内容、单个词或短语，并自动将描述性标记应用于资产
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+向资产添加标记可在搜索期间更轻松地检索标记，使用搜索结果创建收藏集，提升某些资产的搜索排名，以及将Adobe Sensei的AI算法应用于资产发现。
+
+[!DNL Adobe Experience Manager Assets] 使用自学算法创建高度描述性的标记，以便您只需单击几下即可找到正确的资产。 智能标记使用Adobe Sensei、人工智能和机器学习框架，经过培训后，该框架可以识别标准标记和特定于业务的标记并将其应用于图像。 智能标记还可以识别内容、单个词或短语，并自动将描述性标记应用于资产。
+
+以下是向资产添加标记的步骤：
+
+1. 登录到 [!DNL Experience Manager Assets].
+1. 单击 **[!UICONTROL 资产]** > **[!UICONTROL 文件]**，选择资产并单击 **[!UICONTROL 属性]** 以打开资产属性。
+1. 在 **[!UICONTROL 基本]** ，单击 **[!UICONTROL 标记]** 元数据。 随即会打开一个弹出窗口。
+1. 从 `cq-tags`. 您可以为资产分配多个标记。
+
+   您可以根据 **[!UICONTROL 名称]** （按字母顺序）， **[!UICONTROL 已创建]** 日期，或 **[!UICONTROL 已修改]** 日期。 在下图中，标签结构根据 **[!UICONTROL 名称]**.
+
+   ![添加标记](assets/add-tags-to-asset.png)
+
+1. 单击 **保存** 以更新资产元数据更改。
+
+>[!NOTE]
+>
+>在创建智能标记时以及使用标记谓词应用搜索过滤器时，可以对标记结构进行排序。
+>
+>预发行渠道中提供了排序标记功能。 请参阅 [预发行渠道文档](/help/release-notes/prerelease.md#enable-prerelease) 以了解为环境启用该功能的信息。
 
 有关更多信息，请参阅以下文章：
 
 * [编辑资产元数据](meta-edit.md)
 * [资产中的智能标记](smart-tags.md)
+* [将标记谓词添加到搜索面板](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## 组织为收藏集 {#organize-as-collections}
 

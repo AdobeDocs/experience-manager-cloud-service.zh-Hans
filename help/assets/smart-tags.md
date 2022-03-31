@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
+source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2411'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,13 @@ ht-degree: 5%
 1. 创建必需的标记和相应的标记结构。 在DAM存储库中上传相关图像。
 1. 在 [!DNL Experience Manager] 用户界面，访问 **[!UICONTROL 资产]** > **[!UICONTROL 智能标记培训]**.
 1. 单击&#x200B;**[!UICONTROL 创建]**。提供 **[!UICONTROL 标题]**, **[!UICONTROL 描述]**.
-1. 浏览并选择 `cq:tags` 来训练模型。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 单击 **[!UICONTROL 标记]** 字段。 随即会打开一个弹出窗口。
+1. 从 `cq-tags` 要添加到模型的参数。 单击&#x200B;**[!UICONTROL 下一步]**。
+
+   >[!NOTE]
+   >
+   >您可以根据 **[!UICONTROL 名称]** （按字母顺序）， **[!UICONTROL 已创建]** 日期，或 **[!UICONTROL 已修改]** 日期。
+
 1. 在 **[!UICONTROL 选择资产]** 对话框，单击 **[!UICONTROL 添加资产]** 标记。 在DAM存储库中搜索或浏览存储库以至少选择10个和50个图像。 选择资产，而不是文件夹。 选择图像后，单击 **[!UICONTROL 选择]**.
 
    ![查看培训状态](assets/smart-tags-training-status.png)

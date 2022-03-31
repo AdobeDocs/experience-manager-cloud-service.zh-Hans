@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 8%
+source-wordcount: '1435'
+ht-degree: 9%
 
 ---
 
@@ -61,10 +61,6 @@ ht-degree: 8%
 
 ### 添加内容 {#add-content}
 
->[!NOTE]
->
->此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 以了解为环境启用该功能的信息。
-
 发布到 [!DNL Experience Manager Assets] 允许您向发布列表进一步添加更多内容（资产和文件夹）。 您可以在dam-repositories中向列表添加更多资产或文件夹。 单击 **[!UICONTROL 添加内容]** 按钮以添加更多内容。
 
 您可以从一个文件夹添加多个资产，也可以一次添加多个文件夹。 但是，您无法一次从多个文件夹添加资产。
@@ -73,10 +69,6 @@ ht-degree: 8%
 
 ### 包括文件夹设置 {#include-folder-settings}
 
->[!NOTE]
->
->此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 以了解为环境启用该功能的信息。
-
 默认情况下，将文件夹发布到 [!DNL Experience Manager Assets] 会发布所有资产、子文件夹及其引用。
 
 要筛选要发布的文件夹内容，请单击 **[!UICONTROL 包含文件夹设置]**:
@@ -84,7 +76,7 @@ ht-degree: 8%
 * `Include folder contents`
 
    * 已启用：此时会发布选定文件夹的所有资产、子文件夹（包括子文件夹的所有资产）以及引用。
-   * 已禁用：只会发布选定的文件夹（空）和引用。 选定文件夹的资产不会发布。
+   * 已禁用：只发布选定的文件夹（空）和引用。 选定文件夹的资产不会发布。
 
 * `Include folder contents` 和 `Include only immediate folder contents`
 

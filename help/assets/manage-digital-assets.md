@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4326'
 ht-degree: 16%
 
 ---
 
-# 管理资产 {#manage-assets}
+# 管理资源 {#manage-assets}
 
 本文介绍了如何在中管理和编辑资产 [!DNL Adobe Experience Manager Assets]. 管理 [!DNL Content Fragments]，请参阅 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 资产。
 
@@ -23,7 +23,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->* 共享类型的Assets文件夹 `sling:OrderedFolder`，不支持在共享到Marketing Cloud时。 如果要共享文件夹，请不要选择 [!UICONTROL 已排序] 创建文件夹时。
+>* 共享类型的Assets文件夹 `sling:OrderedFolder`，不支持在共享到Experience Cloud时。 如果要共享文件夹，请不要选择 [!UICONTROL 已排序] 创建文件夹时。
 >* Experience Manager不允许使用 `subassets` word作为文件夹的名称。 它是为包含复合资产子资产的节点保留的关键字
 
 
@@ -36,7 +36,7 @@ ht-degree: 16%
 * 资产文件名不能包含以下任一字符： `* / : [ \\ ] | # % { } ? &`
 * 资产文件夹名称不能包含以下任一字符： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## 上传资产 {#uploading-assets}
+## 上传资源 {#uploading-assets}
 
 请参阅 [将数字资产添加到Experience Manager](add-assets.md).
 
@@ -45,10 +45,6 @@ ht-degree: 16%
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 如果DAM用户上传存储库中已存在的一个或多个资产， [!DNL Experience Manager] 检测复制并通知用户。 默认情况下，重复项检测处于禁用状态，因为它可能会根据存储库的大小和上传的资产数量而影响性能。
-
->[!NOTE]
->
->此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 以了解为环境启用该功能的信息。
 
 要启用该功能，请执行以下操作：
 
@@ -77,7 +73,7 @@ ht-degree: 16%
 >
 >将资产上传到存储库时，Experience Manager会检测到重复项，并通知您前100个重复资产。
 
-## 预览资产 {#previewing-assets}
+## 预览资源 {#previewing-assets}
 
 要预览资产，请执行以下步骤。
 
@@ -553,7 +549,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    返回到渲染的PDF文件并刷新它。 刷新的PDF反映您所做的更改。
 
-## 资产版本控制 {#asset-versioning}
+## 资源版本控制 {#asset-versioning}
 
 版本控制创建数字资产在某个特定时间点的快照。版本控制有助于在以后将资产恢复到以前的状态。 例如，如果要撤消对资产所做的更改，请恢复该资产未经编辑的版本。
 

@@ -5,20 +5,16 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
 # 对资产添加水印 {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] 用于向图像添加数字水印。 [!DNL Assets] 支持将图像作为水印应用到其他图像文件。 水印可帮助用户验证资产的真实性和版权所有权。 此外，水印可用于表示文档的状态，如机密、草稿、有效性等。
-
->[!NOTE]
->
->此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 以了解为环境启用该功能的信息。
 
 配置 [!DNL Experience Manager] 要对资产添加水印：
 

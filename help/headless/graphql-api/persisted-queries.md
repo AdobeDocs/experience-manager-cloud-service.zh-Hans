@@ -1,18 +1,22 @@
 ---
 title: 持久 GraphQL 查询
-description: 了解如何在 Adobe Experience Manager 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
+description: 了解如何在Adobe Experience Manager as a Cloud Service中保留GraphQL查询以优化性能。 持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 54%
 
 ---
 
 # 持久 GraphQL 查询 {#persisted-queries-caching}
 
-持久查询是在 AEM 服务器上创建和存储的 GraphQL 查询。标准 GraphQL 查询使用 POST 请求执行，响应无法轻易地缓存。持久查询可以通过客户端应用程序的 GET 请求来申请。GET 请求的响应可以在 Dispatcher 和 CDN 层缓存，最终改进请求客户端应用程序的性能。
+持久查询是在Adobe Experience Manager(AEM)as a Cloud Service服务器上创建并存储的GraphQL查询。 客户端应用程序可通过GET请求来请求这些数据。 GET 请求的响应可以在 Dispatcher 和 CDN 层缓存，最终改进请求客户端应用程序的性能。这与标准GraphQL查询不同，标准GraphQL查询使用无法轻松缓存响应的POST请求执行。
+
+的 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在AEM中可用(默认情况下， `dev-author`)，以便您开发、测试和保留GraphQL查询 [转移到生产环境](#transfer-persisted-query-production). 对于需要自定义的情况(例如， [自定义缓存](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))，您可以使用API;请参阅 [如何保留GraphQL查询](#how-to-persist-query).
+
+## 持久化查询和端点 {#persisted-queries-and-endpoints}
 
 持久查询必须始终使用与[相应 Sites 配置](graphql-endpoint.md)相关的端点，因此它们可以使用以下项之一或全部：
 
@@ -26,7 +30,7 @@ ht-degree: 100%
 >
 >有关更多详细信息，请参阅[在配置浏览器中启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)。
 >
->**GraphQL 持久查询**&#x200B;需要为对应的 Sites 配置启用。
+>的 **GraphQL永久查询** 需要为相应的站点配置启用。
 
 例如，如果存在名为 `my-query` 的特定查询，使用来自 Sites 配置 `my-conf` 的模型 `my-model`：
 
@@ -41,9 +45,15 @@ ht-degree: 100%
 >
 >它们只是正好使用了相同的模型，但通过不同的端点。
 
-## 如何使 GraphQL 查询持久
+## 如何使 GraphQL 查询持久 {#how-to-persist-query}
 
-建议最初在 AEM 创作环境中将查询持久，然后[发布查询](#publish-persisted-query) 到 AEM 发布环境。可以使用 [Postman](https://www.postman.com/) 等工具或 [curl](https://curl.se/) 等命令行工具。
+建议先在AEM创作环境中保留查询，然后 [传输查询](#transfer-persisted-query-production) 到生产AEM发布环境，以供应用程序使用。
+
+保留查询的方法有多种，包括：
+
+* GraphiQL IDE — 请参阅 [保存保留的查询](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* curl — 请参阅以下示例
+* 其他工具，包括 [邮递员](https://www.postman.com/)
 
 以下提供了一些步骤，介绍使用 **curl** 命令行工具使指定查询持久。
 
@@ -185,13 +195,23 @@ ht-degree: 100%
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-## 发布持久查询 {#publish-persisted-query}
+## 将保留的查询传输到生产环境  {#transfer-persisted-query-production}
 
-持久查询可以发布到 AEM 发布环境，在其中可通过客户端应用程序来请求。要在发布时使用持久查询，需要复制相关的持久树。
+最终，您保留的查询需要位于(AEMas a Cloud Service的)生产发布环境中，客户端应用程序可在该环境中请求查询。 要在生产发布环境中使用持久查询，需要复制相关的永久树：
 
-有多种方法可用于发布持久查询：
+* 最初向生产作者发送，以通过查询验证新创作的内容，
+* 然后，最后将生产发布以供实时使用
 
-* **使用 POST 进行复制**：
+传输保留查询的方法有以下几种：
+
+1. 使用包：
+   1. 创建新的包定义。
+   1. 包括配置（例如，`/conf/wknd/settings/graphql/persistentQueries`）。
+   1. 构建包。
+   1. 传输包（下载/上传或复制）。
+   1. 安装包。
+
+1. 使用 POST 进行复制：
 
    ```xml
    $ curl -X POST   http://localhost:4502/bin/replicate.json \
@@ -200,20 +220,16 @@ ht-degree: 100%
    -F cmd=activate
    ```
 
-* **使用包**：
-   1. 创建新的包定义。
-   1. 包括配置（例如，`/conf/wknd/settings/graphql/persistentQueries`）。
-   1. 构建包。
-   1. 复制包。
+<!--
+1. Using replication/distribution tool:
+   1. Go to the Distribution tool.
+   1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-* **使用复制/分发工具**：
-   1. 转到分发工具。
-   1. 为配置选择树激活（例如，`/conf/wknd/settings/graphql/persistentQueries`）。
+* Using a workflow (via workflow launcher configuration):
+  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+-->
 
-* **使用工作流（通过工作流启动器配置）**：
-   1. 定义工作流启动器规则，用于执行将在不同事件上复制配置的工作流模型（例如，创建、修改及其他）。
-
-查询配置发布之后，相同的身份验证原则适用，只需发布端点。
+在生产中的发布环境上完成查询配置后，仅使用发布端点，即可应用相同的身份验证原则。
 
 >[!NOTE]
 >
@@ -221,12 +237,14 @@ ht-degree: 100%
 >
 >如果不是这种情况，它将无法执行。
 
->[!NOTE]
->
->URL 中的任何分号（“;”）需要编码。
->
->例如，在请求中执行持久查询：
->
->```xml
->curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
->```
+## 对查询URL进行编码，以供应用程序使用 {#encoding-query-url}
+
+对于应用程序，需要对URL中的任何分号(&quot;;&quot;)进行编码。
+
+例如，在请求中执行持久查询：
+
+```xml
+curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+```
+
+要在客户端应用程序中使用持久查询，应使用AEM无头客户端SDK [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js).
