@@ -2,9 +2,9 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为Cloud Manager项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 1%
 
 ---
@@ -105,9 +105,9 @@ Cloud Manager向每个AEMas a Cloud Service环境提供预览服务（作为附�
 
 1. 创建适当的IP允许列表，将其应用到预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
 
-   * 请参阅 [取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) 以了解更多详细信息。
+   * 请参阅该文档 [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 以了解更多详细信息。
 
-1. 使用更新 **IP允许列表** 工作流，以删除默认IP并添加相应的IP。 请参阅 [查看和更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) 以了解更多。
+1. 使用更新 **IP允许列表** 工作流，以删除默认IP并添加相应的IP。 请参阅 [管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 以了解更多。
 
 解锁对预览服务的访问后，预览服务名称前面的锁定图标将不再显示。
 
@@ -220,7 +220,7 @@ Cloud Manager的站点程序支持发布和预览服务的自定义域名。 每
 
 * [检查自定义域名的状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 或 [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [检查IP允许列表的状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## 管理 IP 允许列表 {#manage-ip-allow-lists}

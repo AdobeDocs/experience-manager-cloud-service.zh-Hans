@@ -1,13 +1,13 @@
 ---
 title: 管理自定义域名
 description: 了解如何使用Cloud Manager查看、更新、替换和删除自定义域名。
-source-git-commit: 4604b5fad59524a05dc7addf16c70246a14cfea1
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 3%
 
 ---
-
 
 # 管理自定义域名 {#managing-custom-domain-names}
 
@@ -52,7 +52,8 @@ Cloud Manager允许您查看、更新、替换和删除自定义域名。
 1. 单击行最右端的省略号按钮。
 
 1. 选择 **删除**.
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![删除自定义域名](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. 确认您的提交。
 

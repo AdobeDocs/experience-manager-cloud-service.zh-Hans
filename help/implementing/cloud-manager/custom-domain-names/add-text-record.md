@@ -2,16 +2,16 @@
 title: 添加 TXT 记录
 description: 了解如何添加TXT记录以在Cloud Manager中添加自定义域名。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: c80b7288b86ac62da17d5a83ec96cb882e36f687
+source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 4%
 
 ---
 
 # 添加 TXT 记录 {#adding-txt}
 
-DNS TXT记录可授权域在CDN服务中托管。 您必须在区域中创建DNS TXT记录，以授权Cloud Manager将CDN服务与自定义域进行部署，并将其与后端服务相关联。 此关联完全由您控制，并授权Cloud Manager将服务中的内容提供到域。 此授权可以授予，也可以撤回。
+DNS TXT记录可授权域在CDN服务中托管。 您必须在区域中创建DNS TXT记录，以授权Cloud Manager将CDN服务与自定义域进行部署，并将其与后端服务相关联。 此关联完全由您控制，并授权Cloud Manager将服务中的内容提供到域。 此授权可以授予，也可以撤回。 TXT记录特定于域和Cloud Manager环境。
 
 在添加TXT记录之前，必须满足这些要求。
 

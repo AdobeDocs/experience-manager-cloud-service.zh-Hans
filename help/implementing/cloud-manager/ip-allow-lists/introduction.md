@@ -1,38 +1,32 @@
 ---
-title: 简介 — Cloud Manager中的IP允许列表
-description: 简介 — Cloud Manager中的IP允许列表
+title: IP允许列表简介
+description: 了解IP允许列表如何限制用户可以从哪些地址访问AEMas a Cloud Service域。
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
+source-git-commit: 8d1680fa8dbaaefa297cf8c6698097b3c7acc48d
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
-# 简介 {#introduction}
+
+# IP允许列表简介 {#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
 >title="管理IP允许列表"
->abstract="AEM as a cloud service对internet开放，安全性通过用户身份验证和授权来处理。 IP允许列表是Cloud Manager中的一项功能，用于限制和控制仅对受信任用户的访问。 此功能允许具有权限的用户创建受信任IP地址的允许列表，其站点用户可以从中访问其AEM域。"
+>abstract="AEM as a cloud service可通过internet访问，并通过用户身份验证和授权进行保护。 Cloud Manager的IP允许列表可用于仅限制和控制对受信任IP地址的访问。 具有适当权限的Cloud Manager用户可以创建受信任IP地址的允许列表，其站点的用户可以从这些地址访问其AEM域。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="添加IP允许列表"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html" text="查看和更新IP允许列表"
 
-AEM as a cloud service对internet开放，安全性通过用户身份验证和授权来处理。 IP允许列表是Cloud Manager中的一项功能，用于限制和控制仅对受信任用户的访问。 此功能允许具有权限的用户创建受信任IP地址的允许列表，其站点用户可以从中访问其AEM域。
-
->[!NOTE]
->您的程序中最多可以添加50个IP允许列表，并且每个IP允许列表中最多可以添加50个IP/CIDR地址。
+AEM as a cloud service可通过internet访问，并通过用户身份验证和授权进行保护。 Cloud Manager的IP允许列表可用于仅限制和控制对受信任IP地址的访问。 具有适当权限的Cloud Manager用户可以创建受信任IP地址的允许列表，其站点的用户可以从这些地址访问其AEM域。
 
 IP允许列表可添加一次，并作为单位或实体多次应用/取消应用到环境中的创作和/或发布者服务。
 
->[!NOTE]
->Cloud Manager支持环境中用于创作和/或发布服务的IP允许列表名称。
+## 限制 {#limitations}
 
-使用Cloud Manager UI IP允许列表页面或环境详细信息页面，具有权限的用户可以执行多项任务来管理环境的IP允许列表，包括：
+IP存在许多限制，允许列表记住这些限制。
 
-* [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-   >[!NOTE]
-   > 您可以在项目中的跨环境服务添加一次并重复使用或应用规则任意次数。
-* [查看或更新IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-* [应用或取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [删除 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* 您的程序中最多可添加50个IP允许列表
+* 每个IP允许列表最多可添加50个IP/CIDR地址。
+* Cloud Manager支持在环境中为创作和/或发布服务提供IP允许列表名称。

@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service2021.3.0发行说明。”'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 10%
@@ -90,7 +90,7 @@ AEM 2021.3.0版中Cloud Manager的发布日期是2021年3月11日。
 
 ### 新增功能 {#what-is-new-march}
 
-* 具有以下客户： [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 和 [自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 将看到有关其以前现有配置的消息，并能够通过UI自助服务。
+* 具有以下客户： [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 和 [自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 将看到有关其以前现有配置的消息，并能够通过UI自助服务。
 
 * 具有必需权限的用户现在可以编辑程序，允许他们以自助方式执行以下操作：
 

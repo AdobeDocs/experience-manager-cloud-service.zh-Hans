@@ -2,7 +2,7 @@
 title: 管理 SSL 证书
 description: 了解如何使用Cloud Manager检查SSL证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
@@ -24,16 +24,6 @@ ht-degree: 1%
    * Cloud Manager将在UI中发送常规通知，以提醒您证书即将过期。
 
 * **红色**  — 此状态表示SSL证书已过期。
-
-## 预先存在的CDN配置 {#pre-existing-cdn}
-
-如果您的SSL证书已预先存在CDN配置，则 **SSL证书** 页面，鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见且可配置。
-
-使用UI迁移所有预先存在的环境配置后，该消息会消失。 消息可能需要1-2个工作日才能消失。
-
-请参阅该文档 [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 以了解更多详细信息。
-
-在 **IP允许列表** 和 **环境** 页面，用于为IP允许列表或自定义域名预先存在CDN配置的环境。
 
 ## 更新SSL证书 {#update-ssl-certificate}
 
@@ -70,3 +60,13 @@ Cloud Manager将不允许您删除一个SSL证书，该证书具有一个或多�
 >[!NOTE]
 >
 >用户必须是 **业务所有者** 或 **部署管理器** 角色，以便在Cloud Manager中删除SSL证书。
+
+## 预先存在的CDN配置 {#pre-existing-cdn}
+
+如果您的SSL证书已预先存在CDN配置，则 **SSL证书** 页面，鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见且可配置。
+
+使用UI迁移所有预先存在的环境配置后，该消息会消失。 消息可能需要1-2个工作日才能消失。
+
+请参阅该文档 [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 以了解更多详细信息。
+
+在 **IP允许列表** 和 **环境** 页面，用于为IP允许列表或自定义域名预先存在CDN配置的环境。

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ac5984d9b5c8800287e11fe00e02d60d9727ed43
+source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
 workflow-type: tm+mt
-source-wordcount: '3407'
+source-wordcount: '3387'
 ht-degree: 99%
 
 ---
@@ -675,11 +675,11 @@ ht-degree: 99%
       + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
-      + 管理 SSL 证书 {#manage-ssl-certificates}
+      + SSL证书 {#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 管理自定义域名 {#custom-domain-names}
+      + 自定义域名 {#custom-domain-names}
          + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -687,14 +687,11 @@ ht-degree: 99%
          + [配置 DNS 设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + 管理 IP 允许列表 {#ip-allow-lists}
+      + IP允许列表 {#ip-allow-lists}
          + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [查看和更新 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-         + [应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-         + [删除 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-         + [检查 IP 允许列表状态](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+         + [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + 部署 AEM as a Cloud Service {#developing}
       + [AEM 项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
