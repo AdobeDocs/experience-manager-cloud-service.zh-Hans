@@ -2,10 +2,10 @@
 title: 在Screens中创建和管理渠道as a Cloud Service
 description: 本页介绍如何在Screens中创建和管理渠道as a Cloud Service。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 7%
+source-wordcount: '1116'
+ht-degree: 4%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 7%
 
 * 了解如何创建Screens内容提供商的渠道
 * 管理和编辑渠道中的内容
+* 渠道的激活计划
 
 ## 在Screens中创建新序列渠道的步骤as a Cloud Service {#create-new-channel}
 
@@ -87,6 +88,89 @@ ht-degree: 7%
 | 序列渠道 | 允许创建按顺序（在幻灯片放映中逐个播放组件）播放组件的渠道。 |
 | 左或右L条分屏渠道 | 允许内容作者在大小适当的区域中查看不同类型的资产。 |
 
+## 为渠道使用默认分配详细信息 {#default-channels}
+
+此功能允许您为渠道定义默认激活计划，并在默认情况下将其用于显示屏的每个分配。 这提供了一种方法，以便不必重复繁琐的计划定义。
+
+### 为渠道创建默认分配详细信息 {#create-default}
+
+1. 导航到要配置的渠道的详细信息页面。
+1. 找到 **默认分配详细信息** 图块。
+
+   ![图像](/help/screens-cloud/assets/display/Assignment1.png)
+
+1. 单击 **设置默认详细信息**.
+1. 配置渠道的默认分配详细信息（包括优先级、开始和结束日期以及重复模式），然后单击 **分配**.
+
+   ![图像](/help/screens-cloud/assets/display/Assignments2.png)
+
+1. 请注意，分配的详细信息显示在 **默认分配详细信息** 拼贴：
+
+   ![图像](/help/screens-cloud/assets/display/Assignments3.png)
+
+此拼贴显示以下信息：
+* 显示屏中渠道的默认优先级。
+* 计划播放渠道时的激活开始和结束日期。
+* 循环的综合视图（每小时/每日/每周/每月/每年，以及给定该循环的名称）。
+
+### 在分配到显示屏时使用默认分配详细信息 {#default-display}
+
+可以将具有默认分配详细信息的渠道分配到的显示方式与常规渠道相同，添加了一个选项来利用默认分配详细信息，而不是每次手动定义自定义渠道。
+
+1. 导航到要将渠道分配到的显示详细信息页面，然后单击 **分配渠道**.
+或者，在库存视图中选择所需的显示，然后单击 **分配渠道**.
+1. 随即会打开渠道分配对话框。
+
+   ![图像](/help/screens-cloud/assets/display/Assignments4.png)
+
+1. 从渠道选取器中选择具有默认分配详细信息的所需渠道。
+1. 请注意，渠道分配对话框发生了更改，允许您选择默认分配详细信息或选择自定义分配详细信息：
+
+   ![图像](/help/screens-cloud/assets/display/Assignments5.png)
+
+1. 单击 **分配** 完成分配，或单击 **设置自定义分配详细信息** 如果您希望在该特定显示的上下文中使用其他一些值覆盖默认值。
+
+   ![图像](/help/screens-cloud/assets/display/Assignments6.png)
+
+1. 请注意 **分配的渠道** 磁贴已更新为新分配：
+
+   ![图像](/help/screens-cloud/assets/display/Assignments7.png)
+
+1. 请注意，渠道将具有不同的图标，具体取决于它们是使用自定义计划（时钟图标）还是继承默认详细信息（世界时钟图标），单击这些渠道将显示计划详细信息。
+1. 另请注意，每种类型的可用操作都会有所不同。
+
+   ![图像](/help/screens-cloud/assets/display/Assignments8.png)
+
+**注意：** 利用默认分配详细信息的渠道分配在显示内容中将不可编辑。
+
+* 如果您需要将其更改为自定义分配，则必须先将其删除，然后使用 **设置自定义分配详细信息** 选项。
+* 如果您需要更改默认分配详细信息的属性，则必须直接从渠道详细信息页面执行此操作。
+
+### 从渠道中删除默认分配详细信息 {#remove-display}
+
+1. 导航到要删除默认分配详细信息的渠道的详细信息页面。
+1. 找到 **默认分配详细信息** 页面中的拼贴
+1. 单击 **删除默认**.
+
+   ![图像](/help/screens-cloud/assets/display/Assignments9.png)
+
+1. 将显示确认对话框，其详细信息将与以下条件之一匹配：
+   **a.** 渠道不用于任何显示屏。
+
+   ![图像](/help/screens-cloud/assets/display/Assignments10.png)
+
+**b.** 渠道用于单个显示屏。
+
+![图像](/help/screens-cloud/assets/display/Assignment11.png)
+
+**c.** 渠道用于多个显示屏。
+
+![图像](/help/screens-cloud/assets/display/Assignments12.png)
+
+1. 单击 *删除* 以验证更改。
+
+**注意：** 从渠道中删除默认分配详细信息将删除使用该渠道的所有显示屏上的匹配分配。
+因此，如果这些显示屏上没有要播放的替代内容，则这可能会导致出现空白屏幕。
 
 ## 下一步 {#whats-next}
 
