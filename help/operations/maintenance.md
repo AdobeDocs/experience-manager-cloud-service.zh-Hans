@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1020'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>30天以上的版本将被删除</li>
        <li>过去30天中最新的5个版本将保留</li>
        <li>无论上述规则如何，都会保留最新版本。</li>
-     </ol><br>注意：自2022年3月14日起，上述行为将对新环境强制执行，并将于2022年4月21日对现有环境（那些是在2022年3月14日之前创建的环境）强制执行。</td>
+     </ol><br>注意：对于2022年3月14日之后创建的新环境，默认情况下会强制执行上述行为。 如果您需要不同的设置，请提交客户支持票证。</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>对于复制审核，将删除3天以前的审核日志</li>
        <li>对于DAM（资产）审核，将删除超过30天的审核日志</li>
        <li>对于页面审核，将删除3天以前的日志。</li>
-     </ol><br>注意：自2022年3月14日起，上述行为将对新环境强制执行，并将于2022年4月21日对现有环境（那些是在2022年3月14日之前创建的环境）强制执行。</td>
+     </ol><br>注意：对于2022年3月14日之后创建的新环境，默认情况下会强制执行上述行为。 如果您需要不同的设置，请提交客户支持票证。</td>
    </td>
   </tr>
   <tr>
