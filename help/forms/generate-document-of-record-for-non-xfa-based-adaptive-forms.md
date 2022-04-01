@@ -2,9 +2,9 @@
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
+source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '3678'
+source-wordcount: '3658'
 ht-degree: 2%
 
 ---
@@ -403,10 +403,6 @@ When you select a form model, configure Document of Record using options availab
 * **隐藏时从DoR中排除字段：** 设置属性会覆盖“从记录文档中排除”字段级别属性（如果不为true）的行为。 如果字段在表单提交时处于隐藏状态，则如果该属性设置为true，则它们将从记录文档中排除，但前提是未设置“从记录文档排除”属性。
 
 ## 使用自定义XCI文件
-
->[!NOTE]
->
-> 此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](/help/release-notes/prerelease.md#enable-prerelease) 以了解为环境启用该功能的信息。
 
 XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有一个主控的XCI文件。 您可以使用自定义XCI文件覆盖在主控XCI文件中指定的一个或多个默认属性。 例如，您可以选择将字体嵌入文档或为所有文档启用标记属性。 下表指定了XCI选项：
 

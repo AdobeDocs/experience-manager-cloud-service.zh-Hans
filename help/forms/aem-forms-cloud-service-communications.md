@@ -2,9 +2,9 @@
 title: AEM Formsas a Cloud Service — 通信
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,9 @@ ht-degree: 0%
 
 # 使用同步处理 {#sync-processing-introduction}
 
-通信允许您创建、组合和提供以品牌为导向的个性化通信，如商务信函、文档、报表、理赔处理信函、福利通知、理赔处理信函、每月账单和欢迎资料包。 您可以使用通信API将模板(XFA或PDF)与客户数据结合，以PDF、PS、PCL、DPL、IPL和ZPL格式生成文档。
+通信功能可帮助您创建品牌认可、个性化且标准化的文档，如业务信函、报表、报销申请处理信函、福利通知、每月账单或欢迎资料包。
 
-假设您有一个或多个模板以及每个模板的多个XML数据记录。 您可以使用通信API为每个记录生成打印文档。 <!-- You can also combine the records into a single document. --> 结果会生成一个非交互式PDF文档。 非交互式PDF文档不允许用户在其字段中输入数据。
-
+该功能提供了用于生成和操作文档的API。 您可以根据需要生成或操作文档，或创建批处理作业以按定义的间隔生成多个文档。
 
 通信为按需和计划的文档生成提供了API。 您可以将同步API用于按需API和批量API（异步API），以进行计划文档生成：
 
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 ## 使用同步操作 {#batch-operations}
 
-同步操作是以线性方式生成文档的过程。 它支持两种类型的身份验证：
+同步操作是以线性方式生成或操作文档的过程。 它支持两种类型的身份验证：
 
 * **基本身份验证**:基本身份验证是内置于HTTP协议中的简单身份验证方案。 客户端使用Authorization标头发送HTTP请求，该标头中包含Basic一词，后跟一个空格和一个base64编码的字符串username:password。 例如，要授权为管理员/管理员，客户端会发送基本 [base64编码的字符串用户名]: [base64编码的字符串密码].
 
@@ -41,9 +40,9 @@ ht-degree: 0%
    >
    >Adobe建议在生产环境中使用基于令牌的身份验证。
 
-### 先决条件 {#pre-requisites}
+### （仅限文档生成API）先决条件 {#pre-requisites}
 
-要使用同步API，需要满足以下条件：
+要使用同步API生成文档，需要满足以下条件：
 
 * PDF或XDP模板
 * [要与模板合并的数据](#form-data)
@@ -73,4 +72,3 @@ ht-degree: 0%
 >[!NOTE]
 >
 >只有表单用户组的成员才能访问通信API。
-
