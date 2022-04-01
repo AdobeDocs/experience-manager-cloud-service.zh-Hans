@@ -2,9 +2,9 @@
 title: 配置翻译规则(AEM无标题)
 description: 了解如何定义翻译规则以识别翻译内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,15 @@ ht-degree: 0%
 * 能够设置您自己与翻译服务的连接。
 
 现在，您的连接器已设置完成，本文将引导您完成确定需要翻译的内容的下一步。
+
+>[!CAUTION]
+>
+>仅当您不在AEM as a Cloud Service的预发行渠道中时，才需要完成此文档历程步骤。
+>
+>* 如果您使用的是预发行渠道，请跳到历程的下一步 [翻译内容。](translate-content.md)
+>* 如果您不在预发行渠道中，请继续阅读此文档。
+>
+>请参阅 [“其他资源”部分](#additional-resources) 有关预发行渠道的更多信息。
 
 ## 目标 {#objective}
 
@@ -99,3 +108,4 @@ ht-degree: 0%
 但建议您通过审阅文档来进入无标题翻译历程的下一部分 [翻译内容，](translate-content.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续进行无头历程。
 
 * [识别要翻译的内容](/help/sites-cloud/administering/translation/rules.md)  — 了解翻译规则如何识别需要翻译的内容。
+* [AEMas a Cloud Service预发行渠道](/help/release-notes/prerelease.md#enable-prerelease)  — 了解如何选择加入AEM as a Cloud Service的预发行渠道，以尝试新增功能和即将推出的功能。

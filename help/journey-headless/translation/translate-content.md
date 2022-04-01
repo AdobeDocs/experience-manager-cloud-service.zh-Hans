@@ -2,12 +2,13 @@
 title: 翻译内容(AEM无标题)
 description: 使用翻译连接器和规则翻译无头内容。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
+
 
 # 翻译内容 {#translate-content}
 
@@ -21,6 +22,10 @@ ht-degree: 0%
 * 能够定义您自己的翻译规则。
 
 现在，连接器和翻译规则已设置完成，本文将引导您完成翻译无头内容的下一步。
+
+>[!NOTE]
+>
+>如果您跳过了 [配置翻译规则](translation-rules.md) 此历程的步骤由于您位于AEM as a Cloud Service的预发行渠道中，因此您无需像本文档中所述那样考虑翻译规则。
 
 ## 目标 {#objective}
 

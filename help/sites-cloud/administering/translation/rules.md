@@ -4,9 +4,9 @@ description: 了解翻译规则如何识别需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1292'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,22 @@ ht-degree: 1%
 >[!TIP]
 >
 >如果您是翻译内容的新用户，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 这是使用AEM强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
+
+## 内容片段和翻译规则 {#content-fragments}
+
+仅当 **为翻译启用内容模型字段** 选项 [翻译集成框架配置级别。](integration-framework.md#assets-configuration-properties)
+
+如果 **为翻译启用内容模型字段** 选项， AEM将使用 **可翻译** 字段 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 以确定字段是否要翻译。 在这种情况下， [翻译规则](rules.md) 被取代。
+
+如果您希望使用翻译规则来翻译内容片段，请 **为翻译启用内容模型字段** 必须禁用翻译集成框架配置中的选项。
+
+>[!NOTE]
+>
+>此功能在预发行渠道中提供。
+> 
+>请参阅 [预发行渠道文档](/help/release-notes/prerelease.md#enable-prerelease) 以了解有关如何为环境启用该功能的信息。
+
+## 概述 {#overview}
 
 页面和资产在JCR存储库中以节点表示。 提取的内容是节点的一个或多个属性值。 翻译规则识别包含要提取内容的属性。
 

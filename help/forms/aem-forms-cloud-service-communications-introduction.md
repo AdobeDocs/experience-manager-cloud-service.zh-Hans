@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1138'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 文档操作
 
-通信文档处理API有助于合并、重新排列和验证PDF文档。 通常，您会创建DDX并将其提交到文档处理API以组合或重新排列文档。 DDX文档提供了如何使用源文档生成一组必需文档的说明。 DDX参考文档提供了有关所有受支持操作的详细信息。 文档操作的一些示例包括：
+通信文档处理API有助于合并、重新排列和验证PDF文档。 通常，您会创建DDX并将其提交到文档处理API以组合或重新排列文档。 的 [DDX文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 提供有关如何使用源文档生成一组必需文档的说明。 DDX参考文档提供了有关所有受支持操作的详细信息。 文档操作的一些示例包括：
 
 ### 组合PDF文档
 
