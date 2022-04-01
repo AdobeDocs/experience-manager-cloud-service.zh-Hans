@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 1%
@@ -73,17 +73,6 @@ Date24/08/2021
 * 如果资产已发布，则您可以使用 [!DNL Experience Manager] 要将资产移动到其他文件夹，并从其新位置重新发布。 原始已发布的资产位置与新重新发布的资产一起仍可用。 但是，原始发布的资产是 *丢失* to [!DNL Experience Manager] 和无法取消发布。 因此，作为最佳实践，请先取消发布资产，然后将其移动到其他文件夹。
 
 ## 使用标记组织资产 {#use-tags-to-organize-assets}
-
-<!--
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
-
-[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
-
-For more information, see the following articles:
-
-* [Edit asset metadata](meta-edit.md)
-* [Smart Tags in Assets](smart-tags.md)
--->
 
 向资产添加标记可在搜索期间更轻松地检索标记，使用搜索结果创建收藏集，提升某些资产的搜索排名，以及将Adobe Sensei的AI算法应用于资产发现。
 

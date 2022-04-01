@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2943'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的 [!DNL Creative Cloud] 桌面应用程序。 | 创意、营销人员 |
 | [资产批量摄取](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔批量摄取。 仅适用于支持的数据存储。 | 管理员、开发人员 |
 
-## 上传资产 {#upload-assets}
+## 上传资源 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -116,12 +116,12 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 文件名处理和禁止字符 {#filename-handling}
 
-[!DNL Experience Manager Assets] 会尝试阻止您上传文件名中包含禁止字符的资产。 如果您尝试上传的资产的文件名中包含不允许的字符或更多字符， [!DNL Assets] 将显示一条警告消息并停止上传，直到您删除这些字符或使用允许的名称进行上传。
+[!DNL Experience Manager Assets] 阻止您上传文件名中包含禁止字符的资产。 如果您尝试上传的资产的文件名中包含不允许使用的字符或更多字符， [!DNL Assets] 将显示一条警告消息并停止上传，直到您删除这些字符或使用允许的名称进行上传。
 
 为了适合贵组织的特定文件命名约定， [!UICONTROL 上传资产] 对话框允许您为上传的文件指定长名称。 不支持以下（以空格分隔的）字符列表：
 
-* 资产文件名的字符无效 `* / : [ \\ ] | # % { } ? &`
-* 资产文件夹名称的字符无效 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 资产名称的字符无效： `* / : [ \\ ] | # % { } ? &`
+* 资产文件夹名称的字符无效： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## 批量上传资产 {#bulk-upload}
 
@@ -147,7 +147,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ![批量摄取工具](assets/bulk-ingestion.png)
 
-#### 前提条件 {#prerequisites-bulk-ingestion}
+**前提条件**
 
 使用此功能需要Azure或AWS中的外部存储帐户或存储段。
 
@@ -155,7 +155,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >将存储帐户容器或存储段创建为专用容器，并仅接受授权请求中的连接。 但是，不支持对入口网络连接的其他限制。
 
-#### 配置批量导入工具 {#configure-bulk-ingestor-tool}
+### 配置批量导入工具 {#configure-bulk-ingestor-tool}
 
 要配置批量导入工具，请执行以下步骤：
 
@@ -187,31 +187,108 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 单击 **[!UICONTROL 保存]** 以保存配置。
 
-#### 管理批量导入工具配置 {#manage-bulk-import-configuration}
+### 管理批量导入工具配置 {#manage-bulk-import-configuration}
 
 创建批量导入工具配置后，您可以先执行任务以评估配置，然后再将资产批量摄取到Experience Manager实例。 选择 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]** 查看用于管理批量导入工具配置的可用选项。
 
-##### 编辑配置 {#edit-configuration}
+### 编辑配置 {#edit-configuration}
 
 选择配置并单击 **[!UICONTROL 编辑]** 修改配置详细信息。 执行编辑操作时，无法编辑配置和导入数据源的标题。
 
-##### 删除配置 {#delete-configuration}
+### 删除配置 {#delete-configuration}
 
 选择配置并单击 **[!UICONTROL 删除]** 删除批量导入配置。
 
-##### 验证与数据源的连接 {#validate-connection}
+### 验证与数据源的连接 {#validate-connection}
 
 选择配置并单击 **[!UICONTROL check]** 验证与数据源的连接。 如果连接成功，Experience Manager将显示以下消息：
 
 ![批量导入成功消息](assets/bulk-import-success-message.png)
 
-##### 为批量导入作业调用测试运行 {#invoke-test-run-bulk-import}
+### 为批量导入作业调用测试运行 {#invoke-test-run-bulk-import}
 
 选择配置并单击 **[!UICONTROL 干流]** 为批量导入作业调用测试运行。 Experience Manager显示有关批量导入作业的以下详细信息：
 
 ![练习结果](assets/dry-assets-result.png)
 
-##### 计划一次性或定期批量导入 {#schedule-bulk-import}
+### 在批量导入期间处理文件名 {#filename-handling-bulkimport}
+
+批量导入资产或文件夹时， [!DNL Experience Manager Assets] 导入导入源中存在内容的整个结构。 [!DNL Experience Manager] 遵循资产和文件夹名称中特殊字符的内置规则，因此这些文件名需要清理。 对于文件夹名称和资产名称，用户定义的标题将保持不变，并存储在 `jcr:title`.
+
+在批量导入期间， [!DNL Experience Manager] 查找现有文件夹以避免重新导入资产和文件夹，同时还会验证在执行导入的父文件夹中应用的清理规则。 如果清理规则在父文件夹中应用，则相同的规则将应用于导入源。 对于新导入，将应用以下鼠标化规则来管理资产和文件夹的文件名。
+
+**批量导入中处理资产名称**
+
+对于资产文件名，将使用API清理Jcr名称和路径： `JcrUtil.escapeIllegalJcrChars`.
+
+* 按原样保留Unicode
+* 将特殊字符替换为其URL转义代码，例如 `new*asset.png` 已更新为 `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**批量导入中处理文件夹名称**
+
+对于文件夹文件名，将使用API清理Jcr名称和路径： `JcrUtil.createValidName`.
+
+* 将大写转换为小写
+* 按原样保持Unicode
+* 将特殊字符替换为短划线(“ — ”)，例如， `new*asset.png` 已更新为 `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### 计划一次性或定期批量导入 {#schedule-bulk-import}
 
 要计划一次性导入或定期批量导入，请执行以下步骤：
 
@@ -222,7 +299,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    ![计划批量摄取作业](assets/bulk-ingest-schedule1.png)
 
 
-##### 查看Assets目标文件夹 {#view-assets-target-folder}
+#### 查看Assets目标文件夹 {#view-assets-target-folder}
 
 选择配置并单击 **[!UICONTROL 查看资产]** 以在执行批量导入作业后查看导入资产的Assets目标位置。
 
@@ -301,7 +378,7 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文档](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [资产上传技术参考](developer-reference-material-apis.md#asset-upload)
 

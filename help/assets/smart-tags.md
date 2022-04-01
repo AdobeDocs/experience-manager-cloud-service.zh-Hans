@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 5%
@@ -124,6 +124,7 @@ ht-degree: 5%
    >[!NOTE]
    >
    >您可以根据 **[!UICONTROL 名称]** （按字母顺序）， **[!UICONTROL 已创建]** 日期，或 **[!UICONTROL 已修改]** 日期。
+
 
 1. 在 **[!UICONTROL 选择资产]** 对话框，单击 **[!UICONTROL 添加资产]** 标记。 在DAM存储库中搜索或浏览存储库以至少选择10个和50个图像。 选择资产，而不是文件夹。 选择图像后，单击 **[!UICONTROL 选择]**.
 
