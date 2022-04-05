@@ -4,7 +4,7 @@ description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -1572,11 +1572,11 @@ query {
 
 #### 公司 {#fragment-company}
 
-| 公司名称 | 首席执行官 | 员工 |
+| 公司名称 | CEO | 员工 |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 | Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | 史蒂夫·乔布斯 | Joe Smith<br>Abe Lincoln |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### 人员 {#fragment-person}
 
@@ -1609,4 +1609,4 @@ query {
 | 圣弗朗西斯科 | 美国 |  883306 |  city:beach<br>city:na |
 | 圣何塞 | 美国 |  102635 | city:na |
 | 斯图加特 | 德国 | 634830 | city:emea |
-| 苏黎世 | 瑞士 | 415367 |  城市：资本<br>城市：emea |
+| 苏黎世 | 瑞士 | 415367 |  city:capital<br>city:emea |
