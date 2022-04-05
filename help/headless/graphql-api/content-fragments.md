@@ -4,7 +4,7 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2569'
 ht-degree: 100%
 
