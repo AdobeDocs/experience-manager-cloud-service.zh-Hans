@@ -3,7 +3,7 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 6d5cdc4b606692f059fe3a6b7a29544f5bc0fa11
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 >
 >根据您的实例，您可以直接访问 [AEM GraphQL API 中包含的 GraphiQL 接口](/help/headless/graphql-api/graphiql-ide.md)，用于提交和测试查询。
 >
->例如：`http://localhost:4502/content/graphiql.html`
+>例如：`http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >

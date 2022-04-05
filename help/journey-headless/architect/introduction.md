@@ -1,17 +1,17 @@
 ---
-title: 带有AEM简介的无头内容建模
-description: 介绍Adobe Experience Manager as a Cloud Service强大、灵活、无头的功能，以及如何为项目建立内容模型。
+title: AEM as a Headless CMS的内容建模 — 简介
+description: 介绍如何使用Adobe Experience Manager as a Cloud Service的功能作为无头CMS来为项目的内容建模。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# 使用 AEM 对 Headless 进行内容建模 - 简介 {#architect-headless-introduction}
+# AEM as a Headless CMS的内容建模 — 简介 {#architect-headless-introduction}
 
-在 [AEM Headless Content Architect历程](overview.md)，您可以学习必要的（基本）概念和术语，以了解使用Adobe Experience Manager(AEM)as a Cloud Service进行无头内容交付的内容建模。
+在 [AEM Headless Content Architect历程](overview.md)，您可以学习在使用Adobe Experience Manager(AEM)as a Cloud Service作为无头CMS时，了解内容建模所必需的（基本）概念和术语。
 
 本文档可帮助您了解无头内容交付、AEM如何支持无头，以及如何为无头内容建模。 阅读后，您应该：
 
