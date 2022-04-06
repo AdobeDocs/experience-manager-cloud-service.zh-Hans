@@ -2,9 +2,9 @@
 title: UI 测试
 description: 自定义UI测试是一项可选功能，通过该功能，您可以为自定义应用程序创建并自动运行UI测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1338'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,6 @@ ht-degree: 1%
 >abstract="自定义UI测试是一项可选功能，允许您为应用程序创建并自动运行UI测试。 UI测试是在Docker图像中打包的基于硒的测试，以便允许在语言和框架（如Java和Maven、Node和WebDriver.io，或任何基于Selenium构建的其他框架和技术）中进行广泛选择。"
 
 自定义UI测试是一项可选功能，允许您为应用程序创建并自动运行UI测试。
-
->[!NOTE]
-> 需要更新在2021年2月10日之前创建的暂存和生产管道，才能使用此页面中所述的UI测试。
-> 请参阅 [Cloud Manager中的CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有关管道配置的信息。
 
 ## 概述 {#custom-ui-testing}
 
@@ -62,12 +58,9 @@ UI测试将作为每个Cloud Manager管道(具有 [专用 **自定义UI测试** 
 
 >[!NOTE]
 >
->如果您的项目不包含此行，您将需要编辑此文件以选择启用UI测试。 如果文件有一条建议不编辑的行，请忽略该建议。
-
->[!NOTE]
+>如果您的项目不包含此行，您将需要编辑文件以选择启用UI测试。
 >
->需要更新在2021年2月10日之前创建的生产管道，才能使用本节中所述的UI测试。 这实质上意味着用户必须编辑生产管道并单击 **保存** ，即使未进行任何更改也是如此。
->请参阅 [配置CI-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) 了解有关管道配置的更多信息。
+>文件可能包含一行建议不编辑该文件。 这是因为在引入选择加入UI测试之前，已将其引入项目，并且客户端的不打算编辑文件。 这可以安全地忽略。
 
 ## 构建UI测试 {#building-ui-tests}
 
@@ -177,7 +170,7 @@ Cloud Manager会自动提取包含Docker构建上下文的存档，Cloud Manager
 | 变量 | 示例 | 描述 |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium服务器的URL |
-| `SELENIUM_BROWSER` | `chrome`、`firefox` | Selenium Server使用的浏览器实施 |
+| `SELENIUM_BROWSER` | `chrome` | Selenium Server使用的浏览器实施 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM创作实例的URL |
 | `AEM_AUTHOR_USERNAME` | `admin` | 登录AEM创作实例的用户名 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | 登录AEM创作实例的密码 |
@@ -198,7 +191,7 @@ Cloud Manager会自动提取包含Docker构建上下文的存档，Cloud Manager
 
 ### 生成测试报表 {#generate-test-reports}
 
-Docker图像必须以JUnit XML格式生成测试报告，并将其保存在环境变量指定的路径中 `REPORTS_PATH`. JUnit XML格式是一种广泛用于报告测试结果的格式。 如果Docker图像使用Java和Maven，则 [Maven Surefire插件](https://maven.apache.org/surefire/maven-surefire-plugin/) 和 [Maven Failsafe插件](https://maven.apache.org/surefire/maven-failsafe-plugin/).
+Docker图像必须以JUnit XML格式生成测试报告，并将其保存在环境变量指定的路径中 `REPORTS_PATH`. JUnit XML格式是一种广泛用于报告测试结果的格式。 如果Docker图像使用Java和Maven，则标准测试模块如 [Maven Surefire插件](https://maven.apache.org/surefire/maven-surefire-plugin/) 和 [Maven Failsafe插件](https://maven.apache.org/surefire/maven-failsafe-plugin/) 可以开箱即用地生成此类报告。
 
 如果Docker图像是使用其他编程语言或测试运行者实施的，请查看所选工具的文档以了解如何生成JUnit XML报告。
 
