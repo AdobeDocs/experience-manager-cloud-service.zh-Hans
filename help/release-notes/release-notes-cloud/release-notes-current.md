@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 372e40eb90d87d9ed366e08a3c0117068542680b
+source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 35%
+source-wordcount: '1099'
+ht-degree: 44%
 
 ---
 
@@ -96,40 +96,7 @@ ht-degree: 35%
 
 ## Cloud Manager {#cloud-manager}
 
-### 2月发行日期 {#release-date-cm-feb}
-
-AEM Manager在as a Cloud Service中的发布日期为2022.02.0 2022年2月10日。 下一版本计划于2022年3月10日发布。
-
-### 新增功能 {#what-is-new-cm-feb}
-
-* 新加速 [网层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 已引入以专门部署HTTPD/调度程序配置。
-   * 您必须使用AEM版本 `2021.12.6151.20211217T120950Z` 或较新和 [选择启用调度程序工具的灵活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug) 以使用此功能。
-   * 此功能将在2022.02.0版后的两周内分阶段推出。
-* Cloud Manager登陆页面体验已刷新，以提供改进的导航、在网格/图块视图之间轻松切换，以及用于快速获取项目摘要的弹出窗口。
-* 新的失败阈值(`< D`) [可靠性评级量度。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * 存在严重质量问题且影响系统稳定性的客户（主要与无效索引和工作流程相关）在这些问题得到解决之前将无法部署。
-* 的严重性 `BannedPath` [质量规则](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) 已从阻止程序更改为关键。
-* 在配置 [网层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 关联。
-
-### 错误修复 {#bug-fixes-cm-feb}
-
-* 现在，在生成新密码时，旧的Git存储库密码始终无效。
-* 在极少数情况下，通过API更新环境变量不再会妨碍管道执行。
-
-### 3月发行日期 {#release-date-cm-march}
-
-AEM 2022年3月10日as a Cloud Service的Cloud Manager 2022.3.0版的发布日期。 下一版本计划于2022年4月7日发布。
-
-### 新增功能 {#what-is-new-cm-march}
-
-* 使用开发人员角色可以访问AEM环境日志。
-
-### 错误修复 {#bug-fixes-cm-march}
-
-* 手动创建的git存储库的子集具有不正确的名称值，这会阻止生成对象重用功能生效。 这些存储库的名称已更改，用户将在Cloud Manager API/UI中看到更正的名称。
-* 非生产管道的人造物在生产全堆流水线上被不当地重复使用。
-* 添加或编辑代码质量管道时，不再显示用于处理量度失败的选项。
-* 在生成步骤中，可能会导致一些意外的管道变量配置。
+您可以找到Cloud Manager月度版本的完整列表 [此处](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## 内容传输工具 {#ctt-release}
 
