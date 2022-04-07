@@ -1,18 +1,18 @@
 ---
 title: AEM Headless开发人员历程
-description: AEM Headless CMS 文档。从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
+description: 从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 此历程为您提供开发首个无头应用程序所需的所有信息。
 landing-page-description: 从这里开始，引导您了解 AEM 的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 11%
+source-wordcount: '1277'
+ht-degree: 8%
 
 ---
 
 # AEM Headless开发人员历程 {#aem-headless-developer-journey}
 
-从此处开始，您可以引导您逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有AEM无头文档。
+从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 了解强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有信息。
 
 ## 简介 {#introduction}
 
