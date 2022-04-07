@@ -3,9 +3,9 @@ title: 配置非生产管道
 description: 了解如何在部署到生产环境之前配置非生产管道以测试代码质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 0%
    >查看文档 [添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 了解如何在Cloud Manager中添加和管理存储库。
 
    * **Git分支**  — 此选项定义所选管道中的分支应从中检索代码。
+      * 输入分支名称的前几个字符，此字段的自动完成功能将找到匹配的分支以帮助您选择。
    * **代码位置**  — 此选项定义选定存储库的分支中的路径，管道应从中检索代码。
 
    ![前端管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -102,7 +103,8 @@ ht-degree: 0%
    >查看文档 [添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 了解如何在Cloud Manager中添加和管理存储库。
 
    * **Git分支**  — 此选项定义所选管道中的分支应从中检索代码。
-   * **忽略网层配置** -
+      * 输入分支名称的前几个字符，此字段的自动完成功能将找到匹配的分支以帮助您选择。
+   * **忽略网层配置**  — 选中此选项后，管道将不会部署您的Web层配置。
 
    ![全栈管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

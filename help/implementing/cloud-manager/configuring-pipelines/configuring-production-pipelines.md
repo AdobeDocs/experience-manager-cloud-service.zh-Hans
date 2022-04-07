@@ -3,9 +3,9 @@ title: 配置生产管道
 description: 了解如何配置生产管道以构建代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ ht-degree: 0%
    >查看文档 [添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 了解如何在Cloud Manager中添加和管理存储库。
 
    * **Git分支**  — 此选项定义所选管道中的分支应从中检索代码。
+      * 输入分支名称的前几个字符，此字段的自动完成功能将找到匹配的分支以帮助您选择。
    * **代码位置**  — 此选项定义选定存储库的分支中的路径，管道应从中检索代码。
    * **部署到生产之前暂停**  — 此选项在部署到生产之前会暂停管道。
 
@@ -104,6 +105,7 @@ ht-degree: 0%
    >查看文档 [添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 了解如何在Cloud Manager中添加和管理存储库。
 
    * **Git分支**  — 此选项定义所选管道中的分支应从中检索代码。
+      * 输入分支名称的前几个字符，此字段的自动完成功能将找到匹配的分支以帮助您选择。
    * **代码位置**  — 此选项定义选定存储库的分支中的路径，管道应从中检索代码。
    * **部署到生产之前暂停**  — 此选项在部署到生产之前会暂停管道。
    * **已计划**  — 此选项允许用户启用计划的生产部署。
@@ -150,6 +152,7 @@ Web层配置管道部署HTTPD/Dispatcher配置。 查看文档 [CI/CD管线](/he
    >查看文档 [添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 了解如何在Cloud Manager中添加和管理存储库。
 
    * **Git分支**  — 此选项定义所选管道中的分支应从中检索代码。
+      * 输入分支名称的前几个字符，此字段的自动完成功能将找到匹配的分支以帮助您选择。
    * **代码位置**  — 此选项定义选定存储库的分支中的路径，管道应从中检索代码。
       * 对于Web层配置管道，这通常是包含 `conf.d`, `conf.dispatcher.d`和 `opt-in` 目录。
       * 例如，如果项目结构是从 [AEM项目原型、](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 路就是 `/dispatcher/src`.
