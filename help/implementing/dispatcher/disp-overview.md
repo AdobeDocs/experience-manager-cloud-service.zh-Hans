@@ -3,10 +3,10 @@ title: 云中的 Dispatcher
 description: '云中的 Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## 简介 {#apache-and-dispatcher-configuration-and-testing}
 
-本页介绍了Dispatcher工具以及如何下载和提取它们、支持的Apache模块，并简要概述了旧版和灵活模式。 此外，还进一步参考了验证和调试以及将Dispatcher配置从AMS迁移到AEMas a Cloud Service
+本页介绍了Dispatcher工具以及如何下载和提取它们、支持的Apache模块，并简要概述了旧版和灵活模式。 此外，还进一步参考了验证和调试以及将Dispatcher配置从AMS迁移到AEMas a Cloud Service。 另请参阅 [此视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) 有关在云服务环境中部署dispatcher文件的其他详细信息。
 
 ## Dispatcher工具 {#dispatcher-sdk}
 
