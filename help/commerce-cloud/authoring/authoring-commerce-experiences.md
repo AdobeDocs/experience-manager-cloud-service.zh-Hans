@@ -2,9 +2,9 @@
 title: 创作商务体验
 description: 工作商务体验
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ CIF产品目录页面是即时呈现的虚拟页面。 因此，无法嵌入超�
 
 结果按类型分组。
 
-    >[!NOTE]
-    >
-    > Omnisearch中的全文搜索不支持关联的内容片段。 使用SKU或UID查找关联的内容片段。
+>[!NOTE]
+>
+> Omnisearch中的全文搜索不支持关联的内容片段。 使用SKU或UID查找关联的内容片段。
