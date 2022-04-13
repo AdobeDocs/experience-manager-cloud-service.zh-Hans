@@ -1,13 +1,13 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版的发行说明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版的发行说明。'
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
-workflow-type: tm+mt
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+workflow-type: ht
 source-wordcount: '1085'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
@@ -88,7 +88,7 @@ ht-degree: 97%
 * 产品推荐组件支持其他页面类型（主页、购物车、订单确认）
 * **愿望清单**
    * 登录的访客可以将产品添加到愿望清单
-   * 可通过myAccount管理愿望清单及其产品
+   * 通过 myAccount 可以管理愿望清单及其产品
    * 可以通过策略（例如产品预告片、产品详细信息）在组件级别启用/禁用“添加到愿望清单”按钮
    * 作为核心组件提供，位于 AEM Venia Storefront 中
 
