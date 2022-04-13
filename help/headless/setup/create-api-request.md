@@ -3,9 +3,9 @@ title: 创建 API 请求 - Headless 设置
 description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,11 +50,11 @@ GraphiQL 是可以安装在 AEM 环境中的 IDE。按照[使用 GraphiQL IDE](/
 1. 登录 AEM as a Cloud Service 并访问 GraphiQL 接口：
    * 例如：`https://<host>:<port>/aem/graphiql.html`。
 
-1. GraphiQL IDE 是用于 GraphQL 的浏览器中查询编辑器。您可以使用它来构建查询以检索内容片段，以JSON形式无头地交付它们。
-   * 右上方的下拉菜单允许您选择端点。
-   * 最左侧的面板会列出保留的查询（如果可用）
-   * 利用中左侧的面板，可构建查询。
-   * 右中间面板会显示结果。
+1. GraphiQL IDE 是用于 GraphQL 的浏览器中查询编辑器。您可以使用它来生成查询，以检索内容片段，并将通过 JSON 格式无头交付。
+   * 右上角的下拉列表允许您选择端点。
+   * 最左边的面板列出了持久查询（如果可用）
+   * 左中面板允许您生成查询。
+   * 右中面板显示结果。
    * 查询编辑器具备代码完成和热键功能，可以轻松地执行查询。
 
    ![GraphiQL 编辑器](../assets/graphiql.png)
