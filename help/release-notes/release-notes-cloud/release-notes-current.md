@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 44%
+ht-degree: 98%
 
 ---
 
@@ -21,16 +21,15 @@ ht-degree: 44%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.3.0)是2022年3月31日。
-以下版本(2022.4.0)发布于2022年4月28日。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本 (2022.3.0) 的发布日期为 2022 年 3 月 31 日。下一个版本 (2022.4.0) 将于 2022 年 4 月 28 日发布。
 
 ## 发布视频 {#release-video}
 
-请查看 [2022年3月版概述](https://video.tv.adobe.com/v/341465) 视频，了解2022.3.0版本中添加的功能摘要。
+请查看 [2022 年 3 月发布概述](https://video.tv.adobe.com/v/341465)视频，了解 2022.3.0 版本中新增功能摘要。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -40,7 +39,7 @@ ht-degree: 44%
 
 * 您现在可以使用 [!DNL Experience Manager Assets] 用户界面执行以下操作：
 
-   * 配置 [检测重复资产](/help/assets/manage-digital-assets.md#detect-duplicate-assets) 中。
+   * 在存储库中配置[重复资产检测](/help/assets/manage-digital-assets.md#detect-duplicate-assets)。
 
    * 配置 [添加数字水印](/help/assets/watermark-assets.md) 到图像。
 
@@ -50,49 +49,49 @@ ht-degree: 44%
 
 ### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
 
-* 您可以 [排序标记](/help/assets/organize-assets.md#use-tags-to-organize-assets) 创建智能标记时，以及使用“标记”谓词应用搜索过滤器时，覆盖分类。
+* 在创建智能标记以及使用标记谓词应用搜索过滤器时，您可以对标记进行 [排序](/help/assets/organize-assets.md#use-tags-to-organize-assets)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [文档生成API](/help/forms/aem-forms-cloud-service-communications.md) 帮助合并、重新排列和验证PDF文档。 该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL Communications - Document Generation APIs]**：[文档生成 API ](/help/forms/aem-forms-cloud-service-communications.md)帮助合并、重新排列和验证 PDF 文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
-   * 组合PDF文档。
-   * 反汇编PDF文档。
-   * 转换为并验证符合PDF/A的文档。
+   * 汇编 PDF 文档。
+   * 拆分 PDF 文档。
+   * 转化为符合 PDF/A 标准的文档并进行验证。
 
-* **自动将大于15页的PDF forms转换为自适应表单**:现在，您可以使用automated forms conversion服务将最多40页的PDF forms转换为自适应表单。 该服务现在提供了将大于15页的表单部分转换为自适应表单片段的选项。 它有助于提高已转换表单的渲染速度，并且更便于在自适应表单编辑器中加载大型表单。
+* **自动将超过 15 页的 PDF Forms 转化为自适应表单**：您现在可以使用自动表单转化服务将最多 40 页的 PDF Forms 转化为自适应表单。该服务现在提供了将超过 15 页的表单部分转换为自适应表单片段的选项。它有助于提高转换表单的渲染速度，并使在自适应表单编辑器中加载大型表单变得更容易。
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
-* **使用自定义XCI生成记录文档**:您现在可以使用自定义XCI文件来设置记录文档的各种属性。 它会通过自定义更改覆盖主控XCI。
+* **使用自定义 XCI 生成记录文档**：您现在可以使用自定义 XCI 文件设置记录文档的各种属性。它用自定义更改覆盖主 XCI。
 
-* **在自适应表单中使用不可见的CAPTCHA**:只有在可疑活动时，才可使用不可见的验证码显示验证码挑战。 如果未发现可疑活动，则不显示验证码质询。
+* **以自适应表单使用不可见 CAPTCHA**：只有在可疑活动的情况下，您才可以使用不可见 CAPTCHA 显示 CAPTCHA 挑战。如果未发现可疑活动，则不会显示 CAPTCHA 挑战。
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 测试版：AEM CIF搜索核心组件支持商务LiveSearch
-* 改进了多存储方案的SEO:现在，可以通过CIF云配置属性在存储级别配置PDP/PLP的URL格式
-* 产品选取器通过UI中的新筛选器选项支持暂存产品。  这样，内容从业者就可以为即将推出的产品准备产品内容管理
-* 使用CIF云配置名称（而不是配置代理URL）简化CIF配置管理和错误处理
-* 产品列表和轮播组件的手动类别选择。 这允许内容从业者在目录体验之外的内容页面上使用这些组件
+* Beta：AEM CIF 搜索核心组件支持 Commerce Live Search
+* 改进了多商店场景的 SEO：PDP/PLP 的 URL 格式现在可以通过 CIF 云配置属性在商店级别进行配置
+* 产品挑选器通过 UI 中新的过滤器选项支持阶段性产品。这使内容从业者能够为即将发布的产品准备产品内容管理
+* 通过使用 CIF 云配置名称而非配置代理 URL，简化了 CIF 配置管理和错误处理
+* 产品列表和轮盘组件的手动类别选择。这允许内容从业者在目录体验之外的内容页面上使用这些组件
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础 {#foundation}
+## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 为了更高效、更高效地对云环境中的自定义功能进行故障诊断，我们发布了一款新的开发人员工具 —  [存储库浏览器](/help/implementing/developing/tools/repository-browser.md). 它是一个轻量级、只读的HTML浏览器，您可以从开发人员控制台中启动。 在发布者、作者和预览层以及所有环境（包括生产、暂存和开发环境）中，查看内容存储库。 浏览内容结构、查看属性以及预览和下载二进制文件。
+* 为了对云环境中的自定义功能进行更高效的故障排除，我们发布了一个新的开发工具——[存储库浏览器](/help/implementing/developing/tools/repository-browser.md)。它是一个轻量级的只读 HTML 浏览器，可以从开发人员控制台启动。在发布者、作者和预览层以及所有环境（包括生产、暂存和开发）中查看内容存储库。浏览内容结构，查看属性，预览和下载二进制文件。
 
-   ![reprobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* 现在，可以从开发人员控制台以自助方式在过期之前刷新用于验证服务器到服务器API调用的凭据（例如，用于GraphQL API请求）。 请参阅 [文档](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 以了解更多信息。
+* 用于验证服务器到服务器的 API 调用（例如，用于 GraphQL API 请求）的凭证现在可以在过期前以自助方式从开发人员控制台刷新。如需更多信息，请参阅 [此](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 文档。
 
-* 将为新环境启用版本清除和审核日志清除维护任务（以前未启用）。 请参阅 [维护任务](/help/operations/maintenance.md) 文章。
+* 以前未启用的版本清除和审核日志清除维护任务，将为新环境启用。请参阅[维护任务](/help/operations/maintenance.md)文章中的相关值。
 
-* AEMas a Cloud ServiceSDK Dispatcher工具现在支持带有M1芯片的Mac计算机
+* AEM as a Cloud Service SDK Dispatcher 工具现在支持带有 M1 芯片的 Mac 电脑
 
 ## Cloud Manager {#cloud-manager}
 
@@ -102,11 +101,11 @@ ht-degree: 44%
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具v1.9.0的发布日期是2022年2月28日。
+内容传输工具版本 1.9.0 的发布日期为 2022 年 2 月 28 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查大小护栏 — 内容传输工具检查大小功能有助于减少失败的内容传输。  使用“检查大小”功能，用户可以1)确定他们在 `crx-quickstart` 提取前的子目录，以及2)估计迁移集大小并验证它是否受支持。 如果违反了这两项检查之一或两项，用户将在CTT UI中看到警告。 利用此护栏，您可以避免内容传输失败，并主动与Adobe客户关怀团队讨论迁移选项。 请参阅 [确定迁移集大小和磁盘空间](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) 以了解更多详细信息。
+* 检查“大小护栏” - 内容传输工具检查大小功能有助于减少失败的内容传输。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容传输失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size)。
 
 ## Best Practices Analyzer {#bpa-release}
 

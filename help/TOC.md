@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 437be8c82a4dee6c9e56af09afa7e9048c8cb3c0
 workflow-type: tm+mt
 source-wordcount: '3419'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -265,9 +265,9 @@ ht-degree: 98%
    + 与 AEM as a Cloud Service 集成 {#integrations}
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [与Adobe Analytics集成时使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [与 Adobe Analytics 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [与Adobe Target集成时使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + 资源 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -310,7 +310,7 @@ ht-degree: 98%
       + [开发人员文档和 API 参考](/help/assets/developer-reference-material-apis.md)
       + [文件夹元数据架构](/help/assets/folder-metadata-schema.md)
       + [使用图像和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
-      + [为音频和视频资产配置转录](/help/assets/configure-transcription.md)
+      + [为音频和视频资源配置转录](/help/assets/configure-transcription.md)
       + [多语言资源和翻译](/help/assets/translate-assets.md)
       + [搜索 Facet](/help/assets/search-facets.md)
       + [资源 HTTP API](/help/assets/mac-api-assets.md)
@@ -388,11 +388,11 @@ ht-degree: 98%
       + [Flash 查看器生命周期终止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + 与 Adobe Workfront 集成 {#integrations}
-      + [Workfront for Experience Manager增强连接器发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Experience Manager 增强型连接器 Workfront 发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] ](/help/assets/workfront-connector-install.md)
       + [移除现有安装的外部依赖](/help/assets/remove-external-dependencies.md)
-      + [为 [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
+      + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [简介](/help/forms/home.md)
@@ -681,11 +681,11 @@ ht-degree: 98%
       + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
-      + SSL证书 {#manage-ssl-certificates}
+      + SSL 证书{#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 自定义域名 {#custom-domain-names}
+      + 自定义域名{#custom-domain-names}
          + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -693,10 +693,10 @@ ht-degree: 98%
          + [配置 DNS 设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + IP允许列表 {#ip-allow-lists}
+      + IP 允许列表{#ip-allow-lists}
          + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + 部署 AEM as a Cloud Service {#developing}
