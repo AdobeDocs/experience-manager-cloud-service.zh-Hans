@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 98%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager月度版本的完整列表 [此处](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+您可以在[此处](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 内容传输工具 {#ctt-release}
 
@@ -105,7 +105,7 @@ ht-degree: 98%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查“大小护栏” - 内容传输工具检查大小功能有助于减少失败的内容传输。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容传输失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size)。
+* 检查“大小护栏” - 内容传输工具检查大小功能有助于减少失败的内容传输。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容传输失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
 
 ## Best Practices Analyzer {#bpa-release}
 
