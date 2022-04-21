@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 从生产环境进行初始迁移后，您必须执行增量增补，以确保在云实例上使内容保持最新。 因此，建议您遵循以下最佳实践：
 
 * 收集有关内容量的数据。 例如：每周、两周或一个月。
-* 请确保规划增补，以避免超过48小时的内容提取和摄取。 建议进行此设置，以便内容增补将适合周末的时间范围。
+* 请确保规划增补，以避免超过48小时的内容提取和摄取。 建议对内容进行增补，以便将其放入周末时间范围。
 * 规划所需的增补数量，并使用这些估计值在上线日期前后进行规划。
 
 ## 确定迁移的代码和内容冻结时间表 {#code-content-freeze}
@@ -113,13 +113,45 @@ ht-degree: 0%
 
 ## 上线核对清单 {#Go-Live-Checklist}
 
-请查看下面介绍的活动列表，以确保您能够顺利、成功地执行迁移：
+请查看此活动列表，以确保顺利成功迁移。
 
-* 计划代码和内容冻结期。 另请参阅 [迁移的代码和内容冻结时间轴](#code-content-freeze).
-* 执行最终内容增补
-* 完成测试迭代
-* 运行性能和安全测试
-* 切换 和在生产实例上执行迁移
+* 通过功能和UI测试运行端到端生产管道，以确保 **始终为最新** AEM产品体验。 请参阅以下资源。
+   * [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
+   * [自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
+* 将内容迁移到生产环境，并确保在暂存环境中提供相关的子集进行测试。
+   * 请注意，AEM的DevOps最佳实践意味着代码会从开发环境向生产环境移动，而 [内容会从生产环境中向下移动。](/help/overview/enterprise-devops.md#code-movement)
+* 计划代码和内容冻结期。
+   * 另请参阅 [迁移的代码和内容冻结时间轴](#code-content-freeze)
+* 执行最终内容增补。
+* 验证调度程序配置。
+   * 使用本地Dispatcher验证器，该验证器可帮助在本地配置、验证和模拟Dispatcher
+      * [设置本地调度程序工具。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * 仔细检查虚拟主机配置。
+      * 最简单（默认）的解决方案是 `ServerAlias *` 的虚拟主机文件中 `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * 这将允许产品功能测试、调度程序缓存失效和克隆使用的主机别名正常工作。
+      * 但是，如果 `ServerAlias *` 不可接受，至少如下所示 `ServerAlias` 除自定义域外，还必须允许以下条目：
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* 配置CDN、SSL和DNS。
+   * 如果您使用自己的CDN，请输入支持票证以配置相应的路由。
+      * 请参阅部分 [客户CDN指向AEM Managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) （详细信息）。
+      * 您需要根据CDN供应商的文档配置SSL和DNS。
+   * 如果您没有使用其他CDN，请根据以下文档管理SSL和DNS:
+      * 管理 SSL 证书
+         * [管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * 管理自定义域名(DNS)
+         * [自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * 请记住验证为DNS记录设置的TTL。
+      * TTL是DNS记录在请求服务器进行更新之前在缓存中停留的时间。
+      * 如果您的TTL很高，则对DNS记录的更新将需要较长的时间才能传播。
+* 运行满足您的业务要求和目标的性能和安全测试。
+* 切换并确保在不进行任何新部署或内容更新的情况下执行实际的上线操作。
 
 如果在执行迁移时需要重新校准任务，您始终可以引用该列表。
 
