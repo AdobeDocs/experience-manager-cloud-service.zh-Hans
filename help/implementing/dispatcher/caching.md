@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b490d581532576bc526f9bd166003df7f2489495
+source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +31,18 @@ Define DISABLE_DEFAULT_CACHING
 例如，当您的业务逻辑需要微调页面标题（其值基于日历日）时，这非常有用，因为默认情况下，页面标题设置为0。 话虽如此， **关闭默认缓存时请务必谨慎。**
 
 * 可以通过定义 `EXPIRATION_TIME` 变量 `global.vars` 使用AEMas a Cloud ServiceSDK Dispatcher工具。
-* 可以由以下apache mod_headers指令在更细粒度级别上覆盖：
+* 可以在更精细的粒度级别上覆盖，包括通过以下apache mod_headers指令独立控制CDN和浏览器缓存：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
    ```
+
+   >[!NOTE]
+   >代理控制标头适用于Adobe管理的CDN。 如果使用 [客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，则可能需要不同的标头，具体取决于您的CDN提供商。
 
    在设置全局缓存控制标头或与宽正则表达式匹配的标头时，请务必谨慎，以便这些标头不会应用于您可能打算保留为私有的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 根据上述说明，如果AEM as a Cloud Service检测到已将缓存标头应用于Dispatcher检测到的不可执行的内容，则它将删除该缓存标头，如Dispatcher文档中所述。 为了强制AEM始终应用缓存标头，您可以添加 **always** 选项：
 
@@ -110,6 +114,73 @@ Define DISABLE_DEFAULT_CACHING
 * 无默认缓存
 * 默认值不能设置为 `EXPIRATION_TIME` 用于html/文本文件类型的变量
 * 可通过指定适当的正则表达式，使用html/text部分中描述的相同LocationMatch策略来设置缓存过期
+
+### 富特优化
+
+* 避免使用 `User-Agent` 作为 `Vary` 标题。 旧版默认Dispatcher设置（在原型版本28之前）包含此内容，我们建议您使用以下步骤删除该设置。
+   * 在 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * 删除或注释掉行： `Header append Vary User-Agent env=!dont-vary` 从所有vhost文件中删除，但default.vhost除外，它为只读
+* 使用 `Surrogate-Control` 用于独立于浏览器缓存控制CDN缓存的标头
+* 考虑应用 [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) 和 [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) 指令，以允许后台刷新并避免缓存缺失，从而让用户快速、新鲜地查看内容。
+   * 有多种方法可以应用这些指令，但需要添加30分钟 `stale-while-revalidate` 对所有缓存控制标头都是一个很好的起点。
+* 下面是各种内容类型的一些示例，在设置您自己的缓存规则时，这些内容可用作指南。 请仔细考虑并测试您的具体设置和要求：
+
+   * 缓存12h的可变客户端库资源，12h后进行后台刷新。
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 通过后台刷新，长期（30天）缓存不可变的客户端库资源，以避免MISS。
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 在浏览器上缓存HTML页面5分钟，后台刷新1小时，在CDN上缓存12小时。 将始终添加Cache-Control标头，因此务必要确保/content/*下匹配的html页面是公共的。 如果没有，请考虑使用更具体的正则表达式。
+
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 将内容服务/Sling模型导出程序json响应缓存5分钟，在浏览器上刷新1小时，在CDN上刷新12小时。
+
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 长期（30天）通过后台刷新缓存核心图像组件中的不可变URL，以避免发生遗漏。
+
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 缓存DAM中可变资源（如图像和视频）24小时，并在12小时后进行后台刷新，以避免发生错误
+
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
 
 ## 调度程序缓存失效 {#disp}
 
