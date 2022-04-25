@@ -2,16 +2,16 @@
 title: 添加页面注释
 description: 使用注释模式在页面上保留注释和草图，就像使用附注来协助内容审阅过程一样
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
+source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 35%
 
 ---
 
 # 添加页面注释 {#adding-page-annotations}
 
-创建数字体验的内容通常需要在发布之前进行讨论和提供反馈。 为了帮助完成此反馈过程，AEM允许您向内容添加注释。
+为您的数字体验创建内容通常需要在发布之前进行讨论和提供反馈。 为了帮助完成此反馈过程，AEM允许您向内容添加注释。
 
 页面上的注释会放置简单的草图或便笺（想想现实世界的便签）。 注释允许您为其他作者和审阅人留下意见或问题。
 
