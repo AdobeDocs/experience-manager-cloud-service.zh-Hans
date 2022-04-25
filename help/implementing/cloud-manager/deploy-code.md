@@ -2,10 +2,10 @@
 title: 部署代码
 description: 了解如何在AEMas a Cloud Service中使用Cloud Manager管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '704'
+ht-degree: 1%
 
 ---
 
@@ -93,6 +93,19 @@ ht-degree: 0%
 此过程会一直持续到部署到达拓扑中的所有发布者和调度程序为止。
 
 ![生产部署阶段](assets/production-deployment.png)
+
+## 超时 {#timeouts}
+
+如果留下等待用户反馈的时间，以下步骤将超时：
+
+| 步骤 | 超时 |
+|--- |--- |
+| 代码质量测试 | 14天 |
+| 安全测试 | 14天 |
+| 性能测试 | 14天 |
+| 申请批准 | 14天 |
+| 计划生产部署 | 14天 |
+| CSE支持 | 14天 |
 
 ## 部署过程 {#deployment-process}
 
