@@ -1,11 +1,11 @@
 ---
 title: AEM Headless开发人员历程
-description: 从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 此历程为您提供开发首个无头应用程序所需的所有信息。
+description: 当使用内容模型、内容片段和GraphQL API等功能来将无头体验作为无头内容管理系统(CMS)提供支持时，可在此处开始as a Cloud Service的引导式历程Adobe Experience Manager(AEM)。 此历程为您提供开发首个无头应用程序所需的所有信息。
 landing-page-description: 从这里开始，引导您了解 AEM 的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1307'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ## 简介 {#introduction}
 
-与全栈解决方案中的传统方式一样，无头实施可用于页面和组件管理，并且重点关注创建不依赖于渠道、可重复使用的内容片段及其跨渠道交付。 它是一种实现数字体验的现代化、动态的开发模式。
+AEM的无头实施使用内容片段模型和内容片段，以专注于创建结构化、渠道中性、可重复使用的内容片段及其跨渠道交付。 要实现此目的，需要像在完整堆栈解决方案中一样，放弃页面和组件管理。 它是一种实现数字体验的现代化、动态的开发模式。
 
 本指南将引导您完成AEM中最无头的实施主题，以便您在完成该工作后：
 
