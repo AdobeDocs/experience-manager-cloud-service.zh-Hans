@@ -2,7 +2,7 @@
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -120,7 +120,7 @@ ht-degree: 0%
    * [自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
 * 将内容迁移到生产环境，并确保在暂存环境中提供相关的子集进行测试。
-   * 请注意，AEM的DevOps最佳实践意味着代码会从开发环境向生产环境移动，而 [内容会从生产环境中向下移动。](/help/overview/enterprise-devops.md#code-movement)
+   * 请注意，AEM的DevOps最佳实践意味着代码从开发环境向生产环境移动，而内容从生产环境向下移动。
 * 计划代码和内容冻结期。
    * 另请参阅 [迁移的代码和内容冻结时间轴](#code-content-freeze)
 * 执行最终内容增补。
