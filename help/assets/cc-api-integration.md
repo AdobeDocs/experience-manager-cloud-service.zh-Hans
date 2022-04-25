@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,31 @@ ht-degree: 0%
 
    ![智能替换对象](/help/assets/assets/content-automation-objectreplace.png)
 
+## 为AEMas a Cloud Service程序启用内容自动化 {#enable-content-automation}
+
+要使用Cloud Manager为AEMas a Cloud Service程序启用“内容自动化”附加组件，请执行以下操作：
+
+1. 请联系您的客户代表以授权使用内容自动化加载项。
+1. 访问Cloud Manager，然后使用组织选择器切换到您的组织。
+1. 单击 **[!UICONTROL 添加程序]** 并指定程序名称。
+1. 单击 **[!UICONTROL 继续]**.
+1. 展开 **[!UICONTROL 资产]** 选择 **[!UICONTROL 内容自动化]**.
+1. 单击&#x200B;**[!UICONTROL 创建]**。
+1. 运行管道以 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
+如果您需要在Cloud Manager中向现有AEMas a Cloud Service程序添加“内容自动化”加载项：
+
+1. 在项目卡上单击…… 。
+
+1. 选择 **[!UICONTROL 编辑程序]** 然后选择 **[!UICONTROL 解决方案和附加组件]** 选项卡。
+
+1. 展开 **[!UICONTROL 资产]** 选择 **[!UICONTROL 内容自动化]**.
+1. 单击 **[!UICONTROL 更新]**.
+1. 运行管道以 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 ## 使用处理配置文件批量编辑您的创意资产 {#process-assets}
 
 要使用处理配置文件自动创建变体，请执行以下步骤：
-
-1. 联系人 [Adobe客户支持](https://experienceleague.adobe.com/#support) 来接收许可证。
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**.
 
