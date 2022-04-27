@@ -4,9 +4,9 @@ description: 了解翻译规则如何识别需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
+source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1297'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,9 @@ ht-degree: 1%
 
 仅当 **为翻译启用内容模型字段** 选项 [翻译集成框架配置级别。](integration-framework.md#assets-configuration-properties)
 
-如果 **为翻译启用内容模型字段** 选项， AEM将使用 **可翻译** 字段 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 以确定字段是否要翻译。 在这种情况下， [翻译规则](rules.md) 被取代。
+如果 **为翻译启用内容模型字段** 选项， AEM将使用 **可翻译** 字段 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 确定字段是否要翻译，并自动创建翻译规则。 此选项将取代您可能已创建的任何翻译规则，并且无需干预或执行其他步骤。
 
-如果您希望使用翻译规则来翻译内容片段，请 **为翻译启用内容模型字段** 必须禁用翻译集成框架配置中的选项。
-
->[!NOTE]
->
->此功能在预发行渠道中提供。
-> 
->请参阅 [预发行渠道文档](/help/release-notes/prerelease.md#enable-prerelease) 以了解有关如何为环境启用该功能的信息。
+如果您希望使用翻译规则来翻译内容片段，请 **为翻译启用内容模型字段** 必须禁用翻译集成框架配置中的选项，您需要按照下面列出的步骤创建规则。
 
 ## 概述 {#overview}
 

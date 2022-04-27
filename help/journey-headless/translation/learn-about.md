@@ -1,10 +1,10 @@
 ---
-title: 了解无标题内容以及如何在AEM中翻译
+title: 了解无标题内容并在AEM中进行翻译
 description: 了解无头概念、它们如何映射到AEM以及AEM翻译理论。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---

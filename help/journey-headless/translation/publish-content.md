@@ -1,15 +1,15 @@
 ---
-title: 发布翻译后的内容(AEM无标题)
+title: 发布翻译后的无标题内容
 description: 了解如何在内容更新时发布翻译内容和更新翻译。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
 
 ---
 
-# 发布翻译后的内容 {#publish-content}
+# 发布翻译后的无标题内容 {#publish-content}
 
 了解如何在内容更新时发布翻译内容和更新翻译。
 

@@ -4,9 +4,9 @@ description: 了解如何配置翻译集成框架以与第三方翻译服务相�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
+source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1522'
 ht-degree: 2%
 
 ---
@@ -39,8 +39,8 @@ ht-degree: 2%
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM云](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [林戈特克](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [智能玲](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 安装连接器包后，可以为连接器创建云配置。 通常，您需要提供凭据以通过翻译服务进行身份验证。 有关为Microsoft Translator连接器添加云配置的信息，请参阅 [与Microsoft Translator集成](connect-ms-translator.md).
@@ -109,13 +109,7 @@ ht-degree: 2%
 | 翻译标记 | 激活此属性可翻译与资产关联的标记。 |
 | 自动执行翻译 | 选择此属性可在创建翻译项目后自动执行翻译作业。 选择此选项时，您没有机会复查或调整翻译作业的范围。 |
 | 禁用仅更新翻译 | 选中此选项后，更新翻译项目将提交所有可翻译的字段进行翻译，而不只是上次翻译后更改的字段。 |
-| 为翻译启用内容模型字段* | 启用此选项将使用 **可翻译** 字段 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 以确定字段是否已翻译。 在这种情况下， [翻译规则](rules.md) 被取代。 |
-
->[!NOTE]
->
->*此功能在预发行渠道中提供。
-> 
->请参阅 [预发行渠道文档](/help/release-notes/prerelease.md#enable-prerelease) 以了解有关如何为环境启用该功能的信息。
+| 为翻译启用内容模型字段 | 启用此选项将使用 **可翻译** 字段 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 以确定字段是否已翻译并自动创建 [翻译规则](rules.md) 因此。 此选项将取代您可能创建的任何翻译规则。 |
 
 ## 配置翻译页面 {#configuring-pages-for-translation}
 

@@ -1,10 +1,10 @@
 ---
-title: 配置翻译连接器(AEM无头)
+title: 为无头内容配置翻译连接器
 description: 了解如何将AEM连接到翻译服务。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -101,9 +101,6 @@ AEM翻译集成框架(TIF)与第三方翻译服务集成，以编排AEM内容的
    1. **自动执行翻译**  — 如果希望将翻译自动发送到翻译服务，请选中此属性。
    1. **禁用仅更新翻译**  — 选中此选项后，更新翻译项目将提交所有可翻译的字段进行翻译，而不只是上次翻译后更改的字段。 更新翻译项目的过程稍后将在历程中进行讨论。
    1. **为翻译启用内容模型字段**  — 选中此选项，以便翻译配置可根据 **可翻译** 标记。
-      * 如果可用，应选中此选项以简化翻译过程。
-      * 此选项仅在AEM as a Cloud Service的预发行渠道中可用。
-      * 请参阅 [“其他资源”部分](#additional-resources) 有关预发行渠道的更多信息。
 
 1. 点击或单击&#x200B;**保存并关闭**。
 
@@ -135,7 +132,7 @@ AEM是一款灵活而强大的工具，通过多个连接器和多个配置支�
 * 了解AEM中翻译集成框架的重要参数。
 * 能够设置您自己与翻译服务的连接。
 
-在此知识的基础上，通过下一步审阅文档，继续您的AEM无头翻译历程 [配置翻译规则、](translation-rules.md) 您将在其中了解如何定义要翻译的内容。
+在此知识的基础上，通过下一步审阅文档，继续您的AEM无头翻译历程 [翻译内容，](translation-rules.md) 您将从中了解如何使用配置来实际翻译内容。
 
 ## 其他资源 {#additional-resources}
 
@@ -143,4 +140,3 @@ AEM是一款灵活而强大的工具，通过多个连接器和多个配置支�
 
 * [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md)  — 查看所选翻译连接器的列表，并了解如何配置翻译集成框架以与第三方翻译服务集成。
 * [连接到Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM提供试用版Microsoft翻译帐户以用于测试。
-* [AEMas a Cloud Service预发行渠道](/help/release-notes/prerelease.md#enable-prerelease)  — 了解如何选择加入AEM as a Cloud Service的预发行渠道，以尝试新增功能和即将推出的功能。

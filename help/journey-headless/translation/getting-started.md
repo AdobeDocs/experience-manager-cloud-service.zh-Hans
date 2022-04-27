@@ -1,10 +1,10 @@
 ---
-title: AEM Headless 翻译快速入门
+title: AEM Headless翻译入门
 description: 了解如何组织无头内容以及AEM翻译工具的工作方式。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: d5a7138cd5e3e9f0febe20b7447589beadc45554
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1409'
 ht-degree: 1%
 
 ---
@@ -88,15 +88,11 @@ AEM内容（无头网页或传统网页）由其结构驱动。 AEM对内容结�
       ![内容片段模型编辑器](assets/content-fragment-model-editor.png)
 1. 点按或单击模型的一个字段。 AEM标记该字段，该字段的详细信息将显示在右列中。
    ![内容片段模型编辑器详细信息](assets/content-fragment-model-editor-detail.png)
+1. 内容架构师将 **可翻译** 字段。
 
 >[!TIP]
 >
 >通常，内容架构师负责确定翻译所需的字段。 为了了解翻译专家，提供了以前的步骤。
-
-如何管理“内容模型”字段的翻译，取决于您是否使用AEMas a Cloud Service的预发行渠道。 请参阅 [“其他资源”部分](#additional-resources) 有关预发行渠道的更多信息。
-
-* **如果您使用的是预发行渠道**，内容架构师会启用 **可翻译** 字段。
-* **如果您没有使用预发行渠道**，内容架构师会为您提供 **属性名称** 字段。 您稍后将在历程中需要此信息。 这些 **属性名称**&#x200B;需要通知AEM您内容的哪些字段必须翻译。
 
 ### 内容片段 {#content-fragments}
 
@@ -170,10 +166,9 @@ AEM内容（无头网页或传统网页）由其结构驱动。 AEM对内容结�
 现在，您已了解内容片段是什么以及内容结构的重要性，接下来我们可以看一看如何翻译此内容。 AEM中的翻译工具非常强大，但在高级别上很容易理解。
 
 * **翻译连接器**  — 连接器是AEM与您使用的翻译服务之间的链接。
-* **翻译规则**  — 规则定义特定路径下应翻译的内容。 仅当您未使用AEM预发行渠道时，才需要使用规则。
 * **翻译项目**  — 翻译项目收集应作为单笔翻译工作处理的内容，并跟踪翻译的进度，与连接器连接以传输待翻译内容并从翻译服务接收回来。
 
-通常，您只为实例设置一次连接器。 如果需要规则，则根据无头项目设置规则。 然后，您使用翻译项目来翻译内容并持续更新其翻译。
+通常，您只为实例设置一次连接器。 然后，您使用翻译项目来翻译内容并持续更新其翻译。
 
 ## 下一步 {#what-is-next}
 
@@ -193,4 +188,3 @@ AEM内容（无头网页或传统网页）由其结构驱动。 AEM对内容结�
 * [识别要翻译的内容](/help/sites-cloud/administering/translation/rules.md)  — 了解翻译规则如何识别需要翻译的内容。
 * [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md)  — 了解如何配置翻译集成框架以与第三方翻译服务相集成。
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)  — 了解如何在AEM中创建和管理机器和人类翻译项目。
-* [AEMas a Cloud Service预发行渠道](/help/release-notes/prerelease.md#enable-prerelease)  — 了解如何选择加入AEM as a Cloud Service的预发行渠道，以尝试新增功能和即将推出的功能。

@@ -2,9 +2,9 @@
 title: AEM无头翻译历程
 description: 从此处开始，使用AEM功能强大的翻译工具引导您翻译无头内容。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1029'
 ht-degree: 3%
 
 ---
@@ -67,9 +67,8 @@ ht-degree: 3%
 | 1 | [了解无标题内容以及如何在AEM中翻译](learn-about.md) | 了解无头概念、它们如何映射到AEM以及AEM翻译理论。 |
 | 2 | [AEM Headless 翻译快速入门](getting-started.md) | 了解如何组织无头内容以及AEM翻译工具的工作方式。 |
 | 3 | [配置翻译连接器](configure-connector.md) | 了解如何将AEM连接到翻译服务。 |
-| 4 | [配置翻译规则](translation-rules.md) | 了解如何定义翻译规则以识别翻译内容。 |
-| 5 | [翻译内容](translate-content.md) | 使用翻译连接器和规则翻译无头内容。 |
-| 6 | [发布翻译的内容](publish-content.md) | 了解如何在更新基础内容时发布翻译内容并更新翻译。 |
+| 4 | [翻译内容](translate-content.md) | 使用翻译连接器和规则翻译无头内容。 |
+| 5 | [发布翻译的内容](publish-content.md) | 了解如何在更新基础内容时发布翻译内容并更新翻译。 |
 
 ## 下一步 {#what-is-next}
 
