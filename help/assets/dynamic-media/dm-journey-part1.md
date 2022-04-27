@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media历程
+title: Dynamic Media历程，第一部分
 description: 'Dynamic Media历程涵盖Dynamic Media的基础知识、工作方式、可为您做什么、以及它为您的工作和客户带来什么价值。 '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,8 @@ Dynamic Media整合了Adobe Experience Manager Assets数字资产管理解决方
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![AdobeDynamic Media以不同的大小和格式将相同的主图像提供给不同的媒体。](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![AdobeDynamic Media以不同的大小和格式将相同的主图像提供给不同的媒体。](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *AdobeDynamic Media可确保向任何屏幕提供一致的高质量体验，而无论其大小或带宽如何。*
 
 正如您所阅读的，您将进一步了解为什么“一个主资产文件，无限可能”的概念很重要。
@@ -104,7 +105,7 @@ Dynamic Media已经非常出色地优化了资产，并通过CDN确保每个资�
 
 总体而言，使用智能成像，您可以根据现有图像预设设置和特定最终用户特征，获得22%到47%的性能提升。 同时保持像从未接触过一样的图像质量。
 
-![智能成像](/help/assets/assets-dm/dm-smart-imaging.png)
+![智能成像](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *智能成像可根据客户的浏览器功能和网络速度自动优化图像的格式和文件大小。*
 
 默认情况下，智能成像未打开，因为它需要您与AdobeDynamic Media技术支持人员进行协作。 此外，启用智能成像需要完全清除CDN缓存，然后重新填充该缓存。 如果您有兴趣使用智能成像，则可以与Adobe合作，通过提交技术支持票证来启用它。 然后，技术支持会为您提供一个URL参数，以便您提前尝试进行智能成像。 您可以在任何网页或图像上尝试使用该功能，以便查看您获得的性能以及节省的成本。 然后，您可以为整个网站打开智能成像。
@@ -117,7 +118,7 @@ Dynamic Media已经非常出色地优化了资产，并通过CDN确保每个资�
 
 为了解决此问题，Dynamic Media允许您创建 *自适应视频集*.
 
-![自适应视频集](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![自适应视频集](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *自适应视频集按不同的比特率和格式对同一视频的版本进行编码。*
 
 首先从您上传到系统的原始主视频开始。 Dynamic Media会自动调整大小，或 *转码*，将该视频放入多个视频中。 然后，在交付时，它会智能地确定要使用的视频屏幕、质量和格式，并将其交付到手机、平板电脑或台式计算机。
