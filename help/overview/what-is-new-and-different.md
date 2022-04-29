@@ -2,10 +2,10 @@
 title: 不同功能与新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 96%
 
 ---
 
@@ -171,7 +171,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 此流程通常称为云优先的开发。由于端到端持续时间预计需要很多分钟（根据应用程序的复杂性，可能需要 20 到 50 分钟），在云中尝试挂起的代码和配置更改之前，务必要采用快速开发方法。
 
-管理 OSGI 包及其关联配置的 Web 控制台以前属于 AEM QuickStart，现不再可供 AEM as a Cloud Service 环境中的用户直接访问。使用新的开发人员控制台仍然能够以只读模式访问此界面。在此控制台中，开发人员可以选择并直接登录创作或发布服务的特定节点，然后访问默认情况下阻止的区域。
+在Web控制台中，管理OSGi包及其关联配置(以前是AEM快速入门的一部分)不再在AEMas a Cloud Service中可用。 新的开发人员控制台为大多数运行时信息提供了一个只读界面。 通过此控制台，开发人员可以选择并直接登录创作或发布服务的任何特定节点，并查看相关信息。
 
 >[!NOTE]
 >
