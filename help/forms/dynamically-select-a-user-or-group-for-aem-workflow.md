@@ -1,16 +1,12 @@
 ---
 title: 为以AEM Forms为中心的工作流步骤动态选择用户或组
-seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: '了解如何为 [!DNL AEM Forms] 工作流。 '
-seo-description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime.
-uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
-discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 1%
+source-wordcount: '901'
+ht-degree: 0%
 
 ---
 
@@ -116,9 +112,9 @@ function getAdobeSignRecipients() {
 
 ## 使用Java界面动态选择用户或组 {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-您可以使用 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) 用于动态选择用户或组的Java界面 [!DNL Adobe Sign] 和分配任务步骤。 您可以创建使用 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面并将其部署到 [!DNL AEM Forms] 服务器。 该选项可供在“分配任务”和 [!DNL Adobe Sign] AEM工作流的组件。
+您可以使用 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) 用于动态选择用户或组的Java界面 [!DNL Adobe Sign] 和分配任务步骤。 您可以创建使用 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面并将其部署到 [!DNL AEM Forms] 服务器。 该选项可供在“分配任务”和 [!DNL Adobe Sign] AEM工作流的组件。
 
-您需要 [[!DNL AEM Forms] 客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 罐子 [花岗岩](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 文件来编译下面列出的代码示例。 将这些jar文件作为外部依赖项添加到OSGi包项目中。 可以使用任何Java IDE创建OSGi包。 以下过程提供了使用Eclipse创建OSGi包的步骤：
+您需要 [[!DNL AEM Forms] 客户端SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 罐子 [花岗岩](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 文件来编译下面列出的代码示例。 将这些jar文件作为外部依赖项添加到OSGi包项目中。 可以使用任何Java IDE创建OSGi包。 以下过程提供了使用Eclipse创建OSGi包的步骤：
 
 1. 打开Eclipse IDE。 导航到 **[!UICONTROL 文件]**> **[!UICONTROL 新建项目]**.
 1. 在选择向导屏幕上，选择 **[!UICONTROL Maven项目]**，然后单击 **[!UICONTROL 下一个]**.
@@ -141,7 +137,7 @@ function getAdobeSignRecipients() {
            <repository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </repository>
        </repositories>
@@ -149,7 +145,7 @@ function getAdobeSignRecipients() {
            <pluginRepository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </pluginRepository>
        </pluginRepositories>
@@ -225,7 +221,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 添加使用 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面，用于动态选择“分配”任务步骤的用户或组。 有关示例代码，请参阅 [使用Java界面动态选择用户或组的示例](#-sample-scripts-for).
+1. 添加使用 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面，用于动态选择“分配”任务步骤的用户或组。 有关示例代码，请参阅 [使用Java界面动态选择用户或组的示例](#-sample-scripts-for).
 1. 打开命令提示符，然后导航到包含OSGi包项目的目录。 使用以下命令创建OSGi包：
 
    `mvn clean install`
@@ -349,4 +345,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-
