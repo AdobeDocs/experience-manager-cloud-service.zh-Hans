@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,7 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 
 * [/apps 和 /libs 在运行时不可更改](#apps-libs-immutable)
 
-* [OSGi 包和设置必须基于存储库](#osgi)
+* [OSGi包和配置必须视为代码](#osgi)
 
 * [不允许更改发布存储库](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 
 * `/libs` 中不允许进行任何更改。
    * 这不是新规则，只是在先前的 AEM On-Premise 版本中未强制执行。
-* 对于 `/libs` 中允许覆盖的区域，`/apps` 中仍允许覆盖。
+* 覆盖中的区域 `/libs` 允许覆盖的 `/apps`.
    * 必须通过 CI/CD 管道从 Git 实现此类覆盖。
 * 无法通过 UI 编辑存储在 `/apps` 中的静态模板设计信息。
    * 建议您改用可编辑的模板。
@@ -62,12 +62,14 @@ AEM 云服务为管理 AEM 项目提供了许多新功能和可能性。但是�
 * 必须通过 CI/CD 管道从 Git 安装 MSM Blueprint 和自定义 MSM 转出配置。
 * 必须通过 CI/CD 管道从 Git 更改 I18n 翻译。
 
-## OSGi 包和设置必须基于存储库 {#osgi}
+## OSGi包和配置必须视为代码 {#osgi}
 
-在 AEM 的早期版本中用于更改 OSGi 设置的 Web 控制台在 AEM 云服务中不可用。因此，必须通过 CI/CD 管道引入对 OSGi 的更改。
+必须通过CI/CD管道对OSGi包和配置进行更改。
 
-* 与基于 JCR 的 OSGi 设置一样，对 OSGi 设置的更改只能通过 Git 持久性来实现。
-* 在 CI/CD 管道构建的过程中，必须通过 Git 引入新的或更新的 OSGi 包。
+* 必须通过Git通过CI/CD管道引入新的或更新的OSGi包。
+* 只能通过CI/CD管道从Git更改OSGi配置。
+
+在AEM早期版本中用于更改OSGi包和配置的Web控制台在AEM Cloud Service中不可用。
 
 ## 不允许更改发布存储库 {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ AEM 云服务中不能使用其他运行模式或自定义运行模式。
 
 ## 资产处理和交付 {#asset-handling}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 中已优化资产上传、处理和下载。[!DNL Assets] 现在更高效，支持更多扩展，并可让您以更快的速度上传和下载。此外，它会影响现有的自定义代码和一些操作。有关更改列表以及与 [!DNL Experience Manager] 6.5 功能的等同性，请参阅[更改 [!DNL Assets]](/help/assets/assets-cloud-changes.md)。
+资产上传、处理和下载在 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] 现在更高效，支持更多扩展，并可让您以更快的速度上传和下载。此外，它会影响现有的自定义代码和一些操作。有关更改列表以及与 [!DNL Experience Manager] 6.5 功能的等同性，请参阅[更改 [!DNL Assets]](/help/assets/assets-cloud-changes.md)。
