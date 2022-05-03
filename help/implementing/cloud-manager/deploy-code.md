@@ -2,9 +2,9 @@
 title: 部署代码
 description: 了解如何在AEMas a Cloud Service中使用Cloud Manager管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,18 @@ ht-degree: 1%
 
 # 部署代码 {#deploy-your-code}
 
-了解如何在AEMas a Cloud Service中使用Cloud Manager管道部署代码。
+了解如何在AEMas a Cloud Service中使用Cloud Manager管道将代码部署到生产环境。
+
+![生产管道图](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+可通过生产管道将代码无缝部署到暂存环境，然后再部署到生产环境。 生产管道执行分为两个逻辑阶段。
+
+1. 部署到暂存环境
+   * 该代码已构建并部署到暂存环境，用于自动进行功能测试、UI测试、体验审核和用户接受测试(UAT)。
+1. 部署到生产环境
+   * 在暂存环境上验证内部版本并批准将其升级到生产环境后，会将相同的内部版本对象部署到生产环境。
+
+_只有“完整堆栈代码”管道类型支持代码扫描、功能测试、UI测试和体验审核。_
 
 ## 在AEMas a Cloud Service中使用Cloud Manager部署代码 {#deploying-code-with-cloud-manager}
 
