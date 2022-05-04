@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 1%
+source-wordcount: '2899'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +67,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **特殊FPO呈现**:从 [!DNL Experience Manager] into [!DNL Adobe InDesign] 文档，创意专业人士会在文档之后等待一段长时间 [放置资产](https://helpx.adobe.com/indesign/using/placing-graphics.html). 同时，阻止用户使用 [!DNL InDesign]. 这会中断创作流程，并对用户体验造成负面影响。 Adobe允许在 [!DNL InDesign] 以开头的文档，稍后可以按需使用全分辨率资产替换。 [!DNL Experience Manager] 提供仅用于放置(FPO)的演绎版。 这些FPO呈现文件大小较小，但纵横比相同。
 
-处理配置文件可以包含FPO（仅用于放置）演绎版。 请参阅 [!DNL Adobe Asset Link] [文档](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 以了解是否需要为处理用户档案打开该设置。 有关更多信息，请参阅 [Adobe资产链接完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html).
+处理配置文件可以包含FPO（仅用于放置）演绎版。 请参阅 [!DNL Adobe Asset Link] [文档](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 以了解是否需要为处理用户档案打开该设置。 有关更多信息，请参阅 [Adobe资产链接完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html).
 
 ### 创建标准用户档案 {#create-standard-profile}
 
@@ -160,20 +160,20 @@ asset compute服务集成允许Experience Manager使用 [!UICONTROL 服务参数
 使用以下方法之一将处理配置文件应用到文件夹：
 
 * 管理员可以在 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**，使用 **[!UICONTROL 将配置文件应用到文件夹]** 操作。 此时将打开一个内容浏览器，通过该浏览器可导航到特定文件夹，选择它们并确认配置文件的应用程序。
-* 用户可以在Assets用户界面中选择文件夹，使用 **[!UICONTROL 属性]** 操作以打开文件夹属性屏幕，单击 **[!UICONTROL 资产处理]** ，在 [!UICONTROL 处理配置文件] 列表，为该文件夹选择相应的处理配置文件。 要保存更改，请单击 **[!UICONTROL 保存并关闭]**.
+* 用户可以在Assets用户界面中选择文件夹，使用 **[!UICONTROL 属性]** 操作以打开文件夹属性屏幕，单击 **[!UICONTROL 资产处理]** ，在 [!UICONTROL 处理配置文件] 列表，为该文件夹选择相应的处理配置文件。 要保存更改，请单击&#x200B;**[!UICONTROL “保存并关闭”]**。
    ![从资产属性选项卡中将处理配置文件应用到文件夹](assets/folder-properties-processing-profile.png)
 
 * 用户可以在Assets用户界面中选择文件夹或特定资产以应用处理配置文件，然后选择 ![资产重新处理图标](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新处理资产]** 选项。
 
 >[!TIP]
 >
->一个文件夹只能应用一个处理配置文件。 要生成更多演绎版，请向现有处理配置文件中添加更多演绎版定义。
+>一个文件夹只能应用一个处理配置文件。要生成更多演绎版，请向现有处理配置文件中添加更多演绎版定义。
 
-在将处理配置文件应用到文件夹后，系统会使用配置的附加处理配置文件处理该文件夹或其任何子文件夹中上传（或更新）的所有新资产。 此处理过程除了标准默认配置文件之外，还包含其他内容。
+在将处理配置文件应用到文件夹后，系统会使用配置的附加处理配置文件处理该文件夹或其任何子文件夹中上传（或更新）的所有新资产。 这种处理是在标准默认配置文件之外进行的。
 
 >[!NOTE]
 >
->应用到文件夹的处理配置文件适用于整个树，但可能会与应用到子文件夹的其他配置文件发生重叠。 将资产上传到文件夹后，Experience Manager会检查容器文件夹的属性以获取处理配置文件。 如果未应用任何文件夹，则会检查层次结构中的父文件夹以应用处理配置文件。
+>应用到文件夹的处理配置文件适用于整个树，但可能会与应用到子文件夹的其他配置文件发生重叠。 将资产上传到文件夹后，Experience Manager会检查容器文件夹的属性以获取处理配置文件。 如果未应用任何配置文件，则会检查层级中的父文件夹以确定要应用的处理配置文件。
 
 要确认已处理资产，请在 [!UICONTROL 演绎版] 视图。 打开资产预览并打开左边栏以访问 **[!UICONTROL 演绎版]** 中。 处理配置文件中的特定演绎版（其特定资产类型与MIME类型包含规则匹配）应当可见且可访问。
 
@@ -185,7 +185,7 @@ asset compute服务集成允许Experience Manager使用 [!UICONTROL 服务参数
 
 对于需要使用处理用户档案无法实现的资产需要进行额外处理的情况，可以向配置添加其他后处理工作流。 后处理允许您使用资产微服务在可配置处理的基础上添加完全自定义的处理。
 
-后处理工作流（如果配置）由自动执行 [!DNL Experience Manager] 微服务处理完成后。 无需手动添加工作流启动器即可触发工作流。 示例包括：
+后处理工作流，或 [自动启动工作流](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)，则自动由执行（如果已配置） [!DNL Experience Manager] 微服务处理完成后。 无需手动添加工作流启动器即可触发工作流。 示例包括：
 
 * 处理资产的自定义工作流步骤。
 * 集成，以从外部系统（例如，产品或流程信息）将元数据或属性添加到资产。
@@ -233,6 +233,32 @@ asset compute服务集成允许Experience Manager使用 [!UICONTROL 服务参数
 * 按表达式划分的后处理工作流(`postProcWorkflowsByExpression`):可以根据不同的正则表达式列出多个工作流模型。 表达式和模型应使用冒号分隔。 正则表达式应直接指向“资产”节点，而不是任何演绎版或文件。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
 要了解如何部署OSGi配置，请参阅 [部署到 [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
+
+#### 禁用后处理工作流执行
+
+如果不需要后处理，请在 __自动启动工作流__ 选项。
+
+##### 创建禁用的自动启动工作流模型
+
+1. 导航到 __工具>工作流>模型__
+1. 选择 __创建>创建模型__ 窗体顶部操作栏
+1. 为新的工作流模型提供标题和名称，例如：
+   * 标题：禁用自动启动工作流
+   * 名称：disable-auto-start-workflow
+1. 选择 __完成__ 创建工作流模型
+1. __选择__ 和 __编辑__ 新创建的工作流模型
+1. 在工作流模型编辑器中，选择 __步骤1__ 从模型定义中删除它
+1. 打开 __侧面板__，然后选择 __步骤__
+1. 拖动 __DAM更新资产工作流已完成__ 进入模型定义
+1. 选择 __页面信息__ 按钮(位于 __侧面板__ 切换)，然后选择 __打开属性__
+1. 在 __基本__ 选项卡，选择 __瞬态工作流__
+1. 选择 __保存并关闭__ 从顶部操作栏
+1. 选择 __同步__ 在顶部操作栏中
+1. 关闭工作流模型编辑器
+
+##### 应用禁用的自动启动工作流模型
+
+按照 [将工作流模型应用到文件夹](#apply-workflow-model-to-folder) 并设置 __禁用自动启动工作流__ 作为 __自动启动工作流__ 对于文件夹，不需要对资产进行后处理。
 
 ## 最佳实践和限制 {#best-practices-limitations-tips}
 
