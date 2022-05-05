@@ -4,9 +4,9 @@ description: 了解内容片段模型如何作为AEM中无头内容的基础，�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0d964a981f7b9004e99768888f78558c57ae398a
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2892'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/
 
    >[!NOTE]
    >
-   >当字段为&#x200B;**必填字段**&#x200B;时，左窗格中显示的&#x200B;**标签**&#x200B;将标有一个星号标记 (*****)。
+   >当字段为 **必需**, **标签** 在左窗格中指示的将标有星号标记(**&#42;**)。
 
 ![属性](assets/cfm-models-03.png)
 
@@ -74,8 +74,10 @@ AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/
       * 键入 **字段标签** 将自动完成 **属性名称**   — 如果为空，则以后可手动更新。
 
          >[!CAUTION]
-         手动更新属性时 **属性名称** 对于数据类型，请注意，名称必须仅包含拉丁字符、数字和下划线“_”作为特殊字符。
-         如果在AEM早期版本中创建的模型包含非法字符，请删除或更新这些字符。
+         >
+         >手动更新属性时 **属性名称** 对于数据类型，请注意，名称必须仅包含拉丁字符、数字和下划线“_”作为特殊字符。
+         >
+         >如果在AEM早期版本中创建的模型包含非法字符，请删除或更新这些字符。
       例如：
 
       ![字段属性](assets/cfm-models-05.png)
@@ -130,7 +132,8 @@ AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/
 在片段编辑器中，每个实例都将显示为一个选项卡。
 
       >[!NOTE]
-      此数据类型仅用于格式设置，因此AEM GraphQL架构会忽略此数据类型。
+      >
+      >此数据类型仅用于格式设置，因此AEM GraphQL架构会忽略此数据类型。
 
 ## 属性 {#properties}
 
@@ -141,7 +144,8 @@ AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/
    手动更新数据类型的此属性时，请注意名称 **必须** contain *仅* 拉丁字符、数字和下划线“_”作为特殊字符。
 
    >[!CAUTION]
-   如果在AEM早期版本中创建的模型包含非法字符，请删除或更新这些字符。
+   >
+   >如果在AEM早期版本中创建的模型包含非法字符，请删除或更新这些字符。
 
 * **渲染为**
 用于在片段中实现/渲染字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许创建多个实例。
@@ -171,20 +175,18 @@ AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/
    例如， **单行文本** 字段 `Country` 内容片段模型中的不能具有值 `Japan` 在两个从属内容片段中。 尝试第二个实例时将发出警告。
 
    >[!NOTE]
-   确保每个语言根的唯一性。
+   >
+   >确保每个语言根的唯一性。
 
    >[!NOTE]
-   变量可以具有相同的 *独特* 值作为同一片段的变量，但与在其他片段的任何变量中使用的值不同。
+   >
+   >变量可以具有相同的 *独特* 值作为同一片段的变量，但与在其他片段的任何变量中使用的值不同。
 
 * 请参阅 **[内容参考](#content-reference)** 有关该特定数据类型及其属性的更多详细信息。
 
 * 请参阅 **[片段引用（嵌套片段）](#fragment-reference-nested-fragments)** 有关该特定数据类型及其属性的更多详细信息。
 
 * **可翻译**
-
-   >[!NOTE]
-   此功能在预发行渠道中提供。
-   请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 以了解有关如何为环境启用该功能的信息。
 
    检查 **可翻译** 内容片段模型编辑器中字段的复选框将：
 
@@ -219,13 +221,19 @@ AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/
    * 允许您包含/检索结构化数据。
 
       >[!NOTE]
-      此方法特别有意与 [通过GraphQL使用内容片段交付无头内容](/help/assets/content-fragments/content-fragments-graphql.md).
+      >
+      >此方法特别有意与 [通过GraphQL使用内容片段交付无头内容](/help/assets/content-fragments/content-fragments-graphql.md).
    * 可以为一个或多个引用（在生成的片段中）配置。
 
 >[!NOTE]
-AEM具有以下重复保护：
-* 内容引用这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
-* GraphQL中的片段引用如果创建一个深层查询，该查询会返回多个彼此引用的内容片段，则该查询在首次出现时将返回空值。
+>
+>AEM具有以下重复保护：
+>
+>* 内容引用
+   >  这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
+>
+>* GraphQL中的片段引用
+   >  如果创建一个深层查询，该查询返回多个相互引用的内容片段，则该查询在第一次出现时将返回空值。
 
 
 ### 内容引用 {#content-reference}
@@ -267,7 +275,8 @@ type CompanyModel {
 ```
 
 >[!NOTE]
-这与 [通过GraphQL使用内容片段交付无头内容](/help/assets/content-fragments/content-fragments-graphql.md).
+>
+>这与 [通过GraphQL使用内容片段交付无头内容](/help/assets/content-fragments/content-fragments-graphql.md).
 
 除了标准属性之外，您还可以定义：
 
@@ -292,8 +301,10 @@ type CompanyModel {
    ![片段引用](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
-已建立复发保护机制。 它禁止用户在片段引用中选择当前内容片段。 这可能导致出现空的片段引用选取器对话框。
-GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用的内容片段之间创建深层查询，则将返回空值。
+>
+>已建立复发保护机制。 它禁止用户在片段引用中选择当前内容片段。 这可能导致出现空的片段引用选取器对话框。
+>
+>GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用的内容片段之间创建深层查询，则将返回空值。
 
 ## 内容片段模型 — 属性 {#content-fragment-model-properties}
 
@@ -351,7 +362,8 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 要实施内容管理，您可以配置 **策略** 在Assets文件夹中，以控制允许在该文件夹中创建片段的内容片段模型。
 
 >[!NOTE]
-该机制类似于 [允许页面模板](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 的高级属性中，用于页面及其子项。
+>
+>该机制类似于 [允许页面模板](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 的高级属性中，用于页面及其子项。
 
 配置 **策略** 表示 **允许的内容片段模型**:
 
@@ -383,7 +395,8 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 ## 删除内容片段模型 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-删除内容片段模型可能会影响相关片段。
+>
+>删除内容片段模型可能会影响相关片段。
 
 要删除内容片段模型，请执行以下操作：
 
@@ -393,7 +406,8 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 1. 选择您的模型，然后 **删除** 中。
 
    >[!NOTE]
-   如果引用了模型，则会发出警告。 采取适当措施。
+   >
+   >如果引用了模型，则会发出警告。 采取适当措施。
 
 ## 发布内容片段模型 {#publishing-a-content-fragment-model}
 
@@ -408,7 +422,8 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
 控制台中将指示已发布状态。
 
    >[!NOTE]
-   如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
+   >
+   >如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
 ## 取消发布内容片段模型 {#unpublishing-a-content-fragment-model}
 
@@ -495,6 +510,7 @@ GraphQL中还对片段引用提供了定期保护。 如果在两个相互引用
       ![编辑 — 锁定的内容片段模型](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
-      顶部可能仍会显示一条警告，但此时模型已由现有内容片段使用。
+      >
+      >顶部可能仍会显示一条警告，但此时模型已由现有内容片段使用。
 
    * **取消** 将返回控制台。

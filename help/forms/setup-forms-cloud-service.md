@@ -2,9 +2,9 @@
 title: '如何设置 [!DNL AEM Forms] as a Cloud Service环境？ '
 description: 了解如何设置和配置 [!DNL AEM Forms] as a Cloud Service环境
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
@@ -39,10 +39,32 @@ ht-degree: 1%
 
 * （仅限沙箱）载入服务后， [创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 和 [运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 生产和非生产管道。 它支持并引入了 [!DNL AEM Forms] as a Cloud Service于您的环境。
 
+您可以使用Formsas a Cloud Service创建自适应表单（数字注册）或生成客户通信。 完成后 [入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 到 [!DNL Adobe Experience Manager] as a Cloud Service的是，执行以下任一操作以启用数字注册或客户通信功能。 您还可以启用以下两项功能：
+
+1. 登录到Cloud Manager并打开AEM Formsas a Cloud Service实例。
+
+1. 打开编辑程序选项，转到解决方案和加载项选项卡，然后选择 **[!UICONTROL Forms — 通信]** 选项。
+
+   ![通信](assets/communications.png)
+
+   如果已启用 **[!UICONTROL Forms — 数字注册]** 选项，然后选择 **[!UICONTROL Forms — 通信附加组件]** 选项。
+
+   ![Addon](assets/add-on.png)
+
+1. 单击 **[!UICONTROL 更新]**.
+
+1. 运行生成管道。 构建管道成功后，将为您的环境启用通信API。
+
+>[!NOTE]
+>
+> 要启用和配置文档操作API，请将以下规则添加到 [调度程序配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+
 ## 配置用户 {#config-users}
 
 完成服务入门后，请登录到 [!DNL AEM Forms] as a Cloud Service环境、打开创作和发布实例，并将用户添加到特定于Forms的 [AEM组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)，基于他们的角色。 下表列出了特定于Forms的AEM组（现成可用）和相应的用户类型。 该表还为每种用户类型提供了AEM实例类型：
-
 
 | 用户类型（角色） | 用户组 | AEM实例 |
 |---|---|---|
@@ -60,7 +82,6 @@ ht-degree: 1%
 [设置本地开发环境](setup-local-development-environment.md). 您可以使用本地开发环境创建自适应表单和相关资产（主题、模板、自定义提交操作、预填充服务等），以及 [将PDF forms转换为自适应Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans) 无需登录到云开发环境。
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
-
 
 | Role| Organization| Description|
 |-----|-------|-----|
@@ -90,10 +111,7 @@ After you onboard the service, configure a [local development environment](setup
 
 Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title ‘You now have administrator rights to manage Adobe software and services for your organization’. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) via IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
-
 ## Next step {#next-steps} -->
-
-
 
 <!-- ## Prerequisites {#prerequisites}
 

@@ -1,22 +1,17 @@
 ---
-title: 与Adobe Analytics集成时使用的IMS配置
+title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与Adobe Analytics集成时使用的IMS配置
-source-git-commit: 7686329de2ef621f69899e07efa9af16e50a35f9
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 3%
+source-wordcount: '893'
+ht-degree: 5%
 
 ---
 
-# 与Adobe Analytics集成时使用的IMS配置 {#ims-configuration-for-integration-with-adobe-analytics}
+# 与 Adobe Analytics 集成时使用的 IMS 配置 {#ims-configuration-for-integration-with-adobe-analytics}
 
 要通过Analytics Standard API将Adobe Experience Manager as a Cloud Service(AEMaCS)与Adobe Analytics集成，需要配置Adobe IMS(Identity Management系统)。 配置可通过Adobe开发人员控制台实现。
-
->[!NOTE]
-> 
->此功能在预发行渠道中提供。
->
->请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 以了解有关如何为环境启用该功能的信息。
 
 >[!NOTE]
 >
@@ -66,7 +61,7 @@ ht-degree: 3%
 
 ## 为Adobe Analytics与AEM集成配置IMS {#configuring-ims-adobe-analytics-integration-with-aem}
 
-使用Adobe开发人员控制台，您需要与Adobe Analytics(供AEM使用)创建项目（集成），然后分配所需的权限。
+使用Adobe Developer控制台，您需要与Adobe Analytics(供AEM使用)创建项目（集成），然后分配所需的权限。
 
 ### 创建项目 {#creating-the-project}
 
@@ -129,7 +124,7 @@ ht-degree: 3%
 
 ## 存储的Adobe开发人员控制台集成项目的详细信息 {#details-stored-for-the-ims-integration-project}
 
-从Adobe开发人员控制台 — 项目中，您可以看到所有集成项目的列表：
+从Adobe Developer控制台 — 项目中，您可以看到所有集成项目的列表：
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 

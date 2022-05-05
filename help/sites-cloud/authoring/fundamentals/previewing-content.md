@@ -2,9 +2,9 @@
 title: 预览内容
 description: 了解如何在上线之前使用AEM预览服务预览内容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,10 @@ AEM提供了“站点”预览服务，允许开发人员和内容作者在网�
 它有助于预览在创作环境中不可见的页面体验，如页面过渡和其他仅发布端内容。
 
 有关预览环境的更多详细信息，请参阅此文档 [管理环境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>将体验片段发布到预览基本上遵循与页面相同的过程，不过是从体验片段控制台或编辑器中发布。
 
 ## 将内容发布到预览 {#publishing-content-to-preview}
 

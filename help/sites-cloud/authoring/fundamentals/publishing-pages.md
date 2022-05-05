@@ -2,10 +2,10 @@
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 82%
+source-wordcount: '1791'
+ht-degree: 81%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 82%
 这称为“发布页面”。当您要从发布环境中删除页面时，此过程称为“取消发布”。在发布和取消发布时，页面会保留在创作环境中以供进一步更改，直到将其删除为止。
 
 您可以立即发布/取消发布页面，或者在某个预定义的未来日期/时间发布/取消发布页面。
+
+>[!NOTE]
+>
+>发布体验片段的过程基本上与发布页面的过程相同，只是从体验片段控制台或编辑器中发布。
 
 ## 术语 {#terminology}
 

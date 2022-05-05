@@ -2,10 +2,10 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 95%
+source-wordcount: '1560'
+ht-degree: 93%
 
 ---
 
@@ -352,6 +352,12 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 >[!NOTE]
 >
 >虽然这可以直接从浏览器获得，[但主要目的是允许其他应用程序（例如，第三方 Web 应用程序、自定义移动实现）仅使用 URL 直接访问体验片段的内容](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)。
+
+## 发布体验片段 {#publishing-experience-fragments}
+
+发布体验片段的方式与 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) （从体验片段控制台或编辑器中进行）。
+
+或者，您也可以 [发布到预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md) （再次从体验片段控制台或编辑器中）。
 
 ## 导出体验片段 {#exporting-experience-fragments}
 

@@ -3,16 +3,22 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+workflow-type: tm+mt
+source-wordcount: '1474'
+ht-degree: 98%
 
 ---
 
 # 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
 
 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
+
+>[!NOTE]
+>
+>该功能的部分功能在预发布渠道中提供。特别是与持久查询相关的功能。
+> 
+>有关如何为您的环境启用该功能的信息，请参阅[预发布渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)。
 
 >[!NOTE]
 >
@@ -40,7 +46,11 @@ ht-degree: 100%
 >
 >根据您的实例，您可以直接访问 [AEM GraphQL API 中包含的 GraphiQL 接口](/help/headless/graphql-api/graphiql-ide.md)，用于提交和测试查询。
 >
->例如：`http://localhost:4502/aem/graphiql.html`
+>您可以通过以下任一方式访问查询编辑器：
+>
+>* **工具** -> **常规** -> **GraphQL查询编辑器**
+>* 直接；例如， `http://localhost:4502/aem/graphiql.html`
+
 
 >[!NOTE]
 >
@@ -1572,11 +1582,11 @@ query {
 
 #### 公司 {#fragment-company}
 
-| 公司名称 | CEO | 员工 |
+| 公司名称 | 首席执行官 | 员工 |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 | Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+| NextStep Inc. | 史蒂夫·乔布斯 | Joe Smith<br>Abe Lincoln |
 
 #### 人员 {#fragment-person}
 
@@ -1609,4 +1619,4 @@ query {
 | 圣弗朗西斯科 | 美国 |  883306 |  city:beach<br>city:na |
 | 圣何塞 | 美国 |  102635 | city:na |
 | 斯图加特 | 德国 | 634830 | city:emea |
-| 苏黎世 | 瑞士 | 415367 |  city:capital<br>city:emea |
+| 苏黎世 | 瑞士 | 415367 |  城市：资本<br>城市：emea |

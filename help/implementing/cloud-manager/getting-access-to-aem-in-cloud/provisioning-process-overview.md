@@ -1,7 +1,7 @@
 ---
 title: 配置过程 — 概述
 description: 配置过程 — 概述
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 8%
@@ -31,7 +31,7 @@ ht-degree: 8%
 * 管理员可以通过Admin Console为其他团队成员添加用户和角色
 * 在Cloud Manager中查看基于角色的权限，以确定权限分配
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
 
 
 欲知更多信息，请访问 [在Experience League上Experience Manageras a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
@@ -49,7 +49,7 @@ ht-degree: 8%
 
 ### 2.将组织载入Adobe Admin Console:
 
-![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](assets/processOverview2.jpg)
 
 * 系统管理员:
    * 配置AEM程序和环境。
@@ -62,7 +62,7 @@ ht-degree: 8%
 
 ### 3.载入用户并管理Admin Console中的访问：
 
-![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](assets/processOverview3.jpg)
 
 根据用户大小和偏好，可使用三种载入用户的方法：
 * 在Admin Console中手动创建用户

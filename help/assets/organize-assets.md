@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -90,12 +90,6 @@ Date24/08/2021
    ![添加标记](assets/add-tags-to-asset.png)
 
 1. 单击 **保存** 以更新资产元数据更改。
-
->[!NOTE]
->
->在创建智能标记时以及使用标记谓词应用搜索过滤器时，可以对标记结构进行排序。
->
->预发行渠道中提供了排序标记功能。 请参阅 [预发行渠道文档](/help/release-notes/prerelease.md#enable-prerelease) 以了解为环境启用该功能的信息。
 
 有关更多信息，请参阅以下文章：
 

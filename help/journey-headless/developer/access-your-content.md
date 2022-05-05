@@ -2,16 +2,22 @@
 title: 如何通过AEM交付API访问您的内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用GraphQL查询访问内容片段内容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 8%
+source-wordcount: '1410'
+ht-degree: 11%
 
 ---
 
 # 如何通过AEM交付API访问您的内容 {#access-your-content}
 
 在 [AEM Headless开发人员历程,](overview.md) 您可以了解如何使用GraphQL查询访问内容片段的内容并将其馈送到您的应用程序（无头交付）。
+
+>[!NOTE]
+>
+>该功能的部分功能在预发布渠道中提供。特别是与持久查询相关的功能。
+> 
+>有关如何为您的环境启用该功能的信息，请参阅[预发布渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 在开始查询内容之前，您需要：
 
 * 启用您的端点
-   * 使用工具 — >资产 — > GraphQL
+   * 使用工具 — >常规 — > GraphQL
    * [启用 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
 
 * 安装GraphiQL（如果需要）
@@ -270,9 +276,10 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ### 在何处测试查询 {#where-to-test-your-queries}
 
-查询可以在GraphiQL界面中输入，例如：
+查询可以在GraphiQL界面中输入。 您可以通过以下任一方式访问查询编辑器：
 
-* `http://localhost:4502/aem/graphiql.html`
+* **工具** -> **常规** -> **GraphQL查询编辑器**
+* 直接；例如， `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL 接口](assets/graphiql-interface.png "GraphiQL 接口")
 

@@ -2,16 +2,22 @@
 title: 创建 API 请求 - Headless 设置
 description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
-workflow-type: ht
-source-wordcount: '670'
-ht-degree: 100%
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 96%
 
 ---
 
 # 创建 API 请求 - Headless 设置 {#accessing-delivering-content-fragments}
 
 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
+
+>[!NOTE]
+>
+>该功能的部分功能在预发布渠道中提供。特别是与持久查询相关的功能。
+> 
+>有关如何为您的环境启用该功能的信息，请参阅[预发布渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)。
 
 ## 什么是 GraphQL 和 Assets REST API？ {#what-are-the-apis}
 
@@ -27,7 +33,7 @@ ht-degree: 100%
 
 必须先创建 GraphQL 端点，然后才能使用 GraphQL API。
 
-1. 导航到&#x200B;**工具**、**资源**，然后选择 **GraphQL**。
+1. 导航到 **工具**, **常规**，然后选择 **GraphQL**.
 1. 选择&#x200B;**创建**。
 1. 此时将打开&#x200B;**创建新 GraphQL 端点**&#x200B;对话框。在其中可以指定：
    * **名称**：端点的名称，您可以输入任意文本。
@@ -48,7 +54,11 @@ ht-degree: 100%
 GraphiQL 是可以安装在 AEM 环境中的 IDE。按照[使用 GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 中的步骤操作来安装 AEM 环境。
 
 1. 登录 AEM as a Cloud Service 并访问 GraphiQL 接口：
-   * 例如：`https://<host>:<port>/aem/graphiql.html`。
+
+   您可以通过以下任一方式访问查询编辑器：
+
+   * **工具** -> **常规** -> **GraphQL查询编辑器**
+   * 直接；例如， `http://localhost:4502/aem/graphiql.html`
 
 1. GraphiQL IDE 是用于 GraphQL 的浏览器中查询编辑器。您可以使用它来生成查询，以检索内容片段，并将通过 JSON 格式无头交付。
    * 右上角的下拉列表允许您选择端点。
