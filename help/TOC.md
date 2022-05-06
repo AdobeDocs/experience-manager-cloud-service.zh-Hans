@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
 workflow-type: tm+mt
-source-wordcount: '3439'
+source-wordcount: '3447'
 ht-degree: 99%
 
 ---
@@ -462,6 +462,7 @@ ht-degree: 99%
    + [与 DocuSign 集成](/help/forms/integrate-docusign-adaptive-forms.md)
    + [与 Sites 集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+   + [将自适应表单与Microsoft Power集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
    + 创建和使用工作流 {#create-form-centric-workflows}
       + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流中使用变量](/help/forms/variable-in-aem-workflows.md)
@@ -477,7 +478,7 @@ ht-degree: 99%
    + [已知问题](/help/forms/known-issues.md)
    + 疑难解答 {#troubleshooting-aem-forms-cloud-service}
       + [安装和配置](/help/forms/troubleshooting-installation-and-configuration.md)
-      + [Dispatcher 和 CDN 缓存 ](/help/forms/troubleshooting-caching-performance.md)
+      + [Dispatcher 和 CDN 缓存](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service 概述{#overview}
