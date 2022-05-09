@@ -1,29 +1,29 @@
 ---
 title: 添加页面注释
-description: 使用注释模式在页面上保留注释和草图，就像使用附注来协助内容审阅过程一样
+description: 使用注释模式可像使用便笺一样在页面上留下注释和草图以协助进行您的内容审阅过程
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 # 添加页面注释 {#adding-page-annotations}
 
-为您的数字体验创建内容通常需要在发布之前进行讨论和提供反馈。 为了帮助完成此反馈过程，AEM允许您向内容添加注释。
+为数字体验创作内容一般都需要进行反复讨论和反馈后再发布。为了帮助进行此反馈过程，AEM 允许您将注释添加到内容。
 
-页面上的注释会放置简单的草图或便笺（想想现实世界的便签）。 注释允许您为其他作者和审阅人留下意见或问题。
-
->[!TIP]
->
->请不要忘记，[评论](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)也可用于在页面中提供反馈。
-
-这是一种特殊的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)，可用于创建和查看注释。
+注释可在页面上放置简单的草图或便笺（想象一下现实世界的便笺）。通过注释，可为其他作者和审阅者留下评论或问题。
 
 >[!TIP]
 >
->根据您的要求，您还可以开发 [工作流](/help/sites-cloud/authoring/workflows/overview.md) 添加、更新或删除注释时发送通知。
+>请别忘了，还有[评论](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)可在页面上提供反馈。
+
+有一种特殊的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)用于创建和查看注释。
+
+>[!TIP]
+>
+>根据要求，还可制定[工作流](/help/sites-cloud/authoring/workflows/overview.md)以在添加、更新或删除注释时发送通知。
 
 ## 注释指示器 {#annotation-indicator}
 
@@ -33,31 +33,31 @@ ht-degree: 35%
 
 ## 注释模式 {#annotate-mode}
 
-注释仅在“注释”模式下可见。
+仅在注释模式下可看到注释。
 
-1. 编辑页面时，使用工具栏（右上方）中的图标进入注释模式：
+1. 在编辑页面时，请使用工具栏右上方的以下图标进入注释模式：
 
    ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
 
-   此时，您可以查看任何现有的注释。
+   现在即可查看任何现有的注释。
 
    ![注释示例](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. 单击或点按注释以打开注释对话框并查看其详细信息。
+1. 单击或点击注释以打开“注释”对话框并查看其详细信息。
 
    ![注释详细信息](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. 要退出“注释”模式并返回到之前使用的模式，请点按/单击顶部工具栏右侧的x按钮。
+1. 要退出注释模式并返回以前使用的模式，请点击/单击顶部工具栏右侧的 x 按钮。
 
 ## 添加和编辑注释 {#annotating-a-component}
 
-除了查看注释之外，在注释模式下，您还可以创建、编辑、移动或删除内容的注释
+除了查看注释之外，通过注释模式还可在内容上创建、编辑、移动或删除注释
 
-1. [开始注释模式](#annotate-mode) 页面上。
+1. 在页面上[启动注释模式](#annotate-mode)。
 
-1. 单击或点按“添加注释”图标（工具栏左侧的加号）以开始添加注释。
+1. 单击/点击“添加注释”图标（工具栏左侧的加号）以开始添加注释。
 
-1. 单击或点按所需的组件（可添加注释的组件将以蓝色边框突出显示）以添加注释并打开对话框：
+1. 单击/点按需要添加注释的组件（将以蓝色边框突出显示可添加注释的组件）并打开对话框：
 
    ![添加注释](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -75,17 +75,17 @@ ht-degree: 35%
 
       ![注释色板按钮](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
-1. 单击或点按对话框外部可关闭注释对话框。 将显示注释的截断视图以及任何草图：
+1. 在注释对话框之外单击/点击即可关闭该对话框。随后将显示截断的注释视图及任何草图：
 
    ![注释草图](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. 完成特定注释编辑之后，您可以：
+1. 编辑完特定的注释后，可：
 
-   * 单击或点按文本标记以打开注释。 打开后，您可以查看全文、进行更改，或 [删除注释。](#deleting-annotations)
+   * 单击或点击文本标记以打开该注释。打开后，即可查看全文、作出更改或[删除注释](#deleting-annotations)。
    * 调整文本标记位置。
-   * 单击或点按草图线以选择该草图，然后将其拖动到所需位置。
+   * 单击或点击草图线以选择该草图，并将它拖至所需的位置。
    * 移动或复制组件
-      * 也会移动或复制任何相关注释及其草图，但它们相对于段落的位置将保持不变。
+      * 还将移动或复制任何相关的注释及其草图，但它们相对于段落的位置将保持不变。
 
 
 >[!NOTE]
@@ -100,35 +100,35 @@ ht-degree: 35%
 
 可以删除注释及其关联的草图。
 
-1. [开始注释模式](#annotate-mode) 页面上。
+1. 在页面上[启动注释模式](#annotate-mode)。
 
-1. 单击/点按文本标记以打开注释。
+1. 单击/点击文本标记以打开该注释。
 
-1. 单击或点按删除图标。
+1. 单击或点击“删除”图标。
 
    ![删除注释](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
-1. 注释和所有关联的草图都将被删除。
+1. 现已删除注释和所有关联的草图。
 
 >[!NOTE]
 >
->删除组件会删除附加到该资源的所有注释和草图，无论这些注释和草图处于整个页面的什么位置，均将如此。
+>删除组件将删除所有附加到该资源的注释和草图，无论它们在整个页面上的什么位置。
 
 ## 仅删除草图 {#deleting-sketches}
 
-只能删除特定草图，而不能删除包含所有关联草图的整个注释。
+可仅删除特定的草图，而非删除整个注释及所有关联的草图。
 
-1. [开始注释模式](#annotate-mode) 页面上。
+1. 在页面上[启动注释模式](#annotate-mode)。
 
-1. 单击或点按草图。 AEM用较深的蓝色框突出显示它。
+1. 单击或点击草图。AEM 用深蓝色的框突出显示它。
 
    ![选择要删除的草图](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 
-1. 按键盘上的Delete键。
+1. 按键盘上的 Delete 键。
 
-1. 草图已删除，但注释仍保留。
+1. 现已删除草图，但保留了注释。
 
-## 对其他资源添加注释 {#annotating-other-resources}
+## 为其他资源添加注释 {#annotating-other-resources}
 
 除了组件之外，您还可以对各种资源添加注释：
 
