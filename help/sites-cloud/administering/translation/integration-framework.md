@@ -1,143 +1,143 @@
 ---
 title: 配置翻译集成框架
-description: 了解如何配置翻译集成框架以与第三方翻译服务相集成。
+description: 了解如何配置翻译集成框架以与第三方翻译服务集成。
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
 workflow-type: tm+mt
 source-wordcount: '1522'
-ht-degree: 2%
+ht-degree: 97%
 
 ---
 
 # 配置翻译集成框架 {#configuring-the-translation-integration-framework}
 
-翻译集成框架与第三方翻译服务集成以编排AEM内容的翻译。 这涉及到三个基本步骤。
+翻译集成框架与第三方翻译服务集成，以编排 AEM 内容的译文。其中涉及三个基本步骤。
 
-1. [连接到翻译服务提供商。](#connecting-to-a-translation-service-provider)
+1. [连接到您的翻译服务提供商。](#connecting-to-a-translation-service-provider)
 1. [创建翻译集成框架配置。](#creating-a-translation-integration-configuration)
 1. [将云配置与您的页面关联。](#configuring-pages-for-translation)
 
-有关AEM中的内容翻译功能的概述，请参阅 [翻译多语言站点的内容](overview.md).
+有关 AEM 中内容翻译功能的概述，请参阅[翻译多语言网站的内容](overview.md)。
 
 >[!TIP]
 >
->如果您是翻译内容的新用户，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 这是使用AEM强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
+>如果不熟悉如何翻译内容，请参阅我们的[网站翻译历程](/help/journey-sites/translation/overview.md)，其中指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
 
 ## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
 
-创建将AEM连接到翻译服务提供商的云配置。 AEM包含 [连接到Microsoft Translator](connect-ms-translator.md) 默认情况下。
+创建用于将 AEM 连接到您的翻译服务提供商的云配置。默认情况下，AEM 具有[连接到 Microsoft Translator](connect-ms-translator.md) 的功能。
 
-以下翻译供应商为翻译项目提供了AEM API的实施。
+以下翻译供应商为翻译项目提供 AEM API 的实现。
 
 * [Microsoft Translator](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (AdobeExchange Premier合作伙伴)
-* [粘土片技术](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)（Adobe Exchange 首选合作伙伴）
+* [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [XTM云](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [林戈特克](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
+* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
-* [智能玲](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
+* [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-安装连接器包后，可以为连接器创建云配置。 通常，您需要提供凭据以通过翻译服务进行身份验证。 有关为Microsoft Translator连接器添加云配置的信息，请参阅 [与Microsoft Translator集成](connect-ms-translator.md).
+安装连接器软件包后，即可为连接器创建云配置。一般需要提供凭据，以便向翻译服务进行身份验证。有关为 Microsoft Translator 连接器添加云配置的信息，请参阅[与 Microsoft Translator 集成](connect-ms-translator.md)。
 
-您可以根据需要为同一连接器创建多个云配置。 例如，为您与同一供应商拥有的每个帐户或项目创建一个配置。
+如果需要，可为同一个连接器创建多个云配置。例如，为您在同一供应商的每个帐户或项目都创建一个配置。
 
-配置连接后，您可以创建使用该连接的翻译集成框架配置。
+配置连接后，即可创建使用它的翻译集成框架配置。
 
 ## 创建翻译集成配置 {#creating-a-translation-integration-configuration}
 
-创建翻译集成框架配置以指定如何翻译内容。 配置包括以下信息：
+创建翻译集成框架配置以指定如何翻译您的内容。该配置包括以下信息：
 
-* 要使用的翻译服务提供商
-* 是否执行人或机器翻译
-* 是否翻译与页面或资产关联的其他内容，如标记
+* 要使用哪个翻译服务提供商
+* 要执行人工翻译还是机器翻译
+* 是否翻译与页面或资源关联的其他内容，如标记
 
-在创建框架配置后，您可以根据配置将云配置与要翻译的页面相关联。 启动翻译过程后，翻译工作流会根据关联的框架配置进行。
+创建框架配置后，请将云配置与要根据该配置翻译的页面关联。开始翻译过程后，将根据关联的框架配置执行翻译工作流。
 
-当网站的不同部分具有不同的翻译要求时，请相应地创建多个框架配置。 例如，多语言网站可能包含英语、西班牙语和日语副本。 网站所有者使用两个不同的翻译服务提供商进行西班牙语和日语的翻译。 因此，框架的两个配置已配置。 每个配置都使用不同的翻译服务提供程序。
+当网站的不同部分有不同的翻译要求时，请相应地创建多个框架配置。例如，多语言网站可能包括英语、西班牙语和日语版本。网站所有者使用两个不同的翻译服务提供商生成西班牙语和日语译文。因此，配置了两个框架配置。每个配置使用一个不同的翻译服务提供商。
 
-配置翻译集成框架后，您可以 [将其与页面关联](preparation.md) 用它。
+配置翻译集成框架后，可[将它与使用它的页面关联](preparation.md)。
 
 >[!TIP]
 >
->有关AEM中的内容翻译功能的概述，请参阅 [翻译多语言站点的内容](overview.md).
+>有关 AEM 中内容翻译功能的概述，请参阅[翻译多语言网站的内容](overview.md)。
 
-框架的单个配置可控制页面内容和资产的翻译方式。 要创建新的翻译配置，请执行以下操作：
+只有一个框架配置可控制如何翻译页面内容和资源。要创建新的翻译配置，请执行以下操作：
 
-1. 在 [全局导航菜单，](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 单击或点按 **工具 — >Cloud Services — 和翻译Cloud Services**.
-1. 导航到要在内容结构中创建配置的位置。 这通常基于特定网站，也可以是全局网站。
-1. 在字段中提供以下信息，然后单击或点按 **创建**.:
-   1. 选择 **配置类型** 中。
-   1. 输入 **标题** 的URL。 的 **标题** 在 **Cloud Services** 控制台以及页面属性下拉列表中。
-   1. （可选）键入 **名称** 用于存储配置的存储库节点。
-1. 在 **编辑配置** ，请在 **站点** 和 **资产** 选项卡，然后单击或点按 **保存并关闭**.
+1. 在[全局导航菜单](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)中，单击或点击&#x200B;**工具 -> 云服务 -> 翻译云服务**。
+1. 在您的内容结构中导航到要创建该配置的位置。这一般为网站专属的位置，但也可为全局位置。
+1. 在字段中提供以下信息，然后单击或点击&#x200B;**创建**。
+   1. 在下拉列表中选择&#x200B;**配置类型**。
+   1. 为您的配置输入一个&#x200B;**标题**。**标题**&#x200B;在&#x200B;**云服务**&#x200B;控制台中以及页面属性下拉列表中标识该配置。
+   1. （可选）键入一个&#x200B;**名称**&#x200B;以用于存储该配置的存储库节点。
+1. 在&#x200B;**编辑配置**&#x200B;窗口中，配置&#x200B;**网站**&#x200B;和&#x200B;**资源**&#x200B;选项卡上的属性，然后单击或点击&#x200B;**保存并关闭**。
 
-### 站点配置属性 {#sites-configuration-properties}
+### 网站配置属性 {#sites-configuration-properties}
 
-的 **站点** 选项卡可控制页面内容翻译的执行方式。
+**网站**&#x200B;选项卡控制如何执行页面内容的翻译。
 
-![站点的翻译配置](../assets/translation-configuration.png)
+![网站的翻译配置](../assets/translation-configuration.png)
 
 | 属性 | 描述 |
 |---|---|
-| 翻译方法 | 此属性定义框架对网站内容执行的翻译方法：<br> — 机器翻译：翻译提供者使用机器翻译实时执行翻译。<br> — 人文翻译：内容将发送给翻译提供商，由翻译人员翻译。<br> — 请勿翻译：内容不会发送以进行翻译。 这将跳过某些内容分支，这些内容分支虽未翻译，但可使用最新内容进行更新。 |
-| 翻译提供商 | 此属性定义要执行翻译的翻译提供程序。 安装相应的连接器后，提供程序即会显示在列表中。 |
-| 内容目录 | （仅限机器翻译）此属性是描述正在翻译的内容的类别。 在翻译内容时，类别会影响术语和措辞的选择。 |
+| 翻译方法 | 此属性定义框架为网站内容执行的翻译方法：<br>- 机器翻译：翻译提供商使用机器翻译实时执行翻译。<br>- 人工翻译：将内容发送到翻译提供商，以供译员进行翻译。<br>- 不翻译：不发送内容以供翻译。这是为了跳过某些不翻译但可用最新内容更新的内容分支。 |
+| 翻译提供商 | 此属性定义执行翻译的翻译提供商。安装提供商对应的连接器后，列表中即出现该提供商。 |
+| 内容类别 | （仅限机器翻译）此属性是描述所翻译的内容的类别。在翻译内容时，类别可能会影响术语和措辞的选择。 |
 | 翻译标记 | 此选项允许翻译与页面关联的标记。 |
-| 翻译页面资产 | 此属性定义如何转换从文件系统添加到组件或从资产引用的资产：<br> — 请勿翻译：页面资产未进行折算。<br> — 使用站点翻译工作流：资产将根据 **站点** 选项卡。<br> — 使用资产翻译工作流：资产将根据 **资产** 选项卡。 |
-| 自动执行翻译 | 启用此属性可在创建翻译项目后自动执行翻译作业。 选择此选项时，您没有机会复查和调整翻译作业的范围。 |
-| 禁用仅更新翻译 | 选中此选项后，更新翻译项目将提交所有可翻译的字段进行翻译，而不只是上次翻译后更改的字段。 |
+| 翻译页面资源 | 此属性定义如何翻译从文件系统添加到组件或从资源引用的资源：<br>- 不翻译：不翻译页面资源。<br>- 使用网站翻译工作流：根据在&#x200B;**网站**&#x200B;选项卡上配置的属性处理资源。<br>- 使用资源翻译工作流：根据在&#x200B;**资源**&#x200B;选项卡上配置的属性处理资源。 |
+| 自动执行翻译 | 启用此属性可在创建翻译项目后自动执行翻译作业。选择此选项时，无法复查翻译作业和划定其范围。 |
+| 禁用仅更新翻译 | 选中此选项后，更新翻译项目将提交所有可翻译的字段以供翻译，而非仅提交自上次翻译以来更改的字段。 |
 
-### 资产配置属性 {#assets-configuration-properties}
+### 资源配置属性 {#assets-configuration-properties}
 
-资产属性可控制如何配置资产。 有关翻译资产的更多信息，请参阅 [为资产创建语言副本](/help/assets/translate-assets.md).
+资源属性控制如何配置资源。有关翻译资源的详细信息，请参阅[创建资源的语言副本](/help/assets/translate-assets.md)。
 
-![站点的翻译配置](../assets/translation-configuration-assets.png)
+![网站的翻译配置](../assets/translation-configuration-assets.png)
 
 | 属性 | 描述 |
 |---|---|
-| 翻译方法 | 此属性将选择框架为资产执行的翻译类型：<br> — 机器翻译：翻译提供程序使用机器翻译立即执行翻译。<br> — 人文翻译：内容会自动发送到翻译提供商以进行手动翻译。<br> — 请勿翻译：不会发送资产进行翻译。 |
-| 翻译提供商 | 此属性定义要执行翻译的翻译提供程序。 安装相应的连接器后，提供程序即会显示在列表中。 |
-| 内容目录 | （仅限机器翻译）此属性描述要翻译的内容。 在翻译内容时，类别会影响术语和措辞的选择。 |
-| 翻译资产 | 激活此资产以在翻译项目中包含资产。 |
-| 翻译元数据 | 激活此属性可转换资产元数据。 |
-| 翻译标记 | 激活此属性可翻译与资产关联的标记。 |
-| 自动执行翻译 | 选择此属性可在创建翻译项目后自动执行翻译作业。 选择此选项时，您没有机会复查或调整翻译作业的范围。 |
-| 禁用仅更新翻译 | 选中此选项后，更新翻译项目将提交所有可翻译的字段进行翻译，而不只是上次翻译后更改的字段。 |
+| 翻译方法 | 此属性选择框架为资源执行的翻译的类型：<br>- 机器翻译：翻译提供商使用机器翻译立即执行翻译。<br>- 人工翻译：自动将内容发送到翻译提供商，以供人工翻译。<br>- 不翻译：不发送资源以供翻译。 |
+| 翻译提供商 | 此属性定义执行翻译的翻译提供商。安装提供商对应的连接器后，列表中即出现该提供商。 |
+| 内容类别 | （仅限机器翻译）此属性描述所翻译的内容。在翻译内容时，类别可能会影响术语和措辞的选择。 |
+| 翻译资源 | 激活此属性以在翻译项目中包括资源。 |
+| 翻译元数据 | 激活此属性以翻译资源元数据。 |
+| 翻译标记 | 激活此属性以翻译与资源关联的标记。 |
+| 自动执行翻译 | 选择此属性可在创建翻译项目后自动执行翻译作业。选择此选项时，无法复查翻译作业或划定其范围。 |
+| 禁用仅更新翻译 | 选中此选项后，更新翻译项目将提交所有可翻译的字段以供翻译，而非仅提交自上次翻译以来更改的字段。 |
 | 为翻译启用内容模型字段 | 启用此选项将使用 **可翻译** 字段 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 以确定字段是否已翻译并自动创建 [翻译规则](rules.md) 因此。 此选项将取代您可能创建的任何翻译规则。 |
 
-## 配置翻译页面 {#configuring-pages-for-translation}
+## 配置页面以供翻译 {#configuring-pages-for-translation}
 
-要配置将源页面翻译成其他语言，请将这些页面与以下云配置关联：
+要配置如何将您的源页面翻译为其他语言，请将这些页面与以下云配置关联：
 
-* 将AEM连接到翻译提供商的云配置。
-* 用于配置翻译详细信息的翻译集成框架。
+* 用于将 AEM 连接到您的翻译服务提供商的云配置。
+* 用于配置翻译细节的翻译集成框架。
 
-请注意，翻译集成框架云配置标识了用于连接到服务提供商的云配置。 将源页面与框架云配置关联时，该页面必须与框架云配置所使用的服务提供商云配置关联。
+请注意，翻译集成框架云配置标识要用于连接到服务提供商的云配置。将源页面与框架云配置关联时，该页面必须与该框架云配置使用的服务提供商云配置关联。
 
-将页面与云配置关联后，页面的子项将继承该关联。 例如，如果您将 `/content/wknd/language-masters/en/magazine` 页面， `magazine` 页面下的子页面将根据框架进行翻译。
+将页面与云配置关联时，该页面的后代页面继承这种关联。例如，如果将 `/content/wknd/language-masters/en/magazine` 页面与翻译集成框架关联，则根据该框架翻译 `magazine` 页面及其下方的子页面。
 
-如果需要，您可以覆盖子代页面上的关联。 例如，网站的内容主要与旅行和生活方式有关。 但是，页面的一个分支描述了公司。 在这种情况下，站点的根页面可能与翻译集成框架相关联，该框架指定使用“生活方式”类别进行机器翻译，而描述公司的分支将使用使用“常规”类别执行机器翻译的框架。
+必要时，可在后代页面上取代该关联。例如，网站的内容主要涉及旅行和生活方式，但某个分支的页面介绍公司情况。在这种情况下，网站的根页面可能与指定使用“生活方式”类别进行机器翻译的翻译集成框架关联，而介绍公司情况的分支将使用按“通用”类别执行机器翻译的框架。
 
-### 将页面与翻译提供程序关联 {#associating-a-page-with-a-translation-provider}
+### 将页面与翻译提供商关联 {#associating-a-page-with-a-translation-provider}
 
-将页面与您用来翻译页面和子代页面的翻译提供程序关联。
+将页面与您用于翻译该页面和后代页面的翻译提供商关联。
 
-1. 在站点控制台中，选择要配置的页面，然后单击或点按 **查看属性**.
-1. 单击或点按 **Cloud Services** 选项卡。
-1. 在 **添加配置** 下拉列表中，选择配置。
-1. 单击或点按 **保存并关闭**.
+1. 在网站控制台中，选择要配置的页面，然后单击或点击&#x200B;**查看属性**。
+1. 单击或点击&#x200B;**云服务**&#x200B;选项卡。
+1. 在&#x200B;**添加配置**&#x200B;下拉列表中选择配置。
+1. 单击或点击&#x200B;**保存并关闭**。
 
 ### 将页面与翻译集成框架关联 {#associating-pages-with-a-translation-integration-framework}
 
-将页面与翻译集成框架关联，该框架定义您希望如何翻译页面和子页面。
+将页面与定义您要如何为该页面和后代页面执行翻译的翻译集成框架关联。
 
-1. 在站点控制台中，选择要配置的页面，然后单击或点按 **查看属性**.
-1. 单击或点按 **Cloud Services** 选项卡。
-1. 在 **添加配置** 下拉列表中，选择配置。
-1. 单击或点按 **保存并关闭**.
+1. 在网站控制台中，选择要配置的页面，然后单击或点击&#x200B;**查看属性**。
+1. 单击或点击&#x200B;**云服务**&#x200B;选项卡。
+1. 在&#x200B;**添加配置**&#x200B;下拉列表中选择配置。
+1. 单击或点击&#x200B;**保存并关闭**。
