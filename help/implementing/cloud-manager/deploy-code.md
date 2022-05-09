@@ -2,9 +2,9 @@
 title: 部署代码
 description: 了解如何在AEMas a Cloud Service中使用Cloud Manager管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
+source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
@@ -121,3 +121,72 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 ## 部署过程 {#deployment-process}
 
 所有Cloud Service部署都遵循滚动流程，以确保零停机时间。 请参阅该文档 [滚动部署的工作原理](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 以了解更多。
+
+## 重新执行生产部署 {#Reexecute-Deployment}
+
+对于生产部署步骤已完成的执行，支持重新执行生产部署步骤。 完成类型不重要 — 部署可能被取消或失败。 尽管如此，主要用例预计是生产部署步骤因临时原因而失败的情况。 重新执行会使用相同的管道创建新执行。 此新执行包含三个步骤：
+
+1. 验证步骤 — 这基本上与正常管道执行期间发生的验证相同。
+1. 生成步骤 — 在重新执行的上下文中，生成步骤是复制工件，而不是实际执行新的生成过程。
+1. 生产部署步骤 — 使用与正常管道执行中的生产部署步骤相同的配置和选项。
+
+生成步骤在UI中的标记可能略有不同，以反映它是在复制工件，而不是重新生成。
+
+![重新部署](assets/Re-deploy.png)
+
+限制：
+
+* 重新执行生产部署步骤将仅在上次执行时可用。
+* 无法重新执行推送更新执行。 如果上次执行是推送更新执行，则无法重新执行。
+* 如果上次执行是推送更新执行，则无法重新执行。
+* 如果上次执行在生产部署步骤之前的任何时间点失败，则无法重新执行。
+
+### 重新执行API {#Reexecute-API}
+
+### 识别重新执行的执行
+
+要识别执行是否为重新执行，可检查trigger字段。 其价值将是 *RE_EXECUTE*.
+
+### 触发新执行
+
+要触发重新执行，需要向HAL Link &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>。 如果此链接存在，则可以从该步骤重新启动执行。 如果不存在，则无法从该步骤重新启动执行。 在初始版本中，此链接将只在生产部署步骤中存在，但将来版本可能支持从其他步骤启动管道。 示例:
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+HAL链接的语法 _href_  上述值不打算用作参考点。 实际值应始终从HAL链接中读取，而不是生成。
+
+提交 *PUT* 对此端点的请求将导致 *201* 响应（如果成功），且响应主体将表示新执行。 这类似于通过API开始定期执行。
