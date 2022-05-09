@@ -2,9 +2,9 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2964'
 ht-degree: 99%
 
 ---
@@ -70,11 +70,11 @@ API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后
 
 ### 删除或禁用灵活端口出口 {#deleting-disabling-flexible-port-egress-provision}
 
-至 **删除** 程序的网络基础结构，调用 *DELETE/program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* 有关详细信息，请参阅Cloud Manager API文档。
+至 **删除** 程序的网络基础结构，调用 `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
 
 要&#x200B;**禁用**&#x200B;特定环境的灵活端口出口，请调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
-有关详细信息，请参阅 [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
+有关API的更多信息，请参阅 [Cloud Manager API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
