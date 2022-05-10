@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
+source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
 workflow-type: tm+mt
-source-wordcount: '2964'
-ht-degree: 99%
+source-wordcount: '2977'
+ht-degree: 98%
 
 ---
 
@@ -71,6 +71,10 @@ API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后
 ### 删除或禁用灵活端口出口 {#deleting-disabling-flexible-port-egress-provision}
 
 至 **删除** 程序的网络基础结构，调用 `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> 如果存在使用该基础结构的任何环境，则删除不会删除该基础结构。
 
 要&#x200B;**禁用**&#x200B;特定环境的灵活端口出口，请调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
