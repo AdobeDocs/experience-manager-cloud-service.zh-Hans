@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3449'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在Experience Manageras a Cloud Service中，选择Experience Manageras a Cloud Service徽标以访问全局导航控制台。
 1. 在控制台的左侧，选择工具图标，然后转到 **[!UICONTROL Cloud Services> Dynamic Media配置]**.
 1. 在Dynamic Media配置浏览器页面的左窗格中，选择 **[!UICONTROL 全球]** (请勿选择 **[!UICONTROL 全球]**)。 然后选择 **[!UICONTROL 创建]**.
-1. 在 **[!UICONTROL 创建Dynamic Media配置]** 页面，输入标题、Dynamic Media帐户电子邮件地址、密码，然后选择您所在的区域。 此信息通过配置电子邮件中的Adobe提供给您。 如果您未收到此电子邮件，请联系Adobe客户支持。
+1. 在 **[!UICONTROL 创建Dynamic Media配置]** 页面，输入Dynamic Media帐户公司管理员的标题、Dynamic Media帐户电子邮件地址和密码，然后选择您所在的地区。 此信息通过配置电子邮件中的Adobe提供给您。 如果您未收到此电子邮件，请联系Adobe客户支持。
 1. 选择 **[!UICONTROL 连接到Dynamic Media]**.
 1. 在 **[!UICONTROL 更改密码]** 对话框中 **[!UICONTROL 新密码]** 字段，输入包含8-25个字符的新密码。 密码必须至少包含以下任一项：
 
@@ -282,7 +282,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
    * 双击 **[!UICONTROL 已启用]** 字段。 默认情况下，所有资产MIME类型均已启用(设置为 **[!UICONTROL true]**)，这表示资产会同步到Dynamic Media以进行处理。 如果要排除此资产MIME类型，请将此设置更改为 **[!UICONTROL false]**.
 
-   * 双击 **[!UICONTROL jobParam]** 打开其关联的文本字段。 请参阅 [支持的MIME类型](/help/assets/file-format-support.md) 有关允许的处理参数值列表，可用于给定的MIME类型。
+   * 双击 **[!UICONTROL jobParam]** 打开其关联的文本字段。 请参阅 [支持的MIME类型](/help/assets/file-format-support.md) 以获取可用于给定MIME类型的允许处理参数值列表。
 
 1. 执行下列操作之一：
    * 重复步骤3-4以编辑更多MIME类型。
@@ -292,7 +292,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 #### 为不支持的格式添加MIME类型 {#adding-mime-types-for-unsupported-formats}
 
-您可以为Experience Manager Assets中不支持的格式添加自定义MIME类型。 要确保您在CRXDE Lite中添加的任何新节点未被Experience Manager删除，请将MIME类型移到 `image_`. 此外，请确保将其启用值设置为 **[!UICONTROL false]**.
+您可以为Experience Manager Assets中不支持的格式添加自定义MIME类型。 要确保在CRXDE Lite中添加的任何新节点不会被Experience Manager删除，请将MIME类型移到 `image_`. 此外，请确保将其启用值设置为 **[!UICONTROL false]**.
 
 **要为不支持的格式添加MIME类型，请执行以下操作：**
 
