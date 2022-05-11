@@ -2,9 +2,9 @@
 title: 迁移历程到AEMas a Cloud Service
 description: 熟悉迁移到 AEM as a Cloud Service 的基础知识，开始您的迁移之旅
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '587'
 ht-degree: 11%
 
 ---
@@ -35,9 +35,13 @@ AEM as a Cloud Service为Experience Manager Assets、Forms和Screens提供了可
 * 一切就绪后，您可以使用 [上线阶段](/help/journey-migration/go-live.md)
 * 最后，在 [上线后阶段](/help/journey-migration/post-go-live.md).
 
-下图显示了推荐的过渡到AEMas a Cloud Service历程的示意图。
+下图高级别地展示了建议的过渡到AEMas a Cloud Service的历程。
 
 ![图像](/help/journey-migration/assets/move-aemcloud-process.png)
+
+您还可以参阅下图，了解有关迁移历程的更详细、更精细的视图。
+
+![图像](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

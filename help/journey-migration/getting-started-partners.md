@@ -2,10 +2,10 @@
 title: 面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南
 description: 面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 14%
+source-wordcount: '2126'
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,9 @@ Cloud Service将Adobe Experience Manager丰富的开箱即用功能和可扩展�
 * Developer Journey in Adobe Experience Manager as a Cloud Service
 * Moving to Adobe Experience Manager as a Cloud Service -->
 
-<br>
+有关迁移历程的一般表示形式，请参阅下图。
+
+![图像](/help/journey-migration/assets/migration-process.png)
 
 ## 开始使用Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -112,7 +114,7 @@ Cloud Manager是Managed Services的可选内容交付工具，它是必需的。
 
 过渡到云服务的历程包括三个阶段 - 规划、执行和上线后。要成功、顺利的过渡，您应确保进行适当的规划并遵守本指南中概述的最佳实践。
 
-下图显示了推荐的过渡到云服务的历程的示意图。
+下图高级别地显示了推荐的过渡到Cloud Service历程。
 
 ![图像](/help/journey-migration/assets/home-img1.png)
 
