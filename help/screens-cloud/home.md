@@ -1,18 +1,18 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Adobe Experience Manager Screens as a Cloud Service 自助资源和文档链接
+description: 进一步了解AEM Screens以及此数字标牌解决方案的工作原理。
 landing-page-description: 了解 AEM Screens as a Cloud Service。
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 74%
+source-wordcount: '418'
+ht-degree: 69%
 
 ---
 
 # AEM Screensas a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-本页列出了有关AEM Screens as a Cloud Service的自助资源。
+本页可帮助您进一步了解AEM Screens以及此数字标牌解决方案的工作原理。 获取自助资源并了解新增功能。
 
 >[!NOTE]
 >有关具有AEM 6.5的AEM Screens，请参阅 [AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).

@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 入门
-description: Adobe Experience Manager as a Cloud Service 入门自助服务资源和文档链接
+description: '开始设置Experience Manager，访问云并了解如何备份数据。 '
 landing-page-description: 本指南概述了如何开始使用 AEM as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 38%
+source-wordcount: '523'
+ht-degree: 35%
 
 ---
 

@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 站点
-description: Adobe Experience Manager as a Cloud Service 站点自助资源和文档链接
+title: Experience Manageras a Cloud Service站点的支持资源
+description: 获取所有AEM云服务支持资源的完整列表。 查找AEM Sites的答案作为Cloud Service问题。
 landing-page-description: 了解 AEM Sites as a Cloud Service 的创作和管理方法。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 87%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-本页列出了有关 Experience Manager as a Cloud Service 的站点相关自助资源。
+本页提供了所有AEM云服务支持资源的完整列表。 获取您的 [!DNL AEM Sites as a Cloud Service] 问题。
 
 ## 关键站点文章 {#key-articles}
 

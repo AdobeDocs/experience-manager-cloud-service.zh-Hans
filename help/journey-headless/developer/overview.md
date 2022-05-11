@@ -1,18 +1,18 @@
 ---
 title: AEM Headless开发人员历程
-description: 当使用内容模型、内容片段和GraphQL API等功能来将无头体验作为无头内容管理系统(CMS)提供支持时，可在此处开始as a Cloud Service的引导式历程Adobe Experience Manager(AEM)。 此历程为您提供开发首个无头应用程序所需的所有信息。
-landing-page-description: 从这里开始，引导您了解 AEM 的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
+description: '从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 了解强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有信息。 '
+landing-page-description: '了解无头内容交付和实施。 了解有关在业务中制定战略的更多信息。 '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
+source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 8%
+source-wordcount: '1301'
+ht-degree: 6%
 
 ---
 
 # AEM Headless开发人员历程 {#aem-headless-developer-journey}
 
-从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 了解强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有信息。
+从此处开始引导式历程 [!DNL Adobe Experience Manager as a Cloud Service] (AEM)。 了解强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有信息。
 
 ## 简介 {#introduction}
 
@@ -87,7 +87,7 @@ AEM的无头实施使用内容片段模型和内容片段，以专注于创建�
 
 因此，这些旅程旨在独立进行。 但是，其中的许多内容可以相互关联。 请查看这些其他历程，了解有关AEM强大功能如何协同工作的更多信息。
 
-* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)  — 如果您喜欢通过实践来学习，并且有技术倾向，请学习我们由API和框架组织的动手实践教程，这些教程将探索如何创建和使用基于AEM Headless构建的应用程序。
+* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)  — 如果您喜欢通过学习来学习，而且在技术上有倾向，请学习我们由API和框架组织的动手实践教程，这些教程将探索如何创建和使用基于AEM Headless构建的应用程序。
 * [AEM无头翻译历程](/help/journey-headless/translation/overview.md)  — 此文档历程使您能够广泛了解无头技术、AEM如何提供无头内容以及如何翻译无头内容。
 * [无外设创作历程](/help/journey-headless/author/overview.md)  — 从此处开始，引导您逐步了解AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。
 * [无外设架构师历程](/help/journey-headless/architect/overview.md)  — 从此处开始，介绍Adobe Experience Manager as a Cloud Service强大而灵活的无头功能，以及如何为您的项目建立内容模型。

@@ -1,18 +1,18 @@
 ---
 title: 实施 Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service 实施自助资源和文档链接
-landing-page-description: 了解如何自定义您的 AEM as a Cloud Service 部署，包括开发和部署主题。
+landing-page-description: '了解如何自定义 Experience Manager as a Cloud Service 部署。浏览AEM云服务文档，以开发和实施您的应用程序。 '
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 97%
+source-wordcount: '413'
+ht-degree: 91%
 
 ---
 
 # 实施 AEM as a Cloud Service 的应用程序 {#aem-implementation-guide}
 
-本页列出了有关实施 Experience Manager as a Cloud Service 的自助资源。了解如何自定义 Experience Manager as a Cloud Service 部署。
+查找有关实施的自助资源，以便Experience Manageras a Cloud Service。 了解如何自定义 Experience Manager as a Cloud Service 部署。
 
 ## 关键实施文章 {#key-articles}
 

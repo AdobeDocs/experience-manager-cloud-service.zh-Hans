@@ -1,18 +1,18 @@
 ---
 title: AEM Content and Commerce
-description: AEM Content and Commerce 自助资源和文档链接
+description: 了解如何使用和管理 Experience Manager Content and Commerce as a Cloud Service。
 landing-page-description: 了解如何使用和管理 Experience Manager Content and Commerce as a Cloud Service。
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 84%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
 
 # AEM Content and Commerce {#commerce-guide}
 
-本页列出了有关AEM内容和商务的自助资源。
+了解如何使用和管理 Experience Manager Content and Commerce as a Cloud Service。
 
 >[!NOTE]
 >
