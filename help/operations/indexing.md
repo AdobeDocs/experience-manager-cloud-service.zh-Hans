@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
+source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 98%
+source-wordcount: '2535'
+ht-degree: 90%
 
 ---
 
@@ -64,13 +64,13 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->如果自定义开箱即用索引，例如 `damAssetLucene-6`，请使用 CRX DE 包管理器 (`/crx/packmgr/`) 从&#x200B;*云服务环境*&#x200B;开发环境复制最新的开箱即用索引定义。然后将配置重命名为例如 `damAssetLucene-6-custom-1`，并将您的自定义添加到顶部。这样确保不会无意中删除所需的配置。例如，`/oak:index/damAssetLucene-6/tika` 下的 `tika` 节点需要在云服务的自定义索引中。Cloud SDK 上不存在它。
+>例如，如果自定义现成的索引 `damAssetLucene-6`，请从 *Cloud Service环境* 使用CRX DE包管理器(`/crx/packmgr/`)。 然后将配置重命名为例如 `damAssetLucene-6-custom-1`，并将您的自定义添加到顶部。这样确保不会无意中删除所需的配置。例如，`/oak:index/damAssetLucene-6/tika` 下的 `tika` 节点需要在云服务的自定义索引中。Cloud SDK 上不存在它。
 
 您需要按照以下命名模式准备一个包含实际索引定义的新索引定义包：
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-然后需要将它放在 `ui.apps/src/main/content/jcr_root` 下。到目前为止不支持子根文件夹。
+然后需要将它放在 `ui.apps/src/main/content/jcr_root` 下。所有自定义和自定义索引定义都需要存储在 `/oak:index`.
 
 需要设置包的过滤器，以便保留现有的（开箱即用索引）。在文件中 `ui.apps/src/main/content/META-INF/vault/filter.xml`，则需要列出每个自定义（或自定义）索引，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 如果稍后更改了索引版本，则需要调整过滤器。
 
@@ -84,15 +84,69 @@ ht-degree: 98%
 
 ## 部署索引定义 {#deploying-index-definitions}
 
->[!NOTE]
->
->Jackrabbit FileVault Maven Package 插件 **1.1.0** 版有一个已知的问题，使得您无法将 `oak:index` 添加到 `<packageType>application</packageType>` 的模块。应更新到该插件的更高版本。
-
-索引定义现在被标为自定义并进行版本控制：
+索引定义标记为自定义并受版本控制：
 
 * 索引定义本身（例如 `/oak:index/ntBaseLucene-custom-1`）
 
-因此，为了部署索引，需要通过 `ui.apps` 通过 Git 和 Cloud Manager 部署过程传递索引定义 (`/oak:index/definitionname`)。
+要部署自定义或自定义索引，请使用`/oak:index/definitionname`)需要通过 `ui.apps` 通过Git和Cloud Manager部署过程。 在FileVault筛选器中，例如 `ui.apps/src/main/content/META-INF/vault/filter.xml`，分别列出每个自定义索引和自定义索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 自定义/自定义索引定义本身随后将存储在文件中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        ...
+        </indexRules>
+        <tika jcr:primaryType="nt:unstructured">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+</jcr:root>
+```
+
+上例包含Apache Tika的配置。 Tika配置文件将存储在 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+
+### 项目配置
+
+根据使用的Jackrabbit Filevault Maven包插件版本，需要在项目中进行其他配置。 使用Jackrabbit Filevault Maven包插件版本时 **1.1.6** 或更新，则文件 `pom.xml` 需要在的插件配置中包含以下部分 `filevault-package-maven-plugin`，在 `configuration/validatorsSettings` （之前） `jackrabbit-nodetypes`):
+
+```xml
+<jackrabbit-packagetype>
+    <options>
+        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+    </options>
+</jackrabbit-packagetype>
+```
+
+此外，在本例中， `vault-validation` 版本需要升级到较新版本：
+
+```xml
+<dependency>
+    <groupId>org.apache.jackrabbit.vault</groupId>
+    <artifactId>vault-validation</artifactId>
+    <version>3.5.6</version>
+</dependency>
+```
+
+然后，在 `ui.apps.structure/pom.xml` 和 `ui.apps/pom.xml`，的配置 `filevault-package-maven-plugin` 需要 `allowIndexDefinitions` 以及 `noIntermediateSaves` 已启用。 选项 `noIntermediateSaves` 确保自动添加索引配置。
+
+```xml
+<groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
+    ...
+```
+
+在 `ui.apps.structure/pom.xml`, `filters` 的部分需要包含过滤器根，如下所示：
+
+```xml
+<filter><root>/oak:index</root></filter>
+```
 
 添加新的索引定义后，需要通过 Cloud Manager 部署新的应用程序。部署完毕后将开始执行两个作业，负责将索引定义分别添加到 MongoDB 和 Azure 段存储（如果需要，还可合并索引定义）以供编写和发布。在切换蓝绿之前，将用新的索引定义为底层存储库重新编制索引。
 
