@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
+source-git-commit: ee92bfcf4ed00d8b508f1b6f7d21f73fb4c9029e
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 99%
+source-wordcount: '3454'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
    + [文档历程](/help/journey-documentation/documentation-journeys.md)
 + 发行说明 {#release-notes}
    + [版本信息](/help/release-notes/home.md)
-   + 发行说明 {#release-notes}
+   + AEMaCS常规发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
          + [2022.3.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -59,6 +59,47 @@ ht-degree: 99%
          + [2020.4.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + Cloud Manager 发行说明 {#cloud-manager}
+      + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2022年 {#2022}
+         + [2022.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
+         + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+      + 2021年 {#2021}
+         + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
+         + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
+         + [2021.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
+         + [2021.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
+         + [2021.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
+         + [2021.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+         + [2021.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+         + [2021.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+         + [2021.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+         + [2021.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+         + [2021.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + 2020年 {#2020}
+         + [2020.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+         + [2020.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+         + [2020.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+         + [2020.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+         + [2020.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+         + [2020.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+         + [2020.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+         + [2020.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+         + [2020.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+         + [2020.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+         + [2020.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + 迁移工具的发行说明 {#migration-tools}
+      + [最新发行说明（2022.4.0版）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2022年 {#2022}
+         + [2022.3.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
+         + [2022.2.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+         + [2022.1.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+      + 2021年 {#2021}
+         + [2021.12.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+         + [2021.11.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [2021.10.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+   + Experience Manager 增强型连接器 Workfront 发行说明{#workfront}
+      + [Workfront for Experience Manager增强连接器的最新发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
    + [已知问题](/help/release-notes/known-issues.md)
@@ -105,15 +146,6 @@ ht-degree: 99%
    + [上线](/help/journey-migration/go-live.md)
    + [Post 上线](/help/journey-migration/post-go-live.md)
    + [面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南](/help/journey-migration/getting-started-partners.md)
-   + 迁移工具的发行说明 {#release-notes-migration-tools}
-      + [最新发行说明（2022.4.0版）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [2022.3.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
-      + [2022.2.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
-      + [2022.1.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021年 {#2021}
-         + [2021.12.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
-         + [2021.11.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [2021.10.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Cloud Acceleration Manager 简介 {#introduction-cam}
          + [概述](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
@@ -393,7 +425,6 @@ ht-degree: 99%
       + [Flash 查看器生命周期终止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + 与 Adobe Workfront 集成 {#integrations}
-      + [Experience Manager 增强型连接器 Workfront 发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] ](/help/assets/workfront-connector-install.md)
       + [移除现有安装的外部依赖](/help/assets/remove-external-dependencies.md)
@@ -619,37 +650,6 @@ ht-degree: 99%
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
-      + Cloud Manager 发行说明 {#release-notes-cloud-manager}
-         + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022年 {#2022}
-            + [2022.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-            + [2022.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-            + [2022.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-            + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-         + 2021年 {#2021}
-            + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-            + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-            + [2021.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-            + [2021.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-            + [2021.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-            + [2021.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-            + [2021.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-            + [2021.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-            + [2021.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-            + [2021.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-            + [2021.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-         + 2020年 {#2020}
-            + [2020.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-            + [2020.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-            + [2020.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-            + [2020.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-            + [2020.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-            + [2020.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-            + [2020.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-            + [2020.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-            + [2020.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-            + [2020.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-            + [2020.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
       + 程序 {#programs}
          + [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)

@@ -3,10 +3,10 @@ title: AEMas a Cloud Service版本2022.01.0中的Cloud Manager发行说明
 description: 以下是AEMas a Cloud Service版本2022.01.0中Cloud Manager的发行说明。
 feature: Release Information
 exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6e394aaabcb123aea53fba49684aaade3e6c87a6
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 70%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 70%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 年 1 月 20 日。下一个版本计划于 2022 年 2 月 10 日发布。
+AEMas a Cloud Service中Cloud Manager的发布日期为2022.01.0 2022年1月20日。 下一版计划于2022年2月10日发布。
 
 ## 新增功能 {#what-is-new}
 
