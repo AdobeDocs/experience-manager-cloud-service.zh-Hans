@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2877'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->为获得最佳结果，Adobe建议您在台式计算机上阅读和查看Dynamic Media历程。
+>为获得最佳结果，Adobe建议您在台式计算机上阅读并查看此Dynamic Media历程。
 
 ## Dynamic Media URL及Dynamic Media如何交付内容的剖析 {#dm-journey-d}
 
@@ -43,7 +43,7 @@ URL的第一部分以红色表示，引用服务器域本身。 在这种情况�
 
 帐户名称是紫色的部分。 在这种情况下，该帐户称为 `jpearldemo`.
 
-资产ID或名称， `AdobeStock_28563982` 为绿色。 请注意，资产已 *否* 文件扩展名，如 `.png` 或 `.jpg`. 将资产摄取到Dynamic Media后，将删除文件扩展名，并创建不同类型的文件：金字塔TIFF文件。 通过TIFF图像，Dynamic Media可以即时快速创建演绎版。
+资产ID或名称， `AdobeStock_28563982` 为绿色。 请注意，资产已 _否_ 文件扩展名，如 `.png` 或 `.jpg`. 将资产摄取到Dynamic Media后，将删除文件扩展名，并创建不同类型的文件：金字塔TIFF文件。 通过TIFF图像，Dynamic Media可以即时快速创建演绎版。
 
 最后，还有一些图像处理参数， `?wid=1000&fmt=jpeg&qlt=85`，在末尾以黄色显示。
 
@@ -68,7 +68,7 @@ Dynamic Media具有许多图像处理参数，可用于在网页上微调图像�
 
 手表还是略偏左。 更改 `90` to `92`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-再说一遍，你按下 **[!UICONTROL 输入]**，则表格的新呈现会近乎瞬间生成。 您可以看到您获得的性能，这解释了为什么Dynamic Media可以提供超过800,000个图像请求， *每秒*、在繁忙的周末或大节假日。
+再说一遍，你按下 **[!UICONTROL 输入]**，则表格的新呈现会近乎瞬间生成。 您可以看到您获得的性能，这解释了为什么Dynamic Media可以提供超过800,000个图像请求， _每秒_、在繁忙的周末或大节假日。
 
 虽然可以逐个图像更改URL中的图像处理参数，但这种方法并不有效，尤其是当您的网站上有数万幅图像时。 使用图像预设是一种更好的方法。
 
@@ -204,17 +204,19 @@ _的 `Running` 在应用弹出查看器时设置的图像。_
 * `ZoomVertical_dark` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## 了解更多
+## 可选 — 了解详情
 
-_Dynamic Media主题_
+如果您想进一步了解您刚刚阅读的内容，请使用下面的材料来更详细地探索概念。 否则，您的Dynamic Media历程已完成！
 
-* [创建图像预设](/help/assets/dynamic-media/image-presets.md)
+_Dynamic Media帮助主题_
+
+* [如何创建图像预设](/help/assets/dynamic-media/image-presets.md)
 * 列表 [图像处理参数](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) 在创建图像预设时，您可以在“图像修饰符”字段中使用的预设值
-* [预览资源](/help/assets/dynamic-media/previewing-assets.md)
-* [预览 3D 资源](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [图像集](/help/assets/dynamic-media/image-sets.md)
-* [旋转集](/help/assets/dynamic-media/spin-sets.md)
-* [混合媒体集](/help/assets/dynamic-media/mixed-media-sets.md)
+* [如何预览资产](/help/assets/dynamic-media/previewing-assets.md)
+* [如何预览3D资产](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [如何创建图像集](/help/assets/dynamic-media/image-sets.md)
+* [如何创建旋转集](/help/assets/dynamic-media/spin-sets.md)
+* [如何创建混合媒体集](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Media教程_
 
@@ -223,6 +225,6 @@ _Dynamic Media教程_
 
 _Dynamic Media查看器_
 
-* [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)
+* [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html) 每个查看者
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

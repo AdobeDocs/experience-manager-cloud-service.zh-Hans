@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3708'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ _第二部分_
 
 >[!TIP]
 >
->为获得最佳结果，Adobe建议您在台式计算机上阅读和查看Dynamic Media历程。
+>为获得最佳结果，Adobe建议您在台式计算机上阅读并查看此Dynamic Media历程。
 
 ## 什么是Dynamic Media，它有什么帮助吗？ {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Adobe建议您以无损格式上传资产。 通常，最好避免JPEG，因为�
 
 除了手动发布资产之外，您还可以配置Dynamic Media，以便在上传时立即发布资产（无需任何用户干预）。
 
-上传后，在Dynamic Media中预览资产演绎版的方法有所不同。 预览演绎版可帮助您了解客户会看到的内容。 一种常见的预览方法是选择资产，然后通过选择 *图像预设* 如下所示。
+上传后，在Dynamic Media中预览资产演绎版的方法有所不同。 预览演绎版可帮助您了解客户会看到的内容。 一种常见的预览方法是选择资产，然后通过选择 _图像预设_ 如下所示。
 
 ![基于大图像预设预览资产的演绎版](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _根据选定的“大”图像预设预览资产的演绎版。 单击了URL按钮。 生成的URL路径包含“大”图像预设名称，并可在网页中使用。_
 
 上述URL是实时的！ [试试看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-预览资产的另一种方法是，选择图像资产，然后选择 *查看器* 预设，如下所示。
+预览资产的另一种方法是，选择图像资产，然后选择 _查看器_ 预设，如下所示。
 
 ![基于缩放垂直光查看器预设预览资产](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _根据所选的“ZoomVertical_light”查看器预设预览资产。 鼠标指针(`+`)被移到手表上以放大。 请注意URL和嵌入按钮。_
 
 上面的演绎版是实时的！ [试试看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-让我们更仔细地检查这些URL，以便您更好地了解当前的情况。 带我去 [Dynamic Media历程:基础知识，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+## 可选 — 了解详情
 
-## 了解更多
+此历程的第一部分介绍了各种Dynamic Media主题的基础知识。 如果您想进一步了解您刚刚阅读的内容，请使用下面的材料来更详细地探索概念。 否则，您可以继续您的旅程的第二部分。 请参阅 [此Dynamic Media历程中的下一步是什么](#whats-next).
 
-_Dynamic Media主题_
+_Dynamic Media帮助主题_
 
-* [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-* [智能成像](/help/assets/dynamic-media/imaging-faq.md)
-* [自适应视频集](/help/assets/dynamic-media/video.md)
+* [在Experience Manager中使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+* [关于智能成像](/help/assets/dynamic-media/imaging-faq.md)
+* [如何创建自适应视频集](/help/assets/dynamic-media/video.md)
 * [优化图像质量的最佳实践](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [上传资源](/help/assets/add-assets.md#upload-assets)
-* [预览资源](/help/assets/dynamic-media/previewing-assets.md)
-* [预览 3D 资源](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [交付Dynamic Media资产](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [如何上传资产](/help/assets/add-assets.md#upload-assets)
+* [如何预览资产](/help/assets/dynamic-media/previewing-assets.md)
+* [如何预览3D资产](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [如何交付Dynamic Media资产](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [如何发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [使用 Dynamic Media 中的“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media教程_
 
 * [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜索 *Dynamic Media*)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜索 _Dynamic Media_)
 
 _Dynamic Media查看器_
 
-* [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)
+* [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html) 每个查看者
+
+## 此Dynamic Media历程中的下一步是什么 {#whats-next}
+
+在此历程的第II部分，您将仔细研究Dynamic Media URL，以便更好地了解交付资产时所发生的情况。 您还将了解创建图像预设以渲染资产背后的基本原理，并了解图像集、旋转集和混合媒体集以及它们的创建方式。
+
+带我去 [Dynamic Media历程:基础知识，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
