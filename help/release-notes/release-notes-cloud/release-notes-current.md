@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
+source-git-commit: 9857376cb196b8aaa9fac64636727b5ad20a0360
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 26%
+source-wordcount: '617'
+ht-degree: 23%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 26%
 
 * 您现在可以 [排序标记](/help/assets/organize-assets.md#use-tags-to-organize-assets) 根据标记名称、创建日期或修改日期，在标记选取器窗口中以升序或降序显示。
 
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
@@ -80,6 +79,14 @@ AEMas a Cloud ServiceSDK生成分析器Maven插件可检测Maven项目中的问�
 * `content-packages-validation`  — 验证在部署期间安装的包的格式正确的内容语法和结构
 
 强烈建议使用最新版本的分析器更新您的maven项目，或者包含分析器（如果尚未更新）。 有关更多信息，请参阅此文档 [此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+
+## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础安全 {#foundation-security}
+
+### 弃用TLS 1.0、1.1
+
+从2022年6月30日开始，Experience Manageras a Cloud Service将需要与用户系统进行更加安全的网络通信和数据交换。 AEM将专门使用传输层安全性(TLS)1.2协议。 弃用旧版TLS 1.0和1.1。
+
+如果您继续将旧版TLS用作1.0、1.1，则可能会失去对Experience Manageras a Cloud Service的访问权限。
 
 ## Cloud Manager {#cloud-manager}
 
