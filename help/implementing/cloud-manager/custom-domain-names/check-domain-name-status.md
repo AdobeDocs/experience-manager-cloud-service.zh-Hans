@@ -2,9 +2,9 @@
 title: 正在检查域名状态
 description: 了解如何确定Cloud Manager是否成功验证了您的自定义域名。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,24 @@ Cloud Manager将通过TXT值验证域所有权，并显示以下状态消息之�
    * 请参阅该文档 [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) 以了解更多。
 
 在您选择 **保存** 关于 **添加自定义域** 向导。 对于后续的验证，必须主动选择状态旁边的再次验证图标。
+
+## 域名错误 {#domain-error}
+
+本节将介绍您可能看到的错误以及如何解决这些错误。
+
+**未安装域**  — 在TXT记录的域验证期间，即使已检查记录是否已正确更新，您仍会收到此错误。
+
+**错误说明**  — 快速将域锁定到注册该域的初始帐户，任何其他帐户都无需请求权限即可注册子域。 此外，Fastly仅允许您将一个顶域和相关子域分配给一个Fastly服务和帐户。 如果您现有的Fastly帐户将AEM Cloud Service域所使用的相同顶点和子域链接在一起，则会看到此错误。
+
+**错误解决**  — 错误已修复，如下所示：
+
+* 在Cloud Manager中安装域之前，请从现有帐户中删除该域的顶点和子域。 使用此选项可将顶点域和所有子域链接到AEMas a Cloud ServiceFastly帐户。 请参阅 [在Fastly文档中使用域](https://docs.fastly.com/en/guides/working-with-domains) 以了解更多详细信息。
+
+* 如果您的Apex域有多个要链接到不同Fastly帐户的AEMas a Cloud Service网站和非AEMas a Cloud Service网站的子域，请尝试在Cloud Manager中安装该域，如果域安装失败，请使用Fastly创建客户支持票证，以便我们可以代表您跟踪Fastly。
+
+>[!NOTE]
+>
+>注意：如果未成功安装域，请勿将网站的DNS路由到AEMas a Cloud ServiceIP。
 
 ## 针对自定义域名的预先存在的CDN配置 {#pre-existing-cdn}
 
