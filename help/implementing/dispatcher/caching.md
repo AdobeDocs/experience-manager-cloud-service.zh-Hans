@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -181,6 +181,10 @@ Define DISABLE_DEFAULT_CACHING
          Header set Age 0
       </LocationMatch>
       ```
+
+### HEAD请求行为 {#request-behavior}
+
+在AdobeCDN中接收HEAD请求时， **not** 缓存后，调度程序和/或AEM实例将该请求转换并作为GET请求接收。 如果响应可缓存，则随后将从CDN提供HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内(取决于 `Cache-Control` TTL。
 
 ## 调度程序缓存失效 {#disp}
 
