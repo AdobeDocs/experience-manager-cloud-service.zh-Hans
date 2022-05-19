@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 3%
+source-wordcount: '1795'
+ht-degree: 4%
 
 ---
 
@@ -167,6 +167,8 @@ CDN边缘节点有助于加快请求的二进制文件上传。
 | `versionLabel` | 字符串 | 可选 | 如果创建了新版本，则会显示与资产新版本关联的标签。 |
 | `versionComment` | 字符串 | 可选 | 如果创建了新版本，则与该版本关联的注释。 |
 | `replace` | 布尔型 | 可选 | 如果 `True` 并且存在具有指定名称的资产， [!DNL Experience Manager] 删除资产，然后重新创建资产。 |
+| `uploadDuration` | 数值 | 可选 | 文件完整上传的总时间（以毫秒为单位）。 如果指定，则上载持续时间将包含在系统的日志文件中，用于传输率分析。 |
+| `fileSize` | 数值 | 可选 | 文件的大小（以字节为单位）。 如果指定，则文件大小将包含在系统的日志文件中，用于传输速率分析。 |
 
 >[!NOTE]
 如果资产存在且 `createVersion` nor `replace` ，则 [!DNL Experience Manager] 使用新的二进制文件更新资产的当前版本。
