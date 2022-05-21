@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3763'
 ht-degree: 16%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 16%
 
 作者在内容查找器中搜索图像和以下类型的文档，并在页面编辑器中拖动搜索到的资产。 文档将添加到 `Download` 组件和图像 `Image` 组件。 作者还可以在任何自定义中添加远程资产 [!DNL Experience Manager] 扩展默认值的组件 `Download` 或 `Image` 组件。 支持的格式包括：
 
-* **图像格式**:格式 [图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 支持。
+* **图像格式**:格式 [图像组件](file-format-support.md#image-formats) 支持。
 * **文档格式**:请参阅 [支持的文档格式](file-format-support.md#document-formats).
 
 ### 涉及的用户和组 {#users-and-groups-involved}
