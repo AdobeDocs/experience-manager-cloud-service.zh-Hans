@@ -2,9 +2,9 @@
 title: '注册、登录和用户配置文件 '
 description: 了解AEMas a Cloud Service的注册、登录、用户数据和组同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
+source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1174'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Web应用程序通常提供帐户管理功能，供最终用户在网站上注�
 >
 >只有用户凭据的初始身份验证才会通过IdP验证，并且只要Cookie可用，随后对AEM的请求就会使用AEM登录令牌Cookie执行。
 
-有关 [SAML 2.0身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en#saml-authentication-handler).
+有关 [SAML 2.0身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
