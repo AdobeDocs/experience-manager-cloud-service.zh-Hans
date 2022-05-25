@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 0%
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -83,31 +83,42 @@ Define DISABLE_DEFAULT_CACHING
 * 通过使用AEM客户端库框架，可以生成JavaScript和CSS代码，以便浏览器可以无限期地缓存它，因为任何更改都将显示为具有唯一路径的新文件。  换言之，将根据需要生成引用客户端库的HTML，以便客户在发布新内容时能够体验到新内容。 对于不遵循“不可变”值的旧版浏览器，缓存控制将设置为“不可变”或30天。
 * 请参阅部分 [客户端库和版本一致性](#content-consistency) 以了解更多详细信息。
 
-### 图像和任何存储在blob存储中且足够大的内容 {#images}
+### 图像和任何足够大且可存储到blob存储中的内容 {#images}
 
-* 默认情况下，未缓存
-* 可以由以下apache在更细粒度级别进行设置 `mod_headers` 指令：
+2022年5月中旬之后创建的程序(特别是高于65000的程序ID)的默认行为是默认缓存，同时尊重请求的身份验证上下文。 默认情况下，旧程序(程序ID等于或低于65000)不会缓存Blob内容。
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+在这两种情况下，可以使用Apache在Apache/Dispatcher层以更细粒度级别覆盖缓存标头 `mod_headers` 指令，例如：
 
-   请参阅上面html/文本部分中的讨论，以了解如何谨慎避免缓存过于广泛，以及如何强制AEM始终使用“始终”选项应用缓存。
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   必须确保 `src/conf.dispatcher.d/`缓存具有以下规则（默认配置中）：
+修改调度程序层的缓存标头时，请小心不要缓存得太广，请参阅HTML/文本部分中的讨论 [以上](#html-text))。 此外，请确保要保持私有（而不是缓存）的资产不属于 `LocationMatch` 指令筛选器。
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### 新的默认缓存行为 {#new-caching-behavior}
 
-   确保要保留为私有而非缓存的资产未包含在LocationMatch指令筛选器中。
+AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存标头。 请注意，如果未设置缓存控制标头，则会缓存公共内容，并将经过身份验证的流量设置为私有。 如果已设置缓存控制标头，则缓存标头将不受影响。
 
-   >[!NOTE]
-   >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，则无法成功覆盖值。
+| 是否存在缓存控制标头？ | 请求类型 | AEM将缓存标头设置为 |
+|------------------------------|---------------|------------------------------------------------|
+| 否 | 公共 | Cache-Control:public， max-age=600，不可变 |
+| 否 | 已验证 | Cache-Control:private，max-age=600，不可变 |
+| 是 | 任何 | 未更改 |
+
+虽然不推荐，但可以通过设置Cloud Manager环境变量来更改新的默认行为，以遵循旧行为(程序ID等于或小于65000) `AEM_BLOB_ENABLE_CACHING_HEADERS` 为false。
+
+#### 旧的默认缓存行为 {#old-caching-behavior}
+
+默认情况下，AEM层不会缓存Blob内容。
+
+>[!NOTE]
+>建议通过将Cloud Manager环境变量AEM_BLOB_ENABLE_CACHING_HEADERS设置为true，将旧的默认行为更改为与新行为(程序ID大于65000)一致。 如果程序已处于实时状态，请确保您确认在进行更改后，内容会按预期运行。
+
+>[!NOTE]
+>其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，则无法成功覆盖值。
 
 ### 节点存储中的其他内容文件类型 {#other-content}
 
@@ -115,7 +126,7 @@ Define DISABLE_DEFAULT_CACHING
 * 默认值不能设置为 `EXPIRATION_TIME` 用于html/文本文件类型的变量
 * 可通过指定适当的正则表达式，使用html/text部分中描述的相同LocationMatch策略来设置缓存过期
 
-### 富特优化
+### 进一步优化 {#further-optimizations}
 
 * 避免使用 `User-Agent` 作为 `Vary` 标题。 旧版默认Dispatcher设置（在原型版本28之前）包含此内容，我们建议您使用以下步骤删除该设置。
    * 在 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
