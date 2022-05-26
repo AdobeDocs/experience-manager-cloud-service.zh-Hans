@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -96,7 +96,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-修改调度程序层的缓存标头时，请小心不要缓存得太广，请参阅HTML/文本部分中的讨论 [以上](#html-text))。 此外，请确保要保持私有（而不是缓存）的资产不属于 `LocationMatch` 指令筛选器。
+修改调度程序层的缓存标头时，请小心不要缓存得太广，请参阅HTML/文本部分中的讨论 [以上](#html-text). 此外，请确保要保持私有（而不是缓存）的资产不属于 `LocationMatch` 指令筛选器。
 
 #### 新的默认缓存行为 {#new-caching-behavior}
 
