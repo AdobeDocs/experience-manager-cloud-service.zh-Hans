@@ -2,9 +2,9 @@
 title: 评估 KPI
 description: 评估 KPI
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: 6c6412a05bc00480623ee0d08106f53f4c0c416a
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '539'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,3 @@ Experience Manager 启动之后，一组可靠的 KPI 可以让您快速确定�
 >[!TIP]
 >
 > 如果您需要有关 KPI 的更多帮助，请联系 [Adobe 咨询服务](https://www.adobe.com/cn/experience-cloud/consulting-services.html)或您的实施合作伙伴。
-
-有关大型公司通过使用 Adobe Experience Manager 取得的成果类型的更多示例，请下载 IDC 报告：
-* [Adobe Experience Manager Sites 的业务价值](https://www.adobe.com/cn/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf)
-* [Adobe Experience Manager Assets 的业务价值](https://wwwimages2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)
