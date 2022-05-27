@@ -2,9 +2,9 @@
 title: 如何通过AEM Assets API更新您的内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用REST API访问和更新内容片段的内容。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 3%
 
 ---
@@ -303,7 +303,7 @@ HTTP方法确定要执行的操作：
 * Adobe Experience Manager Assets HTTP API（其他资源）
 * AEM Assets HTTP API中的内容片段支持（其他资源）
 
-## 下一步 {#whats-next}
+## 接下来呢？ {#whats-next}
 
 现在，您已完成AEM Headless开发人员历程的这一部分，接下来您应该：
 
@@ -318,7 +318,7 @@ HTTP方法确定要执行的操作：
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-您应该通过下一步审阅文档来继续您的AEM无头历程 [如何使用您的无头应用程序](go-live.md) 您实际将AEM Headless项目上线！
+您应该通过下一步审阅文档来继续您的AEM无头历程 [如何将所有内容整合在一起 — 在AEM Headless中查看您的应用程序和内容](put-it-all-together.md) 在这里，您将了解将应用程序整合在一起所需的AEM架构基础知识和工具。
 
 ## 其他资源 {#additional-resources}
 
