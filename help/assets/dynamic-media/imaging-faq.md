@@ -4,9 +4,9 @@ description: 了解Adobe Sensei AI智能成像如何应用每个用户的独特�
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2629'
 ht-degree: 1%
 
 ---
@@ -78,9 +78,10 @@ ht-degree: 1%
 |---|---|
 | `network=off` | 在单个图像URL级别关闭网络优化。 |
 
->[!NOTE]
->
->DPR和网络带宽值基于检测到的捆绑CDN的客户端值。 这些值有时不准确。 例如，DPR=2的iPhone5和DPR=3的iPhone12，都会显示DPR=2。 但是，对于高分辨率设备，发送DPR=2比发送DPR=1要好。 即将推出：Adobe正在使用客户端代码来准确确定最终用户的DPR。
+DPR和网络带宽值基于检测到的捆绑CDN的客户端值。 这些值有时不准确。 例如，DPR为2的iPhone5和iPhone12与 `dpr=3`，两个节目 `dpr=2`. 不过，对于高分辨率设备，发送 `dpr=2` 比发送好 `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+客户端DPR可为您提供100%的准确值，并且适用于任何设备，无论是Apple还是任何其他刚刚启动的新设备。
 
 ## 最新的“智能成像”功能有哪些主要优势？ {#what-are-the-key-benefits-of-smart-imaging}
 

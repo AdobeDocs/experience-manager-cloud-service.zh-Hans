@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 06b98a0613b860e4192391c5c0d29079bec82b1e
+source-git-commit: 8f75eb16718bba38bc6a12d5558f50335fd647aa
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3484'
 ht-degree: 98%
 
 ---
@@ -375,8 +375,8 @@ ht-degree: 98%
       + [预览 - JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media历程:基础知识 {#dm-journey}
-         + [基础知识：第一部分](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [基础知识：第二部分](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [第一部分：什么是Dynamic Media — 用例 — 资产如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [第二部分：Dynamic Media URL的剖析 — 图像预设的基础知识 — 关于图像集、旋转集和混合媒体集](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League 存档的 Dynamic Media 新闻稿](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [设置 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
