@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
+source-git-commit: 263808980a9542b1a333c59e68e59122cf43025d
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3525'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ DPR和网络带宽值基于检测到的捆绑CDN的客户端值。 这些值有�
 
 ## 智能成像的工作原理是什么？ {#how-does-smart-imaging-work}
 
-当消费者请求图像时，智能成像会检查用户特征，并根据使用中的浏览器转换为适当的图像格式。 执行这些格式转换的方式不会降低视觉保真度。 智能成像可根据浏览器功能以下方式自动将图像转换为不同格式。
+当消费者请求图像时，智能成像会检查用户特征，并根据使用中的浏览器将其转换为适当的图像格式。 执行这些格式转换的方式不会降低视觉保真度。 智能成像可根据浏览器功能以下方式自动将图像转换为不同格式。
 
 * 如果浏览器支持格式，则自动转换为AVIF
 * 如果AVIF转换不利或浏览器不支持AVIF，则自动转换为WebP
