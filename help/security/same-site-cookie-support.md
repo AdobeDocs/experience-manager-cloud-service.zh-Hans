@@ -2,10 +2,10 @@
 title: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
 description: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '287'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,15 @@ ht-degree: 100%
 
 要解决此问题，您需要将登录令牌的 SameSite Cookie 属性设置为 `None`。
 
-可执行以下步骤来做到这一点：
+>[!CAUTION]
+>
+>的 `SameSite=None` 仅当协议安全(HTTPS)时才应用设置。
+>
+>如果协议不安全(HTTP)，则将忽略该设置，服务器将显示以下WARN消息：
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+您可以按照以下步骤添加设置：
 
 1. 在本地安装 AEM SDK 快速入门版本
 1. 转至位于 `http://serveraddress:serverport/system/console/configMgr` 的 Web 控制台
