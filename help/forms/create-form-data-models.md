@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
+source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1531'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
    * 指定表单数据模型的名称。
    * (**可选**)为表单数据模型指定标题、描述和标记。
-   * (**仅当配置了数据源时，才可选且适用**)点按 **[!UICONTROL 数据源配置]** 字段，然后选择云服务所在的配置节点。 它将下一页可供选择的数据源列表限制为选定配置节点中可用的数据源列表。 但是，任何JDBC数据库和 [!DNL Experience Manager] 默认情况下，会列出用户配置文件数据源。 如果不选择配置节点，则会列出来自所有配置节点的数据源。
+   * (**仅当配置了数据源时，才可选且适用**)点按 **[!UICONTROL 数据源配置]** 字段，然后选择云服务所在的配置节点。 它将下一页可供选择的数据源列表限制为选定配置节点中可用的数据源列表。 但是，任何 [!DNL Experience Manager] 默认情况下，会列出用户配置文件数据源。 如果不选择配置节点，则会列出来自所有配置节点的数据源。
 
 1. 点按 **[!UICONTROL 下一个]**.
 

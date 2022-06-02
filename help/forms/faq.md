@@ -3,9 +3,9 @@ title: 'Formsas a Cloud Service常见问题解答 '
 description: Formsas a Cloud Service常见问题解答
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
@@ -89,3 +89,7 @@ Custom parameters are planned for an upcoming release. -->
 
 * **哪些功能未包含在初始GA版本中？**
 Forms门户网站， [!DNL AEM Forms] 应用程序、与Adobe Analytics集成以及与Adobe Target集成未包含在初始GA版本中。 有关新增功能的信息，请查看月度发行说明。
+
+* **我设计了一个 [用于创建自适应表单的JSON模式](adaptive-form-json-schema-form-model.md). JSON架构为自适应表单的某些组件定义事件。 AEM Formsas a Cloud Service是否支持事件？**
+在Experience Manager6.5 Forms环境中基于JSON架构创建自适应表单，并使用 [迁移实用程序](migrate-to-forms-as-a-cloud-service.md) 将此类自适应Forms迁移到AEM Formsas a Cloud Service。 该实用程序会将此类事件转换为客户端库，您可以继续将自适应Forms与Cloud Service环境中的事件结合使用。
+
