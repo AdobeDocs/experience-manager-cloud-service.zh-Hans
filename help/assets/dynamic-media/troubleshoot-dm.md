@@ -3,9 +3,9 @@ title: Dynamic Media 疑难解答
 description: 使用Dynamic Media时的疑难解答提示。
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1135'
 ht-degree: 1%
 
 ---
@@ -169,53 +169,71 @@ ht-degree: 1%
 
 如果您在查看器方面遇到问题，请参阅以下疑难解答指南。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>带有 OS 剪贴板</strong></td>
-   <td><strong>如何调试</strong></td>
-   <td><strong>解决方案</strong></td>
-  </tr>
-  <tr>
-   <td>查看器预设未发布</td>
-   <td><p>继续执行示例管理器诊断页面： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>观察计算值。 正确操作时，您会看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资产。</p> <p>如果未激活的资产仍保留，请选择 <strong>列出所有未激活的资产</strong> 按钮以查看详细信息。</p> </td>
-   <td>
-    <ol>
-     <li>在管理工具中导航到查看器预设列表： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>选择所有查看器预设，然后选择 <strong>发布</strong>.</li>
-     <li>导航回示例管理器，并观察未激活的资产计数现在为零。</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>查看器预设图稿会从资产详细信息的预览或复制URL/嵌入代码中返回404</td>
-   <td><p>在CRXDE Lite中，执行以下操作：</p>
-    <ol>
-     <li>导航到 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> 文件夹(例如， <code>/content/dam/_CSS/_OOTB</code>)、</li>
-     <li>查找有问题资产的元数据节点(例如， <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>)。</li>
-     <li>检查是否存在 <code>dam:scene7*</code> 属性。 如果资产已成功同步和发布，您会看到 <code>dam:scene7FileStatus</code> 设置为 <strong>PublishComplete</strong>.</li>
-     <li>尝试通过连接以下属性的值和字符串文本直接从Dynamic Media请求图稿
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>示例: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>如果示例资产或查看器预设图稿未同步或发布，请重新启动整个复制/同步过程：</p>
-    <ol>
-     <li>导航至 <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
-     </li>
-     <li>按顺序选择以下操作：
-      <ol>
-       <li>删除同步文件夹。</li>
-       <li>删除预设文件夹（下） <code>/conf</code>)。
-       <li>触发DM安装异步作业。</li>
-      </ol> </li>
-     <li>在您的Experience Manager收件箱中等待同步成功通知。
-     </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### 问题：查看器预设未发布 {#viewers-not-published}
+
+**如何调试**
+
+1. 继续执行示例管理器诊断页面： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. 观察计算值。 正确操作时，您会看到以下内容： `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资产。
+
+1. 如果未激活的资产仍保留，请选择 **列出所有未激活的资产** 按钮以查看详细信息。
+
+**解决方案**
+
+1. 在管理工具中导航到查看器预设列表： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. 选择所有查看器预设，然后选择 **发布**.
+1. 导航回示例管理器，并观察未激活的资产计数现在为零。
+
+### 问题：查看器预设图稿会从资产详细信息的“预览”或“复制URL/嵌入代码”中返回404 {#viewer-preset-404}
+
+**如何调试**
+
+在CRXDE Lite中，执行以下操作：
+
+1. 导航到 `<sync-folder>/_CSS/_OOTB` 文件夹(例如， `/content/dam/_CSS/_OOTB`)。
+1. 查找有问题资产的元数据节点(例如， `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`)。
+1. 检查是否存在 `dam:scene7*` 属性。 如果资产已成功同步和发布，您会看到 `dam:scene7FileStatus` 设置为 **PublishComplete**.
+1. 尝试通过连接以下属性的值和字符串文字，直接从Dynamic Media请求图稿：
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+示例: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**解决方案**
+
+如果示例资产或查看器预设图稿未同步或发布，请重新启动整个复制/同步过程：
+
+1. 导航到CRXDE Lite。
+1. 删除 `<sync-folder>/_CSS/_OOTB`.
+1. 导航到CRX包管理器： `https://localhost:4502/crx/packmgr/`.
+1. 在列表中搜索查看器包；开始于 `cq-dam-scene7-viewers-content`.
+1. 选择 **重新安装**.
+1. 在“Cloud Services”下，导航到Dynamic Media配置页面，然后打开Dynamic Media - S7配置的配置对话框。
+1. 不进行更改，请选择 **保存**.
+此保存操作会再次触发逻辑，以创建和同步示例资产、查看器预设CSS和图稿。
+
+### 问题：在查看器预设创作中未加载图像预览 {#image-preview-not-loading}
+
+**解决方案**
+
+1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后导航到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL CRXDE Lite]**.
+1. 在左边栏中，导航到位于以下位置的示例内容文件夹：
+
+   `/content/dam/_DMSAMPLE`
+
+1. 删除 `_DMSAMPLE` 文件夹。
+1. 在左边栏中，导航到位于以下位置的预设文件夹：
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. 删除 `viewer` 文件夹。
+1. 在CRXDE Lite页面的左上角附近，选择 **[!UICONTROL 全部保存]**.
+1. 在CRXDE Lite页面的左上角，选择 **返回主页** 图标。
+1. 重新创建 [Dynamic Media在Cloud Services中的配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
