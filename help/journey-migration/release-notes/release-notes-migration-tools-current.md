@@ -2,7 +2,7 @@
 title: AEMas a Cloud Service版本2022.6.0中迁移工具的发行说明
 description: AEMas a Cloud Service版本2022.6.0中迁移工具的发行说明
 feature: Release Information
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 5%
@@ -22,11 +22,8 @@ Best Practices Analyzer v2.1.30的发布日期是2022年6月1日。
 ### 新增功能 {#what-is-new-bpa}
 
 * 能够使用CoralUI和经典对话框小组件检测并报告自定义对话框小组件的使用情况。 建议将自定义经典对话框小组件从ExtJS转换为CoralUI。 应将自定义Coral对话框小组件更新为CoralUI3。
-
 * 能够检测并报告资产共享共用的使用情况和版本。 AEMas a Cloud Service不支持资产共享共用1.x，必须将其升级到2.x。
-
 * 能够检测并报告来自版本的节点数。
-
 * 能够检测和报告已修改的自定义复制代理或现成复制代理。
 
 ### 错误修复 {#bug-fixes-bpa}
