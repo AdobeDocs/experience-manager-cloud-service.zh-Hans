@@ -1,15 +1,16 @@
 ---
-title: 验证内容传输
+title: 验证内容传输（旧版）
 description: 使用内容传输工具验证内容传输
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '950'
+ht-degree: 1%
 
 ---
 
-# 验证内容传输 {#validating-content-transfers}
+# 验证内容传输（旧版） {#validating-content-transfers}
 
 ## 快速入门 {#getting-started}
 
@@ -44,11 +45,11 @@ ht-degree: 2%
 
 * **提取（覆盖）**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **摄取（划出）**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **注释**
 
@@ -58,11 +59,11 @@ ht-degree: 2%
 
 * **提取**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **摄取**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **注释**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 上述失败示例是通过运行摄取，然后在禁用划出的情况下再次运行同一摄取来实现的，这样在摄取期间就不涉及任何节点 — 目标上已存在所有内容。
 
-除了包含在摄取日志中外，还可以从 **摄取作业** Cloud Acceleration Manager中的用户界面。 为此，请单击三个圆点(**...**)，然后单击 **验证报告** 在下拉菜单中查看验证报表。
+除了包含在摄取日志中之外，还可以从内容传输工具用户界面访问验证报表。 要执行此操作，请选择迁移集，然后单击 **验证** 按钮：
 
 
-![图像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![图像](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+将打开验证日志对话框：
+
+![图像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+使用 **验证发布/创作报表** 按钮以查看最近向目标环境的给定层摄取的验证报表。 请参阅下面来自小型发布摄取的示例：
+
+![图像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>的 **验证发布/创作报表** 摄取完成后，将显示链接。 此外，验证报表会保留，以便不会像摄取日志那样在摄取完成后过期。
 
 ## 疑难解答 {#troubleshooting}
 

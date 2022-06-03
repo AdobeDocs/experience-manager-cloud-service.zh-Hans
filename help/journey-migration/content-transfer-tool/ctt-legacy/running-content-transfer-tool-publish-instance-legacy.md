@@ -1,15 +1,16 @@
 ---
-title: 在发布实例上运行内容传输工具
+title: 在发布实例（旧版）上运行内容传输工具
 description: 在发布实例上运行内容传输工具
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '272'
+ht-degree: 4%
 
 ---
 
-# 在发布实例上运行内容传输工具 {#run-content-transfer-tool-publish-instance}
+# 在发布实例（旧版）上运行内容传输工具 {#run-content-transfer-tool-publish-instance}
 
 ## 简介 {#introduction}
 
@@ -25,6 +26,8 @@ ht-degree: 11%
 * 使用与创作实例中使用的内容传输工具的相同版本。
 
 * 只需迁移一个发布节点。 应在开始提取之前从负载平衡器中删除该数据集。
+
+* 创建迁移集时，请使用创作AEMas a Cloud Service环境的URL。
 
 * 在摄取以发布期间，不会缩小发布层（与作者不同）。
 

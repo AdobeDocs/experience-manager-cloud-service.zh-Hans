@@ -1,26 +1,21 @@
 ---
-title: 处理大型内容存储库
+title: 处理大型内容存储库（旧版）
 description: 本节介绍如何处理大型内容存储库
-exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 2%
+source-wordcount: '1638'
+ht-degree: 1%
 
 ---
 
-# 处理大型内容存储库 {#handling-large-content-repositories}
+# 处理大型内容存储库（旧版） {#handling-large-content-repositories}
 
 ## 概述 {#overview}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_precopy"
->title="处理大型内容存储库"
->abstract="为了显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service,CTT可以将AzCopy作为可选的预复制步骤。 配置此预先步骤后，在提取阶段，AzCopy会将Blob从Amazon S3或Azure Blob Storage复制到迁移集Blob存储。 在摄取阶段，AzCopy将Blob从迁移集Blob存储复制到目标AEMas a Cloud ServiceBlob存储。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="开始使用AzCopy作为预复制步骤"
-
 使用内容传输工具(CTT)复制大量Blob可能需要多天。
-为了显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service,CTT可以利用 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作为可选的预复制步骤。 在将源AEM实例配置为使用Amazon S3、Azure Blob Storage数据存储或文件数据存储时，可以使用此预复制步骤。 预复制步骤对于第1次完全提取和摄取最有效。 但是，不建议对后续增补使用预复制（如果增补大小小于200GB），因为它可能会为整个过程添加时间。 配置此预先步骤后，在提取阶段，AzCopy将Blob从Amazon S3、Azure Blob Storage或文件数据存储复制到迁移集Blob存储。 在摄取阶段，AzCopy将Blob从迁移集Blob存储复制到目标AEMas a Cloud ServiceBlob存储。
+为了显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service,CTT可以利用 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作为可选的预复制步骤。 在将源AEM实例配置为使用Amazon S3、Azure Blob Storage数据存储或文件数据存储时，可以使用此预复制步骤。 配置此预先步骤后，在提取阶段，AzCopy将Blob从Amazon S3、Azure Blob Storage或文件数据存储复制到迁移集Blob存储。 在摄取阶段，AzCopy将Blob从迁移集Blob存储复制到目标AEMas a Cloud ServiceBlob存储。
 
 >[!NOTE]
 > 此功能已在CTT 1.5.4版本中引入。

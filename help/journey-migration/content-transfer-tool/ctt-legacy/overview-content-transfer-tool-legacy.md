@@ -1,46 +1,20 @@
 ---
-title: 内容传输工具概述
+title: 内容传输工具概述（旧版）
 description: 内容传输工具概述
-exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 43%
+source-wordcount: '476'
+ht-degree: 63%
 
 ---
 
-# 概述 {#overview-content-transfer-tool}
-
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="概述"
->abstract="内容传输工具是由Adobe开发的工具，可用于将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例。 此工具还会自动传输主体（用户或组）。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="准则和最佳实践"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+# 内容传输工具概述（旧版） {#overview-content-transfer-tool}
 
 内容传输工具是 Adobe 开发的一个工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM 云服务实例。
 
 此工具还会自动传输主体（用户或组）。
-
-提供了内容传输工具的新版本，该版本将内容传输流程与Cloud Acceleration Manager集成在一起。 强烈建议切换到此新版本，以利用该版本提供的所有优势：
-
-* 一次提取迁移集并将其并行摄取到多个环境的自助方法
-* 通过更好的加载状态、护栏和错误处理来改善用户体验
-* 将保留摄取日志，并始终可用于疑难解答
-
-开始使用新版本(Vxx) <!-- update when version is available --> 由于内容传输工具的体系结构发生了重大更改，因此您需要卸载旧版内容传输工具。
-
->[!NOTE]
->
-> 如果迁移已在进行中，您可以继续使用以前版本的CTT，直到迁移完成。 有关与以前版本的CTT相关的文档，请参阅 [旧版文档](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## 内容传输工具中的阶段 {#phases-content-transfer-tool}
 
@@ -61,8 +35,11 @@ ht-degree: 43%
 
 迁移集具有以下属性：
 
-* 使用新版本，您可以在Cloud Acceleration Manager中创建的项目中最多创建5个迁移集。
+* 在内容传输活动期间，一次最多可以创建和维护10个迁移集。
 * 每个迁移集应具有唯一的名称。
+* 如果迁移集处于非活动状态的时间超过 30 天，则将会自动删除该迁移集。
+* 每当您创建迁移集时，它都会与特定环境关联。您只能摄取到同一环境的创作或发布实例中。
+
 
 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
 
