@@ -4,7 +4,7 @@ description: 了解图像预设以及如何创建、修改和管理图像预设�
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 22%
@@ -236,7 +236,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
 * **[!UICONTROL 启用简单锐化]** - 请勿选择&#x200B;**[!UICONTROL 启用简单锐化]**（此锐化滤镜提供的控制度低于“钝化蒙版”设置）。
 
-* **[!UICONTROL 锐化：重新取样模式]**  — 选择 **[!UICONTROL 两次立方]**.
+* **[!UICONTROL 锐化：重新取样模式]**  — 选择 **[!UICONTROL 锐化2]**.
 
 #### “基本”选项卡选项 {#basic-tab-options}
 
