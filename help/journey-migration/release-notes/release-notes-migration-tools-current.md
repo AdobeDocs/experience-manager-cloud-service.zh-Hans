@@ -1,17 +1,17 @@
 ---
-title: AEMas a Cloud Service版本2022.6.0中迁移工具的发行说明
-description: AEMas a Cloud Service版本2022.6.0中迁移工具的发行说明
+title: AEMas a Cloud Service版本2022.5.0中迁移工具的发行说明
+description: AEMas a Cloud Service版本2022.5.0中迁移工具的发行说明
 feature: Release Information
-source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
+source-git-commit: 48dd6b3184cdde06b902eae35fac42515f606e77
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 5%
 
 ---
 
-# AEMas a Cloud Service版本2022.6.0中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service版本2022.5.0中迁移工具的发行说明 {#release-notes}
 
-本页概述了AEM 2022.6.0as a Cloud Service中迁移工具的发行说明。
+本页概述了AEM 2022.5.0as a Cloud Service中迁移工具的发行说明。
 
 ## Best Practices Analyzer {#bpa-release}
 
