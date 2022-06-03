@@ -2,7 +2,7 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 43%
@@ -36,7 +36,7 @@ ht-degree: 43%
 * 通过更好的加载状态、护栏和错误处理来改善用户体验
 * 将保留摄取日志，并始终可用于疑难解答
 
-开始使用新版本(Vxx) <!-- update when version is available --> 由于内容传输工具的体系结构发生了重大更改，因此您需要卸载旧版内容传输工具。
+开始使用新版本(v2.0.10) <!-- update when version is available --> 由于内容传输工具的体系结构发生了重大更改，因此您需要卸载旧版内容传输工具。
 
 >[!NOTE]
 >

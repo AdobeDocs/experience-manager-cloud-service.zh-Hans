@@ -2,7 +2,7 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 9%
@@ -102,7 +102,7 @@ ht-degree: 9%
 
 要填充在Cloud Acceleration Manager中创建的迁移集，您需要在源Adobe Experience Manager(AEM)实例上安装最新版本的内容传输工具。 请阅读本节内容，了解如何填充迁移集。
 
-1. 在源Adobe Experience Manager实例上安装最新版本(Vxxx)的内容传输工具后，转到 **操作 — 内容迁移**
+1. 在源Adobe Experience Manager实例上安装最新版本(v2.0.10)的内容传输工具后，转到 **操作 — 内容迁移**
 
 1. 单击 **创建迁移集**
 
