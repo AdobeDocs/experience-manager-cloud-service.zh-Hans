@@ -1,13 +1,13 @@
 ---
 title: Experience Manager [!DNL AEM Forms] as a Cloud Service架构
 description: 了解的架构 [!DNL AEM Forms] as a Cloud Service了解该平台的可扩展性、可复原性和性能方面。
-source-git-commit: cb7b417b9b4898b0656e79d6f699e8d5cd611e76
+exl-id: 9d677bee-50ca-460e-b503-6b7799900735
+source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1045'
 ht-degree: 3%
 
 ---
-
 
 # [!DNL AEM] Formsas a Cloud Service架构 {#architecture}
 
@@ -15,13 +15,11 @@ ht-degree: 3%
 
 AEM Forms as a Cloud Service支持两个主要用例：数字注册和客户通信。 下图描述了两个用例的架构。
 
-## 架构和流程图
-
-**Forms数字注册**
+## Forms数字注册
 
 ![Forms — 数字注册](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
-**Forms通信**
+## Forms通信
 
 ![Forms — 通信](assets/forms-cloud-service-architecture-forms-communications.svg)
 
