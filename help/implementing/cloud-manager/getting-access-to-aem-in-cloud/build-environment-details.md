@@ -2,9 +2,9 @@
 title: 生成环境
 description: 了解Cloud Manager的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
+source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
@@ -94,6 +94,12 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。
 >[!NOTE]
 >
 >从2022年4月开始，OracleJDK将成为用于开发和操作AEM应用程序的默认JDK。 即使在Maven工具链中明确选择了替代选项，Cloud Manager的构建过程也会自动切换到使用OracleJDK。 有关更多详细信息，请参阅发布后的4月发行说明。
+
+#### 备用Maven执行JDK版本 {#alternate-maven-jdk-version}
+
+还可以选择Java 8或Java 11作为整个Maven执行的JDK。 与工具链选项不同，这会更改所有插件所使用的JDK，除非还设置了工具链配置，在这种情况下，仍然会将工具链配置应用于具有工具链感知功能的Maven插件。 因此，请使用 [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 都行。
+
+为此，请创建一个名为 `.cloudmanager/java-version` 在管道使用的git存储库分支中。 此文件可以包含内容11或8。 任何其他值都将被忽略。 如果指定了11，则使用Oracle11，并且 `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk-11.0.2`. 如果指定了8，则使用Oracle8，并且 `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## 环境变量 {#environment-variables}
 
