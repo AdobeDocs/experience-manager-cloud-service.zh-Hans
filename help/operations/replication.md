@@ -2,10 +2,10 @@
 title: 复制
 description: 分发和复制疑难解答。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,9 +58,9 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 为获得最佳性能，在使用此功能时请遵循以下准则：
 * 建议一次复制少于100个路径，且路径硬限制为500个。
-* 复制内容的总大小必须低于5 MB。 这只包括节点和属性，但不包括任何二进制文件，它们包括工作流包和内容包。
+* 复制内容的总大小必须低于10 MB。 这只包括节点和属性，但不包括任何二进制文件，它们包括工作流包和内容包。
 
-### 发布内容树工作流 {#publish-content-tree-workflow}
+### 发布内容树工作流程 {#publish-content-tree-workflow}
 
 您可以通过选择 **工具 — 工作流 — 模型** 和复制 **发布内容树** 现成的工作流模型，如下所示：
 
@@ -194,7 +194,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 **复制API路径和大小限制**
 
-建议复制的路径少于100个，其中500个是硬限制。 超出硬限制时，将引发ReplicationException。 如果您的应用程序逻辑不需要原子复制，则可以通过将ReplicationOptions.setUseAtomicCalls设置为false（将接受任意数量的路径，但在内部创建存储段以保持在此限制以下）来克服此限制。 每个复制调用传输的内容量不得超过5 MB，其中包含节点和属性，但不包含任何二进制文件（工作流包和内容包被视为二进制文件）。
+建议复制的路径少于100个，其中500个是硬限制。 超出硬限制时，将引发ReplicationException。 如果您的应用程序逻辑不需要原子复制，则可以通过将ReplicationOptions.setUseAtomicCalls设置为false（将接受任意数量的路径，但在内部创建存储段以保持在此限制以下）来克服此限制。 每个复制调用传输的内容量不得超过10 MB，其中包含节点和属性，但不包含任何二进制文件（工作流包和内容包被视为二进制文件）。
 
 ## 疑难解答 {#troubleshooting}
 
