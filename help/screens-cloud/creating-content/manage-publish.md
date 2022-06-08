@@ -2,10 +2,10 @@
 title: 在Screens中发布渠道as a Cloud Service
 description: 本页介绍如何在Screens中发布渠道as a Cloud Service。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -47,6 +47,6 @@ ht-degree: 0%
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 下一步 {#whats-next}
+## 接下来呢？ {#whats-next}
 
-现在，您已在项目中发布了渠道，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中安装和配置播放器as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
+现在，您已在项目中发布了渠道，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中安装和配置播放器as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

@@ -2,10 +2,10 @@
 title: 在Screens中创建和管理渠道as a Cloud Service
 description: 本页介绍如何在Screens中创建和管理渠道as a Cloud Service。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
+source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 4%
+source-wordcount: '1107'
+ht-degree: 5%
 
 ---
 
@@ -172,6 +172,6 @@ ht-degree: 4%
 **注意：** 从渠道中删除默认分配详细信息将删除使用该渠道的所有显示屏上的匹配分配。
 因此，如果这些显示屏上没有要播放的替代内容，则这可能会导致出现空白屏幕。
 
-## 下一步 {#whats-next}
+## 接下来呢？ {#whats-next}
 
-现在，您已在项目中设置AEM Screens渠道，因此需要发布渠道。 请参阅 [在屏幕中发布渠道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) 从Screens服务提供商管理您的播放器之前，请执行以下操作：
+现在，您已在项目中设置AEM Screens渠道，因此需要发布渠道。 请参阅 [在屏幕中发布渠道as a Cloud Service](manage-publish.md) 从Screens服务提供商管理您的播放器之前，请执行以下操作：
