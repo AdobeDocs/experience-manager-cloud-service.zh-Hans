@@ -2,10 +2,10 @@
 title: 编辑程序
 description: 了解如何编辑生产和沙盒项目，以在创建项目后调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -32,13 +32,13 @@ ht-degree: 1%
 
    ![编辑程序选项](assets/edit-program-overview.png)
 
-1. 的 **编辑程序** 页面显示两个选项卡： **常规** 和 **解决方案和附加组件**. 选择 **常规** 选项卡，以编辑项目名称和说明。
+1. 的 **编辑程序** 页面。 在 **常规** 选项卡，编辑项目名称和说明。
 
    * 必须为程序至少选择一个解决方案。
 
    ![“常规”选项卡](assets/edit-program-prod1.png)
 
-1. 选择 **解决方案和附加组件** 选项卡来修改程序的解决方案。
+1. 在 **解决方案和附加组件** 选项卡，修改程序的解决方案。
 
    ![选择解决方案](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ ht-degree: 1%
 
    ![编辑加载项](assets/edit-program-add-on.png)
 
+1. 在 **开始实时设置** 选项卡，修改计划的上线日期。
+
+   ![编辑上线设置](assets/edit-program-go-live.png)
+
+   * 此日期仅供参考，并会触发项目概述页面上的上线小组件，以及时提供指向AEMas a Cloud Service最佳实践文档的产品内链接，从而与您的旅程保持一致，最终获得成功且流畅的上线体验。
+
 1. 单击 **更新** 以保存对程序所做的更改。
 
-更新后，如果选定的解决方案发生更改，这些更改将在下次部署后生效。
+每当编辑程序（包括添加或删除解决方案或加载项）时，这些更改都将在下次部署后生效。
 
 ## 删除沙盒程序 {#delete-sandbox-program}
 

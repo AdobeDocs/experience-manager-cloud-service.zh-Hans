@@ -2,9 +2,9 @@
 title: '创建生产程序 '
 description: 了解如何使用Cloud Manager创建您自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '442'
 ht-degree: 2%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 2%
 
    ![Cloud Manager登录页面](assets/first_timelogin1.png)
 
-1. 选择 **为生产设置** 在创建程序向导中创建生产程序。 您可以接受默认程序名称，或在选择 **创建**.
+1. 选择 **为生产设置** 在创建程序向导中创建生产程序。 您可以接受默认程序名称，或在单击 **继续**.
 
    ![创建程序向导](assets/create-prod1.png)
 
-1. 在下一个选项卡中，选择要包含在项目中的解决方案。
+1. 在 **解决方案和附加组件** 选项卡，选择要包含在项目中的解决方案。
 
    ![选择解决方案](assets/setup-prod-select.png)
 
@@ -46,7 +46,16 @@ ht-degree: 2%
 
    ![选择附加组件](assets/setup-prod-commerce.png)
 
-1. 选择解决方案和加载项后，单击 **创建**.
+1. 选择解决方案和加载项后，单击 **继续**.
+
+1. 在 **上线日期** 选项卡，输入计划生产计划上线的日期。
+
+   ![定义计划的上线日期](assets/setup-go-live.png)
+
+   * 此日期可随时编辑。
+   * 此日期仅供参考，并会触发项目概述页面上的上线小组件，以及时提供指向AEMas a Cloud Service最佳实践文档的产品内链接，从而与您的旅程保持一致，最终获得成功且流畅的上线体验。
+
+1. 单击&#x200B;**创建**。
 
 您的项目由Cloud Manager创建，可在登陆页面上显示和选择。
 

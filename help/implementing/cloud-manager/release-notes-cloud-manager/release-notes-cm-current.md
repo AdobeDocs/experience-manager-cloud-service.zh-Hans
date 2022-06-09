@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.5.0发行说明
-description: 以下是AEM as a Cloud Service中Cloud Manager 2022.5.0的发行说明。
+title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.6.0发行说明
+description: 以下是AEM as a Cloud Service中Cloud Manager 2022.6.0的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
+source-git-commit: af1ab1602506cc174e0226a7572ccb12d8ff527a
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 3%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.5.0发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.6.0发行说明 {#release-notes}
 
-本页记录了AEMas a Cloud Service中Cloud Manager 2022.5.0的发行说明。
+本页记录了AEMas a Cloud Service中Cloud Manager 2022.6.0的发行说明。
 
 >[!NOTE]
 >
@@ -21,17 +21,20 @@ ht-degree: 3%
 
 ## 发布日期 {#release-date}
 
-AEM 2022.5.0版的发布日期(2022年5月5日as a Cloud Service)。 下一版本计划于2022年6月9日发布。
+AEM 2022年6月9日as a Cloud Service发布Cloud Manager 2022.6.0版的日期。 下一版计划于2022年6月30日发布。
 
 ## 新增功能 {#what-is-new}
 
-* “环境”页面有一列，用于显示AEM环境版本。
-* 管道执行现在将在执行屏幕上显示UI顶级错误。
-* 通过Cloud Manager UI重新执行生产部署步骤。
-* 重复使用生成图像以重新执行生产部署步骤。
-* 新的API可实现网络基础架构的自助删除。
+* Cloud Manager UI现在允许 [自助内容恢复](/help/operations/backup.md) 到AEM云环境的已知良好状态。
+   * 此功能将在2022.06.0版后的几周内分阶段推出。
+* Cloud Manager登录页面上新增的欢迎卡使用户能够快速访问与租户相关的入门教程和进度量度。
+   * 此功能将在2022.06.0版后的一周内分阶段推出。
+* 具有必需权限的用户可以访问 [许可证功能板](/help/implementing/cloud-manager/license-dashboard.md) ，以查看租户可用权限的详细信息。
+   * AEM Sites是第一个通过云管理功能板提供可用性和使用使用情况的解决方案。
+   * 此功能将在2022.06.0版后的几周内分阶段推出。
+* [新旧账户子帐户和自助服务用户管理](/help/implementing/cloud-manager/user-access-new-relic.md) 现在可通过Cloud Manager UI使用。
+   * 此功能将在2022.06.0版后的几周内分阶段推出。
+* Cloud Service制作项目主页上新增的上线小组件现在提供指导，为成功上线体验做好准备。
+* [现在可以重复使用生成工件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 使用git镜像时。
 
 ## 错误修复 {#bug-fixes}
-
-* UI测试步骤日志中的“下载日志”按钮未下载日志。
-* 在提交触发器和取消批准步骤的上下文中，某些执行被卡住。
