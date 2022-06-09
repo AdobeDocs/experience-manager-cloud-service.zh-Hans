@@ -4,16 +4,16 @@ description: 集成简介 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
+source-git-commit: 1fce2eb37ebeaef966913e3ffdac59e9e126c788
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 2%
+source-wordcount: '947'
+ht-degree: 4%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] 集成 [!DNL Adobe Workfront] {#assets-integration-overview}
 
-[!DNL Adobe Workfront] 是一个工作管理应用程序，可帮助您在一个位置管理工作的整个生命周期。 集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 通过将工作与数字资产管理本质地联系在一起，让组织可以提高内容的快速性和上市时间。 在Workfront中管理其工作的范围内，用户可以访问所需的文档和图像。
+[!DNL Adobe Workfront] 是一个工作管理应用程序，它帮助您集中在一处管理工作的整个生命周期。集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 通过将工作与数字资产管理本质地联系在一起，让组织可以提高内容的快速性和上市时间。 在Workfront中管理其工作的范围内，用户可以访问所需的文档和图像。
 
 的 [!DNL Workfront for Experience Manager enhanced connector] 通过端到端工作流支持增强的业务流程，并提供个性化的端到端客户体验和中央存储。 Adobe提供标准连接器和增强的连接器，以集成这两个解决方案。 请参阅下面支持的功能以进行比较，并参阅 [的新增功能 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
@@ -29,11 +29,14 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe需要部署和配置 [!DNL Adobe Workfront for Experience Manager enhanced connector] 仅通过认证合作伙伴或 [!DNL Adobe Professional Services]. 如果部署和配置时没有经过认证的合作伙伴或 [!DNL Adobe Professional Services]，则Adobe不支持此功能。
+>* Adobe需要部署和配置 [!DNL Adobe Workfront for Experience Manager enhanced connector] 仅通过认证合作伙伴或 [!DNL Adobe Professional Services]. 如果部署和配置时没有经过认证的合作伙伴或 [!DNL Adobe Professional Services]，则Adobe不支持此功能。
 >
->Adobe可发布 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 使此连接器冗余；如果发生这种情况，客户可能需要从使用此连接器过渡。
+>* Adobe可发布 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 使此连接器冗余；如果发生这种情况，客户可能需要从使用此连接器过渡。
 >
->请参阅 [Workfront的Experience Manager Assets增强连接器合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 有关考试的信息， [考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* Adobe支持增强的连接器版本1.7.4及更高版本。 要检查增强的连接器版本，请参阅 [增强的连接器安装说明](workfront-connector-install.md).
+>
+>* 请参阅 [Workfront的Experience Manager Assets增强连接器合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 有关考试的信息， [考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 ## 比较 [!DNL Assets] 和 [!DNL Workfront] {#feature-parity-matrix}
 
