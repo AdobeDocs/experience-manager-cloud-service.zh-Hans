@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9a4e50f56b4b1c9dd7634475e418b4301820efaa
+source-git-commit: dec3dc0f310b24f37f37b45636b17e08e1bb5edf
 workflow-type: tm+mt
 source-wordcount: '3568'
 ht-degree: 97%
@@ -557,7 +557,7 @@ ht-degree: 97%
       + [安装 Screens 播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [注册播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [将播放器分配给显示](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + 使用代码产品功能 {#core-product-features}
+   + 使用核心产品功能 {#core-product-features}
       + [视频的缩略图支持](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
    + 在 Screens as a Cloud Service 中开发 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
