@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有密钥值和环境特定值的OSGi配置 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
+source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3240'
 ht-degree: 1%
 
 ---
@@ -38,13 +38,17 @@ OSGi配置文件在以下位置定义：
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-遵循cfg.json OSGi配置格式。
+关注 `cfg.json` OSGi配置格式。
 
 >[!NOTE]
 >
->以前版本的AEM支持使用不同文件格式（如.cfg.、.config和XML sling:OsgiConfig资源定义）的OSGi配置文件。 这些格式已由cfg.json OSGi配置格式取代。
+>以前版本的AEM支持使用不同文件格式的OSGi配置文件，例如 `.cfg`, `.config` 和作为XML `sling:OsgiConfig` 资源定义。 这些格式由 `.cfg.json` OSGi配置格式。
 
 ## 运行模式分辨率 {#runmode-resolution}
+
+>[!TIP]
+>
+>AEM 6.x支持自定义运行模式，但AEMas a Cloud Service则不支持。 AEMas a Cloud Service支持 [运行模式的精确集](./overview.md#runmodes). AEMas a Cloud Service环境之间OSGi配置的任何变体都必须使用 [OSGi配置环境变量](#environment-specific-configuration-values).
 
 使用运行模式，可以将特定OSGi配置定位到特定AEM实例。 要使用运行模式，请在 `/apps/example` （其中示例是您的项目名称），格式为：
 
@@ -60,9 +64,35 @@ OSGi配置文件在以下位置定义：
 
 >[!NOTE]
 >
->A `config.preview` OSGI配置文件夹 **无法** 以与 `config.publish` 可声明文件夹。 预览层而是会从发布层的值继承其OSGI配置。
+>A `config.preview` OSGi配置文件夹 **无法** 以与 `config.publish` 可声明文件夹。 预览层而是会从发布层的值继承其OSGi配置。
 
-在本地开发时，可以传递运行模式启动参数，以指示使用哪种运行模式OSGI配置。
+在本地开发时，运行模式启动参数 `-r`，用于指定运行模式OSGI配置。
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
+
+### 验证运行模式
+
+AEMas a Cloud Service运行模式根据环境类型和服务进行了详细定义。 查看 [可用AEMas a Cloud Service运行模式的完整列表](./overview.md#runmodes).
+
+运行模式指定的OSGi配置值可通过以下方法进行验证：
+
+1. 将AEM作为Cloud Services环境打开 [开发人员控制台](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. 使用 __面板__ 下拉列表
+1. 选择 __状态__ 选项卡
+1. 选择 __配置__ 从 __状态转储__ 下拉列表
+1. 选择 __获取状态__ 按钮
+
+结果视图显示选定层的所有OSGi组件配置及其适用的OSGi配置值。 这些值可以与AEM项目源代码下的OSGi配置值交叉引用 `/apps/example/osgiconfig/config.<runmode(s)>`.
+
+
+要验证是否应用了相应的OSGi配置值，请执行以下操作：
+
+1. 在开发人员控制台的配置输出中
+1. 找到 `pid` 表示要验证的OSGi配置；这是AEM项目源代码中OSGi配置文件的名称。
+1. Inspect `properties` 列表 `pid` 并验证密钥和值与要验证的运行模式的AEM项目源代码中的OSGi配置文件匹配。=
+
 
 ## OSGi配置值的类型 {#types-of-osgi-configuration-values}
 
@@ -200,7 +230,7 @@ OSGi配置应为要根据环境定义的变量分配一个占位符：
 use $[env:ENV_VAR_NAME]
 ```
 
-客户应仅将此技术用于与其自定义代码相关的OSGI配置属性；不得使用它覆盖Adobe定义的OSGI配置。
+客户应仅将此技术用于与其自定义代码相关的OSGi配置属性；不得使用它覆盖Adobe定义的OSGi配置。
 
 >[!NOTE]
 >
@@ -268,7 +298,7 @@ export ENV_VAR_NAME=my_value
 
 ### 创作配置与发布配置 {#author-vs-publish-configuration}
 
-如果OSGi属性要求创作值与发布值不同，则：
+如果OSGi属性要求使用不同的值创作和发布：
 
 * 单独 `config.author` 和 `config.publish` 必须使用OSGi文件夹，如 [“Runmode分辨率”部分](#runmode-resolution).
 * 创建独立变量名称时，应使用以下两个选项：
@@ -282,7 +312,7 @@ export ENV_VAR_NAME=my_value
 
 **示例1**
 
-其目的是获取OSGI属性的值 `my_var1` 对于stage和prod而言，应相同，但对于三个开发环境中的每个环境，则不同。
+其意图是获取OSGi属性的值 `my_var1` 对于stage和prod而言，应相同，但对于三个开发环境中的每个环境，则不同。
 
 <table>
 <tr>
@@ -317,7 +347,7 @@ config.dev
 
 **示例2**
 
-其目的是获取OSGI属性的值 `my_var1` 对于三个开发环境中的每个环境，stage 、 prod和都会有所不同。 因此，必须调用Cloud Manager API才能为 `my_var1` 用于每个开发环境。
+其意图是获取OSGi属性的值 `my_var1` 对于三个开发环境中的每个环境，stage 、 prod和都会有所不同。 因此，必须调用Cloud Manager API才能为 `my_var1` 用于每个开发环境。
 
 <table>
 <tr>

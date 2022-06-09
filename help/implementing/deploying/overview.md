@@ -3,9 +3,9 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3360'
 ht-degree: 2%
 
 ---
@@ -191,7 +191,7 @@ above appears to be internal, to confirm with Brian -->
 
 客户通常会包含来自第三方源(如Adobe的翻译合作伙伴等软件供应商)的预建包。 建议将这些包托管在远程存储库中，并在 `pom.xml`. 这对于公共存储库以及具有密码保护的专用存储库是可能的，如 [受密码保护的maven存储库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-如果无法在远程存储库中存储包，则客户可以将包放置在基于本地文件系统的Maven存储库中，该存储库将作为项目的一部分提交到SCM，并由依赖于它的任何内容引用。 该储存库将在如下所示的项目展示中声明：
+如果无法在远程存储库中存储包，则客户可以将包放置在基于本地文件系统的Maven存储库中，该存储库将作为项目的一部分提交到SCM，并由依赖于它的任何内容引用。 存储库将在项目pom中声明，如下所示：
 
 
 ```
@@ -309,13 +309,17 @@ AEMas a Cloud Service则对哪些运行模式可用以及如何将OSGi包和OSGi
 * **config.publish.dev** (*适用于AEM开发发布服务*)
 * **config.publish.stage** (*适用于AEM Staging Publish服务*)
 * **config.publish.prod** (*适用于AEM Production Publish服务*)
-* **config.dev** (*适用于AEM开发服务)
-* **config.stage** (*适用于AEM Staging服务)
-* **config.prod** (*适用于AEM Production Services)
+* **config.dev** (*适用于AEM开发服务*)
+* **config.stage** (*适用于AEM Staging Services*)
+* **config.prod** (*适用于AEM Production Services*)
 
 使用的OSGi配置具有最匹配的运行模式。
 
-在本地开发时，可以传递运行模式启动参数，以指示将使用哪种运行模式OSGI配置。
+在本地开发时，运行模式启动参数 `-r`，用于指定运行模式OSGI配置。
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
