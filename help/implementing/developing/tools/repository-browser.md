@@ -4,7 +4,7 @@ seo-title: Repository Browser
 description: 存储库浏览器为创作层、发布层和预览层上的所有环境提供了对存储库的只读视图。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
+source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -65,6 +65,18 @@ ht-degree: 2%
 您可以使用左侧导航窗格在内容层次结构中进行分析。 单击每个文件夹或节点将显示其子项。 文件夹结构反映Sling资源树，该树是JCR节点树的超集。
 
 ![repbrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+<!-- Alexandru: temporarily commenting this out, please don't delete. 
+
+Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+
+![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+
+Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+
+Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
+
+-->
 
 对于发布，默认情况下，存储库浏览器将仅显示公共内容，因此某些文件夹(如 `/conf` 或 `/home` 将不可见。
 

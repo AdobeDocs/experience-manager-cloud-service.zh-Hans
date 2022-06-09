@@ -2,22 +2,16 @@
 title: 如何通过AEM交付API访问您的内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用GraphQL查询访问内容片段内容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 11%
+source-wordcount: '1359'
+ht-degree: 8%
 
 ---
 
 # 如何通过AEM交付API访问您的内容 {#access-your-content}
 
 在 [AEM Headless开发人员历程,](overview.md) 您可以了解如何使用GraphQL查询访问内容片段的内容并将其馈送到您的应用程序（无头交付）。
-
->[!NOTE]
->
->该功能的部分功能在预发布渠道中提供。特别是与持久查询相关的功能。
-> 
->有关如何为您的环境启用该功能的信息，请参阅[预发布渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -250,10 +244,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 * 启用您的端点
    * 使用工具 — >常规 — > GraphQL
    * [启用 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
-
-* 安装GraphiQL（如果需要）
-   * 安装为专用包
-   * [安装AEM GraphiQL界面](/help/headless/graphql-api/graphiql-ide.md)
+      * 这还将启用GraphiQL IDE。
 
 ### 示例结构 {#sample-structure}
 
@@ -359,7 +350,7 @@ query {
 * 示例内容片段结构
 * 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询
 
-## 下一步 {#whats-next}
+## 接下来呢？ {#whats-next}
 
 现在，您已了解如何使用AEM GraphQL API访问和查询无头内容，您现在可以 [了解如何使用REST API访问和更新内容片段的内容](update-your-content.md).
 

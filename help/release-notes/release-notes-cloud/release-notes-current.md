@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8c432f8902d005918c4fd4432d23c3140967c773
+source-git-commit: 036d8b590bc9ca9dcbe4dd3e34bc14cc2d8a79e1
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 23%
+source-wordcount: '779'
+ht-degree: 18%
 
 ---
 
@@ -25,60 +25,72 @@ ht-degree: 23%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.4.0)是2022年5月5日。
-下一版本(2022.5.0)计划于2022年6月9日发布。
+的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.5.0)是2022年6月9日发布的。
+下一版本(2022.6.0)计划于2022年6月30日发布。
 
 ## 发布视频 {#release-video}
 
-请查看 [2022年4月版概述](https://video.tv.adobe.com/v/342612?quality=12) 视频，了解2022.4.0版本中添加的功能摘要。
+观看2022年5月版概述视频，了解2022.5.0版本中添加的功能摘要：
+
+>[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 内容模型数据类型现在可定义为 [可翻译](/help/assets/content-fragments/content-fragments-models.md#properties) 使用内容模型编辑器中的简单复选框。 此外，AEM翻译规则和配置会自动更新。
+### [!DNL Sites] 预发行渠道中提供的新功能 {#prerelease-features-sites}
+
+* 各种GraphQL功能
+* 针对内容片段的无头使用而优化的新控制台
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* 您现在可以 [排序标记](/help/assets/organize-assets.md#use-tags-to-organize-assets) 根据标记名称、创建日期或修改日期，在标记选取器窗口中以升序或降序显示。
+* [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) 现在支持AVIF文件格式 — 进一步改进Google Core Web Vital(Last Contentful Paint),AVIF提供比WebP大20%的额外大小缩减。 与JPEG相比，AVIF的平均大小缩减率高达41%（在某些图像中甚至高达76%）。
+
+* [!UICONTROL Experience Manager AssetsBrand Portal] 现在，每十二小时执行一次自动作业，以删除发布到AEM的所有Brand Portal资产。 因此，您无需手动删除Contribution文件夹中的资产，即可将文件夹大小保持在阈值限制以下。 请参阅 [Experience Manager Assets·Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+
+### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
+
+Experience Manager Assets现在使用Adobe Sensei AI功能 [区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](../../assets/color-tag-images.md). 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 的新增功能 {#what-is-new-forms}
+### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
-* **通信 — Formsas a Cloud ServiceSDK中的文档操作API支持**: [文档操作API](/help/forms/aem-forms-cloud-service-communications.md) 帮助合并、重新排列和验证PDF文档。 现在，您可以借助AEM Forms as a Cloud ServiceSDK在本地开发环境中使用通信 — 文档生成API。
+* **将自适应Forms与Microsoft® Power自动集成**:现在，您可以配置自适应表单以在提交时运行Microsoft® Power Automate Cloud Flow。 配置的自适应表单会发送捕获的数据、附件和记录文档，以增强云流自动化以进行处理。 它可帮助您构建自定义数据捕获体验，同时利用Microsoft® Power Automate的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。
 
-* **使用自定义XCI生成记录文档**:您现在可以 [使用自定义XCI文件设置记录文档的各种属性](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). 它用自定义更改覆盖主 XCI。它可以更好地控制记录文档的生成，增加个性化和定制机会。
+* **创建自适应表单的向导**:您可以使用商业用户友好向导快速创作自适应Forms。 该向导提供了快速的选项卡导航，以便轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
-* **在自适应表单中使用不可见的CAPTCHA**:您可以使用 [隐形验证码，仅在可疑活动时显示验证码挑战](/help/forms/captcha-adaptive-forms.md). 如果未发现可疑活动，则不会显示 CAPTCHA 挑战。它有助于评估人工表单的完成情况，而无需使用复选框要求，减少自定义工作，并改善最终用户体验。
-
-* **表单数据模型配置**:您现在可以 [跨环境重复使用表单数据模型配置](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config)，简化数据集成并降低IT成本。
+   ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 快速访问产品驾驶舱：在站点编辑器中，通过一键单击即可轻松访问完整的详细产品信息
+* 新产品驾驶舱属性页面，以获得更好和简化的概述
 
-   ![启用愿望清单](/help/assets/CIF/enable-wishlist.png)
+![产品驾驶舱属性概述](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* 支持其他营销商务组件：组件可配置为显示加货车和加货车清单行动动员
+* 改进了I/O运行时第三方连接器的兼容性和稳健性
 
-   ![站点编辑器到产品驾驶舱的快捷键](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+* 改进了对GQL客户端配置覆盖的支持（例如，设置自定义缓存行为）
+
+### 错误修复 {#bug-fixes-cif}
+
+* 多值产品选取器字段将第2个和其他产品显示为无效
+
+* 有时，产品选取器会隐藏在组件后面
 
 ## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
 
-### SDK内部版本分析程序 {#sdk-build-analyzers}
+### 新增功能 {#what-is-new-foundation}
 
-AEMas a Cloud ServiceSDK生成分析器Maven插件可检测Maven项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在本地开发过程中发现问题，而且在使用Cloud Manager部署到云环境之前就已经很早。
+* 复制代理管理屏幕下的“添加树”选项 **“分发”选项卡**，之前宣布为已弃用的，将于2022年6月20日或不久之后删除。 而应使用以树层次结构表示的内容包进行复制 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow).
 
-最近添加了一个新分析器：
-
-* `content-packages-validation`  — 验证在部署期间安装的包的格式正确的内容语法和结构
-
-强烈建议使用最新版本的分析器更新您的maven项目，或者包含分析器（如果尚未更新）。 有关更多信息，请参阅此文档 [此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+* 将复制代理管理屏幕或复制API用于分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）已弃用，将于2022年9月12日或之后不久实施该功能。 相反， [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) 必须用于复制这些大型内容包。 7月，复制代理管理屏幕的 **“分发”选项卡** 当使用复制API复制这些大内容包时，如果尝试复制这些大内容包，也会复制到AEM错误日志中。 在9月，警告将被替换为错误。 请相应地调整您的流程。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础安全 {#foundation-security}
 

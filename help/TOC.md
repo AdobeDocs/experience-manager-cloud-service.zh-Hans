@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
+source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3594'
 ht-degree: 97%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 97%
    + [术语 - 云的新术语](/help/overview/terminology.md)
    + [AEM as a Cloud Service 的架构简介](/help/overview/architecture.md)
    + [SEO 和 URL 管理](/help/overview/seo-and-url-management.md)
+   + [AEMas a Cloud Service于Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [评估 KPI](/help/overview/assessing-kpis.md)
    + [调整 KPI](/help/overview/aligning-kpis.md)
    + [选择合适的团队](/help/overview/choose-right-team.md)
@@ -33,6 +34,7 @@ ht-degree: 97%
    + AEMaCS常规发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.4.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [2022.3.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [2022.1.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -358,6 +360,7 @@ ht-degree: 97%
       + [资源的 Digital Rights Management](/help/assets/drm.md)
       + [为资源添加水印](/help/assets/watermark-assets.md)
       + [使用 [!DNL Creative Cloud] API 处理资源](/help/assets/cc-api-integration.md)
+      + [图像的颜色标记](/help/assets/color-tag-images.md)
    + 配置、管理和扩展 [!DNL Assets] {#admin}
       + [开发人员文档和 API 参考](/help/assets/developer-reference-material-apis.md)
       + [文件夹元数据架构](/help/assets/folder-metadata-schema.md)
@@ -612,6 +615,7 @@ ht-degree: 97%
       + [GraphQL 端点](/help/headless/setup/create-api-request.md)
    + 内容片段 {#content-fragments}
       + [概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=zh-Hans)
+      + [内容片段控制台](/help/headless/content-fragments/content-fragment-console.md)
       + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=zh-Hans)
       + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=zh-Hans)
       + 创作{#authoring}

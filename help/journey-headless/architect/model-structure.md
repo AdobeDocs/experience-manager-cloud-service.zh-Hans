@@ -2,7 +2,7 @@
 title: 了解如何在 AEM 中创建内容片段模型
 description: 了解使用内容片段模型为无头CMS建模内容的概念和机制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 5%
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 创建内容片段模型 {#creating-content-fragment-models}
 
-然后，可以创建内容片段模型并定义结构。 这可以在工具 — >资产 — >内容片段模型下完成。
+然后，可以创建内容片段模型并定义结构。 此操作可在 **工具** -> **常规** -> **内容片段模型**.
 
 ![工具中的内容片段模型](assets/cfm-tools.png)
 
@@ -102,7 +102,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 当模型为 **已锁定** （在只读模式下），您可以查看模型的内容和结构，但不能直接对其进行编辑；但您可以 **已锁定** 从控制台或模型编辑器中选择模型。
 
-## 下一步 {#whats-next}
+## 接下来呢？ {#whats-next}
 
 现在，您已经学习了基础知识，接下来的步骤是开始创建您自己的内容片段模型。
 
@@ -110,7 +110,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此页面主要基于 **站点** 控制台，但许多/大多数功能也与导航到并对其执行操作相关， **内容片段模型** 下 **资产** 控制台。
+* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此页面主要基于 **站点** 控制台，但许多/大多数功能也与导航到并对其执行操作相关， **内容片段模型** 下 **常规** 控制台。
 
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 

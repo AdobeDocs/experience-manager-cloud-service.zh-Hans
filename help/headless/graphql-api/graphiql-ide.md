@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 98%
+source-wordcount: '960'
+ht-degree: 87%
 
 ---
 
@@ -16,13 +16,9 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->该功能的部分功能在预发布渠道中提供。特别是与持久查询相关的功能。
-> 
->有关如何为您的环境启用该功能的信息，请参阅[预发布渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)。
-
->[!NOTE]
+>GraphiQL包含在AEM的所有环境中（但只有在配置端点时才可访问/显示）。
 >
->GraphiQL 包含在 AEM 中，但默认情况下，它仅在`dev-authors`环境中启用。
+>在以前的版本中，安装GraphiQL IDE时需要软件包。 如果您已安装此程序，则现在可以删除它。
 
 >[!NOTE]
 >在使用 GraphiQL IDE 之前，您必须在 [配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md) 中 [配置您的端点](/help/headless/graphql-api/graphql-endpoint.md)。
@@ -35,7 +31,7 @@ ht-degree: 98%
 * 运行查询以立即查看结果
 * 管理&#x200B;**查询变量**
 * 保存并管理&#x200B;**持久查询**
-* 发布或取消发布&#x200B;**持久查询**（到/从 `dev-publish`）
+* 发布或取消发布， **持久化查询** (例如，从 `dev-publish`)
 * 请参阅之前查询的&#x200B;**历史记录**
 * 使用&#x200B;**文档资源管理器**&#x200B;访问文档；帮助您学习和理解可用的方法。
 
@@ -46,7 +42,7 @@ ht-degree: 98%
 
 ![GraphiQL 接口](assets/cfm-graphiql-interface.png "GraphiQL 接口")
 
-您可以在开发作者系统上使用 GraphiQL，以便客户端应用程序可以使用 GET 请求和发布查询来请求 GraphiQL。对于生产使用，您必须[将查询移动到生产环境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。最初是移至生产作者环境，以供通过查询来验证新撰写的内容，最后移至生产发布环境，以供实时使用。
+您可以在系统上使用GraphiQL，以便客户端应用程序可以使用GET请求来请求查询，并发布查询。 然后，对于生产用途，您可以 [将查询移动到生产环境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初是移至生产作者环境，以供通过查询来验证新撰写的内容，最后移至生产发布环境，以供实时使用。
 
 ## 选择您的端点 {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 ![GraphQL 变量](assets/cfm-graphqlapi-03.png "GraphQL 变量")
 
-## 发布持久查询 (dev-publish) {#publishing-persisted-queries}
+## 发布保留查询 {#publishing-persisted-queries}
 
-一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;和&#x200B;**取消发布**&#x200B;操作。这将把它们激活到您的开发发布环境 (`dev-publish`) 中，以便您的应用程序在测试时轻松访问。
+一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;和&#x200B;**取消发布**&#x200B;操作。这会将它们激活到发布环境(例如， `dev-publish`)，以便应用程序在测试时轻松访问。
 
 >[!NOTE]
 >

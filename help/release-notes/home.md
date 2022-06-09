@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: d1d3fd26856f690d3611246aeb3c663b8f506b59
+source-git-commit: 2f27ecdbff4d1cbfe26f090514a61ea3aa730ef2
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2022.4.0 |
+| 版本 | 2022.5.0 |
 | 类型 | 连续更新 |
 | 发行日期 | 持续更新 |
 
