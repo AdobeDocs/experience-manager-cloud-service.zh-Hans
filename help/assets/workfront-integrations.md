@@ -4,9 +4,9 @@ description: 集成简介 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 1a0718d317f13924cd4da273f9184b4f165bbc7e
+source-git-commit: 8dd16d0ef18cba90417fe97bc51a1d3de899296f
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 4%
 >
 >* Adobe支持增强的连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强的连接器版本，请参阅 [增强的连接器安装说明](workfront-connector-install.md).
 >
->* 请参阅 [Workfront的Experience Manager Assets增强连接器合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 有关考试的信息， [考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* 请参阅 [Workfront的Experience Manager Assets增强连接器合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 有关考试的信息，请参阅 [考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 
 ## 比较 [!DNL Assets] 和 [!DNL Workfront] {#feature-parity-matrix}
