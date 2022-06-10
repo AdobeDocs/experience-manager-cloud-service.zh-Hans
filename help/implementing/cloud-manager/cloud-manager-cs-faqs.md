@@ -2,9 +2,9 @@
 title: Cloud Manager 常见问题解答
 description: 在AEMas a Cloud Service中查找有关Cloud Manager的最常见问题的解答。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ ht-degree: 0%
 
 ## 代码质量检查失败，我们的部署卡住。 有办法绕过这张支票吗？ {#deployment-stuck}
 
-是。除安全评级之外的所有代码质量检查失败都是非关键量度，因此可以通过扩展结果UI中的项目来绕过这些失败。
+是。除安全评级之外的所有代码质量检查失败都是非关键量度，因此可以通过扩展结果UI中的项目，将它们作为部署管道的一部分进行绕过。
 
-查看文档 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md) 以了解更多详细信息。
+查看文档 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以了解更多详细信息。
 
 ## 我能否将SNAPSHOT用于Maven项目的版本？ {#use-snapshot}
 
