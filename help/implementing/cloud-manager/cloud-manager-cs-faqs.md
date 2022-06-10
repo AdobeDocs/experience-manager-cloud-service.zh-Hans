@@ -2,9 +2,9 @@
 title: Cloud Manager 常见问题解答
 description: 在AEMas a Cloud Service中查找有关Cloud Manager的最常见问题的解答。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 8e02f470b474ad448a5fb80dd3b410d414d78a3b
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,9 @@ ht-degree: 0%
 
 是。除安全评级之外的所有代码质量检查失败都是非关键量度，因此可以通过扩展结果UI中的项目，将它们作为部署管道的一部分进行绕过。
 
-查看文档 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以了解更多详细信息。
+具有 [部署经理、项目经理或业务所有者](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) 角色可以覆盖问题，在这种情况下，管道继续进行，或者他们可以接受问题，在这种情况下，管道会因失败而停止。
+
+查看文档 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) 以了解更多详细信息。
 
 ## 我能否将SNAPSHOT用于Maven项目的版本？ {#use-snapshot}
 
