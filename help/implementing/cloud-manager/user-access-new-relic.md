@@ -2,9 +2,9 @@
 title: New Relic One
 description: 了解用于AEMas a Cloud Service的New Relic One应用程序性能监控(APM)服务以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
@@ -46,13 +46,11 @@ New Relic One APM for AEMas a Cloud Service具有许多功能。
 
 1. 单击要管理New Relic One用户的程序。
 
-1. 切换到 **环境** 从 **计划概述** 页面 **环境** 选项卡。
-
-1. 在 **环境** 屏幕上，单击屏幕顶部旁边的省略号按钮 **添加环境** 按钮。
-
-1. 在省略号菜单中，单击 **管理用户**.
+1. 在 **环境** 在项目概述页面上，单击省略号按钮并选择 **管理用户**.
 
    ![管理用户](assets/newrelic-manage-users.png)
+
+   * 您还可以访问 **管理用户** 选项 **环境** 屏幕。
 
 1. 在 **管理新旧版用户** 对话框中，输入要添加的用户的名字和姓氏，然后单击 **添加** 按钮。 对要添加的所有用户重复此步骤。
 
@@ -98,11 +96,11 @@ New Relic One APM for AEMas a Cloud Service具有许多功能。
 
 1. 单击要访问New Relic One的程序。
 
-1. 切换到 **环境** 从 **计划概述** 页面 **环境** 选项卡。
+1. 在 **环境** 在项目概述页面上，单击省略号按钮并选择 **打开新文物**.
 
-1. 在 **环境** 屏幕上，单击屏幕顶部旁边的省略号按钮 **添加环境** 按钮。
+   ![管理用户](assets/newrelic-access.png)
 
-1. 在省略号菜单中，单击 **打开新文物**.
+   * 您还可以通过位于 **环境** 屏幕。
 
 1. 在打开的新浏览器选项卡中，登录到New Relic One。
 
