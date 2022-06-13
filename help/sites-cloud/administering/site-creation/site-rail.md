@@ -4,7 +4,7 @@ description: 了解网站边栏的强大功能，帮助您轻松自定义和管�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 >
 >查看 [快速网站创建历程](/help/journey-sites/quick-site/overview.md) 熟悉快速站点创建工具和前端管道，以便轻松自定义站点主题。
 
-##  下载主题源 {#downloading-theme-sources}
+## 下载主题源 {#downloading-theme-sources}
 
 在AEM中根据 [网站模板，](site-templates.md) 您可以下载 [网站主题](site-themes.md) 使用“站点”边栏。
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 点按或单击 **下载主题源** 将网站主题的本地副本下载为 `.zip` 文件进行自定义。
 
-##  下载模板资源 {#downloading-template-resources}
+## 下载模板资源 {#downloading-template-resources}
 
 [网站模板](site-templates.md) 可包含网站内容结构和 [网站主题。](site-themes.md) 网站模板可以包含线框设计或其他与网站相关的文件。
 

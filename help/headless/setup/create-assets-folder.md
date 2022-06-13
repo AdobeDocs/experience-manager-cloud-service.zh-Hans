@@ -2,10 +2,10 @@
 title: 创建资源文件夹 - Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
+source-git-commit: 131225c8303bdd8900a8e22ef51b545da2257f40
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。然后，将内容片段存储在资源文件夹中。
 
-## 什么是资源文件夹？ {#what-is-an-assets-folder}
+## 什么是资产文件夹？ {#what-is-an-assets-folder}
 
 [现在您已创建了内容片段模型](create-content-model.md)，这些模型定义了希望用于未来内容片段的结构，也许您会希望创建一些片段。
 
