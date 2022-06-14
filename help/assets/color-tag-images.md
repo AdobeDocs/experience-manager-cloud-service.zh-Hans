@@ -1,13 +1,13 @@
 ---
 title: 图像的颜色标记
 description: Experience Manager Assets允许您区分图像中的颜色，并自动将这些颜色应用为标记。 然后，您可以使用这些标记来搜索和过滤图像。
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 图像的颜色标记 {#color-tag-images}
 
@@ -106,6 +106,24 @@ Experience Manager Assets使用Adobe Sensei AI功能区分图像中的颜色，�
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## DAM中现有图像的颜色标记 {#color-tags-existing-images}
+
+DAM中已有的图像不会自动进行颜色标记。 您需要 [!UICONTROL 重新处理资产] 手动为其生成颜色标记。
+
+要为资产存储库中已存在的资产的图像或文件夹（包括子文件夹）添加颜色标记，请执行以下步骤：
+
+1. 选择 [!DNL Adobe Experience Manager] 徽标，然后从 [!UICONTROL 导航] 页面。
+
+1. 选择 [!UICONTROL 文件] 以显示资产界面。
+
+1. 导航到要应用颜色标记的文件夹。
+
+1. 选择整个文件夹或特定图像。
+
+1. 选择 ![重新处理资产图标](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新处理资产] 图标，然后选择 [!UICONTROL 完整流程] 选项。
+
+完成该过程后，导航到 [!UICONTROL 属性] 文件夹中任何图像的页面。 自动添加的标记显示在 [!UICONTROL 智能颜色标记] 部分 [!UICONTROL 基本] 选项卡。
+
 
 ## 查看图像的智能颜色标记 {#view-color-tags}
 
@@ -167,7 +185,3 @@ Experience Manager Assets使用Adobe Sensei AI功能区分图像中的颜色，�
    您可以根据一种颜色的选择来过滤图像。 将选定颜色作为智能颜色标记之一且位于 [覆盖/优势阈值%](#manage-color-tagging-settings) 显示在右侧窗格中。
 
 1. 单击搜索栏中的x可清除过滤器。
-
-
-
-
