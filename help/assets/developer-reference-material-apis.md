@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
+source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1811'
 ht-degree: 4%
 
 ---
@@ -183,6 +183,9 @@ CDN边缘节点有助于加快请求的二进制文件上传。
 
 * [开源aem上传库](https://github.com/adobe/aem-upload).
 * [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem).
+
+>[!NOTE]
+aem上载库和命令行工具均使用 [node-httptransfer库](https://github.com/adobe/node-httptransfer/)
 
 ### 已弃用的资产上传API {#deprecated-asset-upload-api}
 
