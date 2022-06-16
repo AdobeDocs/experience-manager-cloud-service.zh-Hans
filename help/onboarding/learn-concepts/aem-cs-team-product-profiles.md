@@ -2,7 +2,7 @@
 title: AEMas a Cloud Service团队和产品配置文件
 description: 可查看本页以了解AEMas a Cloud Service团队和产品配置文件。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
+source-git-commit: fd23701414a2ae4142ea2a11cef92bc0cb202421
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -34,7 +34,7 @@ AEMas a Cloud Service是完全云原生的产品，可将AEM作为服务进行�
 
 ## Cloud Manager产品配置文件 {#cloud-manager-product-profiles}
 
-Cloud Manager已预配置了产品配置文件，或者更简单的，基于角色的权限。 系统管理员将负责通过将分配给这些产品配置文件来设置您的Cloud Manager团队，并且必须熟悉这些产品配置文件以及要为其分配的团队成员。
+Cloud Manager已预配置了产品配置文件，或者更简单的，基于角色的权限。 系统管理员将负责通过将Cloud Manager团队分配给这些产品配置文件来设置他们，并且必须熟悉这些产品配置文件以及要为其分配的团队成员。
 >[!NOTE]
 >请参阅 [Cloud Manager中基于角色的权限](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) 以了解更多详细信息。
 

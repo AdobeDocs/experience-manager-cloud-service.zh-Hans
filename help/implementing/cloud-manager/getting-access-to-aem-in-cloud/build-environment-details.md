@@ -2,7 +2,7 @@
 title: 生成环境
 description: 了解Cloud Manager的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
+source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Cloud Manager使用专门的构建环境来构建和测试您的代码。
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
+* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven在系统级别配置为 `settings.xml` 文件，该文件会自动包含使用名为的配置文件的公共Adobe对象存储库 `adobe-public`. (请参阅 [Adobe公共Maven存储库](https://repo1.maven.org/) ，以了解更多详细信息)。
 
 >[!NOTE]
