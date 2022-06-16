@@ -1,13 +1,13 @@
 ---
 title: AEMas a Cloud Service于Unified Shell
 description: AEMas a Cloud Service于Unified Shell
-source-git-commit: 09f4620ed871b012b4550bc05cfe7f4622f02833
+exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
+source-git-commit: 9ef6bda76667b08b5fb62b90acdc75002889d420
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 6%
+source-wordcount: '402'
+ht-degree: 5%
 
 ---
-
 
 # AEMas a Cloud Service于Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
 
@@ -17,6 +17,9 @@ ht-degree: 6%
 >这是对2022年6月版中正式提供的新功能的介绍。
 >
 >有关如何为您的环境启用该功能的信息，请参阅[预发布渠道文档](/help/release-notes/prerelease.md#enable-prerelease)。
+
+>[!INFO]
+>由于最近发现的问题，Unified Shell与AEMas a Cloud Service的集成已暂时禁用。 问题修复后，将重新启用该功能。 谢谢你的理解。
 
 ## 概述 {#overview}
 
@@ -72,4 +75,3 @@ AEMas a Cloud Service与Unified Shell集成，以改进用户体验并将其与�
 单击弹出窗口中的收件箱按钮，以转到您的AEM收件箱：
 
 ![图像](/help/overview/assets/unifiedshell6.png)
-
