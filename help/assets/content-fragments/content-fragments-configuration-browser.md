@@ -4,10 +4,10 @@ description: 了解如何在配置浏览器中启用某些内容片段功能，�
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 21%
+source-wordcount: '339'
+ht-degree: 18%
 
 ---
 
@@ -43,9 +43,20 @@ ht-degree: 21%
 >
 >有关更多详细信息，另请参阅 [配置浏览器：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->支持与内容片段一起使用的子配置（嵌套在配置中的配置），但不能用于GraphQL查询。
+>[子配置](/help/implementing/developing/introduction/configurations.md#configuration-resolution) 完全支持与内容片段、内容片段模型和GraphQL查询一起使用（嵌套在另一个配置中的配置）。
+>
+>请注意：
+>
+>
+>* 在子配置中创建模型后，无法将模型移动或复制到另一个子配置。
+>
+>* GraphQL端点将（仍然）基于父（根）配置。
+>
+>* 将（仍）保存与父（根）配置相关的持久化查询。
+
+
 
 1. 导航到&#x200B;**工具**、**常规**，然后打开&#x200B;**配置浏览器**。
 
