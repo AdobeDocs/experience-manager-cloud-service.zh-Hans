@@ -2,9 +2,9 @@
 title: 代码质量测试
 description: 了解管道的代码质量测试的工作原理，以及它如何提高部署质量。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
+source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1177'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,12 @@ ht-degree: 2%
 * **重要信息**  — 这些问题导致管道进入暂停状态。 部署经理、项目经理或业务所有者可以覆盖问题（在这种情况下管道会继续），也可以接受问题（在这种情况下，管道会因故障而停止）。
 
 * **信息**  — 这些问题仅供参考，对管道执行没有影响
+
+>[!NOTE]
+>
+>在仅代码质量管道中，无法覆盖“代码质量”门中的重要故障，因为代码质量测试步骤是管道中的最后一步。
+
+### 评级 {#ratings}
 
 此步骤的结果将作为 **评级**.
 
