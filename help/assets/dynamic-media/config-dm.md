@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3537'
 ht-degree: 3%
 
 ---
@@ -270,6 +270,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 **要编辑支持格式的MIME类型，请执行以下操作：**
 
+1. 以产品管理员身份登录到您的Experience Manageras a Cloud Service。
 1. 在Experience Manageras a Cloud Service中，选择Experience Manageras a Cloud Service徽标以访问全局导航控制台，然后转到 **[!UICONTROL 常规>CRXDE Lite]**.
 1. 在左边栏中，导航到以下内容：
 
@@ -296,6 +297,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 **要为不支持的格式添加MIME类型，请执行以下操作：**
 
+1. 以产品管理员身份登录到您的Experience Manageras a Cloud Service。
 1. 从Experience Manageras a Cloud Service，转到 **[!UICONTROL “工具”>“操作”>“Web控制台”]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Adobe建议对PDF、PostScript®和PSD文件使用以下“已调整”的作业
 
 Granite工作流队列用于非临时工作流。 在Dynamic Media中，它使用 **[!UICONTROL Dynamic Media编码视频]** 工作流。
 
+>[!NOTE]
+>
+>您必须以产品管理员身份登录以Experience Manageras a Cloud Service，才能完成此任务。
+
 **要更新预定义的Granite工作流队列（视频资产）工作线程，请执行以下操作：**
 
 1. 导航到 `https://<server>/system/console/configMgr` 和搜索 **队列：Granite工作流队列**.
@@ -398,6 +404,10 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它使�
 #### 更新预定义的Granite Transient工作流队列工作线程 {#update-granite-transient-workflow-queue-worker-threads-images}
 
 Granite传输工作流队列用于 **[!UICONTROL DAM更新资产]** 工作流。 在Dynamic Media中，它用于图像和非视频资产摄取和处理。
+
+>[!NOTE]
+>
+>您必须以产品管理员身份登录以Experience Manageras a Cloud Service，才能完成此任务。
 
 **要更新预定义的Granite Transient工作流队列工作线程，请执行以下操作：**
 
@@ -423,6 +433,10 @@ Granite传输工作流队列用于 **[!UICONTROL DAM更新资产]** 工作流。
 #### 更新与Dynamic Media Classic(Scene7)服务器的最大上传连接数 {#update-max-s7-upload-connections}
 
 Dynamic Media Classic(Scene7)上传连接设置可将Experience Manager资产同步到Dynamic Media Classic服务器。
+
+>[!NOTE]
+>
+>您必须以产品管理员身份登录以Experience Manageras a Cloud Service，才能完成此任务。
 
 **要更新与Dynamic Media Classic(Scene7)服务器的最大上传连接，请执行以下操作：**
 
