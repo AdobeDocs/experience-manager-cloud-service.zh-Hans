@@ -3,9 +3,9 @@ title: 使用 ContextHub 数据预览页面
 description: ContextHub 工具栏显示 ContextHub 存储区中的数据，并允许您更改存储区数据，该工具栏可用于预览内容
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ContextHub 安装了多个 UI 模式和 UI 模块。您的管理员可能已[配
 
 ContextHub 工具栏在“预览”模式下可用。该工具栏仅在创作实例中且管理员已将其启用后才可用。
 
-![ContextHub工具栏](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
+![ContextHub 工具栏](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
 1. 在打开页面以进行编辑时，在工具栏上单击或点按“预览”。
 
@@ -32,7 +32,7 @@ ContextHub 工具栏在“预览”模式下可用。该工具栏仅在创作实
 
 1. 要显示工具栏，请单击或点按 ContextHub 图标。
 
-   ![ContextHub按钮](/help/sites-cloud/authoring/assets/contexthub-button.png)
+   ![ContextHub 按钮](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
 ## UI 模块功能 {#ui-module-features}
 
@@ -40,15 +40,15 @@ ContextHub 工具栏在“预览”模式下可用。该工具栏仅在创作实
 
 ### 工具栏内容 {#toolbar-content}
 
-UI 模块可以在工具栏中显示一个或多个 ContextHub 存储区中的数据。UI模块使用图标和标题来标识自己。
+UI 模块可以在工具栏中显示一个或多个 ContextHub 存储区中的数据。UI 模块使用图标和标题来标识自身。
 
-![ContextHub角色](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
+![ContextHub 角色](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
 ### 弹出窗口内容 {#popup-content}
 
-某些UI模块在单击或点按时会显示一个弹出式叠加。 通常，弹出窗口包含的信息比工具栏上显示的信息要多。
+某些 UI 模块在单击或点按时，会显示一个弹出覆盖窗口。通常，弹出窗口包含的信息比工具栏上显示的信息要多。
 
-![ContextHub配置文件信息](/help/sites-cloud/authoring/assets/contexthub-profile.png)
+![ContextHub 配置文件信息](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### 弹出窗口表单 {#popup-forms}
 
