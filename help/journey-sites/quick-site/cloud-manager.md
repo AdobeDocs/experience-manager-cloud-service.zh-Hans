@@ -1,129 +1,129 @@
 ---
-title: 了解Cloud Manager和快速网站创建工作流程
-description: 了解Cloud Manager以及它如何将新的快速站点创建过程联系起来。
+title: 了解 Cloud Manager 和快速站点创建工作流
+description: 了解 Cloud Manager 以及它如何将新的快速站点创建流程联系起来。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 了解Cloud Manager和快速网站创建工作流程 {#understand-cloud-manager}
+# 了解 Cloud Manager 和快速站点创建工作流 {#understand-cloud-manager}
 
-了解Cloud Manager以及它如何将新的快速站点创建过程联系起来。
+了解 Cloud Manager 以及它如何将新的快速站点创建流程联系起来。
 
 >[!TIP]
 >
->如果您的角色仅是前端开发，则可以跳转到文章 [检索Git存储库访问信息](retrieve-access.md) 在这个旅程中。
+>如果您专门负责前端开发，则可以在此历程中跳过[检索 Git 存储库访问信息](retrieve-access.md)一文。
 >
->如果您是AEM管理员（Cloud Manager管理员），同时负责前端开发和管理员任务，或者只想了解AEM中用于前端开发的端到端流程，请继续阅读当前文档并继续此历程。
+>如果您既是 AEM 管理员，又是 Cloud Manager 管理员，并且负责前端开发和管理员任务，或者只是想了解 AEM 中用于前端开发的端到端流程，请继续阅读当前文档并继续此历程。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解AEM快速网站创建工具的工作方式，并概述端到端流程。 阅读后，您应该：
+本文档可帮助您了解 AEM 快速站点创建工具的工作原理，并让您大致了解端到端流程。阅读本文档后，您应：
 
-* 了解AEM Sites和Cloud Manager如何协同工作来促进前端开发
-* 了解前端自定义步骤如何与AEM完全分离，并且无需AEM知识。
+* 了解 AEM Sites 和 Cloud Manager 如何协作来推动前端开发
+* 了解如何在不具有 AEM 知识的情况下将前端自定义步骤与 AEM 完全分离开来。
 
-本文档重点介绍在您开始配置的历程的下一步之前，了解快速站点创建解决方案的这些基本内容。
+在继续此历程的下一步来开始配置之前，可通过本文档了解快速站点创建解决方案的这些基本部分。
 
-尽管建议您分步完成此历程，但如果您已经了解AEM Sites和Cloud Manager协同工作，并且希望直接开始配置，则可以 [跳到历程的下一步。](create-site.md)
+虽然我们建议您逐步完成此历程，但如果您已了解 AEM Sites 和 Cloud Manager 的协作方式，并且希望直接从配置开始操作，则可以[跳至此历程的下一步](create-site.md)。
 
-## 负责任角色 {#responsible-role}
+## 负责角色 {#responsible-role}
 
-此部分历程适用于AEM管理员和Cloud Manager管理员。
+此历程的这一部分适用于 AEM 管理员和 Cloud Manager 管理员。
 
 ## 要求和先决条件 {#requirements-prerequisites}
 
-在您开始使用快速网站创建工具创建和自定义网站之前，需要满足以下几个要求。
+在开始使用快速站点创建工具来创建和自定义站点之前，需要达到几个要求。
 
-由于此历程面向前端开发人员、管理员和所有角色的组合，因此此处列出了这两者的要求。
+由于此历程适用于前端开发人员、管理员和所有角色的组合，因此，此处列出了针对两者的所有要求。
 
-了解前端开发人员无需AEM访问或了解相关知识，这一点非常重要。
+请务必了解一点，对于前端开发人员而言，AEM 访问权限或知识不是必需的。
 
 ### 知识 {#knowledge}
 
-| 知识 | 职位 |
+| 知识 | 角色 |
 |---|---|
 | 了解前端开发的标准工具和流程 | 前端开发人员 |
-| 有关如何在AEM中创建和管理站点的基本知识 | AEM 管理员 |
-| Cloud Manager基本知识 | Cloud Manager管理员 |
+| 有关如何在 AEM 中创建和管理站点的基本知识 | AEM 管理员 |
+| Cloud Manager 的基本知识 | Cloud Manager 管理员 |
 
-对于前端开发人员，无需任何AEM知识。
+对于前端开发人员来说，AEM 知识不是必需的。
 
 ### 工具 {#tools}
 
-| 工具 | 职位 |
+| 工具 | 角色 |
 |---|---|
-| 首选的前端开发环境 | 前端开发人员 |
+| 首选前端开发环境 | 前端开发人员 |
 | npm | 前端开发人员 |
 | webpack | 前端开发人员 |
-| 对Cloud Manager的访问权限 | Cloud Manager管理员 |
-| 是 **业务所有者** Cloud Manager中的角色 | Cloud Manager管理员 |
-| 在Cloud Manager中担任系统管理员 | Cloud Manager管理员 |
-| 访问Admin Console | Cloud Manager管理员 |
-| 是 **部署管理器** Cloud Manager中的角色 | Cloud Manager管理员 |
-| 是 **部署管理器** Cloud Manager中的角色 | 前端开发人员 |
+| 对 Cloud Manager 的访问权限 | Cloud Manager 管理员 |
+| 成为 Cloud Manager 中的&#x200B;**业务负责人**&#x200B;角色的成员 | Cloud Manager 管理员 |
+| 成为 Cloud Manager 中的系统管理员 | Cloud Manager 管理员 |
+| 对 Admin Console 的访问权限 | Cloud Manager 管理员 |
+| 成为 Cloud Manager 中的&#x200B;**部署管理器**&#x200B;角色的成员 | Cloud Manager 管理员 |
+| 成为 Cloud Manager 中的&#x200B;**部署管理器**&#x200B;角色的成员 | 前端开发人员 |
 
-对于前端开发人员，无需使用AEM。
+对于前端开发人员来说，无需使用 AEM。
 
 >[!TIP]
 >
->如果您不熟悉Cloud Manager角色和角色管理，请参阅 [其他资源](#additional-resources) 中。
+>如果您不熟悉 Cloud Manager 角色和角色管理，请参阅[其他资源](#additional-resources)部分中的“基于角色的权限”文档。
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager是AEMas a Cloud Service的一个基本组件，是平台的单个入口点。
+Cloud Manager 是 AEM as a Cloud Service 的必要组件，并且充当平台的单一入口点。
 
-为了支持具有企业开发设置的客户，AEM  as a Cloud Service与Cloud Manager及其专门构建的CI/CD管道完全集成。 快速站点创建工具扩展了这些功能，以支持专用的前端开发管道。
+为了支持客户进行企业开发设置，AEM as a Cloud Service 与 Cloud Manager 及其专用 CI/CD 管道完全集成。快速站点创建工具扩展了这些功能以支持专用的前端开发管道。
 
-在此历程中，无需完全了解Cloud Manager。 Cloud Manager在高级别包含多个级别的结构。
+在此历程中，无需全面了解 Cloud Manager。从较高的层面来看，Cloud Manager 的结构包含几个级别。
 
-![Cloud Manager结构](assets/cloud-manager-structure.png)
+![Cloud Manager 结构](assets/cloud-manager-structure.png)
 
-* **租户**  — 为每位客户配置了租户。
-* **程序。**  — 每个租户都有一个或多个程序，这些程序通常反映客户的许可解决方案。
-* **环境**  — 每个项目都有多个环境，如实时内容的生产环境、暂存环境和开发环境。
-* **存储库**  — 环境具有维护应用程序和前端代码的git存储库。
-* **工具和工作流**  — 管道管理从存储库到环境的代码部署。
+* **租户** – 每个客户均配有一个租户。
+* **项目** – 每个租户都有一个或多个项目，这些项目通常反映了客户的许可解决方案。
+* **环境** – 每个项目都有多个环境，例如用于实时内容的生产环境、一个用于暂存的环境，一个用于开发的环境。
+* **存储库** – 这些环境具有 Git 存储库，可在其中维护应用程序和前端代码。
+* **工具和工作流** – 管道管理从存储库到环境的代码部署。
 
-在将此层级关联起来时，示例通常会很有帮助。
+示例通常有助于将此层级置于上下文中。
 
-* WKND旅游和冒险企业可能是 **租户** 以旅行相关媒体为重点。
-* WKND Travel and Adventure Enterprises租户可能有两个 **项目**:一个WKND杂志的站点计划和一个WKND媒体的资产计划。
-* WKND杂志和WKND媒体项目都将具有开发、舞台和制作功能 **环境**.
+* WKND 旅游和冒险企业可能是专注于旅游相关媒体的&#x200B;**租户**。
+* WKND 旅游和冒险企业租户可能具有两个&#x200B;**项目**：一个针对 WKND 杂志的 Sites 项目和一个针对 WKND 媒体的 Assets 项目。
+* WKND 杂志和 WKND 媒体项目都具有开发、暂存和生产&#x200B;**环境**。
 
-## 快速创建站点前端开发流程 {#flow}
+## 快速站点创建前端开发流程 {#flow}
 
-即使您尚未拥有丰富的Cloud Manager使用经验，整个流程也非常简单直观。
+整个流程简单直观，即使您尚不具有丰富的 Cloud Manager 经验也是如此。
 
-1. AEM管理员登录到AEM环境，然后使用网站模板创建新网站。
-1. Cloud Manager管理员在Cloud Manager中创建前端管道。 管道可协调从git存储库到AEM环境的代码部署。
-1. AEM管理员从项目的AEM实例中导出网站主题，并将其提供给前端开发人员。
-1. Cloud Manager管理员授予前端开发人员访问AEM git存储库的权限，以便提交自定义。
-1. 前端开发人员检索用于访问git和管道的访问凭据。
-1. 前端开发人员自定义主题，使用站点中的实际内容使用代理对其进行测试，然后将更改提交到git存储库。
-1. 前端开发人员执行管道以将主题自定义部署到程序的生产环境。
+1. AEM 管理员登录到 AEM 环境，并使用站点模板创建新站点。
+1. Cloud Manager 管理员在 Cloud Manager 中创建前端管道。此管道可协调从 Git 存储库到 AEM 环境的代码部署。
+1. AEM 管理员从项目的 AEM 实例中导出站点主题，并将它提供给前端开发人员。
+1. Cloud Manager 管理员向前端开发人员授予对可在其中提交自定义项的 AEM Git 存储库的访问权限。
+1. 前端开发人员检索访问凭据以访问 Git 和管道。
+1. 前端开发人员自定义主题，通过代理用站点中的实际内容对主题进行测试，然后将更改提交到 Git 存储库。
+1. 前端开发人员执行管道以将主题自定义项部署到项目的生产环境。
 
-![快速网站创建流程](assets/qsc-flow.png)
+![快速站点创建流程](assets/qsc-flow.png)
 
-使用快速站点创建工具的主要优势在于，纯前端开发人员只负责实际的自定义。 前端开发人员不与AEM进行交互，也不需要任何AEM知识。
+使用快速站点创建工具的主要好处在于，纯前端开发人员只负责实际自定义。 前端开发人员不与 AEM 交互或无需任何 AEM 知识。
 
 ## 下一步 {#what-is-next}
 
-现在，您已完成AEM快速网站创建历程的这一部分，接下来您应该：
+现在您已完成 AEM 快速站点创建历程的这一部分，您应：
 
-* 了解AEM Sites和Cloud Manager如何协同工作来促进前端开发
-* 了解前端自定义步骤如何与AEM完全分离，并且无需AEM知识。
+* 了解 AEM Sites 和 Cloud Manager 如何协作来推动前端开发
+* 了解如何在不具有 AEM 知识的情况下将前端自定义步骤与 AEM 完全分离开来。
 
-在此知识的基础上，通过下一步审阅文档，继续您的AEM快速网站创建历程 [从模板创建网站，](create-site.md) 在这里，您将学习如何使用模板快速创建新的AEM网站。
+在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[从模板创建站点](create-site.md)，了解如何使用模板快速创建新的 AEM 站点。
 
 ## 其他资源 {#additional-resources}
 
-同时，建议您通过审阅文档来转到快速网站创建历程的下一部分 [从模板创建网站，](create-site.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续访问这些概念。
+我们建议您查看文档[从模板创建站点](create-site.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html)  — 如果您希望了解有关Cloud Manager功能的更多详细信息，则可能需要直接查阅深入的技术文档。
-* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已预先配置了具有相应权限的角色。 有关这些角色以及如何管理这些角色的详细信息，请参阅本文档。
-* [npm](https://www.npmjs.com)  — 用于快速构建网站的AEM主题基于npm。
-* [webpack](https://webpack.js.org)  — 用于快速构建网站的AEM主题依赖于webpack。
+* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
+* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色及其管理方式的详细信息，请参阅本文档。
+* [npm](https://www.npmjs.com) – 用于快速构建站点的 AEM 主题基于 npm。
+* [webpack](https://webpack.js.org) – 用于快速构建站点的 AEM 主题依赖 webpack。
