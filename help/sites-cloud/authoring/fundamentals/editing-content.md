@@ -3,7 +3,7 @@ title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ ht-degree: 100%
 
    ![“预览”按钮](/help/sites-cloud/authoring/assets/preview.png)
 
-* **注释**
+* **批注**
 
    允许您在审核页面时向页面中添加[注释](/help/sites-cloud/authoring/fundamentals/annotations.md)。添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
 
@@ -391,7 +391,7 @@ ht-degree: 100%
 
 您可以通过在[“页面信息”菜单](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)中选择&#x200B;**编辑模板**&#x200B;来轻松切换到[模板编辑器](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors)。
 
-在列视图或列表视图中选择页面时，您可以轻松查看该页面所基于 [的模](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)[板](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)。
+在[列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)或[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)中选择页面时，您可以轻松查看该页面所基于的模板。
 
 ## Live Copy 状态 {#live-copy-status}
 
@@ -438,7 +438,7 @@ ht-degree: 100%
 
 ![“预览”按钮](/help/sites-cloud/authoring/assets/preview.png)
 
-### 查看已发布的项目 {#view-as-published}
+### 以发布的形式查看 {#view-as-published}
 
 **查看已发布的项目**&#x200B;选项可从[页面信息](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)菜单中获取。这会在新选项卡中打开页面，刷新内容并准确显示页面在发布环境中呈现的原貌。
 
@@ -506,7 +506,7 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 >
 >有关撤消和重做页面编辑时可执行操作的完整详细信息，请参阅[撤消和重做页面编辑 - 理论](#undoing-and-redoing-page-edits-the-theory)。
 
-## 撤消和重做页面编辑 - 理论 {#undoing-and-redoing-page-edits-the-theory}
+## 撤消和重做页面编辑 – 理论 {#undoing-and-redoing-page-edits-the-theory}
 
 AEM 会按照您执行操作的顺序来存储这些操作的历史记录，这样，您便可以按照执行顺序撤消多个操作，然后在必要时重做它们，以重新应用一个或多个操作。
 
