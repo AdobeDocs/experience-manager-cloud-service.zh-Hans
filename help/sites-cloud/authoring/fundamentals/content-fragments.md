@@ -3,7 +3,7 @@ title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1163'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
    >* [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
-### 选择元素或变量 {#selecting-the-element-or-variation}
+### 选择元素或变体 {#selecting-the-element-or-variation}
 
 打开片段的&#x200B;**配置**&#x200B;对话框以配置片段在当前页面上使用。该对话框取决于所使用的组件。
 
@@ -95,9 +95,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
    >
    >可用的元素取决于所使用的模型。
 
-* **变量**
+* **变体**
    * 默认主 **视图** 将始终可用。
-   * 如果变量是为片段而创建的，将有可选择的变量可用。
+   * 如果变体是为片段而创建的，将有可选择的变量可用。
 
 * **ID**
 
