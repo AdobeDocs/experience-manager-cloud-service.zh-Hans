@@ -3,19 +3,19 @@ title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # 创作环境和工具 {#authoring-the-environment-and-tools}
 
-AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可以从各种控制台和页面编辑器访问提供的工具。
+AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可以从各种控制台和页面编辑器访问提供的工具。
 
-## 管理您的网站 {#managing-your-site}
+## 管理您的站点 {#managing-your-site}
 
-**站点**&#x200B;控制台允许您使用标题栏、工具栏、操作图标（适用于所选资源）和痕迹导航来导航和管理您的网站，选择后还可使用辅助边栏（例如时间轴和引用）。
+**站点**&#x200B;控制台允许您使用标题栏、工具栏、操作图标（适用于所选资源）和痕迹导航来导航和管理您的网站，选择后还可使用辅助边栏（例如时间线和引用）。
 
 例如，列视图：
 
@@ -190,13 +190,13 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可�
 
    ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 属于 [livecopy](/help/sites-cloud/administering/msm/overview.md)，其中组件继承自其他页面。
+* 属于 [livecopy](/help/sites-cloud/administering/msm/overview.md) 一部分且其中组件继承自其他页面的页面。
 
 >[!NOTE]
 >
 >如果您正在浏览器宽度小于 1024 像素的移动设备上编辑页面，则内容树将不可用。
 
-## 片段 - 关联的内容浏览器 {#fragments-associated-content-browser}
+## 片段 – 关联的内容浏览器 {#fragments-associated-content-browser}
 
 如果您的页面包含内容片段，那么您还可以访问[适用于关联内容的浏览器](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)。
 
@@ -224,21 +224,21 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可�
 * **传入链接**，在选择特定链接后提供引用页面的页面列表，并可直接访问以&#x200B;**编辑**&#x200B;这些页面之一
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)，提供对相关启动项的访问权
-* [](/help/sites-cloud/administering/msm/overview.md)Live Copy 显示基于选定资源的所有 Live Copy 的路径。
+* [Live Copy](/help/sites-cloud/administering/msm/overview.md) 显示基于选定资源的所有 Live Copy 的路径。
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，提供详细信息和各种操作
 * [语言副本](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)，提供详细信息和各种操作
 
-## 事件 - 时间轴 {#events-timeline}
+## 事件 – 时间线 {#events-timeline}
 
-对于相应的资源（例如&#x200B;**站点**&#x200B;控制台中的页面或&#x200B;**资产**&#x200B;控制台中的资产），[可使用时间轴显示任何选定项目上的近期活动](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)。
+对于相应的资源（例如&#x200B;**站点**&#x200B;控制台中的页面或&#x200B;**资产**&#x200B;控制台中的资产），[可使用时间线显示任何选定项目上的近期活动](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)。
 
-打开所需的控制台，然后导航到需要的资源并使用以下方法打开&#x200B;**时间轴**：
+打开所需的控制台，然后导航到需要的资源并使用以下方法打开&#x200B;**时间线**：
 
-![时间轴选项](/help/sites-cloud/authoring/assets/timeline.png)
+![时间线选项](/help/sites-cloud/authoring/assets/timeline.png)
 
 [选择您需要的资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**活动**，可列出对所选资源的所有近期操作：
 
-![时间轴详细信息](/help/sites-cloud/authoring/assets/timeline-detail.png)
+![时间线详细信息](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
 ## 页面信息 {#page-information}
 
@@ -253,7 +253,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可�
 * [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [取消发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [编辑模板](/help/sites-cloud/authoring/features/templates.md)
-* [查看已发布的项目](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+* [以发布的形式查看](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [以管理员身份查看](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [帮助](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)（如果该页面是启动项）
@@ -314,9 +314,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制. 可�
 * 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。 单击该 **数字旁边的** X可取消选择全部。
 * 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。还可使用这些痕迹导航在资源层次结构中快速跳转。
 * 您随时都可以使用对话框顶部的搜索字段。单击搜索字段中的 **X** 可清除搜索。
-* 要缩小搜索范围，您可以显示筛选器选项并按特定路径筛选结果。
+* 要缩小搜索范围，您可以显示过滤器选项并按特定路径筛选结果。
 
-   ![筛选器选项](/help/sites-cloud/authoring/assets/filters-option.png)
+   ![过滤器选项](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## 键盘快捷键 {#keyboard-shortcuts}
 
