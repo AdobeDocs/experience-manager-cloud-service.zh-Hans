@@ -1,120 +1,120 @@
 ---
-title: 检索Git存储库访问信息
-description: 了解前端开发人员如何使用Cloud Manager访问git存储库信息。
+title: 检索 Git 存储库访问信息
+description: 了解前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# 检索Git存储库访问信息 {#retrieve-access}
+# 检索 Git 存储库访问信息 {#retrieve-access}
 
-了解前端开发人员如何使用Cloud Manager访问git存储库信息。
+了解前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。
 
 ## 迄今为止的故事 {#story-so-far}
 
-如果您是仅负责自定义网站主题的前端开发人员，则无需了解AEM的设置方式，即可跳转到 [目标](#objective) 部分。
+如果您是只负责站点主题自定义的前端开发人员，则无需了解 AEM 的设置方式，可以直接跳至本文档的[目标](#objective)部分。
 
-如果您还担任Cloud Manager或AEM管理员以及前端开发人员的角色，则您在AEM快速网站创建历程的上一文档中了解到， [授予对前端开发人员的访问权限，](grant-access.md) 如何载入前端开发人员，以便他们能够访问git存储库，您现在应该知道：
+如果您还担任 Cloud Manager 或 AEM 管理员以及前端开发人员的角色，您已在 AEM 快速站点创建历程的上一个文档[向前端开发人员授予访问权限](grant-access.md)中了解如何载入前端开发人员，以便他们能够访问 Git 存储库，现在应知道：
 
-* 如何添加前端开发人员作为用户。
+* 如何将前端开发人员添加为用户。
 * 如何向前端开发人员授予所需的角色。
 
-本文将进行下一步，显示前端开发人员如何使用Cloud Manager访问权限检索凭据以访问AEM git存储库。
+本文接下来介绍了前端开发人员如何使用 Cloud Manager 访问权限来检索凭据以访问 AEM Git 存储库。
 
-现在，已有一个基于模板创建的站点，已设置管道，前端开发人员已载入并拥有他们所需的所有信息，因此本文将视角从管理员转移到前端开发人员角色。
+现在已基于模板创建一个站点，设置了一个管道，前端开发人员已载入并拥有他们所需的一切信息，本文将从管理员的视角转向前端开发人员角色的视角。
 
 ## 目标 {#objective}
 
-本文档介绍您如何以前端开发人员的角色访问Cloud Manager并检索对AEM git存储库的访问凭据。 阅读后，您将：
+本文档说明您如何以前端开发人员角色访问 Cloud Manager 并检索 AEM Git 存储库的访问凭据。阅读本文档后，您将：
 
-* 深入了解Cloud Manager的概念。
-* 已检索您的凭据以访问AEM git，以便您能够提交自定义设置。
+* 从较高层面了解什么是 Cloud Manager。
+* 已检索您的凭据来访问 AEM Git，以便您能提交自定义项。
 
-## 负责任角色 {#responsible-role}
+## 负责角色 {#responsible-role}
 
-此部分历程适用于前端开发人员。
+此历程的这一部分适用于前端开发人员。
 
 ## 要求 {#requirements}
 
-“快速站点创建”工具允许前端开发人员在不了解AEM或其设置情况的情况下独立工作。 但是，Cloud Manager管理员必须将前端开发人员载入项目团队，并且AEM管理员必须向您提供一些必需的信息。 在继续操作之前，请确保您具有以下信息。
+利用快速站点创建工具，前端开发人员可以独立工作，而无需了解 AEM 或其设置方式。但是，Cloud Manager 管理员必须将前端开发人员载入项目团队，并且 AEM 管理员必须为您提供一些必需的信息。在继续之前，请确保您拥有以下信息。
 
-* AEM管理员：
+* AEM 管理员提供：
    * 要自定义的主题源文件
-   * 用作引用基础的示例页面的路径
-   * 用于针对实时AEM内容测试自定义设置的代理用户凭据
+   * 用作参考基础的示例页面的路径
+   * 用于针对实时 AEM 内容测试自定义项的代理用户凭据
    * 前端设计要求
-* Cloud Manager管理员提供：
-   * Cloud Manager发送的欢迎电子邮件，通知您有权访问
-   * 程序的名称或Cloud Manager中指向该程序的URL
+* Cloud Manager 管理员提供：
+   * 来自 Cloud Manager 的欢迎电子邮件，为您提供了访问信息
+   * Cloud Manager 中的项目的名称或 URL
 
-如果您缺少其中的任何项目，请联系AEM管理员或Cloud Manager管理员。
+如果您缺少这些项目中的任何一项，请联系 AEM 管理员或 Cloud Manager 管理员。
 
-我们假定前端开发人员在前端开发工作流程以及安装的常用工具方面拥有丰富的经验，包括：
+假设前端开发人员在前端开发工作流以及安装的常用工具方面具有丰富的经验，包括：
 
 * git
 * npm
 * webpack
 * 首选编辑器
 
-## 了解Cloud Manager {#understanding-cloud-manager}
+## 了解 Cloud Manager {#understanding-cloud-manager}
 
-Cloud Manager允许组织在云中自行管理AEM。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。
+Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。
 
-对于前端开发人员，它是访问以下内容的网关：
+对于前端开发人员来说，它是实现以下目标的途径：
 
-* 访问AEM git存储库信息，以便能够提交前端自定义设置。
-* 启动部署管道以部署自定义设置。
+* 访问 AEM Git 存储库信息，以便您能提交前端自定义项。
+* 启动部署管道，部署您的自定义项。
 
-Cloud Manager管理员将以Cloud Manager用户的身份载入您。 您应该收到类似于以下内容的欢迎电子邮件。
+Cloud Manager 管理员会将您作为 Cloud Manager 用户载入。您应该已收到类似于以下内容的欢迎电子邮件。
 
 ![欢迎电子邮件](assets/welcome-email.png)
 
-如果您尚未收到此电子邮件，请联系Cloud Manager管理员。
+如果您没有收到此电子邮件，请联系 Cloud Manager 管理员。
 
-## 访问Cloud Manager {#access-cloud-manager}
+## 访问 Cloud Manager {#access-cloud-manager}
 
-1. 登录Adobe Experience Cloud(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 或单击欢迎电子邮件中提供的链接。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录 Adobe Experience Cloud，或单击欢迎电子邮件中提供的链接。
 
-1. Cloud Manager列出了各种可用的程序。 点按或单击Cloud Manager管理员提供的您需要访问的页面。 如果这是您的AEMaaCS的第一个前端项目，则您可能只有一个项目可用。
+1. Cloud Manager 列出了可用的各种项目。点按或单击 Cloud Manager 管理员提供的您需要访问的项目。如果这是您的第一个 AEMaaCS 前端项目，则您可能只有一个可用项目。
 
-   ![在Cloud Manager中选择项目](assets/cloud-manager-select-program.png)
+   ![在 Cloud Manager 中选择项目](assets/cloud-manager-select-program.png)
 
-您现在可以看到项目的概述。 您的页面将有所不同，但与以下示例类似。
+您现在可以看到您的项目概述。您的页面的外观会有所不同，但与此示例相似。
 
-![Cloud Manager概述](assets/cloud-manager-overview.png)
+![Cloud Manager 概述](assets/cloud-manager-overview.png)
 
 ## 检索存储库访问信息 {#repo-access}
 
-1. 在 **管道** ，点按或单击 **访问存储库信息** 按钮。
+1. 在 Cloud Manager 页面的&#x200B;**管道**&#x200B;部分中，点按或单击&#x200B;**访问存储库信息**&#x200B;按钮。
 
    ![管道](assets/pipelines-repo-info.png)
 
-1. 的 **存储库信息** 对话框。
+1. 这将打开&#x200B;**存储库信息**&#x200B;对话框。
 
    ![存储库信息](assets/repo-info.png)
 
-1. 点按或单击 **生成密码** 按钮为自己创建密码。
+1. 点按或单击&#x200B;**生成密码**&#x200B;按钮以自行创建密码。
 
-1. 将生成的密码保存到安全密码管理器。 密码将不再显示。
+1. 将生成的密码保存到安全密码管理器。此密码将永不再显示。
 
-1. 另请复制 **用户名** 和 **Git命令行** 字段。 您稍后将使用此信息访问存储库。
+1. 此外，复制&#x200B;**用户名**&#x200B;和 **Git 命令行**&#x200B;字段。稍后您将使用此信息来访问存储库。
 
-1. 点按或单击 **关闭**.
+1. 点按或单击&#x200B;**关闭**。
 
 ## 下一步 {#what-is-next}
 
-现在，您已完成AEM快速网站创建历程的这一部分，接下来您应该：
+现在您已完成 AEM 快速站点创建历程的这一部分，您应：
 
-* 深入了解Cloud Manager的概念。
-* 已检索您的凭据以访问AEM git，以便您能够提交自定义设置。
+* 从较高层面了解什么是 Cloud Manager。
+* 已检索您的凭据来访问 AEM Git，以便您能提交自定义项。
 
-在此知识的基础上，通过下一步审阅文档，继续您的AEM快速网站创建历程 [自定义网站主题，](customize-theme.md) 您将在何处了解如何构建网站主题、如何自定义以及如何使用实时AEM内容进行测试。
+在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[自定义站点主题](customize-theme.md)，其中您将了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
 
 ## 其他资源 {#additional-resources}
 
-同时，建议您通过审阅文档来转到快速网站创建历程的下一部分 [自定义网站主题，](customize-theme.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续访问这些概念。
+我们建议您查看文档[自定义站点主题](customize-theme.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [Adobe Experience Manager Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans)  — 浏览Cloud Manager文档，以获取其功能的完整详细信息。
+* [Adobe Experience Manager Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans) – 浏览 Cloud Manager 文档，了解其功能的完整详细信息。
