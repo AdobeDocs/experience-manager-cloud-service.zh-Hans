@@ -3,7 +3,7 @@ title: 配置帐户环境
 description: AEM 提供了用于配置帐户和创作环境的某些方面的功能
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
 ht-degree: 100%
 
@@ -23,14 +23,14 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 * 模拟为
    * 借助“模拟为”功能，用户可以代表其他用户工作。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
-* 个人资料
+* 配置文件
    * 提供一个指向您的用户设置的便捷链接 <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
-* [我的首选项](#my-preferences)
+* [我的偏好设置](#my-preferences)
    * 指定用户特有的各种首选项设置
 
 ![用户设置](/help/sites-cloud/authoring/assets/user-settings.png)
 
-### 我的首选项 {#my-preferences}
+### 我的偏好设置 {#my-preferences}
 
 **我的首选项**&#x200B;对话框可通过标题中的[用户](#user-settings)选项进行访问。
 
