@@ -3,9 +3,9 @@ title: 如何构建目标内容的多站点管理
 description: 图表显示了如何构建目标内容的多站点支持
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 下图显示了如何构建目标内容的多站点支持。
 
-下面显示区域 **/content/campaigns/&lt;brand>** 默认情况下，每个品牌都有一个主控区域，该区域会自动创建。 每个区域都包含自身的一组活动、体验和选件。
+**/content/campaigns/&lt;brand>** 下方显示了区域，默认情况下，每个品牌都有一个自动创建的主区域。每个区域都包含自身的一组活动、体验和选件。
 
 ![多站点结构](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
