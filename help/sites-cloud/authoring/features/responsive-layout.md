@@ -3,9 +3,9 @@ title: 响应式布局
 description: AEM 让您能够为页面实现响应式布局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1765'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -231,8 +231,8 @@ AEM 允许您根据设备的宽度定义布局：
    >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
 
    * **取消隐藏组件**
-选择父组件以显示包含 
-**显示隐藏的组件** 选项。 在此示例中，隐藏了两个组件。
+选择父组件会显示包含 
+**显示隐藏组件**&#x200B;选项的操作工具栏。 在此示例中，隐藏了两个组件。
 
       ![取消隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    选择&#x200B;**显示隐藏的组件**&#x200B;选项时，当前隐藏的组件将以蓝色显示在它们的原始位置。
