@@ -3,9 +3,9 @@ title: 搜索
 description: 使用完备的搜索功能更快速地查找您的内容
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '494'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 99%
 
 AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类型。
 
-## 关于搜索的基础知识 {#search-basics}
+## 搜索基础知识 {#search-basics}
 
-搜索在顶部工具栏中可用：
+可从顶部工具栏中使用搜索功能：
 
 ![“搜索”图标](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -41,14 +41,14 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
    ![搜索位置](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. 如果需要，您可以删除位置筛选器（选中要删除的筛选器上的 **X**），以在所有控制台/资源类型之间进行筛选。
+1. 如果需要，您可以删除位置过滤器（选中要删除的过滤器上的 **X**），以在所有控制台/资源类型之间进行筛选。
 1. 将会显示结果，并按控制台和相关的资源类型进行分组。
 
    您可以选择一种特定的资源（用于未来操作），或通过选择所需的资源类型向下展开；例如&#x200B;**查看全部站点**：
 
    ![搜索结果](/help/sites-cloud/authoring/assets/search-results.png)
 
-1. 如果您需要进一步向下展开，请选择“边栏”符号（左上方）以打开侧面板&#x200B;**筛选器和选项**。
+1. 如果您需要进一步向下展开，请选择“边栏”符号（左上方）以打开侧面板&#x200B;**过滤器和选项**。
 
    ![边栏按钮](/help/sites-cloud/authoring/assets/rail-button.png)
 
