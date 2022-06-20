@@ -3,7 +3,7 @@ title: 解决 AEM 中有关创作方面的问题
 description: 使用 AEM 时可能遇到的一些问题
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
 ht-degree: 100%
 
@@ -13,13 +13,13 @@ ht-degree: 100%
 
 以下部分涵盖您在使用 AEM 时可能遇到的一些问题，以及有关如何解决这些问题的建议。
 
-## 发布网站上仍显示旧的页面版本 {#old-page-version-still-on-published-site}
+## 发布站点上仍显示旧的页面版本 {#old-page-version-still-on-published-site}
 
 * **问题**：
    * 您已经更改了一个页面，并将该页面发布到发布站点，但发布站点中仍显示&#x200B;*旧*&#x200B;版页面。
 * **原因**：
    * 这种情况可能有几个原因，最常见的原因是本地浏览器或调度程序缓存问题，但有时也可能是复制队列的问题。
-* **解决方案**:
+* **解决方案**：
    * 这里列举了各种可能的情况：
    * 确认页面复制正确。检查页面状态，如有必要，检查复制队列的状态。
    * 清除本地浏览器中的缓存，然后再次访问页面。
