@@ -3,9 +3,9 @@ title: 使用标记
 description: 标记是用于对网站中的内容进行分类的简单快捷方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 96%
 标记是用于对网站中的内容进行分类的简单快捷方法。可以将标记视为可附加到页面、资产或其他内容，以便在进行搜索时能够找到该内容及相关内容的关键字或标签。
 
 * 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅“管理标记”。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* 请参阅 [面向开发人员的标记](/help/implementing/developing/introduction/tagging-framework.md) 有关标记框架以及在自定义应用程序中包含和扩展标记的信息。
+* 有关标记框架以及在自定义应用程序中包括和扩展标记的信息，请参阅[针对开发人员的标记](/help/implementing/developing/introduction/tagging-framework.md)。
 
 ## 使用标记的十大理由 {#ten-reasons-to-use-tagging}
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 1. **深度组织标记** - 有了创建标记和子标记的功能，就可以表示整个分类系统，其中涵盖术语、子术语及其关系。这允许您创建与正式内容层次结构平行的第二个（或第三个）内容层次结构。
 1. **控制标记** - 可以通过对标记和/或命名空间应用权限来控制标记创建和应用，从而控制标记。
 1. **灵活标记** - 标记有许多名称和面孔：标记、分类术语、类别、标签等等。标记的内容模型和使用方式很灵活；例如，在概括目标人口统计、对内容进行分类或评级，或者创建辅助内容层次结构时，均可使用标记。
-1. **改进搜索** - AEM 中的默认搜索组件包含大量已创建的标记和已应用的标记，可以对其应用筛选器以将结果缩小到相关范围。
+1. **改进搜索** - AEM 中的默认搜索组件包含大量已创建的标记和已应用的标记，可以对其应用过滤器以将结果缩小到相关范围。
 1. **启用 SEO** - 作为页面属性应用的标记将自动显示在页面的元标记中，以对搜索引擎可见。
 1. **化繁为简** - 可以简单地通过一个词语和触摸按钮来创建标记。之后，可以添加标题、描述和无限数量的标签以向标记提供更多语义。
 1. **核心一致性** - 标记系统是 AEM 的核心组件，可供所有 AEM 功能用来对内容分类。此外，开发人员可以使用标记 API 来创建支持标记的应用程序，以便访问相同的分类。
