@@ -3,9 +3,9 @@ title: 在  [!DNL Adobe Experience Manager]  中使用富文本编辑器创作�
 description: 使用  [!DNL Experience Manager]  富文本编辑器创作内容。
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 对于基于文本的组件，单击[工具栏](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)中的全屏模式 ![RTE 全屏按钮](/help/sites-cloud/authoring/assets/editing-full-screen.png) 以打开富文本编辑器，并隐藏页面内容的其余部分。
 
-全屏模式会显示可用于创作的所有已配置选项。选项的可用性 [取决于配置](/help/implementing/developing/extending/rich-text-editor.md).
+全屏模式会显示可用于创作的所有已配置选项。选项的可用性[取决于配置](/help/implementing/developing/extending/rich-text-editor.md)。
 
 ![全屏模式下的 RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
