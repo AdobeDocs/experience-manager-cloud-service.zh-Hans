@@ -3,7 +3,7 @@ title: 组件
 description: 组件是 AEM 中内容页面的基本创作构建基块
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 * [配置属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [编辑内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-* [编辑内容 - 全屏模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
+* [编辑内容 – 全屏模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
 有关将组件添加到页面的进一步信息，请参阅文章[编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
 
@@ -45,4 +45,4 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ### 配置模板 {#configuring-templates}
 
-如果您的页面基于建议的现代化可编辑的模板，则可以通过[编辑模板](/help/sites-cloud/authoring/features/templates.md)来启用/禁用这些组件及编辑特定组件的参数。
+如果您的页面基于建议的现代化可编辑的模板，则可以通过[编辑模板](/help/sites-cloud/authoring/features/templates.md)来启用/禁用这些组件以及编辑特定组件的参数。
