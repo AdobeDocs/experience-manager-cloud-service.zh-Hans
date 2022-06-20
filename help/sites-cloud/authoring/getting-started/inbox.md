@@ -3,7 +3,7 @@ title: 您的收件箱
 description: 使用收件箱管理您的任务
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -59,13 +59,13 @@ ht-degree: 100%
 >
 >收件箱作为控制台运行，因此当您完成操作后，可使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)或[搜索](/help/sites-cloud/authoring/getting-started/search.md)导航到其他位置。
 
-### 收件箱 - 列表视图 {#inbox-list-view}
+### 收件箱 – 列表视图 {#inbox-list-view}
 
 该视图可列出所有项目以及相关信息：
 
 ![收件箱列表视图](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
-### 收件箱 - 日历视图 {#inbox-calendar-view}
+### 收件箱 – 日历视图 {#inbox-calendar-view}
 
 此视图根据项目在日历中的位置显示项目：
 
@@ -73,14 +73,14 @@ ht-degree: 100%
 
 您可以：
 
-* 选择一个具体视图：**时间轴**、**列**、**列表**
+* 选择一个具体视图：**时间线**、**列**、**列表**
 * 根据&#x200B;**计划**&#x200B;指定要显示的任务：**全部**、**已计划**、**进行中**、**即将到期**、**已过期**
 * 向下展开以深入了解项目的更多详细信息
 * 选择日期范围以集中显示视图：
 
 ![收件箱日历视图日期范围](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
-### 收件箱 - 视图设置 {#inbox-view-settings}
+### 收件箱 – 视图设置 {#inbox-view-settings}
 
 对于这两个视图（列表和日历），您可以定义设置：
 
@@ -214,19 +214,19 @@ ht-degree: 100%
 
 1. 选择&#x200B;**创建**&#x200B;以确认操作。
 
-## 筛选“AEM 收件箱”中的项目 {#filtering-items-in-the-aem-inbox}
+## 筛选 AEM 收件箱中的项目 {#filtering-items-in-the-aem-inbox}
 
 您可以筛选列出的项目：
 
 1. 打开 **AEM 收件箱**。
 
-1. 打开筛选器选择器：
+1. 打开过滤器选择器：
 
    ![收件箱搜索](/help/sites-cloud/authoring/assets/inbox-search.png)
 
 1. 您可以根据一系列条件筛选所列项目，其中许多条件可以进行细化；例如：
 
-   ![收件箱搜索筛选器](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
+   ![收件箱搜索过滤器](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
    >
