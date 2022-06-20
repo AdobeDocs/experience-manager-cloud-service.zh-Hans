@@ -1,64 +1,64 @@
 ---
 title: 标识要翻译的内容
-description: 了解翻译规则如何识别需要翻译的内容。
+description: 了解翻译规则如何标识需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1297'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # 标识要翻译的内容 {#identifying-content-to-translate}
 
-翻译规则可识别要翻译的内容，这些内容适用于翻译项目中包含或排除的页面、组件和资产。 当页面或资产被翻译时，AEM会提取此内容，以便将其发送到翻译服务。
+翻译规则为翻译项目中包含或排除的页面、组件和资产标识要翻译的内容。在翻译页面或资产时，AEM 会提取此内容，以便将其发送到翻译服务。
 
 >[!TIP]
 >
->如果您是翻译内容的新用户，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 这是使用AEM强大的翻译工具翻译AEM Sites内容的指导路径，非常适合那些没有AEM或翻译经验的用户。
+>如果不熟悉如何翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
 
 ## 内容片段和翻译规则 {#content-fragments}
 
-仅当 **为翻译启用内容模型字段** 选项 [翻译集成框架配置级别。](integration-framework.md#assets-configuration-properties)
+仅当未在[翻译集成框架配置级别](integration-framework.md#assets-configuration-properties)激活&#x200B;**为翻译启用内容模型字段**&#x200B;选项时，本文档中描述的翻译规则才应用于内容片段。
 
-如果 **为翻译启用内容模型字段** 选项， AEM将使用 **可翻译** 字段 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 确定字段是否要翻译，并自动创建翻译规则。 此选项将取代您可能已创建的任何翻译规则，并且无需干预或执行其他步骤。
+如果&#x200B;**为翻译启用内容模型字段**&#x200B;选项已激活，AEM 将使用[内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段来确定是否要翻译该字段并相应地自动创建翻译规则。 此选项取代了您可能已创建的任何翻译规则，无需干预或附加步骤。
 
-如果您希望使用翻译规则来翻译内容片段，请 **为翻译启用内容模型字段** 必须禁用翻译集成框架配置中的选项，您需要按照下面列出的步骤创建规则。
+如果要使用翻译规则来翻译内容片段，必须禁用翻译集成框架配置上的&#x200B;**为翻译启用内容模型字段**&#x200B;选项，并且您需要执行下面列出的步骤来创建规则。
 
 ## 概述 {#overview}
 
-页面和资产在JCR存储库中以节点表示。 提取的内容是节点的一个或多个属性值。 翻译规则识别包含要提取内容的属性。
+页面和资产在 JCR 存储库中表示为节点。提取的内容是节点的一个或多个属性值。翻译规则标识包含要提取的内容的属性。
 
-翻译规则以XML格式表示，并存储在以下可能的位置：
+翻译规则以 XML 格式表示，并且可能存储在以下位置：
 
 * `/libs/settings/translation/rules/translation_rules.xml`
 * `/apps/settings/translation/rules/translation_rules.xml`
 * `/conf/global/settings/translation/rules/translation_rules.xml`
 
-该文件适用于所有翻译项目。
+该文件应用于所有翻译项目。
 
-规则包括以下信息：
+规则包含以下信息：
 
-* 应用规则的节点的路径
-   * 该规则也适用于该节点的子项。
+* 规则应用于的节点的路径
+   * 规则也应用于节点的子级。
 * 包含要翻译的内容的节点属性的名称
-   * 该属性可以特定于特定资源类型或所有资源类型。
+   * 属性可以特定于某个特定的资源类型或所有资源类型。
 
-例如，您可以创建一个规则，以将作者添加的内容转换为页面上的所有文本组件。 规则可识别 `/content` 节点和 `text` 属性 `core/wcm/components/text/v2/text` 组件。
+例如，您可以创建一个规则来翻译作者添加到您页面上所有文本组件的内容。此规则可以标识 `core/wcm/components/text/v2/text` 组件的 `/content` 节点和 `text` 属性。
 
-有 [控制台](#translation-rules-ui) 添加了用于配置翻译规则的。 UI中的定义将为您填充文件。
+已添加一个可用于配置翻译规则的[控制台](#translation-rules-ui)。UI 中的定义将为您填充文件。
 
-有关AEM中的内容翻译功能的概述，请参阅 [翻译多语言站点的内容](overview.md).
+有关 AEM 中内容翻译功能的概述，请参阅[翻译多语言站点的内容](overview.md)。
 
 >[!NOTE]
 >
->AEM支持在资源类型和引用属性之间进行一对一映射，以转换页面上的引用内容。
+>AEM 支持资源类型和引用属性之间的一对一映射，以便翻译页面上的引用内容。
 
 ## 页面、组件和资产的规则语法 {#rule-syntax-for-pages-components-and-assets}
 
-规则是 `node` 一个或多个子元素 `property` 元素和零个或更多子项 `node` 元素：
+规则是一个 `node` 元素，它包含一个或多个子 `property` 元素以及零个或多个子 `node` 元素：
 
 ```xml
 <node path="content path">
@@ -69,17 +69,17 @@ ht-degree: 1%
 </node>
 ```
 
-每个 `node` 元素具有以下特征：
+其中每个 `node` 元素均具有以下特性：
 
-* 的 `path` 属性包含应用规则的分支的根节点的路径。
-* 子项 `property` 元素标识要为所有资源类型转换的节点属性：
-   * 的 `name` 属性包含属性名称。
-   * 可选 `translate` 属性等于 `false` 如果属性未翻译。 默认情况下，值为 `true`. 此属性在覆盖以前的规则时很有用。
-* 子项 `node` 元素标识要针对特定资源类型转换的节点属性：
-   * 的 `resourceType` 属性包含解析为实现资源类型的组件的路径。
-   * 子项 `property` 元素可标识要转换的节点属性。 此节点的使用方式与子节点相同 `property` 节点规则的元素。
+* `path` 属性包含应用规则的分支的根节点的路径。
+* 子 `property` 元素为所有资源类型标识要翻译的节点属性：
+   * `name` 属性包含属性名。
+   * 可选 `translate` 属性等于 `false`（如果该属性未翻译）。默认情况下，该值为 `true`。在覆盖以前的规则时，此属性很有用。
+* 子 `node` 元素为特定资源类型标识要翻译的节点属性：
+   * `resourceType` 属性包含解析为实施资源类型的组件的路径。
+   * 子 `property` 元素标识要翻译的节点属性。按照与节点规则的子 `property` 元素相同的方式使用此节点。
 
-以下示例规则将导致 `text` 要翻译的属性 `/content` 节点。 规则对于在 `text` 属性，如文本组件。
+以下示例规则导致为 `/content` 节点下的所有页面翻译所有 `text` 属性的内容。该规则适用于任何将内容存储在 `text` 属性中的组件，例如文本组件。
 
 ```xml
 <node path="/content">
@@ -87,7 +87,7 @@ ht-degree: 1%
 </node>
 ```
 
-以下示例将翻译所有 `text` 属性，并且还会转换图像组件的其他属性。 如果其他组件具有同名属性，则规则不会应用到这些属性。
+以下示例翻译了所有 `text` 属性的内容，并翻译了图像组件的其他属性。如果其他组件具有同名属性，则该规则不适用于它们。
 
 ```xml
 <node path="/content">
@@ -100,18 +100,18 @@ ht-degree: 1%
 </node>
 ```
 
-## 从页面提取资产的规则语法  {#rule-syntax-for-extracting-assets-from-pages}
+## 用于从页面提取资产的规则语法  {#rule-syntax-for-extracting-assets-from-pages}
 
-使用以下规则语法来包含在组件中嵌入或从组件中引用的资产：
+使用以下规则语法可包含嵌入在组件中或从组件中引用的资产：
 
 ```xml
 <assetNode resourceType="path to component" assetReferenceAttribute="property that stores asset"/>
 ```
 
-每个 `assetNode` 元素具有以下特征：
+每个 `assetNode` 元素均具有以下特性：
 
-* 一个 `resourceType` 等于解析到组件的路径的属性
-* 一个 `assetReferenceAttribute` 属性，该属性等于存储资产二进制文件（用于嵌入的资产）或引用资产路径的属性的名称
+* 一个 `resourceType` 属性，代表解析为组件的路径
+* 一个 `assetReferenceAttribute` 属性，代表存储资产二进制文件（用于嵌入资产）的属性的名称或引用资产的路径
 
 以下示例从图像组件中提取图像：
 
@@ -121,7 +121,7 @@ ht-degree: 1%
 
 ## 覆盖规则 {#overriding-rules}
 
-的 `translation_rules.xml` 文件由 `nodelist` 具有多个子元素 `node` 元素。 AEM从上到下读取节点列表。 当多个规则定向同一节点时，将使用文件中较低的规则。 例如，以下规则会导致 `text` 的资产，惟 `/content/mysite/en` 页面分支：
+`translation_rules.xml` 文件包含一个 `nodelist` 元素和多个子 `node` 元素。AEM 从上到下读取节点列表。如果有多个规则针对同一节点，则使用文件中较低位置的规则。例如，以下规则导致翻译 `text` 属性中的所有内容，但页面的 `/content/mysite/en` 分支除外：
 
 ```xml
 <nodelist>
@@ -136,9 +136,9 @@ ht-degree: 1%
 
 ## 筛选属性 {#filtering-properties}
 
-您可以使用 `filter` 元素。
+您可以使用 `filter` 元素筛选具有特定属性的节点。
 
-例如，以下规则会导致 `text` 要翻译的属性，但具有属性的节点除外 `draft` 设置为 `true`.
+例如，以下规则导致翻译 `text` 属性中的所有内容，但属性 `draft` 设置为 `true` 的节点除外。
 
 ```xml
 <nodelist>
@@ -151,31 +151,31 @@ ht-degree: 1%
 <nodelist>
 ```
 
-## 翻译规则UI {#translation-rules-ui}
+## 翻译规则 UI {#translation-rules-ui}
 
 控制台也可用于配置翻译规则。
 
 要访问它，请执行以下操作：
 
-1. 导航到 **工具** 然后 **常规**.
+1. 依次导航到&#x200B;**工具**&#x200B;和&#x200B;**常规**。
 
-1. 选择 **翻译配置**.
+1. 选择&#x200B;**翻译配置**。
 
-在翻译规则UI中，您可以：
+在翻译规则 UI 中，您可以：
 
-1. **添加上下文**，用于添加路径。
+1. **添加上下文**，可让您添加路径。
 
    ![添加翻译上下文](../assets/add-translation-context.png)
 
-1. 使用路径浏览器选择所需的上下文，然后点按或单击 **确认** 按钮进行保存。
+1. 使用路径浏览器选择所需的上下文，然后点按或单击&#x200B;**确认**&#x200B;按钮进行保存。
 
    ![选择上下文](../assets/select-context.png)
 
-1. 然后，您需要选择上下文，然后单击 **编辑**. 这将打开翻译规则编辑器。
+1. 之后，您需要选择上下文，然后单击&#x200B;**编辑**。该操作将打开翻译规则编辑器。
 
    ![翻译规则编辑器](../assets/translation-rules-editor.png)
 
-您可以通过UI更改以下四个属性：
+您可以通过 UI 更改四个属性：
 
 * `isDeep`
 * `inherit`
@@ -184,15 +184,15 @@ ht-degree: 1%
 
 ### isDeep {#isdeep}
 
-**`isDeep`**  适用于节点过滤器，且默认为true。 它会检查节点（或其祖先）是否在筛选器中包含具有指定属性值的属性。 如果为false，则仅在当前节点进行检查。
+**`isDeep`** 适用于节点过滤器且默认情况下为 true。它检查节点（或其祖先）是否在过滤器中包含具有指定属性值的属性。如果为 false，则仅检查当前节点。
 
-例如，即使父节点具有属性，子节点也会添加到翻译作业中 `draftOnly` 设置为true以标记草稿内容。 此处 `isDeep` 起作用并检查父节点是否具有属性 `draftOnly` 为true并排除这些子节点。
+例如，即使父节点将属性 `draftOnly` 设置为 true 以标记草稿内容，子节点也会添加到翻译作业中。此时 `isDeep` 将发挥作用，并检查父节点是否已将属性 `draftOnly` 设置为 true 并排除这些子节点。
 
-在编辑器中，您可以选中/取消选中 **深** 在 **过滤器** 选项卡。
+在编辑器中，您可以在&#x200B;**过滤器**&#x200B;选项卡中选中/取消选中 **Is Deep**。
 
-![筛选规则](../assets/translation-rules-editor-filters.png)
+![过滤器规则](../assets/translation-rules-editor-filters.png)
 
-以下是生成的XML的示例，当 **深** 未在UI中选中：
+以下是在 UI 中取消选中 **Is Deep** 时生成的 XML 的示例：
 
 ```xml
  <filter>
@@ -200,29 +200,29 @@ ht-degree: 1%
 </filter>
 ```
 
-### 继承 {#inherit}
+### inherit {#inherit}
 
-**`inherit`** 适用于资产。 默认情况下，每个属性都会继承，但如果您希望某个属性不会被子级继承，则可以将此属性标记为false，以便仅将其应用于该特定节点。
+**`inherit`** 适用于属性。默认情况下，每个属性都会被继承，但如果您希望某个属性不被子级继承，则可以将此属性标记为 false，使其仅应用于该特定节点。
 
-在UI中，您可以选中/取消选中 **继承** 在 **属性** 选项卡。
+在 UI 中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中 **Inherit**。
 
-### 翻译 {#translate}
+### translate {#translate}
 
-**`translate`** 仅用于指定是否转换属性。
+**`translate`** 仅用于指定是否翻译属性。
 
-在UI中，您可以选中/取消选中 **翻译** 在 **属性** 选项卡。
+在 UI 中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中 **Translate**。
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** 用于没有文本但是语言代码的属性，例如 `jcr:language`. 用户不是在翻译文本，而是在语言区域设置从源到目标。 此类属性不会发送以进行翻译。
+**`updateDestinationLanguage`** 用于没有文本但有语言代码的属性，例如 `jcr:language`。用户不会翻译文本，而是进行从源到目标的语言区域设置。不会发送此类属性进行翻译。
 
-在UI中，您可以选中/取消选中 **翻译** 在 **属性** 选项卡来修改此值，但对于具有语言代码作为值的特定属性。
+在 UI 中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中 **Translate** 来修改此值，但目标对象是将语言代码作为值的特定属性
 
-帮助阐明 `updateDestinationLanguage` 和 `translate`，以下是仅包含两个规则的上下文的简单示例：
+为了帮助阐明 `updateDestinationLanguage` 和 `translate` 之间的区别，以下提供了仅具有两个规则的上下文的简单示例：
 
-![updateDestinationLanguage示例](../assets/translation-rules-updatedestinationlanguage.png)
+![updateDestinationLanguage 示例](../assets/translation-rules-updatedestinationlanguage.png)
 
-xml的结果将如下所示：
+xml 中的结果将如下所示：
 
 ```xml
 <property inherit="true" name="text" translate="true" updateDestinationLanguage="false"/>
@@ -231,15 +231,15 @@ xml的结果将如下所示：
 
 ## 手动编辑规则文件 {#editing-the-rules-file-manually}
 
-的 `translation_rules.xml` 随AEM一起安装的文件包含一组默认的翻译规则。 您可以编辑文件以支持翻译项目的要求。 例如，您可以添加规则，以便对自定义组件的内容进行翻译。
+与 AEM 一起安装的 `translation_rules.xml` 文件包含一组默认的翻译规则。您可以编辑该文件以支持翻译项目的要求。例如，您可以添加规则以翻译自定义组件的内容。
 
-如果您编辑 `translation_rules.xml` 文件，请将备份副本保留在内容包中。 重新安装某些AEM包可以替换当前 `translation_rules.xml` 文件。 要在这种情况下恢复规则，您可以安装包含备份副本的包。
+如果您编辑 `translation_rules.xml` 文件，请在内容包中保留备份副本。重新安装某些 AEM 包可将当前 `translation_rules.xml` 文件替换为原始文件。要在此情况下恢复您的规则，您可以安装包含备份副本的包。
 
 >[!NOTE]
 >
->创建内容包后，每次编辑文件时都重新构建包。
+>创建内容包后，每次编辑文件时都会重新构建包。
 
-## 翻译规则文件示例 {#example-translation-rules-file}
+## 示例翻译规则文件 {#example-translation-rules-file}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><nodelist>
