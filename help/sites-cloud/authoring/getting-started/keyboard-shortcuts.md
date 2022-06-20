@@ -3,7 +3,7 @@ title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ AEM 为一些常用功能（编辑、属性、复制/粘贴、显示各种侧边
 
 您可以在以下两个位置取消激活键盘快捷键：
 
-* [我的首选项](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
+* [我的偏好设置](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * [帮助菜单](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 
 >[!NOTE]
