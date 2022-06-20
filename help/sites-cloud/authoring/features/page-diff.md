@@ -3,9 +3,9 @@ title: 页面差异
 description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ ht-degree: 97%
 可以并排比较以下内容：
 
 * [版本](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - 将页面的以前版本与其当前状态进行比较
-* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - 将 Live Copy 与其 Blueprint 进行比较
-* [启动项](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - 将启动项与其源进行比较
-* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)语言副本 - 将翻译之前和翻译之后（重新翻译）的页面进行比较
+* [Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) – 将 Live Copy 与其 Blueprint 进行比较
+* [启动项](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) – 将启动项与其源进行比较
+* [语言副本](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) – 将翻译之前和翻译之后（重新翻译）的页面进行比较
 
 请参阅有关如何在这些情况下启动差异比较的相关主题。
 
@@ -88,9 +88,9 @@ ht-degree: 97%
 在某些情况下，页面差异功能可能检测不到预期的差异。
 
 * 在比较版本和启动项时，差异不会考虑动态组件，如痕迹导航、菜单、产品列表或徽标（依赖站点结构呈现其内容的组件）。
-* 对于版本，差异不会重新创建访问控制策略和Live Copy关系。
+* 对于版本，差异不会重新创建访问控制策略和 Live Copy 关系。
 * 如果页面发生移动，将无法再使用移动前制作的任何版本执行差异。
-   * 如果您遇到差异问题，请检查页面的[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)以查看页面是否已被移动。
+   * 如果您遇到差异问题，请检查页面的[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)以查看页面是否已被移动。
 
 >[!NOTE]
 >
