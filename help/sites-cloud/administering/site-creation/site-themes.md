@@ -1,56 +1,56 @@
 ---
 title: 站点主题
-description: 了解如何使用AEM网站主题自定义网站的样式和设计。
+description: 了解如何使用 AEM 站点主题来自定义站点的样式和设计。
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # 站点主题 {#site-themes}
 
-了解如何使用AEM网站主题自定义网站的样式和设计。
+了解如何使用 AEM 站点主题来自定义站点的样式和设计。
 
 ## 概述 {#overview}
 
-AEM网站主题是包含CSS、JavaScript和静态资源的包，用于定义AEM网站的样式并符合AEM网站主题的结构。
+AEM 站点主题是一个包，其中包含的 CSS、JavaScript 和静态资源定义了 AEM 站点样式并符合 AEM 站点主题结构。
 
-使用AEM站点模板创建的站点允许轻松下载、自定义和重新部署主题。
+使用 AEM 站点模板创建的站点允许轻松下载、自定义和重新部署主题。
 
 >[!NOTE]
 >
->AEM网站主题不应与 [AEM网站模板。](site-templates.md) AEM网站主题仅包含AEM网站的样式信息。 AEM网站模板可定义网站结构和初始内容，并包含AEM网站主题，以便允许 [快速创建网站。](create-site.md)
+>不应混淆 AEM 站点主题与 [AEM 站点模板。](site-templates.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM 站点模板定义站点结构和初始内容，并包含 AEM 站点主题，以便[快速创建站点](create-site.md)。
 
-## 使用网站主题 {#using-themes}
+## 使用站点主题 {#using-themes}
 
-网站主题的使用方式有两种：
+通过两种不同的方式使用站点主题：
 
-* 在 [创建网站。](create-site.md)
-* 在基于网站模板创建网站后，会下载这些内容，以便前端开发人员可以进一步自定义样式。
+* 在[创建站点](create-site.md)时，它们用作站点模板的一部分来定义样式。
+* 它们是在基于站点模板创建站点后下载的，因此，前端开发人员可以进一步自定义样式。
 
 >[!TIP]
 >
->有关从模板创建网站并自定义其主题的过程的端到端描述，请参阅 [快速创建网站历程。](/help/journey-sites/quick-site/overview.md)
+>可以在[快速站点创建历程](/help/journey-sites/quick-site/overview.md)中找到从模板创建站点并自定义其主题的过程的端到端描述。
 
-## 网站主题结构 {#structure}
+## 站点主题结构 {#structure}
 
-网站主题只是具有明确反映资源包内容用途的逻辑结构的资源包。 站点主题具有以下前端项目的典型结构。
+站点主题只是带有逻辑结构的包，它清楚地反映了包内容的目的。站点主题具有以下典型的前端项目结构。
 
-* `src/main.ts`:JS和CSS主题的主要入口点
-* `src/site`:应用于整个网站的JS和CSS文件
-* `src/components`:特定于AEM组件的JS和CSS文件
-* `src/resources`:静态文件，如图标、徽标和字体
+* `src/main.ts`：JS &amp; CSS 主题的主要入口点
+* `src/site`：应用于整个站点的 JS &amp; CSS 文件
+* `src/components`：特定于 AEM 组件的 JS &amp; CSS 文件
+* `src/resources`：图标、徽标和字体等静态文件
 
-## 标准网站主题 {#standard-site-theme}
+## 标准站点主题 {#standard-site-theme}
 
-Adobe提供了最佳实践参考主题，您可以将其用作创建自己主题的基础。 [GitHub上提供了标准网站主题。](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+Adobe 提供了一个最佳实践参考主题，您可以基于此主题创建自己的主题。[GitHub 上提供了标准站点主题](https://github.com/adobe/aem-site-template-standard-theme-e2e)。
 
-## 开发网站主题 {#developing-themes}
+## 开发站点主题 {#developing-themes}
 
-Adobe将AEM网站主题生成器作为一组用于创建新网站主题的脚本。
+Adobe 提供 AEM 站点主题生成器作为一组用于创建新站点主题的脚本。
 
-[提供了AEM Site Theme Builder以及GitHub上的使用文档。](https://github.com/adobe/aem-site-theme-builder) 自定义主题需要具备前端开发体验。
+[GitHub 上提供了 AEM 站点主题生成器与使用文档。](https://github.com/adobe/aem-site-theme-builder)需要前端开发经验才能自定义主题。
