@@ -3,7 +3,7 @@ title: 创作概念
 description: 在 AEM 中进行创作的概念
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
 ht-degree: 100%
 
@@ -60,4 +60,4 @@ AEM 安装通常至少包含两个环境：
 
 ## Dispatcher {#dispatcher}
 
-为优化网站访问性能，**[调度程序](/help/implementing/dispatcher/overview.md)**&#x200B;实施了负载平衡和缓存。
+为了优化网站访客体验，**[Dispatcher](/help/implementing/dispatcher/overview.md)** 实施了负载平衡和缓存。
