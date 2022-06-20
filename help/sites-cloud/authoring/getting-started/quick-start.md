@@ -3,13 +3,13 @@ title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
 ---
 
-# 创作页面快速入门指南 {#quick-guide-to-authoring-pages}
+# 页面创作快速入门指南 {#quick-guide-to-authoring-pages}
 
 本文档旨在作为 AEM 中关键页面创作操作的概要性快速入门指南。本文档：
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 有关使用 AEM 进行创作的完整详细信息，请参阅：
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
-* [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 
 ## 一些快速提示 {#a-few-quick-hints}
 
 在开始使用快速入门指南之前，请查看下面列出的一些常规提示，您应牢记这些提示，并根据创作系统的各个区域分别使用它们。
 
-### 在站点控制台中 {#sites-console}
+### 在“站点”控制台中 {#sites-console}
 
 * 创建按钮
 
@@ -42,9 +42,9 @@ ht-degree: 100%
    * 当您处于&#x200B;**编辑**&#x200B;模式下时，**链接不可用于导航**。要通过链接导航，您需要使用以下任一方式来[预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)：
 
       * [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
-      * [查看已发布的项目](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+      * [以发布的形式查看](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* 无法从页面编辑器启动/创建版本。现在，可以从&#x200B;**站点**&#x200B;控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)）。
+* 无法从页面编辑器启动/创建版本。现在，可以从&#x200B;**站点**&#x200B;控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)）。
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ ht-degree: 100%
 
 要[创建新的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，请执行以下操作：
 
-1. [导航到要创建新页面的位置。](#finding-your-page)
+1. [导航到要创建新页面的位置](#finding-your-page)。
 1. 使用&#x200B;**创建**&#x200B;图标，然后从列表中选择&#x200B;**页面**：
 
    ![“创建”按钮](/help/sites-cloud/authoring/assets/create.png)
@@ -224,7 +224,7 @@ ht-degree: 100%
    1. 打开&#x200B;**页面信息**&#x200B;菜单。
    1. 选择&#x200B;**发布页面**。
 
-* 从控制台取消发布页面只能通过“管理发布 **** ”选项完成，该选项仅在工具栏上可用（不能通过快速操作）。
+* 从控制台取消发布页面只能通过&#x200B;**管理发布**&#x200B;选项完成，该选项仅在工具栏上可用（不能通过快速操作）。
 
    ![“管理发布”按钮](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -287,13 +287,13 @@ ht-degree: 100%
 
 要创建页面的[版本](/help/sites-cloud/authoring/features/page-versions.md)：
 
-1. 要打开“时间轴”边栏，请使用工具栏图标选择&#x200B;**[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**（在[选择您的页面](#selecting-your-page-for-further-action)之前或之后）：
+1. 要打开“时间线”边栏，请使用工具栏图标选择&#x200B;**[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**（在[选择您的页面](#selecting-your-page-for-further-action)之前或之后）：
 
-   ![时间轴视图选项](/help/sites-cloud/authoring/assets/timeline.png)
+   ![时间线视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 点按/单击“时间轴”列右下方的省略号以显示其他按钮，包括&#x200B;**另存为版本**。
+1. 点按/单击“时间线”列右下方的省略号以显示其他按钮，包括&#x200B;**另存为版本**。
 
-   ![时间轴视图](/help/sites-cloud/authoring/assets/timeline-view.png)
+   ![时间线视图](/help/sites-cloud/authoring/assets/timeline-view.png)
 
 1. 选择&#x200B;**另存为版本**，然后再选择&#x200B;**创建**。
 
@@ -301,11 +301,11 @@ ht-degree: 100%
 
 恢复和/或比较页面版本时所使用的机制基本相同：
 
-1. 使用工具栏图标选择&#x200B;**[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**（在[选择您的页面](#selecting-your-page-for-further-action)之前或之后）：
+1. 使用工具栏图标选择&#x200B;**[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**（在[选择您的页面](#selecting-your-page-for-further-action)之前或之后）：
 
-   ![时间轴视图选项](/help/sites-cloud/authoring/assets/timeline.png)
+   ![时间线视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-   如果页面的某个版本已经保存，则会在“时间轴”中列出该版本。
+   如果页面的某个版本已经保存，则会在“时间线”中列出该版本。
 
 1. 点按/单击要恢复的版本 - 这将显示其他操作按钮：
 
