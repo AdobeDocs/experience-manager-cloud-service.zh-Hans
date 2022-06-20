@@ -3,9 +3,9 @@ title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1327'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的CSS类（以及任何必需的Javascript）必须部署为 [客户端库](/help/implementing/developing/introduction/clientlibs.md) 以便工作。
+>配置为组件策略的样式属性的 CSS 类（以及任何必需的 Javascript）必须部署为[客户端库](/help/implementing/developing/introduction/clientlibs.md)才能正常工作。
 
 ## 设置 {#setup}
 
