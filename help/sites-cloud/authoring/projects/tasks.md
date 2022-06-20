@@ -3,9 +3,9 @@ title: 处理任务
 description: 任务是指要对内容完成的工作项，可在项目中使用任务来确定当前任务的完成程度
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 94%
 * 活动任务的百分比
 * 过期任务的百分比
 
-![任务拼贴](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
+![“任务”拼贴](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### 查看或修改项目中的任务 {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -47,7 +47,7 @@ ht-degree: 94%
 
 #### 任务详细信息 {#task-details}
 
-有关特定任务的详细信息，请点按/单击任务列表，然后 **打开**.
+有关特定任务的更多信息，请在任务列表中依次点按/单击该任务和&#x200B;**打开**。
 
 ![任务详细信息](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -55,7 +55,7 @@ ht-degree: 94%
 
 在任务详细信息中，您可以编辑或添加评论。此外，项目中的所有评论都会显示在“评论”区域。
 
-![任务注释](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
+![有关任务的评论](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
 ### 添加任务 {#adding-tasks}
 
