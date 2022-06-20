@@ -1,66 +1,66 @@
 ---
-title: 了解AEM Sites内容以及如何在AEM中翻译
-description: 学习AEM Sites概念和AEM翻译理论。
+title: 了解 AEM 中的 AEM Sites 内容和翻译方法
+description: 了解 AEM Sites 概念和 AEM 翻译理论。
 index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '492'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 了解网站内容以及如何在AEM中翻译 {#learn-about}
+# 了解 AEM 中的站点内容和翻译方法 {#learn-about}
 
-学习AEM Sites概念和AEM翻译理论。
+了解 AEM Sites 概念和 AEM 翻译理论。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解AEM Sites内容的创建以及如何翻译此类内容。 阅读后，您应该：
+本文档可帮助您了解 AEM Sites 内容创建以及如何翻译此内容。阅读本文档后，您应：
 
-* 了解在AEM Sites中创建内容的基本概念。
-* 熟悉AEM如何支持翻译。
+* 了解 AEM Sites 中的内容创建的基本概念。
+* 熟悉 AEM 支持翻译的方式。
 
-## AEM Sites概述 {#aem-sites}
+## AEM Sites 概述 {#aem-sites}
 
-AEM Sites是用于创建、管理和交付数字体验的全面平台。 内容作者使用简单的WYSIWYG拖放工具在直观的编辑器中创建页面，该编辑器会像受众使用内容一样呈现内容。
+AEM Sites 是一个用于创建、管理和交付数字体验的综合平台。内容作者使用简单的 WYSIWYG 拖放工具在直观的编辑器中创建页面，该编辑器按照用户使用内容的方式呈现内容。
 
-构成您体验的页面可以在站点控制台中轻松管理，从而以易于理解的层次结构概述您的内容，从而轻松地重新排列、复制和发布内容。
+可在站点控制台中轻松管理构成您体验的页面，该控制台以易于理解的层级为您提供内容概览，并允许轻松重新排列、复制和发布内容。
 
 >[!TIP]
 >
->本文档历程仅涵盖AEM站点功能的基础知识，以便翻译专家了解您需要翻译的内容。
+>此文档历程仅涵盖 AEM 的站点功能的基础知识，以便作为翻译专家的您了解需要翻译的内容。
 >
->有关AEM Sites的更多信息及其所有强大功能的详细信息，请参阅 [其他信息部分](#additional-information) 了解更多AEM Sites资源。
+>有关 AEM Sites 的更多信息及其所有强大功能的详细信息，请参阅本文末尾的[“其他资源”部分](#additional-information)，获得更多 AEM Sites 资源。
 
-## 在AEM中翻译站点内容 {#translating-in-aem}
+## 在 AEM 中翻译站点内容 {#translating-in-aem}
 
-AEM不仅可以简化内容的创建和管理过程，而且无论受众位于何处，都可以轻松地为受众翻译内容。
+利用 AEM，不仅可以轻松创建和管理内容，还可以轻松地为您的受众翻译内容，而不管他们身在何处。
 
-在高层次上，AEM中的翻译包含四个简单步骤：
+从较高层面看，AEM 中的翻译包括四个简单步骤：
 
-1. 通过配置翻译集成框架定义与翻译服务的连接。
-1. 定义应使用翻译规则翻译的内容。
-1. 创建翻译项目以收集内容，将其发送到翻译服务并接收结果。
-1. 审阅并发布翻译后的内容。
+1. 通过配置翻译集成框架来定义与翻译服务的连接。
+1. 使用翻译规则定义应翻译的内容。
+1. 创建翻译项目以收获内容，将该内容发送到翻译服务，并接收结果。
+1. 检查和发布已翻译的内容。
 
 
-在历程中，您将进一步了解有关AEM如何分步翻译内容的详细信息。
+在此历程中，您将了解有关 AEM 如何逐步翻译内容的详细信息。
 
 ## 下一步 {#what-is-next}
 
-感谢您开始使用AEM Sites翻译历程！ 现在，您阅读了本文档，您应该：
+感谢您开始 AEM Sites 翻译历程！现在您已阅读本文档，您应：
 
-* 了解AEM Sites内容创建的基本概念。
-* 熟悉AEM如何支持翻译。
+* 了解 AEM Sites 内容创建的基本概念。
+* 熟悉 AEM 支持翻译的方式。
 
-在此知识的基础上，通过下一步审阅文档，继续您的AEM Sites翻译历程 [AEM Sites翻译入门](getting-started.md) 您将在此处概述AEM如何管理内容并了解其翻译工具。
+在此知识的基础上继续您的 AEM Sites 翻译历程，接下来查看文档 [AEM Sites 翻译快速入门](getting-started.md)，大致了解 AEM 如何管理内容并熟悉其翻译工具。
 
 ## 其他资源 {#additional-resources}
 
-但建议您通过审阅文档来转到站点翻译历程的下一部分 [AEM Sites翻译入门，](getting-started.md) 以下是一些其他可选资源，可更深入地了解本文档中提到的某些概念，但无需继续访问这些概念。
+我们建议您查看文档 [AEM Sites 翻译快速入门](getting-started.md)来继续站点翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [页面创作快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md)  — 快速概述使用AEM Sites创建内容时最重要的概念
-* [MSM和翻译](/help/sites-cloud/administering/msm-and-translation.md) - AEM多站点管理器的详细信息以及它如何与其翻译工具配合使用
+* [页面创作快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md) – 使用 AEM Sites 创建内容的最重要概念的简要概述
+* [MSM 和翻译](/help/sites-cloud/administering/msm-and-translation.md) – AEM 的多站点管理器的详细信息及其使用翻译工具的方式
