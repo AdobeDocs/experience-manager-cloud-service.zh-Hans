@@ -3,9 +3,9 @@ title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4596'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
 
-有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档 [页面模板](/help/implementing/developing/components/templates.md) 以了解更多信息。
+有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md)以了解更多信息。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 97%
 
 ### 角色 {#roles}
 
-使用“模板”控制台和“模 **板编辑器** ”创建新 **** 模板需要以下角色之间的协作：
+使用&#x200B;**“模板”控制台**&#x200B;和&#x200B;**模板编辑器**&#x200B;创建新模板需要以下角色之间的协作：
 
 * **管理员**：
    * 创建新的模板文件夹需要 `admin` 权限。
@@ -93,11 +93,11 @@ ht-degree: 97%
 >
 >对于必须本地化的模板元素（如页眉和页脚），请利用[核心组件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
-### 创建模板文件夹 - 管理员 {#creating-a-template-folder-admin}
+### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在文档中有相关说明 [页面模板](/help/implementing/developing/components/templates.md#template-folders).—>
+您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在[页面模板](/help/implementing/developing/components/templates.md#template-folders)文档中有相关说明。-->
 
-### 创建新模板 - 模板作者 {#creating-a-new-template-template-author}
+### 创建新模板 – 模板作者 {#creating-a-new-template-template-author}
 
 1. 打开&#x200B;**“模板”控制台**（通过&#x200B;**工具** -> **常规**），然后导航到所需的文件夹。
 
@@ -113,7 +113,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关更多信息，请参阅开发人员文档 [页面模板](/help/implementing/developing/components/templates.md#template-type).—>
+   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。要获取更多信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md#template-type)。-->
 
 1. 填写&#x200B;**模板详细信息**：
 
@@ -128,9 +128,9 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->模板是简化页面创建工作流程的强大工具。 但是，太多的模板可能会使作者不堪重负，并使页面创建令人困惑。 经验法则是将模板数量保持在100以下。
+>模板是简化页面创建工作流的强大工具。不过，太多的模板会让作者不知所措，并使页面创建变得混乱。一个好的经验法则是将模板的数量保持在 100 个以内。
 >
->Adobe不建议拥有1000个以上的模板，因为这可能会影响性能。
+>由于潜在的性能影响，Adobe 建议不要使用超过 1000 个模板。
 
 ### 定义模板属性 - 模板作者 {#defining-template-properties-template-author}
 
@@ -174,7 +174,7 @@ ht-degree: 97%
 * [启用模板](#enabling-a-template-template-author)以使其可在创建页面时使用。
 * [允许模板](#allowing-a-template-author)以指定可以使用模板的内容分支。
 
-#### 启用模板 - 模板作者 {#enabling-a-template-template-author}
+#### 启用模板 – 模板作者 {#enabling-a-template-template-author}
 
 可以启用或禁用模板，以使其在&#x200B;**创建页面**&#x200B;向导中可用或不可用。
 
@@ -190,7 +190,7 @@ ht-degree: 97%
 >
 >控制台中会指示模板的状态（“草稿”、“已启用”或“已禁用”）。
 
-#### 允许模板 - 作者 {#allowing-a-template-author}
+#### 允许模板 – 作者 {#allowing-a-template-author}
 
 可以使模板可用于或不可用于某些页面分支。
 
@@ -209,7 +209,7 @@ ht-degree: 97%
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
    >
-   >请参阅 [模板可用性](/help/implementing/developing/components/templates.md#template-availability)  — 允许的模板的原则保持不变。
+   >请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability) – 对允许的模板适用的原则与此相同。
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
@@ -217,7 +217,7 @@ ht-degree: 97%
 >
 >通常，在设置您的网站时便会为整个网站预定义允许的模板。
 
-### 发布模板 - 模板作者 {#publishing-a-template-template-author}
+### 发布模板 – 模板作者 {#publishing-a-template-template-author}
 
 由于渲染页面时会引用模板，因此模板在完全配置后需要进行发布，才能用于发布环境。
 
@@ -282,7 +282,7 @@ ht-degree: 97%
 
 有关更多信息，请参阅[样式系统文档](/help/sites-cloud/authoring/features/style-system.md)。
 
-### 编辑模板 - 结构 - 模板作者 {#editing-a-template-structure-template-author}
+### 编辑模板 – 结构 – 模板作者 {#editing-a-template-structure-template-author}
 
 在&#x200B;**结构**&#x200B;模式下，您可以为模板定义组件和内容，并为模板及其组件定义策略。
 
@@ -443,7 +443,7 @@ ht-degree: 97%
 
 * 允许的组件
 * 默认组件
-* 响应设置
+* 响应式设置
 
 ###### 允许的组件 {#allowed-components}
 
@@ -453,7 +453,7 @@ ht-degree: 97%
 * 可以通过选中组名称选择整个组，通过取消选中全部取消选择。
 * 减号表示至少选中了组中的一个而并非所有项目。
 * 可按名称进行搜索来筛选组件。
-* 无论是否应用了筛选器，组件组名称右侧列出的数字都表示这些组中选定组件的总数。
+* 无论是否应用了过滤器，组件组名称右侧列出的数字都表示这些组中选定组件的总数。
 
 ![允许的组件选项卡](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
 
@@ -467,9 +467,9 @@ ht-degree: 97%
 
 ![“默认组件”选项卡](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
-###### 响应设置 {#responsive-settings}
+###### 响应式设置 {#responsive-settings}
 
-在&#x200B;**响应设置**&#x200B;选项卡上，您可以配置布局容器的生成网格中的列数。
+在&#x200B;**响应式设置**&#x200B;选项卡上，您可以配置布局容器的生成网格中的列数。
 
 #### 解锁和锁定组件 {#unlock-and-lock-components}
 
@@ -491,7 +491,7 @@ ht-degree: 97%
 
 为了节省空间，布局容器不会扩大来容纳允许的组件列表。容器而是会变为一个可滚动的列表。
 
-可配置的组件会显示一个 **策略图标** ，单击或点按该图标可编辑该组件的策略和属性。
+可配置的组件会显示一个 **策略图标**，单击或点按该图标可编辑该组件的策略和属性。
 
 ![“可配置组件”图标](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -501,7 +501,7 @@ ht-degree: 97%
 
 ![正在使用模板的横幅警告](/help/sites-cloud/authoring/assets/templates-in-use-banner.png)
 
-### 编辑模板 - 初始内容 - 作者 {#editing-a-template-initial-content-author}
+### 编辑模板 – 初始内容 – 作者 {#editing-a-template-initial-content-author}
 
 **初始内容**&#x200B;模式可用于定义最初基于模板创建页面后将显示的内容。页面作者随后可以编辑初始内容。
 
@@ -534,7 +534,7 @@ ht-degree: 97%
 >
 >如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
-### 编辑模板 - 布局 - 模板作者 {#editing-a-template-layout-template-author}
+### 编辑模板 – 布局 – 模板作者 {#editing-a-template-layout-template-author}
 
 您可以为各种设备定义模板布局。模板的[响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)与页面创作时的响应式布局功能相同。
 
@@ -544,7 +544,7 @@ ht-degree: 97%
 
 ![编辑模板布局](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
-### 编辑模板 - 页面策略 - 模板作者/开发人员 {#editing-a-template-page-policy-template-author-developer}
+### 编辑模板 – 页面策略 – 模板作者/开发人员 {#editing-a-template-page-policy-template-author-developer}
 
 将在&#x200B;**页面信息**&#x200B;菜单的&#x200B;**页面策略**&#x200B;选项下维护包含所需客户端库的页面策略。
 
@@ -609,7 +609,7 @@ ht-degree: 97%
 >
 >虽然模板作者可以在模板上指定页面策略，但是他们需要从开发人员处获取相应客户端库的详细信息。
 
-### 编辑模板 - 初始页面属性 - 作者 {#editing-a-template-initial-page-properties-author}
+### 编辑模板 – 初始页面属性 – 作者 {#editing-a-template-initial-page-properties-author}
 
 使用&#x200B;**初始页面属性**&#x200B;选项，您可以定义要在创建生成页面时使用的初始[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。
 
