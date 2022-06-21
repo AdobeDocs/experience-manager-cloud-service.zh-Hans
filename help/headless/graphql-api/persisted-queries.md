@@ -3,7 +3,7 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
+source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 47%
@@ -308,6 +308,7 @@ URL可以划分为以下部分：
 1. 点按 **生成** 按钮。
 
 生成包后，您可以：
+
 * **下载** 包，并在其他环境上重新上传。
 * **复制** 通过点按 **更多** > **复制**. 这会将包复制到连接的AEM发布环境。
 
