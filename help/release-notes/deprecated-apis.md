@@ -2,10 +2,10 @@
 title: 已弃用 API
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的 API 的发行说明。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 8325d8a69f453573a177a46cde54afe5365b17f8
+source-git-commit: d64e69e9662449e25cb12d7cdd415494cb6b6c7d
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '1051'
+ht-degree: 95%
 
 ---
 
@@ -179,6 +179,24 @@ ht-degree: 100%
     <td>此内部 log4j API 不再受 AEM as a Cloud Service 支持。</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
+    <td>Apache Log4j 1已于2015年终止生命周期，不再受支持。</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
+    <td>此内部 logback API 不再受 AEM as a Cloud Service 支持。</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars.js</td>
+    <td>由于安全漏洞，需要从4.0.5升级到4.3.0。 此包不再存在于升级的车把中。</td>
+    <td>5/5/2022</td>
+    <td>8/5/2022</td>
   </tr>
 </tbody>
 </table>
