@@ -155,7 +155,6 @@ ht-degree: 100%
 >1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
 >1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
-
 >
 
 
