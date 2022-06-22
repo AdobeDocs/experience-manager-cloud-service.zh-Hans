@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用旋转集。
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 27%
+source-wordcount: '1927'
+ht-degree: 26%
 
 ---
 
@@ -24,6 +24,14 @@ ht-degree: 27%
 >[!NOTE]
 >
 >有关Assets用户界面的信息，请参阅 [使用触屏UI管理资产](/help/assets/manage-digital-assets.md) 并将其应用到上传图像集资产的新文件夹。
+
+在创建旋转集时，Adobe建议遵循以下最佳实践，并强制实施以下限制：
+
+| 限制类型 | 最佳实践 | 已实施的限制 |
+| --- | --- | --- |
+| 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
+
+另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
 ## 快速入门：旋转集 {#quick-start-spin-sets}
 
@@ -108,6 +116,14 @@ ht-degree: 27%
 >[!NOTE]
 >
 >旋转集中的图像显示顺序很重要。请务必对其进行排序，以便旋转是一个平滑的360°视图。
+
+在创建旋转集时，Adobe建议遵循以下最佳实践，并强制实施以下限制：
+
+| 限制类型 | 最佳实践 | 已实施的限制 |
+| --- | --- | --- |
+| 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
+
+另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
 **要创建旋转集，请执行以下操作：**
 

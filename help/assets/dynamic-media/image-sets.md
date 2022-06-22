@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用图像集。
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 22%
+source-wordcount: '2155'
+ht-degree: 21%
 
 ---
 
@@ -28,6 +28,15 @@ ht-degree: 22%
 >[!NOTE]
 >
 >有关Assets用户界面的信息，请参阅 [使用触屏UI管理资产](/help/assets/manage-digital-assets.md).
+
+在创建图像集时，Adobe会推荐以下最佳实践，并实施以下限制：
+
+| 资产 — 限制类型 | 最佳实践 | 已实施的限制 | 对2022年12月31日上限的更改 |
+| --- | --- | --- | --- |
+| **图像集**  — 每个集的重复资产数 | 无重复项 | 100 | 20 |
+| **图像集**  — 每组图像的最大数量 | 每组5-10张图像 | 1000 |
+
+另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
 ## 快速入门：图像集 {#quick-start-image-sets}
 
@@ -126,6 +135,15 @@ ht-degree: 22%
 >[!NOTE]
 >
 >文件名中包含“，”（逗号）的资产不支持图像集。
+
+在创建图像集时，Adobe会推荐以下最佳实践，并实施以下限制：
+
+| 资产 — 限制类型 | 最佳实践 | 已实施的限制 | 对2022年12月31日上限的更改 |
+| --- | --- | --- | --- |
+| **图像集**  — 每个集的重复资产数 | 无重复项 | 100 | 20 |
+| **图像集**  — 每组图像的最大数量 | 每组5-10张图像 | 1000 |
+
+另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
 **要创建图像集，请执行以下操作：**
 

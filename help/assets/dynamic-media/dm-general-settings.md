@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2522'
 ht-degree: 4%
 
 ---
@@ -135,6 +135,8 @@ Dynamic Media常规设置适用于经验丰富的网站开发人员和程序员�
 | **[!UICONTROL 锚点]** | 指定如何在模板中锚定图像，这些模板是从PSD文件生成的分层组合生成的。 默认情况下，锚点为中心。 无论替换图像的长宽比如何，中心锚点都允许替换图像最好地填充相同的空间。 引用模板和使用参数替换时，具有不同方面的图像会替换此图像，因此，当引用模板和使用参数替换时，会有效地占用相同的空间。 如果您的应用程序需要替换图像来填充模板中分配的空间，请更改为其他设置。 |
 
 ### PDF选项卡 {#pdf-tab}
+
+要考虑提取的PDF的最大页面数是5000，用于新上载。 2022年12月31日，此限制将更改为100页。 另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
 您可以选择将文件栅格化、提取搜索词和链接、设置分辨率并选择色彩空间。
 
