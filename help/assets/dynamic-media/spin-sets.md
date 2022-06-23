@@ -4,7 +4,7 @@ description: 了解如何在Dynamic Media中使用旋转集。
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 26%
@@ -27,7 +27,7 @@ ht-degree: 26%
 
 在创建旋转集时，Adobe建议遵循以下最佳实践，并强制实施以下限制：
 
-| 限制类型 | 最佳实践 | 已实施的限制 |
+| 限制类型 | 最佳实践 | 规定的限制 |
 | --- | --- | --- |
 | 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
 
@@ -119,7 +119,7 @@ ht-degree: 26%
 
 在创建旋转集时，Adobe建议遵循以下最佳实践，并强制实施以下限制：
 
-| 限制类型 | 最佳实践 | 已实施的限制 |
+| 限制类型 | 最佳实践 | 规定的限制 |
 | --- | --- | --- |
 | 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
 
