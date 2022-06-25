@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 4%
 
 ---
@@ -136,7 +136,7 @@ Dynamic Media常规设置适用于经验丰富的网站开发人员和程序员�
 
 ### PDF选项卡 {#pdf-tab}
 
-要考虑提取的PDF的最大页面数是5000，用于新上载。 2022年12月31日，此限制将更改为100页。 另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
+要考虑提取的PDF的最大页面数是5000，用于新上载。 2022年12月31日，此限制将更改为100页(适用于所有PDF)。 另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
 您可以选择将文件栅格化、提取搜索词和链接、设置分辨率并选择色彩空间。
 
