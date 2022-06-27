@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
+source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 3%
@@ -88,7 +88,7 @@ CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apa
 1. 从 **[!UICONTROL 验证码服务]** 下拉列表，选择 **[!UICONTROL reCaptcha]** 启用reCAPTCHA服务(如果您按照 [ReCAPTCHA服务，由Google提供](#google-recaptcha). 从设置下拉列表中选择配置。
 1. 将类型选择为 **[!UICONTROL 正常]** 或 **[!UICONTROL 紧凑]** 用于reCAPTCHA小组件。 您还可以选择 **[!UICONTROL 不可见]** 仅在可疑活动时显示验证码挑战的选项。 受reCAPTCHA保护的徽章（如下所示）显示在受保护的表单上。
 
-   ![Google通过reCAPTCHA徽章处理](assets/google-recaptcha-v2.png)
+   ![Google受reCAPTCHA徽章保护](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
