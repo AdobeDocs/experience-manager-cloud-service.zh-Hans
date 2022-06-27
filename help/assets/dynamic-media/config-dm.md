@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3574'
 ht-degree: 3%
 
 ---
@@ -272,6 +272,9 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 以产品管理员身份登录到您的Experience Manageras a Cloud Service。
 1. 在Experience Manageras a Cloud Service中，选择Experience Manageras a Cloud Service徽标以访问全局导航控制台，然后转到 **[!UICONTROL 常规>CRXDE Lite]**.
+
+   如果您无权访问CRXDE Lite，请参阅 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. 在左边栏中，导航到以下内容：
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 返回到具有打开的Experience Manageras a Cloud Service控制台的浏览器选项卡。
 1. 从Experience Manageras a Cloud Service，转到 **[!UICONTROL 工具>常规>CRXDE Lite]**.
+
+   如果您无权访问CRXDE Lite，请参阅 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![工具>常规>CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它使�
 >[!NOTE]
 >
 >您必须以产品管理员身份登录以Experience Manageras a Cloud Service，才能完成此任务。
+
+如果您无权访问OSGi，请参阅 [OSGi配置](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **要更新预定义的Granite工作流队列（视频资产）工作线程，请执行以下操作：**
 
