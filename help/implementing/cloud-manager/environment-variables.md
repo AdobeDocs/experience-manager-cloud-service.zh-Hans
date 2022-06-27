@@ -2,10 +2,10 @@
 title: Cloud Manager环境变量
 description: 标准环境变量可以通过Cloud Manager进行配置和管理，并提供给运行时环境，以用于OSGi配置。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: e03a209079b393d29e02977a2698f8d803a916cd
+source-git-commit: 7f8d6afdb5e3aecc90fdeb870eaaa0a5c5d29ca9
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 0%
+source-wordcount: '868'
+ht-degree: 4%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 0%
 
 ## 添加环境变量 {#add-variables}
 
-1. 登录AdobeCloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager列出了各种可用的程序。 选择要管理的。
+1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
+1. Cloud Manager 列出了可用的各种项目。选择要管理的。
 1. 选择 **环境** 选项卡，然后在左侧导航面板中选择要为其创建环境变量的环境。
 1. 在环境的详细信息中，选择 **配置** 选项卡，然后选择 **添加** 打开 **环境配置** 对话框。
    * 如果您是首次添加环境变量，您将看到 **添加配置** 按钮。 您可以使用此按钮或 **添加** 打开 **环境配置** 对话框。
@@ -67,8 +67,8 @@ ht-degree: 0%
 
 创建环境变量后，可以使用 **添加/更新** 按钮以启动 **环境配置** 对话框。
 
-1. 登录AdobeCloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager列出了各种可用的程序。 选择要管理的。
+1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
+1. Cloud Manager 列出了可用的各种项目。选择要管理的。
 1. 选择 **环境** 选项卡，然后在左侧导航面板中选择要为其创建环境变量的环境。
 1. 在环境的详细信息中，选择 **配置** 选项卡，然后选择 **添加/更新** 在右上方打开 **环境配置** 对话框。
 
@@ -96,9 +96,9 @@ ht-degree: 0%
 
 环境变量可以 `pom.xml` 配置更加安全和灵活。 例如，密码无需硬编码，您的配置可以根据环境变量中的值进行调整。
 
-您可以通过XML访问环境变量和密钥，如下所示。
+您可以按如下方式通过XML分别访问环境变量和密钥。
 
 * `${env.VARIABLE_NAME}`
-* `${env.SECRET_NAME}`
+* `${secret.SECRET_NAME}`
 
 查看文档 [设置项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) 例如，在 `pom.xml` 文件。

@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
-workflow-type: ht
-source-wordcount: '1966'
-ht-degree: 100%
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
+workflow-type: tm+mt
+source-wordcount: '1987'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,8 @@ ht-degree: 100%
 
    * **语言** – 页面语言
    * **语言根** – 如果页面是语言副本的根，则必须选中
-   * **重定向** – 指示此页面应自动重定向到的页面
+   * **重定向** – 指示此页面应自动重定向到的页面 HTML `302 Found` 状态。
+      * **永久重定向**  — 选中此选项后，页面将重定向到随HTML一起提供的目标路径 `301 Moved Permanently` 状态。
    * **设计** – 指示在生成的站点的页面导航中是显示还是隐藏页面
    * **别名** – 指定要用于此页面的别名
       * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
