@@ -2,7 +2,7 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入门的一部分，您可以在浏览器中的本地开发环境中访问和修改存储库。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 3%
@@ -94,7 +94,7 @@ CRXDE Lite的用户界面有很多部分，功能很多。
 
 的 **“复制”选项卡** 显示当前节点的复制状态。 您可以复制并复制删除当前节点的操作。
 
-###  控制台选项卡 {#console-tab}
+### 控制台选项卡 {#console-tab}
 
 的 **控制台选项卡** 显示日志消息。 您可以配置日志级别、清除控制台、固定到所选滚动位置并启用/禁用消息显示。
 
