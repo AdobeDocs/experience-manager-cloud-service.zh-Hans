@@ -4,9 +4,9 @@ description: 了解如何使CDN（内容分发网络）缓存内容失效，以�
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1384'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,20 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付给�
 
 >[!NOTE]
 >
->此功能要求您使用与Adobe Experience Manager Dynamic Media捆绑在一起的现成CDN。 此功能不支持任何其他自定义CDN。
+>此功能要求您使用Adobe Experience Manager Dynamic Media附带的Adobe捆绑CDN。 此功能不支持任何其他自定义CDN。
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+如果已启用 [智能成像](/help/assets/dynamic-media/imaging-faq.md) 在您的帐户上，如果您使用Adobe捆绑的CDN，则可以通过清除单个基本URL来清除具有不同查询字符串的所有URL。
+
+例如，使用 `https://weekendsite.scene7.com/is/image/grundfos/image`，还会使以下URL失效：
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* 等等。
+
+但是，不支持智能成像的通用域(例如， `s7d1.scene7.com`. 此类域仍需要完整的URL才能成功失效。
 
 **要通过Dynamic Media使CDN缓存失效，请执行以下操作：**
 
