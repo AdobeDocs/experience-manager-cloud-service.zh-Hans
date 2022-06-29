@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
+source-wordcount: '3029'
 ht-degree: 1%
 
 ---
@@ -155,6 +155,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >将存储帐户容器或存储段创建为专用容器，并仅接受授权请求中的连接。 但是，不支持对入口网络连接的其他限制。
 
+>[!NOTE]
+>
+>外部存储帐户的文件/文件夹名称规则可能与批量导入工具不同。 请参阅 [在批量导入期间处理文件名](#filename-handling-bulkimport) 有关不允许/转义名称的更多详细信息。
+
+
 ### 配置批量导入工具 {#configure-bulk-ingestor-tool}
 
 要配置批量导入工具，请执行以下步骤：
@@ -216,6 +221,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 批量导入资产或文件夹时， [!DNL Experience Manager Assets] 导入导入源中存在内容的整个结构。 [!DNL Experience Manager] 遵循资产和文件夹名称中特殊字符的内置规则，因此这些文件名需要清理。 对于文件夹名称和资产名称，用户定义的标题将保持不变，并存储在 `jcr:title`.
 
 在批量导入期间， [!DNL Experience Manager] 查找现有文件夹以避免重新导入资产和文件夹，同时还会验证在执行导入的父文件夹中应用的清理规则。 如果清理规则在父文件夹中应用，则相同的规则将应用于导入源。 对于新导入，将应用以下鼠标化规则来管理资产和文件夹的文件名。
+
+**批量导入中不允许的名称**
+
+文件和文件夹名称中不允许使用以下字符：
+
+* 控制和专用字符（0x00到0x1F、\u0081、\uE000）
+* 以圆点(.)结尾的文件或文件夹名称
+
+在导入过程中，会跳过名称与这些条件匹配的文件或文件夹，并标记为失败。
 
 **批量导入中处理资产名称**
 
@@ -380,7 +394,7 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文档](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [资产上传技术参考](developer-reference-material-apis.md#asset-upload)
 
