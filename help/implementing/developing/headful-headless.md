@@ -2,7 +2,7 @@
 title: AEM 中的 Headful 和 Headless
 description: AEM项目可以采用无头和无头模型来实施，但选择并非二进制的。 AEM可以灵活地在一个项目中利用这两个模型的优势。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 1%
@@ -53,18 +53,18 @@ SPA集成属于AEM中的四个级别。
    * SPA和AEM单独存在，且不交换任何信息。
    * 内容是在两个不同的系统中独立创建、管理和交付的。
 * **级别1:内容片段集成**
-   * [内容片段](/help/assets/content-fragments/content-fragments.md) 用于创建和管理SPA的有限内容。
+   * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 用于创建和管理SPA的有限内容。
    * SPA通过AEM检索此内容 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
    * 某些内容在AEM中进行管理，而某些内容则在外部系统中管理。
    * 内容只能在SPA中查看。
 * **级别2:在AEM中嵌入SPA**
-   * [内容片段](/help/assets/content-fragments/content-fragments.md) 用于创建和管理SPA的内容。
+   * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 用于创建和管理SPA的内容。
    * SPA通过AEM检索此内容 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
    * 某些内容在AEM中进行管理，而某些内容则在外部系统中管理。
    * 可以在AEM内在上下文中查看内容。
    * 可以在AEM中编辑有限的内容。
 * **第3级：在AEM中嵌入并完全启用SPA**
-   * [内容片段](/help/assets/content-fragments/content-fragments.md) 用于创建和管理SPA的内容。
+   * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 用于创建和管理SPA的内容。
    * SPA通过AEM检索此内容 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
    * 可以在AEM内在上下文中查看内容。
    * 大多数内容都可以在AEM中编辑。

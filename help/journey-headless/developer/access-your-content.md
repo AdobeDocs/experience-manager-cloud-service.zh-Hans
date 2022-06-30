@@ -2,7 +2,7 @@
 title: 如何通过AEM交付API访问您的内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用GraphQL查询访问内容片段内容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 8%
@@ -350,7 +350,7 @@ query {
 * 示例内容片段结构
 * 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已了解如何使用AEM GraphQL API访问和查询无头内容，您现在可以 [了解如何使用REST API访问和更新内容片段的内容](update-your-content.md).
 
@@ -369,10 +369,10 @@ query {
    * [示例查询 - 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [元数据的示例查询 - 列出标题为 GB 的奖项的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [示例查询 - 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [在配置浏览器中启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [使用内容片段](/help/assets/content-fragments/content-fragments.md)
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
-   * [JSON 输出](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [在配置浏览器中启用内容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [JSON 输出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [了解跨源资源共享(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL。

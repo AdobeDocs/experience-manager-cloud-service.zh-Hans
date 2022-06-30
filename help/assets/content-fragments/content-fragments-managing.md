@@ -4,9 +4,9 @@ description: 了解如何使用AEM控制台来管理您的Assets内容片段（�
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1778'
 ht-degree: 9%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->内容片段存储为 **资产**，因此主要从 **资产** 控制台。
+>内容片段存储为 **资产**. 现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但仍可以从 **资产** 控制台。 本节介绍 **资产** 控制台。
 
 ## 创建内容片段 {#creating-content-fragments}
 

@@ -2,10 +2,10 @@
 title: 创建资源文件夹 - Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 131225c8303bdd8900a8e22ef51b545da2257f40
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 98%
+ht-degree: 91%
 
 ---
 
@@ -50,8 +50,8 @@ ht-degree: 98%
 
 ## 后续步骤 {#next-steps}
 
-现在您已经为内容片段创建了文件夹，接下来可以转到快速入门指南的第四部分并[创建内容片段](create-content-fragment.md)。
+现在，您已为内容片段创建文件夹，接下来可以转到入门指南的第四部分和 [创建内容片段](create-content-fragment.md).
 
 >[!TIP]
 >
->有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/assets/content-fragments/content-fragments.md)
+>有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/sites-cloud/administering/content-fragments/content-fragments.md)

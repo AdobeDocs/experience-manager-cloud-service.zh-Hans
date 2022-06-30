@@ -2,10 +2,10 @@
 title: 可选 — 如何使用AEM创建单页应用程序(SPA)
 description: 在AEM无头开发人员历程的这一可选延续中，您将了解AEM如何将无头交付与传统的全栈CMS功能结合使用，以及如何使用AEM SPA编辑器框架创建可编辑的SPA。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -118,7 +118,7 @@ RemotePage组件允许在AEM中渲染外部SPA。
 
 ## 其他资源 {#additional-resources}
 
-以下是一些其他资源，可更深入地了解本文档中提到的一些概念。
+以下是一些附加资源，它们对本文档中提及的一些概念进行了更深入的探讨。
 
 * [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md)  — 描述AEM中可用的不同投放模型
 * [SPA 简介和演练.](/help/implementing/developing/hybrid/introduction.md) - AEM中的SPA简介
@@ -126,5 +126,5 @@ RemotePage组件允许在AEM中渲染外部SPA。
 * [SPA编辑器概述](/help/implementing/developing/hybrid/editor-overview.md)  — 有关SPA编辑器工作方式的详细信息
 * [服务器端渲染](/help/implementing/developing/hybrid/ssr.md)  — 如何为AEM SPA配置SSR
 * [SPA参考文档](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API引用和指向开源AEM SPA GitHub项目的链接
-* [内容片段](/help/assets/content-fragments/content-fragments.md)  — 如何创建内容片段
+* [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)  — 如何创建内容片段
 * [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Maven模板，可创建基于最佳实践的、最基础的Adobe Experience Manager(AEM)项目，作为网站的起点

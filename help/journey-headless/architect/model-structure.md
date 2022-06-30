@@ -2,7 +2,7 @@
 title: 了解如何在 AEM 中创建内容片段模型
 description: 了解使用内容片段模型为无头CMS建模内容的概念和机制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
 
-![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
+![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 选项 **启用模型** 默认情况下，处于激活状态。 这意味着，当您保存模型后，即可使用（在创建内容片段时）。 如果需要，您可以停用此模型 — 有机会稍后启用（或禁用）现有模型。
 
-![创建内容片段模型](/help/assets/content-fragments/assets/cfm-models-02.png)
+![创建内容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
 使用确认 **创建** 你可以 **打开** 模型以开始定义结构。
 
@@ -55,21 +55,21 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 首次打开新模型时，您将看到 — 左侧有一个较大的空白，以及 **数据类型** 在右侧：
 
-![空模型](/help/assets/content-fragments/assets/cfm-models-03.png)
+![空模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
 那么，该怎么办？
 
 您可以拖动 **数据类型** 在左边空格上 — 您已经在定义模型了！
 
-![定义字段](/help/assets/content-fragments/assets/cfm-models-04.png)
+![定义字段](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
 添加数据类型后，您将需要定义 **属性** 对于该字段。 具体取决于所使用的类型。 例如：
 
-![数据属性](/help/assets/content-fragments/assets/cfm-models-05.png)
+![数据属性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
 您可以添加所需数量的字段。 例如：
 
-![内容片段模型](/help/assets/content-fragments/assets/cfm-models-07.png)
+![内容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
 
 ### 您的内容作者 {#your-content-authors}
 
@@ -102,7 +102,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 当模型为 **已锁定** （在只读模式下），您可以查看模型的内容和结构，但不能直接对其进行编辑；但您可以 **已锁定** 从控制台或模型编辑器中选择模型。
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已经学习了基础知识，接下来的步骤是开始创建您自己的内容片段模型。
 
@@ -112,23 +112,23 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此页面主要基于 **站点** 控制台，但许多/大多数功能也与导航到并对其执行操作相关， **内容片段模型** 下 **常规** 控制台。
 
-* [使用内容片段](/help/assets/content-fragments/content-fragments.md)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [定义内容片段模型](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [定义内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [启用或禁用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [启用或禁用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [允许在Assets文件夹中使用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [允许在Assets文件夹中使用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [删除内容片段模型](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [删除内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [发布内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [取消发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [取消发布内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [锁定（已发布）内容片段模型](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [锁定（已发布）内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 入门指南
 

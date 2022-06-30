@@ -2,10 +2,10 @@
 title: 了解如何在内容片段中使用参考内容
 description: 了解如何在内容片段、内容、其他片段和其他资产（媒体）中使用引用。 介绍无头CMS创作中嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 6%
 >
 >使用主面板中的痕迹导航，您可以导航回起始点。
 
-![内容片段结构树](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![内容片段结构树](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## 临时引用 {#adhoc-references}
 
@@ -110,20 +110,20 @@ ht-degree: 6%
 
 ## 其他资源 {#additional-resources}
 
-* [使用内容片段](/help/assets/content-fragments/content-fragments.md)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
+   * [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [将配置应用到您的Assets文件夹](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [将配置应用到您的Assets文件夹](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [创建内容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [变量 — 创作内容片段](/help/assets/content-fragments/content-fragments-variations.md)
+      * [创建内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [变量 — 创作内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [内容片段模型 — 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [内容片段模型 — 数据类型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [内容片段模型 — 属性](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [内容片段模型 — 属性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 
 * 入门指南

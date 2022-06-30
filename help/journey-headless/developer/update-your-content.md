@@ -2,7 +2,7 @@
 title: 如何通过AEM Assets API更新您的内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何使用REST API访问和更新内容片段的内容。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -303,7 +303,7 @@ HTTP方法确定要执行的操作：
 * Adobe Experience Manager Assets HTTP API（其他资源）
 * AEM Assets HTTP API中的内容片段支持（其他资源）
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已完成AEM Headless开发人员历程的这一部分，接下来您应该：
 
@@ -326,7 +326,7 @@ HTTP方法确定要执行的操作：
 * [内容片段 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
-* [使用内容片段](/help/assets/content-fragments/content-fragments.md)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [CORS/AEM说明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [视频 — 使用AEM开发CORS](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

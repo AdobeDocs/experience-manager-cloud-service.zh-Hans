@@ -2,7 +2,7 @@
 title: 自定义和扩展内容片段
 description: 内容片段对标准资产进行了扩展。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 在Adobe Experience Manager as a Cloud Service中，内容片段扩展标准资产；请参阅：
 
-* [创建和管理内容片段](/help/assets/content-fragments/content-fragments.md) 和 [使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 有关内容片段的更多信息。
+* [创建和管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 和 [使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 有关内容片段的更多信息。
 
 * [管理资产](/help/assets/manage-digital-assets.md) 以进一步了解标准资产。
 
 ## 架构 {#architecture}
 
-基本 [组成部分](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 内容片段的以下内容：
+基本 [组成部分](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 内容片段的以下内容：
 
 * A *内容片段*,
 * 包含一个或多个 *内容元素*,
@@ -79,7 +79,7 @@ ht-degree: 3%
 
 #### 资产权限 {#asset-permissions}
 
-有关更多详细信息，请参阅 [内容片段 — 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md).
+有关更多详细信息，请参阅 [内容片段 — 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 #### 功能集成 {#feature-integration}
 
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 示例：指定自动保存间隔 {#example-specifying-the-auto-save-interval}
 
-的 [自动保存间隔](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) （以秒为单位）可以使用配置管理器(ConfMgr)进行定义：
+的 [自动保存间隔](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) （以秒为单位）可以使用配置管理器(ConfMgr)进行定义：
 
 * 节点： `<conf-root>/settings/dam/cfm/jcr:content`
 * 属性名称: `autoSaveInterval`

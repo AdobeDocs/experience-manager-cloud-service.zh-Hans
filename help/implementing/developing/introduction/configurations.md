@@ -2,7 +2,7 @@
 title: 配置和配置浏览器
 description: 了解AEM配置以及它们如何在AEM中管理工作区设置。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 6%
@@ -34,7 +34,7 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 可以在AEM中为许多不同的功能创建配置。
 
 * [ContextHub区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [可编辑模板](/help/sites-cloud/authoring/features/templates.md)
 * 各种云配置
 
@@ -54,7 +54,7 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 * 当内容作者为杂志创建新页面时，作者可以从常规模板(WKND-General)或杂志模板(WKND-Magazine)中进行选择。
 * 当内容作者为网站的其他部分（而非杂志）创建新页面时，作者只能从常规模板(WKND-General)中进行选择。
 
-不仅对可编辑的模板，对于云配置、ContextHub区段和内容片段模型，都可以进行类似设置。
+不仅对可编辑的模板，对于云配置、ContextHub区段和内容片段模型也可进行类似设置。
 
 ### 使用配置浏览器 {#using-configuration-browser}
 
@@ -69,7 +69,7 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
 在AEM中使用配置浏览器创建新配置非常简单。
 
 1. 登录AEMas a Cloud Service，然后从主菜单中选择 **工具** -> **常规** -> **配置浏览器**.
-1. 点击或单击&#x200B;**创建**。
+1. 点按或单击&#x200B;**创建**。
 1. 提供配置的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
 
    ![创建配置](assets/configuration-create.png)
@@ -80,10 +80,10 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
       * 如有必要可以调整。
 1. 检查您希望允许的配置类型。
    * [ContextHub区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [可编辑模板](/help/sites-cloud/authoring/features/templates.md)
    * 各种云配置
-1. 点击或单击&#x200B;**创建**。
+1. 点按或单击&#x200B;**创建**。
 
 >[!TIP]
 >

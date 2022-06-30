@@ -3,7 +3,7 @@ title: 在 AEM 中管理 GraphQL 端点
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中针对 Headless 内容投放管理 GraphQL 端点。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 98%
@@ -22,10 +22,10 @@ AEM 中有两种类型的端点：
 
 * 全局
    * 可供所有站点使用。
-   * 此端点可以使用所有 Sites 配置的所有内容片段模型（在[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定义）。
+   * 此端点可以使用所有 Sites 配置的所有内容片段模型（在[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定义）。
    * 如果有任何应该在 Sites 配置中共享的内容片段模型，则这些内容应该在全局 Sites 配置下创建。
 * Sites 配置：
-   * 对应于 Sites 配置，如[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中的定义。
+   * 对应于 Sites 配置，如[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中的定义。
    * 特定于指定站点/项目。
    * Sites 配置特定的端点将来自特定 Sites 配置与来自全局 Sites 配置的内容片段模型结合使用。
 
@@ -52,11 +52,11 @@ AEM 全局端点的 GraphQL 的存储库路径为：
 
 ## 启用 GraphQL 端点 {#enabling-graphql-endpoint}
 
-要启用 GraphQL 端点，您首先需要具有合适的配置。请参阅[内容片段 - 配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
+要启用 GraphQL 端点，您首先需要具有合适的配置。请参阅[内容片段 - 配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)。
 
 >[!CAUTION]
 >
->如果[未启用内容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
+>如果[未启用内容片段模型的使用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
 
 要启用对应的端点，请执行以下操作：
 

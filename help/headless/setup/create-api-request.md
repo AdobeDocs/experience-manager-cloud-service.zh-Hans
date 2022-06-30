@@ -2,7 +2,7 @@
 title: 创建 API 请求 - Headless 设置
 description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 93%
@@ -96,6 +96,6 @@ GraphQL 可以避免迭代 API 以及过度投放，而是允许作为对单个 
 
 就是这样！现在，您已对 AEM 中的 Headless 内容管理有了基本了解。当然，其中还有很多资源供您深入研究，以全面了解可用的功能。
 
-* **[内容片段](/help/assets/content-fragments/content-fragments.md)** - 提供有关创建和管理内容片段的详细信息
+* **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - 提供有关创建和管理内容片段的详细信息
 * **[AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)** - 提供直接通过 HTTP API 使用 CRUD 操作（创建、读取、更新、删除）访问 AEM 内容的详细信息
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - 提供有关如何以 Headless 方式交付内容片段的详细信息

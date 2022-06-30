@@ -4,8 +4,8 @@ description: 了解翻译规则如何标识需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
-workflow-type: ht
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 仅当未在[翻译集成框架配置级别](integration-framework.md#assets-configuration-properties)激活&#x200B;**为翻译启用内容模型字段**&#x200B;选项时，本文档中描述的翻译规则才应用于内容片段。
 
-如果&#x200B;**为翻译启用内容模型字段**&#x200B;选项已激活，AEM 将使用[内容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段来确定是否要翻译该字段并相应地自动创建翻译规则。 此选项取代了您可能已创建的任何翻译规则，无需干预或附加步骤。
+如果&#x200B;**为翻译启用内容模型字段**&#x200B;选项已激活，AEM 将使用[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段来确定是否要翻译该字段并相应地自动创建翻译规则。 此选项取代了您可能已创建的任何翻译规则，无需干预或附加步骤。
 
 如果要使用翻译规则来翻译内容片段，必须禁用翻译集成框架配置上的&#x200B;**为翻译启用内容模型字段**&#x200B;选项，并且您需要执行下面列出的步骤来创建规则。
 

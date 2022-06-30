@@ -2,7 +2,7 @@
 title: 了解内容建模基础知识
 description: 了解使用内容片段为无头CMS建模内容的基本知识。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 5%
@@ -149,12 +149,12 @@ AEM提供了以下数据类型来为内容建模：
 
 ## 其他资源 {#additional-resources}
 
-* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [内容片段模型 — 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [内容片段模型 — 数据类型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此页面主要基于 **站点** 控制台，但许多/大多数功能也与创作相关 **内容片段** 下 **资产** 控制台。
 
-* [使用内容片段](/help/assets/content-fragments/content-fragments.md)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)

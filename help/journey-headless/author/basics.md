@@ -2,9 +2,9 @@
 title: 了解创作基础知识
 description: 了解使用内容片段为无头CMS创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1668'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 5%
    * AEMaCS创作简介
    * 内容片段简介
 
-## 基本处理 {#basic-handling}
+## 基本操作 {#basic-handling}
 
 在您了解内容片段之前，请先简要介绍如何使用AEM....但是，没有什么东西能真正取代登录和尝试使用系统的体验。
 
@@ -53,38 +53,68 @@ AEM 安装通常至少包含两个环境：
 
 首次登录小型在线教程时，将重点介绍用户界面的一些主要功能。
 
-然后，您可以使用导航面板访问AEM的关键区域。 对于内容片段，您将使用 **资产控制台**.
+然后，您可以使用导航面板访问AEM的关键区域。 对于内容片段，您将使用 **内容片段** 控制台(对于某些操作，您还将使用 **资产** 控制台)。
 
-可通过选择左上角的Adobe图标，然后选择小罗盘图标来打开导航面板：
+选择左上角的Adobe图标，然后选择小罗盘图标，可打开导航面板。
 
-![“导航”面板](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+<!--
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
+
+![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+-->
 
 >[!NOTE]
->尽管内容片段是AEM的一项功能 **站点**，则可在 **资产** 控制台。 这是一个技术详细信息，不应影响您，但可能有助于您了解。
+>尽管内容片段是AEM的一项功能 **站点**，则会另存为 **资产**. 这是一个技术详细信息，不应影响您，但可能有助于您了解。
 
-在控制台中，您可以选择要导航到内容片段的文件夹，或选择痕迹导航（在标题中）以导航回树。
+在控制台中，您可以在左侧面板中选择文件夹，以导航到您的内容片段。 您还可以过滤和/或搜索。
 
-![痕迹导航](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![内容片段控制台](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### 操作，选择，查看 {#actions-selecting-viewing}
 
-的 **资产** 控制台具有专用 **操作工具栏**&#x200B;和 **快速操作** 在选择资源（例如，文件夹或内容片段）后可以使用的附加内容。
+在 **内容片段** 控制台工具栏中为您的内容片段提供了一系列操作：
 
-快速操作适用于单个资源，请参阅 **巴塞尔** 在以下示例中：
+<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-![快速操作](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+* **在资产中打开**
+* **创建**
+* 的 **引用者** 列还提供了显示该片段的所有父引用的直接链接；包括引用内容片段、体验片段和页面。
+* 将鼠标悬停在文件夹名称上将显示JCR路径。
 
-“操作”工具栏提供了对所有操作（适用于当前方案）的访问权限。 可用的操作可能会发生变化；例如，取决于您的位置，或您是否选择了多个资源：
+选择片段后，所有适当的操作均可用：
 
-![操作工具栏](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-您可以使用视图选择器选择查看资源的格式：
+* **打开**
+* **发布** (和 **取消发布**)
+* **复制**
+* **移动**
+* **重命名**
+* **删除**
 
-![视图选择器](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+>[!NOTE]
+>
+>“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。 可以通过AEM异步作业UI监控该作业的进度。
 
-您可以使用边栏选择器查看有关项目的其他信息。 这还允许访问其他操作。
+<!--
+The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
-![左边栏](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+The Quick Actions are available for a single resource, see **Basel** in the example below:
+
+![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
+
+![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+
+You can select the format for viewing your resources with the View Selector:
+
+![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
+
+![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+-->
 
 ## 创作内容片段 {#authoring-content-fragments}
 
@@ -98,7 +128,7 @@ AEM 安装通常至少包含两个环境：
 
 #### 创建文件夹 {#creating-folder}
 
-为此，可在 **文件** 的子菜单。 选择 **创建** 选项（右上方），后跟 **文件夹**:
+为此，可在 **文件** 部分 **资产** 控制台。 选择 **创建** 选项（右上方），后跟 **文件夹**:
 
 ![“创建文件夹”选项](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -136,23 +166,39 @@ AEM 安装通常至少包含两个环境：
 
 ### 创建内容片段 {#creating-fragment}
 
-创建内容片段非常相似 — 您只需使用 **内容片段** 选项：
+在 **内容片段** 您可以使用 **创建** 打开 **新内容片段** 对话框：
 
-![“创建内容片段”选项](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![内容片段控制台 — 创建新片段](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-此时将打开向导。 第一步是选择片段将基于的内容片段模型：
+指定：
 
-![创建内容片段 — 选择模型](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+* **位置**
+* **内容片段模型**
+* **标题**
+* **名称**
+* **描述**
 
-继续 **下一个** 您可以提供详细信息(**基本** 和 **高级**):
+然后，通过以下任一方式进行确认 **创建** 或 **创建并打开**.
 
-![创建内容片段 — 提供名称](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+<!--
+Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
-使用确认 **创建** 你可以 **打开** 您的片段。
+![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
+
+![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+Confirm with **Create** and you can then **Open** your fragment in the editor.
+-->
 
 ### 编辑片段 {#editing-fragment}
 
-您可以在创建片段后立即打开该片段，或者从资产控制台中选择该片段以将其打开。
+您可以在创建片段后立即打开该片段，或者从内容片段控制台（也从资产控制台中）中选择该片段。
 
 编辑器首次打开时，您将看到：
 
@@ -217,7 +263,7 @@ AEM 安装通常至少包含两个环境：
 
 完成片段后，您可以 **发布** 这样，它就可用于无头应用。
 
-发布操作在编辑器中(或从 **资产** 控制台):
+发布操作在编辑器中可用(或从 **内容片段** 控制台或 **资产** 控制台):
 
 ![内容片段编辑器 — 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -249,22 +295,22 @@ AEM 安装通常至少包含两个环境：
 
       * [管理发布](/help/assets/manage-publication.md#manage-publication)
 
-* [使用内容片段](/help/assets/content-fragments/content-fragments.md)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
+   * [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [将配置应用到您的Assets文件夹](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [将配置应用到您的Assets文件夹](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [创建内容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [变量 — 创作内容片段](/help/assets/content-fragments/content-fragments-variations.md)
+      * [创建内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [变量 — 创作内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [内容片段模型 — 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [内容片段模型 — 数据类型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [内容片段模型 — 属性](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [内容片段模型 — 属性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [内容片段模型 — 允许在Assets文件夹中使用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [内容片段模型 — 允许在Assets文件夹中使用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * 入门指南

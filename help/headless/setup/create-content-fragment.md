@@ -2,10 +2,10 @@
 title: 创建内容片段 - Headless 设置
 description: 了解如何使用 AEM 的内容片段设计、创建、管理和使用独立于页面的内容，用于 Headless 投放。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 100%
+source-wordcount: '348'
+ht-degree: 78%
 
 ---
 
@@ -25,24 +25,21 @@ ht-degree: 100%
 
 内容作者将创建任意数量的内容片段，用于呈现他们创建的内容。这将是他们在 AEM 中的主要任务。对于本指南快速入门，我们只需要创建一个。
 
-1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**导航 -> 资源**。
+1. 登录AEMas a Cloud Service，然后从主菜单中选择 **导航** -> **内容片段**.
+
 1. 点击或单击[之前创建的文件夹。](create-assets-folder.md)
-1. 点击或单击&#x200B;**创建 -> 内容片段**。
-1. 内容片段的创建以两步向导的方式呈现。首先选择您希望使用什么模型来创建内容片段，然后点击或单击&#x200B;**下一步**。
+1. 点按或单击&#x200B;**创建**。
+1. 内容片段的创建将以对话框的形式呈现。
+选择要用于创建内容片段的位置和模型。
+
    * 可用的模型取决于&#x200B;[**您为资源文件夹定义的云配置**](create-assets-folder.md)，您将在该文件夹中创建内容片段。
-   * 如果您收到消息 `We could not find any models`，请检查资源文件夹的配置。
+   * 如果模型不可用，请检查资产文件夹的配置。
 
-   ![选择内容片段模型](../assets/content-fragment-model-select.png)
-1. 根据需要提供&#x200B;**标题**、**描述**&#x200B;和&#x200B;**标记**，然后点击或单击&#x200B;**创建**。
+   添加标题、名称，并根据需要添加描述。
 
-   ![创建内容片段](../assets/content-fragment-create.png)
-1. 在确认窗口中，点击或单击&#x200B;**打开**。
+   ![“新建内容片段”对话框](/help/headless/content-fragments/assets/cfc-console-create.png)
 
-   ![内容片段创建确认](../assets/content-fragment-confirmation.png)
-1. 在内容片段编辑器中提供内容片段的详细信息。
-
-   ![内容片段编辑器](../assets/content-fragment-edit.png)
-1. 点击或单击&#x200B;**保存**&#x200B;或&#x200B;**保存并关闭**。
+1. 点按或单击 **创建** 或  **创建并打开**.
 
 内容片段可以引用其他内容片段，在需要时允许嵌套内容结构。
 
@@ -54,4 +51,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/assets/content-fragments/content-fragments.md)
+>有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/sites-cloud/administering/content-fragments/content-fragments.md)

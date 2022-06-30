@@ -2,10 +2,10 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -474,4 +474,4 @@ AEM中现有的配置很多。 您可以使用 **CRXDE Lite**.
 
 ![组件控制台中显示README.md](assets/components-documentation-console.png)
 
-支持的Markdown与 [内容片段。](/help/assets/content-fragments/content-fragments.md)
+支持的Markdown与 [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md).

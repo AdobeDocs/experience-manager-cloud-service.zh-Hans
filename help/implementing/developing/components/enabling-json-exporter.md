@@ -2,9 +2,9 @@
 title: 为组件启用 JSON 导出
 description: 组件可以基于建模器框架进行修改，以生成其内容的JSON导出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '473'
 ht-degree: 11%
 
 ---
@@ -78,7 +78,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 有关更多详细信息，请参阅：
 
-* [Assets用户指南中的内容片段](/help/assets/content-fragments/content-fragments.md)
-* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+* [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

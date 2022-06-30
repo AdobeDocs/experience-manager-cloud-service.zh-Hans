@@ -3,7 +3,7 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0ff90afca3fb72ac6d0a79793a332c1c2172cd67
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 98%
@@ -18,8 +18,8 @@ ht-degree: 98%
 >
 >本页面应该与下列内容一起阅读：
 >
->* [内容片段](/help/assets/content-fragments/content-fragments.md)
->* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+>* [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 

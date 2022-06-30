@@ -2,10 +2,10 @@
 title: 了解如何为内容片段定义元数据和标记
 description: 了解如何为内容片段定义元数据和标记
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 14%
+source-wordcount: '241'
+ht-degree: 15%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 14%
 
 可以使用以下三种方法来添加元数据和标记：
 
-* 首次创建片段时：
+* 首次创建片段时(从 **资产** 控制台):
 
    ![创建内容片段 — 提供名称](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -44,8 +44,8 @@ ht-degree: 14%
 
 ## 其他资源 {#additional-resources}
 
-* [元数据 - 片段属性](/help/assets/content-fragments/content-fragments-metadata.md)
+* [元数据 - 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [使用标记](/help/sites-cloud/authoring/features/tags.md)
 
-* [内容片段模型 — 允许在Assets文件夹中使用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [内容片段模型 — 允许在Assets文件夹中使用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
