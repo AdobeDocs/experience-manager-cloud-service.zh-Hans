@@ -2,10 +2,10 @@
 title: 已知问题
 description: Adobe Experience Manager as a Cloud Service 的已知问题
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,16 @@ ht-degree: 100%
 
 <!-- 
 ## Platform {#platform}
-
-## Sites {#sites}
 -->
+
+## 站点 {#sites}
+
+[!DNL Sites] 中的一些已知问题包括：
+
+* 在GraphQL IDE中，您可以 [管理保留查询的缓存](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+   * 在首次保存时，为标题保存的值将设置为 `0` （而不是默认值） — 如果用户未在对话框中更改这些值。
+   * 在后续保存时，值会正确保存。
+   * 因此，用户必须保存两次标头。
 
 ## [!DNL Assets] {#assets}
 

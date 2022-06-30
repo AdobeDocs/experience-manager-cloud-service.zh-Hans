@@ -2,9 +2,9 @@
 title: 复制
 description: 分发和复制疑难解答。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1216'
 ht-degree: 4%
 
 ---
@@ -35,30 +35,11 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 ### 管理发布 {#manage-publication}
 
-与“快速发布”相比，管理发布提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
+与快速发布相比，管理发布提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
 
 为“稍后发布”选项包含文件夹的子项将调用发布内容树工作流，如本文所述。
 
 您可以在 [发布基础知识文档](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
-### 树激活 {#tree-activation}
-
->[!NOTE]
->
->此方法应视为已弃用，并将于2021年9月30日或之后删除，因为它不会保留状态，且与其他方法相比，其扩展能力较弱。 Adobe的建议是改用管理发布或工作流方法
-
-要执行树激活，请执行以下操作：
-
-1. 从AEM开始菜单导航到 **工具>部署>分发**
-2. 选择卡 **发布**
-3. 进入发布Web控制台UI后， **选择分发**
-
-   ![分发](assets/publish-distribute.png "分发")
-4. 在路径浏览器中选择路径，根据需要选择添加节点、树或删除，然后选择 **提交**
-
-为获得最佳性能，在使用此功能时请遵循以下准则：
-* 建议一次复制少于100个路径，且路径硬限制为500个。
-* 复制内容的总大小必须低于10 MB。 这只包括节点和属性，但不包括任何二进制文件，它们包括工作流包和内容包。
 
 ### 发布内容树工作流程 {#publish-content-tree-workflow}
 
@@ -133,7 +114,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 ### 复制API {#replication-api}
 
-您可以使用AEM as a Cloud Service中特有的复制API发布内容。
+您可以使用AEM as a Cloud Service中提供的复制API发布内容。
 
 有关更多信息，请参阅 [API文档](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -192,9 +173,12 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 整体 `ReplicationStatus` 仅当复制操作包括至少一个默认处于活动状态的代理时，才修改资源的。 在上例中，情况并非如此，因为复制只是使用“预览”代理。 因此，您需要使用 `getStatusForAgent()` 方法，用于查询特定代理的状态。 此方法也适用于“发布”代理。 如果已使用提供的代理完成任何复制操作，则返回非空值。
 
 
-**复制API路径和大小限制**
+**复制API容量限制**
 
-建议复制的路径少于100个，其中500个是硬限制。 超出硬限制时，将引发ReplicationException。 如果您的应用程序逻辑不需要原子复制，则可以通过将ReplicationOptions.setUseAtomicCalls设置为false（将接受任意数量的路径，但在内部创建存储段以保持在此限制以下）来克服此限制。 每个复制调用传输的内容量不得超过10 MB，其中包含节点和属性，但不包含任何二进制文件（工作流包和内容包被视为二进制文件）。
+建议一次复制不到100个路径，其中500是硬限制。 超出硬限制， `ReplicationException` 将被抛出。
+如果您的应用程序逻辑不需要原子复制，则可以通过设置 `ReplicationOptions.setUseAtomicCalls` 为false，它将接受任意数量的路径，但在内部创建存储段以保持在此限制以下。
+
+每次复制调用传输的内容大小不得超过 `10 MB`. 这包括节点和属性，但不包括任何二进制文件（工作流包和内容包被视为二进制文件）。
 
 ## 疑难解答 {#troubleshooting}
 

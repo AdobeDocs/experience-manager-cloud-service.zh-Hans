@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 87%
+source-wordcount: '1008'
+ht-degree: 66%
 
 ---
 
@@ -96,6 +96,33 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 ![GraphQL 变量](assets/cfm-graphqlapi-03.png "GraphQL 变量")
 
+## 管理保留查询的缓存 {#managing-cache}
+
+[持久化查询](/help/headless/graphql-api/persisted-queries.md) 建议在调度程序和CDN层缓存，因此最终可以提高请求客户端应用程序的性能。 默认情况下， AEM将根据默认生存时间(TTL)使内容交付网络(CDN)缓存失效。
+
+使用GraphQL，您可以配置HTTP缓存标头，以控制单个持久查询的这些参数。
+
+1. 的 **标题** 选项可通过保留查询名称右侧的三个垂直圆点（最左侧的面板）访问：
+
+   ![持久化查询HTTP缓存标头](assets/cfm-graphqlapi-headers-01.png "持久化查询HTTP缓存标头")
+
+1. 选择此选项将打开 **缓存配置** 对话框：
+
+   ![持久查询HTTP缓存标头设置](assets/cfm-graphqlapi-headers-02.png "持久查询HTTP缓存标头设置")
+
+1. 选择相应的参数，然后根据需要调整值：
+
+   * **缓存控制** - **最大年龄**
+缓存可以将此内容存储指定的秒数。 通常为浏览器TTL（生存时间）。
+   * **代理控制** - **s-maxage**
+与max-age相同，但特别适用于代理缓存。
+   * **代理控制** - **stale-while-revalidate**
+缓存在失效后可继续提供缓存响应，最长为指定秒数。
+   * **代理控制** - **stale-if-error**
+在出现或原点错误时，高速缓存可以在指定秒数内继续提供缓存响应。
+
+1. 选择 **保存** 来保留更改。
+
 ## 发布保留查询 {#publishing-persisted-queries}
 
 一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;和&#x200B;**取消发布**&#x200B;操作。这会将它们激活到发布环境(例如， `dev-publish`)，以便应用程序在测试时轻松访问。
@@ -103,32 +130,6 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 >[!NOTE]
 >
 >持久查询缓存`Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 定义的默认值为 2 小时（7200 秒）。
-
-## 正在缓存您的持久查询 {#caching-persisted-queries}
-
-AEM 将根据默认生存时间 (TTL) 使 Content Delivery Network (CDN) 缓存失效。
-
-此值设置为：
-
-* 7200 秒是 Dispatcher 和 CDN 的默认 TTL；也称为&#x200B;*共享缓存*
-   * 默认：s-maxage=7200
-* 60 是客户端（例如浏览器）的默认 TTL
-   * 默认：maxage=60
-
-使用 GraphiQL UI 持久化的 AEM GraphQL 查询在执行时将使用默认的 TTL。如果要更改 GraphLQ 查询的 TTL，则必须使用 API 方法持久查询。这涉及到在命令行界面中使用 CURL 将查询发布到 AEM。
-
-例如：
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-可以在创建时（PUT）或以后（例如，通过 POST 请求）设置 `cache-control`。在创建持久查询时，缓存控制是可选的，因为 AEM 可以提供默认值。有关使用 CURL 持久查询的示例，请参见[如何持久化 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)。
 
 ## 复制 URL 以直接访问查询 {#copy-url}
 

@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明。'
-source-git-commit: 53d5dbd53ec1e2dcb20b2b91f0cb020e9e35659c
+exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
+source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 23%
+source-wordcount: '573'
+ht-degree: 24%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
@@ -55,17 +55,6 @@ ht-degree: 23%
 
 * **表单数据模型配置**:您现在可以 [跨环境重复使用表单数据模型配置](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config)，简化数据集成并降低IT成本。
 
-## CIF 加载项 {#cloud-services-cif}
-
-### 新增功能 {#what-is-new-cif}
-
-* 快速访问产品驾驶舱：在站点编辑器中，通过一键单击即可轻松访问完整的详细产品信息
-
-   ![启用愿望清单](/help/assets/CIF/enable-wishlist.png)
-
-* 支持其他营销商务组件：组件可配置为显示加货车和加货车清单行动动员
-
-   ![站点编辑器到产品驾驶舱的快捷键](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
 
