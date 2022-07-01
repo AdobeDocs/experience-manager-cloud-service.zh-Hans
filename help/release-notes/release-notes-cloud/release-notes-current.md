@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 19%
+source-wordcount: '639'
+ht-degree: 20%
 
 ---
 
@@ -95,8 +95,6 @@ Experience Manager Assets现在使用Adobe Sensei AI功能 [区分图像中的�
 ## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
-
-* AEMas a Cloud Service现已与Unified Shell集成，以改进用户体验并将其与所有其他Experience Cloud应用程序相统一。 请参阅 [AEMas a Cloud Service于Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
 
 * 如5月版(2022.5.0)发行说明中所述，复制代理管理屏幕下的“添加树”选项 **分发** 选项卡。 而应使用以树层次结构表示的内容包进行复制 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 工作流。
 
