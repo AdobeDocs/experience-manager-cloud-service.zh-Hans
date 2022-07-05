@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
+source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1137'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 文档生成
 
-通信文档生成API有助于将模板(XFA或PDF)与客户数据([XML数据](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文档。 这些API利用 [PDF和XFA模板](#supported-document-types) with [XML数据](communications-known-issues-limitations.md#form-data) 用于按需生成单个文档或使用批处理作业生成多个文档。
+通信文档生成API有助于将模板(XFA或PDF)与客户数据(XML)结合，以生成PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）的文档。 这些API将PDF和XFA模板与 [XML数据](communications-known-issues-limitations.md#form-data) 用于按需生成单个文档或使用批处理作业生成多个文档。
 
 通常，您使用 [Designer](use-forms-designer.md) 和使用通信API将数据与模板合并。 您的应用程序可以将输出文档发送到网络打印机、本地打印机或存储系统以进行存档。 典型的开箱即用工作流和自定义工作流如下所示：
 
@@ -101,7 +101,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 组合PDF文档
 
-您可以使用文档制造API将两个或多个PDF或XDP文档组合到一个PDF文档或PDFPortfolio中。 以下是组合PDF文档的一些方法：
+您可以使用文档操作API将两个或多个PDF或XDP文档组合到单个PDF文档或PDFPortfolio中。 以下是组合PDF文档的一些方法：
 
 * 组合简单的PDF文档
 * 创建PDFPortfolio
@@ -114,7 +114,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 反汇编PDF文档
 
-可以使用文档制造API来拆解PDF文档。 API可以从源文档中提取页面或基于书签划分源文档。 通常，如果PDF文档最初是从许多单独的文档（如语句集合）中创建，则此任务会很有用。
+可以使用文档操作API来拆解PDF文档。 API可以从源文档中提取页面或基于书签划分源文档。 通常，如果PDF文档最初是从许多单独的文档（如语句集合）中创建，则此任务会很有用。
 
 * 从源文档提取页面
 * 根据书签划分源文档
@@ -124,7 +124,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 转换并验证符合PDF/A的文档
 
-您可以使用文档制造API将PDF文档转换为符合PDF/A的文档，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
+您可以使用文档操作API将PDF文档转换为符合PDF/A的文档，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
 
 ## 通信API的类型
 
