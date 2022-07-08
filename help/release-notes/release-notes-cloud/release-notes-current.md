@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 20%
@@ -39,7 +39,7 @@ ht-degree: 20%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 新 [用户界面](/help/headless/content-fragments/content-fragment-console.md) 现在，内容管理员和内容作者可以高效管理（执行发布、取消发布、复制、移动等操作）、搜索/过滤，以及为无头用例创建内容片段。
+* 新 [用户界面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 现在，内容管理员和内容作者可以高效管理（执行发布、取消发布、复制、移动等操作）、搜索/过滤，以及为无头用例创建内容片段。
 
    ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 

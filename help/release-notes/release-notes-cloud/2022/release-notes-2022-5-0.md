@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 18%
@@ -37,7 +37,7 @@ ht-degree: 18%
 ### [!DNL Sites] 预发行渠道中提供的新功能 {#prerelease-features-sites}
 
 * 各种GraphQL功能
-* A [新控制台](/help/headless/content-fragments/content-fragment-console.md) 针对内容片段的无头使用进行了优化
+* A [新控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 针对内容片段的无头使用进行了优化
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

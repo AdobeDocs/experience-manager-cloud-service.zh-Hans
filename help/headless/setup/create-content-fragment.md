@@ -2,7 +2,7 @@
 title: 创建内容片段 - Headless 设置
 description: 了解如何使用 AEM 的内容片段设计、创建、管理和使用独立于页面的内容，用于 Headless 投放。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 78%
@@ -37,7 +37,7 @@ ht-degree: 78%
 
    添加标题、名称，并根据需要添加描述。
 
-   ![“新建内容片段”对话框](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![“新建内容片段”对话框](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. 点按或单击 **创建** 或  **创建并打开**.
 
