@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
+source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 94%
+source-wordcount: '3006'
+ht-degree: 93%
 
 ---
 
@@ -209,29 +209,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 流量路由 {#dedcated-egress-ip-traffic-routing}
 
-通过端口 80 或 443 传输到目标的 http 或 https 流量将流过预先配置的代理（假定使用标准 Java 联网库）。对于流经其他端口的 http 或 https 流量，应使用以下属性来配置代理。
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-例如，以下是发送请求到 `www.example.com:8443` 的示例代码：
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-如果使用非标准 Java 联网库，请使用以上属性为所有流量配置代理。
+Http或https流量将通过预配置的代理，前提是它们使用标准Java系统属性进行代理配置。
 
 如果非 http/https 流量流经 `portForwards` 参数中声明的端口，应该引用名为 `AEM_PROXY_HOST` 的属性以及映射的端口。例如：
 
