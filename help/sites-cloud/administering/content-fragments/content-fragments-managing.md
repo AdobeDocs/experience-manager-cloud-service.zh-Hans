@@ -1,10 +1,10 @@
 ---
 title: 管理内容片段
 description: 了解如何使用“内容片段”控制台管理AEM内容片段；用于页面创作，或作为无头内容的基础。
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 3%
+source-wordcount: '2047'
+ht-degree: 2%
 
 ---
 
@@ -63,6 +63,21 @@ ht-degree: 3%
    ![“新建内容片段”对话框](assets/cfm-managing-new-cf-01.png)
 
 1. 选择 **创建**&#x200B;或 **创建并打开** 以保留您的定义。
+
+## 内容片段的状态 {#statuses-content-fragments}
+
+内容片段在存在期间可以具有多种状态，如 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+
+* **新建**
+已在内容片段编辑器中创建但从未编辑或打开新的内容片段。
+* **草稿**
+有人在内容片段编辑器中编辑或打开了（新）内容片段 — 但尚未发布。
+* **已发布**
+内容片段已发布。
+* **已修改**
+内容片段在发布后（但在发布修改之前）进行了编辑。
+* **未发布**
+内容片段已取消发布。
 
 ## 内容片段控制台中的内容片段的操作 {#actions-content-fragment-console}
 
