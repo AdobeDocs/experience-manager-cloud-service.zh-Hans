@@ -1,16 +1,16 @@
 ---
-title: AEM文档历程
+title: AEM 文档历程
 description: 文档历程通过将复杂和不同的功能捆绑在一起，以最佳做法方式解决业务目标，从而在AEM文档中提供了一种叙述性结构。 在设计时考虑了AEM初学者，历程将介绍概念和功能，以实现从A到Z的目标。
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 3%
 
 ---
 
-# AEM文档历程 {#aem-documentation-journeys}
+# AEM 文档历程 {#aem-documentation-journeys}
 
 文档历程通过将复杂和不同的功能捆绑在一起，以最佳做法方式解决业务目标，从而在AEM文档中提供了一种叙述性结构。 在设计时考虑了AEM初学者，历程将介绍概念和功能，以实现从A到Z的目标。
 
@@ -90,7 +90,7 @@ AEM文档历程的主要目标是帮助初次接触AEM的读者了解系统中�
 | [Headless 创作历程](/help/journey-headless/author/overview.md) | 从此处开始，您可以体验AEM强大而灵活的无头功能、其功能，以及如何在您的第一个无头项目上对内容进行建模。 |
 | [Headless 架构师历程](/help/journey-headless/architect/overview.md) | 从此处开始，您可以了解Adobe Experience Manager as a Cloud Service强大而灵活且无头的功能，以及如何为您的项目建立内容模型。 |
 | [Headless 翻译历程](/help/journey-headless/translation/overview.md) | 从此处开始，了解如何在AEM中设置和管理无头翻译项目。 |
-| [AEM载入历程](/help/journey-onboarding/home.md) | 从此处开始，快速启动并运行新的AEMas a Cloud Service环境！ |
+| [AEM载入历程](/help/journey-onboarding/overview.md) | 从此处开始，快速启动并运行新的AEMas a Cloud Service环境！ |
 | [AEM 快速站点创建历程](/help/journey-sites/quick-site/overview.md) | 从此处开始，逐步了解使用简单的AEM快速网站创建工具的引导式旅程，以简化AEM网站的前端开发并快速自定义您的网站，而无需了解AEM后端知识。 |
 | AEM Commerce历程 | 即将推出！ |
 | [AEM as a Cloud Service 迁移历程](/help/journey-migration/getting-started.md) | 从此处开始，逐步了解如何从内部部署或Adobe管理的AEM安装迁移到完全基于云的AEMas a Cloud Service，并介绍其多项优势。 |

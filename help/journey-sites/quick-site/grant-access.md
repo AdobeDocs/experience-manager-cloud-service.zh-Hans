@@ -2,8 +2,8 @@
 title: 向前端开发人员授予访问权限
 description: 将前端开发人员载入 Cloud Manager 以便他们能够访问 AEM 站点 Git 存储库和管道。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 100%
 
@@ -104,4 +104,4 @@ ht-degree: 100%
 
 我们建议您查看文档[检索前端开发人员凭据](retrieve-access.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [载入历程](/help/journey-onboarding/home.md) – 本指南可作为您的起点，确保您的团队已建立并有权访问 AEM as a Cloud Service。
+* [载入历程](/help/journey-onboarding/overview.md) – 本指南可作为您的起点，确保您的团队已建立并有权访问 AEM as a Cloud Service。

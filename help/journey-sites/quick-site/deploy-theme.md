@@ -2,8 +2,8 @@
 title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
 
@@ -114,7 +114,7 @@ AEM 是一个功能强大的工具，并且提供了许多其他选项。查看[
 * [webpack](https://webpack.js.org) – 用于快速构建站点的 AEM 主题依赖 webpack。
 * [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) – 如果您希望在从模板创建 AEM 站点后进一步对其进行自定义，可参考本指南以详细了解如何管理 AEM 站点的页面。
 * [如何使用包](/help/implementing/developing/tools/package-manager.md) – 可使用包导入和导出存储库内容。本文档说明了在 AEM 6.5 中使用包的方式，此方式也适用于 AEMaaCS。
-* [载入历程](/help/journey-onboarding/home.md) – 本指南可作为您的起点，确保您的团队已建立并有权访问 AEM as a Cloud Service。
+* [载入历程](/help/journey-onboarding/overview.md) – 本指南可作为您的起点，确保您的团队已建立并有权访问 AEM as a Cloud Service。
 * [Adobe Experience Manager Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans) – 浏览 Cloud Manager 文档，了解其功能的完整详细信息。
 * [站点管理文档](/help/sites-cloud/administering/site-creation/create-site.md) – 查看有关站点创建的技术文档，了解有关快速站点创建工具的功能的更多详细信息。
 * [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) – 本文档描述了一些需要注意的事项，以便使用前端管道充分发挥前端开发过程的潜力。

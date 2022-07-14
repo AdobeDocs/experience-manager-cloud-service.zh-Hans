@@ -3,7 +3,7 @@ title: 配置生产管道
 description: 了解如何配置生产管道以构建代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 了解如何配置生产管道以构建代码并将其部署到生产环境。 生产管道首先将代码部署到暂存环境，并在获得批准后将相同的代码部署到生产环境。
 
-用户必须具有 **[部署管理器](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** 配置生产管道的角色。
+用户必须具有 **[部署管理器](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 配置生产管道的角色。
 
 >[!NOTE]
 >

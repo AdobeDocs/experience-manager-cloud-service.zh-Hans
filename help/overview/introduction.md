@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 简介
 description: Adobe Experience Manager (AEM) as a Cloud Service 简介。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 100%
@@ -78,6 +78,6 @@ AEM 通过采用现代云服务的主要特点来实现这些目标：
 
 >[!TIP]
 >
->在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/home.md)来快速入门。
+>在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/overview.md)来快速入门。
 >
 >已完成入门培训或准备开始深入测试 AEM 的功能？安装 [AEM 参考演示加载项](/help/journey-sites/demos-add-on/overview.md)，使用丰富的示例探究 AEM 的强大功能。

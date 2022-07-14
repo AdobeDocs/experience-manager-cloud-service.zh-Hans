@@ -1,14 +1,14 @@
 ---
 title: Assetsas a Cloud Service指南
-description: 了解资产as a Cloud Service信息，并了解新增功能。
+description: 了解 Assets as a Cloud Service 及新增功能。
 landing-page-description: 了解如何使用和管理 Experience Manager Assets as a Cloud Service。
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 37%
+source-wordcount: '294'
+ht-degree: 42%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 37%
 | [概述](/help/overview/home.md) | 的介绍性概述和术语表 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [发行说明](/help/release-notes/home.md) | 发行说明、新增功能、已弃用和已删除功能及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解与 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
-| [入门](/help/onboarding/home.md) | 开始使用 [!DNL Experience Manager] as a [!DNL Cloud Service]  — 获取访问权限并保护重要数据。 |
+| [入门培训历程](/help/journey-onboarding/overview.md) | 开始使用 [!DNL Experience Manager] as a [!DNL Cloud Service]  — 获取访问权限并保护重要数据。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用进行创作并管理 [!DNL Experience Manager Sites] as a [!DNL Cloud Service]. |
 | [实施用户指南](/help/implementing/home.md) | 了解如何通过探索这些开发和部署主题，使用Experience Manager的强大功能构建和自定义体验。 |
 | [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式旅程，体验Experience Manager强大而灵活的无头功能，为您的第一个无头项目做好准备。 |

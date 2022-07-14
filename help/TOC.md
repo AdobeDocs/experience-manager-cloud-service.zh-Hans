@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
+source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
-source-wordcount: '3691'
-ht-degree: 94%
+source-wordcount: '3674'
+ht-degree: 92%
 
 ---
 
@@ -123,24 +123,19 @@ ht-degree: 94%
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
 + 入门 {#onboarding}
-   + [AEM as a Cloud Service 入门培训](/help/onboarding/home.md)
-   + 学习入门概念 {#onboarding-concepts}
-      + [系统管理员](/help/onboarding/learn-concepts/system-administrator.md)
-      + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-      + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
-      + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-      + [Cloud Manager 简介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-      + [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [Adobe 支持](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+   + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 入门培训历程 {#journey}
-      + [入门培训历程](/help/journey-onboarding/home.md)
-      + [入门培训历程概述](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-      + [开始入门培训流程](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-      + [将团队成员分配给 Cloud Manager 产品配置文件](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-      + [通过 Cloud Manager 设置云资源](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-      + [将团队成员分配给 AEM as a Cloud Service 产品配置文件](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-      + [开发人员和部署经理的学习路径](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-      + [AEM 用户的学习路径](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+      + [入门培训历程 概述](/help/journey-onboarding/overview.md)
+      + [入门准备](/help/journey-onboarding/preparation.md)
+      + [AEMas a Cloud Service术语](/help/journey-onboarding/terminology.md)
+      + [Admin Console](/help/journey-onboarding/admin-console.md)
+      + [分配Cloud Manager产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [访问 Cloud Manager](/help/journey-onboarding/cloud-manager.md)
+      + [创建项目](/help/journey-onboarding/create-program.md)
+      + [创建环境](/help/journey-onboarding/create-environments.md)
+      + [分配AEM产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
+      + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
+      + [AEM用户任务](/help/journey-onboarding/aem-users.md)
    + AEM 参考演示加载项历程 {#demo-add-on}
       + [概述](/help/journey-sites/demos-add-on/overview.md)
       + [安装](/help/journey-sites/demos-add-on/installation.md)
@@ -148,6 +143,9 @@ ht-degree: 94%
       + [创建演示站点](/help/journey-sites/demos-add-on/create-site.md)
       + [启用 Screens](/help/journey-sites/demos-add-on/screens.md)
       + [管理您的演示站点](/help/journey-sites/demos-add-on/manage.md)
+   + 其他入门概念 {#concepts}
+      + [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md)
+      + [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
@@ -750,7 +748,7 @@ ht-degree: 94%
          + [应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [许可证功能板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+      + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/faqs.md)
    + 部署 AEM as a Cloud Service {#developing}
       + [AEM 项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 项目存储库结构包](/help/implementing/developing/introduction/repository-structure-package.md)

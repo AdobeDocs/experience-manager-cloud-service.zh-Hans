@@ -2,10 +2,10 @@
 title: 不同功能与新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -125,10 +125,6 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 ## 入门 {#onboarding}
 
->[!NOTE]
->
->有关详细信息，请参阅[入门](/help/onboarding/home.md)。
-
 使用 AEM as a Cloud Service 启动和管理 AEM 项目都非常直接，因为 Adobe 负责处理以下许多方面：
 
 * 基准 AEM 映像针对特定用例进行了优化。
@@ -150,6 +146,10 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
    * 代码更新；任何为以前版本的 AEM 开发的客户应用程序都将需要审核并可能需要更新。
 
    * 内容迁移
+
+>[!TIP]
+>
+>有关载入流程的完整概述，请参阅 [入门历程。](/help/journey-onboarding/overview.md)
 
 ## 开发 {#developing}
 
@@ -273,6 +273,6 @@ Assets 产品包括云中的新一代资源处理以及高性能资源引入和�
 
 >[!TIP]
 >
->在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/home.md)来快速入门。
+>在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/overview.md)来快速入门。
 >
 >已完成入门培训或准备开始深入测试 AEM 的功能？安装 [AEM 参考演示加载项](/help/journey-sites/demos-add-on/overview.md)，使用丰富的示例探究 AEM 的强大功能。

@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为Cloud Manager项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 1%
 各个环境的功能取决于容器中启用的解决方案 [项目。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 * [站点](/help/sites-cloud/home.md)
-* [资产](/help/assets/home.md)
+* [资源](/help/assets/home.md)
 * [表单](/help/forms/home.md)
-* [Screens](/help/screens-cloud/home.md)
+* [屏幕](/help/screens-cloud/home.md)
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ ht-degree: 1%
 1. 在 **添加环境** 对话框：
 
    * 选择 **环境类型**.
-      * 可用/已使用的环境数显示在“开发”环境类型后面的括号中。
+      * 可用/已用环境的数量显示在开发环境类型后面的括号中。
    * 提供 **环境名称**.
    * 提供 **环境描述**.
    * 选择 **云区域**.

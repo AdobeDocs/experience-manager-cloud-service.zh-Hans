@@ -2,9 +2,9 @@
 title: 就绪阶段
 description: 了解您需要采取哪些步骤来确保AEM安装已准备就绪，可将其移至云
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2079'
 ht-degree: 7%
 
 ---
@@ -220,4 +220,4 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 * [AEMas a Cloud Service:导言、架构与思维的不同](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [AEM a Cloud Service主页](/help/overview/home.md)  — 有关Experience Manageras a Cloud Service文档的概述，请单击此处开始。
 * [AEMas a Cloud Service概述](/help/overview/home.md)  — 本指南概述了Experience Manageras a Cloud Service，包括简介、术语和架构。
-* [入门](/help/onboarding/home.md) — 本指南概述了如何开始使用Experience Manageras a Cloud Service，包括如何获取访问权限和设置您的团队
+* [入门历程](/help/journey-onboarding/overview.md) — 本指南概述了如何开始使用Experience Manageras a Cloud Service，包括如何获取访问权限和设置您的团队
