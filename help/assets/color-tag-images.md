@@ -2,10 +2,10 @@
 title: 图像的颜色标记
 description: Experience Manager Assets允许您区分图像中的颜色，并自动将这些颜色应用为标记。 然后，您可以使用这些标记来搜索和过滤图像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
+source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1195'
+ht-degree: 3%
 
 ---
 
@@ -16,10 +16,6 @@ ht-degree: 0%
 Experience Manager Assets使用Adobe Sensei AI功能区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用。 这些标记可根据图像颜色组合来增强搜索体验。
 
 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。 Experience Manager Assets根据图像中的颜色覆盖范围应用标记。 您还可以配置颜色标记的显示格式。
-
->[!NOTE]
->
->此功能在预发行渠道中提供。 请参阅 [预发行渠道文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 以了解为环境启用该功能的信息。
 
 下图说明了在Experience Manager Assets中为图像配置和管理颜色标记所执行的一系列任务：
 
