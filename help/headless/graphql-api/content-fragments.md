@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 96%
+source-wordcount: '2708'
+ht-degree: 94%
 
 ---
 
@@ -346,6 +346,10 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 请参阅[示例查询 - 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
 
+>[!NOTE]
+>
+>如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -450,42 +454,47 @@ query {
 
 * 如果您需要结果列表：
    * 将 `List` 添加到模型名称；例如，`cityList`
-   * 请参阅[示例查询 - 关于所有城市的所有信息](#sample-all-information-all-cities)
+   * 请参阅[示例查询 - 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * 如果您希望使用逻辑 OR：
    * 使用 ` _logOp: OR`
-   * 请参阅[示例查询 - 所有名为“Jobs”或“Smith”的人](#sample-all-persons-jobs-smith)
+   * 请参阅[示例查询 - 所有名为“Jobs”或“Smith”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * 逻辑 AND 也可使用，不过（通常）是隐式的
 
 * 您可以查询与内容片段模型中字段对应的字段名称
-   * 请参阅[示例查询 - 公司的 CEO 和员工的完整详细信息](#sample-full-details-company-ceos-employees)
+   * 请参阅[示例查询 - 公司的 CEO 和员工的完整详细信息](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
 
 * 除了来自您模型的字段以外，还有一些系统生成的字段（以下划线为前缀）：
 
    * 对于内容：
 
       * `_locale`：用于显示语言；基于语言管理器
-         * 请参阅[给定区域设置的多个内容片段的示例查询](#sample-wknd-multiple-fragments-given-locale)
+         * 请参阅[给定区域设置的多个内容片段的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata`：用于显示片段的元数据
-         * 请参阅[元数据的示例查询 - 列出标题为 GB 的奖励的元数据](#sample-metadata-awards-gb)
+         * 请参阅[元数据的示例查询 - 列出标题为 GB 的奖励的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
       * `_model`：允许查询内容片段模型（路径和标题）
-         * 请参阅[来自模型的内容片段模型的示例查询](#sample-wknd-content-fragment-model-from-model)
+         * 请参阅[来自模型的内容片段模型的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
       * `_path`：存储库中内容片段的路径
-         * 请参阅[示例查询 - 一个特定城市片段](#sample-single-specific-city-fragment)
+         * 请参阅[示例查询 - 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
       * `_reference`：用于显示引用，包括富文本编辑器中的内联引用
-         * 请参阅[具有预获取引用的多个内容片段的示例查询](#sample-wknd-multiple-fragments-prefetched-references)
+         * 请参阅[具有预获取引用的多个内容片段的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation`：用于显示内容片段中的特定变体
+
+         >[!NOTE]
+         >
+         >如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
+
          * 请参阅[示例查询 - 具有指定变体的所有城市](#sample-cities-named-variation)
    * 以及操作：
 
       * `_operator`：应用特定运算符；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
-         * 请参阅[示例查询 - 所有名字不是“Jobs”的人](#sample-all-persons-not-jobs)
-         * 请参阅[示例查询 - `_path` 以特定前缀开头的所有冒险](#sample-wknd-all-adventures-cycling-path-filter)
+         * 请参阅[示例查询 - 所有名字不是“Jobs”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
+         * 请参阅[示例查询 - `_path` 以特定前缀开头的所有冒险](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply`：用于应用特定条件，例如 `AT_LEAST_ONCE`
-         * 请参阅[示例查询 - 筛选数组中必须至少出现一次的项](#sample-array-item-occur-at-least-once)
+         * 请参阅[示例查询 - 筛选数组中必须至少出现一次的项](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`：在查询时忽略大小写
-         * 请参阅[示例查询 - 名称中包含 SAN 的所有城市，不考虑大小写](#sample-all-cities-san-ignore-case)
+         * 请参阅[示例查询 - 名称中包含 SAN 的所有城市，不考虑大小写](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -498,7 +507,7 @@ query {
 * 支持 GraphQL 合并类型：
 
    * 使用 `... on`
-      * 请参阅[具有内容引用的特定模型的内容片段示例查询](#sample-wknd-fragment-specific-model-content-reference)
+      * 请参阅[具有内容引用的特定模型的内容片段示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
 * 在查询嵌套片段时回退：
 
