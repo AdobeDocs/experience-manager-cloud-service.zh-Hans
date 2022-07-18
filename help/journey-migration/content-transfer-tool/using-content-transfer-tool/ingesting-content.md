@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 17%
+source-wordcount: '908'
+ht-degree: 13%
 
 ---
 
@@ -44,8 +44,7 @@ ht-degree: 17%
 
    >[!IMPORTANT]
    >
-   >仅当您属于本地环境时，才能将摄取启动到目标环境 **AEM管理员** 在Cloud Service实例中进行分组。 如果您不属于AEM管理员组，则在尝试开始摄取时，您将看到如下所示的错误。
-   >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >仅当您属于本地环境时，才能将摄取启动到目标环境 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您无法启动摄取，请参阅 [无法启动摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
 
    >[!IMPORTANT]
    >
@@ -103,8 +102,26 @@ ht-degree: 17%
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## 疑难解答 {#troubleshooting}
 
+### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
 
-## 接下来呢？ {#whats-next}
+自动检索迁移令牌可能会因不同的原因（包括您）而失败 [通过Cloud Manager设置IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) (在目标Cloud Service环境中)。  在这些情况下，当您尝试启动摄取时，您将看到以下对话框：
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+您将需要通过单击对话框中的“获取令牌”链接来手动检索迁移令牌。 这将打开另一个显示令牌的选项卡。 然后，您可以复制令牌并将其粘贴到 **迁移令牌输入** 字段。 现在，您应该能够开始摄取。
+
+>[!NOTE]
+>
+>令牌将可供属于本地用户的用户使用 **AEM管理员** 目标Cloud Service创作服务上的组。
+
+### 无法启动摄取 {#unable-to-start-ingestion}
+
+仅当您属于本地环境时，才能将摄取启动到目标环境 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您不属于AEM管理员组，则在尝试开始摄取时，您将看到如下所示的错误。 您可以要求管理员将您添加到本地 **AEM管理员** 或请求令牌本身，然后您可以将该令牌粘贴到 **迁移令牌输入** 字段。
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+## 下一步 {#whats-next}
 
 在内容传输工具中了解将内容摄取到目标后，您便可以在每个步骤（提取和摄取）完成后查看日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 以了解更多。
