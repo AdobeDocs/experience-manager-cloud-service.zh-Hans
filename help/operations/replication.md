@@ -2,9 +2,9 @@
 title: 复制
 description: 分发和复制疑难解答。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1259'
 ht-degree: 4%
 
 ---
@@ -172,6 +172,9 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 整体 `ReplicationStatus` 仅当复制操作包括至少一个默认处于活动状态的代理时，才修改资源的。 在上例中，情况并非如此，因为复制只是使用“预览”代理。 因此，您需要使用 `getStatusForAgent()` 方法，用于查询特定代理的状态。 此方法也适用于“发布”代理。 如果已使用提供的代理完成任何复制操作，则返回非空值。
 
+### 使内容失效的方法 {#invalidating-content}
+
+您可以直接使内容失效，方法是使用作者的Sling内容失效(SCD)（首选方法），或使用复制API调用发布调度程序刷新复制代理。 请参阅 [缓存](/help/implementing/dispatcher/caching.md) 页面以了解更多详细信息。
 
 **复制API容量限制**
 
@@ -179,6 +182,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 如果您的应用程序逻辑不需要原子复制，则可以通过设置 `ReplicationOptions.setUseAtomicCalls` 为false，它将接受任意数量的路径，但在内部创建存储段以保持在此限制以下。
 
 每次复制调用传输的内容大小不得超过 `10 MB`. 这包括节点和属性，但不包括任何二进制文件（工作流包和内容包被视为二进制文件）。
+
 
 ## 疑难解答 {#troubleshooting}
 
