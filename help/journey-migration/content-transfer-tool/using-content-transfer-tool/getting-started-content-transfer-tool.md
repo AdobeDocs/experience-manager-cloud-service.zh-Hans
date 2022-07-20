@@ -2,9 +2,9 @@
 title: 内容传输工具快速入门
 description: 内容传输工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1341'
 ht-degree: 9%
 
 ---
@@ -44,6 +44,18 @@ ht-degree: 9%
 
 >[!NOTE]
 >如果 `HTTP/2 200` 已收到，连接到AEMas a Cloud Service成功。
+
+### 启用SSL日志记录 {#enable-ssl-logging}
+
+了解SSL/TLS连接问题有时可能会很困难。 要在提取过程中排除连接问题，您可以通过源AEM环境的系统控制台启用SSL日志记录，方法如下：
+
+1. 导航到源实例上的Adobe Experience Manager Web控制台，方法是转到 **工具 — 操作 — Web控制台** 或直接转到URL( *https://serveraddress:serverport/system/console/configMgr*
+1. 搜索 **内容传输工具提取服务配置**
+1. 使用铅笔图标按钮编辑其配置值
+1. 启用 **启用ssl日志记录以进行提取** 设置，然后按 **保存**:
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## 运行内容传输工具 {#running-tool}
 
@@ -186,6 +198,6 @@ ht-degree: 9%
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
 
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 了解如何创建迁移集后，您现在便可以了解内容传输工具中的提取和摄取流程。 在了解这些流程之前，您必须先查看 [处理大型内容存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 可显着加快内容传输活动的提取和摄取阶段，以将内容移动到AEMas a Cloud Service。
