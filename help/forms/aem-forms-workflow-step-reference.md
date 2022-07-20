@@ -2,7 +2,8 @@
 title: '如何向其他用户分配工作流、发送电子邮件、在工作流中使用Adobe Sign? '
 description: 以Forms为中心的工作流允许您快速构建基于Forms的自适应工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将其发送到多个数据源，以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
+google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 1%
@@ -166,7 +167,7 @@ ht-degree: 1%
 * **[!UICONTROL 工作流元数据]**:将要使用的值保存在工作流元数据属性中时，请使用选项。 选择选项后，在工作流元数据选项下方的空文本框中输入元数据属性名称。 例如， emailAddress。
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL 图像]**:使用选项将图像嵌入到电子邮件中。 选择选项后，浏览并选择图像。 图像选项仅适用于电子邮件模板中可用的图像标记(&lt;img src=&quot;*&quot; />)。
+* **[!UICONTROL 图像]**:使用选项将图像嵌入到电子邮件中。 选择选项后，浏览并选择图像。 图像选项仅适用于电子邮件模板中可用的图像标记(&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>)。&#42;
 
 **[!UICONTROL 发件人/收件人的电子邮件地址]**:选择 **[!UICONTROL 文字]** 用于手动指定电子邮件地址或选择 **[!UICONTROL 从工作流元数据中检索]** 用于从元数据属性中检索电子邮件地址的选项。 您还可以为 **[!UICONTROL 从工作流元数据中检索]** 选项。 选择 **[!UICONTROL 变量]** 用于从字符串数据类型变量中存储的值检索电子邮件地址的选项。
 
