@@ -30,7 +30,7 @@ ht-degree: 99%
 * [时间线边栏](#creating-a-new-version-timeline)
 * [创建](#creating-a-new-version-create-with-a-selected-resource)选项（在选择某资源时）
 
-### 创建新版本 - 时间线 {#creating-a-new-version-timeline}
+### 创建新版本 – 时间线 {#creating-a-new-version-timeline}
 
 1. 导航以显示要为其创建版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
@@ -48,7 +48,7 @@ ht-degree: 99%
 
    时间线中的信息将进行更新以指示该新版本。
 
-### 创建新版本 - 通过选定的资源创建 {#creating-a-new-version-create-with-a-selected-resource}
+### 创建新版本 – 通过选定的资源创建 {#creating-a-new-version-create-with-a-selected-resource}
 
 1. 导航以显示要为其创建版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
@@ -121,15 +121,15 @@ ht-degree: 99%
 
 1. 将列出可用版本：
 
-   ![恢复版本 - 文件夹中所有页面的列表](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+   ![恢复版本 – 文件夹中所有页面的列表](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
 1. 对于特定页面，使用&#x200B;**恢复到版本**&#x200B;下的下拉选择器来选择该页面的所需版本。
 
-   ![恢复版本 - 选择版本](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+   ![恢复版本 – 选择版本](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
 1. 在主显示中，选择要恢复的页面：
 
-   ![恢复版本 - 选择页面](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+   ![恢复版本 – 选择页面](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
 1. 对于要恢复为当前版本的选定页面的所选版本，选择&#x200B;**恢复**。
 
@@ -147,7 +147,7 @@ ht-degree: 99%
 
    ![恢复树](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. 使用&#x200B;**最新版本(日期)**&#x200B;上的日期和时间选择器来选择树的其他版本 - 要恢复的版本。
+1. 使用&#x200B;**最新版本(日期)**&#x200B;上的日期和时间选择器来选择树的其他版本 – 要恢复的版本。
 
 1. 根据需要设置标志&#x200B;**保留的非版本化页面**：
 

@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 81%
 
 ## 术语 {#terminology}
 
-在使用Adobe Experience Manager(AEM)as a Cloud Service时，您可能会遇到与发布相关的不同术语。
+在使用 Adobe Experience Manager (AEM) as a Cloud Service 时，您可能会遇到与发布相关的不同术语。
 
 * **发布/取消发布**
    * 这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
@@ -53,7 +53,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
-> 有关其他可能性，请参阅 **开始时间** 和 **关闭时间** 在 [页面属性的“基本”选项卡](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> 有关其他可能性，请参阅[页面属性的“基本”选项卡](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)中的&#x200B;**开启时间**&#x200B;和&#x200B;**关闭时间**。
 
 ### 从编辑器中发布 {#publishing-from-the-editor}
 
@@ -86,7 +86,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->访问者 [别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 无法发布。 编辑器中的发布选项仅适用于通过实际路径访问的页面。
+>无法发布编辑器中按[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中发布 {#publishing-from-the-console}
 
@@ -117,7 +117,7 @@ ht-degree: 81%
 
 #### 管理发布 {#manage-publication}
 
-**管理发布** 选件数超过 **快速发布**，允许包含子页面、自定义引用和启动任何适用的工作流，并提供在以后的日期发布的选项。
+与&#x200B;**快速发布**&#x200B;相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
 
 要使用“管理发布”发布或取消发布页面，请执行以下操作：
 
@@ -152,13 +152,13 @@ ht-degree: 81%
 
    如果您因一时疏忽而忘记在启动“管理发布”向导之前选择某个页面，则可以使用&#x200B;**添加内容**&#x200B;按钮将其他页面添加到要发布的页面列表中。
 
-   选择 **添加内容** 按钮启动 [路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 以允许选择内容。
+   选择&#x200B;**添加内容**&#x200B;按钮会启动[路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)以供选择内容。
 
-   选择所需的页面，然后单击 **选择** 向向导添加内容，或 **取消** 以取消所做的选择并返回到向导。
+   选择所需的页面，然后单击&#x200B;**选择**&#x200B;以将该内容添加到向导，或单击&#x200B;**取消**&#x200B;以取消所做的选择并返回到向导。
 
    **删除选择**
 
-   返回向导后，您可以选择列表中的某个项目，以将其从选定范围中删除。
+   返回向导，您可以在列表中选择一个项目以将其从选定内容中删除。
 
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -180,16 +180,16 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >请参阅 [发布和取消发布树](#publishing-and-unpublishing-a-tree)
+   >请参阅[发布和取消发布树](#publishing-and-unpublishing-a-tree)
 
-   单击 **包含子项** 打开一个对话框，允许您：
+   单击&#x200B;**包括子项**&#x200B;会打开一个对话框，它允许您：
 
    * **包括子项**
    * **仅包括下级子项**
    * **仅包括已修改的页面**
    * **仅包括已发布的页面**
 
-   激活所需选项并使用进行确认 **确定** 根据选择的选项，将子页面添加到要发布或取消发布的页面列表。 单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
+   激活所需选项，并单击&#x200B;**确定**&#x200B;以进行确认，根据选择选项将子页面添加到要发布或取消发布的页面列表中。单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
 
    ![管理发布（包括子项）](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
@@ -228,7 +228,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->访问者 [别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 无法取消发布。 编辑器中的发布选项仅适用于通过实际路径访问的页面。
+>无法取消发布编辑器中按[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中取消发布 {#unpublishing-from-the-console}
 
@@ -237,7 +237,7 @@ ht-degree: 81%
 1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
 1. 此时会启动&#x200B;**管理发布**&#x200B;向导。在第一个步骤&#x200B;**选项**&#x200B;中，选择&#x200B;**取消发布**，而不是默认选项&#x200B;**发布**。
 
-   ![取消发布 — 选项](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![取消发布 – 选项](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    正如稍后发布会启动一个工作流，以在指定时间发布此版本页面一样，稍后取消激活也会启动一个工作流，以在指定时间取消发布选定的一个或多个页面。
 
@@ -247,7 +247,7 @@ ht-degree: 81%
 
 1. 要完成取消发布，请按照与[发布页面](#manage-publication)类似的过程继续完成向导。
 
-   ![取消发布 — 范围](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
+   ![取消发布 – 范围](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## 发布和取消发布树 {#publishing-and-unpublishing-a-tree}
 
@@ -261,18 +261,18 @@ ht-degree: 81%
 
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. 在 **包含子项** 对话框：
+1. 在&#x200B;**包括子项**&#x200B;对话框中：
 
-   * 选择 **包含子项**
-   * 取消选择 **仅包括直接子项**
-   * 取消选择 **仅包含已发布的页面**
-   * 配置 **仅包含已修改的页面** 根据需要
+   * 选择&#x200B;**包括子项**
+   * 取消选择&#x200B;**仅包括下级子项**
+   * 取消选择&#x200B;**仅包括已发布的页面**
+   * 根据需要配置&#x200B;**仅包括已修改的页面**
 
-   这些选项默认处于选中状态，因此您必须记住配置它们。 使用确认选择 **确定** 将内容添加到发布/取消发布。
+   这些选项默认处于选中状态，因此您必须记得配置它们。单击&#x200B;**确定**&#x200B;以确认选择，将内容添加到发布/取消发布。
 
-   ![包含用于树发布的子项](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
+   ![包括树发布的子项](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. 在 **管理发布** 向导中，您可以通过添加其他页面或删除那些选定的页面来进一步自定义所做的选择。
+1. 在&#x200B;**管理发布**&#x200B;向导中，您可以通过添加其他页面或删除所选页面来进一步自定义选择。
 
    请记住，您还可以通过&#x200B;**已发布引用**&#x200B;选项查看要发布的引用。
 
@@ -288,9 +288,9 @@ ht-degree: 81%
 
    站点控制台的[卡片](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)、[列](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)和[列表](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)视图中将显示发布状态。
 
-* 在[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)中
+* 在[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)中
 
-   ![时间轴视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+   ![时间线视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * 在[“页面信息”菜单](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)中（编辑页面时）
 

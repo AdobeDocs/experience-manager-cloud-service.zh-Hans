@@ -1,78 +1,78 @@
 ---
-title: 为演示网站启用AEM Screens
-description: 了解在演示网站上启用完整的AEM Screensas a Cloud Service体验的步骤。
+title: 为演示站点启用 AEM Screens
+description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
 source-wordcount: '2671'
-ht-degree: 0%
+ht-degree: 99%
 
 ---
 
-# 为演示网站启用AEM Screens {#enable-screens}
+# 为演示站点启用 AEM Screens {#enable-screens}
 
-了解在演示网站上启用完整的AEM Screensas a Cloud Service体验的步骤。
+了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM参考演示附加组件历程的上一文档中， [创建演示网站、](create-site.md) 您基于“参考演示加载项”的模板创建了一个新的演示网站。 您现在应该：
+在 AEM 参考演示加载项历程的上一个文档[创建演示站点](create-site.md)中，您基于参考演示加载项模板创建了一个新的演示站点。您现在应：
 
-* 了解如何访问AEM创作环境。
-* 了解如何根据模板创建网站。
-* 了解导航网站结构和编辑页面的基础知识。
+* 了解如何访问 AEM 创作环境。
+* 了解如何基于模板创建站点。
+* 了解导航站点结构和编辑页面的基础知识。
 
-现在，您拥有自己的演示网站来探索和了解可用于帮助您管理演示网站的工具，接下来，您便可以为演示网站启用完整的AEM Screensas a Cloud Service体验。
+现在您已拥有自己的演示站点，可以探索和了解有助于您管理演示站点的工具，您现在可以为演示站点启用完整的 AEM Screens as a Cloud Service 体验。
 
 ## 目标 {#objective}
 
-AEM参考演示附加组件包含适用于We.Cafe（一家咖啡店垂直业务）的AEM Screens内容。 本文档可帮助您了解如何在AEM Screens上下文中执行We.Cafe演示设置。 阅读后，您应该：
+AEM 参考演示加载项包含适用于咖啡店垂直业务 We.Cafe 的 AEM Screens 内容。本文档有助于您了解如何在 AEM Screens 的上下文中执行 We.Cafe 演示设置。阅读本文档后，您应：
 
-* 了解AEM Screens的基础知识。
-* 了解We.Cafe演示内容。
-* 了解如何为We.Cafe配置AEM Screens。
-   * 了解如何为We.Cafe创建Screens项目。
-   * 能够使用Google表和API配置模拟天气服务。
-   * 根据您的“天气服务”模拟动态更改的Screens内容。
-   * 安装并使用screens播放器。
+* 了解 AEM Screens 的基础知识。
+* 了解 We.Cafe 演示内容。
+* 了解如何为 We.Cafe 配置 AEM Screens。
+   * 了解如何为 We.Cafe 创建 Screens 项目。
+   * 能够使用 Google Sheets 和 API 配置模拟的天气服务。
+   * 根据您的“天气服务”模拟动态变化的 Screens 内容。
+   * 安装和使用 Screens 播放器。
 
-## 了解屏幕 {#understand-screens}
+## 了解 Screens {#understand-screens}
 
-AEM Screensas a Cloud Service是一款数字标牌解决方案，允许营销人员大规模创建和管理动态数字体验。 借助AEM Screensas a Cloud Service，您可以创建引人入胜的动态数字标牌体验，以便在公共空间中使用。
+AEM Screens as a Cloud Service 是一种数字标牌解决方案，允许营销人员大规模创建和管理动态数字体验。借助 AEM Screens as a Cloud Service，您可以创建旨在公共场所使用的引人入胜的动态数字标牌体验。
 
 >[!TIP]
 >
->有关AEM Screensas a Cloud Service的完整详细信息，请参阅 [其他资源](#additional-resources) 文档末尾的章节。
+>有关 AEM Screens as a Cloud Service 的完整详细信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
-通过安装AEM参考演示附加组件，您可以在演示创作环境中自动为您提供AEM Screens的We.Cafe内容。 中描述的步骤 [部署Demo Screens项目](#deploy-project) 允许您通过发布该内容并部署到媒体播放器等来启用完整的AEM Screens体验。
+通过安装 AEM 参考演示加载项，您可以在演示创作环境中自动获得适用于 AEM Screens 的 We.Cafe 内容。利用[部署演示 Screens 项目](#deploy-project)中描述的步骤，您可以通过发布该内容并将其部署到媒体播放器等来启用完整的 AEM Screens 体验。
 
 ## 了解演示内容 {#demo-content}
 
-We.Cafe咖啡店由位于美国三个地点的三间咖啡店组成。 这三家店都有三种相似的体验：
+We.Cafe 咖啡店在美国有三家店，分别在三个不同的位置。这三家店提供了三种相似的体验：
 
-* 计数器上方的菜单板，带有两个或三个垂直面板
-* 面向街道的入口显示屏，带有一个水平或垂直面板，邀请顾客进入商店
-* 一个快速的自订亭亭，用一台垂直平板电脑绕过排队
-
->[!NOTE]
->
->只有进入显示屏才能在当前版本的演示中进行测试。 其他显示将在未来版本中显示。
->
->演示的当前版本中未包含网亭。 它将包含在未来版本中。
-
-纽约的地点被认为是小店，空间不大，因此：
-
-* 在旧金山和圣何塞，菜单板只有两个垂直面板，而不是三个
-* 入口显示器垂直放置而不是水平放置
+* 柜台上方有一个菜单展示板，带有两个或三个垂直面板
+* 配备了一个水平或垂直面板的当街入口显示，旨在邀请客户进店
+* 配备了直立平板电脑的快速自助订餐亭，使客户无需排队
 
 >[!NOTE]
 >
->如果您决定在 [连接屏幕as a Cloud Service](#connect-screens) 部分，请在显示下将位置创建为文件夹。 请参阅 [其他资源](#additional-resources) 部分，以了解有关显示屏的详细信息。
+>当前版本的演示中只能测试入口显示。其他显示将包含在将来的版本中。
+>
+>当前版本的演示中不包括该自助订餐亭。它将包含在将来的版本中。
+
+假设纽约的店面较小，没有太多空间，因此：
+
+* 菜单展示板只有两个垂直面板，而不是像旧金山和圣何塞的店面那样有三个
+* 入口显示垂直放置，而不是水平放置
+
+>[!NOTE]
+>
+>如果您决定连接到[连接 Screens as a Cloud Service](#connect-screens) 部分中的 Screens Cloud Service，请在显示下创建位置作为文件夹。有关显示的更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
 ### 咖啡馆布局 {#care-layouts}
 
-We.Cafe的位置有以下布局。
+We.Cafe 位置具有以下布局。
 
-![We.Cafe布局](assets/cafe-layouts.png)
+![We.Cafe 布局](assets/cafe-layouts.png)
 
 >[!NOTE]
 >
@@ -80,115 +80,115 @@ We.Cafe的位置有以下布局。
 
 ### 入口 {#entrance}
 
-入口展会分开一天，从早到下午只会改变第一张图像。 在序列的每次传递中，它还将宣传不同的特殊咖啡配方，每次使用按量计费的嵌入式序列来播放不同的产品。
+入口显示是分时段的，只会将第一张图像从早上更改为下午。在每次播放序列时，它还将宣传一种不同的特别咖啡制品，每次都使用计量的嵌入序列播放不同的物品。
 
-在入口通道上的最后一幅图像也基于外部温度被定位（即动态改变），该图像可以如 [创建模拟数据源](#data-source) 中。
+入口渠道上的最后一个图像也是基于外部温度来确定的（即动态变化），可以像[创建模拟数据源](#data-source)部分中所述的那样进行模拟。
 
-## 部署Demo Screens项目 {#deploy-project}
+## 部署演示 Screens 项目 {#deploy-project}
 
-要在 [创建程序](create-program.md) 步骤中，必须基于模板创建网站。
+要在您在[创建项目](create-program.md)步骤中创建的沙盒中使用演示内容，必须基于模板创建站点。
 
-如果您尚未创建We.Cafe演示网站，则只需按照 [创建演示网站](create-site.md) 中。 选择模板时，只需选择 **We.Cafe网站模板**.
+如果您尚未创建 We.Cafe 演示站点，只需执行[创建演示站点](create-site.md)部分中的相同步骤即可。在选择模板时，只需选择 **We.Cafe 网站模板**。
 
-![We.Cafe模板](assets/wecafe-template.png)
+![We.Cafe 模板](assets/wecafe-template.png)
 
-向导完成后，您将在站点下找到部署的内容，并且可以像浏览任何其他内容一样进行导航和浏览。
+在向导完成后，您会发现内容已部署到 Sites 下，并且可以像导航和浏览任何其他内容一样导航和浏览该内容。
 
-![We.Cafe内容](assets/wecafe-content.png)
+![We.Cafe 内容](assets/wecafe-content.png)
 
-现在，您已拥有We.Cafe演示内容，接下来可以选择如何测试AEM Screens:
+现在您已拥有 We.Cafe 演示内容，可以选择所需的测试 AEM Screens 的方式：
 
-* 如果您只想在AEM Sites控制台中浏览内容，则只需在 [其他资源](#additional-resources) 截！ 无需再执行任何操作。
-* 如果您想要体验AEM Screens的完整动态功能，请继续下一部分， [动态更改屏幕内容。](#dynamically-change)
+* 如果您只想浏览 AEM Sites 控制台中的内容，只需在[其他资源](#additional-resources)部分中开始浏览和发现更多内容！无需执行其他操作。
+* 如果要体验 AEM Screens 的完整动态功能，请继续下一部分，即[动态更改 Screens 内容](#dynamically-change)。
 
-## 动态更改屏幕内容 {#dynamically-change}
+## 动态更改 Screens 内容 {#dynamically-change}
 
-与AEM Sites一样，AEM Screens也可以根据上下文动态更改内容。 We.Cafe演示的渠道配置为根据当前温度显示不同的内容。 为了模拟这种情况，我们需要创造我们自己的简单天气服务。
+与 AEM Sites 一样，AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，已将渠道配置为根据当前温度显示不同的内容。为了模拟这一点，我们需要创建自己的简单天气服务。
 
 ### 创建模拟数据源 {#data-source}
 
-由于在演示期间或测试期间很难改变天气，因此必须模拟温度变化。 我们将模拟天气服务，方法是将温度值存储在Google工作表电子表格中，AEM ContextHub将调用该电子表格来检索温度。
+由于在演示期间或测试时很难更改天气，因此必须模拟温度变化。我们通过将温度值存储在 AEM 的 ContextHub 将调用以检索温度的 Google Sheet 电子表格中来模拟天气服务。
 
-#### 创建Google API密钥 {#create-api-key}
+#### 创建 Google API 密钥 {#create-api-key}
 
-首先，我们需要创建Google API密钥，以便于数据交换。
+首先，我们需要创建一个 Google API 密钥来促进数据交换。
 
-1. 登录Google帐户。
-1. 使用此链接打开云控制台 `https://console.cloud.google.com`.
-1. 通过单击工具栏左上角的当前项目名称(位于 **Google Cloud平台** 标签。
+1. 登录 Google 帐户。
+1. 使用以下链接打开 Cloud Console：`https://console.cloud.google.com`。
+1. 通过单击 **Google Cloud Platform** 标签后面的工具栏左上方的当前项目名称来创建新项目。
 
    ![Google Cloud Console](assets/google-cloud-console.png)
 
-1. 在项目选择器对话框中，单击 **新建项目**.
+1. 在项目选择器对话框中，单击&#x200B;**新建项目**。
 
    ![新建项目](assets/new-project.png)
 
-1. 为项目指定名称并单击 **创建**.
+1. 为项目命名，然后单击&#x200B;**创建**。
 
    ![创建项目](assets/create-project.png)
 
-1. 确保已选择您的新项目，然后使用云控制台功能板中的汉堡包菜单，选择 **API和服务**.
+1. 确保已选择您的新项目，然后在 Cloud Console 的仪表板中的汉堡菜单中，选择 **API 和服务**。
 
-   ![API和服务](assets/apis-services.png)
+   ![API 和服务](assets/apis-services.png)
 
-1. 在API和服务窗口的左侧面板中，单击 **凭据** ，然后单击 **创建凭据** 和 **API密钥**.
+1. 在“API 和服务”窗口的左侧面板中，单击窗口顶部的&#x200B;**凭据**，然后单击&#x200B;**创建凭据**&#x200B;和 **API 密钥**。
 
    ![凭据](assets/credentials.png)
 
-1. 在对话框中，复制新的API密钥并保存以供将来使用。 单击 **关闭** 来关闭对话框。
+1. 在对话框中，复制新的 API 密钥并将其保存以供将来使用。单击&#x200B;**关闭**&#x200B;以关闭对话框。
 
-#### 启用Google工作表API {#enable-sheets}
+#### 启用 Google Sheets API {#enable-sheets}
 
-要允许使用API密钥交换Google表数据，您需要启用Google表API。
+要允许使用 API 密钥交换 Google Sheets 数据，您需要启用 Google Sheets API。
 
-1. 返回Google云控制台(位于 `https://console.cloud.google.com` ，然后使用汉堡包菜单选择 **API和服务 — >库**.
+1. 返回项目的 Google Cloud Console，网址为 `https://console.cloud.google.com`，然后使用汉堡菜单选择 **API 和服务 -> 库**。
 
-   ![API库](assets/api-library.png)
+   ![API 库](assets/api-library.png)
 
-1. 在API库屏幕中，滚动以查找我们的搜索 **Google工作表API**. 单击它。
+1. 在“API 库”屏幕中，滚动以查找对 **Google Sheets API** 的搜索。单击它。
 
-   ![API库搜索](assets/api-library-search.png)
+   ![API 库搜索](assets/api-library-search.png)
 
-1. 在 **Google工作表API** 窗口单击 **启用**.
+1. 在 **Google Sheets API** 窗口中，单击&#x200B;**启用**。
 
-   ![Google工作表API](assets/sheets-api.png)
+   ![Google sheets API](assets/sheets-api.png)
 
-#### 创建Google工作表电子表格 {#create-spreadsheet}
+#### 创建 Google Sheets 电子表格 {#create-spreadsheet}
 
-现在，您可以创建一个Google工作表电子表格来存储天气数据。
+现在您可以创建 Google Sheets 电子表格来存储天气数据。
 
-1. 转到 `https://docs.google.com` 并创建新的Google工作表电子表格。
-1. 通过输入 `32` 单元格A2中。
-1. 通过单击 **共享** 窗口右上方和下方 **获取链接** 单击 **更改**.
+1. 转至 `https://docs.google.com` 并创建新的 Google Sheets 电子表格。
+1. 在单元格 A2 中输入 `32` 来定义温度。
+1. 通过单击窗口右上方的&#x200B;**共享**&#x200B;来共享文档，并在&#x200B;**获取链接**&#x200B;下，单击&#x200B;**更改**。
 
    ![共享表](assets/share-sheet.png)
 
-1. 复制链接以用于下一步。
+1. 复制链接以进行下一步。
 
    ![共享链接](assets/share-link.png)
 
-1. 找到工作表ID。
+1. 找到表 ID。
 
-   * 工作表ID是您复制之后的工作表链接中的随机字符串 `d/` 之前 `/edit`.
+   * 表 ID 是您在 `d/` 之后和 `/edit` 之前复制的表链接中的随机字符串。
    * 例如：
-      * 如果您的URL为 `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`
-      * 工作表ID为 `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
+      * 如果您的 URL 为 `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`
+      * 表 ID 为 `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`。
 
-1. 复制工作表ID以供将来使用。
+1. 复制表 ID 以供将来使用。
 
 #### 测试您的天气服务 {#test-weather-service}
 
-现在，您已将数据源创建为Google工作表电子表格并启用通过API的访问，接下来对其进行测试，以确保“天气服务”是可访问的。
+现在，您已将数据源创建为 Google Sheets 电子表格并支持通过 API 访问，请对其进行测试以确保您的“天气服务”可供访问。
 
-1. 打开Web浏览器。
+1. 打开 Web 浏览器。
 
-1. 输入以下请求，替换您之前保存的工作表ID和API密钥值。
+1. 输入以下请求，并替换您之前保存的表 ID 和 API 密钥值。
 
    ```
    https://sheets.googleapis.com/v4/spreadsheets/<yourSheetID>/values/Sheet1?key=<yourAPIKey>
    ```
 
-1. 如果您收到与以下内容类似的JSON数据，则应正确设置该数据。
+1. 如果您收到类似于以下内容的 JSON 数据，则说明您已正确设置。
 
    ```json
    {
@@ -203,195 +203,195 @@ We.Cafe的位置有以下布局。
    }
    ```
 
-AEM Screens可以使用此相同服务访问模拟的天气数据。 将在下一步中配置此设置。
+AEM Screens 可以使用此同一服务来访问模拟的天气数据。这将在下一步中进行配置。
 
-### 配置ContextHub {#configure-contexthub}
+### 配置 ContextHub {#configure-contexthub}
 
-AEM Screens可以根据上下文动态更改内容。 We.Cafe演示的渠道配置为利用AEM ContextHub根据当前温度显示不同的内容。
+AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，利用 AEM 的 ContextHub 将渠道配置为根据当前温度显示不同的内容。
 
 >[!TIP]
 >
->有关ContextHub的完整详细信息，请参阅 [其他资源](#additional-resources) 文档末尾的章节。
+>有关 ContextHub 的完整详细信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
-显示屏幕内容时， ContextHub将调用您的天气服务以查找当前温度，以确定要显示的内容。
+在显示屏幕内容时，ContextHub 将调用天气服务来查找当前温度以决定要显示的内容。
 
-出于演示目的，可以更改工作表中的值。 ContextHub将识别此内容，内容将根据更新后的温度在渠道中进行调整。
+在演示中，可以更改表中的值。ContextHub 将识别这一点，并且内容将根据更新后的温度在渠道中进行调整。
 
-1. 在AEMaaCS创作实例中，转到 **全局导航 — >工具 — >站点 — > ContextHub**.
-1. 选择与在从 **We.Cafe网站模板**.
-1. 选择 **配置 — > ContextHub配置 — > Google工作表** 然后单击 **下一个** 在右上方。
-1. 配置应已预配置JSON数据。 有两个值需要更改：
-   1. 替换 `[your Google Sheets id]` 和工作表ID [您之前保存过。](#create-spreadsheet)
-   1. 替换 `[your Google API Key]` 和API密钥 [您之前保存过。](#create-api-key)
+1. 在 AEMaaCS 创作实例上，转至&#x200B;**全局导航 -> 工具 -> Sites -> ContextHub**。
+1. 选择与您从 **We.Cafe 网站模板**&#x200B;创建的 Screens 项目同名的配置容器。
+1. 选择&#x200B;**配置 -> ContextHub 配置 -> Google Sheets**，然后单击右上方的&#x200B;**下一步**。
+1. 该配置应已具有预配置的 JSON 数据。有两个值需要更改：
+   1. 将 `[your Google Sheets id]` 替换为您之前保存的表 ID[。](#create-spreadsheet)
+   1. 将 `[your Google API Key]` 替换为您之前保存的 API 密钥[。](#create-api-key)
 1. 单击&#x200B;**保存**。
 
-现在，您可以更改Google工作表电子表格中的温度值，ContextHub将在“看到天气变化”时动态更新Screens。
+现在您可以更改 Google Sheet 电子表格中的温度值，ContextHub 将在“显示天气变化”时动态更新 Screens。
 
 ### 测试动态数据 {#test-dynamic}
 
-现在，AEM Screens和ContextHub已连接到您的天气服务，您可以对其进行测试以查看屏幕如何动态更新内容。
+现在，AEM Screens 和 ContextHub 已连接到您的天气服务，您可以对其进行测试以了解 Screens 如何动态更新内容。
 
-1. 访问沙盒创作实例。
-1. 通过导航到站点控制台 **全局导航 — >站点** 并选择以下页面 **屏幕 — > &lt;project-name> ->渠道 — >入口早晨（纵向）**.
+1. 访问您的沙盒创作实例。
+1. 通过&#x200B;**全局导航 -> Sites** 导航到站点控制台，然后选择以下页面 **Screens -> &lt;project-name> -> 渠道 -> 入口早上显示(纵向)**。
 
    ![选择演示项目内容](assets/project-content.png)
 
-1. 单击工具栏中的编辑或键入快捷键 `e` 以编辑页面。
+1. 单击工具栏中的“编辑”或键入快捷键 `e` 以编辑页面。
 
-1. 在编辑器中，您可以看到内容。 请注意，一个图像以蓝色高亮显示，且角部带有定位图标。
+1. 在编辑器中，您可以查看内容。请注意，一个图像以蓝色突出显示，角落有一个定位图标。
 
-   ![编辑器中的Screens内容](assets/screens-content-editor.png)
+   ![编辑器中的 Screens 内容](assets/screens-content-editor.png)
 
-1. 将您在电子表格中输入的温度从32更改为70，然后观看内容变化。
+1. 将您在电子表格中输入的温度从 32 更改为 70，然后观察内容变化。
 
-   ![编辑器中的Screens内容](assets/screens-content-editor-2.png)
+   ![编辑器中的 Screens 内容](assets/screens-content-editor-2.png)
 
-根据温度从32°F(0°C)变为舒适70°F(21°C)的情况，特征图像从一杯暖茶变为一杯凉冰咖啡。
+根据温度从冰冷的 32°F (0°C) 到舒适的 70°F (21°C) 的变化，此特色图像从一杯热茶变成了一杯凉爽的冰咖啡。
 
 >[!IMPORTANT]
 >
->仅将所述的Google工作表解决方案用于演示目的。 Adobe不支持在生产环境中使用Google工作表。
+>仅使用描述的 Google Sheets 解决方案进行演示。Adobe 不支持在生产环境中使用 Google Sheets。
 
-## 连接屏幕as a Cloud Service {#connect-screens}
+## 连接 Screens as a Cloud Service {#connect-screens}
 
-如果您还希望设置真实的数字标牌体验，包括在数字标牌设备或您的计算机上运行的播放器，请执行后续步骤。
+如果您还想设置真正的数字标牌体验，包括在数字标牌设备或计算机上运行的播放器，请执行后续步骤。
 
-或者，您也可以仅在AEMaCS的渠道编辑器中预览演示。
+或者，您可以在 AEMaaCS 上的渠道编辑器中预览演示。
 
 >[!TIP]
 >
->有关渠道编辑器的完整详细信息，请参阅 [其他资源](#additional-resources) 文档末尾的章节。
+>有关渠道编辑器的完整详细信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
-### 配置AEM Screensas a Cloud Service {#configure-screens}
+### 配置 AEM Screens as a Cloud Service {#configure-screens}
 
-首先，您需要将Screens演示内容发布到AEM Screensas a Cloud Service并配置服务。
+首先，您需要将 Screens 演示内容发布到 AEM Screens as a Cloud Service 并配置该服务。
 
-1. 发布演示屏幕项目的内容。
-1. 导航到as a Cloud Service于的屏幕 `https://experience.adobe.com/screens` 并登录。
-1. 在屏幕的右上方，确保您所在的组织正确无误。
+1. 发布演示 Screens 项目的内容。
+1. 在 `https://experience.adobe.com/screens` 上导航到 Screens as a Cloud Service 并登录。
+1. 在屏幕的右上方，确保您在正确的组织中。
 
-   ![查看您的Screens组织](assets/screens-org.png)
+   ![查看 Screens 组织](assets/screens-org.png)
 
-1. 在左上角，单击 **编辑设置** 图标，形状像齿轮。
+1. 单击左上方的齿轮型&#x200B;**编辑设置**&#x200B;图标。
 
    ![编辑设置](assets/screens-edit-settings.png)
 
-1. 提供AEMaaCS创作和发布实例的URL，您可在其中创建演示网站并单击 **保存**.
+1. 提供已在其中创建演示站点的 AEMaaCS 创作和发布实例的 URL，并单击&#x200B;**保存**。
 
-   ![屏幕设置](assets/screens-settings.png)
+   ![Screens 设置](assets/screens-settings.png)
 
-1. 连接到演示实例后，Screens将提取您的渠道内容。 单击 **渠道** 来查看已发布的渠道。 填充信息可能需要一些时间。 您可以单击蓝色 **同步** 按钮以更新信息。
+1. 连接到您的演示实例后，Screens 将拉入您的渠道内容。单击左侧面板中的&#x200B;**渠道**&#x200B;查看发布的渠道。填充信息可能需要一些时间。您可以单击屏幕右上方的蓝色&#x200B;**同步**&#x200B;按钮以更新信息。
 
    ![演示渠道信息](assets/screens-channels.png)
 
-1. 单击 **显示** 中。 您尚未为演示创建任何内容。 我们将通过为每个We.Cafe创建文件夹来模拟We.Cafe的位置。 单击 **创建** ，然后选择 **文件夹**.
+1. 单击左侧面板中的&#x200B;**显示**。您尚未为您的演示创建任何显示。我们将通过为每个显示创建文件夹来模拟 We.Cafe 的位置。单击屏幕右上方的&#x200B;**创建**，并选择&#x200B;**文件夹**。
 
    ![创建显示](assets/screens-displays.png)
 
-1. 在对话框中，提供文件夹名称，如 **圣何塞** 单击 **创建**.
+1. 在对话框中，提供文件夹名称，例如 **San Jose**，然后单击&#x200B;**创建**。
 
-1. 单击以打开文件夹，然后单击 **创建** ，然后选择 **显示**.
+1. 通过单击文件夹以将其打开，然后单击右上方的&#x200B;**创建**&#x200B;并选择&#x200B;**显示**。
 
-1. 提供显示名称并单击 **创建**.
+1. 提供显示名称，然后单击&#x200B;**创建**。
 
    ![创建显示](assets/create-display.png)
 
-1. 创建显示后，单击显示屏的名称以打开显示详细信息屏幕。 必须为显示屏分配从演示网站同步的渠道。 单击 **分配渠道** 中。
+1. 创建显示后，单击显示屏的名称以打开显示详细信息屏幕。 必须为显示分配一个已从您的演示站点同步的渠道。单击屏幕右上方的&#x200B;**分配渠道**。
 
    ![渠道详细信息](assets/channel-detail.png)
 
-1. 在对话框中，选择渠道并单击 **分配**.
+1. 在对话框中，选择渠道并单击&#x200B;**分配**。
 
    ![分配渠道](assets/assign-channel.png)
 
-您可以对其他位置和显示内容重复这些步骤。 完成后，您将演示网站与AEM Screens链接起来，并完成了必要的配置。
+您可以对其他位置和显示重复这些步骤。完成这些步骤后，您的演示站点便与 AEM Screens 链接并且已完成必要的配置。
 
-您只需在AEMaCS的渠道编辑器中预览演示即可。
+您可以在 AEMaaCS 上的渠道编辑器中预览演示。
 
-### 使用Screens播放器 {#screens-player}
+### 使用 Screens 播放器 {#screens-player}
 
-要在实际屏幕上查看内容，您可以下载播放器并在本地进行设置。 AEM Screens as a Cloud Service随后会将内容交付到您的播放器
+要在实际屏幕上查看内容，您可以下载播放器并在本地进行设置。之后，AEM Screens as a Cloud Service 会将内容交付给播放器
 
-#### 生成注册代码 {#registration-code}
+#### 生成注册码 {#registration-code}
 
-首先，您需要创建注册代码，以将播放器安全地连接到AEM Screensas a Cloud Service。
+首先，您需要创建一个注册码以将播放器安全地连接到 AEM Screens as a Cloud Service。
 
-1. 导航到as a Cloud Service于的屏幕 `https://experience.adobe.com/screens` 并登录。
-1. 在屏幕的右上方，确保您所在的组织正确无误。
+1. 在 `https://experience.adobe.com/screens` 上导航到 Screens as a Cloud Service 并登录。
+1. 在屏幕的右上方，确保您在正确的组织中。
 
-   ![查看您的Screens组织](assets/screens-org.png)
+   ![查看 Screens 组织](assets/screens-org.png)
 
-1. 在左侧面板中，单击 **播放器管理 — >注册代码** 然后单击 **创建代码** 中。
+1. 在左侧面板中，单击&#x200B;**播放器管理 -> 注册码**，然后单击屏幕右上方的&#x200B;**创建代码**。
 
-![注册代码](assets/registration-codes.png)
+![注册码](assets/registration-codes.png)
 
-1. 输入代码的名称，然后单击 **创建**.
+1. 输入此代码的名称，然后单击&#x200B;**创建**。
 
    ![创建代码](assets/create-code.png)
 
-1. 创建代码后，该代码会显示在列表中。 单击以复制代码。
+1. 创建此代码后，它将显示在列表中。单击以复制此代码。
 
-   ![注册代码](assets/registration-code.png)
+   ![注册码](assets/registration-code.png)
 
 #### 安装和配置播放器 {#install-player}
 
-1. 从下载适用于您平台的播放器 `https://download.macromedia.com/screens/` 然后安装它。
-1. 运行播放器并切换到 **配置** 选项卡，滚动到底部以单击并确认 **重置为工厂** 然后 **更改为云模式**.
+1. 从 `https://download.macromedia.com/screens/` 下载并安装平台的播放器。
+1. 运行播放器，然后切换到&#x200B;**配置**&#x200B;选项卡，滚动到底部以单击并确认&#x200B;**重置为出厂设置**&#x200B;和&#x200B;**更改为云模式**。
 
    ![播放器设置](assets/player-configuration.png)
 
-1. 播放器将自动更改为 **播放器注册** 选项卡。 输入您之前生成的代码，然后单击 **注册**.
+1. 播放器将自动变为&#x200B;**播放器注册**&#x200B;选项卡。输入您之前生成的代码，然后单击&#x200B;**注册**。
 
    ![播放器注册](assets/player-registration-code.png)
 
-1. 切换到 **系统信息** 选项卡，以确认已注册播放器。
+1. 切换到&#x200B;**系统信息**&#x200B;选项卡以确认播放器已注册。
 
    ![已注册的播放器](assets/player-registered.png)
 
-#### 将播放器分配给显示屏 {#assign-player}
+#### 将播放器分配给显示 {#assign-player}
 
-1. 导航到as a Cloud Service于的屏幕 `https://experience.adobe.com/screens` 并登录。
-1. 在屏幕的右上方，确保您所在的组织正确无误。
+1. 在 `https://experience.adobe.com/screens` 上导航到 Screens as a Cloud Service 并登录。
+1. 在屏幕的右上方，确保您在正确的组织中。
 
-   ![查看您的Screens组织](assets/screens-org.png)
+   ![查看 Screens 组织](assets/screens-org.png)
 
-1. 在左侧面板中，单击 **播放器管理 — >播放器** 您将看到您之前安装和注册的播放器。
+1. 在左侧面板中，单击&#x200B;**播放器管理 -> 播放器**，您将看到之前安装并注册的播放器。
 
    ![播放器](assets/players.png)
 
-1. 单击播放器名称以打开其详细信息，然后单击 **指定为显示** 中。
+1. 单击播放器名称以打开其详细信息，然后单击屏幕右上方的&#x200B;**分配给显示**。
 
    ![将播放器分配给显示](assets/assign-to-display.png)
 
-1. 在对话框中，选择您之前创建的显示，然后单击 **选择**.
+1. 在对话框中，选择您之前创建的显示，然后单击&#x200B;**选择**。
 
-   ![分配显示屏](assets/assign-a-display.png)
+   ![分配显示](assets/assign-a-display.png)
 
-#### 播放! {#playback}
+#### 播放！ {#playback}
 
-在您为播放器分配了显示屏后，AEM Screens as a Cloud Service会将内容交付到播放器中可见的位置。
+将显示分配给播放器后，AEM Screens as a Cloud Service 会将内容交付给可显示它的播放器。
 
-![入口纵向](assets/entrance-portrait.jpg)
+![入口显示（纵向）](assets/entrance-portrait.jpg)
 
-![入口景观](assets/entrance-landscape.jpg)
+![入口显示（横向）](assets/entrance-landscape.jpg)
 
 ## 下一步 {#what-is-next}
 
-现在，您已完成AEM参考演示附加组件历程的这一部分，接下来您应该：
+现在您已完成 AEM 参考演示加载项历程的这一部分，您应：
 
-* 了解AEM Screens的基础知识。
-* 了解We.Cafe演示内容。
-* 了解如何为We.Cafe配置AEM Screens。
+* 了解 AEM Screens 的基础知识。
+* 了解 We.Cafe 演示内容。
+* 了解如何为 We.Cafe 配置 AEM Screens。
 
-现在，您可以使用自己的演示网站探索AEM Screens的功能。 继续历程的下一节， [管理演示网站，](manage.md) 您将在此处了解可用于帮助您管理演示网站的工具以及如何删除这些工具。
+您现在可以使用自己的演示站点来探索 AEM Screens 的功能。继续历程的下一部分，即[管理您的演示站点](manage.md)，了解可用于帮助您管理演示站点的工具以及如何移除它们。
 
-您还可以在 [“其他资源”部分](#additional-resources) 以进一步了解您在此历程中看到的功能。
+您也可以查看[“其他资源”部分](#additional-resources)中的一些其他资源，详细了解您在此历程中看到的功能。
 
 ## 其他资源 {#additional-resources}
 
-* [ContextHub文档](/help/sites-cloud/authoring/personalization/contexthub.md)  — 了解如何使用ContextHub根据天气条件以外的用户上下文对内容进行个性化。
-* [使用API密钥 — Google文档](https://developers.google.com/maps/documentation/javascript/get-api-key)  — 有关使用Google API密钥的详细信息的便捷引用。
-* [显示](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)  — 详细了解AEM Screens中的显示屏及其功能。
-* [下载播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)  — 了解如何访问Screens播放器以及如何安装。
-* [注册播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)  — 了解如何在您的AEM Screens项目中设置和注册播放器。
-* [将播放器分配给显示屏](/help/screens-cloud/managing-players-registration/assigning-player-display.md)  — 配置播放器以显示内容。
+* [ContextHub 文档](/help/sites-cloud/authoring/personalization/contexthub.md) – 了解如何使用 ContextHub 根据天气条件之外的用户上下文来对内容进行个性化设置。
+* [使用 API 密钥 – Google 文档](https://developers.google.com/maps/documentation/javascript/get-api-key) – 有关使用 Google API 密钥的详细信息的方便参考。
+* [显示](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md) – 详细了解 AEM Screens 中的显示及其用途。
+* [下载播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md) – 了解如何访问和安装 Screens 播放器。
+* [注册播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) – 了解如何在 AEM Screens 项目中设置和注册播放器。
+* [将播放器分配给显示](/help/screens-cloud/managing-players-registration/assigning-player-display.md) – 配置播放器以显示您的内容。
