@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service Assets HTTP API中的内容�
 description: 了解资产HTTP API中对内容片段的支持，HTTP API是AEM的一项重要无头交付功能。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -204,7 +204,7 @@ GETREST API支持通过URL参数进行分页（对于资产请求）：
 >
 >根据子资产和文件夹的资产类型，子实体列表可能已包含定义相应子实体的完整属性集。 或者，对于此子实体列表中的实体，只能显示缩减的属性集。
 
-### 资产 {#assets}
+### 资源 {#assets}
 
 如果请求资产，响应将返回其元数据；例如标题、名称和由相应资产架构定义的其他信息。
 
@@ -255,47 +255,6 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 >[!NOTE]
 >
 >有关更多详细信息，请参阅 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特别是， [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
-
-### 读取/投放 {#read-delivery}
-
-用法包括：
-
-`GET /{cfParentPath}/{cfName}.json`
-
-例如：
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-响应将以内容片段中的结构化进行序列化JSON。 引用作为引用URL提供。
-
-可以执行两种类型的读取操作：
-
-* 按路径读取特定内容片段，将返回内容片段的JSON表示形式。
-* 按路径读取内容片段的文件夹：这会返回文件夹中所有内容片段的JSON表示形式。
-
-### 创建 {#create}
-
-用法包括：
-
-`POST /{cfParentPath}/{cfName}`
-
-主体必须包含要创建的内容片段的JSON表示形式，包括应在内容片段元素中设置的任何初始内容。 必须将 `cq:model` 属性，且必须指向有效的内容片段模型。 如果不这样做，则会导致错误。 还需要添加标头 `Content-Type` 将设置为 `application/json`.
-
-### 更新 {#update}
-
-使用方式为
-
-`PUT /{cfParentPath}/{cfName}`
-
-正文必须包含要为给定内容片段更新内容的JSON表示形式。
-
-这可以只是内容片段、单个元素或所有元素值和/或元数据的标题或描述。
-
-### 删除 {#delete}
-
-用法包括：
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## 限制 {#limitations}
 
