@@ -2,14 +2,14 @@
 title: 合适的人员，合适的职位
 description: 合适的人员，合适的职位
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
+source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
 ---
 
-# **首先，让合适的人员担任合适的职位**
+# 首先，让合适的人员担任合适的职位 {#get-the-right-people-in-the-right-roles}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_chooseteam"
