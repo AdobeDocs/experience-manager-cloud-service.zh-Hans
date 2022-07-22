@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 88%
 
 ---
@@ -282,4 +282,6 @@ ht-degree: 88%
 
 ## 索引和查询优化 {#index-query-optimizations}
 
-通过 Apache Jackrabbit Oak，可灵活地配置索引以高效地处理搜索查询。索引对于大型存储库尤其重要。请确保所有查询都有合适的索引作为支持。没有合适索引的查询可能会读取成千上万个节点，然后将其记录为警告。请参阅 [本页](best-practices-for-querying-and-indexing.md) 查询和索引的优化方式。
+通过 Apache Jackrabbit Oak，可灵活地配置索引以高效地处理搜索查询。索引对于大型存储库尤其重要。请确保所有查询都有合适的索引作为支持。没有合适索引的查询可能会读取成千上万个节点，然后将其记录为警告。
+
+请参阅 [本文档](query-and-indexing-best-practices.md) 有关如何优化查询和索引的信息。
