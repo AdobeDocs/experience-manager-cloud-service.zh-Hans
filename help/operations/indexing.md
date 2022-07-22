@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 90%
+source-wordcount: '2251'
+ht-degree: 88%
 
 ---
 
@@ -280,16 +280,6 @@ ht-degree: 90%
 
 如果不再需要自定义开箱即用索引，则必须复制开箱即用索引定义。例如，如果已部署 `damAssetLucene-8-custom-3`，但不再需要自定义，并且要改回默认的 `damAssetLucene-8` 索引，则必须添加一个索引 `damAssetLucene-8-custom-4`，其中包含 `damAssetLucene-8` 的索引定义。
 
-## 索引优化 {#index-optimizations}
+## 索引和查询优化 {#index-query-optimizations}
 
-通过 Apache Jackrabbit Oak，可灵活地配置索引以高效地处理搜索查询。索引对于大型存储库尤其重要。请确保所有查询都有合适的索引作为支持。没有合适索引的查询可能会读取成千上万个节点，然后将其记录为警告。应通过分析日志文件而找出此类查询，以便可优化索引定义。有关详细信息，请参阅[本页](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=zh-Hans#tips-for-creating-efficient-indexes)。
-
-### AEM as a Cloud Service 上的 Lucene 全文索引 {#index-lucene}
-
-全文索引 `/oak:index/lucene-2` 可能会变得非常大，因为它在默认情况下索引 AEM 存储库中的所有节点。根据 Adobe 停用此索引的计划，AEM as a Cloud Service 中的产品端将不再使用它，并且不需要它即可运行客户代码。对于具有常见 Lucene 索引的 AEM as a Cloud Service 环境，Adobe 正在与客户单独合作，以协调方式补偿该索引，并使用更好、优化的索引。未经 Adobe 进一步通知，客户无需采取任何行动。当关于此优化需要采取行动时，Adobe 将通知 AEM as a Cloud Service 客户。如果自定义查询需要此索引，则应使用不同的名称（例如 `/oak:index/acme.lucene-1-custom-1`）创建此索引的副本作为临时解决方案，如[此处](/help/operations/indexing.md)所述。此优化在默认情况下不适用于本地托管或受 Adobe Managed Services 管理的其他 AEM 环境。
-
-## 查询优化 {#index-query}
-
-通过&#x200B;**查询性能**&#x200B;工具，可观察常用和慢速的 JCR 查询。此外，它还能分析查询并显示尤其是关于是否正在将索引用于此查询的各种信息。
-
-与 AEM 内部部署不同，AEM as a Cloud Service 在 UI 中不再显示&#x200B;**查询性能**&#x200B;工具。现在改为可通过[查询](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)选项卡上的开发者控制台（在 Cloud Manager 中）找到它。
+通过 Apache Jackrabbit Oak，可灵活地配置索引以高效地处理搜索查询。索引对于大型存储库尤其重要。请确保所有查询都有合适的索引作为支持。没有合适索引的查询可能会读取成千上万个节点，然后将其记录为警告。请参阅 [本页](best-practices-for-querying-and-indexing.md) 查询和索引的优化方式。

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0ee8f080c0e712e4a34086a75cbd8750a7d08b74
+source-git-commit: 7f8686cb9ca5121d1921dfdd64c152d14ebff2b6
 workflow-type: tm+mt
-source-wordcount: '3680'
+source-wordcount: '3686'
 ht-degree: 92%
 
 ---
@@ -889,6 +889,7 @@ ht-degree: 92%
    + [备份和恢复](/help/operations/backup.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
    + [删除通用 lucene 索引](/help/operations/removal-generic-lucene-index.md)
+   + [查询和索引的最佳实践](/help/operations/best-practices-for-querying-and-indexing.md)
 + 合规性 {#compliance}
    + [AEM as a Cloud Service 中的合规性](/help/compliance/home.md)
    + 数据隐私和保护就绪性 {#data-privacy}
