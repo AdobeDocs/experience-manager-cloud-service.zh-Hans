@@ -3,10 +3,10 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 48%
+ht-degree: 47%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 48%
 >
 >有关更多详细信息，请参阅[在配置浏览器中启用内容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)。
 >
->对于适当的 Sites 配置，需要启用&#x200B;**GraphQL 持久查询**。
+>的 **GraphQL持久查询** 需要为相应的站点配置启用。
 
 例如，如果存在名为 `my-query` 的特定查询，使用来自 Sites 配置 `my-conf` 的模型 `my-model`：
 
@@ -194,9 +194,9 @@ GraphiQL IDE是 **首选** 保留查询的方法。 使用 **卷曲** 命令行�
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-其中 `PERSISTENT_PATH` 是保存永久查询的缩短路径。
+其中 `PERSISTENT_PATH` 是保存保留查询的缩短路径。
 
-1. 例如 `wknd` 是配置名称和 `plain-article-query` 是永久查询的名称。 要执行查询，请执行以下操作：
+1. 例如 `wknd` 是配置名称和 `plain-article-query` 是持久查询的名称。 要执行查询，请执行以下操作：
 
    ```shell
    $ curl -X GET \
@@ -207,7 +207,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
    >[!NOTE]
    >
-   > 查询变量和值必须正确 [编码](#encoding-query-url) 执行永久查询时。
+   > 查询变量和值必须正确 [编码](#encoding-query-url) 执行保留查询时。
 
    例如：
 
@@ -312,8 +312,8 @@ URL可以划分为以下部分：
 
 | URL部分 | 描述 |
 |----------| -------------|
-| `/graphql/execute.json` | 永久查询端点 |
-| `/wknd/adventure-by-path` | 永久查询路径 |
+| `/graphql/execute.json` | 保留的查询端点 |
+| `/wknd/adventure-by-path` | 保留的查询路径 |
 | `%3B` | 编码 `;` |
 | `adventurePath` | 查询变量 |
 | `%3D` | 编码 `=` |
@@ -332,9 +332,9 @@ URL可以划分为以下部分：
 
 应始终在AEM创作服务上创建持久查询，然后将其发布（复制）到AEM发布服务。 通常，持久化查询会在本地或开发环境等较低环境中创建和测试。 然后，有必要将持久化查询提升到更高级别的环境，最终在生产AEM发布环境中提供，以供客户端应用程序使用。
 
-### 包永久查询
+### 包持久化查询
 
-可将永久查询内置到 [AEM包](/help/implementing/developing/tools/package-manager.md). 然后，可以在不同的环境中下载和安装AEM包。 AEM包也可以从AEM创作环境复制到AEM发布环境。
+可以将持久查询内置到 [AEM包](/help/implementing/developing/tools/package-manager.md). 然后，可以在不同的环境中下载和安装AEM包。 AEM包也可以从AEM创作环境复制到AEM发布环境。
 
 要创建资源包，请执行以下操作：
 

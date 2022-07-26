@@ -2,10 +2,10 @@
 title: 创建配置 - Headless 设置
 description: 以创建配置作为第一步，开始在 AEM as a Cloud Service 中使用 Headless。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->根据您的实施请求，可能还需要&#x200B;**内容片段模型**&#x200B;和 **GraphQL 持久查询**&#x200B;之外的配置选项。
+>除 **内容片段模型** 和 **GraphQL持久查询** 根据您的实施要求，可能需要使用。
 
 ## 后续步骤 {#next-steps}
 

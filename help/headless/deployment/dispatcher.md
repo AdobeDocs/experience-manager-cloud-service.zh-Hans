@@ -3,10 +3,10 @@ title: AEM Headless 的 Dispatcher 配置
 description: Dispatcher 是位于 Adobe Experience Manager 发布环境前的缓存和安全层。使用多个配置将 GraphQL 端点打开到 Headless 应用程序。
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -38,4 +38,4 @@ AEM 项目中包括 Dispatcher 模块，其中包含用于 Dispatcher 的配置�
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-持久查询可以使用 `GET` 请求，因此在 Dispatcher 和 CDN 级别缓存响应。有关缓存和缓存失效的更多详细信息见[此处](/help/implementing/dispatcher/caching.md)。
+可使用 `GET`，从而在调度程序和CDN级别缓存响应。 有关缓存和缓存失效的更多详细信息见[此处](/help/implementing/dispatcher/caching.md)。
