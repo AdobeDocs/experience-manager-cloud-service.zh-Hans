@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e936e15a23fc0630d0e1054b117f141e23ce947d
+source-git-commit: f70b361dd58d362338473a2fa213e8604ca2daee
 workflow-type: tm+mt
-source-wordcount: '3685'
+source-wordcount: '3696'
 ht-degree: 92%
 
 ---
@@ -338,6 +338,8 @@ ht-degree: 92%
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [与Adobe Campaign Classic集成](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [创建Adobe Experience Manager新闻稿](/help/sites-cloud/integrating/creating-newsletter.md)
 + 资源 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概述和新增功能](/help/assets/overview.md)
