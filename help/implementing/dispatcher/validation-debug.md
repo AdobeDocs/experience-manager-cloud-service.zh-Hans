@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
+source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2536'
 ht-degree: 2%
 
 ---
@@ -78,6 +78,10 @@ ht-degree: 2%
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 您可以拥有一个或多个这些文件。 包含 `<VirtualHost>` 匹配主机名并允许Apache使用不同规则处理每个域流量的条目。 文件是在 `available_vhosts` 目录，并在中通过符号链接启用 `enabled_vhosts` 目录访问Advertising Cloud的帮助。 从 `.vhost` 将包含文件、重写和变量等其他文件。
+
+>[!NOTE]
+>
+>在灵活模式下，您应使用相对路径而不是绝对路径。
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -480,11 +484,15 @@ $ docker exec d75fbd23b29 httpd-test
 在Cloud Manager 2021.7.0版本中，新的Cloud Manager计划通过 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 或更高版本，包括文件 **选择加入/USE_SOURCES_DIRECTLY**. 这消除了 [旧模式](/help/implementing/dispatcher/validation-debug-legacy.md) 大小，还会导致SDK和运行时以改进的方式验证和部署配置。 如果您的调度程序配置没有此文件，强烈建议您迁移。 请执行以下步骤以确保安全过渡：
 
 1. **本地测试。** 使用最新的调度程序工具SDK，添加文件夹和文件 `opt-in/USE_SOURCES_DIRECTLY`. 按照本文中的“本地验证”说明来测试调度程序是否在本地工作。
-2. **云开发测试：**
+1. **云开发测试：**
    * 提交文件 `opt-in/USE_SOURCES_DIRECTLY` 到由非生产管道部署到云开发环境的git分支。
    * 使用Cloud Manager部署到云开发环境。
    * 彻底测试。 在将更改部署到更高环境之前，务必要验证Apache和Dispatcher配置是否按预期行事。 检查与您的自定义配置相关的所有行为！ 如果您认为已部署的Dispatcher配置不反映您的自定义配置，请提交客户支持票证。
-3. **部署到生产环境：**
+
+   >[!NOTE]
+   >
+   >在灵活模式下，您应使用相对路径而不是绝对路径。
+1. **部署到生产环境：**
    * 提交文件 `opt-in/USE_SOURCES_DIRECTLY` 到由生产管道部署到云暂存和生产环境的git分支。
    * 使用Cloud Manager部署到暂存环境。
    * 彻底测试。 在将更改部署到更高环境之前，务必要验证Apache和Dispatcher配置是否按预期行事。 检查与您的自定义配置相关的所有行为！ 如果您认为已部署的Dispatcher配置不反映您的自定义配置，请提交客户支持票证。
