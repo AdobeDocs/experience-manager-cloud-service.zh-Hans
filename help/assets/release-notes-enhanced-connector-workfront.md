@@ -2,10 +2,10 @@
 title: ' 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]'
 description: ' 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -15,23 +15,19 @@ ht-degree: 3%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.1( [!DNL Workfront for Experience Manager enhanced connector] 是2022年7月1日。
+最新版本1.9.2( [!DNL Workfront for Experience Manager enhanced connector] 是2022年8月03日。
 
 ## 发行亮点 {#release-highlights}
 
 的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下增强功能和错误修复：
 
-* 为迁移到Adobe IMS的实例添加了对使用Workfront API密钥的Experience Manager和Workfront应用程序之间身份验证的支持。
+* 的 **[!UICONTROL 上载文档]** 工作流步骤无法将文档附加到Workfront。
 
-* 链接外部文件或文件夹时，Workfront应用程序会显示 `SERVER_ERROR` 错误消息。 错误消息是指由于API密钥不匹配而导致的未授权异常。
-
-* 为资产执行创建任务工作流时，日志消息中会显示空指针异常。
-
-* 当您启用 `Replace Spaces with DASH` 配置选项中“Experience Manager中的高级设置”下，会导致在Workfront中创建重复的文件夹。
+* 的 **[!UICONTROL 上载文档]** 工作流步骤无法将文档附加到Workfront中的任务和问题。 工作流步骤可成功将文档附加到项目。
 
 >[!IMPORTANT]
 >
->Adobe建议您 [升级到最新的1.9.1版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建议您 [升级到最新的1.9.2版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知问题 {#known-issues}
 
@@ -40,6 +36,18 @@ ht-degree: 3%
 * 当您使用经典Workfront体验时， **[!UICONTROL 发送到]** 选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 的 **[!UICONTROL 发送到]** 选项可使用 **[!UICONTROL 文档操作]** 下拉列表。 的 **[!UICONTROL 发送到]** 选项可正确用于 **[!UICONTROL 更多]** 下拉列表以及 **[!UICONTROL 文档操作]** 新Workfront体验中提供的下拉列表。
 
 ## 以前版本 {#previous-releases}
+
+### 2022年7月版 {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 版本1.9.1包含以下更新：
+
+* 为迁移到Adobe IMS的实例添加了对使用Workfront API密钥的Experience Manager和Workfront应用程序之间身份验证的支持。
+
+* 链接外部文件或文件夹时，Workfront应用程序会显示 `SERVER_ERROR` 错误消息。 错误消息是指由于API密钥不匹配而导致的未授权异常。
+
+* 为资产执行创建任务工作流时，日志消息中会显示空指针异常。
+
+* 当您启用 `Replace Spaces with DASH` 配置选项中“Experience Manager中的高级设置”下，会导致在Workfront中创建重复的文件夹。
 
 ### 2022年6月版 {#june-2022-release}
 
