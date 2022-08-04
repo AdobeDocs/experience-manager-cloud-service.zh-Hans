@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中创建和管理机器翻译项目和人工�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
 workflow-type: tm+mt
-source-wordcount: '3920'
-ht-degree: 98%
+source-wordcount: '3992'
+ht-degree: 95%
 
 ---
 
@@ -170,19 +170,27 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 
 ### 更新翻译记忆库 {#updating-translation-memory}
 
-已翻译内容的手动编辑可以同步回翻译管理系统 (TMS) 以训练其翻译记忆库。
+翻译内容的手动编辑可以同步回翻译管理系统(TMS)以培训其翻译内存。
 
 1. 在站点控制台中，更新已翻译页面中的文本内容后，选择&#x200B;**更新翻译记忆库**。
 1. 列表视图显示每个已编辑的文本组件的源和翻译的并排比较。选择应将哪些翻译更新同步到翻译记忆库，然后选择&#x200B;**更新记忆库**。
 
 ![比较翻译记忆库的更改](../assets/update-translation-memory-compare.png)
 
-AEM 会将选定的字符串发送回翻译管理系统。
+AEM会更新已配置TMS的翻译内存中现有字符串的翻译。
 
-* 该操作可更新已配置翻译管理系统(TMS)的翻译内存中现有字符串的翻译。
+* 该操作可更新已配置TMS的翻译内存中现有字符串的翻译。
 * 它不会创建新的翻译作业。
-* 它会通过AEM转换API将字符串的值对及其转换发送回TMS。
-* 此功能要求翻译管理系统配置为与AEM一起使用。
+* 它通过AEM翻译API将翻译发送回TMS（请参阅下文）。
+
+要使用此功能，请执行以下操作：
+
+* 必须配置TMS以与AEM一起使用。
+* 连接器需要实现该方法 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * 此方法中的代码确定了翻译内存更新请求的情况。
+   * AEM转换框架通过此方法实施将字符串值对（原始和更新的转换）发送回TMS。
+
+对于使用专有翻译存储器的情况，翻译存储器更新可被拦截并发送到自定义目的地。
 
 ### 检查页面翻译状态 {#check-translation-status}
 
