@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.7.0�
 description: 以下是AEM as a Cloud Service中Cloud Manager 2022.7.0的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
+source-git-commit: 9f76f77365c0e9b2986e9bb3560bc039e0ca7961
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.7.0版的发布日期是2022年6月30日。 下一版本计划于2022年8月11日发布。
+AEMas a Cloud Service中Cloud Manager 2022.7.0版的发布日期是2022年8月8日。 下一版本计划于2022年8月11日发布。
 
 ## 新增功能 {#what-is-new}
 
