@@ -4,9 +4,9 @@ description: 了解如何将AEM  as a Cloud Service与Adobe Campaign Classic集�
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 9ad97fdb26c0049f1b6a4b0958c93e2d4af803fb
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -225,4 +225,4 @@ Adobe Campaign现在可以与AEM通信。
 
 配置了Adobe Campaign Classic和AEMas a Cloud Service后，集成现已完成。
 
-您现在可以通过继续 [本文档。](/help/sites-cloud/integrating/creating-newsletter.md)
+您现在可以通过继续 [本文档。](/help/sites-cloud/authoring/campaign/creating-newsletters.md)

@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5de4f8642d6dfae2697bd2fc18b8b9845b883e18
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '3698'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 92%
    + [术语 - 云的新术语](/help/overview/terminology.md)
    + [AEM as a Cloud Service 的架构简介](/help/overview/architecture.md)
    + [SEO 和 URL 管理](/help/overview/seo-and-url-management.md)
-   + [AEMas a Cloud Service于Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [评估 KPI](/help/overview/assessing-kpis.md)
    + [调整 KPI](/help/overview/aligning-kpis.md)
    + [选择合适的团队](/help/overview/choose-right-team.md)
    + [文档历程](/help/journey-documentation/documentation-journeys.md)
 + 发行说明 {#release-notes}
    + [版本信息](/help/release-notes/home.md)
-   + AEMaCS常规发行说明 {#release-notes}
+   + AEMaaCS 常规发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
          + [2022.5.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
@@ -97,7 +97,7 @@ ht-degree: 92%
          + [2020.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
          + [2020.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
          + [2020.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + 迁移工具的发行说明 {#migration-tools}
+   + 迁移工具的发行说明{#migration-tools}
       + [最新发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022年 {#2022}
          + [2022.5.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
@@ -110,7 +110,7 @@ ht-degree: 92%
          + [2021.11.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Experience Manager 增强型连接器 Workfront 发行说明{#workfront}
-      + [Workfront for Experience Manager增强连接器的最新发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
    + [已知问题](/help/release-notes/known-issues.md)
@@ -129,15 +129,15 @@ ht-degree: 92%
    + 入门培训历程 {#journey}
       + [入门培训历程 概述](/help/journey-onboarding/overview.md)
       + [入门准备](/help/journey-onboarding/preparation.md)
-      + [AEMas a Cloud Service术语](/help/journey-onboarding/terminology.md)
+      + [AEM as a Cloud Service 术语](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
-      + [分配Cloud Manager产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [分配 Cloud Manager 产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [访问 Cloud Manager](/help/journey-onboarding/cloud-manager.md)
       + [创建项目](/help/journey-onboarding/create-program.md)
       + [创建环境](/help/journey-onboarding/create-environments.md)
-      + [分配AEM产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
+      + [分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
       + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
-      + [AEM用户任务](/help/journey-onboarding/aem-users.md)
+      + [AEM 用户任务](/help/journey-onboarding/aem-users.md)
    + AEM 参考演示加载项历程 {#demo-add-on}
       + [概述](/help/journey-sites/demos-add-on/overview.md)
       + [安装](/help/journey-sites/demos-add-on/installation.md)
@@ -145,9 +145,9 @@ ht-degree: 92%
       + [创建演示站点](/help/journey-sites/demos-add-on/create-site.md)
       + [启用 Screens](/help/journey-sites/demos-add-on/screens.md)
       + [管理您的演示站点](/help/journey-sites/demos-add-on/manage.md)
-   + 其他入门概念 {#concepts}
+   + 其他入门概念{#concepts}
       + [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md)
-      + [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
@@ -168,36 +168,36 @@ ht-degree: 92%
       + Best Practices Analyzer {#best-practices-analyzer}
          + [概述](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [使用 Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
-      + 内容传输工具 {#content-transfer-tool}
+      + 内容转移工具 {#content-transfer-tool}
          + [概述](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-         + [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-         + [有关使用内容传输工具的指南和最佳实践](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-         + [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
-         + [验证内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
+         + [内容转移工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+         + [有关使用内容转移工具的指南和最佳实践](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+         + [内容转移工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [验证内容转移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [从源中提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [查看迁移集的日志](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [删除迁移集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
-         + [在发布实例上运行内容传输工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [内容传输工具疑难解答](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [在发布实例上运行内容转移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [内容转移工具疑难解答](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 用户映射工具 {#user-mapping-tool}
             + [概述](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [重要注意事项](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [使用用户映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-         + 旧版内容传输工具 {#legacy}
+         + 旧版内容转移工具{#legacy}
             + [概述](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
-            + [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
-            + [有关使用内容传输工具的指南和最佳实践](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
-            + [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
-            + [验证内容传输](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
+            + [内容转移工具的先决条件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
+            + [有关使用内容转移工具的指南和最佳实践](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
+            + [内容转移工具快速入门](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
+            + [验证内容转移](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
             + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
             + [从源中提取内容](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
             + [将内容提取到目标](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
             + [查看迁移集的日志](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
             + [删除迁移集](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
-            + [在发布实例上运行内容传输工具](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
-            + [内容传输工具疑难解答](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
+            + [在发布实例上运行内容转移工具](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
+            + [内容转移工具疑难解答](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + 代码重构工具 {#refactoring-tools}
       + [统一体验](/help/journey-migration/unified-experience.md)
       + [存储库现代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)
@@ -273,6 +273,9 @@ ht-degree: 92%
          + [了解分段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用 ContextHub 配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [注册、登录和用户配置文件](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + 营销活动 {#campaign}
+         + 
+            + [使用AEM创建新闻稿](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 管理 {#administering}
       + 内容片段 {#content-fragments}
          + [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -340,7 +343,6 @@ ht-degree: 92%
       + [与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与Adobe Campaign Classic集成](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-      + [创建Adobe Experience Manager新闻稿](/help/sites-cloud/integrating/creating-newsletter.md)
 + 资源 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概述和新增功能](/help/assets/overview.md)
@@ -349,7 +351,7 @@ ht-degree: 92%
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
-   + 管理数字资源 {#manage}
+   + 管理数字资产{#manage}
       + [共享资源](/help/assets/share-assets.md)
       + [监测活动和 DAM 任务](/help/assets/assets-activity-history.md)
       + [开始使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)
@@ -389,9 +391,9 @@ ht-degree: 92%
       + [资源 HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
       + [连接的资源](/help/assets/use-assets-across-connected-assets-instances.md)
-      + [生成仅用于放置的演绎版](/help/assets/configure-fpo-renditions.md)
+      + [生成仅用于投放的演绎版](/help/assets/configure-fpo-renditions.md)
       + [资源报表](/help/assets/asset-reports.md)
-      + [级联元数据](/help/assets/cascading-metadata.md)
+      + [层叠元数据](/help/assets/cascading-metadata.md)
       + [XMP 元数据](/help/assets/xmp-metadata.md)
       + [MediaLibrary 功能](/help/assets/medialibrary.md)
       + [导入和导出资源元数据](/help/assets/metadata-import-export.md)
@@ -413,9 +415,9 @@ ht-degree: 92%
       + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [预览 - JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
-      + Dynamic Media历程:基础知识 {#dm-journey}
-         + [第一部分：什么是Dynamic Media — 用例 — 资产如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [第二部分：Dynamic Media URL的剖析 — 图像预设的基础知识 — 关于图像集、旋转集和混合媒体集](/help/assets/dynamic-media/dm-journey-part2.md)
+      + Dynamic Media 历程：基础知识{#dm-journey}
+         + [第一部分：什么是 Dynamic Media - 用例 - 资产如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [第二部分：Dynamic Media URL 的剖析 - 图像预设的基础知识 - 关于图像集、旋转集和混合媒体集](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League 存档的 Dynamic Media 新闻稿](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [设置 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -441,7 +443,7 @@ ht-degree: 92%
       + [交付 Dynamic Media 资源](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在 Dynamic Media 中激活热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 支持](/help/assets/dynamic-media/assets-3d.md)
-      + [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)
+      + [Dynamic Media 限制](/help/assets/dynamic-media/limitations.md)
       + [图像集](/help/assets/dynamic-media/image-sets.md)
       + [全景图像](/help/assets/dynamic-media/panoramic-images.md)
       + [混合媒体集](/help/assets/dynamic-media/mixed-media-sets.md)
@@ -530,7 +532,7 @@ ht-degree: 92%
       + [配置数据源](/help/forms/configure-data-sources.md)
       + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
-      + [配置 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 云服务](/help/forms/configure-msdynamics-salesforce.md)
+      + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
       + [创建表单数据模型](/help/forms/create-form-data-models.md)
       + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
       + [使用表单数据模型](/help/forms/using-form-data-model.md)
@@ -538,7 +540,7 @@ ht-degree: 92%
    + [与 DocuSign 集成](/help/forms/integrate-docusign-adaptive-forms.md)
    + [与 Sites 集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + [将自适应表单与Microsoft Power集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
+   + [将自适应表单与 Microsoft Power 集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
    + 创建和使用工作流 {#create-form-centric-workflows}
       + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流中使用变量](/help/forms/variable-in-aem-workflows.md)
@@ -583,7 +585,7 @@ ht-degree: 92%
       + [安装 Screens 播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [注册播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [将播放器分配给显示](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + 使用核心产品功能 {#core-product-features}
+   + 使用核心产品功能{#core-product-features}
       + [视频的缩略图支持](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
    + 在 Screens as a Cloud Service 中开发 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
@@ -626,7 +628,7 @@ ht-degree: 92%
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
 + Headless {#headless}
-   + [什么是无头CMS?](/help/headless/what-is-headless.md)
+   + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
    + 设置 {#setup}
       + [简介](/help/headless/setup/introduction.md)
@@ -674,7 +676,7 @@ ht-degree: 92%
          + [如何通过 AEM Assets API 更新您的内容](/help/journey-headless/developer/update-your-content.md)
          + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
-         + [可选 - 如何使用 AEM 创建单页应用程序](/help/journey-headless/developer/create-spa.md)
+         + [可选 - 如何使用 AEM 创建单页面应用程序](/help/journey-headless/developer/create-spa.md)
       + Headless 内容架构师历程 {#architect}
          + [AEM Headless 内容架构师历程概述](/help/journey-headless/architect/overview.md)
          + [使用 AEM 对 Headless 进行内容建模 - 简介](/help/journey-headless/architect/introduction.md)
