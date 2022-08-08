@@ -2,10 +2,10 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 97%
+source-wordcount: '1566'
+ht-degree: 100%
 
 ---
 
@@ -34,8 +34,10 @@ ht-degree: 97%
 您可以使用体验片段：
 
 * 满足作者希望重复使用页面各个部分（体验的片段）的需求。
-如果没有体验片段，作者需要复制并粘贴该片段。创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。体验片段无需复制/粘贴。
-* 支持无头 CMS 用例。作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/触点会使用该体验，然后将其提供给最终用户。
+如果没有体验片段，作者需要复制并粘贴该片段。创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。
+体验片段无需复制/粘贴。
+* 支持 headless CMS 用例。
+作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/触点会使用该体验，然后将其提供给最终用户。
 
 >[!NOTE]
 >
@@ -143,7 +145,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 1. 在&#x200B;**配置体验片段**&#x200B;对话框中指定所需的模板：
 
-   ![配置 Experience Fragments](/help/sites-cloud/authoring/assets/xf-19.png)
+   ![配置体验片段](/help/sites-cloud/authoring/assets/xf-19.png)
 
    >[!NOTE]
    >
@@ -242,7 +244,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 ## 使用您的体验片段 {#using-your-experience-fragment}
 
-您现在可以在创作页面时使用您的经验片段：
+您现在可以在创作页面时使用您的体验片段：
 
 1. 打开要编辑的任何页面。
 
@@ -301,7 +303,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 编辑体验片段时，可用的构建基块会显示在左侧选项卡中。您可以根据以下条件进行筛选：
 
-* **本地** - 当前体验片中段的构建基块
+* **本地** - 当前体验片段的构建块
 * **全部** - 所有片段中的构建基块
 
 ![选择构建基块](/help/sites-cloud/authoring/assets/xf-14.png)
@@ -337,13 +339,17 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
       * **Web 变体的数量** - 仅供参考
       * **非 Web 变体的数量** - 仅供参考
       * **使用此片段的页数** - 仅供参考
-   * **云服务**
+   * **Cloud Service**
       * **云配置**
-      * **云服务配置**
+      * **Cloud Service 配置**
       * **Facebook 页面 ID**
       * **Pinterest 钉板**
    * **引用**
       * 引用列表
+   * **个性化**
+      * **ContextHub 路径**
+      * **区段路径**
+      * **品牌**
 
 ## 纯 HTML 演绎版 {#the-plain-html-rendition}
 

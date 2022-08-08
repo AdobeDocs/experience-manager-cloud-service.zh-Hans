@@ -2,16 +2,16 @@
 title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 92%
 
 ---
 
 # 控制台的键盘快捷键 {#keyboard-shortcuts-for-consoles}
 
-以下快捷键可用于“站点”、“资产”、“用户”、“组”、“项目”和“体验片段”控制台。
+以下快捷键可用于“站点”、“资产”、“用户”、“组”、“项目”和“体验片段”控制台。还有 [内容片段控制台](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | 位置 | 快捷键 | 描述 |
 |---|---|---|
@@ -81,3 +81,7 @@ AEM 为一些常用功能（编辑、属性、复制/粘贴、显示各种侧边
 ## 页面编辑器的键盘快捷键 {#keyboard-shortcuts-for-the-page-editor}
 
 用户在整个 AEM 环境中都可以使用各种键盘快捷键。其中一些快捷键适用于控制台，还有一些则适用于[页面编辑](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)。
+
+## 内容片段控制台的键盘快捷键 {#keyboard-shortcuts-for-the-content-fragments-console}
+
+某些键盘快捷键适用于 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

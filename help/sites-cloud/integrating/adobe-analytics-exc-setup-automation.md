@@ -3,22 +3,15 @@ title: 将 Adobe Analytics 与 Experience Cloud 设置自动化集成
 description: Experience Cloud 设置自动化提供了一种简单且自动化的方式，通过简单的 UI 向导界面将 Experience Manager Sites 与 Experience Platform Launch 和 Adobe Analytics 集成和装备到一起。了解如何在您自己的站点上使用自动化设置。
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
-index: false
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 83%
 
 ---
 
 # 将 Adobe Analytics 与 Experience Cloud 设置自动化集成 {#integrate-adobe-analytics-automation-setup}
-
->[!CAUTION]
->
-> 此功能目前处于内部测试阶段。Target 于 2022 年第 1 季度发行。
 
 Experience Cloud 设置自动化提供了一种简单且自动化的方式，通过简单的 UI 向导界面将 Experience Manager Sites 与 Experience Platform Launch 和 Adobe Analytics 集成和装备到一起。
 
@@ -26,11 +19,27 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 
 本视频探讨了如何使用 Experience Cloud 设置自动化将 AEM 站点与 Experience Platform Launch 和 Analytics 集成：
 
->[!VIDEO](https://video.tv.adobe.com/v/339605/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
 ## 要求
 
 自动化设置旨在即时使用通过启用了 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)的 [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)构建的 AEM 站点。您可以使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或使用[站点模板](/help/journey-sites/quick-site/create-site.md)创建站点来生成已自动启用这些功能的新站点。
+
+## 前提条件 {#prerequisites}
+
+在使用此功能之前，请务必按照以下说明操作，以确保在您的环境中正确设置先决条件服务：
+
+1. 登录Adobe Admin Console(https://adminconsole.adobe.com/)。
+1. 确保在右上角选择了正确的IMS组织ID。
+1. 单击产品导航选项。
+1. 检查是否已为IMS组织配置“Adobe Experience Manager as a Cloud Service”。
+1. 检查是否已为IMS组织配置“Adobe Analytics”。
+1. 转到Cloud Manager(https://experience.adobe.com/cloud-manager)。
+1. 选择相应的程序。
+1. 检查环境是否位于最新版本的Cloud Service上（如果未处于最新版本，请在菜单选项中选择更新）。
+1. 在Cloud Manager中运行完整堆栈管道。
+
+现在，Experience Cloud应该已准备好进行“环境设置自动化”。
 
 ## 如何设置
 

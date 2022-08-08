@@ -9,21 +9,43 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 73953a3d71f3328def3bd4c1f03516b4839695ea
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
-
 
 # 使用涂写签名将电子签名应用于表单{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 您可以使用 **潦草签名** 组件和 **签名步骤** 用于在自适应表单上绘制（涂写）签名的组件。 签名步骤组件显示自适应表单的PDF版本。 您需要启用记录文档选项或基于表单模板的自适应Forms才能使用签名步骤组件。
 
-这两个组件都提供了一个用于签署表单的窗口，如下所示。 您还可以单击地理位置图标 ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) 向签名添加地理位置。
-
 ![涂写符号对话框](assets/scribble-signature.png)
+
+## 签名窗口中可用的各种选项
+
+* **答：** 单击 **画笔** 图标，在画布上绘制您的签名。
+* **B:** 单击 **清除** 图标以在画布上清除签名。
+* **C:** 单击 **地理位置** 图标添加地理位置和签名。
+* **D:** 单击 **键盘** 图标在画布上键入您的名称。
+
+在您点按完成 ![aem_forms_save](assets/aem_forms_save.png) 图标，则无法编辑签名。 如果要编辑签名，则必须忽略当前签名，然后使用上述“画笔/键盘”选项重新签名。
+
+您可以点按 **配置** ![](assets/configure.png) 图标来设置潦草签名画布的宽高比。
+* 当涂写签名画布的宽高比小于1时，地理位置信息将添加到涂写签名画布的底部。
+
+
+* 当涂写签名画布的宽高比大于1时，地理位置信息将添加到涂写签名画布的右侧。
+
+
+![潦草的签名 — 底部](assets/scribble-signature-aspectratio.PNG)
+
+
+
+>[!NOTE]
+>
+>签名始终以PNG格式保存。
 
 ## 配置自适应表单以使用潦草签名 {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -36,7 +58,7 @@ ht-degree: 0%
    >
    >签名步骤组件占用表单的全宽。 建议在包含签名步骤组件的部分上不要包含任何其他组件。
 
-1. 在内容浏览器中，点按 **表单容器**，然后点按 **配置** ![](assets/configure.png) 图标。 它会打开属性浏览器并显示自适应表单容器属性。 导航到 **自适应表单容器** > **电子签名** 并取消选择 **启用Adobe Sign** 选项。 点按完成 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 图标以保存更改。
+1. 在内容浏览器中，点按 **表单容器**，然后点按 **配置** ![](assets/configure.png) 图标。 它会打开属性浏览器并显示自适应表单容器属性。 导航到 **自适应表单容器** > **电子签名** 并取消选择 **启用Adobe Sign** 选项。 点按完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存更改。
 
    >[!NOTE]
    >
@@ -52,7 +74,7 @@ ht-degree: 0%
 
    * **CSS类**:指定客户端库的CSS类（如果有）。 建议使用 [主题](themes.md) 和 [内嵌样式](inline-style-adaptive-forms.md) 而不是CSS类。
 
-   点按完成 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 图标以保存更改。 签名配置成功。
+   点按完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存更改。 签名配置成功。
 
    现在，当您填写表单时，将显示自适应表单的PDF版本，并提供用于签署PDF文档的选项。 有关详细信息，请参阅 [使用涂写签名对自适应表单进行签名](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
@@ -62,13 +84,12 @@ ht-degree: 0%
 
    ![EchoSign页面的签名屏幕](assets/esignscribblesign.jpg)
 
-1. 单击 **[!UICONTROL Sign]**. 出现涂写符号对话框。 对表单进行签名，然后单击完成 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 图标以保存签名。
+1. 单击 **[!UICONTROL Sign]**. 出现涂写符号对话框。 对表单进行签名，然后单击完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存签名。
 
-   ![涂写符号对话框](assets/scribblewidget.jpg)
+   ![涂写符号对话框](assets/scribblewidget.png)
 
 1. 单击完成以完成签名过程。
 
    ![完成签名过程](assets/scribblecomplete.jpg)
 
 签名将添加到表单中，表单控件将移至下一个面板。
-

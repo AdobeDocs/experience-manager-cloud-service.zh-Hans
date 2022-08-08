@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
+source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
 workflow-type: tm+mt
 source-wordcount: '2708'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -105,21 +105,21 @@ GraphQL 使用以下对象：
 
 * [缓存的持久查询](/help/headless/graphql-api/persisted-queries.md)
 
-### GraphQL查询最佳实践(Dispatcher) {#graphql-query-best-practices}
+### GraphQL 查询最佳实践 (Dispatcher) {#graphql-query-best-practices}
 
-的 [持久化查询](/help/headless/graphql-api/persisted-queries.md) 是推荐的方法：
+[持久查询](/help/headless/graphql-api/persisted-queries.md)是推荐的方法：
 
-* 缓存
-* 它们由AEMas a Cloud Service集中管理
+* 它们被缓存
+* 它们由 AEM as a Cloud Service 集中管理
 
-不建议使用直接查询和/或POST，因为它们未缓存，因此在默认实例中，Dispatcher配置为阻止此类查询。
+不建议使用直接查询和/或 POST，因为它们未缓存，因此在默认实例中，Dispatcher 配置为阻止此类查询。
 
 >[!NOTE]
 >
->要允许在调度程序中直接查询和/或POST查询，您可以要求系统管理员：
+>要允许在调度程序中直接查询和/或 POST 查询，您可以要求系统管理员：
 >
->* 创建一个名为 `ENABLE_GRAPHQL_ENDPOINT`
->* 值 `true`
+>* 创建一个名为 `ENABLE_GRAPHQL_ENDPOINT` 的 Cloud Manager 环境变量
+>* 值为 `true`
 
 
 >[!NOTE]
@@ -233,7 +233,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 | 多行文本 | 字符串 | 用于输出文本，例如文章的正文 |
 | 数值 | 浮点，[浮点] | 用于显示浮点数和常规数字 |
 | 布尔型 |  布尔型 | 用于显示复选框 → 简单的 true/false 语句 |
-| 日期和时间 | 日历 | 用于显示日期和时间，使用 ISO 8086 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
+| 日期和时间 | 日程表 | 用于显示日期和时间，使用 ISO 8086 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
 | 枚举 | 字符串 | 用于显示在模型创建时定义的选项列表中的选项 |
 | 标记 | [字符串] | 用于显示表示在 AEM 中所用标记的字符串列表 |
 | 内容引用 | 字符串 | 用于显示指向 AEM 中其他资源的路径 |
@@ -445,9 +445,113 @@ query {
 
 * [基于 WKND 项目的示例查询](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
+<!-- CQDOC-19418 -->
+
+<!--
+## Sorting {#sorting}
+
+This feature allows you to sort the query results according to a specified field.
+
+For example:
+
+```graphql
+query {
+  articleList(sort:"author, _uuid DESC") {
+    items {
+      author
+      _path
+    }
+  }
+}
+```
+
+## Paging {#paging}
+
+This feature allows you to perform paging on query types that returns a list. Two methods are provided:
+
+* `offset` and `limit` in a `List` query
+* `first` and `after` in a `Paginated` query
+
+### List query - offset and limit {#list-offset-limit}
+
+In a `...List`query you can use `offset` and `limit` to return a specific subset of results:
+
+* `offset`: Specifies the first data set to return
+* `limit`: Specifies the maximum number of data sets to be returned
+
+For example, to output the page of results containing up to five articles, starting from the fifth article from the *complete* results list:
+
+```graphql
+query {
+   articleList(offset: 5, limit:5) {
+    items {
+      author
+      _path
+    }
+  }
+}
+```
+
+>[!NOTE]
+>
+>* Paging is impacted by the order to the jcr query result set. By default it uses `jcr:path` to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the paging cannot be done in memory.
+>
+>* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+
+### Paginated query - first and after {#paginated-first-after}
+
+The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the standard `first`/`after` arguments defined by [GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+
+* `first`: The `n` first items to return. The default is `50`.
+* `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
+
+For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
+
+```graphql
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            adventureTitle
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+>[!NOTE]
+>
+>* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
+>
+>* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
+-->
+
 ## GraphQL for AEM - 执行摘要 {#graphql-extensions}
 
-使用 GraphQL for AEM 的查询基本操作遵循标准 GraphQL 规范。对于用于 AEM 的 GraphQL 查询，有几个扩展：
+使用 GraphQL for AEM 的查询基本处理遵循标准 GraphQL 规范。对于用于 AEM 的 GraphQL 查询，有几个扩展：
+
+<!-- CQDOC-19418 -->
+
+<!--
+* If you expect a list of results:
+  * add `List` to the model name; for example,  `cityList`
+  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+  
+  You can then:
+  
+  * [Sort the results](#sorting)
+
+  * Return a page of results using either:
+
+    * [A List query with offset and limit](#list-offset-limit)
+    * [A Paginated query with first and after](#paginated-first-after)
+  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+-->
 
 * 如果您需要单个结果：
    * 使用模型名称，例如 city

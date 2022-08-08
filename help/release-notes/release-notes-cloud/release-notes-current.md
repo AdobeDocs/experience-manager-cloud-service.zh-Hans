@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 75621ba378d59bd36146b15995823c43c458d349
+source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 20%
+source-wordcount: '921'
+ht-degree: 22%
 
 ---
 
@@ -25,78 +25,92 @@ ht-degree: 20%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.6.0)是2022年6月30日发布的。
+的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.7.0)是2022年8月8日发行的。
 
-下一版本(2022.7.0)计划于2022年8月8日发布。
+下一版本(2022.8.0)计划于2022年8月25日发布。
 
 ## 发布视频 {#release-video}
 
-观看2022年6月版概述视频，了解2022.6.0版本中添加的功能摘要：
+观看2022年7月版概述视频，了解2022.7.0版本中添加的功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 新 [用户界面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 现在，内容管理员和内容作者可以高效管理（执行发布、取消发布、复制、移动等操作）、搜索/过滤，以及为无头用例创建内容片段。
+* 的 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 现在支持键盘快捷键。
 
-   ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
+* AEM asCloud Service [优化了Web图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 允许通过提供WebP等格式显着提高页面速度。 这项新服务还提供了更灵活的图像大小调整和转换选项。 的所有版本 [核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允许利用此服务，并通过单击图像组件策略中的选项以WebP形式交付图像。
 
-* 新 [目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) 不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动渲染ToCs。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
+* AEM个性化活动现在可以利用体验片段来替代我们的旧版选件。 此功能：
+   * 启用一个迁移路径，使AEM内容能够提升体验片段选件，而不是旧版库选件，从而提供与今后的个性化规模相符且样式正确的内容。
+   * 防止内容作者在其网站上意外提供未设置样式的内容。
+   * 允许将任何组件的定位模式转换为使用可编辑模板的体验片段(JSON和HTML类型)。
+
+>[!NOTE]
+>
+>现有已使用旧版选件的个性化活动可以继续这样做，但应将新的个性化活动创建为体验片段，因为这是今后的推荐方法。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] 中的新增功能 {#assets-features}
+### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
 
-Experience Manager Assets现在使用Adobe Sensei AI功能 [区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](../../assets/color-tag-images.md). 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
+您现在可以将Adobe Experience Manager Assets配置为 [根据MIME类型限制用户可上传的资产类型](/help/assets/configure-asset-upload-restrictions.md).
+
+![资产上传限制](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 中的新增功能 {#forms-features}
 
-* **[将自适应Forms与Microsoft® Power自动集成](/help/forms/forms-microsoft-power-automate-integration.md)**:现在，您可以配置自适应表单以在提交时运行Microsoft® Power Automate Cloud Flow。 配置的自适应表单会发送捕获的数据、附件和记录文档，以增强云流自动化以进行处理。 它可帮助您构建自定义数据捕获体验，同时利用Microsoft® Power Automate的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。
+* **对潦草签名的键盘输入支持**:自适应Forms在触控设备上的使用越来越多，一种常见要求是支持签名。 在触控设备上对文档进行签名已成为一种可接受的签名方式。 Adaptive Forms对Scribble签名和Adobe Sign提供了此类用例的本机支持。 现在，除了其他已受支持的选项外，您还可以使用键盘在自适应表单中涂写签名。 它还有助于提高无障碍合规性。
 
-* **创建自适应表单的向导**:您可以使用商业用户友好向导快速创作自适应Forms。 该向导提供了快速的选项卡导航，以便轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
+![在iphone上支持Scribble签名的键盘输入](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-   ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
+* **在本地语言中使用自适应Forms向导**:您可以使用所选语言的向导。 现在，它支持Adobe Experience Manager支持的所有语言。
+
+### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
+
+<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+
+* **调用 — AEM工作流步骤**:文档描述XML(DDX)是一种声明性标记语言，其元素表示文档的构建块。 这些构建基块包括PDF和XDP文档，以及其他元素，如注释、书签和样式化文本。 DDX文档是文档的模板，描述了源文档在生成文档中应显示的所需特征。 单个DDX可与一系列源文档一起使用。 您可以使用调用步骤和AEM工作流执行各种操作，例如汇编反汇编文档、创建和修改Acrobat和XFA Forms，以及 [DDX参考](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 文档。
+
+* **转换为PDF/A - AEM工作流步骤**:PDF/A是用于长期保存文档内容的存档格式，所有字体都会被嵌入，并且文件未压缩。 现在，您可以使用AEM工作流的“转换为PDF/A”步骤，将任何格式的文档或文件转换为PDF/A格式。
+
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 新产品驾驶舱属性页面，以获得更好和简化的概述
+* 产品目录扩充现在支持AEM页面。 这样，作者就可以管理页面 — 产品关联。
 
-![产品驾驶舱属性概述](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* 改进了I/O运行时第三方连接器的兼容性和稳健性
-
-* 改进了对GQL客户端配置覆盖的支持（例如，设置自定义缓存行为）
-
-* 现在支持开箱即用的多个商务端点，并且可以通过Cloud Manager进行配置。 详情请见CIF博客 [此处](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* 各种CIF核心组件改进
 
 ### 错误修复 {#bug-fixes-cif}
 
-* 多值产品选取器字段将第2个和其他产品显示为无效
+* 将登录令牌添加到客户端价格获取
 
-* 有时，产品选取器会隐藏在组件后面
+* 数据层中的页面组件错误
 
-## 参考演示附加组件 {#cloud-services-demos}
-
-### 新增功能 {#what-is-new-demos}
-
-* 新的WKND内容与商务模板，通过E2E购物体验扩展WKND，其中包含产品目录、购物车、结账和myAccount。 此模板使用CIF及其CIF核心组件，因此您还需要安装CIF附加组件。 详情请见CIF博客 [此处](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
-![WKND商店](/help/assets/CIF/wknd_shop.png)
-
-![WKND PDP](/help/assets/CIF/wknd_pdp.png)
-
-## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 如5月版(2022.5.0)发行说明中所述，复制代理管理屏幕下的“添加树”选项 **分发** 选项卡。 而应使用以树层次结构表示的内容包进行复制 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 工作流。
+* 的 [存储库浏览器](/help/implementing/developing/tools/repository-browser.md) 现在有一个路径输入字段，以便直接跳转到存储库层次结构中的特定文件夹
+* Sling内容分发(SCD)现在支持显式“失效”操作，以便在不发布内容的情况下使内容失效。 请参阅 [AEMas a Cloud Service中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation) 页面以了解更多详细信息。
+* mod_macro现在在AEMas a Cloud Service中可用。 请参阅 [此表](/help/implementing/dispatcher/disp-overview.md) 以获取受支持Apache模块的列表。
+
+### AEMas a Cloud ServiceSDK Dispatcher工具增强功能 {#dispatcher-tools-enhancements}
+
+* Apache可以以 `update_sdk.sh` 脚本，该脚本将自动加载并验证对apache和dispatcher配置的任何后续更改，从而提高开发人员速度。 仅支持调度程序工具灵活模式。 另请参阅 [调试Apache和Dispatcher配置](/help/implementing/dispatcher/validation-debug.md#automatic-loading) 有关自动加载和验证的更多详细信息。
+* 本地Apache/Dispatcher配置将更密切地跟踪云环境中的更改，从而提高两个环境之间的对等性。
+
+### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
+
+* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -104,4 +118,4 @@ Experience Manager Assets现在使用Adobe Sensei AI功能 [区分图像中的�
 
 ## 迁移工具 {#migration-tools}
 
-您可以找到迁移工具版本的完整列表 [此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+您可以在[此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到迁移工具版本的完整列表。
