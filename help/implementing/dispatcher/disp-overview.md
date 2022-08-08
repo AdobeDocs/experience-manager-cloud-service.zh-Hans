@@ -3,10 +3,10 @@ title: 云中的 Dispatcher
 description: '云中的 Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
+source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '952'
+ht-degree: 6%
 
 ---
 
@@ -86,6 +86,8 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 | `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
+| `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+
 
 客户无法添加任意模块，但将来可能会考虑添加其他模块以包含在内。 客户可以通过在SDK中执行验证器的命令，找到适用于给定Dispatcher版允许列表本的指令列表。
 
