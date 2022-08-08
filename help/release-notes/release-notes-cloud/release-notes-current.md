@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
+source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 22%
+source-wordcount: '955'
+ht-degree: 21%
 
 ---
 
@@ -111,6 +111,11 @@ ht-degree: 22%
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
 
 * AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
+
+## Adobe学习管理器连接器 {#learn-manage}
+
+* 新的Adobe学习管理器具有到Adobe Experience Manager Sites、Marketo Engage和Adobe Commerce的连接器。 要了解更多信息，请参阅： [Adobe学习管理器用户指南](https://helpx.adobe.com/learning-manager/user-guide.html).
+
 
 ## Cloud Manager {#cloud-manager}
 
