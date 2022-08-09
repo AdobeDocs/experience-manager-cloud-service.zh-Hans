@@ -3,16 +3,16 @@ title: 预览内容
 description: 了解如何使用 AEM 预览服务在内容上线前进行预览。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # 预览内容 {#previewing-content}
 
-AEM 提供了 Sites 预览服务，可让开发人员和内容作者在网站发布并公开可用之前预览网站的最终体验。
+AEM 提供站点预览服务，让开发人员和内容作者可以在网站到达发布环境并公开使用之前预览网站的最终体验。
 
 它有助于预览在创作环境中不可见的页面体验，例如页面过渡和其他仅发布方内容。
 
