@@ -3,9 +3,9 @@ title: 已知问题
 description: Adobe Experience Manager as a Cloud Service 的已知问题
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 66%
 ## Platform {#platform}
 -->
 
-## 站点 {#sites}
+## Sites {#sites}
 
 [!DNL Sites] 中的一些已知问题包括：
 
-* 在GraphQL IDE中，您可以 [管理保留查询的缓存](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
-   * 在首次保存时，为标题保存的值将设置为 `0` （而不是默认值） — 如果用户未在对话框中更改这些值。
+* 在 GraphQL IDE 中，您可以[管理保留查询的缓存](/help/headless/graphql-api/graphiql-ide.md##managing-cache)。
+   * 在首次保存时，为标题保存的值将设置为 `0` （而不是默认值） – 如果用户未在对话框中更改这些值。
    * 在后续保存时，值会正确保存。
    * 因此，用户必须保存两次标头。
 
@@ -36,7 +36,7 @@ ht-degree: 66%
 
 * **下载**：如果下载空文件夹，[!DNL Experience Manager] 会传达有关创建 ZIP 存档的成功消息，但并未创建该存档。
 
-* **元数据架构**：资产评级小部件曾导致 JSP 编译错误。已从元数据架构将其删除。<!-- CQ-4282865, CQ-4284633 -->
+* **元数据架构**：资产评级构件曾导致 JSP 编译错误。已从元数据架构将其删除。<!-- CQ-4282865, CQ-4284633 -->
 
 另请参阅[对  [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md) 的重要更改。
 
