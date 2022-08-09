@@ -3,9 +3,9 @@ title: '"[!DNL Adobe Experience Manager] as a Cloud Service 预发行版渠道"'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 预发行版渠道"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 84%
 
 ## 简介 {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)上的时间表，每月提供新功能。要熟悉计划于下个月推出的功能，客户可以订阅预发行版渠道。要访问该渠道，可通过在标准程序开发环境或任何沙盒程序环境中进行适当的配置。客户可以预览对 Sites 控制台的更改，以及针对任何新的预发行版 API 的生成代码的更改。
+[!DNL Adobe Experience Manager] as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)上的时间表，每月提供新功能。要熟悉计划于下个月推出的功能，客户可以订阅预发行版渠道。要访问该渠道，可通过在标准程序开发环境或任何沙盒程序环境中进行适当的配置。客户可以预览对站点控制台的更改，以及针对任何新的预发行版 API 的生成代码的更改。
 
 [每月发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中发布了给定月份的预发行版功能的列表。
 
@@ -29,9 +29,9 @@ ht-degree: 84%
 
 ### 云环境 {#cloud-environments}
 
-要更新云环境以使用预发行版本，请添加 [环境变量](../implementing/cloud-manager/environment-variables.md) 使用Cloud Manager中的环境配置UI:
+要更新云环境以使用预发行版本，请使用 Cloud Manager 中的环境配置 UI 添加新的[环境变量](../implementing/cloud-manager/environment-variables.md)：
 
-1. 导航到 **项目** > **环境** > **环境配置** 您希望更新。
+1. 导航到&#x200B;**“项目”**>**“环境”**>您希望更新的&#x200B;**“环境配置”**。
 1. 添加新 [环境变量](../implementing/cloud-manager/environment-variables.md):
 
    | 名称 | 值 | 已应用服务 | 类型 |
@@ -43,9 +43,9 @@ ht-degree: 84%
    ![新环境变量](assets/env-configuration-prerelease.png)
 
 
-**或者，** 您可以使用Cloud Manager API和CLI来更新环境变量：
+**或者，**&#x200B;您可以使用 Cloud Manager API 和 CLI 来更新环境变量：
 
-* 使用 [Cloud Manager API的环境变量端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)，请设置 **AEM_RELEASE_CHANNEL** 环境变量到值 **预发行**.
+* 使用 [Cloud Manager API 的环境变量端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)将 **AEM_RELEASE_CHANNEL** 环境变量设置为值 **prerelease**。
 
    ```
    PATCH /program/{programId}/environment/{environmentId}/variables
@@ -58,17 +58,16 @@ ht-degree: 84%
    ]
    ```
 
-* 也可以按照 [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
- 上的说明使用 Cloud Manager CLI
+* 也可以按照 [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 上的说明使用 Cloud Manager CLI
 
    ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
-如果您希望将环境恢复为常规（非预发行）渠道的行为，则可以删除该变量或将其重新设置为其他值。
+如果要让环境恢复到常规（非预发行版）渠道的表现，可以删除该变量或者将其设置为其他值。
 
 ### 本地 SDK {#local-sdk}
 
-通过让您的 maven 项目引用 Maven Central 中的预发行版 `API Jar`，可以在本地快速入门 SDK 的 Sites 控制台中查看新功能，并针对预发行版中的新 API 进行编码。您还可以通过在预发行版模式下启动常规快速入门 SDK，在本地计算机上查看这些预发行版功能：
+通过让您的 maven 项目引用 Maven Central 中的预发行版 `API Jar`，可以在本地快速入门 SDK 的站点控制台中查看新功能，并针对预发行版中的新 API 进行编码。您还可以通过在预发行版模式下启动常规快速入门 SDK，在本地计算机上查看这些预发行版功能：
 
 * 按照[访问 AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 中的说明执行操作，从软件分发门户下载 SDK 并进行安装。
 * 在启动快速入门 SDK 时，请包含参数 `-r prerelease`。
