@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1008'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -16,41 +16,41 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->GraphiQL包含在AEM的所有环境中（但只有在配置端点时才可访问/显示）。
+>GraphiQL 包含在 AEM 的所有环境中（但只有在配置端点时才可访问/显示）。
 >
->在以前的版本中，安装GraphiQL IDE时需要软件包。 如果您已安装此程序，则现在可以删除它。
+>在以前的版本中，安装 GraphiQL IDE 时需要软件包。 如果您已安装此软件，现可将其移除。
 
 >[!NOTE]
->在使用 GraphiQL IDE 之前，您必须在 [配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) 中 [配置您的端点](/help/headless/graphql-api/graphql-endpoint.md)。
+>在使用 GraphiQL IDE 之前，您必须在[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)中[配置您的端点](/help/headless/graphql-api/graphql-endpoint.md)。
 
 
 **GraphiQL** 工具允许您测试和调试 GraphQL 查询，方法是：
-* 选择适用于您要用于查询的 Sites 配置的&#x200B;**端点**
+* 选择适用于您要用于查询的站点配置的&#x200B;**端点**
 * 直接输入新查询
 * 创建并访问&#x200B;**[持久查询](/help/headless/graphql-api/persisted-queries.md)**
 * 运行查询以立即查看结果
 * 管理&#x200B;**查询变量**
 * 保存并管理&#x200B;**持久查询**
-* 发布或取消发布， **持久化查询** (例如，从 `dev-publish`)
+* 发布或取消发布&#x200B;**持久查询**（例如，到/从 `dev-publish`）
 * 请参阅之前查询的&#x200B;**历史记录**
 * 使用&#x200B;**文档资源管理器**&#x200B;访问文档；帮助您学习和理解可用的方法。
 
 您可以通过以下任一方式访问查询编辑器：
 
-* **工具** -> **常规** -> **GraphQL查询编辑器**
-* 直接；例如， `http://localhost:4502/aem/graphiql.html`
+* **工具** -> **常规** -> **GraphQL 查询编辑器**
+* 直接；例如，`http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL 接口](assets/cfm-graphiql-interface.png "GraphiQL 接口")
 
-您可以在系统上使用GraphiQL，以便客户端应用程序可以使用GET请求来请求查询，并发布查询。 然后，对于生产用途，您可以 [将查询移动到生产环境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初是移至生产作者环境，以供通过查询来验证新撰写的内容，最后移至生产发布环境，以供实时使用。
+您可以在系统上使用 GraphiQL，以便您的客户端应用程序可以使用 GET 请求来请求查询，并发布查询。 对于生产使用，您可以[将查询移动到生产环境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。 最初是移至生产作者环境，以供通过查询来验证新撰写的内容，最后移至生产发布环境，以供实时使用。
 
 ## 选择您的端点 {#selecting-endpoint}
 
-第一步，您需要选择您想用于查询的&#x200B;**[端点](/help/headless/graphql-api/graphql-endpoint.md)**。该端点适用于您要用于查询的 Sites 配置。
+第一步，您需要选择您想用于查询的&#x200B;**[端点](/help/headless/graphql-api/graphql-endpoint.md)**。该端点适用于您要用于查询的站点配置。
 
 这可以从右上角的下拉列表中获得。
 
-## 创建并持久化新查询 {#creating-new-query}
+## 创建并持久新查询 {#creating-new-query}
 
 您可以在编辑器中输入新查询，该编辑器位于左中面板的 GraphiQL 徽标正下方。
 
@@ -83,7 +83,7 @@ ht-degree: 66%
 
 在两种情况下，编辑器面板中显示的查询都是在以下情况下执行的查询：
 
-* 点击/敲击&#x200B;**“执行查询”**&#x200B;图标
+* 点击/点按&#x200B;**“执行查询”**&#x200B;图标
 * 使用键盘组合`Control-Enter`
 
 ## 查询变量 {#query-variables}
@@ -98,34 +98,34 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 ## 管理保留查询的缓存 {#managing-cache}
 
-[持久化查询](/help/headless/graphql-api/persisted-queries.md) 建议在调度程序和CDN层缓存，因此最终可以提高请求客户端应用程序的性能。 默认情况下， AEM将根据默认生存时间(TTL)使内容交付网络(CDN)缓存失效。
+建议使用[持久查询](/help/headless/graphql-api/persisted-queries.md)，因为它们可以缓存在 Dispatcher 和 CDN 层，最终提高请求客户端应用程序的性能。默认情况下，AEM 将根据默认生存时间 (TTL) 使内容投放网络 (CDN) 缓存失效。
 
-使用GraphQL，您可以配置HTTP缓存标头，以控制单个持久查询的这些参数。
+使用 GraphQL，您可以配置 HTTP 缓存标头，以控制单个持久查询的这些参数。
 
-1. 的 **标题** 选项可通过保留查询名称右侧的三个垂直圆点（最左侧的面板）访问：
+1. **标头**&#x200B;选项可通过持久查询名称右侧的三个垂直点访问（最左侧面板）：
 
-   ![持久化查询HTTP缓存标头](assets/cfm-graphqlapi-headers-01.png "持久化查询HTTP缓存标头")
+   ![持久查询 HTTP 缓存标头](assets/cfm-graphqlapi-headers-01.png "持久查询 HTTP 缓存标头")
 
-1. 选择此选项将打开 **缓存配置** 对话框：
+1. 选择此选项将打开&#x200B;**缓存配置**&#x200B;对话框：
 
-   ![持久查询HTTP缓存标头设置](assets/cfm-graphqlapi-headers-02.png "持久查询HTTP缓存标头设置")
+   ![持久查询 HTTP 缓存标头设置](assets/cfm-graphqlapi-headers-02.png "持久查询 HTTP 缓存标头设置")
 
 1. 选择相应的参数，然后根据需要调整值：
 
-   * **缓存控制** - **最大年龄**
-缓存可以将此内容存储指定的秒数。 通常为浏览器TTL（生存时间）。
-   * **代理控制** - **s-maxage**
-与max-age相同，但特别适用于代理缓存。
-   * **代理控制** - **stale-while-revalidate**
-缓存在失效后可继续提供缓存响应，最长为指定秒数。
-   * **代理控制** - **stale-if-error**
-在出现或原点错误时，高速缓存可以在指定秒数内继续提供缓存响应。
+   * **cache-control** – **max-age**
+缓存可以将此内容存储指定的秒数。 通常为浏览器 TTL（生存时间）。
+   * **surrogate-control** – **s-maxage**
+与 max-age 相同，但特别适用于代理缓存。
+   * **surrogate-control** – **stale-while-revalidate**
+缓存可能会在缓存响应过期后继续为其提供服务，最长可达指定的秒数。
+   * **surrogate-control** – **stale-if-error**
+在发生源错误的情况下，缓存可以继续为缓存响应提供服务，最长可达指定的秒数。
 
-1. 选择 **保存** 来保留更改。
+1. 选择&#x200B;**保存**&#x200B;来保留更改。
 
-## 发布保留查询 {#publishing-persisted-queries}
+## 正在发布持久查询 {#publishing-persisted-queries}
 
-一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;和&#x200B;**取消发布**&#x200B;操作。这会将它们激活到发布环境(例如， `dev-publish`)，以便应用程序在测试时轻松访问。
+一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;和&#x200B;**取消发布**&#x200B;操作。 这会将它们激活到您的发布环境（例如，`dev-publish`），以便您的应用程序在测试时轻松访问。
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 通过在浏览器中使用此 URL，可以确认结果：
 
-![GraphiQL - 复制 URL ](assets/cfm-graphiql-copy-url.png "GraphiQL - 复制 URL")
+![GraphiQL – 复制 URL ](assets/cfm-graphiql-copy-url.png "GraphiQL – 复制 URL")
 
 **“复制 URL”**&#x200B;选项可通过持久查询名称右侧的三个垂直点访问（最左侧面板）：
 
-![GraphiQL - 复制 URL ](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - 复制 URL")
+![GraphiQL – 复制 URL ](assets/cfm-graphiql-persisted-query-options.png "GraphiQL – 复制 URL")
 
 ## 正在删除持久查询 {#deleting-persisted-queries}
 
