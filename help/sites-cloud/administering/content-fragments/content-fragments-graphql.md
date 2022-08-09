@@ -2,10 +2,10 @@
 title: 使用带有 GraphQL 的内容片段的 Headless 内容投放
 description: 了解使用 GraphQL 中的内容片段实现 AEM Headless CMS 以进行 headless 内容投放的基本概念。
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '751'
-ht-degree: 100%
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -34,11 +34,7 @@ ht-degree: 100%
 
 ## Headless CMS {#headless-cms}
 
-Headless 内容管理系统 (CMS) 包括：
-
-* “*Headless 内容管理系统（或 headless CMS）是从头开始构建的仅后端内容管理系统 (CMS)，它是一个内容存储库，通过 API 访问内容以在任何设备上显示。*
-
-   请参阅[维基百科](https://en.wikipedia.org/wiki/Headless_content_management_system)。
+无头内容管理系统(CMS)是仅限后端的内容管理系统，专门设计和构建为内容存储库，通过API访问内容以在任何设备上显示。
 
 在 AEM 中创作内容片段时，这意味着：
 
