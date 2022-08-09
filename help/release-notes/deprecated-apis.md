@@ -3,9 +3,9 @@ title: 已弃用 API
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的 API 的发行说明。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1051'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 <table style="table-layout:auto">
   <tr>
     <th>包/类</th>
-    <th>批注</th>
+    <th>评论</th>
     <th>弃用日期</th>
     <th>目标删除日期</th>
   </tr>
@@ -34,13 +34,13 @@ ht-degree: 95%
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
-    <td>2015年</td>
+    <td>2015</td>
     <td>7/30/21</td>
   </tr>
   <tr>
     <td>com.day.cq.jcrclustersupport</td>
     <td>使用 Sling 的 Discovery API 作为替代方案</td>
-    <td>2015年</td>
+    <td>2015</td>
     <td>已删除</td>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ ht-degree: 95%
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1已于2015年终止生命周期，不再受支持。</td>
+    <td>Apache Log4j 1 已于 2015 年终止生命周期，不再受支持。</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
@@ -194,7 +194,7 @@ ht-degree: 95%
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>由于安全漏洞，需要从4.0.5升级到4.3.0。 此包不再存在于升级的车把中。</td>
+    <td>由于安全漏洞，需要从 4.0.5 升级到 4.3.0。 此包不再存在于升级的 handlebar 中。</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
   </tr>
