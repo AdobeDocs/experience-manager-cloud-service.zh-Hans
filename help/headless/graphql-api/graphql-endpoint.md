@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中针�
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,20 +22,20 @@ AEM 中有两种类型的端点：
 
 * 全局
    * 可供所有站点使用。
-   * 此端点可以使用所有 Sites 配置的所有内容片段模型（在[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定义）。
-   * 如果有任何应该在 Sites 配置中共享的内容片段模型，则这些内容应该在全局 Sites 配置下创建。
+   * 此端点可以使用所有站点配置的所有内容片段模型（在[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定义）。
+   * 如果有任何应该在站点配置中共享的内容片段模型，则这些内容应该在全局站点配置下创建。
 * Sites 配置：
-   * 对应于 Sites 配置，如[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中的定义。
+   * 对应于站点配置，如[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中的定义。
    * 特定于指定站点/项目。
-   * Sites 配置特定的端点将来自特定 Sites 配置与来自全局 Sites 配置的内容片段模型结合使用。
+   * Sites 配置特定的端点将来自特定站点配置与来自全局站点配置的内容片段模型结合使用。
 
 >[!CAUTION]
 >
->内容片段编辑器可以允许一个 Sites 配置的内容片段引用另一个 Sites 配置（通过策略）的内容片段。
+>内容片段编辑器可以允许一个站点配置的内容片段引用另一个站点配置（通过策略）的内容片段。
 >
->在这种情况下，所有内容将可使用 Sites 配置特定的端点检索。
+>在这种情况下，所有内容将可使用站点配置特定的端点检索。
 >
->内容作者应控制这种情境；例如，在考虑将共享内容片段模型放在全局 Sites 配置下时，它会很有用。
+>内容作者应控制这种情境；例如，在考虑将共享内容片段模型放在全局站点配置下时，它会很有用。
 
 AEM 全局端点的 GraphQL 的存储库路径为：
 
@@ -52,15 +52,15 @@ AEM 全局端点的 GraphQL 的存储库路径为：
 
 ## 启用 GraphQL 端点 {#enabling-graphql-endpoint}
 
-要启用 GraphQL 端点，您首先需要具有合适的配置。请参阅[内容片段 - 配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)。
+要启用 GraphQL 端点，您首先需要具有合适的配置。请参阅[内容片段 – 配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)。
 
 >[!CAUTION]
 >
->如果[未启用内容片段模型的使用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
+>如果[未启用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项将不可用。
 
 要启用对应的端点，请执行以下操作：
 
-1. 导航到 **工具**, **常规**，然后选择 **GraphQL**.
+1. 导航到&#x200B;**工具**、**通用**，然后选择 **GraphQL**。
 1. 选择&#x200B;**创建**。
 1. 此时将打开&#x200B;**创建新 GraphQL 端点**&#x200B;对话框。在其中可以指定：
    * **名称**：端点的名称，您可以输入任意文本。
@@ -74,7 +74,7 @@ AEM 全局端点的 GraphQL 的存储库路径为：
 
 
 1. 选择&#x200B;**创建**&#x200B;来确认。
-1. **后续步骤**&#x200B;对话框将提供直接指向安全控制台的链接，这样您可以确保新创建的端点具有合适的权限。
+1. **后续步骤**&#x200B;对话框将提供直接指向安全性控制台的链接，这样您可以确保新创建的端点具有合适的权限。
 
    >[!CAUTION]
    >
