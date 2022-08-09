@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
+source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 21%
@@ -39,7 +39,7 @@ ht-degree: 21%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 的 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 现在支持键盘快捷键。
+* 的 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 现在支持 [键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 * AEM asCloud Service [优化了Web图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 允许通过提供WebP等格式显着提高页面速度。 这项新服务还提供了更灵活的图像大小调整和转换选项。 的所有版本 [核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允许利用此服务，并通过单击图像组件策略中的选项以WebP形式交付图像。
 
