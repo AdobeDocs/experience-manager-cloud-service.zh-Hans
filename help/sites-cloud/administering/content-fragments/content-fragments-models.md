@@ -18,7 +18,7 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
 1. [为您的实例启用内容片段模型功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. [创建](#creating-a-content-fragment-model)和[配置](#defining-your-content-fragment-model)，内容片段模型
 1. [启用您的内容片段模型](#enabling-disabling-a-content-fragment-model)，以便在创建内容片段时使用
-1. [](#allowing-content-fragment-models-assets-folder)通过配置&#x200B;**策略**，允许在所需的 Assets 文件夹上创建内容片段模型。
+1. [&#128279;](#allowing-content-fragment-models-assets-folder)通过配置&#x200B;**策略**，允许在所需的 Assets 文件夹上创建内容片段模型。
 
 ## 创建内容片段模型 {#creating-a-content-fragment-model}
 
@@ -76,6 +76,7 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
          >当为数据类型手动更新某个&#x200B;**属性名称**&#x200B;时，请注意，名称必须仅包含 A – Z、a – z、0 – 9 和下划线“_”作为特殊字符。
          >
          >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
+
       例如：
 
       ![字段属性](assets/cfm-models-05.png)
@@ -228,10 +229,10 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
 >AEM 具有以下重复保护：
 >
 >* 内容引用
-   >  这会阻止用户添加对当前片段的引用。这可能导致出现空的片段引用选取器对话框。
+>  这会阻止用户添加对当前片段的引用。这可能导致出现空的片段引用选取器对话框。
 >
 >* GraphQL 中的片段引用
-   >  如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时将返回空值。
+>  如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时将返回空值。
 
 
 ### 内容引用 {#content-reference}
