@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
-source-git-commit: 5d0f6fb726527434c57dc058bcf3a7b9d512b551
-workflow-type: tm+mt
+exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
+source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本 (2022.3.0) 的发布日期为 2022 年 3 月 31 日。下一版本(2022.4.0)计划于2022年5月5日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本 (2022.3.0) 的发布日期为 2022 年 3 月 31 日。下一个版本 (2022.4.0) 计划于 2022 年 5 月 5 日发布。
 
 ## 发布视频 {#release-video}
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 
 ### [!DNL Sites] 预发行渠道中提供的新功能 {#prerelease-features-sites}
 
-* 现在，可以使用内容模型编辑器中的简单复选框将内容模型数据类型定义为可翻译。 此外，AEM翻译规则和配置会自动更新。
+* 现在，可以使用内容模型编辑器中的简单复选框将内容模型数据类型定义为可翻译。 此外，AEM 翻译规则和配置会自动更新。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -53,7 +53,7 @@ ht-degree: 93%
 
 ### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
 
-* 您现在可以 [排序标记](/help/assets/organize-assets.md#use-tags-to-organize-assets) 根据标记名称、创建日期或修改日期，在标记选取器窗口中以升序或降序显示。
+* 现在，您可以根据标记名称、创建日期或修改日期，在标记选择器窗口中按升序或降序[对标记进行排序](/help/assets/organize-assets.md#use-tags-to-organize-assets)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -65,7 +65,7 @@ ht-degree: 93%
    * 拆分 PDF 文档。
    * 转化为符合 PDF/A 标准的文档并进行验证。
 
-* **自动将超过 15 页的 PDF Forms 转化为自适应表单**：您现在可以使用自动表单转化服务将最多 40 页的 PDF Forms 转化为自适应表单。该服务现在提供了将超过 15 页的表单部分转换为自适应表单片段的选项。它有助于提高转换表单的渲染速度，并使在自适应表单编辑器中加载大型表单变得更容易。
+* **自动将超过 15 页的 PDF Forms 转化为自适应表单**：您现在可以使用自动表单转化服务将最多 40 页的 PDF Forms 转化为自适应表单。该服务现在提供了将超过 15 页的表单部分转换为自适应表单片段的选项。它有助于提高转换表单的呈现速度，并使在自适应表单编辑器中加载大型表单变得更容易。
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
@@ -82,9 +82,9 @@ ht-degree: 93%
 * 通过使用 CIF 云配置名称而非配置代理 URL，简化了 CIF 配置管理和错误处理
 * 产品列表和轮盘组件的手动类别选择。这允许内容从业者在目录体验之外的内容页面上使用这些组件
 
-### CIF预发行渠道中的新增功能 {#prerelease-features-cif}
+### CIF 预发布渠道中提供的新功能 {#prerelease-features-cif}
 
-* AEM CIF搜索核心组件支持商务LiveSearch
+* AEM CIF 搜索核心组件支持 Commerce Live Search
 
 ## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
 
@@ -104,15 +104,15 @@ ht-degree: 93%
 
 您可以在[此处](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)找到 Cloud Manager 每月发布的完整列表。
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具版本 1.9.0 的发布日期为 2022 年 2 月 28 日。
+内容转移工具版本 1.9.0 的发布日期为 2022 年 2 月 28 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查“大小护栏” - 内容传输工具检查大小功能有助于减少失败的内容传输。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容传输失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
+* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
 
 ## Best Practices Analyzer {#bpa-release}
 
