@@ -3,9 +3,9 @@ title: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie
 description: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 85%
 
 >[!CAUTION]
 >
->的 `SameSite=None` 仅当协议安全(HTTPS)时才应用设置。
+>`SameSite=None` 设置仅在协议安全 (HTTPS) 时应用。
 >
->如果协议不安全(HTTP)，则将忽略该设置，服务器将显示以下WARN消息：
+>如果协议不安全 (HTTP)，则将忽略该设置，服务器将显示以下警告消息：
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
