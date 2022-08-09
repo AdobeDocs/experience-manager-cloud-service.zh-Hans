@@ -1,11 +1,11 @@
 ---
-title: 不同功能与新增功能 - Adobe Experience Manager as a Cloud Service
-description: 不同功能与新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
+title: 不同功能与新增功能 – Adobe Experience Manager as a Cloud Service
+description: 不同功能与新增功能 – Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1904'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ AEM as a Cloud Service 现在具有：
 >[!NOTE]
 >有关详细信息，请参阅 [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)。
 
-AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产实例和暂存实例均会更新到最新 AEM 版本而无需中断用户的服务。
+AEM as a Cloud Service 现在使用连续集成和连续投放 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产实例和暂存实例均会更新到最新 AEM 版本而无需中断用户的服务。
 
 >[!NOTE]
 > 如果对生产环境的更新失败，Cloud Manager 将自动回滚到暂存环境。此操作自动完成，以确保在更新完成后，暂存环境和生产环境均采用同一个 AEM 版本。
@@ -92,7 +92,7 @@ AEM 版本更新分为两种类型：
 
 Adobe Cloud Manager 是 AEM as a Cloud Service 连续升级方法的组成部分，它控制对实例的所有更新，这一点是必需的。
 
-在有新版本的云服务可用时，Adobe 会触发更新。此外，您可以使用 Cloud Manager 提供的管道触发应用程序更新。
+在有新版本的 Cloud Service 可用时，Adobe 会触发更新。此外，您可以使用 Cloud Manager 提供的管道触发应用程序更新。
 
 Cloud Manager：
 
@@ -104,7 +104,7 @@ Cloud Manager：
 
 具体来说，可从 Cloud Manager 创建的 AEM 程序的数量和类型派生自：
 
-* 客户许可协议，
+* 客户授予许可协议，
 
 * 内部驱动的操作者（当 AEM as a Cloud Service 用于能力培养或培训时），
 
@@ -120,7 +120,7 @@ Cloud Manager 已经演变成为自助服务门户，在其中可以创建和配
 
 * 获得有关这些组件的重要生命周期事件（例如，产品更新）的通知。
 
-Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆盖。CDN Points of Presence (PoP) 确保为全球各地的客户提供低延迟的内容交付。
+Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆盖。CDN Points of Presence (PoP) 确保为全球各地的客户提供低延迟的内容投放。
 
 
 ## 入门 {#onboarding}
@@ -155,9 +155,9 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->有关详细信息，您可通过[开发指南](/help/implementing/developing/introduction/development-guidelines.md)和[部署 - WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)来开始了解。
+>有关详细信息，您可通过[开发指南](/help/implementing/developing/introduction/development-guidelines.md)和[部署 – WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)来开始了解。
 
-支持 AEM as a Cloud Service 的新架构涉及到对整体开发人员体验的一些关键改变。AEM as a Cloud Service 的主要目标之一是允许经验丰富的客户（曾在内部部署或者在 Adobe 托管服务环境中使用 AEM）尽可能快地迁移到 AEM as a Cloud Service，而无需重新编写大量的自定义代码。不过，可能仍然需要进行一些调整。
+支持 AEM as a Cloud Service 的新架构涉及到对整体开发人员体验的一些关键改变。AEM as a Cloud Service 的主要目标之一是允许经验丰富的客户（曾在内部部署或者在 Adobe Managed Service 环境中使用 AEM）尽可能快地迁移到 AEM as a Cloud Service，而无需重新编写大量的自定义代码。不过，可能仍然需要进行一些调整。
 
 ### 云开发 {#aem-as-a-cloud-service-developing-cloud-development}
 
@@ -171,7 +171,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 此流程通常称为云优先的开发。由于端到端持续时间预计需要很多分钟（根据应用程序的复杂性，可能需要 20 到 50 分钟），在云中尝试挂起的代码和配置更改之前，务必要采用快速开发方法。
 
-在Web控制台中，管理OSGi包及其关联配置(以前是AEM快速入门的一部分)不再在AEMas a Cloud Service中可用。 新的开发人员控制台为大多数运行时信息提供了一个只读界面。 通过此控制台，开发人员可以选择并直接登录创作或发布服务的任何特定节点，并查看相关信息。
+用于管理 OSGI 捆绑包及其关联配置的 Web 控制台（以前是 AEM 快速入门的一部分）在 AEM as a Cloud Service 中不再可用。新的开发人员控制台为大多数运行时信息提供了一个只读界面。 通过这个控制台，开发者可以直接选择并登录作者或发布服务的任何特定节点，并查看相关信息。
 
 >[!NOTE]
 >
@@ -199,7 +199,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->需要注意的是，并非所有 AEM Sites 和 AEM Assets 功能均允许云 QuickStart。它包括一个简单的创作环境，可以开发和测试大多数扩展功能。
+>需要注意的是，并非所有AEM Sites 和 AEM Assets 功能均允许云 QuickStart。它包括一个简单的创作环境，可以开发和测试大多数扩展功能。
 
 ## 操作和性能 {#operations-and-performance}
 
@@ -219,15 +219,15 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 新的监控、报告和警报基础设施也支持 AEM as a Cloud Service 的操作。这使得 Adobe SRE（网站可靠性工程师）可以主动确保服务正常运行。架构中的不同元素都配备了各种运行状况检查。如果由于某种原因将架构的某个具体节点视为不健康，则会将其从服务中移出，并使用新的健康节点静默替换。
 
-## 身份管理 {#identity-management}
+## Identity Management {#identity-management}
 
 >[!NOTE]
 >
->有关详细信息，请参阅[安全性 - IMS 支持](/help/security/ims-support.md)。
+>有关详细信息，请参阅[安全性 – IMS 支持](/help/security/ims-support.md)。
 
 对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。
 
-这需要使用 [Adobe Admin console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 来管理用户和用户组。用户可以利用用户帐户来访问 Adobe 产品和服务，因为用户配置文件信息集中存储在 Adobe Identity Management System (IMS) 中，可供所有云服务共享。分配了对 AEM 的访问权限之后，可以在 AEM as a Cloud Service 中引用用户帐户（与以前一样）；例如，用于从 AEM Security 用户界面定义角色和权限。
+这需要使用 [Adobe Admin console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 来管理用户和用户组。用户可以利用用户帐户来访问 Adobe 产品和服务，因为用户配置文件信息集中存储在 Adobe Identity Management System (IMS) 中，可供所有 Cloud Service 共享。分配了对 AEM 的访问权限之后，可以在 AEM as a Cloud Service 中引用用户帐户（与以前一样）；例如，用于从 AEM Security 用户界面定义角色和权限。
 
 这集合了下列好处：
 
@@ -241,19 +241,19 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 >
 >如需了解详细信息，[基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)是一个很好的起点。
 
-对于 Sites 和 Assets，以前使用过 AEM 的任何用户都会非常熟悉创作用户界面 (UI) 的基本原则。
+对于站点和 Assets，以前使用过 AEM 的任何用户都会非常熟悉创作用户界面 (UI) 的基本原则。
 
 主要差别在于 UI 完全支持触摸；经典 UI 不再可用。除此之外，基本的东西保持不变，只有一些明显的小变化。
 
 ## AEM Sites {#aem-sites}
 
-Adobe Experience Manager Sites as a Cloud Service 使您可以将 AEM Content Management System 与 AEM Digital Asset Management 的强大功能结合起来，向客户提供以内容引导的个性化体验。
+Adobe Experience Manager Sites as a Cloud Service 使您可以将 AEM Content Management System 与 AEM 数字资产管理的强大功能结合起来，向客户提供以内容引导的个性化体验。
 
-有关详细信息，请参阅[对 Sites 的更改](/help/sites-cloud/sites-cloud-changes.md)概述。
+有关详细信息，请参阅[对站点的更改](/help/sites-cloud/sites-cloud-changes.md)概述。
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service 为企业提供了云原生的 PaaS 解决方案，不仅可用于快速执行其数字资源管理和动态媒体运营来实现影响力，而且还可在始终最新、始终可用和不断学习的系统中使用新一代智能功能，例如 AI/ML。
+Adobe Experience Manager Assets as a Cloud Service 为企业提供了云原生的 PaaS 解决方案，不仅可用于快速执行其数字资源管理和 Dynamic Media 运营来实现影响力，而且还可在始终最新、始终可用和不断学习的系统中使用新一代智能功能，例如 AI/ML。
 
 Assets 产品包括云中的新一代资源处理以及高性能资源引入和搜索。
 
