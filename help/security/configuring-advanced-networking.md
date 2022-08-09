@@ -3,9 +3,9 @@ title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3006'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 93%
 
 AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cloud Manager API 配置这些功能。这些功能包括：
 
-* [灵活端口出口](#flexible-port-egress) - 将 AEM as a Cloud Service 配置为允许从非标准端口传出流量
-* [专用出口 IP 地址](#dedicated-egress-IP-address) - 配置从唯一 IP 传出 AEM as a Cloud Service 的流量
-* [虚拟专用网络 (VPN)](#vpn) - 面向采用 VPN 技术的客户，保护客户的基础设施与 AEM as a Cloud Service 之间的流量
+* [灵活端口出口](#flexible-port-egress) – 将 AEM as a Cloud Service 配置为允许从非标准端口传出流量
+* [专用出口 IP 地址](#dedicated-egress-IP-address) – 配置从唯一 IP 传出 AEM as a Cloud Service 的流量
+* [虚拟专用网络 (VPN)](#vpn) – 面向采用 VPN 技术的客户，保护客户的基础设施与 AEM as a Cloud Service 之间的流量
 
 此文章详细介绍了上述各个选项，包括如何对它们进行配置。作为常规配置策略，在程序级别调用 `/networkInfrastructures` API 端点，以声明所需的高级联网类型，接着调用每个环境的 `/advancedNetworking` 端点，以启用基础设施并配置特定于环境的参数。要了解每个正式语法以及请求和响应示例，请参考 Cloud Manager API 文档中的相应端点。
 
@@ -72,7 +72,7 @@ API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后
 
 要&#x200B;**禁用**&#x200B;特定环境的灵活端口出口，请调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
-有关API的更多信息，请参阅 [Cloud Manager API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+有关 API 的详细信息，请参阅 [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
@@ -201,15 +201,15 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 在灵活端口出口和专用出口 IP 地址之间进行选择时，如果无需特定 IP 地址，客户应选择灵活端口出口，因为 Adobe 可以优化灵活端口出口流量的性能。
 
-### 禁用专用出口IP地址 {#disabling-dedicated-egress-IP-address}
+### 禁用专用出口 IP 地址 {#disabling-dedicated-egress-IP-address}
 
-为了 **禁用** 从特定环境调用专用出口IP地址 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+为了&#x200B;**禁用**&#x200B;来自特定环境的专用出口 IP 地址，调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
-有关API的更多信息，请参阅 [Cloud Manager API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+有关 API 的详细信息，请参阅 [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
 ### 流量路由 {#dedcated-egress-ip-traffic-routing}
 
-Http或https流量将通过预配置的代理，前提是它们使用标准Java系统属性进行代理配置。
+Http 或 https 流量将通过预配置的代理，前提是它们使用标准 Java 系统属性进行代理配置。
 
 如果非 http/https 流量流经 `portForwards` 参数中声明的端口，应该引用名为 `AEM_PROXY_HOST` 的属性以及映射的端口。例如：
 
@@ -352,7 +352,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 创建 {#vpn-creation}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，传入配置信息的负载，包括：`kind` 参数的“VPN”值、区域、地址空间（CIDR 列表，请注意此项以后不可修改）、DNS 解析器（用于解析客户网络中的名称）以及 VPN 连接信息（例如网关配置、共享 VPN 密钥以及 IP 安全策略）。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。要查看完整的参数集和确切的语法，可参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，传入配置信息的负载，包括：`kind` 参数的“VPN”值、区域、地址空间（CIDR 列表，请注意此项以后不可修改）、DNS 解析器（用于解析客户网络中的名称）以及 VPN 连接信息（例如网关配置、共享 VPN 密钥以及 IP 安全性策略）。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。要查看完整的参数集和确切的语法，可参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)。
 
 在调用后，通常需要 45 到 60 分钟来预配联网基础设施。可以调用 API 的 GET 方法以返回当前状态，这最终会从 `creating` 翻转到 `ready`。请参考 API 文档来了解所有状态。
 
@@ -374,7 +374,7 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
 
 每个环境的路由规则同样可以通过调用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端点进行更新，确保包括完整的配置参数集而不是其子集。环境更新的应用通常需要 5 到 10 分钟。
 
-### 禁用VPN {#disabling-the-vpn}
+### 禁用 VPN {#disabling-the-vpn}
 
 要禁用特定环境的 VPN，请调用 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`。有关详细信息，请参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
@@ -467,7 +467,7 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
 </tbody>
 </table>
 
-### 在配置时非常有用的域{#vpn-useful-domains-for-configuration}
+### 对配置非常有用的域{#vpn-useful-domains-for-configuration}
 
 下图直观地展示了在配置和开发时非常有用的一组域和关联 IP。该图下方的表进一步说明了这些域和 IP。
 
@@ -495,7 +495,7 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>流量从 AEM 端的 VPN 流向客户端时使用的 IP。这可以列入客户配置的允许列表中，以确保只接受来自 AEM 的连接。</td>
-    <td>如果客户希望允许VPN访问AEM，则应配置CNAME DNS条目以映射其自定义域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 到这个。</td>
+    <td>如果客户希望允许通过 VPN 访问 AEM，他们应该配置 CNAME DNS 条目以将其自定义域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 映射到此项。</td>
   </tr>
 </tbody>
 </table>
@@ -515,13 +515,13 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
-## 删除计划的网络基础结构 {#deleting-network-infrastructure}
+## 删除项目的网络基础架构 {#deleting-network-infrastructure}
 
-至 **删除** 程序的网络基础结构，调用 `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+要&#x200B;**删除**&#x200B;项目的网络基础架构，请调用 `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`。
 
 >[!NOTE]
 >
-> 只有在所有环境都禁用其高级网络的情况下，删除才会删除基础结构。
+> 只有在所有环境都禁用其高级网络的情况下，删除操作才会删除基础架构。
 
 ## 高级联网类型之间的转换 {#transitioning-between-advanced-networking-types}
 
@@ -529,11 +529,11 @@ Header always set Cache-Control private
 
 * 在所有环境中禁用高级网络
 * 删除高级网络基础架构
-* 使用正确的值重新创建高级网络信息
+* 使用正确的值重新创建高级网络基础架构
 * 启用环境级别高级网络
 
 >[!WARNING]
 >
-> 此过程将导致在删除和恢复之间停用高级网络服务
+> 此过程将导致在删除和重新创建之间停用高级网络服务
 
 如果停机会对业务产生重大影响，请联系客户支持以寻求帮助，并说明已创建的内容和更改的原因。
