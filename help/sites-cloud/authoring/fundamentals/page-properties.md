@@ -3,9 +3,9 @@ title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1987'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 * **标题和标记**
 
-   * **标题** – 页面的标题可显示在各种不同的位置。例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
+   * **标题** – 页面的标题可显示在各种不同的位置。例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;信息卡/列表视图。
       * 这是必填字段。
    * **标记** – 在此，可以通过更新选择框中的列表在页面中添加或删除标记。
       * 选择标记后，它会列在选择框下。您可以使用“x”从此列表中删除标记。
@@ -35,7 +35,7 @@ ht-degree: 98%
 
 * **品牌化**
 
-   通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌标识。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+   通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
 
    * **覆盖** – 选中可在此页面上定义品牌概要。
       * 该值将由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
@@ -98,8 +98,8 @@ ht-degree: 98%
 
    * **语言** – 页面语言
    * **语言根** – 如果页面是语言副本的根，则必须选中
-   * **重定向** – 指示此页面应自动重定向到的页面 HTML `302 Found` 状态。
-      * **永久重定向**  — 选中此选项后，页面将重定向到随HTML一起提供的目标路径 `301 Moved Permanently` 状态。
+   * **重定向** – 指示此页面应自动重定向到的页面HTML `302 Found` 状态。
+      * **永久重定向** – 选中后，页面将重定向到与 HTML `301 Moved Permanently` 状态一起提供的目标路径。
    * **设计** – 指示在生成的站点的页面导航中是显示还是隐藏页面
    * **别名** – 指定要用于此页面的别名
       * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
@@ -152,9 +152,9 @@ ht-degree: 98%
    * **首选体验片段变量**
       * 定义用于为页面生成元数据的体验片段变量
 
-### 云服务 {#cloud-services}
+### Cloud Service {#cloud-services}
 
-* **Cloud Service 配置** – 定义云服务的属性
+* **Cloud Service 配置** – 定义 Cloud Service 的属性
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -201,7 +201,7 @@ ht-degree: 98%
 * **暂停** – 暂停 Live Copy 以防止进一步的转出修改
 * **分离** – 从 Blueprint 分离出 Live Copy
 
-* **源**
+* **来源**
 
    * 显示此 Live Copy 的 Blueprint 的路径
 
@@ -241,7 +241,7 @@ ht-degree: 98%
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * 此时将使用相应的选项卡显示页面属性。
 1. 查看或编辑所需的属性。
-1. 然后，使用&#x200B;**保存**&#x200B;以保存您的更新，接着使用&#x200B;**关闭**&#x200B;以返回到控制台。
+1. 然后，使用&#x200B;**保存**&#x200B;来保存您的更新，接着使用&#x200B;**关闭**&#x200B;返回到控制台。
 
 ### 编辑页面时 {#when-editing-a-page}
 
@@ -249,14 +249,14 @@ ht-degree: 98%
 
 1. 打开要编辑属性的页面。
 1. 选择&#x200B;**页面信息**&#x200B;图标以打开选择菜单：
-1. 选择&#x200B;**打开属性**，此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。工具栏右侧还提供以下按钮：
+1. 选择&#x200B;**“打开属性”**，此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。 工具栏右侧还提供以下按钮：
    * **取消**
    * **保存并关闭**
 1. 使用&#x200B;**保存并关闭**&#x200B;按钮以保存更改。
 
 ### 从“站点”控制台中 – 多个页面 {#from-the-sites-console-multiple-pages}
 
-从“站 **点** ”控制台中，您可以选择多个页面，然后使用&#x200B;**查看属性** ，以查看和／或编辑页面属性。 这称为批量编辑页面属性。
+从&#x200B;**“站点”**&#x200B;控制台中，您可以选择多个页面，然后使用&#x200B;**查看属性**，查看和／或编辑页面属性。 这称为批量编辑页面属性。
 
 >[!NOTE]
 >
