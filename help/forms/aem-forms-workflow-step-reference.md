@@ -3,9 +3,9 @@ title: '如何向其他用户分配工作流、发送电子邮件、在工作流
 description: 以Forms为中心的工作流允许您快速构建基于Forms的自适应工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将其发送到多个数据源，以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
+source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6132'
 ht-degree: 1%
 
 ---
@@ -169,9 +169,9 @@ PDF/A是一种存档格式，用于通过嵌入字体和解压缩文件来长期
 **[!UICONTROL 输入文档]**:输入文档可以相对于有效负载，具有绝对路径，可以作为有效负载提供或存储在Document数据类型的变量中。
 
 **[!UICONTROL 转化选项]**:使用此属性可指定将PDF文档转换为PDF/A文档的设置。 此选项卡下提供的各种选项包括：
-* **[!UICONTROL 合规性]**:指定输出PDF/文档必须符合的标准。
+* **[!UICONTROL 合规性]**:指定输出PDF/文档必须符合的标准。 它支持不同的PDF标准，如PDF/A-1b、PDF/A-2b或PDF/A-3b。
 * **[!UICONTROL 结果级别]**:将转换输出的结果级别指定为“传递失败”、“摘要”或“详细”。
-* **[!UICONTROL 色彩空间]**:指定用于输出PDF/A文件的预定义色彩空间。
+* **[!UICONTROL 色彩空间]**:将预定义的颜色空间指定为S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，它们可用于输出PDF/A文件。
 * **[!UICONTROL 可选内容]**:仅当满足一组指定的标准时，才允许在输出PDF/A文档中显示特定的图形对象和/或注释。
 
 **[!UICONTROL 输出文档]**:指定保存输出文件的位置。 输出文件可以保存在相对于有效负载的位置，覆盖有效负载（如果有效负载是文件），或保存在文档类型的变量中。
@@ -253,7 +253,7 @@ PDF/A是一种存档格式，用于通过嵌入字体和解压缩文件来长期
 
 **[!UICONTROL 环境选项]**:此选项用于设置调用API的处理设置。 此选项卡下提供的各种选项包括：
 * **[!UICONTROL 仅验证]**:检查输入DDX文档的有效性。
-* **[!UICONTROL 出错时失败]**:检查在发生错误时调用API服务是否失败。 默认情况下，其值设置为False。
+* **[!UICONTROL 出错时失败]**:布尔值，指示调用API服务是否失败（出现错误）。 默认情况下，其值设置为False。
 * **[!UICONTROL 第一个Bates编号]**:指定自增量的数字。 此自增量数字会自动显示在每个连续页面上。
 * **[!UICONTROL 默认样式]**:设置输出文件的默认样式。
 
