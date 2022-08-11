@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 21%
@@ -109,7 +109,7 @@ ht-degree: 21%
 
 ### AEMas a Cloud ServiceSDK Dispatcher工具增强功能 {#dispatcher-tools-enhancements}
 
-* Apache可以以 `update_sdk.sh` 脚本，该脚本将自动加载并验证对apache和dispatcher配置的任何后续更改，从而提高开发人员速度。 仅支持调度程序工具灵活模式。 另请参阅 [调试Apache和Dispatcher配置](/help/implementing/dispatcher/validation-debug.md#automatic-loading) 有关自动加载和验证的更多详细信息。
+* Apache可以以 `docker_run_hot_reload.sh` 脚本，该脚本将自动加载并验证对apache和dispatcher配置的任何后续更改，从而提高开发人员速度。 仅支持调度程序工具灵活模式。 另请参阅 [调试Apache和Dispatcher配置](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) 有关自动重新加载和验证的更多详细信息。
 * 本地Apache/Dispatcher配置将更密切地跟踪云环境中的更改，从而提高两个环境之间的对等性。
 
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}

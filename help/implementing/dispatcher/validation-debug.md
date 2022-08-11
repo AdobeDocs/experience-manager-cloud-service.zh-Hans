@@ -3,7 +3,7 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 2%
@@ -231,7 +231,7 @@ Phase 3 finished
 
 >[!NOTE]
 >
->请参阅 [自动加载和验证](#automatic-loading) 部分，以了解运行 `validate.sh` 在每次配置修改后。
+>请参阅 [自动重装和验证](#automatic-loading) 部分，以了解运行 `validate.sh` 在每次配置修改后。
 
 ### 阶段1 {#first-phase}
 
@@ -422,7 +422,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 云环境的日志通过Cloud Manager中提供的日志记录服务公开。
 
-### 自动加载和验证 {#automatic-loading}
+### 自动重装和验证 {#automatic-reloading}
 
 >[!NOTE]
 >
