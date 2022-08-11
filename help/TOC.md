@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a324bcc64842ff3c3d04dc5164d21b47c14ac94e
+source-git-commit: 2d84e6f2cc8345598af64f5b33ef88b26faa15fa
 workflow-type: tm+mt
-source-wordcount: '3714'
+source-wordcount: '3717'
 ht-degree: 99%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 99%
 + 概述 {#overview}
    + [AEM as a Cloud Service 简介](/help/overview/introduction.md)
    + [新增功能与不同功能](/help/overview/what-is-new-and-different.md)
-   + [术语 - 云的新术语](/help/overview/terminology.md)
+   + [术语 – 云的新术语](/help/overview/terminology.md)
    + [AEM as a Cloud Service 的架构简介](/help/overview/architecture.md)
    + [SEO 和 URL 管理](/help/overview/seo-and-url-management.md)
    + [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
@@ -67,6 +67,7 @@ ht-degree: 99%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022年 {#2022}
+         + [2022.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
          + [2022.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
          + [2022.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
          + [2022.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
@@ -208,7 +209,7 @@ ht-degree: 99%
       + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + 站点 {#sites}
    + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
-   + [对 AEM Cloud Service 中的 AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
+   + [对 AEM Cloud Service 中的AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
    + 创作 {#authoring}
       + 入门 {#getting-started}
          + [创作页面快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md)
@@ -279,18 +280,18 @@ ht-degree: 99%
    + 管理 {#administering}
       + 内容片段 {#content-fragments}
          + [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-         + [使用内容片段和 GraphQL 进行 Headless 交付](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+         + [使用内容片段和 GraphQL 进行 Headless 投放](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [为您的实例启用内容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
          + [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
          + [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
          + [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [变量 - 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [变量 – 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
          + [内容片段关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
-         + [元数据 - 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-         + [内容片段 - 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+         + [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+         + [内容片段 – 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [结构树](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [预览 - JSON 呈现](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [预览 – JSON 呈现](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
          + [内容片段控制台 — 键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 站点创建 {#site-creation}
          + [创建新站点](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -321,7 +322,7 @@ ht-degree: 99%
          + 翻译 {#translation}
             + 站点翻译历程 {#sites}
                + [了解 AEM 中的站点翻译](/help/journey-sites/translation/overview.md)
-               + [AEM Sites 翻译快速入门](/help/journey-sites/translation/getting-started.md)
+               + [AEM站点翻译快速入门](/help/journey-sites/translation/getting-started.md)
                + [了解 AEM 中的站点内容和翻译方法](/help/journey-sites/translation/learn-about.md)
                + [配置翻译连接器](/help/journey-sites/translation/configure-connector.md)
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
@@ -406,27 +407,27 @@ ht-degree: 99%
       + [将资源从 [!DNL Brand Portal] 发布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans)
    + 内容片段 {#content-fragments}
       + [使用内容片段](/help/assets/content-fragments/content-fragments.md)
-      + [使用内容片段和 GraphQL 进行 Headless 交付](/help/assets/content-fragments/content-fragments-graphql.md)
+      + [使用内容片段和 GraphQL 进行 Headless 投放](/help/assets/content-fragments/content-fragments-graphql.md)
       + [为您的实例启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
       + [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
-      + [变量 - 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
+      + [变量 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
       + [内容片段关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)
-      + [元数据 - 片段属性](/help/assets/content-fragments/content-fragments-metadata.md)
-      + [内容片段 - 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md)
+      + [元数据 – 片段属性](/help/assets/content-fragments/content-fragments-metadata.md)
+      + [内容片段 – 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
-      + [预览 - JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [预览 – JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 历程：基础知识{#dm-journey}
-         + [第一部分：什么是 Dynamic Media - 用例 - 资产如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [第二部分：Dynamic Media URL 的剖析 - 图像预设的基础知识 - 关于图像集、旋转集和混合媒体集](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [第一部分：什么是 Dynamic Media – 用例 – 资产如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [第二部分：Dynamic Media URL 的剖析 – 图像预设的基础知识 – 关于图像集、旋转集和混合媒体集](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League 存档的 Dynamic Media 新闻稿](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [设置 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [配置 Dynamic Media](/help/assets/dynamic-media/config-dm.md)
-      + [可选 - 配置 Dynamic Media，一般设置](/help/assets/dynamic-media/dm-general-settings.md)
-      + [可选 - 配置 Dynamic Media，发布设置](/help/assets/dynamic-media/dm-publish-settings.md)
+      + [可选 – 配置 Dynamic Media，一般设置](/help/assets/dynamic-media/dm-general-settings.md)
+      + [可选 – 配置 Dynamic Media，发布设置](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media 疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [配置 Dynamic Media 别名帐户](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media 中的辅助功能](/help/assets/dynamic-media/accessibility-dm.md)
@@ -443,7 +444,7 @@ ht-degree: 99%
       + [通过 Dynamic Media Classic 使 CDN 缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [智能成像](/help/assets/dynamic-media/imaging-faq.md)
       + [具有客户端设备像素比的智能成像](/help/assets/dynamic-media/client-side-dpr.md)
-      + [交付 Dynamic Media 资源](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+      + [投放 Dynamic Media 资源](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在 Dynamic Media 中激活热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 支持](/help/assets/dynamic-media/assets-3d.md)
       + [Dynamic Media 限制](/help/assets/dynamic-media/limitations.md)
@@ -467,7 +468,7 @@ ht-degree: 99%
       + [发布 Dynamic Media 资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [使用 Dynamic Media 中的“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md)
       + [使用选择器](/help/assets/dynamic-media/working-with-selectors.md)
-      + [HTTP2 内容交付常见问题解答](/help/assets/dynamic-media/http2faq.md)
+      + [HTTP2 内容投放常见问题解答](/help/assets/dynamic-media/http2faq.md)
       + [Flash 查看器生命周期终止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + 与 Adobe Workfront 集成 {#integrations}
@@ -541,7 +542,7 @@ ht-degree: 99%
       + [使用表单数据模型](/help/forms/using-form-data-model.md)
    + [与 Adobe Sign 集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [与 DocuSign 集成](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [与 Sites 集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [与站点集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + [将自适应表单与 Microsoft Power 集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
    + 创建和使用工作流 {#create-form-centric-workflows}
@@ -550,8 +551,8 @@ ht-degree: 99%
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
    + 使用通信 {#using-communications}
       + [Communications API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [Communications API - 同步处理](/help/forms/aem-forms-cloud-service-communications.md)
-      + [Communications API - 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Communications API – 同步处理](/help/forms/aem-forms-cloud-service-communications.md)
+      + [Communications API – 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
    + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
@@ -675,14 +676,14 @@ ht-degree: 99%
          + [AEM Headless as a Cloud Service 快速入门](/help/journey-headless/developer/getting-started.md)
          + [首次 AEM Headless 使用体验的路径](/help/journey-headless/developer/path-to-first-experience.md)
          + [如何将内容建模为 AEM 内容模型](/help/journey-headless/developer/model-your-content.md)
-         + [如何通过 AEM 交付 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
+         + [如何通过 AEM 投放 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
          + [如何通过 AEM Assets API 更新您的内容](/help/journey-headless/developer/update-your-content.md)
          + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
-         + [可选 - 如何使用 AEM 创建单页面应用程序](/help/journey-headless/developer/create-spa.md)
+         + [可选 – 如何使用 AEM 创建单页面应用程序](/help/journey-headless/developer/create-spa.md)
       + Headless 内容架构师历程 {#architect}
          + [AEM Headless 内容架构师历程概述](/help/journey-headless/architect/overview.md)
-         + [使用 AEM 对 Headless 进行内容建模 - 简介](/help/journey-headless/architect/introduction.md)
+         + [使用 AEM 对 Headless 进行内容建模 – 简介](/help/journey-headless/architect/introduction.md)
          + [了解使用 AEM 对 Headless 进行内容建模的基础知识](/help/journey-headless/architect/basics.md)
          + [了解如何在 AEM 中创建内容片段模型](/help/journey-headless/architect/model-structure.md)
       + Headless 翻译历程 {#translation}
@@ -694,8 +695,8 @@ ht-degree: 99%
          + [翻译内容](/help/journey-headless/translation/translate-content.md)
          + [发布翻译的内容](/help/journey-headless/translation/publish-content.md)
       + Headless 内容创作历程 {#author}
-         + [AEM Headless 内容创作历程 - 概述](/help/journey-headless/author/overview.md)
-         + [使用 AEM 为 Headless 创作 - 简介](/help/journey-headless/author/introduction.md)
+         + [AEM Headless 内容创作历程 – 概述](/help/journey-headless/author/overview.md)
+         + [使用 AEM 为 Headless 创作 – 简介](/help/journey-headless/author/introduction.md)
          + [使用 AEM 为 Headless 创作基本内容](/help/journey-headless/author/basics.md)
          + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
@@ -774,7 +775,7 @@ ht-degree: 99%
       + [自定义站点模板和主题](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
       + 全栈 AEM 开发 {#full-stack}
-         + [AEM Sites 开发入门 - WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+         + [AEM站点开发入门 – WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 的结构](/help/implementing/developing/introduction/ui-structure.md)
          + [Sling 备忘单](/help/implementing/developing/introduction/sling-cheatsheet.md)
          + [使用 Sling 适配器](/help/implementing/developing/introduction/sling-adapters.md)
@@ -821,7 +822,7 @@ ht-degree: 99%
          + [RemotePage 组件](/help/implementing/developing/hybrid/remote-page.md)
          + [在 AEM 中编辑外部 SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA 中的复合组件](/help/implementing/developing/hybrid/composite-components.md)
-         + [服务器端渲染](/help/implementing/developing/hybrid/ssr.md)
+         + [服务器端呈现](/help/implementing/developing/hybrid/ssr.md)
          + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [启动集成](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 参考文档](/help/implementing/developing/hybrid/reference-materials.md)
@@ -860,7 +861,7 @@ ht-degree: 99%
          + [发布应用程序](/help/implementing/developing/extending/app-builder/videos/publish.md)
       + [扩展体验片段](/help/implementing/developing/extending/experience-fragments.md)
       + [自定义和扩展内容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
-      + [配置用于渲染的组件的内容片段](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+      + [配置用于呈现的组件的内容片段](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + 管理搜索表单 {#manage-search-forms}
          + [配置搜索表单](/help/implementing/developing/extending/search-forms.md)
          + [配置收件箱搜索过滤器](/help/implementing/developing/extending/configure-inbox-search-rail.md)
@@ -876,8 +877,8 @@ ht-degree: 99%
    + 创作层 {#author-tier}
       + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [保护创作层](/help/implementing/author-tier/securing-the-author-tier.md)
-   + 内容交付概述 {#content-delivery}
-      + [内容交付流程](/help/implementing/dispatcher/overview.md)
+   + 内容投放概述 {#content-delivery}
+      + [内容投放流程](/help/implementing/dispatcher/overview.md)
       + [云中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
       + [使用 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug.md)
       + [将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
@@ -903,7 +904,7 @@ ht-degree: 99%
    + 数据隐私和保护就绪性 {#data-privacy}
       + [用于数据保护和数据隐私法规的 AEM 就绪性](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [用于数据保护和数据隐私法规的 AEM Foundation 就绪性](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
-      + [用于数据保护和数据隐私法规的 AEM Sites 就绪性](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+      + [用于数据保护和数据隐私法规的AEM Sites 就绪性](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
    + 辅助功能 {#accessibility}
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
