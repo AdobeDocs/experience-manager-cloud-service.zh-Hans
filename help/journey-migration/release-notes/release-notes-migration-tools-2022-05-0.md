@@ -2,8 +2,7 @@
 title: AEMas a Cloud Service版本2022.5.0中迁移工具的发行说明
 description: AEMas a Cloud Service版本2022.5.0中迁移工具的发行说明
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+source-git-commit: 6196f3fc67dbcfe03a71bb6a0796dd5d1d0f8546
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 5%
@@ -32,7 +31,7 @@ Best Practices Analyzer v2.1.30的发布日期是2022年6月1日。
 * BPA报告的是误报的NCC（不兼容的更改）、UMI（升级配置错误问题）和PCX（页面复杂性）发现结果。 这些已修复。
 * 当任何节点名称长度超过150字节时，BPA报告失败。 此问题已得到修复，以便仅在节点父路径等于或大于350字节时才检测此类故障。
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 
