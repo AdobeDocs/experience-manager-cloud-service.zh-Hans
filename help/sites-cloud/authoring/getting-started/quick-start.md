@@ -2,8 +2,8 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
+workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -244,13 +244,13 @@ ht-degree: 100%
 
    然后，取决于您的操作：
 
-   * 复制：
+   * [复制](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * 复制后，您将需要导航到新位置并进行粘贴。
-   * 移动：
+   * [移动](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * 将打开相应的向导来收集移动页面时所需的信息。按照屏幕上的说明操作。
-   * 删除：
+   * [删除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * 系统将要求您确认该操作。
    >[!NOTE]
@@ -309,7 +309,7 @@ ht-degree: 100%
 
 1. 点按/单击要恢复的版本 - 这将显示其他操作按钮：
 
-   * **还原到此版本**
+   * **恢复到此版本**
 
       * 将恢复该版本。
    * **显示差异**
