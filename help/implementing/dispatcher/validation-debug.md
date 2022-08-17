@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 2%
 
 ---
@@ -426,7 +426,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 >[!NOTE]
 >
->由于Windows操作系统限制，此功能仅适用于Linux用户。
+>由于Windows操作系统限制，此功能仅适用于macOS和Linux用户。
 
 而不是运行本地验证(`validate.sh`)和启动Docker容器(`docker_run.sh`)每次修改配置时，您也可以 `docker_run_hot_reload.sh` 脚本。  脚本会监视对配置的任何更改，并自动重新加载该配置并重新运行验证。 使用此选项，可在调试时节省大量时间。
 
