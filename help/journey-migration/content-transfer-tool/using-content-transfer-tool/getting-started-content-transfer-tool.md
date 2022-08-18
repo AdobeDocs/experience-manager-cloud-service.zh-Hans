@@ -1,15 +1,15 @@
 ---
-title: 内容传输工具快速入门
-description: 内容传输工具快速入门
+title: 内容转移工具快速入门
+description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
+source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 9%
 
 ---
 
-# 内容传输工具快速入门 {#getting-started-content-transfer-tool}
+# 内容转移工具快速入门 {#getting-started-content-transfer-tool}
 
 
 ## 可用性 {#availability}
@@ -35,7 +35,7 @@ ht-degree: 9%
 源AEM实例可能在防火墙后运行，在防火墙中，它只能访问已添加到允许列表的特定主机。 要成功运行提取，需要从运行AEM的实例访问以下端点：
 
 * 目标AEMas a Cloud Service环境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure Blob存储服务： `*.blob.core.windows.net`
+* Azure Blob存储服务： `casstorageprod.blob.core.windows.net`
 * 用户映射IO端点： `usermanagement.adobe.io`
 
 要测试与目标AEMas a Cloud Service环境的连接，请从源实例的shell发出以下cURL命令(替换 `program_id`, `environment_id`和 `migration_token`):
