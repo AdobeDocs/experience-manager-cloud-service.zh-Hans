@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
+source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1042'
 ht-degree: 8%
 
 ---
@@ -61,7 +61,7 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
 配置说明：
 
-1. 将您的CDN指向AdobeCDN的入口作为其源域。 例如， `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. 将您的CDN指向AdobeCDN的入口作为其源域。 例如：`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. SNI还必须设置为AdobeCDN的入口。
 1. 将主机标头设置为源域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 设置 `X-Forwarded-Host` 标头，以便AEM可以确定主机标头。 例如：`X-Forwarded-Host:example.com`。
@@ -69,6 +69,8 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
    * 这是AdobeCDN验证请求源并传递 `X-Forwarded-*` 标头。 例如，`X-Forwarded-For` 用于确定客户端IP。 因此，它成为可信呼叫者（即客户管理的CDN）的责任，来确保 `X-Forwarded-*` 标题（请参阅下面的注释）。
    * 或者，当Adobe `X-AEM-Edge-Key` 不存在。 如果您需要直接访问AdobeCDN的入口（待阻止），请通知Adobe。
+
+请参阅 [示例CDN供应商配置](#sample-configurations) 部分，以了解领先CDN供应商的配置示例。
 
 在接受实时流量之前，您应该通过Adobe的客户支持验证端到端流量路由是否正确运行。
 
@@ -99,6 +101,25 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 由于额外的跳数，性能可能会受到较小的点击，不过从客户CDN到AEM托管CDN的跳数可能会非常有效。
 
 请注意，发布层支持此客户CDN配置，但创作层不支持此配置。
+
+### 示例CDN供应商配置 {#sample-configurations}
+
+以下是一些领先的CDN供应商提供的几个配置示例。
+
+**Akamai**
+
+![Akamai1](assets/akamai1.png "Akamai")
+![Akamai2](assets/akamai2.png "Akamai")
+
+**Amazon CloudFront**
+
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
+
+**Cloudflare**
+
+![Cloudflare1](assets/cloudflare1.png "Cloudflare")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ## 地理位置标题 {#geo-headers}
 
