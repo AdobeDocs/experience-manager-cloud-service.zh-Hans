@@ -3,7 +3,7 @@ title: 样式AEM CIF核心组件
 description: 了解如何设置AEM CIF核心组件的样式。 本教程介绍如何使用客户端库或客户端库来部署和管理Adobe Experience Manager(AEM)商务实施的CSS和Javascript。 本教程还将介绍如何将ui.frontend模块和Webpack项目集成到端到端构建过程中。
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2550'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -225,7 +225,7 @@ ht-degree: 2%
 
 1. 选择 **页面信息** 菜单，单击 **查看已发布的项目**:
 
-   ![查看已发布的项目](../assets/style-cif-component/view-as-published.png)
+   ![以发布的形式查看](../assets/style-cif-component/view-as-published.png)
 
    这将打开页面，且未加载任何AEM作者javascript，就像它显示在已发布的网站上一样。 请注意，url具有查询参数 `?wcmmode=disabled` 已附加。 在开发CSS和Javascript时，最好使用此参数来简化页面，而不使用AEM作者提供的任何内容。
 
