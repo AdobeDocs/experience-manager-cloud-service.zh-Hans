@@ -11,21 +11,21 @@ ht-degree: 0%
 ---
 
 
-# 介绍Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
+# Adobe Experience Manager as a Headless CMS 简介 {#introduction-aem-headless}
 
-了解如何将Adobe Experience Manager(AEM)用作无头CMS，并包含内容模型、内容片段和可大规模提供无头体验的GraphQL API等功能。
+了解如何将 Adobe Experience Manager (AEM)用作 Headless CMS，并包含内容模型、内容片段和可大规模提供 headless 体验的 GraphQL API 等功能。
 
-您可以阅读所涉及各种功能的详细文档和/或按照 [无标头历程，以获取首要步骤的概述](#first-steps).
+您可以阅读所涉及各种功能的详细文档和/或选择 [Headless 历程以了解最初的步骤](#first-steps)。
 
 >[!NOTE]
 >
->另请参阅 [什么是Headless?](/help/headless/what-is-headless.md) 有关Headless概念和术语的介绍。
+>另请参阅[什么是 Headless？](/help/headless/what-is-headless.md) 有关 Headless 概念和术语的介绍。
 
 ## 概述 {#overview}
 
-AEM Headless 是来自 Experience Manager 的 CMS 解决方案，使得任意应用程序可以使用 HTTP，通过 GraphQL 使用 AEM 中的结构化内容（内容片段）。Headless 实施实现了大规模跨平台和渠道的体验交付。
+AEM Headless 是来自 Experience Manager 的 CMS 解决方案，使得任意应用程序可以使用 HTTP，通过 GraphQL 使用 AEM 中的结构化内容（内容片段）。Headless 实施实现了大规模跨平台和渠道的体验投放。
 
-Headless 实施放弃了传统的全栈和混合解决方案中的页面和组件管理，专注于创建渠道中性的、可重用的内容片段，以及它们的跨渠道交付。这是一种现代化的动态开发模式，用于实施 Web 体验。
+Headless 实施放弃了传统的全栈和混合解决方案中的页面和组件管理，专注于创建渠道中性的、可重用的内容片段，以及它们的跨渠道投放。这是一种现代化的动态开发模式，用于实施 Web 体验。
 
 ![AEM 实施模型](assets/aem-implementation-models.png)
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service 是一款灵活的工具，提供了三种强大的功能
 
 ## Headful 和 Headless 的比较 {#headful-headless}
 
-本指南侧重于 AEM 的完整 Headless 实施模型。不过，在 AEM 中，Headful 与 Headless 不一定是一个二选一的选择。Headless 功能可用于面向多个接触点管理和交付内容，同时还使内容作者可以编辑单页应用程序。这些都可在 AEM 中实现。
+本指南侧重于 AEM 的完整 Headless 实施模型。不过，在 AEM 中，Headful 与 Headless 不一定是一个二选一的选择。Headless 功能可用于面向多个接触点管理和投放内容，同时还使内容作者可以编辑单页面应用程序。这些都可在 AEM 中实现。
 
 >[!TIP]
 >

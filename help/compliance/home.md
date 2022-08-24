@@ -18,7 +18,7 @@ ht-degree: 0%
 
 * [数据保护和数据隐私法规的就绪性](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [用于数据保护和数据隐私法规的 Foundation 就绪性](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
-* [用于数据保护和数据隐私法规的 Sites 就绪性](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [用于数据保护和数据隐私法规的站点就绪性](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 * [Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
 * [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 
@@ -29,9 +29,9 @@ ht-degree: 0%
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门培训历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
-| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
+| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作和管理。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
-| [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到云服务的历程。 |
+| [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到 Cloud Service 的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 通过探索这些开发和部署主题，了解如何使用 AEM 的强大功能来构建和自定义体验。 |
 | [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式历程，了解如何通过 AEM 强大而灵活的 Headless 特性构建自己的第一个 Headless 项目。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |

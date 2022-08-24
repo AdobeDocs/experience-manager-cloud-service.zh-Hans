@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +69,7 @@ GraphQL 是：
 
 GraphQL for AEM 实施基于标准 GraphQL Java 库。请参阅：
 
-* [graphQL.org - Java](https://graphql.org/code/#java)
+* [graphQL.org – Java](https://graphql.org/code/#java)
 
 * [GitHub 上的 GraphQL Java](https://github.com/graphql-java)
 
@@ -199,7 +199,7 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 
 架构通过与 GraphQL 查询相同的端点提供，客户端处理使用扩展 `GQLschema` 调用架构的实际情况。例如，在 `/content/cq:graphql/global/endpoint.GQLschema` 上执行简单的 `GET` 请求将导致架构的输出带有内容类型：`text/x-graphql-schema;charset=iso-8859-1`。
 
-### 架构生成 - 未发布的模型 {#schema-generation-unpublished-models}
+### 架构生成 – 未发布的模型 {#schema-generation-unpublished-models}
 
 当内容片段嵌套时，可能会出现的情况是发布了父内容片段模型，但未发布引用的模型。
 
@@ -217,7 +217,7 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 
    使用选择的一组[字段类型](#field-types)，根据您配置内容片段模型的方式来创建字段。字段名称获取自&#x200B;**数据类型**&#x200B;的&#x200B;**属性名称**&#x200B;字段。
 
-   * 其中还有&#x200B;**渲染为**&#x200B;属性需要考虑，因为用户可以配置特定数据类型；例如，作为单行文本或多行文本。
+   * 其中还有&#x200B;**呈现为**&#x200B;属性需要考虑，因为用户可以配置特定数据类型；例如，作为单行文本或多行文本。
 
 * GraphQL for AEM 还生成多个[帮助程序字段](#helper-fields)。
 
@@ -227,11 +227,11 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 
 GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数据类型和对应的 GraphQL 类型呈现如下：
 
-| 内容片段模型 - 数据类型 | GraphQL 类型 | 描述 |
+| 内容片段模型 – 数据类型 | GraphQL 类型 | 描述 |
 |--- |--- |--- |
 | 单行文本 | 字符串，[字符串] | 用于简单字符串，例如作者姓名、位置名称等 |
 | 多行文本 | 字符串 | 用于输出文本，例如文章的正文 |
-| 数值 | 浮点，[浮点] | 用于显示浮点数和常规数字 |
+| 数字 | 浮点，[浮点] | 用于显示浮点数和常规数字 |
 | 布尔型 |  布尔型 | 用于显示复选框 → 简单的 true/false 语句 |
 | 日期和时间 | 日程表 | 用于显示日期和时间，使用 ISO 8086 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
 | 枚举 | 字符串 | 用于显示在模型创建时定义的选项列表中的选项 |
@@ -276,7 +276,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 }
 ```
 
-请参阅[示例查询 - 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)。
+请参阅[示例查询 – 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)。
 
 #### 元数据 {#metadata}
 
@@ -328,9 +328,9 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 >
 >举例而言，通过调用 `stringMetadata` 字段，您应该以 `String` 的形式收到存储在存储库中所有元数据的数组，如果您调用 `stringArrayMetadata`，则会以 `String[]` 的形式收到存储在存储库中所有元数据的数组。
 
-请参阅[元数据的示例查询 - 列出标题为 GB 的奖励的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)。
+请参阅[元数据的示例查询 – 列出标题为 GB 的奖励的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)。
 
-#### 变量 {#variations}
+#### 变体 {#variations}
 
 `_variations` 字段已实施以简化查询内容片段具有的变体。例如：
 
@@ -344,7 +344,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 }
 ```
 
-请参阅[示例查询 - 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
+请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
 
 >[!NOTE]
 >
@@ -531,7 +531,7 @@ query {
 >* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
 -->
 
-## GraphQL for AEM - 执行摘要 {#graphql-extensions}
+## GraphQL for AEM – 执行摘要 {#graphql-extensions}
 
 使用 GraphQL for AEM 的查询基本处理遵循标准 GraphQL 规范。对于用于 AEM 的 GraphQL 查询，有几个扩展：
 
@@ -558,16 +558,16 @@ query {
 
 * 如果您需要结果列表：
    * 将 `List` 添加到模型名称；例如，`cityList`
-   * 请参阅[示例查询 - 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+   * 请参阅[示例查询 – 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * 如果您希望使用逻辑 OR：
    * 使用 ` _logOp: OR`
-   * 请参阅[示例查询 - 所有名为“Jobs”或“Smith”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
+   * 请参阅[示例查询 – 所有名为“Jobs”或“Smith”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * 逻辑 AND 也可使用，不过（通常）是隐式的
 
 * 您可以查询与内容片段模型中字段对应的字段名称
-   * 请参阅[示例查询 - 公司的 CEO 和员工的完整详细信息](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
+   * 请参阅[示例查询 – 公司的 CEO 和员工的完整详细信息](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
 
 * 除了来自您模型的字段以外，还有一些系统生成的字段（以下划线为前缀）：
 
@@ -576,11 +576,11 @@ query {
       * `_locale`：用于显示语言；基于语言管理器
          * 请参阅[给定区域设置的多个内容片段的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata`：用于显示片段的元数据
-         * 请参阅[元数据的示例查询 - 列出标题为 GB 的奖励的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+         * 请参阅[元数据的示例查询 – 列出标题为 GB 的奖励的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
       * `_model`：允许查询内容片段模型（路径和标题）
          * 请参阅[来自模型的内容片段模型的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
       * `_path`：存储库中内容片段的路径
-         * 请参阅[示例查询 - 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+         * 请参阅[示例查询 – 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
       * `_reference`：用于显示引用，包括富文本编辑器中的内联引用
          * 请参阅[具有预获取引用的多个内容片段的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation`：用于显示内容片段中的特定变体
@@ -589,16 +589,16 @@ query {
          >
          >如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
 
-         * 请参阅[示例查询 - 具有指定变体的所有城市](#sample-cities-named-variation)
+         * 请参阅[示例查询 – 具有指定变体的所有城市](#sample-cities-named-variation)
    * 以及操作：
 
       * `_operator`：应用特定运算符；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
-         * 请参阅[示例查询 - 所有名字不是“Jobs”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
-         * 请参阅[示例查询 - `_path` 以特定前缀开头的所有冒险](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+         * 请参阅[示例查询 – 所有名字不是“Jobs”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
+         * 请参阅[示例查询 – `_path` 以特定前缀开头的所有冒险](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply`：用于应用特定条件，例如 `AT_LEAST_ONCE`
-         * 请参阅[示例查询 - 筛选数组中必须至少出现一次的项](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
+         * 请参阅[示例查询 – 筛选数组中必须至少出现一次的项](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`：在查询时忽略大小写
-         * 请参阅[示例查询 - 名称中包含 SAN 的所有城市，不考虑大小写](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+         * 请参阅[示例查询 – 名称中包含 SAN 的所有城市，不考虑大小写](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -650,6 +650,6 @@ query {
 *AEM GraphQL API 提供了对 JSON 输出的全面控制，是用于查询内容的行业标准。
 接下来，AEM 计划投资于 AEM GraphQL API。*
 
-## 教程 - AEM Headless 和 GraphQL 快速入门 {#tutorial}
+## 教程 – AEM Headless 和 GraphQL 快速入门 {#tutorial}
 
 正在寻找实践教程？请查看 [AEM Headless 和 GraphQL 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)端到端教程，其中说明了在 Headless CMS 场景中，如何使用 AEM GraphQL API 构建和公开内容并由外部应用程序使用。

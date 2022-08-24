@@ -1,16 +1,16 @@
 ---
-title: 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询
+title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 7e89ac3f575082d19e509ca133500b71070cc605
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 了解如何将 GraphQL 与 AEM 结合使用 - 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
+# 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
 
 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 * 以及一些[示例 GraphQL 查询](#graphql-sample-queries)，基于示例内容片段结构（内容片段模型以及相关的内容片段）。
 
 
-## GraphQL - 使用示例内容片段结构的示例查询 {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL – 使用示例内容片段结构的示例查询 {#graphql-sample-queries-sample-content-fragment-structure}
 
 查看这些示例查询，以了解创建查询的说明以及示例结果。
 
@@ -43,14 +43,14 @@ ht-degree: 100%
 >您可以通过以下任一方式访问查询编辑器：
 >
 >* **工具** -> **常规** -> **GraphQL 查询编辑器**
->* 直接；例如， `http://localhost:4502/aem/graphiql.html`
+>* 直接；例如，`http://localhost:4502/aem/graphiql.html`
 
 
 >[!NOTE]
 >
 >示例查询基于[用于 GraphQL 的示例内容片段结构](#content-fragment-structure-graphql)
 
-### 示例查询 - 所有可用架构和数据类型 {#sample-all-schemes-datatypes}
+### 示例查询 – 所有可用架构和数据类型 {#sample-all-schemes-datatypes}
 
 这会返回所有可用架构的所有 `types`。
 
@@ -143,7 +143,7 @@ ht-degree: 100%
 }
 ```
 
-### 示例查询 - 关于所有城市的所有信息 {#sample-all-information-all-cities}
+### 示例查询 – 关于所有城市的所有信息 {#sample-all-information-all-cities}
 
 要检索有关所有城市的所有信息，您可以使用非常基本的查询：
 **示例查询**
@@ -226,7 +226,7 @@ ht-degree: 100%
 }
 ```
 
-### 示例查询 - 所有城市的名称 {#sample-names-all-cities}
+### 示例查询 – 所有城市的名称 {#sample-names-all-cities}
 
 这是一个直接的查询，返回 `city` 架构中所有条目的 `name`。
 
@@ -276,7 +276,7 @@ query {
 }
 ```
 
-### 示例查询 - 一个特定城市片段 {#sample-single-specific-city-fragment}
+### 示例查询 – 一个特定城市片段 {#sample-single-specific-city-fragment}
 
 此查询返回存储库中特定位置的单个片段条目的详细信息。
 
@@ -317,7 +317,7 @@ query {
 }
 ```
 
-### 示例查询 - 具有指定变体的所有城市 {#sample-cities-named-variation}
+### 示例查询 – 具有指定变体的所有城市 {#sample-cities-named-variation}
 
 如果您创建新的变体，命名为“柏林中心”(`berlin_centre`)，则对于 `city` 柏林，您可以使用查询返回变体的详细信息。
 
@@ -360,7 +360,7 @@ query {
 }
 ```
 
-### 示例查询 - 公司的 CEO 和员工的完整详细信息 {#sample-full-details-company-ceos-employees}
+### 示例查询 – 公司的 CEO 和员工的完整详细信息 {#sample-full-details-company-ceos-employees}
 
 使用嵌套片段的结构，此查询返回公司的 CEO 及其所有员工的完整详细信息。
 
@@ -488,7 +488,7 @@ query {
 }
 ```
 
-### 示例查询 - 所有名为“Jobs”或“Smith”的人 {#sample-all-persons-jobs-smith}
+### 示例查询 – 所有名为“Jobs”或“Smith”的人 {#sample-all-persons-jobs-smith}
 
 这将筛选出名为 `Jobs` 或 `Smith` 的所有 `persons`。
 
@@ -542,7 +542,7 @@ query {
 }
 ```
 
-### 示例查询 - 所有名字不是“Jobs”的人 {#sample-all-persons-not-jobs}
+### 示例查询 – 所有名字不是“Jobs”的人 {#sample-all-persons-not-jobs}
 
 这将筛选出名为 `Jobs` 或 `Smith` 的所有 `persons`。
 
@@ -609,7 +609,7 @@ query {
 }
 ```
 
-### 示例查询 - 其 `_path` 以特定前缀开头的所有冒险 {#sample-wknd-all-adventures-cycling-path-filter}
+### 示例查询 – 其 `_path` 以特定前缀开头的所有冒险 {#sample-wknd-all-adventures-cycling-path-filter}
 
 其 `_path` 以特定前缀 (`/content/dam/wknd/en/adventures/cycling`) 开头的所有 `adventures`。
 
@@ -654,7 +654,7 @@ query {
 }
 ```
 
-### 示例查询 - 位于德国或瑞士且人口在 400000 到 999999 之间的所有城市。 {#sample-all-cities-d-ch-population}
+### 示例查询 – 位于德国或瑞士且人口在 400000 到 999999 之间的所有城市。 {#sample-all-cities-d-ch-population}
 
 以下是筛选的字段组合：使用 `AND`（隐式）来选择 `population` 范围，使用 `OR`（显式）来选择所需的城市。
 
@@ -717,7 +717,7 @@ query {
 }
 ```
 
-### 示例查询 - 名称中包含 SAN 的所有城市，不考虑大小写 {#sample-all-cities-san-ignore-case}
+### 示例查询 – 名称中包含 SAN 的所有城市，不考虑大小写 {#sample-all-cities-san-ignore-case}
 
 此查询查找名称中包含 `SAN` 的所有城市，不考虑大小写。
 
@@ -768,7 +768,7 @@ query {
 }
 ```
 
-### 示例查询 - 筛选数组中必须至少出现一次的项 {#sample-array-item-occur-at-least-once}
+### 示例查询 – 筛选数组中必须至少出现一次的项 {#sample-array-item-occur-at-least-once}
 
 此查询筛选数组中必须至少出现一次的项 (`city:na`)。
 
@@ -826,7 +826,7 @@ query {
 }
 ```
 
-### 示例查询 - 根据精确的数组值筛选 {#sample-array-exact-value}
+### 示例查询 – 根据精确的数组值筛选 {#sample-array-exact-value}
 
 此查询筛选一个精确的数组值。
 
@@ -878,7 +878,7 @@ query {
 }
 ```
 
-### 嵌套内容片段的示例查询 - 至少有一位员工名为“Smith”的所有公司 {#sample-companies-employee-smith}
+### 嵌套内容片段的示例查询 – 至少有一位员工名为“Smith”的所有公司 {#sample-companies-employee-smith}
 
 此查询演示了筛选 `name` 为“Smith”的任意 `person`，跨两个嵌套片段返回结果：`company` 和 `employee`。
 
@@ -944,7 +944,7 @@ query {
 }
 ```
 
-### 嵌套内容片段的示例查询 - 所有员工赢得了“Gamestar”奖项的所有公司 {#sample-all-companies-employee-gamestar-award}
+### 嵌套内容片段的示例查询 – 所有员工赢得了“Gamestar”奖项的所有公司 {#sample-all-companies-employee-gamestar-award}
 
 此查询演示了跨三个嵌套片段筛选：`company`、`employee` 和 `award`。
 
@@ -1036,7 +1036,7 @@ query {
 }
 ```
 
-### 元数据的示例查询 - 列出标题为 GB 的奖项的元数据 {#sample-metadata-awards-gb}
+### 元数据的示例查询 – 列出标题为 GB 的奖项的元数据 {#sample-metadata-awards-gb}
 
 此查询演示了跨三个嵌套片段筛选：`company`、`employee` 和 `award`。
 
@@ -1245,7 +1245,7 @@ query {
 }
 ```
 
-### 嵌套内容片段的示例查询 - 单个模型类型{#sample-wknd-nested-fragment-single-model}
+### 嵌套内容片段的示例查询 – 单个模型类型{#sample-wknd-nested-fragment-single-model}
 
 此查询查找：
 
@@ -1273,7 +1273,7 @@ query {
 }
 ```
 
-### 嵌套内容片段的示例查询 - 多个模型类型{#sample-wknd-nested-fragment-multiple-model}
+### 嵌套内容片段的示例查询 – 多个模型类型{#sample-wknd-nested-fragment-multiple-model}
 
 此查询查找：
 
@@ -1353,7 +1353,7 @@ query {
 
 #### 具有附件的多个内容片段的示例查询 {#sample-wknd-multiple-fragments-attachments}
 
-以下查询返回所有 `attachments` - 类型为 `content-reference` 的特定字段（子组）：
+以下查询返回所有 `attachments` – 类型为 `content-reference` 的特定字段（子组）：
 
 >[!NOTE]
 >
@@ -1566,7 +1566,7 @@ query {
 
 示例查询基于以下结构，该结构使用：
 
-* 一个或多个[示例内容片段模型](#sample-content-fragment-models-schemas) - 构成了 GraphQL 架构的基础
+* 一个或多个[示例内容片段模型](#sample-content-fragment-models-schemas) – 构成了 GraphQL 架构的基础
 
 * 基于以上模型的[示例内容片段](#sample-content-fragments)
 
@@ -1617,7 +1617,7 @@ query {
 |--- |--- |--- |
 | 名称 | 单行文本 |  |
 | 国家/地区 | 单行文本 |  |
-| 人口 | 数值 |  |
+| 人口 | 数字 |  |
 | 类别 | 标记 |  |
 
 ### 示例内容片段 {#sample-content-fragments}

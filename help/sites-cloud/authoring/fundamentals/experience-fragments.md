@@ -4,8 +4,8 @@ description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，�
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * 可以与其他组件（包括其他体验片段）结合使用来构成完整的页面（体验）。
 * 可以基于根页面创建一个或多个变体。
 * 这些变体可以共享内容和/或组件。
-* 可以划分为可在片段的多个变体中使用的构建基块。
+* 可以划分为可在片段的多个变体中使用的构建块。
 
 您可以使用体验片段：
 
@@ -53,8 +53,8 @@ ht-degree: 100%
 
 * 当您需要重复使用体验时。
    * 将重复使用内容相同或相似的体验。
-* 当您使用 AEM 作为第三方的内容交付平台时。
-   * 任何需要使用 AEM 作为内容交付平台的解决方案。
+* 当您使用 AEM 作为第三方的内容投放平台时。
+   * 任何需要使用 AEM 作为内容投放平台的解决方案。
    * 将内容嵌入第三方触点。
 * 当您有一个具有不同变体或呈现版本的体验时。
    * 特定于渠道或上下文的变体。
@@ -75,7 +75,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >无需将体验片段的结构与站点的页面结构保持一致。
+   >无需将体验片段的结构于站点的页面结构保持一致。
 
 * [在文件夹级别分配允许的模板](#configure-allowed-templates-folder)
 
@@ -121,7 +121,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
    请参阅：
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
-   ![体验片段属性 - 允许的模板](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
+   ![体验片段属性 – 允许的模板](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
    * **模板**
    * **标题**
-   * **名称** - 如果留空，将从“标题”派生名称
+   * **名称** – 如果留空，将从“标题”派生名称
    * **描述**
    * **变体标记**
 
@@ -263,50 +263,50 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 ![页面编辑器中的体验片段](/help/sites-cloud/authoring/assets/xf-08.png)
 
-## 构建基块 {#building-blocks}
+## 构建块 {#building-blocks}
 
-您可以选择一个或多个组件来创建用于在片段中回收的构建基块：
+您可以选择一个或多个组件来创建用于在片段中回收的构建块：
 
-### 创建构建基块 {#creating-a-building-block}
+### 创建构建块 {#creating-a-building-block}
 
-要创建构建基块，请执行以下操作：
+要创建构建块，请执行以下操作：
 
 1. 在体验片段编辑器中，选择要重复使用的组件：
 
-   ![为构建基块选择组件](/help/sites-cloud/authoring/assets/xf-09.png)
+   ![为构建块选择组件](/help/sites-cloud/authoring/assets/xf-09.png)
 
-1. 从组件工具栏中选择&#x200B;**转换为构建基块**：
+1. 从组件工具栏中选择&#x200B;**转换为构建块**：
 
-   ![“构建基块”按钮](/help/sites-cloud/authoring/assets/xf-10.png)
+   ![“构建块”按钮](/help/sites-cloud/authoring/assets/xf-10.png)
 
-1. 输入&#x200B;**构建基块**&#x200B;的名称，然后使用&#x200B;**转换**&#x200B;进行确认：
+1. 输入&#x200B;**构建块**&#x200B;的名称，然后使用&#x200B;**转换**&#x200B;进行确认：
 
-   ![为构建基块命名](/help/sites-cloud/authoring/assets/xf-11.png)
+   ![为构建块命名](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. **构建基块**&#x200B;将显示在左侧选项卡（**本地**）中，并可以选择该基块以执行进一步操作：
+1. **构建块**&#x200B;将显示在左侧选项卡（**本地**）中，并可以选择该基块以执行进一步操作：
 
-   ![边栏中的构建基块](/help/sites-cloud/authoring/assets/xf-12.png)
+   ![边栏中的构建块](/help/sites-cloud/authoring/assets/xf-12.png)
 
-#### 管理构建基块 {#managing-a-building-block}
+#### 管理构建块 {#managing-a-building-block}
 
-您的构建基块会显示在&#x200B;**构建基块**&#x200B;选项卡中。对于每个基块，可执行以下操作：
+您的构建块会显示在&#x200B;**构建块**&#x200B;选项卡中。对于每个基块，可执行以下操作：
 
 * **转至母版**：在新选项卡中打开根页面变体
 * **重命名**
 * **删除**
 
-![管理构建基块](/help/sites-cloud/authoring/assets/xf-13.png)
+![管理构建块](/help/sites-cloud/authoring/assets/xf-13.png)
 
-#### 使用构建基块 {#using-a-building-block}
+#### 使用构建块 {#using-a-building-block}
 
-您可以将构建基块拖动到任何片段的段落系统，就像对任何组件一样。
+您可以将构建块拖动到任何片段的段落系统，就像对任何组件一样。
 
-编辑体验片段时，可用的构建基块会显示在左侧选项卡中。您可以根据以下条件进行筛选：
+编辑体验片段时，可用的构建块会显示在左侧选项卡中。您可以根据以下条件进行筛选：
 
-* **本地** - 当前体验片段的构建块
-* **全部** - 所有片段中的构建基块
+* **本地** – 当前体验片段的构建块
+* **全部** – 所有片段中的构建块
 
-![选择构建基块](/help/sites-cloud/authoring/assets/xf-14.png)
+![选择构建块](/help/sites-cloud/authoring/assets/xf-14.png)
 
 ## 您的体验片段的详细信息 {#details-of-your-experience-fragment}
 
@@ -332,13 +332,13 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
    ![体验片段属性](/help/sites-cloud/authoring/assets/xf-17.png)
 
    * **基本**
-      * **标题** - 必填项
+      * **标题** – 必填项
       * **描述**
       * **标记**
-      * **变体总数** - 仅供参考
-      * **Web 变体的数量** - 仅供参考
-      * **非 Web 变体的数量** - 仅供参考
-      * **使用此片段的页数** - 仅供参考
+      * **变体总数** – 仅供参考
+      * **Web 变体的数量** – 仅供参考
+      * **非 Web 变体的数量** – 仅供参考
+      * **使用此片段的页数** – 仅供参考
    * **Cloud Service**
       * **云配置**
       * **Cloud Service 配置**
@@ -361,9 +361,9 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 ## 发布体验片段 {#publishing-experience-fragments}
 
-发布体验片段的方式与 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) （从体验片段控制台或编辑器中进行）。
+发布体验片段的方式与[发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)相同（从体验片段控制台或编辑器中进行）。
 
-或者，您也可以 [发布到预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md) （再次从体验片段控制台或编辑器中）。
+或者，您也可以[发布到预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md)（再次从体验片段控制台或编辑器中发布）。
 
 ## 导出体验片段 {#exporting-experience-fragments}
 

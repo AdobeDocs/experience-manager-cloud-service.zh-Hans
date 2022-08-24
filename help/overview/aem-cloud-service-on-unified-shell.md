@@ -4,8 +4,8 @@ description: Unified Shell 上的 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,13 +39,13 @@ AEM as a Cloud Service 与 Unified Shell 集成，以改进用户体验并将其
 >[!NOTE]
 >只有具有管理权限的帐户才能禁用 Unified Shell。
 
-1. 导航到&#x200B;**工具 - Cloud Services**。
+1. 导航到&#x200B;**工具 – Cloud Services**。
 
-   管理员用户将看到 Unified Shell 配置卡，如下所示：
+   管理员用户将看到 Unified Shell 配置信息卡，如下所示：
 
    ![图像](/help/overview/assets/unifiedshell2.png)
 
-1. 单击 **Unified Shell 配置**。 然后，取消选中下面显示的复选框以禁用Unified Shell：
+1. 单击 **Unified Shell 配置**。 然后，取消选中下面显示的复选框以禁用 Unified Shell：
 
    ![图像](/help/overview/assets/unifiedshell3.png)
 

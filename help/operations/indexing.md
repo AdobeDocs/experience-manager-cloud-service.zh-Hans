@@ -4,8 +4,8 @@ description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 以下列出与 AEM 6.5 和更低版本相比的主要变化：
 
-1. 用户将无法再访问单个 AEM 实例的索引管理器以调试、配置或维护索引编制。它仅用于本地开发和现场部署。
+1. 用户将无法再访问单个 AEM 实例的索引管理器以调试、配置或维护索引编制。它仅用于本地开发和内部部署。
 
 1. 用户将不会在单个 AEM 实例上更改索引，也不必再担心一致性检查或重新编制索引。
 
@@ -64,15 +64,15 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->例如，如果自定义现成的索引 `damAssetLucene-6`，请从 *Cloud Service环境* 使用CRX DE包管理器(`/crx/packmgr/`)。 然后将配置重命名为例如 `damAssetLucene-6-custom-1`，并将您的自定义添加到顶部。这样确保不会无意中删除所需的配置。例如，`/oak:index/damAssetLucene-6/tika` 下的 `tika` 节点需要在云服务的自定义索引中。Cloud SDK 上不存在它。
+>如果自定义开箱即用索引，例如 `damAssetLucene-6`，请使用 CRX DE 包管理器 (`/crx/packmgr/`) 从 *Cloud Service 环境*&#x200B;复制最新的开箱即用索引定义。 然后将配置重命名为例如 `damAssetLucene-6-custom-1`，并将您的自定义添加到顶部。这样确保不会无意中删除所需的配置。例如，`/oak:index/damAssetLucene-6/tika` 下的 `tika` 节点需要在 Cloud Service 的自定义索引中。Cloud SDK 上不存在它。
 
 您需要按照以下命名模式准备一个包含实际索引定义的新索引定义包：
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-然后需要将它放在 `ui.apps/src/main/content/jcr_root` 下。所有自定义和自定义索引定义都需要存储在 `/oak:index`.
+然后需要将它放在 `ui.apps/src/main/content/jcr_root` 下。所有自定义和自定义索引定义都需要存储在 `/oak:index` 中。
 
-需要设置包的过滤器，以便保留现有的（开箱即用索引）。在文件中 `ui.apps/src/main/content/META-INF/vault/filter.xml`，则需要列出每个自定义（或自定义）索引，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 如果稍后更改了索引版本，则需要调整过滤器。
+需要设置包的过滤器，以便保留现有的（开箱即用索引）。在文件 `ui.apps/src/main/content/META-INF/vault/filter.xml` 中，则需要列出每个自定义（或自定义）索引，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`。 如果稍后更改了索引版本，则需要调整过滤器。
 
 上述示例中的包被构建为 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`。
 
@@ -84,11 +84,11 @@ ht-degree: 88%
 
 ## 部署索引定义 {#deploying-index-definitions}
 
-索引定义标记为自定义并受版本控制：
+索引定义被标为自定义并进行版本控制：
 
 * 索引定义本身（例如 `/oak:index/ntBaseLucene-custom-1`）
 
-要部署自定义或自定义索引，请使用`/oak:index/definitionname`)需要通过 `ui.apps` 通过Git和Cloud Manager部署过程。 在FileVault筛选器中，例如 `ui.apps/src/main/content/META-INF/vault/filter.xml`，分别列出每个自定义索引和自定义索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 自定义/自定义索引定义本身随后将存储在文件中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
+要部署自定义或自定义索引，索引定义 (`/oak:index/definitionname`) 需要在 Git 和 Cloud Manager 部署过程中通过 `ui.apps` 投放。 在 FileVault 过滤器中，例如 `ui.apps/src/main/content/META-INF/vault/filter.xml`，分别列出每个自定义索引和自定义索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`。 自定义/自定义索引定义本身随后将存储在文件中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,11 +104,11 @@ ht-degree: 88%
 </jcr:root>
 ```
 
-上例包含Apache Tika的配置。 Tika配置文件将存储在 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+上例包含 Apache Tika 的配置。 Tika 配置文件将存储在 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`。
 
 ### 项目配置
 
-根据使用的Jackrabbit Filevault Maven包插件版本，需要在项目中进行其他配置。 使用Jackrabbit Filevault Maven包插件版本时 **1.1.6** 或更新，则文件 `pom.xml` 需要在的插件配置中包含以下部分 `filevault-package-maven-plugin`，在 `configuration/validatorsSettings` （之前） `jackrabbit-nodetypes`):
+根据使用的 Jackrabbit Filevault Maven 包插件版本，需要在项目中进行其他配置。 当使用 Jackrabbit Filevault Maven Package Plugin 版本 **1.1.6** 或更新版本时，文件 `pom.xml` 需要在 `configuration/validatorsSettings` 中的 `filevault-package-maven-plugin` 的插件配置中包含以下部分（就在 `jackrabbit-nodetypes` 之前）：
 
 ```xml
 <jackrabbit-packagetype>
@@ -118,7 +118,7 @@ ht-degree: 88%
 </jackrabbit-packagetype>
 ```
 
-此外，在本例中， `vault-validation` 版本需要升级到较新版本：
+此外，在本例中，`vault-validation` 版本需要升级到较新版本：
 
 ```xml
 <dependency>
@@ -128,7 +128,7 @@ ht-degree: 88%
 </dependency>
 ```
 
-然后，在 `ui.apps.structure/pom.xml` 和 `ui.apps/pom.xml`，的配置 `filevault-package-maven-plugin` 需要 `allowIndexDefinitions` 以及 `noIntermediateSaves` 已启用。 选项 `noIntermediateSaves` 确保自动添加索引配置。
+然后，在 `ui.apps.structure/pom.xml` 和 `ui.apps/pom.xml` 中，`filevault-package-maven-plugin` 的配置需要启用 `allowIndexDefinitions` 以及 `noIntermediateSaves`。 选项 `noIntermediateSaves` 确保自动添加索引配置。
 
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
@@ -142,7 +142,7 @@ ht-degree: 88%
     ...
 ```
 
-在 `ui.apps.structure/pom.xml`, `filters` 的部分需要包含过滤器根，如下所示：
+在 `ui.apps.structure/pom.xml` 中，此插件的 `filters` 部分需要包含一个过滤器根，如下所示：
 
 ```xml
 <filter><root>/oak:index</root></filter>
@@ -182,7 +182,7 @@ ht-degree: 88%
 
 ### 没有蓝绿部署的索引管理 {#index-management-without-blue-green-deployment}
 
-在开发期间或在使用内部安装时，可在运行时添加、删除或更改索引。一旦有索引可用，即使用这些索引。如果还不需要在应用程序的旧版本中使用某个索引，则一般在计划停机期间编制该索引。删除索引或更改现有索引时也会发生同样的情况。在删除索引时，一旦删除，该索引即不可用。
+在开发期间或在使用内部部署时，可在运行时添加、删除或更改索引。一旦有索引可用，即使用这些索引。如果还不需要在应用程序的旧版本中使用某个索引，则一般在计划停机期间编制该索引。删除索引或更改现有索引时也会发生同样的情况。在删除索引时，一旦删除，该索引即不可用。
 
 ### 有蓝绿部署的索引管理 {#index-management-with-blue-green-deployment}
 
@@ -247,7 +247,7 @@ ht-degree: 88%
 >
 >AEM as a Cloud Service 上的索引定义可能与本地开发实例上的索引定义不完全相同。开发实例没有 Tika 配置，而 AEM as a Cloud Service 实例有。如果使用 Tika 配置自定义索引，请保留 Tika 配置。
 
-### 撤消更改 {#undoing-a-change}
+### 还原更改 {#undoing-a-change}
 
 有时需要撤消索引定义中的更改。原因可能是错误地作出了更改，或者不再需要更改。例如，错误地创建并已部署了索引定义 `damAssetLucene-8-custom-3`。因此，您可能要恢复为以前的索引定义 `damAssetLucene-8-custom-2`。为此，需要添加一个名为 `damAssetLucene-8-custom-4` 的新索引，该索引包含上一个索引 `damAssetLucene-8-custom-2` 的定义。
 

@@ -4,8 +4,8 @@ description: 了解 AEM as a Cloud Service 的注册、登录、用户数据和�
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -61,9 +61,9 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 * [Sling 身份验证框架](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
 * 并考虑[请求关于登录的 AEM Community Experts 讲座](http://bit.ly/ATACEFeb15)。
 
-### 与身份提供者集成 {#integration-with-an-idp}
+### 与标识提供者集成 {#integration-with-an-idp}
 
-客户可以与 IdP（身份提供者）集成来验证用户身份。集成技术包括 SAML 和 OAuth/SSO，如下所述。
+客户可以与 IdP（标识提供者）集成来验证用户身份。集成技术包括 SAML 和 OAuth/SSO，如下所述。
 
 **基于 SAML**
 
@@ -106,7 +106,7 @@ AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最�
 
 发布层访问策略（也称为封闭用户组 (CUG)）是在 AEM 创作实例中定义的，如[此处所述](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=zh-Hans#applying-your-closed-user-group-to-content-pages)。为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
 
-* 如果用户通过使用 SAML 向身份提供者 (IdP) 进行身份验证来登录，则身份验证处理程序将识别用户的组成员资格（应与发布层上的 CUG 匹配），并通过存储库记录保留用户与组之间的关联
+* 如果用户通过使用 SAML 向标识提供者 (IdP) 进行身份验证来登录，则身份验证处理程序将识别用户的组成员资格（应与发布层上的 CUG 匹配），并通过存储库记录保留用户与组之间的关联
 * 如果在没有 IdP 集成的情况下完成登录，则自定义代码可应用相同的存储库结构关系。
 
 独立于登录，自定义代码还可以根据组织的独特要求保留和管理用户的组成员资格。
