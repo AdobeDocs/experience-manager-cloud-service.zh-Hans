@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: def7f7071dac447397f40186de1380b8e5575608
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 维护任务是按计划运行以优化存储库的进程。 借助AEMas a Cloud Service，客户配置维护任务的操作属性的需求非常小。 客户可以将资源集中在应用程序级别的问题上，从而让基础架构操作Adobe。
 
-## 配置维护任务
+## 配置维护任务 {#maintenance-tasks-configuring}
 
 在AEM的早期版本中，您可以使用维护卡（工具>操作>维护）配置维护任务。 对于AEMas a Cloud Service，维护卡不再可用，因此应将配置提交到源控件并使用Cloud Manager进行部署。 Adobe会管理那些具有客户无法配置的设置的维护任务（例如，数据存储垃圾收集、审核日志清除、版本清除）。 其他维护任务可由客户配置，如下表所述。
 
