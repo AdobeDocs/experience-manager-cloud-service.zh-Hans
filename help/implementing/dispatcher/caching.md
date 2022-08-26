@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
+source-git-commit: 5319eca105564843f26e7fb6d9cfd5aa065b8ca0
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2683'
 ht-degree: 1%
 
 ---
@@ -197,6 +197,18 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 
 在AdobeCDN中接收HEAD请求时， **not** 缓存后，调度程序和/或AEM实例将该请求转换并作为GET请求接收。 如果响应可缓存，则随后将从CDN提供HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内(取决于 `Cache-Control` TTL。
 
+### 营销活动参数
+
+营销活动参数会添加到网站以跟踪不同的营销活动，但很少会影响网站的外观。 这就是为什么在调度程序中，调度程序缓存决策通常可以忽略这些因素的原因。 这可以通过设置 [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Adobe维护文件中常用营销查询参数的列表 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 取消对网站营销活动使用的行的注释，并取消对 `/ignoreUrlParams` 部分。
+
+```
+/ignoreUrlParams {
+ 	/0001 { /glob "*" /type "deny" }
+ 	$include "../cache/marketing_query_parameters.any"
+}
+```
+
 ## 调度程序缓存失效 {#disp}
 
 通常，不必使调度程序缓存失效。 相反，在重新发布内容时，您应该依赖调度程序刷新其缓存，并依赖CDN遵守缓存过期标头。
@@ -262,7 +274,7 @@ Adobe建议依赖标准缓存标头来控制内容交付生命周期。 但是�
      </td>
   </tr>
   <tr>
-    <td>复制API</td>
+    <td>复制 API</td>
     <td>发布</td>
     <td>不可能，在每个发布实例上引发事件。</td>
     <td>尽力而为。</td>
@@ -385,7 +397,7 @@ public class InvalidatedHandler implements EventHandler {
 >
 >调度程序失效时，不会刷新AdobeCDN。 Adobe管理的CDN遵循TTL，因此无需刷新。
 
-### 复制API {#replication-api}
+### 复制 API {#replication-api}
 
 下面介绍了使用复制API停用操作时的实施模式：
 
