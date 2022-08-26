@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
+source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 75%
+source-wordcount: '1024'
+ht-degree: 70%
 
 ---
 
@@ -46,13 +46,31 @@ ht-degree: 75%
 1. 在配置页面上，点按 **[!UICONTROL 创建]** 创建 [!DNL Adobe Sign] 配置AEM Forms。
 1. 在 **[!UICONTROL 常规]** 选项卡 **[!UICONTROL 创建Adobe Sign配置]** 页面，指定 **[!UICONTROL 名称]** 对于配置，请点按 **[!UICONTROL 下一个]**. 您可以选择指定 **[!UICONTROL 标题]** 并浏览以选择 **[!UICONTROL 缩略图]** ，以用于配置。
 
-1. 将当前浏览器窗口中的 URL 复制到记事本。在下一个步骤中使用 [!DNL AEM Forms] 配置 [!DNL Adobe Sign] 应用程序时需要此 URL。
+1. 将当前浏览器窗口中的 URL 复制到记事本。在下一个步骤中使用 [!DNL AEM Forms] 配置 [!DNL Adobe Sign] 应用程序时需要此 URL。点按 **[!UICONTROL 下一个]**.
+
+1. 在 **[!UICONTROL 设置]** 选项卡 **[!UICONTROL OAuth URL]** 字段中包含默认URL。 URL 的格式为：
+
+   `https://<shard>/public/oAuth/v2`
+
+   例如：
+   `https://secure.na1.echosign.com/public/oauth/v2`
+
+   其中：
+
+   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL  Adobe Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+
+   如果为 Adobe Experience Manager 功能或组件创建另一个 [!DNL Adobe Sign] 配置，请确保所有 [!DNL Adobe Sign] 云配置指向同一分片。
+
+   >[!NOTE]
+   >
+   > 保留 **创建Adobe Sign配置** 页面。 不要关闭它。 您可以检索 **客户端Id** 和 **客户端密钥** 在为 [!DNL Adobe Sign] 应用程序，如后续步骤中所述。
+
 
 1. 配置 [!DNL Adobe Sign] 应用程序的 OAuth 设置：
 
    1. 打开浏览器窗口，并登录到您的 [!DNL Adobe Sign] 开发人员帐户。
    1. 选择为 [!DNL AEM Forms]，然后点按 **[!UICONTROL 为应用程序配置OAuth]**.
-   1. 在 **[!UICONTROL 重定向URL]** 框中，添加在上一步中复制的URL并单击 **[!UICONTROL 保存]**.
+   1. 在 **[!UICONTROL 重定向URL]** 框中，添加在上一步中复制的URL（步骤7）并单击 **[!UICONTROL 保存]**.
    1. 为 [!DNL Adobe Sign] 应用程序并单击 **[!UICONTROL 保存]**.
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
@@ -65,20 +83,7 @@ ht-degree: 75%
 
    ![OAuth 配置](assets/oauthconfig_new.png)
 
-1. 返回到 **[!UICONTROL 创建Adobe Sign配置]** 页面。 在 **[!UICONTROL 设置]** 选项卡 **[!UICONTROL OAuth URL]** 字段中会提及默认URL。 URL 的格式为：
-
-   `https://<shard>/public/oAuth/v2`
-
-   例如：
-   `https://secure.na1.echosign.com/public/oauth/v2`
-
-   其中：
-
-   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL Adobe Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
-
-   如果为 Adobe Experience Manager 功能或组件创建另一个 [!DNL Adobe Sign] 配置，请确保所有 [!DNL Adobe Sign] 云配置指向同一分片。
-
-1. 指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）和 **[!UICONTROL 客户端密钥]**. 使用您在上一步中创建的 Adobe Sign 应用程序的客户端 ID 和客户端密码。
+1. 返回到 **[!UICONTROL 创建Adobe Sign配置]** 页面。 指定[**[!UICONTROL 客户端ID]** （也称为应用程序ID）和 **[!UICONTROL 客户端密钥]**]。 使用 [Adobe Sign应用程序的客户端ID和客户端密钥](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 您在上一步中创建。
 
 1. 选择 **[!UICONTROL 为附件启用Adobe Sign]** 用于将附加到自适应表单的文件附加到相应 [!DNL Adobe Sign] 文档已发送以供签名。
 
