@@ -2,10 +2,10 @@
 title: 记录AEMas a Cloud Service
 description: 了解如何使用AEM Logging为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
+source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 3%
+source-wordcount: '2334'
+ht-degree: 2%
 
 ---
 
@@ -560,7 +560,7 @@ Apache层日志（包括调度程序）位于包含调度程序的Docker容器�
 >
 >不支持沙盒程序环境的Splunk转发。
 
-除了暂存/生产环境外，您还应确保初始请求包含所有应启用的开发环境。
+除了暂存/生产环境外，您还应确保初始请求包含所有应启用的开发环境。 Splunk必须具有SSL证书，并且面向公共。
 
 如果在初始请求后创建的任何新开发环境都打算启用Splunk转发，但未启用它，则应再发出一个请求。
 
