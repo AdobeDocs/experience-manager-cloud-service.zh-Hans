@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的缓存
 description: 'AEM as a Cloud Service 中的缓存 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a624b4f1999238adae2f6a03c2169cb30de9f730
+source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 1%
@@ -196,19 +196,6 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 ### HEAD请求行为 {#request-behavior}
 
 在AdobeCDN中接收HEAD请求时， **not** 缓存后，调度程序和/或AEM实例将该请求转换并作为GET请求接收。 如果响应可缓存，则随后将从CDN提供HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内(取决于 `Cache-Control` TTL。
-
-<!---### Marketing campaign parameters {#marketing-parameters}
-
-Marketing campaign parameters are added to a website to track different marketing campaigns but rarely have impact on how the website should look like. That's why in the dispatcher they can mostly be ignored for dispatcher caching decisions. This can be achieved by setting the [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) parameter.
-Adobe maintains a list of commonly used marketing query parameters in the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. Uncomment the lines that are used by the websites marketing campaigns and uncomment the `/ignoreUrlParams` section in the enabled farm.
-
-```
-/ignoreUrlParams {
- 	/0001 { /glob "*" /type "deny" }
- 	$include "../cache/marketing_query_parameters.any"
-}
-```
--->
 
 ## 调度程序缓存失效 {#disp}
 
