@@ -2,10 +2,10 @@
 title: 许可证功能板
 description: Cloud Manager提供了一个功能板，用于轻松查看您的组织或租户可用的AEMaCS产品权利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '787'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Cloud Manager许可证功能板提供对以下信息的轻松访问：
 >
 >中的用户 **业务所有者** 角色必须登录才能查看许可证功能板。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 在产品概述页面上，切换到 **许可证** 选项卡。
 
@@ -67,35 +67,21 @@ Cloud Manager许可证功能板提供对以下信息的轻松访问：
 
 AEM还制定了规则来排除知名机器人，包括定期访问网站的知名服务，以刷新其搜索索引或服务。
 
-以下是排除的知名服务示例的非详尽列表。
-
-* AddSearchBot
-* AhrefsBot
-* Applebot
-* 询问Jeeves公司蜘蛛
-* Bingbot
-* BingPreview
-* BLEXBot
-* BuiltWith
-* 字节蜘蛛
-* CrawlerKengo
-* Facebookexternalhit
-* Google AdsBot
-* Google AdsBot Mobile
-
 ### 为什么我的Analytics报表显示的结果与AEM内容请求不同？ {#why-are-reports-different}
 
 如此表所概述，内容请求与组织的Analytics报表工具将存在差异。
 
 | 差异原因 | 说明 |
 |---|---|
-| 标记 | 作为AEM内容请求进行跟踪的所有页面，可能会标记为Analytics跟踪，也可能未标记为Analytics跟踪。<br>作为AEM内容请求进行跟踪的所有API调用都不会由组织的Analytics工具进行标记。<br>可以标记页面或API调用以跟踪操作而不是视图。 |
+| 标记 | 作为AEM内容请求进行跟踪的所有页面，可能会标记为Analytics跟踪，也可能未标记为Analytics跟踪。 作为AEM内容请求进行跟踪的所有API调用都不会由组织的Analytics工具进行标记。<br>可以标记页面或API调用以跟踪操作或仅标记唯一的页面查看次数，而不是所有视图。 |
 | Tag Management规则 | 标签管理规则设置可能会导致页面上出现各种数据收集配置，从而导致内容请求跟踪出现一些差异。 |
 | 机器人 | 尚未由AEM预先识别和删除的未知机器人可能导致跟踪差异。 |
 | 报告包 | 属于同一AEM实例和域的页面可能会将数据发送到不同的Analytics报表包。 |
 | 第三方监控和安全工具 | 监控和安全扫描工具可能会为Analytics报表中未跟踪的AEM生成内容请求。 |
 | 预取请求 | 使用预取服务预加载页面以提高速度，可能会导致内容请求流量显着增加。 |
-| DDOS | 虽然Adobe会竭尽全力自动检测和过滤来自DDOS攻击的流量，但无法保证会检测到所有可能的DDOS攻击。 |
+| DDOS | 虽然Adobe会竭尽全力自动检测和过滤来自DDOS攻击的流量，但无法保证会检测到所有可能的DDOS攻击 |
+| 流量阻止程序 | 在浏览器中使用跟踪器阻止程序可能会选择禁用某些请求进行跟踪。 |
+| 防火墙 | 防火墙可能会阻止Analytics跟踪。 这在公司防火墙方面更为常见。 |
 
 ### 如果我使用自己的CDN，该怎么办？ {#using-own-cdn}
 
