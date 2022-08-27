@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.9.0发行说明
-description: 以下是AEM as a Cloud Service中Cloud Manager 2022.9.0的发行说明。
+title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.8.0发行说明
+description: 以下是AEM as a Cloud Service中Cloud Manager 2022.8.0的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4eebe0fe80f816bb7f92026531848cec84285078
+source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 6%
+source-wordcount: '187'
+ht-degree: 7%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.9.0发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.8.0发行说明 {#release-notes}
 
-本页记录了AEMas a Cloud Service中Cloud Manager 2022.9.0的发行说明。
+本页记录了AEMas a Cloud Service中Cloud Manager 2022.8.0的发行说明。
 
 >[!NOTE]
 >
@@ -21,8 +21,16 @@ ht-degree: 6%
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.9.0版的发布日期是2022年9月9日。 下一版本计划于2022年10月6日发布。
+AEMas a Cloud Service中Cloud Manager 2022.8.0版的发布日期是2022年8月11日。 下一版本计划于2022年9月9日发布。
 
 ## 新增功能 {#what-is-new}
 
+* 在 [添加环境工作流。](/help/implementing/cloud-manager/manage-environments.md)
+* [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 已将Cloud Manager中包含的内容更新到版本37。
+
 ## 错误修复 {#bug-fixes}
+
+* 更正了未在Cloud Manager UI中创建或删除新旧版用户的情况。
+* 存储库创建失败的某些情况已变得更具弹性。
+* 由于引入了重试，VSTS组织设置错误的罕见情况现在有所减少。
+* 现在，改进了新建旧帐户子帐户用户创建期间的验证，可防止某些错误。
