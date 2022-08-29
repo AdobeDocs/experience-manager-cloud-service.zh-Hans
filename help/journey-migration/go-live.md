@@ -2,10 +2,10 @@
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 0%
+source-wordcount: '1718'
+ht-degree: 1%
 
 ---
 
@@ -144,6 +144,7 @@ ht-degree: 0%
          * [管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * 管理自定义域名(DNS)
+         * 为确保DNS转换不会引起意外问题，最好在上线并进行一轮UAT测试之前创建一个测试子域以将生产实例连接到。 因此，如果您的域是example.com，则可以创建一个子域test.example.com，并将其应用到生产环境。 在域的UAT测试期间，您将需要查找正确的链接重定向、缓存和调度程序配置等内容。
          * [自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
