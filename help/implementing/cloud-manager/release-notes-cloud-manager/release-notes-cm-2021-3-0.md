@@ -3,7 +3,7 @@ title: AEM 2021.3.0版中Cloud Manageras a Cloud Service的发行说明
 description: AEM 2021.3.0版中Cloud Manageras a Cloud Service的发行说明
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -29,7 +29,7 @@ AEM 2021.3.0版中Cloud Manager的发布日期是2021年3月11日。
    * 从同时具有站点和资产的现有项目中删除站点或资产。
    * 将第二个未使用的解决方案权利添加到现有项目或作为新项目。
 
-* **AEM推送更新** 现在将同时为“管道执行”和“活动”屏幕显示标签。
+* **AEM维护更新** 现在将同时为“管道执行”和“活动”屏幕显示标签。
 
 * 如果某个环境已休眠，但同时也有一个AEM更新可用，则 **冬眠** 状态将优先于 **更新可用**.
 

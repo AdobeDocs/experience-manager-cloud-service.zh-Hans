@@ -3,39 +3,39 @@ title: AEM 版本更新
 description: 'AEM 版本更新 '
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 36%
+source-wordcount: '384'
+ht-degree: 4%
 
 ---
+
 
 # AEM 版本更新 {#aem-version-updates}
 
 ## 简介 {#introduction}
 
-AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产实例和暂存实例均会更新到最新 AEM 版本而无需中断用户的服务。
+AEM as a Cloud Service现在使用持续集成和持续交付(CI/CD)来确保您的项目处于最新的AEM版本。 这意味着生产实例和暂存实例将更新到最新的AEM版本，而不会中断用户的服务。
 
 >[!NOTE]
->如果对生产环境的更新失败，Cloud Manager 将自动回滚到暂存环境。此操作自动完成，以确保在更新完成后，暂存环境和生产环境均采用同一个 AEM 版本。
+>
+>如果生产环境更新失败，Cloud Manager将自动回滚暂存环境。 此操作会自动完成，以确保更新完成后，暂存环境和生产环境都位于同一AEM版本上。
 
-AEM 版本更新分为两种类型：
+有两种类型的AEM版本更新：
 
-* **AEM 推送更新**
+* **AEM维护更新**
 
    * 可以每日发布。
-
-   * 主要是用于维护，包括最新的错误修复和安全更新。
-
-      由于定期应用更改，因此其影响是增量式的，因此减少了对您服务的影响。
+   * 主要用于维护目的，包括最新的错误修复和安全更新。
+   * 由于定期应用更改，因此影响最小。
 
 * **新增功能更新**
 
-   * 按照可预测的每月计划发布。
+   * 通过可预测的每月计划发布。
 
-AEM更新通过密集且完全自动化的产品验证管道，涉及多个步骤，以确保生产中任何系统的服务不会中断。 运行状况检查用于监控应用程序的运行状况。 如果这些检查在AEMas a Cloud Service更新期间失败，则该版本将不继续，并且Adobe将调查更新为何会导致此意外行为。
+AEM更新通过一个涉及多个步骤且完全自动化的产品验证管道，可确保生产中任何系统的服务不会中断。 运行状况检查用于监控应用程序的运行状况。 如果这些检查在AEMas a Cloud Service更新期间失败，则该版本将不继续，并且Adobe将调查更新为何会导致此意外行为。
 
-[产品测试和客户功能测试](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 在AEM版本更新期间，还会验证阻止产品升级和客户代码推送中断生产的功能。
+[产品测试和客户功能测试，](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) 这样可以防止产品升级和客户代码推送破坏生产系统，也会在AEM版本更新期间进行验证。
 
 >[!NOTE]
 >
@@ -43,6 +43,6 @@ AEM更新通过密集且完全自动化的产品验证管道，涉及多个步�
 
 ## 复合节点存储 {#composite-node-store}
 
-如上所述，在大多数情况下，更新将导致零停机时间，包括作者（即节点群集）。 由于 *复合节点存储* 功能。
+在大多数情况下，更新将导致零停机时间，包括对于创作实例（即节点群集）。 由于Oak中的复合节点存储功能，可能会进行滚动更新。
 
-此功能允许AEM同时引用多个存储库。 在滚动部署中，新的绿色AEM版本包含其自己的 `/libs` （基于TarMK的不可变存储库），与旧的蓝色AEM版本不同，不过这两个存储库都引用了一个基于DocumentMK的共享可变存储库，其中包含以下区域： `/content` , `/conf` , `/etc` 等等。 因为蓝色和绿色都有各自的版本 `/libs`，则它们在滚动更新期间均可处于活动状态，在蓝色完全替换为绿色之前都会占用流量。
+此功能允许AEM同时引用多个存储库。 在滚动部署中，新的绿色AEM版本包含其自身的 `/libs` （基于TarMK的不可变存储库），与旧的蓝色AEM版本不同，不过这两个存储库都引用了一个基于DocumentMK的共享可变存储库，其中包含以下区域： `/content` , `/conf` , `/etc` 等等。 因为蓝色和绿色都有各自的版本 `/libs`，则它们在滚动更新期间均可处于活动状态，在蓝色完全替换为绿色之前都会占用流量。
