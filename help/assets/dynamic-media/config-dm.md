@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
+source-git-commit: 7a7a3de89d02ac34d40a59e87cc049652730a72d
 workflow-type: tm+mt
-source-wordcount: '3574'
+source-wordcount: '3566'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * 大写字母
    * 小写字母
-   * 数值
+   * 数字
    * 特殊字符： `# $ & . - _ : { }`
 
    的 **[!UICONTROL 当前密码]** 字段，且该字段会在交互中被有意预填充和隐藏。
@@ -92,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | 属性 | 描述 |
    |---|---|
-   | 公司 | Dynamic Media帐户的名称。 您可能为不同的子品牌、部门或暂存/生产环境拥有多个Dynamic Media帐户。<br>另请参阅 [配置Dynamic Media公司别名帐户](/help/assets/dynamic-media/dm-alias-account.md). |
+   | 公司 | Dynamic Media帐户的名称。 您可以在Experience Manager中有一个Dynamic Media帐户。<!-- CQDOC-19579 and CQDOC-19612 --><br>另请参阅 [配置Dynamic Media公司别名帐户](/help/assets/dynamic-media/dm-alias-account.md). |
    | 公司根文件夹路径 | 您公司的根文件夹路径。 |
    | 发布资产 | 您可以从以下三个选项中进行选择：<br>**[!UICONTROL 立即&#x200B;]**— 上传资产后，系统会摄取资产并立即提供URL/嵌入。 发布资产无需用户干预。<br>**[!UICONTROL 激活时]**  — 必须先明确发布资产，然后才能提供URL/嵌入链接。<br>**[!UICONTROL 选择性发布&#x200B;]**— 资产自动发布仅供安全预览。 也可以将它们明确发布到Experience Manageras a Cloud Service，而不发布到DMS7以在公共域中交付。 将来，此选项打算将资产发布到Experience Manager，以as a Cloud Service，并将资产发布到Dynamic Media，这两个选项会相互排斥。 也就是说，您可以将资产发布到DMS7，以便使用智能裁剪或动态演绎版等功能。 或者，您也可以在Experience Manageras a Cloud Service中专门发布资产以进行预览；这些相同的资产不会发布在DMS7中，才能在公共域中交付。 |
    | 安全预览服务器 | 用于指定安全演绎版预览服务器的URL路径。 也就是说，在生成演绎版后，Experience Manageras a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回Experience Manageras a Cloud Service实例)。<br>除非您有使用自己公司服务器或特殊服务器的特殊安排，否则Adobe建议您按指定的方式保留此设置。 |
@@ -107,7 +107,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。将保存新的Dynamic Media密码和配置。 如果已选择 **[!UICONTROL 取消]** 相反，不会进行密码更新。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。将保存新的Dynamic Media密码和配置。 如果已选择 **[!UICONTROL 取消]** 相反，不会进行密码更新。
 1. 在 **[!UICONTROL 配置Dynamic Media]** 对话框，选择 **[!UICONTROL 确定]** 以开始配置。
 
    >[!IMPORTANT]
@@ -162,7 +162,7 @@ Dynamic Media中的密码过期时间设置为从当前系统日期起100年。
 
 * 大写字母
 * 小写字母
-* 数值
+* 数字
 * 特殊字符： `# $ & . - _ : { }`
 
 如有必要，您可以通过选择密码眼图标来显示密码，来检查您键入或重新键入的密码的拼写。 再次选择图标以隐藏密码。
@@ -245,7 +245,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
    | RGB默认色彩空间 | 默认RGB颜色配置文件的名称。 |
    | 颜色转换调色 | 指定渲染意图。 可接受的值包括： **[!UICONTROL 知觉]**, **[!UICONTROL 相对色度]**, **[!UICONTROL 饱和度]**, **[!UICONTROL 绝对色度]**. Adobe建议 **[!UICONTROL 相对]** 作为默认设置。 |
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。
 
 例如，可以将 **[!UICONTROL RGB 默认色彩空间]**&#x200B;设置为 *sRGB*，将 **[!UICONTROL CMYK 默认色彩空间]**&#x200B;设置为 *WebCoated*。
 
@@ -406,7 +406,7 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它使�
 
    ![作业处理队列的配置](assets/chlimage_1-1.jpeg)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。
 
 #### 更新预定义的Granite Transient工作流队列工作线程 {#update-granite-transient-workflow-queue-worker-threads-images}
 
@@ -435,7 +435,7 @@ Granite传输工作流队列用于 **[!UICONTROL DAM更新资产]** 工作流。
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。
 
 #### 更新与Dynamic Media Classic(Scene7)服务器的最大上传连接数 {#update-max-s7-upload-connections}
 
@@ -458,7 +458,7 @@ Dynamic Media Classic(Scene7)上传连接设置可将Experience Manager资产同
 
    ![Adobe Scene7上传服务](assets/chlimage_1-2.jpeg)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
