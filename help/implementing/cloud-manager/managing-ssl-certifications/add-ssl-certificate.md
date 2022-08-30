@@ -2,9 +2,9 @@
 title: 添加 SSL 证书
 description: 了解如何使用Cloud Manager的自助工具添加您自己的SSL证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
+source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '579'
 ht-degree: 2%
 
 ---
@@ -57,9 +57,7 @@ SSL证书文件必须采用PEM格式才能与Cloud Manager一起安装。 PEM格
 
    * 在 **证书名称**.
       * 此名称仅供参考，可以是帮助您轻松引用证书的任何名称。
-   * 粘贴 **证书**, **私钥**&#x200B;和 **证书链** 值。
-      * 您可以使用输入框右侧的粘贴图标。
-      * 这三个字段都是必填字段。
+   * 粘贴 **证书**, **私钥**&#x200B;和 **证书链** 值。 这三个字段都是必填字段。
 
    ![“添加SSL证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
