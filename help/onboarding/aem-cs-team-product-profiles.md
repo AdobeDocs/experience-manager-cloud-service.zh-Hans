@@ -1,15 +1,15 @@
 ---
-title: AEMas a Cloud Service团队和产品配置文件
+title: AEM as a Cloud Service 团队和产品配置文件
 description: 了解AEMas a Cloud Service团队和产品配置文件，以及如何授予和限制对许可Adobe解决方案的访问权限。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 3%
 
 ---
 
-# AEMas a Cloud Service团队和产品配置文件 {#product-profiles}
+# AEM as a Cloud Service 团队和产品配置文件 {#product-profiles}
 
 了解AEMas a Cloud Service团队和产品配置文件，以及如何授予和限制对许可Adobe解决方案的访问权限。
 
@@ -47,7 +47,7 @@ Cloud Manager已预配置了产品配置文件，可将其视为基于角色的�
 
 每个产品配置文件都具有与其关联的特定权限。
 
-* **业务所有者**  — 在此角色中，您有权添加新程序或编辑程序、添加或更新环境、添加/编辑/删除/运行管道、将代码部署到AEM环境或执行代码质量检查。
+* **业务所有者**  — 在此角色中，您有权添加新程序或编辑程序、添加或更新环境、将代码部署到AEM环境或执行代码质量检查。
 * **部署管理器**  — 在此角色中，您有权添加或更新环境、运行任何管道、将代码部署到AEM环境或执行代码质量检查。
 * **开发人员**  — 在此角色中，您有权生成个人访问令牌以访问git。
 * **项目经理**  — 在此角色中，您有权计划管道、覆盖3层质量门并提供生产批准。
