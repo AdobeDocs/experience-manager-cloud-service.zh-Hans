@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频�
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '929'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Dynamic Media包含交付360个视频资产的本机支持。 默认情况下，
 
 ## 360视频正在使用 {#video-in-action}
 
-选择 [空间站360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 要打开浏览器窗口并观看360°视频，请执行以下操作： 在视频播放期间，将指针拖动到新位置以更改观看角度。
+选择 [空间站360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 要打开浏览器窗口并观看360°视频，请执行以下操作： 在视频播放期间，将指针拖动到新位置以更改观看角度。
 
 ![360视频示例](assets/6_5_360videoiss_simplified.png)
 *360空间站的视频帧*
@@ -52,9 +52,9 @@ Dynamic Media包含交付360个视频资产的本机支持。 默认情况下，
 
    与标准非360视频内容相比，渲染360视频内容对源视频分辨率和编码呈现分辨率提出了更高的要求。
 
-   您可以使用已随附的现成自适应视频配置文件Dynamic Media。 但是，对于使用非360视频查看器呈现的相同设置进行编码的非360视频，其视频质量会明显低于预期的360视频质量。 因此，如果需要高品质的360视频，请执行以下操作：
+   您可以使用已随附的现成自适应视频配置文件Dynamic Media。 但是，对于使用非360视频查看器呈现的相同设置编码的非360视频，其360视频质量会明显低于预期。 因此，如果需要高品质的360视频，请执行以下操作：
 
-   * 理想情况下，原始360视频内容具有以下任一分辨率：
+   * 理想情况下，您的原始360视频内容将具有以下任一分辨率：
 
       * 1080p - 1920 x 1080，称为全高清或全高清分辨率，或
       * 2160p - 3840 x 2160，称为4k、UHD或UltraHD分辨率。 这种大的显示分辨率通常出现在高档电视机和电脑显示器上。 2160p分辨率通常称为“4k”，因为宽度接近4000像素。 换句话说，它的像素数是1080p的四倍。
