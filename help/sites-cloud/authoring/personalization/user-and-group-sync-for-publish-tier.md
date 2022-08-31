@@ -2,10 +2,10 @@
 title: '注册、登录和用户配置文件 '
 description: 了解 AEM as a Cloud Service 的注册、登录、用户数据和组同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1174'
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 客户可以编写自己的自定义组件。要了解更多信息，请考虑熟悉：
 
 * [Sling 身份验证框架](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* 并考虑[请求关于登录的 AEM Community Experts 讲座](http://bit.ly/ATACEFeb15)。
+* 并考虑[请求关于登录的 AEM Community Experts 讲座](https://bit.ly/ATACEFeb15)。
 
 ### 与标识提供者集成 {#integration-with-an-idp}
 

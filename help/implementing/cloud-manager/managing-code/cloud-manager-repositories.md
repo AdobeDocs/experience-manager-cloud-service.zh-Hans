@@ -2,7 +2,7 @@
 title: Cloud Manager存储库
 description: 了解如何在Cloud Manager中创建、查看和删除git存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -80,8 +80,8 @@ $ git submodule update --init
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
    
     <groupId>customer.group.id</groupId>
@@ -119,7 +119,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 有关git子模块的更多信息，请参阅 [Git参考手册。](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-### 限制和Recommendations {#limitations-recommendations}
+### 限制和建议 {#limitations-recommendations}
 
 使用git子模块时，请注意以下限制。
 

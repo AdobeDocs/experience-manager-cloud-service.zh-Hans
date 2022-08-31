@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0 版的发行说明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 27%
+source-wordcount: '1316'
+ht-degree: 26%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -88,7 +88,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在 [!DNL Experience Manager
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=zh-Hans) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
    * 使用 XML 数据填充模板文件来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    * 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -134,11 +134,11 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在 [!DNL Experience Manager
 
 * 无法在之前创建名称相同但命名空间不同的标记。
 
-## 用于Experience Manageras a Cloud Service的XML文档 {#xml-documentation}
+## XML Documentation for Experience Manageras a Cloud Service {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-Experience Manageras a Cloud Service的XML文档通常可用。 它允许Experience Manageras a Cloud Service客户购买XML Documentation，以便跨多个渠道(包括Experience Manager Sites)导入、创建、管理和提供技术内容。
+XML Documentation forExperience Manageras a Cloud Service功能通常可用。 它允许Experience Manageras a Cloud Service客户促进XML Documentation添加，以便跨多个渠道(包括Experience Manager Sites)导入、创建、管理和提供技术内容。
 
 ## Cloud Manager {#cloud-manager}
 

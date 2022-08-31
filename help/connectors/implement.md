@@ -2,10 +2,10 @@
 title: 实施 AEM 连接器
 description: 实施 AEM 连接器
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ AEM 是一个前沿的 Web 体验管理解决方案，提供了许多潜在的�
 
 Experience Manager as a Cloud Service [文档](../overview/introduction.md)提供了有关在 AEM 中进行开发的有价值见解。以下是一些特定的技术主题和参考，您在实施 AEM 连接器时会发现它们很有用：
 
-* 具有良好注释的代码的 Adobe Consulting Services (ACS) [AEM 示例](http://adobe-consulting-services.github.io/acs-aem-samples/)，可帮助指导 AEM 开发人员
+* 具有良好注释的代码的 Adobe Consulting Services (ACS) [AEM 示例](https://adobe-consulting-services.github.io/acs-aem-samples/)，可帮助指导 AEM 开发人员
 * 本文的“常见集成模式”部分中的各种文档链接
 
 社区资源
@@ -45,9 +45,9 @@ Experience Manager as a Cloud Service [文档](../overview/introduction.md)提�
 
 除了上述静态文档之外，Adobe 和 AEM 社区还提供了资源来帮助将连接器推向市场：
 
-* Adobe 社区的 [AEM 论坛](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)是一个活动站点，您的同行可以在这里提出和回答问题
+* Adobe 社区的 [AEM 论坛](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)是一个活动站点，您的同行可以在这里提出和回答问题
 * 为某些合作伙伴级别提供了其他 Adobe 技术资源。了解有关 [Adobe Exchange Program](https://partners.adobe.com/exchangeprogram/experiencecloud) 的更多信息。
-* 如果您的组织希望获得实施帮助，请考虑 Adobe 的[专业服务](http://www.adobe.com/cn/marketing-cloud/service-support/professional-consulting-training.html)团队或参阅[解决方案合作伙伴查找器](https://solutionpartners.adobe.com/home/partnerFinder.html)，获取 Adobe 全球合作伙伴列表
+* 如果您的组织希望获得实施帮助，请考虑 Adobe 的[专业服务](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html)团队或参阅[解决方案合作伙伴查找器](https://solutionpartners.adobe.com/home/partnerFinder.html)，获取 Adobe 全球合作伙伴列表
 
 包结构规则
 -----------------------

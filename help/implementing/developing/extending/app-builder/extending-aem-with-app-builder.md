@@ -1,19 +1,19 @@
 ---
-title: 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe开发人员应用程序生成器。
-description: 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe开发人员应用程序生成器。
+title: 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder。
+description: 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder。
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
-# 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe开发人员应用程序生成器 {#extend-using-app-builder}
+# 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder {#extend-using-app-builder}
 
 ## 什么是App Builder for AEMas a Cloud Service {#project-firefly}
 
-新的Adobe开发人员应用程序生成器为开发人员提供了一个扩展性框架，以便轻松扩展AEMas a Cloud Service功能。
+新的Adobe Developer App Builder为开发人员提供了一个扩展性框架，以便轻松扩展AEMas a Cloud Service功能。
 
 App Builder提供了统一的第三方可扩展性框架，用于集成和创建可扩展Adobe Experience Manager的自定义体验。 借助基于Adobe基础架构的完整扩展性框架，开发人员可以构建自定义微服务，跨Adobe解决方案和IT堆栈的其余部分扩展和集成Adobe Experience Manager。
 
@@ -23,17 +23,17 @@ App Builder提供了统一的第三方可扩展性框架，用于集成和创建
 * 核心服务可扩展性 — 通过使用自定义特性和业务逻辑扩展默认行为，扩展核心应用程序功能。
 * 用户体验可扩展性 — 扩展核心体验以支持业务需求或构建特定于客户的数字资产、店面和后台应用程序。
 
-自2020年夏季以来，企业客户和合作伙伴可以通过我们的开发人员预览来使用应用程序生成器（以前称为项目Firefly）。 应用程序生成器的正式发布(GA)计划于2021年12月正式发布。 我们欢迎开发人员通过我们的 [试用计划](http://adobe.ly/appbuilder-trial).
+自2020年夏季以来，企业客户和合作伙伴可以通过我们的开发人员预览来使用应用程序生成器（以前称为项目Firefly）。 应用程序生成器的正式发布(GA)计划于2021年12月正式发布。 我们欢迎开发人员通过我们的 [试用计划](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
-> 对于要利用应用程序生成器的AEM 6.5客户，请转到 [使用Adobe Experience Manager开发人员应用程序生成器扩展Adobe 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> 对于要利用应用程序生成器的AEM 6.5客户，请转到 [使用Adobe Experience Manager App Builder扩展Adobe Developer 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## 架构 {#architecture}
 
-Adobe开发人员应用程序生成器不提供现成的解决方案，而是提供了一个通用、一致、标准化的开发平台，用于扩展Adobe云解决方案，例如AEM，包括：
+Adobe Developer App Builder提供了一个通用、一致、标准化的开发平台，用于扩展Adobe云解决方案(如AEM)，它不是现成的解决方案，它包括：
 
-* Adobe开发人员控制台 — 用于自定义微服务和扩展开发，允许开发人员在构建和管理项目的同时访问他们创建插件和集成所需的所有工具和API。
+* Adobe Developer控制台 — 用于自定义微服务和扩展开发，允许开发人员在构建和管理项目的同时，访问他们创建插件和集成所需的所有工具和API。
 * 开发人员工具 — 开源工具、SDK和库，允许开发人员轻松构建自定义扩展和集成。 使用React Spectrum(Adobe的UI工具包)为所有Adobe应用程序提供一个通用UI。
 * 服务 — 用于在无服务器平台上托管基础架构的I/O运行时，以及用于基于事件的集成的I/O事件。 我们还提供了用于存储数据和文件的开箱即用支持。
 * Adobe Experience Cloud — 开发人员可以提交要在其Experience Cloud组织中发布的扩展和集成。然后，系统管理员可以审核、管理和批准这些扩展。 发布后，您的自定义App Builder扩展和工具可以与其他Adobe Experience Cloud应用程序一起找到。
@@ -61,7 +61,7 @@ Adobe开发人员应用程序生成器不提供现成的解决方案，而是提
 
 准备好开始开发了吗？ 我们提供了许多示例应用程序，帮助您快速前进：
 
-* [Adobe开发人员网站上的应用程序生成器代码实验室](https://www.adobe.io/app-builder/docs/resources/)
+* [Adobe Developer网站上的应用程序生成器代码实验室](https://www.adobe.io/app-builder/docs/resources/)
 
 ## 支持 {#support}
 

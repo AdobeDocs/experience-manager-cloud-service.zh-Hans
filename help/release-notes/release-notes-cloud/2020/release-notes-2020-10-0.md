@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.10.0发行说明。”'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 20%
+source-wordcount: '1197'
+ht-degree: 21%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 20%
    * 用户可以 [选择和下载特定演绎版](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 现在。 可在“资源详细信息”页面中的“演绎版”面板中找到下载演绎版的新选项。
    * 来宾用户会话超时为15分钟，可确保所有并发用户获得更好的体验。
 
-* **[!DNL Adobe Asset Link]版本2.1**:的新版本 [Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 扩展 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]和 [!DNL Adobe InDesign] 中。 它增加了与最新版本的兼容性 [!DNL Adobe Creative Cloud] 2020年10月发布的2021版应用程序。
+* **[!DNL Adobe Asset Link]版本2.1**:的新版本 [Adobe资产链接](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 扩展 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]和 [!DNL Adobe InDesign] 中。 它增加了与最新版本的兼容性 [!DNL Adobe Creative Cloud] 2020年10月发布的2021版应用程序。
 
 * **[!DNL Assets]WebP文件支持**: [!DNL Assets] as a Cloud Service现在支持WebP图像格式。 WebP是由Google创建的一种新兴图像格式。 WebP文件格式的图像与JPG或PNG文件在视觉上没有区别，而且文件要小得多。 降低资产的文件大小缩短了页面加载时间，并帮助内容创建者提供更快的Web体验。 了解如何在 [创建处理配置文件](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
@@ -55,7 +55,7 @@ ht-degree: 20%
 
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=zh-Hans) 帮助您将模板和XML数据结合起来，以生成各种格式的文档。 该服务允许您以同步和批处理模式生成文档。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您将模板和XML数据结合起来，以生成各种格式的文档。 该服务允许您以同步和批处理模式生成文档。
 
 您可以将电子邮件发送到 [!DNL formscsbeta@adobe.com] 以注册 Beta 项目。
 
@@ -116,7 +116,7 @@ Cloud Manager在Experience Manageras a Cloud Service中的发布日期为2020.10
 
 * 添加了基于工作流标题、工作流模型、状态、启动器、有效负荷路径和开始日期的用于搜索工作流实例的支持。 请参阅 [搜索工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 进一步了解的新增功能和更新 [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 版本1.1.12。
 

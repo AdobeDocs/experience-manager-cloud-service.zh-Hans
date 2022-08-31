@@ -3,7 +3,7 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 对于具有现有代码库的客户，务必要完成AEM文档中描述的存储库重组练习，以确保将以前位于/etc下的内容移动到正确的位置。
 
-例如，对这些代码包还存在一些其他限制 [安装挂钩](http://jackrabbit.apache.org/filevault/installhooks.html) 不受支持。
+例如，对这些代码包还存在一些其他限制 [安装挂钩](https://jackrabbit.apache.org/filevault/installhooks.html) 不受支持。
 
 ## OSGI 配置 {#osgi-configuration}
 
@@ -104,7 +104,7 @@ ht-degree: 1%
    * 文件夹（添加、修改、删除）
    * 可编辑的模板（添加、修改、删除）
    * 上下文感知配置( `/conf`)（添加、修改、删除）
-   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂接。 请参阅 [Jackrabbit filevault文档](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) 关于安装挂钩。 请注意，AEM CS当前使用的是Filevault 3.4.0版，该版本限制管理员用户、系统用户和管理员组的成员安装挂接)。
+   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂接。 请参阅 [Jackrabbit filevault文档](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) 关于安装挂钩。 请注意，AEM CS当前使用的是Filevault 3.4.0版，该版本限制管理员用户、系统用户和管理员组的成员安装挂接)。
 
 可以通过将包嵌入install.author或install.publish文件夹(位于 `/apps`. 为了反映这一分离，已在AEM 6.5中完成了重组，有关推荐项目重组的详细信息，请参阅 [AEM 6.5文档。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -171,7 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="包管理器 — 迁移可变内容包"
 >abstract="探索包管理器的用例，了解应将内容包作为“一次性”安装的用例，其中包括将特定内容从生产导入到暂存，以调试生产问题、将小内容包从内部部署环境传输到AEM云环境等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="内容传输工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="内容转移工具"
 
 在某些用例中，应将内容包安装为“一次性”。 例如，将特定内容从生产导入到暂存，以调试生产问题。 对于这些情况， [包管理器](/help/implementing/developing/tools/package-manager.md) 可在AEMas a Cloud Service环境中使用。
 

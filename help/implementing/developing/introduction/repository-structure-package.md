@@ -2,7 +2,7 @@
 title: 'AEM 项目存储库结构包  '
 description: Adobe Experience Manager as a Cloud Service Maven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- ====================================================================== -->
@@ -182,4 +182,4 @@ Filter root's ancestor '/apps/some/path' is not covered by any of the specified 
 
 ## 其他资源
 
-+ [FileVault Content Package Maven插件](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven插件](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

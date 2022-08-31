@@ -2,10 +2,10 @@
 title: 创建 Adobe Experience Manager as a Cloud Service 的无障碍内容（WCAG 2.1 合规性）
 description: 使用 AEM as a Cloud Service 帮助残障人士访问和使用 Web 内容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
 source-wordcount: '14050'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -358,6 +358,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
       >
       >* `<b>`对象`<strong>`
       >* `<i>`对象`<em>`
+
       >
       >尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
 
@@ -564,7 +565,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 >
 >* [Px 到 Em 计算器 - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [字体大小转换：pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com：让 PX 到 EM 的转换变得简单](http://pxtoem.com)
+>* [PMtoEM.com：让 PX 到 EM 的转换变得简单](https://pxtoem.com)
 
 
 要检查对比度，可使用颜色对比度工具，例如 [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) 或 [WebAIM Color Contrast Checker](https://www.webaim.org/resources/contrastchecker/)。这些工具可以用来检查颜色对，并报告任何对比度问题。

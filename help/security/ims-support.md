@@ -2,7 +2,7 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -229,7 +229,7 @@ ACL 和权限仍将继续在 AEM 中管理。可以将从 IMS 同步的用户组
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 将您添加到相应的配置文件后，您应能够在 Cloud Manager 中通过用户界面的右上角的 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 访问各自的租户。
+1. 将您添加到相应的配置文件后，您应能够在 Cloud Manager 中通过用户界面的右上角的 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) 访问各自的租户。
 
 
 ### 访问 AEM as a Cloud Service 中的实例 {#accessing-instance-cloud-service}

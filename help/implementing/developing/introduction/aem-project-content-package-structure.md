@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2930'
 ht-degree: 13%
@@ -144,12 +144,12 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 将使用其声明的包类型标记包。 包类型有助于阐明包的用途和部署。
 
-+ 容器包必须设置 `packageType` to `container`. 容器包不得包含常规节点。 只允许使用OSGi包、配置和子包。 AEMas a Cloud Service中的容器不允许使用 [安装挂钩](http://jackrabbit.apache.org/filevault/installhooks.html).
++ 容器包必须设置 `packageType` to `container`. 容器包不得包含常规节点。 只允许使用OSGi包、配置和子包。 AEMas a Cloud Service中的容器不允许使用 [安装挂钩](https://jackrabbit.apache.org/filevault/installhooks.html).
 + 代码（不可变）包必须设置其 `packageType` to `application`.
 + 内容（可变）包必须设置其 `packageType` to `content`.
 
 
-有关详细信息，请参阅 [Apache Jackrabbit FileVault — 包Maven插件文档](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit包类型](http://jackrabbit.apache.org/filevault/packagetypes.html)和 [FileVault Maven配置代码段](#marking-packages-for-deployment-by-adoube-cloud-manager) 下。
+有关详细信息，请参阅 [Apache Jackrabbit FileVault — 包Maven插件文档](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit包类型](https://jackrabbit.apache.org/filevault/packagetypes.html)和 [FileVault Maven配置代码段](#marking-packages-for-deployment-by-adoube-cloud-manager) 下。
 
 >[!TIP]
 >
@@ -625,4 +625,4 @@ scripts=["
 ## 其他资源 {#additional-resources}
 
 + [使用Maven管理资源包](/help/implementing/developing/tools/maven-plugin.md)
-+ [FileVault Content Package Maven插件](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven插件](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

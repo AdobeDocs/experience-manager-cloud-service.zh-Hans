@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.7.0发行说明。”'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 76%
@@ -63,7 +63,7 @@ AEM Commerce现在可用于Cloud Service。
 
 [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)版本 2.11.0 现已作为 AEM Sites 的一部分提供，其中包括：
 
-* 推出了新的 [PDF 查看器组件](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
+* 推出了新的 [PDF 查看器组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)。
 
 * 核心组件的加速移动页面 (AMP) 支持功能现已可用。通过输入来自 Google 移动设备搜索结果的站点，可实现页面即时转换，这有助于提高用户参与度和 SEO，从而实现更快速的客户体验。
 有关更多详细信息，请参阅[核心组件的 AMP 支持](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)。

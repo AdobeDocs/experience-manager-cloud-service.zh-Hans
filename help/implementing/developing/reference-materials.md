@@ -2,7 +2,7 @@
 title: API 参考材料
 description: AEM具有广泛而功能强大的API，您可以将其用于数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 6%
@@ -34,7 +34,7 @@ AEM依赖于许多其他开源API。
 | API | 描述 |
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 使用Java内容存储库(JCR)存储和管理内容的Web框架 |
-| [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 实施可扩展且高性能的分层Java内容存储库(JCR)，以用作现代世界级网站的基础 |
+| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 实施可扩展且高性能的分层Java内容存储库(JCR)，以用作现代世界级网站的基础 |
 | [Java内容存储库](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR版本2.0的规范 |
 | [Apache Felix](https://felix.apache.org) | 开放服务网关倡议框架和服务平台的实施 |
 
@@ -46,7 +46,7 @@ AEM基于以下四个主要Java API集以首选项的降序顺序构建。
 |---|---|---|
 | 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 产品抽象概念，如页面、资产、工作流等。 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST和基于资源的抽象概念，如资源、值映射和HTTP请求。 |
-| 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 数据和内容抽象，如节点、属性和会话。 |
+| 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 数据和内容抽象，如节点、属性和会话。 |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi应用程序容器抽象，如服务和(OSGi)组件。 |
 
 如果AEM提供的API比Sling、JCR和OSGi更合适。 如果AEM不提供API，则首选使用Sling而不是JCR和OSGi。
