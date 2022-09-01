@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
+source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 4%
+source-wordcount: '1869'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 | × | 不受支持. 请勿使用。 |
 | - | 不可用 |
 
-| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans) |
+| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二进制** |  |  |  |  |  |  |
 | 创建原始 | ✓ | × | - | × | × | - |
@@ -84,6 +84,8 @@ ht-degree: 4%
 
 >[!NOTE]
 请参阅客户端代码以在开源环境中实施此方法 [aem上传库](https://github.com/adobe/aem-upload).
+[!IMPORTANT]
+在某些情况下，由于Experience Manager中存储的最终一致性，更改可能不会在请求之间完全传播。 由于未传播所需的文件夹创建，这会导致404个响应，以启动或完成上传调用。 客户端应收到404个响应，并通过使用回退策略实施重试来处理这些响应。
 
 ### 启动上传 {#initiate-upload}
 
@@ -167,8 +169,8 @@ CDN边缘节点有助于加快请求的二进制文件上传。
 | `versionLabel` | 字符串 | 可选 | 如果创建了新版本，则会显示与资产新版本关联的标签。 |
 | `versionComment` | 字符串 | 可选 | 如果创建了新版本，则与该版本关联的注释。 |
 | `replace` | 布尔型 | 可选 | 如果 `True` 并且存在具有指定名称的资产， [!DNL Experience Manager] 删除资产，然后重新创建资产。 |
-| `uploadDuration` | 数值 | 可选 | 文件完整上传的总时间（以毫秒为单位）。 如果指定，则上载持续时间将包含在系统的日志文件中，用于传输率分析。 |
-| `fileSize` | 数值 | 可选 | 文件的大小（以字节为单位）。 如果指定，则文件大小将包含在系统的日志文件中，用于传输速率分析。 |
+| `uploadDuration` | 数字 | 可选 | 文件完整上传的总时间（以毫秒为单位）。 如果指定，则上载持续时间将包含在系统的日志文件中，用于传输率分析。 |
+| `fileSize` | 数字 | 可选 | 文件的大小（以字节为单位）。 如果指定，则文件大小将包含在系统的日志文件中，用于传输速率分析。 |
 
 >[!NOTE]
 如果资产存在且 `createVersion` nor `replace` ，则 [!DNL Experience Manager] 使用新的二进制文件更新资产的当前版本。
