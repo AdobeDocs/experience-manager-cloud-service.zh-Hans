@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 站点主题是一个包，其中包含的 CSS、JavaScript 和静态资源�
 
 ## 标准站点主题 {#standard-site-theme}
 
-Adobe 提供了一个最佳实践参考主题，您可以基于此主题创建自己的主题。[GitHub上提供了标准网站主题](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
+Adobe 提供了一个最佳实践参考主题，您可以基于此主题创建自己的主题。[标准站点主题可在 GitHub 上找到](https://github.com/adobe/aem-site-template-standard/tree/main/theme)。
 
 ## 开发站点主题 {#developing-themes}
 
