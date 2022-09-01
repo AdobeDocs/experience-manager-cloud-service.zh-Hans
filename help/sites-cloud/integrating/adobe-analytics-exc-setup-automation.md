@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,19 +27,19 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 
 ## 前提条件 {#prerequisites}
 
-在使用此功能之前，请务必按照以下说明操作，以确保在您的环境中正确设置先决条件服务：
+在使用此功能之前，请务必遵循以下说明，以确保在您的环境中正确设置了必备服务：
 
-1. 登录Adobe Admin Console(https://adminconsole.adobe.com/)。
-1. 确保在右上角选择了正确的IMS组织ID。
-1. 单击产品导航选项。
-1. 检查是否已为IMS组织配置“Adobe Experience Manager as a Cloud Service”。
-1. 检查是否已为IMS组织配置“Adobe Analytics”。
-1. 转到Cloud Manager(https://experience.adobe.com/cloud-manager)。
-1. 选择相应的程序。
-1. 检查环境是否位于最新版本的Cloud Service上（如果未处于最新版本，请在菜单选项中选择更新）。
-1. 在Cloud Manager中运行完整堆栈管道。
+1. 登录到 Adobe Admin Console (https://adminconsole.adobe.com/)。
+1. 确保在右上角选择了正确的 IMS 组织 ID。
+1. 单击“产品”导航选项。
+1. 检查是否已为 IMS 组织设置了“Adobe Experience Manager as a Cloud Service”。
+1. 检查是否已为 IMS 组织设置了“Adobe Analytics”。
+1. 转到云管理器 (https://experience.adobe.com/cloud-manager)。
+1. 选择适当的程序。
+1. 检查该环境是否在最新版本的 Cloud Service 上（如果不是，请在菜单选项中选择“更新”）。
+1. 在云管理器中运行完整的堆栈管道。
 
-现在，Experience Cloud应该已准备好进行“环境设置自动化”。
+该环境现在应该准备好进行 Experience Cloud 设置自动化。
 
 ## 如何设置
 
