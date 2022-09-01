@@ -3,9 +3,9 @@ title: 什么是 Headless CMS？
 description: 了解 Headless CMS。 它们是如何工作的？ 有哪些备选方案和区别？ 为什么要使用 Headless CMS？
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '742'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Headless 内容管理是当今 Web 设计的关键开发，它将前端客户端
 
 有了 Headless 内容管理系统，后端和前端现在是相互分离的。
 
-无头部分是内容后端，因为无头内容管理系统(CMS)是仅限后端的内容管理系统，是作为内容存储库进行显式设计和构建的，该存储库使内容可通过API访问，以便在任何设备上显示。
+无头部分是内容后端，因为无头内容管理系统 (CMS) 是一种仅用于后端的内容管理系统，其明确作为内容存储库而设计和构建，使内容可通过 API 访问并在任何设备上显示。
 
 前端是独立开发和维护的，它使用内容投放 API 从 headless 后端提取内容，通常采用 JSON 格式。 例如，这可以是 React 或 Angular 应用程序（单页面应用程序 (SPA)）。
 
