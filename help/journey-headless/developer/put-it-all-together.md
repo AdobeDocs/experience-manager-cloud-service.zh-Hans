@@ -2,10 +2,10 @@
 title: 如何将所有内容整合在一起 — 在AEM Headless中查看您的应用程序和内容
 description: 在AEM无头开发人员历程的这一部分中，了解如何获取您的AEM项目（包括内容片段、GraphQL调用、REST API调用和应用程序）并为其上线做准备。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 7%
+source-wordcount: '1069'
+ht-degree: 9%
 
 ---
 
@@ -40,7 +40,7 @@ AEM SDK用于构建和部署自定义代码。 它是您在开始使用之前开
 
 与AEM SDK不同，AEM **无外设SDK** 是一组库，客户端可使用这些库通过HTTP快速轻松地与AEM Headless API交互。
 
-有关AEM Headless SDK的更多信息，请参阅 [文档位于此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/how-to/aem-headless-sdk.html?lang=en).
+有关AEM Headless SDK的更多信息，请参阅 [文档位于此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
 
 ## 其他开发工具 {#additional-development-tools}
 
@@ -54,7 +54,7 @@ AEM SDK用于构建和部署自定义代码。 它是您在开始使用之前开
 
 由于AEM是Java™应用程序，因此您需要安装Java™和Java™ SDK才能支持AEMas a Cloud Service的开发。
 
-您将使用Git来管理源控件，并将更改签入到Cloud Manager中，然后将其部署到生产实例。
+Git是用于管理源控件以及将更改签入到Cloud Manager中，然后将其部署到生产实例的内容。
 
 AEM使用Apache Maven生成从AEM Maven项目原型生成的项目。 所有主要IDE都为Maven提供集成支持。
 
@@ -76,7 +76,7 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的前端资产
 
 本地开发项目是基于Apache Maven构建的，并且使用Git进行源代码管理。 为了更新项目，开发人员可以使用他们首选的集成开发环境，例如Eclipse、Visual Studio代码或IntelliJ等。
 
-要测试将由您的无头应用程序摄取的代码或内容更新，您必须将更新部署到本地AEM运行时，其中包括AEM创作和发布服务的本地实例。
+要测试由无头应用程序摄取的代码或内容更新，您必须将更新部署到本地AEM运行时，该运行时包括AEM创作和发布服务的本地实例。
 
 请务必注意本地AEM运行时中每个组件之间的差异，因为在最重要的位置测试更新非常重要。 例如，在创作时测试内容更新或在发布实例中测试新代码。
 
@@ -90,22 +90,22 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的前端资产
 
 地方发展环境由三个主要领域组成：
 
-1. AEM项目 — 其中将包含AEM开发人员将要处理的所有自定义代码、配置和内容
-1. 本地AEM运行时 — AEM创作和发布服务的本地版本，将用于从AEM项目部署代码
+1. AEM项目 — 此项目包含AEM开发人员将要处理的所有自定义代码、配置和内容
+1. 本地AEM运行时 — 用于从AEM项目部署代码的AEM创作和发布服务的本地版本
 1. 本地Dispatcher运行时 — Apache httpd Web服务器的本地版本，其中包含Dispatcher模块
 
 设置本地开发环境后，您可以通过在本地部署静态节点服务器来模拟向React应用程序提供内容的过程。
 
-要更深入地了解如何设置本地开发环境以及内容预览所需的所有依赖关系，请参阅 [生产部署文档](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
+<!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已完成AEM Headless开发人员历程的这一部分，接下来您应该：
 
 * 熟悉AEM开发工具
 * 了解本地开发工作流
 
-您应该通过下一步审阅文档来继续您的AEM无头历程 [如何使用您的无头应用程序](/help/journey-headless/developer/go-live.md) 您实际将AEM Headless项目上线！
+通过下一步审阅文档，继续您的AEM无头历程 [如何使用您的无头应用程序](/help/journey-headless/developer/go-live.md) 您实际将AEM Headless项目上线！
 
 ## 其他资源 {#additional-resources}
 

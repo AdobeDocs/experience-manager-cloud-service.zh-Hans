@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有密钥值和环境特定值的OSGi配置 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3216'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技术堆栈中的一个基本元素。 它用于控制AEM及其配置的复合包。
 
-OSGi提供了标准化的基元，这些基元允许从可重用的小型协作组件构建应用程序。 这些组件可以组合成一个应用程序并进行部署。 这样可以轻松管理OSGi包，因为可以单独停止、安装和启动这些包。 互依关系会自动处理。 每个OSGi组件都包含在各种包中的一个包中。 有关更多信息，请参阅 [OSGi规范](https://www.osgi.org/Specifications/HomePage).
+OSGi提供了标准化的基元，这些基元允许从可重用的小型协作组件构建应用程序。 这些组件可以组合成一个应用程序并进行部署。 这样可以轻松管理OSGi包，因为可以单独停止、安装和启动这些包。 互依关系会自动处理。 每个OSGi组件都包含在各种包中的一个包中。 有关更多信息，请参阅 [OSGi规范](https://help.eclipse.org/latest/index.jsp).
 
 您可以通过AEM代码项目中的配置文件来管理OSGi组件的配置设置。
 
@@ -122,7 +122,7 @@ AEMas a Cloud Service运行模式根据环境类型和服务进行了详细定�
    }
    ```
 
-   请注意，单个OSGi配置文件可以结合使用这些配置值类型的任意组合。 例如：
+   单个OSGi配置文件可以结合使用这些配置值类型的任意组合。 例如：
 
    ```json
    {
@@ -174,7 +174,7 @@ Adobe Experience Manager as a Cloud Service要求使用特定于环境的配置(
 JSON格式的OSGi配置文件可以直接手动写入AEM项目。 这通常是为知名OSGi组件创建OSGi配置的最快捷方式，尤其是由定义配置的相同开发人员设计和开发的自定义OSGi组件。 此方法还可用于在不同运行模式文件夹中复制/粘贴和更新同一OSGi组件的配置。
 
 1. 在IDE中，打开 `ui.apps` 项目，找到或创建配置文件夹(`/apps/.../config.<runmode>`)以新OSGi配置需要执行的运行模式为目标
-1. 在此配置文件夹中，创建新 `<PID>.cfg.json` 文件。 PID是OSGi组件的永久标识。 它通常是OSGi组件实现的全类名称。 例如：
+1. 在此配置文件夹中，创建 `<PID>.cfg.json` 文件。 PID是OSGi组件的永久标识。 它通常是OSGi组件实现的全类名称。 例如：
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 请注意，OSGi配置工厂文件名使用 `<factoryPID>-<name>.cfg.json` 命名约定
 1. 打开新 `.cfg.json` ，并在 [JSON OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -202,7 +202,7 @@ AEM SDK快速入门Jar的AEM Web Console可用于配置OSGi组件，以及将OSG
 1. JSON格式的OSGi配置将显示在序列化配置属性部分中
    ![OSGi安装程序配置打印机](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. 在IDE中，打开 `ui.apps` 项目，找到或创建配置文件夹(`/apps/.../config.<runmode>`)以新OSGi配置需要生效的运行模式为目标。
-1. 在此配置文件夹中，创建新 `<PID>.cfg.json` 文件。 PID与步骤5中的值相同。
+1. 在此配置文件夹中，创建 `<PID>.cfg.json` 文件。 PID与步骤5中的值相同。
 1. 将步骤10中的序列化配置属性粘贴到 `.cfg.json` 文件。
 1. 保存对 `.cfg.json` 文件。
 1. 将新的OSGi配置文件添加到Git并将其提交到Git。
@@ -303,7 +303,7 @@ export ENV_VAR_NAME=my_value
 * 单独 `config.author` 和 `config.publish` 必须使用OSGi文件夹，如 [“Runmode分辨率”部分](#runmode-resolution).
 * 创建独立变量名称时，应使用以下两个选项：
    * 第一个选项，建议使用：(如 `config.author` 和 `config.publish`)来定义不同的值，请使用相同的变量名称。 例如
-      `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值对应于该层（创作或发布）的默认值。 通过 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 或通过客户端，使用“service”参数区分各层，如下所述 [API参考文档](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). “service”参数将变量的值绑定到相应的OSGi层。 它可以是“作者”、“发布”或“预览”。
+      `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值对应于该层（创作或发布）的默认值。 通过 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 或通过客户端，使用“service”参数区分各层，如下所述 [API参考文档](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). “service”参数将变量的值绑定到相应的OSGi层。 它可以是“作者”、“发布”或“预览”。
    * 第二个选项，用于使用前缀(如 `author_<samevariablename>` 和 `publish_<samevariablename>`
 
 ### 配置示例 {#configuration-examples}
@@ -460,7 +460,7 @@ config.dev
 
 ## 用于设置属性的Cloud Manager API格式 {#cloud-manager-api-format-for-setting-properties}
 
-请参阅 [本页](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) 关于如何配置API。
+请参阅 [本页](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) 关于如何配置API。
 >[!NOTE]
 >
 >确保使用的Cloud Manager API已分配角色“部署管理器 — Cloud Service”。 其他角色无法执行下面所有命令。
@@ -491,7 +491,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >默认变量不是通过API设置的，而是通过OSGi属性本身来设置。
 >
->请参阅 [本页](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) 以了解更多信息。
+>请参阅 [本页](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) 以了解更多信息。
 
 ### 通过API获取值 {#getting-values-via-api}
 
@@ -499,7 +499,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-请参阅 [本页](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) 以了解更多信息。
+请参阅 [本页](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) 以了解更多信息。
 
 ### 通过API删除值 {#deleting-values-via-api}
 
@@ -509,7 +509,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 要删除变量，请将其包含为空值。
 
-请参阅 [本页](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) 以了解更多信息。
+请参阅 [本页](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) 以了解更多信息。
 
 ### 通过命令行获取值 {#getting-values-via-cli}
 

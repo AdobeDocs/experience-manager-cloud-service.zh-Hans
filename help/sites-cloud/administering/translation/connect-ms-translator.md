@@ -4,16 +4,16 @@ description: 了解如何将 AEM 连接到现成的 Microsoft Translator 以自�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: ht
-source-wordcount: '514'
-ht-degree: 100%
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 99%
 
 ---
 
 # 连接到 Microsoft Translator {#connecting-to-microsoft-translator}
 
-为 [Microsoft Translator](https://hub.microsofttranslator.com) 云服务创建配置以使用 Microsoft Translation 帐户来翻译 AEM 页面内容或资产。
+为 [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) 云服务创建配置以使用 Microsoft Translation 帐户来翻译 AEM 页面内容或资产。
 
 >[!TIP]
 >

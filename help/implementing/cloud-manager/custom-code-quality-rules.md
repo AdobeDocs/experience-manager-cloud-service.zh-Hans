@@ -2,9 +2,9 @@
 title: 自定义代码质量规则
 description: 本页介绍作为[代码质量测试]的一部分由Cloud Manager执行的自定义代码质量规则。 这些建议基于AEM工程部门的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3493'
 ht-degree: 3%
 
 ---
@@ -772,7 +772,7 @@ OSGi配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 在AEM中定义
 * 具有经典UI设计对话框的组件(例如， `design_dialog` 节点)必须具有相应的触屏UI设计对话框(即 `cq:design_dialog` 子节点)。
 * 同时具有经典UI对话框和经典UI设计对话框的组件必须同时具有相应的触屏UI对话框和相应的触屏UI设计对话框。
 
-AEM现代化工具文档提供了有关如何将组件从经典UI转换为触屏UI的文档和工具。 请参阅 [AEM现代化工具文档](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 以了解更多详细信息。
+AEM现代化工具文档提供了有关如何将组件从经典UI转换为触屏UI的文档和工具。 请参阅 [AEM现代化工具文档](https://opensource.adobe.com/aem-modernize-tools/) 以了解更多详细信息。
 
 ### 包不应混合使用可变和不可变内容 {#oakpal-packages-immutable}
 

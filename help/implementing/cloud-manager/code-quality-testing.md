@@ -2,9 +2,9 @@
 title: 代码质量测试
 description: 了解管道的代码质量测试的工作原理，以及它如何提高部署质量。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1176'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->请参阅 [SonarQube的度量定义](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，以了解更详细的定义。
+>请参阅 [SonarQube的度量定义](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) ，以了解更详细的定义。
 
 >[!NOTE]
 >

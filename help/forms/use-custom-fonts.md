@@ -2,7 +2,7 @@
 title: 使用自定义字体
 description: 使用自定义字体
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## PDF文档的行为
 
-您可以 [嵌入字体](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) 到PDF文档。 嵌入字体后，PDF文档在所有平台上都会显示（外观相同）。 它使用嵌入字体来确保外观和感觉的一致性。 未嵌入字体时，字体渲染取决于Acrobat或Acrobat Reader等PDF查看器客户端的渲染设置。 如果客户机上提供字体，则PDF使用指定的字体，否则PDF将使用默认的回退字体呈现。
+您可以 [嵌入字体](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) 到PDF文档。 嵌入字体后，PDF文档在所有平台上都会显示（外观相同）。 它使用嵌入字体来确保外观和感觉的一致性。 未嵌入字体时，字体渲染取决于Acrobat或Acrobat Reader等PDF查看器客户端的渲染设置。 如果客户机上提供字体，则PDF使用指定的字体，否则PDF将使用默认的回退字体呈现。
 
 ## 将自定义字体添加到Formsas a Cloud Service环境 {#custom-fonts-cloud-service}
 

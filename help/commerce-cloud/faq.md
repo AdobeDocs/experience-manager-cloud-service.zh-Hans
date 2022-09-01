@@ -2,9 +2,9 @@
 title: AEM — 使用商务集成框架的商务集成常见问题解答
 description: AEM — 使用商务集成框架的商务集成常见问题解答
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Adobe已采用Adobe Commerce的GraphQL API作为其官方商务API，用于所�
 
 ## 2.能否通过Adobe Commerce管理员从AEM中存储和引用产品资产（图像）？ 如何使用Dynamic Media中的资产？
 
-没有正式的AEM Assets - Adobe Commerce集成可用。 在 [市场](https://marketplace.magento.com/bounteous-dam.html).
+没有正式的AEM Assets - Adobe Commerce集成可用。 在 [市场](https://marketplace.magento.com) <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-或者，作为解决方法，您可以在AEM Assets中存储产品资产（图像），但必须在Adobe Commerce中手动存储资产URL。 Dynamic Media现在是AEM Assets的一部分，将以同样的方式工作。
+或者，作为解决方法，您可以在AEM Assets中存储产品资产（图像），但必须在Adobe Commerce中手动存储资产URL。 Dynamic Media现在是AEM Assets的一部分，工作方式相同。
 
 ## 3.在何处部署商务解决方案是否重要？ （内部或云中）
 
-不，商务解决方案的部署位置并不重要。 CIF和AEM店面无论使用何种部署模式，都将起作用。 但是，如果该解决方案与建议的E2E参考体系结构一起部署，则E2E测试可能会针对代表典型企业客户配置文件的性能KPI运行。 这将提供可用作基准的其他信息。
+不，商务解决方案的部署位置并不重要。 CIF和AEM店面无论部署模型如何，都可正常工作。 但是，如果该解决方案与建议的E2E参考体系结构一起部署，则E2E测试可能会针对代表典型企业客户配置文件的性能KPI运行。 此方法提供了可用作基准的其他信息。
 
 ## 4.如何在AEM中创建目录页面或产品页面？ 它们如何在AEM中持续？
 
@@ -47,11 +47,11 @@ PIM数据将通过GraphQL请求公开给AEM和客户端。 我们的建议是将
 
 ## 9. AEM Dispatcher的缓存失效如何与AEM和商务一起使用？
 
-我们建议为Dispatcher上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议在客户端渲染数据。 有关基于TTL的缓存失效的详细信息，请参阅 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+我们建议为Dispatcher上缓存的页面设置基于TTL的缓存失效。 对于价格或库存等动态信息，我们建议在客户端渲染数据。 有关基于TTL的缓存失效的更多信息，请参阅 [优化调度程序缓存](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) 和 [AEM性能优化](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10.是否建议使用商务在AEM内容中进行统一搜索？
 
-提供了产品搜索参考实施，但没有对内容进行统一搜索。 此功能通常是非常特定于客户的，并且在特定于项目的级别上得到更好的解决。
+提供了产品搜索参考实施，但没有对内容进行统一搜索。 此功能是特定于客户的，在特定于项目的级别上得到更好的解决。
 
 ## 11.如何使用CIF在AEM和商务中使用搜索？
 
@@ -59,7 +59,7 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件向商务解决方案�
 
 ## 12.如何在MSM或翻译中使用产品数据？
 
-产品数据通常已在PIM或Adobe Commerce中翻译。 AEM - Adobe Commerce集成支持与多个Adobe Commerce商店和商店视图的连接。 在MSM设置中，通常有一个AEM站点链接到一个Adobe Commerce存储视图。
+产品数据已在PIM或Adobe Commerce中翻译。 AEM - Adobe Commerce集成支持与多个Adobe Commerce商店和商店视图的连接。 在MSM设置中，通常有一个AEM站点链接到一个Adobe Commerce存储视图。
 
 ## 13.是否有办法用商业文本增强产品数据？ 你在哪里做？ 在AEM中还是在商务解决方案中？
 

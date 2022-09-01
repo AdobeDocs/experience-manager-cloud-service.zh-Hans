@@ -2,10 +2,10 @@
 title: 为 Screens as a Cloud Service 开发自定义组件
 description: 以下教程将演示为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式和技术。 本教程重点介绍了在为AEM Screens开发时存在的差异和特殊注意事项。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 3%
+source-wordcount: '2115'
+ht-degree: 2%
 
 ---
 
@@ -155,7 +155,7 @@ AEM Screens存在一些有趣的限制，但传统WCM Sites组件未必存在这
 
    组件会呈现 `div` 和 `h1` 标记。 `${properties.message}` 是HTL脚本的一部分，该脚本将输出名为的JCR属性的内容 `message`. 稍后将创建一个对话框，允许用户为 `message` 属性文本。
 
-   另请注意，组件使用BEM（块元素修饰符）符号。 BEM是一种CSS编码约定，可更轻松地创建可重用组件。 BEM是使用的符号 [AEM核心组件](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). 有关更多信息，请访问： [https://getbem.com/](https://getbem.com/)
+   另请注意，组件使用BEM（块元素修饰符）符号。 BEM是一种CSS编码约定，可更轻松地创建可重用组件。 BEM是使用的符号 [AEM核心组件](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. 在下方创建文件 `/apps/weretail-run/components/content/helloworld` 已命名 `edit.html.`
 

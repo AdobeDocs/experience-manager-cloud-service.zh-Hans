@@ -2,10 +2,10 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -59,11 +59,11 @@ ht-degree: 2%
 
 建议将负责标记和渲染的代码与用于控制组件内容选择逻辑的代码分开。
 
-这一理念得到了 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)，一种模板语言，有意限制该语言，以确保使用真实的编程语言来定义底层业务逻辑。 此机制会突出显示为给定视图调用的代码，并在必要时，允许对同一组件的不同视图使用特定逻辑。
+这一理念得到了 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)，一种模板语言，有意限制该语言，以确保使用真实的编程语言来定义底层业务逻辑。 此机制会突出显示为给定视图调用的代码，并在必要时，允许对同一组件的不同视图使用特定逻辑。
 
 此（可选）逻辑可以通过不同方式实现，并可通过特定命令从HTL中调用：
 
-* 使用Java - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) 允许HTL文件访问自定义Java类中的Helper方法。 这允许您使用Java代码实施用于选择和配置组件内容的逻辑。
+* 使用Java - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) 允许HTL文件访问自定义Java类中的Helper方法。 这允许您使用Java代码实施用于选择和配置组件内容的逻辑。
 * 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) 允许HTL文件访问在JavaScript中编写的帮助程序代码。 这允许您使用JavaScript代码实施用于选择和配置组件内容的逻辑。
 * 使用客户端库 — 现代网站严重依赖由复杂JavaScript和CSS代码驱动的客户端处理。 查看文档 [在AEMas a Cloud Service上使用客户端库](/help/implementing/developing/introduction/clientlibs.md) 以了解更多信息。
 

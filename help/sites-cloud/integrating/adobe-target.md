@@ -2,16 +2,16 @@
 title: 与 Adobe Target 集成
 description: 与 Adobe Target 集成
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
-workflow-type: ht
-source-wordcount: '723'
-ht-degree: 100%
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 94%
 
 ---
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为 Adobe Marketing Cloud 的一部分，[Adobe Target](http://www.adobe.com/cn/solutions/testing-targeting/testandtarget.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用 Target，您将熟悉 AEM as a Cloud Service 中的定位编辑环境。
+作为 Adobe Marketing Cloud 的一部分，[Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用 Target，您将熟悉 AEM as a Cloud Service 中的定位编辑环境。
 
 将 AEM Sites 与 Adobe Target 集成以个性化页面中的内容：
 
@@ -31,10 +31,10 @@ ht-degree: 100%
 
 * Adobe Launch 是用于通过 Target 功能（JS 库）检测 AEM 站点的实际工具。因此，将 AEM as a Cloud Service 与 Launch 和 Adobe Target 集成是密切相关的（请参阅下面的链接）。
 
-   * [使用 Adobe I/O 与 Adobe Target 集成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
-   * [集成 Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-   * [通过 Adobe I/O 将 AEM 与 Adobe Launch 集成](https://helpx.adobe.com/cn/experience-manager/using/aem_launch_adobeio_integration.html)
-   * [了解 AEM 与 Adobe Launch、Analytics 和 Target 的集成](https://helpx.adobe.com/cn/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
+   * [使用 Adobe I/O 与 Adobe Target 集成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims-adobe-io.html)
+   * [集成 Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+   * [通过 Adobe I/O 将 AEM 与 Adobe Launch 集成](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+   * [了解 AEM 与 Adobe Launch、Analytics 和 Target 的集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->在 AEM as a Cloud Service 中，默认情况下，将选件和活动从 AEM 同步到 Adobe Target 的复制代理处于禁用状态。如果您需要重新启用此复制代理，请联系 [Adobe 支持](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html#experience-manager)团队。
+>在 AEM as a Cloud Service 中，默认情况下，将选件和活动从 AEM 同步到 Adobe Target 的复制代理处于禁用状态。如果您需要重新启用此复制代理，请联系 [Adobe 支持](https://experienceleague.adobe.com/?support-solution=General#support)团队。
 
 >[!NOTE]
 >

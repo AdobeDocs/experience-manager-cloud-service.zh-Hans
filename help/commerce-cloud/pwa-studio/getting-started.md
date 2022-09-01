@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 1%
 
 ---
 
@@ -62,9 +62,9 @@ ht-degree: 0%
 
    您可以在 [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) 和 [扩展性框架](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio文档。
 
-1. Apollo客户端将在以下位置获得AEM GraphQL端点： <https://pwa-studio/endpoint.js>. 要将端点映射到此位置，您需要自定义PWA Studio应用程序的UPPRAD配置：a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并调整该变量以指向您的AEM内容片段GraphQL端点。
+1. Apollo客户端将在以下位置获得AEM GraphQL端点： `<https://pwa-studio/endpoint.js>`. 要将端点映射到此位置，您需要自定义PWA Studio应用程序的UPPRAD配置：a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并调整该变量以指向您的AEM内容片段GraphQL端点。
 
-   示例：AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
+   示例: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b.将代理解析程序添加到UPPRAD配置。 向上配置示例可能如下所示：
 
@@ -95,13 +95,13 @@ ht-degree: 0%
 
    将允许的源属性设置为PWA应用程序的完整主机名。
 
-   示例:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   示例:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling反向链接过滤器(org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
    将allow.hosts属性设置为PWA应用程序的主机名。
 
-   示例：pwa-studio-test-vflyn.local.pwadev
+   示例: `pwa-studio-test-vflyn.local.pwadev`
 
 您可以在此处找到两种配置的完整示例： <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

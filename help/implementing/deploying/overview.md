@@ -3,9 +3,9 @@ title: 部署到 AEM as a Cloud Service
 description: '部署到 AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3358'
+source-wordcount: '3346'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 1%
    * 文件夹（添加、修改、删除）
    * 可编辑的模板（添加、修改、删除）
    * 上下文感知配置( `/conf`)（添加、修改、删除）
-   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂接。 请参阅 [Jackrabbit filevault文档](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) 关于安装挂钩。 请注意，AEM CS当前使用的是Filevault 3.4.0版，该版本限制管理员用户、系统用户和管理员组的成员安装挂接)。
+   * 脚本(软件包可以在软件包安装过程的各个阶段触发安装挂接。 <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> 请注意，AEM CS当前使用的是Filevault 3.4.0版，该版本限制管理员用户、系统用户和管理员组的成员安装挂接)。
 
 可以通过将包嵌入install.author或install.publish文件夹(位于 `/apps`. 为了反映这一分离，已在AEM 6.5中完成了重组，有关推荐项目重组的详细信息，请参阅 [AEM 6.5文档。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
