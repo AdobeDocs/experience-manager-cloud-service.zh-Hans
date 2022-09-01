@@ -3,9 +3,9 @@ title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1566'
+ht-degree: 100%
 
 ---
 
