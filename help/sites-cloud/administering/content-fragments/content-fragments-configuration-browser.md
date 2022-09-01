@@ -3,9 +3,9 @@ title: 内容片段 – 配置浏览器
 description: 了解如何在配置浏览器中启用特定的内容片段功能。
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 在使用内容片段之前，您需要使用 **配置浏览器** 启用：
 
 * **内容片段模型** – 强制
-* **GraphQL持久查询**  — 可选
+* **GraphQL 持久查询** – 可选
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ ht-degree: 0%
    1. 指定&#x200B;**标题**。
    1. **名称**&#x200B;将成为存储库中的节点名称。
       * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/implementing/developing/introduction/naming-conventions.md)进行调整。
-      * 您可以根据需要进行调整。
+      * 如有必要，您可以对其进行调整。
    1. 要启用其用法，请选择
       * **内容片段模型**
       * **GraphQL 持久查询**
