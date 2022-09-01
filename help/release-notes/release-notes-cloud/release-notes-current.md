@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c27b66bcd0536ec10a878b39b9ec76073634c06
+source-git-commit: bcd62d1d1a66e17585e35c11c12cd72067e0e46e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 100%
+source-wordcount: '626'
+ht-degree: 28%
 
 ---
 
@@ -25,101 +25,58 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager][!DNL Cloud Service] 当前版本 (2022.7.0) 的发布日期为 2022 年 8 月 8 日。
-
-下一个版本 (2022.8.0) 计划于 2022 年 9 月 1 日发布。
+的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.8.0)是2022年9月1日发行的。
+下一个版本 (2022.9.0) 计划于 2022 年 9 月 29 日发布。
 
 ## 发布视频 {#release-video}
 
-请查看 2022 年 7 月发布概述视频，了解 2022.7.0 版本中新增功能摘要：
+观看2022年8月版概述视频，了解2022.8.0版本中添加的功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在支持[键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
+* 电子邮件组件允许在AEM中创建内容，然后作为电子邮件通过Campaign Classic发送。 核心电子邮件组件：
+   * 基于 [核心WCM组件](https://github.com/adobe/aem-core-wcm-components) 支持可编辑的模板和样式系统。
+   * 提供了10个电子邮件优化的生产就绪组件（页面、容器、标题、文本、图像、按钮、Teaser、体验片段、内容片段、分段）。
+   * 提供高级个性化和分段，这要归功于 [插入促销活动变量](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) 在大多数对话字段中，以及灵活 [分段组件](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * 通过 [CSS样式内嵌](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [HTML属性内线](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)和 [HTML消毒剂](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * 允许在任意位置创建电子邮件。
 
-* AEM as a Cloud Service 的 [Web 优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)，通过交付 WebP 等格式，大大提高了页面速度。这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的[核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)都允许利用此服务，并可通过单击图像组件策略中的选项将图像作为 WebP 交付。
+### [!DNL Sites]预发行渠道中提供的新功能 {#prerelease-features-sites}
 
-* AEM 个性化活动现在可以使用体验片段来代替我们的旧功能/服务。该功能：
-   * 启用一个迁移路径，其中 AEM 内容会推广体验片段功能/服务，而不是旧的库功能/服务，以便提供与未来大规模个性化保持一致的具有适当样式的内容。
-   * 防止内容作者意外在其网站上提供无样式内容。
-   * 允许将任何组件的定位模式转换为使用可编辑模板的体验片段（JSON 和 HTML 类型）。
+* 的 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 为用户提供了一个选项，用于显示与内容片段关联的语言副本总数。 提供了一键式访问，以查看所有语言副本。 用户还能够按其感兴趣的区域设置过滤表视图。
 
->[!NOTE]
->
->已经使用旧的功能/服务的现有个性化活动可以继续这样操作，但新的个性化活动应该作为体验片段创建（这是推荐的方法）。
+![内容片段语言](/help/release-notes/assets/cfconsole-languages.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
+### [!DNL Assets] 中的新增功能 {#features-assets}
 
-您现在可以将 Adobe Experience Manager Assets 配置为[根据 MIME 类型限制用户可以上传的资源类型](/help/assets/configure-asset-upload-restrictions.md)。
+* 您现在可以将 Adobe Experience Manager Assets 配置为[根据 MIME 类型限制用户可以上传的资源类型](/help/assets/configure-asset-upload-restrictions.md)。
 
-![资产上传限制](/help/assets/assets/asset-upload-restrictions.png)
+   ![资产上传限制](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 中的新增功能 {#forms-features}
+### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
-* **[涂鸦签名的键盘输入支持](/help/forms/signing-forms-using-scribble.md)**：自适应表单越来越多地用于触摸设备，并且通常会要求支持签名。在触摸设备上签署文件已成为一种可接受的表单签署方式。对于此类用例，自适应表单提供对涂鸦签名和 Adobe Sign 的原生支持。现在，除了其他已支持的选项外，您还可以使用键盘在自适应表单中进行涂鸦签名。它还有助于提高辅助功能符合性。
+* [自适应Forms向导](/help/forms/creating-adaptive-form.md):AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。 此版本对向导进行了以下改进：
 
-![iPhone 上对 Scribble 签名的键盘输入支持](/help/release-notes/assets/scribble-keyboard-mobile.png)
+   * 选择或取消选择字段：利用向导，可基于JSON和表单数据模型架构创建自适应表单。 现在，您可以选择架构中要包含在自适应表单中的字段子集。 所选字段将转换为相应的自适应表单数据捕获组件，以快速创建所需的自适应表单。
 
-* **使用本地语言版本的自适应表单向导**：您可以使用此向导的所选语言版本。它现在支持 Adobe Experience Manager 所支持的所有语言。
+   * 使用静态模板：在旧版静态模板方面已有投资的客户可以使用向导中的静态模板创作自适应表单，从而继续其云采用历程。 这为客户提供了将旧静态模板迁移到现代可编辑模板的额外时间。
 
-### [!DNL Forms]预发行渠道中提供的新功能 {#prerelease-features-forms}
-
-<!-- 
-
-* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
-
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
-
--->
-
-* **[调用 DDX – AEM 工作流步骤](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**：DDX（文档描述 XML）是一种声明性标记语言，其元素代表文档的构建块。这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX 文档是文档模板，它描述了应出现在结果文档中的源文档的所需特征。单个 DDX 可用于一系列源文档。您可以使用 AEM 工作流中的调用步骤来执行各种操作，例如，汇编和反汇编文档、创建和修改 Acrobat 和 XFA 表单及其他操作，如 [DDX 参考](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)文档中所述。
-
-* **[转换为 PDF/A – AEM 工作流步骤](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**：PDF/A 是一种用于长期保存文档内容的存档格式，其中所有字体都将嵌入，并且文件未经压缩。现在，您可以使用 AEM 工作流中的“转换为 PDF/A”步骤，将任意格式的文档或文件转换为 PDF/A 格式。
-
+* [在服务器端处理时，从记录文档(DoR)中删除隐藏字段](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md):您可以为最终用户生成记录PDF文档，其中只包含在数据捕获体验期间对他们可见的字段。 提交表单后，服务器会根据提交的数据验证哪些字段对最终用户隐藏，并从记录文档中排除以保持一致性。
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 产品目录扩充现在支持 AEM 页面。这使作者能够管理页面 – 产品关联。
-
-* 多项 CIF 核心组件功能改进
-
-### 错误修复 {#bug-fixes-cif}
-
-* 将登录令牌添加到客户端价格获取流程
-
-* 数据层中的页面组件错误
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### 新增功能 {#what-is-new-foundation}
-
-* [存储库浏览器](/help/implementing/developing/tools/repository-browser.md)现在提供了一个路径输入字段，可用于直接跳转到存储库层次结构中的特定文件夹
-* Sling 内容分发 (SCD) 现在支持显式“无效”操作，以便在不发布内容的情况下使内容无效。有关更多详细信息，请参阅 [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation)页面。
-* AEM as a Cloud Service 现在提供 mod_macro。请参阅[此表](/help/implementing/dispatcher/disp-overview.md)以查看支持的 Apache 模块的列表。
-
-### AEM as a Cloud Service SDK Dispatcher 工具增强功能 {#dispatcher-tools-enhancements}
-
-* Apache 可使用 `docker_run_hot_reload.sh` 脚本启动，该脚本会自动加载并验证对 Apache 和 Dispatcher 配置进行的任何后续更改，从而加快开发人员的工作速度。仅支持 Dispatcher 工具的灵活模式。此外，有关自动重新加载和验证的更多详细信息，请参阅[调试 Apache 和 Dispatcher 配置](/help/implementing/dispatcher/validation-debug.md#automatic-reloading)。
-* 本地 Apache/Dispatcher 配置将更紧密地跟踪云环境中的变化，从而提高两个环境之间的对等性。
-
-### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
-
-* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
-
-## Adobe Learning Manager 连接器 {#learn-manage}
-
-* 新的 Adobe Learning Manager 具有用于连接到 Adobe Experience Manager Sites、Marketo Engage 和 Adobe Commerce 的连接器。若要了解详情，请参阅：[Adobe Learning Manager 用户指南](https://helpx.adobe.com/cn/learning-manager/user-guide.html)。
-
+* 通过AEM页面属性以及产品驾驶舱中的概述将AEM页面与产品和类别关联
+   ![产品驾驶舱页面关联](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 

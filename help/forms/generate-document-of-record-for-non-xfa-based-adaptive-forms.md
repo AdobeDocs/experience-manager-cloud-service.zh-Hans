@@ -2,9 +2,9 @@
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
+source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
 workflow-type: tm+mt
-source-wordcount: '3658'
+source-wordcount: '3677'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ ht-degree: 2%
    * （对于AcroForm模板） **[!UICONTROL 记录绑定引用字段的文档]** 属性。
    * （对于XFA模板） **[!UICONTROL 数据模型绑定参考]** 属性。
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
 <!-- 
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
@@ -220,7 +220,7 @@ When you select a form model, configure Document of Record using options availab
    <td> </td>
   </tr>
   <tr>
-   <td>重置按钮</td>
+   <td>“重置”按钮</td>
    <td>重置按钮</td>
    <td>false</td>
    <td> </td>
@@ -400,7 +400,7 @@ When you select a form model, configure Document of Record using options availab
 **表单级别设置**
 
 * **在DoR中包含未绑定字段：** 设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。 默认情况下，为true。
-* **隐藏时从DoR中排除字段：** 设置属性会覆盖“从记录文档中排除”字段级别属性（如果不为true）的行为。 如果字段在表单提交时处于隐藏状态，则如果该属性设置为true，则它们将从记录文档中排除，但前提是未设置“从记录文档排除”属性。
+* **隐藏时从DoR中排除字段：** 设置属性会覆盖“从记录文档中排除”字段级别属性（如果不为true）的行为。 如果字段在表单提交时处于隐藏状态，则如果该属性设置为true，则它们将从记录文档中排除，但前提是未设置“从记录文档排除”属性。 设置 [在服务器上重新验证](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) 属性为true可标识要从服务器端记录文档中排除的隐藏字段。
 
 ## 使用自定义XCI文件
 

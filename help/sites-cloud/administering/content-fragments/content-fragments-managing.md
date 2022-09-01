@@ -2,10 +2,10 @@
 title: 管理内容片段
 description: 了解如何使用“内容片段”控制台管理 AEM 内容片段；用于页面创作，或作为 headless 内容的基础。
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '2047'
-ht-degree: 100%
+source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
+workflow-type: tm+mt
+source-wordcount: '1915'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,20 @@ ht-degree: 100%
 >[!NOTE]
 >
 >内容片段存储为&#x200B;**资产**。 它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从&#x200B;**资产**&#x200B;控制台进行管理。
+
+## 内容片段控制台 {#content-fragments-console}
+
+通过内容片段控制台，可以直接访问您的片段及相关任务。 有关详细信息，请参阅：
+
+* [内容片段控制台的基本结构和处理](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [提供的有关内容片段的信息](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+
+* [内容片段控制台中的内容片段的操作](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [自定义内容片段控制台中可用的列](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+
+* [在内容片段控制台中搜索和过滤](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -79,61 +93,6 @@ ht-degree: 100%
 内容片段在发布后（但在发布修改之前）进行了编辑。
 * **未发布**
 内容片段已取消发布。
-
-## 内容片段控制台中的内容片段的操作 {#actions-content-fragment-console}
-
-在&#x200B;**内容片段**&#x200B;控制台工具栏中为您的内容片段提供了一系列操作：
-
-![控制台操作](assets/cfm-managing-cf-console-01.png)
-
-* **在资产中打开**
-* **创建**
-* **引用者**&#x200B;列还提供了显示该片段的所有父引用的直接链接；包括引用内容片段、体验片段和页面。
-* 将鼠标悬停在文件夹名称上将显示 JCR 路径。
-
-选择片段后，所有适当的操作均可用：
-
-![控制台操作 – 已选择片段](assets/cfm-managing-cf-console-selected-01.png)
-
-* **打开**
-* **发布**（和 **取消发布**）
-* **复制**
-* **移动**
-* **重命名**
-* **删除**
-
->[!NOTE]
->
->“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。 可以通过 AEM 异步作业 UI 监控该作业的进度。
-
-## 在内容片段控制台中自定义视图 {#viewing-content-fragment-console}
-
-控制台在当前文件夹和所有子文件夹中显示有关内容片段的信息。
-
-您可以使用&#x200B;**自定义表**&#x200B;图标自定义显示的信息：
-
-![“自定义表”图标](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-这将打开&#x200B;**自定义表**&#x200B;对话框中，您可以选择/取消选择可用列：
-
-![自定义表](assets/cfm-managing-cf-console-customize-table.png)
-
-## 在内容片段控制台中搜索和过滤 {#search-filter-content-fragment-console}
-
-您可以搜索和/或筛选要在控制台中显示的内容片段。
-
-您可以：
-
-* 选择所需的文件夹
-* 选择带有&#x200B;**显示过滤器**&#x200B;图标的过滤器并同时使用搜索框：
-
-![“自定义表”图标](assets/cfm-managing-cf-console-filter-search-01.png)
-
-提供了一系列过滤器：
-
-![筛选和搜索](assets/cfm-managing-cf-console-filter-search-02.png)
-
-还可以保存过滤器和搜索组合，供以后参考。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -280,12 +239,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 发布和引用片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
->如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
+如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
 必须发布内容片段才能在发布环境中使用。 可使用标准资产功能完成此操作
 
-* 从[内容片段控制台](#actions-content-fragment-console)工具栏中的&#x200B;**发布**&#x200B;选项
+* 从[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)工具栏中的&#x200B;**发布**&#x200B;选项
    * **现在** – 确认后，片段将立即发布
    * **计划** – 您可以选择片段的发布日期和时间
 
@@ -299,17 +258,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 此外，当您[发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段将在页面引用中列出。
 
 >[!CAUTION]
->片段发布和/或引用后，当作者再次打开片段进行编辑时，AEM 将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
+片段发布和/或引用后，当作者再次打开片段进行编辑时，AEM 将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
 
 ## 取消发布片段 {#unpublishing-a-fragment}
 
 要取消发布内容片段，请选择一个或多个片段，然后&#x200B;**取消发布**。
 
 >[!NOTE]
->在可用已发布的片段时，**取消发布**&#x200B;操作将可见。
+在可用已发布的片段时，**取消发布**&#x200B;操作将可见。
 
 >[!CAUTION]
->如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
+如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
 
 ## 删除片段 {#deleting-a-fragment}
 
@@ -319,18 +278,26 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 选择片段。
 
    >[!NOTE]
-   >**删除**&#x200B;操作不能作为快速操作使用。
+   **删除**&#x200B;操作不能作为快速操作使用。
 
 3. 从工具栏中选择&#x200B;**删除**。
 4. 确认&#x200B;**删除**&#x200B;操作。
 
    >[!CAUTION]
-   >如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。 片段及其内容片段组件将从任何内容页面中删除。
+   如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。 片段及其内容片段组件将从任何内容页面中删除。
+
+## 查找片段的父引用 {#parent-references-fragment}
+
+可以从 **引用** 列 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## 查找片段的语言副本 {#language-copies-fragment}
+
+语言副本的详细信息可从 **语言** 列 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## 内容片段的时间线 {#timeline-for-content-fragments}
 
 >[!NOTE]
->此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+此功能仅在&#x200B;**资产**&#x200B;控制台中可用
 
 除了标准选项外，[时间线](/help/assets/manage-digital-assets.md#timeline)提供特定于内容片段的信息和操作：
 
@@ -350,13 +317,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **删除**
 
 >[!NOTE]
->评论包括：
->* 所有资产的标准功能
->* 在时间线中制造
->* 与片段资产相关
->注释（适用于内容片段）包括：
->* 在片段编辑器中输入
->* 特定于片段中选定的文本区段
+评论包括：
+* 所有资产的标准功能
+* 在时间线中制造
+* 与片段资产相关
+>
+注释（适用于内容片段）包括：
+* 在片段编辑器中输入
+* 特定于片段中选定的文本区段
 >
 
 
@@ -367,7 +335,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 比较片段版本 {#comparing-fragment-versions}
 
 >[!NOTE]
->此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+此功能仅在&#x200B;**资产**&#x200B;控制台中可用
 
 选择特定版本后，[时间线](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中的&#x200B;**与当前比较**&#x200B;操作可用。
 
@@ -390,14 +358,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * **完成**&#x200B;将返回控制台
 
 >[!NOTE]
->比较片段时无法编辑片段内容。
+比较片段时无法编辑片段内容。
 
 ![比较](assets/cfm-managing-06.png)
 
 ## 恢复到某个版本  {#reverting-to-a-version}
 
 >[!NOTE]
->此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+此功能仅在&#x200B;**资产**&#x200B;控制台中可用
 
 您可以还原到片段的特定版本：
 
