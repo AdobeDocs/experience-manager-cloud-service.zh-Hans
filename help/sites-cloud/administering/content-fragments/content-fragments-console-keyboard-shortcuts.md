@@ -1,41 +1,42 @@
 ---
 title: 内容片段控制台的键盘快捷键
-description: 在整个AEM中都可以使用各种键盘快捷键，包括一些用于管理内容片段的快捷键
-source-git-commit: 7fe9689e31d29e2dd6c2812742c158723d7c2c15
-workflow-type: tm+mt
+description: AEM 中提供了各种键盘快捷键，包括一些用于管理内容片段的快捷键
+exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
 # 内容片段控制台的键盘快捷键 {#keyboard-shortcuts-content-fragments-console}
 
-在“内容片段”控制台中可以使用一些键盘快捷键。
+可以在内容片段控制台中使用一系列键盘快捷键。
 
-用户在整个 AEM 环境中都可以使用各种键盘快捷键。有些在 [编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)，其他给将军 [控制台的使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+在整个 AEM 环境中都可以使用各种键盘快捷键。一些可应用于[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)，其他可应用于控制台的[一般使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
 >AEM 键盘快捷键所需的[修饰符键](#os-specific-modifier-keys)因操作系统而有所不同。
 
-## 内容片段控制台 — 键盘快捷键 {#content-fragments-console-keyboard-shortcuts}
+## 内容片段控制台 – 键盘快捷键 {#content-fragments-console-keyboard-shortcuts}
 
 >[!NOTE]
 >
->快捷键不区分大小写，
+>快捷方式不区分大小写，
 
 | 位置 | 快捷键 | 描述 |
 |---|---|---|
-| 未选择内容片段 | `n` | 打开创建对话框 |
-| 选择一个或多个内容片段 | `m` | 打开移动对话框 |
-| 选择一个或多个内容片段 | `Backspace` | 打开删除对话框 |
-| 选择一个或多个内容片段 | `r` | 打开重命名对话框 |
-| 选择一个或多个内容片段 | `Ctrl-c` | 打开复制对话框 |
-| 选择一个或多个内容片段 | `p` | 打开立即发布对话框 |
-| 选择一个或多个内容片段 | `u` | 立即打开取消发布对话框 |
-| 任何打开的对话框 | `esc` | 对话被取消 |
+| 未选择内容片段 | `n` | 打开“创建”对话框 |
+| 选择一个或多个内容片段 | `m` | 打开“移动”对话框 |
+| 选择一个或多个内容片段 | `Backspace` | 打开“删除”对话框 |
+| 选择一个或多个内容片段 | `r` | 打开“重命名”对话框 |
+| 选择一个或多个内容片段 | `Ctrl-c` | 打开“复制”对话框 |
+| 选择一个或多个内容片段 | `p` | 打开“立即发布”对话框 |
+| 选择一个或多个内容片段 | `u` | 打开“立即取消发布”对话框 |
+| 任何打开的对话框 | `esc` | 对话框已被取消 |
 
-桌面用户也可以使用各种键盘快捷键。 有些在 [编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)，其他给将军 [控制台的使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+桌面用户也可以使用各种键盘快捷键。一些可应用于[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)，其他可应用于控制台的[一般使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
