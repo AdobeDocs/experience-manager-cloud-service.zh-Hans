@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
-source-git-commit: c2cd11b806f0cb961fc5ea0d8469f57b04e4aafa
-workflow-type: tm+mt
+exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本 (2022.6.0) 的发布日期是 2022 年 6 月 30 日。
 
-下一版本(2022.7.0)计划于2022年8月8日发布。
+下一个版本 (2022.7.0) 计划于 2022 年 8 月 8 日发布。
 
 ## 发布视频 {#release-video}
 
@@ -37,11 +37,11 @@ ht-degree: 98%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 新的[用户界面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在可供内容管理员和内容作者有效管理（执行发布、取消发布、复制、移动等操作）、搜索/过滤和为 Headless 用例创建内容片段。
+* 新的[用户界面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在可供内容管理员和内容作者有效管理（执行发布、取消发布、复制、移动等操作）、搜索/过滤内容片段，并为 Headless 用例创建内容片段。
 
    ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 
-* 新 [目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) 不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动渲染 ToCs。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
+* 新[目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动呈现目录。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -53,7 +53,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 ### [!DNL Forms] 中的新增功能 {#forms-features}
 
-* **[将自适应表单与 Microsoft® Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)**：您现在可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。 配置的自适应表单会发送捕获的数据、附件和记录文档，以增强云流自动化以进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。
+* **[将自适应表单与 Microsoft® Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)**：您现在可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。 配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automation Cloud Flow 进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。
 
 * **创建自适应表单的向导**：您可以使用商业用户友好向导快速创作自适应表单。 该向导提供了快速的选项卡导航，以便轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
@@ -63,7 +63,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 ### 新增功能 {#what-is-new-cif}
 
-* 新产品驾驶舱属性页面，以获得更好和简化的概述
+* 新产品驾驶舱属性页面，提供更好、更简化的概述
 
 ![产品驾驶舱属性概述](/help/assets/CIF/product_cockpit_properties_overview.png)
 
