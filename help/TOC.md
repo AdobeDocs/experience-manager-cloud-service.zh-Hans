@@ -4,14 +4,14 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
-user-guide-description: Adobe Experience Manager as a Cloud Service 概述自助资源和文档链接
+user-guide-description: Adobe Experience Manager as a Cloud Service 概述、自助资源和文档链接
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -275,8 +275,8 @@ ht-degree: 99%
          + [了解分段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用 ContextHub 配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [注册、登录和用户配置文件](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-      + 营销活动 {#campaign}
-         + [使用AEM创建新闻稿](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+      + Campaign {#campaign}
+         + [使用 AEM 创建新闻稿](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 管理 {#administering}
       + 内容片段 {#content-fragments}
          + [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -292,7 +292,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [结构树](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [预览 – JSON 呈现](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [内容片段控制台 — 键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+         + [内容片段控制台 – 键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 站点创建 {#site-creation}
          + [创建新站点](/help/sites-cloud/administering/site-creation/create-site.md)
          + [启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -341,11 +341,11 @@ ht-degree: 99%
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [与 Adobe Analytics 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
-      + [与Adobe学习管理器集成](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
+      + [与 Adobe Learning Manager 集成](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [与Adobe Campaign Classic集成](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [与 Adobe Campaign Classic 集成](/help/sites-cloud/integrating/integrating-campaign-classic.md)
 + 资源 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概述和新增功能](/help/assets/overview.md)

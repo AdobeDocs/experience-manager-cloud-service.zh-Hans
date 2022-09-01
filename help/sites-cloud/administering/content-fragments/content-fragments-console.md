@@ -5,8 +5,8 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '563'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->选择 [键盘快捷键可在此控制台中使用](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+>可以在该控制台中使用一系列[键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
 可以从全局导航的顶级直接访问内容片段控制台：
 

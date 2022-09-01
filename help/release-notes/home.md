@@ -4,8 +4,8 @@ description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明�
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 100%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 ## 如何准备发布 {#how-to-prepare}
 
-利用 [!DNL Adobe Experience Manager] as a Cloud Service 中的连续发布模型，应用程序会持续自动更新。更新类型有两种：功能发布和维护版本：
+利用 [!DNL Adobe Experience Manager] as a Cloud Service 中的连续发布模型，应用程序会持续自动更新。有两种类型的更新，功能发布和维护版本：
 
 * 功能发布按可预测的每月频率进行，侧重于新功能和产品创新。
-* 维护版本操作频繁，重点关注安全更新、错误修复和性能增强。 这可确保使用任何关键修复来使 [!DNL Adobe Experience Manager] as a Cloud Service 始终保持最新。
+* 维护版本经常发布，并侧重于安全更新、错误修复和性能增强。这可确保使用任何关键修复来使 [!DNL Adobe Experience Manager] as a Cloud Service 始终保持最新。
 
 除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service 还提供了灵活性，可在即将推出的功能发布到生产环境前的一整个月预览这些功能。这可让您在自定义环境中试用功能并提前培训内部用户/帮助他们做好准备，从而评估即将发布的版本对组织的影响。
 

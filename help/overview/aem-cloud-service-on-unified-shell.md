@@ -4,17 +4,17 @@ description: Unified Shell 上的 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '369'
+ht-degree: 100%
 
 ---
 
 # Unified Shell 上的 AEM as a Cloud Service {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
->此功能位于2022年7月的预发行渠道中。
+>该功能将在 2022 年 7 月的预发布渠道中发布。
 >
->这是对2022年8月版中正式提供的新功能的介绍。
+>其目的是推出新的功能，该功能将会在 2022 年 8 月发布。
 >
 >有关如何为您的环境启用该功能的信息，请参阅[预发布渠道文档](/help/release-notes/prerelease.md#enable-prerelease)。
 
