@@ -3,15 +3,15 @@ title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # 控制台的键盘快捷键 {#keyboard-shortcuts-for-consoles}
 
-以下快捷键可用于“站点”、“资产”、“用户”、“组”、“项目”和“体验片段”控制台。还有 [内容片段控制台](#keyboard-shortcuts-for-the-content-fragments-console).
+以下快捷键可用于“站点”、“资产”、“用户”、“组”、“项目”和“体验片段”控制台。另外，还有[内容片段控制台](#keyboard-shortcuts-for-the-content-fragments-console)的特定快捷方式。
 
 | 位置 | 快捷键 | 描述 |
 |---|---|---|
@@ -84,4 +84,4 @@ AEM 为一些常用功能（编辑、属性、复制/粘贴、显示各种侧边
 
 ## 内容片段控制台的键盘快捷键 {#keyboard-shortcuts-for-the-content-fragments-console}
 
-某些键盘快捷键适用于 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+一些键盘快捷键适用于[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
