@@ -3,15 +3,15 @@ title: 用于页面编辑的键盘快捷键
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # 用于页面编辑的键盘快捷键 {#keyboard-shortcuts-when-editing-pages}
 
-用户在整个 AEM 环境中都可以使用各种键盘快捷键。有些在编辑页面时适用，有些则适用于 [控制台的使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)，特别是 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+在整个 AEM 环境中都可以使用各种键盘快捷键。有些可应用于编辑页面，另一些可应用于[对控制台的使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)，还有一些特别应用于[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 82%
 >
 >用户开始在“预览”模式下与页面进行交互后，`Ctrl-Shift-m` 快捷键便不再可用。用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
 
-在使用 [控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)，特别是 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+桌面用户在使用[控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)时也可以使用各种键盘快捷键，其中一些快捷键特别适用于[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
