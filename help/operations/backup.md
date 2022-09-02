@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->* 此功能正在分阶段推出，可能尚未在Cloud Manager的所有租户中启用。
->* 此功能当前仅限于暂存和开发环境。 这些环境类型的功能使用和反馈将确保在不久的将来成功地推广到生产环境。
+>* 此功能分阶段推出，可能尚未在 Cloud Manager 中的所有租户中启用。
+>* 此功能目前仅适用于暂存环境和开发环境。通过在这些类型的环境中使用此功能并获得反馈，可以确保在不久的将来将此功能成功地推广到生产环境中。
 
 
 ## 概述 {#overview}
