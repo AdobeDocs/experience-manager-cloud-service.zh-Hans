@@ -3,9 +3,9 @@ title: 不同功能与新增功能 – Adobe Experience Manager as a Cloud Servi
 description: 不同功能与新增功能 – Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,27 +67,27 @@ AEM as a Cloud Service 现在具有：
 
 ## AEM 更新 {#aem-updates}
 
-AEM as a Cloud Service现在使用持续集成和持续交付(CI/CD)来确保您的项目处于最新的AEM版本。 这意味着生产实例和暂存实例将更新到最新的AEM版本，而不会中断用户的服务。
+AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产实例和暂存实例均会更新到最新 AEM 版本而无需中断用户的服务。
 
 >[!NOTE]
 >
->如果生产环境更新失败，Cloud Manager将自动回滚暂存环境。 此操作会自动完成，以确保更新完成后，暂存环境和生产环境都位于同一AEM版本上。
+>如果未能更新生产环境，Cloud Manager 将自动回滚到暂存环境。此操作将自动完成，以确保在更新完成后，暂存环境和生产环境均采用同一个 AEM 版本。
 
-有两种类型的AEM版本更新：
+有两种类型的 AEM 版本更新：
 
-* **AEM维护更新**
+* **AEM 维护更新**
 
    * 可以每日发布。
-   * 主要用于维护目的，包括最新的错误修复和安全更新。
-   * 由于定期应用更改，因此影响最小。
+   * 主要是用于维护目的，包括最新的错误修复和安全更新。
+   * 由于定期应用更改，因此产生的影响最小。
 
 * **新增功能更新**
 
-   * 通过可预测的每月计划发布。
+   * 按照可预测的每月计划发布。
 
 >[!TIP]
 >
->有关详细信息，请参阅 [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)。
+>有关更多详细信息，请参阅 [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)。
 
 ## Cloud Manager {#cloud-manager}
 
