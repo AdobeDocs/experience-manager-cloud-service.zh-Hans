@@ -2,9 +2,9 @@
 title: AEM Formsas a Cloud Service — 通信
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ### 调用API
 
-的 [API参考文档](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) 提供有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API引用文档还提供了.yaml格式的API定义文件。 您可以下载.yaml文件并将其上传到Postman，以检查API的功能。
+的 [API参考文档](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) 提供有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API引用文档还提供了.yaml格式的API定义文件。 您可以下载.yaml文件并将其上传到Postman，以检查API的功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
