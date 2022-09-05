@@ -2,8 +2,8 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
-workflow-type: ht
+source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
+workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 100%
 
@@ -313,7 +313,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 可以查看片段的详细信息：
 
 1. 导航到体验片段的位置（请勿进一步导航到片段中的变体）。
-详细信息将显示在**体验片段**&#x200B;控制台的所有视图中，其中&#x200B;**列表视图**&#x200B;包含导出到 Target 的详细信息：<!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+详细信息将显示在**体验片段**&#x200B;控制台的所有视图中，其中&#x200B;**列表视图**&#x200B;包含[导出到 Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 的详细信息：
 
    ![体验片段详细信息](/help/sites-cloud/authoring/assets/xf-15.png)
 
