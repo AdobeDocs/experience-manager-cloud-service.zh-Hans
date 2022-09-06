@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发�
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
 source-git-commit: bcd62d1d1a66e17585e35c11c12cd72067e0e46e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,11 @@ ht-degree: 28%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2022.8.0)是2022年9月1日发行的。
-下一个版本 (2022.9.0) 计划于 2022 年 9 月 29 日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的当前版本 (2022.8.0) 的发布日期为 2022 年 9 月 1 日。下一个版本 (2022.9.0) 计划于 2022 年 9 月 29 日发布。
 
 ## 发布视频 {#release-video}
 
-观看2022年8月版概述视频，了解2022.8.0版本中添加的功能摘要：
+请查看 2022 年 8 月发布概述视频，了解 2022.8.0 版本中新增功能的摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
@@ -38,16 +37,16 @@ ht-degree: 28%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 电子邮件组件允许在AEM中创建内容，然后作为电子邮件通过Campaign Classic发送。 核心电子邮件组件：
-   * 基于 [核心WCM组件](https://github.com/adobe/aem-core-wcm-components) 支持可编辑的模板和样式系统。
-   * 提供了10个电子邮件优化的生产就绪组件（页面、容器、标题、文本、图像、按钮、Teaser、体验片段、内容片段、分段）。
-   * 提供高级个性化和分段，这要归功于 [插入促销活动变量](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) 在大多数对话字段中，以及灵活 [分段组件](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * 通过 [CSS样式内嵌](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [HTML属性内线](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)和 [HTML消毒剂](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
-   * 允许在任意位置创建电子邮件。
+* 通过电子邮件组件，可在 AEM 中创建内容，然后通过 Campaign Classic 以电子邮件的形式发送该内容。核心电子邮件组件：
+   * 基于支持可编辑模板和样式系统的[核心 WCM 组件](https://github.com/adobe/aem-core-wcm-components)。
+   * 提供 10 个为电子邮件优化的生产就绪组件（页面、容器、标题、文本、图像、按钮、Teaser、体验片段、内容片段、分段）。
+   * 通过大多数对话框字段上的[插入 Campaign 变量](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization)以及灵活的[分段组件](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation))，提供高级个性化和分段。
+   * 借助 [CSS 样式内联器](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTML 属性内联器](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)和 [HTML 清理器](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation)，提供最佳的电子邮件友好的 HTML 输出
+   * 使得可随时随地创建电子邮件。
 
 ### [!DNL Sites]预发行渠道中提供的新功能 {#prerelease-features-sites}
 
-* 的 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 为用户提供了一个选项，用于显示与内容片段关联的语言副本总数。 提供了一键式访问，以查看所有语言副本。 用户还能够按其感兴趣的区域设置过滤表视图。
+* [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)为用户提供一个选项，用于显示与某个内容片段关联的语言副本总数。还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
 
 ![内容片段语言](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -63,20 +62,20 @@ ht-degree: 28%
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
-* [自适应Forms向导](/help/forms/creating-adaptive-form.md):AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。 此版本对向导进行了以下改进：
+* [自适应表单向导](/help/forms/creating-adaptive-form.md)：AEM Forms 提供便于企业用户使用的向导以快速创作自适应表单。该向导可快速地在选项卡之间导航，从而轻松地选择预先配置的模板、样式、字段和提交选项以创建自适应表单。此版本的向导有以下改进：
 
-   * 选择或取消选择字段：利用向导，可基于JSON和表单数据模型架构创建自适应表单。 现在，您可以选择架构中要包含在自适应表单中的字段子集。 所选字段将转换为相应的自适应表单数据捕获组件，以快速创建所需的自适应表单。
+   * 选择或取消选择字段：可在向导中创建基于 JSON 和表单数据模型架构的自适应表单。现在可选择架构中的一部分字段以包括在自适应表单中。所选的字段被转换为相应的自适应表单数据捕获组件以快速创建所需的自定义表单。
 
-   * 使用静态模板：在旧版静态模板方面已有投资的客户可以使用向导中的静态模板创作自适应表单，从而继续其云采用历程。 这为客户提供了将旧静态模板迁移到现代可编辑模板的额外时间。
+   * 使用静态模板：在传统静态模板中有长期投入的客户可通过在模板中使用静态模板创作自适应表单，继续其采用云的历程。这样使客户有更多时间可将旧有的静态模板迁移到现代的可编辑模板。
 
-* [在服务器端处理时，从记录文档(DoR)中删除隐藏字段](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md):您可以为最终用户生成记录PDF文档，其中只包含在数据捕获体验期间对他们可见的字段。 提交表单后，服务器会根据提交的数据验证哪些字段对最终用户隐藏，并从记录文档中排除以保持一致性。
+* [在服务器端处理时从记录文档 (DoR) 删除隐藏的字段](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：您可为最终用户生成记录文档 PDF，其中仅包含在数据捕获体验期间对最终用户可见的那些字段。在提交表单时，服务器根据所提交的数据验证对最终用户隐藏了哪些字段，并从记录文档中排除以达到一致。
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 通过AEM页面属性以及产品驾驶舱中的概述将AEM页面与产品和类别关联
-   ![产品驾驶舱页面关联](/help/assets/CIF/product_cockpit_page_association.png)
+* 通过 AEM 页面属性以及产品主控室中的概述将 AEM 页面与产品和类别关联
+   ![产品主控室页面关联](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
