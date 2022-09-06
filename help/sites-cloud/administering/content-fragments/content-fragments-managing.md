@@ -3,9 +3,9 @@ title: 管理内容片段
 description: 了解如何使用“内容片段”控制台管理 AEM 内容片段；用于页面创作，或作为 headless 内容的基础。
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,15 +39,15 @@ ht-degree: 95%
 
 ## 内容片段控制台 {#content-fragments-console}
 
-通过内容片段控制台，可以直接访问您的片段及相关任务。 有关详细信息，请参阅：
+内容片段控制台提供对片段和相关任务的直接访问。有关更多信息，请参阅：
 
 * [内容片段控制台的基本结构和处理](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
 
-* [提供的有关内容片段的信息](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+* [提供的有关您的内容片段的信息](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
 * [内容片段控制台中的内容片段的操作](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
-* [自定义内容片段控制台中可用的列](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+* [在内容片段控制台中自定义可用列](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
 * [在内容片段控制台中搜索和过滤](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
@@ -288,11 +288,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 查找片段的父引用 {#parent-references-fragment}
 
-可以从 **引用** 列 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+可以从[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)的&#x200B;**引用**&#x200B;列访问父引用的详细信息。
 
 ## 查找片段的语言副本 {#language-copies-fragment}
 
-语言副本的详细信息可从 **语言** 列 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+可以从[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)的&#x200B;**语言**&#x200B;列访问语言副本的详细信息。
 
 ## 内容片段的时间线 {#timeline-for-content-fragments}
 
