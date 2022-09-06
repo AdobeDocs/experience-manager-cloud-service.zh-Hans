@@ -2,10 +2,10 @@
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1811'
+ht-degree: 97%
 
 ---
 
@@ -215,9 +215,9 @@ ht-degree: 0%
 
 ## 取消发布页面 {#unpublishing-pages}
 
-取消发布页面将从发布环境中删除该页面，以便不再将其提供给您的读者。
+取消发布页面会将其从发布中删除，或 [预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md)，以便不再向您的读者提供该环境。
 
-通过[与发布类似的方式](#publishing-pages)，可以取消发布一个或多个页面：
+在 [发布方式类似](#publishing-pages)，则可以从所需的目标中取消发布一个或多个页面：
 
 * [从页面编辑器中](#unpublishing-from-the-editor)
 * [从站点控制台中](#unpublishing-from-the-console)
@@ -244,6 +244,9 @@ ht-degree: 0%
    >[!NOTE]
    >
    >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
+
+   >[!NOTE]
+   >如果您有 [预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 环境 **目标** 管理发布期间。
 
 1. 要完成取消发布，请按照与[发布页面](#manage-publication)类似的过程继续完成向导。
 
