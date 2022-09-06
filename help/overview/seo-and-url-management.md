@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳�
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3714'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 75%
 
 ### URL {#urls}
 
-URL中有一些已接受的最佳实践。
+在 URL 中有一些公认的最佳实践。
 
 在 AEM 项目中评估 URL 时，请问自己以下问题：
 
-*“如果用户看到此URL而页面上没有内容，他们能否描述此页面的内容？”*
+*“如果用户看到此 URL 但未看到页面上的任何内容，他们能否描述此页内容？”*
 
-如果答案为“是”，则该URL很可能适用于搜索引擎。
+如果能做到，那么可能该 URL 对于搜索引擎可正常工作。
 
 以下是有关如何构建 URL 以实施 SEO 的一些常规方法：
 
@@ -39,9 +39,9 @@ URL中有一些已接受的最佳实践。
 * 尽量避免使用查询参数。如有必要，请将查询参数限制在两个以内。
 
    * 如果可用，请使用目录结构指示信息架构。
-   * 如果目录结构不可用，请在URL中使用Sling选择器，而不是查询字符串。 除了它们提供的SEO价值之外，Sling选择器还使调度程序可以缓存页面。
+   * 如果无法使用目录结构，请在 URL 中使用 Sling 选择器而非查询字符串。除了 Sling 选择器提供的 SEO 值之外，这些选择器还使得可为 Dispatcher 缓存页面。
 
-* URL的可读性越强，越好；在URL中存在关键词会提升价值。
+* URL 越易懂越好；在 URL 中加入关键字可发挥作用。
 
    * 在页面上使用选择器时，首选提供语义值的选择器。
    * 如果人们无法读取您的 URL，则搜索引擎也无法读取。
@@ -50,11 +50,11 @@ URL中有一些已接受的最佳实践。
 优先 
 `mybrand.com/products/product-detail.1234.html`
 
-* 尽量避免使用子域，因为搜索引擎会将子域视为不同的实体，从而分割站点的SEO价值。
+* 尽可能避免使用子域，因为搜索引擎将其视为不同的实体，从而降低网站的 SEO 价值。
 
    * 相反，请使用第一级子路径。例如，使用 `www.mybrand.com/es/home.html`，而不是 `es.mybrand.com/home.html`。
 
-   * 根据本准则，规划内容层次结构以匹配内容的呈现方式。
+   * 按此准则规划内容层次结构以符合内容的展现方式。
 
 * URL 中的关键字有效性与 URL 长度和关键字位置成反比，URL 长度越长和关键字位置越靠后有效性越低。换句话说，URL 越短越好。
 
@@ -73,12 +73,12 @@ URL中有一些已接受的最佳实践。
 
 * 支持 URL 请求不区分大小写。
 
-   * 将Dispatcher配置为将所有入站请求重写为小写字母。
+   * 配置 Dispatcher 以使其将所有入站请求都重写为小写字母。
    * 为内容作者提供使用小写字母创建页面的培训。
 
 * 确保每个页面仅通过一种协议提供。
 
-   * 有时，网站会通过 `http` 提供，直到用户访问包含结账或登录表单等内容的页面时为止，此时网站将切换成 `https`。从此页面进行链接时，如果用户可以返回 `http` 页面，通过 `https`，则搜索引擎会将它们作为两个单独的页面进行跟踪。
+   * 有时，网站会通过 `http` 提供，直到用户访问包含结账或登录表单等内容的页面时为止，此时网站将切换成 `https`。从此页面进行链接时，如果用户可返回 `http` 页面并通过 `https` 访问这些页面，则搜索引擎跟踪这些页面作为两个单独的页面。
 
    * 目前，Google 首选的页面是 `https` 而不是 `http`。因此，通过 `https` 提供整个站点，往往会给人们的生活带来便利。
 
@@ -100,13 +100,13 @@ URL中有一些已接受的最佳实践。
 
 ### 使用 Sling 选择器 {#using-sling-selectors}
 
-以前，构建企业Web应用程序时可以接受使用查询参数。
+以前在构建企业 Web 应用程序时使用查询参数是公认的惯例。
 
-近年来的趋势是删除这些URL，以便URL更易读。 在许多平台上，这涉及在 Web 服务器或内容分发网络 (CDN) 上实施重定向，但 Sling 让这种做法变得简单明了。Sling 选择器能够：
+近几年的趋势已变为删除查询参数，以使 URL 更易懂。在许多平台上，这涉及在 Web 服务器或内容分发网络 (CDN) 上实施重定向，但 Sling 让这种做法变得简单明了。Sling 选择器能够：
 
 * 提高 URL 可读性。
-* 允许您在Dispatcher上缓存页面，这通常会提高安全性。
-* 允许您直接寻址内容，而不是让通用的 Servlet 来检索内容。这可让您从应用于存储库的ACL以及应用于Dispatcher的过滤器中受益。
+* 让您在 Dispatcher 上缓存您的页面，这样一般可提高安全性。
+* 允许您直接寻址内容，而不是让通用的 Servlet 来检索内容。这样应用于存储库的 ACL 和应用于 Dispatcher 的筛选器即可发挥作用。
 
 #### 为 Servlet 使用选择器 {#using-selectors-for-servlets}
 
@@ -115,7 +115,7 @@ URL中有一些已接受的最佳实践。
 * **bin** servlet
 * **Sling** servlet
 
-以下示例说明如何注册Servlet，使其既遵循这些模式又符合使用Sling Servlet所获得的好处。
+以下示例阐述如何注册遵循这两个模式的 Servlet 以及使用 Sling Servlet 获得的利益。
 
 #### Bin Servlet（下一级） {#bin-servlets-one-level-down}
 
@@ -140,9 +140,9 @@ String myParam = req.getParameter("myParam");
 使用这种方法需要考虑以下几点：
 
 * URL 本身会丢失 SEO 价值。访问站点（包括搜索引擎）的用户不会从 URL 收到任何语义价值，因为 URL 代表着程序化路径，而不是内容层次结构。
-* URL中存在查询参数，这意味着Dispatcher将无法缓存响应。
+* URL 中存在查询参数意味着 Dispatcher 将无法缓存响应。
 * 如果要保护此 Servlet 的安全，您需要在 Servlet 中实施自己的自定义安全逻辑。
-* 必须（仔细）配置Dispatcher以公开 `/bin/myApp/myServlet`. 仅公开 `/bin` 可能会允许访问某些不应对站点访客开放的 Servlet。
+* 必须（仔细地）配置 Dispatcher 以公开 `/bin/myApp/myServlet`。仅公开 `/bin` 可能会允许访问某些不应对站点访客开放的 Servlet。
 
 #### Sling servlet（下一级） {#sling-servlets-one-level-down}
 
@@ -167,13 +167,13 @@ Resource myPage = req.getResource();
 这种方法的好处是：
 
 * 您可以通过站点层次结构和页面名称中存在的语义来获得 SEO 价值。
-* 由于不存在查询参数，Dispatcher可以缓存响应。 此外，在激活页面时，对已寻址页面进行的任何更新都会使此缓存失效。
-* 应用于的所有ACL `/content/my-brand/my-page` 当用户尝试访问此servlet时生效。
-* 调度程序将已配置为将此内容作为提供网站的功能提供。 无需其他配置。
+* 既然不存在查询参数，因此 Dispatcher 可缓存响应。此外，对已寻址的页面作出任何更改，都将在激活该页面时使此缓存无效。
+* 所有应用于 `/content/my-brand/my-page` 的 ACL 在用户尝试访问此 Servlet 时生效。
+* Dispatcher 将已配置为作为服务网站的一项功能而提供此内容。无需其他配置。
 
 ### URL 重写 {#url-rewriting}
 
-在 AEM 中，所有网页都存储在 `/content/my-brand/my-content` 下面。虽然从存储库数据管理的角度来看这可能有用，但对您希望客户如何浏览网站来说却不一定有用，并且可能与尽量保持 URL 简短的 SEO 指导建议相冲突。此外，您可能正在从同一AEM实例和不同的域名提供多个网站。
+在 AEM 中，所有网页都存储在 `/content/my-brand/my-content` 下面。虽然从存储库数据管理的角度来看这可能有用，但对您希望客户如何浏览网站来说却不一定有用，并且可能与尽量保持 URL 简短的 SEO 指导建议相冲突。此外，您可能正在从不同域名通过同一个 AEM 实例提供多个网站。
 
 本节会回顾 AEM 中用于管理 URL 并以更易读和 SEO 友好的方式向用户展示这些 URL 的可用选项。
 
@@ -229,21 +229,21 @@ Resource myPage = req.getResource();
 
 可以在此位置添加映射定义来映射入站请求，和/或在 AEM 中重写页面上的 URL。
 
-要创建映射，请创建 `sling:Mapping` 此位置下的节点 `/http` 或 `/https`. 根据在此节点上设置的 `sling:match` 和 `sling:internalRedirect` 属性，AEM 会将匹配 URL 的所有流量重定向到 `internalRedirect` 属性中指定的值。
+要创建映射，请在 `/http` 或 `/https` 下面的此位置创建一个 `sling:Mapping` 节点。根据在此节点上设置的 `sling:match` 和 `sling:internalRedirect` 属性，AEM 会将匹配 URL 的所有流量重定向到 `internalRedirect` 属性中指定的值。
 
-虽然这是官方 AEM 和 Sling 文档中记录的方法，但与直接使用 `SlingResourceResolver` 提供的选项相比，这种实施提供的正则表达式支持范围比较有限。此外，以这种方式实施映射可能会导致Dispatcher缓存失效问题。
+虽然这是官方 AEM 和 Sling 文档中记录的方法，但与直接使用 `SlingResourceResolver` 提供的选项相比，这种实施提供的正则表达式支持范围比较有限。此外，以这种方式实现映射可能会导致 Dispatcher 缓存失效问题。
 
 以下示例简要介绍了这个问题是如何发生的：
 
 1. 用户访问您的网站并请求 `https://www.mydomain.com/my-page.html`
-1. Dispatcher将此请求转发到发布服务器。
-1. 使用 `/etc/map` 时，发布服务器将此请求解析为 `/content/my-brand/my-page` 并呈现页面。
+1. Dispatcher 将此请求转发到发布服务器。
+1. 通过使用 `/etc/map`，发布服务器将此请求解析到 `/content/my-brand/my-page` 并呈现该页面。
 
-1. 调度程序在 `/my-page.html` 和会向用户返回响应。
-1. 内容作者更改此页面并将其激活。
-1. 调度程序刷新代理发送的失效请求 `/content/my-brand/my-page`**.** 由于Dispatcher没有将页面缓存在此路径中，因此旧内容会一直缓存且过时。
+1. Dispatcher 在 `/my-page.html` 处缓存响应并将响应返回给用户。
+1. 内容作者更改此页面并激活它。
+1. Dispatcher 刷新代理发送对 `/content/my-brand/my-page`**的无效请求。** 由于 Dispatcher 在此路径中没有缓存页面，因此仍然会缓存旧内容且该内容会过时。
 
-有多种方法可配置自定义调度程序刷新规则，这些规则会将较短的URL映射到较长的URL，以便使缓存失效。
+有多种方法可配置自定义调度-刷新规则，这些规则会将较短的 URL 映射到较长的 URL，以便使缓存失效。
 
 但是，还有一个更简单的方法来处理这种情况：
 
@@ -288,7 +288,7 @@ Resource myPage = req.getResource();
 
 到目前为止，您已经与组件中的逻辑一起实施了映射，以便在将 URL 输出到页面时使用这些映射。
 
-最后一步是缩短的URL进入Dispatcher后如何处理它们，这正是Dispatcher的位置 `mod_rewrite` 发挥作用。 使用的最大好处 `mod_rewrite` 是将URL映射回其长格式 *之前* 它们将被发送到调度程序模块。 这意味着Dispatcher从发布服务器请求长URL并相应地对其进行缓存。 因此，从发布服务器传入的任何Dispatcher刷新都能够成功使此内容失效。
+最后一步就是缩短的 URL 进入 Dispatcher 后如何进行处理，这正是 `mod_rewrite` 发挥作用的时候。使用 `mod_rewrite` 最大的好处是，在将 URL 发送到 Dispatcher 模块&#x200B;*之前*，该 URL 会映射回其长格式。这意味着，Dispatcher 将向发布服务器请求长 URL 并相应地对其进行缓存。因此，从发布服务器传入的任何 Dispatcher 刷新都将能够成功地使此内容失效。
 
 要实施这些规则，可以在 Apache HTTP Server 配置的虚拟主机下添加 `RewriteRule` 元素。如果要将前面示例中缩短的 URL 展开，您可以实施如下规则：
 
@@ -303,9 +303,9 @@ Resource myPage = req.getResource();
 
 ### 规范 URL 标记 {#canonical-url-tags}
 
-规范 URL 标记是指放置到 HTML 文档标题中的链接标记，用于阐明搜索引擎在索引内容时应如何处理页面。它们带来的好处是，即使指向页面的URL可能包含差异，也能确保（不同版本）页面的索引相同。
+规范 URL 标记是指放置到 HTML 文档标题中的链接标记，用于阐明搜索引擎在索引内容时应如何处理页面。这些标记带来的好处是，即使指向页面的 URL 可能存在差异，也能确保（不同版本的）页面的索引是相同的。
 
-例如，如果站点要提供打印机友好版本的页面，则搜索引擎可能会将该页面与常规版本的页面分开进行索引。规范标记告知搜索引擎它们是相同的。
+例如，如果站点要提供打印机友好版本的页面，则搜索引擎可能会将该页面与常规版本的页面分开进行索引。规范标记会告诉搜索引擎，它们是相同的。
 
 示例：
 
@@ -320,9 +320,9 @@ Resource myPage = req.getResource();
 
 `href` 可以是相对位置或绝对位置。该代码应包含在页面标记中，以确定页面的规范 URL 并输出此标记。
 
-### 将Dispatcher配置为不区分大小写 {#configuring-the-dispatcher-for-case-insensitivity}
+### 将 Dispatcher 配置为不区分大小写 {#configuring-the-dispatcher-for-case-insensitivity}
 
-最佳实践是使用小写字母来提供所有页面。但是，您不希望当用户在 URL 中使用大写字母访问您的网站时得到 404 错误。因此，Adobe 建议您在 Apache HTTP Server 配置中添加重写规则，以将所有传入的 URL 映射为小写。此外，必须培训内容作者使用小写名称创建其页面。
+最佳实践是使用小写字母来提供所有页面。但是，您不希望当用户在 URL 中使用大写字母访问您的网站时得到 404 错误。因此，Adobe 建议您在 Apache HTTP Server 配置中添加重写规则，以将所有传入的 URL 映射为小写。此外，必须为内容作者提供使用小写字母创建页面的培训。
 
 要配置 Apache 将所有入站流量强制转换为小写，请在 `vhost` 配置中添加以下内容：
 
@@ -331,7 +331,7 @@ RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-此外，在的顶部添加以下内容 `htaccess` 文件：
+此外，在 `htaccess` 文件的最上方添加以下内容：
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -340,7 +340,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### 实施 robots.txt 以保护开发环境 {#implementing-robots-txt-to-protect-development-environments}
 
-在爬取站点之前，搜索引擎&#x200B;*应该*&#x200B;检查站点根目录中是否存在 `robots.txt` 文件。尽管Google、雅虎或必应等主要搜索引擎都尊重这一点，但一些外国搜索引擎却不尊重。
+在爬取站点之前，搜索引擎&#x200B;*应该*&#x200B;检查站点根目录中是否存在 `robots.txt` 文件。尽管 Google、Yahoo 或 Bing 等主要搜索引擎都尊循这一规则，但一些外国搜索引擎并不一定遵循。
 
 阻止访问整个站点的最简单方法是，将名为 `robots.txt` 的文件放置到站点根目录下，并包含以下内容：
 
@@ -351,17 +351,17 @@ Disallow: /
 
 或者，在实时环境中，您可以选择禁止某些不希望索引的路径。
 
-在 `robots.txt` 位于站点根目录的文件是，调度程序刷新请求可能会清除此文件，并且URL映射可能会将站点根目录放置在与 `DOCROOT` 如Apache HTTP Server配置中定义。 因此，通常将该文件放在站点根目录下的作者实例上，并将其复制到发布实例。
+将 `robots.txt` 文件放在站点根目录时应当注意，Dispatcher 刷新请求可能会清除此文件，同时 URL 映射可能会将该站点根目录放置在与 Apache HTTP Server 配置中定义的 `DOCROOT` 不同的位置。因此，通常将该文件放在站点根目录的作者实例上，并将其复制到发布实例。
 
 ### 在 AEM 上构建 XML Sitemap {#building-an-xml-sitemap-on-aem}
 
-爬取程序使用 XML 站点地图来更好地理解网站的结构。虽然提供站点地图无法保证会提高SEO排名，但这是公认的最佳实践。 您可以在Web服务器上手动维护要用作站点地图的XML文件，但建议以编程方式生成站点地图，这可确保当作者创建内容时，站点地图会自动反映其更改。
+爬取程序使用 XML 站点地图来更好地理解网站的结构。虽然提供站点地图无法保证会提高 SEO 排名，但这是公认的最佳实践。您可以在 Web 服务器上手动维护要用作站点地图的 XML 文件，但我们建议以编程方式生成站点地图，这种方法可确保当作者创建内容时，站点地图会自动反映内容更改。
 
-AEM 使用 [Apache Sling Sitemap 模块](https://github.com/apache/sling-org-apache-sling-sitemap)生成 XML Sitemap，这将为开发人员和编辑人员提供一系列广泛的选项，以使站点 XML Sitemap 保持最新。
+AEM 使用 [Apache Sling Sitemap 模块](https://github.com/apache/sling-org-apache-sling-sitemap)生成 XML 站点地图，这将为开发人员和编辑人员提供一系列广泛的选项，以使站点的 XML 站点地图保持最新。
 
-Apache Sling站点地图模块区分顶级站点地图和嵌套站点地图，这两者都是为具有 `sling:sitemapRoot` 属性设置为 `true`. 通常，站点地图使用树顶级站点地图路径（即没有其他站点地图根父级的资源）中的选择器来呈现。 此顶级站点地图根目录还会公开站点地图索引，该索引通常是站点所有者在搜索引擎的配置门户中配置或添加到站点的索引 `robots.txt`.
+Apache Sling Sitemap 模块将区分为 `sling:sitemapRoot` 属性设置为 `true` 的任何资源生成的顶级站点地图和嵌套站点地图。 通常，使用树的顶级站点地图路径上的选择器来呈现站点地图，而顶级站点地图是没有其他站点地图根祖先的资源。 此顶级站点地图根还公开站点地图索引，该索引通常是站点所有者将在搜索引擎的配置门户中配置或添加到站点的 `robots.txt` 的内容。
 
-例如，假定某个站点在 `my-page` 和位于 `my-page/news`，以便为新闻子树中的页面生成专用站点地图。 生成的相关 URL 将为
+例如，考虑一个在 `my-page` 定义顶级站点地图并在 `my-page/news` 定义嵌套站点地图的网站，以便为新闻子树中的页面生成专用站点地图。 生成的相关 URL 将为
 
 * `<https://www.mydomain.com/my-brand/my-page.sitemap-index.xml>`
 * `<https://www.mydomain.com/my-brand/my-page.sitemap.xml>`
@@ -470,7 +470,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 * 随着时间的推移，旧版 URL 已积累了 SEO 价值。通过实施重定向，搜索引擎可以将此价值应用于新的 URL。
 * 您站点的用户可能已经为这些页面创建了书签。通过实施重定向，您可以确保将用户定向到新站点上与他们尝试访问的旧站点最匹配的页面。
 
-请确保查看下面的“其他资源”部分，以获取有关实施301重定向的说明和测试重定向是否按预期工作的工具。
+请务必查看下面的“其他资源”部分，以获取关于实施 301 重定向的操作说明，以及测试重定向是否按预期工作的工具。
 
 ## 其他资源 {#additional-resources}
 
