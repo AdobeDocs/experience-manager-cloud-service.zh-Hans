@@ -4,9 +4,9 @@ description: 了解如何从内容片段控制台中管理内容片段。
 landing-page-description: 了解如何从内容片段控制台中管理内容片段，该控制台重点关注内容片段在 Headless 用例中的大量使用，但也是在页面创作时使用。
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '882'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 66%
 
 ![全局导航 – 内容片段控制台](assets/cfc-global-navigation.png)
 
-## 控制台的基本结构与操作 {#basic-structure-handling-content-fragments-console}
+## 控制台的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
 选择&#x200B;**内容片段**&#x200B;将在新选项卡中打开控制台。
 
@@ -54,17 +54,17 @@ ht-degree: 66%
    * 查看树选定分支中的所有内容片段列表: 
       * 痕迹导航指示位置；它们还可用于更改位置
       * 选定文件夹中的内容片段，将显示所有子文件夹: 
-         * [各种信息领域](#selectuse-available-columns) 关于内容片段提供链接；根据字段，这些字段可以：
+         * 有关内容片段的[各种信息字段](#selectuse-available-columns)提供了相应的链接；根据字段，这些链接可以：
             * 在编辑器中打开相应的片段
-            * 显示有关引用的信息
-            * 显示有关片段语言版本的信息
-         * 您可以 [选择一个或多个内容片段以显示可用操作](#actions-selected-content-fragment)
+            * 显示有关参考内容的信息
+            * 显示有关片段的语言版本的信息
+         * 您可以[选择一个或多个内容片段来显示可用的操作](#actions-selected-content-fragment)
       * 可以选择列标题，以根据该列对表进行排序；再次选择，以在升序和降序之间进行切换
    * **[创建](#creating-new-content-fragment)**&#x200B;新内容片段
    * [筛选](#filtering-fragments)内容片段，并保存过滤器以供将来使用
    * [搜索](#searching-fragments)内容片段
    * [自定义表视图以显示选定的信息列](#selectuse-available-columns)
-   * 使用 **在资产中打开** 直接在 **资产** 控制台
+   * 使用&#x200B;**在资源中打开**&#x200B;直接在&#x200B;**资源**&#x200B;控制台中打开当前位置。
 
       >[!NOTE]
       >
@@ -74,7 +74,7 @@ ht-degree: 66%
       >* 直接从全局导航窗格
 
 
-## （选定）内容片段的操作 {#actions-selected-content-fragment}
+## 针对（选定的）内容片段的操作 {#actions-selected-content-fragment}
 
 选择特定片段将打开一个工具栏，其中重点介绍可用于该片段的操作。 您还可以选择多个片段 – 操作的选择将相应地进行调整。
 
@@ -91,52 +91,51 @@ ht-degree: 66%
 >
 >“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。 可以通过 AEM 异步作业 UI 监控该作业的进度。
 
-## 提供的有关内容片段的信息 {#information-content-fragments}
+## 提供的有关您的内容片段的信息 {#information-content-fragments}
 
-控制台的主/右面板（表视图）提供了有关内容片段的一系列信息。 某些项目还提供指向进一步操作和/或信息的直接链接：
+控制台的主/右侧面板（表格视图）提供了有关您的内容片段的一系列信息。有些项目还提供了进一步操作和/或信息的直接链接：
 
 * **名称**
-   * 提供在编辑器中打开片段的链接。
+   * 提供用于在编辑器中打开片段的链接。
 * **模型**
-   * 提供在编辑器中打开片段的链接。
+   * 提供用于在编辑器中打开片段的链接。
 * **文件夹**
-   * 提供在控制台中打开文件夹的链接。
-将鼠标悬停在文件夹名称上将显示 JCR 路径。
+   * 提供用于在控制台中打开文件夹的链接。将鼠标悬停在文件夹名称上将显示 JCR 路径。
 * **状态**
    * 仅供参考
 * **修改时间**
    * 仅供参考
 * **修改人**
    * 仅供参考
-* **发布位置**
+* **发布时间**
    * 仅供参考
 * **发布者**
    * 仅供参考
-* **引用方式**
+* **引用者**
 
-   * 提供一个链接，用于打开一个对话框，其中列出该片段的所有父引用；包括引用内容片段、体验片段和页面。 要打开特定引用，请单击 **标题** 中。
+   * 提供一个链接来打开一个列出该片段的所有父引用的对话框，包括引用内容片段、体验片段和页面。要打开某个特定的引用，请单击对话框中的&#x200B;**标题**。
 
-      ![内容片段控制台 — 引用对话框](assets/cfc-console-references-dialog.png)
+      ![内容片段控制台 –“引用”对话框](assets/cfc-console-references-dialog.png)
 
 * **语言**
 
    * 指示内容片段的区域设置，以及与内容片段关联的区域设置/语言副本的总数。
 
-      ![内容片段控制台 — 语言指示器](assets/cfc-console-language-indicator.png)
+      ![内容片段控制台 – 语言指示器](assets/cfc-console-language-indicator.png)
 
-      * 单击/点按计数以打开一个显示所有语言副本的对话框。 要打开特定语言副本，请单击 **标题** 中。
+      * 单击/点击计数可打开显示所有语言副本的对话框。要打开某个特定的语言副本，请单击对话框中的&#x200B;**标题**。
 
-         ![“内容片段”控制台 — “语言”对话框](assets/cfc-console-languages-dialog.png)
+         ![内容片段控制台 –“语言”对话框](assets/cfc-console-languages-dialog.png)
 
 ## 选择可用列 {#select-available-columns}
 
-与其他控制台一样，您可以配置可见的列并可用于执行操作：
+与其他控制台一样，您可以配置可见且可操作的列：
 
-![内容片段控制台 — 列配置](assets/cfc-console-column-icon.png)
+![内容片段控制台 - 列配置](assets/cfc-console-column-icon.png)
 
-这将显示可隐藏或显示的列列表：
+这将显示您可以隐藏或显示的列的列表：
 
-![内容片段控制台 — 列配置](assets/cfc-console-column-selection.png)
+![内容片段控制台 - 列配置](assets/cfc-console-column-selection.png)
 
 ## 创建新的内容片段 {#creating-new-content-fragment}
 
