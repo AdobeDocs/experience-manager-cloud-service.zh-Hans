@@ -3,9 +3,9 @@ title: 预览内容
 description: 了解如何使用 AEM 预览服务在内容上线前进行预览。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 ## 从预览中取消发布内容 {#unpublishing-content-from-preview}
 
-从 **预览** 环境与 [取消发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 从 **发布** 环境。
+从&#x200B;**预览**&#x200B;环境中取消发布内容与从&#x200B;**发布**&#x200B;环境中[取消发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)的过程基本相同。
 
-唯一的区别在于，您可以选择 **目标** 为 **预览**.
+唯一的区别是您可以选择&#x200B;**目标**&#x200B;为&#x200B;**预览**。
 
 ## 配置预览层的 OSGi 设置 {#configuring-osgi-settings-for-the-preview-tier}
 
