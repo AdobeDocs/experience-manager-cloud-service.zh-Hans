@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
 workflow-type: tm+mt
 source-wordcount: '14053'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 98%
 * [Assets 中的辅助功能](/help/assets/accessibility.md)
 * [配置富文本编辑器以创建辅助内容](/help/implementing/developing/extending/rte-accessible-content.md)
 
-准则根据三个合规级别进行分级：A级（最低）、AA级和AAA级（最高）。 以下是各个级别的简要定义：
+该指南根据三个一致性级别进行分级：A 级（最低）、AA 级和 AAA 级（最高）。以下是各个级别的简要定义：
 
 * **级别 A：**&#x200B;您的站点满足基本的、最低级别的无障碍性。要达到此级别，需满足所有级别 A 成功标准。
-* **级别 AA：**&#x200B;这是要努力实现的理想无障碍级别，在此级别，站点满足基本级别的无障碍性，因此多数情况下大部分人都可以使用大部分技术访问站点。要达到此级别，需满足所有级别 A 和级别 AA 成功标准。
-* **级别AAA:** 您的站点在辅助功能方面达到了较高级别。 要达到此级别，需满足所有级别A、级别AA和级别AAA成功标准。
+* **级别 AA：**&#x200B;这是要努力实现的理想无障碍级别，在此级别，站点满足基本级别的无障碍性，因此多数情况下大部分人都可以使用大部分技术访问站点。为达到此级别，所有 A 级和 AA 级成功标准均已满足。
+* **AAA 级：**&#x200B;您的网站达到了高水平的可访问性。 为达到此级别，所有 A 级、AA 级和 AAA 级成功标准均已满足。
 
 在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
 
@@ -40,7 +40,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->在本文档中，我们使用了以下内容：
+>在本文档中，我们使用以下内容：
 >
 >* [WCAG 2.1 准则的简称](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)。
 >* [WCAG 2.1 准则中使用的编号](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)，以便与 WCAG 网站进行交叉引用。
@@ -52,7 +52,7 @@ ht-degree: 98%
 
 ### 替换文本 (1.1) {#text-alternatives}
 
-[准则1.1替换文本：为任何非文本内容提供替换文本，以将其更改为人们需要的其他形式，如大字体、盲文、语音、符号或更简单的语言。](https://www.w3.org/TR/WCAG/#text-alternatives)
+[指南 1.1 文本替代：为任何非文本内容提供替代文本，以便可以将其更改为人们需要的其他形式，例如大字体、盲文、语音、符号或更简单的语言。](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### 非文本内容 (1.1.1) {#non-text-content}
 
@@ -62,7 +62,7 @@ ht-degree: 98%
 
 #### 用途 – 非文本内容 (1.1.1) {#purpose-non-text-content}
 
-网页上的信息可以以多种不同的非文本格式提供，如图片、视频、动画、图表和图形。失明或患有严重视觉障碍的用户无法看到非文本内容，但他们可以通过屏幕阅读器向他们阅读文本内容或通过盲文显示设备以触觉形式呈现文本内容。因此，通过以图形格式提供内容的替换文本，无法看到图形内容的用户可以访问内容提供信息的对等版本。
+网页上的信息可以以许多不同的非文本格式提供，例如图片、视频、动画、图表和图形。盲人或有严重视力障碍的人无法看到非文本内容，但他们可以通过屏幕阅读器阅读文本内容或通过盲文显示设备以触觉形式呈现文本内容。因此，通过以图形格式提供文本替代内容，看不到图形内容的人可以访问内容提供的信息的等效版本。
 
 另外的一个实用好处是，替换文本使非文本内容能够通过搜索引擎技术建立索引。
 
@@ -74,17 +74,17 @@ ht-degree: 98%
 >
 >某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
->在为AEM实例实施这些版本时，开发团队必须配置这些组件才能支持 `alt` 属性，以便作者可以将其添加到内容中(请参阅添加对其他HTML元素和属性的支持)。
+>因此，在为 AEM 实例实施这些版本时，开发团队必须将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅添加对其他 HTML 元素和属性的支持）。
 >
 >某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
->在为AEM实例实施这些版本时，开发团队必须配置这些组件才能支持 `alt` 属性，以便作者可以将其添加到内容中(请参阅 [添加对其他HTML元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
+>因此，在为 AEM 实例实施这些版本时，开发团队必须将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅[添加对其他 HTML 元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
 
 默认情况下，AEM 要求填写&#x200B;**替换文本**&#x200B;字段。如果图像是纯粹的装饰并且不需要替换文本，则可以选中&#x200B;**图像具有装饰性**&#x200B;选项。
 
 #### 创建有效的替换文本 {#creating-good-text-alternatives}
 
-非文本内容的形式多种多样，因此替换文本的值取决于图形在网页中所起的作用。您可能发现有用的一些常规规则包括：
+非文本内容的形式多种多样，因此替换文本的值取决于图形在网页中所起的作用。您可能会觉得有帮助的一些一般规则包括：
 
 * 替换文本应当既简洁明了，又能清晰地表达非文本内容所提供的基本信息。
 * 应当避免使用冗长的描述（超过 100 个字符）。如果替换文本需要表达更多的详细信息，则可以通过以下方法来实现：
