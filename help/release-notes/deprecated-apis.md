@@ -2,10 +2,10 @@
 title: 已弃用 API
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的 API 的发行说明。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
-workflow-type: ht
-source-wordcount: '1051'
-ht-degree: 100%
+source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 99%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 100%
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
-    <td>2015</td>
+    <td>2015年</td>
     <td>7/30/21</td>
   </tr>
   <tr>
     <td>com.day.cq.jcrclustersupport</td>
     <td>使用 Sling 的 Discovery API 作为替代方案</td>
-    <td>2015</td>
+    <td>2015年</td>
     <td>已删除</td>
   </tr>
   <tr>
@@ -197,6 +197,12 @@ ht-degree: 100%
     <td>由于安全漏洞，需要从 4.0.5 升级到 4.3.0。 此包不再存在于升级的 handlebar 中。</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.resourceresolverhelper</td>
+    <td>此API不再受支持。 请改用org.apache.sling.api.resource.ResourceResolverFactory 。</td>
+    <td>9/29/2022</td>
+    <td>11/24/2022</td>
   </tr>
 </tbody>
 </table>
