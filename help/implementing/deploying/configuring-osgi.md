@@ -1,11 +1,11 @@
 ---
 title: 为Adobe Experience Manager as a Cloud Service配置OSGi
-description: '具有密钥值和环境特定值的OSGi配置 '
+description: 具有密钥值和环境特定值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 339030fc5edd22f81f977046185b53649869cc83
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3285'
 ht-degree: 1%
 
 ---
@@ -295,6 +295,14 @@ export ENV_VAR_NAME=my_value
 机密值从文件中读取。 因此，对于使用密钥的每个占位符，必须创建包含密钥值的文本文件。
 
 例如，如果 `$[secret:server_password]` ，则使用名为 **server_password** 必须创建。 所有这些密钥文件必须存储在同一目录和框架属性中 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 必须使用该本地目录进行配置。
+
+的 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 是Sling框架属性；因此，此属性未在felix控制台(/system/console)中设置，但是在系统引导时使用的sling.properties文件中设置。 此文件可在已提取的Jar/install文件夹(crx-quickstart/conf)的/conf子目录中找到。
+
+示例：将此行添加到“crx-quickstart/conf/sling.properties”文件的末尾，以将“crx-quickstart/secretsdir”配置为密钥文件夹：
+
+```
+org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
+```
 
 ### 创作配置与发布配置 {#author-vs-publish-configuration}
 
