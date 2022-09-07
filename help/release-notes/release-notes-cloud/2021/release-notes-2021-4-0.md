@@ -1,24 +1,24 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版的发行说明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8f4b504898b1332c21f3cb82ab9bbf663c9dc312
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的一般发行说明。
+以下部分概述了当前（最新）版本的 [!DNL Adobe Experience Manager] as a Cloud Service 的一般发行说明。
 
 >[!NOTE]
 >从此处，您可以导航到以前版本的发行说明；例如，2020年、2021年等年份的客户。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -192,4 +192,4 @@ Best Practices Analyzer v2.1.12的发布日期是2021年4月12日。
 ### 错误修复 {#bug-fixes-bpa-april}
 
 * 报告的BPA中发现重复的行。 此问题已得到修复。
-* AEM版本6.4.2上的BPA UI会引发一个JS错误，该错误会禁用“生成报表”按钮。 此问题已修复
+* AEM版本6.4.2上的BPA UI会引发一个JS错误，该错误会禁用“生成报表”按钮。 此问题已得到修复
