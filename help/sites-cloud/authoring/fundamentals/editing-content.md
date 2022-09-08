@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
-workflow-type: ht
-source-wordcount: '2992'
-ht-degree: 100%
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
+workflow-type: tm+mt
+source-wordcount: '3019'
+ht-degree: 96%
 
 ---
 
@@ -466,12 +466,11 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 
 >[!CAUTION]
 >
->模拟用户身份时可以执行页面锁定。但是，以这种方式锁定的页面只能由被模拟的用户或具有管理员权限的用户（具有 AEM 管理员 IMS 用户档案的成员）解锁。
+>模拟用户身份时可以执行页面锁定。但是，以这种方式锁定的页面只能使用被模拟的用户来解锁（由客户）。
 >
->不能通过模拟锁定页面的用户的身份来解锁页面。
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>无法通过模拟锁定页面的用户来解锁页面。
+>
+>如果锁定页面的用户无法解锁页面，请联系客户支持以评估删除锁定的选项。
 
 ## 解锁页面 {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 
 >[!CAUTION]
 >
->模拟用户身份时可以执行页面锁定。但是，以这种方式锁定的页面只能由被模拟的用户或具有管理员权限的用户（具有 AEM 管理员 IMS 用户档案的成员）解锁。
+>模拟用户身份时可以执行页面锁定。但是，以这种方式锁定的页面随后只能使用被模拟的用户来解锁（由客户）。
 >
->不能通过模拟锁定页面的用户的身份来解锁页面。
+>无法通过模拟锁定页面的用户来解锁页面。
+>
+>如果锁定页面的用户无法解锁页面，请联系客户支持以评估删除锁定的选项。
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
