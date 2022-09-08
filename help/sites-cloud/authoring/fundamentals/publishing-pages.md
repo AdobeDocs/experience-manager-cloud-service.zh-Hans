@@ -140,6 +140,7 @@ ht-degree: 100%
       >[!NOTE]
       >
       >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
+
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 单击&#x200B;**下一步**&#x200B;以继续。
