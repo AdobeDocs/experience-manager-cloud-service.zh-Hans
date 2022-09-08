@@ -3,7 +3,7 @@ title: 通知用户组
 description: 了解如何在Admin Console中创建用户组以管理重要电子邮件通知的接收情况。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: a663e21d100953f87c012a1d7962fb0e88e6a7f2
+source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -49,17 +49,17 @@ Adobe需要不时联系有关其AEMas a Cloud Service环境的联系。 除了�
 
    ![创建用户组](assets/cloud_manager_profiles.png)
 
-1. 单击新建配置文件，并介绍以下详细信息：
+1. 单击 **新建用户档案** 并介绍以下详细信息：
 
-* 产品配置文件名称：事件通知 — Cloud Service
-* 显示名称：事件通知 — Cloud Service
-* 描述：Cloud Manager配置文件，用于在事件期间或Adobe发现AEMas a Cloud Service环境存在潜在可用性问题时接收通知的用户。
+   * 产品配置文件名称：事件通知 — Cloud Service
+   * 显示名称：事件通知 — Cloud Service
+   * 描述：Cloud Manager配置文件，用于在事件期间或Adobe发现AEMas a Cloud Service环境存在潜在可用性问题时接收通知的用户。
 
-1. 单击保存并重复步骤4，其中包含以下详细信息：
+1. 单击 **保存** 和重复步骤5，并提供以下详细信息：
 
-* 产品配置文件名称：主动通知 — Cloud Service
-* 显示名称：主动通知 — Cloud Service
-* 描述：Cloud Manager配置文件，适用于当Adobe支持团队成员希望就可能的优化或建议与AEMas a Cloud Service环境配置有关的事宜提供指导时，将收到通知的用户。
+   * 产品配置文件名称：主动通知 — Cloud Service
+   * 显示名称：主动通知 — Cloud Service
+   * 描述：Cloud Manager配置文件，适用于当Adobe支持团队成员希望就可能的优化或建议与AEMas a Cloud Service环境配置有关的事宜提供指导时，将收到通知的用户。
 
 >[!NOTE]
 >
@@ -83,10 +83,10 @@ Adobe需要不时联系有关其AEMas a Cloud Service环境的联系。 除了�
 
 ![用户](assets/cloud_manager_add_user.png)
 
-1. 在将用户添加到团队对话框中，输入要添加用户的电子邮件ID。
+1. 在 **将用户添加到您的团队** 对话框中，输入要添加的用户的电子邮件ID。
 
-* 如果尚未设置团队成员的Federated ID，请为ID类型选择Adobe ID 。
-* 如果用户已存在，请参阅步骤7。
+   * 如果尚未设置团队成员的Federated ID，请为ID类型选择Adobe ID 。
+   * 如果用户已存在，请参阅步骤9。
 
 1. 单击 **选择产品** 开始产品选择和选择的标题 **Adobe Experience Manager as a Cloud Service** 分配 **事件通知 — Cloud Service** 或 **主动通知 — Cloud Service**，或两者都发送给用户。
 
@@ -96,7 +96,7 @@ Adobe需要不时联系有关其AEMas a Cloud Service环境的联系。 除了�
 
 1. 如果用户已存在，请搜索用户的名称并：
 
-* 单击用户的名称。
-* 在 **产品** ，单击 **编辑**.
-* 单击 **选择产品** 开始产品选择和选择的标题 **Adobe Experience Manager as a Cloud Service** 分配 **事件通知 — Cloud Service** 或 **主动通知 — Cloud Service**，或两者都发送给用户。
-* 单击 **保存** 并向您添加的用户发送欢迎电子邮件。 受邀用户现在将收到通知。
+   * 单击用户的名称。
+   * 在 **产品** ，单击 **编辑**.
+   * 单击 **选择产品** 开始产品选择和选择的标题 **Adobe Experience Manager as a Cloud Service** 分配 **事件通知 — Cloud Service** 或 **主动通知 — Cloud Service**，或两者都发送给用户。
+   * 单击 **保存** 并向您添加的用户发送欢迎电子邮件。 受邀用户现在将收到通知。
