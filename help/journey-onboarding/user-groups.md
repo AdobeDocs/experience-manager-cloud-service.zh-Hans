@@ -3,7 +3,7 @@ title: 通知用户组
 description: 了解如何在Admin Console中创建用户组以管理重要电子邮件通知的接收情况。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Adobe需要不时联系有关其AEMas a Cloud Service环境的联系。 除了�
 
 1. 选择 **用户** 选项卡，然后选择 **添加用户**.
 
-![用户](assets/cloud_manager_add_user.png)
+   ![用户](assets/cloud_manager_add_user.png)
 
 1. 在 **将用户添加到您的团队** 对话框中，输入要添加的用户的电子邮件ID。
 
