@@ -2,13 +2,13 @@
 title: 访问 Cloud Manager
 description: 了解如何访问Cloud Manager，以便设置项目资源。
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1099'
 ht-degree: 1%
 
 ---
-
 
 # 访问 Cloud Manager {#cloud-resources}
 
@@ -32,6 +32,10 @@ Cloud Manager是AEMas a Cloud Service的一个基本组件，是您团队的单�
 通常是分配给 **业务所有者** 产品配置文件负责添加云资源，如程序和环境。 此人员了解业务需求以及完成Cloud Manager初始设置的人员。
 
 在此载入历程中，您（系统管理员）已经将自己分配给 **业务所有者** 产品配置文件和将设置云资源。 根据实际项目要求，业务所有者可能与系统管理员相同，也可能与系统管理员不同。
+
+>[!NOTE]
+>
+>默认情况下，有权访问AEM环境的用户也将具有Cloud > Manager用户角色。 此角色本身及其本身不足以授予用户访问项目详细信息视图的权限。 此类仅具有Cloud Manager用户角色的用户能够通过项目菜单选项导航到AEM环境创作URL（如果存在环境）。 如果此类用户希望获得程序级访问权限，则必须联系其管理员。
 
 ## 以系统管理员和业务所有者身份访问Cloud Manager {#access-sysadmin-bo}
 
