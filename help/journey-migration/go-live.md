@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
+source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -153,6 +153,7 @@ ht-degree: 1%
       * 如果您的TTL很高，则对DNS记录的更新将需要较长的时间才能传播。
 * 运行满足您的业务要求和目标的性能和安全测试。
 * 切换并确保在不进行任何新部署或内容更新的情况下执行实际的上线操作。
+* 创建Admin Console用户通知组。 请参阅 [通知用户组](/help/journey-onboarding/user-groups.md)
 
 如果在执行迁移时需要重新校准任务，您始终可以引用该列表。
 

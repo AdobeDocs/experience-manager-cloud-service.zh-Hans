@@ -3,10 +3,10 @@ title: 通知用户组
 description: 了解如何在Admin Console中创建用户组以管理重要电子邮件通知的接收情况。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 749aa70a1b95335a99fbeadcda4a232178610d3d
+source-git-commit: a663e21d100953f87c012a1d7962fb0e88e6a7f2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '770'
+ht-degree: 1%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 Adobe需要不时联系有关其AEMas a Cloud Service环境的联系。 除了产品内通知之外，Adobe有时还会使用电子邮件发送此类通知。 此类通知有两种类型：
 
-* **反向通知**  — 这些通知在事件期间或Adobe发现AEMas a Cloud Service环境存在潜在可用性问题时发送。
-* **主动通知**  — 当Adobe支持团队成员希望就可能对AEMas a Cloud Service环境有益的优化或推荐提供指导时，将发送这些通知。
+* **事件通知 — Cloud Service**  — 这些通知在事件期间或Adobe发现AEMas a Cloud Service环境存在潜在可用性问题时发送。
+* **主动通知 — Cloud Service**  — 当Adobe支持团队成员希望就可能对AEMas a Cloud Service环境有益的优化或推荐提供指导时，将发送这些通知。
 
 要让正确的用户接收这些通知，您需要配置用户组。
 
@@ -31,64 +31,72 @@ Adobe需要不时联系有关其AEMas a Cloud Service环境的联系。 除了�
 * 有权添加和编辑组成员关系。
 * 拥有有效的Adobe Admin Console配置文件。
 
-## 为通知创建用户组 {#create-groups}
+## 创建新的Cloud Manager产品配置文件 {#create-groups}
 
 要正确设置通知接收，您需要创建两个用户组。 这些步骤只能完成一次。
 
 1. 登录Admin Console: [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
-1. 单击 **用户** 选项卡，然后 **用户组** 选项。
+1. 从 **概述** 页面，选择 **Adobe Experience Manager as a Cloud Service** 从 **产品和服务** 卡。
 
-   ![用户组](assets/user-groups.png)
+   ![用户组](assets/products_services.png)
 
-1. 单击 **新建用户组** 按钮并提供 **用户组名称** 完全与指定的和可选的 **描述**.
+1. 导航到 **Cloud Manager** 实例。
 
-   * 组名称必须与以下内容匹配。 请勿以任何方式调整或修改组名称。
-      * `AEM CS - Reactive Notification`
-      * `AEM CS - Proactive Notification`
+   ![创建用户组](assets/cloud_manager_instance.png)
 
-   ![创建用户组](assets/create-user-group.png)
+1. 您将看到所有已配置的Cloud Manager产品配置文件的列表。 例如：
 
-1. 单击“**保存**”。
+   ![创建用户组](assets/cloud_manager_profiles.png)
 
-1. 对第二组重复这些步骤。
+1. 单击新建配置文件，并介绍以下详细信息：
 
-如果未定义群组，Adobe将通过Cloud Manager通知现有用户 **开发人员** 或 **部署** 用户档案。
+* 产品配置文件名称：事件通知 — Cloud Service
+* 显示名称：事件通知 — Cloud Service
+* 描述：Cloud Manager配置文件，用于在事件期间或Adobe发现AEMas a Cloud Service环境存在潜在可用性问题时接收通知的用户。
 
-## 将用户添加到组 {#add-users}
+1. 单击保存并重复步骤4，其中包含以下详细信息：
+
+* 产品配置文件名称：主动通知 — Cloud Service
+* 显示名称：主动通知 — Cloud Service
+* 描述：Cloud Manager配置文件，适用于当Adobe支持团队成员希望就可能的优化或建议与AEMas a Cloud Service环境配置有关的事宜提供指导时，将收到通知的用户。
+
+>[!NOTE]
+>
+>Cloud Manager配置文件名称必须与上述内容完全相同。 请复制并粘贴所提供描述中的产品配置文件名称。 任何偏差或拼写错误都会导致通知未按需要发送。 如果出现错误或尚未定义配置文件，则默认Adobe通知分配给Cloud Manager开发人员（是、或和）部署管理器配置文件的现有用户。
+
+## 将用户分配给新通知产品配置文件 {#add-users}
 
 创建群组后，您必须分配相应的用户。 您可以在创建新用户或更新现有用户时执行此操作。
 
 ### 将新用户添加到群组 {#new-user}
 
-1. 登录Admin Console: [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 如果您尚未登录。
-
-1. 单击 **用户** 选项卡，然后 **用户** 选项。
-
-   ![用户](assets/users.png)
-
-1. 单击 **添加用户** 按钮，并提供用户的电子邮件地址。 或者，您也可以提供名字和姓氏。
-
-   * 如果用户已存在，则Admin Console将匹配电子邮件地址并预填充字段。
-
-1. 单击用户名字段下方的加号，然后单击 **用户组** 选项卡来选择用户的群组。
-
-   ![添加新用户](assets/add-new-user.png)
-
-1. 单击 **保存** 以保存新用户。
-
-对需要为其分配通知群组的每个用户重复这些步骤。
-
-### 将现有用户添加到群组 {#existing-user}
+1. 确定应接收事件通知或主动通知的用户。
 
 1. 登录Admin Console: [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 如果您尚未登录。
 
-1. 单击 **用户** 选项卡，然后 **用户** 选项。
+1. 从 **概述** 页面，选择 **Adobe Experience Manager as a Cloud Service** 从 **产品和服务** 卡。
 
-   ![用户](assets/users.png)
+   ![用户](assets/product_services.png)
 
-1. 单击要添加到通知组的用户的行。 此时会打开显示用户详细信息的面板。
+1. 选择 **用户** 选项卡，然后选择 **添加用户**.
 
-![用户详细信息](assets/user-details.png)
+![用户](assets/cloud_manager_add_user.png)
 
-1. 单击右侧的省略号图标 **用户组** 的子菜单。
+1. 在将用户添加到团队对话框中，输入要添加用户的电子邮件ID。
+
+* 如果尚未设置团队成员的Federated ID，请为ID类型选择Adobe ID 。
+* 如果用户已存在，请参阅步骤7。
+
+1. 单击 **选择产品** 开始产品选择和选择的标题 **Adobe Experience Manager as a Cloud Service** 分配 **事件通知 — Cloud Service** 或 **主动通知 — Cloud Service**，或两者都发送给用户。
+
+1. 单击 **保存** 并向您添加的用户发送欢迎电子邮件。 受邀用户现在将收到通知。
+
+1. 对团队中要接收通知的用户重复这些步骤。
+
+1. 如果用户已存在，请搜索用户的名称并：
+
+* 单击用户的名称。
+* 在 **产品** ，单击 **编辑**.
+* 单击 **选择产品** 开始产品选择和选择的标题 **Adobe Experience Manager as a Cloud Service** 分配 **事件通知 — Cloud Service** 或 **主动通知 — Cloud Service**，或两者都发送给用户。
+* 单击 **保存** 并向您添加的用户发送欢迎电子邮件。 受邀用户现在将收到通知。
