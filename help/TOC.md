@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述、自
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 962b027521e6ca2d1da8e8d2f98c6227ea496743
-workflow-type: ht
-source-wordcount: '3716'
-ht-degree: 100%
+source-git-commit: ee9b8339f6f64693fd1b227b0d2b40fb8094af8c
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 100%
          + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2022 {#2022}
+      + 2022年 {#2022}
          + [2022.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
          + [2022.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
          + [2022.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
@@ -75,7 +75,7 @@ ht-degree: 100%
          + [2022.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
          + [2022.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
          + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-      + 2021 {#2021}
+      + 2021年 {#2021}
          + [202.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
          + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
          + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -88,7 +88,7 @@ ht-degree: 100%
          + [2021.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
          + [2021.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
          + [2021.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020 {#2020}
+      + 2020年 {#2020}
          + [2020.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
          + [2020.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
          + [2020.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -102,13 +102,13 @@ ht-degree: 100%
          + [2020.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
    + 迁移工具的发行说明{#migration-tools}
       + [最新发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + 2022 {#2022}
+      + 2022年 {#2022}
          + [2022.5.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [2022.4.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
          + [2022.3.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [2022.2.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
          + [2022.1.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021 {#2021}
+      + 2021年 {#2021}
          + [2021.12.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -141,6 +141,7 @@ ht-degree: 100%
       + [分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
       + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
       + [AEM 用户任务](/help/journey-onboarding/aem-users.md)
+      + [用户组](/help/journey-onboarding/user-groups.md)
    + AEM 参考演示加载项历程 {#demo-add-on}
       + [概述](/help/journey-sites/demos-add-on/overview.md)
       + [安装](/help/journey-sites/demos-add-on/installation.md)
@@ -789,7 +790,7 @@ ht-degree: 100%
          + 组件和模板 {#components-templates}
             + [组件概述](/help/implementing/developing/components/overview.md)
             + [模板](/help/implementing/developing/components/templates.md)
-            + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+            + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=zh-Hans)
             + [内容服务的 JSON 导出器](/help/implementing/developing/components/json-exporter.md)
             + [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md)
@@ -824,7 +825,7 @@ ht-degree: 100%
          + [在 AEM 中编辑外部 SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA 中的复合组件](/help/implementing/developing/hybrid/composite-components.md)
          + [服务器端呈现](/help/implementing/developing/hybrid/ssr.md)
-         + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-Hans)
+         + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [启动集成](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 参考文档](/help/implementing/developing/hybrid/reference-materials.md)
    + 开发人员工具 {#developer-tools}
