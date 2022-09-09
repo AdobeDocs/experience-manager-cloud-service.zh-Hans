@@ -1,5 +1,5 @@
 ---
-title: '如何向其他用户分配工作流、发送电子邮件、在工作流中使用Adobe Sign? '
+title: 如何向其他用户分配工作流、发送电子邮件、在工作流中使用Adobe Sign?
 description: 以Forms为中心的工作流允许您快速构建基于Forms的自适应工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将其发送到多个数据源，以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
@@ -242,7 +242,7 @@ PDF/A是一种存档格式，用于通过嵌入字体和解压缩文件来长期
 
 ## 调用DDX步骤 {#invokeddx}
 
-文档描述XML(DDX)是一种声明性标记语言，其元素表示文档的构建块。 这些构建基块包括PDF和XDP文档，以及其他元素，如注释、书签和样式化文本。 DDX定义一组操作，该操作可应用于一个或多个输入文档以生成一个或多个输出文档。  单个DDX可与一系列源文档一起使用。 您可以使用 ***调用DDX步骤*** 在AEM工作流中执行各种操作，如拆卸组件文档、创建和修改Acrobat和XFA Forms，以及 [DDX参考文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+文档描述XML(DDX)是一种声明性标记语言，其元素表示文档的构建块。 这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX定义一组操作，该操作可应用于一个或多个输入文档以生成一个或多个输出文档。  单个 DDX 可用于一系列源文档。您可以使用 ***调用DDX步骤*** 在AEM工作流中执行各种操作，如拆卸组件文档、创建和修改Acrobat和XFA Forms，以及 [DDX参考文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 调用DDX步骤具有以下属性：
 

@@ -3,7 +3,7 @@ title: 合适的人员，合适的职位
 description: 合适的人员，合适的职位
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 | 职位 | 技能 | 能力水平 | 素养 |
 |--- |--- |--- |--- |
 | 项目经理 | PMP 认证，Agile 认证，风险管理经验 | 专家 | 公正，稳定，负责，井井有条，积极，平易近人，愿意接受改变 |
-| Scrum Master | ScrumMaster 认证，Agile 认证，协调经验 | 专家 | 稳定，创造性 |
+| Scrum主控 | ScrumMaster 认证，Agile 认证，协调经验 | 专家 | 稳定，创造性 |
 | 产品负责人 | Agile 认证，对业务需求有很深的了解 | 专家 | 均衡，自信 |
 | 负责安全、基础设施和工具的 IT 主管 | CISM 认证，Adobe Experience Manager 组件开发人员认证 | 专家 | 注重细节 |
 | 战略专家/超级用户 | 熟练掌握 Adobe Experience Manager Sites | 新手到专家 | 坚韧，求知，缜密，开放，愿意接受改变，合作 |

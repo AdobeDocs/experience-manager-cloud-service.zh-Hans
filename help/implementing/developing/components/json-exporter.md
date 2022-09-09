@@ -1,11 +1,11 @@
 ---
 title: 内容服务的 JSON 导出器
-description: AEM Content Services旨在对AEM中/从中提供的内容的描述和交付进行归纳，使其不仅仅限于网页。 它们使用可供任何客户使用的标准化方法，将内容交付到非传统AEM网页的渠道。
+description: AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，而不只是关注网页。它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 12%
+ht-degree: 31%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 12%
 
 AEM Content Services旨在将AEM中/从Web页面交付的内容的描述和交付推广到网页之外。
 
-它们使用可供任何客户使用的标准化方法，将内容交付到非传统AEM网页的渠道。 这些渠道可以包括：
+它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。 这些渠道可以包括：
 
-* 单页应用程序
+* 单页面应用程序
 * 本机移动设备应用程序
 * AEM外部的其他渠道和接触点
 

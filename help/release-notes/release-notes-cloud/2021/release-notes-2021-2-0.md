@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2021.2.0发行说明。”'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -119,11 +119,11 @@ AEM 2021.2.0版中Cloud Manager的发布日期是2021年2月11日。
 
 * 某些管道故障被错误地报告为管道错误。
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具v1.2.4的发布日期是2021年2月10日。
+内容转移工具版本 1.2.4 的发布日期为 2021 年 2 月 10 日。
 
 ### 错误修复 {#bug-fixes-ctt}
 
@@ -131,7 +131,7 @@ AEM 2021.2.0版中Cloud Manager的发布日期是2021年2月11日。
 
 ### 发布日期 {#release-date-ctt-feb}
 
-内容传输工具v1.2.2的发布日期是2021年2月1日。
+内容转移工具版本 1.2.2 的发布日期为 2021 年 2 月 01 日。
 
 ### 内容传输工具的新增功能 {#what-is-new-ctt}
 

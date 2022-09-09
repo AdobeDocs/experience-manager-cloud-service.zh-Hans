@@ -168,7 +168,7 @@ ht-degree: 0%
 
    资产或信件将被回滚到其先前发布的版本。
 
-## 删除资产 {#delete-an-asset}
+## 删除资源 {#delete-an-asset}
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: '如何将数据库连接到 [!DNL AEM Forms] as a Cloud Service? '
+title: 如何将数据库连接到 [!DNL AEM Forms] as a Cloud Service?
 seo-title: AEM Forms Data Integration
 description: 您可以从中检索数据并将数据保存到RESTful Web服务、基于SOAP的Web服务和OData服务 [!DNL AEM Forms] as a Cloud Service。 该服务提供了专用工具，用于检索、测试、验证数据并将数据发送到各种类型的数据源。
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3

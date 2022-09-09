@@ -3,7 +3,7 @@ title: Experience Manager as a Cloud Service 入门
 description: 了解 Experience Manager as a Cloud Service 的工作方式以及软件可以对您的作用。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
-| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
+| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作和管理。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到 Cloud Service 的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 通过探索这些开发和部署主题，了解如何使用 AEM 的强大功能来构建和自定义体验。 |

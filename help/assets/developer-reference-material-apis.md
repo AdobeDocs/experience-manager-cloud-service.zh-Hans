@@ -1,6 +1,6 @@
 ---
 title: 的开发人员参考 [!DNL Assets]
-description: '"[!DNL Assets] API和开发人员参考内容允许您管理资产，包括二进制文件、元数据、演绎版、评论和 [!DNL Content Fragments]."'
+description: "[!DNL Assets] API和开发人员参考内容允许您管理资产，包括二进制文件、元数据、演绎版、评论和 [!DNL Content Fragments]."
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin

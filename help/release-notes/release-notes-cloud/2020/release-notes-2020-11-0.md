@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.11.0发行说明。”'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -111,15 +111,15 @@ AEMas a Cloud Service中Cloud Manager的发行日期为2020.11.0 2020年11月12�
 
 * 用户数据（包括用户档案属性和组成员关系）可以保留在发布层上。 在 [注册、登录和用户配置文件文档](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
 
-### SDK内部版本分析程序 {#analyzers}
+### SDK 内部版本分析程序 {#analyzers}
 
-AEMas a Cloud ServiceSDK生成分析器Maven插件可检测Maven项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在本地开发过程中发现问题，而且在使用Cloud Manager部署到云环境之前就已经很早。 有关更多信息，请参阅此文档 [此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing) 和 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在使用 Cloud Manager 部署到云环境之前，在本地开发期间发现问题。有关更多信息，请参阅此文档 [此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing) 和 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ### 其他 {#others-foundation}
 
 新建 [&quot;httpd -t&quot;语法](/help/implementing/dispatcher/disp-overview.md#local-validation) 检查在Cloud Manager生成期间执行的apache和dispatcher配置，该配置也可以使用AEMas a Cloud ServiceSDK的Dispatcher工具运行。
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 请阅读本节内容，了解的新增功能和更新 [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 版本1.1.12。
 

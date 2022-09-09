@@ -1,5 +1,5 @@
 ---
-title: 管理数字资源
+title: 管理数字资产
 description: 了解各种资产管理和编辑方法
 contentOwner: AG
 mini-toc-levels: 3
@@ -36,7 +36,7 @@ ht-degree: 16%
 * 资产文件名不能包含以下任一字符： `* / : [ \\ ] | # % { } ? &`
 * 资产文件夹名称不能包含以下任一字符： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## 上传资源 {#uploading-assets}
+## 上传资产 {#uploading-assets}
 
 请参阅 [将数字资产添加到Experience Manager](add-assets.md).
 
@@ -56,7 +56,7 @@ ht-degree: 16%
 
    `dam:sha1` “检测元数据”字段的值可确保即使文件名不同，也检测到重复的资产。
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
    ![资源重复检测器](assets/asset-duplication-detector.png)
 

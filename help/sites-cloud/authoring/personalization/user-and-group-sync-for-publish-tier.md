@@ -1,9 +1,9 @@
 ---
-title: '注册、登录和用户配置文件 '
+title: 注册、登录和用户配置文件
 description: 了解 AEM as a Cloud Service 的注册、登录、用户数据和组同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 100%
 

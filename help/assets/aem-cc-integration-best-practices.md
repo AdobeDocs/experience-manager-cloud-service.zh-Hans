@@ -41,7 +41,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 | 创意用户从 [!DNL Experience Manager]，打开并使用它们，编辑并上传对 [!DNL Experience Manager]，以及将新文件上传到 [!DNL Experience Manager]，而不离开 [!DNL Creative Cloud] 应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
 | 业务用户简化了资产的打开和使用、编辑和上传更改的过程 [!DNL Experience Manager]，以及将新文件上传到 [!DNL Experience Manager] 从桌面环境。 它们使用通用集成来打开本机桌面应用程序中的任何资产类型，包括非Adobe资产类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Experience ManagerWin和Mac桌面上的桌面应用程序 |
 | 营销人员和企业用户可在Experience Manager内发现、预览、许可和保存并管理Adobe Stock资产。 授权资产和已保存的资产可提供精选Adobe Stock元数据以更好地管理。 | [Experience Manager和Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] web界面 |
-| 改进数字产品设计人员与营销人员之间的协作。 让设计师在Adobe XD画布上的设计和线框模型中使用数字资产。 | [[!DNL Adobe Asset Link] 表示 [!DNL Adobe XD]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 改进数字产品设计人员与营销人员之间的协作。 让设计师在Adobe XD画布上的设计和线框模型中使用数字资产。 |  [!DNL Adobe XD] 的 [[!DNL Adobe Asset Link] ](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | 营销人员可以根据上传的资产和使用自定义功能创建的预定义操作，自动创建变体和衍生产品。 使用此自动化可提高内容速度并减少手动工作。 | [内容自动化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] web界面 |
 
 本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。其他解决方案，例如 [Experience Manager AssetsBrand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，可基于 [资产共享共用](https://opensource.adobe.com/asset-share-commons/) 组件， [链接共享](share-assets.md)，使用 [Experience Manager Assets Web UI](/help/assets/manage-digital-assets.md) 应根据具体要求进行审查。
@@ -57,9 +57,9 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 | Discover — 浏览文件夹 | 是 | Experience ManagerWeb UI +桌面操作 | 浏览网络共享时，关闭缩略图以避免下载资产的二进制文件。 |
 | Discover — 访问收藏集 | 是 | Experience ManagerWeb UI +桌面操作 |  |
 | Discover — 搜索资产 | 是 | Experience ManagerWeb UI +桌面操作 |  |
-| 使用 — 打开的资产 | 是 | 是  — 适用于任何应用程序 | [从Web界面打开](/help/assets/manage-digital-assets.md#previewing-assets) 或从“查找器” |
+| 使用 — 打开的资产 | 是 | 是 — 适用于任何应用程序 | [从Web界面打开](/help/assets/manage-digital-assets.md#previewing-assets) 或从“查找器” |
 | 使用 — 将资产从Experience Manager放入文档中 | 是 — 嵌入 | 是 — 链接或嵌入 | Experience Manager桌面应用程序允许将资产作为本地文件系统上的文件访问。 本机应用程序中的这些链接由本地路径表示。 |
-| 编辑 — 打开进行编辑 | 是 — 签出操作 | 是 — 打开操作（在网络共享中） | [AAL中的结帐](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 默认情况下，会将资产保存到用户的creative cloud存储帐户(由Creative Cloud应用程序同步)。 |
+| 编辑 — 打开进行编辑 | 是 — 签出操作 | 是 — 打开操作（在网络共享中） | [AAL中的结帐](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 默认情况下，会将资产保存到用户的creative cloud存储帐户(由Creative Cloud应用程序同步)。 |
 | 编辑 — 在Experience Manager外进行中 | 是 — 用户的Creative Cloud存储帐户中可用的资产已同步到桌面。 | 是 |  |
 | 编辑 — 上传更改 | 是 —  [签入操作](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 使用可选注释 | 是 |  |
 | 上传 — 单个文件 | 是 — 上载当前活动文档 | 是 | [通过Web界面上传](/help/assets/manage-digital-assets.md#uploading-assets) |

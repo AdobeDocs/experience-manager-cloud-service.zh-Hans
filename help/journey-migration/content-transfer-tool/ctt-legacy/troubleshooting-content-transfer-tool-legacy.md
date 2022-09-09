@@ -1,9 +1,10 @@
 ---
 title: 内容传输工具故障诊断（旧版）
-description: 内容传输工具疑难解答
+description: 内容转移工具疑难解答
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: b99f8f2b-b1b7-4ec1-b1d2-0efe83e17e91
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 94%

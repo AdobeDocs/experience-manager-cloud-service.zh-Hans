@@ -123,6 +123,6 @@ AEMas a Cloud Service部署卡提供了所有相关内容，可帮助您将代�
 
 您还可以使用 `path` 参数，例如， `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## 接下来做什么 {#whats-next}
+## 下一步 {#whats-next}
 
 了解如何登录Cloud Acceleration Manager以及如何利用实施阶段后，您现在便可以继续查看 [上线阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).

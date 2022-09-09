@@ -117,7 +117,7 @@ ht-degree: 10%
 
    ![农作物](assets/crop.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。此时新创建的配置文件会显示在可用配置文件列表中。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。此时新创建的配置文件会显示在可用配置文件列表中。
 
 ## 编辑或删除Dynamic Media图像配置文件 {#editing-or-deleting-image-profiles}
 

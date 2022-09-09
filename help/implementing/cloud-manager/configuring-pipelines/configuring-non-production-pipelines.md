@@ -79,7 +79,7 @@ ht-degree: 0%
 
    ![前端管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
 
-1. 单击&#x200B;**保存**。
+1. 单击“**保存**”。
 
 管道已保存，您现在可以 [管理管道](managing-pipelines.md) 在 **管道** 卡 **计划概述** 页面。
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
    ![全栈管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
-1. 单击&#x200B;**保存**。
+1. 单击“**保存**”。
 
 管道已保存，您现在可以 [管理管道](managing-pipelines.md) 在 **管道** 卡 **计划概述** 页面。
 
@@ -138,7 +138,7 @@ Web层配置管道部署HTTPD/Dispatcher配置。 查看文档 [CI/CD管线](/he
 
    ![Web层管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
 
-1. 单击&#x200B;**保存**。
+1. 单击“**保存**”。
 
 >[!NOTE]
 >

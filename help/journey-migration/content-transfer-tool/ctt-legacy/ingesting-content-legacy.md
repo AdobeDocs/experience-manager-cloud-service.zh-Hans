@@ -3,7 +3,8 @@ title: 将内容摄取到Target（旧版）
 description: 将内容提取到目标
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 326b3e98-5055-49b5-a005-63fd3ca35202
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 27%
@@ -65,6 +66,6 @@ ht-degree: 27%
    >[!IMPORTANT]
    >您应该禁用 **摄取前擦除云实例上的现有内容** 选项，以防止从上一个摄取活动中删除现有内容。 此外，单击 **客户关怀** 记录票证，如上图所示。
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 在内容传输工具中了解将内容摄取到目标后，您便可以在每个步骤（提取和摄取）完成后查看日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 以了解更多。

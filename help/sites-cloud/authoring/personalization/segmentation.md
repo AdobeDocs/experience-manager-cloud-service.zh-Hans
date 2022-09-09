@@ -3,9 +3,9 @@ title: 了解分段
 description: 分段是创建营销活动时的主要考虑事项。
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
    * 婚姻状况
    * 性别
    * 位置
-* **衍生的特征** – 在未注册的情况下，有些人口统计特征很难确定，但可以通过组合行为和人口统计特征来推断。
+* **派生的特征**  — 某些人口统计特征在没有注册的情况下很难确定，但可以通过结合行为和人口统计特征来派生。
    * 例如，通过将引用 URL（作为行为特征）与人口统计数据（通过 [Google Ad Planner](https://www.google.com/adplanner/) 之类的工具获取）相结合，站点所有者可以推断出访客的人口统计特征。
 * **子区段** – 一个区段可以划分为若干个子区段。 这可以通过定义其他特征来完成。
 * **Teaser 页面** – Teaser 页面面向特定受众。它包含可在 Teaser 段落中使用的可重用内容。

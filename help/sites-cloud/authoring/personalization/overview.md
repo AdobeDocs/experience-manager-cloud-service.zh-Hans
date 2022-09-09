@@ -3,7 +3,7 @@ title: 个性化和内容定位
 description: 了解 AEM 如何创建个性化内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 

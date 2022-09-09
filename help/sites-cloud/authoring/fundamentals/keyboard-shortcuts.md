@@ -3,7 +3,7 @@ title: 用于页面编辑的键盘快捷键
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 100%
 

@@ -176,7 +176,7 @@ ht-degree: 0%
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
-![用户个人资料](assets/binding_crxde_user_profile_new.png)
+![用户配置文件](assets/binding_crxde_user_profile_new.png)
 
 在本例中，指定 `profile.empid` 在 **[!UICONTROL 绑定值]** 字段 `grios` 用户。
 

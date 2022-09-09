@@ -15,7 +15,7 @@ ht-degree: 8%
 本页概述了AEM 2021.10.0中迁移工具的发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -36,7 +36,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 Cloud Acceleration Manager现在为用户提供了以可打印预览方式查看BPA报表的功能，从而允许简单的打印或打印以PDF以方便共享。 请参阅 [使用最佳实践分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt-latest}
 

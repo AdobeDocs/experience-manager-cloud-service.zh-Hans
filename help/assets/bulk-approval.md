@@ -60,7 +60,7 @@ ht-degree: 24%
 1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入评论，然后点按/单击  **[!UICONTROL 完成]** 确认。
 1. 导航到资产UI，然后打开文件夹。 资产的批准状态图标会同时显示在卡片视图和列表视图中。
 
-   **卡片视图**
+   **信息卡视图**
 
    ![chlimage_1-404](assets/chlimage_1-404.png)
 
@@ -101,7 +101,7 @@ ht-degree: 24%
 1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入评论，然后点按/单击 **[!UICONTROL 完成]** 确认。
 1. 导航到收藏集控制台并打开收藏集。 资产的批准状态图标会同时显示在卡片视图和列表视图中。
 
-   **卡片视图**
+   **信息卡视图**
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 

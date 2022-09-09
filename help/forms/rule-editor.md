@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 0%
 
 ---
@@ -628,7 +628,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 1. 选择输入数字框，然后点按 ![edit-rules](assets/edit-rules-icon.svg) 以打开规则编辑器。
 1. 点按 **[!UICONTROL 创建规则]**. 使用下面显示的选项，创建一个规则以保存表单“输出”字段中输入的平方值。
 
-[![使用自定义函数创建规则](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![使用自定义函数创建规则](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. 点按&#x200B;**[!UICONTROL 完成]**。您的自定义函数已添加。
 

@@ -33,12 +33,12 @@ Best Practices Analyzer v2.1.26 的发布日期是 2022 年 3 月 16 日。
 * BPA 将与 WRK 模式相关的发现报告为 MAJOR 而非 CRITICAL。此问题已得到修复。
 * BPA 错误地将 ui.apps 中与 OAK 索引定义有关的发现报告为 CRITICAL。此问题已得到修复。
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具版本 1.9.0 的发布日期为 2022 年 2 月 28 日。
+内容转移工具版本 1.9.0 的发布日期为 2022 年 2 月 28 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查“大小护栏” - 内容传输工具检查大小功能有助于减少失败的内容传输。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容传输失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
+* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。

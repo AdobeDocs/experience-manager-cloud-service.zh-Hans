@@ -160,7 +160,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * Some enhancements to metadata properties UI?
 -->
 
-## 管理数字资源 {#manage-assets}
+## 管理数字资产 {#manage-assets}
 
 许多资产管理任务（如CRUD操作、下载资产、添加元数据）都可以按不同程度进行访问。 [!DNL Assets] 允许您使用各种辅助技术（尤其是屏幕阅读器和键盘）来完成任务。
 

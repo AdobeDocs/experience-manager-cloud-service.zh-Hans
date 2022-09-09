@@ -28,7 +28,7 @@ ht-degree: 3%
 <table>
  <tbody>
   <tr>
-   <td><strong>资产类型</strong><br /> </td>
+   <td><strong>资源类型</strong><br /> </td>
    <td><strong>可用的预览选项</strong><br /> </td>
   </tr>
   <tr>

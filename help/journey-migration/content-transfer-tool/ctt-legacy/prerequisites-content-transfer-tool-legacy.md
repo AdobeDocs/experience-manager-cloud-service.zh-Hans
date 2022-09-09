@@ -1,9 +1,10 @@
 ---
 title: 内容传输工具（旧版）的先决条件
-description: 内容传输工具的先决条件
+description: 内容转移工具的先决条件
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 6b2878cb-6882-452b-8cab-e590316633f6
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -26,6 +27,6 @@ ht-degree: 2%
 | 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径中的内容。 从 `/etc` 仅限于 `/etc` 允许选择路径，但仅支持 [AEM Forms至AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). 有关所有其他用例，请参阅 [公共存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 以了解有关存储库重组的更多信息。 |
 | MongoDB中的节点属性值 | MongoDB中存储的节点属性值不能超过16MB。 这由MongoDB强制执行。 如果存在大于此限制的属性值，则摄取将失败。 运行提取之前，请运行此 [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) 脚本。 检查所有大属性值，并验证是否需要它们。 超过16MB的数据需要转换为二进制值。 |
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请参阅 [使用内容传输工具的准则和最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).

@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 5%
+ht-degree: 13%
 
 ---
 
@@ -120,7 +120,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
       * [启用或禁用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [允许在Assets文件夹中使用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [允许在 Assets 文件夹中使用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
       * [删除内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 

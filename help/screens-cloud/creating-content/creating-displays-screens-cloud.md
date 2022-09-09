@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何创建和管理屏幕服务提供商中的显示屏。 阅读后，您应该：
+本文档可帮助您了解如何创建和管理屏幕服务提供商中的显示屏。 阅读本文档后，您应：
 
 * 了解如何创建和删除显示屏
 * 了解如何将显示内容整理到文件夹中

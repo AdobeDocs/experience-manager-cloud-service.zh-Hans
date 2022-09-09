@@ -56,7 +56,7 @@ Cloud Manager用户将Brand Portal激活为Experience Manager Assets as a [!DNL 
 >
 >Brand Portal必须在与Experience Mananger Assets(作为 [!DNL Cloud Service] 实例。
 >
->如果您现有的Brand Portal云配置([使用Adobe开发人员控制台手动配置](#manual-configuration))，并将您的Experience Mananger Assets作为 [!DNL Cloud Service] 已为其他IMS组织(org2-new)配置实例，从Cloud Manager激活Brand Portal会将Brand Portal IMS组织重置为 `org2-new`. 尽管在 `org1-existing` 将在Experience Manager Assets创作实例中可见，但从Cloud Manager激活Brand Portal后，将不再使用。
+>如果您现有的Brand Portal云配置([使用Adobe Developer控制台手动配置](#manual-configuration))，并将您的Experience Mananger Assets作为 [!DNL Cloud Service] 已为其他IMS组织(org2-new)配置实例，从Cloud Manager激活Brand Portal会将Brand Portal IMS组织重置为 `org2-new`. 尽管在 `org1-existing` 将在Experience Manager Assets创作实例中可见，但从Cloud Manager激活Brand Portal后，将不再使用。
 >
 >如果现有的Brand Portal云配置和Experience Manager Assets as a [!DNL Cloud Service] 实例使用的是相同的IMS组织(org1)，您只需从Cloud Manager中激活Brand Portal即可。
 >
@@ -175,20 +175,20 @@ Cloud Manager用户将Brand Portal激活为Experience Manager Assets as a [!DNL 
 >
 >如果父文件夹在Brand Portal中不存在或已在Experience Manager Assets中修改，则会生成其他请求。
 
-与在Experience Mananger Assets as a [!DNL Cloud Service]，则还有一种方法可手动配置Experience Manager Assets作为 [!DNL Cloud Service] 使用Brand Portal开发人员控制台（不再推荐）。
+与在Experience Mananger Assets as a [!DNL Cloud Service]，则还有一种方法可手动配置Experience Manager Assets作为 [!DNL Cloud Service] 使用Brand Portal Console时，不再建议使用此工具。
 
 >[!NOTE]
 >
 >如果您在激活Brand Portal租户时遇到任何问题，请联系客户支持。
 
-## 使用Adobe开发人员控制台进行手动配置 {#manual-configuration}
+## 使用Adobe Developer控制台进行手动配置 {#manual-configuration}
 
-以下部分介绍如何手动配置Experience Manager Assets作为 [!DNL Cloud Service] 使用Brand Portal开发人员控制台。
+以下部分介绍如何手动配置Experience Manager Assets作为 [!DNL Cloud Service] 使用Brand Portal控制台。
 
-以前， Experience Mananger Assets as a [!DNL Cloud Service] 已通过Brand Portal开发人员控制台手动配置Adobe，该控制台可获取AdobeIdentity Management服务(IMS)帐户令牌以授权Brand Portal租户。 它需要在Experience Manager Assets和Adobe开发人员控制台中进行配置。
+以前， Experience Mananger Assets as a [!DNL Cloud Service] 已通过Adobe Developer Console手动配置Brand Portal，以便获取AdobeIdentity Management服务(IMS)帐户令牌以授权Brand Portal租户。 它需要在Experience Mananger Assets和Adobe Developer Console中进行配置。
 
 1. 在Experience Manager Assets中，创建IMS帐户并生成公钥（证书）。
-1. 在Adobe开发人员控制台中，为Brand Portal租户（组织）创建一个项目。
+1. 在Adobe Developer控制台中，为Brand Portal租户（组织）创建一个项目。
 1. 在项目下，使用公钥配置API以创建服务帐户连接。
 1. 获取服务帐户凭据和JSON Web令牌(JWT)有效负载信息。
 1. 在Experience Manager Assets中，使用服务帐户凭据和JWT有效负载配置IMS帐户。
@@ -227,7 +227,7 @@ IMS 配置包括两个步骤：
 
 ### 获取公共证书 {#public-certificate}
 
-公钥（证书）在Adobe开发人员控制台上对您的配置文件进行身份验证。
+公共密钥（证书）在Adobe Developer控制台上对您的配置文件进行身份验证。
 
 1. 登录到Experience Mananger Assets。
 1. 从 **工具** 面板，导航到 **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**.
@@ -240,23 +240,23 @@ IMS 配置包括两个步骤：
 
 1. 单击 **[!UICONTROL 下载公钥]** 图标，并将公钥(CRT)文件保存到您的计算机上。
 
-   公共密钥稍后用于在Brand Portal开发人员控制台中为您的Adobe租户配置API并生成服务帐户凭据。
+   公共密钥稍后用于在Brand Portal Console中为Adobe Developer租户配置API并生成服务帐户凭据。
 
    ![下载证书](assets/ims-config3.png)
 
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 
-   在 **帐户** 选项卡，Adobe IMS帐户创建时需要在Adobe开发人员控制台中生成的服务帐户凭据。 暂时保持此页面打开。
+   在 **帐户** 选项卡，Adobe IMS帐户创建时需要在Adobe Developer控制台中生成的服务帐户凭据。 暂时保持此页面打开。
 
-   打开新选项卡并 [在Adobe开发人员控制台中创建服务帐户(JWT)连接](#createnewintegration) 以获取用于配置IMS帐户的凭据和JWT有效负荷。
+   打开新选项卡并 [在Adobe Developer控制台中创建服务帐户(JWT)连接](#createnewintegration) 以获取用于配置IMS帐户的凭据和JWT有效负荷。
 
 ### 创建服务帐户(JWT)连接 {#createnewintegration}
 
-在Adobe开发人员控制台中，项目和API是在Brand Portal租户（组织）级别配置的。 配置API会创建服务帐户(JWT)连接。 可通过以下两种方法配置API：生成密钥对（私钥和公钥），或上传公钥。 要使用Brand Portal配置Experience Manager Assets，您必须在Experience Manager Assets中生成公钥（证书），并通过上传公共密钥在Adobe开发人员控制台中创建凭据。 在Experience Manager Assets中配置IMS帐户时需要这些凭据。 配置IMS帐户后，您便可以在Experience Manager Assets中配置Brand Portal云服务。
+在Adobe Developer控制台中，项目和API是在Brand Portal租户（组织）级别配置的。 配置API会创建服务帐户(JWT)连接。 可通过以下两种方法配置API：生成密钥对（私钥和公钥），或上传公钥。 要使用Brand Portal配置Experience Manager Assets，您必须在Experience Manager Assets中生成公钥（证书），并通过上传公共密钥在Adobe Developer控制台中创建凭据。 在Experience Manager Assets中配置IMS帐户时需要这些凭据。 配置IMS帐户后，您便可以在Experience Manager Assets中配置Brand Portal云服务。
 
 执行以下步骤以生成服务帐户凭据和JWT有效负载：
 
-1. 使用IMS组织(Brand Portal租户)的系统管理员权限登录到Adobe开发人员控制台。 默认URL为 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. 使用IMS组织(Adobe Developer租户)的系统管理员权限登录到Brand Portal控制台。 默认URL为 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -392,7 +392,7 @@ IMS 配置包括两个步骤：
 
    ![](assets/create-cloud-service.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。将创建云配置。
+1. 单击“**[!UICONTROL 保存并关闭]**”。将创建云配置。
 
    您的Mananger Assets as a [!DNL Cloud Service] 现在已使用Brand Portal租户配置实例。
 

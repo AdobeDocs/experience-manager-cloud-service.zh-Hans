@@ -3,7 +3,7 @@ title: 检索 Git 存储库访问信息
 description: 了解前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 100%
 

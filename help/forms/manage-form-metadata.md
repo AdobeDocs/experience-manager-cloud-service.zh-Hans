@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 <!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
-## 元数据(位于 [!DNL AEM Forms] {#metadata-in-aem-forms}
+## [!DNL AEM Forms] 中的元数据 {#metadata-in-aem-forms}
 
 在 [!DNL AEM Forms]，则与资产关联的元数据属性列表取决于其类型。 此外，如果添加任何自定义元数据属性，则该属性会添加到添加了自定义元数据的类型的所有资产中。
 
@@ -42,7 +42,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td><strong>属性名称</strong></td> 
-   <td><strong>资产类型</strong></td> 
+   <td><strong>资源类型</strong></td> 
    <td><strong>描述</strong><br /> </td> 
   </tr> 
   <tr> 

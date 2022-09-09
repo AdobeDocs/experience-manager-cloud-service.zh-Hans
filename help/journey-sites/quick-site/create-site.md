@@ -3,7 +3,7 @@ title: 从模板创建站点
 description: 了解如何使用站点模板快速创建新的 AEM 站点。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 100%
 

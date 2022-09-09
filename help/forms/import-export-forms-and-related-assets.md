@@ -1,5 +1,5 @@
 ---
-title: '导入和导出资产 '
+title: 导入和导出资产
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: 您可以将自适应Forms和相关资产导入和导出到AEM实例。 这有助于迁移表单或跨系统移动表单。
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
@@ -169,7 +169,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 1. 指定包的名称、版本和组。 单击&#x200B;**[!UICONTROL 确定]**。
 1. 单击 **[!UICONTROL 编辑]** 打开 **[!UICONTROL 过滤器]** 选项卡。 单击 **[!UICONTROL 添加过滤器]**. 指定工作流应用程序的路径。 例如， /etc/fd/dashboard/startpoints/homemortgage。 单击 **[!UICONTROL 添加规则]**.
 
-1. 打开&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。选择 **[!UICONTROL 合并]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击&#x200B;**[!UICONTROL 保存]**。
+1. 打开&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。选择 **[!UICONTROL 合并]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击“**[!UICONTROL 保存]**”。
 1. 单击 **[!UICONTROL 生成]** 创建资源包。
 
    生成包后，您可以下载该包并将其导入到其他服务器。 工作流应用程序将显示在上传包的服务器上。

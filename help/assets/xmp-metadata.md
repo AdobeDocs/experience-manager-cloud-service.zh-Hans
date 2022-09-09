@@ -103,7 +103,7 @@ XMP 支持向文本属性添加 `xml:lang` 属性以指定文本的语言。
 
    ![选择DAM元数据写回启动器以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
 
-1. 选择 **[!UICONTROL 激活]** 在 **[!UICONTROL 启动器属性]** 页面。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 选择 **[!UICONTROL 激活]** 在 **[!UICONTROL 启动器属性]** 页面。 单击“**[!UICONTROL 保存并关闭]**”。
 
 要手动将工作流仅应用于一次资产，请应用 [!UICONTROL DAM元数据写回] 工作流。
 

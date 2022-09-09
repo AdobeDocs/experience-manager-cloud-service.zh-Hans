@@ -4,7 +4,7 @@ description: Dispatcher 是位于 Adobe Experience Manager 发布环境前的缓
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->有关 Dispatcher 的详细文档，请参阅 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)
+>有关 Dispatcher 的详细文档，请参阅 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 
 AEM 项目中包括 Dispatcher 模块，其中包含用于 Dispatcher 的配置。从 [AEM 项目原型](https://github.com/adobe/aem-project-archetype)新生成的项目自动包括启用 GraphQL 端点的[筛选条件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans?#defining-a-filter)。
 

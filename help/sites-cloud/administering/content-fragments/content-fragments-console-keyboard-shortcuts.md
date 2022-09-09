@@ -3,7 +3,7 @@ title: 内容片段控制台的键盘快捷键
 description: AEM 中提供了各种键盘快捷键，包括一些用于管理内容片段的快捷键
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
 source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%
 

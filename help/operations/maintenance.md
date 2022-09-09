@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: def7f7071dac447397f40186de1380b8e5575608
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 100%
 
@@ -89,7 +89,7 @@ ht-degree: 100%
     <td>项目清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。通过在 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code> 文件夹下创建属性，覆盖 <code>/libs</code> 下的开箱即用维护窗口配置节点。有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。通过在 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code> 文件夹下创建属性，覆盖<code>/libs</code> 下的开箱即用维护窗口配置节点。有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。配置 OSGI 属性。</p>
   </td>
   </tr>

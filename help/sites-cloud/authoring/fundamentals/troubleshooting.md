@@ -3,7 +3,7 @@ title: 解决 AEM 中有关创作方面的问题
 description: 使用 AEM 时可能遇到的一些问题
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
 

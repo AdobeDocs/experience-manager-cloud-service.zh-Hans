@@ -388,7 +388,7 @@ ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](#contexthub-store-core
    * `path`:（字符串）服务的路径。
    * `port`:（数字）服务的端口号。
    * `secure`:（字符串或布尔值）确定用于服务URL的协议：
-      * `auto`: //
+      * `auto`://
       * `true`:https://
       * `false`: http://
 * **覆盖：** （布尔值）。 值 `true` 导致现有服务配置被 `serviceConfig`. 值 `false` 导致现有服务配置属性与 `serviceConfig`.
@@ -442,7 +442,7 @@ A `string` 表示服务URL的值。
    * `eventDeferring`:32.
    * `eventing`:此存储的ContextHub.Utils.Eventing对象。 默认值为 `ContextHub.eventing` 对象。
    * `persistence`:此存储的ContextHub.Utils.Persistence对象。 默认情况下，会使用内存持久性（Javascript对象）。
-   * `service`: (Object)
+   * `service`: (对象)
       * `host`:（字符串）服务器名称或IP地址。
       * `jsonp`:（布尔值）值为true表示该服务是JSONP服务，否则为false。 如果为true，则 `{callback: "ContextHub.Callbacks.*Object.name*}`对象添加到 `service.params`.
       * `params`:（对象）表示为对象属性的URL参数。 参数名称和值分别是对象属性名称和值。

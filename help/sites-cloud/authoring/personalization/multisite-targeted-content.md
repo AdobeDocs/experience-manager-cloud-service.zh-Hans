@@ -3,7 +3,7 @@ title: 在多个站点中使用目标内容
 description: 如果您需要在多个站点间管理目标内容（例如活动、体验和选件），则可以利用 AEM 中内置的目标内容多站点支持功能
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2893'
 ht-degree: 100%
 

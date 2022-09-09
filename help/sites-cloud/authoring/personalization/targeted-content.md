@@ -3,7 +3,7 @@ title: 使用定位模式创作目标内容
 description: 通过定位模式和 Target 组件，可以创建体验的内容
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5342'
 ht-degree: 100%
 

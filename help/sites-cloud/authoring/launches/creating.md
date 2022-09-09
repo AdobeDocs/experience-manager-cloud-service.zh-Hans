@@ -3,7 +3,7 @@ title: 创建启动项
 description: 您可以创建启动项，以允许更新现有网页的新版本，以便将来激活。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -87,7 +87,7 @@ ht-degree: 100%
 
    ![启动项属性](/help/sites-cloud/authoring/assets/launches-properties.png)
 
-1. 使用&#x200B;**创建**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：
+1. 使用&#x200B;**“创建”**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：
 
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 

@@ -17,7 +17,7 @@ ht-degree: 4%
 
 请按照以下步骤进行设置：
 
-1. 导航到 [Adobe开发人员控制台](https://console.adobe.io) 用你的Adobe ID。
+1. 导航到 [Adobe Developer控制台](https://console.adobe.io) 用你的Adobe ID。
 1. 创建新项目或打开现有项目。
 1. 添加API — 单击 **添加到项目** 选择 **API**
 1. 选择用户管理API。  您可能需要获得权限才能使用此选项。
@@ -54,14 +54,14 @@ ht-degree: 4%
    * **组织ID**:输入要迁移Adobe的组织的Identity Management系统(IMS)组织ID。
 
       >[!NOTE]
-      >要获取组织ID，请登录 [Admin Console](https://adminconsole.adobe.com/) 如果您属于多个组织，请选择您的组织（在右上方）。 组织ID将位于该页面的URL中，格式如下 `xx@AdobeOrg`，其中xx是IMS组织ID。  或者，您也可以在 [Adobe开发人员控制台](https://console.adobe.io) 页面。
+      >要获取组织ID，请登录 [Admin Console](https://adminconsole.adobe.com/) 如果您属于多个组织，请选择您的组织（在右上方）。 组织ID将位于该页面的URL中，格式如下 `xx@AdobeOrg`，其中xx是IMS组织ID。  或者，您也可以在 [Adobe Developer控制台](https://console.adobe.io) 页面。
 
    * **客户端ID**:输入您在设置步骤中保存的客户端ID。
 
    * **访问令牌**:输入您在设置步骤中保存的访问令牌。
 
       >[!NOTE]
-      >访问令牌每24小时过期一次，并且需要创建一个新令牌。 要创建新令牌，请返回 [Adobe开发人员控制台](https://console.adobe.io)，选择项目，单击 **用户管理API** 并将相同的私钥粘贴到框中。
+      >访问令牌每24小时过期一次，并且需要创建一个新令牌。 要创建新令牌，请返回 [Adobe Developer控制台](https://console.adobe.io)，选择项目，单击 **用户管理API** 并将相同的私钥粘贴到框中。
 
 1. 填充字段后，单击 **测试配置** 以测试与用户管理API服务的连接。 如果连接成功，您将能够单击 **保存** 以保存配置。
 

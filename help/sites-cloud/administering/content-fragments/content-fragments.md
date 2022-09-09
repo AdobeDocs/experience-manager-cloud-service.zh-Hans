@@ -3,7 +3,7 @@ title: 使用内容片段
 description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
 

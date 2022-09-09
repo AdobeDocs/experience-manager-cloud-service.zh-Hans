@@ -7,9 +7,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1218'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 * 该服务仅帮助从 [!DNL AEM Forms] 在OSGi环境中。 将内容从 [!DNL AEM Forms] 不支持在JEE中Cloud Service环境。
 
-* (仅适用于升级到AEM 6.4 Forms或AEM 6.5 Forms的AEM 6.3 Forms或以前版本环境)[!DNL不支持基于AEM 6.3 Forms或以前版本中可用现成模板和主题的自适应Forms [!DNL AEM Forms]as a Cloud Service。
+* (仅适用于升级到AEM 6.4 Forms或AEM 6.5 Forms的AEM 6.3 Forms或以前版本环境)不支持基于现成模板和AEM 6.3 Forms或以前版本中提供的主题的自适应Forms [!DNL AEM Forms] as a Cloud Service。
 
 ## 前提条件 {#prerequisites}
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 ## 各种特定于AEM Forms的资产的路径
 
 * **自适应Forms**:您可以在 `/content/dam/formsanddocuments/`和/content/forms/af。 例如，对于标题为WKND Registration的自适应表单，添加路径 `/content/dam/formsanddocuments/wknd-registration` 和 `/content/forms/af/wknd-registration`.
-* **表单数据模式**:您可以在 `/content/dam/formsanddocuments-fdm`. 例如， `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **表单数据模式**:您可以在 `/content/dam/formsanddocuments-fdm`. 例如：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
 
 * **客户端库**:客户端库的默认路径为 `/etc/clientlibs/fd/theme`.
 

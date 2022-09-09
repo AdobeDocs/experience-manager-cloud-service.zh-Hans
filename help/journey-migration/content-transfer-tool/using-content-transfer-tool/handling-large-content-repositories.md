@@ -168,7 +168,7 @@ azcopyPath属性必须包含源AEM实例上安装azCopy命令行工具的位置�
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-恭喜！ 此日志条目表示您的配置被视为有效，AzCopy当前正在将所有Blob从源容器复制到迁移容器。
+恭喜！此日志条目表示您的配置被视为有效，AzCopy当前正在将所有Blob从源容器复制到迁移容器。
 
 来自AzCopy的日志条目将显示在提取日志中，并将添加c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy预拷贝]
 
@@ -241,6 +241,6 @@ Final Job Status: CompletedWithSkipped
 
 例如，可以通过以下方式禁用azcopy提取： `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 学习了处理大型内容存储库以显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service后，您便可以学习内容传输工具中的提取流程。 请参阅 [在内容传输工具中从源提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何从内容传输工具中提取迁移集。

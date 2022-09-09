@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ## 使用批处理API生成文档 {#use-batch-API-to-generate-documents}
 
-要使用批处理API，请创建批处理配置并根据该配置执行运行。 API文档提供了有关用于创建和运行批处理的API、相应参数和可能的错误的信息。 您可以下载 [API定义文件](assets/batch-api.yaml) 文件并上传到 [邮递员](https://go.postman.co/home) 或用于测试API以创建和运行批处理操作的类似软件。
+要使用批处理API，请创建批处理配置并根据该配置执行运行。 API文档提供了有关用于创建和运行批处理的API、相应参数和可能的错误的信息。 您可以下载 [API定义文件](assets/batch-api.yaml) 文件并上传到 [Postman](https://go.postman.co/home) 或用于测试API以创建和运行批处理操作的类似软件。
 
 ### 创建批处理 {#create-a-batch}
 
@@ -171,4 +171,4 @@ ht-degree: 0%
 
 ## API参考文档
 
-API参考文档提供了有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API引用文档以.yaml格式提供。 您可以下载 [批量API](assets/batch-api.yaml) 并将其上传到Postman以检查API的功能。
+API参考文档提供了有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API引用文档以.yaml格式提供。 您可以下载 [批量API](assets/batch-api.yaml) 并将其上传到Postman，以检查API的功能。

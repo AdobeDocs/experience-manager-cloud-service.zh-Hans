@@ -13,7 +13,7 @@ ht-degree: 7%
 
 ---
 
-# 在中搜索资产 [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# 在 [!DNL Adobe Experience Manager] 中搜索资源 {#search-assets-in-aem}
 
 [!DNL Adobe Experience Manager Assets] 提供了强大的资产发现方法，可帮助您实现更高的内容速度。 您的团队可以使用现成的功能和自定义方法，通过无缝、智能的搜索体验缩短上市时间。 搜索资产是使用数字资产管理系统的核心 — 无论是供创意人员进一步使用，还是由业务用户和营销人员对资产进行稳健管理，还是由DAM管理员进行管理。 简单、高级和自定义的搜索，您可以通过执行这些搜索 [!DNL Assets] 用户界面或其他应用程序和界面可帮助完成这些用例。
 
@@ -111,7 +111,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 从 [!DNL Assets] 用户界面中，打开资产的属性页面。 单击 **[!UICONTROL 高级]** 单击 **[!UICONTROL 添加]** 在 **[!UICONTROL 提升搜索关键词]**.
 1. 在 **[!UICONTROL Search Promote]** 框中，指定要增加图像搜索的关键词，然后单击 **[!UICONTROL 添加]**. 您可以以相同方式指定多个关键词。
-1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。您为此关键词促销的资产会显示在热门搜索结果中。
+1. 单击“**[!UICONTROL 保存并关闭]**”。您为此关键词促销的资产会显示在热门搜索结果中。
 
 您可以通过提升目标关键字的搜索结果中某些资产的排名，来使用此功能。 请观看下面的视频示例。 有关详细信息，请参阅 [搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
@@ -204,7 +204,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 创意专业人士使用桌面应用程序 [!DNL Experience Manager Assets] 可轻松搜索并在其本地桌面(Win或Mac)上提供。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资产，在桌面应用程序中打开并在本地更改 — 更改将保存回 [!DNL Experience Manager] 在存储库中创建了新版本。 应用程序支持使用一个或多个关键字进行基本搜索， `*` 和 `?` 通配符和 `AND` 运算符。 请参阅 [浏览、搜索和预览资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 在桌面应用程序中。
 
-### 在中搜索资产 [!DNL Brand Portal] {#brand-portal}
+### 在 [!DNL Brand Portal] 中搜索资源 {#brand-portal}
 
 业务线用户和营销人员使用Brand Portal，与其扩展的内部团队、合作伙伴和经销商高效、安全地共享已批准的数字资产。 请参阅 [在Brand Portal中搜索资产](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 

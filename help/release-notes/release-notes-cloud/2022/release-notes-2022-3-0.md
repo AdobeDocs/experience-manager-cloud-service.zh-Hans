@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
 source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ ht-degree: 100%
 
 * AEM CIF 搜索核心组件支持 Commerce Live Search
 
-## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 

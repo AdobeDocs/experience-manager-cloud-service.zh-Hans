@@ -3,7 +3,8 @@ title: 使用内容传输工具的准则和最佳实践（旧版）
 description: 使用内容传输工具的准则和最佳实践
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 25%
@@ -76,6 +77,6 @@ ht-degree: 25%
 
 * 如果您打算将版本作为迁移集的一部分，并且要通过 `wipe=false`，则由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望保持启用版本清除，并在迁移集中执行增补，则必须将摄取作为 `wipe=true`.
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 了解了使用内容传输工具的准则、最佳实践和重要注意事项后，您现在可以从创建迁移集开始，安装和使用该工具。 请参阅 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 以了解更多。

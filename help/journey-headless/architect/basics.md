@@ -5,7 +5,7 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -79,7 +79,7 @@ AEM提供了以下数据类型来为内容建模：
 
 * 单行文本
 * 多行文本
-* 数值
+* 数字
 * 布尔型
 * 日期和时间
 * 枚举

@@ -1,5 +1,5 @@
 ---
-title: 预览资产
+title: 预览资源
 description: 了解如何在Dynamic Media中预览资产。
 feature: Asset Management
 role: User
@@ -11,7 +11,7 @@ ht-degree: 21%
 
 ---
 
-# 预览资产{#previewing-assets}
+# 预览资源{#previewing-assets}
 
 您可以使用“预览”功能查看客户在其Web浏览器中查看您上传的数字资产时的显示方式。 预览时将使用为资产分配的默认嵌入式跨设备查看器。
 

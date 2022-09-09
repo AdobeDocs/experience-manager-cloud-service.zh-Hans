@@ -3,7 +3,7 @@ title: 关联的内容
 description: 了解 AEM 关联内容功能如何提供连接，以便在将资产添加到内容页面时，可以选择将资产与片段一起使用，从而为页面创作和 Headless 内容投放增加了额外的灵活性。
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 100%
 

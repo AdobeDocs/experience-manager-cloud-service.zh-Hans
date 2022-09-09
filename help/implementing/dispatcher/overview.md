@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# 内容交付流程 {#content-delivery}
+# 内容投放流程 {#content-delivery}
 
 当前页面详细信息在AEMas a Cloud Service中发布服务内容交付。 发布服务内容交付包括：
 

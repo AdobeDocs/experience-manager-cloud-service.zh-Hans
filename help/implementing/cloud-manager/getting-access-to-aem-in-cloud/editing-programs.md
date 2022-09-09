@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 按照以下步骤编辑程序。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要编辑的程序以显示其详细信息。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 按照以下步骤删除沙盒项目。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要编辑的程序以显示其详细信息。
 

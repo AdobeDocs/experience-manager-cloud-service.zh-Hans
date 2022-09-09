@@ -293,7 +293,7 @@ Dispatcher是一个Apache HTTP Web服务器模块，在CDN和AEM发布层之间�
 请执行以下步骤来为Experience Manager Formsas a Cloud Service配置Dispatcher缓存：
 
 1. 打开您的AEM项目，然后导航到 `\src\conf.dispatcher.d\available_farms`
-1. 创建 `default.farm` 文件。 例如， `forms.farm`.
+1. 创建 `default.farm` 文件。 例如：`forms.farm`。
 1. 打开新创建的 `forms.farm` 文件进行编辑并替换以下代码：
 
    ```json

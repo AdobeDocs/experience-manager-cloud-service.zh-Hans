@@ -3,7 +3,7 @@ title: AEM 参考演示加载项历程
 description: 从这里开始，了解如何使用最少的 AEM 配置轻松地将 AEM 参考演示加载项添加到沙盒环境中，并能够通过基于最佳实践的丰富示例测试 AEM 的强大功能。
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 

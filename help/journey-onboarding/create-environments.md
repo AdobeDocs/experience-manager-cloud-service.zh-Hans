@@ -2,13 +2,13 @@
 title: 创建环境
 description: 了解如何使用Cloud Manager创建您的第一个环境。
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # 创建环境 {#create-environments}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 创建环境 {#creating-environments}
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要为其添加环境的程序。
 

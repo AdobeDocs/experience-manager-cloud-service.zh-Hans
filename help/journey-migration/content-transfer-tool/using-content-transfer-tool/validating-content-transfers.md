@@ -1,5 +1,5 @@
 ---
-title: 验证内容传输
+title: 验证内容转移
 description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
@@ -9,7 +9,7 @@ ht-degree: 2%
 
 ---
 
-# 验证内容传输 {#validating-content-transfers}
+# 验证内容转移 {#validating-content-transfers}
 
 ## 快速入门 {#getting-started}
 

@@ -1,5 +1,5 @@
 ---
-title: 交付 Dynamic Media 资源
+title: 投放 Dynamic Media 资源
 description: 通过Dynamic Media，您可以选择多个选项来将Dynamic Media资产（视频和图像）交付到您的网站。
 source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 19%
 ---
 
 
-# 交付 Dynamic Media 资源{#delivering-dynamic-media-assets}
+# 投放 Dynamic Media 资源{#delivering-dynamic-media-assets}
 
 如何交付Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
 

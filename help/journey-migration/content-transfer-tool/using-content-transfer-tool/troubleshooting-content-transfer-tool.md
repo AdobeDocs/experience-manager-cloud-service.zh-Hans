@@ -1,6 +1,6 @@
 ---
-title: 内容传输工具疑难解答
-description: 内容传输工具疑难解答
+title: 内容转移工具疑难解答
+description: 内容转移工具疑难解答
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# 内容传输工具疑难解答 {#troubleshoot-content-transfer-tool}
+# 内容转移工具疑难解答 {#troubleshoot-content-transfer-tool}
 
 
 ## 缺少 Blob ID {#missing-blobs}

@@ -1,15 +1,15 @@
 ---
-title: AEM Sites 开发入门 - WKND 教程
+title: AEM站点开发入门 – WKND 教程
 description: 开发AEM的新用户？ 需要复习一下最佳实践吗？ 这是开始的地方！ 本多部分教程的目标是向不熟悉AEM的开发人员讲授如何使用最新标准和技术在AEM中实施网站。
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 21%
+ht-degree: 25%
 
 ---
 
-# AEM Sites 开发入门 - WKND 教程{#getting-started-developing-aem-sites-wknd-tutorial}
+# AEM站点开发入门 – WKND 教程{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## 概述 {#overview}
 

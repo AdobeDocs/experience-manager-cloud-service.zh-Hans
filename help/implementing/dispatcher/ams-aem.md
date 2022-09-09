@@ -259,6 +259,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 使用新的Dispatcher配置
 
-恭喜！ 如果验证器不再报告任何问题，并且Docker容器启动时没有出现任何故障或警告，则可以将配置移动到 `dispatcher/src` git存储库的子目录。
+恭喜！如果验证器不再报告任何问题，并且Docker容器启动时没有出现任何故障或警告，则可以将配置移动到 `dispatcher/src` git存储库的子目录。
 
 **使用AMS Dispatcher配置版本1的客户应联系客户支持，以帮助他们从版本1迁移到版本2，以便按照上述说明操作。**

@@ -3,7 +3,7 @@ title: 为演示站点启用 AEM Screens
 description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2671'
 ht-degree: 100%
 

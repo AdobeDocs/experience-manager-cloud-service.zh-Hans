@@ -1,5 +1,5 @@
 ---
-title: 'Adobe Experience Manager(AEM)Formsas a Cloud Service的主要特性和功能 '
+title: Adobe Experience Manager(AEM)Formsas a Cloud Service的主要特性和功能
 description: '"[!DNL AEM Forms] as a Cloud Service是创建、管理、发布企业级表单和业务流程的平台。”'
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13

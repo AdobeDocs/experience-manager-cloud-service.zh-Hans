@@ -73,6 +73,6 @@ ht-degree: 43%
 
 在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关更多详细信息，请参阅[增补摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process)。
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 了解内容传输工具及其对该工具进行描述的概述后，您便可以使用该工具将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例，您必须查看 [内容传输工具的先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).

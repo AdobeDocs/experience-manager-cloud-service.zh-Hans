@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 内容管理系统(CMS)就是它所说的 — 用于管理内容的计算机系统。 这有些笼统，因此更确切地说，它通常用于管理您希望在网站上提供的内容。
 
-## 无头CMS {#headless-cms}
+## Headless CMS {#headless-cms}
 
 “无头”是一个术语，用于描述从在Web上显示内容的方式中有效分离内容的系统。
 

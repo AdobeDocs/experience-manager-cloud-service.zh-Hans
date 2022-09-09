@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 2%
 
    ![全栈管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
-1. 单击&#x200B;**保存**。
+1. 单击“**保存**”。
 
 您现在已创建第一个管道！ 具有部署管理员角色的用户现在可以从Cloud Manager UI中启动管道。
 

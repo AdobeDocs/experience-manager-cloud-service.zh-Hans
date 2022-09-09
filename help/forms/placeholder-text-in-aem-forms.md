@@ -1,5 +1,5 @@
 ---
-title: '中的占位符文本 [!DNL AEM Forms] '
+title: 中的占位符文本 [!DNL AEM Forms]
 description: 占位符文本旨在在控件没有值时帮助用户输入数据。 它可以是示例值或预期格式的简要说明。
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

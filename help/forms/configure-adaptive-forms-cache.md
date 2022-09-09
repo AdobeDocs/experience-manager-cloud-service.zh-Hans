@@ -1,7 +1,7 @@
 ---
 title: 配置自适应Forms缓存
 seo-title: Configure Adaptive Forms cache
-description: '自适应Forms缓存专门针对自适应Forms和文档设计。 它缓存自适应Forms和自适应文档，以缩短在客户端上呈现自适应表单或文档所需的时间。 '
+description: 自适应Forms缓存专门针对自适应Forms和文档设计。 它缓存自适应Forms和自适应文档，以缩短在客户端上呈现自适应表单或文档所需的时间。
 seo-description: The Adaptive Forms cache is designed specifically for Adaptive Forms and documents. It caches Adaptive Forms and adaptive documents with the objective of reducing the time required to render an Adaptive Form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference

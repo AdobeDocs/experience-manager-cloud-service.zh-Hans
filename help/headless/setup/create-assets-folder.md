@@ -3,7 +3,7 @@ title: 创建资源文件夹 – Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 

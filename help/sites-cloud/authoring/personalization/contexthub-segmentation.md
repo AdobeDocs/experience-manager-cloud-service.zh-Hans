@@ -3,7 +3,7 @@ title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 100%
 

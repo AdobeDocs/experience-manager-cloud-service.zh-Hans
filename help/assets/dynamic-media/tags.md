@@ -516,7 +516,7 @@ Adobe建议您仔细查看此部分之前的所有文档，以便了解完整的
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。
 
    选择新创建的属性，然后继续 *安装和设置扩展*.
 
@@ -550,7 +550,7 @@ Experience Platform标记中的所有可用扩展都列在 **[!UICONTROL 扩展]
 
 在 **[!UICONTROL 安装扩展]** 页面，展开 **[!UICONTROL 常规]**，然后指定跟踪服务器。 跟踪服务器遵循模板 `<trackingNamespace>.sc.omtrdc.net`，其中 `<trackingNamespace>` 是在预配电子邮件中获取的信息。
 
-选择&#x200B;**[!UICONTROL 保存]**。
+选择&#x200B;**[!UICONTROL “保存”]**。
 
 请参阅 [Adobe Analytics扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
 
@@ -796,7 +796,7 @@ Experience Manager配置包含以下两个主要步骤：
 1. 在页面的左上角附近，选择 **[!UICONTROL 创建]**.
 1. 在 **[!UICONTROL 常规]** 第（1/3页）页 **[!UICONTROL 创建Experience Platform标记配置]** ，请填写以下字段：
 
-   * **[!UICONTROL 标题]**  — 输入描述性配置标题。 例如， `We.Retail Tags cloud configuration`.
+   * **[!UICONTROL 标题]**  — 输入描述性配置标题。 例如：`We.Retail Tags cloud configuration`。
 
    * **[!UICONTROL 关联的Adobe IMS配置]**  — 选择您之前在 [配置Experience ManagerIMS](#configuring-aem-ims).
 

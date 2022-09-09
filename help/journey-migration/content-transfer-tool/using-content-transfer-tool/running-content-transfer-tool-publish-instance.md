@@ -1,6 +1,6 @@
 ---
-title: 在发布实例上运行内容传输工具
-description: 在发布实例上运行内容传输工具
+title: 在发布实例上运行内容转移工具
+description: 在发布实例上运行内容转移工具
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 11%
 
 ---
 
-# 在发布实例上运行内容传输工具 {#run-content-transfer-tool-publish-instance}
+# 在发布实例上运行内容转移工具 {#run-content-transfer-tool-publish-instance}
 
 ## 简介 {#introduction}
 

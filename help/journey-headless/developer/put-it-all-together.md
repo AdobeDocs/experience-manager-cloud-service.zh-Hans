@@ -80,7 +80,7 @@ Node.js是一个JavaScript运行时环境，用于处理AEM项目的前端资产
 
 请务必注意本地AEM运行时中每个组件之间的差异，因为在最重要的位置测试更新非常重要。 例如，在创作时测试内容更新或在发布实例中测试新代码。
 
-在生产系统中，Dispatcher和http Apache服务器将始终位于AEM发布实例之前。 它们为AEM系统提供缓存和安全服务，因此，还必须针对Dispatcher测试代码和内容更新。
+在生产系统中，Dispatcher和http Apache服务器将始终位于AEM发布实例之前。 它们为AEM系统提供缓存和安全服务，因此对于针对Dispatcher测试代码和内容更新也至关重要。
 
 ## 使用本地开发环境在本地预览代码和内容 {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 

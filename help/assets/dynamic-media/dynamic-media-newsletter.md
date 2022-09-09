@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media新闻稿存档
-description: '按Experience League划分的Dynamic Media时事通讯是每月时事通讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您立即实现价值。 本一站式商店快讯中提供宝贵的知识建设资源。 例如，提供了操作方法视频和解决方案概述。 阅读一些关键特性和功能，如图像预设、查看器预设、视频配置文件等。 '
+description: 按Experience League划分的Dynamic Media时事通讯是每月时事通讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您立即实现价值。 本一站式商店快讯中提供宝贵的知识建设资源。 例如，提供了操作方法视频和解决方案概述。 阅读一些关键特性和功能，如图像预设、查看器预设、视频配置文件等。
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20

@@ -1,7 +1,7 @@
 ---
 title: AEM Headless开发人员历程
-description: '从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 了解强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有信息。 '
-landing-page-description: '了解无头内容交付和实施。 了解有关在业务中制定战略的更多信息。 '
+description: 从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 了解强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有信息。
+landing-page-description: 了解无头内容交付和实施。 了解有关在业务中制定战略的更多信息。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt
@@ -64,7 +64,7 @@ AEM的无头实施使用内容片段模型和内容片段，以专注于创建�
 | 2 | [AEM Headless as a Cloud Service 快速入门](getting-started.md) | 了解AEM Headless先决条件 |
 | 3 | [首次 AEM Headless 使用体验的路径](path-to-first-experience.md) | 设置开发环境，并了解如何将简单的应用程序与AEM Headless集成 |
 | 4 | [如何对内容进行建模](model-your-content.md) | 了解如何对内容结构进行建模。 然后，使用内容片段模型和内容片段实现Adobe Experience Manager(AEM)的结构，以便跨渠道重复使用。 |
-| 5 | [如何通过 AEM 交付 API 访问您的内容](access-your-content.md) | 了解如何使用GraphQL查询访问内容片段内容。 |
+| 5 | [如何通过 AEM 投放 API 访问您的内容](access-your-content.md) | 了解如何使用GraphQL查询访问内容片段内容。 |
 | 6 | [如何通过 AEM Assets API 更新您的内容](update-your-content.md) | 了解如何使用REST API访问和更新内容片段内容。 |
 | 7 | [如何将所有内容整合在一起 — 在AEM Headless中查看您的应用程序和内容](put-it-all-together.md) | 了解如何获取您的AEM项目并为使用AEM Headless SDK进行上线做准备。 |
 | 8 | [如何使用 Headless 应用程序上线](go-live.md) | 了解如何在Git中实时部署应用程序并获取本地代码，然后将其移至Cloud Manager Git for CI/CD管道。 |

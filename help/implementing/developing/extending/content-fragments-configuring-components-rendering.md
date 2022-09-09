@@ -1,6 +1,6 @@
 ---
-title: 配置用于渲染的组件的内容片段
-description: 配置用于渲染的组件的内容片段
+title: 配置用于呈现的组件的内容片段
+description: 配置用于呈现的组件的内容片段
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 6%
 
 ---
 
-# 配置用于渲染的组件的内容片段{#content-fragments-configuring-components-for-rendering}
+# 配置用于呈现的组件的内容片段{#content-fragments-configuring-components-for-rendering}
 
 有几个 [高级服务](#definition-of-advanced-services-that-need-configuration) 与内容片段的呈现相关。 要使用这些服务，此类组件的资源类型必须在内容片段框架中知晓自己。
 

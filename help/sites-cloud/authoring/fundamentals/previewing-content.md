@@ -3,7 +3,7 @@ title: 预览内容
 description: 了解如何使用 AEM 预览服务在内容上线前进行预览。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
 

@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.6.0发行说明
 description: 以下是AEM as a Cloud Service中Cloud Manager 2022.6.0的发行说明。
 feature: Release Information
-source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
+exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.6.0发行说明 {#release-notes}
 
@@ -41,4 +41,3 @@ AEMas a Cloud Service中Cloud Manager 2022.6.0版的发布日期是2022年6月9�
 * 的 [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API已弃用，并且 [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) 的值。
    * `List Programs` 仍然有效，但其使用情况将在日志中生成警告消息。
    * 三个月后将不再支持该选件。
-

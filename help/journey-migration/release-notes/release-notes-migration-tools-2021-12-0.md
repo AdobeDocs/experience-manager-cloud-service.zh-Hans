@@ -15,7 +15,7 @@ ht-degree: 40%
 本页概述了AEM 2021.12.0中迁移工具的发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -35,7 +35,7 @@ Best Practices Analyzer v2.1.22 的发布日期是 2021 年 12 月 1 日。
 * 对于 AEM Forms 客户，已修复有关 `EMAIL_PDF_SUBMIT_ACTION` 在 AEM as a Cloud Service 中不可用的 BPA 消息。
 
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 

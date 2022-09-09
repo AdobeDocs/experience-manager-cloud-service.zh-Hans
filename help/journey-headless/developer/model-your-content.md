@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -180,7 +180,7 @@ AEM提供了以下数据类型来为内容建模：
 
 * 单行文本
 * 多行文本
-* 数值
+* 数字
 * 布尔型
 * 日期和时间
 * 枚举
@@ -242,7 +242,7 @@ AEM提供了以下数据类型来为内容建模：
 * 关联内容.
 * 编辑元数据。
 * 显示树结构。
-* 预览JSON表示形式。
+* 预览 JSON 表示形式.
 
 ### 创建内容片段 {#creating-content-fragments}
 
@@ -276,5 +276,5 @@ tbc...
    * [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)  — 创建和创作内容片段；此页面将引导您查看其他详细章节
 * [AEM GraphQL架构](access-your-content.md) - GraphQL如何实现模型
 * [示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL
+* [AEM Headless快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一个简短的视频教程系列概述了如何使用AEM无标题功能，包括内容建模和GraphQL
    * [GraphQL建模基础知识](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  — 了解如何在Adobe Experience Manager(AEM)中定义和使用内容片段，以与GraphQL一起使用。

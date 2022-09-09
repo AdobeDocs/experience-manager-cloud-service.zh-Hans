@@ -1,6 +1,6 @@
 ---
 title: Maven 项目版本处理
-description: '对于AEM as a Cloud Service的暂存和生产部署，Cloud Manager会生成一个唯一的递增版本。 '
+description: 对于AEM as a Cloud Service的暂存和生产部署，Cloud Manager会生成一个唯一的递增版本。
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
 workflow-type: tm+mt

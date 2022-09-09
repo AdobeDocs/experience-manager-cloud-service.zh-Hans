@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.8.0发行说明。”'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
@@ -118,7 +118,7 @@ ht-degree: 6%
 
 * 要激活“内容审核”步骤，用户必须编辑管道，并（可选）添加页面。 如果未添加页面，则会审核主页。
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 请阅读本节内容，了解内容传输工具版本v1.0.4的新增功能和更新。
 

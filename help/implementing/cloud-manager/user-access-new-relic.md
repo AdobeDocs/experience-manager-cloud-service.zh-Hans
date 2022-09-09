@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ New Relic One APM for AEMas a Cloud Service具有许多功能。
 >
 >中的用户 **业务所有者** 或 **部署管理器** 必须登录角色才能管理New Relic One用户。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要管理New Relic One用户的程序。
 
@@ -92,7 +92,7 @@ New Relic One APM for AEMas a Cloud Service具有许多功能。
 
 要通过Cloud Manager访问New Relic One，请执行以下操作：
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要访问New Relic One的程序。
 

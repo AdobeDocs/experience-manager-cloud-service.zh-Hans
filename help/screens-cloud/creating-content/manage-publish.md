@@ -47,6 +47,6 @@ ht-degree: 1%
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已在项目中发布了渠道，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中安装和配置播放器as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

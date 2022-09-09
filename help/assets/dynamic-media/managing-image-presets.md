@@ -212,7 +212,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。
 
 ### 创建响应式图像预设 {#creating-a-responsive-image-preset}
 

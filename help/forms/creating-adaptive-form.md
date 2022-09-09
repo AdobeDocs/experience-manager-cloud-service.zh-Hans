@@ -1,6 +1,6 @@
 ---
 title: 如何创建自适应表单？
-description: '了解如何使用 [!DNL Experience Manager Forms]. 自适应Forms是响应式HTML5表单，可简化信息收集和处理。 深入了解如何基于表单数据模型和XML或JSON架构创建自适应表单。 '
+description: 了解如何使用 [!DNL Experience Manager Forms]. 自适应Forms是响应式HTML5表单，可简化信息收集和处理。 深入了解如何基于表单数据模型和XML或JSON架构创建自适应表单。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner

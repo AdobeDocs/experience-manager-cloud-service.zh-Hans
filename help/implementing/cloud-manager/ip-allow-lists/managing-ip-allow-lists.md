@@ -1,13 +1,13 @@
 ---
 title: 管理 IP 允许列表
 description: 了解如何在Cloud Manager中查看、编辑、删除和检查IP允许列表的状态。
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
+source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # 管理 IP 允许列表 {#manage-ip-allow-lists}
 

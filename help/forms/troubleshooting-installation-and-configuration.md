@@ -1,5 +1,5 @@
 ---
-title: '安装和配置疑难解答  '
+title: 安装和配置疑难解答
 seo-title: Troubleshooting installation and configuration
 description: 安装和配置疑难解答
 seo-description: Troubleshooting installation and configuration

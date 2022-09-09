@@ -14,7 +14,7 @@ ht-degree: 6%
 
 本页概述了AEM 2022.1.0as a Cloud Service中迁移工具的发行说明。
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 

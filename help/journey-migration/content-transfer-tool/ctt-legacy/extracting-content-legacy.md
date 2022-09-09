@@ -3,7 +3,8 @@ title: 从源中提取内容（旧版）
 description: 从源中提取内容
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 9f43356c-ba51-48bc-97f5-f1f5db81e7f3
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 36%
@@ -71,6 +72,6 @@ ht-degree: 36%
    >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-06.png)
 
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 在内容传输工具中学习了从源提取内容后，您现在便可以学习内容传输工具中的摄取流程。 请参阅 [将内容摄取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 了解如何从内容传输工具中摄取迁移集。

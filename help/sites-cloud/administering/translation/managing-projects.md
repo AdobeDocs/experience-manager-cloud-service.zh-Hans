@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3992'
 ht-degree: 100%
 

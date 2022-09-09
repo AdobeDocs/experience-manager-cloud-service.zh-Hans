@@ -35,7 +35,7 @@ ContextHub是用于存储、处理和呈现上下文数据的框架。 有关Con
 
 UI模式在工具栏左侧显示为一系列图标。 选择后，UI模式的模块将显示在右侧。
 
-![ContextHub工具栏](assets/contexthub-toolbar.png)
+![ContextHub 工具栏](assets/contexthub-toolbar.png)
 
 图标是 [Coral UI图标库](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 

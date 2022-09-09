@@ -1,10 +1,11 @@
 ---
 title: 配置资产上传限制
-description: '配置Adobe Experience Manager Assets，以根据MIME类型限制用户可上传的资产类型。 它有助于防止意外上载不需要的格式和恶意文件。 '
-source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+description: 配置Adobe Experience Manager Assets，以根据MIME类型限制用户可上传的资产类型。 它有助于防止意外上载不需要的格式和恶意文件。
+exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 1%
 
 1. 在文本框中指定MIME类型。 您可以单击 **[!UICONTROL 添加]** 再次指定更多允许的MIME类型。 您还可以单击 ![删除图标](assets/delete-icon.svg) 从列表中删除任何MIME类型。
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
 **示例1:允许将所有图像和PDF文件上传到Experience Manager Assets**
 
@@ -49,7 +50,3 @@ ht-degree: 1%
 ![资产限制](assets/asset-restrictions.png)
 
 根据图像中描述的设置，您可以将。JPG、 .PNG和。GIF格式的图像上传到Experience Manager Assets。
-
-
-
-

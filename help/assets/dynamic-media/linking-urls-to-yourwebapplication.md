@@ -108,7 +108,7 @@ Dynamic Media支持交付静态资产，静态资产是除图像和视频之外�
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         例如， `https://aem.com/is/content/adobe/image.gif`.
+         例如：`https://aem.com/is/content/adobe/image.gif`。
    * 选择 **[!UICONTROL 资产]** > **[!UICONTROL 动态演绎版]**，然后选择静态资产的动态演绎版并复制URL。
 
       更改复制的URL以使用 `is/content` 在路径中，而不是 `is/image/`.

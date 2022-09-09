@@ -3,7 +3,7 @@ title: 处理任务
 description: 任务是指要对内容完成的工作项，可在项目中使用任务来确定当前任务的完成程度
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 100%
 

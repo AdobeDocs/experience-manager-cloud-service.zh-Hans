@@ -1,13 +1,13 @@
 ---
 title: 入门准备
 description: 在载入过程开始之前，系统管理员在登录系统之前必须了解一些数字或准备步骤。
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 入门准备 {#onboarding-preparation}
 

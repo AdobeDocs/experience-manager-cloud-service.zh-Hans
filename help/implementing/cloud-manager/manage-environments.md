@@ -24,8 +24,8 @@ ht-degree: 2%
 
 各个环境的功能取决于容器中启用的解决方案 [项目。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-* [站点](/help/sites-cloud/home.md)
-* [资源](/help/assets/home.md)
+* [Sites](/help/sites-cloud/home.md)
+* [Assets](/help/assets/home.md)
 * [表单](/help/forms/home.md)
 * [屏幕](/help/screens-cloud/home.md)
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## 添加环境 {#adding-environments}
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要为其添加环境的程序。
 

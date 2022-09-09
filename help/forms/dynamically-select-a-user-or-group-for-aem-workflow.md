@@ -1,6 +1,6 @@
 ---
 title: 为以AEM Forms为中心的工作流步骤动态选择用户或组
-description: '了解如何为 [!DNL AEM Forms] 工作流。 '
+description: 了解如何为 [!DNL AEM Forms] 工作流。
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0

@@ -3,7 +3,7 @@ title: 使用带有 GraphQL 的内容片段的 Headless 内容投放
 description: 了解使用 GraphQL 中的内容片段实现 AEM Headless CMS 以进行 headless 内容投放的基本概念。
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 100%
 

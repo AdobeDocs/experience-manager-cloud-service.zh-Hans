@@ -30,7 +30,7 @@ Best Practices Analyzer v2.1.30的发布日期是2022年7月27日。
 * BPA报告内容片段缺少原始呈现版本。 由于内容片段没有呈现版本，因此现在已跳过此内容片段检查。
 * BPA UI中缺少筛选ACS Commons发现结果的选项。 此问题已得到修复。
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 

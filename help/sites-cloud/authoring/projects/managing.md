@@ -3,7 +3,7 @@ title: 管理项目
 description: 通过“项目”，您可以将资源分组到一个实体中，以便在“项目”控制台中对其进行访问和管理，从而组织项目
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 1. 在&#x200B;**项目**&#x200B;控制台中，打开您的项目，然后找到&#x200B;**项目信息**&#x200B;拼贴。
 
    >[!NOTE]
-   >如果该拼贴不在您的项目中，您可能需要添加它。请参阅[添加拼贴](#adding-items-to-a-tile)。
+   如果该拼贴不在您的项目中，您可能需要添加它。请参阅[添加拼贴](#adding-items-to-a-tile)。
 
 1. 点按/单击&#x200B;**编辑**。
 1. 将选择器从&#x200B;**活动**&#x200B;更改为&#x200B;**不活动**（反之亦然）。

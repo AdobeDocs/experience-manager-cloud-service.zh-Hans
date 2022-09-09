@@ -1,5 +1,5 @@
 ---
-title: HTTP2 内容交付常见问题解答
+title: HTTP2 内容投放常见问题解答
 description: 了解HTTP2内容交付。
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
@@ -10,7 +10,7 @@ ht-degree: 1%
 
 ---
 
-# HTTP2 内容交付常见问题解答{#http-delivery-of-content-faq}
+# HTTP2 内容投放常见问题解答{#http-delivery-of-content-faq}
 
 Adobe很兴奋地宣布推出HTTP/2内容交付。 使用HTTP/2时，整体性能会有所提高。
 

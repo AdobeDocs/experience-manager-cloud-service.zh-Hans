@@ -81,7 +81,7 @@ ht-degree: 3%
 
 ![配置Rest端点提交操作](assets/action-config.png)
 
-您还可以 **[!UICONTROL 启用POST请求]** 和提供用于发布请求的URL。 要向托管表单的AEM服务器提交数据，请使用与AEM服务器的根路径对应的相对路径。 例如， `/content/forms/af/SampleForm.html`. 要向任何其他服务器提交数据，请使用绝对路径。
+您还可以 **[!UICONTROL 启用POST请求]** 和提供用于发布请求的URL。 要向托管表单的AEM服务器提交数据，请使用与AEM服务器的根路径对应的相对路径。 例如：`/content/forms/af/SampleForm.html`。要向任何其他服务器提交数据，请使用绝对路径。
 
 >[!NOTE]
 >

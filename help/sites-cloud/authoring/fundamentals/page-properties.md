@@ -3,7 +3,7 @@ title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1987'
 ht-degree: 100%
 

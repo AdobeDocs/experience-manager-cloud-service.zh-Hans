@@ -1,11 +1,11 @@
 ---
-title: '使沙盒环境休眠和解除沙盒环境休眠 '
+title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒项目的环境如何自动进入休眠模式以及如何将它们解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 按照以下步骤手动将沙盒项目环境休眠。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要休眠的程序以显示其详细信息。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 >
 >具有 **开发人员** 角色可以解除沙盒项目环境的休眠。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要休眠的程序以显示其详细信息。
 

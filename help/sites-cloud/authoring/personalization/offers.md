@@ -3,7 +3,7 @@ title: 创建和管理选件
 description: 使用“选件”控制台，可创建您可以在活动体验中使用的选件
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 100%
 

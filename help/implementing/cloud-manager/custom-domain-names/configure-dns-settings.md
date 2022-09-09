@@ -1,5 +1,5 @@
 ---
-title: '配置 DNS 设置 '
+title: 配置 DNS 设置
 description: 配置 DNS 设置
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## 什么是DNS设置？ {#dns-settings}
 
-A `CNAME` 或者，一旦配置好，域的所有Internet流量都将路由到其所指向的位置。 If that location is not provisioned to serve the traffic, there will be an outage. 如果尚未进行测试，则内容中可能会出现错误。 这就是为什么此步骤始终在测试完成后完成，并且您已准备好开始使用。
+A `CNAME` 或者，一旦配置好，域的所有Internet流量都将路由到其所指向的位置。 如果该位置未配置为提供流量，则将发生中断。 如果尚未进行测试，则内容中可能会出现错误。 这就是为什么此步骤始终在测试完成后完成，并且您已准备好开始使用。
 
 要配置这些设置，您需要确定 `CNAME` 或者，必须将Apex记录配置为将您的自定义域名指向Cloud Manager域名。 以下部分将帮助您确定哪种类型的记录适合您的DNS配置。
 

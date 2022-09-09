@@ -318,7 +318,7 @@ ht-degree: 6%
 
    您还可以预览轮播横幅的外观。 请参阅 [（可选）预览传送横幅](#optional-previewing-carousel-banners).
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL “保存”]**。
 1. 发布轮播集。 发布后会创建可在您的网站页面上使用的嵌入代码或URL。 如果您是Experience Manager Sites客户，请将轮播集直接添加到您的网页。
 
    请参阅 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
@@ -344,7 +344,7 @@ ht-degree: 6%
 1. 执行以下任一操作：
 
    * 将鼠标悬停在轮播集资产上，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
-   * 将鼠标悬停在轮播集资产上，选择 **[!UICONTROL 选择]** （复选标记图标），然后在工具栏中，选择 **[!UICONTROL 编辑]**.
+   * 将鼠标悬停在轮播集资产上，选择 **[!UICONTROL 选择]** （勾选标记图标），然后在工具栏中，选择 **[!UICONTROL 编辑]**.
 
    * 选择轮播集资产，然后在页面的左上角选择 **[!UICONTROL 编辑]** （铅笔图标）。
 

@@ -5,7 +5,7 @@ exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -60,9 +60,9 @@ AEM的UI既适用于移动设备，也适用于桌面设备，但它不是创建
 
 * **仅限内容**
 * **内容树**
-* **时间轴**
+* **时间线**
 * **引用**
-* **筛选器**
+* **过滤器**
 
 默认值为 **仅限内容** （隐藏的边栏）。
 
@@ -72,7 +72,7 @@ AEM的UI既适用于移动设备，也适用于桌面设备，但它不是创建
 
 创作页面时，结构区域如下所示。
 
-### 内容框架 {#content-frame}
+### 内容帧 {#content-frame}
 
 页面内容在内容框架中呈现。 内容框架完全独立于编辑器，可确保不会因CSS或Javascript而发生冲突。
 

@@ -1,5 +1,5 @@
 ---
-title: '如何下载和安装Forms Designer以创建记录文档模板？  '
+title: 如何下载和安装Forms Designer以创建记录文档模板？
 description: 您可以使用Forms Designer创建XDP和PDF表单模板，这些模板用作记录文档的模板。 Designer可在 [!DNL AEM Forms] 许可证。
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

@@ -49,7 +49,7 @@ ht-degree: 6%
 
 [!DNL Experience Manager] as a [!DNL Cloud Service] 为现有功能引入了许多新功能和性能更高的使用方式。 但是，当从 [!DNL Experience Manager] 6.5至 [!DNL Experience Manager] as a [!DNL Cloud Service]，您可能会注意到某些功能的工作方式不同、不可用或部分可用。 以下是此类功能的列表。 此外，请参阅 [已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md).
 
-| 功能或用例 | 状态 [!DNL Experience Manager] as a [!DNL Cloud Service] | 批注 |
+| 功能或用例 | 状态 [!DNL Experience Manager] as a [!DNL Cloud Service] | 评论 |
 |-----|-----|-----|
 | [重复的资产检测](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 工作方式不同 | 请参阅 [工作原理 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [仅用于放置(FPO)演绎版](/help/assets/configure-fpo-renditions.md) | 工作方式不同 | 处理配置文件使用资产微服务生成FPO演绎版。 在Experience Manager6.5中，第三方解决方案，例如 [!DNL ImageMagick] 可用于生成演绎版。 |

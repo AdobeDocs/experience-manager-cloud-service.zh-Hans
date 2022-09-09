@@ -3,7 +3,7 @@ title: 使用工作流
 description: 通过 AEM 中的工作流，您可以自动完成对页面或资产执行的一系列步骤。
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 

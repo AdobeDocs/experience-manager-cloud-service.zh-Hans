@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版的发行说明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -138,7 +138,7 @@ AEM 2021.5.0版中Cloud Manager的发布日期是2021年5月6日。
 
 * 在沙盒项目设置过程中，成功创建包含示例代码的项目后，“概述”页面中的“管理Git”将显示为主页卡中的链接。
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 ### 发布日期 {#release-date-ctt-latest}
 

@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
    ![站点编辑器到产品驾驶舱的快捷键](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
-## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 

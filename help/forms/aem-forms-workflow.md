@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2360'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -78,8 +78,8 @@ AEM提供了直观的用户界面，以使用提供的工作流步骤创建工�
 1. 启用电子邮件通知。 您可以在OSGi上配置以Forms为中心的工作流，以向用户或受分配者发送电子邮件通知。 执行以下配置以启用电子邮件通知：
 
    1. 转到AEM配置管理器(位于 `https://[server]:[port]/system/console/configMgr`.
-   1. 打开 **[!UICONTROL Day CQ Mail Service]** 配置。 为 **[!UICONTROL SMTP服务器主机名]**, **[!UICONTROL SMTP服务器端口、]** 和 **[!UICONTROL “发件人”地址]** 字段。 单击&#x200B;**[!UICONTROL 保存]**。
-   1. 打开 **[!UICONTROL Day CQ链接外部器]** 配置。 在 **[!UICONTROL 域]** 字段，为本地、创作和发布实例指定实际的主机名/IP地址和端口号。 单击&#x200B;**[!UICONTROL 保存]**。
+   1. 打开 **[!UICONTROL Day CQ Mail Service]** 配置。 为 **[!UICONTROL SMTP服务器主机名]**, **[!UICONTROL SMTP服务器端口、]** 和 **[!UICONTROL “发件人”地址]** 字段。 单击“**[!UICONTROL 保存]**”。
+   1. 打开 **[!UICONTROL Day CQ链接外部器]** 配置。 在 **[!UICONTROL 域]** 字段，为本地、创作和发布实例指定实际的主机名/IP地址和端口号。 单击“**[!UICONTROL 保存]**”。
 
 1. 创建工作流阶段。 一个工作流可以具有多个阶段。 这些阶段会显示在AEM收件箱中并报告工作流进度。
 
@@ -273,4 +273,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### 清除工作流实例 {#purge-workflow-instances}
 
-最大限度地减少工作流实例数会提高工作流引擎的性能，因此您可以定期从存储库中清除已完成或正在运行的工作流实例。 有关详细信息，请参阅 [定期清除工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) 清除工作流实例
+最大限度地减少工作流实例的数量可以提高工作流引擎的性能，因此，您可以定期从存储库中清除已完成或正在运行的工作流实例。有关详细信息，请参阅 [定期清除工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) 清除工作流实例

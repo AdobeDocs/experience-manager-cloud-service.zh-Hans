@@ -60,7 +60,7 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 * `parent`:链接到父文件夹。
 * `thumbnail`:（可选）链接到文件夹缩略图图像。
 
-### 资产 {#assets}
+### Assets {#assets}
 
 在 [!DNL Experience Manager] 资产包含以下元素：
 

@@ -3,7 +3,7 @@ title: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
 description: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ AEM Sites as a Cloud Service 中的更改和补充如下所示：
 
 [WKND](https://wknd.site/)（新的 AEM 引用站点）已进行更新和发布，以反映使用 AEM 构建网站的最佳实践，以及 AEM 中提供的一整套功能、组件和部署模型。新的引用站点和[随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)涵盖了项目设置、核心组件、可编辑模板、客户端库和使用 Adobe Experience Manager Sites 进行组件开发等基本主题。
 
-以前，We.Retail 默认与 AEM 一起安装（在生产模式下启动时除外）。现在，默认情况下将不会安装引用站点。而是将提供 [Git 存储库](https://github.com/adobe/aem-guides-wknd/)和[随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)以及更新后的 WKND 引用站点代码。
+以前，We.Retail 默认与 AEM 一起安装（在生产模式下启动时除外）。现在，默认情况下将不会安装引用站点。而是将提供 [Git 存储库](https://github.com/adobe/aem-guides-wknd/)和[随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)以及更新后的 WKND 引用站点代码。
 
 ## 运行时不可用的功能 {#capabilities-not-available-at-runtime}
 

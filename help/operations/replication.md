@@ -3,7 +3,7 @@ title: 复制
 description: 分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 

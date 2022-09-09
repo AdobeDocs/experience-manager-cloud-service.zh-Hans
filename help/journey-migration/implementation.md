@@ -103,7 +103,7 @@ AEM Maven项目需要进行某些更改才能与云兼容。 AEMas a Cloud Servi
 Adobe提供了多个工具，可帮助加速某些代码重构任务。 了解这些工具以及它们所解决的问题将减少迁移的复杂性和时间。
 
 * [资产工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)，一种用于自动迁移资产处理工作流的工具
-* [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，该工具可将您现有的Dispatcher配置转换为可准备用于AEMas a Cloud Service的格式。
+* [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，该工具可将现有Dispatcher配置转换为可准备用于AEMas a Cloud Service的格式。
 * [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en)，一种工具，可将AEM多模项目作为输入，并将其转换为AEMas a Cloud Service项目
 * [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en)，可将索引转换为与AEM as a Cloud Service兼容的表单的工具
 * [现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)，一套实用程序，可用于将旧版AEM功能转换为AEM as a Cloud Service的现代和支持功能。

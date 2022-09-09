@@ -3,7 +3,7 @@ title: 在  [!DNL Adobe Experience Manager]  中使用富文本编辑器创作�
 description: 使用  [!DNL Experience Manager]  富文本编辑器创作内容。
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 100%
 

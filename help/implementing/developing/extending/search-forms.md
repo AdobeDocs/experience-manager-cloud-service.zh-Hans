@@ -81,7 +81,7 @@ Adobe Experience Manager as a Cloud Service拥有强大的 [搜索](/help/sites-
    <th>设置</th>
   </tr>
   <tr>
-   <td>Analytics</td>
+   <td>分析</td>
    <td>显示分析支持的数据时，站点浏览器中的搜索/过滤功能。 加载Analytics搜索过滤器以匹配映射的自定义分析列。</td>
    <td>
     <ul>
@@ -220,7 +220,7 @@ Adobe Experience Manager as a Cloud Service拥有强大的 [搜索](/help/sites-
     </ul> </td>
   </tr>
   <tr>
-   <td>分析</td>
+   <td>见解</td>
    <td>根据一系列分析参数进行搜索。</td>
    <td>这是一个由多个谓词组成的复杂谓词：
     <ul>
@@ -268,7 +268,7 @@ Adobe Experience Manager as a Cloud Service拥有强大的 [搜索](/help/sites-
     </ul> </td>
   </tr>
   <tr>
-   <td>选项属性</td>
+   <td>选项 属性</td>
    <td>搜索选项的一个或多个属性。</td>
    <td>
     <ul>

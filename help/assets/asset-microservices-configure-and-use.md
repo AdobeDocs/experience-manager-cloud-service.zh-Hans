@@ -86,7 +86,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
 <!-- TBD: Update the video link when a new video is available from Tech Marketing.
 
@@ -133,7 +133,7 @@ The following video demonstrates the usefulness and usage of standard profile.
    * 将服务参数添加到 [将其他信息或参数传递到自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * 包含和排除的MIME类型，可将处理限制为几种特定的文件格式。
 
-   单击&#x200B;**[!UICONTROL 保存]**。
+   单击“**[!UICONTROL 保存]**”。
 
 自定义应用程序是无头的 [萤火虫项目](https://github.com/AdobeDocs/project-firefly) 应用程序。 如果自定义应用程序使用处理配置文件进行设置，则会获取提供的所有文件。 应用程序必须筛选文件。
 

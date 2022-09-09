@@ -3,7 +3,7 @@ title: 内容片段 – 配置浏览器
 description: 了解如何在配置浏览器中启用特定的内容片段功能。
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 100%
 

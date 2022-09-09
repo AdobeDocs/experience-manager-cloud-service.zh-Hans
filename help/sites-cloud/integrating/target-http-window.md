@@ -1,8 +1,8 @@
 ---
 title: Adobe AEM Target HTTP 窗口
-description: 'Adobe AEM Target HTTP 窗口 '
+description: Adobe AEM Target HTTP 窗口
 source-git-commit: c193b38718622cd2e960a8e8833c2d295822dc33
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 

@@ -5,7 +5,7 @@ exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何管理产品目录页面和模板。 阅读后，您应该：
+本文档可帮助您了解如何管理产品目录页面和模板。 阅读本文档后，您应：
 
 * 了解目录模板的概念
 * 通用模板的工作原理

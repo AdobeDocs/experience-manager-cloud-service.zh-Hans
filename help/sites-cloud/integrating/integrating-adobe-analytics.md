@@ -1,11 +1,11 @@
 ---
 title: 与 Adobe Analytics 集成
-description: '与 Adobe Analytics 集成 '
+description: 与 Adobe Analytics 集成
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 100%
 

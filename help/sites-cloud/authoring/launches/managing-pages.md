@@ -3,7 +3,7 @@ title: 管理启动项中的页面
 description: 您可以在启动项中创建新页面。也可以删除不需要的页面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 

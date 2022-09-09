@@ -1,11 +1,11 @@
 ---
-title: '创建生产程序 '
+title: 创建生产程序
 description: 了解如何使用Cloud Manager创建您自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 按照以下步骤创建生产程序。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击 **添加程序** 的右上角。
 

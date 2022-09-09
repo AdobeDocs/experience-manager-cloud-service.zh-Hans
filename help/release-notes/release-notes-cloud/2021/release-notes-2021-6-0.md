@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版的发行说明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
@@ -19,7 +19,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -30,12 +30,12 @@ ht-degree: 25%
 
 请查看 [2021年6月版概述](https://video.tv.adobe.com/v/334296) 视频，了解添加的功能摘要。
 
-## AEM as a Cloud Service的XML Documentation {#xml-documentation}
+## XML Documentation for AEM as a cloud Service {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-* AEMas a Cloud Service的XML Documentation现在为GA。
-* 这将允许现有AEM Cloud Service客户购买XML Documentation添加程序，以便跨多个渠道(包括AEM站点)导入、创建、管理和交付技术内容
+* XML Documentation for AEMas a Cloud Service现已正式启用。
+* 这将允许现有AEM Cloud Service客户购买XML Documentation Addon，以便跨多个渠道(包括AEM网站)导入、创建、管理和交付技术内容
 
 ## Cloud Manager {#cloud-manager}
 
@@ -174,7 +174,7 @@ AEM Screensas a Cloud Service的发布日期是2021年6月24日。
 * 改进了类别页面的SEO友好URL
 * 支持每个站点/配置的自定义HTTP标头
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 ### 发布日期 {#release-date-ctt-latest}
 

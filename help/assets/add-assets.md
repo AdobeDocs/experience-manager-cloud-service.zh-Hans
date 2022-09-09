@@ -33,7 +33,7 @@ ht-degree: 1%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的 [!DNL Creative Cloud] 桌面应用程序。 | 创意、营销人员 |
 | [资产批量摄取](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔批量摄取。 仅适用于支持的数据存储。 | 管理员、开发人员 |
 
-## 上传资源 {#upload-assets}
+## 上传资产 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -178,7 +178,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. （可选）提供资产的最大文件大小（以MB为单位），以将其包含在 **[!UICONTROL 按最大大小过滤]** 字段。
 
-1. （可选）指定要从 **[!UICONTROL 排除MIME类型]** 字段。 例如， `image/jpeg, image/.*, video/mp4`. 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
+1. （可选）指定要从 **[!UICONTROL 排除MIME类型]** 字段。 例如：`image/jpeg, image/.*, video/mp4`。请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
 
 1. 指定要从的摄取中包含的MIME类型列表（以逗号分隔） **[!UICONTROL 包括MIME类型]** 字段。 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
 
@@ -186,7 +186,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 选择 **[!UICONTROL 导入模式]**. 选择 **跳过**, **替换**&#x200B;或 **创建版本**. 跳过模式是默认模式，在此模式下，摄取者会跳过以导入资产（如果资产已存在）。 查看 [替换和创建版本选项](#handling-upload-existing-file).
 
-1. 指定一个路径，以在DAM中定义要使用导入资产的位置 **[!UICONTROL Assets Target文件夹]** 字段。 例如， `/content/dam/imported_assets`.
+1. 指定一个路径，以在DAM中定义要使用导入资产的位置 **[!UICONTROL Assets Target文件夹]** 字段。 例如：`/content/dam/imported_assets`。
 
 1. （可选）在 **[!UICONTROL 元数据文件]** 字段。 在配置批量导入工具时，在源Blob位置中指定CSV文件并引用路径。 此字段中引用的CSV文件格式与您 [批量导入和导出资产元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您选择 **导入后删除源文件** 选项，可使用 **排除** 或 **包含MIME类型** 或 **按路径/文件过滤** 字段。 您可以使用正则表达式在这些字段中过滤CSV文件。
 

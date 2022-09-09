@@ -3,7 +3,7 @@ title: 设置您的管道
 description: 创建前端管道来管理站点主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 100%
 

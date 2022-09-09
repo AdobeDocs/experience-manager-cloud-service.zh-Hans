@@ -1,5 +1,5 @@
 ---
-title: 分配AEM产品配置文件
+title: 分配 AEM 产品配置文件
 description: 配置云资源后，您将需要使用AEM产品配置文件授予您的团队访问AEM本身的权限。
 feature: Onboarding
 role: Admin, User, Developer
@@ -7,11 +7,11 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '743'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 分配AEM产品配置文件 {#assign-profiles-aem}
+# 分配 AEM 产品配置文件 {#assign-profiles-aem}
 
 在 [入门历程，](overview.md) 您将了解如何使用AEM产品配置文件授予您的团队访问AEM的权限。
 

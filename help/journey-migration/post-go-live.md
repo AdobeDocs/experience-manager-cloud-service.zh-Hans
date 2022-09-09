@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 22%
 
 ## 历程结束了？ {#journey-ends}
 
-恭喜！ 您已完成AEMas a Cloud Service迁移历程! 您应该了解如何：
+恭喜！您已完成AEMas a Cloud Service迁移历程! 您应该了解如何：
 
 * 开始迁移到AEMas a Cloud Service
 * 确定您的部署是否已准备好移至AEMas a Cloud Service

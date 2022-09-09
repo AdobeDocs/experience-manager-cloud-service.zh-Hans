@@ -3,7 +3,7 @@ title: 将体验片段导出到 Adobe Target
 description: 将体验片段导出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2259'
 ht-degree: 100%
 
@@ -209,6 +209,7 @@ ht-degree: 100%
       >* 提高了安全性
       >* 改善了针对单页应用程序的实施选项
       >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
+
       >
       >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 

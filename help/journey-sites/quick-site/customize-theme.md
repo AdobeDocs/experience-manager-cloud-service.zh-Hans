@@ -3,7 +3,7 @@ title: 自定义站点主题
 description: 了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
 

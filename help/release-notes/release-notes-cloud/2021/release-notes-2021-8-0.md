@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0 版的发行说明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 版的发行说明。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
@@ -19,12 +19,11 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2021.8.0)是2021年8月26日发行的。
-以下版本(2021.9.0)将于2021年10月6日发布。
+[!DNL Adobe Experience Manager][!DNL Cloud Service] 当前版本 (2021.8.0) 的发布日期为 2021 年 26 月 8 日。以下版本(2021.9.0)将于2021年10月6日发布。
 
 ## 发布视频 {#release-video}
 
@@ -120,7 +119,7 @@ AEM 2021.8.0版中Cloud Manager的发布日期是2021年8月12日。
 
 * 有时，当由于某些原因触发管道两次时，会导致其中一次执行失败 *无法更新管道执行状态* 错误。
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 ### 发布日期 {#release-date-ctt-latest}
 

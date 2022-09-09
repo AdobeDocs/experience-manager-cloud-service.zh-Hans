@@ -3,7 +3,7 @@ title: 已知问题
 description: Adobe Experience Manager as a Cloud Service 的已知问题
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: 添加页面注释
 description: 使用注释模式可像使用便笺一样在页面上留下注释和草图，协助您的内容审阅过程
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 100%
 

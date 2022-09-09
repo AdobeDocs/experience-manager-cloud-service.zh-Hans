@@ -3,7 +3,7 @@ title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 100%
 

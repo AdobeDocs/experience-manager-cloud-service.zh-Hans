@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.5.0发行说明
 description: 以下是AEM as a Cloud Service中Cloud Manager 2022.5.0的发行说明。
 feature: Release Information
-source-git-commit: a7f8d39c74d4f6bfe34b9e6b11f5ec9e4ffb34db
+exl-id: d6853333-0b8c-4863-ad4c-98d8a76ec4f5
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 3%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.5.0发行说明 {#release-notes}
 

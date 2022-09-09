@@ -4,7 +4,7 @@ description: 了解如何从内容片段控制台中管理内容片段。
 landing-page-description: 了解如何从内容片段控制台中管理内容片段，该控制台重点关注内容片段在 Headless 用例中的大量使用，但也是在页面创作时使用。
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 

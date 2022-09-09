@@ -3,7 +3,7 @@ title: 导出到 CSV
 description: 将页面的相关信息导出到本地系统上的 CSV 文件
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 

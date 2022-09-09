@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bc
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
@@ -23,7 +23,7 @@ Experience Manager和Adobe Commerce可使用商务集成框架(CIF)无缝集成�
 >GraphQL 当前用于 Adobe Experience Manager (AEM) as a Cloud Service 中的两种（分隔的）场景：
 >
 >* 在这种情况下，CIF会通过GraphQL与商务通信。
->* [AEM内容片段可与AEM GraphQL API（一种基于标准GraphQL的自定义实施）一起使用，来提供结构化内容以供在应用程序中使用](/help/headless/graphql-api/content-fragments.md).
+>* [AEM 内容片段与 AEM GraphQL API（一种自定义实现，基于标准 GraphQL）配合使用，提供结构化内容用于您的应用程序](/help/headless/graphql-api/content-fragments.md)。
 
 
 ## 架构概述 {#overview}

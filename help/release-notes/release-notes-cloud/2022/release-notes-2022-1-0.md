@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 100%
 

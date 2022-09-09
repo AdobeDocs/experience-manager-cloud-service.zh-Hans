@@ -3,7 +3,7 @@ title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2993'
 ht-degree: 100%
 

@@ -519,7 +519,7 @@ HTML按钮代码：
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
-   <td><p>标题行的背景颜色。 默认值为 <code>#333</code>.<br /> </p> </td>
+   <td><p>标题行的背景颜色。 默认值为 <code>#333</code>。<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>

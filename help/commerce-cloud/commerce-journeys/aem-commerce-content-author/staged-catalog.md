@@ -5,7 +5,7 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -64,7 +64,7 @@ AEM Launches允许您为暂存产品数据创建内容。 如果您不熟悉启�
 * 了解Launch中的分阶段产品目录和内容的概念
 * 能够通过产品驾驶舱和编辑器访问分阶段产品目录数据
 
-您现在可以管理 [产品体验](product-experience-management.md). 但是，AEM内容和商务还有许多其他选项可用。 请查看 [“其他资源”部分](#additional-resources) 以进一步了解您在此历程中看到的功能。
+您现在可以管理 [产品体验](product-experience-management.md). 但是，AEM内容和商务还有许多其他选项可用。 查看[“其他资源”部分](#additional-resources)中的一些其他资源，详细了解您在此历程中看到的功能。
 
 ## 其他资源 {#additional-resources}
 

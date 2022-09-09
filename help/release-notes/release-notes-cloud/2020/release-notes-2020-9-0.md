@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.9.0发行说明。”'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -96,7 +96,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 在某些情况下，强制刷新后，CRA报告未更新。 此版本已修复此问题。
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 请阅读本节内容，了解内容传输工具版本v1.1.10的新增功能和更新。
 

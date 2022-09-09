@@ -1,7 +1,7 @@
 ---
 title: 创建和管理表单中资产的审阅
 seo-title: Creating and managing reviews for assets in forms
-description: '审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。 '
+description: 审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference

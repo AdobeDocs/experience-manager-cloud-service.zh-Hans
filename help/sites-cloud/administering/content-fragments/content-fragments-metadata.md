@@ -3,7 +3,7 @@ title: 元数据 – 片段属性
 description: 了解如何查看和编辑 AEM 内容片段的元数据属性。
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 

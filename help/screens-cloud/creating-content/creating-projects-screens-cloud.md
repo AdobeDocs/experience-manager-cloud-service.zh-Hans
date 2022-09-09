@@ -59,6 +59,6 @@ ht-degree: 0%
    >[!NOTE]
    >您可以选择多个项目，因此可以在一个步骤中删除多个项目。
 
-## 接下来呢？ {#whats-next}
+## 下一步 {#whats-next}
 
 现在，您已设置AEM Screens项目，接下来可以创建新渠道并向渠道中添加内容。 请参阅 [创建和管理渠道](creating-channels-screens-cloud.md) 了解如何在渠道中创建和管理内容。

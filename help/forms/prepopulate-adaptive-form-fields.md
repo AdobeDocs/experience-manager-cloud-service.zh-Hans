@@ -5,13 +5,13 @@ description: 使用现有数据预填自适应表单的字段。
 seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-source-git-commit: 6b3c0abbbd7a5b3c9a3790937b933699389b0cd2
+exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
+source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 1%
 
 ---
-
 
 # 预填自适应表单字段{#prefill-adaptive-form-fields}
 

@@ -49,7 +49,7 @@ ht-degree: 21%
 
 * **适用于自适应Forms的Analytics**:现在，您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）的行为，以收集最终用户分析。 它有助于企业用户根据收集到的洞察信息，就自适应表单内容、布局和样式做出明智的决策。
 
-### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms-oct-2021}
+### [!DNL Forms]预发行渠道中提供的新功能 {#prerelease-features-forms-oct-2021}
 
 * **将AEM工作流数据外部化以进行安全处理**:您可以将包含敏感个人数据(SPD)元素的正在处理的AEM工作流变量数据存储在客户管理的存储库中，以便进行安全处理。 处理工作流时，存储在工作流变量中的数据不会保留在AEM存储库中。 它是按需从客户管理的存储库获取的。
 

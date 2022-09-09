@@ -59,7 +59,7 @@ Media Library广泛涵盖以下用例：
 要使用Media Library功能，您可以使用默认 [!DNL Experience Manager] 用户界面。 Media Library是 [!DNL Experience Manager Sites] 无需安装单独的界面或附加组件。 使用现有界面，Media Library用户有权完成以下任务：
 
 * 创建文件夹以组织资产。
-* 上传资产。
+* 上传资产.
 * 发布资产。
 * 编辑、移动和复制资产。
 * 浏览、过滤和搜索（包括相似性搜索）资产。

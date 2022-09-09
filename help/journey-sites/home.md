@@ -3,7 +3,7 @@ title: AEM Sites 历程
 description: 这里概述了可用的引导式历程，让您了解 AEM 强大的站点功能。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 

@@ -26,12 +26,12 @@ ht-degree: 8%
 
 **前提条件**
 
-该集成要求：
+集成需要：
 
 * 启动并运行 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 实例
 * 安 [企业 [!DNL Adobe Stock] 计划](https://stockenterprise.adobe.com/)
 * 具有Admin Console到默认Stock产品配置文件的权限的用户
-* 具有开发人员访问配置文件权限的用户，用于在Adobe开发人员控制台中创建集成
+* 有权在Adobe Developer Console中创建集成的开发人员访问配置文件的用户
 
 企业 [!DNL Adobe Stock] 计划，
 
@@ -111,7 +111,7 @@ IMS 配置包括两个步骤：
 
 ### 获取公共证书 {#public-certificate}
 
-公钥（证书）在Adobe开发人员控制台中对您的产品用户档案进行身份验证。
+公钥（证书）在Adobe Developer Console中对您的产品用户档案进行身份验证。
 
 1. 登录到 [!DNL Experience Manager Assets] 云实例。
 
@@ -127,7 +127,7 @@ IMS 配置包括两个步骤：
 
 1. 单击&#x200B;**[!UICONTROL 创建证书]**。然后，单击 **[!UICONTROL 确定]** 以生成公钥。
 
-1. 单击 **[!UICONTROL 下载公钥]** 图标，然后将公钥(.crt)文件保存到计算机上。 公共密钥稍后用于在Brand Portal开发人员控制台中为您的Adobe租户配置API并生成服务帐户凭据。
+1. 单击 **[!UICONTROL 下载公钥]** 图标，然后将公钥(.crt)文件保存到计算机上。 公共密钥稍后用于在Brand Portal Console中为Adobe Developer租户配置API并生成服务帐户凭据。
 
    单击&#x200B;**[!UICONTROL 下一步]**。
 
@@ -135,15 +135,15 @@ IMS 配置包括两个步骤：
 
 1. 在 **帐户** 选项卡，将创建Adobe IMS帐户，该帐户需要服务帐户凭据。
 
-   打开新选项卡并 [在Adobe开发人员控制台中创建服务帐户(JWT)连接](#createnewintegration).
+   打开新选项卡并 [在Adobe Developer控制台中创建服务帐户(JWT)连接](#createnewintegration).
 
 ### 创建服务帐户(JWT)连接 {#createnewintegration}
 
-在Adobe开发人员控制台中，项目和API是在组织级别配置的。 配置API会创建服务帐户(JWT)连接。 可通过以下两种方法配置API：生成密钥对（私钥和公钥），或上传公钥。 在本例中，服务帐户凭据是通过上传公钥生成的。
+在Adobe Developer控制台中，项目和API是在组织级别配置的。 配置API会创建服务帐户(JWT)连接。 可通过以下两种方法配置API：生成密钥对（私钥和公钥），或上传公钥。 在本例中，服务帐户凭据是通过上传公钥生成的。
 
 要生成服务帐户凭据和JWT有效负载，请执行以下操作：
 
-1. 使用系统管理员权限登录到Adobe开发人员控制台。 默认URL为 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. 使用系统管理员权限登录到Adobe Developer控制台。 默认URL为 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    确保您从下拉列表（组织）中选择了正确的IMS组织（股票权利）。
@@ -219,7 +219,7 @@ IMS 配置包括两个步骤：
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 单击“**[!UICONTROL 保存并关闭]**”。
 
    您的 [!DNL Experience Manager Assets] 创作实例现在与集成 [!DNL Adobe Stock]. 您可以创建多个 [!DNL Adobe Stock] 配置（例如，基于区域设置的配置）。 您现在可以访问、搜索和许可 [!DNL Adobe Stock] 资产 [!DNL Experience Manager] 用户界面。
 
@@ -266,7 +266,7 @@ IMS 配置包括两个步骤：
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. 选择 [!DNL Adobe Stock] 云配置，单击 **[!UICONTROL 属性]**.
 
-1. 将新创建的用户组添加到 [!DNL Adobe Stock] 配置。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 将新创建的用户组添加到 [!DNL Adobe Stock] 配置。 单击“**[!UICONTROL 保存并关闭]**”。
 
    ![分配用户](assets/aem-stock-adduser.png)
 

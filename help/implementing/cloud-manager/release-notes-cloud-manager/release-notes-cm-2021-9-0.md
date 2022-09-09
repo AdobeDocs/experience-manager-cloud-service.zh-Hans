@@ -15,7 +15,7 @@ ht-degree: 5%
 本页面概述了AEM 2021.9.0版中Cloud Manager的发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
 
 ## 发布日期 {#release-date}
 

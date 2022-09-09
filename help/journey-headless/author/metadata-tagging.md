@@ -44,7 +44,7 @@ ht-degree: 15%
 
 ## 其他资源 {#additional-resources}
 
-* [元数据 - 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [使用标记](/help/sites-cloud/authoring/features/tags.md)
 

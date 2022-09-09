@@ -1,11 +1,11 @@
 ---
-title: '创建沙盒程序 '
+title: 创建沙盒程序
 description: 了解如何使用Cloud Manager创建您自己的沙盒计划，以用于培训、演示、POC或其他非生产目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 按照以下步骤创建沙盒项目。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 从Cloud Manager的登陆页面，单击 **添加程序** 中。
 

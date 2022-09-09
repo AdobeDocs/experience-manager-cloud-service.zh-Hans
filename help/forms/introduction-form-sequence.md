@@ -1,6 +1,6 @@
 ---
 title: 如何创建多步表单序列？
-description: '使用 [!DNL Experience Manager Forms]，您可以为用户定义一系列表单面板以导航和填写自适应表单。 以用例方法为例，深入挖掘多步表单序列。 '
+description: 使用 [!DNL Experience Manager Forms]，您可以为用户定义一系列表单面板以导航和填写自适应表单。 以用例方法为例，深入挖掘多步表单序列。
 feature: Adaptive Forms
 role: User
 level: Intermediate

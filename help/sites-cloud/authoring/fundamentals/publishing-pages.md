@@ -3,7 +3,7 @@ title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1811'
 ht-degree: 100%
 
@@ -140,7 +140,6 @@ ht-degree: 100%
       >[!NOTE]
       >
       >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
-
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 单击&#x200B;**下一步**&#x200B;以继续。

@@ -3,7 +3,7 @@ title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 

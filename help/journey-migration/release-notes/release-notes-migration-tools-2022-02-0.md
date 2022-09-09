@@ -31,7 +31,7 @@ Best Practices Analyzer v2.1.24 的发布日期是 2022 年 2 月 1 日。
 * BPA 大小调整逻辑变得更快、更高效。
 * 在某些情况下，BPA 在运行时没有增加分析的计数。此问题已得到修复。
 
-## 内容传输工具 {#ctt-release}
+## 内容转移工具 {#ctt-release}
 
 ### 发布日期 {#release-date-ctt}
 

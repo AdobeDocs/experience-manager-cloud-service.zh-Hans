@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2021.1.0发行说明。”'
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -90,22 +90,22 @@ AEM 2021.1.0版中Cloud Manager的发布日期是2021年1月14日。
 
 * 服务器到服务器经过身份验证的API调用 — 生成相应的访问令牌，以便在外部应用程序和AEMas a Cloud Service环境之间进行经过身份验证的服务器到服务器API调用。 通过阅读了解更多信息 [文档](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 或通过咨询 [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
-### SDK内部版本分析程序 {#sdk-build-analyzers}
+### SDK 内部版本分析程序 {#sdk-build-analyzers}
 
-AEMas a Cloud ServiceSDK生成分析器Maven插件可检测Maven项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在本地开发过程中发现问题，而且在使用Cloud Manager部署到云环境之前就已经很早。
+AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在使用 Cloud Manager 部署到云环境之前，在本地开发期间发现问题。
 
 为此版本添加了两个新分析程序：
 
 * 重点分析仪
 * 束 — nativecode
 
-有关更多信息，请参阅此文档 [此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing).
+有关更多信息，请参阅此文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing)。
 
 ## 云过渡工具 {#code-transition-tools}
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具v1.2.2的发布日期是2021年2月1日。
+内容转移工具版本 1.2.2 的发布日期为 2021 年 2 月 01 日。
 
 ### [!DNL Content Transfer Tool] 的新增功能 {#what-is-new-ctt}
 

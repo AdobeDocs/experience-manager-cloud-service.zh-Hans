@@ -1,16 +1,16 @@
 ---
-title: '应用和取消应用IP允许列表 '
+title: 应用和取消应用 IP 允许列表
 description: 了解如何将IP允许列表应用和取消应用到环境。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# 应用和取消应用IP允许列表 {#apply-allow-list}
+# 应用和取消应用 IP 允许列表 {#apply-allow-list}
 
 应用IP允许列表时，列表定义中包含的所有IP范围都与环境中的创作或发布服务相关联。 取消应用列表与此过程完全相反。
 

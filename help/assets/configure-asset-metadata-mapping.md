@@ -1,7 +1,8 @@
 ---
 title: 配置Workfront和Experience Manager Assets之间的资产元数据映射
 description: 在Adobe Workfront和Experience Manageras a Cloud Service应用程序之间映射资产元数据字段。 由于映射元数据字段，因此在将资产从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资产元数据。
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -65,7 +66,7 @@ ht-degree: 0%
 
 1. 选择资产的目标文件夹，然后单击 **[!UICONTROL 选择文件夹]**.
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
 ## 在Experience Manageras a Cloud Service中配置资产元数据映射 {#metadata-mapping-aem}
 
@@ -127,6 +128,3 @@ ht-degree: 0%
 1. 选择目标文件夹 [图像从Adobe Workfront应用程序发送](#send-image-workfront-assets) 单击 **[!UICONTROL 应用]**.
 
 您可以导航到Experience Manager Assets中的图像，并查看与该图像关联的元数据。 选择图像并单击 **[!UICONTROL 属性]** 查看图像元数据。
-
-
-

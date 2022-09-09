@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 5%
    * AEMaCS创作简介
    * 内容片段简介
 
-## 基本操作 {#basic-handling}
+## 基本处理 {#basic-handling}
 
 在您了解内容片段之前，请先简要介绍如何使用AEM....但是，没有什么东西能真正取代登录和尝试使用系统的体验。
 
@@ -72,21 +72,21 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 ### 操作，选择，查看 {#actions-selecting-viewing}
 
-在 **内容片段** 控制台工具栏中为您的内容片段提供了一系列操作：
+在&#x200B;**内容片段**&#x200B;控制台工具栏中为您的内容片段提供了一系列操作：
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
 * **在资产中打开**
 * **创建**
-* 的 **引用者** 列还提供了显示该片段的所有父引用的直接链接；包括引用内容片段、体验片段和页面。
-* 将鼠标悬停在文件夹名称上将显示JCR路径。
+* **引用者**&#x200B;列还提供了显示该片段的所有父引用的直接链接；包括引用内容片段、体验片段和页面。
+* 将鼠标悬停在文件夹名称上将显示 JCR 路径。
 
 选择片段后，所有适当的操作均可用：
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
 * **打开**
-* **发布** (和 **取消发布**)
+* **发布**（和 **取消发布**）
 * **复制**
 * **移动**
 * **重命名**
@@ -94,7 +94,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 >[!NOTE]
 >
->“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。 可以通过AEM异步作业UI监控该作业的进度。
+>“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。 可以通过 AEM 异步作业 UI 监控该作业的进度。
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -168,7 +168,7 @@ You can view additional information about items using the Rail Selector. This al
 
 在 **内容片段** 您可以使用 **创建** 打开 **新内容片段** 对话框：
 
-![内容片段控制台 — 创建新片段](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+![内容片段控制台 – 创建新片段](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 指定：
 

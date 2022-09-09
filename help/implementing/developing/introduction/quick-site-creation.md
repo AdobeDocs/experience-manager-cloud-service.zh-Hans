@@ -5,7 +5,7 @@ exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 4%
 1. 安 **AEM网站主题** 包含在模板中，并包含用于定义网站样式的CSS、JavaScript和静态资源。
 1. 的 **前端管线** 可用于独立于后端开发来部署对网站主题的自定义设置。
 
-## 快速网站创建历程 {#quick-site-creation-journey}
+## 快速站点创建历程 {#quick-site-creation-journey}
 
 有关快速网站创建工具的工作原理以及如何使用这些强大工具立即部署和自定义您自己的网站的完整概述，请查看 [快速创建网站历程。](/help/journey-sites/quick-site/overview.md)
 

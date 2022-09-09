@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 Forms与AEM云服务之间的更改内容
-description: '您是Experience Manager Forms用户并且希望升级到Adobe Experience Manager Formsas a Cloud Service吗？ 了解在升级或迁移到Cloud Service之前最显着的更改。  '
+description: 您是Experience Manager Forms用户并且希望升级到Adobe Experience Manager Formsas a Cloud Service吗？ 了解在升级或迁移到Cloud Service之前最显着的更改。
 contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

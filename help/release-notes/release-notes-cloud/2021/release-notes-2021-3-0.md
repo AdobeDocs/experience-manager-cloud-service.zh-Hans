@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版的发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service2021.3.0发行说明。”'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -130,7 +130,7 @@ AEM 2021.3.0版中Cloud Manager的发布日期是2021年3月11日。
 
 * 所有现有的生产管道都将通过体验审核步骤自动启用。
 
-## 内容传输工具 {#content-transfer-tool}
+## 内容转移工具 {#content-transfer-tool}
 
 ### 发布日期 {#release-date-ctt}
 

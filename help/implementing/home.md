@@ -1,12 +1,12 @@
 ---
 title: 实施 Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service 实施自助资源和文档链接
-landing-page-description: '了解如何自定义 Experience Manager as a Cloud Service 部署。浏览 AEM Cloud Services 文档以开发和实施您的应用程序。 '
+landing-page-description: 了解如何自定义 Experience Manager as a Cloud Service 部署。浏览 AEM Cloud Services 文档以开发和实施您的应用程序。
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '413'
+ht-degree: 94%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 0%
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门培训历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
-| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作，以及如何管理 Experience Manager Sites as a Cloud Service。 |
+| [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作和管理。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [实施用户指南](/help/implementing/home.md) | 了解如何使用AEM的强大功能构建和自定义体验。 |
 | [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式历程，了解如何通过 AEM 强大而灵活的 Headless 特性构建自己的第一个 Headless 项目。 |
-| [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到云服务的历程。 |
+| [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到 Cloud Service 的历程。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
 | [Commerce 用户指南](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 上的 Commerce 集成框架。 |

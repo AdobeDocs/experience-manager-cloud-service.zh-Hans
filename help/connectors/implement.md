@@ -3,7 +3,7 @@ title: 实施 AEM 连接器
 description: 实施 AEM 连接器
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 100%
 

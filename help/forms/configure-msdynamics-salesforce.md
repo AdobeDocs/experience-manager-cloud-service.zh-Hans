@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# 配置[!DNL Microsoft Dynamics 365]和[!DNL Salesforce]云服务 {#configure-azure-storage}
+# 配置[!DNL Microsoft Dynamics 365]和 [!DNL Salesforce]Cloud Service {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 云服务，将自适应表单与开箱即用的表单数据模型相集成。 随后，自适应Forms可以与 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 服务器启用业务工作流。 例如：
 
@@ -82,7 +82,7 @@ A [!DNL Salesforce] “表单数据模型”在 [!DNL AEM Forms] 服务器 [基�
    1. 输入 **[!UICONTROL 服务根]** 字段。 转到Dynamics实例，然后导航到 [开发人员资源](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) 查看服务根字段的值。 例如，`https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 为连接的应用程序指定客户端ID（称为应用程序ID）和客户端密钥。
    1. 替换 `{tenant}` 的租户ID **[!UICONTROL OAuth URL]**, **[!UICONTROL 刷新令牌URL]**&#x200B;和 **[!UICONTROL 访问令牌URL]** 字段。
-   1. 在 **[!UICONTROL 资源]** 配置字段 [!UICONTROL Microsoft Dynamics] （包含表单数据模型）。 使用服务根URL派生Dynamics实例URL。 例如， `https://<tenant-name>.dynamics.com`.
+   1. 在 **[!UICONTROL 资源]** 配置字段 [!UICONTROL Microsoft Dynamics] （包含表单数据模型）。 使用服务根URL派生Dynamics实例URL。 例如：`https://<tenant-name>.dynamics.com`。
 
    1. 指定 `openid` 在 **[!UICONTROL 授权范围]** 上的授权过程字段 [!DNL Microsoft Dynamics 365].
    1. 使用 [!DNL Microsoft Dynamics 365] 凭据和接受，以允许云服务配置连接到 [!DNL Microsoft Dynamics 365] 服务。 如果连接成功，您将被重定向到 [!DNL Microsoft Dynamics 365] 云服务配置页面，此时会显示一条成功消息。

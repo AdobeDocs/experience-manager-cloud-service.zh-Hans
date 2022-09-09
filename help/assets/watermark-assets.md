@@ -28,7 +28,7 @@ ht-degree: 2%
 
 1. 在 **[!UICONTROL 缩放]** 字段。
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
    ![资源重复检测器](assets/system-watermarking-profile.png)
 

@@ -1,5 +1,5 @@
 ---
-title: AEM用户任务
+title: AEM 用户任务
 description: 系统管理员设置必要的云资源后，了解AEM用户如何能够访问AEMas a Cloud Service以创作内容。
 feature: Onboarding
 role: Admin, User, Developer
@@ -7,12 +7,12 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# AEM用户任务 {#aem-user-tasks}
+# AEM 用户任务 {#aem-user-tasks}
 
 在 [入门历程，](overview.md) 您将了解AEM用户如何访问AEMas a Cloud Service以创作内容。
 

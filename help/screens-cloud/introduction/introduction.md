@@ -5,15 +5,15 @@ exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 # AEM Screensas a Cloud Service简介 {#introduction-screens-cloud}
 
-借助AEM Screensas a Cloud Service，您可以创建引人入胜的动态数字标牌体验，以便在公共空间中使用。 这是AEM Screens产品的下一个发展，在可用性和可扩展性方面实现了重大飞跃。
+借助 AEM Screens as a Cloud Service，您可以创建旨在公共场所使用的引人入胜的动态数字标牌体验。这是AEM Screens产品的下一个发展，在可用性和可扩展性方面实现了重大飞跃。
 
-AEM Screensas a Cloud Service是一款数字标牌解决方案，允许营销人员大规模创建和管理动态数字体验。 此外，它还涉及不同类型的物理屏幕，作为全面数字营销策略的一部分。 它将Adobe的全渠道产品扩展到了通常的Web和移动渠道之外，还包括我们周围的数字标牌渠道。 AEM Screensas a Cloud Service通过深入了解内容创建、内容汇编、触发式事件管理以及任何公共空间中所有消费者和访客的媒体播放，提供了更相关、更符合情境、更高效且可预期的用户体验。
+AEM Screens as a Cloud Service 是一种数字标牌解决方案，允许营销人员大规模创建和管理动态数字体验。此外，它还涉及不同类型的物理屏幕，作为全面数字营销策略的一部分。 它将Adobe的全渠道产品扩展到了通常的Web和移动渠道之外，还包括我们周围的数字标牌渠道。 AEM Screensas a Cloud Service通过深入了解内容创建、内容汇编、触发式事件管理以及任何公共空间中所有消费者和访客的媒体播放，提供了更相关、更符合情境、更高效且可预期的用户体验。
 
 ## 了解Screens中的组件as a Cloud Service {#understanding-components}
 

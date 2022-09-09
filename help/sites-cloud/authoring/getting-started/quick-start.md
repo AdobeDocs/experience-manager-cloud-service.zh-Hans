@@ -3,7 +3,7 @@ title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 

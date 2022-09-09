@@ -7,13 +7,13 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
 source-wordcount: '1183'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 # 将自适应表单与Microsoft®电源自动连接 {#connect-adaptive-form-with-power-automate}
 
-您可以配置自适应表单以在提交时运行Microsoft® Power自动云流。 配置的自适应表单会发送捕获的数据、附件和记录文档，以增强云流自动化以进行处理。 它可帮助您构建自定义数据捕获体验，同时利用Microsoft® Power Automate的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。 以下是将自适应表单与Microsoft®电源自动化集成后可以执行的操作的一些示例：
+您可以配置自适应表单以在提交时运行Microsoft® Power自动云流。 配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automation Cloud Flow 进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。以下是将自适应表单与Microsoft®电源自动化集成后可以执行的操作的一些示例：
 
 * 在强大的自动化业务流程中使用自适应Forms数据
 * 使用自动化功能将捕获的数据发送到500多个数据源或任何公开可用的API

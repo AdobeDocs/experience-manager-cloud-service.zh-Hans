@@ -1,5 +1,5 @@
 ---
-title: 'AEM 项目存储库结构包  '
+title: AEM 项目存储库结构包
 description: Adobe Experience Manager as a Cloud Service Maven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341

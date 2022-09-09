@@ -1,15 +1,15 @@
 ---
-title: AEMas a Cloud Service术语
+title: AEM as a Cloud Service 术语
 description: 在登录AEMaCS之前，了解系统的一些术语及其基本结构会有所帮助。
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
-
-# AEMas a Cloud Service术语 {#terminology}
+# AEM as a Cloud Service 术语 {#terminology}
 
 在 [入门历程，](overview.md) 您将学习AEM as a Cloud Service的一些术语及其基本结构。
 
