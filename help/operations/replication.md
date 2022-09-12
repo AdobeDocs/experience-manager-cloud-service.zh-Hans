@@ -2,10 +2,10 @@
 title: 复制
 description: 分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
+source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe Experience Manager as a Cloud Service 使用 [Sling 内容分发](https://
 * `enableVersion`（布尔值，默认： `true`）。 此参数可确定复制时是否创建了新版本。
 * `agentId`（字符串值，默认表示仅使用发布代理）。 建议明确说明 agentId；例如，将其设置为值：发布。 将代理设置为 `preview` 将发布到预览服务
 * `filters`（字符串值，默认表示激活所有路径）。 可用值包括：
-   * `onlyActivated`  – 将只激活未标记为已激活的路径。
+   * `onlyActivated`  — 将仅激活标记为已激活的路径。
    * `onlyModified`  – 仅激活已激活且修改日期晚于激活日期的路径。
    * 上面可以用管道字符“|”进行“或”操作。 例如：`onlyActivated|onlyModified`。
 
