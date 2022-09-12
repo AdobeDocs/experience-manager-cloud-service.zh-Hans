@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
+source-git-commit: 4f6901de479086ac40471885292ae82824516bd1
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1189'
 ht-degree: 3%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 3%
 >Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
 -->
 
-无法下载资产类型图像集、旋转集、混合媒体集和轮播集。
+无法下载以下资产类型：图像集、旋转集、混合媒体集和轮播集。
 
-您可以使用以下方法下载Experience Manager资产：
+您可以使用以下方法从Experience Manager下载资产：
 
 <!-- * [Link Share](#link-share-download) -->
 
@@ -35,9 +35,9 @@ ht-degree: 3%
 
 ## 使用下载资产 [!DNL Experience Manager] 界面 {#download-assets}
 
-异步下载服务为无缝下载大型资产提供了一个框架。 大于100 GB的下载存档将拆分为多个zip存档，每个存档的最大大小为100 GB。 可以单独下载这些内容。 从用户界面实时下载较小的文件。 [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。 此功能可加快下载速度。
+Experience Manager会根据资产数量和大小优化下载体验。 从用户界面实时下载较小的文件。 [!DNL Experience Manager] 直接下载原始文件的单个资产请求，而不是将单个资产封装在ZIP存档中，以便加快下载速度。 Experience Manager支持使用异步请求进行大量下载。 大于100 GB的下载请求将拆分为多个ZIP存档，每个最大大小为100 GB。
 
-默认情况下， [!DNL Experience Manager] 完成下载工作流后会触发通知。 下载通知将显示在  [[!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md).
+默认情况下， [!DNL Experience Manager] 在 [[!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md) 生成下载存档时。
 
 ![收件箱通知](assets/inbox-notification-for-large-downloads.png)
 
@@ -50,14 +50,14 @@ ht-degree: 3%
 * 如果下载大小超过100 MB
 * 如果下载需要超过30秒才能准备
 
-当异步下载在后端运行时，用户可以继续浏览并在Experience Manager中进一步工作。 下载过程完成后，需要一个现成的机制通知用户。 要实现此目标，管理员可以通过设置SMTP服务器来配置电子邮件服务。 请参阅 [配置邮件服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+当异步下载在后端运行时，用户可以继续浏览并在Experience Manager中进一步工作。 除了Experience Manager收件箱通知之外，Experience Manager还可以发送电子邮件，以在下载过程完成后通知用户。 要启用此功能，管理员可以通过 [配置SMTP服务器连接](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 配置电子邮件服务后，管理员和用户可以从Experience Manager界面启用电子邮件通知。
 
 要启用电子邮件通知，请执行以下操作：
 
 1. 登录到 [!DNL Experience Manager Assets].
-1. 单击右上角的用户图标，然后单击 **[!UICONTROL 我的首选项]**. 将打开“用户首选项”窗口。
+1. 单击右上角的用户图标，然后单击 **[!UICONTROL 我的首选项]** 打开“用户首选项”窗口。
 1. 选择 **[!UICONTROL 资产下载电子邮件通知]** 复选框，单击 **[!UICONTROL 接受]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
@@ -74,16 +74,16 @@ ht-degree: 3%
 
    | 下载选项 | 描述 |
    |---|---|
-   | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可将您下载的每个资产（包括嵌套在资产父文件夹下的子文件夹中的资产）包含到本地计算机上的一个文件夹中。 当此选项为 *not* 默认情况下，选择文件夹层次结构将被忽略，所有资产都会下载到本地计算机的一个文件夹中。 |
+   | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可为每个资产创建一个文件夹，其中包含该资产的所有下载演绎版。 如果未选择，则每个资产(及其演绎版（如果已选择下载）)都将包含在生成的存档的父文件夹中。 |
    | **[!UICONTROL 电子邮件]** | 选择此选项可向其他用户发送电子邮件通知（包含到您下载的链接）。 收件人用户必须是 `dam-users` 群组。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 在部署过程中自定义的模板可在以下位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
-   | **[!UICONTROL 资产]** | 选择此选项可下载其原始形式的资产，而不包含任何演绎版。<br>如果原始资产具有子资产，则子资产选项可用。 |
+   | **[!UICONTROL 资产]** | 选择此选项可下载原始形式的资产。<br>如果原始资产具有子资产，则子资产选项可用。 |
    | **[!UICONTROL 演绎版]** | 演绎版是资产的二进制表示形式。资产具有主要表示形式 — 上传文件的表示形式。 它们可以有任意数量的表示形式。 <br> 通过此选项，您可以选择要下载的演绎版。 可用的演绎版取决于您选择的资产。 |
    | **[!UICONTROL 智能裁剪]** | 选择此选项可从以下位置下载选定资产的所有智能裁剪演绎版 [!DNL Experience Manager]. 系统会创建一个包含智能裁剪呈现版本的zip文件，并将其下载到您的本地计算机。 |
    | **[!UICONTROL 动态演绎版]** | 选择此选项可实时生成一系列替代演绎版。 当您选择此选项时，您还可以通过从 [图像预设](/help/assets/dynamic-media/image-presets.md) 列表。 <br>此外，您还可以选择大小和单位、格式、色彩空间、分辨率以及任何可选的图像修饰符（如反转图像）。 仅当您具有 [!DNL Dynamic Media] 已启用。 |
 
 1. 在对话框中，单击 **[!UICONTROL 下载]**.
 
-   如果为大型下载启用了电子邮件通知，则您的收件箱中会显示一封包含已存档zip文件夹下载URL的电子邮件。 单击电子邮件中的下载链接以下载zip文件夹。
+   如果为大型下载启用了电子邮件通知，则您的收件箱中会显示一封包含已存档zip文件夹下载URL的电子邮件。 单击电子邮件中的下载链接以下载zip存档。
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -95,7 +95,7 @@ ht-degree: 3%
 
 使用链接共享资产是一种非常方便的方式，可让感兴趣的人无需登录即可使用该链接 [!DNL Assets]. 请参阅 [链接共享功能](/help/assets/share-assets.md#sharelink).
 
-当用户从共享链接下载资产时， [!DNL Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于非常大的下载，下载内容将分块为大小为100 GB的文件。
+当用户从共享链接下载资产时， [!DNL Assets] 使用异步服务，可提供更快、不间断的下载。 要下载的资产将在后台的收件箱中排入可管理文件大小的ZIP存档。 对于较大的下载，下载内容会分块为100 GB的文件。
 
 的 [!UICONTROL 下载收件箱] 显示每个存档的处理状态。 处理完成后，您可以从收件箱中下载存档。
 
@@ -103,7 +103,7 @@ ht-degree: 3%
 
 ## 启用资产下载Servlet {#enable-asset-download-servlet}
 
-中的默认Servlet [!DNL Experience Manager] 允许经过身份验证的用户发出任意大小的并发下载请求，以创建资产的ZIP文件。 下载准备可能会影响性能，甚至可能会使服务器和网络过载。 要降低此功能所导致的类似DoS的潜在风险， `AssetDownloadServlet` 对于发布实例，OSGi组件处于禁用状态。 如果不需要在创作实例上下载功能，请在创作时禁用Servlet。
+中的默认Servlet [!DNL Experience Manager] 允许经过身份验证的用户发出任意大的并发下载请求，以创建资产的ZIP文件。 下载准备可能会影响性能，甚至可能会使服务器和网络过载。 要降低此功能所导致的类似DoS的潜在风险， `AssetDownloadServlet` 对于发布实例，OSGi组件处于禁用状态。 如果不需要在创作实例上下载功能，请在创作时禁用Servlet。
 
 要允许从DAM下载资产，例如，在使用资产共享共用或其他类似门户的实施时，通过OSGi配置手动启用Servlet。 Adobe建议将允许的下载大小设置得尽可能低，而不影响日常下载要求。 高值可能会影响性能。
 
@@ -112,7 +112,7 @@ ht-degree: 3%
    `/apps/<your-app-name>/config.publish`
 
 1. 在配置文件夹中，创建一个类型为 `nt:file` 已命名 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. 填充 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 以下内容。 将下载的最大大小（以字节为单位）设置为值 `asset.download.prezip.maxcontentsize`. 以下示例将ZIP下载的最大大小配置为不超过100千字节。
+1. 填充 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 以下内容。 将下载的最大大小（以字节为单位）设置为值 `asset.download.prezip.maxcontentsize`. 以下示例将ZIP下载的最大大小配置为不超过100 KB。
 
    ```java
    enabled=B"true"
