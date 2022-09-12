@@ -2,9 +2,9 @@
 title: 如何在Forms页面上创建Experience Manager Sites门户
 description: 了解如何在Forms页面上创建AEM Sites门户并使用现成的核心组件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1764'
 ht-degree: 1%
 
 ---
@@ -59,9 +59,7 @@ AEM Forms开箱即用地提供以下门户组件：
 
    此外，更改 `appTitle`, `appId`和 `groupId`，以反映您的环境。
 
-1. **在预发行版本中，执行以下步骤以使用Forms Portal组件：**
-   * [启用预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
-   * 替换 `core-forms-components-*` 的预发行版本(例如，1.0.4-PRERELEASE-20211223) `Cloud Manager/AEM Archetype` 通过更新项目 `<core.forms.components.version>x.y.z</core.forms.components.version>` 顶级属性 `pom.xml` 原型项目。
+   项目准备就绪后，更新 `<core.forms.components.version>x.y.z</core.forms.components.version>` 顶级属性 `pom.xml` 来反映最新版本的 [核心表单组件](https://github.com/adobe/aem-core-forms-components) 在 `AEM Archetype` 项目。
 
 1. **将项目部署到本地开发环境：** 您可以使用以下命令部署到本地开发环境
 
