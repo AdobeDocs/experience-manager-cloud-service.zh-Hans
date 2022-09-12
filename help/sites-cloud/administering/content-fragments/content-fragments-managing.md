@@ -239,8 +239,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 发布和引用片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
-如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
+>如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+>如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
 必须发布内容片段才能在发布环境中使用。 可使用标准资产功能完成此操作
 
@@ -258,17 +258,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 此外，当您[发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段将在页面引用中列出。
 
 >[!CAUTION]
-片段发布和/或引用后，当作者再次打开片段进行编辑时，AEM 将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
+>片段发布和/或引用后，当作者再次打开片段进行编辑时，AEM 将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
 
 ## 取消发布片段 {#unpublishing-a-fragment}
 
 要取消发布内容片段，请选择一个或多个片段，然后&#x200B;**取消发布**。
 
 >[!NOTE]
-在可用已发布的片段时，**取消发布**&#x200B;操作将可见。
+>在可用已发布的片段时，**取消发布**&#x200B;操作将可见。
 
 >[!CAUTION]
-如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
+>如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
 
 ## 删除片段 {#deleting-a-fragment}
 
@@ -278,13 +278,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 选择片段。
 
    >[!NOTE]
-   **删除**&#x200B;操作不能作为快速操作使用。
+   >**删除**&#x200B;操作不能作为快速操作使用。
 
 3. 从工具栏中选择&#x200B;**删除**。
 4. 确认&#x200B;**删除**&#x200B;操作。
 
    >[!CAUTION]
-   如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。 片段及其内容片段组件将从任何内容页面中删除。
+   >如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。 片段及其内容片段组件将从任何内容页面中删除。
 
 ## 查找片段的父引用 {#parent-references-fragment}
 
@@ -297,7 +297,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 内容片段的时间线 {#timeline-for-content-fragments}
 
 >[!NOTE]
-此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+>此功能仅在&#x200B;**资产**&#x200B;控制台中可用
 
 除了标准选项外，[时间线](/help/assets/manage-digital-assets.md#timeline)提供特定于内容片段的信息和操作：
 
@@ -317,14 +317,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **删除**
 
 >[!NOTE]
-评论包括：
-* 所有资产的标准功能
-* 在时间线中制造
-* 与片段资产相关
->
-注释（适用于内容片段）包括：
-* 在片段编辑器中输入
-* 特定于片段中选定的文本区段
+>评论包括：
+>* 所有资产的标准功能
+>* 在时间线中制造
+>* 与片段资产相关
+>注释（适用于内容片段）包括：
+>* 在片段编辑器中输入
+>* 特定于片段中选定的文本区段
 >
 
 
@@ -335,7 +334,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 比较片段版本 {#comparing-fragment-versions}
 
 >[!NOTE]
-此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+>此功能仅在&#x200B;**资产**&#x200B;控制台中可用
 
 选择特定版本后，[时间线](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中的&#x200B;**与当前比较**&#x200B;操作可用。
 
@@ -358,14 +357,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * **完成**&#x200B;将返回控制台
 
 >[!NOTE]
-比较片段时无法编辑片段内容。
+>比较片段时无法编辑片段内容。
 
 ![比较](assets/cfm-managing-06.png)
 
 ## 恢复到某个版本  {#reverting-to-a-version}
 
 >[!NOTE]
-此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+>此功能仅在&#x200B;**资产**&#x200B;控制台中可用
 
 您可以还原到片段的特定版本：
 
