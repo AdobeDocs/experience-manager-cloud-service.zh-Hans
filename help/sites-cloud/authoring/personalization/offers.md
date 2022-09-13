@@ -2,10 +2,10 @@
 title: 创建和管理选件（“选件”控制台）
 description: 使用“选件”控制台，可创建您可以在活动体验中使用的选件
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 67%
+source-wordcount: '1393'
+ht-degree: 63%
 
 ---
 
@@ -88,6 +88,23 @@ A **转换为体验片段变量** 选项和工作流已实施，以帮助您将�
 1. 使用确认 **完成**.
 
    如果您现在导航到 **体验片段选件** 控制台中，您将看到新体验片段及其关联的变量。
+
+### 使用选件模板进行定位 {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>此选项仅适用于具有预先存在的旧版选件的客户。
+>
+>与 **选件** 控制台将不再可用：
+>
+>* 将最后一个旧版选件转换为体验片段后
+>* 弃用旧版选件时（将来）
+>
+>因此，建议使用体验片段，而不是此选项。
+
+对于已预先存在旧版选件的客户， **使用选件模板** 定位组件时，选项将可见 **not** 体验片段：
+
+![“转换为体验片段变量”对话框](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## 选件控制台 {#offers-console}
 
