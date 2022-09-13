@@ -2,10 +2,10 @@
 title: 个性化和内容定位
 description: 了解 AEM 如何创建个性化内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,11 @@ AEM 为创作目标内容和呈现个性化体验提供了一个工具框架。
 
 例如，示例网站的女性页面可以使用选件作为在页面顶部显示的 Teaser 图像。对于 30 岁以上的女性体验和 30 岁以下的女性体验，将使用不同的选件作为 Teaser。
 
-使用[“选件”控制台](/help/sites-cloud/authoring/personalization/offers.md)，可创建您可以在多个体验中使用的选件。[创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)时，可创建单次使用选件或添加选件库中的选件。
+使用 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 以创建可在多个体验中使用的选件。 [创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)时，可创建单次使用选件或添加选件库中的选件。
+
+<!--
+Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
+-->
 
 ## 定位引擎 {#targeting-engine}
 
