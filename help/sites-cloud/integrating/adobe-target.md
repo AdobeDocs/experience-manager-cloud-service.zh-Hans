@@ -2,10 +2,10 @@
 title: 与 Adobe Target 集成
 description: 与 Adobe Target 集成
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: e6fc31a5c4b3bb62f7d6e639eae7e1f222b2f5ed
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -72,8 +72,8 @@ ht-degree: 100%
 将 AEM as a Cloud Service 与 Adobe Target 集成需要了解 Adobe Target、AEM Activities 管理和 AEM Audiences 管理。您应熟悉以下信息：
 
 * Adobe Target（请参阅 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/target-home.html)）。
-* AEM Activities 控制台（请参阅[管理活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)）。
-* AEM Audiences（请参阅[管理受众](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)）。
+* AEM活动控制台(请参阅 [管理活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html))。
+* AEM受众(请参阅 [管理受众](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html))。
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3333'
 ht-degree: 10%
 
 ---
@@ -84,6 +84,10 @@ ht-degree: 10%
 ### 智能裁切和颜色色板支持的图像文件格式
 
 支持的最大输入文件大小分辨率为16K。
+
+>[!NOTE]
+>
+>16K分辨率是水平大约16,000像素的显示分辨率。 最常讨论的16K分辨率是15360 × 8640，每个维度中8K UHD的像素计数翻倍，总像素数是原来的4倍。 此分辨率为13270万像素，是4K分辨率的16倍，是1080p分辨率的64倍。
 
 | 图像格式 | 文件扩展名不区分大小写 | MIME类型 | 支持的输入色彩空间 | 支持的最大输入文件大小 | 是否支持图像格式？ |
 | --- | --- | --- | --- | --- | --- |
