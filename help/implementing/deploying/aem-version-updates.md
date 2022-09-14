@@ -3,10 +3,10 @@ title: AEM 版本更新
 description: AEM 版本更新
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 37%
+source-wordcount: '399'
+ht-degree: 36%
 
 ---
 
@@ -39,7 +39,7 @@ AEM更新通过一个涉及多个步骤且完全自动化的产品验证管道�
 
 >[!NOTE]
 >
->如果自定义代码被推送到暂存环境，然后被您拒绝，则下次AEM更新将删除这些更改，以将上次成功客户版本的git标记反映到生产环境中。
+>如果将自定义代码推送到暂存环境，而不是生产环境，则下次AEM更新将删除这些更改，以反映上次成功将客户版本的git标记推送到生产环境。 因此，必须再次部署仅在暂存环境中可用的自定义代码。
 
 ## 复合节点存储 {#composite-node-store}
 
