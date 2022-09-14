@@ -2,9 +2,9 @@
 title: 将体验片段导出到 Adobe Target
 description: 将体验片段导出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2249'
 ht-degree: 100%
 
 ---
@@ -209,6 +209,7 @@ ht-degree: 100%
       >* 提高了安全性
       >* 改善了针对单页应用程序的实施选项
       >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
+
       >
       >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 
@@ -227,8 +228,6 @@ ht-degree: 100%
       >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。您必须直接对这些组件进行任何更改。
 
 1. 单击&#x200B;**连接到 Adobe Target** 可初始化与 Target 的连接。如果连接成功，则将显示消息&#x200B;**连接成功**。单击消息上的&#x200B;**确定**，然后单击对话框上的&#x200B;**确定**。
-
-   如果无法连接到 Target，请参阅[疑难解答](#troubleshooting-target-connection-problems)部分。
 
 ### 添加 Target 框架 {#adding-a-target-framework}
 
@@ -311,17 +310,6 @@ When you associate a page with the framework, the child pages inherit the associ
    >[!NOTE]
    >
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
--->
-
-<!--
-### Troubleshooting Target Connection Problems {#troubleshooting-target-connection-problems}
-
-Perform the following tasks to troubleshoot problems that occur when connecting to Target:
-
-* Make sure that the user credentials that you provide are correct.
-* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
-* Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
-* When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 -->
 
 ## 将体验片段导出到 Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
