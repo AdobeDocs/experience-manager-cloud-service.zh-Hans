@@ -2,10 +2,10 @@
 title: 使用带有 GraphQL 的内容片段的 Headless 内容投放
 description: 了解使用 GraphQL 中的内容片段实现 AEM Headless CMS 以进行 headless 内容投放的基本概念。
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +31,11 @@ ht-degree: 100%
 >* [AEM Commerce 通过 GraphQL 使用来自 Commerce 平台的数据](/help/commerce-cloud/integrating/magento.md)。
 >* [AEM 内容片段与 AEM GraphQL API（一种自定义实现，基于标准 GraphQL）配合使用，提供结构化内容用于您的应用程序](/help/headless/graphql-api/content-fragments.md)。
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="使用GraphQL API提取内容"
+>abstract="在本模块中，您将了解如何将内容片段和GraphQL API用作无头内容管理系统。"
 
 ## Headless CMS {#headless-cms}
 
