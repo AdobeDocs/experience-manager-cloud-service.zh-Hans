@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供客户端库文件夹，利用该文件夹可将客户端代码(clientlibs)存储在存储库中，将其整理为各个类别，并定义何时以及如何将每个类别的代码提供给客户端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -211,7 +211,7 @@ AEM中的客户端库文件夹还支持许多其他功能。 但是，AEMas a Cl
 
 #### 特定于应用程序的客户端库文件夹 {#app-specific-client-library-folders}
 
-最佳做法是将所有与应用程序相关的文件保留在其应用程序文件夹下 `/app`. 此外，最好还是拒绝网站访客访问 `/app` 文件夹。 要满足这两个最佳实践，请在 `/etc` 嵌入下面客户端库的文件夹 `/app`.
+最佳做法是将所有与应用程序相关的文件保留在其/apps下的应用程序文件夹中。 拒绝网站访客访问/apps文件夹的最佳做法是。 要满足这两个最佳实践，请在/etc文件夹下创建一个客户端库文件夹，该文件夹嵌入位于/apps下的客户端库。
 
 使用类别属性标识要嵌入的客户端库文件夹。 要嵌入库，请向嵌入中添加资产 `cq:ClientLibraryFolder` 节点，使用以下属性属性：
 
