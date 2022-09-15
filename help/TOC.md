@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述、自
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b423aaad1857e8b8016b4d61fe71360ead88c65f
+source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
 workflow-type: tm+mt
-source-wordcount: '3723'
+source-wordcount: '3726'
 ht-degree: 99%
 
 ---
@@ -104,6 +104,7 @@ ht-degree: 99%
    + 迁移工具的发行说明{#migration-tools}
       + [最新发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022年 {#2022}
+         + [2022.7.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [2022.5.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [2022.4.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
          + [2022.3.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
