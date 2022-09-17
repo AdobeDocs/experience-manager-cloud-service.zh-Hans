@@ -2,9 +2,9 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
+source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,24 @@ ht-degree: 2%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.2( [!DNL Workfront for Experience Manager enhanced connector] 是2022年8月03日。
+最新版本1.9.3( [!DNL Workfront for Experience Manager enhanced connector] 是2022年9月16日。
 
 ## 发行亮点 {#release-highlights}
 
 的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下增强功能和错误修复：
 
-* 的 **[!UICONTROL 上载文档]** 工作流步骤无法将文档附加到Workfront。
+* 无法上载大小超过8 GB的文件。
+* 自动发布从Workfront发送到AEM的资产时出现问题。
+* 编辑默认元数据架构表单时，根路径字段不可用于标记字段。
+* 使用AEM工作流在Workfront中添加新版本时出现问题
+* 在您搜索Workfront中可用的资产时，AEM会显示一条错误消息。
+* 当您为从资产创建任务创建AEM工作流，但未定义父任务名称时，不会在Workfront中创建任务。
 
-* 的 **[!UICONTROL 上载文档]** 工作流步骤无法将文档附加到Workfront中的任务和问题。 工作流步骤可成功将文档附加到项目。
+
 
 >[!IMPORTANT]
 >
->Adobe建议您 [升级到最新的1.9.2版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建议您 [升级到最新的1.9.3版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知问题 {#known-issues}
 
@@ -35,7 +40,17 @@ ht-degree: 2%
 
 * 当您使用经典Workfront体验时， **[!UICONTROL 发送到]** 选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 的 **[!UICONTROL 发送到]** 选项可使用 **[!UICONTROL 文档操作]** 下拉列表。 的 **[!UICONTROL 发送到]** 选项可正确用于 **[!UICONTROL 更多]** 下拉列表以及 **[!UICONTROL 文档操作]** 新Workfront体验中提供的下拉列表。
 
+* Workfront显示 `SERVER_ERROR` 将文档链接到AEM时，会显示消息。 要解决此问题，请分配 `rep:readProperties` to `content/dam/collections` 表示 `wf-workfront-user` AEM用户组。
+
 ## 以前版本 {#previous-releases}
+
+### 2022年8月版 {#august-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 版本1.9.2（于2003年8月发布）包含以下更新：
+
+* 的 **[!UICONTROL 上载文档]** 工作流步骤无法将文档附加到Workfront。
+
+* 的 **[!UICONTROL 上载文档]** 工作流步骤无法将文档附加到Workfront中的任务和问题。 工作流步骤可成功将文档附加到项目。
 
 ### 2022年7月版 {#july-2022-release}
 
