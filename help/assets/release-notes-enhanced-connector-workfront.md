@@ -2,7 +2,7 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 * 无法上载大小超过8 GB的文件。
 * 自动发布从Workfront发送到AEM的资产时出现问题。
 * 编辑默认元数据架构表单时，根路径字段不可用于标记字段。
-* 使用AEM工作流在Workfront中添加新版本时出现问题
+* 使用AEM工作流在Workfront中添加新版本时出现问题。
 * 在您搜索Workfront中可用的资产时，AEM会显示一条错误消息。
 * 当您为从资产创建任务创建AEM工作流，但未定义父任务名称时，不会在Workfront中创建任务。
 
