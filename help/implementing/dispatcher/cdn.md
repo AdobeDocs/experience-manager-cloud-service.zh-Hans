@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1093'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,10 @@ AEM Managed CDN会通过以下方式向每个请求添加标头：
 
 * 国家/地区代码： `x-aem-client-country`
 * 大陆代码： `x-aem-client-continent`
+
+>[!NOTE]
+>
+>对于客户管理的CDN，这些标头将反映客户CDN代理服务器的位置，而不是实际的客户端。  因此，对于客户管理的CDN，地理位置标头应由客户CDN管理。
 
 国家/地区代码的值是所述的Alpha-2代码 [此处](https://en.wikipedia.org/wiki/ISO_3166-1).
 
