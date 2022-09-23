@@ -4,10 +4,10 @@ description: 使用Dispatcher工具验证和调试（旧版）
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -308,6 +308,10 @@ Apache虚拟主机配置中有两种类型的文件可指定为：重写和变�
 |-----------|---------------------------------|
 | 重写 | `conf.d/rewrites/rewrite.rules` |
 | 变量 | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>要以更少的限制方式包含更多文件，您可能需要切换到灵活的调度程序配置模式。 请查看文档 [使用Dispatcher工具验证和调试](/help/implementing/dispatcher/validation-debug.md) 有关灵活模式的更多详细信息。
 
 或者，您也可以将 **默认** 重写规则的版本，其名称为 `conf.d/rewrites/default_rewrite.rules`.
 请注意，变量文件没有默认版本。

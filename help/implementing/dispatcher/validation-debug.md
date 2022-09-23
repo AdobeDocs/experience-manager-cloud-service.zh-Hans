@@ -3,10 +3,10 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -312,13 +312,26 @@ Phase 3 finished
 
 **包含的文件(...)与任何已知文件都不匹配**
 
-Apache虚拟主机配置中有两种类型的文件可指定为：重写和变量。
-所包含的文件需要命名如下：
+默认情况下，Apache虚拟主机配置中的两种类型的文件可以指定为包括：重写和变量。
 
 | 类型 | 包含文件名 |
 |-----------|---------------------------------|
 | 重写 | `conf.d/rewrites/rewrite.rules` |
 | 变量 | `conf.d/variables/custom.vars` |
+
+在灵活模式下，也可以包含其他文件，只要它们位于的子目录（任何级别的）中 `conf.d` 目录前缀如下。
+
+| 包含文件上目录前缀 |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+例如，您可以在下新建的某些目录中包含文件 `conf.d/includes` 目录，如下所示：
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 或者，您也可以将 **默认** 重写规则的版本，其名称为 `conf.d/rewrites/default_rewrite.rules`.
 请注意，变量文件没有默认版本。
