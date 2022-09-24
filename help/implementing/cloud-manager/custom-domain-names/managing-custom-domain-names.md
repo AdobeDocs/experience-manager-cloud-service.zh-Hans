@@ -2,7 +2,7 @@
 title: 管理自定义域名
 description: 了解如何使用Cloud Manager查看、更新、替换和删除自定义域名。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: 955f4bb55434eeb1a429a1972714b71c5370de1e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 5%
@@ -35,7 +35,7 @@ Cloud Manager允许您查看、更新、替换和删除自定义域名。
 >
 >SSL证书必须有效， [已配置，](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 和包含您正在更新的自定义域名。
 
-##  删除自定义域名 {#deleting}
+## 删除自定义域名 {#deleting}
 
 具有 **业务所有者** 或 **部署管理器** 角色可以使用Cloud Manager删除自定义域名。
 
