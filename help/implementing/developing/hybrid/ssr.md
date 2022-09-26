@@ -2,9 +2,9 @@
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加快页面的初始加载速度，然后将进一步的渲染传递到客户端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
+source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ SSR通常在以下任一问题出现明确的“是”时提供一些值：
 * **SEO:** 网站是否仍需要SSR才能被带来流量的搜索引擎正确索引？ 请记住，主搜索引擎爬取程序现在会评估JS。
 * **页面速度：** SSR是否在现实环境中提供了可衡量的速度提升，并且增加了整体用户体验？
 
-只有在对您的项目至少回答了这两个问题中的一个并明确给出“是”时，Adobe才建议实施SSR。 以下各节介绍如何使用Adobe I/O Runtime实现此目的。
+只有在对您的项目至少回答了这两个问题中的一个并明确给出“是”时，Adobe才建议实施SSR。 以下各节介绍如何使用Adobe I/O Runtime( [应用程序生成器](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
@@ -34,8 +34,9 @@ SSR通常在以下任一问题出现明确的“是”时提供一些值：
 
 有关Adobe I/O Runtime的更多信息，请参阅
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html)  — 服务概述
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html)  — 有关平台的详细文档
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime)  — 有关App Builder运行时功能的概述
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder)  — 有关App Builder完整产品的详细信息
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs)  — 详细文档
 
 以下各节详细介绍了如何在两种不同的模型中使用Adobe I/O Runtime来为SPA实施SSR:
 
@@ -44,7 +45,7 @@ SSR通常在以下任一问题出现明确的“是”时提供一些值：
 
 >[!NOTE]
 >
->Adobe建议每个环境（暂存、生产、测试等）单独使用Adobe I/O Runtime工作区。 这允许使用典型的系统开发生命周期(SDLC)模式，将单个应用程序的不同版本部署到不同的环境。 查看文档 [用于项目Firefly应用的CI/CD](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) 以了解更多信息。
+>Adobe建议每个环境（暂存、生产、测试等）单独使用Adobe I/O Runtime工作区。 这允许使用典型的系统开发生命周期(SDLC)模式，将单个应用程序的不同版本部署到不同的环境。  查看文档 [适用于应用程序生成器应用程序的CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 以了解更多信息。
 >
 >除非每个实例类型的运行时实施存在差异，否则不需要每个实例（创作、发布）单独的工作区。
 
