@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 99%
+source-wordcount: '3053'
+ht-degree: 98%
 
 ---
 
@@ -335,7 +335,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 旧版专用出口地址客户 {#legacy-dedicated-egress-address-customers}
 
-如果在 2021 年 9 月 30 日之前已为您配置了专用出口 IP，则您的专用出口 IP 功能仅支持 HTTP 和 HTTPS 端口。这包括 HTTP/1.1 以及加密的 HTTP/2。
+如果在 2021 年 9 月 30 日之前已为您配置了专用出口 IP，则您的专用出口 IP 功能仅支持 HTTP 和 HTTPS 端口。这包括 HTTP/1.1 以及加密的 HTTP/2。此外，一个专用出口端点只能通过端口80/443上的HTTP/HTTPS与任何目标通信。
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
