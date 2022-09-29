@@ -1,12 +1,14 @@
 ---
 title: 内容片段控制台
 description: 了解如何从内容片段控制台中管理内容片段。
-landing-page-description: 了解如何从内容片段控制台中管理内容片段，该控制台重点关注内容片段在 Headless 用例中的大量使用，但也是在页面创作时使用。
+landing-page-description: 了解如何从内容片段控制台中管理内容片段，该控制台重点关注内容片段在无头用例中的大量使用，但也用于页面创作。
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 

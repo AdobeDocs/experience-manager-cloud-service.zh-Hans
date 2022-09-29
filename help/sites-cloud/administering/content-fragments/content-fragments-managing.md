@@ -1,8 +1,10 @@
 ---
 title: 管理内容片段
 description: 了解如何使用“内容片段”控制台管理 AEM 内容片段；用于页面创作，或作为 headless 内容的基础。
+feature: Content Fragments
+role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 98%

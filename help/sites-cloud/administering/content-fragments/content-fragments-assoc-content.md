@@ -1,11 +1,13 @@
 ---
 title: 关联的内容
-description: 了解 AEM 关联内容功能如何提供连接，以便在将资产添加到内容页面时，可以选择将资产与片段一起使用，从而为页面创作和 Headless 内容投放增加了额外的灵活性。
+description: 了解内容片段的关联内容功能如何为要（可选）与片段一起使用的资产提供连接，从而为页面创作和无标题内容交付增加了额外的灵活性。
+feature: Content Fragments
+role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 100%
+source-wordcount: '243'
+ht-degree: 86%
 
 ---
 

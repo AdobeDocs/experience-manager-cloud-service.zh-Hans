@@ -1,11 +1,13 @@
 ---
 title: 预览 – JSON 呈现
-description: 了解如何在实施 AEM headless 解决方案时轻松预览内容片段的 JSON 表示形式。
+description: 了解如何在实施AEM无头解决方案时轻松预览内容片段的JSON表示形式。
+feature: Content Fragments
+role: User
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 84%
 
 ---
 

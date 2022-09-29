@@ -1,11 +1,13 @@
 ---
 title: Markdown
-description: 了解内容片段编辑器如何使用 Markdown 语法，轻松地为页面创作和 Headless 投放创建内容。
+description: 了解内容片段编辑器如何使用Markdown语法来轻松创建内容，以用于页面创作和无标题交付。
+feature: Content Fragments
+role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 

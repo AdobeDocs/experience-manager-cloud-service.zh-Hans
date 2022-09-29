@@ -1,11 +1,13 @@
 ---
 title: 元数据 – 片段属性
-description: 了解如何查看和编辑 AEM 内容片段的元数据属性。
+description: 了解如何在AEM内容片段中查看和编辑元数据属性，以用于无标题内容交付和页面创作。
+feature: Content Fragments
+role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 89%
 
 ---
 

@@ -1,13 +1,11 @@
 ---
 title: 内容片段 — 配置浏览器（资产 — 内容片段）
-description: 了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM功能强大的无头交付功能。
-feature: Content Fragments
-role: User
+description: 了解如何在配置浏览器中启用内容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 80%
+source-wordcount: '364'
+ht-degree: 82%
 
 ---
 

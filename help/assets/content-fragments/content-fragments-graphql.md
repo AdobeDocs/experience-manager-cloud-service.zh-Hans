@@ -2,10 +2,8 @@
 title: 使用带有 GraphQL 的内容片段的 Headless 内容投放 （资产 — 内容片段）
 description: 了解使用 GraphQL 中的内容片段实现 AEM Headless CMS 以进行 headless 内容投放的基本概念。
 feature: Content Fragments, GraphQL API
-topic: Headless
-role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 99%
