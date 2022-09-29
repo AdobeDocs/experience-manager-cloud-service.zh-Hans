@@ -2,9 +2,9 @@
 title: 记录AEMas a Cloud Service
 description: 了解如何使用AEM Logging为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 4b737e1b9355cbb5c4532e0a614c18f5679d61f2
+source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2351'
 ht-degree: 3%
 
 ---
@@ -549,7 +549,7 @@ Apache层日志（包括调度程序）位于包含调度程序的Docker容器�
 
 在支持请求中，客户应指示：
 
-* Splunk HEC端点地址。 此端点必须具有有效的SSL证书
+* Splunk HEC端点地址。 此端点必须具有有效的SSL证书且可公开访问。
 * Splunk索引
 * Splunk端口
 * Splunk HEC令牌。 请参阅 [本页](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 以了解更多信息。
