@@ -215,12 +215,12 @@ ht-degree: 100%
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-英语是现成的。
-其他语言可作为语言模型包从软件发行版获得：
-* [法语 (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [德语 (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [意大利语 (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [西班牙语 (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>英语是现成的。
+>其他语言可作为语言模型包从软件发行版获得：
+>* [法语 (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [德语 (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [意大利语 (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [西班牙语 (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -289,7 +289,7 @@ ht-degree: 100%
 * 在编辑器的全屏和正常模式下，由文本上的高亮显示指示。然后，可通过单击高亮显示的文本，查看、编辑和/或删除注释的完整详细信息，此时将重新打开对话框。
 
    >[!NOTE]
-   如果对一段文本应用了多个注释，则会提供一个下拉选择器。
+   >如果对一段文本应用了多个注释，则会提供一个下拉选择器。
 
 * 删除应用了注释的整个文本时，也会删除注释。
 
@@ -306,11 +306,11 @@ ht-degree: 100%
 将它们添加到片段的段落序列中，且不加任何格式；在[页面上使用/引用片段时](/help/sites-cloud/authoring/fundamentals/content-fragments.md)，可以编排格式。
 
 >[!CAUTION]
-无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
+>无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
+>但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
-将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
+>将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
 
 1. 将光标定位到要添加图像的位置。
 1. 使用&#x200B;**插入资产**&#x200B;图标，打开搜索对话框。
@@ -327,9 +327,9 @@ ht-degree: 100%
 1. 使用&#x200B;**选择**&#x200B;将资产添加到当前位置的内容片段的段落系统中。
 
    >[!CAUTION]
-   如果在添加资产后，您将格式更改为：
-   * **纯文本**：资产将从片段中完全丢失。
-   * **Markdown**：资产将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
+   >如果在添加资产后，您将格式更改为：
+   >* **纯文本**：资产将从片段中完全丢失。
+   >* **Markdown**：资产将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
 
 
 ### 将内容片段插入片段 {#inserting-content-fragment-into-your-fragment}
@@ -339,14 +339,14 @@ ht-degree: 100%
 它们将作为引用添加到片段中的当前位置。
 
 >[!NOTE]
-当您的&#x200B;**多行文本**&#x200B;配置为&#x200B;**允许片段引用**&#x200B;时，此选项可用。
+>当您的&#x200B;**多行文本**&#x200B;配置为&#x200B;**允许片段引用**&#x200B;时，此选项可用。
 
 >[!CAUTION]
-无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
+>无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
+>但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
-将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
+>将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
 
 1. 将光标定位在要添加片段的位置。
 1. 使用&#x200B;**插入内容片段**&#x200B;图标，打开搜索对话框。
@@ -363,9 +363,9 @@ ht-degree: 100%
 1. 使用&#x200B;**“选择”**&#x200B;将所选内容片段的引用添加到当前内容片段（在当前位置）。
 
    >[!CAUTION]
-   如果在添加对其他片段的引用后，您将格式更改为：
-   * **纯文本**：引用将从片段中完全丢失。
-   * **Markdown**：引用将保留。
+   >如果在添加对其他片段的引用后，您将格式更改为：
+   >* **纯文本**：引用将从片段中完全丢失。
+   >* **Markdown**：引用将保留。
 
 
 ## 管理变体 {#managing-variations}
@@ -383,7 +383,7 @@ ht-degree: 100%
 1. 选择 **添加**，片段&#x200B;**主要内容**&#x200B;将被复制到新变体中，该变体现在打开进行[编辑](#editing-a-variation)。
 
    >[!NOTE]
-   创建新变体时，复制的始终是&#x200B;**主要内容**，而不是当前打开的变体。
+   >创建新变体时，复制的始终是&#x200B;**主要内容**，而不是当前打开的变体。
 
 ### 编辑变体 {#editing-a-variation}
 
@@ -407,7 +407,7 @@ ht-degree: 100%
 1. 确认&#x200B;**重命名**&#x200B;操作。
 
 >[!NOTE]
-这仅影响变体&#x200B;**标题**。
+>这仅影响变体&#x200B;**标题**。
 
 ### 删除变体 {#deleting-a-variation}
 
@@ -420,7 +420,7 @@ ht-degree: 100%
 1. 确认对话框中的&#x200B;**删除**&#x200B;操作。
 
 >[!NOTE]
-无法删除&#x200B;**母版**。
+>无法删除&#x200B;**母版**。
 
 ### 与母版同步 {#synchronizing-with-master}
 
@@ -429,10 +429,10 @@ ht-degree: 100%
 在编辑变体时，您有权使用将变体的当前元素与主要内容同步的操作。 这样，您就可以自动将对母版所做的更改复制到所需的变体。
 
 >[!CAUTION]
-同步仅可将更改从&#x200B;***母版**复制到变体*。
-将仅同步变量的当前元素。
-同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
-不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
+>同步仅可将更改从&#x200B;***母版**复制到变体*。
+>将仅同步变量的当前元素。
+>同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
+>不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 
 1. 在片段编辑器中打开内容片段。 确保&#x200B;**母版**&#x200B;已编辑。
 
