@@ -2,7 +2,7 @@
 title: 个性化和内容定位
 description: 了解如何使用AEM创建个性化的目标内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
+source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 12%
@@ -38,9 +38,6 @@ AEM提供了以下工具框架：
 
 ### 提供 {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 选件是个性化体验，通常在有限的时间段内提供。
 
 例如，来自示例网站的页面可以使用选件作为显示在页面顶部的Teaser图像。 30岁以上的人员和30岁以下的人员将看到不同的选件作为体验预告。
@@ -62,8 +59,6 @@ AEM提供了以下工具框架：
 * 定义特定受众（区段）与特定体验的映射
 * 定义应用定位的时间段
 * 标识 [定位引擎](#targeting-engine) 您的页面使用
-
-<!-- an example for each of the two types would be good -->
 
 活动可以是个性化活动或A/B测试活动(对于AEM和Adobe Target个性化工作流)。
 
