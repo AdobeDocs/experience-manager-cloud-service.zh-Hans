@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有密钥值和环境特定值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 339030fc5edd22f81f977046185b53649869cc83
+source-git-commit: aeff6c3e81eb71521dbd75fc73d3e177aac60abd
 workflow-type: tm+mt
-source-wordcount: '3285'
+source-wordcount: '3297'
 ht-degree: 1%
 
 ---
@@ -296,6 +296,10 @@ export ENV_VAR_NAME=my_value
 
 例如，如果 `$[secret:server_password]` ，则使用名为 **server_password** 必须创建。 所有这些密钥文件必须存储在同一目录和框架属性中 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 必须使用该本地目录进行配置。
 
+>[!CAUTION]
+>
+>文本文件必须命名 **server_password**  — 不带文件扩展名。
+
 的 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 是Sling框架属性；因此，此属性未在felix控制台(/system/console)中设置，但是在系统引导时使用的sling.properties文件中设置。 此文件可在已提取的Jar/install文件夹(crx-quickstart/conf)的/conf子目录中找到。
 
 示例：将此行添加到“crx-quickstart/conf/sling.properties”文件的末尾，以将“crx-quickstart/secretsdir”配置为密钥文件夹：
@@ -318,7 +322,7 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 
 在以下示例中，除了暂存和生产环境之外，还假设有三个开发环境。
 
-**示例1**
+**示例 1**
 
 其意图是获取OSGi属性的值 `my_var1` 对于stage和prod而言，应相同，但对于三个开发环境中的每个环境，则不同。
 
@@ -353,7 +357,7 @@ config.dev
 </tr>
 </table>
 
-**示例2**
+**示例 2**
 
 其意图是获取OSGi属性的值 `my_var1` 对于三个开发环境中的每个环境，stage 、 prod和都会有所不同。 因此，必须调用Cloud Manager API才能为 `my_var1` 用于每个开发环境。
 
