@@ -2,7 +2,7 @@
 title: 从源中提取内容
 description: 从源中提取内容
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -35,7 +35,7 @@ ht-degree: 21%
    >[!IMPORTANT]
    >
    >确保提取键值有效且未接近其过期时间。 如果提取键值接近过期日期，您可以通过选择迁移集并单击属性来续订提取键值。 单击 **续订**. 这会将您转到Cloud Acceleration Manager，您可以在其中单击 **复制提取键值**. 每次您点击 **复制提取键值**，则会生成一个新的提取键值，其有效期为创建之日起14天。
-   >[!图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. 此时将显示提取对话框。 单击 **Extract** 开始提取阶段。
 
