@@ -1,15 +1,15 @@
 ---
-title: 许可证功能板
+title: 许可证仪表板
 description: Cloud Manager提供了一个功能板，用于轻松查看您的组织或租户可用的AEMaCS产品权利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 4%
+source-wordcount: '876'
+ht-degree: 3%
 
 ---
 
-# 许可证功能板 {#license-dashboard}
+# 许可证仪表板 {#license-dashboard}
 
 Cloud Manager提供了一个功能板，用于轻松查看您的组织或租户可用的AEMaCS产品权利。
 
@@ -32,7 +32,7 @@ Cloud Manager许可证功能板提供对以下信息的轻松访问：
 
 1. 在产品概述页面上，切换到 **许可证** 选项卡。
 
-![许可证功能板](assets/license-dashboard.png)
+![许可证仪表板](assets/license-dashboard.png)
 
 功能板分为三个部分，显示您：
 
@@ -83,6 +83,10 @@ AEM还制定了规则来排除知名机器人，包括定期访问网站的知�
 | 流量阻止程序 | 在浏览器中使用跟踪器阻止程序可能会选择禁用某些请求进行跟踪。 |
 | 防火墙 | 防火墙可能会阻止Analytics跟踪。 这在公司防火墙方面更为常见。 |
 
+### 如果我想进一步了解我的内容请求卷，该怎么办？ {#current-request-volumes}
+
+如果您希望对“许可证功能板”中显示的内容请求量进行更多分析，您的Adobe团队可以提供一份报表，其中显示内容请求的流量最大驱动因素。 请联系您的Adobe团队或Adobe客户关怀团队，以请求获取最常用情况报表。
+
 ### 如果我使用自己的CDN，该怎么办？ {#using-own-cdn}
 
-Cloud Manager中的内容请求功能板将不显示您自己的CDN的跟踪。
+许可证功能板将仅显示由Cloud ServiceCDN跟踪的数据。  如果您选择自带CDN(BYOCDN)，则会按照合同中的规定，每年向Adobe报告内容请求量。
