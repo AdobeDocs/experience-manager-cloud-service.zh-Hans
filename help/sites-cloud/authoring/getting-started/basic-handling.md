@@ -2,10 +2,10 @@
 title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 100%
+source-wordcount: '2994'
+ht-degree: 99%
 
 ---
 
@@ -208,7 +208,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ## “操作”工具栏 {#actions-toolbar}
 
-每当选择资源（例如一个页面或资产）时，工具栏中都会显示一些包含说明性文本的图标以指示各种操作。这些操作取决于以下要素：
+每当选择资源（例如，页面或资产）时，工具栏中都会通过带有说明性文本的图标来指示各种操作。 这些操作取决于以下要素：
 
 * 当前控制台
 * 当前上下文

@@ -4,10 +4,10 @@ description: 了解如何在您的项目中重用内容并在 AEM 中管理多�
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
+source-wordcount: '411'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 >
 >仅允许将多站点管理器用于采用一种语言的内容。
 >
->例如，使用英语母版为美国、加拿大、英国等创建英文版页面。使用法语母版为法国、瑞士、加拿大等创建法语版页面。
+>例如，使用英语主控为美国、加拿大、英国等地创建页面的英文版本。 使用法语母版为法国、瑞士、加拿大等创建法语版页面。
 
 下图说明了主要概念的相交部分（但未显示涉及的所有级别/元素）：
 

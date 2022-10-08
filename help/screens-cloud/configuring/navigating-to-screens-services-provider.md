@@ -2,9 +2,9 @@
 title: 导航到 Screens Services Provider
 description: 本页介绍如何导航到Screens服务提供商。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '266'
 ht-degree: 6%
 
 ---
@@ -51,6 +51,6 @@ ht-degree: 6%
 
    ![图像](/help/screens-cloud/assets/configure/configure-screens2.png)
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
 学会如何设置Screens服务提供商后，您便可以导航到 [使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) 以了解更多详细信息。

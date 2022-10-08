@@ -2,9 +2,9 @@
 title: 查询生成器谓词参考
 description: 查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2221'
 ht-degree: 2%
 
 ---
@@ -275,7 +275,7 @@ group.2_group.type=dam:Asset
 
 此谓词将JCR属性与间隔匹配。 这适用于具有线性类型(如 `LONG`, `DOUBLE` 和 `DECIMAL`. 对于 `DATE` 请参见 [`daterange`](#daterange) 谓词，已优化日期格式输入。
 
-您可以定义下限、上限或两者。 也可以单独为下界和上界指定操作（例如小于或等于）。
+您可以定义下限、上限或两者。 还可以单独为下界和上界指定操作（例如，小于或等于）。
 
 它不支持面提取。
 
@@ -370,7 +370,7 @@ group.2_group.type=dam:Asset
 
 * **`tagsearch`**  — 在标记标题中搜索的关键字
 * **`property`**  — 要考虑的属性（或属性的相对路径）（默认） `cq:tags`)
-* **`lang`**  — 仅在特定本地化的标记标题中搜索(例如， `de`)
+* **`lang`**  — 仅在特定的本地化标记标题中搜索(例如， `de`)
 * **`all`**  — 用于搜索整个标记全文（即所有标题、描述等）的布尔值。 (优先于 `lang`)
 
 ### 类型 {#type}

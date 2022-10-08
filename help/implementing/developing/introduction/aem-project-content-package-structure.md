@@ -2,10 +2,10 @@
 title: AEM 项目结构
 description: 了解如何定义部署到Adobe Experience ManagerCloud Service的包结构。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 13%
+source-wordcount: '2931'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 13%
 
 AEM应用程序部署必须由单个AEM包组成。 此包又应包含子包，子包包含应用程序正常运行所需的所有内容，包括代码、配置和任何支持的基线内容。
 
-AEM 要求将&#x200B;**内容**&#x200B;和&#x200B;**代码**&#x200B;分离，这意味着单个内容包&#x200B;**不能****同时**&#x200B;部署到存储库的 `/apps` 和到运行时可写区域（例如，`/content`、`/conf`、`/home` 或 `/apps` 以外的任何区域)。相反，应用程序必须将代码和内容分离到离散包中，以部署到 AEM 中。
+AEM要求将 **内容** 和 **代码**，即单个内容包 **无法** 部署到 **both** `/apps` 和运行时可写区域(例如， `/content`, `/conf`, `/home`，或任何其他非 `/apps`)。 相反，应用程序必须将代码和内容分离到离散包中，以部署到 AEM 中。
 
 本文档中概述的包结构与本地开发部署&#x200B;**和** AEM 云服务部署兼容。
 

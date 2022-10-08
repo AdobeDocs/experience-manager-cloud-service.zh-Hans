@@ -2,9 +2,9 @@
 title: AEM 技术基础
 description: 概述AEM的技术基础，包括AEM的结构方式和基本技术（如JCR、Sling和OSGi）。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ AEM使用 [Sling](https://sling.apache.org/site/index.html)，基于REST原则�
 Sling是 *以内容为中心*. 这意味着当每个(HTTP)请求以JCR资源（存储库节点）的形式映射到内容时，处理重点会放在内容上：
 
 * 第一个目标是保存内容的资源（JCR节点）
-* 其次，表示或脚本是与请求的某些部分（例如，选择器和/或扩展）组合在一起从资源属性中找到的
+* 其次，表示或脚本是与请求的某些部分（例如，选择器和/或扩展）组合在一起，从资源属性中找到的
 
 ### RESTful Sling {#restful-sling}
 
@@ -123,8 +123,8 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 请求被划分，并提取必要的信息。 在存储库中搜索所请求的资源（内容节点）：
 
-* 第一个Sling检查节点是否位于请求中指定的位置；例如 `../content/corporate/jobs/developer.html`
-* 如果未找到节点，则将删除扩展并重复搜索；例如 `../content/corporate/jobs/developer`
+* 第一个Sling检查节点是否位于请求中指定的位置；例如， `../content/corporate/jobs/developer.html`
+* 如果未找到节点，则将删除扩展并重复搜索；例如， `../content/corporate/jobs/developer`
 * 如果未找到节点，则Sling将返回http代码404（未找到）。
 
 Sling还允许JCR节点以外的其他内容作为资源，但这是一项高级功能。
@@ -146,7 +146,7 @@ Sling还允许JCR节点以外的其他内容作为资源，但这是一项高级
 
 需要注意的其他几点是：
 
-* 当需要方法(GET、POST)时，它将按照HTTP规范(例如， `jobs.POST.esp`
+* 当需要方法(GET、POST)时，将按照HTTP规范(例如， `jobs.POST.esp`
 * 支持各种脚本引擎，但常见的推荐脚本是HTL和JavaScript。
 
 给定AEM实例支持的脚本引擎列表列在Felix管理控制台( `http://<host>:<port>/system/console/slingscripting`)。

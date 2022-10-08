@@ -2,9 +2,9 @@
 title: 页面模板
 description: 创建将用作新页面基础的页面时，会使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3297'
 ht-degree: 9%
 
 ---
@@ -188,7 +188,7 @@ ht-degree: 9%
    * 类型: `String`
    * 值：要显示在 **模板** 控制台。
 
-1. 除了标准创作权限和权限(例如 `content-authors`)，您现在需要为作者分配组并定义所需的访问权限(ACL)，以便在新文件夹中创建模板。
+1. 除了标准创作权限和权限(例如， `content-authors`)，您现在需要为作者分配组并定义所需的访问权限(ACL)，以便在新文件夹中创建模板。
 
    的 `template-authors` 组是需要分配的默认组。 请参阅部分 [ACL和组](#acls-and-groups) 以了解详细信息。
 

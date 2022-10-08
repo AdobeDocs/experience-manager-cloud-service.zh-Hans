@@ -2,10 +2,10 @@
 title: 配置帐户环境
 description: AEM 提供了用于配置帐户和创作环境的某些方面的功能
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 94%
 
 ---
 
@@ -67,7 +67,7 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 * **相对日期显示**
 
-   为了提高可读性，AEM 会将过去七天内的日期显示为相对日期（例如三天前），而将更早的日期则显示为确切日期（例如 2017 年 3 月 20 日）。
+   为了提高可读性，AEM会将过去七天内的日期呈现为相对日期（例如，三天前），而将更早的日期则呈现为确切日期（例如，2017年3月20日）。
 
    此选项定义系统中日期的显示方式。以下选项可供选择：
 

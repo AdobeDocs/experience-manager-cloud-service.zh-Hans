@@ -2,10 +2,10 @@
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 100%
+source-wordcount: '1812'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
    * 这两个术语与发布/取消发布同义。
    * 这些术语在 AEM 的早期版本中使用。
 * **复制**
-   * 这些是技术术语，用于描述发布页面时数据（例如页面内容、文件、代码、用户评论）从一个环境移动到另一个环境。
+   * 这些是技术术语，用于描述在发布页面时数据（例如，页面内容、文件、代码、用户评论）从一个环境移动到另一个环境。
    * 这些术语主要由开发人员使用。
 
 ## 发布页面 {#publishing-pages-1}
@@ -140,7 +140,6 @@ ht-degree: 100%
       >[!NOTE]
       >
       >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
-
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 单击&#x200B;**下一步**&#x200B;以继续。
@@ -218,7 +217,7 @@ ht-degree: 100%
 
 取消发布页面会将其从您的发布或[预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md)环境中移除，因此不再将其提供给您的读者。
 
-以类似于发布 [&#128279;](#publishing-pages) 的  方式，可以从所需目标取消发布一个或多个页面：
+以类似于发布 ](#publishing-pages) 的 [ 方式，可以从所需目标取消发布一个或多个页面：
 
 * [从页面编辑器中](#unpublishing-from-the-editor)
 * [从站点控制台中](#unpublishing-from-the-console)

@@ -2,9 +2,9 @@
 title: ContextHub Javascript API参考
 description: 将ContextHub组件添加到页面后，您的脚本可以使用ContextHub Javascript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4622'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ ContextHub Javascript API定义的常量值。
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | 打开ContextHub UI时触发 | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | 折叠ContextHub UI时触发 | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | 修改属性时触发 | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | 每次渲染ContextHub UI时（例如，在属性更改后）均触发 | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | 每次呈现ContextHub UI时（例如，在属性更改后）均触发 | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | 初始化UI容器时触发 | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | 指示活动UI模式 | `/_/active-ui-mode` |
 
@@ -388,7 +388,7 @@ ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](#contexthub-store-core
    * `path`:（字符串）服务的路径。
    * `port`:（数字）服务的端口号。
    * `secure`:（字符串或布尔值）确定用于服务URL的协议：
-      * `auto`://
+      * `auto`: //
       * `true`:https://
       * `false`: http://
 * **覆盖：** （布尔值）。 值 `true` 导致现有服务配置被 `serviceConfig`. 值 `false` 导致现有服务配置属性与 `serviceConfig`.

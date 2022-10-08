@@ -2,10 +2,10 @@
 title: 适用于 Eclipse 的 AEM 开发人员工具
 description: 适用于 Eclipse 的 AEM 开发人员工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 2%
+source-wordcount: '1183'
+ht-degree: 3%
 
 ---
 

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: def7f7071dac447397f40186de1380b8e5575608
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 100%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 100%
     <p><strong>windowSchedule=weekly</strong>（此值不应更改）</p>
     <p><strong>windowStartTime=HH:MM</strong> 用作 24 小时时钟。定义与每周维护窗口关联的维护任务应何时开始执行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 用作 24 小时时钟。定义与每周维护窗口关联的维护任务在尚未完成时应何时停止执行。</p>
-    <p><strong>windowScheduleWeekdays = 由 1 – 7（例如 [5,5]）中的 2 个值组成的数组</strong>数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
+    <p><strong>windowScheduleWeekdays=1-7之间的2个值的数组（例如，[5,5]）</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
     </td>
   </tr>
   <tr>
@@ -133,7 +133,7 @@ ht-degree: 100%
     <p><strong>windowSchedule=daily</strong>（此值不应更改）</p>
     <p><strong>windowStartTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务应何时开始执行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务在尚未完成时应何时停止执行。</p>
-    <p><strong>windowScheduleWeekdays = 由 1 – 7（例如 [5,5]）中的 2 个值组成的数组</strong>数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
+    <p><strong>windowScheduleWeekdays=1-7之间2个值的数组（例如，[5,5]）</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 表示安排在每月的第一周，或 1 表示安排在每月最后一周。如果没有一个值，则会有效地按照 windowScheduleWeekdays 每月的规定每天计划作业。</p>
     </td> 
     </tr>

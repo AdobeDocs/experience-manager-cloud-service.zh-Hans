@@ -2,10 +2,10 @@
 title: 创建和组织页面
 description: 如何使用 AEM 创建和组织页面
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 98%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 >
 >在定义页面名称时，一个好的经验法则是保持页面名称简短，但尽可能表达到位且容易记忆，使读者容易理解。请参阅针对 `title` 元素的 [W3C 风格指南](https://www.w3.org/Provider/Style/TITLE.html)，以获取更多信息。
 >
->另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
+>另请注意，某些浏览器（例如旧版IE）只能接受一定长度的URL，因此还有技术原因需要缩短页面名称。
 
 创建新页面时，AEM [将依据 AEM 和 JCR 实行的惯例来验证页面名称](/help/implementing/developing/introduction/naming-conventions.md)。
 

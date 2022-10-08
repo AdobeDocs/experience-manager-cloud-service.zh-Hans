@@ -4,10 +4,10 @@ description: 了解可用的强大 Live Copy 同步选项以及如何根据项�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | 在 Blueprint 激活时激活 | 在发布源时发布 Live Copy | 激活 | `targetActivate` |
 | 在 Blueprint 停用时停用 | 在停用源时停用 Live Copy | 停用 | `targetDeactivate` |
 | 修改时推送 | 修改源时将内容推送到 Live Copy<br>谨慎使用此转出配置，因为它使用“修改”触发器。 | 修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| 修改时推送（简略） | 修改 Blueprint 页面时将内容推送到 Live Copy，而不更新引用<br>谨慎使用此转出配置，因为它使用“修改”触发器。 | 修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| 修改时推送（简略） | 在修改Blueprint页面时将内容推送到Live Copy，而不更新引用（例如，对于浅层副本）<br>当此转出配置使用On Modification触发器时，请谨慎使用此转出配置。 | 修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | 提升启动项 | 用于提升启动项页面的标准转出配置。 | 转出 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### 同步操作 {#synchronization-actions}

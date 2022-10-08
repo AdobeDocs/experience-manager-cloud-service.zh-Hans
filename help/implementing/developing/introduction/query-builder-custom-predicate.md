@@ -2,9 +2,9 @@
 title: 为查询生成器实施自定义谓词计算器
 description: AEM中的查询生成器提供了一种简单且可自定义的方式来查询内容存储库
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 谓词计算器处理特定谓词的计算，这些谓词是查询的定义约束。
 
-它会映射更高级别的搜索约束(例如 `width>200`)到符合实际内容模型(例如， `metadata/@width > 200`)。 或者，它可以手动筛选节点并检查其约束。
+它会映射更高级别的搜索约束(例如 `width>200`)到符合实际内容模型的特定JCR查询(例如， `metadata/@width > 200`)。 或者，它可以手动筛选节点并检查其约束。
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 * `cq:lastReplicated` 用于存储上次复制操作的日期
 * `cq:lastReplicatedBy` 用于存储触发上次复制操作的用户ID
-* `cq:lastReplicationAction` 存储上次复制操作（例如激活、停用）
+* `cq:lastReplicationAction` 存储上次复制操作（例如，激活、停用）
 
 #### 使用默认谓词计算器查询复制元数据 {#querying-replication-metadata-with-default-predicate-evaluators}
 

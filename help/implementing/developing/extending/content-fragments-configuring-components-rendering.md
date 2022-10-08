@@ -2,9 +2,9 @@
 title: 配置用于呈现的组件的内容片段
 description: 配置用于呈现的组件的内容片段
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '522'
 ht-degree: 6%
 
 ---
@@ -73,22 +73,22 @@ OSGi配置为：
   <tr>
    <td><strong>资源类型</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>要注册的资源类型；例如 <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>要注册的资源类型；例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>引用属性</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>包含对片段的引用的属性的名称；例如 <code>fragmentPath</code> 或 <code>fileReference</code></td>
+   <td>包含对片段的引用的属性的名称；例如， <code>fragmentPath</code> 或 <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Element(s)属性</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>包含要呈现的元素名称的属性名称；例如<code>elementName</code></td>
+   <td>包含要呈现的元素名称的属性名称；例如，<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>变量属性</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>包含要呈现的变体名称的属性名称；例如<code>variationName</code></td>
+   <td>包含要呈现的变体名称的属性名称；例如，<code>variationName</code></td>
   </tr>
  </tbody>
 </table>

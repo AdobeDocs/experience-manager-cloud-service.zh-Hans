@@ -2,10 +2,10 @@
 title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与 Adobe Analytics 集成时使用的 IMS 配置
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 100%
 1. 在这里，您可以使用 [Adobe Developer Console 中项目配置的详细信息](#details-stored-for-the-ims-integration-project)：
 
    * **标题**：您的文本。
-   * **授权服务器**：复制并粘贴以下&#x200B;**有效负载**&#x200B;部分的 `aud` 行的内容，例如，下面的示例中的 `https://ims-na1.adobelogin.com`
+   * **授权服务器**:从 `aud` 行 **负载** 例如， `https://ims-na1.adobelogin.com` 在以下示例中
    * **API 密钥**：从[项目概述](#details-stored-for-the-ims-integration-project)的&#x200B;**凭据**&#x200B;部分中复制此密钥
    * **客户端密码**：在[“服务帐户 (JWT)”部分的“客户端密码”选项卡](#details-stored-for-the-ims-integration-project)生成此密码并进行复制
    * **有效负载**：从[“服务帐户 (JWT)”部分的“生成 JWT”选项卡](#details-stored-for-the-ims-integration-project)复制有效负载

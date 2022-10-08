@@ -3,10 +3,10 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2693'
+ht-degree: 1%
 
 ---
 
@@ -281,11 +281,11 @@ Phase 3 finished
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-或者，您也可以包 **含这些文件的默认版本** ，其名称前面加有单词 `default_`，如 `../filters/default_filters.any`.
+或者，您也可以将 **默认** 这些文件的版本，其名称前面加有单词 `default_`，例如， `../filters/default_filters.any`.
 
 **在任何已知位置之外的(...)包含语句：...**
 
-除上文各段所述的六个部分外，您不得使用 `$include` 语句，例如，以下内容将生成此错误：
+除上文各段所述的六个部分外，您不得使用 `$include` 例如，以下语句将生成此错误：
 
 ```
 /invalidate {
@@ -300,7 +300,7 @@ Phase 3 finished
 
 **筛选器不得使用全局模式来允许请求**
 
-允许使用 `/glob` 样式规则，与完整的请求行(例如，
+允许使用 `/glob` 样式规则，与完整的请求行匹配，例如
 
 ```
 /0100 {

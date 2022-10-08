@@ -4,10 +4,10 @@ description: 使用Dispatcher工具验证和调试（旧版）
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2345'
+ht-degree: 1%
 
 ---
 
@@ -270,11 +270,11 @@ Phase 3 finished
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-或者，您也可以包 **含这些文件的默认版本** ，其名称前面加有单词 `default_`，如 `../filters/default_filters.any`.
+或者，您也可以将 **默认** 这些文件的版本，其名称前面加有单词 `default_`，例如， `../filters/default_filters.any`.
 
 **在任何已知位置之外的(...)包含语句：...**
 
-除上文各段所述的六个部分外，您不得使用 `$include` 语句，例如，以下内容将生成此错误：
+除上文各段所述的六个部分外，您不得使用 `$include` 例如，以下语句将生成此错误：
 
 ```
 /invalidate {
@@ -289,7 +289,7 @@ Phase 3 finished
 
 **筛选器不得使用全局模式来允许请求**
 
-允许使用 `/glob` 样式规则，与完整的请求行(例如，
+允许使用 `/glob` 样式规则，与完整的请求行匹配，例如
 
 ```
 /0100 {

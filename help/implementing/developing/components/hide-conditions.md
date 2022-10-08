@@ -2,9 +2,9 @@
 title: 使用隐藏条件
 description: 隐藏条件可用于确定是否渲染组件资源。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '615'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 在定义隐藏表达式时，请记住：
 
-* 要有效，应表示找到属性的范围(如 `cqDesign.myProperty`)。
+* 要有效，应表示找到属性的范围(例如， `cqDesign.myProperty`)。
 * 值为只读。
 * 函数（如果需要）应限于服务提供的给定集。
 

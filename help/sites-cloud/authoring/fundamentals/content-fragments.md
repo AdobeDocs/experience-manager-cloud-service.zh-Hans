@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 >[!NOTE]
 >
->可以通过多种方法向片段和/或页面中添加[可视资产（例如图像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)。
+>添加的方法有多种 [可视资产（例如，图像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) 到片段和/或页面。
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 ### 插入到片段中的资产 {#assets-inserted-into-the-fragment}
 
-如果已在片段本身中插入资产（形成](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)混合媒体片段[），则页面编辑器中用于编辑这些资产的选项会受到限制。
+如果已在片段本身中插入资产（例如图像）， [混合媒体片段](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets))，则页面编辑器中用于编辑这些资产的选项会受到限制。
 
 例如，您可以对图像执行以下操作
 

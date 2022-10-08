@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: AEM as a Cloud Service 开发准则
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2445'
 ht-degree: 2%
 
 ---

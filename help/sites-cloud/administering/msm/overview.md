@@ -4,10 +4,10 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 100%
+source-wordcount: '2683'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ Live Copy 的基本形式具有：
 
 #### 具有非 Live Copy 页面的 Live Copy {#live-copy-with-non-live-copy-pages}
 
-在 AEM 中创建 Live Copy 时，您可以查看和浏览 Live Copy 分支，并在 Live Copy 分支上使用常规 AEM 功能。这意味着您（或流程）可以在 Live Copy 中创建新资源（页面和/或段落）。例如，面向特定地区或国家的产品。
+在 AEM 中创建 Live Copy 时，您可以查看和浏览 Live Copy 分支，并在 Live Copy 分支上使用常规 AEM 功能。这意味着您（或流程）可以在 Live Copy 中创建新资源（页面和/或段落）。例如，特定地区或国家/地区的产品。
 
 * 此类资源与源/Blueprint 页面没有实时关系，并且不会同步。
 * 可能会出现 MSM 作为特殊情况处理的场景。例如，当您（或流程）在源/Blueprint 和 Live Copy 分支中创建具有相同位置和名称的页面时。有关此类情况，请参阅 [MSM 转出冲突](rollout-conflicts.md)以了解更多信息。

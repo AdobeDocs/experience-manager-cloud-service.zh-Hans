@@ -1,104 +1,104 @@
 ---
 title: 部署代码
-description: 了解如何在AEMas a Cloud Service中使用Cloud Manager管道部署代码。
+description: 了解如何使用 AEM as a Cloud Service 中的 Cloud Manager 管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 17%
+source-wordcount: '1221'
+ht-degree: 97%
 
 ---
 
 
 # 部署代码 {#deploy-your-code}
 
-了解如何在AEMas a Cloud Service中使用Cloud Manager管道将代码部署到生产环境。
+了解如何使用 AEM as a Cloud Service 中的 Cloud Manager 管道将代码部署到生产环境中。
 
-![生产管道图](./assets/configure-pipeline/production-pipeline-diagram.png)
+![非生产管道图标](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-可通过生产管道将代码无缝部署到暂存环境，然后再部署到生产环境。 生产管道执行分为两个逻辑阶段。
+通过生产管道将代码无缝部署到暂存环境，然后再部署到生产环境。 生产管道执行分为两个逻辑阶段。
 
 1. 部署到暂存环境
-   * 该代码已构建并部署到暂存环境，用于自动进行功能测试、UI测试、体验审核和用户接受测试(UAT)。
+   * 构建并部署代码到暂存环境中，用于自动化功能测试、UI 测试、体验审计和用户验收测试 (UAT)。
 1. 部署到生产环境
-   * 在暂存环境上验证内部版本并批准将其升级到生产环境后，会将相同的内部版本对象部署到生产环境。
+   * 一旦构建在暂存环境中进行了验证，并批准升级为生产环境，那么相同的构建工件就会部署到生产环境中。
 
-_只有“完整堆栈代码”管道类型支持代码扫描、功能测试、UI测试和体验审核。_
+_只有“完整堆栈代码”管道类型支持代码扫描、功能测试、UI 测试和体验审核。_
 
-## 在AEMas a Cloud Service中使用Cloud Manager部署代码 {#deploying-code-with-cloud-manager}
+## 使用 AEM as a Cloud Service 中的 Cloud Manager 部署您的代码 {#deploying-code-with-cloud-manager}
 
-一旦 [配置了生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 包括存储库、环境和测试环境，您都可以部署代码。
+[配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)（包括存储库、环境和测试环境）后，便可以部署代码。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要为其部署代码的程序。
 
-1. 单击 **部署** 从 **概述** 屏幕以启动部署过程。
+1. 在&#x200B;**概述**&#x200B;屏幕上，从行动号召中单击&#x200B;**部署**&#x200B;启动部署过程。
 
-   ![CTA](assets/deploy-code1.png)
+   ![行动号召 (CTA)](assets/deploy-code1.png)
 
-1. 此时将显示&#x200B;**管道执行**&#x200B;屏幕。单击&#x200B;**构建**&#x200B;开始此流程。
+1. 这将显示&#x200B;**管道执行**&#x200B;屏幕。 单击&#x200B;**构建**&#x200B;开始此流程。
 
-   ![“管道执行”屏幕](assets/deploy-code2.png)
+   ![管道执行屏幕](assets/deploy-code2.png)
 
-构建过程会分三个阶段部署您的代码。
+构建过程通过三个阶段部署代码。
 
-1. [Stage Deployment](#stage-deployment)
-1. [阶段测试](#stage-testing)
+1. [暂存部署](#stage-deployment)
+1. [暂存测试](#stage-testing)
 1. [生产部署](#production-deployment)
 
 >[!TIP]
 >
->您可以通过查看日志或依据测试标准审查结果，来审查各种部署过程的步骤。
+>您可以通过查看日志或依据测试标准审查结果来审查各种部署过程的步骤。
 
-## 阶段部署阶段 {#stage-deployment}
+## 暂存部署阶段 {#stage-deployment}
 
-的 **Stage Deployment** 阶段。 涉及这些步骤。
+**暂存部署**&#x200B;阶段。 包括这些步骤。
 
-* **验证**   — 此步骤可确保将管道配置为使用当前可用的资源。 例如，测试配置的分支存在且环境可用。
-* **构建和单元测试**  — 此步骤运行容器化生成流程。
-   * 请查看文档 [构建环境详细信息](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 以了解有关生成环境的详细信息。
-* **代码扫描**  — 此步骤会评估应用程序代码的质量。
-   * 请查看文档 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md) ，以了解有关测试过程的详细信息。
-* **构建图像**  — 此过程负责将构建步骤生成的内容和调度程序包转换为Docker图像和Kubernetes配置。
-* **部署到暂存环境**  — 映像已部署到暂存环境，以便为 [舞台测试阶段。](#stage-testing)
+* **验证** – 此步骤可确保将管道配置为使用当前可用的资源。 例如，测试配置的分支存在且环境可用。
+* **构建和单元测试** – 此步骤运行容器化的构建过程。
+   * 有关构件环境的详细信息，请参阅[构建环境详情](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)文档。
+* **代码扫描** – 此步骤评估应用程序代码的质量。
+   * 有关测试过程的详细信息，请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)文档。
+* **构建图像** – 此过程负责将构建步骤生成的内容和 Dispatcher 程序包转换为 Docker 图像和 Kubernetes 配置。
+* **部署到暂存环境** – 将图像部署到暂存环境，为[暂存测试阶段做准备。](#stage-testing)
 
-![Stage Deployment](assets/stage-deployment.png)
+![暂存部署](assets/stage-deployment.png)
 
-## 阶段测试阶段 {#stage-testing}
+## 暂存测试阶段 {#stage-testing}
 
-的 **阶段测试** 阶段涉及这些步骤。
+**暂存测试**&#x200B;阶段包含这些步骤。
 
-* **产品功能测试** - Cloud Manager管道执行针对暂存环境运行的测试。
-   * 请参阅该文档 [产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 以了解更多详细信息。
+* **产品功能测试** – Cloud Manager 管道执行针对暂存环境运行的测试。
+   * 请参阅[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)文档，了解更多详细信息。
 
-* **自定义功能测试**  — 管道中的此步骤始终执行，无法跳过。 如果内部版本未生成测试JAR，则测试默认通过。
-   * 请参阅该文档 [自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 以了解更多详细信息。
+* **自定义功能测试** – 管道中的此步骤始终执行，不能跳过。 如果构建没有生成测试 JAR，则默认情况下测试通过。
+   * 请参阅[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)文档，了解更多详细信息。
 
-* **自定义UI测试**  — 此步骤是一项可选功能，可自动运行为自定义应用程序创建的UI测试。
-   * UI测试是Docker图像中打包的基于硒的测试，允许在语言和框架（如Java和Maven、Node和WebDriver.io，或基于Selenium构建的任何其他框架和技术）中进行广泛选择。
-   * 请参阅该文档 [自定义UI测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 以了解更多详细信息。
+* **自定义 UI 测试** – 此步骤是一个可选功能，可自动运行为自定义应用程序创建的 UI 测试。
+   * UI 测试是打包在 Docker 图像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。
+   * 请参阅[自定义 UI 测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)文档，了解更多详细信息。
 
-* **体验审核**  — 管道中的此步骤始终执行，无法跳过。 执行生产管道时，在将运行检查的自定义功能测试之后，将包含体验审核步骤。
-   * 配置的页面将提交到服务并进行评估。
-   * 结果是信息性的，并显示当前得分和先前得分之间的得分变化。
-   * 此洞察对于确定当前部署中是否引入回归参数非常有价值。
-   * 请参阅该文档 [了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md) 以了解更多详细信息。
+* **体验审核** – 管道中的此步骤始终执行，不能跳过。 在执行生产管道时，在将运行检查的自定义功能测试之后，会包含体验审核步骤。
+   * 配置的页面将提交给服务并进行评估。
+   * 审核结果是信息性的，显示分数以及当前分数和以前分数之间的变化。
+   * 此细节对于确定当前部署中是否会引入回归非常有用。
+   * 请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)文档，了解更多详细信息。
 
-![阶段测试](assets/stage-testing.png)
+![暂存测试](assets/stage-testing.png)
 
 ## 生产部署阶段 {#deployment-production}
 
-部署到生产拓扑的流程略有不同，以便最大限度地减少对AEM网站的访客影响。
+部署到生产拓扑的过程略有不同，旨在尽量减小对 AEM 网站访客产生的影响。
 
-生产部署通常遵循与之前所述相同的步骤，但采用滚动方式。
+生产部署通常遵循与前述相同的步骤，但它采用的是滚动方式。
 
 1. 将 AEM 包部署到作者。
 1. 从负载平衡器分离 dispatcher1。
-1. 将AEM包部署到publish1，将调度程序包部署到dispatcher1，刷新调度程序缓存。
+1. 以并行方式将 AEM 包部署到 publish1，并将 Dispatcher 包部署到 dispatcher1，同时刷新 Dispatcher 缓存。
 1. 将 dispatcher1 放回负载平衡器中。
 1. 在将 dispatcher1 重新投入使用后，就会从负载平衡器中分离 dispatcher2。
-1. 将AEM包部署到publish2，将调度程序包部署到dispatcher2，刷新调度程序缓存。
+1. 以并行方式将 AEM 包部署到 publish2，并将 Dispatcher 包部署到 dispatcher2，同时刷新 Dispatcher 缓存。
 1. 将 dispatcher2 放回负载平衡器中。
 
 此过程将持续进行，直到部署到达拓扑中的所有发布者和 Dispatcher 为止。
@@ -114,13 +114,13 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 | 代码质量测试 | 14 天 |
 | 安全性测试 | 14 天 |
 | 性能测试 | 14 天 |
-| 申请审批 | 14 天 |
+| 申请批准 | 14 天 |
 | 计划生产部署 | 14 天 |
 | CSE 支持 | 14 天 |
 
 ## 部署过程 {#deployment-process}
 
-所有Cloud Service部署都遵循滚动流程，以确保零停机时间。 请参阅该文档 [滚动部署的工作原理](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 以了解更多。
+所有 Cloud Service 部署都遵循滚动过程，以确保零停机。 请参阅[如何滚动部署工作](/help/implementing/deploying/overview.md#how-rolling-deployments-work)文档，了解更多信息。
 
 >[!NOTE]
 >
@@ -128,32 +128,32 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ## 重新执行生产部署 {#Reexecute-Deployment}
 
-对于生产部署步骤已完成的执行，支持重新执行生产部署步骤。 完成类型不重要 — 部署可能被取消或失败。 尽管如此，主要用例预计是生产部署步骤因临时原因而失败的情况。 重新执行时，将使用相同的管道来创建一个新的执行。此新执行包括三个步骤：
+对于已完成生产部署步骤的执行，支持重新执行生产部署步骤。完成类型并不重要 – 部署可能会被取消或失败。 也就是说，主要用例预计是生产部署步骤因暂时原因而失败的用例。 重新执行将使用相同的管道来创建一个新的执行。此新执行包括三个步骤：
 
-1. 验证步骤 — 这基本上与正常管道执行期间发生的验证相同。
-1. 生成步骤 — 在重新执行的上下文中，生成步骤是复制工件，而不是实际执行新的生成过程。
-1. 生产部署步骤 — 使用与正常管道执行中的生产部署步骤相同的配置和选项。
+1. 验证步骤 – 此步骤基本上与正常管道执行期间进行的验证相同。
+1. 构建步骤 – 在重新执行的上下文中，构建步骤将复制构件，而实际上并不执行新的构建过程。
+1. 生产部署步骤 – 此步骤使用与正常管道执行中的生产部署步骤相同的配置和选项。
 
-生成步骤在UI中的标记可能略有不同，以反映它是在复制工件，而不是重新生成。
+构建步骤可能在 UI 中具有略有不同的标记，反映它将复制而不是重新构建构件。
 
 ![重新部署](assets/Re-deploy.png)
 
 限制：
 
-* 重新执行生产部署步骤将仅在上次执行时可用。
-* 无法重新执行推送更新执行。 如果上次执行是推送更新执行，则无法重新执行。
-* 如果上次执行是推送更新执行，则无法重新执行。
+* 生产部署步骤的重新执行仅适用于上一次执行。
+* 重新执行不适用于推送更新执行。 如果最后一次执行是推送更新执行，则不可能重新执行。
+* 如果最后一次执行是推送更新执行，则不可能重新执行。
 * 如果上一次执行在生产部署步骤前的任何时间点失败，则无法重新执行。
 
-### 重新执行API {#Reexecute-API}
+### 重新执行 API {#Reexecute-API}
 
-### 识别重新执行的执行
+### 识别重新执行执行
 
-要识别执行是否为重新执行，可检查trigger字段。 其价值将是 *RE_EXECUTE*.
+要识别某个执行是否为重新执行执行，可以检查触发器字段。 其值将为 *RE_EXECUTE*。
 
 ### 触发新执行
 
-要触发重新执行，需要向HAL Link &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>。 如果存在此链接，则可以从该步骤重新开始执行。如果不存在，则无法从该步骤重新启动执行。 在初始版本中，此链接将只在生产部署步骤中存在，但将来版本可能支持从其他步骤启动管道。 示例:
+要触发重新执行，需要对生产部署步骤状态的 HAL 链接 &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> 发出 PUT 请求。 如果存在此链接，则可以从该步骤重新开始执行。 如果此链接不存在，则无法从该步骤重新开始执行。在初始版本中，此链接只会出现在生产部署步骤中，但未来的版本可能支持从其他步骤启动管道。 示例:
 
 ```Javascript
  {
@@ -191,6 +191,6 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 ```
 
 
-HAL链接的语法 _href_  上述值不打算用作参考点。 应始终从 HAL 链接读取实际值而不是生成实际值。
+上述 HAL 链接的 _href_ 值的语法将不会用作参考点。 应始终从 HAL 链接读取而不是生成实际值。
 
-提交 *PUT* 对此端点的请求将导致 *201* 响应（如果成功），且响应主体将表示新执行。 这类似于通过 API 开始常规执行。
+通过将 *PUT* 请求提交到此端点，将产生 *201* 响应（如果成功），并且响应正文将是新执行的表示形式。这类似于通过 API 开始常规执行。

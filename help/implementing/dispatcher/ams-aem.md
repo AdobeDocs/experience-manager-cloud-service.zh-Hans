@@ -3,9 +3,9 @@ title: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 description: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1447'
 ht-degree: 17%
 
 ---
@@ -105,7 +105,7 @@ $ validator httpd .
 
 ### 重命名场文件
 
-所有农场 `conf.d/enabled_farms` 必须重命名以匹配模式 `*.farm`，例如名为的场文件 `customerX_farm.any` 应重命名 `customerX.farm`.
+所有农场 `conf.d/enabled_farms` 必须重命名以匹配模式 `*.farm`例如，一个名为的场文件 `customerX_farm.any` 应重命名 `customerX.farm`.
 
 ### 检查 cache
 

@@ -3,9 +3,9 @@ title: AEM和第三方商务集成使用商务集成框架
 description: 企业企业可能需要额外的第三方商务解决方案来支持其店面。 商务集成框架(CIF)可用于此类集成方案，以使用I/O运行时将第三方商务解决方案连接到Adobe Experience Manager。
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
-source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ CIF通过实时产品目录访问和产品体验管理工具来扩展Experience 
 
 的 [参考实施](https://github.com/adobe/commerce-cif-graphql-integration-reference) 是构建与商务解决方案集成的绝佳起点。 尽管它支持GraphQL，但也可以与任何其他类型的API（如REST）集成。
 
-如果第三方层可用（例如Mulesoft），或者集成基于第三方解决方案构建，则无需使用此集成层。
+如果第三方层可用（例如Mulesoft）或集成以第三方解决方案为基础构建，则无需使用此集成层。
 
 ## 预建连接器 {#connectors}
 

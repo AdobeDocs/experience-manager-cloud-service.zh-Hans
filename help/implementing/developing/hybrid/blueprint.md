@@ -2,9 +2,9 @@
 title: SPA Blueprint
 description: 本文档介绍任何SPA框架在AEM中实施可编辑的SPA组件时应履行的与框架无关的一般合同。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2057'
 ht-degree: 1%
 
 ---

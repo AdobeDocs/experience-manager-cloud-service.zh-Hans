@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 开箱即用地，PWA Studio通过GraphQL与Adobe Commerce无缝集成，为创建创新且引人入胜的店面和其他数字体验提供了无限的选项。
 
-内容片段是具有预定义结构的内容片段，允许使用GraphQL作为不同格式（例如JSON、Markdown）的API以无头方式使用这些内容片段，并进行独立渲染。 内容片段包含GraphQL所需的所有数据类型和字段，以确保您的应用程序仅请求可用内容并接收预期内容。 它们在结构方面提供的灵活性使其非常适合在多个位置和多个渠道中使用。
+内容片段是具有预定义结构的内容片段，允许使用GraphQL作为API以不同格式（例如JSON、Markdown）进行无头使用并独立渲染。 内容片段包含GraphQL所需的所有数据类型和字段，以确保您的应用程序仅请求可用内容并接收预期内容。 它们在结构方面提供的灵活性使其非常适合在多个位置和多个渠道中使用。
 
 在Adobe Experience Manager中使用内容片段模型编辑器，可以轻松设计所需的结构。 将Adobe Experience Manager内容片段（或任何其他数据）与PWA Studio应用程序集成的主要挑战是从多个GraphQL端点获取数据。 这是因为，PWA Studio可开箱即用于单个Adobe Commerce GraphQL端点。
 
@@ -116,7 +116,7 @@ ht-degree: 1%
 生产设置可以在多个方面有所不同。
 
 * 您可以使用单个联合GraphQL端点，该端点将AEM和Adobe Commerce GraphQL数据组合在一起，而不是自定义Apollo客户端。
-* 您的PWA Studio应用程序可以直接使用AEM GraphQL端点URL，而无需具有UPPRACH的代理。 此外，还可以将代理移动到其他层（例如CDN）。
+* 您的PWA Studio应用程序可以直接使用AEM GraphQL端点URL，而无需具有UPPRACH的代理。 此外，还可以将代理移动到其他层（例如，CDN）。
 * 哪种方法最适合您，还在很大程度上取决于您如何将PWA Studio应用程序交付给最终用户。
 
 此扩展包含两个示例。

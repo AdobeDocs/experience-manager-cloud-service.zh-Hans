@@ -2,9 +2,9 @@
 title: SPA模型路由
 description: 对于AEM中的单页应用程序，应用程序负责路由。 本文档介绍了传送机制、合同和可用选项。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-请注意，SPA的每条路由都应与AEM中的可访问资源对应(例如，“ `/content/mysite/mypage"`) `PageModelManager` 将在选择路由后自动尝试加载相应的页面模型。 但是，如果需要，SPA还可以定义路由的“阻止列表”，该路由应被 `PageModelManager`:
+请注意，SPA的每条路由都应与AEM中的可访问资源相对应(例如，“ `/content/mysite/mypage"`) `PageModelManager` 将在选择路由后自动尝试加载相应的页面模型。 但是，如果需要，SPA还可以定义路由的“阻止列表”，该路由应被 `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

@@ -2,9 +2,9 @@
 title: 存储库现代化器
 description: 存储库现代化器
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '300'
 ht-degree: 6%
 
 ---

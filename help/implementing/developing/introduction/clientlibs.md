@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供客户端库文件夹，利用该文件夹可将客户端代码(clientlibs)存储在存储库中，将其整理为各个类别，并定义何时以及如何将每个类别的代码提供给客户端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 1%
 
 ---
@@ -348,5 +348,5 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 1. 查找和编辑 **AdobeGraniteHTML库管理器**.
 1. 启用 **缩小** 选项（如果尚未启用）。
 1. 设置值 **JS处理器默认配置** to `min:gcc`.
-   * 如果使用分号(例如， `min:gcc;obfuscate=true`.
+   * 如果以分号分隔，则可以传递选项，例如， `min:gcc;obfuscate=true`.
 1. 单击 **保存** 以保存更改。

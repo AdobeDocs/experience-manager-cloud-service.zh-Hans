@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 100%
+source-wordcount: '642'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 * 改进了 I/O 运行时第三方连接器的兼容性和稳健性
 
-* 改进了对 GQL 客户端配置覆盖的支持（例如，设置自定义缓存行为）
+* 改进了对GQL客户端配置覆盖的支持（例如，设置自定义缓存行为）
 
 * 现在支持开箱即用的多个商务端点，并且可以通过 Cloud Manager 进行配置。 详情请见[此处](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554)的 CIF 博客。
 

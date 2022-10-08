@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段对标准资产进行了扩展。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 3%
    * 元素数据存储在主控子节点下：
       `jcr:content/data/master`
 
-   * 变体存储在带有变体名称的子节点下：例如 `jcr:content/data/myvariation`
+   * 变体存储在带有变体名称的子节点下：例如， `jcr:content/data/myvariation`
 
    * 每个元素的数据作为具有元素名称的属性存储在相应的子节点中：例如，元素的内容 `text` 存储为属性 `text` on `jcr:content/data/master`
 

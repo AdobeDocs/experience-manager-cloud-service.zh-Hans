@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 98%
+source-wordcount: '2109'
+ht-degree: 96%
 
 ---
 
@@ -63,8 +63,8 @@ ht-degree: 98%
 
 通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
 
-* 物理渠道；例如，台式机、移动设备。
-* 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备 Web”（适用于移动设备的移动设备应用程序）。
+* 物理渠道；例如，桌面、移动设备。
+* 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备Web”、“移动设备应用程序”（适用于移动设备）。
 
 但是，您（可能）不希望在所有渠道中使用完全相同的内容 – 您需要根据特定渠道优化内容。
 

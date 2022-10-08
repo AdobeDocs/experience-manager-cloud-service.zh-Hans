@@ -2,10 +2,10 @@
 title: 变量 – 创作片段内容 （资产 — 内容片段）
 description: 了解变量如何允许您为片段创作内容，然后根据目的创建该内容的变量，从而使AEM中的无头内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 96%
+source-wordcount: '2288'
+ht-degree: 95%
 
 ---
 
@@ -305,7 +305,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
@@ -341,7 +341,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。

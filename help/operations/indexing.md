@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 100%
+source-wordcount: '2255'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 1. 开箱即用索引。示例为：`/oak:index/cqPageLucene-2`。
 1. 经过自定义的开箱即用索引。由客户定义此类自定义。示例为：`/oak:index/cqPageLucene-2-custom-1`。
-1. 完全自定义的索引。示例为：`/oak:index/acme.product-1-custom-2`。为了避免命名冲突，我们要求完全自定义的索引附有前缀，例如 `acme.`。
+1. 完全自定义的索引。示例为：`/oak:index/acme.product-1-custom-2`。为避免命名冲突，我们要求完全自定义索引具有前缀，例如， `acme.`
 
 请注意，经过自定义的开箱即用索引和完全自定义的索引都需要包含 `-custom-`。只有完全自定义的索引必须以前缀开头。
 
@@ -88,7 +88,7 @@ ht-degree: 100%
 
 * 索引定义本身（例如 `/oak:index/ntBaseLucene-custom-1`）
 
-要部署自定义或自定义索引，索引定义 (`/oak:index/definitionname`) 需要在 Git 和 Cloud Manager 部署过程中通过 `ui.apps` 投放。 在 FileVault 过滤器中，例如 `ui.apps/src/main/content/META-INF/vault/filter.xml`，分别列出每个自定义索引和自定义索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`。 自定义/自定义索引定义本身随后将存储在文件中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
+要部署自定义或自定义索引，索引定义 (`/oak:index/definitionname`) 需要在 Git 和 Cloud Manager 部署过程中通过 `ui.apps` 投放。 例如，在FileVault筛选器中， `ui.apps/src/main/content/META-INF/vault/filter.xml`，分别列出每个自定义索引和自定义索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 自定义/自定义索引定义本身随后将存储在文件中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

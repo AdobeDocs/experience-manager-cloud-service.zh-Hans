@@ -4,10 +4,10 @@ description: 了解变量如何允许您为片段创作内容，然后根据用�
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 99%
+source-wordcount: '2308'
+ht-degree: 98%
 
 ---
 
@@ -307,7 +307,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
@@ -343,7 +343,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。

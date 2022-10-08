@@ -4,9 +4,9 @@ description: 了解AE的基础知识；包管理。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3585'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->包只能包含内容。 任何功能(例如， `/apps`)必须 [使用Cloud Manager中的CI/CD管道部署。](/help/implementing/cloud-manager/deploy-code.md)
+>包只能包含内容。 任何功能(例如，存储在 `/apps`)必须 [使用Cloud Manager中的CI/CD管道部署。](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >
@@ -461,7 +461,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 通过POST请求验证时，响应将作为JSON对象发送回来。
 
-### 查看包覆盖面 {#package-coverage}
+### 查看包覆盖 {#package-coverage}
 
 包由其过滤器定义。 您可以让包管理器将包的过滤器应用于您现有的存储库内容，以显示包的过滤器定义涵盖的存储库内容。
 

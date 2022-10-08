@@ -2,9 +2,9 @@
 title: 在 AEM 应用程序中生成标记
 description: 以编程方式在自定义AEM应用程序中使用标记或扩展标记
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 标记垃圾收集器 {#the-tag-garbage-collector}
 
-标记垃圾回收器是一项后台服务，可清理隐藏和未使用的标记。 隐藏和未使用的标记如下所示 `/content/cq:tags` 具有 `cq:movedTo` 属性和中，不会在内容节点上使用。 他们的数为零。 通过使用此延迟删除过程，内容节点(即 `cq:tags` 属性)，则无需在移动或合并操作中进行更新。 中的引用 `cq:tags` 属性会在 `cq:tags` 属性会进行更新，例如通过页面属性对话框。
+标记垃圾回收器是一项后台服务，可清理隐藏和未使用的标记。 隐藏和未使用的标记如下所示 `/content/cq:tags` 具有 `cq:movedTo` 属性和中，不会在内容节点上使用。 他们的数为零。 通过使用此延迟删除过程，内容节点(即 `cq:tags` 属性)，则无需在移动或合并操作中进行更新。 中的引用 `cq:tags` 属性会在 `cq:tags` 属性会进行更新，例如，通过“页面属性”对话框进行更新。
 
 标记垃圾收集器默认每天运行一次。 可在以下位置进行配置：
 
@@ -136,7 +136,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 不同语言的标记 {#tags-in-different-languages}
 
-标记 `title` 可以定义不同语言。 然后，会将语言敏感属性添加到标记节点。 此属性的格式 `jcr:title.<locale>`，例如 `jcr:title.fr` 翻译法文。 `<locale>` 必须是小写的ISO区域设置字符串，并使用下划线(`_`)，而不是连字符/短划线(`-`)，例如： `de_ch`.
+标记 `title` 可以定义不同语言。 然后，会将语言敏感属性添加到标记节点。 此属性的格式 `jcr:title.<locale>`，例如， `jcr:title.fr` 翻译法文。 `<locale>` 必须是小写的ISO区域设置字符串，并使用下划线(`_`)，而不是连字符/短划线(`-`)，例如： `de_ch`.
 
 例如，当 **动物** 标记会添加到 **产品** 页面，值 `stockphotography:animals` 会添加到资产中 `cq:tags` 的 `/content/wknd/en/products/jcr:content`. 转换从标记节点引用。
 
