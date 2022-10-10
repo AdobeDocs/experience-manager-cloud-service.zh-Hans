@@ -2,12 +2,13 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供客户端库文件夹，利用该文件夹可将客户端代码(clientlibs)存储在存储库中，将其整理为各个类别，并定义何时以及如何将每个类别的代码提供给客户端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 1%
 
 ---
+
 
 # 在AEMas a Cloud Service上使用客户端库 {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ AEM将网站的CSS和Javascript收集到一个位于中心位置的文件中，�
 
 每个 `cq:ClientLibraryFolder` 中填充了一组JS和/或CSS文件，以及一些支持文件（请参阅下文）。 的重要属性 `cq:ClientLibraryFolder` 配置如下：
 
-* `allowProxy`:由于所有clientlib都必须存储在 `apps`，此属性允许通过代理servlet访问clientlibraries。 请参阅 [查找客户端库文件夹并使用代理客户端库Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下。
+* `allowProxy`:由于所有clientlib都必须存储在 `apps`，此属性允许通过代理servlet访问客户端库。 请参阅部分 [查找客户端库文件夹并使用代理客户端库Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下。
 * `categories`:标识此文件中JS和/或CSS文件集所属的类别 `cq:ClientLibraryFolder` 摔倒。 的 `categories` 属性具有多值，允许库文件夹包含在多个类别中（请参阅下文，了解这种属性的用法）。
 
 如果客户端库文件夹包含一个或多个在运行时会合并到单个JS和/或CSS文件中的源文件。 生成的文件的名称是节点名称，其中节点名称的 `.js` 或 `.css` 文件扩展名。 例如，名为的库节点 `cq.jquery` 结果生成的文件名为 `cq.jquery.js` 或 `cq.jquery.css`.
@@ -87,7 +88,7 @@ AEM将网站的CSS和Javascript收集到一个位于中心位置的文件中，�
    * 类型：布尔型
    * 值: `true`
 1. 如果需要管理静态资源，请创建一个名为 `resources` 客户端库文件夹下。
-   * 如果在文件夹下存储静态资源 `resources`，则无法在发布实例上引用这些参数。
+   * 如果将静态资源存储在文件夹以外的任意位置 `resources`，则无法在发布实例上引用这些参数。
 1. 将源文件添加到库文件夹。
    * 这通常由的前端构建过程来完成 [AEM项目原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * 您可以根据需要将源文件组织在子文件夹中。
@@ -211,7 +212,7 @@ AEM中的客户端库文件夹还支持许多其他功能。 但是，AEMas a Cl
 
 #### 特定于应用程序的客户端库文件夹 {#app-specific-client-library-folders}
 
-最佳做法是将所有与应用程序相关的文件保留在其/apps下的应用程序文件夹中。 拒绝网站访客访问/apps文件夹的最佳做法是。 要满足这两个最佳实践，请在/etc文件夹下创建一个客户端库文件夹，该文件夹嵌入位于/apps下的客户端库。
+最佳做法是将所有与应用程序相关的文件保留在其应用程序文件夹下 `/apps`. 此外，最好还是拒绝网站访客访问 `/apps` 文件夹。 要满足这两个最佳实践，请在 `/etc` 嵌入下面客户端库的文件夹 `/apps`.
 
 使用类别属性标识要嵌入的客户端库文件夹。 要嵌入库，请向嵌入中添加资产 `cq:ClientLibraryFolder` 节点，使用以下属性属性：
 
