@@ -2,10 +2,10 @@
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 100%
+source-wordcount: '1697'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
 [受众](audiences.md)控制台用于管理 ContextHub 的区段以及 Adobe Target 帐户的受众。本文档介绍了如何管理 ContextHub 的区段。
 
-要访问您的区段，请在全局导航中，选择&#x200B;**导航 > 个性化 > 受众**。
+要访问您的区段，请在全局导航中，选择&#x200B;**导航 > 个性化 > 受众**。选择您的配置（例如WKND Site）以查看区段：
 
 ![管理受众](../assets/contexthub-segmentation-audiences.png)
 
@@ -86,7 +86,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
 要定义新区段，请执行以下操作：
 
-1. 在[访问区段](#accessing-segments)后，[导航到文件夹](#organizing-segments)（您要在该文件夹中创建区段）或将它留在根中。
+1. 之后 [访问区段](#accessing-segments), [导航到文件夹](#organizing-segments) 您希望在何处创建区段。
 
 1. 点按或单击&#x200B;**创建**&#x200B;按钮并选择&#x200B;**创建 ContextHub 区段**。
 
