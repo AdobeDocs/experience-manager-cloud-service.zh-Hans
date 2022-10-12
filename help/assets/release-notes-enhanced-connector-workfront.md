@@ -2,9 +2,9 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
+source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '619'
 ht-degree: 2%
 
 ---
@@ -15,24 +15,19 @@ ht-degree: 2%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.3( [!DNL Workfront for Experience Manager enhanced connector] 是2022年9月16日。
+最新版本1.9.4( [!DNL Workfront for Experience Manager enhanced connector] 是2022年10月7日。
 
 ## 发行亮点 {#release-highlights}
 
 的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下增强功能和错误修复：
 
-* 无法上载大小超过8 GB的文件。
-* 自动发布从Workfront发送到AEM的资产时出现问题。
-* 编辑默认元数据架构表单时，根路径字段不可用于标记字段。
-* 使用AEM工作流在Workfront中添加新版本时出现问题。
-* 在您搜索Workfront中可用的资产时，AEM会显示一条错误消息。
-* 当您为从资产创建任务创建AEM工作流，但未定义父任务名称时，不会在Workfront中创建任务。
+* 由于事件数量很大，无法在增强型连接器配置页面上查看事件订阅选项卡。
 
-
+* Workfront无法获取项目中现有文件夹的列表，这会导致创建重复的文件夹。
 
 >[!IMPORTANT]
 >
->Adobe建议您 [升级到最新的1.9.3版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建议您 [升级到最新的1.9.4版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知问题 {#known-issues}
 
@@ -43,6 +38,17 @@ ht-degree: 2%
 * Workfront显示 `SERVER_ERROR` 将文档链接到AEM时，会显示消息。 要解决此问题，请分配 `rep:readProperties` to `content/dam/collections` 表示 `wf-workfront-user` AEM用户组。
 
 ## 以前版本 {#previous-releases}
+
+### 2022年9月版 {#september-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 版本1.9.3（于9月16日发布）包含以下更新：
+
+* 无法上载大小超过8 GB的文件。
+* 自动发布从Workfront发送到AEM的资产时出现问题。
+* 编辑默认元数据架构表单时，根路径字段不可用于标记字段。
+* 使用AEM工作流在Workfront中添加新版本时出现问题。
+* 在您搜索Workfront中可用的资产时，AEM会显示一条错误消息。
+* 当您为从资产创建任务创建AEM工作流，但未定义父任务名称时，不会在Workfront中创建任务。
 
 ### 2022年8月版 {#august-2022-release}
 
