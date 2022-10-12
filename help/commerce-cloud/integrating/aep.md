@@ -10,7 +10,7 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 6b91c47f741f12cf66efd6a2ad6d9c1f4531ac70
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 1%
@@ -148,7 +148,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 的 [阿波罗客户](https://www.apollographql.com/docs/react/) 用于使用GraphQL管理本地和远程数据。 它还将GraphQL查询的结果存储在本地标准化内存中的缓存中。
 
-对于 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 要有效工作，您需要 `possibleTypes.js` 文件。 要生成此文件，请参阅 [自动生成可能的类型](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). 另外，请参阅 [PWA Studio参考实施](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 和 [`possibleTypes.js`](../assets/possibleTypes.js) 文件。
+对于 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 要有效工作，您需要 `possibleTypes.js` 文件。 要生成此文件，请参阅 [自动生成可能的类型](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). 另外，请参阅 [PWA Studio参考实施](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 和 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) 文件。
 
 
 1. 导航到 `ui.frontend` 模块并将文件另存为 `./src/main/possibleTypes.js`
