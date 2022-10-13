@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 8%
@@ -32,7 +32,7 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
 >[!NOTE]
 >
->Cloud Manager支持自定义域 **仅** 如果您使用的是AEM托管CDN。 如果您自带CDN和 [将其指向AEM托管的CDN](/help/implementing/dispatcher/cdn.md) 您必须使用该特定CDN来管理域，而不是Cloud Manager。
+>Cloud Manager支持自定义域 **仅** 如果您使用的是AEM托管CDN。 如果您自带CDN和 [将其指向AEM托管的CDN](#point-to-point-CDN) 您必须使用该特定CDN来管理域，而不是Cloud Manager。
 
 **限制流量**
 
