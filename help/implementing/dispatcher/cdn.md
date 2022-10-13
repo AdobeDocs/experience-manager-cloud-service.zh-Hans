@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1163'
 ht-degree: 8%
 
 ---
@@ -30,11 +30,15 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 1. [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
+>[!NOTE]
+>
+>Cloud Manager支持自定义域 **仅** 如果您使用的是AEM托管CDN。 如果您自带CDN和 [将其指向AEM托管的CDN](/help/implementing/dispatcher/cdn.md) 您必须使用该特定CDN来管理域，而不是Cloud Manager。
+
 **限制流量**
 
 默认情况下，对于AEM托管CDN设置，所有公共流量都可以进入生产环境和非生产（开发和暂存）环境的发布服务。 如果您希望限制给定环境的发布服务的流量（例如，限制按IP地址范围进行暂存），则可以通过Cloud Manager UI以自助方式执行此操作。
 
-请参阅 [管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 以了解更多。
+请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)了解详情。
 
 >[!CAUTION]
 >
@@ -54,10 +58,6 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 * 客户必须能够配置CDN以使用AEMas a Cloud Service — 请参阅下面提供的配置说明。
 * 客户必须有工程CDN专家随时待命，以防出现相关问题。
 * 客户必须先执行并成功通过负载测试，然后才能转到生产环境。
-
->[!NOTE]
->
->AdobeCDN不是可选的。 客户自带CDN必须将其指向AEM Managed CDN。
 
 配置说明：
 
@@ -88,7 +88,9 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
-请注意，使用您自己的CDN时，无需在Cloud Manager中安装域和证书。 AdobeCDN中的路由将使用默认域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>[!NOTE]
+>
+>使用您自己的CDN时，无需在Cloud Manager中安装域和证书。 AdobeCDN中的路由将使用默认域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
