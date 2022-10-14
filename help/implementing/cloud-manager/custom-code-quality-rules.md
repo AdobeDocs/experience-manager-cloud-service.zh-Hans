@@ -1,11 +1,11 @@
 ---
 title: 自定义代码质量规则
-description: 此页面描述了作为[代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 AEM 工程部的最佳实践。
+description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 AEM 工程部的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: d7509556e4ae7a377498f2de2bae57f3557522ac
 workflow-type: tm+mt
 source-wordcount: '3493'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >title="自定义代码质量规则"
 >abstract="此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 AEM 工程部的最佳实践。"
 
-此页面描述了作为[代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。](/help/implementing/cloud-manager/code-quality-testing.md)这些规则基于 AEM 工程部的最佳实践。
+本页介绍由Cloud Manager作为 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md). 这些规则基于 AEM 工程部的最佳实践。
 
 >[!NOTE]
 >
