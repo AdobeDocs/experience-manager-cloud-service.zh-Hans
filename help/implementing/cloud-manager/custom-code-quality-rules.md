@@ -14,7 +14,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="自定义代码质量规则"
->abstract="此页面描述了作为[代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 AEM 工程部的最佳实践。"
+>abstract="此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 AEM 工程部的最佳实践。"
 
 此页面描述了作为[代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。](/help/implementing/cloud-manager/code-quality-testing.md)这些规则基于 AEM 工程部的最佳实践。
 
