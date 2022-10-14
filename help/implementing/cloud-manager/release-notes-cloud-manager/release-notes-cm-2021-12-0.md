@@ -1,50 +1,50 @@
 ---
-title: AEMas a Cloud Service版本2021.12.0中的Cloud Manager发行说明
-description: 以下是AEMas a Cloud Service版本2021.12.0中Cloud Manager的发行说明。
+title: AEM as a Cloud Service 版本 2021.12.0 中的 Cloud Manager 发行说明
+description: 这些是 AEM as a Cloud Service 版本 2021.12.0 中的 Cloud Manager 发行说明。
 feature: Release Information
 exl-id: ee920bc5-cad7-4fac-bf73-bc1178699f90
 source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service中的Cloud Manager发行说明2021.12.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.12.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页面概述了AEMas a Cloud Service中Cloud Manager的发行说明2021.12.0。
+此页概述了 AEM as a Cloud Service 2021.12.0 中的 Cloud Manager 发行说明。
 
 >[!NOTE]
 >
->请参阅 [本页](/help/release-notes/release-notes-cloud/release-notes-current.md) ，以了解Adobe Experience Manager as a Cloud Service的最新发行说明。
+>请参阅[本页](/help/release-notes/release-notes-cloud/release-notes-current.md)，了解 Adobe Experience Manager as a Cloud Service 的当前发行说明。
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager的发布日期为2021.12.0 2021年12月16日。 下一版本计划于2022年1月20日发布。
+AEM as a Cloud Service 2021.12.0 中的 Cloud Manager 的发布日期是 2021 年 12 月 16 日。 下一个版本计划于 2022 年 1 月 20 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 提交哈希（已在UI中可见）现在也在API中提供。
-* “活动”页面现在包含一个用于运行管道的弹出窗口，该弹出窗口提供了管道详细信息概览摘要。
-* 添加了更新，以包含“活动”页面中显示的其他详细信息。
-* Cloud Manager中的“学习”选项卡现在包含对API指南和相关资源的快速访问。
-* 现在，具有部署管理器角色的用户可以从“存储库”页面的“操作”菜单中为没有分支的存储库启动项目/分支创建向导。
-* 现在，将通知处于添加或编辑管道工作流中的部署管理器在选定的存储库没有分支时如何创建分支或项目。
-* 新增了Cloud Manager自助服务功能，允许 [在环境级别添加自由格式变量和密钥。](/help/implementing/cloud-manager/environment-variables.md)
-* 使用 [参考演示附加组件](/help/journey-sites/demos-add-on/overview.md) （于2021年12月17日提供），可安装AEM产品的最新演示代码库，并准备通过 [快速网站创建工具](/help/journey-sites/quick-site/overview.md) 中。
+* 在 UI 中已经可见的承诺哈希现在也在 API 中提供。
+* “活动”页面现在包括一个用于运行管道的弹出窗口，它提供了管道详细信息的概览。
+* 添加更新，包含“活动”页面中显示的其他详细信息。
+* Cloud Manager 中的“学习”选项卡现在包括快速访问 API 指南和相关资源。
+* 具有“部署管理员”角色的用户现在可以从存储库页面上的动作菜单启动没有分支的存储库的项目/分支创建向导。
+* 现在，处于添加或编辑管道工作流中的“部署管理员”将了解如何在选定存储库没有分支的情况下创建分支或项目。
+* 已添加新的 Cloud Manager 自助服务功能，允许[在环境层添加自由格式变量和密钥](/help/implementing/cloud-manager/environment-variables.md)。
+* 有了新的[引用演示插件](/help/journey-sites/demos-add-on/overview.md)（2021 年 12 月 17 日提供），AEM 产品的最新演示代码库可以通过 Sites 中的新[快速站点创建工具](/help/journey-sites/quick-site/overview.md)安装并准备部署。
 * 前端管道现在支持管道变量。
-* 现在，可以在“程序编辑”对话框中为所有沙箱启用屏幕。
-* 概述页面中由行动动员卡提供的指南已刷新，以准确反映它与生产完整堆栈管道的关联。
-* 添加了“活动”页面的增强功能，以显示适用于管道的其他详细信息，包括源代码、提交ID等。
-* 在复制TXT条目（“TXT值”而不是“TXT记录”）时，对UI进行了次要更新，以删除潜在的混淆。
-* [与证书错误相关的文档](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) 更新了，以涵盖其他示例以及故障排除步骤。
-* 前端管道执行中现在有一个选项，可在部署到生产之前拒绝或批准。
-* Cloud Manager使用的AEM项目原型版本已更新至版本32。
+* 现在可以在“程序编辑”对话框中为所有沙盒启用屏幕。
+* 概述页面中行动号召信息卡提供的指导已刷新，可准确反映其与生产全栈管道的关联。
+* “活动”页面的增强功能被添加到适用于管道的附加细节中，包括源代码、提交 ID 等。
+* 在复制 TXT 条目（“TXT 值”而不是“TXT 记录”）时，稍微更新了 UI，可消除潜在的混淆。
+* [与证书错误相关的文档](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors)已更新，涵盖其他示例和故障排除步骤。
+* 现在，前端管道执行中提供了一个选项，可以在部署到生产环境之前拒绝或批准。
+* Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 32。
 
 
 ## 错误修复 {#bug-fixes}
 
-* 构建步骤日志中未包含功能和UI测试对象。
-* 无法通过公共API访问产品、功能和UI测试步骤的日志。
-* 在极少数情况下，从环境详细信息页面到发布或预览服务的链接将无法正常工作。
-* 即使用户在名称字段中输入不同的名称，完整堆栈生产管道仍将保留为“生产管道”。
+* 功能和 UI 测试工件未包含在构建步骤日志中。
+* 无法通过公共 API 访问产品、功能和 UI 测试步骤的日志。
+* 在极少数情况下，从环境详细信息页面到发布或预览服务的链接将不起作用。
+* 即使用户在名称字段中输入了不同的名称，全栈生产管道仍保持命名为“生产管道”。

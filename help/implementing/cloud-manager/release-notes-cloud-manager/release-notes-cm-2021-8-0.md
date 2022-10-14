@@ -1,49 +1,49 @@
 ---
-title: AEM 2021.8.0版中Cloud Manageras a Cloud Service发行说明
-description: AEM 2021.8.0版中Cloud Manageras a Cloud Service发行说明
+title: AEM as a Cloud Service 版本 2021.8.0 中的 Cloud Manager 发行说明
+description: AEM as a Cloud Service 版本 2021.8.0 中的 Cloud Manager 发行说明
 feature: Release Information
 exl-id: cf1d5c4f-404a-4ced-90f2-273c710adc0f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.8.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.8.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页概述了AEM 2021.8.0版中Cloud Manager的发行说明。
+此页概述了 AEM as a Cloud Service 2021.8.0 中的 Cloud Manager 发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
+>要查看 Adobe Experience Manager as a Cloud Service 的当前发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
-AEM 2021.8.0版中Cloud Manager的发布日期是2021年8月12日。
+AEM as a Cloud Service 2021.8.0 中的 Cloud Manager 的发布日期是 2021 年 8 月 12 日。
 
 ### 新增功能 {#what-is-new}
 
-* Cloud Service客户现在可以在Cloud Manager中查看服务级别协议(SLA)报表。 这将在今后几个月逐步提供。
-请参阅 [SLA报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) 以了解更多。
+* Cloud Service 客户现在可以在 Cloud Manager 中查看服务水平协议 (SLA) 报告。 该功能将在未来几个月逐步推出。
+请参阅 [SLA 报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)了解详情。
 
-* IndexType和的类型和严重性 `IndexDamAssetLucene` 质量规则已更改。 这两个都是拦截器的错误 *服务器*.
+* IndexType 和 `IndexDamAssetLucene` 质量规则的类型和严重性已更改。 两者均为 Blocker *级别*&#x200B;错误。
 
-* 新的Oak索引质量规则已引入，以涵盖异步和tika配置。
+* 引入新的 Oak 索引质量规则以涵盖异步和 Tika 配置。
 
-* 将每个程序的最大SSL证书数增加到50个。
+* 将每个程序的最大 SSL 证书数增加到 50。
 
-* 允许用户通过Cloud Manager UI创建和管理多个存储库的自助服务功能。
+* 借助自助服务功能，用户可通过 Cloud Manager UI 创建和管理多个存储库。
 
-* SonarQube不必要地读取Git历史数据。 在大型代码库中，这可能会导致不必要的内部版本性能损失。
+* SonarQube 未成功读取 Git 历史数据。 在大代码库情况下，这可能会导致出现不必要的构建性能损失。
 
-* 现在有一个API可用于使每个管道的Maven依赖关系缓存失效。
+* 现在有一个 API 可用于使每个管道的 Maven 依赖项缓存失效。
 
-* Cloud Manager使用的AEM项目原型版本已更新至版本29。
+* Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 29。
 
 ### 错误修复 {#bug-fixes}
 
-* 当最新版本小于当前版本时，不应显示“更新可用”状态。
+* 当最新版本低于当前版本时，不应显示“更新可用”状态。
 
-* 对于名称很长的新组织，初始载入失败。
+* 对于名字很长的新组织，初始登录失败。
 
-* 有时，当由于某些原因触发管道两次时，会导致其中一次执行失败 *无法更新管道执行状态* 错误。
+* 有时，当管道由于某种原因被触发两次时，会导致其中一个执行失败，并出现&#x200B;*无法更新管道执行状态*&#x200B;错误。

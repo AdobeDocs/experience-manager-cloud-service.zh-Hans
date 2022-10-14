@@ -1,41 +1,41 @@
 ---
 title: 添加 SSL 证书
-description: 了解如何使用Cloud Manager的自助工具添加您自己的SSL证书。
+description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # 添加 SSL 证书 {#adding-an-ssl-certificate}
 
-了解如何使用Cloud Manager的自助工具添加您自己的SSL证书。
+了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 
 >[!TIP]
 >
->配置证书可能需要几天时间。 因此，Adobe建议提前配置证书。
+>提供证书可能需要几天时间。 因此，Adobe 建议提前提供证书。
 
 ## 证书格式 {#certificate-format}
 
-SSL证书文件必须采用PEM格式才能与Cloud Manager一起安装。 PEM格式的常见文件扩展名包括 `.pem,` .`crt`, `.cer`, 和 `.cert`.
+SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 PEM 格式的常见文件扩展名包括 `.pem,`。`crt`, `.cer`, 和 `.cert`.
 
-以下 `openssl` 命令可用于转换非PEM证书。
+以下 `openssl` 命令可用于转换非 PEM 证书。
 
-* 将PFX转换为PEM
+* 将 PFX 转化为 PEM
 
    ```shell
    openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
    ```
 
-* 将P7B转换为PEM
+* 将 P7B 转化为 PEM
 
    ```shell
    openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
    ```
 
-* 将DER转换为PEM
+* 将 DER 转化为 PEM
 
    ```shell
    openssl x509 -inform der -in certificate.cer -out certificate.pem
@@ -43,42 +43,42 @@ SSL证书文件必须采用PEM格式才能与Cloud Manager一起安装。 PEM格
 
 ## 添加证书 {#adding-a-cert}
 
-按照以下步骤使用Cloud Manager添加证书。
+按照以下步骤使用 Cloud Manager 添加证书。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 导航到 **环境** 屏幕 **概述** 页面。
+1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 单击 **SSL证书** 中。 主屏幕上将显示包含任何现有SSL证书详细信息的表。
+1. 从左侧导航面板中单击 **SSL 证书**。 主屏幕上将显示一个包含任何现有 SSL 证书详细信息的表。
 
-   ![添加SSL证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![添加 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 单击 **添加SSL证书** 打开 **添加SSL证书** 对话框。
+1. 单击&#x200B;**添加 SSL 证书**，打开&#x200B;**添加 SSL 证书**&#x200B;对话框。
 
-   * 在 **证书名称**.
-      * 此名称仅供参考，可以是帮助您轻松引用证书的任何名称。
-   * 粘贴 **证书**, **私钥**&#x200B;和 **证书链** 值。 这三个字段都是必填字段。
+   * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
+      * 这仅供参考，可以是任何有助于您轻松引用证书的名称。
+   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。 这三个字段都是必填字段。
 
-   ![“添加SSL证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![添加“SSL 证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
    * 将显示检测到的任何错误。
-      * 您必须先解决所有错误，然后才能保存您的证书。
-      * 请参阅 [证书错误](#certificate-errors) 部分以了解有关解决常见错误的更多信息。
+      * 在保存证书之前，必须解决所有错误。
+      * 请参阅[证书错误](#certificate-errors)部分，了解有关解决常见错误的更多信息。
 
 
-1. 单击 **保存** 来保存您的证书。
+1. 单击&#x200B;**保存**，保存您的证书。
 
-保存后，您将在表格中看到证书显示为新行。
+保存后，您将看到证书在表中显示为新行。
 
-![保存的SSL证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![保存的 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 >[!NOTE]
 >
->用户必须是 **业务所有者** 或 **部署管理器** 角色，以便在Cloud Manager中安装SSL证书。
+>用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中安装 SSL 证书。
 
 ## 证书错误 {#certificate-errors}
 
-如果证书安装不正确或满足Cloud Manager的要求，则可能会出现某些错误。
+如果证书安装不正确或不符合 Cloud Manager 的要求，则可能会出现某些错误。
 
 ### 证书策略 {#certificate-policy}
 
@@ -88,9 +88,9 @@ SSL证书文件必须采用PEM格式才能与Cloud Manager一起安装。 PEM格
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-通常，证书策略由嵌入的OID值标识。 将证书输出到文本并搜索OID将显示证书的策略。
+通常，证书策略由嵌入的 OID 值标识。 将证书输出到文本并搜索 OID 将显示证书的策略。
 
-您可以将证书详细信息输出为文本，参考以下示例。
+您可以使用以下示例作为指导，将证书详细信息输出为文本。
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -109,15 +109,15 @@ certificate:
 ...
 ```
 
-文本中的OID模式定义证书的策略类型。
+文本中的 OID 模式定义证书的策略类型。
 
-| 图案 | 策略 | 在Cloud Manager中可接受 |
+| 图案 | 策略 | 在 Cloud Manager 中可接受 |
 |---|---|---|
 | `2.23.140.1.1` | EV | 是 |
 | `2.23.140.1.2.2` | OV | 是 |
 | `2.23.140.1.2.1` | DV | 否 |
 
-按 `grep`对于输出证书文本中的OID模式，您可以确认您的证书策略。
+通过 `grep`ping 输出证书文本中的 OID 模式，您可以确认您的证书策略。
 
 ```shell
 # "EV Policy"
@@ -134,15 +134,15 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 证书部署失败的最常见原因是中间证书或链证书的顺序不正确。
 
-中间证书文件必须以根证书或最接近根的证书结尾。 它们必须按 `main/server` 证书到根。
+中间证书文件必须以根证书或最接近根的证书结尾。 它们必须从 `main/server` 证书降序到根目录。
 
-您可以使用以下命令确定中间文件的顺序。
+可以使用以下命令确定中间文件的顺序。
 
 ```shell
 openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
 ```
 
-您可以验证私钥和 `main/server` 证书匹配。
+您可以使用以下命令验证私钥和 `main/server` 证书是否匹配。
 
 ```shell
 openssl x509 -noout -modulus -in certificate.pem | openssl md5
@@ -154,8 +154,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->这两个命令的输出必须完全相同。 如果找不到与 `main/server` 证书中，您将需要通过生成新的CSR和/或从SSL供应商请求更新的证书来重新为证书加密密钥。
+>这两个命令的输出必须完全相同。 如果您找不到 `main/server` 证书的匹配私钥，您将需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
 
-### 证书有效期 {#certificate-validity-dates}
+### 证书有效日期 {#certificate-validity-dates}
 
-Cloud Manager希望SSL证书在当前日期起至少90天内有效。 您应该检查证书链的有效性。
+Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。 您应该检查证书链的有效性。

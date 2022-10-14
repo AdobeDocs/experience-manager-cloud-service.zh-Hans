@@ -1,29 +1,29 @@
 ---
-title: AEM 2021.1.0版中Cloud Manageras a Cloud Service的发行说明
-description: AEM 2021.1.0版中Cloud Manageras a Cloud Service的发行说明
+title: AEM as a Cloud Service 版本 2021.1.0 中的 Cloud Manager 发行说明
+description: AEM as a Cloud Service 版本 2021.1.0 中的 Cloud Manager 发行说明
 feature: Release Information
 exl-id: 62d6fea6-32cb-489a-a7ef-e7a43d186b33
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.1.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.1.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页概述了AEM 2021.1.0版中Cloud Manager的发行说明。
+此页概述了 AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM 2021.1.0版中Cloud Manager的发布日期是2021年1月14日。
+AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 的发布日期是 2021 年 1 月 14 日。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 错误修复  {#bug-fixes}
 
-* 资产生产实例有时可能会在 **环境** 详细信息页面 *待定* 而不允许用户执行任何操作。
+* 资产生产实例有时会在&#x200B;**环境**&#x200B;详情页面中显示 Brand Portal 的状态为&#x200B;*等待*，此时不允许用户采取任何操作。
 
-* 从Cloud Manager触发解除休眠时，有时即使成功启动解除休眠，也会显示失败消息。
+* 从 Cloud Manager 触发解除休眠时，有时即使成功启动解除休眠，也会显示失败消息。
 
-* 解决了在环境创建或删除中遇到的极少数失败案例。
+* 在创建或删除环境时遇到的罕见故障已得到解决。

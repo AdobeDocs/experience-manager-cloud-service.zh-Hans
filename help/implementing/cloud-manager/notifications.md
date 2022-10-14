@@ -1,11 +1,11 @@
 ---
 title: 通知
-description: 了解如何使用Adobe Experience Cloud通知系统接收有关管道部署的信息。
+description: 了解如何使用 Adobe Experience Cloud 通知系统接收有关管道部署的信息。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 

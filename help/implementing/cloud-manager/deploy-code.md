@@ -70,20 +70,20 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 **暂存测试**&#x200B;阶段包含这些步骤。
 
 * **产品功能测试** – Cloud Manager 管道执行针对暂存环境运行的测试。
-   * 请参阅[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)文档，了解更多详细信息。
+   * 请参阅文档[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)，了解更多详细信息。
 
 * **自定义功能测试** – 管道中的此步骤始终执行，不能跳过。 如果构建没有生成测试 JAR，则默认情况下测试通过。
-   * 请参阅[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)文档，了解更多详细信息。
+   * 请参阅文档[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)，了解更多详细信息。
 
 * **自定义 UI 测试** – 此步骤是一个可选功能，可自动运行为自定义应用程序创建的 UI 测试。
    * UI 测试是打包在 Docker 图像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。
-   * 请参阅[自定义 UI 测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)文档，了解更多详细信息。
+   * 请参阅文档[自定义 UI 测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)，了解更多详细信息。
 
 * **体验审核** – 管道中的此步骤始终执行，不能跳过。 在执行生产管道时，在将运行检查的自定义功能测试之后，会包含体验审核步骤。
    * 配置的页面将提交给服务并进行评估。
    * 审核结果是信息性的，显示分数以及当前分数和以前分数之间的变化。
    * 此细节对于确定当前部署中是否会引入回归非常有用。
-   * 请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)文档，了解更多详细信息。
+   * 请参阅文档[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)，了解更多详细信息。
 
 ![暂存测试](assets/stage-testing.png)
 

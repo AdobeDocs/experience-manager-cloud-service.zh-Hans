@@ -1,42 +1,42 @@
 ---
-title: Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.4.0发行说明
-description: 以下是AEM as a Cloud Service中Cloud Manager 2022.4.0的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.4.0 发行说明
+description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.4.0 发行说明。
 feature: Release Information
 exl-id: e7ff623b-aeca-40a6-bf48-98af270a4117
 source-git-commit: 458d63c27bb2ab4d09237aa3ecb96c0f6d5e67ed
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service中的Cloud Manager 2022.4.0发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.4.0 发行说明 {#release-notes}
 
-本页记录了AEMas a Cloud Service中Cloud Manager 2022.4.0的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2022.4.0 的发行说明。
 
 >[!NOTE]
 >
->请参阅 [本页](/help/release-notes/release-notes-cloud/release-notes-current.md) ，以了解Adobe Experience Manager as a Cloud Service的最新发行说明。
+>请参阅[本页](/help/release-notes/release-notes-cloud/release-notes-current.md)，了解 Adobe Experience Manager as a Cloud Service 的当前发行说明。
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.4.0版的发布日期是2022年4月7日。 下一版本计划于2022年5月5日发布。
+AEM as a Cloud Service 2022.4.0 中的 Cloud Manager 的发布日期是 2022 年 4 月 7 日。下一个版本计划于 2022 年 5 月 5 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 已实施管道构建步骤的持续时间和成功率的改进，并将在4月之前逐步推广到所有客户。
-* 现在，您可以通过在添加和编辑管道向导的输入字段中键入名称的前几个字符，然后从两者的建议匹配中进行选择，轻松找到git分支 [生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [非生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 管道。
-* 4月版发布后不久，在环境创建过程中定义云区域时，印度将可供选择。
-* 的 **管道** 现在，页面已进行分页，以提高具有大量管道的程序的可用性。
-   * 表中将显示每页50行。
-* 的版本 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) Cloud Manager使用的已更新到版本36。
-* OracleJDK现在是用于开发和操作AEM应用程序的默认JDK。 即使在Maven工具链中明确选择了替代选项，Cloud Manager构建过程仍会自动切换到使用OracleJDK。
-   * 要详细了解如何切换到OracleJDK，请参阅 [构建环境文档。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)
-   * 请参阅 [Adobe Experience Manager的Java支持策略常见问题解答](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf) 以解决有关此更改的常见问题。
-* 现在，通过在验证步骤中检测旧版AEM，可以更快地执行管道。 用户将在UI中看到一条消息来指导他们。
+* 已对管道构建步骤的持续时间和成功率进行改进，并将在 4 月份逐步推广到所有客户。
+* 现在，通过在添加和编辑管道向导的输入字段中键入名称的前几个字符，并从建议的匹配项中选择 [生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)管道，即可轻松找到 Git 分支。
+* 4 月份发布后不久，在环境创建期间定义云区域时，印度将可供选择。
+* **管道**&#x200B;页面现在具有分页功能，可提高具有大量管道项目的可用性。
+   * 在表中，每页显示 50 行。
+* Cloud Manager 使用的 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)的版本已更新到版本 36。
+* Oracle JDK 现在是用于开发和运行 AEM 应用程序的默认 JDK。Cloud Manager 构建流程将自动切换为使用 Oracle JDK，即使已在 Maven 工具链中明确选定替代选项也是如此。
+   * 要了解有关如何切换到 Oracle JDK 的更多信息，请参阅[构建环境文档。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)
+   * 请参阅 [Adobe Experience Manager 的 Java 支持策略常见问题](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf)，解决有关此更改的常见问题。
+* 现在，通过在验证步骤中检测较旧的 AEM 版本，管道执行将更快地失败。 用户将在 UI 中看到一条消息为其提供指导。
 
 ## 错误修复 {#bug-fixes}
 
-* 现在，可通过UI下载在UI测试步骤中创建的日志。
-* Web层配置管道现在只能重复执行Web层配置中的包。
-* 为UI中的消息添加了关于如何在过时环境中更新AEM的更清晰说明。
+* 现在可以通过 UI 下载在 UI 测试步骤中创建的日志。
+* Web 层配置管道现在只能重用 Web 层配置执行中的包。
+* 用户界面中关于如何在过时的环境中更新 AEM 的消息更加清晰。

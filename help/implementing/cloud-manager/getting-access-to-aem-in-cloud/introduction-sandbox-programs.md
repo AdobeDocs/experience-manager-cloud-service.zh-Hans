@@ -33,11 +33,11 @@ ht-degree: 96%
 
 ## 限制和条件 {#limitations}
 
-因为沙盒程序不适合实时流量，所以其使用有一定的限制和条件，这使沙河程序与生产程序不同。
+因为沙盒程序不适合实时流量，所以其使用有一定的限制和条件，这使得沙盒程序与生产程序不同。
 
 ### 无实时流量 {#live-traffic}
 
-沙盒程序不会承载实时流量，因此不受 [AEM as a Cloud Service 承诺的约束。](https://www.adobe.com/legal/service-commitments.html)
+沙盒程序不会承载实时流量，因此不受 [AEM as a Cloud Service 承诺的约束。](https://www.adobe.com/cn/legal/service-commitments.html)
 
 ### 无自动缩放 {#auto-scaling}
 
@@ -55,18 +55,17 @@ ht-degree: 96%
 
 AEM 更新不会自动推送到沙盒程序，但可以手动应用到沙盒程序中的环境。
 
-* 只有在目标环境具有正确配置的管道时，才能运行手动更新。
-* 手动更新生产环境或登台环境将自动更新其他环境。生产 + 暂存环境集必须位于同一 AEM 版本上。
+* 只有目标环境具有正确配置的管道时，才能运行手动更新。
+* 手动更新生产环境或暂存环境将自动更新其他环境。生产 + 暂存环境集必须位于同一 AEM 版本上。
 
 有关详细信息，请参阅文档 [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)。
 
-请参阅文档[更新环境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)了解如何更新环境。
+请参阅文档[更新环境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)了解具体操作步骤。
 
 ### 休眠和删除 {#hibernation}
 
-沙盒程序中的环境在 8 小时不活动后自动休眠。 一旦
-休眠后，可以手动解除休眠。
+沙盒程序中的环境在 8 小时不活动后自动休眠。 一旦休眠后，可以手动解除休眠。
 
 沙盒程序在连续休眠模式下运行 6 个月后会被删除，然后可以重新创建。
 
-有关更多详细信息，请参阅[休眠和取消休眠沙盒环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)。
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)。

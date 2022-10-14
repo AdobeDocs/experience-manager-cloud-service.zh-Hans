@@ -1,111 +1,111 @@
 ---
 title: 添加自定义域名
-description: 了解如何使用Cloud Manager添加自定义域名。
+description: 了解如何使用 Cloud Manager 添加自定义域名。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 0febf4b4a59617e6cc4f8414963c4a91fcf8765e
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # 添加自定义域名 {#adding-cdn}
 
-您可以在Cloud Manager中从两个位置添加自定义域名：
+您可以从 Cloud Manager 中的两个位置添加自定义域名：
 
 * [从“域设置”页面](#adding-cdn-settings)
 * [从“环境”页面](#adding-cdn-environments)
 
 >[!NOTE]
 >
->用户必须具有 **业务所有者** 或 **部署管理器** 角色，以便在Cloud Manager中添加自定义域名
+>用户必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色，才能在 Cloud Manager 中添加自定义域名
 
-## 从“域设置”页面添加自定义域名 {#adding-cdn-settings}
+## 从域设置页面添加自定义域名 {#adding-cdn-settings}
 
-请按照以下步骤从 **域设置** 页面。
+按照以下步骤从&#x200B;**域设置**&#x200B;页面添加自定义域名。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 导航到 **环境** 屏幕 **概述** 页面。
+1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 单击 **域设置** 中。
+1. 单击左侧导航面板中的&#x200B;**域设置**。
 
-   ![“域设置”窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
+   ![域设置窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 单击 **添加域** 按钮以打开 **添加域名** 对话框。
+1. 单击右上角的&#x200B;**添加域**&#x200B;按钮，打开&#x200B;**添加域名**&#x200B;对话框。
 
-   ![“添加域”对话框](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
+   ![“添加域”对话框](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)。
 
-1. 在 **域名** 字段。
+1. 在&#x200B;**域名**&#x200B;字段中输入自定义域名。
 
    >[!NOTE]
    >
-   >不包括 `http://`, `https://`、或空格。
+   >输入域时不要包含 `http://`、`https://` 或空格。
 
-1. 选择 **环境** 其服务将与域名关联。
+1. 选择其服务将与域名关联的&#x200B;**环境**。
 
-1. 选择 **发布** 或 **预览** 服务。
+1. 选择&#x200B;**发布**&#x200B;或&#x200B;**预览**&#x200B;服务。
 
-1. 选择 **域SSL证书** 与域名关联，请从下拉菜单中选择 **继续**.
+1. 从下拉列表中选择与域名关联的&#x200B;**域 SSL 证书**，然后选择&#x200B;**继续**。
 
-1. 的 **添加域名** 对话框，将带您进入域名验证过程。 按照提供的说明来证明您环境的域所有权。 单击 **创建**.
+1. 此时会出现&#x200B;**添加域名**&#x200B;对话框，您将从此进入域名验证过程。 按照提供的说明，证明您环境的域所有权。 单击&#x200B;**创建**。
 
    ![域名验证](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-CDN部署需要有效的SSL证书和成功的TXT验证。 状态指示 **已验证和部署**.
+CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x200B;**已验证和已部署**&#x200B;表示。
 
-请参阅文档 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 了解有关各种状态以及如何解决潜在问题的更多信息。
+请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)文档，了解有关各种状态的更多信息以及如何解决潜在问题。
 
 >[!NOTE]
 >
->由于DNS传播延迟，DNS验证可能需要数小时才能处理。
+>由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
 >
->Cloud Manager将验证所有权并更新状态，这些状态可在域设置表中查看。 请参阅文档 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以了解更多详细信息。
+>Cloud Manager 将验证所有权并更新可在域设置表中看到的状态。 请参阅文档[检查自定义域名驻阿根廷](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，了解更多详细信息。
 
 >[!TIP]
 >
->请参阅 [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 了解有关TXT记录的更多信息。
+>请参阅[添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，了解有关 TXT 记录的更多信息。
 
-## “从环境添加自定义域名”页 {#adding-cdn-environments}
+## 从“环境”页面添加自定义域名 {#adding-cdn-environments}
 
-请按照以下步骤从 **环境** 页面。
+按照以下步骤从&#x200B;**环境**&#x200B;页面添加自定义域名。
 
-1. 登录Cloud Manager(位于 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择相应的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 导航到 **环境详细信息** 页面。
+1. 导航至&#x200B;**环境详情**&#x200B;页面，了解感兴趣的环境。
 
-   ![在“环境详细信息”页面中输入域名](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
+   ![在“环境详情”页面上输入域名](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
 
-1. 使用 **域名** 表来提交自定义域名。
+1. 使用&#x200B;**域名**&#x200B;表提交自定义域名。
 
    1. 输入自定义域名。
-   1. 从下拉列表中选择与此名称关联的SSL证书。
-   1. 单击 **+添加**.
+   1. 从下拉列表中选择与此名称关联的 SSL 证书。
+   1. 单击&#x200B;**+ 添加**。
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. 检查 **添加域名** 对话框，单击 **继续**.
+1. 检查&#x200B;**添加域名**&#x200B;对话框中选择的值，然后单击&#x200B;**继续**。
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >
-   >不包括 `http://`, `https://`、或在域名中输入空格。
+   >输入域名时不要包含 `http://`、`https://` 或空格。
 
-1. 的 **添加域名** 对话框，将带您进入域名验证过程。 按照提供的说明来证明您环境的域所有权。 单击 **创建**.
+1. 此时会出现&#x200B;**添加域名**&#x200B;对话框，您将从此进入域名验证过程。 按照提供的说明，证明您环境的域所有权。 单击&#x200B;**创建**。
 
    ![域名验证](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-CDN部署需要有效的SSL证书和成功的TXT验证。 状态指示 **已验证和部署**.
+CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x200B;**已验证和已部署**&#x200B;表示。
 
-请参阅文档 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 了解有关各种状态以及如何解决潜在问题的更多信息。
+请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)文档，了解有关各种状态的更多信息以及如何解决潜在问题。
 
 >[!NOTE]
 >
->由于DNS传播延迟，DNS验证可能需要数小时才能处理。
+>由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
 >
->Cloud Manager将验证所有权并更新状态，这些状态可在域设置表中查看。 请参阅文档 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以了解更多详细信息。
+>Cloud Manager 将验证所有权并更新可在域设置表中看到的状态。 请参阅文档[检查自定义域名驻阿根廷](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，了解更多详细信息。
 
 >[!TIP]
 >
->请参阅 [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 了解有关TXT记录的更多信息。
+>请参阅[添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，了解有关 TXT 记录的更多信息。

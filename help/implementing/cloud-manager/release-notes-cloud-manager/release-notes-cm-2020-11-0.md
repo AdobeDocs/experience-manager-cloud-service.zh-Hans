@@ -1,35 +1,35 @@
 ---
-title: AEMas a Cloud Service版本2020.11.0中的Cloud Manager发行说明
-description: AEMas a Cloud Service版本2020.11.0中的Cloud Manager发行说明
+title: AEM as a Cloud Service 版本 2020.11.0 中的 Cloud Manager 发行说明
+description: AEM as a Cloud Service 版本 2020.11.0 中的 Cloud Manager 发行说明
 feature: Release Information
 exl-id: e2acf515-d339-4d2b-9b62-09c1dab1ffac
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service中的Cloud Manager发行说明2020.11.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.11.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页概述了AEM as a Cloud Service 2020.11.0中Cloud Manager的发行说明。
+此页概述了 AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 发行说明。
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager的发行日期为2020.11.0 2020年11月12日。
+AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 的发布日期是 2020 年 11 月 12 日。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 新增功能 {#what-is-new}
 
-* 新菜单选项 **本地登录** 现在，用户可以从“环境”卡和“环境摘要”页面上的环境菜单选项中访问。
+* 用户现在可以从“环境”信息卡和“环境摘要“页面上的环境菜单选项中使用新的菜单选项&#x200B;**本地登录**。
 有关更多详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md#login-locally)。
 
-* 的 **学习** 选项卡，此选项卡已在UI中刷新为新图像。
+* Cloud Manager 中的&#x200B;**学习**&#x200B;选项卡已在 UI 中用新图像刷新。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
-* 需要下载Maven插件，才能加载执行生成之前完成的依赖项。
-* 现在，Cloud Manager页脚中用于选择语言的链接将导航到正确的位置。
-* 有时，在代码扫描期间，SonarQube进程不会启动。 现在将自动检测并尝试重新启动。
-* 所有现有的生产管道都将通过体验审核步骤自动启用。
+* 在构建执行之前完成的依赖项加载需要下载 Maven 插件。
+* Cloud Manager 页脚中用于选择语言的链接现在将导航到正确的位置。
+* 有时在代码扫描期间，SonarQube 进程不会启动。 现在将自动检测并尝试重新启动。
+* 所有现有生产管道都将通过体验审核步骤自动启用。

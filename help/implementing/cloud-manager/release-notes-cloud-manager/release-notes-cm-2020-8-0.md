@@ -1,63 +1,63 @@
 ---
-title: AEM 2020.8.0版中Cloud Manageras a Cloud Service的发行说明
-description: AEM 2020.8.0版中Cloud Manageras a Cloud Service的发行说明
+title: AEM as a Cloud Service 版本 2020.8.0 中的 Cloud Manager 发行说明
+description: AEM as a Cloud Service 版本 2020.8.0 中的 Cloud Manager 发行说明
 feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '423'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.8.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.8.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页概述了AEM 2020.8.0版中Cloud Manager的发行说明。
+此页概述了 AEM as a Cloud Service 2020.8.0 中的 Cloud Manager 发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM 2020.8.0版中Cloud Manager的发布日期是2020年8月6日。
+AEM as a Cloud Service 2020.8.0 中的 Cloud Manager 的发布日期是 2020 年 8 月 6 日。
 
 ## 新增功能 {#whats-new-cloud-manager}
 
-* 内容审核是Cloud Manager Sites Production Pipelines中启用的一项功能。 现在，具有Sites的程序的生产管道配置包含一个名为 **内容审核**. 每当运行生产管道时，一个新的内容审核步骤将在自定义功能测试后包含在管道中，该步骤将根据多个维度(包括性能、SEO（搜索引擎优化）、辅助功能、最佳实践和PWA（渐进式Web应用程序）在内)来评估站点。
+* 内容审核是 Cloud Manager Sites 生产管道上启用的一项功能。 带有 Sites 的程序的生产管道配置现在包括名为&#x200B;**内容审核**&#x200B;的第三个选项卡。 无论何时运行生产管道，都会在自定义功能测试后在管道中包含一个新的“内容审核”步骤，该步骤将根据多个维度评估网站，包括性能、SEO（搜索引擎优化）、可访问性、最佳实践和 PWA (Progressive Web App)。
 
 
    >[!NOTE]
-   >内容审核现已重命名为“体验审核”。
+   >内容审核已重命名为体验审核。
 
-   请参阅 [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md) 以了解更多详细信息。
+   有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
-* 现在， Assets项目中新建的环境将自动配置为智能内容服务。
+* Assets 程序中新建环境现在将自动配置为智能内容服务。
 
-* 可以在Cloud Manager的中解除休眠环境的休眠 **概述** 页面。
+* 休眠环境可以从 Cloud Manager 的&#x200B;**概述**&#x200B;页面中解除休眠。
 
-* 能够在页面上执行由Google Lighthouse提供支持的“体验检查”功能。 作为Cloud Manager管道的一部分，可通过体验KPI检查和验证多达25个页面，并在Cloud Manager UI中显示得分。
+* 能够在页面上执行体验检查，由 Google Lighthouse 提供支持。 作为 Cloud Manager 管道的一部分，最多可以根据体验 KPI 检查和验证 25 个页面，分数显示在 Cloud Manager UI 中。
 
 ### 错误修复 {#bug-fixes-cm}
 
-* 在代码质量扫描中，正在执行一些不必要的和不需要的SonarQube插件。
+* 作为代码质量扫描的一部分，正在执行一些不必要且不受欢迎的 SonarQube 插件。
 
 * 在管道执行页面上，分支名称的格式不正确。
 
-* 在某些情况下，已完成的管道执行未被成功记录为已完成，从而阻止管道的新执行。
+* 在某些情况下，已完成的管道执行未成功记录为已完成，从而阻止了新的管道执行。
 
-* 管道执行偶尔会收到 *卡住* 因内部通信问题。
+* 由于内部通信问题，管道执行偶尔会&#x200B;*卡住*。
 
-* 在配置新组织时，系统管理员以外的一些具有管理角色的用户错误地获得了Cloud Manager的访问权限。
+* 在配置新组织时，一些具有系统管理员以外管理角色的用户被错误地授予访问 Cloud Manager 的权限。
 
-* 在某些情况下，更新索引作业并行多次启动，从而导致部署失败。
+* 在某些情况下，更新索引作业同时多次启动，导致部署失败。
 
-* 程序卡片上的工具提示并不一致。
+* 程序卡上的工具提示不一致。
 
-* 用户界面错误地允许在删除环境时尝试在环境中执行操作。
+* 删除用户界面时，错误地允许在环境上尝试操作。
 
-* Cloud Manager的 **概述** 页面。
+* Cloud Manager 的&#x200B;**概述**&#x200B;页面上颜色不匹配。
 
 ### 已知问题 {#known-issues-cm}
 
-* 包含的页面无效，导致内容审核平均分数低于应有值。
+* 包含无效页面，使内容审核平均分数低于应有值。
 
-* “内容审核”选项卡未正确显示使用创作域而非发布域的基本URL。
+* “内容审核”选项卡使用作者域而非发布域错误地显示了基本 URL。
 
-* 要激活“内容审核”步骤，用户必须编辑管道，并（可选）添加页面。 如果未添加页面，则会审核主页。
+* 为了激活“内容审核”步骤，用户必须编辑管道，也可以选择添加页面。 如果没有添加页面，将审核主页。

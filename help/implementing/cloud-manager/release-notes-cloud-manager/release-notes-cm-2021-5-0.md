@@ -1,56 +1,56 @@
 ---
-title: AEM 2021.5.0版中Cloud Manager的发行说明
-description: AEM 2021.5.0版中Cloud Manager的发行说明
+title: AEM as a Cloud Service 版本 2021.5.0 中的 Cloud Manager 发行说明
+description: AEM as a Cloud Service 版本 2021.5.0 中的 Cloud Manager 发行说明
 feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.5.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.5.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页概述了AEM 2021.5.0版中Cloud Manager的发行说明。
+此页概述了 AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
+>要查看 Adobe Experience Manager as a Cloud Service 的当前发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
-AEM 2021.5.0版中Cloud Manager的发布日期是2021年5月6日。
+AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年 5 月 6 日。
 
 ### 新增功能 {#what-is-new}
 
-* PackageOverlaps质量规则现在会检测在同一部署的包集中多次部署同一包的情况，即在多个嵌入位置中部署同一包的情况。
+* PackageOverlaps 质量规则现在可检测多次部署同一个包的情况；即在同一个部署的包集中部署在多个嵌入位置。
 
-* 现在，公共API中的存储库端点包含Git URL。
+* 公共 API 中的存储库端点现在包括 Git URL。
 
-* Cloud Manager用户下载的部署日志将更有洞察力，现在将包含有关失败和成功方案的详细信息。
+* Cloud Manager 用户下载的部署日志将更具实用价值，现在其中包括关于失败和成功情况的详细信息。
 
-* 现在，已解决将代码推送到AdobeGit时遇到的间歇性故障。
+* 现已解决将代码推送到 Adobe git 时遇到的间歇性故障。
 
-* 现在，可以在编辑项目工作流期间将商务加载项应用于沙盒项目。
+* 现在可在“编辑程序”工作流程中将商业加载项应用于沙盒程序。
 
-* 的 *编辑程序* 体验已刷新。
+* 已更新&#x200B;*编辑程序*&#x200B;体验。
 
-* “环境详细信息”页面中的“域名”表将通过分页显示多达250个域名。
+* “环境详情”页面中的“域名”表将通过分页的方式显示最多 250 个域名。
 
-* 的 **解决方案和附加组件** 选项卡 **添加程序** 和 **编辑程序** 工作流将显示解决方案，即使只有一个解决方案可供计划使用。
+* 即使程序只有一个解决方案可用，**添加程序**&#x200B;和&#x200B;**编辑程序**&#x200B;工作流中的&#x200B;**解决方案和插件**&#x200B;选项卡将显示解决方案。
 
-* 生成步骤日志中未生成任何已部署的内容包时的错误消息不明确。
+* 当构建未生成任何部署的内容包时构建步骤日志中的错误消息不明确。
 
 ### 错误修复 {#bug-fixes}
 
-* 有时，即使未部署该配置，用户也可能会在IP允许列表旁边看到绿色的“活动”状态。
+* 有时，即使未部署配置，用户也会在 IP 允许列表旁边看到绿色的“活动”状态。
 
-* 管道变量API将只用状态标记它们，而不删除“已删除”变量 **已删除**.
+* 管道变量 API 不会移除“已删除”变量，而只会将其标记为&#x200B;**已删除**&#x200B;状态。
 
-* 某些代码气味类型的质量问题错误地影响了可靠性评级。
+* 一些代码气味类型的质量问题错误地影响了可靠性评级。
 
-* 由于不支持通配符域，因此UI将禁止用户提交通配符域。
+* 由于不支持通配符域，UI 将禁止用户提交通配符域名。
 
-* 当从午夜UTC到凌晨1点之间开始管道执行时，Cloud Manager生成的对象版本不保证大于前一天创建的版本。
+* 当管道执行在 UTC 午夜至凌晨 1 点之间启动时，Cloud Manager 生成的工件版本不能保证大于前一天创建的版本。
 
-* 在沙盒项目设置过程中，成功创建包含示例代码的项目后，“概述”页面中的“管理Git”将显示为主页卡中的链接。
+* 在沙盒程序设置过程中，一旦成功创建了带有示例代码的项目，“管理 Git”将作为主信息卡中的链接出现在”概述“页面中。

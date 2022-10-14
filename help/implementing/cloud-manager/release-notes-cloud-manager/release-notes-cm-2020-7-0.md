@@ -1,22 +1,22 @@
 ---
-title: AEM 2020.7.0版中Cloud Manageras a Cloud Service的发行说明
-description: AEM 2020.7.0版中Cloud Manageras a Cloud Service的发行说明
+title: AEM as a Cloud Service 版本 2020.7.0 中的 Cloud Manager 发行说明
+description: AEM as a Cloud Service 版本 2020.7.0 中的 Cloud Manager 发行说明
 feature: Release Information
 exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.7.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.7.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页概述了AEM 2020.7.0版中Cloud Manager的发行说明。
+此页概述了 AEM as a Cloud Service 2020.7.0 中的 Cloud Manager 发行说明。
 
 ## 发布日期 {#release-date}
 
-AEM 2020.7.0版中Cloud Manager的发布日期是2020年7月9日。
+AEM as a Cloud Service 2020.7.0 中的 Cloud Manager 的发布日期是 2020 年 7 月 9 日。
 
 ## 新增功能 {#whats-new-cloud-manager}
 
@@ -31,15 +31,15 @@ AEM 2020.7.0版中Cloud Manager的发布日期是2020年7月9日。
 
    有关更多详细信息，请参阅管道变量。
 
-* 现在支持绑定身份验证的专用Maven存储库。
+* 现在支持绑定身份验证的专用 Maven 存储库。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅使用Java 11支持。
+* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅使用 Java 11 支持。
 
 ### 错误修复 {#bug-fixes-cm}
 
 * 在完全环境创建之前，从 Cloud Manager 到开发人员控制台的链接错误地处于活动状态。
 
-* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒项目的环境解除休眠/休眠的选项。
+* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒程序的环境解除休眠/休眠的选项。
 
 * 非生产管道编辑页面上的&#x200B;**取消**&#x200B;和&#x200B;**保存**&#x200B;选项并非一直可见。
 

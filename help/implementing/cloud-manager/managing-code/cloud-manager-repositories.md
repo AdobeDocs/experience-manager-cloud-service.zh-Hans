@@ -1,82 +1,82 @@
 ---
-title: Cloud Manager存储库
-description: 了解如何在Cloud Manager中创建、查看和删除git存储库。
+title: Cloud Manager 存储库
+description: 了解如何在 Cloud Manager 中创建、查看和删除 Git 存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager存储库 {#cloud-manager-repos}
+# Cloud Manager 存储库 {#cloud-manager-repos}
 
-了解如何在Cloud Manager中创建、查看和删除git存储库。
+了解如何在 Cloud Manager 中创建、查看和删除 Git 存储库。
 
 >[!NOTE]
 >
->任何给定公司或IMS组织中所有程序中的存储库数量限制为300个。
+>在任何给定公司或 IMS 组织的所有项目中，存储库的数量限制为 300 个。
 
 ## 添加和管理存储库 {#add-manage-repos}
 
-按照这些步骤在Cloud Manager中查看和管理存储库。
+按照以下步骤在 Cloud Manager 中查看和管理存储库。
 
-1. 从 **计划概述** 页面，单击 **存储库** 选项卡，然后导航到 **存储库** 页面。
+1. 从&#x200B;**项目概述**&#x200B;页面中，单击&#x200B;**存储库**&#x200B;选项卡，然后导航到&#x200B;**存储库**&#x200B;页面。
 
-1. 单击 **添加存储库** 来启动向导。
+1. 单击&#x200B;**添加存储库**&#x200B;启动向导。
 
-   ![“添加存储库”按钮](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
+   ![添加“存储库”按钮](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
-1. 根据请求输入名称和描述，然后单击 **保存**.
+1. 输入请求的名称和描述，然后单击&#x200B;**保存**。
 
-   ![“添加存储库”对话框](/help/implementing/cloud-manager/assets/repos/repo-1.png)
+   ![添加“存储库”对话框](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-当向导关闭时，您的新存储库将显示在表中。
+向导关闭时，您的新存储库将显示在表中。
 
-您可以选择表中的存储库，然后单击省略号按钮并选择 **复制存储库URL**, **查看和更新**&#x200B;或 **删除**.
+您可以在表中选择存储库，然后单击省略号按钮，然后选择&#x200B;**复制存储库 URL**、**查看和更新**&#x200B;或&#x200B;**删除**。
 
 ![存储库选项](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-在Cloud Manager中创建的存储库也将可供您在添加或编辑管道时选择。 请参阅该文档 [CI-CD管线](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以了解更多。
+在 Cloud Manager 中创建的存储库也可供您在添加或编辑管道时选择。 请参阅 [CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)文档，了解更多信息。
 
-任何给定管道都有一个主存储库或分支。 使用 [git子模块支持](#git-submodule-support)，在生成时可以包含许多辅助分支。
+任何给定的管道都有一个主存储库或分支。 通过 [Git 子模块支持](#git-submodule-support)，可以在构建时包括许多二级分支。
 
 >[!NOTE]
 >
->用户必须具有角色 **部署管理器** 或 **业务所有者** 以添加存储库。
+>用户必须具有&#x200B;**部署管理员**&#x200B;或&#x200B;**业务负责人**&#x200B;角色才能添加存储库。
 
 ## 删除存储库 {#delete-repo}
 
 删除存储库将：
 
-* 使已删除的存储库名称对将来可能创建的新存储库不可用。
-   * 错误消息 `Repository name should be unique within organization.` 中的“隐藏主体”。
-* 使已删除的存储库在Cloud Manager中不可用，且无法链接到管道。
+* 使删除的存储库名称不可用于将来可能创建的新存储库。
+   * 在这种情况下，将显示错误消息 `Repository name should be unique within organization.`。
+* 使已删除的存储库在 Cloud Manager 中不可用，并且无法链接到管道。
 
-按照这些步骤删除Cloud Manager中的存储库。
+按照这些步骤删除 Cloud Manager 中的存储库。
 
-1. 从 **计划概述** 页面，单击 **存储库** 选项卡，然后导航到 **存储库** 页面。
+1. 从&#x200B;**项目概述**&#x200B;页面中，单击&#x200B;**存储库**&#x200B;选项卡，然后导航到&#x200B;**存储库**&#x200B;页面。
 
-1. 选择存储库并单击省略号按钮并选择 **删除** 删除存储库。
+1. 选择存储库并单击省略号按钮，然后选择&#x200B;**删除**&#x200B;存储库。
 
    ![删除存储库](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
-## Git子模块支持 {#git-submodule-support}
+## Git 子模块支持 {#git-submodule-support}
 
-Git子模块可用于在构建时在git存储库中合并多个分支的内容。
+Git 子模块可用于在构建时跨 Git 存储库合并多个分支的内容。
 
-在执行Cloud Manager的生成过程时，如果为管道配置的存储库包含 `.gitmodules` 文件，将执行命令。
+Cloud Manager 的构建流程执行期间，在克隆为管道配置的存储库并签出配置的分支后，如果该分支在根目录中包含 `.gitmodules` 文件，则执行此命令。
 
-以下命令将每个子模块检出到相应的目录中。
+以下命令将把每个子模块签出到适当的目录中。
 
 ```
 $ git submodule update --init
 ```
 
-此技术是文档中所述解决方案的潜在替代方法 [使用多个源Git存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) 适用于熟悉使用git子模块且不希望管理外部合并流程的组织。
+这项技术是文档[使用多源 Git 存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)中所述解决方案的潜在替代方案，适用于习惯使用 Git 子模块且不想管理外部合并过程。
 
-例如，假设有三个存储库，每个存储库都包含一个名为 `main`. 在主存储库（即在管道中配置的存储库）中， `main` 分支具有 `pom.xml` 文件声明其他两个存储库中包含的项目。
+例如，假设有三个存储库，每个存储库均包含一个名为 `main` 的分支。 在“主”存储库（即，在管道中配置的存储库）中，`main` 分支包含一个 `pom.xml` 文件，声明其他两个存储库所包含的项目。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -97,14 +97,14 @@ $ git submodule update --init
 </project>
 ```
 
-然后，您将为其他两个存储库添加子模块。
+之后，您将为其他两个存储库添加子模块。
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-这会导致 `.gitmodules` 文件，如下所示。
+这会导致 `.gitmodules` 文件类似于以下内容。
 
 ```text
 [submodule "project-a"]
@@ -117,16 +117,16 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-有关git子模块的更多信息，请参阅 [Git参考手册。](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+可以在 [Git 参考手册](https://git-scm.com/book/en/v2/Git-Tools-Submodules)中找到有关 Git 子模块的更多信息。
 
 ### 限制和建议 {#limitations-recommendations}
 
-使用git子模块时，请注意以下限制。
+使用 Git 子模块时，请注意以下限制。
 
-* Git URL必须完全采用上一节中描述的语法。
-* 仅支持位于分支根的子模块。
-* 出于安全考虑，请勿在Git URL中嵌入凭据。
-* 除非另有必要，否则强烈建议使用浅层子模块。
-   * 要执行此操作，请运行 `git config -f .gitmodules submodule.<submodule path>.shallow true` 每个子模块。
-* Git子模块引用存储到特定的git提交中。 因此，在对子模块存储库进行更改时，需要更新引用的提交。
-   * 例如，使用 `git submodule update --remote`
+* Git URL 必须完全遵循上一节所述语法。
+* 仅支持分支的根目录中的子模块。
+* 为安全起见，请勿在 Git URL 中嵌入凭据。
+* 除非另有必要，否则强烈建议使用“浅”子模块。
+   * 为此，请为每个子模块运行 `git config -f .gitmodules submodule.<submodule path>.shallow true`。
+* Git 子模块引用将存储到特定的 git 承诺中。 因此，在对子模块存储库进行更改时，需要更新引用的承诺。
+   * 例如，通过使用 `git submodule update --remote`

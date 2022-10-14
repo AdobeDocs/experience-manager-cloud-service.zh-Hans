@@ -1,55 +1,55 @@
 ---
-title: AEM 2021.7.0版中Cloud Manageras a Cloud Service的发行说明
-description: AEM 2021.7.0版中Cloud Manageras a Cloud Service的发行说明
+title: AEM as a Cloud Service 版本 2021.7.0 中的 Cloud Manager 发行说明
+description: AEM as a Cloud Service 版本 2021.7.0 中的 Cloud Manager 发行说明
 feature: Release Information
 exl-id: 7ef738a5-4657-482d-848b-e95e4fb816f9
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.7.0版中的Cloud Manager发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.7.0 中的 Cloud Manager 发行说明 {#release-notes}
 
-本页概述了AEM 2021.7.0版中Cloud Manager的发行说明。
+此页概述了 AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 发行说明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
+>要查看 Adobe Experience Manager as a Cloud Service 的当前发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
-AEM 2021.7.0版中Cloud Manager的发布日期是2021年7月15日。
+AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年 7 月 15 日。
 
 
 ### 新增功能 {#what-is-new}
 
-* 现在，客户能够将Azul 8和11个JDK用于其Cloud Manager构建过程，并且可以选择将其中一个JDK用于与工具链兼容的Maven插件 *或* 整个Maven进程的执行。
+* 客户现在可以将 Azul 8 和 11 JDK 用于其 Cloud Manager 构建过程，并且可以选择将这些 JDK 之一用于与工具链兼容的 Maven 插件&#x200B;*或*&#x200B;整个 Maven 流程执行。
 
-* 出站出口IP现在将记录在生成步骤日志文件中。
+* 出站出口 IP 现在将记录在构建步骤日志文件中。
 
-* 运行旧版AEM的暂存和生产环境现在将报告 **更新可用**.
+* 运行旧版本的 AEM 的暂存环境和生产环境现在将报告&#x200B;**更新可用**&#x200B;状态。
 
-* 支持的最大SSL证书数已增加到每个计划20个。
+* 每个程序支持的 SSL 证书的最大数量已增至 20。
 
-* 每个环境可配置的最大域数已增加到500个。
+* 每个环境可配置的域的最大数量已增至 500。
 
-* 的 **管理Git** 按钮已重新命名为 **访问Git信息** 对话框已刷新。
+* **管理 Git** 按钮已更名为&#x200B;**访问 Git 信息**，并且对话框的外观已更新。
 
-* Cloud Manager使用的AEM项目原型版本已更新至版本28。
+* Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 28。
 
 ### 错误修复 {#bug-fixes}
 
-* 在某些情况下，将IP允许列表绑定到环境时，“预览”不是可用选项。
+* 在某些情况下，将 IP 允许列表绑定到环境时，“预览”选项不可用。
 
-* 手动导航到非现有执行的执行详细信息页面不会显示错误，只是显示无休止的加载屏幕。
+* 手动导航到不存在的执行的执行详细信息页面并没有显示错误，只显示了一个无休止的加载屏幕。
 
-* 达到最大数量的SSL证书时显示的错误消息不起作用。
+* 当达到 SSL 证书的最大数量时显示的错误消息没有帮助。
 
-* 在某些情况下，在的管道卡中显示的发行版本可能存在差异 **概述** 页面。
+* 在某些情况下，**概述**&#x200B;页面上的管道信息卡中显示的版本可能存在差异。
 
-* “添加程序向导”错误地指示创建后无法更改名称。
+* 添加程序向导错误地指出，创建后无法更改名称。
 
 ### 已知问题 {#known-issues}
 
-切换使用Azul JDK的客户应该注意到，并非所有现有应用程序都会在Azul JDK上编译而不出错。 强烈建议在切换前在本地进行测试。
+改用 Azul JDK 的客户应该知道，并非所有现有应用程序都能在 Azul JDK 上编译无误。 强烈建议在切换前进行本地测试。

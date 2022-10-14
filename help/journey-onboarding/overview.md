@@ -1,92 +1,92 @@
 ---
-title: AEMas a Cloud Service载入历程简介
-description: 您可以在此处了解 AEM as a Cloud Service 入门过程的指导概览。
+title: AEM as a Cloud Service 入门培训历程简介
+description: 您可以在此处了解 AEM as a Cloud Service 入门培训历程的指导概述。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
 source-wordcount: '1175'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 
 # 入门培训历程 {#onboarding-journey}
 
-恭喜您选择AEMas a Cloud Service! 本文档是引导式历程的入门指南。 无论您是要部署新应用程序还是迁移现有应用程序，此入门历程都可确保您的团队已设置并有权访问AEMas a Cloud Service。
+恭喜您选择 AEM as a Cloud Service！ 本文档是指导您整个入门培训历程的起点。 无论您是部署新的应用程序还是迁移现有的应用程序，此入门培训历程都可以确保您的团队已建立，并且可访问 AEM as a Cloud Service。
 
 ## 简介 {#introduction}
 
-载入是指指定系统管理员为您的组织设置AEMas a Cloud Service的过程。 这包括初始配置云资源，并根据用户的工作职责为用户分配角色。 因此，每个成员都能够登录并访问其AEMas a Cloud Service资源。
+载入是指定的系统管理员未您的组织设置 AEM as a Cloud Service 的过程。 这包括云资源的初始配置，以及根据用户的工作职责为其分配角色。 因此，每个成员都可以登录和访问其 AEM as a Cloud Service 资源。
 
-![入门历程](/help/journey-onboarding/assets/onboarding-journey.png)
+![入门培训历程](/help/journey-onboarding/assets/onboarding-journey.png)
 
-本指南将引导您完成最重要的入门主题，以便您在完成后能够：
+本指南将引导您了解最重要的载入主题，以便在完成后，您将：
 
-* 充分了解载入过程中涉及的不同术语、服务和用户。
-* 使您的团队能够启动并运行，并采取首要步骤了解如何为您的AEMas a Cloud Service应用程序创作和开发内容。
+* 全面了解载入流程中涉及的不同术语、服务和用户。
+* 使您的团队能够启动并运行，开始学习如何为 AEM as a Cloud Service 应用程序编写和开发内容。
 
 因此：
 
-* 您的团队将会进行设置，并有权访问云资源。
-* AEM作者将有权访问AEMas a Cloud Service，并可以开始创建内容。
-* AEM开发人员和部署经理将有权访问AEMas a Cloud Service，并可以开始创建和部署自定义应用程序。
+* 您的团队将被设置并可以访问云资源。
+* AEM 作者将有权访问 AEM as a Cloud Service，并可以开始创建内容。
+* AEM 开发人员和部署管理员将有权访问 AEM as a Cloud Service，并可以开始创建和部署自定义应用程序。
 
 ## 概念和目标 {#concepts}
 
-虽然在开始使用AEM时似乎有很多要学的东西，但从概念上讲，只有少数逻辑部分。
+虽然在开始使用 AEM as a Cloud Service 时，似乎有很多东西需要学习，但从概念上讲，只有少数几个逻辑部分。
 
-* **合同**  — 您需要熟悉您的Adobe合同，因为它定义了载入过程的各个方面。
-* **Admin Console**  — 这是管理用户和分配角色的位置。
-* **Cloud Manager**  — 这是设置资源（如方案和环境）的工具。 您还可以在该位置访问git并创建管道以管理和部署自定义代码。
+* **合同** – 您需要熟悉 Adobe 合同，因为它定义了载入流程的各个方面。
+* **Admin Console** – 这是管理用户和分配角色的地方。
+* **Cloud Manager**– 这是用于设置程序和环境等资源的工具。 它也是您访问 Git 并创建管道，以便管理和部署自定义代码的地方。
 
-这些概念将在此入门历程中详细阐述。 目标是在历程结束时，您：
+这些概念将在此次入门培训历程中详细阐述。 目标是在历程结束时，您：
 
-* 已授予必要用户访问AEMaaCS的权限
-* 为您的项目设置了第一个云资源
-* 了解如何部署第一个代码并创作第一个内容。
+* 已授予必要的用户访问 AEMaaCS 的权限
+* 已为您的项目设置了第一个云资源
+* 知道如何部署第一个代码并创作第一个内容。
 
-基本上，您会使用新的AEMas a Cloud Service项目开始运行！
+基本上，您可以将新 AEM as a Cloud Service 项目投入使用！
 
 ## 受众 {#audience}
 
-入门历程专门为 **系统管理员** 客户对AEM as a Cloud Service和AEM的新增功能。 系统管理员是在您签署AEMas a Cloud Service合同后，Adobe首次联系到的个人，通常是访问和设置AEMas a Cloud Service资源的第一人。 如果您正在阅读此内容，则可能是系统管理员。
+该入门培训历程是专门为新加入 AEM as a Cloud Service 和 AEM 的客户的&#x200B;**系统管理员**&#x200B;编写的。 系统管理员是在您的 AEM as a Cloud Service 合同签署后 Adobe 第一次联系的个人，通常是第一个访问和设置 AEM as a Cloud Service 资源的人。 如果您正在阅读本文，您很可能是系统管理员。
 
-系统管理员可管理其组织内AEMaaCS用户（从权限到权限）的各个方面。 但是，系统管理员在过程中必须与其他角色进行交互。
+系统管理员管理其组织的 AEMaaCS 用户的各个方面，从访问到权限。 然而，系统管理员必须在过程中与其他角色进行交互。
 
 | 角色 | 描述 | 历程中的角色 |
 |---|---|---|
-| 系统管理员 | 此历程的目标，提供云资源的初始配置以及根据用户的工作职责将用户分配给适当的角色 | 管理用户从访问权限到访问权限的所有方面 |
-| 内容作者 | 在AEM中创建并审阅内容 | 系统管理员授予权限后，作者可以开始自己的历程创建内容 |
-| 开发人员 | 开发使用来自不同来源的内容的AEM应用程序 | 一旦系统管理员授予了权限，开发人员便可以开始自己的历程来开发解决方案 |
-| 部署管理器 | 添加或更新环境、运行管道以及将代码部署到AEM环境或代码质量。 | 在系统管理员授予权限后，部署经理便可以开始他们自己的历程管理部署 |
+| 系统管理员 | 此次历程的目标，提供云资源的初始配置，并根据用户的工作职责将其分配给适当的角色 | 管理用户从访问到权限的各个方面 |
+| 内容作者 | 创建并查看 AEM 中的内容 | 一旦系统管理员授予权限，作者就可以开始自己的创作之旅 |
+| 开发人员 | 开发使用不同来源内容的 AEM 应用程序 | 一旦系统管理员授予权限，开发人员就可以开始自己开发解决方案的历程 |
+| 部署管理员 | 添加或更新环境，运行管道，并将代码部署到 AEM 环境或代码质量。 | 一旦系统管理员授予权限，部署管理员就可以开始自己管理部署的历程 |
 
-本入门指南说明了以系统管理员身份入门的完整过程。 简要地介绍了AEM用户、开发人员和部署经理的角色，作为历程中的其他可选部分。
+本载入指南说明了作为系统管理员载入的完整过程。 作为历程的附加可选部分，对 AEM 用户、开发人员和部署管理员的角色进行了简要探讨。
 
 >[!TIP]
 >
->如果您是初次使用AEMas a Cloud Service，但已经熟悉AEM，并且是从内部部署或Adobe Managed Services迁移，请务必查看 [AEMas a Cloud Service迁移历程。](/help/journey-migration/getting-started.md)
+>如果您是 AEM as a Cloud Service 的新手，但已经熟悉 AEM，并且正在从内部部署或 Adobe Managed Service 迁移，请务必查看 [AEM as a Cloud Service](/help/journey-migration/getting-started.md) 迁移之旅。
 
-## 入门历程概述 {#overview}
+## 入门培训历程概述 {#overview}
 
-以下文章详细描述了核心入门概念，并为您提供了AEMas a Cloud Service的基础知识。 虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是初次入门，我们建议您从头开始，然后按顺序进行。
+以下文章详细描述了核心载入概念，并为您提供了 AEM as a Cloud Service 的基本知识。 虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是新手，我们建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 | 受众 |
 |---|---|---|---|
 | 0 | 入门培训历程 | 本文档 | 系统管理员 |
-| 1 | [入门准备](preparation.md) | 在载入过程开始之前，系统管理员在登录系统之前必须了解一些数字或准备步骤。 | 系统管理员 |
-| 2 | [AEM as a Cloud Service 术语](terminology.md) | 在您首次登录AEMaCS之前，了解系统的一些术语及其基本结构会有所帮助。 | 系统管理员 |
-| 3 | [Admin Console](admin-console.md) | 了解Admin Console是什么、如何登录以及如何以系统管理员身份验证您的用户档案。 | 系统管理员 |
-| 4 | [分配 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md) | 查看Cloud Manager产品配置文件，并了解如何将团队成员分配给Cloud Manager产品配置文件。 | 系统管理员 |
-| 5 | [访问 Cloud Manager](cloud-manager.md) | 了解如何访问Cloud Manager，以便设置项目资源。 | 系统管理员 |
-| 6 | [创建项目](create-program.md) | 了解如何使用Cloud Manager创建程序。 | 系统管理员 |
-| 7 | [创建环境](create-environments.md) | 了解如何使用Cloud Manager创建环境。 | 系统管理员 |
-| 8 | [分配 AEM 产品配置文件](assign-profiles-aem.md) | 了解系统管理员如何将您的团队成员分配给AEMas a Cloud Service的产品配置文件。 | 系统管理员 |
-| 9 | [开发人员和部署管理器任务](developers.md) | 可选 — 了解作为开发人员，您如何可以访问和管理Cloud Manager Git，以及作为部署管理器，您如何在Cloud Manager中设置管道和部署代码。 | 开发人员和部署管理器 |
-| 10 | [AEM 用户任务](aem-users.md) | 可选 — 了解作为AEM作者，您如何访问AEMas a Cloud Service实例并熟悉AEMas a Cloud Service的创作内容。 | AEM用户 |
+| 1 | [载入准备](preparation.md) | 在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。 | 系统管理员 |
+| 2 | [AEM as a Cloud Service 术语](terminology.md) | 在首次登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。 | 系统管理员 |
+| 3 | [Admin Console](admin-console.md) | 了解什么是 Admin Console，如何登录，以及如何以系统管理员身份验证您的配置文件。 | 系统管理员 |
+| 4 | [分配 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md) | 查看 Cloud Manager 产品配置文件，了解如何将团队成员分配给 Cloud Manager 产品配置文件。 | 系统管理员 |
+| 5 | [访问 Cloud Manager](cloud-manager.md) | 了解如何访问 Cloud Manager，以便您可以设置项目资源。 | 系统管理员 |
+| 6 | [创建项目](create-program.md) | 了解如何使用 Cloud Manager 创建程序。 | 系统管理员 |
+| 7 | [创建环境](create-environments.md) | 了解如何使用 Cloud Manager 创建环境。 | 系统管理员 |
+| 8 | [分配 AEM 产品配置文件](assign-profiles-aem.md) | 了解系统管理员如何将您的团队成员分配给 AEM as a Cloud Service 产品配置文件。 | 系统管理员 |
+| 9 | [开发人员和部署管理员任务](developers.md) | 可选 – 了解作为开发人员如何访问和管理 Cloud Manager Git，以及作为部署管理员如何在 Cloud Manager 中设置管道和部署代码。 | 开发人员和部署管理员 |
+| 10 | [AEM 用户任务](aem-users.md) | 可选 – 了解作为 AEM 作者如何访问 AEM as a Cloud Service 实例，并熟悉 AEM as a Cloud Service.的创作内容。 | AEM 用户 |
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
-您现在可以开始AEMas a Cloud Service入门历程。 我们建议您继续进入历程的下一部分并阅读文章 [入门准备](preparation.md)
+您现在已经准备好开始您的 AEM as a Cloud Service 入门培训历程。 我们鼓励您继续此历程的下一部分，并阅读[载入准备](preparation.md)一文
 
 ## AEM 文档历程 {#documentation-journeys}
 
@@ -94,4 +94,4 @@ ht-degree: 16%
 
 文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
 
-如果您想了解Adobe如何建议如何将团队载入新的AEMas a Cloud Service应用程序，请从此处开始！
+如果您想知道 Adobe 建议如何将您的团队载入到全新 AEM as a Cloud Service 应用程序，请从这里开始！

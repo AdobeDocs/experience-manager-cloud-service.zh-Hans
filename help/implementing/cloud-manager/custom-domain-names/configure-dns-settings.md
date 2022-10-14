@@ -5,39 +5,39 @@ exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # 配置 DNS 设置 {#configure-dns}
 
-在成功验证和部署您的自定义域名后，您便可以使用DNS提供程序更新您的自定义域名的DNS记录。 这样，您的网站便能够为访客提供服务。 因此，此活动通常在上线之前完成。
+成功验证和部署自定义域名后，您可以向 DNS 提供商更新自定义域名的 DNS 记录。这样做可以使您的网站为访问者提供服务。 因此，这项活动通常在上线前完成。
 
-## 什么是DNS设置？ {#dns-settings}
+## 什么是 DNS 设置？ {#dns-settings}
 
-A `CNAME` 或者，一旦配置好，域的所有Internet流量都将路由到其所指向的位置。 如果该位置未配置为提供流量，则将发生中断。 如果尚未进行测试，则内容中可能会出现错误。 这就是为什么此步骤始终在测试完成后完成，并且您已准备好开始使用。
+`CNAME` 或记录一旦配置，将把域的所有互联网流量路由到它指向的任何位置。 如果该位置未配置为服务流量，则会出现停机。 如果尚未测试，则内容可能有错误。 这就是为什么这个步骤总是在测试完成后完成，并且您已经准备好上线。
 
-要配置这些设置，您需要确定 `CNAME` 或者，必须将Apex记录配置为将您的自定义域名指向Cloud Manager域名。 以下部分将帮助您确定哪种类型的记录适合您的DNS配置。
+为了配置这些设置，您需要确定是否必须配置 `CNAME` 或 Apex 记录以将您的自定义域名指向 Cloud Manager 域名。 以下部分将帮助您确定哪种类型的记录适合您的 DNS 配置。
 
 >[!NOTE]
 >
->您或贵组织中的相应个人必须能够登录或联系您的DNS提供商（您购买域的公司），并在DNS设置中进行更新。
+>您或您组织中的适当个人必须能够登录或联系您的 DNS 提供商（您购买域的公司），并更新您的 DNS 设置。
 
-## CNAME记录 {#cname-record}
+## CNAME 记录 {#cname-record}
 
-规范名称或CNAME记录是一种DNS记录类型，可将别名映射到真或规范域名。 CNAME记录通常用于映射子域，例如 `www.example.com` 到托管该子域内容的域。
+规范名称或 CNAME 记录是一种将别名映射为真实或规范域名的 DNS 记录类型。 CNAME 记录通常用于映射子域，例如 `www.example.com` 到托管该子域内容的域。
 
-登录到您的域注册机构并创建 `CNAME` 记录以将您的自定义域名指向目标，如下表中所示。
+登录到您的域名注册商并创建 `CNAME` 记录，将您的自定义域名指向目标，如下表所示。
 
-| CNAME | 自定义域名指向Target |
+| CNAME | 自定义域名指向目标 |
 |--- |--- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-## APEX记录 {#apex-record}
+## Apex 记录 {#apex-record}
 
-Apex域是不包含子域的自定义域，例如 `example.com`. 顶点域配置有 `A` , `ALIAS` 或 `ANAME` 通过DNS提供程序进行记录。 Apex域必须指向特定的IP地址。
+Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的 DNS 提供商，Apex 域配置有 `A`、`ALIAS` 或 `ANAME` 记录。Apex 域必须指向特定的IP地址。
 
-添加以下所有内容 `A` 记录到域的DNS设置中。
+通过域提供商将以下所有 `A` 记录添加到域的 DNS 设置中。
 
 * `A RECORD`
 

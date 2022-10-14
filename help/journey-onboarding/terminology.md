@@ -1,56 +1,56 @@
 ---
 title: AEM as a Cloud Service 术语
-description: 在登录AEMaCS之前，了解系统的一些术语及其基本结构会有所帮助。
+description: 在登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service 术语 {#terminology}
 
-在 [入门历程，](overview.md) 您将学习AEM as a Cloud Service的一些术语及其基本结构。
+在[入门培训历程](overview.md)这一部分，您将了解 AEM as a Cloud Service 的一些术语及其基本结构。
 
 ## 目标 {#objective}
 
-现在，您已通过阅读文档了解导致载入流程的原因 [入门准备、](preparation.md) 登录前，了解系统的一些术语及其基本结构将会有所帮助。
+现在，通过阅读文档[入门准备](preparation.md)，您已经了解载入的原因，在登录之前，了解一些系统术语及其基本结构是很有帮助的。
 
-AEMas a Cloud Service是一款功能强大且灵活的工具，可用于使用您应该熟悉其组织以及用于描述该工具的术语和语言的任何工具。 本文档概述了在开始使用系统之前您需要了解的一些关键术语。
+AEM as a Cloud Service 是一种强大而灵活的工具，要使用任何工具，您都应该熟悉其组织结构以及用于描述它的术语和语言。本文档总结了开始使用系统之前需要理解的一些关键术语。
 
 阅读本文档后，您将了解：
 
-* AEMaCS的不同层。
-* 每个层所做工作的基础知识。
+* 构成 AEMaaCS 的不同层。
+* 每个层的基本功能。
 
-## AEMaCS结构 {#structure}
+## AEMaaCS 结构 {#structure}
 
-在此入门历程中，无需完全了解AEM as a Cloud Service的结构。 但是，熟悉以下概念将更便于在历程的后续过程中遵循。
+就此次入门培训历程而言，不需要完全了解 AEM as a Cloud Service 的结构。 但是，熟悉以下概念将使以后的历程更容易理解。
 
 ![Cloud Manager 结构](/help/journey-sites/quick-site/assets/cloud-manager-structure.png)
 
-* **租户** – 每个客户均配有一个租户。租户也称为IMS组织（在此历程的后面部分有关IMS的更多信息）
+* **租户** – 每个客户均配有一个租户。租户也称为 IMS 组织（稍后将介绍 IMS）
 * **项目** – 每个租户都有一个或多个项目，这些项目通常反映了客户的许可解决方案。
 * **环境** – 每个项目都有多个环境，例如用于实时内容的生产环境、一个用于暂存的环境，一个用于开发的环境。
-* **存储库**  — 环境具有一个或多个维护应用程序和前端代码的git存储库。
+* **存储库** – 这些环境具有一个或多个 Git 存储库，可在其中维护应用程序和前端代码。
 * **工具和工作流** – 管道管理从存储库到环境的代码部署。
 
 示例通常有助于将此层级置于上下文中。
 
 * WKND 旅游和冒险企业可能是专注于旅游相关媒体的&#x200B;**租户**。
-* WKND Travel and Adventure Enterprises租户可能有两个 **项目**:
-   * 其WKND杂志部的一个站点计划
-   * WKND媒体部的一个资产计划
-* WKND杂志和WKND媒体程序都将具有开发、暂存和制作功能 **环境**.
-* **存储库** 用于维护WKND Magazine和WKND Media的自定义代码和应用程序。
-* 各种 **工具和工作流** 跨repo工作以使用CI/CD管道部署代码、访问日志、访问AEM等。
+* “WKND 旅游和冒险企业”租户可能有两个&#x200B;**程序**：
+   * WKND 杂志部门的 Sites 程序
+   * WKND 媒体部门的 Assets 程序
+* WKND 杂志和 WKND 媒体项目都具有开发、暂存和生产&#x200B;**环境**。
+* **存储库**&#x200B;用于维护 WKND 杂志和 WKND 媒体的自定义代码和应用程序。
+* 各种&#x200B;**工具和工作流**&#x200B;在整个存储库中使用 CI/CD 管道、访问日志、访问 AEM 等部署代码。
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
-现在，您已完成AEM入门历程的这一部分，您应该了解：
+现在您已完成 AEM 入门培训历程的这一部分，您应该了解：
 
-* AEMaCS的不同层。
-* 每个层所做工作的基础知识。
+* 构成 AEMaaCS 的不同层。
+* 每个层的基本功能。
 
-在此知识的基础上，通过下一次阅读文档，继续您的AEM入门历程 [访问Admin Console](admin-console.md)，您将在此处了解如何访问控制台并以系统管理员身份验证您的状态。
+在这些知识的基础上，继续您的 AEM 入门培训历程，接下来阅读文档[访问 Admin Console](admin-console.md)，您将了解如何访问控制台并验证您作为系统管理员的状态。
