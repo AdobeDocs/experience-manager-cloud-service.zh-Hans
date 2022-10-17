@@ -3,10 +3,10 @@ title: 云中的 Dispatcher
 description: 云中的 Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 6%
+source-wordcount: '998'
+ht-degree: 7%
 
 ---
 
@@ -50,11 +50,24 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 调度程序工具用于验证和调试项目的调度程序配置。 根据项目的调度程序配置是以灵活模式还是旧版模式构建，进一步了解如何在以下引用的页面中使用这些工具：
 
-* **灵活模式**  — 推荐的模式，默认为 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 和更高版本，Cloud Manager也会将它用于在Cloud Manager 2021.7.0版本之后创建的新环境。 客户可以通过添加文件夹和文件来激活此模式 `opt-in/USE_SOURCES_DIRECTLY`. 通过使用这种更灵活的模式，在旧版模式下，重写文件夹下的文件结构没有任何限制，只需单个 `rewrite.rules` 文件。 此外，您可以添加的规则数量没有限制。 有关文件夹结构和本地验证的详细信息，请参阅 [使用Dispatcher工具验证和调试](/help/implementing/dispatcher/validation-debug.md).
+* **灵活模式**  — 推荐的模式，默认为 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 和更高版本，Cloud Manager也会将它用于在Cloud Manager 2021.7.0版本之后创建的新环境。 客户可以通过添加文件夹和文件来激活此模式 `opt-in/USE_SOURCES_DIRECTLY`. 通过使用这种更灵活的模式，在旧版模式下，重写文件夹下的文件结构没有任何限制，只需单个 `rewrite.rules` 文件。 此外，您可以添加的规则数量没有限制。 有关文件夹结构和本地验证的详细信息，请参阅 [使用Dispatcher工具验证和调试](/help/implementing/dispatcher/validation-debug.md).
 
 * **旧版模式**  — 有关调度程序配置旧版模式的文件夹结构和本地验证的详细信息，请参阅 [使用Dispatcher工具验证和调试（旧版）](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 有关如何从AEM原型28提供的从旧版配置模型迁移到更灵活的配置模型的更多信息，请参阅 [本文档](/help/implementing/dispatcher/validation-debug.md#migrating).
+
+## 内容处置 {#content-disposition}
+
+对于发布层，提供Blob的默认值是作为附件。 可以使用标准 [内容处置标题](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 在调度程序中。
+
+以下是配置外观的示例：
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## 支持的Apache模块 {#supported-directives}
 

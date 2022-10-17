@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 8%
+source-wordcount: '1117'
+ht-degree: 9%
 
 ---
 
@@ -122,19 +122,6 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
-
-## 内容处置 {#content-disposition}
-
-对于发布层，提供Blob的默认值是作为附件。 可以使用标准 [内容处置标题](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 在调度程序中。
-
-以下是配置外观的示例：
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
 
 ## 地理位置标题 {#geo-headers}
 
