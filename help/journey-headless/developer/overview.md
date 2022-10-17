@@ -1,11 +1,11 @@
 ---
 title: AEM Headless开发人员历程
-description: 从此处开始，在将Adobe Experience Manager(AEM)用作无头内容管理系统(CMS)时，进行as a Cloud Service的引导式历程。 了解强大而灵活的无头功能、其功能，以及如何在您的第一个无头开发项目中利用这些功能。 此历程为您提供开发首个无头应用程序所需的所有信息。
+description: 了解如何使用Adobe Experience Manager(AEM)作为无头CMS来开发无头内容交付项目。 了解如何使用内容模型、内容片段和GraphQL API等功能来增强无头体验。
 landing-page-description: 了解无头内容交付和实施。 了解有关在业务中制定战略的更多信息。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
+source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1273'
 ht-degree: 26%
 
 ---
@@ -70,7 +70,7 @@ AEM的无头实施使用内容片段模型和内容片段，以专注于创建�
 | 8 | [如何使用 Headless 应用程序上线](go-live.md) | 了解如何在Git中实时部署应用程序并获取本地代码，然后将其移至Cloud Manager Git for CI/CD管道。 |
 | 9 | [可选 — 如何使用AEM创建单页应用程序(SPA)](create-spa.md) | 了解AEM无标题功能后，请了解如何结合使用无标题和无标题交付，并了解如何使用AEM SPA编辑器框架创建可编辑的SPA。 |
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 现在，您已准备好开始AdobeHeadless历程。 我们鼓励您继续访问历程的下一部分并阅读文章 [了解CMS无头开发。](learn-about.md)
 
