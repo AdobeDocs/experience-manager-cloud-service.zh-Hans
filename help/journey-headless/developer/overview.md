@@ -1,12 +1,12 @@
 ---
 title: AEM Headless开发人员历程
-description: 了解如何使用Adobe Experience Manager(AEM)作为无头CMS来开发无头内容交付项目。 了解如何使用内容模型、内容片段和GraphQL API等功能来增强无头体验。
+description: 了解如何使用Adobe Experience Manager(AEM)作为无头CMS进行无头开发。 了解如何使用内容模型、内容片段和GraphQL API等功能来支持无头内容交付。
 landing-page-description: 了解无头内容交付和实施。 了解有关在业务中制定战略的更多信息。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
+source-git-commit: 8932a8f158fe478d23457ac24afdd17f05a048f5
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 26%
+source-wordcount: '1268'
+ht-degree: 27%
 
 ---
 
