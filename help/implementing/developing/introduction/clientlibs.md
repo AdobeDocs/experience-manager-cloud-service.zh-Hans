@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供客户端库文件夹，利用该文件夹可将客户端代码(clientlibs)存储在存储库中，将其整理为各个类别，并定义何时以及如何将每个类别的代码提供给客户端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
+source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2567'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ AEM将网站的CSS和Javascript收集到一个位于中心位置的文件中，�
 
 的 `allowProxy` 属性允许您请求：
 
-* 通过j的clientlib`/etc.clientlibs/myprojects/clientlibs/foo.js`
+* clientlib通过 `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * 静态图像通过 `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### 通过HTL加载客户端库 {#loading-via-htl}
