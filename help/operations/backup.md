@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的内容恢复
 description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
+source-git-commit: a32b8d94be8119854e21fc89456474ac554082a3
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 90%
+source-wordcount: '1262'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 恢复 AEM as a Content Service 中内容的效果指标参考标准化基准：
 
 * **恢复时间目标 (RTO)：**&#x200B;根据存储库的大小，恢复时间目标各不相同，但根据经验，一旦恢复序列开始，应需要大约 30 分钟。
-* **恢复点目标(RPO):** 恢复点目标取决于您的实例运行的时间：
+* **恢复点目标(RPO):** 恢复点目标取决于所选恢复时间的过去时间：
    * 前24小时运行：这24小时内的任何时间点。
    * 最初24小时后：前六天最多12小时。
 
