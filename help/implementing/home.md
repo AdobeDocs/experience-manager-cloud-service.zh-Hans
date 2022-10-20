@@ -5,8 +5,8 @@ landing-page-description: 了解如何自定义 Experience Manager as a Cloud Se
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 ## 关键实施文章 {#key-articles}
 
 * [使用 Cloud Manager 管理您的环境](cloud-manager/manage-environments.md)
-* [部署 AEM as a Cloud Service](deploying/overview.md)
+* [部署AEMas a Cloud Service](deploying/overview.md)
 * [部署 AEM as a Cloud Service](developing/introduction/development-guidelines.md)
 * [Headless 开发人员历程](/help/journey-headless/developer/overview.md)
 * [AEM as a Cloud Service 的调度程序](dispatcher/overview.md)

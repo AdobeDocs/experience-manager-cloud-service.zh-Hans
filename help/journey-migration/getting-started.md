@@ -4,8 +4,8 @@ description: 熟悉迁移到 AEM as a Cloud Service 的基础知识，开始您�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +56,6 @@ AEM as a Cloud Service为Experience Manager Assets、Forms和Screens提供了可
 
 您可以查阅 [Cloud Acceleration Manager文档](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) 或观看 [简介视频](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) 以开始您的迁移历程。
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 感谢您开始使用AEM Cloud Service迁移历程！ 既然您阅读了本文档，您应该能够快速了解 [准备阶段](/help/journey-migration/readiness.md)，这将帮助您确定部署是否已准备好移至AEMas a Cloud Service。
