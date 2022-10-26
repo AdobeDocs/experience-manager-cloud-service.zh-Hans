@@ -4,9 +4,9 @@ description: 了解变量如何允许您为片段创作内容，然后根据用�
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
+source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 98%
 
 ---
@@ -372,7 +372,7 @@ ht-degree: 98%
 
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
-title="管理变量"
+title="变量 – 创作片段内容"
 abstract="了解如何制作内容变体以便与特定渠道一起使用。"
 additional-url="https://video.tv.adobe.com/v/333295" text="内容片段变量"
 
