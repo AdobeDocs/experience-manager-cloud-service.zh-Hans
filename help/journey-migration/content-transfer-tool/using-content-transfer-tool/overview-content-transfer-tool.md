@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 43%
+source-wordcount: '629'
+ht-degree: 44%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 43%
 * 通过更好的加载状态、护栏和错误处理来改善用户体验
 * 将保留摄取日志，并始终可用于疑难解答
 
-开始使用新版本(v2.0.10) <!-- update when version is available --> 由于内容传输工具的体系结构发生了重大更改，因此您需要卸载旧版内容传输工具。
+要开始使用新版本，您需要卸载旧版内容传输工具，因为该工具在体系结构上发生了重大更改。
 
 >[!NOTE]
 >
@@ -73,6 +73,6 @@ ht-degree: 43%
 
 在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关更多详细信息，请参阅[增补摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process)。
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
 了解内容传输工具及其对该工具进行描述的概述后，您便可以使用该工具将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例，您必须查看 [内容传输工具的先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).

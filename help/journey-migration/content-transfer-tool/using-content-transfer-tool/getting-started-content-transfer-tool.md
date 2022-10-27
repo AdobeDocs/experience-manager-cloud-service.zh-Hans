@@ -2,9 +2,9 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1292'
 ht-degree: 9%
 
 ---
@@ -34,16 +34,8 @@ ht-degree: 9%
 
 源AEM实例可能在防火墙后运行，在防火墙中，它只能访问已添加到允许列表的特定主机。 要成功运行提取，需要从运行AEM的实例访问以下端点：
 
-* 目标AEMas a Cloud Service环境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Azure Blob存储服务： `casstorageprod.blob.core.windows.net`
 * 用户映射IO端点： `usermanagement.adobe.io`
-
-要测试与目标AEMas a Cloud Service环境的连接，请从源实例的shell发出以下cURL命令(替换 `program_id`, `environment_id`和 `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->如果 `HTTP/2 200` 已收到，连接到AEMas a Cloud Service成功。
 
 ### 启用SSL日志记录 {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ ht-degree: 9%
 
 要填充在Cloud Acceleration Manager中创建的迁移集，您需要在源Adobe Experience Manager(AEM)实例上安装最新版本的内容传输工具。 请阅读本节内容，了解如何填充迁移集。
 
-1. 在源Adobe Experience Manager实例上安装最新版本(v2.0.10)的内容传输工具后，转到 **操作 — 内容迁移**
+1. 在源Adobe Experience Manager实例上安装最新版本的内容传输工具后，转到 **操作 — 内容迁移**
 
 1. 单击 **创建迁移集**
 
@@ -195,6 +187,6 @@ ht-degree: 9%
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
 
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
 了解如何创建迁移集后，您现在便可以了解内容传输工具中的提取和摄取流程。 在了解这些流程之前，您必须先查看 [处理大型内容存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 可显着加快内容传输活动的提取和摄取阶段，以将内容移动到AEMas a Cloud Service。
