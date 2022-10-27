@@ -3,25 +3,25 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
+source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2580'
 ht-degree: 1%
 
 ---
 
 # 简介 {#intro}
 
-流量会通过CDN传递到Apache Web服务器层，该层支持包括调度程序在内的模块。 为了提高性能，调度程序主要用作缓存以限制发布节点上的处理。
-可以将规则应用于调度程序配置以修改任何默认的缓存过期设置，从而导致在CDN上缓存。 请注意，如果 `enableTTL` 在dispatcher配置中启用，这意味着即使在重新发布的内容之外，它也将刷新特定内容。
+流量会通过CDN传递到Apache Web服务器层，该层支持包括Dispatcher在内的模块。 为了提高性能，Dispatcher主要用作缓存，以限制发布节点上的处理。
+规则可应用于Dispatcher配置以修改任何默认的缓存过期设置，从而导致在CDN上缓存。 请注意，如果 `enableTTL` 在Dispatcher配置中启用，这表示即使在重新发布的内容之外，它也会刷新特定内容。
 
-本页还介绍调度程序缓存如何失效，以及缓存在浏览器级别与客户端库有关的工作方式。
+本页还介绍Dispatcher缓存如何失效以及缓存在浏览器级别与客户端库相关的工作方式。
 
 ## 缓存 {#caching}
 
 ### HTML/文本 {#html-text}
 
-* 默认情况下，会根据 `cache-control` apache层发出的标头。 CDN还尊重此价值。
+* 默认情况下，会根据 `cache-control` Apache层发出的标头。 CDN还尊重此价值。
 * 通过定义 `DISABLE_DEFAULT_CACHING` 变量 `global.vars`:
 
 ```
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 例如，当您的业务逻辑需要微调页面标题（其值基于日历日）时，这非常有用，因为默认情况下，页面标题设置为0。 话虽如此， **关闭默认缓存时请务必谨慎。**
 
 * 可以通过定义 `EXPIRATION_TIME` 变量 `global.vars` 使用AEMas a Cloud ServiceSDK Dispatcher工具。
-* 可以在更精细的粒度级别上覆盖，包括通过以下apache mod_headers指令独立控制CDN和浏览器缓存：
+* 可以通过以下Apache在更细粒度级别上覆盖，包括单独控制CDN和浏览器缓存 `mod_headers` 指令：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -44,7 +44,7 @@ Define DISABLE_DEFAULT_CACHING
    >[!NOTE]
    >代理控制标头适用于Adobe管理的CDN。 如果使用 [客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，则可能需要不同的标头，具体取决于您的CDN提供商。
 
-   在设置全局缓存控制标头或与宽正则表达式匹配的标头时，请务必谨慎，以便这些标头不会应用于您可能打算保留为私有的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 根据上述说明，如果AEM as a Cloud Service检测到已将缓存标头应用于Dispatcher检测到的不可执行的内容，则它将删除该缓存标头，如Dispatcher文档中所述。 为了强制AEM始终应用缓存标头，您可以添加 **always** 选项：
+   在设置全局缓存控制标头或与宽正则表达式匹配的标头时，请务必谨慎，以便这些标头不会应用于需要保持私有的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 根据上述说明，如果AEM as a Cloud Service检测到缓存标头已应用于它检测到的Dispatcher不可执行的内容，则它将删除该缓存标头，如Dispatcher文档中所述。 为了强制AEM始终应用缓存标头，您可以添加 **always** 选项：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Define DISABLE_DEFAULT_CACHING
    >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，则无法成功覆盖值。
 
    >[!NOTE]
-   >请注意，调度程序可能仍会根据其自己的内容来缓存内容 [缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 要使内容真正私有，您应确保dispatcher不会缓存该内容。
+   >请注意，Dispatcher仍可能根据其自己的内容进行缓存 [缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 要使内容真正私有，您应确保Dispatcher不会缓存该内容。
 
 ### 客户端库(js，css) {#client-side-libraries}
 
@@ -96,11 +96,11 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-修改调度程序层的缓存标头时，请小心不要缓存得太广，请参阅HTML/文本部分中的讨论 [以上](#html-text). 此外，请确保要保持私有（而不是缓存）的资产不属于 `LocationMatch` 指令筛选器。
+修改Dispatcher层的缓存标头时，请小心不要缓存得太广，请参阅HTML/文本部分中的讨论 [以上](#html-text). 此外，请确保要保持私有（而不是缓存）的资产不属于 `LocationMatch` 指令筛选器。
 
 #### 新的默认缓存行为 {#new-caching-behavior}
 
-AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存标头。 请注意，如果未设置缓存控制标头，则会缓存公共内容，并将经过身份验证的流量设置为私有。 如果已设置缓存控制标头，则缓存标头将不受影响。
+AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存标头。 请注意，如果未设置缓存控制标头，则会缓存公共内容，并将经过身份验证的流量设置为私有。 如果已设置缓存控制标头，则缓存标头将保持不变。
 
 | 是否存在缓存控制标头？ | 请求类型 | AEM将缓存标头设置为 |
 |------------------------------|---------------|------------------------------------------------|
@@ -128,7 +128,7 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 
 ### 进一步优化 {#further-optimizations}
 
-* 避免使用 `User-Agent` 作为 `Vary` 标题。 旧版默认Dispatcher设置（在原型版本28之前）包含此内容，我们建议您使用以下步骤删除该设置。
+* 避免使用 `User-Agent` 作为 `Vary` 标题。 旧版默认Dispatcher设置（在原型版本28之前）包含此内容，我们建议您使用以下步骤将其删除。
    * 在 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
    * 删除或注释掉行： `Header append Vary User-Agent env=!dont-vary` 从所有vhost文件中删除，但default.vhost除外，它为只读
 * 使用 `Surrogate-Control` 用于独立于浏览器缓存控制CDN缓存的标头
@@ -195,17 +195,17 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 
 ### HEAD请求行为 {#request-behavior}
 
-在AdobeCDN中接收HEAD请求时， **not** 缓存后，调度程序和/或AEM实例将该请求转换并作为GET请求接收。 如果响应可缓存，则随后将从CDN提供HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内(取决于 `Cache-Control` TTL。
+在AdobeCDN中接收HEAD请求时， **not** 缓存后，Dispatcher和/或AEM实例将转换和接收该请求作为GET请求。 如果响应是可缓存的，则后续HEAD请求将从CDN提供。 如果响应不可缓存，则后续HEAD请求将在取决于 `Cache-Control` TTL。
 
 ## 调度程序缓存失效 {#disp}
 
-通常，不必使调度程序缓存失效。 相反，在重新发布内容时，您应该依赖调度程序刷新其缓存，并依赖CDN遵守缓存过期标头。
+通常，无需使Dispatcher缓存失效。 相反，在重新发布内容时，您应当依赖Dispatcher刷新其缓存，并依赖CDN遵守缓存过期标头。
 
 ### 在激活/停用期间使调度程序缓存失效 {#cache-activation-deactivation}
 
-与AEM的先前版本一样，发布或取消发布页面将从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面，并确保虚拟主机与ServerAlias localhost匹配，Dispatcher缓存失效需要该ServerAlias localhost。
+与AEM的先前版本一样，发布或取消发布页面会从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面，并确保虚拟主机与 `ServerAlias` localhost，Dispatcher缓存失效所必需的。
 
-当发布实例收到作者提供的页面或资产的新版本时，它会使用刷新代理使其调度程序上的相应路径失效。 更新的路径将从调度程序缓存及其父缓存中删除，最高级别为(您可以使用 [stafileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
+当发布实例收到作者提供的页面或资产的新版本时，它会使用刷新代理使其Dispatcher上的相应路径失效。 更新的路径将从调度程序缓存及其父缓存中删除，最高级别为(您可以使用 [stafileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
 ## 调度程序缓存的显式失效 {#explicit-invalidation}
 
@@ -297,7 +297,7 @@ Adobe建议依赖标准缓存标头来控制内容交付生命周期。 但是�
 
 此外，从桌子上，我们观察到：
 
-* 当必须保证每个事件都有效时，例如与需要准确知识的外部系统同步时，需要使用SCD API。 请注意，如果在进行失效调用时存在发布层升级事件，则在每个新发布处理失效时将引发其他事件。
+* 当必须保证每个事件都有效时，例如与需要准确知识的外部系统同步时，需要使用SCD API。 如果在进行失效调用时存在发布层升级事件，则在每个新发布处理失效时会引发其他事件。
 
 * 使用复制API不是常见的用例，但应在以下情况下使用：使缓存失效的触发器来自发布层，而非创作层。 如果配置了调度程序TTL，则此选项可能会很有用。
 
@@ -324,7 +324,7 @@ DistributionRequest distributionRequest = new SimpleDistributionRequest(Distribu
 distributor.distribute(agentName, resolver, distributionRequest);
 ```
 
-* （可选）侦听反映所有调度程序实例的资源失效的事件：
+* （可选）侦听反映所有Dispatcher实例的资源失效的事件：
 
 
 ```
@@ -383,7 +383,7 @@ public class InvalidatedHandler implements EventHandler {
 
 >[!NOTE]
 >
->调度程序失效时，不会刷新AdobeCDN。 Adobe管理的CDN遵循TTL，因此无需刷新。
+>AdobeCDN失效时，不会刷新调度程序。 Adobe管理的CDN遵循TTL，因此无需刷新。
 
 ### 复制 API {#replication-api}
 
@@ -391,7 +391,7 @@ public class InvalidatedHandler implements EventHandler {
 
 1. 在发布层，调用复制API以触发发布调度程序刷新复制代理。
 
-无法配置刷新代理端点，但是进行了预配置，以指向与与刷新代理一起运行的发布服务相匹配的调度程序。
+无法配置刷新代理端点，但是进行了预配置，以指向与与刷新代理一起运行的发布服务相匹配的Dispatcher。
 
 刷新代理通常可由基于OSGi事件或工作流的自定义代码触发。
 
@@ -464,5 +464,5 @@ HTML页面上的默认clientlib包含如下示例所示：
 1. 找到AdobeGraniteHTML库管理器的OSGi配置：
    * 选中此复选框可启用严格版本控制
    * 在标记为长期客户端缓存键的字段中，输入值/。*；哈希
-1. 保存更改。请注意，无需在源代码管理中保存此配置，因为AEMas a Cloud Service将在开发、暂存和生产环境中自动启用此配置。
+1. 保存更改。无需在源代码管理中保存此配置，因为AEMas a Cloud Service会在开发、暂存和生产环境中自动启用此配置。
 1. 每当客户端库的内容发生更改时，都会生成一个新的哈希键，并且HTML引用将会更新。
