@@ -2,9 +2,9 @@
 title: 查询生成器谓词参考
 description: 查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2268'
 ht-degree: 2%
 
 ---
@@ -244,10 +244,12 @@ group.2_group.type=dam:Asset
 * **`path`**  — 这定义路径模式。
    * 根据 `exact` 属性，则整个子树都将匹配(例如，附加 `//*` 在xpath中，但请注意，这不包括基本路径)，或者只有精确的路径匹配项，该匹配项可以包含通配符(`*`)。
       * 默认为 `true`
-   * 如果 `self`属性设置后，将搜索包含基础节点的整个子树。
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`**  — 如果 `exact` is `true`，则路径必须完全匹配，但可以包含简单的通配符(`*`)，匹配名称，但不匹配 `/`;如果为 `false` （默认）包含所有子体（可选）
 * **`flat`**  — 仅搜索直接子项(例如附加 `/*` (仅在 `exact` 不为true，可选)
-* **`self`**  — 搜索子树，但包含作为路径给定的基节点（无通配符）
+* **`self`**  — 搜索子树，但包含作为路径给定的基节点（无通配符）。
+   * *重要说明*:已识别问题 `self` 在querybuilder的当前实现中并在查询中使用该属性可能无法生成正确的搜索结果。 更改当前的 `self` 属性也不可行，因为它可能会破坏依赖该属性的现有应用程序。 因此， `self` 属性已弃用，建议避免使用该属性。
 
 ### 属性 {#property}
 
