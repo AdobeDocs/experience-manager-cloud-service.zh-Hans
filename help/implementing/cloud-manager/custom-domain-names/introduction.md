@@ -2,10 +2,10 @@
 title: 自定义域名简介
 description: Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 92%
+source-wordcount: '665'
+ht-degree: 84%
 
 ---
 
@@ -64,3 +64,7 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 | 5 | 检查 DNS 记录状态 | 客户 | [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5a | 如果 DNS 记录状态失败 `DNS status not detected` | 客户 | [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5b | 如果 DNS 记录状态失败 `DNS resolves incorrectly` | 客户 | [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+
+>[!TIP]
+>
+>使用AEM as a Cloud Service设置自定义域名通常是一个简单的过程。 但是，有时域委派问题可能会发生，这些问题可能需要1-2个工作日才能解决。 因此，强烈建议在域的起始日期之前安装域。 查看文档 [正在检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以了解更多信息。

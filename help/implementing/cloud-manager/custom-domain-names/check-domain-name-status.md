@@ -2,10 +2,10 @@
 title: 检查域名状态
 description: 了解如何确定 Cloud Manager 是否已成功验证您的自定义域名。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
 
@@ -52,23 +52,35 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
 ## 域名错误 {#domain-error}
 
-本节介绍您可能看到的错误以及如何解决这些错误。
+以下是一些常见的域名错误及其典型的解决方法。
 
-**域未安装** – 您在 TXT 记录的域验证过程中收到此错误，即使您已经检查过该记录是否已适当更新。
+### 未安装的域错误 {#domain-not-installed}
 
-**错误解释** – 快速将域锁定到注册该域的初始帐户，任何其他帐户都不能在不请求权限的情况下注册子域。此外，Fastly 只允许您将一个 Apex 域和关联子域分配给一个 Fastly 服务和帐户。 如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
+在TXT记录的域验证过程中，即使已检查记录是否已正确更新，也可能会发生此错误。
 
-**错误解决** – 错误修复如下：
+#### 错误原因 {#cause}
 
-* 在 Cloud Manager 中安装域之前，请从现有帐户中移除 Apex 和子域。 使用此选项将 Apex 域和所有子域链接到 AEM as a Cloud Service Fastly 帐户。 有关更多详细信息，请参阅[使用 Fastly 文档中的域](https://docs.fastly.com/en/guides/working-with-domains)。
+快速将域锁定到注册该域的初始帐户，而任何其他帐户都无需请求权限即可注册子域。 此外，Fastly 只允许您将一个 Apex 域和关联子域分配给一个 Fastly 服务和帐户。 如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
 
-* 如果您的 Apex 域有多个子域用于 AEM as a Cloud Service 和非 AEM as a Cloud Service Sites，并且您希望链接到不同的 Fastly 帐户，那么请尝试在 Cloud Manager 中安装该域，如果域安装失败，请使用 Fastly 创建客户支持工单，以便我们代表您跟进 Fastly。
+#### 错误解决 {#resolution}
+
+错误已修复如下：
+
+* 在 Cloud Manager 中安装域之前，请从现有帐户中移除 Apex 和子域。 
+
+* 使用此选项将 Apex 域和所有子域链接到 AEM as a Cloud Service Fastly 帐户。 有关更多详细信息，请参阅[使用 Fastly 文档中的域](https://docs.fastly.com/en/guides/working-with-domains)。
+
+* 如果您的Apex域有多个要链接到不同Fastly帐户的AEMas a Cloud Service和非AEMas a Cloud Service网站的子域，请尝试在Cloud Manager中安装该域。 如果域安装失败，请使用Fastly创建客户支持票证，以便Adobe可以代表您跟踪Fastly。
+
+>[!TIP]
+>
+>使用Fastly解决域委派问题通常需要1到2个工作日。 因此，强烈建议在域的起始日期之前安装域。
 
 >[!NOTE]
 >
->注意：如果域未成功安装，请不要将站点的 DNS 路由到 AEM as a Cloud Service IP 的 DNS。
+>如果域未成功安装，请勿将网站的DNS路由到AEMas a Cloud ServiceIP。
 
-## 自定义域名的现有 CDN 配置 {#pre-existing-cdn}
+## 针对自定义域名的预先存在的CDN配置 {#pre-existing-cdn}
 
 如果您的自定义域名已有 CDN 配置，**自定义域名**&#x200B;和&#x200B;**环境**&#x200B;页面，鼓励您通过 UI 添加这些配置，以便它们在 Cloud Manager 中可见和可配置。
 
