@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.6.0
 description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.6.0 发行说明。
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '313'
 ht-degree: 100%
 
 ---
@@ -24,9 +24,7 @@ AEM as a Cloud Service 2022.6.0 中的 Cloud Manager 的发布日期是 2022 年
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager UI 现在允许[自助服务内容恢复](/help/operations/backup.md)到 AEM 云环境的已知良好状态。
-   * 该功能将在 2022.06.0 版本发布后的几周内分阶段推出。
-* 利用 Cloud Manager 登陆页面上的新的欢迎信息卡，用户可以快速访问与租户相关的载入教程和进度量度。
+* 利用 Cloud Manager 登陆页面上的新的欢迎信息卡，用户可以快速访问与租户相关的新用户引导教程和进度量度。
    * 该功能将在 2022.06.0 版本发布后的一周内分阶段推出。
 * 拥有必要权限的用户可以在 Cloud Manager 登陆页面上访问新的[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)，查看租户可用权利的详细信息。
    * AEM Sites 是第一个通过 Cloud Manage 仪表板提供可用性和使用消耗情况的解决方案。

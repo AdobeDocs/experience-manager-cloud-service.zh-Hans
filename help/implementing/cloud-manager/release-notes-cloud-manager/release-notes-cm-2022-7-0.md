@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.7.0
 description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.7.0 发行说明。
 feature: Release Information
 exl-id: c19e4efb-69d6-4915-9e63-c47cd91e941b
-source-git-commit: 1ec1b3f58f7614140d584d3bc7fc113527d6511d
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,6 @@ AEM as a Cloud Service 2022.7.0 中的 Cloud Manager 的发布日期是 2022 年
 ## 新增功能 {#what-is-new}
 
 * Cloud Manager 用户现在可以随时从登陆页面上的&#x200B;**欢迎**&#x200B;信息卡访问有用的视频教程。
-* 环境详细信息页面的&#x200B;**[恢复内容](/help/operations/backup.md)**&#x200B;选项卡上的弹出窗口现在会显示一个方便的 Git 命令列表，以便用户在本地查看更改。
 
 ## 错误修复 {#bug-fixes}
 
