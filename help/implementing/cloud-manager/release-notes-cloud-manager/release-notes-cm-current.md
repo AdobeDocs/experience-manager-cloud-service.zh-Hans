@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.10.0 发行说明
-description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.10.0 发行说明。
+title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明
+description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a873b23f7dac8742820300ef154b94a72e4b8a23
+source-git-commit: b0d57f0ccfb80c8071026a53cab594cfced13497
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 41%
+source-wordcount: '191'
+ht-degree: 40%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.10.0 发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2022.10.0 的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2022.11.0 的发行说明。
 
 >[!NOTE]
 >
@@ -21,15 +21,14 @@ ht-degree: 41%
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.9.0版的发布日期是2022年10月6日。 下一版本计划于2022年11月3日发布。
+AEM Manager版本2022.11.0的发布日期是2022年11月3日。 下一版本计划于2022年11月29日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 的版本 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) Cloud Manager使用的已更新到版本39。
-* 现在，许可证功能板UI将告知用户，是否在AEMas a Cloud Service上为站点项目配置了CDN。
+* AEM Sites解决方案的许可证仪表板现在将显示合同详细信息，包括租户是否在其订阅范围内。
+* 如果与管道关联的环境具有不允许执行管道的状态，则运行操作将被禁用，并显示说明性工具提示。
+* 改进了消息， **添加程序** 按钮被禁用，因为租户的权限不足。
 
 ## 错误修复 {#bug-fixes}
 
-* 修复了以下情况：在Cloud Manager中，电子邮件地址中带有大写字母的用户无法添加到New Relic子帐户中。
-* 现在，如果程序中存在多个解决方案，则会显示Screens解决方案。
-* 修复了当环境的状态为“更新”时，前端管道执行无法启动的情况。
+* 改进了编辑生产管道期间的反馈，以捕获一个或多个缺失环境的不经常出现。
