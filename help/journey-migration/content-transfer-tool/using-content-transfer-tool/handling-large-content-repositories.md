@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
+source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1732'
 ht-degree: 2%
 
 ---
@@ -21,9 +21,6 @@ ht-degree: 2%
 
 使用内容传输工具(CTT)复制大量Blob可能需要多天。
 为了显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service,CTT可以利用 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作为可选的预复制步骤。 在将源AEM实例配置为使用Amazon S3、Azure Blob Storage数据存储或文件数据存储时，可以使用此预复制步骤。 预复制步骤对于第1次完全提取和摄取最有效。 但是，不建议对后续增补使用预复制（如果增补大小小于200GB），因为它可能会为整个过程添加时间。 配置此预先步骤后，在提取阶段，AzCopy将Blob从Amazon S3、Azure Blob Storage或文件数据存储复制到迁移集Blob存储。 在摄取阶段，AzCopy将Blob从迁移集Blob存储复制到目标AEMas a Cloud ServiceBlob存储。
-
->[!NOTE]
-> 此功能已在CTT 1.5.4版本中引入。
 
 ## 开始之前的重要注意事项 {#important-considerations}
 
@@ -42,9 +39,9 @@ ht-degree: 2%
 
 ### 如果将源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储，则需考虑的其他事项 {#additional-considerations-amazons3-azure}
 
-* 由于从Amazon S3和Azure Blob Storage中传输数据存在相关成本，因此传输成本将与存储容器中的数据总量(无论是否在AEM中引用)相关。 请参阅 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob存储](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 以了解更多详细信息。
+* 由于从Amazon S3和Azure Blob Storage中传输数据时存在相关成本，因此传输成本将与现有存储容器中的数据总量(无论是否在AEM中引用)相关。 请参阅 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob存储](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 以了解更多详细信息。
 
-* 您需要源Amazon S3存储段的访问密钥和密钥对，或源Azure Blob Storage容器的SAS URI（只读访问可以正常）。
+* 您将需要现有源Amazon S3存储段的访问密钥和密钥对，或者需要现有源Azure Blob Storage容器的SAS URI（只读访问可以正常进行）。
 
 ### 如果源AEM实例配置为使用文件数据存储，则其他注意事项 {#additional-considerations-aem-instance-filedatastore}
 
@@ -52,7 +49,7 @@ ht-degree: 2%
 
 * 每次在启用AzCopy的情况下运行提取时，整个文件数据存储都会被扁平化，并复制到云迁移容器中。 如果您的迁移集大大小于数据存储的大小，则AzCopy提取不是最佳方法。
 
-* 使用AzCopy通过数据存储进行复制后，请将其禁用以进行增量或增补提取。
+* 使用AzCopy复制现有数据存储后，请将其禁用以进行增量或增补提取。
 
 ## 设置为使用AzCopy作为预复制步骤 {#setting-up-pre-copy-step}
 
@@ -64,11 +61,9 @@ ht-degree: 2%
 
 * 如果源AEM配置为使用文件数据存储，则本地系统的可用空间必须严格大于源数据存储的1/256大小。
 
-* 了解数据存储的总大小将有助于评估提取和摄取时间。 使用 [内容传输工具计算器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en#content-transfer) in [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/overview-cam.html?lang=en) 以获取提取和摄取时间的估计值。
-
 #### Azure Blob存储数据存储 {#azure-blob-storage}
 
-从Azure门户的容器属性页面中，使用 **计算大小** 按钮以确定容器中所有内容的大小。 例如：
+在Azure门户的现有容器属性页面中，使用 **计算大小** 按钮以确定容器中所有内容的大小。 例如：
 
 ![图像](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
@@ -98,8 +93,11 @@ ht-degree: 2%
 
 ### 2.安装支持AzCopy的内容传输工具(CTT)版本 {#install-ctt-azcopy-support}
 
-CTT 1.5.4版本中包含对Amazon S3和Azure Blob Storage的AzCopy支持。
-CTT 1.7.2版本中包含对文件数据存储的支持。您可以从 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
+>[!IMPORTANT]
+>应使用最新发布的CTT版本。
+
+最新CTT版本中包含对Amazon S3、Azure Blob Storage和文件数据存储的AzCopy支持。
+您可以从 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
 
 
 ### 3.配置azcopy.config文件 {#configure-azcopy-config-file}
@@ -115,7 +113,7 @@ CTT 1.7.2版本中包含对文件数据存储的支持。您可以从 [Software 
 
 >[!NOTE]
 >
-> 如果您不想授予对Blob存储容器的写入权限，则可以生成一个新的SAS URI，该URI仅具有读取和列表权限。
+> 如果您不想授予对现有Blob存储容器的写入权限，则可以生成一个新的SAS URI，该URI仅具有读取和列表权限。
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -140,7 +138,7 @@ s3SecretKey=--REDACTED--
 
 #### 文件数据存储 {#file-data-store-azcopy-config}
 
-您的 `azcopy.config` 文件必须包含azcopyPath属性，以及指向文件数据存储位置的可选repository.home属性。 为实例使用正确的值。
+您的 `azcopy.config` 文件必须包含azCopyPath属性，以及指向文件数据存储位置的可选repository.home属性。 为实例使用正确的值。
 文件数据存储
 
 ```
@@ -148,7 +146,7 @@ azCopyPath=/usr/bin/azcopy
 repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 ```
 
-azcopyPath属性必须包含源AEM实例上安装azCopy命令行工具的位置的完整路径。 如果azCopyPath属性缺失，则不会执行Blob预复制步骤。
+azCopyPath属性必须包含源AEM实例上安装azCopy命令行工具的位置的完整路径。 如果azCopyPath属性缺失，则不会执行Blob预复制步骤。
 
 如果 `repository.home` azcopy.config中缺少属性，则缺省数据存储位置 `/mnt/crx/author/crx-quickstart/repository/datastore` 将用于执行预复制。
 
@@ -196,15 +194,12 @@ AzCopy会在后续运行中自动跳过在错误之前复制的任何Blob，而�
 
 ### 5.使用AzCopy摄取 {#ingesting-azcopy}
 
-随着内容传输工具1.5.4的发布，我们为创作摄取添加了AzCopy支持。
-
->[!NOTE]
->建议先单独运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
+请参阅 [将内容摄取到目标](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html)
+有关从Cloud Acceleration Manager(CAM)将内容摄取到目标的一般信息，包括有关如何在“新建摄取”对话框中使用AzCopy（预复制）或不使用AzCopy的说明。
 
 要在摄取期间利用AzCopy，我们要求您使用至少为2021.6.5561版的AEMas a Cloud Service版本。
 
-从CTT UI开始创作摄取。 请参阅 [摄取流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) 以了解更多详细信息。
-AzCopy中的日志条目将显示在摄取日志中。 它们将如下所示：
+请参阅Cloud Acceleration Manager中的“摄取作业”列表和摄取的日志以查看进度。  与成功的AzCopy任务相关的日志条目将如下所示（允许存在一些差异）。 有时，检查日志可能会提前提醒您出现问题，并帮助您找到任何问题的快速解决方案。
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************
@@ -213,13 +208,10 @@ INFO: Failed to create one or more destination container(s). Your transfers may 
 INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
- 
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started
 Log file is located at: /root/.azcopy/419d98da-fc05-2a45-70cc-797fee632031.log
  
- 
 0.0 %, 0 Done, 0 Failed, 886 Pending, 0 Skipped, 886 Total,
- 
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 summary
 Elapsed Time (Minutes): 0.0334
@@ -235,12 +227,6 @@ Final Job Status: CompletedWithSkipped
 *************** Completed AzCopy pre-copy phase ***************
 ```
 
-## 禁用AzCopy {#disable-azcopy}
+## 后续内容 {#whats-next}
 
-要禁用AzCopy，请重命名或删除 `azcopy.config` 文件。
-
-例如，可以通过以下方式禁用azcopy提取： `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
-
-## 下一步 {#whats-next}
-
-学习了处理大型内容存储库以显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service后，您便可以学习内容传输工具中的提取流程。 请参阅 [在内容传输工具中从源提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何从内容传输工具中提取迁移集。
+学习了处理大型内容存储库以显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service后，您现在可以使用内容传输工具学习提取流程。 请参阅 [在内容传输工具中从源提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何从内容传输工具中提取迁移集。

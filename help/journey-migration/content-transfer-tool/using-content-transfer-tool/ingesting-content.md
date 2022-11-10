@@ -2,9 +2,9 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 13%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 13%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. 然后，您可以从摄取作业列表视图中监控摄取阶段
+1. 然后，您可以从摄取作业列表视图中监控摄取阶段，并使用摄取的操作菜单，在摄取进行时查看日志。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -122,6 +122,6 @@ ht-degree: 13%
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-在内容传输工具中了解将内容摄取到目标后，您便可以在每个步骤（提取和摄取）完成后查看日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 以了解更多。
+完成将内容摄取到Target后，您可以查看每个步骤（提取和摄取）的日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 以了解更多。
