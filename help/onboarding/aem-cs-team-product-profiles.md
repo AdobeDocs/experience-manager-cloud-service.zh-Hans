@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service 团队和产品配置文件
-description: 了解 AEM as a Cloud Service 团队和产品简介，以及如何授予和限制对您许可的 Adobe 解决方案的访问权限。
+description: 了解AEMas a Cloud Service团队和产品配置文件如何授予和限制对您的授权Adobe解决方案的访问权限。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 94%
+source-wordcount: '748'
+ht-degree: 78%
 
 ---
 
 # AEM as a Cloud Service 团队和产品配置文件 {#product-profiles}
 
-了解 AEM as a Cloud Service 团队和产品简介，以及如何授予和限制对您许可的 Adobe 解决方案的访问权限。
+了解AEMas a Cloud Service团队和产品配置文件如何授予和限制对您的授权Adobe解决方案的访问权限。
 
 ## 产品配置文件 {#profiles}
 
@@ -31,7 +31,9 @@ AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供�
 
 >[!NOTE]
 >
->分配给 AEM as a Cloud Service 产品配置文件的每个用户有权（只读）访问 Cloud Manager。 
+>分配给AEMas a Cloud Service产品配置文件的每个用户都可通过 **Cloud Manager用户** 角色。
+>
+>仅具有 **Cloud Manager用户** 角色可以登录到Cloud Manager，然后使用 **程序** 菜单选项。 的 **Cloud Manager用户** 角色不足以访问程序详细信息。 如果需要此类访问权限，则用户的系统管理员必须授予其他角色。
 
 >[!TIP]
 >

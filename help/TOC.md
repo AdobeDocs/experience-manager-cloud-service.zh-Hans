@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述、自
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
+source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
 workflow-type: tm+mt
-source-wordcount: '3738'
+source-wordcount: '3739'
 ht-degree: 99%
 
 ---
@@ -145,7 +145,6 @@ ht-degree: 99%
       + [分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
       + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
       + [AEM 用户任务](/help/journey-onboarding/aem-users.md)
-      + [用户组](/help/journey-onboarding/user-groups.md)
    + AEM 参考演示加载项历程 {#demo-add-on}
       + [概述](/help/journey-sites/demos-add-on/overview.md)
       + [安装](/help/journey-sites/demos-add-on/installation.md)
@@ -156,6 +155,7 @@ ht-degree: 99%
    + 其他入门概念{#concepts}
       + [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [通知用户组](/help/journey-onboarding/user-groups.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)

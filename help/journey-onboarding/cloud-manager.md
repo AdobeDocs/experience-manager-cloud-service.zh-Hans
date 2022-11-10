@@ -3,10 +3,10 @@ title: 访问 Cloud Manager
 description: 了解如何访问 Cloud Manager，以便您可以设置项目资源。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 93%
+source-wordcount: '1055'
+ht-degree: 97%
 
 ---
 
@@ -32,10 +32,6 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 通常，分配给&#x200B;**业务负责人**&#x200B;产品配置文件的团队成员负责添加您的云资源，如程序和环境。 此人了解业务需求，并了解由谁完成初始 Cloud Manager 设置。
 
 为了进行此次入门培训历程，您作为系统管理员，已经将自己分配到&#x200B;**业务负责人**&#x200B;产品配置文件，并将设置云资源。 根据实际项目需求，业务负责人可能与系统管理员相同，也可能不同。
-
->[!NOTE]
->
->默认情况下，有权访问AEM环境的用户也将具有Cloud > Manager用户角色。 此角色本身及其本身不足以授予用户访问项目详细信息视图的权限。 此类仅具有Cloud Manager用户角色的用户能够通过项目菜单选项导航到AEM环境创作URL（如果存在环境）。 如果此类用户希望获得程序级访问权限，则必须联系其管理员。
 
 ## 作为系统管理员和业务负责人访问 Cloud Manager {#access-sysadmin-bo}
 
@@ -138,3 +134,4 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 * [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md) –
 了解 Cloud Manager、Cloud Manager 程序和环境。
+* [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)  — 了解AEMas a Cloud Service团队和产品配置文件如何授予和限制对您的授权Adobe解决方案的访问权限。

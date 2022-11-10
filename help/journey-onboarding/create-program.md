@@ -3,10 +3,10 @@ title: 创建程序
 description: 了解如何使用 Cloud Manager 创建您的第一个程序。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 88%
+source-wordcount: '604'
+ht-degree: 95%
 
 ---
 
@@ -38,10 +38,6 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的。
 
 由于用途不同，因此不同的环境有不同的选项。 然而，创建程序的过程是相似的。 对于此次入门培训历程，我们将创建一个沙盒环境。
-
->[!NOTE]
->
->默认情况下，有权访问AEM环境的用户也将具有Cloud > Manager用户角色。 此角色本身及其本身不足以授予用户访问项目详细信息视图的权限。 此类仅具有Cloud Manager用户角色的用户能够通过项目菜单选项导航到AEM环境创作URL（如果存在环境）。 如果此类用户希望获得程序级访问权限，则必须联系其管理员。
 
 ## 创建沙盒程序 {#create-sandbox}
 
@@ -75,3 +71,4 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 * [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) – 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。
 * [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) – 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 * [使用 Adobe Cloud Manager – 程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) – 程序代表支持业务计划逻辑集的 AEM 环境集，通常与购买的服务水平协议 (SLA) 相对应。
+* [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)  — 了解AEMas a Cloud Service团队和产品配置文件如何授予和限制对您的授权Adobe解决方案的访问权限。
