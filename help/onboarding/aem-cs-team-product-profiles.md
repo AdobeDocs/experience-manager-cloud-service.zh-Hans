@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 团队和产品配置文件
 description: 了解 AEM as a Cloud Service 团队和产品简介，以及如何授予和限制对您许可的 Adobe 解决方案的访问权限。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
+source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '687'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,9 @@ AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供�
 
 >[!TIP]
 >
->有关载入流程的更多信息，请参阅[入门培训历程](/help/journey-onboarding/overview.md)。
+>* 要了解有关AEM产品配置文件的更多信息，请参阅此文档 [分配AEM产品配置文件。](/help/journey-onboarding/assign-profiles-aem.md)
+>* 有关载入流程的更多信息，请参阅[入门培训历程](/help/journey-onboarding/overview.md)。
+
 
 ## Cloud Manager 产品配置文件 {#cloud-manager-product-profiles}
 
@@ -63,3 +65,9 @@ Cloud Manager 具有预配置的产品配置文件，可以将其视为基于角
 >[!NOTE]
 >
 >要被授予 AEM as a Cloud Service 访问权限，用户必须属于以下两种产品配置文件之一：`AEM Users` 或 `AEM Administrators`。 管理 Cloud Manager 的权限不够。
+
+>[!TIP]
+>
+>* 要了解有关Cloud Manager产品配置文件的更多信息，请参阅此文档 [将团队成员分配给Cloud Manager产品配置文件。](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* 有关载入流程的更多信息，请参阅[入门培训历程](/help/journey-onboarding/overview.md)。
+
