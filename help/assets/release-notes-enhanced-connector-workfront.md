@@ -2,9 +2,9 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
          `200` 因为响应代码表示成功删除了错误的事件订阅。
    >[!NOTE]
    >
-   >如果在执行此过程中所述的步骤之前已删除错误的事件订阅，则可以跳过步骤4。
+   >如果在执行此过程中所述的步骤之前已删除错误的事件订阅，则可以跳过此过程的最后一步。
 
 
 >[!IMPORTANT]
