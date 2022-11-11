@@ -2,9 +2,9 @@
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '4100'
 ht-degree: 2%
 
 ---
@@ -330,27 +330,35 @@ When you select a form model, configure Document of Record using options availab
 1. 在记录文档中选择一个面板（根面板），然后点按 ![配置](assets/configure.png).
 1. 点按 ![多选项卡](assets/dortab.png). 将出现“记录文档”选项卡。
 1. 选择默认模板或用于渲染记录文档的自定义模板。 如果选择默认模板，“记录文档”的缩略图预览将显示在“模板”下拉列表的下方。
+1. 根据您是选择默认模板还是自定义模板，“记录文档”选项卡中将显示以下部分或全部属性。 指定以下属性以定义记录文档的外观：
 
-   ![品牌模板](assets/brandingtemplate.png)
+   1. **基本属性**:
+      * **模板**:如果选择自定义模板，请在 [!DNL AEM Forms] 服务器。 如果要使用的模板上尚未包含 [!DNL AEM Forms] 服务器中，您应该先将XDP上传到 [!DNL AEM Forms] 服务器。
+      * **强调颜色**:在文档或记录PDF中呈现标题文本和分隔线的颜色。
+      * **字体系列**:“记录文档”PDF中文本的字体系列。
+      * **包括未绑定到数据模型的表单对象**:设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。
+      * **从记录文档中排除隐藏字段**:设置属性可标识要从记录文档中排除的隐藏字段。
+      * **隐藏面板的描述**:设置属性时，“记录文档”中不包含面板/表的说明。 适用于面板和表。
 
-   如果选择自定义模板，请在 [!DNL AEM Forms] 服务器。 如果要使用的模板上尚未包含 [!DNL AEM Forms] 服务器中，您应该先将XDP上传到 [!DNL AEM Forms] 服务器。
+      ![基本属性](/help/forms/assets/basicpropertiesdor.png)
 
-1. 根据您是选择默认模板还是自定义模板，“记录文档”选项卡中将显示以下部分或全部属性。 请相应地指定以下选项：
+   1. **表单字段属性**:
+      * **对于复选框和单选按钮组件，仅显示选定的值**:设置属性时，仅显示 [!UICONTROL 记录文档].
+      * **多个值的分隔符**:您可以选择任何分隔符（如逗号或换行符）来显示多个值。
+      * **选项对齐方式**:您可以选择所需的对齐方式（“水平”、“垂直”、“与自适应表单相同”），以设置要在上显示的字段（如复选框或单选按钮）的对齐方式 [!UICONTROL 记录文档]. 默认情况下，将为 [!UICONTROL 记录文档]. 从 [!UICONTROL 表单字段属性] 的DoR将覆盖 [!UICONTROL 项目对齐方式] ，用于自适应表单中的字段。 如果是，您选择 [!UICONTROL 与Aptive表单相同] 选项，则自适应表单创作实例中配置的对齐方式将用于 [!UICONTROL 记录文档] 字段。
+      * **水平对齐选项的数量**：您可以设置要在记录文档中显示的水平对齐选项的数量。
 
-   * **徽标图像**:您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
-   * **表单标题**
-   * **标题文本**
-   * **免责声明标签**
-   * **免责声明**
-   * **免责声明文本**
-   * **强调颜色**:在文档或记录PDF中呈现标题文本和分隔线的颜色
-   * **字体系列**:记录文档中文本的字体系列PDF
-   * **对于复选框和单选按钮组件，仅显示选定的值**
-   * **用于多个选定值的分隔符**
-   * **包括未绑定到数据模型的表单对象**
-   * **从记录文档中排除隐藏字段**
-   * **隐藏面板描述**
+      ![表单字段属性](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **母版页  属性**:
+      * **徽标图像**:您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
+      * **表单标题**:DoR的标题。
+      * **标题文本**:显示在记录文档标题部分的文本。
+      * **免责声明标签**:免责声明标签。
+      * **免责声明**:规定记录文档权利和义务范围的文本。
+      * **免责声明文本**:免责声明文本。
+
+      ![母版页  属性](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >如果您使用的自适应表单模板是使用6.3之前的Designer版本创建的，要使“强调颜色”和“字体系列”属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
@@ -367,7 +375,30 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 要保存品牌策略更改，请点按完成。
+1. 要保存品牌策略更改，请点按 **[!UICONTROL 完成]**.
+
+## 自适应表单编辑器中的记录支持文档 {#dor-support-in-adaptiveform}
+
+您可以配置 [!UICONTROL 记录文档] 模板直接从自适应表单编辑器或自适应表单模板编辑器。
+
+从自适应表单编辑器的创作实例中执行以下步骤：
+
+1. 选择 **[!UICONTROL 自适应表单容器（根）]** 组件。
+1. 单击 ![“配置”图标](/help/forms/assets/configure-icon.svg) 图标以打开 **[!UICONTROL 属性]** 自适应表单容器的子目录访问Advertising Cloud帮助。
+1. 打开 **[!UICONTROL 记录模板文档]** 选项卡，然后从以下选项中选择：
+   * **[!UICONTROL 无]**:选择此选项时，否 [!UICONTROL 记录文档] 为自适应表单创建的模板。
+
+   * **[!UICONTROL 将表单模板关联为记录模板文档]**：选择此选项后，XFA表单将用作记录文档的模板。
+
+   * **[!UICONTROL 生成记录文档]**:选择此选项后， [!UICONTROL 记录文档] 模板会为您的自适应表单自动生成。
+
+1. 点按 ![保存](/help/forms/assets/check-button.png) 以保存属性。
+
+![记录模板支持文档](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>When [!UICONTROL 记录文档] 模板是使用自适应表单模板编辑器创建的，则下只有两个选项可用 [!UICONTROL 记录模板文档] 选项卡 [!UICONTROL 无] 和 [!UICONTROL 生成记录文档].
 
 ## 记录文档中面板的表和列布局 {#table-and-column-layouts-for-panels-in-document-of-record}
 

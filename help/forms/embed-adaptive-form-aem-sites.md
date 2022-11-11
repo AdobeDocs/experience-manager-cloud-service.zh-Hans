@@ -3,10 +3,10 @@ title: 在AEM Sites页面中嵌入自适应表单
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: 您可以使用AEM Forms容器组件将自适应Forms添加或嵌入到AEM Sites页面，以便无需离开AEM Sites页面即可填写和提交表单。
 feature: Adaptive Forms
-source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 1%
+source-wordcount: '1178'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +20,21 @@ AEM Forms允许表单开发人员将自适应表单无缝嵌入到AEM Sites页�
 
 在AEM Sites页面中，您可以使用以下方法添加自适应表单：
 
-* **[AEM Forms容器组件](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **AEM Forms容器组件**
 AEM Forms提供了可添加到网站页面的组件。 利用AEM Forms容器组件，可嵌入自适应表单。
 
-* **[资产浏览器](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+* **资产浏览器**
 所有表单都位于资产下。 您可以将表单作为资产拖放到页面上。
 
 ## 前提条件 {#prerequisites}
 
-要在使用可编辑模板的AEM Sites页面中嵌入自适应表单，请确保将AEM表单组件配置为关联模板中允许使用的组件。 有关更多信息，请参阅 **策略和属性（布局容器）** 部分 [创建页面模板](/help/sites-authoring/templates.md).
+要在使用可编辑模板的AEM Sites页面中嵌入自适应表单，请确保将AEM表单组件配置为关联模板中允许使用的组件。
 
-如果站点页面使用静态模板，则需要在站点页面的段落系统中对其进行配置。 请参阅[在设计模式中配置组件](/help/sites-authoring/default-components-designmode.md)，以了解更多信息。
+以防 **AEM Forms容器组件** 在中不可见 **组件浏览器面板** ，请执行以下步骤（如视频中所示）。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+如果站点页面使用的是静态模板，您需要在站点页面的段落系统中对其进行配置。
 
 ## 嵌入自适应表单 {#af-component}
 
@@ -48,21 +52,31 @@ AEM Forms提供了可添加到网站页面的组件。 利用AEM Forms容器组�
 1. 点按站点页面中嵌入的AEM Forms容器组件，然后点按 ![settings_icon](assets/settings_icon.png) 中。 的 **[!UICONTROL 编辑AEM Forms容器]** 对话框。
 1. 在编辑AEM Forms容器对话框中，指定以下内容。
 
-   <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+   **资产类型：** 选择要嵌入的资产类型。
    * **资产路径**:浏览并选择要嵌入的自适应表单。 如果您从资产浏览器中将其删除，则会自动填充该内容。
    * **帖子提交** :选择要在表单提交时触发的操作。 您可以选择显示感谢信或感谢页。
+      * 显示
 
       * **感谢信**:使用富文本编辑器编写消息以在表单提交时显示。 仅当您选择显示感谢信时，此选项才可用。
       * **感谢页面**:浏览并选择要在表单提交时显示的页面。 仅当您选择显示感谢页面时，此选项才可用。
          * **重定向到“谢谢”页面**:启用选项，将包含嵌入式自适应表单的页面替换为感谢页面。 否则，感谢页面将替换AEM Forms容器中的自适应表单，而不刷新页面的底层站点。 仅当您选择显示感谢页面时，此选项才可用。
    * **使用页面语言**:使用AEM Sites页面的本地区域设置，而不是自适应表单。
    * **聚焦表单**:选择以设置对自适应表单第一个字段的焦点。
-
    * **主题**:选择一个主题，以定义自适应表单组件的样式。 样式包括外观属性，如字体样式、背景颜色、尺寸和对齐方式。
+   * **表单覆盖框架的整个宽度**:如果选中此选项，则不会使用iframe来呈现表单。
    * **高度**:指定容器的高度。 将其留空以自动调整容器大小。
    * **CSS客户端库**:指定CSS客户端库的路径。
 
 1. 保存设置。 自适应表单现在嵌入到页面中。
+
+AEM网站还允许您使用AEM表单容器组件即时创建自适应表单。 按照使用 **AEM Forms容器组件** 在AEM站点页面上：
+1. 在编辑模式下打开AEM站点页面，您要在其中嵌入自适应表单。
+1. 从组件浏览器面板中，将AEM Forms容器组件拖放到页面上。
+1. 单击 **加号** 图标，此时您将被重定向到表单创建向导。
+
+   ![AEM表单容器组件](/help/forms/assets/aemformcontainer.png)
+
+1. 创建自适应表单后，您将被重定向到AEM站点页面，创建的表单将在AEM站点页面上呈现。
 
 ## 发布嵌入式自适应表单 {#publishing-embedded-adaptive-form}
 

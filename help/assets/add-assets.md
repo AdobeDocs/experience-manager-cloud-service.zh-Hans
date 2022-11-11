@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 同时，您可以在 [!DNL Experience Manager]，最常用的文件格式支持其他服务，如元数据提取或预览/呈现版本生成。 请参阅 [支持的文件格式](file-format-support.md) 以了解详细信息。
 
-您还可以选择对上传的资产进行其他处理。 可以在上传资产的文件夹上配置多个资产处理配置文件，以添加特定元数据、演绎版或图像处理服务。 请参阅 [上传后会处理资产](#process-when-uploaded).
+您还可以选择对上传的资产进行其他处理。 可以在上传资产的文件夹中配置许多资产处理配置文件，以添加特定元数据、演绎版或图像处理服务。 请参阅 [上传后会处理资产](#process-when-uploaded).
 
-[!DNL Assets] 提供了以下上传方法。 Adobe建议您在使用上传选项之前先了解其用例和适用性。
+[!DNL Assets] 提供以下上传方法。 Adobe建议您在使用上传选项之前先了解其用例和适用性。
 
 | 上传方法 | 何时使用? | 主要角色 |
 |---------------------|----------------|-----------------|
@@ -33,7 +33,7 @@ ht-degree: 1%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的 [!DNL Creative Cloud] 桌面应用程序。 | 创意、营销人员 |
 | [资产批量摄取](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔批量摄取。 仅适用于支持的数据存储。 | 管理员、开发人员 |
 
-## 上传资产 {#upload-assets}
+## 上传资源 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -109,7 +109,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    >
    >如果资产被锁定或签出，则用于替换资产的选项将不可用。
 
-* 创建其他版本：将在存储库中创建现有资产的新版本。 您可以在 [!UICONTROL 时间轴] 和可以根据需要还原到以前现有的版本。
+* 创建其他版本：将在存储库中创建现有资产的新版本。 您可以在 [!UICONTROL 时间轴] 和可以根据需要还原到以前的现有版本。
 * 同时保留以下两项：如果您选择保留这两个资产，则会重命名新资产。
 
 要在 [!DNL Assets]，单击 **[!UICONTROL 保留]**. 要删除上传的重复资产，请单击 **[!UICONTROL 删除]**.
@@ -172,6 +172,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 提供值以创建与数据源的连接。 例如，如果您选择 **Azure Blob存储** 作为数据源，指定Azure存储帐户、Azure blob容器和Azure访问密钥的值。
 
+1. 从下拉列表中选择所需的身份验证模式。 **Azure访问密钥** 提供对Azure存储帐户的完全访问，而 **Azure SAS令牌** 允许管理员使用权限和过期策略限制令牌的功能。
+
 1. 提供根文件夹的名称，该根文件夹包含 **[!UICONTROL 源文件夹]** 字段。
 
 1. （可选）提供资产的最小文件大小（以MB为单位），以将其包含在 **[!UICONTROL 按最小大小筛选]** 字段。
@@ -220,7 +222,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 批量导入资产或文件夹时， [!DNL Experience Manager Assets] 导入导入源中存在内容的整个结构。 [!DNL Experience Manager] 遵循资产和文件夹名称中特殊字符的内置规则，因此这些文件名需要清理。 对于文件夹名称和资产名称，用户定义的标题将保持不变，并存储在 `jcr:title`.
 
-在批量导入期间， [!DNL Experience Manager] 查找现有文件夹以避免重新导入资产和文件夹，同时还会验证在执行导入的父文件夹中应用的清理规则。 如果清理规则在父文件夹中应用，则相同的规则将应用于导入源。 对于新导入，将应用以下鼠标化规则来管理资产和文件夹的文件名。
+在批量导入期间， [!DNL Experience Manager] 查找现有文件夹以避免重新导入资产和文件夹，同时还会验证在执行导入的父文件夹中应用的清理规则。 如果清理规则在父文件夹中应用，则相同的规则将应用于导入源。 对于新导入，将应用以下清理规则来管理资产和文件夹的文件名。
 
 **批量导入中不允许的名称**
 

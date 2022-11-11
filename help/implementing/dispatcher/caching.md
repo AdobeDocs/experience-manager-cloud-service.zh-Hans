@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2663'
 ht-degree: 1%
 
 ---
@@ -196,6 +196,19 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 ### HEAD请求行为 {#request-behavior}
 
 在AdobeCDN中接收HEAD请求时， **not** 缓存后，Dispatcher和/或AEM实例将转换和接收该请求作为GET请求。 如果响应是可缓存的，则后续HEAD请求将从CDN提供。 如果响应不可缓存，则后续HEAD请求将在取决于 `Cache-Control` TTL。
+
+### 营销活动参数 {#marketing-parameters}
+
+网站URL通常包括用于跟踪营销活动成功与否的营销活动参数。 为了有效地使用Dispatcher的缓存，建议您配置 `ignoreUrlParams` 属性 [文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
+的 `ignoreUrlParams` 部分必须取消注释，且应引用文件 `conf.dispatcher.d/cache/marketing_query_parameters.any`，可通过取消对与营销渠道相关参数对应的行的注释来修改。 您也可以添加其他参数。
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## 调度程序缓存失效 {#disp}
 

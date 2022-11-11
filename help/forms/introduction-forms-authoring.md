@@ -9,9 +9,9 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2409'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 4%
 
 自适应Forms让您能够创建有吸引力的响应式、动态且自适应的表单。 [!DNL AEM Forms] 提供了直观的用户界面和现成的组件，用于创建和使用自适应Forms。 您可以选择基于表单模型或架构创建自适应表单，也可以不使用表单模型创建自适应表单。 必须仔细选择不仅适合您的要求，而且扩展您现有的基础设施投资和资产的表单模式。 您可以从以下选项中进行选择，以创建自适应表单：
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **使用表单数据模型**
+   [数据集成](data-integration.md) 允许您将来自不同数据源的实体和服务集成到表单数据模型中，以用于创建自适应Forms。 如果要创建的自适应表单涉及从多个数据源获取数据和将数据写入多个数据源，请选择表单数据模型。
 
 * **使用XDP表单模板**
 如果您在基于XFA或XDP的表单中进行了投资，则这是理想的表单模型。 它提供了一种将基于XFA的表单转换为自适应Forms的直接方法。 任何现有的XFA规则都将保留在关联的自适应Forms中。 生成的自适应Forms支持XFA构建，如验证、事件、属性和模式。
@@ -35,7 +35,11 @@ XML和JSON架构表示组织内的后端系统生成或使用数据的结构。 
 * **不使用表单模型或不使用表单模型**
 使用此选项创建的自适应Forms不使用任何表单模型。 从这种表单生成的数据XML具有平坦结构，其中具有字段和相应的值。
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > 您可以从自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。 有关更多信息，请参阅 [编辑自适应表单的表单模型属性](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+
+要创建自适应表单，请参阅 [创建自适应表单](creating-adaptive-form.md).
 
 ## 自适应表单创作UI {#adaptive-form-authoring-ui}
 

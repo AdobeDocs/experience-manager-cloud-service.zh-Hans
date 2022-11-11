@@ -2,9 +2,9 @@
 title: 如何创建自适应表单模板？
 description: 创建自适应表单模板，以使用模板编辑器定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1806'
 ht-degree: 1%
 
 ---
@@ -153,9 +153,17 @@ Experience Manager提供用于组织模板的全局文件夹。 但是，默认�
 
 表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 在其他 [!DNL AEM Forms] 实例，则导入时不会使用其模板。 如果表单已导入，但其模板不可用，则不会呈现该表单。 您可以从中打包自定义模板 `/conf` 节点 `https://<server>:<port>/crx/packmgr`，并将其端口到 [!DNL AEM Forms] 要上传表单的实例。 您还可以 [使用AEM原型创建模板并将其部署到Cloud Services实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
+>[!NOTE]
+>
+> * 您可以关联 [!UICONTROL 表单数据模型架构] 到模板编辑器中的自适应表单模板。 请参阅 [创建自适应表单](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) 以了解更多信息。
+> * 您还可以配置 [!UICONTROL 记录文档] 模板直接从自适应表单编辑器或自适应表单模板编辑器。 有关更多信息，请参阅 [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
 ## 使用模板创建自适应表单 {#creating-an-adaptive-form-using-the-template}
 
 创建并启用模板后，在创建自适应表单时，该模板可在表单管理器中使用。 要使用模板和创建自适应表单，请参阅 [创建自适应表单](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}

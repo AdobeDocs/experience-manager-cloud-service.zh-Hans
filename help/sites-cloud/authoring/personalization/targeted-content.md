@@ -2,10 +2,10 @@
 title: 使用定位模式创作目标内容
 description: 通过定位模式和 Target 组件，可以创建体验的内容
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
-ht-degree: 100%
+source-wordcount: '5414'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,25 @@ ht-degree: 100%
 * 模拟用户体验。
 * 配置 Target 组件，以进行更多自定义。
 
-您可以将 AEM 或 Adobe Target 用作定位引擎（您必须拥有有效的 Adobe Target 帐户才能使用 Adobe Target）。如果您使用的是 Adobe Target，则必须先配置集成。请参阅有关集成 Adobe Target 的说明。<!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>定位模式在页面编辑器和体验片段编辑器中均可用。
+>
+>虽然以下文档是为页面编辑器编写的，但以下文档同时适用于这两个页面（因为它们在相同的基础上运行）。
+
+>[!CAUTION]
+>
+>在页面编辑器中进行定位时，只能定位体验片段组件。
+>
+>其他组件类型可以使用 **转换为体验片段变量** 图标。
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+您可以将 AEM 或 Adobe Target 用作定位引擎（您必须拥有有效的 Adobe Target 帐户才能使用 Adobe Target）。如果您使用的是 Adobe Target，则必须先配置集成。请参阅 [与Adobe Target集成的说明](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![定位内容](../assets/targeted-content.png)
 

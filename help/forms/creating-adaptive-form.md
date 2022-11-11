@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1359'
 ht-degree: 1%
 
 ---
@@ -64,6 +64,11 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 1. 在“源”选项卡中，选择一个模板：
 
    * 选择可编辑模板时，会自动选择模板中指定的主题和提交操作，并且 **[!UICONTROL 创建]** 按钮。 您可以转到 **[!UICONTROL 样式]** 或 **[!UICONTROL 提交]** 选项卡，以选择其他主题或提交操作。 如果选定的可编辑模板未指定主题，则创建按钮将保持禁用状态。 您可以转到 **[!UICONTROL 样式]** 选项卡来访问Advertising Cloud的帮助。
+
+      >[!NOTE]
+      >
+      > 您还可以创建 [!UICONTROL 记录文档] 模板。 有关更多信息，请参阅 [自适应表单编辑器中的记录支持文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * 选择静态模板时，数据、样式、提交、提交和预览选项将不可用。 创建新的自适应表单时，建议使用可编辑的模板。
 
 1. 在样式选项卡中，选择一个主题：
@@ -159,3 +164,15 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
    * 如果自适应表单基于表单模型，则可以选择其他表单模型 <!-- form template, --> XML或JSON架构，或同一表单模型的表单数据模型。
 
 1. 点按 **[!UICONTROL 保存]** 以保存属性。
+
+您还可以从自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。
+
+1. 选择 **[!UICONTROL 自适应表单容器（根）]** 组件。
+1. 单击 ![“配置”图标](/help/forms/assets/configure-icon.svg) 图标以打开 **[!UICONTROL 属性]** 自适应表单容器的子目录访问Advertising Cloud帮助。
+1. 选择 **[!UICONTROL 数据模型]** 选项卡，然后执行以下操作之一：
+
+   * 如果自适应表单没有表单模型，则可以选择表单模型并相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型。
+   * 如果自适应表单基于表单模型，则不能更改表单模型。 您可以选择其他 <!-- form template, --> 适用于同一表单模型的XML或JSON架构，或表单数据模型。
+1. 点按 ![保存](/help/forms/assets/check-button.png) 以保存属性。
+
+![FDM — 架构支持](/help/forms/assets/fdmsupport.png)
