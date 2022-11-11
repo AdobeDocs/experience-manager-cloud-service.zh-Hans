@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述、自
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
+source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3770'
 ht-degree: 98%
 
 ---
@@ -489,6 +489,8 @@ ht-degree: 98%
    + [关键功能](/help/forms/key-features.md)
    + [重要更改](/help/forms/notable-changes.md)
    + [架构](/help/forms/aem-forms-cloud-service-architecture.md)
+   + AEM Forms参考资料 {#formsreference-themes}
+      + [参考主题](/help/forms/reference-themes.md)
    + 设置和配置服务 {#setup-environment}
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
