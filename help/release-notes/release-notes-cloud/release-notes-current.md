@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a8d632818dd0514d63a5cb544e4b64301819483f
+source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 19%
@@ -36,7 +36,7 @@ ht-degree: 19%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前月度版本(2022.10.0)为2022年11月10日。 下一个月版本（2023.1.0版）计划于2022年1月26日发布。
+的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前月度版本(2022.10.0)为2022年11月10日。 下一个月版本（2023.1.0版）计划于2023年1月26日发布。
 
 ## 发布视频 {#release-video}
 
