@@ -4,9 +4,9 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
+source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
 workflow-type: tm+mt
-source-wordcount: '3333'
+source-wordcount: '3351'
 ht-degree: 10%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->图像配置文件不适用于PDF、动画GIF或INDD(Adobe InDesign)文件。
+>·智能裁剪不支持CMYK图像格式。
+·图像配置文件不适用于PDF、动画GIF或INDD(Adobe InDesign)文件。
 
 ## 钝化蒙版选项 {#unsharp-mask}
 
 创建图像配置文件时，您可以使用 **[!UICONTROL 钝化蒙版]** 选项，对最终的缩减采样图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与 Adobe Photoshop 的“钝化蒙蔽”滤镜相同的选项。
 
 >[!NOTE]
->
->USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小演绎版。 这意味着ptiff中最大大小的演绎版不会受到USM锐化的影响。 但是，大小较小的演绎版（如缩略图）会发生更改（并显示USM锐化）。
+USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小演绎版。 这意味着ptiff中最大大小的演绎版不会受到USM锐化的影响。 但是，大小较小的演绎版（如缩略图）会发生更改（并显示USM锐化）。
 
 在 **[!UICONTROL 钝化蒙版]**，则具有以下筛选选项：
 
@@ -71,8 +71,7 @@ ht-degree: 10%
 您有两个图像裁剪选项可供您选择。 您还可以选择自动创建颜色和图像色板，或跨目标分辨率保留裁剪内容。
 
 >[!IMPORTANT]
->
->Adobe建议您查看生成的任何作物和色板，以确保它们与您的品牌和价值相关且适当。
+Adobe建议您查看生成的任何作物和色板，以确保它们与您的品牌和价值相关且适当。
 
 | 选项 | 何时使用 | 描述 |
 | --- | --- | --- |
@@ -85,9 +84,10 @@ ht-degree: 10%
 
 支持的最大输入文件大小分辨率为16K。
 
+智能裁剪不支持CMYK图像格式。
+
 >[!NOTE]
->
->16K分辨率是水平大约16,000像素的显示分辨率。 最常讨论的16K分辨率是15360 × 8640，每个维度中8K UHD的像素计数翻倍，总像素数是原来的4倍。 此分辨率为13270万像素，是4K分辨率的16倍，是1080p分辨率的64倍。
+16K分辨率是水平大约16,000像素的显示分辨率。 最常讨论的16K分辨率是15360 × 8640，每个维度中8K UHD的像素计数翻倍，总像素数是原来的4倍。 此分辨率为13270万像素，是4K分辨率的16倍，是1080p分辨率的64倍。
 
 | 图像格式 | 文件扩展名不区分大小写 | MIME类型 | 支持的输入色彩空间 | 支持的最大输入文件大小 | 是否支持图像格式？ |
 | --- | --- | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ ht-degree: 10%
 
    ![农作物](assets/crop.png)
 
-1. 选择&#x200B;**[!UICONTROL “保存”]**。此时新创建的配置文件会显示在可用配置文件列表中。
+1. 选择&#x200B;**[!UICONTROL 保存]**。此时新创建的配置文件会显示在可用配置文件列表中。
 
 ## 编辑或删除Dynamic Media图像配置文件 {#editing-or-deleting-image-profiles}
 
@@ -200,17 +200,15 @@ ht-degree: 10%
 ## 编辑单个图像的智能裁剪或智能色板 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
->
->Adobe建议您查看生成的任何智能作物和智能色板，以确保它们与您的品牌和价值相关且适当。
+Adobe建议您查看生成的任何智能作物和智能色板，以确保它们与您的品牌和价值相关且适当。
 
 您可以手动重新调整图像的智能裁剪窗口大小或调整其大小，以进一步优化其焦点。
 
 编辑智能裁剪并保存后，所做的更改会传播到您对特定图像使用裁剪的所有位置。
 
 >[!IMPORTANT]
->
->手动重新调整资产的智能裁剪窗口大小或调整其大小时，即使您稍后决定重新处理资产，也会维护并保留该编辑。 但是，如果您在 **[!UICONTROL 响应式图像裁剪]** ，则会重新处理该资产。
->请参阅 [在文件夹中重新处理Dynamic Media资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+手动重新调整资产的智能裁剪窗口大小或调整其大小时，即使您稍后决定重新处理资产，也会维护并保留该编辑。 但是，如果您在 **[!UICONTROL 响应式图像裁剪]** ，则会重新处理该资产。
+请参阅 [在文件夹中重新处理Dynamic Media资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 如有必要，您可以重新运行智能裁剪以再次生成其他裁剪。
 
@@ -240,9 +238,7 @@ ht-degree: 10%
 编辑智能裁剪并保存后，所做的更改会传播到您对特定图像使用裁剪的所有位置。
 
 >[!IMPORTANT]
->
->手动重新调整多个资产的智能裁剪窗口大小或调整其大小时，即使您稍后决定重新处理这些资产，也会维护并保留这些编辑。 不过，如果您在图像配置文件的&#x200B;**[!UICONTROL 响应式图像裁切]**区域中编辑宽度和/或高度，则这些资源需要重新处理。
->请参阅 [在文件夹中重新处理Dynamic Media资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+手动重新调整多个资产的智能裁剪窗口大小或调整其大小时，即使您稍后决定重新处理这些资产，也会维护并保留这些编辑。 不过，如果您在图像配置文件的&#x200B;**[!UICONTROL 响应式图像裁切]**&#x200B;区域中编辑宽度和/或高度，则这些资源需要重新处理。请参阅 [在文件夹中重新处理Dynamic Media资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 如有必要，您可以重新运行智能裁剪以再次生成其他裁剪。
 
