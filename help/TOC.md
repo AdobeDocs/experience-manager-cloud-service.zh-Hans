@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述、自
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
+source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3766'
 ht-degree: 98%
 
 ---
@@ -489,8 +489,6 @@ ht-degree: 98%
    + [关键功能](/help/forms/key-features.md)
    + [重要更改](/help/forms/notable-changes.md)
    + [架构](/help/forms/aem-forms-cloud-service-architecture.md)
-   + AEM Forms参考资料 {#formsreference-themes}
-      + [参考主题](/help/forms/reference-themes.md)
    + 设置和配置服务 {#setup-environment}
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
@@ -509,6 +507,7 @@ ht-degree: 98%
          + [创建模板](/help/forms/template-editor.md)
          + [创建主题](/help/forms/themes.md)
          + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
+         + [引用资产](/help/forms/reference-assets.md)
       + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
          + [创建自适应表单](/help/forms/creating-adaptive-form.md)
          + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
