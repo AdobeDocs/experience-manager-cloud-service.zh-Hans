@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 34%
 
 ---
@@ -76,7 +76,8 @@ ht-degree: 34%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 的新增功能 [!DNL Forms] 频道 {#new-features-available-in-channel}
+### 的新增功能 [!DNL Forms] {#new-features-available-in-channel}
+
 
 * [自适应表单向导](/help/forms/creating-adaptive-form.md)：AEM Forms 提供便于企业用户使用的向导以快速创作自适应表单。该向导可快速地在选项卡之间导航，从而轻松地选择预先配置的模板、样式、字段和提交选项以创建自适应表单。此版本的向导有以下改进：
 
@@ -85,8 +86,6 @@ ht-degree: 34%
    * 使用静态模板：在传统静态模板中有长期投入的客户可通过在模板中使用静态模板创作自适应表单，继续其采用云的历程。这样使客户有更多时间可将旧有的静态模板迁移到现代的可编辑模板。
 
 * [在服务器端处理时从记录文档 (DoR) 删除隐藏的字段](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：您可为最终用户生成记录文档 PDF，其中仅包含在数据捕获体验期间对最终用户可见的那些字段。在提交表单时，服务器根据所提交的数据验证对最终用户隐藏了哪些字段，并从记录文档中排除以达到一致。
-
-
 
 ### [!DNL Forms]预发行渠道中提供的新功能 {#prerelease-features-forms}
 
