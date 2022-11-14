@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms提供了自适应表单主题，您可以从Software Distribution获取这些主题，并使用它们来设置表单样式。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 3%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 3%
 
 # Formsas a Cloud Service的参考资产 {#reference-themes}
 
-您可以通过安装 [引用资产包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助于快速启动并加速您的自适应Forms开发。 您可以使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 将此包部署到AEM Formsas a Cloud Service环境。
-
+您可以通过安装 [引用资产包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助于快速启动并加速您的自适应Forms开发。 您可以使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 将此包部署到Formsas a Cloud Service环境。
 包中包含的引用资产包括：
 
 ## 主题 {#themes}
