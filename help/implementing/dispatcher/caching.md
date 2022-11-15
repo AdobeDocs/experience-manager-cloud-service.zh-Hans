@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
+source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 1%
 
 ---
@@ -199,9 +199,9 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 
 ### 营销活动参数 {#marketing-parameters}
 
-网站URL通常包括用于跟踪营销活动成功与否的营销活动参数。 为了有效地使用Dispatcher的缓存，建议您配置 `ignoreUrlParams` 属性 [文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+网站URL通常包括用于跟踪营销活动成功与否的营销活动参数。 为了有效地使用调度程序缓存，建议您配置 `ignoreUrlParams` 属性 [此处](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
-的 `ignoreUrlParams` 部分必须取消注释，且应引用文件 `conf.dispatcher.d/cache/marketing_query_parameters.any`，可通过取消对与营销渠道相关参数对应的行的注释来修改。 您也可以添加其他参数。
+的 `ignoreUrlParams` 部分必须取消注释，且应引用文件 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 可通过取消对与营销渠道相关参数对应的行的注释来修改文件。 您也可以添加其他参数。
 
 ```
 /ignoreUrlParams {
