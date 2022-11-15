@@ -4,9 +4,9 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
+source-wordcount: '3344'
 ht-degree: 10%
 
 ---
@@ -84,14 +84,13 @@ Adobe建议您查看生成的任何作物和色板，以确保它们与您的品
 
 支持的最大输入文件大小分辨率为16K。
 
-智能裁剪不支持CMYK图像格式。
-
 >[!NOTE]
 16K分辨率是水平大约16,000像素的显示分辨率。 最常讨论的16K分辨率是15360 × 8640，每个维度中8K UHD的像素计数翻倍，总像素数是原来的4倍。 此分辨率为13270万像素，是4K分辨率的16倍，是1080p分辨率的64倍。
 
 | 图像格式 | 文件扩展名不区分大小写 | MIME类型 | 支持的输入色彩空间 | 支持的最大输入文件大小 | 是否支持图像格式？ |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | 是 |
+| CMYK |  |  |  |  | 否 |
 | EPS |  |  |  |  | 否 |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | 是；动画GIF的第一帧用于演绎版。 不能配置或更改第一帧。 |
 | JPEG | `.jpg` 和 `.jpeg` | image/jpeg | sRGB | 15 GB | 是 |
