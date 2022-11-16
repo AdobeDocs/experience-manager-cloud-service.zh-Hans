@@ -4,9 +4,9 @@ description: 了解如何创建Dynamic Media图像配置文件，其中包含USM
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3390'
 ht-degree: 10%
 
 ---
@@ -56,9 +56,9 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
 在图像上实施智能裁剪时，Adobe建议采用以下最佳实践并强制实施以下限制：
 
-| 限制类型 | 最佳实践 | 规定的限制 | 2022年12月31日的上限变更 |
-| --- | --- | --- | --- |
-| 每个图像的智能作物数量 | 5 | 100 | 20 |
+| 限制类型 | 最佳实践 | 规定的限制 |
+| --- | --- | --- |
+| 每个图像的智能作物数量 | 5 | 100 |
 
 另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 您有两个图像裁剪选项可供您选择。 您还可以选择自动创建颜色和图像色板，或跨目标分辨率保留裁剪内容。
 
 >[!IMPORTANT]
-Adobe建议您查看生成的任何作物和色板，以确保它们与您的品牌和价值相关且适当。
+·Adobe建议您查看任何生成的作物和色板，以确保它们与您的品牌和价值相关且适当。
+·智能裁剪不支持CMYK图像格式。
 
 | 选项 | 何时使用 | 描述 |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ Adobe建议您查看生成的任何作物和色板，以确保它们与您的品
 ## 编辑单个图像的智能裁剪或智能色板 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Adobe建议您查看生成的任何智能作物和智能色板，以确保它们与您的品牌和价值相关且适当。
+·Adobe建议您查看生成的任何智能作物和智能色板，以确保它们与您的品牌和价值相关且适当。
+·智能裁剪不支持CMYK图像格式。
 
 您可以手动重新调整图像的智能裁剪窗口大小或调整其大小，以进一步优化其焦点。
 
@@ -231,6 +233,10 @@ Adobe建议您查看生成的任何智能作物和智能色板，以确保它们
 1. 在页面的右上角附近，选择 **[!UICONTROL 保存]**，然后选择 **[!UICONTROL 关闭]** ，以返回到资产文件夹。
 
 ## 编辑多幅图像的智能裁切或智能色板 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+·Adobe建议您查看生成的任何智能作物和智能色板，以确保它们与您的品牌和价值相关且适当。
+·智能裁剪不支持CMYK图像格式。
 
 将包含智能裁剪的图像配置文件应用到文件夹后，该文件夹中的所有图像都会对其应用裁剪。 如果需要，您可以 *手动* 重新调整多幅图像中智能裁剪窗口的大小或调整其大小，以进一步优化其焦点。
 
