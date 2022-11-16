@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
+source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 34%
+source-wordcount: '1092'
+ht-degree: 35%
 
 ---
 
@@ -25,14 +25,13 @@ ht-degree: 34%
 
 >[!CAUTION]
 >
->**黑色星期五和圣诞节维护排除期**
+>**计划维护排除期**
 >
 > 在以下时间范围内（从午夜开始到午夜结束），不会执行自动AEMaCS维护(00:00):
 >
 >* 11月21日星期一至12月5日星期一
 >* 12月19日星期一至1月3日星期二
->
-> 这些时段包括黑色星期五、网络星期一、圣诞节和元旦。
+
 
 ## 发布日期 {#release-date}
 
