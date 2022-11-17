@@ -2,10 +2,10 @@
 title: 自定义域名简介
 description: Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
+source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 
 | 步骤 | 描述 | 责任 | 了解详情 |
 |--- |--- |--- |---|
-| 1 | 向 Cloud Manager 添加 SLL 证书 | 客户 | [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | 将SSL证书添加到Cloud Manager | 客户 | [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 添加 TXT 记录验证域 | 客户 | [添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | 查看域验证状态 | 客户 | [检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | 如果域验证失败，状态为 `Domain Verification Failure` | 客户 | [检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
