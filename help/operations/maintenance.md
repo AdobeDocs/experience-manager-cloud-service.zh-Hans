@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
+source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 81%
+source-wordcount: '1023'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 81%
     <td>客户</td>
     <td>
     <p>必须在 git 中完成。通过在 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code> 文件夹下创建属性，覆盖 <code>/libs</code> 下的开箱即用维护窗口配置节点。</p>
-    <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_TaskPurgeTask</code>），启用维护任务。配置 OSGI 属性。</p>
+    <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上述节点下添加其他节点来启用维护任务。 将其命名为 <code>granite_TaskPurgeTask</code>，属性为 <code>sling:resourceType</code> 设置为 <code>granite/operations/components/maintenance/task</code> 和属性 <code>granite.maintenance.name</code> 设置为 <code>TaskPurge</code>. 配置OSGI属性，请参阅 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> ，以查看属性列表。</p>
   </td>
   </tr>
     <tr>
