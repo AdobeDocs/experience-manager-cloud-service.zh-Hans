@@ -2,9 +2,9 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
@@ -26,6 +26,11 @@ ht-degree: 13%
 1. 转到Cloud Acceleration Manager。 单击您的项目卡片，然后单击内容传输卡片。 导航到 **摄取作业** 单击 **新摄取**
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. 查看摄取检查列表，并确保完成了所有步骤。 这些是确保成功摄取的必要步骤。 您将能够继续 **下一个** 步骤。
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. 提供创建新摄取所需的信息。
 

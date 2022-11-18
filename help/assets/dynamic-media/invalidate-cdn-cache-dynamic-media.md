@@ -4,7 +4,7 @@ description: 了解如何使CDN（内容分发网络）缓存内容失效，以�
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
+source-git-commit: 532d32334456b4b791e3a5ffe17a780f378dd1cc
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -23,11 +23,11 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付给�
 
 如果已启用 [智能成像](/help/assets/dynamic-media/imaging-faq.md) 在您的帐户上，如果您使用Adobe捆绑的CDN，则可以通过清除单个基本URL来清除具有不同查询字符串的所有URL。
 
-例如，使用 `https://weekendsite.scene7.com/is/image/grundfos/image`，还会使以下URL失效：
+例如，使用 `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`，还会使以下URL失效：
 
-* `https://weekendsite.scene7.com/is/image/grundfos/image`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * 等等。
 
 但是，不支持智能成像的通用域(例如， `s7d1.scene7.com`. 此类域仍需要完整的URL才能成功失效。
@@ -93,7 +93,7 @@ Dynamic Media资产由CDN（内容交付网络）缓存，以便快速交付给�
 
 在所有情况下，都会处理整个批次以使其失效，或者整个批次失败。
 
-| 错误 | 说明 |
+| 错误 | 解释 |
 | --- | --- |
 | *无法检索选定资产的URL。* | 在满足以下任何情况时发生：<br> — 未找到Dynamic Media配置。<br> — 检索用于读取Dynamic Media配置的服务用户时出现异常。<br>- Dynamic Media配置中缺少用于构成URL的发布服务器或公司根目录。 |
 | *某些URL定义不正确。 更正并重新提交。* | 在IPS CDN缓存失效API返回错误时发生。 该错误表示URL引用的是其他公司，或者URL无效，因为IPS cdnCacheInvalidation API已完成验证。 |
