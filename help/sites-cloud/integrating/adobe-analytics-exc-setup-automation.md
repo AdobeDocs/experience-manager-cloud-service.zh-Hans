@@ -1,23 +1,23 @@
 ---
 title: 将 Adobe Analytics 与 Experience Cloud 设置自动化集成
-description: Experience Cloud 设置自动化提供了一种简单且自动化的方式，通过简单的 UI 向导界面将 Experience Manager Sites 与 Experience Platform Launch 和 Adobe Analytics 集成和装备到一起。了解如何在您自己的站点上使用自动化设置。
+description: Experience Cloud设置自动化提供了一种简单且自动的方式，通过简单的UI向导界面，将Experience Manager Sites与Experience Platform标记和Adobe Analytics集成并设计到一起。 了解如何在您自己的站点上使用自动化设置。
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
 # 将 Adobe Analytics 与 Experience Cloud 设置自动化集成 {#integrate-adobe-analytics-automation-setup}
 
-Experience Cloud 设置自动化提供了一种简单且自动化的方式，通过简单的 UI 向导界面将 Experience Manager Sites 与 Experience Platform Launch 和 Adobe Analytics 集成和装备到一起。
+Experience Cloud设置自动化提供了一种简单且自动的方式，通过简单的UI向导界面，将Experience Manager Sites与Experience Platform标记和Adobe Analytics集成并设计到一起。
 
 将 Adobe Analytics 与 AEM Sites 集成从未如此轻松。借助 Experience Cloud 设置自动化，只需单击几下，即可设置、集成和检测您的站点以捕获性能分析，从而了解客户的参与和转换情况。
 
-本视频探讨了如何使用 Experience Cloud 设置自动化将 AEM 站点与 Experience Platform Launch 和 Analytics 集成：
+本视频探讨如何使用“AEM设置自动化”将Experience Cloud网站与“Experience Platform标记”和“分析”集成：
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -57,7 +57,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
    自动化设置是异步进行的。**查看集成状态**&#x200B;将显示集成的当前状态。
 
    * **进行中** – 表明作业正在运行。
-   * **集成完成** – 表明作业已将 Analytics 和 Launch 集成、设置 Launch 扩展和 Launch 规则，并在 Adobe Analytics 中创建了新的报告包。
+   * **集成完成**  — 表示作业已完成Analytics和标记集成、设置标记扩展和标记规则，以及在Adobe Analytics中创建新的报表包。
    * **失败** – 表明自动化作业无法成功完成。 单击“日志”链接来查看此作业的日志文件。
 
 ## 验证 AEM 设置
@@ -66,7 +66,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 
 1. 使用&#x200B;**站点编辑器**&#x200B;在您的站点中打开页面。
 1. 使用&#x200B;**以发布的形式查看**&#x200B;选项上传页面的发布版本。
-1. 使用浏览器的开发人员工具来检查网络流量，并检查是否正在加载 **Launch** 和 `AppMeasurement.js` 文件。
+1. 使用浏览器的开发人员工具检查网络流量，以及 **标记** 和 `AppMeasurement.js` 文件正在加载。
 1. 检查浏览器的控制台以查看页面和组件级别的事件是否由 Adobe 客户端数据层触发和收集。
 
 ## 验证 Analytics 设置
