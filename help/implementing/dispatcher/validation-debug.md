@@ -3,7 +3,7 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
+source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 1%
@@ -50,6 +50,7 @@ ht-degree: 1%
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -534,7 +535,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 从旧版模式迁移到灵活模式 {#migrating}
 
-在Cloud Manager 2021.7.0版本中，新的Cloud Manager计划通过 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 或更高版本，包括文件 **选择加入/USE_SOURCES_DIRECTLY**. 这消除了 [旧模式](/help/implementing/dispatcher/validation-debug-legacy.md) 大小，还会导致SDK和运行时以改进的方式验证和部署配置。 如果您的调度程序配置没有此文件，强烈建议您迁移。 请执行以下步骤以确保安全过渡：
+在Cloud Manager 2021.7.0版本中，新的Cloud Manager计划通过 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 或更高版本，包括文件 **选择加入/USE_SOURCES_DIRECTLY**. 这消除了 [旧模式](/help/implementing/dispatcher/validation-debug-legacy.md) 大小，还会导致SDK和运行时以改进的方式验证和部署配置。 如果您的调度程序配置没有此文件，强烈建议您迁移。 请执行以下步骤以确保安全过渡：
 
 1. **本地测试。** 使用最新的调度程序工具SDK，添加文件夹和文件 `opt-in/USE_SOURCES_DIRECTLY`. 按照本文中的“本地验证”说明来测试调度程序是否在本地工作。
 1. **云开发测试：**
