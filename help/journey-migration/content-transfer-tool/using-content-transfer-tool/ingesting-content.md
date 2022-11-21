@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 13%
+source-wordcount: '1029'
+ht-degree: 12%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 13%
    >[!NOTE]
    >
    >如果源是“作者”，则建议将其摄取到目标上的“创作”层。 同样，如果源为“发布”，则目标也应为“发布”。
+
+   >[!NOTE]
+   >
+   >如果目标层为 `Author`，则创作实例将在摄取期间关闭，用户（例如，作者或执行维护的任何人员等）将无法使用。 这是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 请确保您的团队了解这一事实。 另请注意，环境将在创作摄取期间显示休眠。
 
    >[!NOTE]
    >
