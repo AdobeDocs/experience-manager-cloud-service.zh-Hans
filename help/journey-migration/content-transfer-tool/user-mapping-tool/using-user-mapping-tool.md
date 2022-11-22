@@ -2,9 +2,9 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '753'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 1. 导航到 [Adobe Developer控制台](https://console.adobe.io) 用你的Adobe ID。
 1. 创建新项目或打开现有项目。
 1. 添加API — 单击 **添加到项目** 选择 **API**
-1. 选择用户管理API。  您可能需要获得权限才能使用此选项。
+1. 选择用户管理API。  您必须具有系统管理员权限才能使用此选项。
 1. 创建JWT凭据。
 1. 生成密钥对，或上传公钥（rsa不是好方法）。  有个按钮， **生成公共/私有密钥对**，这将为您执行此操作。  确保同时保存公钥和私钥。
 1. 导航到用户管理API。
