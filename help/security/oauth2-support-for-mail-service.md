@@ -2,7 +2,7 @@
 title: 对邮件服务的 OAuth2 支持
 description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 Oauth2 支持
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 5f8da9f846c159aa00273909b93aa10358daf609
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
@@ -125,7 +125,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    * `https://outlook.office365.com/Mail.Send`
    * `https://outlook.office365.com/Mail.Read`
    * `https://outlook.office365.com/SMTP.Send`
-1. 使用以下语法创建 OSGI 属性文件 `called com.day.cq.mailer.impl.DefaultMailService.cfg.json`
+1. 使用以下语法创建 OSGI 属性文件 `called com.day.cq.mailer.DefaultMailService.cfg.json`
 （在 
 `/apps/<my-project>/osgiconfig/config` 下）：
 
