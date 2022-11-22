@@ -2,7 +2,7 @@
 title: 使用多个存储库
 description: 了解如何在使用 Cloud Manager 时管理多个 Git 存储库。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: a7ae6d75d6820f48d3d45cb5830f888a87d51de1
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 100%
@@ -109,17 +109,17 @@ jobs:
       # Checkout the main project
       - name: Checkout main project
         run:
-          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY}.git main 
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY} ${MAIN_BRANCH} 
       # Move sub project
       - name: Move project to main project
         run: |
-          rm -rf main/${PROJECT_DIR} 
-          mv sub main/${PROJECT_DIR}
+          rm -rf ${MAIN_BRANCH}/${PROJECT_DIR} 
+          mv sub ${MAIN_BRANCH}/${PROJECT_DIR}
       - name: Commit Changes
         run: |
-          git -C main add -f ${PROJECT_DIR}
-          git -C main commit -F ../commit.txt
-          git -C main push
+          git -C ${MAIN_BRANCH} add -f ${PROJECT_DIR}
+          git -C ${MAIN_BRANCH} commit -F ../commit.txt
+          git -C ${MAIN_BRANCH} push
 ```
 
 使用 GitHub 操作非常灵活。 可以执行 Git 存储库的分支之间的任何映射，以及将单独的 Git 项目映射到主项目的目录布局中。
