@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2214'
 ht-degree: 3%
 
 ---
@@ -183,6 +183,18 @@ ht-degree: 3%
 
 另一方面，在发布层实例上，目录页面URL应保持稳定，以免在搜索引擎排名上丢失增益。 由于该发布层实例默认不会呈现指向特定目录页面的深层链接。 要更改此行为，请 _CIF URL提供商特定的页面策略_ 可以配置为始终生成特定的页面URL。
 
+### 多个目录页面 {#multiple-product-pages}
+
+当编辑者希望完全控制网站的顶级导航时，可能不需要使用单个目录页面来呈现目录的顶级类别。 相反，编辑者可以创建多个目录页面，每个目录类别的一个目录页面要包含在顶级导航中。
+
+对于该用例，每个目录页面都可能具有对特定于为目录页面配置的类别的产品和类别页面的引用。 的 `UrlProvider` 将使用这些链接为配置类别中的页面和类别创建链接。 但是，出于性能原因，仅考虑站点导航根/登陆页面的直接目录页面子项。
+
+建议目录页面的产品和类别页面是该目录页面的子体，否则导航或痕迹导航等组件可能无法正常工作。
+
+>[!NOTE]
+>
+> 需要完全支持多个目录页面 [CIF核心组件2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) 或更新版本。
+
 ## 自定义 {#customization}
 
 ### 自定义URL格式 {#custom-url-format}
@@ -221,7 +233,7 @@ _**在URL长度和编码信息之间实现平衡。**_
 
 ### 迁移到新URL格式 {#migrate-url-formats}
 
-许多默认URL格式之间以某种方式相互兼容，这意味着由一个URL格式映射的URL可能会被另一个URL格式解析。 这有助于在URL格式之间迁移。
+许多默认URL格式之间以某种方式相互兼容，这意味着由一个URL格式化的URL可能会被另一个URL格式解析。 这有助于在URL格式之间迁移。
 
 另一方面，搜索引擎将需要一些时间来使用新的URL格式重新爬网所有目录页面。 为支持此过程并改善最终用户体验，建议提供重定向，以将用户从旧URL转发到新URL。
 
