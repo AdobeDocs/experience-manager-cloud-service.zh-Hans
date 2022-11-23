@@ -2,16 +2,20 @@
 title: 为演示站点启用 AEM Screens
 description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
+source-git-commit: 71e318f93b6edab5d2ae685d8603c3d0040f72a3
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 100%
+source-wordcount: '2699'
+ht-degree: 98%
 
 ---
 
 # 为演示站点启用 AEM Screens {#enable-screens}
 
 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
+
+>[!NOTE]
+>
+>AEM Screens演示要求将Screens加载项添加到Cloud Manager计划。 学习 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) 如何添加。
 
 ## 迄今为止的故事 {#story-so-far}
 
