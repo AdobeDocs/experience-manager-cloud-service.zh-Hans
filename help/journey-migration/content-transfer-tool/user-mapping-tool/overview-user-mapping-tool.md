@@ -2,10 +2,10 @@
 title: 用户映射工具概述
 description: 用户映射工具概述
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 99af299c3f401ce898366a75563d2b933f120e40
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 10%
+source-wordcount: '361'
+ht-degree: 11%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 10%
 
 ## 用户映射工具 {#mapping-tool}
 
-内容传输工具（无用户映射）将迁移与所迁移内容关联的任何用户和组。 用户映射工具是内容传输工具的一部分，其唯一目的是修改用户和组，以便IMS(AEMas a Cloud Service使用的单点登录功能)能够正确识别它们。 完成这些修改后，内容传输工具会照常迁移指定内容的用户和组。
+内容传输工具（无用户映射）将迁移与所迁移内容关联的任何用户和组。 用户映射工具是内容传输工具的一部分，其唯一目的是修改用户，以便IMS(AEMas a Cloud Service使用的单点登录功能)能够正确识别它们。 完成这些修改后，内容传输工具会照常迁移指定内容的用户和组。
 
-### 下一步 {#whats-next}
+### 后续内容 {#whats-next}
 
 了解了用户映射工具的含义后，您现在可以在使用用户映射工具之前查看重要注意事项和特殊案例。 请参阅 [有关用户映射工具的重要注意事项](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) 以了解更多详细信息。
