@@ -2,9 +2,9 @@
 title: 使用用户映射工具
 description: 使用用户映射工具
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '816'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 4%
 用户映射工具使用一个API，它允许通过电子邮件查找AdobeIdentity Management系统(IMS)用户，并返回其IMS ID。 此API要求用户为其组织创建客户端ID、客户端密钥和访问令牌或载体令牌。
 
 ## 设置用户映射工具 {#setting-up-user-mapping}
+
+**先决条件：** 用户映射要求要将每个用户映射到其IMS ID，且其配置文件(在AEM中)和IMS中均有一个电子邮件地址。  请注意，即使用户使用电子邮件地址作为用户ID进行登录，但映射对该用户将不起作用，除非该电子邮件地址也位于配置文件中以及IMS中。
 
 请按照以下步骤进行设置：
 
