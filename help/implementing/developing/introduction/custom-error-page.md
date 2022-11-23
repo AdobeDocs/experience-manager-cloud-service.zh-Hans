@@ -2,7 +2,7 @@
 title: 自定义错误页面
 description: AEM附带一个用于处理HTTP错误的标准错误处理程序，该处理程序可进行自定义。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 570e7d71fc8b3db33e93394d0aa53cb159636fb7
+source-git-commit: ab68c03b29f3d2179b33c61a6d853d80ccb17615
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -71,7 +71,6 @@ HTTP [500内部服务器错误](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >[!NOTE]
 >
 >在AEM作为Cloud Service中，当从后端收到5XX错误时，CDN会提供一个通用错误页面。 为了允许后端的实际响应通过，您需要向响应添加以下标头： `x-aem-error-pass: true`.
->
 >这仅适用于来自AEM或Apache/Dispatcher层的响应。 来自中间基础结构层的其他意外错误仍将显示一般错误页面。
 
 >[!CAUTION]
