@@ -2,10 +2,10 @@
 title: 自定义错误页面
 description: AEM附带一个用于处理HTTP错误的标准错误处理程序，该处理程序可进行自定义。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
@@ -67,6 +67,12 @@ HTTP [500内部服务器错误](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 否则，响应代码将设置为500，但是 `500.jsp` 脚本。
 
 要处理500错误，错误处理程序脚本的文件名必须与异常类（或超类）相同。 要处理所有此类例外，您可以创建脚本 `/apps/sling/servlet/errorhandler/Throwable.jsp` 或 `/apps/sling/servlet/errorhandler/Exception.jsp`.
+
+>[!NOTE]
+>
+>在AEM作为Cloud Service中，每当从后端收到5XX错误时，CDN都会提供一个通用错误页面。 为了允许后端的实际响应通过，您需要向响应添加以下标头：
+>`x-aem-error-pass: true`
+>这仅适用于来自AEM或Apache/Dispatcher层的响应。 来自中间基础结构层的其他意外错误仍将显示一般错误页面。
 
 >[!CAUTION]
 >
