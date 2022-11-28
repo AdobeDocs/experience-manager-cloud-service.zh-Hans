@@ -2,9 +2,9 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
+source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1072'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,9 @@ ht-degree: 12%
 请按照以下步骤从内容传输工具中摄取迁移集：
 >[!NOTE]
 >您可以运行可选的预复制步骤以显着加快摄取阶段。 预复制步骤对于第1次完全提取和摄取最有效。 请参阅 [使用AzCopy摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
+
+>[!NOTE]
+>您是否记得为此摄取记录支持票证？ 请参阅 [使用内容传输工具之前的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及帮助成功摄取的其他注意事项。
 
 1. 转到Cloud Acceleration Manager。 单击您的项目卡片，然后单击内容传输卡片。 导航到 **摄取作业** 单击 **新摄取**
 
@@ -96,7 +99,8 @@ ht-degree: 12%
 ## 增补摄取 {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>id="aemcloud_ctt_ingestion_topup"
+>title="增补摄取"
 >abstract="使用增补功能移动自上次内容传输活动以来修改的内容。 完成摄取后，检查日志中是否存在任何错误/警告。 任何错误都应立即通过处理报告的问题或联系Adobe客户关怀团队来解决。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="查看日志"
 
