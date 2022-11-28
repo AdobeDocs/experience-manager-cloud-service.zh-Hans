@@ -1,10 +1,10 @@
 ---
 title: AEM as a Cloud Service 开发准则
-description: AEM as a Cloud Service 开发准则
+description: 了解在AEMas a Cloud Service上开发的准则，以及AMS中AEM与内部部署和AEM的不同之处在于哪些重要方式。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2590'
 ht-degree: 2%
 
 ---
@@ -14,18 +14,16 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service 开发准则"
->abstract="在此选项卡中，您可以查看在AEMas a Cloud Service中编码的推荐最佳实践。 编码可能与AMS或On-Prem部署存在显着差异。"
+>abstract="了解在AEMas a Cloud Service上开发的准则，以及AMS中AEM与内部部署和AEM的不同之处在于哪些重要方式。"
 >additional-url="https://video.tv.adobe.com/v/330555/" text="包结构演示"
+
+本文档介绍了在AEMas a Cloud Service上进行开发的准则，以及与AMS中的AEM内部部署和AEM有所不同的重要方式。
+
+## 代码必须具有群集意识 {#cluster-aware}
 
 在AEMas a Cloud Service中运行的代码必须知道它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。代码必须具有弹性，尤其是当实例可能在任何时间点停止时。
 
 在更新AEMas a Cloud Service期间，将有旧代码和新代码并行运行的实例。 因此，旧代码不得与由新代码创建的内容中断，而新代码必须能够处理旧内容。
-<!--
-
->[!NOTE]
-> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
-
--->
 
 如果需要识别群集中的主群集，则可以使用Apache Sling Discovery API来检测该群集。
 
@@ -262,7 +260,24 @@ AEMas a Cloud Service要求通过端口465发送邮件。 如果邮件服务器�
 
 应将SMTP服务器主机设置为邮件服务器的主机。
 
+## 避免大型多值属性 {#avoid-large-mvps}
+
+作为AEMas a Cloud Service基础的Oak内容存储库不打算与大量多值属性(MVP)一起使用。 经验法则是将MVP保持在1000以下。 但实际性能取决于许多因素。
+
+在超过1000后，默认记录警告。 它们类似于以下内容。
+
+```text
+org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
+```
+
+由于MongoDB文档超过16 MB，大型MVP可能会导致错误，从而导致与以下类似的错误。
+
+```text
+Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
+```
+
+请参阅 [Apache Oak文档](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) 以了解更多详细信息。
 
 ## [!DNL Assets] 开发指南和用例 {#use-cases-assets}
 
-要了解资产as a Cloud Service的开发用例、建议和参考材料，请参阅 [资产的开发人员参考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+要了解资产as a Cloud Service的开发用例、建议和参考资料，请参阅 [资产的开发人员参考。](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
