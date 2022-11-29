@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
+source-git-commit: 7e32c997a69feb8447609bf984ba731008489095
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 90%
+source-wordcount: '2498'
+ht-degree: 88%
 
 ---
 
@@ -18,22 +18,20 @@ ht-degree: 90%
 以下列出与 AEM 6.5 和更低版本相比的主要变化：
 
 1. 用户将无法再访问单个 AEM 实例的索引管理器以调试、配置或维护索引编制。它仅用于本地开发和内部部署。
-
 1. 用户将不会在单个 AEM 实例上更改索引，也不必再担心一致性检查或重新编制索引。
-
 1. 一般在投入生产之前开始更改索引，以免回避 Cloud Manager CI/CD 管道中的质量关卡以及影响生产过程中的业务 KPI。
-
 1. 客户可在运行时获得所有相关指标（包括生产过程中的搜索性能），以全面了解关于搜索和索引编制的话题。
-
 1. 客户将能够根据自己的需要设置警报。
-
 1. SRE 全天候监控系统运行状况，并将根据需要尽早采取措施。
-
 1. 通过部署更改索引配置。像其他内容更改一样配置索引定义更改。
-
 1. 在 AEM as a Cloud Service 的高层，随着引入[蓝绿部署模型](#index-management-using-blue-green-deployments)，将存在两组索引：一组用于旧版本（蓝色），另一组用于新版本（绿色）。
-
 1. 客户可以在 Cloud Manager 生成页面上查看索引工作是否完成，并将在新版本准备好接收流量时收到通知。
+
+限制：
+
+* 目前，仅限类型为 `lucene` 的索引支持 AEM as a Cloud Service 上的索引管理。
+* 仅支持标准分析器（即产品附带的分析器）。不支持自定义分析器。
+* 可在内部配置其他索引并将其用于查询。例如，在 Skyline 上可能实际上针对 `damAssetLucene` 索引的 Elasticsearch 版本执行针对此索引编写的查询。应用程序和用户一般感受不到这一区别，但某些工具（如 `explain` 功能）将报告不同的索引。有关 Lucene 索引与 Elastic 索引之间的区别，请参阅 [Apache Jackrabbit Oak 中的 Elastic 文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。客户不需要直接配置 Elasticsearch 索引，也无法这样做。
 
 ## 使用方法 {#how-to-use}
 
@@ -146,6 +144,64 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 ```
 
 添加新的索引定义后，需要通过 Cloud Manager 部署新的应用程序。部署完毕后将开始执行两个作业，负责将索引定义分别添加到 MongoDB 和 Azure 段存储（如果需要，还可合并索引定义）以供编写和发布。在切换蓝绿之前，将用新的索引定义为底层存储库重新编制索引。
+
+### 注意
+
+如果在filevault验证中发现以下错误 <br>
+`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
+然后，可以执行以下任一步骤来修复该问题 —  <br>
+1. 将文件降级到版本1.0.4，并将以下内容添加到顶级pom中：
+
+```xml
+<allowIndexDefinitions>true</allowIndexDefinitions>
+```
+
+以下示例说明了将上述配置放在pom中的位置。
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <properties>
+        ...
+        </properties>
+        ...
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <repositoryStructurePackages>
+        ...
+        </repositoryStructurePackages>
+        <dependencies>
+        ...
+        </dependencies>
+    </configuration>
+</plugin>
+```
+
+1. 禁用nodetype验证。 在filevault插件配置的jackrabbit-nodetypes部分中设置以下属性：
+
+```xml
+<isDisabled>true</isDisabled>
+```
+
+以下示例说明了将上述配置放在pom中的位置。
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    ...
+    <configuration>
+    ...
+        <validatorsSettings>
+        ...
+            <jackrabbit-nodetypes>
+                <isDisabled>true</isDisabled>
+            </jackrabbit-nodetypes>
+        </validatorsSettings>
+    </configuration>
+</plugin>
+```
 
 >[!TIP]
 >
@@ -276,7 +332,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
                 </properties>
             </rep:root>
         </indexRules>
-    </acme.product-custom-3>
+</acme.product-custom-3>
 ```
 
 如果不再需要自定义开箱即用索引，则必须复制开箱即用索引定义。例如，如果已部署 `damAssetLucene-8-custom-3`，但不再需要自定义，并且要改回默认的 `damAssetLucene-8` 索引，则必须添加一个索引 `damAssetLucene-8-custom-4`，其中包含 `damAssetLucene-8` 的索引定义。
