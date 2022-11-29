@@ -1,0 +1,38 @@
+---
+title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明
+description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明。
+feature: Release Information
+source-git-commit: 1fce3525a0c48a68f268634e52f3872a49b7545f
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 62%
+
+---
+
+
+# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明 {#release-notes}
+
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2022.11.0 的发行说明。
+
+>[!NOTE]
+>
+>请参阅[本页](/help/release-notes/release-notes-cloud/release-notes-current.md)，了解 Adobe Experience Manager as a Cloud Service 的当前发行说明。
+
+## 发布日期 {#release-date}
+
+AEM Manager版本2022.11.0的发布日期是2022年11月3日。 下一个版本计划于 2022 年 11 月 29 日发布。
+
+## 新增功能 {#what-is-new}
+
+* AEM Sites解决方案的许可证仪表板现在将显示合同详细信息，包括租户是否在其订阅范围内。
+
+>[!NOTE]
+>
+> 未来几周，此功能将分阶段向所有租户推出。
+
+* 当与管道关联的环境具有不允许执行管道的状态时，将禁用运行操作并显示说明性工具提示。
+* 改进了消息， **添加程序** 按钮被禁用，因为租户的权限不足。
+
+## 错误修复 {#bug-fixes}
+
+* 改进了编辑生产管道期间的反馈，以捕捉一个或多个缺失环境的罕见情况。

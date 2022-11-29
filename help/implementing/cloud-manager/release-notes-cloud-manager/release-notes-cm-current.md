@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明
-description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明。
+title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.12.0 发行说明
+description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.12.0 发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3045c042129951bf693bca36a42c9111862e09f2
+source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 37%
+source-wordcount: '202'
+ht-degree: 38%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.11.0 发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.12.0 发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2022.11.0 的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2022.12.0 的发行说明。
 
 >[!NOTE]
 >
@@ -21,19 +21,15 @@ ht-degree: 37%
 
 ## 发布日期 {#release-date}
 
-AEM Manager版本2022.11.0的发布日期是2022年11月3日。 下一版本计划于2022年11月29日发布。
+AEM Manager版本2022.12.0的发布日期是2022年11月29日。 下一版本计划于2023年1月19日发布。
 
 ## 新增功能 {#what-is-new}
 
-* AEM Sites解决方案的许可证仪表板现在将显示合同详细信息，包括租户是否在其订阅范围内。
-
->[!NOTE]
->
-> 未来几周，此功能将分阶段向所有租户推出。
-
-* 如果与管道关联的环境具有不允许执行管道的状态，则运行操作将被禁用，并显示说明性工具提示。
-* 改进了消息， **添加程序** 按钮被禁用，因为租户的权限不足。
+* 通知 [AEM维护更新](/help/overview/what-is-new-and-different.md#aem-updates) 将在Cloud Manager UI中显示。 此更改将在2022.12.0版本发布后的几周内分阶段实施。
+* 通过 [内容传输工具(CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 进行中，开发人员控制台和Cloud Manager中的环境状态将显示为 `Ingestion in Progress`.
+* 改进了 [Cloud Manager管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 被制造。
 
 ## 错误修复 {#bug-fixes}
 
-* 改进了编辑生产管道期间的反馈，以捕获一个或多个缺失环境的不经常出现。
+* 为防止 [前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 在同一环境中执行管道时从运行。
+* 为防止 `PATCH /program//environment//variables` 对具有 `FAILED` 状态。
