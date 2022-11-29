@@ -10,13 +10,13 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
-
 
 # AEM-CIF核心组件与Adobe Experience Platform集成 {#aem-cif-aep-integration}
 
@@ -471,10 +471,31 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 目前，支持以下事件：
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__体验XDM事件：__
+
+1. 添加到购物车(AEM)
+1. 查看页面(AEM)
+1. 查看产品(AEM)
+1. 已发送搜索请求(AEM)
+1. 收到搜索响应(AEM)
+
+When [Peregrine组件](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) 在AEM Commerce项目中重复使用：
+
+__体验XDM事件：__
+
+1. 从购物车中删除
+1. 打开购物车
+1. 查看购物车
+1. 即时购买
+1. 开始结帐
+1. 完成结帐
+
+__配置文件XDM事件：__
+
+1. 登录
+1. 创建帐户
+1. 编辑帐户
+
 
 ## 其他资源 {#additional-resources}
 
@@ -482,5 +503,5 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform连接器概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Experience Platform连接器事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Adobe Experience Platform概述](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
