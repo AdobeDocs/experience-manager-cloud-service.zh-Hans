@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概述、自
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce2866c90353a086cd9288c0209bf624c597922d
+source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
-source-wordcount: '3789'
-ht-degree: 98%
+source-wordcount: '3816'
+ht-degree: 97%
 
 ---
 
@@ -158,6 +158,12 @@ ht-degree: 98%
       + [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知用户组](/help/journey-onboarding/user-groups.md)
++ AEMaCS试用版 {#trials}
+   + 无头试验 {#headless}
+      + [自定义React示例应用程序中的内容](/help/trials/headless/customize-app.md)
+      + [为应用程序创建内容结构](/help/trials/headless/content-structure.md)
+      + [创建无头内容](/help/trials/headless/create-content.md)
+      + [通过GraphQL API提取内容](/help/trials/headless/extract-content.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
