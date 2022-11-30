@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
+source-git-commit: 6c2baf7fde73abc831db906c7a6471751be3572d
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 1%
+source-wordcount: '2753'
+ht-degree: 2%
 
 ---
 
@@ -72,6 +72,8 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
+* 虽然将HTML内容设置为private时，不会在CDN中缓存该内容，但如果 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans) ，可高效确保仅向授权用户提供内容。
+
    >[!NOTE]
    >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，则无法成功覆盖值。
 
@@ -80,7 +82,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 客户端库(js，css) {#client-side-libraries}
 
-* 通过使用AEM客户端库框架，可以生成JavaScript和CSS代码，以便浏览器可以无限期地缓存它，因为任何更改都将显示为具有唯一路径的新文件。  换言之，将根据需要生成引用客户端库的HTML，以便客户在发布新内容时能够体验到新内容。 对于不遵循“不可变”值的旧版浏览器，缓存控制将设置为“不可变”或30天。
+* 使用AEM客户端库框架时，会生成JavaScript和CSS代码，以便浏览器可以无限期地缓存它，因为任何更改都将显示为具有唯一路径的新文件。  换言之，将根据需要生成引用客户端库的HTML，以便客户在发布新内容时能够体验到新内容。 对于不遵循“不可变”值的旧版浏览器，缓存控制将设置为“不可变”或30天。
 * 请参阅部分 [客户端库和版本一致性](#content-consistency) 以了解更多详细信息。
 
 ### 图像和任何足够大且可存储到blob存储中的内容 {#images}
@@ -116,6 +118,8 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 
 >[!NOTE]
 >建议通过将Cloud Manager环境变量AEM_BLOB_ENABLE_CACHING_HEADERS设置为true，将旧的默认行为更改为与新行为(程序ID大于65000)一致。 如果程序已处于实时状态，请确保您确认在进行更改后，内容会按预期运行。
+
+目前，Blob存储中标记为私有的图像无法使用 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 图像始终从AEM源请求，并在用户获得授权时提供。
 
 >[!NOTE]
 >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，则无法成功覆盖值。
