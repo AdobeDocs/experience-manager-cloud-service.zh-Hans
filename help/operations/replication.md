@@ -2,10 +2,10 @@
 title: 复制
 description: 分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 99%
+source-wordcount: '1374'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service 使用 [Sling 内容分发](https://
 >阅读[分发](/help/overview/architecture.md#content-distribution)以了解更多信息。
 
 ## 发布内容的方法 {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>如果您对批量发布内容感兴趣，请使用 [发布内容树工作流](#publish-content-tree-workflow).
+>此工作流步骤专门为Cloud Service构建，可高效处理大负载。
+>不建议自行构建批量发布自定义代码。
+>如果您因任何原因需要进行自定义，则可以使用现有的工作流API触发此工作流/工作流步骤。
+>虽然只发布需要发布的内容始终是一种好做法，并且在必要时不要尝试发布大量内容时要保持谨慎，但通过发布内容树工作流可以发送的内容数量没有限制。
 
 ### 快速取消/发布 – 计划取消/发布 {#publish-unpublish}
 
