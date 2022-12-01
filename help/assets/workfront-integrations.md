@@ -4,9 +4,9 @@ description: 集成简介 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
+source-git-commit: 20dbcff249e3fc1beab24600cd54ce1bf4085d38
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1267'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Adobe选件到 [集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 
 | 功能 | 描述 | [!DNL Workfront] 和 [!DNL Assets Essentials] *无连接器(OOTB)* | [!DNL Workfront] 表示 [!DNL AEM] 连接器 *需要连接器* | [!DNL Workfront for Experience Manager enhanced connector] *需要连接器* | Workfront和 [!DNL Experience Manager as a Cloud Service] *无连接器(OOTB)* |
 |----|----|----|------|-----|-----|
-| 部署方法 | 适用于 [!DNL Assets] 服务。 | Assets Essentials | Cloud Service, Adobe Managed Services，内部部署 | Cloud Service, Adobe Managed Services，内部部署 | Cloud Service, Adobe Managed Services，内部部署 |
+| 部署方法 | 适用于 [!DNL Assets] 服务。 | Assets Essentials | Cloud Service, Adobe Managed Services，内部部署 | Cloud Service, Adobe Managed Services，内部部署 | 云服务 |
 | **常规** |
 | 从发送数字文件 [!DNL Workfront] to [!DNL Assets] | WF文档的最新版本可以上传到AEM Assets，该版本将作为文档的新版本链接。 | ✓ | ✓ | ✓ | ✓ |
 | 手动将AEM文件夹关联到Workfront对象 | 现有的AEM文件夹可以作为Workfront文件夹进行链接，其子资产则作为新的Workfront文档进行链接。 | ✓ | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ Adobe选件到 [集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 | 将用户直接单击到AEM时，Workfront中链接的资产 | 系统会将用户定向到AEM，以从Workfront中预览链接的资产。 | ✓ | ✓ | ✓ | 即将推出 |
 | 在Workfront中自动创建链接的AEM文件夹 | 使用项目状态在Workfront中自动创建链接的AEM文件夹。 根据“WorkfrontPortfolio”、“程序”和“项目”自动配置AEM文件夹。 | 否 | 否 | ✓ | 否 |
 | 直接从Workfront导航到AEM存储库 | 允许用户导航到在Workfront中配置的可用AEM存储库。 | ✓ | 否 | 否 | ✓ |
-| 在Workfront中自动创建链接的AEM文件夹 | 使用“文档”选项卡中的选项，在Workfront中自动创建链接的AEM文件夹。 | ✓ | 否 | 否 | ✓ |
+| 在Workfront中创建链接的AEM文件夹 | 使用“文档”选项卡中的选项在Workfront中手动创建链接的AEM文件夹。 | ✓ | 否 | 否 | ✓ |
 | 评论同步 | 自动同步资产的注释 [!DNL Workfront] to [!DNL Assets] | 否 | ✓ | ✓ | 否 |
 | 支持连接到单个AEM环境的多个Workfront环境 | 来自多个Workfront环境的用户可以连接到单个AEM环境。 | ✓ | 否 | 否 | ✓ |
 | 支持多个AEM环境连接到单个Workfront环境 | 单个Workfront环境中的用户可以在多个AEM环境之间发送或链接资产。 | ✓ | ✓ | ✓ | ✓ |
