@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2420'
 ht-degree: 7%
 
 ---
@@ -29,13 +29,13 @@ Cloud Manager用户将Brand Portal激活为Experience Manager Assets as a [!DNL 
 
 >[!NOTE]
 >
->Experience Manager Assets as a [!DNL Cloud Service] 实例只能与一个Brand Portal租户连接。 您可以为Experience Manager Assets as a [!DNL Cloud Service] 例如，其中Brand Portal在一个环境中激活。
+>Experience Manager Assets as a [!DNL Cloud Service] 与Brand Portal租户连接的实例。
 
 **激活Brand Portal的步骤**
 
 在为Experience Manager Assets as a [!DNL Cloud Service] 实例，或单独进行。 假设环境已创建，此时您需要激活Brand Portal。
 
-1. 登录到AdobeCloud Manager，然后导航到 **[!UICONTROL 环境]**.
+1. 登录到AdobeCloud Manager并导航到 **[!UICONTROL 环境]**.
 
    的 **[!UICONTROL 环境]** 页面会显示所有现有环境的列表。
 
@@ -69,9 +69,9 @@ Cloud Manager用户将Brand Portal激活为Experience Manager Assets as a [!DNL 
 * [在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
-**登录到您的Brand Portal租户**:
+**登录Brand Portal租户**:
 
-在Cloud Manager中激活您的Brand Portal租户后，您可以从Admin Console或直接使用租户URL登录到Brand Portal。
+在Cloud Manager中激活您的Brand Portal租户后，您可以从Admin Console或直接使用租户URL登录Brand Portal。
 
 您的Brand Portal租户的默认URL是： `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -79,8 +79,8 @@ Cloud Manager用户将Brand Portal激活为Experience Manager Assets as a [!DNL 
 
 如果您不确定Brand Portal URL，请执行以下步骤：
 
-1. 登录到 [Admin Console](https://adminconsole.adobe.com/) 并导航到 **[!UICONTROL 产品]**.
-1. 从左边栏中，选择 **[!UICONTROL Adobe Experience Manager Brand Portal -Brand Portal]**.
+1. 登录 [Admin Console](https://adminconsole.adobe.com/) 并导航到 **[!UICONTROL 产品]**.
+1. 从左侧面板中，选择 **[!UICONTROL Adobe Experience Manager Brand Portal -Brand Portal]**.
 1. 单击 **[!UICONTROL 转到Brand Portal]** 可直接在浏览器中打开Brand Portal。
 
    或者，从 **[!UICONTROL 转到Brand Portal]** 链接并粘贴到浏览器中以打开Brand Portal界面。
@@ -403,7 +403,7 @@ IMS 配置包括两个步骤：
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
