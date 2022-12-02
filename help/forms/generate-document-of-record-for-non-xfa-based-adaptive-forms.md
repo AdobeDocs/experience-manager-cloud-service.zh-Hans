@@ -2,9 +2,9 @@
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4065'
 ht-degree: 2%
 
 ---
@@ -431,7 +431,7 @@ When you select a form model, configure Document of Record using options availab
 **表单级别设置**
 
 * **在DoR中包含未绑定字段：** 设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。 默认情况下，为true。
-* **隐藏时从DoR中排除字段：** 设置属性会覆盖“从记录文档中排除”字段级别属性（如果不为true）的行为。 如果字段在表单提交时处于隐藏状态，则如果该属性设置为true，则它们将从记录文档中排除，但前提是未设置“从记录文档排除”属性。 设置 [在服务器上重新验证](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) 属性为true可标识要从服务器端记录文档中排除的隐藏字段。
+* **隐藏时从DoR中排除字段：** 设置属性，以在表单提交时从记录文档中排除隐藏的字段。 启用 [在服务器上重新验证](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，则服务器会在从记录文档中排除这些字段之前重新计算隐藏字段。
 
 ## 使用自定义XCI文件
 
