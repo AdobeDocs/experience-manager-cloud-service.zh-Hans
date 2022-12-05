@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
+source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2478'
 ht-degree: 7%
 
 ---
@@ -397,6 +397,16 @@ IMS 配置包括两个步骤：
    您的Experience Manager Assets as a [!DNL Cloud Service] 现在已使用Brand Portal租户配置实例。
 
 您现在可以通过检查分发代理并将资产发布到Brand Portal来测试配置。
+
+**在启允许列表用安全预览时，在SPS中删除IP**
+如果将Dynamic Media-Scene7与 [已启用安全预览](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 对于公司)，则建议Scene7公司管理员 [允许列表管理公共出口IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) 对于使用SPS(Scene7 Publishing System)Flash UI的各个区域。
+出口IP如下：
+
+| **区域** | **出口IP** |
+|--- |--- |
+| NA | 130.248.160.68, 20.94.203.130 |
+| 欧洲、中东和非洲 | 185.34.189.3, 51.132.146.75 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}
