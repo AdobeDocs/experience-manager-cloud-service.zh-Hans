@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2109'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 96%
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – 启用、创建和定义模型
 * [使用内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) – 访问、创建、编辑、发布和引用您的片段
 * [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) – 创建内容片段；然后，编辑、发布和引用
-* [变量 – 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) – 创作片段内容并创建主控
+* [变体 – 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) – 创作片段内容并创建主控
 * [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) – 使用片段的 markdown 语法
 * [使用关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) – 添加关联内容
 * [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) – 查看和编辑片段属性
@@ -63,8 +63,8 @@ ht-degree: 96%
 
 通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
 
-* 物理渠道；例如，桌面、移动设备。
-* 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备Web”、“移动设备应用程序”（适用于移动设备）。
+* 物理渠道；例如，台式机、移动设备。
+* 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备 Web”（适用于移动设备的移动设备应用程序）。
 
 但是，您（可能）不希望在所有渠道中使用完全相同的内容 – 您需要根据特定渠道优化内容。
 
@@ -91,8 +91,8 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="为应用程序创建内容结构"
->abstract="在遵循我们的一系列交互式指南时，您将学习如何创建结构（也称为内容片段模型），该结构将作为所有无头内容的基础。"
+>title="为您的应用程序创建内容结构"
+>abstract="跟着我们的交互式指南系列，您将学习如何创建作为无头内容基础的结构（也称为内容片段模型）。"
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
@@ -299,7 +299,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 ## 使用示例 {#example-usage}
 
-片段及其元素和变量可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
+片段及其元素和变体可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
 
 ### WKND 示例 {#wknd-sample}
 
