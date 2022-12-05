@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2898'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
 
 1. [为您的实例启用内容片段模型功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. [创建](#creating-a-content-fragment-model)和[配置](#defining-your-content-fragment-model)，内容片段模型
-1. [启用内容片段模型](#enabling-disabling-a-content-fragment-model) 用于创建内容片段时
+1. [启用您的内容片段模型](#enabling-disabling-a-content-fragment-model)，以便在创建内容片段时使用
 1. 通过配置&#x200B;**策略**，[允许在所需的 Assets 文件夹上创建内容片段模型](#allowing-content-fragment-models-assets-folder)。
 
 ## 创建内容片段模型 {#creating-a-content-fragment-model}
