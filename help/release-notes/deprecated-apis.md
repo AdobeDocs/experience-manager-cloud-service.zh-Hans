@@ -3,9 +3,9 @@ title: 已弃用 API
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的 API 的发行说明。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1076'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 98%
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
-    <td>2015年</td>
+    <td>2015</td>
     <td>7/30/21</td>
   </tr>
   <tr>
     <td>com.day.cq.jcrclustersupport</td>
     <td>使用 Sling 的 Discovery API 作为替代方案</td>
-    <td>2015年</td>
+    <td>2015</td>
     <td>已删除</td>
   </tr>
   <tr>
@@ -200,13 +200,13 @@ ht-degree: 98%
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
-    <td>此API不再受支持。 请改用org.apache.sling.api.resource.ResourceResolverFactory 。</td>
+    <td>不再支持此 API。 请改用 org.apache.sling.api.resource.ResourceResolverFactory。</td>
     <td>9/29/2022</td>
     <td>11/24/2022</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>此API已弃用。 请改用Apache Sling的生成器。</td>
+    <td>该 API 已弃用。 请改用 Apache Sling 的构建器。</td>
     <td>10/31/2022</td>
     <td>01/01/2023</td>
   </tr>
