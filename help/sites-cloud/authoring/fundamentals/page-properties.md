@@ -3,7 +3,7 @@ title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1975'
 ht-degree: 100%
 
@@ -149,8 +149,8 @@ ht-degree: 100%
 
    * **为 Facebook 启用用户共享**
    * **为 Pinterest 启用用户共享**
-   * **首选体验片段变量**
-      * 定义用于为页面生成元数据的体验片段变量
+   * **首选体验片段变体**
+      * 定义用于为页面生成元数据的体验片段变体
 
 ### Cloud Service {#cloud-services}
 
