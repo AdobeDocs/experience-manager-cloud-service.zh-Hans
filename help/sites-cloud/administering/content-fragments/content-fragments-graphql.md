@@ -5,9 +5,9 @@ feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: bdbd78f0fdb14113d0eddccf4faba499849d48fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
->title="使用GraphQL API提取内容"
->abstract="在本模块中，您将了解如何将内容片段和GraphQL API用作无头内容管理系统。"
+>title="使用 GraphQL API 提取内容"
+>abstract="在本模块中，您将学习如何使用内容片段和 GraphQL API 作为无头内容管理系统。"
 
 ## Headless CMS {#headless-cms}
 
