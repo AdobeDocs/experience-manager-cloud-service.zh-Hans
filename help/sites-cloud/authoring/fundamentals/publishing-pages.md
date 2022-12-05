@@ -140,6 +140,7 @@ ht-degree: 100%
       >[!NOTE]
       >
       >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
+
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 单击&#x200B;**下一步**&#x200B;以继续。
@@ -217,7 +218,7 @@ ht-degree: 100%
 
 取消发布页面会将其从您的发布或[预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md)环境中移除，因此不再将其提供给您的读者。
 
-以类似于发布 ](#publishing-pages) 的 [ 方式，可以从所需目标取消发布一个或多个页面：
+以类似于发布 [&#128279;](#publishing-pages) 的  方式，可以从所需目标取消发布一个或多个页面：
 
 * [从页面编辑器中](#unpublishing-from-the-editor)
 * [从站点控制台中](#unpublishing-from-the-console)
