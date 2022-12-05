@@ -4,7 +4,7 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
+source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -238,7 +238,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 对于资产文件名，将使用API清理JCR名称和路径： `JcrUtil.escapeIllegalJcrChars`.
 
 * Unicode字符未更改
-* 将特殊字符替换为其URL转义代码，例如 `new asset.png` 已更新为 `new%20asset.png`:
+* 将特殊字符替换为其URL转义代码，例如 `new%asset.png` 已更新为 `new%25asset.png`:
 
    ```
                    URL escape code   
@@ -247,16 +247,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    %               %25
    '               %27
    *               %2A
-   .               %2E
    /               %2F
    :               %3A
    [               %5B
-   \n              %5Cn
-   \r              %5Cr
-   \t              %5Ct
+   \n              %0A
+   \r              %0D
+   \t              %09
    ]               %5D
    |               %7C
-   space char      %20
    ```
 
 **批量导入中处理文件夹名称**
