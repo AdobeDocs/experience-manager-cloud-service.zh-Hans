@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
 source-wordcount: '3816'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -285,7 +285,7 @@ ht-degree: 97%
          + [如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [管理活动](/help/sites-cloud/authoring/personalization/activities.md)
          + [管理受众](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [创建和管理选件 （“选件”控制台）](/help/sites-cloud/authoring/personalization/offers.md)
+         + [创建和管理选件（优惠控制台）](/help/sites-cloud/authoring/personalization/offers.md)
          + [了解分段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用 ContextHub 配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [注册、登录和用户配置文件](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -297,7 +297,7 @@ ht-degree: 97%
          + [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
          + [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
          + [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [变量 – 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [变体 – 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
          + [内容片段关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
          + [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
          + [内容片段 – 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
@@ -357,7 +357,7 @@ ht-degree: 97%
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [与Adobe Campaign集成](/help/sites-cloud/integrating/campaign.md)
+      + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
 + 资源 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概述和新增功能](/help/assets/overview.md)
@@ -396,7 +396,7 @@ ht-degree: 97%
       + [为资源添加水印](/help/assets/watermark-assets.md)
       + [使用 [!DNL Creative Cloud] API 处理资源](/help/assets/cc-api-integration.md)
       + [图像的颜色标记](/help/assets/color-tag-images.md)
-      + [管理PDF文档](/help/assets/manage-pdf-documents.md)
+      + [管理 PDF 文档](/help/assets/manage-pdf-documents.md)
    + 配置、管理和扩展 [!DNL Assets] {#admin}
       + [开发人员文档和 API 参考](/help/assets/developer-reference-material-apis.md)
       + [文件夹元数据架构](/help/assets/folder-metadata-schema.md)
@@ -424,7 +424,7 @@ ht-degree: 97%
       + [为您的实例启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
       + [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
-      + [变量 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
+      + [变体 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
       + [内容片段关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [元数据 – 片段属性](/help/assets/content-fragments/content-fragments-metadata.md)
       + [内容片段 – 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md)
@@ -510,11 +510,11 @@ ht-degree: 97%
       + [审阅并修正转换后的表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-Hans#welcome-to-review-and-correct-editor)
    + 创建和发布自适应表单 {#create-an-adaptive-form}
       + 开始之前 {#before-you-start}
-         + [自适应Forms创作简介](/help/forms/introduction-forms-authoring.md)
+         + [自适应表单创作简介](/help/forms/introduction-forms-authoring.md)
          + [创建模板](/help/forms/template-editor.md)
          + [创建主题](/help/forms/themes.md)
          + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
-         + [引用资产](/help/forms/reference-assets.md)
+         + [参考资产](/help/forms/reference-assets.md)
       + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
          + [创建自适应表单](/help/forms/creating-adaptive-form.md)
          + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
@@ -560,10 +560,10 @@ ht-degree: 97%
       + [与站点集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
       + [与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [将自适应表单与 Microsoft Power 集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [在AEM Sites中嵌入自适应Forms](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [在 AEM Sites 中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
    + 创建和使用工作流 {#create-form-centric-workflows}
       + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
-      + [在以表单为中心的工作流中使用变量](/help/forms/variable-in-aem-workflows.md)
+      + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
    + 使用通信 {#using-communications}
       + [Communications API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -652,7 +652,7 @@ ht-degree: 97%
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
-   + [开发人员门户（其他资源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [开发人员门户（其他资源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
    + 设置 {#setup}
       + [简介](/help/headless/setup/introduction.md)
       + [配置](/help/headless/setup/create-configuration.md)
@@ -743,7 +743,7 @@ ht-degree: 97%
          + [将 git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [环境变量](/help/implementing/cloud-manager/environment-variables.md)
+      + [环境变体](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
@@ -915,7 +915,7 @@ ht-degree: 97%
    + [AEM as a Cloud Service 的操作和维护](/help/operations/home.md)
    + [内容搜索与索引](/help/operations/indexing.md)
    + [内容复制服务](/help/operations/replication.md)
-   + [AEMas a Cloud Service中的基础架构和服务监控](/help/operations/monitoring.md)
+   + [AEM as a Cloud Service 中的基础设施和服务监控](/help/operations/monitoring.md)
    + [维护任务](/help/operations/maintenance.md)
    + [备份和恢复](/help/operations/backup.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
