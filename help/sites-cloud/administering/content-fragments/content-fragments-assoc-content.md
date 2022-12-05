@@ -1,13 +1,13 @@
 ---
 title: 关联的内容
-description: 了解内容片段的关联内容功能如何为要（可选）与片段一起使用的资产提供连接，从而为页面创作和无标题内容交付增加了额外的灵活性。
+description: 了解“内容片段”的关联内容功能如何提供连接，以便可以选择将资产与片段一起使用，从而提升页面创作和无标题内容交付的灵活性。
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM 的关联内容功能提供了连接，以便在将片段添加到内容页�
 
 >[!NOTE]
 >
->添加的方法有多种 [可视资产（例如，图像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) 到片段和/或页面。
+>可以通过多种方法向片段和/或页面中添加[可视资产（例如图像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)。
 
 要建立关联，您首先需要 [将媒体资产添加到收藏集](/help/assets/manage-collections.md)。 完成该操作后，您可以：
 
