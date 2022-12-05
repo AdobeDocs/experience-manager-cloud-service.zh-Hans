@@ -3,9 +3,9 @@ title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1812'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 98%
    * 这两个术语与发布/取消发布同义。
    * 这些术语在 AEM 的早期版本中使用。
 * **复制**
-   * 这些是技术术语，用于描述在发布页面时数据（例如，页面内容、文件、代码、用户评论）从一个环境移动到另一个环境。
+   * 这些是技术术语，用于描述发布页面时数据（例如，页面内容、文件、代码、用户评论）从一个环境移动到另一个环境。
    * 这些术语主要由开发人员使用。
 
 ## 发布页面 {#publishing-pages-1}
