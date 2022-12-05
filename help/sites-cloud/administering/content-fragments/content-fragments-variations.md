@@ -1,17 +1,17 @@
 ---
-title: 变量 – 创作片段内容
-description: 了解变量如何允许您为片段创作内容，然后根据用途创建该内容的变量。 这为 headless 投放和页面创作增加了灵活性。
+title: 变体 – 创作片段内容
+description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体。 这为 headless 投放和页面创作增加了灵活性。
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 变量 – 创作片段内容{#variations-authoring-fragment-content}
+# 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
 [变体](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是 AEM 内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本，用于特定渠道和/或场景，从而使页面创作和 headless 内容投放更加灵活。
 
@@ -84,7 +84,7 @@ ht-degree: 98%
 
 * [显示文本统计信息](#viewing-key-statistics)
 
-* [与主要内容同步](#synchronizing-with-master)（编辑变量时）
+* [与主要内容同步](#synchronizing-with-master)（编辑变体时）
 
 * [总结文本](#summarizing-text)
 
@@ -224,7 +224,7 @@ ht-degree: 98%
 >
 
 
-1. 选择&#x200B;**主要变量**&#x200B;或所需的变量。
+1. 选择&#x200B;**主要变体**&#x200B;或所需的变体。
 1. 打开全屏编辑器。
 
 1. 从工具栏中选择&#x200B;**“摘要文本”**。
@@ -254,7 +254,7 @@ ht-degree: 98%
 
 要对片段添加注释：
 
-1. 选择&#x200B;**主要变量**&#x200B;或所需的变量。
+1. 选择&#x200B;**主要变体**&#x200B;或所需的变体。
 
 1. 打开全屏编辑器。
 
@@ -307,7 +307,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
@@ -343,7 +343,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
@@ -372,9 +372,9 @@ ht-degree: 98%
 
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
-title="变量 – 创作片段内容"
-abstract="了解如何制作内容变体以便与特定渠道一起使用。"
-additional-url="https://video.tv.adobe.com/v/333295" text="内容片段变量"
+title="变体 – 创作片段内容"
+abstract="了解如何制作用于特定频道的内容变体。"
+additional-url="https://video.tv.adobe.com/v/333295" text="内容片段变体"
 
 ### 创建变体 {#creating-a-variation}
 
@@ -402,7 +402,7 @@ additional-url="https://video.tv.adobe.com/v/333295" text="内容片段变量"
 
 ### 重命名变体 {#renaming-a-variation}
 
-要重命名现有变量，请执行以下操作：
+要重命名现有变体，请执行以下操作：
 
 1. 打开片段，然后从侧面板中选择&#x200B;**“变体”**。
 1. 选择所需的变体。
@@ -436,7 +436,7 @@ additional-url="https://video.tv.adobe.com/v/333295" text="内容片段变量"
 
 >[!CAUTION]
 同步仅可将更改从&#x200B;***母版**复制到变体*。
-将仅同步变量的当前元素。
+将仅同步变体的当前元素。
 同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
 不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 
