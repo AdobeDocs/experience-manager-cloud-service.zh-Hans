@@ -3,9 +3,9 @@ title: 用于页面编辑的键盘快捷键
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 | 位置 | 快捷键 | 描述 |
 |---|---|---|
-| 任何编辑窗口模式 | `Ctrl-Shift-m` | 在之间切换 **预览** 和当前选定的 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (例如， **编辑**, **布局**、等)* |
+| 任何编辑窗口模式 | `Ctrl-Shift-m` | 在&#x200B;**预览**&#x200B;模式和当前选定的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a>（例如，**编辑**、**布局**&#x200B;等）之间切换* |
 | **编辑**&#x200B;模式 | `Ctrl-z` | [撤消最后一次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [重做最后一次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 选择多个段落 |
