@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2900'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,15 @@ URL的第一部分以红色表示，引用服务器域本身。 在这种情况�
 
 最后，还有一些图像处理参数， `?wid=1000&fmt=jpeg&qlt=85`，在末尾以黄色显示。
 
-整个URL路径处于实时状态。 [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85).
+整个URL路径处于实时状态。 [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target=&quot;_blank&quot;}。
 
 由于您的浏览器窗口仍然会打开Dynamic Media URL和Watch图像，因此我们将进一步了解您如何只通过更改URL来创建图像的演绎版。
 
 ### 通过URL呈现监视图像
 
-首先，手动仅删除URL路径中的图像处理规则；保留服务器名称、帐户名称以及资产ID或图像名称。 [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982).
+首先，手动仅删除URL路径中的图像处理规则；保留服务器名称、帐户名称以及资产ID或图像名称。 [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target=&quot;_blank&quot;}。
 
-现在，在URL的末尾添加一个图像处理参数。 在“URL”字段中，在图像名称右侧键入 `?wid=500`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500).
+现在，在URL的末尾添加一个图像处理参数。 在“URL”字段中，在图像名称右侧键入 `?wid=500`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target=&quot;_blank&quot;}。
 
 请注意，手表的新呈现版本已生成。 要了解更改图像宽度这一简单练习的一个关键内容是，所看到的图像是100%动态生成的。
 
@@ -64,9 +64,9 @@ URL的第一部分以红色表示，引用服务器域本身。 在这种情况�
 
 Dynamic Media具有许多图像处理参数，可用于在网页上微调图像资产。 您可以 [请在此处查看这些列表](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
-现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧接 `wid=1000`，类型 `&rotate=90`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90).
+现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧接 `wid=1000`，类型 `&rotate=90`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target=&quot;_blank&quot;}。
 
-手表还是略偏左。 更改 `90` to `92`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
+手表还是略偏左。 更改 `90` to `92`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target=&quot;_blank&quot;}。
 
 再说一遍，你按下 **[!UICONTROL 输入]**，则表格的新呈现会近乎瞬间生成。 您可以看到您获得的性能，这解释了为什么Dynamic Media可以提供超过800,000个图像请求， _每秒_、在繁忙的周末或大节假日。
 
@@ -128,7 +128,7 @@ _通过从高级选项卡中选择选项来创建图像预设。_
 ![应用图像预设 *中* 生成图像的呈现版本](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _应用图像预设媒体以生成图像的呈现版本。_
 
-复制URL，然后将其粘贴到浏览器中，以检查图像的外观。 [试试看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$). 在您的浏览器中，请注意图像预设的名称 _中_ 在完整URL路径中。
+复制URL，然后将其粘贴到浏览器中，以检查图像的外观。 [试试看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}。 在您的浏览器中，请注意图像预设的名称 _中_ 在完整URL路径中。
 
 您可以看到图像中显示的清晰度。 这种品质部分要归功于这碗巧克力的拍摄方式。 此外，这在一定程度上是因为使用Dynamic Media，您可以存储比交付到数字渠道的图像大的图像。
 
@@ -159,7 +159,7 @@ _开始创建图像集。_
 
 要创建图像集，请选择 **[!UICONTROL 图像集]** 从 **[!UICONTROL 创建]** 下拉菜单。 请注意，菜单中还有一些用于创建 **[!UICONTROL 混合媒体集]**, a **[!UICONTROL 旋转集]**&#x200B;和 **[!UICONTROL 轮播集]**. 创建这些集的方式与创建图像集的方式大致相同。
 
-混合媒体集可以包含图像、色板集、旋转集、视频和自适应视频集。 [试试看](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). 旋转集模拟旋转对象的真实动作，以对其进行检查。 旋转集允许从任何角度查看关键的可视细节。 [试试看](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400).
+混合媒体集可以包含图像、色板集、旋转集、视频和自适应视频集。 [试试看](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). 旋转集模拟旋转对象的真实动作，以对其进行检查。 旋转集允许从任何角度查看关键的可视细节。 [试试看](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target=&quot;_blank&quot;}。
 
 创建图像集非常简单。 您只需添加要包含在规则集中的图像资产即可。
 
@@ -185,13 +185,13 @@ _的 `Running` 在预览中设置图像，并选择查看器选项。_
 ![应用了弹出查看器的运行图像集](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _的 `Running` 在应用弹出查看器时设置的图像。_
 
-在本例中， `Flyout` 查看器。 此时，您可以预览查看器中的图像集。 但是，最好在浏览器中查看它，即客户如何查看它。 您选择 **[!UICONTROL URL]** 在左下方，复制URL并将其粘贴到浏览器中。 [试试看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout).
+在本例中， `Flyout` 查看器。 此时，您可以预览查看器中的图像集。 但是，最好在浏览器中查看它，即客户如何查看它。 您选择 **[!UICONTROL URL]** 在左下方，复制URL并将其粘贴到浏览器中。 [试试看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target=&quot;_blank&quot;}。
 
 通过单个URL，您可以在网站上需要的图像集和查看器的位置使用它们。 您可能在上一个示例中注意到 **[!UICONTROL 嵌入]** 在URL按钮的右侧。 通过选择 **[!UICONTROL 嵌入]**，则可以复制此图像集/查看器的代码，并将其添加到网页或Experience Manager Sites组件中。
 
 弹出查看器是一个默认的现成查看器，您可以编辑其属性。 或者，与创建图像预设一样，您也可以创建自己的自定义查看器。
 
-假设您的销售和营销团队不喜欢弹出查看器。 他们喜欢缩放功能，但希望客户直接在鞋上查看缩放效果。 在这种情况下，您只需将InlineZoom查看器应用到图像集，并复制其URL并将其粘贴到浏览器中，即可查看其行为方式。 [试试看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom).
+假设您的销售和营销团队不喜欢弹出查看器。 他们喜欢缩放功能，但希望客户直接在鞋上查看缩放效果。 在这种情况下，您只需将InlineZoom查看器应用到图像集，并复制其URL并将其粘贴到浏览器中，即可查看其行为方式。 [试试看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target=&quot;_blank&quot;}。
 
 将鼠标指针移到鞋上时，放大到该图像，当鼠标指针移动时，可以看到更多细节。 原因只是最初上传到Dynamic Media的图像大小。
 
@@ -201,8 +201,8 @@ _的 `Running` 在应用弹出查看器时设置的图像。_
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
-* `Zoom_light` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
+* `ZoomVertical_dark` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target=&quot;_blank&quot;}。
+* `Zoom_light` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target=&quot;_blank&quot;}。
 
 ## 可选 — 了解详情
 

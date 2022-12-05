@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3712'
 ht-degree: 2%
 
 ---
@@ -254,7 +254,7 @@ Adobe建议您以无损格式上传资产。 通常，最好避免JPEG，因为�
 ![基于大图像预设预览资产的演绎版](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _根据选定的“大”图像预设预览资产的演绎版。 单击了URL按钮。 生成的URL路径包含“大”图像预设名称，并可在网页中使用。_
 
-上述URL是实时的！ [试试看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
+上述URL是实时的！ [试试看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}。
 
 预览资产的另一种方法是，选择图像资产，然后选择 _查看器_ 预设，如下所示。
 
