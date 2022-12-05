@@ -3,9 +3,9 @@ title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 
 ### 配置 {#configuring-flexible-port-egress-provision}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。参数的完整集合和精确语法，以及诸如以后无法更改的参数等重要信息， [可在API文档中引用。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。[API 文档中可以引用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)完整的参数集和精确的语法，以及一些重要信息，如哪些参数以后不能更改。
 
 在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础设施 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 的调用将显示状态“就绪”。
 
@@ -76,7 +76,7 @@ API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
-对于流向 80 或 443 端口以外端口的 http 或 https 流量，应使用以下主机和端口环境变量来配置代理。
+对于流向 80 或 443 端口以外端口的 http 或 https 流量，应使用以下主机和端口环境变体来配置代理。
 
 * 对于 HTTP：`AEM_PROXY_HOST`/`AEM_HTTP_PROXY_PORT `（在 AEM 版本 6094 之前，默认为 `proxy.tunnel:3128`）
 * 对于 HTTPS：`AEM_PROXY_HOST`/`AEM_HTTPS_PROXY_PORT `（在 AEM 版本 6094 之前，默认为 `proxy.tunnel:3128`）
@@ -125,7 +125,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>非标准流量（在 80 或 443 以外的端口上），这些流量流经使用以下环境变量和代理端口号配置的 http 代理。不要在 Cloud Manager API 调用的 portForwards 参数中声明目标端口：<br><ul>
+    <td>非标准流量（在 80 或 443 以外的端口上），这些流量流经使用以下环境变体和代理端口号配置的 http 代理。不要在 Cloud Manager API 调用的 portForwards 参数中声明目标端口：<br><ul>
      <li>AEM_PROXY_HOST（在 AEM 版本 6094 之前，默认为“proxy.tunnel”）</li>
      <li>AEM_HTTPS_PROXY_PORT（在 AEM 版本 6094 之前，默认为端口 3128）</li>
     </ul>
@@ -142,7 +142,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td><b>非 http 或非 https</b></td>
-    <td>客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量。</td>
+    <td>客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变体。</td>
     <td>任意</td>
     <td>允许</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -272,7 +272,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td><b>非 http 或非 https</b></td>
-    <td>客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量</td>
+    <td>客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变体</td>
     <td>任意</td>
     <td>通过专用出口 IP</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -335,7 +335,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 旧版专用出口地址客户 {#legacy-dedicated-egress-address-customers}
 
-如果在 2021 年 9 月 30 日之前已为您配置了专用出口 IP，则您的专用出口 IP 功能仅支持 HTTP 和 HTTPS 端口。这包括 HTTP/1.1 以及加密的 HTTP/2。此外，一个专用出口端点只能通过端口80/443上的HTTP/HTTPS与任何目标通信。
+如果在 2021 年 9 月 30 日之前已为您配置了专用出口 IP，则您的专用出口 IP 功能仅支持 HTTP 和 HTTPS 端口。这包括 HTTP/1.1 以及加密的 HTTP/2。此外，专用出口端点可以分别通过端口 80/443 上的 HTTP/HTTPS 与任何目标通信。
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
@@ -445,14 +445,14 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
   </tr>
   <tr>
     <td><b>非 http 或非 https</b></td>
-    <td>如果 IP 处于 <i>VPN 网关地址空间</i>范围内，并且客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量</td>
+    <td>如果 IP 处于 <i>VPN 网关地址空间</i>范围内，并且客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变体</td>
     <td>任意</td>
     <td>通过 VPN</td>
     <td><code>10.0.0.1:3306</code>这也可以是主机名。</td>
   </tr>
   <tr>
     <td></td>
-    <td>如果 IP 没有处于 <i>VPN 网关地址空间</i>范围内，并且客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变量</td>
+    <td>如果 IP 没有处于 <i>VPN 网关地址空间</i>范围内，并且客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变体</td>
     <td>任意</td>
     <td>通过专用出口 IP</td>
     <td></td>
