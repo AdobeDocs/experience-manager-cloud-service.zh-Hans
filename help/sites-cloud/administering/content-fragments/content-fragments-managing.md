@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1947'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 [内容片段编辑器](#opening-the-fragment-editor)提供各种[模式](#modes-in-the-content-fragment-editor)，使您能够：
 
-* [编辑内容](#editing-the-content-of-your-fragment)和[管理变量](#creating-and-managing-variations-within-your-fragment)
+* [编辑内容](#editing-the-content-of-your-fragment)和[管理变体](#creating-and-managing-variations-within-your-fragment)
 * [在片段中添加批注](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [将内容与片段关联](#associating-content-with-your-fragment)
 * [配置元数据](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -57,8 +57,8 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="创建新内容"
->abstract="基于您在模块1中创建的模型，您将学习如何创建可用于页面创作的内容，或作为无头内容的基础。"
+>title="新建内容"
+>abstract="基于您在模块 1 中创建的模型，您将学习如何创建可用于页面创作或作为无头内容基础的内容。"
 
 ### 创建内容模型 {#creating-a-content-model}
 
@@ -134,7 +134,7 @@ ht-degree: 98%
 
 使用侧面板中的图标在各种模式中导航：
 
-* 变体：[编辑内容](#editing-the-content-of-your-fragment)和[管理变量](#creating-and-managing-variations-within-your-fragment)
+* 变体：[编辑内容](#editing-the-content-of-your-fragment)和[管理变体](#creating-and-managing-variations-within-your-fragment)
 
 * [注释](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [关联的内容](#associating-content-with-your-fragment)
