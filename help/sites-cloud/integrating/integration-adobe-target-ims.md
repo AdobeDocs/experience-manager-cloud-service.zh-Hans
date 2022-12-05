@@ -3,9 +3,9 @@ title: 与 Adobe Target 集成时使用的 IMS 配置
 description: 了解与 Adobe Target 集成时使用的 IMS 配置
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -161,7 +161,7 @@ ht-degree: 97%
 1. 在这里，您可以使用 [Adobe Developer Console 中项目配置的详细信息](#details-stored-for-the-ims-integration-project)：
 
    * **标题**：您的文本。
-   * **授权服务器**:从 `aud` 行 **负载** 例如， `https://ims-na1.adobelogin.com` 在以下示例中
+   * **授权服务器**：复制并粘贴以下&#x200B;**有效负载**&#x200B;分区中的 `aud` 行的内容，例如，以下示例中的 `https://ims-na1.adobelogin.com`
    * **API 密钥**：从项目[概述](#details-stored-for-the-ims-integration-project)部分中复制此密钥
    * **客户端密码**：在项目[概述](#details-stored-for-the-ims-integration-project)部分中生成此密码并进行复制
    * **有效负载**：从[生成 JWT](#details-stored-for-the-ims-integration-project) 部分中复制此有效负载
