@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 38%
+ht-degree: 48%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 38%
 
 ## 发布日期 {#release-date}
 
-AEM Manager版本2022.12.0的发布日期是2022年11月29日。 下一版本计划于2023年1月19日发布。
+AEM Manager版本2022.12.0的发布日期是2022年11月29日。 下一个版本计划于 2023 年 1 月 19 日发布。
 
 ## 新增功能 {#what-is-new}
 
 * 通知 [AEM维护更新](/help/overview/what-is-new-and-different.md#aem-updates) 将在Cloud Manager UI中显示。 此更改将在2022.12.0版本发布后的几周内分阶段实施。
 * 通过 [内容传输工具(CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 进行中，开发人员控制台和Cloud Manager中的环境状态将显示为 `Ingestion in Progress`.
-* 改进了 [Cloud Manager管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 被制造。
+* 提高了 [Cloud Manager 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)的可用性和可靠性。
 
 ## 错误修复 {#bug-fixes}
 
