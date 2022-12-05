@@ -1,14 +1,14 @@
 ---
 title: 内容片段控制台
 description: 了解如何从内容片段控制台中管理内容片段。
-landing-page-description: 了解如何从内容片段控制台中管理内容片段，该控制台重点关注内容片段在无头用例中的大量使用，但也用于页面创作。
+landing-page-description: 了解如何从内容片段控制台中管理内容片段，虽然该控制台侧重于大量使用内容片段的 Headless 用例情况，但其也用于页面创作。
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->您的项目团队可以根据需要自定义控制台。 请参阅 [自定义内容片段控制台](/help/implementing/developing/extending/content-fragment-console-customizing.md) 以了解更多详细信息。
+>如果需要，您的项目团队可以自定义控制台。 请参阅[自定义内容片段控制台](/help/implementing/developing/extending/content-fragment-console-customizing.md)，了解更多详情。
 
 可以从全局导航的顶级直接访问内容片段控制台：
 
