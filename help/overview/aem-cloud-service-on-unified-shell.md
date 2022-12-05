@@ -3,9 +3,9 @@ title: Unified Shell 上的 AEM as a Cloud Service
 description: Unified Shell 上的 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 ## 概述 {#overview}
 
-AEMas a Cloud Service（创作服务）与Unified Shell集成，以改进用户体验并将其与所有其他Experience Cloud应用程序相统一。 此集成的影响可在应用程序的顶部标题中查看，如下所示。
+AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 此集成的影响可在应用程序的顶部标题中查看，如下所示。
 
 ![图像](/help/overview/assets/unifiedshell_header.png)
 
@@ -23,14 +23,14 @@ AEMas a Cloud Service（创作服务）与Unified Shell集成，以改进用户�
 * 在组织之间轻松切换或切换到其他应用程序
 * 改进了产品帮助
 * 简单的产品内反馈按钮，用于报告问题或与 Adobe 分享想法
-* 除了特定于AEM as a Cloud Service的通知之外，还可以访问全球产品公告和通知
+* 除了特定于 AEM as a Cloud Service 的通知之外，还可以访问全球产品公告和通知
 
 ## 禁用 Unified Shell {#disabling-unified-shell}
 
 开箱即用地，AEM as a Cloud Service 已启用 Unified Shell。 但是，如果已自定义顶部标头，则建议禁用 Unified Shell 以避免自定义项出现任何问题。 要禁用 Unified Shell，请执行以下步骤：
 
 >[!NOTE]
->只有具有管理权限的帐户才能禁用统一Shell。
+>只有具有管理权限的帐户才能禁用 Unified Shell。
 
 1. 导航到&#x200B;**工具 – Cloud Services**。
 
