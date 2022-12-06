@@ -2,9 +2,9 @@
 title: 体验片段概述
 description: 扩展Adobe Experience Manager as a Cloud Service体验片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1651'
 ht-degree: 2%
 
 ---
@@ -48,6 +48,19 @@ ht-degree: 2%
 纯格式副本选择器使用变压器，而不是其他脚本；the [Sling重写程序](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 用作变压器。 此配置位于
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### 配置HTML呈现版本生成 {#configuring-html-rendition-generation}
+
+HTML呈现版本是使用Sling重写器管道生成的。 管道在 `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML转换器支持以下选项：
+
+* `allowedCssClasses`
+   * 与最终呈现版本中应保留的CSS类匹配的RegEx表达式。
+   * 如果客户想要删除某些特定的CSS类，此操作将非常有用
+* `allowedTags`
+   * 要在最终呈现版本中允许的HTML标记列表。
+   * 默认情况下，允许使用以下标记（无需配置）：html， head， title， body， img， p， span， ul， li， a， b， i， em， strong， h1, h2, h3, h4, h5, h6, br， noscript， div， link，脚本
+
+建议使用叠加来配置重写器。 请参阅 [AEMas a Cloud Service中的叠加](/help/implementing/developing/introduction/overlays.md)
 
 ## 体验片段的模板 {#templates-for-experience-fragments}
 
