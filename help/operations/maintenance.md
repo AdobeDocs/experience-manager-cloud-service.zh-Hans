@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
+source-git-commit: e52d44015c040c1739152263d88ae436bd83d414
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 75%
@@ -49,7 +49,7 @@ ht-degree: 75%
        <li>超过 30 天的版本将会被删除</li>
        <li>保留过去 30 天内的最新 5 个版本</li>
        <li>无论上述规则如何，都会保留最新版本。</li>
-       <li>建议那些有法规要求按特定日期完全呈现网站页面的客户与专门的外部服务集成。<li>
+       <br>建议那些有法规要求，要求按照特定日期的显示方式呈现网站页面的客户，与专门的外部服务相集成。
      </ol></td>
   </td>
   </tr>
@@ -61,7 +61,7 @@ ht-degree: 75%
        <li>对于复制审核，将删除超过 3 天的审核日志</li>
        <li>对于 DAM (Assets)，将删除超过 30 天的审核日志</li>
        <li>对于页面审核，将删除超过 3 天的日志。</li>
-       <li>建议那些有法规要求生成不可编辑的审核日志的客户与专门的外部服务集成。<li>
+       <br>建议那些有管理法规要求生成不可编辑的审核日志的客户与专门的外部服务集成。
      </ol></td>
    </td>
   </tr>
