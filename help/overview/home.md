@@ -2,14 +2,14 @@
 title: Experience Manager as a Cloud Service 入门
 description: 了解 Experience Manager as a Cloud Service 的工作方式以及软件可以对您的作用。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 93%
 
 ---
 
-# Experience Manager as a Cloud Service 概述 {#aem-overview-guide}
+# Experience Manageras a Cloud Service文档 {#aem-overview-guide}
 
 从此处开始，了解 Experience Manager as a Cloud Service 的工作方式以及软件对您的作用。
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 * [新增功能和不同功能](what-is-new-and-different.md)
 * [架构简介](architecture.md)
 
-## Experience Manager as a Cloud Service 指南 {#aem-guides}
+## Experience Manageras a Cloud Service指南 {#aem-guides}
 
 | 用户指南 | 描述 |
 |---|---|
@@ -36,7 +36,7 @@ ht-degree: 100%
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
 | [Commerce 用户指南](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 上的 Commerce 集成框架。 |
 
-## 其他 Experience Manager 资源 {#other-resources}
+## 其他Experience Manager帮助资源 {#other-resources}
 
 * [近期文档更新](https://helpx.adobe.com/cn/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher 文档](/help/implementing/dispatcher/overview.md)
