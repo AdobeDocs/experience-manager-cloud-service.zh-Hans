@@ -2,10 +2,10 @@
 title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 87%
 
 ---
 
@@ -55,6 +55,12 @@ ht-degree: 100%
 1. 单击&#x200B;**更新**，将更改保存到程序。
 
 无论何时编辑程序，包括添加或删除解决方案或插件，这些更改都将在下次部署后生效。
+
+如果您的生产计划已启用增强的安全性，则 **增强的安全性** 选项卡 **编辑程序** 窗口，确认该功能对程序处于活动状态。
+
+![增强了程序的活动安全性](assets/edit-program-enhanced.png)
+
+创建程序后，无法修改此设置。 有关增强的安全选项的更多信息，请参阅 [创建生产程序](creating-production-programs.md) 文档。
 
 ## 删除沙盒程序 {#delete-sandbox-program}
 

@@ -3,10 +3,10 @@ title: 创建程序
 description: 了解如何使用 Cloud Manager 创建您的第一个程序。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 95%
+source-wordcount: '626'
+ht-degree: 91%
 
 ---
 
@@ -38,6 +38,10 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的。
 
 由于用途不同，因此不同的环境有不同的选项。 然而，创建程序的过程是相似的。 对于此次入门培训历程，我们将创建一个沙盒环境。
+
+>[!TIP]
+>
+>如果需要创建生产程序，请参阅 [其他资源](#additional-resources) 部分，以获取详细描述程序的文档链接。
 
 ## 创建沙盒程序 {#create-sandbox}
 
