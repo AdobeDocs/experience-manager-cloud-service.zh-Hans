@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
+source-git-commit: 3915e0f281731928b8d918e741235f8bef41c885
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2701'
 ht-degree: 1%
 
 ---
@@ -31,11 +31,12 @@ ht-degree: 1%
 ./
 ├── conf.d
 │   ├── available_vhosts
+│   │   ├── my_site.vhost # Created by customer
 │   │   └── default.vhost
 │   ├── dispatcher_vhost.conf
 │   ├── enabled_vhosts
 │   │   ├── README
-│   │   └── default.vhost -> ../available_vhosts/default.vhost
+│   │   └── my_site.vhost -> ../available_vhosts/my_site.vhost  # Created by customer
 │   └── rewrites
 │   │   ├── default_rewrite.rules
 │   │   └── rewrite.rules
@@ -46,6 +47,7 @@ ht-degree: 1%
 │   └── USE_SOURCES_DIRECTLY
 └── conf.dispatcher.d
     ├── available_farms
+    │   ├── my_farm.farm # Created by customer
     │   └── default.farm
     ├── cache
     │   ├── default_invalidate.any
@@ -58,7 +60,7 @@ ht-degree: 1%
     ├── dispatcher.any
     ├── enabled_farms
     │   ├── README
-    │   └── default.farm -> ../available_farms/default.farm
+    │   └── my_farm.farm -> ../available_farms/my_farm.farm  # Created by customer
     ├── filters
     │   ├── default_filters.any
     │   └── filters.any
@@ -131,6 +133,7 @@ ht-degree: 1%
 * `conf.d/available_vhosts/default.vhost`
 
 包含一个示例虚拟主机。 对于您自己的虚拟主机，请创建此文件的副本并对其进行自定义，然后转到 `conf.d/enabled_vhosts` 并创建指向自定义副本的符号链接。
+请勿将default.vhost文件直接复制到 `conf.d/enabled_vhosts`.
 
 确保虚拟主机始终可用，与ServerAlias匹配 `\*.local` 以及内部Adobe进程所需的本地主机。
 
