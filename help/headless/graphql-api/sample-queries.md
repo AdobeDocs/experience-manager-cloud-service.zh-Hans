@@ -3,10 +3,10 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: ht
-source-wordcount: '1456'
-ht-degree: 100%
+source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
+workflow-type: tm+mt
+source-wordcount: '1554'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 **示例查询**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -73,7 +73,7 @@ ht-degree: 100%
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -152,7 +152,7 @@ ht-degree: 100%
 要检索有关所有城市的所有信息，您可以使用非常基本的查询：
 **示例查询**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -162,7 +162,7 @@ ht-degree: 100%
 
 在执行时，系统将自动扩展查询以包含所有字段：
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -177,7 +177,7 @@ ht-degree: 100%
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -236,7 +236,7 @@ ht-degree: 100%
 
 **示例查询**
 
-```xml
+```graphql
 query {
   cityList {
     items {
@@ -248,7 +248,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -286,7 +286,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -302,7 +302,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -327,7 +327,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -343,7 +343,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -370,7 +370,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -399,7 +399,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -498,7 +498,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -523,7 +523,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -552,7 +552,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -574,7 +574,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -619,7 +619,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -641,7 +641,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -664,7 +664,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -700,7 +700,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -727,7 +727,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -751,7 +751,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -778,7 +778,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -802,7 +802,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -836,7 +836,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -862,7 +862,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -888,7 +888,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -920,7 +920,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -954,7 +954,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -996,7 +996,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1046,7 +1046,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1073,7 +1073,7 @@ query {
 
 **示例结果**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1110,27 +1110,40 @@ query {
 * 在以下位置提供的内容片段（和其他内容）：
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
+   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+
 >[!NOTE]
 >
 >由于结果可能会很庞大，此处不再复述。
+
+>[!NOTE]
+>
+>各种查询引用变量 `variation1`. 这不在标准WKND包中。 必须创建此插件以进行测试。
+>
+>如果 `variation1` 不存在，则 `master`变量将作为默认值返回。
 
 ### 具有指定属性的特定模型的所有内容片段示例查询 {#sample-wknd-all-model-properties}
 
 此示例查询查找：
 
 * 类型为 `article` 的所有内容片段
-* 具有 `path` 和 `author` 属性。
+* 和 `_path` 和属性 `authorFragment`.
 
 **示例查询**
 
-```xml
+```graphql
 {
   articleList {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
     }
-  }
+ }
 }
 ```
 
@@ -1143,7 +1156,7 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1208,12 +1221,17 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
-        author
+        authorFragment {
+          _path
+          firstName
+          lastName
+          birthDay
+        }
         main {
           html
           markdown
@@ -1234,12 +1252,12 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
       _path
-      adventureTitle
+      title
       _model {
         _path
         title
@@ -1262,15 +1280,15 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1288,7 +1306,9 @@ query {
 >
 >字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`、`Adventure`。
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1323,7 +1343,9 @@ query {
 
 以下查询通过使用 `_references` 返回所有内容引用：
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
      _references {
@@ -1363,7 +1385,9 @@ query {
 >
 >字段 `attachments` 具有数据类型 `content-reference`，并选择了多种格式。
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1405,9 +1429,11 @@ query {
 >
 >RTE 内联引用在 `_references` 中水合。
 
+<!-- need replacement query -->
+
 **示例查询**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1449,12 +1475,17 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
-      _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1474,12 +1505,19 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 {
-  articleList (variation: "variation1") {
+  articleList(variation: "variation1") {
     items {
       _path
-      author
+      _variation
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1499,12 +1537,17 @@ query {
 
 **示例查询**
 
-```xml
+```graphql
 { 
-  articleList (_locale: "fr") {
+  articleList(_locale: "fr") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1516,44 +1559,45 @@ query {
 }
 ```
 
-<!-- CQDOC-19418 -->
+### 使用偏移和限制的示例列表查询 {#sample-list-offset-limit}
 
-<!--
+此查询查找：
 
-### Sample List Query using offset and limit {#sample-list-offset-limit}
+* (从 *complete* 结果列表
 
-This query interrogates:
+**示例查询**
 
-* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
-
-**Sample Query**
-
-```xml
-query {
-   articleList(offset: 5, limit:5) {
+```graphql
+{
+   articleList(offset: 5, limit: 5) {
     items {
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       _path
     }
   }
 }
 ```
 
-### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+### 使用第一个和后面的分页查询示例  {#sample-pagination-first-after}
 
-This query interrogates:
+此查询查找：
 
-* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+* 对于包含最多5次冒险的结果页面，从 *complete* 结果列表
 
-**Sample Query**
+**示例查询**
 
-```xml
-query {
+```graphql
+{
     adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -1563,8 +1607,6 @@ query {
     }
 }
 ```
-
--->
 
 ## 示例内容片段结构（用于 GraphQL） {#content-fragment-structure-graphql}
 
@@ -1630,11 +1672,11 @@ query {
 
 #### 公司 {#fragment-company}
 
-| 公司名称 | CEO | 员工 |
+| 公司名称 | 首席执行官 | 员工 |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 | Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+| NextStep Inc. | 史蒂夫·乔布斯 | Joe Smith<br>Abe Lincoln |
 
 #### 人员 {#fragment-person}
 
@@ -1667,4 +1709,4 @@ query {
 | 圣弗朗西斯科 | 美国 |  883306 |  city:beach<br>city:na |
 | 圣何塞 | 美国 |  102635 | city:na |
 | 斯图加特 | 德国 | 634830 | city:emea |
-| 苏黎世 | 瑞士 | 415367 |  city:capital<br>city:emea |
+| 苏黎世 | 瑞士 | 415367 |  城市：资本<br>城市：emea |
