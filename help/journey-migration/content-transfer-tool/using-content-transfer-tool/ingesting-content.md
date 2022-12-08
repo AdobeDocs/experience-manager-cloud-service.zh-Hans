@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 12%
+source-wordcount: '1181'
+ht-degree: 11%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 12%
 
 ### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
 
-自动检索迁移令牌可能会因不同的原因（包括您）而失败 [通过Cloud Manager设置IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) (在目标Cloud Service环境中)。  在这些情况下，当您尝试启动摄取时，您将看到以下对话框：
+自动检索迁移令牌可能会因不同的原因（包括您）而失败 [通过Cloud Manager设置IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) (在目标Cloud Service环境中)。 在这些情况下，当您尝试启动摄取时，您将看到以下对话框：
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ ht-degree: 12%
 仅当您属于本地环境时，才能将摄取启动到目标环境 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您不属于AEM管理员组，则在尝试开始摄取时，您将看到如下所示的错误。 您可以要求管理员将您添加到本地 **AEM管理员** 或请求令牌本身，然后您可以将该令牌粘贴到 **迁移令牌输入** 字段。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### 仍启用通过Release Orchestrator进行的自动更新
+
+Release Orchestrator通过自动应用更新来自动使环境保持最新。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。 这是启动摄取之前应记录支持票证的原因之一（请参阅上面的“注意”），以便可以计划临时禁用Release Orchestrator。
+
+如果启动摄取时Release Orchestrator仍在运行，则UI将显示此错误消息。 无论如何，您都可以选择继续，接受风险，方法是检查字段并再次按按钮。
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## 后续内容 {#whats-next}
 
