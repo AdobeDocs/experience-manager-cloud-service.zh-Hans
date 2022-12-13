@@ -3,7 +3,7 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
+source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1464,7 +1464,7 @@ query {
 
 此查询查找：
 
-* 特定路径下类型为 `article` 的单个内容片段
+* 特定路径下类型为 `author` 的单个内容片段
    * 在其中，数据关联到变体：`another`
 
 **示例查询**
@@ -1487,7 +1487,7 @@ query {
 
 此查询查找：
 
-* 类型为 `article` 且具有以下特定变体的内容片段：`another`
+* 类型为 `author` 且具有以下特定变体的内容片段：`another`
 
 >[!NOTE]
 >
