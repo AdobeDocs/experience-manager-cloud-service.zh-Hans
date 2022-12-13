@@ -3,10 +3,10 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 92%
+source-wordcount: '1540'
+ht-degree: 93%
 
 ---
 
@@ -1116,12 +1116,6 @@ query {
 >
 >由于结果可能会很庞大，此处不再复述。
 
->[!NOTE]
->
->各种查询引用变量 `variation1`. 这不在标准WKND包中。 必须创建此插件以进行测试。
->
->如果 `variation1` 不存在，则 `master`变量将作为默认值返回。
-
 ### 具有指定属性的特定模型的所有内容片段示例查询 {#sample-wknd-all-model-properties}
 
 此示例查询查找：
@@ -1471,27 +1465,19 @@ query {
 此查询查找：
 
 * 特定路径下类型为 `article` 的单个内容片段
-   * 在其中，数据关联到变体：`variation1`
+   * 在其中，数据关联到变体：`another`
 
 **示例查询**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1501,29 +1487,23 @@ query {
 
 此查询查找：
 
-* 类型为 `article` 且具有以下特定变体的内容片段：`variation1`
+* 类型为 `article` 且具有以下特定变体的内容片段：`another`
+
+>[!NOTE]
+>
+>这将演示对于没有 [变量](/help/headless/graphql-api/content-fragments.md#variations) 指定名称的。
 
 **示例查询**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
