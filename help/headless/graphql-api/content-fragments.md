@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
-ht-degree: 60%
+source-wordcount: '4174'
+ht-degree: 58%
 
 ---
 
@@ -122,11 +122,9 @@ AEM提供了将查询（这两种类型）转换为 [可缓存的持久化查询
 >
 >要允许在调度程序中直接查询和/或 POST 查询，您可以要求系统管理员：
 >
->* 创建一个名为 `ENABLE_GRAPHQL_ENDPOINT` 的 Cloud Manager 环境变量
+>* 创建 [Cloud Manager环境变量](/help/implementing/cloud-manager/environment-variables.md) 调用 `ENABLE_GRAPHQL_ENDPOINT`
 >* 值为 `true`
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 #### 路径 {#path}
 
-路径字段用作AEM GraphQL中的标识符。 它代表 AEM 存储库中内容片段资源的路径。我们选择此项作为内容片段的标识符是因为它：
+路径字段用作AEM GraphQL中的标识符。 它代表 AEM 存储库中内容片段资源的路径。我们选择了此作为内容片段的标识符，因为它：
 
 * 在 AEM 中唯一
 * 可以轻松地提取
@@ -296,7 +294,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 #### 元数据 {#metadata}
 
-通过 GraphQL，AEM 还可以公开内容片段的元数据。元数据是描述内容片段的信息，例如内容片段的标题、缩略图路径、内容片段的描述、创建日期等等。
+通过 GraphQL，AEM 还可以公开内容片段的元数据。元数据是描述内容片段的信息，例如内容片段的标题、缩略图路径、内容片段的描述、创建日期等。
 
 由于元数据通过架构编辑器生成，因此没有特定结构，所以实施了 `TypedMetaData` GraphQL 类型以公开内容片段的元数据。`TypedMetaData` 公开按以下标量类型分组的信息：
 
@@ -501,8 +499,8 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 | 选项 | 类型 | 描述 |
 |--- |--- |--- |
-| _ignoreCase | 字符串 | 忽略字符串的大小写，例如值 `time` 匹配 `TIME`, `time`, `tImE`, ... |
-| _敏感性 | 浮点数 | 允许将浮点值的一定边距视为相同(由于浮点值的内部表示方式存在技术限制；应避免，因为此选项可能会对性能产生负面影响 |
+| `_ignoreCase` | `String` | 忽略字符串的大小写，例如值 `time` 匹配 `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | 为 `float` 值应视为相同(由于内部代表了 `float` 值；应避免，因为此选项可能会对性能产生负面影响 |
 
 借助逻辑运算符，表达式可以组合到集合中(`_logOp`):
 
@@ -513,7 +511,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 过滤器定义(作为 `filter` 参数)包含：
 
-* 每个字段的子定义(可通过其名称访问该字段，例如， `lastName` 的 `lastName` 字段)
+* 每个字段的子定义(可通过其名称访问该字段，例如， `lastName` 的 `lastName` 字段
 * 每个子定义都包含 `_expressions` 数组，提供表达式集和 `_logOp` 定义表达式应与
 * 每个表达式由值(`value` 字段)和运算符(`_operator` 字段)的内容应与
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* 分页需要稳定的排序顺序才能在请求同一结果集的不同页面的多个查询中正常工作。 默认情况下，它使用结果集中每个项目的存储库路径，以确保顺序始终相同。 如果使用不同的排序顺序，并且无法在jcr查询级别完成排序，则会对性能产生负面影响，因为在确定页面之前，必须将整个结果集加载到内存中。
+>* 分页需要稳定的排序顺序才能在请求同一结果集的不同页面的多个查询中正常工作。 默认情况下，它使用结果集中每个项目的存储库路径，以确保顺序始终相同。 如果使用不同的排序顺序，并且无法在JCR查询级别完成排序，则会对性能产生负面影响，因为在确定页面之前必须将整个结果集加载到内存中。
 >
->* 偏移越大，从完整的jcr查询结果集中跳过项目所需的时间就越长。 对于大型结果集，另一种解决方案是将分页查询与 `first` 和 `after` 方法。
+>* 偏移越大，从完整的JCR查询结果集中跳过项目所需的时间就越长。 对于大型结果集，另一种解决方案是将分页查询与 `first` 和 `after` 方法。
 
 
 ### 分页查询 — 首次和之后 {#paginated-first-after}

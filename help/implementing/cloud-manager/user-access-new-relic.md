@@ -2,7 +2,7 @@
 title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 9089c66a2fdb5a05eb888e2af736862aff1b7a11
+source-git-commit: abc3be85679724fd4a8ce1ddcbd2ac5cca151953
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 99%
@@ -10,7 +10,7 @@ ht-degree: 99%
 ---
 
 
-# 新遗迹一号 {#user-access}
+# New Relic One {#user-access}
 
 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 

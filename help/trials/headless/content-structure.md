@@ -4,8 +4,8 @@ description: 了解如何使用 AEM 的内容片段模型创建用作所有 Head
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 63b3eccbe1fb4c4b4c61a30f75f10d749635f095
-workflow-type: ht
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 100%
 

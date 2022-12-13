@@ -3,7 +3,7 @@ title: AEM Headless 的反向链接筛选条件
 description: Adobe Experience Manager 的反向链接筛选条件实现了从第三方主机的访问。对于 Headless 应用程序，需要反向链接筛选条件的 OSGi 配置来启用对 GraphQL 端点的访问。
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
+source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 69%

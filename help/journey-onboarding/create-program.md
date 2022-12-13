@@ -3,7 +3,7 @@ title: 创建程序
 description: 了解如何使用 Cloud Manager 创建您的第一个程序。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
+source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 91%

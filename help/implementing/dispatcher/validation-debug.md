@@ -3,7 +3,7 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 3915e0f281731928b8d918e741235f8bef41c885
+source-git-commit: 21447e625d418bbb3f96c08991294e66659f7f51
 workflow-type: tm+mt
 source-wordcount: '2701'
 ht-degree: 1%

@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
+source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
 workflow-type: tm+mt
 source-wordcount: '3820'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -158,12 +158,12 @@ ht-degree: 99%
       + [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知用户组](/help/journey-onboarding/user-groups.md)
-+ AEMaCS试用版 {#trials}
-   + 无头试验 {#headless}
-      + [自定义React示例应用程序中的内容](/help/trials/headless/customize-app.md)
-      + [为应用程序创建内容结构](/help/trials/headless/content-structure.md)
-      + [创建无头内容](/help/trials/headless/create-content.md)
-      + [通过GraphQL API提取内容](/help/trials/headless/extract-content.md)
++ AEMaaCS 试用 {#trials}
+   + Headless 试用 {#headless}
+      + [在示例 React 应用程序中自定义内容](/help/trials/headless/customize-app.md)
+      + [为您的应用程序创建内容结构](/help/trials/headless/content-structure.md)
+      + [创建 Headless 内容](/help/trials/headless/create-content.md)
+      + [通过 GraphQL API 提取内容](/help/trials/headless/extract-content.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
@@ -223,7 +223,7 @@ ht-degree: 99%
       + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + 站点 {#sites}
    + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
-   + [对 AEM Cloud Service 中的AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
+   + [对 AEM Cloud Service 中的 AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
    + 创作 {#authoring}
       + 入门 {#getting-started}
          + [创作页面快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md)

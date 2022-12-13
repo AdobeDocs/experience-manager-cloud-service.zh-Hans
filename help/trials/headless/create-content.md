@@ -4,8 +4,8 @@ description: 使用您之前创建的内容片段模型来创建可用于页面�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 63b3eccbe1fb4c4b4c61a30f75f10d749635f095
-workflow-type: ht
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
 
