@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 100%
+source-wordcount: '1400'
+ht-degree: 97%
 
 ---
 
@@ -16,6 +16,11 @@ ht-degree: 100%
 针对 Headless 的 AEM 试用预加载了一个简单的 React 应用程序来显示 Headless 内容。在本模块中，您将了解如何预览该应用程序，以及如何通过交换图像并为其创建购物时刻来修改其内容。
 
 该应用程序本身基于内容片段的结构。您可以使用 AEM 中的内容片段编辑器来修改您的应用程序内容。为了帮助您了解如何执行此操作，AEM 试用版的本模块将通过一个快速的交互式导览引导您完成这一过程。本文档旨在对交互式导览进行补充，其中涵盖了相同的步骤，并会在适当时链接到其他资源。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="自定义React应用程序示例中的内容"
+>abstract="我们已设置了一个现代化的React应用程序，您可以使用该应用程序了解如何使用无头功能集自定义内容。"
 
 ## 内容片段编辑器 {#fragment-editor}
 

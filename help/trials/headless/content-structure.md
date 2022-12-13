@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的内容片段模型创建用作所有 Head
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1149'
+ht-degree: 90%
 
 ---
 
@@ -16,6 +16,21 @@ ht-degree: 100%
 您可使用内容片段设计、创建、管理和发布独立于页面的内容。通过使用内容片段，您可以准备可在多个位置和多个渠道上使用且非常适合于 Headless 投放的内容。内容片段模型可用于定义此内容的结构，要管理您的 Headless 内容，必须先创建这些模型。
 
 为了帮助您了解如何执行此操作，AEM 试用的本模块将通过一个快速的交互式导览（首先创建模型，然后添加其结构）引导您完成这一过程。本文档旨在对产品内导览进行补充，其中涵盖了相同的步骤，并会在适当时链接到其他资源。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
+>title="启动模型编辑器"
+>abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器将结构元素添加到该模型项。<br><br>单击下面的可在新选项卡中启动该功能，然后按照本学习文档创建您的第一个内容片段。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
+>title="启动模型编辑器"
+>abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器将结构元素添加到该模型项。\n\n单击下面的以在新选项卡中启动该功能，然后按照本学习文档创建您的第一个内容片段。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="为您的应用程序创建内容结构"
+>abstract="跟着我们的交互式指南系列，您将学习如何创建作为无头内容基础的结构（也称为内容片段模型）。"
 
 ## 内容片段模型控制台 {#content-fragment-model-console}
 

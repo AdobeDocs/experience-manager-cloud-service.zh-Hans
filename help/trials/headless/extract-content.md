@@ -4,9 +4,9 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,11 @@ GraphQL 提供了基于查询的 API，可让外部客户端应用程序使用�
 >[!TIP]
 >
 >如果您想了解有关 GraphQL API 的更多详细信息，请参阅本模块末尾的[“其他资源”部分](#additional-resources)，查看 GraphQL API 指南。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="使用 GraphQL API 提取内容"
+>abstract="在本模块中，您将学习如何使用内容片段和 GraphQL API 作为无头内容管理系统。"
 
 ## GraphQL Explorer {#graphql-explorer}
 

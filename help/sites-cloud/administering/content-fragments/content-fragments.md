@@ -4,9 +4,9 @@ description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
-source-wordcount: '2109'
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+workflow-type: tm+mt
+source-wordcount: '2070'
 ht-degree: 100%
 
 ---
@@ -88,11 +88,6 @@ ht-degree: 100%
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
 >有关详细信息，另请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="为您的应用程序创建内容结构"
->abstract="跟着我们的交互式指南系列，您将学习如何创建作为无头内容基础的结构（也称为内容片段模型）。"
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 

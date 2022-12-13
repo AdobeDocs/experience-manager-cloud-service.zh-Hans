@@ -4,9 +4,9 @@ description: 使用您之前创建的内容片段模型来创建可用于页面�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '814'
 ht-degree: 100%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 100%
 # 创建 Headless 内容 {#create-content}
 
 通过遵循产品内学习模块，了解如何使用[您之前创建的内容片段模型](content-structure.md)来创建可用于页面创作或作为 Headless 内容基础的内容。本文档旨在对交互式导览进行补充，其中涵盖了相同的步骤，并会在适当时链接到其他资源。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="新建内容"
+>abstract="基于您在模块 1 中创建的模型，您将学习如何创建可用于页面创作或作为无头内容基础的内容。"
 
 ## 内容片段 {#introduction}
 
