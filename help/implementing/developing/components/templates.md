@@ -2,9 +2,9 @@
 title: 页面模板
 description: 创建将用作新页面基础的页面时，会使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3300'
 ht-degree: 9%
 
 ---
@@ -357,7 +357,7 @@ When creating a new editable template, the value is copied from the template typ
 1. 像创建任何页面模板一样创建模板 [如此处所述](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)，用作模板类型的基础。
 1. 使用CRXDE Lite，从 `templates` 节点 `template-types` 节点下 [模板文件夹](#template-folders).
 1. 从 `templates` 节点下 [模板文件夹](#template-folders).
-1. 在位于 `template-types` 节点，删除全部 `cq:template` 和 `cq:templateType` `jcr:content` 属性。
+1. 在位于 `template-types` 节点，删除全部 `cq:template` 和 `cq:templateType` 全部属性 `jcr:content` 节点。
 
 您还可以使用GitHub上提供的可编辑模板示例作为基础，开发您自己的模板类型。
 
