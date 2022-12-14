@@ -2,9 +2,9 @@
 title: 在 AEM 中编辑外部 SPA
 description: 本文档介绍了将独立SPA上传到AEM实例、添加内容的可编辑部分以及启用创作的建议步骤。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2456'
 ht-degree: 1%
 
 ---
@@ -358,6 +358,10 @@ mvn clean install -PautoInstallSinglePackage
 1. 在AEM中验证是否编辑页面。
 
    * 将项目部署到AEM并导航到新创建的 `test` 页面。 现在会呈现页面内容，并且AEM组件可编辑。
+
+## 框架限制 {#framework-limitations}
+
+RemotePage组件希望该实施提供与资产清单类似的资产清单 [此处找到。](https://github.com/shellscape/webpack-manifest-plugin) 但是， RemotePage组件仅经过测试，可与React框架（以及通过远程页面下一个组件的Next.js）配合使用，因此不支持从其他框架(如Angular)远程加载应用程序。
 
 ## 其他资源 {#additional-resources}
 
