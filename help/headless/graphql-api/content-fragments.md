@@ -3,7 +3,7 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 58%
@@ -245,7 +245,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 | 多行文本 | 字符串, [字符串] | 用于输出文本，例如文章的正文 |
 | 数字 | 浮点，[浮点] | 用于显示浮点数和常规数字 |
 | 布尔型 |  布尔型 | 用于显示复选框 → 简单的 true/false 语句 |
-| 日期和时间 | 日程表 | 用于显示日期和时间，使用 ISO 8086 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
+| 日期和时间 | 日程表 | 用于显示日期和时间，使用 ISO 8601 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
 | 枚举 | 字符串 | 用于显示在模型创建时定义的选项列表中的选项 |
 | 标记 | [字符串] | 用于显示表示在 AEM 中所用标记的字符串列表 |
 | 内容引用 | 字符串, [字符串] | 用于显示指向 AEM 中其他资源的路径 |
