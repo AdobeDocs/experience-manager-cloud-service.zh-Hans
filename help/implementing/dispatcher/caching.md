@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: df892e49307a5c125016f3b21e4b5551020eb2b6
+source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2833'
 ht-degree: 2%
 
 ---
@@ -220,7 +220,10 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 
 ### 在激活/停用期间使调度程序缓存失效 {#cache-activation-deactivation}
 
-与AEM的先前版本一样，发布或取消发布页面会从调度程序缓存中清除内容。 如果怀疑存在缓存问题，客户应重新发布相关页面，并确保虚拟主机与 `ServerAlias` localhost，Dispatcher缓存失效所必需的。
+与AEM的先前版本一样，发布或取消发布页面会从调度程序缓存中清除内容。 如果怀疑存在缓存问题，则应重新发布相关页面，并确保虚拟主机与 `ServerAlias` localhost，Dispatcher缓存失效所必需的。
+
+>[!NOTE]
+>为了使调度程序正常失效，请确保“127.0.0.1”、“localhost”、“.local”、“.adobeaemcloud.com”和“.adobeemcloud.net”的请求都由vhost配置进行匹配和处理，以便能够提供这些请求。 为此，可以在全包主机配置中，通过在引用中的模式后进行全局匹配“*” [AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) 或者，确保某个vhost捕获了之前提到的列表。
 
 当发布实例收到作者提供的页面或资产的新版本时，它会使用刷新代理使其Dispatcher上的相应路径失效。 更新的路径将从调度程序缓存及其父缓存中删除，最高级别为(您可以使用 [stafileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
