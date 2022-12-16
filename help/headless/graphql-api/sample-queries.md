@@ -3,10 +3,10 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -1652,24 +1652,24 @@ query {
 
 #### 公司 {#fragment-company}
 
-| 公司名称 | 首席执行官 | 员工 |
+| 公司名称 | CEO | 员工 |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | 史蒂夫·乔布斯 | Joe Smith<br>Abe Lincoln |
+| 小马公司 | Adam Smith | Lara Croft<br>Cutter Slade |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### 人员 {#fragment-person}
 
 | 姓名 | 名字 | 奖励 |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |   |
-| Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |   |   |
-| Smith | Joe |   |
-| Croft | Lara | Gamestar |
-| Caulfield | Max | Gameblitz |
-| Jobs | Steve |   |
+| Lincoln | 阿部 |  |
+| Smith | Adam |  |
+| Slade | 刀具 | 加梅布利茨<br>Gamestar |
+| Marsh | 杜克 |  |
+| Smith | 乔 |  |
+| Croft | 拉拉 | Gamestar |
+| Caulfield | 最大 | Gameblitz |
+| 作业 | Steve |  |
 
 #### 奖励 {#fragment-award}
 
@@ -1685,8 +1685,8 @@ query {
 |--- |--- |--- |--- |
 | 巴塞尔 | 瑞士 | 172258 | city:emea |
 | 柏林 | 德国 | 3669491 | city:capital<br>city:emea |
-| 布加勒斯特 | 罗马尼亚 | 1821000 |  city:capital<br>city:emea |
-| 圣弗朗西斯科 | 美国 |  883306 |  city:beach<br>city:na |
-| 圣何塞 | 美国 |  102635 | city:na |
+| 布加勒斯特 | 罗马尼亚 | 1821000 | city:capital<br>city:emea |
+| 圣弗朗西斯科 | 美国 | 883306 | city:beach<br>city:na |
+| 圣何塞 | 美国 | 102635 | 城市：纳 |
 | 斯图加特 | 德国 | 634830 | city:emea |
-| 苏黎世 | 瑞士 | 415367 |  城市：资本<br>城市：emea |
+| 苏黎世 | 瑞士 | 415367 | city:capital<br>city:emea |

@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1442'
 ht-degree: 2%
 
 ---
@@ -126,15 +126,39 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 您可以使用文档操作API将PDF文档转换为符合PDF/A的文档，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
 
+## 文档实用程序
+
+文档实用程序同步API可帮助您在PDF和XDP文件格式之间转换文档，以及查询有关PDF文档的信息。 例如，您可以确定PDF文档是否包含注释或附件。
+
+### 检索PDF文档属性
+
+您可以 [查询PDF文档](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) 以下信息：
+
+* 是PDF文档：检查源文档是否为PDF文档。
+* 是可填写表单：检查源PDF文档是否为可填写表单。
+* 表单类型：检索文档的表单类型。
+* 检查附件：检查源PDF文档是否包含任何附件。
+* 检查注释：检查源PDF文档是否包含任何审阅注释。
+* 是PDF包：检查文档是否为PDF包。
+* 获取PDF版本：检索 [PDF文档的版本](https://en.wikipedia.org/wiki/History_of_PDF).
+* 推荐的Acrobat版本：检索所需的Acrobat版本(Reader)以打开PDF文档。
+* 是XFA文档：检查源PDF文档是否是基于XFA的PDF文档。
+* 是ShellPDF:检查源PDF文档是否为ShellPDF。 ShellPDF仅包含XFA流、字体和图像资源，并且一个页面为空或包含警告，指出必须使用Acrobat或Adobe Reader打开文档。 外壳PDF与PDF转换一起使用，以仅优化PDFForm转换的交付。
+* 获取XFA版本：检索 [基于XFA的PDF文档的XFA版本](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### 将PDF文档转换为XDP文档
+
+的 [PDF到XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) 将PDF文档转换为XDP文件。 要将PDF文档成功转换为XDP文件，PDF文档必须在字典中包含XFA流。
+
 ## 通信API的类型
 
 通信为按需和批量文档生成提供了HTTP API:
 
-* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于按需、低延迟和单记录文档生成场景。 这些API更适合基于用户操作的用例。 例如，在用户完成填写表单后生成文档。
+* **[同步API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 适用于按需、低延迟和单记录文档生成场景。 这些API更适合基于用户操作的用例。 例如，在用户完成填写表单后生成文档。
 
-* **[批量API（异步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 适用于计划、高吞吐量和多文档生成场景。 这些API可批量生成文档。 例如，每月生成的电话账单、信用卡报表和福利报表。
+* **[批量API（异步API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 适用于计划、高吞吐量和多文档生成场景。 这些API可批量生成文档。 例如，每月生成的电话账单、信用卡报表和福利报表。
 
-## 入门
+## 新用户引导
 
 通信功能可作为Formsas a Cloud Service用户的独立附加模块使用。 您可以联系Adobe销售团队或Adobe代表以请求获取访问权限。 Adobe 可为贵企业开启访问通道，并为您指定的管理员提供各种所需权限。 管理员可以向贵组织的Formsas a Cloud Service开发人员（用户）授予使用API的访问权限。
 
