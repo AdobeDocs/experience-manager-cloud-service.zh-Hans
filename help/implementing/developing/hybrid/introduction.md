@@ -2,9 +2,9 @@
 title: SPA 简介和演练
 description: 本文介绍了SPA的概念，并演示了如何使用基本的SPA应用程序进行创作，其中显示了它与基础AEM SPA编辑器的关系。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '2076'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,18 @@ SPA编辑器提供了一个全面的解决方案，可在AEM中支持SPA。 本�
 
 本介绍和演练的目标是向AEM开发人员演示SPA的相关性、其通常工作方式、AEM SPA编辑器如何处理SPA，以及它与标准AEM应用程序有何不同。
 
-演练基于标准AEM功能和示例WKND SPA项目应用程序。 请跟进 [在此处，可从GitHub下载并安装示例WKND SPA项目应用程序。](https://github.com/adobe/aem-guides-wknd-spa)
+## 要求 {#requirements}
+
+演练基于标准AEM功能和示例WKND SPA项目应用程序。 要完成此演练，您必须具备以下功能。
+
+* [AEMaCS的最新开发SDK](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * 它应作为本地开发环境运行。
+   * 您必须拥有系统的管理员权限。
+* [GitHub上提供的WKND SPA项目应用程序示例](https://github.com/adobe/aem-guides-wknd-spa)
+   * 下载 [最新版本的React应用程序](https://github.com/adobe/aem-guides-wknd-spa/releases) 命名为类似于 `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * 下载 [应用程序的最新示例图像](https://github.com/adobe/aem-guides-wknd-spa/releases) 命名为类似于 `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [使用包管理器](/help/implementing/developing/tools/package-manager.md) 要像在AEM中安装任何其他包一样安装这两个包。
+   * 在本演练中，无需使用Maven安装应用程序。
 
 >[!CAUTION]
 >
