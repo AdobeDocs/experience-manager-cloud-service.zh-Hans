@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1149'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
 >title="启动模型编辑器"
->abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器将结构元素添加到该模型项。<br><br>单击下面的可在新选项卡中启动该功能，然后按照本学习文档创建您的第一个内容片段。"
+>abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器向其中添加结构元素。<br><br>单击下方以在新选项卡中启动该功能，然后按照此学习文档创建您的第一个内容片段。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
 >title="启动模型编辑器"
->abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器将结构元素添加到该模型项。\n\n单击下面的以在新选项卡中启动该功能，然后按照本学习文档创建您的第一个内容片段。"
+>abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器向其中添加结构元素。\n\n单击下方以在新选项卡中启动该功能，然后按照此学习文档创建您的第一个内容片段。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
