@@ -4,9 +4,9 @@ description: Adobe Experience Manager 的反向链接筛选条件实现了从第
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 69%
 
 Adobe Experience Manager 的反向链接筛选条件实现了从第三方主机的访问。
 
-需要反向链接过滤器的OSGi配置，才能通过HTTPPOST访问无头应用程序的GraphQL端点。 使用通过HTTPGET访问AEM的AEM无头持久化查询时，不需要反向链接过滤器配置。
+需要反向链接筛选条件的 OSGi 配置，来通过 HTTP POST 启用对 Headless 应用程序 GraphQL 端点的访问。使用通过 HTTP GET 访问 AEM 的 AEM Headless P持久查询时，不需要反向链接筛选条件配置。
 
 >[!WARNING]
-> AEM反向链接过滤器不是OSGi配置工厂，这意味着每次在AEM服务上只有一个配置处于活动状态。 尽量避免添加自定义反向链接过滤器配置，因为这将覆盖AEM本机配置，并可能会破坏产品功能。
+> AEM 的反向链接筛选条件不是 OSGi 配置工厂，这意味着一次只有一个配置在 AEM 服务上处于活动状态。如果可能，请避免添加自定义反向链接筛选条件配置，因为这会覆盖 AEM 的本机配置，并可能破坏产品功能。
 
 此操作可通过为满足下列条件的反向链接筛选条件添加相应的 OSGi 配置来完成：
 
