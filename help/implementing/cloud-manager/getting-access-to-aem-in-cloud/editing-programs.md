@@ -3,9 +3,9 @@ title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '513'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 87%
 
 1. 在&#x200B;**上线设置**&#x200B;选项卡，修改程序的计划上线日期。
 
-   选择![编辑上线设置](assets/edit-program-go-live.png)
+   ![编辑上线设置](assets/edit-program-go-live.png)
 
    * 此日期仅供参考，并触发程序概述页面上的“上线”构件，及时提供 AEM as a Cloud Service 最佳实践文档的产品内链接，配合您的入门培训历程，最终获得成功、顺利的上线体验。
 
@@ -56,11 +56,11 @@ ht-degree: 87%
 
 无论何时编辑程序，包括添加或删除解决方案或插件，这些更改都将在下次部署后生效。
 
-如果您的生产计划已启用增强的安全性，则 **增强的安全性** 选项卡 **编辑程序** 窗口，确认该功能对程序处于活动状态。
+如果您的生产程序启用了增强安全性，则&#x200B;**编辑程序**&#x200B;窗口中将提供一个额外的&#x200B;**增强安全性**&#x200B;选项卡以确认该程序的功能已激活。
 
-![增强了程序的活动安全性](assets/edit-program-enhanced.png)
+![程序的增强安全性激活](assets/edit-program-enhanced.png)
 
-创建程序后，无法修改此设置。 有关增强的安全选项的更多信息，请参阅 [创建生产程序](creating-production-programs.md) 文档。
+一旦创建了程序，就不能修改此设置。有关增强安全选项的更多信息，请参阅[创建生产程序](creating-production-programs.md)文档。
 
 ## 删除沙盒程序 {#delete-sandbox-program}
 
