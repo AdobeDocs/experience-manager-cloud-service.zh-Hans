@@ -3,9 +3,9 @@ title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -36,22 +36,22 @@ ht-degree: 80%
 
 1. 在“创建程序向导”中，选择&#x200B;**设置生产**。 
 
-   1. 您可以接受默认项目名称或对其进行编辑。
-   1. 您可以选择拖放缩略图以标识您的项目。
+   1. 您可以接受或编辑默认程序名。
+   1. 您可以选择拖放缩略图图像来标识您的程序。
    1. 点按或单击&#x200B;**继续**。
 
    ![创建程序向导](assets/create-production-program.png)
 
-1. 如果您增强了安全权限，则 **增强的安全性** 选项卡 **启用增强的安全性** 生产计划。 如果需要，请勾选用于启用增强安全性的选项，然后点按或单击 **继续**.
+1. 如果您拥有增强安全性授权，**增强安全性**&#x200B;选项卡将为您的作品提供&#x200B;**启用增强安全性**&#x200B;选项程序。如果需要，请选中启用增强安全性的选项，然后点击或单击&#x200B;**继续**。
 
-   * 在程序创建后，无法启用或禁用增强的安全性。
-   * [了解更多](https://www.adobe.com/go/hipaa-ready) 关于Adobe的HIPAA就绪解决方案实施。
+   * 程序创建后无法启用或禁用“增强安全性”。
+   * [详细了解](https://www.adobe.com/go/hipaa-ready_cn) Adobe 的 HIPAA 就绪解决方案实施。
 
-   ![增强的安全选项](assets/create-production-program-enhanced.png)
+   ![增强安全性选项](assets/create-production-program-enhanced.png)
 
 1. 在&#x200B;**解决方案和插件** 选项卡，选择要包含在程序中的解决方案。
 
-   * 如果您选择了 **启用增强的安全性** 以前，您只能选择HIPAA授权可用的任意数量的解决方案。
+   * 如果您之前选择了&#x200B;**启用增强安全性**，您将只能选择 HIPAA 权利可用的解决方案。
 
    ![选择解决方案](assets/setup-prod-select.png)
 
