@@ -3,9 +3,9 @@ title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: abc3be85679724fd4a8ce1ddcbd2ac5cca151953
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1607'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe 非常重视应用程序的监控、可用性和性能。 AEM as a Cloud S
 
 AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
-* 直接访问专用的New Relic One帐户
+* 直接访问专用的 New Relic One 帐户
 
 * 检测了 New Relic One APM 代理，该代理使用行号显示准确的方法调用，包括外部依赖项和数据库
 
@@ -150,7 +150,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 * 添加到 New Relic 的用户将属于&#x200B;**受限**&#x200B;类型。有关详细信息，请参阅 [New Relic 文档。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service 仅提供 New Relic One APM 解决方案，不支持警报、日志记录或 API 集成。
 
-有关您的 AEM as a Cloud Service 程序的 New Relic One 产品的更多帮助或更多指导，请通过 [AEM 支持门户](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)打开支持请求工单。
+有关您的 AEM as a Cloud Service 程序的 New Relic One 产品的更多帮助或更多指导，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持请求工单。
 
 ## 关于 New Relic One 的常见问题 {#faqs}
 
