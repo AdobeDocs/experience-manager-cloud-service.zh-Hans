@@ -2,12 +2,13 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '1003'
+ht-degree: 96%
 
 ---
+
 
 # 构建环境 {#build-environment}
 
@@ -225,3 +226,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 >[!NOTE]
 >
 >通过此方式安装系统包并不会将它安装在用于运行 Adobe Experience Manager 的运行时环境中。 如果您需要在 AEM 环境中安装系统包，请联系您的 Adobe 代表。
+
+>[!TIP]
+>
+>有关前端构建环境的详细信息，请参阅此文档 [使用前端管道开发站点。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)

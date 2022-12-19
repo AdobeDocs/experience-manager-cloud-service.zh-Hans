@@ -1,13 +1,14 @@
 ---
 title: 使用前端管道开发站点
-description: 利用前端管道，使前端开发者获得更大的独立性，使开发过程获得大量的速度。
+description: 利用前端管道，使前端开发者获得更大的独立性，使开发过程获得大量的速度。 本文档介绍了前端构建过程中应考虑的一些特定注意事项。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 2%
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
+
 
 # 使用前端管道开发站点 {#developing-site-with-front-end-pipeline}
 
@@ -16,6 +17,20 @@ ht-degree: 2%
 >[!TIP]
 >
 >如果您还不熟悉如何使用前端管道及其带来的好处，请查看 [快速网站创建历程](/help/journey-sites/quick-site/overview.md) 例如，如何快速部署新站点并自定义其主题，使其完全独立于后端开发。
+
+## 前端构建合同 {#front-end-build-contract}
+
+与 [全栈构建环境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有其自己的环境。 只要遵循以下前端构建合同，开发人员就可以在此管道中实现一些灵活性。
+
+前端管道要求前端Node.js项目使用 `build` 脚本指令，以生成将由前端管道部署的内部版本。 例如，Cloud Manager使用命令 `npm run build` 生成可部署项目 `dist` 文件夹。
+
+的内容 `dist` 文件夹是从Cloud Manager管道最终部署到AEMas a Cloud Service的内容。
+
+### 节点版本 {#node-versions}
+
+默认情况下，前端管道使用节点14，但也提供16和16。
+
+您可以使用 `CM_CUSTOM_VAR_NODE_VERSION` 环境变量来设置所需的版本。
 
 ## 单一真相来源 {#single-source-of-truth}
 

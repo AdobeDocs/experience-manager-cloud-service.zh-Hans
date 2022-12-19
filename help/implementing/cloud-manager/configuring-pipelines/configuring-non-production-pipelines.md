@@ -3,12 +3,13 @@ title: 配置非生产管道
 description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1177'
 ht-degree: 100%
 
 ---
+
 
 # 配置非生产管道 {#configuring-non-production-pipelines}
 
@@ -145,6 +146,12 @@ Web 层配置管道部署 HTTPD/Dispatcher 配置。 有关此类型管道的详
 >如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
+
+## 使用前端管道开发站点 {#developing-with-front-end-pipeline}
+
+有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
+
+请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
 
 ## 跳过 Dispatcher 程序包 {#skip-dispatcher-packages}
 
