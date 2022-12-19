@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
->title="自定义React应用程序示例中的内容"
->abstract="我们已设置了一个现代化的React应用程序，您可以使用该应用程序了解如何使用无头功能集自定义内容。"
+>title="在示例 React 应用程序中自定义内容"
+>abstract="我们已经建立了一个现代 React 应用程序，您可以使用它学习如何使用 Headless 功能集定制内容。"
 
 ## 内容片段编辑器 {#fragment-editor}
 
@@ -155,7 +155,7 @@ ht-degree: 97%
    * 设置 X 和 Y 来确定将覆盖购物时刻的位置。
       * **X**：`-18`
       * **Y**：`-28`
-   * 编辑器将自动保存对片段进行的更改
+   * 编辑器将自动保存对片段进行的更改。
 
    ![编辑购物时刻](assets/customize-app/edit-shoppable-moment.png)
 
