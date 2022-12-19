@@ -4,9 +4,9 @@ description: 了解如何使用 Cloud Manager 创建您的第一个程序。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
 >[!TIP]
 >
->如果需要创建生产程序，请参阅 [其他资源](#additional-resources) 部分，以获取详细描述程序的文档链接。
+>如果您需要创建生产程序，请参阅[其他资源](#additional-resources)部分，获取详细描述程序的文档链接。
 
 ## 创建沙盒程序 {#create-sandbox}
 
@@ -75,4 +75,4 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 * [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) – 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。
 * [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) – 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 * [使用 Adobe Cloud Manager – 程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) – 程序代表支持业务计划逻辑集的 AEM 环境集，通常与购买的服务水平协议 (SLA) 相对应。
-* [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)  — 了解AEMas a Cloud Service团队和产品配置文件如何授予和限制对您的授权Adobe解决方案的访问权限。
+* [AEM as a Cloud Service 团队和生产简介](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品简介，以及如何授予和限制对您许可的 Adobe 解决方案的访问权限。
