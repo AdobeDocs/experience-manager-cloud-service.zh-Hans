@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1136'
 ht-degree: 2%
 
 ---
@@ -126,29 +126,31 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 您可以使用文档操作API将PDF文档转换为符合PDF/A的文档，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
 
-## 文档实用程序
+<!-- 
 
-文档实用程序同步API可帮助您在PDF和XDP文件格式之间转换文档，以及查询有关PDF文档的信息。 例如，您可以确定PDF文档是否包含注释或附件。
+## Document utilities
 
-### 检索PDF文档属性
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
 
-您可以 [查询PDF文档](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) 以下信息：
+### Retrieve PDF document properties
 
-* 是PDF文档：检查源文档是否为PDF文档。
-* 是可填写表单：检查源PDF文档是否为可填写表单。
-* 表单类型：检索文档的表单类型。
-* 检查附件：检查源PDF文档是否包含任何附件。
-* 检查注释：检查源PDF文档是否包含任何审阅注释。
-* 是PDF包：检查文档是否为PDF包。
-* 获取PDF版本：检索 [PDF文档的版本](https://en.wikipedia.org/wiki/History_of_PDF).
-* 推荐的Acrobat版本：检索所需的Acrobat版本(Reader)以打开PDF文档。
-* 是XFA文档：检查源PDF文档是否是基于XFA的PDF文档。
-* 是ShellPDF:检查源PDF文档是否为ShellPDF。 ShellPDF仅包含XFA流、字体和图像资源，并且一个页面为空或包含警告，指出必须使用Acrobat或Adobe Reader打开文档。 外壳PDF与PDF转换一起使用，以仅优化PDFForm转换的交付。
-* 获取XFA版本：检索 [基于XFA的PDF文档的XFA版本](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+You can [query a PDF document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) for the following information:
 
-### 将PDF文档转换为XDP文档
+* Is a PDF Document: Check whether the source document is a PDF document.
+* Is a fillable form: Check whether the source PDF document is a fillable form.
+* Form Type: Retrieve the form type of the document.
+* Check for Attachments: Check whether the source PDF document has any attachments.
+* Check for Comments: Check whether the source PDF document has any review comments.
+* Is a PDF Package: Check whether the document is a PDF package.
+* Get the PDF Version: Retrieve the [version of the PDF document](https://en.wikipedia.org/wiki/History_of_PDF).
+* Recommended Acrobat Version: Retrieve the required version of Acrobat (Reader) to open the PDF document.
+* Is an XFA Document: Check whether the source PDF document is an XFA-based PDF document.
+* Is Shell PDF: Check whether the source PDF document is shell PDF. A shell PDF contains only an XFA stream, font and image resources, and one page that is either blank or contains a warning that the document must be opened using Acrobat or Adobe Reader. The shell PDF is used with PDF transformation to optimize delivery of PDFForm transformations only.
+* Get the XFA Version: Retrieve the [XFA Version for an XFA-based PDF document](https://en.wikipedia.org/wiki/XFA#XFA_versions).
 
-的 [PDF到XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) 将PDF文档转换为XDP文件。 要将PDF文档成功转换为XDP文件，PDF文档必须在字典中包含XFA流。
+### Convert PDF Documents into XDP Documents
+
+The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
 ## 通信API的类型
 
