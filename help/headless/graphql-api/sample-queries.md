@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 92%
 
 * 一个[示例内容片段结构](#content-fragment-structure-graphql)
 
-* 有些 [示例GraphQL查询](#graphql-sample-queries)，基于示例内容片段结构（内容片段模型和相关内容片段）。
+* 以及一些[示例 GraphQL 查询](#graphql-sample-queries)，基于示例内容片段结构（内容片段模型以及相关的内容片段）。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1121,7 +1121,7 @@ query {
 此示例查询查找：
 
 * 类型为 `article` 的所有内容片段
-* 和 `_path` 和属性 `authorFragment`.
+* 具有 `_path` 和 `authorFragment` 属性。
 
 **示例查询**
 
@@ -1491,7 +1491,7 @@ query {
 
 >[!NOTE]
 >
->这将演示对于没有 [变量](/help/headless/graphql-api/content-fragments.md#variations) 指定名称的。
+>这将演示没有指定名称的[变化](/help/headless/graphql-api/content-fragments.md#variations)的内容片段的回退。
 
 **示例查询**
 
@@ -1543,7 +1543,7 @@ query {
 
 此查询查找：
 
-* (从 *complete* 结果列表
+* 对于最多包含五篇文章的结果页面，从&#x200B;*完整*&#x200B;结果列表中的第五篇文章开始
 
 **示例查询**
 
@@ -1563,11 +1563,11 @@ query {
 }
 ```
 
-### 使用第一个和后面的分页查询示例  {#sample-pagination-first-after}
+### 使用“先”和“后”的示例分页查询  {#sample-pagination-first-after}
 
 此查询查找：
 
-* 对于包含最多5次冒险的结果页面，从 *complete* 结果列表
+* 对于包含最多五次冒险的结果页面，从&#x200B;*完整*&#x200B;结果列表中的给定光标项开始
 
 **示例查询**
 
