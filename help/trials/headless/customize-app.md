@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: ht
-source-wordcount: '1400'
-ht-degree: 100%
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+workflow-type: tm+mt
+source-wordcount: '1481'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="在示例 React 应用程序中自定义内容"
 >abstract="我们已经建立了一个现代 React 应用程序，您可以使用它学习如何使用 Headless 功能集定制内容。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
+>title="启动内容片段编辑器"
+>abstract="针对 Headless 的 AEM 试用预加载了一个简单的 React 应用程序来显示 Headless 内容。应用程序基于内容片段的结构。 使用AEM中的内容片段编辑器，您可以修改应用程序的内容。<br><br>通过单击下面的，在新选项卡中启动该功能，然后按照本指南操作。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="介绍视频的占位符"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="视频缩略图：在Flash中修改应用程序内容"
 
 ## 内容片段编辑器 {#fragment-editor}
 

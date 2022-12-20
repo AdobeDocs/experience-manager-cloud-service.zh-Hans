@@ -4,10 +4,10 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: ht
-source-wordcount: '1216'
-ht-degree: 100%
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+workflow-type: tm+mt
+source-wordcount: '1301'
+ht-degree: 93%
 
 ---
 
@@ -27,6 +27,13 @@ GraphQL 提供了基于查询的 API，可让外部客户端应用程序使用�
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="使用 GraphQL API 提取内容"
 >abstract="在本模块中，您将学习如何使用内容片段和 GraphQL API 作为无头内容管理系统。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
+>title="启动GraphQL Explorer"
+>abstract="GraphQL提供了一个基于查询的API，允许外部客户端应用程序使用单个API调用仅查询AEM所需的内容。 按照本指南了解如何运行两种不同类型的查询，然后从您在上一模块中创建的内容片段中检索内容。<br><br>通过单击下面的，在新选项卡中启动该功能。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="介绍视频的占位符"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="视频缩略图：GraphQL快速内容提取"
 
 ## GraphQL Explorer {#graphql-explorer}
 

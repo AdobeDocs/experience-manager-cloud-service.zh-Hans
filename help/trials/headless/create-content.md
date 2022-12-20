@@ -4,10 +4,10 @@ description: 使用您之前创建的内容片段模型来创建可用于页面�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -19,6 +19,13 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="新建内容"
 >abstract="基于您在模块 1 中创建的模型，您将学习如何创建可用于页面创作或作为无头内容基础的内容。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
+>title="启动内容片段控制台"
+>abstract="在AEM无头CMS中，“内容片段”是指适合预定义结构（称为“内容片段模型”）的所有内容片段。 在此演练中，您将了解如何为内容片段模型创建内容。<br><br>单击下方以在新选项卡中启动该功能，然后按照此学习文档创建您的第一个内容片段。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="介绍视频的占位符"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="视频缩略图：添加内容 — 入选方法"
 
 ## 内容片段 {#introduction}
 
