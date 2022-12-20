@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
+source-wordcount: '2902'
 ht-degree: 2%
 
 ---
@@ -111,10 +111,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 开发人员可以使用 [!DNL Asset Compute Service] to [创建自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 的用例。 [!DNL Experience Manager] 可以使用管理员配置的自定义配置文件从用户界面调用这些自定义应用程序。 [!DNL Asset Compute Service] 支持以下调用外部服务的用例：
 
-* 使用 [!DNL Adobe Photoshop]&#39;s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 并将结果另存为演绎版。
+* 使用 [!DNL Adobe Photoshop]&#39;s [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 并将结果另存为演绎版。
 * 调用第三方系统以更新数据，例如PIM系统。
 * 使用 [!DNL Photoshop] 用于根据Photoshop模板生成各种演绎版的API。
-* 使用 [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) 以优化摄取的资产，并将这些资产另存为演绎版。
+* 使用 [Adobe Lightroom API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 以优化摄取的资产，并将这些资产另存为演绎版。
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 提供以下信息。
 
    * 每个演绎版的文件名和支持的文件扩展名。
-   * [Firefly自定义应用程序的端点URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 应用程序必须来自与Experience Manager帐户相同的组织。
+   * [App Builder自定义应用程序的端点URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 应用程序必须来自与Experience Manager帐户相同的组织。
    * 将服务参数添加到 [将其他信息或参数传递到自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * 包含和排除的MIME类型，可将处理限制为几种特定的文件格式。
 
    单击“**[!UICONTROL 保存]**”。
 
-自定义应用程序是无头的 [萤火虫项目](https://github.com/AdobeDocs/project-firefly) 应用程序。 如果自定义应用程序使用处理配置文件进行设置，则会获取提供的所有文件。 应用程序必须筛选文件。
+自定义应用程序是无头的 [项目应用程序生成器](https://developer.adobe.com/app-builder/docs/overview/) 应用程序。 如果您的自定义应用程序使用处理配置文件进行设置，则会获取提供的所有文件。 应用程序必须筛选文件。
 
 >[!CAUTION]
 >
->如果Firefly应用程序和 [!DNL Experience Manager] 帐户不来自同一组织，因此集成不起作用。
+>如果应用程序生成器应用程序和 [!DNL Experience Manager] 帐户不来自同一组织，因此集成不起作用。
 
 ### 自定义用户档案的示例 {#custom-profile-example}
 
