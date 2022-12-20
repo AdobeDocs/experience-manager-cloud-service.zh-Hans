@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4174'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -101,28 +101,28 @@ GraphQL 使用以下对象：
 
 * **[条目列表](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM提供了将查询（这两种类型）转换为 [可缓存的持久化查询](/help/headless/graphql-api/persisted-queries.md) 调度程序和CDN。
+AEM 提供将查询（两种类型）转换为[持久化查询的功能，可由 Dispatcher 和 CDN 缓存](/help/headless/graphql-api/persisted-queries.md)。
 
-### GraphQL查询最佳实践（Dispatcher和CDN） {#graphql-query-best-practices}
+### GraphQL 查询最佳实践（Dispatcher 和 CND） {#graphql-query-best-practices}
 
-的 [持久化查询](/help/headless/graphql-api/persisted-queries.md) 是否建议在发布实例上使用的方法：
+[持久查询](/help/headless/graphql-api/persisted-queries.md)是推荐用于发布实例的方法：
 
 * 它们被缓存
 * 它们由 AEM as a Cloud Service 集中管理
 
 >[!NOTE]
 >
->通常，创作上没有调度程序/CDN，因此在这里使用持久查询没有任何好处；除了测试它们。
+>通常“作者”上没有 Dispatcher/CDN，因此在那里使用持久查询没有任何好处；除了测试它们。
 
-不建议使用POST请求的GraphQL查询，因为它们未缓存，因此在默认实例上，Dispatcher配置为阻止此类查询。
+不建议使用 POST 请求的 GraphQL 查询，因为它们未缓存，因此在默认实例中，Dispatcher 配置为阻止此类查询。
 
-虽然GraphQL还支持GET请求，但是使用持久查询可以避免的这些请求命中限制（例如URL的长度）。
+虽然 GraphQL 也支持 GET 请求，但这些请求可能会达到限制（例如 URL 的长度），而使用“持久查询”可以避免这些限制。
 
 >[!NOTE]
 >
->要允许在调度程序中直接查询和/或 POST 查询，您可以要求系统管理员：
+>要允许在 Dispatcher 中直接查询和/或 POST 查询，您可以要求系统管理员：
 >
->* 创建 [Cloud Manager环境变量](/help/implementing/cloud-manager/environment-variables.md) 调用 `ENABLE_GRAPHQL_ENDPOINT`
+>* 创建一个名为 `ENABLE_GRAPHQL_ENDPOINT` 的 [Cloud Manager 环境变量](/help/implementing/cloud-manager/environment-variables.md)
 >* 值为 `true`
 
 
@@ -150,9 +150,9 @@ AEM提供了将查询（这两种类型）转换为 [可缓存的持久化查询
 
 权限是访问 Assets 所需的权限。
 
-GraphQL查询是在基础请求的AEM用户权限下执行的。 如果用户没有对某些片段（存储为资产）的读取权限，则这些片段将不会成为结果集的一部分。
+GraphQL 查询是在基础请求的 AEM 用户的许可下执行的。如果用户对某些片段（存储为资产）没有读取权限，它们将不会成为结果集的一部分。
 
-此外，用户需要拥有GraphQL端点的访问权限才能执行GraphQL查询。
+此外，用户需要访问 GraphQL 端点才能执行 GraphQL 查询。
 
 ## 架构生成 {#schema-generation}
 
@@ -168,7 +168,7 @@ GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于�
 >
 >这意味着您需要确保其中没有提供敏感数据，因为这种方式可能会导致泄露；例如，这包括可能在模型定义中作为字段名称呈现的信息。
 
-例如，如果用户创建了一个名为 `Article`，则AEM会生成GraphQL类型 `ArticleModel`. 此类型中的字段对应于在模型中定义的字段和数据类型。此外，它还会为对此类型操作的查询创建一些入口点，例如 `articleByPath` 或 `articleList`.
+例如，如果创建内容片段模型的用户调用 `Article`，则 AEM 生成 GraphQL 类型 `ArticleModel`。此类型中的字段对应于在模型中定义的字段和数据类型。此外，它还为操作此类型的查询创建一些入口点，例如 `articleByPath` 或 `articleList`。
 
 1. 内容片段模型：
 
@@ -181,7 +181,7 @@ GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于�
 
    * 其中三个由用户控制：`author`、`main` 和 `referencearticle`。
 
-   * 其他字段由AEM自动添加，它们代表了提供特定内容片段相关信息的有用方法；在本例中， [辅助字段](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * 其他字段由 AEM 自动添加，表示用于提供有关特定内容片段的有用方法，在本例中为（[帮助程序字段](#helper-fields)）`_path`、`_metadata`、`_variations`。
 
 1. 用户基于 Article 模型创建内容片段之后，可以通过 GraphQL 询问该模型。例如，请参阅[示例查询](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries)（基于[用于 GraphQL 的示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)）。
 
@@ -229,9 +229,9 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 
 * 您生成的字段。
 
-   选择 [数据类型](#Data-types) 用于根据您配置内容片段模型的方式创建字段。 字段名称取自 **属性名称** 字段 **数据类型** 选项卡。
+   使用选择的一组[数据类型](#Data-types)，根据您配置内容片段模型的方式来创建字段。字段名称获取自&#x200B;**数据类型**&#x200B;选项卡的&#x200B;**属性名称**。
 
-   * 还有 **渲染为** 设置时，因为用户可以配置某些数据类型。 例如，通过选择 `multifield` 从下拉菜单中。
+   * 还需要考虑 **呈现为**&#x200B;设置，因为用户可以配置某些数据类型。例如，通过从下拉列表中选择 `multifield`，可以将单行文本字段配置为包含多个单行文本。
 
 * GraphQL for AEM 还生成多个[帮助程序字段](#helper-fields)。
 
@@ -259,12 +259,12 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 #### 路径 {#path}
 
-路径字段用作AEM GraphQL中的标识符。 它代表 AEM 存储库中内容片段资源的路径。我们选择了此作为内容片段的标识符，因为它：
+路径字段用作 AEM GraphQL 中的标识符。它代表 AEM 存储库中内容片段资源的路径。我们选择此项作为内容片段的标识符是因为它：
 
 * 在 AEM 中唯一
 * 可以轻松地提取
 
-以下代码将显示之前基于内容片段模型创建的所有内容片段的路径 `Author`，由WKND教程提供。
+以下代码将显示根据内容片段模型 `Author` 创建的所有内容片段的路径，如 WKND 教程所提供。
 
 ```graphql
 {
@@ -294,7 +294,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 #### 元数据 {#metadata}
 
-通过 GraphQL，AEM 还可以公开内容片段的元数据。元数据是描述内容片段的信息，例如内容片段的标题、缩略图路径、内容片段的描述、创建日期等。
+通过 GraphQL，AEM 还可以公开内容片段的元数据。元数据是描述内容片段的信息，例如内容片段的标题、缩略图路径、内容片段的描述、创建日期等等。
 
 由于元数据通过架构编辑器生成，因此没有特定结构，所以实施了 `TypedMetaData` GraphQL 类型以公开内容片段的元数据。`TypedMetaData` 公开按以下标量类型分组的信息：
 
@@ -359,13 +359,13 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 >[!NOTE]
 >
->请注意， `_variations` 字段不包含 `master` 变量，从技术上讲，是原始数据(引用 *主控* （在UI中）不会被视为显式变体。
+>请注意，`_variations` 字段不包含 `master`变量，从技术上讲是原始数据（在 UI 中称为 *主控变量*）不被视为显式变量。
 
-请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
+请参阅[示例查询 – 具有指定变量的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
 
 >[!NOTE]
 >
->如果内容片段不存在给定的变量，则原始数据(也称为主控变量)将作为（回退）默认值返回。
+>如果内容片段不存在给定的变量，则原始数据（也称为主控变量）将作为（回退）默认值返回。
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -375,7 +375,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 GraphQL 允许在查询中放入变量。有关详细信息，请参阅 [GraphQL 的变量文档](https://graphql.org/learn/queries/#variables)。
 
-例如，要获取类型为 `Author` 在特定变量（如果可用）中，可以指定参数 `variation` 在GraphiQL中。
+例如，要获取具有特定变量（如有）的类型为 `Author` 的所有内容片段，您可以在 GraphiQL 中指定参数 `variation`。
 
 ![GraphQL 变量](assets/cfm-graphqlapi-03.png "GraphQL 变量")
 
@@ -401,9 +401,9 @@ query($variation: String!) {
 }
 ```
 
-此查询将返回完整的作者列表。 没有的作者 `another` 变量将回退到原始数据(`_variation` 将报告 `master` 在本例中)。
+此查询将返回完整的作者列表。没有`another`变量的作者将回退到原始数据（在这种情况下，`_variation` 将报告 `master`）。
 
-如果要将列表限制为提供指定变体的作者（并跳过回退到原始数据的作者），则需要应用 [过滤器](#filtering):
+如果您想将列表限制为提供指定变量的作者（并跳过会回退到原始数据的作者），您需要应用[过滤器](#filtering)：
 
 ```graphql
 query($variation: String!) {
@@ -458,7 +458,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 筛选使用基于逻辑运算符和表达式的语法。
 
-最原子的部分是可应用于特定字段内容的单个表达式。 它会将字段的内容与给定的常数值进行比较。
+最原子的部分是可以应用于特定字段内容的单个表达式。它将字段的内容与给定的常量值进行比较。
 
 例如，表达式
 
@@ -469,55 +469,55 @@ query GetAdventureByType($includePrice: Boolean!) {
 }
 ```
 
-会将字段的内容与值进行比较 `some text` 如果内容等于值，则成功。 否则，表达式将失败。
+会将字段的内容与值 `some text` 进行比较，如果内容等于该值，则成功。否则，表达式将失败。
 
 不为目标组件考虑 
 
 以下运算符可用于将字段与特定值进行比较：
 
-| 运算符 | 类型 | 如果……表达式成功 |
+| 运算符 | 类型 | 如果...，则表达式成功 |
 |--- |--- |--- |
-| `EQUALS` | `String`, `ID`, `Boolean` | ...该值与字段的内容完全相同 |
-| `EQUALS_NOT` | `String`、`ID` | ...值为 *not* 与字段内容相同 |
-| `CONTAINS` | `String` | ...字段的内容包含值(`{ value: "mas", _op: CONTAINS }` 匹配 `Christmas`, `Xmas`, `master`, ...) |
-| `CONTAINS_NOT` | `String` | ...字段的内容会 *not* 包含值 |
-| `STARTS_WITH` | `ID` | ...ID以特定值(`{ value: "/content/dam/", _op: STARTS_WITH` 匹配 `/content/dam/path/to/fragment`，但不是 `/namespace/content/dam/something` |
-| `EQUAL` | `Int`、`Float` | ...该值与字段的内容完全相同 |
-| `UNEQUAL` | `Int`、`Float` | ...值为 *not* 与字段内容相同 |
-| `GREATER` | `Int`、`Float` | ...字段的内容大于值 |
-| `GREATER_EQUAL` | `Int`、`Float` | ...字段的内容大于或等于值 |
-| `LOWER` | `Int`、`Float` | ...字段的内容小于值 |
-| `LOWER_EQUAL` | `Int`、`Float` | ...字段的内容小于或等于 |
-| `AT` | `Calendar`, `Date`, `Time` | ...字段的内容与值（包括时区设置）完全相同 |
-| `NOT_AT` | `Calendar`, `Date`, `Time` | ...字段的内容为 *not* 与值相同 |
-| `BEFORE` | `Calendar`, `Date`, `Time` | ...由值表示的时间点位于由字段内容表示的时间点之前 |
-| `AT_OR_BEFORE` | `Calendar`, `Date`, `Time` | ...由值表示的时间点在由字段内容表示的时间点之前或在时间点处 |
-| `AFTER` | `Calendar`, `Date`, `Time` | ...由值表示的时间点位于由字段内容表示的时间点之后 |
-| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ...由值表示的时间点在以字段内容表示的时间点之后或在同一时间点处 |
+| `EQUALS` | `String`、`ID`、`Boolean` | ... 该值与该字段的内容完全相同 |
+| `EQUALS_NOT` | `String`、`ID` | ... 该值与该字段的内容&#x200B;*不*&#x200B;完全相同 |
+| `CONTAINS` | `String` | ... 字段的内容包含值（`{ value: "mas", _op: CONTAINS }` 将匹配 `Christmas`、`Xmas`、`master`、...） |
+| `CONTAINS_NOT` | `String` | ... 字段的内容&#x200B;*不*&#x200B;包含值 |
+| `STARTS_WITH` | `ID` | ... ID 以特定值开头（`{ value: "/content/dam/", _op: STARTS_WITH` 将匹配 `/content/dam/path/to/fragment`，但不是`/namespace/content/dam/something` |
+| `EQUAL` | `Int`、`Float` | ... 该值与该字段的内容完全相同 |
+| `UNEQUAL` | `Int`、`Float` | ... 该值与该字段的内容&#x200B;*不*&#x200B;完全相同 |
+| `GREATER` | `Int`、`Float` | ... 字段内容大于值 |
+| `GREATER_EQUAL` | `Int`、`Float` | ... 字段的内容大于或等于值 |
+| `LOWER` | `Int`、`Float` | ... 字段内容小于值 |
+| `LOWER_EQUAL` | `Int`、`Float` | ... 字段的内容小于或等于值 |
+| `AT` | `Calendar`, `Date`, `Time` | ... 字段的内容与值完全相同（包括时区设置） |
+| `NOT_AT` | `Calendar`、`Date`、`Time` | ... 字段的内容与值&#x200B;*不*&#x200B;完全相同 |
+| `BEFORE` | `Calendar`、`Date`、`Time` | ... 值表示的时间点在字段内容表示的时间点之前 |
+| `AT_OR_BEFORE` | `Calendar`、`Date`、`Time` | ... 值表示的时间点在字段内容表示的时间点之前或与之相同 |
+| `AFTER` | `Calendar`、`Date`、`Time` | ... 值表示的时间点在字段内容表示的时间点之后 |
+| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... 值表示的时间点在字段内容表示的时间点之后或与之相同 |
 
 某些类型还允许指定其他选项来修改表达式的计算方式：
 
 | 选项 | 类型 | 描述 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 忽略字符串的大小写，例如值 `time` 匹配 `TIME`, `time`, `tImE`, ... |
-| `_sensitiveness` | `Float` | 为 `float` 值应视为相同(由于内部代表了 `float` 值；应避免，因为此选项可能会对性能产生负面影响 |
+| `_ignoreCase` | `String` | 忽略字符串的大小写，例如 `time` 的值将匹配 `TIME`、`time`、`tImE`、... |
+| `_sensitiveness` | `Float` | 允许有一定的余地，将 `float` 值视为相同（以解决由于 `float` 值的内部表示引起的技术限制；应该避免，因为此选项可能有负面影响对性能的影响 |
 
-借助逻辑运算符，表达式可以组合到集合中(`_logOp`):
+表达式可以在逻辑运算符 (`_logOp`) 的帮助下组合成一个集合：
 
-* `OR`  — 如果至少有一个表达式成功，则表达式集将成功
-* `AND`  — 如果所有表达式都成功，则表达式集将成功（默认）
+* `OR` – 如果至少有一个表达式成功，则表达式集将成功
+* `AND` – 如果所有表达式都成功，则表达式集将成功（默认值）
 
-每个字段都可以按其自身的表达式集进行过滤。 筛选器参数中提及的所有字段的表达式集最终将由其自身的逻辑运算符组合。
+每个字段都可以通过其自己的一组表达式进行过滤。过滤器参数中提到的所有字段的表达式集最终将由其自己的逻辑运算符组合。
 
-过滤器定义(作为 `filter` 参数)包含：
+过滤器定义（作为 `filter` 参数传递给查询）包含：
 
-* 每个字段的子定义(可通过其名称访问该字段，例如， `lastName` 的 `lastName` 字段
-* 每个子定义都包含 `_expressions` 数组，提供表达式集和 `_logOp` 定义表达式应与
-* 每个表达式由值(`value` 字段)和运算符(`_operator` 字段)的内容应与
+* 每个字段的子定义（可以通过其名称访问该字段，例如，数据（字段）类型中的 `lastName` 字段的过滤器中有一个 `lastName` 字段）
+* 每个子定义包含 `_expressions` 数组，提供表达式集，以及 `_logOp` 字段，该字段定义表达式应与之组合的逻辑运算符
+* 每个表达式由值（`value` 字段）和运算符（`_operator` 字段）定义，字段的内容应该与
 
-请注意，您可以忽略 `_logOp` 如果要将项目与 `AND` 和 `_operator` 如果要检查是否相等，因为它们是默认值。
+请注意，如果要将项目与 `AND` 组合，则可以省略 `_logOp`；如果要检查是否相等，则可以省略 `_operator`，因为这些是默认值。
 
-以下示例演示了一个完整查询，该查询可筛选具有 `lastName` of `Provo` 或包含 `sjö`，与案例无关：
+以下示例演示了一个完整的查询，该查询过滤所有 `lastName` 为 `Provo` 或包含 `sjö` 的人员，与大小写无关：
 
 ```graphql
 {
@@ -544,7 +544,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 }
 ```
 
-虽然您也可以对嵌套字段进行过滤，但是不建议这样做，因为这可能会导致性能问题。
+虽然您也可以对嵌套字段进行筛选，但不建议这样做，因为这可能会导致性能问题。
 
 有关更多示例，请参阅：
 
@@ -558,16 +558,16 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 ## 排序 {#sorting}
 
-此功能允许您根据指定的字段对查询结果进行排序。
+此功能允许您根据指定字段对查询结果进行排序。
 
-排序条件：
+排序标准：
 
 * 是表示字段路径的逗号分隔值列表
-   * 列表中的第一个字段将定义主排序顺序，如果主排序条件的两个值相等，则使用第二个字段，如果前两个条件相等，则使用第三个字段，等等。
-   * 点线表示法，即字段1.subfield.subfield等……
-* 可选顺序方向
-   * ASC（升序）或DESC（降序）；作为默认ASC的应用
-   * 可以按字段指定方向；这表示您可以按升序对一个字段进行排序，按降序对另一个字段进行排序(name， firstName DESC)
+   * 列表中的第一个字段将定义主要排序顺序，如果主要排序标准的两个值相等，将使用第二个字段，如果前两个标准相等，则使用第三个字段，等等。
+   * 点分符号，即 field1.subfield.subfield 等...
+* 带有可选的订单方向
+   * ASC（升序）或 DESC（降序）；作为默认 ASC 应用
+   * 可以按字段指定方向；这意味着您可以对一个字段按升序排序，对另一个字段按降序排序（姓名，firstName DESC）
 
 例如：
 
@@ -582,7 +582,7 @@ query {
 }
 ```
 
-此外：
+也可以：
 
 ```graphql
 {
@@ -597,7 +597,7 @@ query {
 
 <!-- to be included? -->
 
-您还可以使用 `nestedFragmentname.fieldname`.
+您还可以使用 `nestedFragmentname.fieldname` 的格式对嵌套片段中的字段进行排序。
 
 >[!NOTE]
 >
@@ -623,19 +623,19 @@ query {
 
 ## 分页 {#paging}
 
-此功能允许您对返回列表的查询类型执行分页。 提供了两种方法：
+此功能允许您对返回列表的查询类型执行分页。提供了两种方法：
 
-* `offset` 和 `limit` 在 `List` 查询
-* `first` 和 `after` 在 `Paginated` 查询
+* 在 `List` 查询中的 `offset` 和 `limit`
+* 在 `Paginated` 查询中的 `first` 和 `after`
 
-### 列表查询 — 偏移和限制 {#list-offset-limit}
+### 列表查询 – 偏移和限制 {#list-offset-limit}
 
-在 `...List`查询 `offset` 和 `limit` 返回特定的结果子集：
+在 `...List` 查询中，您可以使用 `offset` 和 `limit` 返回特定的结果子集：
 
-* `offset`:指定要返回的第一个数据集
-* `limit`:指定要返回的数据集的最大数量
+* `offset`：指定要返回的第一个数据集
+* `limit`：指定返回的最大数据集数
 
-例如，要输出包含最多五篇文章的结果页面，请从 *complete* 结果列表：
+例如，要输出最多包含五篇文章的结果页面，从&#x200B;*完整*&#x200B;结果列表中的第五篇文章开始：
 
 ```graphql
 query {
@@ -656,20 +656,20 @@ query {
 
 >[!NOTE]
 >
->* 分页需要稳定的排序顺序才能在请求同一结果集的不同页面的多个查询中正常工作。 默认情况下，它使用结果集中每个项目的存储库路径，以确保顺序始终相同。 如果使用不同的排序顺序，并且无法在JCR查询级别完成排序，则会对性能产生负面影响，因为在确定页面之前必须将整个结果集加载到内存中。
+>* 分页需要稳定的排序顺序才能在请求同一结果集的不同页面的多个查询中正常工作。默认情况下，它使用结果集中每个项目的存储库路径来确保顺序始终相同。如果使用不同的排序顺序，并且如果无法在 JCR 查询级别进行排序，则会对性能产生负面影响，因为在确定页面之前必须将整个结果集加载到内存中。
 >
->* 偏移越大，从完整的JCR查询结果集中跳过项目所需的时间就越长。 对于大型结果集，另一种解决方案是将分页查询与 `first` 和 `after` 方法。
+>* 偏移量越高，从完整的 JCR 查询结果集中跳过项目所需的时间就越多。大型结果集的替代解决方案是使用带有 `first` 和 `after` 方法的分页查询。
 
 
-### 分页查询 — 首次和之后 {#paginated-first-after}
+### 分页查询 – 先和后 {#paginated-first-after}
 
-的 `...Paginated` 查询类型会重新使用 `...List` 查询类型功能（过滤、排序），但不使用 `offset`/`limit` 参数，它使用 `first`/`after` 由定义的参数 [GraphQL游标连接规范](https://relay.dev/graphql/connections.htm). 您可以在 [GraphQL简介](https://graphql.org/learn/pagination/#pagination-and-edges).
+`...Paginated` 查询类型重用了大部分 `...List` 查询类型功能（过滤、排序），但没有使用 `offset`/`limit` 参数，它使用 `first`/`after` 参数，正如 [GraphQL 光标连接规范](https://relay.dev/graphql/connections.htm)所定义。您可以在 [GraphQL 介绍](https://graphql.org/learn/pagination/#pagination-and-edges) 中找到不太正式的介绍。
 
-* `first`:的 `n` 返回的第一个项目。
-默认为 `50`。最大值为 `100`.
-* `after`:确定所请求页面开头的游标；请注意，由光标表示的项目未包含在结果集中；项的光标由 `cursor` 字段 `edges` 结构。
+* `first`：`n`要返回的第一个项目。
+默认为 `50`。最大值为 `100`。
+* `after`：确定请求页面开始的光标；请注意，光标所代表的项目不包含在结果集中；项目的光标由 `edges` 结构的 `cursor` 字段确定。
 
-例如，输出包含最多5个历险的结果页，从 *complete* 结果列表：
+例如，输出包含最多五次冒险的结果页面，从&#x200B;*完整*&#x200B;结果列表中的给定光标项开始：
 
 ```graphql
 query {
@@ -693,9 +693,9 @@ query {
 
 >[!NOTE]
 >
->* 默认情况下，分页使用存储库节点的UUID（表示片段）进行排序，以确保结果的顺序始终相同。 When `sort` ，则会隐式使用UUID来确保进行唯一排序；甚至对于具有相同排序键的两个项目。
+>* 默认情况下，分页使用表示片段的存储库节点的 UUID 进行排序，以确保结果的顺序始终相同。当使用 `sort` 时，隐式使用 UUID 以确保唯一排序；即使对于具有相同排序键的两个项目，也可以使用。
 >
->* 由于内部技术限制，如果对嵌套字段应用排序和过滤，则性能将会降低。 因此，建议使用存储在根级别的过滤器/排序字段。 如果要查询大量分页结果集，也建议使用此方法。
+>* 由于内部技术限制，如果对嵌套字段应用排序和过滤，性能会降低。因此，建议使用存储在根级别的过滤器/排序字段。如果要查询大型分页结果集，这也是推荐的方式。
 
 
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
@@ -708,14 +708,14 @@ query {
 
    稍后您可以：
 
-   * [对结果排序](#sorting)
+   * [对结果进行排序](#sorting)
 
       * `ASC` : 升序
       * `DESC` : 降序
-   * 使用以下任一方式返回结果页面：
+   * 使用以下任一方法返回一页结果：
 
-      * [具有偏移和限制的列表查询](#list-offset-limit)
-      * [包含前后分页的查询](#paginated-first-after)
+      * [带有偏移和限制的列表查询](#list-offset-limit)
+      * [带有“先”和“后”的分页查询](#paginated-first-after)
    * 请参阅[示例查询 – 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 
