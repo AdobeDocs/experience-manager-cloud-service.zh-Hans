@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的内容片段模型创建用作所有 Head
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 96%
+source-wordcount: '1104'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 96%
 >title="启动模型编辑器"
 >abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器向其中添加结构元素。<br><br>单击下面的可在新选项卡中启动该功能，然后按照本学习文档创建您的第一个内容片段模型。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="介绍视频的占位符"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="视频缩略图：AEM Headless的构建基块"
 
 ## 内容片段模型控制台 {#content-fragment-model-console}
 
