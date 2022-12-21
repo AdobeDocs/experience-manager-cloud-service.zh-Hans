@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 12%
+source-wordcount: '324'
+ht-degree: 11%
 
 ---
 
@@ -28,6 +28,10 @@ ht-degree: 12%
 * 当您从Apple iOS设备提交包含标准HTML上传字段的自适应表单时，不会发送文件内容，而在另一端接收0字节文件。 此问题间歇性发生，且仅在使用同步提交时发生。 这是 [已知问题](https://feedbackassistant.apple.com/feedback/9117687) 在AppleiOS。
 
 * 当您从Apple iOS设备提交包含标准HTML上载字段的表单时，有时不会发送文件内容，而在另一端会收到0字节文件。 这是Apple iOS中的已知问题。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+* AEM Forms as a Cloud Service不会为XDP和JSON架构文件生成缩略图。 该服务显示默认图标代替缩略图。
+
+   ![Forms缩略图已知问题](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 
 ## 限制 {#limitations}
