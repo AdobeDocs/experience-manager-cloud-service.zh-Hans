@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 11%
+source-wordcount: '1375'
+ht-degree: 9%
 
 ---
 
@@ -142,6 +142,18 @@ Release Orchestrator通过自动应用更新来自动使环境保持最新。 �
 如果启动摄取时Release Orchestrator仍在运行，则UI将显示此错误消息。 无论如何，您都可以选择继续，接受风险，方法是检查字段并再次按按钮。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+
+### 增补摄取失败
+
+一个 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是节点id中的冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
+
+>java.lang.RuntimeException:org.apache.jackrabbit.oak.api.CommitFailedException:OakConstraint0030:唯一性约束违反属性 [jcr:uuid] 具有值a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5e5:/some/path/jcr:content， /some/other/path/jcr:content
+
+AEM中的每个节点必须具有唯一的uuid。 此错误表示正在摄取的节点具有与目标实例上其他路径中已存在的节点相同的uuid。
+如果在提取和后续操作之间在源上移动节点，则可能会发生这种情况 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+如果目标上的节点在摄取和后续增补摄取之间移动，则也可能会发生这种情况。
+
+必须手动解决此冲突。 熟悉内容的人员必须决定必须删除这两个节点中的哪一个，同时要记住引用该节点的其他内容。 该解决方案可能要求在没有违规节点的情况下再次进行增补提取。
 
 ## 后续内容 {#whats-next}
 
