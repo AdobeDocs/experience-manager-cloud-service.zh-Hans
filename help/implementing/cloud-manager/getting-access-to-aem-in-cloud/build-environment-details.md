@@ -3,9 +3,9 @@ title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -221,7 +221,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
         </profile>
 ```
 
-此技术可用于安装特定于语言的软件包，例如，使用 `gem` 用于RubyGems或 `pip` 用于Python包。
+可使用相同的方法安装语言特定的包，例如，使用 `gem` 安装 RubyGems 包或使用 `pip` 安装 Python 包。
 
 >[!NOTE]
 >
@@ -229,4 +229,4 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 >[!TIP]
 >
->有关前端构建环境的详细信息，请参阅此文档 [使用前端管道开发站点。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>有关前端构建环境的详细信息，请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)。
