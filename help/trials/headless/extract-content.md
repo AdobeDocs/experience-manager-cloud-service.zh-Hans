@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1287'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ GraphQL 提供了基于查询的 API，可让外部客户端应用程序使用�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
->title="启动GraphQL Explorer"
->abstract="GraphQL提供了一个基于查询的API，允许外部客户端应用程序使用单个API调用仅查询AEM所需的内容。 按照本指南了解如何运行两种不同类型的查询，然后从您在上一模块中创建的内容片段中检索内容。<br><br>通过单击下面的，在新选项卡中启动该功能。"
+>title="启动 GraphQL 资源管理器"
+>abstract="GraphQL 提供了基于查询的 API，可让外部客户端应用程序使用单个 API 调用，在 AEM 中仅查询所需的内容。按照本指南了解如何运行两种不同类型的查询，然后从您在上一模块中创建的内容片段中检索内容。<br><br>单击下方在新选项卡中启动该功能。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="介绍视频的占位符"
 
 ## GraphQL Explorer {#graphql-explorer}
