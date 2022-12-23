@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1104'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="启动模型编辑器"
->abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器向其中添加结构元素。<br><br>单击下面的可在新选项卡中启动该功能，然后按照本学习文档创建您的第一个内容片段模型。"
+>abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器向其中添加结构元素。<br><br>单击下方以在新选项卡中启动该功能，然后按照此学习文档创建您的第一个内容片段模型。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="介绍视频的占位符"
 
 ## 内容片段模型控制台 {#content-fragment-model-console}
