@@ -5,7 +5,7 @@ feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 100%
 

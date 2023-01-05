@@ -3,8 +3,8 @@ title: 使用多个存储库
 description: 了解如何在使用 Cloud Manager 时管理多个 Git 存储库。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 5ea5c3f03642ae2f7471165d4d0ee33c2cc31b6b
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '757'
 ht-degree: 100%
 
 ---

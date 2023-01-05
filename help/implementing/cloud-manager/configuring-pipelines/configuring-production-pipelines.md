@@ -4,7 +4,7 @@ description: 了解如何配置生产管道以生成代码并将其部署到生�
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 100%
 

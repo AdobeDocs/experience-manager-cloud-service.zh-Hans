@@ -3,7 +3,7 @@ title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 

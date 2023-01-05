@@ -4,7 +4,7 @@ description: 了解如何配置非生产管道，以便在部署到生产环境�
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 100%
 
