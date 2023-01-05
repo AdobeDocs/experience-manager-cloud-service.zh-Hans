@@ -2,7 +2,8 @@
 title: AEMas a Cloud Service版本2022.9.0中迁移工具的发行说明
 description: AEMas a Cloud Service版本2022.9.0中迁移工具的发行说明
 feature: Release Information
-source-git-commit: d6c47c3b8fe4ac994ee9f2db365888f496be12f0
+exl-id: 581370ba-e3e8-487e-af83-a1eacbda2763
+source-git-commit: dd4515bdbba81dcec0868c3058c7745775cc80ff
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 10%

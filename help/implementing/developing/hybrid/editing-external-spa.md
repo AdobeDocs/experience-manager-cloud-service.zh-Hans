@@ -369,7 +369,7 @@ RemotePage组件希望该实施提供与资产清单类似的资产清单 [此�
 
 * [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
 * [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [WKND SPA项目](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
+* [WKND SPA项目](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hans)
 * [AEM中的SPA使用React快速入门](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA参考资料（API参考）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint和PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)

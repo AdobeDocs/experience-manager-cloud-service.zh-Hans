@@ -4,7 +4,7 @@ description: 使用Dispatcher工具验证和调试（旧版）
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
+source-git-commit: deb604c6edfe4feb2ded00827fd2f96638e9335b
 workflow-type: tm+mt
 source-wordcount: '2345'
 ht-degree: 1%

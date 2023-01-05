@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 201f365643d82cb3c7d43fa8c31650ee46dc3b29
+source-git-commit: 3130f374859c1bb67f6311d2decfdd537eabf14f
 workflow-type: tm+mt
 source-wordcount: '1913'
 ht-degree: 2%
@@ -228,5 +228,5 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 >
 >* [在每个版本中完成的增强功能的发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* [[!DNL Adobe Experience Manager] 辅助指南](/help/compliance/accessibility/web-accessibility.md).
->* [Adobe解决方案的合规性报告(ACR)和VPAT列表](https://www.adobe.com/accessibility/compliance.html).
+>* [Adobe解决方案的合规性报告(ACR)和VPAT列表](https://www.adobe.com/cn/accessibility/compliance.html).
 

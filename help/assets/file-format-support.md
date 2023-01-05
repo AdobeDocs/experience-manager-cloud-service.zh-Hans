@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 93e25fcbe07d3262d924f97551e19661ea80a034
+source-git-commit: 614d15838665306d01140048e35fc265b9f7b5e1
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 26%
@@ -196,13 +196,13 @@ ht-degree: 26%
 | AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
 | FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
 | M4V | Apple iTunes | H264/AVC | − |
-| MKV | Matroska | H264/AVC | - |
+| MKV | Matroska | H264/AVC | − |
 | MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
-| MP4 | MPEG-4 | H264/AVC（所有配置文件） | - |
-| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
-| OGV、OGG | Ogg | Theora、VP3、Dirac | - |
-| WebM | WebM | Google VP8 | - |
+| MP4 | MPEG-4 | H264/AVC（所有配置文件） | − |
+| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | − |
+| MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | − |
+| OGV、OGG | Ogg | Theora、VP3、Dirac | − |
+| WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen (MSS2)、Microsoft Photo Story (WVP2) |
 
 ‡尚不支持在Dynamic Media中将此视频格式用于交互式视频，或在Experience Manager Assets中将其与“注释”一起使用。
@@ -211,7 +211,7 @@ ht-degree: 26%
 
 | 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 传送动态演绎版 | 下载动态演绎版 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| 人工智能 | ✓ | - | - | - | - |
+| AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
 | PDF（请参阅下面的注释） | ✓ | ✓ | ✓ | ✓ | ✓ |
 

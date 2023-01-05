@@ -119,7 +119,7 @@ AEM层将根据是否已设置缓存标头和请求类型的值来设置缓存�
 >[!NOTE]
 >建议通过将Cloud Manager环境变量AEM_BLOB_ENABLE_CACHING_HEADERS设置为true，将旧的默认行为更改为与新行为(程序ID大于65000)一致。 如果程序已处于实时状态，请确保您确认在进行更改后，内容会按预期运行。
 
-目前，Blob存储中标记为私有的图像无法使用 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 图像始终从AEM源请求，并在用户获得授权时提供。
+目前，Blob存储中标记为私有的图像无法使用 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans). 图像始终从AEM源请求，并在用户获得授权时提供。
 
 >[!NOTE]
 >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，则无法成功覆盖值。

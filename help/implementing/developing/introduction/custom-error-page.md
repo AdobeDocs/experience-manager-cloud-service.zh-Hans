@@ -2,7 +2,7 @@
 title: 自定义错误页面
 description: AEM附带一个用于处理HTTP错误的标准错误处理程序，该处理程序可进行自定义。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: ab68c03b29f3d2179b33c61a6d853d80ccb17615
+source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%

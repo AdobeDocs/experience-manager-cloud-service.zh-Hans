@@ -2,7 +2,7 @@
 title: 自定义域名简介
 description: Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
+source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 83%

@@ -4,13 +4,13 @@ seo-title: Reference Themes
 description: AEM Forms提供了自适应表单主题，您可以从Software Distribution获取这些主题，并使用它们来设置表单样式。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
+source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 3%
 
 ---
-
 
 # Formsas a Cloud Service的参考资产 {#reference-themes}
 
