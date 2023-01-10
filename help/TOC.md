@@ -4,14 +4,14 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
-user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及软件可以对您的作用。
+user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 156cf55a33184bd986628d775475ed1f841e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3827'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -785,7 +785,7 @@ ht-degree: 99%
       + [AEM 项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 项目存储库结构包](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [AEM 快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service 开发准则](/help/implementing/developing/introduction/development-guidelines.md)
       + [日志记录](/help/implementing/developing/introduction/logging.md)
       + [配置和配置浏览器](/help/implementing/developing/introduction/configurations.md)
