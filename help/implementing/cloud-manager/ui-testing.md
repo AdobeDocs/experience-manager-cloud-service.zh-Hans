@@ -3,9 +3,9 @@ title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -195,11 +195,11 @@ Docker 图像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 
 如果 Docker 图像是用其他编程语言或测试运行程序实现的，请查看文档，了解如何生成 JUnit XML 报告。
 
-### 捕获屏幕截图和视频 {#capture-screenshots}
+### 捕获屏幕快照和视频 {#capture-screenshots}
 
-Docker图像可以生成其他测试输出（例如屏幕截图、视频），并将它们保存在环境变量指定的路径中 `REPORTS_PATH`. 在 `REPORTS_PATH` 包含在测试结果存档中。
+Docker 映像可能会产生额外的测试输出（如屏幕快照、视频），并将其保存在环境变量 `REPORTS_PATH` 指定的路径中。测试结果存档中包括任何可在 `REPORTS_PATH` 下找到的文件。
 
-如果在UI测试执行期间创建了测试结果存档，则测试日志文件最后包含对测试结果存档位置的引用。
+如果在执行 UI 测试期间创建了测试结果存档，则测试日志文件在结尾引用测试结果档案的位置。
 
 ```
 [...]
