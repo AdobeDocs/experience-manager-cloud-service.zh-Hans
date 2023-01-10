@@ -3,9 +3,9 @@ title: 自定义域名简介
 description: Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,15 +47,15 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 
 >[!NOTE]
 >
->Cloud Manager支持自定义域 **仅** 如果您使用的是AEM托管CDN。 如果您自带CDN和 [将其指向AEM托管的CDN](/help/implementing/dispatcher/cdn.md) 您必须使用该特定CDN来管理域，而不是Cloud Manager。
+>**只有**&#x200B;使用 AEM 托管的 CDN，才能在 Cloud Manager 中支持自定义域。如果您使用自己的 CDN，并[将它指向 AEM 托管的 CDN](/help/implementing/dispatcher/cdn.md)，则您必须使用该特定 CDN 而非 Cloud Manager 管理域。
 
 ## 工作流 {#workflow}
 
-添加自定义域名需要 DNS 服务和云管理器之间的交互。 因此，需要执行许多步骤来安装、配置和验证自定义域名。 下表概述了所需的步骤，包括发生常见错误时的操作。
+添加自定义域名需要 DNS 服务和云管理器之间的交互。 因此，需要执行若干步骤以安装、配置和验证自定义域名。下表概述了所需的步骤，包括发生常见错误时的操作。
 
 | 步骤 | 描述 | 责任 | 了解详情 |
 |--- |--- |--- |---|
-| 1 | 将SSL证书添加到Cloud Manager | 客户 | [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | 将 SSL 证书添加到 Cloud Manager | 客户 | [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 添加 TXT 记录验证域 | 客户 | [添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | 查看域验证状态 | 客户 | [检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | 如果域验证失败，状态为 `Domain Verification Failure` | 客户 | [检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
@@ -67,4 +67,4 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 
 >[!TIP]
 >
->使用AEM as a Cloud Service设置自定义域名通常是一个简单的过程。 但是，有时域委派问题可能会发生，这些问题可能需要1-2个工作日才能解决。 因此，强烈建议在域的起始日期之前安装域。 查看文档 [正在检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以了解更多信息。
+>一般而言，用 AEM as a Cloud Service 设置自定义域名是一个简单的过程。但是，有时域委派可能会发生问题，而解决此问题可能耗时 1 至 2 个工作日。因此，强烈建议在上线日期之前安装好域。有关详细信息，请参阅文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
