@@ -10,7 +10,7 @@ ht-degree: 72%
 
 ---
 
-# AEM Screensas a Cloud Service {#aem-screens-as-a-cloud-service-guide}
+# AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
 本页可帮助您进一步了解AEM Screens以及此数字标牌解决方案的工作原理。 获取自助资源并了解新增功能。
 
