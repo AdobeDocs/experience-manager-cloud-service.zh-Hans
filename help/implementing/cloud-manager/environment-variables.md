@@ -2,10 +2,10 @@
 title: Cloud Manager 环境变量
 description: 标准环境变量可以通过 Cloud Manager 进行配置和管理，并提供给运行时环境，以便在 OSGi 配置中使用。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '1015'
+ht-degree: 88%
 
 ---
 
@@ -107,3 +107,29 @@ ht-degree: 100%
 有关如何在 `pom.xml` 文件中同时使用这两种类型的变量的示例，请参阅文档[设置项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)。
 
 有关更多详细信息，请参阅[Maven 官方文档](https://maven.apache.org/settings.html#quick-overview)。
+
+## 环境变量可用性 {#availability}
+
+环境变量可在多个位置使用。
+
+### 创作、预览和发布 {#author-preview-publish}
+
+常规环境变量和密钥均可在创作、预览和发布环境中使用。
+
+### Dispatcher {#dispatcher}
+
+调度程序上只能使用常规环境变量。 无法使用密钥。
+
+但是，环境变量不能在 `IfDefine` 指令。
+
+>[!TIP]
+>
+>您应当通过 [本地调度程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 部署之前。
+
+### OSGi配置 {#osgi}
+
+常规环境变量和密钥均可在OSGi配置中使用。
+
+### 管道变量 {#pipeline}
+
+除了环境变量之外，还有管道变量，它们会在构建阶段公开。 [在此处了解有关管道变量的更多信息。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
