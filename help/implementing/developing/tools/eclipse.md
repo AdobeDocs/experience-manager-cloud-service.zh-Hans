@@ -2,9 +2,9 @@
 title: 适用于 Eclipse 的 AEM 开发人员工具
 description: 适用于 Eclipse 的 AEM 开发人员工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1179'
 ht-degree: 3%
 
 ---
@@ -196,7 +196,7 @@ AEM Developer Tools for Eclipse附带一个示例的多模块项目，该项目�
 
 如果您希望从项目中重新构建资源包，请右键单击 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 选择 **运行方式** -> **Maven安装**.
 
-现在，您有一个目标文件夹，该文件夹已随包一起创建(例如， `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
+现在，您已在中创建一个目标文件夹，其中包含您的包(例如， `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
 
 ## 疑难解答 {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse下载所需的依赖项。 这可能需要一些时间。
 
 适用于Eclipse网站的官方Apache Sling IDE工具为您提供了以下有用信息：
 
-* 的 [**适用于Eclipse的Apache Sling IDE工具** 用户指南](https://sling.apache.org/documentation/development/ide-tooling.html)，本文档将指导您完成AEM开发工具支持的总体概念、服务器集成和部署功能。
+* 的 [**适用于Eclipse的Apache Sling IDE工具** 用户指南](https://sling.apache.org/documentation/development/ide-tooling.html)，本文档将指导您了解AEM开发工具支持的总体概念、服务器集成和部署功能。
 * 的 [疑难解答部分](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * 的 [已知问题列表](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
