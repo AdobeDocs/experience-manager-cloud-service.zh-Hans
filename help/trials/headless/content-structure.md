@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的内容片段模型创建用作所有 Head
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: 900f9fc951a2b95b77abc5835ef9651128824826
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,12 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="启动模型编辑器"
 >abstract="构建内容片段模型首先在模型管理工作流中创建模型项，然后使用内容片段模型编辑器向其中添加结构元素。<br><br>单击下方以在新选项卡中启动该功能，然后按照此学习文档创建您的第一个内容片段模型。"
->additional-url="https://video.tv.adobe.com/v/328618" text="介绍视频的占位符"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="视频内容结构简介"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
+>title="启动模型编辑器"
+>abstract="恭喜！通过创建内容片段模型，您迈出了以缩放和标准方式提供全渠道内容的第一步。"
 
 ## 内容片段模型控制台 {#content-fragment-model-console}
 
