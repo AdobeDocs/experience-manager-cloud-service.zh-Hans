@@ -4,9 +4,9 @@ description: 了解适用于Experience Platform标记的Dynamic Media查看器�
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6679'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 * Dynamic Media查看器的Experience Platform标记集成在“Experience Manager创作”节点中不起作用。 在WCM页面发布之前，您无法看到任何跟踪。
 * “弹出”操作模式不支持Dynamic Media查看器的Experience Platform标记集成，在该模式下，查看器URL是使用“资产详细信息”页面上的“URL”按钮获取的。
 * Experience Platform标记集成不能与旧版查看器Analytics集成(通过 `config2=` 参数)。
-* 视频跟踪支持仅限于核心播放跟踪，如 [跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). 尤其是，不支持QoS、广告、章节/区段或错误跟踪。
+* 视频跟踪支持仅限于核心播放跟踪，如 [跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events). 尤其是，不支持QoS、广告、章节/区段或错误跟踪。
 * 数据元素不支持使用 *Dynamic Media查看器* 扩展。 存储持续时间必须设置为 **[!UICONTROL 无]**.
 
 ### 集成用例 {#use-cases-for-the-integration}
@@ -127,7 +127,7 @@ Experience Platform标记中的以下示例配置演示了如何在查看器加�
 
 请参阅 [安装和设置扩展](#installing-and-setup-of-extensions).
 
-目前，对视频跟踪的支持仅限于“核心播放”跟踪，如 [跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). 尤其是，不支持QoS、广告、章节/区段或错误跟踪。
+目前，对视频跟踪的支持仅限于“核心播放”跟踪，如 [跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events). 尤其是，不支持QoS、广告、章节/区段或错误跟踪。
 
 ## 使用Dynamic Media查看器扩展 {#using-the-dynamic-media-viewers-extension}
 
@@ -149,7 +149,7 @@ Experience Platform标记中的以下示例配置演示了如何在查看器加�
 
 正确配置后，您可以使用Dynamic Media查看器向网页添加Experience Platform标记支持。
 
-请参阅 [添加Experience Platform标记嵌入代码](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) 以了解有关如何使用Experience Platform标记库嵌入代码的更多信息。
+请参阅 [添加Experience Platform标记嵌入代码](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html) 以了解有关如何使用Experience Platform标记库嵌入代码的更多信息。
 
 要详细了解如何使用Experience ManagerDynamic Media的嵌入代码功能，请参阅 [在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
 
@@ -224,7 +224,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 最终用户的活动会导致对Adobe Analytics发起以下两个跟踪调用：
 
-* 第一次调用是因为 **[!UICONTROL TrackPan]** 用户在 *查看器1*. 该调用会发送50%作为值 **[!UICONTROL 缩放比例]** 数据元素，因为数据元素知道规则是由 *查看器1* 并获取相应的比例值；
+* 第一次调用是因为 **[!UICONTROL TrackPan]** 用户在 *查看器1*. 该调用会发送50%作为值 **[!UICONTROL 缩放比例]** 数据元素，因为数据元素知道规则是由 *查看器1* 并提取相应的比例值；
 * 第二次调用是因为 **[!UICONTROL TrackKey]** 用户按下键盘上的键时，将触发规则。 该调用会发送25%作为值 **[!UICONTROL 缩放比例]** 数据元素，因为规则不是由查看器触发的。 因此，数据元素会返回最新值。
 
 上述设置的示例还会影响数据元素值的生命周期。 即使在将查看器本身置于网页上，Dynamic Media查看器管理的Experience Platform元素值也会存储在Data Tags库代码中。 此功能意味着，如果存在由非Dynamic Media查看器扩展触发并引用此类数据元素的规则，则数据元素会返回最后一个已知值。 即使查看器不再存在于网页上。
@@ -412,7 +412,7 @@ Adobe建议您仔细查看此部分之前的所有文档，以便了解完整的
 
 此外，如果此集成解决方案与Experience Manager Sites一起使用，则必须完成以下配置：
 
-* Adobe I/O控制台 — 为Experience Platform标记创建集成。
+* [Adobe Developer控制台](https://developer.adobe.com/console/home)  — 为Experience Platform标记创建集成。
 * Experience Manager创作节点 — IMS配置和Experience Platform标记云配置。
 
 在配置中，请确保您有权访问Adobe Experience Cloud中已启用Adobe Analytics和Experience Platform标记的公司。
@@ -443,7 +443,7 @@ Adobe建议您仔细查看此部分之前的所有文档，以便了解完整的
 
    如果没有可用的报表包，则您或您的Adobe Analytics管理员必须先创建一个报表包，然后才能继续进行配置。
 
-   请参阅 [报表和报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) 和 [创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
+   请参阅 [报表和报表包](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html) 和 [创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
 
    在Adobe Analytics中，报表包在 **[!UICONTROL 管理员]** > **[!UICONTROL 报表包]**.
 
@@ -505,7 +505,7 @@ Adobe建议您仔细查看此部分之前的所有文档，以便了解完整的
 
 “Experience Platform标记”中的属性是一个命名配置，可将所有设置保持在一起。 系统会生成配置设置库，并将其发布到不同的环境级别（开发、暂存和生产）。
 
-另请参阅 [创建标记属性](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
+另请参阅 [配置点按属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **要在Experience Platform标记中创建属性，请执行以下操作：**
 
@@ -516,7 +516,7 @@ Adobe建议您仔细查看此部分之前的所有文档，以便了解完整的
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. 选择&#x200B;**[!UICONTROL “保存”]**。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
    选择新创建的属性，然后继续 *安装和设置扩展*.
 
@@ -532,7 +532,7 @@ Experience Platform标记中的所有可用扩展都列在 **[!UICONTROL 扩展]
 
 无需其他配置，接受任何建议的值。 完成后，请确保选择 **[!UICONTROL 保存]**.
 
-请参阅 [Experience CloudIdentity Service扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
+请参阅 [Experience CloudIdentity Service扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html).
 
 * （必需） *Adobe Analytics* 扩展
 
@@ -550,9 +550,9 @@ Experience Platform标记中的所有可用扩展都列在 **[!UICONTROL 扩展]
 
 在 **[!UICONTROL 安装扩展]** 页面，展开 **[!UICONTROL 常规]**，然后指定跟踪服务器。 跟踪服务器遵循模板 `<trackingNamespace>.sc.omtrdc.net`，其中 `<trackingNamespace>` 是在预配电子邮件中获取的信息。
 
-选择&#x200B;**[!UICONTROL “保存”]**。
+选择&#x200B;**[!UICONTROL 保存]**。
 
-请参阅 [Adobe Analytics扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+请参阅 [Adobe Analytics扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
 * (可选. 仅当需要视频跟踪时才需要) *Adobe Medium用于音频和视频的Analytics* 扩展
 
@@ -560,7 +560,7 @@ Experience Platform标记中的所有可用扩展都列在 **[!UICONTROL 扩展]
 
 所有其他字段均为可选字段。
 
-请参阅 [Adobe MediumAnalytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html).
+请参阅 [Adobe MediumAnalytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 
 * （必需） *Dynamic Media查看器* 扩展
 
@@ -677,7 +677,7 @@ Experience Manager配置包含以下两个主要步骤：
 
    将显示以下信息消息：
 
-   *要检索有效的访问令牌，必须将新证书的公共密钥添加到Adobe I/O的技术帐户！*
+   *要检索有效的访问令牌，必须将新证书的公共密钥添加到Adobe Developer上的技术帐户！*
 
    要关闭“信息”对话框，请选择 **[!UICONTROL 确定]**.
 
@@ -691,12 +691,12 @@ Experience Manager配置包含以下两个主要步骤：
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. 在新的浏览器选项卡中，导航到 [Adobe I/O控制台](https://console.adobe.io/integrations).
+1. 在新的浏览器选项卡中，导航到 [Adobe Developer控制台](https://developer.adobe.com/console/integrations).
 
 1. 从 **[!UICONTROL Adobe I/O控制台集成]** 页面的右上角附近，选择 **[!UICONTROL 新集成]**.
 1. 在 **[!UICONTROL 创建新集成]** 对话框，请确保 **[!UICONTROL 访问API]** 选择单选按钮，然后选择 **[!UICONTROL 继续]**.
 
-   ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
+![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
 1. 第二天 **[!UICONTROL 创建新集成]** 页面，启用（打开） **[!UICONTROL Experience Platform标记API]** 按钮。 在页面的右下角，选择 **[!UICONTROL 继续]**.
 
@@ -728,19 +728,19 @@ Experience Manager配置包含以下两个主要步骤：
    >***保持打开此集成详细信息页面***。您需要 **[!UICONTROL 概述]** 和 **[!UICONTROL JWT]** 一会儿就到。
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
-   _集成详细信息页面_
+   *集成详细信息页面*
 
 1. 返回之前打开的 **[!UICONTROL Adobe IMS 技术帐户配置]**&#x200B;页面。在页面的右上角，选择 **[!UICONTROL 下一个]** 打开 **[!UICONTROL 帐户]** 页面 **[!UICONTROL Adobe IMS技术帐户配置]** 窗口。
 
    (如果您之前关闭了页面，请返回Experience Manager作者，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**. 选择&#x200B;**[!UICONTROL 创建]**。在 **[!UICONTROL 云解决方案]** 下拉列表中，选择 **[!UICONTROL Experience Platform标记]**. 在&#x200B;**[!UICONTROL 证书]**&#x200B;下拉列表中，选择之前创建的证书的名称。
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
-   _Adobe IMS技术帐户配置 — 证书页面_
+   *Adobe IMS技术帐户配置 — 证书页面*
 
 1. 的 **[!UICONTROL 帐户]** 页面有五个字段，要求您使用上一步中“集成详细信息”页面中的信息填写。
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
-   _Adobe IMS技术帐户配置 — 帐户页面_
+   *Adobe IMS技术帐户配置 — 帐户页面*
 
 1. 在 **[!UICONTROL 帐户]** ，请填写以下字段：
 
@@ -751,14 +751,14 @@ Experience Manager配置包含以下两个主要步骤：
 （示例服务器名称仅供说明）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
-   _集成详细信息页面 — JWT选项卡_
+   *集成详细信息页面 — JWT选项卡*
 
 1. **[!UICONTROL API 密钥]** - 返回到“集成详细信息”页面。选择 **[!UICONTROL 概述]** ，然后单击 **[!UICONTROL API密钥（客户端ID）]** 字段，选择 **[!UICONTROL 复制]**.
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将密钥粘贴到相应的字段中。
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-   _集成详细信息页面_
+   *集成详细信息页面*
 
 1. **[!UICONTROL 客户端密钥]** - 返回到“集成详细信息”页面。从 **[!UICONTROL 概述]** 选项卡，选择 **[!UICONTROL 检索客户端密钥]**. 在 **[!UICONTROL 客户端密钥]** 字段，选择 **[!UICONTROL 复制]**.
 
@@ -769,7 +769,7 @@ Experience Manager配置包含以下两个主要步骤：
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将代码粘贴到相应的字段中。
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-   _集成详细信息页面 — JWT选项卡_
+   *集成详细信息页面 — JWT选项卡*
 
    “帐户”页面（已填写所有字段）与以下内容类似：
 
@@ -803,9 +803,10 @@ Experience Manager配置包含以下两个主要步骤：
    * **[!UICONTROL 公司]**  — 从 **[!UICONTROL 公司]** 下拉列表中，选择您的Experience Cloud公司。 列表会自动填充。
 
    * **[!UICONTROL 属性]**  — 从属性下拉列表中，选择您之前创建的Experience Platform标记属性。 列表会自动填充。
-   填写完所有字段后， **[!UICONTROL 常规]** 页面将类似于以下内容：
 
-   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
+填写完所有字段后， **[!UICONTROL 常规]** 页面将类似于以下内容：
+
+![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. 在左上角附近，选择 **[!UICONTROL 下一个]**.
 1. 在 **[!UICONTROL 暂存]** 第（2/3页）页 **[!UICONTROL 创建Experience Platform标记配置]** ，请填写以下字段：
