@@ -2,14 +2,14 @@
 title: 为服务器端 API 生成访问令牌
 description: 了解如何通过生成安全的JWT令牌来促进第三方服务器与AEMas a Cloud Service之间的通信
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
+source-git-commit: dd6753c6605d5c48c54d173803a541db54991481
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# 简介 {#introduction}
+# 为服务器端 API 生成访问令牌 {#generating-access-tokens-for-server-side-apis}
 
 某些架构依赖于从AEM基础架构外的服务器上托管的应用程序as a Cloud Service调用AEM。 例如，一个移动设备应用程序，它调用服务器，然后向AEM发出API请求as a Cloud Service。
 
