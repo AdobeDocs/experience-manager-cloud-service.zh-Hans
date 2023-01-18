@@ -9,9 +9,9 @@ breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 077ab3c83e3d97cfdec939081b5862e173f17603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3834'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -525,7 +525,7 @@ ht-degree: 99%
          + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
          + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
          + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
-         + [向自适应表单中添加表](/help/forms/adaptive-forms-tables.md)
+         + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
       + 配置版面并将样式应用于自适应表单{#configure-layout-of-an-adaptive-form}
          + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
          + [使用版面模式调整组件大小](/help/forms/resize-using-layout-mode.md)
