@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.12.0 发行说明
-description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2022.12.0 发行说明。
+title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.1.0 发行说明
+description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2024.1.0 发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 516c0027f917ea1e54286b268e7a0fb4c4e2b3d7
+source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 100%
+source-wordcount: '190'
+ht-degree: 36%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2022.12.0 发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.1.0 发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2022.12.0 的发行说明。
+本页记录了AEM as a Cloud Service中Cloud Manager 2023.1.0版的发行说明。
 
 >[!NOTE]
 >
@@ -21,15 +21,20 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2022.12.0 的发布日期是 2022 年 11 月 29 日。下一个版本计划于 2023 年 1 月 19 日发布。
+AEMas a Cloud Service中Cloud Manager 2023.1.0版的发布日期是2023年1月19日。 下一个版本计划于 2023 年 2 月 16 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* [AEM 维护更新](/help/overview/what-is-new-and-different.md#aem-updates)的通知将显示在 Cloud Manager UI 中。将在发布 2022.12.0 版本后的几周内分阶段推出此更改。
-* 在通过[内容传输工具 (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 进行摄取期间，开发人员控制台和 Cloud Manager 中的环境状态将显示为 `Ingestion in Progress`。
-* 提高了 [Cloud Manager 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)的可用性和可靠性。
+* 可用性增强是通过更新光标样式来区分用户在何处可以执行操作还是默认指针来实现的。
+
+* 自定义UI测试报表现在会复制到Cloud Manager存储，并且可以通过Cloud Manager API调用访问。
+
+* 用户现在可以使用左 — 右箭头在上线小组件状态之间进行转换。
+
+   ![上线小组件过渡](assets/go-live-transitions.gif)
+
+* 自助服务 [创建支持HIPAA的计划](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 现在，当相应的权限和权限可用时，即可使用。
 
 ## 错误修复 {#bug-fixes}
 
-* 已做出更改以防止[前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)在管道执行过程中在同一环境中运行。
-* 已做出更改以防止对环境的 `PATCH /program//environment//variables` 请求具有 `FAILED` 状态。
+* Cloud Manager将防止两个管道执行同时（或几乎同时）开始，从而避免管道故障。
