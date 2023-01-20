@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
+source-git-commit: 4cedade107f220a7f17e75af4b95cf8449e63c82
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1061'
 ht-degree: 100%
 
 ---
@@ -22,16 +22,6 @@ ht-degree: 100%
 >[!NOTE]
 >
 >有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
-
->[!CAUTION]
->
->**计划内的维护排除期**
->
-> 在欧洲中部时间午夜 (00:00) 开始和结束的以下时间范围内，不会执行自动 AEMaaCS 维护：
->
->* 11 月 21 日（星期一）至 12 月 12 日（星期一）
->* 12 月 19 日星期一至 1 月 3 日星期二
-
 
 ## 发布日期 {#release-date}
 
