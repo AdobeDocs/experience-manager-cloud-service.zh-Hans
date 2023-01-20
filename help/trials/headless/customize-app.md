@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
-workflow-type: ht
-source-wordcount: '1070'
-ht-degree: 100%
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+workflow-type: tm+mt
+source-wordcount: '1035'
+ht-degree: 88%
 
 ---
 
@@ -32,19 +32,15 @@ ht-degree: 100%
 
 ## 预览应用程序 {#preview}
 
-单击上面的&#x200B;**启动内容片段编辑器**&#x200B;按钮将在新选项卡中打开“内容片段”编辑器。
-
-![内容片段编辑器](assets/customize-app/content-fragment-editor.png)
-
-AEM Headless 试用版随附的示例应用程序由通过 GraphQL 提供的内容片段进行支持。使用内容片段编辑器通过预览示例来熟悉内容。
+从内容片段编辑器开始，就会加载随AEM无头试用版一起提供的示例应用程序。 示例应用程序由通过GraphQL提供的内容片段提供支持。 使用内容片段编辑器，通过预览示例应用程序来熟悉编辑器。
 
 1. 点按或单击编辑器屏幕右上角的&#x200B;**预览**&#x200B;按钮。
 
 1. 演示应用程序将在新选项卡中打开。该应用程序适用于虚构的 WKND 户外生活方式品牌。在周围单击以导航示例内容。
 
-   ![演示应用程序预览](assets/customize-app/preview-demo-app.png)
-
 1. 返回到内容片段编辑器的浏览器选项卡以继续。
+
+![预览应用程序](assets/do-not-localize/preview-app-1.png)
 
 ## 在应用程序中编辑标题 {#edit-app}
 
@@ -52,25 +48,19 @@ AEM Headless 试用版随附的示例应用程序由通过 GraphQL 提供的内�
 
 1. 在&#x200B;**面板**&#x200B;部分中点按或单击&#x200B;**峡谷中的山地车手**。
 
-   ![点按“峡谷中的山地车手”片段](assets/customize-app/mtn-biker-in-canyon.png)
+   ![选择文本面板](assets/do-not-localize/edit-header-1.png)
 
 1. 编辑器将打开山地车手应用程序的标题面板。每个面板都由图层组成，其代表构成该体验的不同图像和文本。
 
-   ![面板](assets/customize-app/panels.png)
+1. 选择文本层 **峡谷文本层中的Mtn自行车手** 以在编辑器中打开层的详细信息。 该层由多个内容片段组成，这些片段控制的是应用程序面板中显示的文本。
 
-1. 选择文本图层&#x200B;**峡谷中的山地车手**。这将在编辑器中打开图层的详细信息。该层由多个内容片段组成，这些片段控制的是应用程序面板中显示的文本。
-
-   ![选择“峡谷中的山地车手”标题](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
-
-1. 选择&#x200B;**“峡谷中的山地车手”标题**&#x200B;文本项。这将打开内容片段编辑器。
-
-   ![选择“峡谷中的山地车手”标题文本项](assets/customize-app/mtn-biker-in-canyon-title.png)
+1. 选择&#x200B;**“峡谷中的山地车手”标题**&#x200B;文本项。这将打开显示此片段内容的内容片段编辑器，并允许您对其进行修改。
 
 1. 将文本从 `Your next great adventure is calling` 更改为 `Choose your own adventure`。编辑器将自动保存此更改。
 
 1. 点按或单击窗口右上角的&#x200B;**预览**&#x200B;按钮来查看更改的内容。演示应用程序的预览内容将在新选项卡中打开。
 
-   ![演示应用程序预览](assets/customize-app/preview-demo-app-text.png)
+   ![演示应用程序预览](assets/do-not-localize/edit-header-5-6.png)
 
 在集成到 AEM Headless CMS 中后更新 React 应用程序中的内容就是这么容易。
 
@@ -78,19 +68,17 @@ AEM Headless 试用版随附的示例应用程序由通过 GraphQL 提供的内�
 
 现在，您已修改应用程序中的标题，请试一试更改图像。
 
-1. 返回到内容片段编辑器的浏览器选项卡。
+1. 从预览返回到内容片段编辑器的浏览器选项卡。
 
 1. 您需要返回到内容片段编辑器中的正确位置。该编辑器左上角的痕迹导航将显示您在内容层次结构中所处的位置。在痕迹导航中点按或单击&#x200B;**峡谷中的山地车手**&#x200B;以返回该页面。
 
-   ![痕迹导航](assets/customize-app/breadcrumbs.png)
+   ![痕迹导航](assets/do-not-localize/swap-image-2.png)
 
 1. 选择&#x200B;**山地自行车 - 车手**&#x200B;图像图层。这将打开内容片段编辑器
 
-   ![编辑图像片段](assets/customize-app/mtn-biking-biker.png)
-
 1. 点按或单击 **X** 可删除车手图像。该图像将消失，并且编辑器会显示一个错误，因为图像是此内容片段模型所需的数据。
 
-   ![从片段中删除的图像](assets/customize-app/mtn-biking-biker-no-image.png)
+   ![从片段中删除图像](assets/do-not-localize/swap-image-4.png)
 
 1. 点按或单击&#x200B;**添加资产**。
 
@@ -98,11 +86,7 @@ AEM Headless 试用版随附的示例应用程序由通过 GraphQL 提供的内�
 
 1. 选择图像 `biker-yellow.png`，然后点按或单击&#x200B;**选择**。
 
-   ![选择资源](assets/customize-app/select-asset.png)
-
 1. 车手图像已替换为所选图像。该编辑器将自动保存更改。
-
-   ![编辑后的车手图像片段](assets/customize-app/mtn-biking-biker-edited.png)
 
 1. 点按或单击窗口右上角的&#x200B;**预览**&#x200B;按钮来查看更改的内容。演示应用程序的预览内容将在新选项卡中打开。在浏览器上单击刷新，您应该会在应用程序中看到带有黄色短裤的新车手图像。
 
@@ -112,44 +96,39 @@ AEM Headless 试用版随附的示例应用程序由通过 GraphQL 提供的内�
 
 现在您已经更新了车手的图像，让我们来看看如何通过创建和引用新的内容片段来向应用程序添加新内容吧。您将向应用程序的第二个面板添加由“可购物时刻”内容片段管理的产品标注。
 
-![可购物时刻示例](assets/customize-app/example-shoppable-moment.png)
+![可购物时刻示例](assets/do-not-localize/example-shoppable-moment.png)
 
-1. 返回到内容片段编辑器的浏览器选项卡。
+1. 从预览选项卡返回到内容片段编辑器的浏览器选项卡。
 
 1. 您需要返回到内容片段编辑器中的正确位置。该编辑器左上角的痕迹导航将显示您在内容层次结构中所处的位置。在痕迹导航中点按或单击 **WKND 主页**&#x200B;返回该页面。
 
-   ![导航回版面屏幕](assets/customize-app/breadcrumbs-2.png)
-
 1. 选择 **WKND 上的山地车手（黄色）**&#x200B;面板。
-
-   ![创建购物时刻](assets/customize-app/mtn-biker-on-wknd-yellow.png)
 
 1. 选择&#x200B;**山地自行车 - 可购物**&#x200B;图层。
 
-   ![选择购物时刻图层](assets/customize-app/mtn-biking-shoppable.png)
-
 1. 若要在此面板上创建新的标注，您必须创建一个新的可购物时刻内容片段。点按或单击&#x200B;**+ 创建新片段**&#x200B;按钮。
 
-   ![添加购物时刻](assets/customize-app/create-new-fragment.png)
+   ![添加购物时刻](assets/do-not-localize/add-reference-1-5.png)
 
 1. 您必须首先选择新内容片段所基于的模型。从&#x200B;**内容片段模型**&#x200B;下拉列表中选择&#x200B;**购物时刻项目**&#x200B;模型。
 
 1. 为内容片段提供一个名称。例如，在&#x200B;**名称**&#x200B;字段中输入 `Shorts`。
 
-   ![为购物时刻命名](assets/customize-app/new-content-fragment.png)
-
 1. 点按或单击&#x200B;**创建并打开**。
+
+   ![为购物时刻命名](assets/do-not-localize/add-reference-6-7-8.png)
 
 1. 这将为新的内容片段打开编辑器。
 
 1. 在&#x200B;**文本**&#x200B;字段中为购物时刻命名，例如 `Yellow shorts`。
 
 1. 为 **X** 和 **Y** 设置值。这是此标注应覆盖在面板上的位置。编辑器将自动保存对片段进行的更改。
-   * **X**：`-18`
-   * **Y**：`-28`
 
-   ![编辑购物时刻](assets/customize-app/edit-shoppable-moment.png)
+   * **X**：`-5`
+   * **Y**：`-10`
 
 1. 点按或单击窗口右上角的&#x200B;**预览**&#x200B;按钮来查看更改的内容。演示应用程序的预览内容将在新选项卡中打开。单击浏览器上的刷新以测试定位并根据需要在编辑器中进行调整。
+
+   ![预览](assets/do-not-localize/add-reference-10-11-12.png)
 
 现在您了解了如何在应用程序中创建新内容并将其作为内容片段进行引用，而无需任何开发周期。
