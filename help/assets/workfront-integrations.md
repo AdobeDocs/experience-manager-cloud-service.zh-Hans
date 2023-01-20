@@ -4,7 +4,7 @@ description: 集成简介 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5bc048052ca579707fb2508d3f436f1755a5d218
+source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 3%
@@ -49,7 +49,7 @@ Adobe选件到 [集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 以下是通过不同类型集成之间提供的功能的详细信息 [!DNL Assets] 和 [!DNL Workfront].
 
 | 功能 | 描述 | [!DNL Workfront] 和 [!DNL Assets Essentials] *无连接器(OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *需要连接器* | Workfront和 [!DNL Experience Manager as a Cloud Service] *无连接器(OOTB)* |
-|----|----|----|------|-----|-----|
+|----|----|----|-----|-----|
 | 部署方法 | 适用于 [!DNL Assets] 服务。 | Assets Essentials | Cloud Service, Adobe Managed Services，内部部署 | 云服务 |
 | **常规** |
 | 从发送数字文件 [!DNL Workfront] to [!DNL Assets] | WF文档的最新版本可以上传到AEM Assets，该版本将作为文档的新版本链接。 | ✓ | ✓ | ✓ |
