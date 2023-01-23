@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
-workflow-type: ht
-source-wordcount: '3837'
-ht-degree: 100%
+source-git-commit: a3f7a6759ca41d929e250171e52e43c21ad9450b
+workflow-type: tm+mt
+source-wordcount: '3845'
+ht-degree: 99%
 
 ---
 
@@ -794,6 +794,7 @@ ht-degree: 100%
       + [AEM 技术基础](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 参考材料](/help/implementing/developing/reference-materials.md)
       + [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [为服务器端API生成访问令牌（旧版）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速站点创建和前端自定义](/help/implementing/developing/introduction/quick-site-creation.md)
       + [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自定义站点模板和主题](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
