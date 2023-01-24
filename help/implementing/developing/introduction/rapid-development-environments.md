@@ -2,10 +2,10 @@
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
 hidefromtoc: true
-source-git-commit: 983901387d059a98942b4f7c533770a55dd4ff4a
+source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 7%
+source-wordcount: '2350'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 >[!AVAILABILITY]
 >
->此功能尚不可用。
+>此功能计划在2月份整个月逐步向客户推出。
 
 为了部署更改，当前的云开发环境需要使用一种流程，该流程采用称为CI/CD管道的广泛代码安全和质量规则。 对于需要快速、迭代更改的情况，Adobe引入了快速开发环境（简称RDE）。
 
@@ -30,9 +30,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规的云开
 
 通常，单个开发人员在给定时间使用RDE来测试和调试特定功能。 开发会话完成后，RDE可重置为默认状态，以供下次使用。
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
-
-Additional RDEs may be purchased for Production programs -->
+其他RDE可以获得生产（非沙盒）程序的许可。
 
 ## 在程序中启用RDE {#enabling-rde-in-a-program}
 
@@ -388,14 +386,17 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
 出于这些原因，建议在RDE环境上验证代码后，使用非生产管道将代码部署到云开发环境。 最后，在使用生产管道部署之前，先测试代码。
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
+另请注意以下特定于解决方案的注意事项：
 
-## How many RDEs do I need? {#how-many-rds-do-i-need}
+* RDE当前不支持查看和调试使用Cloud Manager前端管道部署的前端代码。
 
-The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
-The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
+## 我需要多少个RDE? {#how-many-rds-do-i-need}
 
-At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
+RDE适用于每个获得许可的解决方案，并且Adobe还提供其他RDE，这些RDE可以获得生产（非沙盒）程序的许可。
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
+需要的RDE数量取决于组织的组成和流程。 最灵活的模型是，组织为其每个AEM Cloud Service开发人员购买专用RDE。 在此模型中，每个开发人员都可以在RDE上测试其代码，而无需就RDE环境是否可用与其他团队成员进行协调。
+
+在另一个极端，具有单个RDE的团队可以使用内部流程来协调哪些开发人员可以在给定时间使用环境。 这可能是在开发人员点击了中间功能里程碑并准备好在云环境中验证时执行的，在云环境中，开发人员可以快速进行所需的更改。
+
+中间模型是指组织购买大量RDE的模型，因此使用未使用的RDE的可能性更大。 一种策略是为每个扫描团队或主要功能分配RDE。 内部进程可用于协调环境的使用。
