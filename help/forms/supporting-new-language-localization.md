@@ -3,7 +3,7 @@ title: 支持自适应表单本地化的新区域设置
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms允许您为本地化自适应表单添加新区域设置。 英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾语(zh-TW)和韩语(ko-KR)区域设置。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
+source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
 1. [克隆存储库](#1-clone-the-repository-clone-the-repository)
 1. [向GuideLocalizationService服务添加区域设置](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [添加区域设置名称特定的文件夹](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-3.1 [为区域设置添加XFA客户端库](#3-add-xfa-client-library-for-a-locale)
-3.2 [为区域设置添加自适应表单客户端库](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+   * [为区域设置添加XFA客户端库](#3-add-xfa-client-library-for-a-locale)
+   * [为区域设置添加自适应表单客户端库](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [为词典添加区域设置支持](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [提交存储库中的更改并部署管道](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -63,9 +63,9 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
 #### 3.1为locale-name文件夹中的区域设置添加XFA客户端库
 
 1. 创建名为的节点 `[locale-name]_xfa` 并键入作为 `cq:ClientLibraryFolder` 在 `etc/clientlibs/locale_name`，类别 `xfaforms.I18N.<locale>`，并添加以下文件：
-* **I18N.js** 定义 `xfalib.locale.Strings` 对于 `<locale>` 定义 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-* **js.txt** 包含以下内容：
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+   * **I18N.js** 定义 `xfalib.locale.Strings` 对于 `<locale>` 定义 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+   * **js.txt** 包含以下内容：
+      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 #### 3.2.为区域设置名称文件夹添加自适应表单客户端库 {#add-adaptive-form-client-library-for-a-locale-br}
 
@@ -77,9 +77,9 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
 
 1. 添加 **js.txt** 包含以下内容：
 
-   ```text
+   ```
      i18n.js
-       LogMessages.js
+     LogMessages.js
    ```
 
 ### 4.为词典添加区域设置支持 {#add-locale-support-for-the-dictionary-br}
@@ -143,7 +143,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 获取 [示例客户端库](/help/forms/assets/locale-support-sample.zip) 添加对新区域设置的支持。 您需要在所需的区域设置中更改文件夹的内容。
 
-### 支持新本地化的最佳实践 {#best-practices}
+## 支持新本地化的最佳实践 {#best-practices}
 
 * Adobe建议在创建自适应表单后创建翻译项目。
 
