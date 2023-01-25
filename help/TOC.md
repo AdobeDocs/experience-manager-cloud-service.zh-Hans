@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a3f7a6759ca41d929e250171e52e43c21ad9450b
+source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3849'
 ht-degree: 99%
 
 ---
@@ -526,6 +526,7 @@ ht-degree: 99%
          + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
          + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
          + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
+         + [支持新语言本地化](/help/forms/supporting-new-language-localization.md)
          + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
       + 配置版面并将样式应用于自适应表单{#configure-layout-of-an-adaptive-form}
          + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
