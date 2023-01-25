@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1028'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 0%
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="启动内容片段编辑器"
 >abstract="您的 AEM Headless 试用版集成了示例 React 应用程序，因此您可以看到任何人无需开发时间即可轻松独立管理内容。<br><br>单击下方在新选项卡中启动该模块，然后遵循该指南。"
->additional-url="https://video.tv.adobe.com/v/328618" text="自定义应用程序介绍视频"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
@@ -32,7 +31,7 @@ ht-degree: 0%
 
 ## 预览应用程序 {#preview}
 
-从内容片段编辑器开始，就会加载随AEM无头试用版一起提供的示例应用程序。 示例应用程序由通过GraphQL提供的内容片段提供支持。 使用内容片段编辑器，通过预览示例应用程序来熟悉编辑器。
+您可以在内容片段编辑器中，从已加载的 AEM Headless 试用版随附的示例应用程序开始。该示例应用程序由通过 GraphQL 交付的内容片段提供支持。使用内容片段编辑器，通过预览示例应用程序来熟悉编辑器。
 
 1. 点按或单击编辑器屏幕右上角的&#x200B;**预览**&#x200B;按钮。
 
@@ -52,9 +51,9 @@ ht-degree: 0%
 
 1. 编辑器将打开山地车手应用程序的标题面板。每个面板都由图层组成，其代表构成该体验的不同图像和文本。
 
-1. 选择文本层 **峡谷文本层中的Mtn自行车手** 以在编辑器中打开层的详细信息。 该层由多个内容片段组成，这些片段控制的是应用程序面板中显示的文本。
+1. 选择文本层&#x200B;**峡谷中的山地车手**&#x200B;以在编辑器中打开该层的细节。该层由多个内容片段组成，这些片段控制的是应用程序面板中显示的文本。
 
-1. 选择&#x200B;**“峡谷中的山地车手”标题**&#x200B;文本项。这将打开显示此片段内容的内容片段编辑器，并允许您对其进行修改。
+1. 选择&#x200B;**“峡谷中的山地车手”标题**&#x200B;文本项。这将打开内容片段编辑器，其中显示该片段的内容并允许您进行修改。
 
 1. 将文本从 `Your next great adventure is calling` 更改为 `Choose your own adventure`。编辑器将自动保存此更改。
 
@@ -78,7 +77,7 @@ ht-degree: 0%
 
 1. 点按或单击 **X** 可删除车手图像。该图像将消失，并且编辑器会显示一个错误，因为图像是此内容片段模型所需的数据。
 
-   ![从片段中删除图像](assets/do-not-localize/swap-image-4.png)
+   ![从片段中移除图像](assets/do-not-localize/swap-image-4.png)
 
 1. 点按或单击&#x200B;**添加资产**。
 

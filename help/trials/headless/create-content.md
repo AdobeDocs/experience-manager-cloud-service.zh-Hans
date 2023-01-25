@@ -4,10 +4,10 @@ description: 使用您之前创建的内容片段模型来创建可用于页面�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 96%
+source-wordcount: '459'
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="启动内容片段控制台"
->abstract="创建可在您的应用程序和网站上无缝运行的一致、高质量的内容可以带来出色的客户体验。本模块将指导您如何创建您的第一个内容片段，以说明如何实现这一目标。观看视频以了解为什么这一步很重要。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
->additional-url="https://video.tv.adobe.com/v/328618" text="创建新的内容介绍视频"
+>abstract="创建可在您的应用程序和网站上无缝运行的一致、高质量的内容可以带来出色的客户体验。本模块将指导您如何创建您的第一个内容片段，以说明如何实现这一目标。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
@@ -32,7 +31,7 @@ ht-degree: 96%
 
 ## 创建内容片段 {#create-fragment}
 
-内容片段代表无头内容，并且基于预定义的结构，即内容片段模型。可以将内容片段控制台视为您的无头内容库。使用它创建新的内容片段并管理现有片段。
+内容片段代表无头内容，并且基于预定义的结构，即内容片段模型。可以将内容片段控制台视为您的无头内容库。使用它来创建新的内容片段并管理现有的片段。
 
 1. 点按或单击该控制台右上角的&#x200B;**创建**&#x200B;按钮。
 
