@@ -2,7 +2,7 @@
 title: 使用前端管道开发站点
 description: 利用前端管道，使前端开发者获得更大的独立性，使开发过程获得大量的速度。 本文档介绍了前端构建过程中应考虑的一些特定注意事项。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ### 节点版本 {#node-versions}
 
-默认情况下，前端管道使用节点14，但也提供16和16。
+默认情况下，前端管道使用节点14，但也提供12和16。
 
 您可以使用 `CM_CUSTOM_VAR_NODE_VERSION` 环境变量来设置所需的版本。
 
