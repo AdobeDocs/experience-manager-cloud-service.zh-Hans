@@ -4,16 +4,16 @@ description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2024.1.0 发�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 26a2ed4ee613b77c192652ae9afa99d5a86f72ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.1.0 发行说明 {#release-notes}
 
-本页记录了AEM as a Cloud Service中Cloud Manager 2023.1.0版的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.1.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,22 +21,22 @@ ht-degree: 33%
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2023.1.0版的发布日期是2023年1月19日。 下一个版本计划于 2023 年 2 月 16 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 2023.1.0 版本的发布日期是 2023 年 1 月 19 日。下一个版本计划于 2023 年 2 月 16 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 可用性增强是通过更新光标样式来区分用户在何处可以执行操作还是默认指针来实现的。
+* 通过更新区分用户可在何处执行操作的光标样式与默认指针，增强了可用性。
 
-* 在环境和管道执行的列表中，您现在可以通过单击单个行来访问详细信息。
+* 在环境和管道执行列表中，您现在可以通过单击单独的行来访问详细信息。
 
-* 自定义UI测试报表现在会复制到Cloud Manager存储，并且可以通过Cloud Manager API调用访问。
+* 自定义 UI 测试报告现在已复制到 Cloud Manager 存储，并且可以通过 Cloud Manager API 调用进行访问。
 
-* 用户现在可以使用左 — 右箭头在上线小组件状态之间进行转换。
+* 用户现在可以使用左右箭头在上线的构件状态之间转换。
 
-   ![上线小组件过渡](assets/go-live-transitions.gif)
+   ![上线的构件转换](assets/go-live-transitions.gif)
 
-* 自助服务 [创建支持HIPAA的计划](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 现在，当相应的权限和权限可用时，即可使用。
+* 当相应的授权和权限可用时，现在可以自助[创建支持 HIPAA 的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 
 ## 错误修复 {#bug-fixes}
 
-* Cloud Manager将防止两个管道执行同时（或几乎同时）开始，从而避免管道故障。
+* Cloud Manager 将阻止同时（或几乎同时）开始两个管道执行，从而避免管道故障。
