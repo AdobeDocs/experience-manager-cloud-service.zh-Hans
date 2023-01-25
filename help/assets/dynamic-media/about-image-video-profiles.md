@@ -4,10 +4,10 @@ description: 图像配置文件或视频配置文件是将哪些选项应用到�
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f2f805043ab3037cb8dcc8636ab162c9d0f80e19
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 2%
+source-wordcount: '1376'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
@@ -74,13 +74,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 在页面的左上角附近，从下拉列表中，选择 **[!UICONTROL 时间轴]**.
 1. 在页面的左下角附近，位于 [!UICONTROL 注释] 字段中，选择“加载”图标( **^** )。
 
-   ![重新处理资产工作流1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Experience Manager中资产的屏幕截图，其中显示了选定的资产文件夹，时间轴下拉列表高亮显示，启动工作流按钮高亮显示，评论字段右侧的加载图标也高亮显示。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. 选择 **[!UICONTROL 启动工作流]**.
 1. 从 **[!UICONTROL 启动工作流]** 下拉列表中，选择 **[!UICONTROL Scene7:重新处理资产]**.
 1. （可选）在 **输入工作流的标题** 文本字段，输入工作流的名称。 如有必要，您可以使用名称引用工作流实例。
 
-   ![重新处理资产2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![带有“Scene7:重新处理资产”（从启动工作流下拉列表中选择），然后突出显示开始按钮。](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
 1. 选择 **[!UICONTROL 开始]**，然后选择 **[!UICONTROL 确认]**.
 
@@ -95,13 +95,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 在 [!DNL Experience Manager]，选择 **[!UICONTROL Adobe Experience Manager]** 要访问全局导航控制台，请选择 **[!UICONTROL 工具]** （锤子）图标> **[!UICONTROL 工作流>模型]**.
 1. 在“工作流模型”页面的卡片视图或列表视图中，选择 **[!UICONTROL Scene7:重新处理资产]**.
 
-   ![工作流模型页面，其中包含Scene7:重新处理在卡片视图中选择的资产工作流](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![“工作流模型”页面的屏幕截图，其中包含“Scene7:重新处理在资产的卡片视图中选择的Experience Manager”工作流。](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
 1. 在工具栏中，选择 **[!UICONTROL 编辑]**. 新的浏览器选项卡会打开Scene7:重新处理资产工作流模型页面。
 1. 在Scene7上：重新处理资产工作流页面的右上角附近，选择 **[!UICONTROL 编辑]** “解锁”工作流。
 1. 在工作流中，选择Scene7批量上传组件以打开工具栏，然后选择 **[!UICONTROL 配置]** 中。
 
-   ![Scene7批量上传组件](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![“Scene7”上的“Scene7批量上传”组件的屏幕截图：重新处理资产”页面，并将鼠标指针悬停在“配置”图标上。](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
 1. 在 **[!UICONTROL 批量上传到Scene7 — 步骤属性]** 对话框，请设置以下内容：
    * 在 **[!UICONTROL 标题]** 和 **[!UICONTROL 描述]** 文本字段，根据需要输入作业的新标题和描述。
@@ -111,13 +111,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 在 **[!UICONTROL 批处理字段]**，输入在Dynamic Media服务器批量处理上传作业中要处理的资产最大数量(50-1000)。
    * 选择 **[!UICONTROL 超时前进]** 如果您希望在达到超时时前进。 如果要在达到超时时继续进入收件箱，请取消选择。
 
-   ![“属性”对话框](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![“批量上传到Scene7 — 步骤属性”页面的屏幕截图。](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
 1. 位于的右上角 **[!UICONTROL 批量上传到Scene7 — 步骤属性]** 对话框，选择 **[!UICONTROL 完成]**.
 
 1. 位于Scene7的右上角：重新处理资产工作流模型页面，选择 **[!UICONTROL 同步]**. 当您看到 **[!UICONTROL 已同步]**，则工作流运行时模型已成功同步并可重新处理文件夹中的资产。
 
-   ![同步工作流模型](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Experience Manager中资产的屏幕截图，其中显示了选定的资产文件夹，时间轴下拉列表高亮显示，启动工作流按钮高亮显示，评论字段右侧的加载图标也高亮显示。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. 关闭显示Scene7的浏览器选项卡：重新处理资产工作流模型。
 
