@@ -2,10 +2,10 @@
 title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
-workflow-type: ht
+source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
+workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ UI 测试作为每个 Cloud Manager 管道的特定质量关卡的一部分，�
 
 ### 客户选择启用 {#customer-opt-in}
 
-为了让 Cloud Manager 构建和执行 UI 测试，您必须通过向存储库添加文件来选择此功能。
+要使Cloud Manager生成并执行您的UI测试，您必须通过向存储库添加文件来选择加入此功能。
 
 * 文件名称必须为 `testing.properties`。
 * 文件内容必须为 `ui-tests.version=1`。

@@ -3,10 +3,10 @@ title: AEM 版本更新
 description: AEM 版本更新
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
+source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 36%
+ht-degree: 30%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 36%
 
 ## 简介 {#introduction}
 
-AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产实例和暂存实例均会更新到最新 AEM 版本而无需中断用户的服务。
+AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产和暂存实例将更新到最新的AEM版本，而不会中断用户的服务。
 
 >[!NOTE]
 >
