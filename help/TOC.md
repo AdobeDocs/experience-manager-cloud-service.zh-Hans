@@ -9,9 +9,9 @@ breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3849'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -795,7 +795,7 @@ ht-degree: 99%
       + [AEM 技术基础](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 参考材料](/help/implementing/developing/reference-materials.md)
       + [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [为服务器端API生成访问令牌（旧版）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [为服务器端 API 生成访问令牌（旧版）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速站点创建和前端自定义](/help/implementing/developing/introduction/quick-site-creation.md)
       + [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自定义站点模板和主题](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
