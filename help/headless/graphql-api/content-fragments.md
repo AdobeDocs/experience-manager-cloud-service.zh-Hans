@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4174'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -241,15 +241,15 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 | 内容片段模型 – 数据类型 | GraphQL 类型 | 描述 |
 |--- |--- |--- |
-| 单行文本 | 字符串，[字符串] | 用于简单字符串，如作者名称、位置名称等。 |
-| 多行文本 | 字符串, [字符串] | 用于输出文本，如文章的正文 |
-| 数字 | 浮动， [浮动] | 用于显示浮点数和常规数字 |
-| 布尔型 | 布尔型 | 用于显示复选框→简单true/false语句 |
-| 日期和时间 | 日程表 | 用于以ISO 8601格式显示日期和时间。 根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
+| 单行文本 | 字符串，[字符串] | 用于简单字符串，例如作者姓名、位置名称等 |
+| 多行文本 | 字符串, [字符串] | 用于输出文本，例如文章的正文 |
+| 数字 | 浮点，[浮点] | 用于显示浮点数和常规数字 |
+| 布尔型 | 布尔型 | 用于显示复选框 → 简单的 true/false 语句 |
+| 日期和时间 | 日程表 | 用于显示日期和时间，使用 ISO 8601 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
 | 枚举 | 字符串 | 用于显示在模型创建时定义的选项列表中的选项 |
-| 标记 | [字符串] | 用于显示表示AEM中所用标记的字符串列表 |
-| 内容引用 | 字符串，[字符串] | 用于在AEM中显示指向其他资产的路径 |
-| 片段引用 | *模型类型* | 用于引用在创建模型时定义的特定模型类型的另一个内容片段 |
+| 标记 | [字符串] | 用于显示表示在 AEM 中所用标记的字符串列表 |
+| 内容引用 | 字符串，[字符串] | 用于显示指向 AEM 中其他资源的路径 |
+| 片段引用 | *模型类型* | 用于引用特定模型类型的其他内容片段，在创建模型时定义 |
 
 ### 帮助程序字段 {#helper-fields}
 
@@ -513,7 +513,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 * 每个字段的子定义（可以通过其名称访问该字段，例如，数据（字段）类型中的 `lastName` 字段的过滤器中有一个 `lastName` 字段）
 * 每个子定义包含 `_expressions` 数组，提供表达式集，以及 `_logOp` 字段，该字段定义表达式应与之组合的逻辑运算符
-* 每个表达式由值（`value` 字段）和运算符（`_operator` 字段）定义，字段的内容应该与
+* 每个表达式由值（`value` 字段）和运算符（`_operator` 字段）定义，字段的内容应该与之进行比较
 
 请注意，如果要将项目与 `AND` 组合，则可以省略 `_logOp`；如果要检查是否相等，则可以省略 `_operator`，因为这些是默认值。
 
