@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* [体验片段的个性化选项卡](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)支持体验片段编辑器进行分段详述，以及灵活创建嵌套体验片段，从而可以为多个片段创建页眉和页脚变化。在此功能推出之前，AEM 提供的个性化仅适用于网站页面，不适用于体验片段
+* [体验片段的个性化选项卡](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)支持体验片段编辑器进行分段详述，以及灵活创建嵌套体验片段，从而可以为多个片段创建页眉和页脚变化。在此功能推出之前，AEM 提供的个性化仅适用于网站页面，不适用于体验片段。
 
 * [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在使用户能够有效地管理翻译的内容片段。 还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
 
