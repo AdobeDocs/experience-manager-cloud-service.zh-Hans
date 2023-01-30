@@ -1,10 +1,11 @@
 ---
 title: 管理查看器预设
 description: 了解如何在Dynamic Media中创建和管理查看器预设。
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 16%
@@ -69,7 +70,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 * Android™智能手机
 * Android™平板电脑
 
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### 查看器预设的富媒体类型 {#rich-media-types-for-viewer-presets}
 
@@ -470,7 +471,7 @@ Experience Manager在从以下位置查看资产时，会显示各种查看器�
    <td><strong>描述</strong></td>
   </tr>
   <tr>
-   <td>区段</td>
+   <td>市场细分</td>
    <td><p><code>Segment </code>是现成交互式视频查看器预设的默认显示模式 <code>Shoppable_Video_light</code> 和 <code>Shoppable_Video_dark</code> 以及您自己创建的任何交互式视频查看器预设。</p> <p>在此模式下，假定分配给视频区段的缩略图数量少于显示面板中的可见点数。 在这种情况下，下一个或上一个子区段的缩略图是 <i>not </i>拉进来填充面板中的任何空白位置。 即，它保留分配给特定视频区段的色板的显示。</p> </td>
   </tr>
   <tr>
@@ -577,7 +578,7 @@ Experience Manager在从以下位置查看资产时，会显示各种查看器�
 
 1. 在Experience Manager的左上角，选择Experience Manager徽标，然后在左边栏中，选择 **[!UICONTROL 工具]** （锤子图标）> **[!UICONTROL 资产] > [!UICONTROL 查看器预设]**.
 1. 在“查看器预设”页面上，选中预设标题，然后选择 **[!UICONTROL 垃圾]** 图标。
-1. 选择 **[!UICONTROL 删除]**.
+1. 选择&#x200B;**[!UICONTROL 删除]**。
 
 ## 将查看器预设应用于资产 {#applying-a-viewer-preset-to-an-asset}
 

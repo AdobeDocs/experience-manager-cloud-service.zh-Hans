@@ -1,7 +1,8 @@
 ---
 title: 投放 Dynamic Media 资源
 description: 通过Dynamic Media，您可以选择多个选项来将Dynamic Media资产（视频和图像）交付到您的网站。
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+contentOwner: Rick Brough
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 19%

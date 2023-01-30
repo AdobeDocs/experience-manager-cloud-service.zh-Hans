@@ -1,10 +1,11 @@
 ---
 title: 通过Dynamic Media Classic使CDN（内容交付网络）缓存失效
 description: 了解如何使CDN（内容分发网络）缓存内容失效，以便快速更新由Dynamic Media交付的资产，而无需等待缓存过期。
+contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 15%

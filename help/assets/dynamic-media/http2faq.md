@@ -1,9 +1,10 @@
 ---
 title: HTTP2 内容投放常见问题解答
 description: 了解HTTP2内容交付。
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%

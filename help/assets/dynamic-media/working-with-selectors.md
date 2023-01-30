@@ -1,9 +1,10 @@
 ---
 title: 使用选择器
 description: 了解在Dynamic Media中，可以使用方法选择交互式图像、交互式视频和轮播横幅的资产。
+contentOwner: Rick Brough
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 1%

@@ -1,10 +1,11 @@
 ---
 title: 传送横幅
 description: 了解如何在Dynamic Media中使用传送横幅。
+contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 6%
@@ -318,7 +319,7 @@ ht-degree: 6%
 
    您还可以预览轮播横幅的外观。 请参阅 [（可选）预览传送横幅](#optional-previewing-carousel-banners).
 
-1. 选择&#x200B;**[!UICONTROL “保存”]**。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 发布轮播集。 发布后会创建可在您的网站页面上使用的嵌入代码或URL。 如果您是Experience Manager Sites客户，请将轮播集直接添加到您的网页。
 
    请参阅 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

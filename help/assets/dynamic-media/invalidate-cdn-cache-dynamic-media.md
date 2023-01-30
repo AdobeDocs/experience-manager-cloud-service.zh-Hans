@@ -1,10 +1,11 @@
 ---
 title: 通过Dynamic Media使内容交付网络缓存失效
 description: 了解如何使CDN（内容分发网络）缓存内容失效，以便快速更新由Dynamic Media交付的资产，而无需等待缓存过期。
+contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: db0451e76564f238b34555aafa3692202887a1d6
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%

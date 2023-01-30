@@ -1,10 +1,11 @@
 ---
 title: 将 Dynamic Media 查看器与 Analytics 和 Adobe Experience Platform 标记集成
 description: 了解适用于Experience Platform标记的Dynamic Media查看器扩展和Dynamic Media查看器5.13。它允许Adobe Analytics和Platform标记的客户在其Experience Platform标记配置中使用特定于Dynamic Media查看器的事件和数据。
+contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 7%

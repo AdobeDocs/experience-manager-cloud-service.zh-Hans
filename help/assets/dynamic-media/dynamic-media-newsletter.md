@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media新闻稿存档
 description: 按Experience League划分的Dynamic Media时事通讯是每月时事通讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您立即实现价值。 本一站式商店快讯中提供宝贵的知识建设资源。 例如，提供了操作方法视频和解决方案概述。 阅读一些关键特性和功能，如图像预设、查看器预设、视频配置文件等。
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
@@ -37,7 +38,7 @@ ht-degree: 0%
     * Summit customer spotlight: Under Armour.
     * Never miss an Experience Insider webinar.
     * Public sector spotlight: The urgent need for digital enrollment.
-    * Look what’s new in Experience Manager Innovation.
+    * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->

@@ -1,10 +1,11 @@
 ---
 title: 应用 Dynamic Media 图像预设
 description: 了解如何在Dynamic Media中应用图像预设。
+contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 35%

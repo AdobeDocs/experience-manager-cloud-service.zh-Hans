@@ -1,9 +1,10 @@
 ---
 title: 使用 Dynamic Media
 description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上使用。
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 37%
@@ -37,7 +38,7 @@ Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频�
 * [视频](video.md)
 * [传送 Dynamic Media 资产](delivering-dynamic-media-assets.md)
 * [管理资产](managing-assets.md)
-* [使用概览创建自定义弹出窗口®](custom-pop-ups.md)
+* [使用快速视图创建自定义弹出窗口](custom-pop-ups.md)
 
 另请参阅 [设置Dynamic Media](administering-dynamic-media.md).
 

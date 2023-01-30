@@ -1,10 +1,11 @@
 ---
 title: 交付Dynamic Media资产
 description: 了解如何交付Dynamic Media资产。
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 10%

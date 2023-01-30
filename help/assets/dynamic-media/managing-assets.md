@@ -1,10 +1,11 @@
 ---
 title: 管理 Dynamic Media 资源
 description: 了解如何使用Dynamic Media资产。
+contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 35%

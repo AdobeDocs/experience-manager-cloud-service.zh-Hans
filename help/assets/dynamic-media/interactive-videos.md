@@ -1,10 +1,11 @@
 ---
 title: 交互式视频
 description: 了解如何在Dynamic Media中使用交互式视频和购物视频。
+contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 16%
@@ -68,9 +69,8 @@ There was a link here that showed the video frame of an interactive video and wh
 
 1. **（可选）识别概览变量**  — 首先，识别现有概览实施所使用的动态变量。 在创建交互式视频时，您可以使用变量将产品缩略图映射到其相应的产品概览。 请参阅 [（可选）识别概览变量](#optional-identifying-quickview-variables).
    **仅当满足以下所有条件时，才需要执行此步骤：**
-·您希望通过触发概览来增加视频的交互性。
-·您的Experience Manager实施 
-*not* 使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager中。
+   * 您希望通过触发概览来为视频添加交互性。
+   * 您的Experience Manager实施可以 *not* 使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager中。
 
 1. **（可选）创建交互式视频查看器预设**  — 自定义构成播放器的各种组件的外观和行为，如视频清理器和交互式缩略图。
 如果您打算使用现成的交互式视频查看器预设，则无需创建您自己的交互式视频查看器预设 `Shoppable_Video_Light` 或 `Shoppable_Video_Dark` 中。
@@ -102,7 +102,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >* 您希望通过触发概览来为视频添加交互性。
 >* 您的Experience Manager实施可以 *not* 使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager中。 <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
->如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
+如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
 
 首先，识别现有概览实施所使用的动态变量，以便您能够在交互式视频创建过程中将产品缩略图映射到其相应产品概览。
 
@@ -242,8 +242,7 @@ There was a link here that showed the video frame of an interactive video and wh
 如果您已上传视频和缩略图资产，请继续 [为视频添加交互性](#adding-interactivity-to-your-video).
 
 >[!NOTE]
->
->MXF视频格式尚不支持与Dynamic Media中的交互式视频一起使用。
+MXF视频格式尚不支持与Dynamic Media中的交互式视频一起使用。
 
 如果您上传了错误的视频或图像，或者想要删除不再需要的已上传视频或图像，请参阅 [删除资产](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -265,12 +264,10 @@ There was a link here that showed the video frame of an interactive video and wh
 请参阅 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->在体验片段中嵌入查看器时，不支持交互式视频中的社交媒体共享工具。 您而是可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
+在体验片段中嵌入查看器时，不支持交互式视频中的社交媒体共享工具。 您而是可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
 
 >[!NOTE]
->
->如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager Sites页面的链接，则无法使用基于URL的链接方法。
+如果您的交互式内容具有包含相对URL的链接，特别是指向Experience Manager Sites页面的链接，则无法使用基于URL的链接方法。
 
 在当前创建/编辑会话期间，支持页面右上角附近的撤消和重做选项。
 
@@ -313,11 +310,11 @@ There was a link here that showed the video frame of an interactive video and wh
         </tr>
         <tr>
         <td>3分钟或更多</td>
-        <td>60秒</td>
+        <td>60 秒</td>
         </tr>
         <tr>
         <td>2-3分钟</td>
-        <td>30秒</td>
+        <td>30 秒</td>
         </tr>
         <tr>
         <td>1-2 分钟</td>
@@ -325,11 +322,11 @@ There was a link here that showed the video frame of an interactive video and wh
         </tr>
         <tr>
         <td>30-60秒</td>
-        <td>10秒</td>
+        <td>10 秒</td>
         </tr>
         <tr>
         <td>30秒或更少</td>
-        <td>5秒</td>
+        <td>5 秒</td>
         </tr>
       </tbody>
     </table>
@@ -498,8 +495,7 @@ There was a link here that showed the video frame of an interactive video and wh
    完成后，选择 **[!UICONTROL 保存]**.
 
    >[!NOTE]
-   >
-   >在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 的 `.vtt` 文件已保存到 `_VTT` 的根文件夹 **[!UICONTROL 资产]**. 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
+   在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 的 `.vtt` 文件已保存到 `_VTT` 的根文件夹 **[!UICONTROL 资产]**. 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
 
 1. 发布交互式视频。发布后会创建嵌入代码或URL，您最终会将该嵌入代码或URL复制并粘贴到您的网站体验中。
 
@@ -508,8 +504,7 @@ There was a link here that showed the video frame of an interactive video and wh
    请参阅 [发布资产](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >要发布带有快速视图的购物视频，请确保您还会从商务区域单独发布每个视频的相关图像资产。
+   要发布带有快速视图的购物视频，请确保您还会从商务区域单独发布每个视频的相关图像资产。
 
    在添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站登录页面。请参阅 [将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website).
 
@@ -535,10 +530,8 @@ There was a link here that showed the video frame of an interactive video and wh
 复制的嵌入代码是为响应式环境设置的，以便自动适应之前由静态视频占用的区域。
 
 >[!NOTE]
->
->至此，如果您只是通过超链接的网页添加交互性，您就已经完成了所有操作。
->
->但是，如果您为触发概览而添加了任何交互性，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与您现有的概览相集成。 在这种情况下，您必须将交互式视频与网站上的现有概览相集成。
+至此，如果您只是通过超链接的网页添加交互性，您就已经完成了所有操作。
+但是，如果您为触发概览而添加了任何交互性，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与您现有的概览相集成。 在这种情况下，您必须将交互式视频与网站上的现有概览相集成。
 
 **示例**
 
@@ -580,8 +573,7 @@ There was a link here that showed the video frame of an interactive video and wh
 ## 将交互式视频与现有概览相集成 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->此任务仅在您是独立的Experience Manager Assets客户时才适用。
+此任务仅在您是独立的Experience Manager Assets客户时才适用。
 
 此过程的最后一步是，将交互式视频与网站上使用的现有概览实施相集成。 但是，没有任何一种集成解决方案是在所有情况下都适用的。每个概览实施都是唯一的。 因此，需要一种具体的方法，需要前端IT人员的协助。
 

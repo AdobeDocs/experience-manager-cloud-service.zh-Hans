@@ -1,10 +1,11 @@
 ---
 title: 为响应式站点传送优化的图像
 description: 了解如何使用响应式代码功能从Dynamic Media交付优化的图像。
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 27%

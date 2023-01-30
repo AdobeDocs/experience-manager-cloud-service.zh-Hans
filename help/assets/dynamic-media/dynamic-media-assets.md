@@ -1,7 +1,8 @@
 ---
 title: 使用 Dynamic Media
 description: Dynamic Media 有助于按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况。Dynamic Media使用一组主源资产，通过其全球、可扩展、性能优化的网络，实时生成并传送多种富内容变体
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+contentOwner: Rick Brough
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 30%

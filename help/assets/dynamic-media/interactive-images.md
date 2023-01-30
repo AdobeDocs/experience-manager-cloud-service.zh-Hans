@@ -1,10 +1,11 @@
 ---
 title: 交互式图像
 description: 了解如何在Dynamic Media中使用交互式图像。
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 15%
@@ -64,7 +65,7 @@ ht-degree: 15%
 >* 您希望通过触发概览来增加图像的交互性。
 >* 您的Experience Manager实施可以 *not* 使用电子商务集成框架将产品数据从任何电子商务解决方案拉入Experience Manager。 此类解决方案包括IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop。
 >
->如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
+如果您的Experience Manager实施使用电子商务，则可以跳过此任务并继续执行下一项任务。
 
 首先，识别现有概览实施所使用的动态变量，以便您输入热点数据以创建交互式图像。
 
@@ -222,8 +223,7 @@ ht-degree: 15%
 请参阅 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->在体验片段中嵌入查看器时，不支持交互式图像中的社交媒体共享工具。 请改用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
+在体验片段中嵌入查看器时，不支持交互式图像中的社交媒体共享工具。 请改用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
 
 在当前创建/编辑会话期间，支持页面右上角附近的撤消和重做选项。
 
@@ -232,8 +232,7 @@ ht-degree: 15%
 请参阅 [（可选）预览交互式图像](#optional-previewing-interactive-images).
 
 >[!NOTE]
->
->在交互式图像或轮播横幅中向图像添加热点时，热点信息会存储在同一元数据位置。 此位置是相对于图像位置的，无论它是交互式图像还是轮播横幅。 此功能意味着您可以在任意查看器中轻松重复使用同一图像及其定义的热点数据。
+在交互式图像或轮播横幅中向图像添加热点时，热点信息会存储在同一元数据位置。 此位置是相对于图像位置的，无论它是交互式图像还是轮播横幅。 此功能意味着您可以在任意查看器中轻松重复使用同一图像及其定义的热点数据。
 但是，请注意，传送横幅支持图像映射的图像也可能包含热点；交互式图像不会。 如果您打算创建使用相同图像的交互式图像或轮播横幅，请牢记这一点。 您可以使用同一图像的不同副本来创建交互式图像和传送横幅。
 另请参阅 [传送横幅](/help/assets/dynamic-media/carousel-banners.md).
 

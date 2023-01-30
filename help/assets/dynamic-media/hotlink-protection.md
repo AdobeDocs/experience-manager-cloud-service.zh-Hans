@@ -1,10 +1,11 @@
 ---
 title: 在 Dynamic Media 中激活热链接保护
 description: 了解如何在Dynamic Media中激活热链接保护。
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 9%

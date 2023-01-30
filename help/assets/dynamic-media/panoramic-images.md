@@ -1,10 +1,11 @@
 ---
 title: 全景图像
 description: 了解如何在Dynamic Media中处理全景图像。
+contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 另请参阅 [管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![全景图像2](assets/panoramic-image2.png)
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## 上传资产以与全景图像查看器一起使用 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 

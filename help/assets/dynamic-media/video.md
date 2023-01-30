@@ -1,13 +1,14 @@
 ---
 title: Dynamic Media 中的视频
 description: 了解如何在Dynamic Media中处理视频，例如，对视频进行编码、将视频发布到YouTube、查看视频报表，以及向视频添加隐藏式字幕、字幕或章节标记的最佳实践。
+contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 22718edcfb6d233a1316fcf2546e685b57609e8c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '9349'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
 
@@ -132,9 +133,9 @@ Dynamic Media中的视频是一种端到端解决方案，可轻松发布高质�
 
 各种iOS平台均支持自适应视频流播放。 请参阅 [Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
-<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that support this video format at the following [Supported video formats on Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * 使用 Dynamic Media 视频查看器预设播放视频，包括以下查看器：
 
@@ -154,7 +155,7 @@ Dynamic MediaHTML5视频查看器预设是强大的视频播放器。您可以�
 
 在播放器的设计方面，您可以使用标准Web开发工具来设计视频播放器的功能。 例如，您可以使用 HTML5 和 CSS 设计按钮、控件和自定义标识图像背景，从而帮助您向客户展示自定义的外观。
 
-在查看器的播放方面，查看器可以自动检测浏览器的视频功能。然后，它使用HLS（HTTP实时流）（也称为自适应视频流）来提供视频。 或者，如果这些传送方法不可用，则会改用 HTML5 渐进式流播放。
+在查看器的播放端，查看器会自动检测浏览器的视频功能。 然后，它使用HLS（HTTP实时流）（也称为自适应视频流）来提供视频。 或者，如果这些传送方法不可用，则会改用 HTML5 渐进式流播放。
 
 您可以将使用HTML5和CSS设计播放组件的功能合并到单个播放器中。 它可以具有嵌入式播放，并根据浏览器的功能使用自适应和渐进式流播放。 所有这些功能都意味着您可以将富媒体内容的访问范围扩展到桌面用户和移动设备用户，并确保简化视频体验。
 
@@ -244,7 +245,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
-   <td>BlackBerry®</td>
+   <td>BlackBerry&reg;</td>
    <td>HLS</td>
   </tr>
  -->
@@ -283,11 +284,11 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
 |--- |--- |--- |
 | 1024 X 768 | 4:3 | 4500 kbps，适用于大部分视频。 |
 | 1280 X 720 | 16:9 | 3000 - 6000 kbps，具体取决于视频中的动作数量。 |
-| 1920 X 1080 | 16时9分 | 6000 - 8000 kbps，具体取决于视频中的动作数量。 |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps，具体取决于视频中的动作数量。 |
 
 ### 获取文件的元数据 {#obtaining-a-file-s-metadata}
 
-获取文件元数据的方法如下：通过使用视频编辑工具查看文件的元数据，或者使用专门为获取元数据而设计的应用程序。下面说明了如何使用第三方应用程序 MediaInfo 获取视频文件的元数据：
+您可以通过以下方法获取文件的元数据：使用视频编辑工具查看文件的元数据，或使用为获取元数据而设计的应用程序。以下是有关使用第三方应用程序MediaInfo获取视频文件元数据的说明：
 
 1. 转到 [MediaInfo下载](https://mediaarea.net/en/MediaInfo/Download).
 1. 选择并下载 GUI 版本的安装程序，然后按照安装说明进行操作。
@@ -307,7 +308,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
-| 1.78 | 16时9分 |
+| 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
 例如，宽度为1440 x 1080的视频的宽高比为1440/1080或1.33。在这种情况下，请选择宽高比为4:3的视频编码预设，以对视频文件进行编码。
@@ -331,7 +332,7 @@ VBR需要较长的编码时间，但会产生最有利的结果；媒体文件�
 何时使用VBR与CRB?
 选择VBR与CBR时，几乎总是建议将VBR用于媒体文件。 VBR以具有竞争力的比特率提供高质量文件。 使用VBR时，请务必对两遍编码进行使用，并将最大比特率设置为目标视频比特率的1.5倍。
 
-选择视频编码预设时，请确保考虑目标最终用户的连接速度。 所选预设的数据率应该是目标最终用户连接速度的 80%。例如，如果目标最终用户的连接速度是 1000 Kbps，则最佳预设就是视频数据率为 800 Kbps 的预设。
+选择视频编码预设时，请确保考虑目标最终用户的连接速度。 所选预设的数据率应该是目标最终用户连接速度的 80%。例如，如果目标最终用户的连接速度为1000 Kbps，则最佳预设是视频数据率为800 Kbps的预设。
 
 下表说明了典型连接速度的数据率。
 
@@ -344,7 +345,7 @@ VBR需要较长的编码时间，但会产生最有利的结果；媒体文件�
 
 ### 解决方法 {#resolution}
 
-**分辨率**&#x200B;以像素为单位描述视频文件的高度和宽度。大多数源视频以高分辨率存储（例如，1920 x 1080）。出于流播放目的，源视频会压缩至较低分辨率（640 x 480 或更低）。
+**分辨率** 以像素为单位描述视频文件的高度和宽度。大多数源视频以高分辨率存储（例如，1920 x 1080）。 出于流播放目的，源视频会压缩为较小的分辨率（640 x 480或更低）。
 
 分辨率和数据率是两个相互关联、密不可分的因素，它们决定着视频质量。为保持同等的视频质量，视频文件的像素数越高（分辨率越高），数据率就必须越高。例如，考虑分辨率分别为 320 x 240 和 640 x 480 的视频文件的每帧像素数：
 
@@ -940,7 +941,7 @@ For YouTube publishing jobs, do the following:
 如果视频是在 Adobe Experience Manager Dynamic Media 外部编码的，就不会提供受众保留（流失）图表和表中的播放比例数据。
 
 >[!NOTE]
-只有在使用 Dynamic Media 自带的视频播放器及关联的视频播放器预设时，才可跟踪并报告数据。因此，对于通过其他视频播放器播放的视频，您无法进行跟踪和报告。
+跟踪和报告数据完全基于使用Dynamic Media自己的视频播放器和关联的视频播放器预设。因此，您无法跟踪和报告通过其他视频播放器播放的视频。
 
 默认情况下，在您首次进入视频报表时，报表会显示从当月的第一个开始到当月日期结束的视频数据。但是，您可以通过指定您自己的日期范围来覆盖默认日期范围。下次输入视频报表时，将使用您指定的日期范围。
 
@@ -1091,7 +1092,7 @@ Dynamic Media可以将题注文件转换为JSON（JavaScript对象表示法）�
 >[!NOTE]
 使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器确实支持章节标记，但使用第三方视频播放器可能不支持。
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 为视频创建章节列表的方式与创建字幕的方式大致相同。 即，创建一个WebVTT文件。 但是，请注意，此文件必须与任何WebVTT标题文件分开。 不能将字幕和章节合并到一个WebVTT文件中。
 

@@ -1,10 +1,11 @@
 ---
 title: 混合媒体集
 description: 了解如何在Dynamic Media中使用混合媒体集。
+contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 20%
@@ -69,7 +70,7 @@ ht-degree: 20%
 >
 >如果您在创建集时遇到问题，请参阅 [Dynamic Media故障诊断](/help/assets/dynamic-media/troubleshoot-dm.md).
 
-## 上传资产 {#uploading-assets}
+## 上传资源 {#uploading-assets}
 
 首先为混合媒体集上传图像和视频。 请记住，用户可以在混合媒体集查看器中缩放图像。 因此，在选择具有此缩放功能的图像时，请牢记这一点。 确保图像的最大大小至少为2000像素。
 
@@ -117,7 +118,7 @@ ht-degree: 20%
 
 1. 要删除资产，请选中相应的复选框，然后选择 **[!UICONTROL 删除资产]**.
 1. 要应用预设，请选择 **[!UICONTROL 预设]** ，然后选择要应用于资产的预设。
-1. 选择&#x200B;**[!UICONTROL “保存”]**。您新创建的混合媒体集会显示在创建时所用的文件夹中。
+1. 选择&#x200B;**[!UICONTROL 保存]**。您新创建的混合媒体集会显示在创建时所用的文件夹中。
 
 ## 编辑混合媒体集 {#editing-mixed-media-sets}
 

@@ -1,10 +1,11 @@
 ---
 title: 使用 Quickview 创建自定义弹出窗口
-description: “了解在电子商务体验中如何使用默认的概览，在该体验中会显示一个弹出窗口，其中包含产品信息以促进购买。 您可以触发要在弹出窗口中显示的自定义内容。”
+description: 了解在电子商务体验中如何使用默认的概览，在该体验中会显示一个弹出窗口，其中包含产品信息以促进购买。 您可以触发要在弹出窗口中显示的自定义内容。
+contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%

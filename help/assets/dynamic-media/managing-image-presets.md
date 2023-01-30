@@ -1,10 +1,11 @@
 ---
 title: 管理图像预设
 description: 了解图像预设以及如何创建、修改和管理图像预设。
+contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 22%
@@ -98,8 +99,8 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager Assets�
 | 进程参数 | 默认设置 | 描述 |
 |---|---|---|
 | Mime 类型 | application/pdf<br>application/postscript<br>application/illustrator | 被视为PDF或Illustrator文档的文档mime类型列表。 |
-| 最大宽度 | 2048年 | 生成的预览呈现版本的最大宽度（以像素为单位）。 |
-| 最大高度 | 2048年 | 生成的预览呈现版本的最大高度（以像素为单位）。 |
+| 最大宽度 | 2048 | 生成的预览呈现版本的最大宽度（以像素为单位）。 |
+| 最大高度 | 2048 | 生成的预览呈现版本的最大高度（以像素为单位）。 |
 | 解决方法 | 72 | 分辨率以ppi为单位栅格化第一页（每英寸像素）。 |
 
 使用默认的处理参数，PDF/AI文档的第一页以72 ppi进行光栅化，并且生成的预览图像的大小为2048 x 2048像素。 对于典型部署，可将分辨率提高至至少150 ppi或更高。 例如，300 ppi的美国字母大小文档要求最大宽度和高度分别为2550 x 3300像素。
@@ -212,7 +213,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 选择&#x200B;**[!UICONTROL “保存”]**。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 ### 创建响应式图像预设 {#creating-a-responsive-image-preset}
 
@@ -287,7 +288,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
     <ul>
      <li>选择 <strong>无</strong> 要禁用锐化。</li>
      <li>选择<strong>锐化</strong>可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
-     <li>选择<strong> 钝化蒙版</strong> 如果要对最终缩减采样图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与 Photoshop 的“钝化蒙蔽”滤镜相同的选项。</li>
+     <li>选择<strong> 钝化蒙版</strong> 如果要对最终缩减采样图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与Photoshop的“钝化蒙版”滤镜相同的选项。</li>
     </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p>
     <ul>
      <li><strong>金额</strong>  — 控制对边缘像素应用的对比度量。 默认的实数值为1.0。对于高分辨率图像，最高可将其增加到5.0。请考虑使用“数量”来测量滤镜强度。</li>
