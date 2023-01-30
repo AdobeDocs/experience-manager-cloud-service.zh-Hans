@@ -2,10 +2,10 @@
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
 hidefromtoc: true
-source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
+source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 7%
+source-wordcount: '2446'
+ht-degree: 6%
 
 ---
 
@@ -390,6 +390,20 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 ![从环境卡重置RDE](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 有关如何使用Cloud Manager管理环境的更多信息，请参阅 [Cloud Manager文档。](/help/implementing/cloud-manager/manage-environments.md)
+
+## 运行模式 {#runmodes}
+
+对文件夹名称使用后缀可应用RDE特定的OSGI配置，如以下示例中所示：
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+请参阅 [runmode文档](/help/implementing/deploying/overview.md#runmodes) 有关运行模式的常规信息。
+
+>[!NOTE]
+>
+>RDE OSGi配置是唯一的，因为它继承包声明的任何OSGi属性的值 `dev` 运行模式。
 
 ## 日志记录 {#logging}
 
