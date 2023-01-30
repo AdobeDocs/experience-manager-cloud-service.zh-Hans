@@ -3,9 +3,9 @@ title: 部署到 AEM as a Cloud Service
 description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3415'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="包管理器 — 迁移可变内容包"
 >abstract="探索包管理器的用例，了解应将内容包作为“一次性”安装的用例，其中包括将特定内容从生产导入到暂存，以调试生产问题、将小内容包从内部部署环境传输到AEM云环境等。"
+>abstract="探索包管理器的用例，了解应将内容包安装为“一次性”的用例，其中包括将特定内容从生产导入到暂存，以调试生产问题、将小内容包从内部部署环境传输到AEM云环境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="内容转移工具"
 
 在某些用例中，应将内容包安装为“一次性”。 例如，将特定内容从生产导入到暂存，以调试生产问题。 对于这些情况， [包管理器](/help/implementing/developing/tools/package-manager.md) 可在AEMas a Cloud Service环境中使用。
@@ -281,27 +282,30 @@ above appears to be internal, to confirm with Brian -->
 
 ## 运行模式 {#runmodes}
 
-在现有AEM解决方案中，客户可以选择以任意运行模式运行实例，并将OSGi配置或安装OSGi包到这些特定实例。 通常定义的运行模式包括 *服务* （创作和发布）和环境(dev、stage、prod)。
+在现有AEM解决方案中，客户可以选择以任意运行模式运行实例，并将OSGi配置或安装OSGi包到这些特定实例。 通常定义的运行模式包括 *服务* （创作和发布）和环境(rde、dev、stage、prod)。
 
 AEMas a Cloud Service则对哪些运行模式可用以及如何将OSGi包和OSGi配置映射到这些模式有更多看法：
 
-* OSGi配置运行模式必须引用dev、stage、prod for the environment或author、publish for the service。 组合 `<service>.<environment_type>` 受支持，但必须按此特定顺序使用(例如 `author.dev` 或 `publish.prod`)。 OSGi令牌应直接从代码中引用，而不应使用 `getRunModes` 方法，该方法将不再包含 `environment_type` 运行时。 有关更多信息，请参阅 [为AEMas a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md).
+* OSGi配置运行模式必须引用RDE、dev、stage、prod for the environment或author、publish for the service。 组合 `<service>.<environment_type>` 受支持，但必须按此特定顺序使用(例如 `author.dev` 或 `publish.prod`)。 OSGi令牌应直接从代码中引用，而不应使用 `getRunModes` 方法，该方法将不再包含 `environment_type` 运行时。 有关更多信息，请参阅 [为AEMas a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md).
 * OSGi包运行模式仅限于服务（创作、发布）。 每次运行模式OSGi包应安装在以下任一模式下的内容包中 `install/author` 或 `install/publish`.
 
 与现有的AEM解决方案一样，无法使用运行模式仅为特定环境或服务安装内容。 如果需要为开发环境种种不在暂存或生产环境中的数据或HTML，则可以使用包管理器。
 
 支持的运行模式配置包括：
 
-* **配置** (*默认值适用于所有AEM服务*)
+* **配置** (*默认设置适用于所有AEM服务*)
 * **config.author** (*适用于所有AEM创作服务*)
 * **config.author.dev** (*适用于AEM Dev Author服务*)
+* **config.author.rde** (*适用于AEM RDE创作服务*)
 * **config.author.stage** (*适用于AEM Staging Author服务*)
 * **config.author.prod** (*适用于AEM Production Author服务*)
 * **config.publish** (*适用于AEM发布服务*)
 * **config.publish.dev** (*适用于AEM开发发布服务*)
+* **config.publish.rde** (*适用于AEM RDE发布服务*)
 * **config.publish.stage** (*适用于AEM Staging Publish服务*)
 * **config.publish.prod** (*适用于AEM Production Publish服务*)
 * **config.dev** (*适用于AEM开发服务*)
+* **config.rde** (*适用于RDE服务*)
 * **config.stage** (*适用于AEM Staging Services*)
 * **config.prod** (*适用于AEM Production Services*)
 
