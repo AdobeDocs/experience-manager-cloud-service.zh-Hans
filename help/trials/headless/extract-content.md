@@ -4,7 +4,7 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 9997e0ea1d78ab2c8bab46a95a664e8537f16b13
+source-git-commit: a33ca1698b30a075d80929b7c59961beecc3a9e0
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 100%
@@ -39,23 +39,23 @@ ht-degree: 100%
 
    ```text
    {
-       adventureList {
-         items {
-            _path
-            adventureTitle
-            adventurePrice
-            adventureTripLength
-            adventurePrimaryImage {
-              ... on ImageRef {
-               _path
-               mimeType
-               width
-               height
-             }
-           }
+    adventureList {
+     items {
+       _path
+       title
+       price
+       tripLength
+       primaryImage {
+         ... on ImageRef {
+           _path
+           mimeType
+           width
+           height
          }
-      }
+       }
+     }
     }
+   }
    ```
 
 1. 通过粘贴复制的代码来替换查询编辑器中的现有内容。
