@@ -2,7 +2,7 @@
 title: 配置和配置浏览器
 description: 了解AEM配置以及它们如何在AEM中管理工作区设置。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 8f94d7ee3cfe436b5d41f2428b901ee1a5002993
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 6%
@@ -145,7 +145,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
       - cq:conf = "/conf/wknd"
     + image.png [dam:Asset]
 
-/conf/wkns
+/conf/wknd
     + settings
       + dam
         + imageserver [cq:Page]
