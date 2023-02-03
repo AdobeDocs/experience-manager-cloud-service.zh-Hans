@@ -2,9 +2,9 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '987'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,32 @@ ht-degree: 1%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.6( [!DNL Workfront for Experience Manager enhanced connector] 是2022年12月09日。
+最新版本1.9.7( [!DNL Workfront for Experience Manager enhanced connector] 是2023年2月02日。
 
 ## 发行亮点 {#release-highlights}
 
-的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下增强功能和错误修复：
+的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下更新：
+
+* 安装1.9.6版本后，元数据编辑器未列出Workfront自定义表单属性。
+
+* 此时将显示开发控制台 `/content/dam/jcr:content/metadata/wfProjectURL not found` 安装Workfront增强连接器并打开Assets主页后显示错误消息。
+
+
+>[!IMPORTANT]
+>
+>Adobe建议您 [升级到最新的1.9.7版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+
+## 已知问题 {#known-issues}
+
+* 使用AEM 6.4配置项目链接文件夹时，Experience Manager不会保存 **[!UICONTROL 子文件夹]** 和 **[!UICONTROL 在具有项目组合的项目中创建链接文件夹]** 字段。 的值 **[!UICONTROL 子文件夹]** 字段更新至 **[!UICONTROL 未定义]** 和 **[!UICONTROL 在具有项目组合的项目中创建链接文件夹]** 字段更新至 **[!UICONTROL 默认Portfolio]** 自动。
+
+* 当您使用经典Workfront体验时， **[!UICONTROL 发送到]** 选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 的 **[!UICONTROL 发送到]** 选项可使用 **[!UICONTROL 文档操作]** 下拉列表。 的 **[!UICONTROL 发送到]** 选项可正确用于 **[!UICONTROL 更多]** 下拉列表以及 **[!UICONTROL 文档操作]** 新Workfront体验中提供的下拉列表。
+
+## 以前版本 {#previous-releases}
+
+### 2022年12月版 {#december-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 版本1.9.6（于2009年12月发布）包括以下更新：
 
 **增强功能**
 
@@ -36,18 +57,6 @@ ht-degree: 1%
 * 文档版本元数据无法在Workfront和Experience Manager之间正确同步。
 * 在Workfront中创建链接到Experience Manager的文件夹时，当文件夹使用的架构在全局配置中缺少定义时出现问题。
 * 由于加载时间超过预期，当您单击任意字段时，元数据架构编辑器表单会停止响应。 为自定义表单添加了特定OSGi配置以解决此问题。 您添加到元数据架构编辑器的自定义表单的名称在日志中可用。
-
->[!IMPORTANT]
->
->Adobe建议您 [升级到最新的1.9.6版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
-
-## 已知问题 {#known-issues}
-
-* 使用AEM 6.4配置项目链接文件夹时，Experience Manager不会保存 **[!UICONTROL 子文件夹]** 和 **[!UICONTROL 在具有项目组合的项目中创建链接文件夹]** 字段。 的值 **[!UICONTROL 子文件夹]** 字段更新至 **[!UICONTROL 未定义]** 和 **[!UICONTROL 在具有项目组合的项目中创建链接文件夹]** 字段更新至 **[!UICONTROL 默认Portfolio]** 自动。
-
-* 当您使用经典Workfront体验时， **[!UICONTROL 发送到]** 选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 的 **[!UICONTROL 发送到]** 选项可使用 **[!UICONTROL 文档操作]** 下拉列表。 的 **[!UICONTROL 发送到]** 选项可正确用于 **[!UICONTROL 更多]** 下拉列表以及 **[!UICONTROL 文档操作]** 新Workfront体验中提供的下拉列表。
-
-## 以前版本 {#previous-releases}
 
 ### 2022年11月版 {#november-2022-release}
 
