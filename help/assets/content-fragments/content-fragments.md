@@ -2,9 +2,9 @@
 title: 使用内容片段 （资产 — 内容片段）
 description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2071'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 93%
 * [为您的实例启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md) – 启用、创建和定义模型
 * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md) – 创建内容片段；然后，编辑、发布和引用
-* [变量 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md) – 创作片段内容并创建主控
+* [变体 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md) – 创作片段内容并创建主控
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – 使用片段的 markdown 语法
 * [使用关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md) – 添加关联内容
 * [元数据 – 片段属性](/help/assets/content-fragments/content-fragments-metadata.md) – 查看和编辑片段属性
@@ -60,8 +60,8 @@ ht-degree: 93%
 
 通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
 
-* 物理渠道；例如，桌面、移动设备。
-* 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备Web”、“移动设备应用程序”（适用于移动设备）。
+* 物理渠道；例如，台式机、移动设备。
+* 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备 Web”（适用于移动设备的移动设备应用程序）。
 
 但是，您（可能）不希望在所有渠道中使用完全相同的内容 – 您需要根据特定渠道优化内容。
 
@@ -79,7 +79,7 @@ ht-degree: 93%
 >[!NOTE]
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
->* **内容片段**&#x200B;是可编辑内容，可用于访问结构化数据，包括文本、数字和日期等。 它们是纯内容，具有定义和结构，但无需额外的可视设计和/或布局。
+>* **内容片段** 是编辑内容，具有定义和结构，但没有其他可视设计和/或布局。 它们可用于访问结构化数据，包括文本、数字和日期等。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
@@ -289,7 +289,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 ## 使用示例 {#example-usage}
 
-片段及其元素和变量可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
+片段及其元素和变体可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
 
 ### WKND 示例 {#wknd-sample}
 

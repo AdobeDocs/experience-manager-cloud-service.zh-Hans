@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '1166'
-ht-degree: 100%
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 97%
 
 ---
 
@@ -20,11 +20,12 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 >[!NOTE]
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
->
->* **内容片段**&#x200B;是可编辑内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
->* **体验片段**&#x200B;是经过充分布局的内容，网页即属于此类片段。
+>* **内容片段** 是编辑内容，具有定义和结构，但没有其他可视设计和/或布局。 它们可用于访问结构化数据，包括文本、数字和日期等。
+>* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
+>
+>有关详细信息，另请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 >[!CAUTION]
 >
