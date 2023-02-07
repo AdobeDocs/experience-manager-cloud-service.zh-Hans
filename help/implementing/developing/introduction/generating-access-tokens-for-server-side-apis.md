@@ -2,18 +2,14 @@
 title: 为服务器端 API 生成访问令牌
 description: 了解如何通过生成安全的JWT令牌来促进第三方服务器与AEMas a Cloud Service之间的通信
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
+source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2132'
 ht-degree: 1%
 
 ---
 
 # 为服务器端 API 生成访问令牌 {#generating-access-tokens-for-server-side-apis}
-
->[!AVAILABILITY]
->
->Adobe正在逐步推出本文描述的新的多凭据和凭据撤销功能。 如果在您组织的AEM开发人员控制台中查看集成选项卡时，您发现屏幕与下面的屏幕截图有所不同，这意味着您的组织尚未推出新的更改。 在本例中，请参阅 [旧版文档](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
 
 某些架构依赖于从AEM基础架构外的服务器上托管的应用程序as a Cloud Service调用AEM。 例如，一个移动设备应用程序，它调用服务器，然后向AEM发出API请求as a Cloud Service。
 
