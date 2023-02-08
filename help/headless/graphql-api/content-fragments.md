@@ -3,9 +3,9 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
-workflow-type: ht
-source-wordcount: '4174'
+source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
+workflow-type: tm+mt
+source-wordcount: '4173'
 ht-degree: 100%
 
 ---
@@ -470,8 +470,6 @@ query GetAdventureByType($includePrice: Boolean!) {
 ```
 
 会将字段的内容与值 `some text` 进行比较，如果内容等于该值，则成功。否则，表达式将失败。
-
-不为目标组件考虑 
 
 以下运算符可用于将字段与特定值进行比较：
 
