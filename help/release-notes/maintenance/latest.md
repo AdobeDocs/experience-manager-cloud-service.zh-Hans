@@ -1,10 +1,10 @@
 ---
 title: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: bb310f87a3bbc114e971dc2dca5eab6a028d140a
+source-git-commit: 76da86d31e2780c2d22419cb8a338cf37963fad8
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '155'
+ht-degree: 5%
 
 ---
 
@@ -15,29 +15,16 @@ ht-degree: 3%
 
 ## 版本10912 {#release-10912}
 
->[!IMPORTANT]
-> 如果您使用的是CORS，请勿升级。 我们在此版本中发现了影响GraphQL内容交付部分的问题。 在默认AEM Dispatcher配置中，围绕GraphQL持久化查询的缓存方式进行更改，可能会破坏使用CORS配置的客户持久化查询的GraphQL内容交付。
+以下是2023年2月3日公开发布的维护版本10912的持续改进。 此维护版本是以前维护版本9850的更新。
 
-以下是2023年2月3日公开发布的10912版的持续改进。 此版本是与以前版本9850相比的更新。
+此维护版本的功能启用将为您提供完整的功能集。 请参阅 [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md) 以了解完整详细信息。
 
-此版本的功能启用将为您提供完整的功能集。 请参阅 [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md) 以了解完整详细信息。
+### 已知问题 {#known-issues}
 
-### 核心组件 {#corecomponents}
+如果您使用的是CORS，请勿升级。 我们在此版本中发现了影响GraphQL内容交付部分的问题。 在默认AEM Dispatcher配置中，围绕GraphQL持久化查询的缓存方式进行更改，可能会破坏使用CORS配置的客户持久化查询的GraphQL内容交付。
 
-版本2.21.2
+### 嵌入式技术 {#embedded-tech}
 
-### Sites {#sites}
-
-更改总数：86更改
-
-### Assets {#assets}
-
-更改总数：115更改
-
-### 表单 {#forms}
-
-更改总数：207变更
-
-### Foundation {#foundation}
-
-更改总数：323次更改
+| 技术 | 版本 | 链接 |
+|---|---|---|
+| AEM WCM核心组件 | 版本2.21.2 | [GitHub](https://github.com/adobe/aem-core-wcm-components) |
