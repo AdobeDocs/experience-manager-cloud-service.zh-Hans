@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1749'
 ht-degree: 2%
 
 ---
@@ -36,6 +36,9 @@ ht-degree: 2%
 
 * 数据存储垃圾收集已在源上的前7天内运行。 有关更多详细信息，请参阅 [数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
 
+### 使用AzCopy时的其他注意事项
+
+在CTT提取期间，Windows上当前不支持使用AzCopy进行预复制。
 
 ### 如果将源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储，则需考虑的其他事项 {#additional-considerations-amazons3-azure}
 
