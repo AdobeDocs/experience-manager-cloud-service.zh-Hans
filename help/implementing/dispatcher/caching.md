@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
-* 虽然将HTML内容设置为private时，不会在CDN中缓存该内容，但如果 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans) ，可高效确保仅向授权用户提供内容。
+* 虽然将HTML内容设置为private时，不会在CDN中缓存该内容，但如果 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans) 配置，以确保只能向授权用户提供内容。
 
    >[!NOTE]
    >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，则无法成功覆盖值。
