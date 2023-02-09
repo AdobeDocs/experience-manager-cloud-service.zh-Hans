@@ -2,9 +2,9 @@
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ RDE一次支持单个项目。 由于代码是从本地开发环境同步到RDE�
 
 或者，您也可以引用远程存储库：
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 默认情况下，工件会部署到创作层和发布层，但“ — s”标记可用于定位特定层。
+
+>[!IMPORTANT]
+>
+>WKND项目的调度程序配置不是通过上述内容包安装进行部署的。 您需要按照“部署Apache/Dispatcher配置”步骤单独部署该配置。
 
 <u>部署OSGI配置</u>
 
