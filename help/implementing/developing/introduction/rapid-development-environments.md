@@ -2,9 +2,9 @@
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2634'
 ht-degree: 6%
 
 ---
@@ -406,6 +406,20 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 >[!NOTE]
 >
 >RDE OSGi配置是唯一的，因为它继承包声明的任何OSGi属性的值 `dev` 运行模式。
+
+RDE与其他环境不同，因为内容可以安装在/apps下的install.rde文件夹（或install.author.rde或install.publish.rde）中。 这允许您将内容提交到git，并使用命令行工具将其交付到RDE。
+
+## 使用内容填充 {#populating-content}
+
+重置RDE时，将删除所有内容，因此如果需要，必须执行明确操作以添加内容。 作为最佳实践，请考虑组合一组内容作为测试内容，以在RDE中验证或调试功能。 使用该内容填充RDE可采用以下几种策略：
+
+1. 使用命令行工具将内容包显式同步到RDE
+
+1. 将示例内容放置并提交到/apps下的install.rde文件夹中，然后使用命令行工具将总内容包同步到RDE。
+
+1. 使用包管理器
+
+请注意，同步内容包时，限制为1GB。
 
 ## 日志记录 {#logging}
 
