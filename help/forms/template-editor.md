@@ -2,9 +2,9 @@
 title: 如何创建自适应表单模板？
 description: 创建自适应表单模板，以使用模板编辑器定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## 将自适应表单另存为模板 {#saving-adaptive-form-as-template}
+
+您还可以将自适应表单另存为模板以供将来使用。 要将自适应表单另存为模板，请执行以下操作：
+
+1. 选择自适应表单以将其另存为模板。
+1. 单击 **[!UICONTROL 另存为模板]**. 将显示一个对话框。
+1. 指定 **[!UICONTROL 标题]** （必填字段）、 **[!UICONTROL 位置]** （必填字段）和 **[!UICONTROL 描述]** （可选字段）。
+1. 单击&#x200B;**[!UICONTROL 创建]**。
+
+   ![另存为表单为模板](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>要使用与源自适应表单相同的容器策略，建议将模板保存在与源自适应表单相同的文件夹中。 如果模板保存在任何其他文件夹中，而创建的模板使用的是默认的容器策略。
 
 ## 推荐 {#recommendations}
 

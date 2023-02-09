@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: edb6e23341289308837509eef444a8642b903bb7
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3857'
-ht-degree: 99%
+source-wordcount: '3918'
+ht-degree: 96%
 
 ---
 
@@ -32,9 +32,10 @@ ht-degree: 99%
    + [文档历程](/help/journey-documentation/documentation-journeys.md)
 + 发行说明 {#release-notes}
    + [版本信息](/help/release-notes/home.md)
-   + AEMaaCS 常规发行说明{#release-notes}
+   + AEMaCS功能发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.10.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [2022.8.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [2022.7.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [2022.6.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
@@ -66,7 +67,7 @@ ht-degree: 99%
          + [2020.4.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + 维护AEMaaCS发行说明 {#maintenance}
+   + AEMaCS维护发行说明 {#maintenance}
       + [最新维护发行说明](/help/release-notes/maintenance/latest.md)
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
@@ -496,90 +497,100 @@ ht-degree: 99%
       + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
-   + [简介](/help/forms/home.md)
-   + [关键功能](/help/forms/key-features.md)
-   + [重要更改](/help/forms/notable-changes.md)
-   + [架构](/help/forms/aem-forms-cloud-service-architecture.md)
-   + 设置和配置服务 {#setup-environment}
+   + 概述 {#forms-overview}
+      + [简介](/help/forms/home.md)
+      + [关键功能](/help/forms/key-features.md)
+      + [重要更改](/help/forms/notable-changes.md)
+      + [架构](/help/forms/aem-forms-cloud-service-architecture.md)
+      + [常见问题](/help/forms/faq.md)
+      + [已知问题](/help/forms/known-issues.md)
+   + 设置 {#setup-environment}
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
       + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
-   + 管理用户组、表单和相关资源 {#manage-forms-and-related-assets}
+   + 迁移 {#setup-environment}
+      + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + 管理 {#administering}
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
-   + 将 PDF 表单转换为自适应表单 {#afcs}
-      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
-      + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
-      + [审阅并修正转换后的表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-Hans#welcome-to-review-and-correct-editor)
-   + 创建和发布自适应表单 {#create-an-adaptive-form}
-      + 开始之前 {#before-you-start}
-         + [自适应表单创作简介](/help/forms/introduction-forms-authoring.md)
-         + [创建模板](/help/forms/template-editor.md)
-         + [创建主题](/help/forms/themes.md)
-         + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
-         + [参考资产](/help/forms/reference-assets.md)
-      + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
-         + [创建自适应表单](/help/forms/creating-adaptive-form.md)
-         + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [使用 Forms Designer](/help/forms/use-forms-designer.md)
-         + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
-      + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
-         + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
-         + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-         + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
-         + [支持新语言本地化](/help/forms/supporting-new-language-localization.md)
-         + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
-      + 配置版面并将样式应用于自适应表单{#configure-layout-of-an-adaptive-form}
-         + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
-         + [使用版面模式调整组件大小](/help/forms/resize-using-layout-mode.md)
-         + [创建多步骤数据捕获体验](/help/forms/introduction-form-sequence.md)
-         + [将内联 CSS 样式应用于各个自适应表单组件](/help/forms/inline-style-adaptive-forms.md)
-      + 在自适应表单中添加规则和使用表达式 {#add-rules-and-use-expressions-in-an-adaptive-form}
-         + [将规则添加到自适应表单](/help/forms/rule-editor.md)
-      + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
-         + [使用 Adobe Sign 对自适应表单进行电子签名](/help/forms/working-with-adobe-sign.md)
-      + 配置提交操作和元数据提交 {#configure-submit-actions-and-metadata-submission}
-         + [设置自适应表单的提交操作](/help/forms/configuring-submit-actions.md)
-         + [配置重定向页面](/help/forms/configuring-redirect-page.md)
-         + [为自适应表单配置异步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
-         + [创建自定义提交操作](/help/forms/custom-submit-action-form.md)
-      + [预填自适应表单字段](/help/forms/prepopulate-adaptive-form-fields.md)
-      + [生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + 添加或改进元数据 {#manage-metadata}
-         + [添加、删除或编辑自适应表单的元数据](/help/forms/manage-form-metadata.md)
-         + [重用自适应表单的元数据属性](/help/forms/reusing-adaptive-forms.md)
-      + 提高自适应表单的可访问性 {#accessible-adaptive-forms}
-         + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
-      + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
    + 集成 {#integrate}
-      + 将表单与一个或多个数据源集成 {#use-form-data-model}
+      + [将AEM Formsas a Cloud Service与Adobe Sign集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [将AEM Formsas a Cloud Service与DocuSign集成](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [将AEM Formsas a Cloud Service与Adobe Analytics集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [将自适应表单与 Microsoft Power 集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [在AEM Sites页面中嵌入自适应Forms](/help/forms/embed-adaptive-form-aem-sites.md)
+   + 自适应表单 {#adaptive-forms-authoring}
+      + 创作自适应Forms — 核心组件 {#authoring-adaptive-forms-core-components}
+         + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
+            + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
+            + [为自适应表单创建主题 — 核心组件](/help/forms/using-themes-in-core-components.md)
+            + [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)
+      + 创作自适应Forms — 基础组件 {#authoring-adaptive-forms-foundation-components}
+         + 将PDF forms转换为自适应Forms {#afcs}
+            + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
+            + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
+            + [审阅并修正转换后的表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-Hans#welcome-to-review-and-correct-editor)
+         + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
+            + [自适应表单创作简介](/help/forms/introduction-forms-authoring.md)
+            + [创建自适应表单](/help/forms/creating-adaptive-form.md)
+            + [创建模板](/help/forms/template-editor.md)
+            + [创建主题](/help/forms/themes.md)
+            + [参考资产](/help/forms/reference-assets.md)
+            + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [使用 Forms Designer](/help/forms/use-forms-designer.md)
+            + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
+         + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
+            + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
+            + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+            + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
+            + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
+            + [向自适应表单添加脚注支持](/help/forms/footnotes-richtextsupport.md)
+         + 配置版面并将样式应用于自适应表单{#configure-layout-of-an-adaptive-form}
+            + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
+            + [使用版面模式调整组件大小](/help/forms/resize-using-layout-mode.md)
+            + [创建多步骤数据捕获体验](/help/forms/introduction-form-sequence.md)
+            + [将内联 CSS 样式应用于各个自适应表单组件](/help/forms/inline-style-adaptive-forms.md)
+         + 在自适应表单中添加规则和使用表达式 {#add-rules-and-use-expressions-in-an-adaptive-form}
+            + [将规则添加到自适应表单](/help/forms/rule-editor.md)
+         + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
+            + [使用 Adobe Sign 对自适应表单进行电子签名](/help/forms/working-with-adobe-sign.md)
+         + 配置提交操作和元数据提交 {#configure-submit-actions-and-metadata-submission}
+            + [设置自适应表单的提交操作](/help/forms/configuring-submit-actions.md)
+            + [配置重定向页面](/help/forms/configuring-redirect-page.md)
+            + [为自适应表单配置异步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
+            + [创建自定义提交操作](/help/forms/custom-submit-action-form.md)
+         + [预填自适应表单字段](/help/forms/prepopulate-adaptive-form-fields.md)
+         + [生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + 添加或改进元数据 {#manage-metadata}
+            + [添加、删除或编辑自适应表单的元数据](/help/forms/manage-form-metadata.md)
+            + [重用自适应表单的元数据属性](/help/forms/reusing-adaptive-forms.md)
+         + 提高自适应表单的可访问性 {#accessible-adaptive-forms}
+            + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
+         + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
+      + 表单数据模型 {#use-form-data-model}
+         + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
          + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
-      + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
-      + [使用表单数据模型](/help/forms/using-form-data-model.md)
-      + [与 Adobe Sign 集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [与 DocuSign 集成](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [与站点集成](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-      + [与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [将自适应表单与 Microsoft Power 集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [在 AEM Sites 中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
-   + 创建和使用工作流 {#create-form-centric-workflows}
-      + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
-      + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
-      + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
-   + 使用通信 {#using-communications}
-      + [Communications API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+         + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
+         + [使用表单数据模型](/help/forms/using-form-data-model.md)
+      + Forms中心工作流 {#create-form-centric-workflows}
+         + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
+         + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
+         + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
+   + 使用通信API {#using-communications}
+      + [通信API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Communications API – 同步处理](/help/forms/aem-forms-cloud-service-communications.md)
       + [Communications API – 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
-   + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + [常见问题](/help/forms/faq.md)
-   + [已知问题](/help/forms/known-issues.md)
+      + 开发人员API参考 {#aem-forms-developer-api-reference}
+      + [AEM FormsCloud Service通信API参考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [AEM FormsCloud ServiceJavaScript API参考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM FormsCloud ServiceJava API参考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + 疑难解答 {#troubleshooting-aem-forms-cloud-service}
       + [安装和配置](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 缓存](/help/forms/troubleshooting-caching-performance.md)

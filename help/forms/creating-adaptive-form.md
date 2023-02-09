@@ -5,17 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 1%
+source-wordcount: '1414'
+ht-degree: 0%
 
 ---
 
-# 创建自适应表单 {#creating-an-adaptive-form}
+# 创建自适应表单（基础组件） {#creating-an-adaptive-form}
 
 
 自适应Forms让您能够创建有吸引力的响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
+
+>[!NOTE]
+>
+> 本文介绍了创建自适应表单的旧方法。 要根据最新方法创建自适应Forms，请参阅 [创建自适应表单（核心组件）](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -39,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## 先决条件
 
@@ -53,6 +58,8 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 * **自适应表单主题**:主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 应用主题时，指定的样式将反映在相应的组件上。 您可以 [创建新主题](themes.md) 或 [导入现有主题](import-export-forms-templates.md#uploading-a-theme). 您还可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) 示例主题。
 
 * **权限**:将用户添加到 [!DNL forms-users] 以向他们提供创建自适应表单的权限。 有关特定用户群组的表单的详细列表，请参阅 [群组和权限](forms-groups-privileges-tasks.md).
+
+## 创建自适应表单（基础组件） {#create-an-adaptive-form-foundation-components}
 
 1. 访问 [!DNL Experience Manager Forms] 创作实例。 它可以是云实例或本地开发实例。
 
@@ -71,11 +78,15 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * 选择静态模板时，数据、样式、提交、提交和预览选项将不可用。 创建新的自适应表单时，建议使用可编辑的模板。
 
-1. 在样式选项卡中，选择一个主题：
+1. 在 **[!UICONTROL 样式]** 选项卡，选择主题：
+
    * 当所选模板指定主题时，将在向导中自动选择该主题。 您还可以从“样式”选项卡中选择其他主题。
    * 如果所选模板未指定主题，则可以使用“样式”选项卡选择主题。 的 **[!UICONTROL 创建]** 按钮时，才会启用此选项。
-1. （可选）在数据选项卡中，选择一个数据模型：
+
+1. （可选）在 **[!UICONTROL 数据]** 选项卡，选择数据模型：
+
    * **表单数据模型**:A [表单数据模型](data-integration.md) 允许您将来自不同数据源的实体和服务集成到自适应表单。 如果要创建的自适应表单涉及从多个数据源获取数据并将数据写入多个数据源，请选择表单数据模型。
+
    * **JSON架构**: [JSON架构](adaptive-form-json-schema-form-model.md) 表示组织中后端系统生成或使用数据的结构。 您可以将架构与自适应表单相关联，并使用其元素向自适应表单添加动态内容。 创作自适应Forms时，架构的元素可在内容浏览器的“数据模型对象”选项卡中使用，并且所有字段也会添加到新创建的自适应表单中。
 
    默认情况下，数据模型的所有字段都会被选中。 创建自适应表单时，所有选定的数据模型字段都将转换为相应的自适应表单组件。 向导会提供您的复选框以仅选择应包含在自适应表单中的字段。
@@ -86,7 +97,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    
    -->
 
-1. 在提交选项卡中，选择提交操作：
+1. 在 **[!UICONTROL 提交]** 选项卡，选择提交操作：
 
    * 选择模板时，将自动选择在模板中指定的提交操作。 您可以从“提交”选项卡中选择其他提交操作。 的 **[!UICONTROL 提交]** 选项卡会显示所有可用的提交操作。
 
@@ -176,3 +187,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 点按 ![保存](/help/forms/assets/check-button.png) 以保存属性。
 
 ![FDM — 架构支持](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> 您还可以将自适应表单另存为模板。 有关更多信息，请参阅 [使用自适应表单创建模板](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

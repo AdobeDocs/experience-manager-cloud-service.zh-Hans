@@ -1,23 +1,23 @@
 ---
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
+exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '3214'
 ht-degree: 2%
 
 ---
 
-# 为自适应Forms生成记录文档
+# 为自适应Forms（核心组件）生成记录文档
 
 ## 概述 {#overview}
 
-填写或提交表单后，您可以以打印或文档格式保留表单的记录。 此记录称为记录文档(DoR)。 它是已提交表单的打印友好副本。 您还可以参考客户在稍后日期填写的信息的记录文档，或使用记录文档以PDF格式将表单和内容一起存档。
+填写或提交表单后，您可以保留表单记录、打印或文档格式。 此记录称为记录文档(DoR)。 它是已提交表单的打印友好副本。 您还可以参考客户在稍后日期填写的信息的记录文档，或使用记录文档以PDF格式将表单和内容一起存档。
 
 ![记录文档](assets/document-of-record.png)
 
-要创建记录文档，将基于XFA或Acroform的模板与通过自适应表单收集的数据合并。 您可以自动或按需生成记录文档。
-利用按需选项，可指定基于自定义XFA或Acroform的模板，以为记录文档提供自定义外观。
+要创建记录文档，将基于XFA或Acroform的模板与通过自适应表单收集的数据合并。 您可以自动或按需生成记录文档。 利用按需选项，可指定基于自定义XFA或Acroform的模板，以为记录文档提供自定义外观。
 
 您可以：
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 在您开始学习并准备记录文档所需的资产之前：
 
-**基本模板：** 在Forms Designer或Acrobat表单(AcroForm)中创建的XFA模板（XDP文件）。 [基本模板](#base-template-of-a-document-of-record) 用于为记录文档指定样式和品牌信息。 在之前，将XFA模板（XDP文件）上传到AEM Forms实例
+**基本模板：** 在Forms Designer或Acrobat表单(AcroForm)中创建的XFA模板（XDP文件）。 [基本模板](#base-template-of-a-document-of-record) 用于为记录文档指定样式和品牌信息。 之前，将XFA模板（XDP文件）上传到AEM Forms实例。
 
 **自适应表单：** 要为其生成记录文档的自适应表单。
 
@@ -38,9 +38,9 @@ ht-degree: 2%
 将XFA模板（XDP文件）上传到AEM Forms实例。 请执行以下步骤来配置自适应表单，以使用XFA模板（XDP文件）作为记录文档的模板：
 
 1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
-1. 选择表单，然后单击 **[!UICONTROL 属性]**.
+1. 选择表单或创建自适应表单，然后单击 **[!UICONTROL 属性]**.
 1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
-1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
+1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**, **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
 1. 在“表单模型”选项卡的“记录模板配置文档”部分中，选择 **将表单模板关联为记录模板文档**. 选择此选项时，将显示您计算机上可用的所有XFA模板（XDP文件）。 选择相应的文件。 此外，还要确保对自适应表单和选定的XFA模板（XDP文件）使用相同的架构（数据架构）。
 1. 单击 **[!UICONTROL 完成。]**
 
@@ -51,17 +51,17 @@ ht-degree: 2%
 将Adobe AcrobatPDF(Acroform)上传到AEM Forms实例。 请执行以下步骤来配置自适应表单，以使用Adobe AcrobatPDF(Acroform)作为记录文档的模板：
 
 1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
-1. 选择表单，然后单击 **[!UICONTROL 属性]**.
+1. 选择表单或 **[!UICONTROL 创建自适应表单]**，然后单击 **[!UICONTROL 属性]**.
 1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
-1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
-1. 在“表单模型”选项卡的“记录模板配置文档”部分中，选择 **将表单模板关联为记录模板文档**. 选择此选项时，将显示您计算机上可用的所有AcrobatPDF(Acroform)。 选择相应的文件。
+1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**, **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
+1. 在“表单模型”选项卡的“记录模板配置文档”部分中，选择 **将表单模板关联为记录模板文档**. 选择此选项后，将显示您计算机上所有AcrobatPDF(Acroform)的可用信息。 选择要使用的Acroform。
 1. 单击 **[!UICONTROL 完成。]**
 
 您的自适应表单现已配置为使用Acroform作为记录文档的模板。 下一步是 [使用相应的模板字段绑定自适应表单组件](#bind-adaptive-form-components-with-template-fields).
 
 ## 自动生成记录文档 {#auto-generate-a-document-of-record}
 
-当自适应表单配置为自动生成记录文档时，每次更改表单时，其记录文档都会立即更新。 例如，如果从现有自适应表单中删除了字段，则相应的字段也会被删除，并且在记录文档中不可见。 自动生成记录文档还有许多其他优势。 : 
+当自适应表单配置为自动生成记录文档时，每次更改表单时，其记录文档都会立即更新。 例如，如果从现有自适应表单中删除了字段，则相应的字段也会被删除，并且在记录文档中不可见。 自动生成记录文档还有许多其他优势：
 
 * 表单开发人员不必手动维护数据绑定。 自动生成的记录文档负责数据绑定相关更新。
 * 表单开发人员不必手动隐藏标记为从记录文档中排除的字段。 自动生成的记录文档已预配置为排除此类字段。
@@ -72,9 +72,9 @@ ht-degree: 2%
 执行以下步骤来配置自适应表单以自动生成记录文档：
 
 1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
-1. 选择表单，然后单击 **[!UICONTROL 属性]**.
+1. 选择表单或创建自适应表单，然后单击 **[!UICONTROL 属性]**.
 1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
-1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
+1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**, **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
 1. 在“表单模型”选项卡的“记录模板配置文档”部分中，选择 **生成记录文档**.
 1. 单击 **[!UICONTROL 完成。]**
 
@@ -97,7 +97,10 @@ ht-degree: 2%
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-您可以将“发送电子邮件”、“Experience Manager工作流”提交操作与 [记录文档步骤和其他提交操作](configuring-submit-actions.md) 接收记录文档。
+您可以使用提交操作，如“发送电子邮件”、“调用AEM工作流”、“调用电源自动化流”等 [提交操作](configuring-submit-actions.md) 接收记录文档。
+![图像提交操作](/help/forms/assets/submit-actions-img.png)
+
+
 
 ## 记录文档模板的增量更新 {#document-of-record-template-incremental-updates}
 
@@ -109,7 +112,7 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 ![原始模板](assets/we-retail-invoice.png)
 
-在使用模板一段时间后，组织会决定重命名 `invoice-number` 字段 `bill-number` 字段和捕获购买者的电子邮件地址。 开发人员更新 `invoice-number` 字段，并向模板中添加电子邮件字段。 他还创建了一个新版本的模板，名为  *we-retail-invoice-v2.pdf*.
+在使用模板一段时间后，组织会决定重命名 `invoice-number` 字段 `bill-number` 字段和捕获购买者的电子邮件地址。 开发人员更新 `invoice-number` 字段，并向模板中添加电子邮件字段。 他还创建了一个名为  *we-retail-invoice-v2.pdf*.
 
 ![更新的模板](assets/we-retail-new-invoice.png)
 
@@ -120,7 +123,7 @@ In the following video Adaptive Form components are binded with corresponding Ac
 表单开发人员将自适应Forms字段与相应的记录文档模板绑定。
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-现在，在提交自适应表单时，将创建更新的记录文档。
+现在，在提交自适应表单时，将生成更新的记录文档。
 
 ![更新了-](assets/we-retail-new-invoice-sent-to-customer.png)
 
@@ -130,7 +133,7 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 * 记录模板文档不支持富文本。 因此，静态自适应表单或最终用户填写的信息中的任何富文本都会在记录文档中显示为纯文本。
 * 自适应表单中的文档片段不显示在记录文档中。 但是，支持自适应表单片段。
-* 不支持为基于XML架构的自适应表单生成的记录文档中的内容绑定。
+* 不支持在为基于XML架构的自适应表单生成的记录文档中绑定内容。
 * 当用户请求渲染记录文档时，将根据区域设置的要求创建记录文档的本地化版本。 记录文档的本地化与自适应表单的本地化同步进行。 <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
@@ -189,21 +192,9 @@ When you select a form model, configure Document of Record using options availab
    <td> </td>
   </tr>
   <tr>
-   <td>潦草签名</td>
-   <td>签名涂写</td>
-   <td>true</td>
-   <td> </td>
-  </tr>
-  <tr>
    <td>数值框</td>
    <td>数值字段</td>
    <td>true</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>密码框</td>
-   <td>密码字段</td>
-   <td>false</td>
    <td> </td>
   </tr>
   <tr>
@@ -228,12 +219,6 @@ When you select a form model, configure Document of Record using options availab
    <td>提交按钮</td>
    <td><p>“电子邮件提交”按钮</p> <p>HTTP提交按钮</p> </td>
    <td>false</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>条款和条件</td>
-   <td> </td>
-   <td>true</td>
    <td> </td>
   </tr>
   <tr>
@@ -277,13 +262,13 @@ When you select a form model, configure Document of Record using options availab
 
 基本模板为记录文档提供样式和外观信息。 它允许您自定义自动生成的记录文档的默认外观。 例如，您可以使用基本模板在记录文档页脚的页眉和版权信息中添加公司徽标。
 
-基本模板中的主控页用作记录文档模板的主控页。 主控页面可以包含可应用于记录文档的页眉、页脚和页码等信息。 您可以使用基本模板将此类信息应用到记录文档，以自动生成记录文档。 使用基本模板可更改字段的默认属性。
+基本模板中的主控页用作记录文档模板的主控页。 母版页可以包含页眉、页脚和页码等信息，这些信息可应用于记录文档。 您可以使用基本模板将此类信息应用到记录文档，以自动生成记录文档。 使用基本模板可更改字段的默认属性。
 
 始终关注 [基本模板约定](#base-template-conventions) 设计基本模板时。
 
 ## 基本模板约定 {#base-template-conventions}
 
-基本模板用于定义记录文档的页眉、页脚、样式和外观。 页眉和页脚可以包含公司徽标和版权文本等信息。 基本模板中的第一个主控页面将被复制并用作记录文档的主控页面，其中包含页眉、页脚、页码，或应显示在记录文档所有页面中的任何其他信息。 如果您使用的基本模板不符合基本模板惯例，则基本模板中的第一个主控页面仍会在记录文档模板中使用。 强烈建议您按照其惯例设计基本模板，并将其用于自动生成记录文档。
+基本模板用于定义记录文档的页眉、页脚、样式和外观。 页眉和页脚可以包含公司徽标和版权文本等信息。 基本模板中的第一个主控页面将被复制并用作记录文档的主控页面，其中包含页眉、页脚、页码，或应在记录文档的所有页面中显示的任何其他信息。 如果您使用的基本模板不符合基本模板惯例，则基本模板中的第一个主控页面仍会在记录文档模板中使用。 强烈建议您按照其惯例设计基本模板，并将其用于自动生成记录文档。
 
 **主控页面惯例**
 
@@ -310,12 +295,13 @@ When you select a form model, configure Document of Record using options availab
 
 1. （可选）修改要应用于记录文档中字段的字段的样式和外观。
 1. 保存表单。
+   ![基本属性](/help/forms/assets/form-designer-dor-img.png)
 
 现在，您可以将保存的表单用作记录文档的基本模板。 请勿修改或删除基本模板中存在的任何脚本。
 
 **修改基本模板**
 
-* 如果不对基本模板中的字段应用任何样式，则建议从基本模板中删除这些字段，以便自动选取对基本模板的任何升级。
+* 请勿对基本模板中的字段应用任何样式，建议从基本模板中删除这些字段，以便自动选取对基本模板的任何升级。
 * 修改基本模板时，请勿删除、添加或修改脚本。
 
 严格按照上述惯例和说明设计基础模板。
@@ -332,23 +318,17 @@ When you select a form model, configure Document of Record using options availab
 1. 根据您是选择默认模板还是自定义模板，“记录文档”选项卡中将显示以下部分或全部属性。 指定以下属性以定义记录文档的外观：
 
    1. **基本属性**:
-      * **模板**:如果选择自定义模板，请在 [!DNL AEM Forms] 服务器。 如果要使用的模板上尚未包含 [!DNL AEM Forms] 服务器中，您应该先将XDP上传到 [!DNL AEM Forms] 服务器。
-      * **强调颜色**:在文档或记录PDF中呈现标题文本和分隔线的颜色。
+      * **模板**:如果要选择自定义模板，请浏览并选择 [!DNL AEM Forms] 服务器。 如果要使用的模板在 [!DNL AEM Forms] 服务器中，您应该先将XDP上传到 [!DNL AEM Forms] 服务器。
+      * **强调颜色**:标题文本和分隔符行在记录PDF文档中呈现的颜色。
       * **字体系列**:“记录文档”PDF中文本的字体系列。
       * **包括未绑定到数据模型的表单对象**:设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。
       * **从记录文档中排除隐藏字段**:设置属性可标识要从记录文档中排除的隐藏字段。
-      * **隐藏面板的描述**:设置属性时，“记录文档”中不包含面板/表的说明。 适用于面板和表。
-
-      ![基本属性](/help/forms/assets/basicpropertiesdor.png)
-
+      * **隐藏面板的描述**:设置属性时，不会从记录文档中排除面板/表的说明。 适用于面板和表。
    1. **表单字段属性**:
       * **对于复选框和单选按钮组件，仅显示选定的值**:设置属性时，仅显示 [!UICONTROL 记录文档].
       * **多个值的分隔符**:您可以选择任何分隔符（如逗号或换行符）来显示多个值。
       * **选项对齐方式**:您可以选择所需的对齐方式（“水平”、“垂直”、“与自适应表单相同”），以设置要在上显示的字段（如复选框或单选按钮）的对齐方式 [!UICONTROL 记录文档]. 默认情况下，将为 [!UICONTROL 记录文档]. 从 [!UICONTROL 表单字段属性] 的DoR将覆盖 [!UICONTROL 项目对齐方式] ，用于自适应表单中的字段。 如果是，您选择 [!UICONTROL 与Aptive表单相同] 选项，则自适应表单创作实例中配置的对齐方式将用于 [!UICONTROL 记录文档] 字段。
       * **水平对齐选项的数量**：您可以设置要在记录文档中显示的水平对齐选项的数量。
-
-      ![表单字段属性](/help/forms/assets/formfieldpropertiesdor.png)
-
    1. **母版页  属性**:
       * **徽标图像**:您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
       * **表单标题**:DoR的标题。
@@ -357,7 +337,7 @@ When you select a form model, configure Document of Record using options availab
       * **免责声明**:规定记录文档权利和义务范围的文本。
       * **免责声明文本**:免责声明文本。
 
-      ![母版页  属性](/help/forms/assets/masterpagepropertiesdor.png)
+      ![母版页  属性](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
    >如果您使用的自适应表单模板是使用6.3之前的Designer版本创建的，要使“强调颜色”和“字体系列”属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
@@ -376,28 +356,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 要保存品牌策略更改，请点按 **[!UICONTROL 完成]**.
 
-## 自适应表单编辑器中的记录支持文档 {#dor-support-in-adaptiveform}
 
-您可以配置 [!UICONTROL 记录文档] 模板直接从自适应表单编辑器或自适应表单模板编辑器。
-
-从自适应表单编辑器的创作实例中执行以下步骤：
-
-1. 选择 **[!UICONTROL 自适应表单容器（根）]** 组件。
-1. 单击 ![“配置”图标](/help/forms/assets/configure-icon.svg) 图标以打开 **[!UICONTROL 属性]** 自适应表单容器的子目录访问Advertising Cloud帮助。
-1. 打开 **[!UICONTROL 记录模板文档]** 选项卡，然后从以下选项中选择：
-   * **[!UICONTROL 无]**:选择此选项时，否 [!UICONTROL 记录文档] 为自适应表单创建的模板。
-
-   * **[!UICONTROL 将表单模板关联为记录模板文档]**：选择此选项后，XFA表单将用作记录文档的模板。
-
-   * **[!UICONTROL 生成记录文档]**:选择此选项后， [!UICONTROL 记录文档] 模板会为您的自适应表单自动生成。
-
-1. 点按 ![保存](/help/forms/assets/check-button.png) 以保存属性。
-
-![记录模板支持文档](/help/forms/assets/dor-templatesupport.png)
-
->[!NOTE]
->
->When [!UICONTROL 记录文档] 模板是使用自适应表单模板编辑器创建的，则下只有两个选项可用 [!UICONTROL 记录模板文档] 选项卡 [!UICONTROL 无] 和 [!UICONTROL 生成记录文档].
 
 ## 记录文档中面板的表和列布局 {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -431,65 +390,3 @@ When you select a form model, configure Document of Record using options availab
 
 * **在DoR中包含未绑定字段：** 设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。 默认情况下，为true。
 * **隐藏时从DoR中排除字段：** 设置属性，以在表单提交时从记录文档中排除隐藏的字段。 启用 [在服务器上重新验证](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，则服务器会在从记录文档中排除这些字段之前重新计算隐藏字段。
-
-## 使用自定义XCI文件
-
-XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有一个主控的XCI文件。 您可以使用自定义XCI文件覆盖在主控XCI文件中指定的一个或多个默认属性。 例如，您可以选择将字体嵌入文档或为所有文档启用标记属性。 下表指定了XCI选项：
-
-| XCI选项 | 描述 |
-|--- |--- |
-| config/present/pdf/creator | 使用“文档信息”词典中的“创建者”条目标识文档创建者。 有关该词典的信息，请参阅 [PDF参考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | 使用“文档信息”词典中的“制作者”条目标识文档制作者。 有关该词典的信息，请参阅 [PDF参考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| 配置/存在/布局 | 控制输出是单个面板还是分页。 |
-| config/present/pdf/compression/level | 指定在生成PDF文档时要使用的压缩度。 |
-| config/present/pdf/fontInfo/embed | 控制在输出文档中嵌入字体。 |
-| config/present/pdf/scriptModel | 控制输出PDF文档中是否包含XFA特定信息。 |
-| config/present/common/data/adjustData | 控制XFA应用程序是否在合并后调整数据。 |
-| config/present/pdf/renderPolicy | 控制是在服务器上完成页面内容的生成，还是将其延迟到客户端。 |
-| 配置/存在/常用/区域设置 | 指定输出文档中使用的默认区域设置。 |
-| 配置/存在/目标 | 如果包含在当前元素中，则指定输出格式。 当包含在openAction元素中时，指定在交互式客户端中打开文档时要执行的操作。 |
-| config/present/output/type | 指定要应用于文件的压缩类型或要生成的输出类型。 |
-| config/present/common/temp/uri | 指定表单URI。 |
-| config/present/common/template/base | 在表单设计中为URI提供基本位置。 当此元素缺失或为空时，将使用表单设计的位置作为基础。 |
-| config/present/common/log/to | 控制写入日志数据或输出数据的位置。 |
-| config/present/output/to | 控制写入日志数据或输出数据的位置。 |
-| config/present/script/currentPage | 指定打开文档时的初始页面。 |
-| config/present/script/exclude | 通知Formsas a Cloud Service要忽略的事件。 |
-| config/present/pdf/linearized | 控制输出PDF文档是否被线性化。 |
-| config/present/script/runScripts | 控制执行哪组脚本Formsas a Cloud Service。 |
-| config/present/pdf/tagged | 控制在输出PDF文档中包含标记。 PDF中的标记是文档中包含的用于显示文档逻辑结构的附加信息。 标记有助于辅助辅助功能和重新设置格式。 例如，页码可以标记为项目，以便屏幕阅读器不会在文本的中间发音它。 尽管标记使文档更有用，但标记也会增加文档的大小和创建文档的处理时间。 |
-| config/present/pdf/fontInfo/alwaysEmbed | 指定嵌入到输出文档中的字体。 |
-| config/present/pdf/fontInfo/neverEmbed | 指定永远不能嵌入到输出文档中的字体。 |
-| config/present/pdf/pdfa/part | 指定文档符合的PDF/A规范的版本号。 |
-| config/present/pdf/pdfa/amd | 指定PDF/A规范的修正级别。 |
-| config/present/pdf/pdfa/confrance | 指定与PDF/A规范的符合级别。 |
-| config/present/pdf/version | 指定要生成的PDF文档的版本 |
-| config/present/pdf/version/map | 指定文档的回退字体 |
-
-### 在Formsas a Cloud Service环境中使用自定义XCI文件
-
-1. 将自定义XCI文件添加到您的开发项目。
-1. 指定以下内容 [内联属性](/help/implementing/deploying/configuring-osgi.md):
-
-   ```JSON
-    {
-     "xciFilePath": "[path of XCI file]"
-    }
-   ```
-
-   例如，
-
-   ```JSON
-    {
-     "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
-    }
-   ```
-
-1. 将项目部署到Cloud Service环境。
-
-### 在本地Formsas a Cloud Service开发环境中使用自定义XCI文件
-
-1. 将XCI文件上传到本地开发环境。
-1. 打开Cloud ServiceSDK配置管理器。 默认URL为： <http://localhost:4502/system/console/configMgr>.
-1. 找到并打开 **[!UICONTROL 自适应Forms和交互式通信Web渠道]** 配置。
-1. 指定XCI文件的路径，然后单击 **[!UICONTROL 保存]**.

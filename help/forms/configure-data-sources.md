@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 5%
+source-wordcount: '2227'
+ht-degree: 4%
 
 ---
 
@@ -33,40 +33,43 @@ ht-degree: 5%
 >
 >[!UICONTROL Experience Manager Forms] 不支持关系数据库。
 
-<!-- ## Configure relational database {#configure-relational-database}
+## 配置关系数据库 {#configure-relational-database}
 
-You can configure relational databases using [!DNL Experience Manager] Web Console Configuration. Do the following:
+### 先决条件
 
-1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
-1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
-1. In the configuration dialog, specify the details for the database you want to configure, such as:
+在使用 [!DNL Experience Manager] Web控制台配置中，必须 [通过cloud manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下会禁用端口。
 
-    * Name of the data source
-    * Data source service property that stores the data source name
-    * Java class name for the JDBC driver
-    * JDBC connection URI
-    * Username and password to establish connection with the JDBC driver
+### 配置关系数据库的步骤
+
+您可以使用 [!DNL Experience Manager] Web控制台配置。 执行以下操作：
+
+1. 转到 [!DNL Experience Manager] 网站控制台 `https://server:host/system/console/configMgr`.
+1. 定位 **[!UICONTROL Day Commons JDBC连接池]** 配置。 点按以在编辑模式下打开配置。
+<br>
+
+![JDBC连接器池](/help/forms/assets/jdbc_connector.png)
+<br>
+1. 在配置对话框中，指定要配置的数据库的详细信息，例如：
+
+   * JDBC驱动程序的Java类名称
+   * JDBC连接URI
+   * 与JDBC驱动程序建立连接的用户名和密码
+   * 在 **[!UICONTROL 验证查询]** 字段来验证池中的连接。 查询必须至少返回一行。 根据您的数据库，指定以下任一项：
+      * 选择1（MySQL和MS SQL）
+      * 从双(Oracle)中选择1
+   * 选择 **默认为只读** 复选框，以便无法修改。
+   * 选择 **默认情况下，自动提交** 复选框以自动提交更改。
+   * 指定池大小和池等待时间（以毫秒为单位）。
+   * 数据源的名称
+   * 存储数据源名称的数据源服务属性
 
    >[!NOTE]
    >
-   >Ensure that you encrypt sensitive information like passwords before configuring the data source. To encrypt:
-   >
-   >    
-   >    
-   >    1. Go to https://'[server]:[port]'/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
-   >    
-   >    
-   >    
-   >The encrypted text appears in the Protected Text field that you can specify in the configuration.
+   > 请参阅 [使用JDBC DataSourcePool的SQL连接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) 以了解更多详细信息。
 
-1. Enable **[!UICONTROL Test on Borrow]** or **[!UICONTROL Test on Return]** to specify that the objects are validated before being borrowed or returned from and to the pool, respectively.
-1. Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+1. 点按 **[!UICONTROL 保存]** 以保存配置。
 
-    * SELECT 1 (MySQL and MS SQL) 
-    * SELECT 1 from dual (Oracle)
-
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+现在，您可以将配置的关系数据库与表单数据模型一起使用。
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -113,9 +116,9 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## 配置RESTful Web服务 {#configure-restful-web-services}
 
-RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/) JSON或YAML格式 [!DNL Swagger] 定义文件。 要在 [!DNL Experience Manager] as a Cloud Service，确保您 [!DNL Swagger] 文件([Swagger版本2.0](https://swagger.io/specification/v2/))或托管文件的URL上。
+RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/) JSON或YAML格式 [!DNL Swagger] 定义文件。 要在 [!DNL Experience Manager] as a Cloud Service，确保您 [!DNL Swagger] 文件([Swagger版本2.0](https://swagger.io/specification/v2/))或 [!DNL Swagger] 文件([Swagger版本3.0](https://swagger.io/specification/v3/))或托管文件的URL上。
 
-请执行以下操作以配置RESTful服务：
+### 为Open API规范版本2.0配置RESTful服务 {#configure-restful-services-swagger-version2.0}
 
 1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
 
@@ -125,7 +128,7 @@ RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/)
 1. 为RESTful服务指定以下详细信息：
 
    * 从 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 文件。
-   * 基于[!DNL  Swagger] 源输入中，以下字段预填充了值：
+   * 基于[!DNL  Swagger] 源输入。以下字段已预填充值：
 
       * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于 [!DNL Swagger] 来源。
       * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
@@ -138,6 +141,33 @@ RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/)
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 点按 **[!UICONTROL 创建]** 为RESTful服务创建云配置。
+
+### 配置RESTful服务Open API规范版本2.0 {#configure-restful-services-swagger-version3.0}
+
+1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+
+   请参阅 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+
+1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL RESTful服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
+1. 为RESTful服务指定以下详细信息：
+
+   * 从 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger 3.0 URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 文件。
+   * 基于[!DNL  Swagger] 源输入时，服务器名称会自动显示。
+   * 选择身份验证类型（无、OAuth2.0、基本身份验证、API密钥或自定义身份验证）以访问RESTful服务，并相应地提供身份验证详细信息。
+
+   如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
+
+   <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+
+1. 点按 **[!UICONTROL 创建]** 为RESTful服务创建云配置。
+
+RESTful服务Swagger 3.0版不支持的一些操作包括：
+* 回调
+* oneof/anyof
+* 远程引用
+* 对于单个操作的不同MIME类型，请求主体不同
+
+您可以参考 [OpenAPI 3.0规范](https://swagger.io/specification/v3/) 以了解详细信息。
 
 ### 形成数据模型HTTP客户端配置以优化性能 {#fdm-http-client-configuration}
 
@@ -256,7 +286,7 @@ OData服务由其服务根URL标识。 在 [!DNL Experience Manager] as a Cloud 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other’s identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.

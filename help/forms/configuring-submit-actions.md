@@ -2,10 +2,10 @@
 title: 如何为自适应表单配置提交操作
 description: 自适应表单提供了多个提交操作。 提交操作定义提交后如何处理自适应表单。 您可以使用内置的提交操作或创建您自己的操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 3%
+source-wordcount: '3065'
+ht-degree: 2%
 
 ---
 
@@ -17,6 +17,9 @@ ht-degree: 3%
 * [发送电子邮件](#send-email)
 * [使用表单数据模型提交](#submit-using-form-data-model)
 * [调用AEM工作流](#invoke-an-aem-workflow)
+* [提交到 SharePoint](#submit-to-sharedrive)
+* [提交到 OneDrive](#submit-to-onedrive)
+* [提交到 Azure Blob Storage](#azure-blob-storage)
 
 您还可以 [扩展默认的提交操作](custom-submit-action-form.md) 创建您自己的提交操作。
 
@@ -46,9 +49,6 @@ ht-degree: 3%
 
 
 -->
-
-
-
 
 ## 提交到REST端点 {#submit-to-rest-endpoint}
 
@@ -162,6 +162,159 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 * **[!UICONTROL 处理服务器用户名]**:工作流用户的用户名
 
 * **[!UICONTROL 处理服务器密码]**:工作流用户的密码
+
+## 提交到 SharePoint {#submit-to-sharedrive}
+
+的 **[!UICONTROL 提交到SharePoint]** 提交操作可将自适应表单与Microsoft SharePoint存储相关联。 您可以将表单数据文件、附件或记录文档提交到连接的Microsoft Sharepoint存储。 使用 **[!UICONTROL 提交到SharePoint]** 在自适应表单中提交操作：
+
+1. [创建SharePoint配置](#create-a-sharepoint-configuration-create-sharepoint-configuration):它将AEM Forms与您的Microsoft Sharepoint存储相连。
+2. [在自适应表单中使用提交到SharePoint提交操作](#use-sharepoint-configuartion-in-af):它会将您的自适应表单连接到配置的Microsoft SharePoint。
+
+### 创建SharePoint配置 {#create-sharepoint-configuration}
+
+要将AEM Forms连接到Microsoft Sharepoint存储，请执行以下操作：
+
+1. 转到 **AEM Forms作者** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL MicrosoftSharePoint]**.
+1. 选择 **[!UICONTROL MicrosoftSharePoint]**，则会被重定向到 **[!UICONTROL SharePoint浏览器]**.
+1. 选择 **配置容器**. 配置存储在选定的配置容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。此时会出现SharePoint配置向导。
+   ![Sharepoint配置](/help/forms/assets/sharepoint_configuration.png)
+1. 指定 **[!UICONTROL 标题]**, **[!UICONTROL 客户端ID]**, **[!UICONTROL 客户端密钥]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft Azure门户访问您的应用程序。
+   * 在Microsoft Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. 替换 `[author-instance]` 和创作实例的URL。
+   * 添加API权限 `offline_access` 和 `Sites.Manage.All` 提供读/写权限。
+   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 替换 `<tenant-id>` 和 `tenant-id` 从Microsoft Azure门户访问您的应用程序。
+
+1. 单击 **[!UICONTROL 连接]**. 成功连接时， `Connection Successful` 消息。
+
+1. 现在，选择 **SharePoint网站** > **文档库** > **SharePoint文件夹**，以保存数据。
+
+   >[!NOTE]
+   >
+   >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 存在于选定的SharePoint站点。
+   >* 将文件夹创建为 `forms-ootb-storage-adaptive-forms-submission`，如果 `Documents` 通过单击 **创建文件夹**.
+
+
+现在，您可以将此SharePoint站点配置用于自适应表单中的提交操作。
+
+### 在自适应表单中使用SharePoint配置 {#use-sharepoint-configuartion-in-af}
+
+您可以在自适应表单中使用创建的SharePoint配置，将数据或生成的记录文档保存到SharePoint文件夹中。 执行以下步骤以在自适应表单中将SharePoint存储配置用作：
+1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 选择相同的 [!UICONTROL 配置容器] 对于自适应表单，您已在其中创建了SharePoint存储。
+   > * 如果否 [!UICONTROL 配置容器] ，则全局 [!UICONTROL 存储配置] 文件夹显示在提交操作属性窗口中。
+
+
+1. 选择 **提交操作** as **[!UICONTROL 提交到SharePoint]**.
+   ![SharepointGIF](/help/forms/assets/sharedrive-video.gif)
+1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
+1. 单击 **[!UICONTROL 保存]** 保存提交设置。
+
+提交表单时，数据会保存在指定的Microsoft Sharepoint存储中。
+保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## 提交到 OneDrive {#submit-to-onedrive}
+
+的 **[!UICONTROL 提交到OneDrive]** “提交操作”将自适应表单与Microsoft OneDrive连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Microsoft OneDrive存储。 使用 [!UICONTROL 提交到OneDrive] 在自适应表单中提交操作：
+
+1. [创建OneDrive配置](#create-a-onedrive-configuration-create-onedrive-configuration):它将AEM Forms与Microsoft OneDrive存储连接。
+2. [在自适应表单中使用Submit to OneDrive提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af):它将您的自适应表单连接到配置的Microsoft OneDrive。
+
+### 创建OneDrive配置 {#create-onedrice-configuration}
+
+要将AEM Forms连接到Microsoft OneDrive存储，请执行以下操作：
+
+1. 转到 **AEM Forms作者** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
+1. 选择 **[!UICONTROL Microsoft OneDrive]**，则会被重定向到 **[!UICONTROL OneDrive浏览器]**.
+1. 选择 **配置容器**. 配置存储在选定的配置容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。出现OneDrive配置向导。
+
+   ![OneDrive配置屏幕](/help/forms/assets/onedrive-configuration.png)
+
+1. 指定 **[!UICONTROL 标题]**, **[!UICONTROL 客户端ID]**, **[!UICONTROL 客户端密钥]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft Azure门户访问您的应用程序。
+   * 在Microsoft Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 替换 `[author-instance]` 和创作实例的URL。
+   * 添加API权限 `offline_access` 和 `Files.ReadWrite.All` 提供读/写权限。
+   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 替换 `<tenant-id>` 和 `tenant-id` 从Microsoft Azure门户访问您的应用程序。
+
+1. 单击 **[!UICONTROL 连接]**. 成功连接时， `Connection Successful` 消息。
+
+1. 现在，选择 **[!UICONTROL OneDrive容器]** > **[OneDrive文件夹]**  以保存数据。
+
+   >[!NOTE]
+   >
+   >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 存在于OneDrive容器中。
+   > * 将文件夹创建为 `forms-ootb-storage-adaptive-forms-submission`，如果尚不存在，请单击 **创建文件夹**.
+
+
+现在，您可以在自适应表单中将此OneDrive存储配置用于提交操作。
+
+### 在自适应表单中使用OneDrive配置 {#use-onedrive-configuartion-in-af}
+
+您可以在自适应表单中使用创建的OneDrive存储配置，将数据或生成的记录文档保存在OneDrive文件夹中。 执行以下步骤以在自适应表单中将OneDrive存储配置用作：
+1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 选择相同的 [!UICONTROL 配置容器] 对于自适应表单，您已在其中创建了OneDrive存储。
+   > * 如果否 [!UICONTROL 配置容器] ，则全局 [!UICONTROL 存储配置] 文件夹显示在提交操作属性窗口中。
+
+
+1. 选择 **提交操作** as **[!UICONTROL 提交到OneDrive]**.
+   ![OneDriveGIF](/help/forms/assets/onedrive-video.gif)
+1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
+1. 单击 **[!UICONTROL 保存]** 保存提交设置。
+
+提交表单时，数据将保存在指定的Microsoft OneDrive存储中。
+保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## 提交到 Azure Blob Storage {#submit-to-azure-blob-storage}
+
+的 **[!UICONTROL 提交到Azure Blob Storage]**  提交操作将自适应表单与Microsoft Azure门户连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Azure存储容器。 要对Azure Blob Storage使用“提交”操作，请执行以下操作：
+
+1. [创建Azure Blob存储容器](#create-a-azure-blob-storage-container-create-azure-configuration):它将AEM Forms与Azure存储容器连接。
+2. [在自适应表单中使用Azure存储配置 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af):它将您的自适应表单连接到配置的Azure存储容器。
+
+### 创建Azure Blob存储容器 {#create-azure-configuration}
+
+要将AEM Forms连接到Azure存储容器，请执行以下操作：
+1. 转到 **AEM Forms作者** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure存储]**.
+1. 选择 **[!UICONTROL Azure存储]**，则会被重定向到 **[!UICONTROL Azure存储浏览器]**.
+1. 选择 **配置容器**. 配置存储在选定的配置容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。出现“创建Azure存储配置”向导。
+
+   ![Azure存储配置](/help/forms/assets/azure-storage-configuration.png)
+
+1. 指定 **[!UICONTROL 标题]**, **[!UICONTROL Azure存储帐户]** 和 **[!UICONTROL Azure访问密钥]**.
+
+   * 您可以检索 `Azure Storage Account` 名称和 `Azure Access key` 从Microsoft Azure门户的存储帐户中。
+
+1. 单击“**[!UICONTROL 保存]**”。
+
+现在，您可以在自适应表单中将此Azure存储容器配置用于提交操作。
+
+### 在自适应表单中使用Azure存储配置 {#use-azure-storage-configuartion-in-af}
+
+您可以在自适应表单中使用创建的Azure存储容器配置，在Azure存储容器中保存数据或生成的记录文档。 执行以下步骤以在自适应表单中将Azure存储容器配置用作：
+1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 选择相同的 [!UICONTROL 配置容器] 对于自适应表单，您已在其中创建了OneDrive存储。
+   > * 如果否 [!UICONTROL 配置容器] ，则全局 [!UICONTROL 存储配置] 文件夹显示在提交操作属性窗口中。
+
+
+1. 选择 **提交操作** as **[!UICONTROL 提交到Azure Blob Storage]**.
+   ![Azure Blob存储GIF](/help/forms/assets/azure-submit-video.gif)
+
+1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
+1. 单击 **[!UICONTROL 保存]** 保存提交设置。
+
+提交表单时，数据将保存在指定的Azure存储容器配置中。
+保存数据的文件夹结构为 `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)。
 

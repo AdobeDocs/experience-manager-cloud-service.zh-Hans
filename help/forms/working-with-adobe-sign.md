@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 1%
 
 ---
 
 
 # 使用 [!DNL Adobe Sign] 在自适应表单中 {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->在自适应表单中使用Adobe Sign角色的功能在2021年8月的预发行渠道中提供。 该功能将在2021年9月版中正式发布。
-
 
 [!DNL Adobe Sign] 支持自适应表单的电子签名工作流。电子签名可改进工作流程，以处理法律、销售、工资、人力资源管理等领域的文档。
 
