@@ -4,10 +4,10 @@ description: 配置云资源后，您需要使用 AEM 产品配置文件授予�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 100%
 * `AEM Administrators` – 此组包括负责高级功能或 AEM 的用户。
 
 分配给 AEM 产品配置文件的每个用户也将获得 Cloud Manager 的只读访问权限。 可以通过其他产品配置文件授予对 Cloud Manager 的写入权限。
+
+>[!CAUTION]
+>
+>请勿编辑或删除名为AEM Administrators或AEM Users的产品配置文件。 编辑这些配置文件名称可能会中断对AEM云实例的登录。
 
 ## 前提条件 {#prerequisites}
 
