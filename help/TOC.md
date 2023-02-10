@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3932'
 ht-degree: 96%
 
 ---
@@ -511,7 +511,7 @@ ht-degree: 96%
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
    + 迁移 {#setup-environment}
       + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 管理 {#administering}
+   + 配置和管理 {#administering}
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
    + 集成 {#integrate}
@@ -562,26 +562,28 @@ ht-degree: 96%
             + [创建自定义提交操作](/help/forms/custom-submit-action-form.md)
          + [预填自适应表单字段](/help/forms/prepopulate-adaptive-form-fields.md)
          + [生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [向自适应表单中添加对新区域设置的支持](/help/forms/supporting-new-language-localization.md)
          + 添加或改进元数据 {#manage-metadata}
             + [添加、删除或编辑自适应表单的元数据](/help/forms/manage-form-metadata.md)
             + [重用自适应表单的元数据属性](/help/forms/reusing-adaptive-forms.md)
          + 提高自适应表单的可访问性 {#accessible-adaptive-forms}
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
-      + 表单数据模型 {#use-form-data-model}
-         + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
-         + [配置数据源](/help/forms/configure-data-sources.md)
-         + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
-         + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
-         + [创建表单数据模型](/help/forms/create-form-data-models.md)
-         + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
-         + [使用表单数据模型](/help/forms/using-form-data-model.md)
-      + Forms中心工作流 {#create-form-centric-workflows}
-         + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
-         + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
-         + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
-   + 使用通信API {#using-communications}
+         + [创建和管理审阅](/help/forms/create-reviews-forms.md)
+   + 表单数据模型 {#use-form-data-model}
+      + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
+      + [配置数据源](/help/forms/configure-data-sources.md)
+      + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
+      + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
+      + [创建表单数据模型](/help/forms/create-form-data-models.md)
+      + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
+      + [使用表单数据模型](/help/forms/using-form-data-model.md)
+   + Forms中心工作流 {#create-form-centric-workflows}
+      + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
+      + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
+      + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
+   + 通信 API {#using-communications}
       + [通信API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Communications API – 同步处理](/help/forms/aem-forms-cloud-service-communications.md)
       + [Communications API – 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

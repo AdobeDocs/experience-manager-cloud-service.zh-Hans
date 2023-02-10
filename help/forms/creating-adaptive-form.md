@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,12 @@ ht-degree: 0%
 
 自适应Forms让您能够创建有吸引力的响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
->[!NOTE]
->
-> 本文介绍了创建自适应表单的旧方法。 要根据最新方法创建自适应Forms，请参阅 [创建自适应表单（核心组件）](creating-adaptive-form.md).
+开始之前，请了解可供您使用的Forms组件类型：
+
+* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 是标准化的数据捕获组件。 这些组件为您的数字注册体验提供了自定义功能、缩短了开发时间并降低了维护成本。 开发人员可以轻松自定义和设置这些组件的样式。 Adobe建议利用这些现代且可扩展的组件来开发自适应Forms。
+
+* [自适应Forms Foundation组件](creating-adaptive-form.md) 是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑现有的基于自适应表单的基础组件。 如果要创建新表单，Adobe建议使用  [自适应Forms核心组件](creating-adaptive-form-core-components.md) 创建自适应Forms。
+
 
 
 <!-- 

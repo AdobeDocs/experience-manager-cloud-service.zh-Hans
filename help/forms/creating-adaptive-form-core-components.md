@@ -4,9 +4,9 @@ description: 了解如何使用 [!DNL Experience Manager Forms]. 自适应Forms�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # 创建自适应表单（核心组件） {#creating-an-adaptive-form-core-components}
 
-自适应Forms让您能够创建有吸引力的响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创建自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。 自适应Forms提供了两种类型的组件：
+自适应Forms让您能够创建有吸引力的响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创建自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
-* 自适应Forms核心组件是标准化的数据捕获组件。 这些组件为您的数字注册体验提供了自定义功能、缩短了开发时间并降低了维护成本。 开发人员可以轻松自定义这些组件。 Adobe建议利用这些现代且可扩展的组件来开发自适应Forms。
+开始之前，请了解可供您使用的Forms组件类型：
 
-* 自适应Forms Foundation组件是经典（旧）数据捕获组件。
+* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en):这些是标准化的数据捕获组件。 这些组件为您的数字注册体验提供了自定义功能、缩短了开发时间并降低了维护成本。 开发人员可以轻松自定义和设置这些组件的样式。 Adobe建议利用这些现代且可扩展的组件来开发自适应Forms。
 
-本文介绍了创建自适应表单的最新方法。 要根据旧方法创建自适应Forms，请参阅 [创建自适应表单（基础组件）](creating-adaptive-form.md)
+* [自适应Forms Foundation组件](creating-adaptive-form.md):这些是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑现有的基于自适应表单的基础组件。 如果要创建新表单，Adobe建议使用  [自适应Forms核心组件](creating-adaptive-form-core-components.md) 创建自适应Forms。
 
 ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
 
@@ -89,30 +89,7 @@ ht-degree: 0%
 
 ## 可用的自适应Forms核心组件
 
-自适应Forms核心组件是标准化的数据捕获组件。 这些组件为您的数字注册体验提供了自定义功能、缩短了开发时间并降低了维护成本。 以下核心组件现成可用：
-
-* 自适应Forms折叠面板：折叠项功能允许用户在自适应表单中显示和隐藏相关内容的部分。
-
-* 自适应Forms按钮
-* 自适应Forms复选框组
-* 自适应Forms日期选取器
-* 自适应Forms下拉列表
-* 自适应Forms电子邮件输入
-* 自适应Forms文件附件
-* 自适应Forms水平选项卡
-* 自适应Forms图像
-* 自适应Forms数字输入
-* 自适应Forms面板
-* 自适应Forms单选按钮
-* 自适应Forms重置按钮
-* 自适应Forms提交按钮
-* 自适应Forms电话输入
-* 自适应Forms文本
-* 自适应Forms文本框
-* 自适应Forms标题
-* 自适应Forms向导布局
-* 标题
-* 页脚
+自适应Forms核心组件是标准化的数据捕获组件。 这些组件提供了自定义功能，有助于缩短开发时间，并降低数字注册体验的维护成本。 [自适应Forms核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 提供了可用组件的详细列表以及有关每个组件功能的详细信息。 您还可以访问 [https://aemcomponents.dev/](https://aemcomponents.dev/) 查看可用的核心组件。
 
 ## 编辑自适应表单的表单模型属性 {#edit-form-model}
 

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 21%
 
 ---
@@ -66,17 +66,18 @@ ht-degree: 21%
 
 ### [!DNL Forms] 预发布中的新增功能 {#prerelease-features-forms}
 
-* **[使用数据捕获核心组件构建自适应Forms](/help/forms/creating-adaptive-form-core-components.md)**:使用自适应Forms编辑器，根据标准化的数据捕获组件（核心组件）创建表单。 这些组件为您的数字注册体验提供了自定义功能、缩短了开发时间并降低了维护成本。
+* **[使用数据捕获核心组件构建自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [使用自适应Forms编辑器](/help/forms/creating-adaptive-form-core-components.md) 创建基于标准化数据捕获组件（核心组件）的表单。 这些组件为您的数字注册体验提供了自定义功能、缩短了开发时间并降低了维护成本。
 * **[基于自适应Forms的核心组件样式设计前端管道支持](/help/forms/using-themes-in-core-components.md)**:利用基于BEM的基于核心组件的自适应Forms轻松自定义的主题，通过使用前端部署管道部署这些主题来增强表单的外观。
 * **[为基于核心组件的自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)**:在提交以供长期存档、打印或文档格式时，为基于核心组件的自适应表单创建记录。
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **共享自适应表单以供审阅**:使用自适应Forms审阅机制，允许一个或多个审阅人审阅表单。
 * **[将自适应Forms提交到Microsoft SharePoint和Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**:简化数据提交过程，并且能够将自适应表单数据直接发送到Microsoft SharePoint和Microsoft OneDrive。 您可以提交基于架构和无架构的数据。 这些提交操作是除现有提交操作之外的其他操作。
 * **[使用将自适应表单另存为模板功能来高效构建表单](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:通过将自适应表单保存为模板并重新使用用于下一个自适应表单的模板，可简化表单构建过程。
-* **[将Forms数据模型连接到支持JDBC的数据库](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**:将AEM Formsas a Cloud Service连接到支持JDBC的数据库，以读取数据并写入此类数据库。
-* **将表单数据模型连接到支持Open API规范版本3.0的REST端点**:将AEM Formsas a Cloud Service连接到支持Open API规范版本3.0的REST端点以发送和接收数据。
+* **[将AEM Forms连接到JDBC支持的数据库](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**:轻松将AEM Forms数据模型连接到支持JDBC的数据库，从而使您能够无缝地读写数据。
+* **[使用Open API 3.0与REST端点集成](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:将AEM Formsas a Cloud Service表单数据模型连接到支持Open API规范版本3.0的REST端点，以便您轻松发送和接收数据。
+* **[共享自适应表单以供审阅](/help/forms/create-reviews-forms.md)**:使用自适应Forms审阅机制，允许一个或多个审阅人审阅表单。
+
 
 ## CIF 加载项 {#cloud-services-cif}
 

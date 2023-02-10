@@ -1,9 +1,9 @@
 ---
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2898'
 ht-degree: 5%
 
 ---
@@ -452,7 +452,7 @@ RDE适用于每个获得许可的解决方案，并且Adobe还提供其他RDE，
 
 ## AEM FormsCloud Service快速开发环境(RDE)与其他环境有何不同？ {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms开发人员可以使用AEM FormsCloud Service快速开发环境来快速开发自适应Forms、工作流和自定义，如自定义核心组件、与第三方系统的集成等。 AEM FormsCloud Service快速开发环境(RDE)不支持需要记录文档的特性和功能，例如在提交自适应表单时生成记录文档。 下列功能使用记录文档。 这些配置不适用于快速开发环境(RDE):
+Forms开发人员可以使用AEM FormsCloud Service快速开发环境来快速开发自适应Forms、工作流和自定义，如自定义核心组件、与第三方系统的集成等。 AEM FormsCloud Service快速开发环境(RDE)不支持通信API，也不支持需要记录文档的特性和功能，例如在提交自适应表单时生成记录文档。 下面列出的AEM Forms功能在快速开发环境(RDE)中不可用：
 
 * 为自适应表单配置记录文档
 * 在提交自适应表单或使用工作流步骤生成记录文档
@@ -460,9 +460,7 @@ Forms开发人员可以使用AEM FormsCloud Service快速开发环境来快速�
 * 在自适应表单或工作流步骤中使用Adobe Sign
 * 通信API
 
-在使用需要记录文档的功能时，您会遇到错误消息。
-
 >[!NOTE]
 >
-> 快速开发环境(RDE)的UI与Forms的其他Cloud Service环境之间没有变化。 所有与记录文档相关的选项（如为自适应表单选择记录文档模板）将继续显示在UI中。 这些环境没有记录文档功能来测试此类选项。 因此，当选择任何“记录文档”选项时，不执行任何操作，并显示或返回错误消息。
+> 快速开发环境(RDE)的UI与Forms的其他Cloud Service环境之间没有变化。 所有与记录文档相关的选项（如为自适应表单选择记录文档模板）将继续显示在UI中。 这些环境没有用于测试此类选项的通信API和记录文档功能。 因此，当您选择任何需要通信API或记录文档功能的选项时，将不执行任何操作，并显示或返回错误消息。
 
