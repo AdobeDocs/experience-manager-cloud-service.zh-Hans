@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: ef617b38c8dec355a0fa8ca72af652f37d6668a4
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3931'
 ht-degree: 96%
 
 ---
@@ -504,22 +504,30 @@ ht-degree: 96%
       + [架构](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常见问题](/help/forms/faq.md)
       + [已知问题](/help/forms/known-issues.md)
-   + 设置 {#setup-environment}
+   + 设置和迁移 {#setup-configure-migrate}
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
       + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
-   + 迁移 {#setup-environment}
       + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 配置和管理 {#administering}
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
    + 集成 {#integrate}
-      + [将AEM Formsas a Cloud Service与Adobe Sign集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [将AEM Formsas a Cloud Service与DocuSign集成](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [将AEM Formsas a Cloud Service与Adobe Analytics集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [将自适应表单与 Microsoft Power 集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [在AEM Sites页面中嵌入自适应Forms](/help/forms/embed-adaptive-form-aem-sites.md)
+      + 服务 {#services}
+         + [将AEM Formsas a Cloud Service与Adobe Sign集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [将AEM Formsas a Cloud Service与DocuSign集成](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [将AEM Formsas a Cloud Service与Adobe Analytics集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [将自适应表单与 Microsoft Power 集成自动化](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [在AEM Sites页面中嵌入自适应Forms](/help/forms/embed-adaptive-form-aem-sites.md)
+      + 表单数据模型 {#use-form-data-model}
+         + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
+         + [配置数据源](/help/forms/configure-data-sources.md)
+         + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
+         + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
+         + [创建表单数据模型](/help/forms/create-form-data-models.md)
+         + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
+         + [使用表单数据模型](/help/forms/using-form-data-model.md)
    + 自适应表单 {#adaptive-forms-authoring}
       + 创作自适应Forms — 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
@@ -570,15 +578,6 @@ ht-degree: 96%
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
          + [创建和管理审阅](/help/forms/create-reviews-forms.md)
-   + 表单数据模型 {#use-form-data-model}
-      + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
-      + [配置数据源](/help/forms/configure-data-sources.md)
-      + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
-      + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
-      + [创建表单数据模型](/help/forms/create-form-data-models.md)
-      + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
-      + [使用表单数据模型](/help/forms/using-form-data-model.md)
    + Forms中心工作流 {#create-form-centric-workflows}
       + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
@@ -589,7 +588,7 @@ ht-degree: 96%
       + [Communications API – 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
-      + 开发人员API参考 {#aem-forms-developer-api-reference}
+   + 开发人员API参考 {#aem-forms-developer-api-reference}
       + [AEM FormsCloud Service通信API参考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM FormsCloud ServiceJavaScript API参考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM FormsCloud ServiceJava API参考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
