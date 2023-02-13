@@ -2,9 +2,9 @@
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3172'
 ht-degree: 2%
 
 ---
@@ -116,11 +116,16 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 ![更新的模板](assets/we-retail-new-invoice.png)
 
-开发人员将更新的模板上传并应用到自适应表单。 自适应表单会自动检测并显示绑定已更改的字段列表。
+<!--
 
-![绑定错误](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-表单开发人员将自适应Forms字段与相应的记录文档模板绑定。
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 现在，在提交自适应表单时，将生成更新的记录文档。

@@ -2,9 +2,9 @@
 title: 如何创建自适应表单模板？
 description: 创建自适应表单模板，以使用模板编辑器定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -50,8 +50,7 @@ Experience Manager提供用于组织模板的全局文件夹。 但是，默认�
    * **页面信息**:允许您指定信息，如发布/取消发布时间、缩略图、客户端库、页面策略和页面设计客户端库。
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **模式选择器：** 允许您更改模式。
-您可以选择 **[!UICONTROL 结构]** 模式， **[!UICONTROL 初始内容]**, **[!UICONTROL 布局控制]** 模式。 结构模式允许您添加和自定义页眉和页脚。 使用初始内容模式可自定义表单内容。
+   * **模式选择器：** 允许您更改模式。您可以选择 **[!UICONTROL 结构]** 模式， **[!UICONTROL 初始内容]**, **[!UICONTROL 布局控制]** 模式。 结构模式允许您添加和自定义页眉和页脚。 使用初始内容模式可自定义表单内容。
    * **预览：** 用于预览模板在发布时的外观。 您可以使用“图层选择器”和“预览”切换编辑和预览模式。
 * **侧栏：** 提供内容、属性、资产和组件浏览器。
 * **组件工具栏：** 选择组件后，您会看到一个工具栏，其中允许您自定义组件。
@@ -155,8 +154,20 @@ Experience Manager提供用于组织模板的全局文件夹。 但是，默认�
 
 >[!NOTE]
 >
-> * 您可以关联 [!UICONTROL 表单数据模型架构] 到模板编辑器中的自适应表单模板。 请参阅 [创建自适应表单](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) 以了解更多信息。
 > * 您还可以配置 [!UICONTROL 记录文档] 模板直接从自适应表单编辑器或自适应表单模板编辑器。 有关更多信息，请参阅 [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### 将表单数据模型架构与模板关联 {#associating-form-data-model-schema-in-template}
+
+作者可以将 [!UICONTROL 表单数据模型架构] 到模板编辑器中的自适应表单模板。 它允许作者从模板编辑器中选择一个架构。 将架构与模板关联后，如果表单作者基于模板创建表单，则会预先为该表单选择架构。 它有助于表单作者规范模式的使用，并为表单作者节省时间。 要在模板编辑器中选择表单数据模型架构，请执行以下操作：
+
+1. 点按 **[!UICONTROL 内容浏览器]** 位于左侧。
+1. 转到表单容器 **[!UICONTROL 设置]**.
+1. 选择 **[!UICONTROL 数据模型]**.
+1. 通过 **[!UICONTROL 选择表单数据模型]** 并保存配置。
+
+![表单 — 数据模型 — 关联 — in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 
