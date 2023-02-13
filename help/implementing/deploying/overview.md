@@ -3,9 +3,9 @@ title: 部署到 AEM as a Cloud Service
 description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3497'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-与AEM On Premise和Managed Services解决方案相比，AEM as a Cloud Service中代码开发的基础知识相似。 开发人员编写代码并在本地进行测试，然后将代码推送到远程AEMas a Cloud Service环境。 Cloud Manager是Managed Services的可选内容交付工具，它是必需的。 现在，这是将代码部署到AEMas a Cloud Service环境的唯一机制。
+与AEM On Premise和Managed Services解决方案相比，AEM as a Cloud Service中代码开发的基础知识相似。 开发人员编写代码并在本地进行测试，然后将代码推送到远程AEMas a Cloud Service环境。 Cloud Manager是Managed Services的可选内容交付工具，它是必需的。 现在，这是将代码部署到AEMas a Cloud Service开发、暂存和生产环境的唯一机制。 为了在部署上述环境之前快速进行功能验证和调试，可以将代码从本地环境同步到 [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 更新 [AEM版本](/help/implementing/deploying/aem-version-updates.md) 始终是与推送分开的部署事件 [自定义代码](#customer-releases). 换种方式看，应针对生产上的AEM版本测试自定义代码版本，因为这是将在顶部部署的版本。 AEM版本更新之后发生的事件，该版本将会频繁进行并自动应用。 它们旨在向后兼容已部署的客户代码。
 
@@ -170,7 +170,6 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="包管理器 — 迁移可变内容包"
->abstract="探索包管理器的用例，了解应将内容包作为“一次性”安装的用例，其中包括将特定内容从生产导入到暂存，以调试生产问题、将小内容包从内部部署环境传输到AEM云环境等。"
 >abstract="探索包管理器的用例，了解应将内容包安装为“一次性”的用例，其中包括将特定内容从生产导入到暂存，以调试生产问题、将小内容包从内部部署环境传输到AEM云环境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="内容转移工具"
 
@@ -279,6 +278,12 @@ above appears to be internal, to confirm with Brian -->
 ### 回滚的保守编码 {#conservative-coding-for-rollbacks}
 
 如果在部署后报告或检测到故障，则可能需要回滚到蓝色版本。 最好确保蓝色代码与绿色版本创建的任何新结构兼容，因为新结构（任何可变内容内容）将不会回滚。 如果旧代码不兼容，则需要在后续客户版本中应用修复。
+
+## 快速开发环境(RDE) {#rde}
+
+[快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) （或简称RDE）允许开发人员快速部署和查看更改，从而最大限度地减少测试已在本地开发环境中使用且经过验证的功能所需的时间。
+
+与通过Cloud Manager管道部署代码的常规开发环境不同，开发人员使用命令行工具将代码从本地开发环境同步到RDE。 在RDE中成功测试了更改后，应通过Cloud Manager管道将这些更改部署到常规的云开发环境，这会将代码置于适当的质量门口。
 
 ## 运行模式 {#runmodes}
 

@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在AEMas a Cloud Service上开发的准则，以及AMS中AEM与内部部署和AEM的不同之处在于哪些重要方式。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 相反，可以从开发人员控制台启动存储库浏览器，为创作层、发布层和预览层上的所有环境提供对存储库的只读视图。 阅读有关存储库浏览器的更多信息 [此处](/help/implementing/developing/tools/repository-browser.md).
 
-开发人员控制台中提供了一组用于调试AEMas a Cloud Service开发人员环境的工具，可用于开发、暂存和生产环境。 可通过调整创作或发布服务URL来确定该URL，如下所示：
+开发人员控制台中提供了一组用于调试AEMas a Cloud Service开发人员环境的工具，用于RDE、开发、暂存和生产环境。 可通过调整创作或发布服务URL来确定该URL，如下所示：
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
