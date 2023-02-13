@@ -2,7 +2,7 @@
 title: 如何创建自适应表单模板？
 description: 创建自适应表单模板，以使用模板编辑器定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -158,7 +158,7 @@ Experience Manager提供用于组织模板的全局文件夹。 但是，默认�
 
 
 
-### 将表单数据模型架构与模板关联 {#associating-form-data-model-schema-in-template}
+## 将表单数据模型架构与模板关联 {#associating-form-data-model-schema-in-template}
 
 作者可以将 [!UICONTROL 表单数据模型架构] 到模板编辑器中的自适应表单模板。 它允许作者从模板编辑器中选择一个架构。 将架构与模板关联后，如果表单作者基于模板创建表单，则会预先为该表单选择架构。 它有助于表单作者规范模式的使用，并为表单作者节省时间。 要在模板编辑器中选择表单数据模型架构，请执行以下操作：
 
