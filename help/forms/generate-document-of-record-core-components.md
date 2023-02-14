@@ -2,9 +2,9 @@
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3109'
 ht-degree: 2%
 
 ---
@@ -326,8 +326,10 @@ When you select a form model, configure Document of Record using options availab
       * **模板**:如果要选择自定义模板，请浏览并选择 [!DNL AEM Forms] 服务器。 如果要使用的模板在 [!DNL AEM Forms] 服务器中，您应该先将XDP上传到 [!DNL AEM Forms] 服务器。
       * **强调颜色**:标题文本和分隔符行在记录PDF文档中呈现的颜色。
       * **字体系列**:“记录文档”PDF中文本的字体系列。
+
       * **包括未绑定到数据模型的表单对象**:设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。
-      * **从记录文档中排除隐藏字段**:设置属性可标识要从记录文档中排除的隐藏字段。
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **隐藏面板的描述**:设置属性时，不会从记录文档中排除面板/表的说明。 适用于面板和表。
    1. **表单字段属性**:
       * **对于复选框和单选按钮组件，仅显示选定的值**:设置属性时，仅显示 [!UICONTROL 记录文档].
@@ -341,7 +343,6 @@ When you select a form model, configure Document of Record using options availab
       * **免责声明标签**:免责声明标签。
       * **免责声明**:规定记录文档权利和义务范围的文本。
       * **免责声明文本**:免责声明文本。
-
       ![母版页  属性](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ When you select a form model, configure Document of Record using options availab
 **表单级别设置**
 
 * **在DoR中包含未绑定字段：** 设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。 默认情况下，为true。
-* **隐藏时从DoR中排除字段：** 设置属性，以在表单提交时从记录文档中排除隐藏的字段。 启用 [在服务器上重新验证](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，则服务器会在从记录文档中排除这些字段之前重新计算隐藏字段。
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
