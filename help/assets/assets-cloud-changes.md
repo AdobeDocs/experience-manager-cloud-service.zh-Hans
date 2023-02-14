@@ -4,9 +4,9 @@ description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Mana
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
+source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1004'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,6 @@ ht-degree: 6%
 | 从ZIP存档提取资产 | 不受支持 | 请参阅 [中的ZIP提取 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | 资产评级 | 不受支持 | 不支持元数据架构编辑器中的评级小组件。 |
 | 内容处置过滤器 | 不受支持 | 的常见用例 `ContentDispositionFilter` 是让管理员配置 [!DNL Experience Manager] 以提供HTML文件，并在内联中打开PDF文件，而不是下载这些文件。 在发布实例上，您可以使用Dispatcher配置管理处置。 在创作实例上，Adobe不建议修改内容处置标头。 请参阅 [中的内容处置过滤器 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
-| [下载报表](/help/assets/asset-reports.md) | 不受支持 | 目前，无法使用通知资产使用的下载报表。 请参阅 [下载报表 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | 产品照片拍摄模板 | 不受支持 | 请参阅 [产品照片模板 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | 智能翻译 | 不受支持 | [智能翻译](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 不支持 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | WebDAV | 不受支持 | 有关替代方案，请参阅 [[!DNL Creative Cloud] 集成](/help/assets/aem-cc-integration-best-practices.md) 或 [显影剂参考材料](/help/assets/developer-reference-material-apis.md). |
