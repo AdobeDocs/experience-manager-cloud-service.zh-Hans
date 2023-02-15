@@ -2,9 +2,9 @@
 title: 如何为自适应表单配置提交操作
 description: 自适应表单提供了多个提交操作。 提交操作定义提交后如何处理自适应表单。 您可以使用内置的提交操作或创建您自己的操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
+source-wordcount: '3131'
 ht-degree: 2%
 
 ---
@@ -185,6 +185,10 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    * 添加API权限 `offline_access` 和 `Sites.Manage.All` 提供读/写权限。
    * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 替换 `<tenant-id>` 和 `tenant-id` 从Microsoft Azure门户访问您的应用程序。
 
+   >[!NOTE]
+   >
+   > 的 **客户端密码** 字段是必选字段或可选字段，具体取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密钥，则必须提供客户端密钥。
+
 1. 单击 **[!UICONTROL 连接]**. 成功连接时， `Connection Successful` 消息。
 
 1. 现在，选择 **SharePoint网站** > **文档库** > **SharePoint文件夹**，以保存数据。
@@ -239,6 +243,10 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    * 在Microsoft Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 替换 `[author-instance]` 和创作实例的URL。
    * 添加API权限 `offline_access` 和 `Files.ReadWrite.All` 提供读/写权限。
    * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 替换 `<tenant-id>` 和 `tenant-id` 从Microsoft Azure门户访问您的应用程序。
+
+   >[!NOTE]
+   >
+   > 的 **客户端密码** 字段是必选字段或可选字段，具体取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密钥，则必须提供客户端密钥。
 
 1. 单击 **[!UICONTROL 连接]**. 成功连接时， `Connection Successful` 消息。
 
