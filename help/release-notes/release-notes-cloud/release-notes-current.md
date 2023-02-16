@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2216d4a299c23a88659692d600b5995ff98cdde7
+source-git-commit: 0c7ed29e53d9315ad45102eef5d4e1f66ab4b4ae
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 21%
+ht-degree: 20%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 21%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)找到 Cloud Manager 每月发布的完整列表。
+您可以找到Cloud Manager月度版本的完整列表 [这里。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 迁移工具 {#migration-tools}
 

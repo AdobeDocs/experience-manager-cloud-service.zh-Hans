@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5eeece66bb4d13ac9d40a18514332133dc980325
+source-git-commit: f3de5a5a39ca993f0191d9b4d1436e25f5cf673f
 workflow-type: tm+mt
-source-wordcount: '3931'
+source-wordcount: '3935'
 ht-degree: 96%
 
 ---
@@ -70,45 +70,47 @@ ht-degree: 96%
    + AEMaCS维护发行说明 {#maintenance}
       + [最新维护发行说明](/help/release-notes/maintenance/latest.md)
    + Cloud Manager 发行说明 {#cloud-manager}
-      + [最新发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
+      + 2023 {#2023}
+         + [2023.1.0 版发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
-         + [2022.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-12-0.md)
-         + [2022.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
-         + [2022.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
-         + [2022.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
-         + [2022.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
-         + [2022.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
-         + [2022.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
-         + [2022.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
-         + [2022.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-         + [2022.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-         + [2022.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-         + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+         + [2022.12.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
+         + [2022.11.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
+         + [2022.10.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
+         + [2022.9.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-9-0.md)
+         + [2022.8.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-8-0.md)
+         + [2022.7.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-7-0.md)
+         + [2022.6.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-6-0.md)
+         + [2022.5.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-5-0.md)
+         + [2022.4.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-4-0.md)
+         + [2022.3.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-3-0.md)
+         + [2022.2.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-2-0.md)
+         + [2022.1.0 版发行说明](/help/implementing/cloud-manager/release-notes/2022/2022-1-0.md)
       + 2021 {#2021}
-         + [202.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
-         + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-         + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-         + [2021.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-         + [2021.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-         + [2021.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-         + [2021.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-         + [2021.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-         + [2021.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-         + [2021.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-         + [2021.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-         + [2021.1.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+         + [2021.12.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-12-0.md)
+         + [2021.11.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-11-0.md)
+         + [2021.10.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-10-0.md)
+         + [2021.9.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-9-0.md)
+         + [2021.8.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-8-0.md)
+         + [2021.7.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-7-0.md)
+         + [2021.6.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-6-0.md)
+         + [2021.5.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-5-0.md)
+         + [2021.4.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-4-0.md)
+         + [2021.3.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-3-0.md)
+         + [2021.2.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-2-0.md)
+         + [2021.1.0 版发行说明](/help/implementing/cloud-manager/release-notes/2021/2021-1-0.md)
       + 2020 {#2020}
-         + [2020.12.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-         + [2020.11.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-         + [2020.10.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-         + [2020.9.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-         + [2020.8.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-         + [2020.7.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-         + [2020.6.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-         + [2020.5.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-         + [2020.4.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-         + [2020.3.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-         + [2020.2.0 版发行说明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+         + [2020.12.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-12-0.md)
+         + [2020.11.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-11-0.md)
+         + [2020.10.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-10-0.md)
+         + [2020.9.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-9-0.md)
+         + [2020.8.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-8-0.md)
+         + [2020.7.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-7-0.md)
+         + [2020.6.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-6-0.md)
+         + [2020.5.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-5-0.md)
+         + [2020.4.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-4-0.md)
+         + [2020.3.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-3-0.md)
+         + [2020.2.0 版发行说明](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + 迁移工具的发行说明{#migration-tools}
       + [最新发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
