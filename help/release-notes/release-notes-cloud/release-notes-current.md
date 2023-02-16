@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 2216d4a299c23a88659692d600b5995ff98cdde7
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 21%
@@ -19,7 +19,7 @@ ht-degree: 21%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版、2022 版等的发行说明。
 >
->请查看 [Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans) 要了解即将启动的 [!DNL Experience Manager] as a Cloud Service。
+>请查看 [Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 要了解即将启动的 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 21%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能发布(2023.1.0)是2023年2月9日。 下一个功能版本(2023.2.0)计划于2023年3月2日发布。
+的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能发布(2023.1.0)是2023年2月9日。 下一个功能版本(2023.2.0)计划于2023年3月16日发布。
 
 ## 发布视频 {#release-video}
 
