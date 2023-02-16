@@ -2,10 +2,10 @@
 title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
+source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 98%
+source-wordcount: '2143'
+ht-degree: 56%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 98%
 
 ## 概述 {#custom-ui-testing}
 
-AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)集成包，确保对自定义应用程序的顺利更新。 特别是，IT 测试门已经使用 AEM API 创建和自动化定制测试。
+AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)集成包，确保对自定义应用程序的顺利更新。 特别是，IT测试门已经支持使用AEM API创建和自动化自定义测试。
 
-UI 测试是打包在 Docker 图像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。 此外，通过使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松生成 UI 测试项目。
+UI 测试是打包在 Docker 图像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。 此外，使用 [AEM项目原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 UI 测试作为每个 Cloud Manager 管道的特定质量关卡的一部分，通过[专用&#x200B;**自定义 UI 测试**&#x200B;步骤执行。](/help/implementing/cloud-manager/deploy-code.md) 任何 UI 测试，包括回归和新功能，都可以检测和报告错误。
 
@@ -32,45 +32,40 @@ UI 测试作为每个 Cloud Manager 管道的特定质量关卡的一部分，�
 >[!TIP]
 >
 >Adobe 建议遵循 [AEM 项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)中提供的结构和语言（JavaScript 和 WDIO）。
-
-### 客户选择启用 {#customer-opt-in}
-
-要使Cloud Manager生成并执行您的UI测试，您必须通过向存储库添加文件来选择加入此功能。
-
-* 文件名称必须为 `testing.properties`。
-* 文件内容必须为 `ui-tests.version=1`。
-* 该文件必须在 UI 测试子模块的 `pom.xml` 文件旁边的 maven 子模块下。
-* 该文件必须位于内置 `tar.gz` 文件的根目录下。
-
-如果此文件不存在，将跳过 UI 测试生成和执行。
-
-要在构建工件中包含 `testing.properties` 文件，请在 `assembly-ui-test-docker-context.xml` 文件中添加 `include` 语句。
-
-```xml
-[...]
-<includes>
-    <include>Dockerfile</include>
-    <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
-</includes>
-[...]
-```
-
->[!NOTE]
 >
->如果您的项目不包括此行，则需要编辑该文件并选择进行 UI 测试。
->
->文件可能包含行，建议不要编辑它。 这是因为该行是在引入选择启用 UI 测试之前引入到您的项目中的，而客户不打算编辑该文件。可放心忽略。
+>Adobe还提供了基于Java和WebDriver的UI测试模块示例。 请参阅 [AEM测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) 以了解详细信息。
+
+## UI测试入门 {#get-started-ui-tests}
+
+本节介绍在Cloud Manager中设置执行UI测试所需的步骤。
+
+1. 确定要使用的编程语言。
+
+   * 对于JavaScript和WDIO，请使用在 `ui.tests` 文件夹。
+
+      >[!NOTE]
+      >
+      >如果您的存储库是在Cloud Manager自动创建之前创建的 `it.tests` 文件夹，则还可以使用 [AEM项目原型。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+
+   * 对于Java和WebDriver，请使用 [AEM测试示例存储库。](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+
+   * 有关其他编程语言，请参阅 [构建UI测试](#building-ui-tests) 以设置测试项目。
+
+1. 确保根据部分激活UI测试 [客户选择加入](#customer-opt-in) 在本文档中。
+
+1. 开发测试案例和 [在本地运行测试。](#run-ui-tests-locally)
+
+1. 将代码提交到Cloud Manager存储库并执行Cloud Manager管道。
 
 ## 构建 UI 测试 {#building-ui-tests}
 
-Maven 项目生成 Docker 构建上下文。 此 Docker 构建上下文描述了如何创建包含 UI 测试的 Docker 图像，由 Cloud Manager 用户生成包含实际 UI 测试的 Docker 图像。
+Maven 项目生成 Docker 构建上下文。 此Docker构建上下文介绍如何创建包含UI测试的Docker图像，Cloud Manager将使用该UI测试生成包含实际UI测试的Docker图像。
 
 本节介绍将 UI 测试项目添加到存储库所需的步骤。
 
 >[!TIP]
 >
->[AEM 项目原型](https://github.com/adobe/aem-project-archetype)可以生成 UI 测试项目，因为您对编程语言没有特殊要求。
+>的 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 如果您对编程语言没有特殊要求，则可以为您生成符合以下描述的UI测试项目。
 
 ### 生成 Docker 构建上下文 {#generate-docker-build-context}
 
@@ -159,6 +154,49 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 
 构建应该生成零或一个档案。 如果它生成零个档案，则默认通过测试步骤。 如果构建生成多个档案，那么选择哪个档案是不确定的。
 
+### 客户选择启用 {#customer-opt-in}
+
+要使Cloud Manager生成并执行您的UI测试，您必须通过向存储库添加文件来选择加入此功能。
+
+* 文件名称必须为 `testing.properties`。
+* 文件内容必须为 `ui-tests.version=1`。
+* 文件必须位于maven子模块下方，以便UI测试位于 `pom.xml` 文件来测试子模块。
+* 该文件必须位于内置 `tar.gz` 文件的根目录下。
+
+如果此文件不存在，将跳过 UI 测试生成和执行。
+
+要在构建工件中包含 `testing.properties` 文件，请在 `assembly-ui-test-docker-context.xml` 文件中添加 `include` 语句。
+
+```xml
+[...]
+<includes>
+    <include>Dockerfile</include>
+    <include>wait-for-grid.sh</include>
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
+</includes>
+[...]
+```
+
+>[!NOTE]
+>
+>如果您的项目不包括此行，则需要编辑该文件并选择进行 UI 测试。
+>
+>文件可能包含行，建议不要编辑它。 这是因为该行是在引入选择启用 UI 测试之前引入到您的项目中的，而客户不打算编辑该文件。可放心忽略。
+
+如果您使用的是由Adobe提供的示例：
+
+* 对于基于JavaScript的 `ui.tests` 根据 [AEM项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)，则可以执行以下命令以添加所需的配置。
+
+   ```shell
+   echo "ui-tests.version=1" > testing.properties
+   
+   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+   fi
+   ```
+
+* 提供的Java测试示例已经设置了选择加入标记。
+
 ## 编写 UI 测试 {#writing-ui-tests}
 
 本节描述包含 UI 测试的 Docker 图像必须遵循的惯例。 Docker 图像是根据上一节所述 Docker 构建上下文构建的。
@@ -172,13 +210,18 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 服务器的 URL |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 服务器使用的浏览器实施 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 作者实例的 URL |
-| `AEM_AUTHOR_USERNAME` | `admin` | 登录 AEM 作者实例的用户名 |
-| `AEM_AUTHOR_PASSWORD` | `admin` | 登录 AEM 作者实例的密码 |
+| `AEM_AUTHOR_USERNAME` | `admin` | 登录到AEM创作实例的用户名 |
+| `AEM_AUTHOR_PASSWORD` | `admin` | 登录到AEM创作实例的密码 |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 发布实例的 URL |
-| `AEM_PUBLISH_USERNAME` | `admin` | 登录 AEM 发布实例的用户名 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 登录 AEM 发布实例的密码 |
+| `AEM_PUBLISH_USERNAME` | `admin` | 登录到AEM发布实例的用户名 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 登录到AEM发布实例的密码 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 必须保存测试结果的 XML 报告的路径 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 要使 Selenium 能够访问文件，必须将文件上载到的 URL |
+
+Adobe测试示例提供了用于访问配置参数的帮助程序函数：
+
+* JavaScript:请参阅 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 模块
+* Java:请参阅 [配置](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 类
 
 ### 等待 Selenium 就绪 {#waiting-for-selenium}
 
@@ -189,17 +232,32 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 
 一旦 Selenium 的状态端点得到肯定响应，测试就可以开始了。
 
+AdobeUI测试示例使用脚本处理此问题 `wait-for-grid.sh`，在Docker启动时执行，并且仅在网格准备就绪后才开始实际测试执行。
+
 ### 生成测试报告 {#generate-test-reports}
 
 Docker 图像必须以 JUnit XML 格式生成测试报告，并将其保存在环境变量 `REPORTS_PATH` 指定的路径中。JUnit XML 格式是一种广泛使用的报告测试结果的格式。 如果 Docker 图像使用 Java 和 Maven，则诸如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven Failsafe 插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)等标准测试模块可以立即生成此类报告。
 
 如果 Docker 图像是用其他编程语言或测试运行程序实现的，请查看文档，了解如何生成 JUnit XML 报告。
 
+>[!NOTE]
+>
+>UI测试步骤的结果仅基于测试报表进行评估。 请确保生成相应的报表以执行测试。
+>
+>使用断言，而不是仅将错误记录到STDERR或返回非零退出代码，否则您的部署管道可能会正常进行。
+
 ### 捕获屏幕快照和视频 {#capture-screenshots}
 
-Docker 映像可能会产生额外的测试输出（如屏幕快照、视频），并将其保存在环境变量 `REPORTS_PATH` 指定的路径中。测试结果存档中包括任何可在 `REPORTS_PATH` 下找到的文件。
+Docker图像可以生成其他测试输出（例如屏幕截图或视频），并将它们保存在环境变量指定的路径中 `REPORTS_PATH`. 测试结果存档中包括任何可在 `REPORTS_PATH` 下找到的文件。
 
-如果在执行 UI 测试期间创建了测试结果存档，则测试日志文件在结尾引用测试结果档案的位置。
+默认情况下，Adobe提供的测试示例会为任何失败的测试创建屏幕截图。
+
+您可以使用帮助程序函数通过测试创建屏幕截图。
+
+* JavaScript: [takeScreenshot命令](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
+* Java: [命令](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+
+如果在UI测试执行期间创建了测试结果存档，则测试日志文件包含对测试结果存档在末尾位置的引用。
 
 ```
 [...]
@@ -222,6 +280,68 @@ Note: the link will expire after 60 days
    * 多部分表单必须有一个文件字段。
    * 这相当于 `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`。
    * 查阅 Docker 图像中使用的编程语言的文档和库，了解如何执行此类 HTTP 请求。
+   * Adobe测试示例提供了用于上传文件的帮助程序函数：
+      * JavaScript:请参阅 [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) 命令。
+      * Java:请参阅 [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 类。
 1. 如果上载成功，请求将返回 `200 OK` 响应，响应类型为 `text/plain`。
    * 响应的内容是一个不透明的文件句柄。
    * 您可以使用此句柄代替 `<input>` 元素中的文件路径来测试应用程序中的文件上载。
+
+## 在本地运行UI测试 {#run-ui-tests-locally}
+
+在Cloud Manager管道中激活UI测试之前，建议在本地对 [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 或在实际的AEMas a Cloud Service实例中。
+
+### 前提条件 {#prerequisites}
+
+Cloud Manager中的测试将使用技术管理员用户执行。
+
+要从本地计算机运行UI测试，请创建具有类似管理员权限的用户以实现相同的行为。
+
+### JavaScript测试示例 {#javascript-sample}
+
+1. 打开外壳程序并导航到 `ui.tests` 您的存储库中的文件夹
+
+1. 执行以下命令以使用Maven启动测试
+
+   ```shell
+   mvn verify -Pui-tests-local-execution \
+   -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+   -DAEM_AUTHOR_USERNAME=<user> \
+   -DAEM_AUTHOR_PASSWORD=<password> \
+   -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+   -DAEM_PUBLISH_USERNAME=<user> \
+   -DAEM_PUBLISH_PASSWORD=<password> \
+   -DHEADLESS_BROWSER=true \
+   -DSELENIUM_BROWSER=chrome
+   ```
+
+>[!NOTE]
+>
+>* 这会启动一个独立的selenium实例并针对它执行测试。
+>* 日志文件存储在 `target/reports` 存储库的文件夹
+>* 由于测试会自动下载最新版本的ChromeDriver进行测试，因此您需要确保您使用的是最新的Chrome版本。
+>
+>有关详细信息，请参阅 [AEM项目原型存储库。](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+
+### Java测试示例 {#java-sample}
+
+1. 打开外壳程序并导航到 `ui.tests/test-module` 您的存储库中的文件夹
+
+1. 执行以下命令以使用Maven启动测试
+
+   ```shell
+   # Start selenium docker image (for x64 CPUs)
+   docker run --platform linux/amd64 -d -p 4444:4444 selenium/standalone-chrome-debug:latest
+   
+   # Start selenium docker image (for ARM CPUs)
+   docker run -d -p 4444:4444 seleniarm/standalone-chromium
+   
+   # Run the tests using the previously started Selenium instance
+   mvn verify -Pui-tests-local-execution -DSELENIUM_BASE_URL=http://<server>:<port>
+   ```
+
+>[!NOTE]
+>
+>* 日志文件将存储在 `target/reports` 文件夹。
+>
+>有关详细信息，请参阅 [AEM测试示例存储库。](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
