@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1771'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 最新CTT版本中包含对Amazon S3、Azure Blob Storage和文件数据存储的AzCopy支持。
 您可以从 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
-
+应该注意的是，仅支持版本2.0.0及更高版本，建议使用最新版本。
 
 ### 3.配置azcopy.config文件 {#configure-azcopy-config-file}
 

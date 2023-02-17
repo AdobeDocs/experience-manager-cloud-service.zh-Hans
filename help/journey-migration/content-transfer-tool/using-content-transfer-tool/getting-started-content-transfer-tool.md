@@ -2,9 +2,9 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1343'
 ht-degree: 9%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 9%
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="软件分发门户"
 
 内容传输工具可以从软件分发门户以zip文件的形式下载。 您可以通过 [包管理器](/help/implementing/developing/tools/package-manager.md) 在源Adobe Experience Manager(AEM)实例上。 确保下载最新版本。 有关最新版本的更多详细信息，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
+
+仅支持版本2.0.0及更高版本，建议使用最新版本。
 
 >[!NOTE]
 >从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载内容传输工具。

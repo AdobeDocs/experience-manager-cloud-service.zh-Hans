@@ -2,10 +2,10 @@
 title: 使用内容传输工具的准则和最佳实践
 description: 使用内容传输工具的准则和最佳实践
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 19%
+source-wordcount: '1613'
+ht-degree: 18%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 19%
 * 将保留摄取日志，并始终可用于疑难解答
 
 要开始使用新版本，您需要卸载旧版内容传输工具。 这是必需的，因为新版本具有重大的体系结构变化。 在v2.0.10中，您将需要创建新的迁移集，并对新迁移集重新运行提取和摄取。 如果迁移已在进行中，您可以继续使用以前版本的CTT，直到迁移完成为止。
+将不再支持低于2.0.0的版本，建议使用最新版本。
 
 以下准则和最佳实践适用于新版本的内容传输工具：
 
