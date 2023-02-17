@@ -4,10 +4,10 @@ description: 了解如何管理工作流实例
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ ht-degree: 100%
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >要终止或中止工作流，它必须处于等待用户干预的状态，例如在参与者步骤中。 尝试中止当前正在执行的作业（正在执行的活动线程）的工作流可能不会产生预期结果。
+
+
 ## 查看存档的工作流 {#viewing-archived-workflows}
 
 1. 使用“导航”，依次选择&#x200B;**工具**&#x200B;和&#x200B;**工作流**。
@@ -76,6 +82,7 @@ ht-degree: 100%
    >
    >* 使用&#x200B;**终止**&#x200B;操作
    >* 当受工作流约束的页面被（强制）删除时，工作流将被终止
+
 
 
 1. 选择特定项目，然后&#x200B;**打开历史记录**&#x200B;以查看更多详细信息：
