@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
+source-git-commit: 1fb28674df6ea45589d3b44237edfb51ef167756
 workflow-type: tm+mt
 source-wordcount: '10264'
 ht-degree: 16%
@@ -1409,8 +1409,7 @@ dependency>
 </dependency> 
 ```
 
-+++
-**示例Servlet**
++++**示例Servlet**
 
 ```java
 @Component
@@ -1487,8 +1486,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
-+++
-**Servlet的响应类**
++++**Servlet的响应类**
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1516,9 +1514,7 @@ public abstract class VideoResponse {
 
 +++
 
-
-+++
-**Servlet中引用的常量文件**
++++**Servlet中引用的常量文件**
 
 ```java
 public final class Constants { 
@@ -1535,8 +1531,7 @@ public final class Constants {
 
 +++
 
-+++
-**ServletContext**
++++**ServletContext**
 
 使用 `servletContext`. 以下示例 `servletContext`.
 
