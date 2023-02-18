@@ -1,14 +1,14 @@
 ---
 title: Dynamic Media 中的视频
-description: 了解如何在Dynamic Media中处理视频，例如，对视频进行编码、将视频发布到YouTube、查看视频报表，以及向视频添加隐藏式字幕、字幕或章节标记的最佳实践。
+description: 了解如何在Dynamic Media中处理视频。 查看有关对视频进行编码、将视频发布到YouTube、查看视频报表以及向视频添加隐藏式字幕、字幕或章节标记的最佳实践。
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
 workflow-type: tm+mt
-source-wordcount: '9349'
-ht-degree: 18%
+source-wordcount: '10264'
+ht-degree: 16%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 ## 快速入门：视频 {#quick-start-videos}
 
-下面的工作流分布说明旨在帮助您在 Dynamic Media 中快速设置并运行自适应视频集。每个步骤的后面是对主题标题的交叉引用，您可以在其中找到更多信息。
+下面的工作流分布说明旨在帮助您在 Dynamic Media 中快速设置并运行自适应视频集。在每个步骤之后，都会对主题标题进行交叉引用，您可以在其中找到更多信息。
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ Dynamic Media中的视频是一种端到端解决方案，可轻松发布高质�
 
 要管理单个视频和自适应视频集，支持以下操作：
 
-* 用多种支持的视频格式和音频格式上传视频，并将视频编码为 MP4 H.264 格式，以供在多种屏幕上播放。您可以使用预定义的自适应视频预设或单个视频编码预设，或者自定义您自己的编码，来控制视频的质量和大小。
+* 从多种支持的视频格式和音频格式上传视频，并将视频编码为MP4 H.264格式，以便在多个屏幕中播放。 您可以使用预定义的自适应视频预设或单个视频编码预设，或者自定义您自己的编码，来控制视频的质量和大小。
 
    * 在生成自适应视频集时，会包括 MP4 视频。
    * **注意**:主/源视频不会添加到自适应视频集。
@@ -155,19 +155,30 @@ Dynamic MediaHTML5视频查看器预设是强大的视频播放器。您可以�
 
 在播放器的设计方面，您可以使用标准Web开发工具来设计视频播放器的功能。 例如，您可以使用 HTML5 和 CSS 设计按钮、控件和自定义标识图像背景，从而帮助您向客户展示自定义的外观。
 
-在查看器的播放端，查看器会自动检测浏览器的视频功能。 然后，它使用HLS（HTTP实时流）（也称为自适应视频流）来提供视频。 或者，如果这些传送方法不可用，则会改用 HTML5 渐进式流播放。
+在查看器的播放端，查看器会自动检测浏览器的视频功能。 然后，它使用HLS或DASH（也称为自适应视频流）来提供视频。 或者，如果这些传送方法不可用，则会改用 HTML5 渐进式流播放。
+
+>[!IMPORTANT]
+>
+>要查看或使用DASH，必须首先由您帐户上的Adobe技术支持人员启用。 请参阅 [在您的帐户上启用短划线](#enable-dash).)
 
 您可以将使用HTML5和CSS设计播放组件的功能合并到单个播放器中。 它可以具有嵌入式播放，并根据浏览器的功能使用自适应和渐进式流播放。 所有这些功能都意味着您可以将富媒体内容的访问范围扩展到桌面用户和移动设备用户，并确保简化视频体验。
 
 另请参阅 [仅Experience Manager Assets查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 在 [Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
+
 ### 在台式计算机和移动设备上使用HTML5视频查看器播放视频 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 对于桌面和移动设备自适应视频流播放，用于比特率切换的视频基于自适应视频集中的所有MP4视频。
 
-使用HLS或渐进式视频下载时出现视频播放。 在以前版本的Experience Manager（如6.0、6.1和6.2）中，视频通过HTTP进行流处理。
+使用HLS、DASH或渐进式视频下载进行视频播放。 在以前版本的Experience Manager（如6.0、6.1和6.2）中，视频通过HTTP进行流处理。
 
-但是，在Experience Manager6.3及更高版本中，视频现在通过HTTPS（即HLS）进行流处理，因为DM网关服务URL也始终使用HTTPS。 此默认行为不会对客户造成任何影响。 也就是说，除非浏览器不支持，否则视频流将始终通过HTTPS进行。 （请参阅下表）。 因此，
+但是，在Experience Manager6.3及更高版本中，视频现在通过HTTPS（即HLS或DASH）进行流处理，因为DM网关服务URL也始终使用HTTPS。 此默认行为不会对客户造成任何影响。 也就是说，除非浏览器不支持，否则视频流将始终通过HTTPS进行。 （请参阅下表）。
+
+>[!IMPORTANT]
+>
+>要查看或使用DASH，必须首先由您帐户上的Adobe技术支持人员启用。 请参阅 [在您的帐户上启用短划线](#enable-dash).)
+
+因此，
 
 * 如果您的HTTPS网站使用HTTPS视频流，则可以进行流播放。
 * 如果您的HTTP网站使用HTTPS视频流，则流处理可以正常进行，并且Web浏览器中不会出现混合内容问题。
@@ -203,17 +214,17 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>桌面设备</td>
    <td>Firefox 45或更高版本</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自适应流播放</td>
   </tr>
   <tr>
    <td>桌面设备</td>
    <td>铬黄</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自适应流播放</td>
   </tr>
   <tr>
    <td>桌面设备</td>
    <td>Safari(Mac)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自适应流播放</td>
   </tr>
   <tr>
    <td>移动设备</td>
@@ -223,7 +234,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>移动设备</td>
    <td>Chrome(Android™ 7或更高版本)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自适应流播放/td&gt;
   </tr>
   <tr>
    <td>移动设备</td>
@@ -233,20 +244,24 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>移动设备</td>
    <td>Safari(iOS)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自适应流播放</td>
   </tr>
   <tr>
    <td>移动设备</td>
    <td>Chrome(iOS)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自适应流播放</td>
   </tr>
  </tbody>
 </table>
 
+>[!IMPORTANT]
+>
+>*要查看或使用DASH，必须首先由您帐户上的Adobe技术支持人员启用。 请参阅 [在您的帐户上启用短划线](#enable-dash).)
+
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>HLS</td>
+   <td>HLS or DASH</td>
   </tr>
  -->
 
@@ -288,7 +303,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
 
 ### 获取文件的元数据 {#obtaining-a-file-s-metadata}
 
-您可以通过以下方法获取文件的元数据：使用视频编辑工具查看文件的元数据，或使用为获取元数据而设计的应用程序。以下是有关使用第三方应用程序MediaInfo获取视频文件元数据的说明：
+您可以通过以下方式获取文件的元数据：使用视频编辑工具查看文件的元数据，或使用为获取元数据而设计的应用程序。 以下是有关使用第三方应用程序MediaInfo获取视频文件元数据的说明：
 
 1. 转到 [MediaInfo下载](https://mediaarea.net/en/MediaInfo/Download).
 1. 选择并下载 GUI 版本的安装程序，然后按照安装说明进行操作。
@@ -400,6 +415,41 @@ VBR需要较长的编码时间，但会产生最有利的结果；媒体文件�
 ### 编码视频文件格式 {#encoded-video-file-format}
 
 Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使用 H.264 视频编解码器，因此 MP4 可以提供高质量的视频，但需要压缩文件大小。
+
+### 在您的帐户上启用短划线 {#enable-dash}
+
+DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，在不同的视频查看器中得到广泛采用。 启用短划线后，您可以选择从HLS或短划线中选择自适应视频流播放。 您还可以通过在播放器之间自动切换来选择两者。
+
+在您的帐户中启用DASH的一些主要优势包括：
+
+* 包含用于自适应流播放的短划线流视频。 这种方法可提高投放效率。 自适应流播放可确保为客户提供最佳的观看体验。
+* 使用Dynamic Media播放器优化的流播放在HLS和DASH流之间切换，以确保最佳服务质量。 当使用Safari浏览器时，视频播放器会自动切换到HLS。
+* 您可以通过编辑视频查看器预设来配置首选的流播放方法（HLS或DASH）。
+* 优化的视频编码可确保在启用短划线功能时不使用额外存储。 为HLS和DASH创建一组视频编码，以优化视频存储成本。
+* 帮助让客户更易于访问视频交付。
+* 也可以通过API获取流URL。
+
+发起使用DASH的请求；它不会在您的帐户上自动启用。
+
+>[!IMPORTANT]
+>
+>目前，在您的帐户上启用DASH仅在北美地区可用。
+
+按如下所述创建支持案例。 在您的支持案例中，请确保提到要在帐户中启用DASH。
+
+**要在您的帐户上启用DASH，请执行以下操作：**
+
+1. [使用Admin Console开始创建新的支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html).
+1. 按照相关说明创建支持案例，同时确保提供以下信息：
+
+   * 主要联系人姓名、电子邮件、电话。
+   * 您希望在Dynamic Media帐户上启用DASH。
+
+1. Adobe客户支持根据请求提交顺序将您添加到DASH客户等待列表。
+1. 当Adobe准备好处理您的请求时，客户支持团队会联系您，以协调并设置启用短划线的目标日期。
+1. 客户支持部门在完成后会通知您。
+1. 创建 [视频查看器预设](#creating-a-new-viewer-preset) 和往常一样。
+
 
 ## 将视频发布到YouTube {#publishing-videos-to-youtube}
 
@@ -1028,7 +1078,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## 在视频中添加隐藏式字幕或字幕 {#adding-captions-to-video}
 
-您可以通过向单个视频或自适应视频集添加隐藏式字幕，将视频的覆盖范围扩展到全球市场。 通过添加隐藏式字幕，您无需对音频进行调音，或者使用母语人士为每个不同语言重新录制音频。 视频以录制的语言播放。 出现外语字幕，使不同语言的人仍然能够理解音频部分。
+您可以通过向单个视频或自适应视频集添加隐藏式字幕，将视频的覆盖范围扩展到全球市场。 通过添加隐藏式字幕，您无需对音频进行调音，也无需使用母语人士为每个不同语言重新录制音频。 视频以录制的语言播放。 出现外语字幕，使不同语言的人仍然能够理解音频部分。
 
 隐藏式字幕还允许耳聋或听力欠佳的用户更方便地访问。
 
@@ -1296,3 +1346,330 @@ T**o add a custom video thumbnail**,
    The custom thumbnail is added to your video.
 
 -->
+
+## 更改Dynamic Media资产的Dynamic Media URL
+
+处理到Dynamic Media中的视频可通过现成的查看器使用，也可以通过直接访问清单URL并通过您自己的自定义查看器播放它们。 以下是用于获取视频清单URL的API。
+
+### 关于getVideoManifestURI API
+
+的 `getVideoManifestURI`API通过c公开`q-scene7-api:com.day.cq.dam.scene7.api` 和可用于生成以下清单URL:
+
+```java
+/**   
+* Returns the manifest url for videos 
+* @param resource video resource 
+* @param manifestType type of video streaming manifest being requested 
+* @param onlyIfPublished return a manifest only if the video is published 
+* @return the manifest url for videos 
+* 
+* @throws Exception 
+*/
+@Nullable 
+String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean onlyIfPublished) throws Exception;
+```
+
+#### getVideoManifestURI API参数
+
+此API采用以下三个参数：
+
+| 参数 | 描述 |
+| --- | --- |
+| `resource` | 与Dynamic Media摄取的视频对应的资源。 |
+| `manifestType` | 可以是 `ManifestType.DASH` 或 `ManifestType.HLS` |
+| `onlyIfPublished` | 如果清单uri仅在发布后且在投放层上可用时才生成，则设置为true。 |
+
+要使用上述方法获取视频的清单URL，请添加 [视频编码配置文件](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 到“上传视频”文件夹。 Dynamic Media会根据在分配给文件夹的视频编码文件中找到的编码来处理这些视频。 现在，您可以调用上述API来获取上传视频的清单URL。
+
+### 错误方案
+
+如果存在错误，API将返回空值。 Experience Manager错误日志中记录了异常。 所有此类记录错误均以 `Could not generate Video Manifest URI`. 以下情况可能会导致出现此类错误：
+
+* 安 `IllegalArgumentException` 将记录以下任一项：
+
+   * 的 `resource` 传递的参数为null。
+   * 的 `resource` 传递的参数不是视频。
+   * 的 `manifestType` 传递的参数为null。
+   * 的 `onlyIfPublished` 参数将作为true进行传递，但视频未发布。
+   * 未使用从Dynamic Media中设置的自适应视频集摄取视频。
+
+* `IOException` 在连接到Dynamic Media时出现问题时被记录。
+* `UnsupportedOperationException` 在 `manifestType` 传递的参数 `ManifestType.DASH`，而视频未使用短划线格式进行处理。
+
+以下是上述API使用中编写的Servlet的示例 *HTTPWhiteBoard* 规范。
+
+**在pom.xml中添加依赖项**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
+**示例Servlet**
+
+```java
+@Component
+        service = Servlet.class 
+) 
+@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
+@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
+public class ManifestServlet extends HttpServlet { 
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
+
+   private final ObjectMapper objectMapper; 
+
+    @Reference 
+    private Scene7Service scene7Service; 
+
+   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
+
+   public ManifestServlet() {
+         this.objectMapper = new ObjectMapper(); 
+         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
+   }
+
+   @Override 
+
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        final ResourceResolver resolver = getResourceResolver(request); 
+        String assetPath = request.getParameter("assetPath"); 
+        String manifest = request.getParameter("manifestType"); 
+        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
+        Resource resource = resolver.getResource(assetPath); 
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
+        response.setContentType("application/json"); 
+        if(resource == null) { 
+            LOGGER.info("could not retrieve the resource from JCR"); 
+            error("could not retrieve the resource from JCR", response); 
+            return; 
+        }
+
+        String manifestUri = null; 
+
+        try{ 
+            ManifestType manifestType =  ManifestType.DASH; 
+            if(manifest != null) { 
+                manifestType = ManifestType.valueOf(manifest); 
+            } 
+            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
+            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
+            response.setContentType("application/json"); 
+        } catch (Exception e) { 
+            LOGGER.error(e.getMessage(), e); 
+            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
+        } 
+    } 
+
+    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
+        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
+        if (!(rr instanceof ResourceResolver)) { 
+            throw new IllegalStateException( 
+                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
+        } else { 
+            return (ResourceResolver) rr; 
+        } 
+    } 
+
+    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
+        ManifestUrl errorManifest = new ManifestUrl(null); 
+        errorManifest.setErrorMessage(errorMessage); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        objectMapper.writeValue(response.getWriter(), errorManifest); 
+    } 
+} 
+```
+
++++
+
++++
+**Servlet的响应类**
+
+```java
+public class ManifestUrl extends VideoResponse { 
+     String manifestUrl; 
+     public ManifestUrl(String manifestUrl) { 
+         this.manifestUrl = manifestUrl; 
+     } 
+     public String getManifestUrl() { 
+         return manifestUrl; 
+     } 
+} 
+
+public abstract class VideoResponse { 
+     String errorString; 
+
+     public String getErrorString() { 
+         return errorString; 
+     } 
+
+     public void setErrorMessage(String errorString) { 
+         this.errorString = errorString; 
+     } 
+} 
+```
+
++++
+
+
++++
+**Servlet中引用的常量文件**
+
+```java
+public final class Constants { 
+
+     private Constants() { 
+     } 
+
+     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
+     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
+             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
+
+ } 
+```
+
++++
+
++++
+**ServletContext**
+
+使用 `servletContext`. 以下示例 `servletContext`.
+
+```java
+public class DMSampleApiHttpContext extends ServletContextHelper { 
+
+ public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
+ public static final String CONTEXT_PATH = "/dmSample"; 
+
+ private final MimeTypeService mimeTypeService; 
+
+ private final AuthenticationSupport authenticationSupport; 
+
+ /** 
+  * Constructs a new context that will use the given dependencies. 
+  * 
+  * @param mimeTypeService Used when providing mime type of requests. 
+  * @param authenticationSupport Used to authenticate requests with sling. 
+  */ 
+ @Activate 
+ public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
+                               @Reference final AuthenticationSupport authenticationSupport) { 
+     this.mimeTypeService = mimeTypeService; 
+     this.authenticationSupport = authenticationSupport; 
+ } 
+
+ // ---------- HttpContext interface ---------------------------------------- 
+ /** 
+  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
+  * <code>null</code> if the service is not available. 
+  */ 
+ @Override 
+ public String getMimeType(String name) { 
+     MimeTypeService mtservice = mimeTypeService; 
+     if (mtservice != null) { 
+         return mtservice.getMimeType(name); 
+     } 
+     return null; 
+ } 
+
+ /** 
+  * Returns the real context path that is used to mount this context. 
+  * @param req servlet request 
+  * @return the context path 
+  */ 
+ public static String getRealContextPath(HttpServletRequest req) { 
+     final String path = req.getContextPath(); 
+     if (path.equals(CONTEXT_PATH)) { 
+         return ""; 
+     } 
+     return path.substring(CONTEXT_PATH.length()); 
+ } 
+
+ /** 
+  * Returns a request wrapper that transforms the context path back to the original one 
+  * @param req request 
+  * @return the request wrapper 
+  */ 
+ public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
+     return new HttpServletRequestWrapper(req) { 
+
+         @Override 
+         public String getContextPath() { 
+             return getRealContextPath((HttpServletRequest) getRequest()); 
+         } 
+
+     }; 
+
+ } 
+
+ /** 
+  * Always returns <code>null</code> because resources are all provided 
+  * through individual endpoint implementations. 
+  */ 
+ @Override 
+ public URL getResource(String name) { 
+     return null; 
+ } 
+
+ /** 
+  * Tries to authenticate the request using the 
+  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
+  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
+  * UNAVAILABLE status back to the client. 
+  */ 
+ @Override 
+ public boolean handleSecurity(HttpServletRequest request, 
+                               HttpServletResponse response) throws IOException { 
+
+     final AuthenticationSupport authenticator = this.authenticationSupport; 
+     if (authenticator != null) { 
+         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
+     } 
+
+     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
+     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
+             "AuthenticationSupport service missing. Cannot authenticate request."); 
+     response.flushBuffer(); 
+
+     // terminate this request now 
+     return false; 
+ } 
+}
+```
+
++++
+
+### 使用示例Servlet
+
+通过执行 `GET` 操作 `/dmSample/dynamicmedia/video/manifestUrl`. 传递以下查询参数：
+
+| 查询参数 | 描述 |
+| --- | --- |
+| `assetPath` | 强制. 视频的路径，其 `manifestUrl` 生成。 |
+| `manifestType` | 可选。参数可以是短划线或HLS。 如果未传递，则默认为DASH。 |
+| `onlyIfPublished` | 可选。如果通过，则 `manifestUrl` 仅在视频发布时返回。 |
+
+在本例中，我们假定设置如下：
+
+* 公司是 `samplecompany`.
+* 创作实例为 `http://sample-aem-author.com`.
+* 文件夹 `/content/dam/video-example` 应用了视频编码配置文件。
+* 视频 `scenery.mp4` 已上传到文件夹 `/content/dam/video-example`.
+
+您可以通过以下方式调用Servlet:
+
+| 类型 | 描述 |
+| :--- | --- |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>如果启用了DASH投放：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>如果禁用DASH投放：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| 短划线 | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>如果启用了DASH投放：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>如果禁用DASH投放：<br>`{}` |
+| 错误：资产路径错误 | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+

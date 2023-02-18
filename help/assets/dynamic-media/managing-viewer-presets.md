@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 16%
+source-wordcount: '4369'
+ht-degree: 15%
 
 ---
 
@@ -51,7 +51,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ### 查看器支持响应式设计的网页 {#viewer-support-for-responsive-designed-web-pages}
 
-不同的网页有不同的需求。 例如，有时您希望网页提供一个链接，以在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，需要直接将HTML5查看器嵌入到托管页面。 在后一种情况下，网页具有静态布局。 或者，它是“响应式”的，并在不同设备上或针对不同浏览器窗口大小显示不同。 为了满足这些需求，Dynamic Media附带的所有预定义开箱即用HTML5查看器都支持静态网页和响应式设计的网页。
+不同的网页有不同的需求。 例如，有时您希望网页提供一个链接，以在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，需要直接将HTML5查看器嵌入到托管页面。 在后一种情况下，网页具有静态布局。 或者，它是“响应式”的，并在不同设备上或针对不同浏览器窗口大小显示不同。 为了满足这些需求，Dynamic Media附带的所有预定义开箱即用的HTML5查看器都支持静态网页和响应式设计的网页。
 
 请参阅 [响应式静态图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) 在 *Dynamic Media图像提供和渲染API帮助* 有关如何将响应式查看器嵌入网页的更多信息。
 
@@ -440,6 +440,19 @@ Experience Manager在从以下位置查看资产时，会显示各种查看器�
 
 1. （可选）在“编辑查看器预设”页面顶部附近，选择 **[!UICONTROL 桌面]**, **[!UICONTROL 平板电脑]**&#x200B;或 **[!UICONTROL 电话]** 用于为不同设备和屏幕类型唯一定义可视样式。
 1. 在“查看器预设编辑器”页面上，选择 **[!UICONTROL 行为]** 选项卡。 或者，您也可以选择查看器中的任何可视化元素，以选择进行配置。
+例如，对于 *VideoPlayer* 类型，下 **[!UICONTROL 修饰符]** > **[!UICONTROL 播放]**，您可以从以下三个自适应流选项之一进行选择：
+
+   * **[!UICONTROL 短划线]**  — 视频以短划线形式流。
+   * **[!UICONTROL hls]**  — 视频流仅作为hls。
+   * **[!UICONTROL 自动]**  — 最佳实践。 DASH和HLS流的创建是存储优化的。 因此，Adobe建议您始终选择 **[!UICONTROL 自动]** 类型。 视频以短划线、hls或渐进方式流，如下所示：
+      * 如果浏览器支持短划线，则首先使用短划线流。
+      * 如果浏览器不支持短划线，则使用HLS流，其次是。
+      * 如果浏览器不支持短划线或HLS，则最后使用渐进式播放。
+
+   >[!NOTE]
+   >
+   >要查看和使用 **[!UICONTROL 短划线]** 选项，则必须首先由您帐户上的Adobe技术支持人员启用。 请参阅 [在您的帐户上启用短划线](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. 从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要更改其行为的组件。
 
    可视化编辑器中的许多组件都有与其关联的详细说明。 当您展开组件以显示其关联参数时，这些描述会显示在蓝色框中。
@@ -454,15 +467,19 @@ Experience Manager在从以下位置查看资产时，会显示各种查看器�
    >在文本字段中键入值后，请在用户界面的其他位置选择以提交更改并关闭虚拟键盘。 如果您选择 **[!UICONTROL 输入]**，则不会执行任何操作。
 
 1. 在页面的右上角附近，选择 **[!UICONTROL 保存]**.
-1. 发布新查看器预设。 必须先发布预设，然后才能在您的网站上使用预设。
+1. 发布新查看器预设。 有必要发布预设，以便您能够在网站上使用其生成的URL。
 
    请参阅 [发布查看器预设](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >对于使用自适应流播放用户档案的旧视频，URL会继续照常播放（与HLS流播放），直到您 [重新处理视频资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 重新处理后，同一URL将继续工作，但现在与 *both* 已启用DASH和HLS流。
 
 ### 创建交互式查看器预设的特殊注意事项 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **关于面板中图像缩略图的显示模式：**
 
-创建或编辑交互式视频查看器预设时，您可以选择要使用的显示模式设置。 当您选择 `InteractiveSwatches` 从 **[!UICONTROL 选定的组件]** 下方的下拉菜单 **[!UICONTROL 行为]** 选项卡。 您选择的“显示”模式会影响视频播放时缩略图的显示方式和显示时间。您可以选择 `segment` 显示模式（默认）或 `continuous` 显示模式。
+创建或编辑交互式视频查看器预设时，您可以选择要使用的显示模式设置。 当您选择 `InteractiveSwatches` 从 **[!UICONTROL 选定的组件]** 下方的下拉菜单 **[!UICONTROL 行为]** 选项卡。 您选择的显示模式会影响视频播放时缩略图的显示方式和显示时间。 您可以选择 `segment` 显示模式（默认）或 `continuous` 显示模式。
 
 <table>
  <tbody>

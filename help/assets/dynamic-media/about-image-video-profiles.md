@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 8b878a26653874c94a671a404d9b35740e43a514
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 您可以重新处理文件夹中的资产，该文件夹中已有Dynamic Media图像配置文件或您稍后更改的Dynamic Media视频配置文件。
 
-例如，假定您创建了一个Dynamic Media图像配置文件，并将其分配给文件夹。 您上传到文件夹的任何图像资产都会自动将图像配置文件应用到这些资产。 但是，之后您决定向图像配置文件添加新的智能裁剪比例。 现在，您只需运行 *Scene7:重新处理资产* 工作流。
+例如，假定您创建了一个Dynamic Media图像配置文件，并将其分配给文件夹。 您上传到文件夹的任何图像资产都会自动将图像配置文件应用到这些资产。 但是，之后您决定向图像配置文件添加新的智能裁剪比例。 现在，您无需再次选择资产并将其重新上传到文件夹，而只需运行 *Scene7:重新处理资产* 工作流。
 
 您可以对首次处理失败的资产运行重新处理工作流。 即使您未编辑图像配置文件或视频配置文件，或者已经应用了图像配置文件或视频配置文件，您仍可以随时对资产文件夹运行重新处理工作流。
 
