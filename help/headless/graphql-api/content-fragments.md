@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
+source-git-commit: e156ed7348815e02c942cb8feace70c675956752
 workflow-type: tm+mt
-source-wordcount: '4173'
-ht-degree: 100%
+source-wordcount: '4203'
+ht-degree: 99%
 
 ---
 
@@ -556,6 +556,10 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 ## 排序 {#sorting}
 
+>[!NOTE]
+>
+>为获得最佳性能，请考虑 [在GraphQL筛选中更新内容片段以进行分页和排序](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+
 此功能允许您根据指定字段对查询结果进行排序。
 
 排序标准：
@@ -593,8 +597,6 @@ query {
 }
 ```
 
-<!-- to be included? -->
-
 您还可以使用 `nestedFragmentname.fieldname` 的格式对嵌套片段中的字段进行排序。
 
 >[!NOTE]
@@ -620,6 +622,10 @@ query {
 ```
 
 ## 分页 {#paging}
+
+>[!NOTE]
+>
+>为获得最佳性能，请考虑 [在GraphQL筛选中更新内容片段以进行分页和排序](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 此功能允许您对返回列表的查询类型执行分页。提供了两种方法：
 
