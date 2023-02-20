@@ -4,9 +4,9 @@ description: 了解如何使用 [!DNL Experience Manager Forms]. 自适应Forms�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 0%
 
 您需要满足以下条件才能创建自适应表单：
 
+* **为环境启用自适应Forms核心组件**:如果您使用基于AEM Archetype版本40或更高版本的程序，则系统会为您的环境自动启用核心组件。 要基于旧版原型为AEM Formsas a Cloud Service环境启用自适应Forms核心组件，请参阅 [为环境启用自适应Forms核心组件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **自适应表单模板**:模板提供了基本结构并定义了自适应表单的外观（布局和样式）。 它具有预格式化的组件，其中包含某些属性和内容结构。 它还提供了用于定义主题和提交操作的选项。 主题定义了外观和感觉，并定义了提交自适应表单时要执行的操作。 例如，将收集的数据发送到数据源。 云服务提供了一个名为空的OOTB模板：
 
    * 的 `blank` 模板包含在每个新的AEM Formsas a Cloud Service计划中。

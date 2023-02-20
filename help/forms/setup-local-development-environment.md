@@ -2,9 +2,9 @@
 title: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 description: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2974'
 ht-degree: 2%
 
 ---
@@ -241,7 +241,7 @@ AEM Forms as aCloud Services提供了基于Docker的SDK环境，以便更轻松�
 >[!NOTE]
 >
 > 设置基于AEM Archetype版本30或更高版本的项目，以获取并使用Microsoft® Dynamics 365和Salesforce表单数据模型和AEM Formsas a Cloud Service。
-> 设置基于AEM Archetype版本32或更高版本的项目，以通过AEM Formsas a Cloud Service获取和使用Tranquil、Urbane和Ultramarine主题。
+设置基于AEM Archetype版本32或更高版本的项目，以通过AEM Formsas a Cloud Service获取和使用Tranquil、Urbane和Ultramarine主题。
 
 要设置项目，请执行以下操作：
 
@@ -252,19 +252,21 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **创建 [!DNL Experience Manager Forms] as a [Cloud Service] 项目：** 创建 [!DNL Experience Manager Forms] as a [Cloud Service] 项目基于 [AEM原型32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 或更晚。 原型可帮助开发人员轻松开始开发 [!DNL AEM Forms] as a Cloud Service。 它还包含一些帮助您快速入门的示例主题和模板。
+1. **创建 [!DNL Experience Manager Forms] as a [Cloud Service] 项目：** 创建 [!DNL Experience Manager Forms] as a [Cloud Service] 基于最新的项目 [AEM原型](https://github.com/adobe/aem-project-archetype) 或更晚。 原型可帮助开发人员轻松开始开发 [!DNL AEM Forms] as a Cloud Service。 它还包含一些帮助您快速入门的示例主题和模板。
 
    打开命令提示符并运行以下命令以创建 [!DNL Experience Manager Forms] as a Cloud Service项目。
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
    ```
 
-   更改 `appTitle`, `appId`和 `groupId` 来反映您的环境。
+   更改 `appTitle`, `appId`和 `groupId` 来反映您的环境。 此外，将includeFormsenrollment、includeFormscommunications和includeFormsheadles的值设置为 `y` 或 `n` 取决于您的许可和要求。 必须使用includeFormsheadless来创建基于核心组件的自适应Forms。
 
-   * 使用 `includeFormsenrollment=y` 选项，以包含创建自适应Forms所需的特定配置、主题、模板、核心组件和依赖项。 如果您使用Forms Portal，请将 `includeExamples=y` 选项。 它将Forms Portal核心组件添加到项目中。
+   * 使用 `includeFormsenrollment=y` 选项，以包含创建自适应Forms所需的特定配置、主题、模板、核心组件和依赖项。 如果您使用Forms Portal，请将 `includeExamples=y` 选项。 它还会将Forms Portal核心组件添加到项目中。
 
-   * 使用 `includeFormscommunications=y` 选项包括Forms核心组件和依赖项，这些组件和依赖项需要包含客户通信功能。
+   * 使用 `includeFormscommunications=y` 选项，以包含包含客户通信功能所需的Forms核心组件和依赖项。
+
+   * 使用 `includeFormsheadless` 选项，以添加创建无头自适应Forms所需的工件和库。
 
 1. 将项目部署到本地开发环境。 您可以使用以下命令部署到本地开发环境
 
@@ -328,6 +330,101 @@ Dispatcher是一个Apache HTTP Web服务器模块，在CDN和AEM发布层之间�
 * 使用URL格式时 `http://host:port/content/forms/af/<adaptivefName>.html`，并在配置管理器中启用“使用浏览器区域设置”后，会提供自适应表单的本地化版本（如果可用）。 本地化的自适应表单的语言基于为浏览器配置的区域设置（浏览器区域设置）。 这会导致 [仅缓存自适应表单的第一个实例]. 要防止问题在实例中发生，请参阅 [仅缓存自适应表单的第一个实例](troubleshooting-caching-performance.md) 疑难解答部分。
 
 您的本地开发环境已准备就绪。
+
+## 为基于AEM原型的现有项目启用自适应Forms核心组件 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+
+如果您为AEM Formsas a Cloud Service使用基于AEM Archetype版本40或更高版本的程序，则系统会为您的环境自动启用核心组件。
+
+要基于旧版Archetype为AEM Formsas a Cloud Service环境启用自适应Forms核心组件，请在项目中嵌入WCM核心组件示例工件和Forms核心组件工件（包括示例）：
+
+1. 在纯文本代码编辑器中打开AEM Archetype项目文件夹。 例如，与代码。
+
+1. 在本地环境中打开AEM Archetype项目的顶级.pom文件（父pom），将以下属性添加到该文件并保存它。
+
+   ```XML
+   <properties>
+       <core.forms.components.version>2.0.4</core.forms.components.version> <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
+       <core.wcm.components.version>2.21.2</core.wcm.components.version>
+   </properties>
+   ```
+
+   对于的最新版本 `core.forms.components` 和 `core.wcm.components`，勾选 [核心组件文档](https://github.com/adobe/aem-core-forms-components).
+
+1. 在顶级（父项）ppm.xml文件的依赖关系部分中，添加以下依赖关系：
+
+   ```XML
+       <!-- Forms Core Component Dependencies -->
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-apps</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-content</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+       <!-- End of AEM Forms Core Component Dependencies -->
+   ```
+
+1. 打开all/pom.xml文件并添加以下依赖项，以将自适应Forms核心组件工件添加到您的AEM原型项目：
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-af-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-content</artifactId>
+           <type>zip</type>
+       </dependency>
+   ```
+
+   >[!NOTE]
+   确保项目中未包含以下自适应Forms核心组件工件。
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-apps</artifactId>`
+   `</dependency>`
+   和
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-core</artifactId>`
+   `</dependency>`
+
+1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 成功管道运行后，将为您的环境启用自适应Forms核心组件。 此外，自适应Forms（核心组件）模板和画布主题也已添加到Formsas a Cloud Service环境中。
+
 
 ## 升级本地开发环境 {#upgrade-your-local-development-environment}
 
