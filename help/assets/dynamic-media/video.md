@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 16%
 
 ---
@@ -204,7 +204,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>桌面设备</td>
    <td>Internet Explorer 11+</td>
-   <td>在Windows® 8和Windows® 10上 — 每当请求HLS时，都强制使用HTTPS。 已知限制：HLS上的HTTP在此浏览器/操作系统组合中不起作用<br /> <br /> 在Windows® 7上 — 渐进式下载。 使用标准逻辑选择HTTP与HTTPS协议。</td>
+   <td>在Windows® 8和Windows® 10上 — 请求DASH或HLS时，强制使用HTTPS。 已知限制：HTTP on DASH或HLS在此浏览器/操作系统组合中不起作用<br /> <br /> 在Windows® 7上 — 渐进式下载。 使用标准逻辑选择HTTP与HTTPS协议。</td>
   </tr>
   <tr>
    <td>桌面设备</td>
@@ -448,8 +448,7 @@ DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，
 1. Adobe客户支持根据请求提交顺序将您添加到DASH客户等待列表。
 1. 当Adobe准备好处理您的请求时，客户支持团队会联系您，以协调并设置启用短划线的目标日期。
 1. 客户支持部门在完成后会通知您。
-1. 创建 [视频查看器预设](#creating-a-new-viewer-preset) 和往常一样。
-
+1. 创建 [视频查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) 和往常一样。
 
 ## 将视频发布到YouTube {#publishing-videos-to-youtube}
 
@@ -537,7 +536,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    `https://<servername.domain>:<port_number>`
 
-   例如，`https://1a2b3c.mycompany.com:4321`
+   例如, `https://1a2b3c.mycompany.com:4321`
 
    >[!NOTE]
    >
@@ -548,7 +547,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   例如，`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   例如, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    >[!NOTE]
    >
