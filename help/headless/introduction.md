@@ -1,12 +1,12 @@
 ---
-title: AEM Headless 简介
-description: 结合详细文档和 Headless 历程，了解 Adobe Experience Manager (AEM) 作为 Headless CMS 的情况。 了解内容模型、内容片段和 GraphQL API 等功能如何用于增强 Headless 体验。
-landing-page-description: 了解如何使用和管理 Experience Manager Headless as a Cloud Service。
+title: AEM Headless简介
+description: 了解Adobe Experience Manager(AEM)中的Headless，其中包含详细文档和无头历程的组合。 了解内容模型、内容片段和 GraphQL API 等功能如何用于增强 Headless 体验。
+landing-page-description: 了解如何在Adobe Experience Manager as a Cloud Service中使用和管理Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ Headless 实施放弃了传统的全栈和混合解决方案中的页面和组�
 
 ![AEM 实施模型](assets/aem-implementation-models.png)
 
-## AEM Headless 的功能 {#aem-headless-features}
+## 功能 {#aem-headless-features}
 
 AEM as a Cloud Service 是一款灵活的工具，提供了三种强大的功能用于 Headless 实施模型：
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service 是一款灵活的工具，提供了三种强大的功能
    * AEM Assets REST API 支持内容片段 CRUD 操作。
    * 使用[内容片段核心组件的 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)也可实现直接内容投放。
 
-## 使用 AEM Headless 的第一步 {#first-steps}
+## 您的首要步骤 {#first-steps}
 
 有多个资源可帮助您快速开始使用 AEM 的 Headless 功能。每份指南都针对不同用例和受众量身打造。
 
@@ -65,4 +65,4 @@ AEM as a Cloud Service 是一款灵活的工具，提供了三种强大的功能
 
 >[!TIP]
 >
->有关详细信息，请参阅 [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)。
+>有关更多信息，请参阅文档 [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)。
