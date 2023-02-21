@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 14%
@@ -274,7 +274,7 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
    <td><code>keyframe</code></td>
    <td>关键帧之间的目标帧数。 计算此值，以便每2到10秒生成一个关键帧。 例如，在每秒30帧时，关键帧间隔为60-300。<br /> <br /> 较低的关键帧间隔可改进自适应视频编码的流搜寻和流切换行为，并且还可以提高具有大量运动的视频的质量。 但是，由于关键帧会增加文件的大小，因此较低的关键帧间隔通常会导致在给定比特率下的整体视频质量降低。</td>
    <td><code>String</code></td>
-   <td><p>正数。</p> <p>默认值为300。</p> <p>HLS或DASH（自适应流播放）的推荐值为60-90。 (要使用DASH，您的视频必须首先由帐户上的Adobe技术支持人员启用。 请参阅 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帐户上启用短划线</a>.)</p> </td>
+   <td><p>正数。</p> <p>默认值为300。</p> <p>HLS或DASH（自适应流播放）的推荐值为60-90。 (要对视频使用DASH，必须先由您帐户上的Adobe技术支持人员启用。 请参阅 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帐户上启用短划线</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
