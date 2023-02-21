@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1b9817005ec40d61e9fa613dbd8c56912605040b
+source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
 workflow-type: tm+mt
-source-wordcount: '3944'
+source-wordcount: '3946'
 ht-degree: 95%
 
 ---
@@ -699,7 +699,7 @@ ht-degree: 95%
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [持久 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md)
       + [优化GraphQL查询](/help/headless/graphql-api/graphql-optimization.md)
-      + [更新用于GraphQL筛选的内容片段](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+      + [更新内容片段以优化GraphQL过滤](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
    + [内容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hans)
    + 安全性 {#security}
