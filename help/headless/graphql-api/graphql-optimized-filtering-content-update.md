@@ -1,7 +1,7 @@
 ---
 title: 更新内容片段以优化GraphQL过滤
 description: 了解如何在Adobe Experience Manager as a Cloud Service中为优化的GraphQL过滤更新内容片段，以进行无头内容交付。
-source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
+source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 6%
@@ -158,7 +158,7 @@ ht-degree: 6%
 
    运行更新过程后，重置云环境变量 `CF_MIGRATION_ENABLED` 为“0”，以触发所有吊舱的回收。
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
