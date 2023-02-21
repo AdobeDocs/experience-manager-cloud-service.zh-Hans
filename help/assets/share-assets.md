@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
+source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1292'
 ht-degree: 2%
 
 ---
@@ -245,7 +245,7 @@ Adobe资产链接可简化内容创建过程中创意人员与营销人员之间
 ## 最佳实践和疑难解答 {#bestpractices}
 
 * 名称中包含空格的资产文件夹或收藏集可能无法共享。
-* 如果用户无法下载共享的资产，请与Experience Manager管理员确认 [下载限制](#maxdatasize) 。
+* 如果用户无法下载共享Experience Manager，请咨询您的资产管理员，了解下载限制的内容。 默认值为100 MB。
 * 要使用户预览使用链接共享共享的视频，该视频必须在 `/jcr:content/renditions` 在存储库中视频节点的位置。 预览的可用性不取决于 [!DNL Dynamic Media] 演绎版。
 * 通过链接共享下载视频资产时， [!DNL Dynamic Media] 下载的存档中不包含演绎版。
 
