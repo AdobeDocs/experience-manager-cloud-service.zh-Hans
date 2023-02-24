@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 3%
+source-wordcount: '1816'
+ht-degree: 7%
 
 ---
 
@@ -28,6 +28,21 @@ ht-degree: 3%
 * 该服务仅帮助从 [!DNL AEM Forms] 在OSGi环境中。 将内容从 [!DNL AEM Forms] 不支持在JEE中Cloud Service环境。
 
 * (仅适用于升级到AEM 6.4 Forms或AEM 6.5 Forms的AEM 6.3 Forms或以前版本环境)不支持基于现成模板和AEM 6.3 Forms或以前版本中提供的主题的自适应Forms [!DNL AEM Forms] as a Cloud Service。
+
+* 验证步骤不可用。在将此类表单移至Cloud Service环境之前，请从现有的自适应Forms中删除验证步骤。
+
+* 自适应Forms的签名步骤不可用。 从现有自适应表单中删除签名步骤。配置自适应表单用于浏览器中签名体验。它显示 Adobe Sign 协议，以在自适应表单提交时在浏览器中签名。浏览器中的签名体验有助于提供更快的签名体验，节省签名者的时间。
+
+## AEM 6.5 Forms的差异
+
+| 功能 | AEM 6.5 Forms的差异 |
+|--------------|-----------|
+| HTML5 Forms(移动Forms) | 该服务不支持HTML5 Forms(Mobile Forms)。 如果您将基于XDP的表单渲染为HTML5 Forms，则可以继续在AEM 6.5 Forms上使用该功能。 |
+| 自适应表单 | <li><b>基于XSD的自适应Forms:</b> 该服务不支持HTML5 Forms(Mobile Forms)。 如果您将基于XDP的表单渲染为HTML5 Forms，则可以继续在AEM 6.5 Forms上使用该功能。 </li> <li><b> 自适应表单模板：</b> 使用程序的构建管道和相应的Git存储库来导入现有的自适应表单模板。 </li><li><b>规则编辑器：</b> AEM Formsas a Cloud Service提供了经过硬化 [规则编辑器](rule-editor.md#visual-rule-editor). 代码编辑器在Formsas a Cloud Service上不可用。 迁移实用程序可帮助您迁移具有自定义规则（在代码编辑器中创建）的表单。 该实用程序会将这些规则转换为Formsas a Cloud Service支持的自定义函数。 您可以将可重用函数与规则编辑器一起使用，以继续获取通过规则脚本获取的结果。 `onSubmitError` 或 `onSubmitSuccess` 函数现在可在规则编辑器中用作操作。 </li> <li><b>草稿和提交：</b> 该服务不会保留草稿和提交的自适应Forms的元数据。 </li> <li><b> 预填充服务：</b> 默认情况下，预填充服务会在客户端将数据与自适应表单合并，而不是在AEM 6.5 Forms的服务器上合并数据。 该功能有助于缩短预填自适应表单所需的时间。 您始终可以配置为在Adobe Experience Manager Forms服务器上运行合并操作。 </li><li><b>提交操作：</b> 的 **电子邮件作为PDF** 操作不可用。 的 **电子邮件** “提交”操作提供了发送附件和通过电子邮件附加记录文档(DoR)的选项。 </li> |
+| 表单数据模型 | <li>Forms数据模型仅支持HTTP和HTTP端点提交数据。 </li><li>Formsas a Cloud Service允许将Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支持常规CRUD（创建、读取、更新和删除）操作的服务用作数据存储。 该服务不支持JDBC连接器、Mutual SSL for Rest连接器以及基于x509证书的SOAP数据源身份验证。 </li> |
+| automated forms conversion服务 | 该服务不为Automated forms conversion服务提供元模型。 您可以 [从Automated forms conversion服务文档下载它](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| 配置 | <li>默认情况下，电子邮件仅支持HTTP和HTTP协议。 [联系支持团队](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 启用用于发送电子邮件的端口，并为环境启用SMTP协议。 </li> <li>如果您使用自定义包，请先使用最新版本的adobe-aemfd-docmanager重新编译代码，然后再将这些包与Forms as a Cloud Service一起使用。</li> |
+| 文档操作API（汇编程序服务） | 该服务不支持依赖于其他服务或应用程序的操作： <li>不支持将非PDF格式的文档转换为PDF格式。 例如，不支持Microsoft Word到PDF、Microsoft Excel到PDF和HTML到PDF</li><li>Adobe不支持基于Distiller的转化。 例如，将PostScript(PS)PDF</li><li>Forms不支持基于服务的转化。 例如，将XDP转换为PDF forms。</li><li>该服务不支持将已签名PDF或透明PDF转换为其他PDF格式。</li> |
 
 ## 前提条件 {#prerequisites}
 
