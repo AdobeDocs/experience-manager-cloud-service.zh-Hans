@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10103'
 ht-degree: 16%
 
 ---
@@ -245,7 +245,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>移动设备</td>
    <td>Chrome(iOS)</td>
-   <td>HLS或DASH*自适应流播放</td>
+   <td>HLS自适应流</td>
   </tr>
  </tbody>
 </table>
@@ -414,7 +414,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 ### 在您的帐户上启用短划线 {#enable-dash}
 
-DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，在不同的视频查看器中得到广泛采用。 启用短划线后，您可以选择从HLS或短划线中选择自适应视频流播放。 您还可以通过在播放器之间自动切换来选择两者。
+DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，在不同的视频查看器中得到广泛采用。 在您的帐户上启用短划线后，您可以选择从短划线或HLS中选择自适应视频流播放。 或者，您可以在 **[!UICONTROL 自动]** 在“查看器预设”中选择作为播放类型。
 
 在您的帐户中启用DASH的一些主要优势包括：
 
@@ -425,13 +425,13 @@ DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，
 * 帮助让客户更易于访问视频交付。
 * 也可以通过API获取流URL。
 
+   >[!IMPORTANT]
+   >
+   >目前，在您的帐户上启用DASH仅在北美地区可用。
+
 发起使用DASH的请求；它不会在您的帐户上自动启用。
 
->[!IMPORTANT]
->
->目前，在您的帐户上启用DASH仅在北美地区可用。
-
-按如下所述创建支持案例。 在您的支持案例中，请确保提到要在帐户中启用DASH。
+要在您的帐户上启用DASH，请创建客户支持案例，如下所述。 在支持案例中，指定要在Dynamic Media帐户和Experience Manager上启用DASH。
 
 **要在您的帐户上启用DASH，请执行以下操作：**
 
@@ -439,7 +439,8 @@ DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，
 1. 按照相关说明创建支持案例，同时确保提供以下信息：
 
    * 主要联系人姓名、电子邮件、电话。
-   * 您希望在Dynamic Media帐户上启用DASH。
+   * 您的Dynamic Media帐户的名称。
+   * 指定希望在Dynamic Media帐户和Experience Manager上启用短划线。
 
 1. Adobe客户支持根据请求提交顺序将您添加到DASH客户等待列表。
 1. 当Adobe准备好处理您的请求时，客户支持团队会联系您，以协调并设置启用短划线的目标日期。

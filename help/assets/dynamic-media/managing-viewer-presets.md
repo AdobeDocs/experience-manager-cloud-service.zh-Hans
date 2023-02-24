@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4382'
 ht-degree: 15%
 
 ---
@@ -442,8 +442,8 @@ Experience Manager在从以下位置查看资产时，会显示各种查看器�
 1. 在“查看器预设编辑器”页面上，选择 **[!UICONTROL 行为]** 选项卡。 或者，您也可以选择查看器中的任何可视化元素，以选择进行配置。
 例如，对于 *VideoPlayer* 类型，下 **[!UICONTROL 修饰符]** > **[!UICONTROL 播放]**，您可以从以下三个自适应流选项之一进行选择：
 
-   * **[!UICONTROL 短划线]**  — 视频以短划线形式流。
-   * **[!UICONTROL hls]**  — 视频流仅作为hls。
+   * **[!UICONTROL 短划线]**  — 视频仅以短划线形式流。 但是，在Safari/iOS设备上，您必须选择 **[!UICONTROL hls]** 作为类型。
+   * **[!UICONTROL hls]**  — 视频流仅作为HLS。
    * **[!UICONTROL 自动]**  — 最佳实践。 DASH和HLS流的创建是存储优化的。 因此，Adobe建议您始终选择 **[!UICONTROL 自动]** 类型。 视频以短划线、hls或渐进方式流，如下所示：
       * 如果浏览器支持短划线，则首先使用短划线流。
       * 如果浏览器不支持短划线，则使用HLS流，其次是。
