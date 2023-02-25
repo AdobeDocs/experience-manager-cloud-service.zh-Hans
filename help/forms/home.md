@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service 简介'
 description: 探索 AEM Forms 并了解它如何帮助您生成业务就绪的文档和表单内容。了解 Platform-as-a-Service (PaaS)，如何管理企业级数字表单和业务流程，以及如何将 Forms 连接到当前数据源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
+source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 29%
+source-wordcount: '1158'
+ht-degree: 31%
 
 ---
 
@@ -44,11 +44,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-
-| 自适应表单 | automated forms conversion服务 | 通信 API | 集成 | Forms Workflow |
-|---|---|---|---|---|
-| 自适应Forms使企业能够为其网站和其他数字渠道创建和管理交互式数据驱动表单，以及响应式移动友好表单。 | automated forms conversion服务允许企业将基于PDF的旧式表单转换为可轻松在线管理和分发的交互式数字表单。 | 通信API是一组RESTful API（应用程序编程接口），使企业能够自动创建、管理和交付个性化的数据驱动通信。 | 该平台可以与Adobe Sign和DocuSign集成，从而让用户能够轻松地直接从其自适应表单发送和跟踪数字签名请求。 </br></br>此外，该平台可与Adobe Analytics集成，使组织能够对用户行为和偏好获得有价值的洞察。 </br></br> 最后，AEM FormsCloud Service允许用户将自适应表单直接嵌入AEM Sites页面，从而创建无缝的用户体验 | Adobe Experience Manager(AEM)Forms中以Forms为中心的工作流旨在自动处理涉及表单的业务流程。 这些工作流可在表单在业务流程的不同阶段间自动传送、审阅和批准表单。 以Forms为中心的工作流可以使用AEM Forms Workflow Designer以可视方式创建，并且可以与AEM Forms集成，以在提交表单时触发工作流。 工作流可配置为根据特定条件将表单路由到不同用户或组，并可包含自动通知和提醒，以确保及时处理表单。 AEM Forms中以表单为中心的工作流总体而言有助于组织简化业务流程、提高效率并减少错误。 |
-
+| 自适应表单 | automated forms conversion服务 | 通信 API | Forms Workflow | 电子签名 | Forms Analytics |
+|---|---|---|---|---|---|
+| 自适应Forms使企业能够为其网站和其他数字渠道创建和管理交互式数据驱动表单，以及响应式移动友好表单。 | automated forms conversion服务允许企业将基于PDF的旧式表单转换为可轻松在线管理和分发的交互式数字表单。 | 通信API是一组RESTful API（应用程序编程接口），使企业能够自动创建、管理和交付个性化的数据驱动通信。 | 以Forms为中心的工作流旨在自动处理涉及表单和文档服务的业务流程。 这些工作流在表单和文档的生成过程中跨不同阶段时，会自动执行表单的传送、审阅和批准。 | 该平台可与Adobe Analytics集成，从而让组织对用户行为和偏好获得有价值的洞察。 | 该平台提供了与Adobe Sign的开箱即用集成。 您还可以将其与和DocuSign集成，以便用户发送Forms进行电子签名。 |
 
 <!--
 | | |
