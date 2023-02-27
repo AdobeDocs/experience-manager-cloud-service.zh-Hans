@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 9%
+source-wordcount: '1660'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 >id="aemcloud_ctt_ingestion"
 >title="内容摄取"
 >abstract="摄取是指将内容从迁移集摄取到目标Cloud Service实例。 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="增补摄取"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="增补摄取"
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 >[!NOTE]
@@ -135,11 +135,28 @@ ht-degree: 9%
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### 无法访问迁移服务 {#unable-to-reach-migration-service}
+
+在请求获取后，可能会向用户显示如下消息：“目标环境中的迁移服务当前不可访问。 请稍后重试或联系Adobe支持。”
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+这表示Cloud Acceleration Manager无法访问目标环境的迁移服务以开始摄取。 这可能出于多种原因。
+
+>[!NOTE]
+> 
+> 显示“迁移令牌”字段，因为在少数情况下，检索该令牌实际上是不允许的。 通过允许手动提供，用户可以快速开始摄取，而无需任何其他帮助。 如果提供了令牌，并且仍显示消息，但检索令牌不是问题。
+
+* AEM as a Cloud Service维护环境状态，有时可能由于一些正常原因需要重新启动迁移服务。 如果该服务正在重新启动，则无法访问该服务，但该服务将很快可用。
+* 可能正在实例上运行另一个进程。 例如，如果Release Orchestrator正在应用更新，则系统可能正忙，并且迁移服务经常不可用。 这以及损坏暂存或生产实例的可能性，就是强烈建议在摄取期间暂停更新的原因。
+* 如果 [已应允许列表用IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 通过Cloud Manager，将阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址非常动态。 目前，唯一的解决方案是在摄取运行时禁用IP允许列表。
+* 可能还有其他原因需要调查。 如果摄取仍然失败，请联系Adobe客户关怀团队。
+
 ### 仍启用通过Release Orchestrator进行的自动更新
 
 Release Orchestrator通过自动应用更新来自动使环境保持最新。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。 这是启动摄取之前应记录支持票证的原因之一（请参阅上面的“注意”），以便可以计划临时禁用Release Orchestrator。
 
-如果启动摄取时Release Orchestrator仍在运行，则UI将显示此错误消息。 无论如何，您都可以选择继续，接受风险，方法是检查字段并再次按按钮。
+如果启动摄取时Release Orchestrator仍在运行，则UI将显示此消息。 无论如何，您都可以选择继续，接受风险，方法是检查字段并再次按按钮。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
