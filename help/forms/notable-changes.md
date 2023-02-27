@@ -1,9 +1,9 @@
 ---
 title: AEM 6.5 Forms与AEM云服务之间的更改内容
 description: 您是Experience Manager Forms用户并且希望升级到Adobe Experience Manager Formsas a Cloud Service吗？ 了解在升级或迁移到Cloud Service之前最显着的更改。
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
-source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
+contentOwner: khsingh
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 3%
@@ -16,39 +16,39 @@ ht-degree: 3%
 
 | 功能 | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms |
 |---|---|---|
-| 云本机架构 | ☑ | ☒ |
-| 根据负载自动缩放 | ☑ | ☒ |
-| 升级无停机 | ☑ | ☒ |
+| 云本机架构 | ✅ | ⛌ |
+| 根据负载自动缩放 | ✅ | ⛌ |
+| 升级无停机 | ✅ | ⛌ |
 | 功能推出频率 | 敏捷* | 每季度 |
-| 包含CDN（内容交付网络） | ☑ | ☒ |
-| 优化了拓扑以实现最大可复原性和效率 | ☑ | ☒ |
-| 云原生开发环境 | ☑ | ☒ |
-| 通过Cloud Manager提供自助服务 | ☑ | ☒ |
-| 通过连续集成和连续交付(CI/CD)实现自动升级 | ☑ | ☒ |
-| 与[!DNL Micosoft Power Automate] 集成  | ☑ | ☒ |
-| 与[!DNL DocuSign] 集成  | ☑ | ☒ |
-| 与Microsoft Dynamics和Salesforce轻松连接 | ☑ | ☒ |
-| 与Microsoft Azure数据存储轻松连接 | ☑ | ☒ |
-| 强化的规则编辑器 | ☑ | ☒ |
-| 表单创建向导 | ☑ | ☒ |
-| 对记录文档的自定义XCI支持 | ☑ | ☒ |
-| 自适应Forms <sup>1</sup> | ☑ | ☑ |
-| 与多个数据源的数据集成 | ☑ | ☑ |
-| 通信API（文档服务） <sup>2,3</sup> | ☑ | ☑ |
-| automated forms conversion服务 <sup>4</sup> | ☑ | ☑ |
-| 与[!DNL Adobe Sign] 集成  | ☑ | ☑ |
-| 与[!DNL AEM Sites] 集成  | ☑ | ☑ |
-| 与[!DNL Adobe Launch] 集成  | ☑ | ☑ |
-| 与[!DNL Adobe Analytics] 集成  | ☑ | ☑ |
-| Forms门户 <sup>5</sup> | ☑ | ☑ |
-| AEM 工作流 | ☑ | ☑ |
-| 记录文档 | ☑ | ☑ |
-| 验证码不可见 | ☑ | ☑ |
-| 可重用表单数据模型配置 | ☑ | ☑ |
-| 基于Acroform的记录文档 | ☑ | ☑ |
-| 针对启用了Adobe Sign的自适应Forms，基于政府ID的身份验证 | ☑ | ☑ |
-| HTML5 <sup>6</sup> | ☒ | ☑ |
-| 文档安全 | ☒ | ☑ |
+| 包含CDN（内容交付网络） | ✅ | ⛌ |
+| 优化了拓扑以实现最大可复原性和效率 | ✅ | ⛌ |
+| 云原生开发环境 | ✅ | ⛌ |
+| 通过Cloud Manager提供自助服务 | ✅ | ⛌ |
+| 通过连续集成和连续交付(CI/CD)实现自动升级 | ✅ | ⛌ |
+| 与[!DNL Micosoft Power Automate] 集成  | ✅ | ⛌ |
+| 与[!DNL DocuSign] 集成  | ✅ | ⛌ |
+| 与Microsoft Dynamics和Salesforce轻松连接 | ✅ | ⛌ |
+| 与Microsoft Azure数据存储轻松连接 | ✅ | ⛌ |
+| 强化的规则编辑器 | ✅ | ⛌ |
+| 表单创建向导 | ✅ | ⛌ |
+| 对记录文档的自定义XCI支持 | ✅ | ⛌ |
+| 自适应Forms <sup>1</sup> | ✅ | ✅ |
+| 与多个数据源的数据集成 | ✅ | ✅ |
+| 通信API（文档服务） <sup>2,3</sup> | ✅ | ✅ |
+| automated forms conversion服务 <sup>4</sup> | ✅ | ✅ |
+| 与[!DNL Adobe Sign] 集成  | ✅ | ✅ |
+| 与[!DNL AEM Sites] 集成  | ✅ | ✅ |
+| 与[!DNL Adobe Launch] 集成  | ✅ | ✅ |
+| 与[!DNL Adobe Analytics] 集成  | ✅ | ✅ |
+| Forms门户 <sup>5</sup> | ✅ | ✅ |
+| AEM 工作流 | ✅ | ✅ |
+| 记录文档 | ✅ | ✅ |
+| 验证码不可见 | ✅ | ✅ |
+| 可重用表单数据模型配置 | ✅ | ✅ |
+| 基于Acroform的记录文档 | ✅ | ✅ |
+| 针对启用了Adobe Sign的自适应Forms，基于政府ID的身份验证 | ✅ | ✅ |
+| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| 文档安全 | ⛌ | ✅ |
 
 在继续提供服务之前，请考虑以下特殊情况：
 

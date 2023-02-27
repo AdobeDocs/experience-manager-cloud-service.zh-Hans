@@ -8,7 +8,7 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '3946'
 ht-degree: 95%
@@ -501,7 +501,7 @@ ht-degree: 95%
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
-      + [关键功能](/help/forms/key-features.md)
+      + [最新创新](/help/forms/latest-innovations.md)
       + [重要更改](/help/forms/notable-changes.md)
       + [架构](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常见问题](/help/forms/faq.md)
