@@ -1,7 +1,7 @@
 ---
 title: 创建和使用主题
 description: 您可以使用主题来使用核心组件对自适应表单进行风格化和提供可视化标识。 您可以在任意数量的自适应Forms中共享主题。
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%
@@ -86,7 +86,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 要自定义主题，您可以启动本地代理服务器，以便根据实际的AEM内容实时查看主题自定义。
 
-### 4.更改画布主题的package.json和package_lock.json中的名称 {#changename-packagelock-packagelockjson}
+### 3.更改画布主题的package.json和package_lock.json中的名称 {#changename-packagelock-packagelockjson}
 
 在 `package.json` 和 `package_lock.json` 文件。
 
@@ -96,7 +96,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 ![画布主题图片](/help/forms/assets/changename_canvastheme.png)
 
-### 3.在主题文件夹中创建.env文件 {#creating-env-file-theme-folder}
+### 4.在主题文件夹中创建.env文件 {#creating-env-file-theme-folder}
 
 创建 `.env` 文件，并添加以下参数：
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![画布主题结构](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4.启动本地代理服务器 {#starting-a-local-proxy-server}
+### 5.启动本地代理服务器 {#starting-a-local-proxy-server}
 
 1. 从命令行中，导航到本地计算机上主题的根。
 1. 执行 `npm install`，npm 将检索依赖项并安装项目。
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 导航到自适应表单，以查看应用于自适应表单的画布主题。
 
-### 5.自定义主题 {#customize-theme}
+### 6.自定义主题 {#customize-theme}
 
 1. 在编辑器中，打开文件 `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ AEM_PROXY_PORT=7000
 
 在将更改提交到AEM Git存储库之前，您需要访问 [Git存储库信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6.提交更改 {#committing-the-changes}
+### 7.提交更改 {#committing-the-changes}
 
 在对主题进行更改并使用本地代理服务器对其进行测试后，将更改提交到AEM FormsCloud Service的Git存储库。 它让自定义主题在您的FormsCloud Service环境中可用，供自适应Forms作者使用。
 
@@ -216,7 +216,7 @@ AEM_PROXY_PORT=7000
 现在，您的自定义项可安全地存储在Git存储库中。
 
 
-### 7.运行前端管道 {#deploy-pipeline}
+### 8.运行前端管道 {#deploy-pipeline}
 
 1. 创建前端管道以部署自定义主题。 学习 [如何设置前沿管道以部署自定义主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. 运行创建的前端管道以在 **[!UICONTROL 样式]** 自适应表单创建向导的选项卡。
