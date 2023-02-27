@@ -5,17 +5,17 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1500'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 # 创建自适应表单（基础组件） {#creating-an-adaptive-form}
 
 
-自适应Forms让您能够创建有吸引力的响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
+自适应表单可让您创建引人入胜、响应式、动态和自适应的表单。AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
 开始之前，请了解可供您使用的Forms组件类型：
 
@@ -55,8 +55,8 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **自适应表单模板**:模板提供了基本结构并定义了自适应表单的外观（布局和样式）。 它具有预格式化的组件，其中包含某些属性和内容结构。 它还提供了用于定义主题和提交操作的选项。 主题定义了外观和感觉，并定义了提交自适应表单时要执行的操作。 例如，将收集的数据发送到数据源。 云服务支持两种类型的模板：
 
-   * **可编辑的模板**:您可以 [新建](template-editor.md) 或 [导入现有可编辑的模板](migrate-to-forms-as-a-cloud-service.md). 您还可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests。) 以获取一些可编辑的模板示例。
-   * **静态模板**:这些是旧版模板，仅建议从Adobe Managed Services(AMS)和内部部署AEM Forms安装(AEM 6.5 Forms或更早版本)迁移的客户使用这些模板。 利用这些功能，可继续利用静态模板中的现有投资。 创建新的自适应表单时，建议使用可编辑的模板。
+* **可编辑的模板**:您可以 [新建](template-editor.md) 或 [导入现有可编辑的模板](migrate-to-forms-as-a-cloud-service.md). 您还可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests。) 以获取一些可编辑的模板示例。
+* **静态模板**:这些是旧版模板，仅建议从Adobe Managed Services(AMS)和内部部署AEM Forms安装(AEM 6.5 Forms或更早版本)迁移的客户使用这些模板。 利用这些功能，可继续利用静态模板中的现有投资。 创建新的自适应表单时，建议使用可编辑的模板。
 
 * **自适应表单主题**:主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 应用主题时，指定的样式将反映在相应的组件上。 您可以 [创建新主题](themes.md) 或 [导入现有主题](import-export-forms-templates.md#uploading-a-theme). 您还可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) 示例主题。
 
@@ -90,7 +90,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **表单数据模型**:A [表单数据模型](data-integration.md) 允许您将来自不同数据源的实体和服务集成到自适应表单。 如果要创建的自适应表单涉及从多个数据源获取数据并将数据写入多个数据源，请选择表单数据模型。
 
-   * **JSON架构**: [JSON架构](adaptive-form-json-schema-form-model.md) 表示组织中后端系统生成或使用数据的结构。 您可以将架构与自适应表单相关联，并使用其元素向自适应表单添加动态内容。 创作自适应Forms时，架构的元素可在内容浏览器的“数据模型对象”选项卡中使用，并且所有字段也会添加到新创建的自适应表单中。
+   * **JSON架构**: [JSON架构](adaptive-form-json-schema-form-model.md) 表示组织中后端系统生成或使用数据的结构。 您可以将架构与自适应表单相关联，并使用其元素将动态内容添加到自适应表单。创作自适应Forms时，架构的元素可在内容浏览器的“数据模型对象”选项卡中使用，并且所有字段也会添加到新创建的自适应表单中。
 
    默认情况下，数据模型的所有字段都会被选中。 创建自适应表单时，所有选定的数据模型字段都将转换为相应的自适应表单组件。 向导会提供您的复选框以仅选择应包含在自适应表单中的字段。
 

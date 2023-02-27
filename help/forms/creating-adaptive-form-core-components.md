@@ -4,17 +4,17 @@ description: 了解如何使用 [!DNL Experience Manager Forms]. 自适应Forms�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1458'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # 创建自适应表单（核心组件） {#creating-an-adaptive-form-core-components}
 
-自适应Forms让您能够创建有吸引力的响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创建自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
+自适应表单可让您创建引人入胜、响应式、动态和自适应的表单。AEM Forms提供了业务用户友好向导，可快速创建自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
 开始之前，请了解可供您使用的Forms组件类型：
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 ## 可用的自适应Forms核心组件
 
-自适应Forms核心组件是标准化的数据捕获组件。 这些组件提供了自定义功能，有助于缩短开发时间，并降低数字注册体验的维护成本。 [自适应Forms核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 提供了可用组件的详细列表以及有关每个组件功能的详细信息。 您还可以访问 [https://aemcomponents.dev/](https://aemcomponents.dev/) 查看可用的核心组件。
+自适应Forms核心组件是标准化的数据捕获组件。 这些组件提供了自定义功能，有助于缩短开发时间并降低数字注册体验的维护成本。 [自适应Forms核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 提供了可用组件的详细列表以及有关每个组件功能的详细信息。 您还可以访问 [https://aemcomponents.dev/](https://aemcomponents.dev/) 查看可用的核心组件。
 
 ## 编辑自适应表单的表单模型属性 {#edit-form-model}
 
