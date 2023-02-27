@@ -1,15 +1,15 @@
 ---
 title: 创建和使用主题
 description: 您可以使用主题来使用核心组件对自适应表单进行风格化和提供可视化标识。 您可以在任意数量的自适应Forms中共享主题。
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 5%
 
 ---
 
 
-# 使用核心组件的自适应表单主题简介 {#introduction-to-themes-for-af-using-core-components}
+# 自适应Forms中的主题（核心组件） {#themes-for-af-using-core-components}
 
 您可以使用核心组件创建并应用主题以风格化自适应表单。 主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 应用主题时，指定的样式将反映在相应的组件上。 主题是独立管理的，不引用自适应表单。
 
