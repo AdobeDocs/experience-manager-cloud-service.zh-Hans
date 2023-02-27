@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中将URL关联到您的Web应用程序
 contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1276'
 ht-degree: 15%
 
 ---
@@ -152,7 +152,7 @@ Dynamic Media支持交付静态资产，静态资产是除图像和视频之外�
 
    此路径是已发布视频呈现的完整视频URL。
 
-## 获取自适应流播放(HLS)的视频URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 获取自适应比特率流播放(HLS)的视频URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. 在Experience Manager中，导航到 **[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 云]** > **[!UICONTROL Cloud Services]**.
 1. 在 **[!UICONTROL Cloud Services]** 页面，向下滚动到 **[!UICONTROL Dynamic MediaCloud Services]** 标题，然后选择 **[!UICONTROL 显示配置]**.

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '10103'
+source-wordcount: '10122'
 ht-degree: 16%
 
 ---
@@ -151,7 +151,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 ## 最佳实践：使用HTML5视频查看器 {#best-practice-using-the-html-video-viewer}
 
-Dynamic MediaHTML5视频查看器预设是强大的视频播放器。您可以使用它们来避免许多与HTML5视频播放相关的常见问题以及与移动设备相关的问题。 例如，缺少自适应流传输和桌面浏览器访问范围有限。
+Dynamic MediaHTML5视频查看器预设是强大的视频播放器。您可以使用它们来避免许多与HTML5视频播放相关的常见问题以及与移动设备相关的问题。 例如，缺少自适应比特率流传输和桌面浏览器访问限制。
 
 在播放器的设计方面，您可以使用标准Web开发工具来设计视频播放器的功能。 例如，您可以使用 HTML5 和 CSS 设计按钮、控件和自定义标识图像背景，从而帮助您向客户展示自定义的外观。
 
@@ -179,7 +179,7 @@ Dynamic MediaHTML5视频查看器预设是强大的视频播放器。您可以�
 * 如果您的HTTPS网站使用HTTPS视频流，则可以进行流播放。
 * 如果您的HTTP网站使用HTTPS视频流，则流处理可以正常进行，并且Web浏览器中不会出现混合内容问题。
 
-HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动调整播放。 它还允许客户“搜寻”视频中的任意点，而无需等待视频的其余部分下载。
+DASH是国际标准，HLS是Apple标准。 这两种方法都用于自适应视频流播放。 而且，这两种技术都可根据网络带宽容量自动调整播放。 它还允许客户“搜寻”视频中的任意点，而无需等待视频的其余部分下载。
 
 通过在用户的桌面系统或移动设备上本地下载和存储视频来传送渐进式视频。
 
@@ -210,17 +210,17 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>桌面设备</td>
    <td>Firefox 45或更高版本</td>
-   <td>HLS或DASH*自适应流播放</td>
+   <td>HLS或DASH*自适应比特率流</td>
   </tr>
   <tr>
    <td>桌面设备</td>
    <td>铬黄</td>
-   <td>HLS或DASH*自适应流播放</td>
+   <td>HLS或DASH*自适应比特率流</td>
   </tr>
   <tr>
    <td>桌面设备</td>
    <td>Safari(Mac)</td>
-   <td>HLS自适应流</td>
+   <td>HLS自适应比特率流</td>
   </tr>
   <tr>
    <td>移动设备</td>
@@ -230,7 +230,7 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>移动设备</td>
    <td>Chrome(Android™ 7或更高版本)</td>
-   <td>HLS或DASH*自适应流播放/td&gt;
+   <td>HLS或DASH*自适应比特率流/td&gt;
   </tr>
   <tr>
    <td>移动设备</td>
@@ -240,12 +240,12 @@ HLS是自适应视频流播放的Apple标准，可根据网络带宽容量自动
   <tr>
    <td>移动设备</td>
    <td>Safari(iOS)</td>
-   <td>HLS自适应流</td>
+   <td>HLS自适应比特率流</td>
   </tr>
   <tr>
    <td>移动设备</td>
    <td>Chrome(iOS)</td>
-   <td>HLS自适应流</td>
+   <td>HLS自适应比特率流</td>
   </tr>
  </tbody>
 </table>
@@ -418,7 +418,7 @@ DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，
 
 在您的帐户中启用DASH的一些主要优势包括：
 
-* 包含用于自适应流播放的短划线流视频。 这种方法可提高投放效率。 自适应流播放可确保为客户提供最佳的观看体验。
+* 包含用于自适应比特率流播放的短划线流视频。 这种方法可提高投放效率。 自适应流播放可确保为客户提供最佳的观看体验。
 * 使用Dynamic Media播放器优化的流播放在HLS和DASH流之间切换，以确保最佳服务质量。 当使用Safari浏览器时，视频播放器会自动切换到HLS。
 * 您可以通过编辑视频查看器预设来配置首选的流播放方法（HLS或DASH）。
 * 优化的视频编码可确保在启用短划线功能时不使用额外存储。 为HLS和DASH创建一组视频编码，以优化视频存储成本。
