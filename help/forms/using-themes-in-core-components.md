@@ -1,10 +1,10 @@
 ---
 title: 创建和使用主题
 description: 您可以使用主题来使用核心组件对自适应表单进行风格化和提供可视化标识。 您可以在任意数量的自适应Forms中共享主题。
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 6%
+source-wordcount: '1669'
+ht-degree: 5%
 
 ---
 
@@ -51,6 +51,7 @@ ht-degree: 6%
 要自定义画布主题，请执行以下操作：
 1. [克隆画布主题](#1-download-canvas-theme-download-canvas-theme)
 1. [了解主题的结构](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [在package.json和package_lock.json中更改名称](#changename-packagelock-packagelockjson)
 1. [创建 ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [启动本地代理服务器](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [自定义主题](#customize-the-theme-customizing-theme)
@@ -67,7 +68,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> 表单创建向导的“样式”选项卡显示与package.json相同的主题名称。
+> 表单创建向导的“样式”选项卡显示与package.json文件中相同的主题名称。
 
 ### 2.了解主题的结构 {#structure-of-canvas-theme}
 
@@ -85,12 +86,22 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 要自定义主题，您可以启动本地代理服务器，以便根据实际的AEM内容实时查看主题自定义。
 
+### 4.更改画布主题的package.json和package_lock.json中的名称 {#changename-packagelock-packagelockjson}
+
+在 `package.json` 和 `package_lock.json` 文件。
+
+>[!NOTE]
+>
+> 名称不应具有 `@aemforms` 标记。 它应该是简单的文本，作为用户提供的名称。
+
+![画布主题图片](/help/forms/assets/changename_canvastheme.png)
+
 ### 3.在主题文件夹中创建.env文件 {#creating-env-file-theme-folder}
 
 创建 `.env` 文件，并添加以下参数：
 
 * **AEM url**
-AEM_URL=https://[author-instance] 或http://localhost:[端口]/
+AEM_URL=https://[author-instance]
 
 * **AEM网站名称**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. 代理服务器在启动时将自动打开浏览器并转到 `http://localhost:[port]/`。
+
 1. 点按或单击 **在本地登录（仅限管理员任务）** 并使用AEM管理员为您提供的代理用户凭据登录。
 
    ![本地登录](/help/forms/assets/local_signin.png)
@@ -166,20 +177,35 @@ AEM_PROXY_PORT=7000
 
 在对主题进行更改并使用本地代理服务器对其进行测试后，将更改提交到AEM FormsCloud Service的Git存储库。 它让自定义主题在您的FormsCloud Service环境中可用，供自适应Forms作者使用。
 
-在将更改提交到AEM FormsCloud Service的git存储库之前，您需要在本地计算机上克隆该存储库。 要克隆存储库，请执行以下操作：
+在将更改提交到AEM FormsCloud Service的Git存储库之前，您需要在本地计算机上克隆该存储库。 要克隆存储库，请执行以下操作：
 
-1. 在替换后打开命令提示符并运行以下命令 [my-org] 和 [my-program] 包含AEM管理员提供的值。 您还可以在 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. 通过单击 **[!UICONTROL 存储库]** 选项。
+
+   ![创建新主题存储库](/help/forms/assets/createrepo_canvastheme.png)
+
+1. 单击 **[!UICONTROL 添加存储库]** 并指定 **存储库名称** 在 **添加存储库** 对话框。 单击“**[!UICONTROL 保存]**”。
+
+   ![添加画布主题存储库](/help/forms/assets/addcanvasthemerepo.png)
+
+1. 单击 **[!UICONTROL 复制存储库URL]** 复制已创建存储库的URL。
+
+   ![画布主题URL](/help/forms/assets/copyurl_canvastheme.png)
+
+1. 打开命令提示符并克隆上面创建的云存储库。
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. 使用类似于 `mv <theme-sources> <cloned-repo>`.
-1. 通过修改主题组件文件夹的CSS文件，在其中进行所需的更改。
-1. 在克隆存储库的目录中，使用以下命令提交您刚刚移入的主题文件。
+
+1. 使用类似于
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+例如，使用此命令 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. 在云存储库的目录中，使用以下命令提交您移入的主题文件。
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ AEM_PROXY_PORT=7000
 现在，您的自定义项可安全地存储在Git存储库中。
 
 
-### 7.部署前端管道 {#deploy-pipeline}
+### 7.运行前端管道 {#deploy-pipeline}
 
-使用前端管道部署自定义主题。 学习 [如何设置前沿管道以部署自定义主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. 创建前端管道以部署自定义主题。 学习 [如何设置前沿管道以部署自定义主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. 运行创建的前端管道以在 **[!UICONTROL 样式]** 自适应表单创建向导的选项卡。
 
 >[!NOTE]
 >
@@ -205,13 +231,13 @@ AEM_PROXY_PORT=7000
 1. 打开使用核心组件创建的自适应表单。
 1. 使用命令提示符启动本地代理服务器，然后单击 **在本地登录（仅限管理员任务）**.
 1. 登录后，您将被重定向到浏览器并查看应用的主题。
-1. 下载画布主题并解压缩下载的zip文件夹。
+1. 下载 [画布主题](https://github.com/adobe/aem-forms-theme-canvas) 并解压缩下载的zip文件夹。
 1. 在首选编辑器中打开提取的zip文件夹。
 1. 创建 `.env` 文件，并添加参数： **AEM URL**, **AEM_ADAPTIVE_FORM** 和 **AEM_PROXY_PORT**.
 1. 在“画布”主题文件夹中打开文本框的CSS文件，并将其边框颜色更改为 `red` 颜色并保存更改。
 1. 再次重新打开浏览器，您会看到所做的更改会立即反映在自适应表单中。
 1. 在克隆的存储库中移动画布主题文件夹。
-1. 提交更改并部署前端管道。
+1. 提交更改并运行前端管道。
 
 执行管道后，“样式”(Style)选项卡下将提供该主题。
 
