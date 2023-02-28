@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager(AEM)Formsas a Cloud Service的最新创新
+title: 了解Adobe Experience Manager Formsas a Cloud Service的最新创新。
 description: “了解 [!DNL AEM Forms] as a Cloud Service创建、管理和发布企业级表单和业务流程。”
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '682'
 ht-degree: 10%
 
 ---
@@ -24,7 +24,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 AEM Formsas a Cloud Service的一些最新创新包括：
 
-|  |  |
+| 功能 | 详细信息 |
 |---|---|
 | 无头自适应Forms | 创建和管理 [无头自适应Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 在Adobe Experience Manager平台中。 使您的开发人员能够创建、发布和管理可通过API访问和交互的交互式表单，而不是通过传统的图形用户界面。 <br/> <br/> 这些表单旨在无需传统的HTML表单界面即可提交。 换句话说，它们允许您通过API或后端代码以编程方式提交表单数据，而无需在前端显示任何可见的表单元素。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> 无头表单在多种情况下非常有用，例如在构建单页应用程序、渐进式Web应用程序或移动应用程序时，传统的HTML表单界面可能不是必需的或实用的。 无头表单允许开发人员直接通过API或后端代码提交表单数据，从而帮助简化工作流程并提高Web应用程序的整体性能。 |
 | 核心组件 | 的 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 是一组24个符合BEM规范的开源组件，这些组件基于Adobe Experience Manager WCM核心组件构建。 它们专门用于创建自适应Forms，自适应Adaptive Manager是根据用户的设备、浏览器和屏幕大小而调整的表单。 <br/> <br/>利用这些组件，可提供一系列广泛的表单字段选项（包括文本字段、复选框、下拉菜单等）来创建卓越的数据捕获和注册体验。这些功能还包括验证、条件逻辑和响应式设计等功能，可用于创建用户友好且易于使用的表单。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>此外，由于这些组件是开源的，因此，开发人员能够轻松定制和扩展组件以满足其组织的特定需求。而且，这些组件基于 BEM 方法而构建，这确保了它们可扩展且可维护。 |

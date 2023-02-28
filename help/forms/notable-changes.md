@@ -3,10 +3,10 @@ title: AEM 6.5 Forms与AEM云服务之间的更改内容
 description: 您是Experience Manager Forms用户并且希望升级到Adobe Experience Manager Formsas a Cloud Service吗？ 了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 3%
+source-wordcount: '1179'
+ht-degree: 2%
 
 ---
 
@@ -33,21 +33,11 @@ ht-degree: 3%
 | 表单创建向导 | ✅ | ⛌ |
 | 对记录文档的自定义XCI支持 | ✅ | ⛌ |
 | 自适应Forms <sup>1</sup> | ✅ | ✅ |
-| 与多个数据源的数据集成 | ✅ | ✅ |
 | 通信API（文档服务） <sup>2,3</sup> | ✅ | ✅ |
 | automated forms conversion服务 <sup>4</sup> | ✅ | ✅ |
-| 与[!DNL Adobe Sign] 集成  | ✅ | ✅ |
-| 与[!DNL AEM Sites] 集成  | ✅ | ✅ |
-| 与[!DNL Adobe Launch] 集成  | ✅ | ✅ |
-| 与[!DNL Adobe Analytics] 集成  | ✅ | ✅ |
 | Forms门户 <sup>5</sup> | ✅ | ✅ |
-| AEM 工作流 | ✅ | ✅ |
-| 记录文档 | ✅ | ✅ |
-| 验证码不可见 | ✅ | ✅ |
-| 可重用表单数据模型配置 | ✅ | ✅ |
-| 基于Acroform的记录文档 | ✅ | ✅ |
-| 针对启用了Adobe Sign的自适应Forms，基于政府ID的身份验证 | ✅ | ✅ |
-| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Forms数据模型 <sup>6</sup> | ✅ | ✅ |
+| HTML5Forms <sup>7</sup> | ⛌ | ✅ |
 | 文档安全 | ⛌ | ✅ |
 
 在继续提供服务之前，请考虑以下特殊情况：
@@ -96,27 +86,29 @@ ht-degree: 3%
 
 +++ 5.Forms门户
 
-无法开箱即用(OOTB)地支持匿名使用Forms门户。 您可以自定义表单门户，以便为未登录用户启用显示表单的功能。
+无法开箱即用(OOTB)地支持匿名使用Forms Portal。 您可以自定义Forms门户，以为未登录的用户启用显示表单的功能。
 
 +++
 
-
-+++ 6.HTML5Forms(移动Forms)
-
-* 该服务不支持HTML5 Forms(Mobile Forms)。 如果您将基于XDP的表单渲染为HTML5 Forms，则可以继续在AEM 6.5 Forms上使用该功能。
-
-* 如果您有用于离线捕获数据并在下次联机时同步该数据，则可以继续使用 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 的AEM 6.5 Forms。
-
-+++
-
-
-+++ 7.表单数据模型
++++ 6.表单数据模型
 
 * Forms数据模型仅支持HTTP和HTTP端点提交数据。 该服务不支持REST连接器的互相SSL以及SOAP数据源的基于x509证书的身份验证。
 
 * Formsas a Cloud Service允许将Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支持常规CRUD（创建、读取、更新和删除）操作的服务用作数据存储，同时支持Open API规范2.0和Open API规范。 该服务还支持JDBC连接器。
 
 +++
+
+
++++ 7.HTML5Forms(移动Forms)
+
+* 该服务不支持HTML5 Forms(Mobile Forms)。 如果您将基于XDP的表单渲染为HTML5 Forms，则可以继续在AEM 6.5 Forms上使用该功能。
+
+* 如果您有用例用于离线捕获数据并在下次联机时同步该数据，则可以继续使用 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 的AEM 6.5 Forms。
+
++++
+
+
+
 
 
 +++ 8.开发人员环境
