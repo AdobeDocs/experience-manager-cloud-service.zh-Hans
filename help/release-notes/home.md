@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
+source-git-commit: 554912f0e08fdf699b16ab9bf0b12ee84e8a682b
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 100%
+source-wordcount: '642'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 * [功能发布按可预测的每月频率进行，侧重于新功能和产品创新。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [维护版本经常发布，并侧重于安全更新、错误修复和性能增强。](/help/release-notes/maintenance/latest.md)这可确保使用任何关键修复来使 [!DNL Adobe Experience Manager] as a Cloud Service 始终保持最新。
 
-除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service 还提供了灵活性，可在即将推出的功能发布到生产环境前的一整个月预览这些功能。这可让您在自定义环境中试用功能并提前培训内部用户/帮助他们做好准备，从而评估即将发布的版本对组织的影响。
+除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service 还提供了灵活性，可在即将推出的功能发布到生产环境前的一整个月预览这些功能。这可让您在自定义环境中试用功能并提前培训内部用户/帮助他们做好准备，从而评估即将发布的版本对组织的影响。如果您有AEM加载项（如表单），则可以通过在 [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 >[!NOTE]
 >
