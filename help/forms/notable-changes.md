@@ -3,9 +3,9 @@ title: AEM 6.5 Forms与AEM云服务之间的更改内容
 description: 您是Experience Manager Forms用户并且希望升级到Adobe Experience Manager Formsas a Cloud Service吗？ 了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1215'
 ht-degree: 3%
 
 ---
@@ -103,14 +103,18 @@ ht-degree: 3%
 
 +++ 6.HTML5Forms(移动Forms)
 
-该服务不支持HTML5 Forms(Mobile Forms)。 如果您将基于XDP的表单渲染为HTML5 Forms，则可以继续在AEM 6.5 Forms上使用该功能。
+* 该服务不支持HTML5 Forms(Mobile Forms)。 如果您将基于XDP的表单渲染为HTML5 Forms，则可以继续在AEM 6.5 Forms上使用该功能。
+
+* 如果您有用于离线捕获数据并在下次联机时同步该数据，则可以继续使用 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 的AEM 6.5 Forms。
 
 +++
 
 
 +++ 7.表单数据模型
 
-Forms数据模型仅支持HTTP和HTTP端点提交数据。 该服务不支持REST连接器的互相SSL以及SOAP数据源的基于x509证书的身份验证。 * Formsas a Cloud Service允许将Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支持常规CRUD（创建、读取、更新和删除）操作的服务用作数据存储，同时支持Open API规范2.0和Open API规范。 该服务还支持JDBC连接器。
+* Forms数据模型仅支持HTTP和HTTP端点提交数据。 该服务不支持REST连接器的互相SSL以及SOAP数据源的基于x509证书的身份验证。
+
+* Formsas a Cloud Service允许将Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支持常规CRUD（创建、读取、更新和删除）操作的服务用作数据存储，同时支持Open API规范2.0和Open API规范。 该服务还支持JDBC连接器。
 
 +++
 
