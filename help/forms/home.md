@@ -3,7 +3,7 @@ title: ' [!DNL AEM Forms] as a Cloud Service 简介'
 description: 探索 AEM Forms 并了解它如何帮助您生成业务就绪的文档和表单内容。了解 Platform-as-a-Service (PaaS)，如何管理企业级数字表单和业务流程，以及如何将 Forms 连接到当前数据源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
+source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 25%
@@ -20,7 +20,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供云原生的Platf
 
 该企业可使用 [!DNL AEM Forms] as a Cloud Service 创建数字表单、将表单连接到现有数据源、将表单与 [!DNL Adobe Sign] 集成以将电子签名添加到表单、生成记录文档 (DoR)，从而将提交的表单存档为 PDF 文件。该企业还可使用该服务将现有的 PDF 表单转换为数字表单。
 
-![数据收集 — 响应式表单设计](/help/forms/assets/data-collection.jpeg)
+![数据收集 — 响应式表单设计](/help/forms/assets/data-collection.jpeg){width="40%"}
 响应式表单设计
 
 在大型企业中，表单通常只创建一次，然后通过复制到内容管理系统来重复使用。 保持大型表单数据库的最新状态并使其可被发现，可能是一项相当大的挑战。 AEM提供了可自定义的Forms门户，可确保客户通过Web和移动渠道查找和访问所需的表单。
@@ -34,7 +34,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供云原生的Platf
 个性化文档（如收据、欢迎工具包和报表）很容易生成。 组织可以将流量引导至个性化的Web门户，从而导致注册或购买其他服务。
 
 
-![个性化通信 — 响应式设计](/help/forms/assets/personalized-communication.jpeg)
+![个性化通信 — 响应式设计](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 个性化发票
 
 这项服务始终最新、可用，且在不断学习。组织可以使用 [!DNL AEM Forms] as a Cloud Service，并在云中获取所有这些功能，而无需任何本地基础架构。 这项服务还将企业从复杂的升级周期中解放出来，因为它会持续更新最新功能。
