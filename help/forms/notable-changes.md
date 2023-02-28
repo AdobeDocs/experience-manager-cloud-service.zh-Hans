@@ -3,9 +3,9 @@ title: AEM 6.5 Forms与AEM云服务之间的更改内容
 description: 您是Experience Manager Forms用户并且希望升级到Adobe Experience Manager Formsas a Cloud Service吗？ 了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
+source-git-commit: 2a464a0a11396a1948ba7211d5c0534769e6659c
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1177'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 2%
 +++
 
 
-+++ 7.HTML5Forms(移动Forms)
++++ 7.HTML5Forms
 
 * 该服务不支持HTML5 Forms(Mobile Forms)。 如果您将基于XDP的表单渲染为HTML5 Forms，则可以继续在AEM 6.5 Forms上使用该功能。
 
