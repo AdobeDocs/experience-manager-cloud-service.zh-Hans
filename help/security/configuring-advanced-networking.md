@@ -2,8 +2,8 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: ht
+source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 
@@ -488,7 +488,7 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
     <td>来自 VPN 的连接将在 CDN 上显示为来自此 IP。要仅允许来自 VPN 的连接进入 AEM，请将 Cloud Manager 配置为仅允许此 IP 并阻止其他所有流量。有关详细信息，请参阅“将传入限制为 VPN 连接”。</td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>不适用</td>
     <td>AEM 侧 VPN 网关的 IP。客户的网络工程团队可以使用此项来仅允许源自特定 IP 地址的 VPN 连接进入其 VPN 网关。 </td>
   </tr>
