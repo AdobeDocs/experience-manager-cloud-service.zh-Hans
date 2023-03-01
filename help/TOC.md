@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '3946'
+source-wordcount: '3952'
 ht-degree: 95%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 95%
    + [文档历程](/help/journey-documentation/documentation-journeys.md)
 + 发行说明 {#release-notes}
    + [版本信息](/help/release-notes/home.md)
-   + AEMaCS功能发行说明 {#release-notes}
+   + AEMaaCS功能发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
          + [2022.10.0 版发行说明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
@@ -67,7 +67,7 @@ ht-degree: 95%
          + [2020.4.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + AEMaCS维护发行说明 {#maintenance}
+   + AEMaaCS维护发行说明 {#maintenance}
       + [最新维护发行说明](/help/release-notes/maintenance/latest.md)
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
@@ -509,9 +509,8 @@ ht-degree: 95%
    + 设置和迁移 {#setup-configure-migrate}
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
-      + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
-      + [迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [迁移自 [!DNL AEM 6.5 Forms] 或早于 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
    + 集成 {#integrate}
@@ -536,7 +535,7 @@ ht-degree: 95%
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
             + [为自适应表单创建主题 — 核心组件](/help/forms/using-themes-in-core-components.md)
             + [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)
-      + 创作自适应Forms — 基础组件 {#authoring-adaptive-forms-foundation-components}
+      + 创作自适应Forms - Foundation组件 {#authoring-adaptive-forms-foundation-components}
          + 将PDF forms转换为自适应Forms {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
             + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
@@ -548,14 +547,13 @@ ht-degree: 95%
             + [创建主题](/help/forms/themes.md)
             + [参考资产](/help/forms/reference-assets.md)
             + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [使用 Forms Designer](/help/forms/use-forms-designer.md)
             + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
             + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
             + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
             + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
-            + [向自适应表单添加脚注支持](/help/forms/footnotes-richtextsupport.md)
+            + [将脚注支持添加到自适应表单](/help/forms/footnotes-richtextsupport.md)
          + 配置版面并将样式应用于自适应表单{#configure-layout-of-an-adaptive-form}
             + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式调整组件大小](/help/forms/resize-using-layout-mode.md)
@@ -579,15 +577,17 @@ ht-degree: 95%
          + 提高自适应表单的可访问性 {#accessible-adaptive-forms}
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
-         + [创建和管理审阅](/help/forms/create-reviews-forms.md)
-   + Forms中心工作流 {#create-form-centric-workflows}
+         + [创建和管理审核](/help/forms/create-reviews-forms.md)
+   + 以Forms为中心的工作流 {#create-form-centric-workflows}
       + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
    + 通信 API {#using-communications}
-      + [通信API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Communications API简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Communications API – 同步处理](/help/forms/aem-forms-cloud-service-communications.md)
       + [Communications API – 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
+      + [使用Forms Designer创建模板](/help/forms/use-forms-designer.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
    + 开发人员API参考 {#aem-forms-developer-api-reference}
@@ -699,7 +699,7 @@ ht-degree: 95%
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [持久 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md)
       + [优化GraphQL查询](/help/headless/graphql-api/graphql-optimization.md)
-      + [更新内容片段以优化GraphQL过滤](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [更新内容片段以优化GraphQL筛选](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
    + [内容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hans)
    + 安全性 {#security}
