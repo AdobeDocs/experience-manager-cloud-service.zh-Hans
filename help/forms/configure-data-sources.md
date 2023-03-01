@@ -1,11 +1,11 @@
 ---
 title: 如何配置数据源？
-description: Experience Manager Forms数据集成允许您配置不同的数据源并将其连接到不同的数据源。 了解如何将RESTful Web服务、基于SOAP的Web服务和OData服务配置为数据源，并使用它们创建表单数据模型。
+description: Experience Manager Forms数据集成允许您配置并连接到不同的数据源。 了解如何将RESTful Web服务、基于SOAP的Web服务和OData服务配置为数据源，并使用它们创建表单数据模型。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2139'
 ht-degree: 2%
@@ -16,17 +16,17 @@ ht-degree: 2%
 
 ![数据集成](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 数据集成允许您配置不同的数据源并将其连接到不同的数据源。 支持开箱即用的以下类型：
+[!DNL Experience Manager Forms] 数据集成允许您配置并连接到不同的数据源。 支持开箱即用的以下类型：
 
-* 关系数据库 — MySQL、 [!DNL Microsoft SQL Server], [!DNL IBM DB2]和 [!DNL Oracle RDBMS]
+* 关系数据库 — MySQL、 [!DNL Microsoft SQL Server]， [!DNL IBM DB2]、和 [!DNL Oracle RDBMS]
 * RESTful Web服务
 * 基于SOAP的Web服务
 * OData服务（版本4.0）
 * Microsoft® Dynamics
 * SalesForce
-* Microsoft® Azure Blob Storage
+* Microsoft® Azure Blob存储
 
-数据集成支持开箱即用的OAuth2.0、基本身份验证和API密钥身份验证类型，并允许实施自定义身份验证以访问Web服务。 而RESTful、基于SOAP和OData服务在 [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> 和连接器 [!DNL Experience Manager] 用户配置文件配置在 [!DNL Experience Manager] web控制台。
+数据集成支持现成的OAuth2.0、基本身份验证和API密钥身份验证类型，并允许实施用于访问Web服务的自定义身份验证。 在中配置RESTful、基于SOAP和OData服务的同时 [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> 和连接器 [!DNL Experience Manager] 用户配置文件配置于 [!DNL Experience Manager] Web控制台。
 
 >[!NOTE]
 >
@@ -36,28 +36,28 @@ ht-degree: 2%
 
 ### 前提条件
 
-在使用 [!DNL Experience Manager] Web控制台配置中，必须执行以下操作：
-* [通过cloud manager API启用高级网络](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下会禁用端口。
+在使用配置关系数据库之前 [!DNL Experience Manager] Web控制台配置，必须：
+* [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下端口处于禁用状态。
 * [在Maven中添加JDBC驱动程序依赖项](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
 ### 配置关系数据库的步骤
 
-您可以使用 [!DNL Experience Manager] Web控制台配置。 执行以下操作：
+可以使用以下方式配置关系数据库 [!DNL Experience Manager] Web控制台配置。 执行以下操作：
 
-1. 转到 [!DNL Experience Manager] 网站控制台 `https://server:host/system/console/configMgr`.
-1. 定位 **[!UICONTROL Day Commons JDBC连接池]** 配置。 点按以在编辑模式下打开配置。
+1. 转到 [!DNL Experience Manager] Web控制台位于 `https://server:host/system/console/configMgr`.
+1. 查找 **[!UICONTROL Day Commons JDBC连接池]** 配置。 点按以在编辑模式下打开配置。
 
    ![JDBC连接器池](/help/forms/assets/jdbc_connector.png)
 
 1. 在配置对话框中，指定要配置的数据库的详细信息，例如：
 
-   * JDBC驱动程序的Java™类名称
+   * JDBC驱动程序的Java™类名
    * JDBC连接URI
-   * 与JDBC驱动程序建立连接的用户名和密码
-   * 在 **[!UICONTROL 验证查询]** 字段来验证池中的连接。 查询必须至少返回一行。 根据您的数据库，指定以下任一项：
-      * 选择1（MySQL和MS SQL）
-      * 从双(Oracle)中选择1
+   * 用于与JDBC驱动程序建立连接的用户名和密码
+   * 在中指定SQL SELECT查询 **[!UICONTROL 验证查询]** 用于验证池中的连接的字段。 查询必须至少返回一行。 根据您的数据库，指定以下选项之一：
+      * SELECT 1 （MySQL和MS SQL）
+      * 从双选件中选择1(Oracle)
    * 数据源的名称
 
    用于配置关系数据库的示例字符串：
@@ -70,11 +70,11 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 请参阅 [使用JDBC DataSourcePool的SQL连接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以了解更多详细信息。
+   > 参考 [使用JDBC数据源池的SQL连接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以了解更多详细信息。
 
 1. 点按 **[!UICONTROL 保存]** 以保存配置。
 
-现在，您可以将配置的关系数据库与表单数据模型一起使用。
+现在，您可以将配置的关系数据库与表单数据模型结合使用。
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -99,49 +99,49 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## 为云服务配置配置文件夹 {#cloud-folder}
 
-为RESTful、SOAP和OData服务配置云服务时，需要配置云服务文件夹。
+配置RESTful、SOAP和OData服务的云服务需要配置云服务文件夹。
 
-中的所有云服务配置 [!DNL Experience Manager] 在 `/conf` 文件夹 [!DNL Experience Manager] 存储库。 默认情况下， `conf` 文件夹包含 `global` 您可以在其中创建云服务配置的文件夹。 但是，您必须为云配置手动启用它。 您还可以在 `conf` 创建和组织云服务配置。
+中的所有云服务配置 [!DNL Experience Manager] 于综合全面收益表内综合入账。 `/conf` 文件夹位置 [!DNL Experience Manager] 存储库。 默认情况下， `conf` 文件夹包含 `global` 可在其中创建Cloud Service配置的文件夹。 但是，您必须为云配置手动启用它。 您还可以在以下位置创建其他文件夹 `conf` 创建和组织云服务配置。
 
 要为云服务配置配置文件夹，请执行以下操作：
 
-1. 转到 **[!UICONTROL 工具>常规>配置浏览器]**.
-   * 请参阅 [配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 文档以了解更多信息。
-1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤以为云服务配置创建和配置其他文件夹。
+1. 转到 **[!UICONTROL “工具”>“常规”>“配置浏览器”]**.
+   * 请参阅 [配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 文档，以了解更多信息。
+1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤为云服务配置创建和配置其他文件夹。
 
-   1. 在 **[!UICONTROL 配置浏览器]**，选择 `global` 文件夹，然后点按 **[!UICONTROL 属性]**.
+   1. 在 **[!UICONTROL 配置浏览器]**，选择 `global` 文件夹并点按 **[!UICONTROL 属性]**.
 
    1. 在 **[!UICONTROL 配置属性]** 对话框，启用 **[!UICONTROL 云配置]**.
 
    1. 点按 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
 
 1. 在 **[!UICONTROL 配置浏览器]**，点按 **[!UICONTROL 创建]**.
-1. 在 **[!UICONTROL 创建配置]** 对话框，为文件夹指定标题，然后启用 **[!UICONTROL 云配置]**.
-1. 点按 **[!UICONTROL 创建]** 创建云服务配置启用的文件夹。
+1. 在 **[!UICONTROL 创建配置]** 对话框，指定文件夹的标题，然后启用 **[!UICONTROL 云配置]**.
+1. 点按 **[!UICONTROL 创建]** 以创建为云服务配置启用的文件夹。
 
 ## 配置RESTful Web服务 {#configure-restful-web-services}
 
-RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/) JSON或YAML格式 [!DNL Swagger] 定义文件。 要在 [!DNL Experience Manager] as a Cloud Service，确保您 [!DNL Swagger] 文件([Swagger版本2.0](https://swagger.io/specification/v2/))或 [!DNL Swagger] 文件([Swagger版本3.0](https://swagger.io/specification/v3/))或托管文件的URL上。
+可以使用对RESTful Web服务进行描述 [Swagger规范](https://swagger.io/specification/v2/) JSON或YAML格式的内容 [!DNL Swagger] 定义文件。 在中配置RESTful Web服务 [!DNL Experience Manager] as a Cloud Service，请确保您拥有 [!DNL Swagger] 文件([Swagger版本2.0](https://swagger.io/specification/v2/))或 [!DNL Swagger] 文件([Swagger版本3.0](https://swagger.io/specification/v3/))，或托管文件的URL上标记的文件路径。
 
 ### 为Open API规范版本2.0配置RESTful服务 {#configure-restful-services-open-api-2.0}
 
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+1. 转到 **[!UICONTROL “工具”>“Cloud Services”>“数据源”]**. 点按以选择要创建云配置的文件夹。
 
-   请参阅 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+   参见 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为Cloud Service配置创建和配置文件夹的信息。
 
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL RESTful服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
+1. 点按 **[!UICONTROL 创建]** 以打开 **[!UICONTROL 创建数据源配置向导]**. 指定配置的名称和（可选）标题，选择 **[!UICONTROL RESTful服务]** 从 **[!UICONTROL 服务类型]** 下拉列表（可选）浏览并选择配置的缩略图图像，然后点按 **[!UICONTROL 下一个]**.
 1. 为RESTful服务指定以下详细信息：
 
-   * 从 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 文件。
-   * 基于[!DNL  Swagger] 源输入。以下字段已预填充值：
+   * 从中选择URL或文件 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 从本地文件系统删除文件。
+   * 基于[!DNL  Swagger] 源输入。则以下字段已预填充了值：
 
-      * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于 [!DNL Swagger] 来源。
+      * 方案： REST API使用的传输协议。 下拉列表中显示的方案类型数取决于 [!DNL Swagger] 源。
       * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
       * 基本路径：所有API路径的URL前缀。 它是一个可选字段。\
          如有必要，请编辑这些字段的预填充值。
-   * 选择身份验证类型（无、OAuth2.0、基本身份验证、API密钥或自定义身份验证）以访问RESTful服务，并相应地提供身份验证详细信息。
+   * 选择身份验证类型 — 无、OAuth2.0、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
-   如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
+   如果您选择 **[!UICONTROL API密钥]** 作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从中选择以下选项之一 **[!UICONTROL 位置]** 下拉列表，并在中指定标头的名称或查询参数 **[!UICONTROL 参数名称]** 字段。
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
@@ -149,49 +149,49 @@ RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/)
 
 ### 为Open API规范版本3.0配置RESTful服务 {#configure-restful-services-open-api-3.0}
 
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+1. 转到 **[!UICONTROL “工具”>“Cloud Services”>“数据源”]**. 点按以选择要创建云配置的文件夹。
 
-   请参阅 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+   参见 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为Cloud Service配置创建和配置文件夹的信息。
 
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL RESTful服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
+1. 点按 **[!UICONTROL 创建]** 以打开 **[!UICONTROL 创建数据源配置向导]**. 指定配置的名称和（可选）标题，选择 **[!UICONTROL RESTful服务]** 从 **[!UICONTROL 服务类型]** 下拉列表（可选）浏览并选择配置的缩略图图像，然后点按 **[!UICONTROL 下一个]**.
 1. 为RESTful服务指定以下详细信息：
 
-   * 从 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger 3.0 URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 文件。
-   * 基于[!DNL  Swagger] 源输入，显示与目标服务器的连接信息。
-   * 选择身份验证类型（无、OAuth2.0、基本身份验证、API密钥或自定义身份验证）以访问RESTful服务，并相应地提供身份验证详细信息。
+   * 从中选择URL或文件 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger 3.0 URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 从本地文件系统删除文件。
+   * 基于[!DNL  Swagger] 源输入，将显示与目标服务器的连接信息。
+   * 选择身份验证类型 — 无、OAuth2.0、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
-   如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
+   如果您选择 **[!UICONTROL API密钥]** 作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从中选择以下选项之一 **[!UICONTROL 位置]** 下拉列表，并在中指定标头的名称或查询参数 **[!UICONTROL 参数名称]** 字段。
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 点按 **[!UICONTROL 创建]** 为RESTful服务创建云配置。
 
-RESTful服务Open API规范版本3.0不支持的某些操作包括：
+RESTful服务Open API规范版本3.0不支持的一些操作包括：
 * 回调
 * oneof/anyof
 * 远程引用
 * 链接
-* 对于单个操作的不同MIME类型，请求主体不同
+* 针对单次操作的不同MIME类型的不同请求主体
 
-您可以参考 [OpenAPI 3.0规范](https://swagger.io/specification/v3/) 以了解详细信息。
+您可以引用 [OpenAPI 3.0规范](https://swagger.io/specification/v3/) 以了解详细信息。
 
-### 形成数据模型HTTP客户端配置以优化性能 {#fdm-http-client-configuration}
+### 表单数据模型HTTP客户端配置以优化性能 {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] 由于数据源包含用于性能优化的HTTP客户端配置，因此在与RESTful Web服务集成时会生成数据模型。
+[!DNL Experience Manager Forms] 表单数据模型，因为数据源包括用于性能优化的HTTP客户端配置。
 
-设置 **[!UICONTROL REST数据源的表单数据模型HTTP客户端配置]** 指定正则表达式的配置：
+设置以下属性 **[!UICONTROL REST数据源的表单数据模型HTTP客户端配置]** 用于指定正则表达式的配置：
 
-* 使用 `http.connection.max.per.route` 属性来设置表单数据模型与RESTful Web服务之间允许的最大连接数。 默认值为20个连接。
+* 使用 `http.connection.max.per.route` 属性，用于设置表单数据模型和RESTful Web服务之间允许的最大连接数。 默认值为20个连接。
 
-* 使用 `http.connection.max` 属性，以指定每个路由允许的连接的最大数。 默认值为40个连接。
+* 使用 `http.connection.max` 属性，指定每个路由允许的最大连接数。 默认值为40个连接。
 
-* 使用 `http.connection.keep.alive.duration` 属性来指定持续时间，持久HTTP连接将保持活动状态。 默认值为15秒。
+* 使用 `http.connection.keep.alive.duration` 用于指定持续HTTP连接保持活动状态的持续时间的属性。 默认值为15秒。
 
-* 使用 `http.connection.timeout` 属性以指定持续时间，其 [!DNL Experience Manager Forms] 服务器等待连接建立。 默认值为10秒。
+* 使用 `http.connection.timeout` 属性，指定持续时间，其中 [!DNL Experience Manager Forms] 服务器等待建立连接。 默认值为10秒。
 
-* 使用 `http.socket.timeout` 属性，以指定两个数据包之间不活动的最长时间段。 默认值为30秒。
+* 使用 `http.socket.timeout` 属性，指定两个数据包之间的最长非活动时间段。 默认值为30秒。
 
-以下JSON文件显示一个示例：
+以下JSON文件显示了一个示例：
 
 
 ```json
@@ -209,45 +209,45 @@ RESTful服务Open API规范版本3.0不支持的某些操作包括：
 
 1. 在 [!UICONTROL REST数据源的表单数据模型HTTP客户端配置] 对话框：
 
-   * 指定表单数据模型与RESTful Web服务之间允许的最大连接数 **[!UICONTROL 总连接限制]** 字段。 默认值为20个连接。
+   * 在中指定表单数据模型和RESTful Web服务之间允许的最大连接数 **[!UICONTROL 总连接限制]** 字段。 默认值为20个连接。
 
-   * 指定中每个路由允许的最大连接数 **[!UICONTROL 每条路由的连接限制]** 字段。 默认值为两个连接。
+   * 指定中每个路由允许的最大连接数 **[!UICONTROL 基于每个路由的连接限制]** 字段。 缺省值为两个连接。
 
-   * 在 **[!UICONTROL 保持活力]** 字段。 默认值为15秒。
+   * 指定持续HTTP连接保持活动状态的持续时间，在 **[!UICONTROL 保持活动状态]** 字段。 默认值为15秒。
 
-   * 指定持续时间，持续时间 [!DNL Experience Manager Forms] 服务器等待连接建立，在 **[!UICONTROL 连接超时]** 字段。 默认值为10秒。
+   * 指定持续时间，其中 [!DNL Experience Manager Forms] 服务器等待建立连接，在 **[!UICONTROL 连接超时]** 字段。 默认值为10秒。
 
-   * 指定 **[!UICONTROL 套接字超时]** 字段。 默认值为30秒。
+   * 指定中两个数据包之间的最长不活动时间段 **[!UICONTROL 套接字超时]** 字段。 默认值为30秒。
 
 ## 配置SOAP Web服务 {#configure-soap-web-services}
 
-使用 [Web服务描述语言(WSDL)规范](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] 不支持RPC样式WSDL模型。
+使用对基于SOAP的Web服务进行描述 [Web服务描述语言(WSDL)规范](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] 不支持RPC样式WSDL模型。
 
-要在 [!DNL Experience Manager] as a Cloud Service的是，确保您具有Web服务的WSDL URL，并执行以下操作：
+在中配置基于SOAP的Web服务 [!DNL Experience Manager] as a Cloud Service，请确保您具有Web服务的WSDL URL，并执行以下操作：
 
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+1. 转到 **[!UICONTROL “工具”>“Cloud Services”>“数据源”]**. 点按以选择要创建云配置的文件夹。
 
-   请参阅 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+   参见 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为Cloud Service配置创建和配置文件夹的信息。
 
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL SOAP Web服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
+1. 点按 **[!UICONTROL 创建]** 以打开 **[!UICONTROL 创建数据源配置向导]**. 指定配置的名称和（可选）标题，选择 **[!UICONTROL SOAP Web服务]** 从 **[!UICONTROL 服务类型]** 下拉列表（可选）浏览并选择配置的缩略图图像，然后点按 **[!UICONTROL 下一个]**.
 1. 为SOAP Web服务指定以下内容：
 
    * Web服务的WSDL URL。
-   * 服务端点. 在此字段中指定一个值，以覆盖WSDL中提到的服务端点。
-   * 选择身份验证类型（无、OAuth2.0、基本身份验证或自定义身份验证）以访问SOAP服务，并相应地提供身份验证的详细信息。
+   * 服务端点. 在此字段中指定一个值以覆盖WSDL中提到的服务端点。
+   * 选择身份验证类型 — 无、OAuth2.0、基本身份验证或自定义身份验证 — 以访问SOAP服务，并相应地提供身份验证的详细信息。
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
       <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 点按 **[!UICONTROL 创建]** 为SOAP web服务创建云配置。
+1. 点按 **[!UICONTROL 创建]** 创建SOAP Web服务的云配置。
 
-### 允许在SOAP Web服务WSDL中使用import语句 {#enable-import-statements}
+### 在SOAP Web服务WSDL中启用导入语句的使用 {#enable-import-statements}
 
-可以指定一个正则表达式作为绝对URL的过滤器，该绝对URL允许作为SOAP Web服务WSDL中的导入语句。 默认情况下，此字段中没有值。 因此， [!DNL Experience Manager] 会阻止WSDL中可用的所有import语句。 如果您指定 `.*` 作为此字段中的值， [!DNL Experience Manager] 允许所有import语句。
+可以指定用作绝对URL筛选器的正则表达式，这些绝对URL允许作为SOAP Web服务WSDL中的导入语句。 默认情况下，此字段中没有值。 因此， [!DNL Experience Manager] 阻止WSDL中所有可用的import语句。 如果您指定 `.*` 作为该字段中的值， [!DNL Experience Manager] 允许所有import语句。
 
-设置 `importAllowlistPattern` 属性 **[!UICONTROL 表单数据模型SOAP Web服务导入允许列表]** 用于指定正则表达式的配置。 以下JSON文件显示一个示例：
+设置 `importAllowlistPattern` 的属性 **[!UICONTROL 允许列表表单数据模型SOAP Web服务导入]** 用于指定正则表达式的配置。 以下JSON文件显示了一个示例：
 
 
 ```json
@@ -261,28 +261,27 @@ RESTful服务Open API规范版本3.0不支持的某些操作包括：
 
 ## 配置OData服务 {#config-odata}
 
-OData服务由其服务根URL标识。 在 [!DNL Experience Manager] as a Cloud Service的是，确保您具有服务的服务根URL，并执行以下操作：
+OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience Manager] as a Cloud Service，请确保您拥有服务的服务根URL，并执行以下操作：
 
 >[!NOTE]
 >
 > 表单数据模型支持 [OData版本4](https://www.odata.org/documentation/).
->有关配置的分步指南 [!DNL Microsoft® Dynamics 365]，请参阅 [[!DNL Microsoft® Dynamics] OData配置](ms-dynamics-odata-configuration.md).
+>有关配置的分步指南 [!DNL Microsoft® Dynamics 365]，在线或内部部署，请参阅 [[!DNL Microsoft® Dynamics] OData配置](ms-dynamics-odata-configuration.md).
 
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+1. 转到 **[!UICONTROL “工具”>“Cloud Services”>“数据源”]**. 点按以选择要创建云配置的文件夹。
 
-   请参阅 [为云服务配置配置文件夹](#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+   参见 [为云服务配置配置文件夹](#cloud-folder) 有关为Cloud Service配置创建和配置文件夹的信息。
 
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL OData服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
+1. 点按 **[!UICONTROL 创建]** 以打开 **[!UICONTROL 创建数据源配置向导]**. 指定配置的名称和（可选）标题，选择 **[!UICONTROL OData服务]** 从 **[!UICONTROL 服务类型]** 下拉列表（可选）浏览并选择配置的缩略图图像，然后点按 **[!UICONTROL 下一个]**.
 1. 为OData服务指定以下详细信息：
 
    * 要配置的OData服务的服务根URL。
-   * 选择身份验证类型（无、OAuth2.0、基本身份验证、API密钥或自定义身份验证）以访问OData服务，并相应地提供身份验证的详细信息。
+   * 选择身份验证类型 — 无、OAuth2.0、基本身份验证、API密钥或自定义身份验证 — 以访问OData服务，并相应地提供身份验证的详细信息。
 
-   如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
+   如果您选择 **[!UICONTROL API密钥]** 作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从中选择以下选项之一 **[!UICONTROL 位置]** 下拉列表，并在中指定标头的名称或查询参数 **[!UICONTROL 参数名称]** 字段。
 
    >[!NOTE]
-   >
-   >您必须选择OAuth 2.0身份验证类型才能连接 [!DNL Microsoft® Dynamics] 使用OData端点作为服务根的服务。
+   您必须选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft® Dynamics] 使用OData端点作为服务根的服务。
 
 1. 点按 **[!UICONTROL 创建]** 为OData服务创建云配置。
 
@@ -301,4 +300,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 下面的步骤 {#next-steps}
 
-您已配置数据源。 接下来，您可以创建表单数据模型，或者如果已经创建了没有数据源的表单数据模型，则可以将其与您配置的数据源相关联。 请参阅 [创建表单数据模型](create-form-data-models.md) 以了解详细信息。
+您已配置数据源。 接下来，您可以创建表单数据模型，或者，如果您已创建没有数据源的表单数据模型，则可以将其与配置的数据源关联。 参见 [创建表单数据模型](create-form-data-models.md) 了解详细信息。
