@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的内容片段模型创建用作所有 Head
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: fa36470e50abdf6dd019a91665945ff6e68e40c2
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## 创建模型 {#create-model}
 
-内容片段模型控制台将在新选项卡中打开。将内容片段模型控制台想象为您的模型库，您可以在其中创建新模型和管理现有模型。
+内容片段模型控制台将在新选项卡中打开。 将内容片段模型控制台视为模型库，您可以在其中创建新模型和管理现有模型。
 
 1. 单击屏幕右上角的&#x200B;**创建**&#x200B;按钮以开始创建内容片段模型。
 
