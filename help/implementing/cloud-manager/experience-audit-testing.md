@@ -2,10 +2,10 @@
 title: 体验审核测试
 description: 了解体验审核如何验证您的部署过程，并帮助确保部署的更改符合性能、可访问性、最佳实践和 SEO 的基线标准。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +33,10 @@ Cloud Manager 中的体验审核可确保最终用户在网站上的体验达到
 
 体验审核由 Google Lighthouse 提供支持，这是 Google 的开源工具，可在所有 Cloud Manager 生产管道中使用。
 
+>[!TIP]
+>
+>您可以配置在执行以下操作时体验审核中包含哪些页面 [设置您的管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## 了解体验审核结果 {#understanding-experience-audit-results}
 
 体验审核通过[生产管道执行页面提供聚合和详细的页面级测试结果。](/help/implementing/cloud-manager/deploy-code.md)
@@ -59,7 +63,6 @@ Cloud Manager 中的体验审核可确保最终用户在网站上的体验达到
 * **不适用** – 没有可供比较的先前分数。
 
 ![了解体验审核结果](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### 页面级别分数 {#page-level-scores}
 
