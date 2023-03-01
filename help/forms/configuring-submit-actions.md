@@ -1,29 +1,29 @@
 ---
 title: 如何为自适应表单配置提交操作
-description: 自适应表单提供了多个提交操作。 提交操作定义提交后如何处理自适应表单。 您可以使用内置的提交操作或创建您自己的操作。
+description: 自适应表单提供多个提交操作。 提交操作定义提交后如何处理自适应表单。 您可以使用内置的提交操作或创建自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
+source-git-commit: 7a608304dc93e53815b488de4087f26e346be4b5
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3133'
 ht-degree: 2%
 
 ---
 
 # 自适应表单提交操作 {#configuring-the-submit-action}
 
-用户单击 **[!UICONTROL 提交]** 按钮。 自适应Forms提供了一些开箱即用的提交操作。 现成可用的提交操作包括：
+提交操作在用户单击 **[!UICONTROL 提交]** 按钮。 自适应Forms提供了一些开箱即用的提交操作。 现成的“提交操作”包括：
 
 * [提交到REST端点](#submit-to-rest-endpoint)
 * [发送电子邮件](#send-email)
 * [使用表单数据模型提交](#submit-using-form-data-model)
-* [调用AEM工作流](#invoke-an-aem-workflow)
+* [调用AEM Workflow](#invoke-an-aem-workflow)
 * [提交到 SharePoint](#submit-to-sharedrive)
 * [提交到 OneDrive](#submit-to-onedrive)
 * [提交到 Azure Blob Storage](#azure-blob-storage)
 
-您还可以 [扩展默认的提交操作](custom-submit-action-form.md) 创建您自己的提交操作。
+您还可以 [扩展默认提交操作](custom-submit-action-form.md) 以创建您自己的提交操作。
 
-您可以在 **[!UICONTROL 提交]** 自适应表单容器属性的部分。
+您可以在中配置提交操作 **[!UICONTROL 提交]** 部分（位于侧栏中）。
 
 ![配置提交操作](assets/submission.png)
 
@@ -52,67 +52,67 @@ ht-degree: 2%
 
 ## 提交到REST端点 {#submit-to-rest-endpoint}
 
-使用 **[!UICONTROL 提交到REST端点]** 操作将提交的数据发布到rest URL。 URL可以是内部服务器（呈现表单的服务器）或外部服务器。
+使用 **[!UICONTROL 提交到REST端点]** 将提交的数据发布到rest URL的操作。 URL可以是内部（渲染表单的服务器）或外部服务器。
 
-要将数据发布到内部服务器，请提供资源的路径。 数据将发布到资源的路径中。 例如， /content/restEndPoint。 对于这种帖子请求，使用提交请求的验证信息。
+要将数据发布到内部服务器，请提供资源的路径。 数据被发布为资源的路径。 例如，/content/restEndPoint。 对于此类post请求，使用提交请求的身份验证信息。
 
-要将数据发布到外部服务器，请提供URL。 URL的格式为 `https://host:port/path_to_rest_end_point`. 确保以匿名方式配置路径以处理POST请求。
+要向外部服务器发布数据，请提供URL。 URL的格式为 `https://host:port/path_to_rest_end_point`. 确保将路径配置为匿名处理POST请求。
 
 ![作为感谢页面参数传递的字段值的映射](assets/post-enabled-actionconfig.png)
 
-在上例中，用户在 `textbox` 使用参数捕获 `param1`. 用于发布使用 `param1` 为：
+在上面的示例中，用户在 `textbox` 使用参数捕获 `param1`. 用于发布使用捕获的数据的语法 `param1` 为：
 
 `String data=request.getParameter("param1");`
 
-同样，用于发布XML数据和附件的参数也是 `dataXml` 和 `attachments`.
+同样，用于发布XML数据和附件的参数包括 `dataXml` 和 `attachments`.
 
-例如，在脚本中使用这两个参数将数据解析到其余的端点。 使用以下语法来存储和解析数据：
+例如，在脚本中使用这两个参数将数据解析到rest端点。 您可以使用以下语法来存储和解析数据：
 
 `String data=request.getParameter("dataXml");`
 `String att=request.getParameter("attachments");`
 
-在本例中， `data` 存储XML数据， `att` 存储附件数据。
+在此示例中， `data` 存储XML数据，以及 `att` 存储附件数据。
 
-的 **[!UICONTROL 提交到REST端点]** 提交操作会将表单中填写的数据作为HTTPGET请求的一部分提交到配置的确认页面。 您可以添加要请求的字段名称。 请求的格式为：
+此 **[!UICONTROL 提交到REST端点]** 提交操作在HTTPGET请求过程中，将表单中填写的数据提交到配置的确认页面。 您可以添加要请求的字段的名称。 请求的格式为：
 
 `{fieldName}={request parameter name}`
 
-如下图所示， `param1` 和 `param2` 将作为参数进行传递，并且值复制自 **文本框** 和 **数字框** 字段。
+如下图所示， `param1` 和 `param2` 作为参数传递，其值复制自 **文本框** 和 **numericbox** 用于执行下一个操作的字段。
 
 ![配置Rest端点提交操作](assets/action-config.png)
 
-您还可以 **[!UICONTROL 启用POST请求]** 和提供用于发布请求的URL。 要向托管表单的AEM服务器提交数据，请使用与AEM服务器的根路径对应的相对路径。 例如：`/content/forms/af/SampleForm.html`。要向任何其他服务器提交数据，请使用绝对路径。
+您还可以 **[!UICONTROL 启用POST请求]** 并提供用于发布请求的URL。 要将数据提交到托管表单的AEM服务器，请使用与AEM服务器的根路径对应的相对路径。 例如, `/content/forms/af/SampleForm.html`. 要向任何其他服务器提交数据，请使用绝对路径。
 
 >[!NOTE]
 >
->要在REST URL中将字段作为参数传递，所有字段必须具有不同的元素名称，即使这些字段放置在不同的面板上也是如此。
+>要在REST URL中将这些字段作为参数传递，所有字段必须具有不同的元素名称，即使这些字段位于不同的面板上也是如此。
 
 ## 发送电子邮件 {#send-email}
 
-您可以使用 **[!UICONTROL 发送电子邮件]** 提交操作，以在成功提交表单时向一个或多个收件人发送电子邮件。 生成的电子邮件可以包含预定义格式的表单数据。 例如，在以下模板中，将从提交的表单数据中检索客户名称、送货地址、状态名称和邮政编码。
+您可以使用 **[!UICONTROL 发送电子邮件]** 提交操作可在成功提交表单时向一个或多个收件人发送电子邮件。 生成的电子邮件可以包含预定义格式的表单数据。 例如，在以下模板中，将从提交的表单数据中检索客户名称、送货地址、省/直辖市/自治区名称和邮政编码。
 
-    &quot;
+    ```
     
-    您好${customer_Name},
+    ${customer_Name}，您好：
     
-    以下是默认送货地址：
-    ${customer_name},
-    ${customer_Shipping_Address},
-    ${customer_state},
+    以下内容设置为您的默认送货地址：
+    ${customer_Name}，
+    ${customer_Shipping_Address}，
+    ${customer_State}，
     ${customer_ZIPCode}
     
-    敬
+    致敬，
     WKND
     
-    &quot;
+    ```
 
 >[!NOTE]
 >
-> * 所有表单字段必须具有不同的元素名称，即使这些字段放置在自适应表单的不同面板上也是如此。
-> * AEMas a Cloud Service要求对出站邮件进行加密。 默认情况下，禁用出站电子邮件。 要激活它，请将支持票证提交到 [请求访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+> * 所有表单字段必须具有不同的元素名称，即使这些字段位于自适应表单的不同面板上也是如此。
+> * AEMas a Cloud Service要求对出站邮件进行加密。 默认情况下禁用出站电子邮件。 要激活它，请将支持票证提交到 [请求访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 
-您还可以在电子邮件中包含附件和记录文档(DoR)。 启用 **[!UICONTROL 附加记录文档]** ，请配置自适应表单以生成记录文档(DoR)。 您可以启用选项，以从“自适应表单”属性生成记录文档。
+您还可以将附件和记录文档(DoR)包含到电子邮件中。 启用 **[!UICONTROL 附加记录文档]** 选项，配置自适应表单以生成记录文档(DoR)。 您可以启用选项以从自适应表单属性生成记录文档。
 
 
 
@@ -132,7 +132,7 @@ For information about how to configure the Submit to forms workflow Submit Actio
 
 ## 使用表单数据模型提交 {#submit-using-form-data-model}
 
-的 **[!UICONTROL 使用表单数据模型提交]** 提交操作会将表单数据模型中指定数据模型对象提交的自适应表单数据写入其数据源。 在配置提交操作时，您可以选择要将其提交的数据写回其数据源的数据模型对象。
+此 **[!UICONTROL 使用表单数据模型提交]** 提交操作将表单数据模型中指定数据模型对象的已提交自适应表单数据写入其数据源。 在配置提交操作时，您可以选择提交的数据要写回其数据源的数据模型对象。
 
 此外，您还可以使用表单数据模型和记录文档(DoR)将表单附件提交到数据源。 有关表单数据模型的信息，请参阅 [[!DNL AEM Forms] 数据集成](data-integration.md).
 
@@ -143,162 +143,162 @@ The **Forms Portal Submit Action** option makes form data available through an [
 
 For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
 
-## 调用AEM工作流 {#invoke-an-aem-workflow}
+## 调用AEM Workflow {#invoke-an-aem-workflow}
 
-的 **[!UICONTROL 调用AEM工作流]** 提交操作将自适应表单与 [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 提交表单后，关联的工作流将自动在创作实例上启动。 您可以将数据文件、附件和记录文档保存到工作流的有效负荷位置或变量中。 如果为外部数据存储标记了工作流并为外部数据存储配置了工作流，则只有变量选项可用。 您可以从可用于工作流模型的变量列表中进行选择。 如果在以后阶段而不是在创建工作流时将工作流标记为外部数据存储，请确保已设置所需的变量配置。
+此 **[!UICONTROL 调用AEM Workflow]** 提交操作将自适应表单与 [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 提交表单时，关联的工作流会在创作实例上自动启动。 可将数据文件、附件和记录文档保存到工作流的有效负荷位置或变量。 如果工作流标记为外部数据存储并配置为外部数据存储，则只有变量选项可用。 您可以从可用于工作流模型的变量列表中进行选择。 如果工作流在稍后阶段标记为外部数据存储，而不是在创建工作流时标记为外部数据存储，则请确保已设置所需的变量配置。
 
-提交操作会将以下内容放置在工作流的有效负载位置，或者如果将工作流标记为外部数据存储，则放置变量：
+提交操作将以下内容置于工作流的有效负荷位置，如果工作流标记为外部数据存储，则置于变量：
 
-* **数据文件**:它包含提交到自适应表单的数据。 您可以使用 **[!UICONTROL 数据文件路径]** 选项，以指定文件的名称和相对于有效负载的文件路径。 例如， `/addresschange/data.xml` 路径会创建名为 `addresschange` 并将其放置在有效载荷上。 您还可以仅指定 `data.xml` ，以便在不创建文件夹层次结构的情况下仅发送提交的数据。 如果工作流标记为外部数据存储，请使用变量选项，然后从可用于工作流模型的变量列表中选择变量。
+* **数据文件**：它包含提交到自适应表单的数据。 您可以使用 **[!UICONTROL 数据文件路径]** 选项，用于指定文件的名称以及相对于有效负荷的文件路径。 例如， `/addresschange/data.xml` path创建一个名为的文件夹 `addresschange` 并将其相对于有效负荷放置。 您也可仅指定 `data.xml` 只发送已提交的数据而不创建文件夹层次结构。 如果工作流标记为外部数据存储，请使用变量选项，并从工作流模型的可用变量列表中选择变量。
 
-* **附件**:您可以使用 **[!UICONTROL 附件路径]** 选项，以指定用于存储上传到自适应表单的附件的文件夹名称。 文件夹是相对于有效负载创建的。 如果工作流标记为外部数据存储，请使用变量选项，然后从可用于工作流模型的变量列表中选择变量。
+* **附件**：您可以使用 **[!UICONTROL 附件路径]** 选项，用于指定用于存储已上载到自适应表单的附件的文件夹名称。 将创建相对于有效负荷的文件夹。 如果工作流标记为外部数据存储，请使用变量选项，并从工作流模型的可用变量列表中选择变量。
 
-* **记录文档**:它包含为自适应表单生成的记录文档。 您可以使用 **[!UICONTROL 记录路径文档]** 选项，指定记录文档的名称和相对于有效负荷的文件路径。 例如， `/addresschange/DoR.pdf` 路径会创建名为 `addresschange` 相对于有效负载，并将 `DoR.pdf` 相对于有效载荷。 您还可以仅指定 `DoR.pdf` 以仅保存记录文档，而不创建文件夹层次结构。 如果工作流标记为外部数据存储，请使用变量选项，然后从可用于工作流模型的变量列表中选择变量。
+* **记录文档**：它包含为自适应表单生成的记录文档。 您可以使用 **[!UICONTROL 记录文档路径]** 用于指定记录文档文件的名称以及相对于有效负荷的文件路径的选项。 例如， `/addresschange/DoR.pdf` path创建一个名为的文件夹 `addresschange` 相对于有效负荷，并放置 `DoR.pdf` 相对于有效负荷。 您也可仅指定 `DoR.pdf` 仅保存记录文档，而不创建文件夹层次结构。 如果工作流标记为外部数据存储，请使用变量选项，并从工作流模型的可用变量列表中选择变量。
 
-在使用 **[!UICONTROL 调用AEM工作流]** 提交操作为 **[!UICONTROL AEM DS设置服务]** 配置：
+使用之前 **[!UICONTROL 调用AEM Workflow]** 提交操作为配置以下 **[!UICONTROL AEM DS设置服务]** 配置：
 
-* **[!UICONTROL 处理服务器URL]**:处理服务器是触发Forms或AEM工作流的服务器。 此URL可以与AEM创作实例或其他服务器的URL相同。
+* **[!UICONTROL 处理服务器URL]**：处理服务器是触发Forms或AEM Workflow的服务器。 这可以与AEM创作实例或其他服务器的URL相同。
 
-* **[!UICONTROL 处理服务器用户名]**:工作流用户的用户名
+* **[!UICONTROL 处理服务器用户名]**：工作流用户的用户名
 
-* **[!UICONTROL 处理服务器密码]**:工作流用户的密码
+* **[!UICONTROL 处理服务器密码]**：工作流用户的密码
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-的 **[!UICONTROL 提交到SharePoint]** 提交操作可将自适应表单与Microsoft SharePoint存储相关联。 您可以将表单数据文件、附件或记录文档提交到连接的Microsoft Sharepoint存储。 使用 **[!UICONTROL 提交到SharePoint]** 在自适应表单中提交操作：
+此 **[!UICONTROL 提交到SharePoint]** 提交操作可将自适应表单与Microsoft® SharePoint存储相关联。 您可以将表单数据文件、附件或记录文档提交到连接的Microsoft® Sharepoint存储。 要使用 **[!UICONTROL 提交到SharePoint]** 以自适应表单提交操作：
 
-1. [创建SharePoint配置](#create-a-sharepoint-configuration-create-sharepoint-configuration):它将AEM Forms与您的Microsoft Sharepoint存储相连。
-2. [在自适应表单中使用提交到SharePoint提交操作](#use-sharepoint-configuartion-in-af):它会将您的自适应表单连接到配置的Microsoft SharePoint。
+1. [创建SharePoint配置](#create-a-sharepoint-configuration-create-sharepoint-configuration)：用于将AEM Forms连接到您的Microsoft® Sharepoint存储。
+2. [在自适应表单中使用提交到SharePoint提交操作](#use-sharepoint-configuartion-in-af)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
 
 ### 创建SharePoint配置 {#create-sharepoint-configuration}
 
-要将AEM Forms连接到Microsoft Sharepoint存储，请执行以下操作：
+要将AEM Forms连接到Microsoft® Sharepoint存储，请执行以下操作：
 
-1. 转到 **AEM Forms作者** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL MicrosoftSharePoint]**.
-1. 选择 **[!UICONTROL MicrosoftSharePoint]**，则会被重定向到 **[!UICONTROL SharePoint浏览器]**.
-1. 选择 **配置容器**. 配置存储在选定的配置容器中。
-1. 单击&#x200B;**[!UICONTROL 创建]**。此时会出现SharePoint配置向导。
+1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. 一旦您选择 **[!UICONTROL Microsoft® SharePoint]**，您将被重定向到 **[!UICONTROL SharePoint浏览器]**.
+1. 选择 **配置容器**. 该配置将存储在选定的配置容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。此时将显示SharePoint配置向导。
    ![Sharepoint配置](/help/forms/assets/sharepoint_configuration.png)
-1. 指定 **[!UICONTROL 标题]**, **[!UICONTROL 客户端ID]**, **[!UICONTROL 客户端密钥]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft Azure门户访问您的应用程序。
-   * 在Microsoft Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. 替换 `[author-instance]` 和创作实例的URL。
-   * 添加API权限 `offline_access` 和 `Sites.Manage.All` 提供读/写权限。
-   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 替换 `<tenant-id>` 和 `tenant-id` 从Microsoft Azure门户访问您的应用程序。
+1. 指定 **[!UICONTROL 标题]**， **[!UICONTROL 客户端ID]**， **[!UICONTROL 客户端密码]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft®文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft® Azure门户访问您的应用程序。
+   * 在Microsoft® Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` 使用创作实例的URL。
+   * 添加API权限 `offline_access` 和 `Sites.Manage.All` 以提供读/写权限。
+   * 使用OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` 使用 `tenant-id` 从Microsoft® Azure门户访问您的应用程序。
 
    >[!NOTE]
    >
-   > 的 **客户端密码** 字段是必选字段或可选字段，具体取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密钥，则必须提供客户端密钥。
+   > 此 **客户端密码** 字段是必填字段还是可选字段取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密码，则必须提供客户端密码。
 
-1. 单击 **[!UICONTROL 连接]**. 成功连接时， `Connection Successful` 消息。
+1. 单击 **[!UICONTROL Connect]**. 成功连接后， `Connection Successful` 出现消息。
 
-1. 现在，选择 **SharePoint网站** > **文档库** > **SharePoint文件夹**，以保存数据。
+1. 现在，选择 **SharePoint站点** > **文档库** > **SharePoint文件夹**，以保存数据。
 
    >[!NOTE]
    >
-   >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 存在于选定的SharePoint站点。
-   >* 将文件夹创建为 `forms-ootb-storage-adaptive-forms-submission`，如果 `Documents` 通过单击 **创建文件夹**.
+   >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 在选定的SharePoint站点中存在。
+   >* 创建文件夹为 `forms-ootb-storage-adaptive-forms-submission`，如果列表中尚未出现 `Documents` 选定SharePoint站点的库，方法是单击 **创建文件夹**.
 
 
-现在，您可以将此SharePoint站点配置用于自适应表单中的提交操作。
+现在，您可以在自适应表单中将此SharePoint Sites配置用于提交操作。
 
 ### 在自适应表单中使用SharePoint配置 {#use-sharepoint-configuartion-in-af}
 
-您可以在自适应表单中使用创建的SharePoint配置，将数据或生成的记录文档保存到SharePoint文件夹中。 执行以下步骤以在自适应表单中将SharePoint存储配置用作：
+您可以在自适应表单中使用创建的SharePoint配置，将数据或生成的记录文档保存在SharePoint文件夹中。 执行以下步骤以在自适应表单中使用SharePoint存储配置，如下所示：
 1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 对于自适应表单，您已在其中创建了SharePoint存储。
-   > * 如果否 [!UICONTROL 配置容器] ，则全局 [!UICONTROL 存储配置] 文件夹显示在提交操作属性窗口中。
+   > * 选择相同的 [!UICONTROL 配置容器] 自适应表单，您已在该表单中创建了SharePoint存储空间。
+   > * 如果否 [!UICONTROL 配置容器] 选择，然后全局 [!UICONTROL 存储配置] 文件夹出现在“提交操作”属性窗口中。
 
 
-1. 选择 **提交操作** as **[!UICONTROL 提交到SharePoint]**.
+1. 选择 **提交操作** 作为 **[!UICONTROL 提交到SharePoint]**.
    ![SharepointGIF](/help/forms/assets/sharedrive-video.gif)
 1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
-1. 单击 **[!UICONTROL 保存]** 保存提交设置。
+1. 单击 **[!UICONTROL 保存]** 以保存提交设置。
 
-提交表单时，数据会保存在指定的Microsoft Sharepoint存储中。
-保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
+提交表单时，数据将保存在指定的Microsoft® Sharepoint存储中。
+要保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-的 **[!UICONTROL 提交到OneDrive]** “提交操作”将自适应表单与Microsoft OneDrive连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Microsoft OneDrive存储。 使用 [!UICONTROL 提交到OneDrive] 在自适应表单中提交操作：
+此 **[!UICONTROL 提交到OneDrive]** 提交操作将自适应表单与Microsoft® OneDrive连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Microsoft® OneDrive存储。 要使用 [!UICONTROL 提交到OneDrive] 以自适应表单提交操作：
 
-1. [创建OneDrive配置](#create-a-onedrive-configuration-create-onedrive-configuration):它将AEM Forms与Microsoft OneDrive存储连接。
-2. [在自适应表单中使用Submit to OneDrive提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af):它将您的自适应表单连接到配置的Microsoft OneDrive。
+1. [创建OneDrive配置](#create-a-onedrive-configuration-create-onedrive-configuration)：用于将AEM Forms连接到您的Microsoft® OneDrive存储。
+2. [在自适应表单中使用提交到OneDrive提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：它将您的自适应表单连接到配置的Microsoft® OneDrive。
 
 ### 创建OneDrive配置 {#create-onedrice-configuration}
 
-要将AEM Forms连接到Microsoft OneDrive存储，请执行以下操作：
+要将AEM Forms连接到Microsoft® OneDrive存储，请执行以下操作：
 
-1. 转到 **AEM Forms作者** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
-1. 选择 **[!UICONTROL Microsoft OneDrive]**，则会被重定向到 **[!UICONTROL OneDrive浏览器]**.
-1. 选择 **配置容器**. 配置存储在选定的配置容器中。
+1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
+1. 一旦您选择 **[!UICONTROL Microsoft® OneDrive]**，您将被重定向到 **[!UICONTROL OneDrive浏览器]**.
+1. 选择 **配置容器**. 该配置将存储在选定的配置容器中。
 1. 单击&#x200B;**[!UICONTROL 创建]**。出现OneDrive配置向导。
 
    ![OneDrive配置屏幕](/help/forms/assets/onedrive-configuration.png)
 
-1. 指定 **[!UICONTROL 标题]**, **[!UICONTROL 客户端ID]**, **[!UICONTROL 客户端密钥]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft Azure门户访问您的应用程序。
-   * 在Microsoft Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 替换 `[author-instance]` 和创作实例的URL。
-   * 添加API权限 `offline_access` 和 `Files.ReadWrite.All` 提供读/写权限。
-   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 替换 `<tenant-id>` 和 `tenant-id` 从Microsoft Azure门户访问您的应用程序。
+1. 指定 **[!UICONTROL 标题]**， **[!UICONTROL 客户端ID]**， **[!UICONTROL 客户端密码]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft®文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft® Azure门户访问您的应用程序。
+   * 在Microsoft® Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Replace `[author-instance]` 使用创作实例的URL。
+   * 添加API权限 `offline_access` 和 `Files.ReadWrite.All` 以提供读/写权限。
+   * 使用OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` 使用 `tenant-id` 从Microsoft® Azure门户访问您的应用程序。
 
    >[!NOTE]
    >
-   > 的 **客户端密码** 字段是必选字段或可选字段，具体取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密钥，则必须提供客户端密钥。
+   > 此 **客户端密码** 字段是必填字段还是可选字段取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密码，则必须提供客户端密码。
 
-1. 单击 **[!UICONTROL 连接]**. 成功连接时， `Connection Successful` 消息。
+1. 单击 **[!UICONTROL Connect]**. 成功连接后， `Connection Successful` 出现消息。
 
 1. 现在，选择 **[!UICONTROL OneDrive容器]** > **[OneDrive文件夹]**  以保存数据。
 
    >[!NOTE]
    >
    >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 存在于OneDrive容器中。
-   > * 将文件夹创建为 `forms-ootb-storage-adaptive-forms-submission`，如果尚不存在，请单击 **创建文件夹**.
+   > * 创建文件夹为 `forms-ootb-storage-adaptive-forms-submission`，如果尚未出现，请单击 **创建文件夹**.
 
 
 现在，您可以在自适应表单中将此OneDrive存储配置用于提交操作。
 
 ### 在自适应表单中使用OneDrive配置 {#use-onedrive-configuartion-in-af}
 
-您可以在自适应表单中使用创建的OneDrive存储配置，将数据或生成的记录文档保存在OneDrive文件夹中。 执行以下步骤以在自适应表单中将OneDrive存储配置用作：
+您可以在自适应表单中使用创建的OneDrive存储配置，将数据或生成的记录文档保存在OneDrive文件夹中。 执行以下步骤，在自适应表单中使用OneDrive存储配置，如下所示：
 1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 对于自适应表单，您已在其中创建了OneDrive存储。
-   > * 如果否 [!UICONTROL 配置容器] ，则全局 [!UICONTROL 存储配置] 文件夹显示在提交操作属性窗口中。
+   > * 选择相同的 [!UICONTROL 配置容器] 自适应表单，您已在该表单中创建了OneDrive存储。
+   > * 如果否 [!UICONTROL 配置容器] 选择，然后全局 [!UICONTROL 存储配置] 文件夹出现在“提交操作”属性窗口中。
 
 
-1. 选择 **提交操作** as **[!UICONTROL 提交到OneDrive]**.
+1. 选择 **提交操作** 作为 **[!UICONTROL 提交到OneDrive]**.
    ![OneDriveGIF](/help/forms/assets/onedrive-video.gif)
 1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
-1. 单击 **[!UICONTROL 保存]** 保存提交设置。
+1. 单击 **[!UICONTROL 保存]** 以保存提交设置。
 
-提交表单时，数据将保存在指定的Microsoft OneDrive存储中。
-保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
+提交表单时，数据将保存在指定的Microsoft® OneDrive存储中。
+要保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## 提交到 Azure Blob Storage {#submit-to-azure-blob-storage}
 
-的 **[!UICONTROL 提交到Azure Blob Storage]**  提交操作将自适应表单与Microsoft Azure门户连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Azure存储容器。 要对Azure Blob Storage使用“提交”操作，请执行以下操作：
+此 **[!UICONTROL 提交到Azure Blob存储]**  提交操作可将自适应表单与Microsoft® Azure门户连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Azure存储容器。 要对Azure Blob存储使用提交操作，请执行以下操作：
 
-1. [创建Azure Blob存储容器](#create-a-azure-blob-storage-container-create-azure-configuration):它将AEM Forms与Azure存储容器连接。
-2. [在自适应表单中使用Azure存储配置 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af):它将您的自适应表单连接到配置的Azure存储容器。
+1. [创建Azure Blob存储容器](#create-a-azure-blob-storage-container-create-azure-configuration)：用于将AEM Forms连接到Azure Storage容器。
+2. [在自适应表单中使用Azure存储配置 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：它将您的自适应表单连接到配置的Azure存储容器。
 
 ### 创建Azure Blob存储容器 {#create-azure-configuration}
 
-要将AEM Forms连接到Azure存储容器，请执行以下操作：
-1. 转到 **AEM Forms作者** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure存储]**.
-1. 选择 **[!UICONTROL Azure存储]**，则会被重定向到 **[!UICONTROL Azure存储浏览器]**.
-1. 选择 **配置容器**. 配置存储在选定的配置容器中。
-1. 单击&#x200B;**[!UICONTROL 创建]**。出现“创建Azure存储配置”向导。
+要将AEM Forms连接到Azure Storage容器，请执行以下操作：
+1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure存储]**.
+1. 一旦您选择 **[!UICONTROL Azure存储]**，您将被重定向到 **[!UICONTROL Azure存储浏览器]**.
+1. 选择 **配置容器**. 该配置将存储在选定的配置容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。将显示“创建Azure存储配置”向导。
 
    ![Azure存储配置](/help/forms/assets/azure-storage-configuration.png)
 
-1. 指定 **[!UICONTROL 标题]**, **[!UICONTROL Azure存储帐户]** 和 **[!UICONTROL Azure访问密钥]**.
+1. 指定 **[!UICONTROL 标题]**， **[!UICONTROL Azure存储帐户]** 和 **[!UICONTROL Azure访问密钥]**.
 
-   * 您可以检索 `Azure Storage Account` 名称和 `Azure Access key` 从Microsoft Azure门户的存储帐户中。
+   * 您可以检索 `Azure Storage Account` 名称和 `Azure Access key` 从Microsoft® Azure门户中的存储帐户。
 
 1. 单击“**[!UICONTROL 保存]**”。
 
@@ -306,23 +306,23 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ### 在自适应表单中使用Azure存储配置 {#use-azure-storage-configuartion-in-af}
 
-您可以在自适应表单中使用创建的Azure存储容器配置，在Azure存储容器中保存数据或生成的记录文档。 执行以下步骤以在自适应表单中将Azure存储容器配置用作：
+您可以在自适应表单中使用创建的Azure存储容器配置，以将数据或生成的记录文档保存在Azure存储容器中。 执行以下步骤以在自适应表单中使用Azure存储容器配置，如下所示：
 1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 对于自适应表单，您已在其中创建了OneDrive存储。
-   > * 如果否 [!UICONTROL 配置容器] ，则全局 [!UICONTROL 存储配置] 文件夹显示在提交操作属性窗口中。
+   > * 选择相同的 [!UICONTROL 配置容器] 自适应表单，您已在该表单中创建了OneDrive存储。
+   > * 如果否 [!UICONTROL 配置容器] 选择，然后全局 [!UICONTROL 存储配置] 文件夹出现在“提交操作”属性窗口中。
 
 
-1. 选择 **提交操作** as **[!UICONTROL 提交到Azure Blob Storage]**.
+1. 选择 **提交操作** 作为 **[!UICONTROL 提交到Azure Blob存储]**.
    ![Azure Blob存储GIF](/help/forms/assets/azure-submit-video.gif)
 
 1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
-1. 单击 **[!UICONTROL 保存]** 保存提交设置。
+1. 单击 **[!UICONTROL 保存]** 以保存提交设置。
 
 提交表单时，数据将保存在指定的Azure存储容器配置中。
-保存数据的文件夹结构为 `/configuration_container/form_name/year/month/date/submission_id/data`.
+要保存数据的文件夹结构为 `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)。
 
@@ -330,21 +330,21 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 提交操作可以使用同步或异步提交。
 
-**同步提交**:传统上，Web表单配置为同步提交。 在同步提交中，当用户提交表单时，会将用户重定向到确认页面、感谢页面，或者如果提交失败，则会重定向到错误页面。 您可以选择 **[!UICONTROL 使用异步提交]** 选项，将用户重定向到网页或在提交时显示消息。
+**同步提交**：传统上，Web窗体配置为同步提交。 在同步提交中，当用户提交表单时，他们将被重定向到确认页面、感谢页面，或者如果提交失败，则被重定向到错误页面。 您可以选择 **[!UICONTROL 使用异步提交]** 用于将用户重定向到网页或在提交时显示消息的选项。
 
 ![配置提交操作](assets/thank-you-setting.png)
 
-**异步提交**:现代Web体验（如单页应用程序）越来越受欢迎，其中网页保持静态，而客户端 — 服务器交互在后台进行。 您现在可以通过自适应Forms提供此体验，具体方式为 [配置异步提交](asynchronous-submissions-adaptive-forms.md).
+**异步提交**：单页应用程序等现代Web体验越来越受欢迎，这是因为在后台进行客户端 — 服务器交互时，网页保持静态。 现在，您可以通过以下方式为自适应Forms提供此体验 [配置异步提交](asynchronous-submissions-adaptive-forms.md).
 
 ## 自适应表单中的服务器端重新验证 {#server-side-revalidation-in-adaptive-form}
 
-通常，在任何在线数据捕获系统中，开发人员会在客户端放置一些JavaScript验证，以强制执行一些业务规则。 但在现代浏览器中，最终用户可以绕过这些验证，使用各种技术（如Web浏览器开发工具控制台）手动执行提交。 此类技术也适用于自适应Forms。 表单开发人员可以创建各种验证逻辑，但从技术上讲，最终用户可以绕过这些验证逻辑，将无效数据提交到服务器。 无效数据会破坏表单作者强制执行的业务规则。
+通常，在任何在线数据捕获系统中，开发人员都会在客户端放置一些JavaScript验证，以实施一些业务规则。 但在现代浏览器中，最终用户能够绕过这些验证，并使用各种技术（如Web浏览器DevTools控制台）手动提交内容。 此类技术对于自适应Forms也有效。 表单开发人员可以创建各种验证逻辑，但从技术上讲，最终用户可以绕过这些验证逻辑并将无效数据提交到服务器。 无效数据将破坏表单作者已强制执行的业务规则。
 
-服务器端重新验证功能还允许运行自适应Forms作者在服务器上设计自适应表单时提供的验证。 它可防止在表单验证中表示的数据提交和业务规则违规的任何潜在危害。
+通过服务器端重新验证功能，还可以在服务器上运行Adaptive Forms作者在设计Adaptive Form时提供的验证。 它可防止在表单验证方面可能出现的任何数据提交和业务规则违规受损。
 
-### 在服务器上验证什么？ {#what-to-validate-on-server-br}
+### 要在服务器上验证什么？ {#what-to-validate-on-server-br}
 
-自适应表单的开箱即用(OOTB)字段验证（将在服务器中重新运行）包括：
+在服务器上重新运行的自适应表单的所有开箱即用(OOTB)字段验证包括：
 
 * 必填
 * 验证图片子句
@@ -352,7 +352,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ### 启用服务器端验证 {#enabling-server-side-validation-br}
 
-使用 **[!UICONTROL 在服务器上重新验证]** 在侧栏的自适应表单容器下，启用或禁用当前表单的服务器端验证。
+使用 **[!UICONTROL 在服务器上重新验证]** 在侧栏中的自适应表单容器下，启用或禁用当前表单的服务器端验证。
 
 ![启用服务器端验证](assets/revalidate-on-server.png)
 
@@ -362,22 +362,22 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 >[!NOTE]
 >
->服务器端验证可验证表单模型。 建议您创建一个单独的客户端库以进行验证，但不要将其与HTML样式和DOM操作等其他内容混合到同一客户端库中。
+>服务器端验证验证表单模型。 建议为验证创建单独的客户端库，并且不要在同一客户端库中将其与HTML样式和DOM操作等其他内容混合。
 
 ### 在验证表达式中支持自定义函数 {#supporting-custom-functions-in-validation-expressions-br}
 
-有时，如果 **复杂验证规则**，则精确验证脚本位于自定义函数中，并且作者从字段验证表达式中调用这些自定义函数。 要在执行服务器端验证时将此自定义函数库知晓并可用，表单作者可以在 **[!UICONTROL 基本]** 自适应表单容器属性的选项卡，如下所示。
+有时候，如果有 **复杂验证规则**，精确验证脚本驻留在自定义函数中，作者从字段验证表达式中调用这些自定义函数。 要使此自定义函数库在执行服务器端验证时已知且可用，表单作者可以在下配置AEM客户端库的名称 **[!UICONTROL 基本]** “自适应表单容器”属性的选项卡，如下所示。
 
 ![在验证表达式中支持自定义函数](assets/clientlib-cat.png)
 
 在验证表达式中支持自定义函数
 
-作者可以根据自适应表单配置customJavaScript库。 在库中，仅保留依赖于jquery和undersore.js第三方库的可重用函数。
+作者可以按自适应表单配置customJavaScript库。 在库中，仅保留依赖于jquery和underscore.js第三方库的可重用函数。
 
-## 处理提交操作时出错 {#error-handling-on-submit-action}
+## 提交操作的错误处理 {#error-handling-on-submit-action}
 
-作为AEM安全和强化准则的一部分，请配置自定义错误页，如400.jsp、404.jsp和500.jsp。 在提交表单400、404或500错误时，会调用这些处理程序。 当在“发布”节点上触发这些错误代码时，也会调用处理程序。 您还可以为其他HTTP错误代码创建JSP页。
+作为AEM安全和强化指南的一部分，请配置自定义错误页面，如400.jsp、404.jsp和500.jsp。 在提交表单时出现400、404或500错误时，将调用这些处理程序。 在Publish节点上触发这些错误代码时，也会调用处理程序。 您还可以为其他HTTP错误代码创建JSP页。
 
-当您使用XML或JSON数据预填表单数据模型或基于架构的自适应表单时，会向数据不包含的架构投诉 `<afData>`, `<afBoundData>`和 `</afUnboundData>` 标记，则自适应表单的无界字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型。 无界字段是自适应表单字段， `bindref` 属性。
+当您将表单数据模型或基于XML或JSON数据投诉模式的自适应表单预填充到数据不包含的架构时 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 标签时，自适应表单中无界字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型。 未限定的字段是自适应表单字段，不带 `bindref` 属性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
