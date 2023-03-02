@@ -5,10 +5,10 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
             * 显示有关参考内容的信息
             * 显示有关片段的语言版本的信息
          * 您可以[选择一个或多个内容片段来显示可用的操作](#actions-selected-content-fragment)
-      * 可以选择列标题，以根据该列对表进行排序；再次选择，以在升序和降序之间进行切换
+      * 可以选择列标题，以根据该列对表进行排序；再次选择，以在升序和降序之间进行切换. 目前，支持排序 **标题**， **修改时间**、和 **修改者** 列。
    * **[创建](#creating-new-content-fragment)**&#x200B;新内容片段
    * [筛选](#filtering-fragments)内容片段，并保存过滤器以供将来使用
    * [搜索](#searching-fragments)内容片段
