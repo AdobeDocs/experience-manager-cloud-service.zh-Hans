@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager(AEM)Formsas a Cloud Service概述
-description: '"[!DNL AEM Forms] as a Cloud Service是创建、管理、发布企业级表单和业务流程的平台。”'
+title: Adobe Experience Manager (AEM) Forms as a Cloud Service 概述
+description: “[!DNL AEM Forms] as a Cloud Service 是一个用于创建、管理、发布企业级表单和业务流程的平台。”
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '82'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
