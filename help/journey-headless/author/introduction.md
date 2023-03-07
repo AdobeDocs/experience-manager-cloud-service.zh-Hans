@@ -1,84 +1,84 @@
 ---
-title: 创作AEM as a Headless CMS — 简介
-description: 介绍如何使用Adobe Experience Manager as a Cloud Service的功能作为无头CMS来为项目创作内容。
+title: 针对 AEM as a Headless CMS 进行创作 – 简介
+description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能为项目创作内容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# 创作AEM as a Headless CMS — 简介 {#author-headless-introduction}
+# 针对 AEM as a Headless CMS 进行创作 – 简介 {#author-headless-introduction}
 
-在 [AEM Headless内容创作历程](overview.md)，您可以学习在使用Adobe Experience Manager(AEM)as a Cloud Service作为无头CMS时，了解创作内容所需的（基本）概念和术语。 这涉及构建和创建用于无头内容交付的内容。
+在 [AEM Headless 内容作者历程](overview.md)的这一部分中，您可以学习使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 创作内容时必须了解的（基本）概念和术语。这涉及构建和创建您的内容以进行 Headless 内容交付。
 
 ## 目标 {#objective}
 
-* **受众**:初学者
-* **目标**:介绍与无头创作相关的概念和术语。
+* **受众**：初学者
+* **目标**：介绍与 Headless 创作相关的概念和术语。
 
-## 内容管理系统(CMS) {#content-management-system}
+## 内容管理系统 (CMS) {#content-management-system}
 
 什么是内容管理系统？
 
-内容管理系统(CMS)就是它所说的 — 用于管理内容的计算机系统。 这有些笼统，因此更确切地说，它通常用于管理您希望在网站上提供的内容。
+顾名思义，内容管理系统 (CMS) 是一种用于管理内容的计算机系统。这有点笼统，更准确地说，它（通常）用于管理您希望在您的网站上提供的内容。
 
 ## Headless CMS {#headless-cms}
 
-“无头”是一个术语，用于描述从在Web上显示内容的方式中有效分离内容的系统。
+Headless 是一个用来描述系统的术语，指的是有效地将内容与其在 Web 页面中的展示方式分离开来。
 
-传统上，您会在CMS中管理内容，而同一CMS则负责在您的网页上渲染该内容。
+传统上，您将在 CMS 中管理您的内容，并且同一 CMS 将负责在您的网页上渲染该内容。
 
-现在，无头意味着可以在CMS中管理内容集，然后由一个或多个（独立）应用程序访问。
+现在，Headless 意味着您的内容集可在 CMS 中进行管理，然后由一个或多个（独立的）应用程序访问。
 
-这意味着您的内容可以以各种格式传送到任何设备。 这使整个过程更加灵活，并且还意味着您无需担心布局和格式设置问题。
+这意味着，您的内容可采用一系列广泛的格式传送到任意设备。这将使整个过程变得更加灵活，同时意味着您无需担心版面和格式设置。
 
 >[!NOTE]
 >
->如果您想进一步了解无头CMS的技术详细信息，可以在“了解CMS无头开发”中阅读更多信息。
+>如果您想详细了解 Headless CMS 的技术细节，可以参阅“了解 CMS Headless 开发”中的更多内容。
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-那么什么是AEM?
+那么，什么是 AEM 呢？
 
-首先，AEM是一个内容管理系统，具有多种功能，还可以根据您的需求进行自定义。
+首先，AEM 是一个具有一系列广泛功能的内容管理系统，也可以自定义这些功能以满足您的要求。
 
-这一切都意味着它可用作：
+这都意味着它可以用作：
 
-* 无头CMS
-   * 对于无头，您的内容可以创作为 **内容片段**.
-这些是自包含的内容项，可由一系列应用程序直接访问，因为它们具有基于的预定义结构 **内容片段模型**.
-这意味着您的内容可以访问各种设备、各种格式和多种功能。
-(此外，如果您需要，还可以在构建AEM网页时使用这些片段，这是双重打击。)
+* Headless CMS
+   * 对于 Headless 来说，可以将内容创作为&#x200B;**内容片段**。
+它们是独立内容项，可以由一系列应用程序直接访问，因为它们具有基于**内容片段模型**的预定义结构。
+这意味着您的内容可采用一系列广泛的格式与多种功能一起传输到多种设备。
+（如果需要，也可以在构建 AEM 网页时使用这些片段，为您带来双倍效果。）
 
 * “传统”CMS
-   * 内容是使用一系列组件为网页创作的，这些组件定义了内容在您的网站上的呈现方式。 即使在此，AEM也非常灵活，因为您的项目团队可以开发自定义组件。
+   * 内容是为网页创作的，并使用一系列组件来定义内容在网站上的呈现方式。即使在这样的情况下，AEM 也非常灵活，因为您的项目团队可以开发自定义组件。
 
 ## 内容建模 {#content-modeling}
 
-因此，内容建模（也称为数据建模）是另一个技术术语，为什么作为作者，它会让您感兴趣？
+内容建模（也称为数据建模）是另一个技术术语。作为作者，您为什么会对它感兴趣呢？
 
-要使无头应用程序能够访问您的内容并使用它执行一些操作，您的内容真正需要有一个预定义的结构。 你的内容可以是自由形式的，但它可以让你的生活 *非常* 应用程序非常复杂。
+要使 Headless 应用程序能够访问并处理您的内容，您的内容需要具有预定义的结构。您的内容可以采用自由格式，但这会使应用程序的生命周期变得&#x200B;*非常*&#x200B;复杂。
 
-基本上，定义内容要遵循的结构的过程涉及设计模型 — 这称为数据建模。
+基本上，在定义内容要遵循的结构的过程中需要设计模型，这称作数据建模。
 
-对于AEM，内容架构师角色（通常是不同的人员）将执行数据建模以设计一系列 **内容片段模型**  — 然后，使用 **内容片段**.
+对于 AEM，内容架构师角色（通常是不同的人员）将执行数据建模以设计一系列&#x200B;**内容片段模型**，随后，您将通过使用&#x200B;**内容片段**&#x200B;来将该模型用作内容的基础。
 
 >[!NOTE]
 >
->如果您想进一步了解数据建模，可以在AEM Headless Content Architect历程下阅读更多内容。
+>如果您想了解有关数据建模的更多信息，可以参阅“AEM Headless 内容架构师历程”下的更多内容。
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-既然您已经学习了概念和术语，下一步就是 [了解创作内容片段的基础知识](basics.md). 这将介绍AEM的基本操作以及如何创作内容片段。
+现在您已了解概念和术语，下一步是[学习有关创作内容片段的基础知识](basics.md)。这将介绍 AEM 的基本处理以及如何创作内容片段。
 
 ## 其他资源 {#additional-resources}
 
-* AEM Headless开发人员历程
-   * [了解CMS无头开发](/help/journey-headless/developer/learn-about.md)
-   * [了解如何对内容进行建模](/help/journey-headless/developer/model-your-content.md)
+* AEM Headless 开发人员历程
+   * [了解 CMS Headless 开发](/help/journey-headless/developer/learn-about.md)
+   * [了解如何为您的内容建模](/help/journey-headless/developer/model-your-content.md)
 
 * AEM Headless 内容架构师历程
 
-* AEM Headless内容翻译历程
+* AEM Headless 内容翻译历程
