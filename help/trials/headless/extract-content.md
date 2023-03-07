@@ -4,8 +4,8 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a33ca1698b30a075d80929b7c59961beecc3a9e0
-workflow-type: tm+mt
+source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+workflow-type: ht
 source-wordcount: '725'
 ht-degree: 100%
 
