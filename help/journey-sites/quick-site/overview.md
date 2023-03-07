@@ -3,7 +3,7 @@ title: AEM 快速站点创建历程
 description: 从这里开始引导式历程，通过易用的 AEM 快速站点创建工具来简化 AEM 站点的前端开发并在不具备 AEM 后端知识的情况下快速自定义您的站点。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者�
 |6|[自定义站点主题](customize-theme.md)|了解如何使用实时 AEM 内容构建、自定义和测试站点主题。|前端开发人员|
 |7|[部署自定义主题](deploy-theme.md)|了解如何使用管道部署站点主题。|前端开发人员|
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 您现在已准备好开始您的 Adobe 快速站点创建历程。
 
