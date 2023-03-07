@@ -1,53 +1,53 @@
 ---
-title: Formsas a Cloud Service通信简介
-description: 自动将数据与XDP和PDF模板合并，或以PCL、ZPL和PostScript格式生成输出
+title: Forms as a Cloud Service 通信简介
+description: 自动将数据与 XDP 和 PDF 模板合并，或以 PCL、ZPL 和 PostScript 格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# 使用AEM Formsas a Cloud Service通信 {#frequently-asked-questions}
+# 使用 AEM Forms as a Cloud Service 通信 {#frequently-asked-questions}
 
-通信功能可帮助您创建品牌认可、个性化且标准化的文档，如业务信函、报表、报销申请处理信函、福利通知、每月账单或欢迎资料包。
+通信功能可帮助您创建品牌批准的、个性化的和标准化的文档，例如商业信函、对帐单、理赔处理函、收益通知函、月度帐单或欢迎套件。
 
-该功能提供了用于生成和操作文档的API。 您可以根据需要生成或操作文档，或创建批处理作业以按定义的间隔生成多个文档。 通信API提供：
+该功能提供 API 来生成和操作文档。您可以按需生成或操作文档，也可以创建批处理作业来按定义的时间间隔生成多个文档。通信 API 提供：
 
-* 简化了按需和批量文档生成功能。
+* 按需简化和批量文档生成功能。
 
-* 能够按需组合、重新排列和验证PDF文档。
+* 按需组合、重新排列和验证 PDF 文档的能力。
 
-* HTTP API，更便于与外部系统集成。 包括单独的API，用于按需（低延迟）和批处理操作（高吞吐量操作）。
+* 用于更轻松地与外部系统集成的 HTTP API。包括用于按需（低延迟）和批处理操作（高吞吐量操作）的单独 API。
 
-* 安全访问数据。 通信API仅连接到客户指定的数据存储库并从中访问数据，从而使通信高度安全。
+* 对数据的安全访问。通信 API 仅连接到客户指定的数据存储库并从中访问数据，从而使通信变得高度安全。
 
-![信用卡对帐单示例](assets/statement.png)
-可以使用通信API创建信用卡对帐单。 此示例报表使用相同的模板，但会根据每个客户对信用卡的使用情况，为其分开数据。
+![示例信用卡对帐单](assets/statement.png)
+可以使用通信 API 创建信用卡对帐单。此示例对帐单使用相同的模板，但根据每个客户的信用卡使用情况分离其数据。
 
 ## 文档生成
 
-通信文档生成API有助于将模板(XFA或PDF)与客户数据(XML)结合，以生成PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）的文档。 这些API将PDF和XFA模板与 [XML数据](communications-known-issues-limitations.md#form-data) 用于按需生成单个文档或使用批处理作业生成多个文档。
+通信文档生成 API 有助于将模板（XFA 或 PDF）与客户数据（XML）相结合，生成 PDF 和打印格式（如 PS、PCL、DPL、IPL 和 ZPL 格式）的文档。这些 API 将 PDF 和 XFA 模板与 [XML 数据](communications-known-issues-limitations.md#form-data)结合使用，按需生成单个文档或使用批处理作业生成多个文档。
 
-通常，您使用 [Designer](use-forms-designer.md) 和使用通信API将数据与模板合并。 您的应用程序可以将输出文档发送到网络打印机、本地打印机或存储系统以进行存档。 典型的开箱即用工作流和自定义工作流如下所示：
+通常，您使用 [Designer](use-forms-designer.md) 创建模板，并使用通信 API 将数据与模板合并。您的应用程序可以将输出文档发送到网络打印机、本地打印机或存储系统以进行存档。典型的现成和自定义工作流如下所示：
 
 ![通信文档生成工作流](assets/communicaions-workflow.png)
 
-根据用例的不同，您还可以通过网站或存储服务器下载这些文档。
+根据用例，您还可以将这些文档设为通过您的网站或存储服务器下载。
 
-文档生成API的一些示例包括：
+文档生成 API 的一些示例包括：
 
-### 创建PDF文档 {#create-pdf-documents}
+### 创建 PDF 文档 {#create-pdf-documents}
 
-您可以使用文档生成API创建基于表单设计和XML表单数据的PDF文档。 输出是非交互式PDF文档。 即用户无法输入或修改表单数据。 基本的工作流程是将XML表单数据与表单设计合并，以创建PDF文档。 下图显示了表单设计和XML表单数据的合并，以生成PDF文档。
+您可以使用文档生成 API 创建基于表单设计和 XML 表单数据的 PDF 文档。输出是非交互式 PDF 文档。也就是说，用户无法输入或修改表单数据。基本工作流是将 XML 表单数据与表单设计合并来创建 PDF 文档。下图说明如何合并表单设计和 XML 表单数据以生成 PDF 文档。
 
-![创建PDF文档](assets/outPutPDF_popup.png)
-图：创建PDF文档的典型工作流
+![创建 PDF 文档](assets/outPutPDF_popup.png)
+图：典型的 PDF 文档创建工作流
 
-### 创建PostScript(PS)、打印机命令语言(PCL)、Zebra打印语言(ZPL)文档 {#create-PS-PCL-ZPL-documents}
+### 创建 PostScript (PS)、打印机指令语言 (PCL)、Zebra 打印语言 (ZPL) 文档 {#create-PS-PCL-ZPL-documents}
 
-您可以使用文档生成API创建基于XDP表单设计或PDF文档的PostScript(PS)、打印机命令语言(PCL)和Zebra打印语言(ZPL)文档。 这些API有助于将表单设计与表单数据合并以生成文档。 您可以将文档保存到文件并开发一个自定义流程以将其发送到打印机。
+您可以使用文档生成 API 创建基于 XDP 表单设计的 PostScript (PS)、打印机指令语言 (PCL)、Zebra 打印语言 (ZPL) 文档或 PDF 文档。这些 API 有助于将表单设计与表单数据合并以生成文档。您可以将文档保存到文件，并开发一个自定义流程来将它发送到打印机。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -59,11 +59,11 @@ The following illustration shows Communications APIs processing an XML data file
 
  -->
 
-### 处理批量数据以创建多个文档 {#processing-batch-data-to-create-multiple-documents}
+### 处理批量数据可创建多个文档 {#processing-batch-data-to-create-multiple-documents}
 
-您可以使用文档生成API为XML批量数据源中的每个记录创建单独的文档。 您可以在批量和异步模式下生成文档。 您可以为转换配置各种参数，然后启动批处理。
+您可以使用文档生成 API 为 XML 批处理数据源中的每条记录创建单独的文档。您可以批量和在异步架构下生成文档。您可以配置各种用于转换的参数，然后开始批处理。
 
-![创建PDF文档](assets/ou_OutputBatchMany_popup.png)
+![创建 PDF 文档](assets/ou_OutputBatchMany_popup.png)
 
 <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
@@ -97,34 +97,34 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 文档操作
 
-通信文档处理API有助于合并、重新排列和验证PDF文档。 通常，您会创建DDX并将其提交到文档处理API以组合或重新排列文档。 的 [DDX文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 提供有关如何使用源文档生成一组必需文档的说明。 DDX参考文档提供了有关所有受支持操作的详细信息。 文档操作的一些示例包括：
+通信文档操作 API 可帮助合并、重新排列和验证 PDF 文档。通常，您创建一个 DDX 并将它提交给文档操作 API 来汇编或重新排列文档。[DDX 文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有关如何使用源文档生成一组所需文档的说明。DDX 引用文档提供了有关所有受支持操作的详细信息。文档操作的一些示例包括：
 
-### 组合PDF文档
+### 汇编 PDF 文档
 
-您可以使用文档操作API将两个或多个PDF或XDP文档组合到单个PDF文档或PDFPortfolio中。 以下是组合PDF文档的一些方法：
+您可以使用文档操作 API 将两个或更多 PDF 或 XDP 文档汇编成一个 PDF 文档或 PDF 文档组合。以下是可用于汇编 PDF 文档的一些方法：
 
-* 组合简单的PDF文档
-* 创建PDFPortfolio
-* 组合加密文档
-* 使用Bates编号来组合文档
-* 拼合和组合文档
+* 汇编一个简单的 PDF 文档
+* 创建 PDF 文档组合
+* 汇编加密的文档
+* 使用 Bates 编号汇编文档
+* 合并和汇编文档
 
-![从多个PDF文档组合简单的PDF文档](assets/as_document_assembly.png)
-图：从多个PDF文档组合简单的PDF文档
+![将多个 PDF 文档汇编成一个简单 PDF 文档](assets/as_document_assembly.png)
+图：将多个 PDF 文档汇编成一个简单 PDF 文档
 
-### 反汇编PDF文档
+### 拆分 PDF 文档
 
-可以使用文档操作API来拆解PDF文档。 API可以从源文档中提取页面或基于书签划分源文档。 通常，如果PDF文档最初是从许多单独的文档（如语句集合）中创建，则此任务会很有用。
+您可以使用文档操作 API 来拆分 PDF 文档。API 可以从源文档中提取页面或根据书签拆分源文档。通常，如果 PDF 文档最初是从多个单独文档（例如对帐单集合）创建的，则此任务很有用。
 
-* 从源文档提取页面
-* 根据书签划分源文档
+* 从源文档中提取页面
+* 根据书签拆分源文档
 
-![将基于书签的源文档划分为多个文档](assets/as_intro_pdfsfrombookmarks.png)
-图：将基于书签的源文档划分为多个文档
+![根据书签将一个源文档拆分成多个文档](assets/as_intro_pdfsfrombookmarks.png)
+图：根据书签将一个源文档拆分成多个文档
 
-### 转换并验证符合PDF/A的文档
+### 转换为符合 PDF/A 标准的文档并进行验证
 
-您可以使用文档操作API将PDF文档转换为符合PDF/A的文档，并确定PDF文档是否符合PDF/A。 PDF/A是一种存档格式，用于长期保存文档的内容。 字体嵌入在文档中，且文件未压缩。 因此，PDF/A文档通常比标准PDF文档大。 此外，PDF/文档不包含音频和视频内容。
+您可以使用文档操作 API 将 PDF 文档转换为符合 PDF/A 标准的文档，并确定 PDF 文档是否符合 PDF/A 标准。PDF/A 是一种用于长期保存文档内容的存档格式。字体将嵌入到文档中，并且文件是未压缩的。因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/A 文档不包含音频和视频内容。
 
 <!-- 
 
@@ -152,37 +152,37 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## 通信API的类型
+## 通信 API 的类型
 
-通信为按需和批量文档生成提供了HTTP API:
+通信功能提供用于按需和批量文档生成的 HTTP API：
 
-* **[同步API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 适用于按需、低延迟和单记录文档生成场景。 这些API更适合基于用户操作的用例。 例如，在用户完成填写表单后生成文档。
+* **[同步 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;适用于按需、低延迟、单一记录文档生成场景。这些 API 更适用于基于用户操作的用例。例如，在用户填写完表单后生成文档。
 
-* **[批量API（异步API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 适用于计划、高吞吐量和多文档生成场景。 这些API可批量生成文档。 例如，每月生成的电话账单、信用卡报表和福利报表。
+* **[批处理 API（异步 API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;适用于计划的、高吞吐量和多文档生成场景。这些 API 会批量生成文档。例如，每月生成的电话帐单、信用卡对帐单和收益对帐单。
 
-## 新用户引导
+## 入门培训
 
-通信功能可作为Formsas a Cloud Service用户的独立附加模块使用。 您可以联系Adobe销售团队或Adobe代表以请求获取访问权限。 Adobe 可为贵企业开启访问通道，并为您指定的管理员提供各种所需权限。 管理员可以向贵组织的Formsas a Cloud Service开发人员（用户）授予使用API的访问权限。
+通信功能作为面向 Forms as a Cloud Service 用户的独立和附加模块提供。您可以联系 Adobe 销售团队或 Adobe 代表来请求访问权限。Adobe 可为您的组织开启访问渠道，并为您指定为组织中管理员的人员提供所需的权限。管理员可以向您组织的 Forms as a Cloud Service 开发人员（用户）授予访问权限以使用 API。
 
-入门后，要为Formsas a Cloud Service环境启用通信功能，请执行以下操作：
+入门培训后，要为您的 Forms as a Cloud Service 环境启用通信功能，请执行以下操作：
 
-1. 登录到Cloud Manager并打开AEM Formsas a Cloud Service实例。
+1. 登录 Cloud Manager，并打开您的 AEM Forms as a Cloud Service 实例。
 
-1. 打开编辑程序选项，转到解决方案和加载项选项卡，然后选择 **[!UICONTROL Forms — 通信]** 选项。
+1. 打开“编辑程序”选项，转到“解决方案和加载项”选项卡，然后选择&#x200B;**[!UICONTROL Forms - 通信]**&#x200B;选项。
 
    ![通信](assets/communications.png)
 
-   如果已启用 **[!UICONTROL Forms — 数字注册]** 选项，然后选择 **[!UICONTROL Forms — 通信附加组件]** 选项。
+   如果您已启用 **[!UICONTROL Forms - 数字登记]**&#x200B;选项，则选择 **[!UICONTROL Forms - 通信加载项]**&#x200B;选项。
 
-   ![Addon](assets/add-on.png)
+   ![加载项](assets/add-on.png)
 
-1. 单击 **[!UICONTROL 更新]**.
+1. 单击&#x200B;**[!UICONTROL 更新]**。
 
-1. 运行生成管道。 构建管道成功后，将为您的环境启用通信API。
+1. 运行构建管道。成功运行构建管道后，将为您的环境启用通信 API。
 
 >[!NOTE]
 >
-> 要启用和配置文档操作API，请将以下规则添加到 [调度程序配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> 要启用和配置文档操作 API，请将以下规则添加到 [Dispatcher 配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
