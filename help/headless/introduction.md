@@ -1,9 +1,9 @@
 ---
-title: AEM Headless简介
-description: 了解Adobe Experience Manager(AEM)中的Headless，其中包含详细文档和无头历程的组合。 了解内容模型、内容片段和 GraphQL API 等功能如何用于增强 Headless 体验。
-landing-page-description: 了解如何在Adobe Experience Manager as a Cloud Service中使用和管理Headless。
+title: Headless for AEM简介
+description: 结合详细文档和Headless历程，了解Adobe Experience Manager (AEM)中的Headless。 了解内容模型、内容片段和 GraphQL API 等功能如何用于增强 Headless 体验。
+landing-page-description: 了解如何使用Adobe Experience Manager as a Cloud Service中的Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
+source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 94%
