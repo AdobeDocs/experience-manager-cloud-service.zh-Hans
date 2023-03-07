@@ -3,7 +3,7 @@ title: AEM 参考演示加载项历程
 description: 从这里开始，了解如何使用最少的 AEM 配置轻松地将 AEM 参考演示加载项添加到沙盒环境中，并能够通过基于最佳实践的丰富示例测试 AEM 的强大功能。
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ AEM 是用于创建和管理数字体验的强大工具集。内容作者可以�
 | 4 | [（可选）为演示站点启用 AEM Screens](screens.md) | 可选 – 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的额外步骤。 |
 | 5 | [管理您的演示站点](manage.md) | 了解可用于帮助您管理演示站点的工具以及如何删除它们。 |
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 您现在已准备好开始您的 AEM 参考演示加载项历程。
 
