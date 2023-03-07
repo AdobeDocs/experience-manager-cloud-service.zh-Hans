@@ -3,9 +3,9 @@ title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8a55e011a93ce069f067192f58bd36399a39130b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '627'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -14,24 +14,24 @@ ht-degree: 44%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概述"
->abstract="内容传输工具是由Adobe开发的工具，可用于将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例。 此工具还会自动传输主体（用户或组）。"
+>abstract="内容传输工具是 Adobe 开发的一项工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM Cloud Service 实例。此工具还会自动传输主体（用户或组）。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="准则和最佳实践"
 
-内容传输工具是 Adobe 开发的一个工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM 云服务实例。
+内容传输工具是 Adobe 开发的一个工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM Cloud Service 实例。
 
 此工具还会自动传输主体（用户或组）。
 
-提供了内容传输工具的新版本，该版本将内容传输流程与Cloud Acceleration Manager集成在一起。 强烈建议切换到此新版本，以利用该版本提供的所有优势：
+已提供新版本的内容传输工具，它将内容传输过程与 Cloud Acceleration Manager 集成。强烈建议切换到此新版本，充分利用其所有优势。
 
-* 一次提取迁移集并将其并行摄取到多个环境的自助方法
-* 通过更好的加载状态、护栏和错误处理来改善用户体验
-* 将保留摄取日志，并始终可用于疑难解答
+* 一次性提取迁移集并将它并行摄取到多个环境中的自助方式
+* 通过更好的加载状态、防护机制和错误处理改善用户体验
+* 摄取日志将保留，并且始终可用于进行故障排除
 
-要开始使用新版本，您需要卸载旧版内容传输工具，因为该工具在体系结构上发生了重大更改。
+要开始使用新版本，您需要卸载旧版本的内容传输工具，因为该工具的架构发生了重大更改。
 
 >[!NOTE]
 >
-> 如果迁移已在进行中，您可以继续使用以前版本的CTT，直到迁移完成。 有关与以前版本的CTT相关的文档，请参阅 [旧版文档](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+> 对于正在进行迁移的情况，您可以继续使用早期版本的 CTT，直到迁移完成。有关与早期版本的 CTT 相关的文档，请参阅[旧版文档](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)。
 
 ## 内容传输工具中的阶段 {#phases-content-transfer-tool}
 
@@ -42,17 +42,17 @@ ht-degree: 44%
    有关更多详细信息，请参阅[内容传输中的提取流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html)。
 
    >[!NOTE]
-   > 建议在提取阶段中运行用户映射工具。 请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) 以了解更多详细信息。
+   > 建议在提取阶段运行用户映射工具。有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)。
 
 1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
-   请参阅 [内容传输中的摄取流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) 以了解更多详细信息。
+   有关更多详细信息，请参阅[内容传输中的摄取流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html)。
 
 ## 迁移集的属性 {#attributes-migration-set}
 
 迁移集具有以下属性：
 
-* 使用新版本，您可以在Cloud Acceleration Manager中创建的项目中最多创建5个迁移集。
+* 利用新版本，您可以在 Cloud Acceleration Manager 中创建的项目中创建最多五个迁移集。
 * 每个迁移集应具有唯一的名称。
 
 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
@@ -66,4 +66,4 @@ ht-degree: 44%
 
 ## 后续内容 {#whats-next}
 
-了解内容传输工具及其对该工具进行描述的概述后，您便可以使用该工具将现有内容从源AEM实例（内部部署或AMS）移至目标AEM Cloud Service实例，您必须查看 [内容传输工具的先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
+在您了解内容传输工具并查看其概述（描述此工具可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM Cloud Service 实例）后，您必须查看[内容传输工具的先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)。
