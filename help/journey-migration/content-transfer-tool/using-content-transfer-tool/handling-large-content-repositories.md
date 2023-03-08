@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1846'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,6 @@ ht-degree: 2%
 * 您需要访问权限才能安装 [Azcopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 在运行源AEM实例的实例（或VM）上。
 
 * 数据存储垃圾收集已在源上在过去7天内运行。 有关更多详细信息，请参阅 [数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->目前，文本呈现无法在Windows计算机上正常运行，这是一个已知问题。 但是，我们将在即将发布的版本中解决此问题，并提供相应的修复。
 
 ### 如果将源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储区，则此情况下需要考虑的其他事项 {#additional-considerations-amazons3-azure}
 
