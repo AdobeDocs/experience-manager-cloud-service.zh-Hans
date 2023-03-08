@@ -2,10 +2,10 @@
 title: 管理活动
 description: 通过“活动”控制台，您可以创建、组织和管理品牌的营销活动
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '2019'
+ht-degree: 99%
 
 ---
 
@@ -81,6 +81,10 @@ ht-degree: 100%
 * **持续时间：**&#x200B;应用活动的时间段。
 * **优先级：**&#x200B;活动的相对优先级。当活动为相同的用户区段提供内容时，具有较高优先级的活动优先。
 * **目标量度：**&#x200B;如果选择 Adobe Target 作为定位引擎，则可向活动添加成功量度。需要一个成功量度。
+
+>[!NOTE]
+>
+>能够 **选择Target配置** 您必须在 **Target活动作者** 组。
 
 >[!NOTE]
 >
