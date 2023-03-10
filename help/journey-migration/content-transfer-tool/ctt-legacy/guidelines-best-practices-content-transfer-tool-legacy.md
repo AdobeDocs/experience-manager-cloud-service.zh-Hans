@@ -4,9 +4,9 @@ description: 使用内容传输工具的准则和最佳实践
 hide: true
 hidefromtoc: true
 exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 14%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 14%
 
 * 访问令牌可在特定时间段后或在Cloud Service环境升级后定期过期。 如果访问令牌已过期，则您无法连接到Cloud Service实例。 在这种情况下，您需要检索新的访问令牌。 与现有迁移集关联的状态图标将更改为红色云，当您将鼠标悬停在该云上时，将显示一条消息。
 
-* 在将内容从源实例传输到目标实例之前，内容传输工具(CTT)不执行任何类型的内容分析。 例如，将内容摄取到发布环境时，CTT不区分已发布和未发布的内容。 迁移集中指定的任何内容都会被摄取到所选的目标实例中。 用户可以将迁移集摄取到创作实例和/或发布实例。 将内容移动到生产实例时，请在源创作实例上安装CTT以将内容移动到目标创作实例。 同样，在源发布实例上安装CTT以将内容移动到目标发布实例。 请参阅 [在发布实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 了解更多详细信息。
+* 在将内容从源实例传输到目标实例之前，内容传输工具(CTT)不执行任何类型的内容分析。 例如，将内容摄取到发布环境时，CTT不区分已发布和未发布的内容。 迁移集中指定的任何内容都会被摄取到所选的目标实例中。 用户可以将迁移集摄取到创作实例和/或发布实例。 将内容移动到生产实例时，请在源创作实例上安装CTT以将内容移动到目标创作实例。 同样，在源发布实例上安装CTT以将内容移动到目标发布实例。 参见 [在发布实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 了解更多详细信息。
 
 * 内容传输工具传输的用户和组只是内容满足权限要求的用户和组。 此 *提取* 进程复制整个 `/home` 移入迁移集和 *引入* 进程会复制迁移的内容ACL中引用的所有用户和组。 要自动将现有用户和组映射到其IMS ID，请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
 

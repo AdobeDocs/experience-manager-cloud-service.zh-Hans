@@ -2,9 +2,9 @@
 title: 创建 Adobe Experience Manager as a Cloud Service 的无障碍内容（WCAG 2.1 合规性）
 description: 使用 AEM as a Cloud Service 帮助残障人士访问和使用 Web 内容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 73%
 
 ---
@@ -100,7 +100,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * 图标：指传递特定信息的小图形符号（图形）。页面和站点上使用的图标必须保持一致。图标在页面或站点上出现的所有实例都应使用相同的简短替换文本，除非这样做会与相邻的文本产生不必要的重复情况。
 * 图表和图形：通常用于表示数值数据。因此，提供替换文本的一个选项可能是包含图表或图形中显示的主要趋势的简短摘要。如有必要，还可以在文本中使用 **描述** 中的字段 **高级** “图像属性”选项卡。 此外，您还可以以表格形式在页面或站点的其他位置提供源数据。
 * 映射、示意图、流程图：对于提供空间数据的图形（例如，支持描述对象之间的关系或者某个流程），请确保以文本格式提供关键消息，并且此文本信息位于每个关联的数据点附近。对于映射，提供等效完整文本可能不太现实，但如果提供映射来作为帮助相关人员找到特定位置的一种方法，则映射图像的替换文本可以简短地指示为 *X 映射*，然后在页面其他位置的文本中或者通过&#x200B;**图像**&#x200B;组件&#x200B;**高级**&#x200B;选项卡中的&#x200B;**描述**&#x200B;字段提供该特定位置的说明。
-* 验证码：验证码是 *全自动公共图灵测试区分计算机和人类*.它是一种在网页上使用的安全检查，用于区分人类和恶意软件，但可能会导致访问障碍。这些图像要求用户描述他们看到的内容，以便通过安全测试。 无法为图像提供替换文本，因此您必须考虑替换非图形解决方案。 W3C提供了一些建议。 每种方法都有各自的优缺点。
+* 验证码：验证码是 *全自动公共图灵测试区分计算机和人类*. 这是一项在网页中用于区分人类和恶意软件的安全检查，但同时也会妨碍网页的辅助功能。用户要想通过安全测试，必须按照要求描述自己所看到的这些图像。无法为图像提供替换文本，因此您必须考虑替换非图形解决方案。 W3C提供了一些建议。 每种方法都有各自的优缺点。
 
    * 逻辑谜题
    * 使用声音输出替代图像
@@ -115,7 +115,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * [了解成功标准 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [如何达到成功标准 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [CAPTCHA 的 W3C 解释和替代方法](https://www.w3.org/TR/turingtest/)
+* [验证码的W3C解释和替代项](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -197,9 +197,9 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [了解成功标准 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [如何达到成功标准 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+c
+* [W3C：同步的多媒体](https://www.w3.org/AudioVideo/)
+* [字幕、记录和音频描述 - WebAIM 文章](https://webaim.org/techniques/captions/)
 -->
 
 ### 音频描述或替代媒体（预先录制）(1.2.3) {#audio-description-or-media-alternative-prerecorded}
@@ -540,13 +540,13 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 为Web内容选择适当的字体和大小时，请在可读性和可用性方面做出良好的判断和出错。
 
 >[!NOTE]
-以下工具可以帮助您转换到其他单位：
-* [Px 到 Em 计算器](https://www.omnicalculator.com/conversion/px-to-em)
-* [字体大小转换：pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [像素到 EM 转换器](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+对下列短语执行Web搜索以查找可以帮助您转换为其他单位的工具：
+* Px 到 Em 计算器 <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* 字体大小转换：pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* 像素到 EM 转换器 <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-要检查对比度，可使用颜色对比度工具，例如 [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) 或 [WebAIM Color Contrast Checker](https://webaim.org/resources/contrastchecker/)。这些工具可以用来检查颜色对，并报告任何对比度问题。
+要检查对比度，请使用颜色对比度工具，例如 [Paciello Group颜色对比分析器](https://www.tpgi.com/resources/contrast-analyser.html) 或 [WebAIM颜色对比度检查程序](https://webaim.org/resources/contrastchecker/). 这些工具可以用来检查颜色对，并报告任何对比度问题。
 
 或者，如果您不太在意页面外观的指定，则可以选择不指定背景和前景文本颜色。无需检查对比度，因为用户的浏览器决定了文本和背景的颜色。
 
@@ -848,7 +848,7 @@ John Smith's publications
 >[!NOTE]
 以上代码片段仅用于说明目的，建议使用&#x200B;**图像**&#x200B;组件。
 
-虽然提供无需附加上下文即可标识链接目的的链接文本是一种可取的方法，但该方法并不认为始终可行。与上下文无关的链接可用于以下情况，其HTML示例可在中找到 [如何达到成功标准2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+虽然建议您提供无需附加上下文即可标识链接目的的链接文本，但您并不认为始终可行。 与上下文无关的链接可用于以下情况，其HTML示例可在中找到 [如何达到成功标准2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * 当链接文本是由紧密相关的链接组成的列表的一部分时，以及当链接周围的列表项提供了足够的上下文时。
 * 当可以通过&#x200B;*之前*（而非之后）的段落文本清晰识别链接目的时。
