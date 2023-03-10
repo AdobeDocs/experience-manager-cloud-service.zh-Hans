@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 94%
+source-wordcount: '708'
+ht-degree: 77%
 
 ---
 
@@ -63,6 +63,25 @@ ht-degree: 94%
 在提取阶段，要对现有迁移集进行&#x200B;***增补***，则必须禁用&#x200B;*覆盖*&#x200B;选项。有关更多详细信息，请参阅[增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)。
 
 在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关更多详细信息，请参阅[增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
+
+## 迁移集到期 {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="迁移集过期"
+>abstract="了解迁移集的到期情况。"
+
+所有迁移集将在长时间处于约90天的非活动状态后最终过期。 在项目信息卡和迁移作业表行上显示一段时间后，迁移集将过期，并且其数据将不再可用。 通过以下方式根据迁移集执行操作，可以轻松延长到期时间：
+
+* 编辑其描述
+* 获取其提取密钥
+* 对其执行提取
+* 从中执行引入
+
+可以在“迁移集”行上监控迁移集的到期情况。 此外，还添加了项目信息卡，这是一个有用的视觉标志，表明迁移集即将到期。
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## 后续内容 {#whats-next}
 

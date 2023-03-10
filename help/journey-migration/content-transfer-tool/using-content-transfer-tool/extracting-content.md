@@ -2,9 +2,9 @@
 title: 从源中提取内容
 description: 从源中提取内容
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '663'
 ht-degree: 24%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 24%
 请按照以下步骤从内容传输工具中提取迁移集：
 
 >[!NOTE]
->如果使用Amazon S3、Azure数据存储或文件数据存储作为数据存储类型，则可以运行可选的预复制步骤以显着加快提取阶段。 预复制步骤对于第一次完全提取和摄取最有效。 为此，您需要配置 `azcopy.config` 文件（在运行提取之前）。 请参阅 [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 了解更多详细信息。
+>如果使用Amazon S3、Azure数据存储或文件数据存储作为数据存储类型，则可以运行可选的预复制步骤以显着加快提取阶段。 预复制步骤对于第一次完全提取和摄取最有效。 请参阅 [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 了解更多详细信息。
 
 1. 从中选择一个迁移集 **内容传输** 向导并单击 **Extract** 以开始提取。
 

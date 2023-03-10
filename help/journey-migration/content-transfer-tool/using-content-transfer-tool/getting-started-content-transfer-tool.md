@@ -2,10 +2,10 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 9%
+source-wordcount: '1388'
+ht-degree: 8%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 9%
 >title="运行内容传输工具"
 >abstract="了解如何使用内容传输工具将内容迁移到AEMas a Cloud Service（创作/发布）。"
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 参阅演示"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="教程 — 使用内容传输工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 — 使用内容传输工具"
 
 以下部分适用于内容传输工具的新版本。 阅读本节内容，了解如何使用内容传输工具将内容迁移到AEMas a Cloud Service：
 
@@ -69,8 +69,8 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="提取设置阶段"
->abstract="了解如何创建迁移集并复制提取密钥。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="教程 — 使用内容传输工具"
+>abstract="了解如何创建和管理迁移集以及如何复制提取密钥。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 — 使用内容传输工具"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -84,9 +84,11 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >在Cloud Acceleration Manager中，每个项目最多可以创建5个迁移集。
+   >在Cloud Acceleration Manager中，每个项目最多可以创建五个迁移集，包括已过期的迁移集。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+
+   将显示以下对话框。 请注意，迁移集将在长时间不活动后过期。 在项目信息卡和迁移作业表行上显示警告一段时间后，迁移集将过期，并且其数据将不再可用。 审核 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 了解详细信息。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 

@@ -2,9 +2,9 @@
 title: 使用内容传输工具的准则和最佳实践
 description: 使用内容传输工具的准则和最佳实践
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1554'
 ht-degree: 23%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 23%
 * 通过更好的加载状态、防护机制和错误处理改善用户体验
 * 摄取日志将保留，并且始终可用于进行故障排除
 
-要开始使用新版本，您需要卸载旧版本的内容传输工具。 之所以需要这样做，是因为新版本带来了重大的体系结构变化。 使用v2.0.10时，您需要创建新的迁移集，并对新的迁移集重新运行提取和摄取。 如果迁移已在进行中，您可以继续使用以前版本的CTT，直到迁移完成。
+要开始使用新版本，您需要卸载旧版本的内容传输工具。 之所以需要这样做，是因为新版本带来了重大的体系结构变化。 使用版本2.x时，您需要创建新迁移集，并对新迁移集重新运行提取和摄取。
 不再支持2.0.0之前的版本，建议使用最新版本。
 
 以下准则和最佳实践适用于新版本的内容传输工具：
@@ -85,11 +85,13 @@ ht-degree: 23%
 
 * 使用时 `Amazon S3` 或 `Azure` 作为源AEM系统上的数据存储，数据存储应进行配置，以便存储的blob无法删除（垃圾收集）。 这样可以确保索引数据的完整性，如果未能按此方式进行配置，则可能会导致因缺少此索引数据的完整性而导致提取失败。
 
-* 如果使用自定义索引，则必须确保为自定义索引配置 `tika` 节点。 请参阅 [准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) 了解更多详细信息。
+* 如果使用自定义索引，则必须确保为自定义索引配置 `tika` 节点。 请参阅 [准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 了解更多详细信息。
 
 * 如果您打算进行增补，则必须不要更改现有内容的内容结构，即从初次提取时更改到运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中对此进行限制。
 
 * 如果您打算将版本包含在迁移集中，并使用执行增补 `wipe=false`，则由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望启用版本清除，并且要对迁移集执行增补，则必须按以下方式执行引入 `wipe=true`.
+
+* 迁移集将在长时间不活动后过期，之后其数据将不再可用。 请查阅 [迁移集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 了解更多详细信息。
 
 ## 后续内容 {#whats-next}
 
