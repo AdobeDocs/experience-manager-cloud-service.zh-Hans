@@ -2,10 +2,10 @@
 title: 体验审核测试
 description: 了解体验审核如何验证您的部署过程，并帮助确保部署的更改符合性能、可访问性、最佳实践和 SEO 的基线标准。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
+source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager 中的体验审核可确保最终用户在网站上的体验达到
 
 >[!TIP]
 >
->您可以配置在执行以下操作时体验审核中包含哪些页面 [设置您的管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>在[设置您的管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)时，您可以配置要包含在体验审核中的页面。
 
 ## 了解体验审核结果 {#understanding-experience-audit-results}
 

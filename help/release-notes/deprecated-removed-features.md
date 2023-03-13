@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的功能的发行说明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: d848c1a9369a91cbfd0105e4acf2fb390ca20b1a
+source-git-commit: 459e6cbf91f9b7f995bd1fd9c8758962c41c9341
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Foundation] | 对 Apache Sling 数据源（OSGi 包 org.apache.sling.datasource）的支持 | 不适用 | 已删除 |
 | [!DNL Foundation] | 对 JST 脚本模板（OSGi 包 org.apache.sling.scripting.jst）的支持 | 不适用 | 已删除 |
 | [!DNL Foundation] | 对 Apache Felix Http Whiteboard 的支持 | OSGi Http Whiteboard | 2022 年 3 月 |
-| [!DNL Foundation] | 支持com.adobe.granite.oauth.server | Adobe IMS集成 | 2023年3月 |
+| [!DNL Foundation] | 支持 com.adobe.granite.oauth.server | Adobe IMS 集成 | 2023 年 3 月 |
 
 
 ## Java API {#java-api}
