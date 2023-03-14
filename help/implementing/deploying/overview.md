@@ -4,9 +4,9 @@ description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3497'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 ## 简介 {#introduction}
 
-与 AEM 内部部署和 Managed Services 解决方案相比，AEM as a Cloud Service 中的代码开发基础是相似的。开发人员编写代码并在本地进行测试，然后将代码推送到远程 AEM as a Cloud Service 环境。需要使用 Cloud Manager，它是 Managed Services 的一个可选内容交付工具。现在，这是将代码部署到AEMas a Cloud Service开发、暂存和生产环境的唯一机制。 为了在部署上述环境之前快速验证和调试功能，可以将代码从本地环境同步到 [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md).
+与 AEM 内部部署和 Managed Services 解决方案相比，AEM as a Cloud Service 中的代码开发基础是相似的。开发人员编写代码并在本地进行测试，然后将代码推送到远程 AEM as a Cloud Service 环境。需要使用 Cloud Manager，它是 Managed Services 的一个可选内容交付工具。现在，这是用于将代码部署到 AEM as a Cloud Service 开发、暂存和生产环境的唯一机制。要在部署上述环境之前进行快速功能验证和调试，可以将代码从本地环境同步到[快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
 [AEM 版本](/help/implementing/deploying/aem-version-updates.md)的更新始终是独立于推送[自定义代码](#customer-releases)的部署事件。从另一个角度来看，自定义代码版本应针对生产中的 AEM 版本进行测试，因为这是它将部署到其上的版本。之后将频繁进行 AEM 版本更新，并将自动应用这些更新。它们旨在与已部署的客户代码向后兼容。
 
@@ -170,8 +170,8 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="包管理器 – 迁移可变内容包"
->abstract="探索包管理器的用法，以了解应将内容包安装为“一次性”的用例，包括将特定内容从生产环境导入到暂存环境，以便调试生产问题，将小型内容包从内部部署环境传输到AEM云环境等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="内容传输工具"
+>abstract="探究包管理器在应“一次性”安装内容包的用例中的用法，其中包括将特定内容从生产导入到暂存来调试生产问题，将小型内容包从内部部署环境传输到 AEM 云环境等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans#cloud-migration" text="内容传输工具"
 
 在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境来调试生产问题。在这些场景中，可以在 AEM as a Cloud Service 环境中使用[包管理器](/help/implementing/developing/tools/package-manager.md)。
 
@@ -257,7 +257,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 复制 {#replication}
 
-发布机制与 [AEM Replication Java API](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html) 向后兼容。
+发布机制与 [AEM Replication Java API](https://helpx.adobe.com/cn/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html) 向后兼容。
 
 为了使用云就绪 AEM 快速入门来开发和测试复制，需要将经典的复制功能与创作/发布设置结合使用。如果已为云删除 AEM 创作上的 UI 入口点，用户将转到 `http://localhost:4502/etc/replication` 以进行配置。
 
@@ -279,38 +279,38 @@ above appears to be internal, to confirm with Brian -->
 
 如果部署后报告或检测到失败，则可能需要回滚到蓝色版本。明智的做法是确保蓝色代码与绿色版本所创建的任何新结构兼容，因为新结构（任何可变内容）将不会回滚。如果旧代码不兼容，则需要在后续的客户版本中应用修复。
 
-## 快速开发环境(RDE) {#rde}
+## 快速开发环境 (RDE) {#rde}
 
-[快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) （简称RDE ）允许开发人员快速部署和查看更改，从而最大限度地减少测试已证明可在本地开发环境中工作的功能所需的时间。
+[快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)（简称为 RDE）允许开发人员快速部署和审查更改，最大程度地减少测试已证明适用于本地开发环境的功能所需的时间。
 
-与通过Cloud Manager管道部署代码的常规开发环境不同，开发人员使用命令行工具将代码从本地开发环境同步到RDE。 一旦更改在RDE中成功测试，则应通过Cloud Manager管道将它们部署到常规云开发环境，这将通过适当的质量关卡对代码进行检查。
+与通过 Cloud Manager 管道部署代码的常规开发环境不同，开发人员使用命令行工具将代码从本地开发环境同步到 RDE。在 RDE 中成功测试更改后，应通过 Cloud Manager 管道将更改部署到常规云开发环境，这可让代码通过相应的质量关卡。
 
 ## 运行架构 {#runmodes}
 
-在现有的 AEM 解决方案中，客户可以选择在任意运行架构中运行实例，并应用 OSGI 配置或将 OSGI 捆绑包安装到这些特定实例。定义的运行模式通常包括 *服务* （创作和发布）和环境(rde、dev、stage、prod)。
+在现有的 AEM 解决方案中，客户可以选择在任意运行架构中运行实例，并应用 OSGI 配置或将 OSGI 捆绑包安装到这些特定实例。定义的运行架构通常包括&#x200B;*服务*（创作和发布）和环境（RDE、开发、暂存、生产）。
 
 另一方面，AEM as a Cloud Service 会更武断地认定哪些运行架构可用以及如何将 OSGI 捆绑包和 OSGI 配置映射到这些架构：
 
-* OSGI配置运行模式必须为环境引用RDE、dev、stage、prod，或为服务引用author、publish。 支持组合使用 `<service>.<environment_type>`，但必须按此特定顺序使用它们（例如 `author.dev` 或 `publish.prod`）。应直接从代码中引用 OSGI 令牌，而不是使用 `getRunModes` 方法（该方法在运行时将不再包含 `environment_type`）引用它。有关更多信息，请参阅[为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI 配置运行架构必须引用 RDE、开发、暂存或生产作为环境，或引用创作和发布作为服务。支持组合使用 `<service>.<environment_type>`，但必须按此特定顺序使用它们（例如 `author.dev` 或 `publish.prod`）。应直接从代码中引用 OSGI 令牌，而不是使用 `getRunModes` 方法（该方法在运行时将不再包含 `environment_type`）引用它。有关更多信息，请参阅[为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)。
 * OSGI 捆绑包运行架构仅适用于服务（创作、发布）。每运行架构 OSGI 捆绑包应安装在 `install/author` 或 `install/publish` 下的内容包中。
 
 与现有 AEM 解决方案一样，无法使用运行架构来仅安装特定环境或服务的内容。如果需要使用不在暂存或生产环境中的数据或 HTML 为开发环境播种，则可使用包管理器。
 
 不受支持的运行架构配置包括：
 
-* **config** (*默认情况下，适用于所有AEM服务*)
+* **config**（*默认值，适用于所有 AEM 服务*）
 * **config.author**（*适用于所有 AEM 创作服务*）
 * **config.author.dev**（*适用于 AEM 开发创作服务*）
-* **config.author.rde** (*适用于AEM RDE创作服务*)
+* **config.author.rde**（*适用于 AEM RDE 创作服务*）
 * **config.author.stage**（*适用于 AEM 暂存创作服务*）
 * **config.author.prod**（*适用于 AEM 生产创作服务*）
 * **config.publish**（*适用于 AEM 发布服务*）
 * **config.publish.dev**（*适用于 AEM 开发发布服务*）
-* **config.publish.rde** (*适用于AEM RDE Publish服务*)
+* **config.publish.rde**（*适用于 AEM RDE 发布服务*）
 * **config.publish.stage**（*适用于 AEM 暂存发布服务*）
 * **config.publish.prod**（*适用于 AEM 生产发布服务*）
 * **config.dev**（*适用于 AEM 开发服务*）
-* **config.rde** (*适用于RDE服务*)
+* **config.rde**（*适用于 RDE 服务*）
 * **config.stage**（*适用于 AEM 暂存服务*）
 * **config.prod**（*适用于 AEM 生产服务*）
 
