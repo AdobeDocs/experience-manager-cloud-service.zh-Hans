@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
-workflow-type: tm+mt
+source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+workflow-type: ht
 source-wordcount: '1797'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ AEM as a Cloud Service 可提供三种类型的环境：
 
    有关更多详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-hans#using-cloud-manager)。
 
-* **快速开发环境**:允许快速迭代开发，以调试新代码或现有代码。
+* **快速开发环境**：允许快速开发迭代以调试新的或现有的代码。
 
 ## 程序 {#programs}
 
@@ -92,7 +92,7 @@ AEM 程序是包含以下内容的容器：
 | 代码存储库 (Git) |  1 |
 | 基准图像（站点或资产） |  1 |
 | 暂存和生产环境集 (1:1) | 0 或 1 |
-| 非生产环境（RDE、开发或演示） | 0 到 N |
+| 非生产环境（RDE，开发或演示） | 0 到 N |
 | 每个环境的管道 | 0 或 1 |
 
 AEM as a Cloud Service 最初提供两种类型的程序：
