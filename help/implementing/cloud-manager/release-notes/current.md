@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.2.0 发行说明
-description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2023.2.0 发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.2.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.2.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9fe49df47c985f94e45d60673f6742788c8014d5
-workflow-type: tm+mt
+source-git-commit: a38eb247fd90197f23bfaea59b8fc734ff9e4942
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.2.0 发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.2.0 的发行说明 {#release-notes}
 
 本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.2.0 版本的发行说明。
 
@@ -21,16 +21,16 @@ ht-degree: 40%
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2023.2.0版的发布日期是2023年2月16日。 下一个版本计划于 2023 年 3 月 16 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 2023.2.0 版本的发布日期是 2023 年 2 月 16 日。下一个版本计划于 2023 年 3 月 16 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 用户可以下载 [自定义UI测试](/help/implementing/cloud-manager/ui-testing.md) 结果。
-* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE)是一种新型的云环境，旨在作为一种快速、一致且可扩展的方式，用于验证在本地工作的代码是否也能在云中按预期工作。
-   * RDE使开发人员能够快速解决问题并在AEMas a Cloud Service上部署新功能。
-   * 使用命令行工具，开发人员可以快速将内容包、包、内容文件、OSGi配置或调度程序配置同步到RDE。
+* 用户可以从 UI 下载[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md)结果。
+* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE) 是一种新型云环境，旨在提供快速、一致且可扩展的方式以验证在本地正常工作的代码在云中也可发挥预期的作用。
+   * 通过 RDE，开发人员可快速地解决问题并在 AEM as a Cloud Service 上部署新功能。
+   * 开发人员可使用命令行工具快速地将包、捆绑、内容文件、OSGi 配置或 Dispatcher 配置同步到 RDE。
 
 ## API 更改 {#api-changes}
 
-* 更改了API以支持 [RDE。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
-* API现在允许检索 [执行对象。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)
+* 改动了 API 以支持 [RDE](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)。
+* 现在可通过 API 检索[执行工件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)。
