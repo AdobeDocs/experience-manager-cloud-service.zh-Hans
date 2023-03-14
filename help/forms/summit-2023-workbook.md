@@ -5,9 +5,10 @@ description: 使用核心组件和Headless构建引人入胜的Forms
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 1%
 
 ---
@@ -242,8 +243,6 @@ AEM Forms作为Cloud Service沙盒
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. 在“Command Prompt（命令提示）”窗口中，运行以下命令：
 
@@ -271,8 +270,7 @@ AEM Forms作为Cloud Service沙盒
 
    >[!NOTE]
    >
-   >如果您在执行之后在浏览器中遇到空白屏幕 `npm run live` 命令，更改 `localhost` 在浏览器URL中转到127.0.0.1并点击 **输入**.
-
+   >如果您在执行之后在浏览器中遇到空白屏幕 `npm run live` 命令超过3-4分钟，更改 `localhost` 在浏览器URL中转到127.0.0.1并点击 **输入**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ AEM Forms作为Cloud Service沙盒
 
    >[!NOTE]
    >
-   >如果您在执行之后在浏览器中遇到空白屏幕 `npm start` 命令，更改 `localhost` 在浏览器URL中转到127.0.0.1并点击 **输入**.
+   > 
+   > 如果您在执行之后在浏览器中遇到空白屏幕 `npm start` 命令超过3-4分钟，更改 `localhost` 在浏览器URL中转到127.0.0.1并点击 **输入**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ AEM Forms作为Cloud Service沙盒
 
    >[!NOTE]
    >
-   >如果您在执行之后在浏览器中遇到空白屏幕 `npm start` 命令，更改 `localhost` 在浏览器URL中转到127.0.0.1并点击 **输入**.
+   >如果您在执行之后在浏览器中遇到空白屏幕 `npm start` 命令超过3-4分钟，更改 `localhost` 在浏览器URL中转到127.0.0.1并点击 **输入**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 
