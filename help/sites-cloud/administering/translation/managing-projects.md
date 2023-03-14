@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中创建和管理机器翻译项目和人工�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
-workflow-type: tm+mt
+source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
+workflow-type: ht
 source-wordcount: '4086'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -448,12 +448,12 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 ## 移动或重命名源页面 {#move-source}
 
-如果已翻译的源页面需要 [重命名或移动](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)，则在移动后再次翻译页面将根据新页面名称/位置创建新语言副本。 基于先前名称/位置的旧语言副本仍将存在。
+如果需要[重命名或移动](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)一个已翻译的源页面，在移动后重新翻译该页面将根据新的页面名称/位置创建新的语言副本。基于上一个名称/位置的旧语言副本仍将存在。
 
-此情景中的最佳实践是遵循以下步骤：
+在此场景中，最佳实践是遵循以下过程：
 1. 取消发布与要移动的源页面关联的语言副本。
 1. 删除它们。
-1. 从新移动的源页面创建新语言副本。
+1. 从新移动的源页面创建新的语言副本。
 1. 发布新创建的语言副本。
 
 ## 导入和导出翻译作业 {#import-export}
