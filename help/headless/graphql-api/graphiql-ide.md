@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
+source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -102,9 +102,9 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 >[!NOTE]
 >
->Dispatcher上的自定义重写规则可能会覆盖AEM发布中的默认值。
+>Dispatcher 上的自定义重写规则可能会覆盖来自 AEM 发布的默认值。
 >
->如果您根据位置匹配模式从调度程序发送基于TTL的缓存控制标头，则可能需要排除 `/graphql/execute.json/*` 从匹配项中。
+>如果您根据位置匹配模式从 Dispatcher 发送基于 TTL 的缓存控制标头，则如有必要，您可能需要从匹配项中排除 `/graphql/execute.json/*`。
 
 使用 GraphQL，您可以配置 HTTP 缓存标头，以控制单个持久查询的这些参数。
 

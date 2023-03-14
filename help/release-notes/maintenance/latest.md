@@ -1,27 +1,27 @@
 ---
-title: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
-description: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新维护发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新维护发行说明。'
 source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 6%
+ht-degree: 33%
 
 ---
 
 
 # 维护发行说明 {#maintenance-release-notes}
 
-以下部分概述了Experience Manageras a Cloud Service最新维护版本的技术发行说明。
+以下部分概述了 Experience Manager as a Cloud Service 的最新维护版本的技术发行说明。
 
-## 发行说11289 {#release-11289}
+## 发行版本 11289 {#release-11289}
 
 以下是维护版本11289的持续改进，该版本于2023年3月7日公开发布。 此维护版本是以前的维护版本10912的更新。
 
-此维护版本的功能启用将为您提供完整的功能集。 请参阅 [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md) 以了解完整的详细信息。
+此维护版本的功能支持将为您提供完整功能集。有关完整详细信息，请参阅[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ### 已知问题 {#known-issues}
 
-如果您使用的是CORS，请勿升级。 已发现此版本中影响GraphQL内容投放功能的问题。 更改了有关如何缓存GraphQL持久查询的默认AEM Dispatcher配置，可能会中断此类查询的GraphQL内容交付。 此问题将在我们的下一个维护版本中修复。
+如果您使用的是 CORS，请不要升级。已发现此版本中影响GraphQL内容投放功能的问题。 更改了有关如何缓存GraphQL持久查询的默认AEM Dispatcher配置，可能会中断此类查询的GraphQL内容交付。 此问题将在我们的下一个维护版本中修复。
 
 ### 修复的问题 {#fixed-issues}
 
@@ -44,11 +44,11 @@ ht-degree: 6%
 
 - GRANITE-44467 — 修复了在更新现有节点时，某些实例下的Filevault不保留mixin类型和子节点时导致导入失败的问题
 
-### 嵌入式技术 {#embedded-tech}
+### 嵌套的技术 {#embedded-tech}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
 | AEM OAK | 1.44-T20221206170501-6d59064 | [Oak API 1.44.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
-| AEM SLING API | 版本2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM SLING API | 版本 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 版本1.4.20 - 1.4.0 | [HTML模板语言规范](https://github.com/adobe/htl-spec) |
-| AEM 核心组件 | 版本2.21.2 | [AEM WCM核心组件](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 核心组件 | 版本 2.21.2 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |

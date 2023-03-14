@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: d4edec4448fd1b044875271cdcef3c7ada56cfe5
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
->title="AEM Headless开发人员资源和高级文档"
->abstract="了解AEM Headless CMS以及构建和交付更好的应用程序和更快的体验所需的一切。"
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans" text="AEM Headless开发人员资源"
+>title="AEM Headless 开发人员资源和高级文档"
+>abstract="了解 AEM Headless CMS 以及构建和交付更好的应用程序和更快的体验所需的一切。"
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans" text="AEM Headless 开发人员资源"
 
 ## 简介 {#introduction}
 

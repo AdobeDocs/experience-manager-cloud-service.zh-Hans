@@ -4,10 +4,10 @@ description: 了解如何管理工作流实例
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
+source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 95%
    >[!NOTE]
    >
    >
-   >要终止或中止工作流，它必须处于等待用户干预的状态，例如在参与者步骤中。 尝试中止当前正在执行的作业（正在执行的活动线程）的工作流可能不会产生预期结果。
+   >工作流必须处于一种等待用户干预的状态（例如，在参与者步骤中），才能终止或中止工作流。尝试中止当前正在执行作业（正在执行的活动线程）的工作流可能无法生成预期结果。
 
 
 ## 查看存档的工作流 {#viewing-archived-workflows}

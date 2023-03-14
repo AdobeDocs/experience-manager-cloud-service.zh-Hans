@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# 介绍 AEM Forms as a Cloud Service {#introduction}
+# 简介 AEM Forms as a Cloud Service {#introduction}
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 为企业提供了一个云原生 Platform as a Service (PaaS) 解决方案，用于创建、管理、发布和更新复杂的数字表单，同时将提交的数据与后端流程、业务规则集成，并将数据保存在外部数据存储中。
 

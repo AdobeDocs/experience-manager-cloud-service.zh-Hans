@@ -4,10 +4,10 @@ description: 与 Adobe Target 集成
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
+source-git-commit: c69f0b838638b4a2c2ea9f54836954f72710594f
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 ### IMS 配置 {#ims-configuration}
 
-需要适用于 Launch 和 Target 的 IMS 配置才能将 Target 与 AEM 和 Launch 正确集成。虽然已在 AEM as a Cloud Service 中预配置适用于 Launch 的 IMS 配置，但必须创建 Target IMS 配置（在设置 Target 后）。请参阅 [与Adobe Target集成时使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md) 和视频 [集成Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) 了解如何创建Target IMS配置。
+需要适用于 Launch 和 Target 的 IMS 配置才能将 Target 与 AEM 和 Launch 正确集成。虽然已在 AEM as a Cloud Service 中预配置适用于 Launch 的 IMS 配置，但必须创建 Target IMS 配置（在设置 Target 后）。参考[与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)并观看视频[集成 Experience Platform Launch 和 AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)，了解如何创建 Target IMS 配置。
 
 ### Adobe Target 租户 ID 和 Adobe Target 客户端代码 {#tenant-client}
 

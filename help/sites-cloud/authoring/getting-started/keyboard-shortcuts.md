@@ -2,10 +2,10 @@
 title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
+source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 |  | `Left Arrow` | 向上导航树结构/折叠树节点 |
 |  | `Down Arrow` | 在同一级别的页面列表中向下移动 |
 |  | `Up Arrow` | 在同一级别的页面列表中向上移动 |
-| 控制台 - 列视图 | `Shift-Up/Down Arrow` | 上移/下移并选择同一级别的页面列表 |
+| 控制台 - 列视图 | `Shift-Up/Down Arrow` | 在同一级别的页面列表中向上/向下移动并选择 |
 |  | `Esc` | 在同一级别的页面列表中向上移动 |
 | 控制台 | `?` | 键盘快捷键帮助 |
 |  | `/` | 调用[搜索](/help/sites-cloud/authoring/getting-started/search.md) |

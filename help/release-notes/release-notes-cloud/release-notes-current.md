@@ -5,20 +5,20 @@ mini-toc-levels: 1
 source-git-commit: ffc3ba84630fe85d2b7e5a1f55aa71a2d978991c
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
 >[!NOTE]
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版、2022 版等的发行说明。
 >
->请查看 [Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 了解即将推出的功能激活 [!DNL Experience Manager] as a Cloud Service。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
@@ -26,56 +26,56 @@ ht-degree: 20%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本(2023.1.0)为2023年2月9日。 下一个功能版本(2023.2.0)计划于2023年3月30日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.1.0) 的发布日期为 2023 年 2 月 9 日。下一个功能版本 (2023.2.0) 计划于 2023 年 3 月 30 日发布。
 
 ## 发布视频 {#release-video}
 
-请查看2023年1月发布概述视频，了解2023.1.0版本中新增功能摘要：
+观看 2023 年 1 月版概述视频，大致了解 2023.1.0 版的新增功能：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] 预发布中的新增功能 {#prerelease-features-sites}
+### [!DNL Sites] 预发行版本中的新增功能 {#prerelease-features-sites}
 
-* AEM GraphQL内容交付API现在支持GraphQL [分页](/help/headless/graphql-api/content-fragments.md#paging) 和 [排序](/help/headless/graphql-api/content-fragments.md#sorting)，以提高获取和渲染大型内容集的效率。 GraphQL分页允许通过返回子集中的结果而不是一次返回所有结果来缩短查询响应时间。 GraphQL排序允许按所需的顺序放置内容集，使客户端应用程序更轻松地处理内容。  在AEM GraphQL引擎中使用混合筛选可进一步缩短查询响应时间。 现在，会以与查询过滤器对应的较小集从JCR中读取内容。
+* AEM GraphQL 内容交付 API 现在支持 GraphQL[分页](/help/headless/graphql-api/content-fragments.md#paging)和[排序](/help/headless/graphql-api/content-fragments.md#sorting)，提高了获取和呈现大型内容集的效率。利用 GraphQL 分页，可以通过按子集返回结果（而不是一次性返回所有结果）来缩短查询响应时间。利用 GraphQL 排序，可以按所需顺序放置内容集，从而使客户端应用程序能够更轻松地处理内容。AEM GraphQL 引擎中的混合筛选进一步缩短了查询响应时间。现在以与查询筛选器对应的较小集的形式从 JCR 中读取内容。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* Assets Reports现在包括管理员执行以下操作的能力： [生成资源下载报表](/help/assets/asset-reports.md) 从Experience Manager Assetsas a Cloud Service部署。 此数据使管理员能够进一步从关键成功指标中获得见解，以衡量在您的企业内和客户采用资源的情况。
+* 现在利用资产报告，管理员可以从 Experience Manager Assets as a Cloud Service 部署中[生成资产下载报告](/help/assets/asset-reports.md)。此数据进一步支持管理员从关键成功量度获得见解，以便衡量在您的企业内和客户采用资产的情况。
 
    ![其他格式的 PDF 演绎版](/help/release-notes/assets/choose_report.png)
 
-* 除了用于身份验证的 Access 密钥外，Experience Manager Assets 现在还[支持 SAS 令牌](/help/assets/add-assets.md#asset-bulk-ingestor)，同时还连接到 Azure Blob 存储数据源，从而使用“批量导入”工具摄取资产。
+* 除了用于身份验证的访问密钥外，Experience Manager Assets 现在还[支持 SAS 令牌](/help/assets/add-assets.md#asset-bulk-ingestor)，同时还连接到 Azure Blob 存储数据源，从而使用“批量导入”工具摄取资产。
 
-* 改进了Asset compute中CMYK图像的管理，使您能够为CMYK图像生成智能裁切和智能标记。
+* 改进了 Asset Compute 中的 CMYK 图像管理，使您能够为 CMYK 图像生成智能裁切和智能标记。
 
-### [!DNL Assets] 预发布中的新增功能 {#prerelease-features-assets}
+### [!DNL Assets] 预发行版本中的新增功能 {#prerelease-features-assets}
 
-* Experience Manager Assets现在支持 [从Google Cloud Platform大规模引入资源](/help/assets/add-assets.md#asset-bulk-ingestor) 使用“批量导入”工具。
+* Experience Manager Assets 现在支持使用“批量导入”工具[从 Google Cloud Platform 大规模摄取资产](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 中的新增功能 {#new-features-available-in-channel}
 
-* **[用于生成非交互式PDF文档和可打印输出的工作流步骤](/help/forms/aem-forms-workflow-step-reference.md)**：使用AEM Workflow步骤为您的业务流程自动创建非交互式PDF文档和可打印输出，从而简化文档生成过程并节省时间。
-* **[在自适应Forms中使用脚注提供引用或附加信息](/help/forms/footnotes-richtextsupport.md)**：在自适应表单中使用脚注以显示有关如何完成或使用表单的信息。 您还可以使用它来提供括号信息、版权权限和其他有用信息。
+* **[生成非交互式 PDF 文档和可打印输出的工作流步骤](/help/forms/aem-forms-workflow-step-reference.md)**：使用 AEM 工作流步骤自动为业务流程创建非交互式 PDF 文档和可打印输出，从而简化文档生成过程并节省时间。
+* **[在自适应表单中使用脚注来提供引文或额外信息](/help/forms/footnotes-richtextsupport.md)**：在自适应表单中使用脚注来显示有关如何完成或使用表单的信息。您还可以使用它提供附加信息、版权许可和其他有用信息。
 
-### [!DNL Forms] 预发布中的新增功能 {#prerelease-features-forms}
+### [!DNL Forms] 预发行版本中的新增功能 {#prerelease-features-forms}
 
-* **[使用数据捕获核心组件构建自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**： [使用自适应Forms编辑器](/help/forms/creating-adaptive-form-core-components.md) 创建基于标准化数据捕获组件（核心组件）的表单。 这些组件为您的数字注册体验提供自定义功能、缩短开发时间并降低维护成本。
-* **[基于自适应Forms的核心组件样式的前端管道支持](/help/forms/using-themes-in-core-components.md)**：通过前端部署管道部署基于核心组件的自适应Forms的轻松自定义的基于BEM的主题，以增强表单的外观。
-* **[为基于核心组件的自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)**：为基于核心组件的自适应表单创建记录，用于以打印或文档格式提交进行长期存档。
+* **[使用数据捕获核心组件以构建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)**:[使用自适应表单编辑器](/help/forms/creating-adaptive-form-core-components.md)创建基于标准化数据捕获组件（核心组件）的表单。对于您的数字注册体验，这些组件可以提供定制功能，缩短开发时间和降低维护成本。
+* **[对设置基于核心组件的自适应表单样式的前端管道支持](/help/forms/using-themes-in-core-components.md)**：为基于核心组件的自适应表单使用易于定制的基于 BEM 的主题，方式是使用前端部署管道来部署它们以改进表单外观。
+* **[为基于核心组件的自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)**：在提交时为基于核心组件的自适应表单创建记录以进行长期存档（采用打印或文档格式）。
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[将自适应Forms提交到Microsoft SharePoint和Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**：可直接将自适应表单数据发送到Microsoft SharePoint和Microsoft OneDrive，从而简化数据提交。 您可以提交基于架构的数据和无架构的数据。 这些提交操作是对已可用提交操作的补充。
-* **[使用将自适应表单另存为模板功能高效构建表单](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**：通过将自适应表单另存为模板并重用下一个自适应表单的模板来简化表单构建过程。
-* **[将AEM Forms连接到支持JDBC的数据库](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**：轻松将AEM Forms数据模型连接到支持JDBC的数据库，从而允许您无缝地读取和写入数据。
-* **[使用Open API 3.0与REST端点集成](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**：将AEM Formsas a Cloud Service表单数据模型连接到支持Open API规范版本3.0的REST端点，使您能够轻松发送和接收数据。
-* **[共享自适应表单以供审阅](/help/forms/create-reviews-forms.md)**：使用自适应Forms审阅机制可允许一个或多个审阅人审阅表单。
+* **[将自适应表单提交到 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**：利用将自适应表单数据直接发送到 Microsoft SharePoint 和 Microsoft OneDrive 的功能，简化数据提交。您可以提交基于架构的数据和无架构的数据。这些提交操作是对现有可用提交操作的补充。
+* **[使用“将自适应表单另存为模板”功能进行高效的表单构建](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**：通过将自适应表单另存为模板并将此模板重用于下一个自适应表单来简化表单构建过程。
+* **[将 AEM Forms 连接到 JDBC 支持的数据库](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**：轻松将 AEM Forms 数据模型连接到支持 JDBC 的数据库，从而无缝读取和写入数据。
+* **[使用 Open API 3.0 与 REST 端点集成](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**：将 AEM Forms as a Cloud Service 表单数据模型连接到支持 Open API 规范版本 3.0 的 REST 端点，从而轻松发送和接收数据。
+* **[共享自适应表单以进行审阅](/help/forms/create-reviews-forms.md)**：使用自适应表单审阅机制以允许一个或多个审阅者审阅表单。
 
 
 ## CIF 加载项 {#cloud-services-cif}
@@ -91,29 +91,29 @@ ht-degree: 20%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE使开发人员能够快速排除问题并在AEMas a Cloud Service上部署新功能。
+* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE 使开发人员能够快速解决问题并在 AEM as a Cloud Service 上部署新功能。
 
-   快速开发环境是一种新型的云环境，旨在作为一种快速、一致且可扩展的方式，用于验证在本地工作的代码能否在云中正常工作。 使用命令行工具，快速将内容包、捆绑包、内容文件、OSGI配置或Dispatcher配置“同步”到RDE。 请在以下视频中查看此操作的步骤：
+   快速开发环境是一种新型云环境，旨在提供快速、一致且可扩展的方式以验证在本地正常工作的代码在云中也可发挥预期的作用。可使用命令行工具快速地将包、捆绑、内容文件、OSGI 配置或 Dispatcher 配置同步到 RDE。观看以下视频，了解实际操作：
 
    >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   在RDE中成功验证代码后，建议先部署到云开发环境以实施Cloud Manager质量关卡，然后再通过生产管道部署到暂存和生产环境。
+   在 RDE 中成功验证代码后，鼓励部署到云开发环境以执行 Cloud Manager 质量门，然后再通过生产管道部署到暂存环境和生产环境。
 
-   每个程序都包含一个RDE，并且还可以选择许可更多的RDE。
+   每个程序均包含一个 RDE，并且可以选择许可更多 RDE。
 
    >[!NOTE]
    >
-   >RDE将在接下来的几周内逐步推出；您可以向aemcs-rde-support@adobe.com发送电子邮件以跳至前台。
+   >在接下来的几周内，将逐步推出 RDE；您可以将电子邮件发送到 aemcs-rde-support@adobe.com 来排在队伍前面。
 
-* [对服务器端API访问令牌的扩展支持](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)  — 您现在可以生成多个凭据，这对于API具有不同特征的情况非常有用。 现在，还可以以自助方式撤销凭据。
+* [对服务器端 API 访问令牌的扩展支持](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - 您现在可以生成多个凭据，这在 API 具有不同特征的场景中很有用。现在还可以通过自助服务方式来撤销凭据。
 
 ## 维护发行说明 {#maintenance}
 
-您可以找到最新的维护发行说明 [此处](/help/release-notes/maintenance/latest.md).
+您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月发布的完整列表 [此处。](/help/implementing/cloud-manager/release-notes/current.md)
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

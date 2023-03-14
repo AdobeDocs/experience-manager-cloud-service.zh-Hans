@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
+source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 88%
 
 具有必要权限的用户可以创建以下环境类型（在特定租户可用的范围内）。
 
-* **生产+暂存**  — 生产和暂存环境可作为一对使用，并分别用于生产和测试目的。
+* **生产和暂存** – 生产和暂存环境成对可用，分别用于生产和测试目的。
 
 * **开发** – 开发环境可以创建用于开发和测试目的，并且只能与非生产管道相关联。
 
-* **快速开发**  — 快速开发环境(RDE)允许开发人员快速部署和审查更改，从而最大限度地减少测试经验证可在本地开发环境中工作的功能所需的时间。 请参阅 [快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md) 以了解有关如何使用RDE的详细信息。
+* **快速开发环境** - 快速开发环境 (RDE) 允许开发人员快速部署和审查更改，最大程度地减少测试已证明适用于本地开发环境的功能所需的时间。请参阅[快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md)，了解有关如何使用 RDE 的详细信息。
 
-各个环境的功能取决于 [项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 环境。
+单个环境的功能取决于环境的[程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中启用的解决方案。
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -52,13 +52,13 @@ ht-degree: 88%
 
 1. 在出现的&#x200B;**添加环境**&#x200B;对话框中：
 
-   * 选择 [**环境类型**.](#environment-types)
-      * 可用/已使用的环境数显示在环境类型名称后面的括号中。
-   * 提供环境 **名称**.
-   * 提供环境 **描述**.
-   * 选择 **主区域** 从下拉菜单中。
-      * 请注意，创建后无法更改此设置。
-   * 如果您添加 **生产+暂存** 环境中，您需要为生产环境和暂存环境提供环境名称和描述。
+   * 选择&#x200B;[**环境类型**。](#environment-types)
+      * 可用/使用的环境数显示在环境类型名称后面的括号中。
+   * 提供环境&#x200B;**名称**。
+   * 提供环境&#x200B;**描述**。
+   * 从下拉列表中选择&#x200B;**主要区域**。
+      * 请注意，该项目一旦创建便无法更改。
+   * 如果您要添加&#x200B;**生产和暂存**环境，则需要为生产环境和暂存环境提供环境名称和描述。
       ![添加环境对话框](assets/add-environment2.png)
 
 1. 单击&#x200B;**保存**&#x200B;来添加指定环境。
@@ -103,7 +103,7 @@ Cloud Manager 将预览服务（作为附加发布服务提供）提供给每个
 
 ![预览服务及其允许列表](assets/preview-ip-allow.png)
 
-具有必需权限的用户必须先完成以下步骤，然后才能共享预览服务URL，以确保能够访问该URL。
+具有必要权限的用户必须在共享预览服务 URL 之前完成以下步骤，才能访问它。
 
 1. 创建适当的 IP 允许列表，将其应用于预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
 
@@ -111,13 +111,13 @@ Cloud Manager 将预览服务（作为附加发布服务提供）提供给每个
 
 1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)了解详情。
 
-解锁对预览服务的访问后，预览服务名称前的锁定图标将不再显示。
+一旦对预览服务的访问被解锁，预览服务名称前面的锁定图标将不再显示。
 
 激活后，您可以使用 AEM 中的管理发布 UI 将内容发布到预览服务。 请参阅[预览内容](/help/sites-cloud/authoring/fundamentals/previewing-content.md)文档，了解更多详细信息。
 
 >[!NOTE]
 >
->您的环境必须为AEM版本 `2021.05.5368.20210529T101701Z` 或更新版本以使用预览服务。 确保更新管道已在您的环境中成功运行以执行此操作。
+>您的环境必须是 AEM 版本 `2021.05.5368.20210529T101701Z` 或更新版本才能使用预览服务。确保更新管道已在您的环境中成功运行以执行此操作。
 
 ## 更新环境 {#updating-dev-environment}
 

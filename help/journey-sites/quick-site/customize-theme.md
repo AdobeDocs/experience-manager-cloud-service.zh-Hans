@@ -2,10 +2,10 @@
 title: 自定义站点主题
 description: 了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
+source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 97%
 
    >[!TIP]
    >
-   >如果您没有这些凭据，请与管理员联系，以引用 [从模板创建网站一文中的Set Up Proxy User部分](/help/journey-sites/quick-site/create-site.md#proxy-user) 在这个旅程中。
+   >如果您没有这些凭据，请与您的管理员联系并在此历程中参考[“从模板创建站点”一文的“设置代理用户”部分](/help/journey-sites/quick-site/create-site.md#proxy-user)。
 
 1. 登录后，将浏览器中的 URL 更改为指向 AEM 管理员提供给您的示例内容的路径。
 
