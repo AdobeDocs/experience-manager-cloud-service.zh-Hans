@@ -2,8 +2,8 @@
 title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
-workflow-type: tm+mt
+source-git-commit: 3e2635ff34f66c9f7504799204091ef921ccd860
+workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 您必须是&#x200B;**业务负责人**&#x200B;角色的成员才能编辑程序或删除沙盒程序。
 
-## 编辑项目 {#editing}
+## 编辑程序 {#editing}
 
 执行以下步骤来编辑项目。
 
