@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6d7fefce814063476aae8cdafc9cc6b084361a3
+source-git-commit: 4c5c5eed984dcc9361ae2316ce466b4a73c0bf19
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '3969'
 ht-degree: 99%
 
 ---
@@ -514,7 +514,7 @@ ht-degree: 99%
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
-      + [从 [!DNL AEM 6.5 Forms] 或之前的版本迁移到 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
    + 集成 {#integrate}
@@ -539,7 +539,7 @@ ht-degree: 99%
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
-      + 创作自适应表单 - Foundation 组件 {#authoring-adaptive-forms-foundation-components}
+      + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
             + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
@@ -581,7 +581,7 @@ ht-degree: 99%
          + 提高自适应表单的可访问性 {#accessible-adaptive-forms}
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
-         + [创建和管理评价](/help/forms/create-reviews-forms.md)
+         + [创建和管理评论](/help/forms/create-reviews-forms.md)
    + 以表单为中心的工作流 {#create-form-centric-workflows}
       + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
@@ -941,6 +941,7 @@ ht-degree: 99%
    + [维护 AEM 连接器](/help/connectors/maintain.md)
 + 操作 {#operations}
    + [AEM as a Cloud Service 的操作和维护](/help/operations/home.md)
+   + [通知中心](/help/operations/notification-center.md)
    + [内容搜索与索引](/help/operations/indexing.md)
    + [内容复制服务](/help/operations/replication.md)
    + [AEM as a Cloud Service 中的基础设施和服务监控](/help/operations/monitoring.md)
