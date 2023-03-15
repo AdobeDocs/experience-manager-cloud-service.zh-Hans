@@ -119,8 +119,7 @@ ht-degree: 100%
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60（秒）
    >* 完成迁移大约所需的时间 = 60 + (20,000/1000 * 60) = 1260 秒 = 21 分钟
-      >  在开始时增加的额外“60”秒是因开始作业时的初始延迟导致的。
-
+   >  在开始时增加的额外“60”秒是因开始作业时的初始延迟导致的。
    >
    >您还应了解一点，这只是完成作业所需的&#x200B;*最少*&#x200B;时间，并且不包括 I/O 时间。实际花费的时间可能远远超过此估计值。
 
@@ -139,6 +138,7 @@ ht-degree: 100%
          
          23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+
    * Golden-publish 日志；例如：
 
       ```shell
