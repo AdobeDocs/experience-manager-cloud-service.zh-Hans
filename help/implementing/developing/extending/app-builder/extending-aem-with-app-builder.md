@@ -2,16 +2,16 @@
 title: 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder。
 description: 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder。
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # 扩展 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder {#extend-using-app-builder}
 
-## 什么是App Builder for AEMas a Cloud Service {#project-firefly}
+## 什么是App Builder for AEMas a Cloud Service {#project-appbuilder}
 
 新的Adobe Developer App Builder为开发人员提供了一个扩展性框架，以便轻松扩展AEMas a Cloud Service功能。
 
@@ -23,7 +23,7 @@ App Builder提供了统一的第三方可扩展性框架，用于集成和创建
 * 核心服务可扩展性 — 通过使用自定义特性和业务逻辑扩展默认行为，扩展核心应用程序功能。
 * 用户体验可扩展性 — 扩展核心体验以支持业务需求或构建特定于客户的数字资产、店面和后台应用程序。
 
-自2020年夏季以来，企业客户和合作伙伴可以通过我们的开发人员预览来使用应用程序生成器（以前称为项目Firefly）。 应用程序生成器的正式发布(GA)计划于2021年12月正式发布。 我们欢迎开发人员通过我们的 [试用计划](https://adobe.ly/appbuilder-trial).
+自2020年夏季起，企业客户和合作伙伴便可通过我们的开发人员预览来使用应用程序生成器。 应用程序生成器的正式发布(GA)计划于2021年12月正式发布。 我们欢迎开发人员通过我们的 [试用计划](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Adobe Developer App Builder提供了一个通用、一致、标准化的开发�
 
 下图说明了在应用程序生成器上构建的标准应用程序如何利用这些功能：
 
-![架构](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
+![架构](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
 有关应用程序生成器架构的更多详细信息，请查看 [架构概述](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -62,7 +62,3 @@ Adobe Developer App Builder提供了一个通用、一致、标准化的开发�
 准备好开始开发了吗？ 我们提供了许多示例应用程序，帮助您快速前进：
 
 * [Adobe Developer网站上的应用程序生成器代码实验室](https://www.adobe.io/app-builder/docs/resources/)
-
-## 支持 {#support}
-
-对于开发人员支持类型的请求，我们鼓励开发人员使用 [Experience League论坛](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).

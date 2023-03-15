@@ -9,18 +9,14 @@ level: Beginner
 kt: 9459,9483
 thumbnail: 339244.jpg
 exl-id: 0e5319ea-b053-44bf-ac9c-9b0dee51eac4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
 # 适用于应用程序生成器的前端应用程序
-
->[!IMPORTANT]
->
-> _Adobe项目Firefly（如本系列视频中所述）现已命名为App Builder_
 
 ## 前端应用程序生成器应用程序简介
 

@@ -9,18 +9,14 @@ level: Beginner
 kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '97'
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+workflow-type: tm+mt
+source-wordcount: '81'
 ht-degree: 100%
 
 ---
 
 # App Builder 简介
-
->[!IMPORTANT]
->
-> _正如本系列视频中提到的，Adobe Project Firefly 现已更名为 App Builder_
 
 ## 简介
 

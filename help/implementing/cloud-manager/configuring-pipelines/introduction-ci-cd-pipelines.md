@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道，以及如何使用它们高效地部署代码。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 100%
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Cloud Manager 提供两种类型的管道：
 
 ## 前端管道 {#front-end}
 
-前端代码是用作静态文件的任何代码。 它独立于 AEM 提供的 UI 代码，可能包括站点主题、客户定义的 SPA、Firefly SPA 和其他解决方案。
+前端代码是用作静态文件的任何代码。 它与AEM提供的UI代码不同，可能包括网站主题、客户定义的SPA、SPA和其他解决方案。
 
 前端管道通过加速后端开发的前端代码异步部署，帮助您的团队简化设计和开发过程。 这个专用管道将 JavaScript 和 CSS 作为主题部署到 AEM 分发层，从而产生一个新的主题版本，可以从 AEM 交付的页面中引用。
 
