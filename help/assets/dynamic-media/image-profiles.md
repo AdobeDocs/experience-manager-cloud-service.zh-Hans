@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: f8d7b4595c25dba3b6d6b9c6aab1dbf651a79dae
+source-git-commit: 17d2ca1405903a0a83fe36cc57036d9ebd2abd3a
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3497'
 ht-degree: 9%
 
 ---
@@ -72,14 +72,14 @@ ht-degree: 9%
 **在图像配置文件中定义智能裁剪的准则**
 为了控制智能裁剪的使用情况，并优化农作物的加工时间和存储，Adobe建议遵循以下准则和提示：
 
-* 要对图像资产应用智能裁剪的图像资产必须至少50 x 50像素或更大。 &lt;!— CQDOC-20087>
-* 不允许使用包含重复智能裁剪尺寸的图像配置文件。 &lt;!— CQDOC-20087>
-* 不允许设置智能裁剪选项的重复命名图像配置文件。 &lt;!— CQDOC-20087>
+* 要对图像资产应用智能裁剪的图像资产必须至少50 x 50像素或更大。 <!-- CQDOC-20087 -->
+* 不允许使用包含重复智能裁剪尺寸的图像配置文件。 <!-- CQDOC-20087 -->
+* 不允许设置智能裁剪选项的重复命名图像配置文件。 <!-- CQDOC-20087 -->
 * 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
 * 您应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
 * 理想情况下，每张图像拥有10-15种智能作物，以优化屏幕比例和处理时间。
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
 您有两个图像裁剪选项可供您选择。 您还可以选择自动创建颜色和图像色板，或跨目标分辨率保留裁剪内容。
 
