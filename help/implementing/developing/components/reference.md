@@ -2,7 +2,7 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->在引用此文档之前，请确保您已完成 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 因此对 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM项目原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>在引用此文档之前，请确保您已完成 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 因此对 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和 [AEM项目原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 由于WKND教程涵盖大多数用例，因此本文档仅作为这些资源的补充。 本指南详细介绍了组件在AEM中的结构和配置方式，不是入门指南。
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ### 重用现有组件 {#reusing-components}
 
-在花时间创建全新组件之前，请考虑自定义或扩展现有组件。 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 提供一套灵活、强大且经过良好测试的生产就绪型组件。
+在花时间创建全新组件之前，请考虑自定义或扩展现有组件。 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 提供一套灵活、强大且经过良好测试的生产就绪型组件。
 
 #### 扩展核心组件 {#extending-core-components}
 
@@ -360,7 +360,7 @@ AEM中现有的配置很多。 您可以使用 **CRXDE Lite**.
 
 ### 就地编辑 — cq:inplaceEditing {#cq-inplaceediting}
 
-就地编辑器允许用户直接在内容流中编辑内容，而无需打开对话框。 例如， **文本** 和 **标题** 组件均具有嵌入式编辑器。
+就地编辑器允许用户直接在内容流中编辑内容，而无需打开对话框。 例如， **文本** 和 **标题** 组件都具有就地编辑器。
 
 对于每种组件类型，并非都需要/有意义的就地编辑器。
 
@@ -372,7 +372,7 @@ AEM中现有的配置很多。 您可以使用 **CRXDE Lite**.
 | `configPath` | `String` | 编辑器配置的路径，可由配置节点指定 |
 | `editorType` | `String` | 可用类型包括： `plaintext` 对于非HTML内容， `title` 在开始编辑之前将图形标题转换为纯文本，并 `text` 使用富文本编辑器 |
 
-以下配置允许对组件进行嵌入式编辑，并定义 `plaintext` 作为编辑器类型：
+以下配置允许就地编辑组件并定义 `plaintext` 作为编辑器类型：
 
 ```text
     <cq:inplaceEditing
