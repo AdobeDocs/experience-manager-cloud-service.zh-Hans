@@ -3,10 +3,10 @@ title: 配置非生产管道
 description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 100%
 
    ![添加非生产管道](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. 在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**配置**&#x200B;选项卡上，选择要添加的非生产管道类型，即&#x200B;**代码质量管道**&#x200B;或&#x200B;**部署管道**。
+1. 在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**配置**&#x200B;选项卡上，选择要添加的非生产管道的类型。 
+
+   * **代码质量管道**  — 创建一个管道，用于生成代码、运行单元测试和评估代码质量，但不进行部署。
+   * **部署管道**  — 创建一个管道，用于构建代码、运行单元测试、评估代码质量并部署到环境。
 
    ![“添加非生产管道”对话框](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ ht-degree: 100%
 
       * **手动** – 使用此选项可手动启动管道。
       * **在 Git 发生更改时** – 只要将承诺添加到配置的 Git 分支，此选项就会启动 CI/CD 管道。 利用此选项，您仍能根据需要手动启动管道。
+
+1. 如果您选择创建 **部署管道** 您还需要定义 **重要量度失败行为**.
+
+   * **每次询问** – 这是默认设置，需要对任何重要失败进行手动干预。
+   * **立即失败** – 如果选定此选项，则只要发生重要失败，就会取消管道。这实际上是在模拟用户手动拒绝每个失败。
+   * **立即继续** – 如果选定此选项，则每当发生重要失败时，管道就会自动继续。这实际上是在模拟用户手动批准每个失败。
 
 1. 单击&#x200B;**“继续”**。
 
@@ -106,6 +115,12 @@ ht-degree: 100%
    * **Git 分支** – 此选项定义管道应从中检索代码的所选存储库的分支。
       * 输入分支名称的前几个字符，此字段的自动完成功能将查找匹配的分支帮助您做选择。
    * **忽略 Web 层配置** – 勾选后，该管道将不会部署您的 Web 层配置。
+
+   * **管道**  — 如果您的管道是部署管道，则可以选择运行测试阶段。 选中要在此阶段启用的选项。 如果未选择任何选项，则在管道执行期间将不显示测试阶段。
+
+      * **产品功能测试**  — 执行 [产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 开发环境。
+      * **自定义功能测试**  — 执行 [自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 开发环境。
+      * **自定义UI测试**  — 执行 [自定义UI测试](/help/implementing/cloud-manager/ui-testing.md) 自定义应用程序。
 
    ![全栈管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
