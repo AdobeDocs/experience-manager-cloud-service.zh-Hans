@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 82%
+source-wordcount: '2387'
+ht-degree: 81%
 
 ---
 
@@ -168,17 +168,6 @@ ht-degree: 82%
    * **选择图像** – 选择要用作缩略图的现有资产
    * **还原** – 在您对缩略图进行更改后，此选项将变得可用。如果不想保留您的更改，可以在保存前还原更改。
 
-### 社交媒体 {#social-media}
-
-* **社交媒体共享**
-
-   定义页面上可用的共享选项。显示可用于[共享核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html)的选项。
-
-   * **为 Facebook 启用用户共享**
-   * **为 Pinterest 启用用户共享**
-   * **首选体验片段变体**
-      * 定义用于为页面生成元数据的体验片段变体
-
 ### Cloud Service {#cloud-services}
 
 * **Cloud Service 配置** – 定义 Cloud Service 的属性
@@ -208,7 +197,7 @@ ht-degree: 82%
 
 ### Blueprint {#blueprint}
 
-此选项卡仅对用作 Blueprint 的页面可见。用作 Live Copy 基础的 Blueprint 是[多站点管理](/help/sites-cloud/administering/msm/overview.md)的一部分。
+此选项卡仅对用作 Blueprint 的页面可见。Blueprint是Live Copy的基础，是 [多站点管理。](/help/sites-cloud/administering/msm/overview.md)
 
 * **当前 Live Copy** – 列出基于此 Blueprint 页面的页面（即 Live Copy 页面）
 
@@ -216,7 +205,7 @@ ht-degree: 82%
 
 ### Live Copy {#live-copy}
 
-此选项卡仅对配置为Live Copy的页面可见。
+此选项卡仅对配置为Live Copy的页面可见。 与Blueprint一样， Live Copy是 [多站点管理。](/help/sites-cloud/administering/msm/overview.md).
 
 * **同步** – 将 Live Copy 与 Blueprint 同步，并保留本地修改
 * **重置** – 将 Live Copy 重置为 Blueprint 的状态，并删除本地修改
