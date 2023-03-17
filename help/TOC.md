@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 050491bb8d2e9387719bea35a3869a0fb9a7f726
+source-git-commit: c37c1c3eca0ae9d457f422efdaf5e29be03e6014
 workflow-type: tm+mt
-source-wordcount: '3978'
+source-wordcount: '4006'
 ht-degree: 99%
 
 ---
@@ -67,10 +67,10 @@ ht-degree: 99%
          + [2020.4.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + AEMaaCS 维护发行说明{#maintenance}
+   + AEMaaCS 维护版本说明{#maintenance}
       + [最新的维护发行说明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [2023.1.0维护发行说明](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [版维护发行说明 2023.1.0 版](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
@@ -202,7 +202,7 @@ ht-degree: 99%
          + [内容转移工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [验证内容转移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [用户映射和主迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [从源中提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [查看迁移集的日志](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
@@ -233,7 +233,7 @@ ht-degree: 99%
       + [资源工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
-+ 站点 {#sites}
++ Sites {#sites}
    + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [对 AEM Cloud Service 中的 AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
    + 创作 {#authoring}
@@ -344,7 +344,7 @@ ht-degree: 99%
             + [MSM 最佳实践](/help/sites-cloud/administering/msm/best-practices.md)
             + [疑难解答和常见问题解答](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 翻译 {#translation}
-            + 站点翻译历程 {#sites}
+            + Sites 翻译历程 {#sites}
                + [了解 AEM 中的站点翻译](/help/journey-sites/translation/overview.md)
                + [AEM站点翻译快速入门](/help/journey-sites/translation/getting-started.md)
                + [了解 AEM 中的站点内容和翻译方法](/help/journey-sites/translation/learn-about.md)
@@ -961,3 +961,10 @@ ht-degree: 99%
    + 辅助功能 {#accessibility}
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
++ 通用编辑器 {#universal-editor}
+   + [通用编辑器简介](/help/implementing/universal-editor/introduction.md)
+   + [使用通用编辑器创作内容](/help/implementing/universal-editor/authoring.md)
+   + [AEM中通用编辑器快速入门](/help/implementing/universal-editor/getting-started.md)
+   + [通用编辑器架构](/help/implementing/universal-editor/architecture.md)
+   + [属性和类型](/help/implementing/universal-editor/attributes-types.md)
+   + [通用编辑器身份验证](/help/implementing/universal-editor/authentication.md)
