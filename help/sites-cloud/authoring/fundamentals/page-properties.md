@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: ht
-source-wordcount: '1975'
-ht-degree: 100%
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+workflow-type: tm+mt
+source-wordcount: '2428'
+ht-degree: 82%
 
 ---
 
@@ -37,10 +37,12 @@ ht-degree: 100%
 
    通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
 
-   * **覆盖** – 选中可在此页面上定义品牌概要。
-      * 该值将由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
-   * **覆盖值** – 要附加到页面标题的品牌概要的文本。
-      * 该值附加到页面标题后的竖线字符后，例如“骑行 Tuscany | 始终准备好使用 WKND”
+   * **品牌概要信息**
+
+      * **覆盖** – 选中可在此页面上定义品牌概要。
+         * 该值将由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
+      * **覆盖值** – 要附加到页面标题的品牌概要的文本。
+         * 该值附加到页面标题后的竖线字符后，例如“骑行 Tuscany | 始终准备好使用 WKND”
 
 * **HTML ID**
 
@@ -105,14 +107,13 @@ ht-degree: 100%
       * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
       * 创建别名将设置页面节点上的 `sling:alias` 属性，这只会影响资源，而不会影响存储库路径。
       * 无法发布编辑器中按别名处理的页面。编辑器中的[发布选项](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)仅适用于通过其实际路径访问的页面。
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * 有关更多详细信息，请参阅 [“SEO和URL管理最佳实践”下的本地化页面名称](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **配置**
 
-   * **云配置** – 配置的路径
+   * **继承自 &lt;path>**  — 启用/禁用继承；切换可用性 **云配置** 供选择
+
+   * **云配置**  — 选定配置的路径
 
 * **模板设置**
 
@@ -132,14 +133,40 @@ ht-degree: 100%
 
    * **导出配置** – 指定导出配置
 
-### 缩略图 {#thumbnail}
+* **SEO**
 
-配置页面缩略图
+   * **规范Url**  — 可用于覆盖页面的规范Url;如果留空，则页面的URL将是其规范URL
 
-* **生成预览** – 生成要用作缩略图的页面预览
-* **上传图像** – 上传要用作缩略图的图像
-* **选择图像** – 选择要用作缩略图的现有资产
-* **还原** – 在您对缩略图进行更改后，此选项将变得可用。如果不想保留您的更改，可以在保存前还原更改。
+   * **机器人标记**  — 选择机器人标记以控制搜索引擎爬网程序的行为。
+
+      >[!NOTE]
+      >
+      >有些选项相互冲突。 在发生冲突时，优先选择更宽容的选项。
+
+   * **生成站点地图**  — 选择后，将为此页面及其子体生成sitemap.xml
+
+### 图像 {#images}
+
+* **特色图像**
+
+   选择和配置要显示的图像。 可在引用页面的组件中使用；例如，Teaser、页面列表等。
+
+   * **图像**
+
+      您可以 **挑选** 资产，或浏览要上传的文件，然后 **编辑**&#x200B;或 **清除**.
+
+   * **替换文本**  — 用于表示图像含义和/或功能的文本；例如，供屏幕阅读器使用。
+
+   * **继承 — 从DAM资产获取的值**  — 选中此选项后，将使用 `dc:description`DAM中的元数据
+
+* **缩略图**
+
+   配置页面缩略图
+
+   * **生成预览** – 生成要用作缩略图的页面预览
+   * **上传图像** – 上传要用作缩略图的图像
+   * **选择图像** – 选择要用作缩略图的现有资产
+   * **还原** – 在您对缩略图进行更改后，此选项将变得可用。如果不想保留您的更改，可以在保存前还原更改。
 
 ### 社交媒体 {#social-media}
 
@@ -156,12 +183,11 @@ ht-degree: 100%
 
 * **Cloud Service 配置** – 定义 Cloud Service 的属性
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### 个性化 {#personalization}
 
 * **ContextHub 配置**
+
+   * **继承自 &lt;path>**  — 启用/禁用继承；切换可用性 **ContextHub路径** 和 **区段路径** 供选择
 
    * **ContextHub 路径** – 定义 [ContextHub 配置](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **区段路径** – 定义[区段路径](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,15 +202,9 @@ ht-degree: 100%
 
 * **权限**
 
-   * 添加权限
-   * 编辑已关闭的用户组
-   * 查看有效权限
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **添加权限**
+   * **编辑已关闭的用户组**
+   * 查看&#x200B;**有效权限**
 
 ### Blueprint {#blueprint}
 
@@ -195,6 +215,8 @@ ht-degree: 100%
 * **转出配置** – 控制将修改传播到 Live Copy 的情况
 
 ### Live Copy {#live-copy}
+
+此选项卡仅对配置为Live Copy的页面可见。
 
 * **同步** – 将 Live Copy 与 Blueprint 同步，并保留本地修改
 * **重置** – 将 Live Copy 重置为 Blueprint 的状态，并删除本地修改
@@ -220,6 +242,33 @@ ht-degree: 100%
 启用预览环境后，您将看到：
 
 * 预览 URL – 用于访问预览环境中的内容的 URL
+
+### 渐进式 Web 应用程序 {#progressive-web-app}
+
+通过简单配置，内容作者现在可以为在 AEM Sites 中创建的体验启用渐进式 Web 应用程序 (PWA) 功能。
+
+>[!NOTE]
+>
+>有关更多详细信息，请参阅 [启用渐进式Web应用程序功能](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **配置安装体验**
+
+   * **启用PWA**  — 启用/禁用功能；允许用户将站点安装为PWA
+   * **启动URL**  — 首选启动URL
+   * **显示模式**  — 如何在本地设备上隐藏或以其他方式向用户显示浏览器
+   * **屏幕方向** -PWA如何处理设备方向
+   * **主题颜色**  — 应用程序的颜色，该颜色会影响本地用户操作系统显示本机UI工具栏和导航控件的方式
+   * **背景颜色**  — 应用程序的背景颜色，在应用程序加载时显示
+   * **图标**  — 表示用户设备上的应用程序的图标
+
+* **缓存管理（高级）**
+
+   * **缓存策略和内容刷新频率**  — 为您的PWA定义缓存模型
+   * **为了脱机使用而要缓存的文件**
+      * **文件预缓存（技术预览）**  — 在安装服务工作程序时以及在使用它之前，托管在AEM上的文件将保存到本地浏览器缓存中
+      * **客户端库**  — 要缓存以获取离线体验的客户端库
+      * **路径包含**  — 根据配置的缓存策略和内容刷新频率，截取已定义路径的网络请求并返回缓存内容
+      * **路径排除**  — 无论文件预缓存和路径包含项下的设置如何，这些文件都将永远不会缓存
 
 ## 编辑页面属性 {#editing-page-properties-1}
 
