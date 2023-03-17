@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 17d2ca1405903a0a83fe36cc57036d9ebd2abd3a
+source-git-commit: fa29504ba4abf68131d96a5a8ecbd62b7a9299f9
 workflow-type: tm+mt
-source-wordcount: '3497'
-ht-degree: 9%
+source-wordcount: '3536'
+ht-degree: 7%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 9%
   </tr>
   <tr>
    <td>数量</td>
-   <td>控制应用于边缘像素的对比度量。 默认值为1.75。对于高分辨率图像，最高可将其增加到5。 可以考虑使用数量来衡量滤镜强度。范围为0-5。</td>
+   <td>控制应用于边缘像素的对比度量。 默认值为1.75。对于高分辨率图像，最高可将其增加到5。 将“数量”视为过滤强度的度量。 范围为0-5。</td>
   </tr>
   <tr>
    <td>半径</td>
@@ -51,7 +51,7 @@ ht-degree: 9%
  </tbody>
 </table>
 
-有关“锐化”的信息，请参阅[锐化图像](/help/assets/dynamic-media/assets/sharpening_images.pdf)。
+有关锐化的描述，请参阅 [锐化图像](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## 裁切选项 {#crop-options}
 
@@ -72,12 +72,21 @@ ht-degree: 9%
 **在图像配置文件中定义智能裁剪的准则**
 为了控制智能裁剪的使用情况，并优化农作物的加工时间和存储，Adobe建议遵循以下准则和提示：
 
-* 要对图像资产应用智能裁剪的图像资产必须至少50 x 50像素或更大。 <!-- CQDOC-20087 -->
-* 不允许使用包含重复智能裁剪尺寸的图像配置文件。 <!-- CQDOC-20087 -->
-* 不允许设置智能裁剪选项的重复命名图像配置文件。 <!-- CQDOC-20087 -->
+* 避免创建宽度和高度值相同的重复智能裁剪配置文件。
+* 根据裁剪尺寸而不是最终使用情况来命名智能裁剪。 这样做有助于优化在多个页面上使用单个维度的重复项。
+* 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
+* 应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
 * 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
 * 您应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
 * 理想情况下，每张图像拥有10-15种智能作物，以优化屏幕比例和处理时间。
+
+<!--
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
+* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
+* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
@@ -89,7 +98,7 @@ ht-degree: 9%
 
 | 选项 | 何时使用 | 描述 |
 | --- | --- | --- |
-| **[!UICONTROL 像素裁剪]** | 仅基于维度批量裁剪图像。 | 从 **[!UICONTROL 裁剪选项]** 下拉列表中，选择 **[!UICONTROL 像素裁剪]**.<br>要从图像的侧边进行裁剪，请输入要从图像的任意侧边或每侧进行裁剪的像素数。裁剪图像的多少取决于图像文件中的ppi（像素/英寸）设置。<br>图像配置文件像素裁切按以下方式呈现：<br>·值包括顶部、底部、左侧和右侧。<br>·考虑左上角 `0,0` 像素裁切就从此计算。<br>·裁剪起点：左为X，上为Y<br>·水平计算：原始图像的水平像素大小减去“左”，然后减去“右”。<br>·垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。<br>例如，假定您的图像为4000 x 3000像素。 您使用以下值：顶=250，底=500，左=300，右=700。<br>从左上角(300,250)使用填充空间(4000-300-700、3000-250-500或3000,2250)进行裁剪。 |
+| **[!UICONTROL 像素裁剪]** | 仅基于维度批量裁剪图像。 | 从 **[!UICONTROL 裁剪选项]** 下拉列表中，选择 **[!UICONTROL 像素裁剪]**.<br>要从图像的侧边进行裁剪，请输入要从图像的任意侧边或每侧进行裁剪的像素数。 裁剪图像的多少取决于图像文件中的ppi（像素/英寸）设置。<br>图像配置文件像素裁切按以下方式呈现：<br>·值包括顶部、底部、左侧和右侧。<br>·考虑左上角 `0,0` 像素裁切就从此计算。<br>·裁剪起点：左为X，上为Y<br>·水平计算：原始图像的水平像素大小减去“左”，然后减去“右”。<br>·垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。<br>例如，假定您的图像为4000 x 3000像素。 您使用以下值：顶=250，底=500，左=300，右=700。<br>从左上角(300,250)使用填充空间(4000-300-700、3000-250-500或3000,2250)进行裁剪。 |
 | **[!UICONTROL 智能裁剪]** | 根据图像的可视焦点批量裁剪图像。 | Smart Crop利用Adobe Sensei中人工智能的强大功能，快速批量自动裁剪图像。 智能裁剪可自动检测并裁剪到任何图像中的焦点以获取预期的目标点，而不管屏幕大小。<br>从 **[!UICONTROL 裁剪选项]** 下拉列表中，选择 **[!UICONTROL 智能裁剪]**，则位于的右侧 **[!UICONTROL 响应式图像裁剪]**，启用（打开）该功能。<br>默认断点大小(**[!UICONTROL 大]**, **[!UICONTROL 中]**, **[!UICONTROL 小]**)涵盖大多数图像在移动和平板电脑设备、台式机和横幅上使用的所有大小。 如果需要，您可以编辑默认名称“大”、“中”和“小”。<br>要添加更多断点，请选择 **[!UICONTROL 添加裁剪]**;要删除裁剪，请选择垃圾箱图标。 |
 | **[!UICONTROL 颜色和图像样本]** | 批量会为每个图像生成一个图像样本。 | **注意**:Dynamic Media Classic不支持智能色板。<br>自动从显示颜色或纹理的产品图像中定位并生成高质量样本。<br>从 **[!UICONTROL 裁剪选项]** 下拉列表中，选择 **[!UICONTROL 智能裁剪]**. 在右侧 **[!UICONTROL 颜色和图像色板]**，启用（打开）该功能。 在 **[!UICONTROL 宽度]** 和 **[!UICONTROL 高度]** 框中。<br>虽然所有图像裁剪都可以从演绎版边栏中获取，但样本仅通过 **[!UICONTROL 复制URL]** 功能。 使用您自己的查看组件在网站上渲染色板。 此规则的例外是传送横幅。 Dynamic Media为轮播横幅中使用的色板提供查看组件。<br><br>**使用图像色板**<br>&#x200B;图像样本的URL非常简单：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中 `:Swatch` 会附加到资产请求中。<br><br>**使用颜色色板**<br>&#x200B;要使用颜色色板，请 `req=userdata` 请求，其中包含以下内容：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资产：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>下面是样本资产的对应 `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>的 `req=userdata` 响应如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您还可以请求 `req=userdata` XML或JSON格式的响应，如以下各个URL示例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**:您必须创建自己的WCM组件才能请求颜色样本并解析 `SmartSwatchColor` 属性，由24位RGB十六进制值表示。<br>另请参阅 [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) （在查看器参考指南中）。 |
 | **[!UICONTROL 在目标分辨率间保留裁切内容]** | 在相同的宽高比中维护裁剪内容 | 在创建智能裁剪配置文件时使用。<br>要为不同分辨率的给定宽高比生成新的裁剪内容（同时仍保持焦点），请取消选中此选项 <br>如果决定取消勾选此框，请确保原始图像分辨率大于您为智能裁剪配置文件定义的分辨率。<br><br>例如，假定您已将宽高比设置为600 x 600（大）、400 x 400（中）和300 x 300（小）。<br>When **[!UICONTROL 跨目标分辨率保留裁剪内容]** 选项 *已检查*，则所有三种分辨率中都会看到相同的裁剪，这与以下图像示例输出类似（仅供说明用途）：<br>![选中选项](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>When **[!UICONTROL 跨目标分辨率保留裁剪内容]** 选项 *未选中*，则所有三种分辨率的裁剪内容都是新的，与以下图像示例输出类似（仅供说明用途）：<br>![未选中选项](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
@@ -121,7 +130,7 @@ ht-degree: 9%
 
 请参阅 [关于Dynamic Media图像配置文件和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md).
 
-另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
+另请参阅 [组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md).
 
 **要创建Dynamic Media图像配置文件，请执行以下操作：**
 
@@ -135,22 +144,22 @@ ht-degree: 9%
 
    ![农作物](assets/crop.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。此时新创建的配置文件会显示在可用配置文件列表中。
+1. 选择&#x200B;**[!UICONTROL 保存]**。新创建的用户档案将显示在可用用户档案列表中。
 
 ## 编辑或删除Dynamic Media图像配置文件 {#editing-or-deleting-image-profiles}
 
 1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像配置文件]**.
-1. 选择要编辑或删除的图像配置文件。 要编辑图像配置文件，请选择&#x200B;**[!UICONTROL 编辑图像处理配置文件]**。要删除它，请选择 **[!UICONTROL 删除图像处理配置文件]**.
+1. 选择要编辑或删除的图像配置文件。 要编辑它，请选择 **[!UICONTROL 编辑图像处理配置文件]**. 要删除它，请选择 **[!UICONTROL 删除图像处理配置文件]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. 如果是进行编辑操作，请保存更改。如果是进行删除操作，请确认您要删除配置文件。
+1. 如果进行编辑，请保存更改。 如果删除，请确认您要删除该用户档案。
 
 ## 将Dynamic Media图像配置文件应用到文件夹 {#applying-an-image-profile-to-folders}
 
-当您将图像配置文件分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。 因此，您只能为一个文件夹分配一个图像配置文件。 因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
+当您将图像配置文件分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。 因此，您只能为一个文件夹分配一个图像配置文件。 因此，请仔细考虑上传、存储、使用和存档资产所在的文件夹结构。
 
-如果您为文件夹分配了其他图像配置文件，则新配置文件会覆盖之前的配置文件。以前存在的文件夹资产将保持不变。新配置文件会应用于稍后添加到文件夹的资产。
+如果您为文件夹分配了其他图像配置文件，则新配置文件会覆盖之前的配置文件。 以前存在的文件夹资产将保持不变。 新配置文件会应用于稍后添加到文件夹的资产。
 
 用户界面中会指示为其分配了配置文件的文件夹，卡片中会显示配置文件的名称。
 
@@ -237,7 +246,7 @@ ht-degree: 9%
 1. 选择要调整其智能裁剪或智能色板的图像。
 1. 在工具栏中，选择 **[!UICONTROL 智能裁剪]**.
 
-1. 执行以下操作之一：
+1. 执行以下任一操作：
 
    * 在页面的右上角附近，向左或向右拖动滑块条以分别增加或减少图像显示。
    * 在图像上，拖动角手柄以调整裁剪或色板可查看区域的大小。
@@ -309,7 +318,7 @@ ht-degree: 9%
 
 ## 将图像配置文件从文件夹删除 {#removing-an-image-profile-from-folders}
 
-当您将图像配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，对文件夹中已发生的文件的任何处理均将保持不变。
+当您将图像配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。 但是，对文件夹中已发生的文件的任何处理均将保持不变。
 
 您可以从 **[!UICONTROL 工具]** 菜单，或者如果您在文件夹中， **[!UICONTROL 属性]**.
 
