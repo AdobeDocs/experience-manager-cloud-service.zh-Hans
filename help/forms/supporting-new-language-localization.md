@@ -1,11 +1,11 @@
 ---
-title: 向自适应表单中添加对新区域设置的支持
+title: 将对新区域设置的支持添加到自适应表单
 seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms允许您为本地化自适应表单添加新区域设置。 英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾语(zh-TW)和韩语(ko-KR)区域设置。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 00fcdb3530a441bde2f7f91515aaaec341615a3f
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ AEM Forms提供英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、�
 
 自适应表单的本地化依赖于两种类型的区域设置字典：
 
-* **表单特定词典** 包含自适应表单中使用的字符串。 例如，标签、字段名称、错误消息、帮助描述等。 它将作为每个区域设置的一组XLIFF文件进行管理，您可以在 `[author-instance]/libs/cq/i18n/gui/translator.html`.
+* **表单特定词典** 包含自适应表单中使用的字符串。 例如，标签、字段名称、错误消息、帮助描述。 它将作为每个区域设置的一组XLIFF文件进行管理，您可以在 `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
 * **全局字典** AEM客户端库中有两个全局字典，管理为JSON对象。 这些字典包含默认错误消息、月名、货币符号、日期和时间模式等。 这些字典在 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 这些位置包含每个区域设置的单独文件夹。 由于全局字典不经常更新，因此为每个区域设置保留单独的JavaScript文件可使浏览器在访问同一服务器上的不同自适应表单时缓存它们并减少网络带宽使用。
 
@@ -26,8 +26,8 @@ AEM Forms提供英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、�
 
 执行以下步骤以添加新区域设置支持：
 
-1. [为不支持的区域设置添加本地化支持](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
-1. [在自适应Forms中使用添加的区域设置](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
+1. [为不支持的区域设置添加本地化支持](#add-localization-support-for-non-supported-locales)
+1. [在自适应Forms中使用添加的区域设置](#use-added-locale-in-af)
 
 ### 为不支持的区域设置添加本地化支持 {#add-localization-support-for-non-supported-locales}
 
@@ -35,11 +35,11 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
 
 要在自适应Forms运行时添加对新区域设置的支持，请执行以下操作：
 
-1. [克隆存储库](#1-clone-the-repository-clone-the-repository)
-1. [向GuideLocalizationService服务添加区域设置](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1. [添加区域设置名称特定的文件夹](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
-1. [为词典添加区域设置支持](#about-locale-dictionaries-about-locale-dictionaries)
-1. [提交存储库中的更改并部署管道](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
+1. [克隆存储库](#clone-the-repository)
+1. [向GuideLocalizationService服务添加区域设置](#add-a-locale-to-the-guide-localization-service)
+1. [添加区域设置名称特定的文件夹](#add-locale-name-specific-folder)
+1. [为词典添加区域设置支持](#add-locale-support-for-the-dictionary)
+1. [提交存储库中的更改并部署管道](#commit-changes-in-repo-deploy-pipeline)
 
 #### 1.克隆存储库 {#clone-the-repository}
 
@@ -48,14 +48,13 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
 1. 使用git用户名和密码克隆存储库。
 1. 在首选编辑器中打开克隆的FormsCloud Service存储库文件夹。
 
-#### 2.向指南本地化服务添加区域设置 {#add-a-locale-to-the-guide-localization-service-br}
+#### 2.向指南本地化服务添加区域设置 {#add-a-locale-to-the-guide-localization-service}
 
 1. 找到 `Guide Localization Service.cfg.json` 文件，并将要添加的区域设置添加到支持的区域设置列表中。
 
    >[!NOTE]
    >
-   >* 创建名为的文件 `Guide Localization Service.cfg.json` 文件（如果尚不存在）。
-
+   > 创建名为的文件 `Guide Localization Service.cfg.json` 文件（如果尚不存在）。
 
 #### 3.添加区域名称特定的文件夹客户端库 {#add-locale-name-specific-folder}
 
@@ -70,9 +69,9 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
 * **js.txt** 包含以下内容：
    */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
-##### 3.2.为区域设置名称文件夹添加自适应表单客户端库 {#add-adaptive-form-client-library-for-a-locale-br}
+##### 3.2.为区域设置名称文件夹添加自适应表单客户端库
 
-1. 创建名为的节点 `[locale-name]_af` 并键入作为 `cq:ClientLibraryFolder` 在 `etc/clientlibs/locale_name`，类别为 `guides.I18N.<locale>` 和依赖关系 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 和 `guide.common`.
+1. 创建名为的节点 `[locale-name]_af` 并键入作为 `cq:ClientLibraryFolder` 在 `etc/clientlibs/locale_name`，类别为 `guides.I18N.<locale>` 依赖项作为 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 和 `guide.common`.
 1. 创建名为的文件夹 `javascript` 并添加以下文件：
 
    * **i18n.js** 定义 `guidelib.i18n`，具有“calendarSymbols”模式， `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 对于 `<locale>` 根据 [区域设置规范](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
@@ -85,7 +84,7 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
      LogMessages.js
    ```
 
-#### 4.为词典添加区域设置支持 {#add-locale-support-for-the-dictionary-br}
+#### 4.为词典添加区域设置支持 {#add-locale-support-for-the-dictionary}
 
 仅当 `<locale>` 您添加的不在 `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -95,20 +94,18 @@ AEM Forms目前支持以英语(en)、西班牙语(es)、法语(fr)、意大利�
 1. 添加 `<locale-name>` 默认区域设置值 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`，如果尚不存在。
 
 1. 添加 `<locale>` 的值 `languages` 财产 `/etc/languages`.
+1. 在 `filter.xml` 在etc/META-INF/[文件夹层次结构] 为：
 
-
-```text
-Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as:
-<filter root="/etc/clientlibs/[locale-name]"/>
-<filter root="/etc/languages"/>
-```
+   ```
+   <filter root="/etc/clientlibs/[locale-name]"/>
+   <filter root="/etc/languages"/>
+   ```
 
 在将更改提交到AEM Git存储库之前，您需要访问 [Git存储库信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-#### 5.提交存储库中的更改并部署管道 {#commit-chnages-in-repo-deploy-pipeline}
+#### 5.提交存储库中的更改并部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
 添加新的区域设置支持后，将更改提交到GIT存储库。 使用完整堆栈管道部署代码。 学习 [如何设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 添加新的区域设置支持。
-
 管道完成后，新添加的区域设置将显示在AEM环境中。
 
 ### 在自适应Forms中使用添加的区域设置 {#use-added-locale-in-af}
