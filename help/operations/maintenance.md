@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
+source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 75%
+source-wordcount: '1075'
+ht-degree: 74%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 75%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（那些在2023年3月1日之前创建的环境），清除将处于禁用状态，且将来不会启用清除，除非客户明确启用清除，届时他们还可以使用自定义值对其进行配置。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新环境（从2023年3月1日开始创建的环境）默认情况下将启用以下值清除，客户可以使用自定义值进行配置。
+    <td>对于现有环境（那些在2023年6月1日之前创建的环境），清除会处于禁用状态，且将来不会启用清除，除非客户明确启用清除，届时他们还可以使用自定义值对其进行配置。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->默认情况下，新环境（自2023年6月1日起创建的环境）将启用以下值清除，客户可以使用自定义值进行配置。
      <ol>
        <li>超过 30 天的版本将会被删除</li>
        <li>保留过去 30 天内的最新 5 个版本</li>
@@ -56,7 +56,7 @@ ht-degree: 75%
   <tr>
     <td>审核日志清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（那些在2023年3月1日之前创建的环境），清除将处于禁用状态，且将来不会启用清除，除非客户明确启用清除，届时他们还可以使用自定义值对其进行配置。<br><br> <!-- See above for the two line breaks -->默认情况下，新环境（从2023年3月1日开始创建的环境）将在 <code>/content</code> 存储库的节点：
+    <td>对于现有环境（那些在2023年6月1日之前创建的环境），清除会处于禁用状态，且将来不会启用清除，除非客户明确启用清除，届时他们还可以使用自定义值对其进行配置。<br><br> <!-- See above for the two line breaks -->默认情况下，新环境（从2023年6月1日开始创建的环境）将在 <code>/content</code> 存储库的节点：
      <ol>
        <li>对于复制审核，将删除超过 3 天的审核日志</li>
        <li>对于 DAM (Assets)，将删除超过 30 天的审核日志</li>
@@ -92,7 +92,7 @@ ht-degree: 75%
     <td>客户</td>
     <td>
     <p>必须在 git 中完成。通过在 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code> 文件夹下创建属性，覆盖<code>/libs</code> 下的开箱即用维护窗口配置节点。有关其他配置详细信息，请参阅下面的维护窗口表。</p>
-    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。配置 OSGI 属性。</p>
+    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。请参阅“Adobe项目清除配置”下的OSGI属性列表。</p>
   </td>
   </tr>
   </tbody>
