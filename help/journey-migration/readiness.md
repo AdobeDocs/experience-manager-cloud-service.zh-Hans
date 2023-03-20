@@ -210,7 +210,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 请参阅 [制定KPI](https://guided.adobe.com/welcome/aem/part6.html) 了解如何为您的业务目标选择适当的KPI。
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 了解移动到AEMas a Cloud Service所需更改的范围后，便可以 [使代码和内容云就绪](/help/journey-migration/implementation.md) 执行迁移之前。
 

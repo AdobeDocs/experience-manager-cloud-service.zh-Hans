@@ -5,7 +5,7 @@ exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 48%
+ht-degree: 50%
 
 ---
 
@@ -25,7 +25,7 @@ Dispatcher 是 Adobe Experience Manager 的缓存和/或负载平衡工具。使
 >[!NOTE]
 >Dispatcher 最常见的用法是缓存来自 **AEM 发布实例**&#x200B;的响应，从而提高面向外部发布的网站的响应速度和安全性。
 
-请参阅 [Dispatcher 概述](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)，了解有关 Dispatcher 如何执行缓存，返回文档和执行负载平衡的信息。
+请参阅 [Dispatcher 概述](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)，了解有关 Dispatcher 如何执行缓存，返回文档和执行负载平衡的信息。
 
 ### Apache 和 Dispatcher 配置和测试 {#dispatcher-configurations-cloud}
 

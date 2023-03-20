@@ -4,8 +4,8 @@ description: 使用 Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 42%
+source-wordcount: '2490'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
 >abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[网络研讨会]介绍加速历程到Adobe Experience Manager as a Cloud Service的工具"
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
@@ -28,12 +28,12 @@ ht-degree: 42%
 * 版本6.1及更高版本的AEM实例支持BPA。
 
    >[!NOTE]
-请参阅 [在AEM 6.1上安装](#installing-on-aem61) 在AEM 6.1上安装BPA的特殊要求。
+   > 请参阅 [在AEM 6.1上安装](#installing-on-aem61) 在AEM 6.1上安装BPA的特殊要求。
 
 * BPA可在任何环境中运行，但最好在 *阶段* 环境。
 
    >[!NOTE]
-为避免对业务关键型实例产生影响，建议您在 *作者* 尽可能靠近的环境 *生产* 环境中的自定义、配置、内容和用户应用程序。 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
+   >为避免对业务关键型实例产生影响，建议您在 *作者* 尽可能靠近的环境 *生产* 环境中的自定义、配置、内容和用户应用程序。 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
 
 * 生成BPA报告内容可能需要相当长的时间，从几分钟到几小时不等。 具体所需的时间长短很大程度上取决于 AEM 存储库内容的大小和性质、AEM 版本以及其他因素。
 
@@ -41,15 +41,15 @@ ht-degree: 42%
 
 ## 可用性 {#availability}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_download"
-title="下载Best Practices Analyzer"
-abstract="可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。"
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_download"
+>title="下载Best Practices Analyzer"
+>abstract="可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。"
 
 可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过 [包管理器](/help/implementing/developing/tools/package-manager.md) 在源Adobe Experience Manager(AEM)实例上。
 
 >[!NOTE]
-从下载最佳实践分析器 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
+>从下载最佳实践分析器 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
 
 ## 查看最佳实践分析器报告 {#viewing-report}
 
@@ -83,12 +83,12 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-您可以通过单击 **刷新报表**.
+   >您可以通过单击 **刷新报表**.
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-在重新生成报告时，报告会以完成百分比显示进度，如下图所示。
+   >在重新生成报告时，报告会以完成百分比显示进度，如下图所示。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -103,14 +103,14 @@ abstract="可以从软件分发门户以zip文件的形式下载最佳实践分�
    ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-仅当BPA检测到ACS Commons的使用情况时，才会显示左边栏图标。
+   > 仅当BPA检测到ACS Commons的使用情况时，才会显示左边栏图标。
 
 1. 取消选中该框可筛选与ACS Commons相关的所有发现结果。 您应会看到 **筛选的发现结果计数** 如下图所示。 以逗号分隔值(CSV)格式导出报表时，该过滤器也会应用于报表。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
+   > 不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
 
 
 <!--
@@ -126,12 +126,12 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 ## 解释最佳实践分析器报告 {#cra-report}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_interpreting"
-title="解释最佳实践分析器报告"
-abstract="查看BPA报表输出有两个选项：UI和CSV。 在AEM实例中运行“最佳实践分析器”工具时，UI报告将作为结果显示在工具窗口中。 CSV 格式的报告包括从模式检测器输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="查看最佳实践分析报表"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解最佳实践分析器报告类别"
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_interpreting"
+>title="解释最佳实践分析器报告"
+>abstract="查看BPA报表输出有两个选项：UI和CSV。 在AEM实例中运行“最佳实践分析器”工具时，UI报告将作为结果显示在工具窗口中。 CSV 格式的报告包括从模式检测器输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="查看最佳实践分析报表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解最佳实践分析器报告类别"
 
 在AEM实例中运行“最佳实践分析器”工具时，报告将作为结果显示在工具窗口中。
 
@@ -148,7 +148,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。
 
 >[!NOTE]
-要详细了解每个“查找”类别，请参阅 [模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>要详细了解每个“查找”类别，请参阅 [模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 请参阅下表，了解重要性级别：
 

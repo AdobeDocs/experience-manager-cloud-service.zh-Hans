@@ -4,8 +4,8 @@ description: 自定义 UI 测试是一项可选功能，可用于为自定义应
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2147'
+ht-degree: 98%
 
 ---
 

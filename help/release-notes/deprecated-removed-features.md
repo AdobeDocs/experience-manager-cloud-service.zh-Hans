@@ -50,7 +50,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 此部分列出了使用 [!DNL Experience Manager] as a [!DNL Cloud Service] 从 [!DNL Experience Manager] 中删除的特性和功能。
 
-| 区域 | 功能 | 替换 | 目标删除日期 |
+| 区域 | 专题 | 替换 | 目标删除日期 |
 | ------------ | ------------------ | ----------- | ------------------- |
 | 用户界面 | 从产品用户界面中删除经典 UI。一些经典 UI 对话框可用于一些选择功能，例如“链接检查器”、“版本清除”和一些 Cloud Service 配置。即将发布的[产品更新](/help/release-notes/home.md)可能会进一步删除经典 UI 可用性。 | 标准 UI | 已删除 |
 | [!DNL Dynamic Media] | 以前与 [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=zh-Hans#integration) 和 [Dynamic Media Hybrid 模式](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=zh-Hans#dynamic)的集成在 [!DNL Experience Manager] as a [!DNL Cloud Service] 中不可用。 | 使用 [!DNL Experience Manager] as a [!DNL Cloud Service] 提供的 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。 | 已删除 |

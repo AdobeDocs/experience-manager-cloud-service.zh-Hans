@@ -5,13 +5,13 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 7%
+ht-degree: 17%
 
 ---
 
 # Cloud Acceleration Manager 快速入门 {#get-started-cam}
 
-Cloud Acceleration Manager是一个基于云的应用程序，旨在引导您的IT团队完成从规划到上线的整个过渡历程。Cloud Service 通过Adobe推荐的最佳实践、提示、文档和工具，为成功的迁移设置团队，以便在到AEM作为Cloud Service的历程的每个阶段提供帮助。
+Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。
 
 ## 目标 {#objective}
 
@@ -42,11 +42,11 @@ Cloud Acceleration Manager(CAM)提供了引导式旅程形式的一站式迁移�
 >id="aemcloud_cam_gettingstarted"
 >title="Cloud Acceleration Manager 快速入门"
 >abstract="创建项目并启动您的AEMas a Cloud Service历程。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="使用Cloud Acceleration Manager的好处"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="使用 Cloud Acceleration Manager 的益处"
 
 云加速管理器(CAM)的登陆页面允许您创建和编辑多个项目。
 
-请按照以下步骤创建一个新 项目：
+请按照以下步骤创建新项目：
 
 1. 单击 **创建项目** 登陆页面。
 
@@ -95,6 +95,6 @@ Cloud Acceleration Manager(CAM)提供了引导式旅程形式的一站式迁移�
 
 1. 单击 **删除** 以确认步骤。
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
 了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在便可以继续查看 [准备阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).

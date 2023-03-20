@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 100%
 

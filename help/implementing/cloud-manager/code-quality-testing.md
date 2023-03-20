@@ -2,7 +2,7 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
@@ -114,7 +114,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` （跳过的内容包）
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
 如果 `myco-all-1.0.0-SNAPSHOT.zip` 中的唯一项目是两个跳过的内容包，则将扫描两个嵌入包而不是“所有”内容包。
 

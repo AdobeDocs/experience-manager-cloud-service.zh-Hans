@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在AEMas a Cloud Service上开发的准则，以及AMS中AEM与内部部署和AEM的不同之处在于哪些重要方式。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
+source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 2%

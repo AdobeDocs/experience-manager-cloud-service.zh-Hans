@@ -2,10 +2,10 @@
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
+source-git-commit: 7f43e09c411b0402701b5c65639ca988702ab75e
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 1%
       * 您需要根据CDN供应商的文档配置SSL和DNS。
    * 如果您没有使用其他CDN，请根据以下文档管理SSL和DNS:
       * 管理 SSL 证书
-         * [管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [管理 SSL 证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * 管理自定义域名(DNS)
          * 为确保DNS转换不会引起意外问题，最好在上线并进行一轮UAT测试之前创建一个测试子域以将生产实例连接到。 因此，如果您的域是example.com，则可以创建一个子域test.example.com，并将其应用到生产环境。 在域的UAT测试期间，您将需要查找正确的链接重定向、缓存和调度程序配置等内容。
@@ -157,6 +157,6 @@ ht-degree: 1%
 
 如果在执行迁移时需要重新校准任务，您始终可以引用该列表。
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 了解如何迁移到AEM  as a Cloud Service后，您可以检查 [上线后](/help/journey-migration/post-go-live.md) 页面来确保实例顺利运行。

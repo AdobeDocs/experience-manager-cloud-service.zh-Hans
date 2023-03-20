@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -32,7 +32,7 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 
 >[!NOTE]
 >
->Cloud Manager支持自定义域 **仅** 如果您使用的是AEM托管CDN。 如果您自带CDN和 [将其指向AEM托管的CDN](#point-to-point-CDN) 您必须使用该特定CDN来管理域，而不是Cloud Manager。
+>**只有**&#x200B;使用 AEM 托管的 CDN，才能在 Cloud Manager 中支持自定义域。如果您使用自己的 CDN，并[将它指向 AEM 托管的 CDN](#point-to-point-CDN)，则您必须使用该特定 CDN 而非 Cloud Manager 管理域。
 
 **限制流量**
 
