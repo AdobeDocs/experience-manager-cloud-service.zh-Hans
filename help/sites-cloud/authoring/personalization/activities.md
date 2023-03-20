@@ -3,9 +3,9 @@ title: 管理活动
 description: 通过“活动”控制台，您可以创建、组织和管理品牌的营销活动
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2019'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->能够 **选择Target配置** 您必须在 **Target活动作者** 组。
+>要能够&#x200B;**选择目标配置**，您必须在&#x200B;**目标活动作者**&#x200B;组中。
 
 >[!NOTE]
 >
