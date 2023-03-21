@@ -2,7 +2,7 @@
 title: 使用 Best Practices Analyzer
 description: 使用 Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 41%
@@ -69,7 +69,6 @@ ht-degree: 41%
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-
 1. 生成BPA报告后，它会以表格形式显示调查结果的摘要和数量，按调查结果类型和重要性级别进行组织。 要获取有关特定查找结果的更多详细信息，您可以单击表中与查找结果类型对应的编号。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
@@ -92,8 +91,6 @@ ht-degree: 41%
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
-
-
 #### 在“最佳实践分析器”报告中使用过滤器 {#bpa-filters}
 
 筛选与 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请执行以下步骤：
@@ -111,7 +108,6 @@ ht-degree: 41%
 
    >[!NOTE]
    > 不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
-
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -158,7 +154,6 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 | 建议 | 此发现结果可能是一个升级问题。建议进一步调查。 |
 | 主要 | 此发现结果可能是一个应解决的升级问题。 |
 | 关键 | 此发现结果极有可能是一个必须解决的升级问题，以防止功能或性能丢失。 |
-
 
 ## 解释最佳实践分析器CSV报告 {#cra-csv-report}
 
