@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有密钥值和环境特定值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3312'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ OSGi配置文件在以下位置定义：
 >
 >A `config.preview` OSGi配置文件夹 **无法** 以与 `config.publish` 可声明文件夹。 预览层而是会从发布层的值继承其OSGi配置。
 
-在本地开发时，运行模式启动参数 `-r`，用于指定运行模式OSGI配置。
+在进行本地开发时，运行架构启动参数 `-r` 用于指定运行架构 OSGI 配置。
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
@@ -165,7 +165,7 @@ Adobe Experience Manager as a Cloud Service要求使用特定于环境的配置(
 
 使用特定于密钥环境的配置，在所有Adobe Experience Manager as a Cloud Service环境（包括暂存和生产环境）中存储密钥的值。
 
-## 创建OSGi配置 {#creating-sogi-configurations}
+## 创建OSGi配置 {#creating-osgi-configurations}
 
 创建OSGi配置的方法有两种，如下所述。 前一种方法通常用于配置自定义OSGi组件，这些组件具有开发人员所知的OSGi属性和值，后一种方法则用于AEM提供的OSGi组件。
 
@@ -189,8 +189,8 @@ AEM SDK快速入门Jar的AEM Web Console可用于配置OSGi组件，以及将OSG
 >
 >AEM Web控制台的配置UI会写入 `.cfg.json` 文件。 因此，当AEM项目定义的OSGi配置可能与生成的配置不同时，为避免在本地开发期间出现潜在的意外行为，请注意这一点。
 
-1. 以管理员用户身份登录到AEM SDK快速入门Jar的AEM Web控制台
-1. 导航到OSGi >配置
+1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户
+1. 导航到 **OSGi** > **配置**
 1. 要配置，请找到OSGi组件并点按其标题以进行编辑
    ![OSGi配置](./assets/configuring-osgi/configuration.png)
 1. 根据需要通过Web UI编辑OSGi配置属性值
@@ -324,7 +324,7 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 
 在以下示例中，除了暂存和生产环境之外，还假设有三个开发环境。
 
-**示例 1**
+**示例1**
 
 其意图是获取OSGi属性的值 `my_var1` 对于stage和prod而言，应相同，但对于三个开发环境中的每个环境，则不同。
 
@@ -359,7 +359,7 @@ config.dev
 </tr>
 </table>
 
-**示例 2**
+**示例2**
 
 其意图是获取OSGi属性的值 `my_var1` 对于三个开发环境中的每个环境，stage 、 prod和都会有所不同。 因此，必须调用Cloud Manager API才能为 `my_var1` 用于每个开发环境。
 
@@ -419,7 +419,7 @@ config.dev
 </tr>
 <tr>
 <td>
-配置
+config
 </td>
 <td>
 <pre>
@@ -452,7 +452,7 @@ config.dev
 </tr>
 <tr>
 <td>
-配置
+config
 </td>
 <td>
 <pre>
