@@ -2,10 +2,10 @@
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 7f43e09c411b0402701b5c65639ca988702ab75e
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 2%
+source-wordcount: '1727'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
 >title="上线准备"
->abstract="为确保在AEMas a Cloud Service上顺利、成功地上线，您应当规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
+>abstract="为确保 AEM as a Cloud Service 顺利地成功上线，您应该规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
 
 在历程的这一部分中，您将了解在代码和内容准备好移至AEM as a Cloud Service后，如何规划和执行迁移。 此外，您还将了解执行迁移时的最佳实践和已知限制。
 
@@ -153,7 +153,7 @@ ht-degree: 2%
       * 如果您的TTL很高，则对DNS记录的更新将需要较长的时间才能传播。
 * 运行满足您的业务要求和目标的性能和安全测试。
 * 切换并确保在不进行任何新部署或内容更新的情况下执行实际的上线操作。
-* 创建Admin Console用户通知组。 请参阅 [通知用户组](/help/journey-onboarding/user-groups.md)
+* 创建Admin Console用户通知配置文件。 请参阅 [通知配置文件](/help/journey-onboarding/notification-profiles.md)
 
 如果在执行迁移时需要重新校准任务，您始终可以引用该列表。
 
