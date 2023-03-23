@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 41%
+ht-degree: 49%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="使用最佳实践分析器"
->abstract="查看有关使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。 最佳实践分析器报告用于深入了解一般升级就绪性。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[网络研讨会]介绍加速历程到Adobe Experience Manager as a Cloud Service的工具"
+>abstract="查看使用最佳实践分析器（以前称为云就绪分析器）的文档和生成的报告。最佳实践分析器报告可用于概要了解一般升级就绪性。"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[网络研讨会] 介绍加速 Adobe Experience Manager as a Cloud Service 历程的工具"
 
 ## 使用最佳实践分析器的重要注意事项 {#imp-considerations}
 
@@ -43,10 +43,10 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
->title="下载Best Practices Analyzer"
->abstract="可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。"
+>title="下载最佳实践分析器"
+>abstract="最佳实践分析器可以从软件分发门户以 zip 文件的形式下载。您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。"
 
-可以从软件分发门户以zip文件的形式下载最佳实践分析器。 您可以通过 [包管理器](/help/implementing/developing/tools/package-manager.md) 在源Adobe Experience Manager(AEM)实例上。
+最佳实践分析器可以从软件分发门户以 zip 文件的形式下载。您可以通过 [包管理器](/help/implementing/developing/tools/package-manager.md) 在源Adobe Experience Manager(AEM)实例上。
 
 >[!NOTE]
 >从下载最佳实践分析器 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
@@ -120,16 +120,16 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >In all versions, the included Pattern Detector may run independently.
 -->
 
-## 解释最佳实践分析器报告 {#cra-report}
+## 解读最佳实践分析器报告 {#cra-report}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
->title="解释最佳实践分析器报告"
->abstract="查看BPA报表输出有两个选项：UI和CSV。 在AEM实例中运行“最佳实践分析器”工具时，UI报告将作为结果显示在工具窗口中。 CSV 格式的报告包括从模式检测器输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="查看最佳实践分析报表"
+>title="解读最佳实践分析器报告"
+>abstract="在查看 BPA 报告输出时有两个选项：UI 和 CSV。在 AEM 实例中运行最佳实践分析器工具后，UI 报告将作为结果显示在工具窗口中。CSV 格式的报告包括从模式检测器输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="审核最佳实践分析报告"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解最佳实践分析器报告类别"
 
-在AEM实例中运行“最佳实践分析器”工具时，报告将作为结果显示在工具窗口中。
+在 AEM 实例中运行最佳实践分析器工具后， 报告将作为结果显示在工具窗口中。
 
 报告的格式为：
 

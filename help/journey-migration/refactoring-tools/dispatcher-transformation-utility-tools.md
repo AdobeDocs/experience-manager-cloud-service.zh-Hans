@@ -5,7 +5,7 @@ exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 50%
+ht-degree: 61%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 50%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispconverter"
 >title="AEM Dispatcher 转换器"
->abstract="Adobe Experience Manager Dispatcher Converter将现有AEM Dispatcher配置转换为AEMas a Cloud ServiceDispatcher配置。"
+>abstract="Adobe Experience Manager Dispatcher Converter 可以将现有 AEM Dispatcher 配置转换为 AEM as a Cloud Service Dispatcher 配置。"
 
-Adobe Experience Manager Dispatcher Converter将现有AEM Dispatcher配置转换为AEMas a Cloud ServiceDispatcher配置。
+Adobe Experience Manager Dispatcher Converter 可以将现有 AEM Dispatcher 配置转换为 AEM as a Cloud Service Dispatcher 配置。
 
 ## Dispatcher 简介 {#introduction-dispatcher}
 

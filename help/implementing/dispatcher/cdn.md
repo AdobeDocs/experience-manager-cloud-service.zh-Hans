@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 12%
+ht-degree: 27%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service 中的 CDN"
->abstract="AEM asCloud Service随内置CDN一起提供。 其主要目的是通过从浏览器附近边缘的CDN节点交付可缓存的内容来减少延迟。 它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。"
+>abstract="AEM as a Cloud Service 随附一个内置 CDN。其主要目的是将可缓存的内容存储在浏览器附近的边缘 CDN 节点上来减少延迟。 它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。"
 
-AEM asCloud Service随内置CDN一起提供。 其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。
+AEM as a Cloud Service 随附一个内置 CDN。其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。
 
-AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布层，客户可以选择从自己的CDN指向它，他们需要管理CDN。 将根据满足某些先决条件（包括但不限于客户与其CDN供应商进行旧版集成，而这些旧版集成很难放弃）的情况，逐个允许执行此操作。
+AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布层，客户可以选择从自己的 CDN 指向发布层，但这种情况下客户需要自行管理。 这种情况视个案而定，具体取决于是否在满足某些先决条件，包括但不限于客户及其 CDN 供应商具有难以舍弃的旧版集成。
 
 另请观看以下视频 [Cloud 5 AEM CDN第1部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) 和 [Cloud 5 AEM CDN第2部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) 有关AEM as a Cloud Service中CDN的其他信息。
 
@@ -44,12 +44,12 @@ AEM托管的CDN将满足大多数客户的性能和安全要求。 对于发布�
 >
 >只有来自允许IP的请求才会由AEM托管CDN提供。 如果您将自己的CDN指向AEM托管的CDN，请确保将CDN的IP包含在该允许列表中。
 
-## 客户CDN指向AEM Managed CDN {#point-to-point-CDN}
+## 客户 CDN 指向 AEM 托管 CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="客户CDN指向AEM Managed CDN"
->abstract="AEM as Cloud Service为客户提供了使用其现有CDN的选项。 对于发布层，客户可以选择从自己的CDN指向它，他们需要管理CDN。 将根据满足某些先决条件（包括但不限于客户与其CDN供应商进行旧版集成，而这些旧版集成很难放弃）的情况，逐个允许执行此操作。"
+>title="客户 CDN 指向 AEM 托管 CDN"
+>abstract="AEM as a Cloud Service 为客户提供了使用现有 CDN 的选项。对于发布层，客户可以选择从自己的 CDN 指向发布层，但这种情况下客户需要自行管理。 这种情况视个案而定，具体取决于是否在满足某些先决条件，包括但不限于客户及其 CDN 供应商具有难以舍弃的旧版集成。"
 
 如果客户必须使用其现有的CDN，则他们可以管理CDN并将其指向AEM托管的CDN，从而满足以下要求：
 

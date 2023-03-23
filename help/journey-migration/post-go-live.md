@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 25%
+ht-degree: 39%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="故障诊断AEM"
->abstract="查看持续开发的最佳实践并管理日志，以及诸如开发人员控制台和CRXDE Lite之类的工具，以帮助解决AEM问题"
+>title="AEM 故障排除"
+>abstract="查看有关持续开发和管理日志的最佳实践，以及使用 Developer Console 和 CRXDE Lite 等工具帮助排除 AEM 的问题"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="访问和管理日志"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEMas a Cloud Service开发工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
 
 这是历程的最后一部分，因此您将学习如何在迁移完成后监控问题并提高性能。 您应确保清理临时文件，审查持续开发的最佳实践并管理日志。
 
@@ -57,9 +57,9 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
->title="帮助和支持"
->abstract="请联系我们的AEM支持团队，以获取说明或解决任何问题。"
->additional-url="https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html" text="支持Experience Cloud"
+>title="帮助与支持"
+>abstract="请联系我们的 AEM 支持团队，获取说明或解决任意问题。"
+>additional-url="https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 支持"
 
 如果您对访问Cloud Service有任何疑问，请联系您的Adobe代表或 [支持Experience Cloud](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 以了解更多详细信息。
 

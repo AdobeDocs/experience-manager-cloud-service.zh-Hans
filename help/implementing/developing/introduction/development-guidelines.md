@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service 开发准则
-description: 了解在AEMas a Cloud Service上开发的准则，以及AMS中AEM与内部部署和AEM的不同之处在于哪些重要方式。
+description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service 开发准则"
->abstract="了解在AEMas a Cloud Service上开发的准则，以及AMS中AEM与内部部署和AEM的不同之处在于哪些重要方式。"
+>abstract="了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。"
 >additional-url="https://video.tv.adobe.com/v/330555/" text="包结构演示"
 
 本文档介绍了在AEMas a Cloud Service上进行开发的准则，以及与AMS中的AEM内部部署和AEM有所不同的重要方式。
@@ -156,7 +156,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 请注意，在进行本地开发（使用SDK）时， `/apps` 和 `/libs` 可以直接写入，这与顶级文件夹不可更改的云环境不同。
 
-### AEMas a Cloud Service开发工具 {#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service 开发工具 {#aem-as-a-cloud-service-development-tools}
 
 客户可以在创作层的开发环境中访问CRXDE lite，但不能在暂存或生产环境中访问。 不可变存储库(`/libs`, `/apps`)无法在运行时写入，因此尝试执行此操作将导致错误。
 

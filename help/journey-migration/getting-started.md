@@ -5,7 +5,7 @@ exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 21%
+ht-degree: 24%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service为Experience Manager Assets、Forms和Screens提供了可
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
->title="关于Cloud Acceleration Manager"
+>title="关于 Cloud Acceleration Manager"
 >abstract="Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html#aem-moving-to-aem-guide" text="迁移到 AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="对 AEM Sites as a Cloud Service 的重要更改"

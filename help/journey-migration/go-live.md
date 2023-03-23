@@ -14,7 +14,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
 >title="上线准备"
->abstract="为确保 AEM as a Cloud Service 顺利地成功上线，您应该规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
+>abstract="为确保 AEM as a Cloud Service 顺利上线，您应该规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
 
 在历程的这一部分中，您将了解在代码和内容准备好移至AEM as a Cloud Service后，如何规划和执行迁移。 此外，您还将了解执行迁移时的最佳实践和已知限制。
 
