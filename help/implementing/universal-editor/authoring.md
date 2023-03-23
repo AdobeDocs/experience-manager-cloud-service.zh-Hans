@@ -1,9 +1,9 @@
 ---
 title: 使用通用编辑器创作内容
 description: 了解内容作者使用通用编辑器创建内容是多么简单直观。
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->通用编辑器仍在开发中，当前只能创作文本。
+>通用编辑器仍在开发中，当前无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -106,11 +106,11 @@ Experience Cloud标题始终显示在屏幕顶部。 它是一个锚点，用于
 
 ![汉布格菜单](assets/hamburger-menu.png)
 
-#### 地址栏 {#address-bar}
+#### 位置栏 {#Location-bar}
 
-地址栏显示您正在编辑的页面的位置。 点按或单击以输入要编辑的其他页面的地址。
+位置栏会显示您正在编辑的页面的地址。 点按或单击以输入要编辑的其他页面的地址。
 
-![地址栏](assets/address-bar.png)
+![位置栏](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -119,12 +119,6 @@ Experience Cloud标题始终显示在屏幕顶部。 它是一个锚点，用于
 >[!NOTE]
 >
 >您希望通过通用编辑器编辑的任何页面都必须 [支持通用编辑器的工具。](getting-started.md)
-
-#### 协作指标 {#collaboration}
-
-如果在通用编辑器中加载了具有相同页面的其他作者，则会显示这些作者的图像。 将鼠标悬停在图像上可查看完整的用户名
-
-![协作指标](assets/collaboration.png)
 
 #### 打开应用程序预览 {#open-app-preview}
 
@@ -141,6 +135,10 @@ Experience Cloud标题始终显示在屏幕顶部。 它是一个锚点，用于
 点按或单击发布按钮，以将更改发布到实时内容，以供您的读者使用。
 
 ![“发布”按钮](assets/publish.png)
+
+>[!TIP]
+>
+>查看文档 [使用通用可视化编辑器发布内容](publishing.md) 以了解有关使用通用编辑器发布的更多信息。
 
 ### 边栏 {#rail}
 
@@ -195,6 +193,7 @@ Experience Cloud标题始终显示在屏幕顶部。 它是一个锚点，用于
 要了解有关通用编辑器的更多信息，请参阅这些文档。
 
 * [通用编辑器简介](introduction.md)  — 了解通用编辑器如何允许编辑任何实施中任何内容的任何方面，以便提供卓越的体验、提高内容速度，并提供一流的开发人员体验。
+* [使用通用编辑器发布内容](publishing.md)  — 了解通用可视化编辑器如何发布内容以及您的应用程序如何处理已发布的内容。
 * [AEM中通用编辑器快速入门](getting-started.md)  — 了解如何访问通用编辑器，以及如何开始检测您的第一个AEM应用程序以使用它。
 * [通用编辑器架构](architecture.md)  — 了解通用编辑器的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md)  — 了解通用编辑器所需的数据属性和类型。

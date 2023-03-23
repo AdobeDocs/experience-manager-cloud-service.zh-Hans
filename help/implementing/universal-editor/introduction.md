@@ -1,9 +1,9 @@
 ---
 title: 通用可视化编辑器简介
 description: 了解通用可视编辑器（即通用编辑器）如何实现任何无头和有头的体验的“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验、提高内容速度，以及如何提供一流的开发人员体验。
-source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,7 @@ ht-degree: 0%
 要了解有关通用编辑器的更多信息，请参阅这些文档。
 
 * [使用通用编辑器创作内容](authoring.md)  — 了解内容作者使用通用编辑器创建内容是多么简单、直观。
+* [使用通用编辑器发布内容](publishing.md)  — 了解通用可视化编辑器如何发布内容以及您的应用程序如何处理已发布的内容。
 * [AEM中通用编辑器快速入门](getting-started.md)  — 了解如何访问通用编辑器，以及如何开始检测您的第一个AEM应用程序以使用它。
 * [通用编辑器架构](architecture.md)  — 了解通用编辑器的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md)  — 了解通用编辑器所需的数据属性和类型。

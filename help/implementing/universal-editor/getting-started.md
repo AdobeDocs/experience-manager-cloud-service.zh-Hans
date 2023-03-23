@@ -1,9 +1,9 @@
 ---
 title: AEM中通用编辑器快速入门
 description: 了解如何访问通用编辑器，以及如何开始检测您的第一个AEM应用程序以使用它。
-source-git-commit: acafa752c354781e41b11e46ac31a59feb8d94e7
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -157,50 +157,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### 通用编辑器翻译服务 {#translation}
-
-通用编辑器根据工具元数据执行翻译。
-
-#### 翻译的基本原则 {#principle}
-
-请考虑上一个示例中的以下选择。
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-编辑器将执行替换，并在内部执行 `itemid` 将被重写到以下内容。
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-这会导致该术语 `aemconnection` 替换为 `<meta>` 标记。
-
-#### 查询选择器 {#query-selector}
-
-此替换将导致John Smith的查询字符串如下。
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-如果要更改John Smith的图块，选择器将如下所示。
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-而不是继承 `itemid`和资源，通用编辑器可与范围配合使用。 范围可以在节点级别上定义，并由整个子结构继承。
-
-如果结构内的子结构或定义的休假需要不同的范围，则另一个 `itemid` 可定义。
-
 ## 您已准备好使用通用编辑器 {#youre-ready}
 
 您的应用程序现在已被设计为使用通用编辑器！
@@ -213,6 +169,7 @@ itemid="urn:aem:https://localhost:4502/content/example/list"
 
 * [通用编辑器简介](introduction.md)  — 了解通用编辑器如何允许编辑任何实施中任何内容的任何方面，以便提供卓越的体验、提高内容速度，并提供一流的开发人员体验。
 * [使用通用编辑器创作内容](authoring.md)  — 了解内容作者使用通用编辑器创建内容是多么简单、直观。
+* [使用通用编辑器发布内容](publishing.md)  — 了解通用可视化编辑器如何发布内容以及您的应用程序如何处理已发布的内容。
 * [通用编辑器架构](architecture.md)  — 了解通用编辑器的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md)  — 了解通用编辑器所需的数据属性和类型。
 * [通用编辑器身份验证](authentication.md)  — 了解通用编辑器如何进行身份验证。
