@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 74%
+ht-degree: 67%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 74%
     <td>临时任务清理</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。通过在 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code> 文件夹下创建属性，覆盖 <code>/libs</code> 下的开箱即用维护窗口配置节点。</p>
+    <p>必须在 git 中完成。覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 或 <code>granite_monthly</code>.</p>
     <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上述节点下添加其他节点来启用维护任务。 将其命名为 <code>granite_TaskPurgeTask</code>，属性为 <code>sling:resourceType</code> 设置为 <code>granite/operations/components/maintenance/task</code> 和属性 <code>granite.maintenance.name</code> 设置为 <code>TaskPurge</code>. 配置OSGI属性，请参阅 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> ，以查看属性列表。</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ ht-degree: 74%
     <td>工作流清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。通过在 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code> 文件夹下创建属性，覆盖<code>/libs</code> 下的开箱即用维护窗口配置节点。有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_WorkflowPurgeTask</code>），启用维护任务。配置 OSGI 属性，请参见<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances"> AEM 6.5 维护任务文档</a>。</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ ht-degree: 74%
     <td>项目清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。通过在 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code> 文件夹下创建属性，覆盖<code>/libs</code> 下的开箱即用维护窗口配置节点。有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。覆盖下的现成维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。请参阅“Adobe项目清除配置”下的OSGI属性列表。</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ ht-degree: 74%
     <td>客户</td>
     <td>JCR 节点定义</td>
     <td>
-    <p><strong>windowSchedule=daily</strong>（此值不应更改）</p>
+    <p><strong>windowSchedule=monthly</strong> （不应更改此值）</p>
     <p><strong>windowStartTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务应何时开始执行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务在尚未完成时应何时停止执行。</p>
     <p><strong>windowScheduleWeekdays=1-7之间2个值的数组（例如，[5,5]）</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 表示安排在每月的第一周，或 1 表示安排在每月最后一周。如果没有一个值，则会有效地按照 windowScheduleWeekdays 每月的规定每天计划作业。</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 表示安排在每月的第一周，或 1 表示安排在每月最后一周。如果没有值，则实际上会在windowScheduleWeekdays（每月）所管辖的日期安排作业。</p>
+    </td>
     </tr>
     </tbody>
 </table>
