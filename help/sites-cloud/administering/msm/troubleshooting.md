@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
 ht-degree: 100%
 
