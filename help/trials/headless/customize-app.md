@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 97%
 
 ## 在应用中添加对新内容片段的引用 {#create-moment}
 
-现在，您已更新骑车者的图像，下面让我们逐步了解如何通过创建和引用新的内容片段，向应用程序添加新内容。 您将向应用程序的第二个面板添加由“可购物时刻”内容片段管理的产品标注。
+现在您已经更新了车手的图像，让我们来看看如何通过创建和引用新的内容片段来向应用程序添加新内容吧。您将向应用程序的第二个面板添加由“可购物时刻”内容片段管理的产品标注。
 
 ![可购物时刻示例](assets/do-not-localize/example-shoppable-moment.png)
 
