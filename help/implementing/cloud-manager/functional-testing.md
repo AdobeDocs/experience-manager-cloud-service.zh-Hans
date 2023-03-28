@@ -3,9 +3,9 @@ title: 功能测试
 description: 了解 AEM as a Cloud Service 部署过程内置的三种不同类型的功能测试，确保代码的质量和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1124'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,14 +37,14 @@ AEM as a Cloud Service 中有三种不同类型的功能测试。
 
 产品功能测试是 AEM 中核心功能（如创作和复制任务）的一组稳定 HTTP 集成测试 (IT)。这些测试由 Adobe 维护，旨在防止在破坏核心功能的情况下部署对自定义应用程序代码的更改。
 
-* [生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md):每当您将新代码部署到Cloud Manager时，都会自动运行产品功能测试，并且无法跳过。
-* [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md):可以选择选择产品功能测试以在执行非生产管道时运行。
+* [生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)：每当您将新代码部署到 Cloud Manager 时，产品功能测试都会自动运行，不能跳过。
+* [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)：可以选择在执行非生产管道时运行产品功能测试。
 
 产品功能测试作为开源项目进行维护。有关详细信息，请参阅 GitHub 中的[产品功能测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)。
 
 ### 自定义功能测试 {#custom-functional-testing}
 
-虽然产品功能测试由 Adobe 定义，但您可以为自己的应用程序编写自己的质量测试。 此操作将作为 [生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) （可选） [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以确保应用程序的质量。
+虽然产品功能测试由 Adobe 定义，但您可以为自己的应用程序编写自己的质量测试。 这类质量测试将作为自定义功能测试执行，作为[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或（可选）[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的一部分，用以确保应用程序的质量。
 
 自定义功能测试既可用于自定义代码部署，也可用于推送升级，这对于编写良好的功能测试（防止 AEM 代码更改破坏应用程序代码）尤为重要。自定义功能测试步骤始终存在，不能跳过。
 
