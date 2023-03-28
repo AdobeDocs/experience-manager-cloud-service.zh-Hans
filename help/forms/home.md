@@ -4,7 +4,7 @@ description: 探索 AEM Forms 并了解它如何帮助您生成业务就绪的�
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 
 ## 自动化后台工作流
 
-使用以表单为中心的工作流可自动处理表单数据，并将这些数据发送给不同的利益相关者（例如，经理或部门），以便进行审查、审批或进一步处理。这些工作流可确保对表单数据进行一致的、可审核的处理、自动化手动任务、提供基于角色的访问控制并帮助遵守法规要求，从而帮助您的组织最大程度地降低风险并保持合规性。
+使用以表单为中心的工作流可自动处理表单数据，并将这些数据发送给不同的利益相关者（例如，经理或部门），以便进行审查、审批或进一步处理。 这些工作流可确保对表单数据进行一致的、可审核的处理、自动化手动任务、提供基于角色的访问控制并帮助遵守法规要求，从而帮助您的组织最大程度地降低风险并保持合规性。
 
 
 ## 优化表单性能
