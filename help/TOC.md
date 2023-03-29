@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
 workflow-type: tm+mt
 source-wordcount: '4011'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 98%
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
-      + [顶级Adobe Experience Manager Forms创新](/help/forms/latest-innovations.md)
+      + [顶级 Adobe Experience Manager Forms 创新](/help/forms/latest-innovations.md)
       + [重要更改](/help/forms/notable-changes.md)
       + [架构](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常见问题](/help/forms/faq.md)
@@ -540,7 +540,7 @@ ht-degree: 98%
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
-            + [峰会工作簿](/help/forms/summit-2023-workbook.md)
+            + [Summit 工作簿](/help/forms/summit-2023-workbook.md)
       + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -961,11 +961,11 @@ ht-degree: 98%
    + 辅助功能 {#accessibility}
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
-+ 通用编辑器 {#universal-editor}
-   + [通用编辑器简介](/help/implementing/universal-editor/introduction.md)
-   + [使用通用编辑器创作内容](/help/implementing/universal-editor/authoring.md)
++ Universal Editor {#universal-editor}
+   + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
+   + [使用 Universal Editor 创作内容](/help/implementing/universal-editor/authoring.md)
    + [使用通用编辑器发布内容](/help/implementing/universal-editor/publishing.md)
-   + [AEM中通用编辑器快速入门](/help/implementing/universal-editor/getting-started.md)
-   + [通用编辑器架构](/help/implementing/universal-editor/architecture.md)
+   + [AEM Universal Editor 快速入门](/help/implementing/universal-editor/getting-started.md)
+   + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
    + [属性和类型](/help/implementing/universal-editor/attributes-types.md)
-   + [通用编辑器身份验证](/help/implementing/universal-editor/authentication.md)
+   + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)

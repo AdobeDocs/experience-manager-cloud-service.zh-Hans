@@ -3,7 +3,7 @@ title: 通知中心
 description: 利用通知中心可方便地针对问题和其他重要信息采取行动
 hidefromtoc: true
 source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 

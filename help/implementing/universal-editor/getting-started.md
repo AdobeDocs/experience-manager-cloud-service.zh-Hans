@@ -1,56 +1,56 @@
 ---
-title: AEM中通用编辑器快速入门
-description: 了解如何访问通用编辑器，以及如何开始检测您的第一个AEM应用程序以使用它。
+title: AEM Universal Editor 快速入门
+description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 93%
 
 ---
 
 
-# AEM中通用编辑器快速入门 {#getting-started}
+# AEM Universal Editor 快速入门 {#getting-started}
 
-了解如何访问通用编辑器，以及如何开始检测您的第一个AEM应用程序以使用它。
+了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 
 >[!TIP]
 >
->如果您希望直接参考一个示例，可以查看 [GitHub上的通用编辑器示例应用程序。](https://github.com/adobe/universal-editor-sample-editable-app)
+>如果您想深入研究示例，可以查看 [GitHub 上的 Universal Editor 示例应用程序](https://github.com/adobe/universal-editor-sample-editable-app)。
 
-## 入门步骤 {#onboarding}
+## 载入步骤 {#onboarding}
 
-尽管通用编辑器可以编辑来自任何源的内容，但本文档将以AEM应用程序为例。
+虽然 Universal Editor 可以编辑来自任何来源的内容，但本文档将以 AEM 应用程序为例。
 
-要载入AEM应用程序并检测其以使用通用编辑器，请执行多个步骤。
+需要执行大量步骤来载入您的 AEM 应用程序并为其插桩以使用 Universal Editor。
 
-1. [请求对通用编辑器的访问权限。](#request-access)
-1. [包含通用编辑器核心库。](#core-library)
-1. [添加必要的OSGi配置。](#osgi-configurations)
-1. [设置页面。](#instrument-page)
+1. [请求对 Universal Editor 的访问权限。](#request-access)
+1. [包括 Universal Editor 核心库。](#core-library)
+1. [添加必要的 OSGi 配置。](#osgi-configurations)
+1. [在页面上插桩。](#instrument-page)
 
-本文档将指导您完成这些步骤。
+本文档将引导您完成这些步骤。
 
-## 请求对通用编辑器的访问权限 {#request-access}
+## 请求对 Universal Editor 的访问权限 {#request-access}
 
-您首先需要请求对通用编辑器的访问权限。 请转到 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) 并验证您是否有权访问通用编辑器。
+您首先需要请求对 Universal Editor 的访问权限。请转到 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) 并验证您是否有权访问 Universal Editor。
 
-如果您没有访问权限，则可以通过链接到同一页面上的表单来请求获取该访问权限。
+如果您不具有访问权限，可以通过同一页面上链接的表单来提出请求。
 
-## 包含通用编辑器核心库 {#core-library}
+## 包括 Universal Editor 核心库 {#core-library}
 
-在对应用程序进行分析以便与通用编辑器一起使用之前，它需要包含以下依赖项。
+您的应用程序需要先包含以下依赖项，之后才能插桩以与 Universal Editor 结合使用。
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-要激活检测，需要将以下导入添加到 `index.js`.
+要激活插桩，需要将以下导入添加到 `index.js`。
 
 ```javascript
 import "@adobe/universal-editor-cors";
 ```
 
-### 非React应用程序的替代方法 {#alternative}
+### 非 React 应用程序的替代项 {#alternative}
 
 如果您没有实施React应用程序，并且/或需要服务器端渲染，则替代方法是将以下内容包含到文档正文中。
 
@@ -58,20 +58,20 @@ import "@adobe/universal-editor-cors";
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
 ```
 
-## 添加必要的OSGi配置 {#osgi-configurations}
+## 添加必要的 OSGi 配置 {#osgi-configurations}
 
-要使用通用编辑器在您的应用程序中编辑AEM内容，必须在AEM中完成CORS和Cookie设置。
+要能够使用 Universal Editor 通过应用程序编辑 AEM 内容，必须在 AEM 中完成 CORS 和 Cookie 设置。
 
-以下 [必须在AEM创作实例中设置OSGi配置。](/help/implementing/deploying/configuring-osgi.md)
+[必须在 AEM 创作实例上设置以下 OSGi 配置。](/help/implementing/deploying/configuring-osgi.md)
 
-* `SameSite Cookies = None`-`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* 删除X-FRAME-OPTIONS:中的SAMEORIGIN标头 `org.apache.sling.engine.impl.SlingMainServlet`
+* `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` 中的 `SameSite Cookies = None`
+* 移除 X-FRAME-OPTIONS：`org.apache.sling.engine.impl.SlingMainServlet` 中的 SAMEORIGIN 标头
 
 ### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
 
-登录令牌Cookie必须作为第三方域发送到AEM。 因此，必须将同一站点Cookie明确设置为 `None`.
+登录令牌 Cookie 必须作为第三方域发送到 AEM。因此，必须将相同站点 Cookie 明确设置为 `None`。
 
-此属性必须在 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi配置。
+必须在 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi 配置中设置此属性。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,9 +82,9 @@ import "@adobe/universal-editor-cors";
 
 ### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
 
-X-Frame-Options:SAMEORIGIN阻止在iFrame中渲染AEM页面。 删除标头后，将会加载页面。
+X-Frame-Options：SAMEORIGIN 阻止在 iframe 中呈现 AEM 页面。移除标头将允许加载页面。
 
-此属性必须在 `org.apache.sling.engine.impl.SlingMainServlet` OSGi配置。
+必须在 `org.apache.sling.engine.impl.SlingMainServlet` OSGi 配置中设置此属性。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -94,38 +94,38 @@ X-Frame-Options:SAMEORIGIN阻止在iFrame中渲染AEM页面。 删除标头后�
           sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
 ```
 
-## 设置页面 {#instrument-page}
+## 在页面上插桩 {#instrument-page}
 
-通用编辑器服务需要 [统一资源名称(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 识别和利用正在编辑的应用程序中的内容的正确后端系统。 因此，需要使用URN模式将内容映射回内容资源。
+Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 来为正在编辑的应用程序内容识别和使用正确的后端系统。因此，需要 URN 模式将内容映射回内容资源。
 
-添加到页面的工具属性主要由 [HTML微数据，](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) 一种行业标准，也可用于使HTML更加语义化、使HTML文档可索引等。
+添加到页面的监测属性主要由 [HTML 微数据](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)构成，这是一种行业标准，也可用于使 HTML 更具语义，使 HTML 文档可建立索引等。
 
 ### 创建连接 {#connections}
 
-应用程序中使用的连接将存储为 `<meta>` 页面的标记 `<head>`.
+应用程序中使用的连接将作为 `<meta>` 标记存储在页面的 `<head>` 中。
 
 ```html
 <meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<referenceName>`  — 这是一个在文档中重复使用的短名称，用于标识连接。 例如 `aemconnection`
-* `<protocol>`  — 这表示要使用通用编辑器持久性服务的哪个持久性插件。 例如 `aem`
-* `<url>`  — 这是应保留更改的系统的URL。 例如 `http://localhost:4502`
+* `<referenceName>` – 这是一个短名称，可在文档中重复使用以标识连接。例如 `aemconnection`
+* `<protocol>` – 这表明要使用的 Universal Editor 持久性服务的持久性插件。例如 `aem`
+* `<url>` – 这是保存更改的系统的 URL。例如 `http://localhost:4502`
 
-短标识符 `auecon` 表示Adobe通用编辑器连接。
+短标识符 `auecon` 表示 Adobe Universal Editor 连接。
 
-`itemid`s将使用 `urn` 用于缩短标识符的前缀。
+`itemid` 将使用 `urn` 前缀来缩短标识符。
 
 ```html
 itemid="urn:<referenceName>:<resource>"
 ```
 
-* `<referenceName>`  — 这是 `<meta>` 标记。 例如 `aemconnection`
-* `<resource>`  — 这是指向目标系统中资源的指针。 例如AEM内容路径，如 `/content/page/jcr:content`
+* `<referenceName>` – 这是 `<meta>` 标记中提到的命名引用。例如 `aemconnection`
+* `<resource>` – 这是指向目标系统中资源的指针。例如 AEM 内容路径（如 `/content/page/jcr:content`）
 
 >[!TIP]
 >
->查看文档 [属性和类型](attributes-types.md) 有关通用编辑器所需的数据属性和类型的更多详细信息。
+>有关 Universal Editor 所需的数据属性和类型的更多详细信息，请参阅文档[属性和类型](attributes-types.md)。
 
 ### 示例连接 {#example}
 
@@ -157,19 +157,19 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## 您已准备好使用通用编辑器 {#youre-ready}
+## 您已准备好使用 Universal Editor {#youre-ready}
 
-您的应用程序现在已被设计为使用通用编辑器！
+您的应用程序现已插桩，可以使用 Universal Editor 了！
 
-请参阅该文档 [使用通用编辑器创作内容](authoring.md) 了解内容作者使用通用编辑器创建内容是多么简单、直观。
+请参阅文档[使用 Universal Editor 创作内容](authoring.md)，了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 
 ## 其他资源 {#additional-resources}
 
-要了解有关通用编辑器的更多信息，请参阅这些文档。
+要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
-* [通用编辑器简介](introduction.md)  — 了解通用编辑器如何允许编辑任何实施中任何内容的任何方面，以便提供卓越的体验、提高内容速度，并提供一流的开发人员体验。
-* [使用通用编辑器创作内容](authoring.md)  — 了解内容作者使用通用编辑器创建内容是多么简单、直观。
+* [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
+* [使用 Universal Editor 创作内容](authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 * [使用通用编辑器发布内容](publishing.md)  — 了解通用可视化编辑器如何发布内容以及您的应用程序如何处理已发布的内容。
-* [通用编辑器架构](architecture.md)  — 了解通用编辑器的架构以及数据如何在其服务和层之间流动。
-* [属性和类型](attributes-types.md)  — 了解通用编辑器所需的数据属性和类型。
-* [通用编辑器身份验证](authentication.md)  — 了解通用编辑器如何进行身份验证。
+* [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
+* [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
+* [Universal Editor 身份验证](authentication.md) – 了解 Universal Editor 如何进行身份验证。
