@@ -1,10 +1,10 @@
 ---
 title: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
+source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 36%
+source-wordcount: '306'
+ht-degree: 32%
 
 ---
 
@@ -27,6 +27,11 @@ ht-degree: 36%
 #### Sites {#sites-issues}
 
 - SITES-7796 — 内容作者在导出到目标时能够发布主控内容片段及其各自的变体
+- SITES-97 - GraphQL:分页和排序，混合过滤
+
+>[!NOTE]
+>
+> 在SITES-97中，GraphQL实施已做出一些改进，可能会导致意外行为。 请参阅 [AEM GraphQL对处理空值的更改](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) 以了解更多信息。
 
 #### Assets {#assets-issues}
 
