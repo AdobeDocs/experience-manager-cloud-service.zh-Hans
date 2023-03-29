@@ -25,7 +25,7 @@ AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/cust
 
 UI 测试是打包在 Docker 映像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。此外，通过使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松生成 UI 测试项目。
 
-UI 测试作为每个 Cloud Manager 管道的特定质量关卡的一部分执行，并在[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或[非生产管道（可选）中采用&#x200B;[**自定义 UI 测试**&#x200B;步骤](/help/implementing/cloud-manager/deploy-code.md)。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 任何 UI 测试，包括回归和新功能，都可以检测和报告错误。
+UI 测试作为每个 Cloud Manager 管道的特定质量关卡的一部分执行，并在[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或[&#128279;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)非生产管道（可选）中采用&#x200B;[**自定义 UI 测试**&#x200B;步骤](/help/implementing/cloud-manager/deploy-code.md)。 任何 UI 测试，包括回归和新功能，都可以检测和报告错误。
 
 与自定义功能测试（用 Java 编写的 HTTP 测试）不同，UI 测试可以是 Docker 映像，其中包含用任何语言编写的测试，只要它们遵循[构建 UI 测试](#building-ui-tests)一节中定义的约定。
 
