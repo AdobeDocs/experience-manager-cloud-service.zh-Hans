@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '469'
-ht-degree: 100%
+source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 
 首先，了解[云原生服务的好处](#solution-benefits)。查看[对 Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) 所做的显著更改，这些更改将在[对 Assets 进行显著更改](/help/assets/assets-cloud-changes.md)后影响 Experience Manager Assets。
 
-继续阅读以了解[新 Assets 功能的详细信息](#whats-new-assets)和[已知问题](/help/release-notes/known-issues.md)。查看[已弃用或删除的功能](/help/release-notes/deprecated-removed-features.md)列表以了解此版本中删除的功能，并查看此[即将推出的功能列表](/help/release-notes/known-issues.md#upcoming-assets-capabilities)以了解即将推出的功能。最后，通过此[词汇表](/help/overview/terminology.md)了解 Experience Manager 术语。
+继续阅读以了解[新 Assets 功能的详细信息](#whats-new-assets)和[已知问题](/help/release-notes/maintenance/latest.md)。查看 [已弃用或已删除的功能](/help/release-notes/deprecated-removed-features.md) 以了解此版本中删除的内容。 最后，通过此[词汇表](/help/overview/terminology.md)了解 Experience Manager 术语。
 
 ## 解决方案好处 {#solution-benefits}
 

@@ -1,48 +1,45 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新维护发行说明。'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新维护发行说明。'
-source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
+title: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
+description: 的最新维护发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
+source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 100%
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
 
-# 维护发行说明 {#maintenance-release-notes}
+# 维护版本说明 {#maintenance-release-notes}
 
-以下部分概述了 Experience Manager as a Cloud Service 的最新维护版本的技术发行说明。
+以下部分概述了当前维护版本的Experience Manageras a Cloud Service的技术发行说明。
 
-## 发行版本 11289 {#release-11289}
+## 发行版本 11382 {#release-11382}
 
-下面总结了维护版本 11289 的持续改进情况，该版本已于 2023 年 3 月 7 日公开发布。此维护版本是对上一个维护版本 10912 的更新。
+以下是2023年3月28日公开发布的维护版本11382的持续改进。 此维护版本是对上一个维护版本 11289 的更新。
 
 此维护版本的功能支持将为您提供完整功能集。有关完整详细信息，请参阅[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-### 已知问题 {#known-issues}
-
-如果您使用的是 CORS，请不要升级。此版本中发现了一个影响 GraphQL 内容投放功能的问题。对有关 GraphQL 持久查询缓存方式的默认 AEM Dispatcher 配置的更改可能会中断此类查询的 GraphQL 内容传递。这个问题将在我们的下一个维护版本中得到修复。
-
 ### 修复的问题 {#fixed-issues}
+
+- ASSETS-21023 — 修复了智能裁剪呈现，在该呈现版本中，当客户尝试通过API访问这些呈现时，他们可能会在所有AEM环境的发布者实例上看到空指针异常。
+- SKYOPS-49280 — 使用RDE在Publish中安装配置或包更新时，可能无法观察到结果，因为Publish调度程序缓存未失效
 
 #### Sites {#sites-issues}
 
-- SITES-11584 解决了无法为带有注释的页面创建 Live Copy 的问题
-- SITES-11683 已禁用 MSM Live Copy（具有部分断开的继承）
+- SITES-7796 — 内容作者在导出到目标时能够发布主控内容片段及其各自的变体
 
 #### Assets {#assets-issues}
 
-- ASSETS-20879 修复了阻止资产报告 UI 正常工作并导致生成的报告结果不正确的回归。
-- ASSETS-21020 解决了资产下载损坏的问题 - 移动资产后图像配置文件不存在
-- ASSETS-21023 修复了 Dynamic Media 中的图像呈现阻止通过 API 访问的问题
+- ASSETS-20076 — 添加对与当前图像水印支持匹配的视频水印支持
+- ASSETS-21428 — 为CSS更改添加了排除项
 
 #### Forms {#forms-issues}
 
-- 无
+- CQ-4351502 — 更新服务用户映射以允许在站点中进行读取访问
 
 #### Platform {#platform-issues}
 
-- GRANITE-44467 - 修复了导致导入失败的问题，更新现有节点时，某些实例下的 Filevault 没有保留混合类型和子节点
+- SITES-11040 — 在调度程序中有条件地启用GraphQL持久化查询缓存
 
 ### 嵌套的技术 {#embedded-tech}
 
