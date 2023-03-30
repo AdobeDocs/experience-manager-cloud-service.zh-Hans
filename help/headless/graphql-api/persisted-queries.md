@@ -3,7 +3,7 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 73%
@@ -272,6 +272,8 @@ query getAdventuresByActivity($activity: String!) {
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### 创作实例 {#author-instances}
 
 对于创作实例，默认值为：
@@ -345,6 +347,8 @@ curl -u admin:admin -X POST \
 | `graphqlStaleIfError` | 86400 | *适当* | *适当* |
 | `graphqlSurrogateControl` | 600 | *适当* | *适当* |
 
+{style="table-layout:auto"}
+
 ### 使用OSGi配置管理缓存 {#cache-osgi-configration}
 
 要全局管理缓存，您可以 [配置OSGi设置](/help/implementing/deploying/configuring-osgi.md) 对于 **持久查询服务配置**.
@@ -363,6 +367,8 @@ curl -u admin:admin -X POST \
    | `surrogateControlMaxAge` | 读取 | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | 读取 | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | 读取 | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * 如果不可用，则OSGi配置会使用 [发布实例的默认值](#publish-instances).
 
