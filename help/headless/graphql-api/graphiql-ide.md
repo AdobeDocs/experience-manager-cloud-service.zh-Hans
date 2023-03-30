@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
+source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 100%
+source-wordcount: '1058'
+ht-degree: 99%
 
 ---
 
@@ -88,8 +88,6 @@ ht-degree: 100%
 
 ## 查询变量 {#query-variables}
 
-<!-- more details needed here? -->
-
 GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content-fragments.md#graphql-variables)。
 
 例如：
@@ -99,6 +97,10 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 ## 管理保留查询的缓存 {#managing-cache}
 
 建议使用[持久查询](/help/headless/graphql-api/persisted-queries.md)，因为它们可以缓存在 Dispatcher 和 CDN 层，最终提高请求客户端应用程序的性能。默认情况下，AEM 将根据默认生存时间 (TTL) 使内容投放网络 (CDN) 缓存失效。
+
+>[!NOTE]
+>
+>有关更多详细信息，请参阅 [缓存保留的查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
