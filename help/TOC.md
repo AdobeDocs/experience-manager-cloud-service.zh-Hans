@@ -963,7 +963,7 @@ ht-degree: 99%
 + Universal Editor {#universal-editor}
    + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
    + [使用 Universal Editor 创作内容](/help/implementing/universal-editor/authoring.md)
-   + [使用通用编辑器发布内容](/help/implementing/universal-editor/publishing.md)
+   + [使用 Universal Editor 发布内容](/help/implementing/universal-editor/publishing.md)
    + [AEM Universal Editor 快速入门](/help/implementing/universal-editor/getting-started.md)
    + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
    + [属性和类型](/help/implementing/universal-editor/attributes-types.md)

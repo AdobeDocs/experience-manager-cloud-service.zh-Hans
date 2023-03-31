@@ -1,17 +1,17 @@
 ---
-title: 通用可视化编辑器简介
-description: 了解通用可视编辑器（即通用编辑器）如何实现任何无头和有头的体验的“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验、提高内容速度，以及如何提供一流的开发人员体验。
+title: Universal Visual Editor 简介
+description: 了解 Universal Visual Editor（又名 Universal Editor）如何实现所见即所得 (what-you-see-is-what-you-get, WYSIWYG) 编辑任何 Headless 和 Headful 体验。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
-# 通用可视化编辑器简介 {#introduction}
+# Universal Visual Editor 简介 {#introduction}
 
-了解通用可视编辑器（即通用编辑器）如何实现任何无头和有头的体验的“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验、提高内容速度，以及如何提供一流的开发人员体验。
+了解 Universal Visual Editor（又名 Universal Editor）如何实现所见即所得 (what-you-see-is-what-you-get, WYSIWYG) 编辑任何 Headless 和 Headful 体验。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
 
 ## 背景 {#background}
 
@@ -43,13 +43,13 @@ ht-degree: 74%
 
 * **AEM 页面结构** – `cq:Pages` 的嵌套 `cq:Components`，包括体验片段
 * **AEM 内容片段** – 编辑内容片段中的内容，因为它们将出现在体验的上下文中。
-* **文档**  — 概念验证显示，还可以使用相同方式编辑Word、Excel、Google文档或Markdown文档（这是WIP）。
+* **文档** – 概念验证表明 Word、Excel、Google 文档或 Markdown 文档也可以用相同的方式编辑（这是 WIP）。
 
 ### 任何方面 {#any-aspect}
 
 对于内容作者来说，内容不仅仅与包含的信息有关，还与信息的呈现和接收方式有关。内容附带了额外的元数据和插桩规则，Universal Editor 可以理解这些规则并进行编辑，包括：
 
-* **应用布局和样式**  — 通过使用样式系统，营销从业者和内容作者可以对其内容应用不同的样式，并为内容创建不同的布局，如列、轮播、制表符、手风琴等。
+* **应用布局和样式** – 通过使用样式系统，营销从业者和内容作者可以将不同的样式应用于其内容并为内容创建不同的布局，例如列、轮播、选项卡、折叠等。
 
 ## 价值 {#value}
 
@@ -61,9 +61,9 @@ ht-degree: 74%
 * **提升内容速度** – 为了简化从业人员的管理工作流程，Universal Editor 允许在预览中编辑内容，通过仅显示与该上下文相关的选项来指导从业人员，并使工作流程独立于内容源。
 * **最先进的开发人员体验** – 为了支持真实的异构应用环境，Universal Editor 完全解耦且与技术无关，允许开发人员使用他们喜欢的技术堆栈来实施体验。
 
-## 通用可视化编辑器和内容片段编辑器 {#universal-editor-content-fragment-editor}
+## 内容片段编辑器中的 Universal Visual Editor {#universal-editor-content-fragment-editor}
 
-乍一看，似乎通用可视化编辑器和内容片段编辑器提供了类似的编辑功能。 但这些编辑器却提供了完全不同的功能，并且它们为营销从业人员完成了不同的作业。
+乍一看，Universal Visual Editor 和内容片段编辑器似乎提供了类似的编辑功能。但这些编辑器却提供了完全不同的功能，并且它们为营销从业人员完成了不同的作业。
 
 ### 内容片段编辑器 {#content-fragment-editor}
 
@@ -71,7 +71,7 @@ ht-degree: 74%
 
 * 要完成的基本作业是扩展内容策略。
 
-### 通用可视编辑器 {#universal-editor}
+### Universal Visual Editor {#universal-editor}
 
 营销从业人员想创建根据给定上下文的布局定制的内容，以提供卓越的体验。
 
@@ -79,7 +79,7 @@ ht-degree: 74%
 
 ## 路线图 {#road-map}
 
-必须指出，通用编辑器是一项正在进行的工作，本文档中列出的某些功能是最终编辑器的愿景，不一定代表其当前能力。
+请务必注意，Universal Editor 正处于开发阶段，本文档中列出的一些功能是最终编辑器的愿景，而不一定表示是其当前功能。
 
 请与您的 Adobe 联系人联系，了解有关为 Universal Editor 规划的即将推出的功能的详细信息.
 
@@ -88,7 +88,7 @@ ht-degree: 74%
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
 * [使用 Universal Editor 创作内容](authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
-* [使用通用编辑器发布内容](publishing.md)  — 了解通用可视化编辑器如何发布内容以及您的应用程序如何处理已发布的内容。
+* [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。

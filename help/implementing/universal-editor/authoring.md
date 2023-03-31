@@ -4,7 +4,7 @@ description: 了解内容作者使用 Universal Editor 创建内容是多么轻�
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->通用编辑器仍在开发中，当前无法编辑所有内容类型。
+>Universal Editor 仍处于开发阶段，目前无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -108,7 +108,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 位置栏 {#Location-bar}
 
-位置栏会显示您正在编辑的页面的地址。 点按或单击此项可输入要编辑的另一个页面的地址。
+位置栏为您显示正在编辑的页面的位置。点按或单击此项可输入要编辑的另一个页面的地址。
 
 ![位置栏](assets/address-bar.png)
 
@@ -138,7 +138,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!TIP]
 >
->查看文档 [使用通用可视化编辑器发布内容](publishing.md) 以了解有关使用通用编辑器发布的更多信息。
+>有关使用 Universal Editor 发布内容的更多信息，请参阅文档[使用 Universal Visual Editor 发布内容](publishing.md)。
 
 ### 边栏 {#rail}
 
@@ -193,7 +193,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
 * [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
-* [使用通用编辑器发布内容](publishing.md)  — 了解通用可视化编辑器如何发布内容以及您的应用程序如何处理已发布的内容。
+* [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。

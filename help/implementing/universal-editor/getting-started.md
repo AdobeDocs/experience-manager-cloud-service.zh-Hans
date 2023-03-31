@@ -4,7 +4,7 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ import "@adobe/universal-editor-cors";
 
 ### 非 React 应用程序的替代项 {#alternative}
 
-如果您没有实施React应用程序，并且/或需要服务器端渲染，则替代方法是将以下内容包含到文档正文中。
+如果您没有实施 React 应用程序和/或需要服务器端呈现，替代方法是将以下内容包含到文档正文中。
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -169,7 +169,7 @@ itemid="urn:<referenceName>:<resource>"
 
 * [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 * [使用 Universal Editor 创作内容](authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
-* [使用通用编辑器发布内容](publishing.md)  — 了解通用可视化编辑器如何发布内容以及您的应用程序如何处理已发布的内容。
+* [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](authentication.md) – 了解 Universal Editor 如何进行身份验证。

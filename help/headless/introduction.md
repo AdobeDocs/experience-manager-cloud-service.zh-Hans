@@ -6,14 +6,14 @@ exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager as a Headless CMS 简介 {#introduction-aem-headless}
 
-了解如何将Adobe Experience Manager(AEM)用作无头CMS（内容管理系统），以及诸如内容片段模型、内容片段和GraphQL API等功能（这些功能可以大规模提供无头体验）。
+了解如何将 Adobe Experience Manager (AEM) 用作 Headless CMS（内容管理系统），该系统具有内容片段模型、内容片段和 GraphQL API 等功能，可为大规模 Headless 体验提供强大的支持。
 
 您可以阅读所涉及各种功能的详细文档和/或选择 [Headless 历程以了解最初的步骤](#first-steps)。
 
@@ -25,7 +25,7 @@ ht-degree: 79%
 
 AEM Headless 是来自 Experience Manager 的 CMS 解决方案，使得任意应用程序可以使用 HTTP，通过 GraphQL 使用 AEM 中的结构化内容（内容片段）。Headless 实施实现了大规模跨平台和渠道的体验投放。
 
-无头实施将用于页面和组件管理，与全栈和混合解决方案中的传统实施相同。 相反，它着重于创建内容的渠道中性、可重用片段及其跨渠道交付。 这是一种现代化的动态开发模式，用于实施 Web 体验。
+Headless 实施放弃了传统的全栈和混合解决方案中的页面和组件管理。相反，它专注于与渠道无关的、可重复使用的内容片段的创建及其跨渠道交付。这是一种现代化的动态开发模式，用于实施 Web 体验。
 
 ![AEM 实施模型](assets/aem-implementation-models.png)
 
@@ -34,13 +34,13 @@ AEM Headless 是来自 Experience Manager 的 CMS 解决方案，使得任意应
 AEM as a Cloud Service 是一款灵活的工具，提供了三种强大的功能用于 Headless 实施模型：
 
 1. **内容片段模型**
-   * 内容片段模型是内容的结构化表示形式。
-   * 内容片段模型由AEM内容片段模型编辑器中的信息架构师定义。
+   * 内容片段模型是内容的结构化呈现。
+   * 内容片段模型由信息架构师在 AEM 内容片段模型编辑器中定义。
    * 内容片段模型用作内容片段的基础。
 1. **内容片段**
    * 内容片段是基于内容片段模型创建的。
-   * 内容片段由内容作者使用AEM内容片段编辑器创建。
-   * 内容片段存储为AEM Assets，但可以通过“资产”控制台或 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+   * 内容片段由内容作者使用 AEM 内容片段编辑器创建。
+   * 内容片段存储为 AEM Assets，但可以通过资产控制台或[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)进行管理。
 1. **用于投放的内容 API**
    * AEM GraphQL API 支持内容片段投放。
    * AEM Assets REST API 支持内容片段 CRUD 操作。
