@@ -4,9 +4,9 @@ description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 98%
    * 文件夹（添加、修改、删除）
    * 可编辑模板（添加、修改、删除）
    * 上下文感知配置（`/conf` 下的任何内容）（添加、修改、删除）
-   * 脚本（包可以在包安装的安装过程的各个阶段触发安装挂钩。请参阅 [Jackrabbit filevault文档](https://jackrabbit.apache.org/filevault/installhooks.html) 关于安装挂钩。 请注意，AEM CS 目前使用 Filevault 版本 3.4.0，它仅允许管理员用户、系统用户和管理员组的成员安装挂钩）。
+   * 脚本（包可以在包安装的安装过程的各个阶段触发安装挂钩。有关安装挂钩的信息，请参阅 [Jackrabbit filevault 文档](https://jackrabbit.apache.org/filevault/installhooks.html)。请注意，AEM CS 目前使用 Filevault 版本 3.4.0，它仅允许管理员用户、系统用户和管理员组的成员安装挂钩）。
 
 可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。在 AEM 6.5 中进行了重构以反映此分离，可以在 [AEM 6.5 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到有关推荐的项目重构的详细信息。
 
@@ -294,7 +294,7 @@ above appears to be internal, to confirm with Brian -->
 * OSGI 配置运行架构必须引用 RDE、开发、暂存或生产作为环境，或引用创作和发布作为服务。支持组合使用 `<service>.<environment_type>`，但必须按此特定顺序使用它们（例如 `author.dev` 或 `publish.prod`）。应直接从代码中引用 OSGI 令牌，而不是使用 `getRunModes` 方法（该方法在运行时将不再包含 `environment_type`）引用它。有关更多信息，请参阅[为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)。
 * OSGI 捆绑包运行架构仅适用于服务（创作、发布）。每运行架构 OSGI 捆绑包应安装在 `install.author` 或 `install.publish` 下的内容包中。
 
-AEMas a Cloud Service不允许使用运行模式为特定环境或服务安装内容。 如果开发环境需要植入暂存或生产环境中未包含的数据或HTML，则可以使用包管理器。
+AEM as a Cloud Service 不允许使用运行模式为特定环境或服务安装内容。如果开发环境需要使用暂存或生产环境中不存在的数据或 HTML 进行播种，则可以使用包管理器。
 
 不受支持的运行架构配置包括：
 
