@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 预发行渠道
 description: 了解如何使用预发行渠道预览 AEM as a Cloud Service 即将推出的功能。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1311'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,22 +16,22 @@ ht-degree: 86%
 
 ## 简介 {#introduction}
 
-根据，Adobe Experience Manager as a Cloud Service会定期推出新功能 [Experience Manager版本路线图。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
 
-为了熟悉计划在以下功能版本上线的功能，您可以订阅预发行渠道，该渠道可通过配置开发环境或任何沙盒环境来访问。 您可以预览可通过 AEM UI 访问的更改，以及根据任何新的预发布 API 构建代码。
+要熟悉安排在以下功能版本中上线的功能，可订阅预发行版渠道（可通过配置开发环境或任何沙盒环境而访问该渠道）。可预览可通过 AEM UI 访问的更改，并可对照任何新的预发行版 API 构建代码。
 
-给定功能版本的预发行功能列表发布在 [发行说明。](/help/release-notes/release-notes-cloud/release-notes-current.md)
+[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中发布了给定功能版本的预发行版功能的列表。
 
 ## AEM as a Cloud Service 版本 {#releases}
 
 AEM as a Cloud Service 有两种类型的版本。
 
-* **功能发布** 在激活时向AEMas a Cloud Service添加功能和特性
-* **维护版本** 添加安全更新、性能增强和错误修复，并定期且频繁地应用。
+* **功能版本**&#x200B;在激活后将功能和特性添加到 AEM as a Cloud Service
+* **维护版本**&#x200B;添加安全更新、性能增强和错误修复，并定期和频繁应用。
 
 此模式可确保持续发行而不会中断服务。
 
-预发行渠道允许您预览计划在即将发布的功能版本中提供的功能，以评估即将推出的功能，并针对您自己的项目规划其可能的实施。 它允许您为下一个功能版本预先规划。
+通过预发行版渠道，可预览为即将推出的功能版本安排的功能，以评估即将推出的功能，并规划它可为您自己的项目使用的实现。通过它，可提前规划下一个功能版本。
 
 例如，如果现在是 5 月并且您订阅了预发行频道，则可以评估即将发行的 6 月版本中的功能。
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 有两种类型的版本。
 
 ## 标记您的日历 {#mark-calendars}
 
-功能发布会提前很早计划，功能发布激活日期会在 [Adobe Experience League。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+提前安排好功能版本，并在 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上公布功能版本激活日期。
 
 记下发行日期，以便您可以计划时间来查看和测试即将推出的功能。
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service 有两种类型的版本。
 
 值为 sticky，因此，只能在第一次启动时选择它。重新安装 SDK 可更改命令行选项。
 
-由于每月发布功能间隔可能会有多个 AEM 维护版本，因此，您可以下载这些新的 SDK，并在 maven 项目中引用新的 SDK API Jar 版本。维护版本将不会添加额外的预发行版功能，但可能包括其他较小的更改，例如错误修复、安全修复和性能增强。
+由于每月功能版本之间可能会有多个 AEM 维护版本，因此，您可以下载这些新的 SDK，并在 maven 项目中引用新的 SDK API Jar 版本。维护版本将不会添加额外的预发行版功能，但可能包括其他较小的更改，例如错误修复、安全修复和性能增强。
 Javadocs 将发布到 Maven Central。
 
 #### 针对预发行版 SDK 进行构建 {#build-sdk}
