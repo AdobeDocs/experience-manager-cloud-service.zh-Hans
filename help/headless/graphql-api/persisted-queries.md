@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使�
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1541'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 73%
 >
 >建议使用持久查询。 请参阅 [GraphQL 查询最佳实践 (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 以了解详细信息和相关的 Dispatcher 配置。
 
-[GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在 AEM 中可供您开发、测试和持久您的 GraphQL 查询，然后再[转移到您的生产环境](#transfer-persisted-query-production)。 对于需要自定义的情况(例如， [自定义缓存](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))，您可以使用API;请参阅 [如何保留GraphQL查询](#how-to-persist-query).
+[GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在 AEM 中可供您开发、测试和持久您的 GraphQL 查询，然后再[转移到您的生产环境](#transfer-persisted-query-production)。 对于需要自定义的情况（例如，当[自定义缓存](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)时）可使用该 API；请参阅在[如何使 GraphQL 查询持久](#how-to-persist-query)中提供的 cURL 示例。
 
 ## 持久查询及端点 {#persisted-queries-and-endpoints}
 
@@ -56,10 +56,10 @@ ht-degree: 73%
 有多种持久查询的方法，包括：
 
 * GraphiQL IDE – 请参阅[保存保留的查询](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries)（首选方法）
-* cURL — 请参阅以下示例
+* cURL - 请查看以下示例
 * 其他工具，包括 [Postman](https://www.postman.com/)
 
-GraphiQL IDE 是 **首选**&#x200B;保留查询的方法。 使用 **cURL** 命令行工具：
+GraphiQL IDE 是 **首选**&#x200B;保留查询的方法。 使用 **cURL** 命令行工具使给定的查询持久：
 
 1. 使用 PUT 操作将查询放入新端点 URL `/graphql/persist.json/<config>/<persisted-label>` 来准备查询。
 
@@ -261,11 +261,11 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 正在缓存您的持久查询 {#caching-persisted-queries}
 
-建议使用持久化查询，因为它们可以缓存在 [Dispatcher](/help/headless/deployment/dispatcher.md) 和内容交付网络(CDN)层，最终提高请求客户端应用程序的性能。
+建议使用持久查询，因为可在 [Dispatcher](/help/headless/deployment/dispatcher.md) 和内容交付网络 (CDN) 层缓存此类查询，最终提高发出请求的客户端应用程序的性能。
 
-默认情况下， AEM将根据生存时间(TTL)定义使缓存失效。 这些TTL可由以下参数定义。 这些参数可通过各种方式访问，其名称会根据所使用的机制而有所变化：
+默认情况下，AEM 将根据生存时间 (TTL) 定义使缓存失效。可通过以下参数定义这些 TTL。可通过多种方式访问这些参数，其名称因所使用的机制而异：
 
-| 缓存类型 | [HTTP头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi配置  | Cloud Manager |
+| 缓存类型 | [HTTP 标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 配置  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | 浏览器 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
@@ -276,49 +276,49 @@ query getAdventuresByActivity($activity: String!) {
 
 ### 创作实例 {#author-instances}
 
-对于创作实例，默认值为：
+创作实例的默认值为：
 
 * `max-age`  : 60
 * `s-maxage` : 60
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
 
-这些：
+这些值：
 
-* 无法覆盖：
-   * 具有OSGi配置
+* 无法被覆盖：
+   * 用 OSGi 配置覆盖
 * 可被覆盖：
-   * 请求来定义使用cURL的HTTP标头设置；它应包括适合的设置 `cache-control` 和/或 `surrogate-control`;有关示例，请参阅 [在保留的查询级别管理缓存](#cache-persisted-query-level)
-   * 如果您在 **标题** 对话框 [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+   * 被使用 cURL 定义 HTTP 标头设置的请求覆盖；它应该包括适合 `cache-control` 和/或 `surrogate-control` 的设置；有关示例，请参阅[在持久查询级别管理缓存](#cache-persisted-query-level)
+   * 如果在 [GraphiQL IDE](#http-cache-headers-graphiql-ide) 的&#x200B;**标头**&#x200B;对话框中指定值，则可覆盖
 
 ### 发布实例 {#publish-instances}
 
-对于发布实例，默认值为：
+发布实例的默认值为：
 
 * `max-age`  : 60
 * `s-maxage` : 7200
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
 
-这些值可以被覆盖：
+这些值可被覆盖：
 
-* [从GraphQL IDE](#http-cache-headers-graphiql-ide)
+* [从 GraphQL IDE 覆盖](#http-cache-headers-graphiql-ide)
 
-* [在保留的查询级别](#cache-persisted-query-level);这包括使用命令行界面中的cURL将查询发布到AEM，以及发布持久查询。
+* [在持久查询级别](#cache-persisted-query-level)覆盖；其中涉及在命令行界面中使用 cURL 将查询发布到 AEM 以及发布持久查询。
 
-* [和Cloud Manager变量](#cache-cloud-manager-variables)
+* [用 Cloud Manager 变量覆盖](#cache-cloud-manager-variables)
 
-* [具有OSGi配置](#cache-osgi-configration)
+* [用 OSGi 配置覆盖](#cache-osgi-configration)
 
-### 在GraphiQL IDE中管理HTTP缓存标头 {#http-cache-headers-graphiql-ide}
+### 在 GraphiQL IDE 中管理 HTTP 缓存标头 {#http-cache-headers-graphiql-ide}
 
-GraphiQL IDE – 请参阅[“保存持久查询”](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+GraphiQL IDE - 请参阅[保存持久查询](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
-### 在保留的查询级别管理缓存 {#cache-persisted-query-level}
+### 在持久查询级别管理缓存 {#cache-persisted-query-level}
 
-这包括使用命令行界面中的cURL将查询发布到AEM。
+其中涉及在命令行界面中使用 cURL 将查询发布到 AEM。
 
-有关PUT（创建）方法的示例：
+PUT（创建）方法的示例：
 
 ```bash
 curl -u admin:admin -X PUT \
@@ -327,7 +327,7 @@ curl -u admin:admin -X PUT \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-有关POST（更新）方法的示例：
+POST（更新）方法的示例：
 
 ```bash
 curl -u admin:admin -X POST \
@@ -336,41 +336,41 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-可以在创建时（PUT）或以后（例如，通过 POST 请求）设置 `cache-control`。在创建持久查询时，缓存控制是可选的，因为 AEM 可以提供默认值。请参阅 [如何保留GraphQL查询](#how-to-persist-query)，例如使用cURL保留查询的示例。
+可以在创建时（PUT）或以后（例如，通过 POST 请求）设置 `cache-control`。在创建持久查询时，缓存控制是可选的，因为 AEM 可以提供默认值。有关使用 cURL 使查询持久的示例，请参阅[如何使 GraphQL 查询持久](#how-to-persist-query)。
 
-### 使用Cloud Manager变量管理缓存 {#cache-cloud-manager-variables}
+### 使用 Cloud Manager 变量管理缓存 {#cache-cloud-manager-variables}
 
-[Cloud Manager环境变量](/help/implementing/cloud-manager/environment-variables.md) 可以通过Cloud Manager定义以定义所需的值：
+可用 Cloud Manager 定义 [Cloud Manager 环境变量](/help/implementing/cloud-manager/environment-variables.md)以定义所需的值：
 
 | 名称 | 值 | 已应用服务 | 类型 |
 |--- |--- |--- |--- |
-| `graphqlStaleIfError` | 86400 | *适当* | *适当* |
-| `graphqlSurrogateControl` | 600 | *适当* | *适当* |
+| `graphqlStaleIfError` | 86400 | *酌情* | *酌情* |
+| `graphqlSurrogateControl` | 600 | *酌情* | *酌情* |
 
 {style="table-layout:auto"}
 
-### 使用OSGi配置管理缓存 {#cache-osgi-configration}
+### 使用 OSGi 配置管理缓存 {#cache-osgi-configration}
 
-要全局管理缓存，您可以 [配置OSGi设置](/help/implementing/deploying/configuring-osgi.md) 对于 **持久查询服务配置**.
+要全局管理缓存，您可以为&#x200B;**持久查询服务配置**[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)。
 
 >[!NOTE]
 >
->OSGi配置仅适用于发布实例。 创作实例上存在配置，但忽略该配置。
+>OSGi 配置仅适用于发布实例。创作实例上存在该配置，但忽略了它。
 
-发布实例的默认OSGi配置：
+发布实例的默认 OSGi 配置：
 
-* 读取Cloud Manager变量（如果可用）：
+* 读取 Cloud Manager 变量（如果可用）：
 
-   | OSGi配置属性 | 读取此内容 | Cloud Manager变量 |
+   | OSGi 配置属性 | 读取此项 | Cloud Manager 变量 |
    |--- |--- |--- |
-   | `cacheControlMaxAge` | 读取 | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | 读取 | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | 读取 | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | 读取 | `graphqlStaleIfError` |
+   | `cacheControlMaxAge` | 读 | `graphqlCacheControl` |
+   | `surrogateControlMaxAge` | 读 | `graphqlSurrogateControl` |
+   | `surrogateControlStaleWhileRevalidate` | 读 | `graphqlStaleWhileRevalidate` |
+   | `surrogateControlStaleIfError` | 读 | `graphqlStaleIfError` |
 
    {style="table-layout:auto"}
 
-* 如果不可用，则OSGi配置会使用 [发布实例的默认值](#publish-instances).
+* 如果不可用，OSGi 配置将使用[发布实例的默认值](#publish-instances)。
 
 ## 为应用程序使用的查询 URL 编码 {#encoding-query-url}
 
