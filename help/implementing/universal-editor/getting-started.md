@@ -1,7 +1,7 @@
 ---
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
-source-git-commit: 7389e20ba73e84c2320ea8a834b381f415ad3983
+source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ![请求对通用编辑器的访问权限](assets/request-access.png)
 
-单击 **请求访问** Adobe代表将审核您的请求并联系以讨论您的用例。
+单击 **请求访问** 并按照要求填写表格以请求访问。 Adobe代表将审核您的请求并联系以讨论您的用例。
 
 ## 包括 Universal Editor 核心库 {#core-library}
 
