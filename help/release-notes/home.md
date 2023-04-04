@@ -3,9 +3,9 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 9a00889f06a5ecf277cd99d4adbc8341480caa17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 99%
 
 ## 如何准备发布 {#how-to-prepare}
 
-利用 [!DNL Adobe Experience Manager] as a Cloud Service 中的连续发布模型，应用程序会持续自动更新。有两种类型的更新，功能发布和维护版本：
+利用 [!DNL Adobe Experience Manager] as a Cloud Service 中的连续发布模型，应用程序会持续自动更新。有两种类型的更新，功能版本和维护版本：
 
-* [功能发布](/help/release-notes/release-notes-cloud/release-notes-current.md)按可预测的每月频率进行，侧重于新功能和产品创新。
+* [功能版本](/help/release-notes/release-notes-cloud/release-notes-current.md)按可预测的每月频率发布，侧重于新功能和产品创新。
 * [维护版本](/help/release-notes/maintenance/latest.md)经常发布，并侧重于安全更新、错误修复和性能增强。这可确保使用任何关键修复来使 [!DNL Adobe Experience Manager] as a Cloud Service 始终保持最新。
 
 除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service 还提供了灵活性，可在即将推出的功能发布到生产环境前的一整个月预览这些功能。这可让您在自定义环境中试用功能并提前培训内部用户/帮助他们做好准备，从而评估即将发布的版本对组织的影响。如果您有 AEM 加载项（例如表单），也可以通过在[程序设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中选择解决方案来确保对其进行更新。
 
 >[!NOTE]
 >
->预发布仅针对每月功能发布，不针对关键更新。
+>仅为每月功能版本，而不为关键更新进行预发行。
 
 要准备发布，请执行以下操作：
 
@@ -40,7 +40,7 @@ ht-degree: 99%
 ## 关键发行信息 {#key-articles}
 
 * [功能发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
-* [维护版本说明](/help/release-notes/maintenance/latest.md)
+* [维护发行说明](/help/release-notes/maintenance/latest.md)
 * [新增功能](what-is-new.md)
 * [重要更改](aem-cloud-changes.md)
 * [已弃用和已删除的功能](deprecated-removed-features.md)
