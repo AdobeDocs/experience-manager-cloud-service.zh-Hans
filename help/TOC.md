@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '4013'
 ht-degree: 99%
 
 ---
@@ -517,7 +517,6 @@ ht-degree: 99%
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
-      + [参考主题、模板和数据模型](/help/forms/reference-themes-templates-data-models.md)
    + 集成 {#integrate}
       + 服务 {#services}
          + [将 AEM Forms as a Cloud Service 与 Adobe Sign 集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,9 +548,9 @@ ht-degree: 99%
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [自适应表单创作简介](/help/forms/introduction-forms-authoring.md)
             + [创建自适应表单](/help/forms/creating-adaptive-form.md)
+            + [参考主题、模板和数据模型](/help/forms/reference-themes-templates-data-models.md)
             + [创建模板](/help/forms/template-editor.md)
             + [创建主题](/help/forms/themes.md)
-            + [参考资产](/help/forms/reference-assets.md)
             + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
             + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}

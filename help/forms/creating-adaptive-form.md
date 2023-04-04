@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
 source-wordcount: '1500'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 开始之前，请了解可供您使用的Forms组件类型：
 
-* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 是标准化的数据捕获组件。 这些组件为您的数字注册体验提供了自定义功能、缩短了开发时间并降低了维护成本。 开发人员可以轻松自定义和设置这些组件的样式。 Adobe建议利用这些现代且可扩展的组件来开发自适应Forms。
+* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans) 是标准化的数据捕获组件。 对于您的数字注册体验，这些组件可以提供定制功能，缩短开发时间和降低维护成本。开发人员可以轻松自定义和设置这些组件的样式。 Adobe建议利用这些现代且可扩展的组件来开发自适应Forms。
 
 * [自适应Forms Foundation组件](creating-adaptive-form.md) 是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑现有的基于自适应表单的基础组件。 如果要创建新表单，Adobe建议使用  [自适应Forms核心组件](creating-adaptive-form-core-components.md) 创建自适应Forms。
 
@@ -53,14 +53,17 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 您需要满足以下条件才能创建自适应表单：
 
-* **自适应表单模板**:模板提供了基本结构并定义了自适应表单的外观（布局和样式）。 它具有预格式化的组件，其中包含某些属性和内容结构。 它还提供了用于定义主题和提交操作的选项。 主题定义了外观和感觉，并定义了提交自适应表单时要执行的操作。 例如，将收集的数据发送到数据源。 云服务支持两种类型的模板：
-
-* **可编辑的模板**:您可以 [新建](template-editor.md) 或 [导入现有可编辑的模板](migrate-to-forms-as-a-cloud-service.md). 您还可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests。) 以获取一些可编辑的模板示例。
-* **静态模板**:这些是旧版模板，仅建议从Adobe Managed Services(AMS)和内部部署AEM Forms安装(AEM 6.5 Forms或更早版本)迁移的客户使用这些模板。 利用这些功能，可继续利用静态模板中的现有投资。 创建新的自适应表单时，建议使用可编辑的模板。
+* **权限**:将用户添加到 [!DNL forms-users] 以向他们提供创建自适应表单的权限。 有关特定用户群组的表单的详细列表，请参阅 [群组和权限](forms-groups-privileges-tasks.md).
 
 * **自适应表单主题**:主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 应用主题时，指定的样式将反映在相应的组件上。 您可以 [创建新主题](themes.md) 或 [导入现有主题](import-export-forms-templates.md#uploading-a-theme). 您还可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) 示例主题。
 
-* **权限**:将用户添加到 [!DNL forms-users] 以向他们提供创建自适应表单的权限。 有关特定用户群组的表单的详细列表，请参阅 [群组和权限](forms-groups-privileges-tasks.md).
+* **自适应表单模板**:模板提供了基本结构并定义了自适应表单的外观（布局和样式）。 它具有预格式化的组件，其中包含某些属性和内容结构。 它还提供了用于定义主题和提交操作的选项。 主题定义了外观和感觉，并定义了提交自适应表单时要执行的操作。 例如，将收集的数据发送到数据源。 云服务支持两种类型的模板：
+
+   * **可编辑的模板**:您可以 [新建](template-editor.md) 或 [导入现有可编辑的模板](migrate-to-forms-as-a-cloud-service.md). 您还可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests。) 以获取一些可编辑的模板示例。
+
+   * **静态模板**:这些是旧版模板，仅建议从Adobe Managed Services(AMS)和内部部署AEM Forms安装(AEM 6.5 Forms或更早版本)迁移的客户使用这些模板。 利用这些功能，可继续利用静态模板中的现有投资。 创建新的自适应表单时，建议使用可编辑的模板。
+
+
 
 ## 创建自适应表单（基础组件） {#create-an-adaptive-form-foundation-components}
 
@@ -108,13 +111,13 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. （可选）在“提交”选项卡中，您可以为自适应表单指定发布或取消发布日期。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**。此时会出现一个对话框，用于指定标题、名称和保存自适应表单的位置：
+1. 点按 **[!UICONTROL 创建]**. 此时会出现一个对话框，用于指定标题、名称和保存自适应表单的位置：
 
    * **[!UICONTROL 标题]** 指定表单的显示名称。 标题可帮助您在 [!DNL Experience Manager Forms] 用户界面。
    * **[!UICONTROL 名称：]** 指定表单的名称。 在存储库中创建具有指定名称的节点。 开始键入标题时，将自动生成名称字段的值。 您可以更改建议的值。 名称字段只能包含字母数字字符、连字符和下划线。 所有无效输入都将替换为连字符。
    * **[!UICONTROL 路径：]** 指定自适应表单的保存位置。 您可以直接在 `/content/dam/formsanddocuments` 或创建文件夹，例如 `/content/dam/formsanddocuments/adaptiveforms` 以保存自适应表单。 确保在路径中使用文件夹之前先创建该文件夹。 的 **[!UICONTROL 路径：]** 字段不会自动创建文件夹。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**。此时会创建自适应表单，并在自适应Forms编辑器中打开该表单。 编辑器显示模板中可用的内容。 它还会显示侧栏，以根据需要自定义新创建的表单。
+1. 点按 **[!UICONTROL 创建]**. 此时会创建自适应表单，并在自适应Forms编辑器中打开该表单。 编辑器显示模板中可用的内容。 它还会显示侧栏，以根据需要自定义新创建的表单。
 
    根据自适应表单的类型，关联 <!--XFA form template, XML schema or --> JSON架构或表单数据模型显示在 **[!UICONTROL 数据模型对象]** 选项卡 **[!UICONTROL 内容浏览器]** 中。 您还可以拖放这些元素以构建自适应表单。
 
