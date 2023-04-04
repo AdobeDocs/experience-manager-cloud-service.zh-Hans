@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 48ec92d559f9d1ead096316e77e04f2e1e02526d
+source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '4015'
 ht-degree: 99%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 99%
          + [2020.4.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + AEMaaCS 维护版本说明{#maintenance}
+   + AEMaaCS 维护发行说明{#maintenance}
       + [当前维护发行说明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
          + [版维护发行说明 2023.1.0 版](/help/release-notes/maintenance/2023/2023.1.0.md)
@@ -517,6 +517,7 @@ ht-degree: 99%
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资源](/help/forms/import-export-forms-templates.md)
+      + [参考主题、模板和数据模型](/help/forms/reference-themes-templates-data-models.md)
    + 集成 {#integrate}
       + 服务 {#services}
          + [将 AEM Forms as a Cloud Service 与 Adobe Sign 集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
