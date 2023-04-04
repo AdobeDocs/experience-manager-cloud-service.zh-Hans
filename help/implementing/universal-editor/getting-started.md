@@ -1,10 +1,10 @@
 ---
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+source-git-commit: 7389e20ba73e84c2320ea8a834b381f415ad3983
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +32,13 @@ ht-degree: 100%
 
 ## 请求对 Universal Editor 的访问权限 {#request-access}
 
-您首先需要请求对 Universal Editor 的访问权限。请转到 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) 并验证您是否有权访问 Universal Editor。
+您首先需要请求对 Universal Editor 的访问权限。请转到 [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) 登录，并验证您是否有权访问通用编辑器。
 
 如果您不具有访问权限，可以通过同一页面上链接的表单来提出请求。
+
+![请求对通用编辑器的访问权限](assets/request-access.png)
+
+单击 **请求访问** Adobe代表将审核您的请求并联系以讨论您的用例。
 
 ## 包括 Universal Editor 核心库 {#core-library}
 
