@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1058'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅 [缓存保留的查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>有关更多详细信息，请参阅[缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)。
 
 >[!NOTE]
 >
