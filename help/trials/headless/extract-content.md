@@ -4,10 +4,10 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 100%
 在一个新选项卡中对 GraphQL Explorer 开始操作。在这里，您可以针对无头内容构建和验证查询，然后再使用它们为您的应用程序或网站中的内容提供支持。
 
 1. 您的 AEM Headless 试用版附带了一个已预加载内容片段的端点，您可以从中提取内容用于测试。确保在编辑器右上角的&#x200B;**端点**&#x200B;下拉菜单中选定 **AEM 演示资源**&#x200B;端点。
+
+1. 已知问题：如果 **AEM演示资产** 端点在下拉菜单中不存在，请导航到包管理器(`/crx/packmgr` 路径)，然后重新安装 `aem-demo-assets.ui.content-{VERSION}.zip` 包：
+
+   ![重新安装包](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. 为预加载的 **AEM 演示资产**&#x200B;端点的列表查询复制以下代码片段。列表查询会返回使用特定内容片段模型的所有内容的列表。库存和类别页面通常使用此查询格式。
 
