@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
+source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
 workflow-type: tm+mt
-source-wordcount: '3456'
-ht-degree: 4%
+source-wordcount: '3483'
+ht-degree: 3%
 
 ---
 
@@ -100,7 +100,7 @@ Dynamic Media发布设置适用于经验丰富的网站开发人员和程序员�
 | **[!UICONTROL JPEG 编码属性]** |  |
 | **[!UICONTROL 质量]** | <br>指定JPEG回复图像的默认属性。<br>仅对于新Dynamic Media帐户， **[!UICONTROL 质量]** 默认值自动设置为 `80` 同时用于 **[!UICONTROL 图像提供]** 和 **[!UICONTROL 测试图像提供]**.<br>此字段的定义范围为1 - 100。<br>另请参阅 [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) 参数。 |
 | **[!UICONTROL 色度降采样]** | 启用或禁用JPEG编码器采用的以色度进行缩减采样。 |
-| **[!UICONTROL 默认重新取样模式]** | 指定用于缩放图像数据的默认重新取样属性和插值属性。在 `resMode` 未在请求中指定。<br>仅对于新的Dynamic Media帐户，默认的重新取样模式会自动设置为 `Sharp2` 同时用于 **[!UICONTROL 图像提供]** 和 **[!UICONTROL 测试图像提供]**.<br>另请参阅 [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) 参数。 |
+| **[!UICONTROL 默认重新取样模式]** | 指定用于缩放图像数据的默认重新取样属性和插值属性。 在 `resMode` 未在请求中指定。<br>仅对于新的Dynamic Media帐户，默认的重新取样模式会自动设置为 `Sharp2` 同时用于 **[!UICONTROL 图像提供]** 和 **[!UICONTROL 测试图像提供]**.<br>另请参阅 [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) 参数。 |
 
 ### “常用缩略图属性”选项卡 {#common-thumbnail-attributes-tab}
 
@@ -111,7 +111,7 @@ Dynamic Media发布设置适用于经验丰富的网站开发人员和程序员�
 | **[!UICONTROL 缩略图的默认背景颜色]** | 指定用于填充不包含实际图像数据的输出缩略图图像区域的RGB值。 仅用于缩略图请求(`req=tmb`)和时间 **[!UICONTROL 默认缩略图类型]** 设置设置为 **[!UICONTROL 拟合]** 或 **[!UICONTROL 纹理]**.<br>另请参阅 [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) 参数。 |
 | **[!UICONTROL 水平对齐方式]** | 在由指定的回复图像矩形中指定缩略图的水平对齐方式 `wid=` 和 `hei=` 值。<br>仅用于缩略图请求(`req=tmb`)和时间 **[!UICONTROL 默认缩略图类型]** 设置设置为 **[!UICONTROL 拟合]**.<br>有三个水平对齐可供选择： **[!UICONTROL 居中对齐]**, **[!UICONTROL 左对齐]**&#x200B;和 **[!UICONTROL 右对齐]**.<br>另请参阅 [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) 参数。 |
 | **[!UICONTROL 垂直对齐方式]** | 在由指定的回复图像矩形中指定缩略图图像的垂直对齐方式 `wid=` 和 `hei=` 值。 仅用于缩略图请求(`req=tmb`)和时间 **[!UICONTROL 默认缩略图类型]** 设置设置为 **[!UICONTROL 拟合]**.<br>有三个垂直对齐方式可供选择： **[!UICONTROL 顶部对齐方式]**, **[!UICONTROL 居中对齐]**&#x200B;和 **[!UICONTROL 底部对齐方式]**.<br>另请参阅 [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) 参数。 |
-| **[!UICONTROL 默认缓存生存时间]** | 提供默认的有效期时间间隔（以小时为单位），以防特定的目录记录不包含有效的目录有效期值。设置为 `-1` 标记为永不过期。 <br>另请参阅 [过期](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) 参数。 |
+| **[!UICONTROL 默认缓存生存时间]** | 提供默认的过期时间间隔（以小时为单位），以防特定目录记录不包含有效的目录过期值。 设置为 `-1` 标记为永不过期。 <br>另请参阅 [过期](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) 参数。 |
 | **[!UICONTROL 默认缩略图类型]** | 为缩略图类型提供默认值，以防特定目录记录不包含有效的目录ThumbType值。 仅用于缩略图请求(`req=tmb`)。<br>有三种缩略图类型可供选择： **[!UICONTROL 裁切]**, **[!UICONTROL 拟合]**&#x200B;和 **[!UICONTROL 纹理]**.<br>另请参阅 [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) 参数。 |
 | **[!UICONTROL 默认缩略图分辨率]** | 为缩略图对象分辨率提供默认值，以防特定目录记录不包含有效的目录ThumbRes值。 仅用于缩略图请求(`req=tmb`)和 **[!UICONTROL 默认缩略图类型]** 设置设置为 **[!UICONTROL 纹理]**.<br>另请参阅 [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) 参数。 |
 
@@ -195,9 +195,13 @@ Dynamic Media发布设置适用于经验丰富的网站开发人员和程序员�
 * Web-to-print
 * UGC（用户生成的内容）服务
 
->[!IMPORTANT]
->
->对AdobeDynamic Media中新的或现有UGC矢量图像资产的支持于2021年9月30日终止。
+   >[!IMPORTANT]
+   >
+   >自2023年5月1日起，Dynamic Media中的UGC资产将可自上传之日起最多使用60天。 60天后，资产将被删除。
+
+   >[!NOTE]
+   >
+   >对AdobeDynamic Media中新的或现有UGC矢量图像资产的支持于2021年9月30日终止。
 
 ### 测试安全测试服务 {#test-secure-testing-service}
 
