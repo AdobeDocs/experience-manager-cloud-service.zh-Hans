@@ -2,9 +2,9 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '809'
+ht-degree: 100%
 
 ---
 
@@ -23,22 +23,22 @@ ht-degree: 0%
 
 需要执行大量步骤来载入您的 AEM 应用程序并为其插桩以使用 Universal Editor。
 
-1. [请求对 Universal Editor 的访问权限。](#request-access)
+1. [请求访问 Universal Editor。](#request-access)
 1. [包括 Universal Editor 核心库。](#core-library)
 1. [添加必要的 OSGi 配置。](#osgi-configurations)
 1. [在页面上插桩。](#instrument-page)
 
 本文档将引导您完成这些步骤。
 
-## 请求对 Universal Editor 的访问权限 {#request-access}
+## 请求访问 Universal Editor {#request-access}
 
-您首先需要请求对 Universal Editor 的访问权限。请转到 [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) 登录，并验证您是否有权访问通用编辑器。
+您首先需要请求访问 Universal Editor。请转到 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)，登录，然后验证您是否有权访问 Universal Editor。
 
-如果您不具有访问权限，可以通过同一页面上链接的表单来提出请求。
+如果您无权访问，则可通过同一页面上链接的表单请求访问。
 
-![请求对通用编辑器的访问权限](assets/request-access.png)
+![请求访问 Universal Editor](assets/request-access.png)
 
-单击 **请求访问** 并按照要求填写表格以请求访问。 Adobe代表将审核您的请求并联系以讨论您的用例。
+单击&#x200B;**请求访问**&#x200B;并按照指示填写表格以请求访问。Adobe 代表将审查您的请求并联系您以讨论您的用例。
 
 ## 包括 Universal Editor 核心库 {#core-library}
 
