@@ -5,7 +5,7 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -69,7 +69,7 @@ ht-degree: 100%
    * **[创建](#creating-new-content-fragment)**&#x200B;新内容片段
    * [筛选](#filtering-fragments)内容片段，并保存过滤器以供将来使用
    * [搜索](#searching-fragments)内容片段
-   * [自定义表视图以显示选定的信息列](#selectuse-available-columns)
+   * [自定义表视图以显示选定的信息列](#select-available-columns)
    * 使用&#x200B;**在资源中打开**&#x200B;直接在&#x200B;**资源**&#x200B;控制台中打开当前位置。
 
       >[!NOTE]

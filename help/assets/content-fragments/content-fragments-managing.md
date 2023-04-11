@@ -2,9 +2,9 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用AEM控制台来管理您的Assets内容片段（无头内容的基础）。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1761'
 ht-degree: 81%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 81%
 
 [内容片段编辑器](#opening-the-fragment-editor)提供各种[模式](#modes-in-the-content-fragment-editor)，使您能够：
 
-* [编辑内容](#editing-the-content-of-your-fragment)和[管理变量](#creating-and-managing-variations-within-your-fragment)
+* [编辑内容](#editing-the-content-of-your-fragment)和[管理变体](#creating-and-managing-variations-within-your-fragment)
 * [在片段中添加批注](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [将内容与片段关联](#associating-content-with-your-fragment)
 * [配置元数据](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -132,10 +132,6 @@ ht-degree: 81%
 >
 >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
 
->[!CAUTION]
->
->要编辑内容片段，您需要相应的权限。 如果您遇到问题，请联系您的系统管理员。
-
 1. 使用 **资产** 控制台以导航到内容片段的位置。
 1. 通过以下任一方式打开片段进行编辑：
 
@@ -164,7 +160,7 @@ ht-degree: 81%
 
 使用侧面板中的图标在各种模式中导航：
 
-* 变体：[编辑内容](#editing-the-content-of-your-fragment)和[管理变量](#creating-and-managing-variations-within-your-fragment)
+* 变体：[编辑内容](#editing-the-content-of-your-fragment)和[管理变体](#creating-and-managing-variations-within-your-fragment)
 
 * [注释](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [关联的内容](#associating-content-with-your-fragment)
