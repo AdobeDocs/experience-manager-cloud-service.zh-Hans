@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
-source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
+source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 90%
+source-wordcount: '402'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 90%
 
 ### 已知问题 {#known-issues-11382}
 
-- SITES-12573 — 如果未指定一个变量，则在过滤器内使用变量的GraphQL查询将失败。 如果您将GraphQL与AEMas a Cloud Service结合使用，请勿更新此版本。
+- SITES-12573 - 如果未指定一个变量，则在筛选器中使用变量的 GraphQL 查询将失败。如果您将 GraphQL 与 AEM as a Cloud Service 结合使用，请不要更新到此版本。
+- SKYOPS-51970 — 在buildImage步骤中使用的FACT版本的已识别回归，导致用户映射不匹配。
+- GRANITE-44542 — 针对包筛选器中包含的文件夹，报告了未指定包节点类型（通过为jcr:primaryType提供.content.xml）的客户的问题。 这会导致这些文件夹被视为nt:folder，这会在各种情况下产生问题。
 
 ### 修复的问题 {#fixed-issues-11382}
 
