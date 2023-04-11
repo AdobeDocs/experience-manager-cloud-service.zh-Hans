@@ -2,10 +2,10 @@
 title: 内容转移工具的先决条件
 description: 内容转移工具的先决条件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 15%
+source-wordcount: '547'
+ht-degree: 11%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="有关使用内容转移工具的重要注意事项"
->abstract="查看有关使用内容转移工具的重要注意事项，包括 Java 和 AEM 版本、支持的数据存储类型、用户组注意事项等。"
+>abstract="查看有关使用内容传输工具的重要注意事项，包括Java和AEM版本、支持的数据存储类型、用户组注意事项等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="使用内容传输工具的重要注意事项"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="最佳实践和准则"
 
@@ -23,7 +23,7 @@ ht-degree: 15%
 请查看下面列出的所有注意事项：
 
 | 注意事项 | 当前支持的内容 |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEM 版本 | 内容传输工具只能在AEM 6.3或更高版本上运行。 |
 | 区段存储的大小 | 现有的存储库，其JCR节点少于5500万，且在 *作者* 和50 GB on *发布* 当前支持。 与Adobe客户关怀团队一起创建支持票证，以讨论区段存储大小超过这些限制的选项。 |
 | 内容存储库的总大小 <br>*（区段存储+数据存储）* | 内容传输工具旨在为文件数据存储类型的数据存储传输高达20 TB的内容。 当前不支持任何高于20 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于20 TB的内容选项。 <br>为显着加快大型存储库的内容传输过程，可选 [预拷贝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step) 步骤。 这适用于文件数据存储、Amazon S3和Azure数据存储类型的数据存储。 对于Amazon S3和Azure数据存储，支持大于20TB的存储库大小。 |
@@ -34,4 +34,4 @@ ht-degree: 15%
 
 ## 后续内容 {#whats-next}
 
-查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请参阅 [使用内容传输工具的准则和最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+查看先决条件并确定是否可以在迁移项目中使用内容传输工具后，请参阅 [使用内容传输工具的准则和最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).

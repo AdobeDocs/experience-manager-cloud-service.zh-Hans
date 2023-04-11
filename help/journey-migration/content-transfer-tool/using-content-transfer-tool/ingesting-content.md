@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 12%
+source-wordcount: '1722'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 12%
 
    * 选择包含提取数据作为源的迁移集。
       * 迁移集将在长时间不活动后过期，因此，执行提取操作后预计摄取会相对较快进行。 审阅 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以了解详细信息。
-   * 选择目标环境。 这是将摄取迁移集内容的位置。 选择层。 （创作/发布）。
+   * 选择目标环境。 这是将摄取迁移集内容的位置。 选择层。 （创作/发布）。 不支持快速开发环境。
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ ht-degree: 12%
    > 
    >如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
 
+   >[!NOTE]
+   >
+   >摄取不支持快速开发环境(RDE)目标。 即使用户有权访问，它们也不会显示为可能的目标选项。
+
    >[!IMPORTANT]
    >
-   >仅当您属于本地环境时，才能将摄取启动到目标环境 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您无法启动摄取，请参阅 [无法启动摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
+   >仅当您属于本地环境时，才能启动对目标环境的摄取 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您无法启动摄取，请参阅 [无法启动摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
 
    >[!IMPORTANT]
    >
@@ -103,7 +107,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补摄取"
 >abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="查看日志"
 
 内容传输工具具备支持差异内容&#x200B;*增补*&#x200B;的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
 
@@ -132,7 +136,7 @@ ht-degree: 12%
 
 ### 无法启动摄取 {#unable-to-start-ingestion}
 
-仅当您属于本地环境时，才能将摄取启动到目标环境 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您不属于AEM管理员组，则在尝试开始摄取时，您将看到如下所示的错误。 您可以要求管理员将您添加到本地 **AEM管理员** 或请求令牌本身，然后您可以将该令牌粘贴到 **迁移令牌输入** 字段。
+仅当您属于本地环境时，才能启动对目标环境的摄取 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您不属于AEM管理员组，则在尝试开始摄取时，您将看到如下所示的错误。 您可以要求管理员将您添加到本地 **AEM管理员** 或请求令牌本身，然后您可以将该令牌粘贴到 **迁移令牌输入** 字段。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ AEM中的每个节点必须具有唯一的uuid。 此错误表示正在摄取的
 
 ## 后续内容 {#whats-next}
 
-完成将内容摄取到Target后，您可以查看每个步骤（提取和摄取）的日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 以了解更多。
+完成将内容摄取到Target后，您可以查看每个步骤（提取和摄取）的日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) 以了解更多。

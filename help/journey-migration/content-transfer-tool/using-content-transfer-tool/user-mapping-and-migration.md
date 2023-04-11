@@ -1,10 +1,10 @@
 ---
 title: 用户映射和主体迁移
 description: 用户映射和主迁移概述
-source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 23%
+source-wordcount: '757'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 23%
 
 在过渡到 Adobe Experience Manager (AEM) as a Cloud Service 的历程中，您需要将用户和组从现有 AEM 系统移至 AEM as a Cloud Service。此操作由内容传输工具完成。
 
-对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。这需要使用 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 来管理用户和用户组。用户配置文件信息集中存储在 Adobe Identity Management System (IMS) 中，该系统在所有 Adobe 云应用程序之间提供单点登录。有关更多详细信息，请参阅 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。由于进行了这项更改，现有用户需要映射到其IMS ID，以避免Cloud Service创作实例上出现重复的用户。 由于传统AEM中的组与IMS中的组存在根本上的不同，因此组未映射，但是迁移完成后必须协调这两组组。
+对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。这需要使用 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 来管理用户和用户组。用户配置文件信息集中存储在 Adobe Identity Management System (IMS) 中，该系统在所有 Adobe 云应用程序之间提供单点登录。有关更多详细信息，请参阅 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html#identity-management)。由于进行了这项更改，现有用户需要映射到其IMS ID，以避免Cloud Service创作实例上出现重复的用户。 由于传统AEM中的组与IMS中的组存在根本上的不同，因此组未映射，但是迁移完成后必须协调这两组组。
 
 ## 用户映射和迁移详细信息 {#user-mapping-detail}
 
@@ -49,6 +49,6 @@ ht-degree: 23%
 
 ## 其他注意事项 {#additional-considerations}
 
-* 如果设置 **摄取前擦除云实例上的现有内容** 设置后，Cloud Service实例上已传输的用户将与整个现有存储库一起删除，并将创建新存储库以将内容摄取到中。 此外，这还会重置所有设置，包括目标Cloud Service实例的权限，对于添加到的管理员用户，设置为true **管理员** 群组。 必须将管理员用户读取到 **管理员** 组来检索CTT的访问令牌。
+* 如果设置 **摄取前擦除云实例上的现有内容** 设置后，Cloud Service实例上已传输的用户将与整个现有存储库一起删除，并将创建新存储库以将内容摄取到中。 此外，这还会重置所有设置，包括目标Cloud Service实例的权限，对于添加到的管理员用户，设置为true **管理员** 群组。 必须将管理员用户重新添加到 **管理员** 组来检索CTT的访问令牌。
 * 执行内容增补时，如果内容自上次传输后未发生更改而未进行传输，则与该内容关联的用户和组也不会进行传输，即使用户和组在此期间发生了更改也是如此。 这是因为用户和组以及与其关联的内容一起进行迁移。
 * 如果目标AEM Cloud Service实例的用户与源AEM实例上的某个用户具有不同的用户名，但电子邮件地址与其中一个用户相同，并且启用了“用户映射”，则日志中会写入一条错误消息，并且不会传输源AEM用户，因为目标系统上只允许一个具有给定电子邮件地址的用户。

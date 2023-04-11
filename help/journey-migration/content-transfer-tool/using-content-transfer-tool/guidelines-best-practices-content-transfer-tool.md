@@ -2,10 +2,10 @@
 title: 使用内容传输工具的准则和最佳实践
 description: 使用内容传输工具的准则和最佳实践
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 23%
+source-wordcount: '1552'
+ht-degree: 22%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 23%
 
 * 提取键值自创建/续订后14天内有效。 可以随时更新。 如果提取键值已过期，您将无法执行提取。
 
-* 内容传输工具(CTT)在将内容从源实例传输到目标实例之前，不会执行任何类型的内容分析。 例如，CTT在将内容摄取到发布环境时，不会区分已发布和未发布的内容。 迁移集中指定的任何内容都将被摄取到所选目标实例中。 用户能够将迁移集摄取到创作实例或发布实例中，或同时摄取到两者中。 建议在将内容移动到生产实例时，在源创作实例上安装CTT以将内容移动到目标创作实例，同样，在源发布实例上安装CTT以将内容移动到目标发布实例。 请参阅 [在发布实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 以了解更多详细信息。
+* 内容传输工具(CTT)在将内容从源实例传输到目标实例之前，不会执行任何类型的内容分析。 例如，CTT在将内容摄取到发布环境时，不会区分已发布和未发布的内容。 迁移集中指定的任何内容都将被摄取到所选目标实例中。 用户能够将迁移集摄取到创作实例或发布实例中，或同时摄取到两者中。 建议在将内容移动到生产实例时，在源创作实例上安装CTT以将内容移动到目标创作实例，同样，在源发布实例上安装CTT以将内容移动到目标发布实例。 请参阅 [在发布实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 以了解更多详细信息。
 
 * 内容传输工具传输的用户和组只是内容满足权限要求的用户和组。 的 _提取_ 进程复制整个 `/home` 到迁移集中，并通过添加根据每个用户电子邮件地址生成的字段来执行用户映射。 有关更多信息，请参阅 [用户映射和主迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 的 _摄取_ 进程会复制迁移内容ACL中引用的所有用户和组。
 

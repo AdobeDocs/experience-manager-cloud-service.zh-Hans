@@ -2,7 +2,7 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 22%
@@ -43,7 +43,7 @@ ht-degree: 22%
 
 ### 启用SSL日志记录 {#enable-ssl-logging}
 
-了解SSL/TLS连接问题有时可能会很困难。 要在提取过程中排除连接问题，您可以通过源AEM环境的系统控制台启用SSL日志记录，方法如下：
+了解SSL/TLS连接问题有时可能会很困难。 要对提取过程中的连接问题进行故障诊断，您可以通过源AEM环境的系统控制台启用SSL日志记录，方法如下：
 
 1. 导航到源实例上的Adobe Experience Manager Web控制台，方法是转到 **工具 — 操作 — Web控制台** 或直接转到URL( *https://serveraddress:serverport/system/console/configMgr*
 1. 搜索 **内容传输工具提取服务配置**
