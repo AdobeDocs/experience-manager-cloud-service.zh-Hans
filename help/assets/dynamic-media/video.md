@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5899'
 ht-degree: 2%
 
 ---
@@ -427,7 +427,7 @@ DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，
 
    >[!IMPORTANT]
    >
-   >目前，在您的帐户上启用DASH仅在北美地区可用。
+   >目前，在您的帐户上启用DASH仅在亚太地区和北美地区提供；即将在欧洲 — 中东 — 非洲推出。
 
 发起使用DASH的请求；它不会在您的帐户上自动启用。
 
