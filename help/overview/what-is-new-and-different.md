@@ -2,10 +2,10 @@
 title: 不同功能与新增功能 – Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 – Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service 现在具有：
 
 ## AEM 更新 {#aem-updates}
 
-AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产实例和暂存实例均会更新到最新 AEM 版本而无需中断用户的服务。
+AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确保您的项目使用的是最新的 AEM 版本。这意味着生产和暂存实例将更新到最新的AEM版本，而不会中断用户的服务。
 
 >[!NOTE]
 >
