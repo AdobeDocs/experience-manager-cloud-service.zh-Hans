@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 source-git-commit: 411de178588ca94a0bdb60567b3c0a6b718edce1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
 ht-degree: 100%
 
