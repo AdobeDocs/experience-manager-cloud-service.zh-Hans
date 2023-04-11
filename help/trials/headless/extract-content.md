@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '755'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 
 1. 您的 AEM Headless 试用版附带了一个已预加载内容片段的端点，您可以从中提取内容用于测试。确保在编辑器右上角的&#x200B;**端点**&#x200B;下拉菜单中选定 **AEM 演示资源**&#x200B;端点。
 
-1. 已知问题：如果 **AEM演示资产** 端点在下拉菜单中不存在，请导航到包管理器(`/crx/packmgr` 路径)，然后重新安装 `aem-demo-assets.ui.content-{VERSION}.zip` 包：
+1. 已知问题：如果下拉菜单中没有 **AEM Demo Assets** 端点，请导航到包管理器（AEM 环境上的 `/crx/packmgr` 路径）并重新安装 `aem-demo-assets.ui.content-{VERSION}.zip` 包：
 
    ![重新安装包](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
