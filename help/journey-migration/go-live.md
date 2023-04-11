@@ -2,7 +2,7 @@
 title: 上线
 description: 了解在代码和内容云就绪后如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 4%
@@ -107,7 +107,7 @@ ht-degree: 4%
 与摄取上面的部分相比 **不** 失败，原因如下： 但是，强烈建议您在以下情况下采取适当步骤：
 
 * 缺少原始演绎版的任何资产
-* 任何缺少的文件夹 `jcr:content` 节点
+* 任何缺少的文件夹 `jcr:content` 节点。
 
 上述两个项目将在 [最佳实践分析器](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 报表。
 
