@@ -5,10 +5,10 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 91%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 100%
 * 左侧面板
    * 在此，可以隐藏或显示文件夹树
    * 您可以选择树的特定分支
+   * 可以调整其大小以显示嵌套文件夹
 * 主/右侧面板 – 从此处，您可以：
    * 查看树选定分支中的所有内容片段列表: 
       * 痕迹导航指示位置；它们还可用于更改位置
@@ -64,8 +65,10 @@ ht-degree: 100%
             * 在编辑器中打开相应的片段
             * 显示有关参考内容的信息
             * 显示有关片段的语言版本的信息
-         * 您可以[选择一个或多个内容片段来显示可用的操作](#actions-selected-content-fragment)
-      * 可以选择列标题，以根据该列对表进行排序；再次选择，以在升序和降序之间进行切换。目前，支持按&#x200B;**标题**、**修改日期**&#x200B;和&#x200B;**修改者**&#x200B;列进行排序。
+      * 通过在列标题上使用鼠标悬停，将显示下拉操作选择器和宽度滑块。 利用这些功能，您可以：
+         * 排序 — 为升序或降序选择适当的操作此操作将根据该列对整个表进行排序。 排序仅适用于相应的列。
+         * 调整列大小 — 使用操作或宽度滑块
+      * 您可以[选择一个或多个内容片段来显示可用的操作](#actions-selected-content-fragment)
    * **[创建](#creating-new-content-fragment)**&#x200B;新内容片段
    * [筛选](#filtering-fragments)内容片段，并保存过滤器以供将来使用
    * [搜索](#searching-fragments)内容片段
@@ -153,7 +156,7 @@ ht-degree: 100%
 
 过滤器面板提供：
 
-* 可以选择和组合的谓词选择
+* 谓语的选择；可以选择一个或多个谓词并将其组合以创建过滤器
 * **保存**&#x200B;您的配置的机会
 * 用于检索保存的搜索过滤器以供重复使用的选项
 
