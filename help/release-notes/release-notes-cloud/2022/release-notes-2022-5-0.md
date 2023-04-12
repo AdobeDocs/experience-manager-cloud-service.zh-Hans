@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 98%
+source-wordcount: '802'
+ht-degree: 97%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明 {#release-notes}
+# 2022.5.0版发行说明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的一般发行说明。
+以下部分概述了2022.5.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager月度版本的完整列表 [这里。](/help/implementing/cloud-manager/release-notes/current.md)
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

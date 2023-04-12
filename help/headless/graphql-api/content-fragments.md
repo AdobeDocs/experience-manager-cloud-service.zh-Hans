@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
+source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
 workflow-type: tm+mt
-source-wordcount: '4203'
-ht-degree: 100%
+source-wordcount: '4768'
+ht-degree: 88%
 
 ---
 
@@ -702,6 +702,208 @@ query {
 >* 由于内部技术限制，如果对嵌套字段应用排序和过滤，性能会降低。因此，建议使用存储在根级别的过滤器/排序字段。如果要查询大型分页结果集，这也是推荐的方式。
 
 
+## GraphQL 查询中的 Web 优化图像传递 {#web-optimized-image-delivery-in-graphql-queries}
+
+通过Web优化的图像传送，您可以使用Graphql查询来：
+
+* 请求AEM资产图像的URL
+
+* 通过查询传递参数，以便自动生成并返回图像的特定呈现版本
+
+   >[!NOTE]
+   >
+   >指定的演绎版未存储在AEM Assets中。 呈现版本会生成并保存在缓存中一段很短的时间。
+
+* 在JSON交付中返回URL
+
+您可以使用AEM执行以下操作：
+
+* 通过 [Web优化的图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) GraphQL查询。
+
+这意味着在查询执行期间将应用命令，其方式与这些图像GET请求的URL参数相同。
+
+这允许您动态创建用于JSON交付的图像演绎版，从而无需在存储库中手动创建和存储这些演绎版。
+
+GraphQL中的解决方案意味着您可以：
+
+* use `_dynamicUrl` 在 `ImageRef` 参考
+
+* 添加 `_assetTransform` 到定义过滤器的列表标题
+
+### 转换请求的结构 {#structure-transformation-request}
+
+`AssetTransform` (`_assetTransform`)来发出URL转换请求。
+
+其结构和语法为：
+
+* `format`:具有其扩展所支持格式的枚举：GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL或WEBPLY
+* `seoName`:将用作文件名而不是节点名称的字符串
+* `crop`:框架子结构，如果省略宽度或高度，则使用高度或宽度作为相同的值
+   * `xOrigin`:框架的x原点是必填项
+   * `yOrigin`:框架的y原点，是必填项
+   * `width`:框架的宽度
+   * `height`:框架的高度
+* `size`:尺寸子结构，如果省略宽度或高度，则使用高度或宽度作为相同的值
+   * `width`:维度的宽度
+   * `height`:维度的高度
+* `rotation`:所有受支持轮转的明细列表：R90、R180、R270
+* `flip`:HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL的枚举
+* `quality`:介于1到100之间的整数，用于记录图像质量的百分比
+* `width`:一个整数，用于定义输出图像的宽度，但图像生成器会忽略该宽度
+* `preferWebp`:一个布尔值，指示是否首选webp（默认值为false）
+
+URL转换适用于所有查询类型：按路径、列表或分页。
+
+### 具有完整参数的Web优化图像交付 {#web-optimized-image-delivery-full-parameters}
+
+以下是一个包含完整参数集的示例查询：
+
+```graphql
+{
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:"test"
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### 使用单个查询变量进行Web优化的图像交付 {#web-optimized-image-delivery-single-query-variable}
+
+以下示例显示如何使用单个查询变量：
+
+```graphql
+query ($seoName: String!) {
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### 具有多个查询变量的Web优化图像交付 {#web-optimized-image-delivery-multiple-query-variables}
+
+以下示例显示了如何使用多个查询变量：
+
+```graphql
+query ($seoName: String!, $format: AssetTransformFormat!) {
+  articleList(
+    _assetTransform: {
+      format:$format
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### 按URL优化的Web图像交付请求 {#web-optimized-image-delivery-request-url}
+
+如果将查询另存为持久查询(例如，具有名称 `dynamic-url-x`)然后 [直接执行保留的查询](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+
+例如，要直接执行以前的示例（另存为保留的查询），请使用以下URL:
+
+* [单个参数](#dynamic-image-delivery-single-specified-parameter);已命名持久查询 `dynamic-url-x`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+      响应将如下所示：
+
+      ![使用参数进行图像交付](assets/cfm-graphiql-sample-image-delivery.png "使用参数进行图像交付")
+
+* [多个参数](#dynamic-image-delivery-multiple-specified-parameters);已命名持久查询 `dynamic`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
+
+      >[!CAUTION]
+      >
+      >尾随 `;`必须完全终止参数列表。
+
+### 图像交付限制 {#image-delivery-limitations}
+
+存在以下限制：
+
+* 应用于查询所有图像部分的修饰符（全局参数）
+
+* 缓存标头
+
+   * 创作时无缓存
+   * 发布时缓存 — 最长10分钟（客户端无法更改）
+
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
 
 使用 GraphQL for AEM 的查询基本处理遵循标准 GraphQL 规范。对于用于 AEM 的 GraphQL 查询，有几个扩展：
@@ -760,7 +962,18 @@ query {
          >
          >如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
 
-         * 请参阅[示例查询 – 具有指定变体的所有城市](#sample-cities-named-variation)
+         * 请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+   * 对于 [图像投放](#image-delivery):
+
+      * `_dynamicUrl`:在 `ImageRef` 参考
+
+      * `_assetTransform`:列表标题中定义过滤器的位置
+
+      * 请参阅：
+
+         * [具有完整参数的图像交付示例查询](#image-delivery-full-parameters)
+
+         * [使用单个指定参数进行图像交付的示例查询](#image-delivery-single-specified-parameter)
    * 以及操作：
 
       * `_operator`：应用特定运算符；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
@@ -770,6 +983,7 @@ query {
          * 请参阅[示例查询 – 筛选数组中必须至少出现一次的项](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`：在查询时忽略大小写
          * 请参阅[示例查询 – 名称中包含 SAN 的所有城市，不考虑大小写](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 
