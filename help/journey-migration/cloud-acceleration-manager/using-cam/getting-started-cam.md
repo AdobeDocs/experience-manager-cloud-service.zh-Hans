@@ -42,7 +42,7 @@ Cloud Acceleration Manager(CAM)提供了引导式旅程形式的一站式迁移�
 >id="aemcloud_cam_gettingstarted"
 >title="Cloud Acceleration Manager 快速入门"
 >abstract="创建您的项目并启动 AEM as a Cloud Service 历程。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="使用 Cloud Acceleration Manager 的益处"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=zh-Hans" text="使用 Cloud Acceleration Manager 的益处"
 
 云加速管理器(CAM)的登陆页面允许您创建和编辑多个项目。
 
@@ -97,4 +97,4 @@ Cloud Acceleration Manager(CAM)提供了引导式旅程形式的一站式迁移�
 
 ## 后续内容 {#whats-next}
 
-了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在便可以继续查看 [准备阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在便可以继续查看 [准备阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans).
