@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 11%
+source-wordcount: '1687'
+ht-degree: 12%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 11%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="增补摄取"
 
 请按照以下步骤从内容传输工具中摄取迁移集：
->[!NOTE]
->您可以运行可选的预复制步骤以显着加快摄取阶段。 预复制步骤对于第1次完全提取和摄取最有效。 请参阅 [使用AzCopy摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
 
 >[!NOTE]
 >您是否记得为此摄取记录支持票证？ 请参阅 [使用内容传输工具之前的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及帮助成功摄取的其他注意事项。
@@ -29,7 +27,6 @@ ht-degree: 11%
 1. 转到Cloud Acceleration Manager。 单击您的项目卡片，然后单击内容传输卡片。 导航到 **摄取作业** 单击 **新摄取**
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. 查看摄取检查列表，并确保完成了所有步骤。 这些是确保成功摄取的必要步骤。 您将能够继续 **下一个** 步骤。
 
