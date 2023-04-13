@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
-source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
+source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 85%
+source-wordcount: '436'
+ht-degree: 92%
 
 ---
 
@@ -19,11 +19,16 @@ ht-degree: 85%
 
 此维护版本的功能支持将为您提供完整功能集。有关完整详细信息，请参阅[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
+>[!IMPORTANT]
+>
+> CloudManager UI中显示“2023.3.11382”，而官方版本为“2023.02”，这种差异可以指出。 这是由于2023.02功能延迟激活所致。
+> 我们正在为即将发行的版本修复此问题。
+
 ### 已知问题 {#known-issues-11382}
 
 - SITES-12573 - 如果未指定一个变量，则在筛选器中使用变量的 GraphQL 查询将失败。如果您将 GraphQL 与 AEM as a Cloud Service 结合使用，请不要更新到此版本。
-- SKYOPS-51970 — 在buildImage步骤中使用的FACT版本的已识别回归，导致用户映射不匹配。
-- GRANITE-44542 — 针对包筛选器中包含的文件夹，报告了未指定包节点类型（通过为jcr:primaryType提供.content.xml）的客户的问题。 这会导致这些文件夹被视为nt:folder，这会在各种情况下产生问题。
+- SKYOPS-51970 - 识别出 buildImage 步骤中使用的 FACT 版本的回归，导致不匹配的用户映射。
+- GRANITE-44542 - 对于没有为包过滤器中包含的文件夹指定包节点类型（通过提供带有 jcr:primaryType 的 .content.xml）的客户，已报告了问题。这导致这些文件夹被视为 nt:folder，从而在各种情况下产生问题。
 
 ### 修复的问题 {#fixed-issues-11382}
 
