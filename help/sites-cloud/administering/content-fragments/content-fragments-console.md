@@ -5,10 +5,10 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 91%
+source-wordcount: '1028'
+ht-degree: 85%
 
 ---
 
@@ -161,6 +161,22 @@ ht-degree: 91%
 * 用于检索保存的搜索过滤器以供重复使用的选项
 
 ![内容片段控制台 – 筛选](assets/cfc-console-filter.png)
+
+### 快速过滤 {#fast-filtering}
+
+您还可以通过单击列表中的特定列值来选择谓词。 您可以选择一个或多个值来组合谓词。
+
+例如，选择 **已发布** 在 **状态** 列：
+
+>[!NOTE]
+>
+>仅支持 **模型**, **状态**, **修改者**&#x200B;和 **发布者** 列。
+
+![内容片段控制台 – 筛选](assets/cfc-console-fast-filter-01.png)
+
+选择后，将显示为过滤器谓词，并相应地过滤列表：
+
+![内容片段控制台 – 筛选](assets/cfc-console-fast-filter-02.png)
 
 ## 搜索片段 {#searching-fragments}
 
