@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.3.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.3.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.4.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.4.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
-workflow-type: ht
-source-wordcount: '131'
-ht-degree: 100%
+source-git-commit: be39b09b609cccff916db462af9a84149d23a698
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 50%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.3.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.4.0 的发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.3.0 版本的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.4.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,9 +21,14 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2023.3.0 版的发布日期是 2023 年 3 月 16 日。下一个版本计划于 2023 年 4 月 13 日发布。
+AEMas a Cloud Service中Cloud Manager 2023.4.0版的发布日期是2023年4月13日。 下一个版本计划于 2023 年 11 月 5 日发布。
+
+## 新增功能 {#what-is-new}
+
+* [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 已更新到版本41。
 
 ## 错误修复 {#bug-fixes}
 
-* 修复了上线构件错误设置了先前设置日期的问题。
-* Cloud Manager 的&#x200B;**学习**&#x200B;选项卡上的商业磁贴现在可以将用户导航到正确的页面。
+* 当 [证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 过期， [域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md) 和 [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 将不再从CDN中删除与证书关联的内容。  在这种情况下，站点将继续可访问。
+* Cloud Manager UI将提供更为可见的预警，指出 [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 即将过期。
+* 修复了客户无法创建新环境或删除环境的罕见情况。

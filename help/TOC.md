@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
+source-git-commit: 0529156e83ebb4d74d76ebc5c0bf882bd09f7b43
 workflow-type: tm+mt
-source-wordcount: '4023'
+source-wordcount: '4026'
 ht-degree: 99%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 99%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.3.0 版发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0 版发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0 版发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
