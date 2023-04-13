@@ -1,10 +1,10 @@
 ---
 title: 将内容片段导出到Adobe Target
 description: 将内容片段导出到Adobe Target
-source-git-commit: 78840c83d91d6e4f35ec7ca8d14f52024d3535ff
+source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 66%
+source-wordcount: '2228'
+ht-degree: 65%
 
 ---
 
@@ -321,7 +321,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. 在 **资产** 控制台。
 1. 选择要导出到target的内容片段。
 
-1. 点按/单击&#x200B;**导出到 Adobe Target**。
+1. 点按/单击 **导出到Adobe Target选件**.
 
    ![导出到 Adobe Target](assets/cfm-export-target-01.png)
 
@@ -339,7 +339,13 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >选择 **发布** 将立即发布内容片段并将其发送到Target。
+   >显示的实际操作将取决于片段和相关资产的状态。
+   >
+   >如果所有内容都已发布，且此后未进行任何修改，则将传递此步骤。
+
+   >[!NOTE]
+   >
+   >选择 **发布** 将立即发布内容片段，并将其发送到Target。
 
 1. 在确认对话框中，点按/单击&#x200B;**确定**。
 
