@@ -1,19 +1,15 @@
 ---
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 5%
 
 ---
 
 
 # 快速开发环境 {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->此功能计划逐步向客户推出。
 
 为了部署更改，当前的云开发环境需要使用一种流程，该流程采用称为CI/CD管道的广泛代码安全和质量规则。 对于需要快速、迭代更改的情况，Adobe引入了快速开发环境（简称RDE）。
 
