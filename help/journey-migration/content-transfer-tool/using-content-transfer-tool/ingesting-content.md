@@ -2,7 +2,7 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
+source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 12%
@@ -40,18 +40,16 @@ ht-degree: 12%
 
    >[!NOTE]
    >以下注释适用于摄取内容：
-   * 如果源是“作者”，则建议将其摄取到目标上的“创作”层。 同样，如果源为“发布”，则目标也应为“发布”。
-   * 如果目标层为 `Author`，则创作实例将在摄取期间关闭，用户（例如，作者或执行维护的任何人员等）将无法使用。 这是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 请确保您的团队了解这一事实。 另请注意，环境将在创作摄取期间显示休眠。
-   * 您可以运行可选的预复制步骤以显着加快摄取阶段。 请参阅 [使用AzCopy摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
-   * 如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
-   * 摄取不支持快速开发环境(RDE)目标。 即使用户有权访问，它们也不会显示为可能的目标选项。
+   > 如果源是“作者”，则建议将其摄取到目标上的“创作”层。 同样，如果源为“发布”，则目标也应为“发布”。
+   > 如果目标层为 `Author`，则创作实例将在摄取期间关闭，用户（例如，作者或执行维护的任何人员等）将无法使用。 这是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 请确保您的团队了解这一事实。 另请注意，环境将在创作摄取期间显示休眠。
+   > 您可以运行可选的预复制步骤以显着加快摄取阶段。 请参阅 [使用AzCopy摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
+   > 如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
+   > 摄取不支持快速开发环境(RDE)目标。 即使用户有权访问，它们也不会显示为可能的目标选项。
 
    >[!IMPORTANT]
    > 以下重要注意事项适用于摄取内容：
-   * 仅当您属于本地环境时，才能启动对目标环境的摄取 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您无法启动摄取，请参阅 [无法启动摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
-   * 如果设置 **划出** 在摄取之前启用，它会删除整个现有存储库并创建新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到 **管理员** 群组。 您需要重新添加到管理员组才能开始摄取。
-
-
+   > 仅当您属于本地环境时，才能启动对目标环境的摄取 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您无法启动摄取，请参阅 [无法启动摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
+   > 如果设置 **划出** 在摄取之前启用，它会删除整个现有存储库并创建新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到 **管理员** 群组。 您需要重新添加到管理员组才能开始摄取。
 
 1. 单击 **摄取**
 
