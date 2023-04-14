@@ -3,9 +3,9 @@ title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2147'
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)集成包，确保对自定义应用程序的顺利更新。 特别是，IT 测试门已支持使用 AEM API 创建和自动化定制测试。
 
-UI 测试是打包在 Docker 映像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。此外，使用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+UI 测试是打包在 Docker 映像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。此外，通过使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松生成 UI 测试项目。
 
-UI测试将作为每个Cloud Manager管道(具有 [**自定义UI测试** 步骤](/help/implementing/cloud-manager/deploy-code.md) in [生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) （可选） [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).  任何 UI 测试，包括回归和新功能，都可以检测和报告错误。
+按照[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)（可选）中的&#x200B;[**自定义 UI 测试**](/help/implementing/cloud-manager/deploy-code.md)步骤，作为每个 Cloud Manager 管道的特定质量关卡的一部分执行 UI 测试。通过包括回归和新功能在内的任何 UI 测试，均可检测和报告错误。
 
-与使用Java编写的HTTP测试（自定义功能测试）不同，UI测试可以是使用任何语言编写的测试的Docker图像，前提是这些测试遵循部分中定义的惯例 [构建UI测试](#building-ui-tests).
+与自定义功能测试（用 Java 编写的 HTTP 测试）不同，UI 测试可以是 Docker 映像，其中包含用任何语言编写的测试，只要它们遵循[构建 UI 测试](#building-ui-tests)一节中定义的约定。
 
 >[!TIP]
 >
->Adobe建议遵循 [AEM项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+>Adobe 建议遵循 [AEM 项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)中提供的结构和语言（JavaScript 和 WDIO）。
 >
 >Adobe 还提供了一个基于 Java 和 WebDriver 的 UI 测试模块示例。请参阅 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)以了解详细信息。
 
@@ -45,15 +45,15 @@ UI测试将作为每个Cloud Manager管道(具有 [**自定义UI测试** 步骤]
 
       >[!NOTE]
       >
-      >如果您的存储库是在Cloud Manager自动创建之前创建的 `it.tests` 文件夹，则还可以使用 [AEM项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+      >如果在 Cloud Manager 自动创建的 `it.tests` 文件夹之前创建您的存储库，则也可使用 [AEM 项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)生成最新版本。
 
-   * 对于Java和WebDriver，请使用 [AEM测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * 对于 Java 和 WebDriver，请使用来自 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)的示例代码。
 
    * 对于其他编程语言，请参阅本文档中的[构建 UI 测试](#building-ui-tests)部分以设置测试项目。
 
 1. 确保根据本文档的[客户选择启用](#customer-opt-in)部分中的说明操作来激活 UI 测试。
 
-1. 开发测试案例和 [在本地运行测试](#run-ui-tests-locally).
+1. 开发您的测试案例，并[在本地运行这些测试](#run-ui-tests-locally)。
 
 1. 将代码提交到 Cloud Manager 存储库并执行 Cloud Manager 管道。
 
@@ -257,7 +257,7 @@ Docker 映像可能会产生额外的测试输出（如屏幕快照或视频）�
 * JavaScript：[takeScreenshot 命令](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java：[命令](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-如果在UI测试执行期间创建了测试结果存档，则可以使用 `Download Details` 按钮 [**自定义UI测试** 步骤](/help/implementing/cloud-manager/deploy-code.md).
+如果在执行 UI 测试期间创建了测试结果存档，则可使用&#x200B;[**自定义 UI 测试**&#x200B;步骤下的 `Download Details` 按钮从 Cloud Manager 下载该存档。](/help/implementing/cloud-manager/deploy-code.md)
 
 ### 上载文件 {#upload-files}
 
@@ -309,7 +309,7 @@ Cloud Manager 中的测试将使用具有技术管理员身份的用户执行。
 >* 日志文件存储在存储库的 `target/reports` 文件夹中
 >* 您需要确保您使用的是最新版本的 Chrome，因为测试会自动下载最新版本的 ChromeDriver 以进行测试。
 >
->有关详细信息，请参阅 [AEM项目原型存储库](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>有关详细信息，请参阅 [AEM 项目原型存储库](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)。
 
 ### Java 测试示例 {#java-sample}
 
@@ -332,4 +332,4 @@ Cloud Manager 中的测试将使用具有技术管理员身份的用户执行。
 >
 >* 日志文件将存储在存储库的 `target/reports` 文件夹中。
 >
->有关详细信息，请参阅 [AEM测试示例存储库](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>请参阅 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)以了解详细信息。
