@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
+source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5887'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 2%
 
       * 使用网页上的嵌入代码集成视频：
          [在网页上嵌入视频查看器](/help/assets/dynamic-media/embed-code.md).
-   * [将视频发布到YouTube](#publishing-videos-to-youtube).
    * [生成视频报表](#viewing-video-reports).
 
    * [在视频中添加字幕](#adding-captions-to-video).
@@ -273,7 +272,7 @@ DASH是国际标准，HLS是Apple标准。 这两种方法都用于自适应视�
 
 ## 视频编码最佳实践 {#best-practices-for-encoding-videos}
 
-的 **Dynamic Media编码视频** 如果您已启用Dynamic Media并设置了视频Cloud Services，则工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。请参阅 [监控视频编码和YouTube发布进度](#monitoring-video-encoding-and-youtube-publishing-progress). 如果您已启用Dynamic Media并设置视频Cloud Services，则 **[!UICONTROL Dynamic Media编码视频]** 在您上传视频时，工作流会自动生效。 (如果您没有使用Dynamic Media，则 **[!UICONTROL DAM更新资产]** 工作流生效。)
+的 **Dynamic Media编码视频** 如果您已启用Dynamic Media并设置了视频Cloud Services，则工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。如果您已启用Dynamic Media并设置视频Cloud Services，则 **[!UICONTROL Dynamic Media编码视频]** 在您上传视频时，工作流会自动生效。 (如果您没有使用Dynamic Media，则 **[!UICONTROL DAM更新资产]** 工作流生效。)
 
 以下是源视频文件编码的最佳实践提示。
 
