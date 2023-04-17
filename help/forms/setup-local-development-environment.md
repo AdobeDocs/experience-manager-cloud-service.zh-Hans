@@ -2,9 +2,9 @@
 title: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 description: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '3020'
 ht-degree: 2%
 
 ---
@@ -333,7 +333,7 @@ Dispatcher是一个Apache HTTP Web服务器模块，在CDN和AEM发布层之间�
 
 ## 为基于AEM原型的现有项目启用自适应Forms核心组件 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-如果您为AEM Formsas a Cloud Service使用基于AEM Archetype版本40或更高版本的程序，则系统会为您的环境自动启用核心组件。
+如果您为AEM Formsas a Cloud Service使用基于AEM Archetype版本40或更高版本的程序，则系统会为您的环境自动启用核心组件。 在为环境启用核心组件时， **自适应Forms（核心组件）** 模板和画布主题会添加到您的环境中。 如果您的AEM SDK版本低于2023.02.0, [确保 `prerelease` 环境中已启用的标记](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) 因为自适应Forms核心组件在2023.02.0版之前是预先购买的一部分。
 
 要基于旧版Archetype为AEM Formsas a Cloud Service环境启用自适应Forms核心组件，请在项目中嵌入WCM核心组件示例工件和Forms核心组件工件（包括示例）：
 
