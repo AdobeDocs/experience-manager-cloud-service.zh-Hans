@@ -5,10 +5,10 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 85%
+source-wordcount: '1051'
+ht-degree: 80%
 
 ---
 
@@ -68,22 +68,33 @@ ht-degree: 85%
       * 通过在列标题上使用鼠标悬停，将显示下拉操作选择器和宽度滑块。 利用这些功能，您可以：
          * 排序 — 为升序或降序选择适当的操作此操作将根据该列对整个表进行排序。 排序仅适用于相应的列。
          * 调整列大小 — 使用操作或宽度滑块
-      * 您可以[选择一个或多个内容片段来显示可用的操作](#actions-selected-content-fragment)
-   * **[创建](#creating-new-content-fragment)**&#x200B;新内容片段
-   * [筛选](#filtering-fragments)内容片段，并保存过滤器以供将来使用
-   * [搜索](#searching-fragments)内容片段
-   * [自定义表视图以显示选定的信息列](#select-available-columns)
-   * 使用&#x200B;**在资源中打开**&#x200B;直接在&#x200B;**资源**&#x200B;控制台中打开当前位置。
 
-      >[!NOTE]
-      >
-      >**资产**&#x200B;控制台用于访问资产，例如图像、视频等。  此控制台可以访问：
-      >
-      >* 使用&#x200B;**在资产中打开**&#x200B;链接（在“内容片段”控制台中）
-      >* 直接从全局导航窗格
+## 操作 {#actions}
+
+在控制台中，您可以直接或在选择特定片段后使用一系列操作：
+
+* 各种操作均直接执行 [可从控制台中访问](#available-actions)
+* 您可以 [选择一个或多个内容片段以显示相应的操作](#actions-selected-content-fragment)
+
+### 操作（未选定） {#actions-unselected}
+
+某些操作可从控制台中使用 — 无需选择特定的内容片段：
+
+* **[创建](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)**&#x200B;新内容片段
+* [筛选](#filtering-fragments)内容片段，并保存过滤器以供将来使用
+* [搜索](#searching-fragments)内容片段
+* [自定义表视图以显示选定的信息列](#select-available-columns)
+* 使用&#x200B;**在资源中打开**&#x200B;直接在&#x200B;**资源**&#x200B;控制台中打开当前位置。
+
+   >[!NOTE]
+   >
+   >**资产**&#x200B;控制台用于访问资产，例如图像、视频等。  此控制台可以访问：
+   >
+   >* 使用&#x200B;**在资产中打开**&#x200B;链接（在“内容片段”控制台中）
+   >* 直接从全局导航窗格
 
 
-## 针对（选定的）内容片段的操作 {#actions-selected-content-fragment}
+### 针对（选定的）内容片段的操作 {#actions-selected-content-fragment}
 
 选择特定片段将打开一个工具栏，其中重点介绍可用于该片段的操作。 您还可以选择多个片段 – 操作的选择将相应地进行调整。
 
@@ -145,12 +156,6 @@ ht-degree: 85%
 这将显示您可以隐藏或显示的列的列表：
 
 ![内容片段控制台 - 列配置](assets/cfc-console-column-selection.png)
-
-## 创建新的内容片段 {#creating-new-content-fragment}
-
-选择&#x200B;**“创建”**&#x200B;打开紧凑的&#x200B;**新内容片段**&#x200B;对话框：
-
-![内容片段控制台 – 创建新片段](assets/cfc-console-create.png)
 
 ## 筛选片段 {#filtering-fragments}
 
