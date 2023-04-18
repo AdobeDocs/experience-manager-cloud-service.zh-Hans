@@ -2,10 +2,10 @@
 title: 沙盒程序简介
 description: 了解沙盒程序与生产程序的区别。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 96%
+source-wordcount: '493'
+ht-degree: 85%
 
 ---
 
@@ -69,3 +69,9 @@ AEM 更新不会自动推送到沙盒程序，但可以手动应用到沙盒程�
 沙盒程序在连续休眠模式下运行 6 个月后会被删除，然后可以重新创建。
 
 有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)。
+
+### 无技术支持 {#no-support}
+
+由于沙盒项目通常创建为用于培训、运行演示、启用或概念验证(POC)目的，因此对于沙盒项目中遇到的问题，不提供技术支持。
+
+如果您在创建和管理沙盒项目时遇到问题，这仍属于技术支持范围。
