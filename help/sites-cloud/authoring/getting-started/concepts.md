@@ -2,10 +2,10 @@
 title: 创作概念
 description: 在 AEM 中进行创作的概念
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,9 @@ AEM 安装通常至少包含两个环境：
 
 >[!NOTE]
 >
->您的帐户需要适当的访问权限才能创建、编辑或发布内容。
+>您的帐户需要拥有适当的访问权限才能创建、编辑或发布内容。
 
-根据您的实例和个人访问权限的配置方式，您可以对内容执行许多任务，其中包括（但不限于）：
+根据实例和个人访问权限的配置方式，您可以对内容执行许多任务，包括（以及其他）：
 
 * 在页面上生成新内容或编辑现有内容
 * 使用预定义模板来创建新内容页面
@@ -51,6 +51,12 @@ AEM 安装通常至少包含两个环境：
 >[!NOTE]
 >
 >AEM 也可通过创作环境进行管理。
+
+## 预览内容 {#previewing-content}
+
+AEM还提供了“站点”预览服务，允许开发人员和内容作者在网站到达发布环境并公开提供之前，先预览网站的最终体验。
+
+请参阅 [预览内容](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以了解更多详细信息。
 
 ## 发布环境 {#publish-environment}
 
