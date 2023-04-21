@@ -10,8 +10,8 @@ user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: d6242e12f650845c778a0cc0850dacdd18dc7a0e
 workflow-type: tm+mt
-source-wordcount: '4051'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -147,7 +147,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
-   + [AEMas a Cloud Service安全注意事项](/help/security/security-considerations.md)
+   + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
 + 入门 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 入门培训历程 {#journey}
@@ -373,7 +373,7 @@ ht-degree: 99%
       + [与 Adobe Learning Manager 集成](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [将内容片段导出到Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
+      + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
 + 资源 {#assets}

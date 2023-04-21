@@ -5,8 +5,8 @@ hidefromtoc: true
 index: false
 source-git-commit: 3aff5ef2fb9ecdd815f0bc1a813d3a3982b4e0ed
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 17%
 
 ## 简介 {#intro}
 
-您可以从CodePen应用程序开始，该应用程序是使用获取JSON数据的最小示例 [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js). 示例应用程序旨在呈现返回的任何JSON内容，而不考虑基础内容片段模型的结构。 CodePen应用程序会尝试使用冗余设置，但遇到任何错误，因此您可能会看到以下错误消息，这些消息会打印到应用程序的底部窗格：
+您可从 CodePen 应用程序开始操作，其为通过[适用于 JavaScript 的 AEM Headless Client](https://github.com/adobe/aem-headless-client-js) 提取 JSON 数据的最简单示例。该示例应用程序旨在渲染返回的任何 JSON 内容，而不管底层内容片段模型的结构如何。CodePen 应用程序尝试详细说明遇到的任何错误，因此您可能会在应用程序的底部窗格中看到以下错误消息：
 
 ```
 {
@@ -39,19 +39,19 @@ ht-degree: 17%
 }
 ```
 
-出现此错误是正常的，因为应用程序尚未配置为使用您在上一模块中保存并发布的持久查询。 在以下步骤中，您将配置应用程序以从特定查询中获取数据。
+这是一个预期错误，因为应用程序尚未配置为使用您在上一个模块中保存和发布的持久查询。在以下步骤中，将配置该应用程序以从您的特定查询中提取数据。
 
-## CodePen演练 {#code-walkthrough}
+## CodePen 演练 {#code-walkthrough}
 
-CodePen上的JS(Javascript)窗格包含示例应用程序的大脑。 从第2行开始，我们从Skypack CDN导入AEM Headless Client for JavaScript。 Skypack用于促进开发而无需构建步骤，但您也可以在自己的项目中将AEM Headless Client与NPM或Hayr一起使用。 请查看 [自述文件](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) 以了解更多详情。
+CodePen 上的 JS (Javascript) 窗格包含示例应用程序的重要内容。从第 2 行开始，我们从 Skypack CDN 导入适用于 JavaScript 的 AEM Headless Client。Skypack 用于在没有构建步骤的情况下加快开发，但您也可以在自己的项目中将 AEM Headless Client 与 NPM 或 Yarn 结合使用。查看[自述文件](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript)中的使用说明，了解更多详细信息。
 
 ```
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-在第6行，我们从 `publishHost` 查询参数。 这是AEM Headless Client将从中获取数据的主机。 这通常会编码到您的应用程序中，但我们使用查询参数来简化CodePen应用程序处理不同环境的过程。
+在第 6 行上，我们从 `publishHost` 查询参数中读取您的发布主机详细信息。这是 AEM Headless Client 将从中提取数据的主机。该过程通常会编码到您的应用程序中，但我们使用查询参数来使 CodePen 应用程序能够在不同的环境中更轻松地运行。
 
-我们在第12行上配置AEM无头客户端，以使用代理AdobeIO运行时函数来避免CORS问题。 这并非您自己的项目所必需，而是CodePen应用程序与试用环境结合使用所必需的。 代理函数配置为使用 `publishHost` 查询参数中提供的值。
+我们在第 12 行上将 AEM Headless Client 配置为使用代理 Adobe IO 运行时函数来避免 CORS 问题。您自己的项目不一定得采用相同配置，但必须为 CodePen 应用程序执行此操作，以便其可在您的试用环境中工作。代理函数已配置为使用查询参数中提供的 `publishHost` 值。
 
 ```
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -63,13 +63,13 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 });
 ```
 
-最后，对函数进行了分析 `fetchJsonFromGraphQL()` 用于使用AEM Headless Client执行获取请求。 每次更改代码时都会调用该函数，或者可以通过按“Refetch”链接来触发该函数。 实际 `aemHeadlessClient.runPersistedQuery(..)` 34号线发生呼叫。 稍后，我们将更改此JSON数据的呈现方式，但现在，我们只会将其打印到 `#output` 使用div `resultToPreTag(queryResult)` 函数。
+最后，使用函数 `fetchJsonFromGraphQL()` 在 AEM Headless Client 中执行提取请求。每次更改代码时都会调用该函数，也可以通过按“重新提取”链接来触发它。实际的 `aemHeadlessClient.runPersistedQuery(..)` 调用是在第 34 行上执行的。稍后，我们将更改此 JSON 数据的呈现方式，但现在我们只需使用 `resultToPreTag(queryResult)` 函数将其输出到 `#output` div。
 
-## 从保留查询中获取数据 {#use-persisted-query}
+## 从持久查询中提取数据 {#use-persisted-query}
 
-在第25行，我们指示应用程序应从中获取数据的GraphQL持久查询。 持久查询名称是项目名称(即， `your-project`)，后跟正斜杠，然后是查询的名称。
+在第 25 行上，我们指出了应用程序应从中提取数据的 GraphQL 持久查询。该持久查询的名称是一个组合，依次包含项目名称（即`your-project`）、正斜杠和查询名称。
 
-更新 `persistedQueryName` 变量来使用您在上一模块中创建的持久查询。 如果您完全遵循命名建议，则会创建一个名为的持久查询 `adventures` 在 `your-project` 项目，然后您 `persistedQueryName` 变量 `your-project/adventures`:
+更新 `persistedQueryName` 变量以使用您在上一个模块中创建的持久查询。如果您完全遵循命名建议，则将在 `your-project` 项目中创建一个名为 `adventures` 的持久查询，并将 `persistedQueryName` 变量设置为 `your-project/adventures`：
 
 ```
 //
@@ -78,15 +78,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 persistedQueryName = 'your-project/adventures';
 ```
 
-进行此更改后，应用程序应自动刷新，并将来自保留查询的原始JSON响应打印到 `#output` div. 如果您看到错误消息，请检查控制台以了解更多详细信息。
+做出此更改后，应用程序将自动刷新，并将来自持久查询的原始 JSON 响应输出到 `#output` div。如果显示一条错误消息，请在控制台中查看更多详细信息。
 
-此JSON是否包含您的应用程序所需的确切属性？ 如果没有，请返回到AEM创作环境、工具、GraphQL查询编辑器(或导航到 `/aem/graphiql.html` 路径)，并对保留的查询进行更改。 完成查询后，请不要忘记保存并发布该查询。
+此 JSON 是否包含您的应用程序所需的确切属性？如果没有，请返回您的 AEM Author 环境、工具、GraphQL 查询编辑器（或导航至 `/aem/graphiql.html` 路径）并更改您的持久查询。请记住，完成后保存并发布查询。
 
-## 更改JSON渲染 {#change-rendering}
+## 更改 JSON 渲染 {#change-rendering}
 
-当前，JSON将按原样呈现到 `pre` 标记，这不是很有创意。 我们可以切换CodePen以使用 `resultToDom()` 函数，以说明如何迭代JSON响应以创建更有趣的结果。
+目前，JSON 将按原样渲染在 `pre` 标记中，这并不是很有创意。我们可以切换 CodePen，改用 `resultToDom()` 函数来说明如何迭代 JSON 响应，创建更有趣的结果。
 
-要进行此更改，请注释第37行，并从第40行中删除注释：
+要进行此更改，请注释掉第 37 行并删除第 40 行中的注释：
 
 ```
 // Output the results to a pre tag
@@ -96,12 +96,12 @@ persistedQueryName = 'your-project/adventures';
 resultToDom(queryResult);
 ```
 
-此函数还会将JSON响应中包含的任何图像作为 `img` 标记。 如果您创建的“冒险”内容片段不包含任何图像，则可以尝试切换为使用 `aem-demo-assets/adventures-all` 通过修改行25持久查询：
+此函数还会将包含在 JSON 响应中的所有图像渲染为 `img` 标记。如果您创建的“冒险”内容片段不包含任何图像，则可以通过修改第 25 行来尝试切换为使用 `aem-demo-assets/adventures-all` 持久查询：
 
 ```
 persistedQueryName = 'aem-demo-assets/adventures-all';
 ```
 
-此查询将生成包含图像的JSON响应，并且 `resultToDom()` 函数会将它们呈现在内联。
+此查询将产生一个包含图像的 JSON 响应，并且 `resultToDom()` 函数将以内联方式渲染其中图像。
 
-![adventures-all查询和resultToDom渲染函数的结果](assets/do-not-localize/adventures-all-query-result.png)
+![adventures-all 查询和 resultToDom 渲染函数的结果](assets/do-not-localize/adventures-all-query-result.png)
