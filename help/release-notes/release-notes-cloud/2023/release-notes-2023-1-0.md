@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 版的发行说明。'
 source-git-commit: e0f3f876ce8bc4245f7118f8ae7553907bc0567e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# 2023.1.0版发行说明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 版的发行说明 {#release-notes}
 
-以下部分概述了2023.1.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了 2023.1.0 版的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 2023.1.0功能发布于2023年2月9日。 下一个功能版本 (2023.2.0) 计划于 2023 年 4 月 12 日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 2023.1.0 功能版本的发布日期为 2023 年 2 月 9 日。下一个功能版本 (2023.2.0) 计划于 2023 年 4 月 12 日发布。
 
 ## 发布视频 {#release-video}
 
@@ -74,7 +74,7 @@ ht-degree: 96%
 * **[使用“将自适应表单另存为模板”功能进行高效的表单构建](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**：通过将自适应表单另存为模板并将此模板重用于下一个自适应表单来简化表单构建过程。
 * **[将 AEM Forms 连接到 JDBC 支持的数据库](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**：轻松将 AEM Forms 数据模型连接到支持 JDBC 的数据库，从而无缝读取和写入数据。
 * **[使用 Open API 3.0 与 REST 端点集成](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**：将 AEM Forms as a Cloud Service 表单数据模型连接到支持 Open API 规范版本 3.0 的 REST 端点，从而轻松发送和接收数据。
-* **[共享自适应表单以进行审阅](/help/forms/create-reviews-forms.md)**：使用自适应表单审阅机制以允许一个或多个审阅者审阅表单。
+* **[共享自适应表单以进行审阅](/help/forms/create-reviews-forms.md)**：使用自适应表单审阅机制，可允许一个或多个审阅者审阅表单。
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
