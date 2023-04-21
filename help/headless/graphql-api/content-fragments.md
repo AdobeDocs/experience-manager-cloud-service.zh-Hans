@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4768'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -704,59 +704,59 @@ query {
 
 ## GraphQL 查询中的 Web 优化图像传递 {#web-optimized-image-delivery-in-graphql-queries}
 
-通过Web优化的图像传送，您可以使用Graphql查询来：
+经 Web 优化的图像传递支持您使用 GraphQL 查询来：
 
-* 请求AEM资产图像的URL
+* 请求 AEM Assets 图像的 URL
 
-* 通过查询传递参数，以便自动生成并返回图像的特定呈现版本
+* 通过查询传递参数，以便自动生成并返回图像的特定演绎版
 
    >[!NOTE]
    >
-   >指定的演绎版未存储在AEM Assets中。 呈现版本会生成并保存在缓存中一段很短的时间。
+   >指定的演绎版未存储在 AEM Assets 中。演绎版将生成并在缓存中保存一段较短的时间。
 
-* 在JSON交付中返回URL
+* 将 URL 作为 JSON 传递的一部分返回
 
-您可以使用AEM执行以下操作：
+您可以使用 AEM 来：
 
-* 通过 [Web优化的图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) GraphQL查询。
+* 将 [Web 优化图像传递](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)传入 GraphQL 查询中。
 
-这意味着在查询执行期间将应用命令，其方式与这些图像GET请求的URL参数相同。
+这意味着将在查询执行期间应用命令，方式与这些图像的 GET 请求中的 URL 参数相同。
 
-这允许您动态创建用于JSON交付的图像演绎版，从而无需在存储库中手动创建和存储这些演绎版。
+该操作将允许您为 JSON 传递动态创建图像演绎版，从而无需手动创建这些演绎版并将其存储在存储库中。
 
-GraphQL中的解决方案意味着您可以：
+GraphQL 中的解决方案意味着您可以：
 
-* use `_dynamicUrl` 在 `ImageRef` 参考
+* 在 `ImageRef` 引用上使用 `_dynamicUrl`
 
-* 添加 `_assetTransform` 到定义过滤器的列表标题
+* 将 `_assetTransform` 添加到定义筛选条件的列表标题
 
 ### 转换请求的结构 {#structure-transformation-request}
 
-`AssetTransform` (`_assetTransform`)来发出URL转换请求。
+`AssetTransform` (`_assetTransform`) 用于发出 URL 转换请求。
 
-其结构和语法为：
+结构和语法是：
 
-* `format`:具有其扩展所支持格式的枚举：GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL或WEBPLY
-* `seoName`:将用作文件名而不是节点名称的字符串
-* `crop`:框架子结构，如果省略宽度或高度，则使用高度或宽度作为相同的值
-   * `xOrigin`:框架的x原点是必填项
-   * `yOrigin`:框架的y原点，是必填项
-   * `width`:框架的宽度
-   * `height`:框架的高度
-* `size`:尺寸子结构，如果省略宽度或高度，则使用高度或宽度作为相同的值
-   * `width`:维度的宽度
-   * `height`:维度的高度
-* `rotation`:所有受支持轮转的明细列表：R90、R180、R270
-* `flip`:HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL的枚举
-* `quality`:介于1到100之间的整数，用于记录图像质量的百分比
-* `width`:一个整数，用于定义输出图像的宽度，但图像生成器会忽略该宽度
-* `preferWebp`:一个布尔值，指示是否首选webp（默认值为false）
+* `format`：按扩展名包含所有支持的格式的枚举：GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL 或 WEBPLY
+* `seoName`：将用作文件名而不是节点名的字符串
+* `crop`：框架子结构，如果省略宽度或高度，则宽度或高度将用作同一值
+   * `xOrigin`：框架的 x 原点，它是强制性的
+   * `yOrigin`：框架的 y 原点，它是强制性的
+   * `width`：框架的宽度
+   * `height`：框架的高度
+* `size`：维度子结构，如果省略宽度或高度，则宽度或高度将用作同一值
+   * `width`：维度的宽度
+   * `height`：维度的高度
+* `rotation`：所有支持的旋转的枚举：R90、R180、R270
+* `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL 的枚举
+* `quality`：1 和 100 之间的整数，表示图像质量的百分比
+* `width`：定义输出图像宽度的整数，但会被图像生成器忽略
+* `preferWebp`：指示是否首选 webp（默认值为 false）的布尔值
 
-URL转换适用于所有查询类型：按路径、列表或分页。
+URL 转换适用于所有查询类型：按路径、列表或分页。
 
-### 具有完整参数的Web优化图像交付 {#web-optimized-image-delivery-full-parameters}
+### 具有完整参数的 Web 优化图像传递 {#web-optimized-image-delivery-full-parameters}
 
-以下是一个包含完整参数集的示例查询：
+以下是带有一整组参数的示例查询：
 
 ```graphql
 {
@@ -793,9 +793,9 @@ URL转换适用于所有查询类型：按路径、列表或分页。
 }
 ```
 
-### 使用单个查询变量进行Web优化的图像交付 {#web-optimized-image-delivery-single-query-variable}
+### 使用单个查询变量的 Web 优化图像传递 {#web-optimized-image-delivery-single-query-variable}
 
-以下示例显示如何使用单个查询变量：
+以下示例说明了单个查询变量的用法：
 
 ```graphql
 query ($seoName: String!) {
@@ -832,9 +832,9 @@ query ($seoName: String!) {
 }
 ```
 
-### 具有多个查询变量的Web优化图像交付 {#web-optimized-image-delivery-multiple-query-variables}
+### 使用多个查询变量的 Web 优化图像传递 {#web-optimized-image-delivery-multiple-query-variables}
 
-以下示例显示了如何使用多个查询变量：
+以下示例说明了多个查询变量的用法：
 
 ```graphql
 query ($seoName: String!, $format: AssetTransformFormat!) {
@@ -871,38 +871,38 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### 按URL优化的Web图像交付请求 {#web-optimized-image-delivery-request-url}
+### 使用 URL 提出的 Web 优化的图像传递请求 {#web-optimized-image-delivery-request-url}
 
-如果将查询另存为持久查询(例如，具有名称 `dynamic-url-x`)然后 [直接执行保留的查询](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+如果您将查询另存为持久查询（例如，使用名称 `dynamic-url-x`），您随后可以[直接执行持久查询](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query)。
 
-例如，要直接执行以前的示例（另存为保留的查询），请使用以下URL:
+例如，要直接执行前面的示例（另存为持久查询），请使用以下 URL：
 
-* [单个参数](#dynamic-image-delivery-single-specified-parameter);已命名持久查询 `dynamic-url-x`
+* [单一参数](#dynamic-image-delivery-single-specified-parameter)；名为 `dynamic-url-x` 的持久查询
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      响应将如下所示：
+      响应如下：
 
-      ![使用参数进行图像交付](assets/cfm-graphiql-sample-image-delivery.png "使用参数进行图像交付")
+      ![使用参数的图像传递](assets/cfm-graphiql-sample-image-delivery.png "使用参数的图像传递")
 
-* [多个参数](#dynamic-image-delivery-multiple-specified-parameters);已命名持久查询 `dynamic`
+* [多个参数](#dynamic-image-delivery-multiple-specified-parameters)；名为 `dynamic` 的持久查询
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
       >[!CAUTION]
       >
-      >尾随 `;`必须完全终止参数列表。
+      >在末尾需要添加 `;` 才能完全终止参数列表。
 
-### 图像交付限制 {#image-delivery-limitations}
+### 图像传递的限制 {#image-delivery-limitations}
 
 存在以下限制：
 
-* 应用于查询所有图像部分的修饰符（全局参数）
+* 应用于查询的所有图像部分的修饰符（全局参数）
 
 * 缓存标头
 
-   * 创作时无缓存
-   * 发布时缓存 — 最长10分钟（客户端无法更改）
+   * 创作时未缓存
+   * 发布时缓存 – max-age 为 10 分钟（无法由客户端更改）
 
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
 
@@ -963,17 +963,17 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          >如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
 
          * 请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-   * 对于 [图像投放](#image-delivery):
+   * 对于[图像传递](#image-delivery)：
 
-      * `_dynamicUrl`:在 `ImageRef` 参考
+      * `_dynamicUrl`：在 `ImageRef` 引用上使用
 
-      * `_assetTransform`:列表标题中定义过滤器的位置
+      * `_assetTransform`：在定义筛选条件的列表标题上
 
       * 请参阅：
 
-         * [具有完整参数的图像交付示例查询](#image-delivery-full-parameters)
+         * [具有完整参数的图像传递的示例查询](#image-delivery-full-parameters)
 
-         * [使用单个指定参数进行图像交付的示例查询](#image-delivery-single-specified-parameter)
+         * [具有单个指定参数的图像传递的示例查询](#image-delivery-single-specified-parameter)
    * 以及操作：
 
       * `_operator`：应用特定运算符；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
