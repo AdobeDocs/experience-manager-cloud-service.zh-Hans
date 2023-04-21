@@ -1,30 +1,30 @@
 ---
-title: 将内容片段导出到Adobe Target
-description: 将内容片段导出到Adobe Target
+title: 将内容片段导出到 Adobe Target
+description: 将内容片段导出到 Adobe Target
 source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2228'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
-# 将内容片段导出到Adobe Target {#exporting-content-fragments-to-adobe-target}
+# 将内容片段导出到 Adobe Target {#exporting-content-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
->* AEM内容片段将导出到Adobe Target的默认工作区中。
+>* AEM 内容片段将导出到 Adobe Target 的默认工作区。
 >* 必须按照[与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)下的说明将 AEM 与 Adobe Target 集成。
 
 
-您可以导出 [内容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)，在Adobe Experience Manager as a Cloud Service(AEM)中创建，到Adobe Target(Target)。 然后，可以将它们用作 Target 活动中的选件以大规模测试和个性化体验。
+您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[内容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的选件以大规模测试和打造个性化体验。
 
-有一个选项可用于将内容片段导出到Adobe Target:
+此选项可用于将内容片段导出到 Adobe Target：
 
 * JSON：支持 Headless 内容交付
 
 <!-- * GraphQL query ??? -->
 
-要准备将AEM内容片段导出到Adobe Target的实例，您需要：
+要准备您的实例以将 AEM 内容片段导出到 Adobe Target，您需要：
 
 * [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [添加云配置](#add-the-cloud-configuration)
@@ -32,11 +32,11 @@ ht-degree: 65%
 
 之后，您可以：
 
-* [将内容片段导出到Adobe Target](#exporting-a-content-fragment-to-adobe-target)
-* [在Adobe Target中使用您的内容片段](#using-your-content-fragments-in-adobe-target)
-* 还有 [删除已导出到Adobe Target的内容片段](#deleting-a-content-fragment-already-exported-to-adobe-target)
+* [将内容片段导出到 Adobe Target](#exporting-a-content-fragment-to-adobe-target)
+* [在 Adobe Target 中使用内容片段](#using-your-content-fragments-in-adobe-target)
+* 也可以[删除已导出到 Adobe Target 的内容片段](#deleting-a-content-fragment-already-exported-to-adobe-target)
 
-内容片段可导出到Adobe Target中的默认工作区，或导出到Adobe Target的用户定义的工作区。
+内容片段可以导出到 Adobe Target 中的默认工作区，也可以导出到 Adobe Target 的用户定义的工作区。
 
 >[!NOTE]
 >
@@ -67,19 +67,19 @@ ht-degree: 65%
 
 * 指定要用于导出的格式选项
 * 选择 Target 工作区作为目标
-* 选择用于重写内容片段中引用的外部器域（可选）
+* 选择一个外部化器域以重写内容片段中的引用（可选）
 
 可以在所需的文件夹和/或片段的&#x200B;**页面属性**&#x200B;中选择所需的选项；将根据需要继承规范。
 
-1. 导航到 **资产** 控制台。
+1. 导航到&#x200B;**资产**&#x200B;控制台。
 
 1. 打开相应的文件夹或片段的&#x200B;**页面属性**。
 
    >[!NOTE]
    >
-   >如果将云配置添加到内容片段父文件夹，则该配置将由所有子文件夹继承。
+   >如果将云配置添加到内容片段父文件夹，则该配置将由所有子级继承。
    >
-   >如果将云配置添加到内容片段本身，则该配置将由所有变量继承。
+   >如果将云配置添加到内容片段本身，则该配置将由所有变体继承。
 
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
 
@@ -89,9 +89,9 @@ ht-degree: 65%
 
    >[!NOTE]
    >
-   >可以自定义内容片段选件的JSON格式。 要执行此操作，请定义客户内容片段组件，然后在组件Sling模型中注释如何导出其属性。
+   >可以自定义内容片段选件的 JSON 格式。为此，请定义一个客户内容片段组件，然后注明如何在组件“Sling 模型”中导出其属性。
    >
-   >请参阅核心组件： [核心组件 — 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+   >请参阅核心组件：[核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 1. 在 **Adobe Target** 下，选择：
 
@@ -106,7 +106,7 @@ ht-degree: 65%
    >
    > 如果您希望导出的内容指向特定的&#x200B;*发布*&#x200B;域，可配置 AEM 外部化器。有关更多详细信息，请参阅[配置 AEM 链接外部化器](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer)。
    >
-   > 另请注意，外部器域仅与发送到Target的内容片段的内容相关，而与元数据（如查看选件内容）无关。
+   > 另请注意，外部化器域仅与发送到 Target 的内容片段的内容相关，与查看选件内容等元数据无关。
 
    例如，对于文件夹：
 
@@ -122,7 +122,7 @@ ht-degree: 65%
 
 >[!IMPORTANT]
 >
->添加新的旧版配置是仅支持内容片段导出的特殊情况。
+>添加新的旧版配置是一种特殊场景，仅支持导出内容片段。
 
 在[添加云配置](#add-the-cloud-configuration)以使用 Adobe Launch 之后，要将 AEM 与 Adobe Target 集成，您还需要使用旧版配置手动与 Adobe Target 集成。
 
@@ -308,20 +308,20 @@ When you associate a page with the framework, the child pages inherit the associ
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
 -->
 
-## 将内容片段导出到Adobe Target {#exporting-a-content-fragment-to-adobe-target}
+## 将内容片段导出到 Adobe Target {#exporting-a-content-fragment-to-adobe-target}
 
 >[!CAUTION]
 >
 >对于媒体资产（例如图像），仅将引用导出到 Target。资产本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
 >
->因此，需要先发布内容片段（包含所有相关资产），然后再导出到Target。
+>因此，在导出到 Target 之前，需要发布包含所有相关资产的内容片段。
 
-要将内容片段从AEM导出到Target（在指定云配置后），请执行以下操作：
+要将内容片段从 AEM 导出到 Target（在指定云配置之后），请执行以下操作：
 
-1. 在 **资产** 控制台。
-1. 选择要导出到target的内容片段。
+1. 在&#x200B;**资产**&#x200B;控制台中导航到您的内容片段。
+1. 选择要导出到 Target 的内容片段。
 
-1. 点按/单击 **导出到Adobe Target选件**.
+1. 点按/单击&#x200B;**导出到 Adobe Target 选件**。
 
    ![导出到 Adobe Target](assets/cfm-export-target-01.png)
 
@@ -339,17 +339,17 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >显示的实际操作将取决于片段和相关资产的状态。
+   >显示的实际操作将取决于您的片段和相关资产的状态。
    >
-   >如果所有内容都已发布，且此后未进行任何修改，则将传递此步骤。
+   >如果已发布所有内容，并且此后未进行任何修改，则将跳过此步骤。
 
    >[!NOTE]
    >
-   >选择 **发布** 将立即发布内容片段，并将其发送到Target。
+   >选择&#x200B;**发布**，内容片段将立即发布，并同时发送到 Target。
 
-1. 在确认对话框中，点按/单击&#x200B;**确定**。
+1. 在“确认”对话框中，点按/单击&#x200B;**确定**。
 
-   您的内容片段现在应位于Target中。
+   您的内容片段现在应在 Target 中。
 
    >[!NOTE]
    >
@@ -357,45 +357,45 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >在Adobe Target中查看内容片段时， *上次修改时间* 所看到的日期是片段在AEM中的上次修改日期，而不是片段上次导出到Adobe Target的日期。
+   >在 Adobe Target 中查看内容片段时，显示的&#x200B;*上次修改*&#x200B;日期指上次在 AEM 中修改片段的日期，而不是上次将片段导出到 Adobe Target 的日期。
 
 >[!NOTE]
 >
 >或者，您可以使用[页面信息](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)菜单中的类似命令从页面编辑器执行导出。
 
-## 在Adobe Target中使用内容片段 {#using-your-content-fragments-in-adobe-target}
+## 在 Adobe Target 中使用内容片段 {#using-your-content-fragments-in-adobe-target}
 
-执行上述任务后，内容片段会显示在Target的“选件”页面上。 请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)以了解可以实现的目标。
+执行上述任务后，将在 Target 中的选件页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)，了解可执行的操作。
 
 >[!NOTE]
 >
->在Adobe Target中查看内容片段时， *上次修改时间* 所看到的日期是片段在AEM中的上次修改日期，而不是片段上次导出到Adobe Target的日期。
+>在 Adobe Target 中查看内容片段时，显示的&#x200B;*上次修改*&#x200B;日期指上次在 AEM 中修改片段的日期，而不是上次将片段导出到 Adobe Target 的日期。
 
-## 删除已导出到Adobe Target的内容片段 {#deleting-a-content-fragment-already-exported-to-adobe-target}
+## 删除已导出到 Adobe Target 的内容片段 {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
-与导出一样，从Adobe Target中删除内容片段也可以从 **资产** 选择片段后，控制台：
+与导出一样，也可以在选定片段后，从&#x200B;**资产**&#x200B;控制台的顶部工具栏中选择从 Adobe Target 中删除内容片段：
 
 ![在 Adobe Target 中删除](assets/cfm-export-target-02.png)
 
-如果删除已导出到Target的内容片段已在Target的选件中使用，则该片段可能会导致问题。 由于 AEM 正在交付片段内容，因此，删除片段会导致选件不可用。
+如果已在 Target 的选件中使用已导出到 Target 的某个内容片段，则删除该内容片段可能会导致出现问题。由于 AEM 正在交付片段内容，因此，删除片段会导致选件不可用。
 
 <!-- if the information about deleting-if-used correct, or is it not allowed at all? -->
 
 避免此类情况：
 
-* 如果活动中当前未使用内容片段，则AEM允许用户删除片段，而不显示警告消息。
-* 如果Target中的活动当前正在使用内容片段，则会显示一条错误消息，警告AEM用户删除片段对活动可能产生的影响。
+* 如果内容片段当前未在活动中使用，AEM 将允许用户删除该片段而不显示警告消息。
+* 如果 Target 中的活动当前正在使用内容片段，则会出现一条错误消息，警告 AEM 用户删除该片段可能给活动带来的后果。
 
-   AEM中的错误消息不禁止用户（强制）删除内容片段。 如果内容片段被删除：
+   AEM 中的错误消息不会禁止用户（强制）删除内容片段。如果删除内容片段：
 
-   * 包含AEM内容片段的Target选件可能显示不希望的行为
+   * 带有 AEM 内容片段的 Target 选件可能会显示意外行为
 
-      * 由于内容片段已推送到Target，因此选件很可能仍会呈现
-      * 如果还在AEM中删除了引用的资产，则内容片段中的任何引用可能无法正常工作。
-   * 当然，对内容片段进行任何进一步的修改都是不可能的，因为内容片段不再存在于AEM中。
+      * 该选件可能仍会呈现，因为内容片段已推送到 Target
+      * 如果引用的资产也已经从 AEM 中删除，则内容片段中的任何引用都无法正常工作。
+   * 当然，由于内容片段在 AEM 中不再存在，因此无法对内容片段进行任何进一步的修改。
 
 
-## 其他资源 {#further-resources}
+## 更多资源 {#further-resources}
 
 有关更多信息，另请参阅：
 
@@ -403,10 +403,10 @@ When you associate a page with the framework, the child pages inherit the associ
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [核心组件 — 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 * [Adobe Target 开发](https://developers.adobetarget.com/)
 
-* [Adobe Target — 在Target活动中使用AEM内容片段以帮助优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
 
-* [Adobe Target - AEM体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
