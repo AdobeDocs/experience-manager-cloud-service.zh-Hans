@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的客户端属性所必需的。也就是说，需要与 Launch 集成才能实施“体验定位”。
 
-要将体验片段和/或内容片段导出到Target，您只需 [Adobe Target配置和IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+若要将体验片段和/或内容片段导出到 Target，您只需要 [Adobe Target 配置和 IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md)。
 
 >[!NOTE]
 >
