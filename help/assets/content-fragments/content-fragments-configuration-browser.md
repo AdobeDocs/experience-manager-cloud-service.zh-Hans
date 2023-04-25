@@ -2,10 +2,10 @@
 title: 内容片段 — 配置浏览器（资产 — 内容片段）
 description: 了解如何在配置浏览器中启用内容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 82%
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### 将配置应用到您的Assets文件夹 {#apply-the-configuration-to-your-assets-folder}
+### 将配置应用到 Assets 文件夹 {#apply-the-configuration-to-your-assets-folder}
 
 配置 **全球** ，则会应用于任何资产文件夹。
 
