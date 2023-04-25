@@ -4,10 +4,10 @@ description: 使用您之前创建的内容片段模型来创建可用于页面�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 436356aabb9d4849f255bf521b35db5dab0c01b5
+source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 100%
+source-wordcount: '659'
+ht-degree: 65%
 
 ---
 
@@ -31,35 +31,65 @@ ht-degree: 100%
 
 ## 创建内容片段 {#create-fragment}
 
-内容片段代表无头内容，并且基于预定义的结构，即内容片段模型。可以将内容片段控制台视为您的无头内容库。使用它来创建新的内容片段并管理现有的片段。
+内容片段代表无头内容，并且基于预定义的结构，即内容片段模型。您已在上一个模块中创建了模型。
+
+在本模块中，您将使用内容片段控制台基于该模型创建新的内容片段。 可以将内容片段控制台视为您的无头内容库。使用它来创建新的内容片段并管理现有的片段。
 
 1. 点按或单击该控制台右上角的&#x200B;**创建**&#x200B;按钮。
 
 1. 随后将打开&#x200B;**新建内容片段**&#x200B;对话框，可从中开始创建新的内容片段。自动为&#x200B;**位置**&#x200B;填充将保存新内容的位置。
 
-1. 在&#x200B;**内容片段模型**&#x200B;下拉列表中，选择您之前创建的内容片段模型。
+1. 在 **内容片段模型** 下拉框中，选择 **冒险** 您之前创建的内容片段模型。
 
-1. 为内容片段添加&#x200B;**标题**。
+1. 添加 `Tuscany` 作为描述性 **标题** （对于内容片段）。 这是为了在控制台中标识您的片段。
 
 1. 点按或单击&#x200B;**创建并打开**。
 
-![创建新的内容片段](assets/do-not-localize/create-content-3-4-5.png)
+![创建新的内容片段](assets/do-not-localize/create-content.png)
 
-## 将内容添加到内容片段 {#add-content}
+>[!TIP]
+>
+>根据您的浏览器设置，新的浏览器选项卡可能会被弹出窗口阻止程序禁止。 如果在单击 **创建并打开**，请检查您的浏览器设置。
+
+## 向内容片段添加内容 {#add-content}
 
 保存并打开新内容片段后，内容片段编辑器将在新选项卡上打开。您可以在此处添加新片段的内容。
 
 1. 内容片段编辑器显示您在所选模型中定义的字段。在这里，您可以向每个字段添加内容以完成内容片段。您的进度将自动保存。
 
-1. 添加完内容后，点击或单击编辑器右上角的&#x200B;**发布**&#x200B;按钮。这使您的内容片段可供外部应用程序使用。
+1. 提供 **标题** 为片段输入 `Tuscan adventure`.
 
-1. 从下拉列表中选择&#x200B;**立即**。您也可以安排稍后发布内容片段。
+1. 提供 **描述** ，方法是在以下文本中粘贴。
 
-   ![创建内容](assets/do-not-localize/add-content-1-2.png)
+   ```text
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   ```
+
+1. 提供 **价格** 输入 `$700`.
+
+1. 提供 **图像** 通过点按或单击来代表行程 **添加资产** 在 **图像** 字段。
+
+1. 在资产弹出窗口中，点按或单击 **浏览资产** ，以从资产库中的现有资产进行选择。
+
+   ![添加资产](assets/do-not-localize/add-asset.png)
+
+1. 的 **选择资产** 对话框。 使用左侧面板中的树导航器，导航到 **所有资产** > **aem-demo-assets** > **en** > **冒险** > **自行车 — 托斯卡纳**.
+
+1. 的内容 **自行车 — 托斯卡纳** 文件夹。 选择图像 `ADOBESTOCK_141786166.JPEG`.
+
+1. 点按或单击 **选择**.
+
+   ![选择资源](assets/do-not-localize/select-asset.png)
+
+1. 所选图像显示在内容片段中。 该编辑器将自动保存更改。
+
+1. 添加完内容后，点击或单击编辑器右上角的&#x200B;**发布**&#x200B;按钮。这使您的内容片段可供外部应用程序使用。然后选择 **现在** 从下拉菜单中。 您也可以安排稍后发布内容片段。
+
+   ![发布内容](assets/do-not-localize/publish.png)
 
 1. 随后将显示&#x200B;**发布内容片段**&#x200B;对话框。AEM 会自动执行参考检查，确保已为您的内容片段发布所有必要资源。在此情况下，您还需要发布已创建的模型。点按或单击&#x200B;**发布**。
 
-   ![发布和引用检查](assets/do-not-localize/publish-4.png)
+   ![发布和引用检查](assets/do-not-localize/publish-confirm.png)
 
 1. 已在横幅中确认发布。
 

@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
-workflow-type: ht
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 ![预览应用程序](assets/do-not-localize/preview-app-1.png)
 
-## 在应用程序中编辑标题 {#edit-app}
+## 编辑应用程序中的标题 {#edit-app}
 
 内容片段编辑器将应用程序的基本版面显示为页面内容片段。**面板**&#x200B;表示应用程序的不同页面，每个页面都是自己的内容片段。通过修改这些片段，可以更改应用程序的内容。
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 
 在集成到 AEM Headless CMS 中后更新 React 应用程序中的内容就是这么容易。
 
-## 在应用程序中更换图像 {#change-image}
+## 在应用程序中交换图像 {#change-image}
 
 现在，您已修改应用程序中的标题，请试一试更改图像。
 
@@ -91,7 +91,7 @@ ht-degree: 100%
 
 使用 AEM Headless CMS 可以轻松更新应用程序中的图像和资产。
 
-## 在应用中添加对新内容片段的引用 {#create-moment}
+## 在应用程序中添加对新内容片段的引用 {#create-moment}
 
 现在您已经更新了车手的图像，让我们来看看如何通过创建和引用新的内容片段来向应用程序添加新内容吧。您将向应用程序的第二个面板添加由“可购物时刻”内容片段管理的产品标注。
 
