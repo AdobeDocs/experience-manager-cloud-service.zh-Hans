@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
-workflow-type: ht
-source-wordcount: '4768'
-ht-degree: 100%
+source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
+workflow-type: tm+mt
+source-wordcount: '4746'
+ht-degree: 99%
 
 ---
 
@@ -697,7 +697,7 @@ query {
 
 >[!NOTE]
 >
->* 默认情况下，分页使用表示片段的存储库节点的 UUID 进行排序，以确保结果的顺序始终相同。当使用 `sort` 时，隐式使用 UUID 以确保唯一排序；即使对于具有相同排序键的两个项目，也可以使用。
+>* 默认情况下，分页使用存储库节点的UUID（表示片段）进行排序，以确保结果的顺序始终相同。 当使用 `sort` 时，隐式使用 UUID 以确保唯一排序；即使对于具有相同排序键的两个项目，也可以使用。
 >
 >* 由于内部技术限制，如果对嵌套字段应用排序和过滤，性能会降低。因此，建议使用存储在根级别的过滤器/排序字段。如果要查询大型分页结果集，这也是推荐的方式。
 
@@ -908,6 +908,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 使用 GraphQL for AEM 的查询基本处理遵循标准 GraphQL 规范。对于用于 AEM 的 GraphQL 查询，有几个扩展：
 
+* 如果您需要单个结果：
+   * 使用模型名称，例如 city
+
 * 如果您需要结果列表：
    * 将 `List` 添加到模型名称；例如，`cityList`
    * 请参阅[示例查询 – 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
@@ -925,13 +928,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 请参阅[示例查询 – 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 
-
-* 如果您需要单个结果：
-   * 使用模型名称，例如 city
-
-* 如果您需要结果列表：
-   * 将 `List` 添加到模型名称；例如，`cityList`
-   * 请参阅[示例查询 – 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * 如果您希望使用逻辑 OR：
    * 使用 ` _logOp: OR`
