@@ -3,9 +3,9 @@ title: 沙盒程序简介
 description: 了解沙盒程序与生产程序的区别。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '514'
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ### 无高级网络 {#advanced-networking}
 
-[高级联网功能](/help/security/configuring-advanced-networking.md) （例如，自助配置VPN、非标准端口、专用出口IP地址等） 在沙盒程序中不可用。
+[高级网络功能](/help/security/configuring-advanced-networking.md)（例如 VPN、非标准端口、专用出口 IP 地址的自助供应等） 在沙盒程序中不可用。
 
 ### 手动 AEM 更新 {#updates}
 
@@ -66,16 +66,16 @@ AEM 更新不会自动推送到沙盒程序，但可以手动应用到沙盒程�
 
 沙盒程序中的环境在八小时不活动后自动休眠。一旦休眠后，可以手动解除休眠。
 
-沙盒环境在连续6个月休眠后会被删除，之后可重新创建它们。
+沙盒环境在连续休眠六个月后会被删除，然后可以重新创建。
 
 >[!NOTE]
 >
->只有沙盒环境会在连续休眠六个月后自动删除。 将保留包含其存储库和代码的沙盒项目。
+>在连续休眠六个月后，只有沙盒环境会自动删除。保留沙盒程序及其存储库和代码。
 
 有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)。
 
 ### 无技术支持 {#no-support}
 
-由于沙盒项目通常创建为用于培训、运行演示、启用或概念验证(POC)目的，因此对于沙盒项目中遇到的问题，不提供技术支持。
+由于创建沙盒程序的目的通常是培训、运行演示、启用或概念验证 (POC)，因此无法为沙盒程序中遇到的问题提供技术支持。
 
-如果您在创建和管理沙盒项目时遇到问题，这仍属于技术支持范围。
+如果您在创建和管理沙盒程序时遇到问题，这仍在技术支持范围内。
