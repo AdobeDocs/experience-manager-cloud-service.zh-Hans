@@ -3,10 +3,10 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 2%
+source-wordcount: '2865'
+ht-degree: 1%
 
 ---
 
@@ -86,6 +86,27 @@ ht-degree: 2%
 >
 >在灵活模式下，您应使用相对路径而不是绝对路径。
 
+请确保至少有一个虚拟主机始终与ServerAlias匹配 `\*.local`, `localhost` 和 `127.0.0.1` 使调度程序失效所需的函数。 服务器别名 `*.adobeaemcloud.net` 和 `*.adobeaemcloud.com` 至少在一个vhost配置中也是必需的，并且是内部Adobe进程所需的。
+
+如果由于您有多个vhost文件而希望与该主机完全匹配，则可以按照以下示例操作：
+
+```
+<VirtualHost *:80>
+	ServerName	"example.com"
+	# Put names of which domains are used for your published site/content here
+	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish-example-com"
+	</IfModule>
+  ...
+</VirtualHost>
+```
+
 * `conf.d/rewrites/rewrite.rules`
 
 此文件包含在 `.vhost` 文件。 它有一套重写规则 `mod_rewrite`.
@@ -135,7 +156,7 @@ ht-degree: 2%
 包含一个示例虚拟主机。 对于您自己的虚拟主机，请创建此文件的副本并对其进行自定义，然后转到 `conf.d/enabled_vhosts` 并创建指向自定义副本的符号链接。
 请勿将default.vhost文件直接复制到 `conf.d/enabled_vhosts`.
 
-确保虚拟主机始终可用，与ServerAlias匹配 `\*.local` 以及内部Adobe进程所需的本地主机。
+确保虚拟主机始终可用，与ServerAlias匹配 `\*.local`, `localhost` 和 `127.0.0.1` 使调度程序失效所需的函数。 服务器别名 `*.adobeaemcloud.net` 和 `*.adobeaemcloud.com` 内部Adobe流程需要。
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -229,7 +250,7 @@ Phase 3 finished
 
 1. 它运行验证器。 如果配置无效，脚本将失败。
 2. 它执行 `httpd -t` 命令来测试语法是否正确，以便apache httpd可以启动。 如果成功，配置应准备好进行部署。
-3. 检查Dispatcher SDK配置文件的子集，这些文件的子集不可更改，如 [文件结构部分](##flexible-mode-file-structure)，尚未修改。
+3. 检查Dispatcher SDK配置文件的子集，这些文件的子集不可更改，如 [文件结构部分](##flexible-mode-file-structure)，且未修改且与当前SDK版本匹配。
 
 在Cloud Manager部署期间， `httpd -t` 语法检查也会执行，并且Cloud Manager中会包含任何错误 `Build Images step failure` 日志。
 
@@ -370,11 +391,12 @@ Cloud manager validator 2.0.xx
 
 ### 阶段2 {#second-phase}
 
-此阶段通过在图像中启动Docker来检查Apache语法。 Docker必须安装在本地，但请注意，AEM无需运行。
+此阶段通过在Docker容器中启动Apache HTTPD来检查Apache语法。 Docker必须安装在本地，但请注意，AEM无需运行。
 
 >[!NOTE]
 >
 >Windows用户需要使用支持Docker的Windows 10专业版或其他发行版。 这是在本地计算机上运行和调试Dispatcher的先决条件。
+>对于Windows和macOS，我们建议使用Docker Desktop。
 
 此阶段也可以单独运行 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -402,6 +424,8 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 
 此阶段也可以单独运行 `bin/docker_immutability_check.sh src/dispatcher`.
+
+通过运行 `bin/update_maven.sh src/dispatcher` script on your dispatcher folder，其中 `src/dispatcher` 是调度程序配置目录。 这还将更新父目录中的任何pom.xml文件，以便也更新maven不可变性检查。
 
 ## 调试Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
