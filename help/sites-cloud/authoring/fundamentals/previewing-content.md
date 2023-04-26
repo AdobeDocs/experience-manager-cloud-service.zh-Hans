@@ -3,9 +3,9 @@ title: 预览内容
 description: 了解如何使用 AEM 预览服务在内容上线前进行预览。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ AEM 提供站点预览服务，让开发人员和内容作者可以在网站到�
 
 它有助于预览在创作环境中不可见的页面体验，例如页面过渡和其他仅发布方内容。
 
-有关预览环境的更多详细信息，请参阅此文档 [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+有关预览环境的更多详细信息，请参阅文档[管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
 
 ## 将内容发布到预览 {#publishing-content-to-preview}
 
