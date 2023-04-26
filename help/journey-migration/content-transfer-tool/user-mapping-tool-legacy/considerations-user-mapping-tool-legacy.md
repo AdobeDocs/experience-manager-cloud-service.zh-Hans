@@ -4,7 +4,7 @@ description: 用户映射工具（旧版）的重要注意事项
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
+source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->本文档引用了此工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>本文档引用了该工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## 特殊情况 {#exceptional-cases}
 
