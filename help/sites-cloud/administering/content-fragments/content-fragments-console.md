@@ -7,8 +7,8 @@ role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1051'
+ht-degree: 100%
 
 ---
 
@@ -74,12 +74,12 @@ ht-degree: 0%
 
 在控制台中，您可以直接或在选择特定片段后使用一系列操作：
 
-* 各种操作均直接执行 [可从控制台中访问](#available-actions)
-* 您可以 [选择一个或多个内容片段以显示相应的操作](#actions-selected-content-fragment)
+* 各种操作直接[从控制台可用](#available-actions)
+* 您可以[选择一个或多个内容片段来显示相应的操作](#actions-selected-content-fragment)
 
-### 操作（未选定） {#actions-unselected}
+### 操作（未选择） {#actions-unselected}
 
-某些操作可从控制台中使用 — 无需选择特定的内容片段：
+可以从控制台执行某些操作 - 无需选择特定的内容片段：
 
 * **[创建](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)**&#x200B;新内容片段
 * [筛选](#filtering-fragments)内容片段，并保存过滤器以供将来使用
