@@ -3,7 +3,7 @@ title: 更新内容片段以进行优化的 GraphQL 筛选
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中更新内容片段以进行优化的 GraphQL 筛选，从而进行 Headless 内容投放。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: e18a60197aab3866b839ff7b923f1aa135c594cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
 ht-degree: 100%
 
