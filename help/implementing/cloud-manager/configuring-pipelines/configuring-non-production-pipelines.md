@@ -4,9 +4,9 @@ description: 了解如何配置非生产管道，以便在部署到生产环境�
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -97,8 +97,8 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->* 此功能目前尚不普遍可用。 预计2023年6月推出。
->* 如果您想试用该功能并提供相关反馈以进行改进，请联系您的Adobe代表。
+>* 此功能尚未普遍可用。预计将于 2023 年 6 月推出。
+>* 如果您想试用该功能并提供改进反馈，请联系您的 Adobe 代表。
 
 
 全栈代码管道同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。 有关此类型管道的详细信息，请参阅 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)文档。
