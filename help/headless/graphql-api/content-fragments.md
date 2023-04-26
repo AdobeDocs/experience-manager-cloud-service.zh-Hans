@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
+source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
 workflow-type: tm+mt
-source-wordcount: '4746'
-ht-degree: 99%
+source-wordcount: '4769'
+ht-degree: 98%
 
 ---
 
@@ -241,15 +241,17 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 | 内容片段模型 – 数据类型 | GraphQL 类型 | 描述 |
 |--- |--- |--- |
-| 单行文本 | 字符串，[字符串] | 用于简单字符串，例如作者姓名、位置名称等 |
-| 多行文本 | 字符串, [字符串] | 用于输出文本，例如文章的正文 |
-| 数字 | 浮点，[浮点] | 用于显示浮点数和常规数字 |
-| 布尔型 | 布尔型 | 用于显示复选框 → 简单的 true/false 语句 |
-| 日期和时间 | 日程表 | 用于显示日期和时间，使用 ISO 8601 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
-| 枚举 | 字符串 | 用于显示在模型创建时定义的选项列表中的选项 |
-| 标记 | [字符串] | 用于显示表示在 AEM 中所用标记的字符串列表 |
-| 内容引用 | 字符串，[字符串] | 用于显示指向 AEM 中其他资源的路径 |
-| 片段引用 | *模型类型* | 用于引用特定模型类型的其他内容片段，在创建模型时定义 |
+| 单行文本 | `String`、`[String]` | 用于简单字符串，例如作者姓名、位置名称等 |
+| 多行文本 | `String`、`[String]` | 用于输出文本，例如文章的正文 |
+| 数字 | `Float`、`[Float]` | 用于显示浮点数和常规数字 |
+| 布尔型 | `Boolean` | 用于显示复选框 → 简单的 true/false 语句 |
+| 日期和时间 | `Calendar` | 用于显示日期和时间，使用 ISO 8601 格式。根据选择的类型，有三种风格可用于 AEM GraphQL 中：`onlyDate`、`onlyTime`、`dateTime` |
+| 枚举 | `String` | 用于显示在模型创建时定义的选项列表中的选项 |
+| 标记 | `[String]` | 用于显示表示在 AEM 中所用标记的字符串列表 |
+| 内容引用 | `String`、`[String]` | 用于显示指向 AEM 中其他资源的路径 |
+| 片段引用 | *模型类型* <br><br>单个字段： `Model`  — 模型类型，直接引用 <br><br>多字段，具有一个引用类型： `[Model]`  — 类型数组 `Model`，直接从数组引用 <br><br>多字段，具有多个引用类型： `[AllFragmentModels]`  — 所有模型类型的数组，从具有并集类型的数组引用 |  用于引用在创建模型时定义的特定模型类型的一个或多个内容片段 |
+
+{style="table-layout:auto"}
 
 ### 帮助程序字段 {#helper-fields}
 
