@@ -4,14 +4,18 @@ description: 使用用户映射工具（旧版）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '842'
 ht-degree: 3%
 
 ---
 
 # 使用用户映射工具（旧版） {#using-user-mapping-tool}
+
+>[!INFO]
+>
+>本文档引用了此工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 用户映射工具使用一个API，它允许通过电子邮件查找AdobeIdentity Management系统(IMS)用户，并返回其IMS ID。 此API要求用户为其组织创建客户端ID、客户端密钥和访问令牌或载体令牌。
 
