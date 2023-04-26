@@ -4,10 +4,10 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 72%
+source-wordcount: '1114'
+ht-degree: 69%
 
 ---
 
@@ -117,19 +117,19 @@ ht-degree: 72%
 
 1. 要对您自己的内容片段运行查询，请将端点从 **AEM 演示资源**&#x200B;文件夹更改为&#x200B;**您的项目**&#x200B;文件夹。
 
-1. 删除查询编辑器中的所有现有内容。然后，键入左方括号 `{` 并按 Ctrl + 空格键或 Option + 空格键，可获取端点中定义的模型的自动完成列表。从选项中选择您创建的以 `List` 结尾的模型。
+1. 删除查询编辑器中的所有现有内容。然后，键入左方括号 `{` 并按 Ctrl + 空格键或 Option + 空格键，可获取端点中定义的模型的自动完成列表。从选项中选择您创建的以 `List` 结尾的模型。如果您遵循上一模块中的示例，则应会找到 `adventureList` 在自动完成列表中。
 
-   ![开始自定义查询](assets/do-not-localize/custom-query-1-2.png)
+   ![开始自定义查询](assets/do-not-localize/custom-query-1.png)
 
 1. 为您选择的内容片段模型定义查询应包含的项目。再次键入左方括号 `{`，然后按 Ctrl + 空格键或 Option + 空格键获取自动完成列表。从选项中选择 `items`。
 
 1. 点按或单击&#x200B;**美化**&#x200B;按钮来自动设置代码格式，使其更易阅读。
 
-1. 完成后，点按或单击该编辑器左上角的&#x200B;**播放**&#x200B;按钮以运行查询。编辑器自动完成 `items` 并运行查询。
+1. 完成后，点按或单击该编辑器左上角的&#x200B;**播放**&#x200B;按钮以运行查询。编辑器会自动完成 `items`，以黄色短暂突出显示，并运行查询。
 
 1. 结果会显示在右侧面板中，位于查询编辑器的旁边。
 
-   ![运行自定义查询](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![运行自定义查询](assets/do-not-localize/custom-query-2.png)
 
 这就是将您的内容交付给全渠道数字体验的方式。
 
@@ -151,7 +151,6 @@ ht-degree: 72%
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {

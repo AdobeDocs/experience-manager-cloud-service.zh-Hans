@@ -4,9 +4,9 @@ description: 了解如何使用AEM内容片段模型创建内容结构，该结�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 37%
 
 ---
@@ -68,11 +68,9 @@ ht-degree: 37%
 
 1. 定义字段的属性后，可以切换回 **数据类型** 选项卡，并通过拖放添加其他字段。
 
-1. 点按或单击 **保存** 来保存模型。
-
 这样，您就可以根据需要向模型中添加任意数量的字段，以支持您可能需要的任何类型的数据结构。 数据字段的类型各不相同，但将它们添加到模型的过程保持不变。
 
-继续下一节，以添加完成 **冒险** 模型。
+继续下一节，以添加完成并保存所需的字段 **冒险** 模型
 
 ![向模型添加字段的第一步、第二步和第三步](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ ht-degree: 37%
 1. 添加内容片段模型所需的所有字段后，单击窗口右上角的&#x200B;**保存**。
 
 1. 模型将进行保存，并且您将返回到内容片段模型控制台。
-
