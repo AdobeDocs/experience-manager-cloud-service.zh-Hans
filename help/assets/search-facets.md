@@ -4,10 +4,10 @@ description: 本文介绍了如何在Experience Manager中创建、修改和使�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2397'
-ht-degree: 32%
+source-wordcount: '2425'
+ht-degree: 20%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 32%
    *图：将元数据属性与属性名称字段中的谓词关联。*
 
 1. 单击 **[!UICONTROL 预览]** ![预览](assets/preview.png) 以生成在添加谓词后显示的“过滤器”面板的预览。
-1. 在“预览”模式下查看谓词的布局。
+1. 在预览模式下查看谓词的布局。
 
    ![在提交更改之前预览搜索表单](assets/preview-1.png)
 
@@ -59,8 +59,8 @@ ht-degree: 32%
 
 1. 要关闭预览，请单击 **[!UICONTROL 关闭]** ![close](assets/do-not-localize/close_icon.png) 的双曲余切值。
 1. 点按 **[!UICONTROL 完成]** 来保存设置。
-1. 导航到资产用户界面中的搜索面板。属性谓词已添加到面板。
-1. 在文本框中输入对要搜索的资产的描述。例如，输入“Adobe”。执行搜索时，其描述与“Adobe”匹配的资产便会列在搜索结果中。
+1. 导航到资产用户界面中的搜索面板。 属性谓词已添加到面板。
+1. 在文本框中输入要搜索的资产的描述。 例如，输入“Adobe”。 执行搜索时，搜索结果中会列出描述与“Adobe”匹配的资产。
 
 ## 添加“选项”谓词 {#adding-an-options-predicate}
 
@@ -68,9 +68,9 @@ ht-degree: 32%
 
 要将选项映射到相应的属性，请为选项创建节点结构，并在“选项”谓词的“属性名称”属性中提供父节点的路径。 父节点的类型应为 `sling`: `OrderedFolder`. 选项的类型应为 `nt:unstructured`. 选项节点应具有属性 `jcr:title` 和 `value` 已配置。
 
-的 `jcr:title` 属性是“过滤器”面板中显示的选项的用户友好名称。 `value` 字段会用在查询中以匹配指定的属性。
+的 `jcr:title` 属性是“过滤器”面板中显示的选项的用户友好名称。 的 `value` 字段来匹配指定的属性。
 
-当您选择一个选项时，会根据该选项节点及其子节点（如果有）的 `value` 属性来执行搜索。系统会遍历该选项节点下的整个树，并通过使用 OR 运算将每个子节点的 `value` 属性组合到一起，以构成搜索查询。
+当您选择一个选项时，将根据 `value` 选项节点及其子节点的属性（如果有）。 系统会遍历选项节点下的整个树，并且 `value` 使用OR操作组合每个子节点的属性以构成搜索查询。
 
 例如，如果您为文件类型选择“图像”，则资产的搜索查询将通过使用 OR 操作组合 `value` 属性来构建。**********`jcr:content/metadata/dc:format`
 
@@ -94,7 +94,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->“选项”谓词是一个自定义包装器，其中包含用于演示所述行为的属性谓词。 目前，没有 REST 端点可在本机支持该功能。
+>“选项”谓词是一个自定义包装器，其中包含用于演示所述行为的属性谓词。 目前，没有REST端点可在本地支持该功能。
 
 1. 点按Experience Manager徽标，然后转到 **[!UICONTROL 工具>常规>搜索Forms]**.
 1. 在“搜索 **[!UICONTROL 表单]** ”页面中，选择 **[!UICONTROL 资产管理员搜索边栏]**，然后点按编辑图标。
@@ -111,12 +111,12 @@ ht-degree: 32%
 
    “选项”谓词中的可用字段
 
-1. 在&#x200B;**描述**&#x200B;字段中，输入可选描述，然后单击&#x200B;**[!UICONTROL 完成]**。
-1. 导航到“搜索”面板。“选项”谓词已添加到 **搜索** 的上界。 选项 **[!UICONTROL 文件类型]** 显示为复选框。
+1. 在 **描述** 字段，输入可选描述，然后单击 **[!UICONTROL 完成]**.
+1. 导航到“搜索”面板。 “选项”谓词已添加到 **搜索** 的上界。 选项 **[!UICONTROL 文件类型]** 显示为复选框。
 
 ## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
-的 `Multi Value Property` 此谓词允许您搜索资产以获取多个值。 假设您在 [!DNL Assets] 并且每个图像的元数据都包含与产品关联的SKU号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
+的 `Multi Value Property` 此谓词允许您搜索资产以获取多个值。 假设您在 [!DNL Assets] 并且每个图像的元数据都包含与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
 1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
 1. 在搜索Forms页面上，选择 **[!UICONTROL 资产管理搜索边栏]**，点按 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
@@ -152,7 +152,7 @@ ht-degree: 32%
 
 ## 添加其他谓词 {#adding-other-predicates}
 
-按照与添加“属性”谓词或“选项”谓词相似的方法，您还可以将以下谓词添加到“搜索”面板：
+与添加“属性”谓词或“选项”谓词的方式类似，您可以向“搜索”面板添加以下其他谓词：
 
 <table>
  <tbody>
@@ -204,7 +204,7 @@ ht-degree: 32%
   </tr>
   <tr>
    <td><p>相对日期</p> </td>
-   <td><p>此搜索谓词用于根据创建资产的相对日期搜索资产. 例如，您可以配置选项，如2个月前、3周前等。 </p> </td>
+   <td><p>此搜索谓词用于根据资产创建的相对日期搜索资产。 例如，您可以配置选项，如2个月前、3周前等。 </p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -214,7 +214,7 @@ ht-degree: 32%
   </tr>
   <tr>
    <td><p>范围</p> </td>
-   <td><p>此搜索谓词用于搜索特定范围内的资产。在“搜索”面板中，可以指定范围的最小值和最大值。</p> </td>
+   <td><p>此搜索谓词用于搜索位于指定范围内的资产。 在“搜索”面板中，您可以指定范围的最小值和最大值。</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -224,20 +224,20 @@ ht-degree: 32%
   </tr>
   <tr>
    <td><p>日期范围</p> </td>
-   <td><p>此搜索谓词用于搜索在日期属性的指定范围内创建的资产。在“搜索”面板中，您可以使用日期选取器指定开始和结束日期。</p> </td>
+   <td><p>此搜索谓词用于搜索在日期属性的指定范围内创建的资产。 在“搜索”面板中，您可以使用日期选取器指定开始和结束日期。</p> </td>
    <td>
     <ul>
      <li>标签</li>
      <li>占位符</li>
      <li>属性名称</li>
-     <li>范围文本（始于）</li>
-     <li>范围文本（止于）</li>
+     <li>范围文本（从）</li>
+     <li>范围文本（至）</li>
      <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>日期</p> </td>
-   <td><p>此搜索谓词用于根据日期属性进行基于滑块的资产搜索。</p> </td>
+   <td><p>此搜索谓词用于根据日期属性对资产进行基于滑块的搜索。</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -247,7 +247,7 @@ ht-degree: 32%
   </tr>
   <tr>
    <td><p>文件大小</p> </td>
-   <td><p>此搜索谓词用于根据资产的大小搜索资产. 它是一个基于滑块的谓词，您可以从可配置节点中选择滑块选项。 默认选项在CRX存储库的/libs/dam/options/predicates/filesize中定义。 文件大小以字节为单位提供。</p> </td>
+   <td><p>此搜索谓词用于根据资产的大小搜索资产。 它是一个基于滑块的谓词，您可以从可配置节点中选择滑块选项。 默认选项在CRX存储库的/libs/dam/options/predicates/filesize中定义。 文件大小以字节为单位提供。</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -301,7 +301,7 @@ ht-degree: 32%
 
 ## 恢复默认搜索彩块化 {#restoring-default-search-facets}
 
-默认情况下，“锁定”图标会显示在 **[!UICONTROL 资产管理搜索边栏]** 在 **[!UICONTROL 搜索Forms]** 页面。 如果您向该表单中添加搜索彩块化，该锁图标便会消失，以指示默认表单已被修改。
+默认情况下，“锁定”图标会显示在 **[!UICONTROL 资产管理搜索边栏]** 在 **[!UICONTROL 搜索Forms]** 页面。 如果您向表单中添加搜索彩块化，则“锁定”图标会消失，以指示默认表单已被修改。
 
 针对“搜索Forms”页面上的选项的锁定图标表示默认设置保持不变且未进行自定义。
 
@@ -322,6 +322,20 @@ ht-degree: 32%
 | 编辑 | 对 `/apps` 节点。 |
 | 删除 | 在 `/apps` 节点。 |
 | 预览 | 在 `/var/dam/content` 节点。 此外，还具有 `/apps` 节点。 |
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

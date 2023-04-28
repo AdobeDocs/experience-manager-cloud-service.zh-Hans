@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
+source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
-source-wordcount: '4068'
+source-wordcount: '4066'
 ht-degree: 99%
 
 ---
@@ -420,7 +420,7 @@ ht-degree: 99%
       + [文件夹元数据架构](/help/assets/folder-metadata-schema.md)
       + [使用图像和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [为音频和视频资源配置转录](/help/assets/configure-transcription.md)
-      + [多语言资源和翻译](/help/assets/translate-assets.md)
+      + [转换资产](/help/assets/translate-assets.md)
       + [搜索 Facet](/help/assets/search-facets.md)
       + [资源 HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)

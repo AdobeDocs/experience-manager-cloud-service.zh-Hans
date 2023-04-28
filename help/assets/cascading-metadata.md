@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 14%
 
 ---
 
@@ -113,3 +113,18 @@ ht-degree: 12%
 
    ![文档资产的级联元数据](assets/doc_type_fields.png)
    *图：文档资产的级联元数据*
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

@@ -4,10 +4,10 @@ description: Experience Manager会使用 [!DNL Adobe Sensei].
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 0%
+source-wordcount: '1213'
+ht-degree: 2%
 
 ---
 
@@ -133,6 +133,21 @@ DAM中已有的视频资产不会自动智能标记。 您需要 [!UICONTROL 重
 * 只有文件大小小于300 MB的视频会自动标记。 的 [!DNL Adobe Sensei] 服务会跳过大小较大的视频文件。
 
 * 只有中提到的文件格式以及支持的编解码器中的视频 [智能标记](/help/assets/smart-tags.md#smart-tags-supported-file-formats) 标记。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

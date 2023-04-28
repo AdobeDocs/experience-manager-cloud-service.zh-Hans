@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 1. 请联系您的客户代表以授权使用内容自动化加载项。
 1. 访问Cloud Manager，然后使用组织选择器切换到您的组织。
 1. 单击 **[!UICONTROL 添加程序]** 并指定程序名称。
-1. 单击 **[!UICONTROL 继续]**.
+1. 单击&#x200B;**[!UICONTROL “继续”]**。
 1. 展开 **[!UICONTROL 资产]** 选择 **[!UICONTROL 内容自动化]**.
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 1. 运行管道以 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 选择 **[!UICONTROL 编辑程序]** 然后选择 **[!UICONTROL 解决方案和附加组件]** 选项卡。
 
 1. 展开 **[!UICONTROL 资产]** 选择 **[!UICONTROL 内容自动化]**.
-1. 单击 **[!UICONTROL 更新]**.
+1. 单击&#x200B;**[!UICONTROL 更新]**。
 1. 运行管道以 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## 使用处理配置文件批量编辑您的创意资产 {#process-assets}
@@ -100,6 +100,21 @@ ht-degree: 0%
 
 * [!DNL Experience Manager] 将资产处理限制为每个环境每分钟300个请求，每个组织每分钟700个请求。
 * 文件大小限制为4 GB [!DNL Adobe Photoshop] API操作，1 GB用于 [!DNL Adobe Lightroom] 操作。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

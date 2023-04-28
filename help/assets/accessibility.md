@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 3130f374859c1bb67f6311d2decfdd537eabf14f
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 2%
+source-wordcount: '1943'
+ht-degree: 3%
 
 ---
 
@@ -216,6 +216,21 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 图像和插图具有可用的替换文本。
 * 可以使用键盘导航。
 * 对比度有助于突出文档网站的某些部分。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 ## 提供反馈 {#a11y-feedback}
 

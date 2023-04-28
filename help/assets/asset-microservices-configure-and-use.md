@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2902'
-ht-degree: 2%
+source-wordcount: '2932'
+ht-degree: 3%
 
 ---
 
@@ -265,6 +265,21 @@ asset compute服务集成允许Experience Manager使用 [!UICONTROL 服务参数
 * 在设计工作流时，请考虑您对所有类型的演绎版的需求。 如果您预计将来不会需要演绎版，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 长时间使用后，不需要的演绎版可能会占用大量存储空间 [!DNL Experience Manager]. 对于单个资产，您可以从用户界面手动删除演绎版。 对于多个资产，您可以自定义 [!DNL Experience Manager] 删除特定演绎版或删除资产，然后再次上传这些资产。
 * 目前，仅支持生成演绎版。 不支持生成新资产。
 * 目前，元数据提取的文件大小限制约为15 GB。 上传超大型资产时，有时元数据提取操作会失败。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

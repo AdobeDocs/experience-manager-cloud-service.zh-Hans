@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4f6901de479086ac40471885292ae82824516bd1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1217'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Experience Manager会根据资产数量和大小优化下载体验。 从用户�
    | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可为每个资产创建一个文件夹，其中包含该资产的所有下载演绎版。 如果未选择，则每个资产(及其演绎版（如果已选择下载）)都将包含在生成的存档的父文件夹中。 |
    | **[!UICONTROL 电子邮件]** | 选择此选项可向其他用户发送电子邮件通知（包含到您下载的链接）。 收件人用户必须是 `dam-users` 群组。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 在部署过程中自定义的模板可在以下位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 资产]** | 选择此选项可下载原始形式的资产。<br>如果原始资产具有子资产，则子资产选项可用。 |
-   | **[!UICONTROL 演绎版]** | 演绎版是资产的二进制表示形式。资产具有主要表示形式 — 上传文件的表示形式。 它们可以有任意数量的表示形式。 <br> 通过此选项，您可以选择要下载的演绎版。 可用的演绎版取决于您选择的资产。 |
+   | **[!UICONTROL 演绎版]** | 演绎版是资产的二进制表示形式。 资产具有主要表示形式 — 上传文件的表示形式。 它们可以有任意数量的表示形式。 <br> 通过此选项，您可以选择要下载的演绎版。 可用的演绎版取决于您选择的资产。 |
    | **[!UICONTROL 智能裁剪]** | 选择此选项可从以下位置下载选定资产的所有智能裁剪演绎版 [!DNL Experience Manager]. 系统会创建一个包含智能裁剪呈现版本的zip文件，并将其下载到您的本地计算机。 |
    | **[!UICONTROL 动态演绎版]** | 选择此选项可实时生成一系列替代演绎版。 当您选择此选项时，您还可以通过从 [图像预设](/help/assets/dynamic-media/image-presets.md) 列表。 <br>此外，您还可以选择大小和单位、格式、色彩空间、分辨率以及任何可选的图像修饰符（如反转图像）。 仅当您具有 [!DNL Dynamic Media] 已启用。 |
 
@@ -130,6 +130,20 @@ Experience Manager会根据资产数量和大小优化下载体验。 从用户�
 ## 提示和限制 {#tips-limitations}
 
 * 如果下载空文件夹， [!DNL Experience Manager] 传达了有关创建ZIP存档的成功消息，但未创建存档。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

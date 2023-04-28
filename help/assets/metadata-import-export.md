@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 9%
+source-wordcount: '688'
+ht-degree: 11%
 
 ---
 
@@ -76,6 +76,20 @@ Adobe Experience Manager Assets允许您使用CSV文件批量导入资产元数�
    ![用于下载包含批量导出元数据的CSV文件的对话框](assets/csv_download.png)
 
    *图：用于下载包含批量导出元数据的CSV文件的对话框。*
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
 
 >[!MORELIKETHIS]
 >

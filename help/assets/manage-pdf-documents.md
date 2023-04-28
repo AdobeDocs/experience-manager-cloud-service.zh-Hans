@@ -3,10 +3,11 @@ title: 在中管理PDF文档 [!DNL Adobe Experience Manager].
 description: 在中管理PDF文档 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management
 role: User,Admin
-source-git-commit: 9a600fb744c7064274fb4d849a5e01de2b83f575
+exl-id: 29660869-6902-4093-845b-cd629be59d4d
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 0%
+source-wordcount: '824'
+ht-degree: 3%
 
 ---
 
@@ -124,5 +125,20 @@ Experience Manager Assets允许您向PDF文档添加注释。 PDF文档可以有
 > 注意
 > * 您可以预览的资产的最大大小为100 MB。
 > * 要预览的XLS或XLSX文件的最大大小为20 MB。
-> 
+>
 
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

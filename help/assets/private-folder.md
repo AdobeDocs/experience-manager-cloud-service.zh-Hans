@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 1%
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 1%
    >专用文件夹至少具有一个成员，其中 `Owner` 角色。 因此，管理员无法从专用文件夹中删除所有所有者成员。 但是，要从专用文件夹中删除现有所有者（以及管理员本身），管理员必须将其他用户添加为所有者。
 
 1. 单击“**[!UICONTROL 保存并关闭]**”。根据您分配的角色，用户在登录到时，会为您的专用文件夹分配一组权限 [!DNL Assets].
-1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭确认消息。
+1. 单击 **[!UICONTROL 确定]** 以关闭确认消息。
 1. 与您共享文件夹的用户在其用户界面中会收到共享通知。
 
 1. 单击 [!UICONTROL 通知] 打开通知列表。
@@ -75,3 +75,18 @@ ht-degree: 1%
 >如果使用上述方法从用户界面中删除文件夹，则关联的用户组也会被删除。
 >
 >但是，可以使用从存储库中删除冗余、未使用和自动生成的现有用户组 `clean` 方法(`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

@@ -4,10 +4,10 @@ description: 对 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Mana
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 6%
+source-wordcount: '1034'
+ht-degree: 10%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 6%
 
 ## 开发和测试资产微服务 {#asset-microservices}
 
-资产微服务使用云服务提供资产的可扩展且可复原的处理。 Adobe可管理云服务，以优化处理不同资产类型和处理选项。 资产微服务有助于避免需要第三方渲染工具和方法(例如 [!DNL ImageMagick])并简化配置，同时为常见文件类型提供现成功能。 您现在可以处理 [广泛的文件类型](/help/assets/file-format-support.md) 可开箱即用地涵盖的格式多于以前版本的Experience Manager。 例如，现在可以提取PSD和PSB格式的缩略图，这是之前需要的第三方解决方案，例如 [!DNL ImageMagick]. 不能使用 [!DNL ImageMagick] 对于 [!UICONTROL 处理配置文件] 配置。 使用 [!DNL Dynamic Media] 用于高级FFmpeg视频转码，以及将处理配置文件用于 [MP4视频基本转码](/help/assets/manage-video-assets.md#transcode-video).
+资产微服务使用云服务来对资产进行可扩展的弹性处理。Adobe 管理云服务以实施对不同的资源类型和处理选项的最优处理。资产微服务有助于避免需要第三方渲染工具和方法(例如 [!DNL ImageMagick])并简化配置，同时为常见文件类型提供现成功能。 您现在可以处理 [广泛的文件类型](/help/assets/file-format-support.md) 可开箱即用地涵盖的格式多于以前版本的Experience Manager。 例如，现在可以提取PSD和PSB格式的缩略图，这是之前需要的第三方解决方案，例如 [!DNL ImageMagick]. 不能使用 [!DNL ImageMagick] 对于 [!UICONTROL 处理配置文件] 配置。 使用 [!DNL Dynamic Media] 用于高级FFmpeg视频转码，以及将处理配置文件用于 [MP4视频基本转码](/help/assets/manage-video-assets.md#transcode-video).
 
 资产微服务是一种云原生服务，可自动进行配置并连接到 [!DNL Experience Manager] 在Cloud Manager中管理的客户程序和环境中。 扩展或自定义 [!DNL Experience Manager]，开发人员可以使用现有内容或资产以及在云环境中生成的演绎版，来使用、显示、下载资产来测试和验证其代码。
 
@@ -66,6 +66,21 @@ ht-degree: 6%
 | 智能翻译 | 不受支持 | [智能翻译](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 不支持 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | WebDAV | 不受支持 | 有关替代方案，请参阅 [[!DNL Creative Cloud] 集成](/help/assets/aem-cc-integration-best-practices.md) 或 [显影剂参考材料](/help/assets/developer-reference-material-apis.md). |
 | 经典 UI | 不受支持 | 只有启用了触屏的用户界面才可用。 |
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

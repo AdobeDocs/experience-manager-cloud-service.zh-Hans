@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 1%
+source-wordcount: '909'
+ht-degree: 3%
 
 ---
 
@@ -109,6 +109,21 @@ Date24/08/2021
 处理配置文件包含 [!DNL Assets] 处理命令，这些命令适用于上传到预定义文件夹的资产。 配置文件用于自动处理文件夹或新上传资产的内容。 您可以使用用户档案更好地组织资产。
 
 标准化元数据使用、文件命名和文件夹结构可确保随着数字资产池的增长，您可以更精确、更一致地将处理配置文件应用到文件夹。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

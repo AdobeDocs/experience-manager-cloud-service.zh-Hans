@@ -2,9 +2,9 @@
 title: 图像的颜色标记
 description: Experience Manager Assets允许您区分图像中的颜色，并自动将这些颜色应用为标记。 然后，您可以使用这些标记来搜索和过滤图像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1225'
 ht-degree: 8%
 
 ---
@@ -155,7 +155,7 @@ DAM中已有的图像不会自动进行颜色标记。 您需要 [!UICONTROL 重
 
 1. 在 **[!UICONTROL 字段标签]** 字段 **[!UICONTROL 设置]**  选项卡。
 
-1. 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以保存设置。
+1. 单击 **[!UICONTROL 完成]** 来保存设置。
 
    >[!VIDEO](https://video.tv.adobe.com/v/340110)
 
@@ -181,3 +181,18 @@ DAM中已有的图像不会自动进行颜色标记。 您需要 [!UICONTROL 重
    您可以根据一种颜色的选择来过滤图像。 将选定颜色作为智能颜色标记之一且位于 [覆盖/优势阈值%](#manage-color-tagging-settings) 显示在右侧窗格中。
 
 1. 单击搜索栏中的x可清除过滤器。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

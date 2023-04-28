@@ -4,9 +4,9 @@ description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '3094'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. （可选）提供资产的最大文件大小（以MB为单位），以将其包含在 **[!UICONTROL 按最大大小过滤]** 字段。
 
-1. （可选）指定要从 **[!UICONTROL 排除MIME类型]** 字段。 例如：`image/jpeg, image/.*, video/mp4`。请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
+1. （可选）指定要从 **[!UICONTROL 排除MIME类型]** 字段。 例如， `image/jpeg, image/.*, video/mp4`. 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
 
 1. 指定要从的摄取中包含的MIME类型列表（以逗号分隔） **[!UICONTROL 包括MIME类型]** 字段。 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
 
@@ -390,6 +390,21 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

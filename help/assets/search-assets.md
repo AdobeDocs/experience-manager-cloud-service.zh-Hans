@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4897'
-ht-degree: 7%
+source-wordcount: '4925'
+ht-degree: 6%
 
 ---
 
@@ -154,22 +154,22 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 元数据字段 | Facet值和用法 |
 |---|---|
 | 标题 | title:John |
-| 创建者 | creator:John |
+| 创建者 | 创建者：John |
 | 位置 | 位置：NA |
 | 描述 | description:&quot;Sample Image&quot; |
 | 创建者工具 | creatortool:&quot;Adobe Photoshop&quot; |
 | 版权所有者 | copyrightowner:&quot;Adobe Systems&quot; |
-| 参与者 | contributor:John |
+| 参与者 | 参与者：John |
 | 使用条款 | usageterms:&quot;CopyRights Reserved&quot; |
 | 创建时间 | created:YYYY-MM-DDTHH |
 | 过期日期 | expires:YYYY-MM-DDTHH |
-| 开始时间 | ontime:YYYY-MM-DDTHH |
-| 结束时间 | offtime:YYYY-MM-DDTHH |
+| 准时 | ontime:YYYY-MM-DDTHH |
+| 关闭时间 | offtime:YYYY-MM-DDTHH |
 | 时间范围（过期日期、开始时间、结束时间） | facet字段：下限……上限 |
-| 路径 | /content/dam/&lt;folder name> |
-| PDF 标题 | pdftitle:&quot;Adobe Document&quot; |
-| 主题 | subject:&quot;Training&quot; |
-| 标记 | tags:&quot;Location And Travel&quot; |
+| 路径 | /content/dam/&lt;folder name=&quot;&quot;> |
+| PDF 标题 | pdftitle:&quot;Adobe文档&quot; |
+| 主题 | 主题：&quot;培训&quot; |
+| 标记 | 标记：&quot;Location And Travel&quot; |
 | 类型 | type:&quot;image\png&quot; |
 | 图像宽度 | width:lowerbound..上限 |
 | 图像高度 | height:lowerbound..上限 |
@@ -182,7 +182,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 用户生成属性的关键字是其属性编辑器中的字段标签（以小写形式显示），并删除空格。
 
-以下是复杂查询的一些搜索格式示例：
+以下是复杂查询的搜索格式的一些示例：
 
 * 要显示具有多个Facet字段的所有资产(例如：title=John Doe and creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * 当Facet值不是单个词而是句子时，显示所有资产(例如：title=Scott Reynolds): `title:"Scott Reynolds"`
@@ -384,12 +384,12 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | 搜索字段 | 搜索属性值 |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | MIME 类型 | 图像、文档、多媒体、存档或其他。 |
-| 上次修改时间 | “小时”、“天”、“周”、“月”或“年”。 |
-| 文件大小 | “小”、“中”或“大”。 |
-| 发布状态 | “已发布”或“已取消发布”。 |
-| 批准状态 | “已批准”或“已拒绝”。 |
+| 上次修改时间 | 小时、日、周、月或年。 |
+| 文件大小 | 小、中或大。 |
+| 发布状态 | 已发布或未发布。 |
+| 已批准状态 | 已批准或已拒绝。 |
 | 方向 | “水平”、“垂直”或“正方形”。 |
-| 样式 | “彩色”或“黑白”。 |
+| 样式 | 颜色或黑白。 |
 | 视屏高度 | 指定为最小值和最大值。 值仅存储在视频演绎版的元数据中。 |
 | 视频宽度 | 指定为最小值和最大值。 值仅存储在视频演绎版的元数据中。 |
 | 视频格式 | DVI、Flash、MPEG4、MPEG、OGG Theora、QuickTime、Windows Media。 值会存储在源视频及任何演绎版的元数据中。 |
@@ -463,6 +463,20 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | 在搜索视觉上相似的图像时，缺少预期的图像。 | <ul><li>图像在 [!DNL Experience Manager].</li><li>图像未编入索引。 通常，在最近上传时。</li><li>图像未智能标记。</li></ul> | <ul><li>将图像添加到 [!DNL Assets].</li><li>请与管理员联系以重新编入存储库索引。 此外，请确保您使用了相应的索引。</li><li>请联系您的管理员以智能标记相关资产。</li></ul> |
 | 在搜索视觉上相似的图像时，会显示不相关的图像。 | 可视搜索行为。 | [!DNL Experience Manager] 显示尽可能多的潜在相关资产。 相关性较差的图像（如果有）会添加到结果中，但搜索排名会较低。 当您向下滚动搜索结果时，匹配项的质量和搜索资产的相关性会降低。 |
 | 选择并运行搜索结果时，所有搜索的资产都不会运行。 | 的 [!UICONTROL 全选] 选项仅选择卡片视图中的前100个搜索结果和列表视图中的前200个搜索结果。 |  |
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

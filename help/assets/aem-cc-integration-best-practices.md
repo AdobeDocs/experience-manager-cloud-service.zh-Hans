@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3473'
 ht-degree: 15%
 
 ---
@@ -228,3 +228,18 @@ Experience Manager桌面应用程序为本机应用程序中打开的资产提�
 如果您使用“网络文件共享”来管理数字资产，则只需使用由Experience Manager桌面应用程序映射的网络共享即可被视为一种便捷的替代方法。 从网络文件共享进行转换时，Experience ManagerWeb界面提供了丰富的数字资产管理功能集，这些功能远远超出了网络共享上的可能功能（搜索、收藏集、元数据、协作、预览等），而Experience Manager桌面应用程序提供了一个便捷的链接，用于将服务器端DAM存储库与桌面上的工作连接起来。
 
 避免使用Experience Manager桌面应用程序直接在Experience Manager Assets的网络共享中管理资产。 例如，避免使用Experience Manager桌面应用程序移动/复制多个文件。 请改用Experience Manager Assets Web UI将文件夹从Finder/Explorer拖至网络共享，或使用Experience Manager Assets文件夹上传功能。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

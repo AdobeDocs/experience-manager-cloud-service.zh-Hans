@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 38%
+source-wordcount: '237'
+ht-degree: 29%
 
 ---
 
 # 在活动流中查看资产操作日志 {#activity-stream-in-timeline}
 
-这项功能可将资产的活动日志显示在时间轴上。如果您在 [!DNL Experience Manager Assets]，活动流功能会更新时间轴以反映活动。
+此功能可在时间轴上显示资产的活动日志。 如果您在 [!DNL Experience Manager Assets]，活动流功能会更新时间轴以反映活动。
 
 活动流中记录以下操作：
 
@@ -37,10 +37,25 @@ ht-degree: 38%
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
-时间轴显示您对资产所执行操作的活动流。
+时间轴显示您对资产执行的操作的活动流。
 
 <!-- ![activity_stream](assets/activity_stream.png) -->
 
 >[!NOTE]
 >
 >**[!UICONTROL 发布]**&#x200B;和&#x200B;**[!UICONTROL 取消发布]**&#x200B;任务的默认日志存储位置为 `/var/audit/com.day.cq.replication/content`。对于&#x200B;**[!UICONTROL 移动]**&#x200B;任务，默认位置为 `/var/audit/com.day.cq.wcm.core.page`。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

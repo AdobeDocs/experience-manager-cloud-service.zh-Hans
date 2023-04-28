@@ -2,10 +2,10 @@
 title: 配置Workfront和Experience Manager Assets之间的资产元数据映射
 description: 在Adobe Workfront和Experience Manageras a Cloud Service应用程序之间映射资产元数据字段。 由于映射元数据字段，因此在将资产从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资产元数据。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 0%
+source-wordcount: '1025'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. 单击 **[!UICONTROL 发送到]**，然后选择Experience Manager Assets Essentials集成名称。
 
-   ![发送到AEM](assets/send-to-aem.png)
+   ![发送到 AEM](assets/send-to-aem.png)
 
 1. 选择资产的目标文件夹，然后单击 **[!UICONTROL 选择文件夹]**.
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
       `wm` 是指命名空间名称和 `projectName` 引用属性标题。 使用 `namespace:propertyTitle` 格式来定义元数据字段映射。
 
-      ![发送到AEM](assets/metadata-schema-mapping.png)
+      ![发送到 AEM](assets/metadata-schema-mapping.png)
 
 1. 单击 **[!UICONTROL 构建表单]** 选项卡，并拖动 **[!UICONTROL 单行文本]** 组件。 在表单中单击组件。 在 **[!UICONTROL 构建表单]** 选项卡：
 
@@ -128,3 +128,18 @@ ht-degree: 0%
 1. 选择目标文件夹 [图像从Adobe Workfront应用程序发送](#send-image-workfront-assets) 单击 **[!UICONTROL 应用]**.
 
 您可以导航到Experience Manager Assets中的图像，并查看与该图像关联的元数据。 选择图像并单击 **[!UICONTROL 属性]** 查看图像元数据。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
