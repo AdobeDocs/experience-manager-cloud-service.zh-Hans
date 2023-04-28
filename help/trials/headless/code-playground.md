@@ -1,13 +1,13 @@
 ---
 title: 在简单应用程序中渲染内容
-description: 探索使用CodePen示例应用程序和AEM Headless Client for JavaScript从试用环境中获取JSON内容。
+description: 用 CodePen 示例应用程序和 JavaScript 版 AEM Headless 客户端探索从您的试用环境获取 JSON 内容。
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 42%
+ht-degree: 53%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 42%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="在简单的应用程序中渲染内容"
->abstract="探索使用CodePen示例应用程序和AEM Headless Client for JavaScript从试用环境中获取JSON内容。"
+>title="在简单的应用程序中呈现您的内容"
+>abstract="用 CodePen 示例应用程序和 JavaScript 版 AEM Headless 客户端探索从您的试用环境获取 JSON 内容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="启动示例 CodePen 应用程序"
->abstract="本指南将指导您在试用环境中将JSON数据查询到基本的JavaScript Web应用程序中。 我们将使用您在早期学习模块中建模和创建的内容片段，因此，在跳进到本指南之前，请先阅读这些指南。<br><br>为了演示如何从JavaScript Web应用程序查询内容，我们设置了CodePen，您可以按原样使用，或者创建自己的帐户分支以进一步自定义。"
+>abstract="本指南演练从您的试用环境查询 JSON 数据并将其传入一个基本的 JavaScript Web 应用程序。我们将使用您在早先学习模块中建模并创建的内容片段，因此请先阅读那些指南，然后再进入本指南。<br><br>为了演示可如何从 JavaScript Web 应用程序查询内容，我们设置了一个 CodePen，您可按原样使用它，也可创建分支到您自己的帐户中以供进一步自定义。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"

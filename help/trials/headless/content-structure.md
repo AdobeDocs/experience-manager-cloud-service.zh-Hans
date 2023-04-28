@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 37%
+ht-degree: 43%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="为您的应用程序创建内容结构"
->abstract="按照本系列交互式指南，您将学习如何创建一个结构（称为内容片段模型），该结构用作无头内容的基础结构。"
+>abstract="您按照此系列的交互式指南学习如何创建一个结构（也称为内容片段模型），它充当您的无头内容的基础结构。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="启动模型控制台"
->abstract="让我们探讨如何在 Adobe Experience Manager as a Cloud Service 中为您的内容创建一个可重复使用的架构，即内容片段模型。观看视频以了解为什么这一步很重要。<br><br>在本学习模块中，我们将以旅游网站为例，逐步创建一个代表旅行的模型。 我们将在后面的模块中引用此模型，因此请确保遵循所提供的命名模式。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
+>abstract="让我们探讨如何在 Adobe Experience Manager as a Cloud Service 中为您的内容创建一个可重复使用的架构，即内容片段模型。观看视频以了解为什么这一步很重要。<br><br>在本学习单元中，我们以一个旅游网站为例，演练如何创建一个展示旅行的模型。我们将在后面的单元中提到此模型，因此请您确保遵循所提供的命名模式。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
 >additional-url="https://video.tv.adobe.com/v/3413261" text="内容结构介绍视频"
 
 >[!CONTEXTUALHELP]
