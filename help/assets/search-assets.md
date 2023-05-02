@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 [!DNL Adobe Experience Manager Assets] 提供了强大的资产搜索方法，可帮助您提高内容速度。 借助开箱即用的功能和自定义方法，您的团队可以通过无缝、智能的资产搜索体验缩短上市时间。 搜索资产功能对于数字资产管理系统的使用至关重要 — 无论是供创意人员进一步使用，还是由业务用户和营销人员对资产进行稳健管理，还是由DAM管理员进行管理。 简单、高级和自定义的搜索，您可以通过执行这些搜索 [!DNL Assets] 用户界面或其他应用程序和界面可帮助完成这些用例。
 
-[!DNL Experience Manager Assets] 支持以下用例来搜索资产，本文介绍了这些用例的使用情况、概念、配置、限制和疑难解答。
+AEM中的资产搜索支持以下用例，本文介绍了这些用例的使用情况、概念、配置、限制和疑难解答。
 
 | 搜索资源 | 配置和管理搜索功能 | 使用资产搜索结果 |
 |---|---|---|
@@ -38,9 +38,9 @@ ht-degree: 6%
 
 [!DNL Experience Manager] 搜索功能支持搜索收藏集和搜索收藏集中的资产。 请参阅 [搜索收藏集](/help/assets/manage-collections.md).
 
-## 了解搜索界面 {#searchui}
+## 了解资产搜索界面 {#searchui}
 
-熟悉搜索界面和可用的操作。
+熟悉资产搜索界面和可用的操作。
 
 ![了解Experience Manager Assets搜索结果界面](assets/aem_search_results.png)
 
