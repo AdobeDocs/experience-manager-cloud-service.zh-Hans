@@ -2,10 +2,10 @@
 title: 自定义域名简介
 description: Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 81%
 
 ---
 
@@ -33,21 +33,16 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 >
 >Cloud Manager 不是域名注册商，不提供 DNS 服务。
 
-## 限制 {#limitations}
+## 自定义域名和BYO CDN {#byo-cdn}
 
-在 AEMaaCS 中使用自定义域名有很多限制。
+AEM as a Cloud Service提供内置的内容交付网络(CDN)服务，但也允许您自带(BYO)CDN与AEM结合使用。 自定义域可以安装在AEM管理的CDN或您管理的CDN中。
 
-* Cloud Manager 支持为 Sites 程序提供发布和预览服务的自定义域名。不支持作者服务的自定义域。
-* 每个 Cloud Manager 环境最多可以为每个环境托管 500 个自定义域。
-* 如果有当前正在运行的管道连接到这些环境，则无法将域名添加到这些环境。
-* 同一域名不能在多个环境中使用。
-* 一次只能添加一个域名。
-* AEM as a Cloud Service 不支持通配符，例如`*.example.com`。
-* 在添加自定义域名之前，必须为程序安装包含自定义域名（通配符证书有效）的有效 SSL 证书。请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)了解更多信息。
+* 在AEM-managed CDN中安装的自定义域名（和证书）通过Cloud Manager进行管理。
+* 在您自己的CDN中安装的自定义域名（和证书）将在该特定CDN中进行管理。
 
->[!NOTE]
->
->**只有**&#x200B;使用 AEM 托管的 CDN，才能在 Cloud Manager 中支持自定义域。如果您使用自己的 CDN，并[将它指向 AEM 托管的 CDN](/help/implementing/dispatcher/cdn.md)，则您必须使用该特定 CDN 而非 Cloud Manager 管理域。
+无需通过Cloud Manager安装在您自己的CDN中管理的域。 它们将通过X-Forwarded-Host提供给AEM，并且将与调度程序中定义的主机匹配。 [有关更多信息，请参阅CDN文档。](/help/implementing/dispatcher/cdn.md)
+
+在一个环境中，您可以在AEM-managed CDN中安装这两个域，并在您自己的CDN中安装这两个域。
 
 ## 工作流 {#workflow}
 
@@ -68,3 +63,15 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 >[!TIP]
 >
 >一般而言，用 AEM as a Cloud Service 设置自定义域名是一个简单的过程。但是，有时域委派可能会发生问题，而解决此问题可能耗时 1 至 2 个工作日。因此，强烈建议在上线日期之前安装好域。有关详细信息，请参阅文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+
+## 限制 {#limitations}
+
+在 AEMaaCS 中使用自定义域名有很多限制。
+
+* Cloud Manager 支持为 Sites 程序提供发布和预览服务的自定义域名。不支持作者服务的自定义域。
+* 每个 Cloud Manager 环境最多可以为每个环境托管 500 个自定义域。
+* 如果有当前正在运行的管道连接到这些环境，则无法将域名添加到这些环境。
+* 同一域名不能在多个环境中使用。
+* 一次只能添加一个域名。
+* AEM as a Cloud Service 不支持通配符，例如`*.example.com`。
+* 在添加自定义域名之前，必须为程序安装包含自定义域名（通配符证书有效）的有效 SSL 证书。请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)了解更多信息。
