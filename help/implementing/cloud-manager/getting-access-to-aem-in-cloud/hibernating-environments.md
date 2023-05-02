@@ -2,10 +2,10 @@
 title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒程序的环境如何自动进入休眠模式，以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 98%
 
 ---
 
@@ -114,5 +114,9 @@ ht-degree: 100%
 
 * 沙盒程序中的环境在八小时不活动后自动休眠。
    * 非活动性定义为作者服务和预览或发布服务都不会接收请求。
-   * 一旦休眠后，可以手动解除休眠。
+   * 休眠后，它们可以 [手动解除休眠。](#de-hibernation-introduction)
 * 沙盒程序在连续休眠模式下运行六个月后会被删除，然后可以重新创建。
+
+>[!NOTE]
+>
+>在连续休眠六个月后，只有沙盒环境会自动删除。保留沙盒程序及其存储库和代码。
