@@ -2,9 +2,9 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1722'
 ht-degree: 12%
 
 ---
@@ -146,6 +146,10 @@ ht-degree: 12%
 Release Orchestrator通过自动应用更新来自动使环境保持最新。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。 这是启动摄取之前应记录支持票证的原因之一（请参阅上面的“注意”），以便可以计划临时禁用Release Orchestrator。
 
 如果启动摄取时Release Orchestrator仍在运行，则UI将显示此消息。 无论如何，您都可以选择继续，接受风险，方法是检查字段并再次按按钮。
+
+>[!NOTE]
+>
+> Release Orchestrator现在正在部署到开发环境，因此也应暂停这些环境的更新。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 

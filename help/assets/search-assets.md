@@ -1,25 +1,25 @@
 ---
-title: 在 [!DNL Adobe Experience Manager]
-description: 了解如何在 [!DNL Adobe Experience Manager] ，以及如何使用搜索中显示的资产。
+title: 如何在AEM中搜索资产？
+description: 了解如何使用“过滤器”面板在AEM中搜索资产，以及如何使用资产搜索中显示的结果。
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4931'
 ht-degree: 6%
 
 ---
 
-# 在 [!DNL Adobe Experience Manager] 中搜索资源 {#search-assets-in-aem}
+# 在AEM中搜索资产 {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] 提供了强大的资产发现方法，可帮助您实现更高的内容速度。 您的团队可以使用现成的功能和自定义方法，通过无缝、智能的搜索体验缩短上市时间。 搜索资产是使用数字资产管理系统的核心 — 无论是供创意人员进一步使用，还是由业务用户和营销人员对资产进行稳健管理，还是由DAM管理员进行管理。 简单、高级和自定义的搜索，您可以通过执行这些搜索 [!DNL Assets] 用户界面或其他应用程序和界面可帮助完成这些用例。
+[!DNL Adobe Experience Manager Assets] 提供了强大的资产搜索方法，可帮助您提高内容速度。 借助开箱即用的功能和自定义方法，您的团队可以通过无缝、智能的资产搜索体验缩短上市时间。 搜索资产功能对于数字资产管理系统的使用至关重要 — 无论是供创意人员进一步使用，还是由业务用户和营销人员对资产进行稳健管理，还是由DAM管理员进行管理。 简单、高级和自定义的搜索，您可以通过执行这些搜索 [!DNL Assets] 用户界面或其他应用程序和界面可帮助完成这些用例。
 
-[!DNL Experience Manager Assets] 支持以下用例，本文介绍了这些用例的使用、概念、配置、限制和疑难解答。
+[!DNL Experience Manager Assets] 支持以下用例来搜索资产，本文介绍了这些用例的使用情况、概念、配置、限制和疑难解答。
 
-| 搜索资产 | 配置和管理搜索功能 | 处理搜索结果 |
+| 搜索资源 | 配置和管理搜索功能 | 使用资产搜索结果 |
 |---|---|---|
 | [基本搜索](#searchbasics) | [搜索索引](#searchindex) | [排序结果](#sort) |
 | [了解搜索UI](#searchui) | [文本提取](#extracttextupload) | [检查资产的属性和元数据](#checkinfo) |
@@ -298,7 +298,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ![通过示例说明在资产搜索中使用星号通配符](assets/search_with_asterisk_run.gif)
 
-*图：通过示例，说明了如何在资产搜索中使用星号通配符。*
+*图：通过示例说明了如何在资产搜索中使用星号通配符。*
 
 **使用问号通配符搜索**:要扩大搜索范围，请使用一个或多个“？” 字符以匹配精确的字符数。 例如，在下图中，
 
