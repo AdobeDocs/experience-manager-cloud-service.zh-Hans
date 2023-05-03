@@ -546,7 +546,7 @@ ht-degree: 99%
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
-            + [创建自适应Forms -AEM Sites页面中的核心组件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [创建自适应表单 - AEM Sites 页面中的核心组件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Summit 工作簿](/help/forms/summit-2023-workbook.md)
       + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
@@ -791,7 +791,7 @@ ht-degree: 99%
          + [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + 功能测试 {#functional-testing}
             + [功能测试概述](/help/implementing/cloud-manager/functional-testing.md)
-            + [Java功能测试](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Java 功能测试](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
          + [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)
