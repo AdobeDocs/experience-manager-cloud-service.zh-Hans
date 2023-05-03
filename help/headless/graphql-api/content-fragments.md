@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4769'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ GraphQL 使用以下对象：
 
 * **[条目列表](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM 提供将查询（两种类型）转换为[持久化查询的功能，可由 Dispatcher 和 CDN 缓存](/help/headless/graphql-api/persisted-queries.md)。
+AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Dispatcher 和 CDN 缓存](/help/headless/graphql-api/persisted-queries.md)。
 
 ### GraphQL 查询最佳实践（Dispatcher 和 CND） {#graphql-query-best-practices}
 
@@ -249,7 +249,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 | 枚举 | `String` | 用于显示在模型创建时定义的选项列表中的选项 |
 | 标记 | `[String]` | 用于显示表示在 AEM 中所用标记的字符串列表 |
 | 内容引用 | `String`、`[String]` | 用于显示指向 AEM 中其他资源的路径 |
-| 片段引用 | *模型类型* <br><br>单个字段： `Model`  — 模型类型，直接引用 <br><br>多字段，具有一个引用类型： `[Model]`  — 类型数组 `Model`，直接从数组引用 <br><br>多字段，具有多个引用类型： `[AllFragmentModels]`  — 所有模型类型的数组，从具有并集类型的数组引用 |  用于引用在创建模型时定义的特定模型类型的一个或多个内容片段 |
+| 片段引用 | *模型类型*<br><br>单个字段：`Model`-模型类型，直接引用<br><br>多字段，具有一个引用类型：`[Model]`-数组类型`Model`，直接从数组中引用<br><br>多字段，带有多个引用类型；`[AllFragmentModels]`-所有模型类型的数组，从具有合并类型的数组中引用 | 用于引用创建模型时定义的特定模型类型的一个或多个内容片段 |
 
 {style="table-layout:auto"}
 
@@ -699,7 +699,7 @@ query {
 
 >[!NOTE]
 >
->* 默认情况下，分页使用存储库节点的UUID（表示片段）进行排序，以确保结果的顺序始终相同。 当使用 `sort` 时，隐式使用 UUID 以确保唯一排序；即使对于具有相同排序键的两个项目，也可以使用。
+>* 默认情况下，分页使用表示片段的存储库节点的 UUID 进行排序，以确保结果的顺序始终相同。当使用 `sort` 时，隐式使用 UUID 以确保唯一排序；即使对于具有相同排序键的两个项目，也可以使用。
 >
 >* 由于内部技术限制，如果对嵌套字段应用排序和过滤，性能会降低。因此，建议使用存储在根级别的过滤器/排序字段。如果要查询大型分页结果集，这也是推荐的方式。
 
