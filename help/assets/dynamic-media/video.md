@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
+source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
 workflow-type: tm+mt
 source-wordcount: '5887'
 ht-degree: 2%
@@ -158,7 +158,7 @@ Dynamic MediaHTML5视频查看器预设是强大的视频播放器。 您可以�
 
 >[!NOTE]
 >
->要对视频使用DASH，必须先由您帐户上的Adobe技术支持人员启用。 请参阅 [在您的帐户上启用短划线](#enable-dash).)
+>要对视频使用DASH，必须先由您帐户上的Adobe技术支持人员启用。 请参阅 [在您的帐户上启用短划线](#enable-dash).
 
 您可以将使用HTML5和CSS设计播放组件的功能合并到单个播放器中。 它可以具有嵌入式播放，并根据浏览器的功能使用自适应和渐进式流播放。 所有这些功能都意味着您可以将富媒体内容的访问范围扩展到桌面用户和移动设备用户，并确保简化视频体验。
 
