@@ -2,9 +2,9 @@
 title: 自定义代码质量规则
 description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3473'
 ht-degree: 100%
 
 ---
@@ -757,7 +757,7 @@ public class DontDoThis implements Page {
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
-OSGi 配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定义 Experience Manager 中的默认创作模式。 由于[经典 UI 自 Experience Manager 6.4 之后已被弃用](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)，因此，在将默认创作模式配置为经典 UI 时，现在会引发问题。
+OSGi 配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定义 Experience Manager 中的默认创作模式。 由于经典 UI 自 Experience Manager 6.4 之后已被弃用，因此，在将默认创作模式配置为经典 UI 时，现在会引发问题。
 
 ### 带对话框的组件应具有 Touch UI 对话框 {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ Experience Manager 客户端库可能包含静态资源，如图像和字体。�
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-旧的基础组件（即 `/libs/foundation` 下的组件）已在[多个 Experience Manager 版本中被弃用](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)以便支持核心组件。建议不要使用基础组件作为自定义组件的基础（无论是通过叠加还是继承），并且应将这些基础组件转换为相应的核心组件。
+旧的基础组件（即 `/libs/foundation` 下的组件）已在多个 Experience Manager 版本中被弃用以便支持核心组件。建议不要使用基础组件作为自定义组件的基础（无论是通过叠加还是继承），并且应将这些基础组件转换为相应的核心组件。
 
 可以通过 [Experience Manager 现代化工具](https://opensource.adobe.com/aem-modernize-tools/)促进此转换。
 

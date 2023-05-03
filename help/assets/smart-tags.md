@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2423'
 ht-degree: 5%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 5%
 
 * 无法识别图像中的细微差异。 例如，修身衬衫与普通衬衫。
 * 无法根据图像的微小模式或部分来识别标记。 例如，衬衫上的徽标。
-* 支持标记的语言包括 [!DNL Experience Manager] 支持。 有关语言列表，请参阅 [智能内容服务发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* 支持标记的语言包括 [!DNL Experience Manager] 支持。
 * 未处理的标记与以下事项相关：
 
    * 非视觉、抽象的方面。 例如，产品发布的年份或季节、图像引发的情绪或情感，以及视频的主观内涵。
@@ -252,6 +252,21 @@ ht-degree: 5%
 >
 >智能标记是否能够在您的标记上进行培训并将其应用于其他图像，取决于您用于培训的图像质量。
 >为获得最佳结果，Adobe建议您使用视觉上相似的图像来为每个标记培训服务。
+
+**另请参阅**
+
+* [翻译资产](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资产支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资产](use-assets-across-connected-assets-instances.md)
+* [资源报表](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

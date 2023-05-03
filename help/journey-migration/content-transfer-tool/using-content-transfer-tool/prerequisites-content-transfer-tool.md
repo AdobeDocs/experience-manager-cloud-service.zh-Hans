@@ -2,9 +2,9 @@
 title: 内容转移工具的先决条件
 description: 内容转移工具的先决条件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '546'
 ht-degree: 15%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 15%
 | 内容存储库的总大小 <br>*（区段存储+数据存储）* | 内容传输工具旨在为文件数据存储类型的数据存储传输高达20 TB的内容。 当前不支持任何高于20 TB的数据。 与Adobe客户关怀团队一起创建支持票证，以讨论大于20 TB的内容选项。 <br>为显着加快大型存储库的内容传输过程，可选 [预拷贝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step) 步骤。 这适用于文件数据存储、Amazon S3和Azure数据存储类型的数据存储。 对于Amazon S3和Azure数据存储，支持大于20TB的存储库大小。 |
 | Lucene索引总大小 | 最大Lucene索引总大小为25GB，不包括 `/oak:index/lucene` 和 `/oak:index/damAssetLucene` 当前支持。 与Adobe客户关怀团队一起创建支持票证，以讨论索引大小超过此限制的选项。 |
 | 节点名称长度 | 当节点父路径大于=（等于或大于）350字节时，节点名称的长度必须小于或等于150字节。 这些节点名称必须缩短为&lt;= 150字节，才能在AEMas a Cloud Service中由文档节点存储支持。 如果未修复这些长节点名称，则摄取将失败。 |
-| 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径中的内容。 从 `/etc` 仅限于 `/etc` 允许选择路径，但仅支持 [AEM Forms至AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html#paths-of-various-aem-forms-specific-assets). 有关所有其他用例，请参阅 [公共存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html#restructuring) 以了解有关存储库重组的更多信息。 |
+| 不可变路径中的内容 | 内容传输工具不能用于迁移不可变路径中的内容。 从 `/etc` 仅限于 `/etc` 允许选择路径，但仅支持 [AEM Forms至AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html#paths-of-various-aem-forms-specific-assets). 有关所有其他用例，请参阅 [公共存储库重组](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/all-repository-restructuring-in-aem-6-5.html) 以了解有关存储库重组的更多信息。 |
 | MongoDB中的节点属性值 | MongoDB中存储的节点属性值不能超过16MB。 这由MongoDB强制执行。 如果存在大于此限制的属性值，则摄取将失败。 运行提取之前，请运行此 [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) 脚本。 检查所有大属性值，并验证是否需要它们。 超过16MB的数据需要转换为二进制值。 |
 
 ## 后续内容 {#whats-next}
