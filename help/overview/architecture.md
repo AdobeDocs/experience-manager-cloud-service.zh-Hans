@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1807'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -56,11 +56,11 @@ AEM as a Cloud Service 基于使用一个编排引擎，该引擎可以：
 
 * 允许 AEM as a Cloud Service 随流量模式变化进行对其进行调整。
 
-服务的每个租户实例的缩放适用于两个轴：
+该服务的每个租户实例的缩放适用于两个坐标轴：
 
-* 水平：给定服务的节点数会自动增加或减少，这仍然允许单独的默认配置。
+* 水平：给定服务的节点数会自动增加或减少，但仍然允许单独的默认配置。
 
-* 垂直：通过为固定数量的节点配置，可以放大或缩小已分配的内存和CPU容量，以满足需要时的各项要求。
+* 垂直：分配的内存和 CPU 容量可以通过配置固定数量的节点来扩大或缩小，以满足需要的个性化需求。
 
 ## 环境 {#environments}
 
