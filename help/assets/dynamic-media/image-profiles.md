@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: fa29504ba4abf68131d96a5a8ecbd62b7a9299f9
+source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3529'
 ht-degree: 7%
 
 ---
@@ -72,25 +72,15 @@ ht-degree: 7%
 **在图像配置文件中定义智能裁剪的准则**
 为了控制智能裁剪的使用情况，并优化农作物的加工时间和存储，Adobe建议遵循以下准则和提示：
 
-* 避免创建宽度和高度值相同的重复智能裁剪配置文件。
+* 要对图像资产应用智能裁剪的图像资产必须至少50 x 50像素或更大。
+* 理想情况下，每张图像拥有10-15种智能作物，以优化屏幕比例和处理时间。
 * 根据裁剪尺寸而不是最终使用情况来命名智能裁剪。 这样做有助于优化在多个页面上使用单个维度的重复项。
 * 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
 * 应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
-* 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
-* 您应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
-* 理想情况下，每张图像拥有10-15种智能作物，以优化屏幕比例和处理时间。
+* 不允许使用包含重复智能裁剪尺寸的图像配置文件。
+* 不允许设置智能裁剪选项的重复命名图像配置文件。
 
-<!--
-* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
-* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
-* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
-* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
-* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
-* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
-<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
-
-您有两个图像裁剪选项可供您选择。 您还可以选择自动创建颜色和图像色板，或跨目标分辨率保留裁剪内容。
+您有两个图像裁剪选项可供您选择：像素裁剪和智能裁剪。 您还可以选择自动创建颜色和图像色板，或跨目标分辨率保留裁剪内容。
 
 >[!IMPORTANT]
 >
@@ -188,7 +178,7 @@ ht-degree: 7%
 
 #### 将Dynamic Media图像配置文件从属性应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
 
-1. 点按Experience Manager徽标，然后导航到 **[!UICONTROL 资产]**.
+1. 点按Experience Manager徽标，然后导航到 **[!UICONTROL 资产]**.
 1. 导航到 *文件夹* （不是资产）。
 1. 根据您所在的视图，执行以下操作之一：
    * 在“卡片视图”中，将指针悬停在文件夹上，然后选择复选标记以将其选中。
