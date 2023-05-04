@@ -2,7 +2,7 @@
 title: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 description: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
+source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 4%
@@ -523,7 +523,7 @@ Dispatcher是一个Apache HTTP Web服务器模块，在CDN和AEM发布层之间�
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 成功管道运行后，将为您的环境启用自适应Forms核心组件。 此外，自适应Forms（核心组件）模板和画布主题也已添加到Formsas a Cloud Service环境中。
+1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 成功管道运行后，将为您的环境启用自适应Forms核心组件。 此外，自适应Forms（核心组件）模板和画布主题也会添加到Formsas a Cloud Service环境中。
 
 
 ## 升级本地开发环境 {#upgrade-your-local-development-environment}
