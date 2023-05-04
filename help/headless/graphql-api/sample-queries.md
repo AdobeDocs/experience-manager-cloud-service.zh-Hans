@@ -3,7 +3,7 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
+source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 97%
@@ -1296,11 +1296,11 @@ query {
 此查询查找：
 
 * 类型为 `bookmark` 的多个内容片段
-   * 具有对特定模型类型的其他片段的片段引用 `article`
+   * 具有对特定模型类型的其他片段的片段引用 `Article`
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，与模型一起使用 `Article` 选项。 查询传送 `fragments` 作为 `[Article]`
+>字段 `fragments` 具有数据类型 `fragment-reference`，与模型一起使用 `Article` 选项。 查询传送 `fragments` 作为 `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ query {
 }
 ```
 
-#### 多个引用的模型类型
+#### 多个参照模型类型
 
 此查询查找：
 
@@ -1324,7 +1324,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`、`Adventure`。查询投放 `fragments` 作为 `[AllFragmentModels]` 使用并集类型取消引用。
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`、`Adventure`。查询传送 `fragments` 作为 `[AllFragmentModels]`，使用并集类型取消引用。
 
 ```graphql
 {
