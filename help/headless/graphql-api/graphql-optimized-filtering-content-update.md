@@ -2,10 +2,10 @@
 title: 更新内容片段以进行优化的 GraphQL 筛选
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中更新内容片段以进行优化的 GraphQL 筛选，从而进行 Headless 内容投放。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: e18a60197aab3866b839ff7b923f1aa135c594cc
-workflow-type: ht
-source-wordcount: '738'
-ht-degree: 100%
+source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+workflow-type: tm+mt
+source-wordcount: '925'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,13 @@ ht-degree: 100%
 
 ## 前提条件 {#prerequisites}
 
-确保您至少拥有 2023.1.0 版本的 AEM as a Cloud Service。
+此任务的先决条件包括：
+
+1. 确保您至少拥有 2023.1.0 版本的 AEM as a Cloud Service。
+
+1. 确保执行任务的用户具有所需的权限：
+
+   * 至少 `Deployment Manager` 角色。
 
 ## 更新内容片段 {#updating-content-fragments}
 
@@ -119,7 +125,8 @@ ht-degree: 100%
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60（秒）
    >* 完成迁移大约所需的时间 = 60 + (20,000/1000 * 60) = 1260 秒 = 21 分钟
-   >  在开始时增加的额外“60”秒是因开始作业时的初始延迟导致的。
+      >  在开始时增加的额外“60”秒是因开始作业时的初始延迟导致的。
+
    >
    >您还应了解一点，这只是完成作业所需的&#x200B;*最少*&#x200B;时间，并且不包括 I/O 时间。实际花费的时间可能远远超过此估计值。
 
@@ -148,6 +155,44 @@ ht-degree: 100%
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+   启用了使用Splunk访问环境日志的客户，可以使用下面的示例查询来监视升级过程。 有关启用Splunk日志记录的详细信息，请参阅 [调试生产和暂存](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 页面。
+
+   ```splunk
+   index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
+   (aem_tier=golden-publish OR aem_tier=author) | table _time aem_tier pod_name msg | sort -_time desc
+   ```
+
+   其中：
+
+   * `environmentId`  — 客户环境标识符；例如， `e1234`
+   * `indexName`  — 客户索引名称，收集 `aemerror` 事件
+
+   示例输出：
+
+   <table style="table-layout:auto">
+     <thead>
+       <tr>
+       <th>_次</th>
+       <th>aem_tier</th>
+       <th>pod_name</th>
+       <th>msg</th>
+       </tr>
+     </thead> 
+     <tbody>
+       <tr>
+         <td>2023-04-21 06:00:35.723</td>
+         <td>作者</td>
+         <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1 — 内容片段升级作业队列配置(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob已完成的内容片段升级(391m， slingJobId):2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0，状态：MaintenanceJobStatus{jobState=SUCCEEDED，statusMessage='升级到版本'1'成功。', errors=[], successCount=36756, failedCount=0, clippedCount=0}</td>
+       </tr>
+       <tr>
+         <td>2023-04-21 06:05:48.207</td>
+         <td>golden-publish</td>
+         <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1 — 内容片段升级作业队列配置(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob 211m中已完成的内容片段升级，slingJobId:2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394dfc_0，状态：MaintenanceJobStatus{jobState=SUCCEEDED，statusMessage='升级到版本'1'成功。', errors=[], successCount=19557, failedCount=0, clippedCount=0}</td>
+       </tr>
+     </tbody>
+   <table>
 
 1. 禁用更新程序。
 
