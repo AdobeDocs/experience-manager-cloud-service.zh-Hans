@@ -2,10 +2,10 @@
 title: 使用内容片段 （资产 — 内容片段）
 description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
+source-git-commit: ca41657057211cb0736a866771253b166fa139b4
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 93%
 >[!NOTE]
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
->* **内容片段** 是编辑内容，具有定义和结构，但没有其他可视设计和/或布局。 它们可用于访问结构化数据，包括文本、数字和日期等。
+>* **内容片段**&#x200B;是可编辑内容，具有定义和结构，但无需额外的可视设计和/或布局。它们可用于访问结构化数据，包括文本、数字和日期等。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
@@ -105,10 +105,6 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 >[!NOTE]
 >
 >有关 AEM Sites as a Cloud Service 的 Headless 开发的介绍，请参阅 [Headless 和 AEM](/help/headless/introduction.md)。
-
->[!NOTE]
->
->AEM 还支持片段内容的翻译。
 
 >[!NOTE]
 >
