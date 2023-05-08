@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -1291,7 +1291,7 @@ query {
 
 ### 嵌套内容片段的示例查询 – 多个模型类型{#sample-wknd-nested-fragment-multiple-model}
 
-#### 单参照模型类型
+#### 单一引用模型类型
 
 此查询查找：
 
@@ -1300,7 +1300,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，与模型一起使用 `Article` 选项。 查询传送 `fragments` 作为 `[Article]`.
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询以 `fragments` 数组形式传递 `[Article]`。
 
 ```graphql
 {

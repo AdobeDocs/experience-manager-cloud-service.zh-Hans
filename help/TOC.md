@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
 source-wordcount: '4066'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -384,7 +384,7 @@ ht-degree: 99%
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
-   + 管理数字资产{#manage}
+   + 管理数字资源{#manage}
       + [共享资源](/help/assets/share-assets.md)
       + [监测活动和 DAM 任务](/help/assets/assets-activity-history.md)
       + [开始使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)
@@ -420,18 +420,18 @@ ht-degree: 99%
       + [文件夹元数据架构](/help/assets/folder-metadata-schema.md)
       + [使用图像和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [为音频和视频资源配置转录](/help/assets/configure-transcription.md)
-      + [转换资产](/help/assets/translate-assets.md)
+      + [翻译资源](/help/assets/translate-assets.md)
       + [搜索 Facet](/help/assets/search-facets.md)
-      + [资源 HTTP API](/help/assets/mac-api-assets.md)
+      + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
       + [连接的资源](/help/assets/use-assets-across-connected-assets-instances.md)
       + [生成仅用于投放的演绎版](/help/assets/configure-fpo-renditions.md)
-      + [资源报表](/help/assets/asset-reports.md)
+      + [资源报告](/help/assets/asset-reports.md)
       + [层叠元数据](/help/assets/cascading-metadata.md)
       + [XMP 元数据](/help/assets/xmp-metadata.md)
       + [MediaLibrary 功能](/help/assets/medialibrary.md)
       + [导入和导出资源元数据](/help/assets/metadata-import-export.md)
-      + [配置资产上传限制](/help/assets/configure-asset-upload-restrictions.md)
+      + [配置资源上传限制](/help/assets/configure-asset-upload-restrictions.md)
    + 共享和分发资源 {#brand-portal}
       + [使用 [!DNL Brand Portal] 配置 [!DNL Assets] ](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [将资源发布到 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -451,7 +451,7 @@ ht-degree: 99%
       + [预览 – JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 历程：基础知识{#dm-journey}
-         + [第一部分：什么是 Dynamic Media – 用例 – 资产如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [第一部分：什么是 Dynamic Media – 用例 – 资源如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
          + [第二部分：Dynamic Media URL 的剖析 – 图像预设的基础知识 – 关于图像集、旋转集和混合媒体集](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League 存档的 Dynamic Media 新闻稿](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [设置 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
@@ -504,7 +504,7 @@ ht-degree: 99%
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
-      + [配置资产元数据映射](/help/assets/configure-asset-metadata-mapping.md)
+      + [配置资源元数据映射](/help/assets/configure-asset-metadata-mapping.md)
       + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] ](/help/assets/workfront-connector-install.md)
       + [移除现有安装的外部依赖](/help/assets/remove-external-dependencies.md)
       + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
