@@ -3,9 +3,9 @@ title: 自定义域名简介
 description: Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -33,16 +33,16 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 >
 >Cloud Manager 不是域名注册商，不提供 DNS 服务。
 
-## 自定义域名和BYO CDN {#byo-cdn}
+## 自定义域名和 BYO CDN {#byo-cdn}
 
-AEM as a Cloud Service提供内置的内容交付网络(CDN)服务，但也允许您自带(BYO)CDN与AEM结合使用。 自定义域可以安装在AEM管理的CDN或您管理的CDN中。
+AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也允许您自带 (BYO) CDN 以与 AEM 一起使用。自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
 
-* 在AEM-managed CDN中安装的自定义域名（和证书）通过Cloud Manager进行管理。
-* 在您自己的CDN中安装的自定义域名（和证书）将在该特定CDN中进行管理。
+* 安装在 AEM 管理的 CDN 中的自定义域名（以及证书）通过 Cloud Manager 进行管理。
+* 安装在您自己的 CDN 中的自定义域名（以及证书）在该特定的 CDN 中进行管理。
 
-无需通过Cloud Manager安装在您自己的CDN中管理的域。 它们将通过X-Forwarded-Host提供给AEM，并且将与调度程序中定义的主机匹配。 [有关更多信息，请参阅CDN文档。](/help/implementing/dispatcher/cdn.md)
+在您自己的 CDN 中管理的域不需要通过 Cloud Manager 安装。它们将通过 X-Forwarded-Host 提供给 AEM，并将匹配 Dispatcher 中定义的虚拟主机。[请参阅 CDN 文档以了解更多信息。](/help/implementing/dispatcher/cdn.md)
 
-在一个环境中，您可以在AEM-managed CDN中安装这两个域，并在您自己的CDN中安装这两个域。
+在一个环境中，您可以有一个安装在 AEM 管理的 CDN 中的域和一个安装在您自己的 CDN 中的域。
 
 ## 工作流 {#workflow}
 
