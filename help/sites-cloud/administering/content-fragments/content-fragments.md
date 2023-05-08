@@ -4,9 +4,9 @@ description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2058'
 ht-degree: 100%
 
 ---
@@ -108,10 +108,6 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 >[!NOTE]
 >
 >有关 AEM Sites as a Cloud Service 的 Headless 开发的介绍，请参阅 [Headless 和 AEM](/help/headless/introduction.md)。
-
->[!NOTE]
->
->AEM 还支持片段内容的翻译。
 
 >[!NOTE]
 >
