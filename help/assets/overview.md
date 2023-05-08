@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: ht
-source-wordcount: '457'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云原生的 PaaS 解决方案，不仅可用于快速执行其数字资产管理和动态媒体运营来实现影响力，而且还可在始终最新、始终可用和不断学习的系统中使用新一代智能功能，例如 AI/ML。
+Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云原生的 PaaS 解决方案，不仅可用于快速执行其数字资源管理和动态媒体运营来实现影响力，而且还可在始终最新、始终可用和不断学习的系统中使用新一代智能功能，例如 AI/ML。
 
-并行摄取多个资产或复杂资产是一项面向 Experience Manager Author 实例的资源密集型任务。在添加、处理甚至迁移资产时，主实例会占用大量 CPU、内存和 I/O 资源。此类性能问题会影响最终用户的创作和浏览体验。
+并行摄取多个资源或复杂资源是一项面向 Experience Manager Author 实例的资源密集型任务。在添加、处理甚至迁移资源时，主实例会占用大量 CPU、内存和 I/O 资源。此类性能问题会影响最终用户的创作和浏览体验。
 
 企业需要为面向多设备、跨地域和多语言用例的一系列广泛的文件格式和内容解决方案提供支持。根据资源处理和存储要求，所需的资源和功能可能会导致传统解决方案的负担过重。有时，资源处理方面的技术限制会导致无法产生预期结果；在其他时候，存储成本会缩小利润空间。
 
@@ -30,7 +30,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 
 以下是 Assets as a [!DNL Cloud Service] 的主要好处。要了解详情，请参阅 [Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
 
-* **用于资产处理的现代云服务**：新的资产微服务是一项基于云、可扩展、可靠、无忧的资产处理服务。
+* **用于资源处理的现代云服务**：新的资源微服务是一项基于云、可扩展、可靠、无忧的资源处理服务。
 * **高度可扩展**：跨所有类型的部署的有弹性的可扩展性。在需要时按需提供的几乎无限的资源。与传统系统相比，节省了过度设计的成本。
 * **最新软件**：始终最新且始终进行更新。所有用户都只能获得最新软件，其中包含他们可使用的所有补丁、功能、安全修复和错误修复。开发人员和集成商使用一组最新的 API，没有多版本支持问题。
 * **始终在线**：零停机时间 (0dt)，这得益于部署在具有备份和冗余的群集中的实例。升级也可以实现 0dt。
@@ -41,5 +41,20 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 
 重要的新功能包括：
 
-* [资产微服务](/help/assets/asset-microservices-overview.md)
-* [资产上传方式](/help/assets/add-assets.md)
+* [资源微服务](/help/assets/asset-microservices-overview.md)
+* [资源上传方式](/help/assets/add-assets.md)
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
