@@ -5,7 +5,7 @@ description: 审核是一种机制，它允许审核人员使用“分配任务�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 4%
@@ -29,8 +29,8 @@ ht-degree: 4%
 1. 点按 ![settings_icon](assets/settings_icon.png) 中。 的 **[!UICONTROL 分配任务]** 对话框。
 1. 打开 [!UICONTROL 表单和文档] 选项卡，打开 [!UICONTROL 预填充] 下拉框并指定：
 
-* 使用以下方式选择输入数据文件
-* 使用以下方式选择输入附件
+   * 使用以下方式选择输入数据文件
+   * 使用以下方式选择输入附件
 
    ![审阅步骤](/help/forms/assets/assigntask-review1.gif)
 

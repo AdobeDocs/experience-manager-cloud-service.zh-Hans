@@ -1,10 +1,11 @@
 ---
 title: 将内容片段导出到 Adobe Target
 description: 将内容片段导出到 Adobe Target
-source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
-workflow-type: ht
-source-wordcount: '2228'
-ht-degree: 100%
+exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+workflow-type: tm+mt
+source-wordcount: '2229'
+ht-degree: 99%
 
 ---
 
@@ -193,7 +194,7 @@ ht-degree: 100%
 
       >[!NOTE]
       >
-      >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
+      >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
       >
       >mbox.js 已被弃用，将在稍后阶段删除。
       >
@@ -205,6 +206,7 @@ ht-degree: 100%
       >* 提高了安全性
       >* 改善了针对单页应用程序的实施选项
       >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
+
       >
       >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 

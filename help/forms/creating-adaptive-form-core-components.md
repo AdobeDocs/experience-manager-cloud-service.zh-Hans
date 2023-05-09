@@ -1,20 +1,20 @@
 ---
-title: 如何创建自适应表单？
+title: 如何创建自适应表单
 description: 了解如何使用 [!DNL Experience Manager Forms]. 自适应Forms是响应式HTML5表单，可简化信息收集和处理。 深入了解如何基于表单数据模型和XML或JSON架构创建自适应表单。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
+exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 2%
+source-wordcount: '1495'
+ht-degree: 7%
 
 ---
 
-
 # 创建自适应表单（核心组件） {#creating-an-adaptive-form-core-components}
 
-自适应表单可让您创建引人入胜、响应式、动态和自适应的表单。AEM Forms提供了业务用户友好向导，可快速创建自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
+自适应Forms让您能够创建引人入胜、响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创建自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
 开始之前，请了解可供您使用的Forms组件类型：
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 您需要满足以下条件才能创建自适应表单：
 
-* **为环境启用自适应Forms核心组件**:创建新项目时，您的环境中已启用自适应Forms核心组件。 如果您有基于Archetype 39或更早版本的Formsas a Cloud Service环境， [为环境启用自适应Forms核心组件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 在为环境启用核心组件时， **自适应Forms（核心组件）** 模板和画布主题会添加到您的环境中。 如果您的AEM SDK版本低于2023.02.0, [确保 `prerelease` 环境中已启用的标记](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) 因为自适应Forms核心组件在2023.02.0版之前是预先购买的一部分。
+* **为环境启用自适应Forms核心组件**:创建新项目时，您的环境中已启用自适应Forms核心组件。 如果您有基于 Archetype 39 或更早版本的 Forms as a Cloud Service 环境，请[为您的环境启用自适应表单核心组件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)。在为您的环境启用核心组件时，即将&#x200B;**自适应表单（核心组件）**&#x200B;模板和画布主题添加到您的环境。如果您的 AEM SDK 版本低于 2023.02.0，请[确保在您的环境上启用 `prerelease` 标志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)，因为自适应表单核心组件是 2023.02.0 发布之前预发布的一部分。
 
 * **自适应表单模板**:模板提供了基本结构并定义了自适应表单的外观（布局和样式）。 它具有预格式化的组件，其中包含某些属性和内容结构。 它还提供了用于定义主题和提交操作的选项。 主题定义了外观和感觉，并定义了提交自适应表单时要执行的操作。 例如，将收集的数据发送到数据源。 云服务提供了一个名为空的OOTB模板：
 

@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
-workflow-type: ht
-source-wordcount: '3412'
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+workflow-type: tm+mt
+source-wordcount: '3360'
 ht-degree: 100%
 
 ---
-
 
 # 使用核心组件和 Headless 构建具有吸引力的表单
 
@@ -60,8 +60,7 @@ ht-degree: 100%
 
 ### 练习
 
-1. 打开浏览器并输入 Cloud Service 创作环境的 URL。例如：
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. 打开浏览器并输入 Cloud Service 创作环境的 URL。
 
 1. 登录到 Cloud Service 创作环境。您的创作环境的登录凭据将在实验室期间与您共享。
 
@@ -407,8 +406,7 @@ ht-degree: 100%
 
 让我们以商业用户的身份对服务器上的表单进行更改，并自动查看 Headless 表单中反映的更改。
 
-1. 在浏览器中打开 AEM Forms 管理界面。例如，[https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments)。
-
+1. 在浏览器中打开 AEM Forms 管理界面。\
 1. 选择&#x200B;**注册**&#x200B;表单并点击&#x200B;**编辑。**&#x200B;这将在自适应表单编辑器中打开表单。
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -513,7 +511,7 @@ ht-degree: 100%
 
 1. 为 .env 文件中的变量设置以下值。更新变量后，保存文件。使用 **Ctrl + S** 开关组合来保存文件。
 
-   * **AEM_URL**：指定云服务发布环境的 URL。例如，[https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**：指定云服务发布环境的 URL。
 
    * **AEM_FORM_PATH**：指定上一节课中创建的自适应表单的路径。例如，/content/forms/af/registration/
 
@@ -639,12 +637,10 @@ ht-degree: 100%
 
 * [自适应表单核心组件简介](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
 
-* [使用核心组件创建自适应表单](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [使用核心组件创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 * [更新基于核心组件的 AF 的样式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 * [Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 * [使用 Headless React 初学者套件](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-

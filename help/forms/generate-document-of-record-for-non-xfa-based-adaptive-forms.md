@@ -1,14 +1,15 @@
 ---
 title: 为自适应Forms生成记录文档
 description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '4066'
 ht-degree: 2%
 
 ---
 
-# 为自适应Forms生成记录文档
+# 为自适应表单生成记录文档
 
 ## 概述 {#overview}
 
@@ -122,7 +123,7 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 现在，在提交自适应表单时，将创建更新的记录文档。
 
-![更新了-](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新-](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用记录文档时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
@@ -220,12 +221,12 @@ When you select a form model, configure Document of Record using options availab
   </tr>
   <tr>
    <td>“重置”按钮</td>
-   <td>重置按钮</td>
+   <td>“重置”按钮</td>
    <td>false</td>
    <td> </td>
   </tr>
   <tr>
-   <td>提交按钮</td>
+   <td>“提交”按钮</td>
    <td><p>“电子邮件提交”按钮</p> <p>HTTP提交按钮</p> </td>
    <td>false</td>
    <td> </td>
@@ -269,7 +270,7 @@ When you select a form model, configure Document of Record using options availab
 | 图像 | 图像 | 无论绑定还是未绑定的TextDraw和图像组件，都会始终显示在基于XSD的自适应表单的记录文档中，除非使用记录文档设置排除。 |
 | 文本 | 文本 |
 
-### 表 {#tables}
+### 表格 {#tables}
 
 自适应Forms表组件（如页眉、页脚和行映射）映射到相应的XFA组件。 您可以将可重复面板映射到记录文档中的表。
 

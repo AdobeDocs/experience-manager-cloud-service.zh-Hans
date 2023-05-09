@@ -1,21 +1,21 @@
 ---
-title: 如何创建自适应表单？
+title: 如何创建自适应Forms
 description: 了解如何使用 [!DNL Experience Manager Forms]. 自适应Forms是响应式HTML5表单，可简化信息收集和处理。 深入了解如何基于表单数据模型和XML或JSON架构创建自适应表单。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 4%
+source-wordcount: '1498'
+ht-degree: 3%
 
 ---
 
 # 创建自适应表单（基础组件） {#creating-an-adaptive-form}
 
 
-自适应表单可让您创建引人入胜、响应式、动态和自适应的表单。AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
+自适应Forms让您能够创建引人入胜、响应式、动态且自适应的表单。 AEM Forms提供了业务用户友好向导，可快速创作自适应Forms。 向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
 开始之前，请了解可供您使用的Forms组件类型：
 

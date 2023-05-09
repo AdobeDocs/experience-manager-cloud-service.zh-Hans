@@ -1,10 +1,10 @@
 ---
-title: 创建和使用主题
+title: 创建并使用主题以风格化自适应表单
 description: 您可以使用主题来风格化自适应表单并提供可视标识。 您可以在任意数量的自适应Forms中共享主题。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '5494'
+source-wordcount: '5499'
 ht-degree: 1%
 
 ---
