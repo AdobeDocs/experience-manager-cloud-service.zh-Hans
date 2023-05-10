@@ -2,10 +2,10 @@
 title: 自定义代码质量规则
 description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
-workflow-type: ht
-source-wordcount: '3473'
-ht-degree: 100%
+source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+workflow-type: tm+mt
+source-wordcount: '3508'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 >abstract="此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。"
 
 此页面描述了作为[代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。](/help/implementing/cloud-manager/code-quality-testing.md)这些规则基于 Experience Manager Engineering 的最佳实践。
+
+>[!NOTE]
+>
+>由于Adobe专有信息，无法下载完整的SonarQube规则。 可以[使用此链接下载规则的完整列表。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) 请继续阅读本文档，了解规则的说明和示例。
 
 >[!NOTE]
 >
