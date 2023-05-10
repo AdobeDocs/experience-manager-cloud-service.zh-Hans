@@ -2,9 +2,9 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1406'
 ht-degree: 22%
 
 ---
@@ -91,6 +91,10 @@ ht-degree: 22%
    将介绍以下对话。 请注意，迁移集将在长时间不活动后过期。 在项目卡片和迁移作业表行中显示警告一段时间后，迁移集将过期，其数据将不再可用。 审阅 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以了解详细信息。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >名称必须遵循AEM节点的相同约定，因此不能包含以下任何字符：/ : [ ] | *
 
 1. 现在，您应该会在列表视图中看到迁移列表。 单击三个圆点符号(**...**)打开下拉菜单，然后单击 **复制提取键值**. 在提取阶段，您将需要此键值。 复制此提取键值。
 

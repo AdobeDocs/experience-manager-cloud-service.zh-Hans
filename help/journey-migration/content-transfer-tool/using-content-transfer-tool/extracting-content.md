@@ -2,10 +2,10 @@
 title: 从源中提取内容
 description: 从源中提取内容
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 29%
+source-wordcount: '701'
+ht-degree: 27%
 
 ---
 
@@ -49,13 +49,13 @@ ht-degree: 29%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   您还可以通过访问内容传输页面来监控从Cloud Acceleration Manager提取阶段的进度。
+   您还可以通过访问内容传输页面来监控从Cloud Acceleration Manager提取阶段的进度，并通过单击 **...** 然后 **查看详细信息**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. 提取完成后，查看其他列，如 **来源** 和 **路径** 有关通过单击 **...** 然后 **查看详细信息**.
+1. 提取完成后，查看其他列，如 **来源** 和 **路径** 有关通过单击 **...** 然后 **查看详细信息** 以查看详细信息，包括提取每个步骤的持续时间。 在提取期间查看此对话框，以了解步骤的进展情况。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## 增补提取 {#top-up-extraction-process}

@@ -2,9 +2,9 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1753'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,9 @@ ht-degree: 12%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 完成摄取后，单击屏幕右上角的(i)按钮，以获取有关摄取作业的更多信息。
+1. 单击 **(i)** 按钮以获取有关摄取作业的更多信息。 通过单击，您可以查看执行或完成摄取的每个步骤的持续时间 **...** 然后 **查看持续时间**. 还显示来自提取的信息以实现所摄取的内容。
+
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
