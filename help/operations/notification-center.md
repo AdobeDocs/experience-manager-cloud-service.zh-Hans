@@ -3,10 +3,10 @@ title: 通知中心
 description: 利用通知中心可方便地针对问题和其他重要信息采取行动
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
-workflow-type: ht
-source-wordcount: '798'
-ht-degree: 100%
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,9 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时将发�
 执行以下步骤来配置接收通知：
 
 1. 创建以下产品配置文件，如[本文](/help/journey-onboarding/notification-profiles.md)中所述，并将来自您组织的适当 Adobe ID 分配给这些配置文件。这允许管理员确定哪些用户有资格接收这些通知。
-1. 在上一步中确定的每个指定用户都可以配置他们希望接收通知的方式。在 [Experience Cloud 偏好设置页面](https://experience.adobe.com/preferences/notification-section)中，确保已启用 Experience Manager 订阅，并且已选中&#x200B;**操作问题**&#x200B;和&#x200B;**主动建议**&#x200B;复选框。此外，建议将电子邮件部分设置为&#x200B;**即时通知**，以便在问题发生后立即收到通知。
+1. 在上一步中确定的每个指定用户都可以配置他们希望接收通知的方式。在 [Experience Cloud首选项页](https://experience.adobe.com/preferences/notification-section)，请确保启用了Experience Manager订阅，并且 **操作事件** 和 **主动建议** 已为应用程序内列和电子邮件列选择复选框（请参阅下图）。 此外，建议将电子邮件部分设置为&#x200B;**即时通知**，以便在问题发生后立即收到通知。
+
+![配置订阅](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >通知在组织级别运行，因此，订阅者将收到有关所有程序以及这些程序中的环境的通知。
