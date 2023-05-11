@@ -4,10 +4,10 @@ description: 一旦系统管理员设置了必要的云资源，就可以了解 
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
@@ -80,5 +80,7 @@ ht-degree: 100%
 >现在您已经成功载入，您可以[学习如何轻松地将 AEM 参考演示插件](/help/journey-sites/demos-add-on/overview.md)添加到具有最低 AEM 配置的沙盒环境中，并能够基于最佳实践通过丰富的示例测试 AEM 的强大功能。
 
 ## 其他资源 {#additional-resources}
+
+如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
 
 [页面创作快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md) – 从这里开始，快速了解 AEM 中的创作基础知识。[Headless 创作历程](/help/journey-headless/author/overview.md) – 如果您想创作 Headless 内容，请按照本指导性介绍。

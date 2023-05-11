@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 入门培训历程简介
 description: 您可以在此处了解 AEM as a Cloud Service 入门培训历程的指导概述。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -95,3 +95,9 @@ ht-degree: 100%
 文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
 
 如果您想知道 Adobe 建议如何将您的团队载入到全新 AEM as a Cloud Service 应用程序，请从这里开始！
+
+## 其他资源 {#additional-resources}
+
+如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
+
+* [AEM Champion提示和技巧 — Cloud Manager入门手册](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md)  — 观看此视频，了解Cloud Manager入门技巧和AEM冠军给您的技巧。

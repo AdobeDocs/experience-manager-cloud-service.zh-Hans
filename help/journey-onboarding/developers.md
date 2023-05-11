@@ -4,10 +4,10 @@ description: 一旦系统管理员设置了必要的云资源，就可以了解�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ ht-degree: 100%
 >现在您已经成功载入，您可以[学习如何轻松地将 AEM 参考演示插件](/help/journey-sites/demos-add-on/overview.md)添加到具有最低 AEM 配置的沙盒环境中，并能够基于最佳实践通过丰富的示例测试 AEM 的强大功能。
 
 ## 其他资源 {#additional-resources}
+
+如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
 
 * [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md) – 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Git 存储库。
 * [将 Git 和 Cloud Manager 结合使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) – 了解如何使用 Cloud Manager 的 Git 存储库，以及如何将您自己的本地客户管理的 Git 储存库与 Cloud Manager 集成。

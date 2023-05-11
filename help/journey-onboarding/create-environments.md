@@ -3,10 +3,10 @@ title: 创建环境
 description: 了解如何使用 Cloud Manager 创建您的首批环境。
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 100%
+source-wordcount: '773'
+ht-degree: 86%
 
 ---
 
@@ -30,12 +30,13 @@ ht-degree: 100%
 
 如果您还记得 WKND 旅游和冒险企业理论示例，一家专注于旅游相关媒体的租户，他们可能有两个程序：一个是 WKND Magazine 部门的 Sites 程序，另一个是为 WKND Media 部门的 Assets 程序。 每个程序可能都有两个环境，例如一个生产环境（为站点的实际流量提供服务）和一个开发环境（用于测试新的应用程序代码）。
 
-有三种不同类型的环境：
+环境有四种类型：
 
 * **生产和暂存** – 生产和暂存环境成对可用，分别用于生产和测试目的。
 * **开发** – 开发环境可以创建用于开发和测试目的，并且只能与非生产管道相关联。
+* **快速开发环境** - 快速开发环境 (RDE) 允许开发人员快速部署和审查更改，最大程度地减少测试已证明适用于本地开发环境的功能所需的时间。
 
-为了这次入门培训历程，您将创建一个开发环境。
+在此入门历程中，为了以最小的代价开始操作，您将创建一个开发环境，供您用于探索AEM as a Cloud Service的功能。
 
 ## 创建环境 {#creating-environments}
 
@@ -81,7 +82,9 @@ ht-degree: 100%
 
 ## 其他资源 {#additional-resources}
 
-根据其他资源了解：
+如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
 
 * [管理环境](/help/implementing/cloud-manager/manage-environments.md) – 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境
 * [使用 Adobe Cloud Manager – 环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) – 此视频概述了由 AEM 创作、发布和 Dispatcher 服务组成的 Cloud Manager 环境。 了解不同的环境如何支持角色，以及如何使用不同的 CI/CD 管道互动。
+* [AEM Champion提示和技巧 — Cloud Manager环境类型](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md)  — 观看此视频，了解AEM冠军提供的Cloud Manager环境类型概述。
+* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)  — 有关如何使用RDE的详细信息，请参阅此文档

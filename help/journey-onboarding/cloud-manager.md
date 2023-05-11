@@ -3,10 +3,10 @@ title: 访问 Cloud Manager
 description: 了解如何访问 Cloud Manager，以便您可以设置项目资源。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 97%
+source-wordcount: '1097'
+ht-degree: 95%
 
 ---
 
@@ -130,8 +130,9 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 ## 其他资源 {#additional-resources}
 
-根据其他资源了解：
+如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
 
 * [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md) –
 了解 Cloud Manager、Cloud Manager 程序和环境。
-* [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)  — 了解AEMas a Cloud Service团队和产品配置文件如何授予和限制对您的授权Adobe解决方案的访问权限。
+* [AEM as a Cloud Service 团队和生产简介](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品简介，以及如何授予和限制对您许可的 Adobe 解决方案的访问权限。
+* [AEM Champion提示和技巧 — Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md)  — 观看此视频，了解AEM冠军提供的Cloud Manager用户界面概述。

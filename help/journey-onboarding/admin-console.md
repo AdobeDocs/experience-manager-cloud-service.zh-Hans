@@ -2,10 +2,10 @@
 title: 访问 Admin Console
 description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 100%
+source-wordcount: '1111'
+ht-degree: 98%
 
 ---
 
@@ -104,6 +104,8 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 您可以通过学习如何[将团队成员分配到 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)来继续您的入门培训历程，以便您的同事也可以访问 AEMaaCS。
 
 ## 其他资源 {#additional-resources}
+
+如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
 
 * [Admin Console 概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) – Admin Console 全面概述
 * [创建或更新您的 Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) – 了解如何创建 Adobe ID 并进行更改，以及如何管理多个 Adobe ID。
