@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 在第 6 行上，我们从 `publishHost` 查询参数中读取您的发布主机详细信息。这是 AEM Headless Client 将从中提取数据的主机。该过程通常会编码到您的应用程序中，但我们使用查询参数来使 CodePen 应用程序能够在不同的环境中更轻松地运行。
 
-我们在第12行配置AEM Headless客户端：
+我们在第 12 行配置 AEM Headless 客户端：
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -75,9 +75,9 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->的 **serviceURL** 设置为使用代理AdobeIO运行时函数来避免CORS问题。 您自己的项目不一定得采用相同配置，但必须为 CodePen 应用程序执行此操作，以便其可在您的试用环境中工作。代理函数配置为使用 **publishHost** 查询参数中提供的值。
+>该&#x200B;**服务网址**&#x200B;已设置为使用代理 Adobe IO 运行时功能来避免 CORS 问题。您自己的项目不一定得采用相同配置，但必须为 CodePen 应用程序执行此操作，以便其可在您的试用环境中工作。代理函数已配置为使用查询参数中提供的 **publishHost** 值。
 
-最后，使用函数 `fetchJsonFromGraphQL()` 在 AEM Headless Client 中执行提取请求。每次更改代码时都会调用该函数，也可以通过点击&#x200B;**“重新提取”**&#x200B;链接来触发它。实际的 `aemHeadlessClient.runPersistedQuery(..)` 调用是在第 34 行上执行的。稍后，我们将更改此 JSON 数据的呈现方式，但现在我们只需使用 `resultToPreTag(queryResult)` 函数将其输出到 `#output` div。
+最后，使用函数 `fetchJsonFromGraphQL()` 在 AEM Headless 客户端中执行提取请求。每次更改代码时都会调用该函数，也可以通过点击&#x200B;**“重新提取”**&#x200B;链接来触发它。实际的 `aemHeadlessClient.runPersistedQuery(..)` 调用是在第 34 行上执行的。稍后，我们将更改此 JSON 数据的呈现方式，但现在我们只需使用 `resultToPreTag(queryResult)` 函数将其输出到 `#output` div。
 
 ## 从持久查询中提取数据 {#use-persisted-query}
 
