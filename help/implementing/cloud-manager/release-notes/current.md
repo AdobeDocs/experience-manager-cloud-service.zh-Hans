@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.4.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.4.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.5.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.5.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: be39b09b609cccff916db462af9a84149d23a698
-workflow-type: ht
-source-wordcount: '186'
-ht-degree: 100%
+source-git-commit: 4340b957cea86452f916ab615b383aabacc21676
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 41%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.4.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.5.0 的发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.4.0 版本的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.5.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,14 +21,15 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2023.4.0 版本的发布日期是 2023 年 4 月 13 日。下一个版本计划于 2023 年 5 月 11 日发布。
+AEMas a Cloud Service中Cloud Manager 2023.5.0版的发布日期是2023年5月11日。 下一个版本计划于 2023 年 6 月 8 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)已更新到版本 41。
+* 产品、功能和UI测试支持已扩展到 [非生产管道测试。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+* 除了启用上游测试外， [UI测试支持已扩展到Cypress测试。](/help/implementing/cloud-manager/ui-testing.md)
+* [自助内容副本](/help/implementing/developing/tools/content-copy.md) 现在，可通过Cloud Manager UI从较高环境访问到较低环境。
+* 管道执行验证步骤已得到增强，可在执行过程早期验证复制队列的状态。 这可确保部署步骤不受阻止队列的影响，这些队列应由AEM管理员用户直接在创作环境中解决。
 
 ## 错误修复 {#bug-fixes}
 
-* 当某个[证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)到期时，将不再从 CDN 中删除与该证书关联的[域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)和 [IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。在此类情况下，该站点可继续访问。
-* Cloud Manager UI 将显示更多醒目的事先警告，强调 [SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)即将到期。
-* 修复了客户无法创建新环境或删除环境的罕见情况。
+* 在环境名称中使用多字节字符时，环境创建不再失败。
