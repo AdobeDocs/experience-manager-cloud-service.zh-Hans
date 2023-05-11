@@ -2,7 +2,7 @@
 title: 使用 Best Practices Analyzer
 description: 使用 Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
+source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 49%
@@ -28,7 +28,7 @@ ht-degree: 49%
 * 版本6.1及更高版本的AEM实例支持BPA。
 
    >[!NOTE]
-   > 请参阅 [在AEM 6.1上安装](#installing-on-aem61) 在AEM 6.1上安装BPA的特殊要求。
+   >请参阅 [在AEM 6.1上安装](#installing-on-aem61) 在AEM 6.1上安装BPA的特殊要求。
 
 * BPA可在任何环境中运行，但最好在 *阶段* 环境。
 
@@ -100,14 +100,14 @@ ht-degree: 49%
    ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   > 仅当BPA检测到ACS Commons的使用情况时，才会显示左边栏图标。
+   >仅当BPA检测到ACS Commons的使用情况时，才会显示左边栏图标。
 
 1. 取消选中该框可筛选与ACS Commons相关的所有发现结果。 您应会看到 **筛选的发现结果计数** 如下图所示。 以逗号分隔值(CSV)格式导出报表时，该过滤器也会应用于报表。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   > 不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
+   >不应忽视ACS Commons的调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
