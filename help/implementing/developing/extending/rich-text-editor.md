@@ -3,9 +3,9 @@ title: 配置富文本编辑器以在中创作内容 [!DNL Adobe Experience Mana
 description: 配置富文本编辑器以在中创作内容 [!DNL Adobe Experience Manager] as a Cloud Service。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -95,14 +95,14 @@ RTE的基本功能由的值激活或停用 `features` 属性。
 | 插件ID | 功能 | 描述 |
 |--- |--- |--- |
 | 编辑 | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [剪切、复制和粘贴三种模式](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`、`replace` | 查找并替换. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [基本文本格式](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [图像](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 基本图像支持（从内容或内容查找器中拖动）。 根据浏览器的不同，作者支持的行为各不相同 |
-| [键](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | 要定义此值，请参阅 [选项卡大小](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [证明](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | 段落对齐。 |
-| [链接](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [超链接和锚点](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [列表](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 此插件可同时控制 [缩进和列表](configure-rich-text-editor-plug-ins.md#indentmargin);包括嵌套列表。 |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`、`sourceedit` | 其他工具允许作者输入 [特殊字符](configure-rich-text-editor-plug-ins.md#spchar) 或编辑HTML源。 此外，您还可以添加 [特殊字符范围](configure-rich-text-editor-plug-ins.md#definerangechar) 要定义自己的列表。 |
+| findreplace | `find`、`replace` | 查找并替换. |
+| 格式 | `bold`、`italic`、`underline` | [基本文本格式](configure-rich-text-editor-plug-ins.md#textstyles). |
+| 图像 | `image` | 基本图像支持（从内容或内容查找器中拖动）。 根据浏览器的不同，作者支持的行为各不相同 |
+| 键 | - | 要定义此值，请参阅 [选项卡大小](configure-rich-text-editor-plug-ins.md#tabsize). |
+| 证明 | `justifyleft`、`justifycenter`、`justifyright` | 段落对齐。 |
+| 链接 | `modifylink`、`unlink`、`anchor` | [超链接和锚点](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| 列表 | `ordered`, `unordered`, `indent`, `outdent` | 此插件可同时控制 [缩进和列表](configure-rich-text-editor-plug-ins.md#indentmargin);包括嵌套列表。 |
+| misctools | `specialchars`、`sourceedit` | 其他工具允许作者输入 [特殊字符](configure-rich-text-editor-plug-ins.md#spchar) 或编辑HTML源。 此外，您还可以添加 [特殊字符范围](configure-rich-text-editor-plug-ins.md#definerangechar) 要定义自己的列表。 |
 | 参数格式 | `paraformat` | 默认段落格式为“段落”、“标题1”、“标题2”和“标题3”(`<p>`, `<h1>`, `<h2>`和 `<h3>`)。 您可以 [添加更多段落格式](configure-rich-text-editor-plug-ins.md#paraformats) 或扩展列表。 |
 | 拼写检查 | `checktext` | [语言感知拼写检查程序](configure-rich-text-editor-plug-ins.md#adddict). |
 | 样式 | `styles` | 支持使用CSS类的样式。 [添加新的文本样式](configure-rich-text-editor-plug-ins.md#textstyles) 如果您要添加（或扩展）自己的样式范围以与文本一起使用。 |
@@ -119,7 +119,7 @@ RTE的基本功能由的值激活或停用 `features` 属性。
 的 [RTE编辑模式和界面](#editingmodes) 您为作者提供的配置详细信息在您 [激活RTE插件](configure-rich-text-editor-plug-ins.md#activateplugin). 位置包括：
 
 * 内联模式： `cq:editConfig/cq:inplaceEditing`.
-* 全屏模式: `cq:editConfig/cq:inplaceEditing`.
+* 全屏模式： `cq:editConfig/cq:inplaceEditing`.
 * 对话框模式： `cq:dialog`.
 * 全屏对话框模式： `cq:dialog`.
 
