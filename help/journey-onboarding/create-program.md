@@ -3,10 +3,10 @@ title: 创建程序
 description: 了解如何使用 Cloud Manager 创建您的第一个程序。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '686'
+ht-degree: 87%
 
 ---
 
@@ -51,11 +51,15 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
 1. 从 Cloud Manager 的登陆页面，单击屏幕右上角的&#x200B;**添加程序**。
 
-   ![Cloud Manager 登陆页面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Cloud Manager 登陆页面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 在“创建程序向导”中，选择&#x200B;**设置沙盒**，提供程序名称，然后点击&#x200B;**创建**。
+1. 从创建程序向导中，选择 **设置沙盒** 并提供程序名称，然后点按或单击 **继续**.
 
    ![程序类型创建](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. 在 **设置沙盒** 对话框中，您可以选择要在沙盒项目中启用的解决方案。 的 **站点** 和 **资产** 解决方案始终包含在沙盒项目中并会自动进行选择。 这就足以作为我们的入门示例。 单击&#x200B;**创建**。
+
+   ![解决方案选择](assets/set-up-sandbox-onboarding.png)
 
 随着安装过程的进行，您将在登陆页面上看到一个带有状态指示器的新沙盒程序信息卡。
 

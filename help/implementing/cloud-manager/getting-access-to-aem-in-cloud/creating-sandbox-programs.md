@@ -2,10 +2,10 @@
 title: 创建沙盒程序
 description: 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 67%
 
 ---
 
@@ -23,17 +23,31 @@ ht-degree: 100%
 
 1. 从 Cloud Manager 的登陆页面，单击屏幕右上角的&#x200B;**添加程序**。
 
-   ![Cloud Manager 登陆页面](assets/first_timelogin1.png)
+   ![Cloud Manager 登陆页面](assets/cloud-manager-my-programs.png)
 
-1. 在“创建程序向导”中，选择&#x200B;**设置沙盒**，提供程序名称，然后点击&#x200B;**创建**。
+1. 从创建程序向导中，选择 **设置沙盒** 并提供项目名称。
 
    ![程序类型创建](assets/create-sandbox.png)
 
+1. 或者，您也可以通过将图像文件拖放到 **添加程序图像** 定位或单击该图像以从文件浏览器中选择图像。 点按或单击&#x200B;**继续**。
+
+   * 该图像仅用作项目概述窗口中的图块，并有助于识别项目。
+
+1. 在 **设置沙盒** 对话框中，通过选中 **解决方案和附加组件** 表。
+
+   * 使用解决方案名称旁边的雪佛兰可显示解决方案的其他可选附加组件。
+
+   * 的 **站点** 和 **资产** 解决方案始终包含在沙盒项目中，并且无法取消选择。
+
+   ![为沙盒选择解决方案和附加组件](assets/sandbox-solutions-add-ons.png)
+
+1. 为沙盒项目选择解决方案和加载项后，点按单击 **创建**.
+
 随着安装过程的进行，您将在登陆页面上看到一个带有状态指示器的新沙盒程序信息卡。
 
-![从概述页面创建沙盒](assets/program-create-setupdemo2.png)
+![从概述页面创建沙盒](assets/sandbox-setup.png)
 
-## 访问您的沙盒 {#access}
+## 沙盒访问 {#access}
 
 您可以查看沙盒设置的详细信息，也可以通过查看程序概述页面访问环境（一旦可用）。
 

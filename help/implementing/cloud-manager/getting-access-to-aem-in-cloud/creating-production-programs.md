@@ -2,10 +2,10 @@
 title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '582'
+ht-degree: 82%
 
 ---
 
@@ -15,14 +15,6 @@ ht-degree: 100%
 生产程序面向熟悉 AEM 和 Cloud Manager 并准备好开始编写、构建和测试代码的用户，目的是将其部署到托管实时流量。
 
 请参阅[了解程序和程序类型](program-types.md)文档，了解有关程序类型的更多信息。
-
-## 视频教程 {#video-tutorials}
-
-您可以观看这两个教程视频，了解如何在 Cloud Manager 中创建程序，或者[按照我们的说明进行操作。](#create)
-
->[!VIDEO](https://video.tv.adobe.com/v/334953)
-
->[!VIDEO](https://video.tv.adobe.com/v/334954)
 
 ## 创建生产程序 {#create}
 
@@ -34,13 +26,11 @@ ht-degree: 100%
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
-1. 在“创建程序向导”中，选择&#x200B;**设置生产**。 
-
-   1. 您可以接受或编辑默认程序名。
-   1. 您可以选择拖放缩略图图像来标识您的程序。
-   1. 点按或单击&#x200B;**继续**。
+1. 选择 **为生产设置** 在创建程序向导中创建生产程序并提供程序名称。
 
    ![创建程序向导](assets/create-production-program.png)
+
+1. 或者，您也可以通过将图像文件拖放到 **添加程序图像** 定位或单击该图像以从文件浏览器中选择图像。 点按或单击&#x200B;**继续**。
 
 1. 如果您拥有增强安全性授权，**增强安全性**&#x200B;选项卡将为您的作品提供&#x200B;**启用增强安全性**&#x200B;选项程序。如果需要，请选中启用增强安全性的选项，然后点击或单击&#x200B;**继续**。
 
@@ -51,6 +41,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**解决方案和插件** 选项卡，选择要包含在程序中的解决方案。
 
+   * 如果您不确定您是否需要一个或多个程序用于您可用的各种解决方案，请选择您最感兴趣的方案。 您可以通过 [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 稍后。 请参阅 [生产计划简介文档](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 以了解更多项目设置建议。
    * 如果您之前选择了&#x200B;**启用增强安全性**，您将只能选择 HIPAA 权利可用的解决方案。
 
    ![选择解决方案](assets/setup-prod-select.png)
