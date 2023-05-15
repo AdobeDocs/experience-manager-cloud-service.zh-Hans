@@ -2,9 +2,10 @@
 title: 为服务器端API生成访问令牌（旧版）
 description: 了解如何通过生成安全的JWT令牌来促进第三方服务器与AEMas a Cloud Service之间的通信
 hidefromtoc: true
-source-git-commit: aad1033828e400aaf4d9418f8e57afb61f05eecc
+exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -15,29 +16,30 @@ ht-degree: 0%
 
 服务器到服务器的流程以及简化的开发流程如下所述。 AEMas a Cloud Service [开发人员控制台](development-guidelines.md#crxde-lite-and-developer-console) 用于生成身份验证过程所需的令牌。
 
+<!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->除了本文档之外，您还可以查阅 [AEMas a Cloud Service的基于令牌的身份验证](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) 和 [获取集成的登录令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
-具有IMS组织管理员角色的用户，以及AEM作者上AEM用户或AEM管理员产品配置文件的成员，可以生成AEMas a Cloud Service凭据。 随后，具有AEMas a Cloud Service环境管理员角色的用户可检索该凭据，该凭据应安装在服务器上，并且需要谨慎处理为密钥。 此JSON格式文件包含与AEMas a Cloud ServiceAPI集成所需的所有数据。 数据用于创建已签名的JWT令牌，该令牌与IMS交换以获取IMS访问令牌。 然后，此访问令牌可用作承载身份验证令牌，以向AEMas a Cloud Service发出请求。 默认情况下，凭据会在一年后过期，但可以根据需要刷新凭据，如所述 [此处](#refresh-credentials).
+具有IMS组织管理员角色的用户，以及AEM作者上AEM用户或AEM管理员产品配置文件的成员，可以生成AEMas a Cloud Service凭据。 该凭据稍后可由具有AEMas a Cloud Service环境管理员角色的用户检索，并应安装在服务器上，需要谨慎地将其视为密钥。 此JSON格式文件包含与AEMas a Cloud ServiceAPI集成所需的所有数据。 数据用于创建已签名的JWT令牌，该令牌与IMS交换以获取IMS访问令牌。 然后，此访问令牌可用作承载身份验证令牌，以向AEMas a Cloud Service发出请求。 默认情况下，凭据会在一年后过期，但可以根据需要刷新凭据，如所述 [此处](#refresh-credentials).
 
 服务器到服务器流程涉及以下步骤：
 
-* 从开发人员控制台获取AEMas a Cloud Service凭据
-* 在对AEM进行调用的非AEM服务器上安装AEMas a Cloud Service凭据
+* 从开发人员控制台获取AEMas a Cloud Service的凭据
+* 在对AEM进行调用的非AEM服务器上安装AEM as a Cloud Service的凭据
 * 使用Adobe的IMS API生成JWT令牌并交换该令牌以用于访问令牌
 * 使用访问令牌作为载体身份验证令牌调用AEM API
 * 在AEM环境中为技术帐户用户设置适当的权限
 
 ### 获取AEMas a Cloud Service凭据 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-有权访问AEMas a Cloud Service开发人员控制台的用户将在开发人员控制台中看到给定环境的“集成”选项卡，以及两个按钮。 具有AEMas a Cloud Service环境管理员角色的用户可以单击 **生成服务凭据** 按钮以生成和显示服务凭据json，它将包含非AEM服务器所需的所有信息，包括客户端id、客户端密钥、私钥、证书，以及环境创作层和发布层的配置，而不考虑面板选择。
+有权访问AEMas a Cloud Service开发人员控制台的用户会看到开发人员控制台中针对给定环境的“集成”选项卡，以及两个按钮。 具有AEMas a Cloud Service环境管理员角色的用户可以单击 **生成服务凭据** 按钮以生成和显示服务凭据json。 json包含非AEM服务器所需的所有信息，包括客户端ID、客户端密钥、私钥、证书以及环境创作层和发布层的配置，无论选择哪个面板。
 
 ![JWT生成](assets/JWTtoken3.png)
 
-输出将类似于：
+输出类似于：
 
 ```
 {
@@ -59,19 +61,19 @@ ht-degree: 0%
 }
 ```
 
-生成凭据后，可以在稍后的日期通过按 **获取服务凭据** 按钮。
+生成凭据后，可以稍后通过按 **获取服务凭据** 按钮。
 
 >[!IMPORTANT]
 >
->IMS组织管理员（通常是通过Cloud Manager配置环境的同一用户）(也应是AEM作者上AEM用户或AEM管理员产品配置文件的成员)必须先访问开发人员控制台并单击 **生成服务凭据** 按钮，以便具有AEMas a Cloud Service环境的管理员权限的用户生成并稍后检索凭据。 如果IMS组织管理员尚未执行此操作，则会显示一条消息，告知他们需要IMS组织管理员角色。
+>IMS组织管理员（通常是通过Cloud Manager配置环境的用户）应同时是AEM作者上AEM用户或AEM管理员产品配置文件的成员，用于访问开发人员控制台。 然后，他们必须单击 **生成服务凭据** 按钮，以便具有AEMas a Cloud Service环境的管理员权限的用户生成并稍后检索凭据。 如果IMS组织管理员尚未完成此任务，则会显示一条消息，告知他们需要IMS组织管理员角色。
 
 ### 在非AEM服务器上安装AEM服务凭据 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-调用AEM的非AEM应用程序应能够访问AEMas a Cloud Service凭据，并将其视为机密。
+调用AEM的非AEM应用程序应能够访问AEMas a Cloud Service的凭据，并将其视为机密。
 
 ### 生成JWT令牌并将其交换为访问令牌 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在对AdobeIMS服务的调用中，使用凭据创建JWT令牌，以检索有效期为24小时的访问令牌。
+在对AdobeIMS服务的调用中，使用凭据创建JWT令牌以检索访问令牌，该令牌的有效期为24小时。
 
 可以使用为此目的而设计的客户端库将AEM CS服务凭据交换为访问令牌。 客户端库可从 [Adobe的公共GitHub存储库](https://github.com/adobe/aemcs-api-client-lib)，其中包含更多详细信息和最新信息。
 
@@ -95,7 +97,7 @@ exchange(config).then(accessToken => {
 
 可以使用能够生成具有正确格式的签名JWT令牌并调用IMS令牌交换API的任何语言来执行相同的交换。
 
-访问令牌将定义其过期的时间（通常为24小时）。 Git存储库中有一个示例代码，用于管理访问令牌并在其过期之前刷新该令牌。
+访问令牌可定义何时过期（通常为24小时）。 Git存储库中有一个示例代码，用于管理访问令牌并在其过期之前刷新该令牌。
 
 ### 调用AEM API {#calling-the-aem-api}
 
@@ -107,23 +109,22 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### 在AEM中为技术帐户用户设置适当的权限 {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-在AEM中创建技术帐户用户（这在具有相应访问令牌的第一个请求后发生）后，技术帐户用户必须获得相应的权限 **in** AEM。
+在AEM中创建技术帐户用户后（在具有相应访问令牌的第一个请求后发生），技术帐户用户必须获得相应的权限 **in** AEM。
 
-请注意，在AEM创作服务中，默认情况下，技术帐户用户会添加到提供读取访问权限的参与者用户组中。AEM
+默认情况下，在AEM创作服务中，技术帐户用户会添加到提供读取访问权限的参与者用户组中。AEM
 
 可以使用常用方法进一步为AEM中的此技术帐户用户配置权限。
 
 ## 开发人员流程 {#developer-flow}
 
-开发人员可能希望使用其非AEM应用程序的开发实例（在其笔记本电脑上运行或托管）进行测试，该实例会向AEMas a Cloud Service开发环境发出请求。 但是，由于开发人员不一定具有IMS管理员角色权限，因此我们不能假定他们可以生成常规服务器到服务器流中描述的JWT载体。 因此，我们为开发人员提供了一种机制，用于直接生成访问令牌，该令牌可用于他们有权访问的AEMas a Cloud Service环境的请求。
+开发人员应使用其非AEM应用程序的开发实例（在其笔记本电脑上运行或托管）进行测试，该实例可向AEMas a Cloud Service开发环境发出请求。 但是，由于开发人员不一定具有IMS管理员角色权限，因此Adobe不能假定他们可以生成常规服务器到服务器流中描述的JWT载体。 因此，Adobe为开发人员提供了一种直接生成访问令牌的机制，该访问令牌可用于对他们有权访问的AEMas a Cloud Service环境的请求。
 
 请参阅 [开发人员准则文档](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) 有关使用AEMas a Cloud Service开发人员控制台所需权限的信息。
 
 >[!NOTE]
->
->本地开发访问令牌的有效期最长为24小时，之后必须使用同一方法重新生成该令牌。
+本地开发访问令牌的有效期最长为24小时，之后必须使用同一方法重新生成该令牌。
 
-开发人员可以使用此令牌从其非AEM测试应用程序向AEMas a Cloud Service环境进行调用。 通常，开发人员会在自己的笔记本电脑上将此令牌与非AEM应用程序一起使用。 此外，AEM as a Cloud通常是非生产环境。
+开发人员可以使用此令牌从其非AEM测试应用程序向AEMas a Cloud Service环境进行调用。 通常，开发人员在自己的笔记本电脑上将此令牌与非AEM应用程序结合使用。 此外，AEM as a Cloud通常是非生产环境。
 
 开发人员流程涉及以下步骤：
 
@@ -134,7 +135,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### 生成访问令牌 {#generating-the-access-token}
 
-单击 **获取本地开发令牌** 按钮以生成访问令牌。
+要生成访问令牌，请在开发人员控制台中，单击 **获取本地开发令牌**.
 
 ### 调用，然后使用访问令牌调用AEM应用程序 {#call-the-aem-application-with-an-access-token}
 
@@ -142,24 +143,21 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 刷新凭据 {#refresh-credentials}
 
-默认情况下，AEMas a Cloud Service凭据会在一年后过期。 为确保服务连续性，开发人员可以选择刷新凭据，将其可用性延长一年。
-
-要实现此目的，您可以使用 **刷新服务凭据** 按钮 **集成** 选项卡，如下所示。
+默认情况下，AEMas a Cloud Service的凭据会在一年后过期。 为确保服务连续性，开发人员可以选择刷新凭据，将其可用性延长一年。 使用 **刷新服务凭据** 从 **集成** 选项卡，如下所示。
 
 ![凭据刷新](assets/credential-refresh.png)
 
 按按钮后，将生成一组新的凭据。 您可以使用新凭据更新您的密钥存储，并验证它们是否按原样运行。
 
 >[!NOTE]
->
-> 单击 **刷新服务凭据** 按钮时，旧凭据会一直进行注册，直到过期，但只有最新的凭据集可在任何时候从开发人员控制台查看。
+单击 **刷新服务凭据** 按钮时，旧凭据会一直进行注册，直到过期，但只有最新的凭据集可在任何时候从开发人员控制台查看。
 
 ## 服务凭据吊销 {#service-credentials-revocation}
 
-如果凭据需要撤消，您需要使用以下步骤向客户支持提交请求：
+如果必须撤消凭据，则必须使用以下步骤向客户支持人员提交请求：
 
 1. 在用户界面中禁用Adobe Admin Console的技术帐户用户：
-   * 在Cloud Manager中，按 **...** 按钮。 此时将打开产品配置文件页面
+   * 在Cloud Manager中，按 **...** 按钮。 此操作将打开产品配置文件页面
    * 现在，单击 **AEM用户** 用户档案，以显示用户列表
    * 单击 **API凭据** 选项卡，然后找到相应的技术帐户用户并将其删除
 2. 联系客户支持，并请求删除该特定环境的服务凭据
