@@ -2,7 +2,7 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1a98abc3baffe2de63a6030d9d65b7137603bec5
+source-git-commit: e62ddc2a72d12ad356decc0e2a933d8c7d308469
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 98%
@@ -109,7 +109,7 @@ Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikiped
 应用程序中使用的连接将作为 `<meta>` 标记存储在页面的 `<head>` 中。
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:aemconnection:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` – 这是一个短名称，可在文档中重复使用以标识连接。例如 `aemconnection`
