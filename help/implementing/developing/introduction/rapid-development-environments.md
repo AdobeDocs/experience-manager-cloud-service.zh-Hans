@@ -1,13 +1,13 @@
 ---
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
-source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3325'
 ht-degree: 5%
 
 ---
-
 
 # 快速开发环境 {#rapid-development-environments}
 
@@ -451,6 +451,8 @@ RDE与其他环境不同，因为内容可以安装在/apps下的install.rde文�
 
 1. 将示例内容放置并提交到/apps下的install.rde文件夹中，然后使用命令行工具将总内容包同步到RDE。
 
+1. 使用 [内容复制工具](/help/implementing/developing/tools/content-copy.md) 从生产、暂存或开发环境或从其他RDE复制定义的内容集。
+
 1. 使用包管理器
 
 请注意，同步内容包时，限制为1GB。
@@ -499,4 +501,3 @@ Forms开发人员可以使用AEM FormsCloud Service快速开发环境来快速�
 ## RDE教程
 
 要了解AEMas a Cloud Service中的RDE，请参阅 [视频教程，其中演示了如何设置它、如何使用它以及开发生命周期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
-
