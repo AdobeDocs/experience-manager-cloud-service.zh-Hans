@@ -3,10 +3,10 @@ title: 云中的 Dispatcher
 description: 云中的 Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: c61cd92acd416b1c463f5359f66be8199acf08c3
-workflow-type: ht
-source-wordcount: '1009'
-ht-degree: 100%
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+workflow-type: tm+mt
+source-wordcount: '983'
+ht-degree: 72%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="云中的 Dispatcher"
->abstract="本页介绍如何下载和提取 Dispatcher 工具、受支持的 apache 模块，并提供对传统架构和灵活架构的高级概述。"
+>abstract="本页介绍如何下载和提取Dispatcher工具（受支持的Apache模块），并提供旧版和灵活模式的高级概述。"
 
 ## 简介 {#apache-and-dispatcher-configuration-and-testing}
 
-本页介绍 Dispatcher 工具以及如何下载和提取这些工具、受支持的 apache 模块，并提供对传统架构和灵活架构的高级概述。此外，还提供了关于验证以及调试 Dispatcher 配置并将其从 AMS 迁移到 AEM as a Cloud Service 的深度引用。此外，请观看[本视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html)，了解有关在云服务环境中部署 Dispatcher 文件的更多详细信息。
+本页介绍了Dispatcher工具以及如何下载和提取它们以及受支持的Apache模块，并简要概述了旧版和灵活的模式。 此外，还进一步参考了验证和调试以及将Dispatcher配置从AMS迁移到AEMas a Cloud Service。 <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Dispatcher 工具 {#dispatcher-sdk}
 
 Dispatcher 工具是整个 AEM as a Cloud Service SDK 的一部分，并提供了：
 
 * 包含要包括在 Dispatcher 的 maven 项目中的配置文件的普通文件结构。
-* 供客户用来验证 Dispatcher 配置是否仅包含 AEM as a Cloud Service 支持的指令的工具。此外，该工具还可验证语法是否正确，以便 apache 能够成功启动。
+* 客户验证Dispatcher配置是否仅包含AEMas a Cloud Service支持的指令的工具。 此外，工具还会验证语法是否正确，以便Apache可以成功启动。
 * 本地引出 Dispatcher 的 Docker 图像。
 
 ## 下载并提取工具 {#extracting-the-sdk}
 
 可以从[软件分发](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)门户上的 zip 文件中下载 Dispatcher 工具（它是 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 的一部分）。新版本的 Dispatcher 工具中提供的任何新配置都可用于部署到运行该版本的 AEM 或更高版本的云环境。
 
-解压 SDK，它捆绑了适用于 macOS、Linux 和 Windows 的 Dispatcher 工具。
+解压缩SDK，该SDK捆绑了适用于macOS、Linux®和Windows的Dispatcher工具。
 
-**对于 macOS/Linux**，使 Dispatcher 工具构件可执行并运行它。它将在您将 Dispatcher 工具存储到的目录下自行提取 Dispatcher 工具文件（其中，`version` 是 Dispatcher 工具的版本）。
+**对于 macOS/Linux**，使 Dispatcher 工具构件可执行并运行它。它会自行提取存储到的目录下的Dispatcher Tools文件(其中 `version` 是Dispatcher工具的版本)。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -48,17 +48,17 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## 使用 Dispatcher 工具进行验证和调试 {#validation-debug}
 
-Dispatcher 工具用于验证和调试项目的 Dispatcher 配置。了解如何根据您项目的 Dispatcher 配置是在灵活架构还是旧版架构下构建的，在下面引用的页面中使用这些工具的更多信息：
+Dispatcher工具用于验证和调试项目的Dispatcher配置。 根据项目的Dispatcher配置是以灵活模式还是旧版模式构建，进一步了解如何在以下引用的页面中使用这些工具：
 
-* **灵活架构** - 推荐架构，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 及更高版本的默认架构，Cloud Manager 也将此架构用于创建的新环境（在 Cloud Manager 2021.7.0 版本之后）。客户可以通过添加文件夹和文件 `opt-in/USE_SOURCES_DIRECTLY` 来激活此架构。通过使用这个更灵活的架构，rewrites 文件夹下的文件结构不受任何限制，在旧版架构下需要单个 `rewrite.rules` 文件。此外，可添加的规则数量不受任何限制。有关文件夹结构和本地验证的详细信息，请参阅[使用 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug.md)。
+* **灵活架构** - 推荐架构，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 及更高版本的默认架构，Cloud Manager 也将此架构用于创建的新环境（在 Cloud Manager 2021.7.0 版本之后）。客户可以通过添加文件夹和文件 `opt-in/USE_SOURCES_DIRECTLY` 来激活此架构。通过使用这个更灵活的架构，rewrites 文件夹下的文件结构不受任何限制，在旧版架构下需要单个 `rewrite.rules` 文件。此外，可添加的规则数量不受任何限制。有关文件夹结构和本地验证的详细信息，请参阅 [使用Dispatcher工具验证和调试](/help/implementing/dispatcher/validation-debug.md).
 
-* **传统架构** – 有关 Dispatcher 配置旧版架构的文件夹结构和本地验证的详细信息，请参阅[使用 Dispatcher 工具进行验证和调试（旧版）](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **旧版模式**  — 有关Dispatcher配置旧版模式的文件夹结构和本地验证的详细信息，请参阅 [使用Dispatcher工具验证和调试（旧版）](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 有关如何从旧版配置模型迁移到更灵活的模型（从 AEM 原型 28 开始附带）的更多信息，请参阅[此文档](/help/implementing/dispatcher/validation-debug.md#migrating)。
 
 ## 内容处置 {#content-disposition}
 
-对于发布层，提供 blob 的默认设置是作为附件。这可以使用 Dispatcher 中的标准[内容处置标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition)进行覆盖。
+对于发布层，提供 blob 的默认设置是作为附件。使用标准 [内容处置标题](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 中。
 
 下面是配置的显示方式的示例：
 
@@ -71,7 +71,7 @@ Dispatcher 工具用于验证和调试项目的 Dispatcher 配置。了解如何
 
 ## 支持的 Apache 模块 {#supported-directives}
 
-下表显示了支持的 apache 模块：
+下表显示了支持的Apache模块：
 
 | 模块名称 | 引用页面 |
 |---|---|
@@ -119,7 +119,7 @@ Allowlisted directives:
 
 ## 文件夹结构 {#folder-structure}
 
-项目的 apache 和 Dispatcher 文件夹结构将因项目使用的架构而略为不同，如前面的[使用 Dispatcher 工具进行验证和调试](#validation-debug)部分中所述。
+项目的Apache和Dispatcher文件夹结构因项目使用的模式而略有不同，如 [使用Dispatcher工具进行验证和调试](#validation-debug) 部分。
 
 ## 从 AMS 迁移 Dispatcher 配置 {#ams-aem}
 
