@@ -2,9 +2,9 @@
 title: 更新内容片段以进行优化的 GraphQL 筛选
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中更新内容片段以进行优化的 GraphQL 筛选，从而进行 Headless 内容投放。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
-workflow-type: ht
-source-wordcount: '925'
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
+workflow-type: tm+mt
+source-wordcount: '913'
 ht-degree: 100%
 
 ---
@@ -50,18 +50,9 @@ ht-degree: 100%
       <th>类型</th>
       <th>注释</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>`AEM_RELEASE_CHANNEL` </td>
-      <td>`prerelease` </td>
-      <td> </td>
-      <td>所有 </td>
-      <td> </td>
-      <td>变量 </td>
-      <td>需要此变量来启用功能。 </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -71,7 +62,7 @@ ht-degree: 100%
       <td>Enables(!=0) 或 disables(0) 触发内容片段迁移作业。 </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -81,7 +72,7 @@ ht-degree: 100%
       <td>Enforce (!=0) 重新迁移内容片段。<br>将此标志设置为 0 会执行 CF 的增量迁移。这意味着，如果作业因任意原因终止，则作业的下一次运行将从它终止的位置开始迁移。请注意，建议强制执行第一次迁移 (value=1)。 </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -91,7 +82,7 @@ ht-degree: 100%
       <td>用于在迁移后保存内容片段数量的批次大小。<br>这与将在一个批次中保存到存储库的 CF 数量有关，并且可以用于优化对存储库的写入次数。 </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
@@ -101,7 +92,7 @@ ht-degree: 100%
       <td>一次处理的内容片段的最大数目。<br>另请参阅 `CF_MIGRATION_INTERVAL` 的注释。 </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
@@ -125,7 +116,8 @@ ht-degree: 100%
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60（秒）
    >* 完成迁移大约所需的时间 = 60 + (20,000/1000 * 60) = 1260 秒 = 21 分钟
-   >  在开始时增加的额外“60”秒是因开始作业时的初始延迟导致的。
+      >  在开始时增加的额外“60”秒是因开始作业时的初始延迟导致的。
+
    >
    >您还应了解一点，这只是完成作业所需的&#x200B;*最少*&#x200B;时间，并且不包括 I/O 时间。实际花费的时间可能远远超过此估计值。
 
@@ -154,7 +146,6 @@ ht-degree: 100%
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
-
    使用 Splunk 启用对环境日志的访问的客户可以使用下面的示例查询来监控升级过程。有关启用 Splunk 记录的详细信息，请参阅[调试生产和阶段](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage)页面。
 
    ```splunk
