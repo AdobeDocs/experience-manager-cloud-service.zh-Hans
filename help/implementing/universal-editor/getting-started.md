@@ -2,10 +2,10 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
+source-git-commit: 1a98abc3baffe2de63a6030d9d65b7137603bec5
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 100%
+source-wordcount: '810'
+ht-degree: 98%
 
 ---
 
@@ -116,7 +116,7 @@ Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikiped
 * `<protocol>` – 这表明要使用的 Universal Editor 持久性服务的持久性插件。例如 `aem`
 * `<url>` – 这是保存更改的系统的 URL。例如 `http://localhost:4502`
 
-短标识符 `auecon` 表示 Adobe Universal Editor 连接。
+标识符 `adobe:aem:editor:aemconnection` 表示Adobe通用编辑器的连接。
 
 `itemid` 将使用 `urn` 前缀来缩短标识符。
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:auecon:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
