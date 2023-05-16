@@ -5,16 +5,21 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2493'
 ht-degree: 8%
 
 ---
 
 # 使用 [!DNL Adobe Stock] 资产 [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
-[!DNL Adobe Stock] 服务为设计师和企业提供了数百万种可用于所有创意项目的高品质、精选、免版税的照片、矢量、插图、视频、模板和 3D 资产。
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
+
+[!DNL Adobe Stock] 该服务为设计人员和企业提供了数百万个高品质、精选且免版税的照片、矢量、插图、视频、模板和3D资产，供其所有创意项目使用。
 
 [!DNL Adobe Stock] 对于企业产品，默认情况下包括在组织之间共享权限。 资产获得组织用户的许可后，组织的其他用户便可以识别、下载和使用此资产，而无需再次对其进行许可。 资产获得您的组织的许可后，即表示资产的使用权利是永久的。
 
@@ -260,7 +265,7 @@ IMS 配置包括两个步骤：
    * 特权: `jcr:read`
    * 权限类型: `Allow`
 
-   单击&#x200B;**[!UICONTROL 添加]**。
+   单击 **[!UICONTROL 添加]**.
 
    ![用户权限](assets/aem-stock-user-permissions.png)
 
@@ -451,6 +456,21 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 * **Reference fields and metadata are not synced**: When a user updates a license reference field, the license reference information is updated in [!DNL Experience Manager] but not on the [!DNL Adobe Stock] website. Similarly, if the user updates the reference fields on the [!DNL Adobe Stock] website, the updates are not synchronized in [!DNL Experience Manager].
 -->
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

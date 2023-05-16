@@ -5,15 +5,20 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 9abafe051672de65f042332314445b239f95852b
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2423'
-ht-degree: 5%
+source-wordcount: '2445'
+ht-degree: 6%
 
 ---
 
 
 # 向资产中添加智能标记并改进搜索体验 {#smart-tag-assets-for-faster-search}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 基本上，它包含一个关键词列表，员工、合作伙伴和客户通常使用该列表来引用和搜索其数字资产。 使用分类控制的词汇标记资产可确保在搜索中轻松识别和检索资产。
 
@@ -255,12 +260,12 @@ ht-degree: 5%
 
 **另请参阅**
 
-* [翻译资产](translate-assets.md)
+* [翻译资源](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [资产支持的文件格式](file-format-support.md)
+* [资源支持的文件格式](file-format-support.md)
 * [搜索资源](search-assets.md)
-* [连接的资产](use-assets-across-connected-assets-instances.md)
-* [资源报表](asset-reports.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
 * [元数据架构](metadata-schemas.md)
 * [下载资源](download-assets-from-aem.md)
 * [管理元数据](manage-metadata.md)

@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 0%
+source-wordcount: '481'
+ht-degree: 8%
 
 ---
 
 # 中的签入和签出文件 [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets] 允许您签出要编辑的资产，并在完成更改后重新签入它们。 签出资产后，只有您才能编辑、注释、发布、移动或删除资产。 签出资产会锁定资产。 在您将资产签回到 [!DNL Assets]. 但是，他们仍可以更改锁定资产的元数据。
 
@@ -55,6 +60,21 @@ ht-degree: 0%
 ## 最佳实践和限制 {#tips-limitations}
 
 * 可以删除 *文件夹* 包含已签出的资产文件。 在删除文件夹之前，请确保用户未签出任何数字资产。
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

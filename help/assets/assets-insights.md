@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 8%
+source-wordcount: '905'
+ht-degree: 11%
 
 ---
 
 # 资产分析 {#asset-insights}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 通过Adobe分析功能，您可以跟踪用户评级以及在第三方网站、营销活动和资产创意解决方案中使用的图像的使用情况统计信息。 它有助于深入了解图像的性能和受欢迎程度。
 
@@ -109,7 +114,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *图：在中为资产分析配置Adobe Analytics[!DNL Experience Manager]*
 
-1. 成功身份验证后，您将获得下拉列表中列出的报表包。 选择Adobe Analytics **[!UICONTROL 报表包]** 从中获取资产分析数据。 单击&#x200B;**[!UICONTROL 添加]**。
+1. 成功身份验证后，您将获得下拉列表中列出的报表包。 选择Adobe Analytics **[!UICONTROL 报表包]** 从中获取资产分析数据。 单击 **[!UICONTROL 添加]**.
 
 1. 之后 [!DNL Experience Manager] 设置报表包时，单击 **[!UICONTROL 完成]**.
 
@@ -175,3 +180,18 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
    >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

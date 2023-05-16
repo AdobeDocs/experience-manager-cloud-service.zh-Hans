@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service Assets HTTP API中的内容�
 description: 了解资产HTTP API中对内容片段的支持，HTTP API是AEM的一项重要无头交付功能。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 2%
+source-wordcount: '1783'
+ht-degree: 18%
 
 ---
 
@@ -14,20 +14,25 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
+
 了解资产HTTP API中对内容片段的支持，HTTP API是AEM的一项重要无头交付功能。
 
 >[!NOTE]
 >
 >的 [资产HTTP API](/help/assets/mac-api-assets.md) 包括：
 >
->* 资产REST API
+>* Assets REST API
 >* 包括对内容片段的支持
 >
 >资产HTTP API的当前实施基于 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 建筑风格。
 
 的 [资产REST API](/help/assets/mac-api-assets.md) 允许开发人员通过CRUD操作（创建、读取、更新、删除），直接通过HTTP API访问内容(存储在AEM中)。
 
-该API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager as a Cloud Service作为无头CMS（内容管理系统）进行操作。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
+该API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager as a Cloud Service作为无头CMS（内容管理系统）进行操作。 或者，任何其他可以执行 HTTP 请求并处理 JSON 响应的应用程序。
 
 例如， [单页应用程序(SPA)](/help/implementing/developing/hybrid/introduction.md)、基于框架或自定义的HTTP API中提供的内容，通常采用JSON格式。
 
@@ -49,7 +54,7 @@ While [AEM核心组件](https://experienceleague.adobe.com/docs/experience-manag
 
 ## 前提条件 {#prerequisites}
 
-在最新Adobe Experience Manager as a Cloud Service版本的每次现成安装中，都提供Assets REST API。
+Assets REST API 在最新版本的 Adobe Experience Manager as a Cloud Service 的每个现成安装中提供。
 
 ## 重要概念 {#key-concepts}
 
@@ -57,30 +62,30 @@ While [AEM核心组件](https://experienceleague.adobe.com/docs/experience-manag
 
 它使用 `/api/assets` 端点，并且需要资产的路径才能访问该资产(不具有前导 `/content/dam`)。
 
-* 这意味着要在以下位置访问资产：
+* 这意味着，要访问以下位置的资产：
    * `/content/dam/path/to/asset`
 * 您需要请求：
    * `/api/assets/path/to/asset`
 
-例如，要访问 `/content/dam/wknd/en/adventures/cycling-tuscany`，请求 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+例如，要访问 `/content/dam/wknd/en/adventures/cycling-tuscany`，需要请求 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >访问：
 >
->* `/api/assets` **不** 需要使用 `.model` 选择器。
->* `/content/path/to/page` **does** 要求使用 `.model` 选择器。
+>* `/api/assets`**不**&#x200B;需要使用 `.model` 选择器。
+>* `/content/path/to/page`**需要**&#x200B;使用 `.model` 选择器。
 
 
-HTTP方法确定要执行的操作：
+HTTP 方法决定了要执行的操作：
 
-* **GET**  — 检索资产或文件夹的JSON表示形式
-* **POST**  — 创建新资产或文件夹
-* **PUT**  — 更新资产或文件夹的属性
-* **DELETE**  — 删除资产或文件夹
+* **GET** – 检索资产或文件夹的 JSON 表示形式
+* **POST** – 创建新资产或文件夹
+* **PUT** – 更新资产或文件夹的属性
+* **DELETE** – 删除资产或文件夹
 
 >[!NOTE]
 >
->请求正文和/或URL参数可用于配置其中的一些操作；例如，定义文件夹或资产应由 **POST** 请求。
+>请求正文和/或 URL 参数可用于配置其中一些操作；例如，定义文件夹或资产应由 **POST** 请求创建。
 
 支持的请求的确切格式在 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) 文档。
 
@@ -96,7 +101,7 @@ HTTP方法确定要执行的操作：
  <thead>
   <tr>
    <td>方面</td>
-   <td>资产REST API<br/> </td>
+   <td>Assets REST API<br/> </td>
    <td>AEM组件<br/> （使用Sling模型的组件）</td>
   </tr>
  </thead>
@@ -145,8 +150,8 @@ HTTP方法确定要执行的操作：
 >
 >有关更多信息，请参阅：
 >
->* [CORS/AEM说明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [视频 — 使用AEM开发CORS](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [已说明 CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+>* [视频 – 使用 AEM 针对 CORS 进行开发](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 >
 
 
@@ -239,22 +244,22 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 
 ## 使用 {#using}
 
-用法可能因您使用的是AEM创作环境还是发布环境以及特定用例而异。
+根据您使用的是 AEM 创作环境还是发布环境以及您的具体用例，使用情况可能会有所不同。
 
 * 强烈建议将创建绑定到创作实例([目前，没有方法使用此API复制要发布的片段](/help/assets/content-fragments/assets-api-content-fragments.md#limitations))。
-* 可以同时从两者进行交付，因为AEM仅以JSON格式提供请求的内容。
+* 可以通过这两种方式交付，因为 AEM 仅以 JSON 格式提供请求的内容。
 
-   * 从AEM创作实例进行存储和交付应足以在防火墙后部署媒体库应用程序。
+   * 来自 AEM 创作实例的存储和交付应足以满足防火墙背后的媒体库应用程序的需求。
 
-   * 对于实时Web交付，建议使用AEM发布实例。
+   * 对于实时 Web 交付，建议使用 AEM 发布实例。
 
 >[!CAUTION]
 >
->AEM云实例上的调度程序配置可能会阻止访问 `/api`.
+>AEM 云实例上的 Dispatcher 配置可能会阻止对 `/api` 的访问。
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特别是， [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>有关更多详细信息，请参阅 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 具体而言，[Adobe Experience Manager Assets API – 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
 ## 限制 {#limitations}
 
@@ -333,13 +338,13 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
    }
    ```
 
-## API参考 {#api-reference}
+## API 引用 {#api-reference}
 
 有关详细的API参考，请参阅此处：
 
-* [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API – 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
-* [资源 HTTP API](/help/assets/mac-api-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [可用功能](/help/assets/mac-api-assets.md#available-features)
 

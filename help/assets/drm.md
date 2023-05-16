@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 2%
+source-wordcount: '1367'
+ht-degree: 5%
 
 ---
 
 # Digital Rights Management数字资产 {#digital-rights-management-in-assets}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 数字资产通常与指定使用条款和持续时间的许可证相关联。 使用 [!DNL Experience Manager] 平台中，您可以高效地管理资产到期信息和许可信息。
 
@@ -149,3 +154,18 @@ DRM功能强制您在从下载授权资产之前接受许可协议 [!DNL Assets]
    >的 **[!UICONTROL 下载]** 仅当您选择同意受保护资产的许可协议时，才会启用选项。 但是，如果您的选择包含受保护和不受保护的资产，则只有受保护的资产会列在窗格中，并且 **[!UICONTROL 下载]** 选项，可下载不受保护的资产。 要同时接受多个受保护资产的许可协议，请从列表中选择资产，然后选择“同 **[!UICONTROL 意”]**。
 
 1. 要下载资产或其演绎版，请选择 **[!UICONTROL 下载]** 中。
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

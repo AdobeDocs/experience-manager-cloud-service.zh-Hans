@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 3%
+source-wordcount: '931'
+ht-degree: 5%
 
 ---
 
 # 组织您的数字资产 {#organize-digital-assets}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 Microsoft® Office和PDF文档的所有数字资产、元数据和内容都将被提取并进行搜索。 搜索允许对资产进行复杂的筛选，并完全尊重正确的权限。 数字资产管理的元数据中详细介绍了元数据。
 
@@ -112,12 +117,12 @@ Date24/08/2021
 
 **另请参阅**
 
-* [翻译资产](translate-assets.md)
+* [翻译资源](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [资产支持的文件格式](file-format-support.md)
+* [资源支持的文件格式](file-format-support.md)
 * [搜索资源](search-assets.md)
-* [连接的资产](use-assets-across-connected-assets-instances.md)
-* [资源报表](asset-reports.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
 * [元数据架构](metadata-schemas.md)
 * [下载资源](download-assets-from-aem.md)
 * [管理元数据](manage-metadata.md)

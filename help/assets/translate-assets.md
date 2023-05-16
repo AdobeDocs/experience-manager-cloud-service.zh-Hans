@@ -1,26 +1,31 @@
 ---
-title: 创建和管理多种语言的数字资产
-description: 了解如何自动将资产（包括二进制文件、元数据和标记）转换为多种语言的工作流。
+title: 如何在AEM中翻译资产？
+description: 了解如何自动执行工作流，将AEM中的资产（包括二进制文件、元数据和标记）翻译为多种语言。
 contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 22%
+source-wordcount: '2642'
+ht-degree: 23%
 
 ---
 
-# 多语言资产 {#multilingual-assets}
+# 在AEM中翻译资产 {#multilingual-assets}
 
-多语言资产是指包含多种语言的二进制文件、元数据和标记的资产。 通常，资产的二进制文件、元数据和标记以一种语言存在，然后将这些语言翻译成其他语言，以用于多语言项目。 Adobe Experience Manager Assets允许您自动执行资产（包括二进制文件、元数据和标记）的翻译工作流，以生成其他语言的资产，以供在多语言项目中使用。
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
-要自动执行翻译工作流，您需要将翻译服务提供商与Experience Manager集成，并创建项目以将资产翻译成多种语言。 Experience Manager支持人工和机器翻译工作流。
+多语言资产是指包含多种语言的二进制文件、元数据和标记的资产。 通常，资产的二进制文件、元数据和标记以一种语言存在，然后将这些语言翻译成其他语言，以用于多语言项目。 Adobe Experience Manager Assets允许您自动执行工作流，以翻译资产（包括二进制文件、元数据和标记），从而生成其他语言的资产，以供在多语言项目中使用。
 
-人文翻译：翻译后的资产会被退回并导入Experience Manager。 将您的翻译提供商与Experience Manager集成后，Experience Manager与翻译提供商之间将自动发送资产。
+要自动翻译AEM资产，您需要将翻译服务提供商与Experience Manager集成，并创建项目以将资产翻译成多种语言。 Experience Manager支持人工和机器翻译工作流。
 
-机器翻译：机器翻译服务会立即翻译资产的元数据和标记。
+AEM中的人力资产翻译：翻译后的资产会被退回并导入Experience Manager。 将您的翻译提供商与Experience Manager集成后，Experience Manager与翻译提供商之间将自动发送资产。
+
+AEM中的机器资产转换：机器翻译服务会立即翻译资产的元数据和标记。
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -48,7 +53,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## 准备资产以进行翻译 {#prepare-assets-for-translation}
+## 准备翻译资产 {#prepare-to-translate-assets}
 
 多语言资产是指包含多种语言的二进制文件、元数据和标记的资产。 通常，资产的二进制文件、元数据和标记以一种语言存在，然后将这些语言翻译成其他语言，以用于多语言项目。
 
@@ -70,7 +75,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
         |- zh
 ```
 
-请执行以下步骤以准备资产以进行翻译：
+执行以下步骤以准备转换资产：
 
 1. 创建语言主目录的语言根目录。 例如，示例文件夹层次结构中英语副本的语言根目录为 `/content/dam/en`. 确保根据 [创建语言根](#create-a-language-root).
 
@@ -276,3 +281,17 @@ Adobe Experience Manager允许您使用所选翻译提供商提供的基于云�
 1. 在应用自定义连接器后，运行创建翻译项目中描述的任何翻译工作流。 在&#x200B;**[!UICONTROL 项目]**&#x200B;控制台中验证翻译项目的&#x200B;**[!UICONTROL 翻译摘要]**&#x200B;拼贴中连接器的详细信息。
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
+
+**另请参阅**
+
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

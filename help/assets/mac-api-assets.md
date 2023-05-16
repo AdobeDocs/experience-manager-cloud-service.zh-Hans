@@ -1,18 +1,23 @@
 ---
-title: 资源 HTTP API
+title: Assets HTTP API
 description: 在 [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 1%
+source-wordcount: '1564'
+ht-degree: 3%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
 
@@ -271,6 +276,20 @@ API调用失败，错误为 `500` 响应代码。 调用会返回响应代码 `4
 * 资产HTTP API不会返回完整的元数据。 命名空间采用硬编码，只返回那些命名空间。 有关完整的元数据，请参阅资产路径 `/jcr_content/metadata.json`.
 
 * 使用API更新时，文件夹或资产的某些属性会映射到其他前缀。 的 `jcr` 前缀 `jcr:title`, `jcr:description`和 `jcr:language` 替换为 `dc` 前缀。 因此，在返回的JSON中， `dc:title` 和 `dc:description` 包含的值为 `jcr:title` 和 `jcr:description`，分别为。
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

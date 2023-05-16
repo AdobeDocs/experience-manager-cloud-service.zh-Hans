@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '4886'
-ht-degree: 5%
+source-wordcount: '4938'
+ht-degree: 6%
 
 ---
 
 # 管理视频资源 {#manage-video-assets}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 视频格式是组织中数字资产的关键部分。 [!DNL Adobe Experience Manager] 提供了成熟的产品和功能，用于在视频资产创建后管理其整个生命周期。
 
@@ -590,6 +595,20 @@ For YouTube publishing jobs, do the following:
       * 8 GB，用于720p转码。
    * 最大文件大小可转码为4k分辨率，为2.55 GB MP4文件，分辨率为4k、12 Mbps比特率和23 fps。
 
+   **另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [Dynamic Media视频文档](/help/assets/dynamic-media/video.md).

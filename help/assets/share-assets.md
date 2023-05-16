@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 2%
+source-wordcount: '1344'
+ht-degree: 5%
 
 ---
 
 # 共享和分发在 [!DNL Experience Manager] {#share-assets-from-aem}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets] 允许您与组织成员以及外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法从共享资产 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
@@ -67,7 +72,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
    * 在 **[!UICONTROL 过期]** 字段中，使用日期选取器指定链接的过期日期和时间。
    * 启用 **[!UICONTROL 允许下载原始文件]** 复选框以允许收件人下载原始演绎版。
 
-1. 单击&#x200B;**[!UICONTROL 共享]**。系统会显示一条消息，确认已与用户共享该链接。 用户会收到一封包含共享链接的电子邮件。
+1. 单击 **[!UICONTROL 共享]**. 系统会显示一条消息，确认已与用户共享该链接。 用户会收到一封包含共享链接的电子邮件。
 
 ![链接共享电子邮件](assets/link-sharing-email-notification.png)
 
@@ -256,3 +261,18 @@ Adobe资产链接可简化内容创建过程中创意人员与营销人员之间
 
 <!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

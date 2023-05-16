@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 8%
+source-wordcount: '2530'
+ht-degree: 9%
 
 ---
 
 # 使用 Brand Portal 配置 Experience Manager Assets {#configure-aem-assets-with-brand-portal}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=zh-Hans) |
+| AEM as a Cloud Service | 本文 |
 
 通过配置Adobe Experience Manager Assets Brand Portal，您可以从Adobe Experience Manager Assets作为 [!DNL Cloud Service] 实例发布到Brand Portal，并分发给Brand Portal用户。
 
@@ -527,12 +532,12 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 
 **另请参阅**
 
-* [翻译资产](translate-assets.md)
+* [翻译资源](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [资产支持的文件格式](file-format-support.md)
+* [资源支持的文件格式](file-format-support.md)
 * [搜索资源](search-assets.md)
-* [连接的资产](use-assets-across-connected-assets-instances.md)
-* [资源报表](asset-reports.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
 * [元数据架构](metadata-schemas.md)
 * [下载资源](download-assets-from-aem.md)
 * [管理元数据](manage-metadata.md)

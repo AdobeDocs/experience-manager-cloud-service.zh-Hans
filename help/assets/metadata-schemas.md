@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2592'
-ht-degree: 17%
+source-wordcount: '2642'
+ht-degree: 9%
 
 ---
 
 # 元数据架构 {#metadata-schemas}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 组织会提出一种元数据模型，该模型可增强资产发现、使用情况、互操作性等。 正确的元数据应用程序对于维护元数据驱动的工作流和流程来说是神圣不可侵犯的。 为了遵循组织范围的元数据策略和标准，您可以使用元数据架构来帮助DAM用户进行协调。 [!DNL Adobe Experience Manager] 允许使用简单灵活的方法创建、维护和应用元数据架构。
 
@@ -67,7 +72,7 @@ ht-degree: 17%
 
 ## 编辑元数据架构表单 {#edit-metadata-schema-forms}
 
-您可以编辑新添加的或现有的元数据架构表单。 元数据架构表单包括选项卡和选项卡中的表单项目。 您可以将这些表单项目映射/配置到CRX存储库元数据节点中的字段。 您可以向元数据架构表单中添加选项卡或表单项目。 从父级派生的选项卡和表单项目处于锁定状态。 无法从子级别更改它们。
+您可以编辑新添加的或现有的元数据架构表单。 元数据架构表单包括选项卡和选项卡中的表单项目。 您可以将这些表单项目映射/配置到CRX存储库元数据节点中的字段。 您可以向元数据架构表单中添加选项卡或表单项目。 从父级派生的选项卡和表单项目处于锁定状态。 不能在子级别更改它们。
 
 1. 在 [!UICONTROL 元数据架构Forms] 页面，选择表单并单击 **[!UICONTROL 编辑]** 中。
 
@@ -85,18 +90,18 @@ ht-degree: 17%
 
 | 组件名称 | 描述 |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL 章节标题] | 添加一系列常用组件的章节标题。 |
-| [!UICONTROL 单行文本] | 添加单行文本属性。它将作为字符串存储。 |
-| [!UICONTROL 多值文本] | 添加多值文本属性。它将作为字符串数组存储。 |
+| [!UICONTROL 章节标题] | 为常用组件列表添加区域标题。 |
+| [!UICONTROL 单行文本] | 添加单行文本属性。 它将存储为字符串。 |
+| [!UICONTROL 多值文本] | 添加多值文本属性。 它将存储为字符串数组。 |
 | [!UICONTROL 数字] | 添加数字组件。 |
 | [!UICONTROL 日期] | 添加日期组件。 |
 | [!UICONTROL 下拉列表] | 添加下拉列表。 |
-| [!UICONTROL 标准标记] | 添加标记。 |
+| [!UICONTROL 标准标记] | 添加标记. |
 | [!UICONTROL 智能标记] | 通过自动添加元数据标记来添加以增强搜索功能。 |
-| [!UICONTROL 隐藏字段] | 添加隐藏字段。在保存资产时，该字段将作为 POST 参数发送。 |
-| [!UICONTROL 资产引用对象] | 添加此组件可查看该资产所引用的其他资产的列表。 |
-| [!UICONTROL 资产引用] | 添加此组件可显示引用该资产的其他资产的列表。 |
-| [!UICONTROL 产品引用] | 添加此组件可显示与该资产关联的产品的列表。 |
+| [!UICONTROL 隐藏字段] | 添加隐藏字段。 在保存资产时，它将作为POST参数发送。 |
+| [!UICONTROL 资产引用对象] | 添加此组件可查看资产引用的资产列表。 |
+| [!UICONTROL 资产引用] | 添加，以显示引用该资产的资产列表。 |
+| [!UICONTROL 产品参考] | 添加以显示与资产链接的产品列表。 |
 | [!UICONTROL 上下文元数据] | 添加可控制资产属性页面中其他元数据选项卡的显示。 |
 
 <!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
@@ -122,16 +127,16 @@ ht-degree: 17%
 * **占位符**:使用此属性可指定与元数据属性相关的占位符文本。
 * **必需**:使用此属性可在属性页面上将元数据属性标记为必需属性。
 * **禁用编辑**:使用此属性可禁止对属性页面上的属性进行任何编辑。
-* **以只读方式显示空字段**:标记此属性可在属性页面上显示元数据属性，即使此属性没有值也是如此。默认情况下，当元数据属性没有值时，该属性不会列在属性页面上。
+* **以只读方式显示空字段**:标记此属性可在属性页面上显示元数据属性，即使此属性没有值也是如此。 默认情况下，当元数据属性没有值时，该属性不会列在属性页面上。
 * **按顺序显示列表**:使用此属性可显示有序的选项列表。
 * **选择**:使用此属性可在列表中指定选项。
-* **描述**：使用此属性可添加对元数据组件的简短描述。
+* **描述** :使用此属性可为元数据组件添加简短描述。
 * **类**:属性与关联的对象类。
 * **删除**:单击 [!UICONTROL 删除] 从架构表单中删除组件。
 
 >[!NOTE]
 >
->的 [!UICONTROL 隐藏字段] 组件不包含这些属性。 相反，它包含属性，如属性名称、值、字段标签和描述。 无论何时保存资产，都会将“隐藏字段”组件的值作为 POST 参数进行发送。该组件的值不会作为资产的元数据进行保存。
+>的 [!UICONTROL 隐藏字段] 组件不包含这些属性。 相反，它包含属性，如属性名称、值、字段标签和描述。 每当保存资产时，隐藏字段组件的值都会作为POST参数发送。 它不会另存为资产的元数据。
 
 如果选择&#x200B;**[!UICONTROL 必需]**&#x200B;选项，则可以搜索缺少必需元数据的资产。从&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中，展开&#x200B;**[!UICONTROL 元数据验证]**&#x200B;谓词，然后选择&#x200B;**[!UICONTROL 无效]**&#x200B;选项。搜索结果中显示的资产缺少您通过架构表单配置的必需元数据。
 
@@ -149,13 +154,13 @@ ht-degree: 17%
 
 ![元数据架构表单中的默认选项卡](assets/metadata-schema-form-tabs.png)
 
-单击 `+` 在架构表单上添加选项卡。 默认情况下，新选项卡的名称为 `Unnamed-1`. 您可以从&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中修改该名称。单击 `X` 删除选项卡。
+单击 `+` 在架构表单上添加选项卡。 默认情况下，新选项卡的名称为 `Unnamed-1`. 您可以从 **[!UICONTROL 设置]** 选项卡。 单击 `X` 删除选项卡。
 
 ![使用元数据架构编辑器添加或删除选项卡](assets/metadata-schema-form-new-tab.png)
 
 ## 删除元数据架构表单 {#deleting-metadata-schema-forms}
 
-Experience Manager仅允许您删除自定义架构表单。 您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
+Experience Manager仅允许您删除自定义架构表单。 它不允许您删除默认架构表单/模板。 但是，您可以删除这些表单中的任何自定义更改。
 
 要删除表单，请选择一个表单，然后单击删除图标。
 
@@ -179,11 +184,11 @@ Experience Manager仅允许您删除自定义架构表单。 您无法删除默�
 
 #### 对各种MIME类型使用现有架构模板 {#use-an-existing-schema-template-for-various-mime-types}
 
-您可以为不同的 MIME 类型使用现有模板。例如，使用 `image/jpeg` MIME类型资产的表单 `image/png`.
+您可以将现有模板用于其他MIME类型。 例如，使用 `image/jpeg` MIME类型资产的表单 `image/png`.
 
 在这种情况下，请在 `/etc/dam/metadataeditor/mimetypemappings` 在CRX存储库中。 指定节点的名称并定义以下属性：
 
-| 名称 | 描述 | 类型 | 值 |
+| 名称 | 描述 | 类型 | 价值 |
 |------|-------------|------|-------|
 | `exposedmimetype` | 要映射的现有表单的名称 | `String` | `image/jpeg` |
 | `mimetypes` | 使用 `exposedmimetype` 属性 | `String` | `image/png` |
@@ -200,13 +205,13 @@ Experience Manager仅允许您删除自定义架构表单。 您无法删除默�
 | application/x-MixedMediaSet | Multipart/Related; type=application/x-MixedMediaSet |
 | video/quicktime | video/x-quicktime |
 | video/mpeg4 | video/mp4 |
-| video/avi | video/avi、video/msvideo、video/x-msvideo |
+| video/avi | video/avi， video/msvideo， video/x-msvideo |
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
 ## 授予对元数据架构的访问权限 {#grant-access-to-metadata-schemas}
 
-元数据架构功能仅适用于管理员。但是，管理员可以通过修改某些权限来向非管理员用户提供访问权限。 为非管理员用户提供在 `/conf` 文件夹。
+元数据架构功能仅供管理员使用。 但是，管理员可以通过修改某些权限来向非管理员用户提供访问权限。 为非管理员用户提供在 `/conf` 文件夹。
 
 ## 应用特定于文件夹的元数据 {#applying-folder-specific-metadata}
 
@@ -254,3 +259,17 @@ Experience Manager仅允许您删除自定义架构表单。 您无法删除默�
    >[!CAUTION]
    >
    >元数据验证检查占用大量资源，可能会影响系统性能。 相应地计划检查。 如果服务器无法处理负载，请尝试禁用此作业
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

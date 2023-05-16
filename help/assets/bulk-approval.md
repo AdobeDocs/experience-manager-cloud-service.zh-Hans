@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 23%
+source-wordcount: '845'
+ht-degree: 25%
 
 ---
 
 # 查看文件夹和收藏集中的资产 {#review-folder-assets-and-collections}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 使用Adobe Experience Manager Assets，您可以为文件夹或收藏集中的资产设置临时审核工作流。 您可以与审阅人或创意合作伙伴共享该组件，以征求他们的反馈。 您可以将审核工作流与项目关联或创建独立的审核任务。
 
@@ -111,12 +116,12 @@ ht-degree: 23%
 
 **另请参阅**
 
-* [翻译资产](translate-assets.md)
+* [翻译资源](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [资产支持的文件格式](file-format-support.md)
+* [资源支持的文件格式](file-format-support.md)
 * [搜索资源](search-assets.md)
-* [连接的资产](use-assets-across-connected-assets-instances.md)
-* [资源报表](asset-reports.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
 * [元数据架构](metadata-schemas.md)
 * [下载资源](download-assets-from-aem.md)
 * [管理元数据](manage-metadata.md)

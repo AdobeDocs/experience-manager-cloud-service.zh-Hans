@@ -6,14 +6,19 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 15%
+source-wordcount: '3495'
+ht-degree: 16%
 
 ---
 
 # Adobe Experience Manager和Creative Cloud集成最佳实践 {#aem-and-creative-cloud-integration-best-practices}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=zh-Hans) |
+| AEM as a Cloud Service | 本文 |
 
 Adobe Experience Manager Assets是一款数字资产管理(DAM)解决方案，它可以与Adobe Creative Cloud集成，以帮助DAM用户与创意团队合作，从而简化内容创建过程中的协作。
 
@@ -231,12 +236,12 @@ Experience Manager桌面应用程序为本机应用程序中打开的资产提�
 
 **另请参阅**
 
-* [翻译资产](translate-assets.md)
+* [翻译资源](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [资产支持的文件格式](file-format-support.md)
+* [资源支持的文件格式](file-format-support.md)
 * [搜索资源](search-assets.md)
-* [连接的资产](use-assets-across-connected-assets-instances.md)
-* [资源报表](asset-reports.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
 * [元数据架构](metadata-schemas.md)
 * [下载资源](download-assets-from-aem.md)
 * [管理元数据](manage-metadata.md)

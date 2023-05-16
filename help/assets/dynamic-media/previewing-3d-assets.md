@@ -5,14 +5,19 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 10%
+source-wordcount: '587'
+ht-degree: 8%
 
 ---
 
 # 在Adobe Experience Manager中预览3D资产{#previewing-3d-assets}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 Experience Manager支持在创作过程中上传、交付和交互式预览3D资产。
 
@@ -48,7 +53,7 @@ Experience Manager中的交互式3D预览支持以下文件格式：
 
 在资产详细信息视图页面中打开3D资产所花费的时间取决于多个因素，例如带宽、图像复杂性和服务器延迟。
 
-此外，在以交互方式操作相机时，客户端计算机的功能（如工作站、笔记本或移动触控设备）也很重要。 具备良好图形功能的相当强大的系统可以使交互式 3D 查看体验更流畅、更舒适。
+此外，在以交互方式操作相机时，客户端计算机的功能（如工作站、笔记本或移动触控设备）也很重要。 具有良好图形功能的相当强大的系统可以使交互式3D查看体验更顺畅、更有利。
 
 **要在Experience Manager中预览3D资产，请执行以下操作：**
 
@@ -74,7 +79,7 @@ Experience Manager中的交互式3D预览支持以下文件格式：
    | **转动相机** | 围绕 3D 场景和对象旋转视图。 | 左键单击并拖动。 | 单指按住并拖动。 |
    | **平移相机** | 向左、向右、向上或向下平移视图。 | 右键单击并拖动。 | 双指按并拖动。 |
    | **缩放相机** | 进出3D场景的区域。 | 滚轮。 | 双指捏。 |
-   | **重新输入相机** | 将相机重新调到3D场景中对象上的某个点。 | 双击. | 双击。 |
+   | **重新输入相机** | 将相机重新调到3D场景中对象上的某个点。 | 双击。 | 双击。 |
    | **重置** | 在页面的右下角附近，选择重置图标以将视图目标点恢复到3D资产的中心。 重置还会使相机更近或更远地移开，以便以合理的查看大小完整地显示资产。 |  |  |
    | **全屏模式** | 要进入全屏模式，请在页面的右下角选择全屏图标。 |  |  |
 

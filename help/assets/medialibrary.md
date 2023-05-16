@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '594'
+ht-degree: 9%
 
 ---
 
@@ -22,6 +22,11 @@ Define what is not included
 -->
 
 # 将Media Library用于基本资产管理 {#manage-assets-using-media-library}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=zh-Hans) |
+| AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager] platform提供了不同的资产管理功能。 Media Library允许用户将少量资产上传到存储库、搜索和使用网页中的资产，并完成资产上的简单资产管理任务。
 
@@ -59,7 +64,7 @@ Media Library广泛涵盖以下用例：
 要使用Media Library功能，您可以使用默认 [!DNL Experience Manager] 用户界面。 Media Library是 [!DNL Experience Manager Sites] 无需安装单独的界面或附加组件。 使用现有界面，Media Library用户有权完成以下任务：
 
 * 创建文件夹以组织资产。
-* 上传资产.
+* 上传资源.
 * 发布资产。
 * 编辑、移动和复制资产。
 * 浏览、过滤和搜索（包括相似性搜索）资产。
@@ -92,6 +97,21 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 请注意，您不能使用智能标记， [!DNL Asset] 链接， [!DNL Asset] 选择器、批量标记、修改资产工作流或标准 [!DNL Adobe Experience Manager] 用户界面访问Media Library，而 [!DNL Assets] 许可证。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

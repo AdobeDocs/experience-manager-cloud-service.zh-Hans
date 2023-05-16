@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 7c67b72a5dd10dd6c9db8be1812f66dc20e0f85a
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 5%
+source-wordcount: '940'
+ht-degree: 8%
 
 ---
 
-# 资源报表 {#asset-reports}
+# 资源报告 {#asset-reports}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 资产报表允许您评估 [!DNL Adobe Experience Manager Assets] 部署。 使用 [!DNL Assets]，则可以为数字资产生成各种报表。 这些报表提供有关您的系统使用情况、用户与资产的交互方式以及哪些资产的有用信息 <!-- downloaded and --> 共享。
 
@@ -185,3 +190,17 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >
    >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
 -->
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
