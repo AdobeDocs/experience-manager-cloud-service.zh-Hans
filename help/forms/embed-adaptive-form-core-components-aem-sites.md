@@ -5,9 +5,10 @@ description: 您可以在AEM Sites页面中使用自适应表单（核心组件�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2207'
 ht-degree: 2%
 
 ---
@@ -22,22 +23,16 @@ ht-degree: 2%
 
 * **通过将表单组件拖放到自适应Forms容器组件来创建自适应表单**:使用 [自适应Forms容器](#af-container-component) 组件，以在网页内创建一个托管自适应表单的空间。 您可以在此空间中拖放自适应表单组件以创建表单。 例如，请观看以下视频，了解如何使用 [!UICONTROL 自适应Forms容器] 组件：
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 的 [自适应表单容器](#af-container-component) 组件允许您直接在AEM Sites编辑器中利用自适应Forms组件来构建数字注册体验。 此集成可为希望在AEM Sites页面中创建和管理表单的AEM Sites作者提供无缝体验。
 
-* **嵌入现有自适应表单**:的 [自适应Forms — 嵌入](#embed-existing-af) 组件允许您轻松地将预先存在的自适应表单合并到AEM Sites内的页面中。 例如，使用 [!UICONTROL 自适应Forms — 嵌入] 组件，如以下视频所示：
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **嵌入现有自适应表单**:的 [自适应Forms — 嵌入(V2)](#embed-existing-af) 组件允许您轻松地将预先存在的自适应表单合并到AEM Sites内的页面中。 例如，使用 [!UICONTROL 自适应Forms — 嵌入] 组件，如以下视频所示：
 
 该功能增强了自适应Forms的适应性和可重用性。 此集成为客户提供了一种便捷的方式，可重复使用客户已创建的自适应Forms。
 
 * **使用自适应Forms向导创建表单**:
 
-   使用 [自适应Forms — 嵌入](#embed-new-af) 组件来使用表单创建向导，在AEM Sites编辑器中创建自适应表单。 表单将另存为外部实体。 您还可以在其他站点页面和独立表单中重复使用此表单。
+   使用 [自适应Forms — 嵌入(v2)](#embed-new-af) 组件来使用表单创建向导，在AEM Sites编辑器中创建自适应表单。 表单将另存为外部实体。 您还可以在其他站点页面和独立表单中重复使用此表单。
 例如，请观看以下视频，了解如何使用 [!UICONTROL 自适应Forms — 嵌入] 组件。
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### 注意事项 {#considerations}
 
@@ -52,11 +47,12 @@ ht-degree: 2%
 +++ 启用 **[!UICONTROL 自适应Forms容器]** 组件。
 
 启用 [!UICONTROL 自适应Forms容器] 组件，请执行以下步骤：
-1. 转到 [!UICONTROL 页面信息] > [!UICONTROL 编辑模板]
-1. 单击 [!UICONTROL 策略] ，然后选择 **核心组件示例 — 自适应表单** 复选框。
-1. 单击 [!UICONTROL 完成].
 
->[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+1. 转到 [!UICONTROL 页面信息] > [!UICONTROL 编辑模板]
+1. 单击 [!UICONTROL 策略] ，然后选择 **[!UICONTROL 自适应Forms容器]**  复选框 **[AEM Archetype项目名称]  — 自适应表单**.
+1. 单击 **[!UICONTROL 完成]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -104,7 +100,7 @@ ht-degree: 2%
 1. 使用自适应Forms组件创建自适应表单。
 1. 保存设置。
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 您的表单已准备就绪。 在您发布AEM Sites页面时，它会自动发布自适应表单及其关联的引用资产。
 
@@ -148,11 +144,11 @@ ht-degree: 2%
 * **显示消息**
    * **消息内容**:使用富文本编辑器编写消息以在表单提交时显示。 仅当您选择显示感谢信时，此选项才可用。
 
-## 嵌入现有自适应表单  {#aem-container-component}
+## 嵌入自适应表单  {#aem-container-component}
 
-使用 **[!UICONTROL 自适应Forms — 嵌入]** 组件中，您可以嵌入新的自适应表单，也可以在网站的页面中嵌入现有的自适应表单。 的 [!UICONTROL 自适应Forms — 嵌入] 组件允许您：
+使用 **[!UICONTROL 自适应Forms — 嵌入(V2)]** 组件中，您可以嵌入新的自适应表单，也可以在网站的页面中嵌入现有的自适应表单。 的 [!UICONTROL 自适应Forms — 嵌入] 组件允许您：
 
-* [删除现有的自适应表单](#embed-new-af)
+* [嵌入现有自适应表单](#embed-new-af)
 
 * [创建和嵌入新的自适应表单](#embed-existing-af)
 
@@ -160,12 +156,14 @@ ht-degree: 2%
 
 +++ 启用 **自适应Forms — 嵌入** 组件。
 
-启用 [!UICONTROL 自适应Forms — 嵌入] 组件，请执行以下步骤：
-1. 转到 [!UICONTROL 页面信息] > [!UICONTROL 编辑模板]
-1. 单击 [!UICONTROL 策略] ，然后选择 **核心内容** 复选框。
-1. 单击 [!UICONTROL 完成].
+启用 [!UICONTROL 自适应Forms — 嵌入(v2)] 组件，请执行以下步骤：
 
->[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+1. 转到 [!UICONTROL 页面信息] > [!UICONTROL 编辑模板]
+
+1. 单击 [!UICONTROL 策略] ，然后选择 **[!UICONTROL 自适应表单 — 嵌入(v2)]** 复选框 **[!UICONTROL [AEM Archetype项目名称] -Forms]** 群组。
+1. 单击 **[!UICONTROL 完成]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +210,7 @@ ht-degree: 2%
 ### 嵌入新的自适应表单 {#embed-new-af}
 
 1. 在编辑模式下打开AEM Sites页面。
-1. 从组件浏览器面板中，拖放 [!UICONTROL 自适应Forms — 嵌入] 组件。
+1. 从组件浏览器面板中，拖放 [!UICONTROL 自适应Forms — 嵌入(v2)] 组件。
 1. 单击 **加号** 图标时，系统会将您重定向到表单创建向导。
 
    ![自适应Forms — 嵌入组件](/help/forms/assets/aemformcontainer.png)
@@ -220,6 +218,8 @@ ht-degree: 2%
 1. 从 [!UICONTROL 表单创建] 向导。
 1. 的 [!UICONTROL 资产路径] 已经包含创建的自适应表单的路径
 1. 保存设置。 自适应表单现在嵌入到页面中。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
 ### 嵌入现有自适应表单 {#embed-existing-af}
 
@@ -229,9 +229,12 @@ ht-degree: 2%
 1. 浏览并选择要嵌入到 [!UICONTROL 资产路径].
 1. 保存设置。 自适应表单现在嵌入到页面中。
 
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
 #### 配置自适应表单_嵌入属性
 
-您可以自定义 [!UICONTROL 自适应表单 — 嵌入] 组件。 在 [!UICONTROL 编辑自适应Forms — 嵌入] 对话框中，您可以指定以下内容。
+您可以自定义 [!UICONTROL 自适应表单 — 嵌入(v2)] 组件。 在 [!UICONTROL 编辑自适应Forms — 嵌入(v2)] 对话框中，您可以指定以下内容。
+
 * **资产路径**:浏览并选择要嵌入的自适应表单。 如果您从资产浏览器中将其删除，则会自动填充该内容。
 * **帖子提交** :选择要在表单提交时触发的操作。 您可以选择显示感谢信或感谢页。
    * **显示感谢消息**:使用富文本编辑器编写消息以在表单提交时显示。 仅当您选择显示感谢信时，此选项才可用。
@@ -272,4 +275,3 @@ ht-degree: 2%
 ![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM站点页面维护对自适应表单的引用。 当您翻译AEM Sites页面时，它会使用 [翻译项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 翻译成其他语言。
-
