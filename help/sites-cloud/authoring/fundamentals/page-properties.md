@@ -2,9 +2,9 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
-workflow-type: ht
-source-wordcount: '2387'
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+workflow-type: tm+mt
+source-wordcount: '2363'
 ht-degree: 100%
 
 ---
@@ -345,11 +345,3 @@ ht-degree: 100%
       * 当您选择&#x200B;**完成**&#x200B;时，新值将会应用于所有选定页面。
       * 当字段有多个值时（例如“标记”），您可以附加一个新值，也可以删除相同的值。
    * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。
-
->[!NOTE]
->
->可以对页面组件进行配置，以指定可批量编辑的字段。请参阅配置页面以批量编辑页面属性。
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
