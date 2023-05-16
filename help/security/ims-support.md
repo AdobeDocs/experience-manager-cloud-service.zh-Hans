@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 100%
+source-wordcount: '2054'
+ht-degree: 97%
 
 ---
 
@@ -142,11 +142,15 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 在每个产品上下文实例下，都将有一些实例跨生产、阶段或开发环境中的创作或发布服务。每个实例都将与产品配置文件或 Cloud Manager 角色相关联。这些产品配置文件用于为具有所需权限的用户和组分配访问权限。
 
-**Administrator_xxx** 配置文件将用于在关联的 AEM 实例中授予管理员特权，而 **User_xxx** 配置文件用于添加常规用户。
+的 **AEM Administrators_xxx** 配置文件将用于在关联的AEM实例中授予管理员权限，而 **AEM Users_xxx** 用户档案用于添加常规用户。
 
 在此产品配置文件下添加的任何用户和组都将能够登录到该特定实例，如下例所示：
 
 ![产品配置文件](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>的 **AEM管理员** 不得更改产品配置文件名称。 更改的名称 **AEM管理员** 产品配置文件将从分配给该配置文件的所有用户中删除管理员权限。
 
 ### 登录 Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
