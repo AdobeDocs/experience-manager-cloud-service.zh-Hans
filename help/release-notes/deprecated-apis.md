@@ -2,10 +2,10 @@
 title: 已弃用 API
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的 API 的发行说明。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
-workflow-type: ht
-source-wordcount: '1076'
-ht-degree: 100%
+source-git-commit: 9e722de86e925cb8de626dc16624954dfac063cc
+workflow-type: tm+mt
+source-wordcount: '1120'
+ht-degree: 96%
 
 ---
 
@@ -209,6 +209,15 @@ ht-degree: 100%
     <td>该 API 已弃用。 请改用 Apache Sling 的构建器。</td>
     <td>10/31/2022</td>
     <td>01/01/2023</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEMas a Cloud Service不支持此API。</td>
+    <td>5/15/2023</td>
+    <td>6/15/2023</td>
+  </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
+    <td>已弃用Google Guava核心库。</td>
+    <td>5/15/2023</td>
+    <td>6/15/2023</td>
   </tr>
 </tbody>
 </table>
