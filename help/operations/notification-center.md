@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 3aa753fb5cc5130ced7e9baafde63e8825394dce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时将发�
 执行以下步骤来配置接收通知：
 
 1. 创建以下产品配置文件，如[本文](/help/journey-onboarding/notification-profiles.md)中所述，并将来自您组织的适当 Adobe ID 分配给这些配置文件。这允许管理员确定哪些用户有资格接收这些通知。
-1. 在上一步中确定的每个指定用户都可以配置他们希望接收通知的方式。在 [Experience Cloud首选项页](https://experience.adobe.com/preferences/notification-section)，请确保启用了Experience Manager订阅，并且 **操作事件** 和 **主动建议** 已为应用程序内列和电子邮件列选择复选框（请参阅下图）。 此外，建议将电子邮件部分设置为&#x200B;**即时通知**，以便在问题发生后立即收到通知。
+1. 在上一步中确定的每个指定用户都可以配置他们希望接收通知的方式。在 [Experience Cloud 首选项设置页面](https://experience.adobe.com/preferences/notification-section)上确保启用了 Experience Manager 订阅，并为应用程序内和电子邮件列都选中了&#x200B;**操作问题**&#x200B;和&#x200B;**主动建议**&#x200B;复选框。此外，建议将“电子邮件”部分设置为&#x200B;**即时通知**，以便在发生问题后立即收到通知。
 
 ![配置订阅](/help/operations/assets/configure-subscriptions.png)
 
@@ -63,7 +63,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时将发�
 
 ![联系支持人员 2](/help/operations/assets/contact-support2.png)
 
-与所有支持工单一样，它将出现在 [Adobe Admin Console 的“支持案例”选项卡](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html)中，您可以在其中跟踪它并添加其他评论。
+与所有支持工单一样，它将出现在 [Adobe Admin Console 的“支持案例”选项卡](https://helpx.adobe.com/cn/enterprise/using/support-for-enterprise.html)中，您可以在其中跟踪它并添加其他评论。
 
 ![Admin Console 支持](/help/operations/assets/admin-console-support.png)
 
