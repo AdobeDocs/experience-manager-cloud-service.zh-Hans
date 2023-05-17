@@ -4,10 +4,10 @@ description: 了解如何创建和同步 Live Copy 以在站点中重用您的�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 100%
+source-wordcount: '4322'
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,10 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
 1. （可选）要指定用于 Live Copy 的一个或多个转出配置，请使用&#x200B;**转出配置**&#x200B;下拉列表来选择它们。所选配置将显示在下拉选择器的下方。
 1. 单击或点按&#x200B;**创建**。这将显示一条确认消息，可在其中选择&#x200B;**打开**&#x200B;或&#x200B;**完成**。
+
+   >[!NOTE]
+   >
+   >出现错误对话框，显示消息“无法提交表单”。 这是由于网络超时所致。 但是，创建Live Copy的过程将在后台运行。 等待几分钟，并检查Live Copy的页面是否正确创建。
 
 ### 从 Blueprint 配置创建站点的 Live Copy {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
