@@ -4,10 +4,10 @@ description: 与 Adobe Target 集成
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
-workflow-type: ht
+source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -150,7 +150,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
   <tr>
     <td>Target 配置的位置。</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td>/conf/tenant/settings/cloudconfigs/target/</td>
     <td> 之前，多个配置位于 /etc/cloudservices/testandtarget 下，而现在单个配置位于租户下。</td>
   </tr>
 </table>
