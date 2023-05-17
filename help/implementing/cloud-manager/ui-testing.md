@@ -3,9 +3,9 @@ title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2305'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 94%
 
 AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)集成包，确保对自定义应用程序的顺利更新。 特别是，IT 测试门已支持使用 AEM API 创建和自动化定制测试。
 
-UI测试打包在Docker图像中，以便允许在语言和框架（如Cypress.IO、Selenium、Java和Maven以及Javascript）中进行广泛选择。 此外，通过使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松生成 UI 测试项目。
+UI 测试被打包为 Docker 映像，以便可选择多种语言和框架（如 Cypress.IO、Selenium、Java 和 Maven 以及 Javascript）。此外，还可使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)轻松地生成 UI 测试项目。
 
-Adobe鼓励使用Cypress.IO，因为它提供实时重装和自动等待功能，有助于节省时间并提高测试期间的工作效率。 Cypress.IO还提供简单而直观的语法，使学习和使用更加方便，甚至对于那些刚刚参加测试的人也是如此。
+Adobe 建议使用 Cypress.IO，因为它提供实时重新加载和自动等待，而这些功能有助于在测试期间节省时间并提高工作效率。Cypress.IO 还提供一种简单而直观的语法，即使是不熟悉测试的人士也很容易学习和使用。
 
 按照[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)（可选）中的&#x200B;[**自定义 UI 测试**](/help/implementing/cloud-manager/deploy-code.md)步骤，作为每个 Cloud Manager 管道的特定质量关卡的一部分执行 UI 测试。通过包括回归和新功能在内的任何 UI 测试，均可检测和报告错误。
 
@@ -205,20 +205,20 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 
 ### 环境变量 {#environment-variables}
 
-以下环境变量将在运行时传递到Docker映像，具体取决于您的框架。
+根据您的框架，以下环境变量将在运行时传递给 Docker 映像。
 
 | 变量 | 示例 | 描述 | 测试框架 |
 |---|---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 服务器的 URL | 仅硒 |
-| `SELENIUM_BROWSER` | `chrome` | Selenium 服务器使用的浏览器实施 | 仅硒 |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 作者实例的 URL | 所有 |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 服务器的 URL | 仅 Selenium |
+| `SELENIUM_BROWSER` | `chrome` | Selenium 服务器使用的浏览器实施 | 仅 Selenium |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 创作实例的 URL | 所有 |
 | `AEM_AUTHOR_USERNAME` | `admin` | 用于登录 AEM 创作实例的用户名 | 所有 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | 用于登录 AEM 创作实例的密码 | 所有 |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 发布实例的 URL | 所有 |
 | `AEM_PUBLISH_USERNAME` | `admin` | 用于登录 AEM 发布实例的用户名 | 所有 |
 | `AEM_PUBLISH_PASSWORD` | `admin` | 用于登录 AEM 发布实例的密码 | 所有 |
-| `REPORTS_PATH` | `/usr/src/app/reports` | 必须保存测试结果的 XML 报告的路径 | 所有 |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必须将文件上传到的URL，以便测试框架可访问这些文件 | 所有 |
+| `REPORTS_PATH` | `/usr/src/app/reports` | 必须将测试结果的 XML 报告保存到的路径 | 所有 |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | 为使测试框架可访问文件而必须将文件上传到的 URL | 所有 |
 
 Adobe 测试示例提供了帮助程序函数来访问配置参数：
 
@@ -229,7 +229,7 @@ Adobe 测试示例提供了帮助程序函数来访问配置参数：
 
 >[!NOTE]
 >
->此部分仅在Selenium是所选的测试基础结构时适用。
+>仅在 Selenium 为所选的测试基础设施时适用此部分。
 
 在测试开始之前，Docker 映像负责确保 Selenium 服务器启动并运行。 等待 Selenium 服务需要两个步骤。
 
