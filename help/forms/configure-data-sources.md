@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 8d1a19f62d58bc9087991fb861adc6e8205e92d2
+source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2195'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 * SalesForce
 * Microsoft® Azure Blob Storage
 
-数据集成支持OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本身份验证和API密钥身份验证类型开箱即用，并允许实施自定义身份验证以访问Web服务。 而RESTful、基于SOAP和OData服务在 [!DNL Experience Manager] as a Cloud Service、关系数据库的JDBC和 [!DNL Experience Manager] 用户配置文件配置在 [!DNL Experience Manager] web控制台。
+数据集成支持OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证和API密钥现成身份验证类型，并允许实施自定义身份验证以访问Web服务。 而RESTful、基于SOAP和OData服务在 [!DNL Experience Manager] as a Cloud Service、关系数据库的JDBC和 [!DNL Experience Manager] 用户配置文件配置在 [!DNL Experience Manager] web控制台。
 
 ## 配置关系数据库 {#configure-relational-database}
 
@@ -135,7 +135,7 @@ RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/)
       * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
       * 基本路径：所有API路径的URL前缀。 它是一个可选字段。\
          如有必要，请编辑这些字段的预填充值。
-   * 选择身份验证类型 — 无、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本身份验证、API密钥或自定义身份验证 — 用于访问RESTful服务，并相应地提供身份验证详细信息。
+   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
    如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
 
@@ -154,7 +154,7 @@ RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/)
 
    * 从 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger 3.0 URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 文件。
    * 基于[!DNL  Swagger] 源输入，显示与目标服务器的连接信息。
-   * 选择身份验证类型 — 无、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本身份验证、API密钥或自定义身份验证 — 用于访问RESTful服务，并相应地提供身份验证详细信息。
+   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
    如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
 
@@ -230,7 +230,7 @@ RESTful服务Open API规范版本3.0不支持的某些操作包括：
 
    * Web服务的WSDL URL。
    * 服务端点. 在此字段中指定一个值，以覆盖WSDL中提到的服务端点。
-   * 选择身份验证类型 — 无、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本身份验证或自定义身份验证 — 用于访问SOAP服务，并相应地提供身份验证的详细信息。
+   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证或自定义身份验证 — 以访问SOAP服务，并相应地提供身份验证的详细信息。
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -272,7 +272,7 @@ OData服务由其服务根URL标识。 在 [!DNL Experience Manager] as a Cloud 
 1. 为OData服务指定以下详细信息：
 
    * 要配置的OData服务的服务根URL。
-   * 选择身份验证类型 — 无、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本身份验证、API密钥或自定义身份验证 — 用于访问OData服务，并相应地提供身份验证的详细信息。
+   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证、API密钥或自定义身份验证 — 以访问OData服务，并相应地提供身份验证的详细信息。
 
    如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
 
