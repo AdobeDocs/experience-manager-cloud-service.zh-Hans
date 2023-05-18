@@ -2,7 +2,7 @@
 title: 快速开发环境
 description: 了解如何在云环境中利用快速开发环境进行快速开发迭代。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 5%
@@ -118,13 +118,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规的云开
    3. Workspace: <no workspace selected>
    ```
 
-1. 通过运行
-
-   `aio cloudmanager:list-programs`
-
-   这应该会列出您配置的组织下的所有项目。
-
-   请注意，上述要求您是Cloud Manager的成员 **开发人员 — Cloud Service** 产品配置文件。 请参阅 [本页](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 以了解更多详细信息。
+   请注意，此步骤要求您是Cloud Manager的成员 **开发人员 — Cloud Service** 产品配置文件。 请参阅 [本页](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 以了解更多详细信息。
 
    或者，如果您可以通过运行以下命令登录到开发人员控制台，则可以确认您具有此开发人员角色：
 
@@ -138,6 +132,13 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规的云开
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. 通过运行
+
+   `aio cloudmanager:list-programs`
+
+   这应该会列出您配置的组织下的所有项目。
+
 
 有关更多信息和演示，请参阅 [如何设置RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) 视频教程。
 
