@@ -2,10 +2,10 @@
 title: 复制
 description: 分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1a42cfaa1010686279bc11ca92f50afc75d89e9d
+source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 91%
+source-wordcount: '1381'
+ht-degree: 90%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe Experience Manager as a Cloud Service 使用 [Sling 内容分发](https://
    ![流程步骤](/help/operations/assets/processstep.png)
 
 1. 单击流中的“流程”步骤，然后按扳手图标选择&#x200B;**配置**
-1. 单击&#x200B;**流程**&#x200B;选项卡并从下拉列表中选择 `Publish Content Tree`
+1. 单击&#x200B;**流程**&#x200B;选项卡并从下拉列表中选择 `Publish Content Tree`，然后检查 **处理程序高级** 复选框
 
    ![树激活](/help/operations/assets/newstep.png)
 
@@ -92,7 +92,7 @@ Adobe Experience Manager as a Cloud Service 使用 [Sling 内容分发](https://
 * `enableVersion`（布尔值，默认： `true`）。 此参数可确定复制时是否创建了新版本。
 * `agentId`（字符串值，默认表示仅使用发布代理）。 建议明确说明 agentId；例如，将其设置为值：发布。 将代理设置为 `preview` 将发布到预览服务
 * `filters`（字符串值，默认表示激活所有路径）。 可用值包括：
-   * `onlyActivated`  — 仅激活已（已）激活的页面。 用作某种形式的重新激活操作。
+   * `onlyActivated`  — 仅激活已（已）激活的页面。 充当一种重新激活的形式。
    * `onlyModified`  – 仅激活已激活且修改日期晚于激活日期的路径。
    * 上面可以用管道字符“|”进行“或”操作。 例如：`onlyActivated|onlyModified`。
 
