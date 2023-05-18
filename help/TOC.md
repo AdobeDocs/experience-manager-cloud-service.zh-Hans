@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a29ef2aa19d37a56e521524b931818a08cf0cb75
-workflow-type: ht
-source-wordcount: '4071'
-ht-degree: 100%
+source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
+workflow-type: tm+mt
+source-wordcount: '4074'
+ht-degree: 99%
 
 ---
 
@@ -386,6 +386,7 @@ ht-degree: 100%
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + 管理数字资源{#manage}
+      + [微型前端资产选择器](/help/assets/asset-selector.md)
       + [共享资源](/help/assets/share-assets.md)
       + [监测活动和 DAM 任务](/help/assets/assets-activity-history.md)
       + [开始使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)
