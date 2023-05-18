@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 371a8a0af731c1d9c139d08e4c773c0654dafd4e
+source-git-commit: d202b0543020b277de982e3965475074a71b286d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 100%
    * DASH 是自适应视频流式处理的国际标准协议，在业界得到广泛应用
    * 已在北美推出，将通过支持票证启用，并且即将在亚太地区以及欧洲、中东和非洲推出
 
-* 增加了对 WebP 图像的支持，可自动提取元数据、生成缩略图和自定义演绎版。这些文件现在也支持智能标记和智能裁切功能。
+* 增加了对 WebP 图像的支持，可自动提取元数据、生成缩略图和自定义演绎版。这些文件现在也支持智能标记功能。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
