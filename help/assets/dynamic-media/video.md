@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
+source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
-source-wordcount: '5887'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -424,10 +424,6 @@ DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，
 * 帮助让客户更易于访问视频交付。
 * 也可以通过API获取流URL。
 
-   >[!IMPORTANT]
-   >
-   >目前，在您的帐户上启用DASH仅在亚太地区和北美地区提供；即将在欧洲 — 中东 — 非洲推出。
-
 发起使用DASH的请求；它不会在您的帐户上自动启用。
 
 要在您的帐户上启用DASH，请创建客户支持案例，如下所述。 在支持案例中，指定要在Dynamic Media帐户和Experience Manager上启用DASH。
@@ -435,7 +431,7 @@ DASH（HTTP上的数字自适应流播放）是视频流播放的国际标准，
 **要在您的帐户上启用DASH，请执行以下操作：**
 
 1. [使用Admin Console开始创建新的支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html).
-1. 按照相关说明创建支持案例，同时确保提供以下信息：
+1. 要创建支持案例，请按照相关说明进行操作，同时确保提供以下信息：
 
    * 主要联系人姓名、电子邮件、电话。
    * 您的Dynamic Media帐户的名称。
