@@ -2,9 +2,9 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 3a00faaf285be693243e3fb55159149520293610
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1113'
 ht-degree: 1%
 
 ---
@@ -15,21 +15,18 @@ ht-degree: 1%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.9( [!DNL Workfront for Experience Manager enhanced connector] 是2023年4月10日。
+最新版本1.9.10的发行日期 [!DNL Workfront for Experience Manager enhanced connector] 是2023年5月18日。
 
 ## 发行亮点 {#release-highlights}
 
 的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下更新：
 
-* Experience Manager显示 `DateTimeParseException` 在链接文件夹创建期间，从Workfront收到上次修改日期时出现异常。
+* Workfront根据从Experience Manager到Workfront的REST调用，为重复事件订阅返回409 HTTP响应，这会导致空指针异常。
 
-* 在短时间内创建多个链接项目文件夹时出现问题。
-
-* 无法对新的项目链接文件夹集的数量配置阈值限制。
 
 >[!IMPORTANT]
 >
->Adobe建议您 [升级到最新的1.9.9版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建议您 [升级到最新的1.9.10版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知问题 {#known-issues}
 
@@ -38,6 +35,16 @@ ht-degree: 1%
 * 当您使用经典Workfront体验时， **[!UICONTROL 发送到]** 选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 的 **[!UICONTROL 发送到]** 选项可使用 **[!UICONTROL 文档操作]** 下拉列表。 的 **[!UICONTROL 发送到]** 选项可正确用于 **[!UICONTROL 更多]** 下拉列表以及 **[!UICONTROL 文档操作]** 新Workfront体验中提供的下拉列表。
 
 ## 以前版本 {#previous-releases}
+
+### 2023年4月版 {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 2023年4月10日发布的版本1.9.9包括以下更新：
+
+* Experience Manager显示 `DateTimeParseException` 在链接文件夹创建期间，从Workfront收到上次修改日期时出现异常。
+
+* 在短时间内创建多个链接项目文件夹时出现问题。
+
+* 无法对新的项目链接文件夹集的数量配置阈值限制。
 
 ### 2023年3月版 {#march-2023-release}
 
