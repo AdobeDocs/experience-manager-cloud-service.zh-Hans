@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="启动内容片段编辑器"
->abstract="现在，让我们来探索无头内容创作的工作原理。 您的 AEM Headless 试用版集成了示例 React 应用程序，因此您可以看到任何人无需开发时间即可轻松独立管理内容。<br><br>单击下方在新选项卡中启动该模块，然后遵循该指南。"
+>abstract="现在让我们探讨 Headless 内容创作的工作原理。您的 AEM Headless 试用版集成了示例 React 应用程序，因此您可以看到任何人无需开发时间即可轻松独立管理内容。<br><br>单击下方在新选项卡中启动该模块，然后遵循该指南。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

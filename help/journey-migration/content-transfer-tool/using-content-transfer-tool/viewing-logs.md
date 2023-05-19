@@ -5,7 +5,7 @@ exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 37%
+ht-degree: 39%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 37%
 >title="查看日志"
 >abstract="提取或引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 支持部门而纠正任何错误。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="疑难解答"
->additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="联系 Adobe 支持"
+>additional-url="https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html" text="联系 Adobe 支持"
 
 完成每个步骤（提取和摄取）后，检查日志并查找错误。  应立即通过处理所报告的问题或联系 Adobe 支持部门而纠正任何错误。
 
