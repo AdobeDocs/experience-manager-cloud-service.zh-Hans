@@ -1,31 +1,31 @@
 ---
 title: 使用 Dynamic Media
-description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上使用。
+description: 瞭解如何使用Dynamic Media傳送資產，以便在網路、行動裝置和社交網站上使用。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 37%
+ht-degree: 6%
 
 ---
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media 有助于按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况。](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)Dynamic Media使用一组主源资产，通过其全球、可扩展、性能优化的网络，实时生成并传送多种丰富内容变体。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 協助提供豐富的視覺化銷售和行銷資產（隨選提供），可自動調整規模，以因應網路、行動裝置和社交網站的使用需求。 Dynamic Media使用一組主要來源資產，透過其全球性、可擴充、效能最佳化的網路，即時產生並傳送多種多樣的豐富內容。
 
-Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频。 Dynamic Media以独特的方式整合了Adobe Experience Manager数字资产管理（资产）解决方案的工作流程，以简化和简化数字营销活动管理流程。
+Dynamic Media提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 Dynamic Media以獨特方式整合Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化及簡化數位行銷活動管理流程。
 
 <!-- >[!NOTE]
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Dynamic Media 的功能 {#what-you-can-do-with-dynamic-media}
+## 您可以使用Dynamic Media做什麼 {#what-you-can-do-with-dynamic-media}
 
-通过 Dynamic Media，您可以在发布资产前对其进行管理。[处理数字资产](/help/assets/manage-digital-assets.md)详细介绍了资产的一般处理方式。一般主题包括上传、下载、编辑和发布资产；查看和编辑属性，以及搜索资产。
+Dynamic Media可讓您在發佈資產之前先管理資產。 中會詳細說明如何使用一般資產 [使用數位資產](/help/assets/manage-digital-assets.md). 一般主題包括上傳、下載、編輯和發佈資產；檢視和編輯屬性，以及搜尋資產。
 
-仅Dynamic Media功能包括：
+僅限Dynamic Media的功能包括下列專案：
 
 * [传送横幅](carousel-banners.md)
 * [图像集](image-sets.md)
@@ -36,11 +36,11 @@ Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频�
 
 * [旋转集](spin-sets.md)
 * [视频](video.md)
-* [传送 Dynamic Media 资产](delivering-dynamic-media-assets.md)
-* [管理资产](managing-assets.md)
-* [使用快速视图创建自定义弹出窗口](custom-pop-ups.md)
+* [傳遞Dynamic Media資產](delivering-dynamic-media-assets.md)
+* [管理資產](managing-assets.md)
+* [使用快速檢視建立自訂快顯視窗](custom-pop-ups.md)
 
-另请参阅 [设置Dynamic Media](administering-dynamic-media.md).
+另請參閱 [設定Dynamic Media](administering-dynamic-media.md).
 
 <!-- 
 
@@ -51,40 +51,40 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Dynamic Media启用与Dynamic Media禁用 {#dynamic-media-on-versus-dynamic-media-off}
+## 啟用Dynamic Media與停用Dynamic Media {#dynamic-media-on-versus-dynamic-media-off}
 
-您可以通过以下特征判断Dynamic Media是否已启用（打开）：
+您可以透過下列特性來判斷是否已啟用（開啟） Dynamic Media：
 
-* 下载或预览资产时，可以使用动态演绎版。
-* 可以使用图像集、旋转集、混合媒体集。
-* 创建了 PTIFF 演绎版。
+* 下載或預覽資產時，可使用動態轉譯。
+* 影像集、迴轉集、混合媒體集可供使用。
+* 已建立PTIFF轉譯。
 
-单击图像资产时，启用Dynamic Media后，资产的视图会有所不同。 Dynamic Media使用按需HTML5查看器。
+當您按一下影像資產時，啟用Dynamic Media的資產檢視會有所不同。 Dynamic Media使用隨選HTML5檢視器。
 
-### 动态演绎版 {#dynamic-renditions}
+### 動態轉譯 {#dynamic-renditions}
 
-当 Dynamic Media 处于启用状态时，可以使用图像和查看器预设等动态演绎版（在&#x200B;**[!UICONTROL 动态]**&#x200B;下）。
+動態轉譯，例如影像和檢視器預設集(在 **[!UICONTROL 動態]**)在啟用Dynamic Media時可供使用。
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### 图像集、旋转集和混合媒体集 {#image-sets-spins-sets-mixed-media-sets}
+### 影像集、旋轉集、混合媒體集 {#image-sets-spins-sets-mixed-media-sets}
 
-当 Dynamic Media 处于启用状态时，可以使用图像集、旋转集和混合媒体集。
+如果啟用Dynamic Media，則可使用影像集、迴轉集和混合媒體集。
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### PTIFF演绎版 {#ptiff-renditions}
+### PTIFF轉譯 {#ptiff-renditions}
 
-Dynamic Media启用的资产包括 `pyramid.tiffs`.
+啟用Dynamic Media的資產包括 `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### 资产视图更改 {#asset-views-change}
+### 資產檢視變更 {#asset-views-change}
 
-启用Dynamic Media后，您可以通过单击 `+` 和 `-` 按钮。您还可以单击/点按以放大特定区域。还原后，您可以转到原始版本，并通过单击对角箭头来使图像全屏显示。 启用Dynamic Media后，如下所示：
+啟用Dynamic Media後，您可以按一下 `+` 和 `-` 按鈕。 您也可以按一下/點選以放大特定區域。 「回覆」會將您帶至原始版本，您可以按一下對角線箭頭，使影像變成全熒幕。 Dynamic Media啟用顯示如下：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-禁用Dynamic Media后，您可以放大和缩小并还原到原始大小：
+停用Dynamic Media後，您可以放大和縮小並還原為原始大小：
 
 ![chlimage_1-362](assets/chlimage_1-362.png)

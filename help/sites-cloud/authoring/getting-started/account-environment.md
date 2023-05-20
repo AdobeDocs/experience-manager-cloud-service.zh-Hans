@@ -1,15 +1,15 @@
 ---
-title: 配置帐户环境
-description: AEM 提供了用于配置帐户和创作环境的某些方面的功能
+title: 設定帳戶環境
+description: AEM提供您設定帳戶及製作環境某些方面的功能
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
-# 配置帐户环境 {#configuring-your-account-environment}
+# 設定帳戶環境 {#configuring-your-account-environment}
 
 AEM 提供了配置帐户和创作环境某些方面的功能。
 
@@ -19,7 +19,7 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 ## 用户设置 {#user-settings}
 
-在&#x200B;**用户**&#x200B;设置对话框中，您可以访问：
+此 **使用者** 設定對話方塊可讓您存取：
 
 * 模拟为
    * 借助“模拟为”功能，用户可以代表其他用户工作。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,29 +40,29 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 * **语言**
 
-   此选项定义要用于创作环境 UI 的语言。从可用列表中选择所需语言。
+   這會定義用於編寫環境UI的語言。 從可用清單中選取所需的語言。
 
 * **窗口管理**
 
-   此选项定义打开窗口的行为。选择：
+   這會定義行為或開啟視窗。 选择：
 
-   * **多窗口**（默认）
+   * **多視窗** （預設）
 
-      * 页面将在新窗口中打开。
-   * **单一窗口**
+      * 頁面將在新視窗中開啟。
+   * **单窗口**
 
-      * 页面将在当前窗口中打开。
+      * 頁面將在目前視窗中開啟。
 
 
 * **显示适用于资产的桌面操作**
 
-   此选项要求使用 AEM 桌面应用程序。
+   此選項需要AEM案頭應用程式才能使用。
 
 * **注释颜色**
 
-   此选项定义创建注释时使用的默认颜色。
+   這會定義製作註解時使用的預設顏色。
 
-   * 单击颜色块可打开色板选择器以选择一种颜色。
+   * 按一下顏色區塊以開啟色票選取器來選取顏色。
    * 或者，可在字段中输入所需颜色的十六进制代码。
 
 * **相对日期显示**
@@ -85,7 +85,7 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
    * [用于编辑页面的键盘快捷键](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-   此选项可启用键盘快捷键。默认情况下，这些键盘快捷键处于启用状态，但也可以将其禁用，例如，当用户要求使用特定辅助功能时。
+   此選項會啟用鍵盤快速鍵。 預設會啟用這些功能，但如果使用者有特定的協助工具要求，則可以停用這些功能。
 
 * **启用资产主页**
 
@@ -93,4 +93,4 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 * **Stock 配置**
 
-   此选项允许指定首选的 Adobe Stock 配置，并且仅在系统管理员已启用 [Adobe Stock 集成](/help/assets/aem-assets-adobe-stock.md)时才可用。
+   此選項可讓您指定偏好的Adobe Stock設定，且僅在您的系統管理員已啟用時才能使用 [Adobe Stock整合](/help/assets/aem-assets-adobe-stock.md).

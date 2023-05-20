@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,9 @@ ht-degree: 100%
 
    ![添加注释](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   在此，可使用相应的字段和/或图标执行以下操作：
+   在這裡，您可以使用適當的欄位和/或圖示來：
 
-   * 输入注释文本。
+   * 輸入註釋文字。
    * 创建草图（线和形状）以突出显示组件的某个区域。
 
 

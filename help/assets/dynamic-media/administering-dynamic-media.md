@@ -1,19 +1,19 @@
 ---
 title: 设置 Dynamic Media
-description: 要设置Dynamic Media，您必须配置Dynamic Media并管理图像预设和查看器预设。
+description: 若要設定Dynamic Media，您必須設定Dynamic Media並管理影像和檢視器預設集。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 23%
+ht-degree: 7%
 
 ---
 
 # 设置 Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media 可按需提供丰富的产品销售和市场营销可视资产，还能根据 Web、移动设备、社交网站等不同销售渠道的各种需求自动调整资产供应情况，是您资产管理工作的得力助手。](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)Dynamic Media使用一组主源资产，通过其全球、可扩展、性能优化的网络，实时生成并传送多种丰富内容变体。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 協助您管理資產，提供豐富的視覺化銷售和行銷資產（隨選提供），並自動調整規模，以因應網路、行動裝置和社交網站的使用量。 Dynamic Media使用一組主要來源資產，透過其全球性、可擴充、效能最佳化的網路，即時產生並傳送多種多樣的豐富內容。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -25,21 +25,21 @@ ht-degree: 23%
 
 -->
 
-如果您管理Dynamic Media，请关注以下主题：
+如果您正在管理Dynamic Media，以下是您感興趣的主題：
 
 * [配置 Dynamic Media](config-dm.md)
-* [管理图像预设](managing-image-presets.md)
-* [管理查看器预设](managing-viewer-presets.md)
+* [管理影像預設集](managing-image-presets.md)
+* [管理檢視器預設集](managing-viewer-presets.md)
 * [Dynamic Media 疑难解答](troubleshoot-dm.md)
 
-另请参阅以下主题：
+另請參閱下列主題：
 
-* [视频编码和视频配置文件](video-profiles.md)
-* [图像配置文件](image-profiles.md)
+* [視訊編碼和視訊設定檔](video-profiles.md)
+* [影像設定檔](image-profiles.md)
 
 >[!NOTE]
 >
->**如果您正在升级：**
+>**如果您要升級：**
 >
->* Adobe [!DNL Experience Manager] 启动并运行时，您上传的任何资产都会自动启用Dynamic Media（除非系统管理员明确禁用了该资产）。 如果您在的升级实例上 [!DNL Experience Manager] 对于Dynamic Media，您可能必须重新处理资产才能启用Dynamic Media。 请参阅 [重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Adobe之後 [!DNL Experience Manager] 啟動並執行時，您上傳的任何資產都會自動啟用Dynamic Media （除非您的系統管理員明確停用它）。 如果您在的升級執行個體上 [!DNL Experience Manager] 剛開始使用Dynamic Media時，您可能必須重新處理資產，才能將其啟用Dynamic Media。 另請參閱 [重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 

@@ -1,17 +1,17 @@
 ---
-title: 变量 – 创作片段内容 （资产 — 内容片段）
-description: 了解变量如何允许您为片段创作内容，然后根据目的创建该内容的变量，从而使AEM中的无头内容更加灵活。
+title: 变体 – 创作片段内容 （資產 — 內容片段）
+description: 瞭解變數如何讓您為片段撰寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更加靈活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
 workflow-type: tm+mt
 source-wordcount: '2288'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
-# 变量 – 创作片段内容{#variations-authoring-fragment-content}
+# 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
-[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本以用于特定渠道和/或方案，从而更加灵活地交付无头内容。
+[變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM內容片段的一項重要功能，因為它們可讓您建立和編輯主要內容的副本，以用於特定頻道和/或情境，使headless內容傳送更靈活。
 
 从&#x200B;**“变体”**&#x200B;选项卡，您可：
 
@@ -82,7 +82,7 @@ ht-degree: 95%
 
 * [显示文本统计信息](#viewing-key-statistics)
 
-* [与主要内容同步](#synchronizing-with-master)（编辑变量时）
+* [与主要内容同步](#synchronizing-with-master)（编辑变体时）
 
 * [总结文本](#summarizing-text)
 
@@ -222,7 +222,7 @@ ht-degree: 95%
 >
 
 
-1. 选择&#x200B;**主要变量**&#x200B;或所需的变量。
+1. 选择&#x200B;**主要变体**&#x200B;或所需的变体。
 1. 打开全屏编辑器。
 
 1. 从工具栏中选择&#x200B;**“摘要文本”**。
@@ -252,7 +252,7 @@ ht-degree: 95%
 
 要对片段添加注释：
 
-1. 选择&#x200B;**主要变量**&#x200B;或所需的变量。
+1. 选择&#x200B;**主要变体**&#x200B;或所需的变体。
 
 1. 打开全屏编辑器。
 
@@ -305,7 +305,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
@@ -341,7 +341,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 无法在引用页面上移动或删除这些资产，必须在片段编辑器中完成此操作。
-但是，必须在 [页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 资产在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资产格式（例如，大小）。 资产在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
@@ -394,7 +394,7 @@ ht-degree: 95%
 
 ### 重命名变体 {#renaming-a-variation}
 
-要重命名现有变量，请执行以下操作：
+要重命名现有变体，请执行以下操作：
 
 1. 打开片段，然后从侧面板中选择&#x200B;**“变体”**。
 1. 选择所需的变体。
@@ -428,7 +428,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 同步仅可将更改从&#x200B;***母版**复制到变体*。
-将仅同步变量的当前元素。
+将仅同步变体的当前元素。
 同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
 不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 

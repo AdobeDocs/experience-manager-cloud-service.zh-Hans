@@ -3,7 +3,7 @@ title: 如何汇总您的应用程序和 AEM Headless 中的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用您的 AEM Project（包括内容片段）、GraphQL 调用、REST API 调用和您的应用程序，并为上线做好准备。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

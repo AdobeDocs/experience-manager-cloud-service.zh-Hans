@@ -2,7 +2,7 @@
 title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系统接收有关管道部署的信息。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
+source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 92%
@@ -16,9 +16,9 @@ ht-degree: 92%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 当生产管道在生产部署开始时开始并完成（成功或失败）时，会向您发送通知。
+[!UICONTROL Cloud Manager] 會在生產部署開始時在生產管道啟動和完成（成功或失敗）時傳送通知給您。
 
-这些通知通过 [!UICONTROL Experience Cloud] 通知系统 **业务所有者**, **项目经理**&#x200B;和 **部署管理器** 角色。
+這些通知會透過 [!UICONTROL Experience Cloud] 通知系統中的使用者 **業務負責人**， **計畫管理員**、和 **部署管理員** 角色。
 
 通知显示在 [!UICONTROL Cloud Manager] 和整个 Adobe [!UICONTROL Experience Cloud] 侧边栏中。当您有新通知时，标题中的铃铛图标将被标记。
 

@@ -1,83 +1,83 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版的发行说明。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.10.0发行说明。”'
+description: '"[!DNL Adobe Experience Manager] 2020.10.0版as a Cloud Service發行說明」。'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版的发行说明  {#release-notes}
 
-以下部分概述了 [!DNL Experience Manager] as a Cloud Service2020.10.0。
+以下區段會概述以下專案的一般發行說明： [!DNL Experience Manager] as a Cloud Service2020.10.0。
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0是2020年10月28日。
-以下版本(2020.11.0)将于2020年12月1日发布。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2020.10.0為2020年10月28日。
+下列版本(2020.11.0)將於2020年12月1日發行。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* **[核心组件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)**:Adobe Experience Manager as a Cloud Service从最新版本的核心组件自动更新中受益。 第2.12.0版包括社区贡献的最新改进。 改进包括 [新的POST表单处理程序；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 包含自定义CSS、JavaScript和元数据的功能 [标记；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 用于简化自定义组件中Adobe数据层集成的实用程序。 请参阅 [更改列表](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 在2.12.0中。
+* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)**：Adobe Experience Manager as a Cloud Service受益於最新版本核心元件的自動更新。 版本2.12.0包含社群貢獻的最新改善。 改善專案包括 [新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 包含自訂CSS、JavaScript和中繼資料的功能 [透過內容感知設定的標籤；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 可簡化自訂元件中Adobe資料層整合的公用程式。 請參閱 [變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0版。
 
-* **[原型24项目](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**:建议的启动新Experience Manager项目的基础已得到改进。 现在，它包含了 [Adobe客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)，选项转到 [在AMP中交付站点，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 新 [扩展指向添加项目CSS/JS。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[專案原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**：建議的開始新Experience Manager專案基礎更臻完美。 現在包含新的 [Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)，的選項 [以AMP傳送網站，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 和新 [擴充功能點以新增專案CSS/JS。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
-* **[ContextHub文件夹](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**:能够创建受众文件夹，以便轻松组织、查找和选择要用于ContextHub选件定位功能的受众区段。
+* **[ContextHub資料夾](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：可建立受眾資料夾，以輕鬆組織、尋找和選取要用於ContextHub選件鎖定目標功能的受眾區段。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]powered video smart标记**:通过应用AI模型来分析特定对象和操作标记的视频内容，DAM用户可以花费更少的时间添加标记，并使用公开的丰富信息花费更多的时间。 反过来，您可以为客户提供正确的体验。 请参阅 [智能标记视频资产](/help/assets/smart-tags-video-assets.md).
+* **[!DNL Adobe Sensei]支援的視訊智慧標籤**：透過套用AI模型來分析物件和動作特定標籤的視訊內容，DAM使用者可以花更少的時間新增標籤，而有更多時間使用公開的、豐富的資訊。 反過來，您也能為客戶提供合適的體驗。 另請參閱 [智慧標籤視訊資產](/help/assets/smart-tags-video-assets.md).
 
-* **Brand Portal增强功能**:以下新增功能和更多功能在 [!DNL Brand Portal]. 有关详细信息，请参阅 [[!DNL Brand Portal] 发行说明](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
+* **Brand Portal增強功能**：下列新功能和更多內容在以下網站中提供： [!DNL Brand Portal]. 如需詳細資訊，請參閱 [[!DNL Brand Portal] 發行說明](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * [增强的下载体验](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 以简化、快速的下载。 管理员可以配置更多下载配置，以根据用户和企业的需求提供下载体验。
-   * 一键导航到“文件”， [收藏集](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)、和共享链接现在可从任何页面访问。
-   * 用户可以 [选择和下载特定演绎版](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 现在。 可在“资源详细信息”页面中的“演绎版”面板中找到下载演绎版的新选项。
-   * 来宾用户会话超时为15分钟，可确保所有并发用户获得更好的体验。
+   * [增強下載體驗](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 以簡化及加快下載速度。 管理员可以配置更多下载配置，以根据用户和企业的需求提供下载体验。
+   * 按一下即可導覽至「檔案」， [集合](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)，現在可以從任何頁面使用共用連結。
+   * 使用者可以 [選取並下載特定轉譯](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 立即。 可在“资源详细信息”页面中的“演绎版”面板中找到下载演绎版的新选项。
+   * 訪客使用者工作階段逾時15分鐘可確保所有並行使用者獲得更好的體驗。
 
-* **[!DNL Adobe Asset Link]版本2.1**:的新版本 [Adobe资产链接](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 扩展 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]和 [!DNL Adobe InDesign] 中。 它增加了与最新版本的兼容性 [!DNL Adobe Creative Cloud] 2020年10月发布的2021版应用程序。
+* **[!DNL Adobe Asset Link]版本2.1**：新版本的 [Adobe資產連結](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 擴充功能 [!DNL Adobe Photoshop]， [!DNL Adobe Illustrator]、和 [!DNL Adobe InDesign] 可用。 新增與最新版本的相容性 [!DNL Adobe Creative Cloud] 2020年10月發行的2021版應用程式。
 
-* **[!DNL Assets]WebP文件支持**: [!DNL Assets] as a Cloud Service现在支持WebP图像格式。 WebP是由Google创建的一种新兴图像格式。 WebP文件格式的图像与JPG或PNG文件在视觉上没有区别，而且文件要小得多。 降低资产的文件大小缩短了页面加载时间，并帮助内容创建者提供更快的Web体验。 了解如何在 [创建处理配置文件](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
+* **[!DNL Assets]WebP檔案支援**： [!DNL Assets] as a Cloud Service現在支援WebP影像格式。 WebP是Google建立的新興影像格式。 WebP檔案格式的影像在視覺上與JPG或PNG檔案沒有區別，而且檔案更小。 降低資產的檔案大小可改善頁面載入時間，並幫助內容建立者提供更快速的網頁體驗。 瞭解如何在中使用WebP [建立處理設定檔](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-* **适用于自适应Forms的Analytics**:现在，您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）的行为，以收集最终用户分析。 它有助于企业用户根据收集到的洞察信息，就自适应表单内容、布局和样式做出明智的决策。
+* **Analytics for Adaptive Forms**：您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）的行為，以收集一般使用者的深入解析。 它可協助商務使用者根據收集的深入分析，針對最適化表單內容、版面配置和樣式做出明智的決策。
 
 ### [!DNL Forms]预发行渠道中提供的新功能 {#prerelease-features-forms-oct-2021}
 
-* **将AEM工作流数据外部化以进行安全处理**:您可以将包含敏感个人数据(SPD)元素的正在处理的AEM工作流变量数据存储在客户管理的存储库中，以便进行安全处理。 处理工作流时，存储在工作流变量中的数据不会保留在AEM存储库中。 它是按需从客户管理的存储库获取的。
+* **外部化AEM Workflow資料以進行安全處理**：您可以將包含敏感個人資料(SPD)元素的程式內AEM Workflow變數資料儲存在客戶管理的存放庫中，以便安全處理。 處理工作流程時，儲存在工作流程變數中的資料不會儲存在AEM存放庫中。 系統會隨選從客戶管理的存放庫擷取。
 
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您将模板和XML数据结合起来，以生成各种格式的文档。 该服务允许您以同步和批处理模式生成文档。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**： [通訊API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 協助您合併範本和XML資料，以產生多種格式的檔案。 此服務可讓您以同步和批次模式產生檔案。
 
 您可以将电子邮件发送到 [!DNL formscsbeta@adobe.com] 以注册 Beta 项目。
 
-## Adobe Experience Manager商务as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已发布CIF Venia参考网站 — 2020.10.2，其中包含最新的CIF核心组件版本v1.4.0。请参阅 [CIF Venia参考网站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 以了解更多详细信息。
+* 已發行CIF Venia Reference Site - 2020.10.2，其中包含最新CIF Core Components v1.4.0版。請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 以取得更多詳細資料。
 
-* 已发布CIF核心组件v1.4.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 以了解更多详细信息。
+* 已發行CIF Core Components v1.4.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 以取得更多詳細資料。
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* 产品控制台和选取器中的GraphQL请求是通过HTTPPOST完成的。 此问题已修复，以确保Apollo GraphQL客户端遵循GraphQL客户端OSGi配置中的设置，以支持已配置的GET请求。
+* 產品控制檯和選取器中的GraphQL請求是透過HTTPPOST完成的。 此問題已修正，以確保Apollo GraphQL使用者端遵守GraphQL使用者端OSGi設定中的設定，以支援GET要求（若已設定）。
 
-* CIF云配置UI中为/lib和/apps/中的配置显示了“保存并关闭”按钮。 但这些界面是只读的，因此UI已修复为仅显示“关闭”按钮。
+* CIF雲端設定UI針對/lib和/apps/中的設定顯示「儲存並關閉」按鈕。 但由於這些介面是唯讀的，因此UI已修復為僅顯示「關閉」按鈕。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 发布日期 {#release-date-cm}
 
-Cloud Manager在Experience Manageras a Cloud Service中的发布日期为2020.10.0 2020年10月2日。
+Experience Manageras a Cloud Service2020.10.0中的Cloud Manager發行日期是2020年10月2日。
 
 ### [!DNL Cloud Manager] 的新增功能 {#what-is-new-cm}
 
@@ -85,45 +85,44 @@ Cloud Manager在Experience Manageras a Cloud Service中的发布日期为2020.10
 
 * 现在，进入休眠状态的环境在 Cloud Manager 中会显示离散状态。
 
-* Cloud Manager的“生成容器”现在支持使用Java™ 8或Java™ 11编译项目。 Maven工具链系统提供对Java™ 11的支持。
+* Cloud Manager「組建容器」現在支援使用Java™ 8或Java™ 11編譯專案。 Maven工具鏈系統支援Java™ 11。
 
 * 每个环境的环境变量数量已增加至 200 个。
 
-* “概述”页面上的“环境”卡现在最多可列出三个环境。 用户可以选择 **显示全部** 按钮以导航到“环境摘要”页以查看包含环境完整列表的表。
-请参阅 [查看环境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 以了解更多详细信息。
+* 總覽頁面上的環境卡現在會列出最多三個環境。 用户可以选择&#x200B;**全部显示**&#x200B;按钮导航到“环境”摘要页面，查看包含完整环境列表的表。 有关更多信息，请参阅[查看环境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
 * 在完全环境创建之前，从 Cloud Manager 到开发人员控制台的链接错误地处于活动状态。
 
-* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒项目的环境解除休眠/休眠的选项。
+* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒程序的环境解除休眠/休眠的选项。
 
-* 非生产管道编辑页面上的取消和保存按钮并不总是可见。
+* 非生产管道编辑页面上的“取消”和“保存”选项并非一直可见。
 
 * 代码质量控制过程中出现的某些问题可能会导致日志文件无法正确生成。
 
-* 创建项目时，建议的名称有时会返回与现有项目名称重复的名称。
+* 建立方案時，建議的名稱有時會傳回重複的現有方案名稱。
 
 * 无法始终通过用户界面下载一些大型管道步骤日志文件。
 
 * 验证环境名称时出现差一错误。
 
-* “环境”页面有时会显示不存在的发布区段和Dispatcher区段。
+* 環境頁面有時會在未顯示任何內容時顯示發佈和Dispatcher區段。
 
 ## Adobe Experience Manager as a Cloud Service 基础 {#cloud-service-foundation}
 
 ### 工作流 {#workflows}
 
-* 添加了基于工作流标题、工作流模型、状态、启动器、有效负荷路径和开始日期的用于搜索工作流实例的支持。 请参阅 [搜索工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* 已新增根據工作流程標題、工作流程模型、狀態、發起人、裝載路徑和開始日期來搜尋工作流程例項的支援。 另請參閱 [搜尋工作流程例項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
-## 内容转移工具 {#content-transfer-tool}
+## 内容传输工具 {#content-transfer-tool}
 
-进一步了解的新增功能和更新 [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 版本1.1.12。
+進一步瞭解的新增功能和更新 [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 發行版本1.1.12。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 改进了日志的用户体验。 提取和摄取日志中添加了时间戳。 添加了消息，以指示日志是否为空。
+* 改善記錄的使用者體驗。 擷取和內嵌記錄檔中新增的時間戳記。 已新增訊息，以指出記錄檔是否為空白。
 
 ### 错误修复 {#ctt-bug-fixes}
 
-* 如果迁移集包含的路径具有部分相似的文件名，则内容传输工具会跳过内容文件。
+* 如果移轉集包含的路徑具有部分相似的檔案名稱，則內容轉移工具會略過內容檔案。

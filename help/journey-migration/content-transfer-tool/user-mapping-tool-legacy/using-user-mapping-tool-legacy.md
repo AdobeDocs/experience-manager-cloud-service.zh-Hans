@@ -1,6 +1,6 @@
 ---
-title: 使用用户映射工具（旧版）
-description: 使用用户映射工具（旧版）
+title: 使用使用者對應工具（舊版）
+description: 使用使用者對應工具（舊版）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
@@ -11,119 +11,119 @@ ht-degree: 3%
 
 ---
 
-# 使用用户映射工具（旧版） {#using-user-mapping-tool}
+# 使用使用者對應工具（舊版） {#using-user-mapping-tool}
 
 >[!INFO]
 >
->本文档引用了该工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>本檔案旨在說明該工具的已棄用版本。 如需最新版本的詳細資訊，請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
-用户映射工具使用一个API，它允许通过电子邮件查找AdobeIdentity Management系统(IMS)用户，并返回其IMS ID。 此API要求用户为其组织创建客户端ID、客户端密钥和访问令牌或载体令牌。
+使用者對應工具使用API，可透過電子郵件查詢AdobeIdentity Management System (IMS)使用者並傳回其IMS ID。 此API要求使用者為其組織建立使用者端ID、使用者端密碼以及存取權或持有人權杖。
 
-## 设置用户映射工具 {#setting-up-user-mapping}
+## 設定使用者對應工具 {#setting-up-user-mapping}
 
-**先决条件：** 用户映射要求要将每个用户映射到其IMS ID，且其配置文件(在AEM中)和IMS中均有一个电子邮件地址。  请注意，即使用户使用电子邮件地址作为用户ID进行登录，但映射对该用户将不起作用，除非该电子邮件地址也位于配置文件中以及IMS中。
+**先決條件：** 使用者對應要求對應到其IMS ID的每個使用者在其AEM和IMS中的設定檔中都有一個電子郵件地址。  請注意，即使使用者使用電子郵件地址作為使用者ID登入，除非該電子郵件地址也位於設定檔以及IMS中，否則對應無法用於該使用者。
 
-请按照以下步骤进行设置：
+請依照下列步驟進行設定：
 
-1. 导航到 [Adobe Developer控制台](https://console.adobe.io) 用你的Adobe ID。
-1. 创建新项目或打开现有项目。
-1. 添加API — 单击 **添加到项目** 选择 **API**
-1. 选择用户管理API。  您必须具有系统管理员权限才能使用此选项。
-1. 创建JWT凭据。
-1. 生成密钥对，或上传公钥（rsa不是好方法）。  有个按钮， **生成公共/私有密钥对**，这将为您执行此操作。  确保同时保存公钥和私钥。
-1. 导航到用户管理API。
-1. 通过将您的私钥内容粘贴到文本框并单击，生成访问令牌（或载体令牌） **生成令牌**.
-1. 保存所有这些信息，例如 **客户端ID**, **客户端密钥**, **技术帐户ID**, **技术帐户电子邮件**, **组织ID**&#x200B;和 **访问令牌** 安全。
+1. 導覽至 [Adobe Developer主控台](https://console.adobe.io) 使用您的Adobe ID。
+1. 建立新專案或開啟現有專案。
+1. 新增API — 按一下 **新增至專案** 並選取 **API**
+1. 選擇使用者管理API。  您必須擁有系統管理員許可權才能使用此選項。
+1. 建立JWT認證。
+1. 產生金鑰組，或上傳公開金鑰（rsa沒有用）。  有一個按鈕， **產生公開/私密金鑰組**，會為您執行此操作。  請務必儲存公開金鑰和私密金鑰。
+1. 導覽至「使用者管理API」。
+1. 將您的私密金鑰內容貼入文字方塊並按一下，產生存取權杖（或持有人權杖） **產生Token**.
+1. 儲存所有這些資訊，例如 **使用者端ID**， **使用者端密碼**， **技術帳戶ID**， **技術帳戶電子郵件**， **組織ID**、和 **存取Token** 安全。
 
-## 访问用户映射工具的用户界面 {#user-interface}
+## 存取使用者對映工具的使用者介面 {#user-interface}
 
-用户映射工具已集成到内容传输工具中。 您可以从下载内容传输工具 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). 有关最新版本的更多详细信息，请参阅 [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md).
+「使用者對應工具」已整合至「內容轉移工具」。 您可以從以下位置下載「內容轉移工具」： [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). 如需最新版本的詳細資訊，請參閱 [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. 选择Adobe Experience Manager并导航到工具 — > **操作** -> **内容迁移**.
+1. 選取Adobe Experience Manager並導覽至工具 — > **作業** -> **內容移轉**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 
-1. 单击 **用户映射** 卡。
+1. 按一下 **使用者對應** 卡片。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
-1. 单击 **创建用户映射配置**.
+1. 按一下 **建立使用者對應設定**.
 
    >[!NOTE]
-   >如果跳过此步骤，则在提取阶段会跳过用户和组映射。
+   >如果您略過此步驟，在擷取階段將會略過使用者和群組對應。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
-   填充 **用户管理API配置**，如下所述。
+   填入欄位 **使用者管理API設定**，如下所述。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
 
-   * **组织ID**:输入要迁移Adobe的组织的Identity Management系统(IMS)组织ID。
+   * **組織ID**：輸入要移轉使用者之組織的AdobeIdentity Management System (IMS)組織ID。
 
       >[!NOTE]
-      >要获取组织ID，请登录 [Admin Console](https://adminconsole.adobe.com/) 如果您属于多个组织，请选择您的组织（在右上方）。 组织ID将位于该页面的URL中，格式如下 `xx@AdobeOrg`，其中xx是IMS组织ID。  或者，您也可以在 [Adobe Developer控制台](https://console.adobe.io) 页面。
+      >若要取得組織ID，請登入 [Admin Console](https://adminconsole.adobe.com/) 和選擇您的組織（在右上角區域），如果您屬於多個組織。 組織ID會位於該頁面的URL中，格式如下 `xx@AdobeOrg`，其中xx為IMS組織ID。  或者，您也可以在以下位置找到組織ID： [Adobe Developer主控台](https://console.adobe.io) 產生存取Token的頁面。
 
-   * **客户端ID**:输入您在设置步骤中保存的客户端ID。
+   * **使用者端ID**：輸入您在設定步驟中儲存的使用者端ID。
 
-   * **访问令牌**:输入您在设置步骤中保存的访问令牌。
+   * **存取Token**：輸入您從設定步驟儲存的存取Token。
 
       >[!NOTE]
-      >访问令牌每24小时过期一次，并且需要创建一个新令牌。 要创建新令牌，请返回 [Adobe Developer控制台](https://console.adobe.io)，选择项目，单击 **用户管理API** 并将相同的私钥粘贴到框中。
+      >存取Token每24小時過期一次，且需要建立新的Token。 若要建立新Token，請返回 [Adobe Developer主控台](https://console.adobe.io)，選擇您的專案，然後按一下 **使用者管理API** 並將相同的私密金鑰貼入方塊中。
 
-1. 填充字段后，单击 **测试配置** 以测试与用户管理API服务的连接。 如果连接成功，您将能够单击 **保存** 以保存配置。
+1. 填入欄位後，按一下 **測試設定** 測試與使用者管理API服務的連線。 如果連線成功，您就可以按一下 **儲存** 以儲存設定。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
-1. 保存配置后，选择配置并单击 **开始用户映射**.
+1. 儲存設定後，選取設定並按一下 **開始使用者對應**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. 单击 **开始** ，以启动用户映射流程。
+1. 按一下 **開始** 從對話方塊開始「使用者對應」程式。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   它会显示 **状态** as **正在运行**.
+   它顯示 **狀態** 作為 **執行中**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. 用户映射完成后，单击 **结果** 查看摘要。
+1. 使用者對應完成後，請按一下 **結果** 以檢視摘要。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* 完成用户映射后，您可以使用痕迹导航导航导航导航回内容迁移页面。 用户映射卡显示状态和时间戳。 单击 **内容传输** 创建要运行提取的迁移集。 请参阅 [运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) 以了解更多详细信息。
+   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下 **內容轉移** 建立移轉集以執行擷取。 請參閱 [執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) 以取得更多詳細資料。
 
 
-### 恢复用户映射过程 {#resume-user-mapping-process}
+### 繼續使用者對應程式 {#resume-user-mapping-process}
 
-如果由于以下任何原因而停止了用户映射过程：
+如果「使用者對應」程式由於下列任何原因而停止：
 
-* 所选用户 **停止用户映射**
-* 访问令牌在过程中过期，或
-* 其他原因
+* 選取的使用者 **停止使用者對應**
+* 存取Token在程式期間過期，或
+* 一些其他原因
 
    >[!NOTE]
-   >进程从进程停止的位置保存。
+   >進度會從程式停止的位置儲存。
 
-请按照以下步骤继续用户映射流程：
+請依照下列步驟繼續使用者對應程式：
 
-1. 单击 **查看日志** 查看用户映射日志以检查保存的进度。
+1. 按一下 **檢視記錄** 檢閱使用者對應記錄以檢查儲存的進度。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. 单击 **开始用户映射** 按钮以从其停止的位置恢复。
+1. 按一下 **開始使用者對應** 按鈕以從先前關閉的位置繼續。
 
    >[!NOTE]
-   >在重新启动之前，请确保访问令牌仍然有效或已刷新。
+   >在重新啟動之前，請確定存取權杖仍然有效或已重新整理。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. 单击 **开始** 来恢复用户映射进程。
+1. 按一下 **開始** 從對話方塊中繼續使用者對應程式。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   用户映射过程完成后，您将查看 **状态** as **已完成** 对于该特定配置。
+   「使用者對應」程式完成後，您將檢視 **狀態** 作為 **已完成** 的特定設定。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

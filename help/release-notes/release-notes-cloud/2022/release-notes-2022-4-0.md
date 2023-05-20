@@ -5,13 +5,13 @@ exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# 2022.4.0版发行说明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.4.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下章節概述2022.4.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >

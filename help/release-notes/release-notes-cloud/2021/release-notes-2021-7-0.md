@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1316'
-ht-degree: 26%
+ht-degree: 50%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->从此处，您可以导航到以前版本的发行说明；例如，2020年、2021年等年份的客户。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021等版本。
 
 >[!NOTE]
 >
@@ -23,44 +23,44 @@ ht-degree: 26%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本(2021.7.0)是2021年7月29日发行的。
-以下版本(2021.8.0)发布于2021年8月26日。
+的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2021.7.0)為2021年7月29日。
+以下版本(2021.8.0)的發佈日期為2021年8月26日。
 
 ## 发布视频 {#release-video}
 
-请查看 [2021年7月版概述](https://video.tv.adobe.com/v/335580) 视频，了解添加的功能摘要。
+請檢視 [2021年7月版本總覽](https://video.tv.adobe.com/v/335580) 影片以瞭解新增功能的摘要。
 
-## Experience Manager基础as a Cloud Service {#foundation}
+## Experience Manager Foundationas a Cloud Service {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 更灵活的调度程序配置：项目可以更轻松地进行组织。 例如，您现在可以包含多个反映网站结构的重写规则文件。 [了解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 此灵活模式，包括如何构建调度程序配置以利用此模式。
-* 应将复制代理的“分发”选项卡下的树复制UI视为已弃用，并计划在9月30日之后删除。 [了解](/help/operations/replication.md#tree-activation) 替代复制策略。
-* 捆绑 `org.apache.sling.datasource-1.0.4.jar` for Sling数据源支持已被删除，因为它的功能已过时，客户没有使用。
+* 更靈活的Dispatcher設定：更輕鬆地組織專案。 例如，您現在可以包含反映網站結構的多個重寫規則檔案。 [瞭解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 此彈性模式，包括如何建構您的Dispatcher設定，以妥善運用。
+* 在復寫代理程式的「散發」標籤下方的樹狀結構復寫UI應視為不建議使用，並計畫於9月30日後移除。 [瞭解](/help/operations/replication.md#tree-activation) 替代復寫策略。
+* 組合 `org.apache.sling.datasource-1.0.4.jar` 的Sling資料來源支援已移除，因為其功能已過時且未由客戶使用。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* “内容自动化”功能允许 [!DNL Experience Manager Assets] 利用 [!DNL Adobe Creative Cloud] 用于大规模自动化资产生产的API。 它可显着减少创建同一资产变体所需的时间和迭代次数，从而提高内容速度。 该功能不需要任何编程，也可从DAM内工作。 请参阅 [使用Creative Cloud集成生成资产变体](/help/assets/cc-api-integration.md).
+* 內容自動化功能可讓 [!DNL Experience Manager Assets] 善用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少建立相同資產變體所需的時間和反複工作，進而加快內容速度。 此功能不需要從DAM中進行任何程式設計和工作。 另請參閱 [使用Creative Cloud整合產生資產的變體](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本地预览PDF文档。 此功能允许用户预览多页PDF文件，而无需进行任何文件处理或转换。 此功能改进了与的奇偶校验 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停放控件以及全屏查看。 用户案例还可预览页面和书签并跳转到页面和书签。 支持对文件本身的注释，在将来的版本中将添加对PDF文件内内容的注释和注释。
+* [!DNL Experience Manager Assets] 包含 [!DNL Document Cloud] PDF檢視器以原生方式預覽PDF檔案。 此功能可讓使用者預覽多頁PDF檔案，而不需進行任何檔案處理或轉換。 此功能可改善 [!DNL Experience Manager] 6.5.檢視器中可用的控制項包括縮放、瀏覽至頁面、取消固定控制項，以及全熒幕檢視。 使用者案例也可預覽和跳至頁面和書籤。 支援檔案本身的註解，未來版本會新增對PDF檔案內內容的註解和附註。
 
-   ![在中预览PDF文件 [!DNL Experience Manager] 使用PDF查看器](/help/assets/assets/preview-pdf-file-viewer.png)
+   ![在中預覽PDF檔案 [!DNL Experience Manager] 使用PDF檢視器](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* Linkshare下载功能使用异步下载来提高下载速度。 请参阅 [下载使用链接共享共享的资产](/help/assets/download-assets-from-aem.md#link-share-download).
+* Linkshare下載功能會使用可提高下載速度的非同步下載。 另請參閱 [下載使用連結共用所共用的資產](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![下载收件箱](/help/assets/assets/download-inbox.png)
+   ![下載收件匣](/help/assets/assets/download-inbox.png)
 
-* 视图设置经过增强，允许用户选择默认视图和默认排序参数。
+* 已增強檢視設定，讓使用者可選擇預設檢視和預設排序引數。
 
-   ![在中设置默认视图 [!UICONTROL 查看设置]](/help/assets/assets/view-settings-for-defaults.png)
+   ![設定預設檢視於 [!UICONTROL 檢視設定]](/help/assets/assets/view-settings-for-defaults.png)
 
-* 用户可以根据属性谓词搜索和筛选文件夹。
+* 使用者可以根據屬性述詞搜尋和篩選資料夾。
 
-   ![使用搜索谓词筛选搜索文件夹](/help/assets/assets/search-folders-via-predicates.png)
+   ![使用搜尋述詞篩選搜尋資料夾](/help/assets/assets/search-folders-via-predicates.png)
 
-### 的新增功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
+### 中可用的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
 
 <!-- TBD: Not sure about GA of these enh. Shall check with the team.
 
@@ -73,11 +73,11 @@ ht-degree: 26%
   ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
 -->
 
-* 当您以链接形式共享数字资产时，用户可以将URL复制到剪贴板。 通过增强功能，您可以更快、更方便地共享资产。
+* 當您以連結形式共用數位資產時，使用者可以將URL複製到剪貼簿。 此增強功能可讓您以更快、更方便的方式共用資產。
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
-API `com.day.cq.dam.api.collection.SmartCollection` 在 [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
+API `com.day.cq.dam.api.collection.SmartCollection` 不可用於 [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -88,7 +88,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在 [!DNL Experience Manager
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。此服務可讓您以同步模式產生檔案。 API 使您能够创建应用程序，这些应用程序允许您：
    * 使用 XML 数据填充模板文件来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    * 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -103,42 +103,42 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在 [!DNL Experience Manager
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF核心组件v2
-   * 简化和改进了PDP/PLP URL和SEO配置
-   * 在创作模式下暂存产品数据的可视指示器，可更好地显示即将发生的更改
-   * 用于内容和商务页面的新站点地图组件
+* CIF Core Components v2
+   * 簡化並改善PDP/PLP URL和SEO的設定
+   * 在製作模式中暫存產品資料的視覺指標，可更清楚顯示即將發生的變更
+   * 內容和商務頁面的新Sitemap元件
 
-* 支持 [Adobe Commerce Sensei产品推荐，由Adobe Sensei提供支持](https://business.adobe.com/products/magento/product-recommendations.html) 在AEM Storefront中使用预定义或即时创建的推荐
+* 支援 [Adobe Commerce Sensei產品推薦，由Adobe Sensei提供技術支援](https://business.adobe.com/products/magento/product-recommendations.html) 在AEM Storefront中使用預先定義或即時建立的建議
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 ### 错误修复 {#bug-fixes-screens}
 
-* 现在，将在创建或更新期间验证内容提供程序设置。
+* 內容提供者設定現在會在建立或更新期間進行驗證。
 
-* 所有显示的视图都包含文件夹列。
+* 所有顯示檢視都有資料夾欄。
 
-* 您可以展开Screens内容结构。
+* 您可以展開Screens內容結構。
 
-* `bulk-offline-update-service` 缺少某些环境的所有权限。
+* `bulk-offline-update-service` 缺少某些環境的所有許可權。
 
-* 更新了帮助链接以匹配新的screens云文档。
+* 更新說明連結以符合新的screens cloud檔案。
 
-* 现在可以取消分配播放列表并禁止删除分配了播放器的播放列表。
+* 現在可以取消指派播放清單並禁止移除已指派播放器的播放清單。
 
-* 现在，在清除“所有”缓存时，播放器会重新下载资产。
+* 「全部」快取清除後，播放器現在會重新下載資產。
 
-* 如果 *结束时间* 设置为后一天。
+* 重複排程現在有效，如果 *結束時間* 設為隔天。
 
-* `Back&Forward` 现在可在Screensas a Cloud ServiceUI中使用。
+* `Back&Forward` 現在適用於Screensas a Cloud ServiceUI。
 
-* 无法在之前创建名称相同但命名空间不同的标记。
+* 無法更早建立具有相同名稱但不同名稱空間的標籤。
 
-## XML Documentation for Experience Manageras a Cloud Service {#xml-documentation}
+## Experience Manageras a Cloud Service的XML Documentation {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-XML Documentation forExperience Manageras a Cloud Service功能通常可用。 它允许Experience Manageras a Cloud Service客户促进XML Documentation添加，以便跨多个渠道(包括Experience Manager Sites)导入、创建、管理和提供技术内容。
+適用於Experience Manageras a Cloud Service的XML Documentation現已正式推出。 它可讓Experience Manageras a Cloud Service的客戶取得XML Documentation附加元件，以跨多個管道(包括Experience Manager Sites)匯入、建立、管理和傳遞技術內容。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -146,51 +146,50 @@ XML Documentation forExperience Manageras a Cloud Service功能通常可用。 �
 
 ### 发布日期 {#release-cm-july}
 
-AEM 2021.7.0版中Cloud Manager的发布日期是2021年7月15日。
-下一版本计划于2021年8月12日发布。
+AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年 7 月 15 日。下一版本計畫於2021年8月12日發行。
 
 ### 新增功能 {#what-is-new-cm-july}
 
-* 现在，客户能够将Azul 8和11个JDK用于其Cloud Manager构建过程，并且可以选择将其中一个JDK用于与工具链兼容的Maven插件 *或* 整个Maven进程的执行。
+* 客户现在可以将 Azul 8 和 11 JDK 用于其 Cloud Manager 构建过程，并且可以选择将这些 JDK 之一用于与工具链兼容的 Maven 插件&#x200B;*或*&#x200B;整个 Maven 流程执行。
 
-* 出站出口IP现在将记录在生成步骤日志文件中。
+* 出站出口 IP 现在将记录在构建步骤日志文件中。
 
-* 运行旧版AEM的暂存和生产环境现在将报告 **更新可用**.
+* 运行旧版本的 AEM 的暂存环境和生产环境现在将报告&#x200B;**更新可用**&#x200B;状态。
 
-* 支持的最大SSL证书数已增加到每个计划20个。
+* 每个程序支持的 SSL 证书的最大数量已增至 20。
 
-* 每个环境可配置的最大域数已增加到500个。
+* 每个环境可配置的域的最大数量已增至 500。
 
-* 的 **管理Git** 按钮已重新命名为 **访问Git信息** 对话框已刷新。
+* **管理 Git** 按钮已更名为&#x200B;**访问 Git 信息**，并且对话框的外观已更新。
 
-* Cloud Manager使用的AEM项目原型版本已更新至版本28。
+* Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 28。
 
 ### 错误修复 {#bug-fixes-cm-july}
 
-* 在某些情况下，将IP允许列表绑定到环境时，“预览”不是可用选项。
+* 在某些情况下，将 IP 允许列表绑定到环境时，“预览”选项不可用。
 
-* 手动导航到非现有执行的执行详细信息页面不会显示错误，只是显示无休止的加载屏幕。
+* 手动导航到不存在的执行的执行详细信息页面并没有显示错误，只显示了一个无休止的加载屏幕。
 
-* 达到最大数量的SSL证书时显示的错误消息不起作用。
+* 当达到 SSL 证书的最大数量时显示的错误消息没有帮助。
 
-* 在某些情况下，在的管道卡中显示的发行版本可能存在差异 **概述** 页面。
+* 在某些情况下，**概述**&#x200B;页面上的管道信息卡中显示的版本可能存在差异。
 
-* “添加程序向导”错误地指示创建后无法更改名称。
+* 添加程序向导错误地指出，创建后无法更改名称。
 
 ### 已知问题 {#known-issues-cm-july}
 
-切换使用Azul JDK的客户应该注意到，并非所有现有应用程序都会在Azul JDK上编译而不出错。 强烈建议在切换前在本地进行测试。
+改用 Azul JDK 的客户应该知道，并非所有现有应用程序都能在 Azul JDK 上编译无误。 强烈建议在切换前进行本地测试。
 
 ## Cloud Acceleration Manager {#cam}
 
 ### 发布日期 {#release-date-july-cam}
 
-Cloud Acceleration Manager的发布日期是2021年7月15日。
+Cloud Acceleration Manager的發行日期為2021年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager是一个基于云的应用程序，旨在引导您的IT团队完成从规划到上线的整个过渡历程。Cloud Service 通过Adobe推荐的最佳实践、提示、文档和工具，为成功的迁移设置团队，以便在到AEM作为Cloud Service的历程的每个阶段提供帮助。 了解更多 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。瞭解更多 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 >[!NOTE]
 >
-> 查看此 [Cloud Acceleration Manager演示视频](https://video.tv.adobe.com/v/335547).
+> 檢查此 [Cloud Acceleration Manager示範影片](https://video.tv.adobe.com/v/335547).

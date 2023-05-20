@@ -3,9 +3,9 @@ title: 个性化和内容定位
 description: 了解如何使用 AEM 创建个性化、有针对性的内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,8 +117,8 @@ AEM 提供了一个内置定位引擎 [ContextHub](/help/implementing/developing
 
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 定位引擎允许从 Adobe Target 中跟踪的页面访问收集信息。
 
-* 使用此定位引擎时，您可以使用从 Adobe Target 导入的区段来定义体验受众。
-* 使用 Adobe Target 引擎的活动会[同步到 Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)。
+* 使用此鎖定目標引擎時，您可以使用從Adobe Target匯入的區段來定義體驗的對象。
+* 使用Adobe Target引擎的活動包括 [已同步至Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 [与 Adobe Target 集成后](/help/sites-cloud/integrating/integrating-adobe-target.md)，您便可以使用此引擎。
 

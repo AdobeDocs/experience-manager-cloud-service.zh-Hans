@@ -1,10 +1,10 @@
 ---
 title: 存储库浏览器
 seo-title: Repository Browser
-description: 存储库浏览器为创作层、发布层和预览层上的所有环境提供了对存储库的只读视图。
+description: 存放庫瀏覽器為作者、發佈和預覽層級上的所有環境提供存放庫的唯讀檢視。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
+source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 2%
@@ -15,113 +15,113 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->存储库浏览器在AEM版本6582及更高版本上可用。
+>存放庫瀏覽器適用於AEM 6582版及更新版本。
 
 >[!INFO]
 >
->您还可以观看 [这个剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) 有关如何使用存储库浏览器调试AEMas a Cloud Service的快速视频介绍。
+>您也可以觀看 [此剪輯](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) 有關如何使用存放庫瀏覽器對AEMas a Cloud Service進行偵錯的快速影片簡介。
 
 ## 简介 {#introduction}
 
-存储库浏览器是一个开发人员工具，它为创作层、发布层和预览层上的所有环境提供了对存储库的只读视图。 它旨在便于查看内容结构，以便更便于查看或调试内容。
+存放庫瀏覽器是開發人員工具，可為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 其設計旨在方便檢視內容結構，以便更輕鬆地檢視內容或為內容除錯。
 
-可从开发人员控制台访问，以用于浏览所选环境的创作实例或发布实例的存储库。
+可從開發人員控制檯存取，它可用來瀏覽所選環境的作者或發佈執行個體的存放庫。
 
-### 访问先决条件 {#access-prerequisites}
+### 存取必要條件 {#access-prerequisites}
 
-必须满足以下条件才能访问开发人员控制台或存储库浏览器
+若要存取開發人員控制檯或存放庫瀏覽器，以下條件必須滿足
 
-要访问开发人员控制台，请执行以下操作：
+若要存取開發人員主控台：
 
-* 对于生产程序，用户必须具有 **Cloud Manager — 开发人员角色** Admin Console
-* 对于沙盒程序，具有产品用户档案且有权访问AEMas a Cloud Service的任何用户均可使用该程序。
+* 對於生產計畫，使用者必須具有 **Cloud Manager — 開發人員角色** 在Admin Console中
+* 對於沙箱計畫，它可供任何具有產品設定檔的使用者使用，以讓他們存取AEMas a Cloud Service。
 
-要访问存储库浏览器，请执行以下操作：
+若要存取「存放庫瀏覽器」：
 
-* 用户必须具有 **Cloud Manager — 开发人员** 在Admin Console中查看创作和发布实例的角色。
-* 此外，对于作者而言，具有AEM Users产品配置文件的用户可以以最低的读取权限查看存储库浏览器；浏览存储库时，将遵守用户的权限。 具有AEM管理员产品配置文件的用户可以查看具有完全读取访问权限的存储库浏览器。
+* 使用者必須具備 **Cloud Manager — 開發人員** 在Admin Console中檢視「作者」和「發佈」例項的角色。
+* 此外，對於作者，具有AEM使用者產品設定檔的使用者能夠以最低的讀取存取權檢視存放庫瀏覽器；瀏覽存放庫時會考量使用者的許可權。 具有AEM管理員產品設定檔的使用者可以完整讀取許可權檢視存放庫瀏覽器。
 
-有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+如需設定使用者許可權的詳細資訊，請參閱 [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
-### 启动存储库浏览器 {#launching-the-repository-browser}
+### 啟動存放庫瀏覽器 {#launching-the-repository-browser}
 
-可以按照以下步骤启动存储库浏览器。
+您可以依照下列步驟啟動存放庫瀏覽器。
 
-1. 在Cloud Manager中，单击所选环境旁边的三个圆点，然后选择 **开发人员控制台**
+1. 在Cloud Manager中，按一下所選環境旁的三個點，然後選取 **開發人員主控台**
 
-   ![repbrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
+   ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
-1. 接下来，单击 **存储库浏览器** 选项卡
-1. 通过单击 **面板** 下拉列表。
+1. 接下來，按一下 **存放庫瀏覽器** 標籤
+1. 按一下「 」，選擇與作者、發佈或預覽相對應的任何pod **Pod** 下拉式清單。
 
-   ![repbrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
+   ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. 通过单击 **打开存储库浏览器** 进一步下链接。 这将启动与所选层的代表性实例（面板）对应的浏览器。 这将启动与所选层的代表性实例（面板）对应的浏览器。 请注意，您无法控制所启动层的特定面板。
+1. 按一下「 」，啟動存放庫瀏覽器 **開啟存放庫瀏覽器** 進一步向下連結。 這會啟動與所選層級之代表性例項(pod)對應的瀏覽器。 這會啟動與所選層級之代表性例項(pod)對應的瀏覽器。 請注意，您無法控制已啟動之該階層的特定Pod。
 
 ## 功能 {#features}
 
-### 导航层次结构 {#navigate-the-hierarchy}
+### 瀏覽階層 {#navigate-the-hierarchy}
 
-您可以使用左侧导航窗格在内容层次结构中进行分析。 单击每个文件夹或节点将显示其子项。 文件夹结构反映Sling资源树，该树是JCR节点树的超集。
+您可以使用左側導覽窗格來導覽內容階層。 按一下每個資料夾或節點會顯示其子系。 資料夾結構會反映Sling資源樹狀結構，這是JCR節點樹狀結構的超級集。
 
-![repbrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-或者，您也可以通过在 **路径** 字段，如下所示。 此外，它还将在左侧的内容层次结构视图中展开其位置。
+或者，您也可以直接導覽至路徑，方法是在 **路徑** 欄位，如下所示。 這也會擴展其在左側內容階層檢視中的位置。
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-每当您单击左侧的文件夹时，“路径”字段会自动填充其位置。 这对于复制和粘贴值以供以后使用非常有用。
+每當您按一下左側的資料夾時，「路徑」欄位就會自動填入其位置。 這對於複製和貼上值以供稍後使用非常有用。
 
-此外，单击文件夹时，会动态修改URL以包含该文件夹的路径。 这允许添加书签的URL。
+此外，當您按一下資料夾時，URL會動態修改以包含該資料夾的路徑。 這允許使用可書籤的URL。
 
-对于发布，默认情况下，存储库浏览器将仅显示公共内容，因此某些文件夹(如 `/conf` 或 `/home` 将不可见。
+對於發佈，依預設，存放庫瀏覽器將只會顯示公開內容，因此某些資料夾 `/conf` 或 `/home` 將不可見。
 
-要使这些位置可见，您需要按照以下步骤操作。
+為了讓這些位置可見，您需要遵循以下程式。
 
-1. 单击所选环境旁边的三个圆点，然后选择 **管理访问权限**
+1. 按一下所選環境旁的三個點，然後選取 **管理存取權**
 
-   ![repbrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
+   ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. 找到您的发布实例，然后单击该实例
+1. 尋找您的發佈執行個體，然後按一下它
 
-   ![repbrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
+   ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. 为发布管理员创建新的产品配置文件。 在以下示例中，它称为 **开发 — AEM管理员发布**
+1. 為發佈管理員建立新的產品設定檔。 在以下範例中，它稱為 **開發 — AEM管理員發佈**
 
-   ![repbrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
+   ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. 将相应的用户（对应于应能够导航具有完全访问权限的发布存储库浏览器的用户）添加到新产品配置文件
+1. 將適當的使用者（對應於應能瀏覽發佈存放庫瀏覽器並擁有完整存取權的使用者）新增至新產品設定檔
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. 等待几分钟，然后打开 **AEM作者** 控制台
-1. 将与新产品配置文件对应的组添加为管理员组的成员。 您可以通过单击 **工具 — 安全 — 创作组**，然后单击 **管理员** 群组。 然后，按如下所示添加群组
+1. 等候幾分鐘，然後開啟 **AEM作者** 主控台
+1. 將對應到新產品設定檔的群組新增為管理員群組的成員。 若要這麼做，請按一下 **工具 — 安全性 — 作者群組**，然後按一下 **管理員** 群組。 然後，新增群組，如下所示
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. 激活 **管理员** 和新 **开发 — AEM管理员发布** 群组，以便在发布时可用
+1. 啟動 **管理員** 和新的 **開發 — AEM管理員發佈** 群組，以便在發佈時可用
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. 作为一项良好的安全实践，请删除 **开发 — AEM管理员发布** 组 **作者** 这样，新组便被隔离以发布
+1. 根據良好的安全性實務，請移除新的 **開發 — AEM管理員發佈** 管理員群組中的群組 **作者** 因此新群組會隔離以發佈
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. 访问发布实例的存储库浏览器时，所有文件夹都可见，包括 `/home` 和 `/conf`.
+1. 存取發佈執行個體的存放庫瀏覽器時，所有資料夾皆可見，包括 `/home` 和 `/conf`.
 
-### 查看JCR属性 {#view-jcr-properties}
+### 檢視JCR屬性 {#view-jcr-properties}
 
-单击某个节点将在导航浏览器的右侧窗格中显示其JCR属性。 以下是 `experience-fragments` 节点。
+按一下節點，會在導覽瀏覽器的右側窗格中顯示其JCR屬性。 以下範例適用於 `experience-fragments` 節點。
 
-![repbrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
+![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### 查看内容 {#view-content}
 
-您可以使用存储库浏览器通过单击导航窗格中的资源来查看内容。 这将在浏览器右侧以相应资源命名的选项卡下打开预览。
+您可以按一下導覽窗格中的資源，使用存放庫瀏覽器來檢視內容。 這會在瀏覽器右側的標籤下方，以個別資源命名的標籤開啟預覽。
 
-![repbrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
+![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-预览功能当前适用于以下列表中的图像类型：
+預覽目前可用於下列清單中的影像型別：
 
 * apng
 * avif
@@ -131,18 +131,18 @@ ht-degree: 2%
 * svg+xml
 * webp
 * bmp
-* x图标
+* x-icon
 * tiff
 
-对于以下基于文本的mime类型：
+以及下列文字型MIME型別：
 
 * `"text/*"`
 * `'application/javascript'`
 * `'application/json'`
 * `'application/x-sh'`
 
-### 下载内容 {#download-content}
+### 下載內容 {#download-content}
 
-您还可以使用存储库浏览器下载内容。 在以下示例中，您可以按 **下载** 下载链接 `jcr:data` 与选定节点关联。 通过导航到包含属性定义的节点，此功能可用于所有二进制属性。
+您也可以使用存放庫瀏覽器來下載內容。 在以下範例中，您可以按下 **下載** 下載連結 `jcr:data` 與所選節點相關聯。 導覽至包含屬性定義的節點，此功能適用於所有二進位屬性。
 
-![repbrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)
+![repobrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)

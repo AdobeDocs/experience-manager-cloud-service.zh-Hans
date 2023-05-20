@@ -1,6 +1,6 @@
 ---
-title: 如何配置数据源？
-description: Experience Manager Forms数据集成允许您配置不同的数据源并将其连接到不同的数据源。 了解如何将RESTful Web服务、基于SOAP的Web服务和OData服务配置为数据源，并使用它们创建表单数据模型。
+title: 如何設定資料來源？
+description: Experience Manager Forms資料整合可讓您設定並連線至不同的資料來源。 瞭解如何將RESTful Web服務、以SOAP為基礎的Web服務和OData服務設定為資料來源，並使用它們來建立表單資料模型。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -14,49 +14,49 @@ ht-degree: 2%
 
 # 配置数据源 {#configure-data-sources}
 
-![数据集成](do-not-localize/data-integeration.png)
+![資料整合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 数据集成允许您配置不同的数据源并将其连接到不同的数据源。 支持开箱即用的以下类型：
+[!DNL Experience Manager Forms] 資料整合可讓您設定並連線至不同的資料來源。 下列是支援的現成可用型別：
 
-* 关系数据库 — MySQL、 [!DNL Microsoft SQL Server], [!DNL IBM DB2]和 [!DNL Oracle RDBMS]
-* RESTful Web服务
-* 基于SOAP的Web服务
-* OData服务（版本4.0）
+* 關聯式資料庫 — MySQL、 [!DNL Microsoft SQL Server]， [!DNL IBM DB2]、和 [!DNL Oracle RDBMS]
+* RESTful Web服務
+* 以SOAP為基礎的網站服務
+* OData服務（4.0版）
 * Microsoft® Dynamics
 * SalesForce
-* Microsoft® Azure Blob Storage
+* Microsoft® Azure Blob儲存體
 
-数据集成支持OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证和API密钥现成身份验证类型，并允许实施自定义身份验证以访问Web服务。 而RESTful、基于SOAP和OData服务在 [!DNL Experience Manager] as a Cloud Service、关系数据库的JDBC和 [!DNL Experience Manager] 用户配置文件配置在 [!DNL Experience Manager] web控制台。
+資料整合支援OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證和API金鑰驗證型別為現成可用，並允許實作自訂驗證以存取Web服務。 設定RESTful、SOAP和OData服務的時間 [!DNL Experience Manager] as a Cloud Service，關聯式資料庫的JDBC和聯結器 [!DNL Experience Manager] 使用者設定檔設定於 [!DNL Experience Manager] 網頁主控台。
 
-## 配置关系数据库 {#configure-relational-database}
+## 設定關聯式資料庫 {#configure-relational-database}
 
 ### 前提条件
 
-在使用 [!DNL Experience Manager] Web控制台配置中，必须执行以下操作：
-* [通过cloud manager API启用高级网络](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下会禁用端口。
-* [在Maven中添加JDBC驱动程序依赖项](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+使用設定關聯式資料庫之前 [!DNL Experience Manager] Web主控台設定，必須：
+* [透過Cloud Manager API啟用進階網路](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因為連線埠預設為停用。
+* [在Maven中新增JDBC驅動程式相依性](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
-### 配置关系数据库的步骤
+### 設定關聯式資料庫的步驟
 
-您可以使用 [!DNL Experience Manager] Web控制台配置。 执行以下操作：
+您可以使用以下專案設定關聯式資料庫： [!DNL Experience Manager] Web主控台設定。 执行以下操作：
 
-1. 转到 [!DNL Experience Manager] 网站控制台 `https://server:host/system/console/configMgr`.
-1. 定位 **[!UICONTROL Day Commons JDBC连接池]** 配置。 点按以在编辑模式下打开配置。
+1. 前往 [!DNL Experience Manager] Web主控台： `https://server:host/system/console/configMgr`.
+1. 尋找 **[!UICONTROL Day Commons JDBC連線集區]** 設定。 點選以在編輯模式中開啟設定。
 
-   ![JDBC连接器池](/help/forms/assets/jdbc_connector.png)
+   ![JDBC聯結器集區](/help/forms/assets/jdbc_connector.png)
 
-1. 在配置对话框中，指定要配置的数据库的详细信息，例如：
+1. 在設定對話方塊中，指定您要設定的資料庫詳細資訊，例如：
 
-   * JDBC驱动程序的Java™类名称
-   * JDBC连接URI
-   * 与JDBC驱动程序建立连接的用户名和密码
-   * 在 **[!UICONTROL 验证查询]** 字段来验证池中的连接。 查询必须至少返回一行。 根据您的数据库，指定以下任一项：
-      * 选择1（MySQL和MS SQL）
-      * 从双(Oracle)中选择1
-   * 数据源的名称
+   * JDBC驅動程式的Java™類別名稱
+   * JDBC連線URI
+   * 與JDBC驅動程式建立連線的使用者名稱和密碼
+   * 在中指定SQL SELECT查詢 **[!UICONTROL 驗證查詢]** 用於驗證來自集區的連線的欄位。 查詢至少必須傳回一列。 根據您的資料庫，指定下列其中一項：
+      * 選取1 （MySQL和MS SQL）
+      * 選擇1個，雙(Oracle)
+   * 資料來源的名稱
 
-   用于配置关系数据库的示例字符串：
+   設定關聯式資料庫的範例字串：
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -66,11 +66,11 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 请参阅 [使用JDBC DataSourcePool的SQL连接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以了解更多详细信息。
+   > 參考 [使用JDBC DataSourcePool的SQL連線](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以取得更多詳細資訊。
 
-1. 点按 **[!UICONTROL 保存]** 以保存配置。
+1. 點選 **[!UICONTROL 儲存]** 以儲存設定。
 
-现在，您可以将配置的关系数据库与表单数据模型一起使用。
+現在，您可以將已設定的關聯式資料庫與表單資料模型搭配使用。
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -93,101 +93,101 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Tap **[!UICONTROL Save]** to save the configuration. -->
 
-## 为云服务配置配置文件夹 {#cloud-folder}
+## 設定雲端服務設定的資料夾 {#cloud-folder}
 
-为RESTful、SOAP和OData服务配置云服务时，需要配置云服务文件夹。
+設定RESTful、SOAP和OData服務的雲端服務需要雲端服務資料夾的設定。
 
-中的所有云服务配置 [!DNL Experience Manager] 在 `/conf` 文件夹 [!DNL Experience Manager] 存储库。 默认情况下， `conf` 文件夹包含 `global` 您可以在其中创建云服务配置的文件夹。 但是，您必须为云配置手动启用它。 您还可以在 `conf` 创建和组织云服务配置。
+中的所有雲端服務設定 [!DNL Experience Manager] 已整合至 `/conf` 資料夾位於 [!DNL Experience Manager] 存放庫。 根據預設， `conf` 資料夾包含 `global` 資料夾，您可在其中建立雲端服務設定。 不過，您必須手動為雲端設定啟用它。 您也可以在中建立其他資料夾 `conf` 建立和組織Cloud Service設定。
 
-要为云服务配置配置文件夹，请执行以下操作：
+若要設定雲端服務設定的資料夾：
 
-1. 转到 **[!UICONTROL 工具>常规>配置浏览器]**.
-   * 请参阅 [配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 文档以了解更多信息。
-1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤以为云服务配置创建和配置其他文件夹。
+1. 前往 **[!UICONTROL 「工具」>「一般」>「設定瀏覽器」]**.
+   * 請參閱 [設定瀏覽器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 說明檔案以取得詳細資訊。
+1. 請執行以下操作來啟用雲端設定的全域資料夾，或跳過此步驟來建立和設定雲端服務設定的另一個資料夾。
 
-   1. 在 **[!UICONTROL 配置浏览器]**，选择 `global` 文件夹，然后点按 **[!UICONTROL 属性]**.
+   1. 在 **[!UICONTROL 設定瀏覽器]**，選取 `global` 資料夾並點選 **[!UICONTROL 屬性]**.
 
-   1. 在 **[!UICONTROL 配置属性]** 对话框，启用 **[!UICONTROL 云配置]**.
+   1. 在 **[!UICONTROL 設定屬性]** 對話方塊，啟用 **[!UICONTROL 雲端設定]**.
 
-   1. 点按 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
+   1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存設定並結束對話方塊。
 
-1. 在 **[!UICONTROL 配置浏览器]**，点按 **[!UICONTROL 创建]**.
-1. 在 **[!UICONTROL 创建配置]** 对话框，为文件夹指定标题，然后启用 **[!UICONTROL 云配置]**.
-1. 点按 **[!UICONTROL 创建]** 创建云服务配置启用的文件夹。
+1. 在 **[!UICONTROL 設定瀏覽器]**，點選 **[!UICONTROL 建立]**.
+1. 在 **[!UICONTROL 建立設定]** 對話方塊，指定資料夾的標題，然後啟用 **[!UICONTROL 雲端設定]**.
+1. 點選 **[!UICONTROL 建立]** 以建立為雲端服務設定啟用的資料夾。
 
-## 配置RESTful Web服务 {#configure-restful-web-services}
+## 設定RESTful Web服務 {#configure-restful-web-services}
 
-RESTful Web服务可使用 [Swagger规范](https://swagger.io/specification/v2/) JSON或YAML格式 [!DNL Swagger] 定义文件。 要在 [!DNL Experience Manager] as a Cloud Service，确保您 [!DNL Swagger] 文件([Swagger版本2.0](https://swagger.io/specification/v2/))或 [!DNL Swagger] 文件([Swagger版本3.0](https://swagger.io/specification/v3/))或托管文件的URL上。
+RESTful Web服務可使用以下方式描述： [Swagger規格](https://swagger.io/specification/v2/) JSON或YAML格式 [!DNL Swagger] 定義檔案。 若要在中設定RESTful Web服務 [!DNL Experience Manager] as a Cloud Service，請確定您擁有 [!DNL Swagger] 檔案([Swagger 2.0版](https://swagger.io/specification/v2/))或 [!DNL Swagger] 檔案([Swagger 3.0版](https://swagger.io/specification/v3/))或託管檔案的URL上。
 
-### 为Open API规范版本2.0配置RESTful服务 {#configure-restful-services-open-api-2.0}
+### 為Open API規格2.0版設定RESTful服務 {#configure-restful-services-open-api-2.0}
 
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+1. 前往 **[!UICONTROL 「工具>Cloud Services>資料來源」]**. 點選以選取您要建立雲端設定的資料夾。
 
-   请参阅 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+   另請參閱 [設定雲端服務設定的資料夾](configure-data-sources.md#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL RESTful服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
-1. 为RESTful服务指定以下详细信息：
+1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL RESTful服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單（選擇性）瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 指定RESTful服務的下列詳細資料：
 
-   * 从 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 文件。
-   * 基于[!DNL  Swagger] 源输入。以下字段已预填充值：
+   * 選取URL或檔案，從 [!UICONTROL Swagger來源] 下拉式清單，並據此指定 [!DNL Swagger URL] 至[!DNL  Swagger] 定義檔案或上傳 [!DNL Swagger] 從您的本機檔案系統取得的檔案。
+   * 根據[!DNL  Swagger] 來源輸入。下列欄位已預先填入值：
 
-      * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于 [!DNL Swagger] 来源。
-      * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
-      * 基本路径：所有API路径的URL前缀。 它是一个可选字段。\
-         如有必要，请编辑这些字段的预填充值。
-   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
+      * 配置： REST API使用的傳輸通訊協定。 下拉式清單中所顯示的配置型別數目，取決於 [!DNL Swagger] 來源。
+      * 主機：提供REST API之主機的網域名稱或IP位址。 它是必填欄位。
+      * 基本路徑：所有API路徑的URL首碼。 此為選用欄位。\
+         如有需要，請編輯這些欄位的預先填入值。
+   * 選取驗證型別 — 無、OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證、API金鑰或自訂驗證 — 存取RESTful服務，並相應地提供驗證的詳細資訊。
 
-   如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
-
-   <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
-
-1. 点按 **[!UICONTROL 创建]** 为RESTful服务创建云配置。
-
-### 为Open API规范版本3.0配置RESTful服务 {#configure-restful-services-open-api-3.0}
-
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
-
-   请参阅 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
-
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL RESTful服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
-1. 为RESTful服务指定以下详细信息：
-
-   * 从 [!UICONTROL Swagger源] 下拉列表，并相应地指定 [!DNL Swagger 3.0 URL] 到[!DNL  Swagger] 定义文件或上传 [!DNL Swagger] 文件。
-   * 基于[!DNL  Swagger] 源输入，显示与目标服务器的连接信息。
-   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
-
-   如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
+   如果您選取 **[!UICONTROL API金鑰]** 由於是驗證型別，請指定API金鑰的值。 API金鑰可作為請求標頭或查詢引數傳送。 從以下選項中選取其中一個選項： **[!UICONTROL 位置]** 下拉式清單，並在 **[!UICONTROL 引數名稱]** 欄位中輸入。
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 点按 **[!UICONTROL 创建]** 为RESTful服务创建云配置。
+1. 點選 **[!UICONTROL 建立]** 以建立RESTful服務的雲端設定。
 
-RESTful服务Open API规范版本3.0不支持的某些操作包括：
-* 回调
+### 為Open API規格3.0版設定RESTful服務 {#configure-restful-services-open-api-3.0}
+
+1. 前往 **[!UICONTROL 「工具>Cloud Services>資料來源」]**. 點選以選取您要建立雲端設定的資料夾。
+
+   另請參閱 [設定雲端服務設定的資料夾](configure-data-sources.md#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
+
+1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL RESTful服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單（選擇性）瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 指定RESTful服務的下列詳細資料：
+
+   * 選取URL或檔案，從 [!UICONTROL Swagger來源] 下拉式清單，並據此指定 [!DNL Swagger 3.0 URL] 至[!DNL  Swagger] 定義檔案或上傳 [!DNL Swagger] 從您的本機檔案系統取得的檔案。
+   * 根據[!DNL  Swagger] 來源輸入，會顯示與目標伺服器的連線資訊。
+   * 選取驗證型別 — 無、OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證、API金鑰或自訂驗證 — 存取RESTful服務，並相應地提供驗證的詳細資訊。
+
+   如果您選取 **[!UICONTROL API金鑰]** 由於是驗證型別，請指定API金鑰的值。 API金鑰可作為請求標頭或查詢引數傳送。 從以下選項中選取其中一個選項： **[!UICONTROL 位置]** 下拉式清單，並在 **[!UICONTROL 引數名稱]** 欄位中輸入。
+
+   <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+
+1. 點選 **[!UICONTROL 建立]** 以建立RESTful服務的雲端設定。
+
+RESTful服務Open API Specification 3.0版不支援的部分操作包括：
+* 回呼
 * oneof/anyof
-* 远程引用
+* 遠端參考
 * 链接
-* 对于单个操作的不同MIME类型，请求主体不同
+* 針對單一作業的不同MIME型別，有不同的要求內文
 
-您可以参考 [OpenAPI 3.0规范](https://swagger.io/specification/v3/) 以了解详细信息。
+您可參閱 [OpenAPI 3.0規格](https://swagger.io/specification/v3/) 詳細資訊。
 
-### 形成数据模型HTTP客户端配置以优化性能 {#fdm-http-client-configuration}
+### 表單資料模型HTTP使用者端設定以最佳化效能 {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] 由于数据源包含用于性能优化的HTTP客户端配置，因此在与RESTful Web服务集成时会生成数据模型。
+[!DNL Experience Manager Forms] 表單資料模型，當整合RESTful Web服務時，因為資料來源包括用於效能最佳化的HTTP使用者端設定。
 
-设置 **[!UICONTROL REST数据源的表单数据模型HTTP客户端配置]** 指定正则表达式的配置：
+設定以下屬性 **[!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定]** 設定以指定規則運算式：
 
-* 使用 `http.connection.max.per.route` 属性来设置表单数据模型与RESTful Web服务之间允许的最大连接数。 默认值为20个连接。
+* 使用 `http.connection.max.per.route` 屬性來設定表單資料模型和RESTful Web服務之間允許的最大連線數目。 預設值為20個連線。
 
-* 使用 `http.connection.max` 属性，以指定每个路由允许的连接的最大数。 默认值为40个连接。
+* 使用 `http.connection.max` 屬性，指定每個路由允許的連線數目上限。 預設值為40個連線。
 
-* 使用 `http.connection.keep.alive.duration` 属性来指定持续时间，持久HTTP连接将保持活动状态。 默认值为15秒。
+* 使用 `http.connection.keep.alive.duration` 屬性來指定持續性HTTP連線持續運作的持續時間。 預設值為15秒。
 
-* 使用 `http.connection.timeout` 属性以指定持续时间，其 [!DNL Experience Manager Forms] 服务器等待连接建立。 默认值为10秒。
+* 使用 `http.connection.timeout` 屬性來指定持續時間，而 [!DNL Experience Manager Forms] 伺服器會等待建立連線。 預設值為10秒。
 
-* 使用 `http.socket.timeout` 属性，以指定两个数据包之间不活动的最长时间段。 默认值为30秒。
+* 使用 `http.socket.timeout` 屬性，指定兩個資料封包之間閒置的最長時間。 預設值為30秒。
 
-以下JSON文件显示一个示例：
+下列JSON檔案會顯示範例：
 
 
 ```json
@@ -201,49 +201,49 @@ RESTful服务Open API规范版本3.0不支持的某些操作包括：
 } 
 ```
 
-1. 点按 **[!UICONTROL REST数据源的表单数据模型HTTP客户端配置]**.
+1. 點選 **[!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定]**.
 
-1. 在 [!UICONTROL REST数据源的表单数据模型HTTP客户端配置] 对话框：
+1. 在 [!UICONTROL REST資料來源的表單資料模型HTTP使用者端設定] 對話方塊：
 
-   * 指定表单数据模型与RESTful Web服务之间允许的最大连接数 **[!UICONTROL 总连接限制]** 字段。 默认值为20个连接。
+   * 指定表單資料模型和RESTful Web服務之間允許的最大連線數。 **[!UICONTROL 連線總數限制]** 欄位。 預設值為20個連線。
 
-   * 指定中每个路由允许的最大连接数 **[!UICONTROL 每条路由的连接限制]** 字段。 默认值为两个连接。
+   * 指定中每個路由允許的連線數目上限 **[!UICONTROL 每個路由的連線限制]** 欄位。 預設值為兩個連線。
 
-   * 在 **[!UICONTROL 保持活力]** 字段。 默认值为15秒。
+   * 在「 」中指定持續HTTP連線保持連線的持續時間 **[!UICONTROL 保持連線]** 欄位。 預設值為15秒。
 
-   * 指定持续时间，持续时间 [!DNL Experience Manager Forms] 服务器等待连接建立，在 **[!UICONTROL 连接超时]** 字段。 默认值为10秒。
+   * 指定持續時間，期間為 [!DNL Experience Manager Forms] 伺服器會等待連線建立，在 **[!UICONTROL 連線逾時]** 欄位。 預設值為10秒。
 
-   * 指定 **[!UICONTROL 套接字超时]** 字段。 默认值为30秒。
+   * 指定中兩個資料封包之間閒置的最長時間 **[!UICONTROL 通訊端逾時]** 欄位。 預設值為30秒。
 
-## 配置SOAP Web服务 {#configure-soap-web-services}
+## 設定SOAP Web服務 {#configure-soap-web-services}
 
-使用 [Web服务描述语言(WSDL)规范](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] 不支持RPC样式WSDL模型。
+以下說明以SOAP為基礎的Web服務： [Web服務描述語言(WSDL)規格](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] 不支援RPC樣式WSDL模型。
 
-要在 [!DNL Experience Manager] as a Cloud Service的是，确保您具有Web服务的WSDL URL，并执行以下操作：
+若要在中設定以SOAP為基礎的Web服務 [!DNL Experience Manager] as a Cloud Service，請確定您有Web服務的WSDL URL，並執行下列動作：
 
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+1. 前往 **[!UICONTROL 「工具>Cloud Services>資料來源」]**. 點選以選取您要建立雲端設定的資料夾。
 
-   请参阅 [为云服务配置配置文件夹](configure-data-sources.md#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+   另請參閱 [設定雲端服務設定的資料夾](configure-data-sources.md#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL SOAP Web服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
-1. 为SOAP Web服务指定以下内容：
+1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL SOAP Web服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單（選擇性）瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 指定SOAP Web服務的下列專案：
 
-   * Web服务的WSDL URL。
-   * 服务端点. 在此字段中指定一个值，以覆盖WSDL中提到的服务端点。
-   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证或自定义身份验证 — 以访问SOAP服务，并相应地提供身份验证的详细信息。
+   * Web服務的WSDL URL。
+   * 服务端点. 在此欄位中指定值，以覆寫WSDL中提到的服務端點。
+   * 選取驗證型別 — 無、OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證或自訂驗證 — 存取SOAP服務，並相應地提供驗證的詳細資訊。
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
       <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 点按 **[!UICONTROL 创建]** 为SOAP web服务创建云配置。
+1. 點選 **[!UICONTROL 建立]** 建立SOAP Web服務的雲端設定。
 
-### 允许在SOAP Web服务WSDL中使用import语句 {#enable-import-statements}
+### 啟用在SOAP Web服務WSDL中使用匯入陳述式 {#enable-import-statements}
 
-可以指定一个正则表达式作为绝对URL的过滤器，该绝对URL允许作为SOAP Web服务WSDL中的导入语句。 默认情况下，此字段中没有值。 因此， [!DNL Experience Manager] 会阻止WSDL中可用的所有import语句。 如果您指定 `.*` 作为此字段中的值， [!DNL Experience Manager] 允许所有import语句。
+您可以指定一個規則運算式，用來篩選允許在SOAP Web服務WSDL中作為匯入陳述式的絕對URL。 依預設，此欄位中沒有值。 因此， [!DNL Experience Manager] 會封鎖WSDL中可用的所有匯入陳述式。 如果您指定 `.*` 作為此欄位中的值， [!DNL Experience Manager] 允許所有匯入陳述式。
 
-设置 `importAllowlistPattern` 属性 **[!UICONTROL 表单数据模型SOAP Web服务导入允许列表]** 用于指定正则表达式的配置。 以下JSON文件显示一个示例：
+設定 `importAllowlistPattern` 的屬性 **[!UICONTROL 表單資料模型SOAP Web服務匯入允許清單]** 設定以指定規則運算式。 下列JSON檔案會顯示範例：
 
 
 ```json
@@ -255,31 +255,31 @@ RESTful服务Open API规范版本3.0不支持的某些操作包括：
 
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)。
 
-## 配置OData服务 {#config-odata}
+## 設定OData服務 {#config-odata}
 
-OData服务由其服务根URL标识。 在 [!DNL Experience Manager] as a Cloud Service的是，确保您具有服务的服务根URL，并执行以下操作：
+OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Experience Manager] as a Cloud Service，請確定您有服務的服務根URL，然後執行下列動作：
 
 >[!NOTE]
 >
-> 表单数据模型支持 [OData版本4](https://www.odata.org/documentation/).
->有关配置的分步指南 [!DNL Microsoft® Dynamics 365]，请参阅 [[!DNL Microsoft® Dynamics] OData配置](ms-dynamics-odata-configuration.md).
+> 表單資料模型支援 [OData版本4](https://www.odata.org/documentation/).
+>如需設定的逐步指南 [!DNL Microsoft® Dynamics 365]，線上或內部部署，請參閱 [[!DNL Microsoft® Dynamics] OData設定](ms-dynamics-odata-configuration.md).
 
-1. 转到 **[!UICONTROL 工具>Cloud Services>数据源]**. 点按以选择要在其中创建云配置的文件夹。
+1. 前往 **[!UICONTROL 「工具>Cloud Services>資料來源」]**. 點選以選取您要建立雲端設定的資料夾。
 
-   请参阅 [为云服务配置配置文件夹](#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
+   另請參閱 [設定雲端服務設定的資料夾](#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
 
-1. 点按 **[!UICONTROL 创建]** 打开 **[!UICONTROL 创建数据源配置向导]**. 为配置指定名称和（可选）标题，选择 **[!UICONTROL OData服务]** 从 **[!UICONTROL 服务类型]** （可选）浏览并选择配置的缩略图，然后点按 **[!UICONTROL 下一个]**.
-1. 为OData服务指定以下详细信息：
+1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL OData服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單（選擇性）瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
+1. 指定OData服務的下列詳細資料：
 
-   * 要配置的OData服务的服务根URL。
-   * 选择身份验证类型 — 无、OAuth2.0([授权代码](https://oauth.net/2/grant-types/authorization-code/), [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证、API密钥或自定义身份验证 — 以访问OData服务，并相应地提供身份验证的详细信息。
+   * 要設定之OData服務的服務根URL。
+   * 選取驗證型別 — 無、OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證、API金鑰或自訂驗證 — 存取OData服務，並相應地提供驗證的詳細資訊。
 
-   如果您选择 **[!UICONTROL API密钥]** 对于身份验证类型，指定API密钥的值。 API密钥可以作为请求标头或查询参数发送。 从 **[!UICONTROL 位置]** 下拉列表中，并在 **[!UICONTROL 参数名称]** 字段中，将会显示相应的内容。
+   如果您選取 **[!UICONTROL API金鑰]** 由於是驗證型別，請指定API金鑰的值。 API金鑰可作為請求標頭或查詢引數傳送。 從以下選項中選取其中一個選項： **[!UICONTROL 位置]** 下拉式清單，並在 **[!UICONTROL 引數名稱]** 欄位中輸入。
 
    >[!NOTE]
-   您必须选择OAuth 2.0身份验证类型才能连接 [!DNL Microsoft® Dynamics] 使用OData端点作为服务根的服务。
+   您必須選取要連線的OAuth 2.0驗證型別 [!DNL Microsoft® Dynamics] 使用OData端點作為服務根的服務。
 
-1. 点按 **[!UICONTROL 创建]** 为OData服务创建云配置。
+1. 點選 **[!UICONTROL 建立]** 以建立OData服務的雲端設定。
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
@@ -296,4 +296,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 后续步骤 {#next-steps}
 
-您已配置数据源。 接下来，您可以创建表单数据模型，或者如果已经创建了没有数据源的表单数据模型，则可以将其与您配置的数据源相关联。 请参阅 [创建表单数据模型](create-form-data-models.md) 以了解详细信息。
+您已設定資料來源。 接下來，您可以建立表單資料模型，或者，如果您已建立不含資料來源的表單資料模型，則可以將其與您設定的資料來源建立關聯。 另請參閱 [建立表單資料模型](create-form-data-models.md) 以取得詳細資訊。

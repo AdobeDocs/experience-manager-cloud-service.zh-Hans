@@ -1,6 +1,6 @@
 ---
-title: 在屏幕中创建视频演绎版as a Cloud Service
-description: 本页介绍如何在Screens中创建视频演绎版as a Cloud Service。
+title: 在Screens中建立視訊轉譯as a Cloud Service
+description: 本頁面說明如何在Screensas a Cloud Service中建立視訊轉譯。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
@@ -9,61 +9,61 @@ ht-degree: 0%
 
 ---
 
-# 在屏幕中创建视频演绎版as a Cloud Service {#creating-screens-video-renditions}
+# 在Screens中建立視訊轉譯as a Cloud Service {#creating-screens-video-renditions}
 
 ## 简介 {#introduction}
 
-本节介绍如何创建在Screens播放器中使用的视频演绎版。
+本節說明如何建立在Screens播放器中使用的視訊轉譯。
 
 >[!IMPORTANT]
->如果您计划在Screens渠道中使用视频，则必须配置此部分中突出显示的步骤。
+>如果您打算在Screens頻道中使用影片，則必須設定本節中強調顯示的步驟。
 
-## 在Screens中创建视频演绎版的步骤as a Cloud Service {#steps-creating-screens-video-renditions}
+## 在Screens中建立視訊轉譯的as a Cloud Service步驟 {#steps-creating-screens-video-renditions}
 
-请按照以下步骤在Screens中创建与Screens内容提供商as a Cloud Service的视频演绎版：
+請依照下列步驟，在as a Cloud Service於Screens Content Provider的Screens中建立視訊轉譯：
 
-1. 在Screens内容提供商中导航到您的渠道。
+1. 在Screens內容提供者中導覽至您的頻道。
 
    >[!NOTE]
-   >请参阅 [使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 以了解更多详细信息。
+   >請參閱 [使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 以取得更多詳細資料。
 
-1. 单击左侧导航栏中的“工具”部分，然后单击 **资产** 然后单击 **处理配置文件**.
+1. 從左側導覽列按一下工具區段，然後按一下 **資產** 然後按一下 **處理設定檔**.
 
    ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
-1. 单击 **创建** 创建新处理配置文件。
+1. 按一下 **建立** 以建立新的處理設定檔。
 
    ![](/help/screens-cloud/assets/configure/screens-video-2.png)
 
-1. 输入 **名称**，例如 **ScreensProcessingProfile**.
+1. 輸入 **名稱**，例如 **ScreensProcessingProfile**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-3.png)
 
-1. 导航到 **视频** 选项卡来添加视频编码，然后单击 **新增**.
+1. 導覽至 **視訊** 索引標籤以新增視訊編碼，然後按一下 **新增**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
-1. 输入 **编码名称** 例如， **screens-fullhd** 和 **比特率** as **2500**.
+1. 輸入 **編碼名稱** 例如、 **screens-fullhd** 和 **位元速率** 作為 **2500**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >请确保使用以“screens — ”开头的编码名称，只有这些视频演绎版会被视为在Screensas a Cloud Service播放视频体验。 输入可用于您的视频的比特率（720px视频为2500 kbps，1080px为5000 kbps）。
+   >請務必使用以「screens — 」開頭的編碼名稱，只有這些視訊轉譯會被視為在Screens中以as a Cloud Service播放視訊體驗。 輸入適合您視訊的位元速率（720px視訊為2500kbps，1080px為5000 kbps）。
 
    >[!NOTE]
-   >可以添加多个不同宽度/高度/比特率的视频演绎版，以处理您的视频。 请记住，所有屏幕演绎版都将由Screens设备下载，即使设备只播放视频演绎版。
+   >您可以新增具有不同寬度/高度/位元速率的多個視訊轉譯，以使用您的視訊。 請記住，即使裝置只播放視訊轉譯，所有熒幕 — 轉譯都將由Screens裝置下載。
 
-1. 单击 **保存**.
+1. 按一下 **儲存**.
 
-1. 选择处理配置文件并单击 **将配置文件应用到文件夹**.
+1. 選取處理設定檔，然後按一下 **將設定檔套用至資料夾**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. 选择保留Screens视频的文件夹，然后单击 **应用**.
+1. 選取保留Screens影片的資料夾，然後按一下 **套用**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
-   >* 您可以创建多个处理配置文件，并将它们应用到相应的文件夹，以便这些文件夹中的视频获得特定的视频演绎版。
-   >* 当您将任何视频上传到应用了“处理”配置文件的文件夹时，会处理视频并创建配置的演绎版，Screens设备会进一步使用这些演绎版来播放视频。
+   >* 您可以建立多個處理設定檔，並將其套用至對應的資料夾，以便這些資料夾中的影片取得特定的影片轉譯。
+   >* 當您上傳任何影片至套用處理設定檔的資料夾時，系統會處理影片並建立已設定的轉譯，Screens裝置會進一步使用這些轉譯來播放影片。
 

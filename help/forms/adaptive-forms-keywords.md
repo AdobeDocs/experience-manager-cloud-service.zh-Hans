@@ -1,7 +1,7 @@
 ---
-title: 自适应Forms关键词
+title: 最適化Forms關鍵字
 seo-title: Adaptive Forms keywords
-description: 您不能将这些保留字用作自适应Forms中的标识符。
+description: 您無法在最適化Forms中使用這些保留字作為識別碼。
 seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,31 +10,31 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
 
-# 自适应Forms关键词 {#adaptive-forms-keywords}
+# 最適化Forms關鍵字 {#adaptive-forms-keywords}
 
-自适应Forms关键字是预定义的保留标识符，对自适应Forms具有特殊含义。 您不能在自适应Forms中将这些关键字用作标识符。 下表列出了作为自适应Forms保留标识符的所有关键词。
+最適化Forms關鍵字是預先定義的保留識別碼，對最適化Forms具有特殊意義。 您無法在最適化Forms中將這些關鍵字當作識別碼使用。 下表列出作為最適化Forms的保留識別碼的所有關鍵字。
 
 <table>
  <tbody>
   <tr>
    <td><p>初始化</p> </td>
-   <td><p>getOnOffValues</p> </td>
-   <td><p>minOccur</p> </td>
+   <td><p>getonoffValues</p> </td>
+   <td><p>minOccurs</p> </td>
   </tr>
   <tr>
-   <td><p>验证</p> </td>
+   <td><p>驗證</p> </td>
    <td><p>setGuideState</p> </td>
-   <td><p>maxOccur</p> </td>
+   <td><p>maxOccurse</p> </td>
   </tr>
   <tr>
    <td><p>forceElementFocusChange</p> </td>
    <td><p>getGuideState</p> </td>
-   <td><p>initialOccur</p> </td>
+   <td><p>initialOccure</p> </td>
   </tr>
   <tr>
    <td><p>checkIfNull</p> </td>
@@ -43,28 +43,28 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>playJson</p> </td>
-   <td><p>准备</p> </td>
+   <td><p>準備</p> </td>
    <td><p>instanceCount</p> </td>
   </tr>
   <tr>
    <td><p>resetData</p> </td>
    <td><p>runPendingExpressions</p> </td>
-   <td><p>可重复</p> </td>
+   <td><p>可重複</p> </td>
   </tr>
   <tr>
-   <td><p>calcExp</p> </td>
-   <td><p>queueExpressions</p> </td>
-   <td><p>实例</p> </td>
+   <td><p>calcexp</p> </td>
+   <td><p>queueExpression</p> </td>
+   <td><p>執行個體</p> </td>
   </tr>
   <tr>
-   <td><p>页面</p> </td>
+   <td><p>标题</p> </td>
    <td><p>resolveNode</p> </td>
    <td><p>syncXFAProps</p> </td>
   </tr>
   <tr>
    <td><p>valueCommitScript</p> </td>
-   <td><p>autoSaveStart</p> </td>
-   <td><p>访问</p> </td>
+   <td><p>Autosavstart</p> </td>
+   <td><p>造訪</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -73,11 +73,11 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>placeholderText</p> </td>
-   <td><p>autoSaveStartExpression</p> </td>
+   <td><p>Autosavstartexpression</p> </td>
    <td><p>子项</p> </td>
   </tr>
   <tr>
-   <td><p>选定</p> </td>
+   <td><p>值</p> </td>
    <td><p>autoSaveInfo</p> </td>
    <td><p>setAttribute</p> </td>
   </tr>
@@ -102,7 +102,7 @@ ht-degree: 5%
    <td><p>name</p> </td>
   </tr>
   <tr>
-   <td><p>mandatory</p> </td>
+   <td><p>強制</p> </td>
    <td><p>面板</p> </td>
    <td><p>templateId</p> </td>
   </tr>
@@ -114,7 +114,7 @@ ht-degree: 5%
   <tr>
    <td><p>validateExpMessage</p> </td>
    <td><p>optionsExp</p> </td>
-   <td><p>somExpression</p> </td>
+   <td><p>somexpression</p> </td>
   </tr>
   <tr>
    <td><p>validatePictureClauseMessage</p> </td>
@@ -128,13 +128,13 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>宽度</p> </td>
-   <td><p>buttonText</p> </td>
+   <td><p>按鈕文字</p> </td>
    <td><p>index</p> </td>
   </tr>
   <tr>
    <td><p>高度</p> </td>
    <td><p>showComment</p> </td>
-   <td><p>可见</p> </td>
+   <td><p>可見</p> </td>
   </tr>
   <tr>
    <td><p>cssClassName</p> </td>
@@ -142,14 +142,14 @@ ht-degree: 5%
    <td><p>已启用</p> </td>
   </tr>
   <tr>
-   <td><p>clickExp</p> </td>
-   <td><p>fileList</p> </td>
+   <td><p>按一下運算式</p> </td>
+   <td><p>檔案清單</p> </td>
    <td><p>enableLayoutOptimization</p> </td>
   </tr>
   <tr>
    <td><p>navigationChangeExp</p> </td>
    <td><p>handleEvent</p> </td>
-   <td><p>dataType</p> </td>
+   <td><p>資料型別</p> </td>
   </tr>
   <tr>
    <td><p>类型</p> </td>
@@ -163,7 +163,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>clickStatus</p> </td>
-   <td><p>removeInstance</p> </td>
+   <td><p>removecinstance</p> </td>
    <td><p>maxChars</p> </td>
   </tr>
   <tr>
@@ -172,38 +172,38 @@ ht-degree: 5%
    <td><p>execNavigationChangeExpression</p> </td>
   </tr>
   <tr>
-   <td><p>multiLine</p> </td>
+   <td><p>多行</p> </td>
    <td><p>longDescription</p> </td>
    <td><p>executeExpression</p> </td>
   </tr>
   <tr>
-   <td><p>visibleExp</p> </td>
+   <td><p>visibleexp</p> </td>
    <td><p>initScript</p> </td>
    <td><p>enabledExp</p> </td>
   </tr>
   <tr>
-   <td><p>execComplete</p> </td>
+   <td><p>execCompletion</p> </td>
    <td><p>sectionId</p> </td>
-   <td><p>setFocus</p> </td>
+   <td><p>設定焦點</p> </td>
   </tr>
   <tr>
-   <td><p>completeExp</p> </td>
+   <td><p>completionExp</p> </td>
    <td><p>sectionTitle</p> </td>
    <td><p>activeInstance</p> </td>
   </tr>
   <tr>
    <td><p>completionExpReq</p> </td>
-   <td><p>completeScript</p> </td>
+   <td><p>completionScript</p> </td>
    <td><p>activePart</p> </td>
   </tr>
   <tr>
-   <td><p>工具栏</p> </td>
+   <td><p>工具列</p> </td>
    <td><p>completionBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceManager</p> </td>
-   <td><p>completeAfterMessage</p> </td>
+   <td><p>completionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
   <tr>
@@ -222,21 +222,21 @@ ht-degree: 5%
    <td><p>sectionFields</p> </td>
   </tr>
   <tr>
-   <td><p>已获取的FromService</p> </td>
+   <td><p>fetchedFromService</p> </td>
    <td><p>repeatablePanelId</p> </td>
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
    <td><p>repeatablePanelPath</p> </td>
-   <td><p>getItemIdentifier</p> </td>
+   <td><p>getitemidentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>
   <tr>
-   <td><p>columnWidth</p> </td>
+   <td><p>欄寬</p> </td>
    <td> </td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-除了上面列出的关键词外，请避免使用与 [自适应Forms JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).
+除了上面列出的關鍵字外，請避免使用類似於 [最適化Forms JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).

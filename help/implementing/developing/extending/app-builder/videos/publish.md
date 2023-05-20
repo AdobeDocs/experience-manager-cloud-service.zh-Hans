@@ -1,6 +1,6 @@
 ---
-title: 发布应用程序生成器应用程序
-description: 了解如何发布和运行App Builder应用程序。
+title: 發佈App Builder應用程式
+description: 瞭解如何發佈和執行App Builder應用程式。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 发布应用程序生成器应用程序
+# 發佈App Builder應用程式
 
-了解如何提交App Builder应用程序以供审核和批准，以及如何运行新发布的应用程序。
+瞭解如何提交您的App Builder應用程式以供檢閱和核准，以及如何執行新發佈的應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

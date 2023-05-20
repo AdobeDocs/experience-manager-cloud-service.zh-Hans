@@ -1,13 +1,13 @@
 ---
 title: Universal Editor 身份验证
 description: 了解 Universal Editor 如何进行身份验证。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
 
 ---
-
 
 # Universal Editor 身份验证 {#authentication}
 

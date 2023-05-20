@@ -1,8 +1,8 @@
 ---
-title: 元数据 — 片段属性（资产 — 内容片段）
+title: 中繼資料 — 片段屬性（資產 — 內容片段）
 description: 了解如何查看和编辑 内容片段的元数据属性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 87%
@@ -11,7 +11,7 @@ ht-degree: 87%
 
 # 元数据 – 片段属性 {#metadata-fragment-properties}
 
-了解如何在AEM中查看和编辑内容片段的元数据属性，以调整无头内容。
+瞭解如何在AEM中檢視和編輯內容片段的中繼資料屬性，以調整您的Headless內容。
 
 ## 编辑属性/元数据 {#editing-properties-meta-data}
 

@@ -1,6 +1,6 @@
 ---
-title: 使用关联的AEM内容扩充产品数据
-description: 了解营销人员如何使用Adobe Experience Manager中的关联内容扩充产品数据。 AEM中的资产和体验片段等内容可以与商务产品关联。 关联后，这些内容类型便可以动态插入到产品页面或类别页面内的占位符中。 这为营销人员提供了多种可能性，可利用图像和视频等其他内容定位特定产品页面。
+title: 透過關聯的AEM內容豐富產品資料
+description: 瞭解行銷人員如何使用Adobe Experience Manager的關聯內容豐富產品資料。 AEM中的資產和體驗片段等內容可以與商業產品相關聯。 關聯後，這些內容型別可以動態地插入至產品頁面或類別頁面中的預留位置。 這開啟了行銷人員以影像和視訊等額外內容鎖定特定產品頁面的廣泛可能性。
 sub-product: Commerce
 version: Cloud Service
 doc-type: feature-video
@@ -10,40 +10,40 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: 16b27bc4f56519a0f1d2dfd9bd0b3090e77a8cc1
+source-git-commit: f452e248f414c3304bd9d885e592ba19a53a1a65
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
 
 ---
 
-# 使用关联的AEM内容扩充产品数据
+# 透過關聯的AEM內容豐富產品資料
 
-了解营销人员如何使用Adobe Experience Manager中的关联内容扩充产品数据。 AEM中的内容（如资产、体验片段和内容片段）可以与商务产品关联。 关联后，这些内容类型便可以动态插入到产品页面或类别页面内的占位符中。 这为营销人员提供了多种可能性，可利用图像和视频等其他内容定位特定产品页面。
+瞭解行銷人員如何使用Adobe Experience Manager的關聯內容豐富產品資料。 AEM中的資產、體驗片段和內容片段等內容可以與商業產品相關聯。 關聯後，這些內容型別可以動態地插入至產品頁面或類別頁面中的預留位置。 這開啟了行銷人員以影像和視訊等額外內容鎖定特定產品頁面的廣泛可能性。
 
 ## 数字资产 {#digital-assets}
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-数字资产可以与一个或多个产品SKU关联。 关联后，即可根据SKU通过关键词搜索来发现数字资产。 在编辑包含相关产品的页面时，资产也会自动显示为关联内容，从而更便于创建下一个数字体验。
+數位資產可以與一個或多個產品SKU相關聯。 建立關聯後，即可透過根據SKU的關鍵字搜尋來探索數位資產。 在編輯包含相關產品的頁面時，資產也會自動顯示為關聯內容，讓您更輕鬆地建立下一個數位體驗。
 
 ## 体验片段 {#experience-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
-体验片段是Adobe Experience Manager的一项功能，它允许营销人员创建 **非结构化** 可重用内容。 体验片段可以与产品SKU或目录ID关联。 关联后，营销人员便可以根据页面上显示的产品轻松发现相关片段。 体验片段也可以通过使用占位符和关联动态包含在产品目录页面中。
+體驗片段是Adobe Experience Manager的一項功能，可讓行銷人員建立 **非結構化** 可重複使用的內容。 體驗片段可以與產品SKU或目錄ID相關聯。 一旦建立關聯，行銷人員就可以根據頁面上顯示的產品，輕鬆探索相關片段。 體驗片段也可以透過使用預留位置及關聯來動態包含在產品目錄頁面上。
 
 ## 内容片段 {#content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
-内容片段是Adobe Experience Manager的一项功能，它允许营销人员创建 **结构化** 可重用内容。 内容片段可以与产品SKU或目录ID关联。 关联后，营销人员便可以根据页面上显示的产品轻松发现相关片段。 通过使用占位符和关联，内容片段还可以动态包含在产品目录页面中。
+內容片段是Adobe Experience Manager的一項功能，可讓行銷人員建立 **結構化** 可重複使用的內容。 內容片段可以與產品SKU或目錄ID相關聯。 一旦建立關聯，行銷人員就可以根據頁面上顯示的產品，輕鬆探索相關片段。 內容片段也可以透過使用預留位置及關聯來動態包含在產品目錄頁面上。
 
-## 内容页面 {#content-pages}
+## 內容頁面 {#content-pages}
 
-内容页面可以与一个或多个产品SKU关联。 关联后，即可根据SKU在搜索关键词时发现页面。 内容页面也可以通过使用占位符和关联动态包含在产品目录页面中。
+內容頁面可以與一個或多個產品SKU相關聯。 關聯後，即可透過根據SKU的關鍵字搜尋來探索頁面。 您也可以使用預留位置及關聯，以動態方式將內容頁面包含在產品目錄頁面上。
 
 
 ## 相关资源 {#related}
 
-还可以为一组特定产品或类别自定义整个模板。 了解方法 [创建多个类别和产品页面](./multi-template-usage.md).
+您也可以針對一組特定產品或類別自訂整個範本。 瞭解方式 [建立多個類別和產品頁面](./multi-template-usage.md).

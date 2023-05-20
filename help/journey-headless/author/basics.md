@@ -3,7 +3,7 @@ title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1668'
 ht-degree: 100%
 

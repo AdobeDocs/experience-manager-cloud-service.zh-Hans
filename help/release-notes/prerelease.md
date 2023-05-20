@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 预发行渠道
 description: 了解如何使用预发行渠道预览 AEM as a Cloud Service 即将推出的功能。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 100%
 

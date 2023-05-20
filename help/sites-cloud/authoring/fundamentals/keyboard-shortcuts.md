@@ -2,10 +2,10 @@
 title: 用于页面编辑的键盘快捷键
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 编辑键盘快捷键 {#editing-keyboard-shortcuts}
 
-| 位置 | 快捷键 | 描述 |
+| 位置 | 捷徑 | 描述 |
 |---|---|---|
 | 任何编辑窗口模式 | `Ctrl-Shift-m` | 在&#x200B;**预览**&#x200B;模式和当前选定的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a>（例如，**编辑**、**布局**&#x200B;等）之间切换* |
 | **编辑**&#x200B;模式 | `Ctrl-z` | [撤消最后一次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |

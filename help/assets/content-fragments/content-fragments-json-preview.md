@@ -1,11 +1,11 @@
 ---
-title: 预览 — JSON表示法（资产 — 内容片段）
-description: 了解如何在实施AEM无头解决方案时轻松预览内容片段的JSON表示形式。
+title: 預覽 — JSON呈現（資產 — 內容片段）
+description: 了解如何在实施 AEM 无头解决方案时轻松预览内容片段的 JSON 表示形式。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 79%
+ht-degree: 94%
 
 ---
 

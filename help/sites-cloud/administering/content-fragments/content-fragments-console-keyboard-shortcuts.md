@@ -4,10 +4,10 @@ description: AEM 中提供了各种键盘快捷键，包括一些用于管理内
 feature: Content Fragments
 role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 >
 >快捷方式不区分大小写，
 
-| 位置 | 快捷键 | 描述 |
+| 位置 | 捷徑 | 描述 |
 |---|---|---|
 | 未选择内容片段 | `n` | 打开“创建”对话框 |
 | 选择一个或多个内容片段 | `m` | 打开“移动”对话框 |

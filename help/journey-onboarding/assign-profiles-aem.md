@@ -101,7 +101,7 @@ ht-degree: 97%
 
 ## 其他资源 {#additional-resources}
 
-如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
+如果您想要超越入門歷程的內容，以下是額外的選用資源。
 
 * [在 Admin Console 管理产品和用户访问权限](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) – 了解如何使用 Admin Console 管理用户访问权限。
 * [配置 AEM 演练的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hans) – 查看此简化演练，了解如何在 Admin Console 中配置 Adobe IMS 用户、用户组和产品配置文件。

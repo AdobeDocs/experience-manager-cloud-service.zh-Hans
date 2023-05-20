@@ -1,6 +1,6 @@
 ---
-title: 事件驱动的应用程序生成器应用程序
-description: 了解如何构建事件驱动的应用程序生成器应用程序。
+title: 事件導向的App Builder應用程式
+description: 瞭解如何建立事件導向的應用程式建立器應用程式。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 ---
 
-# 事件驱动的应用程序生成器应用程序
+# 事件導向的App Builder應用程式
 
-## 事件驱动的应用程序生成器应用程序简介
+## 事件導向App Builder應用程式簡介
 
-了解事件驱动架构、Adobe I/O事件和自定义事件的相关信息。
+瞭解事件導向架構、Adobe I/O事件和自訂事件的相關資訊。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
-## 构建事件驱动的应用程序生成器应用程序
+## 建立事件導向的應用程式建立器應用程式
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-了解如何构建发布可能会使用应用程序生成器应用程序中的事件。
+瞭解如何建置發佈可以在App Builder應用程式中使用事件。

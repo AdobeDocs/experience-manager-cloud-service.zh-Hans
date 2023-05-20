@@ -1,36 +1,36 @@
 ---
 title: 为组件启用 JSON 导出
-description: 组件可以基于建模器框架进行修改，以生成其内容的JSON导出。
+description: 元件可調整為根據模型程式框架產生其內容的JSON匯出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
 # 为组件启用 JSON 导出 {#enabling-json-export-for-a-component}
 
-组件可以基于建模器框架进行修改，以生成其内容的JSON导出。
+元件可調整為根據模型程式框架產生其內容的JSON匯出。
 
 ## 概述 {#overview}
 
-JSON导出基于 [Sling模型](https://sling.apache.org/documentation/bundles/models.html)、和 [Sling模型导出程序](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) 框架(它本身依赖 [Jackson批注](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations))。
+JSON匯出是根據 [Sling模型](https://sling.apache.org/documentation/bundles/models.html)，並在上 [Sling模型匯出工具](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) 框架(本身需仰賴 [Jackson附註](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations))。
 
-这意味着如果组件需要导出JSON，则必须具有Sling模型。 因此，您需要按照以下两个步骤在任何组件上启用JSON导出。
+這表示元件在需要匯出JSON時必須具有Sling模型。 因此，您需要遵循這兩個步驟，才能在任何元件上啟用JSON匯出。
 
-* [为组件定义Sling模型](#define-a-sling-model-for-the-component)
-* [在Sling模型界面中添加批注](#annotate-the-sling-model-interface)
+* [為元件定義Sling模型](#define-a-sling-model-for-the-component)
+* [為Sling模型介面加上註釋](#annotate-the-sling-model-interface)
 
-## 为组件定义Sling模型 {#define-a-sling-model-for-the-component}
+## 為元件定義Sling模型 {#define-a-sling-model-for-the-component}
 
-首先，必须为组件定义Sling模型。
+首先，必須為元件定義Sling模型。
 
 >[!NOTE]
 >
->有关使用Sling模型的示例，请参阅文章 [在AEM中开发Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+>如需使用Sling模型的範例，請參閱文章 [在AEM中開發Sling模型匯出工具](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-Hans).
 
-Sling模型实施类必须使用以下内容添加注释：
+Sling模型實作類別必須使用下列專案註釋：
 
 ```java
 @Model(... adapters = {..., ComponentExporter.class})
@@ -38,47 +38,47 @@ Sling模型实施类必须使用以下内容添加注释：
 @JsonSerialize(as = MyComponent.class)
 ```
 
-这可确保您的组件可以使用 `.model` 选择器和 `.json` 扩展。
+這可確保您的元件可自行匯出，使用 `.model` 選擇器和 `.json` 副檔名。
 
-此外，这还指定Sling Model类可以适应于 `ComponentExporter` 界面。
-
->[!NOTE]
->
->Jackson批注通常不是在Sling模型类级别指定，而是在模型界面级别指定。 这是为了确保将JSON导出视为组件API的一部分。
+此外，這會指定Sling模型類別可以改編為 `ComponentExporter` 介面。
 
 >[!NOTE]
 >
->的 `ExporterConstants` 和 `ComponentExporter` 课程来自 `com.adobe.cq.export.json` 捆绑。
+>Jackson註解通常不會在Sling模型類別層級指定，而是在Model介面層級指定。 這是為了確保將JSON匯出視為元件API的一部分。
+
+>[!NOTE]
+>
+>此 `ExporterConstants` 和 `ComponentExporter` 類別來自 `com.adobe.cq.export.json` 套件組合。
 
 ### 使用多个选择器 {#multiple-selectors}
 
-除了 `model` 选择器。
+雖然這不是標準使用案例，但除了以下設定外，您也可以設定多個選取器： `model` 選擇器。
 
 ```
 https://<server>:<port>/content/page.model.selector1.selector2.json
 ```
 
-但是，在这种情况下， `model` 选择器必须是第一个选择器，并且扩展必须是 `.json`.
+但在這種情況下， `model` 選擇器必須是第一個選擇器，而擴充功能必須是 `.json`.
 
-## 在Sling模型界面中添加批注 {#annotate-the-sling-model-interface}
+## 註釋Sling模型介面 {#annotate-the-sling-model-interface}
 
-要由JSON导出程序框架考虑，模型界面应实施 `ComponentExporter` 界面(或 `ContainerExporter`，对于容器组件)。
+若要JSON匯出工具架構列入考量，模型介面應實作 `ComponentExporter` 介面(或 `ContainerExporter`（若為容器元件）。
 
-相应的Sling模型界面(`MyComponent`)，则将使用 [Jackson批注](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) 定义应如何导出（序列化）。
+對應的Sling模型介面(`MyComponent`)之後會使用進行註解 [Jackson附註](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) 以定義應如何匯出（序列化）。
 
-需要对“模型”(Model)界面进行适当的注释，以定义应序列化哪些方法。 默认情况下，所有遵循getter通用命名约定的方法都将进行序列化，并将从getter名称中自然派生其JSON属性名称。 可以使用阻止或覆盖此功能 `@JsonIgnore` 或 `@JsonProperty` 重命名JSON属性。
+需要正確註解模型介面，以定義應序列化哪些方法。 依預設，所有遵守getter一般命名慣例的方法都將序列化，並且從getter名稱自然衍生出其JSON屬性名稱。 這可以使用防止或覆寫 `@JsonIgnore` 或 `@JsonProperty` 重新命名JSON屬性。
 
 ## 示例 {#example}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 支持JSON导出，可用作引用。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 支援JSON匯出，可作為參考使用。
 
-有关示例，请参阅图像核心组件及其注释界面的Sling模型实施。
+如需範例，請參閱影像核心元件的Sling模型實作及其附註介面。
 
-## 相关文档 {#related-documentation}
+## 相關檔案 {#related-documentation}
 
-有关更多详细信息，请参阅：
+如需詳細資訊，請參閱：
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-* [使用内容片段创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [使用內容片段編寫](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

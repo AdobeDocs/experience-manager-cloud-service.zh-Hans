@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 8f4b504898b1332c21f3cb82ab9bbf663c9dc312
+source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 30%
+ht-degree: 47%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 30%
 以下部分概述了当前（最新）版本的 [!DNL Adobe Experience Manager] as a Cloud Service 的一般发行说明。
 
 >[!NOTE]
->从此处，您可以导航到以前版本的发行说明；例如，2020年、2021年等年份的客户。
+>您可以在此處瀏覽至舊版的發行說明；例如，2020、2021等版本。
 
 >[!NOTE]
 >
@@ -22,72 +22,72 @@ ht-degree: 30%
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.4.0是2021年5月6日。
-以下版本(2021.5.0)将于2021年5月27日发布。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.4.0是2021年5月6日。
+下列版本(2021.5.0)將於2021年5月27日發行。
 
-## AEMas a Cloud Service基础{#aem-as-a-cloud-service-foundation}
+## AEMas a Cloud Service基礎{#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)  — 新的工作流模型和步骤在发布内容的深层层次结构时提高了性能。
+* [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow)  — 新的工作流程模型和步驟可在發佈深層內容時提高效能。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* GraphQL端点 — 现在，可以为各个AEM Sites配置启用AEM GraphQL API，并通过使用新的GraphQL控制台UI为这些配置创建自定义GraphQL端点。 UI还允许管理GraphQL端点。
+* GraphQL端點 — 現在可以為個別AEM Sites設定啟用AEM GraphQL API，並使用新的GraphQL Console UI為這些設定建立自訂GraphQL端點。 UI也可讓您管理GraphQL端點。
 
-* 内容模型、增强的日期和时间数据类型 — 现在可以配置日期和时间日期类型，以仅允许创作日期、时间或日期和时间信息。
+* 內容模型、增強型日期和時間資料型別 — 現在可以設定日期和時間資料型別，以允許撰寫僅限日期、僅限時間或是日期和時間的資訊。
 
-* 内容模型、增强的标记数据类型 — 现在可以配置标记数据类型，以允许创作单个或多个标记。
+* 內容模型、增強型標籤資料型別 — 現在可以設定標籤資料型別，以允許撰寫單一或多個標籤。
 
-* 内容模型、新的制表符占位符数据类型 — 新的制表符占位符数据类型允许将数据类型分组到将在内容片段编辑器的选项卡下呈现的部分中。
+* 內容模型、新索引標籤預留位置資料型別 — 新索引標籤預留位置資料型別允許將資料型別分組到多個區段中，這些區段將會在內容片段編輯器中的索引標籤底下呈現。
 
 ### [!DNL Sites] 中的错误修复 {#bug-fixes-sites}
 
-* 内容片段 — 移动内容片段或文件夹现在会更新片段内的嵌套引用(CQ-4320815)
+* 內容片段 — 移動內容片段或資料夾現在會更新片段內的巢狀參考(CQ-4320815)
 
-* GraphQL — 持久化查询现在支持特定于AEM Sites配置的用户定义的端点(CQ-4315928)
+* GraphQL — 持續查詢現在支援特定於AEM Sites設定的使用者定義端點(CQ-4315928)
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* [!DNL Experience Manager] 在下载原始文件的位置不会存档单个资产下载。 此增强功能可加快下载速度。
+* [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。 此增強功能可加快下載速度。
 
-* 当通过链接共享选项下载资产时，您现在可以选择下载或不下载演绎版。 以前，会下载所有资产演绎版。
+* 透過linkshare選項下載資產時，您現在可以選擇下載或不下載轉譯。 之前則會下載所有資產轉譯。
 
-* 管理员可以配置 [!DNL Experience Manager] ，以在批量摄取资产后删除资产源。 请参阅 [批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 管理員可以設定 [!DNL Experience Manager] 若要在執行大量資產擷取後刪除資產來源，請執行下列動作。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 现在，在执行运行状况检查以批量导入资产时，Experience Manager会提供失败的更多信息原因。 请参阅 [批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 在執行狀況檢查以大量匯入資產時，Experience Manager現在會提供失敗原因的更多資訊。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 现在，使用批量导入工具导入资产时，管理员可以选择在导入成功后删除源文件。 请参阅 [批量资产摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 使用大量匯入工具匯入資產時，管理員現在可以選擇在匯入成功後刪除來源檔案。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 在编辑元数据架构时，新的根路径选择器字段允许管理员快速轻松地进行选择，从而缩短配置时间。
+* 編輯中繼資料結構描述時，新的根路徑選擇器欄位可讓管理員快速輕鬆地做出選擇，進而縮短設定時間。
 
-* 编辑元数据架构时，会添加一种数据类型，该数据类型在元数据编辑器中提供自由格式文本区域。 用户可以使用此文本区域输入自由格式文本作为资产的元数据。 请参阅 [元数据架构编辑器](/help/assets/metadata-schemas.md).
+* 編輯中繼資料結構描述時，會新增一個資料型別，在中繼資料編輯器中提供自由格式的文字區域。 使用者可以使用此文字區域輸入自由格式文字作為資產的中繼資料。 另請參閱 [中繼資料結構編輯器](/help/assets/metadata-schemas.md).
 
-* 许多资产的元数据可以使用CSV文件批量导入，并可以导出到CSV文件。 默认日期格式现在为 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 用户可以通过更新列标题来使用其他格式。 例如，添加 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 作为列标题，而不是单词 `Date`.
+* 許多資產的中繼資料可以使用CSV檔案大量匯入，也可以匯出到CSV檔案。 預設日期格式現在為 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 使用者可以更新欄標題來運用不同的格式。 例如，新增 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 做為CSV檔案中的欄標題，而不是單字 `Date`.
 
-* 在列视图中浏览资产时，可视指示器会显示每个资产的已批准或已拒绝状态。
+* 在「欄」檢視中瀏覽資產時，視覺指示器會顯示每個資產的已核准或已拒絕狀態。
 
-* 在列视图中浏览资产时，会为过期的资产显示一个可视指示器。
+* 在「欄」檢視中瀏覽資產時，視覺指示器會顯示已到期的資產。
 
 ### [!DNL Assets] 中的错误修复 {#bug-fixes-assets}
 
-* 尝试移动多个资产或文件夹时，控制台中会记录一个错误，并且移动操作未能完成。 如果标题无法更新，则移动操作会失败。 (CQ-4322080)
+* 嘗試移動多個資產或資料夾時，控制檯中會記錄錯誤，且移動作業未完成。 如果無法更新標題，移動作業會失敗。 (CQ-4322080)
 
-* 可以根据规则隐藏元数据字段，以便在满足预定义条件时，不必强制使用元数据。 但是，此类隐藏的元数据字段会显示为必填字段。 (CQ-4321285)
+* 中繼資料欄位可以根據規則隱藏，以便在滿足預先定義的條件時，中繼資料不是強制性的。 不過，此類隱藏的中繼資料欄位會顯示為必填欄位。 (CQ-4321285)
 
-* 由于日期格式不正确，批量元数据导入失败。 (CQ-4319014)
+* 大量中繼資料匯入失敗，因為日期格式不正確。 (CQ-4319014)
 
-* 当在“属性”页面中选择更新元数据时，当架构提供了多个选项时，界面响应速度会很慢。 (CQ-4318538)
+* 在「屬性」頁面中選取要更新中繼資料時，如果結構描述提供了許多選項，介面的回應會很緩慢。 (CQ-4318538)
 
-* 在单行文本字段中更新和保存元数据值时，下拉菜单中的值会被删除，即使在下拉菜单中禁用了编辑也是如此。 (CQ-4317077)
+* 在單行文字欄位中更新和儲存中繼資料值時，即使下拉式選單上的編輯功能已停用，下拉式選單中的值也會被刪除。 (CQ-4317077)
 
-* 您可以使用省略号作为注释来查看资产。 使用小椭圆时，椭圆与打印版本中的注释数重叠。 (CQ-4316792)
+* 您可以使用省略符號作為註解來檢閱資產。 使用小橢圓時，橢圓與列印版本中的註釋編號重疊。 (CQ-4316792)
 
-* 在搜索后从搜索结果中选择资产时，不会显示快速发布选项。 (CQ-4317748)
+* 在搜尋資產後，若從搜尋結果中選取資產，快速發佈選項不會顯示。 (CQ-4317748)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -121,26 +121,26 @@ ht-degree: 30%
 
 ### 其他更新 {#misc-2021-04-0-forms}
 
-* 为了更便于识别内容，该服务现在为XDP、动态PDF和架构文件生成实时缩略图。
-* 添加了将PDF文件移动到AEM Forms UI中放置文件夹的功能。
+* 為了更方便識別內容，該服務現在會為XDP、動態PDF和結構描述檔案產生即時縮圖。
+* 新增將PDF檔案移動到放置在AEM Forms UI上的資料夾的功能。
 
-## Adobe Experience Manager商务as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 支持类别UID — 这会为对类别ID使用字符串的系统解锁第三方商务集成
+* 類別UID的支援 — 針對使用字串作為類別ID的系統，這可解除鎖定第三方商業整合
 
-* AEM的PWA Studio扩展，包括 示例集成
+* PWA Studio的AEM擴充功能，包括 整合範例
 
-* 新的CIF导航核心组件，可扩展WCM导航核心组件
+* 可擴充WCM導覽核心元件的新CIF導覽核心元件
 
-* AEM storefront中暂存目录数据的可视指示器
+* AEM店面中暫存目錄資料的視覺指示器
 
-* 商务端点现在可通过Cloud Manager UI进行配置
+* 現在可透過Cloud Manager UI設定商務端點
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* 类别页面的页面属性的商务选项卡下未显示根类别字段
+* 根類別欄位未顯示在類別頁面的頁面屬性中的商務索引標籤下
 
 ## Cloud Manager {#cloud-manager}
 
@@ -148,48 +148,48 @@ ht-degree: 30%
 
 ### 发布日期 {#release-date-cm-april}
 
-AEM 2021.4.0版中Cloud Manager的发布日期是2021年4月8日。
-下一版本计划于2021年5月6日发布。
+AEM as a Cloud Service 2021.4.0 中的 Cloud Manager 的发布日期是 2021 年 4 月 8 日。
+下一个版本计划于 2021 年 06 月 06 日发布。
 
 ### 新增功能 {#what-is-new-april}
 
-* 更新了添加和编辑程序工作流的UI，使其更加直观。
+* “添加和编辑程序”工作流的 UI 进行了更新，变得更加直观。
 
-* 现在，具有必需权限的用户可以通过UI提交商务端点。
+* 具有必需权限的用户现在可以通过 UI 提交商务端点。
 
-* 现在，环境变量的范围可以是特定服务（创作或发布）。 需要AEM版本 `2021.03.5104.20210328T185548Z` 或更高版本。
+* 现在可以将环境变量的作用域限定为特定服务（创作或发布）。要求 AEM 版本 `2021.03.5104.20210328T185548Z` 或更高版本。
 
-* 的 **管理Git** 按钮，即使尚未配置管道，该按钮也会显示在管道卡上。
+* 即使未配置任何管道，“管道”卡上也会显示&#x200B;**“管理 Git”**&#x200B;按钮。
 
-* Cloud Manager使用的AEM项目原型版本已更新至版本27。
+* Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 27。
 
-* 在Adobe I/O开发人员控制台中，由Cloud Manager创建的项目不能再被无意中编辑或删除。
+* Adobe I/O 开发人员控制台中由 Cloud Manager 创建的项目不会再被无意中编辑或删除。
 
-* 当用户添加新环境时，他们将被告知，一旦创建了环境，便无法将其移动到其他区域。
+* 当用户添加新环境时，将会通知他们，环境在创建后无法移动到其他区域。
 
-* 现在，环境变量的范围可以是特定服务（创作或发布）。 需要AEM版本2021.03.5104.20210328T185548Z或更高版本。
+* 现在可以将环境变量的作用域限定为特定服务（创作或发布）。 要求 AEM 版本 2021.03.5104.20210328T185548Z 或更高版本。
 
-* 澄清了在删除环境时启动管道时的错误消息。
+* 澄清了删除环境后启动管道时的错误消息。
 
-* 现在，Eclipse项目提供的OSGi包已从规则中排除 `CQBP-84--dependencies`.
+* Eclipse 项目提供的 OSGi 捆绑包现已从规则 `CQBP-84--dependencies` 中排除。
 
 ### 错误修复 {#bug-fixes-cm-april}
 
-* 编辑管道的体验审核页面时，输入路径以斜杠开头 `( / )` 将不再导致步骤卡在“待定”状态中。
+* 编辑管道的体验审核页面时，以斜杠 `( / )` 开头的输入路径将不再会使步骤停留在挂起状态。
 
-* 创建新生产管道时，如果用户未添加内容审核覆盖，则不会审核默认主页。
+* 创建新的生产管道时，如果用户未添加内容审核覆盖，则默认主页未审核。
 
-* 的问题 `CloudServiceIncompatibleWorkflowProcess` 的可下载问题CSV文件中的严重性不正确。
+* `CloudServiceIncompatibleWorkflowProcess` 的问题在可下载的问题 CSV 文件中的严重性不正确。
 
-* 的 `Runmode` 检查在非文件夹节点上产生误报。
+* `Runmode` 检查在非文件夹节点上产生误报。
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.12的发布日期是2021年4月12日。
+Best Practices Analyzer v2.1.12的發行日期為2021年4月12日。
 
 ### 错误修复 {#bug-fixes-bpa-april}
 
-* 报告的BPA中发现重复的行。 此问题已得到修复。
-* AEM版本6.4.2上的BPA UI会引发一个JS错误，该错误会禁用“生成报表”按钮。 此问题已得到修复
+* 在報告的BPA中看到重複列。 此问题已得到修复。
+* AEM 6.4.2版上的BPA UI擲回停用產生報告按鈕的JS錯誤。 此问题已得到修复

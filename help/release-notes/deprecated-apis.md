@@ -211,11 +211,11 @@ ht-degree: 96%
     <td>01/01/2023</td>
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEMas a Cloud Service不支持此API。</td>
+    <td>AEMas a Cloud Service不支援此API。</td>
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>已弃用Google Guava核心库。</td>
+    <td>Google Guava核心程式庫已過時。</td>
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr>

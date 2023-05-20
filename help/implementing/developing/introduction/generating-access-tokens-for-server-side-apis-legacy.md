@@ -1,6 +1,6 @@
 ---
-title: 为服务器端API生成访问令牌（旧版）
-description: 了解如何通过生成安全的JWT令牌来促进第三方服务器与AEMas a Cloud Service之间的通信
+title: 為伺服器端API產生存取權杖（舊版）
+description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與AEMas a Cloud Service之間的通訊
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
@@ -10,36 +10,36 @@ ht-degree: 0%
 
 ---
 
-# 为服务器端API生成访问令牌（旧版） {#generating-access-tokens-for-server-side-apis-legacy}
+# 為伺服器端API產生存取權杖（舊版） {#generating-access-tokens-for-server-side-apis-legacy}
 
-某些架构依赖于从AEM基础架构外的服务器上托管的应用程序as a Cloud Service调用AEM。 例如，一个移动设备应用程序，它调用服务器，然后向AEM发出API请求as a Cloud Service。
+某些架構依賴對AEM的呼叫與AEM基礎架構以外伺服器上託管的應用程式as a Cloud Service。 例如，呼叫伺服器的行動應用程式，接著會向AEM發出as a Cloud Service的API請求。
 
-服务器到服务器的流程以及简化的开发流程如下所述。 AEMas a Cloud Service [开发人员控制台](development-guidelines.md#crxde-lite-and-developer-console) 用于生成身份验证过程所需的令牌。
+伺服器對伺服器的流程如下所述，以及簡化的開發流程。 AEMas a Cloud Service [開發人員主控台](development-guidelines.md#crxde-lite-and-developer-console) 用於產生驗證程式所需的權杖。
 
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
 >In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
-## 服务器到服务器流 {#the-server-to-server-flow}
+## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
-具有IMS组织管理员角色的用户，以及AEM作者上AEM用户或AEM管理员产品配置文件的成员，可以生成AEMas a Cloud Service凭据。 该凭据稍后可由具有AEMas a Cloud Service环境管理员角色的用户检索，并应安装在服务器上，需要谨慎地将其视为密钥。 此JSON格式文件包含与AEMas a Cloud ServiceAPI集成所需的所有数据。 数据用于创建已签名的JWT令牌，该令牌与IMS交换以获取IMS访问令牌。 然后，此访问令牌可用作承载身份验证令牌，以向AEMas a Cloud Service发出请求。 默认情况下，凭据会在一年后过期，但可以根据需要刷新凭据，如所述 [此处](#refresh-credentials).
+具有IMS組織管理員角色的使用者，並且也是AEM作者上的AEM使用者或AEM管理員產品設定檔的成員，可以產生AEMas a Cloud Service認證。 具有AEMas a Cloud Service環境管理員角色的使用者稍後可以擷取該認證，並且應該安裝在伺服器上，並且需要小心地將其視為秘密金鑰。 此JSON格式檔案包含與AEMas a Cloud ServiceAPI整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與IMS交換以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM發出as a Cloud Service請求。 認證預設會在一年後到期，但可視需要重新整理，如所述 [此處](#refresh-credentials).
 
-服务器到服务器流程涉及以下步骤：
+伺服器對伺服器流程涉及以下步驟：
 
-* 从开发人员控制台获取AEMas a Cloud Service的凭据
-* 在对AEM进行调用的非AEM服务器上安装AEM as a Cloud Service的凭据
-* 使用Adobe的IMS API生成JWT令牌并交换该令牌以用于访问令牌
-* 使用访问令牌作为载体身份验证令牌调用AEM API
-* 在AEM环境中为技术帐户用户设置适当的权限
+* 從開發人員控制檯擷取AEMas a Cloud Service的認證
+* 在呼叫AEM的非AEM伺服器上安裝AEMas a Cloud Service的認證
+* 產生JWT權杖並使用Adobe的IMS API將該Token交換為存取權杖
+* 以存取權杖作為持有者驗證權杖來呼叫AEM API
+* 在AEM環境中為技術帳戶使用者設定適當的許可權
 
-### 获取AEMas a Cloud Service凭据 {#fetch-the-aem-as-a-cloud-service-credentials}
+### 擷取AEMas a Cloud Service認證 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-有权访问AEMas a Cloud Service开发人员控制台的用户会看到开发人员控制台中针对给定环境的“集成”选项卡，以及两个按钮。 具有AEMas a Cloud Service环境管理员角色的用户可以单击 **生成服务凭据** 按钮以生成和显示服务凭据json。 json包含非AEM服务器所需的所有信息，包括客户端ID、客户端密钥、私钥、证书以及环境创作层和发布层的配置，无论选择哪个面板。
+有權存取AEMas a Cloud Service開發人員控制檯的使用者可以看到指定環境的開發人員控制檯中的整合索引標籤和兩個按鈕。 具有AEMas a Cloud Service環境管理員角色的使用者可以按一下 **產生服務認證** 按鈕來產生和顯示服務認證json。 json包含非AEM伺服器所需的所有資訊，包括使用者端ID、使用者端密碼、私密金鑰、憑證，以及環境製作和發佈層級的設定，不論Pod選取範圍為何。
 
-![JWT生成](assets/JWTtoken3.png)
+![JWT產生](assets/JWTtoken3.png)
 
-输出类似于：
+輸出類似於以下內容：
 
 ```
 {
@@ -61,21 +61,21 @@ ht-degree: 0%
 }
 ```
 
-生成凭据后，可以稍后通过按 **获取服务凭据** 按钮。
+產生認證後，稍後可以按下 **取得服務認證** 按鈕的相同位置。
 
 >[!IMPORTANT]
 >
->IMS组织管理员（通常是通过Cloud Manager配置环境的用户）应同时是AEM作者上AEM用户或AEM管理员产品配置文件的成员，用于访问开发人员控制台。 然后，他们必须单击 **生成服务凭据** 按钮，以便具有AEMas a Cloud Service环境的管理员权限的用户生成并稍后检索凭据。 如果IMS组织管理员尚未完成此任务，则会显示一条消息，告知他们需要IMS组织管理员角色。
+>IMS組織管理員（通常是透過Cloud Manager布建環境的使用者）應該也是AEM Author上的AEM使用者或AEM管理員產品設定檔的成員，可以存取開發人員主控台。 接著，他們必須按一下 **產生服務認證** 按鈕，以便產生認證，然後由具有AEMas a Cloud Service環境管理員許可權的使用者擷取。 如果IMS組織管理員尚未完成此任務，則會出現一則訊息，通知他們需要IMS組織管理員角色。
 
-### 在非AEM服务器上安装AEM服务凭据 {#install-the-aem-service-credentials-on-a-non-aem-server}
+### 在非AEM伺服器上安裝AEM服務認證 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-调用AEM的非AEM应用程序应能够访问AEMas a Cloud Service的凭据，并将其视为机密。
+對AEM發出呼叫的非AEM應用程式應能存取AEMas a Cloud Service的認證，並將其視為秘密。
 
-### 生成JWT令牌并将其交换为访问令牌 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### 產生JWT權杖並將其交換為存取權杖 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在对AdobeIMS服务的调用中，使用凭据创建JWT令牌以检索访问令牌，该令牌的有效期为24小时。
+在呼叫Adobe的IMS服務中使用憑證建立JWT權杖以擷取存取權杖，該權杖的有效期限為24小時。
 
-可以使用为此目的而设计的客户端库将AEM CS服务凭据交换为访问令牌。 客户端库可从 [Adobe的公共GitHub存储库](https://github.com/adobe/aemcs-api-client-lib)，其中包含更多详细信息和最新信息。
+可以使用為此目的而設計的使用者端程式庫，將AEM CS服務認證交換為存取權杖。 使用者端程式庫可從以下位置取得： [Adobe的公開GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)，其中包含更詳細的指引和最新資訊。
 
 ```
 /*jshint node:true */
@@ -95,70 +95,70 @@ exchange(config).then(accessToken => {
 });
 ```
 
-可以使用能够生成具有正确格式的签名JWT令牌并调用IMS令牌交换API的任何语言来执行相同的交换。
+相同交換能以能夠產生具有正確格式的已簽署JWT權杖並呼叫IMS權杖交換API的任何語言執行。
 
-访问令牌可定义何时过期（通常为24小时）。 Git存储库中有一个示例代码，用于管理访问令牌并在其过期之前刷新该令牌。
+存取權杖會定義其到期時間，通常為24小時。 Git存放庫中有範常式式碼，可用於管理存取權杖並在其過期前重新整理。
 
-### 调用AEM API {#calling-the-aem-api}
+### 呼叫AEM API {#calling-the-aem-api}
 
-对AEMas a Cloud Service环境进行相应的服务器到服务器API调用，包括标头中的访问令牌。 因此，对于“授权”标头，请使用值 `"Bearer <access_token>"`. 例如，使用 `curl`:
+對AEMas a Cloud Service環境發出適當的伺服器對伺服器API呼叫，包括標頭中的存取權杖。 所以對於「Authorization」標頭，請使用值 `"Bearer <access_token>"`. 例如，使用 `curl`：
 
 ```curlc
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
-### 在AEM中为技术帐户用户设置适当的权限 {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
+### 在AEM中為技術帳戶使用者設定適當的許可權 {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-在AEM中创建技术帐户用户后（在具有相应访问令牌的第一个请求后发生），技术帐户用户必须获得相应的权限 **in** AEM。
+在AEM中建立技術帳戶使用者後（發生在具有對應存取權杖的第一個請求後），必須正確授予技術帳戶使用者許可權 **在** AEM。
 
-默认情况下，在AEM创作服务中，技术帐户用户会添加到提供读取访问权限的参与者用户组中。AEM
+依預設，在AEM Author服務上，技術帳戶使用者會新增至提供讀取許可權AEM的貢獻者使用者群組。
 
-可以使用常用方法进一步为AEM中的此技术帐户用户配置权限。
+您可以使用一般方法，進一步布建此AEM技術帳戶使用者所需的許可權。
 
-## 开发人员流程 {#developer-flow}
+## 開發人員流程 {#developer-flow}
 
-开发人员应使用其非AEM应用程序的开发实例（在其笔记本电脑上运行或托管）进行测试，该实例可向AEMas a Cloud Service开发环境发出请求。 但是，由于开发人员不一定具有IMS管理员角色权限，因此Adobe不能假定他们可以生成常规服务器到服务器流中描述的JWT载体。 因此，Adobe为开发人员提供了一种直接生成访问令牌的机制，该访问令牌可用于对他们有权访问的AEMas a Cloud Service环境的请求。
+開發人員應使用非AEM應用程式的開發執行個體進行測試（在他們的筆記型電腦上執行或託管），該執行個體會向開發AEMas a Cloud Service開發環境提出請求。 不過，由於開發人員不一定具備IMS管理員角色許可權，因此Adobe不能假設他們可以產生一般伺服器對伺服器流程中說明的JWT載體。 因此，Adobe為開發人員提供了一種機制，以直接產生存取權杖，該權杖可用於對其有權存取的AEMas a Cloud Service環境的請求中。
 
-请参阅 [开发人员准则文档](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) 有关使用AEMas a Cloud Service开发人员控制台所需权限的信息。
-
->[!NOTE]
-本地开发访问令牌的有效期最长为24小时，之后必须使用同一方法重新生成该令牌。
-
-开发人员可以使用此令牌从其非AEM测试应用程序向AEMas a Cloud Service环境进行调用。 通常，开发人员在自己的笔记本电脑上将此令牌与非AEM应用程序结合使用。 此外，AEM as a Cloud通常是非生产环境。
-
-开发人员流程涉及以下步骤：
-
-* 从开发人员控制台中生成访问令牌
-* 使用访问令牌调用AEM应用程序。
-
-开发人员还可以对其本地计算机上运行的AEM项目进行API调用，在这种情况下，不需要访问令牌。
-
-### 生成访问令牌 {#generating-the-access-token}
-
-要生成访问令牌，请在开发人员控制台中，单击 **获取本地开发令牌**.
-
-### 调用，然后使用访问令牌调用AEM应用程序 {#call-the-aem-application-with-an-access-token}
-
-从非AEM应用程序向AEMas a Cloud Service环境进行相应的服务器到服务器API调用，包括标头中的访问令牌。 因此，对于“授权”标头，请使用值 `"Bearer <access_token>"`.
-
-## 刷新凭据 {#refresh-credentials}
-
-默认情况下，AEMas a Cloud Service的凭据会在一年后过期。 为确保服务连续性，开发人员可以选择刷新凭据，将其可用性延长一年。 使用 **刷新服务凭据** 从 **集成** 选项卡，如下所示。
-
-![凭据刷新](assets/credential-refresh.png)
-
-按按钮后，将生成一组新的凭据。 您可以使用新凭据更新您的密钥存储，并验证它们是否按原样运行。
+請參閱 [開發人員指引檔案](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) 以取得使用AEMas a Cloud Service開發人員控制檯所需許可權的相關資訊。
 
 >[!NOTE]
-单击 **刷新服务凭据** 按钮时，旧凭据会一直进行注册，直到过期，但只有最新的凭据集可在任何时候从开发人员控制台查看。
+本機開發存取權杖的有效期最長為24小時，之後必須使用相同方法重新產生。
 
-## 服务凭据吊销 {#service-credentials-revocation}
+開發人員可使用此代號，從非AEM測試應用程式呼叫AEMas a Cloud Service環境。 開發人員通常會在自己的筆記型電腦上搭配非AEM應用程式使用此代號。 此外，AEM as a Cloud通常是非生產環境。
 
-如果必须撤消凭据，则必须使用以下步骤向客户支持人员提交请求：
+開發人員流程涉及以下步驟：
 
-1. 在用户界面中禁用Adobe Admin Console的技术帐户用户：
-   * 在Cloud Manager中，按 **...** 按钮。 此操作将打开产品配置文件页面
-   * 现在，单击 **AEM用户** 用户档案，以显示用户列表
-   * 单击 **API凭据** 选项卡，然后找到相应的技术帐户用户并将其删除
-2. 联系客户支持，并请求删除该特定环境的服务凭据
-3. 最后，您可以再次生成凭据，如本文档所述。 另外，请确保所创建的新技术帐户用户具有相应的权限。
+* 從開發人員控制檯產生存取權杖
+* 使用存取權杖呼叫AEM應用程式。
+
+開發人員也可以對其本機電腦上執行的AEM專案進行API呼叫，這種情況下不需要存取權杖。
+
+### 產生存取權杖 {#generating-the-access-token}
+
+若要產生存取權杖，在開發人員控制檯中，按一下 **取得本機開發權杖**.
+
+### 使用存取權杖呼叫AEM應用程式 {#call-the-aem-application-with-an-access-token}
+
+從非AEM應用程式對AEMas a Cloud Service環境發出適當的伺服器對伺服器API呼叫，包括標頭中的存取權杖。 所以對於「Authorization」標頭，請使用值 `"Bearer <access_token>"`.
+
+## 重新整理認證 {#refresh-credentials}
+
+根據預設，AEMas a Cloud Service的認證會在一年後過期。 為確保服務的連續性，開發人員可以選擇重新整理憑證，將其可用性延長一年。 使用 **重新整理服務認證** 從 **整合** tab鍵，如下所示。
+
+![認證重新整理](assets/credential-refresh.png)
+
+按下按鈕後，將會產生一組新的認證。 您可以使用新憑證更新秘密儲存空間，並驗證它們是否如預期般運作。
+
+>[!NOTE]
+按一下 **重新整理服務認證** 按鈕，舊認證會保持註冊狀態直到過期，但在任何時候，開發人員控制檯中只能檢視最新的認證集。
+
+## 服務認證撤銷 {#service-credentials-revocation}
+
+如果認證必須撤銷，您必須使用下列步驟向客戶支援提交請求：
+
+1. 在使用者介面中停用Adobe Admin Console的技術帳戶使用者：
+   * 在Cloud Manager中，按下 **...** 按鈕來設定環境。 此動作會開啟產品設定檔頁面
+   * 現在，按一下 **AEM使用者** 設定檔，顯示使用者清單
+   * 按一下 **API認證** 索引標籤，然後尋找合適的技術帳戶使用者並將其刪除
+2. 請聯絡客戶支援，並要求刪除該特定環境的服務認證
+3. 最後，您可以再次產生認證，如本檔案所述。 同時請確定建立的新技術帳戶使用者擁有適當的許可權。

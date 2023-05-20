@@ -3,7 +3,7 @@ title: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
 description: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
 

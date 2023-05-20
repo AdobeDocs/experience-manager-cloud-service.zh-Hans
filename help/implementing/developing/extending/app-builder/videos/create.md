@@ -1,6 +1,6 @@
 ---
-title: 创建应用程序生成器应用程序
-description: 了解如何创建和引导新的应用程序生成器应用程序。
+title: 建立應用程式建立器應用程式
+description: 瞭解如何建立和啟動新的App Builder應用程式。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,28 +16,28 @@ ht-degree: 0%
 
 ---
 
-# 创建应用程序生成器应用程序
+# 建立應用程式建立器應用程式
 
-## 设置您的第一个项目
+## 設定您的第一個專案
 
-了解创建首个应用程序生成器项目的基础知识。
+瞭解建立第一個App Builder專案的基礎知識。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
 
-## 设置本地开发环境
+## 設定您的本機開發環境
 
-了解如何设置本地环境以进行App Builder开发。
+瞭解如何設定本機環境以進行App Builder開發。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 
-## 初始化您的第一个项目
+## 初始化您的第一個專案
 
-了解如何初始化应用程序生成器项目。
+瞭解如何初始化App Builder專案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 
-## 构建、运行和测试您的应用程序
+## 建置、執行及測試您的應用程式
 
-了解如何构建、运行和测试App Builder应用程序。
+瞭解如何建立、執行及測試您的App Builder應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)

@@ -1,59 +1,59 @@
 ---
-title: 运行管道
-description: 本页介绍如何在Cloud Manager中将Screens作为Cloud Service项目运行管道。
+title: 執行管道
+description: 本頁說明如何在Cloud Manager中以Cloud Service專案形式執行Screens管道。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
-# 在Cloud Manager中运行屏幕as a Cloud Service程序管道 {#run-pipeline-screens-cloud}
+# 在Cloud Manager中執行Screensas a Cloud Service程式管道 {#run-pipeline-screens-cloud}
 
-本节介绍如何在Cloud Manager中运行管道并为程序部署代码。
+本節說明如何在Cloud Manager中執行管道並部署您的程式碼。
 
 >[!NOTE]
->请参阅 [配置CD-CD管线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) 和 [部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) 了解如何在Cloud Manager中为程序运行管道。
+>請參閱 [設定CD-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) 和 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) 以瞭解如何在Cloud Manager中執行計畫的管道。
 
 ## 目标 {#objective}
 
-以下部分介绍如何在Cloud Manager中配置CI/CD管道并为程序部署代码。
+以下章節說明如何在Cloud Manager中設定CI/CD管道並為您的方案部署程式碼。
 
-## 在Cloud Manager中为Screens项目运行管道的步骤 {#steps-branch-creation}
+## 在Cloud Manager中為Screens專案執行管道的步驟 {#steps-branch-creation}
 
-1. 环境设置成功完成后，您将在Cloud Manager的 **概述** 页面。
+1. 環境設定成功完成後，您將會在Cloud Manager的 **概觀** 頁面。
 
    ![图像](/help/screens-cloud/assets/onboarding/add-environ3.png)
 
-1. 单击 **设置管道** 从 **概述** 页面。
+1. 按一下 **設定管道** 從 **概觀** 頁面。
 
-1. 单击 **下一个** 选择分支后。
+1. 按一下 **下一個** 選取分支後。
 
    ![图像](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
 
-1. 从 **设置管道** 向导。 单击 **保存**.
+1. 從以下專案選取您的選項： **設定管道** 精靈。 按一下 **儲存**.
 
    >[!NOTE]
-   >要了解“设置管道”向导中的选项，请参阅 [从Cloud Manager配置管道设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) 以了解更多详细信息。
+   >若要瞭解設定管道精靈中的選項，請參閱 [從Cloud Manager配置管道設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) 以取得更多詳細資料。
 
    ![图像](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
-1. 安装管道完成后，行动动员卡会更新，如下图所示。 单击部署。
+1. 設定管道完成後，行動號召卡會更新，如下圖所示。 按一下部署。
 
    >[!NOTE]
-   >要了解Cloud Manager中的部署阶段，请参阅 [部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) 以了解更多详细信息。
+   >若要瞭解Cloud Manager中的部署階段，請參閱 [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) 以取得更多詳細資料。
 
    ![图像](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
-1. 单击 **生成** 以启动构建过程。
+1. 按一下 **建置** 以開始建置流程。
 
    ![图像](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. 构建过程完成后，您将在 **环境** Cloud Manager的卡片 **概述** 页面。
+1. 建置流程完成後，您將會看到以下連結中的作者連結： **環境** 來自Cloud Manager的卡片 **概觀** 頁面。
 
    ![图像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-在Cloud Manager中了解如何为程序设置环境后，您现在可以继续执行载入流程中的下一步，即， [导航到Screens服务提供商](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
+瞭解如何在Cloud Manager中為您的計畫設定環境後，您現在已準備好進入上線流程的下一步，即 [瀏覽至Screens服務提供者](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

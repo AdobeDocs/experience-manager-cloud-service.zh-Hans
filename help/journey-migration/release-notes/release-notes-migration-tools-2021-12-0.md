@@ -1,21 +1,21 @@
 ---
-title: AEMas a Cloud Service版本2021.12.0中迁移工具的发行说明
-description: AEMas a Cloud Service版本2021.12.0中迁移工具的发行说明
+title: AEMas a Cloud Service2021.12.0版中移轉工具的發行說明
+description: AEMas a Cloud Service2021.12.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 40%
+ht-degree: 46%
 
 ---
 
-# AEMas a Cloud Service版本2021.12.0中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service2021.12.0版中移轉工具的發行說明 {#release-notes}
 
-本页概述了AEM 2021.12.0中迁移工具的发行说明。
+本頁面總覽AEMas a Cloud Service2021.12.0中移轉工具發行說明。
 
 >[!NOTE]
->要查看最新的Adobe Experience Manager as a Cloud Service发行说明，请单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
+>要查看 Adobe Experience Manager as a Cloud Service 的当前发行说明，请单击[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans)。
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -39,9 +39,9 @@ Best Practices Analyzer v2.1.22 的发布日期是 2021 年 12 月 1 日。
 
 ### 发布日期 {#release-date-ctt}
 
-内容传输工具v1.7.10的发布日期是2021年12月8日。
+內容轉移工具v1.7.10的發行日期為2021年12月8日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 在内容传输工具的摄取阶段添加切换以允许用户禁用 [预拷贝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 在摄取期间。 为了获得最佳摄取速度，对于较小的迁移集，或者自上次摄取后仅添加了几个Blob，应禁用摄取期间的预复制。
-* 更新了用户映射，以使用经过改进的用户管理API，该API可以同时吸引2000个用户，从而显着提升性能。
+* 切換新增到內容轉移工具中的擷取階段，以允許使用者停用 [預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 在內嵌期間。 為獲得最佳擷取速度，小型移轉集或在上次擷取後僅新增幾個blob時，應停用擷取期間的預先複製。
+* 使用者對應已更新，使用改良的使用者管理API，一次可取得2000名使用者，大幅改善效能。

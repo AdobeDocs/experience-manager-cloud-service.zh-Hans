@@ -2,7 +2,7 @@
 title: 部署代码
 description: 了解如何使用 AEM as a Cloud Service 中的 Cloud Manager 管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
+source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 97%
@@ -55,7 +55,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 **暂存部署**&#x200B;阶段。 包括这些步骤。
 
-* **验证** – 此步骤可确保将管道配置为使用当前可用的资源。 例如，测试配置的分支存在且环境可用。
+* **验证** – 此步骤可确保将管道配置为使用当前可用的资源。 例如，測試設定的分支是否存在並且環境是否可用。
 * **构建和单元测试** – 此步骤运行容器化的构建过程。
    * 有关构件环境的详细信息，请参阅[构建环境详情](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)文档。
 * **代码扫描** – 此步骤评估应用程序代码的质量。
@@ -124,7 +124,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 >[!NOTE]
 >
->调度程序缓存在每个部署上都会被清除。 新发布节点接受流量之前，系统会先对其进行热化。
+>每次部署都會清除Dispatcher快取。 它隨後在新發佈節點接受流量之前會先加熱。
 
 ## 重新执行生产部署 {#Reexecute-Deployment}
 

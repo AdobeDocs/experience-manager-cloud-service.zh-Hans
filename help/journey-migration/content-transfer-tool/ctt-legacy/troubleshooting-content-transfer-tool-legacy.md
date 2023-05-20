@@ -1,5 +1,5 @@
 ---
-title: 内容传输工具故障诊断（旧版）
+title: 疑難排解內容轉移工具（舊版）
 description: 内容转移工具疑难解答
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 ---
 
-# 内容传输工具故障诊断（旧版） {#troubleshoot-content-transfer-tool}
+# 疑難排解內容轉移工具（舊版） {#troubleshoot-content-transfer-tool}
 
 
 ## 缺少 Blob ID {#missing-blobs}

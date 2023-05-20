@@ -1,8 +1,8 @@
 ---
 title: AEM 项目存储库结构包
-description: Adobe Experience Manager as a Cloud Service Maven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。
+description: Adobe Experience Manager as a Cloud Service Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根目錄。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
@@ -11,29 +11,29 @@ ht-degree: 9%
 
 # AEM 项目存储库结构包
 
-Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构子包定义，其唯一目的是定义项目代码子包部署到的JCR存储库根。 这可确保在Experience Manageras a Cloud Service中安装包时按JCR资源依赖项自动排序。 缺少依赖项可能会导致子结构在其父结构之前安装，从而意外删除，从而破坏部署的情况。
+Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一目的是定義專案程式碼子套件部署到的JCR存放庫根目錄。 這可確保JCR資源相依性自動對Experience Manageras a Cloud Service的套件安裝排序。 缺少相依性可能會導致子結構安裝在其父結構之前，並因此意外被移除，中斷部署的情況。
 
 如果您的代码包部署到代码包&#x200B;**未涵盖**&#x200B;的位置，则必须在存储库结构包中枚举任何上级资源（比较靠近 JCR 根的 JCR 资源），以建立这些依赖关系。
 
-![存储库结构包](./assets/repository-structure-packages.png)
+![存放庫結構套件](./assets/repository-structure-packages.png)
 
-存储库结构包定义 `/apps` 包验证器用于确定区域“不会发生潜在冲突”（因为它们是标准根）的区域。
+存放庫結構套件定義了的預期、常見狀態 `/apps` 套件驗證器使用哪個區域來判斷「不會發生潛在衝突」，因為這些區域是標準根。
 
-要包含在存储库结构包中的最典型路径包括：
+要包含在存放庫結構封裝中的最典型路徑是：
 
-+ `/apps` 是系统提供的节点
-+ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`和 `/apps/sling/...` 为 `/libs`.
-+ `/apps/settings` 共享的上下文感知配置根路径
++ `/apps` 是系統提供的節點
++ `/apps/cq/...`， `/apps/dam/...`， `/apps/wcm/...`、和 `/apps/sling/...` 提供下列專案的一般覆蓋圖： `/libs`.
++ `/apps/settings` 這是共用的內容感知設定根路徑
 
-请注意，此子包 **没有** 任何内容，仅由 `pom.xml` 定义过滤器根。
+請注意，此子封裝 **沒有** 任何內容，且僅由 `pom.xml` 定義篩選根目錄。
 
-## 创建存储库结构包
+## 建立存放庫結構套件
 
-要为Maven项目创建存储库结构包，请新建一个空的Maven子项目，具有以下内容 `pom.xml`，更新项目元数据以符合父Maven项目。
+若要為您的Maven專案建立存放庫結構套件，請建立新的空Maven子專案，包含以下內容 `pom.xml`，更新專案中繼資料以符合您的父Maven專案。
 
-更新 `<filters>` 要包含您部署到的代码包的所有JCR存储库路径根。
+更新 `<filters>` 以包含您部署程式碼套件的所有JCR存放庫路徑根。
 
-确保将此新的Maven子项目添加到父项目 `<modules>` 列表。
+確保將此新Maven子專案新增到父專案 `<modules>` 清單。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -114,11 +114,11 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 </project>
 ```
 
-## 引用存储库结构包
+## 參考存放庫結構套件
 
-要使用存储库结构包，请通过所有代码包(部署到 `/apps`)通过FileVault内容包Maven插件创建Maven项目 `<repositoryStructurePackage>` 配置。
+若要使用存放庫結構套件，請透過所有程式碼套件（部署到的子套件）參照它 `/apps`) Maven專案（透過FileVault content package Maven外掛程式） `<repositoryStructurePackage>` 設定。
 
-在 `ui.apps/pom.xml`，以及任何其他代码包 `pom.xml`s，将对项目的存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件。
+在 `ui.apps/pom.xml`，以及任何其他程式碼套件 `pom.xml`s，將專案的存放庫結構套件(#repository-structure-package)設定的參考新增到FileVault package Maven外掛程式。
 
 ```xml
 ...
@@ -153,33 +153,33 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 </dependencies>
 ```
 
-## 多代码包用例
+## 多程式碼套件使用案例
 
-一个不太常见、更复杂的用例，是支持部署多个代码包，这些代码包将安装到JCR存储库的相同区域中。
+較不常見且較複雜的使用案例是支援部署安裝在JCR存放庫相同區域中的多個程式碼套件。
 
 例如：
 
-+ 代码包A部署到中 `/apps/a`
-+ 代码包B部署到中 `/apps/a/b`
++ 程式碼套件A部署至 `/apps/a`
++ 程式碼套件B部署至 `/apps/a/b`
 
-如果未从代码包A上的代码包B建立包级别依赖关系，则代码包B可以先部署到 `/apps/a`，然后是代码包B，该代码包将部署到 `/apps/a`，从而删除之前安装的 `/apps/a/b`.
+如果程式碼套件A上的程式碼套件B未建立套件層級的相依性，程式碼套件B可能會先部署到 `/apps/a`，接著是程式碼套件B，部署至 `/apps/a`，因此會移除先前安裝的 `/apps/a/b`.
 
-在这种情况下：
+在此案例中：
 
-+ 代码包A应定义 `<repositoryStructurePackage>` 的存储库结构包(应具有 `/apps`)。
-+ 代码包B应定义 `<repositoryStructurePackage>` 在代码包A上，因为代码包B部署到由代码包A共享的空间中。
++ 程式碼套件A應該定義 `<repositoryStructurePackage>` 在專案的存放庫結構套件(其中應具有篩選器 `/apps`)。
++ 程式碼套件B應該定義 `<repositoryStructurePackage>` 位於程式碼套件A上，因為程式碼套件B會部署至程式碼套件A共用的空間。
 
-## 错误和调试
+## 錯誤與偵錯
 
-如果存储库结构包设置不正确，则在Maven内部版本中将报告错误：
+如果存放庫結構套件未正確設定，在Maven構建將報告錯誤：
 
 ```
 1 error(s) detected during dependency analysis.
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-这表示中断代码包没有 `<repositoryStructurePackage>` 列表 `/apps/some/path` 中。
+這表示中斷程式碼套件沒有 `<repositoryStructurePackage>` 該清單 `/apps/some/path` 在其篩選清單中。
 
 ## 其他资源
 
-+ [FileVault Content Package Maven插件](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven外掛程式](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

@@ -49,7 +49,7 @@ ht-degree: 88%
 
 1. 开箱即用索引。示例为：`/oak:index/cqPageLucene-2`。
 1. 经过自定义的开箱即用索引。由客户定义此类自定义。示例为：`/oak:index/cqPageLucene-2-custom-1`。
-1. 完全自定义的索引。示例为：`/oak:index/acme.product-1-custom-2`。为避免命名冲突，我们要求完全自定义索引具有前缀，例如， `acme.`
+1. 完全自定义的索引。示例为：`/oak:index/acme.product-1-custom-2`。為了避免命名衝突，我們要求完全自訂的索引必須有首碼，例如 `acme.`
 
 请注意，经过自定义的开箱即用索引和完全自定义的索引都需要包含 `-custom-`。只有完全自定义的索引必须以前缀开头。
 
@@ -83,7 +83,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 * 索引定义本身（例如 `/oak:index/ntBaseLucene-custom-1`）
 
-要部署自定义或自定义索引，索引定义 (`/oak:index/definitionname`) 需要在 Git 和 Cloud Manager 部署过程中通过 `ui.apps` 投放。 例如，在FileVault筛选器中， `ui.apps/src/main/content/META-INF/vault/filter.xml`，分别列出每个自定义索引和自定义索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 自定义/自定义索引定义本身随后将存储在文件中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
+要部署自定义或自定义索引，索引定义 (`/oak:index/definitionname`) 需要在 Git 和 Cloud Manager 部署过程中通过 `ui.apps` 投放。 例如，在FileVault篩選器中， `ui.apps/src/main/content/META-INF/vault/filter.xml`，分別列出每個自訂和自訂索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 自定义/自定义索引定义本身随后将存储在文件中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -147,16 +147,16 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 注意
 
-如果在filevault验证中发现以下错误 <br>
+如果您在Filevault驗證中觀察到以下錯誤 <br>
 `[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-然后，可以执行以下任一步骤来修复该问题 —  <br>
-1. 将文件降级到版本1.0.4，并将以下内容添加到顶级pom中：
+然後，可以執行以下任一步驟來修正問題 —  <br>
+1. 將filevault降級為1.0.4版，並將以下內容新增至頂層pom：
 
 ```xml
 <allowIndexDefinitions>true</allowIndexDefinitions>
 ```
 
-以下示例说明了将上述配置放在pom中的位置。
+以下範例說明將上述設定放入pom中的位置。
 
 ```xml
 <plugin>
@@ -178,13 +178,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 </plugin>
 ```
 
-1. 禁用nodetype验证。 在filevault插件配置的jackrabbit-nodetypes部分中设置以下属性：
+1. 停用節點型別驗證。 在filevault外掛程式設定的jackrabbit-nodetypes區段中設定以下屬性：
 
 ```xml
 <isDisabled>true</isDisabled>
 ```
 
-以下示例说明了将上述配置放在pom中的位置。
+以下範例說明將上述設定放入pom中的位置。
 
 ```xml
 <plugin>
@@ -272,11 +272,11 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 当前限制 {#current-limitations}
 
-目前，仅支持类型索引的索引管理 `lucene`，使用 `compatVersion` 设置为 `2`. 在内部，可以配置其他索引并用于查询，例如Elasticsearch索引。 针对 `damAssetLucene` 实际上，在AEMas a Cloud Service上，可能会针对此索引的Elasticsearch版本执行索引。 此差异对应用程序最终用户而言是不可见的，但某些工具(如 `explain` 功能将报告其他索引。 有关Lucene和Elasticsearch索引之间的差异，请参阅 [Apache Jackrabbit Oak中的Elasticsearch文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客户不能也不需要直接配置Elasticsearch索引。
+目前僅型別為的索引支援索引管理 `lucene`，搭配 `compatVersion` 設定為 `2`. 在內部，可以設定其他索引並用於查詢，例如Elasticsearch索引。 針對以下專案編寫的查詢： `damAssetLucene` 在AEMas a Cloud Service上，索引實際上可能針對此索引的Elasticsearch版本執行。 應用程式一般使用者不會察覺到這種差異，但某些工具(例如 `explain` 功能會報告不同的索引。 如需Lucene和Elasticsearch索引之間的差異，請參閱 [Apache Jackrabbit Oak中的Elasticsearch檔案](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客戶不能也不需要直接設定Elasticsearch索引。
 
-仅支持内置分析程序（即随产品一起提供的分析程序）。 不支持自定义分析器。
+僅支援內建分析器（即產品隨附的分析器）。 不支持自定义分析器。
 
-为获得最佳运行性能，索引不应过大。 所有索引的总大小都可用作指南：如果在添加自定义索引并在开发环境中调整标准索引后，此值增加了100%以上，则应调整自定义索引定义。 AEMas a Cloud Service可以阻止部署会对系统稳定性和性能产生负面影响的索引。
+為獲得最佳作業效能，索引不應過大。 所有索引的總計大小可作為參考：如果在新增自訂索引並在開發環境中調整標準索引後，這會增加100%以上，則應調整自訂索引定義。 AEMas a Cloud Service可防止部署可能對系統穩定性和效能造成負面影響的索引。
 
 ### 添加索引 {#adding-an-index}
 

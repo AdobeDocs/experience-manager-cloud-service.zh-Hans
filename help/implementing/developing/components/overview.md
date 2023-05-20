@@ -3,7 +3,7 @@ title: 组件概述
 description: 组件是模块化单元，可实施特定功能以在您的网站上展示您的内容
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
 

@@ -1,6 +1,6 @@
 ---
-title: 首次登录屏幕as a Cloud Service
-description: 本页介绍了Screensas a Cloud Service入门的首要步骤。
+title: as a Cloud Service首次登入Screens
+description: 本頁面說明Screensas a Cloud Service快速入門中的第一個步驟。
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
@@ -9,20 +9,20 @@ ht-degree: 1%
 
 ---
 
-# 首次登录屏幕as a Cloud Service {#first-time-login-screens-cloud}
+# as a Cloud Service首次登入Screens {#first-time-login-screens-cloud}
 
 
-## 载入过程 {#onboarding-process}
+## 入門流程 {#onboarding-process}
 
-签署合同后，Adobe Managed Services(AMS)会启动客户入门。 在预配阶段，当AMS在合同后预配AMS实例时，将安装AMS-Screens-Cloud功能包。 功能包允许Screens服务提供程序连接到AMS实例或Screens内容提供程序。
+簽署合約後，Adobe Managed Services (AMS)會啟動客戶上線。 在布建階段，當AMS依照合約布建AMS例項時，就會安裝AMS-Screens-Cloud Feature Pack。 Feature Pack可讓Screens服務提供者連線至AMS執行個體或Screens內容提供者。
 
-## 将用户添加到Adobe Admin Console {#admin-console}
+## 新增使用者至Adobe Admin Console {#admin-console}
 
-使用AdobeIdentity Management系统(IMS)组织ID进行配置后，您现在可以访问 [Adobe Admin Console](https://adminconsole.adobe.com/). 请参阅 [Adobe Admin Console用户](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) 以了解有关将用户添加到Admin Console的更多信息。
+布建AdobeIdentity Management System (IMS)組織ID後，您現在可以存取 [Adobe Admin Console](https://adminconsole.adobe.com/). 請參閱 [Adobe Admin Console使用者](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) 以進一步瞭解如何將使用者新增至Admin Console。
 
 >[!NOTE]
->用户有权访问AEM Cloud Service产品配置文件，以便能够使用Adobe ID或Federated ID登录AEM。
+>使用者可以存取AEM Cloud Service產品設定檔，以便使用Adobe ID或Federated ID登入AEM。
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-现在，您已配置了IMS组织ID并作为用户添加到Adobe Admin Console，接下来，您可以将Screens作为 [新项目的附加组件](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) 或 [现有项目](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) 在Cloud Manager中。
+現在您已布建IMS組織ID，並新增為Adobe Admin Console的使用者，您現在可以新增Screens作為 [新方案的附加元件](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) 或 [現有計畫](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) 在Cloud Manager中。

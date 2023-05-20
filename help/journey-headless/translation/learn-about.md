@@ -3,7 +3,7 @@ title: 了解 AEM 中的 Headless 内容及其翻译方法
 description: 了解 Headless 概念、它们如何映射到 AEM 以及 AEM 翻译理论。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 100%
 

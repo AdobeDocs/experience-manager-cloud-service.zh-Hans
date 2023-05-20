@@ -1,6 +1,6 @@
 ---
-title: 内容片段模型（资产 — 内容片段）
-description: 了解内容片段模型如何作为AEM中无头内容的基础，以及如何使用结构化内容创建内容片段。
+title: 內容片段模型（資產 — 內容片段）
+description: 瞭解內容片段模型如何作為AEM中Headless內容的基礎，以及如何使用結構化內容建立內容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 98%
 
 # 内容片段模型 {#content-fragment-models}
 
-AEM中的内容片段模型为 [内容片段，](/help/assets/content-fragments/content-fragments.md) 作为无头内容的基础。
+AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/help/assets/content-fragments/content-fragments.md) 作為Headless內容的基礎。
 
 要使用内容片段模型，您可以：
 

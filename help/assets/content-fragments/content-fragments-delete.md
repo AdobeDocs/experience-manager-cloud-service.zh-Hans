@@ -1,8 +1,8 @@
 ---
-title: 内容片段 — 删除注意事项（资产 — 内容片段）
+title: 內容片段 — 刪除考量事項（資產 — 內容片段）
 description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 98%

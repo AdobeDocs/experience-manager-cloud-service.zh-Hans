@@ -4,7 +4,7 @@ description: 探索 AEM Forms 并了解它如何帮助您生成业务就绪的�
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 100%
 

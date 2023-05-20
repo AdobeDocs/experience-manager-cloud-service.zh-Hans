@@ -12,252 +12,252 @@ ht-degree: 1%
 
 ---
 
-# 关于批集预设 {#about-bsp}
+# 關於批次集預設集 {#about-bsp}
 
-使用 **[!UICONTROL 批集预设]** 要在单独或使用批量摄取将资产文件上传到文件夹时，在图像集或旋转集中创建和组织多个资产。 您可以在计划的资产导入作业旁边运行预设 [!DNL Dynamic Media]. 每个预设都是一组唯一命名的自包含说明，这些说明定义了如何使用与预设方法中定义的命名约定相匹配的图像来构建图像集或旋转集。
+使用 **[!UICONTROL 批次集預設集]** 當您個別或使用大量擷取將資產檔案上傳至資料夾時，可在影像集或迴轉集中建立及組織多個資產。 您可以讓預設集與您排程的資產匯入作業一起執行 [!DNL Dynamic Media]. 每個預設集都是一組唯一命名、獨立的指示，定義如何使用符合預設集中定義的命名約定的影像來建構影像集或迴轉集。
 
 >[!IMPORTANT]
 >
->您是否在 [!DNL Dynamic Media Classic]，并从迁移 [!DNL Dynamic Media Classic] Adobe Experience Manager as a Cloud Service? 如果存在，则必须在 [!DNL Adobe Experience Manager as a Cloud Service].
+>您是否使用批次集預設集於 [!DNL Dynamic Media Classic]，並從移轉 [!DNL Dynamic Media Classic] 至Adobe Experience Manager as a Cloud Service？ 若是如此，您必須手動重新建立批次集預設集定義 [!DNL Adobe Experience Manager as a Cloud Service].
 
-**最佳实践**  — 使用批集预设时，Adobe建议执行以下工作流：
+**最佳實務**  — 使用批次集預設集時，Adobe建議使用下列工作流程：
 
-1. 创建批集预设。 请参阅 [为图像集或旋转集创建批集预设](#creating-bsp).
-1. 创建资产文件夹或使用现有资产文件夹，并确保它已同步到 [!DNL Dynamic Media]. 请参阅 [创建文件夹](/help/assets/manage-digital-assets.md#creating-folders).
-1. 将批集预设应用到资产文件夹。 请参阅 [关于将批集预设应用到文件夹](#apply-bsp).
-1. 将图像上传到资产文件夹。 请参阅 [上传图像集的资产](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [上传旋转集的资产](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或 [将数字资产添加到Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
-1. 图像集或旋转集将在所需的文件夹中自动生成。
-1. 发布图像集或旋转集。 请参阅 [发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. 建立批次集預設集。 另請參閱 [為影像集或迴轉集建立批次集預設集](#creating-bsp).
+1. 建立資產資料夾或使用現有的資產資料夾，並確保已將其同步至 [!DNL Dynamic Media]. 另請參閱 [建立資料夾](/help/assets/manage-digital-assets.md#creating-folders).
+1. 將批次集預設集套用至資產資料夾。 另請參閱 [關於將批次集預設集套用至資料夾](#apply-bsp).
+1. 將影像上傳至資產資料夾。 另請參閱 [上傳影像集的資產](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)， [上傳迴轉集的資產](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)，或 [將數位資產新增至Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
+1. 影像集或迴轉集會在所需的資料夾中自動產生。
+1. 發佈影像集或迴轉集。 另請參閱 [發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## 为图像集或旋转集创建批集预设 {#creating-bsp}
+## 為影像集或迴轉集建立批次集預設集 {#creating-bsp}
 
-要创建批集预设，您应该对正则表达式有一些熟悉和了解。
+若要建立批次集預設集，最好熟悉並瞭解規則運算式。
 
-理想情况下，您的公司已经为资产分组方式定义了命名约定。
-为了帮助您了解使用命名约定的重要性，请假定贵公司定义的命名约定为 `<style>-<color>-<view>`. 而且，集的基本名称必须始终为 `<style>-<color>`，且集名扩展名为 `-SET`. 如果您上传的图像名为 `0123-RED-01`，则将创建一个名为 `0123-RED-SET`. 如果您稍后上传图像 `0123-RED-03` 和 `0123-BLUE-01`，则 `RED-03` 图像将被添加到位于第二个位置的集合中，因为其排序顺序低于 `01`. 但是， `BLUE-01` 图像将是名为 `0123-BLUE-SET`. 在下次上传资产时，您需要添加文件 `0123-RED-02` 和 `0123-BLUE-02`. 每个资产都将添加到其各自的集合中。 的 `RED-02` 图像将在现有图像之间自动排序 `01` 和 `03` 图像，因为排序顺序。
+理想情況下，貴公司已針對資產在集合中的分組方式定義命名慣例。
+為了幫助您瞭解使用命名慣例的重要性，假設您公司定義的命名慣例是 `<style>-<color>-<view>`. 而且，集合的基本名稱必須一律為 `<style>-<color>`，並將副檔名設為 `-SET`. 如果您上傳名為的影像 `0123-RED-01`，則會建立一個集合，並命名為 `0123-RED-SET`. 如果您稍後上傳影像 `0123-RED-03` 和 `0123-BLUE-01`，然後 `RED-03` 影像會新增至集合（在第二個位置），因為它的排序低於 `01`. 不過， `BLUE-01` 影像將成為名為的新集的一部分 `0123-BLUE-SET`. 若要下一次上傳資產，請新增檔案 `0123-RED-02` 和 `0123-BLUE-02`. 每個資產都會新增至其各自的集合。 此 `RED-02` 影像會自動在現有檔案之間排序 `01` 和 `03` 影像，因為排序順序。
 
-的 **[!UICONTROL 批集预设]** 页面 [!DNL Dynamic Media] 允许您创建、编辑或删除批集预设，以及在资产文件夹中应用或删除批集预设。 您可以使用表单字段下拉列表来定义批集预设，也可以使用 **[!UICONTROL 原始代码]** 字段中，用于键入正则表达式语法。
+此 **[!UICONTROL 批次集預設集]** 第頁於 [!DNL Dynamic Media] 可讓您建立、編輯或刪除批次集預設集，以及將批次集預設集套用至資產資料夾或從資產資料夾中移除批次集預設集。 您可以使用表單欄位下拉式清單來定義批次集預設集，或使用 **[!UICONTROL 原始程式碼]** 欄位，可讓您輸入規則運算式語法。
 
-您可以创建许多批集预设，以涵盖所需的所有资产摄取作业。
+您可以建立許多批次集預設集，以涵蓋所需的所有資產擷取作業。
 
-### 关于资产命名约定
+### 關於資產命名慣例
 
-的 **[!UICONTROL 资产命名约定]** 区域 **[!UICONTROL 批集预设]** 页面具有两个元素，可用于定义批集预设。 **[!UICONTROL 匹配]** 和 **[!UICONTROL 基本名称]**. 通过这些元素，您可以定义命名约定并标识用于命名包含这些约定的集合的约定部分。 <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
+此 **[!UICONTROL 資產命名慣例]** 區域 **[!UICONTROL 批次集預設集]** 頁面有兩個可用來定義批次集預設集的元素： **[!UICONTROL 符合]** 和 **[!UICONTROL 基本名稱]**. 這些元素可讓您定義命名慣例，並識別用來命名包含這些元素的集的慣例部分。 <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-公司的单个命名约定通常使用这两个元素中每个元素的一行或多行定义。 您可以为唯一定义使用任意多行的线条，并将它们分组为不同的元素，如“主图像”、“颜色”元素、“替代视图”元素和“色板”元素。
+公司的個別命名慣例通常使用來自這兩個元素中每個元素的一或多行定義。 您可以針對唯一的定義使用儘可能多的線條，並將其群組為不同的元素，例如針對「主要影像」、「顏色」元素、「替代檢視」元素和「色票」元素。
 
-例如，文本匹配正则表达式的语法可能如下所示：
+例如，常值比對規則運算式的語法可能如下所示：
 
 `(\w+)-\w+-\w+`
 
-### 关于序列排序
+### 關於序列順序
 
-您可以选择定义在图像集或旋转集分组到 [!DNL Dynamic Media]. 默认情况下，您的资产按字母数字顺序排序。 但是，您可以使用逗号分隔的正则表达式列表来定义顺序。
+您可以選擇定義將影像集或迴轉集分組之後影像的顯示順序 [!DNL Dynamic Media]. 依預設，您的資產會依字母數字排序。 不過，您可以使用逗號分隔的規則運算式清單來定義順序。
 
-关于序列排序自动化，您可以指定规则，以便在必要时以特定方式强制对资产进行排序。 例如，假定您的第一个资产始终名为 `_main` 你想跟着 `_alt1`, `_alt2`, `_alt3`，等等。 在这种情况下，您可以使用以下语法创建序列排序规则：
+關於序列排序自動化，您可以指定必要時，以特定方式強制排序資產的規則。 例如，假設您的第一個資產一律名為 `_main` 您希望它後面有 `_alt1`， `_alt2`， `_alt3`、等等。 在這種情況下，您可以使用以下語法建立序列排序規則：
 
 `.*_main,.*_alt[0-9]`
 
-虽然可以强制排序序列，但最好依赖字母数字编号来排序序列。 此外，您还可以在 [!DNL Dynamic Media] 要重新排列资产的顺序，或使用拖放操作在资产集中添加新资产和删除新资产。
+雖然可以使用強制排序順序，但最好儘可能使用英數字元編號來排序順序。 此外，您還可以在以下位置使用影像集或迴轉集編輯器工具： [!DNL Dynamic Media] 以重新排列資產的順序順序，或使用拖放操作在資產集中新增和刪除新資產。
 
-创建完批集预设后，您可以将其应用到已创建的一个或多个文件夹。 请参阅 [关于将批集预设应用到文件夹](#apply-bsp).
+當您完成建立批次集預設集時，可將其套用至您已建立的一個或多個資料夾。 另請參閱 [關於將批次集預設集套用至資料夾](#apply-bsp).
 
 <!-- See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set). -->
 
-**要为图像集或旋转集创建批集预设，请执行以下操作：**
+**若要為影像集或迴轉集建立批次集預設集，請執行下列動作：**
 
-1. 选择Experience Manager徽标并转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批集预设]**.
+1. 選取Experience Manager標誌，並前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
-1. 在 **[!UICONTROL 批集预设]** 页面的右上角附近，选择 **[!UICONTROL 创建]**.
-1. 在 **[!UICONTROL 创建批集预设]** 对话框中 **[!UICONTROL 预设名称]** 文本字段，输入描述性名称。 如果您稍后决定更改预设名称，则该预设名称将不可编辑。
+1. 於 **[!UICONTROL 批次集預設集]** 頁面，右上角附近，選取 **[!UICONTROL 建立]**.
+1. 在 **[!UICONTROL 建立批次集預設集]** 對話方塊，在 **[!UICONTROL 預設集名稱]** 文字欄位，輸入描述性名稱。 如果您稍後決定變更預設集名稱，則無法編輯預設集名稱。
 
-1. 在 **[!UICONTROL 预设类型]** 下拉列表中，选择 **[!UICONTROL ImageSet]** 或 **[!UICONTROL 旋转集]**. 确保选择正确的预设类型；以后无法编辑。
+1. 在 **[!UICONTROL 預設集型別]** 下拉式清單，選取 **[!UICONTROL 影像集]** 或 **[!UICONTROL 迴轉集]**. 請確定您選擇正確的預設集型別；之後將無法編輯。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
-1. 论权利 **[!UICONTROL 编辑批集预设]** 页面上的 **[!UICONTROL 预设详细信息]** 和 **[!UICONTROL 设置命名约定]** 标题。
-要进一步了解可供您使用的可编辑选项，请参阅 [预设详细信息、设置命名约定和规则结果 — RegX选项](#features-options-bsp).
+1. 在右側 **[!UICONTROL 編輯批次集預設集]** 頁面，在「 」下方設定您要編輯的選項 **[!UICONTROL 預設集詳細資訊]** 和 **[!UICONTROL 設定命名慣例]** 標題。
+若要進一步瞭解您可用的可編輯選項，請參閱 [預設集詳細資訊、設定命名慣例和規則結果 — RegX選項](#features-options-bsp).
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
 
-1. 创建一个或多个正则表达式组。
+1. 建立一或多個規則運算式群組。
 
-   * 左侧 **[!UICONTROL 编辑批集预设]** 页面，下 **[!UICONTROL 匹配]**, **[!UICONTROL 基本名称]**&#x200B;或 **[!UICONTROL 序列排序]**，选择 **[!UICONTROL 添加组]**.
-   * 的 **[!UICONTROL 匹配]** 字段。 **[!UICONTROL 基本名称]** 仅当 **[!UICONTROL 匹配]** 字段尚未使用括号分组指定基名。 **[!UICONTROL 序列排序]** 为可选。
-   * 使用组表单中的下拉列表和文本框，指定要用于为图像集或旋转集资产成员定义命名标准的表达式组。
-      * 当您选择并指定组的表达式时，请注意实际正则表达式语法反映在页面右下方的 **[!UICONTROL 规则结果 — RegX]** 标题。 要查看在右下方更新的正则表达式字符串，请选择表单区域外的任意位置。 这些正则表达式字符串表示您要在搜索中匹配的模式 [!DNL Dynamic Media] 资产来创建图像集或旋转集。
-      * 如果已添加组并想要将其删除，请选择 **[!UICONTROL X]**.
-   * 添加两个或更多组时， **[!UICONTROL 和]** 下拉列表中，选择 **[!UICONTROL 和]** 将新添加的组与您之前添加的任何表达式组连接。 或者，选择 **[!UICONTROL 或]** 添加上一个表达式组与您创建的新组之间的交互。 的 **[!UICONTROL 或]** 操作数通过使用垂直行字符来定义 `|` 在正则表达式语法本身中。
+   * 在左側 **[!UICONTROL 編輯批次集預設集]** 頁面，底下 **[!UICONTROL 符合]**， **[!UICONTROL 基本名稱]**，或 **[!UICONTROL 序列順序]**，選取 **[!UICONTROL 新增群組]**.
+   * 此 **[!UICONTROL 符合]** 欄位為必填。 **[!UICONTROL 基本名稱]** 只有在以下情況下為必要： **[!UICONTROL 符合]** 欄位尚未使用括弧群組指定基底名稱。 **[!UICONTROL 序列順序]** 是選用專案。
+   * 使用群組表單中的下拉式清單和文字方塊，指定您要用來定義影像集或迴轉集資產成員命名條件的運算式群組。
+      * 當您選取並指定群組的運算式時，請注意實際的規則運算式語法會反映在頁面右下方 **[!UICONTROL 規則結果 — RegX]** 標題。 若要檢視右下角更新的規則運算式字串，請選取表單區域以外的任何位置。 這些規則運算式字串代表您要在搜尋中比對的模式 [!DNL Dynamic Media] 資產，以建立您的影像集或迴轉集。
+      * 如果您已新增群組且想要移除該群組，請選取「 」 **[!UICONTROL X]**.
+   * 當您新增兩個或多個群組時，請在 **[!UICONTROL 和]** 下拉式清單，選取 **[!UICONTROL 和]** 將新增的群組與先前新增的任何運算式群組結合。 或者，選取 **[!UICONTROL 或]** 在先前運算式群組與您建立的新群組之間新增替代專案。 此 **[!UICONTROL 或]** 運算元是使用垂直行字元來定義 `|` 規則運算式語法本身中的。
 
 1. 执行下列操作之一：
 
-   * 要添加另一个新组，请在 **[!UICONTROL 匹配]**, **[!UICONTROL 基本名称]**&#x200B;或 **[!UICONTROL 排序顺序]**，选择 **[!UICONTROL 添加组]**. 创建另一个正则表达式组（与上一步中的操作相同）。
-   * 查看 **[!UICONTROL 规则结果 — RegX]** 的上界。 如果必须更改语法，请在页面左侧的相应组中进行编辑。
-   * 如果已创建完表达式组，请继续下一步。
+   * 若要新增另一個群組，請在 **[!UICONTROL 符合]**， **[!UICONTROL 基本名稱]**，或 **[!UICONTROL 排序順序]**，選取 **[!UICONTROL 新增群組]**. 建立另一個規則運算式群組，就像在上一步中所做的那樣。
+   * 檢閱中的規則運算式語法 **[!UICONTROL 規則結果 — RegX]** 區域。 如果您必須變更語法，請在頁面左側的個別群組中編輯。
+   * 如果您已完成建立運算式群組，請繼續進行下一個步驟。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存]**.
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存]**.
 
-现在，您可以将批集预设应用到资产文件夹。 然后，您将资产上传到该文件夹。 此工作流会自动生成图像集或旋转集。 请参阅 [关于将批集预设应用到资产文件夹](#apply-bsp).
+您現在可以將批次集預設集套用至資產資料夾。 然後，您會將資產上傳至該資料夾。 此工作流程會自動產生影像集或迴轉集。 另請參閱 [關於將批次集預設集套用至資產資料夾](#apply-bsp).
 
-### 预设详细信息、设置命名约定和规则结果 — RegX选项 {#features-options-bsp}
+### 預設集詳細資訊、設定命名慣例和規則結果 — RegX選項 {#features-options-bsp}
 
-这些选项在 **[!UICONTROL 编辑批集预设]** 页面。
+這些選項可在 **[!UICONTROL 編輯批次集預設集]** 建立或編輯批次集預設集時的頁面。
 
-请参阅 [为图像集或旋转集创建批集预设](#creating-bsp) 或 [编辑批集预设](#edit-bsp).
+另請參閱 [為影像集或迴轉集建立批次集預設集](#creating-bsp) 或 [編輯批次集預設集](#edit-bsp).
 
 | **[!UICONTROL 预设详细信息]** | 描述 |
 | --- | --- |
-| 预设名称 | 只读. 首次创建批处理集时指定的名称。 如果必须重命名预设，则可以复制现有的批次集预设并指定新名称。 请参阅 [复制现有批集预设](#copy-bsp). |
-| 类型 | 只读. 首次创建批处理集时指定了类型。 复制现有的批集预设不会更改其 [!UICONTROL 类型];您必须改为创建预设。 |
-| 包括派生的资产 | 可选。要 [!DNL Dynamic Media]的IPS（图像生成系统）包含旋转集或图像集中已生成或“派生”的图像，请选择 **[!UICONTROL 是]** （默认）。 派生资产是指用户未直接上传的图像。 资产由IPS在上传主控资产时生成。 例如，在上传PDF时，IPS从PDF中的页面生成的图像资产 [!DNL Dynamic Media]，则被视为派生资产。 |
-| 目标文件夹 | 可选。如果您定义大量图像集或旋转集，Adobe建议您将这些集与包含资产本身的文件夹分开。 因此，请考虑创建图像集或旋转集文件夹，并重定向应用程序以将批量集生成的集放置在此处。<br>在这种情况下，请指定Experience Manager Assets文件夹结构中的哪个文件夹(`/content/dam`)激活了批集预设。 确保已为 [!DNL Dynamic Media] 同步以允许将其作为目标文件夹。 请参阅 [在Dynamic Media的文件夹级别配置选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>如果您通过文件夹的应用预设，则可以为多个文件夹分配给定的批次集预设 **[!UICONTROL 属性]**. 请参阅 [从资产文件夹的“属性”页面应用批集预设](#apply-bsp-to-folders-via-properties).<br>如果您没有指定文件夹，则会在与上传到的资产文件夹相同的文件夹中创建批量集预设生成的图像集或旋转集。 |
+| 预设名称 | 只读. 您第一次建立批次集時所指定的名稱。 如果您必須重新命名預設集，可以複製現有的批次集預設集並指定新名稱。 另請參閱 [複製現有的批次集預設集](#copy-bsp). |
+| 类型 | 只读. 當您首次建立批次集時指定了型別。 複製現有批次集預設集不允許您變更其 [!UICONTROL 型別]；您必須改為建立預設集。 |
+| 包括派生的资产 | 可选. 擁有 [!DNL Dynamic Media]的IPS （影像生產系統）包含隨迴轉集或影像集產生的或「衍生」影像，請選取 **[!UICONTROL 是]** （預設）。 衍生資產是使用者未直接上傳的影像。 而是在上傳主要資產時，由IPS產生資產。 例如，在上傳PDF時，IPS從PDF中的頁面產生的影像資產 [!DNL Dynamic Media]，會視為衍生資產。 |
+| 目标文件夹 | 可选. 如果您定義大量影像集或迴轉集，Adobe建議您將這些集與包含資產本身的資料夾分開。 因此，請考慮建立「影像集」或「迴轉集」資料夾，並將應用程式重新導向，將批次集產生的集放置在此處。<br>在這種情況下，請指定Experience Manager Assets資料夾結構中的哪個資料夾(`/content/dam`)讓批次集預設集作用中。 請確定資料夾已啟用 [!DNL Dynamic Media] 同步化，以允許它作為目的地資料夾。 另請參閱 [在Dynamic Media中設定檔案夾層級的選擇性發佈](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>如果透過資料夾的「 」套用預設集，則可以為多個資料夾指派指定的批次集預設集 **[!UICONTROL 屬性]**. 另請參閱 [從資產資料夾的「屬性」頁面套用批次集預設集](#apply-bsp-to-folders-via-properties).<br>如果您未指定資料夾，批次集預設集產生的影像集或迴轉集會建立在與您上傳至的資產資料夾相同的資料夾中。 |
 | **[!UICONTROL 设置命名规则]** |  |
-| 前缀<br>或<br>后缀 | 可选。在相应的字段中输入前缀、后缀或两者。<br>使用前缀和后缀字段，您可以为特定内容集使用替代的自定义文件命名约定来创建许多批次集预设。 当公司定义的默认命名方案存在例外时，此方法特别有用。<br>前缀或后缀会添加到 **[!UICONTROL 基本名称]** 您在 **[!UICONTROL 资产命名约定]** 的上界。 通过添加前缀或后缀，您可以确保仅以独立于其他资产的方式创建图像集或旋转集。 它还可用于进一步帮助他人识别文件类型。 例如，要确定使用的颜色模式，可以添加作为前缀或后缀 `rgb` 或 `cmyk`.<br>虽然使用批量集预设功能不需要指定集命名约定，但最佳实践建议您使用集命名约定。 通过此实践，您可以定义要分组到一组中的命名约定中的任意多个元素，以帮助简化批量集创建过程。 |
+| 前置詞<br>或<br>字尾 | 可选. 在個別欄位中輸入字首、字尾或兩者。<br>字首與字尾欄位可讓您使用特定內容集的替代自訂檔案命名慣例，建立許多批次集預設集。 在公司定義的預設命名配置有例外的情況下，此方法特別有用。<br>首碼或尾碼會新增至 **[!UICONTROL 基本名稱]** 您在中定義 **[!UICONTROL 資產命名慣例]** 區域。 藉由新增首碼或尾碼，您可以確保您的影像集或迴轉集是獨立於其他資產以獨佔方式建立的。 它也可以進一步協助其他人識別檔案型別。 例如，若要判斷所使用的顏色模式，可以新增作為字首或字尾 `rgb` 或 `cmyk`.<br>雖然指定集命名慣例並非使用批次集預設集功能所必需，但最佳實務建議您使用集命名慣例。 此作法可讓您定義命名慣例的元素，並將這些元素群組在集合中，以協助簡化批次集的建立。 |
 | **[!UICONTROL 规则结果 - RegX]** |  |
-| 资产命名约定 — 匹配 | 只读. 根据您选择的“匹配”表单选项或您输入的原始代码显示正则表达式语法。 |
-| 资产命名约定 — 基本名称 | 只读. 根据您选择的“基本名称”表单选项或您输入的原始代码显示正则表达式语法。 |
-| 序列排序 — 匹配 | 只读. 根据您选择的表单选项或您输入的原始代码显示正则表达式语法。 |
+| 資產命名慣例 — 相符 | 只读. 根據您選擇的「符合」表單選項或您輸入的原始程式碼顯示規則運算式語法。 |
+| 資產命名慣例 — 基本名稱 | 只读. 根據您選擇的「基本名稱」表單選項或您輸入的原始程式碼顯示規則運算式語法。 |
+| 序列順序 — 相符 | 只读. 根據您選擇的表單選項或您輸入的原始程式碼顯示規則運算式語法。 |
 
-## 关于将批集预设应用到资产文件夹 {#apply-bsp}
+## 關於將批次集預設集套用至資產資料夾 {#apply-bsp}
 
-当您将批集预设分配给一个或多个资产文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的预设。
+將批次集預設集指派給一個或多個資產資料夾時，任何子資料夾都會自動從其父資料夾繼承預設集。
 
-您可以将多个批次集预设应用到资产文件夹。
+您可以將多個批次集預設集套用至資產資料夾。
 
-如果文件夹分配了批量预设，则会在用户界面中显示该预设的名称，该预设的名称会显示在 **[!UICONTROL 卡片]** 中。
+指派了批次預設集的資料夾會顯示在使用者介面中，並在資料夾中的以下位置顯示預設集名稱： **[!UICONTROL 卡片]** 檢視。
 
-要将批集预设应用到资产文件夹，请使用以下两种方法之一：
+若要將批次集預設集套用至資產資料夾，請使用下列兩種方法之一：
 
-* [从“批集预设”页面将批集预设应用到资产文件夹](#apply-bsp-to-folders-via-bsp-page)  — 此方法为您提供了最大的灵活性。 您可以将单个或多个预设应用到一个或多个文件夹。
-* [从资产文件夹的“属性”页面应用批集预设](#apply-bsp-to-folders-via-properties)  — 此方法允许您将一个或多个批集预设应用到单个文件夹。
+* [從「批次集預設集」頁面將批次集預設集套用至資產資料夾](#apply-bsp-to-folders-via-bsp-page)  — 此方法提供您最大的彈性。 您可以將單一預設集或多個預設集套用至單一資料夾或多個資料夾。
+* [從資產資料夾的「屬性」頁面套用批次集預設集](#apply-bsp-to-folders-via-properties)  — 此方法可讓您將一個或多個批次集預設集套用至單一資料夾。
 
-作为最佳实践，请确保同步资产文件夹 [!DNL Dynamic Media]，然后应用所需的预设。
+最佳做法是確認資產資料夾已同步 [!DNL Dynamic Media]，然後套用您想要的預設集。
 
-如果您遇到以下两种情况之一，请重新处理文件夹中的资产：
+如果您遇到以下兩種情況之一，請重新處理資料夾中的資產：
 
-* 要在已上传资产的现有资产文件夹上运行批量集预设。
-* 您稍后会编辑以前应用于资产文件夹的现有批集预设。
+* 您想要對已上傳資產的現有資產資料夾執行批次集預設集。
+* 您稍後會編輯先前套用至資產資料夾的現有批次集預設集。
 
 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->
 
-### 从“批集预设”页面将批集预设应用到资产文件夹 {#apply-bsp-to-folders-via-bsp-page}
+### 從「批次集預設集」頁面將批次集預設集套用至資產資料夾 {#apply-bsp-to-folders-via-bsp-page}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批集预设]**.
-1. 在 **[!UICONTROL 批集预设]** 页面的左侧 **[!UICONTROL 预设名称]** 列中，选中要应用于文件夹的每个批次集预设的复选框。
-1. 在工具栏中，选择 **[!UICONTROL 将批量预设应用到文件夹]**.
-1. 在 **[!UICONTROL 选择文件夹]** ，请选中要应用批集预设的每个文件夹的复选框。
-1. 位于的右上角 **[!UICONTROL 选择文件夹]** 页面，选择 **[!UICONTROL 应用]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**.
+1. 於 **[!UICONTROL 批次集預設集]** 頁面，在頁面左側 **[!UICONTROL 預設集名稱]** 欄中，選取要套用至資料夾之每個批次集預設集的核取方塊。
+1. 在工具列中，選取 **[!UICONTROL 將批次預設集套用至資料夾]**.
+1. 於 **[!UICONTROL 選取資料夾]** 頁面上，選取要套用批次集預設集的每個資料夾的核取方塊。
+1. 在的右上角 **[!UICONTROL 選取資料夾]** 頁面，選取 **[!UICONTROL 套用]**.
 
-### 从资产文件夹的“属性”页面应用批集预设 {#apply-bsp-to-folders-via-properties}
+### 從資產資料夾的「屬性」頁面套用批次集預設集 {#apply-bsp-to-folders-via-properties}
 
-1. 选择Experience Manager徽标并转到 **[!UICONTROL 资产]** > **[!UICONTROL 文件]**.
-1. 导航到要在其中应用一个或多个批集预设的文件夹。
-1. 在页面的左侧 **[!UICONTROL 名称]** 列中，选中文件夹的复选框。
-1. 在工具栏中，选择 **[!UICONTROL 属性]**.
-1. 在文件夹的“属性”页面上，选择 **[!UICONTROL Dynamic Media处理]** 选项卡。
+1. 選取Experience Manager標誌，並前往 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]**.
+1. 導覽至您要套用一或多個批次集預設集的資料夾。
+1. 在頁面上，左側的 **[!UICONTROL 名稱]** 欄中，選取資料夾的核取方塊。
+1. 在工具列中，選取 **[!UICONTROL 屬性]**.
+1. 在資料夾的「屬性」頁面上，選取 **[!UICONTROL Dynamic Media處理中]** 標籤。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. 在 **[!UICONTROL 批集预设]**，从 **[!UICONTROL 预设名称]** 下拉列表框中，选择要应用的批集预设的名称。 上面的屏幕截图显示了两个选定的批次集预设，这些预设将应用于资产文件夹。
+1. 下 **[!UICONTROL 批次集預設集]**，來自 **[!UICONTROL 預設集名稱]** 下拉式清單方塊中，選取您要套用的批次集預設集名稱。 上面的熒幕擷圖顯示套用至資產資料夾的兩個選取批次集預設集。
 
-   如果 **[!UICONTROL 预设名称]** 下拉列表框中，这表示您尚未创建任何批集预设。 请参阅 [为图像集或旋转集创建批集预设](#creating-bsp).
+   如果批次集預設集名稱不存在於 **[!UICONTROL 預設集名稱]** 下拉式清單方塊，表示您尚未建立任何批次集預設集。 另請參閱 [為影像集或迴轉集建立批次集預設集](#creating-bsp).
 
-   要删除应用的批集预设，请选择 **[!UICONTROL X]** 来访问Advertising Cloud帮助。
+   若要移除套用的批次集預設集，請選取 **[!UICONTROL X]** 在預設集型別的右側。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存并关闭]**.
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存並關閉]**.
 
-## 编辑批集预设 {#edit-bsp}
+## 編輯批次集預設集 {#edit-bsp}
 
-您可以编辑已创建的现有批集预设。 您可以更改为资产命名约定或序列顺序创建的任何表达式组。 如果需要，您还可以更新目标文件夹并设置命名约定。
+您可以編輯已建立的現有批次集預設集。 您可以變更您為資產命名慣例或序列順序建立的任何運算式群組。 如有需要，您也可以更新目的地資料夾並設定命名慣例。
 
-但是，您无法更改预设的名称或预设类型（图像集或旋转集）。 如果需要更改预设的名称，请复制现有预设并指定新名称。 请参阅 [复制批集预设](#copy-bsp).
+但是，您無法變更預設集的名稱或預設集型別（「影像集」或「迴轉集」）。 如果必須變更預設集的名稱，請複製現有預設集並指定新名稱。 另請參閱 [複製批次集預設集](#copy-bsp).
 
-如果您编辑之前已应用于文件夹的批次集预设，则新编辑的批次集预设将仅应用于上传到该文件夹的新资产。
+如果您編輯先前套用至資料夾的批次集預設集，新編輯的批次集預設集只會套用至上傳至該資料夾的新資產。
 
-如果您希望将新编辑的预设重新应用于文件夹中的现有资产，则必须重新处理该文件夹。 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->这样，现有资产现在就有资格成为图像集或旋转集的一部分并进行添加。 此外，图像集或旋转集中已包含的现有资产（基于之前使用的批处理集预设）将不会被删除并按原样显示。 此方案假定他们不再基于新编辑的预设进行资格鉴定。
+如果您要將新編輯的預設集重新套用至資料夾中的現有資產，則必須重新處理資料夾。 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->如此一來，現有資產便可加入影像集或迴轉集。 此外，已包含於影像集或迴轉集的現有資產（根據先前使用的批次集預設集）不會被移除並顯示原狀。 此情境假設他們不再符合新編輯的預設集資格。
 
-**要编辑批集预设，请执行以下操作：**
+**若要編輯批次集預設集，請執行下列動作：**
 
-1. 选择Experience Manager徽标并转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批集预设]**.
-1. 在 **[!UICONTROL 批集预设]** 页面的左侧 **[!UICONTROL 预设名称]** 列中，选中要更改的批集预设。
-1. 在工具栏中，选择 **[!UICONTROL 编辑批集预设]**.
-1. 根据需要编辑预设。
-1. 位于的右上角 **[!UICONTROL 批集预设]** 页面，选择 **[!UICONTROL 保存]**.
+1. 選取Experience Manager標誌，並前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**.
+1. 於 **[!UICONTROL 批次集預設集]** 頁面，在頁面左側 **[!UICONTROL 預設集名稱]** 欄，勾選您要變更的批次集預設集。
+1. 在工具列中，選取 **[!UICONTROL 編輯批次集預設集]**.
+1. 視需要編輯預設集。
+1. 在的右上角 **[!UICONTROL 批次集預設集]** 頁面，選取 **[!UICONTROL 儲存]**.
 
-## 复制现有批集预设 {#copy-bsp}
+## 複製現有的批次集預設集 {#copy-bsp}
 
-您可以复制现有的批集预设，以避免手动重新创建复杂的预设，或者只需重命名预设即可。 但是，您无法更改使用的预设类型（图像集或旋转集）。
+您可以複製現有的批次集預設集，以避免手動重新建立複雜的預設集，或您只是想重新命名預設集。 但是，您無法變更使用的預設集型別（影像集或迴轉集）。
 
-如果复制由资产文件夹引用的现有预设，则这些文件夹不会受到影响。
+如果您複製資產資料夾所參照的現有預設集，這些資料夾不受影響。
 
-**复制现有的批集预设：**
+**複製現有的批次集預設集：**
 
-1. 选择Experience Manager徽标并转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批集预设]**.
-1. 在 **[!UICONTROL 批集预设]** 页面的左侧 **[!UICONTROL 预设名称]** 列中，选中要复制的批次集预设复选框。
-1. 在工具栏中，选择 **[!UICONTROL 复制]**.
-1. 在 **[!UICONTROL 复制批集预设]** 对话框中 **[!UICONTROL 标题]** ，请为预设键入新名称。
+1. 選取Experience Manager標誌，並前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**.
+1. 於 **[!UICONTROL 批次集預設集]** 頁面，在頁面左側 **[!UICONTROL 預設集名稱]** 欄中，選取您要複製的批次集預設集核取方塊。
+1. 在工具列中，選取 **[!UICONTROL 複製]**.
+1. 在 **[!UICONTROL 複製批次集預設集]** 對話方塊，在 **[!UICONTROL 標題]** 文字方塊中，輸入預設集的新名稱。
 
    ![bsp-copy2.png](/help/assets/assets-dm/bsp-copy2.png)
 
-1. 选择 **[!UICONTROL 复制]**.
+1. 選取 **[!UICONTROL 複製]**.
 
-## 关于从文件夹中删除批集预设 {#remove-bsp-from-folder}
+## 關於從資料夾中移除批次集預設集 {#remove-bsp-from-folder}
 
-当您从文件夹删除批集预设时，您上传到这些文件夹的任何新资产都不会对这些资产应用批次集预设。 文件夹中已添加到图像集或基于批量集预设（已应用于文件夹）的现有资产会继续按原样显示。
+當您從資料夾中移除批次集預設集時，您上傳到這些資料夾的任何新資產都不會套用批次集預設集。 資料夾中已新增至影像集的現有資產，或根據套用至資料夾的批次集預設集以列印集為基礎的現有資產 — 繼續按原樣顯示。
 
-如果您想 *删除* 从文件夹预设，请参阅 [删除批集预设](#delete-bsp).
+如果您想要 *刪除* 請改為參閱資料夾中的預設集 [刪除批次集預設集](#delete-bsp).
 
-可使用两种方法从文件夹中删除批集预设。
+您可以使用兩種方法從資料夾中移除批次集預設集。
 
-* [通过“批集预设”页面从文件夹删除批集预设](#remove-bsp-from-folders-via-bsp-page)  — 此方法为您提供了最大的灵活性。 您可以从一个或多个文件夹中删除一个或多个预设。
-* [从文件夹的“属性”页面中删除批集预设](#remove-bsp-from-folders-via-properties)  — 此方法允许您仅从单个文件夹中删除一个或多个批集预设。
+* [透過「批次集預設集」頁面，從資料夾中移除批次集預設集](#remove-bsp-from-folders-via-bsp-page)  — 此方法提供您最大的彈性。 您可以從單一資料夾或多個資料夾中移除單一預設集或多個預設集。
+* [從資料夾的「屬性」頁面移除批次集預設集](#remove-bsp-from-folders-via-properties)  — 此方法僅可讓您從單一資料夾中移除一個或多個批次集預設集。
 
-### 通过“批集预设”页面从文件夹删除批集预设 {#remove-bsp-from-folders-via-bsp-page}
+### 透過「批次集預設集」頁面，從資料夾中移除批次集預設集 {#remove-bsp-from-folders-via-bsp-page}
 
-1. 选择Experience Manager徽标并转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批集预设]**.
-1. 在 **[!UICONTROL 批集预设]** 页面的左侧 **[!UICONTROL 预设名称]** 列中，选中一个或多个要从一个或多个文件夹删除的批集预设的复选框。
-1. 在工具栏中，选择 **[!UICONTROL 从文件夹删除批量预设]**.
+1. 選取Experience Manager標誌，並前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**.
+1. 於 **[!UICONTROL 批次集預設集]** 頁面，在頁面左側 **[!UICONTROL 預設集名稱]** 欄中，選取一或多個批次集預設集的核取方塊，以將其從一或多個資料夾中移除。
+1. 在工具列中，選取 **[!UICONTROL 從資料夾中移除批次預設集]**.
 
-1. 在 **[!UICONTROL 选择文件夹]** 页面，选择一个或多个要删除批集预设的文件夹。
-1. 位于的右上角 **[!UICONTROL 选择文件夹]** 页面，选择 **[!UICONTROL 删除]**.
+1. 於 **[!UICONTROL 選取資料夾]** 頁面上，選取一個或多個要移除批次集預設集的資料夾。
+1. 在的右上角 **[!UICONTROL 選取資料夾]** 頁面，選取 **[!UICONTROL 移除]**.
 
    ![bsp-remove-from-folders3.png](/help/assets/assets-dm/bsp-remove-from-folders3.png)
 
-1. 在 **[!UICONTROL 删除配置文件]** 对话框，选择 **[!UICONTROL 删除]**.
+1. 在 **[!UICONTROL 移除設定檔]** 對話方塊，選取 **[!UICONTROL 移除]**.
 
-### 从文件夹的“属性”页面中删除批集预设 {#remove-bsp-from-folders-via-properties}
+### 從資料夾的「屬性」頁面移除批次集預設集 {#remove-bsp-from-folders-via-properties}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 资产]** > **[!UICONTROL 文件]**.
-1. 导航到要删除一个或多个批集预设的文件夹。
-1. 在页面的左侧 **[!UICONTROL 名称]** 列中，选中文件夹的复选框。
-1. 在工具栏中，选择 **[!UICONTROL 属性]**.
-1. 在文件夹的“属性”页面上，选择 **[!UICONTROL Dynamic Media处理]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]**.
+1. 導覽至您要移除一或多個批次集預設集的資料夾。
+1. 在頁面上，左側的 **[!UICONTROL 名稱]** 欄中，選取資料夾的核取方塊。
+1. 在工具列中，選取 **[!UICONTROL 屬性]**.
+1. 在資料夾的「屬性」頁面上，選取「 」 **[!UICONTROL Dynamic Media處理中]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
-1. 在 **[!UICONTROL 批集预设]**，选择 **[!UICONTROL X]** 来访问Advertising Cloud帮助。
+1. 下 **[!UICONTROL 批次集預設集]**，選取 **[!UICONTROL X]** 在預設集型別的右側。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存并关闭]**.
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存並關閉]**.
 
-## 删除批集预设 {#delete-bsp}
+## 刪除批次集預設集 {#delete-bsp}
 
-您可以删除批集预设，以便从 [!DNL Dynamic Media]. 也就是说，它们不再显示在 [!UICONTROL 批集预设] 页面，也不显示在 **[!UICONTROL 批集预设]** 的 **[!UICONTROL Dynamic Media处理]** 的 **[!UICONTROL 属性]** 页面。 因此，重新处理文件夹时或在文件夹中上传新资产时，预设不会应用于现有资产。
+您可以刪除批次集預設集，以將其永久從中移除 [!DNL Dynamic Media]. 也就是說，它們不會再顯示在 [!UICONTROL 批次集預設集] 頁面中也不會顯示 **[!UICONTROL 批次集預設集]** 下拉式清單 **[!UICONTROL Dynamic Media處理中]** 索引標籤在資料夾的 **[!UICONTROL 屬性]** 頁面。 因此，在重新處理資料夾或上傳新資產至資料夾時，預設集不會套用至現有資產。
 
-如果删除之前应用于一个或多个文件夹的预设，则从这些文件夹中的资产创建的任何图像集或旋转集将继续按原样显示。
+如果您刪除先前套用至一或多個資料夾的預設集，則從這些資料夾中的資產建立的任何影像集或迴轉集都會繼續按原樣顯示。
 
-如果您想 *删除* 从文件夹预设，请参阅 [从文件夹中删除批集预设](#remove-bsp-from-folder).
+如果您想要 *移除* 請改為參閱資料夾中的預設集 [從資料夾中移除批次集預設集](#remove-bsp-from-folder).
 
-**要删除批集预设，请执行以下操作：**
+**若要刪除批次集預設集，請執行下列動作：**
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批集预设]**.
-1. 在 **[!UICONTROL 批集预设]** 页面的左侧 **[!UICONTROL 预设名称]** 列中，选中一个或多个要删除的批集预设的复选框。
-1. 在工具栏中，选择 **[!UICONTROL 删除批集预设]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**.
+1. 於 **[!UICONTROL 批次集預設集]** 頁面，在頁面左側 **[!UICONTROL 預設集名稱]** 欄中，選取一或多個要刪除之批次集預設集的核取方塊。
+1. 在工具列中，選取 **[!UICONTROL 刪除批次集預設集]**.
 
    ![bsp-delete2.png](/help/assets/assets-dm/bsp-delete2.png)
 
-1. 在 **[!UICONTROL 删除批集预设]** 对话框，选择 **[!UICONTROL 删除]**.
+1. 在 **[!UICONTROL 刪除批次集預設集]** 對話方塊，選取 **[!UICONTROL 刪除]**.
 
-   如果要删除的预设被资产文件夹引用，请选择 **[!UICONTROL 强制删除]** 中。
+   如果您要刪除的預設集被資產資料夾引用，請選取「 」 **[!UICONTROL 強制刪除]** 而非。
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 
@@ -265,6 +265,6 @@ ht-degree: 1%
 >
 >* [图像集](/help/assets/dynamic-media/image-sets.md)
 >* [旋转集](/help/assets/dynamic-media/spin-sets.md)
->* [在Dynamic Media的文件夹级别配置选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  — 如果您想了解有关将单个文件夹同步到 [!DNL Dynamic Media].
->* [在Cloud Services中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  — 如果您想了解有关将所有文件夹同步到的详细信息，请参阅主题中的“Dynamic Media同步模式” [!DNL Dynamic Media].
+>* [在Dynamic Media中設定檔案夾層級的選擇性發佈](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  — 如果您想深入瞭解將單一資料夾同步至，請參閱主題中的「同步模式」 [!DNL Dynamic Media].
+>* [在Cloud Services中建立Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  — 如果您想深入瞭解同步處理所有資料夾，請參閱主題中的「Dynamic Media同步處理模式」 [!DNL Dynamic Media].
 

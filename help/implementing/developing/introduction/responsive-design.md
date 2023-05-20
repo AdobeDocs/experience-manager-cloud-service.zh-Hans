@@ -1,6 +1,6 @@
 ---
-title: 响应式设计
-description: 通过响应式设计，可以在多个设备上以多个方向有效地显示相同的体验
+title: 回應式設計
+description: 透過回應式設計，能以多種方向在多種裝置上有效顯示相同的體驗
 source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '492'
@@ -9,62 +9,62 @@ ht-degree: 0%
 ---
 
 
-# 响应式设计 {#responsive-design}
+# 回應式設計 {#responsive-design}
 
-设计您的体验，使其适应显示体验的客户端视区。 通过响应式设计，可以在多个设备上以两种方向有效地显示相同的页面。 下图演示了页面对视区大小更改做出响应的一些方式：
+設計您的體驗，以使其適應顯示體驗的使用者端檢視區。 透過回應式設計，相同的頁面可雙向有效顯示在多個裝置上。 下圖示範頁面可回應檢視區大小變更的一些方式：
 
-* 布局：对较小的视区使用单列布局，对较大的视区使用多列布局。
-* 文本大小：在较大的视区中使用较大的文本大小（如果适用，如标题）。
-* 内容：在较小的设备上显示时，仅包含最重要的内容。
-* 导航：提供了用于访问其他页面的设备特定工具。
-* 图像：根据窗口尺寸提供适用于客户端视区的图像演绎版。
+* 版面：對較小的檢視區使用單欄版面，對較大的檢視區使用多欄版面。
+* 文字大小：在較大的檢視區中使用較大的文字大小（如標題）。
+* 內容：在較小裝置上顯示時，僅包含最重要的內容。
+* 導覽：提供裝置特定工具來存取其他頁面。
+* 影像：根據視窗尺寸提供適合使用者端檢視區的影像轉譯。
 
-![响应式设计的示例](assets/responsive-example.png)
+![回應式設計範例](assets/responsive-example.png)
 
-开发Adobe Experience Manager(AEM)应用程序，生成可适应多种窗口大小和方向的HTML5。 例如，以下视区宽度范围与各种设备类型和方向相对应
+開發可產生HTML5的Adobe Experience Manager (AEM)應用程式，以調整多個視窗大小和方向。 例如，下列檢視區寬度範圍會與各種裝置型別和方向相對應
 
-* 最大宽度为480像素（手机、纵向）
-* 最大宽度767像素（手机、横向）
-* 宽度介于768像素和979像素（平板电脑、纵向）之间
-* 宽度介于980像素和1199像素之间（平板电脑、横向）
-* 宽度为1200像素或更大（桌面）
+* 最大寬度480畫素（手機、縱向）
+* 最大寬度767畫素（手機、橫向）
+* 介於768畫素和979畫素之間的寬度（平板電腦，縱向）
+* 寬度介於980畫素和1199畫素之間（平板電腦、橫向）
+* 寬度1200px或更高（桌上型電腦）
 
-有关实施响应式设计行为的信息，请参阅以下主题：
+如需實作回應式設計行為的相關資訊，請參閱下列主題：
 
-* [媒体查询](#using-media-queries)
-* [流体网格](#developing-a-fluid-grid)
-* [自适应图像](#using-adaptive-images)
+* [媒體查詢](#using-media-queries)
+* [流動格線](#developing-a-fluid-grid)
+* [最適化影像](#using-adaptive-images)
 
-在设计时，请使用 **模拟器** 工具栏来预览不同屏幕大小的页面。
+在設計時，請使用 **模擬器** 工具列，以預覽各種熒幕大小的頁面。
 
-## 开发之前 {#before-you-develop}
+## 開發之前 {#before-you-develop}
 
-在开发支持网页的AEM应用程序之前，应先做出一些设计决策。 例如，您需要具有以下信息：
+在開發支援網頁的AEM應用程式之前，您應該先做出數個設計決定。 例如，您需要具備下列資訊：
 
-* 您定位的设备
-* 目标视区大小
-* 每个目标视区大小的页面布局
+* 您定位的裝置
+* 目標檢視區大小
+* 每個目標檢視區大小的頁面配置
 
-### 应用程序结构 {#application-structure}
+### 應用程式結構 {#application-structure}
 
-典型的AEM应用程序结构支持所有响应式设计实施：
+典型的AEM應用程式結構支援所有回應式設計實作：
 
-* 页面组件位于下方 `/apps/<application_name>/components`
-* 模板位于下方 `/apps/<application_name>/templates`
+* 頁面元件位於下方 `/apps/<application_name>/components`
+* 範本位於下方 `/apps/<application_name>/templates`
 
-## 使用媒体查询 {#using-media-queries}
+## 使用媒體查詢 {#using-media-queries}
 
-媒体查询允许选择性地使用CSS样式进行页面渲染。 AEM开发工具和功能使您能够高效地在应用程序中实施媒体查询。
+媒體查詢可選擇性使用CSS樣式來轉譯頁面。 AEM開發工具和功能可讓您在應用程式中有效率地實作媒體查詢。
 
-W3C组提供 [媒体查询](https://www.w3.org/TR/css3-mediaqueries/) 描述此CSS3功能和语法的推荐。
+W3C群組提供 [媒體查詢](https://www.w3.org/TR/css3-mediaqueries/) 說明此CSS3功能和語法的建議。
 
-### 创建CSS文件 {#creating-the-css-file}
+### 建立CSS檔案 {#creating-the-css-file}
 
-在CSS文件中，根据定向设备的属性定义媒体查询。 以下实施策略对于管理每个媒体查询的样式非常有效：
+在CSS檔案中，根據您鎖定目標的裝置屬性定義媒體查詢。 下列實作策略可有效管理每個媒體查詢的樣式：
 
-* 使用 [客户端库文件夹](clientlibs.md) 定义在渲染页面时组装的CSS。
-* 在单独的CSS文件中定义每个媒体查询和关联的样式。 使用表示媒体查询设备功能的文件名时，此方法非常有用。
-* 在单独的CSS文件中定义所有设备通用的样式。
-* 在“客户端库”文件夹的css.txt文件中，按照组装的CSS文件中的要求对列表CSS文件进行排序。
+* 使用 [使用者端資料庫資料夾](clientlibs.md) 以定義在轉譯頁面時組裝的CSS。
+* 在不同的CSS檔案中定義每個媒體查詢和相關聯的樣式。 使用代表媒體查詢之裝置功能的檔案名稱會很有用。
+* 定義個別CSS檔案中所有裝置通用的樣式。
+* 在Client Library資料夾的css.txt檔案中，依照組合的CSS檔案中的要求，對CSS檔案清單進行排序。
 
-的 [WKND教程](develop-wknd-tutorial.md) 使用此策略在网站设计中定义样式。 WKND使用的CSS文件位于 `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+此 [wknd教學課程](develop-wknd-tutorial.md) 使用此策略來定義網站設計中的樣式。 WKND使用的CSS檔案位於 `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.

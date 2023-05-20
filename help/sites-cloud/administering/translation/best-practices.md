@@ -4,8 +4,8 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 

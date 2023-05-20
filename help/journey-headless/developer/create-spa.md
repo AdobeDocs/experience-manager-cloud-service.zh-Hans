@@ -3,7 +3,7 @@ title: 可选 – 如何使用 AEM 创建单页应用程序 (SPA)
 description: 在 AEM Headless 开发人员历程的这一可选延续部分中，您将了解 AEM 如何将 Headless 交付与传统的全栈 CMS 功能相结合，以及您如何使用 AEM 的 SPA 编辑器框架来创建可编辑的 SPA。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 100%
 

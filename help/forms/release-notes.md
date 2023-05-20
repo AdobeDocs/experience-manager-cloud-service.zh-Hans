@@ -60,8 +60,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
-- **统一存储连接器：**&#x200B;使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
-
+- **统一存储连接器：**使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：

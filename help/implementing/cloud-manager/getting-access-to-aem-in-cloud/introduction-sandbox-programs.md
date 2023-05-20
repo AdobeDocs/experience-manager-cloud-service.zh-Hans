@@ -3,7 +3,7 @@ title: 沙盒程序简介
 description: 了解沙盒程序与生产程序的区别。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 

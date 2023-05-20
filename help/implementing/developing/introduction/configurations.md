@@ -1,8 +1,8 @@
 ---
 title: 配置和配置浏览器
-description: 了解AEM配置以及它们如何在AEM中管理工作区设置。
+description: 瞭解AEM設定，以及這些設定如何管理AEM中的工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 8f94d7ee3cfe436b5d41f2428b901ee1a5002993
+source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 6%
@@ -11,64 +11,64 @@ ht-degree: 6%
 
 # 配置和配置浏览器 {#configuration-browser}
 
-AEM配置用于管理AEM中的设置并用作工作区。
+AEM設定可管理AEM中的設定，並作為工作區。
 
 ## 什么是配置？ {#what-is-a-configuration}
 
-配置可以从两个不同的角度来考虑。
+可以從兩個不同的觀點來考慮設定。
 
-* [管理员](#configurations-administrator) 在AEM中将配置用作工作区来定义和管理设置组。
-* [开发人员](#configurations-developer) 使用实施配置的基础配置机制，在AEM中保留和查找设置。
+* [管理員](#configurations-administrator) 使用設定作為AEM內的工作區，以定義和管理設定群組。
+* [開發人員](#configurations-developer) 使用實作設定的基礎設定機制，以在AEM中儲存和查詢設定。
 
-总之：从管理员的角度来看，配置是您如何创建工作区以管理AEM中的设置，而开发人员应该了解AEM如何在存储库中使用和管理这些配置。
+摘要：從管理員的觀點來看，設定是您建立工作區以管理AEM中設定的方式，而開發人員應瞭解AEM如何使用和管理存放庫中的這些設定。
 
-无论从何种角度来看，配置在AEM中都有两个主要用途：
+無論您如何認為，設定在AEM中有兩個主要用途：
 
-* 配置可为特定用户组启用某些功能。
-* 配置定义这些功能的访问权限。
+* 設定可為特定使用者群組啟用某些功能。
+* 設定會定義這些功能的存取權。
 
-## 管理员身份的配置 {#configurations-administrator}
+## 管理員設定 {#configurations-administrator}
 
-AEM管理员和作者可以将配置视为工作区。 这些工作区可用于通过实施这些功能的访问权限，为组织目的收集设置组及其关联内容。
+AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能的存取許可權，這些工作區可用來將設定群組及其關聯內容收集在一起，以供組織使用。
 
-可以在AEM中为许多不同的功能创建配置。
+可為AEM中的許多不同功能建立設定。
 
-* [ContextHub区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+* [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [可编辑模板](/help/sites-cloud/authoring/features/templates.md)
-* 各种云配置
+* 各種雲端設定
 
 ### 示例 {#administrator-example}
 
-例如，管理员可以为可编辑模板创建两个配置。
+例如，管理員可以為可編輯的範本建立兩個設定。
 
-* WKND-General
+* WKND — 一般
 * WKND-Magazine
 
-然后，管理员可以使用WKND-General配置创建常规页面模板，然后使用WKND-Magazine下的特定于该杂志的模板。
+然後，管理員可以使用WKND-General設定建立一般頁面範本，然後使用WKND-Magazine底下的雜誌專用範本。
 
-然后，管理员可以将WKND常规与WKND站点的所有内容关联。 但是，WKND-Magazine配置将仅与杂志网站关联。
+然後，管理員可以將WKND-General與WKND網站的所有內容相關聯。 不過，WKND-Magazine設定只會與雜誌網站相關聯。
 
-通过执行以下操作：
+藉由執行下列動作：
 
-* 当内容作者为杂志创建新页面时，作者可以从常规模板(WKND-General)或杂志模板(WKND-Magazine)中进行选择。
-* 当内容作者为网站的其他部分（而非杂志）创建新页面时，作者只能从常规模板(WKND-General)中进行选择。
+* 內容作者為雜誌建立新頁面時，作者可以選擇一般範本(WKND-General)或雜誌範本(WKND-Magazine)。
+* 當內容作者為網站中其他非雜誌部分建立新頁面時，作者只能從一般範本(WKND-General)中選擇。
 
-不仅对可编辑的模板，对于云配置、ContextHub区段和内容片段模型也可进行类似设置。
+類似設定不僅適用於可編輯的範本，也可用於雲端設定、ContextHub區段和內容片段模型。
 
-### 使用配置浏览器 {#using-configuration-browser}
+### 使用設定瀏覽器 {#using-configuration-browser}
 
-通过配置浏览器，管理员可以轻松地在AEM中创建、管理和配置配置配置的访问权限。
+設定瀏覽器可讓管理員輕鬆建立、管理及設定AEM中設定的存取許可權。
 
 >[!NOTE]
 >
->仅当用户具有 `admin` 权限。 `admin` 此外，还需要权限才能为配置分配访问权限或以其他方式修改配置。
+>只有在您的使用者擁有 `admin` 權利。 `admin` 為了指派存取權給設定或修改設定，也需要許可權。
 
 #### 创建配置 {#creating-a-configuration}
 
-在AEM中使用配置浏览器创建新配置非常简单。
+使用設定瀏覽器，在AEM中建立新設定非常簡單。
 
-1. 登录AEMas a Cloud Service，然后从主菜单中选择 **工具** -> **常规** -> **配置浏览器**.
+1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** -> **一般** -> **設定瀏覽器**.
 1. 点按或单击&#x200B;**创建**。
 1. 提供配置的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
 
@@ -78,54 +78,54 @@ AEM管理员和作者可以将配置视为工作区。 这些工作区可用于�
    * **名称**&#x200B;将成为存储库中的节点名称。
       * 它会根据标题自动生成，并根据 [AEM 命名约定](naming-conventions.md)进行调整。
       * 如有必要可以调整。
-1. 检查您希望允许的配置类型。
-   * [ContextHub区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+1. 檢查您要允許的設定型別。
+   * [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [可编辑模板](/help/sites-cloud/authoring/features/templates.md)
-   * 各种云配置
+   * 各種雲端設定
 1. 点按或单击&#x200B;**创建**。
 
 >[!TIP]
 >
->可以嵌套配置。
+>設定可以巢狀。
 
-#### 编辑配置及其访问权限 {#access-rights}
+#### 編輯設定及其存取許可權 {#access-rights}
 
-如果将配置视为工作区，则可以对这些配置设置访问权限，以强制哪些人可以访问这些工作区，哪些人可能不访问这些工作区。
+如果您將設定視為工作區，可以對這些設定設定設定存取許可權，以強制誰可以存取這些工作區，誰則不能存取。
 
-1. 登录AEMas a Cloud Service，然后从主菜单中选择 **工具** -> **常规** -> **配置浏览器**.
-1. 选择要修改的配置，然后点按或单击 **属性** 工具栏中。
-1. 选择要添加到配置的任何其他功能
+1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** -> **一般** -> **設定瀏覽器**.
+1. 選取您要修改的設定，然後點選或按一下 **屬性** 工具列中的。
+1. 選取您要新增至設定的任何其他功能
    >[!NOTE]
    >
-   >创建配置后，无法取消选择某个特征。
-1. 使用 **有效权限** 按钮以查看角色矩阵及其当前授予配置的权限。
-   ![有效权限窗口](assets/configuration-effective-permissions.png)
-1. 要分配新权限，请在 **选择用户或组** 字段 **添加新权限** 中。
-   * 的  **选择用户或组** 字段可根据现有用户和角色提供自动完成功能。
-1. 从自动完成结果中选择相应的用户或角色。
-   * 您可以选择多个用户或角色。
-1. 检查选定用户或角色应具有的访问选项，然后单击 **添加**.
-   ![向配置添加访问权限](assets/configuration-edit.png)
-1. 重复这些步骤以选择用户或角色，并根据需要分配其他访问权限。
-1. 点按或单击 **保存并关闭** 完成。
+   >建立設定後，無法取消選取功能。
+1. 使用 **有效許可權** 按鈕以檢視角色及其目前授與設定的許可權矩陣。
+   ![有效許可權視窗](assets/configuration-effective-permissions.png)
+1. 若要指派新許可權，請在 **選取使用者或群組** 中的欄位 **新增許可權** 區段。
+   * 此  **選取使用者或群組** 欄位可根據現有使用者和角色提供自動完成功能。
+1. 從自動完成結果中選取適當的使用者或角色。
+   * 您可以選取多個使用者或角色。
+1. 檢查所選使用者或角色應具有的存取選項，然後按一下 **新增**.
+   ![將存取權新增至設定](assets/configuration-edit.png)
+1. 重複這些步驟以選取使用者或角色，並視需要指派其他存取許可權。
+1. 點選或按一下 **儲存並關閉** 完成後。
 
-## 作为开发人员的配置 {#configurations-developer}
+## 開發人員設定 {#configurations-developer}
 
-作为开发人员，了解AEMas a Cloud Service如何与配置一起工作以及它如何处理配置解析非常重要。
+作為開發人員，請務必瞭解AEMas a Cloud Service如何處理設定，以及它如何處理設定解析。
 
-### 配置和内容分离 {#separation-of-config-and-content}
+### 設定與內容分離 {#separation-of-config-and-content}
 
-尽管 [管理员和用户可能将配置视为工作场所](#configurations-administrator) 要管理不同的设置和内容，请务必了解配置和内容由AEM在存储库中单独存储和管理。
+雖然 [管理員和使用者可能會將設定視為工作區](#configurations-administrator) 若要管理不同的設定和內容，請務必瞭解設定和內容是由AEM在存放庫中個別儲存和管理的。
 
-* `/content` 是所有内容的主页。
-* `/conf` 是所有配置的主页。
+* `/content` 是所有內容的首頁。
+* `/conf` 是所有設定的首頁。
 
-内容通过 `cq:conf` 属性。 AEM根据内容及其上下文执行查找 `cq:conf` 属性来查找相应的配置。
+內容透過參考其關聯設定 `cq:conf` 屬性。 AEM會根據內容和內容內容執行查詢 `cq:conf` 屬性以尋找適當的設定。
 
 ### 示例 {#developer-example}
 
-在本例中，假设您有一些对DAM设置感兴趣的应用程序代码。
+在此範例中，假設您有一些對DAM設定感興趣的應用程式程式碼。
 
 ```java
 Conf conf = resource.adaptTo(Conf.class);
@@ -133,11 +133,11 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-所有配置查找的起点都是内容资源，通常位于 `/content`. 这可以是页面、页面内的组件、资产或DAM文件夹。 这是我们要查找的实际内容，其中提供了适用于此上下文的正确配置。
+所有設定查詢的起點是內容資源，通常位於下的某個位置 `/content`. 這可能是頁面、頁面內的元件、資產或DAM資料夾。 這是我們尋找適用於此內容的正確設定的實際內容。
 
-现在，通过 `Conf` 对象，我们可以检索我们感兴趣的特定配置项。 在这种情况下，是 `dam/imageserver`，这是与 `imageserver`. 的 `getItem` 调用返回 `ValueMap`. 然后我们读 `bgkcolor` 字符串属性，并在属性（或整个配置项）不存在时提供默认值“FFFFF”。
+現在使用 `Conf` 物件時，我們可以擷取我們感興趣的特定組態專案。 在此案例中為 `dam/imageserver`，此為與下列專案相關之設定的集合： `imageserver`. 此 `getItem` 呼叫傳回 `ValueMap`. 然後我們會閱讀 `bgkcolor` 字串屬性，並提供「FFFFFF」預設值，以防屬性（或整個設定專案）不存在。
 
-现在，让我们查看相应的JCR内容：
+現在來看看對應的JCR內容：
 
 ```text
 /content/dam/wknd
@@ -153,74 +153,74 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
             - bgkcolor = "FF0000"
 ```
 
-在此示例中，我们假定此处有一个WKND特定的DAM文件夹和相应的配置。 从该文件夹开始 `/content/dam/wknd`，我们将看到一个名为 `cq:conf` 引用应用于子树的配置的子树。 该属性通常将在 `jcr:content` 资产文件夹或页面的。 这些 `conf` 链接是明确的，因此只需查看CRXDE中的内容，便可轻松进行跟踪。
+在此範例中，我們假設這裡有WKND特定的DAM資料夾以及對應的設定。 從該資料夾開始 `/content/dam/wknd`，我們會看到有一個名為的字串屬性 `cq:conf` 會參照應該套用至子樹狀結構的設定。 屬性通常設定在 `jcr:content` 資產資料夾或頁面的URL。 這些 `conf` 連結是明確的，因此只要檢視CRXDE中的內容，就能輕鬆追蹤連結。
 
-跳入 `/conf`，我们将参考并看到 `/conf/wknd` 节点。 这是一个配置。 请注意，其查找对应用程序代码完全透明。 示例代码从未具有专门的引用，它隐藏在 `Conf` 对象。 应用的配置通过JCR内容完全控制。
+跳入 `/conf`，我們會依循參考資料檢視 `/conf/wknd` 節點。 此為設定。 請注意，其查詢對應用程式程式碼是完全透明的。 範常式式碼從未有專屬參照，而是隱藏在 `Conf` 物件。 要套用哪個設定，需透過JCR內容完全控制。
 
-我们看到配置包含一个名为 `settings` 包含实际项目(包括 `dam/imageserver` 我们需要我们的。 此类项目可以视为“设置文档”，通常由 `cq:Page` 包括 `jcr:content` 保存实际内容。
+我們看到設定包含固定名稱 `settings` 包含實際專案的節點，包括 `dam/imageserver` 在我們的案例中需要。 此類專案可視為「設定檔案」，通常以 `cq:Page` 包含 `jcr:content` 儲存實際內容。
 
-最后，我们看到了 `bgkcolor` 我们的示例代码所需的。 的 `ValueMap` 我们从 `getItem` 基于页面的 `jcr:content` 节点。
+最後，我們會看到屬性 `bgkcolor` 程式碼範例所需的專案。 此 `ValueMap` 我們從「 」回來 `getItem` 根據頁面的 `jcr:content` 節點。
 
-### 配置分辨率 {#configuration-resolution}
+### 設定解析度 {#configuration-resolution}
 
-上述基本示例显示了单个配置。 但是，在很多情况下，您希望具有不同的配置，例如默认全局配置、每个品牌的不同配置，以及子项目的特定配置。
+上述基本範例顯示單一設定。 但在許多情況下，您會想要有不同的設定，例如預設全域設定、每個品牌的不同設定，以及子專案的特定設定。
 
-要支持此功能，AEM中的配置查找将按照以下首选项顺序包含继承和回退机制：
+為了支援此功能，AEM中的設定查閱具有繼承和遞補機制，其優先順序如下：
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
-   * 引用的特定配置 `cq:conf` 某处 `/content`
-   * 层次结构是任意的，并且可以像您的站点结构一样进行设计，要了解这一点，并非应用程序代码的业务
-   * 具有配置权限的用户在运行时可更改
+   * 參考自以下專案的特定設定： `cq:conf` 中的某處 `/content`
+   * 階層是任意的，而且可以像您的網站結構一樣設計，知道這一點不是應用程式程式碼的事
+   * 可由具有設定許可權的使用者在執行階段變更
 1. `/conf/<siteconfig>/<parentconfig>`
-   * 遍历备用配置的父项
-   * 具有配置权限的用户在运行时可更改
+   * 周遊後援設定的父項
+   * 可由具有設定許可權的使用者在執行階段變更
 1. `/conf/<siteconfig>`
-   * 遍历备用配置的父项
-   * 具有配置权限的用户在运行时可更改
+   * 周遊後援設定的父項
+   * 可由具有設定許可權的使用者在執行階段變更
 1. `/conf/global`
-   * 系统全局设置
-   * 通常是安装的全局默认值
-   * 由 `admin` 角色
-   * 具有配置权限的用户在运行时可更改
+   * 系統全域設定
+   * 通常為安裝的全域預設值
+   * 設定者 `admin` 角色
+   * 可由具有設定許可權的使用者在執行階段變更
 1. `/apps`
-   * 应用程序默认值
-   * 已通过应用程序部署修复
-   * 运行时为只读
+   * 應用程式預設值
+   * 已透過應用程式部署修正
+   * 在執行階段為唯讀
 1. `/libs`
-   * AEM产品默认值
-   * 仅可按Adobe更改，不允许项目访问
-   * 已通过应用程序部署修复
-   * 运行时为只读
+   * AEM產品預設值
+   * 僅可由Adobe變更，不允許專案存取
+   * 已透過應用程式部署修正
+   * 在執行階段為唯讀
 
-### 使用配置 {#using-configurations}
+### 使用設定 {#using-configurations}
 
-AEM中的配置基于Sling上下文感知配置。 Sling包提供了一个服务API，可用于获取上下文感知配置。 上下文感知配置是与内容资源或资源树相关的配置，与以前的配置相同 [上一示例中所述。](#developer-example)
+AEM中的設定是以Sling內容感知設定為基礎。 Sling套件組合提供的服務API可用於取得內容感知設定。 內容感知設定是與內容資源或資源樹狀結構相關的設定 [如上一個範例所述。](#developer-example)
 
-有关上下文感知配置、示例及其使用方法的更多详细信息， [请参阅Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+如需內容感知設定、範例及使用方式的詳細資訊， [請參閱Sling檔案。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
-### ConfMgr Web控制台 {#confmgr-web-console}
+### ConfMgr Web主控台 {#confmgr-web-console}
 
-出于调试和测试目的， **ConfMgr** 网站控制台 `https://<host>:<port>/system/console/conf`，可显示给定路径/项目的配置。
+為了進行偵錯和測試，我們提供 **ConfMgr** Web主控台： `https://<host>:<port>/system/console/conf`，可顯示指定路徑/專案的設定。
 
 ![ConfMgr](assets/configuration-confmgr.png)
 
-只需提供：
+只要提供：
 
 * **内容路径**
 * **项目**
 * **用户**
 
-单击 **解决** 以查看已解析的配置，并接收将解析这些配置的示例代码。
+按一下 **解決** 檢視已解析的設定，並接收將解析這些設定的範常式式碼。
 
-### 上下文感知配置Web控制台 {#context-aware-web-console}
+### 內容感知設定Web主控台 {#context-aware-web-console}
 
-出于调试和测试目的， **上下文感知配置** 网站控制台 `https://<host>:<port>/system/console/slingcaconfig`，用于查询存储库中的上下文感知配置并查看其属性。
+為了進行偵錯和測試，我們提供 **內容感知設定** Web主控台： `https://<host>:<port>/system/console/slingcaconfig`，可查詢存放庫中的內容感知設定並檢視其屬性。
 
-![上下文感知配置Web控制台](assets/configuration-context-aware-console.png)
+![內容感知設定Web主控台](assets/configuration-context-aware-console.png)
 
-只需提供：
+只要提供：
 
 * **内容路径**
-* **配置名称**
+* **設定名稱**
 
-单击 **解决** 用于检索所选配置的关联上下文路径和属性。
+按一下 **解決** 以擷取所選組態的關聯內容路徑和屬性。

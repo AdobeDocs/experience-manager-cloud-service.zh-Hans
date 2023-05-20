@@ -1,63 +1,63 @@
 ---
 title: Dynamic Media 视频配置文件
-description: Dynamic Media 附带预定义的自适应视频编码配置文件。此现成配置文件中的设置经过优化，可为客户提供最佳的查看体验。 您还可以向视频添加智能裁剪。
+description: Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成可用設定檔中的設定已最佳化，讓您的客戶獲得最佳檢視體驗。 您也可以將智慧型裁切新增至視訊。
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
+source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
 workflow-type: tm+mt
 source-wordcount: '3716'
-ht-degree: 14%
+ht-degree: 7%
 
 ---
 
 # Dynamic Media 视频配置文件{#video-profiles}
 
-Dynamic Media 附带预定义的自适应视频编码配置文件。此现成配置文件中的设置经过优化，可为客户提供最佳的查看体验。 当您使用自适应视频编码配置文件对主源视频进行编码时，在播放过程中，视频播放器会根据客户的Internet连接速度自动调整视频流的质量。 此操作称为自适应比特率流。
+Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成可用設定檔中的設定已最佳化，讓您的客戶獲得最佳檢視體驗。 當您使用最適化視訊編碼設定檔編碼您的主要來源視訊時，在播放期間，視訊播放器會根據客戶的網際網路連線速度自動調整視訊資料流的品質。 此動作稱為最適化位元速率串流。
 
-以下是决定视频质量的其他因素：
+以下是決定視訊品質的其他因素：
 
-* **上传的主源视频的分辨率**
+* **已上傳主要來源視訊的解析度**
 
-   如果MP4视频以较低的分辨率（如240p或360p）进行录制，则无法以高清晰度对其进行流式处理。
+   如果MP4視訊是以較低解析度（例如240p或360p）錄製，則無法以高解析度進行串流。
 
-* **视频播放器大小**
+* **視訊播放器大小**
 
-   默认情况下，“自适应视频编码”配置文件中的“宽度”设置为“自动”。 同样，在播放期间，会根据播放器的大小使用最佳质量。
+   根據預設，最適化視訊編碼設定檔中的「寬度」會設為「自動」。 同樣地，在播放期間，系統會根據播放器的大小使用最佳品質。
 
-请参阅 [视频编码最佳实践](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+另請參閱 [視訊編碼的最佳作法](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-另请参阅[组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
+另請參閱 [組織數位資產以使用處理設定檔的最佳實務](/help/assets/organize-assets.md).
 
 
 >[!NOTE]
 >
->要生成视频的元数据和关联的视频图像缩略图，视频本身必须在Dynamic Media中完成编码过程。 在Adobe Experience Manager, **[!UICONTROL Dynamic Media编码视频]** 如果您已启用Dynamic Media并设置了视频Cloud Services，则工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。请参阅 [监控视频编码和YouTube发布进度](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). 如果您已启用Dynamic Media并设置视频Cloud Services，则 **[!UICONTROL Dynamic Media编码视频]** 在您上传视频时，工作流会自动生效。 (如果您没有使用Dynamic Media，则 **[!UICONTROL DAM更新资产]** 工作流生效。)
+>若要產生視訊的中繼資料和相關的視訊影像縮圖，視訊本身必須經過Dynamic Media中的編碼程式。 在Adobe Experience Manager中， **[!UICONTROL Dynamic Media編碼影片]** 如果您已啟用Dynamic Media並設定視訊Cloud Services，工作流程會對視訊進行編碼。 此工作流会捕获工作流进程历史记录和失败信息。另請參閱 [監視視訊編碼和YouTube發佈進度](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). 如果您已啟用Dynamic Media並設定視訊Cloud Services， **[!UICONTROL Dynamic Media編碼影片]** 上傳視訊時，工作流程會自動生效。 (如果您沒有使用Dynamic Media，請 **[!UICONTROL DAM更新資產]** 工作流程會生效。)
 >
->在搜索资产时元数据很有用。缩略图是在编码过程中生成的静态视频图像。 Experience Manager系统需要这些参数，并在用户界面中使用这些参数，以帮助您在“卡片”视图、“搜索结果”视图和“资产列表”视图中以可视方式识别视频。 当您选择编码视频的演绎版图标（“画板”面板）时，您可以看到生成的缩略图。
+>中繼資料在搜尋資產時相當實用。 縮圖是在編碼期間產生的靜態視訊影像。 Experience Manager系統需要這些視訊，並用於使用者介面，以協助您在「卡片」檢視、「搜尋結果」檢視和「資產清單」檢視中以視覺化方式識別影片。 當您選取已編碼視訊的「轉譯」圖示（畫家的調色盤）時，可以看到產生的縮圖。
 
-创建完视频配置文件后，您可以将其应用到一个或多个文件夹。 请参阅 [将视频配置文件应用到文件夹](#applying-a-video-profile-to-folders).
+當您完成視訊描述檔的建立後，可將其套用至一個或多個資料夾。 另請參閱 [將視訊設定檔套用至資料夾](#applying-a-video-profile-to-folders).
 
-要为其他资产类型定义高级处理参数，请参阅 [配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
+若要定義其他資產型態的進階處理引數，請參閱 [設定資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-另请参阅 [用于处理元数据、图像和视频的配置文件](/help/assets/dynamic-media/about-image-video-profiles.md).
+另請參閱 [用於處理中繼資料、影像和影片的設定檔](/help/assets/dynamic-media/about-image-video-profiles.md).
 
-## 自适应视频编码预设 {#adaptive-video-encoding-presets}
+## 最適化視訊編碼預設集 {#adaptive-video-encoding-presets}
 
-下表列出了在将配置文件编码到移动和平板电脑设备以及台式计算机的自适应视频流播放时的最佳实践。 您可以针对任何宽高比的视频使用这些预设。
+下表識別將最適化視訊串流的設定檔編碼到行動裝置、平板電腦裝置和桌上型電腦的最佳做法。 您可以將這些預設集用於任何長寬比視訊。
 
 <table>
  <tbody>
   <tr>
    <td><strong>视频格式编解码器</strong></td>
-   <td><strong>视频大小 — 宽度(px)</strong></td>
-   <td><strong>视频大小 — 高度(px)</strong></td>
-   <td><strong>保持宽高比？</strong></td>
-   <td><strong>视频比特率 (Kbps)</strong></td>
-   <td><strong>视频帧速率 (Fps)</strong></td>
+   <td><strong>視訊大小 — 寬度(px)</strong></td>
+   <td><strong>視訊大小 — 高度(px)</strong></td>
+   <td><strong>保持外觀比例？</strong></td>
+   <td><strong>視訊位元速率(Kbps)</strong></td>
+   <td><strong>視訊影格速率(Fps)</strong></td>
    <td><strong>音频编解码器</strong></td>
-   <td><strong>音频比特率(Kbps)</strong></td>
+   <td><strong>音訊位元速率(Kbps)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -92,169 +92,169 @@ Dynamic Media 附带预定义的自适应视频编码配置文件。此现成配
  </tbody>
 </table>
 
-## 关于在视频配置文件中使用智能裁剪 {#about-smart-crop-video}
+## 關於在視訊設定檔中使用智慧型裁切 {#about-smart-crop-video}
 
-视频智能裁剪是视频配置文件中的一项可选功能。 它是一个工具，可使用Adobe Sensei自动检测和裁剪您上传的任何自适应视频或渐进式视频中的焦点，而无论其大小。
+視訊智慧型裁切是「視訊描述檔」中的選用功能。 此工具會使用Adobe Sensei自動偵測及裁切您已上傳之任何最適化視訊或漸進式視訊中的焦點，而不論其大小。
 
-支持的智能裁剪视频格式包括MP4、MKV、MOV、AVI、FLV和WMV。
+支援的智慧型裁切視訊格式包括MP4、MKV、MOV、AVI、FLV和WMV。
 
-智能裁剪支持的最大视频文件大小为以下条件：
+智慧型裁切支援的視訊檔案大小上限如下：
 
-* 持续五分钟。
-* 每秒30帧(FPS)。
-* 文件大小为300 MB。
+* 持續五分鐘。
+* 每秒30個畫面(FPS)。
+* 檔案大小為300 MB。
 
-Adobe Sensei限制为9000帧。 即，以30 FPS的速度为5分钟。 如果视频的FPS较高，则支持的最大视频持续时间会减少。 例如，60 FPS的视频必须长2.5分钟，才能受Adobe Sensei和智能裁剪支持。
+Adobe Sensei限製為9000個畫面。 也就是說，30 FPS時需要5分鐘。 如果您的視訊具有較高的FPS，則支援的視訊持續時間上限會縮短。 例如，60 FPS視訊必須長達兩分鐘半，Adobe Sensei和智慧型裁切才能支援。
 
-![视频智能裁剪](assets/smart-crop-video.png)
+![視訊智慧型裁切](assets/smart-crop-video.png)
 
 >[!IMPORTANT]
 >
->要使视频智能裁剪正常工作，您必须在视频配置文件中包含一个或多个视频编码预设。
+>若要讓視訊智慧型裁切發揮作用，您必須在視訊設定檔中加入一或多個視訊編碼預設集。
 
-要对视频使用智能裁剪，请创建自适应或渐进式视频编码配置文件。 在您的配置文件中，使用 **[!UICONTROL 智能裁切比]** 工具来选择预定义的宽高比。 例如，在定义视频编码预设后，您可以添加宽高比为16x9的“移动横向”定义和宽高比为9x16的“移动纵向”定义。 您可以选择包含1x1、4x3和4x5的其他宽高比或裁剪比。
+若要針對視訊使用智慧型裁切，請建立最適化或漸進式視訊編碼設定檔。 在您的個人資料中，使用 **[!UICONTROL 智慧型裁切比例]** 工具來選取預先定義的外觀比例。 例如，定義視訊編碼預設集後，您可以新增外觀比例為16x9的「行動橫向」定義，以及外觀比例為9x16的「行動縱向」定義。 其他外觀或裁切比例，您可以選擇包含1x1、4x3和4x5。
 
-![使用智能裁剪编辑视频编码配置文件](assets/edit-smart-crop-video2.png)
+![使用智慧型裁切編輯視訊編碼設定檔](assets/edit-smart-crop-video2.png)
 
-您可以使用视频配置文件最右侧的滑块打开或关闭视频智能裁剪 **[!UICONTROL 智能裁切比]** 中。
+您可以使用最右側的滑桿，將「視訊描述檔」中的視訊智慧型裁切切換為開啟或關閉 **[!UICONTROL 智慧型裁切比例]** 在使用者介面中。
 
-创建并保存视频配置文件后，可以将其应用到所需的文件夹。
+建立並儲存視訊設定檔後，您可以將其套用至您想要的資料夾。
 
-请参阅 [将视频配置文件应用到特定文件夹](#applying-video-profiles-to-specific-folders) 或 [全局应用视频配置文件](#applying-a-video-profile-globally).
+另請參閱 [將視訊設定檔套用至特定資料夾](#applying-video-profiles-to-specific-folders) 或 [全域套用視訊設定檔](#applying-a-video-profile-globally).
 
-另请参阅 [智能裁剪图像](image-profiles.md).
+另請參閱 [影像的智慧型裁切](image-profiles.md).
 
-## 为自适应比特率流播放创建视频配置文件 {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## 建立最適化位元速率串流的視訊設定檔 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media已附带预定义的自适应视频编码配置文件，该配置文件是一组适用于MP4 H.264的视频上传设置，已针对最佳观看体验进行了优化。您可以在上传视频时使用此用户档案。
+Dynamic Media已隨附預先定義的最適化視訊編碼設定檔（MP4 H.264的一組視訊上傳設定），此設定檔已最佳化以發揮最佳檢視體驗。 您可以在上傳視訊時使用此設定檔。
 
-但是，如果该预定义的配置文件不符合您的需求，您也可以选择自行创建自适应视频编码配置文件。作为最佳实践，当您使用 **[!UICONTROL 自适应流播放的编码]**，则会验证您添加到配置文件的所有编码预设。 此功能可确保所有视频具有相同的宽高比。 此外，编码视频会被视为流播放的多比特率集。
+不過，如果此預先定義的設定檔不符合您的需求，您可以選擇建立自己的最適化視訊編碼設定檔。 最佳做法是，當您使用設定 **[!UICONTROL 最適化串流編碼]**，則會驗證您新增至設定檔的所有編碼預設集。 此功能可確保所有視訊具有相同的長寬比。 此外，經過編碼的視訊會被視為串流的多位元速率集。
 
-在创建视频编码配置文件时，您会注意到大多数编码选项都已预填充了推荐的默认设置，以帮助您。 但是，如果您选择的值不是建议的默认值，则可能会在播放过程中导致视频质量不佳以及出现其他性能问题。
+當您建立視訊編碼設定檔時，您會注意到大部分的編碼選項都已預先填入建議的預設設定，以協助您。 不過，如果您選取的值不是建議的預設值，可能會導致錄放期間的視訊品質不佳，並出現其他效能問題。
 
-因此，对于配置文件中的所有MP4 H.264视频编码预设，将验证以下值，以确保它们在配置文件中的各个编码预设中均相同，从而实现自适应比特率流播放：
+因此，針對設定檔中的所有MP4 H.264視訊編碼預設集，會驗證下列值，以確保在設定檔中的個別編碼預設集中這些值相同，從而實現最適化位元速率串流：
 
-* 视频格式编解码器 - MP4 H.264 (.mp4)
+* 視訊格式轉碼器 — MP4 H.264 (.mp4)
 * 音频编解码器
 * 音频比特率
-* 保持宽高比
-* 两次编码
+* 保持外觀比例
+* 兩次編碼
 * 恒定比特率
 * H264 配置文件
 * 音频采样速率
 
-如果这些值不相同，您仍然可以继续创建该配置文件。但是，自适应比特率流播放是不可能的。 相反，用户会体验单比特率流播放。 建议您编辑编码设置，以在配置文件内的各个编码预设中均使用相同的值。（如果启用了“自适应流播放的编码”，则视频配置文件/预设编辑器强制对自适应视频编码设置进行奇偶校验。）
+如果值不同，您可以繼續按原樣建立設定檔。 不過，無法進行最適化位元速率串流。 相反地，使用者會體驗單一位元速率串流。 建議您編輯編碼設定，以在設定檔的個別編碼預設集中使用相同的值。 （如果啟用「最適化串流編碼」，「視訊設定檔/預設集」編輯器會強制執行最適化視訊編碼設定的同位檢查。）
 
-另请参阅 [为渐进式流播放创建视频编码配置文件](#creating-a-video-encoding-profile-for-progressive-streaming).
+另請參閱 [建立漸進式串流的視訊編碼設定檔](#creating-a-video-encoding-profile-for-progressive-streaming).
 
-另请参阅 [视频编码最佳实践](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+另請參閱 [視訊編碼的最佳作法](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-要为其他资产类型定义高级处理参数，请参阅 [配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
+若要定義其他資產型態的進階處理引數，請參閱 [設定資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**为自适应比特率流播放创建视频配置文件**,
+**建立最適化位元速率串流的視訊設定檔的方式**，
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频配置文件]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**.
 1. 选择&#x200B;**[!UICONTROL 创建]**。
-1. 输入配置文件的名称和描述。
-1. 在创建/编辑视频编码预设页面上，选择 **[!UICONTROL 添加视频编码预设]**.
-1. 在&#x200B;**[!UICONTROL 基本]**选项卡中，设置视频和音频选项。
-选择每个选项旁边的信息图标，以了解基于所选视频格式编解码器的更多描述或推荐的设置。
-1. 在“视频大小”标题下，确保 **[!UICONTROL 保持宽高比]** 复选框。
-1. 以像素为单位设置视频帧大小分辨率。 使用 **[!UICONTROL 自动]** 值以自动缩放以匹配源宽高比（宽高比）。 例如，自动x 480或640 x自动。
+1. 輸入設定檔的名稱和描述。
+1. 在「建立/編輯視訊編碼預設集」頁面上，選取 **[!UICONTROL 新增視訊編碼預設集]**.
+1. 於 **[!UICONTROL 基本]** 索引標籤中，設定視訊和音訊選項。
+請選取每個選項旁的資訊圖示，以取得更多說明或根據選取的視訊格式codec建議的設定。
+1. 在「視訊大小」標題下，確認 **[!UICONTROL 保持外觀比例]** 已勾選。
+1. 設定視訊影格大小解析度（畫素）。 使用 **[!UICONTROL 自動]** 值會自動縮放以符合來源外觀比例（寬高比）。 例如，Auto x 480或640 x Auto。
 
 1. 执行下列操作之一：
 
-   * 在 **[!UICONTROL 宽度]** 字段，输入 **[!UICONTROL 自动]**. 在 **[!UICONTROL 高度]** 字段中，输入以像素为单位的值。
+   * 在 **[!UICONTROL 寬度]** 欄位，輸入 **[!UICONTROL 自動]**. 在 **[!UICONTROL 高度]** 欄位，輸入畫素值。
 
-   * 要帮助您可视化视频的大小，请选择右侧的“信息”图标(i) **[!UICONTROL 高度]** 打开“大小计算器”页面。 使用 **[!UICONTROL 大小计算器]** 来设置所需的视频尺寸（由蓝框表示）。 选择 **[!UICONTROL X]** 的位置。
+   * 若要協助您視覺化視訊的大小，請選取右側的資訊圖示(i) **[!UICONTROL 高度]** 以開啟「大小電腦」頁面。 使用 **[!UICONTROL 大小電腦]** 以設定您想要的視訊尺寸（以藍色方塊表示）。 選取 **[!UICONTROL X]** 完成時位於右上角。
 
-1. （可选）选择 **[!UICONTROL 高级]** 选项卡，并确保 **[!UICONTROL 使用默认值]** 复选框（推荐）。 或者，修改高级视频和音频设置。
-1. 在页面的右上角，选择 **[!UICONTROL 保存]** 来保存预设。
+1. （可選）選取 **[!UICONTROL 進階]** 標籤並確保 **[!UICONTROL 使用預設值]** 核取方塊已選取（建議使用）。 或者，修改進階視訊與音訊設定。
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存]** 以儲存預設集。
 1. 执行下列操作之一：
-   * 重复步骤4-10以创建更多编码预设。 （自适应视频流播放需要多个视频预设。）
-   * 继续下一步。
+   * 重複步驟4至10，建立更多編碼預設集。 （最適化視訊串流需要多個視訊預設集。）
+   * 繼續下一步驟。
 
-1. （可选）要向应用此配置文件的视频添加视频智能裁剪，请执行以下操作：
-   * 在“编辑视频配置文件”页面的“智能裁剪比例”标题右侧，选择 **[!UICONTROL 新增]**.
-   * 在“名称”字段中，键入裁剪比例的名称，以帮助您轻松识别它。
-   * 从 **[!UICONTROL 裁剪比例]** 下拉列表中，选择要使用的比率。
+1. （可選）若要將視訊智慧型裁切新增至套用此設定檔的視訊，請執行下列動作：
+   * 在「編輯視訊描述檔」頁面的「智慧型裁切比例」標題右側，選取「 」 **[!UICONTROL 新增]**.
+   * 在「名稱」欄位中，輸入可協助您輕鬆識別裁切率的名稱。
+   * 從 **[!UICONTROL 裁切比例]** 下拉式清單，選取您要使用的比例。
 
 1. 执行下列操作之一：
 
-   * 根据需要继续添加新的裁剪比例。
-   * 继续下一步。
+   * 視需要繼續新增裁切比例。
+   * 繼續下一步驟。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存]** 以保存用户档案。
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存]** 以儲存設定檔。
 
-您现在可以将配置文件应用到包含视频的文件夹。 请参阅 [将视频配置文件应用到文件夹](#applying-a-video-profile-to-folders) 或 [全局应用视频配置文件](#applying-a-video-profile-globally).
+您現在可以將設定檔套用至包含視訊的資料夾。 另請參閱 [將視訊設定檔套用至資料夾](#applying-a-video-profile-to-folders) 或 [全域套用視訊設定檔](#applying-a-video-profile-globally).
 
-## 为渐进式流播放创建视频配置文件 {#creating-a-video-encoding-profile-for-progressive-streaming}
+## 建立漸進式串流的視訊設定檔 {#creating-a-video-encoding-profile-for-progressive-streaming}
 
-如果您选择不使用选项 **[!UICONTROL 自适应流播放的编码]**，则您添加到配置文件的所有编码预设都会被视为用于单比特率流播放或渐进式视频交付的单独视频演绎版。 此外，不会进行验证，以确保所有视频呈现具有相同的纵横比。
+如果您選擇不使用選項 **[!UICONTROL 最適化串流編碼]**，您新增至設定檔的所有編碼預設集都會被視為個別視訊轉譯，以用於單位元速率串流或漸進式視訊傳送。 此外，不会进行验证，以确保所有视频呈现具有相同的纵横比。
 
-支持的视频格式编解码器为H.264(.mp4)和WebM。
+支援的視訊格式轉碼器為H.264 (.mp4)和WebM。
 
-另请参阅 [为自适应比特率流播放创建视频编码配置文件](#creating-a-video-encoding-profile-for-adaptive-streaming).
+另請參閱 [建立最適化位元速率串流的視訊編碼設定檔](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
-另请参阅[视频编码的最佳实践](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)。
+另請參閱 [視訊編碼的最佳作法](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-要为其他资产类型定义高级处理参数，请参阅 [配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
+若要定義其他資產型態的進階處理引數，請參閱 [設定資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**要为渐进式流播放创建视频配置文件，请执行以下操作：**
+**若要建立漸進式串流的視訊設定檔：**
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频配置文件]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**.
 1. 选择&#x200B;**[!UICONTROL 创建]**。
-1. 输入配置文件的名称和描述。
-1. 在创建/编辑视频编码预设页面上，选择 **[!UICONTROL 添加视频编码预设]**.
-1. 在&#x200B;**[!UICONTROL 基本]**选项卡中，设置视频和音频选项。
-选择每个选项旁边的信息图标，以了解基于所选视频格式编解码器的更多描述或推荐的设置。
-1. （可选）在“视频大小”标题下，取消选中 **[!UICONTROL 保持宽高比]**.
+1. 輸入設定檔的名稱和描述。
+1. 在「建立/編輯視訊編碼預設集」頁面上，選取 **[!UICONTROL 新增視訊編碼預設集]**.
+1. 於 **[!UICONTROL 基本]** 索引標籤中，設定視訊和音訊選項。
+請選取每個選項旁的資訊圖示，以取得更多說明或根據選取的視訊格式codec建議的設定。
+1. （選用）在「視訊大小」標題下，取消勾選 **[!UICONTROL 保持外觀比例]**.
 1. 执行以下操作：
-   * 在 **[!UICONTROL 宽度]** 字段，输入 **[!UICONTROL 自动]**.
-   * 在 **[!UICONTROL 高度]** 字段中，输入以像素为单位的值。
-要帮助您可视化视频大小，请选择“高度”的信息图标以打开 **[!UICONTROL 大小计算器]** 页面。 使用 **[!UICONTROL 大小计算器]** 页面以进一步按需设置视频大小（蓝框）。 完成后，在对话框的右上角，选择 **[!UICONTROL X]**.
-1. （可选）执行以下操作之一：
+   * 在 **[!UICONTROL 寬度]** 欄位，輸入 **[!UICONTROL 自動]**.
+   * 在 **[!UICONTROL 高度]** 欄位，輸入畫素值。
+若要協助您視覺化視訊的大小，請選取「高度」的資訊圖示以開啟 **[!UICONTROL 大小電腦]** 頁面。 使用 **[!UICONTROL 大小電腦]** 頁面，以進一步設定您想要的視訊大小（藍方塊）。 完成後，在對話方塊的右上角，選取 **[!UICONTROL X]**.
+1. （可選）執行下列任一項作業：
 
-   * 选择 **[!UICONTROL 高级]** ，并确保 **[!UICONTROL 使用默认值]** 复选框（推荐）。
+   * 選取 **[!UICONTROL 進階]** 標籤，並確定 **[!UICONTROL 使用預設值]** 核取方塊已選取（建議使用）。
 
-   * 清除 **[!UICONTROL 使用默认值]** 复选框，然后指定所需的视频设置和音频设置。
-选择每个选项旁边的信息图标，以了解基于所选视频格式编解码器的更多描述或推荐的设置。
+   * 清除 **[!UICONTROL 使用預設值]** 核取方塊，並指定您想要的視訊設定和音訊設定。
+請選取每個選項旁的資訊圖示，以取得更多說明或根據選取的視訊格式codec建議的設定。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存]** 来保存预设。
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存]** 以儲存預設集。
 1. 执行下列操作之一：
 
-   * 重复步骤4-9以创建更多编码预设。
-   * 继续下一步。
+   * 重複步驟4-9以建立更多編碼預設集。
+   * 繼續下一步驟。
 
-1. （可选）要向应用此配置文件的视频添加视频智能裁剪，请执行以下操作：
+1. （可選）若要將視訊智慧型裁切新增至套用此設定檔的視訊，請執行下列動作：
 
-   * 在“编辑视频配置文件”页面的“智能裁剪比例”标题右侧，选择 **[!UICONTROL 新增]**.
-   * 在“名称”字段中，键入裁剪比例的名称，以帮助您轻松识别它。
-   * 从 **[!UICONTROL 裁剪比例]** 下拉列表中，选择要使用的比率。
+   * 在「編輯視訊描述檔」頁面的「智慧型裁切比例」標題右側，選取「 」 **[!UICONTROL 新增]**.
+   * 在「名稱」欄位中，輸入裁切比率的名稱，協助您輕鬆識別。
+   * 從 **[!UICONTROL 裁切比例]** 下拉式清單，選取您要使用的比例。
 
 1. 执行下列操作之一：
 
-   * 根据需要继续添加新的裁剪比例。
-   * 继续下一步。
+   * 視需要繼續新增裁切比例。
+   * 繼續下一步驟。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存]** 以保存用户档案。
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存]** 以儲存設定檔。
 
-您现在可以将配置文件应用到包含视频的文件夹。 请参阅 [将视频配置文件应用到文件夹](#applying-a-video-profile-to-folders) 或 [全局应用视频配置文件](#applying-a-video-profile-globally).
+您現在可以將設定檔套用至包含視訊的資料夾。 另請參閱 [將視訊設定檔套用至資料夾](#applying-a-video-profile-to-folders) 或 [全域套用視訊設定檔](#applying-a-video-profile-globally).
 
-## 使用自定义添加的视频编码参数 {#using-custom-added-video-encoding-parameters}
+## 使用自訂新增的視訊編碼引數 {#using-custom-added-video-encoding-parameters}
 
-您可以编辑视频的现有编码配置文件，以利用在Experience Manager中创建或编辑视频配置文件时，用户界面中未找到的高级视频编码参数。 您可以自定义向现有配置文件添加一个或多个高级参数，如minBitrate和maxBitrate。
+您可以編輯視訊的現有編碼設定檔，以利用在Experience Manager中建立或編輯視訊設定檔時，使用者介面中找不到的進階視訊編碼引數。 您可以自訂新增一或多個進階引數（例如minBitrate和maxBitrate）至您現有的設定檔。
 
-**要使用自定义添加的视频编码参数，请执行以下操作：**
+**若要使用自訂新增的視訊編碼引數：**
 
-1. 选择Experience Manager徽标，然后导航到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL CRXDE Lite]**.
-1. 在CRXDE Lite页面的左侧资源管理器面板中，导航到以下内容：
+1. 選取Experience Manager標誌，然後導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**.
+1. 從「CRXDE Lite」頁面，在左側的「總管」面板中導覽至下列專案：
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
 1. 在页面右下方的面板中，从“属性”选项卡中，指定要使用的参数的&#x200B;**[!UICONTROL 名称]**、**[!UICONTROL 类型]**&#x200B;和&#x200B;**[!UICONTROL 值]**。
 
-   可以使用以下高级参数：
+   下列進階引數可供使用：
 
 <table>
  <tbody>
@@ -262,168 +262,168 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
    <td><strong>名称</strong></td>
    <td><strong>描述</strong><br /> </td>
    <td><strong>类型</strong><br /> </td>
-   <td><strong>值</strong></td>
+   <td><strong>价值</strong></td>
   </tr>
   <tr>
    <td><code>h264Level</code></td>
-   <td>用于编码的H.264级。 通常，此级别会根据您使用的编码设置自动确定。</td>
+   <td>用於編碼的H.264層級。 通常此層級會根據您使用的編碼設定自動決定。</td>
    <td><code>String</code></td>
-   <td><p>10 * h264级</p> <p>例如，3.0 = 30,1.3 = 13)</p> <p>没有默认值。</p> </td>
+   <td><p>10 * h264層級</p> <p>例如3.0 = 30， 1.3 = 13)</p> <p>無預設值。</p> </td>
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>关键帧之间的目标帧数。 计算此值，以便每2到10秒生成一个关键帧。 例如，在每秒30帧时，关键帧间隔为60-300。<br /> <br /> 较低的关键帧间隔可改进自适应视频编码的流搜寻和流切换行为，并且还可以提高具有大量运动的视频的质量。 但是，由于关键帧会增加文件的大小，因此较低的关键帧间隔通常会导致在给定比特率下的整体视频质量降低。</td>
+   <td>關鍵影格之間的目標影格數。 計算此值，以便每2-10秒產生一個關鍵影格。 例如，以每秒30個影格為例，關鍵影格間隔為60-300。<br /> <br /> 較低的關鍵影格間隔可改善最適化視訊編碼的串流搜尋和串流切換行為，也可改善有大量動作的視訊品質。 不過，由於關鍵影格會增加檔案的大小，因此較低的關鍵影格間隔通常會導致指定位元速率下的整體視訊品質較低。</td>
    <td><code>String</code></td>
-   <td><p>正数。</p> <p>默认值为300。</p> <p>HLS或DASH（自适应比特率流）的推荐值为60-90。 (要对视频使用DASH，必须先由您帐户上的Adobe技术支持人员启用。 请参阅 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帐户上启用短划线</a>.)</p> </td>
+   <td><p>正數。</p> <p>預設值為300。</p> <p>HLS或DASH （最適化位元速率串流）的建議值為60-90。 (若要在視訊中使用DASH，必須先由您帳戶上的Adobe技術支援啟用。 另請參閱 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帳戶上啟用DASH</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
-   <td><p>允许使用可变比特率编码的最小比特率，以Kbps（千比特每秒）为单位。</p> <p>此参数仅在<strong> 使用常量比特率</strong> 创建或编辑视频编码配置文件时，会在“高级”选项卡中取消选中此选项。</p> <p>另请参阅 <a href="/help/assets/dynamic-media/video.md#bitrate">比特率</a>.</p> </td>
+   <td><p>允許可變位元速率編碼的最小位元速率，以Kbps （每秒千位元）表示。</p> <p>此引數僅適用於以下情況<strong> 使用固定位元速率</strong> 當您建立或編輯視訊編碼設定檔時，會在「進階」標籤中取消選取。</p> <p>另請參閱 <a href="/help/assets/dynamic-media/video.md#bitrate">位元速率</a>.</p> </td>
    <td><code>String</code></td>
-   <td><p>正数，以Kbps为单位。</p> <p>没有默认值。</p> </td>
+   <td><p>正數（以Kbps為單位）。</p> <p>無預設值。</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
-   <td><p>允许使用可变比特率编码的最大比特率，以Kbps为单位。</p> <p>此参数仅在<strong> 使用常量比特率</strong> 创建或编辑视频编码配置文件时，会在“高级”选项卡中取消选中此选项。</p> <p>另请参阅 <a href="/help/assets/dynamic-media/video.md#bitrate">比特率</a>.</p> </td>
+   <td><p>允許可變位元速率編碼的最大位元速率（以Kbps為單位）。</p> <p>此引數僅適用於以下情況<strong> 使用固定位元速率</strong> 當您建立或編輯視訊編碼設定檔時，會在「進階」標籤中取消選取。</p> <p>另請參閱 <a href="/help/assets/dynamic-media/video.md#bitrate">位元速率</a>.</p> </td>
    <td><code>String</code></td>
-   <td><p>正数，以Kbps为单位。</p> <p>没有默认值。 但是，建议的值最多是编码比特率的两倍。</p> </td>
+   <td><p>正數（以Kbps為單位）。</p> <p>無預設值。 不過，建議值最多為編碼位元速率的2倍。</p> </td>
   </tr>
   <tr>
    <td><code>audioBitrateCustom</code></td>
-   <td>将值设置为 <code>true</code> 强制音频流使用恒定比特率（如果音频编解码器支持）。</td>
+   <td>將值設為 <code>true</code> 強制音訊資料流採用固定的位元速率（若音訊轉碼器支援）。</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>默认为 <code>false</code>.</p> <p>HLS或DASH的推荐值为 <code>false</code>. (要对视频使用DASH，必须先由您帐户上的Adobe技术支持人员启用。 请参阅 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帐户上启用短划线</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>預設為 <code>false</code>.</p> <p>HLS或DASH的建議值為 <code>false</code>. (若要在視訊中使用DASH，必須先由您帳戶上的Adobe技術支援啟用。 另請參閱 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帳戶上啟用DASH</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. 在页面的右下角附近，选择 **[!UICONTROL 添加]**.
+1. 在頁面的右下角附近，選取 **[!UICONTROL 新增]**.
 1. 执行下列操作之一：
 
-   * 重复步骤3和4，以向视频编码配置文件中添加其他参数。
-   * 在页面的左上角附近，选择 **[!UICONTROL 全部保存]**.
+   * 重複步驟3和4，將另一個引數新增至視訊編碼設定檔。
+   * 在頁面的左上角附近，選取 **[!UICONTROL 全部儲存]**.
 
-1. 在CRXDE Lite页面的左上角，选择 **[!UICONTROL 返回主页]** 图标以返回到Experience Manager。
+1. 在CRXDE Lite頁面的左上角，選取 **[!UICONTROL 返回首頁]** 圖示以返回Experience Manager。
 
-### 编辑视频配置文件 {#editing-a-video-encoding-profile}
+### 編輯視訊設定檔 {#editing-a-video-encoding-profile}
 
-您可以编辑您创建的任何视频配置文件，以在该配置文件中添加、编辑或删除视频预设。
+您可以編輯任何您建立的視訊設定檔，以新增、編輯或刪除該設定檔中的視訊預設集。
 
-默认情况下，您无法编辑预定义的现成功能 **[!UICONTROL 自适应视频编码]** Dynamic Media的个人资料。 相反，您可以轻松复制配置文件并使用新名称进行保存。 然后，您可以在复制的配置文件中编辑所需的预设。
+依預設，您無法編輯預先定義的現成可用的 **[!UICONTROL 自我調整視訊編碼]** Dynamic Media隨附的設定檔。 反之，您可以輕鬆複製設定檔，並以新名稱儲存。 然後，您可以在複製的設定檔中編輯所需的預設集。
 
-另请参阅[视频编码的最佳实践](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)。
+另請參閱 [視訊編碼的最佳作法](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-要为其他资产类型定义高级处理参数，请参阅 [配置资产处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
+若要定義其他資產型態的進階處理引數，請參閱 [設定資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**要编辑视频配置文件，请执行以下操作：**
+**若要編輯視訊設定檔：**
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频配置文件]**.
-1. 在“视频配置文件”页面上，选中一个视频配置文件名称。
-1. 在工具栏中，选择 **[!UICONTROL 编辑]**.
-1. 在“视频编码配置文件”页面上，根据需要编辑名称和描述。
-1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。选择信息图标以获取自适应比特率流播放的描述。 （如果您正在编辑渐进式视频配置文件，请勿选中此复选框。）
-1. 在“视频编码预设”标题下，添加、编辑或删除构成该配置文件的视频编码预设。
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**.
+1. 在「視訊設定檔」頁面上，檢查一個視訊設定檔名稱。
+1. 在工具列上，選取 **[!UICONTROL 編輯]**.
+1. 在「視訊編碼設定檔」頁面上，視需要編輯名稱和說明。
+1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。選取資訊圖示以取得最適化位元速率串流的說明。 （如果您正在編輯漸進式視訊設定檔，請勿選取此核取方塊。）
+1. 在「視訊編碼預設集」標題下，新增、編輯或刪除組成設定檔的視訊編碼預設集。
 
-   选择 **[!UICONTROL 基本]** 和 **[!UICONTROL 高级]** 选项卡，以了解基于所选视频格式编解码器的更多描述或推荐的设置。
+   選取上每個選項旁的資訊圖示 **[!UICONTROL 基本]** 和 **[!UICONTROL 進階]** 索引標籤以取得更多說明，或根據選取的視訊格式codec建議設定。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存]**.
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存]**.
 
-### 复制视频配置文件 {#copying-a-video-encoding-profile}
+### 複製視訊設定檔 {#copying-a-video-encoding-profile}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频配置文件]**.
-1. 在“视频配置文件”页面上，选中一个视频配置文件名称。
-1. 在工具栏中，选择 **[!UICONTROL 复制]**.
-1. 在“视频编码配置文件”页面上，输入配置文件的新名称。
-1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 选择信息图标以获取自适应比特率流播放的描述。 （如果要复制渐进式视频配置文件，请勿选中复选框。）
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**.
+1. 在「視訊設定檔」頁面上，檢查一個視訊設定檔名稱。
+1. 在工具列上，選取 **[!UICONTROL 複製]**.
+1. 在「視訊編碼設定檔」頁面上，輸入設定檔的新名稱。
+1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 選取資訊圖示以取得最適化位元速率串流的說明。 （如果要複製漸進式視訊設定檔，請勿選取核取方塊。）
 
-   在Dynamic Media — 混合模式中，如果WebM视频预设是视频配置文件的一部分，则 **[!UICONTROL 自适应流播放的编码]** 不可能，因为所有预设都必须是MP4预设。
-1. 在“视频编码预设”标题下，添加、编辑或删除构成该配置文件的视频编码预设。
+   在Dynamic Media — 混合模式中，如果WebM視訊預設集是視訊設定檔的一部分，則 **[!UICONTROL 最適化串流編碼]** 因為所有預設集都必須是MP4，所以無法使用。
+1. 在「視訊編碼預設集」標題下，新增、編輯或刪除組成設定檔的視訊編碼預設集。
 
-   在基本和高级选项卡上选择每个选项旁边的信息图标，以了解推荐的设置和说明。
+   選取「基本」和「進階」標籤上每個選項旁的資訊圖示，以取得建議的設定和說明。
 
-1. 在页面的右上角，选择 **[!UICONTROL 保存]**.
+1. 在頁面的右上角，選取 **[!UICONTROL 儲存]**.
 
-### 删除视频配置文件 {#deleting-a-video-encoding-profile}
+### 刪除視訊設定檔 {#deleting-a-video-encoding-profile}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频配置文件]**.
-1. 在“视频配置文件”页面上，选中一个或多个视频配置文件名称。
-1. 在工具栏中，选择 **[!UICONTROL 删除]**.
-1. 选择 **[!UICONTROL 确定]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**.
+1. 在「視訊描述檔」頁面上，檢查一或多個視訊描述檔名稱。
+1. 在工具列上，選取 **[!UICONTROL 刪除]**.
+1. 選取 **[!UICONTROL 確定]**.
 
-## 将视频配置文件应用到文件夹 {#applying-a-video-profile-to-folders}
+## 將視訊設定檔套用至資料夾 {#applying-a-video-profile-to-folders}
 
-将视频配置文件分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。 因此，您只能为一个文件夹分配一个视频配置文件。 因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
+當您將「視訊描述檔」指派給資料夾時，任何子資料夾都會自動從其父資料夾繼承描述檔。 因此，您只能將一個視訊設定檔指派給資料夾。 因此，請仔細考慮您上傳、儲存、使用和封存資產的資料夾結構。
 
-如果您为文件夹分配了其他视频配置文件，则新配置文件会覆盖之前的配置文件。以前存在的文件夹资产将保持不变。新配置文件会应用于稍后添加到文件夹的资产。
+如果您將不同的視訊設定檔指派給資料夾，則新的設定檔會覆寫先前的設定檔。 先前現有的資料夾資產保持不變。 新設定檔會套用至稍後新增至資料夾的資產。
 
-在用户界面中，如果文件夹分配了配置文件，则会使用卡片名称中显示的配置文件名称来指示该文件夹。
+已為其指派設定檔的資料夾會在使用者介面中使用卡片名稱中顯示的設定檔名稱來指示。
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
-您可以将视频配置文件应用到特定文件夹或全局应用到所有资产。
+您可以將視訊設定檔套用至特定資料夾，或全域套用至所有資產。
 
-您可以重新处理文件夹中已有视频配置文件（您稍后更改了该配置文件）的资产。 请参阅[重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+若資料夾中已有您之後加以變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 请参阅[重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
-### 将视频配置文件应用到特定文件夹 {#applying-video-profiles-to-specific-folders}
+### 將視訊設定檔套用至特定資料夾 {#applying-video-profiles-to-specific-folders}
 
-您可以在 **[!UICONTROL 工具]** ，或者如果您在文件夹中， **[!UICONTROL 属性]**. 本节将介绍这两种将视频配置文件应用到文件夹的方法。
+您可以將視訊設定檔套用至資料夾(從 **[!UICONTROL 工具]** 功能表，或者如果您在資料夾中，請從 **[!UICONTROL 屬性]**. 本節說明如何以兩種方式將視訊設定檔套用至資料夾。
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-另请参阅 [编辑文件夹中的资产处理配置文件后，会重新处理该文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+另請參閱 [編輯資料夾中資產的處理設定檔後，重新處理該資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-#### 通过“配置文件”用户界面将视频配置文件应用到文件夹 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
+#### 透過「設定檔」使用者介面將視訊設定檔套用至資料夾 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频配置文件]**.
-1. 选择要应用于一个或多个文件夹的视频配置文件。
-1. 选择 **[!UICONTROL 将配置文件应用到文件夹]** ，然后选择一个或多个用于接收新上传资产的文件夹，然后选择 **[!UICONTROL 应用]**. 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，如果文件夹已经分配了配置文件，则文件夹名称的正下方会显示配置文件的名称。您可以 [监视视频配置文件处理作业的进度](#monitoring-the-progress-of-an-encoding-job).
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**.
+1. 選取您要套用至一個或多個資料夾的視訊設定檔。
+1. 選取 **[!UICONTROL 將設定檔套用至資料夾]** 並選取您要用來接收新上傳資產的資料夾或多個資料夾，然後選取 **[!UICONTROL 套用]**. 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，如果文件夹已经分配了配置文件，则文件夹名称的正下方会显示配置文件的名称。您可以 [監視視訊設定檔處理工作的進度](#monitoring-the-progress-of-an-encoding-job).
 
-#### 从“属性”将视频配置文件应用到文件夹 {#applying-video-profiles-to-folders-from-properties}
+#### 從「屬性」將視訊設定檔套用至資料夾 {#applying-video-profiles-to-folders-from-properties}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 资产]** 然后，转到要将视频配置文件应用到的文件夹。
-1. 在文件夹中，选择复选标记以将其选中，然后选择 **[!UICONTROL 属性]**.
-1. 选择 **[!UICONTROL 视频配置文件]** 选项卡，从下拉菜单中选择用户档案，然后选择 **[!UICONTROL 保存并关闭]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 資產]** 然後移至您要套用視訊設定檔的資料夾。
+1. 在資料夾中，選取核取記號以選取資料夾，然後選取 **[!UICONTROL 屬性]**.
+1. 選取 **[!UICONTROL 視訊設定檔]** 標籤並從下拉式選單中選取設定檔，然後選取 **[!UICONTROL 儲存並關閉]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-您可以 [监视视频配置文件处理作业的进度](#monitoring-the-progress-of-an-encoding-job).
+您可以 [監視視訊設定檔處理工作的進度](#monitoring-the-progress-of-an-encoding-job).
 
-### 全局应用视频配置文件 {#applying-a-video-profile-globally}
+### 全域套用視訊設定檔 {#applying-a-video-profile-globally}
 
-除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便任何文件夹中上传到Experience Manager资产的任何内容都会应用选定的配置文件。
+除了將設定檔套用至資料夾外，您還可以全域套用設定檔，以便上傳到任何資料夾中Experience Manager資產的任何內容都會套用選取的設定檔。
 
-另请参阅 [重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+另請參閱 [重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**要全局应用视频配置文件，请执行以下操作：**
+**若要全域套用視訊設定檔：**
 
-* 导航到CRXDE Lite到以下节点： `/content/dam/jcr:content`. 添加属性 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 选择 **[!UICONTROL 全部保存]**.
+* 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`. 新增屬性 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 並選取 **[!UICONTROL 全部儲存]**.
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
-* 您可以 [监视视频配置文件处理作业的进度](#monitoring-the-progress-of-an-encoding-job).
+* 您可以 [監視視訊設定檔處理工作的進度](#monitoring-the-progress-of-an-encoding-job).
 
-## 监控视频配置文件处理作业的进度 {#monitoring-the-progress-of-an-encoding-job}
+## 監視視訊設定檔處理工作的進度 {#monitoring-the-progress-of-an-encoding-job}
 
-将显示处理指示器（或进度条），以便您能够直观地监视视频配置文件处理作业的进度。
+系統會顯示處理指示器（或進度列），讓您以視覺化方式監視「視訊設定檔」處理工作的進度。
 
-您还可以查看 `error.log` 文件，用于监视编码作业的进度，查看编码是否完成，或查看任何作业错误。 的 `error.log` 在 `logs` 安装Experience Manager实例的文件夹。
+您也可以檢視 `error.log` 檔案來監視編碼工作的進度、檢視編碼是否已完成或檢視任何工作錯誤。 此 `error.log` 可在以下位置找到： `logs` 安裝Experience Manager執行個體的資料夾。
 
-## 将视频配置文件从文件夹删除 {#removing-a-video-profile-from-folders}
+## 從資料夾中移除視訊設定檔 {#removing-a-video-profile-from-folders}
 
-当您将视频配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，对文件夹中已发生的文件的任何处理均将保持不变。
+當您從資料夾中移除視訊描述檔時，任何子資料夾都會自動繼承其父資料夾中描述檔的移除動作。 不過，在資料夾內發生的任何檔案處理作業都會維持不變。
 
-您可以从 **[!UICONTROL 工具]** ，或者如果您在文件夹中， **[!UICONTROL 文件夹设置]**.本节将介绍这两种将视频配置文件从文件夹删除的方法。
+您可以從內的資料夾中移除視訊描述檔 **[!UICONTROL 工具]** 功能表，或者如果您在資料夾中，請從 **[!UICONTROL 資料夾設定]**. 本節說明如何以兩種方式從資料夾中移除「視訊描述檔」。
 
-### 通过Profiles用户界面将视频配置文件从文件夹删除 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
+### 透過「設定檔」使用者介面從資料夾中移除視訊設定檔 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频配置文件]**.
-1. 选择要从一个或多个文件夹删除的视频配置文件。
-1. 选择 **[!UICONTROL 将配置文件从文件夹删除]** ，然后选择一个或多个要从中删除配置文件的文件夹，然后选择 **[!UICONTROL 删除]**.
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**.
+1. 選取您要從資料夾或多個資料夾中移除的視訊設定檔。
+1. 選取 **[!UICONTROL 從資料夾中移除設定檔]** 並選取您要用來從中移除設定檔的一個或多個資料夾，然後選取 **[!UICONTROL 移除]**.
 
-   您可以确认视频配置文件不再应用于文件夹，因为该名称不再显示在文件夹名称的下方。
+   您可以確認視訊設定檔不再套用至資料夾，因為資料夾名稱下方不再有該名稱。
 
-### 通过属性将视频配置文件从文件夹删除 {#removing-video-profiles-from-folders-by-way-of-properties}
+### 透過「屬性」從資料夾中移除視訊設定檔 {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. 选择Experience Manager徽标并导航到 **[!UICONTROL 资产]** ，然后转到要从中删除视频配置文件的文件夹。
-1. 在文件夹中，选择复选标记以将其选中，然后选择 **[!UICONTROL 属性]**.
-1. 选择 **[!UICONTROL 视频配置文件]** 选项卡，选择 **[!UICONTROL 无]** 从下拉菜单中，选择 **[!UICONTROL 保存并关闭]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 資產]** 然後移至您要從中移除視訊設定檔的資料夾。
+1. 在資料夾中，選取核取記號以選取資料夾，然後選取 **[!UICONTROL 屬性]**.
+1. 選取 **[!UICONTROL 視訊設定檔]** 標籤並選取 **[!UICONTROL 無]** 從下拉式選單中選取 **[!UICONTROL 儲存並關閉]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。

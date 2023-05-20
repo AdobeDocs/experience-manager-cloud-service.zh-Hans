@@ -11,7 +11,7 @@ ht-degree: 27%
 
 # 从源中提取内容 {#extracting-content}
 
-## 内容传输工具中的提取流程 {#extraction-process}
+## 內容轉移工具中的提取程式 {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
@@ -23,37 +23,37 @@ ht-degree: 27%
 请按照以下步骤从内容传输工具中提取迁移集：
 
 >[!NOTE]
->如果将Amazon S3、Azure数据存储或文件数据存储用作数据存储类型，则可以运行可选的预复制步骤以显着加快提取阶段。 预复制步骤对于第1次完全提取和摄取最有效。 请参阅 [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 以了解更多详细信息。
+>如果使用Amazon S3、Azure資料存放區或檔案資料存放區作為資料存放區型別，您可以執行選用的預先複製步驟，大幅加快擷取階段。 預先複製步驟對第1次完整擷取和擷取最為有效。 請參閱 [處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 以取得更多詳細資料。
 
-1. 从中选择迁移集 **内容传输** 向导，单击 **Extract** 开始提取。
+1. 選取移轉集來源 **內容轉移** 精靈並按一下 **Extract** 以開始擷取。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!IMPORTANT]
    >
-   >确保提取键值有效且未接近其过期时间。 如果提取键值接近过期日期，您可以通过选择迁移集并单击属性来续订提取键值。 单击 **续订**. 这会将您转到Cloud Acceleration Manager，您可以在其中单击 **复制提取键值**. 每次您点击 **复制提取键值**，则会生成一个新的提取键值，其有效期为创建之日起14天。
+   >請確定擷取金鑰有效，且未接近其到期日。 如果快到期了，您可以選取移轉集並按一下「屬性」，以續約擷取金鑰。 按一下 **續約**. 這會將您帶到Cloud Acceleration Manager，您可以在其中按一下 **複製擷取金鑰**. 每次您按一下 **複製擷取金鑰**，會產生新的擷取金鑰，其有效期為從建立當日起的14天。
    >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-1. 此时将显示提取对话框。 单击 **Extract** 开始提取阶段。
+1. 此時會顯示「擷取」對話方塊。 按一下 **Extract** 以開始提取階段。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-   >您可以选择在提取阶段覆盖暂存容器。 如果 **覆盖暂存容器** 如果禁用，则它可以加快提取速度，以便在内容路径或包含版本设置未更改的情况下进行后续迁移。 但是，如果内容路径或包含版本设置已更改，则 **覆盖暂存容器** 应启用。
+   >您可以選擇在提取階段期間覆寫預備容器。 若 **覆寫暫存容器** 停用「 」，可在內容路徑或包含版本設定未變更時，加快後續移轉的擷取速度。 不過，如果內容路徑或包含版本設定已變更，則 **覆寫暫存容器** 應該已啟用。
 
-1. 的 **提取** 字段 **正在运行** 状态，指示提取正在进行中。
+1. 此 **摘取** 欄位現在顯示 **執行中** 狀態，表示擷取正在進行中。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   您可以单击 **查看进度** 以详细了解正在进行的提取。
+   您可以按一下 **檢視進度** 以取得進行中擷取的精細檢視。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   您还可以通过访问内容传输页面来监控从Cloud Acceleration Manager提取阶段的进度，并通过单击 **...** 然后 **查看详细信息**.
+   您也可以造訪「內容轉移」頁面，從Cloud Acceleration Manager監視提取階段進度，並按一下 **...** 然後開啟 **檢視詳細資料**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. 提取完成后，查看其他列，如 **来源** 和 **路径** 有关通过单击 **...** 然后 **查看详细信息** 以查看详细信息，包括提取每个步骤的持续时间。 在提取期间查看此对话框，以了解步骤的进展情况。
+1. 擷取完成後，請檢閱其他欄，例如 **來源** 和 **路徑** 如需您透過按一下來填入的移轉集詳細資訊 **...** 然後開啟 **檢視詳細資料** 以檢視詳細資訊，包括擷取每個步驟的持續時間。 在擷取期間檢視此對話方塊，以檢視步驟的進度。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
@@ -63,18 +63,18 @@ ht-degree: 27%
 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
 
 >[!NOTE]
->初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您已使用第一次完全提取的预复制步骤，则可以跳过对后续增补提取的预复制步骤（如果增补迁移集大小小于200GB），因为这可能会为整个过程添加时间。
->此外，必须从采用初始提取到运行增补提取时，不要更改现有内容的内容结构。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中限制此操作。
+>初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您已使用預先複製步驟進行第一次完整擷取，您可以略過預先複製以進行後續追加擷取（如果追加移轉集大小小於200GB），因為這樣可能會增加整個程式的時間。
+>此外，從初次擷取到執行追加擷取期間，現有內容的內容結構必須不會變更。 追加無法針對自初始擷取以來結構已變更的內容執行。 請務必在移轉程式期間限制此專案。
 
 完成提取流程后，可以使用增补提取方法传输增量内容。
 
 应遵循以下步骤：
 
-1. 导航到 **内容传输** 向导，然后选择要对其执行增补提取的迁移集。 单击&#x200B;**提取**&#x200B;以开始增补提取。
+1. 導覽至 **內容轉移** 精靈並選取您要執行追加提取的移轉集。 单击&#x200B;**提取**&#x200B;以开始增补提取。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. 的 **迁移集提取** 对话框。单击 **Extract**.
+1. 此 **移轉集擷取** 對話方塊隨即顯示。按一下 **Extract**.
 
    >[!IMPORTANT]
    >您应该禁用&#x200B;**在提取期间覆盖暂存容器**选项。
@@ -83,4 +83,4 @@ ht-degree: 27%
 
 ## 后续内容 {#whats-next}
 
-在内容传输工具中学习了从源提取内容后，您现在便可以学习内容传输工具中的摄取流程。 请参阅 [将内容摄取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 了解如何从内容传输工具中摄取迁移集。
+一旦您學習了在「內容轉移工具」中從來源擷取內容，您現在就可以在「內容轉移工具」中學習擷取程式了。 另請參閱 [將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以瞭解如何從「內容轉移工具」內嵌移轉集。

@@ -1,6 +1,6 @@
 ---
-title: App Builder存储库
-description: 了解App Builder应用程序的状态和文件存储库。
+title: App Builder儲存體程式庫
+description: 瞭解App Builder應用程式的狀態和檔案儲存程式庫。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,22 +16,22 @@ ht-degree: 0%
 
 ---
 
-# App Builder存储库
+# App Builder儲存體程式庫
 
-## 存储库简介
+## 儲存庫簡介
 
-了解App Builder存储选项，以及为何存储在App Builder应用程序中很重要。
+瞭解App Builder儲存選項，以及儲存在App Builder應用程式中為何重要。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
 
-## 使用状态存储库
+## 使用狀態儲存程式庫
 
-了解如何在App Builder应用程序中安装状态存储库，并使用它来管理状态。
+瞭解如何在App Builder應用程式中安裝狀態儲存程式庫，並使用它來管理狀態。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
 
-## 使用文件存储库
+## 使用檔案儲存庫
 
-了解如何在App Builder应用程序中安装文件存储库以保存、检索和删除数据。
+瞭解如何在App Builder應用程式中安裝檔案儲存程式庫，以儲存、擷取和刪除資料。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)

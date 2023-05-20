@@ -1,25 +1,25 @@
 ---
 title: 投放 Dynamic Media 资源
-description: 通过Dynamic Media，您可以选择多个选项来将Dynamic Media资产（视频和图像）交付到您的网站。
+description: 透過Dynamic Media，您有數個選項可將Dynamic Media資產（包括影片和影像）傳送至您的網站。
 contentOwner: Rick Brough
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 19%
+ht-degree: 12%
 
 ---
 
 
 # 投放 Dynamic Media 资源{#delivering-dynamic-media-assets}
 
-如何交付Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
+如何傳遞Dynamic Media資產（包括影片和影像）取決於網站的實作方式。
 
-使用Dynamic Media，您有以下几个选项：
+Dynamic Media提供幾個選項：
 
-* 如果您的网站托管在Adobe Experience Manager上，则您希望将Dynamic Media资产直接添加到您的页面。
-* 如果您的网站未Experience Manager，请参阅 [传送Dynamic Media资产](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) 在触屏用户界面中。
+* 如果您的網站託管於Adobe Experience Manager上，那麼您想要直接將Dynamic Media資產新增至您的頁面。
+* 如果您的網站不在Experience Manager上，請參閱 [傳遞Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) 觸控式使用者介面中的。
 
-有关更多信息，请参阅下列主题：
+如需詳細資訊，請參閱下列主題：
 
 * [将 Dynamic Media 资源添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 

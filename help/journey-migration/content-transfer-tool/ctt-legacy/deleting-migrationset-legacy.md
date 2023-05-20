@@ -1,6 +1,6 @@
 ---
-title: 删除内容传输工具中的迁移集（旧版）
-description: 在内容传输工具中删除迁移集
+title: 刪除內容轉移工具中的移轉集（舊版）
+description: 在內容轉移工具中刪除移轉集
 hide: true
 hidefromtoc: true
 exl-id: a307b085-681a-46b5-9044-b7c14a1b0119
@@ -11,15 +11,15 @@ ht-degree: 33%
 
 ---
 
-# 删除迁移集（旧版） {#delete-migration-set}
+# 刪除移轉集（舊版） {#delete-migration-set}
 
 您可以从&#x200B;*概述*&#x200B;页面删除迁移集。
 
-## 从内容传输工具中删除迁移集的步骤 {#deleting-migration-set}
+## 從內容轉移工具刪除移轉集的步驟 {#deleting-migration-set}
 
 应遵循以下步骤：
 
-1. 导航到 **内容传输** 向导，选择要删除的迁移集，然后单击 **删除** 中。
+1. 導覽至 **內容轉移** 精靈並選取您要刪除的移轉集，然後按一下 **刪除** 動作列中的。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

@@ -1,103 +1,103 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 版的发行说明。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2021.1.0发行说明。”'
+description: '"[!DNL Adobe Experience Manager] 2021.1.0版as a Cloud Service發行說明」。'
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 14%
+ht-degree: 23%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 版的发行说明  {#release-notes}
+# [!DNL Adobe Experience Manager]as a Cloud Service 版的发行说明 {#release-notes}
 
-以下部分概述了 [!DNL Experience Manager] as a Cloud Service。
+以下區段會概述以下專案的一般發行說明： [!DNL Experience Manager] as a Cloud Service。
 
 ## 发布日期 {#release-date}
 
-的发行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.1.0是2021年2月3日。
-以下版本(2021.2.0)将于2021年2月25日发布。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.1.0為2021年2月3日。
+下列版本(2021.2.0)將於2021年2月25日發行。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* **[内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:添加使用HTTP API添加/更新和删除内容片段变量的功能。
+* **[內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**：新增使用HTTP API新增/更新和刪除內容片段變體的功能。
 
-* **[用于内容片段交付的GraphQL API](/help/headless/graphql-api/content-fragments.md)**:能够使用GraphQL语法和基于内容片段模型的架构查询内容片段，以便以JSON格式输出。
+* **[用於內容片段傳送的GraphQL API](/help/headless/graphql-api/content-fragments.md)**：能夠使用GraphQL語法和根據內容片段模型的結構描述查詢內容片段，以產生JSON格式的輸出。
 
-* **[对GraphQL API请求的身份验证支持](/help/headless/security/authentication.md)**:能够使用服务器端API的访问令牌来验证GraphQL API请求。
+* **[GraphQL API要求的驗證支援](/help/headless/security/authentication.md)**：能夠使用伺服器端API的存取權杖來驗證GraphQL API請求。
 
-* 增强了GraphQL API的JSON输出，包括能够以JSON格式和区域设置输出富文本。
+* 增強GraphQL API的JSON輸出，包括輸出JSON格式和地區設定的豐富文字的功能。
 
-* 支持嵌套内容片段模型，以允许通过多行文本字段中的专用内容片段引用数据类型或内联的内容片段引用来创建嵌套的内容片段结构。
+* 對巢狀內容片段模型的支援，允許透過專用內容片段參考資料型別或內嵌在多行文字欄位中的內容片段參考來建立巢狀內容片段結構。
 
-* 内容片段模型数据类型中提供的其他验证规则，包括“唯一”、“必需”和“可翻译”。
+* 內容片段模式資料型別中可用的其他驗證規則，包括「唯一」、「必要」和「可翻譯」。
 
-* 能够标记内容片段模型，并允许在文件夹中按标记或路径创建策略的内容片段。
+* 標籤內容片段模型，以及允許在包含原則（依標籤或路徑）的資料夾中建立內容片段的功能。
 
-* 增强了内容片段编辑器中的可用性，包括发布操作和片段所基于模型的显示。
+* 內容片段編輯器中的可用性增強，包括發佈動作和顯示片段所依據的模型。
 
-* 能够直接在内容片段编辑器中预览JSON输出。
+* 直接在內容片段編輯器中預覽JSON輸出的功能。
 
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service] 扩展了智能标记功能，以支持基于文本的资产中的关键字和实体的识别。 文本将被标识、编入索引，并作为元数据提供，以改进搜索体验，而无需进行任何配置。 请参阅 [智能标记](/help/assets/smart-tags.md).
+* [!DNL Experience Manager] as a [!DNL Cloud Service] 擴充智慧標籤功能，以支援文字型資產中的關鍵字和實體識別。 無需任何設定，即可識別文字、編制其索引並使其成為中繼資料，以改善搜尋體驗。 另請參閱 [智慧標籤](/help/assets/smart-tags.md).
 
-* 现在支持MXF文件格式。 请参阅 [支持的文件格式](/help/assets/file-format-support.md#video-formats).
+* 現在支援MXF檔案格式。 另請參閱 [支援的檔案格式](/help/assets/file-format-support.md#video-formats).
 
-## Adobe Experience Manager商务as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 产品体验管理：资产和体验片段新增了“商务”属性选项卡。 利用此选项卡，可将产品/类别关联到资产和体验片段。 选项卡还显示链接的产品/类别的实时数据，以及在产品控制台中显示详细信息的链接。
+* 產品體驗管理：資產和體驗片段的新「商務」屬性。 此索引標籤可讓您將產品/類別連結到資產和體驗片段。 此索引標籤也會顯示連結的產品/類別的即時資料，以及在產品主控台中顯示詳細資訊的連結。
 
-* 已发布CIF Venia参考网站 — 2021.02.02，其中包括最新的CIF核心组件版本v1.7.0。请参阅 [CIF Venia参考网站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 以了解更多详细信息。
+* 已發行CIF Venia Reference Site - 2021.02.02，其中包含最新CIF Core Components v1.7.0版。請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 以取得更多詳細資料。
 
-* 已发布CIF核心组件v1.7.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) 以了解更多详细信息。
+* 已發行CIF Core Components v1.7.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) 以取得更多詳細資料。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 发布日期 {#release-date-cm}
 
-AEM 2021.1.0版中Cloud Manager的发布日期是2021年1月14日。
+AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 的发布日期是 2021 年 1 月 14 日。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 
-* 资产生产实例有时可能会在 **环境** 详细信息页面 *待定* 而不允许用户执行任何操作。
+* 资产生产实例有时会在&#x200B;**环境**&#x200B;详情页面中显示 Brand Portal 的状态为&#x200B;*等待*，此时不允许用户采取任何操作。
 
-* 从Cloud Manager触发解除休眠时，有时即使成功启动解除休眠，也会显示失败消息。
+* 从 Cloud Manager 触发解除休眠时，有时即使成功启动解除休眠，也会显示失败消息。
 
-* 解决了在环境创建或删除中遇到的极少数失败案例。
+* 在创建或删除环境时遇到的罕见故障已得到解决。
 
 ## 代码重构工具 {#code-refactoring-tools}
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 已发布新版AIO-CLI插件。 此插件的最新版本包括针对AEM Dispatcher Converter和Repository Modernizer的错误修复，并且还支持新的实用程序 — 索引转换器。 请参阅 [统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 了解有关此插件的更多信息。
+* 新版AIO-CLI外掛程式已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，並支援新的公用程式Index Converter。 請參閱 [整合式體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 以進一步瞭解此外掛程式。
 
-* 索引转换器是一个实用程序，可用于将客户的自定义OAK索引定义转换为AEMas a Cloud Service兼容的OAK索引定义。 请参阅 [索引转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 以了解更多详细信息。
+* Index Converter公用程式可將客戶的自訂OAK索引定義轉換為與AEMas a Cloud Service相容的OAK索引定義。 請參閱 [索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 以取得更多詳細資料。
 
-* 向 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 创建单独的资源包 `ui.config` 以包含所有OSGi配置。
+* 新增功能至 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 會建立個別的封裝 `ui.config` 以包含所有OSGi設定。
 
 ### 错误修复 {#crt-bug-fixes}
 
-* 对AEM Dispatcher Converter和Repository Modernizer工具进行了若干错误修复。 请参阅 [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 和 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* 對AEM Dispatcher Converter和Repository Modernizer工具進行的多項錯誤修正。 請參閱 [AEM Dispatcher轉換工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 和 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
-## AEMas a Cloud Service基础 {#aem-as-a-cloud-service-foundation}
+## AEMas a Cloud Service基礎 {#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 服务器到服务器经过身份验证的API调用 — 生成相应的访问令牌，以便在外部应用程序和AEMas a Cloud Service环境之间进行经过身份验证的服务器到服务器API调用。 通过阅读了解更多信息 [文档](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 或通过咨询 [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
+* 伺服器對伺服器驗證的API呼叫 — 產生適當的存取權杖，以在您的外部應用程式和AEMas a Cloud Service環境之間執行經過驗證的伺服器對伺服器API呼叫。 閱讀以瞭解更多資訊 [說明檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 或透過諮詢 [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
 ### SDK 内部版本分析程序 {#sdk-build-analyzers}
 
 AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在使用 Cloud Manager 部署到云环境之前，在本地开发期间发现问题。
 
-为此版本添加了两个新分析程序：
+已為此版本新增兩個新分析器：
 
-* 重点分析仪
-* 束 — nativecode
+* repoinit分析器
+* bundle-nativecode
 
 有关更多信息，请参阅此文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing)。
 
@@ -109,6 +109,6 @@ AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中
 
 ### [!DNL Content Transfer Tool] 的新增功能 {#what-is-new-ctt}
 
-* 内容传输工具 — 用户映射工具中新增了功能和用户界面。 此功能会自动将现有用户和组映射到其AdobeIdentity Management系统ID，以将其作为内容迁移活动的一部分。 请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 以了解更多详细信息。
-* 内容传输工具现在可迁移迁移集中引用的所有组和用户，包括子项。
-* 允许用户在 `/etc` 创建迁移集时。
+* 內容轉移工具新增功能和UI — 使用者對應工具。 此功能會在內容移轉活動中，自動將現有的使用者和群組對應至其AdobeIdentity Management系統ID。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 以取得更多詳細資料。
+* 內容轉移工具現在會移轉在移轉集內參考的所有群組和使用者（包括子項）。
+* 允許使用者選取底下的特定路徑 `/etc` 建立移轉集時。

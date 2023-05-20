@@ -3,7 +3,7 @@ title: 为 Headless 内容配置翻译规则
 description: 了解如何定义翻译规则，标识要翻译的内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: 了解如何使用 AEM 站点主题来自定义站点的样式和�
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
+source-git-commit: a77c31ebfce01834325bfdb806793dcd8ba169d4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 100%

@@ -1,6 +1,6 @@
 ---
-title: 内容自动化以实现Creative Cloud集成
-description: 使用Creative Cloud集成生成资产的变体
+title: Creative Cloud整合的內容自動化
+description: 使用Creative Cloud整合產生資產的變體
 contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
@@ -8,107 +8,107 @@ exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# 使用生成资产的变体 [!DNL Adobe Creative Cloud] 集成 {#content-automation}
+# 使用以下專案產生資產的變體： [!DNL Adobe Creative Cloud] 整合 {#content-automation}
 
-内容自动附加组件集成 [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 和 [!DNL Adobe Creative Cloud] API，用于创意地大规模处理资产。 [!DNL Experience Manager] 使用基于云的 [资产微服务](/help/assets/asset-microservices-overview.md) 使用 [!DNL Adobe Creative Cloud] 功能并自动化资产创建和媒体处理。
+內容自動化附加元件整合 [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 和 [!DNL Adobe Creative Cloud] API可大規模以創意方式處理您的資產。 [!DNL Experience Manager] 使用雲端型 [資產微服務](/help/assets/asset-microservices-overview.md) 以使用 [!DNL Adobe Creative Cloud] 並自動化資產的建立和媒體處理。
 
-在中编辑资产 [!DNL Adobe Photoshop] 和 [!DNL Adobe Lightroom]，则无需从下载资产 [!DNL Experience Manager Assets]，然后再次对其进行编辑和上传。 您可以在 [!DNL Experience Manager]，将配置文件应用到文件夹，然后将资产上传到该文件夹。 您上传的资产会根据处理配置文件进行重新处理，您会获得这些资产的变体。 一致且轻松的批量处理可节省手动工作并提高内容速度，而无需卓越的创作技能。 此外，开发人员和合作伙伴还可以通过直接访问这些API来扩展资产微服务，并包含自定义逻辑。
+若要編輯中的資產 [!DNL Adobe Photoshop] 和 [!DNL Adobe Lightroom]，您不必從下載資產 [!DNL Experience Manager Assets]，再次編輯和上傳。 您可在以下位置建立和設定處理設定檔： [!DNL Experience Manager]，將設定檔套用至資料夾，然後上傳資產至資料夾。 系統會根據處理設定檔重新處理您上傳的資產，而您會得到這些資產的變數。 一致且輕鬆的大量處理可節省手動工作並提升內容速度，也無需卓越的創意技巧。 此外，開發人員和合作夥伴也可以透過直接存取這些API來擴充資產微服務，並包含自訂邏輯。
 
-用户可以创建处理配置文件以自动处理其资产的以下创意操作：
+使用者可以建立處理設定檔，以對其資產自動執行下列創意操作：
 
-* **自动色调**:利用人工智能对图像内容进行分析，并根据图像的独特属性智能地进行光和颜色校正。
+* **自動色調**：使用人工智慧來分析影像內容，並根據影像的獨特屬性聰明地校正光源和色彩。
 
-* **自动直立**:使用人工智能来分析图像的内容并纠正图像中的偏斜透视。 例如，创建水平视线。
+* **自動直立**：使用人工智慧來分析影像內容並修正影像中的傾斜透視。 例如，建立層級視野。
 
-   ![自动色调](/help/assets/assets/content-automation-autotone.png)
+   ![自動色調](/help/assets/assets/content-automation-autotone.png)
 
-   *图：自动调色和自动拉直有助于改善倾斜的图像。*
+   *圖：自動色調和自動拉直有助於改善傾斜影像。*
 
-* **Lightroom预设**:对图像应用用户定义的外观，以使用自定义预设获得一致的外观。
+* **Lightroom預設集**：將使用者定義的外觀套用至影像，以使用自訂的預設集取得一致的外觀。
 
-   ![Lightroom预设](/help/assets/assets/content-automation-lrpresets.png)
+   ![Lightroom預設集](/help/assets/assets/content-automation-lrpresets.png)
 
-   *图：Adobe Lightroom预设，可以一致地提高许多图像的图像质量。*
+   *圖：Adobe Lightroom預設集，可透過一致的方式改善許多影像的影像品質。*
 
-* **图像剪切**:使用人工智能在显着对象周围创建选择并使用单个命令删除背景。
+* **影像挖剪圖案**：使用人工智慧在主要物件周圍建立選取範圍，並使用單一命令移除背景。
 
-   ![移除背景并从照片中剪切图像](/help/assets/assets/content-automation-backgroundremove.png)
+   ![移除背景並從像片中剪下影像](/help/assets/assets/content-automation-backgroundremove.png)
 
-* **图像蒙版**:使用人工智能通过单个命令在显着对象周围创建蒙版。
+* **影像遮色片**：使用人工智慧透過單一命令在主要物件周圍建立遮色片。
 
-   ![使用AI掩盖图像](/help/assets/assets/content-automation-mask.png)
+   ![使用AI遮色影像](/help/assets/assets/content-automation-mask.png)
 
-* **Photoshop操作**:应用一系列 [!DNL Adobe Photoshop] 对文件或批量文件执行任务。
+* **Photoshop動作**：套用一系列 [!DNL Adobe Photoshop] 將任務移至檔案或批次檔案。
 
-   ![Photoshop操作](/help/assets/assets/content-automation-psactions.png)
+   ![Photoshop動作](/help/assets/assets/content-automation-psactions.png)
 
-* **智能对象替换**:通过允许您交换图像，同时保留在PSD文件中应用的所有效果和调整来大规模个性化。
+* **智慧型物件取代**：可讓您交換影像，同時保留PSD檔案內套用的所有效果和調整，以大規模個人化。
 
-   ![智能替换对象](/help/assets/assets/content-automation-objectreplace.png)
+   ![聰明地取代物件](/help/assets/assets/content-automation-objectreplace.png)
 
-## 为AEMas a Cloud Service程序启用内容自动化 {#enable-content-automation}
+## 為AEMas a Cloud Service程式啟用內容自動化 {#enable-content-automation}
 
-要使用Cloud Manager为AEMas a Cloud Service程序启用“内容自动化”附加组件，请执行以下操作：
+若要使用Cloud Manager為AEMas a Cloud Service程式啟用Content Automation附加元件：
 
-1. 请联系您的客户代表以授权使用内容自动化加载项。
-1. 访问Cloud Manager，然后使用组织选择器切换到您的组织。
-1. 单击 **[!UICONTROL 添加程序]** 并指定程序名称。
+1. 請聯絡您的客戶代表以授權Content Automation附加元件。
+1. 存取Cloud Manager並使用組織選擇器切換到您的組織。
+1. 按一下 **[!UICONTROL 新增計畫]** 並指定程式名稱。
 1. 单击&#x200B;**[!UICONTROL “继续”]**。
-1. 展开 **[!UICONTROL 资产]** 选择 **[!UICONTROL 内容自动化]**.
+1. 展開 **[!UICONTROL 資產]** 並選取 **[!UICONTROL 內容自動化]**.
 1. 单击&#x200B;**[!UICONTROL 创建]**。
-1. 运行管道以 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. 執行管道至 [將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
-如果您需要在Cloud Manager中向现有AEMas a Cloud Service程序添加“内容自动化”加载项：
+如果您需要將Content Automation附加元件新增到Cloud Manager中的現有AEMas a Cloud Service計畫：
 
-1. 在项目卡上单击…… 。
+1. 按一下計畫卡片上的…… 。
 
-1. 选择 **[!UICONTROL 编辑程序]** 然后选择 **[!UICONTROL 解决方案和附加组件]** 选项卡。
+1. 選取 **[!UICONTROL 編輯計畫]** 然後選取 **[!UICONTROL 解決方案和附加元件]** 標籤。
 
-1. 展开 **[!UICONTROL 资产]** 选择 **[!UICONTROL 内容自动化]**.
+1. 展開 **[!UICONTROL 資產]** 並選取 **[!UICONTROL 內容自動化]**.
 1. 单击&#x200B;**[!UICONTROL 更新]**。
-1. 运行管道以 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. 執行管道至 [將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
-## 使用处理配置文件批量编辑您的创意资产 {#process-assets}
+## 使用處理設定檔來大量編輯您的創意資產 {#process-assets}
 
-要使用处理配置文件自动创建变体，请执行以下步骤：
+若要使用處理設定檔來自動建立變化，請遵循下列步驟：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**.
+1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**.
 
-1. 选择 **[!UICONTROL 创建]**，然后指定 **[!UICONTROL 名称]**.
+1. 選取 **[!UICONTROL 建立]**，並指定 **[!UICONTROL 名稱]**.
 
-1. 选择 **[!UICONTROL 创意]** 选项卡，指定输出文件夹，选择 **[!UICONTROL 新增]** 添加创作配置。
+1. 選取 **[!UICONTROL Creative]** 索引標籤，指定輸出資料夾，選取 **[!UICONTROL 新增]** 以新增創意設定。
 
-1. 提供 **[!UICONTROL 演绎版名称]** （或输出名称）、 **[!UICONTROL 扩展]** （或文件类型），选择 **[!UICONTROL 质量]** （或输出参数），选择 **[!UICONTROL 包括]** 和 **[!UICONTROL 排除]** MIME类型列表（或输入资产过滤器），然后选择所需的创作操作。
+1. 提供 **[!UICONTROL 轉譯名稱]** （或輸出名稱）， **[!UICONTROL 副檔名]** （或檔案型別），選取 **[!UICONTROL 品質]** （或輸出引數），選取 **[!UICONTROL 包含]** 和 **[!UICONTROL 排除]** MIME型別清單（或輸入資產篩選器），並選取所需的創意操作。
 
-   ![[!UICONTROL 创意] 选项卡 [!UICONTROL 处理配置文件]](assets/creative-processing-profile.png)
+   ![[!UICONTROL Creative] 定位於 [!UICONTROL 處理設定檔]](assets/creative-processing-profile.png)
 
-1. 某些操作需要额外的参数（资产）。 根据需要为这些额外参数提供值。
+1. 某些作業需要額外的引數（資產）。 視需要提供這些額外引數的值。
 
-1. 将更多创意操作添加为同一处理配置文件的一部分或保存配置文件。
+1. 將更多創意操作新增為相同處理設定檔的一部分，或儲存設定檔。
 
-1. 将处理配置文件应用到文件夹。 在文件夹的 **[!UICONTROL 属性]** 页面，选择 **[!UICONTROL 资产处理]**，然后选择要应用的处理用户档案。
+1. 將處理設定檔套用至資料夾。 在資料夾的 **[!UICONTROL 屬性]** 頁面，選取 **[!UICONTROL 資產處理]**，並選取要套用的處理設定檔。
 
-在将处理配置文件应用到DAM文件夹后，此文件夹中上传或更新的所有资产，除了标准处理之外，还会执行定义的操作。 子文件夹将继承与在父文件夹上应用的配置文件相同。 用户可以覆盖此继承。
+將處理設定檔套用至DAM資料夾後，此資料夾中上傳或更新的所有資產除了執行標準處理外，還會執行定義的操作。 子資料夾會繼承與套用至父資料夾的相同設定檔。 使用者可以覆寫此繼承。
 
-要处理现有资产，请选择资产，然后选择 **[!UICONTROL 重新处理]** 选项，然后选择所需的处理配置文件。
+若要處理現有資產，請選取資產，然後選取 **[!UICONTROL 重新處理]** 選項，然後選取所需的處理設定檔。
 
 ## 提示和限制 {#limitations-best-practices}
 
-* [!DNL Experience Manager] 将资产处理限制为每个环境每分钟300个请求，每个组织每分钟700个请求。
-* 文件大小限制为4 GB [!DNL Adobe Photoshop] API操作，1 GB用于 [!DNL Adobe Lightroom] 操作。
+* [!DNL Experience Manager] 將資產處理限製為每個環境每分鐘300個請求，每個組織每分鐘700個請求。
+* 檔案大小限製為4 GB [!DNL Adobe Photoshop] API操作，以及1 GB [!DNL Adobe Lightroom] 作業。
 
 **另请参阅**
 
-* [翻译资产](translate-assets.md)
+* [翻译资源](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [资产支持的文件格式](file-format-support.md)
+* [资源支持的文件格式](file-format-support.md)
 * [搜索资源](search-assets.md)
-* [连接的资产](use-assets-across-connected-assets-instances.md)
-* [资源报表](asset-reports.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
 * [元数据架构](metadata-schemas.md)
 * [下载资源](download-assets-from-aem.md)
 * [管理元数据](manage-metadata.md)
@@ -118,7 +118,7 @@ ht-degree: 3%
 
 >[!MORELIKETHIS]
 >
->* [通过处理配置文件配置和使用资产微服务](/help/assets/asset-microservices-configure-and-use.md).
+>* [透過處理設定檔來設定和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md).
 >* [ [!DNL Experience Manager] 与 集成 [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
->* [使用资产微服务获取和处理资产：概述](/help/assets/asset-microservices-overview.md).
+>* [使用資產微服務進行資產擷取和處理：概覽](/help/assets/asset-microservices-overview.md).
 

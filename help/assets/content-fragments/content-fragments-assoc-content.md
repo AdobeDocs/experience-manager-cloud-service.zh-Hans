@@ -1,23 +1,23 @@
 ---
-title: 关联内容（资产 — 内容片段）
-description: 了解AEM关联内容功能如何提供连接，以便可以选择将资产与片段一起使用。
+title: 關聯內容（資產 — 內容片段）
+description: 瞭解AEM關聯內容功能如何提供連線，以便可以選擇將資產與片段一起使用。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
 # 关联的内容{#associated-content}
 
-AEM关联内容功能提供了连接，以便在将资产添加到内容页面时，可以选择将资产与片段一起使用。 这样，您就可以灵活地通过 [提供在页面上使用内容片段时要访问的资产范围，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 同时有助于缩短搜索相应资产所需的时间。
+AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時，可以選擇將資產與片段一起使用。 這可透過以下方式為您的Headless內容傳遞提供靈活性 [提供在頁面上使用內容片段時可存取的一系列資產，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 同時有助於縮短搜尋適當資產所需的時間。
 
 ## 添加关联内容 {#adding-associated-content}
 
 >[!NOTE]
 >
->添加的方法有多种 [可视资产（例如，图像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 到片段和/或页面。
+>可以通过多种方法向片段和/或页面中添加[可视资产（例如图像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)。
 
 要建立关联，您首先需要 [将媒体资产添加到收藏集](/help/assets/manage-collections.md)。 完成该操作后，您可以：
 

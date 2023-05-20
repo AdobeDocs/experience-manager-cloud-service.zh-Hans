@@ -81,6 +81,6 @@ ht-degree: 96%
 
 ## 其他资源 {#additional-resources}
 
-如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
+如果您想要超越入門歷程的內容，以下是額外的選用資源。
 
 [页面创作快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md) – 从这里开始，快速了解 AEM 中的创作基础知识。[Headless 创作历程](/help/journey-headless/author/overview.md) – 如果您想创作 Headless 内容，请按照本指导性介绍。

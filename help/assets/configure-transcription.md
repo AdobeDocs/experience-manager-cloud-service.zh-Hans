@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 96%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 转录是使用语音识别技术将音频或视频文件中的音频转换为文本（语音到文本）的过程。[!DNL Adobe Experience Manager Assets] 配置了 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的支持音频或视频文件中的口语文本转录。在[!DNL Experience Manager Assets] 中处理音频或视频资产时，转录服务会自动生成音频或视频资产的文本转录演绎版，并将其存储在原始资产所在的 Assets 存储库中的同一位置。[!DNL Experience Manager Assets] 转录服务允许营销人员通过增加文本内容的可发现性来有效管理其音频和视频内容，并通过支持可访问性和本地化来提高这些资产的 ROI。
 
-转录是口语内容的文本版本；例如，您在任何 OTT 平台上观看的电影通常都包括解说词或字幕，帮助您访问或使用其他语言的内容。或任何用于营销、学习或娱乐目的的音频或视频文件。这些体验从转录开始，然后根据需要进行格式化或翻译。当手动执行时，转录音频或视频是一个很耗时间且容易出错的过程。鉴于对音频视频内容的需求不断增加，扩展手动过程也是一个挑战。[!DNL Experience Manager Assets]使用 Azure 基于人工智能的转录，允许对音频和视频资产进行大规模处理，并生成文本转录（.vtt 文件）以及时间戳细节。除了 Assets，Dynamic Media 也支持转录功能。
+转录是口语内容的文本版本；例如，您在任何 OTT 平台上观看的电影通常都包括解说词或字幕，帮助您访问或使用其他语言的内容。或任何用于营销、学习或娱乐目的的音频或视频文件。这些体验从转录开始，然后根据需要进行格式化或翻译。当手动执行时，转录音频或视频是一个很耗时间且容易出错的过程。鉴于对音频视频内容的需求不断增加，扩展手动过程也是一个挑战。[!DNL Experience Manager Assets] 使用Azure的AI型轉錄，允許大規模處理音訊和視訊資產，並產生文字轉錄（.vtt檔案）和時間戳記詳細資料。 除了 Assets，Dynamic Media 也支持转录功能。
 
-转录功能在 [!DNL Experience Manager Assets] 中可以免费使用。但是，管理员需要用户的 Azure 凭据才能在[!DNL Experience Manager Assets]中配置转录服务。您还可以直接从 Microsoft® 获得 [试用凭证](https://azure.microsoft.com/en-us/pricing/details/media-services/)，体验 Assets 中的音频或视频转录功能。
+转录功能在 [!DNL Experience Manager Assets] 中可以免费使用。但是，管理員需要使用者的Azure憑證才能在中設定轉錄服務 [!DNL Experience Manager Assets]. 您还可以直接从 Microsoft® 获得 [试用凭证](https://azure.microsoft.com/en-us/pricing/details/media-services/)，体验 Assets 中的音频或视频转录功能。
 
 ## 转录先决条件 {#prerequisites}
 
@@ -100,7 +100,7 @@ ht-degree: 100%
 >
 >应用于文件夹的处理配置文件适用于整个树，但是，可以被应用于子文件夹的另一个配置文件覆盖。
 >
->将资产上载到文件夹时，Experience Manager 与包含文件夹的属性进行通信，以确定处理配置文件。如果未应用任何配置文件，则会检查层级中的父文件夹以确定要应用的处理配置文件。
+>將資產上傳至資料夾時，Experience Manager會與容納資料夾的屬性通訊，以識別處理設定檔。 如果未应用任何配置文件，则会检查层级中的父文件夹以确定要应用的处理配置文件。
 
 
 ## 生成音频或视频资产的转录 {#generate-transcription}
@@ -165,3 +165,18 @@ ht-degree: 100%
 ## 疑难解答提示 {#troubleshooting}
 
 使用相同的凭据（用于配置）登录 [!DNL Azure Media Services] 帐户以验证请求状态。如果您的请求未成功处理，请联系 [!DNL Azure] 支持。
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

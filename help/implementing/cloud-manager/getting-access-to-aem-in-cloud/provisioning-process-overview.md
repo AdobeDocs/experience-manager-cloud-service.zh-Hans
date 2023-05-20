@@ -2,7 +2,7 @@
 title: 配置过程 – 概述
 description: 配置过程 – 概述
 source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
 

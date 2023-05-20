@@ -1,6 +1,6 @@
 ---
-title: 资产分析
-description: 跟踪在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的用户评级和使用情况统计信息。
+title: 資產分析
+description: 追蹤協力廠商網站、行銷活動和Adobe創意解決方案中所使用影像的使用者評分和使用情況統計資料。
 contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
@@ -12,49 +12,49 @@ ht-degree: 11%
 
 ---
 
-# 资产分析 {#asset-insights}
+# 資產分析 {#asset-insights}
 
-| 版本 | 文章链接 |
+| 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-通过Adobe分析功能，您可以跟踪用户评级以及在第三方网站、营销活动和资产创意解决方案中使用的图像的使用情况统计信息。 它有助于深入了解图像的性能和受欢迎程度。
+Assets Insights功能可讓您追蹤用於協力廠商網站、行銷活動和Adobe創意解決方案之影像的使用者評分和使用情況統計資料。 它有助於提供影像效能和人氣的相關深入分析。
 
-资产分析可捕获用户活动详细信息，如图像的评级、点击次数和展示次数（图像在网站上加载的次数）。 它根据这些统计数据为图像分配分数。 您可以使用得分和效果统计信息来选择要包含在目录、营销活动等中的热门图像。 您甚至可以根据这些统计数据制定存档和许可证续订策略。
+Assets Insights會擷取使用者活動詳細資訊，例如影像的評分、點按和曝光次數（影像載入網站上的次數）。 系統會根據這些統計資料，將分數指派給影像。 您可以使用分數和效能統計資料來選取要包含在目錄、行銷活動等中的熱門影像。 您甚至可以根據這些統計資料制定封存和授權更新政策。
 
-要使资产分析能够从网站捕获图像的使用情况统计信息，您必须在网站代码中包含图像的嵌入代码。
+若要讓Assets Insights從網站擷取影像的使用狀況統計資料，您必須在網站程式碼中包含影像的內嵌程式碼。
 
-要让资产分析显示资产的使用情况统计信息，请首先配置功能，以从 [!DNL Adobe Analytics]. 有关详细信息，请参阅 [配置资产分析](#configure-asset-insights). 要使用此功能，请购买 [!DNL Adobe Analytics] 单独许可。
+若要讓Assets Insights顯示資產的使用狀況統計資料，請先設定功能以從中擷取報表資料 [!DNL Adobe Analytics]. 如需詳細資訊，請參閱 [設定資產分析](#configure-asset-insights). 若要使用此功能，請購買 [!DNL Adobe Analytics] 另外授權。
 
 >[!NOTE]
 >
->仅支持对图像提供分析。
+>僅支援並提供影像的深入分析。
 
-## 查看图像的统计信息 {#viewing-statistics-for-an-image}
+## 檢視影像的統計資料 {#viewing-statistics-for-an-image}
 
-您可以从元数据页面查看资产分析得分。
+您可以從中繼資料頁面檢視Assets Insights分數。
 
-1. 从Assets用户界面中，选择图像，然后单击 **[!UICONTROL 属性]** 中。
-1. 在属性页面中，单击 **[!UICONTROL 分析]**.
-1. 在 **[!UICONTROL 分析]** 选项卡。 的 **[!UICONTROL 得分]** 部分介绍资产的资产使用总数和性能存储。
+1. 從「資產」使用者介面中，選取影像，然後按一下 **[!UICONTROL 屬性]** （從工具列）。
+1. 在「屬性」頁面中，按一下 **[!UICONTROL 深入分析]**.
+1. 在中檢閱資產的使用方式詳細資訊 **[!UICONTROL 深入分析]** 標籤。 此 **[!UICONTROL 分數]** 區段說明資產的資產使用總量和效能損失。
 
-   使用情况分数描述了资产在各种解决方案中使用的次数。
+   使用分數說明資產在各種解決方案中的使用次數。
 
-   的 **[!UICONTROL 展示次数]** score是资产在网站上加载的次数。 显示在 **[!UICONTROL 点击次数]** 是点击资产的次数。
+   此 **[!UICONTROL 曝光次數]** score是資產在網站上載入的次數。 以下顯示的數字： **[!UICONTROL 點按次數]** 是資產的點按次數。
 
-1. 查看 **[!UICONTROL 使用情况统计信息]** 部分以了解资产所属的实体以及最近使用过的创意解决方案。 使用率越高，资产在用户中受欢迎的可能性就越大。 使用情况数据显示在以下标题下：
+1. 檢閱 **[!UICONTROL 使用狀況統計資料]** 區段，以瞭解資產所屬的實體，以及最近使用過資產的創意解決方案。 使用量越高，該資產在使用者中受歡迎的可能性就越大。 使用情況資料會顯示在下列標題下：
 
-   * **[!UICONTROL 资产]**:资产属于收藏集或复合资产的一部分的次数。
-   * **[!UICONTROL Web和移动设备]**:资产成为网站和应用程序一部分的次数。
-   * **[!UICONTROL 社交]**:资产在其他解决方案(如 [!DNL Adobe Campaign].
-   * **[!UICONTROL 电子邮件]**:资产在电子邮件促销活动中使用的次数。
+   * **[!UICONTROL 資產]**：資產成為集合或複合資產一部分的次數。
+   * **[!UICONTROL 網頁與行動]**：資產屬於網站和應用程式的次數。
+   * **[!UICONTROL 社交]**：資產在其他解決方案中的使用次數，例如 [!DNL Adobe Campaign].
+   * **[!UICONTROL 電子郵件]**：資產在電子郵件行銷活動中的使用次數。
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >由于资产分析功能通常从 [!DNL Adobe Analytics] 解决方案部分可能会定期显示最新数据。 显示数据的时间段取决于资产分析为检索Analytics数据而运行的获取操作的计划。
+   >因為Assets Insights功能通常會從擷取解決方案資料 [!DNL Adobe Analytics] 解決方案區段可能不會定期顯示最新資料。 資料顯示的時間長度取決於Assets Insights為擷取Analytics資料而執行的擷取作業排程。
 
 1. 要以图形方式查看一段时间内资产的性能统计信息，请在&#x200B;**[!UICONTROL 性能统计信息]**&#x200B;部分中选择时间段。包括点击次数和印象在内的详细信息将显示为图形的趋势线。
 
@@ -62,19 +62,19 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >与“解决方案”部分中的数据不同，“性能统计”部分显示最新的数据。
+   >與「解決方案」段落中的資料不同，「效能統計資料」段落會顯示最新的資料。
 
-1. 要获取您包含在网站中的资产的嵌入代码以获取性能数据，请单击 **[!UICONTROL 获取嵌入代码]** 资产缩略图下方。 <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. 若要取得您包含在網站中資產的內嵌程式碼，以取得效能資料，請按一下 **[!UICONTROL 取得內嵌程式碼]** 在資產縮圖下方。 <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-## 查看图像的聚合统计信息 {#viewing-aggregate-statistics-for-images}
+## 檢視影像的彙總統計資料 {#viewing-aggregate-statistics-for-images}
 
 您可以使用&#x200B;**[!UICONTROL 分析视图]**&#x200B;同时查看文件夹中所有资产的分数。
 
-1. 在Assets用户界面中，导航到要查看其分析的资产所在的文件夹。
-1. 单击 **[!UICONTROL 布局]** 选项，然后选择 **[!UICONTROL 分析视图]**.
-1. 页面会显示资产的使用情况分数。 比较各个资产的评级并进行分析。
+1. 在「資產」使用者介面中，導覽至包含您要檢視其見解的資產的資料夾。
+1. 按一下 **[!UICONTROL 版面]** 選項，然後選擇 **[!UICONTROL 深入分析檢視]**.
+1. 頁面會顯示資產的使用情況分數。 比較各種資產的評等並得出深入見解。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
@@ -90,51 +90,51 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## 配置资产分析 {#configure-asset-insights}
+## 設定資產分析 {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] 从获取第三方网站使用的数字资产的使用情况数据 [!DNL Adobe Analytics]. 要使资产分析能够检索此数据并生成分析，请首先配置该功能以与 [!DNL Adobe Analytics].
+[!DNL Experience Manager Assets] 從擷取有關協力廠商網站使用的數位資產的使用資料 [!DNL Adobe Analytics]. 若要啟用Assets Insights以擷取此資料並產生深入分析，請先設定要與整合的功能 [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
->仅支持并提供图像分析。
+>僅支援並為影像提供深入分析。
 
-1. 在 [!DNL Experience Manager]，单击 **[!UICONTROL 工具]** > **[!UICONTROL 资产]**.
+1. 在 [!DNL Experience Manager]，按一下 **[!UICONTROL 工具]** > **[!UICONTROL 資產]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. 单击&#x200B;**[!UICONTROL 分析配置]**&#x200B;卡。
 
-1. 有关Analytics Web服务访问信息，请转到 **[!UICONTROL Analytics]** > **[!UICONTROL 管理员]** > **[!UICONTROL 管理工具]** > **[!UICONTROL 公司设置]** > **[!UICONTROL Web服务]** 并复制 **[!UICONTROL 共享密钥]** 键。
+1. 如需Analytics Web服務存取資訊，請前往 **[!UICONTROL 分析]** > **[!UICONTROL 管理員]** > **[!UICONTROL 管理工具]** > **[!UICONTROL 公司設定]** > **[!UICONTROL 網站服務]** 並複製 **[!UICONTROL 共用機密]** 金鑰。
 
-   在向导中，选择 **[!UICONTROL 数据中心]**，并提供 **[!UICONTROL 公司]**, Web服务 **[!UICONTROL 用户名]**，并粘贴 **[!UICONTROL 共享密钥]** 键。
+   在精靈中，選取 **[!UICONTROL 資料中心]**，並提供 **[!UICONTROL 公司]**、網站服務 **[!UICONTROL 使用者名稱]**，並貼上 **[!UICONTROL 共用機密]** 金鑰。
 
-   单击 **[!UICONTROL 身份验证]**.
+   按一下 **[!UICONTROL 驗證]**.
 
-   ![在中为资产分析配置Adobe Analytics [!DNL Experience Manager]](assets/analytics-insight-config.png)
+   ![設定Adobe Analytics以在中分析資產 [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
-   *图：在中为资产分析配置Adobe Analytics[!DNL Experience Manager]*
+   *圖：設定Adobe Analytics以在中分析資產[!DNL Experience Manager]*
 
-1. 成功身份验证后，您将获得下拉列表中列出的报表包。 选择Adobe Analytics **[!UICONTROL 报表包]** 从中获取资产分析数据。 单击 **[!UICONTROL 添加]**.
+1. 在成功驗證後，您將會在下拉式清單中取得報表套裝。 選取Adobe Analytics **[!UICONTROL 報表套裝]** 從您希望Assets Insights擷取資料的位置。 按一下 **[!UICONTROL 新增]**.
 
-1. 之后 [!DNL Experience Manager] 设置报表包时，单击 **[!UICONTROL 完成]**.
+1. 晚於 [!DNL Experience Manager] 設定您的報表套裝，按一下 **[!UICONTROL 完成]**.
 
-有关更多信息，请参阅 [Adobe Analytics Web服务](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
+如需詳細資訊，請參閱 [Adobe Analytics網站服務](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
-### 页面跟踪器 {#page-tracker}
+### 頁面追蹤器 {#page-tracker}
 
-配置Adobe Analytics帐户后，将为您生成页面跟踪器代码。 启用资产分析以跟踪 [!DNL Experience Manager] 第三方网站中使用的资产，请在网站代码中包含页面跟踪器代码。 在Assets中使用页面跟踪器实用程序生成页面跟踪器代码。 <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+在您設定Adobe Analytics帳戶後，系統就會為您產生頁面追蹤器程式碼。 啟用Assets Insights以追蹤 [!DNL Experience Manager] 用於第三方網站的資產，請在網站程式碼中包含頁面追蹤器程式碼。 使用Assets中的頁面追蹤器公用程式，產生頁面追蹤器程式碼。 <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. 在 [!DNL Experience Manager]，单击 **[!UICONTROL 工具]** > **[!UICONTROL 资产]**.
+1. 在 [!DNL Experience Manager]，按一下 **[!UICONTROL 工具]** > **[!UICONTROL 資產]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. 从&#x200B;**[!UICONTROL 导航]**&#x200B;页面中，单击&#x200B;**[!UICONTROL 分析页面跟踪器]**&#x200B;卡。
-1. 单击 **[!UICONTROL 下载]** 下载页面跟踪器代码。
+1. 按一下 **[!UICONTROL 下載]** 以下載頁面追蹤器程式碼。
 
 <!--
 Add page tracker code, CQDOC-18045, 30/07/2021
 -->
-以下示例代码片段显示示例网页中包含的页面跟踪器代码：
+下列範常式式碼片段會顯示範例網頁中包含的頁面追蹤器程式碼：
 
 ```xml
  <head>

@@ -1,25 +1,25 @@
 ---
-title: 创作适用于移动设备的页面
-description: 在为移动设备进行创作时，您可以在多个模拟器之间切换，以查看最终用户看到的内容
+title: 為行動裝置編寫頁面
+description: 為行動裝置製作時，您可以在數個模擬器之間切換，以檢視一般使用者看到的內容
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 100%
+ht-degree: 52%
 
 ---
 
-# 创作适用于移动设备的页面 {#authoring-a-page-for-mobile-devices}
+# 為行動裝置編寫頁面 {#authoring-a-page-for-mobile-devices}
 
 Adobe Experience Manager 页面基于响应式布局。[响应式布局可自动调整内容以适合目标设备，而无需为特定设备创作内容。](/help/sites-cloud/authoring/features/responsive-layout.md)
 
-在创作移动页面时，页面会以模拟移动设备的方式显示。在创作页面时，您可以在多个模拟器之间切换，以查看最终用户在访问页面时看到的内容。
+編寫行動頁面時，頁面會以模擬行動裝置的方式顯示。 編寫頁面時，您可以在多個模擬器之間切換，以檢視一般使用者在存取頁面時看到的內容。
 
-根据设备呈现页面的功能，设备分为功能、智能和触控三个类别。当最终用户访问移动页面时，AEM 会检测设备并发送与其设备组对应的演绎版。
+系統會根據裝置轉譯頁面的功能，將裝置分組為類別功能、智慧型和觸控。 當一般使用者存取行動頁面時，AEM會偵測裝置並傳送與其裝置群組相對應的表現。
 
 >[!NOTE]
 >
->要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。请参阅[创建 Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)。
+>若要根據現有的標準網站建立行動網站，請建立標準網站的即時副本。 请参阅[创建 Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)。
 >
 >AEM 开发人员可以创建新设备组。请参阅“创建设备组过滤器”。
 

@@ -2,7 +2,7 @@
 title: 许可证功能板
 description: Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户可用的 AEMaaCS 产品权利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
+source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 80%
@@ -55,7 +55,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 ### 什么是内容请求？ {#what-is-a-content-request}
 
-内容请求是指进入AEM Sites或任何客户提供的缓存系统（如内容交付网络）的请求，用于以HTML格式（作为页面查看）或JSON格式（作为API调用）来交付内容或数据。
+內容請求是進入AEM Sites或任何客戶提供的快取系統（例如內容傳遞網路）的請求，以HTML格式作為頁面檢視或JSON格式作為API呼叫傳遞內容或資料。
 
 每个页面视图或每五个 API 调用计算一个内容请求，在第一个接收内容请求的缓存系统入口测量。 内容请求仅按生产环境计算。
 
@@ -63,7 +63,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 ### Adobe Experience Manager 如何衡量内容请求？ {#how-are-content-requests-measured}
 
-内容请求会在AEM as a Cloud Service的边缘服务器上进行跟踪。 源站流量不计入内容请求。 内置于AEMas a Cloud Service的CDN可跟踪有效的HTML和JSON请求。
+內容請求在AEMas a Cloud Service的邊緣伺服器上受到追蹤。 源站流量不计入内容请求。 AEMas a Cloud Service內建的CDN會追蹤有效的HTML和JSON請求。
 
 AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷新其搜索索引或服务的知名服务。
 
@@ -83,10 +83,10 @@ AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷�
 | 流量拦截器 | 在浏览器中使用跟踪拦截器可能会选择不跟踪某些请求。 |
 | 防火墙 | 防火墙可能会阻止分析跟踪。这在公司防火墙中更为常见。 |
 
-### 如果我想进一步了解我的内容请求卷，该怎么办？ {#current-request-volumes}
+### 如果我想進一步瞭解我的內容請求量，該怎麼辦？ {#current-request-volumes}
 
-如果您希望对“许可证功能板”中显示的内容请求量进行更多分析，您的Adobe团队可以提供一份报表，其中显示内容请求的流量最大驱动因素。 请联系您的Adobe团队或Adobe客户关怀团队，以请求获取最常用情况报表。
+如果您想進一步瞭解授權儀表板中顯示的內容請求量，您的Adobe團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。 請聯絡您的Adobe團隊或Adobe客戶服務，以請求最佳使用報告。
 
 ### 如果我使用自己的 CDN 怎么办？ {#using-own-cdn}
 
-许可证功能板将仅显示由Cloud ServiceCDN跟踪的数据。  如果您选择自带CDN(BYOCDN)，则会按照合同中的规定，每年向Adobe报告内容请求量。
+授權儀表板只會顯示Cloud ServiceCDN追蹤的資料。  如果您選擇使用自己的CDN (BYOCDN)，您將按照合約中的規定每年向Adobe報告您的內容請求量。

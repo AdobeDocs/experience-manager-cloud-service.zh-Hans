@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2022.3.0中迁移工具的发行说明
-description: AEMas a Cloud Service版本2022.3.0中迁移工具的发行说明
+title: AEMas a Cloud Service2022.3.0版中移轉工具的發行說明
+description: AEMas a Cloud Service2022.3.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: ab43605d-d46e-43de-b71f-fab610609550
 source-git-commit: 87e3291b4a72c24fc6cf8df488df305f1a078ea5
@@ -10,9 +10,9 @@ ht-degree: 86%
 
 ---
 
-# AEMas a Cloud Service版本2022.3.0中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service2022.3.0版中移轉工具的發行說明 {#release-notes}
 
-本页概述了AEM 2022.3.0as a Cloud Service中迁移工具的发行说明。
+本頁面總覽AEMas a Cloud Service2022.3.0中移轉工具發行說明。
 
 ## Best Practices Analyzer {#bpa-release}
 

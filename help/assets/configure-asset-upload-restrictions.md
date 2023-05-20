@@ -1,58 +1,73 @@
 ---
-title: 配置资产上传限制
-description: 配置Adobe Experience Manager Assets，以根据MIME类型限制用户可上传的资产类型。 它有助于防止意外上载不需要的格式和恶意文件。
+title: 配置资源上传限制
+description: 設定Adobe Experience Manager資產，根據MIME型別限制使用者可上傳的資產型別。 它有助於防止意外上傳不需要的格式和惡意檔案。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 4%
+source-wordcount: '363'
+ht-degree: 12%
 
 ---
 
-# 配置资产上传限制 {#configure-asset-upload-restrictions}
+# 配置资源上传限制 {#configure-asset-upload-restrictions}
 
-您可以配置Adobe Experience Manager Assets，以根据MIME类型限制用户可上传的资产类型。
+您可以設定Adobe Experience Manager資產，根據MIME型別限制使用者可上傳的資產型別。
 
 >[!IMPORTANT]
 >
->默认情况下，Experience Manager Assets允许用户上传所有MIME类型的资产。 但是，您可以配置设置，以限制用户仅上传特定MIME类型的文件。
+>依預設，Experience Manager Assets可讓使用者上傳所有MIME型別的資產。 不過，您可以配置設定以限制使用者僅上傳特定MIME型別的檔案。
 
 ## 前提条件 {#prerequisites-asset-upload-restrictions}
 
-您必须拥有管理员权限才能配置资产上传限制。
+您必須擁有管理員許可權才能設定資產上傳限制。
 
-## 对资产上传应用限制 {#apply-restrictions-asset-uploadsssssss}
+## 套用資產上傳限制 {#apply-restrictions-asset-uploadsssssss}
 
-配置 [!DNL Experience Manager] 要限制用户上传特定MIME类型的文件，请执行以下操作：
+進行設定 [!DNL Experience Manager] 若要限制使用者上傳特定MIME型別的檔案：
 
-1. 导航到 **[!UICONTROL 工具>资产>资产配置]**.
+1. 導覽至 **[!UICONTROL 「工具>資產>資產設定」]**.
 
-1. 单击 **[!UICONTROL 上载限制]**.
+1. 按一下 **[!UICONTROL 上傳限制]**.
 
-1. 单击 **[!UICONTROL 添加]** 以定义允许的MIME类型。
+1. 按一下 **[!UICONTROL 新增]** 以定義允許的MIME型別。
 
-1. 在文本框中指定MIME类型。 您可以单击 **[!UICONTROL 添加]** 再次指定更多允许的MIME类型。 您还可以单击 ![删除图标](assets/delete-icon.svg) 从列表中删除任何MIME类型。
+1. 在文字方塊中指定MIME型別。 您可以按一下 **[!UICONTROL 新增]** 再次指定更多允許的MIME型別。 您也可以按一下 ![刪除圖示](assets/delete-icon.svg) 從清單中刪除任何MIME型別。
 
 1. 单击“**[!UICONTROL 保存]**”。
 
-**示例1:允许将所有图像和PDF文件上传到Experience Manager Assets**
+**範例1：允許將所有影像和PDF檔案上傳至Experience Manager Assets**
 
-要允许将所有格式的图像和PDF文件上传到Experience Manager Assets，请执行以下设置：
+若要允許將所有格式的影像和PDF檔案上傳至Experience Manager Assets，請執行下列設定：
 
 ![资产上传限制](assets/asset-upload-restrictions.png)
 
-`image/*` 因为MIME类型允许上传所有格式的图像。 `application/pdf` 因为使用MIME类型，可将PDF文件上传到Experience Manager Assets。
+`image/*` 因為MIME型別允許上傳所有格式的影像。 `application/pdf` 因為MIME型別允許將PDF檔案上傳到Experience Manager Assets。
 
-如果您尝试上传的文件未包含在允许的MIME类型列表中，则Experience Manager Assets会显示以下错误消息：
+如果您嘗試上傳未包含在允許的MIME型別清單中的檔案，Experience Manager Assets會顯示下列錯誤訊息：
 
-![受限文件](assets/asset-upload-restricted-files.png)
+![受限制的檔案](assets/asset-upload-restricted-files.png)
 
-`Screen Recording 2022-08-31 at 3.36.09 PM.mov` 是指允许的MIME类型中未包含的文件名。
+`Screen Recording 2022-08-31 at 3.36.09 PM.mov` 是指未包含在允許的MIME型別中的檔案名稱。
 
-**示例2:允许将特定图像格式上传到Experience Manager Assets**
+**範例2：允許將特定影像格式上傳至Experience Manager Assets**
 
-要向允许的MIME类型添加特定图像格式并限制上传所有其他资产格式，请执行以下设置：
+若要將特定影像格式新增至允許的MIME型別並限制上傳所有其他資產格式，請執行下列設定：
 
-![资产限制](assets/asset-restrictions.png)
+![資產限制](assets/asset-restrictions.png)
 
-根据图像中描述的设置，您可以将。JPG、 .PNG和。GIF格式的图像上传到Experience Manager Assets。
+根據影像中描述的設定，您可以將。JPG、.PNG和。GIF格式的影像上傳至Experience Manager Assets。
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)

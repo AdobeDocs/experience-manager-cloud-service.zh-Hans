@@ -1,7 +1,7 @@
 ---
 title: 开发人员模式
 seo-title: Developer Mode
-description: 开发人员模式会打开包含多个选项卡的侧面板，这些选项卡为开发人员提供有关当前页面的信息
+description: 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的資訊
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
@@ -13,84 +13,84 @@ ht-degree: 1%
 
 # 开发人员模式 {#developer-mode}
 
-在AEM中编辑页面时， [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 包括开发人员模式。 开发人员模式会打开一个侧面板，其中包含多个选项卡，为开发人员提供有关当前页面的技术信息。
+在AEM中編輯頁面時，有數個 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 可用，包括開發人員模式。 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的技術資訊。
 
-有两个选项卡：
+有兩個標籤：
 
-* **[组件](#components)** 以查看结构和性能信息。
-* **[错误](#errors)** 以查看出现的任何问题。
+* **[元件](#components)** 以檢視結構和效能資訊。
+* **[錯誤](#errors)** 檢視發生的任何問題。
 
-这些帮助开发人员：
+這些功能可協助開發人員：
 
-* **Discover** 页面的构成方式。
-* **调试：** 发生在何处和何时的事件，这反过来有助于解决问题。
+* **探索** 頁面的構成方式。
+* **偵錯：** 隨時隨地發生的狀況，進而協助解決問題。
 
 >[!NOTE]
 >
->开发人员模式：
+>开发人员架构:
 >
->* 在移动设备上或桌面上的小窗口上不可用（由于空间限制）。
->  * 当宽度小于1024像素时，会发生这种情况。
->* 仅适用于 `administrators` 群组。
+>* 不適用於行動裝置或桌上型電腦上的小型視窗（因為空間限制）。
+>  * 當寬度小於1024畫素時，就會發生這種情況。
+>* 僅適用於屬於以下群組的使用者： `administrators` 群組。
 
 
-## 打开开发人员模式 {#opening-developer-mode}
+## 開啟開發人員模式 {#opening-developer-mode}
 
-开发人员模式作为页面编辑器的侧面板来实施。 要打开面板，请选择 **开发人员** 从页面编辑器工具栏的模式选择器中：
+開發人員模式會實作為頁面編輯器的側面板。 若要開啟面板，請選取 **開發人員** 從頁面編輯器工具列中的模式選取器：
 
-![打开开发人员模式](assets/developer-mode.png)
+![開啟開發人員模式](assets/developer-mode.png)
 
-该面板分为两个选项卡：
+面板分為兩個標籤：
 
-* **[组件](#components)**  — 此时会显示组件树，与 [内容树](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) 对于作者
-* **[错误](#errors)**  — 当出现问题时，将显示每个组件的详细信息。
+* **[元件](#components)**  — 這個選項會顯示元件樹，類似於 [內容樹狀結構](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) 作者
+* **[錯誤](#errors)**  — 發生問題時，會顯示每個元件的詳細資料。
 
-### “组件”选项卡 {#components}
+### 元件標籤 {#components}
 
-![“组件”选项卡](assets/developer-mode-components-tab.png)
+![元件標籤](assets/developer-mode-components-tab.png)
 
-此时将显示一个组件树，该组件树：
+這顯示一個元件樹狀結構，其中：
 
-* 概述页面上呈现的组件和模板链。 可以展开树以显示层次结构中的上下文。
-* 显示呈现组件所需的服务器端计算时间。
-* 用于展开树并选择树中的特定组件。 通过选择组件，可以访问组件详细信息；例如：
-   * 存储库路径
-   * 指向脚本的链接(在CRXDE Lite中访问)
-   * 组件详细信息，如 [组件控制台](/help/sites-cloud/authoring/features/components-console.md)
-* 树中选定的组件在编辑器中以蓝色边框表示。
+* 概述在頁面上呈現的元件和範本鏈。 可展開樹狀結構以顯示階層內的前後關聯。
+* 顯示轉譯元件所需的伺服器端運算時間。
+* 可讓您展開樹狀結構並選取樹狀結構中的特定元件。 選取範圍可讓您存取元件詳細資訊，例如：
+   * 存放庫路徑
+   * 指令碼連結(以CRXDE Lite存取)
+   * 元件詳細資訊，如 [元件主控台](/help/sites-cloud/authoring/features/components-console.md)
+* 在編輯器中選取的元件會以藍色邊框表示。
 
-此组件选项卡有助于：
+此元件標籤有助於：
 
-* 确定并比较每个组件的渲染时间。
-* 查看并了解层级。
-* 通过查找慢速组件，了解并改进页面加载时间。
+* 決定並比較每個元件的演算時間。
+* 檢視並瞭解階層。
+* 找出緩慢的元件，瞭解並改善頁面載入時間。
 
-每个组件条目可以具有以下选项：
+每個元件專案都可能有以下選項：
 
-![开发人员模式组件示例](assets/developer-mode-component-example.png)
+![開發人員模式元件範例](assets/developer-mode-component-example.png)
 
-* **查看详细信息：** 指向列表的链接，其中显示：
-   * 用于呈现组件的所有组件脚本。
-   * 此特定组件的存储库内容路径。
+* **檢視詳細資料：** 清單的連結，其中顯示：
+   * 用於呈現元件的所有元件指令碼。
+   * 此特定元件的存放庫內容路徑。
 
       ![查看详细信息](assets/developer-mode-view-details.png)
 
-* **编辑脚本：** 在CRXDE Lite中打开组件脚本的链接。
+* **編輯指令碼：** 以CRXDE Lite開啟元件指令碼的連結。
 
-* **查看组件详细信息：** 在 [组件控制台。](/help/sites-cloud/authoring/features/components-console.md)
+* **檢視元件詳細資訊：** 在中開啟元件的詳細資訊 [元件主控台。](/help/sites-cloud/authoring/features/components-console.md)
 
-通过点按或单击V形标记来展开组件条目还可能显示：
+點選或按一下>形箭號來展開元件專案也可顯示：
 
-    *选定组件中的层次结构。
-    *单独呈现选定组件、其中嵌套的任何单个组件的呈现时间以及组合的总计。
+    *所選元件內的階層。
+    *所選元件的單獨呈現時間、任何巢狀內嵌的個別元件以及合併總數。
 
-### “错误”选项卡 {#errors}
+### 錯誤標籤 {#errors}
 
-![“错误”选项卡](assets/developer-mode-errors-tab.png)
+![錯誤標籤](assets/developer-mode-errors-tab.png)
 
-希望 **错误** 选项卡将始终为空（如上所示），但是当出现问题时，可能会为每个组件显示以下详细信息：
+希望 **錯誤** 索引標籤一律為空白（如上所述），但是當發生問題時，可能會為每個元件顯示以下詳細資料：
 
-* 当组件将条目写入错误日志、错误详细信息以及指向CRXDE Lite中相应代码的链接时，会出现警告。
-* 组件打开管理员会话时出现警告。
+* 如果元件將專案寫入錯誤記錄檔，連同錯誤的詳細資訊以及指向CRXDE Lite內適當程式碼的直接連結，會出現警告。
+* 如果元件開啟管理員工作階段，會出現警告。
 
-例如，如果调用了未定义的方法，则生成的错误将显示在 **错误** 选项卡和 **组件** 选项卡在发生错误时也会使用指示器进行标记。
+例如，如果呼叫未定義的方法，則產生的錯誤將顯示在 **錯誤** 標籤與的樹狀結構中的元件專案 **元件** 索引標籤也會在錯誤發生時標示一個指標。

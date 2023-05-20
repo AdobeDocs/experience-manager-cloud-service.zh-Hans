@@ -3,7 +3,7 @@ title: AEM 快速站点创建历程
 description: 从这里开始引导式历程，通过易用的 AEM 快速站点创建工具来简化 AEM 站点的前端开发并在不具备 AEM 后端知识的情况下快速自定义您的站点。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
 

@@ -26,11 +26,11 @@ ht-degree: 82%
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
-1. 选择 **为生产设置** 在创建程序向导中创建生产程序并提供程序名称。
+1. 選取 **為生產設定** 在建立計畫精靈中建立生產計畫並提供計畫名稱。
 
    ![创建程序向导](assets/create-production-program.png)
 
-1. 或者，您也可以通过将图像文件拖放到 **添加程序图像** 定位或单击该图像以从文件浏览器中选择图像。 点按或单击&#x200B;**继续**。
+1. 或者，您也可以拖放影像檔案至 **新增程式影像** 或按一下以從檔案瀏覽器中選取影像。 点按或单击&#x200B;**继续**。
 
 1. 如果您拥有增强安全性授权，**增强安全性**&#x200B;选项卡将为您的作品提供&#x200B;**启用增强安全性**&#x200B;选项程序。如果需要，请选中启用增强安全性的选项，然后点击或单击&#x200B;**继续**。
 
@@ -41,7 +41,7 @@ ht-degree: 82%
 
 1. 在&#x200B;**解决方案和插件** 选项卡，选择要包含在程序中的解决方案。
 
-   * 如果您不确定您是否需要一个或多个程序用于您可用的各种解决方案，请选择您最感兴趣的方案。 您可以通过 [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 稍后。 请参阅 [生产计划简介文档](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 以了解更多项目设置建议。
+   * 如果您不確定是否需要針對各種可用解決方案的一或多個程式，請選取您最感興趣的。 您可以透過以下方式啟用其他解決方案 [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 稍後。 請參閱 [生產計畫檔案簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 瞭解更多方案設定建議。
    * 如果您之前选择了&#x200B;**启用增强安全性**，您将只能选择 HIPAA 权利可用的解决方案。
 
    ![选择解决方案](assets/setup-prod-select.png)

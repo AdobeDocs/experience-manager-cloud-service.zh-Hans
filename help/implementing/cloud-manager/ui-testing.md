@@ -3,7 +3,7 @@ title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2305'
 ht-degree: 100%
 

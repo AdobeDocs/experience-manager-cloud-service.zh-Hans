@@ -1,6 +1,6 @@
 ---
 title: 发布 Dynamic Media 资源
-description: 了解如何发布Dynamic Media资产。
+description: 瞭解如何發佈Dynamic Media資產。
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
@@ -8,41 +8,41 @@ exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 8%
+ht-degree: 5%
 
 ---
 
 # 发布 Dynamic Media 资源 {#publishing-dynamic-media-assets}
 
-您可以通过选择已上传的资产并选择 **[!UICONTROL 发布]** 或 **[!UICONTROL 快速发布]**. 发布Dynamic Media资产后，您便可以通过URL或在页面上嵌入代码的方式，将这些资产包含在网页中。
+您可以選取已上傳的資產，然後選取「 」，發佈Dynamic Media資產 **[!UICONTROL 發佈]** 或 **[!UICONTROL 快速發佈]**. 發佈Dynamic Media資產後，您就可以透過URL或透過在頁面上內嵌程式碼的方式將其納入網頁中。
 
-您还可以立即发布上传的资产，无需任何用户干预。 或者，您也可以选择性地发布这些资产。 请参阅 [配置Dynamic Media](config-dm.md). 或者，您也可以使用 **[!UICONTROL 选择性发布]** 在文件夹级别。 请参阅 [在Dynamic Media中使用“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md).
+您也可以立即發佈您上傳的資產，無需任何使用者介入。 或者，您可以選擇發佈這些資產。 另請參閱 [設定Dynamic Media](config-dm.md). 或者，您可以選擇將資產發佈到Dynamic Media或Adobe Experience Manager，兩者互相排斥，使用 **[!UICONTROL 選擇性發佈]** 在資料夾層級。 另請參閱 [在Dynamic Media中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md).
 
-在 **[!UICONTROL 卡片视图]**，资产名称正下方以及日期和时间左侧会显示一个小地球图标，指示资产已发布。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
-
->[!NOTE]
->
->如果资产已发布，则您会将资产移动到其他文件夹，并从新位置重新发布，则原始已发布的资产位置以及新重新发布的资产仍然可用。 但是，原始已发布的资产将“丢失”到Experience Manager，无法取消发布。 因此，作为最佳实践，请先取消发布资产，然后再将资产移动到其他文件夹。
-
-如果您打算在对视频资产进行编码后立即发布这些资产，请确保编码已完成。 对视频进行编码时，系统会告知您正在进行视频处理工作流。 视频编码完成后，您可以预览视频演绎版。 此时，您便可以安全地发布视频，而不会出现任何发布错误。
-
-另请参阅 [将URL关联到您的Web应用程序](linking-urls-to-yourwebapplication.md).
-
-另请参阅 [在网页上嵌入Dynamic Media视频查看器或图像查看器](embed-code.md).
+在 **[!UICONTROL 卡片檢視]**，資產名稱的正下方及日期和時間左側會出現一個小地球圖示，指出資產已發佈。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
 >[!NOTE]
 >
->* 必须发布资产才能使用URL。 如果资产未发布，则复制URL并将其粘贴到Web浏览器中不起作用。
->* 必须激活并发布图像预设和查看器预设才能进行实时交付。
+>如果資產已發佈，然後您將資產移動到另一個資料夾，並從其新位置重新發佈，則仍然可以使用原始已發佈的資產位置，以及新重新發佈的資產。 然而，原始發佈的資產會被「遺失」給Experience Manager，且無法取消發佈。 因此，最佳做法是先取消發佈資產，然後再將其移至其他資料夾。
+
+如果您打算在編碼視訊資產後立即發佈，請務必完成編碼。 當視訊編碼時，系統會告知您視訊處理工作流程正在進行中。 視訊編碼完成後，您可以預覽視訊轉譯。 到那時，您可以安全地發佈影片，而不會發生任何發佈錯誤。
+
+另請參閱 [將URL連結至您的網頁應用程式](linking-urls-to-yourwebapplication.md).
+
+另請參閱 [將Dynamic Media視訊檢視器或影像檢視器內嵌在網頁上](embed-code.md).
+
+>[!NOTE]
+>
+>* 必須發佈資產才能使用URL。 如果資產未發佈，將無法將URL複製並貼到網頁瀏覽器。
+>* 影像預設集和檢視器預設集必須啟動並發佈，才能即時傳送。
 >
 
 
-有关发布集或资产的详细信息，请参阅 [发布资产](/help/assets/manage-digital-assets.md).
+如需發佈集合或資產的詳細資訊，請參閱 [發佈資產](/help/assets/manage-digital-assets.md).
 
-## HTTP/2交付Dynamic Media资产 {#http-delivery-of-dynamic-media-assets}
+## Dynamic Media資產的HTTP/2傳送 {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，将通过HTTP/2协议来交付已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，从而可以缩短所有Dynamic Media资产的响应和加载时间。
+Experience Manager現在支援透過HTTP/2傳送所有Dynamic Media內容（影像和視訊）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可整合至任何接受託管資產的應用程式。 然後會透過HTTP/2通訊協定傳遞該已發佈的資產。 此傳遞方法可改善瀏覽器和伺服器的通訊方式，讓您的所有Dynamic Media資產獲得更好的回應和載入時間。
 
-请参阅 [HTTP/2内容交付常见问题解答](/help/assets/dynamic-media/http2faq.md).
+另請參閱 [HTTP/2內容傳送常見問題](/help/assets/dynamic-media/http2faq.md).
 
 <!--this md file used to reside under sites-administering-->

@@ -1,13 +1,13 @@
 ---
 title: Universal Visual Editor 简介
 description: 了解 Universal Visual Editor（又名 Universal Editor）如何实现所见即所得 (what-you-see-is-what-you-get, WYSIWYG) 编辑任何 Headless 和 Headful 体验。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # Universal Visual Editor 简介 {#introduction}
 

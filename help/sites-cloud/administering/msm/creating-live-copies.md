@@ -139,7 +139,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
    >[!NOTE]
    >
-   >出现错误对话框，显示消息“无法提交表单”。 这是由于网络超时所致。 但是，创建Live Copy的过程将在后台运行。 等待几分钟，并检查Live Copy的页面是否正确创建。
+   >可能會出現錯誤對話方塊，並顯示「無法提交表單」訊息。 發生此情況是因為網路逾時。 不過，建立即時副本的程式正在背景中執行。 請稍候幾分鐘，然後檢查即時副本的頁面是否正確建立。
 
 ### 从 Blueprint 配置创建站点的 Live Copy {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 

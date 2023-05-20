@@ -1,5 +1,5 @@
 ---
-title: 将内容摄取到Target（旧版）
+title: 將內容擷取至Target （舊版）
 description: 将内容提取到目标
 hide: true
 hidefromtoc: true
@@ -11,37 +11,37 @@ ht-degree: 27%
 
 ---
 
-# 将内容摄取到Target（旧版） {#ingesting-content}
+# 將內容擷取至Target （舊版） {#ingesting-content}
 
-## 内容传输工具中的摄取流程 {#ingestion-process}
+## 內容轉移工具中的擷取程式 {#ingestion-process}
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 >[!NOTE]
->您可以运行可选的预复制步骤以显着加快摄取阶段。 请参阅 [使用AzCopy摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 以了解更多详细信息。
+>您可以執行選用的預先複製步驟，以大幅加快擷取階段。 請參閱 [使用AzCopy擷取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 以取得更多詳細資料。
 
-1. 从中选择迁移集 **内容传输** 页面，单击 **摄取** 开始摄取。
+1. 選取移轉集來源 **內容轉移** 頁面並按一下 **擷取** 以開始內嵌。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。一次可以将内容摄取到创作实例或发布实例。 选择要将内容摄取到的实例。 单击 **摄取** 以启动摄取阶段。
+1. 此时将显示&#x200B;**迁移集摄取**&#x200B;对话框。內容一次可以內嵌到作者執行個體或發佈執行個體。 選取要擷取內容的例項。 按一下 **擷取** 以開始內嵌階段。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
 
    >[!IMPORTANT]
-   >如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
+   >如果使用預先複製擷取（用於S3或Azure資料存放區），建議先單獨執行作者擷取。 稍後執行發佈擷取時，這會加快擷取速度。
 
    >[!IMPORTANT]
-   >当 **摄取前擦除云实例上的现有内容** 选项时，它会删除整个现有存储库并创建新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到 **管理员** 群组。
+   >當 **在內嵌之前擦除雲端例項上的現有內容** 選項已啟用，則會刪除整個現有存放庫並建立新存放庫以內嵌內容。 這表示它會重設所有設定，包括目標Cloud Service執行個體的許可權。 對於新增至的管理員使用者也是如此 **管理員** 群組。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
 
-   此外，单击 **客户关怀** 记录票证，如下图所示。
+   此外，按一下 **客戶服務** 以記錄票證，如下圖所示。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
 
-   另外，请参阅 [使用内容传输工具的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) 以了解更多。
+   另外，請參閱 [使用內容轉移工具的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) 以深入瞭解。
 
-1. 完成摄取后， **创作摄取** 更新至 **已完成**.
+1. 擷取一旦完成，狀態就會位於 **作者內嵌** 更新 **已完成**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
 
@@ -54,7 +54,7 @@ ht-degree: 27%
 
 完成摄取流程后，可以使用增补摄取方法传输增量内容。应遵循以下步骤：
 
-1. 导航到 **内容传输** 向导，然后选择要对其执行增补摄取的迁移集。 单击&#x200B;**摄取**&#x200B;以开始增补提取。
+1. 導覽至 **內容轉移** 精靈並選取您要執行追加擷取的移轉集。 单击&#x200B;**摄取**&#x200B;以开始增补提取。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
 
@@ -64,8 +64,8 @@ ht-degree: 27%
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
-   >您应该禁用 **摄取前擦除云实例上的现有内容** 选项，以防止从上一个摄取活动中删除现有内容。 此外，单击 **客户关怀** 记录票证，如上图所示。
+   >您應停用 **在內嵌之前擦除雲端例項上的現有內容** 選項，以防止從先前的擷取活動中刪除現有內容。 此外，按一下 **客戶服務** 以記錄票證，如上圖所示。
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-在内容传输工具中了解将内容摄取到目标后，您便可以在每个步骤（提取和摄取）完成后查看日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 以了解更多。
+在內容轉移工具中學習了將內容擷取至目標後，您可以在完成每個步驟（擷取和擷取）時檢視記錄並尋找錯誤。 另請參閱 [檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 以深入瞭解。

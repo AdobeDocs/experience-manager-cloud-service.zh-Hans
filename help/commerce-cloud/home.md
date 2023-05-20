@@ -5,8 +5,8 @@ landing-page-description: 了解如何使用和管理 Experience Manager Content
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关AEM 6.5和经典CIF的AEM内容和商务，请参阅 [AEM 6.5内容与商务](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>如需使用AEM 6.5和傳統CIF的AEM內容與商務，請參閱 [AEM 6.5內容與商務](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
-## 关键内容和商务文章 {#key-articles}
+## 重要內容和商務文章 {#key-articles}
 
-* [AEM内容和商务简介](introduction.md)
-* [AEM Content and Commerce快速入门](/help/commerce-cloud/getting-started.md)
-* [开发AEM内容和商务](/help/commerce-cloud/develop.md)
+* [AEM Content and Commerce簡介](introduction.md)
+* [AEM Content and Commerce入門](/help/commerce-cloud/getting-started.md)
+* [開發AEM Content and Commerce](/help/commerce-cloud/develop.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 

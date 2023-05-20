@@ -1,37 +1,37 @@
 ---
-title: 将数字资产添加到 [!DNL Adobe Experience Manager].
-description: 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+title: 將您的數位資產新增至 [!DNL Adobe Experience Manager].
+description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
 source-wordcount: '3094'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 将数字资产添加到 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+# 新增數位資產至 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] 接受来自多种来源的多种类型的数字资产。 它可以存储二进制文件和创建的演绎版，并可以使用各种工作流和 [!DNL Adobe Sensei] 服务，允许通过多个渠道在多个表面之间分发。
+[!DNL Adobe Experience Manager Assets] 接受來自許多來源的多種數位資產。 它會儲存二進位檔和已建立的轉譯，並使用各種工作流程執行資產處理，以及 [!DNL Adobe Sensei] 服務，可跨許多介面透過許多管道進行分送。
 
-[!DNL Adobe Experience Manager] 通过丰富的元数据、智能标记、演绎版和其他数字资产管理(DAM)服务，丰富了上传数字文件的二进制内容。 您可以从本地文件夹或网络驱动器将各种类型的文件（如图像、文档和原始图像文件）上载到 [!DNL Experience Manager Assets].
+[!DNL Adobe Experience Manager] 使用豐富的中繼資料、智慧標籤、轉譯和其他數位資產管理(DAM)服務，豐富上傳數位檔案的二進位內容。 您可以從本機資料夾或網路磁碟機將各種型別的檔案（例如影像、檔案和原始影像檔案）上傳到 [!DNL Experience Manager Assets].
 
-除了最常用的浏览器上传之外，还有其他将资产添加到 [!DNL Experience Manager] 存在存储库，包括桌面客户端，如Adobe资产链接或 [!DNL Experience Manager] 桌面应用程序、上传和摄取脚本，以及自动摄取集成添加为 [!DNL Experience Manager] 扩展。
+除了最常用的瀏覽器上傳外，將資產新增至的其他方法也會 [!DNL Experience Manager] 存放庫存在，包括案頭使用者端，例如Adobe資產連結或 [!DNL Experience Manager] 案頭應用程式、上傳和客戶建立的內嵌指令碼，以及新增為的自動化內嵌整合 [!DNL Experience Manager] 擴充功能。
 
-同时，您可以在 [!DNL Experience Manager]，最常用的文件格式支持其他服务，如元数据提取或预览/呈现版本生成。 请参阅 [支持的文件格式](file-format-support.md) 以了解详细信息。
+雖然您可以上傳和管理任何二進位檔案，但 [!DNL Experience Manager]，最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽/轉譯產生。 請參閱 [支援的檔案格式](file-format-support.md) 以取得詳細資訊。
 
-您还可以选择对上传的资产进行其他处理。 可以在上传资产的文件夹中配置许多资产处理配置文件，以添加特定元数据、演绎版或图像处理服务。 请参阅 [上传后会处理资产](#process-when-uploaded).
+您也可以選擇對上傳的資產完成其他處理。 您可以在上傳資產的資料夾上設定許多資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 另請參閱 [上傳時處理資產](#process-when-uploaded).
 
-[!DNL Assets] 提供以下上传方法。 Adobe建议您在使用上传选项之前先了解其用例和适用性。
+[!DNL Assets] 提供下列上傳方法。 Adobe建議您先瞭解上傳選項的使用案例及適用性，然後再使用上傳選項。
 
-| 上传方法 | 何时使用? | 主要角色 |
+| 上傳方法 | 何时使用? | 主要角色 |
 |---------------------|----------------|-----------------|
-| [资产控制台用户界面](#upload-assets) | 偶尔上传、轻松按下和拖动、查找器上传。 请勿上传大量资产。 | 所有用户 |
-| [上传API](#upload-using-apis) | 用于在上传期间进行动态决策。 | 开发人员 |
-| [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低容量资产摄取，但不用于迁移。 | 管理员、营销人员 |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 当创意人员和营销人员从受支持的 [!DNL Creative Cloud] 桌面应用程序。 | 创意、营销人员 |
-| [资产批量摄取](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔批量摄取。 仅适用于支持的数据存储。 | 管理员、开发人员 |
+| [Assets Console使用者介面](#upload-assets) | 偶爾上傳、輕鬆按壓和拖曳、尋找上傳。 請勿使用上傳大量資產。 | 所有使用者 |
+| [上傳API](#upload-using-apis) | 適用於上傳期間的動態決策。 | 开发人员 |
+| [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低流量資產擷取，但不適用於移轉。 | 管理員、行銷人員 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 當創意人員與行銷人員從支援內處理資產時相當實用 [!DNL Creative Cloud] 案頭應用程式。 | 創意人員、行銷人員 |
+| [資產大量擷取器](#asset-bulk-ingestor) | 建議用於大規模移轉和偶爾的大量擷取。 僅適用於支援的資料存放區。 | 管理員、開發人員 |
 
 ## 上传资源 {#upload-assets}
 
@@ -58,27 +58,27 @@ ht-degree: 1%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-要上传文件（或多个文件），您可以在桌面上选择它们，然后在用户界面（Web浏览器）上将其拖动到目标文件夹。 或者，您也可以从用户界面启动上传。
+若要上傳檔案（或多個檔案），您可以在案頭上選取檔案，然後在使用者介面（網頁瀏覽器）上拖曳至目的地資料夾。 或者，您也可以從使用者介面起始上傳作業。
 
-1. 在 [!DNL Assets] 用户界面中，导航到要添加数字资产的位置。
-1. 要上传资产，请执行以下操作之一：
+1. 在 [!DNL Assets] 使用者介面，導覽至您要新增數位資產的位置。
+1. 若要上傳資產，請執行下列任一項作業：
 
-   * 在工具栏中，单击 **[!UICONTROL 创建]** > **[!UICONTROL 文件]**. 如果需要，可以在显示的对话框中重命名文件。
-   * 在支持HTML5的浏览器中，将资产直接拖动到 [!DNL Assets] 用户界面。 未显示重命名文件的对话框。
+   * 在工具列上，按一下 **[!UICONTROL 建立]** > **[!UICONTROL 檔案]**. 如有需要，您可以在顯示的對話方塊中重新命名檔案。
+   * 在支援HTML5的瀏覽器中，將資產直接拖曳至 [!DNL Assets] 使用者介面。 不會顯示重新命名檔案的對話方塊。
 
    ![create_menu](assets/create_menu.png)
 
-   要选择多个文件，请选择 `Ctrl` 或 `Command` 键并在文件选取器对话框中选择资产。 使用iPad时，一次只能选择一个文件。
+   若要選取多個檔案，請選取 `Ctrl` 或 `Command` 鍵，並在「檔案選擇器」對話方塊中選取資產。 使用iPad時，您一次只能選取一個檔案。
 
-1. 要取消持续上传，请单击关闭(`X`)。 取消上传操作时， [!DNL Assets] 删除部分上传的资产。
-如果在上传文件之前取消上传操作， [!DNL Assets] 停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
+1. 若要取消進行中的上傳，請按一下關閉(`X`)。 當您取消上傳作業時， [!DNL Assets] 刪除資產中部分上傳的部分。
+如果您在上傳檔案之前取消上傳操作， [!DNL Assets] 停止上傳目前的檔案並重新整理內容。 不過，不會刪除已上傳的檔案。
 
-1. 中的上传进度对话框 [!DNL Assets] 显示已成功上载文件的计数以及未能上载的文件。
-此外， [!DNL Assets] 用户界面会显示您上传的最新资产或您首先创建的文件夹。
+1. 中的上傳進度對話方塊 [!DNL Assets] 顯示成功上傳的檔案數和無法上傳的檔案數。
+此外， [!DNL Assets] 使用者介面會顯示您上傳的最新資產或您先建立的資料夾。
 
 >[!NOTE]
 >
->要上载嵌套文件夹层次结构，请参阅 [批量上传资产](#bulk-upload).
+>若要上傳巢狀資料夾階層，請參閱 [大量上傳資產](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -99,146 +99,146 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### 资产已存在时处理上传 {#handling-upload-existing-file}
+### 資產已存在時處理上傳 {#handling-upload-existing-file}
 
-您可以上传与现有资产路径相同（名称相同，位置相同）的资产。 但是，将显示一个警告对话框，其中包含以下选项：
+您可以上傳與現有資產具有相同路徑（相同名稱和相同位置）的資產。 不過，會顯示警告對話方塊，其中包含下列選項：
 
-* 替换现有资产：如果替换现有资产，则资产的元数据以及您对现有资产所做的任何先前修改（例如注释、裁剪等）都将被删除。
+* 取代現有資產：如果您取代現有資產，資產的中繼資料以及您先前對現有資產所做的任何修改（例如註解、裁切等）都會被刪除。
 
    >[!NOTE]
    >
-   >如果资产被锁定或签出，则用于替换资产的选项将不可用。
+   >如果資產已鎖定或出庫，則無法取得取代資產的選項。
 
-* 创建其他版本：将在存储库中创建现有资产的新版本。 您可以在 [!UICONTROL 时间轴] 和可以根据需要还原到以前的现有版本。
-* 同时保留以下两项：如果您选择保留这两个资产，则会重命名新资产。
+* 建立其他版本：在存放庫中建立現有資產的新版本。 您可以在下列位置檢視這兩個版本： [!UICONTROL 時間表] 如有必要，和可以還原成先前的現有版本。
+* 保留兩者：如果您選擇保留兩個資產，則新資產會重新命名。
 
-要在 [!DNL Assets]，单击 **[!UICONTROL 保留]**. 要删除上传的重复资产，请单击 **[!UICONTROL 删除]**.
+若要在中保留重複資產 [!DNL Assets]，按一下 **[!UICONTROL 保留]**. 若要刪除您上傳的重複資產，請按一下 **[!UICONTROL 刪除]**.
 
-### 文件名处理和禁止字符 {#filename-handling}
+### 檔案名稱處理和禁止使用的字元 {#filename-handling}
 
-[!DNL Experience Manager Assets] 阻止您上传文件名中包含禁止字符的资产。 如果您尝试上传的资产的文件名中包含不允许使用的字符或更多字符， [!DNL Assets] 将显示一条警告消息并停止上传，直到您删除这些字符或使用允许的名称进行上传。
+[!DNL Experience Manager Assets] 可防止您上傳其檔案名稱中包含禁止字元的資產。 如果您嘗試上傳檔案名稱包含不允許的字元以上的資產， [!DNL Assets] 顯示警告訊息並停止上傳，直到您移除這些字元或使用允許名稱上傳為止。
 
-为了适合贵组织的特定文件命名约定， [!UICONTROL 上传资产] 对话框允许您为上传的文件指定长名称。 不支持以下（以空格分隔的）字符列表：
+為了配合您組織的特定檔案命名慣例， [!UICONTROL 上傳資產] 對話方塊可讓您為上傳的檔案指定長名稱。 不支援下列（以空格分隔的）字元清單：
 
-* 资产名称的字符无效： `* / : [ \\ ] | # % { } ? &`
-* 资产文件夹名称的字符无效： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 資產名稱的字元無效： `* / : [ \\ ] | # % { } ? &`
+* 資產資料夾名稱的字元無效： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## 批量上传资产 {#bulk-upload}
+## 大量上傳資產 {#bulk-upload}
 
-批量资产摄取可以高效处理大量资产。 但是，大规模摄取不仅是广泛的文件转储或临时迁移。 要将大规模摄取作为符合您业务目的且高效的有意义项目，请规划迁移并组织资产组织。 所有的摄取都不同，因此在细微的存储库组成和业务需求中，不是一般化的因素。 以下是计划和执行批量摄取的一些主要建议：
+大量資產擷取器可以有效地處理非常大量的資產。 不過，大規模內嵌並不僅僅是廣泛的檔案傾印或隨意移轉。 若要讓大規模內嵌成為符合您業務目的且有效率的有意義專案，請規劃移轉並組織資產組織。 所有內嵌都不同，因此不是歸納總結，而是將細微的存放庫構成和業務需求納入考量。 以下是一些規劃和執行大量擷取的總體建議：
 
-* 组织资产：删除DAM中不需要的资产。 请考虑删除未使用、过时或重复的资产。 这会减少传输的数据和摄取的资产，从而加快摄取速度。
-* 组织资产：考虑按某种逻辑顺序组织内容，例如按文件大小、文件格式、用例或优先级。 通常，大型复杂文件需要进行更多处理。 您还可以考虑使用文件大小筛选选项（如下所述）单独摄取大文件。
-* 交错摄取：考虑将您的摄取划分为多个批量摄取项目。 这样，您就可以更快地查看内容并根据需要更新摄取。 例如，您可以在非高峰时间摄取处理密集型资产，或以多个区块逐渐摄取。 但是，您可以一次摄取较小且更简单的资产，这些资产不需要进行大量处理。
+* 組織資產：移除DAM中不需要的資產。 請考慮移除未使用、過時或重複的資產。 如此一來，即可減少傳輸資料和擷取的資產，進而加快擷取速度。
+* 組織資產：請考慮以某種邏輯順序組織內容，例如檔案大小、檔案格式、使用案例或優先順序。 一般而言，大型複雜檔案需要更多處理。 您也可以考慮使用檔案大小篩選選項（如下所述）個別擷取大型檔案。
+* 交錯擷取：請考慮將擷取分割為多個大量擷取專案。 這可讓您更快看到內容，並視需要更新您的內嵌。 例如，您可在非尖峰時間擷取處理密集的資產，或逐步在多個區塊中擷取這些資產。 不過，您可以一次擷取不需要太多處理的較小且較簡單的資產。
 
-要上传更多文件，请使用以下方法之一。 另外，请参阅 [用例和方法](#upload-methods-comparison)
+若要上傳大量檔案，請使用下列其中一種方法。 另請參閱 [使用案例和方法](#upload-methods-comparison)
 
-* [资产上传API](developer-reference-material-apis.md#asset-upload):根据需要，使用自定义上传脚本或工具来利用API添加对资产的其他处理（例如，翻译元数据或重命名文件）。
-* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):对于从本地文件系统上传资产的创意专业人士和营销人员非常有用。 使用它可上载本地可用的嵌套文件夹。
-* [批量摄取工具](#asset-bulk-ingestor):在部署时，有时或最初会使用摄取大量资产 [!DNL Experience Manager].
+* [資產上傳API](developer-reference-material-apis.md#asset-upload)：如有必要，請使用自訂上傳指令碼或工具，利用API新增資產的額外處理（例如，翻譯中繼資料或重新命名檔案）。
+* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)：對於從本機檔案系統上傳資產的創意專業人員和行銷人員非常有用。 用它來上傳本機可用的巢狀資料夾。
+* [大量擷取工具](#asset-bulk-ingestor)：用於在部署時偶爾或最初擷取大量資產 [!DNL Experience Manager].
 
-### 资产批量导入工具 {#asset-bulk-ingestor}
+### 資產大量匯入工具 {#asset-bulk-ingestor}
 
-该工具仅提供给管理员组，用于从Azure或S3数据存储中大规模摄取资产。 请观看配置和摄取的视频演示。
+此工具僅提供給管理員群組，用於從Azure或S3資料存放區大規模擷取資產。 觀看設定和擷取的影片逐步解說。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-下图说明了从数据存储中摄取资产以Experience Manager时的各个阶段：
+下圖說明從資料存放區擷取資產以Experience Manager時的各個階段：
 
-![批量摄取工具](assets/bulk-ingestion.png)
+![大量擷取工具](assets/bulk-ingestion.png)
 
 **前提条件**
 
-使用此功能需要Azure或AWS中的外部存储帐户或存储段。
+使用此功能需要來自Azure或AWS的外部儲存體帳戶或貯體。
 
 >[!NOTE]
 >
->将存储帐户容器或存储段创建为专用容器，并仅接受授权请求中的连接。 但是，不支持对入口网络连接的其他限制。
+>將儲存體帳戶容器或貯體建立為私人，並僅接受來自授權請求的連線。 但是，不支援對輸入網路連線的其他限制。
 
 >[!NOTE]
 >
->外部存储帐户的文件/文件夹名称规则可能与批量导入工具不同。 请参阅 [在批量导入期间处理文件名](#filename-handling-bulkimport) 有关不允许/转义名称的更多详细信息。
+>外部儲存體帳戶的檔案/資料夾名稱規則可能與「大量匯入」工具不同。 另請參閱 [在大量匯入期間處理檔案名稱](#filename-handling-bulkimport) 瞭解更多有關不允許/逸出名稱的詳細資訊。
 
 
-### 配置批量导入工具 {#configure-bulk-ingestor-tool}
+### 設定大量匯入工具 {#configure-bulk-ingestor-tool}
 
-要配置批量导入工具，请执行以下步骤：
+若要設定「大量匯入」工具，請遵循下列步驟：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]**. 选择 **[!UICONTROL 创建]** 选项。
+1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 大量匯入]**. 選取 **[!UICONTROL 建立]** 選項。
 
-1. 在 **[!UICONTROL 标题]** 字段。
+1. 在中指定大量匯入設定的標題 **[!UICONTROL 標題]** 欄位。
 
-1. 从 **[!UICONTROL 导入源]** 下拉列表。
+1. 從中選擇資料來源型別 **[!UICONTROL 匯入來源]** 下拉式清單。
 
-1. 提供值以创建与数据源的连接。 例如，如果您选择 **Azure Blob存储** 作为数据源，指定Azure存储帐户、Azure blob容器和Azure访问密钥的值。
+1. 提供值以建立與資料來源的連線。 例如，如果您選取 **Azure Blob儲存體** 做為資料來源，請指定Azure儲存體帳戶、Azure blob容器和Azure存取金鑰的值。
 
-1. 从下拉列表中选择所需的身份验证模式。 **Azure访问密钥** 提供对Azure存储帐户的完全访问，而 **Azure SAS令牌** 允许管理员使用权限和过期策略限制令牌的功能。
+1. 從下拉式清單中選取所需的驗證模式。 **Azure存取金鑰** 提供對Azure儲存體帳戶的完整存取，而 **Azure SAS權杖** 可讓管理員使用許可權和到期原則來限制Token的功能。
 
-1. 提供根文件夹的名称，该根文件夹包含 **[!UICONTROL 源文件夹]** 字段。
+1. 提供在的資料來源中包含資產的根資料夾名稱 **[!UICONTROL 來源資料夾]** 欄位。
 
-1. （可选）提供资产的最小文件大小（以MB为单位），以将其包含在 **[!UICONTROL 按最小大小筛选]** 字段。
+1. （可選）提供資產的最小檔案大小（以MB為單位），以將其納入的擷取程式中 **[!UICONTROL 按最小大小篩選]** 欄位。
 
-1. （可选）提供资产的最大文件大小（以MB为单位），以将其包含在 **[!UICONTROL 按最大大小过滤]** 字段。
+1. （可選）提供資產檔案大小上限（以MB為單位），以將其納入的擷取程式中 **[!UICONTROL 按最大大小篩選]** 欄位。
 
-1. （可选）指定要从 **[!UICONTROL 排除MIME类型]** 字段。 例如， `image/jpeg, image/.*, video/mp4`. 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
+1. （選用）指定要從的擷取中排除的MIME型別清單（以逗號分隔）。 **[!UICONTROL 排除MIME型別]** 欄位。 例如， `image/jpeg, image/.*, video/mp4`. 另請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
 
-1. 指定要从的摄取中包含的MIME类型列表（以逗号分隔） **[!UICONTROL 包括MIME类型]** 字段。 请参阅 [所有支持的文件格式](/help/assets/file-format-support.md).
+1. 指定要包含在內嵌專案中的MIME型別清單（以逗號分隔） **[!UICONTROL 包含MIME型別]** 欄位。 另請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
 
-1. 选择 **[!UICONTROL 导入后删除源文件]** 将原始文件导入到 [!DNL Experience Manager].
+1. 選取 **[!UICONTROL 匯入後刪除來源檔案]** 在檔案匯入到之後從來源資料存放區中刪除原始檔案的選項 [!DNL Experience Manager].
 
-1. 选择 **[!UICONTROL 导入模式]**. 选择 **跳过**, **替换**&#x200B;或 **创建版本**. 跳过模式是默认模式，在此模式下，摄取者会跳过以导入资产（如果资产已存在）。 查看 [替换和创建版本选项](#handling-upload-existing-file).
+1. 選取 **[!UICONTROL 匯入模式]**. 選取 **略過**， **Replace**，或 **建立版本**. 略過模式為預設值，在此模式中，如果資產已存在，擷取器會略過以匯入資產。 瞭解 [取代和建立版本選項](#handling-upload-existing-file).
 
-1. 指定一个路径，以在DAM中定义要使用导入资产的位置 **[!UICONTROL Assets Target文件夹]** 字段。 例如：`/content/dam/imported_assets`。
+1. 指定路徑，以定義DAM中要使用 **[!UICONTROL 資產目標資料夾]** 欄位。 例如：`/content/dam/imported_assets`。
 
-1. （可选）在 **[!UICONTROL 元数据文件]** 字段。 在配置批量导入工具时，在源Blob位置中指定CSV文件并引用路径。 此字段中引用的CSV文件格式与您 [批量导入和导出资产元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您选择 **导入后删除源文件** 选项，可使用 **排除** 或 **包含MIME类型** 或 **按路径/文件过滤** 字段。 您可以使用正则表达式在这些字段中过滤CSV文件。
+1. （選用）指定要匯入的中繼資料檔案（以CSV格式提供），位於 **[!UICONTROL 中繼資料檔案]** 欄位。 在來源blob位置中指定CSV檔案，並在設定「大量匯入」工具時參照路徑。 此欄位中參考的CSV檔案格式與您在以下情況下的CSV檔案格式相同： [大量匯入和匯出資產中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您選取 **匯入後刪除來源檔案** 選項，使用 **排除** 或 **包含MIME型別** 或 **依路徑/檔案篩選** 欄位。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
 
-1. 单击 **[!UICONTROL 保存]** 以保存配置。
+1. 按一下 **[!UICONTROL 儲存]** 以儲存設定。
 
-### 管理批量导入工具配置 {#manage-bulk-import-configuration}
+### 管理大量匯入工具設定 {#manage-bulk-import-configuration}
 
-创建批量导入工具配置后，您可以先执行任务以评估配置，然后再将资产批量摄取到Experience Manager实例。 选择 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]** 查看用于管理批量导入工具配置的可用选项。
+建立「大量匯入」工具組態後，您可以先執行工作以評估組態，然後再將資產大量擷取到Experience Manager執行個體。 選取以下位置可用的設定： **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 大量匯入]** 以檢視管理「大量匯入」工具組態的可用選項。
 
-### 编辑配置 {#edit-configuration}
+### 編輯設定 {#edit-configuration}
 
-选择配置并单击 **[!UICONTROL 编辑]** 修改配置详细信息。 执行编辑操作时，无法编辑配置和导入数据源的标题。
+選取設定並按一下 **[!UICONTROL 編輯]** 以修改組態詳細資訊。 執行編輯操作時，您無法編輯設定和匯入資料來源的標題。
 
-### 删除配置 {#delete-configuration}
+### 刪除設定 {#delete-configuration}
 
-选择配置并单击 **[!UICONTROL 删除]** 删除批量导入配置。
+選取設定並按一下 **[!UICONTROL 刪除]** 刪除大量匯入組態。
 
-### 验证与数据源的连接 {#validate-connection}
+### 驗證與資料來源的連線 {#validate-connection}
 
-选择配置并单击 **[!UICONTROL check]** 验证与数据源的连接。 如果连接成功，Experience Manager将显示以下消息：
+選取設定並按一下 **[!UICONTROL check]** 驗證與資料來源的連線。 如果連線成功，Experience Manager會顯示下列訊息：
 
-![批量导入成功消息](assets/bulk-import-success-message.png)
+![大量匯入成功訊息](assets/bulk-import-success-message.png)
 
-### 为批量导入作业调用测试运行 {#invoke-test-run-bulk-import}
+### 為大量匯入工作叫用測試回合 {#invoke-test-run-bulk-import}
 
-选择配置并单击 **[!UICONTROL 干流]** 为批量导入作业调用测试运行。 Experience Manager显示有关批量导入作业的以下详细信息：
+選取設定並按一下 **[!UICONTROL 練習]** 以叫用大量匯入工作的測試回合。 Experience Manager會顯示下列有關「大量匯入」工作的詳細資訊：
 
 ![练习结果](assets/dry-assets-result.png)
 
-### 在批量导入期间处理文件名 {#filename-handling-bulkimport}
+### 在大量匯入期間處理檔案名稱 {#filename-handling-bulkimport}
 
-批量导入资产或文件夹时， [!DNL Experience Manager Assets] 导入导入源中存在内容的整个结构。 [!DNL Experience Manager] 遵循资产和文件夹名称中特殊字符的内置规则，因此这些文件名需要清理。 对于文件夹名称和资产名称，用户定义的标题将保持不变，并存储在 `jcr:title`.
+大量匯入資產或資料夾時， [!DNL Experience Manager Assets] 匯入匯入來源中存在的完整結構。 [!DNL Experience Manager] 會遵循資產和檔案夾名稱中特殊字元的內建規則，因此這些檔案名稱需要整理。 對於資料夾名稱和資產名稱，使用者定義的標題保持不變，並儲存在 `jcr:title`.
 
-在批量导入期间， [!DNL Experience Manager] 查找现有文件夹以避免重新导入资产和文件夹，同时还会验证在执行导入的父文件夹中应用的清理规则。 如果清理规则在父文件夹中应用，则相同的规则将应用于导入源。 对于新导入，将应用以下清理规则来管理资产和文件夹的文件名。
+大量匯入期間， [!DNL Experience Manager] 尋找現有資料夾以避免重新匯入資產和資料夾，同時也驗證匯入發生的父資料夾中套用的清理規則。 如果清除規則套用至父資料夾，則相同的規則套用至匯入來源。 對於新的匯入，會套用以下清理規則來管理資產和資料夾的檔案名稱。
 
-**批量导入中不允许的名称**
+**大量匯入中不允許的名稱**
 
-文件和文件夹名称中不允许使用以下字符：
+檔案和資料夾名稱中不允許下列字元：
 
-* 控制和专用字符（0x00到0x1F、\u0081、\uE000）
-* 以圆点(.)结尾的文件或文件夹名称
+* 控制與私人使用字元（0x00到0x1F、\u0081、\uE000）
+* 以點(.)結尾的檔案或資料夾名稱
 
-在导入过程中，会跳过名称与这些条件匹配的文件或文件夹，并标记为失败。
+在匯入程式期間，會略過名稱符合這些條件的檔案或資料夾，並標示為失敗。
 
-**批量导入中处理资产名称**
+**處理大量匯入的資產名稱**
 
-对于资产文件名，将使用API清理JCR名称和路径： `JcrUtil.escapeIllegalJcrChars`.
+對於資產檔案名稱，會使用API來清除JCR名稱和路徑： `JcrUtil.escapeIllegalJcrChars`.
 
-* Unicode字符未更改
-* 将特殊字符替换为其URL转义代码，例如 `new%asset.png` 已更新为 `new%25asset.png`:
+* Unicode字元不會變更
+* 將特殊字元取代為其URL逸出代碼，例如， `new%asset.png` 已更新至 `new%25asset.png`：
 
    ```
                    URL escape code   
@@ -257,13 +257,13 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    |               %7C
    ```
 
-**批量导入中处理文件夹名称**
+**處理大量匯入中的資料夾名稱**
 
-对于文件夹文件名，将使用API清理JCR名称和路径： `DamUtil.getSanitizedFolderName`.
+針對資料夾檔案名稱，會使用API來清除JCR名稱和路徑： `DamUtil.getSanitizedFolderName`.
 
-* 大写字符将转换为小写字符
-* Unicode字符未更改
-* 将特殊字符替换为短划线(“ — ”)，例如， `new folder` 已更新为 `new-folder`:
+* 大寫字元轉換為小寫
+* Unicode字元不會變更
+* 以破折號(&#39;-&#39;)取代特殊字元，例如， `new folder` 已更新至 `new-folder`：
 
    ```
    "                           
@@ -304,88 +304,88 @@ Following are the file naming conventions that are applied while uploading asset
 &Dagger; The list of characters is a whitespace-separated list.
 -->
 
-#### 计划一次性或定期批量导入 {#schedule-bulk-import}
+#### 排程一次性或循環的大量匯入 {#schedule-bulk-import}
 
-要计划一次性导入或定期批量导入，请执行以下步骤：
+若要排程一次性或循環的大量匯入，請執行下列步驟：
 
-1. 创建批量导入配置。
-1. 选择配置并选择 **[!UICONTROL 计划]** 中。
-1. 设置一次性摄取或计划每小时、每天或每周计划。 单击 **[!UICONTROL 提交]**.
+1. 建立大量匯入設定。
+1. 選取設定並選取 **[!UICONTROL 排程]** （從工具列）。
+1. 設定一次性擷取或排程為每小時、每天或每週排程。 按一下 **[!UICONTROL 提交]**.
 
-   ![计划批量摄取作业](assets/bulk-ingest-schedule1.png)
-
-
-#### 查看Assets目标文件夹 {#view-assets-target-folder}
-
-选择配置并单击 **[!UICONTROL 查看资产]** 以在执行批量导入作业后查看导入资产的Assets目标位置。
-
-#### 运行批量导入工具 {#run-bulk-import-tool}
-
-之后 [配置批量导入工具](#configure-bulk-ingestor-tool) （可选） [管理批量导入工具配置](#manage-bulk-import-configuration)，则可以运行配置作业以开始批量摄取资产。
-
-导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 批量导入]**，选择 [批量导入配置](#configure-bulk-ingestor-tool) 单击 **[!UICONTROL 运行]** 启动批量导入过程。 单击 **[!UICONTROL 运行]** 再次确认。
-
-Experience Manager将作业的状态更新为 **处理** 和 **成功** 成功完成作业后。 单击 **查看资产** 查看导入的Experience Manager。
-
-当作业正在进行时，您还可以选择配置并单击 **停止** 以停止批量摄取过程。 单击 **运行** 以继续该过程。 您还可以单击 **干流** 以了解仍在等待导入的资产的详细信息。
-
-#### 执行后管理作业 {#manage-jobs-after-execution}
-
-Experience Manager允许您查看批量导入作业的历史记录。 作业历史记录包括作业的状态、作业创建者、日志，以及其他详细信息（如开始日期和时间、创建日期和时间、完成日期和时间）。
-
-要访问配置的作业历史记录，请选择配置并单击 **[!UICONTROL 作业历史记录]**. 选择作业并单击 **打开**.
-
-![计划批量摄取作业](assets/job-history-bulk-import.png)
-
-Experience Manager显示作业历史记录。 在“批量导入作业历史记录”页上，您还可以单击 **删除** 删除批量导入配置的作业。
+   ![排程大量擷取器工作](assets/bulk-ingest-schedule1.png)
 
 
-## 使用桌面客户端上传资产 {#upload-assets-desktop-clients}
+#### 檢視Assets目標資料夾 {#view-assets-target-folder}
 
-除了Web浏览器用户界面之外， [!DNL Experience Manager] 在桌面上支持其他客户端。 此外，它们还可提供上传体验，而无需转到Web浏览器。
+選取設定並按一下 **[!UICONTROL 檢視資產]** 以檢視資產目標位置，即執行大量匯入工作後匯入資產的位置。
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 允许从 [!DNL Experience Manager] 在Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中。 您可以将当前打开的文档上传到 [!DNL Experience Manager] 直接从这些桌面应用程序内的Adobe资产链接用户界面。
-* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 简化了在桌面上处理资产的过程，这些资产独立于其文件类型或用于处理资产的本机应用程序。 从本地文件系统上传嵌套文件夹层次结构中的文件特别有用，因为浏览器上传仅支持上传平面文件列表。
+#### 執行大量匯入工具 {#run-bulk-import-tool}
 
-## 上传后处理资产 {#process-when-uploaded}
+晚於 [設定大量匯入工具](#configure-bulk-ingestor-tool) 和（可選） [管理大量匯入工具組態](#manage-bulk-import-configuration)，即可執行設定工作以開始大量擷取資產。
 
-要对上传的资产执行其他处理，您可以对上传文件夹应用处理配置文件。 在 **[!UICONTROL 属性]** 文件夹页面 [!DNL Assets]. 不会根据需要处理没有扩展或扩展不正确的数字资产。 例如，在上传此类资产时，可能不会发生任何情况，或者资产可能会应用不正确的处理配置文件。 用户仍可以将二进制文件存储在DAM中。
+導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 大量匯入]**，選取 [大量匯入設定](#configure-bulk-ingestor-tool) 並按一下 **[!UICONTROL 執行]** 以啟動大量匯入程式。 按一下 **[!UICONTROL 執行]** 再次確認。
 
-![资产文件夹的属性，其中包含用于添加处理配置文件的选项](assets/assets-folder-properties.png)
+Experience Manager會將工作的狀態更新至 **處理中** 和 **已成功** 成功完成工作後。 按一下 **檢視資產** 以檢視以Experience Manager匯入的資產。
 
-提供了以下选项卡：
+當工作進行中時，您也可以選取設定並按一下 **停止** 以停止大量擷取程式。 按一下 **執行** 以繼續此程式。 您也可以按一下 **練習** 以瞭解仍在等候匯入的資產詳細資訊。
 
-* [元数据配置文件](metadata-profiles.md) 允许您将默认元数据属性应用到已上传到该文件夹的资产。
-* [处理用户档案](asset-microservices-configure-and-use.md) 默认情况下，允许您生成比可能的更多演绎版。
+#### 管理執行後的工作 {#manage-jobs-after-execution}
 
-此外，如果 [!DNL Dynamic Media] 已在您的部署中启用，则可以使用以下选项卡：
+「Experience Manager」可讓您檢視大量匯入工作的歷史記錄。 工作歷史記錄包含工作狀態、工作建立者、記錄以及其他詳細資訊，例如開始日期和時間、建立日期和時間，以及完成日期和時間。
 
-* [[!DNL Dynamic Media] 图像配置文件](dynamic-media/image-profiles.md) 允许应用特定裁剪(**[!UICONTROL 智能裁剪]** 和像素裁剪)和锐化配置。
-* [[!DNL Dynamic Media] 视频配置文件](dynamic-media/video-profiles.md) 允许您应用特定视频编码配置文件（分辨率、格式、参数）。
+若要存取組態的工作記錄，請選取組態並按一下 **[!UICONTROL 工作歷史記錄]**. 選取工作並按一下 **開啟**.
+
+![排程大量擷取器工作](assets/job-history-bulk-import.png)
+
+Experience Manager會顯示工作歷史記錄。 您也可以在「大量匯入工作歷史記錄」頁面按一下 **刪除** 刪除大量匯入組態的工作。
+
+
+## 使用案頭使用者端上傳資產 {#upload-assets-desktop-clients}
+
+除了網頁瀏覽器使用者介面， [!DNL Experience Manager] 支援案頭上的其他使用者端。 它們也提供上傳體驗，而不需要前往網頁瀏覽器。
+
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 提供資產存取許可權，從 [!DNL Experience Manager] 在Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭應用程式中。 您可以將目前開啟的檔案上傳至 [!DNL Experience Manager] 直接從這些案頭應用程式中的Adobe Asset Link使用者介面。
+* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 可簡化在案頭上使用資產的流程，不受其檔案型別或處理資產的原生應用程式影響。 從本機檔案系統上傳巢狀資料夾階層的檔案特別有用，因為瀏覽器上傳僅支援上傳一般檔案清單。
+
+## 上傳時處理資產 {#process-when-uploaded}
+
+若要對上傳的資產執行其他處理，您可以在上傳資料夾上套用處理設定檔。 設定檔位於 **[!UICONTROL 屬性]** 中的資料夾頁面 [!DNL Assets]. 沒有副檔名或副檔名不正確的數位資產不會視需要處理。 例如，上傳此類資產時，可能沒有任何反應，或資產可能適用錯誤的處理設定檔。 使用者仍可將二進位檔案儲存在DAM中。
+
+![具有新增處理設定檔選項的資產資料夾屬性](assets/assets-folder-properties.png)
+
+可使用下列標籤：
+
+* [中繼資料設定檔](metadata-profiles.md) 可讓您將預設中繼資料屬性套用至上傳至該資料夾的資產。
+* [處理設定檔](asset-microservices-configure-and-use.md) 讓您產生的轉譯數超過預設值。
+
+此外，如果 [!DNL Dynamic Media] 已在您的部署中啟用，以下標籤可供使用：
+
+* [[!DNL Dynamic Media] 影像設定檔](dynamic-media/image-profiles.md) 可讓您套用特定裁切(**[!UICONTROL 智慧型裁切]** 和畫素裁切)，以及對上傳的資產進行銳利化設定。
+* [[!DNL Dynamic Media] 視訊設定檔](dynamic-media/video-profiles.md) 可讓您套用特定的視訊編碼設定檔（解析度、格式、引數）。
 
 >[!NOTE]
 >
->[!DNL Dynamic Media] 对资产进行裁剪和其他操作是无损的，也就是说，这些操作不会更改上传的原始操作。 它而是会提供在传送资产时进行裁剪或转换的参数。
+>[!DNL Dynamic Media] 對資產執行裁切和其他操作是非破壞性的，也就是說，這些操作不會變更上傳的原始檔案。 而是提供引數，以便在傳送資產時裁切或轉換。
 
-对于分配了处理配置文件的文件夹，卡片视图的缩略图上会显示配置文件名称。 在列表视图中，配置文件名称显示在 **[!UICONTROL 处理配置文件]** 列。
+對於已指派處理設定檔的資料夾，設定檔名稱會出現在卡片檢視的縮圖上。 在清單檢視中，設定檔名稱會出現在 **[!UICONTROL 處理設定檔]** 欄。
 
-## 使用API上传或摄取资产 {#upload-using-apis}
+## 使用API上傳或內嵌資產 {#upload-using-apis}
 
-中提供了有关上传API和协议，以及指向开源SDK和示例客户端的链接的技术详细信息 [资产上传](developer-reference-material-apis.md#asset-upload) 部分。
+有關上傳API和通訊協定的技術細節，以及開放原始碼SDK和範例使用者端的連結，請參見 [資產上傳](developer-reference-material-apis.md#asset-upload) 部分。
 
-## 提示、最佳实践和限制 {#tips-limitations}
+## 提示、最佳實務和限制 {#tips-limitations}
 
-* 直接二进制上传是上传资产的一种新方法。 默认情况下，产品功能和客户(如 [!DNL Experience Manager] 用户界面， [!DNL Adobe Asset Link]和 [!DNL Experience Manager] 桌面应用程序。 客户技术团队自定义或扩展的任何自定义代码都必须使用新的上传API和协议。
+* 直接二進位上傳是上傳資產的新方法。 產品功能和使用者端預設支援此功能，例如 [!DNL Experience Manager] 使用者介面， [!DNL Adobe Asset Link]、和 [!DNL Experience Manager] 案頭應用程式。 客戶技術團隊自訂或擴充的任何自訂程式碼都必須使用新的上傳API和通訊協定。
 
-* Adobe建议在 [!DNL Experience Manager Assets]. 虽然您可以向文件夹添加更多资产，但是您可能会遇到性能问题，例如导航到此类文件夹的速度较慢。
+* Adobe建議您在每個資料夾中新增不超過1000個資產， [!DNL Experience Manager Assets]. 雖然您可以新增更多資產至資料夾，但您可能會遇到效能問題，例如導覽至這類資料夾的速度變慢。
 
-* 选择 **[!UICONTROL 替换]** 在 [!UICONTROL 名称冲突] 对话框中，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。 如果 [资产分析](/help/assets/assets-insights.md) 启用了，可通过 [!DNL Adobe Analytics]，则重新生成的资产ID将使上为资产捕获的数据失效 [!DNL Analytics].
+* 當您選取 **[!UICONTROL Replace]** 在 [!UICONTROL 名稱衝突] 對話方塊中，會為新資產重新產生資產ID。 此ID與先前資產的ID不同。 若 [資產分析](/help/assets/assets-insights.md) 啟用以追蹤曝光次數或點按次數 [!DNL Adobe Analytics]，則重新產生的資產ID會使為資產擷取的資料於失效 [!DNL Analytics].
 
-* 某些上传方法不会阻止您通过 [禁止字符](#filename-handling) 在文件名中。 字符将替换为 `-` 符号。
+* 有些上傳方法不會阻止您上傳資產 [禁止使用的字元](#filename-handling) 檔案名稱中的。 字元已取代為 `-` 符號。
 
-* 使用浏览器上传资产仅支持平面文件列表，而不支持嵌套文件夹层次结构。 要上传嵌套文件夹中的所有资产，请考虑使用 [桌面应用程序](#upload-assets-desktop-clients).
+* 使用瀏覽器上傳資產僅支援一般檔案清單，不支援巢狀資料夾階層。 若要上傳巢狀資料夾內的所有資產，請考慮使用 [案頭應用程式](#upload-assets-desktop-clients).
 
-* 批量导入方法会导入数据源上存在的整个文件夹结构。 但是，在中仅创建非空文件夹 [!DNL Experience Manager].
+* 大量匯入方法會匯入資料來源中存在的整個資料夾結構。 不過，只有非空白資料夾會建立於 [!DNL Experience Manager].
 
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
@@ -393,12 +393,12 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 
 **另请参阅**
 
-* [翻译资产](translate-assets.md)
+* [翻译资源](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [资产支持的文件格式](file-format-support.md)
+* [资源支持的文件格式](file-format-support.md)
 * [搜索资源](search-assets.md)
-* [连接的资产](use-assets-across-connected-assets-instances.md)
-* [资源报表](asset-reports.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
 * [元数据架构](metadata-schemas.md)
 * [下载资源](download-assets-from-aem.md)
 * [管理元数据](manage-metadata.md)
@@ -411,5 +411,5 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 >* [[!DNL Adobe Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
->* [资产上传技术参考](developer-reference-material-apis.md#asset-upload)
+>* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload)
 

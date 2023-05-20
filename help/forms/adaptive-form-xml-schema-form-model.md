@@ -1,6 +1,6 @@
 ---
-title: 为自适应表单设计XML模式
-description: 了解如何在自适应表单中将XML模式用作表单模型。 使用XML架构的示例深入挖掘，使用XML架构向字段添加特殊属性，并限制自适应表单组件的可接受值。
+title: 為最適化表單設計XML結構描述
+description: 瞭解如何將XML結構描述用作最適化表單中的表單模型。 深入瞭解XML結構描述範例、使用XML結構描述將特殊屬性新增至欄位，以及限制調適型表單元件的可接受值。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -12,34 +12,34 @@ ht-degree: 6%
 
 ---
 
-# 为自适应表单设计XML模式 {#creating-adaptive-forms-using-xml-schema}
+# 為最適化表單設計XML結構描述 {#creating-adaptive-forms-using-xml-schema}
 
 ## 前提条件 {#prerequisites}
 
-使用XML架构作为其表单模型来创作自适应表单需要对XML架构有基本的了解。 此外，还建议在阅读本文之前阅读以下内容。
+使用XML結構描述作為表單模型來製作調適型表單需要基本瞭解XML結構描述。 此外，建議您先閱讀下列內容，再閱讀本文。
 
-* [创建自适应表单](creating-adaptive-form.md)
-* [XML 架构](https://www.w3.org/TR/xmlschema-2/)
+* [建立最適化表單](creating-adaptive-form.md)
+* [XML結構描述](https://www.w3.org/TR/xmlschema-2/)
 
-## 使用XML架构作为表单模型 {#using-an-xml-schema-as-form-model}
+## 使用XML結構描述作為表單模型 {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] 支持使用现有XML架构作为表单模型来创建自适应表单。 此XML架构表示组织内的后端系统生成或使用数据的结构。
+[!DNL Experience Manager Forms] 支援使用現有XML結構描述作為表單模型來建立調適型表單。 此XML結構描述代表組織中的後端系統產生或使用資料的結構。
 
-使用XML架构的主要功能包括：
+使用XML結構描述的主要功能包括：
 
-* XSD的结构在自适应表单创作模式的“内容查找器”选项卡中显示为树。 您可以将XSD层次结构中的元素拖放到自适应表单中。
-* 您可以使用与关联架构兼容的XML预填充表单。
-* 提交时，用户输入的数据将以与关联架构一致的XML形式提交。
+* XSD的結構會在最適化表單的製作模式中，以樹狀結構顯示在「內容尋找器」標籤中。 您可以從XSD階層拖曳元素並新增至最適化表單。
+* 您可以使用與相關結構描述相容的XML預先填入表單。
+* 提交時，使用者輸入的資料會以符合關聯結構描述的XML形式提交。
 
-XML架构由简单和复杂的元素类型组成。 元素具有可向元素添加规则的属性。 将这些元素和属性拖动到自适应表单上后，会自动将它们映射到相应的自适应表单组件。
+XML結構描述包含簡單和複雜的元素型別。 元素具有將規則新增至元素的屬性。 將這些元素和屬性拖曳至最適化表單時，會自動對應至對應的最適化表單元件。
 
-XML元素与自适应表单组件的映射如下所示：
+XML元素與最適化表單元件的對應如下：
 
 <table>
  <tbody>
   <tr>
-   <th><strong>XML元素或属性 </strong></th>
-   <th><strong>自适应表单组件</strong></th>
+   <th><strong>XML元素或屬性 </strong></th>
+   <th><strong>最適化表單元件</strong></th>
   </tr>
   <tr>
    <td><code>xs:string</code></td>
@@ -56,7 +56,7 @@ XML元素与自适应表单组件的映射如下所示：
      <li><code>xs:xs:int</code></li>
      <li><code class="code">xs:decimal
         </code></li>
-     <li>所有类型的数值</li>
+     <li>所有型別的數值</li>
     </ul> </td>
    <td>数值框</td>
   </tr>
@@ -67,18 +67,18 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><code class="code">xs:enumeration
       </code></td>
-   <td>下拉列表</td>
+   <td>下拉式清單</td>
   </tr>
   <tr>
-   <td>任何复杂类型元素</td>
+   <td>任何複雜型別的元素</td>
    <td>面板</td>
   </tr>
  </tbody>
 </table>
 
-## 示例XML架构 {#sample-xml-schema}
+## 範例XML結構描述 {#sample-xml-schema}
 
-以下是XML架构的示例。
+以下是XML結構描述的範例。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -122,60 +122,60 @@ XML元素与自适应表单组件的映射如下所示：
 
 >[!NOTE]
 >
->确保XML架构只有一个根元素。 不支持具有多个根元素的XML架构。
+>確保您的XML結構描述只有一個根元素。 不支援具有多個根元素的XML結構描述。
 
-## 使用XML架构向字段添加特殊属性 {#adding-special-properties-to-fields-using-xml-schema}
+## 使用XML結構描述新增特殊屬性至欄位 {#adding-special-properties-to-fields-using-xml-schema}
 
-您可以将以下属性添加到XML架构元素，以向关联的自适应表单的字段添加特殊属性。
+您可以將下列屬性新增至「XML結構描述」元素，以將特殊屬性新增至相關聯的最適化表單的欄位。
 
 <table>
  <tbody>
   <tr>
-   <th><strong>架构属性</strong></th>
-   <th><strong>在自适应表单中使用</strong></th>
-   <th><strong>在 </strong></th>
+   <th><strong>結構描述屬性</strong></th>
+   <th><strong>在最適化表單中使用</strong></th>
+   <th><strong>支援 </strong></th>
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>将字段标记为必填<br /> </td>
+   <td>將欄位標示為必填<br /> </td>
    <td>属性</td>
   </tr>
   <tr>
    <td><code>default="default value"</code></td>
-   <td>添加默认值</td>
-   <td>元素和属性</td>
+   <td>新增預設值</td>
+   <td>元素和屬性</td>
   </tr>
   <tr>
    <td><code>minOccurs="3"</code></td>
-   <td><p>指定最小发生次数</p> <p>(对于可重复的子表单（复杂类型）)</p> </td>
-   <td>元素（复杂类型）</td>
+   <td><p>指定最小發生次數</p> <p>(適用於可重複的子表單（複雜型別）)</p> </td>
+   <td>元素（複雜型別）</td>
   </tr>
   <tr>
    <td><code class="code">maxOccurs="10"
       </code></td>
-   <td><p>指定最大发生次数</p> <p>(对于可重复的子表单（复杂类型）)</p> </td>
-   <td>元素（复杂类型）</td>
+   <td><p>指定最大發生次數</p> <p>(適用於可重複的子表單（複雜型別）)</p> </td>
+   <td>元素（複雜型別）</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->将架构元素拖动到自适应表单时，会通过以下方式生成默认标题：
+>將結構描述元素拖曳至最適化表單時，會產生預設註解：
 >
->* 将元素名称的第一个字符大写
->* 在驼峰式大小写边界处插入空格。
+>* 將元素名稱的第一個字元轉換為大寫
+>* 在駝峰式大小寫邊界處插入空格。
 >
->例如，如果您将 `userFirstName` 架构元素中，自适应表单中生成的描述为 `User First Name`.
+>例如，如果您將 `userFirstName` 結構描述元素中，最適化表單中產生的標題為 `User First Name`.
 
-## 限制自适应表单组件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
+## 限制最適化表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
-您可以向XML架构元素添加以下限制，以限制自适应表单组件可接受的值：
+您可以新增下列限制至XML結構描述元素，以限制最適化表單元件可接受的值：
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong> 架构属性</strong></p> </td>
+   <td><p><strong> 結構描述屬性</strong></p> </td>
    <td><p><strong>数据类型</strong></p> </td>
    <td><p><strong>描述</strong></p> </td>
    <td><p><strong>组件</strong></p> </td>
@@ -183,7 +183,7 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><p><code>totalDigits</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定组件中允许的最大位数。 指定的位数必须大于零。</p> </td>
+   <td><p>指定元件中允許的最大位數。 指定的位數必須大於零。</p> </td>
    <td>
     <ul>
      <li>数值框</li>
@@ -193,7 +193,7 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定数值和日期的上限。 默认情况下，包含最大值。</p> </td>
+   <td><p>指定數值和日期的上限。 依預設，會包含最大值。</p> </td>
    <td>
     <ul>
      <li>数值框</li>
@@ -204,7 +204,7 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定数值和日期的下限。 默认情况下，包含最小值。</p> </td>
+   <td><p>指定數值和日期的下限。 依預設，會包含最小值。</p> </td>
    <td>
     <ul>
      <li>数值框</li>
@@ -214,8 +214,8 @@ XML元素与自适应表单组件的映射如下所示：
   </tr>
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
-   <td><p>布尔型</p> </td>
-   <td><p>如果为true，则在表单组件中指定的数值或日期必须小于为maximum属性指定的数值或日期。</p> <p>如果为false，则表单组件中指定的数值或日期必须小于或等于为最大属性指定的数值或日期。</p> </td>
+   <td><p>布尔值</p> </td>
+   <td><p>如果為true，則表單元件中指定的數值或日期必須小於為最大屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須小於或等於為最大屬性指定的數值或日期。</p> </td>
    <td>
     <ul>
      <li>数值框</li>
@@ -225,8 +225,8 @@ XML元素与自适应表单组件的映射如下所示：
   </tr>
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
-   <td><p>布尔型</p> </td>
-   <td><p>如果为true，则表单组件中指定的数值或日期必须大于为最小属性指定的数值或日期。</p> <p>如果为false，则表单组件中指定的数值或日期必须大于或等于为最小属性指定的数值或日期。</p> </td>
+   <td><p>布尔值</p> </td>
+   <td><p>如果為true，則表單元件中指定的數值或日期必須大於為最小屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須大於或等於為最小屬性指定的數值或日期。</p> </td>
    <td>
     <ul>
      <li>数值框</li>
@@ -237,7 +237,7 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定组件中允许的最小字符数。 最小长度必须等于或大于零。</p> </td>
+   <td><p>指定元件中允許的最小字元數。 最小長度必須等於或大於零。</p> </td>
    <td>
     <ul>
      <li>文本框</li>
@@ -246,7 +246,7 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><p><code>maxLength</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定组件中允许的最大字符数。 最大长度必须大于零。</p> </td>
+   <td><p>指定元件中允許的最大字元數。 最大長度必須大於零。</p> </td>
    <td>
     <ul>
      <li>文本框</li>
@@ -255,7 +255,7 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><p><code>length</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定组件中允许的字符数。 长度必须等于或大于零。</p> </td>
+   <td><p>指定元件中允許字元的確切數量。 長度必須等於或大於零。</p> </td>
    <td>
     <ul>
      <li>文本框</li>
@@ -264,19 +264,19 @@ XML元素与自适应表单组件的映射如下所示：
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定组件中允许的最大小数位数。 fractionDigits必须等于或大于零。</p> </td>
+   <td><p>指定元件中允許的小數位數上限。 fractionDigits必須等於或大於零。</p> </td>
    <td>
     <ul>
-     <li> 具有数据类型浮点或小数的数字框</li>
+     <li> 資料型別為浮點數或小數的數值方塊</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>字符串</p> </td>
-   <td><p>指定字符的顺序。 如果字符符合指定的模式，则组件接受字符。</p> <p>模式属性映射到相应自适应表单组件的验证模式。</p> </td>
+   <td><p>指定字元順序。 如果字元符合指定的模式，元件會接受字元。</p> <p>pattern屬性對應至對應的最適化表單元件的驗證模式。</p> </td>
    <td>
     <ul>
-     <li>映射到XSD架构的所有自适应Forms组件 </li>
+     <li>對應至XSD結構描述的所有Adaptive Forms元件 </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -284,17 +284,17 @@ XML元素与自适应表单组件的映射如下所示：
 
 ## 常见问题 {#frequently-asked-questions}
 
-**我在内容查找器中有一个很长的复杂结构。 如何查找特定元素？**
+**我在內容尋找器中有個長而複雜的結構。 如何找到特定元素？**
 
-您有两个选项：
+您有兩個選項：
 
-* 滚动浏览树结构
-* 使用“搜索”框查找元素
+* 捲動瀏覽樹狀結構
+* 使用搜尋方塊來尋找元素
 
-**什么是bindRef?**
+**什麼是bindRef？**
 
-A `bindRef` 是自适应表单组件与架构元素或属性之间的连接。 它决定了 `XPath` 其中，从此组件或字段捕获的值在输出XML中可用。 A `bindRef`从预填充（预填充）XML预填充字段值时，也会使用。
+A `bindRef` 最適化表單元件與結構描述元素或屬性之間的連線。 它會指定 `XPath` 其中從這個元件或欄位擷取的值可在輸出XML中使用。 A `bindRef`從預先填入（預先填入）的XML預先填入欄位值時，也會使用。
 
-**为什么我无法为可重复的子表单（minOccours或maxOccurs值大于1）拖动子表单的单个元素（从任何复杂类型生成的结构）？**
+**為什麼我無法為可重複的子表單（minOccours或maxOccurs值大於1）拖曳子表單的個別元素（由任何複雜型別產生的結構）？**
 
-在可重复的子表单中，您必须使用“完成”子表单。 如果只希望选择字段，请使用整个结构并删除不需要的字段。
+在可重複的子表單中，您必須使用「完成」子表單。 如果您只想使用選擇性欄位，請使用整個結構並刪除不需要的結構。

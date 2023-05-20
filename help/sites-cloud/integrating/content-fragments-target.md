@@ -3,7 +3,7 @@ title: 将内容片段导出到 Adobe Target
 description: 将内容片段导出到 Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2229'
 ht-degree: 100%
 
@@ -206,6 +206,7 @@ ht-degree: 100%
       >* 提高了安全性
       >* 改善了针对单页应用程序的实施选项
       >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
+
       >
       >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 

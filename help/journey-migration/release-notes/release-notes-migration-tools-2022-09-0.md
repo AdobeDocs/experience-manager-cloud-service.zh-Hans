@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service版本2022.9.0中迁移工具的发行说明
-description: AEMas a Cloud Service版本2022.9.0中迁移工具的发行说明
+title: AEMas a Cloud Service2022.9.0版中移轉工具的發行說明
+description: AEMas a Cloud Service2022.9.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: 581370ba-e3e8-487e-af83-a1eacbda2763
 source-git-commit: dd4515bdbba81dcec0868c3058c7745775cc80ff
@@ -10,22 +10,22 @@ ht-degree: 10%
 
 ---
 
-# AEMas a Cloud Service版本2022.9.0中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service2022.9.0版中移轉工具的發行說明 {#release-notes}
 
-本页概述了AEM 2022.9.0as a Cloud Service中迁移工具的发行说明。
+本頁面總覽AEMas a Cloud Service2022.9.0中移轉工具發行說明。
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.34的发布日期是2022年9月12日。
+Best Practices Analyzer v2.1.34的發行日期為2022年9月12日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* 现在，BPA可以检测并报告客户是否已添加自定义日志记录器配置。 AEMas a Cloud Service不支持自定义日志文件。 所有日志文件都需要通过管道传输到 `error.log`
-* BPA现在可以报告客户存储库中存在的不同二进制MIME类型以及与这些类型关联的计数。
+* BPA現在可以偵測和報告客戶是否已新增自訂記錄器設定。 AEMas a Cloud Service不支援自訂記錄檔。 所有記錄檔都需要管道傳輸至 `error.log`
+* BPA現在可以報告存在於客戶存放庫中的不同二進位MIME型別以及與其相關的計數。
 
 ### 错误修复 {#bug-fixes-bpa}
 
-* 在单一模式下显示大量发现结果时，BPA UI出现呈现问题。 此问题已得到修复。
-* BPA错误地将某些发现报告为严重性为不兼容的更改。 此问题已得到修复。
+* 在單一模式下顯示大量發現時，BPA UI出現轉譯問題。 此问题已得到修复。
+* BPA錯誤地報告了一些發現為與嚴重嚴重性不相容的變更。 此问题已得到修复。

@@ -1,6 +1,6 @@
 ---
-title: 在屏幕中注册播放器as a Cloud Service
-description: 本页介绍如何在Screens中as a Cloud Service注册播放器。
+title: 以as a Cloud Service方式在Screens中註冊播放器
+description: 本頁面說明如何以as a Cloud Service方式在Screens中註冊播放器。
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
 source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
@@ -9,65 +9,65 @@ ht-degree: 1%
 
 ---
 
-# 在屏幕中注册播放器as a Cloud Service {#registering-players-screens-cloud}
+# 以as a Cloud Service方式在Screens中註冊播放器 {#registering-players-screens-cloud}
 
-为Screensas a Cloud Service安装和配置播放器后，必须注册播放器。
+安裝並設定Screensas a Cloud Service的播放器後，您必須註冊播放器。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解在Screens服务提供商中注册播放器的情况。 阅读后，您应该能够：
+本檔案可協助您瞭解如何在Screens Services Provider中註冊播放器。 閱讀本檔案後，您應該能夠：
 
-* 了解如何注册播放器
-* 如何从Screens服务提供商处完成注册流程
+* 瞭解如何註冊玩家
+* 如何從Screens Services Provider完成註冊程式
 
-## 注册Screens播放器的步骤 {#register-players}
+## 註冊Screens播放器的步驟 {#register-players}
 
-将播放器安装到Screensas a Cloud Service后，您便可以从Screens服务提供商处注册播放器。
+將播放器安裝到Screensas a Cloud Service後，您就可以從Screens Services Provider註冊播放器了。
 
-请按照以下步骤注册您的播放器：
+請依照下列步驟註冊您的播放器：
 
-1. 登录到Screens服务提供商。
+1. 登入Screens服務提供者。
 
-1. 导航到 **注册代码** 在 **播放器管理** 在左侧导航面板中，单击 **创建代码**.
+1. 導覽至 **註冊代碼** 在 **播放器管理** 從左側導覽面板中並按一下 **建立程式碼**.
 
    >[!NOTE]
-   >如果不存在有效/未过期的代码，请单击创建代码并输入代码的名称，然后根据您的要求选择到期设置。
+   >如果不存在有效/未過期的代碼，請按一下「建立代碼」並輸入代碼的名稱，然後視需要選擇到期設定。
 
    ![图像](/help/screens-cloud/assets/player/register-player1.png)
 
-1. 在 **创建注册代码** 对话框：
+1. 將下列欄位填入 **建立註冊代碼** 對話方塊：
 
    ![图像](/help/screens-cloud/assets/player/register-player2.png)
 
-   1. **注册代码名称**:注册代码的名称
-   1. **注册代码到期**:注册代码的到期日期
-   1. **限制使用**:切换按钮以关闭注册代码的使用限制。 默认情况下，“限制使用情况”选项处于关闭状态。
-   1. **使用限制**:选择使用限制的数字
+   1. **註冊代碼名稱**：註冊代碼的名稱
+   1. **註冊代碼有效期**：您的註冊代碼到期日
+   1. **限制使用量**：切換按鈕以關閉註冊代碼的使用量限制。 根據預設，「限制使用量」選項預設為關閉。
+   1. **使用量限制**：選擇使用量限制的數字
 
-1. 单击 **创建** 创建注册代码。 您将在列表中看到具有注册代码的播放器。
+1. 按一下 **建立** 以建立註冊代碼。 您會在清單中看到含有註冊碼的播放器。
 
    ![图像](/help/screens-cloud/assets/player/register-player3.png)
 
-1. 单击列下的值 **注册代码**  将值复制到剪贴板。
+1. 按一下欄下的值 **註冊代碼**  以將值複製到剪貼簿。
 
-1. 将此值粘贴到 **输入代码** 字段 **播放器注册** 选项卡，然后单击AEM Screens播放器的管理员UI **注册**.
+1. 將此值貼入 **輸入代碼** 中的欄位 **播放器註冊** 索引標籤從AEM Screens播放器的管理員UI開啟，然後按一下 **註冊**.
 
    ![图像](/help/screens-cloud/assets/player/register-player4.png)
 
 
-1. 添加代码后，您将看到播放器现在已从播放器的管理员UI中注册。
+1. 新增程式碼後，您會看到播放器現在已從播放器的管理員UI註冊。
 
    ![图像](/help/screens-cloud/assets/player/register-player5.png)
 
-1. 此时您应会看到此播放器显示在 **播放器** 中。 Screens服务提供商中显示的代码与 **系统信息** 面板。
+1. 您應該會看到此播放器現在顯示於 **播放器** 從左側導覽面板。 Screens Services Provider中顯示的程式碼符合 **系統資訊** 面板（位於「播放器代碼」下方的「管理員UI」）。
 
    ![图像](/help/screens-cloud/assets/player/register-player6.png)
 
    >[!IMPORTANT]
-   >**使用注册代码时的安全最佳实践建议**
-   >作为最佳实践，您可以限制注册代码的使用。 如果注册代码被攻破，但注册数量限制为100个，则攻击者只能注册到该号码，但注册数量不能超过该号码。 您始终可以在创建注册代码并且已注册客户的某些播放器后更新使用限制。 如果客户发现特定注册代码存在异常注册活动，则他们可以在调查时实时降低该限制，如果是虚警，则可以增加返回数量，而不会影响已注册的播放器。
+   >**使用註冊代碼時的安全性最佳實務建議**
+   >依據最佳做法的要求，您可以限制註冊代碼的使用方式。 如果註冊碼遭到破壞，但限製為100個註冊，則攻擊者最多只能註冊該數字，但不能註冊更多。 建立註冊代碼並註冊部分客戶播放器後，您隨時都可以更新使用量限制。 如果客戶觀察到特定註冊代碼的不尋常註冊活動，他們可以在調查時即時降低限制，如果這是誤報，還可以增加數字，而不會影響已註冊的玩家。
 
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-现在，您已将播放器安装并配置为云模式，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中将播放器分配给显示屏as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) 从Screens服务提供商。
+現在您已安裝播放器並設定為雲端模式，接下來應該檢閱檔案以繼續Screensas a Cloud Service歷程。 [將播放器指派給Screensas a Cloud Service的顯示器](/help/screens-cloud/managing-players-registration/assigning-player-display.md) 從Screens Services Provider取得。

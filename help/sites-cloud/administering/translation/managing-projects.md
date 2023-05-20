@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4086'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -443,8 +443,8 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
    ![比较语言副本](../assets/language-copy-compare.png)
 
-1. 此时将并列打开两个页面（启动页面和源页面）。
-   * 有关使用此功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
+1. 兩個頁面（啟動項和來源）將並排開啟。
+   * 如需關於使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## 移动或重命名源页面 {#move-source}
 

@@ -1,6 +1,6 @@
 ---
-title: 内容片段 — 配置浏览器（资产 — 内容片段）
-description: 了解如何在配置浏览器中启用内容片段功能。
+title: 內容片段 — 設定瀏覽器（資產 — 內容片段）
+description: 瞭解如何在設定瀏覽器中啟用內容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 84%
 
 # 内容片段 – 配置浏览器{#content-fragments-configuration-browser}
 
-了解如何在配置浏览器中启用某些内容片段功能，以便利用AEM功能强大的无头交付功能。
+瞭解如何在設定瀏覽器中啟用某些內容片段功能，以便利用AEM強大的Headless傳送功能。
 
 ## 为您的实例启用内容片段功能 {#enable-content-fragment-functionality-instance}
 
@@ -77,7 +77,7 @@ ht-degree: 84%
 
 ### 将配置应用到 Assets 文件夹 {#apply-the-configuration-to-your-assets-folder}
 
-配置 **全球** ，则会应用于任何资产文件夹。
+設定時 **全域** 已啟用內容片段功能，然後套用至任何資產資料夾。
 
 要将其他配置（即不包括全局配置）与类似的 Assets 文件夹一起使用，您必须定义连接。这是通过在适当文件夹的&#x200B;**文件夹属性**&#x200B;的 **Cloud Services** 选项卡中选择适当的&#x200B;**配置**&#x200B;来完成的。
 

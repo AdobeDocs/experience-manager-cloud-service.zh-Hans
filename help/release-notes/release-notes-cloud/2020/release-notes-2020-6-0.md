@@ -5,7 +5,7 @@ exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -58,13 +58,13 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
-* 在 Cloud Manager 中，具有“业务所有者”**&#x200B;角色的用户现在可以从登陆页面（通过项目卡上的快速操作按钮）或项目中删除沙盒项目。
+* 在 Cloud Manager 中，具有“业务所有者”**&#x200B;角色的用户现在可以从登陆页面（通过项目卡上的快速操作按钮）或项目中删除沙盒程序。
 
-   有关更多详细信息，请参阅[删除沙盒项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+   有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
-* 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒项目用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从&#x200B;**项目概述**&#x200B;页面和&#x200B;**环境**&#x200B;页面上的环境卡中使用。在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
+* 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒程序用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从&#x200B;**项目概述**&#x200B;页面和&#x200B;**环境**&#x200B;页面上的环境卡中使用。在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
 
-   有关更多详细信息，请参阅[删除沙盒项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+   有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 在登陆页面上显示引导标记，以告知和指示用户如何进行基本导航。
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 * 现在 Cloud Manager 中提供了&#x200B;**学习**&#x200B;页面，可通过顶部导航访问该页面。该页面包含可帮助用户了解与他们在 Cloud Manager 中分配的角色相关的最常用工作流的资源。
 
-* 沙盒项目现在通过&#x200B;**沙盒**&#x200B;徽章进行标识，该徽章将显示在登陆页面的项目卡上，以及&#x200B;**项目概述**&#x200B;页面中项目名称的旁边。
+* 沙盒程序现在通过&#x200B;**沙盒**&#x200B;徽章进行标识，该徽章将显示在登陆页面的项目卡上，以及&#x200B;**项目概述**&#x200B;页面中项目名称的旁边。
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可访问 Admin Console 中的相应位置，以管理用户角色或 Cloud Manager 权限。现在，登陆页面上的&#x200B;**添加项目**&#x200B;按钮旁边提供了&#x200B;**管理访问权限**&#x200B;按钮。
 
@@ -98,9 +98,9 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 ### 已知问题 {#known-issues-cm}
 
-* 在某一特定时间段内未检测到活动时，沙盒项目内的环境将会休眠。在 Cloud Manager 中不会观察到此状态。但是，可通过开发人员控制台观察到此状态。即将发布的版本中将解决此问题。
+* 在某一特定时间段内未检测到活动时，沙盒程序内的环境将会休眠。在 Cloud Manager 中不会观察到此状态。但是，可通过开发人员控制台观察到此状态。即将发布的版本中将解决此问题。
 
-* 直接从 Cloud Manager 链接到开发人员控制台不会显示用于将沙盒项目的环境解除休眠/休眠的选项。要解决此问题，请在开发人员控制台中，将模式 `#release-cm-p1234-e5678` 添加到 URL 的末尾，其中 *1234* 是项目 ID，*5678* 是环境 ID。即将发布的版本中将解决此问题。
+* 直接从 Cloud Manager 链接到开发人员控制台不会显示用于将沙盒程序的环境解除休眠/休眠的选项。要解决此问题，请在开发人员控制台中，将模式 `#release-cm-p1234-e5678` 添加到 URL 的末尾，其中 *1234* 是项目 ID，*5678* 是环境 ID。即将发布的版本中将解决此问题。
 
 ## [!DNL Adobe Experience Manager Assets] 的新增功能  {#aem-assets}
 
@@ -108,7 +108,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 除通用智能标记以外，增强型智能标记还允许组织培训智能标记模型，以根据客户特定的业务标记识别图像。
 
-在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。请参阅 [如何向资产添加智能标记](/help/assets/smart-tags.md).
+在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。另請參閱 [如何將智慧標籤新增至資產](/help/assets/smart-tags.md).
 
 **支持 3D 内容的摄取、预览和交付**
 
@@ -188,4 +188,4 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 * 下载资产时，如果选择了电子邮件选项，即使提供了有效的电子邮件 ID，下载选项也不可用。(CQ-4296535)
 * 另存为智能收藏集的自定义筛选器无法正确应用于资产。(CQ-4294942)
 * 多项搜索和索引增强功能与错误修复使性能得以提高。(CQ-4286373)
-* 无法在Assets中访问文件夹属性选项卡，并返回500错误。 (CQ-4295701)
+* 無法在Assets中存取資料夾屬性索引標籤，並傳回500錯誤。 (CQ-4295701)

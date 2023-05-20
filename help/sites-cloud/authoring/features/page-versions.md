@@ -1,19 +1,19 @@
 ---
 title: 处理页面版本
-description: 创建、比较和恢复页面版本
+description: 建立、比較和還原頁面的版本
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
 # 处理页面版本 {#working-with-page-versions}
 
-版本控制可创建页面在特定时间点的“快照”。使用版本控制，您可以执行下列操作：
+版本設定功能會在特定時間點建立頁面的「快照」。 使用版本設定，您可以執行下列動作：
 
-* 创建页面的版本。
+* 建立頁面的版本。
 * 恢复一个或多个页面的先前版本以：
    * 还原对页面所做的更改。
    * 恢复已删除的页面。
@@ -23,7 +23,7 @@ ht-degree: 100%
    * 突出显示文本和图像的差异。
 * 时间扭曲功能使用页面版本来确定发布环境的状态。
 
-## 创建新版本 {#creating-a-new-version}
+## 建立新版本 {#creating-a-new-version}
 
 您可以通过以下方式创建某个版本的资源：
 
@@ -40,7 +40,7 @@ ht-degree: 100%
    ![时间线边栏中的版本](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. 选择&#x200B;**保存为版本**。
-1. 根据需要输入&#x200B;**标签**&#x200B;和&#x200B;**评论**。
+1. 輸入 **標籤** 和 **註解** 如有需要。
 
    ![为版本添加标签](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 1. 导航以显示要为其创建版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 从工具栏中选择&#x200B;**创建**。
+1. 選取 **建立** 工具列中的選項。
 1. 此时将打开同一个对话框。您可以根据需要输入&#x200B;**标签**&#x200B;和&#x200B;**评论**。
 1. 通过&#x200B;**创建**&#x200B;确认新版本。
 
@@ -85,8 +85,8 @@ ht-degree: 100%
 >1. 为任意页面创建版本。
 >1. 初始的标签和版本节点名称将表示为 1.0、1.1、1.2，以此类推。
 >1. 恢复第一个版本；即 1.0。
->1. 再次创建新版本。
->1. 此时生成的标签和节点名称将表示为 1.0.0、1.0.1、1.0.2，以此类推。
+>1. 再次建立新版本。
+>1. 產生的標籤和節點名稱現在將為1.0.0、1.0.1、1.0.2等。
 
 
 ### 恢复到某个版本 {#revert-to-a-version}
@@ -96,11 +96,11 @@ ht-degree: 100%
 1. 导航以显示要还原到之前版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开“ **时间线** ”列，然后选择“ **显示全部** ”或“ **版本**”。 将列出所选页面的页面版本。
-1. 选择要还原到的版本。将显示可能的选项：
+1. 選取您要還原的版本。 將顯示可能的選項：
 
    ![恢复到此版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 选择“**还原到此版本**”。将恢复到所选版本，并在时间线中更新信息。
+1. 選取 **還原為此版本**. 将恢复到所选版本，并在时间线中更新信息。
 
 ### 恢复版本 {#restore-version}
 
@@ -115,6 +115,7 @@ ht-degree: 100%
    >如果：
    >* 您已选择一个从未具有任何子页面的页面，
    >* 或者文件夹中的所有页面都没有版本，
+
    >
    >则显示将为空，因为没有适用的版本。
 
@@ -156,37 +157,37 @@ ht-degree: 100%
 
 1. 对于要恢复为&#x200B;*当前*&#x200B;版本的树的所选版本，选择&#x200B;**恢复**。
 
-## 预览版本 {#previewing-a-version}
+## 預覽版本 {#previewing-a-version}
 
-您可以预览特定版本：
+您可以預覽特定版本：
 
-1. 导航以显示要进行比较的页面。
+1. 導覽以顯示您要比較的頁面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
-1. 将列出页面版本。选择要预览的版本：
+1. 將會列出頁面版本。 選取您要預覽的版本：
 
    ![预览版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 选择&#x200B;**预览**。该页面将显示在新选项卡中。
+1. 選取 **預覽**. 頁面將顯示在新標籤中。
 
    >[!CAUTION]
    >
-   >如果页面发生移动，将无法再对移动前制作的任何版本执行预览。
+   >如果頁面已移動，您將無法再對移動前所做的任何版本執行預覽。
    >
    >如果您遇到问题，请检查页面的[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)以查看页面是否已被移动。
 
 ## 将页面的某个版本与当前版本进行比较 {#comparing-a-version-with-current-page}
 
-要将页面的之前版本与当前版本进行比较，请执行以下操作：
+若要比較上一個版本與目前頁面：
 
-1. 导航以显示要进行比较的页面。
+1. 導覽以顯示您要比較的頁面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
-1. 将列出页面版本。选择要进行比较的版本：
+1. 將會列出頁面版本。 選取您要比較的版本：
 
    ![比较版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 选择&#x200B;**与当前比较**。此时将打开[页面差异](/help/sites-cloud/authoring/features/page-diff.md)，并显示存在的差异。
+1. 選取 **與目前比較**. 此 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md) 將會開啟並顯示差異。
 
 ## 时间扭曲 {#timewarp}
 
@@ -200,16 +201,16 @@ ht-degree: 100%
 
 要执行此操作：
 
-* 系统会查找在选定时间处于活动状态的页面版本。
-* 这表示显示的版本是在“时间扭曲”中选择的时间点&#x200B;*之前*&#x200B;创建/激活的。
+* 系統會尋找在選取的時間處於作用中狀態的頁面版本。
+* 這表示顯示的版本已建立/啟動 *早於* 在時間扭曲中選取的時間點。
 * 当浏览到已经删除的页面时，也会呈现相应的页面版本 – 只要该页面的旧版本仍然在存储库中即可。
 * 如果没有找到发布的版本，则时间扭曲会还原到该页面在创作环境中的当前状态（这是为了防止出现错误/404 页面，此页面将阻止您进行浏览）。
 
 ### 使用时间扭曲 {#using-timewarp}
 
-时间扭曲是页面编辑器的一种[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。要启动此模式，只需像切换任何其他模式一样切换此模式即可。
+時間扭曲是 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 頁面編輯器的。 若要啟動，只需像切換任何其他模式一樣切換即可。
 
-1. 为希望启动时间扭曲的页面启动编辑器，然后在模式选择中选择&#x200B;**时间扭曲**。
+1. 啟動您要啟動Timewarp的頁面編輯器，然後選取 **時間扭曲** 在模式選取項中。
 
    ![时间扭曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
@@ -217,7 +218,7 @@ ht-degree: 100%
 
    ![时间扭曲目标日期](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. 将根据设置的日期显示该页面。时间扭曲模式通过窗口顶部的蓝色状态栏来指示。使用该状态栏中的链接可选择新的目标日期，或退出时间扭曲模式。
+1. 根據日期集顯示頁面。 時間扭曲模式會透過視窗頂端的藍色狀態列表示。 使用狀態列中的連結來選取新的目標日期或退出「時間扭曲」模式。
 
    ![在时间扭曲模式下](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 

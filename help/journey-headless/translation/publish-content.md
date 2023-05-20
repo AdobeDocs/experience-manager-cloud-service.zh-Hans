@@ -3,7 +3,7 @@ title: 发布翻译的 Headless 内容
 description: 了解如何发布翻译的内容并在该内容更新时更新翻译。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
 

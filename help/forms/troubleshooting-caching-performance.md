@@ -1,7 +1,7 @@
 ---
-title: 缓存性能疑难解答
+title: 疑難排解快取效能
 seo-title: Troubleshooting caching performance
-description: 缓存性能疑难解答
+description: 疑難排解快取效能
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
@@ -12,32 +12,32 @@ ht-degree: 0%
 
 ---
 
-# 缓存性能 {#caching-performance}
+# 快取效能 {#caching-performance}
 
-在Cloud Service环境中配置或使用自适应Forms缓存时，您可能会遇到以下一些问题：
+在Cloud Service環境中設定或使用Adaptive Forms快取時，您可能會遇到下列一些問題：
 
-## 某些包含图像或视频的自适应Forms不会从Dispatcher缓存中自动失效 {#images-videos-not-invalidated}
+## 某些包含影像或影片的最適化Forms不會從Dispatcher快取中自動失效 {#images-videos-not-invalidated}
 
-您可以从资产浏览器中选择图像或视频并将其添加到自适应表单。 在资产编辑器中编辑这些图像时，包含此类图像的自适应表单的缓存版本不会失效。 自适应表单会继续显示旧图像。
+您可以從資產瀏覽器選取影像或影片，並將其新增至最適化表單。 在Assets編輯器中編輯這些影像時，包含這些影像的最適化表單的快取版本不會失效。 最適化表單會繼續顯示較舊的影像。
 
-要解决此问题，请在发布图像和视频后，明确地取消发布和发布引用这些资产的自适应Forms。
+若要解決此問題，請在發佈影像和視訊後，明確取消發佈並發佈參照這些資產的最適化Forms。
 
-## 某些包含内容片段或体验片段的自适应Forms不会从Dispatcher缓存中自动失效 {#content-fragments-experience-fragments-not-invalidated}
+## 某些包含內容片段或體驗片段的Adaptive Forms不會從Dispatcher快取中自動失效 {#content-fragments-experience-fragments-not-invalidated}
 
-您可以将内容片段或体验片段添加到自适应表单。 独立编辑和发布这些片段时，包含此类片段的自适应表单的缓存版本不会失效。 自适应表单会继续显示旧片段。
+您可以將內容片段或體驗片段新增至最適化表單。 獨立編輯和發佈這些片段時，包含這些片段的適用性表單快取版本不會失效。 最適化表單會繼續顯示較舊的片段。
 
-要解决此问题，请在发布更新的内容片段或体验片段后，明确地取消发布和发布使用这些资产的自适应Forms。
+若要解決此問題，請在發佈更新的內容片段或體驗片段後，明確取消發佈並發佈使用這些資產的Adaptive Forms。
 
-## 仅缓存自适应Forms的第一个实例 {#only-first-instance-cached}
+## 僅快取Adaptive Forms的第一個執行個體 {#only-first-instance-cached}
 
-当自适应表单URL不包含任何本地化信息，并且启用了配置管理器中的“使用浏览器区域设置”选项时，将提供自适应表单的本地化版本，并根据第一个请求（请求的浏览器区域设置）缓存自适应表单的实例，并将其交付给每个后续用户。
+當最適化表單URL不包含任何本地化資訊，且啟用Configuration Manager中的「使用瀏覽器地區設定」選項時，將會提供本地化版本的最適化表單，並根據第一個請求（瀏覽器地區設定）快取最適化表單的執行個體並傳送給每個後續使用者。
 
-执行以下步骤以解决问题：
+執行以下步驟以解決問題：
 
-1. 打开您的Experience Manager项目。
-1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 进行编辑。
-1. 打开 `conf.d/httpd-dispatcher.conf` 或配置为在运行时加载的任何其他配置文件。
-1. 将以下代码添加到文件中并进行保存。 它是一个代码示例，可根据您的环境对其进行修改。
+1. 開啟您的Experience Manager專案。
+1. 開啟 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 進行編輯。
+1. 開啟 `conf.d/httpd-dispatcher.conf` 或任何其他設定為在執行階段載入的組態檔。
+1. 將下列程式碼新增至您的檔案並儲存。 此範常式式碼會加以修改以符合您的環境。
 
 ```shellscript
     # Handle actual URL convention (just pass through)
@@ -55,15 +55,15 @@ ht-degree: 0%
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
 ```
 
-## CDN缓存在300秒后停止工作 {#cdn-caching-stops-working-after-300-seconds}
+## CDN快取會在300秒後停止運作 {#cdn-caching-stops-working-after-300-seconds}
 
-CDN缓存在300秒后停止工作，所有在CDN上缓存的请求都将被重定向到Dispatcher。
+CDN快取在300秒後停止運作，對CDN上快取的所有請求都會重新導向到Dispatcher。
 
-要解决此问题，请将页面标题设置为0:
+若要解決此問題，請將age標頭設為0：
 
-1. 在 `src\conf.d\available_vhosts`
+1. 建立檔案於 `src\conf.d\available_vhosts`
 
-1. 将以下内容添加到文件中以设置页面标题
+1. 將以下內容新增至檔案以設定age標頭
 
    ```shellscript
        <IfModule mod_headers.c>
@@ -72,5 +72,5 @@ CDN缓存在300秒后停止工作，所有在CDN上缓存的请求都将被重�
        </IfModule>
    ```
 
-1. 保存并关闭文件。
-1. 修改软链接 `src\conf.d\enabled_vhosts\default.vhost` 指向新文件。
+1. 儲存並關閉檔案。
+1. 修改以下專案的軟連結： `src\conf.d\enabled_vhosts\default.vhost` 指向新檔案。

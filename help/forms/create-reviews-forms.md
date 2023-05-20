@@ -1,116 +1,115 @@
 ---
-title: 在表单中创建和管理审阅
+title: 在表單中建立和管理稽核
 seo-title: Creating and managing reviews in forms
-description: 审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。
+description: 檢閱是一種機制，可讓一個或多個檢閱者對表單中可用的資產進行評論。
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 topic-tags: forms-manager
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
 
 ---
 
-# 创建和管理表单中资产的审阅{#creating-and-managing-reviews-for-assets-in-forms}
+# 建立和管理表單中資產的稽核{#creating-and-managing-reviews-for-assets-in-forms}
 
 ## 审核 {#review}
 
-审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。
+稽核是一種機制，可讓一個或多個稽核者對表單中可用的資產進行評論。
 
-## 设置审阅 {#setting-up-a-review}
+## 設定稽核 {#setting-up-a-review}
 
-1. 导航到Forms选项卡并选择表单。
-1. 如果表单没有进行审核，则开始审核 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 图标。 单击Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 图标。
-1. 输入以下信息：
+1. 導覽至Forms索引標籤並選取表單。
+1. 如果表單沒有正在進行的稽核，則開始稽核 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 圖示會出現在「動作」列中。 按一下開始複查 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 圖示。
+1. 輸入下列資訊：
 
-   * 标题：必填项，可包含字母数字字符、连字符或下划线。
-   * 描述：可选，用于描述审阅目的/内容。
-   * 截止日期：可选，审核结束的日期。 在截止时间过后，任务将显示为“逾期”。
-   * 审阅人：必须至少设置1。 键入组名称或用户名会列出除服务用户组之外的所有匹配名称。 选择名称，然后单击“添加”。
+   * 標題：必要，可包含英數字元、連字型大小或底線。
+   * 說明：選用，說明複查的目的/內容。
+   * 截止日期：選用，稽核結束的日期。 超過截止日期時，任務會顯示為「過期」。
+   * 稽核者：至少必須有一個。 輸入群組名稱或使用者名稱會列出服務使用者群組以外的所有相符名稱。 選取名稱並按一下「新增」。
 
-1. 单击开始以开始审阅。
-
->[!NOTE]
->
->* 管理员可以访问与表单用户关联的任何组。
->* 无法选择“服务用户”组进行审阅。
-
-
-### 设置审阅时发生的操作 {#actions-that-occur-when-a-review-is-set-up}
-
-本节介绍在创建或设置审阅时所发生的情况。
-
-1. 将创建新审阅任务并将其分配给所选审阅人。
-1. 所有审阅人都被指派了审阅任务。 任务将显示在其“通知”部分中。 审阅人可以单击通知，或转到收件箱以查看任务。 审阅人可以单击以打开审阅任务，查看表单，然后开始添加注释。
-
-   ![审阅者通知警报](assets/review-notification-img.png)
-
-   审阅者通知警报
-
-1. 表单的审阅人可以使用注释框。 其他人可以查看评论，但无法写评论。
-
-## 管理审阅 {#managing-a-review}
+1. 按一下「開始」以開始複查。
 
 >[!NOTE]
 >
->只能修改正在进行的审阅。 无法修改已完成的审阅。
-
-1. 导航到Forms选项卡并选择表单。
-
-1. 如果资产正在进行审核，并且您是审核的发起者，则会进行管理审核 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 图标。 只有审核启动器才能管理（更新/结束）审核。
-
-   单击Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)图标。
-
-   对于启动器以外的用户，“管理审阅”图标处于禁用状态。
-
-1. 您会看到一个显示信息的屏幕：
-
-   * **标题**:无法编辑。
-
-   * **描述**:可进行编辑。
-
-   * **截止时间**:可进行编辑。 您可以将截止日期修改为超出当前日期和时间的任何日期和时间。
-
-   * **审阅人名称**:可进行编辑。 可以添加或删除审阅人。 如果任务逾期，则只有在将截止日期延长到当前日期之后，才能添加审阅人。
-
-1. 编辑必需的字段，然后单击“完成”。
-
-   ![在任务管理器中查看更新状态](assets/manage-review-img.png)
-
-   在任务管理器中查看更新状态
-
-1. 要结束审阅，请单击“结束审阅”(End Review)。
-
-### 修改审阅时发生的操作 {#actions-that-occur-when-a-review-is-modified}
-
-本节介绍审核更新/结束时发生的情况：
-
-1. 如果修改了审阅说明，则会更新审阅人和发起人的相应任务。
-1. 如果修改了审阅截止时间，则审阅人的相应任务将更新为新日期。
-
-1. 如果删除了审阅人：
-
-   ![删除审阅人](assets/removeduser.png)
-
-   删除审阅人
-
-   1. 如果未完成，则分配的任务将终止。
-   1. 审阅人无法再对表单进行注释。
-
-1. 如果添加了审阅人：
-
-   ![添加审阅人](assets/addedreviewer.png)
-
-   添加审阅人
-
-   1. 将创建审核任务并将其分配给新添加的审核人员。
-   1. 新添加的审阅人可以添加有关表单的注释。
-
-1. 审核结束时：
-
-   1. **审阅人**:对于每个审阅人，与审阅相关的未完成任务将终止。 该任务在审阅人的“通知”部分中不再显示为“待处理”。
-   1. **发起者**:分配给审核启动器的任务标记为完成。 该任务将从审阅启动器的“通知”部分中删除。
-   1. **全部**:该审阅显示在“上一审阅”(Previous Reviews)部分中。 无法添加进一步的评论。
-      ![审阅完成](assets/review-complete-imgg.png)
+>* 管理員可以存取與表單使用者相關聯的任何群組。
+>* 服務使用者群組無法供選取檢閱。
 
 
+### 設定稽核時發生的動作 {#actions-that-occur-when-a-review-is-set-up}
+
+本節說明建立或設定稽核時會發生什麼情況。
+
+1. 會建立新的稽核任務並指派給所選的稽核者。
+1. 所有稽核者都會被指派稽核任務。 任務會出現在其通知區段中。 檢閱者可以按一下通知，或前往「收件匣」檢視工作。 稽核者可以按一下以開啟稽核任務、檢視表單並開始新增註釋。
+
+   ![檢閱者通知警報](assets/review-notification-img.png)
+
+   檢閱者通知警報
+
+1. 註解方塊可供表單的檢閱者使用。 其他人可以檢視註解，但無法寫入註解。
+
+## 管理評論 {#managing-a-review}
+
+>[!NOTE]
+>
+>只能修改正在進行的稽核。 無法修改已完成的稽核。
+
+1. 導覽至Forms索引標籤並選取表單。
+
+1. 如果資產正在進行檢閱，而您是檢閱的發起人，則需執行「管理檢閱」 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 圖示會出現在「動作」列中。 只有稽核發起人可以管理（更新/結束）稽核。
+
+   按一下「管理檢閱」 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)圖示。
+
+   對於啟動器以外的使用者，管理檢閱圖示會停用。
+
+1. 您會看到一個顯示資訊的畫面：
+
+   * **標題**：無法編輯。
+
+   * **說明**：可供編輯。
+
+   * **期限**：可供編輯。 您可以將截止日期修改為目前日期及時間之後的任何日期及時間。
+
+   * **檢閱者名稱**：可供編輯。 您可以新增或移除稽核者。 如果任務過期，您只能在截止日期延長至目前日期之後新增稽核者。
+
+1. 編輯必要的欄位，然後按一下「完成」。
+
+   ![在任務管理員中檢閱更新的狀態](assets/manage-review-img.png)
+
+   在任務管理員中檢閱更新的狀態
+
+1. 若要結束檢閱，請按一下「結束檢閱」。
+
+### 修改稽核時發生的動作 {#actions-that-occur-when-a-review-is-modified}
+
+本節說明檢閱更新/結束時的作業：
+
+1. 如果修改了「稽核」描述，則會更新稽核者和發起者的相應任務。
+1. 如果修改了稽核截止日期，稽核者的對應任務會以新日期更新。
+
+1. 如果移除稽核者：
+
+   ![移除稽核者](assets/removeduser.png)
+
+   移除稽核者
+
+   1. 如果未完成，則指派的任務會終止。
+   1. 稽核者無法再對表單發表評論。
+
+1. 如果新增稽核者：
+
+   ![新增稽核者](assets/addedreviewer.png)
+
+   新增稽核者
+
+   1. 稽核任務已建立並指派給新加入的稽核者。
+   1. 新加入的稽核者可新增表單相關註解。
+
+1. 當稽核結束時：
+
+   1. **檢閱者**：對於每個稽核者，與稽核相關的未完成任務會終止。 任務在檢閱者的「通知」區段中不再顯示為「待定」。
+   1. **發起人**：指派給檢閱發起人的任務已標籤為完成。 任務會從稽核發起人的Notification區段中移除。
+   1. **全部**：評論會顯示在「先前的評論」區段中。 無法新增更多註解。
+      ![檢閱完成](assets/review-complete-imgg.png)

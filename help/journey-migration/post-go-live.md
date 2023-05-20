@@ -1,6 +1,6 @@
 ---
-title: 上线后
-description: 了解如何监控问题并提高性能
+title: 上線後
+description: 瞭解如何監控問題並改善效能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 39%
 
 ---
 
-# 上线后 {#post-go-live}
+# 上線後 {#post-go-live}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
@@ -18,15 +18,15 @@ ht-degree: 39%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="访问和管理日志"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
 
-这是历程的最后一部分，因此您将学习如何在迁移完成后监控问题并提高性能。 您应确保清理临时文件，审查持续开发的最佳实践并管理日志。
+這是歷程的最後一部分，因此您將瞭解如何監視問題，並在移轉完成後改善效能。 您應該確保清理暫存檔，審查持續開發的最佳實務並管理記錄。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在历程的上一步中，您学习了如何执行迁移和 [上线](/help/journey-migration/go-live.md) 代码和内容准备好移到AEM  as a Cloud Service后。
+在歷程的上一步中，您已瞭解如何執行移轉並 [上線](/help/journey-migration/go-live.md) 在程式碼和內容準備好移至AEMas a Cloud Service中後。
 
 ## 目标 {#objective}
 
-本文档介绍可用于对AEMas a Cloud Service环境进行故障诊断的工具：
+本檔案說明可用於疑難排解AEMas a Cloud Service環境的工具：
 
 * **开发人员控制台**
 * **CRXDE Lite**
@@ -34,7 +34,7 @@ ht-degree: 39%
 
 ## 开发人员控制台 {#developer-console}
 
-开发人员控制台中提供了调试AEMas a Cloud Service开发人员环境的功能，可用于开发、暂存和生产环境。
+開發人員控制檯中提供AEMas a Cloud Service開發人員環境的偵錯功能，可用於開發、測試和生產環境。
 
 请参阅[实施 AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)，了解有关开发工具的更多信息。
 
@@ -43,7 +43,7 @@ ht-degree: 39%
 作为用户，您可以在开发环境中访问 CRXDE Lite，但不能在暂存或生产环境中访问。
 
 >[!IMPORTANT]
->写入不可变存储库，例如 `/libs` 和 `/apps` 运行时会导致错误。 此外，您还无法访问用于暂存和生产环境的开发人员工具。
+>寫入不可變的存放庫，例如 `/libs` 和 `/apps` 在執行階段導致錯誤。 此外，您無權存取測試和生產環境的開發人員工具。
 
 请参阅[使用 CRXDE Lite 进行开发](/help/implementing/developing/tools/crxde.md)，了解如何使用 CRXDE Lite 来开发 AEM 应用程序。
 
@@ -53,7 +53,7 @@ ht-degree: 39%
 
 请参阅[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)，了解如何通过 UI 或通过 Cloud Manager 从 API 访问和管理日志。
 
-## 联系支持人员 {#contacting-support}
+## 連絡支援 {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
@@ -61,24 +61,24 @@ ht-degree: 39%
 >abstract="请联系我们的 AEM 支持团队，获取说明或解决任意问题。"
 >additional-url="https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 支持"
 
-如果您对访问Cloud Service有任何疑问，请联系您的Adobe代表或 [支持Experience Cloud](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 以了解更多详细信息。
+如果您對存取Cloud Service有任何疑問，請聯絡您的Adobe代表或 [支援Experience Cloud](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 以取得更多詳細資料。
 
-## 文档学习 {#document-learnings}
+## 檔案學習 {#document-learnings}
 
-迁移完成后，您应记录在此过程中获得的知识。 一些可能有助于文档处理的问题包括：
+移轉一旦完成，您應該記錄在此過程中獲得的知識。 可能有助於說明檔案流程的一些問題包括：
 
-* 什么管用，什么管用？
-* 主要的痛点是什么？
-* Recommendations，以防将来迁移。
+* 哪些程式效果良好，哪些程式效果缺佳？
+* 主要煩惱為何？
+* Recommendations，以備日後移轉時使用。
 
-然后，您应该与组织内的利益相关方和团队共享这些迁移后学习内容。
+然後，您應該與組織內的利害關係人和團隊分享這些移轉後學習。
 
 ## 历程结束 - 是吗？ {#journey-ends}
 
-恭喜！您已完成AEMas a Cloud Service迁移历程! 您应该了解如何：
+恭喜！您已完成AEMas a Cloud Service移轉歷程！ 您應該瞭解如何：
 
-* 开始迁移到AEMas a Cloud Service
-* 确定您的部署是否已准备好移至AEMas a Cloud Service
-* 使代码和内容云就绪
-* 执行迁移
-* 监控问题并提高性能
+* 開始使用AEMas a Cloud Service
+* 判斷您的部署是否已準備好移至AEMas a Cloud Service
+* 讓您的程式碼和內容雲端準備就緒
+* 執行移轉
+* 監控問題並改善效能

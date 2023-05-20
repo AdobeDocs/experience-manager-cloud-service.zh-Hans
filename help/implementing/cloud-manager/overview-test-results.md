@@ -3,7 +3,7 @@ title: Cloud Manager 测试概述
 description: 概述 Cloud Manager 自动运行的三种类型的测试，确保自定义代码的质量。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 

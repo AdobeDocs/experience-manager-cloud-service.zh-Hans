@@ -1,6 +1,6 @@
 ---
-title: 在屏幕中安装和配置播放器as a Cloud Service
-description: 本页介绍如何在Screensas a Cloud Service安装和配置播放器。
+title: as a Cloud Service在Screens中安裝和設定播放器
+description: 本頁面說明如何在Screensas a Cloud Service安裝及設定播放器。
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
@@ -9,83 +9,83 @@ ht-degree: 1%
 
 ---
 
-# 在屏幕中安装和配置播放器as a Cloud Service {#installing-players-screens-cloud}
+# as a Cloud Service在Screens中安裝和設定播放器 {#installing-players-screens-cloud}
 
-本节介绍如何安装已注册到内部部署AEM实例的AEM Screens播放器。 此外，您还必须对现有播放器进行工厂重置，然后针对AEM Screens as a Cloud Service注册新播放器。
+本節說明如何安裝註冊至內部部署AEM例項的AEM Screens播放器。 此外，您必須在工廠重設現有播放器，然後針對AEM Screensas a Cloud Service註冊新播放器。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解在注册播放器之前如何设置播放器。 读完之后，您应该能够理解：
+本檔案可協助您瞭解在註冊播放器之前如何設定播放器。 閱讀本檔案後，您應能瞭解：
 
-* 从何处安装播放器
-* 如何将播放器更新为云模式
+* 播放器的安裝來源：
+* 如何將播放器更新至雲端模式
 
-## 将播放器设置为云模式的步骤 {#cloud-mode-setup}
+## 將播放器設定為雲端模式的步驟 {#cloud-mode-setup}
 
-从下载最新播放器后 [AEM Screens Player下载](https://download.macromedia.com/screens/)，您现在可以将播放器更新为云模式。
+從下載最新的播放器後 [AEM Screens播放器下載](https://download.macromedia.com/screens/)，您現在已準備好將播放器更新至雲端模式。
 
-请按照以下步骤更新您的播放器：
+請依照下列步驟更新您的播放器：
 
-1. 打开AEM Screens播放器。
+1. 開啟AEM Screens播放器。
 
    >[!NOTE]
-   >您可以选择使用专用硬件设备或在您自己的播放器上使用Web扩展进行测试。
+   >您可以選擇使用專用的硬體裝置或您自己的播放器上的Web擴充功能進行測試。
 
-1. 单击 **配置** 选项卡，单击 **到工厂** 按钮 **重置** 选项。
+1. 按一下 **設定** 標籤並按一下 **至工廠** 按鈕於 **重設** 選項。
 
    ![图像](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. 单击 **确认** 来重置您的播放器。
+1. 按一下 **確認** 以重設您的播放器。
 
-1. 再次从 **配置** 选项卡，单击 **更改为云模式** 按钮 **切换运行模式** 选项。
+1. 再次從 **設定** 標籤並按一下 **變更為雲端模式** 按鈕於 **切換執行模式** 選項。
 
    ![图像](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. 单击 **确认** 切换到云模式时，将会提示取消注册播放器。
+1. 按一下 **確認** 在切換到雲端模式時提示將取消註冊播放器。
 
-## 基本播放监控 {#playback-monitoring}
+## 基本播放監視 {#playback-monitoring}
 
-播放器会根据每个 `ping` 默认为30秒。 根据这些量度，我们可以检测各种边缘情况，如体验卡住、空白屏幕和计划问题。 这样，我们便可以了解设备上的问题并排除其故障，从而加快调查和纠正措施的实施。
+播放器會報告各種播放量度，每種 `ping` 預設為30秒。 根據這些量度，我們可以偵測各種邊緣情況，例如停滯體驗、空白畫面和排程問題。 這可讓我們瞭解裝置上的問題並加以疑難排解，進而加快與您進行調查和採取修正措施。
 
-AEM Screens播放器中的基本播放监控允许我们：
+AEM Screens播放器中的基本播放監視可讓我們：
 
-* 如果播放器正确播放了内容，则进行远程监视。
+* 遠端監視（如果播放器正確播放內容）。
 
-* 提高对字段中空白屏幕或损坏体验的反应性。
+* 改善對空白畫面或欄位中中斷體驗的反應性。
 
-* 降低向最终用户显示损坏的体验的风险。
+* 降低向一般使用者顯示中斷體驗的風險。
 
-### 了解属性 {#understand-properties}
+### 瞭解屬性 {#understand-properties}
 
-每个 `ping`:
+下列屬性包含在每個 `ping`：
 
 | 属性 | 描述 |
 |---|---|
-| id {string} | 播放器标识符 |
-| activeChannel {string} | 当前正在播放渠道路径；或者，如果没有计划，则为空 |
-| activeElements {string} | 以逗号分隔的字符串，所有播放序列渠道中的当前可见元素（多区域布局中存在多个元素） |
-| isDefaultContent {boolean} | 如果播放渠道被视为默认或回退渠道（即，具有优先级1且无计划），则为true |
-| hasContentChanged {boolean} | 如果内容在过去5分钟内发生更改，则为true；否则为false |
-| lastContentChange {string} | 上次内容更改的时间戳 |
+| ID {string} | 播放器識別碼 |
+| activeChannel {string} | 目前播放頻道路徑，或若未排程則為空值 |
+| activeElements {string} | 以逗號分隔的字串，目前所有播放順序頻道中可見的元素（如果是多區域配置，則為多個） |
+| isDefaultContent {boolean} | 如果播放頻道被視為預設或備援頻道（即優先順序為1且無排程），則為true |
+| hasContentChanged {boolean} | 如果內容在過去5分鐘內變更，則為真，否則為假 |
+| lastContentChange {string} | 上次內容變更的時間戳記 |
 
 >[!NOTE]
->或者，也可以从播放器首选项（启用播放监控）中启用更高级的属性，该属性为：
->|属性|描述|
+>或者，您也可以從播放器偏好設定（啟用播放監視）啟用更進階的屬性，即：
+>|屬性|說明|
 >|—|—|
->|isContentRendering {boolean}|true(如果GPU能确认它正在播放实际内容（基于像素分析）|
+>|isContentRendering {boolean}|true (如果GPU能確認它正在播放實際內容（根據畫素分析）|
 
 ### 限制 {#limitations}
 
-下面列出了基本播放监控的一些限制：
+基本播放監視的少數限制列於下方：
 
-* 播放器会向服务器报告其自身的播放状态，因此需要活动连接。
+* 播放器會向伺服器報告自己的播放狀態，因此需要使用中的連線。
 
-* 的 `isContentRendering` 默认情况下，用于检查GPU的属性当前占用的资源太多，无法启用，并且需要从播放器首选项明确选择加入。 建议不要将其与生产中的视频结合使用。
+* 此 `isContentRendering` 檢查GPU的屬性目前資源過於密集，預設無法啟用，且需要從播放器偏好設定中明確選擇加入。 建議不要在生產環境中與影片結合使用。
 
-* 此功能仅支持序列渠道，尚不涵盖交互式渠道(SPA)用例。
+* 此功能僅支援序列頻道，尚未涵蓋互動式頻道(SPA)使用案例。
 
-* 这些量度尚未完全向我们的客户公开，我们正在努力在不久的将来启用类似功能板的报告和警报机制。
+* 這些量度尚未完全開放給我們的客戶，我們正在努力在不久的將來啟用類似控制面板的報告和警報機制。
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-现在，您已将播放器安装并配置为云模式，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中注册播放器as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) 从Screens服务提供商。
+現在您已安裝播放器並設定為雲端模式，接下來應該檢閱檔案以繼續Screensas a Cloud Service歷程。 [以as a Cloud Service方式在Screens中註冊播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) 從Screens Services Provider取得。

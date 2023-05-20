@@ -1,64 +1,64 @@
 ---
-title: 在Screens中创建项目as a Cloud Service
-description: 本页介绍如何在Screens中创建项目as a Cloud Service。
+title: 在Screens中建立專案as a Cloud Service
+description: 本頁面說明如何在Screensas a Cloud Service中建立專案。
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
 source-git-commit: 7a11ce1ce5862068b3087848065b661b13bed1e0
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 在Screens中创建和管理项目as a Cloud Service {#creating-project-screens-cloud}
+# 在Screens中建立和管理專案as a Cloud Service {#creating-project-screens-cloud}
 
-在Screens中实施新项目的第一步as a Cloud Service是创建新项目。
+在Screens as a Cloud Service中實作新專案的第一步是建立新專案。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何在Screens内容提供程序中创建新的AEM Screens项目。 阅读后，您应该能够在范围方面创建AEM Screens项目。
+本檔案可協助您瞭解如何在Screens內容提供者中建立新的AEM Screens專案。 閱讀本檔案後，您應該就能建立屬於您範圍的AEM Screens專案。
 
-## 创建新项目 {#create-new-project}
+## 建立新專案 {#create-new-project}
 
-请按照以下步骤在Screens中as a Cloud Service创建新项目：
+請依照下列步驟，在Screensas a Cloud Service中建立新專案：
 
-1. 导航到Screens内容提供商。
+1. 導覽至Screens內容提供者。
 
    >[!NOTE]
-   >请参阅 [使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) 了解如何访问Screens内容提供商以创建您的项目。
+   >請參閱 [使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) 瞭解如何存取Screens內容提供者來建立您的專案。
 
-1. 单击 **创建Screens项目** 的双曲余切值。
+1. 按一下 **建立畫面專案** 從動作列的右上角。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. 输入 **标题** 在 **创建Screens项目** 对话框，例如， *FirstDigitalExperience*.
+1. 輸入 **標題** 中的專案 **建立畫面專案** 對話方塊，例如， *第一數位體驗*.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
-   >的 **名称** 字段，该字段会在 **创建Screens项目** 对话框。
+   >此 **名稱** 欄位會自動填入 **建立畫面專案** 對話方塊的標題而定。
 
-1. 单击 **保存**. 您将看到Screens项目，其标题为 *FirstDigitalExperience* 在Screens内容提供程序中。 您将在Screens内容提供程序中看到您的项目，其中两个文件夹的标题为， **位置** 和 **渠道**.
+1. 按一下 **儲存**. 您會看到畫面專案，標題為 *第一數位體驗* 在畫面內容提供者中。 您會在Screens內容提供者中看到專案，其中有兩個資料夾標題為 **位置** 和 **頻道**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
-   现在，您已设置AEM Screens项目，接下来可以开始向项目添加渠道和位置。
+   現在您已設定AEM Screens專案，可以開始將管道和位置新增至專案。
 
-### 删除现有项目 {#deleting-project}
+### 刪除現有專案 {#deleting-project}
 
-您可以删除现有的Screensas a Cloud Service项目。
-请按照以下步骤从Screens内容提供商中删除现有项目：
+您可以刪除現有的「as a Cloud Service熒幕」專案。
+請依照下列步驟，從Screens內容提供者中刪除現有專案：
 
-1. 导航到Screens内容提供商。
-1. 选择要删除的项目。
-1. 单击 **删除** 从操作栏中删除项目。
+1. 導覽至Screens內容提供者。
+1. 選取您要刪除的專案。
+1. 按一下 **刪除** 以刪除專案。
 
    ![](/help/screens-cloud/assets/create-content/create-project5.png)
 
-1. 单击 **删除** 以确认删除项目。
+1. 按一下 **刪除** 以確認刪除專案。
 
    >[!NOTE]
-   >您可以选择多个项目，因此可以在一个步骤中删除多个项目。
+   >您可以選取多個專案，因此可以在單一步驟中刪除多個專案。
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-现在，您已设置AEM Screens项目，接下来可以创建新渠道并向渠道中添加内容。 请参阅 [创建和管理渠道](creating-channels-screens-cloud.md) 了解如何在渠道中创建和管理内容。
+現在您已設定AEM Screens專案，您可以建立新管道並將內容新增至管道。 請參閱 [建立和管理管道](creating-channels-screens-cloud.md) 以瞭解如何建立和管理管道中的內容。

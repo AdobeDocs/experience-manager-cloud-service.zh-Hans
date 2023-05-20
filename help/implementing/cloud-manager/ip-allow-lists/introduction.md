@@ -19,15 +19,15 @@ ht-degree: 56%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="添加 IP 允许列表"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html" text="查看和更新 IP 允许列表"
 
-AEM as a cloud service默认可通过internet访问。 虽然安全性是通过用户身份验证和授权来处理的，但IP允许列表是一种仅限访问受信任IP地址的方法。
+AEM as a cloud service預設可透過網際網路存取。 雖然安全性是透過使用者驗證和授權來處理，但IP允許清單是一種將存取限製為僅受信任的IP位址的方法。
 
-Cloud Manager的IP允许列表可用于仅限制和控制对此类受信任IP地址的访问。 具有相应权限的Cloud Manager用户可以 [创建允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) 可信IP地址，其站点的用户可以从中访问其AEM域。
+Cloud Manager的IP允許清單可用於限制和控制對此類受信任IP地址的訪問。 具有適當許可權的Cloud Manager使用者可以 [建立允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) 受信任的IP位址數量，其網站的使用者可以從這些位址存取其AEM網域。
 
-添加后， [可以应用/取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 作为单位或实体多次访问环境中的创作和/或发布者服务。
+新增後， [可以套用/取消套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 以單位或實體的身分多次前往環境中的作者和/或發佈者服務。
 
 >[!NOTE]
 >
->如果未应用IP允许列表，则默认情况下允许使用所有IP地址。 应用IP允许列表后，除IP允许列表上的地址外，不允许使用任何IP地址。
+>如果未套用IP允許清單，預設會允許所有IP位址。 套用IP允許清單後，除IP允許清單上的位址外，不允許任何IP位址。
 
 ## 限制 {#limitations}
 

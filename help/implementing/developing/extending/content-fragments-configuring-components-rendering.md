@@ -2,7 +2,7 @@
 title: 配置用于呈现的组件的内容片段
 description: 配置用于呈现的组件的内容片段
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 6%
@@ -11,61 +11,61 @@ ht-degree: 6%
 
 # 配置用于呈现的组件的内容片段{#content-fragments-configuring-components-for-rendering}
 
-有几个 [高级服务](#definition-of-advanced-services-that-need-configuration) 与内容片段的呈现相关。 要使用这些服务，此类组件的资源类型必须在内容片段框架中知晓自己。
+有數種 [進階服務](#definition-of-advanced-services-that-need-configuration) 和內容片段的演算相關。 若要使用這些服務，內容片段架構必須瞭解這些元件的資源型別。
 
-这是通过配置 [OSGi服务 — 内容片段组件配置](#osgi-service-content-fragment-component-configuration).
+這是透過設定 [OSGi服務 — 內容片段元件設定](#osgi-service-content-fragment-component-configuration).
 
-以下情况需要提供此信息：
+下列情況需要此資訊：
 
-* 您需要实施您自己的基于内容片段的组件，
-* 需要利用先进的服务。
+* 您需要實作自己的內容片段型元件，
+* 而且需要使用進階服務。
 
-建议使用核心组件。
+建議使用核心元件。
 
 >[!CAUTION]
 >
->* **如果您不需要 [高级服务](#definition-of-advanced-services-that-need-configuration)** 下面所述，您可以忽略此配置。
+>* **如果您不需要 [進階服務](#definition-of-advanced-services-that-need-configuration)** 如下所述，您可以忽略此設定。
 >
->* **扩展或使用现成的组件时**，则不建议更改OSGi配置。
+>* **當您延伸或使用現成元件時**，不建議變更OSGi設定。
 >
->* **您可以从头开始编写仅使用内容片段API的组件，而无需任何高级服务**. 但是，在这种情况下，您必须开发组件，以便它处理相应的处理。
+>* **您可以從頭開始撰寫只使用內容片段API （沒有進階服務）的元件**. 但是，在這種情況下，您必須開發元件，以便處理適當的處理。
 >
->因此，建议使用核心组件。
+>因此，建議使用核心元件。
 
-## 需要配置的高级服务的定义 {#definition-of-advanced-services-that-need-configuration}
+## 需要設定的進階服務定義 {#definition-of-advanced-services-that-need-configuration}
 
-需要注册组件的服务包括：
+需要註冊元件的服務包括：
 
-* 在发布期间正确确定依赖项（即，如果片段和模型自上次发布后发生更改，则可以随页面自动发布它们）。
-* 支持全文搜索中的内容片段。
-* 管理/处理 *中间内容。*
-* 管理/处理 *混合媒体资产。*
-* 引用片段的调度程序刷新（如果包含片段的页面被重新发布）。
-* 使用基于段落的渲染。
+* 在發佈期間正確判斷相依性（亦即，如果片段和模型自上次發佈以來已變更，請確保片段和模型可隨頁面自動發佈）。
+* 支援全文檢索搜尋中的內容片段。
+* 管理/處理 *中間內容。*
+* 管理/處理 *混合媒體資產。*
+* 參考片段的Dispatcher排清（如果重新發佈包含片段的頁面）。
+* 使用段落式轉譯。
 
-如果您需要其中一个或多个功能，则（通常）使用现成的高级服务会比较容易，而不是从头开始开发。
+如果您需要這些功能中的一或多個，那麼使用現成可用的進階服務通常會比較容易，而不是從頭開始開發。
 
-## OSGi服务 — 内容片段组件配置 {#osgi-service-content-fragment-component-configuration}
+## OSGi服務 — 內容片段元件設定 {#osgi-service-content-fragment-component-configuration}
 
-配置需要绑定到OSGi服务 **内容片段组件配置**:
+設定需要繫結到OSGi服務 **內容片段元件設定**：
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->请参阅 [OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration) 以了解更多详细信息。
+>另請參閱 [OSGi設定](/help/implementing/deploying/overview.md#osgi-configuration) 以取得更多詳細資料。
 
 例如：
 
-![OSGi配置内容片段组件配置](assets/cf-component-configuration-osgi.png)
+![OSGi設定內容片段元件設定](assets/cf-component-configuration-osgi.png)
 
-OSGi配置为：
+OSGi設定為：
 
 <table>
  <thead>
   <tr>
    <td>标签</td>
-   <td>OSGi配置<br /> </td>
+   <td>OSGi 配置<br /> </td>
    <td>描述</td>
   </tr>
  </thead>
@@ -73,27 +73,27 @@ OSGi配置为：
   <tr>
    <td><strong>资源类型</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>要注册的资源类型；例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>要註冊的資源型別；例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
-   <td><strong>引用属性</strong></td>
+   <td><strong>參考屬性</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>包含对片段的引用的属性的名称；例如， <code>fragmentPath</code> 或 <code>fileReference</code></td>
+   <td>包含片段參照的屬性名稱；例如， <code>fragmentPath</code> 或 <code>fileReference</code></td>
   </tr>
   <tr>
-   <td><strong>Element(s)属性</strong></td>
+   <td><strong>元素屬性</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>包含要呈现的元素名称的属性名称；例如，<code>elementName</code></td>
+   <td>包含要呈現之元素名稱的屬性名稱；例如，<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>变量属性</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>包含要呈现的变体名称的属性名称；例如，<code>variationName</code></td>
+   <td>包含要呈現之變數名稱的屬性名稱；例如，<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
 
-对于某些功能，您的组件必须遵守预定义的约定。 下表详细列出了组件需要为每个段落(即 `jcr:paragraph` （适用于每个组件实例），以便服务能够正确检测和处理它们。
+對於某些功能，您的元件必須遵循預先定義的慣例。 下表詳細說明每個段落(亦即 `jcr:paragraph` （每個元件例項），讓服務可以正確偵測及處理它們。
 
 <table>
  <thead>
@@ -105,42 +105,42 @@ OSGi配置为：
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>一个字符串属性，用于定义在 <em>单元渲染模式</em>.</p> <p>值:</p>
+   <td><p>字串屬性，定義段落在中的輸出方式 <em>單一元素轉譯模式</em>.</p> <p>值:</p>
     <ul>
-     <li><code>all</code> :渲染所有段落</li>
-     <li><code>range</code> :呈现提供的段落范围 <code>paragraphRange</code></li>
+     <li><code>all</code> ：呈現所有段落</li>
+     <li><code>range</code> ：呈現以下專案提供的段落範圍： <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>字符串属性，用于定义要输出的段落范围(如果在 <em>单元渲染模式</em>.</p> <p>格式:</p>
+   <td><p>字串屬性，定義要在下列情況下輸出的段落範圍： <em>單一元素轉譯模式</em>.</p> <p>格式:</p>
     <ul>
      <li><code>1</code> 或 <code>1-3</code> 或 <code>1-3;6;7-8</code> 或 <code>*-3;5-*</code>
      <ul>
-       <li><code>-</code> 范围指示器</li>
-       <li><code>;</code> 列表分隔符</li>
-       <li><code>*</code> 通配符</li>
+       <li><code>-</code> 範圍指示器</li>
+       <li><code>;</code> 清單分隔符號</li>
+       <li><code>*</code> 萬用字元</li>
      </ul>
      </li>
-     <li>仅评估 <code>paragraphScope</code> 设置为 <code>range</code></li>
+     <li>只有在 <code>paragraphScope</code> 設為 <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>一个布尔属性，用于定义标题是否为 <code>h1</code>, <code>h2</code>, <code>h3</code>)计为段落(<code>true</code>)或否(<code>false</code>)</td>
+   <td>布林值屬性，定義標題(例如， <code>h1</code>， <code>h2</code>， <code>h3</code>)計算為段落(<code>true</code>)或不是(<code>false</code>)</td>
   </tr>
  </tbody>
 </table>
 
 ## 示例 {#example}
 
-例如，请参阅以下内容(在现成的AEM实例上):
+如需範例，請參閱以下內容(在現成可用的AEM例項上)：
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config
 ```
 
-其中包含：
+這包含：
 
 ```
 dam.cfm.component.resourceType="core/wcm/components/contentfragment/v1/contentfragment"

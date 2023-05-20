@@ -1,11 +1,11 @@
 ---
 title: 自定义 HTTP 标头
-description: 配置自定义HTTP头
+description: 設定自訂HTTP標頭
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -13,27 +13,27 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-为了更好地控制其后端，作者可以配置将发送到商务引擎的自定义HTTP标头，以及CIF已发送的标头。 常见用例包括多商店设置，在这些设置中，您可以使用HTTP标头来控制商务后端的响应。
+為了獲得對其後端的更多控制權，作者可以設定將傳送至商務引擎的自訂HTTP標頭，以及CIF已傳送的標頭。 常見的使用案例包括多商店設定，您可以在其中使用HTTP標頭控制商務後端的回應。
 
 >[!NOTE]
 >
->开发人员始终可以使用GraphQL客户端配置来配置自定义HTTP标头。
+>開發人員一律可使用GraphQL使用者端設定來設定自訂HTTP標頭。
 
 ## 配置 {#configuration}
 
-要配置自定义HTTP标头，必须先定义它们。 必须首先通过将自定义HTTP标头添加到 `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` 使用OSGi配置进行服务配置。
+若要設定自訂HTTP標頭，必須先定義它們。 自訂HTTP標頭必須先透過將其新增到來定義 `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` 使用OSGi設定的服務設定。
 
-您可以在项目的“Cloud Service配置”页面中配置HTTP标头的值：
+您可以在專案的「Cloud Service設定」頁面中設定HTTP標頭的值：
 
-1. 转到“工具” — >“Cloud Service” — >“CIF配置”中的Cloud Services配置页面
-1. 打开现有配置或创建新配置
-1. 转到“高级”选项卡，并找到“自定义HTTP标头”多字段。 您可以选择之前定义的标题并为其分配值。
+1. 前往「工具 — > Cloud Services -> CIF設定」中的「Cloud Service設定」頁面
+1. 開啟現有設定或建立新設定
+1. 前往「進階」索引標籤，尋找「自訂HTTP標頭」多欄位。 您可以選取先前定義的標頭，並為其指派值。
 
-使用上述云服务配置的组件将随每个GraphQL请求一起发送这些HTTP标头。
+使用上述雲端服務設定的元件將會隨著每個GraphQL請求傳送這些HTTP標頭。
 
 ## 限制 {#restrictions}
 
-虽然该服务允许定义任何标头名称（包括标准名称），但它们将无法进行配置。 换言之，您无法使用此功能覆盖标准HTTP标头。 可以找到受限标头名称的列表 [此处](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 除了这些标头之外，还有两个标头不能使用：
+雖然此服務允許定義任何標頭名稱，包括標準名稱，但無法用於設定。 換句話說，您無法使用此功能覆寫標準HTTP標頭。 可以找到受限制的標頭名稱清單 [此處](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 除了這些以外，還有兩個標頭無法使用：
 
-* “商店” — CIF用于标识Adobe Commerce商店
-* “Preview-Version” — CIF用于检索暂存产品
+* &quot;Store&quot; - CIF用來識別Adobe Commerce存放區
+* &quot;Preview-Version&quot; - CIF用來擷取分階段產品

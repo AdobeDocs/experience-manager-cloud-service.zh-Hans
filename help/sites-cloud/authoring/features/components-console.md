@@ -5,7 +5,7 @@ exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ### 组件详细信息 {#component-details}
 
-要查看有关特定组件的详细信息，请点按/单击所需的资源。三个选项卡提供以下内容：
+若要檢視特定元件的詳細資訊，請點選/按一下所需的資源。 三個索引標籤提供：
 
 * **属性**
 
@@ -39,9 +39,9 @@ ht-degree: 100%
 
    * 查看组件的常规属性。
       * 查看组件的图标或缩写定义的方式。<!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * 单击图标的源将转到该组件。
-   * 查看组件的&#x200B;**资源类型**&#x200B;和&#x200B;**资源超级类型**（如果定义）。
-      * 单击“资源超级类型”将转到该组件。
+      * 按一下圖示的來源會前往該元件。
+   * 檢視 **資源型別** 和 **資源超級型別** （如果已定義）。
+      * 按一下「資源超級型別」即可前往該元件。
 
    >[!NOTE]
    >

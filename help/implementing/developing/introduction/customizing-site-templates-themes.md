@@ -1,6 +1,6 @@
 ---
 title: 自定义站点模板和主题
-description: 了解如何使用AEM网站模板来预定义网站结构和初始内容，以及如何使用主题来定义网站样式以快速创建网站。
+description: 瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，以及如何使用主題來定義網站樣式，以便您快速建立網站。
 feature: Administering
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
@@ -13,21 +13,21 @@ ht-degree: 25%
 
 # 自定义站点模板和主题 {#customizing-site-templates-themes}
 
-了解如何使用AEM网站模板来预定义网站结构和初始内容，以及如何使用主题来定义网站样式以快速创建网站。
+瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，以及如何使用主題來定義網站樣式，以便您快速建立網站。
 
 ## 概述 {#overview}
 
-为了让AEM管理员能够快速创建适合业务需求的网站，AEM支持使用网站模板和网站主题创建新网站。
+為了讓AEM管理員快速建立符合業務需求的網站，AEM支援使用網站範本和網站主題來建立新網站。
 
-* 安 **AEM网站模板** 通常包含基本网站内容和结构以及网站样式信息（称为网站主题），以便快速开始新网站。 模板具有强大的功能，因为它们可重用和自定义。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
-* 安 **AEM网站主题** 是一个包含CSS、JavaScript和静态资源的包，用于定义AEM网站的样式并符合AEM网站主题的结构。
+* 一個 **AEM網站範本** 通常包含基本網站內容和結構以及網站樣式資訊（稱為網站主題），以便快速啟動新網站。 模板具有强大的功能，因为它们可重用和自定义。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
+* 一個 **AEM網站主題** 是包含CSS、JavaScript和靜態資源的套件，這些資源會定義AEM網站的樣式並符合AEM網站主題的結構。
 
 ## 其他资源 {#additional-resources}
 
-因为 [网站创建](/help/sites-cloud/administering/site-creation/create-site.md) 通常由AEM管理员负责，有关自定义网站模板和主题的更多详细信息，请参阅管理文档。
+因為 [網站建立](/help/sites-cloud/administering/site-creation/create-site.md) 通常是AEM管理員的責任，請參閱管理檔案以取得有關自訂網站範本和主題的詳細資訊。
 
-* [网站模板](/help/sites-cloud/administering/site-creation/site-templates.md)  — 了解如何使用AEM网站模板来预定义网站结构和初始内容，以便快速创建新网站。
-* [网站主题](/help/sites-cloud/administering/site-creation/site-themes.md)  — 了解如何使用AEM网站主题自定义网站的样式和设计。
+* [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)  — 瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，以便您快速建立新網站。
+* [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)  — 瞭解如何使用AEM網站主題來自訂網站的樣式和設計。
 
 >[!TIP]
 >

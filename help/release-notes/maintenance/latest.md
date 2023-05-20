@@ -29,10 +29,10 @@ ht-degree: 76%
 
 ### 修复的问题 {#fixed-issues-11983}
 
-- SITES-13253 — 修复了核心组件v2.22.6中RecursionTooDeepException的问题
-- SITES-13256 — 修复了配置了特殊URL的核心WCM Teaser中断页面渲染的问题
-- GRANITE-45462 — 修复了消息传送客户端多区域配置的问题
-- GRANITE-45562 — 修复了图像组合返回200而不是404的问题
+- SITES-13253 — 修正核心元件v2.22.6中的RecursionTooDeepException問題
+- SITES-13256 — 修正核心WCM Teaser設定特殊URL分頁符號頁面轉譯的問題
+- GRANITE-45462 — 修正訊息使用者端多區域設定的問題
+- GRANITE-45562 — 修正影像組合傳回200而非404的問題
 
 ### 嵌套的技术 {#embedded-tech-11983}
 

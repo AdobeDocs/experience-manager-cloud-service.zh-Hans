@@ -3,7 +3,7 @@ title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资产（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 一个人员可以获得一个（或两个）奖励。
 
-* 我的公司 - 公司
+* 我的公司 – 公司
    * CEO – 人员
    * 员工 – 人员
       * 个人奖励 – 奖励

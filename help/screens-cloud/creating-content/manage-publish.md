@@ -1,6 +1,6 @@
 ---
-title: 在Screens中发布渠道as a Cloud Service
-description: 本页介绍如何在Screens中发布渠道as a Cloud Service。
+title: 以as a Cloud Service方式在Screens中發佈頻道
+description: 本頁面說明如何以Screensas a Cloud Service發佈管道。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
 source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
 workflow-type: tm+mt
@@ -9,44 +9,44 @@ ht-degree: 1%
 
 ---
 
-# 在屏幕中发布渠道as a Cloud Service {#publish-channel-screens-cloud}
+# 以as a Cloud Service方式在Screens中發佈頻道 {#publish-channel-screens-cloud}
 
 ## 简介 {#introduction}
 
-您可以从AEM Screens发布内容。 通过管理发布功能，您可以将内容更新从创作交付到发布到播放器。 您可以发布或取消发布整个AEM Screens项目的内容，也只能发布或取消发布渠道、位置、播放器或应用程序之一的内容。
+您可以從AEM Screens發佈內容。 「管理發布」功能可讓您傳遞內容更新，從作者更新至發佈至播放器。 您可以為整個AEM Screens專案或只有其中一個頻道、位置、播放器或應用程式發佈或取消發佈內容。
 
 >[!IMPORTANT]
->在项目中创建渠道或渠道后，必须发布渠道，以便在AEM Screens服务提供商的库存列表视图中显示渠道/渠道。
+>在專案中建立一個或多個管道後，必須發佈管道，才能在AEM Screens服務提供者的詳細目錄清單檢視中顯示管道/管道。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解将编辑的内容发布到Screens服务提供商和播放器。 阅读后，您应该能够：
+本檔案可協助您瞭解如何將編輯過的內容發佈至Screens服務提供者和播放器。 閱讀本檔案後，您應該能夠：
 
-* 了解如何发布渠道
-* 按范围管理发布
+* 瞭解如何發佈管道
+* 根據範圍管理出版物
 
-## 发布渠道的步骤 {#publish-channel}
+## 發佈管道的步驟 {#publish-channel}
 
-按照以下步骤发布渠道：
+請依照下列步驟發佈管道：
 
-1. 从您的项目中导航并选择渠道，例如 **FirstDigitalExperience** —> **渠道** —> **LoopingChannelOne**.
+1. 從專案導覽並選取頻道，例如 **第一數位體驗** —> **頻道** —> **LoopingChannelOne**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. 单击 **管理发布** 中。
+1. 按一下 **管理發布** 動作列中的。
 
-1. 选择 **操作** as **发布** 和 **计划** as **现在** 从 **管理发布向导** 单击 **下一个**.
+1. 選取 **動作** 作為 **發佈** 和 **排程** 作為 **現在** 從 **管理出版物精靈** 並按一下 **下一個**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >单击 **+包含子项** 在操作栏中，取消选中所有选项以发布项目中的所有模块，然后单击添加以发布。 默认情况下，将选中所有框，您必须手动取消选中这些框才能发布项目中的所有模块。
+   >按一下 **+包含子項** 從動作列中，取消勾選所有選項以發佈專案中的所有模組，然後按一下「新增」以發佈。 依預設，所有方塊都會勾選，您必須手動取消勾選方塊才能發佈專案中的所有模組。
 
-1. 从 **管理发布** 向导，单击 **发布** 以发布渠道。
+1. 從選取管道後 **管理發布** 精靈，按一下 **發佈** 以發佈頻道。
 
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-现在，您已在项目中发布了渠道，接下来应该通过审阅文档来继续您的Screensas a Cloud Service历程， [在屏幕中安装和配置播放器as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+現在您已在專案中發佈頻道，您現在應該透過下一次檢閱檔案來繼續Screensas a Cloud Service歷程， [as a Cloud Service在Screens中安裝和設定播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

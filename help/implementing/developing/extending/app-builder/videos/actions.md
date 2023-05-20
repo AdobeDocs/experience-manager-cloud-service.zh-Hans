@@ -1,6 +1,6 @@
 ---
-title: 应用程序生成器操作
-description: 了解Adobe运行时操作以及如何使用App Builder应用程序。
+title: App Builder動作
+description: 瞭解Adobe執行階段動作以及如何在App Builder應用程式中使用它們。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,28 +16,28 @@ ht-degree: 0%
 
 ---
 
-# 应用程序生成器操作
+# App Builder動作
 
-## 操作简介
+## 動作簡介
 
-了解Adobe I/O Runtime、操作和如何创建操作。
+瞭解Adobe I/O Runtime、動作以及如何建立動作。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
 
-## 激活、序列、触发器和规则
+## 啟動、順序、觸發器和規則
 
-了解操作如何与激活、Web操作、触发器和规则相关。
+瞭解動作如何與啟用、Web動作、觸發器和規則相關。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 
-## 应用程序生成器应用程序中的操作
+## App Builder應用程式中的動作
 
-了解如何创建可用作应用程序生成器应用程序的操作。
+瞭解如何建立可用作App Builder應用程式的動作。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 
-## 创建操作
+## 建立動作
 
-了解如何创建应用程序生成器操作。
+瞭解如何建立App Builder動作。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)

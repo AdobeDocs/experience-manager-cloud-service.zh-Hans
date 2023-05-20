@@ -11,76 +11,76 @@ ht-degree: 31%
 
 # 内容服务的 JSON 导出器 {#json-exporter-for-content-services}
 
-AEM Content Services旨在将AEM中/从Web页面交付的内容的描述和交付推广到网页之外。
+AEM Content Services旨在概括AEM中/來自Web網頁以外內容的說明和傳遞。
 
 它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。 这些渠道可以包括：
 
 * 单页面应用程序
 * 本机移动设备应用程序
-* AEM外部的其他渠道和接触点
+* AEM外部的其他管道和接觸點
 
-对于使用结构化内容的内容片段，您可以使用JSON导出程序以JSON数据模型格式交付(y)AEM页面的内容，从而提供内容服务。 然后，您自己的应用程序就可以使用此功能。
+對於使用結構化內容的內容片段，您可以使用JSON匯出工具以JSON資料模型格式傳送AEM頁面的內容，以提供內容服務。 然後，您自己的應用程式便可使用它。
 
-## 包含内容片段核心组件的JSON导出程序 {#json-exporter-with-content-fragment-core-components}
+## 具有內容片段核心元件的JSON匯出工具 {#json-exporter-with-content-fragment-core-components}
 
-使用AEM JSON导出程序，您可以以JSON数据模型格式交付(y)AEM页面的内容。 然后，您自己的应用程序就可以使用此功能。
+您可以使用AEM JSON匯出工具，以JSON資料模型格式傳送AEM頁面的內容。 然後，您自己的應用程式便可使用它。
 
-在AEM中，使用选择器实现投放 `model` 和 `.json` 扩展。
+在AEM中，傳遞是使用選擇器達成 `model` 和 `.json` 副檔名。
 
 `.model.json`
 
-1. 例如，URL，如：
+1. 例如，URL，例如：
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
    ```
 
-1. 将提供以下内容：
+1. 將傳送下列內容：
 
-   ![WKND内容的JSON模型](assets/json-model-wknd.png)
+   ![WKND內容的JSON模型](assets/json-model-wknd.png)
 
-您也可以通过专门定位结构化内容片段来交付其内容。
+或者，您可以透過特別定位來傳送結構化內容片段的內容。
 
-可以使用片段的整个路径(通过 `jcr:content`);例如，带有后缀（如）。
+這是使用片段的整個路徑來完成的(透過 `jcr:content`)；例如尾碼為。
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
-您的页面可以包含一个内容片段或多种类型的多个组件。 您还可以使用列表组件等机制自动搜索相关内容。
+您的頁面可包含單一內容片段或多個不同型別的元件。 您也可以使用清單元件等機制來自動搜尋相關內容。
 
-* 例如，URL，如：
+* 例如，URL，例如：
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
    ```
 
-* 将提供以下内容：
+* 將傳送下列內容：
 
-   ![WKND内容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
-
-   >[!NOTE]
-   >
-   >您可以 [调整您自己的组件](enabling-json-exporter.md) 以访问和使用此数据。
+   ![WKND內容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
 
    >[!NOTE]
    >
-   >尽管不是标准实施， [支持多个选择器，](enabling-json-exporter.md#multiple-selectors) 但 `model` 必须是第一个。
+   >您可以 [調整您自己的元件](enabling-json-exporter.md) 以存取及使用此資料。
+
+   >[!NOTE]
+   >
+   >雖然不是標準實作， [支援多個選擇器，](enabling-json-exporter.md#multiple-selectors) 但是 `model` 必須為第一個。
 
 ### 更多信息 {#further-information}
 
 另请参阅：
 
-* 资源 HTTP API
-   * [资源 HTTP API](/help/assets/developer-reference-material-apis.md)
+* Assets HTTP API
+   * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling 模型:
-   * [Sling模型 — 自130年起将模型类与资源类型关联](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
-* 包含JSON的AEM:
+   * [Sling模型 — 自130起將模型類別與資源型別建立關聯](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+* 使用JSON的AEM：
    * [为组件启用 JSON 导出](enabling-json-exporter.md)
 
-## 相关文档 {#related-documentation}
+## 相關檔案 {#related-documentation}
 
-有关更多详细信息，请参阅：
+如需詳細資訊，請參閱：
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-* [使用内容片段创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [使用內容片段編寫](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

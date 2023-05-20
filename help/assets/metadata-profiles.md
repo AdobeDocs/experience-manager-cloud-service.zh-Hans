@@ -1,6 +1,6 @@
 ---
 title: 元数据配置文件
-description: 了解资产的元数据配置文件。 了解如何创建元数据配置文件并将其应用到文件夹资产。
+description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資料設定檔，並將其套用至資料夾資產。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -14,120 +14,120 @@ ht-degree: 20%
 
 # 元数据配置文件 {#metadata-profiles}
 
-| 版本 | 文章链接 |
+| 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-通过元数据配置文件，您可以将默认元数据应用到文件夹中的资产。 创建元数据配置文件并将其应用到文件夹。 您随后上传到文件夹的任何资产都会继承您在元数据配置文件中配置的默认元数据。
+中繼資料設定檔可讓您將預設中繼資料套用至資料夾中的資產。 建立中繼資料設定檔，並將其套用至資料夾。 您之後上傳至資料夾的任何資產都會繼承您在中繼資料設定檔中設定的預設中繼資料。
 
-有关在Experience Manager Assets中使用用户档案的一个重要概念是，将用户档案分配给文件夹。 配置文件中包括元数据配置文件形式的设置，以及视频配置文件或图像配置文件。 这些设置会处理文件夹及其任何子文件夹的内容。 因此，您如何命名文件和文件夹、如何排列子文件夹以及如何处理这些文件夹中的文件，都会对配置文件处理这些资产的方式产生重大影响。
-通过使用一致且适当的文件和文件夹命名策略以及良好的元数据实践，您可以充分利用数字资产收藏集，并确保使用正确的配置文件处理正确的文件。
+在Experience Manager Assets中使用設定檔的重要概念是，設定檔會指派給資料夾。 在設定檔中，設定為中繼資料設定檔的形式，以及視訊設定檔或影像設定檔。 這些設定會處理資料夾及其任何子資料夾的內容。 因此，您如何命名檔案和資料夾、如何排列子資料夾，以及如何處理這些資料夾中的檔案，都會對設定檔處理這些資產的方式產生重大影響。
+透過使用一致且適當的檔案和資料夾命名策略，以及良好的中繼資料實務，您可以充分利用數位資產集合，並確保由正確的設定檔處理正確的檔案。
 
-## 添加元数据配置文件 {#adding-a-metadata-profile}
+## 新增中繼資料設定檔 {#adding-a-metadata-profile}
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据配置文件]**，然后单击 **[!UICONTROL 创建]**.
-1. 为元数据配置文件（例如，示例元数据）输入标题，然后点按 **[!UICONTROL 提交]**. 此时会显示元数据配置文件的编辑表单。
-1. 单击某个组件，然后在 **[!UICONTROL 设置]** 选项卡。 例如，单击 **[!UICONTROL 描述]** 组件并编辑其属性。
-编辑 **[!UICONTROL 描述]** 组件：
+1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料設定檔]**，然後按一下 **[!UICONTROL 建立]**.
+1. 輸入中繼資料描述檔的標題，例如範例中繼資料，然後點選 **[!UICONTROL 提交]**. 此時會顯示中繼資料設定檔的編輯表單。
+1. 按一下元件，然後在下列位置設定其屬性： **[!UICONTROL 設定]** 標籤。 例如，按一下 **[!UICONTROL 說明]** 元件並編輯其屬性。
+編輯下列屬性 **[!UICONTROL 說明]** 元件：
 
-   * **[!UICONTROL 字段标签]**  — 元数据属性的显示名称。 仅供用户引用。
-   * **[!UICONTROL 映射到属性]**  — 此属性的值提供资产节点在存储库中保存的相对路径/名称。 值应始终以开头 `./` 因为它表示路径位于资产的节点下。
+   * **[!UICONTROL 欄位標籤]**  — 中繼資料屬性的顯示名稱。 它僅供使用者參考。
+   * **[!UICONTROL 對應至屬性]**  — 此屬性的值會提供資產節點的相對路徑/名稱，資產節點會儲存在存放庫中。 此值應一律開頭為 `./` 因為它表示路徑在資產的節點下。
 
-      为指定的值 **[!UICONTROL 映射到属性]** 将作为属性存储在资产的元数据节点下。 例如，如果您指定`/jcr:content/metadata/dc:desc` 作为的名称 **[!UICONTROL 映射到属性]**, [!DNL Adobe Experience Manager Assets] 存储值 `dc:desc` ，位于资产的元数据节点。
+      您為指定的值 **[!UICONTROL 對應至屬性]** 會儲存為資產中繼資料節點下的屬性。 例如，如果您指定`/jcr:content/metadata/dc:desc` 作為的名稱 **[!UICONTROL 對應至屬性]**， [!DNL Adobe Experience Manager Assets] 儲存值 `dc:desc` 位於資產的中繼資料節點。
 
-   * **[!UICONTROL 默认值]**  — 使用此属性为元数据组件添加默认值。 例如，如果您指定“我的描述”，则会将此值分配给属性 `dc:desc` ，位于资产的元数据节点。
+   * **[!UICONTROL 預設值]**  — 使用此屬性為中繼資料元件新增預設值。 例如，如果您指定「我的說明」，則會將此值指派給屬性 `dc:desc` 位於資產的中繼資料節點。
 
       >[!NOTE]
       >
-      >向新元数据属性添加默认值(在 `/jcr:content/metadata` 节点)默认情况下不会在资产的“属性”页面上显示属性及其值。 在 [!UICONTROL 属性] 页面，修改相应的架构表单。
+      >新增預設值至新的中繼資料屬性(不存在於 `/jcr:content/metadata` 節點)預設不會在資產的屬性頁面上顯示屬性及其值。 若要檢視上的新屬性 [!UICONTROL 屬性] 頁面，修改對應的結構描述表單。
 
 1. （可选）从“构建表单”选项卡中向“编辑表单”添 **[!UICONTROL 加更多组件]** ，然后在“设置”选项卡中配置 **[!UICONTROL 其属性]** 。 “构建表单”选项卡中提供 **[!UICONTROL 以下属性]** :
 
 | 组件 | 属性 |
 |------------------|----------------------------------------------------|
-| 章节标题 | 字段标签，说明 |
-| 单行文本 | 字段标签、映射到属性、默认值 |
-| 多值文本 | 字段标签、映射到属性、默认值 |
-| 数字 | 字段标签、映射到属性、默认值 |
-| 日期 | 字段标签、映射到属性、默认值 |
-| 标准标记 | 字段标签、映射到属性、默认值、描述 |
+| 章节标题 | 欄位標籤，說明 |
+| 单行文本 | 欄位標籤，對應至屬性，預設值 |
+| 多值文本 | 欄位標籤，對應至屬性，預設值 |
+| 数字 | 欄位標籤，對應至屬性，預設值 |
+| 日期 | 欄位標籤，對應至屬性，預設值 |
+| 标准标记 | 欄位標籤、對應至屬性、預設值、說明 |
 
-1. 单击 **[!UICONTROL 完成]**. 元数据配置文件会添加到 **[!UICONTROL 元数据配置文件]** 页面。
+1. 按一下 **[!UICONTROL 完成]**. 中繼資料設定檔會新增至 **[!UICONTROL 中繼資料設定檔]** 頁面。
 
-## 复制元数据配置文件 {#copying-a-metadata-profile}
+## 複製中繼資料設定檔 {#copying-a-metadata-profile}
 
-1. 从 **[!UICONTROL 元数据配置文件]** ，请选择元数据配置文件以创建其副本。
-1. 单击 **[!UICONTROL 复制]** 中。
-1. 在 **[!UICONTROL 复制元数据配置文件]** 对话框中，为元数据配置文件的新副本输入标题。
-1. 单击 **[!UICONTROL 复制]**. 元数据配置文件的副本将显示在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面的配置文件列表中。
+1. 從 **[!UICONTROL 中繼資料設定檔]** 頁面上，選取一個中繼資料描述檔以製作其副本。
+1. 按一下 **[!UICONTROL 複製]** （從工具列）。
+1. 在 **[!UICONTROL 複製中繼資料設定檔]** 對話方塊中，輸入中繼資料設定檔新復本的標題。
+1. 按一下 **[!UICONTROL 複製]**. 元数据配置文件的副本将显示在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面的配置文件列表中。
 
-## 删除元数据配置文件 {#deleting-a-metadata-profile}
+## 刪除中繼資料設定檔 {#deleting-a-metadata-profile}
 
-1. 从 **[!UICONTROL 元数据配置文件]** 页面，选择要删除的配置文件。
-1. 单击 **[!UICONTROL 删除元数据配置文件]** 中。
-1. 在对话框中，单击 **[!UICONTROL 删除]** 确认删除操作。 元数据配置文件将从列表中删除。
+1. 從 **[!UICONTROL 中繼資料設定檔]** 頁面上，選取要刪除的設定檔。
+1. 按一下 **[!UICONTROL 刪除中繼資料設定檔]** （在工具列中）。
+1. 在對話方塊中，按一下 **[!UICONTROL 刪除]** 以確認刪除作業。 中繼資料設定檔會從清單中刪除。
 
-## 将元数据配置文件应用到文件夹 {#applying-a-metadata-profile-to-folders}
+## 將中繼資料設定檔套用至資料夾 {#applying-a-metadata-profile-to-folders}
 
-当您将元数据配置文件分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。 当将其他配置文件应用到子文件夹时，继承会停止。 您只能为一个文件夹分配一个元数据配置文件。 因此，请仔细考虑上传、存储、使用和存档资产的文件夹结构。
+將中繼資料描述檔指派給資料夾時，任何子資料夾都會自動從其父資料夾繼承描述檔。 將其他設定檔套用至子資料夾時，繼承會停止。 您只能將一個中繼資料設定檔指派給資料夾。 因此，請仔細考慮您上傳、儲存、使用和封存資產的資料夾結構。
 
-如果您为文件夹分配了不同的元数据配置文件，则新配置文件会覆盖之前的配置文件。 以前存在的文件夹资产将保持不变。 新配置文件会应用于更改后添加到文件夹的资产。 您可以将元数据配置文件应用到特定文件夹或全局应用到所有资产。
+如果您將不同的中繼資料描述檔指派給資料夾，新的描述檔會覆寫先前的描述檔。 先前現有的資料夾資產保持不變。 新設定檔會套用至變更後新增至資料夾的資產。 您可以將中繼資料設定檔套用至特定資料夾，或全域套用至所有資產。
 
-在用户界面中，如果文件夹分配了配置文件，则卡片名称中会显示配置文件的名称。
+在使用者介面中，會以卡片名稱中出現的設定檔名稱來指出已指派給其設定檔的資料夾。
 
-您可以重新处理文件夹中已有元数据配置文件（您稍后更改了该配置文件）的资产。 <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+若資料夾中已有您之後已變更的現有中繼資料設定檔，您可以重新處理該資料夾中的資產。 <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-### 将元数据配置文件应用到特定文件夹 {#applying-metadata-profiles-to-specific-folders}
+### 將中繼資料設定檔套用至特定資料夾 {#applying-metadata-profiles-to-specific-folders}
 
 您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将元数据配置文件应用到文件夹，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中应用。本节将介绍如何通过这两种方式将元数据配置文件应用到文件夹。
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-您可以重新处理文件夹中已有视频配置文件且稍后进行了更改的资产。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+若資料夾中已有您之後加以變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-#### 从配置文件用户界面将元数据配置文件应用到文件夹 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+#### 從「設定檔」使用者介面將中繼資料設定檔套用至資料夾 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. 导航到 **[!UICONTROL 工具> Assets >元数据配置文件]**.
-1. 选择要应用于一个或多个文件夹的元数据配置文件。
-1. 单击 **[!UICONTROL 将元数据配置文件应用到文件夹]** ，然后选择一个或多个用于接收新上传资产的文件夹，然后单击 **[!UICONTROL 完成]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 導覽至 **[!UICONTROL 工具>資產>中繼資料設定檔]**.
+1. 選取您要套用至一個資料夾或多個資料夾的中繼資料設定檔。
+1. 按一下 **[!UICONTROL 套用中繼資料設定檔至資料夾]** 並選取您要用來接收新上傳資產的資料夾或多個資料夾，然後按一下 **[!UICONTROL 完成]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-#### 从“属性”将元数据配置文件应用到文件夹 {#applying-metadata-profiles-to-folders-from-properties}
+#### 從「屬性」將中繼資料設定檔套用至資料夾 {#applying-metadata-profiles-to-folders-from-properties}
 
-1. 在左边栏中，单击 **[!UICONTROL 资产]** 然后，导航到要将元数据配置文件应用到的文件夹。
-1. 在文件夹中，单击或单击复选标记以将其选中，然后单击或单击 **属性**.
-1. 选择 **[!UICONTROL 元数据配置文件]** 选项卡，从下拉菜单中选择用户档案，然后单击 **[!UICONTROL 保存]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 在左側邊欄中，按一下 **[!UICONTROL 資產]** 然後導覽至您要套用中繼資料設定檔的資料夾。
+1. 在資料夾上，按一下或按一下核取記號以選取資料夾，然後按一下或按一下 **屬性**.
+1. 選取 **[!UICONTROL 中繼資料設定檔]** 標籤並從下拉式選單中選取設定檔，然後按一下 **[!UICONTROL 儲存]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-### 全局应用元数据配置文件 {#applying-a-metadata-profile-globally}
+### 全域套用中繼資料設定檔 {#applying-a-metadata-profile-globally}
 
-除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便上传到 [!DNL Experience Manager Assets] 在任意文件夹中应用了选定的配置文件。
+除了將設定檔套用至資料夾外，您還可以全域套用設定檔，以便上傳到的任何內容都能使用 [!DNL Experience Manager Assets] 已套用選取的設定檔。
 
-您可以重新处理文件夹中已有元数据配置文件（您稍后更改了该配置文件）的资产。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+若資料夾中已有您之後已變更的現有中繼資料設定檔，您可以重新處理該資料夾中的資產。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-**要全局应用元数据配置文件，请执行以下操作之一**
+**若要全域套用中繼資料設定檔，請執行下列任一項作業**
 
-* 导航到 `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 并应用相应的用户档案，然后单击 **[!UICONTROL 保存]**.
+* 導覽至 `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 並套用適當的設定檔，然後按一下 **[!UICONTROL 儲存]**.
 
-* 导航到CRXDE Lite到以下节点： `/content/dam/jcr:content`. 添加属性 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. 单击 **全部保存**.
+* 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`. 新增屬性 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. 按一下 **全部儲存**.
 
-## 从文件夹删除元数据配置文件 {#removing-a-metadata-profile-from-folders}
+## 從資料夾中移除中繼資料設定檔 {#removing-a-metadata-profile-from-folders}
 
-当您将元数据配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。 但是，对文件夹中已发生的文件的任何处理均将保持不变。
+當您從資料夾中移除中繼資料描述檔時，任何子資料夾都會自動繼承其父資料夾中描述檔的移除動作。 不過，在資料夾內發生的任何檔案處理作業都會維持不變。
 
 您可以从&#x200B;**工具**&#x200B;菜单中的文件夹删除元数据配置文件，或者如果您在文件夹中，也可以直接从&#x200B;**属性**&#x200B;中删除。本节将介绍如何通过这两种方式将元数据配置文件从文件夹中删除。
 
-### 通过配置文件用户界面将元数据配置文件从文件夹删除 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### 透過設定檔使用者介面從資料夾中移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. 单击Experience Manager徽标，然后导航到 **[!UICONTROL 工具> Assets >元数据配置文件]**.
-1. 选择要从一个或多个文件夹删除的元数据配置文件。
-1. 单击 **[!UICONTROL 从文件夹删除元数据配置文件]** ，然后选择一个或多个要从中删除配置文件的文件夹并单击 **[!UICONTROL 完成]**.
+1. 按一下Experience Manager標誌並導覽至 **[!UICONTROL 工具>資產>中繼資料設定檔]**.
+1. 選取您要從資料夾或多個資料夾中移除的中繼資料描述檔。
+1. 按一下 **[!UICONTROL 從資料夾中移除中繼資料設定檔]** 並選取您要用來從中移除設定檔的資料夾或多個資料夾，然後按一下 **[!UICONTROL 完成]**.
 
-   您可以确认元数据配置文件不再应用于文件夹，因为该名称不再显示在文件夹名称的下方。
+   您可以確認中繼資料描述檔不再套用至資料夾，因為資料夾名稱下方不再有該名稱。
 
-### 通过属性将元数据配置文件从文件夹删除 {#removing-metadata-profiles-from-folders-via-properties}
+### 透過「屬性」從資料夾中移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 单击Experience Manager徽标并导航 **[!UICONTROL 资产]** 然后，转到要从中删除元数据配置文件的文件夹。
-1. 在文件夹中，单击复选标记以将其选中，然后单击 **[!UICONTROL 属性]**.
+1. 按一下Experience Manager標誌並導覽 **[!UICONTROL 資產]** 然後移至您要從中移除中繼資料設定檔的資料夾。
+1. 在資料夾上，按一下核取記號以選取資料夾，然後按一下 **[!UICONTROL 屬性]**.
 1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 **另请参阅**

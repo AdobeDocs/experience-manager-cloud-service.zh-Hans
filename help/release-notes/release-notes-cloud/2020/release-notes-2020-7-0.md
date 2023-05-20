@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service的2020.7.0发行说明。”'
+description: '"[!DNL Adobe Experience Manager] 2020.7.0版as a Cloud Service發行說明」。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 76%
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。管理员可以配置 [!DNL Experience Manager] 调用使用 [!DNL Asset Compute Service]. 开发人员可以使用该服务来创建专门的自定义应用程序，以满足复杂用例的需求。 此Web服务可以为不同文件类型生成缩略图、从Adobe文件格式生成高质量图像渲染、对视频进行编码（将来推出）、提取元数据、提取全文作为索引的前导，以及通过所有可用资产运行资产 [!DNL Sensei] 服务。 请参阅 [使用资产微服务和处理配置文件](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。管理員可以設定 [!DNL Experience Manager] 以叫用使用建立的自訂應用程式 [!DNL Asset Compute Service]. 開發人員可使用此服務建立專門的自訂應用程式，以配合複雜的使用案例。 此網站服務可針對不同檔案型別產生縮圖、以Adobe檔案格式製作高品質的影像轉譯、影片編碼（未來推出）、擷取中繼資料、擷取全文作為索引的前導，以及透過所有可用功能執行資產 [!DNL Sensei] 服務。 另請參閱 [使用資產微服務和處理設定檔](/help/assets/asset-microservices-configure-and-use.md).
 
 * 改进了 [!DNL Experience Manager] as a Cloud Service 中 [!DNL Dynamic Media] 的初始配置，使其更加稳健。如今，它可以向管理员提供进程进度。
 
@@ -41,21 +41,21 @@ ht-degree: 76%
 
 * 如今在[!UICONTROL 工作流程模型]编辑器中，与云服务部署不兼容的工作流程步骤将会带有警告标记。此外，在云服务环境中执行现有的工作流程时，将会跳过不兼容的工作流程步骤。
 
-* 由部署到 `/conf/global` 在与 [!DNL Cloud Manager] 自动部署到 `/var` 因此， [!DNL Experience Manager]. 客户更改的 `/libs` 下的产品工作流程模型不会自动部署到 `/var`。
+* 客戶建立的工作流程模型已部署至 `/conf/global` 中與環境相關聯的Git專案中的 [!DNL Cloud Manager] 會自動部署至 `/var` 因此可在 [!DNL Experience Manager]. 客户更改的 `/libs` 下的产品工作流程模型不会自动部署到 `/var`。
 
-### 已修复的错误 {#assets-bugs-fixed}
+### 錯誤已修正 {#assets-bugs-fixed}
 
-* 对于收藏集中包含的资产，“移动资产”向导无法按预期加载。 (CQ-4296756)
-* 的值 `dam:size` 和 `dam:sha1` 从XMP写回中排除。 (CQ-4237355)
-* 批量取消发布资产时， [!DNL Brand Portal] 生成一个错误，表示请求URI太长。 (CQ-4299474)
+* 「移動資產」精靈未如預期載入「集合」中包含的資產。 (CQ-4296756)
+* 的值 `dam:size` 和 `dam:sha1` 會從XMP回寫中排除。 (CQ-4237355)
+* 大量取消發佈資產時， [!DNL Brand Portal] 會產生一個錯誤，指出請求URI太長。 (CQ-4299474)
 
-## Adobe Experience Manager商务as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-AEM Commerce现在可用于Cloud Service。
+AEM Commerce現在可在Cloud Service上使用。
 
-请参阅 [AEM Commerce入门as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 以了解更多详细信息。
+請參閱 [AEM Commerceas a Cloud Service快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 以取得更多詳細資料。
 
 ## 核心组件 {#core-components}
 
@@ -91,15 +91,15 @@ AEM Commerce现在可用于Cloud Service。
 
    有关更多详细信息，请参阅管道变量。
 
-* 现在支持绑定身份验证的专用Maven存储库。
+* 现在支持绑定身份验证的专用 Maven 存储库。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅使用Java 11支持。
+* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅使用 Java 11 支持。
 
 ### 错误修复 {#bug-fixes-cm}
 
 * 在完全环境创建之前，从 Cloud Manager 到开发人员控制台的链接错误地处于活动状态。
 
-* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒项目的环境解除休眠/休眠的选项。
+* 直接从 Cloud Manager 链接到开发人员控制台不显示用于将沙盒程序的环境解除休眠/休眠的选项。
 
 * 非生产管道编辑页面上的&#x200B;**取消**&#x200B;和&#x200B;**保存**&#x200B;选项并非一直可见。
 

@@ -1,6 +1,6 @@
 ---
-title: AEM-CIF核心组件与Adobe Experience Platform集成
-description: 了解如何使用CIF - Data Connector将AEM呈现的产品页面的storefront事件数据发送到Experience Platform。
+title: AEM-CIF核心元件與Adobe Experience Platform整合
+description: 瞭解如何使用CIF - Storefront Connector將店面事件資料從AEM呈現的產品頁面傳送到Experience Platform。Experience Platform
 sub-product: Commerce
 version: Cloud Service
 activity: setup
@@ -18,60 +18,60 @@ ht-degree: 1%
 
 ---
 
-# AEM-CIF核心组件与Adobe Experience Platform集成 {#aem-cif-aep-integration}
+# AEM-CIF核心元件與Adobe Experience Platform整合 {#aem-cif-aep-integration}
 
-的 [商务集成框架(CIF)](https://github.com/adobe/aem-core-cif-components) 核心组件提供无缝集成， [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 从客户端交互(如 __添加到购物车__.
+此 [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) 核心元件提供與下列專案緊密整合： [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 轉寄店面事件及其來自使用者端互動的資料，例如 __加入購物車__.
 
-的 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) 项目提供了一个名为 [Adobe Experience Platform connector for Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 从商务店面收集事件数据。 该事件数据会发送到用于其他Adobe Experience Cloud产品(如Adobe Analytics和Adobe Target)的Experience Platform，以构建涵盖客户旅程的360度用户档案。 通过将商务数据连接到Adobe Experience Cloud中的其他产品，您可以执行诸如分析网站上的用户行为、执行AB测试和创建个性化促销活动等任务。
+此 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) project提供JavaScript程式庫，稱為 [Adobe Commerce的Adobe Experience Platform聯結器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 以從Commerce店面收集事件資料。 該事件資料會傳送至Experience Platform，並用於其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)，以建立涵蓋客戶歷程的360度設定檔。 透過將Commerce資料連線到Adobe Experience Cloud中的其他產品，您可以執行分析網站上的使用者行為、執行AB測試和建立個人化行銷活動等工作。
 
-进一步了解 [Experience Platform数据收集](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 一套技术，允许您从客户端源收集客户体验数据。
+進一步瞭解 [Experience Platform資料彙集](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 可讓您從使用者端來源收集客戶體驗資料的技術套件。
 
-## 发送 `addToCart` 要Experience Platform的事件数据 {#send-addtocart-to-aep}
+## 傳送 `addToCart` 要Experience Platform的事件資料 {#send-addtocart-to-aep}
 
-以下步骤显示如何发送 `addToCart` 使用CIF -AEM连接器将事件数据从呈现的产品页面Experience Platform发送到Experience Platform。 使用Adobe Experience Platform Debugger浏览器扩展，您可以测试和查看提交的数据。
+下列步驟說明如何傳送 `addToCart` 事件資料會從AEM呈現的產品頁面使用CIF -Experience Platform聯結器傳送至Experience Platform。 您可以使用Adobe Experience Platform Debugger瀏覽器擴充功能，測試並檢閱提交的資料。
 
-![在Adobe Experience Platform Debugger中查看addToCart事件数据](../assets/aep-integration/EventData-AEM-AEP.png)
+![在Adobe Experience Platform Debugger中檢閱addToCart事件資料](../assets/aep-integration/EventData-AEM-AEP.png)
 
 ## 前提条件 {#prerequisites}
 
-您必须使用本地开发环境来完成此演示。 这包括已配置并连接到Adobe Commerce实例的AEM运行实例。 查看 [使用AEMas a Cloud ServiceSDK设置本地开发](../develop.md).
+您必須使用本機開發環境才能完成此示範。 這包括執行中的AEM執行個體，其已設定並連線至Adobe Commerce執行個體。 檢閱的需求和步驟 [使用AEMas a Cloud ServiceSDK設定本機開發](../develop.md).
 
-您还需要访问 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) 以及创建用于数据收集的架构、数据集和数据流的权限。 有关更多信息，请参阅 [权限管理](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+您還需要以下專案的存取權： [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) 以及建立資料收集之結構、資料集和資料流的許可權。 如需詳細資訊，請參閱 [許可權管理](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
 
-## AEM Commerceas a Cloud Service设置 {#aem-setup}
+## AEM Commerceas a Cloud Service設定 {#aem-setup}
 
-要工作 __AEM Commerceas a Cloud Service__ 本地环境中包含必需的代码和配置，请完成以下步骤。
+若要讓工作正常 __AEM Commerceas a Cloud Service__ 使用必要程式碼和設定的本機環境，請完成以下步驟。
 
-### 本地设置
+### 本機設定
 
-关注 [本地设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup) 有效的AEM Commerceas a Cloud Service环境的步骤。
+請遵循 [本機設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup) 建立運作中的AEM Commerceas a Cloud Service環境的步驟。
 
-### 项目设置
+### 專案設定
 
-关注 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) 创建全新AEM Commerce(CIF)项目的步骤。
+請遵循 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) 建立全新AEM Commerce (CIF)專案的步驟。
 
 >[!TIP]
 >
->在以下示例中，AEM Commerce项目名为： `My Demo Storefront`但是，您可以选择自己的项目名称。
+>在以下範例中，AEM Commerce專案名為： `My Demo Storefront`不過，您可以選擇自己的專案名稱。
 
-![AEM Commerce Project](../assets/aep-integration/aem-project-with-commerce.png)
+![AEM Commerce專案](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-通过从项目的根目录中运行以下命令，生成新创建的AEM Commerce项目并将其部署到本地AEM SDK。
+從專案的根目錄執行下列命令，建置新建立的AEM Commerce專案並將其部署至本機AEM SDK。
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
 ```
 
-本地部署的 `My Demo StoreFront` 具有默认代码和内容的商务网站如下所示：
+本機部署 `My Demo StoreFront` 具有預設程式碼和內容的商務網站如下所示：
 
-![默认AEM商务网站](../assets/aep-integration/demo-aem-storefront.png)
+![預設AEM Commerce網站](../assets/aep-integration/demo-aem-storefront.png)
 
-### 安装Peregrine和CIF-AEP连接器依赖项
+### 安裝Peregrine和CIF-AEP聯結器相依性
 
-要从此AEM Commerce网站的类别和产品页面收集和发送事件数据，您需要安装密钥 `npm` 包到 `ui.frontend` 模块。
+若要從此AEM Commerce網站的類別和產品頁面收集並傳送事件資料，您必須安裝金鑰 `npm` 將套件封裝到 `ui.frontend` AEM Commerce專案的模組。
 
-导航到 `ui.frontend` 模块，并通过从命令行中运行以下命令来安装所需的软件包。
+導覽至 `ui.frontend` 模組，並從命令列執行下列命令來安裝所需的套裝軟體。
 
 ```bash
 npm i --save lodash.get@^4.4.2 lodash.set@^4.3.2
@@ -86,14 +86,14 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!IMPORTANT]
 >
->的 `--force` 参数有时是必需的，如 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 对支持的对等依赖关系存在限制。 通常，这不应导致任何问题。
+>此 `--force` 有時需要引數為 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 受支援的對等相依性限制。 這通常不會造成任何問題。
 
 
-### 配置Maven以使用 `--force` 参数
+### 設定Maven以使用 `--force` 引數
 
-在Maven构建过程中，npm将清理安装(使用 `npm ci`)。 这还要求 `--force` 参数。
+在Maven建置流程中，npm全新安裝(使用 `npm ci`)觸發。 這同樣需要 `--force` 引數。
 
-导航到项目的根POM文件 `pom.xml` 并找到 `<id>npm ci</id>` 执行块。 更新块，使其如下所示：
+導覽至專案的根POM檔案 `pom.xml` 並找到 `<id>npm ci</id>` 執行區塊。 更新區塊，使其如下所示：
 
 ```xml
 <execution>
@@ -107,13 +107,13 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 </execution>
 ```
 
-### 更改Babel配置格式
+### 變更Babel組態格式
 
-从默认值切换 `.babelrc` 文件相对配置文件格式 `babel.config.js` 格式。 这是一种项目范围的配置格式，允许将插件和预设应用于 `node_module` 控制力更强。
+從預設值切換 `.babelrc` 檔案相對組態檔案格式為 `babel.config.js` 格式。 此為專案範圍的設定格式，可將外掛程式和預設集套用至 `node_module` 擁有更優異的控制力。
 
-1. 导航到 `ui.frontend` 模块并删除现有 `.babelrc` 文件。
+1. 導覽至 `ui.frontend` 模組並刪除現有 `.babelrc` 檔案。
 
-1. 创建 `babel.config.js` 使用 `peregrine` 预设。
+1. 建立 `babel.config.js` 使用 `peregrine` 預設集。
 
    ```javascript
    const peregrine = require('@magento/babel-preset-peregrine');
@@ -130,11 +130,11 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    }
    ```
 
-### 配置WebPack以使用Babel
+### 設定webpack以使用Babel
 
-使用Babel加载器(`babel-loader`)和WebPack中，您需要修改 `webpack.common.js` 文件。
+若要使用Babel載入器傳輸JavaScript檔案(`babel-loader`)和webpack，您需要修改 `webpack.common.js` 檔案。
 
-导航到 `ui.frontend` 模块和更新 `webpack.common.js` 文件，以在 `module` 属性值：
+導覽至 `ui.frontend` 模組並更新 `webpack.common.js` 檔案的下列規則位於 `module` 屬性值：
 
 ```javascript
 {
@@ -144,16 +144,16 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 }
 ```
 
-### 配置Apollo客户端
+### 設定Apollo使用者端
 
-的 [阿波罗客户](https://www.apollographql.com/docs/react/) 用于通过GraphQL管理本地和远程数据。 它还将GraphQL查询的结果存储在本地标准化内存中的缓存中。
+此 [Apollo使用者端](https://www.apollographql.com/docs/react/) 用於透過GraphQL管理本機與遠端資料。 它也會將GraphQL查詢的結果儲存在本機、正規化的記憶體快取中。
 
-对于 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 要有效工作，您需要 `possibleTypes.js` 文件。 要生成此文件，请参阅 [自动生成可能的类型](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). 另外，请参阅 [PWA Studio参考实施](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 和 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) 文件。
+對象 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 若要有效運作，您需要 `possibleTypes.js` 檔案。 若要產生此檔案，請參閱 [自動產生possibleType](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). 另請參閱 [PWA Studio參考實作](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 和範例 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) 檔案。
 
 
-1. 导航到 `ui.frontend` 模块并将文件另存为 `./src/main/possibleTypes.js`
+1. 導覽至 `ui.frontend` 模組，並將檔案另存為 `./src/main/possibleTypes.js`
 
-1. 更新 `webpack.common.js` 文件 `DefinePlugin` 部分来替换生成期间所需的静态变量。
+1. 更新 `webpack.common.js` 檔案的 `DefinePlugin` 區段，以在建置期間取代必要的靜態變數。
 
    ```javascript
    const { DefinePlugin } = require('webpack');
@@ -170,13 +170,13 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    ]
    ```
 
-### 初始化Peregrine和CIF核心组件
+### 初始化Peregrine和CIF核心元件
 
-要初始化基于React的Peregrine和CIF核心组件，请创建所需的配置和JavaScript文件。
+若要初始化以React為基礎的Peregrine和CIF核心元件，請建立所需的設定和JavaScript檔案。
 
-1. 导航到 `ui.frontend` 模块并创建以下文件夹： `src/main/webpack/components/commerce/App`
+1. 導覽至 `ui.frontend` 模組，並建立下列資料夾： `src/main/webpack/components/commerce/App`
 
-1. 创建 `config.js` 文件，其中包含以下内容：
+1. 建立 `config.js` 包含下列內容的檔案：
 
    ```javascript
    // get and parse the CIF store configuration from the <head>
@@ -226,9 +226,9 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
    >[!IMPORTANT]
    >
-   >虽然您已经熟悉 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 文件来源 __AEM指南 — CIF Venia项目__，则需要对此文件进行一些更改。 首先，查看任意 __TODO__ 注释。 然后，在 `eventsCollector` 属性，查找 `eventsCollector > aed` 对象和更新 `orgId` 和 `datastreamId` 属性到正确的值。 [了解更多](./aep.md#add-aep-values-to-aem)。
+   >雖然您可能已經熟悉 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 檔案來源 __AEM Guides - CIF Venia Project__，您需要對此檔案進行一些變更。 首先，檢閱任何 __待辦事項__ 評論。 然後，在內部 `eventsCollector` 屬性，尋找 `eventsCollector > aed` 物件並更新 `orgId` 和 `datastreamId` 屬性至正確的值。 [了解详情](./aep.md#add-aep-values-to-aem).
 
-1. 创建 `App.js` 文件，其中包含以下内容。 此文件类似于典型的React应用程序起点文件，包含React和自定义挂接以及React Context用法，以便于Experience Platform集成。
+1. 建立 `App.js` 檔案及下列內容。 此檔案類似於典型的React應用程式起點檔案，並包含React和自訂鉤點和React Context使用方式，以促進Experience Platform整合。
 
    ```javascript
    import config from './config';
@@ -323,185 +323,185 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    };
    ```
 
-   的 `EventCollectorContext` 导出React Context，该环境：
+   此 `EventCollectorContext` 匯出React內容，其中：
 
-   - 加载commerce-events-sdk和commerce-events-collector库，
-   - 使用给定的配置初始化它们，以用于Experience Platform和/或ACDS
-   - 订阅来自Peregrine的所有事件，并将其转发到事件SDK
+   - 載入commerce-events-sdk和commerce-events-collector資料庫，
+   - 使用指定的Experience Platform和/或ACDS設定將它們初始化
+   - 訂閱Peregrine的所有事件，並將其轉送至事件SDK
 
-   您可以查看 `EventCollectorContext` [此处](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
+   您可以檢閱的實作詳細資料 `EventCollectorContext` [此處](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
 
-### 构建和部署更新的AEM项目
+### 建置和部署更新的AEM專案
 
-要确保上述包安装、代码和配置更改正确无误，请使用以下Maven命令重新构建和部署更新的AEM Commerce项目： `$ mvn clean install -PautoInstallSinglePackage`.
+為確保上述套件安裝、程式碼和設定變更正確，請使用以下Maven命令重新建置和部署更新的AEM Commerce專案： `$ mvn clean install -PautoInstallSinglePackage`.
 
-## Experience Platform设置 {#aep-setup}
+## Experience Platform設定 {#aep-setup}
 
-要接收和存储来自AEM Commerce页面（如类别和产品）的事件数据，请完成以下步骤：
+若要接收並儲存來自AEM Commerce頁面（例如類別和產品）的事件資料，請完成以下步驟：
 
 >[!AVAILABILITY]
 >
->确保您是正确的 __产品配置文件__ 在 __Adobe Experience Platform__ 和 __Adobe Experience Platform数据收集__. 如有需要，请与系统管理员合作以创建、更新或分配 __产品配置文件__ 下 [Admin Console](https://adminconsole.adobe.com/).
+>確定您屬於正確的一分子 __產品設定檔__ 在 __Adobe Experience Platform__ 和 __Adobe Experience Platform資料彙集__. 如有需要，請與系統管理員合作來建立、更新或指派 __產品設定檔__ 在 [Admin Console](https://adminconsole.adobe.com/).
 
-### 使用商务字段组创建架构
+### 使用商務欄位群組建立結構描述
 
-要定义商务事件数据的结构，必须创建体验数据模型(XDM)架构。 架构是一组规则，用于表示和验证数据的结构和格式。
+若要定義商務事件資料的結構，您必須建立體驗資料模型(XDM)結構描述。 結構是一組規則，可代表及驗證資料的結構和格式。
 
-1. 在浏览器中，导航到 __Adobe Experience Platform__ 产品主页。 例如：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>。
+1. 在瀏覽器中導覽至 __Adobe Experience Platform__ 產品首頁。 例如：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>。
 
-1. 找到 __模式__ 菜单，单击 __创建架构__ 按钮，然后选择 __XDM ExperienceEvent__.
+1. 找到 __結構描述__ 功能表，按一下 __建立結構描述__ 按鈕，然後選取 __XDM ExperienceEvent__.
 
-   ![AEP创建架构](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
+   ![AEP建立結構描述](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
 
-1. 使用命名架构 __架构属性>显示名称__ 字段，然后使用  __合成>字段组>添加__ 按钮。
+1. 使用為您的結構描述命名 __結構描述屬性>顯示名稱__ 欄位並使用新增欄位群組  __構成>欄位群組>新增__ 按鈕。
 
-   ![AEP架构定义](../assets/aep-integration/AEP-Schema-Definition.png)
+   ![AEP結構描述定義](../assets/aep-integration/AEP-Schema-Definition.png)
 
-1. 在 __添加字段组__ 对话框，搜索 `Commerce`，选择 __商务详细信息__ 复选框，然后单击 __添加字段组__.
+1. 在 __新增欄位群組__ 對話方塊，搜尋 `Commerce`，選取 __商務詳細資料__ 核取方塊，然後按一下 __新增欄位群組__.
 
-   ![AEP架构定义](../assets/aep-integration/AEP-Schema-Field-Group.png)
+   ![AEP結構描述定義](../assets/aep-integration/AEP-Schema-Field-Group.png)
 
 
 >[!TIP]
 >
->请参阅 [架构组合的基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) 以了解更多信息。
+>請參閱 [結構描述組合基本概念](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) 以取得詳細資訊。
 
-### 创建数据集
+### 建立資料集
 
-要存储事件数据，必须创建一个符合架构定义的数据集。 数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
+若要儲存事件資料，您必須建立符合結構描述定義的資料集。 資料集是資料集合的儲存和管理結構，通常是包含方案（欄）和欄位（列）的表格。
 
-1. 在浏览器中，导航到 __Adobe Experience Platform__ 产品主页。 例如：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>。
+1. 在瀏覽器中導覽至 __Adobe Experience Platform__ 產品首頁。 例如：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>。
 
-1. 找到 __数据集__ 菜单，然后单击 __创建数据集__ 按钮。
+1. 找到 __資料集__ 功能表，然後按一下 __建立資料集__ 按鈕。
 
-   ![AEP创建数据集](../assets/aep-integration/AEP-Datasets-Create.png)
+   ![AEP建立資料集](../assets/aep-integration/AEP-Datasets-Create.png)
 
-1. 在新页面上，选择 __从架构创建数据集__ 卡。
+1. 在新頁面上，選取 __從結構描述建立資料集__ 卡片。
 
-   ![AEP创建数据集架构选项](../assets/aep-integration/AEP-Datasets-Schema-Option.png)
+   ![AEP建立資料集結構描述選項](../assets/aep-integration/AEP-Datasets-Schema-Option.png)
 
-- 在新页面上， __搜索并选择__ 在上一步中创建的架构，然后单击 __下一个__ 按钮。
+- 在新頁面上， __搜尋並選取__ 您在上一步建立的綱要，然後按一下 __下一個__ 按鈕。
 
-   ![AEP创建数据集选择架构](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+   ![AEP建立資料集選取結構描述](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
-1. 使用命名您的数据集 __配置数据集>名称__ 字段，然后单击 __完成__ 按钮。
+1. 使用為您的資料集命名 __設定資料集>名稱__ 欄位並按一下 __完成__ 按鈕。
 
-   ![AEP创建数据集名称](../assets/aep-integration/AEP-Datasets-Name.png)
-
->[!TIP]
->
->请参阅 [数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) 以了解更多信息。
-
-
-### 创建数据流
-
-完成以下步骤以在Experience Platform中创建数据流。
-
-1. 在浏览器中，导航到 __Adobe Experience Platform__ 产品主页。 例如：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>。
-
-1. 找到 __数据流__ 菜单，然后单击 __新数据流__ 按钮。
-
-   ![AEP创建数据流](../assets/aep-integration/AEP-Datastream-Create.png)
-
-1. 使用命名您的数据流 __名称__ 必填字段。 在 __事件架构__ 字段，选择新创建的架构并单击 __保存__.
-
-   ![AEP定义数据流](../assets/aep-integration/AEP-Datastream-Define.png)
-
-1. 打开新创建的数据流，然后单击 __添加服务__.
-
-   ![AEP Datastreams添加服务](../assets/aep-integration/AEP-Datastream-Add-Service.png)
-
-1. 在 __服务__ 字段，选择 __Adobe Experience Platform__ 选项。 在 __事件数据集__ 字段中，选择数据集名称并单击 __保存__.
-
-   ![AEP Datastreams添加服务详细信息](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)
+   ![AEP建立資料集名稱](../assets/aep-integration/AEP-Datasets-Name.png)
 
 >[!TIP]
 >
->请参阅 [数据流概述](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 以了解更多信息。
-
-## 将数据流值添加到AEM Commerce配置中 {#add-aep-values-to-aem}
-
-完成上述Experience Platform设置后，您应该 `datastreamId` 在数据流详细信息的左边栏和 `orgId` 的右上角 __个人资料图片>帐户信息>用户信息__ 模式窗口。
-
-![AEP数据流ID](../assets/aep-integration/AEP-Datastream-ID.png)
-
-1. 在AEM Commerce项目的 `ui.frontend` 模块，更新 `config.js` 文件，特别是 `eventsCollector > aep` 对象属性。
-
-1. 构建和部署更新的AEM Commerce项目
+>請參閱 [資料集總覽](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) 以取得詳細資訊。
 
 
-## 触发器 `addToCart` 事件和验证数据收集 {#event-trigger-verify}
+### 建立資料串流
 
-上述步骤将完成AEM Commerce和Experience Platform设置。 您现在可以触发 `addToCart` 事件，并使用Experience Platform调试器和数据集验证数据收集 __量度和图表__ 在产品UI中进行切换。
+完成下列步驟，在Experience Platform中建立資料串流。
 
-要触发该事件，您可以使用AEM作者或本地设置中的发布服务。 在本例中，请通过登录到您的帐户来使用AEM作者。
+1. 在瀏覽器中導覽至 __Adobe Experience Platform__ 產品首頁。 例如：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>。
 
-1. 从站点页面中，选择 __我的Demo StoreFront >我们> en__ 页面，单击 __编辑__ 中。
+1. 找到 __資料串流__ 功能表，然後按一下 __新增資料串流__ 按鈕。
 
-1. 在顶部操作栏中，单击 __查看已发布的项目__，然后在店面的导航中单击任何首选类别。
+   ![AEP建立資料串流](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. 单击 __产品页面__，然后选择 __颜色、大小__ 启用 __添加到购物车__ 按钮。
+1. 使用為您的資料流命名 __名稱__ 必填欄位。 在 __事件結構描述__ 欄位中，選取新建立的結構描述並按一下 __儲存__.
+
+   ![aep定義資料串流](../assets/aep-integration/AEP-Datastream-Define.png)
+
+1. 開啟新建立的資料流，然後按一下 __新增服務__.
+
+   ![AEP資料串流新增服務](../assets/aep-integration/AEP-Datastream-Add-Service.png)
+
+1. 在 __服務__ 欄位中，選取 __Adobe Experience Platform__ 選項。 下 __事件資料集__ 欄位中，選取上一步的資料集名稱，然後按一下 __儲存__.
+
+   ![AEP資料串流新增服務詳細資料](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)
+
+>[!TIP]
+>
+>請參閱 [資料流概觀](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 以取得詳細資訊。
+
+## 將資料串流值新增至AEM Commerce設定 {#add-aep-values-to-aem}
+
+完成上述Experience Platform設定後，您應 `datastreamId` 資料流詳細資訊的左側邊欄和 `orgId` 右上角 __個人資料圖片>帳戶資訊>使用者資訊__ 強制回應視窗。
+
+![AEP資料串流ID](../assets/aep-integration/AEP-Datastream-ID.png)
+
+1. 在AEM Commerce專案的 `ui.frontend` 模組，更新 `config.js` 檔案，尤其是 `eventsCollector > aep` 物件屬性。
+
+1. 建置和部署更新的AEM Commerce專案
 
 
-1. 打开 __Adobe Experience Platform Debugger__ 扩展，然后选择 __Experience PlatformWed SDK__ 中。
+## 觸發 `addToCart` 事件與驗證資料收集 {#event-trigger-verify}
+
+上述步驟已完成AEM Commerce和Experience Platform設定。 您現在可以觸發 `addToCart` 事件並使用Experience Platform偵錯程式和資料集驗證資料收集 __度量和圖表__ 在產品UI中切換。
+
+若要觸發事件，您可以使用AEM作者或本機設定中的發佈服務。 在此範例中，透過登入您的帳戶來使用AEM author。
+
+1. 從「網站」頁面中，選取 __我的示範StoreFront >我們>英文__ 頁面並按一下 __編輯__ 在頂端動作列中。
+
+1. 在頂端動作列中，按一下 __檢視已發佈__，然後按一下店面導覽中任何偏好的類別。
+
+1. 按一下中任何偏好的產品卡 __產品頁面__，然後選取 __顏色，大小__ 以啟用 __加入購物車__ 按鈕。
+
+
+1. 開啟 __Adobe Experience Platform Debugger__ 從瀏覽器的擴充功能面板中選取擴充功能， __Experience Platform週三SDK__ 在左側邊欄中。
 
    ![AEP Debugger](../assets/aep-integration/AEP-Debugger.png)
 
 
-1. 返回到 __产品页面__ 单击 __添加到购物车__ 按钮。 这会向Experience Platform发送数据。 的 __Adobe Experience Platform Debugger__ 扩展会显示事件详细信息。
+1. 返回 __產品頁面__ 並按一下 __加入購物車__ 按鈕。 這會將資料傳送至Experience Platform。 此 __Adobe Experience Platform Debugger__ 擴充功能會顯示事件詳細資料。
 
-   ![AEP Debugger添加到购物车事件数据](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
-
-
-
-1. 在Experience Platform产品UI中，导航到 __数据集> My Demo StoreFront__，在 __数据集活动__ 选项卡。 如果 __量度和图表__ 切换启用后，将显示事件数据统计资料。
-
-   ![Experience Platform数据集数据统计资料](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
+   ![AEP Debugger Add-To-Cart事件資料](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
 
 
-## 实施详细信息 {#implementation-details}
+1. 在Experience Platform產品UI中，導覽至 __資料集>我的示範StoreFront__，位於 __資料集活動__ 標籤。 如果 __度量和圖表__ 切換功能已啟用，則會顯示事件資料統計資料。
 
-的 [CIFExperience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 构建于 [Experience PlatformConnector for Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html)，这是 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 项目。
+   ![Experience Platform資料集資料統計資料](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
-利用PWA Studio项目，可创建由Adobe Commerce或Magento Open Source提供支持的Progressive Web Application(PWA)店面。 该项目还包含一个名为 [佩雷格林](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 用于向可视化组件添加逻辑。 的 [佩雷格林图书馆](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 还提供了 [Experience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 与Experience Platform无缝集成。
+
+
+## 實作詳細資料 {#implementation-details}
+
+此 [CIFExperience Platform聯結器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 建立在 [Adobe Commerce的Experience Platform聯結器](https://marketplace.magento.com/magento-experience-platform-connector.html)，這屬於 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 專案。
+
+PWA Studio專案可讓您建立由Adobe Commerce或Magento Open Source提供支援的Progressive Web Application(PWA)店面。 專案也包含名為的元件庫 [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 用於新增邏輯至視覺元件。 此 [Peregrin資料庫](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 也會提供以下使用者使用的自訂React鉤點： [Experience Platform聯結器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 與Experience Platform緊密整合。
 
 
 ## 支持的事件 {#supported-events}
 
-目前，支持以下事件：
+截至目前，支援下列事件：
 
-__体验XDM事件：__
+__體驗XDM事件：__
 
-1. 添加到购物车(AEM)
-1. 查看页面(AEM)
-1. 查看产品(AEM)
-1. 已发送搜索请求(AEM)
-1. 收到搜索响应(AEM)
+1. 加入購物車(AEM)
+1. 檢視頁面(AEM)
+1. 檢視產品(AEM)
+1. 搜尋要求已傳送(AEM)
+1. 已收到搜尋回應(AEM)
 
-When [Peregrine组件](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) 在AEM Commerce项目中重复使用：
+時間 [Peregrine元件](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) 在AEM Commerce專案中重複使用：
 
-__体验XDM事件：__
+__體驗XDM事件：__
 
-1. 从购物车中删除
-1. 打开购物车
-1. 查看购物车
-1. 即时购买
-1. 开始结帐
-1. 完成结帐
+1. 從購物車移除
+1. 開啟購物車
+1. 檢視購物車
+1. 立即購買
+1. 開始簽出
+1. 完成結帳
 
-__配置文件XDM事件：__
+__設定檔XDM事件：__
 
 1. 登录
 1. 创建帐户
-1. 编辑帐户
+1. 編輯帳戶
 
 
 ## 其他资源 {#additional-resources}
 
-有关更多信息，请参阅以下资源：
+如需詳細資訊，請參閱下列資源：
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Experience Platform连接器概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Experience Platform连接器事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
-- [Adobe Experience Platform概述](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+- [Experience Platform聯結器總覽](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Experience Platform聯結器事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [Adobe Experience Platform概觀](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

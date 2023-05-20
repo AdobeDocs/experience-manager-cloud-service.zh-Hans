@@ -142,7 +142,7 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 在每个产品上下文实例下，都将有一些实例跨生产、阶段或开发环境中的创作或发布服务。每个实例都将与产品配置文件或 Cloud Manager 角色相关联。这些产品配置文件用于为具有所需权限的用户和组分配访问权限。
 
-的 **AEM Administrators_xxx** 配置文件将用于在关联的AEM实例中授予管理员权限，而 **AEM Users_xxx** 用户档案用于添加常规用户。
+此 **AEM管理員_xxx** 設定檔將用來授與相關聯AEM執行個體的管理員許可權，而 **AEM使用者_xxx** 設定檔用於新增一般使用者。
 
 在此产品配置文件下添加的任何用户和组都将能够登录到该特定实例，如下例所示：
 
@@ -150,7 +150,7 @@ Adobe I/O 控制台文档可在[此处](https://www.adobe.io/apis/cloudplatform/
 
 >[!WARNING]
 >
->的 **AEM管理员** 不得更改产品配置文件名称。 更改的名称 **AEM管理员** 产品配置文件将从分配给该配置文件的所有用户中删除管理员权限。
+>此 **AEM管理員** 產品設定檔名稱不可變更。 變更的名稱 **AEM管理員** 產品設定檔會移除指派給該設定檔之所有使用者的管理員許可權。
 
 ### 登录 Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 

@@ -1,11 +1,11 @@
 ---
 title: 导出到 CSV
-description: 将页面的相关信息导出到本地系统上的 CSV 文件
+description: 將頁面的相關資訊匯出至本機系統上的CSV檔案
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
    * 翻译
       * 已翻译
    * 分析
-      * 页面查看次数
+      * 页面视图
       * 独特访客
       * 页面停留时间
 * 深度
@@ -56,6 +56,6 @@ ht-degree: 100%
 
    ![CSV 导出选项](/help/sites-cloud/authoring/assets/csv-options.png)
 
-1. 选择需要导出的属性。
+1. 選取要匯出的必要屬性。
 1. 选择&#x200B;**创建**。
    ![在 Excel 中生成 CSV 导出](/help/sites-cloud/authoring/assets/csv-example.png)

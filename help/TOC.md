@@ -386,7 +386,7 @@ ht-degree: 99%
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + 管理数字资源{#manage}
-      + [微型前端资产选择器](/help/assets/asset-selector.md)
+      + [微前端資產選擇器](/help/assets/asset-selector.md)
       + [共享资源](/help/assets/share-assets.md)
       + [监测活动和 DAM 任务](/help/assets/assets-activity-history.md)
       + [开始使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)

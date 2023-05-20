@@ -1,7 +1,7 @@
 ---
-title: 为表单字段创作上下文内帮助
+title: 為表單欄位編寫內容內說明
 seo-title: Authoring in-context help for form fields
-description: AEM Forms允许您将上下文内帮助作为文本或富媒体（包括视频）添加到自适应表单字段和面板。
+description: AEM Forms可讓您將內容說明新增至最適化表單欄位和面板，以文字或多媒體形式呈現，包括影片。
 seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
 uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,56 +16,56 @@ ht-degree: 0%
 ---
 
 
-# 为表单字段创作上下文内帮助{#authoring-in-context-help-for-form-fields}
+# 為表單欄位編寫內容內說明{#authoring-in-context-help-for-form-fields}
 
 ## 简介 {#introduction}
 
-有时，填写表单的最终用户不确定如何填写特定表单字段的详细信息。 为了解决此类问题，自适应Forms支持向表单字段添加文本或富上下文帮助。 它有助于改善表单填写体验，并避免最终用户出现任何歧义。
+有時候，填寫表單的使用者不確定如何在特定表單欄位中填寫詳細資訊。 為了解決這類問題，Adaptive Forms支援在表單欄位中新增文字或RTF內容說明。 它有助於改善表單填寫體驗並避免一般使用者的任何模糊性。
 
-本文讨论了在创作自适应Forms时，表单作者如何添加上下文内帮助。
+本文探討表單作者如何在編寫Adaptive Forms時新增內容感知說明。
 
-## 添加上下文帮助 {#add-in-context-help}
+## 新增內文中說明 {#add-in-context-help}
 
-您可以使用侧栏属性选项卡的“帮助内容”部分中的以下选项指定上下文内帮助。
+您可以使用側邊欄中「屬性」標籤的「說明內容」區段中的以下選項來指定內容內說明。
 
-* [简短描述](authoring-in-field-help.md#p-short-description-p)
-* [长描述](authoring-in-field-help.md#p-long-description-p)
+* [簡短說明](authoring-in-field-help.md#p-short-description-p)
+* [詳細說明](authoring-in-field-help.md#p-long-description-p)
 
-![表单字段的上下文帮助](assets/descriptions.png)
-
->[!NOTE]
->
->长描述将覆盖短描述。 如果同时指定了这两者，则只会显示“长描述”。
-
-### 简短描述 {#short-description}
-
-简短描述字段用于提供有关填写表单字段的快速提示和简短提示。 将鼠标悬停在“简短描述”字段上时，在该字段中指定的文本将显示为工具提示。
-
-![有关为表单字段添加上下文内帮助的简短说明](assets/tooltip.png)
+![表單欄位的內容中說明](assets/descriptions.png)
 
 >[!NOTE]
 >
->选择 **始终显示简短描述** ，以在字段下永久显示帮助文本。
+>完整說明會覆寫簡短說明。 如果您同時指定兩者，則只會顯示詳細說明。
 
-![字段下的永久短上下文帮助](assets/short1.png)
+### 簡短說明 {#short-description}
 
-### 长描述 {#long-description}
+「簡短說明」欄位可提供有關填寫表單欄位的快速簡短提示。 將滑鼠游標停留在欄位上時，簡短說明欄位中指定的文字會顯示為工具提示。
 
-作为上下文帮助，您可以使用长描述字段指定长文本或嵌入富媒体内容（包括视频）。 例如，下图显示了如何作为上下文帮助嵌入视频。
+![為表單欄位新增內容內說明的簡短說明](assets/tooltip.png)
 
-![将富媒体添加为表单字段的上下文帮助](assets/long-descriptions.png)
+>[!NOTE]
+>
+>選取 **一律顯示簡短說明** 以永久顯示欄位下方的說明文字。
 
-添加长描述将显示 **?** 图标。 单击图标可显示在长描述部分中添加的内容。
+![欄位下方的永久簡短內容說明](assets/short1.png)
 
-![富媒体上下文内帮助示例](assets/photoshop.png)
+### 詳細說明 {#long-description}
 
-### 面板级帮助 {#panel-level-help}
+您可以使用「詳細說明」欄位來指定長文字或內嵌RTF內容（包括視訊），以做為內容說明。 例如，下圖說明如何將視訊內嵌為內容說明。
 
-除了表单字段的上下文内帮助之外，您还可以在面板编辑对话框的帮助内容选项卡中在面板级别指定帮助。
+![新增多媒體作為表單欄位的內容內說明](assets/long-descriptions.png)
 
-![为表单面板添加上下文内帮助](assets/panel-level-help.png)
+新增完整說明會顯示 **？** 圖示加以存取。 按一下圖示會顯示新增至詳細說明區段的內容。
 
-为面板添加帮助时，将显示 **?** 图标。 单击图标可显示在面板编辑对话框的“帮助内容”部分添加的内容。
+![多媒體內容說明範例](assets/photoshop.png)
 
-![表单面板级别的上下文内帮助示例](assets/photoshop-1.png)
+### 面板層級說明 {#panel-level-help}
+
+除了表單欄位的內容中說明外，您還可以在面板編輯對話方塊的「說明內容」標籤中指定面板層級的說明。
+
+![新增表單面板的內容內說明](assets/panel-level-help.png)
+
+新增面板的說明顯示 **？** 圖示加以存取。 按一下圖示會顯示新增在面板編輯對話方塊的「說明內容」區段中的內容。
+
+![表單面板層級的內容中說明範例](assets/photoshop-1.png)
 

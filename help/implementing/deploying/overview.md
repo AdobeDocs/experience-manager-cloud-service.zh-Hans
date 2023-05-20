@@ -4,7 +4,7 @@ description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3509'
 ht-degree: 100%
 

@@ -2,10 +2,10 @@
 title: 检查域名状态
 description: 了解如何确定 Cloud Manager 是否已成功验证您的自定义域名。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
+source-git-commit: 357c1b9c29b3a79ee7322f7f2176b6ae41fc9c2a
 workflow-type: tm+mt
 source-wordcount: '663'
-ht-degree: 71%
+ht-degree: 74%
 
 ---
 
@@ -52,35 +52,35 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
 ## 域名错误 {#domain-error}
 
-以下是一些常见的域名错误及其典型的解决方法。
+以下是一些常見的網域名稱錯誤及其典型解析度。
 
-### 未安装的域错误 {#domain-not-installed}
+### 未安裝網域錯誤 {#domain-not-installed}
 
-在TXT记录的域验证过程中，即使已检查记录是否已正确更新，也可能会发生此错误。
+即使您已檢查記錄已正確更新，此錯誤也可能會在TXT記錄的網域驗證期間發生。
 
-#### 错误原因 {#cause}
+#### 錯誤原因 {#cause}
 
-快速将域锁定到注册该域的初始帐户，而任何其他帐户都无需请求权限即可注册子域。 此外，Fastly 只允许您将一个 Apex 域和关联子域分配给一个 Fastly 服务和帐户。 如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
+Fastly會將網域鎖定到註冊它的初始帳戶，沒有其他帳戶可以在未經許可的情況下註冊子網域。 此外，Fastly 只允许您将一个 Apex 域和关联子域分配给一个 Fastly 服务和帐户。 如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
 
-#### 错误解决 {#resolution}
+#### 錯誤解決 {#resolution}
 
-错误已修复如下：
+錯誤修正如下：
 
 * 在 Cloud Manager 中安装域之前，请从现有帐户中移除 Apex 和子域。 
 
 * 使用此选项将 Apex 域和所有子域链接到 AEM as a Cloud Service Fastly 帐户。 有关更多详细信息，请参阅[使用 Fastly 文档中的域](https://docs.fastly.com/en/guides/working-with-domains)。
 
-* 如果您的Apex域有多个要链接到不同Fastly帐户的AEMas a Cloud Service和非AEMas a Cloud Service网站的子域，请尝试在Cloud Manager中安装该域。 如果域安装失败，请使用Fastly创建客户支持票证，以便Adobe可以代表您跟踪Fastly。
+* 如果您的Apex網域有多個子網域用於AEMas a Cloud Service和非AEMas a Cloud Service的網站，您希望將其連結到不同的Fastly帳戶，那麼請嘗試在Cloud Manager中安裝網域。 如果網域安裝失敗，請建立Fastly的客戶支援票證，讓Adobe可以代表您跟進Fastly。
 
 >[!TIP]
 >
->使用Fastly解决域委派问题通常需要1到2个工作日。 因此，强烈建议在域的起始日期之前安装域。
+>與Fastly解決網域委派問題通常需要1-2個工作日。 因此，强烈建议在上线日期之前安装好域。
 
 >[!NOTE]
 >
->如果域未成功安装，请勿将网站的DNS路由到AEMas a Cloud ServiceIP。
+>如果網域未成功安裝，請勿將網站的DNS路由到AEMas a Cloud Service的IP。
 
-## 针对自定义域名的预先存在的CDN配置 {#pre-existing-cdn}
+## 自訂網域名稱的預先存在CDN設定 {#pre-existing-cdn}
 
 如果您的自定义域名已有 CDN 配置，**自定义域名**&#x200B;和&#x200B;**环境**&#x200B;页面，鼓励您通过 UI 添加这些配置，以便它们在 Cloud Manager 中可见和可配置。
 

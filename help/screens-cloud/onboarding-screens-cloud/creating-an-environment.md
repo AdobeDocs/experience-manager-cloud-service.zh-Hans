@@ -1,43 +1,43 @@
 ---
 title: 创建环境
-description: 本页介绍如何在Cloud Manager for Screens中创建as a Cloud Service。
+description: 本頁面說明如何在Cloud Manager for Screensas a Cloud Service中建立環境。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
-# 在Cloud Manager中创建环境 {#create-environment-screens-cloud}
+# 在Cloud Manager中建立環境 {#create-environment-screens-cloud}
 
-本节介绍如何在Cloud Manager中为项目创建环境。
+本節說明如何在Cloud Manager中為您的方案建立環境。
 
 >[!NOTE]
->请参阅 [在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) 以了解用户如何创建环境。
+>請參閱 [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans) 以瞭解使用者如何建立環境。
 
 ## 目标 {#objective}
 
-以下部分介绍如何在Cloud Manager中为项目创建环境。
+以下章節說明如何在Cloud Manager中為您的方案建立環境。
 
-## 在Cloud Manager中为Screens项目创建环境的步骤 {#steps-branch-creation}
+## 在Cloud Manager中為您的Screens專案建立環境的步驟 {#steps-branch-creation}
 
-项目创建成功完成后，您将在Cloud Manager的概述页面中看到行动动员卡更新。
+專案建立成功完成後，您將會在Cloud Manager的總覽頁面中看到召喚行動卡更新。
 
-1. 导航到Cloud Manager，然后选择图标以转到Cloud Manager的 **概述** 页面。
+1. 導覽至Cloud Manager並選取圖示以前往Cloud Manager的 **概觀** 頁面。
 
-1. 单击 **添加环境** 的 **概述** 页面。
+1. 按一下 **新增環境** 從Cloud Manager的 **概觀** 頁面。
 
    ![图像](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. 从 **添加环境** 对话框，单击 **保存**.
+1. 從中選擇環境詳細資訊 **新增環境** 對話方塊並按一下 **儲存**.
 
    ![图像](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. 添加环境步骤完成后，行动动员卡会进行更新，如下图所示。
+1. 新增環境步驟完成後，召喚行動卡會更新，如下圖所示。
 
    ![图像](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## 下一步 {#whats-next}
+## 后续内容 {#whats-next}
 
-在Cloud Manager中了解如何为程序设置环境后，您现在可以继续执行载入流程中的下一步，即， [运行管道](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+瞭解如何在Cloud Manager中為您的計畫設定環境後，您現在已準備好進入上線流程的下一步，即 [執行管道](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

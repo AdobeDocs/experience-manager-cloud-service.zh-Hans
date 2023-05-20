@@ -1,6 +1,6 @@
 ---
-title: CIF产品和类别选取器的用法
-description: 了解如何在客户商务组件中使用CIF产品和类别选取器，以支持作者和营销人员高效地处理商务产品和目录数据。
+title: CIF產品和類別選擇器的使用方式
+description: 瞭解如何在您的客戶商務元件中使用CIF產品和類別選擇器，以支援作者和行銷人員有效使用商務產品和目錄資料。
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -8,20 +8,20 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# AEM Content &amp; Commerce创作选取器 {#cif-pickers}
+# AEM Content &amp; Commerce編寫選擇器 {#cif-pickers}
 
-AEM Content &amp; Commerce Authoring提供了一套创作工具，可帮助AEM作者和营销人员高效地处理商务产品数据和目录。 产品选取器和类别选取器是CIF附加组件的一部分，供CIF核心组件使用。 项目可以在任何组件对话框中使用这些选取器来选择产品或类别。
+AEM Content &amp; Commerce Authoring提供一套撰寫工具，可協助AEM作者和行銷人員有效率地使用商務產品資料和目錄。 產品選擇器和類別選擇器是CIF附加元件的一部分，並由CIF核心元件使用。 專案可以在任何元件對話方塊中使用這些選擇器來選取產品或類別。
 
 ## 产品选取器 {#product-picker}
 
-要在项目组件中使用产品选取器，开发人员必须添加 `commerce/gui/components/common/cifproductfield` 对话框。 例如，对cq使用以下内容:dialog:
+若要在專案元件中使用產品選擇器，開發人員必須新增 `commerce/gui/components/common/cifproductfield` 至元件對話方塊。 例如，針對cq使用下列專案:dialog:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -33,31 +33,31 @@ AEM Content &amp; Commerce Authoring提供了一套创作工具，可帮助AEM�
     selectionId="sku"/>
 ```
 
-产品字段允许通过不同视图导航到用户要选择的产品。 默认情况下，product字段会返回产品的ID，但可以使用 `selectionId` 属性。
+產品欄位可讓您透過不同檢視，導覽至使用者想要選取的產品。 依預設，product欄位會傳回產品的ID，但可使用 `selectionId` 屬性。
 
-产品选取器字段支持以下可选属性：
+產品選取器欄位支援下列選擇性屬性：
 
-- selectionId(id、uid、sku、sug、combinedSlug、combinedSku) — 允许选择选取器返回的产品属性（默认= id）。 使用sku可返回选定产品的SKU，使用combinedSku时，将返回诸如base#variant之类的字符串（其中包含基本产品和所选变体的SKU）；或者，如果选择了基本产品，则返回单个SKU。
-- filter(folderOrProduct、folderOrProductOrVariant) — 在导航产品树时筛选器要呈现的内容。 folderOrProduct — 渲染文件夹和产品。 folderOrProductOrVariant — 渲染文件夹、产品和产品变体。 如果某个产品或产品变体已呈现，则它也会在选取器中变为可选。 （默认值= folderOrProduct）
-- 多个(true， false) — 启用对一个或多个产品的选择(default = false)
-- emptyText — 配置选取器字段的空文本值
+- selectionId (id、uid、sku、slug、combinedSlug、combinedSku) — 可讓您選擇要由選擇器傳回的產品屬性（預設值= id）。 使用SKU會傳回所選產品的SKU，而使用combinedSku則會傳回base#variant等字串以及基礎產品和所選變體的SKU，如果基礎產品已選取，則傳回單一SKU。
+- filter (folderOrProduct， folderOrProductOrVariant) — 篩選在導覽產品樹狀結構時挑選器要呈現的內容。 folderOrProduct — 轉譯資料夾和產品。 folderOrProductOrVariant — 轉譯資料夾、產品和產品變體。 如果轉譯了產品或產品變體，它也會成為選擇器中的可選取專案。 （預設值= folderOrProduct）
+- multiple (true， false) — 啟用選取一或多個產品的功能（預設= false）
+- emptyText — 設定選取器欄位的空白文字值
 
-此外，标准的图表字段属性，如 `name`, `fieldLabel`或 `fieldDescription` 也受支持。
+此外，標準診斷欄位屬性如 `name`， `fieldLabel`，或 `fieldDescription` 亦受支援。
 
 >[!CAUTION]
 >
->的 `cifproductfield` 组件需要 `cif.shell.picker` clientlib。 要向对话框中添加clientlib，您可以使用extraClientlibs属性。
+>此 `cifproductfield` 元件需要 `cif.shell.picker` clientlib。 若要將clientlib新增至對話方塊，您可以使用extraClientlibs屬性。
 >[!CAUTION]
 >
->从CIF核心组件版本2.0.0开始，支持 `id` 已删除，替换为 `uid`. 我们强烈建议使用 `sku` 或 `slug` 作为产品标识符。 我们继续支持 `id` 仅适用于使用CIF核心组件版本1.x的项目。
+>從CIF Core Components 2.0.0版開始，支援 `id` 已移除並取代為 `uid`. 我們強烈建議使用 `sku` 或 `slug` 作為產品識別碼。 我們持續支援 `id` 僅適用於使用CIF核心元件1.x版的專案。
 
-的完整工作示例 `cifproductfield` 可在 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) 项目。 另请参阅 [自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) AEM核心组件文档的“受众”部分。
+的完整運作範例 `cifproductfield` 您可在以下網址找到： [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) 專案。 另請參閱 [自訂對話方塊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) AEM核心元件說明檔案的完整內容。
 
-## 类别选取器 {#category-picker}
+## 類別選取器 {#category-picker}
 
-类别选取器也可在组件对话框中使用，其方式与产品选取器类似。
+類別選擇器可用於元件對話方塊中，其使用方式與產品選擇器類似。
 
-以下代码片段可在cq:dialog配置中使用：
+以下程式碼片段可用於cq：dialog設定：
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 
@@ -67,18 +67,18 @@ AEM Content &amp; Commerce Authoring提供了一套创作工具，可帮助AEM�
     selectionId="uid" />
 ```
 
-类别选取器字段支持以下可选属性：
+類別選擇器欄位支援下列選擇性屬性：
 
-- selectionId(id， uid， slug， urlPath， idAndUrlPath) _（已弃用）_, uidAndUrlPath _（已弃用）_) — 用于选择选取器要返回的类别属性（默认值= id）。
-- 多个(true， false) — 启用一个或多个类别的选择(default = false)
+- selectionId(id， uid， slug， urlPath， idAndUrlPath _（已棄用）_， uidAndUrlPath _（已棄用）_) — 允許選擇要由選擇器傳回的類別屬性（預設值= id）。
+- multiple (true， false) — 啟用選取一或多個類別（預設= false）
 
-此外，标准的图表字段属性，如 `name`, `fieldLabel`或 `fieldDescription` 也受支持。
+此外，標準診斷欄位屬性如 `name`， `fieldLabel`，或 `fieldDescription` 亦受支援。
 
 >[!CAUTION]
 >
->与 `cifproductfield` 组件 `cifcategoryfield` 组件还要求 `cif.shell.picker` clientlib。 要向对话框中添加clientlib，您可以使用 `extraClientlibs` 属性。 请参阅 [自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) AEM核心组件文档的“受众”部分。
+>與 `cifproductfield` 元件 `cifcategoryfield` 元件還需要 `cif.shell.picker` clientlib。 若要將clientlib新增至對話方塊，您可以使用 `extraClientlibs` 屬性。 另請參閱 [自訂對話方塊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) AEM核心元件說明檔案的完整內容。
 >[!CAUTION]
 >
->从CIF核心组件版本2.0.0开始，支持 `id` 已删除，替换为 `uid`. 我们强烈建议使用 `uid` 或 `urlPath` 作为类别标识符。 我们继续支持 `id` &amp; `idAndUrlPath` 仅适用于使用CIF核心组件版本1.x的项目。
+>從CIF Core Components 2.0.0版開始，支援 `id` 已移除並取代為 `uid`. 我們強烈建議使用 `uid` 或 `urlPath` 作為類別識別碼。 我們持續支援 `id` 和 `idAndUrlPath` 僅適用於使用CIF核心元件1.x版的專案。
 
-的完整工作示例 `cifcategoryfield` 可在 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) 项目。
+的完整運作範例 `cifcategoryfield` 您可在以下網址找到： [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) 專案。

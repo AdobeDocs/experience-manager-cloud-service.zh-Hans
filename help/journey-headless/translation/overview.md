@@ -3,7 +3,7 @@ title: AEM Headless 翻译历程
 description: 从这里开始，通过使用 AEM 强大的翻译工具来翻译您的 Headless 内容，实施引导式历程。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 100%
 

@@ -1,13 +1,13 @@
 ---
 title: Universal Editor 架构
 description: 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
 ---
-
 
 # Universal Editor 架构 {#architecture}
 

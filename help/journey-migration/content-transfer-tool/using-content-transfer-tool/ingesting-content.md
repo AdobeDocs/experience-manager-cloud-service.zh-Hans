@@ -11,7 +11,7 @@ ht-degree: 12%
 
 # 将内容提取到目标 {#ingesting-content}
 
-## 内容传输工具中的摄取流程 {#ingestion-process}
+## 內容轉移工具中的擷取程式 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -22,44 +22,44 @@ ht-degree: 12%
 请按照以下步骤从内容传输工具中摄取迁移集：
 
 >[!NOTE]
->您是否记得为此摄取记录支持票证？ 请参阅 [使用内容传输工具之前的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及帮助成功摄取的其他注意事项。
+>您記得為此擷取記錄支援票證嗎？ 另請參閱 [使用內容轉移工具前的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及有助於成功擷取的其他考量事項。
 
-1. 转到Cloud Acceleration Manager。 单击您的项目卡片，然后单击内容传输卡片。 导航到 **摄取作业** 单击 **新摄取**
+1. 前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **內嵌工作** 並按一下 **新內嵌**
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. 查看摄取检查列表，并确保完成了所有步骤。 这些是确保成功摄取的必要步骤。 您将能够继续 **下一个** 步骤。
+1. 檢閱擷取檢查清單，並確保已完成所有步驟。 這些是確保成功擷取的必要步驟。 您將能夠繼續前往 **下一個** 只有在檢查清單完成時才會執行此步驟。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
-1. 提供创建新摄取所需的信息。
+1. 提供建立新內嵌所需的資訊。
 
-   * 选择包含提取数据作为源的迁移集。
-      * 迁移集将在长时间不活动后过期，因此，执行提取操作后预计摄取会相对较快进行。 审阅 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以了解详细信息。
-   * 选择目标环境。 这是将摄取迁移集内容的位置。 选择层。 （创作/发布）。 不支持快速开发环境。
+   * 選取包含擷取資料的移轉集作為來源。
+      * 移轉集將在長時間不活動後過期，因此預期擷取會在執行擷取後不久發生。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
+   * 選取目標環境。 這是將會擷取移轉集內容的位置。 選取階層。 （作者/發佈）。 不支援快速開發環境。
 
    >[!NOTE]
-   >以下注释适用于摄取内容：
-   > 如果源是“作者”，则建议将其摄取到目标上的“创作”层。 同样，如果源为“发布”，则目标也应为“发布”。
-   > 如果目标层为 `Author`，则创作实例将在摄取期间关闭，用户（例如，作者或执行维护的任何人员等）将无法使用。 这是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 请确保您的团队了解这一事实。 另请注意，环境将在创作摄取期间显示休眠。
-   > 您可以运行可选的预复制步骤以显着加快摄取阶段。 请参阅 [使用AzCopy摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
-   > 如果使用带有预复制的摄取（对于S3或Azure数据存储），则建议先运行创作摄取。 这将在稍后运行发布摄取时加快其速度。
-   > 摄取不支持快速开发环境(RDE)目标。 即使用户有权访问，它们也不会显示为可能的目标选项。
+   >下列附註適用於擷取內容：
+   > 如果來源是Author，建議將其擷取到目標上的Author層級。 同樣地，如果來源是Publish，則目標也應該是Publish。
+   > 如果目標層為 `Author`，作者執行個體會在擷取期間關閉，且將讓使用者（例如，作者或執行維護的任何人等）無法使用。 這是為了保護系統，並防止任何可能遺失或造成內嵌衝突的變更。 請確定您的團隊知道這個事實。 另請注意，環境在作者擷取期間似乎處於休眠狀態。
+   > 您可以執行選用的預先複製步驟，以大幅加快擷取階段。 請參閱 [使用AzCopy擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資料。
+   > 如果使用預先複製擷取（用於S3或Azure資料存放區），建議先單獨執行作者擷取。 稍後執行發佈擷取時，這會加快擷取速度。
+   > 內嵌不支援快速開發環境(RDE)目的地。 它們不會顯示為可能的目的地選擇，即使使用者擁有存取權。
 
    >[!IMPORTANT]
-   > 以下重要注意事项适用于摄取内容：
-   > 仅当您属于本地环境时，才能启动对目标环境的摄取 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您无法启动摄取，请参阅 [无法启动摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
-   > 如果设置 **划出** 在摄取之前启用，它会删除整个现有存储库并创建新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例的权限。 对于添加到 **管理员** 群组。 您需要重新添加到管理员组才能开始摄取。
+   > 下列重要通知適用於擷取內容：
+   > 只有當您屬於本機時，才能起始內嵌至目的地環境的作業 **AEM管理員** 目的地Cloud Service作者服務上的群組。 如果您無法開始內嵌，請參閱 [無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資料。
+   > 如果設定 **擦去** 在內嵌之前啟用，會刪除整個現有存放庫並建立新存放庫以內嵌內容。 這表示它會重設所有設定，包括目標Cloud Service執行個體的許可權。 對於新增至的管理員使用者也是如此 **管理員** 群組。 您必須重新新增至管理員群組，才能開始內嵌。
 
-1. 单击 **摄取**
+1. 按一下 **擷取**
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. 然后，您可以从摄取作业列表视图中监控摄取阶段，并使用摄取的操作菜单，在摄取进行时查看日志。
+1. 然後，您可以從「內嵌工作」清單檢視中監視內嵌階段，並在內嵌進行時使用內嵌的動作功能表來檢視記錄。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 单击 **(i)** 按钮以获取有关摄取作业的更多信息。 通过单击，您可以查看执行或完成摄取的每个步骤的持续时间 **...** 然后 **查看持续时间**. 还显示来自提取的信息以实现所摄取的内容。
+1. 按一下 **(i)** 按鈕來取得有關擷取作業的詳細資訊。 您可以按一下「 」，在執行或完成擷取時檢視每個步驟的持續時間 **...** 然後開啟 **檢視持續時間**. 擷取的資訊也會顯示出來，以瞭解正在擷取的內容。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
@@ -98,75 +98,75 @@ ht-degree: 12%
 内容传输工具具备支持差异内容&#x200B;*增补*&#x200B;的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
 
 >[!NOTE]
->初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您已对第一个完整摄取使用了预复制步骤，则可以跳过对后续增补摄取的预复制步骤（如果增补迁移集大小小于200GB），因为这可能会为整个过程添加时间。
+>初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您已使用預先複製步驟進行第一次完整擷取，您可以略過後續追加擷取的預先複製（如果追加移轉集大小小於200GB），因為這樣可能會增加整個程式的時間。
 
-完成摄取流程后，要摄取增量内容，您需要运行 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 然后使用增补摄取方法。
+擷取程式完成後，若要擷取差異內容，您必須執行 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 然後使用追加擷取方法。
 
-为此，您可以创建新的摄取作业，并确保 **划出** 在摄取阶段被禁用，如下所示：
+您可以建立新的擷取工作來完成此操作，並確保 **擦去** 會在擷取階段期間停用，如下所示：
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## 疑难解答 {#troubleshooting}
 
-### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
+### CAM無法擷取移轉權杖 {#cam-unable-to-retrieve-the-migration-token}
 
-自动检索迁移令牌可能会因不同的原因（包括您）而失败 [通过Cloud Manager设置IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) (在目标Cloud Service环境中)。 在这些情况下，当您尝试启动摄取时，您将看到以下对话框：
+自動擷取移轉權杖可能會因不同原因而失敗，包括您 [透過Cloud Manager設定IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 在目標Cloud Service環境中。 在這種情況下，當您嘗試開始內嵌時，將會看到下列對話方塊：
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
-您将需要通过单击对话框中的“获取令牌”链接来手动检索迁移令牌。 这将打开另一个显示令牌的选项卡。 然后，您可以复制令牌并将其粘贴到 **迁移令牌输入** 字段。 现在，您应该能够开始摄取。
+您必須按一下對話方塊上的「取得代號」連結，以手動擷取移轉代號。 這將會開啟另一個顯示權杖的標籤。 然後，您可以複製權杖並將其貼到 **移轉權杖輸入** 欄位。 現在，您應該能夠開始內嵌。
 
 >[!NOTE]
 >
->令牌将可供属于本地用户的用户使用 **AEM管理员** 目标Cloud Service创作服务上的组。
+>權杖將可供屬於本機的使用者使用 **AEM管理員** 目的地Cloud Service作者服務上的群組。
 
-### 无法启动摄取 {#unable-to-start-ingestion}
+### 無法開始內嵌 {#unable-to-start-ingestion}
 
-仅当您属于本地环境时，才能启动对目标环境的摄取 **AEM管理员** 目标Cloud Service创作服务上的组。 如果您不属于AEM管理员组，则在尝试开始摄取时，您将看到如下所示的错误。 您可以要求管理员将您添加到本地 **AEM管理员** 或请求令牌本身，然后您可以将该令牌粘贴到 **迁移令牌输入** 字段。
+只有當您屬於本機時，才能起始內嵌至目的地環境的作業 **AEM管理員** 目的地Cloud Service作者服務上的群組。 如果您不屬於AEM管理員群組，當您嘗試開始內嵌時，將會看到如下所示的錯誤。 您可以要求管理員將您新增至本機 **AEM管理員** 或要求代號本身，然後您可將它貼到 **移轉權杖輸入** 欄位。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
-### 无法访问迁移服务 {#unable-to-reach-migration-service}
+### 無法連線至移轉服務 {#unable-to-reach-migration-service}
 
-在请求获取后，可能会向用户显示如下消息：“目标环境中的迁移服务当前不可访问。 请稍后重试或联系Adobe支持。”
+請求內嵌後，可能會向使用者顯示類似以下訊息：「目的地環境中的移轉服務目前無法連線。 請稍後再試，或聯絡Adobe支援。」
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
-这表示Cloud Acceleration Manager无法访问目标环境的迁移服务以开始摄取。 这可能出于多种原因。
+這表示Cloud Acceleration Manager無法連線到目標環境的移轉服務來開始內嵌。 發生此情況有多種原因。
 
 >[!NOTE]
 > 
-> 显示“迁移令牌”字段，因为在少数情况下，检索该令牌实际上是不允许的。 通过允许手动提供，用户可以快速开始摄取，而无需任何其他帮助。 如果提供了令牌，并且仍显示消息，但检索令牌不是问题。
+> 顯示「移轉權杖」欄位，因為在少數情況下，實際上不允許擷取該權杖。 透過允許手動提供，這可讓使用者無需任何其他協助即可快速開始內嵌。 如果提供Token，但訊息仍會顯示，則擷取Token不是問題。
 
-* AEM as a Cloud Service维护环境状态，有时可能由于一些正常原因需要重新启动迁移服务。 如果该服务正在重新启动，则无法访问该服务，但该服务将很快可用。
-* 可能正在实例上运行另一个进程。 例如，如果Release Orchestrator正在应用更新，则系统可能正忙，并且迁移服务经常不可用。 这以及损坏暂存或生产实例的可能性，就是强烈建议在摄取期间暂停更新的原因。
-* 如果 [已应允许列表用IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 通过Cloud Manager，将阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址非常动态。 目前，唯一的解决方案是在摄取运行时禁用IP允许列表。
-* 可能还有其他原因需要调查。 如果摄取仍然失败，请联系Adobe客户关怀团队。
+* AEMas a Cloud Service會維護環境狀態，偶爾可能由於一些正常原因需要重新啟動移轉服務。 如果服務正在重新啟動，則無法連線，但很快便可使用。
+* 執行個體上可能正在執行另一個處理序。 例如，如果Release Orchestrator套用更新，系統可能會忙碌中，移轉服務會定期無法使用。 再加上可能會損毀中繼或生產執行個體，因此強烈建議在內嵌期間暫停更新。
+* 如果 [已套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 透過Cloud Manager，它會封鎖Cloud Acceleration Manager，使其無法到達移轉服務。 無法新增用於內嵌的IP位址，因為其位址非常動態。 目前，唯一的解決方案是在執行內嵌時停用IP允許清單。
+* 可能有其他原因需要調查。 如果內嵌仍持續失敗，請聯絡Adobe客戶服務。
 
-### 仍启用通过Release Orchestrator进行的自动更新
+### 仍可透過Release Orchestrator自動更新
 
-Release Orchestrator通过自动应用更新来自动使环境保持最新。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。 这是启动摄取之前应记录支持票证的原因之一（请参阅上面的“注意”），以便可以计划临时禁用Release Orchestrator。
+Release Orchestrator會自動套用更新，讓環境保持最新狀態。 如果在執行內嵌時觸發更新，可能會導致無法預測的結果，包括環境損毀。 這是開始內嵌前應記錄支援票證的原因之一（請參閱上述「附註」），以便可以排程暫時停用Release Orchestrator。
 
-如果启动摄取时Release Orchestrator仍在运行，则UI将显示此消息。 无论如何，您都可以选择继续，接受风险，方法是检查字段并再次按按钮。
+如果在開始內嵌時Release Orchestrator仍在執行，UI會顯示此訊息。 您仍然可以選擇繼續，接受風險，方法是檢查欄位並再次按按鈕。
 
 >[!NOTE]
 >
-> Release Orchestrator现在正在部署到开发环境，因此也应暂停这些环境的更新。
+> Release Orchestrator現在已部署至開發環境，因此暫停更新這些環境也應完成。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### 增补摄取失败
+### 追加擷取失敗
 
-一个 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是节点id中的冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
+造成問題的常見原因 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是節點id中的衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
->java.lang.RuntimeException:org.apache.jackrabbit.oak.api.CommitFailedException:OakConstraint0030:唯一性约束违反属性 [jcr:uuid] 具有值a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5e5:/some/path/jcr:content， /some/other/path/jcr:content
+>java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：違反唯一性條件約束 [jcr：uuid] 具有值a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
 
-AEM中的每个节点必须具有唯一的uuid。 此错误表示正在摄取的节点具有与目标实例上其他路径中已存在的节点相同的uuid。
-如果在提取和后续操作之间在源上移动节点，则可能会发生这种情况 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-如果目标上的节点在摄取和后续增补摄取之间移动，则也可能会发生这种情况。
+AEM中的每個節點都必須有唯一的uuid。 此錯誤表示正在擷取的節點具有與目標執行個體上不同路徑中已存在的節點相同的uuid。
+如果在來源上的節點在擷取和後續之間移動，就可能發生這種情況 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+如果目標上的節點在擷取和後續追加擷取之間移動，也可能發生這種情況。
 
-必须手动解决此冲突。 熟悉内容的人员必须决定必须删除这两个节点中的哪一个，同时要记住引用该节点的其他内容。 该解决方案可能要求在没有违规节点的情况下再次进行增补提取。
+此衝突必須手動解決。 熟悉內容的人必須決定必須刪除兩個節點中的哪一個，並牢記參考該內容的其他內容。 解決方案可能要求再次完成追加提取，而不需要違反規定的節點。
 
 ## 后续内容 {#whats-next}
 
-完成将内容摄取到Target后，您可以查看每个步骤（提取和摄取）的日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) 以了解更多。
+完成將內容擷取至Target後，您可以檢視每個步驟（擷取和擷取）的記錄並尋找錯誤。 另請參閱 [檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) 以深入瞭解。

@@ -1,6 +1,6 @@
 ---
-title: 适用于应用程序生成器的前端应用程序
-description: 了解如何构建前端应用程序生成器应用程序。
+title: App Builder的前端應用程式
+description: 瞭解如何建立前端App Builder應用程式。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 ---
 
-# 适用于应用程序生成器的前端应用程序
+# App Builder的前端應用程式
 
-## 前端应用程序生成器应用程序简介
+## 前端App Builder應用程式簡介
 
-了解前端App Builder应用程序(包括项目初始化选项和Adobe频谱)的相关信息。
+瞭解關於前端App Builder應用程式的資訊，包括專案初始化選項和Adobe光譜。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
 
-## 构建前端应用程序生成器应用程序
+## 建立前端App Builder應用程式
 
-了解如何使用React和从应用程序内使用Adobe运行时操作来构建前端应用程序生成器应用程序。
+瞭解如何使用React和在應用程式中使用Adobe執行階段動作來建立前端應用程式產生器應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)

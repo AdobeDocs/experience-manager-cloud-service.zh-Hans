@@ -7,7 +7,7 @@ exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 68%
    有关更多详细信息，请参阅[内容传输中的提取流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html)。
 
    >[!NOTE]
-   >在提取阶段运行用户映射工具。 有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en)。
+   >在提取階段中執行「使用者對應工具」。 有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en)。
 
 1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
@@ -38,7 +38,7 @@ ht-degree: 68%
 
 * 在内容传输活动期间，一次最多可以创建和维护 10 个迁移集。
 * 每个迁移集应具有唯一的名称。
-* 如果迁移集处于非活动状态超过30天，则会自动将其删除。
+* 如果移轉集閒置超過30天，則會自動刪除。
 * 每当您创建迁移集时，它都会与特定环境关联。您只能摄取到同一环境的创作或发布实例中。
 
 
@@ -47,10 +47,10 @@ ht-degree: 68%
 >[!NOTE]
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
 
-在萃取阶段，到 ***增补*** 现有的迁移集， *覆盖* 选项必须禁用。 有关更多详细信息，请参阅[增补提取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process)。
+在提取階段，移至 ***加值*** 現有的移轉集， *覆寫* 選項必須停用。 有关更多详细信息，请参阅[增补提取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process)。
 
 在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关更多详细信息，请参阅[增补摄取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process)。
 
 ## 后续内容 {#whats-next}
 
-了解内容传输工具及其概述后，可以使用此工具将现有内容从源AEM实例（内部部署或AMS）移动到目标AEM Cloud Service实例。 审核 [内容传输工具的先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
+在您瞭解內容轉移工具及其概觀後，此工具可用於將現有內容從來源AEM例項（內部部署或AMS）移動到目標AEM Cloud Service例項。 檢閱 [內容轉移工具的先決條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).

@@ -1,206 +1,206 @@
 ---
-title: 管理图像预设
-description: 了解图像预设以及如何创建、修改和管理图像预设。
+title: 管理影像預設集
+description: 瞭解影像預設集以及如何建立、修改和管理影像預設集。
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '3629'
-ht-degree: 22%
+ht-degree: 8%
 
 ---
 
-# 管理图像预设{#managing-image-presets}
+# 管理影像預設集{#managing-image-presets}
 
-图像预设使Adobe Experience Manager Assets能够动态传送不同大小、不同格式或具有其他动态生成的图像属性的图像。 每个图像预设都代表一组预定义的大小调整和格式设置命令，以用于显示图像。在创建图像预设时，您需要选择图像传送的大小。此外，还需要选择格式设置命令，以确保传送供查看的图像时，显示优化的图像外观。
+影像預設集可讓Adobe Experience Manager資產以動態方式傳送不同大小、不同格式或其他動態產生影像屬性的影像。 每個影像預設集代表預先定義的一組大小調整與格式設定指令，用於顯示影像。 建立影像預設集時，您可以選擇影像傳送的大小。 您也可以選擇格式化指令，以便在傳送影像供檢視時最佳化影像的外觀。
 
-管理员可以创建用于导出资产的预设。用户在导出图像时可以选择预设，这也会按照管理员指定的规范对图像进行重新格式化。
+管理員可以建立預設集來匯出資產。 使用者可以在匯出影像時選擇預設集，這樣也會將影像重新格式化為管理員指定的規格。
 
-您还可以创建响应式图像预设。如果您将响应式图像预设应用于资产，则资产会根据查看资产时所使用的设备或屏幕大小而发生更改。 除了“RGB”或“灰色”之外，您还可以将图像预设配置为在色彩空间中使用CMYK。
+您也可以建立回應式影像預設集。 如果您將回應式影像預設集套用至資產，預設集會隨著檢視資產的裝置或熒幕大小而改變。 您可以將影像預設集設定為除了RGB或灰階之外，還可以在色域中使用CMYK。
 
-本节将介绍如何创建、修改和通常管理图像预设。 无论您何时预览图像，都可以对图像应用图像预设。请参阅 [应用图像预设](/help/assets/dynamic-media/image-presets.md).
+本節說明如何建立、修改及一般管理影像預設集。 您可以隨時將影像預設集套用至影像預覽。 另請參閱 [套用影像預設集](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
->智能成像可与您现有的图像预设配合使用，并在交付的最后一毫秒内使用智能功能，根据浏览器或网络连接速度进一步减小图像文件大小。 请参阅 [智能成像](/help/assets/dynamic-media/imaging-faq.md) 以了解更多信息。
+>智慧型影像處理可搭配您現有的影像預設集運作，並在傳送的最後毫秒內運用智慧功能，根據瀏覽器或網路連線速度，進一步縮減影像檔案大小。 另請參閱 [智慧型影像](/help/assets/dynamic-media/imaging-faq.md) 以取得詳細資訊。
 
-## 了解图像预设 {#understanding-image-presets}
+## 瞭解影像預設集 {#understanding-image-presets}
 
-与宏一样，图像预设是一组预定义的大小调整和格式设置命令，这些命令使用同一个名称进行保存。为了了解图像预设的工作方式，请假定您的网站要求每个产品图像在桌面和移动设备交付中以不同的大小、不同格式和压缩率显示。
+如同巨集，「影像預設集」是預先定義的名稱下儲存的調整大小和格式指令集合。 若要瞭解影像預設集如何運作，假設您的網站要求每個產品影像以不同大小、不同格式和壓縮率顯示，以用於案頭和行動傳送。
 
-您可以创建两种图像预设：一种是适用于桌面版本的 500 x 500 像素；一种是适用于移动版本的 150 x 150 像素。您可以创建两个图像预设，一个称为 `Enlarge` 以500x500像素显示图像，称为 `Thumbnail` 以150 x 150像素显示图像。 要在 `Enlarge` 和 `Thumbnail` 大小时，Experience Manager会找到“放大图像预设”和“缩略图图像预设”的定义。 然后，Experience Manager会根据每个图像预设的大小和格式规范动态生成图像。
+您可以建立兩個影像預設集：一個是500 x 500畫素（適用於案頭版）和150 x 150畫素（適用於行動版）。 您可以建立兩個影像預設集，其中一個稱為 `Enlarge` 以500x500畫素顯示影像，且其中一個影像稱為 `Thumbnail` 以150 x 150畫素顯示影像。 若要將影像傳送至 `Enlarge` 和 `Thumbnail` size， Experience Manager會尋找放大影像預設集和縮圖影像預設集的定義。 然後Experience Manager會根據每個影像預設集的大小和格式規格，以動態方式產生影像。
 
-如果图像在动态传送时大小大幅缩减，图像可能会丢失锐化和细节。由于这一原因，每个图像预设中都包含格式控制，以在传送图像时将其优化为特定大小。这些控制可确保图像在传送到网站或应用程序时具有锐化、清晰的效果。
+動態傳送影像時若影像大小減少，可能會失去銳利度和細節。 因此，每個影像預設集都包含格式化控制項，可在影像以特定大小傳送時最佳化影像。 這些控制項可確保您的影像在傳送至您的網站或應用程式時清晰銳利。
 
-管理员可以创建图像预设。要创建图像预设，您可以从头开始创建，也可以通过现有图像预设创建，然后使用新名称对其保存。
+管理員可以建立影像預設集。 若要建立影像預設集，您可以從頭開始，也可以從現有的影像預設集開始，然後以新名稱儲存。
 
-## 管理图像预设 {#managing-image-presets-1}
+## 管理影像預設集 {#managing-image-presets-1}
 
-您可以在Experience Manager中管理图像预设，方法是选择Experience Manager徽标以访问全局导航控制台，然后选择工具图标并导航到 **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**.
+您可以選取Experience Manager標誌來存取全域導覽主控台，然後選取「Experience Manager」圖示並導覽至，以管理您的影像預設集 **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
 >[!NOTE]
 >
->在预览或传送资产时，您创建的任何图像预设也可用作动态演绎版。
+>預覽或傳遞資產時，您所建立的任何影像預設集也可作為動態轉譯使用。
 >
->你知道 *not* 在图像预设自动发布时，需要发布图像预设。
+>您需要 *not* 需要發佈影像預設集，因為影像預設集會自動發佈。
 >
->请参阅 [发布图像预设](#publishing-image-presets).
+>另請參閱 [發佈影像預設集](#publishing-image-presets).
 
 >[!NOTE]
 >
->当您选择 **[!UICONTROL 演绎版]** 的详细信息视图中。 您可以增加或减少显示的图像预设数。 请参阅 [增加显示的图像预设数](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>當您選取時，系統會顯示各種轉譯 **[!UICONTROL 轉譯]** 在資產的「詳細資料檢視」中。 您可以增加或減少顯示的影像預設集數目。 另請參閱 [增加顯示的影像預設集數目](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Adobe Illustrator(AI)、PostScript®(EPS)和PDF文件格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Adobe Illustrator (AI)、PostScript® (EPS)和PDF檔案格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
-如果您打算支持摄取AI、EPS和PDF文件，以便生成这些文件格式的动态呈现，请在创建图像预设之前查看以下信息。
+如果您想要支援AI、EPS和PDF檔案的擷取，以便產生這些檔案格式的動態轉譯，在建立影像預設集之前請先檢閱下列資訊。
 
-Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager Assets，主要区别如下：
+Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager Assets的情境下，主要差異如下：
 
-* Adobe Illustrator文档由包含多层的单个页面组成。 每个层都作为PNG子资产提取，位于主Illustrator资产下。
-* PDF文档由一个或多个页面组成。 每个页面都将作为单页PDF子资产提取到主多页PDF文档下。
+* Adobe Illustrator檔案由單一頁面組成，其中包含多個圖層。 每個圖層都會擷取為主要Illustrator資產下的PNG子資產。
+* PDF檔案包含一或多個頁面。 每個頁面都會擷取為主要多頁PDF檔案下的單一頁面PDF子資產。
 
-子资产由 `Create Sub Asset process` 组件 `DAM Update Asset` 工作流。 要在工作流中查看此流程组件，请导航到 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**.
+子資產是由 `Create Sub Asset process` 整體中的元件 `DAM Update Asset` 工作流程。 若要在工作流程中檢視此程式元件，請導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-您可以在打开资产时查看子资产或页面，选择内容菜单，然后选择 **[!UICONTROL 子资产]** 或 **[!UICONTROL 页面]**. 子资产是真实资产。 即，PDF页面由 `Create Sub Asset` 工作流组件。 然后，它们将存储为 `page1.pdf`, `page2.pdf`，等等。 存储后， `DAM Update Asset` 工作流会处理它们。
+開啟資產時，您可以檢視子資產或頁面，選取「內容」功能表，然後選取「 」 **[!UICONTROL 子資產]** 或 **[!UICONTROL 頁面]**. 子資產是真正的資產。 也就是說，系統會擷取PDF頁面， `Create Sub Asset` 工作流程元件。 然後會儲存為 `page1.pdf`， `page2.pdf`，依此類推，位於主要資產下方。 儲存後， `DAM Update Asset` 工作流程會處理它們。
 
-要使用Dynamic Media预览AI、EPS或PDF文件并生成动态演绎版，需要执行以下处理步骤：
+若要使用Dynamic Media來預覽和產生AI、EPS或PDF檔案的動態轉譯，需執行下列處理步驟：
 
-1. 在 `DAM Update Asset` 工作流， `Rasterize PDF/AI Image Preview Rendition` 流程组件使用配置的分辨率将原始资产的第一页栅格化为 `cqdam.preview.png` 演绎版。
+1. 在 `DAM Update Asset` 工作流程， `Rasterize PDF/AI Image Preview Rendition` process元件會使用設定的解析度，將原始資產的第一個頁麵點陣化成 `cqdam.preview.png` 轉譯。
 
-1. 的 `cqdam.preview.png` 然后，演绎版将由 `Dynamic Media Process Image Assets` 工作流中的流程组件。
+1. 此 `cqdam.preview.png` 然後，轉譯會由 `Dynamic Media Process Image Assets` 工作流程中的程式元件。
 
 >[!NOTE]
 >
 >在 DAM 更新资产工作流中，**[!UICONTROL EPS 缩略图]**&#x200B;步骤为 EPS 文件生成缩略图。
 
-#### PDF/AI/EPS资产元数据属性 {#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS資產中繼資料屬性 {#pdf-ai-eps-asset-metadata-properties}
 
-| **元数据属性** | **描述** |
+| **中繼資料屬性** | **描述** |
 |---|---|
-| dam:Physicalwidthininch | 文档宽度（英寸）。 |
-| dam：物理高度英寸 | 文档高度（英寸）。 |
+| dam：Physicalwidthininches | 檔案寬度（以英吋為單位）。 |
+| dam：Physicalheightinys | 檔案高度，以英吋為單位。 |
 
-您有权访问 `Rasterize PDF/AI Image Preview Rendition` 流程组件选项(通过 `DAM Update Asset` 工作流。
+您存取 `Rasterize PDF/AI Image Preview Rendition` 處理元件選項的方式 `DAM Update Asset` 工作流程。
 
-选择左上角的Adobe Experience Manager，导航到 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**. 在工作流模型页面上，选择 **[!UICONTROL DAM更新资产]**，然后在工具栏中选择 **[!UICONTROL 编辑]**. 在DAM更新资产工作流页面上，双击 `Rasterize PDF/AI Image Preview Rendition` 进程组件打开其步骤属性对话框。
+選取左上方的Adobe Experience Manager，導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]**. 在「工作流程模型」頁面上，選擇 **[!UICONTROL DAM更新資產]**，然後在工具列上選取 **[!UICONTROL 編輯]**. 在「 DAM更新資產」工作流程頁面上，點兩下 `Rasterize PDF/AI Image Preview Rendition` 處理元件，以開啟其「步驟屬性」對話方塊。
 
-#### 栅格化PDF/AI图像预览呈现版本选项 {#rasterize-pdf-ai-image-preview-rendition-options}
+#### 點陣化PDF/AI影像預覽轉譯選項 {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![用于栅格化PDF或AI工作流的参数](assets/rasterize_pdf_ai_image_preview.png)
+![點陣化PDF或AI工作流程的引數](assets/rasterize_pdf_ai_image_preview.png)
 
-用于栅格化PDF或AI工作流的参数
+點陣化PDF或AI工作流程的引數
 
-| 进程参数 | 默认设置 | 描述 |
+| 程式引數 | 預設設定 | 描述 |
 |---|---|---|
-| Mime 类型 | application/pdf<br>application/postscript<br>application/illustrator | 被视为PDF或Illustrator文档的文档mime类型列表。 |
-| 最大宽度 | 2048 | 生成的预览呈现版本的最大宽度（以像素为单位）。 |
-| 最大高度 | 2048 | 生成的预览呈现版本的最大高度（以像素为单位）。 |
-| 解决方法 | 72 | 分辨率以ppi为单位栅格化第一页（每英寸像素）。 |
+| Mime 类型 | application/pdf<br>application/postscript<br>application/illustrator | 視為PDF或Illustrator檔案的檔案mime型別清單。 |
+| 最大宽度 | 2048 | 產生的預覽轉譯的最大寬度（畫素）。 |
+| 最大高度 | 2048 | 所產生預覽轉譯的最大高度（畫素）。 |
+| 解决方法 | 72 | 點陣化第一頁的解析度，以ppi （每英吋畫素）為單位。 |
 
-使用默认的处理参数，PDF/AI文档的第一页以72 ppi进行光栅化，并且生成的预览图像的大小为2048 x 2048像素。 对于典型部署，可将分辨率提高至至少150 ppi或更高。 例如，300 ppi的美国字母大小文档要求最大宽度和高度分别为2550 x 3300像素。
+使用預設的處理引數，PDF/AI檔案的第一頁點陣化為72 ppi，而產生的預覽影像大小為2048 x 2048畫素。 對於一般部署，您可以將解析度提高至至少150 ppi或更高。 例如，300 ppi的美國字母大小檔案分別需要最大寬度和高度2550 x 3300畫素。
 
-“最大宽度”和“最大高度”限制要栅格化的分辨率。 例如，如果最大值保持不变，并且分辨率设置为300 ppi，则美国信件文档将以186 ppi光栅化。 即，文档为1581 x 2046像素。
+「最大寬度」和「最大高度」會限制點陣化的解析度。 例如，如果最大值保持不變，且「解析度」設定為300 ppi，則「美國信件」檔案會以186 ppi點陣化。 也就是說，檔案是1581 x 2046畫素。
 
-的 `Rasterize PDF/AI Image Preview Rendition` 进程组件定义了最大值，以确保它不会在内存中创建过大的图像。 此类大映像可能会使提供给JVM(Java™虚拟机)的内存溢出。 必须小心为JVM提供足够的内存来管理已配置的并行工作流数量，每个工作流都有可能以已配置的最大大小创建映像。
+此 `Rasterize PDF/AI Image Preview Rendition` 程式元件已定義一個最大值，以確保它不會在記憶體中建立過大的影像。 如此大型的影像可能會使提供給JVM (Java™虛擬機器器)的記憶體溢位。 必須注意為JVM提供足夠的記憶體來管理設定的並行工作流程數量，每個工作流程都有可能以設定的最大大小建立影像。
 
-### InDesign(INDD)文件格式 {#indesign-indd-file-format}
+### InDesign(INDD)檔案格式 {#indesign-indd-file-format}
 
-如果您打算支持摄取INDD文件以便生成此文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
+如果您想要支援INDD檔案的擷取，以便產生此檔案格式的動態轉譯，請在建立影像預設集之前檢閱下列資訊。
 
-对于InDesign文件，仅当Adobe InDesign Server与Experience Manager集成时，才会提取子资产。 引用的资产会根据其元数据进行关联。 InDesign Server不是链接所必需的。 但是，在为要在Experience Manager文件和引用的InDesign之间创建的链接处理资产文件之前，引用的InDesign必须存在于资产中。
+對於InDesign檔案，只有在Adobe InDesign Server與Experience Manager整合時，才會擷取子資產。 參照的資產會根據其中繼資料進行連結。 連結不需要InDesign Server。 不過，在處理InDesign檔案之前，參考資產必須存在於Experience Manager中，才能在InDesign檔案和參考資產之間建立連結。
 
 <!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
-中的媒体提取流程组件 `DAM Update Asset` 工作流运行多个预配置的扩展脚本以处理InDesign文件。
+中的媒體提取程式元件 `DAM Update Asset` 工作流程會執行數個預先設定的擴充指令碼，以處理InDesign檔案。
 
-![媒体提取流程参数中的ExtendScript路径](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![媒體提取程式引數中的ExtendScript路徑](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路径。
+DAM更新資產工作流程中媒體提取程式元件引數中的ExtendScript路徑。
 
-以下脚本供Dynamic Media集成使用：
+Dynamic Media整合會使用下列指令碼：
 
 
-| ExtendScript名称 | 默认 | 描述 |
+| ExtendScript名稱 | 默认 | 描述 |
 |---|---|---|
-| ThumbnailExport.jsx | 是 | 生成300 PPI `thumbnail.jpg` 已优化并通过 `Dynamic Media Process Image Assets` 进程组件。 |
-| JPEGPagesExport.jsx | 是 | 为每个页面生成300 PPIJPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 它还会通过 `DAM Update Asset` 工作流。 |
-| PDFPagesExport.jsx | 否 | 为每个页面生成PDF子资产。 PDF子资产会按照前面所述进行处理。 由于PDF仅包含单个页面，因此不会生成子资产。 |
+| ThumbnailExport.jsx | 是 | 產生300 PPI `thumbnail.jpg` 已最佳化並轉換為PTIFF轉譯的轉譯 `Dynamic Media Process Image Assets` 程式元件。 |
+| JPEGPagesExport.jsx | 是 | 為每個頁面產生300 PPIJPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 它也會經過最佳化，並由 `DAM Update Asset` 工作流程。 |
+| PDFPagesExport.jsx | 否 | 為每個頁面產生PDF子資產。 系統會如前所述處理PDF子資產。 由於PDF僅包含單一頁面，因此不會產生任何子資產。 |
 
-### 配置图像缩略图大小 {#configuring-image-thumbnail-size}
+### 設定影像縮圖大小 {#configuring-image-thumbnail-size}
 
-您可以通过在 **[!UICONTROL DAM更新资产]** 工作流。 在工作流中，您可以通过两个步骤来配置图像资产的缩略图大小。 一个(**[!UICONTROL Dynamic Media处理图像资产]**)用于动态图像资产。 另一个(**[!UICONTROL 流程缩略图]**)用于生成静态缩略图，或者当所有其他流程无法生成缩略图时。 不管怎样， *both* 必须具有相同的设置。
+您可以透過以下專案中的設定來設定縮圖的大小： **[!UICONTROL DAM更新資產]** 工作流程。 工作流程有兩個步驟，您可以在其中設定影像資產的縮圖大小。 一(**[!UICONTROL Dynamic Media程式影像資產]**)用於動態影像資產。 其他(**[!UICONTROL 程式縮圖]**)用於靜態縮圖產生或所有其他程式無法產生縮圖時。 無論， *兩者* 必須有相同的設定。
 
 在 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中，缩略图由图像服务器生成，此配置与应用于&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤的配置无关。通过&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤生成缩略图是创建缩览图最耗时、内存占用最多的方法。
 
-缩略图大小按以下格式定义： **[!UICONTROL 宽度:height:中心]**，例如 `80:80:false`. 宽度和高度决定缩略图的大小（以像素为单位）。 中心值为false或true。 如果设置为true，则表示缩略图的大小与配置中给定的大小完全相同。 如果调整大小的图像较小，则图像将居中在缩略图中。
+縮圖大小會以下列格式定義： **[!UICONTROL 寬度:height:居中]**，例如 `80:80:false`. 寬度和高度會決定縮圖的大小（以畫素為單位）。 中心值為false或true。 若設為true，表示縮圖影像大小與設定中指定的大小完全相同。 如果調整大小的影像較小，它會在縮圖內居中。
 
 >[!NOTE]
 >
->* EPS文件的缩略图大小在 **[!UICONTROL EPS缩略图]** 步骤 **[!UICONTROL 参数]** 选项卡。
+>* EPS檔案的縮圖大小設定於 **[!UICONTROL EPS縮圖]** 步驟，在 **[!UICONTROL 引數]** 標籤中的「縮圖」。
 >
->* 在 **[!UICONTROL FFmpeg缩略图]** 步骤 **[!UICONTROL 进程]** 选项卡 **[!UICONTROL 参数]**.
+>* 視訊的縮圖大小設定於 **[!UICONTROL FFmpeg縮圖]** 步驟，在 **[!UICONTROL 程式]** 標籤下的 **[!UICONTROL 引數]**.
 >
 
 
-**要配置图像缩略图大小，请执行以下操作：**
+**若要設定影像縮圖大小：**
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**.
-1. 选择 **[!UICONTROL Dynamic Media处理图像资产]** 步骤并选择 **[!UICONTROL 缩略图]** 选项卡。 根据需要更改缩略图大小，然后选择 **[!UICONTROL 确定]**.
+1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**.
+1. 選取 **[!UICONTROL Dynamic Media程式影像資產]** 步驟並選取 **[!UICONTROL 縮圖]** 標籤。 視需要變更縮圖大小，然後選取 **[!UICONTROL 確定]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. 选择 **[!UICONTROL 流程缩略图]** 步骤，然后选择 **[!UICONTROL 缩略图]** 选项卡。 根据需要更改缩略图大小，然后选择 **[!UICONTROL 确定]**.
+1. 選取 **[!UICONTROL 程式縮圖]** 步驟，然後選取 **[!UICONTROL 縮圖]** 標籤。 視需要變更縮圖大小，然後選取 **[!UICONTROL 確定]**.
 
    >[!NOTE]
    >
    >**[!UICONTROL 流程缩略图]**&#x200B;步骤的缩略图参数中的值必须与 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中的缩略图参数相匹配。
 
-1. 选择 **[!UICONTROL 保存]** 以保存对工作流所做的更改。
+1. 選取 **[!UICONTROL 儲存]** 以儲存對工作流程所做的變更。
 
-### 增加或减少显示的图像预设数 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### 增加或減少顯示的影像預設集數目 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-在预览资产时，您创建的图像预设可以作为动态演绎版使用。 Experience Manager显示从以下位置查看资产时的各种动态演绎版 **[!UICONTROL 详细信息视图>演绎版]**. 您可以增加或减少显示的演绎版限制。
+預覽資產時，您建立的影像預設集可用作動態轉譯。 從檢視資產時，Experience Manager會顯示各種動態轉譯 **[!UICONTROL 詳細資料檢視>轉譯]**. 您可以增加或減少顯示的轉譯限制。
 
-**要增加或减少显示的图像预设数，请执行以下操作：**
+**若要增加或減少顯示的影像預設集數目：**
 
-1. 导航到CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
-1. 导航到位于的图像预设列表节点 `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
+1. 導覽至CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
+1. 導覽至影像預設集清單節點，位置為 `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
-   ![increase_deximentumberofimagpresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
+   ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
 1. 在 **[!UICONTROL limit]** 属性中，将默认设 **[!UICONTROL 置为15的Value]**（值）更改为所需的数字。
-1. 导航到位于的图像预设数据源 `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
+1. 導覽至影像預設集資料來源，網址為 `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. 在limit属性中，将数字更改为所需的数字，例如 `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. 选择 **[!UICONTROL 全部保存]**.
+1. 在limit屬性中，將數字變更為所需的數字，例如 `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. 選取 **[!UICONTROL 全部儲存]**.
 
-### 创建图像预设 {#creating-image-presets}
+### 建立影像預設集 {#creating-image-presets}
 
-创建图像预设，以便在预览或发布图像时能够始终如一地跨图像应用设置。
+建立影像預設集，以便在您預覽或發佈時跨影像一致地套用設定。
 
 >[!NOTE]
 >
->如果使用 Internet Explorer 9，创建的预设在保存后不会立即显示在预设列表中。要解决此问题，请禁用 IE9 的缓存。
+>如果使用Internet Explorer 9，建立預設集不會在儲存後立即出現在預設集清單中。 若要解決此問題，請停用IE9的快取。
 
-如果您打算支持摄取AI、PDF和EPS文件，以便生成这些文件格式的动态呈现版本，请在创建图像预设之前查看以下信息。
+如果您想要支援AI、PDF和EPS檔案的擷取，以便產生這些檔案格式的動態轉譯，在建立影像預設集之前請先檢閱下列資訊。
 
-请参阅 [Adobe Illustrator(AI)、PostScript®(EPS)和PDF文件格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+另請參閱 [Adobe Illustrator (AI)、PostScript® (EPS)和PDF檔案格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
-如果您打算支持摄取INDD文件以便生成此文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
+如果您想要支援INDD檔案的擷取，以便產生此檔案格式的動態轉譯，請在建立影像預設集之前檢閱下列資訊。
 
-请参阅 [InDesign(INDD)文件格式](#indesign-indd-file-format).
+另請參閱 [InDesign(INDD)檔案格式](#indesign-indd-file-format).
 
-**要创建图像预设，请执行以下操作：**
+**若要建立影像預設集：**
 
-1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**.
+1. 在Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**.
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -209,17 +209,17 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
    >
    >要使此图像预设具有响应性，请擦除&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;字段中的值，并将其留空。
 
-1. 在 **[!UICONTROL 编辑图像预设]** 窗口中输入值 **[!UICONTROL 基本]** 和 **[!UICONTROL 高级]** 选项卡，包括名称。 图像预设选项中概 [述了这些选项](#image-preset-options)。 预设显示在左窗格中，并可以与其他资产一起动态使用。
+1. 在 **[!UICONTROL 編輯影像預設集]** 視窗中，輸入值至 **[!UICONTROL 基本]** 和 **[!UICONTROL 進階]** 適當標籤，包括名稱。 图像预设选项中概 [述了这些选项](#image-preset-options)。 预设显示在左窗格中，并可以与其他资产一起动态使用。
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-### 创建响应式图像预设 {#creating-a-responsive-image-preset}
+### 建立回應式影像預設集 {#creating-a-responsive-image-preset}
 
-要创建响应式图像预设，请执行 [创建图像预设](#creating-image-presets). 在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请清除这两个字段的值，并将其保留为空。
+若要建立回應式影像預設集，請執行以下步驟： [建立影像預設集](#creating-image-presets). 在中輸入高度和寬度時 **[!UICONTROL 編輯影像預設集]** 視窗，拭除值並保留空白。
 
-将它们留空会告知Experience Manager此图像预设是响应式的。 您可以视需要调整其他值。
+將其保留為空白會告知Experience Manager此影像預設集有回應。 您可以適當地調整其他值。
 
 >[!NOTE]
 >
@@ -227,28 +227,28 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
->图像预设和图像资产会自动发布。
+>影像預設集和影像資產會自動發佈。
 
-### 图像预设选项 {#image-preset-options}
+### 影像預設集選項 {#image-preset-options}
 
-在创建或编辑图像预设时，您可以使用本节介绍的几种选项。此外，Adobe还建议从以下“最佳实践”选项开始：
+當您建立或編輯影像預設集時，您會有本節中所述的選項。 此外，Adobe建議開始選擇這些「最佳實務」選項：
 
-* **[!UICONTROL 格式]** (**[!UICONTROL 基本]** 选项卡) — 选择 **[!UICONTROL JPEG]** 或其他符合您要求的格式。所有Web浏览器都支持JPEG图像格式；它可以在小文件大小和图像质量之间实现良好的平衡。但是，JPEG格式图像使用有损压缩方案，如果压缩设置太低，则该压缩方案可能会引入不需要的图像伪影。 因此，Adobe 建议将压缩质量设置为 75。此设置在图像质量和小文件大小之间提供了良好的平衡。
+* **[!UICONTROL 格式]** (**[!UICONTROL 基本]** 索引標籤) — 選取 **[!UICONTROL JPEG]** 或其他符合您需求的格式。 所有 Web 浏览器都支持 JPEG 图像格式；它可以在小文件大小和图像质量之间实现良好的平衡。但是，JPEG 格式图像使用有损压缩方案，如果压缩设置太低，则会引入不需要的图像伪影。因此，Adobe 建议将压缩质量设置为 75。此设置在图像质量和小文件大小之间提供了良好的平衡。
 
 * **[!UICONTROL 启用简单锐化]** - 请勿选择&#x200B;**[!UICONTROL 启用简单锐化]**（此锐化滤镜提供的控制度低于“钝化蒙版”设置）。
 
-* **[!UICONTROL 锐化：重新取样模式]**  — 选择 **[!UICONTROL 锐化2]**.
+* **[!UICONTROL 銳利化：重新取樣模式]**  — 選取 **[!UICONTROL 銳利化2]**.
 
-#### “基本”选项卡选项 {#basic-tab-options}
+#### 基本索引標籤選項 {#basic-tab-options}
 
 | 字段 | 描述 |
 | --- | --- |
-| **名称** | 输入一个描述性名称，不加任何空格。为帮助用户识别此图像预设，请在名称中包含图像大小规范。 |
-| **宽度和高度** | 输入传送图像时所用的像素大小。宽度和高度必须大于 0 像素。如果任一值为 0，则无法创建预设。如果两个值均为空，则表示已经创建了响应式图像预设。 |
-| **格式** | 从菜单中选择一个格式。<br>选择 **JPEG** 提供了以下其他选项：<br>· **质量** -JPEG质量比例为1-100。 拖动滑块时会显示该范围。<br>· **启用JPG色度缩减采样**  — 由于眼睛对高频颜色信息的敏感程度低于高频亮度，JPEG图像将图像信息分为亮度和颜色分量。当JPEG图像被压缩时，亮度分量将保留全分辨率，而颜色分量则通过将像素组平均在一起来缩减采样。缩减采样会将数据量减少一半或三分之一，几乎不会影响感知质量。缩减采样不适用于灰度图像。此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。<br><br>选择 **GIF** 或 **GIFAlpha** 提供这些附加 **GIF颜色量化** 选项：<br>· **类型**  — 选择 **自适应** （默认）、 **Web**&#x200B;或 **Macintosh**. 如果您选择&#x200B;**带有 Alpha 的 GIF**，则 Macintosh 选项不可用。<br>· **Dither**  — 选择 **扩散** 或 **关闭**.<br>· **颜色数量**  — 输入数字2 - 256。<br>• **颜色列表** - 输入一个以逗号分隔的列表。例如，对于白色、灰色和黑色，输入 `000000,888888,ffffff`.<br><br>选择 **PDF**, **TIFF**&#x200B;或 **TIFFAlpha** 提供了以下其他选项：<br>· **压缩**  — 选择压缩算法。 PDF的算法选项包括 **无**, **Zip**&#x200B;和 **Jpeg**;TIFF **无**, **LZW**, **Jpeg**&#x200B;和 **Zip**;和AlphaTIFF **无**, **LZW**&#x200B;和 **Zip**.<br><br>选择 **PNG**, **带Alpha的PNG**&#x200B;或 **EPS** 不提供其他选项。 |
-| **锐化** | 选择 **启用简单锐化** 在进行所有缩放后，对图像应用基本锐化滤镜。 锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 |
+| **名称** | 輸入描述性名稱，不含任何空格。 為協助使用者識別此影像預設集，請在名稱中包含影像大小規格。 |
+| **宽度和高度** | 輸入遞送影像的畫素大小。 寬度和高度必須大於0畫素。 如果任一值為0，則不會建立預設集。 如果兩個值都為空白，則會建立回應式影像預設集。 |
+| **格式** | 從選單中選擇格式。<br>選擇 **JPEG** 提供下列其他選項：<br>· **品質** -JPEG品質比例為1-100。 當您拖曳滑桿時，「縮放」是可見的。<br>· **啟用JPG色度縮減取樣**  — 由於眼睛對高頻色彩資訊的敏感度低於高頻亮度，因此JPEG影像會將影像資訊劃分為亮度和色彩分量。 壓縮JPEG影像時，明度分量會保留為完整解析度，而色彩分量會透過平均畫素群組來縮減取樣。 縮減取樣可將資料量減少一半或三分之一，幾乎不影響感知品質。 縮減取樣不適用於灰階影像。 此技術會減少高對比影像（例如文字重疊的影像）適用的壓縮量。<br><br>選擇 **GIF** 或 **含Alpha的GIF** 提供這些額外的 **GIF色彩量化** 選項：<br>· **型別**  — 選取 **最適化** （預設）， **Web**，或 **Macintosh**. 如果您選取 **含Alpha的GIF**，無法使用Macintosh選項。<br>· **遞色**  — 選取 **擴散** 或 **關閉**.<br>· **色彩數量**  — 輸入數字2 - 256。<br>· **色彩清單**  — 輸入逗號分隔的清單。 例如，對於白色、灰色和黑色，請輸入 `000000,888888,ffffff`.<br><br>選擇 **PDF**， **TIFF**，或 **含Alpha的TIFF** 提供此額外選項：<br>· **壓縮**  — 選取壓縮演演算法。 PDF的演演算法選項包括 **無**， **Zip**、和 **Jpeg**；若為TIFF，則為 **無**， **LZW**， **Jpeg**、和 **Zip**；而含Alpha的TIFF則為 **無**， **LZW**、和 **Zip**.<br><br>選擇 **PNG**， **含Alpha的PNG**，或 **EPS** 不提供其他選項。 |
+| **锐化** | 選取 **啟用簡單銳利化** 以在執行所有縮放後套用基本銳利化濾鏡。 銳利化有助於彌補以不同大小顯示影像時可能產生的模糊。 |
 
-#### “高级”选项卡选项 {#advanced-tab-options}
+#### 進階索引標籤選項 {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -258,92 +258,92 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
   </tr>
   <tr>
    <td><strong>色彩空间</strong></td>
-   <td>选择 <strong>RGB, CMYK，</strong> 或 <strong>灰度</strong> 的颜色。</td>
+   <td>選取 <strong>RGB、CMYK、</strong> 或 <strong>灰階</strong> 色彩空間的。</td>
   </tr>
   <tr>
    <td><strong>颜色配置文件</strong></td>
-   <td>如果资产与工作配置文件不同，请选择您希望资产转换到的输出色彩空间配置文件。</td>
+   <td>如果資產與正在處理的設定檔不同，請選取要轉換為的輸出色域設定檔。</td>
   </tr>
   <tr>
    <td><strong>渲染方法</strong></td>
-   <td>您可以覆盖默认的渲染意图。 渲染意图决定了目标颜色配置文件中无法重现的颜色（超出色域）会发生什么情况。 如果“渲染意图”与ICC配置文件不兼容，则将忽略该“渲染意图”。
+   <td>您可以覆寫預設的演算比對方式。 演算意圖會決定無法在目標色彩設定檔（超出色域）中重現的色彩會發生什麼情況。 如果「演算比對方式」與ICC設定檔不相容，則會予以忽略。
     <ul>
-     <li>选择 <strong>知觉</strong> 当原始图像中的一个或多个颜色超出目标色彩空间的色域时，将一个色彩空间的总色域压缩为另一个色彩空间。</li>
-     <li>选择 <strong>相对比色</strong> 当当前色彩空间中的颜色超出目标色彩空间中的色域时。 并且，您希望将其映射到目标色彩空间色域内可能最接近的颜色，而不影响任何其他颜色。 </li>
-     <li>选择 <strong>饱和度</strong> 如果要在转换为目标色彩空间时重现原始图像色彩饱和度。 </li>
-     <li>选择 <strong>绝对比色</strong> 以完全匹配颜色，而不调整会改变图像亮度的白点或黑点。</li>
+     <li>選取 <strong>可感知</strong> 當原始影像中的一個或多個顏色超出目的地色域的範圍時，將總色域從一個色域壓縮到另一個色域。</li>
+     <li>選取 <strong>相對比色</strong> 當目前色域的顏色超出目標色域的色域時。 而且，您想要將其對應到目標色域中可能最接近的顏色，而不影響任何其他顏色。 </li>
+     <li>選取 <strong>飽和度</strong> 如果您想要在轉換為目標色域時重現原始影像色彩飽和度。 </li>
+     <li>選取 <strong>絕對比色</strong> 以完全符合顏色，而不調整會改變影像亮度的白點或黑點。</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>黑场补偿</strong></td>
-   <td>如果输出配置文件支持此功能，请选择此选项。 如果黑点补偿与指定的ICC配置文件不兼容，则忽略该补偿。</td>
+   <td>如果輸出設定檔支援此功能，請選取此選項。 如果黑點補償與指定的ICC設定檔不相容，則會忽略黑點補償。</td>
   </tr>
   <tr>
    <td><strong>仿色</strong></td>
-   <td>选择此选项可能会避免或减少色带伪影。 </td>
+   <td>選取此選項可避免或減少色階誤差。 </td>
   </tr>
   <tr>
-   <td><strong>锐化类型</strong></td>
-   <td><p>选择<strong>无</strong>、<strong>锐化</strong>或 <strong>USM 锐化</strong>。 </p>
+   <td><strong>銳利化型別</strong></td>
+   <td><p>選取 <strong>無</strong>， <strong>銳利化</strong>，或 <strong>不銳利化遮色片</strong>. </p>
     <ul>
-     <li>选择 <strong>无</strong> 要禁用锐化。</li>
-     <li>选择<strong>锐化</strong>可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
-     <li>选择<strong> 钝化蒙版</strong> 如果要对最终缩减采样图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与Photoshop的“钝化蒙版”滤镜相同的选项。</li>
-    </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p>
+     <li>選取 <strong>無</strong> 如果您要停用銳利化。</li>
+     <li>選取 <strong>銳利化 </strong>以在執行所有縮放後套用基本銳利化濾鏡。 銳利化有助於彌補以不同大小顯示影像時可能產生的模糊。 </li>
+     <li>選取<strong> 不銳利化遮色片</strong> 如果您想要微調最終縮減取樣影像的銳利化濾鏡效果。 您可以控制效果的強度、效果半徑（以畫素測量）以及忽略的對比度臨界值。 此效果使用與Photoshop的「遮色片銳利化」濾鏡相同的選項。</li>
+    </ul> <p>在 <strong>不銳利化遮色片</strong>，您有以下選項：</p>
     <ul>
-     <li><strong>金额</strong>  — 控制对边缘像素应用的对比度量。 默认的实数值为1.0。对于高分辨率图像，最高可将其增加到5.0。请考虑使用“数量”来测量滤镜强度。</li>
-     <li><strong>半径</strong>  — 确定边缘像素周围影响锐化的像素数。 对于高分辨率图像，请输入一个介于1到2之间的实数。 低值仅锐化边缘像素；高值可锐化较宽范围的像素。 正确的值取决于图像大小。</li>
-     <li><strong>阈值</strong>  — 确定在应用USM锐化滤镜时要忽略的对比度范围。换句话说，此选项确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素并进行锐化。 为避免引入杂色，请尝试使用2到20之间的整数值。 </li>
-     <li><strong>应用于</strong>  — 确定钝化是否适用于每种颜色或亮度。</li>
+     <li><strong>數量</strong>  — 控制套用至邊緣畫素的對比量。 預設實數值為1.0。若是高解析度影像，最高可增加到5.0。將「數量」視為濾鏡強度的量度。</li>
+     <li><strong>半徑</strong>  — 決定邊緣畫素周圍影響銳利化的畫素數量。 對於高解析度的影像，請輸入從1到2的實數。 低值只會銳利化邊緣畫素；高值會銳利化較寬的畫素範圍。 正確的值取決於影像的大小。</li>
+     <li><strong>臨界值</strong>  — 決定套用遮色片銳利化調整濾鏡時要忽略的對比範圍。 換言之，此選項會決定銳利化的畫素與周圍區域必須有多大的差異，才會被視為邊緣畫素並予以銳利化。 為避免引入雜訊，請嘗試使用2到20的整數值。 </li>
+     <li><strong>套用至</strong>  — 決定取消銳利化會套用至每個顏色或亮度。</li>
     </ul>
     <div>
-      有关锐化的描述，请参阅
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">将图像锐化与Experience ManagerDynamic Media结合使用</a> 视频，在 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">锐化图像</a> 联机帮助主题和 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">在Dynamic Media Classic中锐化图像的最佳实践</a> 可下载PDF。
+      銳利化的說明請參閱
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">搭配Experience ManagerDynamic Media使用影像銳利化</a> 視訊，在 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">銳利化影像</a> 線上說明主題及 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Dynamic Media Classic中銳利化影像的最佳作法</a> 可下載的PDF。
     </div> </td>
   </tr>
   <tr>
    <td><strong>重新取样模式</strong></td>
-   <td>选择一个<strong>重新取样模式</strong>选项。在缩减像素采样时，这些选项会锐化图像：
+   <td>選取 <strong>重新取樣模式</strong> 選項。 這些選項會在縮減取樣影像時銳利化影像：
     <ul>
-     <li><strong>双线性</strong>  — 最快的重新取样方法。会出现一些锯齿伪像。</li>
-     <li><strong>两次立方</strong>  — 提高CPU使用率，但生成较锐利的图像，出现的锯齿伪像较少。</li>
-     <li><strong>锐化2</strong>  — 生成的结果比两次立方比较锐利，但CPU成本更高。</li>
-     <li><strong>双锐</strong>  — 选择Photoshop默认重采样器以减小图像大小，该方法称为 <strong>双比克锐化</strong> 在Adobe Photoshop。</li>
-     <li><strong>每种颜色</strong>和<strong>亮度</strong> - 每种方法均可基于颜色或亮度。默认情况下将选择<strong>每种颜色</strong>。</li>
+     <li><strong>雙線性</strong>  — 最快速的重新取樣方法。會產生一些明顯的鋸齒狀不自然感。</li>
+     <li><strong>雙立方式</strong>  — 增加CPU使用量，但產生較銳利的影像，且鋸齒狀不自然感較不明顯。</li>
+     <li><strong>銳利化2</strong>  — 可以產生比兩次立方稍微銳利的結果，但成本更高。</li>
+     <li><strong>Bi-Sharp</strong>  — 選取Photoshop預設的重新取樣器以縮減影像大小，稱為 <strong>雙立方體銳利化</strong> 在Adobe Photoshop中。</li>
+     <li><strong>每種顏色</strong> 和 <strong>亮度</strong>  — 每種方法都可依據色彩或亮度而定。 依預設 <strong>每種顏色</strong> 「 」已選取。</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>打印分辨率</strong></td>
-   <td>选择此图像的打印分辨率；默认值为 72 像素。</td>
+   <td><strong>列印解析度</strong></td>
+   <td>選取列印此影像的解析度；預設為72畫素。</td>
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
-   <td><p>除了UI中提供的常见图像设置之外，Dynamic Media还支持您在 <strong>图像修饰符</strong> 字段。 这些参数在 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">图像服务器协议命令参考</a>.</p> <p>重要信息：API中列出的以下功能不受支持：</p>
+   <td><p>除了UI中可用的常見影像設定外，Dynamic Media還支援許多進階影像修改，您可在 <strong>影像修飾元</strong> 欄位。 這些引數定義於 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">影像伺服器通訊協定命令參考</a>.</p> <p>重要：不支援API中列出的以下功能：</p>
     <ul>
-     <li>基本模板和文本渲染命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 和 <code>textPs=</code></li>
+     <li>基本範本和文字演算指令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code> 和 <code>req=xlate</code></li>
-     <li><code>req=set</code> 不可用于常规用法。</li>
+     <li><code>req=set</code> 無法用於一般用途。</li>
      <li><code>req=mbrset</code></li>
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>非核心Dynamic Media服务：SVG、图像渲染和Web-to-Print</li>
+     <li>非核心Dynamic Media服務：SVG、影像演算和網頁印刷</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-### 使用图像修饰符定义图像预设选项 {#defining-image-preset-options-with-image-modifiers}
+### 使用影像修飾元定義影像預設集選項 {#defining-image-preset-options-with-image-modifiers}
 
-除了“基本”和“高级”选项卡中提供的选项外，您还可以定义图像修饰符，以便在定义图像预设时有更多选择。图像渲染依赖于Dynamic Media图像渲染API，在 [HTTP协议参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
+除了「基本」和「進階」標籤中可用的選項外，您還可以定義影像修飾元，以便在定義影像預設集時為您提供更多選項。 影像演算仰賴Dynamic Media Image Rendering API，詳情請參閱 [HTTP通訊協定參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
-下面的一些基本示例显示了可以使用图像修饰符实现的操作。
+以下是您可以使用影像修飾元進行的一些基本範例。
 
 >[!NOTE]
 >
->一些图像修饰符 [不能在Experience Manager中使用](#advanced-tab-options).
+>部分影像修飾元 [無法用於Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  — 反转每个颜色分量以获得负图像效果。
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  — 反轉每個顏色元件以產生負影像效果。
 
    ```xml {.line-numbers}
    &op_invert=1
@@ -351,7 +351,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - 向图像应用模糊滤镜。
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html)  — 將模糊濾鏡套用至影像。
 
    ```xml {.line-numbers}
    &op_blur=7
@@ -359,7 +359,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
    ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
-* 组合命令 - op_blur 和 op-invert
+* 組合命令 — op_blur和逆反
 
    ```xml {.line-numbers}
    &op_invert=1&op_blur=7
@@ -367,7 +367,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  — 降低或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  — 減少或增加亮度。
 
    ```xml {.line-numbers}
    &op_brightness=58
@@ -375,7 +375,7 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - 调整图像不透明度。可用于降低前景不透明度。
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  — 調整影像不透明度。 可讓您降低前景不透明度。
 
    ```xml {.line-numbers}
    opac=29
@@ -383,21 +383,21 @@ DAM更新资产工作流中媒体提取流程组件参数中的ExtendScript路�
 
    ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### 编辑图像预设 {#modifying-image-presets}
+### 編輯影像預設集 {#modifying-image-presets}
 
-1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**.
+1. 在Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. 选择预设，然后选择 **[!UICONTROL 编辑]**. 此时将打开&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口。
-1. 进行更改并选择 **[!UICONTROL 保存]** 保存更改或 **[!UICONTROL 取消]** 以取消更改。
+1. 選取預設集，然後選取 **[!UICONTROL 編輯]**. 此 **[!UICONTROL 編輯影像預設集]** 視窗隨即開啟。
+1. 進行變更並選取 **[!UICONTROL 儲存]** 儲存變更或 **[!UICONTROL 取消]** 以取消您的變更。
 
-### 发布图像预设 {#publishing-image-presets}
+### 發佈影像預設集 {#publishing-image-presets}
 
-图像预设将自动发布。
+系統會自動為您發佈影像預設集。
 
-### 删除图像预设 {#deleting-image-presets}
+### 刪除影像預設集 {#deleting-image-presets}
 
-1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后选择工具图标。
-1. 导航到 **[!UICONTROL 资产]** > **[!UICONTROL 图像预设]**.
-1. 选择预设，然后选择 **[!UICONTROL 删除]**. Dynamic Media会向您确认是否要删除它。 选择 **[!UICONTROL 删除]** 删除或选择 **[!UICONTROL 取消]** 以返回到图像预设。
+1. 在Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台，並選取「工具」圖示。
+1. 導覽至 **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**.
+1. 選取預設集，然後選取 **[!UICONTROL 刪除]**. Dynamic Media會確認您要刪除它。 選取 **[!UICONTROL 刪除]** 以移除或選取 **[!UICONTROL 取消]** 以返回影像預設集。

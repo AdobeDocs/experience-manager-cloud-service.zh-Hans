@@ -1,174 +1,174 @@
 ---
-title: 如何在Forms页面上创建Experience Manager Sites门户
-description: 了解如何在Forms页面上创建AEM Sites门户并使用现成的核心组件。
+title: 如何在Experience Manager Sites頁面上建立Forms入口網站
+description: 瞭解如何在AEM Sites頁面上建立Forms入口網站和使用現成可用的核心元件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
+source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 1%
 
 ---
 
-# 在门户上列出自适应Forms {#publish-forms-on-portal}
+# 在入口網站上列出最適化Forms {#publish-forms-on-portal}
 
-在典型的以表单为中心的门户部署场景中，表单开发和门户开发是两个不相干的活动。 表单设计人员在存储库中设计和存储表单时， Web开发人员会创建一个Web应用程序来列出表单和处理表单提交。 Forms将复制到Web层，因为表单存储库与Web应用程序之间没有通信。
+在典型的以表單為中心的入口網站部署情境中，表單開發和入口網站開發是兩個分離的活動。 當表單設計人員將表單設計和儲存在存放庫時，網頁開發人員會建立網站應用程式以列出表單並處理表單提交。 Forms會複製到Web層，因為Forms存放庫和Web應用程式之間沒有通訊。
 
-这种情况往往导致管理问题和生产延迟。 例如，如果存储库中有较新版本的表单可用，则需要替换Web层上的表单，修改Web应用程序，并在公共网站上重新部署该表单。 重新部署Web应用程序可能会导致服务器停机。 通常，服务器停机是计划的活动，因此更改不能即时推送到公共站点。
+這類情況通常會導致管理問題和生產延遲。 例如，如果儲存庫中有較新版本的表單，您需要取代Web層上的表單、修改Web應用程式，並在公用網站上重新部署表單。 重新部署Web應用程式可能會導致伺服器停機。 伺服器停機通常是計畫的活動，因此變更無法即時推送至公用網站。
 
-AEM Forms提供门户组件，可减少管理开销和生产延迟。 这些组件使Web开发人员能够在使用Adobe Experience Manager(AEM)创作的网站上创建和自定义Forms门户。
+AEM Forms提供入口網站元件，可減少管理費用和生產延遲。 這些元件讓網頁開發人員能夠在使用Forms (AEM)編寫的網站上建立和自訂Adobe Experience Manager入口網站。
 
-表单门户组件允许您添加以下功能：
+Form Portal元件可讓您新增下列功能：
 
-* 以自定义布局列出表单。 现成提供了列表视图和卡片视图布局。 您可以创建自己的自定义布局。
-* 允许您在列出自定义元数据和自定义操作时显示它们。
-* 在使用AEM Forms Portal组件的发布实例上列出由Forms UI发布的表单。
-* 允许最终用户以HTML和PDF格式呈现表单。
-* 允许根据标题和描述搜索表单。
-* 使用自定义CSS自定义门户的外观。
-* 创建指向表单的链接。
-* 列出与最终用户创建的自适应Forms相关的草稿和提交。
+* 以自訂版面配置列出表單。 現成可用的清單檢視和卡片檢視版面配置。 您可以建立自己的自訂版面配置。
+* 可讓您在列出自訂中繼資料和自訂動作時顯示它們。
+* 列出使用AEM Forms Portal元件的發佈執行個體上Forms UI發佈的表單。
+* 允許一般使用者以HTML和PDF格式轉譯表單。
+* 啟用根據標題和說明的表單搜尋。
+* 使用自訂CSS來自訂入口網站的外觀。
+* 建立表單連結。
+* 列出一般使用者建立的最適化Forms相關的草稿和提交內容。
 
-## Forms门户页面的组件 {#forms-portal-components}
+## Forms入口網站頁面的元件 {#forms-portal-components}
 
-AEM Forms开箱即用地提供以下门户组件：
+AEM Forms提供下列立即可用的入口網站元件：
 
-* 搜索和制表人：此组件允许您将表单从表单存储库列到门户页面上，并提供配置选项以根据指定的条件列出表单。
+* 搜尋與清單製作程式：此元件可讓您從表單存放庫將表單列示至入口網站頁面，並提供設定選項，以根據指定條件列示表單。
 
-* 草稿和提交：搜索和制表人组件显示由Forms作者公开的表单，而草稿和提交组件则显示另存为草稿的表单，以供日后完成和提交的表单。 此组件可为任何已登录的用户提供个性化体验。
+* 草稿和提交：當「搜尋和清單程式」元件顯示Forms作者公開的表單時，「草稿和提交」元件會顯示儲存為草稿的表單，以便稍後完成和提交的表單。 此元件可為任何登入使用者提供個人化體驗。
 
-* 链接：此组件允许您创建指向页面上任意位置的表单的链接。
+* 連結：此元件可讓您建立頁面上任何位置的表單連結。
 
-您可以 [导入现成的Forms门户组件](#import-forms-portal-components-aem-archetype) 从AEM项目原型。 导入后，请执行以下配置：
-* [配置外部存储](#configure-azure-storage-adaptive-forms)
-* [启用Forms Portal组件](#enable-forms-portal-components)
-* [配置Forms Portal组件](#configure-forms-portal-components)
+您可以 [匯入現成的Forms Portal元件](#import-forms-portal-components-aem-archetype) 從AEM專案原型。 匯入之後，請執行下列設定：
+* [設定外部儲存裝置](#configure-azure-storage-adaptive-forms)
+* [啟用Forms Portal元件](#enable-forms-portal-components)
+* [設定Forms Portal元件](#configure-forms-portal-components)
 
-## 导入Forms Portal组件 {#import-forms-portal-components-aem-archetype}
+## 匯入Forms入口網站元件 {#import-forms-portal-components-aem-archetype}
 
-要在AEM Formsas a Cloud Service上导入现成的Forms门户组件，请执行以下步骤：
+若要在AEM Formsas a Cloud Service匯入現成可用的Forms Portal元件，請執行以下步驟：
 
-1. **在本地开发实例上克隆Cloud Manager Git存储库：**  您的Cloud Manager Git存储库包含一个默认的AEM项目。 基于 [AEM原型](https://github.com/adobe/aem-project-archetype/). 使用Cloud Manager UI中的自助服务Git帐户管理来克隆Cloud Manager Git存储库，以将项目引入本地开发环境。 有关访问存储库的详细信息，请参阅 [访问存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
+1. **在本機開發執行個體上複製Cloud Manager Git存放庫：**  您的Cloud Manager Git存放庫包含預設的AEM專案。 它根據 [AEM原型](https://github.com/adobe/aem-project-archetype/). 使用Cloud Manager UI中的自助Git帳戶管理來複製您的Cloud Manager Git存放庫，將專案帶到您的本機開發環境中。 如需存取存放庫的詳細資訊，請參閱 [存取存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
-1. **创建 [!DNL Experience Manager Forms] as a [Cloud Service] 项目：** 创建 [!DNL Experience Manager Forms] as a [Cloud Service] 项目基于 [AEM原型27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) 或更晚。 原型可帮助开发人员轻松开始开发 [!DNL AEM Forms] as a Cloud Service。 它还包含一些帮助您快速入门的示例主题和模板。
+1. **建立 [!DNL Experience Manager Forms] as a [Cloud Service] 專案：** 建立 [!DNL Experience Manager Forms] as a [Cloud Service] 專案依據 [AEM原型27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) 或更新版本。 原型可協助開發人員輕鬆開始開發 [!DNL AEM Forms] as a Cloud Service。 其中也包含一些範例主題和範本，可幫助您快速入門。
 
-   创建 [!DNL Experience Manager Forms] as a Cloud Service项目，打开命令提示符并运行以下命令。 包含 [!DNL Forms] 特定配置、主题和模板，设置 `includeForms=y`.
+   建立 [!DNL Experience Manager Forms] 與專案as a Cloud Service，請開啟命令提示字元並執行以下命令。 加入 [!DNL Forms] 特定組態、主題和範本、集合 `includeForms=y`.
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
    ```
 
-   此外，更改 `appTitle`, `appId`和 `groupId`，以反映您的环境。
+   另外，請變更 `appTitle`， `appId`、和 `groupId`，以反映您的環境。
 
-   项目准备就绪后，更新 `<core.forms.components.version>x.y.z</core.forms.components.version>` 顶级属性 `pom.xml` 来反映最新版本的 [核心表单组件](https://github.com/adobe/aem-core-forms-components) 在 `AEM Archetype` 项目。
+   專案準備就緒後，請更新 `<core.forms.components.version>x.y.z</core.forms.components.version>` 最上層屬性 `pom.xml` ，以反映最新版本的 [core-forms-components](https://github.com/adobe/aem-core-forms-components) 在您的 `AEM Archetype` 專案。
 
-1. **将项目部署到本地开发环境：** 您可以使用以下命令部署到本地开发环境
+1. **將專案部署到您的本機開發環境：** 您可以使用以下命令來部署到您的本機開發環境
 
    `mvn -PautoInstallPackage clean install`
 
-   有关命令的完整列表，请参阅 [构建和安装](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
+   如需完整的命令清單，請參閱 [建置和安裝](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [将代码部署到 [!DNL AEM Forms] as a Cloud Service环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
+1. [將程式碼部署至您的 [!DNL AEM Forms] as a Cloud Service環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
 
-## 为自适应Forms配置Azure存储 {#configure-azure-storage-adaptive-forms}
+## 設定最適化Forms的Azure儲存體 {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Azure] 存储配置，将表单与 [!DNL Azure] 存储服务。 表单数据模型可用于创建与交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。
+[[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供 [!DNL Azure] 整合表單的儲存設定 [!DNL Azure] 儲存服務。 表單資料模型可用來建立最適化Forms，並與互動 [!DNL Azure] 伺服器以啟用業務工作流程。
 
 ### 创建 Azure 存储配置 {#create-azure-storage-configuration}
 
-在执行这些步骤之前，请确保您拥有Azure存储帐户和访问密钥，以授权访问 [!DNL Azure] 存储帐户。
+執行這些步驟之前，請確定您擁有Azure儲存體帳戶和存取金鑰，可授權存取 [!DNL Azure] 儲存體帳戶。
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure存储]**.
-1. 选择要创建配置的文件夹，然后点按 **[!UICONTROL 创建]**.
-1. 在 **[!UICONTROL 标题]** 字段。
-1. 指定 [!DNL Azure] 存储帐户 **[!UICONTROL Azure存储帐户]** 字段。
+1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure儲存體]**.
+1. 選取資料夾以建立設定並點選 **[!UICONTROL 建立]**.
+1. 在中指定設定的標題 **[!UICONTROL 標題]** 欄位。
+1. 指定 [!DNL Azure] 中的儲存體帳戶 **[!UICONTROL Azure儲存體帳戶]** 欄位。
 
-### 为Forms门户配置统一存储连接器 {#configure-usc-forms-portal}
+### 設定Forms入口網站的統一儲存聯結器 {#configure-usc-forms-portal}
 
-执行以下步骤来为AEM工作流配置统一存储连接器：
+執行以下步驟，為AEM Workflow設定統一儲存聯結器：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**.
-1. 在 **[!UICONTROL Forms门户]** 选择 **[!UICONTROL Azure]** 从 **[!UICONTROL 存储]** 下拉列表。
-1. 指定 [Azure存储配置的配置路径](#create-azure-storage-configuration) 在 **[!UICONTROL 存储配置路径]** 字段。
-1. 点按 **[!UICONTROL 发布]** 然后点按 **[!UICONTROL 保存]** 以保存配置。
+1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 統一的儲存聯結器]**.
+1. 在 **[!UICONTROL Forms入口網站]** 區段，選取 **[!UICONTROL Azure]** 從 **[!UICONTROL 儲存]** 下拉式清單。
+1. 指定 [Azure儲存體設定的設定路徑](#create-azure-storage-configuration) 在 **[!UICONTROL 儲存設定路徑]** 欄位。
+1. 點選 **[!UICONTROL 發佈]** 然後點選 **[!UICONTROL 儲存]** 以儲存設定。
 
-## 启用Forms Portal组件 {#enable-forms-portal-components}
+## 啟用Forms Portal元件 {#enable-forms-portal-components}
 
-要在Adobe Experience Manager(AEM)网站中使用任何核心组件（包括现成的门户组件），您必须创建一个代理组件并为您的网站启用该组件。 有关创建代理组件和启用门户组件的信息，请参阅 [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components).
+若要在Adobe Experience Manager (AEM)網站中使用任何核心元件（包括現成可用的入口網站元件），您必須建立Proxy元件並為您的網站啟用它。 如需建立Proxy元件和啟用入口網站元件的相關資訊，請參閱 [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components).
 
-启用门户组件后，即可在网站页面的创作实例中使用该组件。
+啟用入口網站元件後，您即可在網站頁面的作者執行個體中使用它。
 
-## 添加和配置Forms Portal组件 {#configure-forms-portal-components}
+## 新增和設定Forms Portal元件 {#configure-forms-portal-components}
 
-您可以通过添加和配置门户组件，在使用AEM创作的网站上创建和自定义Forms门户。 确保 [组件已启用](#enable-forms-portal-components) 在Forms门户中使用它们之前，请执行以下操作：
+您可以透過新增和設定入口網站元件，在使用AEM編寫的網站上建立和自訂Forms入口網站。 確保 [元件已啟用](#enable-forms-portal-components) 在Forms入口網站中使用它們之前。
 
-要添加组件，请将组件从组件窗格拖放到页面上的布局容器，或点按布局容器上的添加图标，然后从 [!UICONTROL 插入新组件] 对话框。
+若要新增元件，請將元件從「元件」窗格拖放至頁面上的版面容器中，或點選版面容器上的新增圖示，然後從新增元件 [!UICONTROL 插入新元件] 對話方塊。
 
-### 配置草稿和提交组件 {#configure-drafts-submissions-component}
+### 設定草稿和提交元件 {#configure-drafts-submissions-component}
 
-草稿和提交组件显示另存为草稿的表单，以供日后完成和提交的表单。 要配置，请点按组件，然后点按 ![“配置”图标](assets/configure_icon.png). 在 [!UICONTROL 草稿和提交] 对话框中，指定标题以指示表单列表为草稿或提交的表单。 此外，还选择组件应将草稿表单或提交的表单以卡片或列表格式列出。
+草稿和提交元件會顯示儲存為草稿的表單，以供稍後完成和提交表單。 若要設定，請點選元件，然後點選 ![設定圖示](assets/configure_icon.png). 在 [!UICONTROL 草稿和提交] 對話方塊中，指定標題以指示表單清單為草稿或已提交表單。 同時選取元件是否應該以卡片或清單格式列出草稿表單或已提交的表單。
 
-![草稿图标](assets/drafts-component.png)
+![草稿圖示](assets/drafts-component.png)
 
-![“提交”图标](assets/submission-listing.png)
+![提交圖示](assets/submission-listing.png)
 
-### 配置搜索和制表器组件 {#configure-search-lister-component}
+### 設定搜尋和清單元件 {#configure-search-lister-component}
 
-搜索和制表人组件用于在页面上列出自适应表单，并对列出的表单实施搜索。
+「搜尋和清單程式」元件可用來列出頁面上的最適化表單，以及在列出的表單上實施搜尋。
 
-![“搜索和制表人”图标](assets/search-and-lister-component.png)
+![「搜尋和製表器」圖示](assets/search-and-lister-component.png)
 
-要配置，请点按组件，然后点按 ![“配置”图标](assets/configure_icon.png). 的 [!UICONTROL 搜索和Lister] 对话框。
+若要設定，請點選元件，然後點選 ![設定圖示](assets/configure_icon.png). 此 [!UICONTROL 搜尋和製表人] 對話方塊開啟。
 
-1. 在 [!UICONTROL 显示] 选项卡，请配置以下内容：
-   * 在 **[!UICONTROL 标题]**，指定搜索和制表器组件的标题。 指示性标题使用户能够在表单列表中执行快速搜索。
-   * 从 **[!UICONTROL 布局]** 列表，选择以卡片或列表格式表示表单的布局。
-   * 选择 **[!UICONTROL 隐藏搜索]** 和 **[!UICONTROL 隐藏排序]** 以隐藏搜索并按功能排序。
-   * 在 **[!UICONTROL 工具提示]**，提供将鼠标悬停在组件上时显示的工具提示。
-1. 在 [!UICONTROL 资产文件夹] 选项卡上，指定从中提取并列出表单的位置。 您可以配置多个文件夹位置。
-1. 在 [!UICONTROL 结果] 选项卡，配置每页要显示的最大表单数。 默认为每页8个表单。
+1. 在 [!UICONTROL 顯示] 索引標籤中，設定下列專案：
+   * 在 **[!UICONTROL 標題]**，指定「搜尋和製表器」元件的標題。 指示性標題可讓使用者在表單清單中執行快速搜尋。
+   * 從 **[!UICONTROL 版面]** 清單中，選取版面配置以卡片或清單格式表示表單。
+   * 選取 **[!UICONTROL 隱藏搜尋]** 和 **[!UICONTROL 隱藏排序]** 以隱藏搜尋並按功能排序。
+   * 在 **[!UICONTROL 工具提示]**，提供將游標停留在元件上時顯示的工具提示。
+1. 在 [!UICONTROL 資產資料夾] 索引標籤中，指定提取表單並列在頁面上的位置。 您可以設定多個資料夾位置。
+1. 在 [!UICONTROL 結果] 索引標籤中，設定每頁要顯示的表單數目上限。 預設為每頁八個表單。
 
-### 配置链接组件 {#configure-link-component}
+### 設定連結元件 {#configure-link-component}
 
-链接组件允许您提供指向页面上自适应表单的链接。 要配置，请点按组件，然后点按 ![“配置”图标](assets/configure_icon.png). 的 [!UICONTROL 编辑链接组件] 对话框。
+連結元件可讓您提供指向頁面上最適化表單的連結。 若要設定，請點選元件，然後點選 ![設定圖示](assets/configure_icon.png). 此 [!UICONTROL 編輯連結元件] 對話方塊開啟。
 
-1. 在 [!UICONTROL 显示] 选项卡上，提供链接标题和工具提示，以便识别链接所表示的表单。
-1. 在 [!UICONTROL 资产信息] 选项卡，指定存储资产的存储库路径。
-1. 在 [!UICONTROL 查询参数] 选项卡，以键值对格式指定其他参数。 单击链接后，这些附加参数将随表单一起传递。
+1. 在 [!UICONTROL 顯示] 標籤中，提供連結標題和工具提示，以方便識別連結所代表的表單。
+1. 在 [!UICONTROL 資產資訊] 索引標籤中，指定儲存資產的存放庫路徑。
+1. 在 [!UICONTROL 查詢引數] 索引標籤中，以索引鍵/值組格式指定其他引數。 按一下連結時，這些額外的引數會與表單一起傳遞。
 
-## 使用Adobe Sign配置异步表单提交 {#configure-asynchronous-form-submission-using-adobe-sign}
+## 使用Adobe Sign設定非同步表單提交 {#configure-asynchronous-form-submission-using-adobe-sign}
 
-只有在所有收件人都完成了签名仪式后，您才能配置为提交自适应表单。 请按照以下步骤使用Adobe Sign配置设置。
+您可以將設定為僅在所有收件者完成簽署儀式時提交最適化表單。 請依照下列步驟，使用Adobe Sign進行設定。
 
-1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，点按属性图标，然后展开 **[!UICONTROL 电子签名]** 选项。
-1. 选择 **[!UICONTROL 启用Adobe Sign]**. 将显示各种配置选项。
-1. 在 [!UICONTROL 提交表单] 选择 **[!UICONTROL 每个收件人完成签约仪式]** 选项，以配置“提交表单”操作，在该操作中，表单首先会发送给所有收件人以供签名。 所有收件人在表单上签名后，才会提交表单。
+1. 在作者執行個體中，以編輯模式開啟最適化表單。
+1. 從左窗格，點選「屬性」圖示並展開 **[!UICONTROL 電子簽章]** 選項。
+1. 選取 **[!UICONTROL 啟用Adobe Sign]**. 會顯示各種設定選項。
+1. 在 [!UICONTROL 提交表單] 區段，選取 **[!UICONTROL 在每個收件者完成簽署儀式後]** 選項來設定「提交表單」動作，其中表單會先傳送給所有收件者以供簽署。 所有收件者簽署表單後，才提交表單。
 
-## 将自适应Forms另存为草稿 {#save-adaptive-forms-as-drafts}
+## 將最適化Forms另存為草稿 {#save-adaptive-forms-as-drafts}
 
-您可以将表单另存为草稿，以备日后完成。 表单保存为草稿的方式有两种：
-* 在表单组件（例如按钮）上创建“保存表单”规则。 单击按钮时，规则触发器和表单将保存为草稿。
-* 启用自动保存功能，该功能会根据指定事件或在配置的时间间隔后保存表单。
+您可以將表單儲存為草稿，以便稍後完成。 有兩種方式可將表單儲存為草稿：
+* 在表單元件上建立「儲存表單」規則，例如按鈕。 按一下按鈕時，規則會觸發，而表單會儲存為草稿。
+* 啟用「自動儲存」功能，依指定的事件或設定的時間間隔儲存表單。
 
-### 创建规则以将自适应表单另存为草稿 {#rule-to-save-adaptive-form-as-draft}
+### 建立將最適化表單儲存為草稿的規則 {#rule-to-save-adaptive-form-as-draft}
 
-要在表单组件（例如按钮）上创建“保存表单”规则，请执行以下步骤：
+若要在表單元件（例如按鈕）上建立「儲存表單」規則，請遵循下列步驟：
 
-1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，点按 ![“组件”图标](assets/components_icon.png) 然后拖动 [!UICONTROL 按钮] 组件。
-1. 点按 [!UICONTROL 按钮] 组件，然后点按 ![“配置”图标](assets/configure_icon.png).
-1. 点按 [!UICONTROL 编辑规则] 图标以打开规则编辑器。
-1. 点按 **[!UICONTROL 创建]** 以配置和创建规则。
-1. 在 [!UICONTROL When] 中，选择“已单击”，然后在 [!UICONTROL 然后] ，请选择“保存表单”选项。
-1. 点按 **[!UICONTROL 完成]** 来保存规则。
+1. 在作者執行個體中，以編輯模式開啟最適化表單。
+1. 從左窗格，點選 ![元件圖示](assets/components_icon.png) 並拖曳 [!UICONTROL 按鈕] 元件至表單。
+1. 點選 [!UICONTROL 按鈕] 元件，然後點選 ![設定圖示](assets/configure_icon.png).
+1. 點選 [!UICONTROL 編輯規則] 圖示以開啟規則編輯器。
+1. 點選 **[!UICONTROL 建立]** 以設定及建立規則。
+1. 在 [!UICONTROL 時間] 區段中，選取「已點按」，然後在 [!UICONTROL 則] 區段中，選取「儲存表單」選項。
+1. 點選 **[!UICONTROL 完成]** 以儲存規則。
 
-### 启用自动保存 {#enable-auto-save}
+### 啟用自動儲存 {#enable-auto-save}
 
-您可以按照以下方式为自适应表单配置自动保存功能：
+您可以為最適化表單設定自動儲存功能，如下所示：
 
-1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，点按 ![“属性”图标](assets/configure_icon.png) 并展开 [!UICONTROL 自动保存] 选项。
-1. 选择 **[!UICONTROL 启用]** 复选框以启用表单的自动保存。 您可以配置以下各项：
-* 默认情况下， [!UICONTROL 自适应表单事件] 设置为“true”，这意味着在每个事件后都会自动保存表单。
-* 在 [!UICONTROL 触发器]，配置以根据事件的发生或特定时间间隔后触发自动保存。
+1. 在作者執行個體中，以編輯模式開啟最適化表單。
+1. 從左窗格，點選 ![屬性圖示](assets/configure_icon.png) 並展開 [!UICONTROL 自動儲存] 選項。
+1. 選取 **[!UICONTROL 啟用]** 核取方塊以啟用表單的自動儲存。 您可以設定下列專案：
+* 根據預設， [!UICONTROL 最適化表單事件] 設為「true」，這表示表單會在每個事件後自動儲存。
+* 在 [!UICONTROL 觸發]，設定為根據事件發生或特定時間間隔後觸發自動儲存。

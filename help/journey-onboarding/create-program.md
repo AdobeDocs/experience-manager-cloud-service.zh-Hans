@@ -53,13 +53,13 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
    ![Cloud Manager 登陆页面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 从创建程序向导中，选择 **设置沙盒** 并提供程序名称，然后点按或单击 **继续**.
+1. 從建立計畫精靈中，選擇 **設定沙箱** 並提供方案名稱，然後點選或按一下 **繼續**.
 
    ![程序类型创建](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. 在 **设置沙盒** 对话框中，您可以选择要在沙盒项目中启用的解决方案。 的 **站点** 和 **资产** 解决方案始终包含在沙盒项目中并会自动进行选择。 这就足以作为我们的入门示例。 单击&#x200B;**创建**。
+1. 在 **設定您的沙箱** 對話方塊，您可以選擇要在沙箱程式中啟用哪些解決方案。 此 **網站** 和 **資產** 解決方案一律包含在沙箱程式中，並會自動選取。 這對我們的入門範例來說已經足夠。 单击&#x200B;**创建**。
 
-   ![解决方案选择](assets/set-up-sandbox-onboarding.png)
+   ![解決方案選擇](assets/set-up-sandbox-onboarding.png)
 
 随着安装过程的进行，您将在登陆页面上看到一个带有状态指示器的新沙盒程序信息卡。
 
@@ -73,7 +73,7 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
 ## 其他资源 {#additional-resources}
 
-如果您希望不仅仅访问载入历程的内容，还可以选择使用以下其他资源。
+如果您想要超越入門歷程的內容，以下是額外的選用資源。
 
 * [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) – 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 * [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) – 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。

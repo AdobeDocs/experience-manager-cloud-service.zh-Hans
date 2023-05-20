@@ -1,6 +1,6 @@
 ---
 title: 异步作业
-description: Adobe Experience Manager通过异步完成一些资源密集型任务作为后台操作来优化性能。
+description: Adobe Experience Manager會以非同步方式完成一些耗用大量資源的工作，作為背景作業，以最佳化效能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 70%
 
 # 异步操作 {#asynchronous-operations}
 
-为了减少对性能的负面影响，Adobe Experience Manager会异步处理某些长时间运行且资源密集型操作作为后台操作。 异步处理包括将多个作业排入队列，并以序列方式运行它们，但受到系统资源可用性的限制。
+為了降低對效能的負面影響，Adobe Experience Manger會以非同步方式處理某些長時間執行且耗用大量資源的作業，作為背景作業。 异步处理包括将多个作业排入队列，并以序列方式运行它们，但受到系统资源可用性的限制。
 
 这些操作包括：
 
@@ -22,7 +22,7 @@ ht-degree: 70%
 * 移动页面
 * 转出 Live Copy
 
-您可以从 **[!UICONTROL 后台操作]** 功能板 **全局导航** -> **工具** -> **常规** -> **作业**.
+您可以從以下位置檢視非同步作業的狀態： **[!UICONTROL 背景作業]** 儀表板位置 **全域導覽** -> **工具** -> **一般** -> **工作**.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ ht-degree: 70%
 
 每当 AEM 异步处理操作时，您都会在[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中通过电子邮件收到通知（如果已启用）。
 
-要详细查看异步操作的状态，请导航到 **[!UICONTROL 后台操作]** 页面。
+若要檢視非同步操作的詳細狀態，請導覽至 **[!UICONTROL 背景作業]** 頁面。
 
-1. 在Experience Manager界面中，选择 **全局导航** -> **工具** -> **常规** -> **作业**.
+1. 在Experience Manager介面中，選取 **全域導覽** -> **工具** -> **一般** -> **工作**.
 
-1. 在 **[!UICONTROL 后台操作]** 页面，查看操作的详细信息。
+1. 在 **[!UICONTROL 背景作業]** 頁面中，檢閱作業的詳細資訊。
 
    ![异步操作的状态和详细信息](assets/async-operation-status.png)
 
@@ -70,22 +70,22 @@ ht-degree: 70%
    >
    >无法删除状态为&#x200B;**活动**&#x200B;或&#x200B;**已排队**&#x200B;有作业。
 
-## 配置异步作业处理选项 {#configure}
+## 設定非同步作業處理選項 {#configure}
 
-可以针对异步作业配置多个选项。 以下示例显示如何使用本地开发系统上的配置管理器来执行此操作。
+可設定的非同步作業選項很多。 以下範例說明如何在本機開發系統上使用Configuration Manager完成此操作。
 
 >[!NOTE]
 >
->[OSGi配置](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 被视为可变内容，任何此类配置都必须部署为生产环境的内容包。
+>[OSGi設定](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 會將視為可變內容，且任何此類設定都必須部署為生產環境的內容套件。
 
 ### 清除已完成的作业 {#purging-completed-jobs}
 
-AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步作业。
+AEM每天01:00會執行清除工作，以刪除已完成的超過一天的非同步工作。
 
 您可以修改清除作业的计划，以及删除之前保留已完成作业详细信息的持续时间。您还可以配置在任何时间点保留详细信息的已完成作业的最大数量。
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **OSGi** > **配置**
+1. 登入AEM SDK快速入門Jar的AEM Web主控台，網址為 `https://<host>:<port>/system/console` 作為管理員使用者。
+1. 導覽至 **osgi** > **設定**
 1. 打开 **[!UICONTROL Adobe Granite 异步作业清除计划作业]**。
 1. 指定：
    * 删除已完成作业后的天数阈值。
@@ -100,50 +100,50 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 如果要删除的资产或文件夹数量超过阈值数，将异步执行删除操作。
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **OSGi** > **配置**
+1. 登入AEM SDK快速入門Jar的AEM Web主控台，網址為 `https://<host>:<port>/system/console` 作為管理員使用者。
+1. 導覽至 **osgi** > **設定**
 1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步进程默认队列配置。]**
 1. 在&#x200B;**[!UICONTROL 资产的阈值数]**&#x200B;框中，指定用于异步处理删除操作的资产/文件夹的阈值数。
 
    ![资产删除阈值](assets/async-delete-threshold.png)
 
-1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
+1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如success、failed。
 1. 保存更改。
 
 ### 配置异步资产移动操作 {#configuring-asynchronous-move-operations}
 
 如果要移动的资产/文件夹或引用数量超过阈值数，将异步执行移动操作。
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **OSGi** > **配置**
+1. 登入AEM SDK快速入門Jar的AEM Web主控台，網址為 `https://<host>:<port>/system/console` 作為管理員使用者。
+1. 導覽至 **osgi** > **設定**
 1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步移动操作作业处理配置。]**
 1. 在&#x200B;**[!UICONTROL 资产/参考的阈值数]**&#x200B;框中，指定用于异步处理移动操作的资产/文件夹的阈值数。
 
    ![资产移动阈值](assets/async-move-threshold.png)
 
-1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
+1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失敗。
 1. 保存更改。
 
 ### 配置异步页面移动操作 {#configuring-asynchronous-page-move-operations}
 
 如果对要移动的页面的引用数量超过阈值数，将异步执行移动操作。
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **OSGi** > **配置**
+1. 登入AEM SDK快速入門Jar的AEM Web主控台，網址為 `https://<host>:<port>/system/console` 作為管理員使用者。
+1. 導覽至 **osgi** > **設定**
 1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步页面移动操作作业处理配置。]**
 1. 在&#x200B;**[!UICONTROL 引用的阈值数]**&#x200B;字段中，指定用于异步处理页面移动操作的引用的阈值数。
 
    ![页面移动阈值](assets/async-page-move.png)
 
-1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
+1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失敗。
 1. 保存更改。
 
 ### 配置异步 MSM 操作 {#configuring-asynchronous-msm-operations}
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **OSGi** > **配置**
+1. 登入AEM SDK快速入門Jar的AEM Web主控台，網址為 `https://<host>:<port>/system/console` 作為管理員使用者。
+1. 導覽至 **osgi** > **設定**
 1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步页面移动操作作业处理配置。]**
-1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
+1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失敗。
 
    ![MSM 配置](assets/async-msm.png)
 

@@ -3,7 +3,7 @@ title: AEM Commerce 内容作者历程
 description: 从这里开始，通过 AEM Commerce 创作实施引导式历程
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
 

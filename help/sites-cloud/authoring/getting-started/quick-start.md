@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
+source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
 workflow-type: tm+mt
 source-wordcount: '1585'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 * 导航链接
 
-   * 当您处于&#x200B;**编辑**&#x200B;模式下时，**链接不可用于导航**。要通过链接导航，您需要使用以下任一方式来[预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)：
+   * **連結無法用於導覽** 當您在 **編輯** 模式。 若要使用連結導覽，您需要 [預覽頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) 使用：
 
       * [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [以发布的形式查看](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
@@ -48,9 +48,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->有许多键盘快捷键可帮助您更轻松地创作体验。
+>有許多鍵盤快速鍵可讓撰寫體驗更輕鬆。
 >
->* [编辑页面时的键盘快捷键](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+>* [編輯頁面時的鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 
    ![痕迹导航下拉列表](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
-1. 您还可以[搜索](/help/sites-cloud/authoring/getting-started/search.md)页面。您可以从所显示的结果中选择页面。
+1. 您也可以 [搜尋](/help/sites-cloud/authoring/getting-started/search.md) （頁面）。 您可以從顯示的結果中選取您的頁面。
 
    ![搜索字段](/help/sites-cloud/authoring/assets/search.png)
 
@@ -77,17 +77,17 @@ ht-degree: 100%
 要[创建新的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，请执行以下操作：
 
 1. [导航到要创建新页面的位置](#finding-your-page)。
-1. 使用&#x200B;**创建**&#x200B;图标，然后从列表中选择&#x200B;**页面**：
+1. 使用 **建立** 圖示，然後選取 **頁面** 從清單中：
 
    ![“创建”按钮](/help/sites-cloud/authoring/assets/create.png)
 
-1. 这将打开向导，逐步指导您收集[创建新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时所需的信息。按照屏幕上的说明操作。
+1. 這會開啟精靈，引導您收集以下情況下所需的資訊： [建立您的新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page). 請依照熒幕上的指示操作。
 
-### 选择页面以执行其他操作 {#selecting-your-page-for-further-action}
+### 選取您的頁面以採取進一步動作 {#selecting-your-page-for-further-action}
 
-您可以选择一个页面，以对其执行操作。选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
+您可以選取頁面，以便對其執行動作。 選取頁面會自動更新工具列，以顯示與該資源相關的動作。
 
-选择页面的方式取决于您在控制台中所使用的视图：
+如何選取頁面取決於您在主控台中使用的檢視：
 
 1. 列视图：
 
@@ -130,7 +130,7 @@ ht-degree: 100%
    * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
    * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 
-1. 编辑器打开后，您可以：
+1. 編輯器開啟時，您可以：
 
    * 通过以下方式[向页面中添加新组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component)：
 
@@ -142,21 +142,21 @@ ht-degree: 100%
 
       ![侧面板切换按钮](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-   * [编辑页面中现有组件的内容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)：
+   * [編輯現有元件的內容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 在頁面上：
 
-      * 通过点按或单击打开组件工具栏。使用&#x200B;**编辑**（铅笔）图标打开对话框。
-      * 通过点按住或慢速双击打开组件的就地编辑器。此时将显示可用的操作（对于某些组件，该选择将受到限制）。
-      * 要查看所有可用的操作，请使用以下图标进入全屏模式：
+      * 通过点按或单击打开组件工具栏。使用 **編輯** （鉛筆）圖示以開啟對話方塊。
+      * 使用點選並按住或按兩下緩慢的方式開啟元件的就地編輯器。 將顯示可用的動作（對於某些元件，這將是一個有限的選擇）。
+      * 若要檢視所有可用動作，請使用以下方法進入全熒幕模式：
 
          ![全屏按钮](/help/sites-cloud/authoring/assets/full-screen.png)
    * [配置现有组件的属性](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * 通过点按或单击打开组件工具栏。使用&#x200B;**配置**（扳手）图标打开对话框。
-   * 通过以下任一方式[移动组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)：
+      * 通过点按或单击打开组件工具栏。使用 **設定** （扳手）圖示以開啟對話方塊。
+   * [移動元件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) 可以：
 
-      * 将所需组件拖动到新位置。
+      * 將所需元件拖曳至其新位置。
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
-   * [复制（并粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
+   * [複製（和貼上）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 元件：
 
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
    >[!NOTE]
@@ -166,28 +166,28 @@ ht-degree: 100%
    * [删除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
       * 通过点按或单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
-   * 向页面[添加注释](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations)：
+   * [新增註解](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) 至頁面：
 
-      * 选择&#x200B;**注释**&#x200B;模式（对话气泡图标）。使用&#x200B;**添加注释**（加号）图标添加注释。使用右上方的 X 退出注释模式。
+      * 選取 **註釋** 模式（語音泡泡圖示）。 使用新增附註 **新增註解** （加號）圖示。 使用右上方的 X 退出注释模式。
 
          ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
-   * [预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)（用于查看页面在发布环境中的显示情况）
+   * [預覽頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) （檢視其顯示在發佈環境中的方式）
 
-      * 从工具栏中选择&#x200B;**预览**。
-   * 使用&#x200B;**编辑**&#x200B;下拉选择器返回编辑模式（或选择其他模式）。
+      * 選取 **預覽** （從工具列）。
+   * 使用返回編輯模式（或選取其他模式） **編輯** 下拉式選擇器。
 
    >[!NOTE]
    >
-   >要使用内容中的链接导航，您必须使用[预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
+   >若要使用內容中的連結導覽，您必須使用 [預覽模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
-### 编辑页面属性 {#editing-the-page-properties}
+### 編輯頁面屬性 {#editing-the-page-properties}
 
-[编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)的方法（主要）有两种：
+有兩個（主要）方法 [編輯頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)：
 
 * 从&#x200B;**站点**&#x200B;控制台中：
 
-   1. [导航](#finding-your-page)到要发布的页面。
-   1. 从以下任一位置选择&#x200B;**属性**&#x200B;图标：
+   1. [導覽至頁面](#finding-your-page) 您要發佈。
+   1. 選取 **屬性** 圖示來自：
 
       * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
       * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
@@ -197,20 +197,20 @@ ht-degree: 100%
    1. 将会显示页面属性。您可以进行需要的更新，然后使用“保存”保留这些更改
 
 
-* 在[编辑页面](#editing-your-page-content)时：
+* 時間 [編輯您的頁面](#editing-your-page-content)：
 
-   1. 打开&#x200B;**页面信息**&#x200B;菜单。
-   1. 选择&#x200B;**打开属性**&#x200B;以打开用于编辑属性的对话框。
+   1. 開啟 **頁面資訊** 功能表。
+   1. 選取 **開啟屬性** 以開啟對話方塊來編輯屬性。
 
       ![“页面信息”按钮](/help/sites-cloud/authoring/assets/page-information.png)
 
 ### 发布页面（或取消发布） {#publishing-your-page-or-unpublishing}
 
-[发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)（和取消发布）的方法主要有两种：
+有兩種主要方法 [發佈您的頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) （以及取消發佈）：
 
 * 从&#x200B;**站点**&#x200B;控制台中：
 
-   1. [导航](#finding-your-page)到要发布的页面。
+   1. [導覽至頁面](#finding-your-page) 您要發佈。
    1. 从以下任一位置选择&#x200B;**快速发布**&#x200B;图标：
 
       * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
@@ -219,27 +219,27 @@ ht-degree: 100%
       ![“快速发布”按钮](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
-* 在[编辑页面](#editing-your-page-content)时：
+* 時間 [編輯您的頁面](#editing-your-page-content)：
 
-   1. 打开&#x200B;**页面信息**&#x200B;菜单。
-   1. 选择&#x200B;**发布页面**。
+   1. 開啟 **頁面資訊** 功能表。
+   1. 選取 **發佈頁面**.
 
 * 从控制台取消发布页面只能通过&#x200B;**管理发布**&#x200B;选项完成，该选项仅在工具栏上可用（不能通过快速操作）。
 
    ![“管理发布”按钮](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   **取消发布页面**&#x200B;选项仍可通过编辑器中的&#x200B;**页面信息**&#x200B;菜单使用。
+   此 **取消發佈頁面** 選項仍可透過 **頁面資訊** 功能表。
 
-   请参阅[发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)以了解更多信息。
+   另請參閱 [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 以取得詳細資訊。
 
-### 移动、复制并粘贴或删除页面 {#move-copy-and-paste-or-delete-your-page}
+### 移動、複製和貼上或刪除您的頁面 {#move-copy-and-paste-or-delete-your-page}
 
-这些操作全部可以通过以下项触发：
+這些動作都可由以下方式觸發：
 
-1. [导航](#finding-your-page)到要移动、复制并粘贴或删除的页面。
+1. [導覽至頁面](#finding-your-page) 您想要移動、複製並貼上或刪除。
 1. 使用以下任一方式根据需要选择复制（然后粘贴）、移动或删除图标：
 
-   * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
+   * [快速動作（僅限卡片檢視/案頭）](#quick-actions-card-view-desktop-only) 以取得所需資源。
    * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 
    然后，取决于您的操作：
@@ -281,9 +281,9 @@ ht-degree: 100%
 
    ![引用视图](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 点按/单击所需的引用类型，以显示更多详细信息并（视需要）执行进一步操作。
+1. 點選/按一下所需的參考型別以顯示更多詳細資訊，並（在適當時）採取進一步動作。
 
-### 创建页面版本 {#creating-a-version-of-your-page}
+### 建立頁面的版本 {#creating-a-version-of-your-page}
 
 要创建页面的[版本](/help/sites-cloud/authoring/features/page-versions.md)：
 
@@ -307,11 +307,11 @@ ht-degree: 100%
 
    如果页面的某个版本已经保存，则会在“时间线”中列出该版本。
 
-1. 点按/单击要恢复的版本 - 这将显示其他操作按钮：
+1. 點選/按一下您要還原的版本 — 這會顯示其他動作按鈕：
 
    * **恢复到此版本**
 
       * 将恢复该版本。
    * **显示差异**
 
-      * 将打开该页面，并突出显示（两个版本之间的）差异。
+      * 開啟頁面時，會醒目提示（兩個版本之間的）差異。

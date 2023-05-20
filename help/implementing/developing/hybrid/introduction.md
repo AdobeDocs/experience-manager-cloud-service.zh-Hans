@@ -3,7 +3,7 @@ title: SPA 简介和演练
 description: 本文介绍了 SPA 的概念，演练了如何使用基本 SPA 应用程序进行创作，并展示了它与底层 AEM SPA Editor 的关系。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 100%
 

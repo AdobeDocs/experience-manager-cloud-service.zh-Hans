@@ -91,7 +91,7 @@ Cloud Manager 是 AEM as a Cloud Service 的必要组件，并且充当平台的
 示例通常有助于将此层级置于上下文中。
 
 * WKND 旅游和冒险企业可能是专注于旅游相关媒体的&#x200B;**租户**。
-* WKND 旅游和冒险企业租户可能具有两个&#x200B;**项目**：一个针对 WKND 杂志的 Sites 项目和一个针对 WKND 媒体的 Assets 项目。
+* WKND 旅游和冒险企业租户可能具有两个&#x200B;**程序**：一个针对 WKND 杂志的 Sites 程序和一个针对 WKND 媒体的 Assets 程序。
 * WKND 杂志和 WKND 媒体项目都具有开发、暂存和生产&#x200B;**环境**。
 
 ## 快速站点创建前端开发流程 {#flow}

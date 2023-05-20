@@ -116,7 +116,7 @@ Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikiped
 * `<protocol>` – 这表明要使用的 Universal Editor 持久性服务的持久性插件。例如 `aem`
 * `<url>` – 这是保存更改的系统的 URL。例如 `http://localhost:4502`
 
-标识符 `adobe:aem:editor` 表示Adobe通用编辑器的连接。
+識別碼 `adobe:aem:editor` 代表Adobe通用編輯器的連線。
 
 `itemid` 将使用 `urn` 前缀来缩短标识符。
 

@@ -1,10 +1,10 @@
 ---
-title: Markdown（资产 — 内容片段）
-description: 了解内容片段编辑器如何使用Markdown语法来轻松创建无标题内容。
+title: Markdown （資產 — 內容片段）
+description: 瞭解內容片段編輯器如何使用Markdown語法，讓您輕鬆建立Headless內容。
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: c15ef1cc9b14466105e5565c8ccc15120346f0f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 92%
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 # Markdown {#markdown}
 
-当您 [创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，内容片段编辑器使用 *markdown* 允许您轻松写入无标题内容的语法：
+當您 [製作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，內容片段編輯器會使用 *markdown* 語法可讓您輕鬆撰寫Headless內容：
 
 ![Markdown 编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

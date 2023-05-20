@@ -1,27 +1,27 @@
 ---
-title: 外部化URL
-description: Externalizer是一种OSGi服务，它允许您以编程方式将资源路径转换为外部URL和绝对URL。
+title: 將URL外部化
+description: Externalizer是一種OSGi服務，可讓您以程式設計方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
-# 外部化URL {#externalizing-urls}
+# 將URL外部化 {#externalizing-urls}
 
-在AEM中， **外部器** 是一项OSGi服务，允许您以编程方式转换资源路径(例如， `/path/to/my/page`)到外部和绝对URL(例如， `https://www.mycompany.com/path/to/my/page`)，方法是使用预配置的DNS来预定路径。
+在AEM中， **Externalizer** 是一項OSGi服務，可讓您以程式設計方式轉換資源路徑(例如 `/path/to/my/page`)轉換成外部和絕對URL (例如， `https://www.mycompany.com/path/to/my/page`)，將路徑加上預先設定的DNS當作前置詞。
 
-由于AEMas a Cloud Service实例无法知道其外部可见的URL，并且由于有时必须在请求范围之外创建链接，因此此服务提供了一个中心位置来配置这些外部URL并构建它们。
+由於AEMas a Cloud Service執行個體無法知道其外部可見的URL，而且有時必須在請求範圍外建立連結，因此此服務會提供一個中央位置，讓您設定這些外部URL並建置它們。
 
-本文介绍如何配置外部器服务及其使用方法。 有关该服务的技术详情，请参阅 [Javaocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+本文說明如何設定Externalizer服務及其使用方式。 如需此服務的技術詳細資訊，請參閱 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
-## 外部器的默认行为和如何覆盖 {#default-behavior}
+## 外部化程式的預設行為以及如何覆寫 {#default-behavior}
 
-现成的Externalizer服务将一些域标识符映射到与为环境生成的AEM服务URL匹配的绝对URL前缀，例如 `author https://author-p12345-e6789.adobeaemcloud.com` 和 `publish https://publish-p12345-e6789.adobeaemcloud.com`. 每个默认域的基本URL均从Cloud Manager定义的环境变量中读取。
+開箱即用的Externalizer服務會將一些網域識別碼對應到與已針對環境產生的AEM服務URL相符的絕對URL首碼，例如 `author https://author-p12345-e6789.adobeaemcloud.com` 和 `publish https://publish-p12345-e6789.adobeaemcloud.com`. 這些預設網域的基礎URL都是從Cloud Manager定義的環境變數中讀取的。
 
-对于引用， `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 有效：
+若需參考，此專案的預設OSGi設定 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 有效：
 
 ```json
 {
@@ -36,112 +36,112 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->默认 `local`, `author`, `preview`和 `publish` OSGi配置中的外部器域映射必须保留为原始 `$[env:...]` 上面列出的值。
+>預設 `local`， `author`， `preview`、和 `publish` OSGi設定中的Externalizer網域對應必須保留為原始的 `$[env:...]` 值列於上面。
 >
->部署自定义 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 文件到AEM的as a Cloud Service，如果忽略这些现成域映射中的任何映射，则可能会导致无法预测的应用程序行为。
+>部署自訂 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 檔案到AEMas a Cloud Service時，若省略這些現成可用的網域對應，可能會導致無法預測的應用程式行為。
 
-覆盖 `preview` 和 `publish` 值，请按照文章中所述使用Cloud Manager环境变量 [为AEMas a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 和设置预定义 `AEM_CDN_DOMAIN_PUBLISH` 和 `AEM_CDN_DOMAIN_PREVIEW` 变量。
+覆寫 `preview` 和 `publish` 值，請依照文章所述使用Cloud Manager環境變數 [為AEMas a Cloud Service設定OSGi](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 並設定預先定義的 `AEM_CDN_DOMAIN_PUBLISH` 和 `AEM_CDN_DOMAIN_PREVIEW` 變數。
 
-## 配置外部器服务 {#configuring-the-externalizer-service}
+## 設定Externalizer服務 {#configuring-the-externalizer-service}
 
-Externalizer服务允许您集中定义可用于以编程方式为资源路径添加前缀的域。 外部器服务应仅用于具有单个域的应用程序。
+Externalizer服務可讓您集中定義網域，以程式設計方式為資源路徑加上前置詞。 Externalizer服務只應用於具有單一網域的應用程式。
 
 >[!NOTE]
 >
->与应用任何 [AEMas a Cloud Service的OSGi配置，](/help/implementing/deploying/overview.md#osgi-configuration) 应对本地开发人员实例执行以下步骤，然后将其提交到您的项目代码以进行部署。
+>如同套用任何 [AEMas a Cloud Service的OSGi設定、](/help/implementing/deploying/overview.md#osgi-configuration) 下列步驟應在本機開發人員執行個體上執行，然後提交至您的專案程式碼以供部署。
 
-要为外部器服务定义域映射，请执行以下操作：
+若要定義Externalizer服務的網域對應：
 
-1. 通过以下方式导航到配置管理器：
+1. 透過以下方式瀏覽至Configuration Manager：
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. 单击 **Day CQ链接外部器** 打开配置对话框。
+1. 按一下 **Day CQ連結外部化器** 以開啟組態對話方塊。
 
-   ![外部器OSGi配置](./assets/externalizer-osgi.png)
+   ![外部化程式OSGi設定](./assets/externalizer-osgi.png)
 
    >[!NOTE]
    >
-   >配置的直接链接是 `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
+   >設定的直接連結為 `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-1. 定义 **域** 映射。 映射由唯一名称组成，该名称可在代码中用于引用域、空格和域：
+1. 定義 **網域** 對應。 對應包含唯一名稱，可用於程式碼中參照網域、空格和網域：
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
    其中：
 
-   * **`scheme`** 通常为http或https，但可以是其他协议。
+   * **`scheme`** 通常為http或https，但可以是其他通訊協定。
 
-      * 建议使用https来强制使用https链接。
-      * 如果客户端代码在请求将URL外部化时不覆盖方案，则将使用该URL。
-   * **`server`** 是主机名（域名或ip地址）。
-   * **`port`** （可选）是端口号。
-   * **`contextpath`** （可选）仅当AEM作为Web应用程序安装在其他上下文路径下时才进行设置。
+      * 建議使用https來強制執行https連結。
+      * 若使用者端代碼在要求外部化URL時未覆寫配置，則會使用它。
+   * **`server`** 是主機名稱（網域名稱或ip位址）。
+   * **`port`** （選用）是連線埠號碼。
+   * **`contextpath`** （選用）只有當AEM安裝為Webapp且位於不同的內容路徑下時，才會設定。
 
    例如：`production https://my.production.instance`
 
-   以下映射名称是预定义的，且必须始终设置，因为AEM依赖于这些映射名称：
+   下列對應名稱是預先定義的，必須一律設定為AEM依賴這些名稱：
 
-   * `local`  — 本地实例
-   * `author`  — 创作系统DNS
-   * `publish`  — 面向公众的网站DNS
+   * `local`  — 本機執行個體
+   * `author`  — 編寫系統DNS
+   * `publish`  — 面向公眾的網站DNS
 
    >[!NOTE]
    >
-   >自定义配置允许您添加新类别，例如 `production`, `staging` 甚至外部非AEM系统，例如 `my-internal-webservice`. 避免在项目代码库中的不同位置对此类URL进行硬编码非常有用。
+   >自訂設定可讓您新增類別，例如 `production`， `staging` 甚至外部非AEM系統，例如 `my-internal-webservice`. 避免在專案的程式碼基底中跨不同位置對這類URL進行硬式編碼很有用。
 
-1. 单击 **保存** 以保存更改。
+1. 按一下 **儲存** 以儲存變更。
 
-### 使用外部器服务 {#using-the-externalizer-service}
+### 使用Externalizer服務 {#using-the-externalizer-service}
 
-此部分显示如何使用外部器服务的一些示例。
+本節顯示幾個如何使用Externalizer服務的範例。
 
 >[!NOTE]
 >
->不应在HTML上下文中创建绝对链接。 因此，在此类情况下不应使用此实用程序。
+>不應在HTML內容中建立任何絕對連結。 因此，不應在此情況下使用此公用程式。
 
-* **要将路径外部化为“publish”域，请执行以下操作：**
+* **若要使用「發佈」網域外部化路徑：**
 
    ```java
    String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
    ```
 
-   假设域映射：
+   假設網域對應：
 
    * `publish https://www.website.com`
 
-   * `myExternalizedUrl` 最后是值：
+   * `myExternalizedUrl` 最後會得到值：
 
    * `https://www.website.com/contextpath/my/page.html`
 
-* **要将路径外部化为“author”域，请执行以下操作：**
+* **若要使用「作者」網域外部化路徑：**
 
    ```java
    String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
    ```
 
-   假设域映射：
+   假設網域對應：
 
    * `author https://author.website.com`
 
-   * `myExternalizedUrl` 最后是值：
+   * `myExternalizedUrl` 最後會得到值：
 
    * `https://author.website.com/contextpath/my/page.html`
 
-* **要将路径外部化为“本地”域，请执行以下操作：**
+* **若要使用「本機」網域外部化路徑：**
 
    ```java
    String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
    ```
 
-   假设域映射：
+   假設網域對應：
 
    * `local https://publish-3.internal`
 
-   * `myExternalizedUrl` 最后是值：
+   * `myExternalizedUrl` 最後會得到值：
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
 >[!TIP]
 >
->您可以在 [Javaocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+>如需更多範例，請參閱 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

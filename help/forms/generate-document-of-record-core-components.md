@@ -1,6 +1,6 @@
 ---
-title: 为自适应Forms生成记录文档
-description: 说明如何为自适应Forms的记录文档(DoR)生成模板。
+title: 產生最適化Forms的記錄檔案
+description: 說明如何為最適化Forms的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
@@ -9,87 +9,87 @@ ht-degree: 2%
 
 ---
 
-# 为自适应Forms（核心组件）生成记录文档
+# 產生最適化Forms的記錄檔案（核心元件）
 
 ## 概述 {#overview}
 
-填写或提交表单后，您可以保留表单记录、打印或文档格式。 此记录称为记录文档(DoR)。 它是已提交表单的打印友好副本。 您还可以参考客户在稍后日期填写的信息的记录文档，或使用记录文档以PDF格式将表单和内容一起存档。
+填寫或提交表單時，您可以以列印或檔案格式保留表單記錄。 此記錄稱為記錄檔案(DoR)。 這是已提交表單的易列印復本。 您也可以參考記錄檔案，以瞭解客戶在稍後日期填寫的資訊，或使用「記錄檔案」以「PDF格式」將表單與內容一起封存。
 
 ![记录文档](assets/document-of-record.png)
 
-要创建记录文档，将基于XFA或Acroform的模板与通过自适应表单收集的数据合并。 您可以自动或按需生成记录文档。 利用按需选项，可指定基于自定义XFA或Acroform的模板，以为记录文档提供自定义外观。
+若要建立記錄檔案，會將XFA或Acroform型範本與透過最適化表單收集的資料合併。 您可以自動或依需求產生記錄檔案。 隨選選項可讓您指定自訂XFA或Acroform型範本，以提供記錄檔案的自訂外觀。
 
 您可以：
 
-* [生成基于XFA的记录文档](#generate-an-XFA-based-document-of-record)
-* [生成基于Acroform(Acrobat表单PDF)的记录文档](#generate-an-Acroform-based-document-of-record)
-* [自动生成记录文档](#auto-generate-a-document-of-record)
+* [產生以XFA為基礎的記錄檔案](#generate-an-XFA-based-document-of-record)
+* [產生以Acroform為基礎的(Acrobat表單PDF)記錄檔案](#generate-an-Acroform-based-document-of-record)
+* [自動產生記錄檔案](#auto-generate-a-document-of-record)
 
 ## 开始之前 {#components-to-automatically-generate-a-document-of-record}
 
-在您开始学习并准备记录文档所需的资产之前：
+開始學習並準備記錄檔案所需的資產之前：
 
-**基本模板：** 在Forms Designer或Acrobat表单(AcroForm)中创建的XFA模板（XDP文件）。 [基本模板](#base-template-of-a-document-of-record) 用于为记录文档指定样式和品牌信息。 之前，将XFA模板（XDP文件）上传到AEM Forms实例。
+**基礎範本：** 在Forms Designer或Acrobat表單(AcroForm)中建立的XFA範本（XDP檔案）。 [基礎範本](#base-template-of-a-document-of-record) 用於指定記錄檔案的樣式和品牌資訊。 先將您的XFA範本（XDP檔案）上傳至您的AEM Forms執行個體。
 
-**自适应表单：** 要为其生成记录文档的自适应表单。
+**最適化表單：** 要為其產生記錄檔案的最適化表單。
 
-## 生成基于XFA的记录文档 {#generate-an-XFA-based-document-of-record}
+## 產生以XFA為基礎的記錄檔案 {#generate-an-XFA-based-document-of-record}
 
-将XFA模板（XDP文件）上传到AEM Forms实例。 请执行以下步骤来配置自适应表单，以使用XFA模板（XDP文件）作为记录文档的模板：
+將您的XFA範本（XDP檔案）上傳至您的AEM Forms執行個體。 執行以下步驟來設定最適化表單，以使用XFA範本（XDP檔案）作為記錄檔案的範本：
 
-1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
-1. 选择表单或创建自适应表单，然后单击 **[!UICONTROL 属性]**.
-1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
-1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**, **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
-1. 在“表单模型”选项卡的“记录模板配置文档”部分中，选择 **将表单模板关联为记录模板文档**. 选择此选项时，将显示您计算机上可用的所有XFA模板（XDP文件）。 选择相应的文件。 此外，还要确保对自适应表单和选定的XFA模板（XDP文件）使用相同的架构（数据架构）。
-1. 单击 **[!UICONTROL 完成。]**
+1. 在Experience Manager編寫執行個體中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案].**
+1. 選取表單或建立最適化表單，然後按一下 **[!UICONTROL 屬性]**.
+1. 在「屬性」視窗中，點選 **[!UICONTROL 表單模型]**.
+1. 於  **[!UICONTROL 表單模型]** 標籤，在 **[!UICONTROL 選擇來源]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**， **[!UICONTROL 結構描述]** 或 **[!UICONTROL 無]**. 您也可以在建立表單時選取表單模型。
+1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **建立表單範本為記錄檔案範本的關聯**. 選取此選項時，會顯示電腦上可用的所有XFA範本（XDP檔案）。 選取適當的檔案。 此外，請確定最適化表單和選定的XFA範本（XDP檔案）使用的是相同的結構描述（資料結構描述）。
+1. 按一下 **[!UICONTROL 完成。]**
 
-自适应表单现已配置为使用XDP文件作为记录文档的模板。 下一步是 [使用相应的模板字段绑定自适应表单组件](#bind-adaptive-form-components-with-template-fields).
+您的最適化表單現在已設定為使用XDP檔案作為記錄檔案的範本。 接下來的步驟是 [將最適化表單元件與對應範本欄位繫結](#bind-adaptive-form-components-with-template-fields).
 
-## 生成基于Acroform的记录文档 {#generate-an-Acroform-based-document-of-record}
+## 產生以Acroform為基礎的記錄檔案 {#generate-an-Acroform-based-document-of-record}
 
-将Adobe AcrobatPDF(Acroform)上传到AEM Forms实例。 请执行以下步骤来配置自适应表单，以使用Adobe AcrobatPDF(Acroform)作为记录文档的模板：
+將您的Adobe AcrobatPDF(Acroform)上傳至您的AEM Forms執行個體。 執行以下步驟來設定最適化表單，以使用Adobe AcrobatPDF(Acroform)作為記錄檔案的範本：
 
-1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
-1. 选择表单或 **[!UICONTROL 创建自适应表单]**，然后单击 **[!UICONTROL 属性]**.
-1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
-1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**, **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
-1. 在“表单模型”选项卡的“记录模板配置文档”部分中，选择 **将表单模板关联为记录模板文档**. 选择此选项后，将显示您计算机上所有AcrobatPDF(Acroform)的可用信息。 选择要使用的Acroform。
-1. 单击 **[!UICONTROL 完成。]**
+1. 在Experience Manager編寫執行個體中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案].**
+1. 選取表單或 **[!UICONTROL 建立最適化表單]**，然後按一下 **[!UICONTROL 屬性]**.
+1. 在「屬性」視窗中，點選 **[!UICONTROL 表單模型]**.
+1. 於  **[!UICONTROL 表單模型]** 標籤，在 **[!UICONTROL 選擇來源]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**， **[!UICONTROL 結構描述]** 或 **[!UICONTROL 無]**. 您也可以在建立表單時選取表單模型。
+1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **建立表單範本為記錄檔案範本的關聯**. 選取此選項後，會顯示您的電腦上可用的所有AcrobatPDF(Acroform)。 選取您要使用的Acroform。
+1. 按一下 **[!UICONTROL 完成。]**
 
-您的自适应表单现已配置为使用Acroform作为记录文档的模板。 下一步是 [使用相应的模板字段绑定自适应表单组件](#bind-adaptive-form-components-with-template-fields).
+您的最適化表單現在已設定為使用Acroform作為記錄檔案的範本。 接下來的步驟是 [將最適化表單元件與對應範本欄位繫結](#bind-adaptive-form-components-with-template-fields).
 
-## 自动生成记录文档 {#auto-generate-a-document-of-record}
+## 自動產生記錄檔案 {#auto-generate-a-document-of-record}
 
-当自适应表单配置为自动生成记录文档时，每次更改表单时，其记录文档都会立即更新。 例如，如果从现有自适应表单中删除了字段，则相应的字段也会被删除，并且在记录文档中不可见。 自动生成记录文档还有许多其他优势：
+當最適化表單設定為自動生成記錄檔案時，每次表單變更時，其記錄檔案都會立即更新。 例如，如果欄位從現有的最適化表單中移除，則對應的欄位也會被移除，並且不會顯示在記錄檔案中。 自動產生記錄檔案還有許多其他優點：
 
-* 表单开发人员不必手动维护数据绑定。 自动生成的记录文档负责数据绑定相关更新。
-* 表单开发人员不必手动隐藏标记为从记录文档中排除的字段。 自动生成的记录文档已预配置为排除此类字段。
-* 自动生成的记录文档选项可节省为记录文档创建表单模板所需的时间。
-* 自动生成的“记录文档”选项允许您使用不同的基本模板来使用不同的样式和外观。 它有助于为您的组织选择记录文档的最佳样式和外观。 如果未指定样式，则系统样式将设置为默认样式。
-* 自动生成的记录文档可确保表单的任何更改立即反映在记录文档中。
+* 表單開發人員不需要手動維護資料繫結。 自動產生的記錄檔案會處理資料繫結相關更新。
+* 表單開發人員不必手動隱藏標籤為從記錄檔案排除的欄位。 自動產生的記錄檔案已預先設定為排除此類欄位。
+* 自動產生的記錄檔案選項可節省建立記錄檔案的表單範本所需的時間。
+* 「自動產生的記錄檔案」選項可讓您使用不同的基底範本來使用不同的樣式和外觀。 它有助於為您的組織選擇記錄檔案的最佳樣式和外觀。 如果您未指定樣式，系統樣式會設為預設值。
+* 自動產生的記錄檔案可確保表單中的任何變更都立即反映在記錄檔案中。
 
-执行以下步骤来配置自适应表单以自动生成记录文档：
+執行以下步驟來設定最適化表單，以自動生成記錄檔案：
 
-1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
-1. 选择表单或创建自适应表单，然后单击 **[!UICONTROL 属性]**.
-1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
-1. 在  **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**, **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 在创建表单时，您还可以选择表单模型。
-1. 在“表单模型”选项卡的“记录模板配置文档”部分中，选择 **生成记录文档**.
-1. 单击 **[!UICONTROL 完成。]**
+1. 在Experience Manager編寫執行個體中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案].**
+1. 選取表單或建立最適化表單，然後按一下 **[!UICONTROL 屬性]**.
+1. 在「屬性」視窗中，點選 **[!UICONTROL 表單模型]**.
+1. 於  **[!UICONTROL 表單模型]** 標籤，在 **[!UICONTROL 選擇來源]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**， **[!UICONTROL 結構描述]** 或 **[!UICONTROL 無]**. 您也可以在建立表單時選取表單模型。
+1. 在「表單模型」標籤的「記錄檔案範本組態」區段中，選取 **產生記錄檔案**.
+1. 按一下 **[!UICONTROL 完成。]**
 
-## 使用模板字段绑定自适应表单组件 {#bind-adaptive-form-components-with-template-fields}
+## 將最適化表單元件與範本欄位繫結 {#bind-adaptive-form-components-with-template-fields}
 
-将自适应表单字段与模板字段绑定，以在相应的记录字段文档中显示捕获的表单数据。 要将自适应表单组件与记录模板字段的相应文档绑定，请执行以下操作：
+繫結最適化表單欄位與範本欄位，以在對應的記錄檔案欄位中顯示擷取的表單資料。 若要將最適化表單元件與對應的記錄檔案範本欄位繫結：
 
-1. 打开自适应表单，该表单配置为使用自定义表单模板进行编辑。
+1. 開啟最適化表單，設定為使用自訂表單範本進行編輯。
 
-1. 选择自适应表单组件并单击打开配置 ![配置](assets/Smock_Wrench_18_N.svg) 图标。 它会打开属性浏览器。
+1. 選取最適化表單元件，然後按一下「開啟設定」 ![設定](assets/Smock_Wrench_18_N.svg) 圖示。 它會開啟屬性瀏覽器。
 
-1. 在属性浏览器中，浏览并选择一个字段。
+1. 在屬性瀏覽器中，瀏覽並選取欄位。
 
-   * （对于AcroForm模板） **[!UICONTROL 记录绑定引用字段的文档]** 属性。
-   * （对于XFA模板） **[!UICONTROL 数据模型绑定参考]** 属性。
+   * （針對AcroForm範本） **[!UICONTROL 記錄檔案繫結參考欄位]** 屬性。
+   * （針對XFA範本） **[!UICONTROL 資料模型繫結參考]** 屬性。
 
 1. 单击“**[!UICONTROL 保存]**”。
 
@@ -97,24 +97,24 @@ ht-degree: 2%
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-您可以使用提交操作，如“发送电子邮件”、“调用AEM工作流”、“调用电源自动化流”等 [提交操作](configuring-submit-actions.md) 接收记录文档。
-![图像提交操作](/help/forms/assets/submit-actions-img.png)
+您可以使用提交動作，例如「傳送電子郵件」、「叫用AEM工作流程」、「叫用Power Automate流程」及其他 [提交動作](configuring-submit-actions.md) 以接收記錄檔案。
+![影像提交動作](/help/forms/assets/submit-actions-img.png)
 
 
 
-## 记录文档模板的增量更新 {#document-of-record-template-incremental-updates}
+## 記錄檔案範本的增量更新 {#document-of-record-template-incremental-updates}
 
-自适应表单和相应的记录模板文档会随着时间的推移而变化。 您可以选择向自适应表单或记录文档模板添加、删除或修改字段。
+最適化表單和記錄範本的對應檔案可能會隨著時間而改變。 您可以選擇新增、移除或修改最適化表單或記錄檔案範本的欄位。
 
-当您更改记录文档模板并将更改的记录文档模板上传到AEM Forms时，自适应Forms编辑器会自动检测更改的绑定并通知您需要新绑定的自适应表单组件。 它允许您对记录文档模板进行增量更新。
+當您變更記錄檔案範本並將變更後的記錄檔案範本上傳到AEM Forms時，調適型Forms編輯器會自動偵測變更的繫結，並通知您需要新繫結的最適化表單元件。 它可讓您對記錄檔案範本進行增量更新。
 
-例如，组织， *We.Retail*，具有基于AcroForm的记录文档模板， *we-retail-invoice.pdf*. 模板如下所示：
+例如，組織、 *We.Retail*，擁有以AcroForm為基礎的記錄檔案範本， *we-retail-invoice.pdf*. 範本看起來像這樣：
 
-![原始模板](assets/we-retail-invoice.png)
+![原始範本](assets/we-retail-invoice.png)
 
-在使用模板一段时间后，组织会决定重命名 `invoice-number` 字段 `bill-number` 字段和捕获购买者的电子邮件地址。 开发人员更新 `invoice-number` 字段，并向模板中添加电子邮件字段。 他还创建了一个名为  *we-retail-invoice-v2.pdf*.
+使用範本一段時間後，組織會決定重新命名 `invoice-number` 欄位至 `bill-number` 欄位並擷取購買者的電子郵件地址。 開發人員更新名稱 `invoice-number` 欄位並新增電子郵件欄位至範本。 他也會建立名為的新版範本  *we-retail-invoice-v2.pdf*.
 
-![更新的模板](assets/we-retail-new-invoice.png)
+![已更新的範本](assets/we-retail-new-invoice.png)
 
 <!--
 
@@ -128,18 +128,18 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-现在，在提交自适应表单时，将生成更新的记录文档。
+現在，提交最適化表單時，會產生更新的記錄檔案。
 
 ![已更新-](assets/we-retail-new-invoice-sent-to-customer.png)
 
-## 使用记录文档时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
+## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
-处理自适应Forms的记录文档时，请记住以下注意事项和限制。
+處理最適化Forms的記錄檔案時，請記住以下考量事項和限制。
 
-* 记录模板文档不支持富文本。 因此，静态自适应表单或最终用户填写的信息中的任何富文本都会在记录文档中显示为纯文本。
-* 自适应表单中的文档片段不显示在记录文档中。 但是，支持自适应表单片段。
-* 不支持在为基于XML架构的自适应表单生成的记录文档中绑定内容。
-* 当用户请求渲染记录文档时，将根据区域设置的要求创建记录文档的本地化版本。 记录文档的本地化与自适应表单的本地化同步进行。 <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
+* 記錄檔案範本不支援RTF文字。 因此，靜態最適化表單中或一般使用者填入的資訊中的任何RTF文字都會在記錄檔案中顯示為純文字。
+* 最適化表單中的檔案片段未出現在記錄檔案中。 不過，支援自適應表單片段。
+* 不支援為以XML結構描述為基礎的最適化表單產生的記錄檔案中的內容繫結。
+* 當使用者請求轉譯記錄檔案時，系統會根據地區設定需求建立記錄檔案的當地語系化版本。 記錄檔案的本地化與最適化表單的本地化同時發生。 <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
@@ -158,18 +158,18 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
-## 自适应表单元素的映射 {#mapping-of-adaptive-form-elements}
+## 最適化表單元素的對應 {#mapping-of-adaptive-form-elements}
 
-下表描述了自适应表单组件和相应的XFA组件，以及这些组件是否显示在记录文档中。
+下表說明最適化表單元件和對應的XFA元件，以及這些元件是否出現在記錄檔案中。
 
 ### 字段 {#fields}
 
 <table>
  <tbody>
   <tr>
-   <th>自适应表单组件</th>
-   <th>相应的XFA组件</th>
-   <th>默认情况下，是否包含在记录模板文档中？</th>
+   <th>最適化表單元件</th>
+   <th>對應的XFA元件</th>
+   <th>預設包含在記錄檔案範本中？</th>
    <th>注释</th>
   </tr>
   <tr>
@@ -186,7 +186,7 @@ When you select a form model, configure Document of Record using options availab
   </tr>
   <tr>
    <td>日期选取器</td>
-   <td>日期/时间字段</td>
+   <td>日期/時間欄位</td>
    <td>true</td>
    <td> </td>
   </tr>
@@ -198,7 +198,7 @@ When you select a form model, configure Document of Record using options availab
   </tr>
   <tr>
    <td>数值框</td>
-   <td>数值字段</td>
+   <td>數值欄位</td>
    <td>true</td>
    <td> </td>
   </tr>
@@ -222,7 +222,7 @@ When you select a form model, configure Document of Record using options availab
   </tr>
   <tr>
    <td>“提交”按钮</td>
-   <td><p>“电子邮件提交”按钮</p> <p>HTTP提交按钮</p> </td>
+   <td><p>電子郵件提交按鈕</p> <p>HTTP提交按鈕</p> </td>
    <td>false</td>
    <td> </td>
   </tr>
@@ -230,7 +230,7 @@ When you select a form model, configure Document of Record using options availab
    <td>文件附件</td>
    <td> </td>
    <td>false</td>
-   <td>在记录文档模板中不可用。 仅在记录文档中通过附件可用。</td>
+   <td>在記錄檔案範本中無法使用。 只能透過附件在記錄檔案中使用。</td>
   </tr>
  </tbody>
 </table>
@@ -240,113 +240,113 @@ When you select a form model, configure Document of Record using options availab
 <table>
  <tbody>
   <tr>
-   <th>自适应表单组件</th>
-   <th>相应的XFA组件</th>
+   <th>最適化表單元件</th>
+   <th>對應的XFA元件</th>
    <th>注释</th>
   </tr>
   <tr>
    <td>面板<br /> </td>
-   <td>子表单<br /> </td>
-   <td>可重复面板映射到可重复的子表单。</td>
+   <td>子表單<br /> </td>
+   <td>可重複面板對應至可重複的子表單。</td>
   </tr>
  </tbody>
 </table>
 
-### 静态组件 {#static-components}
+### 靜態元件 {#static-components}
 
-| 自适应表单组件 | 相应的XFA组件 | 注释 |
+| 最適化表單元件 | 對應的XFA元件 | 注释 |
 |---|---|---|
-| 图像 | 图像 | 无论绑定还是未绑定的TextDraw和图像组件，都会始终显示在基于XSD的自适应表单的记录文档中，除非使用记录文档设置排除。 |
+| 图像 | 图像 | 除非使用「記錄檔案」設定加以排除，否則TextDraw和Image元件（無論繫結或未繫結）一律顯示在XSD型最適化表單的記錄檔案中。 |
 | 文本 | 文本 |
 
 ### 表格 {#tables}
 
-自适应Forms表组件（如页眉、页脚和行映射）映射到相应的XFA组件。 您可以将可重复面板映射到记录文档中的表。
+最適化Forms表格元件（例如頁首、頁尾和列）對應至對應的XFA元件。 您可以將可重複面板對應至記錄檔案中的表格。
 
-## 记录文档的基本模板 {#base-template-of-a-document-of-record}
+## 記錄檔案的基礎範本 {#base-template-of-a-document-of-record}
 
-基本模板为记录文档提供样式和外观信息。 它允许您自定义自动生成的记录文档的默认外观。 例如，您可以使用基本模板在记录文档页脚的页眉和版权信息中添加公司徽标。
+基底範本為記錄檔案提供樣式和外觀資訊。 它可讓您自訂自動產生的記錄檔案的預設外觀。 例如，您可以使用基本範本在記錄檔案的頁首中新增您的公司標誌，並在頁尾中新增版權資訊。
 
-基本模板中的主控页用作记录文档模板的主控页。 母版页可以包含页眉、页脚和页码等信息，这些信息可应用于记录文档。 您可以使用基本模板将此类信息应用到记录文档，以自动生成记录文档。 使用基本模板可更改字段的默认属性。
+基礎範本的主版頁面會用作「記錄檔案」範本的主版頁面。 主版頁面可以包含頁首、頁尾和頁碼等資訊，可套用至記錄檔案。 您可以使用基本範本將此類資訊套用至記錄檔案，以自動產生記錄檔案。 使用基礎範本可讓您變更欄位的預設屬性。
 
-始终关注 [基本模板约定](#base-template-conventions) 设计基本模板时。
+永遠關注 [基礎範本慣例](#base-template-conventions) 當您設計基底範本時。
 
-## 基本模板约定 {#base-template-conventions}
+## 基礎範本慣例 {#base-template-conventions}
 
-基本模板用于定义记录文档的页眉、页脚、样式和外观。 页眉和页脚可以包含公司徽标和版权文本等信息。 基本模板中的第一个主控页面将被复制并用作记录文档的主控页面，其中包含页眉、页脚、页码，或应在记录文档的所有页面中显示的任何其他信息。 如果您使用的基本模板不符合基本模板惯例，则基本模板中的第一个主控页面仍会在记录文档模板中使用。 强烈建议您按照其惯例设计基本模板，并将其用于自动生成记录文档。
+基礎範本用於定義記錄檔案的頁首、頁尾、樣式和外觀。 頁首和頁尾可包含公司標誌和版權文字等資訊。 基礎範本中的第一個主版頁面會被複製並當做記錄檔案的主版頁面，其中包含頁首、頁尾、頁碼或應該出現在記錄檔案所有頁面上的任何其他資訊。 如果您使用不符合基礎範本慣例的基礎範本，則基礎範本中的第一個主版頁面仍會用於「記錄檔案」範本中。 強烈建議您依照其慣例設計基礎範本，並使用它來自動產生記錄檔案。
 
-**主控页面惯例**
+**主版頁面慣例**
 
-* 在基本模板中，将根子表单命名为 `AF_METATEMPLATE` 主控页面为 `AF_MASTERPAGE`.
+* 在基本範本中，將根子表單命名為 `AF_METATEMPLATE` 主版頁面為 `AF_MASTERPAGE`.
 
-* 具有名称的主控页面 `AF_MASTERPAGE` 位于 `AF_METATEMPLATE` 首选根子表单提取页眉、页脚和样式信息。
+* 具有名稱的主版頁面 `AF_MASTERPAGE` 位於 `AF_METATEMPLATE` 建議使用根子表單來擷取頁首、頁尾和樣式資訊。
 
-* 如果 `AF_MASTERPAGE` 不存在，则使用基础模板中存在的第一个主控页面。
+* 若 `AF_MASTERPAGE` 不存在，則會使用基本範本中存在的第一個主版頁面。
 
-**字段的样式约定**
+**欄位的樣式慣例**
 
-* 要对“记录文档”中的字段应用样式，基本模板会提供位于 `AF_FIELDSSUBFORM` 从 `AF_METATEMPLATE` 根子表单。
+* 若要在記錄檔案中的欄位上套用樣式，基本範本會提供位於 `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` 根子表單。
 
-* 这些字段的属性将应用于记录文档中的字段。 这些字段应跟在 `AF_<name of field in all caps>_XFO` 命名约定。 例如，复选框的字段名称应为 `AF_CHECKBOX_XFO`.
+* 這些欄位的屬性會套用至記錄檔案中的欄位。 這些欄位應遵循 `AF_<name of field in all caps>_XFO` 命名慣例。 例如，核取方塊的欄位名稱應為 `AF_CHECKBOX_XFO`.
 
-要创建基本模板，请在Forms Designer中执行以下操作。
+若要建立基礎範本，請在Forms Designer中執行下列動作。
 
-1. 单击 **[!UICONTROL 文件]** > **[!UICONTROL 新建]**.
-1. 选择 **[!UICONTROL 基于模板]** 选项。
+1. 按一下 **[!UICONTROL 檔案]** > **[!UICONTROL 新增]**.
+1. 選取 **[!UICONTROL 根據範本]** 選項。
 
-1. 选择 **[!UICONTROL Forms — 记录文档]** 类别。
-1. 选择 **[!UICONTROL DoR基模板]**.
-1. 单击 **[!UICONTROL 下一个]** 并提供所需信息。
+1. 選取 **[!UICONTROL Forms — 記錄檔案]** 類別。
+1. 選取 **[!UICONTROL DoR基本範本]**.
+1. 按一下 **[!UICONTROL 下一個]** 並提供必要資訊。
 
-1. （可选）修改要应用于记录文档中字段的字段的样式和外观。
-1. 保存表单。
+1. （可選）修改要套用至記錄檔案中欄位的樣式和外觀。
+1. 儲存表單。
    ![基本属性](/help/forms/assets/form-designer-dor-img.png)
 
-现在，您可以将保存的表单用作记录文档的基本模板。 请勿修改或删除基本模板中存在的任何脚本。
+您現在可以使用儲存的表單作為記錄檔案的基礎範本。 請勿修改或移除基底範本中存在的任何指令碼。
 
-**修改基本模板**
+**修改基底範本**
 
-* 请勿对基本模板中的字段应用任何样式，建议从基本模板中删除这些字段，以便自动选取对基本模板的任何升级。
-* 修改基本模板时，请勿删除、添加或修改脚本。
+* 請勿在基本範本的欄位上套用任何樣式，最好從基本範本中移除這些欄位，這樣系統就會自動擷取基本範本的任何升級。
+* 修改基底範本時，請勿移除、新增或修改指令碼。
 
-严格按照上述惯例和说明设计基础模板。
+請嚴格遵守上述慣例和指示，以設計基礎範本。
 
-## 自定义记录文档中的品牌信息 {#customize-the-branding-information-in-document-of-record}
+## 自訂記錄檔案中的品牌資訊 {#customize-the-branding-information-in-document-of-record}
 
-在生成记录文档时，您可以在“记录文档”选项卡上更改记录文档的品牌信息。 “记录文档”选项卡包含徽标、外观、布局、页眉和页脚、免责声明，以及是否要包含未选中的复选框和单选按钮选项等选项。
+產生記錄檔案時，您可以在記錄檔案索引標籤上變更記錄檔案的品牌資訊。 「記錄檔案」索引標籤包含標誌、外觀、版面、頁首與頁尾、免責宣告等選項，以及是否包含未選取的核取方塊和選項按鈕選項。
 
-要将您在“记录文档”选项卡中输入的品牌信息本地化，请确保已正确设置浏览器的区域设置。 要自定义记录文档的品牌信息，请执行以下步骤：
+若要將您在「記錄檔案」標籤中輸入的品牌資訊當地語系化，請確保已正確設定瀏覽器的地區設定。 若要自訂記錄檔案的品牌資訊，請執行下列步驟：
 
-1. 在记录文档中选择一个面板（根面板），然后点按 ![配置](assets/configure.png).
-1. 点按 ![多选项卡](assets/dortab.png). 将出现“记录文档”选项卡。
-1. 选择默认模板或用于渲染记录文档的自定义模板。 如果选择默认模板，“记录文档”的缩略图预览将显示在“模板”下拉列表的下方。
-1. 根据您是选择默认模板还是自定义模板，“记录文档”选项卡中将显示以下部分或全部属性。 指定以下属性以定义记录文档的外观：
+1. 在記錄檔案中選取面板（根面板），然後點選 ![設定](assets/configure.png).
+1. 點選 ![dortab](assets/dortab.png). 記錄檔案索引標籤隨即顯示。
+1. 選取用於呈現記錄檔案的預設範本或自訂範本。 如果您選取預設範本，「範本」下拉式清單下方會顯示記錄檔案的縮圖預覽。
+1. 根據您選取預設或自訂範本，以下部分或全部屬性會出現在「記錄檔案」標籤中。 指定以下提及的屬性，以定義記錄檔案的外觀：
 
    1. **基本属性**:
-      * **模板**:如果要选择自定义模板，请浏览并选择 [!DNL AEM Forms] 服务器。 如果要使用的模板在 [!DNL AEM Forms] 服务器中，您应该先将XDP上传到 [!DNL AEM Forms] 服务器。
-      * **强调颜色**:标题文本和分隔符行在记录PDF文档中呈现的颜色。
-      * **字体系列**:“记录文档”PDF中文本的字体系列。
+      * **範本**：如果您想要選取自訂範本，請瀏覽並選取 [!DNL AEM Forms] 伺服器。 如果您想要使用的範本在您的 [!DNL AEM Forms] 伺服器，您應該先將XDP上傳至 [!DNL AEM Forms] 伺服器。
+      * **輔色**：在記錄檔案PDF中呈現標頭文字和分隔線的色彩。
+      * **字型系列**：記錄檔案PDF中文字的字型系列。
 
-      * **包括未绑定到数据模型的表单对象**:设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。
+      * **包含未繫結至資料模型的表單物件**：設定屬性時，記錄檔案中會包含以結構描述為基礎的最適化表單中未繫結的欄位。
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
-      * **隐藏面板的描述**:设置属性时，不会从记录文档中排除面板/表的说明。 适用于面板和表。
+      * **隱藏面板說明**：設定屬性會從記錄檔案中排除面板/表格的說明。 適用於面板和表格。
    1. **表单字段属性**:
-      * **对于复选框和单选按钮组件，仅显示选定的值**:设置属性时，仅显示 [!UICONTROL 记录文档].
-      * **多个值的分隔符**:您可以选择任何分隔符（如逗号或换行符）来显示多个值。
-      * **选项对齐方式**:您可以选择所需的对齐方式（“水平”、“垂直”、“与自适应表单相同”），以设置要在上显示的字段（如复选框或单选按钮）的对齐方式 [!UICONTROL 记录文档]. 默认情况下，将为 [!UICONTROL 记录文档]. 从 [!UICONTROL 表单字段属性] 的DoR将覆盖 [!UICONTROL 项目对齐方式] ，用于自适应表单中的字段。 如果是，您选择 [!UICONTROL 与Aptive表单相同] 选项，则自适应表单创作实例中配置的对齐方式将用于 [!UICONTROL 记录文档] 字段。
-      * **水平对齐选项的数量**：您可以设置要在记录文档中显示的水平对齐选项的数量。
+      * **對於核取方塊與選項按鈕元件，僅顯示選取的值**：設定屬性，只會顯示中核取方塊和選項按鈕的選取值 [!UICONTROL 記錄檔案].
+      * **多個值的分隔符號**：您可以選擇任何分隔符號（例如逗號或分行符號）來顯示多個值。
+      * **選項對齊方式**：您可以選取所需的對齊方式（水準、垂直、與調適型表單相同），以設定核取方塊或選項按鈕等欄位要顯示的對齊方式 [!UICONTROL 記錄檔案]. 依預設，垂直對齊方式會針對中的欄位進行設定 [!UICONTROL 記錄檔案]. 從設定屬性 [!UICONTROL 表單欄位屬性] DoR的屬性會覆寫在 [!UICONTROL 專案對齊方式] 最適化表單上的欄位。 如果是，您選取 [!UICONTROL 與自適應表單相同] 選項，最適化表單作者例項中所設定的對齊方式會用於 [!UICONTROL 記錄檔案] 欄位。
+      * **水準對齊方式的選項數量**：您可以設定要在記錄檔案上針對水準對齊方式顯示的選項數量。
    1. **母版页  属性**:
-      * **徽标图像**:您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
-      * **表单标题**:DoR的标题。
-      * **标题文本**:显示在记录文档标题部分的文本。
-      * **免责声明标签**:免责声明标签。
-      * **免责声明**:规定记录文档权利和义务范围的文本。
-      * **免责声明文本**:免责声明文本。
+      * **標誌影像**：您可以選擇使用最適化表單中的標誌影像、從DAM中選擇影像，或從您的電腦上傳一個影像。
+      * **表單標題**：記錄檔案的標題。
+      * **頁首文字**：顯示在記錄檔案標題區段的文字。
+      * **免責宣告標籤**：免責宣告的標籤。
+      * **免責宣告**：指定記錄檔案權利與義務範圍的文字。
+      * **免責宣告文字**：免責宣告文字。
       ![母版页  属性](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
-   >如果您使用的自适应表单模板是使用6.3之前的Designer版本创建的，要使“强调颜色”和“字体系列”属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+   >如果您使用以6.3版之前的Designer版本建立的調適型表單範本，為了使輔色和字型系列屬性發揮作用，請確定根子表單下的調適型表單範本中存在下列內容：
 
    ```xml
    <proto>
@@ -360,39 +360,39 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 要保存品牌策略更改，请点按 **[!UICONTROL 完成]**.
+1. 若要儲存品牌變更，請點選 **[!UICONTROL 完成]**.
 
 
 
-## 记录文档中面板的表和列布局 {#table-and-column-layouts-for-panels-in-document-of-record}
+## 記錄檔案中面板的表格和欄配置 {#table-and-column-layouts-for-panels-in-document-of-record}
 
-您的自适应表单可能是一个包含多个表单字段的冗长表单。 您可能不希望将记录文档另存为自适应表单的确切副本。 现在，您可以选择表格或列布局，以在“记录文档”PDF中保存一个或多个“自适应表单”面板。
+您的調適型表單可能很長，包含多個表單欄位。 您可能不想將記錄檔案儲存為最適化表單的精確副本。 現在您可以選擇表格或欄版面配置，以將一或多個最適化表單面板儲存在記錄檔案PDF中。
 
-在生成记录文档之前，在面板的设置中，为该面板的记录文档选择“布局”(Layout For The Document For The Record)作为“表”或“列”。 面板中的字段在记录文档中进行相应的组织。
+在產生記錄檔案之前，在面板的設定中，為該面板選取「表格或欄」形式的記錄檔案佈局。 面板中的欄位會在記錄檔案中進行相應組織。
 
-![在“记录文档”的表布局中呈现的面板中的字段](assets/dortablelayout.png)
+![面板中的欄位會以記錄檔案中的表格版面配置呈現](assets/dortablelayout.png)
 
-在“记录文档”的表布局中呈现的面板中的字段
+面板中的欄位會以記錄檔案中的表格版面配置呈現
 
-![在“记录文档”中以列布局呈现的面板中的字段](assets/dorcolumnlayout.png)
+![面板中的欄位在記錄檔案中的欄版面中轉譯](assets/dorcolumnlayout.png)
 
-在“记录文档”中以列布局呈现的面板中的字段
+面板中的欄位在記錄檔案中的欄版面中轉譯
 
-## 记录文档设置 {#document-of-record-settings}
+## 記錄檔案設定 {#document-of-record-settings}
 
-“记录文档”设置允许您选择要包含在“记录文档”中的选项。 例如，银行以表格接受姓名、年龄、社会保障号码和电话号码。 表单会生成银行帐号和分行详细信息。 您可以选择在记录单中仅显示名称、社会保险号、银行帐户和分行详细信息。
+記錄檔案設定可讓您選擇要包含在記錄檔案中的選項。 例如，銀行接受表單中的姓名、年齡、社會安全號碼和電話號碼。 此表單會產生銀行帳號及分行詳細資訊。 您可以選擇在記錄檔案中只顯示名稱、社會安全號碼、銀行帳戶和分行明細。
 
-记录文档组件的设置可在其属性下找到。 要访问组件的属性，请选择该组件并单击 ![cppr](assets/cmppr.png) 在叠加图中。 侧栏中列出了这些属性，您可以在其中找到以下设置。
+記錄檔案元件的設定在其屬性下可用。 若要存取元件的屬性，請選取元件並按一下 ![cmppr](assets/cmppr.png) 在覆蓋圖中。 屬性會列在側邊欄中，您可以在該側邊欄中找到以下設定。
 
-**字段级别设置**
+**欄位層級設定**
 
-* **从记录文档中排除**:将属性设置为true会从记录文档中排除该字段。 这是名为的可脚本属性 `excludeFromDoR`. 其行为取决于 **隐藏时从DoR中排除字段** 表单级别属性。
+* **從記錄檔案排除**：將屬性設定為true會從記錄檔案中排除欄位。 這是名為的指令碼屬性 `excludeFromDoR`. 其行為取決於 **若隱藏自DoR排除欄位** 表單層級屬性。
 
-* **将面板显示为表格：** 如果面板中的字段少于6个，则设置属性会将面板显示为“记录文档”中的表。 仅适用于面板。
-* **从记录文档中排除标题：** 设置属性会从记录文档中排除面板/表的标题。 仅适用于面板和表。
-* **从记录文档中排除说明：** 设置属性时，“记录文档”中不包含面板/表的说明。 仅适用于面板和表。
+* **以表格顯示面板：** 如果面板中有少於6個欄位，設定屬性會在記錄檔案中將面板顯示為表格。 僅適用於面板。
+* **從記錄檔案排除標題：** 設定屬性會從記錄檔案中排除面板/表格的標題。 僅適用於面板和表格。
+* **從記錄檔案排除描述：** 設定屬性會從記錄檔案中排除面板/表格的說明。 僅適用於面板和表格。
 
-**表单级别设置**
+**表單層級設定**
 
-* **在DoR中包含未绑定字段：** 设置属性包括记录文档中基于架构的自适应表单中的未绑定字段。 默认情况下，为true。
+* **包括DoR中未繫結欄位：** 設定屬性會包含記錄檔案中以結構描述為基礎的最適化表單中未繫結的欄位。 預設為true。
 <!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>

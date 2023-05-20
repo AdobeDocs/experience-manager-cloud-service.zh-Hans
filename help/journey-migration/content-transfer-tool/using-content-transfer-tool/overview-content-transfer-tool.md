@@ -42,7 +42,7 @@ ht-degree: 79%
    有关更多详细信息，请参阅[内容传输中的提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
    >[!NOTE]
-   >用户映射现在作为创作提取阶段的一部分自动运行（但可以选择在创作时禁用，或在发布时启用）。 请参阅 [用户映射和主迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以了解更多详细信息。
+   >使用者對應現在會在提取階段中自動在作者上執行（但可選擇在作者上停用或在發佈上啟用）。 另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得更多詳細資料。
 
 1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
@@ -64,21 +64,21 @@ ht-degree: 79%
 
 在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关更多详细信息，请参阅[增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
 
-## 迁移集到期 {#migration-set-expiry}
+## 移轉集到期 {#migration-set-expiry}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
 >title="迁移集的到期"
 >abstract="了解迁移集的到期。"
 
-所有迁移集在长时间不活动约90天后最终会过期。 在一段时间内，在项目卡和迁移作业表行中显示指示器后，迁移集将过期，其数据将不再可用。 通过执行迁移集，可以轻松延长到期时间：
+所有移轉集都將在約90天長時間不活動後最終過期。 指標在專案卡片和移轉工作表格列上顯示一段時間後，移轉集將過期，其資料將不再可用。 透過以下方式根據移轉集採取行動，可輕鬆延長到期時間：
 
-* 编辑其描述
-* 获取提取密钥
-* 对其执行提取
-* 从中执行摄取
+* 編輯其說明
+* 取得其擷取金鑰
+* 對其執行擷取
+* 從中執行內嵌
 
-可以在迁移集行上监控迁移集的到期情况。 此外，还添加了项目卡片，以显示迁移集即将到达其过期日期的有用可视化指示。
+可以在「移轉集」列上監視移轉集的到期日。 移轉集即將到期的實用視覺指示器也新增了專案的卡片。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 

@@ -1,6 +1,6 @@
 ---
-title: 历程Dynamic Media，第II部分
-description: Dynamic Media历程涵盖Dynamic Media的基础知识、工作方式、可为您做什么、以及它为您的工作和客户带来什么价值。
+title: Dynamic Media歷程，第二部分
+description: Dynamic Media歷程涵蓋Dynamic Media的基礎知識、運作方式、可為您做的事情，以及可為您的工作和客戶帶來哪些價值。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -13,220 +13,220 @@ hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media历程:基础知识，第二部分  {#dm-journey-part2}
+# Dynamic Media歷程：基礎知識，第二部分  {#dm-journey-part2}
 
-欢迎使用Dynamic Media历程:基础知识，第二部分，您可以从中学习以下内容：
+歡迎使用Dynamic Media歷程：基礎知識，第II部分，您可在其中學習下列內容：
 
-* Dynamic Media URL及Dynamic Media如何交付内容的剖析
-* 创建图像预设以渲染资产的基础知识
-* 图像集、旋转集和混合媒体集
+* Dynamic Media URL的剖析，以及Dynamic Media如何傳遞內容
+* 建立影像預設集以轉譯資產的基礎知識
+* 影像集、迴轉集和混合媒體集
 
-另请参阅 [Dynamic Media历程;基础知识，第一部分](/help/assets/dynamic-media/dm-journey-part1.md).
+另請參閱 [Dynamic Media歷程；基礎知識，第一部分](/help/assets/dynamic-media/dm-journey-part1.md).
 
 >[!TIP]
 >
->为获得最佳结果，Adobe建议您在台式计算机上阅读并查看此Dynamic Media历程。
+>為達到最佳效果，Adobe建議您透過桌上型電腦閱讀及檢視此Dynamic Media歷程。
 
-## Dynamic Media URL及Dynamic Media如何交付内容的剖析 {#dm-journey-d}
+## Dynamic Media URL的剖析，以及Dynamic Media如何傳遞內容 {#dm-journey-d}
 
-上传和发布Dynamic Media资产后，您可以复制资产生成的URL，并将其粘贴到浏览器中，以了解资产将如何显示给客户。 以下复制的手表图像URL按颜色划分，以便于阅读和理解。
+上傳和發佈Dynamic Media資產後，您可以複製資產產生的URL，並將其貼到瀏覽器中，以檢視向客戶顯示的資產外觀。 下列鐘錶影像的複製URL會依顏色細分，使其更容易閱讀和理解。
 
 ![Dynamic Media URL剖析](/help/assets/dynamic-media/assets/dm-colored-url.png)
-_Dynamic Media URL的解剖。_
+_Dynamic Media URL的剖析。_
 
-URL的第一部分以红色表示，引用服务器域本身。 在这种情况下，Dynamic Media在通用服务器域(即 `https://s7d1.scene7.com/is/image/`. 只需查看服务器域，便能轻松查看一组图像并了解Dynamic Media是否提供了这些图像。 URL将保持相当一致。 但是，有些Dynamic Media客户已切换到可能位于的专用服务器域 `name-of-your-company.scene7.com`. 智能成像需要专用的服务器域。
+URL紅色的第一部分是參照伺服器網域本身。 在此案例中，Dynamic Media是在通用伺服器網域上執行，也就是 `https://s7d1.scene7.com/is/image/`. 只要檢視伺服器網域，就能輕鬆檢視一組影像，並瞭解Dynamic Media是否提供這些影像。 URL將相當一致。 不過，有些Dynamic Media客戶已切換至專屬伺服器網域，網域可能設在 `name-of-your-company.scene7.com`. 智慧型影像需要專用的伺服器網域。
 
-帐户名称是紫色的部分。 在这种情况下，该帐户称为 `jpearldemo`.
+帳戶名稱是紫色部分。 在此情況下，帳戶稱為 `jpearldemo`.
 
-资产ID或名称， `AdobeStock_28563982` 为绿色。 请注意，资产已 _否_ 文件扩展名，如 `.png` 或 `.jpg`. 将资产摄取到Dynamic Media后，将删除文件扩展名，并创建不同类型的文件：金字塔TIFF文件。 通过TIFF图像，Dynamic Media可以即时快速创建演绎版。
+資產ID或名稱， `AdobeStock_28563982` 為綠色。 請注意，資產已 _否_ 副檔名，例如 `.png` 或 `.jpg`. 將資產內嵌至Dynamic Media時，會移除副檔名，並建立其他型別的檔案：金字塔TIFF檔案。 金字塔TIFF可讓Dynamic Media即時快速建立轉譯。
 
-最后，还有一些图像处理参数， `?wid=1000&fmt=jpeg&qlt=85`，在末尾以黄色显示。
+最後是一些影像處理引數， `?wid=1000&fmt=jpeg&qlt=85`，結尾以黃色顯示。
 
-整个URL路径处于实时状态。 [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target=&quot;_blank&quot;}。
+整個URL路徑都是即時的。 [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
 
-由于您的浏览器窗口仍然会打开Dynamic Media URL和Watch图像，因此我们将进一步了解您如何只通过更改URL来创建图像的演绎版。
+在瀏覽器視窗仍開啟並顯示Dynamic Media URL和監看影像的情況下，讓我們進一步瞭解如何透過變更URL來建立影像的轉譯。
 
-### 通过URL呈现监视图像
+### 透過URL轉譯觀看影像
 
-首先，手动仅删除URL路径中的图像处理规则；保留服务器名称、帐户名称以及资产ID或图像名称。 [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target=&quot;_blank&quot;}。
+首先，請僅手動刪除URL路徑中的影像處理規則；保留伺服器名稱、帳戶名稱，以及資產ID或影像名稱。 [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
 
-现在，在URL的末尾添加一个图像处理参数。 在“URL”字段中，在图像名称右侧键入 `?wid=500`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target=&quot;_blank&quot;}。
+現在將影像處理引數新增至URL結尾。 在URL欄位中的影像名稱右側，輸入 `?wid=500`，然後按 **[!UICONTROL 輸入]**. [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
 
-请注意，手表的新呈现版本已生成。 要了解更改图像宽度这一简单练习的一个关键内容是，所看到的图像是100%动态生成的。
+請注意，已產生新的監視轉譯。 透過這個變更影像寬度的簡單練習，我們需要瞭解的一個關鍵點是，看到的影像是100%動態產生的。
 
-现在，更改 `500` 像素到 `1000` 像素，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}。
-你按下 **[!UICONTROL 输入]**，则浏览器将返回到Dynamic Media图像服务器。 它会根据您刚刚输入的新宽度值生成手表的全新呈现版本，然后将新图像交回浏览器并缓存。
+現在變更的寬度值 `500` 畫素至 `1000` 畫素，然後按下 **[!UICONTROL 輸入]**. [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
+按下此鍵時 **[!UICONTROL 輸入]**，瀏覽器會返回Dynamic Media影像伺服器。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器，並加以快取。
 
-Dynamic Media具有许多图像处理参数，可用于在网页上微调图像资产。 您可以 [请在此处查看这些列表](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
+Dynamic Media有許多影像處理引數，可用來微調網頁上的影像資產。 您可以 [在這裡檢視清單](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
-现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧接 `wid=1000`，类型 `&rotate=90`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target=&quot;_blank&quot;}。
+現在嘗試新增旋轉引數至觀看影像。 和URL路徑的結尾，緊接在 `wid=1000`，型別 `&rotate=90`，然後按 **[!UICONTROL 輸入]**. [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
-手表还是略偏左。 更改 `90` to `92`，然后按 **[!UICONTROL 输入]**. [试试看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target=&quot;_blank&quot;}。
+手錶還是稍微向左傾斜。 變更旋轉值 `90` 至 `92`，然後按 **[!UICONTROL 輸入]**. [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
-再说一遍，你按下 **[!UICONTROL 输入]**，则表格的新呈现会近乎瞬间生成。 您可以看到您获得的性能，这解释了为什么Dynamic Media可以提供超过800,000个图像请求， _每秒_、在繁忙的周末或大节假日。
+同樣地，只要您按下 **[!UICONTROL 輸入]**，會立即產生手錶的新轉譯。 您可以看到獲得的效能種類，這說明Dynamic Media可以提供超過800,000個影像要求的原因， _每秒_、忙碌的週末或重大假日。
 
-虽然可以逐个图像更改URL中的图像处理参数，但这种方法并不有效，尤其是当您的网站上有数万幅图像时。 使用图像预设是一种更好的方法。
+雖然您可以逐個影像變更URL中的影像處理引數，但這不是有效率的方法，尤其是如果您的網站包含數萬張影像時。 更好的方式是使用影像預設集。
 
-## 创建图像预设以渲染资产的基础知识 {#dm-journey-e}
+## 建立影像預設集以轉譯資產的基礎知識 {#dm-journey-e}
 
-您希望通过多种方式和位置来创建图像或使图像可用。 传统上，创作元素会进入Adobe Photoshop，并将每个不同的演绎版另存为静态图像。
+有多種方法和位置可讓您建立影像或讓影像可供使用。 傳統上，Creative會進入Adobe Photoshop，並將每個不同轉譯儲存為靜態影像。
 
-![静态图像](/help/assets/dynamic-media/assets/dm-static-images.png)
-_好：静态图像，每个图像都是手动创建的。_
+![靜態影像](/help/assets/dynamic-media/assets/dm-static-images.png)
+_好：靜態影像，每個影像都是手動建立。_
 
-想象一下，创意Director看着这些图片说，
+現在，想像Creative Director看著影像說，
 
-_“我真的想拍这张表，这样大手指向四，小手指向1，让表盘更容易看。”_
+_「我真的想要這個鏡頭，好讓大手指向四個，小手指向1，好讓錶盤更容易看見。」_
 
-创意人员必须再次重新拍摄所有这些新的静态图像。
+創意人員必須再次對這些新的靜態影像進行重新拍攝。
 
-但是，使用Dynamic Media时，如果您有不同的图像预设，则可以在需要时随处使用这些图像。 图像预设强制标准。
+但透過Dynamic Media，如果您有不同的影像預設集，您就可以隨處使用這些影像。 影像預設集會強制執行標準。
 
-![主文件方法](/help/assets/dynamic-media/assets/dm-onefile.png)
-_最佳：一个文件，其中包含使用图像预设即时创建的多个演绎版，例如 `Search_Grid` 和 `Thumbnail`._
+![主要檔案方法](/help/assets/dynamic-media/assets/dm-onefile.png)
+_最佳：一個檔案，其中包含使用影像預設集即時建立的多個轉譯，例如 `Search_Grid` 和 `Thumbnail`._
 
-| **为何使用图像预设？** |  |
+| **為何使用影像預設集？** |  |
 |---|---|
-| 标准 | 图像预设可对随请求的图像强制执行标准图像处理处理。 |
-| 变更管理 | 如果必须更改图像处理，则只需编辑现有图像预设的参数即可。 更新的定义会自动传播到所有请求中。 |
+| 標準 | 影像預設集會強制對任何請求影像執行標準影像處理處理。 |
+| 變更管理 | 如果您必須變更影像處理，只要編輯現有影像預設集的引數即可。 更新的定義會自動傳播到所有請求。 |
 
-例如，您需要具有特定类型图像的每个位置，
+您需要有特定影像型別的每個地方，例如，
 
-* 产品详细信息页面，
-* 搜索网格，
-* 缩略图，
-* 购物卡，或
-* 主页图像
+* 產品詳細資料頁面，
+* 搜尋格線，
+* 縮圖，
+* 購物卡，或
+* 主圖影像
 
-您希望无论在何处使用图像，都使用相同的参数来传送图像。
+您想要在任何使用影像的地方，以相同的引數傳送該影像。
 
-现在，我们来看一下图像预设是如何在Dynamic Media中创建的。
+讓我們先看看如何在Dynamic Media中建立影像預設集。
 
-![从“基本”选项卡开始创建图像预设](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
-_从“基本”选项卡开始创建图像预设。_
+![從基本標籤開始建立影像預設集](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
+_從「基本」標籤開始建立影像預設集。_
 
-在以上示例中，您可以看到已使用名称创建新的图像预设 _中_. Dynamic Media使用一个现成的图像（即背包）示例，帮助您在创建图像预设时查看图像预设的特性。
+在上述範例中，您可以看到已使用名稱建立新的影像預設集 _中_. Dynamic Media使用現成可用的影像（揹包）作為範例，協助您在建立影像預設集時檢視影像預設集的特性。
 
-的 _中_ 图像预设的宽度为500像素，高度为800像素。 在本历程的第一部分中，您阅读了有关以不同格式传送资产的内容。 从 **[!UICONTROL 格式]** 下拉菜单中，您可以选择以JPEG、PNG、TIFF或多种其他格式来交付资产。 你在这里很灵活。
+此 _中_ 影像預設集具有500畫素的寬度和800畫素的高度。 在此歷程的第一部分中，您已閱讀有關以不同格式傳送資產的資訊。 從 **[!UICONTROL 格式]** 下拉式功能表，您可以選擇以JPEG、PNG、TIFF或數種其他格式傳送資產。 您在這裡有彈性。
 
-选择 **[!UICONTROL 高级]** 选项卡会为您提供资产的色彩空间选项。 根据您在 **[!UICONTROL 基本]** 选项卡 — 在上面的示例中，已选择JPEG — 您可以以RGB、灰度或CMYK来传送资产。 从 **[!UICONTROL 颜色配置文件]** 下拉菜单中，您可以选择如何传送用于打印的CMYK图像资产。 另请注意，您还可以应用其他参数来锐化图像。 在这种情况下， **[!UICONTROL 钝化蒙版]** 的次数。
+選取 **[!UICONTROL 進階]** 索引標籤會提供資產色域的選項。 根據您在「 」中選取的格式 **[!UICONTROL 基本]** 標籤 — 在上面的範例中，已選取「JPEG」 — 您可以傳送RGB、灰階或CMYK格式的資產。 從 **[!UICONTROL 色彩設定檔]** 下拉式功能表，您可以選取如何傳遞要用於列印的CMYK影像資產。 也請注意，您可以套用其他引數來銳利化影像。 在這種情況下， **[!UICONTROL 不銳利化遮色片]** 「 」已套用。
 
-![通过从高级选项卡中选择选项来创建图像预设](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
-_通过从高级选项卡中选择选项来创建图像预设。_
+![從「進階」標籤中選取選項，以建立影像預設集](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
+_從「進階」標籤中選取選項，以建立影像預設集。_
 
-你记得 [Dynamic Media URL剖析](#dm-journey-d) 以前，您阅读了有关Dynamic Media URL及其构建方式的信息。 的 **[!UICONTROL 图像修饰符]** 在文本框中，您可以键入任何需要的其他图像处理参数。 使用预设传送图像后，这些参数将包含在URL的预设名称中。 在上面的屏幕截图中，参数 `bgc=451B15` 添加。 即，添加了一种深棕色背景颜色。
+您回想一下 [Dynamic Media URL剖析](#dm-journey-d) 之前版本，瞭解有關Dynamic Media URL及其建置方式的資訊。 此 **[!UICONTROL 影像修飾元]** 文字方塊是輸入您想要的任何其他影像處理引數的位置。 使用預設集傳送影像時，引數會包含在URL的預設集名稱中。 在上面的熒幕擷圖中，引數 `bgc=451B15` 已新增。 也就是說，已新增深棕色背景顏色。
 
-您可以将图像预设视为图像的方法。 它每次都会以一致的方式传送任何使用预设的图像；会一样的。 参数 `&op_brightness=+10` 以略微增加亮度。
+您可以將影像預設集視為影像的配方。 它會每次都以一致的方式傳送任何使用預設集的影像；都會一樣。 引數 `&op_brightness=+10` 也增加以稍微增加亮度。
 
-完成后，您会保存预设，现在该预设可用于您拥有的所有图像。 在这种情况下，我们要应用 _中_ 图像预设为一碗液态巧克力的图像。
+完成時，您會儲存預設集，現在該預設集可用於您擁有的所有影像。 在此案例中，我們想要套用 _中_ 將影像預設為液體巧克力碗的影像。
 
-![应用图像预设 *中* 生成图像的呈现版本](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
-_应用图像预设媒体以生成图像的呈现版本。_
+![套用影像預設集 *中* 產生影像轉譯](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
+_套用影像預設集「媒體」以產生影像的轉譯。_
 
-复制URL，然后将其粘贴到浏览器中，以检查图像的外观。 [试试看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}。
+複製URL，然後貼到瀏覽器中檢查影像的外觀。 [試試看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
 
-在您的浏览器中，请注意图像预设的名称 _中_ 在完整URL路径中。
+在您的瀏覽器中，注意影像預設集的名稱 _中_ 在完整URL路徑中。
 
-您可以看到图像中显示的清晰度。 这种品质部分要归功于这碗巧克力的拍摄方式。 此外，这在一定程度上是因为使用Dynamic Media，您可以存储比交付到数字渠道的图像大的图像。
+您可以看到影像中顯示的清晰度。 這種品質部分歸功於這碗巧克力的沖泡方式。 此外，部分原因是因為使用Dynamic Media，您可以儲存比傳送至數位頻道更大的影像。
 
-如果一碗巧克力的一切看起来都令人满意，请将URL粘贴到您的网页中，以便将图像显示在您的网站上。
+如果您的巧克力碗看起來一切順利，您就會將URL貼到您想讓影像出現在網站上的網頁。
 
-如果您再次查看下面的手表图像，您会看到 `Cart` 图像预设， `Grid` 预设， `Large` 预设， `PDP-page` （产品详细信息页面）预设，以及其他几个预设。
+如果您再看下方的觀看影像，您會看到有 `Cart` 影像預設集， a `Grid` 預設集， a `Large` 預設集， a `PDP-page` （產品詳細資料頁面）預設集和其他數個預設集。
 
-![静态和动态图像预设](/help/assets/dynamic-media/assets/dm-image-presets.png)
-_静态和动态图像预设。 手表图像使用 `PDP-page` 图像预设。_
+![靜態和動態影像預設集](/help/assets/dynamic-media/assets/dm-image-presets.png)
+_靜態和動態影像預設集。 觀看影像是使用 `PDP-page` 影像預設集。_
 
-但是，如果您必须更改网站上的图像，该怎么办？ 例如，假设您已经完成了一些测试，并发现图像的长度为120 x 120( `Cart` 图像预设)。 必须将宽度增加到175像素，将高度增加到175像素，从而使图像变大。 传统上，您必须进入Adobe Photoshop并重新创建所有这些购物车图像。 但是，使用Dynamic Media，您只需通过将宽度和高度值更新为175并保存预设来编辑图像预设，如以下示例所示。
+但如果您必須變更網站上的影像，該怎麼辦？ 例如，假設您已進行一些測試，發現影像120 x 120 (例如， `Cart` 影像預設集)，並未如您預期般收到。 您必須將寬度增加至175畫素，並將高度增加至175畫素，才能讓影像變大。 傳統上，您必須進入Adobe Photoshop並重新建立所有這些購物車影像。 但若使用Dynamic Media，您只需將「寬度」和「高度」值更新為175並儲存預設集即可編輯影像預設集，如下列範例所示。
 
-![编辑图像预设](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
-_编辑 `Cart` 图像预设。_
+![編輯影像預設集](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
+_編輯的寬度和高度 `Cart` 影像預設集。_
 
-在更改图像预设并刷新缓存后，所有图像都会更新，并且该预设中使用的所有URL都会更新 _not_ 随处更改。 这意味着无需断开链接和网页重定向。
+在您變更影像預設集並清除快取後，所有影像都會更新，且此預設集使用的所有URL都會更新 _not_ 隨處變更。 這表示不需要中斷連結和網頁重新導向。
 
-## 图像集、旋转集和混合媒体集 {#dm-journey-f}
+## 影像集、迴轉集和混合媒體集 {#dm-journey-f}
 
-Dynamic Media的一些较受欢迎用途是允许您创建图像集、旋转集和混合媒体集。
+Dynamic Media的一些較受歡迎用途是讓您建立影像集、迴轉集和混合媒體集的功能。
 
-图像集通常由一系列作为单个实体呈现的图像资产组成。 这些类型的集合为用户提供了集成的查看体验，用户可以通过单击缩略图来查看项目的不同视图。 图像集允许您显示某些内容的替代视图，并且查看器提供了用于仔细检查图像的缩放工具。 [查看名为“正在运行”的图像集，该图像集使用弹出查看器](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
+影像集通常由一系列以單一實體呈現的影像資產組成。 這些型別的集為使用者提供整合式檢視體驗，使用者可以按一下縮圖影像來檢視專案的不同檢視。 影像集可讓您呈現某些專案的替代檢視，而檢視器則提供縮放工具，讓您更密切地檢查影像。 [檢視名為「執行中」且使用彈出式檢視器的影像集](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-在Dynamic Media内，您可以看到几张跑鞋的图像。 它是一个产品系列，销售和营销部门希望客户将其视为单一演示；图像集。
+在Dynamic Media內部，您可以看到幾張跑步鞋的影像。 這是銷售和行銷部門希望客戶以單一簡報檢視的產品線系列；影像集。
 
-![创建图像集](/help/assets/dynamic-media/assets/dm-create-image-set.png)
-_开始创建图像集。_
+![建立影像集](/help/assets/dynamic-media/assets/dm-create-image-set.png)
+_建立影像集的開始。_
 
-要创建图像集，请选择 **[!UICONTROL 图像集]** 从 **[!UICONTROL 创建]** 下拉菜单。 请注意，菜单中还有一些用于创建 **[!UICONTROL 混合媒体集]**, a **[!UICONTROL 旋转集]**&#x200B;和 **[!UICONTROL 轮播集]**. 创建这些集的方式与创建图像集的方式大致相同。
+若要建立影像集，請選擇 **[!UICONTROL 影像集]** 從 **[!UICONTROL 建立]** 下拉式功能表。 請注意，功能表上也有建立 **[!UICONTROL 混合媒體集]**， a **[!UICONTROL 迴轉集]**，和 **[!UICONTROL 傳送集]**. 您建立這些集合的方式與影像集大致相同。
 
-混合媒体集可以包含图像、色板集、旋转集、视频和自适应视频集。 [试试看](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). 旋转集模拟旋转对象的真实动作，以对其进行检查。 旋转集允许从任何角度查看关键的可视细节。 [试试看](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target=&quot;_blank&quot;}。
+混合媒體集可包含影像、色票集、迴轉集、視訊和自我調整視訊集。 [試試看](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). 「迴轉集」會模擬實際動作，即轉動物件來檢查它。 迴轉集可讓您從任何角度檢視重要的視覺細節。 [試試看](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
 
-创建图像集非常简单。 您只需添加要包含在规则集中的图像资产即可。
+建立影像集很簡單。 您只需新增要納入集合的影像資產即可。
 
-![创建图像集](/help/assets/dynamic-media/assets/dm-create-image-set-add-assets.png)
-_图像集编辑器允许您添加图像资产并重新排序其在图像集中的外观。_
+![建立影像集](/help/assets/dynamic-media/assets/dm-create-image-set-add-assets.png)
+_「影像集編輯器」可讓您新增影像資產，以及重新排序影像資產在集中的外觀。_
 
-您需要为集指定一个名称。 请仔细选择名称，因为以后无法编辑该名称！ 在以上示例中，该集称为 `Running`. 完成后，您保存该集。
+您必須為集合命名。 請謹慎選擇名稱，因為您稍後無法編輯它！ 在上述範例中，集合稱為 `Running`. 完成後，您會儲存集合。
 
-这是 `Running` 在Experience Manager Assets中设置图像。
+以下是 `Running` Experience Manager Assets中的影像集。
 
-![在Experience Manager Assets卡片视图中运行的图像集](/help/assets/dynamic-media/assets/dm-image-set.png)
-_的 `Running` 在卡片视图中的Experience Manager Assets中设置图像。_
+![Experience Manager Assets中的執行中影像集，卡片檢視](/help/assets/dynamic-media/assets/dm-image-set.png)
+_此 `Running` 在Experience Manager Assets中設定的影像，卡片檢視。_
 
-无论您是创建了图像集、混合媒体集、旋转集还是任何其他交互式媒体，在创建图像集后，您都希望了解该集的显示和行为方式。 Dynamic Media有众多内置查看器，您可以通过它来实现这一点。
+無論您是否已建立影像集、混合媒體集、迴轉集或任何其他互動式媒體，在建立影像集後，您都會想要檢視該影像集如何為客戶顯示及行為。 Dynamic Media有許多內建檢視器，可讓您這麼做。
 
-首先，选择构建的图像集以在预览中将其打开，如以下示例所示。
+首先，請選取內建影像集，以在預覽中將其開啟，如下列範例所示。
 
-![在预览中运行图像集，并选择查看器选项](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
-_的 `Running` 在预览中设置图像，并选择查看器选项。_
+![已選取「檢視器」選項的「在預覽中執行影像集」](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
+_此 `Running` 已選取「檢視器」選項，在預覽中設定影像。_
 
-请注意，在预览中，您可以选择跑鞋色板并放大和缩小鞋。 要将查看器应用到该集，请选择 **[!UICONTROL 查看器]** 中。
+請注意，在預覽中，您可以選取跑步鞋色票，並放大和縮小鞋子。 若要將檢視器套用至該集，請選取 **[!UICONTROL 檢視者]** 下拉式選單中的。
 
-![应用了弹出查看器的运行图像集](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
-_的 `Running` 在应用弹出查看器时设置的图像。_
+![套用飛出檢視器的執行中影像集](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
+_此 `Running` 套用彈出式檢視器的影像集。_
 
-在本例中， `Flyout` 查看器。 此时，您可以预览查看器中的图像集。 但是，最好在浏览器中查看它，即客户如何查看它。 您选择 **[!UICONTROL URL]** 在左下方，复制URL并将其粘贴到浏览器中。 [试试看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target=&quot;_blank&quot;}。
+在此案例中， `Flyout` 已選取檢視器。 此時，您可以預覽檢視器中設定的影像。 但是，最好在您的瀏覽器中看到它，也就是客戶如何看它。 您選取 **[!UICONTROL URL]** 然後複製URL並貼到瀏覽器中。 [試試看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
 
-通过单个URL，您可以在网站上需要的图像集和查看器的位置使用它们。 您可能在上一个示例中注意到 **[!UICONTROL 嵌入]** 在URL按钮的右侧。 通过选择 **[!UICONTROL 嵌入]**，则可以复制此图像集/查看器的代码，并将其添加到网页或Experience Manager Sites组件中。
+單一URL可讓您在網站上所需的位置使用影像集和檢視器。 您在前一個範例中可能已注意到 **[!UICONTROL 內嵌]** 位於URL按鈕的右側。 透過選取 **[!UICONTROL 內嵌]**，您可以複製此影像集/檢視器的程式碼，並將其新增至網頁或Experience Manager Sites元件。
 
-弹出查看器是一个默认的现成查看器，您可以编辑其属性。 或者，与创建图像预设一样，您也可以创建自己的自定义查看器。
+「彈出式檢視器」是預設的現成檢視器，您可以編輯其屬性。 或者，就像建立影像預設集一樣，您可以建立自己的自訂檢視器。
 
-假设您的销售和营销团队不喜欢弹出查看器。 他们喜欢缩放功能，但希望客户直接在鞋上查看缩放效果。 在这种情况下，您只需将InlineZoom查看器应用到图像集，并复制其URL并将其粘贴到浏览器中，即可查看其行为方式。 [试试看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target=&quot;_blank&quot;}。
+現在，假設您的銷售和行銷團隊不喜歡彈出式檢視器。 他們喜歡縮放功能，但他們希望客戶能在鞋子上直接看到縮放效果。 在這種情況下，您只需將InlineZoom檢視器套用至影像集，並在瀏覽器中複製並貼上其URL以檢視其行為。 [試試看](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
-将鼠标指针移到鞋上时，放大到该图像，当鼠标指针移动时，可以看到更多细节。 原因只是最初上传到Dynamic Media的图像大小。
+當您將滑鼠指標移到鞋上時，您會放大該影像，而且當您移動指標時可以看到更多細節。 原因很簡單，就是最初上傳至Dynamic Media的影像大小。
 
-当你考虑以消费者的身份生活，或者当你在日常工作中工作时，当你访问不同的网站时，你会看到这样的东西。 想想这是怎么做到的，以及如何在您自己的工作和公司网站上使用Dynamic Media的力量。
+當您考慮以消費者身分生活，或從事日常工作時，以及前往不同網站時，您會看到類似情況。 想想這是如何做到的，以及您如何在自己的工作和您公司的網站上使用Dynamic Media的強大功能。
 
-您只需阅读一些关于图像集和查看器的内容。 让我们看看其他几个查看者，并在单个资产上试用它们。 要重置查看器，请单击 **[!UICONTROL 刷新]** 按钮。
+您只需要閱讀一些關於影像集和檢視器的資訊。 讓我們來看看其他幾個檢視器，並在單一資產上試用。 若要重設檢視器，請按一下 **[!UICONTROL 重新整理]** 按鈕。
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target=&quot;_blank&quot;}。
-* `Zoom_light` 查看器。 [试试看](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target=&quot;_blank&quot;}。
+* `ZoomVertical_dark` 已套用至影像資產的檢視器。 [試試看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* `Zoom_light` 已套用至影像的檢視器。 [試試看](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}.
 
-## 可选 — 了解详情
+## 選擇性 — 瞭解更多
 
-如果您想进一步了解您刚刚阅读的内容，请使用下面的材料来更详细地探索概念。 否则，您的Dynamic Media历程已完成！
+如果您想進一步瞭解您剛剛閱讀的內容，請使用以下資料更詳細地探索概念。 否則，您的Dynamic Media歷程已完成！
 
-_Dynamic Media帮助主题_
+_Dynamic Media說明主題_
 
-* [如何创建图像预设](/help/assets/dynamic-media/image-presets.md)
-* 列表 [图像处理参数](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) 在创建图像预设时，您可以在“图像修饰符”字段中使用的预设值
-* [如何预览资产](/help/assets/dynamic-media/previewing-assets.md)
-* [如何预览3D资产](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [如何创建图像集](/help/assets/dynamic-media/image-sets.md)
-* [如何创建旋转集](/help/assets/dynamic-media/spin-sets.md)
-* [如何创建混合媒体集](/help/assets/dynamic-media/mixed-media-sets.md)
+* [如何建立影像預設集](/help/assets/dynamic-media/image-presets.md)
+* 清單 [影像處理引數](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) 建立影像預設集時，用於「影像修飾元」欄位中的值
+* [如何預覽資產](/help/assets/dynamic-media/previewing-assets.md)
+* [如何預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [如何建立影像集](/help/assets/dynamic-media/image-sets.md)
+* [如何建立迴轉集](/help/assets/dynamic-media/spin-sets.md)
+* [如何建立混合媒體集](/help/assets/dynamic-media/mixed-media-sets.md)
 
-_Dynamic Media教程_
+_Dynamic Media教學課程_
 
-* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜索 _Dynamic Media_)
+* [使用Dynamic Media搭配Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜尋依據 _Dynamic Media_)
 
-_Dynamic Media查看器_
+_Dynamic Media檢視器_
 
-* [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html) 每个查看者
+* [即時示範](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html) 每個檢視者的
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

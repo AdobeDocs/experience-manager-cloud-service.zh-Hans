@@ -1,6 +1,6 @@
 ---
-title: 如何将内联样式应用到自适应表单组件？
-description: 虽然您可以在自适应表单上应用自定义样式，但也可以在自适应表单的各个组件上应用内联CSS属性。 了解如何将内联样式应用到自适应表单组件。 使用示例深入挖掘，将内嵌样式应用于文本字段组件。
+title: 如何將內嵌樣式套用至最適化表單元件？
+description: 您可以在最適化表單上套用自訂樣式，也可以在最適化表單的個別元件上套用內嵌CSS屬性。 瞭解如何將內嵌樣式套用至最適化表單元件。 使用將內嵌樣式套用至文字欄位元件的範例深入瞭解。
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -12,116 +12,116 @@ ht-degree: 2%
 
 ---
 
-# 自适应表单组件的内联样式 {#inline-styling-of-adaptive-form-components}
+# 最適化表單元件的內嵌樣式 {#inline-styling-of-adaptive-form-components}
 
-您可以通过使用指定样式来定义自适应表单的整体外观和样式 [主题编辑器](themes.md). 此外，您还可以将内联CSS样式应用于单个自适应表单组件，并即时预览更改。 内联样式会覆盖主题中提供的样式。
+您可以透過以下方式指定樣式，定義最適化表單的整體外觀和樣式： [主題編輯器](themes.md). 此外，您也可以將內嵌CSS樣式套用至個別的最適化表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
 
-## 应用内联CSS属性 {#apply-inline-css-properties}
+## 套用內嵌CSS屬性 {#apply-inline-css-properties}
 
-要向组件添加内联样式，请执行以下操作：
+若要將內嵌樣式新增至元件：
 
-1. 在表单编辑器中打开表单，然后将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中，点按 ![画布下拉列表](assets/Smock_ChevronDown.svg) > **[!UICONTROL 样式]**.
-1. 在页面中选择组件，然后点按编辑按钮 ![edit-button](assets/edit.svg). 在侧栏中打开样式属性。
+1. 在表單編輯器中開啟您的表單，然後將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，點選 ![畫佈下拉式清單](assets/Smock_ChevronDown.svg) > **[!UICONTROL 樣式]**.
+1. 在頁面中選取元件，然後點選「編輯」按鈕 ![編輯按鈕](assets/edit.svg). 在側欄中開啟樣式屬性。
 
-   您还可以从侧栏的表单层次结构树中选择组件。 表单层次结构树在侧栏中可用作表单对象。
+   您也可以從側欄中的表單階層樹狀結構中選取元件。 表單階層樹狀結構在側邊欄中可作為表單物件使用。
 
-   在 [!UICONTROL 样式] 模式下，您可以看到“表单对象”下列出的组件。 但是，侧栏中的“表单对象”列表会列出字段和面板等组件。 字段和面板是可包含文本框和单选按钮等组件的通用组件。
+   在 [!UICONTROL 樣式] 模式，您會看到列在「表單物件」下的元件。 不過，側邊欄中的「表單物件」清單會列出欄位和面板等元件。 欄位和面板是可包含文字方塊和選項按鈕等元件的通用元件。
 
-   从侧栏中选择组件时，您会看到列出的所有子组件以及选定组件的属性。 您可以选择特定子组件并设置其样式。
+   從側欄選取元件時，您會看到列出所有子元件和所選元件的屬性。 您可以選取特定的子元件並設定其樣式。
 
-1. 单击侧栏中的选项卡以指定CSS属性。 您可以指定以下属性：
+1. 按一下側邊欄中的索引標籤以指定CSS屬性。 您可以指定屬性，例如：
 
-   * [!UICONTROL Dimension和位置] （显示设置、内边距、高度、宽度、边距、位置、z指数、浮动、清除、溢出）
-   * [!UICONTROL 文本] （字体系列、粗细、颜色、大小、行高和对齐方式）
-   * [!UICONTROL 背景] （图像和渐变、背景颜色）
-   * [!UICONTROL 边框] （宽度、样式、颜色、半径）
-   * [!UICONTROL 效果] （阴影、不透明度）
-   * [!UICONTROL 高级] （允许您为组件编写自定义CSS）
+   * [!UICONTROL Dimension與位置] （顯示設定、邊框間距、高度、寬度、邊界、位置、z索引、浮點數、清除、溢位）
+   * [!UICONTROL 文字] （字型系列、粗細、顏色、大小、行高和對齊）
+   * [!UICONTROL 背景] （影像和漸層，背景顏色）
+   * [!UICONTROL 邊框] （寬度、樣式、顏色、半徑）
+   * [!UICONTROL 效果] （陰影、不透明度）
+   * [!UICONTROL 進階] （可讓您為元件編寫自訂CSS）
 
-1. 同样，您也可以为组件的其他部分应用样式，例如 [!UICONTROL 构件], [!UICONTROL 题注]和 [!UICONTROL 帮助].
-1. 点按 **[!UICONTROL 完成]** 确认更改或 **[!UICONTROL 取消]** 以放弃更改。
+1. 同樣地，您也可以為元件的其他部分套用樣式，例如 [!UICONTROL Widget]， [!UICONTROL 註解]、和 [!UICONTROL 說明].
+1. 點選 **[!UICONTROL 完成]** 確認變更或 **[!UICONTROL 取消]** 以捨棄變更。
 
-## 示例：字段组件的内联样式 {#example-inline-styles-for-a-field-component}
+## 範例：欄位元件的內嵌樣式 {#example-inline-styles-for-a-field-component}
 
-以下图像描述了将内联样式应用于文本字段前后的文本字段。
+下列影像說明套用內嵌樣式之前和之後的文字欄位。
 
-![应用内联样式之前的文本框组件](assets/no-style.png)
+![套用內嵌樣式之前的文字方塊元件](assets/no-style.png)
 
-应用内联样式属性之前的文本框组件
+套用內嵌樣式屬性前的文字方塊元件
 
-请注意，在应用以下CSS属性后，文本框样式发生了更改，如下图所示。
+請注意套用下列CSS屬性後，文字方塊樣式所發生的變更，如下圖所示。
 
 <table>
  <tbody>
   <tr>
    <td><p>选择器</p> </td>
-   <td><p>CSS属性</p> </td>
-   <td><p>值</p> </td>
+   <td><p>CSS屬性</p> </td>
+   <td><p>价值</p> </td>
    <td><p>效果</p> </td>
   </tr>
   <tr>
    <td><p>字段</p> </td>
-   <td><p>边框</p> </td>
-   <td><p>边框宽度= 2像素</p> <p>边框样式=实线</p> <p>边框颜色=#1111</p> </td>
-   <td><p>在字段周围创建一个黑色的2像素宽边框</p> </td>
+   <td><p>邊框</p> </td>
+   <td><p>邊框寬度=2px</p> <p>邊框樣式=實線</p> <p>邊框顏色=#1111</p> </td>
+   <td><p>在欄位周圍建立黑色2px寬邊框</p> </td>
   </tr>
   <tr>
    <td><p>文本框</p> </td>
    <td><p>background-color</p> </td>
    <td><p>#6495ED</p> </td>
-   <td><p>将背景颜色更改为玉米花蓝色(#6495ED)</p> <p>注意：您可以在值字段中指定颜色名称或其十六进制代码。</p> </td>
+   <td><p>將背景顏色變更為CornflowerBlue (#6495ED)</p> <p>注意：您可以在值欄位中指定顏色名稱或其十六進位代碼。</p> </td>
   </tr>
   <tr>
    <td><p>标签</p> </td>
-   <td><p>Dimension和位置&gt;宽度</p> </td>
+   <td><p>Dimension與位置&gt;寬度</p> </td>
    <td><p>100px</p> </td>
-   <td><p>将标签的宽度修复为100像素</p> </td>
+   <td><p>將標籤的寬度修正為100px</p> </td>
   </tr>
   <tr>
    <td>字段帮助图标</td>
-   <td>文本&gt;字体颜色</td>
+   <td>文字&gt;字型色彩</td>
    <td>#2ECC40</td>
-   <td>更改帮助图标面的颜色。</td>
+   <td>變更說明圖示面部的色彩。</td>
   </tr>
   <tr>
-   <td><p>长描述</p> </td>
+   <td><p>詳細說明</p> </td>
    <td><p>text-align</p> </td>
    <td><p>居中</p> </td>
-   <td><p>将帮助的长说明与中心对齐</p> </td>
+   <td><p>將說明的詳細描述對齊中心</p> </td>
   </tr>
  </tbody>
 </table>
 
-![应用内联样式后的文本框样式](assets/applied-style.png)
+![套用內嵌樣式後的文字方塊樣式](assets/applied-style.png)
 
-应用内联样式属性后的文本框组件
+套用內嵌樣式屬性後的文字方塊元件
 
-按照上述步骤，您可以选择其他组件（如面板、提交按钮和单选按钮）并设置其样式。
+依照上述步驟，您可以選取其他元件並設定其樣式，例如面板、提交按鈕和選項按鈕。
 
 >[!NOTE]
 >
->样式属性因您选择的组件而异。
+>樣式屬性會因您選取的元件而異。
 
-## 复制并粘贴样式 {#copy-paste-styles}
+## 複製並貼上樣式 {#copy-paste-styles}
 
-您还可以在自适应表单中将样式从一个组件复制并粘贴到另一个组件。 在 **[!UICONTROL 样式]** 模式时，点按组件，然后点按复制图标 ![复制](assets/property-copy-icon.svg).
+您也可以在最適化表單中，將樣式從一個元件複製並貼到另一個元件。 在 **[!UICONTROL 樣式]** 模式，點選元件並點選「複製」圖示 ![複製](assets/property-copy-icon.svg).
 
-点按同一类型的其他组件，然后点按粘贴图标 ![复制](assets/Smock_Paste_18_N.svg) 以粘贴复制的样式。 您还可以点按清除样式图标 ![复制](assets/clear-style-icon.svg) 以清除应用的样式。
+點選相同型別的其他元件，然後點選「貼上」圖示 ![複製](assets/Smock_Paste_18_N.svg) 貼上複製的樣式。 您也可以點選「清除樣式」圖示 ![複製](assets/clear-style-icon.svg) 以清除套用的樣式。
 
-## 为组件的不同状态设置样式 {#set-styles-for-states}
+## 為元件的不同狀態設定樣式 {#set-styles-for-states}
 
-您可以为组件类型的不同状态设置样式。 不同状态包括： [!UICONTROL 焦点], [!UICONTROL 已禁用], [!UICONTROL 悬停], [!UICONTROL 错误], [!UICONTROL 成功]和 [!UICONTROL 必需].
+您可以為元件型別的不同狀態設定樣式。 不同的狀態包括： [!UICONTROL 焦點]， [!UICONTROL 已停用]， [!UICONTROL 暫留]， [!UICONTROL 錯誤]， [!UICONTROL 成功]、和 [!UICONTROL 強制].
 
-要为组件状态定义样式，请执行以下操作：
+若要定義元件狀態的樣式：
 
-1. 在 **[!UICONTROL 样式]** 模式时，点按组件，然后点按编辑图标 ![编辑](assets/Smock_Edit_18_N.svg).
+1. 在 **[!UICONTROL 樣式]** 模式，點選元件並點選「編輯」圖示 ![編輯](assets/Smock_Edit_18_N.svg).
 
-1. 使用 **[!UICONTROL 州]** 下拉列表。
+1. 使用選取元件的狀態 **[!UICONTROL 州]** 下拉式清單。
 
-   ![选择状态](assets/select-state.png)
+   ![選取狀態](assets/select-state.png)
 
-1. 为组件的选定状态定义样式，然后点按 ![保存](assets/save_icon.svg) 以保存属性。
+1. 定義元件所選狀態的樣式，然後點選 ![儲存](assets/save_icon.svg) 以儲存屬性。
 
-您还可以模拟成功和错误状态。 点按展开图标以查看 **[!UICONTROL 模拟成功]** 和 **[!UICONTROL 模拟错误]** 选项。
+您也可以模擬成功和錯誤狀態。 點選「展開」圖示以檢視 **[!UICONTROL 模擬成功]** 和 **[!UICONTROL 模擬錯誤]** 選項。
 
-![模拟状态](assets/simulate-states.png)
+![模擬狀態](assets/simulate-states.png)

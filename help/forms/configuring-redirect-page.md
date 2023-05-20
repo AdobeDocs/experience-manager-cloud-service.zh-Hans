@@ -1,6 +1,6 @@
 ---
-title: 如何配置重定向页面？
-description: 了解如何将用户重定向到表单作者在创建表单时可以配置的网页。
+title: 如何設定重新導向頁面？
+description: 瞭解如何將使用者重新導向至表單作者可在建立表單時設定的網頁。
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -12,21 +12,21 @@ ht-degree: 0%
 
 ---
 
-# 配置重定向页面 {#configuring-redirect-page}
+# 設定重新導向頁面 {#configuring-redirect-page}
 
-表单作者可以为每个表单配置一个页面，表单用户在提交表单后将被重定向到该页面。
+表單作者可為每個表單設定一個頁面，表單使用者在提交表單後即重新導向至該頁面。
 
-1. 在编辑模式下，选择一个组件，然后单击 ![字段级别](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后单击 ![cppr](assets/configure-icon.svg).
+1. 在編輯模式中，選取元件，然後按一下 ![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後按一下 ![cmppr](assets/configure-icon.svg).
 
-1. 在侧栏中，单击 **[!UICONTROL 提交]**.
+1. 在側邊欄中，按一下 **[!UICONTROL 提交]**.
 
-1. 在 **[!UICONTROL 重定向URL/路径]** 在 **[!UICONTROL 提交]** 中。
-1. 或者，在提交操作下方的提交到REST端点操作中，您可以配置要传递到重定向页面的参数。
+1. 在下方提供重新導向頁面的URL **[!UICONTROL 重新導向URL/路徑]** 在 **[!UICONTROL 提交]** 區段。
+1. 或者，您可以在「送出動作」下，針對「送出至REST端點」動作，設定要傳遞至重新導向頁面的引數。
 
-   ![重定向页面配置](assets/redirect-url.png)
+   ![重新導向頁面設定](assets/redirect-url.png)
 
-   重定向页面配置
+   重新導向頁面設定
 
-表单作者可以使用传递到感谢页面的以下参数。 对于所有可用的提交操作， `status` 和 `owner` 参数被传递。 除了这两个参数之外，还会为以下提交操作传递一些其他参数：
+表單作者可以使用以下傳遞至感謝頁面的引數。 針對所有可用的「提交」動作， `status` 和 `owner` 引數已傳遞。 除了這兩個引數外，系統還會為下列「提交動作」傳遞其他引數：
 
-* **[!UICONTROL 提交到REST端点]**:将传递为字段内参数映射添加的参数。 `status` 和 `owner` 参数不会在此提交操作中传递。 有关更多信息，请参阅 [配置提交到REST端点提交操作](configuring-submit-actions.md).
+* **[!UICONTROL 提交至REST端點]**：傳遞為欄位內與引數對應新增的引數。 `status` 和 `owner` 此提交動作中未傳遞引數。 如需詳細資訊，請參閱 [設定提交至REST端點提交動作](configuring-submit-actions.md).

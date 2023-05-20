@@ -1,26 +1,41 @@
 ---
-title: 架构 [!DNL Assets]
-description: Adobe Experience Manager Assets as a [!DNL Cloud Service]
+title: 架構 [!DNL Assets]
+description: Adobe Experience Manager Assets as a的架構 [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 9%
+source-wordcount: '116'
+ht-degree: 32%
 
 ---
 
-# 资产的架构 [!DNL Cloud Service] 解决方案 {#assets-architecture}
+# Assets as a的架構 [!DNL Cloud Service] 解決方案 {#assets-architecture}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 基于 [!DNL Adobe Experience Manager] 与最新的产品相比较 [!DNL Experience Manager] 6.5. [!DNL Cloud Service] 该产品具有经过调整的架构和功能，可作为云原生服务。 基础架构的更改不允许所有Experience Manager6.5功能都包含在 [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 根據 [!DNL Adobe Experience Manager] 並與最新產品相提並論 [!DNL Experience Manager] 6.5.此 [!DNL Cloud Service] 產品具有調整後的架構和功能，可作為雲端原生服務。 基礎架構的變更不允許所有Experience Manager6.5功能屬於 [!DNL Cloud Service].
 
-要查看资产微服务的架构概述，请参阅 [资产微服务概述](asset-microservices-overview.md#asset-microservices-architecture).
+若要檢視資產微服務的架構概觀，請參閱此 [資產微服務概覽](asset-microservices-overview.md#asset-microservices-architecture).
+
+**另请参阅**
+
+* [翻译资源](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [资源支持的文件格式](file-format-support.md)
+* [搜索资源](search-assets.md)
+* [连接的资源](use-assets-across-connected-assets-instances.md)
+* [资源报告](asset-reports.md)
+* [元数据架构](metadata-schemas.md)
+* [下载资源](download-assets-from-aem.md)
+* [管理元数据](manage-metadata.md)
+* [搜索 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [批量元数据导入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [概述和新增功能](/help/assets/overview.md)
->* [支持的文件格式和MIME类型](file-format-support.md)
+>* [支援的檔案格式和MIME型別](file-format-support.md)
 >* [资产微服务概述](asset-microservices-overview.md)
 

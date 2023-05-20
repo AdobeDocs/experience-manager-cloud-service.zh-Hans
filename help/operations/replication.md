@@ -21,11 +21,11 @@ Adobe Experience Manager as a Cloud Service 使用 [Sling 内容分发](https://
 
 >[!NOTE]
 >
->如果您对批量发布内容感兴趣，请使用 [发布内容树工作流](#publish-content-tree-workflow).
->此工作流步骤专门为Cloud Service构建，可高效处理大负载。
->不建议自行构建批量发布自定义代码。
->如果您因任何原因需要进行自定义，则可以使用现有的工作流API触发此工作流/工作流步骤。
->虽然只发布需要发布的内容始终是一种好做法，并且在必要时不要尝试发布大量内容时要保持谨慎，但通过发布内容树工作流可以发送的内容数量没有限制。
+>如果您有興趣大量發佈內容，請使用 [發佈內容樹狀工作流程](#publish-content-tree-workflow).
+>此工作流程步驟是專為Cloud Service而建置，可有效處理大型裝載。
+>不建議建置您自己的大量發佈自訂程式碼。
+>如果您由於任何原因確實需要自訂，您可以使用現有的工作流程API來觸發此工作流程/工作流程步驟。
+>雖然只發佈需要發佈的內容永遠是好的做法，但在必要時儘量不要嘗試發佈大量內容時應謹慎，您可以透過發佈內容樹狀工作流程傳送多少內容沒有限制。
 
 ### 快速取消/发布 – 计划取消/发布 {#publish-unpublish}
 
@@ -70,7 +70,7 @@ Adobe Experience Manager as a Cloud Service 使用 [Sling 内容分发](https://
    ![流程步骤](/help/operations/assets/processstep.png)
 
 1. 单击流中的“流程”步骤，然后按扳手图标选择&#x200B;**配置**
-1. 单击&#x200B;**流程**&#x200B;选项卡并从下拉列表中选择 `Publish Content Tree`，然后检查 **处理程序高级** 复选框
+1. 单击&#x200B;**流程**&#x200B;选项卡并从下拉列表中选择 `Publish Content Tree`，然後檢查 **處理常式前進** 核取方塊
 
    ![树激活](/help/operations/assets/newstep.png)
 
@@ -92,7 +92,7 @@ Adobe Experience Manager as a Cloud Service 使用 [Sling 内容分发](https://
 * `enableVersion`（布尔值，默认： `true`）。 此参数可确定复制时是否创建了新版本。
 * `agentId`（字符串值，默认表示仅使用发布代理）。 建议明确说明 agentId；例如，将其设置为值：发布。 将代理设置为 `preview` 将发布到预览服务
 * `filters`（字符串值，默认表示激活所有路径）。 可用值包括：
-   * `onlyActivated`  — 仅激活已（已）激活的页面。 充当一种重新激活的形式。
+   * `onlyActivated`  — 僅啟動（已）已啟動的頁面。 作為重新啟用的一種形式。
    * `onlyModified`  – 仅激活已激活且修改日期晚于激活日期的路径。
    * 上面可以用管道字符“|”进行“或”操作。 例如：`onlyActivated|onlyModified`。
 

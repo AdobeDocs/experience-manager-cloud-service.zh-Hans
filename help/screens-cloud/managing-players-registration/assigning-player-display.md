@@ -1,40 +1,40 @@
 ---
-title: 在屏幕中将播放器分配给显示屏as a Cloud Service
-description: 本页介绍如何在Screens中将播放器分配给显示屏as a Cloud Service。
+title: 將播放器指派給Screensas a Cloud Service的顯示器
+description: 本頁面說明如何將播放器指派給Screensas a Cloud Service的顯示器。
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 在屏幕中将播放器分配给显示屏as a Cloud Service {#assign-player-displays-screens-cloud}
+# 將播放器指派給Screensas a Cloud Service的顯示器 {#assign-player-displays-screens-cloud}
 
-项目设置完成后，必须将播放器分配给显示屏来查看内容。
+專案設定完成後，您必須將播放器指派給顯示區，才能檢視內容。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何在Screens服务提供商中将播放器分配给显示屏。 这些是内容开始在Screensas a Cloud Service播放器中播放之前的最后强制步骤。
+本檔案可協助您瞭解如何將播放器指派給Screens Services Provider中的顯示區。 這些是內容在Screensas a Cloud Service播放器開始播放之前的最後必要步驟。
 
-## 将播放器分配给显示屏的步骤 {#create-display}
+## 將播放器指派給顯示的步驟 {#create-display}
 
-注册播放器后，必须将播放器分配给必要的显示，以便内容开始在播放器中播放。
+註冊您的播放器後，必須將播放器指派給所需的顯示，以便您的內容開始在播放器中播放。
 
-按照以下步骤将播放器分配给显示屏：
+請依照下列步驟，將播放器指派給顯示區：
 
-1. 选择 **播放器** 在左侧导航面板的“网络管理面板”下，选择播放器。 单击 **分配显示**
+1. 選取 **播放器** 在左側導覽面板的「網路管理面板」下，選取播放器。 按一下 **指派顯示區**
 
    ![图像](/help/screens-cloud/assets/player/register-player7.png)
 
-1. **分配显示屏** 对话框。 从列表中选择显示内容并单击 **选择**.
+1. **指派顯示區** 對話方塊開啟。 從清單中選取顯示區，然後按一下 **選取**.
 
    ![图像](/help/screens-cloud/assets/player/register-player8.png)
 
-## 内容播放 {#content-playback}
+## 內容播放 {#content-playback}
 
-在您为播放器分配了显示屏（如上一节中所示）后，您将在 **分配的显示** 的上界。
+將顯示指派給播放器後（如上一節所示），您將會看到指派的顯示位於 **已指派的顯示區** 面板。
 
-现在，显示内容已分配给您的播放器，并且渠道将开始播放内容。 播放器现在应该下载并开始播放内容。 **恭喜！**
+現在，顯示區已指派給您的播放器，且頻道將開始播放內容。 播放器現在應該下載並開始播放內容。 **恭喜！**
 
 ![图像](/help/screens-cloud/assets/player/output.gif)

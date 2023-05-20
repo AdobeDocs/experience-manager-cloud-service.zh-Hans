@@ -1,21 +1,21 @@
 ---
-title: 在内容传输工具中查看迁移集的日志（旧版）
-description: 在内容传输工具中查看迁移集的日志
+title: 在內容轉移工具（舊版）中檢視移轉集記錄
+description: 在內容轉移工具中檢視移轉集記錄
 hide: true
 hidefromtoc: true
 exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
-# 查看迁移集的日志（旧版） {#view-logs-content-transfer-tool}
+# 檢視移轉集記錄（舊版） {#view-logs-content-transfer-tool}
 
-完成每个步骤（提取和摄取）后，检查日志并查找错误。  任何错误都应立即通过处理报告的问题或联系Adobe支持部门来解决。
+完成每個步驟（擷取和擷取）後，請檢查記錄檔並尋找錯誤。  应立即通过处理所报告的问题或联系 Adobe 支持部门而纠正任何错误。
 
-## 查看日志的步骤 {#viewing-logs}
+## 檢視記錄檔的步驟 {#viewing-logs}
 
 您可以从&#x200B;*概述*&#x200B;页面查看现有迁移集的日志。应遵循以下步骤：
 

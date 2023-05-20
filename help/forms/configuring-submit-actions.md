@@ -1,31 +1,31 @@
 ---
-title: 如何为自适应表单配置提交操作
-description: 自适应表单提供多个提交操作。 提交操作定义提交后如何处理自适应表单。 您可以使用内置的提交操作或创建自己的提交操作。
+title: 如何設定最適化表單的提交動作
+description: 最適化表單提供多個提交動作。 提交動作會定義在提交後如何處理最適化表單。 您可以使用內建的提交動作或建立自己的提交動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7a608304dc93e53815b488de4087f26e346be4b5
+source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
 workflow-type: tm+mt
 source-wordcount: '3133'
 ht-degree: 2%
 
 ---
 
-# 自适应表单提交操作 {#configuring-the-submit-action}
+# 最適化表單提交動作 {#configuring-the-submit-action}
 
-提交操作在用户单击 **[!UICONTROL 提交]** 按钮。 自适应Forms提供了一些开箱即用的提交操作。 现成的“提交操作”包括：
+當使用者按一下 **[!UICONTROL 提交]** 最適化表單上的按鈕。 最適化Forms提供一些立即可用的提交動作。 可立即使用的「提交動作」包括：
 
-* [提交到REST端点](#submit-to-rest-endpoint)
+* [提交至REST端點](#submit-to-rest-endpoint)
 * [发送电子邮件](#send-email)
 * [使用表单数据模型提交](#submit-using-form-data-model)
-* [调用AEM Workflow](#invoke-an-aem-workflow)
+* [叫用AEM工作流程](#invoke-an-aem-workflow)
 * [提交到 SharePoint](#submit-to-sharedrive)
 * [提交到 OneDrive](#submit-to-onedrive)
 * [提交到 Azure Blob Storage](#azure-blob-storage)
 
-您还可以 [扩展默认提交操作](custom-submit-action-form.md) 以创建您自己的提交操作。
+您也可以 [擴充預設提交動作](custom-submit-action-form.md) 以建立您自己的提交動作。
 
-您可以在中配置提交操作 **[!UICONTROL 提交]** 部分（位于侧栏中）。
+您可以在以下位置設定提交動作： **[!UICONTROL 提交]** 側邊欄中適用性表單容器屬性的區段。
 
-![配置提交操作](assets/submission.png)
+![設定提交動作](assets/submission.png)
 
 
 <!-- [!NOTE]
@@ -50,69 +50,69 @@ ht-degree: 2%
 
 -->
 
-## 提交到REST端点 {#submit-to-rest-endpoint}
+## 提交至REST端點 {#submit-to-rest-endpoint}
 
-使用 **[!UICONTROL 提交到REST端点]** 将提交的数据发布到rest URL的操作。 URL可以是内部（渲染表单的服务器）或外部服务器。
+使用 **[!UICONTROL 提交至REST端點]** 將已提交的資料發佈至rest URL的動作。 URL可以是內部（呈現表單的伺服器）或外部伺服器。
 
-要将数据发布到内部服务器，请提供资源的路径。 数据被发布为资源的路径。 例如，/content/restEndPoint。 对于此类post请求，使用提交请求的身份验证信息。
+若要將資料發佈到內部伺服器，請提供資源的路徑。 資料會張貼在資源的路徑中。 例如，/content/restEndPoint。 對於此類貼文請求，會使用提交請求的驗證資訊。
 
-要向外部服务器发布数据，请提供URL。 URL的格式为 `https://host:port/path_to_rest_end_point`. 确保将路径配置为匿名处理POST请求。
+若要將資料發佈至外部伺服器，請提供URL。 URL的格式為 `https://host:port/path_to_rest_end_point`. 請確定您設定匿名處理POST請求的路徑。
 
-![作为感谢页面参数传递的字段值的映射](assets/post-enabled-actionconfig.png)
+![以「感謝您」頁面引數傳遞的欄位值對應](assets/post-enabled-actionconfig.png)
 
-在上面的示例中，用户在 `textbox` 使用参数捕获 `param1`. 用于发布使用捕获的数据的语法 `param1` 为：
+在上述範例中，使用者輸入資訊於 `textbox` 是使用引數擷取 `param1`. 張貼使用擷取之資料的語法 `param1` 為：
 
 `String data=request.getParameter("param1");`
 
-同样，用于发布XML数据和附件的参数包括 `dataXml` 和 `attachments`.
+同樣地，您用於公佈XML資料和附件的引數為 `dataXml` 和 `attachments`.
 
-例如，在脚本中使用这两个参数将数据解析到rest端点。 您可以使用以下语法来存储和解析数据：
+例如，您可以在指令碼中使用這兩個引數，將資料剖析至其餘端點。 您使用下列語法來儲存及剖析資料：
 
 `String data=request.getParameter("dataXml");`
 `String att=request.getParameter("attachments");`
 
-在此示例中， `data` 存储XML数据，以及 `att` 存储附件数据。
+在此範例中， `data` 儲存XML資料，以及 `att` 儲存附件資料。
 
-此 **[!UICONTROL 提交到REST端点]** 提交操作在HTTPGET请求过程中，将表单中填写的数据提交到配置的确认页面。 您可以添加要请求的字段的名称。 请求的格式为：
+此 **[!UICONTROL 提交至REST端點]** 提交動作會將表單中填入的資料提交至已設定的確認頁面，作為HTTPGET請求的一部分。 您可以新增要請求的欄位名稱。 請求的格式為：
 
 `{fieldName}={request parameter name}`
 
-如下图所示， `param1` 和 `param2` 作为参数传递，其值复制自 **文本框** 和 **numericbox** 用于执行下一个操作的字段。
+如下圖所示， `param1` 和 `param2` 會以引數形式傳遞，其值複製自 **文字方塊** 和 **numericbox** 下一個動作的欄位。
 
-![配置Rest端点提交操作](assets/action-config.png)
+![設定Rest端點提交動作](assets/action-config.png)
 
-您还可以 **[!UICONTROL 启用POST请求]** 并提供用于发布请求的URL。 要将数据提交到托管表单的AEM服务器，请使用与AEM服务器的根路径对应的相对路径。 例如, `/content/forms/af/SampleForm.html`. 要向任何其他服务器提交数据，请使用绝对路径。
+您也可以 **[!UICONTROL 啟用POST請求]** 並提供一個URL以張貼請求。 若要將資料提交至託管表單的AEM伺服器，請使用與AEM伺服器根路徑對應的相對路徑。 例如， `/content/forms/af/SampleForm.html`. 若要將資料提交至任何其他伺服器，請使用絕對路徑。
 
 >[!NOTE]
 >
->要在REST URL中将这些字段作为参数传递，所有字段必须具有不同的元素名称，即使这些字段位于不同的面板上也是如此。
+>若要在REST URL中將欄位作為引數傳遞，所有欄位都必須有不同的元素名稱，即使欄位位於不同的面板上也是如此。
 
 ## 发送电子邮件 {#send-email}
 
-您可以使用 **[!UICONTROL 发送电子邮件]** 提交操作可在成功提交表单时向一个或多个收件人发送电子邮件。 生成的电子邮件可以包含预定义格式的表单数据。 例如，在以下模板中，将从提交的表单数据中检索客户名称、送货地址、省/直辖市/自治区名称和邮政编码。
+您可以使用 **[!UICONTROL 傳送電子郵件]** 提交動作可在成功提交表單時傳送電子郵件給一或多個收件者。 產生的電子郵件可以包含預先定義的格式表單資料。 例如，在下列範本中，系統會從提交的表單資料中擷取客戶名稱、送貨地址、州名和郵遞區號。
 
     ```
     
-    ${customer_Name}，您好：
+    ${customer_Name}，您好！
     
-    以下内容设置为您的默认送货地址：
+    下列專案設定為您的預設送貨地址：
     ${customer_Name}，
     ${customer_Shipping_Address}，
     ${customer_State}，
     ${customer_ZIPCode}
     
-    致敬，
+    祝順心，
     WKND
     
     ```
 
 >[!NOTE]
 >
-> * 所有表单字段必须具有不同的元素名称，即使这些字段位于自适应表单的不同面板上也是如此。
-> * AEMas a Cloud Service要求对出站邮件进行加密。 默认情况下禁用出站电子邮件。 要激活它，请将支持票证提交到 [请求访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+> * 所有表單欄位都必須有不同的元素名稱，即使這些欄位放在最適化表單的不同面板上亦然。
+> * AEMas a Cloud Service需要對外郵件進行加密。 預設會停用傳出電子郵件。 若要啟用支援服務單，請將支援服務單提交至 [請求存取權](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 
-您还可以将附件和记录文档(DoR)包含到电子邮件中。 启用 **[!UICONTROL 附加记录文档]** 选项，配置自适应表单以生成记录文档(DoR)。 您可以启用选项以从自适应表单属性生成记录文档。
+您也可以將附件和記錄檔案(DoR)加入電子郵件中。 若要啟用 **[!UICONTROL 附加記錄檔案]** 選項，設定最適化表單以產生記錄檔案(DoR)。 您可以啟用從最適化表單屬性產生記錄檔案的選項。
 
 
 
@@ -132,9 +132,9 @@ For information about how to configure the Submit to forms workflow Submit Actio
 
 ## 使用表单数据模型提交 {#submit-using-form-data-model}
 
-此 **[!UICONTROL 使用表单数据模型提交]** 提交操作将表单数据模型中指定数据模型对象的已提交自适应表单数据写入其数据源。 在配置提交操作时，您可以选择提交的数据要写回其数据源的数据模型对象。
+此 **[!UICONTROL 使用表單資料模型提交]** 提交動作會將表單資料模型中指定資料模型物件的已提交調適型表單資料寫入其資料來源。 在設定「提交」動作時，您可以選擇資料模型物件，將其提交的資料寫回其資料來源。
 
-此外，您还可以使用表单数据模型和记录文档(DoR)将表单附件提交到数据源。 有关表单数据模型的信息，请参阅 [[!DNL AEM Forms] 数据集成](data-integration.md).
+此外，您可以使用表單資料模型和記錄檔案(DoR)將表單附件提交至資料來源。 如需表單資料模型的相關資訊，請參閱 [[!DNL AEM Forms] 資料整合](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -143,241 +143,241 @@ The **Forms Portal Submit Action** option makes form data available through an [
 
 For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
 
-## 调用AEM Workflow {#invoke-an-aem-workflow}
+## 叫用AEM工作流程 {#invoke-an-aem-workflow}
 
-此 **[!UICONTROL 调用AEM Workflow]** 提交操作将自适应表单与 [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 提交表单时，关联的工作流会在创作实例上自动启动。 可将数据文件、附件和记录文档保存到工作流的有效负荷位置或变量。 如果工作流标记为外部数据存储并配置为外部数据存储，则只有变量选项可用。 您可以从可用于工作流模型的变量列表中进行选择。 如果工作流在稍后阶段标记为外部数据存储，而不是在创建工作流时标记为外部数据存储，则请确保已设置所需的变量配置。
+此 **[!UICONTROL 叫用AEM工作流程]** 提交動作會將最適化表單與以下專案建立關聯： [AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 提交表單時，相關工作流程會在作者執行個體上自動啟動。 您可以將資料檔案、附件和記錄檔案儲存至工作流程的裝載位置或變數。 如果工作流程標示為外部資料儲存並設定為外部資料儲存，則只有變數選項可用。 您可以從工作流程模型可用的變數清單中選取。 如果工作流程在稍後階段而非建立工作流程時標籤為外部資料儲存，則請確保必要的變數設定已準備就緒。
 
-提交操作将以下内容置于工作流的有效负荷位置，如果工作流标记为外部数据存储，则置于变量：
+提交動作會將下列專案放在工作流程的裝載位置，如果工作流程標示為外部資料儲存，則放入變數：
 
-* **数据文件**：它包含提交到自适应表单的数据。 您可以使用 **[!UICONTROL 数据文件路径]** 选项，用于指定文件的名称以及相对于有效负荷的文件路径。 例如， `/addresschange/data.xml` path创建一个名为的文件夹 `addresschange` 并将其相对于有效负荷放置。 您也可仅指定 `data.xml` 只发送已提交的数据而不创建文件夹层次结构。 如果工作流标记为外部数据存储，请使用变量选项，并从工作流模型的可用变量列表中选择变量。
+* **資料檔案**：此變數包含提交至最適化表單的資料。 您可以使用 **[!UICONTROL 資料檔案路徑]** 選項來指定檔案的名稱及相對於承載的檔案路徑。 例如， `/addresschange/data.xml` path會建立名為的資料夾 `addresschange` 並將其相對於承載放置。 您也可僅指定 `data.xml` 只傳送已提交的資料，而不建立資料夾階層。 如果工作流程已標籤為外部資料儲存，請使用變數選項，並從工作流程模型可用的變數清單中選取變數。
 
-* **附件**：您可以使用 **[!UICONTROL 附件路径]** 选项，用于指定用于存储已上载到自适应表单的附件的文件夹名称。 将创建相对于有效负荷的文件夹。 如果工作流标记为外部数据存储，请使用变量选项，并从工作流模型的可用变量列表中选择变量。
+* **附件**：您可以使用 **[!UICONTROL 附件路徑]** 用於指定資料夾名稱以儲存已上傳至最適化表單的附件。 資料夾會相對於承載建立。 如果工作流程已標籤為外部資料儲存，請使用變數選項，並從工作流程模型可用的變數清單中選取變數。
 
-* **记录文档**：它包含为自适应表单生成的记录文档。 您可以使用 **[!UICONTROL 记录文档路径]** 用于指定记录文档文件的名称以及相对于有效负荷的文件路径的选项。 例如， `/addresschange/DoR.pdf` path创建一个名为的文件夹 `addresschange` 相对于有效负荷，并放置 `DoR.pdf` 相对于有效负荷。 您也可仅指定 `DoR.pdf` 仅保存记录文档，而不创建文件夹层次结构。 如果工作流标记为外部数据存储，请使用变量选项，并从工作流模型的可用变量列表中选择变量。
+* **記錄檔案**：它包含為最適化表單產生的記錄檔案。 您可以使用 **[!UICONTROL 記錄檔案路徑]** 選項以指定記錄檔案檔案的名稱以及相對於承載的檔案路徑。 例如， `/addresschange/DoR.pdf` path會建立名為的資料夾 `addresschange` 相對於裝載，並放置 `DoR.pdf` 相對於裝載。 您也可僅指定 `DoR.pdf` 只儲存記錄檔案，而不建立資料夾階層。 如果工作流程已標籤為外部資料儲存，請使用變數選項，並從工作流程模型可用的變數清單中選取變數。
 
-使用之前 **[!UICONTROL 调用AEM Workflow]** 提交操作为配置以下 **[!UICONTROL AEM DS设置服务]** 配置：
+使用之前 **[!UICONTROL 叫用AEM工作流程]** 提交動作為設定以下內容 **[!UICONTROL AEM DS設定服務]** 設定：
 
-* **[!UICONTROL 处理服务器URL]**：处理服务器是触发Forms或AEM Workflow的服务器。 这可以与AEM创作实例或其他服务器的URL相同。
+* **[!UICONTROL 處理伺服器URL]**：處理伺服器是觸發Forms或AEM工作流程的伺服器。 這可以與AEM編寫執行個體或其他伺服器的URL相同。
 
-* **[!UICONTROL 处理服务器用户名]**：工作流用户的用户名
+* **[!UICONTROL 處理伺服器使用者名稱]**：工作流程使用者的使用者名稱
 
-* **[!UICONTROL 处理服务器密码]**：工作流用户的密码
+* **[!UICONTROL 處理伺服器密碼]**：工作流程使用者密碼
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-此 **[!UICONTROL 提交到SharePoint]** 提交操作可将自适应表单与Microsoft® SharePoint存储相关联。 您可以将表单数据文件、附件或记录文档提交到连接的Microsoft® Sharepoint存储。 要使用 **[!UICONTROL 提交到SharePoint]** 以自适应表单提交操作：
+此 **[!UICONTROL 提交至SharePoint]** 提交動作會連線最適化表單與Microsoft® SharePoint儲存體。 您可以將表單資料檔案、附件或記錄檔案提交至連線的Microsoft® Sharepoint儲存體。 若要使用 **[!UICONTROL 提交至SharePoint]** 以最適化表單提交動作：
 
-1. [创建SharePoint配置](#create-a-sharepoint-configuration-create-sharepoint-configuration)：用于将AEM Forms连接到您的Microsoft® Sharepoint存储。
-2. [在自适应表单中使用提交到SharePoint提交操作](#use-sharepoint-configuartion-in-af)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
+1. [建立SharePoint設定](#create-a-sharepoint-configuration-create-sharepoint-configuration)：它會將AEM Forms連線至您的Microsoft® Sharepoint儲存體。
+2. [在最適化表單中使用提交至SharePoint提交動作](#use-sharepoint-configuartion-in-af)：它將您的最適化表單連線到已設定的Microsoft® SharePoint。
 
-### 创建SharePoint配置 {#create-sharepoint-configuration}
+### 建立SharePoint設定 {#create-sharepoint-configuration}
 
-要将AEM Forms连接到Microsoft® Sharepoint存储，请执行以下操作：
+若要將AEM Forms連線至您的Microsoft® Sharepoint儲存體：
 
-1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. 一旦您选择 **[!UICONTROL Microsoft® SharePoint]**，您将被重定向到 **[!UICONTROL SharePoint浏览器]**.
-1. 选择 **配置容器**. 该配置将存储在选定的配置容器中。
-1. 单击&#x200B;**[!UICONTROL 创建]**。此时将显示SharePoint配置向导。
-   ![Sharepoint配置](/help/forms/assets/sharepoint_configuration.png)
-1. 指定 **[!UICONTROL 标题]**， **[!UICONTROL 客户端ID]**， **[!UICONTROL 客户端密码]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft®文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft® Azure门户访问您的应用程序。
-   * 在Microsoft® Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` 使用创作实例的URL。
-   * 添加API权限 `offline_access` 和 `Sites.Manage.All` 以提供读/写权限。
-   * 使用OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` 使用 `tenant-id` 从Microsoft® Azure门户访问您的应用程序。
-
-   >[!NOTE]
-   >
-   > 此 **客户端密码** 字段是必填字段还是可选字段取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密码，则必须提供客户端密码。
-
-1. 单击 **[!UICONTROL Connect]**. 成功连接后， `Connection Successful` 出现消息。
-
-1. 现在，选择 **SharePoint站点** > **文档库** > **SharePoint文件夹**，以保存数据。
+1. 前往您的 **AEM Forms Author** 執行個體> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. 一旦您選取 **[!UICONTROL Microsoft® SharePoint]**，您便會被重新導向至 **[!UICONTROL SharePoint瀏覽器]**.
+1. 選取 **設定容器**. 設定會儲存在選取的設定容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。SharePoint設定精靈隨即出現。
+   ![Sharepoint設定](/help/forms/assets/sharepoint_configuration.png)
+1. 指定 **[!UICONTROL 標題]**， **[!UICONTROL 使用者端ID]**， **[!UICONTROL 使用者端密碼]** 和 **[!UICONTROL OAuth URL]**. 如需如何為OAuth URL擷取使用者端ID、使用者端密碼、租使用者ID的相關資訊，請參閱 [Microsoft®檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以擷取 `Client ID` 和 `Client Secret` 從Microsoft® Azure入口網站存取您的應用程式。
+   * 在Microsoft® Azure入口網站中，將重新導向URI新增為 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` ，並使用您的Author例項的URL。
+   * 新增API許可權 `offline_access` 和 `Sites.Manage.All` 以提供讀取/寫入許可權。
+   * 使用OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` 使用 `tenant-id` 從Microsoft® Azure入口網站存取您的應用程式。
 
    >[!NOTE]
    >
-   >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 在选定的SharePoint站点中存在。
-   >* 创建文件夹为 `forms-ootb-storage-adaptive-forms-submission`，如果列表中尚未出现 `Documents` 选定SharePoint站点的库，方法是单击 **创建文件夹**.
+   > 此 **使用者端密碼** 欄位是必要欄位或選用欄位，視您的Azure Active Directory應用程式設定而定。 如果您的應用程式設定為使用使用者端密碼，則必須提供使用者端密碼。
 
+1. 按一下 **[!UICONTROL Connect]**. 成功連線時， `Connection Successful` 訊息便會出現。
 
-现在，您可以在自适应表单中将此SharePoint Sites配置用于提交操作。
-
-### 在自适应表单中使用SharePoint配置 {#use-sharepoint-configuartion-in-af}
-
-您可以在自适应表单中使用创建的SharePoint配置，将数据或生成的记录文档保存在SharePoint文件夹中。 执行以下步骤以在自适应表单中使用SharePoint存储配置，如下所示：
-1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
+1. 現在，選取 **SharePoint網站** > **檔案庫** > **SharePoint資料夾**，以儲存資料。
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 自适应表单，您已在该表单中创建了SharePoint存储空间。
-   > * 如果否 [!UICONTROL 配置容器] 选择，然后全局 [!UICONTROL 存储配置] 文件夹出现在“提交操作”属性窗口中。
+   >* 依預設， `forms-ootb-storage-adaptive-forms-submission` 出現在選取的SharePoint網站。
+   >* 建立資料夾為 `forms-ootb-storage-adaptive-forms-submission`，如果尚未出現在 `Documents` 所選SharePoint網站的程式庫，方法是按一下 **建立資料夾**.
 
 
-1. 选择 **提交操作** 作为 **[!UICONTROL 提交到SharePoint]**.
+現在，您可以使用此SharePoint Sites設定，在最適化表單中執行提交動作。
+
+### 在最適化表單中使用SharePoint設定 {#use-sharepoint-configuartion-in-af}
+
+您可以在調適型表單中使用已建立的SharePoint設定，將資料或產生的記錄檔案儲存在SharePoint資料夾中。 執行以下步驟，在最適化表單中使用SharePoint儲存體設定，如下所示：
+1. 建立 [最適化表單](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 選取相同的 [!UICONTROL 設定容器] 最適化表單的開頭，您已在其中建立SharePoint儲存空間。
+   > * 若否 [!UICONTROL 設定容器] 選取「 」，然後全域 [!UICONTROL 儲存設定] 資料夾會出現在「提交動作」屬性視窗中。
+
+
+1. 選取 **提交動作** 作為 **[!UICONTROL 提交至SharePoint]**.
    ![SharepointGIF](/help/forms/assets/sharedrive-video.gif)
-1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
-1. 单击 **[!UICONTROL 保存]** 以保存提交设置。
+1. 選取 **[!UICONTROL 儲存設定]**，您想要儲存資料的位置。
+1. 按一下 **[!UICONTROL 儲存]** 以儲存「提交」設定。
 
-提交表单时，数据将保存在指定的Microsoft® Sharepoint存储中。
-要保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
+提交表單時，資料會儲存在指定的Microsoft® Sharepoint儲存體中。
+要儲存資料的資料夾結構為 `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-此 **[!UICONTROL 提交到OneDrive]** 提交操作将自适应表单与Microsoft® OneDrive连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Microsoft® OneDrive存储。 要使用 [!UICONTROL 提交到OneDrive] 以自适应表单提交操作：
+此 **[!UICONTROL 提交至OneDrive]** 提交動作會將最適化表單與Microsoft® OneDrive連線。 您可以將表單資料、檔案、附件或記錄檔案提交至已連線的Microsoft® OneDrive儲存體。 若要使用 [!UICONTROL 提交至OneDrive] 以最適化表單提交動作：
 
-1. [创建OneDrive配置](#create-a-onedrive-configuration-create-onedrive-configuration)：用于将AEM Forms连接到您的Microsoft® OneDrive存储。
-2. [在自适应表单中使用提交到OneDrive提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：它将您的自适应表单连接到配置的Microsoft® OneDrive。
+1. [建立OneDrive設定](#create-a-onedrive-configuration-create-onedrive-configuration)：它會將AEM Forms連線至您的Microsoft® OneDrive儲存空間。
+2. [在最適化表單中使用提交至OneDrive提交動作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：它將您的最適化表單連線到設定的Microsoft® OneDrive。
 
-### 创建OneDrive配置 {#create-onedrice-configuration}
+### 建立OneDrive設定 {#create-onedrice-configuration}
 
-要将AEM Forms连接到Microsoft® OneDrive存储，请执行以下操作：
+若要將AEM Forms連線至您的Microsoft® OneDrive儲存體：
 
-1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
-1. 一旦您选择 **[!UICONTROL Microsoft® OneDrive]**，您将被重定向到 **[!UICONTROL OneDrive浏览器]**.
-1. 选择 **配置容器**. 该配置将存储在选定的配置容器中。
-1. 单击&#x200B;**[!UICONTROL 创建]**。出现OneDrive配置向导。
+1. 前往您的 **AEM Forms Author** 執行個體> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
+1. 一旦您選取 **[!UICONTROL Microsoft® OneDrive]**，您便會被重新導向至 **[!UICONTROL OneDrive瀏覽器]**.
+1. 選取 **設定容器**. 設定會儲存在選取的設定容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。出現OneDrive設定精靈。
 
-   ![OneDrive配置屏幕](/help/forms/assets/onedrive-configuration.png)
+   ![OneDrive設定畫面](/help/forms/assets/onedrive-configuration.png)
 
-1. 指定 **[!UICONTROL 标题]**， **[!UICONTROL 客户端ID]**， **[!UICONTROL 客户端密码]** 和 **[!UICONTROL OAuth URL]**. 有关如何检索OAuth URL的客户端ID、客户端密钥和租户ID的信息，请参阅 [Microsoft®文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * 您可以检索 `Client ID` 和 `Client Secret` 从Microsoft® Azure门户访问您的应用程序。
-   * 在Microsoft® Azure门户中，将重定向URI添加为 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Replace `[author-instance]` 使用创作实例的URL。
-   * 添加API权限 `offline_access` 和 `Files.ReadWrite.All` 以提供读/写权限。
-   * 使用OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` 使用 `tenant-id` 从Microsoft® Azure门户访问您的应用程序。
-
-   >[!NOTE]
-   >
-   > 此 **客户端密码** 字段是必填字段还是可选字段取决于您的Azure Active Directory应用程序配置。 如果您的应用程序配置为使用客户端密码，则必须提供客户端密码。
-
-1. 单击 **[!UICONTROL Connect]**. 成功连接后， `Connection Successful` 出现消息。
-
-1. 现在，选择 **[!UICONTROL OneDrive容器]** > **[OneDrive文件夹]**  以保存数据。
+1. 指定 **[!UICONTROL 標題]**， **[!UICONTROL 使用者端ID]**， **[!UICONTROL 使用者端密碼]** 和 **[!UICONTROL OAuth URL]**. 如需如何為OAuth URL擷取使用者端ID、使用者端密碼、租使用者ID的相關資訊，請參閱 [Microsoft®檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以擷取 `Client ID` 和 `Client Secret` 從Microsoft® Azure入口網站存取您的應用程式。
+   * 在Microsoft® Azure入口網站中，將重新導向URI新增為 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Replace `[author-instance]` ，並使用您的Author例項的URL。
+   * 新增API許可權 `offline_access` 和 `Files.ReadWrite.All` 以提供讀取/寫入許可權。
+   * 使用OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` 使用 `tenant-id` 從Microsoft® Azure入口網站存取您的應用程式。
 
    >[!NOTE]
    >
-   >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 存在于OneDrive容器中。
-   > * 创建文件夹为 `forms-ootb-storage-adaptive-forms-submission`，如果尚未出现，请单击 **创建文件夹**.
+   > 此 **使用者端密碼** 欄位是必要欄位或選用欄位，視您的Azure Active Directory應用程式設定而定。 如果您的應用程式設定為使用使用者端密碼，則必須提供使用者端密碼。
 
+1. 按一下 **[!UICONTROL Connect]**. 成功連線時， `Connection Successful` 訊息便會出現。
 
-现在，您可以在自适应表单中将此OneDrive存储配置用于提交操作。
-
-### 在自适应表单中使用OneDrive配置 {#use-onedrive-configuartion-in-af}
-
-您可以在自适应表单中使用创建的OneDrive存储配置，将数据或生成的记录文档保存在OneDrive文件夹中。 执行以下步骤，在自适应表单中使用OneDrive存储配置，如下所示：
-1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
+1. 現在，選取 **[!UICONTROL OneDrive容器]** > **[OneDrive資料夾]**  以儲存資料。
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 自适应表单，您已在该表单中创建了OneDrive存储。
-   > * 如果否 [!UICONTROL 配置容器] 选择，然后全局 [!UICONTROL 存储配置] 文件夹出现在“提交操作”属性窗口中。
+   >* 依預設， `forms-ootb-storage-adaptive-forms-submission` 存在於OneDrive容器中。
+   > * 建立資料夾為 `forms-ootb-storage-adaptive-forms-submission`，如果尚未出現，請按一下 **建立資料夾**.
 
 
-1. 选择 **提交操作** 作为 **[!UICONTROL 提交到OneDrive]**.
+現在，您可以使用此OneDrive儲存體設定在最適化表單中執行提交動作。
+
+### 在最適化表單中使用OneDrive設定 {#use-onedrive-configuartion-in-af}
+
+您可以使用在最適化表單中建立的OneDrive儲存體設定，將資料或產生的記錄檔案儲存到OneDrive資料夾中。 執行以下步驟，在最適化表單中使用OneDrive儲存體設定：
+1. 建立 [最適化表單](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 選取相同的 [!UICONTROL 設定容器] 最適化表單，您已在該表單中建立OneDrive儲存空間。
+   > * 若否 [!UICONTROL 設定容器] 選取「 」，然後全域 [!UICONTROL 儲存設定] 資料夾會出現在「提交動作」屬性視窗中。
+
+
+1. 選取 **提交動作** 作為 **[!UICONTROL 提交至OneDrive]**.
    ![OneDriveGIF](/help/forms/assets/onedrive-video.gif)
-1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
-1. 单击 **[!UICONTROL 保存]** 以保存提交设置。
+1. 選取 **[!UICONTROL 儲存設定]**，您想要儲存資料的位置。
+1. 按一下 **[!UICONTROL 儲存]** 以儲存「提交」設定。
 
-提交表单时，数据将保存在指定的Microsoft® OneDrive存储中。
-要保存数据的文件夹结构为 `/folder_name/form_name/year/month/date/submission_id/data`.
+提交表單時，資料會儲存在指定的Microsoft® OneDrive儲存體中。
+要儲存資料的資料夾結構為 `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## 提交到 Azure Blob Storage {#submit-to-azure-blob-storage}
 
-此 **[!UICONTROL 提交到Azure Blob存储]**  提交操作可将自适应表单与Microsoft® Azure门户连接。 您可以将表单数据、文件、附件或记录文档提交到连接的Azure存储容器。 要对Azure Blob存储使用提交操作，请执行以下操作：
+此 **[!UICONTROL 提交至Azure Blob儲存體]**  提交動作會將最適化表單與Microsoft® Azure入口網站連線。 您可以將表單資料、檔案、附件或記錄檔案提交至已連線的Azure儲存體容器。 若要對Azure Blob儲存體使用提交動作：
 
-1. [创建Azure Blob存储容器](#create-a-azure-blob-storage-container-create-azure-configuration)：用于将AEM Forms连接到Azure Storage容器。
-2. [在自适应表单中使用Azure存储配置 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：它将您的自适应表单连接到配置的Azure存储容器。
+1. [建立Azure Blob儲存體容器](#create-a-azure-blob-storage-container-create-azure-configuration)：它會將AEM Forms連線至Azure儲存體容器。
+2. [在最適化表單中使用Azure儲存體設定 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：它將您的最適化表單連線到已設定的Azure儲存體容器。
 
-### 创建Azure Blob存储容器 {#create-azure-configuration}
+### 建立Azure Blob儲存體容器 {#create-azure-configuration}
 
-要将AEM Forms连接到Azure Storage容器，请执行以下操作：
-1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure存储]**.
-1. 一旦您选择 **[!UICONTROL Azure存储]**，您将被重定向到 **[!UICONTROL Azure存储浏览器]**.
-1. 选择 **配置容器**. 该配置将存储在选定的配置容器中。
-1. 单击&#x200B;**[!UICONTROL 创建]**。将显示“创建Azure存储配置”向导。
+若要將AEM Forms連線至您的Azure儲存體容器：
+1. 前往您的 **AEM Forms Author** 執行個體> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure儲存體]**.
+1. 一旦您選取 **[!UICONTROL Azure儲存體]**，您便會被重新導向至 **[!UICONTROL Azure儲存體瀏覽器]**.
+1. 選取 **設定容器**. 設定會儲存在選取的設定容器中。
+1. 单击&#x200B;**[!UICONTROL 创建]**。便會顯示「建立Azure儲存體設定」精靈。
 
-   ![Azure存储配置](/help/forms/assets/azure-storage-configuration.png)
+   ![Azure儲存體設定](/help/forms/assets/azure-storage-configuration.png)
 
-1. 指定 **[!UICONTROL 标题]**， **[!UICONTROL Azure存储帐户]** 和 **[!UICONTROL Azure访问密钥]**.
+1. 指定 **[!UICONTROL 標題]**， **[!UICONTROL Azure儲存體帳戶]** 和 **[!UICONTROL Azure存取金鑰]**.
 
-   * 您可以检索 `Azure Storage Account` 名称和 `Azure Access key` 从Microsoft® Azure门户中的存储帐户。
+   * 您可以擷取 `Azure Storage Account` 名稱和 `Azure Access key` 從Microsoft® Azure入口網站中的儲存體帳戶。
 
 1. 单击“**[!UICONTROL 保存]**”。
 
-现在，您可以在自适应表单中将此Azure存储容器配置用于提交操作。
+現在，您可以在最適化表單中將此Azure儲存體容器設定用於提交動作。
 
-### 在自适应表单中使用Azure存储配置 {#use-azure-storage-configuartion-in-af}
+### 在最適化表單中使用Azure儲存體設定 {#use-azure-storage-configuartion-in-af}
 
-您可以在自适应表单中使用创建的Azure存储容器配置，以将数据或生成的记录文档保存在Azure存储容器中。 执行以下步骤以在自适应表单中使用Azure存储容器配置，如下所示：
-1. 创建 [自适应表单](/help/forms/creating-adaptive-form.md).
+您可以在調適型表單中使用已建立的Azure儲存體容器設定，在Azure儲存體容器中儲存資料或產生的記錄檔案。 執行以下步驟，在最適化表單中使用Azure儲存體容器設定，如下所示：
+1. 建立 [最適化表單](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 自适应表单，您已在该表单中创建了OneDrive存储。
-   > * 如果否 [!UICONTROL 配置容器] 选择，然后全局 [!UICONTROL 存储配置] 文件夹出现在“提交操作”属性窗口中。
+   > * 選取相同的 [!UICONTROL 設定容器] 最適化表單，您已在該表單中建立OneDrive儲存空間。
+   > * 若否 [!UICONTROL 設定容器] 選取「 」，然後全域 [!UICONTROL 儲存設定] 資料夾會出現在「提交動作」屬性視窗中。
 
 
-1. 选择 **提交操作** 作为 **[!UICONTROL 提交到Azure Blob存储]**.
-   ![Azure Blob存储GIF](/help/forms/assets/azure-submit-video.gif)
+1. 選取 **提交動作** 作為 **[!UICONTROL 提交至Azure Blob儲存體]**.
+   ![Azure Blob儲存GIF](/help/forms/assets/azure-submit-video.gif)
 
-1. 选择 **[!UICONTROL 存储配置]**，以保存数据。
-1. 单击 **[!UICONTROL 保存]** 以保存提交设置。
+1. 選取 **[!UICONTROL 儲存設定]**，您想要儲存資料的位置。
+1. 按一下 **[!UICONTROL 儲存]** 以儲存「提交」設定。
 
-提交表单时，数据将保存在指定的Azure存储容器配置中。
-要保存数据的文件夹结构为 `/configuration_container/form_name/year/month/date/submission_id/data`.
+當您提交表單時，資料會儲存在指定的Azure儲存體容器設定中。
+要儲存資料的資料夾結構為 `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)。
 
-## 使用同步或异步提交 {#use-synchronous-or-asynchronous-submission}
+## 使用同步或非同步提交 {#use-synchronous-or-asynchronous-submission}
 
-提交操作可以使用同步或异步提交。
+提交動作可以使用同步或非同步提交。
 
-**同步提交**：传统上，Web窗体配置为同步提交。 在同步提交中，当用户提交表单时，他们将被重定向到确认页面、感谢页面，或者如果提交失败，则被重定向到错误页面。 您可以选择 **[!UICONTROL 使用异步提交]** 用于将用户重定向到网页或在提交时显示消息的选项。
+**同步提交**：傳統上，網路表單會設定為同步提交。 在同步提交中，當使用者提交表單時，系統會將他們重新導向至認可頁面、感謝頁面，或如果提交失敗，則導向至錯誤頁面。 您可以選取 **[!UICONTROL 使用非同步提交]** 將使用者重新導向至網頁或在提交時顯示訊息的選項。
 
-![配置提交操作](assets/thank-you-setting.png)
+![設定提交動作](assets/thank-you-setting.png)
 
-**异步提交**：单页应用程序等现代Web体验越来越受欢迎，这是因为在后台进行客户端 — 服务器交互时，网页保持静态。 现在，您可以通过以下方式为自适应Forms提供此体验 [配置异步提交](asynchronous-submissions-adaptive-forms.md).
+**非同步提交**：單頁應用程式等現代網頁體驗越來越熱門，這是因為網頁保持靜態，而使用者端 — 伺服器互動發生在背景。 您現在可以透過以下方式提供此最適化Forms體驗 [設定非同步提交](asynchronous-submissions-adaptive-forms.md).
 
-## 自适应表单中的服务器端重新验证 {#server-side-revalidation-in-adaptive-form}
+## Adaptive Form中的伺服器端重新驗證 {#server-side-revalidation-in-adaptive-form}
 
-通常，在任何在线数据捕获系统中，开发人员都会在客户端放置一些JavaScript验证，以实施一些业务规则。 但在现代浏览器中，最终用户能够绕过这些验证，并使用各种技术（如Web浏览器DevTools控制台）手动提交内容。 此类技术对于自适应Forms也有效。 表单开发人员可以创建各种验证逻辑，但从技术上讲，最终用户可以绕过这些验证逻辑并将无效数据提交到服务器。 无效数据将破坏表单作者已强制执行的业务规则。
+在任何線上資料擷取系統中，開發人員通常會在使用者端放置一些JavaScript驗證，以強制執行一些商業規則。 但在現代瀏覽器中，一般使用者可以略過這些驗證，並使用各種技術手動提交內容，例如網頁瀏覽器DevTools主控台。 這些技術對於Adaptive Forms也是有效的。 表單開發人員可以建立各種驗證邏輯，但技術上來說，一般使用者可以略過這些驗證邏輯，並將無效資料提交至伺服器。 無效資料會破壞表單作者已強制執行的商業規則。
 
-通过服务器端重新验证功能，还可以在服务器上运行Adaptive Forms作者在设计Adaptive Form时提供的验证。 它可防止在表单验证方面可能出现的任何数据提交和业务规则违规受损。
+伺服器端重新驗證功能也讓您能夠執行Adaptive Forms作者在伺服器上設計Adaptive Form時所提供的驗證。 它可防止表單驗證中顯示的資料提交和業務規則違規的任何可能危害。
 
-### 要在服务器上验证什么？ {#what-to-validate-on-server-br}
+### 要在伺服器上驗證什麼？ {#what-to-validate-on-server-br}
 
-在服务器上重新运行的自适应表单的所有开箱即用(OOTB)字段验证包括：
+在伺服器上重新執行的最適化表單的所有開箱即用(OOTB)欄位驗證包括：
 
 * 必填
-* 验证图片子句
-* 验证表达式
+* 驗證圖片子句
+* 驗證運算式
 
-### 启用服务器端验证 {#enabling-server-side-validation-br}
+### 啟用伺服器端驗證 {#enabling-server-side-validation-br}
 
-使用 **[!UICONTROL 在服务器上重新验证]** 在侧栏中的自适应表单容器下，启用或禁用当前表单的服务器端验证。
+使用 **[!UICONTROL 在伺服器上重新驗證]** 在側欄的「調適型表單容器」下，啟用或停用目前表單的伺服器端驗證。
 
-![启用服务器端验证](assets/revalidate-on-server.png)
+![啟用伺服器端驗證](assets/revalidate-on-server.png)
 
-启用服务器端验证
+啟用伺服器端驗證
 
-如果最终用户绕过这些验证并提交表单，服务器将再次执行验证。 如果验证在服务器端失败，则提交事务将停止。 最终用户将再次看到原始表单。 捕获的数据和提交的数据将作为错误呈现给用户。
+如果一般使用者略過這些驗證並提交表單，伺服器會再次執行驗證。 如果驗證在伺服器端失敗，則送出交易會停止。 使用者會再次看到原始表單。 擷取的資料和提交的資料會向使用者呈現為錯誤。
 
 >[!NOTE]
 >
->服务器端验证验证表单模型。 建议为验证创建单独的客户端库，并且不要在同一客户端库中将其与HTML样式和DOM操作等其他内容混合。
+>伺服器端驗證會驗證表單模型。 建議您建立個別的使用者端程式庫進行驗證，不要將其與相同使用者端程式庫中的HTML樣式和DOM操作等其他專案混合。
 
-### 在验证表达式中支持自定义函数 {#supporting-custom-functions-in-validation-expressions-br}
+### 在驗證運算式中支援自訂函式 {#supporting-custom-functions-in-validation-expressions-br}
 
-有时候，如果有 **复杂验证规则**，精确验证脚本驻留在自定义函数中，作者从字段验证表达式中调用这些自定义函数。 要使此自定义函数库在执行服务器端验证时已知且可用，表单作者可以在下配置AEM客户端库的名称 **[!UICONTROL 基本]** “自适应表单容器”属性的选项卡，如下所示。
+有時，如果存在 **複雜驗證規則**，確切的驗證指令碼位於自訂函式中，且作者會從欄位驗證運算式呼叫這些自訂函式。 AEM若要在執行伺服器端驗證時讓此自訂函式館為已知且可用，表單作者可在 **[!UICONTROL 基本]** 最適化表單容器屬性的索引標籤，如下所示。
 
-![在验证表达式中支持自定义函数](assets/clientlib-cat.png)
+![在驗證運算式中支援自訂函式](assets/clientlib-cat.png)
 
-在验证表达式中支持自定义函数
+在驗證運算式中支援自訂函式
 
-作者可以按自适应表单配置customJavaScript库。 在库中，仅保留依赖于jquery和underscore.js第三方库的可重用函数。
+作者可以根據每個最適化表單設定customJavaScript程式庫。 在程式庫中，僅保留可重複使用的函式，這些函式依賴於jquery和underscore.js第三方程式庫。
 
-## 提交操作的错误处理 {#error-handling-on-submit-action}
+## 提交動作的錯誤處理 {#error-handling-on-submit-action}
 
-作为AEM安全和强化指南的一部分，请配置自定义错误页面，如400.jsp、404.jsp和500.jsp。 在提交表单时出现400、404或500错误时，将调用这些处理程序。 在Publish节点上触发这些错误代码时，也会调用处理程序。 您还可以为其他HTTP错误代码创建JSP页。
+在AEM安全性和強化准則中，請設定自訂錯誤頁面，例如400.jsp、404.jsp和500.jsp。 提交表單時出現400、404或500錯誤時，會呼叫這些處理常式。 在Publish節點上觸發這些錯誤碼時，也會呼叫處理常式。 您也可以為其他HTTP錯誤碼建立JSP頁面。
 
-当您将表单数据模型或基于XML或JSON数据投诉模式的自适应表单预填充到数据不包含的架构时 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 标签时，自适应表单中无界字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型。 未限定的字段是自适应表单字段，不带 `bindref` 属性。
+當您將表單資料模型或具有XML或JSON資料投訴的結構描述預填到資料未包含的結構描述時 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 標籤填入，則最適化表單中無限制欄位的資料會遺失。 結構描述可以是XML結構描述、JSON結構描述或表單資料模型。 未限制欄位為最適化表單欄位，不含 `bindref` 屬性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->

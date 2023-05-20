@@ -3,7 +3,7 @@ title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒程序的环境如何自动进入休眠模式，以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 100%
 

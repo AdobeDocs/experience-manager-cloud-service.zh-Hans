@@ -1,6 +1,6 @@
 ---
 title: 资源映射
-description: 了解如何使用资源映射来定义AEM的重定向、虚URL和虚拟主机。
+description: 瞭解如何使用資源對應為AEM定義重新導向、虛名URL和虛擬主機。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -15,96 +15,96 @@ ht-degree: 3%
 
 # 资源映射{#resource-mapping}
 
-资源映射用于定义AEM的重定向、虚URL和虚拟主机。
+資源對應可用來定義AEM的重新導向、虛名URL和虛擬主機。
 
-例如，您可以将以下映射用于：
+例如，您可以使用這些對應來：
 
-* 为所有请求添加前缀 `/content` 以便对网站的访客隐藏内部结构。
-* 定义重定向，以便 `/content/en/gateway` 将您网站的页面重定向到 `https://gbiv.com/`.
+* 所有請求的前置詞為 `/content` 以便對網站的訪客隱藏內部結構。
+* 定義重新導向，讓所有要求到 `/content/en/gateway` 您的網站頁面會重新導向至 `https://gbiv.com/`.
 
-一个可能的HTTP映射会为所有请求添加前缀 `localhost:4503` with `/content`. 此类映射可用于隐藏网站访客的内部结构，因为它允许：
+一個可能的HTTP對應會將所有請求加上前置詞 `localhost:4503` 替換為 `/content`. 像這樣的對應可用於在允許的情況下對網站的訪客隱藏內部結構：
 
 `localhost:4503/content/we-retail/en/products.html`
 
-访问时：
+以透過以下方式存取：
 
 `localhost:4503/we-retail/en/products.html`
 
-因为映射将自动添加前缀 `/content` to `/we-retail/en/products.html`.
+因為對應會自動新增前置詞 `/content` 至 `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
->虚URL不支持正则表达式模式。
+>虛名URL不支援規則運算式模式。
 
 >[!NOTE]
 >
->请参阅Sling文档，以及 [资源解析的映射](https://sling.apache.org/site/resources.html) 和 [资源](https://sling.apache.org/site/mappings-for-resource-resolution.html) 以了解更多信息。
+>請參閱Sling檔案，以及 [資源解析的對應](https://sling.apache.org/site/resources.html) 和 [資源](https://sling.apache.org/site/mappings-for-resource-resolution.html) 以取得進一步資訊。
 
-## 查看映射定义 {#viewing-mapping-definitions}
+## 檢視對應定義 {#viewing-mapping-definitions}
 
-这些映射构成两个列表，JCR资源解析程序将对其进行评估（从上到下）以查找匹配项。
+JCR資源解析器評估（由上而下）以尋找相符專案的對應表單有兩個清單。
 
-可以在 **JCR ResourceResolver** Felix控制台选项；例如， `https://<*host*>:<*port*>/system/console/jcrresolver`:
+這些清單可在「 」下方檢視（連同設定資訊） **JCR ResourceResolver** Felix主控台的選項；例如， `https://<*host*>:<*port*>/system/console/jcrresolver`：
 
-* 配置显示当前配置(如 [Apache Sling资源解析程序](/help/overview/seo-and-url-management.md#etc-map))。
+* 組態顯示目前的組態（為下列專案所定義）： [Apache Sling資源解析程式](/help/overview/seo-and-url-management.md#etc-map))。
 
-* 配置测试此操作允许您输入URL或资源路径。 单击 **解决** 或 **地图** 以确认系统将如何转换条目。
+* 設定測試這可讓您輸入URL或資源路徑。 按一下 **解決** 或 **地圖** 以確認系統如何轉換專案。
 
-* **解析程序映射条目**
-ResourceResolver.resolve方法用于将URL映射到资源的条目列表。
+* **解析器對應專案**
+ResourceResolver.resolve方法用來將URL對應至資源的專案清單。
 
-* **映射映射条目**
-ResourceResolver.map方法用于将资源路径映射到URL的条目列表。
+* **對應對應專案**
+ResourceResolver.map方法用來將資源路徑對應至URL的專案清單。
 
-这两个列表显示了各种条目，包括应用程序定义为默认值的条目。 这些URL通常旨在简化用户的URL。
+這兩個清單會顯示各種專案，包括應用程式定義為預設值的專案。 這些功能的目的通常是簡化使用者的URL。
 
-列表对 **图案**，与请求匹配的正则表达式，其中 **替换** 定义了重定向到实施。
+清單會配對 **圖樣**，此規則運算式與請求相符，且具有一個 **替代** 定義要強制的重新導向。
 
 例如：
 
-**图案** `^[^/]+/[^/]+/welcome$`
+**圖樣** `^[^/]+/[^/]+/welcome$`
 
-将触发：
+將觸發：
 
-**替换** `/libs/cq/core/content/welcome.html`.
+**替代** `/libs/cq/core/content/welcome.html`.
 
-要重定向请求，请执行以下操作：
+若要重新導向請求：
 
-`https://localhost:4503/welcome` &quot;
+`https://localhost:4503/welcome` ``
 
 到:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
-将在存储库内创建新映射定义。
+新的對應定義會在存放庫中建立。
 
 >[!NOTE]
 >
->有许多资源可帮助解释如何定义正则表达式；例如 [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>有許多資源可協助說明如何定義規則運算式，例如 [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-### 在AEM中创建映射定义 {#creating-mapping-definitions-in-aem}
+### 在AEM中建立對應定義 {#creating-mapping-definitions-in-aem}
 
-在AEM的标准安装中，您可以找到文件夹：
+在AEM的標準安裝中，您可以找到資料夾：
 
 `/etc/map/http`
 
-这是定义HTTP协议映射时使用的结构。 其他文件夹( `sling:Folder`)可在下创建 `/etc/map` 的其他协议。
+這是定義HTTP通訊協定對應時使用的結構。 其他資料夾( `sling:Folder`)可建立於 `/etc/map` 任何其他要對應的通訊協定。
 
-#### 配置到/content的内部重定向 {#configuring-an-internal-redirect-to-content}
+#### 設定內部重新導向至/content {#configuring-an-internal-redirect-to-content}
 
-创建映射，以将任何请求添加到https://localhost:4503/的前缀，其中 `/content`:
+建立為https://localhost:4503/的任何請求加上前置詞的對映 `/content`：
 
-1. 使用CRXDE导航到 `/etc/map/http`.
+1. 使用CRXDE導覽至 `/etc/map/http`.
 
-1. 创建新节点：
+1. 建立新節點：
 
-   * **类型** `sling:Mapping`
-此节点类型专门用于此类映射，但不强制使用。
+   * **型別** `sling:Mapping`
+此節點型別適用於此類對應，不過其使用並非強制性。
 
    * **名称** `localhost_any`
 
-1. 单击 **全部保存**.
-1. **添加** 此节点的以下属性：
+1. 按一下 **全部儲存**.
+1. **新增** 此節點的下列屬性：
 
    * **名称** `sling:match`
 
@@ -118,19 +118,19 @@ ResourceResolver.map方法用于将资源路径映射到URL的条目列表。
       * **值** `/content/`
 
 
-1. 单击 **全部保存**.
+1. 按一下 **全部儲存**.
 
-这将处理如下请求：
+這將處理如下請求：
 `localhost:4503/geometrixx/en/products.html`
-假如：
+就好像：
 `localhost:4503/content/geometrixx/en/products.html`
-被要求。
+已要求。
 
 >[!NOTE]
 >
->请参阅 [资源](https://sling.apache.org/site/mappings-for-resource-resolution.html) ，以进一步了解可用sling属性以及如何配置这些属性。
->例如， [字符串插值](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) 非常有用，因为它允许配置通过环境变量为每个环境值获取的映射。
+>另請參閱 [資源](https://sling.apache.org/site/mappings-for-resource-resolution.html) Sling檔案中，以取得有關可用sling屬性及其設定方式的進一步資訊。
+>例如， [字串內插](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) 非常有用，因為它允許設定透過環境變數取得每個環境值的對應。
 
 >[!NOTE]
 >
->您可以使用 `/etc/map.publish` 来保存发布环境的配置。 然后，必须复制这些数据，并将新位置( `/etc/map.publish`) **映射位置** 的 [Apache Sling资源解析程序](/help/overview/seo-and-url-management.md#etc-map) 的子目录访问Advertising Cloud帮助。
+>您可以使用 `/etc/map.publish` 以保留發佈環境的設定。 然後必須複製這些專案，並且新位置( `/etc/map.publish`)設定的 **對應位置** 的 [Apache Sling資源解析程式](/help/overview/seo-and-url-management.md#etc-map) 發佈環境的。

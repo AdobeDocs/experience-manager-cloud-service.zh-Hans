@@ -1,10 +1,10 @@
 ---
 title: Dynamic Media 疑难解答
-description: 使用Dynamic Media时的疑难解答提示。
+description: 使用Dynamic Media時的疑難排解提示。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -13,154 +13,154 @@ ht-degree: 1%
 
 # Dynamic Media 疑难解答 {#troubleshooting-dynamic-media-scene-mode}
 
-以下主题介绍Dynamic Media的疑难解答。
+下列主題說明Dynamic Media的疑難排解。
 
-## 新Dynamic Media配置 {#new-dm-config}
+## 全新Dynamic Media設定 {#new-dm-config}
 
-请参阅 [对新的Dynamic Media配置进行故障诊断](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+另請參閱 [疑難排解新的Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
-## 常规（所有资产） {#general-all-assets}
+## 一般（所有資產） {#general-all-assets}
 
-以下是所有资产的一些常规提示和技巧。
+以下是適用於所有資產的一些一般提示和技巧。
 
-### 资产同步状态属性 {#asset-synchronization-status-properties}
+### 資產同步狀態屬性 {#asset-synchronization-status-properties}
 
-可以在CRXDE Lite中审阅以下资产属性，以确认将资产从Adobe Experience Manager成功同步到Dynamic Media:
+您可在CRXDE Lite中檢閱下列資產屬性，以確認資產已成功從Adobe Experience Manager同步至Dynamic Media：
 
 | **属性** | **示例** | **描述** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 节点已链接到Dynamic Media的常规指示符。 |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** 或错误文本 | 资产上传到Dynamic Media的状态。 |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必须填充以生成指向Dynamic Media远程资产的URL。 |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | **成功** 或 **失败：`<error text>`** | 集（旋转集、图像集等）、图像预设、查看器预设、资产的图像映射更新或已编辑图像的同步状态。 |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 節點連結至Dynamic Media的一般指標。 |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** 或錯誤文字 | 將資產上傳至Dynamic Media的狀態。 |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必須填入才能產生Dynamic Media遠端資產的URL。 |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | **成功** 或 **失敗：`<error text>`** | 集合（迴轉集、影像集等）、影像預設集、檢視器預設集、資產的影像地圖更新或已編輯影像的同步狀態。 |
 
-### 同步日志记录 {#synchronization-logging}
+### 同步記錄 {#synchronization-logging}
 
-已登录同步错误和问题 `error.log` (Experience Manager服务器目录 `/crx-quickstart/logs/`)。 有足够的日志记录来确定导致大多数问题的根本原因，但您可以将 `com.adobe.cq.dam.ips` 包([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))以收集更多信息。
+同步處理錯誤和問題已登入 `error.log` (Experience Manager伺服器目錄 `/crx-quickstart/logs/`)。 有充足的記錄可判斷大部分問題的根本原因，不過您可以增加對 `com.adobe.cq.dam.ips` 透過Sling主控台封裝([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))以收集更多資訊。
 
 ### 版本控制 {#version-control}
 
-替换现有Dynamic Media资产（名称和位置相同）时，您可以保留两个资产或替换/创建版本：
+取代現有Dynamic Media資產（名稱和位置相同）時，您可以保留兩個資產或取代/建立版本：
 
-* 同时保留这两个属性，会为已发布的资产URL创建一个具有唯一名称的资产。 例如， `image.jpg` 是原始资产和 `image1.jpg` 是新上传的资产。
+* 同時保留兩者會為已發佈的資產URL建立具有唯一名稱的資產。 例如， `image.jpg` 是原始資產，且 `image1.jpg` 是新上傳的資產。
 
-* Dynamic Media不支持创建版本。 新版本会替换交付中的现有资产。
+* Dynamic Media不支援建立版本。 新版本會取代傳遞中的現有資產。
 
-## 图像和集 {#images-and-sets}
+## 影像和集合 {#images-and-sets}
 
-如果您在图像和集合方面遇到问题，请参阅以下疑难解答指南。
+如果您遇到影像和集的問題，請參閱下列疑難排解指南。
 
 <table>
  <tbody>
   <tr>
-   <td><strong>带有 OS 剪贴板</strong></td>
-   <td><strong>如何调试</strong></td>
+   <td><strong>问题</strong></td>
+   <td><strong>如何偵錯</strong></td>
    <td><strong>解决方案</strong></td>
   </tr>
   <tr>
-   <td>无法在资产详细信息视图中访问复制URL/嵌入按钮</td>
+   <td>無法存取資產詳細資料檢視中的複製URL/內嵌按鈕</td>
    <td>
     <ol>
-     <li><p>转到CRX/DE:</p>
+     <li><p>前往CRX/DE：</p>
       <ul>
-       <li>检查JCR中的预设是否 <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> 定义。 如果您从Experience Manager6.x升级到6.4并选择退出迁移，则此位置适用。 否则，位置为 <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
-       <li>检查以确保JCR中的资产具有 <code>dam:scene7FileStatus</code><strong> </strong>在元数据下显示为 <code>PublishComplete</code>.</li>
+       <li>檢查JCR中的預設集 <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> 已定義。 如果您從Experience Manager6.x升級至6.4並選擇退出移轉，則此位置適用。 否則，位置為 <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>確認JCR中的資產具有 <code>dam:scene7FileStatus</code><strong> </strong>在「中繼資料」下顯示為 <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>刷新页面/导航到另一页并返回（必须重新编译边栏JSP）</p> <p>如果这不起作用：</p>
+   <td><p>重新整理頁面/導覽至其他頁面並返回（側邊欄JSP必須重新編譯）</p> <p>如果這樣行不通：</p>
     <ul>
-     <li>发布资产。</li>
-     <li>重新上传资产并发布它。</li>
+     <li>發佈資產。</li>
+     <li>重新上傳資產並發佈。</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>在幻灯片之间切换后，轮播热点会四处移动</td>
-   <td><p>检查所有幻灯片的大小是否相同。</p> </td>
-   <td><p>仅对轮播使用大小相同的图像。</p> </td>
+   <td>在幻燈片之間切換後，輪播熱點會四處移動</td>
+   <td><p>檢查所有幻燈片的大小是否相同。</p> </td>
+   <td><p>僅對輪播使用大小相同的影像。</p> </td>
   </tr>
   <tr>
-   <td>图像不使用Dynamic Media查看器预览</td>
-   <td><p>检查资产是否包含 <code>dam:scene7File</code> (CRXDE Lite)</p> </td>
-   <td><p>检查所有资产是否都已完成处理。</p> </td>
+   <td>影像未使用Dynamic Media檢視器預覽</td>
+   <td><p>檢查資產是否包含 <code>dam:scene7File</code> 在中繼資料屬性(CRXDE Lite)中</p> </td>
+   <td><p>檢查所有資產是否已完成處理。</p> </td>
   </tr>
   <tr>
-   <td>上传的资产不会显示在资产选择器中</td>
-   <td><p>检查资产是否具有属性 <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
-   <td><p>检查所有资产是否都已完成处理。</p> </td>
+   <td>上傳的資產未顯示在資產選擇器中</td>
+   <td><p>檢查資產是否具有屬性 <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
+   <td><p>檢查所有資產是否已完成處理。</p> </td>
   </tr>
   <tr>
-   <td>卡片视图中的横幅显示 <strong>新建</strong> 资产未开始处理时</td>
-   <td>检查资产 <code>jcr:content</code> &gt; <code>dam:assetState</code> =if <code>unprocessed</code> 工作流未提取它。</td>
-   <td>等待工作流提取资产。</td>
+   <td>卡片檢視上的橫幅顯示 <strong>新增</strong> 當資產尚未開始處理時</td>
+   <td>檢查資產 <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> 工作流程未擷取它。</td>
+   <td>等到工作流程擷取資產為止。</td>
   </tr>
   <tr>
-   <td>图像或图像集不显示查看器URL或嵌入代码</td>
-   <td>检查查看器预设是否已发布。</td>
-   <td><p>转到 <strong>工具</strong> &gt; <strong>资产</strong> &gt; <strong>查看器预设</strong> 并发布查看器预设。</p> </td>
+   <td>影像或集未顯示檢視器URL或內嵌程式碼</td>
+   <td>檢查檢視器預設集是否已發佈。</td>
+   <td><p>前往 <strong>工具</strong> &gt; <strong>資產</strong> &gt; <strong>檢視器預設集</strong> 並發佈檢視器預設集。</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## 视频 {#video}
 
-如果您在视频中遇到问题，请参阅以下疑难解答指南。
+如果您遇到視訊問題，請參閱下列疑難排解指南。
 
 <table>
  <tbody>
   <tr>
-   <td><strong>带有 OS 剪贴板</strong></td>
-   <td><strong>如何调试</strong></td>
+   <td><strong>问题</strong></td>
+   <td><strong>如何偵錯</strong></td>
    <td><strong>解决方案</strong></td>
   </tr>
   <tr>
-   <td>无法预览视频</td>
+   <td>無法預覽視訊</td>
    <td>
     <ul>
-     <li>检查文件夹是否分配了视频配置文件（如果不支持文件格式）。 如果不受支持，则仅显示图像。</li>
-     <li>视频配置文件必须包含多个编码预设才能生成AVS集(单个编码被视为MP4文件的视频内容；对于不支持的文件，将其视为与未处理文件相同)。</li>
-     <li>通过确认来检查视频是否已完成处理 <code>dam:scene7FileAvs</code> of <code>dam:scene7File</code> 元数据中。</li>
+     <li>檢查資料夾是否已指派視訊設定檔（如果不支援的檔案格式）。 如果不支援，則只會顯示影像。</li>
+     <li>視訊設定檔必須包含多個編碼預設集，才能產生AVS集（單一編碼會視為MP4檔案的視訊內容；對於不支援的檔案，則會視為未處理）。</li>
+     <li>確認以檢查視訊是否已完成處理 <code>dam:scene7FileAvs</code> 之 <code>dam:scene7File</code> 在中繼資料中。</li>
     </ul> </td>
    <td>
     <ol>
-     <li>将视频配置文件分配给文件夹。</li>
-     <li>编辑视频配置文件以包含多个编码预设。</li>
-     <li>等待视频完成处理。</li>
-     <li>在重新加载视频之前，请确保Dynamic Media编码视频工作流未运行。<br/> </li>
-     <li>重新上传视频。</li>
+     <li>將視訊設定檔指派至資料夾。</li>
+     <li>編輯視訊設定檔以包含一個以上的編碼預設集。</li>
+     <li>等候視訊完成處理。</li>
+     <li>在重新載入視訊之前，請確定Dynamic Media編碼視訊工作流程未執行。<br/> </li>
+     <li>重新上傳視訊。</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>视频未编码</td>
+   <td>視訊未編碼</td>
    <td>
     <ul>
-     <li>检查是否配置了Dynamic MediaCloud Service。</li>
-     <li>检查视频配置文件是否与上传文件夹关联。</li>
+     <li>檢查是否已設定Dynamic MediaCloud Service。</li>
+     <li>檢查視訊設定檔是否與上傳資料夾相關聯。</li>
     </ul> </td>
    <td>
     <ol>
-     <li>检查Cloud Services下的Dynamic Media配置是否正确设置。</li>
-     <li>检查文件夹是否包含视频配置文件。 此外，还应检查视频配置文件。</li>
+     <li>檢查Cloud Services底下的Dynamic Media設定是否已正確設定。</li>
+     <li>檢查資料夾是否有視訊設定檔。 此外，檢查視訊設定檔。</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>视频处理过长</td>
-   <td><p>要确定视频编码是否仍在进行中或是否已进入失败状态，请执行以下操作：</p>
+   <td>視訊處理需要太長的時間</td>
+   <td><p>若要判斷視訊編碼是否仍在進行中，或已進入失敗狀態：</p>
     <ul>
-     <li>检查视频状态 <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
+     <li>檢查視訊狀態 <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
-   <td>缺少视频呈现版本</td>
-   <td><p>上传视频时，但没有经过编码的演绎版：</p>
+   <td>視訊轉譯遺失</td>
+   <td><p>已上傳視訊，但沒有已編碼的轉譯時：</p>
     <ul>
-     <li>检查文件夹是否分配了视频配置文件。</li>
-     <li>通过确认来检查视频是否已完成处理 <code>dam:scene7FileAvs</code> 元数据中。</li>
+     <li>檢查資料夾是否已指派視訊設定檔。</li>
+     <li>確認以檢查視訊是否已完成處理 <code>dam:scene7FileAvs</code> 在中繼資料中。</li>
     </ul> </td>
    <td>
     <ol>
-     <li>将视频配置文件分配给文件夹。</li>
-     <li>等待视频完成处理。<br /> </li>
+     <li>將視訊設定檔指派至資料夾。</li>
+     <li>等候視訊完成處理。<br /> </li>
     </ol> </td>
   </tr>
  </tbody>
@@ -168,37 +168,37 @@ ht-degree: 1%
 
 ## 查看器 {#viewers}
 
-如果您在查看器方面遇到问题，请参阅以下疑难解答指南。
+如果您遇到檢視器的問題，請參閱下列疑難排解指南。
 
-### 问题：查看器预设未发布 {#viewers-not-published}
+### 問題：檢視器預設集未發佈 {#viewers-not-published}
 
-**如何调试**
+**如何偵錯**
 
-1. 继续执行示例管理器诊断页面： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
-1. 观察计算值。 正确操作时，您会看到以下内容： `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+1. 繼續範例管理員診斷頁面： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. 觀察計算值。 正確操作時，您會看到下列內容： `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
 
    >[!NOTE]
    >
-   >配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资产。
+   >設定Dynamic Media雲端設定後，大約需要10分鐘的時間才能讓檢視器資產同步。
 
-1. 如果未激活的资产仍保留，请选择 **列出所有未激活的资产** 按钮以查看详细信息。
+1. 如果仍保留未啟用的資產，請選取 **列出所有未啟用的資產** 按鈕以檢視詳細資訊。
 
 **解决方案**
 
-1. 在管理工具中导航到查看器预设列表： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. 选择所有查看器预设，然后选择 **发布**.
-1. 导航回示例管理器，并观察未激活的资产计数现在为零。
+1. 導覽至管理工具中的檢視器預設集清單： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. 選取所有檢視器預設集，然後選取 **發佈**.
+1. 導覽回範例管理員，並觀察未啟用的資產計數現在為零。
 
-### 问题：查看器预设图稿会从资产详细信息的“预览”或“复制URL/嵌入代码”中返回404 {#viewer-preset-404}
+### 問題：檢視器預設集圖稿從資產詳細資料中的預覽或複製URL/內嵌程式碼返回404 {#viewer-preset-404}
 
-**如何调试**
+**如何偵錯**
 
-在CRXDE Lite中，执行以下操作：
+在CRXDE Lite中，執行下列動作：
 
-1. 导航到 `<sync-folder>/_CSS/_OOTB` 文件夹(例如， `/content/dam/_CSS/_OOTB`)。
-1. 查找有问题资产的元数据节点(例如， `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`)。
-1. 检查是否存在 `dam:scene7*` 属性。 如果资产已成功同步和发布，您会看到 `dam:scene7FileStatus` 设置为 **PublishComplete**.
-1. 尝试通过连接以下属性的值和字符串文字，直接从Dynamic Media请求图稿：
+1. 導覽至 `<sync-folder>/_CSS/_OOTB` Dynamic Media同步資料夾中的資料夾(例如， `/content/dam/_CSS/_OOTB`)。
+1. 尋找有問題資產的中繼資料節點(例如， `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`)。
+1. 檢查是否存在 `dam:scene7*` 屬性。 如果資產已成功同步和發佈，您會看到 `dam:scene7FileStatus` 設定為 **PublishComplete**.
+1. 串連下列屬性和字串常值的值，嘗試直接從Dynamic Media要求圖稿：
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -209,32 +209,32 @@ ht-degree: 1%
 
 **解决方案**
 
-如果示例资产或查看器预设图稿未同步或发布，请重新启动整个复制/同步过程：
+如果範例資產或檢視器預設集圖稿尚未同步或發佈，請重新啟動整個複製/同步程式：
 
-1. 导航到CRXDE Lite。
+1. 導覽至「CRXDE Lite」。
 1. 删除 `<sync-folder>/_CSS/_OOTB`.
-1. 导航到CRX包管理器： `https://localhost:4502/crx/packmgr/`.
-1. 在列表中搜索查看器包；开始于 `cq-dam-scene7-viewers-content`.
-1. 选择 **重新安装**.
-1. 在“Cloud Services”下，导航到Dynamic Media配置页面，然后打开Dynamic Media - S7配置的配置对话框。
-1. 不进行更改，请选择 **保存**.
-此保存操作会再次触发逻辑，以创建和同步示例资产、查看器预设CSS和图稿。
+1. 導覽至CRX封裝管理員： `https://localhost:4502/crx/packmgr/`.
+1. 在清單中搜尋檢視器套件；其開頭為 `cq-dam-scene7-viewers-content`.
+1. 選取 **重新安裝**.
+1. 在Cloud Services底下，導覽至Dynamic Media設定頁面，然後開啟Dynamic Media - S7設定的設定對話方塊。
+1. 不做變更，選取 **儲存**.
+此儲存動作會再次觸發邏輯，以建立並同步範例資產、檢視器預設集CSS和圖稿。
 
-### 问题：在查看器预设创作中未加载图像预览 {#image-preview-not-loading}
+### 問題：檢視器預設集製作中未載入影像預覽 {#image-preview-not-loading}
 
 **解决方案**
 
-1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后导航到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL CRXDE Lite]**.
-1. 在左边栏中，导航到位于以下位置的示例内容文件夹：
+1. 在Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台，然後導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**.
+1. 在左側邊欄中，導覽至下列位置的範例內容資料夾：
 
    `/content/dam/_DMSAMPLE`
 
-1. 删除 `_DMSAMPLE` 文件夹。
-1. 在左边栏中，导航到位于以下位置的预设文件夹：
+1. 刪除 `_DMSAMPLE` 資料夾。
+1. 在左側邊欄中，導覽至下列位置的預設集資料夾：
 
    `/conf/global/settings/dam/dm/presets/viewer`
 
-1. 删除 `viewer` 文件夹。
-1. 在CRXDE Lite页面的左上角附近，选择 **[!UICONTROL 全部保存]**.
-1. 在CRXDE Lite页面的左上角，选择 **返回主页** 图标。
-1. 重新创建 [Dynamic Media在Cloud Services中的配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. 刪除 `viewer` 資料夾。
+1. 在CRXDE Lite頁面的左上角附近，選取 **[!UICONTROL 全部儲存]**.
+1. 在CRXDE Lite頁面的左上角，選取 **返回首頁** 圖示。
+1. 重新建立 [Cloud Services中的Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

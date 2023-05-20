@@ -49,8 +49,8 @@ ht-degree: 94%
 >
 >* [关于 Adobe Asset Link](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [配置 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [配置 Experience Manager 以搭配使用 Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [使用资产微服务在Experience Manager中创建工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [配置 Experience Manager 以搭配使用 Asset Link](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [使用資產微服務在Experience Manager中建立工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager 的新增功能 {#whats-new-cloud-manager}
