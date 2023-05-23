@@ -1,19 +1,19 @@
 ---
-title: 使用自動標籤資產 [!DNL Adobe Sensei] 智慧型服務
-description: 使用可套用情境式和描述性業務標籤的人為智慧型服務來標籤資產。
+title: 如何在AEM中新增智慧標籤至資產？
+description: 透過AEM中可套用情境式和描述性商業標籤的人為智慧型服務，將智慧標籤新增至資產。
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2462'
 ht-degree: 6%
 
 ---
 
 
-# 將智慧標籤新增至您的資產並改善搜尋體驗 {#smart-tag-assets-for-faster-search}
+# 將智慧標籤新增至AEM中的資產 {#smart-tags-assets-aem}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ ht-degree: 6%
 
 相較於自然語言辭彙，根據商業分類法標籤有助於讓資產與公司的業務保持一致，並確保最相關的資產出現在搜尋中。 例如，汽車製造商可以使用模型名稱來標籤汽車影像，以便在搜尋時只顯示相關影像來設計促銷活動。
 
-在背景中，功能使用的人為智慧型架構 [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) 以根據您的標籤結構和商業分類訓練其影像識別演演算法。 然後，此內容智慧可用來將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets] 依預設，會自動將智慧標籤套用至已上傳的資產。
+在背景中，功能使用的人為智慧型架構 [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) 以根據您的標籤結構和商業分類訓練其影像識別演演算法。 然後，此內容智慧可用來將相關標籤套用至不同的資產集。 依預設，AEM會自動將智慧標籤套用至已上傳的資產。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## 支援的資產型別 {#smart-tags-supported-file-formats}
+## AEM中智慧標籤的支援資產型別 {#smart-tags-supported-file-formats}
 
 您可以標籤下列資產型別：
 
@@ -59,7 +59,7 @@ ht-degree: 6%
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] 根據預設，會自動將智慧標籤新增至文字型資產和視訊。 若要自動將智慧標籤新增至影像，請完成下列工作。
+AEM預設會將智慧標籤自動新增至文字型資產和影片。 若要自動將智慧標籤新增至影像，請完成下列工作。
 
 * [瞭解標籤模型和准則](#understand-tag-models-guidelines).
 * [訓練模型](#train-model).
@@ -189,9 +189,9 @@ ht-degree: 6%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## 使用智慧標籤標籤資產 {#tag-assets}
+## 使用AEM中的智慧標籤標籤標籤資產 {#tag-assets}
 
-所有支援的資產型別都會自動以下列方式標籤 [!DNL Experience Manager Assets] 上傳時。 標籤預設為啟用並運作。 [!DNL Experience Manager] 會近乎即時套用適當的標籤。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+所有支援的資產型別都會自動以下列方式標籤 [!DNL Experience Manager Assets] 上傳時。 標籤預設為啟用並運作。 AEM會近乎即時套用適當的智慧標籤。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * 針對影像和影片，智慧標籤是以某些視覺方面為基礎。
 
