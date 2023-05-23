@@ -2,9 +2,9 @@
 title: 验证内容转移
 description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 2%
 擷取完成並開始驗證後，將在擷取記錄中記錄以下記錄專案：
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 驗證的詳細資訊會在此專案後面。 尋找以下大型移轉的範例：
@@ -131,6 +131,24 @@ Migration validation took 0 minutes
 
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## 如何驗證主體移轉 {#how-to-validate-principal-migration}
+
+另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以瞭解主要移轉的詳細資料以及為何需要。
+
+成功完成擷取和內嵌後，即可使用主體移轉的摘要和報告。 此資訊可用於驗證哪些使用者和群組已成功移轉，或許也可用於判斷部分使用者及群組未成功移轉的原因。
+
+若要檢視此資訊，請前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **內嵌工作** 並找到您要驗證的內嵌。 按一下三個點(**...**)，然後按一下 **檢視主體摘要** （在下拉式清單中）。
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+您會看到包含摘要資訊的對話方塊。 使用說明圖示來閱讀更完整的說明。 按一下 **下載報告** 按鈕以下載完整的逗號分隔(CSV)報表。
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>如果停用使用者對應，則會顯示此對話方塊的另一個變體。 這會指出使用者對應已停用，且不會顯示提供使用者對應值的3個欄位。
 
 ## 疑难解答 {#troubleshooting}
 

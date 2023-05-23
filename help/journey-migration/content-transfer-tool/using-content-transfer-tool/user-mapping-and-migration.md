@@ -2,10 +2,10 @@
 title: 用户映射和主体迁移
 description: 使用者對應和主體移轉概要
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 22%
+source-wordcount: '788'
+ht-degree: 21%
 
 ---
 
@@ -53,3 +53,7 @@ ht-degree: 22%
 * 如果設定 **在內嵌之前擦除雲端例項上的現有內容** 設定，Cloud Service執行個體上已轉移的使用者將與整個現有存放庫一起刪除，並將建立新存放庫以將內容擷取到。 這也會重設所有設定，包括目標Cloud Service執行個體的許可權，新增至的管理員使用者則為true **管理員** 群組。 管理員使用者必須重新新增至 **管理員** 群組以擷取CTT的存取權杖。
 * 執行內容追加時，如果內容由於自上次轉移以來未變更而未轉移，則與該內容相關聯的使用者和群組也不會轉移，即使使用者和群組在此期間已變更。 這是因為使用者和群組會隨著相關聯的內容一起移轉。
 * 如果目標AEM Cloud Service執行個體中的使用者與來源AEM執行個體上的其中一位使用者擁有不同的使用者名稱，但電子郵件地址相同，並且已啟用「使用者對應」，則會在記錄中寫入錯誤訊息，且不會傳輸來源AEM使用者，因為目標系統上只允許一位具有指定電子郵件地址的使用者。
+
+## 最終摘要與報告 {#final-report}
+
+成功完成擷取和內嵌後，就會產生一份報表，顯示主要移轉詳細資訊。 另請參閱 [如何驗證主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) 以取得詳細資訊。

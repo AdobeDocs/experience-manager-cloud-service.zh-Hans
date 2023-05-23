@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 79%
+source-wordcount: '717'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 内容传输工具是 Adobe 开发的一个工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM Cloud Service 实例。
 
-此工具还会自动传输主体（用户或组）。
+此工具还会自动传输主体（用户或组）。另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得詳細資訊。
 
 已提供新版本的内容传输工具，它将内容传输过程与 Cloud Acceleration Manager 集成。强烈建议切换到此新版本，充分利用其所有优势。
 
