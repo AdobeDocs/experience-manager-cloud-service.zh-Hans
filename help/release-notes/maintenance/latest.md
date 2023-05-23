@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 56eaacc1ad78b47ef90f9c04fa09a4b751bff78d
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,10 @@ ht-degree: 76%
 
 ### 修复的问题 {#fixed-issues-11983}
 
-- SITES-13253 — 修正核心元件v2.22.6中的RecursionTooDeepException問題
-- SITES-13256 — 修正核心WCM Teaser設定特殊URL分頁符號頁面轉譯的問題
-- GRANITE-45462 — 修正訊息使用者端多區域設定的問題
-- GRANITE-45562 — 修正影像組合傳回200而非404的問題
+- SITES-13253 - 修复了有关核心组件 v2.22.6 中的递归太深异常方面的问题
+- SITES-13256 - 修复了有关配置有特殊 URL 中断页面呈现的核心 WCM Teaser 方面的问题
+- GRANITE-45462 - 修复了有关消息客户端多区域配置方面的问题
+- GRANITE-45562 - 修复了有关图像组合返回 200 而不是 404 的问题
 
 ### 嵌套的技术 {#embedded-tech-11983}
 

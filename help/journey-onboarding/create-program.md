@@ -6,17 +6,17 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 创建程序 {#create-program}
 
-在[入门培训历程的这一可选部分中，](overview.md) 您将了解如何使用 Cloud Manager 创建第一个程序。
+在[入门历程的这一可选部分中，](overview.md) 您将了解如何使用 Cloud Manager 创建第一个程序。
 
 ## 目标 {#objective}
 
-在阅读了本次入门培训历程中的上一篇文档访问 [Cloud Manager](cloud-manager.md) 之后，已确保您有适当权限访问 Cloud Manager。现在您可以创建第一个程序。
+在阅读了本次入门历程中的上一篇文档访问 [Cloud Manager](cloud-manager.md) 之后，已确保您有适当权限访问 Cloud Manager。现在您可以创建第一个程序。
 
 阅读本文档后，您将：
 
@@ -37,7 +37,7 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 * 创建&#x200B;**生产程序**，以便为您的站点启用实时流量。 这是您的“真实”环境。
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的。
 
-由于用途不同，因此不同的环境有不同的选项。 然而，创建程序的过程是相似的。 对于此次入门培训历程，我们将创建一个沙盒环境。
+由于用途不同，因此不同的环境有不同的选项。 然而，创建程序的过程是相似的。 对于此次入门历程，我们将创建一个沙盒环境。
 
 >[!TIP]
 >
@@ -53,13 +53,13 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
    ![Cloud Manager 登陆页面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 從建立計畫精靈中，選擇 **設定沙箱** 並提供方案名稱，然後點選或按一下 **繼續**.
+1. 在“创建项目向导”中，选择&#x200B;**设置沙盒**，提供项目名称，然后轻触或点击&#x200B;**继续**。
 
-   ![程序类型创建](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+   ![项目类型创建](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. 在 **設定您的沙箱** 對話方塊，您可以選擇要在沙箱程式中啟用哪些解決方案。 此 **網站** 和 **資產** 解決方案一律包含在沙箱程式中，並會自動選取。 這對我們的入門範例來說已經足夠。 单击&#x200B;**创建**。
+1. 在&#x200B;**设置沙盒**&#x200B;对话框，您可以选择希望在沙盒项目中启用的解决方案。**Sites** 和 **Assets** 解决方案始终包含在沙盒项目中并会自动选中。这对于我们的入门示例来说已经足够了。单击&#x200B;**创建**。
 
-   ![解決方案選擇](assets/set-up-sandbox-onboarding.png)
+   ![解决方案选择](assets/set-up-sandbox-onboarding.png)
 
 随着安装过程的进行，您将在登陆页面上看到一个带有状态指示器的新沙盒程序信息卡。
 
@@ -73,7 +73,7 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
 ## 其他资源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是額外的選用資源。
+如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
 * [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) – 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 * [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) – 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。

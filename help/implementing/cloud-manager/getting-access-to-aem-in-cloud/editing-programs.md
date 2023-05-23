@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -52,8 +52,8 @@ ht-degree: 98%
 
    ![编辑上线设置](assets/edit-program-go-live.png)
 
-   * 此日期仅供参考，并触发程序概述页面上的“上线”构件，及时提供 AEM as a Cloud Service 最佳实践文档的产品内链接，配合您的入门培训历程，最终获得成功、顺利的上线体验。
-   * 此索引標籤不適用於沙箱計畫。
+   * 此日期仅供参考，并触发程序概述页面上的“上线”构件，及时提供 AEM as a Cloud Service 最佳实践文档的产品内链接，配合您的入门历程，最终获得成功、顺利的上线体验。
+   * 该选项卡在沙盒项目中不可用。
 
 1. 单击&#x200B;**更新**，将更改保存到程序。
 

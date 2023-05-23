@@ -7,7 +7,7 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
 source-wordcount: '4322'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -139,7 +139,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
    >[!NOTE]
    >
-   >可能會出現錯誤對話方塊，並顯示「無法提交表單」訊息。 發生此情況是因為網路逾時。 不過，建立即時副本的程式正在背景中執行。 請稍候幾分鐘，然後檢查即時副本的頁面是否正確建立。
+   >可能会出现一个错误对话框，其中显示消息“提交表单失败”。发生这种情况是由于网络超时。但是，创建实时副本的过程是在后台运行的。等待几分钟，检查实时副本的页面是否正确创建。
 
 ### 从 Blueprint 配置创建站点的 Live Copy {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 

@@ -7,18 +7,18 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # 开发人员和部署管理员任务 {#developer-deployment-manager}
 
-在此[入门培训历程](overview.md) 可选部分，您会了解开发人员和部署经理如何访问 Git 来开发应用程序并使用管道来部署它们。
+在此[入门历程](overview.md) 可选部分，您会了解开发人员和部署经理如何访问 Git 来开发应用程序并使用管道来部署它们。
 
 ## 迄今为止的故事 {#story-so-far}
 
-您已经完成了入门培训历程的很多内容！ 恭喜！系统管理员通过在文档[分配 AEM 产品配置](assign-profiles-aem.md)文件中设置必要的云资源并授予访问权限，已经完成了入门培训历程。
+您已经完成了入门历程的很多内容！ 恭喜！系统管理员通过在文档[分配 AEM 产品配置](assign-profiles-aem.md)文件中设置必要的云资源并授予访问权限，已经完成了入门历程。
 
 此时，开发人员和部署管理员可以开始创建自己的应用程序，而 AEM 用户可以开始创建内容。 从这个意义上说，您的载入已经完成，现在可以使用您的新 AEM as a Cloud Service 系统了，本文将对此进行说明。
 
@@ -136,7 +136,7 @@ ht-degree: 98%
 
 作为开发人员或部署管理员，您不仅具备 Cloud manager 的工作知识，而且还拥有工作环境、存储库和管道！ 但是，对于 AEM as a Cloud Service 强大的 CI/CD 工具，还有更多需要了解的地方。 查看[其他资源](#additional-resources)部分，了解更多详细信息。
 
-如果您对内容作者如何访问和使用 AEM as a Cloud service 感兴趣，请继续进行入门培训历程的最后一部分 [AEM 用户任务。](aem-users.md)
+如果您对内容作者如何访问和使用 AEM as a Cloud service 感兴趣，请继续进行入门历程的最后一部分 [AEM 用户任务。](aem-users.md)
 
 >[!TIP]
 >
@@ -144,7 +144,7 @@ ht-degree: 98%
 
 ## 其他资源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是額外的選用資源。
+如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
 * [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md) – 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Git 存储库。
 * [将 Git 和 Cloud Manager 结合使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) – 了解如何使用 Cloud Manager 的 Git 存储库，以及如何将您自己的本地客户管理的 Git 储存库与 Cloud Manager 集成。

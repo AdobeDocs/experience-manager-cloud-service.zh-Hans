@@ -7,18 +7,18 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # AEM 用户任务 {#aem-user-tasks}
 
-在[入门培训历程的这一可选部分中，](overview.md) 您将了解 AEM 用户如何访问 AEM as a Cloud Service 进行内容创作。
+在[入门历程的这一可选部分中，](overview.md) 您将了解 AEM 用户如何访问 AEM as a Cloud Service 进行内容创作。
 
 ## 迄今为止的故事 {#story-so-far}
 
-您已经完成了入门培训历程的很多内容！ 恭喜！系统管理员通过在文档[分配 AEM 产品配置](assign-profiles-aem.md)文件中设置必要的云资源并授予访问权限，已经完成了入门培训历程。
+您已经完成了入门历程的很多内容！ 恭喜！系统管理员通过在文档[分配 AEM 产品配置](assign-profiles-aem.md)文件中设置必要的云资源并授予访问权限，已经完成了入门历程。
 
 此时，AEM 用户可以开始创建内容。 从这个角度来看，您的载入已经完成，现在可以使用新 AEM as a Cloud Service 系统了，本文对此进行了说明。
 
@@ -73,7 +73,7 @@ ht-degree: 96%
 
 恭喜！现在，您可以编写和发布 AEM 内容了。 请参阅[其他资源](#additional-resources)部分，了解有关如何在 AEM 中创作内容以及如何管理内容的更多详细信息。
 
-如果您对开发人员和部署管理员如何为 AEM as a Cloud Service 创建和管理自定义应用程序感兴趣，请继续进行入门培训历程的第二个可选部分——[AEM 开发人员任务](developers.md)。
+如果您对开发人员和部署管理员如何为 AEM as a Cloud Service 创建和管理自定义应用程序感兴趣，请继续进行入门历程的第二个可选部分——[AEM 开发人员任务](developers.md)。
 
 >[!TIP]
 >
@@ -81,6 +81,6 @@ ht-degree: 96%
 
 ## 其他资源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是額外的選用資源。
+如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
 [页面创作快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md) – 从这里开始，快速了解 AEM 中的创作基础知识。[Headless 创作历程](/help/journey-headless/author/overview.md) – 如果您想创作 Headless 内容，请按照本指导性介绍。

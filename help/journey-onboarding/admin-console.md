@@ -5,13 +5,13 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 访问 Admin Console {#accessing-admin-console}
 
-在[入门培训历程](overview.md)这一部分中，您将了解首次登录系统之前所需的准备工作。
+在[入门历程](overview.md)这一部分中，您将了解首次登录系统之前所需的准备工作。
 
 ## 目标 {#objective}
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 
 通过使用 IMS，AEM as a Cloud Service 整合了 AEM 与 Adobe experience Cloud 其余部分之间的登录体验。 拥有多个 Adobe 产品的组织通过在 Admin Console 中创建基于角色的组，然后通过 IMS 分配对多个产品（包括 AEM as a Cloud Service）的访问权限，受益颇多。
 
-在接下来的入门培训历程中，您将了解更多有关产品简介和分配用户的信息。
+在接下来的入门历程中，您将了解更多有关产品简介和分配用户的信息。
 
 ## 联系 Adobe 支持 {#support}
 
@@ -101,11 +101,11 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 * 了解如何通过 Admin Console 查看您作为系统管理员的权限。
 * 知道如何联系 Adobe 支持人员寻求帮助。
 
-您可以通过学习如何[将团队成员分配到 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)来继续您的入门培训历程，以便您的同事也可以访问 AEMaaCS。
+您可以通过学习如何[将团队成员分配到 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)来继续您的入门历程，以便您的同事也可以访问 AEMaaCS。
 
 ## 其他资源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是額外的選用資源。
+如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
 * [Admin Console 概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) – Admin Console 全面概述
 * [创建或更新您的 Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) – 了解如何创建 Adobe ID 并进行更改，以及如何管理多个 Adobe ID。

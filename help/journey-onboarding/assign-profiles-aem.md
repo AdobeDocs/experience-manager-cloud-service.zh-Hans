@@ -7,17 +7,17 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 分配 AEM 产品配置文件 {#assign-profiles-aem}
 
-在[入门培训历程的这一可选部分中，](overview.md)您将了解如何使用 AEM 产品配置文件授予您的团队访问 AEM 的权限。
+在[入门历程的这一可选部分中，](overview.md)您将了解如何使用 AEM 产品配置文件授予您的团队访问 AEM 的权限。
 
 ## 目标 {#objective}
 
-一旦您阅读了本次入门培训历程中的上一篇文档[创建环境](create-environments.md)，并配置好云资源，您需要使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。 作为系统管理员，您可以通过分配 AEM 产品配置文件来完成此操作。
+一旦您阅读了本次入门历程中的上一篇文档[创建环境](create-environments.md)，并配置好云资源，您需要使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。 作为系统管理员，您可以通过分配 AEM 产品配置文件来完成此操作。
 
 阅读本文档后，您应该了解：
 
@@ -92,16 +92,16 @@ ht-degree: 97%
 
 ## 历程结束？ {#the-end}
 
-恭喜！您分配给 AEM as a Cloud Service 产品配置文件的用户现在可以访问 AEM 创作环境，并开始使用 AEM as a Cloud Service 创建内容。 同样，开发人员现在可以访问 Cloud Manager，使用 Git 存储自定义应用程序代码并进行部署。 从这个意义上说，您的入门培训历程已经完成，您的用户现在可以使用 AEMaaCS 了。
+恭喜！您分配给 AEM as a Cloud Service 产品配置文件的用户现在可以访问 AEM 创作环境，并开始使用 AEM as a Cloud Service 创建内容。 同样，开发人员现在可以访问 Cloud Manager，使用 Git 存储自定义应用程序代码并进行部署。 从这个意义上说，您的入门历程已经完成，您的用户现在可以使用 AEMaaCS 了。
 
-然而，如果您想更好地了解作者和开发人员如何使用该系统，您可以继续此入门培训历程的两个可选部分：
+然而，如果您想更好地了解作者和开发人员如何使用该系统，您可以继续此入门历程的两个可选部分：
 
 * [开发人员和部署管理员任务](developers.md) – 在这里，您将了解开发人员如何访问 Git 以存储其自定义代码并使用 Cloud Manager 管道进行部署。
 * [AEM 用户任务](aem-users.md) – 在这里，您将了解如何进入 AEM 环境并开始创建内容。
 
 ## 其他资源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是額外的選用資源。
+如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
 * [在 Admin Console 管理产品和用户访问权限](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) – 了解如何使用 Admin Console 管理用户访问权限。
 * [配置 AEM 演练的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hans) – 查看此简化演练，了解如何在 Admin Console 中配置 Adobe IMS 用户、用户组和产品配置文件。

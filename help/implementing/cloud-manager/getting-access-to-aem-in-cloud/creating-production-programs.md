@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 82%
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
-1. 選取 **為生產設定** 在建立計畫精靈中建立生產計畫並提供計畫名稱。
+1. 在“创建项目向导”中，选择&#x200B;**设置生产**，以创建生产项目 并提供项目名称。
 
-   ![创建程序向导](assets/create-production-program.png)
+   ![创建项目向导](assets/create-production-program.png)
 
-1. 或者，您也可以拖放影像檔案至 **新增程式影像** 或按一下以從檔案瀏覽器中選取影像。 点按或单击&#x200B;**继续**。
+1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。点按或单击&#x200B;**继续**。
 
 1. 如果您拥有增强安全性授权，**增强安全性**&#x200B;选项卡将为您的作品提供&#x200B;**启用增强安全性**&#x200B;选项程序。如果需要，请选中启用增强安全性的选项，然后点击或单击&#x200B;**继续**。
 
@@ -41,7 +41,7 @@ ht-degree: 82%
 
 1. 在&#x200B;**解决方案和插件** 选项卡，选择要包含在程序中的解决方案。
 
-   * 如果您不確定是否需要針對各種可用解決方案的一或多個程式，請選取您最感興趣的。 您可以透過以下方式啟用其他解決方案 [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 稍後。 請參閱 [生產計畫檔案簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 瞭解更多方案設定建議。
+   * 如果您不确定是否需要一个或多个项目来提供各种解决方案，请选择您最感兴趣的项目。您可以稍后通过[编辑项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)来激活其他解决方案。有关更多项目设置建议，请参阅[生产项目简介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
    * 如果您之前选择了&#x200B;**启用增强安全性**，您将只能选择 HIPAA 权利可用的解决方案。
 
    ![选择解决方案](assets/setup-prod-select.png)
@@ -57,7 +57,7 @@ ht-degree: 82%
    ![定义计划上线日期](assets/setup-go-live.png)
 
    * 可以随时编辑此日期。
-   * 此日期仅供参考，并触发程序概述页面上的“上线”构件，及时提供 AEM as a Cloud Service 最佳实践文档的产品内链接，配合您的入门培训历程，最终获得成功、顺利的上线体验。
+   * 此日期仅供参考，并触发程序概述页面上的“上线”构件，及时提供 AEM as a Cloud Service 最佳实践文档的产品内链接，配合您的入门历程，最终获得成功、顺利的上线体验。
 
 1. 单击&#x200B;**创建**。
 

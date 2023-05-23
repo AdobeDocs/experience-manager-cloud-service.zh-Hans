@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikiped
 * `<protocol>` – 这表明要使用的 Universal Editor 持久性服务的持久性插件。例如 `aem`
 * `<url>` – 这是保存更改的系统的 URL。例如 `http://localhost:4502`
 
-識別碼 `adobe:aem:editor` 代表Adobe通用編輯器的連線。
+标识符 `adobe:aem:editor` 表示与 Adobe Universal Editor 相连。
 
 `itemid` 将使用 `urn` 前缀来缩短标识符。
 
