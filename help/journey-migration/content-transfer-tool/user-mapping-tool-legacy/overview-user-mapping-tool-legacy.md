@@ -1,23 +1,25 @@
 ---
 title: 用户映射工具概述 (旧版)
-description: 使用者對應工具概觀（舊版）
+description: 用户映射工具概述（旧版）
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: e84b9e5403ee937b689e312fb06a2464b89fffe6
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 88%
 
 ---
 
-# 使用者對應工具概觀（舊版） {#overview-user-mapping-tool}
+# 用户映射工具概述（旧版） {#overview-user-mapping-tool}
 
 >[!INFO]
 >
->本檔案旨在說明該工具的已棄用版本。 如需最新版本的詳細資訊，請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>本文档引用了该工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
+
+NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 2.0.16 of CTT.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"

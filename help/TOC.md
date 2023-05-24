@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '4074'
+source-wordcount: '4011'
 ht-degree: 99%
 
 ---
@@ -219,19 +219,6 @@ ht-degree: 99%
             + [概述](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [重要注意事项](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [使用用户映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
-         + 旧版内容转移工具{#legacy}
-            + [概述](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
-            + [内容转移工具的先决条件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
-            + [有关使用内容转移工具的指南和最佳实践](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
-            + [内容转移工具快速入门](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
-            + [验证内容转移](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
-            + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
-            + [从源中提取内容](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
-            + [将内容提取到目标](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
-            + [查看迁移集的日志](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
-            + [删除迁移集](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
-            + [在发布实例上运行内容转移工具](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
-            + [内容转移工具疑难解答](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + 代码重构工具 {#refactoring-tools}
       + [统一体验](/help/journey-migration/unified-experience.md)
       + [存储库现代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)
@@ -386,7 +373,7 @@ ht-degree: 99%
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + 管理数字资源{#manage}
-      + [微前端資產選擇器](/help/assets/asset-selector.md)
+      + [微型前端资产选择器](/help/assets/asset-selector.md)
       + [共享资源](/help/assets/share-assets.md)
       + [监测活动和 DAM 任务](/help/assets/assets-activity-history.md)
       + [开始使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)

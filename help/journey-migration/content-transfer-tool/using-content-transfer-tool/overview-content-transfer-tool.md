@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 78%
+source-wordcount: '648'
+ht-degree: 58%
 
 ---
 
@@ -14,24 +14,19 @@ ht-degree: 78%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概述"
->abstract="内容传输工具是 Adobe 开发的一项工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM Cloud Service 实例。此工具还会自动传输主体（用户或组）。"
+>abstract="内容传输工具是由Adobe开发的工具，可用于启动现有内容从源AEM实例（内部部署或AMS）到目标AEM Cloud Service实例的迁移。 此工具还会自动传输主体（用户或组）。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="准则和最佳实践"
 
-内容传输工具是 Adobe 开发的一个工具，可用于将现有内容从源 AEM 实例（内部部署或 AMS）移动到目标 AEM Cloud Service 实例。
+内容传输工具是由Adobe开发的工具，可用于启动现有内容从源AEM实例（内部部署或AMS）到目标AEM Cloud Service实例的迁移。
 
-此工具还会自动传输主体（用户或组）。另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得詳細資訊。
+此工具还会自动传输主体（用户或组）。参见 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 了解更多信息。
 
-已提供新版本的内容传输工具，它将内容传输过程与 Cloud Acceleration Manager 集成。强烈建议切换到此新版本，充分利用其所有优势。
+内容传输工具将内容传输流程与Cloud Acceleration Manager集成。 这使用户能够获得它提供的所有好处：
 
 * 一次性提取迁移集并将它并行摄取到多个环境中的自助方式
-* 通过更好的加载状态、防护机制和错误处理改善用户体验
+* 通过更好的加载状态、护栏和错误处理改进了用户体验
 * 摄取日志将保留，并且始终可用于进行故障排除
-
-要开始使用新版本，您需要卸载旧版本的内容传输工具，因为该工具的架构发生了重大更改。
-
->[!NOTE]
->
-> 对于正在进行迁移的情况，您可以继续使用早期版本的 CTT，直到迁移完成。有关与早期版本的 CTT 相关的文档，请参阅[旧版文档](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)。
+* 验证和主体迁移报告均可用于验证
 
 ## 内容传输工具中的阶段 {#phases-content-transfer-tool}
 
@@ -42,7 +37,7 @@ ht-degree: 78%
    有关更多详细信息，请参阅[内容传输中的提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
    >[!NOTE]
-   >使用者對應現在會在提取階段中自動在作者上執行（但可選擇在作者上停用或在發佈上啟用）。 另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得更多詳細資料。
+   >现在，用户映射将作为提取阶段的一部分在创作实例上自动运行（但可以选择在创作实例上禁用或在发布实例上启用）。 参见 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 了解更多详细信息。
 
 1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
@@ -64,21 +59,21 @@ ht-degree: 78%
 
 在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关更多详细信息，请参阅[增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
 
-## 移轉集到期 {#migration-set-expiry}
+## 迁移集到期 {#migration-set-expiry}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
 >title="迁移集的到期"
 >abstract="了解迁移集的到期。"
 
-所有移轉集都將在約90天長時間不活動後最終過期。 指標在專案卡片和移轉工作表格列上顯示一段時間後，移轉集將過期，其資料將不再可用。 透過以下方式根據移轉集採取行動，可輕鬆延長到期時間：
+所有迁移集将在长时间处于约90天的非活动状态后最终过期。 在项目信息卡和迁移作业表行上显示一段时间后，迁移集将过期，并且其数据将不再可用。 通过以下方式根据迁移集执行操作，可以轻松延长到期时间：
 
-* 編輯其說明
-* 取得其擷取金鑰
-* 對其執行擷取
-* 從中執行內嵌
+* 编辑其描述
+* 获取其提取密钥
+* 对其执行提取
+* 从中执行引入
 
-可以在「移轉集」列上監視移轉集的到期日。 移轉集即將到期的實用視覺指示器也新增了專案的卡片。
+可以在“迁移集”行上监控迁移集的到期情况。 此外，还添加了项目信息卡，这是一个有用的视觉标志，表明迁移集即将到期。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 
