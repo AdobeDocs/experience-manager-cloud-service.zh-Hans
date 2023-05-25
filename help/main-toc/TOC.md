@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 69d230a989724fa8a9fe96ff7d8e050dc207af12
+source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4012'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [通过 Dynamic Media 使 CDN 缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [通过 Dynamic Media Classic 使 CDN 缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [智能成像](/help/assets/dynamic-media/imaging-faq.md)
+      + [智能成像 常见问题](/help/assets/dynamic-media/imaging-faq.md)
       + [具有客户端设备像素比的智能成像](/help/assets/dynamic-media/client-side-dpr.md)
       + [投放 Dynamic Media 资源](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在 Dynamic Media 中激活热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
