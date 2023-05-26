@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
+source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
 workflow-type: tm+mt
-source-wordcount: '4012'
-ht-degree: 99%
+source-wordcount: '4011'
+ht-degree: 100%
 
 ---
 
@@ -373,7 +373,7 @@ ht-degree: 99%
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + 管理数字资源{#manage}
-      + [微型前端资产选择器](/help/assets/asset-selector.md)
+      + [微前端资源选择器](/help/assets/asset-selector.md)
       + [共享资源](/help/assets/share-assets.md)
       + [监测活动和 DAM 任务](/help/assets/assets-activity-history.md)
       + [开始使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [通过 Dynamic Media 使 CDN 缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [通过 Dynamic Media Classic 使 CDN 缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [智能成像 常见问题](/help/assets/dynamic-media/imaging-faq.md)
+      + [智能成像](/help/assets/dynamic-media/imaging-faq.md)
       + [具有客户端设备像素比的智能成像](/help/assets/dynamic-media/client-side-dpr.md)
       + [投放 Dynamic Media 资源](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在 Dynamic Media 中激活热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
